@@ -36,14 +36,30 @@ class SceneRenderer {
         const el = position === 'left' ? this.charLeft
                   : position === 'right' ? this.charRight
                   : this.charCenter;
-        if (el) {
+        if (!el) return;
+
+        const prevSrc = el.getAttribute('src');
+        if (prevSrc && prevSrc !== '') {
+            // 표정 변경 — 즉시 교체 (위치 유지)
             el.src = src;
+        } else {
+            // 새 등장 — fade in
+            el.style.opacity = '0';
+            el.src = src;
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => { el.style.opacity = ''; });
+            });
         }
     }
 
     clearCharacters() {
         [this.charLeft, this.charCenter, this.charRight].forEach(el => {
-            if (el) el.src = '';
+            if (!el || el.getAttribute('src') === '') return;
+            el.style.opacity = '0';
+            setTimeout(() => {
+                el.src = '';
+                el.style.opacity = '';
+            }, 300);
         });
     }
 

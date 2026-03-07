@@ -1,103 +1,103 @@
 {
     "day1_after_start": {
         "name": "Me",
-        "text": "*The bell rings. The sunset paints the classroom in orange hues. For a first day... it wasn't bad at all.*"
+        "text": "*The bell rings. Sunset light fills the classroom. Not bad for a first day.*"
     },
     "day1_after_start_2": {
         "name": "Me",
-        "text": "*Should I head home, or see someone a little longer?*"
+        "text": "*Head straight home, or look around a bit more?*"
     },
     "day1_after_choice": {
         "name": "Me",
-        "text": "*After school — where should I go?*",
+        "text": "*After school -- where to go?*",
         "choices": [
-            "Sea invited me to the student council room",
-            "See Yuna again at the library",
-            "Nurse Riin is on my mind for some reason",
-            "Visit Ms. Eunsu at the faculty office",
+            "Sea invited me to hang out at the student council room",
+            "Go see Yuna at the library again",
+            "I keep thinking about Ms. Riin at the nurse's office",
+            "Stop by the faculty office to say hi to Ms. Eunsu",
             "Just head home for today"
         ]
     },
 
     "day1_after_sea": {
         "name": "Han Sea",
-        "text": "\"You came! This is the student council room. It's nice and quiet with just the two of us, right?\""
+        "text": "\"You came! This is the student council room. I'm the only one here, so make yourself at home.\""
     },
     "day1_after_sea_2": {
         "name": "Han Sea",
-        "text": "\"Hey... {name}. It was your first day — wasn't it tough?\""
+        "text": "\"{name}, how was your first day? Think you can settle in okay?\""
     },
     "day1_after_sea_3": {
         "name": "Me",
-        "text": "\"No, I think I adjusted well thanks to you, Sea.\""
+        "text": "\"It wasn't bad. Thanks to you, it went pretty smooth.\""
     },
     "day1_after_sea_4": {
         "name": "Han Sea",
-        "text": "\"...Good. I'll do anything to make sure {name} is comfortable here. Anything.\""
+        "text": "\"Good to hear. If there's anything you don't know, just ask me anytime. I'm happy to help.\""
     },
     "day1_after_sea_5": {
         "name": "Me",
-        "text": "*The weight behind 'anything' bothers me slightly... but she's probably just being nice.*"
+        "text": "*That's reassuring. With a class president like her, school life should be just fine.*"
     },
 
     "day1_after_yuna": {
         "name": "Me",
-        "text": "*Yuna's already at the library when I arrive. She seems to be organizing her photos.*"
+        "text": "*I head to the library and Yuna's already there, sorting through her photos.*"
     },
     "day1_after_yuna_2": {
         "name": "Choi Yuna",
-        "text": "\"Oh, Senpai! You're back? Hehe, this place is my secret hideout. I'll show you my photos — just for you!\""
+        "text": "\"You're back! This place is kind of my hideout. Want to see some of the photos I took?\""
     },
     "day1_after_yuna_3": {
         "name": "Me",
-        "text": "*I flip through Yuna's photos. School scenery, cats, sunsets... but the last photo is of a closed door at the end of a dark hallway.*"
+        "text": "*I flip through Yuna's photos. School scenery, cats, sunsets... She's actually pretty good.*"
     },
     "day1_after_yuna_4": {
         "name": "Me",
-        "text": "*I was about to ask \"What's this?\" but Yuna quickly shut the camera off. ...What was that?*"
+        "text": "*The last photo is a closed door at the end of a dark hallway. I'm about to ask \"What's this?\" but she quickly swipes past it.*"
     },
 
     "day1_after_riin": {
         "name": "Kang Riin",
-        "text": "\"My, you're back? Are you still sick, or... did you miss me?\""
+        "text": "\"Back again? Is the medicine working okay?\""
     },
     "day1_after_riin_2": {
         "name": "Kang Riin",
-        "text": "\"Fufu, just kidding. Come here, I'll make you some tea. It's always quiet here, perfect for sharing secrets.\""
+        "text": "\"If you're bored after school, come by anytime. I can at least offer you some tea.\""
     },
     "day1_after_riin_3": {
         "name": "Me",
-        "text": "*I had tea and chatted with Nurse Riin. It was relaxing... but she seemed to ask a little too many detailed questions about my health.*"
+        "text": "*I had tea and chatted with Ms. Riin. It was a nice, relaxing time.*"
     },
 
     "day1_after_eunsu": {
         "name": "Park Eunsu",
-        "text": "\"Oh, {name}! You came all the way to the faculty office after school? That makes me so happy~\""
+        "text": "\"{name}! You came all the way to the faculty office after school? That's sweet of you.\""
     },
     "day1_after_eunsu_2": {
         "name": "Me",
-        "text": "*Ms. Eunsu brewed coffee and asked me all sorts of things about school life. She's a warm person.*"
+        "text": "*Ms. Eunsu made me coffee and asked me all sorts of things about how school was going.*"
     },
     "day1_after_eunsu_3": {
         "name": "Park Eunsu",
-        "text": "\"...{name}, did something happen at your previous school? Your transfer reason was a bit unusual...\""
+        "text": "\"How was your old school? I hope you're not having too much trouble adjusting here.\""
     },
     "day1_after_eunsu_4": {
         "name": "Me",
-        "text": "*...Unusual? It was just because my parents moved. What's unusual about that? ...I was about to ask, but she changed the subject.*"
+        "text": "*She's a warm teacher. You can tell she genuinely cares.*"
     },
 
     "day1_after_home": {
         "name": "Me",
-        "text": "*I step through the school gate, looking back. Not a bad first day at all.*"
+        "text": "*I look back as I walk out the school gate. It's a good school.*"
     },
     "day1_after_home_2": {
         "name": "Me",
-        "text": "*...Someone seems to be watching me from a third-floor window. The backlight hides their face.*"
+        "text": "*The sunset is beautiful. Tomorrow should be nice too.*"
     },
 
     "day1_after_end": {
         "name": "Me",
-        "text": "*I walk home against the sunset. Looking forward to tomorrow.*"
+        "text": "*I head home. Looking forward to tomorrow.*"
     }
 }

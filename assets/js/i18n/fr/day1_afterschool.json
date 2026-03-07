@@ -1,103 +1,103 @@
 {
     "day1_after_start": {
         "name": "Moi",
-        "text": "*La sonnerie retentit. Le coucher de soleil peint la salle de classe en teintes orangées. Pour un premier jour... ce n'était pas mal du tout.*"
+        "text": "*La sonnerie retentit. La lumière du couchant baigne la classe. Pour un premier jour, c'était pas mal.*"
     },
     "day1_after_start_2": {
         "name": "Moi",
-        "text": "*Est-ce que je rentre, ou je passe un peu plus de temps avec quelqu'un ?*"
+        "text": "*Je rentre direct ou je fais un tour ?*"
     },
     "day1_after_choice": {
         "name": "Moi",
-        "text": "*Après les cours — où aller ?*",
+        "text": "*Après les cours, où est-ce que je vais ?*",
         "choices": [
-            "Sea m'a invité à la salle du conseil des élèves",
-            "Revoir Yuna à la bibliothèque",
-            "L'infirmière Riin me trotte dans la tête pour une raison",
-            "Passer voir Mme Eunsu à la salle des professeurs",
-            "Rentrer à la maison pour aujourd'hui"
+            "Sea m'a invité à passer à la salle du conseil des élèves",
+            "Retrouver Yuna à la bibliothèque",
+            "L'infirmière Kang Riin me trotte dans la tête",
+            "Aller saluer le professeur Park Eunsu à la salle des profs",
+            "Pour aujourd'hui, direction la maison"
         ]
     },
 
     "day1_after_sea": {
         "name": "Han Sea",
-        "text": "\"Tu es venu ! Voici la salle du conseil des élèves. C'est calme et agréable, juste nous deux, non ?\""
+        "text": "\"T'es venu ? Voilà la salle du conseil. Y a que moi, fais comme chez toi.\""
     },
     "day1_after_sea_2": {
         "name": "Han Sea",
-        "text": "\"Dis... {name}. C'était ton premier jour — c'était pas trop dur ?\""
+        "text": "\"{name}, c'était comment ta première journée ? Tu t'en sors ?\""
     },
     "day1_after_sea_3": {
         "name": "Moi",
-        "text": "\"Non, je crois que je me suis bien adapté grâce à toi, Sea.\""
+        "text": "\"C'était pas mal. Grâce à toi, j'étais plutôt à l'aise.\""
     },
     "day1_after_sea_4": {
         "name": "Han Sea",
-        "text": "\"...Tant mieux. Je ferai tout pour que {name} se sente bien ici. Tout.\""
+        "text": "\"Tant mieux. Si tu as la moindre question, n'hésite pas. Je t'aiderai pour tout.\""
     },
     "day1_after_sea_5": {
         "name": "Moi",
-        "text": "*Le poids derrière ce 'tout' me gêne un peu... mais elle est sûrement juste gentille.*"
+        "text": "*Rassurant. Avec une déléguée comme elle, la vie au lycée devrait bien se passer.*"
     },
 
     "day1_after_yuna": {
         "name": "Moi",
-        "text": "*Yuna est déjà à la bibliothèque quand j'arrive. Elle a l'air de trier ses photos.*"
+        "text": "*Je vais à la bibliothèque, Yuna est déjà là. Elle trie ses photos.*"
     },
     "day1_after_yuna_2": {
         "name": "Choi Yuna",
-        "text": "\"Oh, Senpai ! Tu es revenu ? Héhé, cet endroit est mon repaire secret. Je vais te montrer mes photos — rien que pour toi !\""
+        "text": "\"Oh, vous êtes revenu ? C'est un peu mon repaire ici. Vous voulez voir mes photos ?\""
     },
     "day1_after_yuna_3": {
         "name": "Moi",
-        "text": "*Je feuillette les photos de Yuna. Des paysages de l'école, des chats, des couchers de soleil... mais la dernière photo montre une porte fermée au bout d'un couloir sombre.*"
+        "text": "*Je feuillette les photos de Yuna. Le lycée, des chats, le coucher de soleil... Elle a du talent.*"
     },
     "day1_after_yuna_4": {
         "name": "Moi",
-        "text": "*J'allais demander \"C'est quoi ?\" mais Yuna a vite éteint l'appareil. ...C'était quoi ?*"
+        "text": "*La dernière photo montre une porte fermée au bout d'un couloir sombre. J'allais demander « C'est quoi ? » mais Yuna est passée à la suivante.*"
     },
 
     "day1_after_riin": {
         "name": "Kang Riin",
-        "text": "\"Tiens, tu es de retour ? Tu es encore malade, ou... je t'ai manqué ?\""
+        "text": "\"Encore toi ? Le médicament fait effet ?\""
     },
     "day1_after_riin_2": {
         "name": "Kang Riin",
-        "text": "\"Fufu, je plaisante. Viens, je vais te préparer du thé. C'est toujours calme ici, parfait pour partager des secrets.\""
+        "text": "\"Si tu t'ennuies après les cours, passe ici. Je peux au moins t'offrir un thé.\""
     },
     "day1_after_riin_3": {
         "name": "Moi",
-        "text": "*J'ai bu du thé et discuté avec l'infirmière Riin. C'était reposant... mais elle avait l'air de poser un peu trop de questions détaillées sur ma santé.*"
+        "text": "*J'ai bu un thé en discutant avec Mme Kang Riin. Un moment agréable.*"
     },
 
     "day1_after_eunsu": {
         "name": "Park Eunsu",
-        "text": "\"Oh, {name} ! Tu es venu jusqu'à la salle des professeurs après les cours ? Ça me fait tellement plaisir~\""
+        "text": "\"{name} ! Tu es venu jusqu'à la salle des profs après les cours ? C'est gentil.\""
     },
     "day1_after_eunsu_2": {
         "name": "Moi",
-        "text": "*Mme Eunsu m'a préparé du café et m'a posé toutes sortes de questions sur la vie à l'école. C'est une personne chaleureuse.*"
+        "text": "*Le professeur Park Eunsu m'a préparé un café tout en me posant des questions sur la vie au lycée.*"
     },
     "day1_after_eunsu_3": {
         "name": "Park Eunsu",
-        "text": "\"...{name}, il s'est passé quelque chose dans ton ancienne école ? La raison de ton transfert était un peu inhabituelle...\""
+        "text": "\"C'était comment, ton ancien lycée ? J'espère que l'adaptation ne sera pas trop difficile.\""
     },
     "day1_after_eunsu_4": {
         "name": "Moi",
-        "text": "*...Inhabituelle ? C'était juste parce que mes parents ont déménagé. Qu'est-ce qu'il y a d'inhabituel là-dedans ? ...J'allais demander, mais elle a changé de sujet.*"
+        "text": "*Un professeur bienveillant. On sent qu'il veille sur ses élèves.*"
     },
 
     "day1_after_home": {
         "name": "Moi",
-        "text": "*Je franchis le portail de l'école en jetant un regard en arrière. Pas un mauvais premier jour du tout.*"
+        "text": "*En franchissant le portail, je me retourne. C'est un bon lycée.*"
     },
     "day1_after_home_2": {
         "name": "Moi",
-        "text": "*...Quelqu'un semble m'observer depuis une fenêtre du troisième étage. Le contre-jour cache son visage.*"
+        "text": "*Le coucher de soleil est beau. Demain aussi, il fera beau.*"
     },
 
     "day1_after_end": {
         "name": "Moi",
-        "text": "*Je rentre chez moi dans le soleil couchant. J'ai hâte d'être à demain.*"
+        "text": "*Je prends le chemin de la maison. Vivement demain.*"
     }
 }

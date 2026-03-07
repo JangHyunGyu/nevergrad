@@ -1,117 +1,117 @@
 {
     "day1_lunch_start": {
         "name": "Moi",
-        "text": "*L'heure du déjeuner. Mon estomac gargouille. C'est mon premier jour, je ne sais même pas où est la cantine...*"
+        "text": "*Pause déjeuner. J'ai faim. Je ne sais même pas où est la cantine.*"
     },
     "day1_lunch_start_2": {
         "name": "Moi",
-        "text": "*Qu'est-ce que je fais ?*"
+        "text": "*Je mange où ?*"
     },
     "day1_lunch_choice": {
         "name": "Moi",
-        "text": "*Pause déjeuner — où aller ?*",
+        "text": "*Pause déjeuner, où est-ce que je vais ?*",
         "choices": [
-            "Sea m'a invité à manger ensemble, je reste en classe",
-            "Aller voir la bibliothèque au calme",
-            "J'ai mal à la tête depuis tout à l'heure... peut-être l'infirmerie",
+            "Sea m'a proposé de manger ensemble, je reste en classe",
+            "Aller faire un tour à la bibliothèque, au calme",
+            "J'ai un peu mal à la tête depuis tout à l'heure... je passe à l'infirmerie ?",
             "Manger seul sur le toit"
         ]
     },
 
     "day1_lunch_sea": {
         "name": "Han Sea",
-        "text": "\"Où tu crois aller ?! On avait dit qu'on mangeait ensemble~ J'ai gardé des places !\""
+        "text": "\"Par ici ! Je t'ai gardé une place.\""
     },
     "day1_lunch_sea_2": {
         "name": "Moi",
-        "text": "*Sea déballe soigneusement un bentô. C'est une portion pour deux. Elle l'a préparé en sachant que j'allais être transféré ?*"
+        "text": "*Sea ouvre son bentô. Il y en a beaucoup.*"
     },
     "day1_lunch_sea_3": {
         "name": "Han Sea",
-        "text": "\"J'ai préparé un peu plus au cas où. J'espère que ça te plaira, {name}...\""
+        "text": "\"J'en ai un peu trop préparé, on partage. J'espère que ça te plaira.\""
     },
     "day1_lunch_sea_4": {
         "name": "Moi",
-        "text": "*...C'est juste moi, ou ce sont tous mes plats préférés ? Du maquereau braisé, de l'omelette roulée, des épinards... Ça doit être une coïncidence.*"
+        "text": "*Du maquereau mijoté, des omelettes roulées, des épinards assaisonnés. Ça a un goût de cuisine maison, c'est bon.*"
     },
     "day1_lunch_sea_5": {
         "name": "Han Sea",
-        "text": "\"C'est bon ? Tu aimes ? Tu veux que je prépare le déjeuner encore demain ? Héhé, te regarder manger me rend heureuse aussi~\""
+        "text": "\"Alors ? C'est bon ? J'en refais demain ?\""
     },
     "day1_lunch_sea_6": {
         "name": "Moi",
-        "text": "*Avoir une déléguée aussi gentille, c'est génial. Je crois que le transfert ici était une bonne idée. ...Mais d'abord le lait chocolaté, maintenant mes plats préférés... c'est un peu...*"
+        "text": "*Franchement, c'est délicieux. Pour un premier jour de transfert, c'est pas de la chance, ça ?*"
     },
 
     "day1_lunch_yuna_start": {
         "name": "Moi",
-        "text": "*J'entre dans la bibliothèque. Elle est presque vide à cette heure du déjeuner.*"
+        "text": "*J'entre dans la bibliothèque. À l'heure du déjeuner, il n'y a presque personne.*"
     },
     "day1_lunch_yuna_1": {
         "name": "Moi",
-        "text": "*En marchant entre les étagères, j'entends un 'clic' dans le coin.*"
+        "text": "*Je marche entre les rayons quand j'entends un « clic » venant du fond.*"
     },
     "day1_lunch_yuna_2": {
         "name": "???",
-        "text": "\"...Oh ?!\""
+        "text": "\"...Oh !\""
     },
     "day1_lunch_yuna_3": {
         "name": "Moi",
-        "text": "*Une fille avec un appareil photo me fixe, surprise. ...Elle était en train de me photographier ?*"
+        "text": "*Une fille avec un appareil photo me regarde, l'air prise au dépourvu.*"
     },
     "day1_lunch_yuna_4": {
         "name": "Moi",
-        "text": "\"Tu viens de... me prendre en photo ?\""
+        "text": "\"Club photo ?\""
     },
     "day1_lunch_yuna_5": {
         "name": "Choi Yuna",
-        "text": "\"N-non ! C'est pas ça... Je suis au club photo ! Je photographiais le décor de la bibliothèque et tu es apparu d'un coup... Je suis Choi Yuna, première année ! Tu es le nouvel élève, c'est ça ?\""
+        "text": "\"Oui ! Je prenais des photos de la bibliothèque et vous êtes apparu d'un coup... Pardon ! Je suis Choi Yuna, en première année. Vous êtes le nouveau, n'est-ce pas ?\""
     },
     "day1_lunch_yuna_6": {
         "name": "Moi",
-        "text": "*Elle sourit joyeusement. Une mignonne petite camarade de classe inférieure. ...Mais j'aurais juré que l'objectif était pointé sur moi, pas sur le décor de la bibliothèque.*"
+        "text": "*Elle sourit de bon cœur. Mignonne, cette petite.*"
     },
 
     "day1_lunch_nurse_start": {
         "name": "Moi",
-        "text": "*J'ouvre la porte de l'infirmerie. L'odeur de désinfectant me pique le nez.*"
+        "text": "*J'ouvre la porte de l'infirmerie. Odeur de désinfectant.*"
     },
     "day1_lunch_riin_1": {
         "name": "Kang Riin",
-        "text": "\"Tiens, venir à l'infirmerie dès le premier jour. Qu'est-ce qui ne va pas ?\""
+        "text": "\"Oh, à l'infirmerie dès le premier jour ? Tu ne te sens pas bien ?\""
     },
     "day1_lunch_riin_2": {
         "name": "Moi",
-        "text": "\"J'ai un peu mal à la tête... Vous auriez des antidouleurs ?\""
+        "text": "\"J'ai un peu mal à la tête. Vous auriez un antidouleur ?\""
     },
     "day1_lunch_riin_3": {
         "name": "Kang Riin",
-        "text": "\"Fufu, assieds-toi un moment. Laisse-moi d'abord t'examiner. ...Mmm, ton rythme cardiaque est très sain. C'est un joli son.\""
+        "text": "\"Assieds-toi un instant. Je vais faire un petit contrôle. ...Bon, rien de grave. Tant mieux.\""
     },
     "day1_lunch_riin_4": {
         "name": "Moi",
-        "text": "*...Je comprends qu'elle utilise un stéthoscope, mais elle n'écoute pas un peu trop longtemps ? Et l'expression sur son visage est un peu...*"
+        "text": "*Un rapide examen. L'infirmerie est propre et calme.*"
     },
     "day1_lunch_riin_5": {
         "name": "Kang Riin",
-        "text": "\"Voilà des médicaments. Si tu as sommeil, n'hésite pas à dormir ici. Je veillerai sur toi. ...Fufu.\""
+        "text": "\"Voilà le médicament. Si tu es fatigué, tu peux rester te reposer un peu.\""
     },
 
     "day1_lunch_alone": {
         "name": "Moi",
-        "text": "*Le toit. La brise est agréable. Un moment de solitude, ça ne fait pas de mal.*"
+        "text": "*Le toit. Le vent est agréable.*"
     },
     "day1_lunch_alone_2": {
         "name": "Moi",
-        "text": "*Je mange mon déjeuner en regardant la cour en contrebas.*"
+        "text": "*Je mange mon bentô en regardant la cour en contrebas. C'est paisible.*"
     },
     "day1_lunch_alone_3": {
         "name": "Moi",
-        "text": "*...Hein ? Dans un coin de la cour, on dirait que quelqu'un pointe un appareil photo vers ici... Non, c'est trop loin. Ce doit être mon imagination.*"
+        "text": "*Un moment pour soi, c'est pas mal non plus.*"
     },
 
     "day1_lunch_end": {
         "name": "Moi",
-        "text": "*Le déjeuner est terminé. C'est l'heure de se préparer pour les cours de l'après-midi.*"
+        "text": "*La pause déjeuner est terminée. Allons en cours cet après-midi.*"
     }
 }

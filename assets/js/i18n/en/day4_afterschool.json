@@ -102,6 +102,22 @@
             "That's a bit..."
         ]
     },
+    "day4_after_sea_timeout": {
+        "name": "Han Sea",
+        "text": "\"...Why aren't you saying anything?\""
+    },
+    "day4_after_sea_timeout_2": {
+        "name": "Me",
+        "text": "*Sea's expression hardens. Every trace of her smile is gone.*"
+    },
+    "day4_after_sea_timeout_3": {
+        "name": "Han Sea",
+        "text": "\"Not answering... is the same as refusing. You know that, right?\""
+    },
+    "day4_after_sea_timeout_4": {
+        "name": "Me",
+        "text": "*Sea closed the classroom door. I hear the lock click.*"
+    },
     "day4_after_sea_accept": {
         "name": "Han Sea",
         "text": "\"...{name} is so nice. My {name}.\""
@@ -151,17 +167,29 @@
             "Stay still"
         ]
     },
+    "day4_after_evidence_timeout": {
+        "name": "Me",
+        "text": "*My body froze. I need to run, but my legs won't move.*"
+    },
+    "day4_after_evidence_timeout_2": {
+        "name": "Park Eunsu",
+        "text": "\"...Good. It's better to stay still.\""
+    },
+    "day4_after_evidence_timeout_3": {
+        "name": "Me",
+        "text": "*Ms. Eunsu approaches and grips my shoulder. A gentle touch... but her fingers are digging in.*"
+    },
     "day4_after_evidence_run": {
         "name": "Me",
         "text": "*I shoved a desk to block the way and ran. Heels clicking behind me. But I made it out.*"
     },
     "day4_after_evidence_caught": {
         "name": "Park Eunsu",
-        "text": "\"Where do you think you're going? ...Not without my permission.\""
+        "text": "\"Oh my, {name}. I told you the hallways are dangerous. I said to stay put in the classroom.\""
     },
     "day4_after_evidence_caught_2": {
         "name": "Park Eunsu",
-        "text": "\"It's okay, {name}. I'll take care of everything. ...You just need to stay here.\""
+        "text": "\"It's okay. I'll keep {name} safe. ...Now, come here.\""
     },
 
     "day4_after_end": {

@@ -102,6 +102,22 @@
             "それはちょっと……"
         ]
     },
+    "day4_after_sea_timeout": {
+        "name": "ハン・セア",
+        "text": "\"...何で何も言わないの？\""
+    },
+    "day4_after_sea_timeout_2": {
+        "name": "私",
+        "text": "*セアの表情が固まった。笑顔が完全に消えた。*"
+    },
+    "day4_after_sea_timeout_3": {
+        "name": "ハン・セア",
+        "text": "\"返事しないの...拒否と同じだよ。分かってるよね？\""
+    },
+    "day4_after_sea_timeout_4": {
+        "name": "私",
+        "text": "*セアが教室のドアを閉めた。鍵がかかる音がした。*"
+    },
     "day4_after_sea_accept": {
         "name": "ハン・セア",
         "text": "\"...やっぱり{name}は優しいね。私だけの{name}。\""
@@ -151,17 +167,29 @@
             "じっとしている"
         ]
     },
+    "day4_after_evidence_timeout": {
+        "name": "私",
+        "text": "*体が固まった。逃げなきゃいけないのに足が動かない。*"
+    },
+    "day4_after_evidence_timeout_2": {
+        "name": "パク・ウンス",
+        "text": "\"...そう、大人しくしてるのがいいよ。\""
+    },
+    "day4_after_evidence_timeout_3": {
+        "name": "私",
+        "text": "*ウンス先生が近づいてきて肩を掴んだ。優しいタッチなのに...指に力が入っている。*"
+    },
     "day4_after_evidence_run": {
         "name": "私",
         "text": "*机を押して道を塞ぎ、走った。後ろからヒールの音が追ってくる。でも逃げ切った。*"
     },
     "day4_after_evidence_caught": {
         "name": "パク・ウンス",
-        "text": "\"どこに行くの？ ……先生の許可なしにはダメよ。\""
+        "text": "\"あら、{name}。廊下は危ないって言ったでしょう。教室に大人しくいなさいって先生が言ったじゃない。\""
     },
     "day4_after_evidence_caught_2": {
         "name": "パク・ウンス",
-        "text": "\"大丈夫よ、{name}。先生が全部解決してあげる。……あなたはここにいればいいの。\""
+        "text": "\"大丈夫。先生が{name}を安全に守ってあげるから。...さ、こっちにおいで。\""
     },
 
     "day4_after_end": {

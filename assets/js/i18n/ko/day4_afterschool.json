@@ -102,6 +102,22 @@
             "그건 좀..."
         ]
     },
+    "day4_after_sea_timeout": {
+        "name": "한세아",
+        "text": "\"...왜 아무 말 안 해?\""
+    },
+    "day4_after_sea_timeout_2": {
+        "name": "나",
+        "text": "*세아의 표정이 굳어진다. 웃음기가 완전히 사라졌다.*"
+    },
+    "day4_after_sea_timeout_3": {
+        "name": "한세아",
+        "text": "\"대답 안 하는 거... 거절이랑 같은 거야. 알지?\""
+    },
+    "day4_after_sea_timeout_4": {
+        "name": "나",
+        "text": "*세아가 교실 문을 닫았다. 잠금 소리가 들린다.*"
+    },
     "day4_after_sea_accept": {
         "name": "한세아",
         "text": "\"...역시 {name}은 착해. 나만의 {name}.\""
@@ -151,17 +167,29 @@
             "가만히 있는다"
         ]
     },
+    "day4_after_evidence_timeout": {
+        "name": "나",
+        "text": "*몸이 굳었다. 도망쳐야 하는데 다리가 움직이지 않는다.*"
+    },
+    "day4_after_evidence_timeout_2": {
+        "name": "박은수",
+        "text": "\"...그래, 얌전히 있는 게 좋지.\""
+    },
+    "day4_after_evidence_timeout_3": {
+        "name": "나",
+        "text": "*은수 선생님이 다가와 내 어깨를 잡았다. 다정한 손길인데... 손가락에 힘이 들어가 있다.*"
+    },
     "day4_after_evidence_run": {
         "name": "나",
         "text": "*책상을 밀어 길을 막고 뛰었다. 뒤에서 구두 소리가 따라온다. 하지만 빠져나왔다.*"
     },
     "day4_after_evidence_caught": {
         "name": "박은수",
-        "text": "\"어디 가려고? ...선생님 허락 없이는 안 돼.\""
+        "text": "\"어머, {name}. 복도는 위험하다니까. 선생님이 교실에 얌전히 있으라고 했잖아.\""
     },
     "day4_after_evidence_caught_2": {
         "name": "박은수",
-        "text": "\"괜찮아, {name}. 선생님이 다 해결해줄게. ...넌 여기 있으면 돼.\""
+        "text": "\"괜찮아. 선생님이 {name}을 안전하게 지켜줄 테니까. ...자, 이리 와.\""
     },
 
     "day4_after_end": {

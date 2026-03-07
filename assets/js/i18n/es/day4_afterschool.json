@@ -102,6 +102,22 @@
             "Es un poco..."
         ]
     },
+    "day4_after_sea_timeout": {
+        "name": "Han Sea",
+        "text": "\"...¿Por qué no dices nada?\""
+    },
+    "day4_after_sea_timeout_2": {
+        "name": "Yo",
+        "text": "*La expresión de Sea se endureció. Toda huella de su sonrisa desapareció.*"
+    },
+    "day4_after_sea_timeout_3": {
+        "name": "Han Sea",
+        "text": "\"No responder... es lo mismo que rechazar. Lo sabes, ¿verdad?\""
+    },
+    "day4_after_sea_timeout_4": {
+        "name": "Yo",
+        "text": "*Sea cerró la puerta del aula. Se oye el clic del cerrojo.*"
+    },
     "day4_after_sea_accept": {
         "name": "Han Sea",
         "text": "\"... De verdad eres un cielo, {name}. Mi {name}.\""
@@ -151,17 +167,29 @@
             "Quedarme quieto"
         ]
     },
+    "day4_after_evidence_timeout": {
+        "name": "Yo",
+        "text": "*Mi cuerpo se paralizó. Necesito correr, pero mis piernas no se mueven.*"
+    },
+    "day4_after_evidence_timeout_2": {
+        "name": "Park Eunsu",
+        "text": "\"...Bien. Es mejor quedarse quieto.\""
+    },
+    "day4_after_evidence_timeout_3": {
+        "name": "Yo",
+        "text": "*La profesora Eunsu se acerca y me agarra el hombro. Un toque amable... pero sus dedos presionan con fuerza.*"
+    },
     "day4_after_evidence_run": {
         "name": "Yo",
         "text": "*Empujé un pupitre para bloquear el camino y corrí. Tacones repiqueteando detrás de mí. Pero logré salir.*"
     },
     "day4_after_evidence_caught": {
         "name": "Park Eunsu",
-        "text": "\"¿Adónde crees que vas? ...No sin mi permiso.\""
+        "text": "\"Ay, {name}. Te dije que los pasillos son peligrosos. Te dije que te quedaras tranquilo en el aula.\""
     },
     "day4_after_evidence_caught_2": {
         "name": "Park Eunsu",
-        "text": "\"Está bien, {name}. Yo me encargo de todo. ...Solo necesitas quedarte aquí.\""
+        "text": "\"Está bien. Yo mantendré a {name} a salvo. ...Ven, acércate.\""
     },
 
     "day4_after_end": {

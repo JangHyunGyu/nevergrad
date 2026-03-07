@@ -1,11 +1,19 @@
 {
     "day3_morning_start": {
         "name": "Me",
-        "text": "*Day 3. Last night's dream left me unrested.*"
+        "text": "*Day 3. Last night's dream left me feeling unrested.*"
+    },
+    "day3_morning_mirror": {
+        "name": "Me",
+        "text": "*I looked in the mirror. My complexion is off. ...When did I start looking like this?*"
     },
     "day3_morning_2": {
         "name": "Me",
-        "text": "*I arrive at school. Sea isn't waiting today. ...Somehow that bothers me more.*"
+        "text": "*I arrive at school. Sea isn't waiting today. ...Somehow that bothers me more than it should.*"
+    },
+    "day3_morning_2b": {
+        "name": "Me",
+        "text": "*Yesterday she was here ten minutes early. What's different today?*"
     },
     "day3_morning_hallway": {
         "name": "Me",
@@ -17,31 +25,46 @@
     },
     "day3_morning_locker_2": {
         "name": "Me",
-        "text": "*I peek inside. Empty. But in the corner... a torn photo? A passport-sized photo, cut in half.*"
+        "text": "*I cracked the locker open. Empty inside. But in the corner, something... A photo fragment? A passport-sized photo, cut in half.*"
     },
     "day3_morning_locker_3": {
         "name": "Me",
         "text": "*...What is this? I pocket it. I'll look closer later.*"
     },
+    "day3_morning_seolhwa_glimpse": {
+        "name": "Me",
+        "text": "*...Someone is standing at the end of the corridor. A pale face. Watching me.*"
+    },
+    "day3_morning_seolhwa_glimpse_2": {
+        "name": "Me",
+        "text": "*I blinked and she was gone. ...Seolhwa? Was that her just now?*"
+    },
     "day3_morning_classroom": {
         "name": "Me",
-        "text": "*I enter the classroom. The atmosphere is strange. The way people look at me is... different from yesterday.*"
+        "text": "*I step into the classroom. The atmosphere is off. The way people look at me is... different from yesterday.*"
     },
     "day3_morning_class_2": {
         "name": "Me",
         "text": "*They were in the middle of some conversation that died the moment I walked in. What were they talking about?*"
     },
+    "day3_morning_class_sea": {
+        "name": "Me",
+        "text": "*Sea is at her seat. Smiling like usual, but... something is different. Only her mouth is smiling.*"
+    },
     "day3_morning_class_3": {
         "name": "Park Eunsu",
-        "text": "\"{name}~ You look tired today? Did you sleep well last night?\""
+        "text": "\"{name}, you look tired today. Did you sleep well last night?\""
     },
     "day3_morning_class_4": {
         "name": "Me",
         "text": "*...How does she know I didn't sleep well? Are my dark circles that obvious? Or... am I really being watched?*"
     },
-
+    "day3_morning_desk": {
+        "name": "Me",
+        "text": "*I open my desk drawer... The pencil case I left here yesterday has been moved. Did someone go through my things?*"
+    },
     "day3_morning_end": {
         "name": "Me",
-        "text": "*Class begins. I try to focus, but my head is spinning.*"
+        "text": "*Class begins. I try to focus, but my head is a mess.*"
     }
 }

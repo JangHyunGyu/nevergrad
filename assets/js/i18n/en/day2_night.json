@@ -5,17 +5,32 @@
     },
     "day2_night_2": {
         "name": "Me",
-        "text": "*I tried calling my old homeroom teacher. 'This number is no longer in service.' ...What?*"
+        "text": "*I tried calling my old homeroom teacher. 'The number you have dialed is no longer in service.' ...What?*"
     },
     "day2_night_3": {
         "name": "Me",
-        "text": "*Changed numbers? I tried other friends too, but they all go unanswered or are disconnected.*"
+        "text": "*Did they change numbers? I tried calling other friends too, but none of them pick up or the numbers are disconnected.*"
     },
     "day2_night_4": {
         "name": "Me",
-        "text": "*...This is weird. There's no way everyone's unreachable. I'll ask Ms. Eunsu tomorrow. Let's just sleep.*"
+        "text": "*...This is strange. There's no way everyone is unreachable like this.*"
     },
-
+    "day2_night_phone_sea": {
+        "name": "Me",
+        "text": "*There's a message from Sea.*"
+    },
+    "day2_night_phone_sea_2": {
+        "name": "Me",
+        "text": "*Sea: 'Thanks for today. Let's eat together again tomorrow!'*\n*Sea: '...I like being with you, {name}.'*"
+    },
+    "day2_night_phone_sea_3": {
+        "name": "Me",
+        "text": "*...That second message hits differently. Is she just being friendly, or...*"
+    },
+    "day2_night_5": {
+        "name": "Me",
+        "text": "*I should ask Ms. Eunsu tomorrow. Why all the contacts from my old school are cut off. For now, let's just sleep.*"
+    },
     "day2_night_dream": {
         "name": "",
         "text": "*...A dream begins.*"
@@ -30,9 +45,16 @@
     },
     "day2_night_dream_4": {
         "name": "Me",
-        "text": "*I turned around. No one there. But I definitely heard it. A girl's voice. And at the end of the corridor... was that blood...?*"
+        "text": "*I turned around. No one there. But I definitely heard it. A girl's voice.*"
     },
-
+    "day2_night_dream_5": {
+        "name": "Me",
+        "text": "*Someone is standing at the end of the corridor. A pale face, eyes gazing into the distance. ...The girl from the back row?*"
+    },
+    "day2_night_dream_6": {
+        "name": "Me",
+        "text": "*The moment I try to step closer, the floor gives way and everything goes dark.*"
+    },
     "day2_night_wake": {
         "name": "Me",
         "text": "*...! I jolt awake, drenched in sweat. It was a dream. Just a dream. ...Right?*"

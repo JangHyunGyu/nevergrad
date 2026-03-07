@@ -1,44 +1,18 @@
 {
-    "day2_night_start": {
-        "name": "Moi",
-        "text": "*À la maison. Je vérifie mon téléphone encore. Le groupe de discussion de l'ancienne école... je suis le seul qui reste. Tous les autres ont quitté la conversation.*"
-    },
-    "day2_night_2": {
-        "name": "Moi",
-        "text": "*J'ai essayé d'appeler mon ancien professeur principal. 'Ce numéro n'est plus attribué.' ...Quoi ?*"
-    },
-    "day2_night_3": {
-        "name": "Moi",
-        "text": "*Il a changé de numéro ? J'ai essayé d'autres amis aussi, mais ils ne répondent pas ou sont injoignables.*"
-    },
-    "day2_night_4": {
-        "name": "Moi",
-        "text": "*...C'est bizarre. C'est impossible que tout le monde soit injoignable. Je demanderai à Mme Eunsu demain. Dormons.*"
-    },
-
-    "day2_night_dream": {
-        "name": "",
-        "text": "*...Un rêve commence.*"
-    },
-    "day2_night_dream_2": {
-        "name": "Moi",
-        "text": "*Je marche dans un couloir sombre. C'est... l'école ? Le couloir de l'école, la nuit. Seuls mes pas résonnent.*"
-    },
-    "day2_night_dream_3": {
-        "name": "???",
-        "text": "\"...Fu...is...\""
-    },
-    "day2_night_dream_4": {
-        "name": "Moi",
-        "text": "*Je me suis retourné. Personne. Mais j'ai clairement entendu. Une voix de fille. Et au bout du couloir... c'était du sang... ?*"
-    },
-
-    "day2_night_wake": {
-        "name": "Moi",
-        "text": "*...! Je me réveille en sursaut, trempé de sueur. C'était un rêve. Juste un rêve. ...Pas vrai ?*"
-    },
-    "day2_night_end": {
-        "name": "",
-        "text": "*Fin du Jour 2*"
-    }
+    "day2_night_start": {"name": "Moi", "text": "*Rentré chez moi, je vérifie encore mon téléphone. Le groupe de mon ancien lycée... il ne reste plus que moi. Tous les autres ont quitté la conversation.*"},
+    "day2_night_2": {"name": "Moi", "text": "*J'ai essayé d'appeler mon ancien professeur principal. 'Le numéro que vous avez composé n'est plus attribué.' ...Quoi ?*"},
+    "day2_night_3": {"name": "Moi", "text": "*Il a changé de numéro ? J'ai aussi essayé d'appeler d'autres amis, mais personne ne décroche, ou bien le numéro n'existe pas.*"},
+    "day2_night_4": {"name": "Moi", "text": "*...C'est bizarre. Ce n'est pas normal de ne pouvoir joindre personne à ce point.*"},
+    "day2_night_phone_sea": {"name": "Moi", "text": "*J'ai un message de Sea.*"},
+    "day2_night_phone_sea_2": {"name": "Moi", "text": "*Sea : 'Merci encore pour aujourd'hui. On mange ensemble demain aussi !'*\n*Sea : '...Je me sens bien quand je suis avec {name}.'*"},
+    "day2_night_phone_sea_3": {"name": "Moi", "text": "*...Le deuxième message me laisse songeur. C'est juste de la gentillesse, ou bien...*"},
+    "day2_night_5": {"name": "Moi", "text": "*Demain, je demanderai à Mme Eunsu. Pourquoi tous les contacts de mon ancien lycée sont coupés. En attendant, dormons.*"},
+    "day2_night_dream": {"name": "", "text": "*...Je fais un rêve.*"},
+    "day2_night_dream_2": {"name": "Moi", "text": "*Je marche dans un couloir sombre. C'est... l'école ? Le couloir de l'école, la nuit. Seul le bruit de mes pas résonne.*"},
+    "day2_night_dream_3": {"name": "???", "text": "\"...fu...is...\""},
+    "day2_night_dream_4": {"name": "Moi", "text": "*Je me suis retourné. Personne. Mais j'ai clairement entendu. Une voix de fille.*"},
+    "day2_night_dream_5": {"name": "Moi", "text": "*Au bout du couloir, quelqu'un se tient debout. Un visage livide, un regard perdu dans le vide. ...La fille du fond de la classe ?*"},
+    "day2_night_dream_6": {"name": "Moi", "text": "*Au moment où j'allais m'approcher, le sol s'est dérobé et tout est devenu noir.*"},
+    "day2_night_wake": {"name": "Moi", "text": "*...! Je me suis réveillé en sueur. C'est un rêve. Juste un rêve. ...N'est-ce pas ?*"},
+    "day2_night_end": {"name": "", "text": "*Fin du Jour 2*"}
 }

@@ -1,44 +1,66 @@
 {
     "day2_night_start": {
         "name": "Yo",
-        "text": "*En casa. Reviso el teléfono otra vez. El chat grupal de la antigua escuela... soy el único que queda. Todos los demás salieron del chat.*"
+        "text": "*En casa. Reviso el telefono otra vez. El grupo de la antigua escuela... soy el unico que queda. Todos los demas se salieron.*"
     },
     "day2_night_2": {
         "name": "Yo",
-        "text": "*Intenté llamar a mi antiguo tutor. 'Este número ya no está en servicio.' ...¿Qué?*"
+        "text": "*Intente llamar a mi antiguo tutor. 'Este numero no se encuentra en servicio.' ...Que?*"
     },
     "day2_night_3": {
         "name": "Yo",
-        "text": "*¿Cambió de número? También intenté con otros amigos, pero todos suenan sin respuesta o están desconectados.*"
+        "text": "*Habra cambiado de numero? Tambien llame a otros amigos, pero ninguno contesta o el numero no existe.*"
     },
     "day2_night_4": {
         "name": "Yo",
-        "text": "*...Esto es raro. Es imposible que todos estén ilocalizable. Le preguntaré a la profesora Eunsu mañana. Vamos a dormir.*"
+        "text": "*...Es extrano. No es posible que todos esten inlocalizables.*"
     },
-
+    "day2_night_phone_sea": {
+        "name": "Yo",
+        "text": "*Tengo un mensaje de Sea.*"
+    },
+    "day2_night_phone_sea_2": {
+        "name": "Yo",
+        "text": "*Sea: 'Gracias por lo de hoy. Manana comamos juntos tambien!'*\n*Sea: '...Me siento bien cuando estoy con {name}.'*"
+    },
+    "day2_night_phone_sea_3": {
+        "name": "Yo",
+        "text": "*...El segundo mensaje pesa. Es solo amabilidad, o es algo mas...*"
+    },
+    "day2_night_5": {
+        "name": "Yo",
+        "text": "*Manana le preguntare a la profesora Eunsu. Por que se cortaron todos los contactos de mi antigua escuela. Por ahora, a dormir.*"
+    },
     "day2_night_dream": {
         "name": "",
-        "text": "*...Un sueño comienza.*"
+        "text": "*...Un sueno comienza.*"
     },
     "day2_night_dream_2": {
         "name": "Yo",
-        "text": "*Estoy caminando por un pasillo oscuro. Esto es... ¿la escuela? El pasillo de la escuela de noche. Solo mis pasos hacen eco.*"
+        "text": "*Camino por un pasillo oscuro. Esto es... la escuela? El pasillo de la escuela de noche. Solo resuenan mis pasos.*"
     },
     "day2_night_dream_3": {
         "name": "???",
-        "text": "\"...Hu...ye...\""
+        "text": "\"...hu...ye...\""
     },
     "day2_night_dream_4": {
         "name": "Yo",
-        "text": "*Me di la vuelta. No hay nadie. Pero definitivamente lo oí. La voz de una chica. Y al final del pasillo... ¿eso era sangre...?*"
+        "text": "*Me di la vuelta. No hay nadie. Pero lo escuche claramente. Una voz de chica.*"
     },
-
+    "day2_night_dream_5": {
+        "name": "Yo",
+        "text": "*Al final del pasillo hay alguien de pie. Cara palida, ojos que miran a lo lejos. ...La chica del asiento de atras?*"
+    },
+    "day2_night_dream_6": {
+        "name": "Yo",
+        "text": "*Justo cuando intento acercarme, todo se oscurece como si el suelo se desmoronara.*"
+    },
     "day2_night_wake": {
         "name": "Yo",
-        "text": "*...¡! Me despierto de golpe, empapado en sudor. Fue un sueño. Solo un sueño. ...¿Verdad?*"
+        "text": "*...! Me desperte empapado en sudor. Fue un sueno. Solo un sueno. ...Verdad?*"
     },
     "day2_night_end": {
         "name": "",
-        "text": "*Fin del Día 2*"
+        "text": "*Fin del Dia 2*"
     }
 }

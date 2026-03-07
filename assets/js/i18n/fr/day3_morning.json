@@ -1,47 +1,19 @@
 {
-    "day3_morning_start": {
-        "name": "Moi",
-        "text": "*Jour 3. Le cauchemar de la nuit dernière ne m'a pas laissé me reposer.*"
-    },
-    "day3_morning_2": {
-        "name": "Moi",
-        "text": "*J'arrive à l'école. Sea ne m'attend pas aujourd'hui. ...Bizarrement, ça me dérange davantage.*"
-    },
-    "day3_morning_hallway": {
-        "name": "Moi",
-        "text": "*En marchant dans le couloir, je m'arrête devant les casiers à chaussures. Quelque chose a attiré mon regard.*"
-    },
-    "day3_morning_locker": {
-        "name": "Moi",
-        "text": "*Un casier a un nom gratté. Seules des traces subsistent... comme si quelqu'un l'avait délibérément effacé.*"
-    },
-    "day3_morning_locker_2": {
-        "name": "Moi",
-        "text": "*Je jette un œil à l'intérieur. Vide. Mais dans le coin... une photo déchirée ? Une photo d'identité, coupée en deux.*"
-    },
-    "day3_morning_locker_3": {
-        "name": "Moi",
-        "text": "*...C'est quoi ça ? Je la mets dans ma poche. Je regarderai de plus près plus tard.*"
-    },
-    "day3_morning_classroom": {
-        "name": "Moi",
-        "text": "*J'entre dans la salle de classe. L'ambiance est étrange. La façon dont les gens me regardent est... différente d'hier.*"
-    },
-    "day3_morning_class_2": {
-        "name": "Moi",
-        "text": "*Ils étaient en pleine conversation qui s'est arrêtée net au moment où je suis entré. De quoi parlaient-ils ?*"
-    },
-    "day3_morning_class_3": {
-        "name": "Park Eunsu",
-        "text": "\"{name}~ Tu as l'air fatigué aujourd'hui ? Tu as bien dormi la nuit dernière ?\""
-    },
-    "day3_morning_class_4": {
-        "name": "Moi",
-        "text": "*...Comment elle sait que j'ai mal dormi ? Mes cernes sont si visibles que ça ? Ou... est-ce qu'on me surveille vraiment ?*"
-    },
-
-    "day3_morning_end": {
-        "name": "Moi",
-        "text": "*Le cours commence. J'essaie de me concentrer, mais ma tête tourne.*"
-    }
+    "day3_morning_start": {"name": "Moi", "text": "*Jour 3. Peut-être à cause du cauchemar d'hier soir, je ne me sens pas frais.*"},
+    "day3_morning_mirror": {"name": "Moi", "text": "*Je me suis regardé dans le miroir. Mon teint est mauvais. ...Depuis quand c'est comme ça ?*"},
+    "day3_morning_2": {"name": "Moi", "text": "*Arrivé à l'école. Aujourd'hui, Sea ne m'attend pas. ...C'est justement ça qui me préoccupe.*"},
+    "day3_morning_2b": {"name": "Moi", "text": "*Hier, même en arrivant dix minutes en avance, elle était déjà là. Qu'est-ce qui est différent aujourd'hui ?*"},
+    "day3_morning_hallway": {"name": "Moi", "text": "*En marchant dans le couloir, je m'arrête devant les casiers. Quelque chose a attiré mon regard.*"},
+    "day3_morning_locker": {"name": "Moi", "text": "*Sur l'un des casiers, un nom a été gratté et effacé. Il ne reste que des traces... On dirait que quelqu'un l'a fait exprès.*"},
+    "day3_morning_locker_2": {"name": "Moi", "text": "*J'ai entrouvert le casier. Vide. Mais dans un coin... un bout de photo ? Une photo d'identité coupée en deux.*"},
+    "day3_morning_locker_3": {"name": "Moi", "text": "*...C'est quoi, ça. Je la mets dans ma poche. Je regarderai plus tard.*"},
+    "day3_morning_seolhwa_glimpse": {"name": "Moi", "text": "*...Au bout du couloir, quelqu'un se tient debout. Un visage livide. Cette personne me regarde.*"},
+    "day3_morning_seolhwa_glimpse_2": {"name": "Moi", "text": "*J'ai cligné des yeux et elle a disparu. ...Seolhwa ? C'était elle à l'instant ?*"},
+    "day3_morning_classroom": {"name": "Moi", "text": "*J'entre dans la salle de classe. L'ambiance est étrange. Les regards des autres sont... différents d'hier.*"},
+    "day3_morning_class_2": {"name": "Moi", "text": "*Ils étaient en pleine conversation, mais se sont tus dès que je suis entré. De quoi parlaient-ils ?*"},
+    "day3_morning_class_sea": {"name": "Moi", "text": "*Sea est assise à sa place. Elle sourit comme d'habitude, mais... quelque chose est différent. Seules ses lèvres sourient.*"},
+    "day3_morning_class_3": {"name": "Park Eunsu", "text": "\"{name}, tu as l'air fatigué aujourd'hui. Tu as bien dormi cette nuit ?\""},
+    "day3_morning_class_4": {"name": "Moi", "text": "*...Comment sait-elle que j'ai mal dormi ? Ce sont les cernes sous mes yeux ? Ou bien... on me surveille vraiment ?*"},
+    "day3_morning_desk": {"name": "Moi", "text": "*J'ouvre le tiroir de mon bureau... La trousse que j'avais rangée hier a changé de place. Quelqu'un a fouillé dedans ?*"},
+    "day3_morning_end": {"name": "Moi", "text": "*Le cours commence. J'essaie de me concentrer, mais j'ai la tête pleine de questions.*"}
 }

@@ -1,47 +1,70 @@
 {
     "day3_morning_start": {
         "name": "Yo",
-        "text": "*Día 3. La pesadilla de anoche me dejó sin descansar.*"
+        "text": "*Dia 3. Sera por la pesadilla de anoche, pero no me siento descansado.*"
+    },
+    "day3_morning_mirror": {
+        "name": "Yo",
+        "text": "*Me mire al espejo. Tengo mala cara. ...Desde cuando estoy asi?*"
     },
     "day3_morning_2": {
         "name": "Yo",
-        "text": "*Llego a la escuela. Sea no está esperando hoy. ...De alguna forma eso me preocupa más.*"
+        "text": "*Llegue a la escuela. Hoy Sea no esta esperando. ...Eso me preocupa mas de lo que deberia.*"
+    },
+    "day3_morning_2b": {
+        "name": "Yo",
+        "text": "*Ayer llegue diez minutos antes y ya estaba ahi. Hoy que es diferente?*"
     },
     "day3_morning_hallway": {
         "name": "Yo",
-        "text": "*Caminando por el pasillo, me detengo frente a las taquillas de zapatos. Algo me llamó la atención.*"
+        "text": "*Caminando por el pasillo, me detengo frente a las taquillas de zapatos. Algo me llamo la atencion.*"
     },
     "day3_morning_locker": {
         "name": "Yo",
-        "text": "*Una taquilla tiene el nombre borrado. Solo quedan restos... como si alguien lo hubiera eliminado a propósito.*"
+        "text": "*Una taquilla tiene el nombre raspado y borrado. Solo quedan marcas... como si alguien lo hubiera eliminado a proposito.*"
     },
     "day3_morning_locker_2": {
         "name": "Yo",
-        "text": "*Echo un vistazo dentro. Vacía. Pero en la esquina... ¿una foto rota? Una foto de carnet, cortada por la mitad.*"
+        "text": "*Abri la taquilla a escondidas. Vacia. Pero en una esquina hay algo... un trozo de foto? Una foto de carnet cortada por la mitad.*"
     },
     "day3_morning_locker_3": {
         "name": "Yo",
-        "text": "*...¿Qué es esto? Me la guardo en el bolsillo. La miraré con más calma después.*"
+        "text": "*...Que es esto. Me la guardo en el bolsillo. La mirare con calma despues.*"
+    },
+    "day3_morning_seolhwa_glimpse": {
+        "name": "Yo",
+        "text": "*...Al final del pasillo hay alguien de pie. Cara palida. Me esta mirando.*"
+    },
+    "day3_morning_seolhwa_glimpse_2": {
+        "name": "Yo",
+        "text": "*Parpadee y desaparecio. ...Seolhwa? Era ella?*"
     },
     "day3_morning_classroom": {
         "name": "Yo",
-        "text": "*Entro al aula. El ambiente es extraño. La forma en que la gente me mira es... diferente a la de ayer.*"
+        "text": "*Entre al aula. El ambiente es raro. La forma en que me miran es... distinta a la de ayer.*"
     },
     "day3_morning_class_2": {
         "name": "Yo",
-        "text": "*Estaban en medio de una conversación que murió en cuanto entré. ¿De qué estaban hablando?*"
+        "text": "*Estaban hablando de algo y en cuanto entre se callaron. De que estaban hablando?*"
+    },
+    "day3_morning_class_sea": {
+        "name": "Yo",
+        "text": "*Sea esta sentada en su sitio. Sonrie como siempre, pero... algo es diferente. Solo sonrie con la boca.*"
     },
     "day3_morning_class_3": {
         "name": "Park Eunsu",
-        "text": "\"{name}~ ¿Pareces cansado hoy? ¿Dormiste bien anoche?\""
+        "text": "\"{name}, hoy pareces cansado. Dormiste bien anoche?\""
     },
     "day3_morning_class_4": {
         "name": "Yo",
-        "text": "*...¿Cómo sabe que no dormí bien? ¿Se me notan tanto las ojeras? O... ¿realmente me están vigilando?*"
+        "text": "*...Como sabe que no dormi bien? Se me notan tanto las ojeras? O... de verdad me estan vigilando?*"
     },
-
+    "day3_morning_desk": {
+        "name": "Yo",
+        "text": "*Abro el cajon del pupitre... y el estuche que deje ayer esta en otro sitio. Alguien lo reviso?*"
+    },
     "day3_morning_end": {
         "name": "Yo",
-        "text": "*La clase comienza. Intento concentrarme, pero la cabeza me da vueltas.*"
+        "text": "*La clase comienza. Intento concentrarme, pero tengo la cabeza llena de cosas.*"
     }
 }

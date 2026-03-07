@@ -1,34 +1,17 @@
 {
-    "day1_night_start": {
-        "name": "Moi",
-        "text": "*De retour à la maison. Allongé sur mon lit, la journée défile dans ma tête.*"
-    },
-    "day1_night_2": {
-        "name": "Moi",
-        "text": "*Nouveau lycée, nouvelles têtes. Tout le monde était sympa. Ça a l'air d'être un bon lycée.*"
-    },
-    "day1_night_3": {
-        "name": "Moi",
-        "text": "*Je devrais bien m'adapter.*"
-    },
-    "day1_night_phone": {
-        "name": "Moi",
-        "text": "*Je vérifie mon téléphone. Des messages de mes amis de l'ancien lycée... il n'y en a pas.*"
-    },
-    "day1_night_phone_2": {
-        "name": "Moi",
-        "text": "*Bah, ils doivent être occupés. Faudra que je leur écrive en premier, un de ces jours.*"
-    },
-    "day1_night_sleep": {
-        "name": "Moi",
-        "text": "*Je me glisse sous la couette. Demain, ce sera quel genre de journée ?*"
-    },
-    "day1_night_sleep_2": {
-        "name": "Moi",
-        "text": "*...Juste avant de m'endormir, j'ai cru voir une lumière scintiller dehors, par la fenêtre. ...Sûrement un rêve.*"
-    },
-    "day1_night_end": {
-        "name": "",
-        "text": "*Fin du jour 1*"
-    }
+    "day1_night_start": {"name": "Moi", "text": "*Je suis rentré. Je n'ai même pas encore fini de défaire mes cartons, mais je m'effondre sur le lit.*"},
+    "day1_night_2": {"name": "Moi", "text": "*Nouvelle école, nouveaux visages. Tout le monde était gentil. Ça a l'air d'être un bon lycée.*"},
+    "day1_night_recall_sea": {"name": "Moi", "text": "*Sea... En tant que déléguée, elle s'est occupée de moi dès le premier jour. Elle avait même préparé un déjeuner pour deux. Quelle fille attentionnée.*"},
+    "day1_night_recall_eunsu": {"name": "Moi", "text": "*Mme Eunsu aussi était chaleureuse. Sa phrase 'Te voilà enfin' m'a un peu intrigué... mais c'est sûrement juste une façon de parler.*"},
+    "day1_night_3": {"name": "Moi", "text": "*Pour un premier jour, ce n'était pas mal. Je devrais pouvoir m'adapter sans problème.*"},
+    "day1_night_phone": {"name": "Moi", "text": "*Je vérifie mon téléphone. Aucun message de mes amis de l'ancien lycée.*"},
+    "day1_night_phone_2": {"name": "Moi", "text": "*Bah, ils doivent être occupés. Je leur enverrai un message moi-même plus tard.*"},
+    "day1_night_phone_sea": {"name": "Moi", "text": "*...Par contre, j'ai un message de Sea.*"},
+    "day1_night_phone_sea_2": {"name": "Moi", "text": "*Sea : 'C'était sympa aujourd'hui ! Tu veux manger quoi demain midi ?'*"},
+    "day1_night_phone_sea_3": {"name": "Moi", "text": "*Dès le premier jour, elle pense déjà au déjeuner de demain. ...Elle est vraiment généreuse.*"},
+    "day1_night_seolhwa_hint": {"name": "Moi", "text": "*...Attends. La fille au fond de la classe. Comment elle s'appelait déjà ? Personne ne semblait la connaître... mais elle était bien assise là.*"},
+    "day1_night_seolhwa_skip": {"name": "Moi", "text": "*...Bon, j'irai lui parler demain.*"},
+    "day1_night_sleep": {"name": "Moi", "text": "*Je tire la couverture. Demain, ce sera quel genre de journée ?*"},
+    "day1_night_sleep_2": {"name": "Moi", "text": "*...Juste avant de m'endormir, j'ai cru voir quelque chose briller par la fenêtre. ...Un rêve, sûrement.*"},
+    "day1_night_end": {"name": "", "text": "*Fin du Jour 1*"}
 }

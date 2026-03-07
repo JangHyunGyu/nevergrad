@@ -6,14 +6,31 @@
 
 ## GLOBAL STYLE PREFIX (모든 프롬프트 앞에 붙일 것)
 
-### Characters
+### Characters (Positive)
 ```
-anime visual novel sprite, Korean high school setting, front-facing upper body portrait, soft pastel coloring, clean lineart, transparent background, white outline, 5.5 head proportions, dating sim style, consistent art style
+anime visual novel sprite, Korean high school setting, front-facing upper body portrait, soft pastel coloring, clean lineart, simple white background, white outline, 5.5 head proportions, dating sim style, consistent art style
 ```
 
-### Backgrounds
+### Characters (Negative)
+```
+(worst quality, low quality:1.4), bad anatomy, bad hands, missing fingers, extra digit, blurry, out of focus, realistic, 3d, photo, multiple views, multiple angles, cropped, watermark, signature
+```
+
+### Horror/Dark Expressions (Negative 추가)
+```
+(cute expression:1.3), bright lighting, cheerful, happy atmosphere
+```
+> Horror 표정(dark, obsessed, yandere, ghost) 생성 시에는 프롬프트 가중치를 높일 것:
+> `(lifeless eyes:1.5)`, `(creepy smile:1.3)`, `(dark dramatic shadows:1.4)`, `(underlighting:1.2)`
+
+### Backgrounds (Positive)
 ```
 anime visual novel background, Korean high school, wide 16:9 aspect ratio, no characters, detailed environment, soft lighting, watercolor-style coloring, dating sim aesthetic
+```
+
+### Backgrounds (Negative)
+```
+(worst quality, low quality:1.4), people, characters, text, watermark, signature, blurry, realistic photo
 ```
 
 ---

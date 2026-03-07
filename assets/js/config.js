@@ -38,14 +38,21 @@ const CONFIG = {
     },
 
     // ===== 캐릭터 표시 이름 =====
+    // 기본 표시 이름 (직함). 호감도 이벤트 후 CHAR_REAL_NAMES로 전환
     CHAR_NAMES: {
-        eunsu: "박은수",
-        riin: "강리인",
+        eunsu: "담임교사",
+        riin: "보건교사",
         sea: "한세아",
         yuna: "최유나",
         seolhwa: "이설화",
         me: "나",
         unknown: "???"
+    },
+
+    // 이름 공개 후 전환되는 실명
+    CHAR_REAL_NAMES: {
+        eunsu: "은수",
+        riin: "리인"
     },
 
     // ===== 캐릭터 표정 매핑 =====

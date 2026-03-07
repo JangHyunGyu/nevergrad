@@ -25,11 +25,11 @@
         "text": "*...Mme Eunsu est debout au portail. Elle m'attendait.*"
     },
     "day4_morning_eunsu": {
-        "name": "Park Eunsu",
+        "name": "Professeure",
         "text": "\"{name}, bonjour. Je vais t'accompagner moi-même aujourd'hui. Marchons ensemble.\""
     },
     "day4_morning_eunsu_2": {
-        "name": "Park Eunsu",
+        "name": "Professeure",
         "text": "\"Je peux te prendre la main ? Je vais te conduire à l'école en toute sécurité.\"",
         "choices": [
             "Prendre sa main",
@@ -37,7 +37,7 @@
         ]
     },
     "day4_morning_eunsu_timeout": {
-        "name": "Park Eunsu",
+        "name": "Professeure",
         "text": "\"...Pas de réponse ?\""
     },
     "day4_morning_eunsu_timeout_2": {
@@ -45,7 +45,7 @@
         "text": "*Avant que je puisse répondre, Mme Eunsu m'a attrapé le poignet. Assez fort pour laisser un bleu.*"
     },
     "day4_morning_eunsu_timeout_3": {
-        "name": "Park Eunsu",
+        "name": "Professeure",
         "text": "\"Quand ta professeure te pose une question, tu réponds. ...Allons-y.\""
     },
     "day4_morning_eunsu_comply": {
@@ -53,11 +53,11 @@
         "text": "*La main de Mme Eunsu est froide. ...Et forte. Elle ne semble pas avoir l'intention de lâcher.*"
     },
     "day4_morning_eunsu_refuse": {
-        "name": "Park Eunsu",
+        "name": "Professeure",
         "text": "\"...Ah bon ? Tant pis.\""
     },
     "day4_morning_eunsu_refuse_2": {
-        "name": "Park Eunsu",
+        "name": "Professeure",
         "text": "\"Mais {name}, il vaut mieux ne pas se promener seul dans cette école. ...C'est dangereux.\""
     },
 
@@ -87,15 +87,15 @@
     },
 
     "day4_morning_class_start": {
-        "name": "Park Eunsu",
+        "name": "Professeure",
         "text": "\"Bien, commençons le cours. Aujourd'hui, c'est une leçon spéciale.\""
     },
     "day4_morning_class_2": {
-        "name": "Park Eunsu",
+        "name": "Professeure",
         "text": "\"Parlons de 'l'appartenance'. Vous 'appartenez' tous à cette école. Vous faites partie de cette école.\""
     },
     "day4_morning_class_3": {
-        "name": "Park Eunsu",
+        "name": "Professeure",
         "text": "\"Essayer de quitter cette école... c'est comme jeter une part de soi-même. N'est-ce pas, {name} ?\""
     },
     "day4_morning_class_4": {

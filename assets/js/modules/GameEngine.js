@@ -175,22 +175,31 @@ class GameEngine {
 
         this._updateHUD();
 
+        // 타이핑 옵션 (공포 연출: 느린 텍스트, 스킵 불가)
+        const typeOpts = {};
+        if (scene.typingSpeed) typeOpts.typingSpeed = scene.typingSpeed;
+        if (scene.unskippable) typeOpts.unskippable = true;
+
         // 선택지
         if (scene.choices) {
             const choiceLabels = t.choices || [];
             this.dialogue.type(name, text, () => {
-                this._showChoices(scene.choices, choiceLabels);
-            });
+                if (scene.timedChoice) {
+                    this._showTimedChoices(scene, choiceLabels);
+                } else {
+                    this._showChoices(scene.choices, choiceLabels);
+                }
+            }, typeOpts);
         }
         // FreeTalk
         else if (scene.type === "free_talk") {
             this.dialogue.type(name, text, () => {
                 this._startFreeTalk(scene);
-            });
+            }, typeOpts);
         }
         // 일반 대사
         else {
-            this.dialogue.type(name, text);
+            this.dialogue.type(name, text, null, typeOpts);
         }
     }
 
@@ -252,6 +261,64 @@ class GameEngine {
 
             panel.appendChild(btn);
         });
+    }
+
+    // ===== Timed Choices (Day 4~5 타이머 선택지) =====
+
+    /**
+     * 타이머 선택지 표시 — 약물 패널티(drank_riin_drink) 시 타이머 감산
+     */
+    _showTimedChoices(scene, labels) {
+        let timeMs = scene.timedChoice;
+
+        // 약물 패널티: 리인 음료를 마셨으면 Day 4+ 타이머 -2초
+        if (this.state.hasFlag('drank_riin_drink') && this.state.currentDay >= 4) {
+            timeMs = Math.max(2000, timeMs - 2000);
+        }
+
+        // 약물 시야 흐림: 타이머 시작 직전 블랙아웃
+        const startChoices = () => {
+            this.choices.showTimedChoices(
+                scene.choices,
+                labels,
+                Math.round(timeMs / 1000),
+                -1, // timeout sentinel
+                (idx) => this._handleTimedResult(scene, idx)
+            );
+        };
+
+        if (this.state.hasFlag('drank_riin_drink') && this.state.currentDay >= 4) {
+            this.glitch.drugBlur(500).then(startChoices);
+        } else {
+            startChoices();
+        }
+    }
+
+    /**
+     * 타이머 선택지 결과 처리
+     */
+    _handleTimedResult(scene, idx) {
+        // 타임아웃 (idx < 0 또는 범위 초과)
+        if (idx < 0 || idx >= scene.choices.length) {
+            if (scene.timeoutNext) {
+                this._loadScene(scene.timeoutNext);
+            }
+            return;
+        }
+
+        // 정상 선택
+        const choice = scene.choices[idx];
+        if (!choice) return;
+
+        if (choice.stats) {
+            for (const [charId, changes] of Object.entries(choice.stats)) {
+                for (const [stat, val] of Object.entries(changes)) {
+                    this.state.changeStat(charId, stat, val);
+                }
+            }
+        }
+        if (choice.setFlags) this.state.setFlags(choice.setFlags);
+        if (choice.next) this._loadScene(choice.next);
     }
 
     // ===== Branch Resolution =====

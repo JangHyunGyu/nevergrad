@@ -74,12 +74,25 @@ Object.assign(SCENARIO[5], {
         timeoutNext: "day5_lunch_escape_caught_sea"
     },
 
-    // ── 왼쪽 복도 (세아 조우) ──
+    // ── 왼쪽 복도 (세아 조우) — 호감도 분기 ──
     "day5_lunch_escape_left": {
         character: "sea_yandere",
         glitch: { noise: true, noiseDuration: 300 },
-        next: "day5_lunch_sea_block"
+        // ★ 세아 호감도에 따라 난이도 변화
+        affinityChar: "sea",
+        affinityBranches: [
+            { minAffinity: 60, next: "day5_lunch_sea_block_max" },
+            { minAffinity: 40, next: "day5_lunch_sea_block_high" },
+            { minAffinity: 20, next: "day5_lunch_sea_block" },
+            { minAffinity: 0,  next: "day5_lunch_sea_pass" }
+        ]
     },
+    // LOW: 세아가 멍하니 서있음 → 바로 통과
+    "day5_lunch_sea_pass": {
+        character: "sea_sad",
+        next: "day5_lunch_continue"
+    },
+    // MID: 기존 조우 (4초 타이머)
     "day5_lunch_sea_block": {
         next: "day5_lunch_sea_block_2"
     },
@@ -96,6 +109,43 @@ Object.assign(SCENARIO[5], {
             }
         ],
         timeoutNext: "day5_lunch_escape_caught_sea"
+    },
+    // HIGH: 세아가 팔을 잡음 (3초 타이머)
+    "day5_lunch_sea_block_high": {
+        next: "day5_lunch_sea_block_high_2"
+    },
+    "day5_lunch_sea_block_high_2": {
+        timedChoice: 3000,
+        choices: [
+            {
+                next: "day5_lunch_sea_push",
+                stats: { sea: { danger: 10 } }
+            },
+            {
+                next: "day5_lunch_sea_talk",
+                stats: { sea: { trust: 5 } }
+            }
+        ],
+        timeoutNext: "day5_lunch_escape_caught_sea"
+    },
+    // MAX: 세아가 문을 잠금 + forceChoice (설득만 가능)
+    "day5_lunch_sea_block_max": {
+        glitch: { screenShake: true, shakeDuration: 300 },
+        next: "day5_lunch_sea_block_max_2"
+    },
+    "day5_lunch_sea_block_max_2": {
+        // 밀치기 선택지가 설득으로 강제 변환
+        glitch: { forceChoice: 1 },
+        choices: [
+            {
+                next: "day5_lunch_sea_talk",
+                stats: { sea: { trust: 5 } }
+            },
+            {
+                next: "day5_lunch_sea_talk",
+                stats: { sea: { trust: 5 } }
+            }
+        ]
     },
     "day5_lunch_sea_push": {
         next: "day5_lunch_continue",
@@ -167,11 +217,17 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_continue_2"
     },
     "day5_lunch_continue_2": {
-        // 은수 최종 대면
+        // ★ 은수 호감도에 따라 난이도 변화
         character: "eunsu_obsessed",
         glitch: { screenShake: true, shakeDuration: 500, noise: true, noiseDuration: 500 },
-        next: "day5_lunch_eunsu_final"
+        affinityChar: "eunsu",
+        affinityBranches: [
+            { minAffinity: 60, next: "day5_lunch_eunsu_final_max" },
+            { minAffinity: 40, next: "day5_lunch_eunsu_final_high" },
+            { minAffinity: 0,  next: "day5_lunch_eunsu_final" }
+        ]
     },
+    // LOW/MID: 기존 대면 (5초 타이머)
     "day5_lunch_eunsu_final": {
         next: "day5_lunch_eunsu_final_2"
     },
@@ -187,6 +243,44 @@ Object.assign(SCENARIO[5], {
             }
         ],
         timeoutNext: "day5_lunch_eunsu_stay"
+    },
+    // HIGH: 추가 설득 + 짧은 타이머 (3초)
+    "day5_lunch_eunsu_final_high": {
+        next: "day5_lunch_eunsu_final_high_2"
+    },
+    "day5_lunch_eunsu_final_high_2": {
+        timedChoice: 3000,
+        choices: [
+            {
+                next: "day5_lunch_eunsu_break",
+                setFlags: ["broke_through_eunsu"]
+            },
+            {
+                next: "day5_lunch_eunsu_stay"
+            }
+        ],
+        timeoutNext: "day5_lunch_eunsu_stay"
+    },
+    // MAX: 비상구 잠김 → 유나 동행 시에만 돌파 가능
+    "day5_lunch_eunsu_final_max": {
+        glitch: { heavyGlitch: true, glitchDuration: 800 },
+        typingSpeed: 100,
+        next: "day5_lunch_eunsu_final_max_2"
+    },
+    "day5_lunch_eunsu_final_max_2": {
+        typingSpeed: 150,
+        unskippable: true,
+        // 유나가 함께하면 교란으로 돌파, 아니면 잡힘
+        branches: [
+            { condition: "escape_with_yuna", next: "day5_lunch_eunsu_yuna_help" }
+        ],
+        next: "day5_lunch_eunsu_stay"
+    },
+    "day5_lunch_eunsu_yuna_help": {
+        // 유나가 교란을 일으켜 은수의 주의를 끔
+        character: null,
+        next: "day5_lunch_eunsu_break",
+        setFlags: ["broke_through_eunsu", "yuna_distraction"]
     },
     "day5_lunch_eunsu_break": {
         character: null,

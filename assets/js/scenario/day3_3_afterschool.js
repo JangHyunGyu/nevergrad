@@ -68,7 +68,8 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_riin_drink_2": {
         next: "day3_after_riin_drink_3",
-        setFlags: ["drank_riin_medicine"]
+        setFlags: ["drank_riin_drink"],
+        stats: { riin: { danger: 5 } }
     },
     "day3_after_riin_drink_3": {
         character: null,

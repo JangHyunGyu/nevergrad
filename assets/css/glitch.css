@@ -153,6 +153,19 @@
     filter: brightness(0) opacity(0.7);
 }
 
+/* ===== Drug Blur (리인 음료 페널티) ===== */
+.drug-blur {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    animation: drug-pulse 0.5s ease-out forwards;
+}
+
+@keyframes drug-pulse {
+    0% { opacity: 0; backdrop-filter: blur(0px); }
+    40% { opacity: 1; backdrop-filter: blur(10px); }
+    100% { opacity: 0; backdrop-filter: blur(2px); }
+}
+
 /* ===== Red Vignette (Day 4+) ===== */
 .bg-overlay.vignette-red {
     background: radial-gradient(

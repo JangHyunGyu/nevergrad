@@ -98,18 +98,24 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa"
     },
 
-    // ── ★ 설화 등장 ──
+    // ── ★ 설화 등장 — 느린 타이핑으로 초자연적 분위기 ──
     "day3_night_seolhwa": {
         background: "school_dark",
         bgm: null,
         character: "seolhwa_ghost",
         glitch: { noise: true, noiseDuration: 300 },
+        typingSpeed: 120,
+        unskippable: true,
         next: "day3_night_seolhwa_2"
     },
     "day3_night_seolhwa_2": {
+        typingSpeed: 150,
+        unskippable: true,
         next: "day3_night_seolhwa_3"
     },
     "day3_night_seolhwa_3": {
+        typingSpeed: 200,
+        unskippable: true,
         next: "day3_night_seolhwa_4"
     },
     "day3_night_seolhwa_4": {

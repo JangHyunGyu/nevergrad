@@ -18,14 +18,21 @@ class DialogueSystem {
 
     /**
      * 이름 + 대사를 타이핑 효과로 출력
+     * @param {string} name - 화자 이름
+     * @param {string} text - 대사 텍스트
+     * @param {Function|null} onComplete - 타이핑 완료 콜백
+     * @param {object} [options] - 추가 옵션
+     * @param {number} [options.typingSpeed] - 글자당 ms (기본: CONFIG.TYPING_SPEED)
+     * @param {boolean} [options.unskippable] - true면 클릭으로 스킵 불가
      */
-    type(name, text, onComplete = null) {
+    type(name, text, onComplete = null, options = {}) {
         if (this.nameEl) this.nameEl.textContent = name;
         if (this.indicatorEl) this.indicatorEl.style.display = 'none';
 
         this._fullText = text;
         this._onComplete = onComplete;
         this.isTyping = true;
+        this._unskippable = !!options.unskippable;
 
         // 나레이션 처리 (*로 감싸진 텍스트)
         const isNarration = text.startsWith('*') && text.endsWith('*');
@@ -38,7 +45,7 @@ class DialogueSystem {
         }
 
         let idx = 0;
-        const speed = CONFIG.TYPING_SPEED;
+        const speed = options.typingSpeed || CONFIG.TYPING_SPEED;
 
         this._typeTimer = setInterval(() => {
             if (idx < displayText.length) {
@@ -54,6 +61,8 @@ class DialogueSystem {
 
     skipTyping() {
         if (!this.isTyping) return;
+        // unskippable 장면에서는 스킵 차단 (공포 연출용)
+        if (this._unskippable) return;
 
         const isNarration = this._fullText.startsWith('*') && this._fullText.endsWith('*');
         const displayText = isNarration ? this._fullText.slice(1, -1) : this._fullText;

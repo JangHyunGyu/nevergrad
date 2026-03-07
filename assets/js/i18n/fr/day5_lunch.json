@@ -72,6 +72,34 @@
             "Essayer de convaincre Sea"
         ]
     },
+    "day5_lunch_sea_pass": {
+        "name": "Moi",
+        "text": "*Sea se tient dans le couloir. ...Mais elle ne bloque pas le passage. Elle me regarde d'un air absent.*"
+    },
+    "day5_lunch_sea_block_high": {
+        "name": "Han Sea",
+        "text": "\"...Non. Je ne peux pas te laisser partir.\""
+    },
+    "day5_lunch_sea_block_high_2": {
+        "name": "Moi",
+        "text": "*Sea m'a attrapé le bras. Sa main serre fort.*",
+        "choices": [
+            "La pousser et passer",
+            "Convaincre Sea"
+        ]
+    },
+    "day5_lunch_sea_block_max": {
+        "name": "Moi",
+        "text": "*'Clic.' Sea a verrouillé la porte de la salle de classe derrière elle. ...Impossible de sortir d'ici.*"
+    },
+    "day5_lunch_sea_block_max_2": {
+        "name": "Han Sea",
+        "text": "\"Tu n'as qu'à me regarder. Tu n'as qu'à me regarder, moi. ...Tu comprends, {name} ?\"",
+        "choices": [
+            "Convaincre Sea",
+            "Convaincre Sea"
+        ]
+    },
     "day5_lunch_sea_push": {
         "name": "Moi",
         "text": "*J'ai poussé Sea et j'ai couru. J'entends des pleurs derrière moi.*"
@@ -146,6 +174,30 @@
             "Forcer le passage et partir",
             "Rester avec Eunsu"
         ]
+    },
+    "day5_lunch_eunsu_final_high": {
+        "name": "Park Eunsu",
+        "text": "\"{name}. Tu sais à quel point je me suis inquiétée ? ...Allez, il est temps de revenir.\""
+    },
+    "day5_lunch_eunsu_final_high_2": {
+        "name": "Park Eunsu",
+        "text": "\"Tu ne vas pas écouter ta professeure ? ...{name} est un bon élève, non ?\"",
+        "choices": [
+            "Forcer le passage",
+            "Rester avec Eunsu"
+        ]
+    },
+    "day5_lunch_eunsu_final_max": {
+        "name": "Moi",
+        "text": "*Un cadenas est accroché à la sortie de secours. ...Elle ne s'ouvre pas.*"
+    },
+    "day5_lunch_eunsu_final_max_2": {
+        "name": "Park Eunsu",
+        "text": "\"Tu comptais aller où ? ...J'ai tout préparé. {name} n'a qu'à rester ici.\""
+    },
+    "day5_lunch_eunsu_yuna_help": {
+        "name": "Moi",
+        "text": "*Soudain, l'alarme incendie retentit au bout du couloir. ...C'est Yuna ! Au moment où le regard de Mme Park s'est détourné, j'ai couru.*"
     },
     "day5_lunch_eunsu_break": {
         "name": "Moi",

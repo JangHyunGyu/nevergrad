@@ -72,6 +72,34 @@
             "Intentar convencer a Sea"
         ]
     },
+    "day5_lunch_sea_pass": {
+        "name": "Yo",
+        "text": "*Sea está de pie en el pasillo. ...Pero no me bloquea el paso. Me mira con la mirada perdida.*"
+    },
+    "day5_lunch_sea_block_high": {
+        "name": "Han Sea",
+        "text": "\"...No. No puedo dejarte ir.\""
+    },
+    "day5_lunch_sea_block_high_2": {
+        "name": "Yo",
+        "text": "*Sea me agarró del brazo. Está apretando con fuerza.*",
+        "choices": [
+            "Empujarla y pasar",
+            "Convencer a Sea"
+        ]
+    },
+    "day5_lunch_sea_block_max": {
+        "name": "Yo",
+        "text": "*'Clic.' Sea cerró con llave la puerta del aula desde atrás. ...No puedo salir de aquí.*"
+    },
+    "day5_lunch_sea_block_max_2": {
+        "name": "Han Sea",
+        "text": "\"Solo mírame a mí. Solo tienes que mirarme a mí. ...Lo entiendes, ¿verdad, {name}?\"",
+        "choices": [
+            "Convencer a Sea",
+            "Convencer a Sea"
+        ]
+    },
     "day5_lunch_sea_push": {
         "name": "Yo",
         "text": "*Pasé a la fuerza y corrí. Puedo oír llantos detrás de mí.*"
@@ -146,6 +174,30 @@
             "Abrirse paso y salir",
             "Quedarse con Eunsu"
         ]
+    },
+    "day5_lunch_eunsu_final_high": {
+        "name": "Park Eunsu",
+        "text": "\"{name}. ¿Sabes lo preocupada que ha estado la profesora? ...Vamos, es hora de volver.\""
+    },
+    "day5_lunch_eunsu_final_high_2": {
+        "name": "Park Eunsu",
+        "text": "\"¿No vas a hacer caso a la profesora? ...{name} es un buen chico, ¿verdad?\"",
+        "choices": [
+            "Empujar y salir",
+            "Quedarse con Eunsu"
+        ]
+    },
+    "day5_lunch_eunsu_final_max": {
+        "name": "Yo",
+        "text": "*La salida de emergencia tiene un candado. ...No se abre.*"
+    },
+    "day5_lunch_eunsu_final_max_2": {
+        "name": "Park Eunsu",
+        "text": "\"¿Adónde intentas ir? ...La profesora ya lo tiene todo preparado. {name} solo tiene que quedarse aquí.\""
+    },
+    "day5_lunch_eunsu_yuna_help": {
+        "name": "Yo",
+        "text": "*De repente, la alarma de incendios suena al final del pasillo. ...¡Es Yuna! En el instante en que la mirada de la profesora Park se desvió, eché a correr.*"
     },
     "day5_lunch_eunsu_break": {
         "name": "Yo",

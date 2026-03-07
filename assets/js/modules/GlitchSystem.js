@@ -209,6 +209,26 @@ class GlitchSystem {
         }
     }
 
+    // ===== 약물 후유증 =====
+
+    /**
+     * 리인의 음료를 마신 뒤 발생하는 시야 흐림 + 짧은 블랙아웃
+     * Day 4~5 타이머 선택지 직전에 발동하여 반응 시간을 실질적으로 감소
+     */
+    drugBlur(duration = 500) {
+        if (!this.overlay) return;
+        this.overlay.classList.remove('hidden');
+        this.overlay.classList.add('drug-blur');
+
+        return new Promise(resolve => {
+            setTimeout(() => {
+                this.overlay.classList.add('hidden');
+                this.overlay.classList.remove('drug-blur');
+                resolve();
+            }, duration);
+        });
+    }
+
     // ===== 유틸 =====
 
     _sleep(ms) {

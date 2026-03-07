@@ -72,6 +72,34 @@
             "세아를 설득한다"
         ]
     },
+    "day5_lunch_sea_pass": {
+        "name": "나",
+        "text": "*세아가 복도에 서 있다. ...하지만 길을 막지 않는다. 멍하니 나를 바라보고 있다.*"
+    },
+    "day5_lunch_sea_block_high": {
+        "name": "한세아",
+        "text": "\"...안 돼. 보내줄 수 없어.\""
+    },
+    "day5_lunch_sea_block_high_2": {
+        "name": "나",
+        "text": "*세아가 내 팔을 잡았다. 손에 힘이 들어가 있다.*",
+        "choices": [
+            "밀치고 지나간다",
+            "세아를 설득한다"
+        ]
+    },
+    "day5_lunch_sea_block_max": {
+        "name": "나",
+        "text": "*'찰칵.' 세아가 뒤에서 교실 문을 잠갔다. ...여기서 나갈 수 없다.*"
+    },
+    "day5_lunch_sea_block_max_2": {
+        "name": "한세아",
+        "text": "\"나만 보면 돼. 나만 보면 된다고. ...알겠지, {name}?\"",
+        "choices": [
+            "세아를 설득한다",
+            "세아를 설득한다"
+        ]
+    },
     "day5_lunch_sea_push": {
         "name": "나",
         "text": "*세아를 밀치고 뛰었다. 뒤에서 울음소리가 들린다.*"
@@ -146,6 +174,30 @@
             "밀치고 나간다",
             "은수와 함께 남는다"
         ]
+    },
+    "day5_lunch_eunsu_final_high": {
+        "name": "박은수",
+        "text": "\"{name}. 선생님이 얼마나 걱정했는지 알아? ...이제 그만 돌아오자.\""
+    },
+    "day5_lunch_eunsu_final_high_2": {
+        "name": "박은수",
+        "text": "\"선생님 말 안 들을 거야? ...{name}은 착한 아이잖아.\"",
+        "choices": [
+            "밀치고 나간다",
+            "은수와 함께 남는다"
+        ]
+    },
+    "day5_lunch_eunsu_final_max": {
+        "name": "나",
+        "text": "*비상구에 자물쇠가 걸려 있다. ...열리지 않는다.*"
+    },
+    "day5_lunch_eunsu_final_max_2": {
+        "name": "박은수",
+        "text": "\"어디 가려고? ...선생님이 다 준비해놨어. {name}은 여기 있으면 돼.\""
+    },
+    "day5_lunch_eunsu_yuna_help": {
+        "name": "나",
+        "text": "*갑자기 복도 끝에서 화재경보가 울린다. ...유나다! 은수 선생님의 시선이 돌아간 순간, 뛰었다.*"
     },
     "day5_lunch_eunsu_break": {
         "name": "나",

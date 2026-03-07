@@ -72,6 +72,34 @@
             "Try to convince Sea"
         ]
     },
+    "day5_lunch_sea_pass": {
+        "name": "Me",
+        "text": "*Sea is standing in the corridor. ...But she doesn't block the way. She's staring at me blankly.*"
+    },
+    "day5_lunch_sea_block_high": {
+        "name": "Han Sea",
+        "text": "\"...No. I can't let you go.\""
+    },
+    "day5_lunch_sea_block_high_2": {
+        "name": "Me",
+        "text": "*Sea grabbed my arm. Her grip is tight.*",
+        "choices": [
+            "Push past her",
+            "Persuade Sea"
+        ]
+    },
+    "day5_lunch_sea_block_max": {
+        "name": "Me",
+        "text": "*'Click.' Sea locked the classroom door behind her. ...There's no way out of here.*"
+    },
+    "day5_lunch_sea_block_max_2": {
+        "name": "Han Sea",
+        "text": "\"Just look at me. You only need to look at me. ...You understand, right, {name}?\"",
+        "choices": [
+            "Persuade Sea",
+            "Persuade Sea"
+        ]
+    },
     "day5_lunch_sea_push": {
         "name": "Me",
         "text": "*I pushed past Sea and ran. I can hear crying behind me.*"
@@ -146,6 +174,30 @@
             "Push through and leave",
             "Stay with Eunsu"
         ]
+    },
+    "day5_lunch_eunsu_final_high": {
+        "name": "Park Eunsu",
+        "text": "\"{name}. Do you know how worried I've been? ...Let's stop this and come back now.\""
+    },
+    "day5_lunch_eunsu_final_high_2": {
+        "name": "Park Eunsu",
+        "text": "\"You're not going to listen to me? ...{name}, you're a good kid, aren't you.\"",
+        "choices": [
+            "Push through",
+            "Stay with Eunsu"
+        ]
+    },
+    "day5_lunch_eunsu_final_max": {
+        "name": "Me",
+        "text": "*There's a padlock on the emergency exit. ...It won't open.*"
+    },
+    "day5_lunch_eunsu_final_max_2": {
+        "name": "Park Eunsu",
+        "text": "\"Where do you think you're going? ...I've prepared everything. {name}, you just need to stay here.\""
+    },
+    "day5_lunch_eunsu_yuna_help": {
+        "name": "Me",
+        "text": "*Suddenly, the fire alarm goes off at the end of the corridor. ...It's Yuna! The moment Ms. Eunsu's attention turned away, I ran.*"
     },
     "day5_lunch_eunsu_break": {
         "name": "Me",

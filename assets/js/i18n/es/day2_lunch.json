@@ -1,0 +1,77 @@
+{
+    "day2_lunch_start": {
+        "name": "Yo",
+        "text": "*Hora del almuerzo. ¿Dónde como hoy?*"
+    },
+    "day2_lunch_choice": {
+        "name": "Yo",
+        "text": "*Es la hora del almuerzo.*",
+        "choices": [
+            "Comer con Sea",
+            "Ver a Yuna en la biblioteca",
+            "Pasar por la enfermería",
+            "Comer solo en la azotea"
+        ]
+    },
+
+    "day2_lunch_sea": {
+        "name": "Han Sea",
+        "text": "\"Jeje, ¡hoy también preparé almuerzo! Vi que ayer te gustó la tortilla enrollada, así que puse más.\""
+    },
+    "day2_lunch_sea_2": {
+        "name": "Han Sea",
+        "text": "\"Oye, {name}... ¿pasas mucho tiempo con otras personas aparte de mí?\""
+    },
+    "day2_lunch_sea_3": {
+        "name": "Yo",
+        "text": "*Sea me agarra suavemente el dorso de la mano. Dedos pequeños y cálidos.*"
+    },
+    "day2_lunch_sea_4": {
+        "name": "Yo",
+        "text": "*\"...{name} es mío, ¿sabes?\" susurró Sea. Pensé que bromeaba... pero su expresión era seria. Espera, ahora está sonriendo, así que debe ser una broma... ¿verdad?*"
+    },
+
+    "day2_lunch_yuna": {
+        "name": "Choi Yuna",
+        "text": "\"¡Senpai! Mira las fotos que tomé hoy, la colina detrás de la escuela es tan bonita...\""
+    },
+    "day2_lunch_yuna_2": {
+        "name": "Yo",
+        "text": "*Al pasar las fotos, veo otra imagen extraña. Pilas de documentos frente a la sala de profesores. ...¿Por qué fotografió eso?*"
+    },
+    "day2_lunch_yuna_3": {
+        "name": "Choi Yuna",
+        "text": "\"¡Oh, eso fue un accidente! La borraré, jeje!\""
+    },
+
+    "day2_lunch_riin": {
+        "name": "Kang Riin",
+        "text": "\"{name}, justo a tiempo. Aún no se ha hecho tu revisión médica de estudiante de intercambio. ¿Te importa si te hago unas pruebas?\""
+    },
+    "day2_lunch_riin_2": {
+        "name": "Kang Riin",
+        "text": "\"Presión arterial, vista, peso... fufu, voy a revisar unas cuantas cosas. ¿Podrías desabrocharte un poco la camisa?\""
+    },
+    "day2_lunch_riin_3": {
+        "name": "Yo",
+        "text": "*Para ser una revisión médica... sus preguntas fueron un poco raras. Patrones de sueño, alergias a medicamentos, historial médico familiar. ¿Una enfermera escolar realmente pregunta todo esto?*"
+    },
+
+    "day2_lunch_rooftop": {
+        "name": "Yo",
+        "text": "*Caminando por el pasillo hacia la azotea, oigo una voz desde debajo de las escaleras.*"
+    },
+    "day2_lunch_rooftop_2": {
+        "name": "Yo",
+        "text": "*...Es la voz de la profesora Eunsu. \"...El estado del sujeto es estable. Podemos proceder según lo planeado...\" Parece estar hablando por teléfono. ¿De qué habla?*"
+    },
+    "day2_lunch_rooftop_3": {
+        "name": "Yo",
+        "text": "*Hice un ruido y ella colgó rápidamente. Seguramente era solo una llamada de trabajo.*"
+    },
+
+    "day2_lunch_end": {
+        "name": "Yo",
+        "text": "*Hora de las clases de la tarde.*"
+    }
+}

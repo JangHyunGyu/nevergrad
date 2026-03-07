@@ -1,0 +1,103 @@
+{
+    "day4_night_start": {
+        "name": "Yo",
+        "text": "*En casa. Puerta con llave. Cortinas cerradas.*"
+    },
+    "day4_night_start_2": {
+        "name": "Yo",
+        "text": "*Mañana es el Día 5. El plazo que mencionó Seolhwa. ...¿Qué pasa después de cinco días?*"
+    },
+    "day4_night_start_3": {
+        "name": "Yo",
+        "text": "*Mi teléfono suena.*"
+    },
+
+    "day4_night_phone": {
+        "name": "Yo",
+        "text": "*Sea: '¡{name}, mañana vayamos juntos! ¿Prometido?'*\n*Sea: 'Prometido.'*\n*Sea: 'Prometido.'*"
+    },
+    "day4_night_phone_2": {
+        "name": "Yo",
+        "text": "*Profesora Eunsu: '¿Podrías venir un poco antes mañana? Tengo algo de lo que hablar contigo.'*"
+    },
+    "day4_night_phone_3": {
+        "name": "Yo",
+        "text": "*...Quiero apagar el teléfono. Pero eso las haría sospechar más.*"
+    },
+
+    "day4_night_plan": {
+        "name": "Yo",
+        "text": "*Déjame organizar esto. Esta escuela está experimentando con estudiantes de intercambio.*"
+    },
+    "day4_night_plan_2": {
+        "name": "Yo",
+        "text": "*La profesora Eunsu 'gestiona' a los estudiantes de intercambio, Riin administra las drogas, y Sea... ¿vigilancia? ¿O algo más?*"
+    },
+    "day4_night_plan_branch": {
+        "name": "Yo",
+        "text": "*Tengo suficientes pruebas. Tarjeta de memoria, fotos de documentos, el laboratorio subterráneo... Solo necesito hacer llegar esto al exterior.*"
+    },
+    "day4_night_plan_branch_alt": {
+        "name": "Yo",
+        "text": "*No tengo suficientes pruebas. Pero ya no queda tiempo para esperar.*"
+    },
+    "day4_night_plan_3": {
+        "name": "Yo",
+        "text": "*Mañana. ¿Qué hago?*"
+    },
+    "day4_night_plan_choice": {
+        "name": "Yo",
+        "text": "*Finalizo mi plan.*",
+        "choices": [
+            "Escapar de la escuela",
+            "Exponer las pruebas públicamente",
+            "Confrontarlos directamente"
+        ]
+    },
+    "day4_night_plan_escape": {
+        "name": "Yo",
+        "text": "*Mañana, encontraré un hueco y saldré de la escuela. Necesito llevarme a Yuna también.*"
+    },
+    "day4_night_plan_expose": {
+        "name": "Yo",
+        "text": "*Subir las pruebas a internet. Denunciar a la policía. Que el mundo conozca la verdad sobre esta escuela.*"
+    },
+    "day4_night_plan_confront": {
+        "name": "Yo",
+        "text": "*La profesora Eunsu, Riin, Sea... Las enfrentaré directamente. Les preguntaré por qué hacen esto.*"
+    },
+
+    "day4_night_seolhwa": {
+        "name": "Lee Seolhwa",
+        "text": "\"...Nos vemos de nuevo.\""
+    },
+    "day4_night_seolhwa_2": {
+        "name": "Lee Seolhwa",
+        "text": "\"Yo fui... el Sujeto 07, hace un año. El único caso en el que el experimento fracasó.\""
+    },
+    "day4_night_seolhwa_3": {
+        "name": "Lee Seolhwa",
+        "text": "\"La manipulación de memoria... tuvo el efecto contrario. Los demás perdieron sus recuerdos, pero yo acabé recordándolo todo.\""
+    },
+    "day4_night_seolhwa_4": {
+        "name": "Lee Seolhwa",
+        "text": "\"Así que me 'procesaron'. Oficialmente, un traslado. En realidad...\""
+    },
+    "day4_night_seolhwa_5": {
+        "name": "Lee Seolhwa",
+        "text": "\"...'El procesamiento final' ocurre la noche del Día 5. Tienes que salir antes de eso. Por favor.\""
+    },
+    "day4_night_seolhwa_6": {
+        "name": "Lee Seolhwa",
+        "text": "\"Y... protege a Yuna. Ella se vio arrastrada a esto por mi culpa.\""
+    },
+    "day4_night_seolhwa_7": {
+        "name": "Yo",
+        "text": "*...Abrí los ojos. 4 de la mañana. Aún está oscuro fuera. ...Mañana ya está aquí.*"
+    },
+
+    "day4_night_end": {
+        "name": "Yo",
+        "text": "*Día 5. El último día.*"
+    }
+}

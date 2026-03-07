@@ -1,0 +1,126 @@
+{
+    "day5_after_start": {
+        "name": "私",
+        "text": "*……*"
+    },
+
+    "day5_after_escaped": {
+        "name": "私",
+        "text": "*学校の外。雨が降っている。初めて……学校の外の空気を吸う。*"
+    },
+    "day5_after_escaped_2": {
+        "name": "私",
+        "text": "*走った。どこへでもいい。この学校からできるだけ遠くへ。*"
+    },
+    "day5_after_escaped_3": {
+        "name": "私",
+        "text": "*一人だ。でも生きている。*"
+    },
+    "day5_after_escaped_solo": {
+        "name": "私",
+        "text": "*ユナを置いてきた。……ごめん。*"
+    },
+    "day5_after_escaped_branch": {
+        "name": "チェ・ユナ",
+        "text": "\"先輩……！ 私たち……出られたんだ……\""
+    },
+    "day5_after_escaped_yuna": {
+        "name": "私",
+        "text": "*ユナが泣いている。僕も泣いている。*"
+    },
+    "day5_after_escaped_4": {
+        "name": "私",
+        "text": "*この証拠を世間に知らせなければ。今すぐに。*"
+    },
+    "day5_after_escaped_choice": {
+        "name": "私",
+        "text": "*どうする。*",
+        "choices": [
+            "警察に通報する",
+            "インターネットに公開する"
+        ]
+    },
+    "day5_after_police": {
+        "name": "私",
+        "text": "*警察に電話した。声が震えているが、すべてを説明した。メモリーカードと写真を証拠として提出した。*"
+    },
+    "day5_after_police_2": {
+        "name": "私",
+        "text": "*警察が出動した。サイレンの音が学校の方角から聞こえる。*"
+    },
+    "day5_after_expose_online": {
+        "name": "私",
+        "text": "*コンビニのWi-Fiに接続した。すべての写真と文書をアップロードする。SNS、ニュース投稿、掲示板……*"
+    },
+    "day5_after_expose_2": {
+        "name": "私",
+        "text": "*アップロード完了。……もうすぐ世間が知ることになる。*"
+    },
+
+    "day5_after_captured": {
+        "name": "私",
+        "text": "*……目が覚めた。地下室だ。蛍光灯がちらついている。*"
+    },
+    "day5_after_captured_2": {
+        "name": "私",
+        "text": "*手が縛られている。椅子に座らされている。……終わったのか？*"
+    },
+    "day5_after_captured_3": {
+        "name": "パク・ウンス",
+        "text": "\"目が覚めたのね、{name}。……逃げようとしたの？\""
+    },
+    "day5_after_captured_4": {
+        "name": "カン・リイン",
+        "text": "\"最後の処置の準備をするわ。すぐ終わるから。\""
+    },
+    "day5_after_captured_5": {
+        "name": "私",
+        "text": "*……諦めようか？*",
+        "choices": [
+            "抵抗する",
+            "受け入れる"
+        ]
+    },
+    "day5_after_captured_resist": {
+        "name": "私",
+        "text": "*椅子ごと倒した！ 縛られた手で立ち上がる。*"
+    },
+    "day5_after_captured_resist_2": {
+        "name": "イ・ソルファ",
+        "text": "\"……私が助けてあげる。\""
+    },
+    "day5_after_captured_resist_3": {
+        "name": "私",
+        "text": "*突然停電になった。地下室が闇に包まれる。混乱の中で……出口を見つけた。*"
+    },
+    "day5_after_captured_submit": {
+        "name": "カン・リイン",
+        "text": "\"いい子ね。すぐ終わるわ。全部忘れられるから。\""
+    },
+    "day5_after_captured_submit_2": {
+        "name": "私",
+        "text": "*注射針が腕に触れる瞬間。意識が……薄れていく……*"
+    },
+
+    "day5_after_stayed": {
+        "name": "パク・ウンス",
+        "text": "\"……よく考えたわね、{name}。これでいいの。\""
+    },
+    "day5_after_stayed_2": {
+        "name": "パク・ウンス",
+        "text": "\"先生が全部守ってあげる。何も心配しなくていいのよ。\""
+    },
+    "day5_after_stayed_3": {
+        "name": "パク・ウンス",
+        "text": "\"……{name}は先生のそばにいればいいの。永遠に。\""
+    },
+    "day5_after_stayed_4": {
+        "name": "私",
+        "text": "*ウンス先生が笑っている。温かい微笑み。……この微笑みがいつもこんなに怖かっただろうか。*"
+    },
+
+    "day5_after_end": {
+        "name": "私",
+        "text": "*……*"
+    }
+}

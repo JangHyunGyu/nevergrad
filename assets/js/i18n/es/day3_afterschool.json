@@ -1,0 +1,186 @@
+{
+    "day3_after_start": {
+        "name": "Yo",
+        "text": "*Después de clases. La escuela se siente extrañamente silenciosa hoy.*"
+    },
+    "day3_after_choice": {
+        "name": "Yo",
+        "text": "*Es después de clases.*",
+        "choices": [
+            "Pasar por la enfermería",
+            "Caminar a casa con Sea",
+            "Visitar la sala de profesores",
+            "Quedarme solo"
+        ]
+    },
+
+    "day3_after_riin": {
+        "name": "Kang Riin",
+        "text": "\"Oh, {name}. Llegas en buen momento. ¿Te ves un poco cansado hoy?\""
+    },
+    "day3_after_riin_2": {
+        "name": "Kang Riin",
+        "text": "\"Siéntate aquí. Preparé una bebida especial — una mezcla de vitaminas y hierbas.\""
+    },
+    "day3_after_riin_3": {
+        "name": "Yo",
+        "text": "*Riin me pasa una taza con un líquido violeta pálido. ...Huele un poco raro.*"
+    },
+    "day3_after_riin_choice": {
+        "name": "Yo",
+        "text": "*¿Debería bebérmelo?*",
+        "choices": [
+            "Beberlo",
+            "Declinar educadamente"
+        ]
+    },
+    "day3_after_riin_flicker": "Huye",
+    "day3_after_riin_drink": {
+        "name": "Kang Riin",
+        "text": "\"Fufu, bien. Sentirás el efecto pronto.\""
+    },
+    "day3_after_riin_drink_2": {
+        "name": "Yo",
+        "text": "*Lo bebí. ...Un regusto amargo persiste en mi lengua. Espera, mi visión está un poco...*"
+    },
+    "day3_after_riin_drink_3": {
+        "name": "Yo",
+        "text": "*...No, estoy bien. Solo cansado, eso es todo.*"
+    },
+    "day3_after_riin_refuse": {
+        "name": "Kang Riin",
+        "text": "\"...¿En serio? Qué lástima.\""
+    },
+    "day3_after_riin_refuse_2": {
+        "name": "Kang Riin",
+        "text": "\"Está bien, lo puedes beber la próxima vez. ...Lo beberás la próxima vez, ¿verdad?\""
+    },
+
+    "day3_after_sea": {
+        "name": "Han Sea",
+        "text": "\"¡{name}! ¡Vamos a casa juntos~ Quiero visitar la nueva panadería!\""
+    },
+    "day3_after_sea_2": {
+        "name": "Yo",
+        "text": "*Caminando por el pasillo con Sea. Parece alegre como siempre, pero...*"
+    },
+    "day3_after_sea_3": {
+        "name": "Han Sea",
+        "text": "\"...Por cierto, {name}, ¿adónde fuiste durante el almuerzo?\""
+    },
+    "day3_after_sea_4": {
+        "name": "Han Sea",
+        "text": "\"Me dijeron que estuviste en la azotea con Yuna. Solo los dos. ...Alguien me lo contó.\""
+    },
+    "day3_after_sea_4_alt": {
+        "name": "Han Sea",
+        "text": "\"Desapareciste durante el almuerzo... me preocupé un poco.\""
+    },
+    "day3_after_sea_choice": {
+        "name": "Yo",
+        "text": "*¿Cómo respondo?*",
+        "choices": [
+            "Decir la verdad",
+            "Evadir la pregunta"
+        ]
+    },
+    "day3_after_sea_truth": {
+        "name": "Han Sea",
+        "text": "\"...Con Yuna. A solas. Ya veo.\""
+    },
+    "day3_after_sea_truth_2": {
+        "name": "Yo",
+        "text": "*Sea está sonriendo. Está sonriendo, pero... sus ojos no.*"
+    },
+    "day3_after_sea_lie": {
+        "name": "Han Sea",
+        "text": "\"¿En serio? ¡Qué bien~ Me sentí muy sola!\""
+    },
+    "day3_after_sea_lie_2": {
+        "name": "Yo",
+        "text": "*Sea me agarró del brazo. Más fuerte que de costumbre.*"
+    },
+
+    "day3_after_eunsu": {
+        "name": "Park Eunsu",
+        "text": "\"Oh, {name}. ¿Todavía sigues aquí? Yo también me quedé trabajando hasta tarde, jaja.\""
+    },
+    "day3_after_eunsu_2": {
+        "name": "Yo",
+        "text": "*La profesora Eunsu está enterrada entre un montón de documentos. Puedo ver algo entre los huecos.*"
+    },
+    "day3_after_eunsu_3": {
+        "name": "Park Eunsu",
+        "text": "\"Espera un momento, déjame terminar esto... Oh, ¿quieres un café?\""
+    },
+    "day3_after_eunsu_4": {
+        "name": "Yo",
+        "text": "*Mientras la profesora Eunsu va a preparar café. Los documentos sobre su escritorio me llaman la atención. 'Registro de Gestión de Estudiantes de Intercambio'.*"
+    },
+    "day3_after_eunsu_choice": {
+        "name": "Yo",
+        "text": "*¿Debería mirar los documentos?*",
+        "choices": [
+            "Echar un vistazo a escondidas",
+            "No mirar"
+        ]
+    },
+    "day3_after_eunsu_peek": {
+        "name": "Yo",
+        "text": "*Hojeé los documentos. Una lista de estudiantes de intercambio... con fechas junto a cada nombre. Fecha de traslado y... '¿Fecha de Procesamiento Completado?'*"
+    },
+    "day3_after_eunsu_peek_2": {
+        "name": "Yo",
+        "text": "*Mi nombre también está aquí. La columna junto a la fecha está... aún en blanco.*"
+    },
+    "day3_after_eunsu_peek_3": {
+        "name": "Park Eunsu",
+        "text": "\"...¿Qué estás mirando?\""
+    },
+    "day3_after_eunsu_ignore": {
+        "name": "Park Eunsu",
+        "text": "\"Gracias por esperar. Aquí tienes, café.\""
+    },
+    "day3_after_eunsu_ignore_2": {
+        "name": "Yo",
+        "text": "*Charlé con la profesora Eunsu tomando café. Fue cálido y cómodo. ...¿De verdad lo fue?*"
+    },
+
+    "day3_after_alone": {
+        "name": "Yo",
+        "text": "*Solo en el aula. La tarjeta de memoria en mi bolsillo me pesa en la mente.*"
+    },
+    "day3_after_alone_2": {
+        "name": "Yo",
+        "text": "*Saqué mi portátil e inserté la tarjeta de memoria.*"
+    },
+    "day3_after_alone_no_card": {
+        "name": "Yo",
+        "text": "*Aula tranquila. El tiempo pasó sin que ocurriera nada especial.*"
+    },
+    "day3_after_alone_branch": {
+        "name": "Yo",
+        "text": "*Aparecen archivos. Carpetas de fotos, carpetas de documentos... El corazón me late con fuerza.*"
+    },
+    "day3_after_alone_3": {
+        "name": "Yo",
+        "text": "*Fotos. Aulas vacías, taquillas limpiadas, pupitres con nombres borrados... Y fotos de documentos tomadas en la sala de profesores.*"
+    },
+    "day3_after_alone_4": {
+        "name": "Yo",
+        "text": "*Un documento titulado 'Lista de Sujetos'. Números y nombres en filas... la mayoría tachados en rojo.*"
+    },
+    "day3_after_alone_5": {
+        "name": "Yo",
+        "text": "*La última línea. Número 07. Mi nombre. La línea roja... aún no está.*"
+    },
+    "day3_after_alone_6": {
+        "name": "Yo",
+        "text": "*Pasos en el pasillo. Saqué la tarjeta de golpe.*"
+    },
+
+    "day3_after_end": {
+        "name": "Yo",
+        "text": "*Salgo de la escuela. El atardecer es rojo. ...Rojo como la sangre.*"
+    }
+}

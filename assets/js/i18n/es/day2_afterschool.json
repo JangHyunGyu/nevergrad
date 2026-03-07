@@ -1,0 +1,119 @@
+{
+    "day2_after_start": {
+        "name": "Yo",
+        "text": "*Después de clases. El atardecer vuelve a ser bonito. Mientras hago la mochila, la profesora Eunsu se acerca.*"
+    },
+
+    "day2_after_eunsu_phone": {
+        "name": "Park Eunsu",
+        "text": "\"{name}, espera un momento. Últimamente hemos tenido problemas con los teléfonos móviles en la escuela, así que estamos revisando los de los estudiantes de intercambio.\""
+    },
+    "day2_after_eunsu_phone_2": {
+        "name": "Yo",
+        "text": "\"...¿Inspección de teléfono?\""
+    },
+    "day2_after_eunsu_phone_3": {
+        "name": "Park Eunsu",
+        "text": "\"Sí, solo comprobando que no haya aplicaciones dañinas. Será rápido. Puedes enseñármelo, ¿verdad?\""
+    },
+    "day2_after_eunsu_phone_choice": {
+        "name": "Yo",
+        "text": "*...Si todos los estudiantes lo hacen, no hay razón para negarme. Pero algo me huele raro.*",
+        "choices": [
+            "\"Claro, aquí tienes.\" (Entregar el teléfono)",
+            "\"¿Todos tienen que hacerlo?\" (Negarse)"
+        ]
+    },
+    "day2_after_phone_comply": {
+        "name": "Park Eunsu",
+        "text": "\"Gracias~ Solo le echaré un vistazo rápido. ...Todo limpio. Buen estudiante.\""
+    },
+    "day2_after_phone_comply_2": {
+        "name": "Yo",
+        "text": "*Me devolvió el teléfono. Pero... parecía que la aplicación de Ajustes estaba abierta. Seguramente es mi imaginación.*"
+    },
+    "day2_after_phone_refuse": {
+        "name": "Park Eunsu",
+        "text": "\"...De acuerdo, es tu privacidad. Está bien. Me adelanté. Lo siento.\""
+    },
+    "day2_after_phone_refuse_2": {
+        "name": "Yo",
+        "text": "*Se fue sonriendo. Pero esa sonrisa... ¿parecía decepcionada? No, más bien... ¿enfadada?*"
+    },
+
+    "day2_after_choice": {
+        "name": "Yo",
+        "text": "*Después de clases — ¿adónde voy?*",
+        "choices": [
+            "Pasar tiempo con Sea",
+            "Ver a Yuna",
+            "Visitar la enfermería",
+            "Irme a casa"
+        ]
+    },
+
+    "day2_after_sea": {
+        "name": "Han Sea",
+        "text": "\"¡Te quedaste otra vez! A mí... lo que más me gusta es pasar tiempo a solas contigo, {name}.\""
+    },
+    "day2_after_sea_2": {
+        "name": "Han Sea",
+        "text": "\"Oye... fuiste a la enfermería antes, ¿verdad? ¿De qué hablaste con la enfermera Riin?\""
+    },
+    "day2_after_sea_3": {
+        "name": "Yo",
+        "text": "\"Solo fue una revisión médica... ¿Cómo lo sabías?\""
+    },
+    "day2_after_sea_4": {
+        "name": "Yo",
+        "text": "*Sea dijo \"Solo porque sí~\" con una sonrisa. Pero detrás de esos ojos sonrientes... algo frío centelleó. Debe ser mi imaginación.*"
+    },
+
+    "day2_after_yuna": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai, yo... en realidad quería contarte algo...\""
+    },
+    "day2_after_yuna_2": {
+        "name": "Yo",
+        "text": "*Yuna estaba a punto de decir algo pero no dejaba de mirar a su alrededor nerviosa. Como si alguien estuviera observando.*"
+    },
+    "day2_after_yuna_3": {
+        "name": "Choi Yuna",
+        "text": "\"...¡No es nada! Te lo cuento la próxima vez. Jeje, ¡no es nada!\""
+    },
+
+    "day2_after_riin": {
+        "name": "Kang Riin",
+        "text": "\"Vaya, ¿otra vez por aquí? Fufu, parece que le has tomado cariño a la enfermería.\""
+    },
+    "day2_after_riin_2": {
+        "name": "Yo",
+        "text": "*Mientras la enfermera Riin prepara el té, noto un documento sobre su escritorio. Dice 'Sujeto #13 - Informe de Observación de Progreso.'*"
+    },
+    "day2_after_riin_3": {
+        "name": "Yo",
+        "text": "*\"¿Qué es eso—\" empiezo a preguntar, pero la enfermera Riin da vuelta rápidamente al papel.*"
+    },
+    "day2_after_riin_4": {
+        "name": "Kang Riin",
+        "text": "\"Oh, eso es solo material para un artículo académico. Los profesores también estudiamos, ¿sabes? Anda, tómate el té.\""
+    },
+
+    "day2_after_home_seolhwa": {
+        "name": "Yo",
+        "text": "*A punto de cruzar la puerta de la escuela, siento unos ojos en mi espalda. Me doy la vuelta...*"
+    },
+    "day2_after_home_seolhwa_2": {
+        "name": "Yo",
+        "text": "*Es Seolhwa. De pie dentro de la puerta, mirándome. La música de fondo se corta. El silencio es inquietantemente total.*"
+    },
+    "day2_after_home_seolhwa_3": {
+        "name": "Yo",
+        "text": "*Parpadeo y ya no está. ...¿Qué fue eso? El corazón me late a mil.*"
+    },
+
+    "day2_after_end": {
+        "name": "Yo",
+        "text": "*Me voy a casa. Hoy fue un poco... extraño.*"
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "day2_after_start": {
+        "name": "Moi",
+        "text": "*Après les cours. Le coucher de soleil est encore joli. En rangeant mon sac, Mme Eunsu s'approche.*"
+    },
+
+    "day2_after_eunsu_phone": {
+        "name": "Park Eunsu",
+        "text": "\"{name}, attends un instant. On a eu des problèmes de smartphones à l'école récemment, alors on vérifie les téléphones des nouveaux élèves.\""
+    },
+    "day2_after_eunsu_phone_2": {
+        "name": "Moi",
+        "text": "\"...Inspection du téléphone ?\""
+    },
+    "day2_after_eunsu_phone_3": {
+        "name": "Park Eunsu",
+        "text": "\"Oui, juste pour vérifier les applications problématiques. Ce sera rapide. Tu peux me le montrer, non ?\""
+    },
+    "day2_after_eunsu_phone_choice": {
+        "name": "Moi",
+        "text": "*...Si tous les élèves le font, pas de raison de refuser. Mais quelque chose me dérange.*",
+        "choices": [
+            "\"Bien sûr, tenez.\" (Donner le téléphone)",
+            "\"Tout le monde doit le faire ?\" (Refuser)"
+        ]
+    },
+    "day2_after_phone_comply": {
+        "name": "Park Eunsu",
+        "text": "\"Merci~ Je jette juste un coup d'œil. ...Tout est en ordre. Bon élève.\""
+    },
+    "day2_after_phone_comply_2": {
+        "name": "Moi",
+        "text": "*Elle m'a rendu mon téléphone. Mais... on aurait dit que l'application Paramètres était ouverte. C'est sûrement mon imagination.*"
+    },
+    "day2_after_phone_refuse": {
+        "name": "Park Eunsu",
+        "text": "\"...D'accord, c'est ta vie privée. Pas de souci. Je me suis un peu emballée. Désolée.\""
+    },
+    "day2_after_phone_refuse_2": {
+        "name": "Moi",
+        "text": "*Elle s'est éloignée en souriant. Mais ce sourire... avait l'air déçu ? Non, presque... en colère ?*"
+    },
+
+    "day2_after_choice": {
+        "name": "Moi",
+        "text": "*Après les cours — où aller ?*",
+        "choices": [
+            "Passer du temps avec Sea",
+            "Retrouver Yuna",
+            "Aller à l'infirmerie",
+            "Rentrer à la maison"
+        ]
+    },
+
+    "day2_after_sea": {
+        "name": "Han Sea",
+        "text": "\"Tu es encore resté ! Je... j'aime le plus passer du temps seule avec toi, {name}.\""
+    },
+    "day2_after_sea_2": {
+        "name": "Han Sea",
+        "text": "\"Dis... tu es allé à l'infirmerie tout à l'heure, non ? De quoi tu as parlé avec l'infirmière Riin ?\""
+    },
+    "day2_after_sea_3": {
+        "name": "Moi",
+        "text": "\"Juste un bilan de santé... Comment tu le sais ?\""
+    },
+    "day2_after_sea_4": {
+        "name": "Moi",
+        "text": "*Sea a dit \"Comme ça~\" avec un sourire. Mais derrière ces yeux souriants... quelque chose de froid a brillé un instant. Ce doit être mon imagination.*"
+    },
+
+    "day2_after_yuna": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai, je... en fait, je voulais te dire quelque chose...\""
+    },
+    "day2_after_yuna_2": {
+        "name": "Moi",
+        "text": "*Yuna allait dire quelque chose mais n'arrêtait pas de regarder nerveusement autour d'elle. Comme si quelqu'un observait.*"
+    },
+    "day2_after_yuna_3": {
+        "name": "Choi Yuna",
+        "text": "\"...Non, rien ! Je te dirai la prochaine fois. Héhé, c'est rien du tout !\""
+    },
+
+    "day2_after_riin": {
+        "name": "Kang Riin",
+        "text": "\"Tiens, encore toi ? Fufu, on dirait que tu t'es pris d'affection pour l'infirmerie.\""
+    },
+    "day2_after_riin_2": {
+        "name": "Moi",
+        "text": "*Pendant que l'infirmière Riin prépare du thé, je remarque un document sur son bureau. Il est écrit 'Sujet #13 - Rapport d'observation de progression.'*"
+    },
+    "day2_after_riin_3": {
+        "name": "Moi",
+        "text": "*\"C'est quoi —\" j'allais demander, mais l'infirmière Riin a vite retourné le papier.*"
+    },
+    "day2_after_riin_4": {
+        "name": "Kang Riin",
+        "text": "\"Oh, c'est juste un document pour un article universitaire. Les professeurs aussi font de la recherche, tu sais. Tiens, bois ton thé.\""
+    },
+
+    "day2_after_home_seolhwa": {
+        "name": "Moi",
+        "text": "*Sur le point de franchir le portail de l'école, je sens des regards dans mon dos. Je me retourne...*"
+    },
+    "day2_after_home_seolhwa_2": {
+        "name": "Moi",
+        "text": "*C'est Seolhwa. Debout à l'intérieur du portail, elle m'observe. La musique s'arrête. Le silence est terriblement complet.*"
+    },
+    "day2_after_home_seolhwa_3": {
+        "name": "Moi",
+        "text": "*Je cligne des yeux et elle a disparu. ...C'était quoi ? Mon cœur bat la chamade.*"
+    },
+
+    "day2_after_end": {
+        "name": "Moi",
+        "text": "*Je rentre chez moi. Aujourd'hui était un peu... étrange.*"
+    }
+}

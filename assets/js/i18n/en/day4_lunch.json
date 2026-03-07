@@ -1,0 +1,112 @@
+{
+    "day4_lunch_start": {
+        "name": "Me",
+        "text": "*Lunchtime. Yuna's empty seat keeps drawing my eyes.*"
+    },
+    "day4_lunch_start_2": {
+        "name": "Me",
+        "text": "*I can't believe she 'transferred out'. She was here just yesterday.*"
+    },
+    "day4_lunch_choice": {
+        "name": "Me",
+        "text": "*What should I do now?*",
+        "choices": [
+            "Search for Yuna",
+            "Investigate the nurse's office",
+            "Go to the rooftop"
+        ]
+    },
+
+    "day4_lunch_search_yuna": {
+        "name": "Me",
+        "text": "*I wander the corridors. The places Yuna frequented... the photography club room.*"
+    },
+    "day4_lunch_search_2": {
+        "name": "Me",
+        "text": "*The photography club room is open. Nobody inside.*"
+    },
+    "day4_lunch_search_3": {
+        "name": "Me",
+        "text": "*Yuna's locker. I opened it. Empty... except for one thing.*"
+    },
+    "day4_lunch_search_4": {
+        "name": "Me",
+        "text": "*A small camera. Hidden in the corner of the locker. Yuna must have left it behind.*"
+    },
+    "day4_lunch_search_5": {
+        "name": "Me",
+        "text": "*I pocketed the camera. ...Footsteps in the corridor, suddenly.*"
+    },
+    "day4_lunch_search_6": {
+        "name": "Me",
+        "text": "*I looked back. Someone was standing at the end of the hall... then vanished. I hurried back to class.*"
+    },
+
+    "day4_lunch_nurse": {
+        "name": "Kang Riin",
+        "text": "\"Oh my, {name}. Back again. What hurts today?\""
+    },
+    "day4_lunch_nurse_2": {
+        "name": "Me",
+        "text": "*A locked cabinet in the corner of the nurse's office. It has a padlock that wasn't there before.*"
+    },
+    "day4_lunch_nurse_3": {
+        "name": "Kang Riin",
+        "text": "\"How was the drink from yesterday? ...Are you sleeping well?\""
+    },
+    "day4_lunch_nurse_3_alt": {
+        "name": "Kang Riin",
+        "text": "\"Have you been sleeping well lately? You look a bit tired.\""
+    },
+    "day4_lunch_nurse_4": {
+        "name": "Me",
+        "text": "*Should I ask Riin about Yuna?*",
+        "choices": [
+            "Ask where Yuna went",
+            "Say nothing"
+        ]
+    },
+    "day4_lunch_nurse_confront": {
+        "name": "Kang Riin",
+        "text": "\"Yuna? ...Oh, that girl. They said she transferred, didn't they?\""
+    },
+    "day4_lunch_nurse_confront_2": {
+        "name": "Kang Riin",
+        "text": "\"...Why are you looking at me like that? {name}, you're not thinking something strange, are you?\""
+    },
+    "day4_lunch_nurse_pretend": {
+        "name": "Me",
+        "text": "*I said nothing. Riin smiled and offered me a vitamin.*"
+    },
+    "day4_lunch_nurse_pretend_2": {
+        "name": "Kang Riin",
+        "text": "\"Here, a vitamin. ...Please take it this time?\""
+    },
+
+    "day4_lunch_rooftop": {
+        "name": "Me",
+        "text": "*The rooftop. Where I was with Yuna yesterday. The wind is cold.*"
+    },
+    "day4_lunch_rooftop_2": {
+        "name": "Me",
+        "text": "*Something is carved under the railing. Letters scratched in, as if with a knife.*"
+    },
+    "day4_lunch_rooftop_3": {
+        "name": "Me",
+        "text": "*'There's only one way out. — Lee Seolhwa' ...Seolhwa left this.*"
+    },
+    "day4_lunch_rooftop_4": {
+        "name": "Me",
+        "text": "*...One way? What way?*"
+    },
+    "day4_lunch_ghost": "The basement",
+    "day4_lunch_rooftop_5": {
+        "name": "Me",
+        "text": "*Suddenly cold. I hurry back down.*"
+    },
+
+    "day4_lunch_end": {
+        "name": "Me",
+        "text": "*Afternoon classes begin. My heart feels like it's about to burst.*"
+    }
+}

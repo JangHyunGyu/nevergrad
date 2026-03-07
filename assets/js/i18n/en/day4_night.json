@@ -1,0 +1,103 @@
+{
+    "day4_night_start": {
+        "name": "Me",
+        "text": "*Home. Door locked. Curtains drawn.*"
+    },
+    "day4_night_start_2": {
+        "name": "Me",
+        "text": "*Tomorrow is Day 5. The deadline Seolhwa mentioned. ...What happens after five days?*"
+    },
+    "day4_night_start_3": {
+        "name": "Me",
+        "text": "*My phone rings.*"
+    },
+
+    "day4_night_phone": {
+        "name": "Me",
+        "text": "*Sea: '{name}, let's walk together tomorrow! Promise?'*\n*Sea: 'Promise.'*\n*Sea: 'Promise.'*"
+    },
+    "day4_night_phone_2": {
+        "name": "Me",
+        "text": "*Ms. Eunsu: 'Could you come a little early tomorrow? There's something I need to talk to you about.'*"
+    },
+    "day4_night_phone_3": {
+        "name": "Me",
+        "text": "*...I want to turn off the phone. But that would make them more suspicious.*"
+    },
+
+    "day4_night_plan": {
+        "name": "Me",
+        "text": "*Let me organize this. This school is experimenting on transfer students.*"
+    },
+    "day4_night_plan_2": {
+        "name": "Me",
+        "text": "*Ms. Eunsu 'manages' the transfer students, Riin administers drugs, and Sea... surveillance? Or something more?*"
+    },
+    "day4_night_plan_branch": {
+        "name": "Me",
+        "text": "*I have enough evidence. Memory card, document photos, the underground lab... I just need to get this to the outside.*"
+    },
+    "day4_night_plan_branch_alt": {
+        "name": "Me",
+        "text": "*Not enough evidence. But there's no more time to wait.*"
+    },
+    "day4_night_plan_3": {
+        "name": "Me",
+        "text": "*Tomorrow. What do I do?*"
+    },
+    "day4_night_plan_choice": {
+        "name": "Me",
+        "text": "*I finalize my plan.*",
+        "choices": [
+            "Escape the school",
+            "Expose the evidence publicly",
+            "Confront them directly"
+        ]
+    },
+    "day4_night_plan_escape": {
+        "name": "Me",
+        "text": "*Tomorrow, I'll find a gap and get out of school. I need to take Yuna too.*"
+    },
+    "day4_night_plan_expose": {
+        "name": "Me",
+        "text": "*Upload the evidence online. Report to the police. Let the world know the truth about this school.*"
+    },
+    "day4_night_plan_confront": {
+        "name": "Me",
+        "text": "*Ms. Eunsu, Riin, Sea... I'll face them directly. Ask them why they're doing this.*"
+    },
+
+    "day4_night_seolhwa": {
+        "name": "Lee Seolhwa",
+        "text": "\"...We meet again.\""
+    },
+    "day4_night_seolhwa_2": {
+        "name": "Lee Seolhwa",
+        "text": "\"I was... Subject 07, one year ago. The only case where the experiment failed.\""
+    },
+    "day4_night_seolhwa_3": {
+        "name": "Lee Seolhwa",
+        "text": "\"The memory manipulation... had the opposite effect. The others lost their memories, but I ended up remembering everything.\""
+    },
+    "day4_night_seolhwa_4": {
+        "name": "Lee Seolhwa",
+        "text": "\"So they 'processed' me. Officially, a transfer. In reality...\""
+    },
+    "day4_night_seolhwa_5": {
+        "name": "Lee Seolhwa",
+        "text": "\"...'Final processing' happens on the night of Day 5. You have to get out before then. Please.\""
+    },
+    "day4_night_seolhwa_6": {
+        "name": "Lee Seolhwa",
+        "text": "\"And... protect Yuna. She got dragged into this because of me.\""
+    },
+    "day4_night_seolhwa_7": {
+        "name": "Me",
+        "text": "*...I opened my eyes. 4 AM. It's still dark outside. ...Tomorrow is here.*"
+    },
+
+    "day4_night_end": {
+        "name": "Me",
+        "text": "*Day 5. The last day.*"
+    }
+}

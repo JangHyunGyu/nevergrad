@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>졸업하지 못한 교실 - 5일의 기록</title>
+    <meta name="description" content="전학 첫날, 모든 것이 완벽했다. 너무 완벽해서 이상할 정도로.">
+    <meta name="theme-color" content="#FFB7C5">
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="졸업하지 못한 교실">
+    <meta property="og:description" content="전학 첫날, 모든 것이 완벽했다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nevergrad.archerlab.dev">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dialogue.css">
+    <link rel="stylesheet" href="assets/css/glitch.css">
+</head>
+<body>
+    <!-- ===== Title Screen ===== -->
+    <div id="title-screen" class="screen active">
+        <div class="title-bg">
+            <div class="cherry-blossoms" id="cherry-blossoms"></div>
+            <h1 class="title-text">졸업하지 못한 교실</h1>
+            <p class="title-subtitle">5일의 기록</p>
+        </div>
+        <div class="title-menu">
+            <button id="btn-new-game" class="menu-btn">새 게임</button>
+            <button id="btn-continue" class="menu-btn" disabled>이어하기</button>
+            <button id="btn-gallery" class="menu-btn">갤러리</button>
+        </div>
+    </div>
+
+    <!-- ===== Name Input Screen ===== -->
+    <div id="name-screen" class="screen">
+        <div class="name-input-container">
+            <p class="name-prompt">당신의 이름은?</p>
+            <input type="text" id="player-name-input" maxlength="8" placeholder="이름을 입력하세요">
+            <button id="btn-start" class="menu-btn">시작</button>
+        </div>
+    </div>
+
+    <!-- ===== Game Screen ===== -->
+    <div id="game-screen" class="screen">
+        <!-- Background Layer -->
+        <div id="bg-layer" class="bg-layer"></div>
+        <div id="bg-overlay" class="bg-overlay"></div>
+
+        <!-- Character Layer -->
+        <div id="char-layer" class="char-layer">
+            <img id="char-left" class="character-sprite pos-left" src="" alt="">
+            <img id="char-center" class="character-sprite pos-center" src="" alt="">
+            <img id="char-right" class="character-sprite pos-right" src="" alt="">
+        </div>
+
+        <!-- Glitch Overlay (thriller) -->
+        <div id="glitch-overlay" class="glitch-overlay hidden"></div>
+
+        <!-- Dialogue Box -->
+        <div id="dialogue-box" class="dialogue-box">
+            <div id="speaker-name" class="speaker-name"></div>
+            <div id="dialogue-text" class="dialogue-text"></div>
+            <div id="click-indicator" class="click-indicator">▼</div>
+        </div>
+
+        <!-- Choice Panel -->
+        <div id="choice-panel" class="choice-panel hidden"></div>
+
+        <!-- HUD -->
+        <div id="hud" class="hud">
+            <div id="day-display" class="day-display">1일차 - 아침</div>
+            <div id="stat-display" class="stat-display hidden"></div>
+        </div>
+
+        <!-- Menu Button -->
+        <button id="btn-menu" class="ingame-menu-btn">MENU</button>
+    </div>
+
+    <!-- ===== Pause Menu ===== -->
+    <div id="pause-menu" class="screen overlay hidden">
+        <div class="pause-container">
+            <button id="btn-save" class="menu-btn">저장</button>
+            <button id="btn-load" class="menu-btn">불러오기</button>
+            <button id="btn-settings" class="menu-btn">설정</button>
+            <button id="btn-title" class="menu-btn">타이틀로</button>
+            <button id="btn-resume" class="menu-btn">돌아가기</button>
+        </div>
+    </div>
+
+    <!-- ===== FreeTalk Screen ===== -->
+    <div id="freetalk-screen" class="screen hidden">
+        <div id="ft-bg-layer" class="bg-layer"></div>
+        <div id="ft-char" class="ft-character"></div>
+        <div id="ft-chat-log" class="ft-chat-log"></div>
+        <div class="ft-input-area">
+            <input type="text" id="ft-input" placeholder="대화를 입력하세요...">
+            <button id="ft-send" class="ft-send-btn">전송</button>
+        </div>
+        <div id="ft-turns" class="ft-turns"></div>
+    </div>
+
+    <!-- ===== Scripts ===== -->
+    <!-- Config & Data -->
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/prompts.js"></script>
+
+    <!-- Scenario Files -->
+    <script src="assets/js/scenario/day1_1_morning.js"></script>
+    <script src="assets/js/scenario/day1_2_lunch.js"></script>
+    <script src="assets/js/scenario/day1_3_afterschool.js"></script>
+    <script src="assets/js/scenario/day1_4_night.js"></script>
+    <script src="assets/js/scenario/day2_1_morning.js"></script>
+    <script src="assets/js/scenario/day2_2_lunch.js"></script>
+    <script src="assets/js/scenario/day2_3_afterschool.js"></script>
+    <script src="assets/js/scenario/day2_4_night.js"></script>
+    <script src="assets/js/scenario/day3_1_morning.js"></script>
+    <script src="assets/js/scenario/day3_2_lunch.js"></script>
+    <script src="assets/js/scenario/day3_3_afterschool.js"></script>
+    <script src="assets/js/scenario/day3_4_night.js"></script>
+    <script src="assets/js/scenario/day4_1_morning.js"></script>
+    <script src="assets/js/scenario/day4_2_lunch.js"></script>
+    <script src="assets/js/scenario/day4_3_afterschool.js"></script>
+    <script src="assets/js/scenario/day4_4_night.js"></script>
+    <script src="assets/js/scenario/day5_1_morning.js"></script>
+    <script src="assets/js/scenario/day5_2_lunch.js"></script>
+    <script src="assets/js/scenario/day5_3_afterschool.js"></script>
+    <script src="assets/js/scenario/day5_4_night.js"></script>
+
+    <!-- Engine Modules -->
+    <script src="assets/js/modules/StateManager.js"></script>
+    <script src="assets/js/modules/SaveManager.js"></script>
+    <script src="assets/js/modules/I18nManager.js"></script>
+    <script src="assets/js/modules/SceneRenderer.js"></script>
+    <script src="assets/js/modules/DialogueSystem.js"></script>
+    <script src="assets/js/modules/ChoiceSystem.js"></script>
+    <script src="assets/js/modules/FreeTalkSystem.js"></script>
+    <script src="assets/js/modules/GlitchSystem.js"></script>
+    <script src="assets/js/modules/GameEngine.js"></script>
+
+    <!-- App Entry -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

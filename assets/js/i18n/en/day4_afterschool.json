@@ -1,0 +1,171 @@
+{
+    "day4_after_start": {
+        "name": "Me",
+        "text": "*After school. This is Day 4. The 'five days' Seolhwa mentioned... tomorrow is the last day.*"
+    },
+    "day4_after_start_2": {
+        "name": "Me",
+        "text": "*I need to act now.*"
+    },
+    "day4_after_choice": {
+        "name": "Me",
+        "text": "*Where do I go?*",
+        "choices": [
+            "Find the basement",
+            "Follow Sea",
+            "Compile the evidence"
+        ]
+    },
+
+    "day4_after_basement": {
+        "name": "Me",
+        "text": "*Seolhwa's clue. 'The basement.' I found a stairway behind the school building.*"
+    },
+    "day4_after_basement_2": {
+        "name": "Me",
+        "text": "*A rusted door. The padlock is broken. Someone has been here before.*"
+    },
+    "day4_after_basement_3": {
+        "name": "Me",
+        "text": "*...The basement. Fluorescent lights flicker. A metallic smell.*"
+    },
+    "day4_after_basement_4": {
+        "name": "Me",
+        "text": "*Multiple beds. Medical equipment. Cabinets full of chemicals. This is... a laboratory?*"
+    },
+    "day4_after_basement_5": {
+        "name": "Me",
+        "text": "*Charts on the wall. 'Subject Response Records'. Names and numbers. Most marked with a red X.*"
+    },
+    "day4_after_basement_6": {
+        "name": "Me",
+        "text": "*Documents in a desk drawer. 'Memory Manipulation Protocol'... 'Transfer Student Acquisition Procedures'... 'Board Approved: Project Nevergrad — Cognitive Restructuring Research for Complete Compliance'...*"
+    },
+    "day4_after_basement_7": {
+        "name": "Me",
+        "text": "*...! A sound from the corner. Someone is here.*"
+    },
+    "day4_after_basement_8": {
+        "name": "Choi Yuna",
+        "text": "\"...Senpai...? Is that... really you...?\""
+    },
+    "day4_after_basement_9": {
+        "name": "Me",
+        "text": "*Yuna is collapsed on the floor. Pale face. Needle marks on her arm.*",
+        "choices": [
+            "Take Yuna and leave",
+            "Hide for now"
+        ]
+    },
+    "day4_after_basement_rescue": {
+        "name": "Me",
+        "text": "*I helped Yuna up. She's heavy. But I can't leave her here.*"
+    },
+    "day4_after_basement_rescue_2": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai... thank you... we have to... get out...\""
+    },
+    "day4_after_basement_hide": {
+        "name": "Me",
+        "text": "*Footsteps. I hid behind the cabinet.*"
+    },
+    "day4_after_basement_hide_2": {
+        "name": "Me",
+        "text": "*Someone checked the basement and left. I left Yuna behind. ...I'm sorry, Yuna.*"
+    },
+    "day4_after_basement_escape": {
+        "name": "Me",
+        "text": "*I got out of the basement. My hands are shaking. This school... what is this school?*"
+    },
+
+    "day4_after_sea_route": {
+        "name": "Han Sea",
+        "text": "\"{name}~ Let's go together today too! Where should we go~\""
+    },
+    "day4_after_sea_2": {
+        "name": "Me",
+        "text": "*I followed Sea. She walked into an empty classroom.*"
+    },
+    "day4_after_sea_3": {
+        "name": "Han Sea",
+        "text": "\"{name}. I need to tell you something.\""
+    },
+    "day4_after_sea_4": {
+        "name": "Han Sea",
+        "text": "\"I... don't like you being with other people. Being alone with Yuna. Being with Ms. Eunsu.\""
+    },
+    "day4_after_sea_5": {
+        "name": "Han Sea",
+        "text": "\"So... just look at me. Only me. Okay?\"",
+        "choices": [
+            "Okay",
+            "That's a bit..."
+        ]
+    },
+    "day4_after_sea_accept": {
+        "name": "Han Sea",
+        "text": "\"Hehe... You really are sweet, {name}. My {name}.\""
+    },
+    "day4_after_sea_crack": {
+        "name": "Han Sea",
+        "text": "\"...Sometimes I wonder. If I left this place... where would I even go?\""
+    },
+    "day4_after_sea_crack_2": {
+        "name": "Me",
+        "text": "*For a moment, fear flickered across Sea's eyes. Real emotion. Is she... trapped in something too? But it vanished just as quickly.*"
+    },
+    "day4_after_sea_accept_2": {
+        "name": "Me",
+        "text": "*Sea hugged me. Her arms tightened around my back. ...This isn't a hug.*"
+    },
+
+    "day4_after_evidence": {
+        "name": "Me",
+        "text": "*I stayed in the classroom to organize the evidence I've gathered.*"
+    },
+    "day4_after_evidence_2": {
+        "name": "Me",
+        "text": "*Photos from the memory card, the transfer student list, 'Processing Completion Date'... The puzzle is coming together.*"
+    },
+    "day4_after_evidence_3": {
+        "name": "Me",
+        "text": "*I checked the photos on Yuna's camera. There's a photo of the basement entrance.*"
+    },
+    "day4_after_evidence_3_alt": {
+        "name": "Me",
+        "text": "*The evidence isn't enough, but... I can see the outline of what's happening at this school.*"
+    },
+    "day4_after_evidence_4": {
+        "name": "Me",
+        "text": "*The transfer students didn't 'disappear' — they were 'processed'. Erase their memories, mold them into perfectly obedient students... A testing facility funded by the board. This entire school.*"
+    },
+    "day4_after_evidence_5": {
+        "name": "Park Eunsu",
+        "text": "\"...{name}. You're still here?\""
+    },
+    "day4_after_evidence_6": {
+        "name": "Me",
+        "text": "*Ms. Eunsu is standing at the classroom door. Her expression is dark.*",
+        "choices": [
+            "Run",
+            "Stay still"
+        ]
+    },
+    "day4_after_evidence_run": {
+        "name": "Me",
+        "text": "*I shoved a desk to block the way and ran. Heels clicking behind me. But I made it out.*"
+    },
+    "day4_after_evidence_caught": {
+        "name": "Park Eunsu",
+        "text": "\"Where do you think you're going? ...Not without my permission.\""
+    },
+    "day4_after_evidence_caught_2": {
+        "name": "Park Eunsu",
+        "text": "\"It's okay, {name}. I'll take care of everything. ...You just need to stay here.\""
+    },
+
+    "day4_after_end": {
+        "name": "Me",
+        "text": "*The sun sets. Tomorrow is the last day. I have to... get out of here.*"
+    }
+}

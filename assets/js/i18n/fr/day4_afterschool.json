@@ -1,0 +1,171 @@
+{
+    "day4_after_start": {
+        "name": "Moi",
+        "text": "*Après les cours. C'est le Jour 4. Les 'cinq jours' dont Seolhwa a parlé... demain est le dernier jour.*"
+    },
+    "day4_after_start_2": {
+        "name": "Moi",
+        "text": "*Je dois agir maintenant.*"
+    },
+    "day4_after_choice": {
+        "name": "Moi",
+        "text": "*Où est-ce que je vais ?*",
+        "choices": [
+            "Trouver le sous-sol",
+            "Suivre Sea",
+            "Rassembler les preuves"
+        ]
+    },
+
+    "day4_after_basement": {
+        "name": "Moi",
+        "text": "*L'indice de Seolhwa. 'Le sous-sol.' J'ai trouvé un escalier derrière le bâtiment scolaire.*"
+    },
+    "day4_after_basement_2": {
+        "name": "Moi",
+        "text": "*Une porte rouillée. Le cadenas est cassé. Quelqu'un est déjà venu ici avant.*"
+    },
+    "day4_after_basement_3": {
+        "name": "Moi",
+        "text": "*...Le sous-sol. Les néons clignotent. Une odeur métallique.*"
+    },
+    "day4_after_basement_4": {
+        "name": "Moi",
+        "text": "*Plusieurs lits. Du matériel médical. Des armoires pleines de produits chimiques. C'est... un laboratoire ?*"
+    },
+    "day4_after_basement_5": {
+        "name": "Moi",
+        "text": "*Des tableaux au mur. 'Registre des réactions des sujets'. Des noms et des numéros. La plupart marqués d'un X rouge.*"
+    },
+    "day4_after_basement_6": {
+        "name": "Moi",
+        "text": "*Des documents dans un tiroir du bureau. 'Protocole de manipulation de la mémoire'... 'Procédures d'acquisition d'élèves transférés'... 'Approuvé par le Conseil : Projet Nevergrad — Recherche en restructuration cognitive pour une conformité totale'...*"
+    },
+    "day4_after_basement_7": {
+        "name": "Moi",
+        "text": "*...! Un bruit dans le coin. Quelqu'un est là.*"
+    },
+    "day4_after_basement_8": {
+        "name": "Choi Yuna",
+        "text": "\"...Senpai... ? C'est... vraiment toi... ?\""
+    },
+    "day4_after_basement_9": {
+        "name": "Moi",
+        "text": "*Yuna est effondrée au sol. Le visage blême. Des marques d'aiguille sur son bras.*",
+        "choices": [
+            "Prendre Yuna et partir",
+            "Se cacher pour l'instant"
+        ]
+    },
+    "day4_after_basement_rescue": {
+        "name": "Moi",
+        "text": "*J'ai aidé Yuna à se relever. Elle est lourde. Mais je ne peux pas la laisser ici.*"
+    },
+    "day4_after_basement_rescue_2": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai... merci... il faut... sortir...\""
+    },
+    "day4_after_basement_hide": {
+        "name": "Moi",
+        "text": "*Des pas. Je me suis caché derrière l'armoire.*"
+    },
+    "day4_after_basement_hide_2": {
+        "name": "Moi",
+        "text": "*Quelqu'un a vérifié le sous-sol et est reparti. J'ai laissé Yuna derrière moi. ...Pardon, Yuna.*"
+    },
+    "day4_after_basement_escape": {
+        "name": "Moi",
+        "text": "*J'ai réussi à sortir du sous-sol. Mes mains tremblent. Cette école... c'est quoi cette école ?*"
+    },
+
+    "day4_after_sea_route": {
+        "name": "Han Sea",
+        "text": "\"{name}~ On y va ensemble aujourd'hui aussi ! On va où~\""
+    },
+    "day4_after_sea_2": {
+        "name": "Moi",
+        "text": "*J'ai suivi Sea. Elle est entrée dans une salle de classe vide.*"
+    },
+    "day4_after_sea_3": {
+        "name": "Han Sea",
+        "text": "\"{name}. Il faut que je te dise quelque chose.\""
+    },
+    "day4_after_sea_4": {
+        "name": "Han Sea",
+        "text": "\"Je... n'aime pas que tu sois avec d'autres personnes. Être seul avec Yuna. Être avec Mme Eunsu.\""
+    },
+    "day4_after_sea_5": {
+        "name": "Han Sea",
+        "text": "\"Alors... regarde-moi. Seulement moi. D'accord ?\"",
+        "choices": [
+            "D'accord",
+            "C'est un peu..."
+        ]
+    },
+    "day4_after_sea_accept": {
+        "name": "Han Sea",
+        "text": "\"Héhé... Tu es vraiment adorable, {name}. Mon {name}.\""
+    },
+    "day4_after_sea_crack": {
+        "name": "Han Sea",
+        "text": "\"...Parfois je me demande. Si je quittais cet endroit... où est-ce que j'irais ?\""
+    },
+    "day4_after_sea_crack_2": {
+        "name": "Moi",
+        "text": "*Pendant un instant, la peur a traversé les yeux de Sea. Une émotion réelle. Est-elle aussi... piégée dans quelque chose ? Mais ça a disparu aussitôt.*"
+    },
+    "day4_after_sea_accept_2": {
+        "name": "Moi",
+        "text": "*Sea m'a serré dans ses bras. Ses bras se sont resserrés dans mon dos. ...Ce n'est pas un câlin.*"
+    },
+
+    "day4_after_evidence": {
+        "name": "Moi",
+        "text": "*Je suis resté dans la salle de classe pour organiser les preuves que j'ai rassemblées.*"
+    },
+    "day4_after_evidence_2": {
+        "name": "Moi",
+        "text": "*Les photos de la carte mémoire, la liste des élèves transférés, 'Date d'achèvement du traitement'... Le puzzle prend forme.*"
+    },
+    "day4_after_evidence_3": {
+        "name": "Moi",
+        "text": "*J'ai vérifié les photos sur l'appareil de Yuna. Il y a une photo de l'entrée du sous-sol.*"
+    },
+    "day4_after_evidence_3_alt": {
+        "name": "Moi",
+        "text": "*Les preuves ne sont pas suffisantes, mais... je peux voir les grandes lignes de ce qui se passe dans cette école.*"
+    },
+    "day4_after_evidence_4": {
+        "name": "Moi",
+        "text": "*Les élèves transférés n'ont pas 'disparu' — ils ont été 'traités'. Effacer leurs souvenirs, les transformer en élèves parfaitement obéissants... Un centre d'essais financé par le conseil d'administration. Toute cette école.*"
+    },
+    "day4_after_evidence_5": {
+        "name": "Park Eunsu",
+        "text": "\"...{name}. Tu es encore là ?\""
+    },
+    "day4_after_evidence_6": {
+        "name": "Moi",
+        "text": "*Mme Eunsu se tient à la porte de la salle. Son expression est sombre.*",
+        "choices": [
+            "Fuir",
+            "Rester immobile"
+        ]
+    },
+    "day4_after_evidence_run": {
+        "name": "Moi",
+        "text": "*J'ai poussé un bureau pour bloquer le passage et j'ai couru. Des talons claquent derrière moi. Mais j'ai réussi à sortir.*"
+    },
+    "day4_after_evidence_caught": {
+        "name": "Park Eunsu",
+        "text": "\"Où crois-tu aller ? ...Pas sans ma permission.\""
+    },
+    "day4_after_evidence_caught_2": {
+        "name": "Park Eunsu",
+        "text": "\"Ça va aller, {name}. Je m'occupe de tout. ...Tu n'as qu'à rester ici.\""
+    },
+
+    "day4_after_end": {
+        "name": "Moi",
+        "text": "*Le soleil se couche. Demain est le dernier jour. Je dois... sortir d'ici.*"
+    }
+}

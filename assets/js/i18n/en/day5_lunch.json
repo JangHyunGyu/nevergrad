@@ -1,0 +1,172 @@
+{
+    "day5_lunch_start": {
+        "name": "Me",
+        "text": "*The lunch bell rang. Now or never.*"
+    },
+    "day5_lunch_start_2": {
+        "name": "Me",
+        "text": "*I grabbed my bag. All the evidence in my pockets. My heart is pounding out of my chest.*"
+    },
+
+    "day5_lunch_branch": {
+        "name": "Me",
+        "text": "*The place Yuna told me about. Old building, 3rd floor.*"
+    },
+    "day5_lunch_branch_alt": {
+        "name": "Me",
+        "text": "*I have to do this alone. Find the exit.*"
+    },
+
+    "day5_lunch_yuna_meet": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai...! You came.\""
+    },
+    "day5_lunch_yuna_2": {
+        "name": "Choi Yuna",
+        "text": "\"There's an emergency exit at the end of the 3rd floor. The only way out.\""
+    },
+    "day5_lunch_yuna_3": {
+        "name": "Choi Yuna",
+        "text": "\"But... we have to get through that corridor. Someone is definitely guarding it.\""
+    },
+    "day5_lunch_yuna_4": {
+        "name": "Me",
+        "text": "*Our eyes met. We're ready.*"
+    },
+
+    "day5_lunch_solo": {
+        "name": "Me",
+        "text": "*Walking the corridor. Where do I go? I need to find... an exit.*"
+    },
+    "day5_lunch_solo_2": {
+        "name": "Me",
+        "text": "*Heading toward the old building. There should be an emergency exit there.*"
+    },
+
+    "day5_lunch_escape_start": {
+        "name": "Me",
+        "text": "*I started running down the corridor. Footsteps behind me.*"
+    },
+    "day5_lunch_escape_2": {
+        "name": "Me",
+        "text": "*A fork in the path!*",
+        "choices": [
+            "Left corridor",
+            "Right corridor"
+        ]
+    },
+
+    "day5_lunch_escape_left": {
+        "name": "Han Sea",
+        "text": "\"...Where are you going, {name}?\""
+    },
+    "day5_lunch_sea_block": {
+        "name": "Han Sea",
+        "text": "\"You're leaving me? ...You're going to abandon me?\""
+    },
+    "day5_lunch_sea_block_2": {
+        "name": "Me",
+        "text": "*Sea is blocking the corridor.*",
+        "choices": [
+            "Push past her",
+            "Try to convince Sea"
+        ]
+    },
+    "day5_lunch_sea_push": {
+        "name": "Me",
+        "text": "*I pushed past Sea and ran. I can hear crying behind me.*"
+    },
+    "day5_lunch_sea_talk": {
+        "name": "Han Sea",
+        "text": "\"...Are you really going without me?\""
+    },
+    "day5_lunch_sea_talk_2": {
+        "name": "Han Sea",
+        "text": "\"...Idiot. Go. Hurry.\""
+    },
+
+    "day5_lunch_escape_right": {
+        "name": "Kang Riin",
+        "text": "\"Well, fancy meeting you here. {name}, your checkup isn't finished yet.\""
+    },
+    "day5_lunch_riin_block": {
+        "name": "Kang Riin",
+        "text": "\"It'll only take a moment. One injection and... you'll feel so much better.\""
+    },
+    "day5_lunch_riin_block_2": {
+        "name": "Me",
+        "text": "*Riin is holding a syringe.*",
+        "choices": [
+            "Dodge and run",
+            "Talk to Riin"
+        ]
+    },
+    "day5_lunch_riin_dodge": {
+        "name": "Me",
+        "text": "*I dodged Riin and ran. The syringe shattered against the wall.*"
+    },
+    "day5_lunch_riin_confront": {
+        "name": "Kang Riin",
+        "text": "\"...So you knew. Everything.\""
+    },
+    "day5_lunch_riin_confront_2": {
+        "name": "Kang Riin",
+        "text": "\"...Go. I'm... tired of this too.\""
+    },
+
+    "day5_lunch_escape_caught_sea": {
+        "name": "Han Sea",
+        "text": "\"Gotcha. ...You're not going anywhere now, are you?\""
+    },
+    "day5_lunch_escape_caught_riin": {
+        "name": "Kang Riin",
+        "text": "\"Shh. It'll be over soon. It won't hurt.\""
+    },
+    "day5_lunch_caught": {
+        "name": "Me",
+        "text": "*...I was caught.*"
+    },
+
+    "day5_lunch_continue": {
+        "name": "Me",
+        "text": "*Running up the stairs. The emergency exit is in sight. Almost there!*"
+    },
+    "day5_lunch_continue_2": {
+        "name": "Me",
+        "text": "*...Ms. Eunsu is standing in front of the emergency exit.*"
+    },
+    "day5_lunch_eunsu_final": {
+        "name": "Park Eunsu",
+        "text": "\"{name}. ...You made it this far.\""
+    },
+    "day5_lunch_eunsu_final_2": {
+        "name": "Park Eunsu",
+        "text": "\"Can't you just stay with me? ...I did all of this for you.\"",
+        "choices": [
+            "Push through and leave",
+            "Stay with Eunsu"
+        ]
+    },
+    "day5_lunch_eunsu_break": {
+        "name": "Me",
+        "text": "*I pushed past Ms. Eunsu and threw open the emergency exit. Cold air hit my face.*"
+    },
+    "day5_lunch_eunsu_stay": {
+        "name": "Park Eunsu",
+        "text": "\"...Thank you, {name}. This is how it should be.\""
+    },
+    "day5_lunch_eunsu_stay_2": {
+        "name": "Me",
+        "text": "*Ms. Eunsu took my hand. ...There's no going back.*"
+    },
+
+    "day5_lunch_breakthrough": {
+        "name": "Me",
+        "text": "*Light beyond the emergency exit. The way out.*"
+    },
+
+    "day5_lunch_end": {
+        "name": "Me",
+        "text": "*...*"
+    }
+}

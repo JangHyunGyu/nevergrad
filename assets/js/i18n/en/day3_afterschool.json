@@ -1,0 +1,186 @@
+{
+    "day3_after_start": {
+        "name": "Me",
+        "text": "*After school. The school feels strangely quiet today.*"
+    },
+    "day3_after_choice": {
+        "name": "Me",
+        "text": "*It's after school.*",
+        "choices": [
+            "Stop by the nurse's office",
+            "Walk home with Sea",
+            "Visit the faculty office",
+            "Stay alone"
+        ]
+    },
+
+    "day3_after_riin": {
+        "name": "Kang Riin",
+        "text": "\"Oh, {name}. Good timing. You look a bit tired today?\""
+    },
+    "day3_after_riin_2": {
+        "name": "Kang Riin",
+        "text": "\"Sit down here. I made a special health drink — a vitamin and herb blend.\""
+    },
+    "day3_after_riin_3": {
+        "name": "Me",
+        "text": "*Riin hands me a cup with a pale purple liquid. ...It smells a little odd.*"
+    },
+    "day3_after_riin_choice": {
+        "name": "Me",
+        "text": "*Should I drink it?*",
+        "choices": [
+            "Drink it",
+            "Politely decline"
+        ]
+    },
+    "day3_after_riin_flicker": "Run away",
+    "day3_after_riin_drink": {
+        "name": "Kang Riin",
+        "text": "\"Fufu, good. You'll feel the effect soon.\""
+    },
+    "day3_after_riin_drink_2": {
+        "name": "Me",
+        "text": "*I drank it. ...A bitter aftertaste lingers on my tongue. Wait, my vision is slightly...*"
+    },
+    "day3_after_riin_drink_3": {
+        "name": "Me",
+        "text": "*...No, I'm fine. Just tired, that's all.*"
+    },
+    "day3_after_riin_refuse": {
+        "name": "Kang Riin",
+        "text": "\"...Is that so? What a shame.\""
+    },
+    "day3_after_riin_refuse_2": {
+        "name": "Kang Riin",
+        "text": "\"That's okay, you can drink it next time. ...You will drink it next time, right?\""
+    },
+
+    "day3_after_sea": {
+        "name": "Han Sea",
+        "text": "\"{name}! Let's walk home together~ I want to check out the new bakery!\""
+    },
+    "day3_after_sea_2": {
+        "name": "Me",
+        "text": "*Walking down the corridor with Sea. She seems cheerful as usual, but...*"
+    },
+    "day3_after_sea_3": {
+        "name": "Han Sea",
+        "text": "\"...By the way, {name}, where did you go during lunch?\""
+    },
+    "day3_after_sea_4": {
+        "name": "Han Sea",
+        "text": "\"I heard you were on the rooftop with Yuna. Just the two of you. ...Someone told me.\""
+    },
+    "day3_after_sea_4_alt": {
+        "name": "Han Sea",
+        "text": "\"You disappeared during lunch... I was a little worried.\""
+    },
+    "day3_after_sea_choice": {
+        "name": "Me",
+        "text": "*How do I respond?*",
+        "choices": [
+            "Tell the truth",
+            "Dodge the question"
+        ]
+    },
+    "day3_after_sea_truth": {
+        "name": "Han Sea",
+        "text": "\"...With Yuna. Alone. I see.\""
+    },
+    "day3_after_sea_truth_2": {
+        "name": "Me",
+        "text": "*Sea is smiling. She's smiling, but... her eyes aren't.*"
+    },
+    "day3_after_sea_lie": {
+        "name": "Han Sea",
+        "text": "\"Really? Good~ I was lonely all by myself!\""
+    },
+    "day3_after_sea_lie_2": {
+        "name": "Me",
+        "text": "*Sea grabbed my arm. Tighter than usual.*"
+    },
+
+    "day3_after_eunsu": {
+        "name": "Park Eunsu",
+        "text": "\"Oh, {name}. You're still here? I'm working late too, haha.\""
+    },
+    "day3_after_eunsu_2": {
+        "name": "Me",
+        "text": "*Ms. Eunsu is buried in a pile of documents. I can see something through the gaps.*"
+    },
+    "day3_after_eunsu_3": {
+        "name": "Park Eunsu",
+        "text": "\"Wait just a moment, let me finish this... Oh, want some coffee?\""
+    },
+    "day3_after_eunsu_4": {
+        "name": "Me",
+        "text": "*While Ms. Eunsu goes to make coffee. Documents on her desk catch my eye. 'Transfer Student Management Registry'.*"
+    },
+    "day3_after_eunsu_choice": {
+        "name": "Me",
+        "text": "*Should I look at the documents?*",
+        "choices": [
+            "Peek secretly",
+            "Don't look"
+        ]
+    },
+    "day3_after_eunsu_peek": {
+        "name": "Me",
+        "text": "*I flipped through the documents. A list of transfer students... with dates beside each name. Transfer date and... 'Processing Completion Date'?*"
+    },
+    "day3_after_eunsu_peek_2": {
+        "name": "Me",
+        "text": "*My name is here too. The column next to the date is... still blank.*"
+    },
+    "day3_after_eunsu_peek_3": {
+        "name": "Park Eunsu",
+        "text": "\"...What are you looking at?\""
+    },
+    "day3_after_eunsu_ignore": {
+        "name": "Park Eunsu",
+        "text": "\"Thanks for waiting. Here, coffee.\""
+    },
+    "day3_after_eunsu_ignore_2": {
+        "name": "Me",
+        "text": "*I chatted with Ms. Eunsu over coffee. It was warm and comfortable. ...Was it really?*"
+    },
+
+    "day3_after_alone": {
+        "name": "Me",
+        "text": "*Alone in the classroom. The memory card in my pocket weighs on my mind.*"
+    },
+    "day3_after_alone_2": {
+        "name": "Me",
+        "text": "*I pulled out my laptop and inserted the memory card.*"
+    },
+    "day3_after_alone_no_card": {
+        "name": "Me",
+        "text": "*Quiet classroom. Time passed without anything special happening.*"
+    },
+    "day3_after_alone_branch": {
+        "name": "Me",
+        "text": "*Files appear. Photo folders, document folders... My heart pounds.*"
+    },
+    "day3_after_alone_3": {
+        "name": "Me",
+        "text": "*Photos. Empty classrooms, cleared-out lockers, desks with names scratched off... And photos of documents taken in the faculty office.*"
+    },
+    "day3_after_alone_4": {
+        "name": "Me",
+        "text": "*A document titled 'Subject List'. Numbers and names in rows... most crossed out in red.*"
+    },
+    "day3_after_alone_5": {
+        "name": "Me",
+        "text": "*The last line. Number 07. My name. The red line... isn't there yet.*"
+    },
+    "day3_after_alone_6": {
+        "name": "Me",
+        "text": "*Footsteps in the corridor. I yanked the card out.*"
+    },
+
+    "day3_after_end": {
+        "name": "Me",
+        "text": "*Leaving school. The sunset is red. ...Red like blood.*"
+    }
+}

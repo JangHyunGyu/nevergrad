@@ -1,0 +1,112 @@
+{
+    "day4_lunch_start": {
+        "name": "Moi",
+        "text": "*L'heure du déjeuner. La place vide de Yuna attire sans cesse mon regard.*"
+    },
+    "day4_lunch_start_2": {
+        "name": "Moi",
+        "text": "*Je ne peux pas croire qu'elle a été 'transférée'. Elle était encore là hier.*"
+    },
+    "day4_lunch_choice": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je fais maintenant ?*",
+        "choices": [
+            "Chercher Yuna",
+            "Enquêter à l'infirmerie",
+            "Aller sur le toit"
+        ]
+    },
+
+    "day4_lunch_search_yuna": {
+        "name": "Moi",
+        "text": "*J'erre dans les couloirs. Les endroits que Yuna fréquentait... la salle du club photo.*"
+    },
+    "day4_lunch_search_2": {
+        "name": "Moi",
+        "text": "*La salle du club photo est ouverte. Personne à l'intérieur.*"
+    },
+    "day4_lunch_search_3": {
+        "name": "Moi",
+        "text": "*Le casier de Yuna. Je l'ouvre. Vide... sauf une chose.*"
+    },
+    "day4_lunch_search_4": {
+        "name": "Moi",
+        "text": "*Un petit appareil photo. Caché dans le coin du casier. Yuna a dû le laisser derrière elle.*"
+    },
+    "day4_lunch_search_5": {
+        "name": "Moi",
+        "text": "*J'ai mis l'appareil dans ma poche. ...Des pas dans le couloir, soudain.*"
+    },
+    "day4_lunch_search_6": {
+        "name": "Moi",
+        "text": "*J'ai regardé en arrière. Quelqu'un se tenait au bout du couloir... puis a disparu. Je suis vite retourné en classe.*"
+    },
+
+    "day4_lunch_nurse": {
+        "name": "Kang Riin",
+        "text": "\"Oh, {name}. Encore toi. Qu'est-ce qui te fait mal aujourd'hui ?\""
+    },
+    "day4_lunch_nurse_2": {
+        "name": "Moi",
+        "text": "*Une armoire verrouillée dans le coin de l'infirmerie. Elle a un cadenas qui n'était pas là avant.*"
+    },
+    "day4_lunch_nurse_3": {
+        "name": "Kang Riin",
+        "text": "\"Comment c'était, la boisson d'hier ? ...Tu dors bien ?\""
+    },
+    "day4_lunch_nurse_3_alt": {
+        "name": "Kang Riin",
+        "text": "\"Tu as bien dormi ces derniers temps ? Tu as l'air un peu fatigué.\""
+    },
+    "day4_lunch_nurse_4": {
+        "name": "Moi",
+        "text": "*Est-ce que je demande à Riin pour Yuna ?*",
+        "choices": [
+            "Demander où est passée Yuna",
+            "Ne rien dire"
+        ]
+    },
+    "day4_lunch_nurse_confront": {
+        "name": "Kang Riin",
+        "text": "\"Yuna ? ...Oh, cette fille. On a dit qu'elle avait été transférée, non ?\""
+    },
+    "day4_lunch_nurse_confront_2": {
+        "name": "Kang Riin",
+        "text": "\"...Pourquoi tu me regardes comme ça ? {name}, tu ne penses pas à des choses bizarres, j'espère ?\""
+    },
+    "day4_lunch_nurse_pretend": {
+        "name": "Moi",
+        "text": "*Je n'ai rien dit. Riin a souri et m'a offert une vitamine.*"
+    },
+    "day4_lunch_nurse_pretend_2": {
+        "name": "Kang Riin",
+        "text": "\"Tiens, une vitamine. ...Prends-la cette fois, s'il te plaît ?\""
+    },
+
+    "day4_lunch_rooftop": {
+        "name": "Moi",
+        "text": "*Le toit. Là où j'étais avec Yuna hier. Le vent est froid.*"
+    },
+    "day4_lunch_rooftop_2": {
+        "name": "Moi",
+        "text": "*Quelque chose est gravé sous la rambarde. Des lettres grattées, comme avec un couteau.*"
+    },
+    "day4_lunch_rooftop_3": {
+        "name": "Moi",
+        "text": "*'Il n'y a qu'une seule sortie. — Lee Seolhwa' ...Seolhwa a laissé ça.*"
+    },
+    "day4_lunch_rooftop_4": {
+        "name": "Moi",
+        "text": "*...Une seule sortie ? Quelle sortie ?*"
+    },
+    "day4_lunch_ghost": "Le sous-sol",
+    "day4_lunch_rooftop_5": {
+        "name": "Moi",
+        "text": "*Soudain froid. Je redescends vite.*"
+    },
+
+    "day4_lunch_end": {
+        "name": "Moi",
+        "text": "*Les cours de l'après-midi commencent. J'ai l'impression que mon cœur va exploser.*"
+    }
+}

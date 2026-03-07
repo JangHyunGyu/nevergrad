@@ -1,0 +1,183 @@
+{
+    "day1_opening": {
+        "name": "Me",
+        "text": "*Cherry blossoms flutter in the breeze. Warm spring air seeps through my school uniform. Starting today, I'm a student here.*"
+    },
+    "day1_opening_2": {
+        "name": "Me",
+        "text": "*Standing in front of the unfamiliar school gate, my heart is racing. New school, new friends... I hope only good things await.*"
+    },
+    "day1_opening_3": {
+        "name": "Me",
+        "text": "*Alright, let's go. A fresh start.*"
+    },
+
+    "day1_hallway_1": {
+        "name": "Me",
+        "text": "*Walking through the hallway, I have no idea where to go. Where's my classroom...?*"
+    },
+    "day1_sea_first": {
+        "name": "???",
+        "text": "\"Oh? Are you the transfer student?\""
+    },
+    "day1_sea_first_2": {
+        "name": "Me",
+        "text": "*I turn around to find a girl beaming at me. She's strikingly put-together, with a class representative armband on her sleeve.*"
+    },
+    "day1_sea_first_3": {
+        "name": "Han Sea",
+        "text": "\"I'm Han Sea! Class representative. The homeroom teacher told me about you. Nice to meet you, {name}!\""
+    },
+    "day1_sea_first_4": {
+        "name": "Me",
+        "text": "\"Oh, hi... But how do you know my name?\""
+    },
+    "day1_sea_choco": {
+        "name": "Han Sea",
+        "text": "\"Oh, right! {name}, you like chocolate milk, don't you? Here!\""
+    },
+    "day1_sea_choco_2": {
+        "name": "Me",
+        "text": "*...Chocolate milk? I never said I liked chocolate milk. I don't even remember drinking it at my old school.*"
+    },
+    "day1_sea_choco_choice": {
+        "name": "Me",
+        "text": "*That's weird. Should I just go along with it, or ask?*",
+        "choices": [
+            "\"Thanks! I love chocolate milk.\" (Play along)",
+            "\"Wait... how did you know I like chocolate milk?\"",
+            "\"Actually, I'm more of a strawberry milk person.\" (Joke it off)"
+        ]
+    },
+    "day1_sea_choco_accept": {
+        "name": "Han Sea",
+        "text": "\"Hehe, I knew it! It's good, right? I have great intuition~\""
+    },
+    "day1_sea_choco_question": {
+        "name": "Han Sea",
+        "text": "\"Um... just a hunch? Every transfer student likes chocolate milk, haha!\""
+    },
+    "day1_sea_choco_question_2": {
+        "name": "Me",
+        "text": "*She seems a bit flustered. ...Well, it's probably nothing.*"
+    },
+    "day1_sea_choco_joke": {
+        "name": "Han Sea",
+        "text": "\"Whaaat?! Strawberry?! ...Oh, I see. I'll, I'll get strawberry next time!\""
+    },
+
+    "day1_classroom_enter": {
+        "name": "Me",
+        "text": "*Following Sea's lead, I step into the classroom. Strangely, every pair of eyes is fixed on me.*"
+    },
+    "day1_classroom_enter_2": {
+        "name": "Me",
+        "text": "*...I get that a transfer student is interesting, but these stares feel less like curiosity and more like... confirmation.*"
+    },
+    "day1_classroom_enter_3": {
+        "name": "Me",
+        "text": "*No, I'm overthinking it. It's just the first day jitters.*"
+    },
+
+    "day1_eunsu_enter": {
+        "name": "Me",
+        "text": "*The classroom door opens, and the homeroom teacher walks in.*"
+    },
+    "day1_eunsu_first": {
+        "name": "Park Eunsu",
+        "text": "\"Alright everyone~ Today I'd like to introduce a new transfer student.\""
+    },
+    "day1_eunsu_first_2": {
+        "name": "Park Eunsu",
+        "text": "\"{name}, would you come up and introduce yourself?\""
+    },
+    "day1_eunsu_first_3": {
+        "name": "Me",
+        "text": "*Standing at the blackboard, I feel even more nervous. The teacher is looking at me with particularly... warm eyes. No, warm isn't the right word...*"
+    },
+    "day1_eunsu_first_4": {
+        "name": "Park Eunsu",
+        "text": "\"...You're finally here.\""
+    },
+    "day1_eunsu_first_5": {
+        "name": "Me",
+        "text": "\"...Pardon?\""
+    },
+    "day1_eunsu_first_6": {
+        "name": "Park Eunsu",
+        "text": "\"Oh, no! I meant the transfer student has finally arrived, haha. Now then, why don't you introduce yourself?\""
+    },
+    "day1_eunsu_first_7": {
+        "name": "Me",
+        "text": "*...She just said 'finally.' As if she'd been waiting for me. ...No, it's just a figure of speech.*"
+    },
+
+    "day1_seat_guide": {
+        "name": "Park Eunsu",
+        "text": "\"Your seat is over there, by the window in the back row. Go ahead and sit down.\""
+    },
+    "day1_seolhwa_notice": {
+        "name": "Me",
+        "text": "*I sit down. The seat next to me... no, behind me — someone's there.*"
+    },
+    "day1_seolhwa_notice_2": {
+        "name": "Me",
+        "text": "*Pale skin, eyes gazing at some distant place. A presence completely detached from the classroom's noise.*"
+    },
+    "day1_seolhwa_notice_3": {
+        "name": "Me",
+        "text": "*...Should I say hello?*"
+    },
+    "day1_seolhwa_greet_choice": {
+        "name": "Me",
+        "text": "*Should I turn around?*",
+        "choices": [
+            "\"Hi, I'm {name}. Looks like I'm sitting in front of you.\"",
+            "(Focus on class for now)"
+        ]
+    },
+    "day1_seolhwa_greet": {
+        "name": "Me",
+        "text": "\"Hi, I'm {name}. Nice to meet you.\""
+    },
+    "day1_seolhwa_greet_2": {
+        "name": "Lee Seolhwa",
+        "text": "\".......\""
+    },
+    "day1_seolhwa_greet_3": {
+        "name": "Me",
+        "text": "*No response. I thought our eyes met for a moment... but she looked away immediately.*"
+    },
+    "day1_seolhwa_greet_4": {
+        "name": "Boy next to me",
+        "text": "\"Hey, transfer kid. What's behind you? What are you looking at?\""
+    },
+    "day1_seolhwa_greet_5": {
+        "name": "Me",
+        "text": "\"Oh, I was just saying hi to the girl sitting behind me...\""
+    },
+    "day1_seolhwa_greet_6": {
+        "name": "Boy next to me",
+        "text": "\"Behind you? That seat's empty, dude.\""
+    },
+    "day1_seolhwa_greet_7": {
+        "name": "Me",
+        "text": "*......What?*"
+    },
+    "day1_seolhwa_greet_8": {
+        "name": "Me",
+        "text": "*I look behind me again. The girl who was definitely sitting there just now... is there. She's still there.*"
+    },
+    "day1_seolhwa_greet_9": {
+        "name": "Me",
+        "text": "*But he can't see her?*"
+    },
+    "day1_seolhwa_greet_10": {
+        "name": "Me",
+        "text": "*...He's probably just messing with me. Hazing the new kid. Yeah, that's it.*"
+    },
+    "day1_seolhwa_skip": {
+        "name": "Me",
+        "text": "*Let's focus on class. Can't zone out on the first day.*"
+    }
+}

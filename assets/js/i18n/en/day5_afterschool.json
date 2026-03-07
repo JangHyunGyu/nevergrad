@@ -1,0 +1,126 @@
+{
+    "day5_after_start": {
+        "name": "Me",
+        "text": "*...*"
+    },
+
+    "day5_after_escaped": {
+        "name": "Me",
+        "text": "*Outside the school. Rain is falling. For the first time... I'm breathing air outside these walls.*"
+    },
+    "day5_after_escaped_2": {
+        "name": "Me",
+        "text": "*I ran. Anywhere. As far from this school as possible.*"
+    },
+    "day5_after_escaped_3": {
+        "name": "Me",
+        "text": "*Alone. But alive.*"
+    },
+    "day5_after_escaped_solo": {
+        "name": "Me",
+        "text": "*I left Yuna behind. ...I'm sorry.*"
+    },
+    "day5_after_escaped_branch": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai...! We... made it out...\""
+    },
+    "day5_after_escaped_yuna": {
+        "name": "Me",
+        "text": "*Yuna is crying. So am I.*"
+    },
+    "day5_after_escaped_4": {
+        "name": "Me",
+        "text": "*This evidence needs to reach the world. Right now.*"
+    },
+    "day5_after_escaped_choice": {
+        "name": "Me",
+        "text": "*What do I do?*",
+        "choices": [
+            "Call the police",
+            "Expose it online"
+        ]
+    },
+    "day5_after_police": {
+        "name": "Me",
+        "text": "*I called the police. My voice was shaking, but I explained everything. I submitted the memory card and photos as evidence.*"
+    },
+    "day5_after_police_2": {
+        "name": "Me",
+        "text": "*Police dispatched. Sirens wailing in the direction of the school.*"
+    },
+    "day5_after_expose_online": {
+        "name": "Me",
+        "text": "*Connected to a convenience store's WiFi. Uploading every photo and document. Social media, news tips, forums...*"
+    },
+    "day5_after_expose_2": {
+        "name": "Me",
+        "text": "*Upload complete. ...Soon the world will know.*"
+    },
+
+    "day5_after_captured": {
+        "name": "Me",
+        "text": "*...I opened my eyes. The basement. Fluorescent lights flickering.*"
+    },
+    "day5_after_captured_2": {
+        "name": "Me",
+        "text": "*My hands are bound. Seated in a chair. ...Is it over?*"
+    },
+    "day5_after_captured_3": {
+        "name": "Park Eunsu",
+        "text": "\"You're awake, {name}. ...You tried to run?\""
+    },
+    "day5_after_captured_4": {
+        "name": "Kang Riin",
+        "text": "\"I'll prepare the final treatment. It'll be quick.\""
+    },
+    "day5_after_captured_5": {
+        "name": "Me",
+        "text": "*...Should I give up?*",
+        "choices": [
+            "Resist",
+            "Accept it"
+        ]
+    },
+    "day5_after_captured_resist": {
+        "name": "Me",
+        "text": "*I knocked the chair over! Rising with bound hands.*"
+    },
+    "day5_after_captured_resist_2": {
+        "name": "Lee Seolhwa",
+        "text": "\"...I'll help you.\""
+    },
+    "day5_after_captured_resist_3": {
+        "name": "Me",
+        "text": "*Sudden blackout. The basement plunges into darkness. In the chaos... I found the exit.*"
+    },
+    "day5_after_captured_submit": {
+        "name": "Kang Riin",
+        "text": "\"Good. It'll be over soon. You'll forget everything.\""
+    },
+    "day5_after_captured_submit_2": {
+        "name": "Me",
+        "text": "*The needle touches my arm. Consciousness... fading...*"
+    },
+
+    "day5_after_stayed": {
+        "name": "Park Eunsu",
+        "text": "\"...You made the right choice, {name}. This is how it should be.\""
+    },
+    "day5_after_stayed_2": {
+        "name": "Park Eunsu",
+        "text": "\"I'll protect you. You don't need to worry about anything.\""
+    },
+    "day5_after_stayed_3": {
+        "name": "Park Eunsu",
+        "text": "\"...Just stay by my side, {name}. Forever.\""
+    },
+    "day5_after_stayed_4": {
+        "name": "Me",
+        "text": "*Ms. Eunsu is smiling. A warm smile. ...Was this smile always this terrifying?*"
+    },
+
+    "day5_after_end": {
+        "name": "Me",
+        "text": "*...*"
+    }
+}

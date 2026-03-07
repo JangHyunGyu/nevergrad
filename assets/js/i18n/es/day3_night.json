@@ -1,0 +1,141 @@
+{
+    "day3_night_start": {
+        "name": "Yo",
+        "text": "*De vuelta en casa. Tumbado en la cama, pero el sueño no llega.*"
+    },
+    "day3_night_phone": {
+        "name": "Yo",
+        "text": "*Reviso el teléfono. Mensajes esperando.*"
+    },
+    "day3_night_phone_2": {
+        "name": "Yo",
+        "text": "*Sea: '{name}, ¡hoy fue divertido! Mañana también vayamos juntos♥'*"
+    },
+    "day3_night_phone_3": {
+        "name": "Yo",
+        "text": "*Sea: 'Responde antes de dormirte'*\n*Sea: '...'*\n*Sea: '¿{name}?'*\n*Sea: '¿Por qué no lees?'*\n*Sea: 'Solo estás durmiendo... ¿verdad?'*"
+    },
+    "day3_night_phone_4": {
+        "name": "Yo",
+        "text": "*...5 mensajes en 13 minutos. Puse el teléfono boca abajo.*"
+    },
+
+    "day3_night_recall": {
+        "name": "Yo",
+        "text": "*Repasando los eventos de hoy. La taquilla borrada. La tarjeta de memoria de Yuna. La puerta de la azotea cerrada con llave.*"
+    },
+    "day3_night_recall_2": {
+        "name": "Yo",
+        "text": "*Tres días desde que me trasladé. Yuna dijo que los estudiantes de intercambio 'desaparecieron' de esta escuela.*"
+    },
+    "day3_night_recall_3": {
+        "name": "Yo",
+        "text": "*...Extraño. Mis recuerdos de antes de trasladarme aquí son... borrosos. ¿Por qué vine a esta escuela?*"
+    },
+    "day3_night_recall_4": {
+        "name": "Yo",
+        "text": "*¿Mis padres? ¿Cuándo fue la última vez que contacté... cuándo fue la última vez que hablé con ellos? No puedo... recordar.*"
+    },
+
+    "day3_night_stat_crack": {
+        "name": "Yo",
+        "text": "*...Algo está mal. Este sentimiento no es 'cariño'. Es...*"
+    },
+    "day3_night_stat_crack_2": {
+        "name": "Yo",
+        "text": "*...¿Miedo?*"
+    },
+
+    "day3_night_nightmare": {
+        "name": "Yo",
+        "text": "*...¿Me quedé dormido? Esto es... ¿la escuela? Está oscuro.*"
+    },
+    "day3_night_nightmare_2": {
+        "name": "Yo",
+        "text": "*Caminando por el pasillo. Solo mis pasos hacen eco. Las puertas de las aulas se abren, una por una.*"
+    },
+    "day3_night_nightmare_3": {
+        "name": "???",
+        "text": "\"...{name} me pertenece.\""
+    },
+    "day3_night_nightmare_4": {
+        "name": "Yo",
+        "text": "*Miré detrás de mí. Nadie ahí. ...Pero puedo oír risas.*"
+    },
+    "day3_night_nightmare_5": {
+        "name": "???",
+        "text": "\"¿Adónde crees que vas? ...No te di permiso para irte.\""
+    },
+    "day3_night_nightmare_6": {
+        "name": "Yo",
+        "text": "*Empecé a correr. El pasillo se extiende sin fin. Tacones repiqueteando detrás de mí, acercándose.*"
+    },
+    "day3_night_nightmare_7": {
+        "name": "???",
+        "text": "\"Solo tómate la medicina. Te sentirás mucho mejor. ¿Por qué huyes?\""
+    },
+    "day3_night_nightmare_8": {
+        "name": "Yo",
+        "text": "*Un callejón sin salida. Me doy la vuelta... Tres sombras de pie ahí. Sonriendo.*"
+    },
+
+    "day3_night_seolhwa": {
+        "name": "???",
+        "text": "\"...Huye.\""
+    },
+    "day3_night_seolhwa_2": {
+        "name": "Lee Seolhwa",
+        "text": "\"Hace un año... llegué aquí igual que tú.\""
+    },
+    "day3_night_seolhwa_3": {
+        "name": "Lee Seolhwa",
+        "text": "\"No confíes en ellos. Cinco días. Tienes que salir... en cinco días.\""
+    },
+    "day3_night_seolhwa_4": {
+        "name": "Yo",
+        "text": "*La figura de Seolhwa se desvanece. Las palabras 'cinco días' resuenan en mi mente.*"
+    },
+
+    "day3_night_wakeup": {
+        "name": "Yo",
+        "text": "*...¡! Me desperté. Empapado en sudor frío.*"
+    },
+    "day3_night_wakeup_2": {
+        "name": "Yo",
+        "text": "*¿Un sueño...? El nombre Seolhwa. Definitivamente estaba en la lista de asistencia... no, no estaba.*"
+    },
+    "day3_night_wakeup_3": {
+        "name": "Yo",
+        "text": "*'Sal en cinco días.' ...¿De esta escuela? ...¿O de todo esto?*"
+    },
+    "day3_night_choice": {
+        "name": "Yo",
+        "text": "*¿Qué hago a partir de mañana?*",
+        "choices": [
+            "Descubrir la verdad",
+            "Fingir que no sé nada"
+        ]
+    },
+    "day3_night_investigate": {
+        "name": "Yo",
+        "text": "*Ya no puedo mirar hacia otro lado. La tarjeta de memoria de Yuna, los documentos, los estudiantes de intercambio desaparecidos... Necesito conectarlo todo.*"
+    },
+    "day3_night_investigate_2": {
+        "name": "Yo",
+        "text": "*A partir de mañana, las cosas cambian. Voy a exponer la verdadera cara de esta escuela.*"
+    },
+    "day3_night_deny": {
+        "name": "Yo",
+        "text": "*...Fue solo un sueño. Por la mañana todo estará bien.*"
+    },
+    "day3_night_deny_2": {
+        "name": "Yo",
+        "text": "*Me tapé con la manta y cerré los ojos.*"
+    },
+    "day3_night_ghost_msg": "¿De verdad estará bien?",
+
+    "day3_night_end": {
+        "name": "Yo",
+        "text": "*...El Día 3 ha terminado.*"
+    }
+}

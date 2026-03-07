@@ -1,0 +1,126 @@
+{
+    "day5_after_start": {
+        "name": "Yo",
+        "text": "*...*"
+    },
+
+    "day5_after_escaped": {
+        "name": "Yo",
+        "text": "*Fuera de la escuela. Está lloviendo. Por primera vez... estoy respirando aire fuera de estos muros.*"
+    },
+    "day5_after_escaped_2": {
+        "name": "Yo",
+        "text": "*Corrí. A cualquier parte. Lo más lejos posible de esta escuela.*"
+    },
+    "day5_after_escaped_3": {
+        "name": "Yo",
+        "text": "*Solo. Pero vivo.*"
+    },
+    "day5_after_escaped_solo": {
+        "name": "Yo",
+        "text": "*Dejé a Yuna atrás. ...Lo siento.*"
+    },
+    "day5_after_escaped_branch": {
+        "name": "Choi Yuna",
+        "text": "\"¡Senpai...! Lo... logramos...\""
+    },
+    "day5_after_escaped_yuna": {
+        "name": "Yo",
+        "text": "*Yuna está llorando. Yo también.*"
+    },
+    "day5_after_escaped_4": {
+        "name": "Yo",
+        "text": "*Estas pruebas tienen que llegar al mundo. Ahora mismo.*"
+    },
+    "day5_after_escaped_choice": {
+        "name": "Yo",
+        "text": "*¿Qué hago?*",
+        "choices": [
+            "Llamar a la policía",
+            "Exponerlo en internet"
+        ]
+    },
+    "day5_after_police": {
+        "name": "Yo",
+        "text": "*Llamé a la policía. Me temblaba la voz, pero lo expliqué todo. Entregué la tarjeta de memoria y las fotos como pruebas.*"
+    },
+    "day5_after_police_2": {
+        "name": "Yo",
+        "text": "*Policía despachada. Sirenas sonando en dirección a la escuela.*"
+    },
+    "day5_after_expose_online": {
+        "name": "Yo",
+        "text": "*Me conecté al WiFi de un konbini. Subiendo cada foto y documento. Redes sociales, líneas de noticias, foros...*"
+    },
+    "day5_after_expose_2": {
+        "name": "Yo",
+        "text": "*Subida completa. ...Pronto el mundo lo sabrá.*"
+    },
+
+    "day5_after_captured": {
+        "name": "Yo",
+        "text": "*...Abrí los ojos. El sótano. Luces fluorescentes parpadeando.*"
+    },
+    "day5_after_captured_2": {
+        "name": "Yo",
+        "text": "*Tengo las manos atadas. Sentado en una silla. ...¿Se acabó?*"
+    },
+    "day5_after_captured_3": {
+        "name": "Park Eunsu",
+        "text": "\"Despertaste, {name}. ...¿Intentaste huir?\""
+    },
+    "day5_after_captured_4": {
+        "name": "Kang Riin",
+        "text": "\"Prepararé el tratamiento final. Será rápido.\""
+    },
+    "day5_after_captured_5": {
+        "name": "Yo",
+        "text": "*...¿Debería rendirme?*",
+        "choices": [
+            "Resistir",
+            "Aceptarlo"
+        ]
+    },
+    "day5_after_captured_resist": {
+        "name": "Yo",
+        "text": "*¡Volcé la silla! Levantándome con las manos atadas.*"
+    },
+    "day5_after_captured_resist_2": {
+        "name": "Lee Seolhwa",
+        "text": "\"...Te ayudaré.\""
+    },
+    "day5_after_captured_resist_3": {
+        "name": "Yo",
+        "text": "*Apagón repentino. El sótano se sume en la oscuridad. En el caos... encontré la salida.*"
+    },
+    "day5_after_captured_submit": {
+        "name": "Kang Riin",
+        "text": "\"Bien. Acabará pronto. Lo olvidarás todo.\""
+    },
+    "day5_after_captured_submit_2": {
+        "name": "Yo",
+        "text": "*La aguja toca mi brazo. La conciencia... se desvanece...*"
+    },
+
+    "day5_after_stayed": {
+        "name": "Park Eunsu",
+        "text": "\"...Tomaste la decisión correcta, {name}. Así es como debe ser.\""
+    },
+    "day5_after_stayed_2": {
+        "name": "Park Eunsu",
+        "text": "\"Yo te protegeré. No necesitas preocuparte por nada.\""
+    },
+    "day5_after_stayed_3": {
+        "name": "Park Eunsu",
+        "text": "\"...Solo quédate a mi lado, {name}. Para siempre.\""
+    },
+    "day5_after_stayed_4": {
+        "name": "Yo",
+        "text": "*La profesora Eunsu está sonriendo. Una sonrisa cálida. ...¿Siempre fue esta sonrisa tan aterradora?*"
+    },
+
+    "day5_after_end": {
+        "name": "Yo",
+        "text": "*...*"
+    }
+}

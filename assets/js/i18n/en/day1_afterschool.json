@@ -1,0 +1,103 @@
+{
+    "day1_after_start": {
+        "name": "Me",
+        "text": "*The bell rings. The sunset paints the classroom in orange hues. For a first day... it wasn't bad at all.*"
+    },
+    "day1_after_start_2": {
+        "name": "Me",
+        "text": "*Should I head home, or see someone a little longer?*"
+    },
+    "day1_after_choice": {
+        "name": "Me",
+        "text": "*After school — where should I go?*",
+        "choices": [
+            "Sea invited me to the student council room",
+            "See Yuna again at the library",
+            "Nurse Riin is on my mind for some reason",
+            "Visit Ms. Eunsu at the faculty office",
+            "Just head home for today"
+        ]
+    },
+
+    "day1_after_sea": {
+        "name": "Han Sea",
+        "text": "\"You came! This is the student council room. It's nice and quiet with just the two of us, right?\""
+    },
+    "day1_after_sea_2": {
+        "name": "Han Sea",
+        "text": "\"Hey... {name}. It was your first day — wasn't it tough?\""
+    },
+    "day1_after_sea_3": {
+        "name": "Me",
+        "text": "\"No, I think I adjusted well thanks to you, Sea.\""
+    },
+    "day1_after_sea_4": {
+        "name": "Han Sea",
+        "text": "\"...Good. I'll do anything to make sure {name} is comfortable here. Anything.\""
+    },
+    "day1_after_sea_5": {
+        "name": "Me",
+        "text": "*The weight behind 'anything' bothers me slightly... but she's probably just being nice.*"
+    },
+
+    "day1_after_yuna": {
+        "name": "Me",
+        "text": "*Yuna's already at the library when I arrive. She seems to be organizing her photos.*"
+    },
+    "day1_after_yuna_2": {
+        "name": "Choi Yuna",
+        "text": "\"Oh, Senpai! You're back? Hehe, this place is my secret hideout. I'll show you my photos — just for you!\""
+    },
+    "day1_after_yuna_3": {
+        "name": "Me",
+        "text": "*I flip through Yuna's photos. School scenery, cats, sunsets... but the last photo is of a closed door at the end of a dark hallway.*"
+    },
+    "day1_after_yuna_4": {
+        "name": "Me",
+        "text": "*I was about to ask \"What's this?\" but Yuna quickly shut the camera off. ...What was that?*"
+    },
+
+    "day1_after_riin": {
+        "name": "Kang Riin",
+        "text": "\"My, you're back? Are you still sick, or... did you miss me?\""
+    },
+    "day1_after_riin_2": {
+        "name": "Kang Riin",
+        "text": "\"Fufu, just kidding. Come here, I'll make you some tea. It's always quiet here, perfect for sharing secrets.\""
+    },
+    "day1_after_riin_3": {
+        "name": "Me",
+        "text": "*I had tea and chatted with Nurse Riin. It was relaxing... but she seemed to ask a little too many detailed questions about my health.*"
+    },
+
+    "day1_after_eunsu": {
+        "name": "Park Eunsu",
+        "text": "\"Oh, {name}! You came all the way to the faculty office after school? That makes me so happy~\""
+    },
+    "day1_after_eunsu_2": {
+        "name": "Me",
+        "text": "*Ms. Eunsu brewed coffee and asked me all sorts of things about school life. She's a warm person.*"
+    },
+    "day1_after_eunsu_3": {
+        "name": "Park Eunsu",
+        "text": "\"...{name}, did something happen at your previous school? Your transfer reason was a bit unusual...\""
+    },
+    "day1_after_eunsu_4": {
+        "name": "Me",
+        "text": "*...Unusual? It was just because my parents moved. What's unusual about that? ...I was about to ask, but she changed the subject.*"
+    },
+
+    "day1_after_home": {
+        "name": "Me",
+        "text": "*I step through the school gate, looking back. Not a bad first day at all.*"
+    },
+    "day1_after_home_2": {
+        "name": "Me",
+        "text": "*...Someone seems to be watching me from a third-floor window. The backlight hides their face.*"
+    },
+
+    "day1_after_end": {
+        "name": "Me",
+        "text": "*I walk home against the sunset. Looking forward to tomorrow.*"
+    }
+}

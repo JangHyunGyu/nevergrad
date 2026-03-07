@@ -1,0 +1,126 @@
+{
+    "day5_after_start": {
+        "name": "Moi",
+        "text": "*...*"
+    },
+
+    "day5_after_escaped": {
+        "name": "Moi",
+        "text": "*Dehors. Il pleut. Pour la première fois... je respire l'air extérieur à ces murs.*"
+    },
+    "day5_after_escaped_2": {
+        "name": "Moi",
+        "text": "*J'ai couru. N'importe où. Le plus loin possible de cette école.*"
+    },
+    "day5_after_escaped_3": {
+        "name": "Moi",
+        "text": "*Seul. Mais vivant.*"
+    },
+    "day5_after_escaped_solo": {
+        "name": "Moi",
+        "text": "*J'ai laissé Yuna derrière moi. ...Pardon.*"
+    },
+    "day5_after_escaped_branch": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai... ! On a... réussi à sortir...\""
+    },
+    "day5_after_escaped_yuna": {
+        "name": "Moi",
+        "text": "*Yuna pleure. Moi aussi.*"
+    },
+    "day5_after_escaped_4": {
+        "name": "Moi",
+        "text": "*Ces preuves doivent être transmises au monde. Maintenant.*"
+    },
+    "day5_after_escaped_choice": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je fais ?*",
+        "choices": [
+            "Appeler la police",
+            "Tout exposer en ligne"
+        ]
+    },
+    "day5_after_police": {
+        "name": "Moi",
+        "text": "*J'ai appelé la police. Ma voix tremblait, mais j'ai tout expliqué. J'ai remis la carte mémoire et les photos comme preuves.*"
+    },
+    "day5_after_police_2": {
+        "name": "Moi",
+        "text": "*Police dépêchée. Les sirènes hurlent en direction de l'école.*"
+    },
+    "day5_after_expose_online": {
+        "name": "Moi",
+        "text": "*Connecté au WiFi d'un konbini. J'uploade chaque photo et document. Réseaux sociaux, alertes presse, forums...*"
+    },
+    "day5_after_expose_2": {
+        "name": "Moi",
+        "text": "*Envoi terminé. ...Bientôt le monde entier saura.*"
+    },
+
+    "day5_after_captured": {
+        "name": "Moi",
+        "text": "*...J'ai ouvert les yeux. Le sous-sol. Les néons clignotent.*"
+    },
+    "day5_after_captured_2": {
+        "name": "Moi",
+        "text": "*Mes mains sont liées. Assis sur une chaise. ...C'est fini ?*"
+    },
+    "day5_after_captured_3": {
+        "name": "Park Eunsu",
+        "text": "\"Tu es réveillé, {name}. ...Tu as essayé de fuir ?\""
+    },
+    "day5_after_captured_4": {
+        "name": "Kang Riin",
+        "text": "\"Je vais préparer le traitement final. Ce sera rapide.\""
+    },
+    "day5_after_captured_5": {
+        "name": "Moi",
+        "text": "*...Est-ce que j'abandonne ?*",
+        "choices": [
+            "Résister",
+            "Accepter"
+        ]
+    },
+    "day5_after_captured_resist": {
+        "name": "Moi",
+        "text": "*J'ai renversé la chaise ! Je me relève, les mains liées.*"
+    },
+    "day5_after_captured_resist_2": {
+        "name": "Lee Seolhwa",
+        "text": "\"...Je vais t'aider.\""
+    },
+    "day5_after_captured_resist_3": {
+        "name": "Moi",
+        "text": "*Coupure de courant soudaine. Le sous-sol plonge dans l'obscurité. Dans le chaos... j'ai trouvé la sortie.*"
+    },
+    "day5_after_captured_submit": {
+        "name": "Kang Riin",
+        "text": "\"Bien. Ce sera bientôt fini. Tu oublieras tout.\""
+    },
+    "day5_after_captured_submit_2": {
+        "name": "Moi",
+        "text": "*L'aiguille touche mon bras. La conscience... s'estompe...*"
+    },
+
+    "day5_after_stayed": {
+        "name": "Park Eunsu",
+        "text": "\"...Tu as fait le bon choix, {name}. C'est comme ça que ça doit être.\""
+    },
+    "day5_after_stayed_2": {
+        "name": "Park Eunsu",
+        "text": "\"Je te protégerai. Tu n'as plus besoin de t'inquiéter de quoi que ce soit.\""
+    },
+    "day5_after_stayed_3": {
+        "name": "Park Eunsu",
+        "text": "\"...Reste juste à mes côtés, {name}. Pour toujours.\""
+    },
+    "day5_after_stayed_4": {
+        "name": "Moi",
+        "text": "*Mme Eunsu sourit. Un sourire chaleureux. ...Ce sourire a-t-il toujours été aussi terrifiant ?*"
+    },
+
+    "day5_after_end": {
+        "name": "Moi",
+        "text": "*...*"
+    }
+}

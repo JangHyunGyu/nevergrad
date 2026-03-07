@@ -1,0 +1,172 @@
+{
+    "day5_lunch_start": {
+        "name": "私",
+        "text": "*昼のチャイムが鳴った。今だ。*"
+    },
+    "day5_lunch_start_2": {
+        "name": "私",
+        "text": "*鞄を持った。証拠は全部ポケットに。心臓が狂ったように鳴っている。*"
+    },
+
+    "day5_lunch_branch": {
+        "name": "私",
+        "text": "*ユナが教えてくれた場所。旧館3階。*"
+    },
+    "day5_lunch_branch_alt": {
+        "name": "私",
+        "text": "*一人でやるしかない。出口を探そう。*"
+    },
+
+    "day5_lunch_yuna_meet": {
+        "name": "チェ・ユナ",
+        "text": "\"先輩……！ 来てくれたんだ。\""
+    },
+    "day5_lunch_yuna_2": {
+        "name": "チェ・ユナ",
+        "text": "\"旧館3階の突き当たりに非常口があるの。外に通じる唯一の道よ。\""
+    },
+    "day5_lunch_yuna_3": {
+        "name": "チェ・ユナ",
+        "text": "\"でも……その廊下を通らなきゃいけない。きっと誰かが見張ってるはず。\""
+    },
+    "day5_lunch_yuna_4": {
+        "name": "私",
+        "text": "*ユナと目を合わせた。準備はできた。*"
+    },
+
+    "day5_lunch_solo": {
+        "name": "私",
+        "text": "*廊下を歩く。どこへ行けばいい？ 出口を……見つけなければ。*"
+    },
+    "day5_lunch_solo_2": {
+        "name": "私",
+        "text": "*旧館の方へ向かう。あっちに非常口がありそうだ。*"
+    },
+
+    "day5_lunch_escape_start": {
+        "name": "私",
+        "text": "*廊下を走り始めた。後ろから足音が聞こえる。*"
+    },
+    "day5_lunch_escape_2": {
+        "name": "私",
+        "text": "*分かれ道だ！*",
+        "choices": [
+            "左の廊下",
+            "右の廊下"
+        ]
+    },
+
+    "day5_lunch_escape_left": {
+        "name": "ハン・セア",
+        "text": "\"……どこに行くの、{name}？\""
+    },
+    "day5_lunch_sea_block": {
+        "name": "ハン・セア",
+        "text": "\"私を置いて行くの？ ……私を捨てるの？\""
+    },
+    "day5_lunch_sea_block_2": {
+        "name": "私",
+        "text": "*セアが廊下を塞いでいる。*",
+        "choices": [
+            "押しのけて通る",
+            "セアを説得する"
+        ]
+    },
+    "day5_lunch_sea_push": {
+        "name": "私",
+        "text": "*セアを押しのけて走った。後ろから泣き声が聞こえる。*"
+    },
+    "day5_lunch_sea_talk": {
+        "name": "ハン・セア",
+        "text": "\"……本当に私なしで行くの？\""
+    },
+    "day5_lunch_sea_talk_2": {
+        "name": "ハン・セア",
+        "text": "\"……バカ。行って。早く行って。\""
+    },
+
+    "day5_lunch_escape_right": {
+        "name": "カン・リイン",
+        "text": "\"あら、こんなところで会うなんて。{name}、まだ健康診断が終わってないのに。\""
+    },
+    "day5_lunch_riin_block": {
+        "name": "カン・リイン",
+        "text": "\"すぐ終わるわ。注射を一本打てば……楽になるわよ。\""
+    },
+    "day5_lunch_riin_block_2": {
+        "name": "私",
+        "text": "*リインが注射器を持っている。*",
+        "choices": [
+            "かわして通り抜ける",
+            "リインと対話する"
+        ]
+    },
+    "day5_lunch_riin_dodge": {
+        "name": "私",
+        "text": "*リインをかわして走った。注射器が壁にぶつかって割れた。*"
+    },
+    "day5_lunch_riin_confront": {
+        "name": "カン・リイン",
+        "text": "\"……知ってたのね。全部。\""
+    },
+    "day5_lunch_riin_confront_2": {
+        "name": "カン・リイン",
+        "text": "\"……行きなさい。私も……もう疲れたわ。\""
+    },
+
+    "day5_lunch_escape_caught_sea": {
+        "name": "ハン・セア",
+        "text": "\"捕まえた。……もうどこにも行かないよね？\""
+    },
+    "day5_lunch_escape_caught_riin": {
+        "name": "カン・リイン",
+        "text": "\"しっ。すぐ終わるわ。痛くないから。\""
+    },
+    "day5_lunch_caught": {
+        "name": "私",
+        "text": "*……捕まった。*"
+    },
+
+    "day5_lunch_continue": {
+        "name": "私",
+        "text": "*階段を上る。非常口が見える。もう少しだ！*"
+    },
+    "day5_lunch_continue_2": {
+        "name": "私",
+        "text": "*……ウンス先生が非常口の前に立っている。*"
+    },
+    "day5_lunch_eunsu_final": {
+        "name": "パク・ウンス",
+        "text": "\"{name}。……ここまで来たのね。\""
+    },
+    "day5_lunch_eunsu_final_2": {
+        "name": "パク・ウンス",
+        "text": "\"先生と一緒にいちゃダメ？ ……先生はあなたのためにこれを全部やってきたのに。\"",
+        "choices": [
+            "押しのけて出る",
+            "ウンスと一緒に残る"
+        ]
+    },
+    "day5_lunch_eunsu_break": {
+        "name": "私",
+        "text": "*ウンス先生を通り過ぎて非常口を開けた。冷たい風が顔を打つ。*"
+    },
+    "day5_lunch_eunsu_stay": {
+        "name": "パク・ウンス",
+        "text": "\"……ありがとう、{name}。これでいいの。\""
+    },
+    "day5_lunch_eunsu_stay_2": {
+        "name": "私",
+        "text": "*ウンス先生が僕の手を握った。……もう戻れない。*"
+    },
+
+    "day5_lunch_breakthrough": {
+        "name": "私",
+        "text": "*非常口の向こうに光が見える。出口だ。*"
+    },
+
+    "day5_lunch_end": {
+        "name": "私",
+        "text": "*……*"
+    }
+}

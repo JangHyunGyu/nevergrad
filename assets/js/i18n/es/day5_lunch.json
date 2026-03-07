@@ -1,0 +1,172 @@
+{
+    "day5_lunch_start": {
+        "name": "Yo",
+        "text": "*Sonó el timbre del almuerzo. Ahora o nunca.*"
+    },
+    "day5_lunch_start_2": {
+        "name": "Yo",
+        "text": "*Agarré mi mochila. Todas las pruebas en mis bolsillos. El corazón me late como si fuera a salírseme del pecho.*"
+    },
+
+    "day5_lunch_branch": {
+        "name": "Yo",
+        "text": "*El lugar que me indicó Yuna. Edificio antiguo, 3er piso.*"
+    },
+    "day5_lunch_branch_alt": {
+        "name": "Yo",
+        "text": "*Tengo que hacer esto solo. Encontrar la salida.*"
+    },
+
+    "day5_lunch_yuna_meet": {
+        "name": "Choi Yuna",
+        "text": "\"¡Senpai...! Viniste.\""
+    },
+    "day5_lunch_yuna_2": {
+        "name": "Choi Yuna",
+        "text": "\"Hay una salida de emergencia al final del 3er piso. La única salida.\""
+    },
+    "day5_lunch_yuna_3": {
+        "name": "Choi Yuna",
+        "text": "\"Pero... tenemos que pasar por ese pasillo. Alguien seguro lo está vigilando.\""
+    },
+    "day5_lunch_yuna_4": {
+        "name": "Yo",
+        "text": "*Nuestras miradas se cruzaron. Estamos listos.*"
+    },
+
+    "day5_lunch_solo": {
+        "name": "Yo",
+        "text": "*Caminando por el pasillo. ¿Adónde voy? Necesito encontrar... una salida.*"
+    },
+    "day5_lunch_solo_2": {
+        "name": "Yo",
+        "text": "*Me dirijo hacia el edificio antiguo. Debería haber una salida de emergencia allí.*"
+    },
+
+    "day5_lunch_escape_start": {
+        "name": "Yo",
+        "text": "*Empecé a correr por el pasillo. Pasos detrás de mí.*"
+    },
+    "day5_lunch_escape_2": {
+        "name": "Yo",
+        "text": "*¡Una bifurcación en el camino!*",
+        "choices": [
+            "Pasillo izquierdo",
+            "Pasillo derecho"
+        ]
+    },
+
+    "day5_lunch_escape_left": {
+        "name": "Han Sea",
+        "text": "\"...¿Adónde vas, {name}?\""
+    },
+    "day5_lunch_sea_block": {
+        "name": "Han Sea",
+        "text": "\"¿Me vas a dejar? ...¿Vas a abandonarme?\""
+    },
+    "day5_lunch_sea_block_2": {
+        "name": "Yo",
+        "text": "*Sea está bloqueando el pasillo.*",
+        "choices": [
+            "Pasar a la fuerza",
+            "Intentar convencer a Sea"
+        ]
+    },
+    "day5_lunch_sea_push": {
+        "name": "Yo",
+        "text": "*Pasé a la fuerza y corrí. Puedo oír llantos detrás de mí.*"
+    },
+    "day5_lunch_sea_talk": {
+        "name": "Han Sea",
+        "text": "\"...¿De verdad te vas sin mí?\""
+    },
+    "day5_lunch_sea_talk_2": {
+        "name": "Han Sea",
+        "text": "\"...Tonto. Vete. Date prisa.\""
+    },
+
+    "day5_lunch_escape_right": {
+        "name": "Kang Riin",
+        "text": "\"Vaya, qué casualidad encontrarte aquí. {name}, tu revisión aún no ha terminado.\""
+    },
+    "day5_lunch_riin_block": {
+        "name": "Kang Riin",
+        "text": "\"Solo tomará un momento. Una inyección y... te sentirás mucho mejor.\""
+    },
+    "day5_lunch_riin_block_2": {
+        "name": "Yo",
+        "text": "*Riin tiene una jeringa en la mano.*",
+        "choices": [
+            "Esquivar y correr",
+            "Hablar con Riin"
+        ]
+    },
+    "day5_lunch_riin_dodge": {
+        "name": "Yo",
+        "text": "*Esquivé a Riin y corrí. La jeringa se hizo pedazos contra la pared.*"
+    },
+    "day5_lunch_riin_confront": {
+        "name": "Kang Riin",
+        "text": "\"...Así que lo sabías. Todo.\""
+    },
+    "day5_lunch_riin_confront_2": {
+        "name": "Kang Riin",
+        "text": "\"...Vete. Yo también... estoy cansada de esto.\""
+    },
+
+    "day5_lunch_escape_caught_sea": {
+        "name": "Han Sea",
+        "text": "\"Te pillé. ...Ya no vas a ir a ningún lado, ¿verdad?\""
+    },
+    "day5_lunch_escape_caught_riin": {
+        "name": "Kang Riin",
+        "text": "\"Shh. Acabará pronto. No dolerá.\""
+    },
+    "day5_lunch_caught": {
+        "name": "Yo",
+        "text": "*...Me atraparon.*"
+    },
+
+    "day5_lunch_continue": {
+        "name": "Yo",
+        "text": "*Subiendo las escaleras corriendo. La salida de emergencia está a la vista. ¡Ya casi!*"
+    },
+    "day5_lunch_continue_2": {
+        "name": "Yo",
+        "text": "*...La profesora Eunsu está de pie frente a la salida de emergencia.*"
+    },
+    "day5_lunch_eunsu_final": {
+        "name": "Park Eunsu",
+        "text": "\"{name}. ...Has llegado hasta aquí.\""
+    },
+    "day5_lunch_eunsu_final_2": {
+        "name": "Park Eunsu",
+        "text": "\"¿No puedes simplemente quedarte conmigo? ...Todo esto lo hice por ti.\"",
+        "choices": [
+            "Abrirse paso y salir",
+            "Quedarse con Eunsu"
+        ]
+    },
+    "day5_lunch_eunsu_break": {
+        "name": "Yo",
+        "text": "*Pasé empujando a la profesora Eunsu y abrí la salida de emergencia de par en par. El aire frío me golpeó la cara.*"
+    },
+    "day5_lunch_eunsu_stay": {
+        "name": "Park Eunsu",
+        "text": "\"...Gracias, {name}. Así es como debe ser.\""
+    },
+    "day5_lunch_eunsu_stay_2": {
+        "name": "Yo",
+        "text": "*La profesora Eunsu tomó mi mano. ...Ya no hay vuelta atrás.*"
+    },
+
+    "day5_lunch_breakthrough": {
+        "name": "Yo",
+        "text": "*Luz más allá de la salida de emergencia. La salida.*"
+    },
+
+    "day5_lunch_end": {
+        "name": "Yo",
+        "text": "*...*"
+    }
+}

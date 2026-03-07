@@ -1,0 +1,186 @@
+{
+    "day3_after_start": {
+        "name": "Moi",
+        "text": "*Après les cours. L'école est étrangement calme aujourd'hui.*"
+    },
+    "day3_after_choice": {
+        "name": "Moi",
+        "text": "*C'est la fin des cours.*",
+        "choices": [
+            "Passer à l'infirmerie",
+            "Rentrer avec Sea",
+            "Aller à la salle des professeurs",
+            "Rester seul"
+        ]
+    },
+
+    "day3_after_riin": {
+        "name": "Kang Riin",
+        "text": "\"Oh, {name}. Tu tombes bien. Tu as l'air un peu fatigué aujourd'hui ?\""
+    },
+    "day3_after_riin_2": {
+        "name": "Kang Riin",
+        "text": "\"Assieds-toi ici. J'ai préparé une boisson santé spéciale — un mélange de vitamines et de plantes.\""
+    },
+    "day3_after_riin_3": {
+        "name": "Moi",
+        "text": "*Riin me tend une tasse avec un liquide violet pâle. ...L'odeur est un peu étrange.*"
+    },
+    "day3_after_riin_choice": {
+        "name": "Moi",
+        "text": "*Est-ce que je la bois ?*",
+        "choices": [
+            "La boire",
+            "Décliner poliment"
+        ]
+    },
+    "day3_after_riin_flicker": "Fuis",
+    "day3_after_riin_drink": {
+        "name": "Kang Riin",
+        "text": "\"Fufu, bien. Tu en sentiras l'effet bientôt.\""
+    },
+    "day3_after_riin_drink_2": {
+        "name": "Moi",
+        "text": "*Je l'ai bue. ...Un arrière-goût amer persiste sur ma langue. Attends, ma vision est légèrement...*"
+    },
+    "day3_after_riin_drink_3": {
+        "name": "Moi",
+        "text": "*...Non, ça va. Je suis juste fatigué, c'est tout.*"
+    },
+    "day3_after_riin_refuse": {
+        "name": "Kang Riin",
+        "text": "\"...Ah bon ? Quel dommage.\""
+    },
+    "day3_after_riin_refuse_2": {
+        "name": "Kang Riin",
+        "text": "\"Ce n'est pas grave, tu pourras la boire la prochaine fois. ...Tu la boiras la prochaine fois, n'est-ce pas ?\""
+    },
+
+    "day3_after_sea": {
+        "name": "Han Sea",
+        "text": "\"{name} ! Rentrons ensemble~ Je veux aller voir la nouvelle boulangerie !\""
+    },
+    "day3_after_sea_2": {
+        "name": "Moi",
+        "text": "*En marchant dans le couloir avec Sea. Elle a l'air joyeuse comme d'habitude, mais...*"
+    },
+    "day3_after_sea_3": {
+        "name": "Han Sea",
+        "text": "\"...Au fait, {name}, tu étais où pendant le déjeuner ?\""
+    },
+    "day3_after_sea_4": {
+        "name": "Han Sea",
+        "text": "\"J'ai entendu dire que tu étais sur le toit avec Yuna. Juste vous deux. ...Quelqu'un me l'a dit.\""
+    },
+    "day3_after_sea_4_alt": {
+        "name": "Han Sea",
+        "text": "\"Tu as disparu pendant le déjeuner... je me suis un peu inquiétée.\""
+    },
+    "day3_after_sea_choice": {
+        "name": "Moi",
+        "text": "*Comment je réponds ?*",
+        "choices": [
+            "Dire la vérité",
+            "Éluder la question"
+        ]
+    },
+    "day3_after_sea_truth": {
+        "name": "Han Sea",
+        "text": "\"...Avec Yuna. Seuls. Je vois.\""
+    },
+    "day3_after_sea_truth_2": {
+        "name": "Moi",
+        "text": "*Sea sourit. Elle sourit, mais... ses yeux ne sourient pas.*"
+    },
+    "day3_after_sea_lie": {
+        "name": "Han Sea",
+        "text": "\"Vraiment ? Tant mieux~ J'étais toute seule, je me sentais abandonnée !\""
+    },
+    "day3_after_sea_lie_2": {
+        "name": "Moi",
+        "text": "*Sea a attrapé mon bras. Plus fort que d'habitude.*"
+    },
+
+    "day3_after_eunsu": {
+        "name": "Park Eunsu",
+        "text": "\"Oh, {name}. Tu es encore là ? Je travaille tard moi aussi, haha.\""
+    },
+    "day3_after_eunsu_2": {
+        "name": "Moi",
+        "text": "*Mme Eunsu est plongée dans une pile de documents. J'aperçois quelque chose entre les pages.*"
+    },
+    "day3_after_eunsu_3": {
+        "name": "Park Eunsu",
+        "text": "\"Attends un instant, je finis ça... Oh, tu veux un café ?\""
+    },
+    "day3_after_eunsu_4": {
+        "name": "Moi",
+        "text": "*Pendant que Mme Eunsu va préparer le café. Des documents sur son bureau attirent mon regard. 'Registre de gestion des élèves transférés'.*"
+    },
+    "day3_after_eunsu_choice": {
+        "name": "Moi",
+        "text": "*Est-ce que je regarde les documents ?*",
+        "choices": [
+            "Jeter un œil en secret",
+            "Ne pas regarder"
+        ]
+    },
+    "day3_after_eunsu_peek": {
+        "name": "Moi",
+        "text": "*J'ai feuilleté les documents. Une liste d'élèves transférés... avec des dates à côté de chaque nom. Date de transfert et... 'Date d'achèvement du traitement' ?*"
+    },
+    "day3_after_eunsu_peek_2": {
+        "name": "Moi",
+        "text": "*Mon nom est là aussi. La colonne à côté de la date est... encore vide.*"
+    },
+    "day3_after_eunsu_peek_3": {
+        "name": "Park Eunsu",
+        "text": "\"...Qu'est-ce que tu regardes ?\""
+    },
+    "day3_after_eunsu_ignore": {
+        "name": "Park Eunsu",
+        "text": "\"Merci d'avoir attendu. Tiens, du café.\""
+    },
+    "day3_after_eunsu_ignore_2": {
+        "name": "Moi",
+        "text": "*J'ai discuté avec Mme Eunsu autour d'un café. C'était chaleureux et confortable. ...Vraiment ?*"
+    },
+
+    "day3_after_alone": {
+        "name": "Moi",
+        "text": "*Seul dans la salle de classe. La carte mémoire dans ma poche me pèse sur la conscience.*"
+    },
+    "day3_after_alone_2": {
+        "name": "Moi",
+        "text": "*J'ai sorti mon ordinateur portable et inséré la carte mémoire.*"
+    },
+    "day3_after_alone_no_card": {
+        "name": "Moi",
+        "text": "*Salle de classe silencieuse. Le temps a passé sans rien de particulier.*"
+    },
+    "day3_after_alone_branch": {
+        "name": "Moi",
+        "text": "*Des fichiers apparaissent. Des dossiers de photos, des dossiers de documents... Mon cœur bat fort.*"
+    },
+    "day3_after_alone_3": {
+        "name": "Moi",
+        "text": "*Des photos. Des salles de classe vides, des casiers vidés, des bureaux avec des noms grattés... Et des photos de documents prises dans la salle des professeurs.*"
+    },
+    "day3_after_alone_4": {
+        "name": "Moi",
+        "text": "*Un document intitulé 'Liste des sujets'. Des numéros et des noms en lignes... la plupart barrés en rouge.*"
+    },
+    "day3_after_alone_5": {
+        "name": "Moi",
+        "text": "*La dernière ligne. Numéro 07. Mon nom. La ligne rouge... n'y est pas encore.*"
+    },
+    "day3_after_alone_6": {
+        "name": "Moi",
+        "text": "*Des pas dans le couloir. J'ai arraché la carte.*"
+    },
+
+    "day3_after_end": {
+        "name": "Moi",
+        "text": "*Je quitte l'école. Le coucher de soleil est rouge. ...Rouge comme du sang.*"
+    }
+}

@@ -1,0 +1,172 @@
+{
+    "day5_lunch_start": {
+        "name": "나",
+        "text": "*점심 종이 울렸다. 지금이다.*"
+    },
+    "day5_lunch_start_2": {
+        "name": "나",
+        "text": "*가방을 챙겼다. 증거는 전부 주머니에. 심장이 미칠듯이 뛴다.*"
+    },
+
+    "day5_lunch_branch": {
+        "name": "나",
+        "text": "*유나가 알려준 장소. 구관 3층.*"
+    },
+    "day5_lunch_branch_alt": {
+        "name": "나",
+        "text": "*혼자서 해야 한다. 출구를 찾자.*"
+    },
+
+    "day5_lunch_yuna_meet": {
+        "name": "최유나",
+        "text": "\"선배...! 왔구나.\""
+    },
+    "day5_lunch_yuna_2": {
+        "name": "최유나",
+        "text": "\"구관 3층 끝에 비상구가 있어. 밖으로 통하는 유일한 길이야.\""
+    },
+    "day5_lunch_yuna_3": {
+        "name": "최유나",
+        "text": "\"하지만... 그쪽 복도를 지나야 해. 분명 누군가 지키고 있을 거야.\""
+    },
+    "day5_lunch_yuna_4": {
+        "name": "나",
+        "text": "*유나와 눈을 마주쳤다. 준비됐다.*"
+    },
+
+    "day5_lunch_solo": {
+        "name": "나",
+        "text": "*복도를 걷는다. 어디로 가야 하지? 출구를... 찾아야 한다.*"
+    },
+    "day5_lunch_solo_2": {
+        "name": "나",
+        "text": "*구관 쪽으로 간다. 그쪽에 비상구가 있을 것 같다.*"
+    },
+
+    "day5_lunch_escape_start": {
+        "name": "나",
+        "text": "*복도를 뛰기 시작했다. 뒤에서 발소리가 들린다.*"
+    },
+    "day5_lunch_escape_2": {
+        "name": "나",
+        "text": "*갈림길이다!*",
+        "choices": [
+            "왼쪽 복도",
+            "오른쪽 복도"
+        ]
+    },
+
+    "day5_lunch_escape_left": {
+        "name": "한세아",
+        "text": "\"...어디 가는 거야, {name}?\""
+    },
+    "day5_lunch_sea_block": {
+        "name": "한세아",
+        "text": "\"나 두고 가려고? ...나를 버리려고?\""
+    },
+    "day5_lunch_sea_block_2": {
+        "name": "나",
+        "text": "*세아가 복도를 막고 있다.*",
+        "choices": [
+            "밀치고 지나간다",
+            "세아를 설득한다"
+        ]
+    },
+    "day5_lunch_sea_push": {
+        "name": "나",
+        "text": "*세아를 밀치고 뛰었다. 뒤에서 울음소리가 들린다.*"
+    },
+    "day5_lunch_sea_talk": {
+        "name": "한세아",
+        "text": "\"...정말 나 없이 갈 거야?\""
+    },
+    "day5_lunch_sea_talk_2": {
+        "name": "한세아",
+        "text": "\"...바보. 가. 빨리 가.\""
+    },
+
+    "day5_lunch_escape_right": {
+        "name": "강리인",
+        "text": "\"이런, 여기서 만나네. {name}, 아직 건강검진이 안 끝났는데.\""
+    },
+    "day5_lunch_riin_block": {
+        "name": "강리인",
+        "text": "\"잠깐이면 돼. 주사 한 대만 맞으면... 편해질 거야.\""
+    },
+    "day5_lunch_riin_block_2": {
+        "name": "나",
+        "text": "*리인이 주사기를 들고 있다.*",
+        "choices": [
+            "피해서 지나간다",
+            "리인과 대화한다"
+        ]
+    },
+    "day5_lunch_riin_dodge": {
+        "name": "나",
+        "text": "*리인을 피해 뛰었다. 주사기가 벽에 부딪혀 깨졌다.*"
+    },
+    "day5_lunch_riin_confront": {
+        "name": "강리인",
+        "text": "\"...알고 있었구나. 전부 다.\""
+    },
+    "day5_lunch_riin_confront_2": {
+        "name": "강리인",
+        "text": "\"...가. 나도... 이제 지쳤어.\""
+    },
+
+    "day5_lunch_escape_caught_sea": {
+        "name": "한세아",
+        "text": "\"잡았다. ...이제 어디 안 가지?\""
+    },
+    "day5_lunch_escape_caught_riin": {
+        "name": "강리인",
+        "text": "\"쉿. 금방 끝나. 아프지 않을 거야.\""
+    },
+    "day5_lunch_caught": {
+        "name": "나",
+        "text": "*...붙잡혔다.*"
+    },
+
+    "day5_lunch_continue": {
+        "name": "나",
+        "text": "*계단을 올라간다. 비상구가 보인다. 거의 다 왔다!*"
+    },
+    "day5_lunch_continue_2": {
+        "name": "나",
+        "text": "*...은수 선생님이 비상구 앞에 서 있다.*"
+    },
+    "day5_lunch_eunsu_final": {
+        "name": "박은수",
+        "text": "\"{name}. ...여기까지 왔구나.\""
+    },
+    "day5_lunch_eunsu_final_2": {
+        "name": "박은수",
+        "text": "\"선생님이랑 같이 있으면 안 돼? ...선생님은 너를 위해서 이 모든 걸 한 건데.\"",
+        "choices": [
+            "밀치고 나간다",
+            "은수와 함께 남는다"
+        ]
+    },
+    "day5_lunch_eunsu_break": {
+        "name": "나",
+        "text": "*은수 선생님을 지나쳐 비상구를 열었다. 찬 바람이 얼굴을 때린다.*"
+    },
+    "day5_lunch_eunsu_stay": {
+        "name": "박은수",
+        "text": "\"...고마워, {name}. 이게 맞는 거야.\""
+    },
+    "day5_lunch_eunsu_stay_2": {
+        "name": "나",
+        "text": "*은수 선생님이 내 손을 잡았다. ...되돌릴 수 없다.*"
+    },
+
+    "day5_lunch_breakthrough": {
+        "name": "나",
+        "text": "*비상구 너머로 빛이 보인다. 출구다.*"
+    },
+
+    "day5_lunch_end": {
+        "name": "나",
+        "text": "*...*"
+    }
+}

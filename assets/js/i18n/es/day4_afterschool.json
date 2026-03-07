@@ -1,0 +1,171 @@
+{
+    "day4_after_start": {
+        "name": "Yo",
+        "text": "*Después de clases. Este es el Día 4. Los 'cinco días' que mencionó Seolhwa... mañana es el último día.*"
+    },
+    "day4_after_start_2": {
+        "name": "Yo",
+        "text": "*Necesito actuar ahora.*"
+    },
+    "day4_after_choice": {
+        "name": "Yo",
+        "text": "*¿Adónde voy?*",
+        "choices": [
+            "Encontrar el sótano",
+            "Seguir a Sea",
+            "Recopilar las pruebas"
+        ]
+    },
+
+    "day4_after_basement": {
+        "name": "Yo",
+        "text": "*La pista de Seolhwa. 'El sótano.' Encontré unas escaleras detrás del edificio escolar.*"
+    },
+    "day4_after_basement_2": {
+        "name": "Yo",
+        "text": "*Una puerta oxidada. El candado está roto. Alguien ha estado aquí antes.*"
+    },
+    "day4_after_basement_3": {
+        "name": "Yo",
+        "text": "*...El sótano. Las luces fluorescentes parpadean. Un olor metálico.*"
+    },
+    "day4_after_basement_4": {
+        "name": "Yo",
+        "text": "*Varias camas. Equipo médico. Armarios llenos de productos químicos. Esto es... ¿un laboratorio?*"
+    },
+    "day4_after_basement_5": {
+        "name": "Yo",
+        "text": "*Gráficos en la pared. 'Registros de Respuesta del Sujeto'. Nombres y números. La mayoría marcados con una X roja.*"
+    },
+    "day4_after_basement_6": {
+        "name": "Yo",
+        "text": "*Documentos en un cajón del escritorio. 'Protocolo de Manipulación de Memoria'... 'Procedimientos de Adquisición de Estudiantes de Intercambio'... 'Aprobado por la Junta: Proyecto Nevergrad — Investigación de Reestructuración Cognitiva para Conformidad Completa'...*"
+    },
+    "day4_after_basement_7": {
+        "name": "Yo",
+        "text": "*...¡! Un sonido desde la esquina. Alguien está aquí.*"
+    },
+    "day4_after_basement_8": {
+        "name": "Choi Yuna",
+        "text": "\"...¿Senpai...? ¿Eres... realmente tú...?\""
+    },
+    "day4_after_basement_9": {
+        "name": "Yo",
+        "text": "*Yuna está desplomada en el suelo. Cara pálida. Marcas de aguja en su brazo.*",
+        "choices": [
+            "Llevarme a Yuna y salir",
+            "Esconderse por ahora"
+        ]
+    },
+    "day4_after_basement_rescue": {
+        "name": "Yo",
+        "text": "*Ayudé a Yuna a levantarse. Es pesada. Pero no puedo dejarla aquí.*"
+    },
+    "day4_after_basement_rescue_2": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai... gracias... tenemos que... salir...\""
+    },
+    "day4_after_basement_hide": {
+        "name": "Yo",
+        "text": "*Pasos. Me escondí detrás del armario.*"
+    },
+    "day4_after_basement_hide_2": {
+        "name": "Yo",
+        "text": "*Alguien revisó el sótano y se fue. Dejé a Yuna atrás. ...Lo siento, Yuna.*"
+    },
+    "day4_after_basement_escape": {
+        "name": "Yo",
+        "text": "*Salí del sótano. Me tiemblan las manos. Esta escuela... ¿qué es esta escuela?*"
+    },
+
+    "day4_after_sea_route": {
+        "name": "Han Sea",
+        "text": "\"{name}~ ¡Vamos juntos hoy también! ¿Adónde vamos~?\""
+    },
+    "day4_after_sea_2": {
+        "name": "Yo",
+        "text": "*Seguí a Sea. Entró en un aula vacía.*"
+    },
+    "day4_after_sea_3": {
+        "name": "Han Sea",
+        "text": "\"{name}. Tengo que decirte algo.\""
+    },
+    "day4_after_sea_4": {
+        "name": "Han Sea",
+        "text": "\"Yo... no me gusta que estés con otras personas. Estar a solas con Yuna. Estar con la profesora Eunsu.\""
+    },
+    "day4_after_sea_5": {
+        "name": "Han Sea",
+        "text": "\"Así que... mírame solo a mí. Solo a mí. ¿Está bien?\"",
+        "choices": [
+            "Está bien",
+            "Es un poco..."
+        ]
+    },
+    "day4_after_sea_accept": {
+        "name": "Han Sea",
+        "text": "\"Jeje... De verdad eres un cielo, {name}. Mi {name}.\""
+    },
+    "day4_after_sea_crack": {
+        "name": "Han Sea",
+        "text": "\"...A veces pienso. Si me fuera de aquí... ¿adónde iría?\""
+    },
+    "day4_after_sea_crack_2": {
+        "name": "Yo",
+        "text": "*Por un momento, el miedo cruzó los ojos de Sea. Emoción real. ¿Ella también está... atrapada en algo? Pero desapareció igual de rápido.*"
+    },
+    "day4_after_sea_accept_2": {
+        "name": "Yo",
+        "text": "*Sea me abrazó. Sus brazos se apretaron alrededor de mi espalda. ...Esto no es un abrazo.*"
+    },
+
+    "day4_after_evidence": {
+        "name": "Yo",
+        "text": "*Me quedé en el aula para organizar las pruebas que he reunido.*"
+    },
+    "day4_after_evidence_2": {
+        "name": "Yo",
+        "text": "*Fotos de la tarjeta de memoria, la lista de estudiantes de intercambio, 'Fecha de Procesamiento Completado'... El rompecabezas va tomando forma.*"
+    },
+    "day4_after_evidence_3": {
+        "name": "Yo",
+        "text": "*Revisé las fotos en la cámara de Yuna. Hay una foto de la entrada al sótano.*"
+    },
+    "day4_after_evidence_3_alt": {
+        "name": "Yo",
+        "text": "*Las pruebas no son suficientes, pero... puedo ver el contorno de lo que está pasando en esta escuela.*"
+    },
+    "day4_after_evidence_4": {
+        "name": "Yo",
+        "text": "*Los estudiantes de intercambio no 'desaparecieron' — fueron 'procesados'. Borrar sus memorias, convertirlos en estudiantes perfectamente obedientes... Una instalación financiada por la junta directiva. Toda esta escuela.*"
+    },
+    "day4_after_evidence_5": {
+        "name": "Park Eunsu",
+        "text": "\"...{name}. ¿Sigues aquí?\""
+    },
+    "day4_after_evidence_6": {
+        "name": "Yo",
+        "text": "*La profesora Eunsu está de pie en la puerta del aula. Su expresión es sombría.*",
+        "choices": [
+            "Huir",
+            "Quedarme quieto"
+        ]
+    },
+    "day4_after_evidence_run": {
+        "name": "Yo",
+        "text": "*Empujé un pupitre para bloquear el camino y corrí. Tacones repiqueteando detrás de mí. Pero logré salir.*"
+    },
+    "day4_after_evidence_caught": {
+        "name": "Park Eunsu",
+        "text": "\"¿Adónde crees que vas? ...No sin mi permiso.\""
+    },
+    "day4_after_evidence_caught_2": {
+        "name": "Park Eunsu",
+        "text": "\"Está bien, {name}. Yo me encargo de todo. ...Solo necesitas quedarte aquí.\""
+    },
+
+    "day4_after_end": {
+        "name": "Yo",
+        "text": "*El sol se pone. Mañana es el último día. Tengo que... salir de aquí.*"
+    }
+}

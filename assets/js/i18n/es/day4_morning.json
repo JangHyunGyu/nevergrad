@@ -1,0 +1,98 @@
+{
+    "day4_morning_start": {
+        "name": "Yo",
+        "text": "*Mañana del Día 4. La pesadilla de anoche me golpea en cuanto abro los ojos.*"
+    },
+    "day4_morning_start_2": {
+        "name": "Yo",
+        "text": "*Me miro al espejo. Tengo la cara pálida. Ojeras bajo los ojos.*"
+    },
+    "day4_morning_start_3": {
+        "name": "Yo",
+        "text": "*...Tengo que ir a la escuela. ¿Tengo que ir? ...¿Qué pasaría si no voy?*"
+    },
+
+    "day4_morning_gate": {
+        "name": "Yo",
+        "text": "*Puerta de la escuela. El ambiente es diferente al de ayer. Las expresiones de los estudiantes son... todas iguales.*"
+    },
+    "day4_morning_gate_2": {
+        "name": "Yo",
+        "text": "*Todos están sonriendo. La misma sonrisa exacta. Como si estuviera ensayada.*"
+    },
+    "day4_morning_gate_3": {
+        "name": "Yo",
+        "text": "*...La profesora Eunsu está parada en la puerta. Me estaba esperando.*"
+    },
+    "day4_morning_eunsu": {
+        "name": "Park Eunsu",
+        "text": "\"{name}, buenos días. Hoy te acompañaré yo misma. Caminemos juntos.\""
+    },
+    "day4_morning_eunsu_2": {
+        "name": "Park Eunsu",
+        "text": "\"¿Puedo tomarte de la mano? Te llevaré a la escuela sano y salvo.\"",
+        "choices": [
+            "Tomar su mano",
+            "Decir que estoy bien"
+        ]
+    },
+    "day4_morning_eunsu_comply": {
+        "name": "Yo",
+        "text": "*La mano de la profesora Eunsu está fría. ...Y es fuerte. No parece tener intención de soltar.*"
+    },
+    "day4_morning_eunsu_refuse": {
+        "name": "Park Eunsu",
+        "text": "\"...¿De verdad? Bueno, qué se le va a hacer.\""
+    },
+    "day4_morning_eunsu_refuse_2": {
+        "name": "Park Eunsu",
+        "text": "\"Pero {name}, es mejor que no andes solo por esta escuela. ...Es peligroso.\""
+    },
+
+    "day4_morning_classroom": {
+        "name": "Yo",
+        "text": "*Entré al aula. Un asiento está vacío.*"
+    },
+    "day4_morning_classroom_2": {
+        "name": "Yo",
+        "text": "*El asiento de Yuna. Vacío. Sin mochila. A nadie parece importarle.*"
+    },
+    "day4_morning_classroom_3": {
+        "name": "Yo",
+        "text": "*Sea se acerca.*"
+    },
+    "day4_morning_sea": {
+        "name": "Han Sea",
+        "text": "\"¡Buenos días, {name}! ¿Dormiste bien?\""
+    },
+    "day4_morning_sea_2": {
+        "name": "Han Sea",
+        "text": "\"...¿Yuna? Ah, se trasladó. Dicen que volvió a su antigua escuela.\""
+    },
+    "day4_morning_sea_3": {
+        "name": "Han Sea",
+        "text": "\"No te preocupes por eso. Me tienes a mí, ¿no~?\""
+    },
+
+    "day4_morning_class_start": {
+        "name": "Park Eunsu",
+        "text": "\"Bien, empecemos la clase. Hoy es una lección especial.\""
+    },
+    "day4_morning_class_2": {
+        "name": "Park Eunsu",
+        "text": "\"Hablemos de 'pertenecer'. Todos ustedes 'pertenecen' a esta escuela. Son parte de esta escuela.\""
+    },
+    "day4_morning_class_3": {
+        "name": "Park Eunsu",
+        "text": "\"Intentar dejar esta escuela... es como tirar a la basura una parte de ti mismo. ¿No es así, {name}?\""
+    },
+    "day4_morning_class_4": {
+        "name": "Yo",
+        "text": "*...La profesora me mira fijamente solo a mí. Todos los ojos del aula apuntan en mi dirección.*"
+    },
+
+    "day4_morning_end": {
+        "name": "Yo",
+        "text": "*La clase de la mañana terminó. No puedo respirar.*"
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "day2_after_start": {
+        "name": "Me",
+        "text": "*After school. The sunset is pretty again. As I pack my bag, Ms. Eunsu approaches.*"
+    },
+
+    "day2_after_eunsu_phone": {
+        "name": "Park Eunsu",
+        "text": "\"{name}, hold on. We've been having smartphone issues at school lately, so we're checking transfer students' phones.\""
+    },
+    "day2_after_eunsu_phone_2": {
+        "name": "Me",
+        "text": "\"...Phone inspection?\""
+    },
+    "day2_after_eunsu_phone_3": {
+        "name": "Park Eunsu",
+        "text": "\"Yes, just checking for harmful apps. It'll be quick. You can show me, right?\""
+    },
+    "day2_after_eunsu_phone_choice": {
+        "name": "Me",
+        "text": "*...If every student does it, there's no reason to refuse. But something feels off.*",
+        "choices": [
+            "\"Sure, here you go.\" (Hand over the phone)",
+            "\"Does everyone have to do this?\" (Refuse)"
+        ]
+    },
+    "day2_after_phone_comply": {
+        "name": "Park Eunsu",
+        "text": "\"Thanks~ I'll just take a quick look. ...All clean. Good student.\""
+    },
+    "day2_after_phone_comply_2": {
+        "name": "Me",
+        "text": "*She returned my phone. But... it looked like the Settings app was open. Probably just my imagination.*"
+    },
+    "day2_after_phone_refuse": {
+        "name": "Park Eunsu",
+        "text": "\"...Alright, it's your privacy. That's fine. I got ahead of myself. Sorry.\""
+    },
+    "day2_after_phone_refuse_2": {
+        "name": "Me",
+        "text": "*She walked away smiling. But that smile... looked disappointed? No, almost... angry?*"
+    },
+
+    "day2_after_choice": {
+        "name": "Me",
+        "text": "*After school — where to go?*",
+        "choices": [
+            "Spend time with Sea",
+            "Meet Yuna",
+            "Visit the nurse's office",
+            "Head home"
+        ]
+    },
+
+    "day2_after_sea": {
+        "name": "Han Sea",
+        "text": "\"You stayed again! I... love spending time alone with you the most, {name}.\""
+    },
+    "day2_after_sea_2": {
+        "name": "Han Sea",
+        "text": "\"Hey... you went to the nurse's office earlier, right? What did you talk about with Nurse Riin?\""
+    },
+    "day2_after_sea_3": {
+        "name": "Me",
+        "text": "\"Just a health checkup... How did you know?\""
+    },
+    "day2_after_sea_4": {
+        "name": "Me",
+        "text": "*Sea said \"Just because~\" with a smile. But behind those smiling eyes... something cold flickered. Must be my imagination.*"
+    },
+
+    "day2_after_yuna": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai, I... actually wanted to tell you something...\""
+    },
+    "day2_after_yuna_2": {
+        "name": "Me",
+        "text": "*Yuna was about to say something but kept looking around nervously. As if someone was watching.*"
+    },
+    "day2_after_yuna_3": {
+        "name": "Choi Yuna",
+        "text": "\"...Never mind! I'll tell you next time. Hehe, it's nothing!\""
+    },
+
+    "day2_after_riin": {
+        "name": "Kang Riin",
+        "text": "\"My, you're here again? Fufu, looks like you've taken a liking to the nurse's office.\""
+    },
+    "day2_after_riin_2": {
+        "name": "Me",
+        "text": "*While Nurse Riin makes tea, I notice a document on her desk. It reads 'Subject #13 - Progress Observation Report.'*"
+    },
+    "day2_after_riin_3": {
+        "name": "Me",
+        "text": "*\"What's that—\" I start to ask, but Nurse Riin quickly flips the paper over.*"
+    },
+    "day2_after_riin_4": {
+        "name": "Kang Riin",
+        "text": "\"Oh, that's just material for an academic paper. Teachers study too, you know. Here, drink your tea.\""
+    },
+
+    "day2_after_home_seolhwa": {
+        "name": "Me",
+        "text": "*About to step through the school gate, I feel eyes on my back. I turn around...*"
+    },
+    "day2_after_home_seolhwa_2": {
+        "name": "Me",
+        "text": "*It's Seolhwa. Standing inside the gate, watching me. The BGM cuts out. The silence is unnervingly complete.*"
+    },
+    "day2_after_home_seolhwa_3": {
+        "name": "Me",
+        "text": "*I blink and she's gone. ...What was that? My heart is pounding.*"
+    },
+
+    "day2_after_end": {
+        "name": "Me",
+        "text": "*I head home. Today was a bit... strange.*"
+    }
+}

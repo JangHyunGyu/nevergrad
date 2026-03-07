@@ -1,0 +1,141 @@
+{
+    "day3_night_start": {
+        "name": "나",
+        "text": "*집에 돌아왔다. 방에 누웠지만 잠이 오지 않는다.*"
+    },
+    "day3_night_phone": {
+        "name": "나",
+        "text": "*핸드폰을 확인한다. 메시지가 와있다.*"
+    },
+    "day3_night_phone_2": {
+        "name": "나",
+        "text": "*세아: '{name}, 오늘 재밌었어! 내일도 같이 가자♥'*"
+    },
+    "day3_night_phone_3": {
+        "name": "나",
+        "text": "*세아: '자기 전에 답장해줘'*\n*세아: '...'*\n*세아: '{name}?'*\n*세아: '왜 안 읽어?'*\n*세아: '자는 거지...?'*"
+    },
+    "day3_night_phone_4": {
+        "name": "나",
+        "text": "*...13분 사이에 5개. 핸드폰을 뒤집어 놓았다.*"
+    },
+
+    "day3_night_recall": {
+        "name": "나",
+        "text": "*오늘 일을 되짚어본다. 긁힌 사물함. 유나의 메모리카드. 잠긴 옥상 문.*"
+    },
+    "day3_night_recall_2": {
+        "name": "나",
+        "text": "*전학 온 지 3일. 이 학교에서 전학생이 '사라졌다'고 유나는 말했다.*"
+    },
+    "day3_night_recall_3": {
+        "name": "나",
+        "text": "*...이상하다. 이 학교에 오기 전의 기억이... 흐릿하다. 왜 여기로 전학을 온 거였지?*"
+    },
+    "day3_night_recall_4": {
+        "name": "나",
+        "text": "*부모님은? 연락이... 마지막으로 연락한 게 언제였지? 기억이... 안 난다.*"
+    },
+
+    "day3_night_stat_crack": {
+        "name": "나",
+        "text": "*...뭔가 이상하다. 이 감정은 '호감'이 아니다. 이건...*"
+    },
+    "day3_night_stat_crack_2": {
+        "name": "나",
+        "text": "*...공포?*"
+    },
+
+    "day3_night_nightmare": {
+        "name": "나",
+        "text": "*...어느새 잠이 들었나. 여긴... 학교? 어둡다.*"
+    },
+    "day3_night_nightmare_2": {
+        "name": "나",
+        "text": "*복도를 걷고 있다. 내 발소리만 울린다. 교실 문이 하나씩 열려있다.*"
+    },
+    "day3_night_nightmare_3": {
+        "name": "???",
+        "text": "\"...{name}은 내 거야.\""
+    },
+    "day3_night_nightmare_4": {
+        "name": "나",
+        "text": "*뒤를 돌아봤다. 아무도 없다. ...웃음소리가 들린다.*"
+    },
+    "day3_night_nightmare_5": {
+        "name": "???",
+        "text": "\"이제 어디 가려고? ...선생님이 허락 안 했는데.\""
+    },
+    "day3_night_nightmare_6": {
+        "name": "나",
+        "text": "*뛰기 시작했다. 복도가 끝없이 이어진다. 뒤에서 구두 소리가 따라온다.*"
+    },
+    "day3_night_nightmare_7": {
+        "name": "???",
+        "text": "\"약을 먹으면 편해질 텐데. 왜 도망가는 거야?\""
+    },
+    "day3_night_nightmare_8": {
+        "name": "나",
+        "text": "*막다른 길. 뒤를 돌아보면... 세 개의 그림자가 서 있다. 웃고 있다.*"
+    },
+
+    "day3_night_seolhwa": {
+        "name": "???",
+        "text": "\"...도망쳐.\""
+    },
+    "day3_night_seolhwa_2": {
+        "name": "이설화",
+        "text": "\"1년 전에... 나도 너처럼 여기 왔어.\""
+    },
+    "day3_night_seolhwa_3": {
+        "name": "이설화",
+        "text": "\"그 사람들을 믿으면 안 돼. 5일이야. 5일 안에... 여기서 나가야 해.\""
+    },
+    "day3_night_seolhwa_4": {
+        "name": "나",
+        "text": "*설화의 모습이 흐려진다. '5일'이라는 단어만 머릿속에 울린다.*"
+    },
+
+    "day3_night_wakeup": {
+        "name": "나",
+        "text": "*...! 눈을 떴다. 식은땀이 흠뻑이다.*"
+    },
+    "day3_night_wakeup_2": {
+        "name": "나",
+        "text": "*꿈...이었나? 설화라는 이름. 분명히 출석부에 있던... 아니, 없던 이름.*"
+    },
+    "day3_night_wakeup_3": {
+        "name": "나",
+        "text": "*'5일 안에 나가야 한다.' ...이 학교에서? ...아니면 이 모든 것에서?*"
+    },
+    "day3_night_choice": {
+        "name": "나",
+        "text": "*내일부터 어떻게 할까.*",
+        "choices": [
+            "진실을 파헤친다",
+            "모른 척한다"
+        ]
+    },
+    "day3_night_investigate": {
+        "name": "나",
+        "text": "*더 이상 눈을 감을 수 없다. 유나의 메모리카드, 서류, 사라진 전학생들... 모든 걸 연결해야 한다.*"
+    },
+    "day3_night_investigate_2": {
+        "name": "나",
+        "text": "*내일부터는 다르다. 이 학교의 진짜 모습을 밝혀낸다.*"
+    },
+    "day3_night_deny": {
+        "name": "나",
+        "text": "*...그냥 꿈이었을 거야. 내일 아침이 되면 다 괜찮아질 거야.*"
+    },
+    "day3_night_deny_2": {
+        "name": "나",
+        "text": "*이불을 덮고 눈을 감았다.*"
+    },
+    "day3_night_ghost_msg": "정말 괜찮을까?",
+
+    "day3_night_end": {
+        "name": "나",
+        "text": "*...3일차가 끝났다.*"
+    }
+}

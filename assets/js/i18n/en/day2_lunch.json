@@ -1,0 +1,77 @@
+{
+    "day2_lunch_start": {
+        "name": "Me",
+        "text": "*Lunchtime. Where should I eat today?*"
+    },
+    "day2_lunch_choice": {
+        "name": "Me",
+        "text": "*It's lunch.*",
+        "choices": [
+            "Eat with Sea",
+            "Meet Yuna at the library",
+            "Stop by the nurse's office",
+            "Eat alone on the rooftop"
+        ]
+    },
+
+    "day2_lunch_sea": {
+        "name": "Han Sea",
+        "text": "\"Hehe, I packed lunch again today! I noticed you liked the rolled egg yesterday, so I added extra.\""
+    },
+    "day2_lunch_sea_2": {
+        "name": "Han Sea",
+        "text": "\"Hey, {name}... do you hang out with a lot of other people besides me?\""
+    },
+    "day2_lunch_sea_3": {
+        "name": "Me",
+        "text": "*Sea gently grabs the back of my hand. Small, warm fingers.*"
+    },
+    "day2_lunch_sea_4": {
+        "name": "Me",
+        "text": "*\"...{name} is mine, you know.\" Sea whispered. I thought she was joking... but her expression was serious. Wait, she's smiling now, so it must be a joke... right?*"
+    },
+
+    "day2_lunch_yuna": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai! Look at the photos I took today, the hill behind school is so pretty...\""
+    },
+    "day2_lunch_yuna_2": {
+        "name": "Me",
+        "text": "*Scrolling through, I spot another odd photo. Stacks of documents in front of the faculty office. ...Why did she photograph that?*"
+    },
+    "day2_lunch_yuna_3": {
+        "name": "Choi Yuna",
+        "text": "\"Oh, that was an accident! I'll delete it, hehe!\""
+    },
+
+    "day2_lunch_riin": {
+        "name": "Kang Riin",
+        "text": "\"{name}, perfect timing. Your transfer student health checkup hasn't been done yet. Mind if I run some tests?\""
+    },
+    "day2_lunch_riin_2": {
+        "name": "Kang Riin",
+        "text": "\"Blood pressure, eyesight, weight... fufu, I'll check a few things. Could you unbutton your shirt a little?\""
+    },
+    "day2_lunch_riin_3": {
+        "name": "Me",
+        "text": "*For a health checkup... her questions were a bit odd. Sleep patterns, drug allergies, family medical history. Does a school nurse really ask all this?*"
+    },
+
+    "day2_lunch_rooftop": {
+        "name": "Me",
+        "text": "*Walking down the corridor toward the rooftop, I hear a voice from below the stairs.*"
+    },
+    "day2_lunch_rooftop_2": {
+        "name": "Me",
+        "text": "*...It's Ms. Eunsu's voice. \"...The subject's condition is stable. We can proceed as planned...\" She seems to be on the phone. What's she talking about?*"
+    },
+    "day2_lunch_rooftop_3": {
+        "name": "Me",
+        "text": "*I made a noise and she quickly hung up. Probably just a work call.*"
+    },
+
+    "day2_lunch_end": {
+        "name": "Me",
+        "text": "*Time for afternoon classes.*"
+    }
+}

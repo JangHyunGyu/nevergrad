@@ -1,0 +1,103 @@
+{
+    "day4_night_start": {
+        "name": "Moi",
+        "text": "*À la maison. Porte verrouillée. Rideaux tirés.*"
+    },
+    "day4_night_start_2": {
+        "name": "Moi",
+        "text": "*Demain c'est le Jour 5. La date limite dont Seolhwa a parlé. ...Que se passe-t-il après cinq jours ?*"
+    },
+    "day4_night_start_3": {
+        "name": "Moi",
+        "text": "*Mon téléphone sonne.*"
+    },
+
+    "day4_night_phone": {
+        "name": "Moi",
+        "text": "*Sea : '{name}, on marche ensemble demain ! Promis ?'*\n*Sea : 'Promis.'*\n*Sea : 'Promis.'*"
+    },
+    "day4_night_phone_2": {
+        "name": "Moi",
+        "text": "*Mme Eunsu : 'Tu pourrais venir un peu plus tôt demain ? J'ai quelque chose à te dire.'*"
+    },
+    "day4_night_phone_3": {
+        "name": "Moi",
+        "text": "*...Je voudrais éteindre le téléphone. Mais ça les rendrait encore plus soupçonneux.*"
+    },
+
+    "day4_night_plan": {
+        "name": "Moi",
+        "text": "*Récapitulons. Cette école fait des expériences sur les élèves transférés.*"
+    },
+    "day4_night_plan_2": {
+        "name": "Moi",
+        "text": "*Mme Eunsu 'gère' les élèves transférés, Riin administre les drogues, et Sea... la surveillance ? Ou quelque chose de plus ?*"
+    },
+    "day4_night_plan_branch": {
+        "name": "Moi",
+        "text": "*J'ai assez de preuves. La carte mémoire, les photos de documents, le laboratoire souterrain... Je dois juste faire parvenir tout ça à l'extérieur.*"
+    },
+    "day4_night_plan_branch_alt": {
+        "name": "Moi",
+        "text": "*Pas assez de preuves. Mais il n'y a plus de temps à perdre.*"
+    },
+    "day4_night_plan_3": {
+        "name": "Moi",
+        "text": "*Demain. Qu'est-ce que je fais ?*"
+    },
+    "day4_night_plan_choice": {
+        "name": "Moi",
+        "text": "*Je finalise mon plan.*",
+        "choices": [
+            "S'échapper de l'école",
+            "Exposer les preuves publiquement",
+            "Les confronter directement"
+        ]
+    },
+    "day4_night_plan_escape": {
+        "name": "Moi",
+        "text": "*Demain, je trouverai une faille et je sortirai de l'école. Il faut que j'emmène Yuna aussi.*"
+    },
+    "day4_night_plan_expose": {
+        "name": "Moi",
+        "text": "*Mettre les preuves en ligne. Signaler à la police. Faire connaître au monde la vérité sur cette école.*"
+    },
+    "day4_night_plan_confront": {
+        "name": "Moi",
+        "text": "*Mme Eunsu, Riin, Sea... Je les affronterai en face. Leur demander pourquoi elles font ça.*"
+    },
+
+    "day4_night_seolhwa": {
+        "name": "Lee Seolhwa",
+        "text": "\"...On se retrouve.\""
+    },
+    "day4_night_seolhwa_2": {
+        "name": "Lee Seolhwa",
+        "text": "\"J'étais... le Sujet 07, il y a un an. Le seul cas où l'expérience a échoué.\""
+    },
+    "day4_night_seolhwa_3": {
+        "name": "Lee Seolhwa",
+        "text": "\"La manipulation de la mémoire... a eu l'effet inverse. Les autres ont perdu leurs souvenirs, mais moi, j'ai fini par me souvenir de tout.\""
+    },
+    "day4_night_seolhwa_4": {
+        "name": "Lee Seolhwa",
+        "text": "\"Alors ils m'ont 'traitée'. Officiellement, un transfert. En réalité...\""
+    },
+    "day4_night_seolhwa_5": {
+        "name": "Lee Seolhwa",
+        "text": "\"...'Le traitement final' a lieu la nuit du Jour 5. Tu dois sortir avant ça. S'il te plaît.\""
+    },
+    "day4_night_seolhwa_6": {
+        "name": "Lee Seolhwa",
+        "text": "\"Et... protège Yuna. Elle a été entraînée là-dedans à cause de moi.\""
+    },
+    "day4_night_seolhwa_7": {
+        "name": "Moi",
+        "text": "*...J'ai ouvert les yeux. 4 heures du matin. Il fait encore noir dehors. ...Demain est arrivé.*"
+    },
+
+    "day4_night_end": {
+        "name": "Moi",
+        "text": "*Jour 5. Le dernier jour.*"
+    }
+}

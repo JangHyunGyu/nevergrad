@@ -1,0 +1,98 @@
+{
+    "day4_morning_start": {
+        "name": "Moi",
+        "text": "*Matin du Jour 4. Le cauchemar de la nuit dernière me frappe dès que j'ouvre les yeux.*"
+    },
+    "day4_morning_start_2": {
+        "name": "Moi",
+        "text": "*Je me regarde dans le miroir. Mon visage est pâle. Des cernes sous les yeux.*"
+    },
+    "day4_morning_start_3": {
+        "name": "Moi",
+        "text": "*...Je dois aller à l'école. Vraiment ? ...Que se passe-t-il si je n'y vais pas ?*"
+    },
+
+    "day4_morning_gate": {
+        "name": "Moi",
+        "text": "*Portail de l'école. L'atmosphère est différente d'hier. Les expressions des élèves sont... toutes les mêmes.*"
+    },
+    "day4_morning_gate_2": {
+        "name": "Moi",
+        "text": "*Tout le monde sourit. Exactement le même sourire. Comme si c'était répété.*"
+    },
+    "day4_morning_gate_3": {
+        "name": "Moi",
+        "text": "*...Mme Eunsu est debout au portail. Elle m'attendait.*"
+    },
+    "day4_morning_eunsu": {
+        "name": "Park Eunsu",
+        "text": "\"{name}, bonjour. Je vais t'accompagner moi-même aujourd'hui. Marchons ensemble.\""
+    },
+    "day4_morning_eunsu_2": {
+        "name": "Park Eunsu",
+        "text": "\"Je peux te prendre la main ? Je vais te conduire à l'école en toute sécurité.\"",
+        "choices": [
+            "Prendre sa main",
+            "Dire que ça va"
+        ]
+    },
+    "day4_morning_eunsu_comply": {
+        "name": "Moi",
+        "text": "*La main de Mme Eunsu est froide. ...Et forte. Elle ne semble pas avoir l'intention de lâcher.*"
+    },
+    "day4_morning_eunsu_refuse": {
+        "name": "Park Eunsu",
+        "text": "\"...Ah bon ? Tant pis.\""
+    },
+    "day4_morning_eunsu_refuse_2": {
+        "name": "Park Eunsu",
+        "text": "\"Mais {name}, il vaut mieux ne pas se promener seul dans cette école. ...C'est dangereux.\""
+    },
+
+    "day4_morning_classroom": {
+        "name": "Moi",
+        "text": "*J'entre dans la salle de classe. Une place est vide.*"
+    },
+    "day4_morning_classroom_2": {
+        "name": "Moi",
+        "text": "*La place de Yuna. Vide. Pas de sac. Personne ne semble s'en soucier.*"
+    },
+    "day4_morning_classroom_3": {
+        "name": "Moi",
+        "text": "*Sea s'approche.*"
+    },
+    "day4_morning_sea": {
+        "name": "Han Sea",
+        "text": "\"Bonjour, {name} ! Tu as bien dormi ?\""
+    },
+    "day4_morning_sea_2": {
+        "name": "Han Sea",
+        "text": "\"...Yuna ? Oh, elle a été transférée. Elle est retournée dans son ancienne école, paraît-il.\""
+    },
+    "day4_morning_sea_3": {
+        "name": "Han Sea",
+        "text": "\"T'inquiète pas pour ça. Tu m'as, moi, non~\""
+    },
+
+    "day4_morning_class_start": {
+        "name": "Park Eunsu",
+        "text": "\"Bien, commençons le cours. Aujourd'hui, c'est une leçon spéciale.\""
+    },
+    "day4_morning_class_2": {
+        "name": "Park Eunsu",
+        "text": "\"Parlons de 'l'appartenance'. Vous 'appartenez' tous à cette école. Vous faites partie de cette école.\""
+    },
+    "day4_morning_class_3": {
+        "name": "Park Eunsu",
+        "text": "\"Essayer de quitter cette école... c'est comme jeter une part de soi-même. N'est-ce pas, {name} ?\""
+    },
+    "day4_morning_class_4": {
+        "name": "Moi",
+        "text": "*...Le professeur ne regarde que moi. Tous les regards de la classe sont braqués sur moi.*"
+    },
+
+    "day4_morning_end": {
+        "name": "Moi",
+        "text": "*Le cours du matin est terminé. Je ne peux plus respirer.*"
+    }
+}

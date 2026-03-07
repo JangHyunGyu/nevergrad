@@ -1,0 +1,112 @@
+{
+    "day4_lunch_start": {
+        "name": "나",
+        "text": "*점심시간. 유나의 빈 자리가 계속 눈에 밟힌다.*"
+    },
+    "day4_lunch_start_2": {
+        "name": "나",
+        "text": "*'전학 갔다'는 말을 믿을 수 없다. 어제까지 여기 있었는데.*"
+    },
+    "day4_lunch_choice": {
+        "name": "나",
+        "text": "*지금 뭘 해야 하지?*",
+        "choices": [
+            "유나를 찾는다",
+            "보건실을 조사한다",
+            "옥상으로 간다"
+        ]
+    },
+
+    "day4_lunch_search_yuna": {
+        "name": "나",
+        "text": "*복도를 돌아다닌다. 유나가 자주 가던 곳... 사진부 교실.*"
+    },
+    "day4_lunch_search_2": {
+        "name": "나",
+        "text": "*사진부 교실 문이 열려있다. 안에 아무도 없다.*"
+    },
+    "day4_lunch_search_3": {
+        "name": "나",
+        "text": "*유나의 사물함. 열어봤다. 텅 비어있다... 하나 빼고.*"
+    },
+    "day4_lunch_search_4": {
+        "name": "나",
+        "text": "*소형 카메라 하나. 사물함 구석에 숨겨져 있었다. 유나가 남긴 것이 분명하다.*"
+    },
+    "day4_lunch_search_5": {
+        "name": "나",
+        "text": "*카메라를 주머니에 넣었다. ...갑자기 복도에서 발소리.*"
+    },
+    "day4_lunch_search_6": {
+        "name": "나",
+        "text": "*뒤돌아봤다. 복도 끝에 누군가 서 있다가... 사라졌다. 서둘러 교실로 돌아간다.*"
+    },
+
+    "day4_lunch_nurse": {
+        "name": "강리인",
+        "text": "\"어머, {name}. 또 왔네. 오늘은 어디가 아파?\""
+    },
+    "day4_lunch_nurse_2": {
+        "name": "나",
+        "text": "*보건실 한쪽에 잠긴 캐비넷이 보인다. 이전에는 없었던 자물쇠가 달려있다.*"
+    },
+    "day4_lunch_nurse_3": {
+        "name": "강리인",
+        "text": "\"어제 마신 음료 효과는 어때? ...잘 자고 있어?\""
+    },
+    "day4_lunch_nurse_3_alt": {
+        "name": "강리인",
+        "text": "\"요즘 잠은 잘 자? 좀 피곤해 보여서.\""
+    },
+    "day4_lunch_nurse_4": {
+        "name": "나",
+        "text": "*리인에게 유나에 대해 물어볼까?*",
+        "choices": [
+            "유나가 어디 갔는지 묻는다",
+            "아무 말 하지 않는다"
+        ]
+    },
+    "day4_lunch_nurse_confront": {
+        "name": "강리인",
+        "text": "\"유나? ...아, 그 애. 전학 갔다고 했잖아.\""
+    },
+    "day4_lunch_nurse_confront_2": {
+        "name": "강리인",
+        "text": "\"...왜 그렇게 쳐다봐? {name}, 너 혹시 무슨 이상한 생각 하고 있는 건 아니지?\""
+    },
+    "day4_lunch_nurse_pretend": {
+        "name": "나",
+        "text": "*아무 말도 하지 않았다. 리인이 웃으며 비타민을 건넨다.*"
+    },
+    "day4_lunch_nurse_pretend_2": {
+        "name": "강리인",
+        "text": "\"여기, 비타민이야. ...이번엔 꼭 먹어줘?\""
+    },
+
+    "day4_lunch_rooftop": {
+        "name": "나",
+        "text": "*옥상. 어제 유나와 왔던 곳. 바람이 차갑다.*"
+    },
+    "day4_lunch_rooftop_2": {
+        "name": "나",
+        "text": "*난간 밑에 뭔가 새겨져 있다. 칼로 긁은 듯한 글씨.*"
+    },
+    "day4_lunch_rooftop_3": {
+        "name": "나",
+        "text": "*'여기서 나가는 방법은 하나. — 이설화' ...설화가 남긴 것이다.*"
+    },
+    "day4_lunch_rooftop_4": {
+        "name": "나",
+        "text": "*...방법은 하나? 어떤 방법?*"
+    },
+    "day4_lunch_ghost": "지하",
+    "day4_lunch_rooftop_5": {
+        "name": "나",
+        "text": "*갑자기 추워졌다. 서둘러 내려간다.*"
+    },
+
+    "day4_lunch_end": {
+        "name": "나",
+        "text": "*오후 수업이 시작된다. 심장이 터질 것 같다.*"
+    }
+}

@@ -26,6 +26,14 @@
         "name": "私",
         "text": "*リインが薄紫色の液体が入ったカップを渡してくる。……ちょっと変な匂いがするんだけど。*"
     },
+    "day3_after_riin_name": {
+        "name": "保健教師",
+        "text": "「……ねえ、{name}。私たち、もう結構仲良くなったと思わない？」"
+    },
+    "day3_after_riin_name_2": {
+        "name": "保健教師",
+        "text": "「先生じゃなくて……リインって呼んで。二人きりの時は。」"
+    },
     "day3_after_riin_choice": {
         "name": "私",
         "text": "*飲もうか？*",
@@ -36,7 +44,7 @@
     },
     "day3_after_riin_flicker": "逃げて",
     "day3_after_riin_drink": {
-        "name": "保健教師",
+        "name": "リイン",
         "text": "\"いい子ね。すぐに効果が出るわよ。\""
     },
     "day3_after_riin_drink_2": {
@@ -48,11 +56,11 @@
         "text": "*……いや、大丈夫だ。ただ疲れているだけだろう。*"
     },
     "day3_after_riin_refuse": {
-        "name": "保健教師",
+        "name": "リイン",
         "text": "\"……そう？ 残念ね。\""
     },
     "day3_after_riin_refuse_2": {
-        "name": "保健教師",
+        "name": "リイン",
         "text": "\"いいわ、今度飲めばいいもの。……今度は必ず飲んでくれる？\""
     },
 
@@ -107,11 +115,19 @@
     },
     "day3_after_eunsu_2": {
         "name": "私",
-        "text": "*ウンス先生が書類の山に埋もれている。隙間から何かが見える。*"
+        "text": "*先生が書類の山に埋もれている。隙間から何かが見える。*"
     },
     "day3_after_eunsu_3": {
         "name": "担任教師",
         "text": "\"ちょっと待ってね、これだけ整理したら……あ、コーヒーでも一杯出そうか？\""
+    },
+    "day3_after_eunsu_name": {
+        "name": "担任教師",
+        "text": "「……{name}。二人きりの時は、先生って呼ばなくていいよ。」"
+    },
+    "day3_after_eunsu_name_2": {
+        "name": "担任教師",
+        "text": "「ウンスって呼んで。……ウンス先生でもいいけど。」"
     },
     "day3_after_eunsu_4": {
         "name": "私",
@@ -134,11 +150,11 @@
         "text": "*僕の名前もある。日付の隣の欄は……まだ空白だ。*"
     },
     "day3_after_eunsu_peek_3": {
-        "name": "担任教師",
+        "name": "ウンス",
         "text": "\"……何を見ているの？\""
     },
     "day3_after_eunsu_ignore": {
-        "name": "担任教師",
+        "name": "ウンス",
         "text": "\"ありがとう、待っていてくれて。はい、コーヒーどうぞ。\""
     },
     "day3_after_eunsu_ignore_2": {

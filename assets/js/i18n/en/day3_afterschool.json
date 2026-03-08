@@ -26,6 +26,14 @@
         "name": "Me",
         "text": "*Riin hands me a cup with a pale purple liquid. ...It smells a little odd.*"
     },
+    "day3_after_riin_name": {
+        "name": "School Nurse",
+        "text": "\"...Hey, {name}. Don't you think we've gotten pretty close by now?\""
+    },
+    "day3_after_riin_name_2": {
+        "name": "School Nurse",
+        "text": "\"Don't call me 'nurse'... Call me Riin. When it's just the two of us.\""
+    },
     "day3_after_riin_choice": {
         "name": "Me",
         "text": "*Should I drink it?*",
@@ -36,7 +44,7 @@
     },
     "day3_after_riin_flicker": "Run away",
     "day3_after_riin_drink": {
-        "name": "School Nurse",
+        "name": "Riin",
         "text": "\"Good. It'll take effect soon.\""
     },
     "day3_after_riin_drink_2": {
@@ -48,11 +56,11 @@
         "text": "*...No, I'm fine. Just tired, that's all.*"
     },
     "day3_after_riin_refuse": {
-        "name": "School Nurse",
+        "name": "Riin",
         "text": "\"...Is that so? What a shame.\""
     },
     "day3_after_riin_refuse_2": {
-        "name": "School Nurse",
+        "name": "Riin",
         "text": "\"That's okay, you can drink it next time. ...You will drink it next time, right?\""
     },
 
@@ -107,11 +115,19 @@
     },
     "day3_after_eunsu_2": {
         "name": "Me",
-        "text": "*Ms. Eunsu is buried in a pile of documents. I can see something through the gaps.*"
+        "text": "*The teacher is buried in a pile of documents. I can see something through the gaps.*"
     },
     "day3_after_eunsu_3": {
         "name": "Homeroom Teacher",
         "text": "\"Wait just a moment, let me finish this... Oh, want some coffee?\""
+    },
+    "day3_after_eunsu_name": {
+        "name": "Homeroom Teacher",
+        "text": "\"...{name}. When it's just us, you don't have to call me 'teacher'.\""
+    },
+    "day3_after_eunsu_name_2": {
+        "name": "Homeroom Teacher",
+        "text": "\"Call me Eunsu. ...Or 'Ms. Eunsu' if that's easier.\""
     },
     "day3_after_eunsu_4": {
         "name": "Me",
@@ -134,11 +150,11 @@
         "text": "*My name is here too. The column next to the date is... still blank.*"
     },
     "day3_after_eunsu_peek_3": {
-        "name": "Homeroom Teacher",
+        "name": "Eunsu",
         "text": "\"...What are you looking at?\""
     },
     "day3_after_eunsu_ignore": {
-        "name": "Homeroom Teacher",
+        "name": "Eunsu",
         "text": "\"Thanks for waiting. Here, coffee.\""
     },
     "day3_after_eunsu_ignore_2": {

@@ -26,6 +26,14 @@
         "name": "나",
         "text": "*리인이 연보라색 액체가 담긴 컵을 건넨다. ...약간 이상한 냄새가 나는데.*"
     },
+    "day3_after_riin_name": {
+        "name": "보건교사",
+        "text": "\"...있잖아, {name}. 우리 이제 좀 친해진 거 아니야?\""
+    },
+    "day3_after_riin_name_2": {
+        "name": "보건교사",
+        "text": "\"선생님 말고... 리인이라고 불러. 둘만 있을 때는.\""
+    },
     "day3_after_riin_choice": {
         "name": "나",
         "text": "*마실까?*",
@@ -36,7 +44,7 @@
     },
     "day3_after_riin_flicker": "도망쳐",
     "day3_after_riin_drink": {
-        "name": "보건교사",
+        "name": "리인",
         "text": "\"착하네. 금방 효과가 날 거야.\""
     },
     "day3_after_riin_drink_2": {
@@ -48,11 +56,11 @@
         "text": "*...아니, 괜찮다. 그냥 피곤한 거겠지.*"
     },
     "day3_after_riin_refuse": {
-        "name": "보건교사",
+        "name": "리인",
         "text": "\"...그래? 아쉽네.\""
     },
     "day3_after_riin_refuse_2": {
-        "name": "보건교사",
+        "name": "리인",
         "text": "\"괜찮아, 다음에 마시면 되지. ...다음에는 꼭 마셔줘?\""
     },
 
@@ -107,11 +115,19 @@
     },
     "day3_after_eunsu_2": {
         "name": "나",
-        "text": "*은수 선생님이 서류 더미에 파묻혀 있다. 틈새로 뭔가 보인다.*"
+        "text": "*선생님이 서류 더미에 파묻혀 있다. 틈새로 뭔가 보인다.*"
     },
     "day3_after_eunsu_3": {
         "name": "담임교사",
         "text": "\"잠깐 기다려줘, 이것만 정리하면... 아, 커피 한 잔 줄까?\""
+    },
+    "day3_after_eunsu_name": {
+        "name": "담임교사",
+        "text": "\"...{name}. 둘만 있을 땐 선생님이라고 안 해도 돼.\""
+    },
+    "day3_after_eunsu_name_2": {
+        "name": "담임교사",
+        "text": "\"은수라고 불러. ...부담스러우면 은수 선생님도 괜찮고.\""
     },
     "day3_after_eunsu_4": {
         "name": "나",
@@ -134,11 +150,11 @@
         "text": "*내 이름도 있다. 날짜 옆 칸은... 아직 비어있다.*"
     },
     "day3_after_eunsu_peek_3": {
-        "name": "담임교사",
+        "name": "은수",
         "text": "\"...뭐 보고 있어?\""
     },
     "day3_after_eunsu_ignore": {
-        "name": "담임교사",
+        "name": "은수",
         "text": "\"고마워, 기다려줘서. 자, 여기 커피.\""
     },
     "day3_after_eunsu_ignore_2": {

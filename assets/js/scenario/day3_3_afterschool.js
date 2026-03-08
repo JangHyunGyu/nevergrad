@@ -46,8 +46,17 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_3"
     },
     "day3_after_riin_3": {
-        next: "day3_after_riin_choice",
+        next: "day3_after_riin_name",
         stats: { riin: { affinity: 5 } }
+    },
+    "day3_after_riin_name": {
+        character: "riin_smile",
+        next: "day3_after_riin_name_2"
+    },
+    "day3_after_riin_name_2": {
+        character: "riin_seductive",
+        next: "day3_after_riin_choice",
+        setFlags: ["knows_riin_name"]
     },
     "day3_after_riin_choice": {
         // ★ FLICKER GLITCH: 첫 번째 선택지가 0.1초간 "도망쳐" 로 깜빡임
@@ -149,8 +158,17 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_eunsu_3": {
         character: "eunsu_close",
-        next: "day3_after_eunsu_4",
+        next: "day3_after_eunsu_name",
         stats: { eunsu: { affinity: 5 } }
+    },
+    "day3_after_eunsu_name": {
+        character: "eunsu_shy",
+        next: "day3_after_eunsu_name_2"
+    },
+    "day3_after_eunsu_name_2": {
+        character: "eunsu_gentle",
+        next: "day3_after_eunsu_4",
+        setFlags: ["knows_eunsu_name"]
     },
     "day3_after_eunsu_4": {
         // 플레이어가 서류를 훔쳐봄

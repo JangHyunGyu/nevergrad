@@ -26,6 +26,14 @@
         "name": "Yo",
         "text": "*Riin me pasa una taza con un líquido violeta pálido. ...Huele un poco raro.*"
     },
+    "day3_after_riin_name": {
+        "name": "Enfermera",
+        "text": "\"...Oye, {name}. ¿No crees que ya nos hemos hecho bastante cercanos?\""
+    },
+    "day3_after_riin_name_2": {
+        "name": "Enfermera",
+        "text": "\"No me llames 'enfermera'... Llámame Riin. Cuando estemos solos.\""
+    },
     "day3_after_riin_choice": {
         "name": "Yo",
         "text": "*¿Debería bebérmelo?*",
@@ -36,7 +44,7 @@
     },
     "day3_after_riin_flicker": "Huye",
     "day3_after_riin_drink": {
-        "name": "Enfermera",
+        "name": "Riin",
         "text": "\"Bien. Sentirás el efecto pronto.\""
     },
     "day3_after_riin_drink_2": {
@@ -48,11 +56,11 @@
         "text": "*...No, estoy bien. Solo cansado, eso es todo.*"
     },
     "day3_after_riin_refuse": {
-        "name": "Enfermera",
+        "name": "Riin",
         "text": "\"...¿En serio? Qué lástima.\""
     },
     "day3_after_riin_refuse_2": {
-        "name": "Enfermera",
+        "name": "Riin",
         "text": "\"Está bien, lo puedes beber la próxima vez. ...Lo beberás la próxima vez, ¿verdad?\""
     },
 
@@ -107,11 +115,19 @@
     },
     "day3_after_eunsu_2": {
         "name": "Yo",
-        "text": "*La profesora Eunsu está enterrada entre un montón de documentos. Puedo ver algo entre los huecos.*"
+        "text": "*La profesora está enterrada entre un montón de documentos. Puedo ver algo entre los huecos.*"
     },
     "day3_after_eunsu_3": {
         "name": "Tutora",
         "text": "\"Espera un momento, déjame terminar esto... Oh, ¿quieres un café?\""
+    },
+    "day3_after_eunsu_name": {
+        "name": "Tutora",
+        "text": "\"...{name}. Cuando estemos solos, no tienes que llamarme 'profesora'.\""
+    },
+    "day3_after_eunsu_name_2": {
+        "name": "Tutora",
+        "text": "\"Llámame Eunsu. ...O 'Srta. Eunsu' si te resulta más fácil.\""
     },
     "day3_after_eunsu_4": {
         "name": "Yo",
@@ -134,11 +150,11 @@
         "text": "*Mi nombre también está aquí. La columna junto a la fecha está... aún en blanco.*"
     },
     "day3_after_eunsu_peek_3": {
-        "name": "Tutora",
+        "name": "Eunsu",
         "text": "\"...¿Qué estás mirando?\""
     },
     "day3_after_eunsu_ignore": {
-        "name": "Tutora",
+        "name": "Eunsu",
         "text": "\"Gracias por esperar. Aquí tienes, café.\""
     },
     "day3_after_eunsu_ignore_2": {

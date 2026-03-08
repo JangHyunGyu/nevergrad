@@ -1,388 +1,372 @@
-# Nevergrad - Copy & Paste Prompts
+# Nevergrad - 복사 & 붙여넣기 프롬프트
 
 > 각 프롬프트는 그대로 AI에 붙여넣기하면 됩니다.
 > 캐릭터는 4가지 그림체 중 하나를 골라서 통일하세요.
 
 ---
 
-## STYLE GUIDE — 캐릭터 그림체 4종
+## 그림체 가이드 — 캐릭터 그림체 4종
 
-아래 프롬프트에서 `[STYLE]` 부분을 원하는 그림체로 교체하세요.
+아래 프롬프트에서 `[스타일]` 부분을 원하는 그림체로 교체하세요.
 
-**A. 실사 (Photorealistic)**
+**채택: DDLC(두근두근 문예부) 스타일**
 ```
-photorealistic, ultra detailed, studio photography lighting, skin texture, soft bokeh background, 8k resolution
-```
-
-**B. 반실사 (Semi-realistic)**
-```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism
-```
-
-**C. 캐주얼 (Casual / Flat)**
-```
-modern casual anime illustration, clean flat coloring, minimal shading, bright vivid colors, webtoon style, cute proportions
-```
-
-**D. 음영 (Cel-shading / Heavy Shadow)**
-```
-anime cel-shaded illustration, dramatic shadow contrast, bold lineart, high contrast lighting, visual novel CG style, rich color palette
+일본 비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신 비율, DDLC 스타일, 연애 시뮬레이션 게임 아트, 단순한 흰색 배경
 ```
 
 ---
 
-아래 모든 프롬프트는 **B. 반실사** 스타일로 작성되어 있습니다.
-다른 스타일을 원하면 각 프롬프트 맨 앞의 스타일 부분만 교체하세요.
+아래 모든 프롬프트는 **DDLC(두근두근 문예부) 스타일**로 작성되어 있습니다.
 
 ---
 
-## 1. CHARACTERS — Park Eunsu (박은수)
+## 1. 캐릭터 — 박은수 (담임교사)
 
 ### eunsu_normal.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, beautiful Korean woman mid-20s, long straight black hair past shoulders, thin-framed glasses, cream blouse with navy cardigan, teacher ID badge, neutral calm expression, slight head tilt, professional composure, bust-up portrait, transparent background, soft lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 아름다운 한국인 여성 20대 중반, 풍만한 글래머 체형, 어깨 아래로 내려오는 긴 생머리 흑발, 얇은 테 안경, 크림색 블라우스에 네이비 가디건, 교사 명찰, 차분한 중립 표정, 약간 고개를 기울인 자세, 전문적이고 침착한 분위기, 상반신 초상화, 투명 배경, 부드러운 조명
 ```
 
 ### eunsu_smile.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, beautiful Korean woman mid-20s, long straight black hair past shoulders, thin-framed glasses, cream blouse with navy cardigan, teacher ID badge, warm motherly smile, eyes slightly closed with happiness, gentle and inviting expression, bust-up portrait, transparent background, soft pink warm lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 아름다운 한국인 여성 20대 중반, 풍만한 글래머 체형, 긴 생머리 흑발, 얇은 테 안경, 크림색 블라우스에 네이비 가디건, 교사 명찰, 따뜻한 모성적 미소, 행복하게 살짝 감은 눈, 다정하고 포근한 표정, 상반신 초상화, 투명 배경, 부드러운 핑크톤 따뜻한 조명
 ```
 
 ### eunsu_gentle.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, beautiful Korean woman mid-20s, long straight black hair past shoulders, thin-framed glasses, cream blouse with navy cardigan, tender caring expression, hand placed near chest, eyes full of warmth and affection, soft glow behind, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 아름다운 한국인 여성 20대 중반, 풍만한 글래머 체형, 긴 생머리 흑발, 얇은 테 안경, 크림색 블라우스에 네이비 가디건, 부드럽고 자상한 표정, 가슴 근처에 손을 얹은 자세, 따뜻함과 애정이 가득한 눈빛, 뒤에서 은은한 빛, 상반신 초상화, 투명 배경
 ```
 
 ### eunsu_shy.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, beautiful Korean woman mid-20s, long straight black hair past shoulders, thin-framed glasses, cream blouse with navy cardigan, light blush on cheeks, averting eyes shyly, hand touching hair nervously, flustered expression, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 아름다운 한국인 여성 20대 중반, 풍만한 글래머 체형, 긴 생머리 흑발, 얇은 테 안경, 크림색 블라우스에 네이비 가디건, 양 볼에 옅은 홍조, 수줍게 시선을 피하는 모습, 긴장하며 머리카락을 만지는 손, 당황한 표정, 상반신 초상화, 투명 배경
 ```
 
 ### eunsu_close.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, beautiful Korean woman mid-20s, long straight black hair past shoulders, thin-framed glasses, extreme close-up face filling frame, intimate eye contact, slight knowing smile, shallow depth of field, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 아름다운 한국인 여성 20대 중반, 풍만한 글래머 체형, 긴 생머리 흑발, 얇은 테 안경, 프레임 가득 채우는 극단적 클로즈업, 친밀한 눈맞춤, 의미심장한 미소, 얕은 피사계 심도, 상반신 초상화, 투명 배경
 ```
 
 ### eunsu_cold.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, beautiful Korean woman mid-20s, long straight black hair past shoulders, thin-framed glasses, cream blouse with navy cardigan, cold stern expression, eyes narrowed and calculating, no smile, shadows under eyes, bust-up portrait, transparent background, blue-tinted cold lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 아름다운 한국인 여성 20대 중반, 풍만한 글래머 체형, 긴 생머리 흑발, 얇은 테 안경, 크림색 블라우스에 네이비 가디건, 차갑고 냉정한 표정, 가늘게 뜬 계산적인 눈, 미소 없음, 눈 밑 그림자, 상반신 초상화, 투명 배경, 푸른 톤의 차가운 조명
 ```
 
 ### eunsu_dark.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, beautiful Korean woman mid-20s, long straight black hair past shoulders, thin-framed glasses, half of face hidden in deep shadow, one eye visible and faintly glowing, sinister undertone, hair partially covering face, bust-up portrait, transparent background, dark purple-red lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 아름다운 한국인 여성 20대 중반, 풍만한 글래머 체형, 긴 생머리 흑발, 얇은 테 안경, 얼굴 절반이 깊은 그림자에 가려진 모습, 한쪽 눈만 보이며 희미하게 빛남, 불길한 분위기, 머리카락이 얼굴을 부분적으로 덮음, 상반신 초상화, 투명 배경, 어두운 보라-빨강 조명
 ```
 
 ### eunsu_angry.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, beautiful Korean woman mid-20s, long straight black hair past shoulders, thin-framed glasses, sharp angry expression, furrowed brows, tight pressed lips, intense piercing eyes, bust-up portrait, transparent background, red-tinted dramatic lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 아름다운 한국인 여성 20대 중반, 풍만한 글래머 체형, 긴 생머리 흑발, 얇은 테 안경, 날카로운 분노의 표정, 찡그린 미간, 꽉 다문 입술, 강렬하게 쏘아보는 눈빛, 상반신 초상화, 투명 배경, 붉은 톤의 극적인 조명
 ```
 
 ### eunsu_obsessed.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, beautiful Korean woman mid-20s, long straight black hair disheveled and messy, thin-framed glasses slightly askew, manic wide eyes with tiny constricted pupils, unsettling too-wide smile, head tilted at unnatural angle, red glow reflected in eyes, horror visual novel style, bust-up portrait, transparent background, harsh red-white lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 아름다운 한국인 여성 20대 중반, 풍만한 글래머 체형, 흐트러지고 엉킨 긴 생머리 흑발, 비뚤어진 얇은 테 안경, 광기 어린 크게 뜬 눈에 수축된 작은 동공, 불안하게 과하게 벌린 미소, 부자연스러운 각도로 기울인 고개, 눈에 비치는 붉은 빛, 호러 비주얼 노벨 스타일, 상반신 초상화, 투명 배경, 강렬한 빨강-흰색 조명
 ```
 
 ---
 
-## 2. CHARACTERS — Kang Riin (강리인)
+## 2. 캐릭터 — 강리인 (보건교사)
 
 ### riin_normal.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, elegant Korean woman late 20s, short dark purple bob-cut hair, white lab coat over fitted dark turtleneck, beauty mark under left eye, calm analytical eyes, neutral composed expression, clipboard in hand, bust-up portrait, transparent background, clean white lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 우아한 한국인 여성 20대 후반, 볼륨감 있는 글래머 체형, 짧은 다크 퍼플 단발머리, 검은 터틀넥 위에 흰 가운, 왼쪽 눈 밑 점, 차분하고 분석적인 눈빛, 담담하고 침착한 표정, 손에 클립보드, 상반신 초상화, 투명 배경, 깔끔한 흰색 조명
 ```
 
 ### riin_smile.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, elegant Korean woman late 20s, short dark purple bob-cut hair, white lab coat over fitted dark turtleneck, beauty mark under left eye, friendly reassuring smile, eyes gently curved, approachable warm expression, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 우아한 한국인 여성 20대 후반, 볼륨감 있는 글래머 체형, 짧은 다크 퍼플 단발머리, 검은 터틀넥 위에 흰 가운, 왼쪽 눈 밑 점, 친절하고 안심시키는 미소, 부드럽게 휜 눈, 다가가기 쉬운 따뜻한 표정, 상반신 초상화, 투명 배경
 ```
 
 ### riin_seductive.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, elegant Korean woman late 20s, short dark purple bob-cut hair, white lab coat over fitted dark turtleneck, beauty mark under left eye, half-lidded alluring eyes, slight knowing smirk, finger resting on lips, teasing flirtatious expression, bust-up portrait, transparent background, warm amber lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 우아한 한국인 여성 20대 후반, 볼륨감 있는 글래머 체형, 짧은 다크 퍼플 단발머리, 검은 터틀넥 위에 흰 가운, 왼쪽 눈 밑 점, 반쯤 감은 매혹적인 눈, 의미심장한 미소, 입술에 손가락을 대고 있는 자세, 도발적이고 유혹적인 표정, 상반신 초상화, 투명 배경, 따뜻한 앰버톤 조명
 ```
 
 ### riin_close.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, elegant Korean woman late 20s, short dark purple bob-cut hair, white lab coat, beauty mark under left eye, close-up face composition, leaning forward slightly, examining analyzing expression, intimate close distance, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 우아한 한국인 여성 20대 후반, 볼륨감 있는 글래머 체형, 짧은 다크 퍼플 단발머리, 흰 가운, 왼쪽 눈 밑 점, 클로즈업 구도, 살짝 앞으로 기울인 자세, 관찰하고 분석하는 표정, 친밀한 가까운 거리감, 상반신 초상화, 투명 배경
 ```
 
 ### riin_pleased.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, elegant Korean woman late 20s, short dark purple bob-cut hair, white lab coat over fitted dark turtleneck, beauty mark under left eye, satisfied subtle smile, eyes showing quiet hidden pleasure, knowing secretive expression, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 우아한 한국인 여성 20대 후반, 볼륨감 있는 글래머 체형, 짧은 다크 퍼플 단발머리, 검은 터틀넥 위에 흰 가운, 왼쪽 눈 밑 점, 만족스러운 은은한 미소, 조용한 즐거움이 담긴 눈빛, 비밀을 알고 있는 듯한 표정, 상반신 초상화, 투명 배경
 ```
 
 ### riin_cold.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, elegant Korean woman late 20s, short dark purple bob-cut hair, white lab coat, beauty mark under left eye, completely emotionless clinical stare, glasses reflecting harsh light hiding eyes, sterile cold expression devoid of warmth, bust-up portrait, transparent background, cold white fluorescent lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 우아한 한국인 여성 20대 후반, 볼륨감 있는 글래머 체형, 짧은 다크 퍼플 단발머리, 흰 가운, 왼쪽 눈 밑 점, 완전히 무감정한 임상적 시선, 강한 빛에 반사되어 눈이 가려진 안경, 온기라곤 없는 냉담한 표정, 상반신 초상화, 투명 배경, 차가운 흰색 형광등 조명
 ```
 
 ### riin_dark.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, elegant Korean woman late 20s, short dark purple bob-cut hair, white lab coat, beauty mark under left eye, sinister menacing expression, holding syringe in one hand, deep shadow covering upper face, eyes glowing through the darkness, bust-up portrait, transparent background, sickly green-tinted horror lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 우아한 한국인 여성 20대 후반, 볼륨감 있는 글래머 체형, 짧은 다크 퍼플 단발머리, 흰 가운, 왼쪽 눈 밑 점, 음흉하고 위협적인 표정, 한 손에 주사기를 들고 있음, 깊은 그림자가 얼굴 윗부분을 덮음, 어둠 속에서 빛나는 눈, 상반신 초상화, 투명 배경, 병적인 초록빛 호러 조명
 ```
 
 ---
 
-## 3. CHARACTERS — Han Sea (한세아)
+## 3. 캐릭터 — 한세아 (반장)
 
 ### sea_normal.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, cute Korean high school girl age 17, twin-tails tied with pink ribbons, big bright expressive eyes, white sailor school uniform with navy collar and red ribbon tie, petite build, neutral friendly expression, standing straight, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 귀여운 한국인 여고생 17세, 적당히 볼륨감 있는 체형, 분홍 리본으로 묶은 트윈테일, 크고 밝은 표현력 풍부한 눈, 네이비 칼라와 빨간 리본 타이의 흰색 세일러복, 작은 체형, 중립적이고 친근한 표정, 바른 자세로 서있는 모습, 상반신 초상화, 투명 배경
 ```
 
 ### sea_smile.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, cute Korean high school girl age 17, twin-tails tied with pink ribbons, big bright sparkling eyes, white sailor school uniform with navy collar and red ribbon tie, beaming radiant smile, hands clasped together joyfully, radiating pure happiness, bust-up portrait, transparent background, warm sunshine golden lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 귀여운 한국인 여고생 17세, 적당히 볼륨감 있는 체형, 분홍 리본 트윈테일, 크고 반짝이는 눈, 네이비 칼라와 빨간 리본 타이의 흰색 세일러복, 환하게 빛나는 미소, 기쁘게 모은 두 손, 순수한 행복감이 넘치는 모습, 상반신 초상화, 투명 배경, 따뜻한 햇살 같은 금빛 조명
 ```
 
 ### sea_shy.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, cute Korean high school girl age 17, twin-tails tied with pink ribbons, white sailor school uniform, deep rosy blush across cheeks, looking down shyly, fidgeting with uniform ribbon, embarrassed adorable expression, bust-up portrait, transparent background, soft pink lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 귀여운 한국인 여고생 17세, 적당히 볼륨감 있는 체형, 분홍 리본 트윈테일, 흰색 세일러복, 양 볼에 진한 홍조, 수줍게 아래를 바라보는 시선, 교복 리본을 만지작거리는 손, 부끄럽고 사랑스러운 표정, 상반신 초상화, 투명 배경, 부드러운 핑크톤 조명
 ```
 
 ### sea_serious.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, cute Korean high school girl age 17, twin-tails tied with pink ribbons, white sailor school uniform, serious questioning look, no smile, eyes sharp and searching, slight suspicious frown, bust-up portrait, transparent background, neutral flat lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 귀여운 한국인 여고생 17세, 적당히 볼륨감 있는 체형, 분홍 리본 트윈테일, 흰색 세일러복, 진지하게 캐묻는 듯한 표정, 미소 없음, 날카롭고 탐색하는 눈빛, 약간 의심스러운 미간 찡그림, 상반신 초상화, 투명 배경, 중립적이고 평탄한 조명
 ```
 
 ### sea_angry.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, cute Korean high school girl age 17, twin-tails tied with pink ribbons, white sailor school uniform, puffed cheeks angry expression, furrowed brows, pouting intensely, comical but genuinely upset, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 귀여운 한국인 여고생 17세, 적당히 볼륨감 있는 체형, 분홍 리본 트윈테일, 흰색 세일러복, 볼을 부풀린 화난 표정, 찡그린 미간, 강하게 삐진 모습, 코믹하지만 진심으로 속상한 느낌, 상반신 초상화, 투명 배경
 ```
 
 ### sea_hurt.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, cute Korean high school girl age 17, twin-tails tied with pink ribbons, white sailor school uniform, deeply pained expression, eyes watering with unshed tears, biting lower lip, looking betrayed and wounded, bust-up portrait, transparent background, cold blue-tinted lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 귀여운 한국인 여고생 17세, 적당히 볼륨감 있는 체형, 분홍 리본 트윈테일, 흰색 세일러복, 깊이 상처받은 표정, 참으려는 눈물이 고인 눈, 아랫입술을 깨물고 있는 모습, 배신당한 듯 상처받은 눈빛, 상반신 초상화, 투명 배경, 차가운 청색 톤 조명
 ```
 
 ### sea_dark.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, cute Korean high school girl age 17, twin-tails tied with pink ribbons, white sailor school uniform, face half concealed in shadow, one visible eye cold and completely empty, smile completely gone, dark oppressive atmosphere, bust-up portrait, transparent background, dark blue-black lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 귀여운 한국인 여고생 17세, 적당히 볼륨감 있는 체형, 분홍 리본 트윈테일, 흰색 세일러복, 그림자에 절반 가려진 얼굴, 보이는 한쪽 눈은 차갑고 완전히 공허함, 미소가 완전히 사라진 모습, 어둡고 압도적인 분위기, 상반신 초상화, 투명 배경, 어두운 남색-검정 조명
 ```
 
 ### sea_cry.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, cute Korean high school girl age 17, twin-tails tied with pink ribbons, white sailor school uniform, tears streaming down both cheeks, trembling quivering lips, genuine heartbroken crying, emotionally vulnerable, bust-up portrait, transparent background, soft diffused lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 귀여운 한국인 여고생 17세, 적당히 볼륨감 있는 체형, 분홍 리본 트윈테일, 흰색 세일러복, 양 볼을 타고 흐르는 눈물, 부들부들 떨리는 입술, 진심으로 가슴이 찢어지는 울음, 감정적으로 무방비한 모습, 상반신 초상화, 투명 배경, 부드럽게 확산된 조명
 ```
 
 ### sea_yandere.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, cute Korean high school girl age 17, twin-tails tied with pink ribbons, white sailor school uniform, wide obsessive unhinged smile that does not reach the eyes, head tilted at unsettling unnatural angle, one eye slightly wider than the other, pupils dilated, holding something hidden behind back, pink and blood-red mixed lighting, yandere archetype, horror meets cute, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 귀여운 한국인 여고생 17세, 적당히 볼륨감 있는 체형, 분홍 리본 트윈테일, 흰색 세일러복, 눈에는 닿지 않는 넓고 집착적인 광기의 미소, 부자연스럽게 기울어진 고개, 한쪽 눈이 다른 쪽보다 약간 더 크게 뜬 모습, 확대된 동공, 등 뒤에 뭔가를 숨기고 있는 자세, 핑크와 핏빛 빨강이 섞인 조명, 얀데레 아키타입, 호러와 귀여움의 조합, 상반신 초상화, 투명 배경
 ```
 
 ---
 
-## 4. CHARACTERS — Choi Yuna (최유나)
+## 4. 캐릭터 — 최유나 (사진부)
 
 ### yuna_normal.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, quiet Korean high school girl age 16, shoulder-length wavy brown hair with small braid on one side, camera strap hanging around neck, school uniform with oversized cream cardigan, soft doe eyes, neutral quiet expression, holding camera gently, looking slightly to the side, introverted shy aura, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 조용한 한국인 여고생 16세, 마르고 가냘픈 체형, 한쪽에 작은 땋은 머리가 있는 어깨 길이 웨이브 갈색 머리, 목에 걸린 카메라 스트랩, 오버사이즈 크림색 가디건을 걸친 교복, 순한 사슴 같은 눈, 조용하고 차분한 표정, 카메라를 부드럽게 잡고 있는 모습, 살짝 옆을 바라보는 시선, 내성적이고 수줍은 분위기, 상반신 초상화, 투명 배경
 ```
 
 ### yuna_smile.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, quiet Korean high school girl age 16, shoulder-length wavy brown hair with small braid on one side, camera strap around neck, school uniform with oversized cardigan, gentle genuine warm smile, eyes brightening with rare sincere happiness, bust-up portrait, transparent background, warm soft golden lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 조용한 한국인 여고생 16세, 마르고 가냘픈 체형, 한쪽에 작은 땋은 머리가 있는 어깨 길이 웨이브 갈색 머리, 목에 걸린 카메라 스트랩, 오버사이즈 가디건 교복, 작지만 진심 어린 따뜻한 미소, 드문 진정한 행복감으로 밝아진 눈, 상반신 초상화, 투명 배경, 따뜻하고 부드러운 금빛 조명
 ```
 
 ### yuna_scared.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, quiet Korean high school girl age 16, shoulder-length wavy brown hair with small braid, camera strap around neck, school uniform with oversized cardigan, wide frightened terrified eyes, clutching camera tightly to chest protectively, visibly trembling, face gone pale, bust-up portrait, transparent background, cold harsh lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 조용한 한국인 여고생 16세, 마르고 가냘픈 체형, 한쪽에 작은 땋은 머리가 있는 어깨 길이 웨이브 갈색 머리, 목에 걸린 카메라 스트랩, 오버사이즈 가디건 교복, 크게 뜬 겁에 질린 눈, 카메라를 가슴에 꼭 껴안고 보호하는 자세, 눈에 띄게 떨리는 몸, 창백해진 얼굴, 상반신 초상화, 투명 배경, 차갑고 강한 조명
 ```
 
 ### yuna_desperate.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, quiet Korean high school girl age 16, shoulder-length wavy brown hair with small braid, camera strap around neck, school uniform with oversized cardigan, pleading desperate expression, both hands reaching forward, tears forming in eyes, eyes begging to be believed, bust-up portrait, transparent background, dramatic lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 조용한 한국인 여고생 16세, 마르고 가냘픈 체형, 한쪽에 작은 땋은 머리가 있는 어깨 길이 웨이브 갈색 머리, 목에 걸린 카메라 스트랩, 오버사이즈 가디건 교복, 간절히 애원하는 절박한 표정, 앞으로 뻗은 양손, 눈에 맺히는 눈물, 믿어달라고 호소하는 눈빛, 상반신 초상화, 투명 배경, 극적인 조명
 ```
 
 ### yuna_cry.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, quiet Korean high school girl age 16, shoulder-length wavy brown hair with small braid, school uniform with oversized cardigan, sobbing with head slightly down, tears falling freely, shoulders shaking, emotional breakdown, bust-up portrait, transparent background, soft diffused lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 조용한 한국인 여고생 16세, 마르고 가냘픈 체형, 한쪽에 작은 땋은 머리가 있는 어깨 길이 웨이브 갈색 머리, 오버사이즈 가디건 교복, 고개를 살짝 숙이고 흐느끼는 모습, 자유롭게 흘러내리는 눈물, 떨리는 어깨, 감정의 폭발, 상반신 초상화, 투명 배경, 부드럽게 확산된 조명
 ```
 
 ### yuna_weak.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, quiet Korean high school girl age 16, shoulder-length wavy brown hair messy and disheveled, pale sickly complexion, drooping half-closed eyes, sitting weakly slumped, torn dirty school uniform, IV needle mark visible on arm, bust-up portrait, transparent background, dim sickly fluorescent lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 조용한 한국인 여고생 16세, 마르고 가냘픈 체형, 흐트러지고 엉킨 어깨 길이 웨이브 갈색 머리, 창백하고 병약한 안색, 풀려서 반쯤 감긴 눈, 힘없이 축 처져 앉아 있는 모습, 찢어지고 더러워진 교복, 팔에 보이는 주사 자국, 상반신 초상화, 투명 배경, 어둡고 병적인 형광등 조명
 ```
 
 ### yuna_determined.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, quiet Korean high school girl age 16, shoulder-length wavy brown hair with small braid, camera strap around neck, school uniform with oversized cardigan, resolute fierce determined expression, eyes sharp and burning with focus, jaw set firmly, standing tall and strong, bust-up portrait, transparent background, heroic backlit golden lighting
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 조용한 한국인 여고생 16세, 마르고 가냘픈 체형, 한쪽에 작은 땋은 머리가 있는 어깨 길이 웨이브 갈색 머리, 목에 걸린 카메라 스트랩, 오버사이즈 가디건 교복, 단단하고 맹렬한 결의의 표정, 날카롭고 불꽃처럼 타오르는 집중된 눈빛, 굳게 다문 턱, 당당하고 강하게 서 있는 자세, 상반신 초상화, 투명 배경, 영웅적인 역광 금빛 조명
 ```
 
 ---
 
-## 5. CHARACTERS — Lee Seolhwa (이설화)
+## 5. 캐릭터 — 이설화 (수수께끼의 소녀)
 
 ### seolhwa_normal.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, ethereal Korean girl age 17, very long straight silver-white hair reaching waist, pale porcelain skin, wearing slightly old-fashioned dated school uniform, melancholic distant faraway eyes, calm mysterious expression, standing perfectly still, slightly transparent edges around body, bust-up portrait, transparent background, cool blue-white atmosphere
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 신비로운 한국인 소녀 17세, 가냘프고 마른 체형, 허리까지 내려오는 아주 긴 은백색 생머리, 창백한 도자기 같은 피부, 약간 구식 디자인의 교복, 우울하고 먼 곳을 바라보는 눈, 차분하고 신비로운 표정, 완벽하게 정지한 자세, 몸 가장자리가 약간 투명한 효과, 상반신 초상화, 투명 배경, 차가운 청백색 분위기
 ```
 
 ### seolhwa_smile.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, Makoto Shinkai inspired lighting, blend of anime and realism, ethereal Korean girl age 17, very long straight silver-white hair reaching waist, pale porcelain skin, old-style school uniform, gentle peaceful relieved smile, eyes showing deep gratitude, soft warm golden light surrounding her, faint cherry blossom petals floating around, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 신비로운 한국인 소녀 17세, 가냘프고 마른 체형, 허리까지 내려오는 아주 긴 은백색 생머리, 창백한 도자기 같은 피부, 구식 교복, 온화하고 평온한 안도의 미소, 깊은 감사가 담긴 눈빛, 주위를 감싸는 부드러운 금빛, 희미하게 떠다니는 벚꽃잎, 상반신 초상화, 투명 배경
 ```
 
 ### seolhwa_sad.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, ethereal Korean girl age 17, very long straight silver-white hair reaching waist, pale porcelain skin, old-style school uniform, deeply melancholic sorrowful expression, looking downward, hair partially covering one side of face, bust-up portrait, transparent background, muted blue-grey desaturated tones
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 신비로운 한국인 소녀 17세, 가냘프고 마른 체형, 허리까지 내려오는 아주 긴 은백색 생머리, 창백한 도자기 같은 피부, 구식 교복, 깊은 우수와 슬픔이 가득한 표정, 아래를 내려다보는 시선, 머리카락이 얼굴 한쪽을 부분적으로 덮음, 상반신 초상화, 투명 배경, 채도가 낮은 청회색 톤
 ```
 
 ### seolhwa_fade.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, ethereal Korean girl age 17, very long straight silver-white hair reaching waist, pale porcelain skin, old-style school uniform, semi-transparent ghostly body, edges of figure dissolving into glowing light particles, slowly fading away, translucent see-through effect, white soft glow surrounding entire body, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 신비로운 한국인 소녀 17세, 가냘프고 마른 체형, 허리까지 내려오는 아주 긴 은백색 생머리, 창백한 도자기 같은 피부, 구식 교복, 반투명한 유령 같은 몸, 인물의 윤곽이 빛나는 입자로 녹아 흩어지는 효과, 서서히 사라지는 모습, 투명하게 비치는 효과, 온몸을 감싸는 하얀 은은한 빛, 상반신 초상화, 투명 배경
 ```
 
 ### seolhwa_ghost.png
 ```
-semi-realistic anime art, detailed face and eyes, soft rendering, blend of anime and realism, ethereal Korean girl age 17, very long straight silver-white hair flowing upward unnaturally defying gravity, pale porcelain skin, old-style school uniform, fully ghostly supernatural appearance, glowing white-blue ethereal outline around body, floating slightly off the ground, completely translucent body with environment visible through, empty school hallway faintly visible through figure, supernatural horror atmosphere, bust-up portrait, transparent background
+비주얼 노벨 캐릭터 스프라이트, 깔끔한 선화, 부드러운 파스텔 채색, 큰 표현력 있는 눈, 5.5등신, DDLC 스타일, 연애 시뮬레이션 아트, 신비로운 한국인 소녀 17세, 가냘프고 마른 체형, 중력을 거스르듯 위로 떠오르는 아주 긴 은백색 머리카락, 창백한 도자기 같은 피부, 구식 교복, 완전한 유령의 초자연적 모습, 몸 주위의 빛나는 청백색 윤곽선, 바닥에서 살짝 떠 있는 자세, 완전히 투명하여 배경이 비쳐 보이는 몸, 인물을 통해 희미하게 보이는 텅 빈 학교 복도, 초자연적 호러 분위기, 상반신 초상화, 투명 배경
 ```
 
 ---
 
-## 6. BACKGROUNDS
+## 6. 배경
 
 ---
 
 ### classroom.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, Korean high school classroom interior, rows of wooden desks and chairs, large windows with bright sunlight streaming in, green chalkboard at front, daytime warm atmosphere, cherry blossom trees visible outside windows, semi-realistic anime style, Makoto Shinkai inspired lighting
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 한국 고등학교 교실 내부, 나무 책상과 의자가 줄지어 있는 모습, 밝은 햇살이 쏟아지는 큰 창문, 정면의 초록 칠판, 낮시간의 따뜻한 분위기, 창밖으로 보이는 벚꽃나무, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### classroom_empty.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, Korean high school classroom but eerily empty, desks pushed aside messily, one single desk isolated in center of room, dust particles floating in dim fading light, slightly unsettling unnatural atmosphere, late afternoon long shadows, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 한국 고등학교 교실이지만 기이하게 비어있음, 어지럽게 밀린 책상들, 방 한가운데 홀로 놓인 책상 하나, 희미하게 지는 빛 속에 떠다니는 먼지 입자, 약간 불안한 부자연스러운 분위기, 늦은 오후의 긴 그림자, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### classroom_evening.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, Korean high school classroom bathed entirely in deep orange sunset light, long dramatic shadows stretching across polished floor, empty melancholic feeling, windows glowing warm amber gold, golden hour atmosphere, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 짙은 주황빛 석양에 온통 물든 한국 고등학교 교실, 광택 바닥 위로 길게 늘어진 극적인 그림자, 비어 있는 쓸쓸한 느낌, 따뜻한 앰버 골드빛으로 빛나는 창문, 골든아워 분위기, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### corridor.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, Korean high school corridor, shoe lockers lining one side, windows on the other side, polished reflective floor, fluorescent ceiling lights, bright clean daytime, ordinary school feeling, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 한국 고등학교 복도, 한쪽에 줄지어 있는 신발장, 반대편의 창문, 반사되는 광택 바닥, 천장의 형광등, 밝고 깨끗한 낮시간, 평범한 학교 느낌, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### corridor_dark.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, Korean high school corridor at night, only dim emergency lights on, deep menacing shadows pooling at the far end, unsettling darkness stretching ahead, horror thriller atmosphere, slight sickly green tint to the lighting, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 밤의 한국 고등학교 복도, 어둑한 비상등만 켜져 있음, 저 끝에 웅크린 위협적인 깊은 그림자, 앞으로 뻗어가는 불안한 어둠, 호러 스릴러 분위기, 약간 병적인 초록빛이 도는 조명, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### stairway.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, school stairwell interior, concrete steps with metal railings, small window on the landing letting in light, looking upward perspective, slightly claustrophobic narrow space, semi-realistic anime style, neutral daytime lighting
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 학교 계단 내부, 콘크리트 계단과 금속 난간, 중간 참의 작은 창문으로 들어오는 빛, 위를 올려다보는 시점, 약간 답답하고 좁은 공간감, DDLC 스타일 연애 시뮬레이션 배경, 중립적인 낮 조명
 ```
 
 ### rooftop.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, school rooftop with chain-link safety fence, wide expansive sky with scattered clouds, small bench tucked in corner, wind blowing feeling, afternoon peaceful sunlight, isolated elevated feeling, semi-realistic anime style, Makoto Shinkai sky
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 철조망 안전 펜스가 있는 학교 옥상, 흩어진 구름이 있는 넓고 탁 트인 하늘, 구석에 놓인 작은 벤치, 바람이 부는 느낌, 오후의 평화로운 햇살, 고립되고 높은 곳에 있는 느낌, DDLC 스타일 연애 시뮬레이션 배경, 신카이 마코토풍 하늘
 ```
 
 ### nurse_office.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, school nurse office interior, white curtained bed, glass medical supply cabinet, desk with computer and files, anatomical poster on wall, clean sterile white feeling, semi-realistic anime style, bright clinical lighting
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 학교 보건실 내부, 흰 커튼으로 칸막이된 침대, 유리문 의약품 진열장, 컴퓨터와 서류가 있는 책상, 벽의 인체 해부도 포스터, 깨끗하고 무균적인 흰색 느낌, DDLC 스타일 연애 시뮬레이션 배경, 밝은 임상적 조명
 ```
 
 ### teacher_office.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, single teacher desk area in office, papers and coffee mug on desk, tall bookshelf behind, personal photo frames and items, warm desk lamp light, cozy but formal atmosphere, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 개인 교사 책상 공간, 서류와 커피잔이 놓인 책상, 뒤편의 높은 책장, 개인 사진 액자와 소품들, 따뜻한 책상 조명, 아늑하지만 격식 있는 분위기, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### faculty_office.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, large school faculty room with multiple teacher desks in rows, filing cabinets along walls, stacks of papers and documents everywhere, harsh fluorescent overhead lighting, institutional impersonal atmosphere, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 여러 교사 책상이 줄지어 있는 넓은 교무실, 벽을 따라 줄지어 있는 서류 캐비닛, 곳곳에 쌓인 서류와 문서 더미, 강한 형광 천장 조명, 비인간적이고 사무적인 분위기, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### library.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, school library interior, tall wooden bookshelves arranged in rows, reading tables with chairs, quiet serene atmosphere, warm natural wood tones, afternoon light filtering through high windows, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 학교 도서관 내부, 줄지어 있는 높은 나무 책장, 의자가 놓인 열람 테이블, 조용하고 고요한 분위기, 따뜻한 자연 나무 톤, 높은 창문으로 스며드는 오후 햇살, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### gym.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, school gymnasium interior, polished wooden floor with painted court lines, basketball hoops on both ends, small stage at far wall, high vaulted ceiling, echoing empty feeling, semi-realistic anime style, bright overhead lighting
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 학교 체육관 내부, 코트 라인이 그려진 광택 나무 바닥, 양쪽 끝의 농구 골대, 안쪽 벽의 작은 무대, 높은 아치형 천장, 텅 비어 메아리치는 느낌, DDLC 스타일 연애 시뮬레이션 배경, 밝은 천장 조명
 ```
 
 ### old_building.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, old abandoned school building annex hallway, slightly deteriorated walls with peeling paint, dusty grimy windows letting in hazy light, abandoned neglected feeling, creepy unsettling even in daytime, cobwebs in corners, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 오래된 폐건물 별관 복도, 페인트가 벗겨진 약간 낡은 벽, 먼지투성이 더러운 창문으로 들어오는 뿌연 빛, 방치되고 버려진 느낌, 낮인데도 소름 끼치는 분위기, 구석의 거미줄, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### basement.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, secret underground laboratory room beneath school, flickering buzzing fluorescent lights, medical beds with leather restraining straps, IV drip stands, chemical supply cabinets with glass doors, white tiled floor with drain, sterile institutional horror atmosphere, clinical and deeply unsettling, semi-realistic anime style, harsh cold lighting
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 학교 지하의 비밀 실험실, 깜빡이는 형광등, 가죽 구속 벨트가 달린 의료용 침대, 링거 스탠드, 유리문 약품 캐비닛, 배수구가 있는 흰색 타일 바닥, 무균적이고 기관 같은 호러 분위기, 임상적이고 깊이 불안한 느낌, DDLC 스타일 연애 시뮬레이션 배경, 강하고 차가운 조명
 ```
 
 ### school_gate.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, Korean high school front gate entrance, sturdy brick pillars with decorative iron gate, school name plate mounted on pillar, cherry blossom trees lining the path leading inside, bright cheerful spring morning, semi-realistic anime style, Makoto Shinkai inspired lighting
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 한국 고등학교 정문 입구, 튼튼한 벽돌 기둥과 장식적인 철문, 기둥에 부착된 학교 명판, 안쪽으로 이어지는 길을 따라 늘어선 벚꽃나무, 밝고 화사한 봄날 아침, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### school_gate_evening.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, Korean high school front gate at sunset, deep orange sky with purple clouds, long dramatic shadows on the ground, completely empty with no students, melancholic lonely end-of-day feeling, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 석양 무렵의 한국 고등학교 정문, 보랏빛 구름이 떠 있는 짙은 주황 하늘, 땅 위로 길게 늘어진 극적인 그림자, 학생 하나 없이 완전히 텅 빈 모습, 우울하고 외로운 하루의 끝 느낌, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### cherry_blossom.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, beautiful path lined with cherry blossom trees in full bloom, countless pink petals gently falling through the air, bright warm spring sunshine filtering through branches, dreamy romantic soft-focus atmosphere, semi-realistic anime style, Makoto Shinkai inspired magical lighting
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 만개한 벚꽃나무가 늘어선 아름다운 산책길, 공중에 부드럽게 흩날리는 무수한 분홍 꽃잎, 나뭇가지 사이로 비치는 밝고 따뜻한 봄 햇살, 몽환적이고 로맨틱한 소프트 포커스 분위기, DDLC 스타일 연애 시뮬레이션 배경, 몽환적이고 마법 같은 조명
 ```
 
 ### outside_school.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, view from outside looking back at school building beyond a concrete wall and fence, grey overcast sky with rain beginning to fall, the freedom side of the barrier, semi-realistic anime style, muted desaturated tones
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 콘크리트 담장과 펜스 너머로 학교 건물을 바라보는 외부 시점, 비가 내리기 시작하는 흐린 하늘, 울타리 바깥 자유의 공간, DDLC 스타일 연애 시뮬레이션 배경, 채도가 낮은 탁한 톤
 ```
 
 ### exit_door.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, heavy metal emergency exit door slightly ajar, brilliant bright white light flooding through the narrow gap, dark shadowy hallway on this side contrasting with the light, hope and escape symbolism, dramatic chiaroscuro, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 살짝 열린 무거운 금속 비상구 문, 좁은 틈 사이로 쏟아지는 눈부신 하얀 빛, 이쪽의 어둡고 그림자진 복도와 대비되는 빛, 희망과 탈출의 상징, 극적인 키아로스쿠로, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### home.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, small Korean one-room apartment, single bed against wall, study desk with desk lamp, small bookshelf, window with thin curtains, cozy but lonely lived-alone feeling, generic evening neutral lighting, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 작은 한국식 원룸, 벽에 붙은 싱글 침대, 책상 조명이 있는 학습 책상, 작은 책장, 얇은 커튼이 드리워진 창문, 아늑하지만 혼자 사는 외로운 느낌, 평범한 저녁 중립 조명, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### room_morning.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, small Korean apartment room, single bed with messy sheets, study desk with alarm clock showing early morning, bright warm morning sunlight streaming through window, fresh new day atmosphere, golden warm light, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 작은 한국식 원룸, 구겨진 이불의 싱글 침대, 이른 아침을 가리키는 알람 시계가 있는 학습 책상, 창문으로 쏟아지는 밝고 따뜻한 아침 햇살, 새로운 하루의 시작 분위기, 금빛 따뜻한 조명, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### room_night.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, small Korean apartment room at night, only dim desk lamp turned on, phone screen glowing faintly on the bed, dark shadowy corners of the room, nighttime isolation and loneliness atmosphere, dark blue-black color palette, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 밤의 작은 한국식 원룸, 어둑한 책상 조명만 켜져 있음, 침대 위에서 희미하게 빛나는 핸드폰 화면, 방 구석구석의 어두운 그림자, 밤의 고립감과 외로움 분위기, 어두운 남색-검정 색감, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### school_night.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, Korean school building exterior viewed from outside at night, few windows still lit from inside, pale moonlight casting shadows, dark starless sky, dim security lights creating pools of light, slightly ominous foreboding atmosphere, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 밤에 외부에서 바라본 한국 학교 건물, 몇몇 창문에만 불이 켜져 있음, 그림자를 드리우는 창백한 달빛, 별 없는 어두운 하늘, 희미한 보안등이 만드는 빛의 웅덩이, 약간 불길한 불안한 분위기, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### school_dark.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, school interior hallway in pitch darkness, only faint ghostly moonlight through windows creating pale rectangles on floor, nightmare distorted slightly warped perspective, hallway seeming to stretch infinitely into blackness, pure horror atmosphere, semi-realistic anime style, extremely dark with minimal light
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 칠흑같이 어두운 학교 내부 복도, 창문을 통해 들어오는 희미한 유령 같은 달빛만이 바닥에 창백한 직사각형을 만듦, 악몽처럼 왜곡되고 약간 뒤틀린 원근감, 끝없는 어둠 속으로 무한히 늘어지는 듯한 복도, 순수한 호러 분위기, DDLC 스타일 연애 시뮬레이션 배경, 극도로 어둡고 최소한의 빛만 존재
 ```
 
 ### school_dawn.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, Korean school building exterior at early dawn, very first pale pink-orange light of sunrise on horizon, morning fog and mist drifting around the building, serene but melancholic after-storm atmosphere, semi-realistic anime style, soft pastel dawn colors
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 이른 새벽의 한국 학교 건물 외관, 지평선에 비치는 아주 처음의 연분홍-주황 일출빛, 건물 주위를 감싸는 새벽 안개와 물안개, 폭풍이 지나간 후의 고요하지만 우울한 분위기, DDLC 스타일 연애 시뮬레이션 배경, 부드러운 파스텔 새벽 색감
 ```
 
 ### sunset_outside.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, wide panoramic view of small town from hillside, school building visible in the distance below, breathtaking sunset sky with layers of orange pink and purple, hopeful emotional triumphant ending scene feeling, semi-realistic anime style, Makoto Shinkai inspired dramatic sky
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 언덕에서 바라본 작은 마을의 넓은 파노라마 전경, 아래 멀리 보이는 학교 건물, 주황 분홍 보라가 겹겹이 펼쳐진 숨 막히는 석양 하늘, 희망차고 감동적인 진엔딩 장면의 느낌, DDLC 스타일 연애 시뮬레이션 배경, 극적이고 웅장한 하늘
 ```
 
 ### night_rain.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, rainy urban street at night, streetlights reflecting off wet glistening pavement, heavy rain streaking across the scene, puddles on ground reflecting neon and lights, alone walking perspective, deeply melancholic cinematic noir atmosphere, semi-realistic anime style
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 비 오는 밤의 도시 거리, 젖어 반짝이는 도로에 비치는 가로등, 화면을 가로지르며 내리는 굵은 빗줄기, 바닥의 웅덩이에 반사되는 네온과 불빛, 홀로 걸어가는 시점, 깊이 우울한 시네마틱 느와르 분위기, DDLC 스타일 연애 시뮬레이션 배경
 ```
 
 ### street.png
 ```
-anime background art, detailed environment painting, visual novel game background, no characters, wide 16:9 composition, quiet residential street near Korean school, small houses with walls and gates, power lines crossing overhead, afternoon warm light, ordinary peaceful neighborhood, semi-realistic anime style, Makoto Shinkai suburban feeling
+비주얼 노벨 배경 일러스트, 부드러운 수채화풍 채색, DDLC 스타일 배경, 인물 없음, 와이드 16:9 구도, 한국 학교 근처의 조용한 주택가 골목, 담장과 대문이 있는 작은 주택들, 머리 위로 지나가는 전선, 오후의 따뜻한 빛, 평범하고 평화로운 동네, DDLC 스타일 연애 시뮬레이션 배경, 평화로운 교외 느낌
 ```
 
 ### black.png
@@ -390,180 +374,180 @@ anime background art, detailed environment painting, visual novel game backgroun
 
 ---
 
-## 7. BGM — Suno AI Prompts
+## 7. BGM — Suno AI 프롬프트
 
 > 모든 프롬프트는 Suno AI에 그대로 붙여넣기하면 됩니다.
 > Style/Genre 칸에 넣으세요.
 
 ---
 
-### Romance Phase (Day 1-2)
+### 로맨스 페이즈 (1~2일차)
 
 #### spring_bright.mp3
 ```
-bright cheerful japanese high school anime BGM, acoustic guitar and glockenspiel melody, spring morning sunshine feeling, upbeat innocent and pure, visual novel opening scene, loopable seamless
+밝고 경쾌한 일본 고등학교 애니메이션 BGM, 어쿠스틱 기타와 글로켄슈필 멜로디, 봄날 아침 햇살 느낌, 밝고 순수하고 청순한, 비주얼 노벨 오프닝 장면, 루프 가능 심리스
 ```
-> Tags: `instrumental, anime, acoustic, bright, spring`
+> 태그: `인스트루멘탈, 애니메이션, 어쿠스틱, 밝은, 봄`
 
 #### morning_bright.mp3
 ```
-happy morning anime background music, light piano and wooden flute duet, warm sunshine waking up feeling, school slice of life, gentle optimistic, loopable seamless
+행복한 아침 애니메이션 배경음악, 가벼운 피아노와 나무 플룻 듀엣, 따뜻한 햇살에 눈 뜨는 느낌, 학원 일상물, 부드럽고 낙관적인, 루프 가능 심리스
 ```
-> Tags: `instrumental, anime, piano, morning, cheerful`
+> 태그: `인스트루멘탈, 애니메이션, 피아노, 아침, 경쾌한`
 
 #### daily_bright.mp3
 ```
-everyday school life anime BGM, casual upbeat rhythm, ukulele and light hand percussion, daytime activity and friendship, feel-good carefree, loopable seamless
+일상 학교생활 애니메이션 BGM, 캐주얼하고 밝은 리듬, 우쿨렐레와 가벼운 핸드 퍼커션, 낮시간 활동과 우정, 기분 좋고 편안한, 루프 가능 심리스
 ```
-> Tags: `instrumental, anime, ukulele, casual, daytime`
+> 태그: `인스트루멘탈, 애니메이션, 우쿨렐레, 캐주얼, 낮`
 
 #### sunset_warm.mp3
 ```
-warm afterschool anime BGM, fingerpicked acoustic guitar with soft string section, golden hour nostalgic bittersweet feeling, walking home at sunset, gentle and reflective, loopable seamless
+따뜻한 방과후 애니메이션 BGM, 핑거피킹 어쿠스틱 기타와 부드러운 현악 섹션, 골든아워 향수 어린 씁쓸달콤한 느낌, 석양 속 하교길, 부드럽고 회상적인, 루프 가능 심리스
 ```
-> Tags: `instrumental, anime, acoustic guitar, sunset, nostalgic`
+> 태그: `인스트루멘탈, 애니메이션, 어쿠스틱 기타, 석양, 향수`
 
 #### night_calm.mp3
 ```
-calm peaceful nighttime anime BGM, soft slow piano with ambient synth pads, quiet bedroom atmosphere, late night reflection and thinking, soothing and still, loopable seamless
+차분하고 평화로운 밤 애니메이션 BGM, 부드러운 슬로우 피아노와 앰비언트 신스 패드, 조용한 방 분위기, 늦은 밤의 회상과 사색, 잔잔하고 고요한, 루프 가능 심리스
 ```
-> Tags: `instrumental, anime, piano, ambient, night, calm`
+> 태그: `인스트루멘탈, 애니메이션, 피아노, 앰비언트, 밤, 차분한`
 
 #### morning_peaceful.mp3
 ```
-peaceful morning music box melody with gentle piano accompaniment, soft wind chimes, innocent pure waking up feeling, anime slice of life first scene, delicate and fragile, loopable seamless
+평화로운 아침 오르골 멜로디와 부드러운 피아노 반주, 잔잔한 풍경 소리, 순수하고 천진한 눈 뜨는 느낌, 애니메이션 일상물 첫 장면, 섬세하고 여린, 루프 가능 심리스
 ```
-> Tags: `instrumental, music box, piano, morning, peaceful`
+> 태그: `인스트루멘탈, 오르골, 피아노, 아침, 평화로운`
 
 #### sea_theme.mp3
 ```
-cute energetic anime girl character theme, bouncy piano and xylophone with playful pizzicato strings, sweet cheerful and bubbly, school romance comedy, kawaii upbeat, loopable seamless
+귀엽고 활발한 애니메이션 소녀 캐릭터 테마, 경쾌한 피아노와 실로폰에 장난스러운 피치카토 현악, 달콤하고 밝고 발랄한, 학원 로맨스 코미디, 카와이 업비트, 루프 가능 심리스
 ```
-> Tags: `instrumental, anime, cute, kawaii, character theme, piano`
+> 태그: `인스트루멘탈, 애니메이션, 귀여운, 카와이, 캐릭터 테마, 피아노`
 
 #### riin_theme.mp3
 ```
-elegant mysterious anime character theme, smooth jazz piano with breathy light saxophone, sophisticated and subtly seductive, nurse office quiet afternoon, mature and alluring, loopable seamless
+우아하고 신비로운 애니메이션 캐릭터 테마, 부드러운 재즈 피아노와 은은한 색소폰, 세련되고 은근히 유혹적인, 보건실의 조용한 오후, 성숙하고 매혹적인, 루프 가능 심리스
 ```
-> Tags: `instrumental, jazz, sophisticated, mysterious, character theme`
+> 태그: `인스트루멘탈, 재즈, 세련된, 신비로운, 캐릭터 테마`
 
 #### eunsu_theme.mp3
 ```
-warm mature caring anime character theme, gentle legato cello melody with soft piano chords, kind motherly warmth with a subtle melancholy undertone hidden beneath, teacher guiding student, emotional and tender, loopable seamless
+따뜻하고 성숙한 돌봄의 애니메이션 캐릭터 테마, 부드러운 레가토 첼로 멜로디와 잔잔한 피아노 코드, 다정한 모성적 온기에 은밀히 숨겨진 미묘한 우울함, 선생님의 학생 인도, 감성적이고 부드러운, 루프 가능 심리스
 ```
-> Tags: `instrumental, cello, piano, warm, emotional, character theme`
+> 태그: `인스트루멘탈, 첼로, 피아노, 따뜻한, 감성적, 캐릭터 테마`
 
 ---
 
-### Thriller Phase (Day 3-5)
+### 스릴러 페이즈 (3~5일차)
 
 #### morning_uneasy.mp3
 ```
-uneasy unsettling morning music, starts like normal anime school BGM but piano notes are slightly off-key and dissonant, something feels subtly wrong, psychological thriller anime, creeping unease, loopable seamless
+불안한 아침 음악, 평범한 애니메이션 학교 BGM처럼 시작하지만 피아노 음이 살짝 불협화음이고 어긋남, 뭔가 미묘하게 잘못된 느낌, 심리 스릴러 애니메이션, 스며드는 불안감, 루프 가능 심리스
 ```
-> Tags: `instrumental, dissonant, uneasy, psychological, anime thriller`
+> 태그: `인스트루멘탈, 불협화음, 불안한, 심리적, 애니메이션 스릴러`
 
 #### daily_tense.mp3
 ```
-tense school day anime BGM, everyday school melody playing on surface but with deep suspenseful cello drone and low string tremolo underneath, hidden danger beneath normalcy, psychological thriller, loopable seamless
+긴장감 있는 학교생활 애니메이션 BGM, 표면적으로는 일상 학교 멜로디가 흐르지만 그 아래로 깊고 긴장감 넘치는 첼로 드론과 저음 현악 트레몰로, 일상 속에 숨겨진 위험, 심리 스릴러, 루프 가능 심리스
 ```
-> Tags: `instrumental, tense, suspense, anime, psychological thriller`
+> 태그: `인스트루멘탈, 긴장, 서스펜스, 애니메이션, 심리 스릴러`
 
 #### tension.mp3
 ```
-sustained building tension BGM, low continuous drone with intermittent sharp high-pitched string stabs, deep bass heartbeat pulse rhythm, anime thriller investigation suspense, anxiety-inducing atmosphere, loopable seamless
+지속적으로 고조되는 긴장감 BGM, 낮은 연속 드론에 간헐적으로 날카롭고 높은 현악 찌르기, 깊은 베이스의 심장박동 펄스 리듬, 애니메이션 스릴러 수사 서스펜스, 불안을 유발하는 분위기, 루프 가능 심리스
 ```
-> Tags: `instrumental, tension, drone, suspense, heartbeat, thriller`
+> 태그: `인스트루멘탈, 긴장, 드론, 서스펜스, 심장박동, 스릴러`
 
 #### night_ambient.mp3
 ```
-dark eerie ambient night music, deep low frequency drone with distant hollow wind sounds, occasional far-off metallic creaking, complete isolation and growing dread, horror ambient, loopable seamless
+어둡고 기이한 앰비언트 밤 음악, 깊은 저주파 드론에 먼 곳의 공허한 바람 소리, 가끔 멀리서 들리는 금속 삐걱거림, 완전한 고립과 커져가는 공포, 호러 앰비언트, 루프 가능 심리스
 ```
-> Tags: `instrumental, ambient, dark, eerie, horror, night`
+> 태그: `인스트루멘탈, 앰비언트, 어두운, 기이한, 호러, 밤`
 
 #### night_tension.mp3
 ```
-anxious restless nighttime BGM, subtle heartbeat pulse in deep bass, unsettling high-frequency sine tone barely audible, single piano notes dropping slowly like water drops in total darkness, insomnia paranoia feeling, loopable seamless
+초조하고 불안한 밤 BGM, 깊은 베이스의 미묘한 심장박동 펄스, 거의 들리지 않는 불안한 고주파 사인 톤, 완전한 어둠 속에서 물방울처럼 떨어지는 단음 피아노, 불면증 편집증 느낌, 루프 가능 심리스
 ```
-> Tags: `instrumental, anxious, heartbeat, piano, dark, insomnia`
+> 태그: `인스트루멘탈, 초조한, 심장박동, 피아노, 어두운, 불면`
 
 #### nightmare.mp3
 ```
-nightmare horror sequence BGM, heavily distorted reversed piano notes, glitchy harsh digital audio artifacts and static, sudden jarring crescendos from silence, suffocating overwhelming dread, anime horror nightmare scene, completely disorienting, loopable seamless
+악몽 호러 시퀀스 BGM, 심하게 왜곡된 역재생 피아노 음, 글리치 같은 거친 디지털 오디오 노이즈와 스태틱, 정적에서 갑자기 터지는 크레센도, 질식할 듯 압도적인 공포, 애니메이션 호러 악몽 장면, 완전히 방향감각을 잃는 느낌, 루프 가능 심리스
 ```
-> Tags: `instrumental, horror, nightmare, distorted, glitch, anime`
+> 태그: `인스트루멘탈, 호러, 악몽, 왜곡, 글리치, 애니메이션`
 
 #### thriller_ambient.mp3
 ```
-dark thriller investigation atmosphere music, industrial ambient metallic sounds, deep resonant bass hum, slow threatening gradual build of tension, conspiracy and dark secret discovery feeling, loopable seamless
+어두운 스릴러 수사 분위기 음악, 인더스트리얼 앰비언트 금속 사운드, 깊고 울림 있는 베이스 험, 느리고 위협적인 점진적 긴장 고조, 음모와 어두운 비밀 발견 느낌, 루프 가능 심리스
 ```
-> Tags: `instrumental, industrial, dark, thriller, investigation, ambient`
+> 태그: `인스트루멘탈, 인더스트리얼, 어두운, 스릴러, 수사, 앰비언트`
 
 #### horror_ambient.mp3
 ```
-underground laboratory horror ambient soundscape, echoing dripping water in concrete room, buzzing malfunctioning fluorescent light hum, distant metallic scraping on tile floor, sterile institutional clinical dread, loopable seamless
+지하 실험실 호러 앰비언트 사운드스케이프, 콘크리트 방에 울려 퍼지는 물방울 소리, 고장난 형광등의 윙윙거림, 타일 바닥에서 먼 곳에서 들리는 금속 긁히는 소리, 무균적이고 기관 같은 임상적 공포, 루프 가능 심리스
 ```
-> Tags: `instrumental, horror, ambient, laboratory, dripping, clinical`
+> 태그: `인스트루멘탈, 호러, 앰비언트, 실험실, 물방울, 임상적`
 
 #### chase.mp3
 ```
-urgent desperate chase scene music, fast driving electronic beat at 140 BPM, pounding bass drum like running footsteps, frantic synth arpeggios, anime thriller escape sequence, pure adrenaline pumping urgency, loopable seamless
+긴박한 필사적 추격 장면 음악, 140 BPM의 빠르고 몰아치는 일렉트로닉 비트, 달리는 발소리 같은 두드리는 베이스 드럼, 광적인 신스 아르페지오, 애니메이션 스릴러 탈출 시퀀스, 순수한 아드레날린 러시의 긴박감, 루프 가능 심리스
 ```
-> Tags: `instrumental, chase, fast, electronic, urgent, 140bpm, anime`
+> 태그: `인스트루멘탈, 추격, 빠른, 일렉트로닉, 긴박한, 140bpm, 애니메이션`
 
 #### chase_intense.mp3
 ```
-extremely intense final chase scene music, even faster and more frantic at 160 BPM, heavy distorted bass drops, overdrive heartbeat rhythm, glitchy breaks and stutters, final desperate life-or-death pursuit, more intense than chase.mp3, loopable seamless
+극도로 강렬한 최종 추격 장면 음악, 160 BPM으로 더욱 빠르고 광적인, 무거운 왜곡 베이스 드롭, 오버드라이브 심장박동 리듬, 글리치 브레이크와 스터터, 최후의 필사적 생사의 추격, chase.mp3보다 더 강렬한, 루프 가능 심리스
 ```
-> Tags: `instrumental, intense, chase, 160bpm, distorted, desperate`
+> 태그: `인스트루멘탈, 강렬한, 추격, 160bpm, 왜곡, 필사적`
 
 #### climax.mp3
 ```
-epic dark orchestral climax music, massive dramatic strings and powerful brass fanfare, thundering timpani rolls, fate-deciding final confrontation, anime thriller final battle, cinematic dark and intense, loopable seamless
+에픽 다크 오케스트라 클라이맥스 음악, 웅장한 극적 현악과 파워풀한 금관 팡파르, 천둥 같은 팀파니 롤, 운명을 가르는 최종 대결, 애니메이션 스릴러 최후의 전투, 시네마틱 다크 앤 인텐스, 루프 가능 심리스
 ```
-> Tags: `instrumental, orchestral, epic, dark, climax, cinematic, dramatic`
+> 태그: `인스트루멘탈, 오케스트라, 에픽, 다크, 클라이맥스, 시네마틱, 극적인`
 
 #### eunsu_dark_theme.mp3
 ```
-twisted corrupted version of gentle cello piano character theme, same warm melody now played in dark minor key with heavy audio distortion and reverb, slowing down music box element, obsessive possessive love gone terribly wrong, psychological horror character reveal, loopable seamless
+뒤틀리고 변질된 부드러운 첼로 피아노 캐릭터 테마, 같은 따뜻한 멜로디가 이제 어두운 단조로 연주되며 심한 오디오 왜곡과 잔향, 느려지는 오르골 요소, 끔찍하게 잘못된 집착적 소유욕의 사랑, 심리 호러 캐릭터 정체 폭로, 루프 가능 심리스
 ```
-> Tags: `instrumental, twisted, cello, distorted, horror, character theme, dark`
+> 태그: `인스트루멘탈, 뒤틀린, 첼로, 왜곡, 호러, 캐릭터 테마, 다크`
 
 ---
 
-### Ending BGMs
+### 엔딩 BGM
 
 #### ending_hope.mp3
 ```
-hopeful emotional anime true ending theme, solo piano intro gradually building to full sweeping string orchestra, sunrise breaking through storm clouds feeling, tears of relief and hard-won victory, emotional catharsis and release, anime true ending credits
+희망찬 감동적인 애니메이션 트루 엔딩 테마, 솔로 피아노 인트로에서 점차 벅찬 전체 현악 오케스트라로 확장, 폭풍우 구름을 뚫고 떠오르는 일출 느낌, 안도의 눈물과 힘겹게 이뤄낸 승리, 감정적 카타르시스와 해방, 애니메이션 트루 엔딩 크레딧
 ```
-> Tags: `instrumental, emotional, hopeful, piano, strings, ending, anime`
-> Duration: 3 minutes
+> 태그: `인스트루멘탈, 감동, 희망, 피아노, 현악, 엔딩, 애니메이션`
+> 길이: 3분
 
 #### ending_melancholy.mp3
 ```
-sad deeply melancholic anime ending theme, solo fingerpicked acoustic guitar with gentle rain sound in background, survivor guilt and loneliness, alone but alive walking away, walking in rain anime ending, bittersweet and heavy
+슬프고 깊이 우울한 애니메이션 엔딩 테마, 솔로 핑거피킹 어쿠스틱 기타에 배경으로 잔잔한 빗소리, 생존자의 죄책감과 외로움, 홀로 살아서 걸어가는, 빗속을 걷는 애니메이션 엔딩, 씁쓸하고 무거운
 ```
-> Tags: `instrumental, sad, melancholic, acoustic guitar, rain, ending`
-> Duration: 2 minutes
+> 태그: `인스트루멘탈, 슬픈, 우울한, 어쿠스틱 기타, 비, 엔딩`
+> 길이: 2분
 
 #### ending_bittersweet.mp3
 ```
-bittersweet incomplete anime ending theme, gentle solo piano with fading trailing string notes, dawn slowly breaking but future deeply uncertain, delicate balance of hope mixed equally with lingering sadness, unresolved open feeling
+씁쓸달콤하고 불완전한 애니메이션 엔딩 테마, 부드러운 솔로 피아노에 사라져가는 현악 여음, 서서히 밝아오는 새벽이지만 미래는 깊이 불확실한, 희망과 남은 슬픔이 동등하게 섞인 섬세한 균형, 미해결된 열린 느낌
 ```
-> Tags: `instrumental, bittersweet, piano, strings, dawn, unresolved, ending`
-> Duration: 2 minutes
+> 태그: `인스트루멘탈, 씁쓸달콤한, 피아노, 현악, 새벽, 미해결, 엔딩`
+> 길이: 2분
 
 #### ending_dark.mp3
 ```
-dark suffocating horror anime ending theme, simple music box melody playing and looping endlessly, each repeat getting noticeably slower and more warped and distorted, trapped forever in an endless cycle, cage ending, claustrophobic and hopeless
+어둡고 질식하는 호러 애니메이션 엔딩 테마, 단순한 오르골 멜로디가 끝없이 반복 재생, 반복할수록 눈에 띄게 느려지고 뒤틀리고 왜곡됨, 끝없는 순환에 영원히 갇힌, 감금 엔딩, 폐소공포적이고 절망적인
 ```
-> Tags: `instrumental, dark, music box, distorted, looping, horror, ending`
-> Duration: 2 minutes
+> 태그: `인스트루멘탈, 다크, 오르골, 왜곡, 반복, 호러, 엔딩`
+> 길이: 2분
 
 #### ending_ghost.mp3
 ```
-ethereal haunting ghostly anime ending theme, airy breathy choir-like synthesizer pads with reversed echoing piano, floating weightlessly in empty endless space, watching the living world but unable to touch or be heard, otherworldly beautiful sadness
+초현실적이고 서늘한 유령 애니메이션 엔딩 테마, 숨결 같은 공기적 합창 신디사이저 패드에 역재생 피아노 에코, 텅 빈 끝없는 공간에 무중력으로 떠다니는 느낌, 산 자의 세계를 바라보지만 만지거나 들릴 수 없는, 이세계적인 아름다운 슬픔
 ```
-> Tags: `instrumental, ethereal, ghostly, choir, reversed piano, haunting, ending`
-> Duration: 2 minutes
+> 태그: `인스트루멘탈, 초현실적, 유령, 합창, 역재생 피아노, 서늘한, 엔딩`
+> 길이: 2분

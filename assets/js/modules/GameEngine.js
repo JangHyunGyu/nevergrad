@@ -186,7 +186,7 @@ class GameEngine {
 
         // 선택지
         if (scene.choices) {
-            const choiceLabels = t.choices || [];
+            const choiceLabels = (t.choices || []).map(l => this.i18n.resolve(l, this.state.playerName));
             this.dialogue.type(name, text, () => {
                 if (scene.timedChoice) {
                     this._showTimedChoices(scene, choiceLabels);

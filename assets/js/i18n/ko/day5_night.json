@@ -1,9 +1,16 @@
 {
+    "day5_night_routing": {
+        "name": "",
+        "text": ""
+    },
     "day5_night_start": {
         "name": "",
         "text": "*...*"
     },
-
+    "day5_ending_true_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_true": {
         "name": "나",
         "text": "*경찰이 학교를 봉쇄했다. 지하 실험실이 발견되었다. 모든 것이 밝혀지고 있다.*"
@@ -36,8 +43,10 @@
         "name": "나",
         "text": "*바람이 분다. 벚꽃이 아니라 빗물을 머금은 바람. 하지만 따뜻하다.*"
     },
-    "day5_ending_true_subtitle": "졸업 — 졸업하지 못한 교실에서, 마침내.",
-
+    "day5_ending_escape_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_escape": {
         "name": "나",
         "text": "*비를 맞으며 걷고 있다. 학교는 뒤에 두고 왔다.*"
@@ -54,8 +63,10 @@
         "name": "나",
         "text": "*살아남았다. 그것만으로... 충분한 걸까.*"
     },
-    "day5_ending_escape_subtitle": "생존자 — 살아남은 자의 무게.",
-
+    "day5_ending_resist_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_resist": {
         "name": "나",
         "text": "*정신을 차렸을 때, 학교 뒷산이었다. 새벽이 밝아오고 있다.*"
@@ -72,8 +83,10 @@
         "name": "나",
         "text": "*설화의 모습이 아침 빛에 녹아 사라진다. ...고마워.*"
     },
-    "day5_ending_resist_subtitle": "미완의 탈출 — 아직 끝나지 않았다.",
-
+    "day5_ending_cage_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_cage": {
         "name": "담임교사",
         "text": "\"좋은 아침이야, {name}.\""
@@ -90,8 +103,10 @@
         "name": "나",
         "text": "*...나는 왜 웃고 있는 거지?*"
     },
-    "day5_ending_cage_subtitle": "새장 — 영원한 학교생활.",
-
+    "day5_ending_forget_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_forget": {
         "name": "",
         "text": "*...*"
@@ -112,9 +127,10 @@
         "name": "나",
         "text": "*거울을 본다. 왜인지 모르게... 눈물이 흐르고 있다.*"
     },
-    "day5_ending_forget_ghost": "도망쳐",
-    "day5_ending_forget_subtitle": "리셋 — 모든 것이 처음으로.",
-
+    "day5_ending_ghost_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_ghost": {
         "name": "나",
         "text": "*...여긴 어디지? 학교... 맞다. 학교다. 하지만 아무도 날 보지 못한다.*"
@@ -134,7 +150,5 @@
     "day5_ending_ghost_5": {
         "name": "나",
         "text": "*...이번에는 내가 경고해야 한다.*"
-    },
-    "day5_ending_ghost_whisper": "여기서 나가",
-    "day5_ending_ghost_subtitle": "잔향 — 졸업하지 못한 자의 기록."
+    }
 }

@@ -7,8 +7,8 @@
  *
  * 시나리오(로직)와 텍스트(번역)를 완전 분리:
  *   scenario/day1_1_morning.js  → 분기, 배경, 스탯만 (텍스트 없음)
- *   i18n/ko/day1.json           → 한국어 텍스트만
- *   i18n/en/day1.json           → 영어 텍스트만
+ *   i18n/ko/day1_morning.json   → 한국어 텍스트만
+ *   i18n/en/day1_morning.json   → 영어 텍스트만
  *
  * scene ID가 곧 텍스트 키:
  *   시나리오: { "day1_opening": { next: "day1_opening_2" } }
@@ -39,19 +39,19 @@ class I18nManager {
 
     /**
      * 특정 Day의 텍스트 로드 (모든 시간대 파일 병합)
-     * day1.json + day1_lunch.json + day1_afterschool.json + day1_night.json → texts["day1"]
+     * day1_morning.json + day1_lunch.json + day1_afterschool.json + day1_night.json → texts["day1"]
      * @param {number} day - 1~5
      */
     async loadDay(day) {
         const key = `day${day}`;
         if (this.loaded[key]) return;
 
-        const slots = ['', '_morning', '_lunch', '_afterschool', '_night'];
+        const slots = ['_morning', '_lunch', '_afterschool', '_night'];
         const basePath = `assets/js/i18n/${this.currentLang}`;
         this.texts[key] = {};
 
         const fetches = slots.map(async (slot) => {
-            const filename = slot === '' ? `day${day}.json` : `day${day}${slot}.json`;
+            const filename = `day${day}${slot}.json`;
             try {
                 const res = await fetch(`${basePath}/${filename}`);
                 if (!res.ok) return;

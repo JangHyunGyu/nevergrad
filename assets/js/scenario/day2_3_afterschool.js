@@ -159,6 +159,7 @@ Object.assign(SCENARIO[2], {
         background: "street",
         character: null,
         sunset: true,
-        next: null
+        changeSlot: "night",
+        next: "day2_night_start"
     }
 });

@@ -211,6 +211,7 @@ Object.assign(SCENARIO[4], {
         background: "school_gate_evening",
         bgm: "tension.mp3",
         character: null,
-        next: null
+        changeSlot: "night",
+        next: "day4_night_start"
     }
 });

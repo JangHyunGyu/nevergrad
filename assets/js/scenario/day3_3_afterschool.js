@@ -243,6 +243,7 @@ Object.assign(SCENARIO[3], {
     "day3_after_end": {
         background: "school_gate_evening",
         character: null,
-        next: null
+        changeSlot: "night",
+        next: "day3_night_start"
     }
 });

@@ -170,6 +170,7 @@ Object.assign(SCENARIO[3], {
         character: null,
         // ★ GENRE SHIFT 트리거
         triggerGenreShift: true,
-        next: null
+        changeDay: 4, changeSlot: "morning",
+        next: "day4_morning_start"
     }
 });

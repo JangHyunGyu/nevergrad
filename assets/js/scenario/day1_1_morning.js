@@ -214,6 +214,7 @@ Object.assign(SCENARIO[1], {
     "day1_morning_end": {
         background: "classroom",
         character: null,
-        next: null // day1_2_lunch.js의 첫 씬으로 연결
+        changeSlot: "lunch",
+        next: "day1_lunch_start"
     }
 });

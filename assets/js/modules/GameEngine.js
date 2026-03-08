@@ -110,11 +110,27 @@ class GameEngine {
 
     _loadScene(sceneId) {
         const day = this.state.currentDay;
-        const scene = SCENARIO[day]?.[sceneId];
+        const dayScenario = SCENARIO[day];
+        let scene = dayScenario?.[sceneId];
 
         if (!scene) {
             console.error(`[GameEngine] Scene not found: day${day}.${sceneId}`);
             return;
+        }
+
+        // Scene-level condition: if not met, try _alt variant or walk to next sibling
+        while (scene.condition && !this._checkCondition(scene.condition)) {
+            const alt = dayScenario[sceneId + '_alt'];
+            if (alt) {
+                sceneId = sceneId + '_alt';
+                scene = alt;
+                break;
+            }
+            const keys = Object.keys(dayScenario);
+            const idx = keys.indexOf(sceneId);
+            if (idx < 0 || idx + 1 >= keys.length) break;
+            sceneId = keys[idx + 1];
+            scene = dayScenario[sceneId];
         }
 
         this.state.currentScene = sceneId;
@@ -221,6 +237,14 @@ class GameEngine {
             if (next) { this._loadScene(next); return; }
         }
 
+        // 날짜 변경 (day1_night_end → day2_morning_start 등)
+        if (scene.changeDay) {
+            this.state.currentDay = scene.changeDay;
+        }
+        if (scene.changeSlot) {
+            this.state.currentSlot = scene.changeSlot;
+        }
+
         if (scene.next) this._loadScene(scene.next);
     }
 
@@ -235,7 +259,7 @@ class GameEngine {
 
         let labelIdx = 0;
         choices.forEach((choice) => {
-            if (choice.condition && !this.state.hasFlag(choice.condition)) return;
+            if (choice.condition && !this._checkCondition(choice.condition)) return;
             if (choice.excludeCondition && this.state.hasFlag(choice.excludeCondition)) return;
 
             const btn = document.createElement('button');
@@ -329,11 +353,19 @@ class GameEngine {
 
     _resolveBranch(branches) {
         for (const b of branches) {
-            if (b.condition && !this.state.hasFlag(b.condition)) continue;
+            if (b.condition && !this._checkCondition(b.condition)) continue;
             if (b.excludeCondition && this.state.hasFlag(b.excludeCondition)) continue;
             return b.next;
         }
         return null;
+    }
+
+    /**
+     * condition이 문자열이면 단일 플래그, 배열이면 모두 충족 확인
+     */
+    _checkCondition(cond) {
+        if (Array.isArray(cond)) return cond.every(c => this.state.hasFlag(c));
+        return this.state.hasFlag(cond);
     }
 
     _resolveAffinityBranch(scene) {

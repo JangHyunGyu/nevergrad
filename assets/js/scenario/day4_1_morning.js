@@ -114,6 +114,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_morning_end": {
         character: null,
-        next: null
+        changeSlot: "lunch",
+        next: "day4_lunch_start"
     }
 });

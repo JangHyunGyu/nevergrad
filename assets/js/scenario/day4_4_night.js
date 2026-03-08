@@ -137,6 +137,7 @@ Object.assign(SCENARIO[4], {
         background: "room_night",
         bgm: null,
         character: null,
-        next: null
+        changeDay: 5, changeSlot: "morning",
+        next: "day5_morning_start"
     }
 });

@@ -40,6 +40,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_night_end": {
         background: "black",
-        next: null // → day2_1_morning
+        changeDay: 2, changeSlot: "morning",
+        next: "day2_morning_start"
     }
 });

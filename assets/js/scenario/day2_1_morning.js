@@ -73,6 +73,7 @@ Object.assign(SCENARIO[2], {
     "day2_morning_end": {
         background: "classroom",
         character: null,
-        next: null // → day2_2_lunch
+        changeSlot: "lunch",
+        next: "day2_lunch_start"
     }
 });

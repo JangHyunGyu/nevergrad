@@ -132,6 +132,7 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_end": {
         background: "classroom",
         character: null,
-        next: null // → day1_3_afterschool
+        changeSlot: "afterschool",
+        next: "day1_after_start"
     }
 });

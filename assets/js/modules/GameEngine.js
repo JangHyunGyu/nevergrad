@@ -35,6 +35,9 @@ class GameEngine {
         // 텍스트 로드
         await this.i18n.loadAll();
 
+        // HTML lang 속성 및 UI 텍스트 동적 적용
+        this._applyUILocale();
+
         this._bindTitleScreen();
         this._bindGameScreen();
         this._bindPauseMenu();
@@ -42,6 +45,49 @@ class GameEngine {
         if (this.save.hasSaveData()) {
             document.getElementById('btn-continue').disabled = false;
         }
+    }
+
+    /**
+     * UI 텍스트를 현재 언어로 적용 (HTML lang, title, meta, 버튼 등)
+     */
+    _applyUILocale() {
+        const ui = (key) => this.i18n.getUI(key);
+
+        // <html lang>
+        document.documentElement.lang = this.i18n.currentLang;
+
+        // <title>, <meta description>
+        document.title = ui('metaTitle');
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) metaDesc.content = ui('metaDesc');
+
+        // 타이틀 화면
+        const titleEl = document.querySelector('.title-text');
+        const subtitleEl = document.querySelector('.title-subtitle');
+        if (titleEl) titleEl.textContent = ui('title');
+        if (subtitleEl) subtitleEl.textContent = ui('subtitle');
+
+        // 메뉴 버튼
+        const btnMap = {
+            'btn-new-game': 'newGame', 'btn-continue': 'continue', 'btn-gallery': 'gallery',
+            'btn-start': 'start', 'btn-save': 'save', 'btn-load': 'load',
+            'btn-settings': 'settings', 'btn-title': 'toTitle', 'btn-resume': 'resume',
+            'ft-send': 'ftSend'
+        };
+        for (const [id, key] of Object.entries(btnMap)) {
+            const el = document.getElementById(id);
+            if (el) el.textContent = ui(key);
+        }
+
+        // 이름 입력 화면
+        const namePrompt = document.querySelector('.name-prompt');
+        const nameInput = document.getElementById('player-name-input');
+        if (namePrompt) namePrompt.textContent = ui('namePrompt');
+        if (nameInput) nameInput.placeholder = ui('namePlaceholder');
+
+        // FreeTalk 입력
+        const ftInput = document.getElementById('ft-input');
+        if (ftInput) ftInput.placeholder = ui('ftPlaceholder');
     }
 
     // ===== Title Screen =====
@@ -409,16 +455,20 @@ class GameEngine {
     // ===== Text =====
 
     _resolveName(name) {
-        if (name === "나" || name === "Me") return this.state.playerName || "나";
-        return name; // i18n에서 이미 현지화된 이름이 옴
+        const selfNames = ["나", "Me", "Ich", "私", "Yo", "Moi"];
+        if (selfNames.includes(name)) return this.state.playerName || name;
+        return name;
     }
 
     // ===== HUD =====
 
     _updateHUD() {
         const dayEl = document.getElementById('day-display');
-        const slotName = CONFIG.TIME_SLOT_NAMES[this.state.currentSlot] || "";
-        if (dayEl) dayEl.textContent = `${this.state.currentDay}일차 - ${slotName}`;
+        if (!dayEl) return;
+        const slots = this.i18n.getUI('slots') || {};
+        const slotName = slots[this.state.currentSlot] || CONFIG.TIME_SLOT_NAMES[this.state.currentSlot] || "";
+        const fmt = this.i18n.getUI('dayFormat') || "{day}일차 - {slot}";
+        dayEl.textContent = fmt.replace('{day}', this.state.currentDay).replace('{slot}', slotName);
     }
 
     // ===== Screen =====

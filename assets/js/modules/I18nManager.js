@@ -134,4 +134,83 @@ class I18nManager {
         fr: { label: "Français", flag: "🇫🇷" },
         de: { label: "Deutsch", flag: "🇩🇪" }
     };
+
+    /**
+     * UI 텍스트 (버튼, 제목, 메타 등) — 언어별 정적 번역
+     */
+    static UI = {
+        ko: {
+            title: "졸업하지 못한 교실", subtitle: "5일의 기록",
+            metaTitle: "졸업하지 못한 교실 - 5일의 기록",
+            metaDesc: "전학 첫날, 모든 것이 완벽했다. 너무 완벽해서 이상할 정도로.",
+            newGame: "새 게임", continue: "이어하기", gallery: "갤러리",
+            namePrompt: "당신의 이름은?", namePlaceholder: "이름을 입력하세요", start: "시작",
+            save: "저장", load: "불러오기", settings: "설정", toTitle: "타이틀로", resume: "돌아가기",
+            ftPlaceholder: "대화를 입력하세요...", ftSend: "전송",
+            dayFormat: "{day}일차 - {slot}",
+            slots: { morning: "아침", lunch: "점심", afterschool: "방과후", night: "밤" }
+        },
+        en: {
+            title: "The Classroom of No Graduation", subtitle: "5 Days Record",
+            metaTitle: "Nevergrad - The Classroom of No Graduation",
+            metaDesc: "The first day of transfer, everything was perfect. Too perfect to be normal.",
+            newGame: "New Game", continue: "Continue", gallery: "Gallery",
+            namePrompt: "What is your name?", namePlaceholder: "Enter your name", start: "Start",
+            save: "Save", load: "Load", settings: "Settings", toTitle: "Title", resume: "Resume",
+            ftPlaceholder: "Type a message...", ftSend: "Send",
+            dayFormat: "Day {day} - {slot}",
+            slots: { morning: "Morning", lunch: "Lunch", afterschool: "After School", night: "Night" }
+        },
+        ja: {
+            title: "卒業できない教室", subtitle: "5日間の記録",
+            metaTitle: "Nevergrad - 卒業できない教室",
+            metaDesc: "転校初日、すべてが完璧だった。完璧すぎて不思議なほどに。",
+            newGame: "ニューゲーム", continue: "つづきから", gallery: "ギャラリー",
+            namePrompt: "あなたの名前は？", namePlaceholder: "名前を入力してください", start: "スタート",
+            save: "セーブ", load: "ロード", settings: "設定", toTitle: "タイトルへ", resume: "戻る",
+            ftPlaceholder: "メッセージを入力...", ftSend: "送信",
+            dayFormat: "{day}日目 - {slot}",
+            slots: { morning: "朝", lunch: "昼", afterschool: "放課後", night: "夜" }
+        },
+        es: {
+            title: "El Aula Sin Graduación", subtitle: "Registro de 5 Días",
+            metaTitle: "Nevergrad - El Aula Sin Graduación",
+            metaDesc: "El primer día de transferencia, todo era perfecto. Demasiado perfecto para ser normal.",
+            newGame: "Nueva Partida", continue: "Continuar", gallery: "Galería",
+            namePrompt: "¿Cuál es tu nombre?", namePlaceholder: "Ingresa tu nombre", start: "Iniciar",
+            save: "Guardar", load: "Cargar", settings: "Ajustes", toTitle: "Título", resume: "Volver",
+            ftPlaceholder: "Escribe un mensaje...", ftSend: "Enviar",
+            dayFormat: "Día {day} - {slot}",
+            slots: { morning: "Mañana", lunch: "Almuerzo", afterschool: "Después de Clases", night: "Noche" }
+        },
+        fr: {
+            title: "La Classe Sans Diplôme", subtitle: "Chronique de 5 Jours",
+            metaTitle: "Nevergrad - La Classe Sans Diplôme",
+            metaDesc: "Le premier jour de transfert, tout était parfait. Trop parfait pour être normal.",
+            newGame: "Nouvelle Partie", continue: "Continuer", gallery: "Galerie",
+            namePrompt: "Quel est votre nom ?", namePlaceholder: "Entrez votre nom", start: "Commencer",
+            save: "Sauvegarder", load: "Charger", settings: "Paramètres", toTitle: "Titre", resume: "Retour",
+            ftPlaceholder: "Écrivez un message...", ftSend: "Envoyer",
+            dayFormat: "Jour {day} - {slot}",
+            slots: { morning: "Matin", lunch: "Midi", afterschool: "Après les Cours", night: "Nuit" }
+        },
+        de: {
+            title: "Das Klassenzimmer ohne Abschluss", subtitle: "Aufzeichnung von 5 Tagen",
+            metaTitle: "Nevergrad - Das Klassenzimmer ohne Abschluss",
+            metaDesc: "Der erste Tag nach dem Schulwechsel, alles war perfekt. Zu perfekt, um normal zu sein.",
+            newGame: "Neues Spiel", continue: "Fortsetzen", gallery: "Galerie",
+            namePrompt: "Wie heißt du?", namePlaceholder: "Namen eingeben", start: "Start",
+            save: "Speichern", load: "Laden", settings: "Einstellungen", toTitle: "Titelbildschirm", resume: "Zurück",
+            ftPlaceholder: "Nachricht eingeben...", ftSend: "Senden",
+            dayFormat: "Tag {day} - {slot}",
+            slots: { morning: "Morgen", lunch: "Mittag", afterschool: "Nach der Schule", night: "Nacht" }
+        }
+    };
+
+    /**
+     * 현재 언어의 UI 텍스트 반환
+     */
+    getUI(key) {
+        return I18nManager.UI[this.currentLang]?.[key] || I18nManager.UI['ko'][key] || '';
+    }
 }

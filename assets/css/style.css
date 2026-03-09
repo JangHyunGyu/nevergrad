@@ -393,3 +393,54 @@ body {
     .dialogue-text { font-size: 0.9rem; }
     .choice-btn { font-size: 0.85rem; padding: 0.7rem 1.5rem; }
 }
+
+/* ===== Rotate Prompt (모바일/태블릿 세로모드 → 가로 회전 안내) ===== */
+.rotate-prompt {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.rotate-prompt .rotate-icon {
+    font-size: 4rem;
+    animation: rotate-phone 2s ease-in-out infinite;
+}
+
+.rotate-prompt .rotate-text {
+    font-size: 1.1rem;
+    font-family: var(--font-main);
+    letter-spacing: 0.05em;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
+@keyframes rotate-phone {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-30deg); }
+    75% { transform: rotate(90deg); }
+}
+
+/* 터치 디바이스 + 세로모드일 때만 표시 */
+@media (hover: none) and (pointer: coarse) and (orientation: portrait) {
+    .rotate-prompt {
+        display: flex !important;
+    }
+}
+
+/* 태블릿 포함: 터치 + 세로 + 화면 너비 1024px 이하 */
+@media (any-pointer: coarse) and (orientation: portrait) and (max-width: 1024px) {
+    .rotate-prompt {
+        display: flex !important;
+    }
+}

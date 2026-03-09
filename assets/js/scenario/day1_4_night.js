@@ -99,10 +99,12 @@ Object.assign(SCENARIO[1], {
     },
     "day1_night_sea_reply_1": {
         night: true,
+        messengerDelay: 1200,
         next: "day1_night_recall_seolhwa"
     },
     "day1_night_sea_reply_2": {
         night: true,
+        messengerDelay: 1200,
         next: "day1_night_recall_seolhwa"
     },
     "day1_night_sea_reply_3": {

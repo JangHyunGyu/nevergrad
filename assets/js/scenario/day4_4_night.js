@@ -29,18 +29,23 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_phone_2"
     },
     "day4_night_phone_2": {
+        messengerDelay: 1200,
         next: "day4_night_phone_3"
     },
     "day4_night_phone_3": {
+        messengerDelay: 1000,
         next: "day4_night_phone_4"
     },
     "day4_night_phone_4": {
+        messengerDelay: 800,
         next: "day4_night_phone_5"
     },
     "day4_night_phone_5": {
+        messengerDelay: 600,
         next: "day4_night_phone_6"
     },
     "day4_night_phone_6": {
+        messengerDelay: 400,
         glitch: { noise: true },
         next: "day4_night_phone_7"
     },
@@ -48,9 +53,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_phone_8"
     },
     "day4_night_phone_8": {
+        messengerDelay: 1000,
         next: "day4_night_phone_9"
     },
     "day4_night_phone_9": {
+        messengerDelay: 500,
         next: "day4_night_phone_10"
     },
 
@@ -59,9 +66,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_phone_11"
     },
     "day4_night_phone_11": {
+        messengerDelay: 1500,
         next: "day4_night_phone_12"
     },
     "day4_night_phone_12": {
+        messengerDelay: 1200,
         next: "day4_night_plan"
     },
 

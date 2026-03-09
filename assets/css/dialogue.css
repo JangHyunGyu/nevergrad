@@ -112,3 +112,23 @@
     color: rgba(255, 255, 255, 0.5);
     z-index: 15;
 }
+
+/* ===== Messenger Typing Indicator ===== */
+.messenger-typing {
+    min-height: 1.5em;
+}
+
+.typing-indicator {
+    display: inline-block;
+    letter-spacing: 0.3em;
+    animation: typing-dots 1.2s steps(4, end) infinite;
+    opacity: 0.6;
+    font-size: 1.2em;
+}
+
+@keyframes typing-dots {
+    0%   { opacity: 0.2; }
+    20%  { opacity: 0.6; }
+    50%  { opacity: 1; }
+    100% { opacity: 0.2; }
+}

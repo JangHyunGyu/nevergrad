@@ -99,6 +99,8 @@ class GameEngine {
 
         document.getElementById('btn-continue')?.addEventListener('click', async () => {
             this.save.load();
+            this.glitch.initConsoleEasterEgg(this.state.currentDay);
+            if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
             this._showScreen('game-screen');
             this._loadScene(this.state.currentScene);
         });
@@ -112,6 +114,7 @@ class GameEngine {
             this.state.currentSlot = "morning";
             this.state.currentScene = "day1_opening";
 
+            this.glitch.initConsoleEasterEgg(1);
             this._showScreen('game-screen');
             this._loadScene("day1_opening");
         });
@@ -245,11 +248,17 @@ class GameEngine {
         const typeOpts = {};
         if (scene.typingSpeed) typeOpts.typingSpeed = scene.typingSpeed;
         if (scene.unskippable) typeOpts.unskippable = true;
+        if (scene.messengerDelay) typeOpts.messengerDelay = scene.messengerDelay;
+
+        // 타이핑 메서드 선택: 메신저 모드("..." 인디케이터 후 메시지) vs 일반
+        const typeFn = scene.messengerDelay
+            ? (n, t, cb, o) => this.dialogue.typeMessenger(n, t, cb, o)
+            : (n, t, cb, o) => this.dialogue.type(n, t, cb, o);
 
         // 선택지
         if (scene.choices) {
             const choiceLabels = (t.choices || []).map(l => this.i18n.resolve(l, this.state.playerName));
-            this.dialogue.type(name, text, () => {
+            typeFn(name, text, () => {
                 if (scene.timedChoice) {
                     this._showTimedChoices(scene, choiceLabels);
                 } else {
@@ -259,13 +268,13 @@ class GameEngine {
         }
         // FreeTalk
         else if (scene.type === "free_talk") {
-            this.dialogue.type(name, text, () => {
+            typeFn(name, text, () => {
                 this._startFreeTalk(scene);
             }, typeOpts);
         }
         // 일반 대사
         else {
-            this.dialogue.type(name, text, null, typeOpts);
+            typeFn(name, text, null, typeOpts);
         }
     }
 
@@ -283,9 +292,16 @@ class GameEngine {
             if (next) { this._loadScene(next); return; }
         }
 
+        // 장르 전환 트리거 — 브라우저 탭 기믹 활성화
+        if (scene.triggerGenreShift) {
+            this.glitch.initTabGimmick(this.state);
+        }
+
         // 날짜 변경 (day1_night_end → day2_morning_start 등)
         if (scene.changeDay) {
             this.state.currentDay = scene.changeDay;
+            // 콘솔 이스터에그 — Day별 설화 메시지 업데이트
+            this.glitch.initConsoleEasterEgg(scene.changeDay);
         }
         if (scene.changeSlot) {
             this.state.currentSlot = scene.changeSlot;

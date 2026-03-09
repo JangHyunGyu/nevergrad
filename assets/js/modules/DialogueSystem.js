@@ -86,4 +86,49 @@ class DialogueSystem {
             this._onComplete = null;
         }
     }
+
+    /**
+     * 메신저 모드 — "..." 타이핑 인디케이터 후 메시지 표시
+     * 시나리오에서 messengerDelay 옵션으로 제어
+     *
+     * @param {string} name - 발신자 이름
+     * @param {string} text - 메시지 텍스트
+     * @param {Function|null} onComplete - 완료 콜백
+     * @param {object} [options] - 추가 옵션
+     * @param {number} [options.messengerDelay] - 인디케이터 표시 시간 ms (기본: 1200)
+     */
+    typeMessenger(name, text, onComplete = null, options = {}) {
+        const delay = options.messengerDelay || 1200;
+
+        if (this.nameEl) this.nameEl.textContent = name;
+        if (this.indicatorEl) this.indicatorEl.style.display = 'none';
+
+        // 1단계: "..." 타이핑 인디케이터 표시
+        if (this.textEl) {
+            this.textEl.innerHTML = '';
+            this.textEl.classList.remove('narration');
+            this.textEl.classList.add('messenger-typing');
+
+            const dots = document.createElement('span');
+            dots.className = 'typing-indicator';
+            dots.textContent = '···';
+            this.textEl.appendChild(dots);
+        }
+
+        this.isTyping = true;
+        this._unskippable = true; // 인디케이터 중 스킵 차단
+        this._fullText = text;
+        this._onComplete = onComplete;
+
+        // 2단계: 딜레이 후 실제 메시지 타이핑
+        this._messengerTimer = setTimeout(() => {
+            if (this.textEl) {
+                this.textEl.classList.remove('messenger-typing');
+            }
+            this._unskippable = false;
+            this.type(name, text, onComplete, {
+                typingSpeed: options.typingSpeed || CONFIG.TYPING_SPEED
+            });
+        }, delay);
+    }
 }

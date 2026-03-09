@@ -90,14 +90,17 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_msg_2": {
         night: true,
+        messengerDelay: 1200,
         next: "day2_night_msg_3"
     },
     "day2_night_msg_3": {
         night: true,
+        messengerDelay: 1200,
         next: "day2_night_msg_4"
     },
     "day2_night_msg_4": {
         night: true,
+        messengerDelay: 1200,
         next: "day2_night_msg_5"
     },
     "day2_night_msg_5": {
@@ -112,6 +115,7 @@ Object.assign(SCENARIO[2], {
     // ===== 잠들기 전 =====
     "day2_night_msg_7": {
         night: true,
+        messengerDelay: 800,
         next: "day2_night_sleep_1"
     },
     "day2_night_sleep_1": {

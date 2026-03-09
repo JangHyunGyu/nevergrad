@@ -45,21 +45,27 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_sea_msg_2"
     },
     "day3_night_sea_msg_2": {
+        messengerDelay: 1200,
         next: "day3_night_sea_msg_3"
     },
     "day3_night_sea_msg_3": {
+        messengerDelay: 800,
         next: "day3_night_sea_msg_4"
     },
     "day3_night_sea_msg_4": {
+        messengerDelay: 600,
         next: "day3_night_sea_msg_5"
     },
     "day3_night_sea_msg_5": {
+        messengerDelay: 500,
         next: "day3_night_sea_msg_6"
     },
     "day3_night_sea_msg_6": {
+        messengerDelay: 400,
         next: "day3_night_sea_msg_7"
     },
     "day3_night_sea_msg_7": {
+        messengerDelay: 300,
         next: "day3_night_sea_msg_8"
     },
     "day3_night_sea_msg_8": {

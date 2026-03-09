@@ -1,27 +1,57 @@
 /**
- * Day 5-1: Morning - 최종일 아침. 학교 완전 봉쇄 상태.
- * 위화감 95%. NIGHTMARE 글리치 레벨. 감시 극대화.
+ * Day 5-1: Morning - 봉쇄. 최종일 아침.
+ * NIGHTMARE 글리치 레벨 4. 쇠사슬/철조망 봉쇄.
+ * 세 사람 동시 등장. 졸업식='완성'. 유나 쪽지 (rescued_yuna).
  */
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[5]) SCENARIO[5] = {};
 
 Object.assign(SCENARIO[5], {
 
+    // ══════════════════════════════════════
+    // 자취방 - 마지막 날 기상
+    // ══════════════════════════════════════
     "day5_morning_start": {
         background: "room_morning",
         bgm: "nightmare.mp3",
         character: null,
-        glitchLevel: 4, // NIGHTMARE
+        glitchLevel: 4,
         next: "day5_morning_start_2"
     },
     "day5_morning_start_2": {
         next: "day5_morning_start_3"
     },
     "day5_morning_start_3": {
+        next: "day5_morning_start_4"
+    },
+    "day5_morning_start_4": {
+        next: "day5_morning_start_5"
+    },
+    "day5_morning_start_5": {
+        next: "day5_morning_start_6"
+    },
+    "day5_morning_start_6": {
+        next: "day5_morning_start_7"
+    },
+    "day5_morning_start_7": {
+        next: "day5_morning_start_8"
+    },
+    "day5_morning_start_8": {
+        next: "day5_morning_start_9"
+    },
+    "day5_morning_start_9": {
+        next: "day5_morning_start_10"
+    },
+    "day5_morning_start_10": {
+        next: "day5_morning_start_11"
+    },
+    "day5_morning_start_11": {
         next: "day5_morning_gate"
     },
 
-    // ── 등교 - 완전 봉쇄 ──
+    // ══════════════════════════════════════
+    // 통학로 → 학교 정문 - 봉쇄
+    // ══════════════════════════════════════
     "day5_morning_gate": {
         background: "school_gate",
         character: null,
@@ -32,28 +62,94 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_gate_3"
     },
     "day5_morning_gate_3": {
-        // 은수, 세아, 리인이 함께 기다림
-        character: "eunsu_gentle",
+        next: "day5_morning_gate_4"
+    },
+    "day5_morning_gate_4": {
+        next: "day5_morning_gate_5"
+    },
+    "day5_morning_gate_5": {
+        next: "day5_morning_gate_6"
+    },
+    "day5_morning_gate_6": {
+        next: "day5_morning_gate_7"
+    },
+    "day5_morning_gate_7": {
+        next: "day5_morning_gate_8"
+    },
+    "day5_morning_gate_8": {
+        next: "day5_morning_gate_9"
+    },
+    "day5_morning_gate_9": {
+        next: "day5_morning_gate_10"
+    },
+    "day5_morning_gate_10": {
+        next: "day5_morning_gate_11"
+    },
+    "day5_morning_gate_11": {
+        next: "day5_morning_gate_12"
+    },
+
+    // ── 세 사람 동시 등장 ──
+    "day5_morning_gate_12": {
+        next: "day5_morning_gate_13"
+    },
+    "day5_morning_gate_13": {
+        next: "day5_morning_gate_14"
+    },
+    "day5_morning_gate_14": {
         next: "day5_morning_welcome"
     },
     "day5_morning_welcome": {
+        character: "eunsu_gentle",
         next: "day5_morning_welcome_2"
     },
     "day5_morning_welcome_2": {
-        character: "sea_smile",
         next: "day5_morning_welcome_3"
     },
     "day5_morning_welcome_3": {
-        character: "riin_smile",
         next: "day5_morning_welcome_4"
     },
     "day5_morning_welcome_4": {
+        character: "sea_smile",
+        next: "day5_morning_welcome_5"
+    },
+    "day5_morning_welcome_5": {
+        next: "day5_morning_welcome_6"
+    },
+    "day5_morning_welcome_6": {
+        next: "day5_morning_welcome_7"
+    },
+    "day5_morning_welcome_7": {
+        character: "riin_smile",
+        next: "day5_morning_welcome_8"
+    },
+    "day5_morning_welcome_8": {
+        next: "day5_morning_welcome_9"
+    },
+    "day5_morning_welcome_9": {
+        next: "day5_morning_welcome_10"
+    },
+    "day5_morning_welcome_10": {
+        next: "day5_morning_welcome_11"
+    },
+    "day5_morning_welcome_11": {
         character: null,
         glitch: { expressionFlash: "eunsu_obsessed", flashDuration: 100 },
+        next: "day5_morning_welcome_12"
+    },
+    "day5_morning_welcome_12": {
+        next: "day5_morning_welcome_13"
+    },
+    "day5_morning_welcome_13": {
+        next: "day5_morning_welcome_14"
+    },
+    "day5_morning_welcome_14": {
         next: "day5_morning_classroom"
     },
 
-    // ── 교실 - 이상한 수업 ──
+    // ══════════════════════════════════════
+    // 교실 - 졸업식 = '완성'
+    // ══════════════════════════════════════
     "day5_morning_classroom": {
         background: "classroom",
         character: null,
@@ -63,6 +159,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_classroom_3"
     },
     "day5_morning_classroom_3": {
+        next: "day5_morning_classroom_4"
+    },
+    "day5_morning_classroom_4": {
+        next: "day5_morning_classroom_5"
+    },
+    "day5_morning_classroom_5": {
+        next: "day5_morning_classroom_6"
+    },
+    "day5_morning_classroom_6": {
         character: "eunsu_gentle",
         next: "day5_morning_class"
     },
@@ -70,30 +175,87 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_class_2"
     },
     "day5_morning_class_2": {
-        glitch: { corruptText: true, corruptIndices: [2, 5, 8, 11] },
         next: "day5_morning_class_3"
     },
     "day5_morning_class_3": {
-        character: "eunsu_dark",
-        glitch: { screenShake: true, shakeDuration: 300 },
         next: "day5_morning_class_4"
     },
     "day5_morning_class_4": {
+        next: "day5_morning_class_5"
+    },
+    "day5_morning_class_5": {
+        next: "day5_morning_class_6"
+    },
+    "day5_morning_class_6": {
+        next: "day5_morning_class_7"
+    },
+    "day5_morning_class_7": {
+        next: "day5_morning_class_8"
+    },
+    "day5_morning_class_8": {
+        next: "day5_morning_class_9"
+    },
+    "day5_morning_class_9": {
         character: null,
-        next: "day5_morning_note"
+        next: "day5_morning_class_10"
+    },
+    "day5_morning_class_10": {
+        character: "eunsu_dark",
+        glitch: { screenShake: true, shakeDuration: 300 },
+        next: "day5_morning_class_11"
+    },
+    "day5_morning_class_11": {
+        next: "day5_morning_class_12"
+    },
+    "day5_morning_class_12": {
+        character: null,
+        next: "day5_morning_class_13"
+    },
+    "day5_morning_class_13": {
+        next: "day5_morning_class_14"
+    },
+    "day5_morning_class_14": {
+        next: "day5_morning_class_15"
+    },
+    "day5_morning_class_15": {
+        next: "day5_morning_class_16"
     },
 
-    // ── 쪽지 ──
-    "day5_morning_note": {
-        next: "day5_morning_note_2",
-        condition: "rescued_yuna"
+    // ══════════════════════════════════════
+    // 유나의 쪽지 (rescued_yuna condition)
+    // ══════════════════════════════════════
+    "day5_morning_class_16": {
+        // rescued_yuna 이면 쪽지 발견, 아니면 no_note로
+        condition: "rescued_yuna",
+        next: "day5_morning_note",
+        fallback: "day5_morning_no_note"
     },
-    "day5_morning_note_alt": {
-        next: "day5_morning_end"
+
+    "day5_morning_note": {
+        next: "day5_morning_note_2"
     },
     "day5_morning_note_2": {
-        next: "day5_morning_end",
+        next: "day5_morning_note_3"
+    },
+    "day5_morning_note_3": {
+        next: "day5_morning_note_4"
+    },
+    "day5_morning_note_4": {
+        next: "day5_morning_note_5"
+    },
+    "day5_morning_note_5": {
+        next: "day5_morning_note_6"
+    },
+    "day5_morning_note_6": {
+        next: "day5_morning_note_7",
         setFlags: ["yuna_final_plan"]
+    },
+    "day5_morning_note_7": {
+        next: "day5_morning_end"
+    },
+
+    "day5_morning_no_note": {
+        next: "day5_morning_end"
     },
 
     "day5_morning_end": {

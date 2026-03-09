@@ -1,55 +1,123 @@
 {
     "day5_lunch_start": {
         "name": "나",
-        "text": "*점심 종이 울렸다. 지금이다.*"
+        "text": "*점심 종이 울렸다.*"
     },
     "day5_lunch_start_2": {
         "name": "나",
-        "text": "*가방을 챙겼다. 증거는 전부 주머니에. 심장이 미칠듯이 뛴다.*"
+        "text": "*지금이다.*"
+    },
+    "day5_lunch_start_3": {
+        "name": "나",
+        "text": "*세아가 \"같이 밥 먹자\"라고 말하기 전에 자리에서 일어났다.*"
+    },
+    "day5_lunch_start_4": {
+        "name": "나",
+        "text": "\"화장실.\""
+    },
+    "day5_lunch_start_5": {
+        "name": "나",
+        "text": "*세아를 보지 않았다. 보면 멈출 것 같아서.*"
+    },
+    "day5_lunch_start_6": {
+        "name": "나",
+        "text": "*교실을 나왔다. 복도. 왼쪽으로. 구관 쪽으로.*"
+    },
+    "day5_lunch_start_7": {
+        "name": "나",
+        "text": "*걷는다. 뛰고 싶지만 걸어야 한다. 뛰면 눈에 띈다. 가방 끈을 꽉 쥐었다. 손바닥에 땀이 배어있다.*"
+    },
+    "day5_lunch_start_8": {
+        "name": "나",
+        "text": "*복도가 길다. 끝없이 길다. 구관으로 향하는 연결 통로가 보인다. 뒤를 돌아봤다. 아무도 없다. ...아직은.*"
     },
 
     "day5_lunch_branch": {
         "name": "나",
         "text": "*유나가 알려준 장소. 구관 3층.*"
     },
-    "day5_lunch_branch_alt": {
-        "name": "나",
-        "text": "*혼자서 해야 한다. 출구를 찾자.*"
-    },
 
     "day5_lunch_yuna_meet": {
-        "name": "최유나",
-        "text": "\"...선배. 왔어요.\""
+        "name": "나",
+        "text": "*구관에 들어섰다. 조명이 어둡다. 형광등이 절반 이상 꺼져있다. 인기척이 없다.*"
     },
     "day5_lunch_yuna_2": {
-        "name": "최유나",
-        "text": "\"구관 3층 끝에 비상구가 있어요. 밖으로 나갈 수 있는 유일한 길이에요.\""
+        "name": "나",
+        "text": "*...계단 옆에 누군가 서 있다. 작은 체구. 카메라를 들고 있다.*"
     },
     "day5_lunch_yuna_3": {
         "name": "최유나",
-        "text": "\"근데... 그쪽 복도를 지나야 해요. 누군가 지키고 있을 거예요.\""
+        "text": "\"...선배.\""
     },
     "day5_lunch_yuna_4": {
+        "name": "최유나",
+        "text": "\"왔어요.\""
+    },
+    "day5_lunch_yuna_5": {
         "name": "나",
-        "text": "*유나와 눈을 마주쳤다. 준비됐다.*"
+        "text": "\"유나. 괜찮아?\""
+    },
+    "day5_lunch_yuna_6": {
+        "name": "최유나",
+        "text": "\"괜찮지는 않아요. 근데... 갈 수 있어요.\""
+    },
+    "day5_lunch_yuna_7": {
+        "name": "최유나",
+        "text": "\"구관 3층 끝에 비상구가 있어요. 설화 선배가... 1년 전에 찾아놨던 길이래요. 선배가 꿈에서 알려줬어요.\""
+    },
+    "day5_lunch_yuna_8": {
+        "name": "최유나",
+        "text": "\"밖으로 나갈 수 있는 유일한 길이에요.\""
+    },
+    "day5_lunch_yuna_9": {
+        "name": "최유나",
+        "text": "\"근데... 그쪽 복도를 지나야 해요. 누군가 지키고 있을 거예요. ...아마.\""
+    },
+    "day5_lunch_yuna_10": {
+        "name": "나",
+        "text": "\"괜찮아. 같이 가자.\""
+    },
+    "day5_lunch_yuna_11": {
+        "name": "나",
+        "text": "*유나가 고개를 끄덕인다. 입술을 꽉 깨문다. 겁먹고 있다. 하지만 움직인다.*"
+    },
+    "day5_lunch_yuna_12": {
+        "name": "나",
+        "text": "*계단을 오르기 시작했다. 1층. 2층. 3층.*"
     },
 
     "day5_lunch_solo": {
         "name": "나",
-        "text": "*복도를 걷는다. 어디로 가야 하지? 출구를... 찾아야 한다.*"
+        "text": "*구관에 들어섰다. 혼자다. 조명이 어둡다. 비상구를 찾아야 한다.*"
     },
     "day5_lunch_solo_2": {
         "name": "나",
-        "text": "*구관 쪽으로 간다. 그쪽에 비상구가 있을 것 같다.*"
+        "text": "*계단을 올라간다. 3층 복도 끝에 비상구 표시등의 초록빛이 보인다. ...저기다.*"
     },
 
     "day5_lunch_escape_start": {
         "name": "나",
-        "text": "*복도를 뛰기 시작했다. 뒤에서 발소리가 들린다.*"
+        "text": "*3층 복도. 길고 어둡다. 끝에 비상구 표시등의 초록빛이 보인다.*"
     },
     "day5_lunch_escape_2": {
         "name": "나",
-        "text": "*갈림길이다!*",
+        "text": "*...저기다. 저 문만 열면 ─*"
+    },
+    "day5_lunch_escape_3": {
+        "name": "나",
+        "text": "*뒤에서 발소리가 들린다. 또각. 또각. 구두 소리. 한 쌍이 아니다. 여러 개.*"
+    },
+    "day5_lunch_escape_4": {
+        "name": "나",
+        "text": "*...쫓아왔다.*"
+    },
+    "day5_lunch_escape_5": {
+        "name": "나",
+        "text": "*뛴다. 복도를 뛰기 시작했다. 운동화가 타일을 때린다. 탁탁탁탁. 가방이 등에서 덜그럭거린다.*"
+    },
+    "day5_lunch_escape_6": {
+        "name": "나",
+        "text": "*분기점이 나온다. 복도가 T자로 갈라진다.*",
         "choices": [
             "왼쪽 복도",
             "오른쪽 복도"
@@ -57,30 +125,99 @@
     },
 
     "day5_lunch_escape_left": {
+        "name": "나",
+        "text": "*왼쪽으로 꺾었다. ...멈췄다. 세아가 서 있다. 복도 한가운데. 팔짱을 끼고. 나를 기다리고 있었다.*"
+    },
+    "day5_lunch_left_2": {
+        "name": "나",
+        "text": "*...얼마 전까지 교실에 있었는데. 어떻게 여기에?*"
+    },
+    "day5_lunch_left_3": {
         "name": "한세아",
         "text": "\"...어디 가는 거야, {name}.\""
     },
-    "day5_lunch_sea_callback": { "name": "", "text": "" },
-    "day5_lunch_sea_cb_choco": { "name": "한세아", "text": "\"그때 초코우유 좋아한다고 웃어줬잖아. 나한테... 거짓말한 거야?\"" },
-    "day5_lunch_sea_cb_lunch": { "name": "한세아", "text": "\"매일 도시락 싸왔는데... 그게 다 아무것도 아니었어?\"" },
-    "day5_lunch_sea_cb_promise": { "name": "한세아", "text": "\"내 곁에 있어달라고 했을 때 고개 끄덕였잖아... 거짓말쟁이.\"" },
-    "day5_lunch_sea_cb_default": { "name": "한세아", "text": "\"...우리 같은 반이었잖아. 그것만으로도... 충분했는데.\"" },
-    "day5_lunch_sea_block_route": { "name": "", "text": "" },
-    "day5_lunch_sea_block": {
+    "day5_lunch_sea_talk_1": {
+        "name": "한세아",
+        "text": "\"나를 두고?\""
+    },
+    "day5_lunch_sea_talk_1b": {
+        "name": "한세아",
+        "text": "\"...버리는 거야?\""
+    },
+    "day5_lunch_sea_talk_1c": {
+        "name": "나",
+        "text": "*세아의 목소리가 차갑다. 1일차의 그 밝은 목소리가 아니다.*"
+    },
+
+    "day5_lunch_sea_callback": {
+        "name": "",
+        "text": ""
+    },
+    "day5_lunch_sea_cb_choco": {
+        "name": "한세아",
+        "text": "\"그때 초코우유 좋아한다고 웃어줬잖아. 초코우유 사려고 매점 세 바퀴 돌았는데.\""
+    },
+    "day5_lunch_sea_cb_choco_2": {
+        "name": "한세아",
+        "text": "\"나한테... 거짓말한 거야?\""
+    },
+    "day5_lunch_sea_cb_lunch": {
+        "name": "한세아",
+        "text": "\"매일 새벽에 일어나서 도시락 싸왔는데... 문어 소시지 만들면서 웃었는데...\""
+    },
+    "day5_lunch_sea_cb_lunch_2": {
+        "name": "한세아",
+        "text": "\"그게 다 아무것도 아니었어?\""
+    },
+    "day5_lunch_sea_cb_vulnerability": {
+        "name": "한세아",
+        "text": "\"노을 지는 학생회실에서... 내 곁에 있어달라고 했을 때 고개 끄덕였잖아.\""
+    },
+    "day5_lunch_sea_cb_vulnerability_2": {
+        "name": "한세아",
+        "text": "\"거짓말쟁이.\""
+    },
+    "day5_lunch_sea_cb_default": {
+        "name": "한세아",
+        "text": "\"...우리 같은 반이었잖아. 5일뿐이었지만...\""
+    },
+    "day5_lunch_sea_cb_default_2": {
+        "name": "한세아",
+        "text": "\"그것만으로도... 충분했는데.\""
+    },
+
+    "day5_lunch_sea_tears": {
+        "name": "나",
+        "text": "*세아의 눈에서 눈물이 흐른다. 진짜 눈물이다. 이건 연기가 아니다.*"
+    },
+    "day5_lunch_sea_tears_2": {
+        "name": "나",
+        "text": "*...가슴이 아프다. 세아도 피해자라는 걸 안다. 이 학교에 갇힌 또 다른 새.*"
+    },
+    "day5_lunch_sea_tears_3": {
+        "name": "나",
+        "text": "*하지만 멈출 수 없다.*"
+    },
+
+    "day5_lunch_sea_block_route": {
+        "name": "",
+        "text": ""
+    },
+    "day5_lunch_sea_pass": {
+        "name": "나",
+        "text": "*세아가 복도에 서 있다. ...하지만 길을 막지 않는다. 멍하니 나를 바라보고 있다. 그 옆을 지나쳤다.*"
+    },
+    "day5_lunch_sea_block_mid": {
         "name": "한세아",
         "text": "\"나를 두고? ...버리는 거야?\""
     },
-    "day5_lunch_sea_block_2": {
+    "day5_lunch_sea_block_mid_2": {
         "name": "나",
         "text": "*세아가 복도를 막고 있다.*",
         "choices": [
             "밀치고 지나간다",
             "세아를 설득한다"
         ]
-    },
-    "day5_lunch_sea_pass": {
-        "name": "나",
-        "text": "*세아가 복도에 서 있다. ...하지만 길을 막지 않는다. 멍하니 나를 바라보고 있다.*"
     },
     "day5_lunch_sea_block_high": {
         "name": "한세아",
@@ -106,50 +243,160 @@
             "세아를 설득한다"
         ]
     },
+
     "day5_lunch_sea_push": {
         "name": "나",
-        "text": "*세아를 밀치고 뛰었다. 뒤에서 울음소리가 들린다.*"
+        "text": "*세아의 옆을 스쳐 지나갔다. 어깨가 부딪혔다.*"
     },
-    "day5_lunch_sea_talk": {
+    "day5_lunch_sea_push_2": {
+        "name": "나",
+        "text": "*뒤에서 세아의 울음소리가 들린다. 뒤돌아보지 않았다. 돌아보면 멈추니까.*"
+    },
+
+    "day5_lunch_sea_persuade": {
+        "name": "나",
+        "text": "\"세아. 같이 나가자.\""
+    },
+    "day5_lunch_sea_persuade_2": {
+        "name": "나",
+        "text": "*세아가 멈췄다. 눈이 커진다.*"
+    },
+    "day5_lunch_sea_persuade_3": {
+        "name": "나",
+        "text": "\"너도 여기에 갇혀있잖아. 은수 선생님한테. 이 학교한테.\""
+    },
+    "day5_lunch_sea_persuade_4": {
+        "name": "한세아",
+        "text": "\"...나는 밖에 나가면 아무것도 없어. 여기밖에 몰라.\""
+    },
+    "day5_lunch_sea_persuade_5": {
+        "name": "나",
+        "text": "\"그래도. 여기보다는 낫잖아.\""
+    },
+    "day5_lunch_sea_persuade_6": {
         "name": "한세아",
         "text": "\"...진짜 나 없이 가는 거야?\""
     },
-    "day5_lunch_sea_talk_2": {
+    "day5_lunch_sea_persuade_7": {
+        "name": "나",
+        "text": "*잠깐의 침묵. 길고 무거운 침묵.*"
+    },
+    "day5_lunch_sea_persuade_8": {
         "name": "한세아",
         "text": "\"...됐어. 가. 빨리.\""
     },
+    "day5_lunch_sea_persuade_9": {
+        "name": "나",
+        "text": "*\"...뒤돌아보지 마.\" 세아의 마지막 말이 복도에 울린다. 뛰기 시작했다. 뒤돌아보지 않았다.*"
+    },
 
     "day5_lunch_escape_right": {
-        "name": "보건교사",
-        "text": "\"여기서 마주치네. {name}, 아직 검진이 안 끝났는데.\""
+        "name": "나",
+        "text": "*오른쪽으로 꺾었다. 소독약 냄새가 난다. 진하게. ...보건실에서 맡던 그 냄새.*"
     },
-    "day5_lunch_riin_callback": { "name": "", "text": "" },
-    "day5_lunch_riin_cb_drink": { "name": "보건교사", "text": "\"그때 차 맛있다고 했잖아. 선생님이 정성껏 만든 건데... 한 잔 더 마실래?\"" },
-    "day5_lunch_riin_cb_met": { "name": "보건교사", "text": "\"첫날부터 보건실에 와줬을 때, 선생님 진짜 기뻤거든. ...알고 있었어?\"" },
-    "day5_lunch_riin_cb_default": { "name": "보건교사", "text": "\"금방이야. 주사 한 대만 맞으면 편해질 거야.\"" },
-    "day5_lunch_riin_block": {
-        "name": "보건교사",
+    "day5_lunch_right_2": {
+        "name": "나",
+        "text": "*복도 한가운데 리인 선생님이 서 있다. 하얀 가운. 한 손이 주머니에 들어가 있다.*"
+    },
+    "day5_lunch_right_3": {
+        "name": "강리인",
+        "text": "\"여기서 마주치네.\""
+    },
+    "day5_lunch_riin_talk_1": {
+        "name": "강리인",
+        "text": "\"{name}, 아직 검진이 안 끝났는데.\""
+    },
+    "day5_lunch_riin_talk_1b": {
+        "name": "나",
+        "text": "*선생님이 주머니에서 손을 뺀다. 주사기를 들고 있다.*"
+    },
+
+    "day5_lunch_riin_callback": {
+        "name": "",
+        "text": ""
+    },
+    "day5_lunch_riin_cb_drink": {
+        "name": "강리인",
+        "text": "\"그때 차 맛있다고 했잖아. 선생님이 허브 직접 골라서 블렌딩한 건데.\""
+    },
+    "day5_lunch_riin_cb_drink_2": {
+        "name": "강리인",
+        "text": "\"...한 잔 더 마실래?\""
+    },
+    "day5_lunch_riin_cb_drink_3": {
+        "name": "나",
+        "text": "*리인 선생님의 손이 떨리고 있다. 주사기를 잡은 손이.*"
+    },
+    "day5_lunch_riin_cb_met": {
+        "name": "강리인",
+        "text": "\"첫날부터 보건실에 와줬을 때, 선생님 진짜 기뻤거든.\""
+    },
+    "day5_lunch_riin_cb_met_2": {
+        "name": "강리인",
+        "text": "\"...알고 있었어? 너 같은 학생은 처음이었어.\""
+    },
+    "day5_lunch_riin_cb_default": {
+        "name": "강리인",
         "text": "\"금방이야. 주사 한 대만 맞으면 편해질 거야.\""
+    },
+    "day5_lunch_riin_cb_default_2": {
+        "name": "강리인",
+        "text": "\"아프지 않아. ...약속할게.\""
+    },
+
+    "day5_lunch_riin_block": {
+        "name": "나",
+        "text": "*리인 선생님이 웃는다. 평소와 같은 부드러운 미소. 하지만 눈빛이 날카롭다.*"
     },
     "day5_lunch_riin_block_2": {
         "name": "나",
-        "text": "*리인이 주사기를 들고 있다.*",
+        "text": "*리인 선생님이 주사기를 들고 다가온다.*",
         "choices": [
             "피해서 지나간다",
             "리인과 대화한다"
         ]
     },
+
     "day5_lunch_riin_dodge": {
         "name": "나",
-        "text": "*리인을 피해 뛰었다. 주사기가 벽에 부딪혀 깨졌다.*"
+        "text": "*리인 선생님의 옆을 뛰어 지나갔다. 주사기가 내 팔을 스쳤다. 바늘이 교복 소매를 찢었다.*"
     },
+    "day5_lunch_riin_dodge_2": {
+        "name": "나",
+        "text": "*...맞지 않았다. 간신히.*"
+    },
+    "day5_lunch_riin_dodge_3": {
+        "name": "나",
+        "text": "*뒤에서 유리 깨지는 소리가 들렸다. 주사기를 떨어뜨린 것 같다.*"
+    },
+
     "day5_lunch_riin_confront": {
-        "name": "보건교사",
-        "text": "\"...다 알고 있었구나.\""
+        "name": "나",
+        "text": "\"선생님도 알고 있죠. 이게 잘못된 거라는 거.\""
     },
     "day5_lunch_riin_confront_2": {
-        "name": "보건교사",
+        "name": "강리인",
+        "text": "\"...다 알고 있었구나.\""
+    },
+    "day5_lunch_riin_confront_3": {
+        "name": "나",
+        "text": "*선생님이 한숨을 내쉰다. 길고 깊은 한숨. 몸에서 뭔가 빠져나가는 것 같은.*"
+    },
+    "day5_lunch_riin_confront_4": {
+        "name": "강리인",
+        "text": "\"...나도 처음에는 거부했어. 이사회가 시켰을 때.\""
+    },
+    "day5_lunch_riin_confront_5": {
+        "name": "강리인",
+        "text": "\"근데 한 번 시작하면... 멈출 수가 없더라.\""
+    },
+    "day5_lunch_riin_confront_6": {
+        "name": "강리인",
         "text": "\"...가. 나도 이제 지쳤어.\""
+    },
+    "day5_lunch_riin_confront_7": {
+        "name": "나",
+        "text": "*리인 선생님이 주사기를 바닥에 내려놓는다. 유리가 타일에 부딪히며 또각 소리를 낸다. 벽에 기대어 앉는다. 눈을 감는다. 뛰었다. 리인 선생님을 지나쳐. 비상구를 향해.*"
     },
 
     "day5_lunch_escape_caught_sea": {
@@ -157,7 +404,7 @@
         "text": "\"잡았다. ...이제 어디 안 가지?\""
     },
     "day5_lunch_escape_caught_riin": {
-        "name": "보건교사",
+        "name": "강리인",
         "text": "\"쉿. 금방 끝나. 아프지 않을 거야.\""
     },
     "day5_lunch_caught": {
@@ -167,72 +414,173 @@
 
     "day5_lunch_continue": {
         "name": "나",
-        "text": "*계단을 올라간다. 비상구가 보인다. 거의 다 왔다!*"
+        "text": "*계단을 올라간다. 숨이 차다. 다리가 무겁다. 하지만 멈출 수 없다.*"
     },
     "day5_lunch_continue_2": {
         "name": "나",
-        "text": "*...은수 선생님이 비상구 앞에 서 있다.*"
+        "text": "*3층 복도 끝. 비상구가 보인다. 초록색 'EXIT' 표시등. 빛나고 있다.*"
     },
+    "day5_lunch_continue_3": {
+        "name": "나",
+        "text": "*거의 다 왔다! ...멈췄다.*"
+    },
+    "day5_lunch_continue_4": {
+        "name": "나",
+        "text": "*은수 선생님이 비상구 앞에 서 있다. 팔짱을 끼고. 기다리고 있었다. 처음부터 여기에 있었다는 듯이.*"
+    },
+
+    "day5_lunch_eunsu_face": {
+        "name": "박은수",
+        "text": "\"{name}.\""
+    },
+    "day5_lunch_eunsu_face_2": {
+        "name": "나",
+        "text": "*선생님이 나를 본다. 슬픈 눈.*"
+    },
+    "day5_lunch_eunsu_face_3": {
+        "name": "박은수",
+        "text": "\"...여기까지 왔구나.\""
+    },
+
+    "day5_lunch_eunsu_callback": {
+        "name": "",
+        "text": ""
+    },
+    "day5_lunch_eunsu_cb_app": {
+        "name": "박은수",
+        "text": "\"선생님이 앱 설치해줬을 때 고맙다고 했었지?\""
+    },
+    "day5_lunch_eunsu_cb_app_2": {
+        "name": "박은수",
+        "text": "\"...그때 참 착한 학생이라고 생각했는데. 진심이었어.\""
+    },
+    "day5_lunch_eunsu_cb_visit": {
+        "name": "박은수",
+        "text": "\"첫날 방과후에 직접 인사 와줬잖아.\""
+    },
+    "day5_lunch_eunsu_cb_visit_2": {
+        "name": "박은수",
+        "text": "\"그때부터... 선생님은 네가 특별하다고 느꼈어. 다른 전학생들과는 달랐거든.\""
+    },
+    "day5_lunch_eunsu_cb_default": {
+        "name": "박은수",
+        "text": "\"선생님은 너를 위해서 이 모든 걸 한 건데.\""
+    },
+    "day5_lunch_eunsu_cb_default_2": {
+        "name": "박은수",
+        "text": "\"...다 너를 지키려고 한 거야.\""
+    },
+
+    "day5_lunch_eunsu_plea": {
+        "name": "나",
+        "text": "*은수 선생님의 눈가에 주름이 잡힌다. 피곤한 얼굴. 밤을 새운 것 같다.*"
+    },
+    "day5_lunch_eunsu_plea_2": {
+        "name": "박은수",
+        "text": "\"...선생님이랑 같이 있으면 안 돼?\""
+    },
+    "day5_lunch_eunsu_plea_3": {
+        "name": "박은수",
+        "text": "\"밖에 나가면... 아무도 너를 이만큼 생각해주지 않아.\""
+    },
+    "day5_lunch_eunsu_plea_4": {
+        "name": "박은수",
+        "text": "\"여기 있으면 안전해. 선생님이 다 지켜줄게.\""
+    },
+    "day5_lunch_eunsu_plea_5": {
+        "name": "나",
+        "text": "*선생님의 목소리가 떨린다. ...진심이다. 이 사람은, 뒤틀렸지만, 진심으로 '보호'하고 있다고 믿고 있다. ...하지만 그 '보호'가 감옥이라는 걸 선생님은 모르는 걸까. 아니면 알면서도 멈추지 못하는 걸까.*"
+    },
+
+    "day5_lunch_eunsu_affinity_route": {
+        "name": "",
+        "text": ""
+    },
+
     "day5_lunch_eunsu_final": {
-        "name": "담임교사",
-        "text": "\"{name}. ...여기까지 왔구나.\""
-    },
-    "day5_lunch_eunsu_callback": { "name": "", "text": "" },
-    "day5_lunch_eunsu_cb_app": { "name": "담임교사", "text": "\"선생님이 앱 설치해줬을 때 고맙다고 했었지? ...그때 참 착한 학생이라고 생각했는데.\"" },
-    "day5_lunch_eunsu_cb_visit": { "name": "담임교사", "text": "\"첫날 방과후에 직접 인사 와줬잖아. 그때부터... 선생님은 네가 특별하다고 느꼈어.\"" },
-    "day5_lunch_eunsu_cb_default": { "name": "담임교사", "text": "\"선생님은 너를 위해서 이 모든 걸 한 건데.\"" },
-    "day5_lunch_eunsu_final_2": {
-        "name": "담임교사",
-        "text": "\"선생님이랑 같이 있으면 안 돼? ...선생님은 너를 위해서 이 모든 걸 한 건데.\"",
+        "name": "나",
+        "text": "*...어떻게 할까.*",
         "choices": [
             "밀치고 나간다",
             "은수와 함께 남는다"
         ]
     },
+
     "day5_lunch_eunsu_final_high": {
-        "name": "담임교사",
+        "name": "박은수",
         "text": "\"{name}. 선생님이 얼마나 걱정했는지 알아? ...이제 그만 돌아오자.\""
     },
-    "day5_lunch_eunsu_high_callback": { "name": "", "text": "" },
-    "day5_lunch_eunsu_high_cb_app": { "name": "담임교사", "text": "\"선생님이 앱 설치해줬을 때 고맙다고 했었지? ...그때 참 착한 학생이라고 생각했는데.\"" },
-    "day5_lunch_eunsu_high_cb_visit": { "name": "담임교사", "text": "\"첫날 방과후에 직접 인사 와줬잖아. 그때부터... 선생님은 네가 특별하다고 느꼈어.\"" },
-    "day5_lunch_eunsu_high_cb_default": { "name": "담임교사", "text": "\"선생님은 너를 위해서 이 모든 걸 한 건데.\"" },
     "day5_lunch_eunsu_final_high_2": {
-        "name": "담임교사",
+        "name": "박은수",
         "text": "\"선생님 말 안 들을 거야? ...{name}은 착한 아이잖아.\"",
         "choices": [
             "밀치고 나간다",
             "은수와 함께 남는다"
         ]
     },
+
     "day5_lunch_eunsu_final_max": {
         "name": "나",
         "text": "*비상구에 자물쇠가 걸려 있다. ...열리지 않는다.*"
     },
     "day5_lunch_eunsu_final_max_2": {
-        "name": "담임교사",
+        "name": "박은수",
         "text": "\"어디 가려고? ...선생님이 다 준비해놨어. {name}은 여기 있으면 돼.\""
     },
     "day5_lunch_eunsu_yuna_help": {
         "name": "나",
         "text": "*갑자기 복도 끝에서 화재경보가 울린다. ...유나다! 은수 선생님의 시선이 돌아간 순간, 뛰었다.*"
     },
+
     "day5_lunch_eunsu_break": {
         "name": "나",
-        "text": "*은수 선생님을 지나쳐 비상구를 열었다. 찬 바람이 얼굴을 때린다.*"
+        "text": "*은수 선생님을 지나쳤다. 어깨가 부딪혔다. 선생님이 잡으려고 손을 뻗었다. 손가락이 내 교복 소매를 스쳤다. ...놓쳤다.*"
     },
+    "day5_lunch_eunsu_break_2": {
+        "name": "나",
+        "text": "*비상구를 밀었다. 무거운 문. 온몸의 힘을 실었다.*"
+    },
+    "day5_lunch_eunsu_break_3": {
+        "name": "나",
+        "text": "*...열렸다.*"
+    },
+    "day5_lunch_eunsu_break_4": {
+        "name": "나",
+        "text": "*찬 바람이 얼굴을 때린다. 비가 내리고 있다. 빗방울이 얼굴에 부딪힌다.*"
+    },
+    "day5_lunch_eunsu_break_5": {
+        "name": "나",
+        "text": "*비상구 너머로 빛이 보인다. 흐린 하늘이지만... 바깥 세상의 빛.*"
+    },
+    "day5_lunch_eunsu_break_6": {
+        "name": "나",
+        "text": "*출구다.*"
+    },
+    "day5_lunch_eunsu_break_7": {
+        "name": "박은수",
+        "text": "\"...{name}.\""
+    },
+
     "day5_lunch_eunsu_stay": {
-        "name": "담임교사",
-        "text": "\"...고마워, {name}. 이게 맞는 거야.\""
+        "name": "나",
+        "text": "*...다리에서 힘이 빠졌다. 주저앉았다. 더 이상 뛸 수 없다. 몸이 말을 안 듣는다.*"
     },
     "day5_lunch_eunsu_stay_2": {
+        "name": "박은수",
+        "text": "\"...고마워, {name}.\""
+    },
+    "day5_lunch_eunsu_stay_3": {
+        "name": "박은수",
+        "text": "\"이게 맞는 거야. 선생님이 다 지켜줄게.\""
+    },
+    "day5_lunch_eunsu_stay_4": {
         "name": "나",
-        "text": "*은수 선생님이 내 손을 잡았다. ...되돌릴 수 없다.*"
+        "text": "*은수 선생님이 내 손을 잡았다. 따뜻한 손. 큰 손. 부드럽게 감싸는 손. ...되돌릴 수 없다. 이 손을 잡은 순간.*"
     },
 
     "day5_lunch_breakthrough": {
         "name": "나",
-        "text": "*비상구 너머로 빛이 보인다. 출구다.*"
+        "text": "*돌아보지 않았다. 계단을 내려간다. 비를 맞으며.*"
     },
 
     "day5_lunch_end": {

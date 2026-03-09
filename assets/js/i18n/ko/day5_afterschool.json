@@ -8,50 +8,78 @@
         "name": "",
         "text": ""
     },
-    "day5_after_branch_caught": {
-        "name": "",
-        "text": ""
+
+    "day5_after_escaped": {
+        "name": "나",
+        "text": "*비상계단을 내려간다. 쇠 계단이 비에 젖어 미끄럽다.*"
     },
-    "day5_after_branch_caught_2": {
-        "name": "",
-        "text": ""
+    "day5_after_escaped_2": {
+        "name": "나",
+        "text": "*한 칸. 두 칸. 세 칸. 뛰어내리듯 내려간다.*"
     },
-    "day5_after_branch_stayed": {
+    "day5_after_escaped_3": {
+        "name": "나",
+        "text": "*발이 땅에 닿았다. 아스팔트. 학교 뒷길.*"
+    },
+    "day5_after_escaped_4": {
+        "name": "나",
+        "text": "*학교 밖이다.*"
+    },
+    "day5_after_escaped_5": {
+        "name": "나",
+        "text": "*비가 내리고 있다. 빗방울이 얼굴을 때린다. 차갑다. 하지만 이 차가움이... 살아있다는 증거다.*"
+    },
+    "day5_after_escaped_6": {
+        "name": "나",
+        "text": "*처음으로... 이 학교에 온 뒤로 처음으로, 학교 밖 공기를 마신다.*"
+    },
+    "day5_after_escaped_7": {
+        "name": "나",
+        "text": "*숨을 들이쉬었다. 깊게. 폐가 터질 것 같을 만큼. ...냄새가 다르다. 소독약 냄새가 아니다. 벚꽃 냄새가 아니다. 그냥 비 냄새. 흙 냄새. 세상의 냄새.*"
+    },
+    "day5_after_escaped_8": {
+        "name": "나",
+        "text": "*뛰었다. 어디로든. 이 학교에서 최대한 멀리. 다리가 떨린다. 무릎이 풀린다. 그래도 뛴다.*"
+    },
+
+    "day5_after_escaped_yuna_branch": {
         "name": "",
         "text": ""
     },
 
-    "day5_after_escaped": {
-        "name": "나",
-        "text": "*학교 밖. 비가 내리고 있다. 처음으로... 학교 밖 공기를 마신다.*"
-    },
-    "day5_after_escaped_2": {
-        "name": "나",
-        "text": "*뛰었다. 어디로든. 이 학교에서 최대한 멀리.*"
-    },
-    "day5_after_escaped_3": {
-        "name": "나",
-        "text": "*혼자다. 하지만 살아있다.*"
-    },
-    "day5_after_escaped_solo": {
-        "name": "나",
-        "text": "*유나를 두고 왔다. ...미안하다.*"
-    },
-    "day5_after_escaped_branch": {
-        "name": "최유나",
-        "text": "\"선배... 우리 나왔어요...\""
-    },
     "day5_after_escaped_yuna": {
         "name": "나",
-        "text": "*유나가 울고 있다. 나도 울고 있다.*"
+        "text": "*유나가 내 옆에서 뛰고 있다. 유나도 울고 있다.*"
     },
-    "day5_after_escaped_4": {
+    "day5_after_escaped_yuna_2": {
         "name": "나",
-        "text": "*이 증거를 세상에 알려야 한다. 지금 바로.*"
+        "text": "*뛰다가 멈췄다. 학교에서 충분히 멀어진 뒤에. 가로등 밑에서.*"
     },
+    "day5_after_escaped_yuna_3": {
+        "name": "최유나",
+        "text": "\"선배...\""
+    },
+    "day5_after_escaped_yuna_4": {
+        "name": "최유나",
+        "text": "\"우리 나왔어요...\""
+    },
+    "day5_after_escaped_yuna_5": {
+        "name": "나",
+        "text": "\"나왔어. 나왔어, 유나.\""
+    },
+
+    "day5_after_escaped_solo": {
+        "name": "나",
+        "text": "*혼자다. 비를 맞으며 뛰었다. 가로등이 빗속에서 흔들린다.*"
+    },
+    "day5_after_escaped_solo_2": {
+        "name": "나",
+        "text": "*멈출 수 없다. 아직 충분히 멀지 않다. 더. 더 멀리.*"
+    },
+
     "day5_after_escaped_choice": {
         "name": "나",
-        "text": "*어떻게 할까.*",
+        "text": "*이 증거를 세상에 알려야 한다. 지금 바로.*",
         "choices": [
             "경찰에 신고한다",
             "인터넷에 공개한다"
@@ -76,64 +104,146 @@
 
     "day5_after_captured": {
         "name": "나",
-        "text": "*...눈을 떴다. 지하실이다. 형광등이 깜빡인다.*"
+        "text": "*...눈을 떴다.*"
     },
     "day5_after_captured_2": {
         "name": "나",
-        "text": "*손이 묶여있다. 의자에 앉혀져 있다. ...끝난 건가?*"
+        "text": "*...어디지.*"
     },
     "day5_after_captured_3": {
-        "name": "담임교사",
-        "text": "\"깨어났구나, {name}. ...도망치려고 했어?\""
+        "name": "나",
+        "text": "*형광등이 깜빡인다. 치지직. 치지직. 천장. 콘크리트 천장. 지하실이다.*"
     },
     "day5_after_captured_4": {
-        "name": "보건교사",
-        "text": "\"마지막 처치를 준비할게. 금방 끝나.\""
+        "name": "나",
+        "text": "*손을 움직이려고 했다. 움직이지 않는다. ...가죽 끈. 팔목에 감겨있다. 의자에 묶여있다. ...설화의 꿈에서 본 것과 같다. 같은 의자. 같은 끈. 같은 형광등.*"
     },
     "day5_after_captured_5": {
+        "name": "박은수",
+        "text": "\"깨어났구나, {name}.\""
+    },
+    "day5_after_captured_6": {
+        "name": "박은수",
+        "text": "\"...도망치려고 했어? 선생님이 얼마나 걱정했는지 알아?\""
+    },
+    "day5_after_captured_7": {
+        "name": "강리인",
+        "text": "\"마지막 처치를 준비할게.\""
+    },
+    "day5_after_captured_8": {
+        "name": "강리인",
+        "text": "\"금방 끝나. 이번이 마지막이야.\""
+    },
+    "day5_after_captured_9": {
         "name": "나",
-        "text": "*...포기할까?*",
+        "text": "*'마지막'. 그 단어가 무겁다. 이게 끝나면... 어떻게 되는 거지? 설화처럼?*"
+    },
+    "day5_after_captured_10": {
+        "name": "나",
+        "text": "*리인 선생님이 팔꿈치 안쪽을 소독한다. 알코올 솜의 차가움이 피부에 닿는다. ...여기서 포기하면 안 된다. 아직 끝나지 않았다.*"
+    },
+    "day5_after_captured_choice": {
+        "name": "나",
+        "text": "*...어떻게 할까.*",
         "choices": [
             "저항한다",
             "받아들인다"
         ]
     },
+
     "day5_after_captured_resist": {
         "name": "나",
-        "text": "*의자를 쓰러뜨렸다! 묶인 손으로 일어선다.*"
+        "text": "*온몸에 힘을 줬다. 가죽 끈이 팔목을 파고든다. 아프다. 상관없다.*"
     },
     "day5_after_captured_resist_2": {
-        "name": "이설화",
-        "text": "\"...내가 도와줄게.\""
+        "name": "나",
+        "text": "\"싫어...! 놓으라고...!\""
     },
     "day5_after_captured_resist_3": {
-        "name": "나",
-        "text": "*갑자기 정전이 됐다. 지하실이 어둠에 잠긴다. 혼란 속에서... 출구를 찾았다.*"
+        "name": "강리인",
+        "text": "\"움직이면 위험해. 가만히 ─\""
     },
+    "day5_after_captured_resist_4": {
+        "name": "나",
+        "text": "*그 순간. 전기가 나갔다.*"
+    },
+    "day5_after_captured_resist_5": {
+        "name": "박은수",
+        "text": "\"...뭐야?\""
+    },
+    "day5_after_captured_resist_6": {
+        "name": "강리인",
+        "text": "\"정전? 이 시간에?\""
+    },
+    "day5_after_captured_resist_7": {
+        "name": "나",
+        "text": "*어둠 속에서... 손이 느껴진다. 차갑고 투명한 손. 가죽 끈을 풀어주고 있다.*"
+    },
+    "day5_after_captured_resist_8": {
+        "name": "나",
+        "text": "*...설화. 끈이 풀렸다. 설화가 내 손을 잡는다. 투명한 손이라 잡히지 않을 줄 알았는데... 잡힌다.*"
+    },
+    "day5_after_captured_resist_9": {
+        "name": "나",
+        "text": "*어둠 속에서 끌려간다. 발소리를 죽이며. 비상구를 향해.*"
+    },
+
     "day5_after_captured_submit": {
-        "name": "보건교사",
-        "text": "\"착하네. 금방 끝나. 다 잊게 될 거야.\""
+        "name": "나",
+        "text": "*...힘이 빠진다. 저항할 기운이 남아있지 않다. 고개가 떨어진다. 눈이 감긴다.*"
     },
     "day5_after_captured_submit_2": {
         "name": "나",
-        "text": "*주사바늘이 팔에 닿는 순간. 의식이... 흐려진다...*"
+        "text": "*주사기가 팔에 닿는다. 바늘이 들어간다. 차가운 액체가 혈관을 타고 퍼진다.*"
+    },
+    "day5_after_captured_submit_3": {
+        "name": "나",
+        "text": "*...따뜻해진다. 몸이 녹는 것 같다. 생각이 흐려진다.*"
+    },
+    "day5_after_captured_submit_4": {
+        "name": "나",
+        "text": "*뭔가를... 잊고 있다. 뭘 잊고 있지? 중요한 건데... 뭐였지...*"
     },
 
     "day5_after_stayed": {
-        "name": "담임교사",
-        "text": "\"...잘 생각했어, {name}. 이게 맞는 거야.\""
+        "name": "나",
+        "text": "*은수 선생님이 내 손을 잡고 일으켜 세운다.*"
     },
     "day5_after_stayed_2": {
-        "name": "담임교사",
-        "text": "\"선생님이 다 지켜줄게. 아무것도 걱정할 필요 없어.\""
+        "name": "박은수",
+        "text": "\"착한 아이야, {name}.\""
     },
     "day5_after_stayed_3": {
-        "name": "담임교사",
-        "text": "\"...{name}은 선생님 곁에 있으면 돼. 영원히.\""
+        "name": "나",
+        "text": "*선생님이 나를 교실로 데려간다. 복도를 걷는다. 내 발소리와 선생님의 구두 소리가 울린다.*"
     },
     "day5_after_stayed_4": {
         "name": "나",
-        "text": "*은수 선생님이 웃고 있다. 따뜻한 미소. ...이 미소가 항상 이렇게 무서웠던가.*"
+        "text": "*교실 문이 열린다. 세아가 앉아있다. 리인 선생님이 서 있다. 모두 웃고 있다.*"
+    },
+    "day5_after_stayed_5": {
+        "name": "박은수",
+        "text": "\"선생님이 다 지켜줄게. 아무것도 걱정할 필요 없어.\""
+    },
+    "day5_after_stayed_6": {
+        "name": "나",
+        "text": "*자리에 앉았다. 세아가 내 옆에 앉는다. 리인 선생님이 차를 건넨다.*"
+    },
+    "day5_after_stayed_7": {
+        "name": "박은수",
+        "text": "\"...{name}은 선생님 곁에 있으면 돼. 영원히.\""
+    },
+    "day5_after_stayed_8": {
+        "name": "나",
+        "text": "*은수 선생님이 웃고 있다. 따뜻한 미소.*"
+    },
+    "day5_after_stayed_9": {
+        "name": "나",
+        "text": "*...이 미소가 항상 이렇게 무서웠던가. 아니. 무섭지 않다. ...무섭지 않다. ...왜 무섭지 않지?*"
+    },
+    "day5_after_stayed_10": {
+        "name": "나",
+        "text": "*차를 마셨다. 따뜻하다. 좋다. ...뭔가 잊고 있는 것 같은데. 뭐였지. ...괜찮다. 잊어도 된다. 여기는 안전하니까.*"
     },
 
     "day5_after_end": {

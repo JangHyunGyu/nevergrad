@@ -1,6 +1,6 @@
 /**
  * Day 1-2: Lunch - 점심시간의 달콤한 만남들
- * 순수 미연시 톤 유지. 유나 첫 만남, 리인 보건실.
+ * 세아 도시락, 유나 도서관 첫 만남, 리인 보건실 첫 만남, 옥상 혼자
  */
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[1]) SCENARIO[1] = {};
@@ -19,103 +19,351 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_choice": {
         choices: [
-            { next: "day1_lunch_sea", setFlags: ["lunch_with_sea"] },
-            { next: "day1_lunch_yuna_start" },
-            { next: "day1_lunch_nurse_start" },
-            { next: "day1_lunch_alone" }
+            { next: "day1_lunch_sea_1", setFlags: ["lunch_with_sea"] },
+            { next: "day1_lunch_yuna_1" },
+            { next: "day1_lunch_riin_1" },
+            { next: "day1_lunch_alone_1" }
         ]
     },
 
-    // ===== 세아와 점심 =====
-    "day1_lunch_sea": {
-        background: "classroom",
+    // ===== 루트 A: 세아와 점심 (sea_1 ~ sea_45) =====
+    "day1_lunch_sea_1": {
         character: "sea_smile",
-        next: "day1_lunch_sea_2",
-        stats: { sea: { affinity: 5 } }
+        next: "day1_lunch_sea_2"
     },
     "day1_lunch_sea_2": {
         next: "day1_lunch_sea_3"
     },
     "day1_lunch_sea_3": {
-        character: "sea_shy",
         next: "day1_lunch_sea_4"
     },
     "day1_lunch_sea_4": {
         next: "day1_lunch_sea_5"
     },
     "day1_lunch_sea_5": {
-        character: "sea_smile",
-        next: "day1_lunch_sea_6",
-        stats: { sea: { affinity: 3, danger: 2 } }
+        next: "day1_lunch_sea_6"
     },
     "day1_lunch_sea_6": {
+        next: "day1_lunch_sea_7"
+    },
+    "day1_lunch_sea_7": {
+        next: "day1_lunch_sea_8"
+    },
+    "day1_lunch_sea_8": {
+        next: "day1_lunch_sea_9"
+    },
+    "day1_lunch_sea_9": {
+        next: "day1_lunch_sea_10"
+    },
+    "day1_lunch_sea_10": {
+        next: "day1_lunch_sea_11"
+    },
+    "day1_lunch_sea_11": {
+        next: "day1_lunch_sea_12"
+    },
+    "day1_lunch_sea_12": {
+        next: "day1_lunch_sea_13"
+    },
+    "day1_lunch_sea_13": {
+        character: "sea_shy",
+        next: "day1_lunch_sea_14"
+    },
+    "day1_lunch_sea_14": {
+        next: "day1_lunch_sea_15"
+    },
+    "day1_lunch_sea_15": {
+        character: "sea_smile",
+        next: "day1_lunch_sea_16"
+    },
+    "day1_lunch_sea_16": {
+        next: "day1_lunch_sea_17"
+    },
+    "day1_lunch_sea_17": {
+        next: "day1_lunch_sea_18"
+    },
+    "day1_lunch_sea_18": {
+        next: "day1_lunch_sea_19"
+    },
+    "day1_lunch_sea_19": {
+        character: "sea_shy",
+        next: "day1_lunch_sea_20"
+    },
+    "day1_lunch_sea_20": {
+        next: "day1_lunch_sea_21"
+    },
+    "day1_lunch_sea_21": {
+        next: "day1_lunch_sea_22"
+    },
+    "day1_lunch_sea_22": {
+        character: "sea_smile",
+        next: "day1_lunch_sea_23"
+    },
+    "day1_lunch_sea_23": {
+        next: "day1_lunch_sea_24"
+    },
+    "day1_lunch_sea_24": {
+        next: "day1_lunch_sea_25"
+    },
+    "day1_lunch_sea_25": {
+        next: "day1_lunch_sea_26"
+    },
+    "day1_lunch_sea_26": {
+        next: "day1_lunch_sea_27"
+    },
+    "day1_lunch_sea_27": {
+        next: "day1_lunch_sea_28"
+    },
+    "day1_lunch_sea_28": {
+        character: "sea_shy",
+        next: "day1_lunch_sea_29"
+    },
+    "day1_lunch_sea_29": {
+        next: "day1_lunch_sea_30"
+    },
+    "day1_lunch_sea_30": {
+        character: "sea_smile",
+        next: "day1_lunch_sea_31"
+    },
+    "day1_lunch_sea_31": {
+        next: "day1_lunch_sea_32"
+    },
+    "day1_lunch_sea_32": {
+        next: "day1_lunch_sea_33"
+    },
+    "day1_lunch_sea_33": {
+        next: "day1_lunch_sea_34"
+    },
+    "day1_lunch_sea_34": {
+        next: "day1_lunch_sea_35"
+    },
+    "day1_lunch_sea_35": {
+        character: "sea_shy",
+        next: "day1_lunch_sea_36"
+    },
+    "day1_lunch_sea_36": {
+        next: "day1_lunch_sea_37"
+    },
+    "day1_lunch_sea_37": {
+        character: "sea_smile",
+        next: "day1_lunch_sea_38"
+    },
+    "day1_lunch_sea_38": {
+        next: "day1_lunch_sea_39"
+    },
+    "day1_lunch_sea_39": {
+        next: "day1_lunch_sea_40"
+    },
+    "day1_lunch_sea_40": {
+        next: "day1_lunch_sea_41"
+    },
+    "day1_lunch_sea_41": {
+        next: "day1_lunch_sea_42"
+    },
+    "day1_lunch_sea_42": {
+        next: "day1_lunch_sea_43",
+        stats: { sea: { affinity: 5, danger: 2 } }
+    },
+    "day1_lunch_sea_43": {
         character: null,
+        next: "day1_lunch_sea_44"
+    },
+    "day1_lunch_sea_44": {
+        next: "day1_lunch_sea_45"
+    },
+    "day1_lunch_sea_45": {
         next: "day1_lunch_end"
     },
 
-    // ===== 도서관 - 유나 첫 만남 =====
-    "day1_lunch_yuna_start": {
+    // ===== 루트 B: 도서관 — 유나 첫 만남 (yuna_1 ~ yuna_30) =====
+    "day1_lunch_yuna_1": {
         background: "library",
         character: null,
-        next: "day1_lunch_yuna_1"
-    },
-    "day1_lunch_yuna_1": {
         next: "day1_lunch_yuna_2"
     },
     "day1_lunch_yuna_2": {
-        character: "yuna_scared",
-        next: "day1_lunch_yuna_3",
-        setFlags: ["met_yuna"]
+        next: "day1_lunch_yuna_3"
     },
     "day1_lunch_yuna_3": {
-        character: null,
         next: "day1_lunch_yuna_4"
     },
     "day1_lunch_yuna_4": {
         next: "day1_lunch_yuna_5"
     },
     "day1_lunch_yuna_5": {
-        character: "yuna_smile",
-        next: "day1_lunch_yuna_6",
-        stats: { yuna: { affinity: 5, trust: 3 } }
+        character: "yuna_scared",
+        next: "day1_lunch_yuna_6"
     },
     "day1_lunch_yuna_6": {
+        next: "day1_lunch_yuna_7"
+    },
+    "day1_lunch_yuna_7": {
+        next: "day1_lunch_yuna_8"
+    },
+    "day1_lunch_yuna_8": {
+        next: "day1_lunch_yuna_9"
+    },
+    "day1_lunch_yuna_9": {
+        next: "day1_lunch_yuna_10"
+    },
+    "day1_lunch_yuna_10": {
+        next: "day1_lunch_yuna_11",
+        setFlags: ["met_yuna"]
+    },
+    "day1_lunch_yuna_11": {
+        character: "yuna_smile",
+        next: "day1_lunch_yuna_12"
+    },
+    "day1_lunch_yuna_12": {
+        next: "day1_lunch_yuna_13"
+    },
+    "day1_lunch_yuna_13": {
+        next: "day1_lunch_yuna_14"
+    },
+    "day1_lunch_yuna_14": {
+        next: "day1_lunch_yuna_15"
+    },
+    "day1_lunch_yuna_15": {
+        next: "day1_lunch_yuna_16"
+    },
+    "day1_lunch_yuna_16": {
+        next: "day1_lunch_yuna_17"
+    },
+    "day1_lunch_yuna_17": {
+        next: "day1_lunch_yuna_18"
+    },
+    "day1_lunch_yuna_18": {
+        next: "day1_lunch_yuna_19"
+    },
+    "day1_lunch_yuna_19": {
+        next: "day1_lunch_yuna_20"
+    },
+    "day1_lunch_yuna_20": {
+        next: "day1_lunch_yuna_21"
+    },
+    "day1_lunch_yuna_21": {
+        next: "day1_lunch_yuna_22"
+    },
+    "day1_lunch_yuna_22": {
+        next: "day1_lunch_yuna_23"
+    },
+    "day1_lunch_yuna_23": {
+        next: "day1_lunch_yuna_24"
+    },
+    "day1_lunch_yuna_24": {
+        next: "day1_lunch_yuna_25"
+    },
+    "day1_lunch_yuna_25": {
+        next: "day1_lunch_yuna_26"
+    },
+    "day1_lunch_yuna_26": {
+        next: "day1_lunch_yuna_27"
+    },
+    "day1_lunch_yuna_27": {
+        next: "day1_lunch_yuna_28"
+    },
+    "day1_lunch_yuna_28": {
+        next: "day1_lunch_yuna_29"
+    },
+    "day1_lunch_yuna_29": {
+        next: "day1_lunch_yuna_30",
+        stats: { yuna: { affinity: 5, trust: 3 } }
+    },
+    "day1_lunch_yuna_30": {
         character: null,
         next: "day1_lunch_end"
     },
 
-    // ===== 보건실 - 리인 첫 만남 =====
-    "day1_lunch_nurse_start": {
+    // ===== 루트 C: 보건실 — 리인 첫 만남 (riin_1 ~ riin_27) =====
+    "day1_lunch_riin_1": {
         background: "nurse_office",
         character: null,
-        next: "day1_lunch_riin_1"
-    },
-    "day1_lunch_riin_1": {
-        character: "riin_smile",
-        next: "day1_lunch_riin_2",
-        setFlags: ["met_riin"]
+        next: "day1_lunch_riin_2"
     },
     "day1_lunch_riin_2": {
         next: "day1_lunch_riin_3"
     },
     "day1_lunch_riin_3": {
-        character: "riin_seductive",
-        next: "day1_lunch_riin_4",
-        // "심장 소리가 듣기 좋다" — 표면상 장난, 내면은 데이터 수집
-        stats: { riin: { affinity: 5, danger: 5 } }
+        next: "day1_lunch_riin_4"
     },
     "day1_lunch_riin_4": {
-        character: null,
-        next: "day1_lunch_riin_5"
+        character: "riin_smile",
+        next: "day1_lunch_riin_5",
+        setFlags: ["met_riin"]
     },
     "day1_lunch_riin_5": {
-        character: "riin_smile",
-        next: "day1_lunch_end",
-        stats: { riin: { affinity: 3 } }
+        next: "day1_lunch_riin_6"
+    },
+    "day1_lunch_riin_6": {
+        next: "day1_lunch_riin_7"
+    },
+    "day1_lunch_riin_7": {
+        next: "day1_lunch_riin_8"
+    },
+    "day1_lunch_riin_8": {
+        next: "day1_lunch_riin_9"
+    },
+    "day1_lunch_riin_9": {
+        next: "day1_lunch_riin_10"
+    },
+    "day1_lunch_riin_10": {
+        next: "day1_lunch_riin_11"
+    },
+    "day1_lunch_riin_11": {
+        next: "day1_lunch_riin_12"
+    },
+    "day1_lunch_riin_12": {
+        next: "day1_lunch_riin_13"
+    },
+    "day1_lunch_riin_13": {
+        next: "day1_lunch_riin_14"
+    },
+    "day1_lunch_riin_14": {
+        next: "day1_lunch_riin_15"
+    },
+    "day1_lunch_riin_15": {
+        next: "day1_lunch_riin_16"
+    },
+    "day1_lunch_riin_16": {
+        next: "day1_lunch_riin_17"
+    },
+    "day1_lunch_riin_17": {
+        next: "day1_lunch_riin_18"
+    },
+    "day1_lunch_riin_18": {
+        next: "day1_lunch_riin_19"
+    },
+    "day1_lunch_riin_19": {
+        next: "day1_lunch_riin_20"
+    },
+    "day1_lunch_riin_20": {
+        next: "day1_lunch_riin_21"
+    },
+    "day1_lunch_riin_21": {
+        next: "day1_lunch_riin_22"
+    },
+    "day1_lunch_riin_22": {
+        next: "day1_lunch_riin_23"
+    },
+    "day1_lunch_riin_23": {
+        next: "day1_lunch_riin_24"
+    },
+    "day1_lunch_riin_24": {
+        next: "day1_lunch_riin_25"
+    },
+    "day1_lunch_riin_25": {
+        next: "day1_lunch_riin_26"
+    },
+    "day1_lunch_riin_26": {
+        next: "day1_lunch_riin_27",
+        stats: { riin: { affinity: 5, danger: 5 } }
+    },
+    "day1_lunch_riin_27": {
+        character: null,
+        next: "day1_lunch_end"
     },
 
-    // ===== 혼자 점심 =====
-    "day1_lunch_alone": {
+    // ===== 루트 D: 옥상에서 혼자 (alone_1 ~ alone_13) =====
+    "day1_lunch_alone_1": {
         background: "rooftop",
         character: null,
         next: "day1_lunch_alone_2"
@@ -124,7 +372,36 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_alone_3"
     },
     "day1_lunch_alone_3": {
-        // 옥상에서 혼자 있는데, 아래 운동장에서 누군가 카메라를 들고 이쪽을 찍고 있다
+        next: "day1_lunch_alone_4"
+    },
+    "day1_lunch_alone_4": {
+        next: "day1_lunch_alone_5"
+    },
+    "day1_lunch_alone_5": {
+        next: "day1_lunch_alone_6"
+    },
+    "day1_lunch_alone_6": {
+        next: "day1_lunch_alone_7"
+    },
+    "day1_lunch_alone_7": {
+        next: "day1_lunch_alone_8"
+    },
+    "day1_lunch_alone_8": {
+        next: "day1_lunch_alone_9"
+    },
+    "day1_lunch_alone_9": {
+        next: "day1_lunch_alone_10"
+    },
+    "day1_lunch_alone_10": {
+        next: "day1_lunch_alone_11"
+    },
+    "day1_lunch_alone_11": {
+        next: "day1_lunch_alone_12"
+    },
+    "day1_lunch_alone_12": {
+        next: "day1_lunch_alone_13"
+    },
+    "day1_lunch_alone_13": {
         next: "day1_lunch_end"
     },
 

@@ -6,35 +6,35 @@
 
     "day2_after_eunsu_phone": {
         "name": "Professeure",
-        "text": "\"{name}, attends un instant. On a eu des problèmes de smartphones à l'école récemment, alors on vérifie les téléphones des nouveaux élèves.\""
+        "text": "\"{name}, un instant. Notre école a un excellent système de campus intelligent. Le Wi-Fi du campus est rapide et la présence est automatique.\""
     },
     "day2_after_eunsu_phone_2": {
         "name": "Moi",
-        "text": "\"...Inspection du téléphone ?\""
+        "text": "\"Campus intelligent ? C'est impressionnant.\""
     },
     "day2_after_eunsu_phone_3": {
         "name": "Professeure",
-        "text": "\"Oui, juste pour vérifier les applications problématiques. Ce sera rapide. Tu peux me le montrer, non ?\""
+        "text": "\"En tant que nouvel élève, tu n'as sûrement pas encore installé l'Application de Sécurité Étudiante, n'est-ce pas ? Elle gère aussi le Wi-Fi du campus et les contacts d'urgence. Tu veux que je te la configure ?\""
     },
     "day2_after_eunsu_phone_choice": {
         "name": "Moi",
-        "text": "*...Si tous les élèves le font, pas de raison de refuser. Mais quelque chose me dérange.*",
+        "text": "*...Ça a l'air pratique, mais que la professeure manipule directement mon téléphone me met un peu mal à l'aise.*",
         "choices": [
-            "\"Bien sûr, tenez.\" (Donner le téléphone)",
-            "\"Tout le monde doit le faire ?\" (Refuser)"
+            "\"Oui, s'il vous plaît.\" (Donner le téléphone)",
+            "\"Est-ce que je peux l'installer moi-même ?\" (Refuser)"
         ]
     },
     "day2_after_phone_comply": {
         "name": "Professeure",
-        "text": "\"Merci. Je jette juste un coup d'œil. ...Tout est en ordre. Bon élève.\""
+        "text": "\"Ce sera rapide. ...Voilà. Tu auras le Wi-Fi partout sur le campus maintenant.\""
     },
     "day2_after_phone_comply_2": {
         "name": "Moi",
-        "text": "*Elle m'a rendu mon téléphone. Mais... on aurait dit que l'application Paramètres était ouverte. C'est sûrement mon imagination.*"
+        "text": "*Elle m'a rendu mon téléphone. Des gestes habiles. L'application a l'air propre. ...Mais pourquoi a-t-elle mis les permissions de localisation sur 'Toujours autoriser' ? C'est sûrement normal pour une application scolaire.*"
     },
     "day2_after_phone_refuse": {
         "name": "Professeure",
-        "text": "\"...D'accord, c'est ta vie privée. Pas de souci. Je me suis un peu emballée. Désolée.\""
+        "text": "\"Ah bon ? Alors fais-le toi-même plus tard. Tu la trouveras en cherchant dans le store.\""
     },
     "day2_after_phone_refuse_2": {
         "name": "Moi",

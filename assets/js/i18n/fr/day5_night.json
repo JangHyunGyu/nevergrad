@@ -1,9 +1,16 @@
 {
+    "day5_night_routing": {
+        "name": "",
+        "text": ""
+    },
     "day5_night_start": {
         "name": "",
         "text": "*...*"
     },
-
+    "day5_ending_true_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_true": {
         "name": "Moi",
         "text": "*La police a bouclé l'école. Le laboratoire souterrain a été découvert. Tout est mis en lumière.*"
@@ -37,7 +44,10 @@
         "text": "*Le vent souffle. Pas des fleurs de cerisier — un vent trempé de pluie. Mais il est chaleureux.*"
     },
     "day5_ending_true_subtitle": "Remise des diplômes — De la classe qui n'a jamais obtenu son diplôme, enfin.",
-
+    "day5_ending_escape_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_escape": {
         "name": "Moi",
         "text": "*Je marche sous la pluie. L'école est derrière moi maintenant.*"
@@ -55,7 +65,10 @@
         "text": "*J'ai survécu. Est-ce que ça seul... suffit ?*"
     },
     "day5_ending_escape_subtitle": "Survivant — Le poids de vivre.",
-
+    "day5_ending_resist_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_resist": {
         "name": "Moi",
         "text": "*Quand j'ai repris connaissance, j'étais sur la colline derrière l'école. L'aube se lève.*"
@@ -73,7 +86,10 @@
         "text": "*La silhouette de Seolhwa se dissout dans la lumière du matin. ...Merci.*"
     },
     "day5_ending_resist_subtitle": "Évasion incomplète — Ce n'est pas encore fini.",
-
+    "day5_ending_cage_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_cage": {
         "name": "Professeure",
         "text": "\"Bonjour, {name}.\""
@@ -91,7 +107,10 @@
         "text": "*...Pourquoi est-ce que je souris ?*"
     },
     "day5_ending_cage_subtitle": "Cage — Une vie scolaire éternelle.",
-
+    "day5_ending_forget_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_forget": {
         "name": "",
         "text": "*...*"
@@ -114,7 +133,10 @@
     },
     "day5_ending_forget_ghost": "Fuis",
     "day5_ending_forget_subtitle": "Réinitialisation — Tout depuis le début.",
-
+    "day5_ending_ghost_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_ghost": {
         "name": "Moi",
         "text": "*...Où suis-je ? L'école... c'est ça. Mais personne ne peut me voir.*"
@@ -136,5 +158,30 @@
         "text": "*...Cette fois, c'est moi qui dois le prévenir.*"
     },
     "day5_ending_ghost_whisper": "Sors d'ici",
-    "day5_ending_ghost_subtitle": "Vestige — Archives de celui qui n'a jamais obtenu son diplôme."
+    "day5_ending_ghost_subtitle": "Vestige — Archives de celui qui n'a jamais obtenu son diplôme.",
+
+    "day5_postcredit_1": {
+        "name": "",
+        "text": "*...Quelque part, un téléphone sonne.*"
+    },
+    "day5_postcredit_2": {
+        "name": "???",
+        "text": "\"Oui... Confirmé. Nous procéderons à la fermeture de ce site.\""
+    },
+    "day5_postcredit_3": {
+        "name": "???",
+        "text": "\"Le dossier numéro 13 présente une fuite de grande ampleur, une gestion médiatique est nécessaire. Selon le protocole établi.\""
+    },
+    "day5_postcredit_4": {
+        "name": "???",
+        "text": "\"...Le prochain site est-il prêt ?\""
+    },
+    "day5_postcredit_5": {
+        "name": "Moi",
+        "text": "*Des documents sont feuilletés. Photos d'une nouvelle école. De nouveaux uniformes. De nouveaux noms. ...Le profil d'un nouvel élève transféré apparaît à l'écran. Le nom '{name}' clignote dans le champ du nom.*"
+    },
+    "day5_postcredit_end": {
+        "name": "",
+        "text": ""
+    }
 }

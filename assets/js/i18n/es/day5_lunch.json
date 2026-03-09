@@ -60,6 +60,12 @@
         "name": "Han Sea",
         "text": "\"...¿Adónde vas, {name}?\""
     },
+    "day5_lunch_sea_callback": { "name": "", "text": "" },
+    "day5_lunch_sea_cb_choco": { "name": "Han Sea", "text": "\"Dijiste que te gustaba la leche con chocolate y sonreíste. ¿Me... mentiste?\"" },
+    "day5_lunch_sea_cb_lunch": { "name": "Han Sea", "text": "\"Te preparé el almuerzo cada día... ¿Todo eso no significó nada?\"" },
+    "day5_lunch_sea_cb_promise": { "name": "Han Sea", "text": "\"Cuando te pedí que te quedaras a mi lado, asentiste... mentiroso.\"" },
+    "day5_lunch_sea_cb_default": { "name": "Han Sea", "text": "\"...Estábamos en la misma clase. Solo eso... ya era suficiente.\"" },
+    "day5_lunch_sea_block_route": { "name": "", "text": "" },
     "day5_lunch_sea_block": {
         "name": "Han Sea",
         "text": "\"¿Me vas a dejar? ...¿Vas a abandonarme?\""
@@ -117,6 +123,10 @@
         "name": "Enfermera",
         "text": "\"Vaya, qué casualidad encontrarte aquí. {name}, tu revisión aún no ha terminado.\""
     },
+    "day5_lunch_riin_callback": { "name": "", "text": "" },
+    "day5_lunch_riin_cb_drink": { "name": "Enfermera", "text": "\"Dijiste que el té estaba bueno, ¿recuerdas? La profesora lo preparó con todo su cariño... ¿Quieres otra taza?\"" },
+    "day5_lunch_riin_cb_met": { "name": "Enfermera", "text": "\"Cuando viniste a la enfermería el primer día, la profesora se alegró mucho de verdad. ...¿Lo sabías?\"" },
+    "day5_lunch_riin_cb_default": { "name": "Enfermera", "text": "\"Será rápido. Una inyección y te sentirás mejor.\"" },
     "day5_lunch_riin_block": {
         "name": "Enfermera",
         "text": "\"Solo tomará un momento. Una inyección y... te sentirás mucho mejor.\""
@@ -167,6 +177,10 @@
         "name": "Tutora",
         "text": "\"{name}. ...Has llegado hasta aquí.\""
     },
+    "day5_lunch_eunsu_callback": { "name": "", "text": "" },
+    "day5_lunch_eunsu_cb_app": { "name": "Tutora", "text": "\"Cuando la profesora te configuró la app, dijiste gracias, ¿verdad? ...En ese momento pensé que eras un buen estudiante.\"" },
+    "day5_lunch_eunsu_cb_visit": { "name": "Tutora", "text": "\"El primer día después de clases viniste a presentarte. Desde entonces... la profesora supo que eras especial.\"" },
+    "day5_lunch_eunsu_cb_default": { "name": "Tutora", "text": "\"La profesora hizo todo esto por ti.\"" },
     "day5_lunch_eunsu_final_2": {
         "name": "Tutora",
         "text": "\"¿No puedes simplemente quedarte conmigo? ...Todo esto lo hice por ti.\"",
@@ -179,6 +193,10 @@
         "name": "Tutora",
         "text": "\"{name}. ¿Sabes lo preocupada que ha estado la profesora? ...Vamos, es hora de volver.\""
     },
+    "day5_lunch_eunsu_high_callback": { "name": "", "text": "" },
+    "day5_lunch_eunsu_high_cb_app": { "name": "Tutora", "text": "\"Cuando la profesora te configuró la app, dijiste gracias, ¿verdad? ...En ese momento pensé que eras un buen estudiante.\"" },
+    "day5_lunch_eunsu_high_cb_visit": { "name": "Tutora", "text": "\"El primer día después de clases viniste a presentarte. Desde entonces... la profesora supo que eras especial.\"" },
+    "day5_lunch_eunsu_high_cb_default": { "name": "Tutora", "text": "\"La profesora hizo todo esto por ti.\"" },
     "day5_lunch_eunsu_final_high_2": {
         "name": "Tutora",
         "text": "\"¿No vas a hacer caso a la profesora? ...{name} es un buen chico, ¿verdad?\"",

@@ -229,6 +229,101 @@ class GlitchSystem {
         });
     }
 
+    // ===== 약물 텍스트 오염 =====
+
+    /**
+     * 내레이션 텍스트에 간헐적 Zalgo 노이즈 삽입
+     * 핵심 대사(캐릭터 이름이 있는 대사)는 오염하지 않음
+     */
+    drugTextCorrupt(textEl, intensity = 0.05) {
+        if (!textEl) return;
+        const original = textEl.textContent;
+        const zalgoChars = ['\u0300', '\u0301', '\u0302', '\u0303', '\u0304',
+                           '\u0305', '\u0306', '\u0307', '\u0308', '\u030A',
+                           '\u030B', '\u030C', '\u030D', '\u030E', '\u030F'];
+
+        const chars = [...original];
+        for (let i = 0; i < chars.length; i++) {
+            if (Math.random() < intensity && chars[i] !== ' ' && chars[i] !== '*') {
+                const numZalgo = Math.floor(Math.random() * 3) + 1;
+                for (let j = 0; j < numZalgo; j++) {
+                    chars[i] += zalgoChars[Math.floor(Math.random() * zalgoChars.length)];
+                }
+            }
+        }
+
+        textEl.textContent = chars.join('');
+        textEl.classList.add('drug-text-corrupt');
+
+        // 0.5초 후 원래 텍스트로 복구
+        setTimeout(() => {
+            textEl.textContent = original;
+            textEl.classList.remove('drug-text-corrupt');
+        }, 500);
+    }
+
+    /**
+     * 선택지 버튼에 물결 효과 적용
+     */
+    choiceWave(buttons) {
+        buttons.forEach((btn, i) => {
+            btn.classList.add('choice-wave');
+            btn.style.animationDelay = `${i * 0.3}s`;
+        });
+    }
+
+    /**
+     * 선택지 위장 — 1초간 다른 선택지 텍스트로 표시 후 복구
+     */
+    choiceDisguise(buttons) {
+        if (buttons.length < 2) return;
+        const targetIdx = Math.floor(Math.random() * buttons.length);
+        const otherIdx = (targetIdx + 1) % buttons.length;
+        const original = buttons[targetIdx].textContent;
+
+        buttons[targetIdx].textContent = buttons[otherIdx].textContent;
+        buttons[targetIdx].classList.add('choice-disguise');
+
+        setTimeout(() => {
+            buttons[targetIdx].textContent = original;
+            buttons[targetIdx].classList.remove('choice-disguise');
+        }, 1000);
+    }
+
+    // ===== 가짜 권한 모달 =====
+
+    /**
+     * 스마트폰 앱 권한 허용 모달을 표시하고 자동으로 '항상 허용' 클릭
+     * Day 2 안전 앱 설치 장면에서 사용
+     */
+    showFakePermissionModal(appName = '학생 안전') {
+        const modal = document.createElement('div');
+        modal.className = 'fake-permission-modal';
+        modal.innerHTML = `
+            <div class="modal-title">"${appName}" 앱이 기기의 위치 정보에 접근하도록 허용하시겠습니까?</div>
+            <div class="modal-desc">이 앱은 사용하지 않는 동안에도 위치 정보를 사용합니다.</div>
+            <div class="modal-buttons">
+                <button class="modal-btn allow">항상 허용</button>
+                <button class="modal-btn deny">앱 사용 중에만 허용</button>
+                <button class="modal-btn deny">허용 안 함</button>
+            </div>
+        `;
+
+        document.body.appendChild(modal);
+
+        // 1.5초 후 자동으로 '항상 허용' 클릭
+        setTimeout(() => {
+            const allowBtn = modal.querySelector('.modal-btn.allow');
+            if (allowBtn) {
+                allowBtn.classList.add('auto-click');
+                setTimeout(() => {
+                    modal.style.animation = 'modal-appear 0.2s ease reverse forwards';
+                    setTimeout(() => modal.remove(), 200);
+                }, 400);
+            }
+        }, 1500);
+    }
+
     // ===== 유틸 =====
 
     _sleep(ms) {

@@ -72,6 +72,35 @@ Object.assign(SCENARIO[5], {
     "day5_ending_true_title": {
         endingTitle: "TRUE END",
         endingSubtitle: "day5_ending_true_subtitle",
+        next: "day5_postcredit_1"
+    },
+
+    // ── 크레딧 후 쿠키신 ──
+    "day5_postcredit_1": {
+        background: "black",
+        bgm: null,
+        character: null,
+        glitch: { noise: true, noiseDuration: 200 },
+        typingSpeed: 80,
+        next: "day5_postcredit_2"
+    },
+    "day5_postcredit_2": {
+        typingSpeed: 60,
+        next: "day5_postcredit_3"
+    },
+    "day5_postcredit_3": {
+        next: "day5_postcredit_4"
+    },
+    "day5_postcredit_4": {
+        next: "day5_postcredit_5"
+    },
+    "day5_postcredit_5": {
+        // 플레이어 이름이 새 전학생 프로필에 글리치로 표시
+        glitch: { heavyGlitch: true, glitchDuration: 500 },
+        typingSpeed: 100,
+        next: "day5_postcredit_end"
+    },
+    "day5_postcredit_end": {
         next: null
     },
 

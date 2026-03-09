@@ -97,39 +97,76 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_seolhwa"
     },
 
-    // ── 설화의 완전한 진실 (꿈) — 느린 타이핑 ──
+    // ── 설화의 완전한 진실 (꿈 — 체험형 연출) ──
     "day4_night_seolhwa": {
         background: "school_dark",
         bgm: null,
-        character: "seolhwa_ghost",
-        glitch: { noise: true, noiseDuration: 300 },
-        typingSpeed: 100,
+        character: null,
+        glitch: { noise: true, noiseDuration: 500 },
+        typingSpeed: 80,
         next: "day4_night_seolhwa_2"
     },
+    // 글리치: UI 날짜 변경 + 주인공 이름 → '이설화'로 위장
     "day4_night_seolhwa_2": {
-        typingSpeed: 120,
+        glitch: { heavyGlitch: true, glitchDuration: 800 },
+        typingSpeed: 80,
         next: "day4_night_seolhwa_3"
     },
+    // 보건실 — 리인의 주사 (1년 전)
     "day4_night_seolhwa_3": {
-        typingSpeed: 120,
+        background: "nurse_office",
+        character: "riin_smile",
+        typingSpeed: 100,
         next: "day4_night_seolhwa_4"
     },
+    // 교무실 — 피험자 #7 보고서 발견
     "day4_night_seolhwa_4": {
+        background: "teacher_office",
+        character: "eunsu_cold",
         typingSpeed: 100,
         next: "day4_night_seolhwa_5"
     },
+    // 문서 표시 — 글리치로 텍스트 깨짐
     "day4_night_seolhwa_5": {
-        typingSpeed: 200,
-        unskippable: true,
-        next: "day4_night_seolhwa_6",
-        stats: { seolhwa: { trust: 20 } }
-    },
-    "day4_night_seolhwa_6": {
-        glitch: { heavyGlitch: true, glitchDuration: 1000 },
         character: null,
+        glitch: { noise: true, noiseDuration: 400 },
+        typingSpeed: 150,
+        unskippable: true,
+        next: "day4_night_seolhwa_6"
+    },
+    // 지하실 — 설화의 최종 처리 장면
+    "day4_night_seolhwa_6": {
+        background: "basement",
+        character: "eunsu_dark",
+        typingSpeed: 120,
         next: "day4_night_seolhwa_7"
     },
+    // 암전 → 글리치 폭발
     "day4_night_seolhwa_7": {
+        glitch: { heavyGlitch: true, glitchDuration: 1500 },
+        character: null,
+        next: "day4_night_seolhwa_8"
+    },
+    // 현재 꿈속 — 설화와 대면
+    "day4_night_seolhwa_8": {
+        background: "school_dark",
+        character: "seolhwa_ghost",
+        typingSpeed: 120,
+        next: "day4_night_seolhwa_9"
+    },
+    "day4_night_seolhwa_9": {
+        typingSpeed: 200,
+        unskippable: true,
+        next: "day4_night_seolhwa_10",
+        stats: { seolhwa: { trust: 20 } }
+    },
+    // 설화 흩어짐 → 기상
+    "day4_night_seolhwa_10": {
+        glitch: { noise: true, noiseDuration: 300 },
+        character: null,
+        next: "day4_night_seolhwa_11"
+    },
+    "day4_night_seolhwa_11": {
         next: "day4_night_end"
     },
 

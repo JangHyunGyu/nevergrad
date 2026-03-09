@@ -6,35 +6,35 @@
 
     "day2_after_eunsu_phone": {
         "name": "Homeroom Teacher",
-        "text": "\"{name}, hold on. We've been having smartphone issues at school lately, so we're checking transfer students' phones.\""
+        "text": "\"{name}, hold on. Our school has a great smart campus system. Fast campus Wi-Fi, automatic attendance tracking.\""
     },
     "day2_after_eunsu_phone_2": {
         "name": "Me",
-        "text": "\"...Phone inspection?\""
+        "text": "\"Smart campus? That sounds cool.\""
     },
     "day2_after_eunsu_phone_3": {
         "name": "Homeroom Teacher",
-        "text": "\"Yes, just checking for harmful apps. It'll be quick. You can show me, right?\""
+        "text": "\"As a transfer student, you probably haven't installed the 'Student Safety App' yet, right? It handles campus Wi-Fi and emergency contacts. Want me to set it up for you?\""
     },
     "day2_after_eunsu_phone_choice": {
         "name": "Me",
-        "text": "*...If every student does it, there's no reason to refuse. But something feels off.*",
+        "text": "*...It does sound convenient, but having the teacher handle my phone directly feels a bit uncomfortable.*",
         "choices": [
-            "\"Sure, here you go.\" (Hand over the phone)",
-            "\"Does everyone have to do this?\" (Refuse)"
+            "\"Sure, please.\" (Hand over the phone)",
+            "\"Can I install it myself?\" (Decline)"
         ]
     },
     "day2_after_phone_comply": {
         "name": "Homeroom Teacher",
-        "text": "\"Thanks, I'll just take a quick look. ...All clean. Good student.\""
+        "text": "\"Won't take long. ...Done. You should have good Wi-Fi anywhere on campus now.\""
     },
     "day2_after_phone_comply_2": {
         "name": "Me",
-        "text": "*She returned my phone. But... it looked like the Settings app was open. Probably just my imagination.*"
+        "text": "*The teacher handed the phone back. Skillful fingers. The app looks clean enough. ...But why did she set location permissions to 'Always Allow'? Must be normal for a school app.*"
     },
     "day2_after_phone_refuse": {
         "name": "Homeroom Teacher",
-        "text": "\"...Alright, it's your privacy. That's fine. I got ahead of myself. Sorry.\""
+        "text": "\"Sure, you can do it yourself later. Just search for it in the app store.\""
     },
     "day2_after_phone_refuse_2": {
         "name": "Me",

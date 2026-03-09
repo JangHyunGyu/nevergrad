@@ -74,11 +74,29 @@ Object.assign(SCENARIO[5], {
         timeoutNext: "day5_lunch_escape_caught_sea"
     },
 
-    // ── 왼쪽 복도 (세아 조우) — 호감도 분기 ──
+    // ── 왼쪽 복도 (세아 조우) — 과거 선택 콜백 → 호감도 분기 ──
     "day5_lunch_escape_left": {
         character: "sea_yandere",
         glitch: { noise: true, noiseDuration: 300 },
-        // ★ 세아 호감도에 따라 난이도 변화
+        next: "day5_lunch_sea_callback"
+    },
+    // ★ 과거 선택 콜백
+    "day5_lunch_sea_callback": {
+        character: "sea_yandere",
+        // Past choice determines dialogue line
+        branches: [
+            { condition: "day2_sea_vulnerability", next: "day5_lunch_sea_cb_promise" },
+            { condition: "day1_lunch_sea", next: "day5_lunch_sea_cb_lunch" },
+            { condition: "day1_choco_accept", next: "day5_lunch_sea_cb_choco" }
+        ],
+        next: "day5_lunch_sea_cb_default"
+    },
+    "day5_lunch_sea_cb_choco": { next: "day5_lunch_sea_block_route" },
+    "day5_lunch_sea_cb_lunch": { next: "day5_lunch_sea_block_route" },
+    "day5_lunch_sea_cb_promise": { next: "day5_lunch_sea_block_route" },
+    "day5_lunch_sea_cb_default": { next: "day5_lunch_sea_block_route" },
+    // ★ 세아 호감도에 따라 난이도 변화
+    "day5_lunch_sea_block_route": {
         affinityChar: "sea",
         affinityBranches: [
             { minAffinity: 60, next: "day5_lunch_sea_block_max" },
@@ -160,11 +178,23 @@ Object.assign(SCENARIO[5], {
         setFlags: ["sea_let_go"]
     },
 
-    // ── 오른쪽 복도 (리인 조우) ──
+    // ── 오른쪽 복도 (리인 조우) — 과거 선택 콜백 ──
     "day5_lunch_escape_right": {
         character: "riin_dark",
-        next: "day5_lunch_riin_block"
+        next: "day5_lunch_riin_callback"
     },
+    // ★ 과거 선택 콜백
+    "day5_lunch_riin_callback": {
+        character: "riin_dark",
+        branches: [
+            { condition: "drank_riin_drink", next: "day5_lunch_riin_cb_drink" },
+            { condition: "met_riin", next: "day5_lunch_riin_cb_met" }
+        ],
+        next: "day5_lunch_riin_cb_default"
+    },
+    "day5_lunch_riin_cb_drink": { next: "day5_lunch_riin_block" },
+    "day5_lunch_riin_cb_met": { next: "day5_lunch_riin_block" },
+    "day5_lunch_riin_cb_default": { next: "day5_lunch_riin_block" },
     "day5_lunch_riin_block": {
         next: "day5_lunch_riin_block_2"
     },
@@ -227,10 +257,21 @@ Object.assign(SCENARIO[5], {
             { minAffinity: 0,  next: "day5_lunch_eunsu_final" }
         ]
     },
-    // LOW/MID: 기존 대면 (5초 타이머)
+    // LOW/MID: 기존 대면 — 과거 선택 콜백 → 5초 타이머
     "day5_lunch_eunsu_final": {
-        next: "day5_lunch_eunsu_final_2"
+        next: "day5_lunch_eunsu_callback"
     },
+    // ★ 과거 선택 콜백
+    "day5_lunch_eunsu_callback": {
+        branches: [
+            { condition: "installed_safety_app", next: "day5_lunch_eunsu_cb_app" },
+            { condition: "visited_eunsu_d1", next: "day5_lunch_eunsu_cb_visit" }
+        ],
+        next: "day5_lunch_eunsu_cb_default"
+    },
+    "day5_lunch_eunsu_cb_app": { next: "day5_lunch_eunsu_final_2" },
+    "day5_lunch_eunsu_cb_visit": { next: "day5_lunch_eunsu_final_2" },
+    "day5_lunch_eunsu_cb_default": { next: "day5_lunch_eunsu_final_2" },
     "day5_lunch_eunsu_final_2": {
         timedChoice: 5000,
         choices: [
@@ -244,10 +285,21 @@ Object.assign(SCENARIO[5], {
         ],
         timeoutNext: "day5_lunch_eunsu_stay"
     },
-    // HIGH: 추가 설득 + 짧은 타이머 (3초)
+    // HIGH: 추가 설득 — 과거 선택 콜백 → 짧은 타이머 (3초)
     "day5_lunch_eunsu_final_high": {
-        next: "day5_lunch_eunsu_final_high_2"
+        next: "day5_lunch_eunsu_high_callback"
     },
+    // ★ 과거 선택 콜백 (HIGH)
+    "day5_lunch_eunsu_high_callback": {
+        branches: [
+            { condition: "installed_safety_app", next: "day5_lunch_eunsu_high_cb_app" },
+            { condition: "visited_eunsu_d1", next: "day5_lunch_eunsu_high_cb_visit" }
+        ],
+        next: "day5_lunch_eunsu_high_cb_default"
+    },
+    "day5_lunch_eunsu_high_cb_app": { next: "day5_lunch_eunsu_final_high_2" },
+    "day5_lunch_eunsu_high_cb_visit": { next: "day5_lunch_eunsu_final_high_2" },
+    "day5_lunch_eunsu_high_cb_default": { next: "day5_lunch_eunsu_final_high_2" },
     "day5_lunch_eunsu_final_high_2": {
         timedChoice: 3000,
         choices: [

@@ -15,7 +15,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_eunsu_phone"
     },
 
-    // ===== 은수의 폰 검사 (핵심 위화감 이벤트) =====
+    // ===== 은수의 학생 안전 앱 (핵심 위화감 이벤트) =====
     "day2_after_eunsu_phone": {
         character: "eunsu_smile",
         sunset: true,
@@ -34,7 +34,7 @@ Object.assign(SCENARIO[2], {
             {
                 next: "day2_after_phone_comply",
                 stats: { eunsu: { affinity: 5, danger: 5 } },
-                setFlags: ["gave_phone_eunsu"]
+                setFlags: ["gave_phone_eunsu", "installed_safety_app"]
             },
             {
                 next: "day2_after_phone_refuse",
@@ -46,7 +46,9 @@ Object.assign(SCENARIO[2], {
     "day2_after_phone_comply": {
         character: "eunsu_smile",
         next: "day2_after_phone_comply_2",
-        setFlags: ["phone_checked"]
+        setFlags: ["phone_checked"],
+        // ★ 가짜 권한 모달: 자동으로 '항상 허용' 클릭
+        glitch: { fakePermissionModal: true }
     },
     "day2_after_phone_comply_2": {
         character: null,

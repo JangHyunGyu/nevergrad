@@ -6,35 +6,35 @@
 
     "day2_after_eunsu_phone": {
         "name": "Tutora",
-        "text": "\"{name}, espera un momento. Últimamente hemos tenido problemas con los teléfonos móviles en la escuela, así que estamos revisando los de los estudiantes de intercambio.\""
+        "text": "\"{name}, un momento. Nuestra escuela tiene un sistema de campus inteligente muy bueno. El Wi-Fi del campus es rápido y la asistencia se registra automáticamente.\""
     },
     "day2_after_eunsu_phone_2": {
         "name": "Yo",
-        "text": "\"...¿Inspección de teléfono?\""
+        "text": "\"¿Campus inteligente? Suena genial.\""
     },
     "day2_after_eunsu_phone_3": {
         "name": "Tutora",
-        "text": "\"Sí, solo comprobando que no haya aplicaciones dañinas. Será rápido. Puedes enseñármelo, ¿verdad?\""
+        "text": "\"Como estudiante de intercambio, seguramente aún no has instalado la 'App de Seguridad Estudiantil', ¿verdad? También conecta el Wi-Fi del campus y registra los contactos de emergencia. ¿Quieres que la profesora te la configure?\""
     },
     "day2_after_eunsu_phone_choice": {
         "name": "Yo",
-        "text": "*...Si todos los estudiantes lo hacen, no hay razón para negarme. Pero algo me huele raro.*",
+        "text": "*...Suena conveniente, pero que la profesora toque mi teléfono directamente me resulta un poco incómodo.*",
         "choices": [
-            "\"Claro, aquí tienes.\" (Entregar el teléfono)",
-            "\"¿Todos tienen que hacerlo?\" (Negarse)"
+            "\"Sí, por favor.\" (Entregar el teléfono)",
+            "\"¿Puedo instalarla yo mismo?\" (Negarse)"
         ]
     },
     "day2_after_phone_comply": {
         "name": "Tutora",
-        "text": "\"Gracias. Solo le echaré un vistazo rápido. ...Todo limpio. Buen estudiante.\""
+        "text": "\"Será rápido. ...Listo. Ahora tendrás Wi-Fi en cualquier parte del campus.\""
     },
     "day2_after_phone_comply_2": {
         "name": "Yo",
-        "text": "*Me devolvió el teléfono. Pero... parecía que la aplicación de Ajustes estaba abierta. Seguramente es mi imaginación.*"
+        "text": "*Me devolvió el teléfono. Dedos hábiles. La app se ve bastante limpia. ...Pero ¿por qué puso los permisos de ubicación en 'Permitir siempre'? Debe ser normal para una app escolar.*"
     },
     "day2_after_phone_refuse": {
         "name": "Tutora",
-        "text": "\"...De acuerdo, es tu privacidad. Está bien. Me adelanté. Lo siento.\""
+        "text": "\"¿Ah, sí? Entonces hazlo tú después. Solo búscala en la tienda de aplicaciones.\""
     },
     "day2_after_phone_refuse_2": {
         "name": "Yo",

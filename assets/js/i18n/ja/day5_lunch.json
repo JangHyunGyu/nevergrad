@@ -19,15 +19,15 @@
 
     "day5_lunch_yuna_meet": {
         "name": "チェ・ユナ",
-        "text": "\"先輩……！ 来てくれたんだ。\""
+        "text": "「先輩……！ 来てくれたんだ。」"
     },
     "day5_lunch_yuna_2": {
         "name": "チェ・ユナ",
-        "text": "\"旧館3階の突き当たりに非常口があるの。外に通じる唯一の道よ。\""
+        "text": "「旧館3階の突き当たりに非常口があるの。外に通じる唯一の道よ。」"
     },
     "day5_lunch_yuna_3": {
         "name": "チェ・ユナ",
-        "text": "\"でも……その廊下を通らなきゃいけない。きっと誰かが見張ってるはず。\""
+        "text": "「でも……その廊下を通らなきゃいけない。きっと誰かが見張ってるはず。」"
     },
     "day5_lunch_yuna_4": {
         "name": "私",
@@ -58,11 +58,17 @@
 
     "day5_lunch_escape_left": {
         "name": "ハン・セア",
-        "text": "\"……どこに行くの、{name}？\""
+        "text": "「……どこに行くの、{name}？」"
     },
+    "day5_lunch_sea_callback": { "name": "", "text": "" },
+    "day5_lunch_sea_cb_choco": { "name": "ハン・セア", "text": "「あの時、チョコミルク好きだって笑ってくれたのに。私に…嘘ついたの？」" },
+    "day5_lunch_sea_cb_lunch": { "name": "ハン・セア", "text": "「毎日お弁当作ったのに…全部、何でもなかったの？」" },
+    "day5_lunch_sea_cb_promise": { "name": "ハン・セア", "text": "「そばにいてって言った時、頷いたじゃん…嘘つき。」" },
+    "day5_lunch_sea_cb_default": { "name": "ハン・セア", "text": "「…同じクラスだったのに。それだけでも…十分だったのに。」" },
+    "day5_lunch_sea_block_route": { "name": "", "text": "" },
     "day5_lunch_sea_block": {
         "name": "ハン・セア",
-        "text": "\"私を置いて行くの？ ……私を捨てるの？\""
+        "text": "「私を置いて行くの？ ……私を捨てるの？」"
     },
     "day5_lunch_sea_block_2": {
         "name": "私",
@@ -78,7 +84,7 @@
     },
     "day5_lunch_sea_block_high": {
         "name": "ハン・セア",
-        "text": "\"...ダメ。行かせられない。\""
+        "text": "「...ダメ。行かせられない。」"
     },
     "day5_lunch_sea_block_high_2": {
         "name": "私",
@@ -94,7 +100,7 @@
     },
     "day5_lunch_sea_block_max_2": {
         "name": "ハン・セア",
-        "text": "\"私だけ見てればいい。私だけ見てればいいの。...分かったよね、{name}？\"",
+        "text": "「私だけ見てればいい。私だけ見てればいいの。...分かったよね、{name}？」",
         "choices": [
             "セアを説得する",
             "セアを説得する"
@@ -106,20 +112,24 @@
     },
     "day5_lunch_sea_talk": {
         "name": "ハン・セア",
-        "text": "\"……本当に私なしで行くの？\""
+        "text": "「……本当に私なしで行くの？」"
     },
     "day5_lunch_sea_talk_2": {
         "name": "ハン・セア",
-        "text": "\"……バカ。行って。早く行って。\""
+        "text": "「……バカ。行って。早く行って。」"
     },
 
     "day5_lunch_escape_right": {
         "name": "保健教師",
-        "text": "\"あら、こんなところで会うなんて。{name}、まだ健康診断が終わってないのに。\""
+        "text": "「あら、こんなところで会うなんて。{name}、まだ健康診断が終わってないのに。」"
     },
+    "day5_lunch_riin_callback": { "name": "", "text": "" },
+    "day5_lunch_riin_cb_drink": { "name": "保健教師", "text": "「あの時、お茶おいしいって言ったよね。先生が心を込めて作ったのに…もう一杯飲む？」" },
+    "day5_lunch_riin_cb_met": { "name": "保健教師", "text": "「初日から保健室に来てくれた時、先生本当に嬉しかったんだよ。…知ってた？」" },
+    "day5_lunch_riin_cb_default": { "name": "保健教師", "text": "「すぐ終わるよ。注射一本で楽になるから。」" },
     "day5_lunch_riin_block": {
         "name": "保健教師",
-        "text": "\"すぐ終わるわ。注射を一本打てば……楽になるわよ。\""
+        "text": "「すぐ終わるわ。注射を一本打てば……楽になるわよ。」"
     },
     "day5_lunch_riin_block_2": {
         "name": "私",
@@ -135,20 +145,20 @@
     },
     "day5_lunch_riin_confront": {
         "name": "保健教師",
-        "text": "\"……知ってたのね。全部。\""
+        "text": "「……知ってたのね。全部。」"
     },
     "day5_lunch_riin_confront_2": {
         "name": "保健教師",
-        "text": "\"……行きなさい。私も……もう疲れたわ。\""
+        "text": "「……行きなさい。私も……もう疲れたわ。」"
     },
 
     "day5_lunch_escape_caught_sea": {
         "name": "ハン・セア",
-        "text": "\"捕まえた。……もうどこにも行かないよね？\""
+        "text": "「捕まえた。……もうどこにも行かないよね？」"
     },
     "day5_lunch_escape_caught_riin": {
         "name": "保健教師",
-        "text": "\"しっ。すぐ終わるわ。痛くないから。\""
+        "text": "「しっ。すぐ終わるわ。痛くないから。」"
     },
     "day5_lunch_caught": {
         "name": "私",
@@ -165,11 +175,15 @@
     },
     "day5_lunch_eunsu_final": {
         "name": "担任教師",
-        "text": "\"{name}。……ここまで来たのね。\""
+        "text": "「{name}。……ここまで来たのね。」"
     },
+    "day5_lunch_eunsu_callback": { "name": "", "text": "" },
+    "day5_lunch_eunsu_cb_app": { "name": "担任教師", "text": "「アプリ設定してあげた時、ありがとうって言ったよね？…あの時、いい生徒だなって思ったんだけど。」" },
+    "day5_lunch_eunsu_cb_visit": { "name": "担任教師", "text": "「初日の放課後にわざわざ挨拶に来てくれたよね。あの時から…先生は君が特別だと思ったんだ。」" },
+    "day5_lunch_eunsu_cb_default": { "name": "担任教師", "text": "「先生はあなたのためにこれを全部やったのに。」" },
     "day5_lunch_eunsu_final_2": {
         "name": "担任教師",
-        "text": "\"先生と一緒にいちゃダメ？ ……先生はあなたのためにこれを全部やってきたのに。\"",
+        "text": "「先生と一緒にいちゃダメ？ ……先生はあなたのためにこれを全部やってきたのに。」",
         "choices": [
             "押しのけて出る",
             "ウンスと一緒に残る"
@@ -177,11 +191,15 @@
     },
     "day5_lunch_eunsu_final_high": {
         "name": "担任教師",
-        "text": "\"{name}。先生がどれだけ心配したか分かる？ ...もう戻ってこよう。\""
+        "text": "「{name}。先生がどれだけ心配したか分かる？ ...もう戻ってこよう。」"
     },
+    "day5_lunch_eunsu_high_callback": { "name": "", "text": "" },
+    "day5_lunch_eunsu_high_cb_app": { "name": "担任教師", "text": "「アプリ設定してあげた時、ありがとうって言ったよね？…あの時、いい生徒だなって思ったんだけど。」" },
+    "day5_lunch_eunsu_high_cb_visit": { "name": "担任教師", "text": "「初日の放課後にわざわざ挨拶に来てくれたよね。あの時から…先生は君が特別だと思ったんだ。」" },
+    "day5_lunch_eunsu_high_cb_default": { "name": "担任教師", "text": "「先生はあなたのためにこれを全部やったのに。」" },
     "day5_lunch_eunsu_final_high_2": {
         "name": "担任教師",
-        "text": "\"先生の言うこと聞かないの？ ...{name}はいい子じゃない。\"",
+        "text": "「先生の言うこと聞かないの？ ...{name}はいい子じゃない。」",
         "choices": [
             "押しのけて出る",
             "ウンスと一緒に残る"
@@ -193,7 +211,7 @@
     },
     "day5_lunch_eunsu_final_max_2": {
         "name": "担任教師",
-        "text": "\"どこに行こうとしてるの？ ...先生が全部準備しておいたから。{name}はここにいればいいの。\""
+        "text": "「どこに行こうとしてるの？ ...先生が全部準備しておいたから。{name}はここにいればいいの。」"
     },
     "day5_lunch_eunsu_yuna_help": {
         "name": "私",
@@ -205,7 +223,7 @@
     },
     "day5_lunch_eunsu_stay": {
         "name": "担任教師",
-        "text": "\"……ありがとう、{name}。これでいいの。\""
+        "text": "「……ありがとう、{name}。これでいいの。」"
     },
     "day5_lunch_eunsu_stay_2": {
         "name": "私",

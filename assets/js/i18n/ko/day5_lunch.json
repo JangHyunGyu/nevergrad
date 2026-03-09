@@ -60,6 +60,12 @@
         "name": "한세아",
         "text": "\"...어디 가는 거야, {name}.\""
     },
+    "day5_lunch_sea_callback": { "name": "", "text": "" },
+    "day5_lunch_sea_cb_choco": { "name": "한세아", "text": "\"그때 초코우유 좋아한다고 웃어줬잖아. 나한테... 거짓말한 거야?\"" },
+    "day5_lunch_sea_cb_lunch": { "name": "한세아", "text": "\"매일 도시락 싸왔는데... 그게 다 아무것도 아니었어?\"" },
+    "day5_lunch_sea_cb_promise": { "name": "한세아", "text": "\"내 곁에 있어달라고 했을 때 고개 끄덕였잖아... 거짓말쟁이.\"" },
+    "day5_lunch_sea_cb_default": { "name": "한세아", "text": "\"...우리 같은 반이었잖아. 그것만으로도... 충분했는데.\"" },
+    "day5_lunch_sea_block_route": { "name": "", "text": "" },
     "day5_lunch_sea_block": {
         "name": "한세아",
         "text": "\"나를 두고? ...버리는 거야?\""
@@ -117,6 +123,10 @@
         "name": "보건교사",
         "text": "\"여기서 마주치네. {name}, 아직 검진이 안 끝났는데.\""
     },
+    "day5_lunch_riin_callback": { "name": "", "text": "" },
+    "day5_lunch_riin_cb_drink": { "name": "보건교사", "text": "\"그때 차 맛있다고 했잖아. 선생님이 정성껏 만든 건데... 한 잔 더 마실래?\"" },
+    "day5_lunch_riin_cb_met": { "name": "보건교사", "text": "\"첫날부터 보건실에 와줬을 때, 선생님 진짜 기뻤거든. ...알고 있었어?\"" },
+    "day5_lunch_riin_cb_default": { "name": "보건교사", "text": "\"금방이야. 주사 한 대만 맞으면 편해질 거야.\"" },
     "day5_lunch_riin_block": {
         "name": "보건교사",
         "text": "\"금방이야. 주사 한 대만 맞으면 편해질 거야.\""
@@ -167,6 +177,10 @@
         "name": "담임교사",
         "text": "\"{name}. ...여기까지 왔구나.\""
     },
+    "day5_lunch_eunsu_callback": { "name": "", "text": "" },
+    "day5_lunch_eunsu_cb_app": { "name": "담임교사", "text": "\"선생님이 앱 설치해줬을 때 고맙다고 했었지? ...그때 참 착한 학생이라고 생각했는데.\"" },
+    "day5_lunch_eunsu_cb_visit": { "name": "담임교사", "text": "\"첫날 방과후에 직접 인사 와줬잖아. 그때부터... 선생님은 네가 특별하다고 느꼈어.\"" },
+    "day5_lunch_eunsu_cb_default": { "name": "담임교사", "text": "\"선생님은 너를 위해서 이 모든 걸 한 건데.\"" },
     "day5_lunch_eunsu_final_2": {
         "name": "담임교사",
         "text": "\"선생님이랑 같이 있으면 안 돼? ...선생님은 너를 위해서 이 모든 걸 한 건데.\"",
@@ -179,6 +193,10 @@
         "name": "담임교사",
         "text": "\"{name}. 선생님이 얼마나 걱정했는지 알아? ...이제 그만 돌아오자.\""
     },
+    "day5_lunch_eunsu_high_callback": { "name": "", "text": "" },
+    "day5_lunch_eunsu_high_cb_app": { "name": "담임교사", "text": "\"선생님이 앱 설치해줬을 때 고맙다고 했었지? ...그때 참 착한 학생이라고 생각했는데.\"" },
+    "day5_lunch_eunsu_high_cb_visit": { "name": "담임교사", "text": "\"첫날 방과후에 직접 인사 와줬잖아. 그때부터... 선생님은 네가 특별하다고 느꼈어.\"" },
+    "day5_lunch_eunsu_high_cb_default": { "name": "담임교사", "text": "\"선생님은 너를 위해서 이 모든 걸 한 건데.\"" },
     "day5_lunch_eunsu_final_high_2": {
         "name": "담임교사",
         "text": "\"선생님 말 안 들을 거야? ...{name}은 착한 아이잖아.\"",

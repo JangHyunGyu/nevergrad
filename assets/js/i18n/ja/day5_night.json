@@ -1,9 +1,16 @@
 {
+    "day5_night_routing": {
+        "name": "",
+        "text": ""
+    },
     "day5_night_start": {
         "name": "",
         "text": "*……*"
     },
-
+    "day5_ending_true_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_true": {
         "name": "私",
         "text": "*警察が学校を封鎖した。地下実験室が発見された。すべてが明るみに出ようとしている。*"
@@ -14,7 +21,7 @@
     },
     "day5_ending_true_3": {
         "name": "チェ・ユナ",
-        "text": "\"先輩……私たち、やったんだね。\""
+        "text": "「先輩……私たち、やったんだね。」"
     },
     "day5_ending_true_4": {
         "name": "私",
@@ -30,14 +37,17 @@
     },
     "day5_ending_true_7": {
         "name": "イ・ソルファ",
-        "text": "\"……ありがとう。これで私も卒業できそうだよ。\""
+        "text": "「……ありがとう。これで私も卒業できそうだよ。」"
     },
     "day5_ending_true_8": {
         "name": "私",
         "text": "*風が吹く。桜ではなく雨粒を含んだ風。でも温かい。*"
     },
     "day5_ending_true_subtitle": "卒業 —— 卒業できなかった教室から、ようやく。",
-
+    "day5_ending_escape_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_escape": {
         "name": "私",
         "text": "*雨に打たれながら歩いている。学校は後ろに置いてきた。*"
@@ -55,7 +65,10 @@
         "text": "*生き残った。それだけで……十分なのだろうか。*"
     },
     "day5_ending_escape_subtitle": "生存者 —— 生き残った者の重さ。",
-
+    "day5_ending_resist_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_resist": {
         "name": "私",
         "text": "*気がついた時、学校の裏山だった。夜明けが訪れようとしている。*"
@@ -66,17 +79,20 @@
     },
     "day5_ending_resist_3": {
         "name": "イ・ソルファ",
-        "text": "\"……今度はあなたの番よ。私みたいにならないで。\""
+        "text": "「……今度はあなたの番よ。私みたいにならないで。」"
     },
     "day5_ending_resist_4": {
         "name": "私",
         "text": "*ソルファの姿が朝の光に溶けて消えていく。……ありがとう。*"
     },
     "day5_ending_resist_subtitle": "未完の脱出 —— まだ終わっていない。",
-
+    "day5_ending_cage_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_cage": {
         "name": "担任教師",
-        "text": "\"おはよう、{name}。\""
+        "text": "「おはよう、{name}。」"
     },
     "day5_ending_cage_2": {
         "name": "私",
@@ -91,7 +107,10 @@
         "text": "*……僕はなぜ笑っているんだ？*"
     },
     "day5_ending_cage_subtitle": "鳥籠 —— 永遠の学校生活。",
-
+    "day5_ending_forget_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_forget": {
         "name": "",
         "text": "*……*"
@@ -114,7 +133,10 @@
     },
     "day5_ending_forget_ghost": "逃げて",
     "day5_ending_forget_subtitle": "リセット —— すべてが最初から。",
-
+    "day5_ending_ghost_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_ghost": {
         "name": "私",
         "text": "*……ここはどこだ？ 学校……そうだ。学校だ。でも誰も僕を見ることができない。*"
@@ -129,12 +151,37 @@
     },
     "day5_ending_ghost_4": {
         "name": "???",
-        "text": "\"こんにちは！ 今日からこの学校に転校してきた……\""
+        "text": "「こんにちは！ 今日からこの学校に転校してきた……」"
     },
     "day5_ending_ghost_5": {
         "name": "私",
         "text": "*……今度は僕が警告しなければならない。*"
     },
     "day5_ending_ghost_whisper": "ここから出て",
-    "day5_ending_ghost_subtitle": "残響 —— 卒業できなかった者の記録。"
+    "day5_ending_ghost_subtitle": "残響 —— 卒業できなかった者の記録。",
+
+    "day5_postcredit_1": {
+        "name": "",
+        "text": "*…どこかで電話が鳴っている。*"
+    },
+    "day5_postcredit_2": {
+        "name": "???",
+        "text": "「はい。…確認しました。当該拠点は閉鎖処理いたします。」"
+    },
+    "day5_postcredit_3": {
+        "name": "???",
+        "text": "「13番の件は流出規模が大きいため、メディア対応が必要です。既定のプロトコルで。」"
+    },
+    "day5_postcredit_4": {
+        "name": "???",
+        "text": "「…次の拠点は準備できていますか？」"
+    },
+    "day5_postcredit_5": {
+        "name": "私",
+        "text": "*書類がめくられる。新しい学校の写真。新しい制服。新しい名前たち。…新しい転校生のプロフィールが画面に映る。名前欄に「{name}」が点滅する。*"
+    },
+    "day5_postcredit_end": {
+        "name": "",
+        "text": ""
+    }
 }

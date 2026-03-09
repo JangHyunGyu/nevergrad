@@ -1,9 +1,16 @@
 {
+    "day5_night_routing": {
+        "name": "",
+        "text": ""
+    },
     "day5_night_start": {
         "name": "",
         "text": "*...*"
     },
-
+    "day5_ending_true_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_true": {
         "name": "Yo",
         "text": "*La policía precintó la escuela. El laboratorio subterráneo fue descubierto. Todo está saliendo a la luz.*"
@@ -37,7 +44,10 @@
         "text": "*El viento sopla. No son cerezos — es viento empapado de lluvia. Pero se siente cálido.*"
     },
     "day5_ending_true_subtitle": "Graduación — Del aula que nunca se graduó, por fin.",
-
+    "day5_ending_escape_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_escape": {
         "name": "Yo",
         "text": "*Caminando bajo la lluvia. La escuela queda a mis espaldas.*"
@@ -55,7 +65,10 @@
         "text": "*Sobreviví. ¿Eso solo... es suficiente?*"
     },
     "day5_ending_escape_subtitle": "Superviviente — El peso de vivir.",
-
+    "day5_ending_resist_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_resist": {
         "name": "Yo",
         "text": "*Cuando volví en mí, estaba en la colina detrás de la escuela. Está amaneciendo.*"
@@ -73,7 +86,10 @@
         "text": "*La figura de Seolhwa se disuelve en la luz del amanecer. ...Gracias.*"
     },
     "day5_ending_resist_subtitle": "Escape Incompleto — Aún no ha terminado.",
-
+    "day5_ending_cage_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_cage": {
         "name": "Tutora",
         "text": "\"Buenos días, {name}.\""
@@ -91,7 +107,10 @@
         "text": "*...¿Por qué estoy sonriendo?*"
     },
     "day5_ending_cage_subtitle": "Jaula — Una vida escolar eterna.",
-
+    "day5_ending_forget_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_forget": {
         "name": "",
         "text": "*...*"
@@ -114,7 +133,10 @@
     },
     "day5_ending_forget_ghost": "Huye",
     "day5_ending_forget_subtitle": "Reinicio — Todo desde el principio.",
-
+    "day5_ending_ghost_title": {
+        "name": "",
+        "text": ""
+    },
     "day5_ending_ghost": {
         "name": "Yo",
         "text": "*...¿Dónde es esto? La escuela... cierto. Pero nadie puede verme.*"
@@ -136,5 +158,30 @@
         "text": "*...Esta vez, tengo que ser yo quien les advierta.*"
     },
     "day5_ending_ghost_whisper": "Sal de aquí",
-    "day5_ending_ghost_subtitle": "Vestigio — Registros de quien nunca se graduó."
+    "day5_ending_ghost_subtitle": "Vestigio — Registros de quien nunca se graduó.",
+
+    "day5_postcredit_1": {
+        "name": "",
+        "text": "*...En algún lugar, un teléfono está sonando.*"
+    },
+    "day5_postcredit_2": {
+        "name": "???",
+        "text": "\"Sí... Confirmado. Procederemos con el cierre de ese punto.\""
+    },
+    "day5_postcredit_3": {
+        "name": "???",
+        "text": "\"El caso número 13 tiene una filtración de gran escala, se requiere gestión de medios. Según el protocolo establecido.\""
+    },
+    "day5_postcredit_4": {
+        "name": "???",
+        "text": "\"...¿Está listo el siguiente punto?\""
+    },
+    "day5_postcredit_5": {
+        "name": "Yo",
+        "text": "*Se pasan las páginas de los documentos. Fotos de una nueva escuela. Nuevos uniformes. Nuevos nombres. ...El perfil de un nuevo estudiante de intercambio aparece en la pantalla. El nombre '{name}' parpadea en el campo de nombre.*"
+    },
+    "day5_postcredit_end": {
+        "name": "",
+        "text": ""
+    }
 }

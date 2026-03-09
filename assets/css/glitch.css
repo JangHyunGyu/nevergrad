@@ -174,3 +174,110 @@
         rgba(80, 0, 0, 0.4) 100%
     );
 }
+
+/* ===== Drug Text Corruption (Zalgo effect) ===== */
+.drug-text-corrupt {
+    animation: zalgo-flicker 0.3s ease;
+}
+
+@keyframes zalgo-flicker {
+    0% { opacity: 1; filter: none; }
+    30% { opacity: 0.7; filter: blur(1px); transform: skewX(-2deg); }
+    60% { opacity: 1; filter: none; transform: skewX(0); }
+    100% { opacity: 1; }
+}
+
+/* ===== Choice Wave (drug debuff) ===== */
+.choice-wave {
+    animation: wave-text 2s ease-in-out infinite;
+}
+
+@keyframes wave-text {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-2px) rotate(0.5deg); }
+    50% { transform: translateY(1px) rotate(-0.3deg); }
+    75% { transform: translateY(-1px) rotate(0.2deg); }
+}
+
+/* ===== Choice Disguise (drug debuff + high danger) ===== */
+.choice-disguise {
+    animation: disguise-flash 1s ease forwards;
+}
+
+@keyframes disguise-flash {
+    0% { opacity: 1; }
+    40% { opacity: 0.3; filter: blur(2px); }
+    50% { opacity: 1; filter: none; }
+    100% { opacity: 1; }
+}
+
+/* ===== Fake Permission Modal ===== */
+.fake-permission-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    color: #333;
+    border-radius: 14px;
+    padding: 24px;
+    max-width: 320px;
+    width: 90%;
+    z-index: 100;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-align: center;
+    animation: modal-appear 0.3s ease;
+}
+
+.fake-permission-modal .modal-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.fake-permission-modal .modal-desc {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.fake-permission-modal .modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fake-permission-modal .modal-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.fake-permission-modal .modal-btn.allow {
+    background: #007AFF;
+    color: white;
+    font-weight: 600;
+}
+
+.fake-permission-modal .modal-btn.deny {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.fake-permission-modal .modal-btn.auto-click {
+    animation: auto-press 0.3s ease forwards;
+}
+
+@keyframes auto-press {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); background: #005ECB; }
+    100% { transform: scale(1); background: #007AFF; }
+}
+
+@keyframes modal-appear {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}

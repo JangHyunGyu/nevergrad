@@ -99,6 +99,8 @@
     font-size: 0.9rem;
     border-radius: 1.5rem;
     cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .ft-turns {

@@ -20,6 +20,11 @@ Object.assign(SCENARIO[1], {
     },
     "day1_night_3": {
         night: true,
+        next: "day1_night_recall_eunsu"
+    },
+    // 은수 회상 — 미세 위화감 회고
+    "day1_night_recall_eunsu": {
+        night: true,
         next: "day1_night_phone"
     },
     "day1_night_phone": {
@@ -27,6 +32,11 @@ Object.assign(SCENARIO[1], {
         next: "day1_night_phone_2"
     },
     "day1_night_phone_2": {
+        night: true,
+        next: "day1_night_recall_seolhwa"
+    },
+    // 설화 회상 — greeted_seolhwa 여부 무관, 모호한 여운
+    "day1_night_recall_seolhwa": {
         night: true,
         next: "day1_night_sleep"
     },

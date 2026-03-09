@@ -4,7 +4,7 @@
  * ============================================================================
  * 순수 로맨스 미연시 분위기. 위화감은 2% 이하.
  * - 세아의 "초코우유" 핀 하나
- * - 은수의 "드디어" 실언 하나
+ * - 은수의 "오래간만" 핀 하나
  * - 설화의 존재 인지 (선택적)
  * ============================================================================
  */
@@ -128,15 +128,15 @@ Object.assign(SCENARIO[1], {
     "day1_eunsu_first_4": {
         character: "eunsu_smile",
         next: "day1_eunsu_first_5",
-        // "드디어 왔구나" — 위화감 핀. 은수의 danger 은밀히 상승
+        // "전학생은 오래간만" — 미세 위화감 핀. 은수의 danger 은밀히 상승
         stats: { eunsu: { danger: 5 } }
     },
     "day1_eunsu_first_5": {
-        character: null,
+        character: "eunsu_smile",
         next: "day1_eunsu_first_6"
     },
     "day1_eunsu_first_6": {
-        character: "eunsu_shy",
+        character: null,
         next: "day1_eunsu_first_7"
     },
     "day1_eunsu_first_7": {
@@ -189,15 +189,16 @@ Object.assign(SCENARIO[1], {
         next: "day1_seolhwa_greet_6"
     },
     "day1_seolhwa_greet_6": {
-        // "거기 빈자린데?" — 설화가 보이지 않는다
+        // "있는지도 몰랐네" — 설화의 존재 모호
         next: "day1_seolhwa_greet_7"
     },
     "day1_seolhwa_greet_7": {
+        character: "seolhwa_normal",
         next: "day1_seolhwa_greet_8"
     },
     "day1_seolhwa_greet_8": {
-        character: "seolhwa_normal",
-        next: "day1_seolhwa_greet_9"
+        character: null,
+        next: "day1_morning_end"
     },
     "day1_seolhwa_greet_9": {
         next: "day1_seolhwa_greet_10"

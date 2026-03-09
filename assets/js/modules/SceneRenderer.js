@@ -32,6 +32,20 @@ class SceneRenderer {
         }
     }
 
+    // 시간대 설정: bg-layer 필터 + bg-overlay 동시 적용
+    // type: 'morning' | 'sunset' | 'night' | 'dawn' | 'dark' | 'rain' | null(낮)
+    setTimeOfDay(type) {
+        if (!this.bgLayer) return;
+        // 기존 시간대 클래스 제거
+        this.bgLayer.className = 'bg-layer';
+        this.clearOverlays();
+
+        if (type) {
+            this.bgLayer.classList.add(`time-${type}`);
+            this.addOverlay(type);
+        }
+    }
+
     setCharacter(position, src) {
         const el = position === 'left' ? this.charLeft
                   : position === 'right' ? this.charRight

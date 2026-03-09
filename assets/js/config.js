@@ -107,14 +107,15 @@ const CONFIG = {
     },
 
     // ===== 배경 이미지 =====
+    // 같은 장소의 시간대 변형은 CSS 필터/오버레이로 처리 (setTimeOfDay)
+    // 기본 이미지(낮)만 준비 → morning/sunset/night/dawn/dark/rain 자동 적용
+    // 구도/장소 자체가 다른 것만 별도 이미지
     BACKGROUNDS: {
-        // 일상
+        // 학교 내부
         classroom: "assets/images/background/classroom.png",
-        classroom_empty: "assets/images/background/classroom_empty.png",
-        classroom_evening: "assets/images/background/classroom_evening.png",
+        classroom_empty: "assets/images/background/classroom_empty.png",  // 구조 다름
         hallway: "assets/images/background/hallway.png",
         corridor: "assets/images/background/corridor.png",
-        corridor_dark: "assets/images/background/corridor_dark.png",
         stairway: "assets/images/background/stairway.png",
         rooftop: "assets/images/background/rooftop.png",
         nurse_office: "assets/images/background/nurse_office.png",
@@ -122,26 +123,20 @@ const CONFIG = {
         faculty_office: "assets/images/background/faculty_office.png",
         gym: "assets/images/background/gym.png",
         library: "assets/images/background/library.png",
-        school_gate: "assets/images/background/school_gate.png",
-        school_gate_evening: "assets/images/background/school_gate_evening.png",
         old_building: "assets/images/background/old_building.png",
-        // 학교 외부
+        basement: "assets/images/background/basement.png",
+        // 학교 외부 (구도가 고유한 것)
+        school_gate: "assets/images/background/school_gate.png",
+        school_night: "assets/images/background/school_night.png",      // 외부에서 본 밤 학교 (고유)
+        school_dawn: "assets/images/background/school_dawn.png",        // 새벽 안개 속 학교 (고유)
+        sunset_outside: "assets/images/background/sunset_outside.png",  // 언덕 파노라마 (고유)
         street: "assets/images/background/street.png",
         outside_school: "assets/images/background/outside_school.png",
         exit_door: "assets/images/background/exit_door.png",
         cherry_blossom: "assets/images/background/cherry_blossom.png",
+        night_rain: "assets/images/background/night_rain.png",          // 도시 거리 비 (고유)
         // 자취방
         home: "assets/images/background/home.png",
-        room_morning: "assets/images/background/room_morning.png",
-        room_night: "assets/images/background/room_night.png",
-        // 스릴러
-        school_night: "assets/images/background/school_night.png",
-        school_dark: "assets/images/background/school_dark.png",
-        school_dawn: "assets/images/background/school_dawn.png",
-        basement: "assets/images/background/basement.png",
-        // 엔딩
-        sunset_outside: "assets/images/background/sunset_outside.png",
-        night_rain: "assets/images/background/night_rain.png",
         // 특수
         black: "assets/images/background/black.png"
     },

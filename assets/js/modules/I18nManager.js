@@ -131,6 +131,7 @@ class I18nManager {
         en: { label: "English", flag: "🇺🇸" },
         ja: { label: "日本語", flag: "🇯🇵" },
         es: { label: "Español", flag: "🇪🇸" },
-        fr: { label: "Français", flag: "🇫🇷" }
+        fr: { label: "Français", flag: "🇫🇷" },
+        de: { label: "Deutsch", flag: "🇩🇪" }
     };
 }

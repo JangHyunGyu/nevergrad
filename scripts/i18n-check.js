@@ -12,7 +12,7 @@ const path = require('path');
 
 const I18N_DIR = path.join(__dirname, '..', 'assets', 'js', 'i18n');
 const SOURCE_LANG = 'ko';
-const TARGET_LANGS = ['en', 'ja', 'es', 'fr'];
+const TARGET_LANGS = ['en', 'ja', 'es', 'fr', 'de'];
 
 function getJsonFiles(langDir) {
     if (!fs.existsSync(langDir)) return [];

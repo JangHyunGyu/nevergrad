@@ -136,6 +136,7 @@ const CONFIG = {
         garden: "assets/images/background/garden.png",
         school_gate: "assets/images/background/school_gate.png",
         school_night: "assets/images/background/school_night.png",      // 외부에서 본 밤 학교 (고유)
+        school_dark: "assets/images/background/school_dark.png",        // 내부 칠흑 복도 (고유)
         school_dawn: "assets/images/background/school_dawn.png",        // 새벽 안개 속 학교 (고유)
         sunset_outside: "assets/images/background/sunset_outside.png",  // 언덕 파노라마 (고유)
         street: "assets/images/background/street.png",
@@ -145,6 +146,7 @@ const CONFIG = {
         night_rain: "assets/images/background/night_rain.png",          // 도시 거리 비 (고유)
         // 자취방
         home: "assets/images/background/home.png",
+        room_night: "assets/images/background/room_night.png",        // 스탠드+폰빛 고유 구도
         // 특수
         black: "assets/images/background/black.png"
     },

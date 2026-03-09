@@ -62,6 +62,7 @@ const CONFIG = {
             smile: "assets/images/characters/eunsu_smile.png",
             gentle: "assets/images/characters/eunsu_gentle.png",
             shy: "assets/images/characters/eunsu_shy.png",
+            serious: "assets/images/characters/eunsu_serious.png",
             angry: "assets/images/characters/eunsu_angry.png",
             close: "assets/images/characters/eunsu_close.png",
             cold: "assets/images/characters/eunsu_cold.png",
@@ -82,6 +83,7 @@ const CONFIG = {
             smile: "assets/images/characters/sea_smile.png",
             shy: "assets/images/characters/sea_shy.png",
             serious: "assets/images/characters/sea_serious.png",
+            sad: "assets/images/characters/sea_sad.png",
             angry: "assets/images/characters/sea_angry.png",
             hurt: "assets/images/characters/sea_hurt.png",
             dark: "assets/images/characters/sea_dark.png",
@@ -102,6 +104,7 @@ const CONFIG = {
             smile: "assets/images/characters/seolhwa_smile.png",
             sad: "assets/images/characters/seolhwa_sad.png",
             fade: "assets/images/characters/seolhwa_fade.png",
+            fading: "assets/images/characters/seolhwa_fade.png",  // 시나리오 호환 alias
             ghost: "assets/images/characters/seolhwa_ghost.png"
         }
     },
@@ -125,7 +128,12 @@ const CONFIG = {
         library: "assets/images/background/library.png",
         old_building: "assets/images/background/old_building.png",
         basement: "assets/images/background/basement.png",
+        // CSS 시간대 변형 (기본 이미지 재사용 + setTimeOfDay 호출)
+        corridor_dark: "assets/images/background/corridor.png",           // corridor + dark
+        room_morning: "assets/images/background/home.png",               // home + morning
+        school_gate_evening: "assets/images/background/school_gate.png", // school_gate + sunset
         // 학교 외부 (구도가 고유한 것)
+        garden: "assets/images/background/garden.png",
         school_gate: "assets/images/background/school_gate.png",
         school_night: "assets/images/background/school_night.png",      // 외부에서 본 밤 학교 (고유)
         school_dawn: "assets/images/background/school_dawn.png",        // 새벽 안개 속 학교 (고유)

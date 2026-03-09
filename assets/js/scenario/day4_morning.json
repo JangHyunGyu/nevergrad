@@ -1,0 +1,94 @@
+{
+    "scenes": [
+        {
+            "id": "day4_morning_start",
+            "background": "room_morning",
+            "bgm": "tension_mid",
+            "next": "day4_morning_start_2"
+        },
+        { "id": "day4_morning_start_2", "next": "day4_morning_start_3" },
+        { "id": "day4_morning_start_3", "next": "day4_morning_start_4" },
+        { "id": "day4_morning_start_4", "next": "day4_morning_start_5" },
+        { "id": "day4_morning_start_5", "next": "day4_morning_start_6" },
+        { "id": "day4_morning_start_6", "next": "day4_morning_start_7" },
+        { "id": "day4_morning_start_7", "next": "day4_morning_start_8" },
+        { "id": "day4_morning_start_8", "next": "day4_morning_start_9" },
+        { "id": "day4_morning_start_9", "next": "day4_morning_commute" },
+        {
+            "id": "day4_morning_commute",
+            "background": "cherry_blossom_road",
+            "next": "day4_morning_commute_2"
+        },
+        { "id": "day4_morning_commute_2", "next": "day4_morning_commute_3" },
+        { "id": "day4_morning_commute_3", "next": "day4_morning_gate" },
+        {
+            "id": "day4_morning_gate",
+            "background": "school_gate",
+            "next": "day4_morning_gate_2"
+        },
+        { "id": "day4_morning_gate_2", "next": "day4_morning_gate_3" },
+        { "id": "day4_morning_gate_3", "next": "day4_morning_gate_4" },
+        { "id": "day4_morning_gate_4", "next": "day4_morning_gate_5" },
+        { "id": "day4_morning_gate_5", "next": "day4_morning_gate_6" },
+        { "id": "day4_morning_gate_6", "next": "day4_morning_eunsu" },
+        { "id": "day4_morning_eunsu", "next": "day4_morning_eunsu_2" },
+        { "id": "day4_morning_eunsu_2", "next": "day4_morning_eunsu_3" },
+        { "id": "day4_morning_eunsu_3", "next": "day4_morning_eunsu_4" },
+        {
+            "id": "day4_morning_eunsu_4",
+            "type": "timedChoice",
+            "timeout": 8000,
+            "timeoutNext": "day4_morning_eunsu_comply",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day4_morning_eunsu_comply",
+                    "stats": { "eunsu": { "control": 2 } },
+                    "flag": "day4_eunsu_comply"
+                },
+                {
+                    "index": 1,
+                    "next": "day4_morning_eunsu_refuse",
+                    "stats": { "eunsu": { "danger": 2 } },
+                    "flag": "day4_eunsu_refuse"
+                }
+            ]
+        },
+        { "id": "day4_morning_eunsu_comply", "next": "day4_morning_eunsu_comply_2" },
+        { "id": "day4_morning_eunsu_comply_2", "next": "day4_morning_eunsu_comply_3" },
+        { "id": "day4_morning_eunsu_comply_3", "next": "day4_morning_classroom" },
+        { "id": "day4_morning_eunsu_refuse", "next": "day4_morning_eunsu_refuse_2" },
+        { "id": "day4_morning_eunsu_refuse_2", "next": "day4_morning_eunsu_refuse_3" },
+        { "id": "day4_morning_eunsu_refuse_3", "next": "day4_morning_eunsu_refuse_4" },
+        { "id": "day4_morning_eunsu_refuse_4", "next": "day4_morning_classroom" },
+        {
+            "id": "day4_morning_classroom",
+            "background": "classroom",
+            "next": "day4_morning_classroom_2"
+        },
+        { "id": "day4_morning_classroom_2", "next": "day4_morning_classroom_3" },
+        { "id": "day4_morning_classroom_3", "next": "day4_morning_classroom_4" },
+        { "id": "day4_morning_classroom_4", "next": "day4_morning_classroom_5" },
+        { "id": "day4_morning_classroom_5", "next": "day4_morning_sea" },
+        { "id": "day4_morning_sea", "next": "day4_morning_sea_2" },
+        { "id": "day4_morning_sea_2", "next": "day4_morning_sea_3" },
+        { "id": "day4_morning_sea_3", "next": "day4_morning_sea_4" },
+        { "id": "day4_morning_sea_4", "next": "day4_morning_sea_5" },
+        { "id": "day4_morning_sea_5", "next": "day4_morning_sea_6" },
+        { "id": "day4_morning_sea_6", "next": "day4_morning_class_start" },
+        { "id": "day4_morning_class_start", "next": "day4_morning_class_2" },
+        { "id": "day4_morning_class_2", "next": "day4_morning_class_3" },
+        { "id": "day4_morning_class_3", "next": "day4_morning_class_4" },
+        { "id": "day4_morning_class_4", "next": "day4_morning_class_5" },
+        { "id": "day4_morning_class_5", "next": "day4_morning_class_6" },
+        { "id": "day4_morning_class_6", "next": "day4_morning_class_7" },
+        { "id": "day4_morning_class_7", "next": "day4_morning_class_8" },
+        { "id": "day4_morning_class_8", "next": "day4_morning_class_9" },
+        { "id": "day4_morning_class_9", "next": "day4_morning_end" },
+        { "id": "day4_morning_end", "next": null }
+    ],
+    "mergePoints": {
+        "day4_morning_eunsu_comply_3": "day4_morning_classroom",
+        "day4_morning_eunsu_refuse_4": "day4_morning_classroom"
+    }
+}

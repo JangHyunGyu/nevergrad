@@ -58,47 +58,72 @@
     },
     "day5_morning_gate_4": {
         "name": "나",
-        "text": "*...뭔가 이상하다.*"
+        "text": "*정문은 열려있다. 평소와 같다. 학생들이 삼삼오오 지나간다.*"
     },
     "day5_morning_gate_5": {
         "name": "나",
-        "text": "*정문에 쇠사슬이 감겨있다. 커다란 자물쇠. 어제까지 없었다.*"
+        "text": "*...나가면 된다. 정문을 지나서 왼쪽으로 꺾으면 버스정류장이다. 거기서 아무 버스나 타면 된다.*"
     },
     "day5_morning_gate_6": {
         "name": "나",
-        "text": "*정문 양쪽의 담벼락. 높다. 3미터는 넘는다. 철조망이 새로 올려져 있다.*"
+        "text": "*한 걸음 내딛었다. 두 걸음. 정문이 가까워진다.*"
     },
-    "day5_morning_gate_7": {
+    "day5_morning_gate_choice": {
         "name": "나",
-        "text": "*후문은? 돌아서 확인했다. 판자로 막혀있다. '공사 중'이라는 표지판.*"
+        "text": "",
+        "choices": [
+            "앞으로 걷는다",
+            "돌아간다"
+        ],
+        "dodgeChoice": true,
+        "dodgeIndex": 0,
+        "maxAttempts": 4
     },
-    "day5_morning_gate_8": {
+    "day5_morning_gate_dodge_fail": {
         "name": "나",
-        "text": "*...전부 막혀있다. 이 학교에서 나갈 수 있는 출구가... 전부.*"
+        "text": "*...앞으로. 앞으로 가야 하는데.*"
     },
-    "day5_morning_gate_9": {
+
+    "day5_morning_paralysis_1": {
         "name": "나",
-        "text": "*학생들이 쇠사슬이 감긴 정문을 아무렇지 않게 통과한다. 쇠사슬 사이를 비집고 들어간다. 자연스럽게. 마치 원래 그랬던 것처럼.*"
+        "text": "*...세 걸음째에서 다리가 멈췄다.*"
     },
-    "day5_morning_gate_10": {
+    "day5_morning_paralysis_2": {
         "name": "나",
-        "text": "*...아무도 이상하게 생각하지 않는다. 아무도.*"
+        "text": "*움직이지 않는다. 걸으려는 의지는 있는데 다리가 말을 안 듣는다. 마치 콘크리트에 박힌 것처럼.*"
     },
-    "day5_morning_gate_11": {
+    "day5_morning_paralysis_3": {
         "name": "나",
-        "text": "*쇠사슬을 보고 멈춰 선 건 나뿐이다.*"
+        "text": "*어젯밤에 마신 차. 리인 선생님이 건넨 '숙면에 좋은' 차. ...혹시?*"
     },
-    "day5_morning_gate_12": {
+    "day5_morning_paralysis_4": {
         "name": "나",
-        "text": "*정문 앞에 세 사람이 서 있다. 나란히. 일렬로.*"
+        "text": "*주변을 둘러본다. 학생들이 정문을 지나간다. 아무렇지도 않게. 웃으면서.*"
     },
-    "day5_morning_gate_13": {
+    "day5_morning_paralysis_5": {
         "name": "나",
-        "text": "*은수 선생님. 세아. 리인 선생님.*"
+        "text": "*나만 움직이지 못한다. 정문은 열려있는데. 아무도 막고 있지 않은데.*"
     },
-    "day5_morning_gate_14": {
+    "day5_morning_paralysis_6": {
         "name": "나",
-        "text": "*세 사람이 동시에 나를 본다. 동시에 웃는다.*"
+        "text": "*열린 문 앞에서 한 발짝도 나갈 수 없다. 이게... 이 학교의 진짜 감옥이다.*"
+    },
+
+    "day5_morning_watchers_1": {
+        "name": "나",
+        "text": "*뒤를 돌아봤다.*"
+    },
+    "day5_morning_watchers_2": {
+        "name": "나",
+        "text": "*교문 안쪽. 은수 선생님이 벤치에 앉아 있다. 세아가 나무 아래에 서 있다. 리인 선생님이 보건실 창가에서 내려다보고 있다.*"
+    },
+    "day5_morning_watchers_3": {
+        "name": "나",
+        "text": "*각자 다른 위치. 자연스러운 풍경. 그런데 셋 다 나를 보고 있다.*"
+    },
+    "day5_morning_watchers_4": {
+        "name": "나",
+        "text": "*셋 다 웃고 있다.*"
     },
 
     "day5_morning_welcome": {
@@ -107,7 +132,7 @@
     },
     "day5_morning_welcome_2": {
         "name": "나",
-        "text": "*은수 선생님이 한 발 앞으로 나온다.*"
+        "text": "*은수 선생님이 벤치에서 일어나 다가온다. 천천히. 서두르지 않는다. 어차피 내가 못 움직이는 걸 아는 것처럼.*"
     },
     "day5_morning_welcome_3": {
         "name": "박은수",

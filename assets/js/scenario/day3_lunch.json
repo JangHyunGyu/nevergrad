@@ -1,0 +1,129 @@
+{
+    "scenes": [
+        {
+            "id": "day3_lunch_start",
+            "background": "classroom",
+            "bgm": "daily_uneasy",
+            "next": "day3_lunch_note"
+        },
+        { "id": "day3_lunch_note", "next": "day3_lunch_note_2" },
+        { "id": "day3_lunch_note_2", "next": "day3_lunch_choice" },
+        {
+            "id": "day3_lunch_choice",
+            "type": "routeChoice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day3_lunch_rooftop",
+                    "stats": { "yuna": { "trust": 5 } },
+                    "flag": "day3_rooftop_yuna"
+                },
+                {
+                    "index": 1,
+                    "next": "day3_lunch_sea",
+                    "stats": { "sea": { "affinity": 2, "danger": 2 } },
+                    "flag": "day3_lunch_sea"
+                },
+                {
+                    "index": 2,
+                    "next": "day3_lunch_riin",
+                    "stats": { "riin": { "affinity": 2 } },
+                    "flag": "day3_lunch_riin"
+                },
+                {
+                    "index": 3,
+                    "next": "day3_lunch_alone",
+                    "flag": "day3_lunch_alone"
+                }
+            ]
+        },
+        {
+            "id": "day3_lunch_rooftop",
+            "background": "rooftop",
+            "next": "day3_lunch_rooftop_2"
+        },
+        { "id": "day3_lunch_rooftop_2", "next": "day3_lunch_rooftop_3" },
+        { "id": "day3_lunch_rooftop_3", "next": "day3_lunch_rooftop_4", "flag": "has_memory_card" },
+        { "id": "day3_lunch_rooftop_4", "next": "day3_lunch_rooftop_5" },
+        { "id": "day3_lunch_rooftop_5", "next": "day3_lunch_rooftop_6" },
+        { "id": "day3_lunch_rooftop_6", "next": "day3_lunch_door_locked" },
+        { "id": "day3_lunch_door_locked", "next": "day3_lunch_door_locked_2" },
+        { "id": "day3_lunch_door_locked_2", "next": "day3_lunch_door_choice" },
+        {
+            "id": "day3_lunch_door_choice",
+            "type": "choice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day3_lunch_door_bang"
+                },
+                {
+                    "index": 1,
+                    "next": "day3_lunch_door_wait"
+                }
+            ]
+        },
+        { "id": "day3_lunch_door_bang", "next": "day3_lunch_door_open" },
+        { "id": "day3_lunch_door_wait", "next": "day3_lunch_door_open" },
+        { "id": "day3_lunch_door_open", "next": "day3_lunch_end" },
+        {
+            "id": "day3_lunch_sea",
+            "background": "classroom",
+            "next": "day3_lunch_sea_2"
+        },
+        { "id": "day3_lunch_sea_2", "next": "day3_lunch_sea_3" },
+        { "id": "day3_lunch_sea_3", "next": "day3_lunch_sea_4" },
+        { "id": "day3_lunch_sea_4", "next": "day3_lunch_sea_5" },
+        { "id": "day3_lunch_sea_5", "next": "day3_lunch_sea_6" },
+        { "id": "day3_lunch_sea_6", "next": "day3_lunch_sea_7" },
+        { "id": "day3_lunch_sea_7", "next": "day3_lunch_sea_8" },
+        { "id": "day3_lunch_sea_8", "next": "day3_lunch_end" },
+        {
+            "id": "day3_lunch_riin",
+            "background": "nurse_office",
+            "next": "day3_lunch_riin_2"
+        },
+        { "id": "day3_lunch_riin_2", "next": "day3_lunch_riin_3" },
+        { "id": "day3_lunch_riin_3", "next": "day3_lunch_riin_4" },
+        { "id": "day3_lunch_riin_4", "next": "day3_lunch_riin_choice" },
+        {
+            "id": "day3_lunch_riin_choice",
+            "type": "flickerChoice",
+            "flickerText": "day3_after_riin_flicker",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day3_lunch_riin_drink",
+                    "stats": { "riin": { "affinity": 2, "control": 2 } },
+                    "flag": "day3_drank_riin"
+                },
+                {
+                    "index": 1,
+                    "next": "day3_lunch_riin_refuse",
+                    "stats": { "riin": { "affinity": -1 } },
+                    "flag": "day3_refused_riin"
+                }
+            ]
+        },
+        { "id": "day3_lunch_riin_drink", "next": "day3_lunch_riin_drink_2" },
+        { "id": "day3_lunch_riin_drink_2", "next": "day3_lunch_end" },
+        { "id": "day3_lunch_riin_refuse", "next": "day3_lunch_riin_refuse_2" },
+        { "id": "day3_lunch_riin_refuse_2", "next": "day3_lunch_end" },
+        {
+            "id": "day3_lunch_alone",
+            "background": "classroom",
+            "next": "day3_lunch_alone_2"
+        },
+        { "id": "day3_lunch_alone_2", "next": "day3_lunch_alone_3" },
+        { "id": "day3_lunch_alone_3", "next": "day3_lunch_alone_4" },
+        { "id": "day3_lunch_alone_4", "next": "day3_lunch_end" },
+        { "id": "day3_lunch_end", "next": null }
+    ],
+    "mergePoints": {
+        "day3_lunch_door_open": "day3_lunch_end",
+        "day3_lunch_sea_8": "day3_lunch_end",
+        "day3_lunch_riin_drink_2": "day3_lunch_end",
+        "day3_lunch_riin_refuse_2": "day3_lunch_end",
+        "day3_lunch_alone_4": "day3_lunch_end"
+    }
+}

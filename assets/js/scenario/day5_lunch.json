@@ -1,0 +1,389 @@
+{
+    "scenes": [
+        {
+            "id": "day5_lunch_start",
+            "background": "classroom",
+            "bgm": "tension_high",
+            "next": "day5_lunch_start_2"
+        },
+        { "id": "day5_lunch_start_2", "next": "day5_lunch_start_3" },
+        { "id": "day5_lunch_start_3", "next": "day5_lunch_start_4" },
+        { "id": "day5_lunch_start_4", "next": "day5_lunch_start_5" },
+        { "id": "day5_lunch_start_5", "next": "day5_lunch_start_6" },
+        { "id": "day5_lunch_start_6", "next": "day5_lunch_start_7" },
+        {
+            "id": "day5_lunch_start_7",
+            "background": "hallway",
+            "next": "day5_lunch_start_8"
+        },
+        { "id": "day5_lunch_start_8", "next": "day5_lunch_branch" },
+        {
+            "id": "day5_lunch_branch",
+            "type": "affinityBranch",
+            "character": "yuna",
+            "stat": "trust",
+            "branches": {
+                "40": "day5_lunch_yuna_meet",
+                "default": "day5_lunch_solo"
+            }
+        },
+        {
+            "id": "day5_lunch_yuna_meet",
+            "background": "hallway",
+            "next": "day5_lunch_yuna_2"
+        },
+        { "id": "day5_lunch_yuna_2", "next": "day5_lunch_yuna_3" },
+        { "id": "day5_lunch_yuna_3", "next": "day5_lunch_yuna_4" },
+        { "id": "day5_lunch_yuna_4", "next": "day5_lunch_yuna_5" },
+        { "id": "day5_lunch_yuna_5", "next": "day5_lunch_yuna_6" },
+        { "id": "day5_lunch_yuna_6", "next": "day5_lunch_yuna_7" },
+        { "id": "day5_lunch_yuna_7", "next": "day5_lunch_yuna_8" },
+        { "id": "day5_lunch_yuna_8", "next": "day5_lunch_yuna_9" },
+        { "id": "day5_lunch_yuna_9", "next": "day5_lunch_yuna_10" },
+        { "id": "day5_lunch_yuna_10", "next": "day5_lunch_yuna_11" },
+        { "id": "day5_lunch_yuna_11", "next": "day5_lunch_yuna_12" },
+        { "id": "day5_lunch_yuna_12", "next": "day5_lunch_escape_start" },
+        { "id": "day5_lunch_solo", "next": "day5_lunch_solo_2" },
+        { "id": "day5_lunch_solo_2", "next": "day5_lunch_escape_start" },
+        { "id": "day5_lunch_escape_start", "next": "day5_lunch_escape_2" },
+        { "id": "day5_lunch_escape_2", "next": "day5_lunch_escape_3" },
+        { "id": "day5_lunch_escape_3", "next": "day5_lunch_escape_4" },
+        { "id": "day5_lunch_escape_4", "next": "day5_lunch_escape_5" },
+        { "id": "day5_lunch_escape_5", "next": "day5_lunch_escape_6" },
+        {
+            "id": "day5_lunch_escape_6",
+            "type": "timedChoice",
+            "timeout": 5000,
+            "timeoutNext": "day5_lunch_escape_left",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day5_lunch_escape_left"
+                },
+                {
+                    "index": 1,
+                    "next": "day5_lunch_escape_right"
+                }
+            ]
+        },
+        { "id": "day5_lunch_escape_left", "next": "day5_lunch_left_2" },
+        { "id": "day5_lunch_left_2", "next": "day5_lunch_left_3" },
+        { "id": "day5_lunch_left_3", "next": "day5_lunch_sea_talk_1" },
+        { "id": "day5_lunch_sea_talk_1", "next": "day5_lunch_sea_talk_1b" },
+        { "id": "day5_lunch_sea_talk_1b", "next": "day5_lunch_sea_talk_1c" },
+        {
+            "id": "day5_lunch_sea_talk_1c",
+            "next": "day5_lunch_sea_callback"
+        },
+        {
+            "id": "day5_lunch_sea_callback",
+            "type": "flagBranch",
+            "flag": "day1_choco_accept",
+            "branches": {
+                "true": "day5_lunch_sea_cb_choco",
+                "false": "day5_lunch_sea_cb_check_lunch"
+            }
+        },
+        { "id": "day5_lunch_sea_cb_choco", "next": "day5_lunch_sea_cb_choco_2" },
+        { "id": "day5_lunch_sea_cb_choco_2", "next": "day5_lunch_sea_tears" },
+        {
+            "id": "day5_lunch_sea_cb_check_lunch",
+            "type": "flagBranch",
+            "flag": "day1_lunch_sea",
+            "branches": {
+                "true": "day5_lunch_sea_cb_lunch",
+                "false": "day5_lunch_sea_cb_check_vuln"
+            }
+        },
+        { "id": "day5_lunch_sea_cb_lunch", "next": "day5_lunch_sea_cb_lunch_2" },
+        { "id": "day5_lunch_sea_cb_lunch_2", "next": "day5_lunch_sea_tears" },
+        {
+            "id": "day5_lunch_sea_cb_check_vuln",
+            "type": "flagBranch",
+            "flag": "day4_followed_sea",
+            "branches": {
+                "true": "day5_lunch_sea_cb_vulnerability",
+                "false": "day5_lunch_sea_cb_default"
+            }
+        },
+        { "id": "day5_lunch_sea_cb_vulnerability", "next": "day5_lunch_sea_cb_vulnerability_2" },
+        { "id": "day5_lunch_sea_cb_vulnerability_2", "next": "day5_lunch_sea_tears" },
+        { "id": "day5_lunch_sea_cb_default", "next": "day5_lunch_sea_cb_default_2" },
+        { "id": "day5_lunch_sea_cb_default_2", "next": "day5_lunch_sea_tears" },
+        { "id": "day5_lunch_sea_tears", "next": "day5_lunch_sea_tears_2" },
+        { "id": "day5_lunch_sea_tears_2", "next": "day5_lunch_sea_tears_3" },
+        { "id": "day5_lunch_sea_tears_3", "next": "day5_lunch_sea_block_route" },
+        {
+            "id": "day5_lunch_sea_block_route",
+            "type": "affinityBranch",
+            "character": "sea",
+            "stat": "affinity",
+            "branches": {
+                "0": "day5_lunch_sea_pass",
+                "10": "day5_lunch_sea_block_mid",
+                "20": "day5_lunch_sea_block_high",
+                "30": "day5_lunch_sea_block_max",
+                "default": "day5_lunch_sea_block_mid"
+            }
+        },
+        { "id": "day5_lunch_sea_pass", "next": "day5_lunch_continue" },
+        {
+            "id": "day5_lunch_sea_block_mid",
+            "type": "choice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day5_lunch_sea_push"
+                },
+                {
+                    "index": 1,
+                    "next": "day5_lunch_sea_persuade"
+                }
+            ]
+        },
+        {
+            "id": "day5_lunch_sea_block_high",
+            "type": "choice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day5_lunch_sea_push"
+                },
+                {
+                    "index": 1,
+                    "next": "day5_lunch_sea_persuade"
+                }
+            ]
+        },
+        {
+            "id": "day5_lunch_sea_block_max",
+            "next": "day5_lunch_sea_block_max_2"
+        },
+        {
+            "id": "day5_lunch_sea_block_max_2",
+            "type": "forcedChoice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day5_lunch_sea_persuade"
+                },
+                {
+                    "index": 1,
+                    "next": "day5_lunch_sea_persuade"
+                }
+            ]
+        },
+        { "id": "day5_lunch_sea_push", "next": "day5_lunch_sea_push_2" },
+        { "id": "day5_lunch_sea_push_2", "next": "day5_lunch_continue" },
+        { "id": "day5_lunch_sea_persuade", "next": "day5_lunch_sea_persuade_2" },
+        { "id": "day5_lunch_sea_persuade_2", "next": "day5_lunch_sea_persuade_3" },
+        { "id": "day5_lunch_sea_persuade_3", "next": "day5_lunch_sea_persuade_4" },
+        { "id": "day5_lunch_sea_persuade_4", "next": "day5_lunch_sea_persuade_5" },
+        { "id": "day5_lunch_sea_persuade_5", "next": "day5_lunch_sea_persuade_6" },
+        { "id": "day5_lunch_sea_persuade_6", "next": "day5_lunch_sea_persuade_7" },
+        { "id": "day5_lunch_sea_persuade_7", "next": "day5_lunch_sea_persuade_8" },
+        { "id": "day5_lunch_sea_persuade_8", "next": "day5_lunch_sea_persuade_9" },
+        { "id": "day5_lunch_sea_persuade_9", "next": "day5_lunch_continue" },
+        { "id": "day5_lunch_escape_right", "next": "day5_lunch_right_2" },
+        { "id": "day5_lunch_right_2", "next": "day5_lunch_right_3" },
+        { "id": "day5_lunch_right_3", "next": "day5_lunch_riin_talk_1" },
+        { "id": "day5_lunch_riin_talk_1", "next": "day5_lunch_riin_talk_1b" },
+        {
+            "id": "day5_lunch_riin_talk_1b",
+            "next": "day5_lunch_riin_callback"
+        },
+        {
+            "id": "day5_lunch_riin_callback",
+            "type": "flagBranch",
+            "flag": "day3_drank_riin",
+            "branches": {
+                "true": "day5_lunch_riin_cb_drink",
+                "false": "day5_lunch_riin_cb_check_met"
+            }
+        },
+        { "id": "day5_lunch_riin_cb_drink", "next": "day5_lunch_riin_cb_drink_2" },
+        { "id": "day5_lunch_riin_cb_drink_2", "next": "day5_lunch_riin_cb_drink_3" },
+        { "id": "day5_lunch_riin_cb_drink_3", "next": "day5_lunch_riin_block" },
+        {
+            "id": "day5_lunch_riin_cb_check_met",
+            "type": "flagBranch",
+            "flag": "day1_lunch_riin",
+            "branches": {
+                "true": "day5_lunch_riin_cb_met",
+                "false": "day5_lunch_riin_cb_default"
+            }
+        },
+        { "id": "day5_lunch_riin_cb_met", "next": "day5_lunch_riin_cb_met_2" },
+        { "id": "day5_lunch_riin_cb_met_2", "next": "day5_lunch_riin_block" },
+        { "id": "day5_lunch_riin_cb_default", "next": "day5_lunch_riin_cb_default_2" },
+        { "id": "day5_lunch_riin_cb_default_2", "next": "day5_lunch_riin_block" },
+        { "id": "day5_lunch_riin_block", "next": "day5_lunch_riin_block_2" },
+        {
+            "id": "day5_lunch_riin_block_2",
+            "type": "choice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day5_lunch_riin_dodge"
+                },
+                {
+                    "index": 1,
+                    "next": "day5_lunch_riin_confront"
+                }
+            ]
+        },
+        { "id": "day5_lunch_riin_dodge", "next": "day5_lunch_riin_dodge_2" },
+        { "id": "day5_lunch_riin_dodge_2", "next": "day5_lunch_riin_dodge_3" },
+        { "id": "day5_lunch_riin_dodge_3", "next": "day5_lunch_continue" },
+        { "id": "day5_lunch_riin_confront", "next": "day5_lunch_riin_confront_2" },
+        { "id": "day5_lunch_riin_confront_2", "next": "day5_lunch_riin_confront_3" },
+        { "id": "day5_lunch_riin_confront_3", "next": "day5_lunch_riin_confront_4" },
+        { "id": "day5_lunch_riin_confront_4", "next": "day5_lunch_riin_confront_5" },
+        { "id": "day5_lunch_riin_confront_5", "next": "day5_lunch_riin_confront_6" },
+        { "id": "day5_lunch_riin_confront_6", "next": "day5_lunch_riin_confront_7" },
+        { "id": "day5_lunch_riin_confront_7", "next": "day5_lunch_continue" },
+        { "id": "day5_lunch_continue", "next": "day5_lunch_continue_2" },
+        { "id": "day5_lunch_continue_2", "next": "day5_lunch_continue_3" },
+        { "id": "day5_lunch_continue_3", "next": "day5_lunch_continue_4" },
+        { "id": "day5_lunch_continue_4", "next": "day5_lunch_eunsu_face" },
+        { "id": "day5_lunch_eunsu_face", "next": "day5_lunch_eunsu_face_2" },
+        { "id": "day5_lunch_eunsu_face_2", "next": "day5_lunch_eunsu_face_3" },
+        {
+            "id": "day5_lunch_eunsu_face_3",
+            "next": "day5_lunch_eunsu_callback"
+        },
+        {
+            "id": "day5_lunch_eunsu_callback",
+            "type": "flagBranch",
+            "flag": "app_full_access",
+            "branches": {
+                "true": "day5_lunch_eunsu_cb_app",
+                "false": "day5_lunch_eunsu_cb_check_visit"
+            }
+        },
+        { "id": "day5_lunch_eunsu_cb_app", "next": "day5_lunch_eunsu_cb_app_2" },
+        { "id": "day5_lunch_eunsu_cb_app_2", "next": "day5_lunch_eunsu_plea" },
+        {
+            "id": "day5_lunch_eunsu_cb_check_visit",
+            "type": "flagBranch",
+            "flag": "day1_after_eunsu",
+            "branches": {
+                "true": "day5_lunch_eunsu_cb_visit",
+                "false": "day5_lunch_eunsu_cb_default"
+            }
+        },
+        { "id": "day5_lunch_eunsu_cb_visit", "next": "day5_lunch_eunsu_cb_visit_2" },
+        { "id": "day5_lunch_eunsu_cb_visit_2", "next": "day5_lunch_eunsu_plea" },
+        { "id": "day5_lunch_eunsu_cb_default", "next": "day5_lunch_eunsu_cb_default_2" },
+        { "id": "day5_lunch_eunsu_cb_default_2", "next": "day5_lunch_eunsu_plea" },
+        { "id": "day5_lunch_eunsu_plea", "next": "day5_lunch_eunsu_plea_2" },
+        { "id": "day5_lunch_eunsu_plea_2", "next": "day5_lunch_eunsu_plea_3" },
+        { "id": "day5_lunch_eunsu_plea_3", "next": "day5_lunch_eunsu_plea_4" },
+        { "id": "day5_lunch_eunsu_plea_4", "next": "day5_lunch_eunsu_plea_5" },
+        { "id": "day5_lunch_eunsu_plea_5", "next": "day5_lunch_eunsu_affinity_route" },
+        {
+            "id": "day5_lunch_eunsu_affinity_route",
+            "type": "affinityBranch",
+            "character": "eunsu",
+            "stat": "control",
+            "branches": {
+                "0": "day5_lunch_eunsu_final",
+                "5": "day5_lunch_eunsu_final_high",
+                "10": "day5_lunch_eunsu_final_max",
+                "default": "day5_lunch_eunsu_final"
+            }
+        },
+        {
+            "id": "day5_lunch_eunsu_final",
+            "type": "timedChoice",
+            "timeout": 5000,
+            "timeoutNext": "day5_lunch_eunsu_stay",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day5_lunch_eunsu_break",
+                    "flag": "escaped_school"
+                },
+                {
+                    "index": 1,
+                    "next": "day5_lunch_eunsu_stay",
+                    "flag": "stayed_with_eunsu"
+                }
+            ]
+        },
+        {
+            "id": "day5_lunch_eunsu_final_high",
+            "next": "day5_lunch_eunsu_final_high_2"
+        },
+        {
+            "id": "day5_lunch_eunsu_final_high_2",
+            "type": "timedChoice",
+            "timeout": 5000,
+            "timeoutNext": "day5_lunch_eunsu_stay",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day5_lunch_eunsu_break",
+                    "flag": "escaped_school"
+                },
+                {
+                    "index": 1,
+                    "next": "day5_lunch_eunsu_stay",
+                    "flag": "stayed_with_eunsu"
+                }
+            ]
+        },
+        {
+            "id": "day5_lunch_eunsu_final_max",
+            "next": "day5_lunch_eunsu_final_max_2"
+        },
+        {
+            "id": "day5_lunch_eunsu_final_max_2",
+            "type": "flagBranch",
+            "flag": "day4_rescued_yuna",
+            "branches": {
+                "true": "day5_lunch_eunsu_yuna_help",
+                "false": "day5_lunch_eunsu_stay"
+            }
+        },
+        {
+            "id": "day5_lunch_eunsu_yuna_help",
+            "next": "day5_lunch_eunsu_break",
+            "flag": "escaped_school"
+        },
+        { "id": "day5_lunch_eunsu_break", "next": "day5_lunch_eunsu_break_2" },
+        { "id": "day5_lunch_eunsu_break_2", "next": "day5_lunch_eunsu_break_3" },
+        { "id": "day5_lunch_eunsu_break_3", "next": "day5_lunch_eunsu_break_4" },
+        { "id": "day5_lunch_eunsu_break_4", "next": "day5_lunch_eunsu_break_5" },
+        { "id": "day5_lunch_eunsu_break_5", "next": "day5_lunch_eunsu_break_6" },
+        { "id": "day5_lunch_eunsu_break_6", "next": "day5_lunch_eunsu_break_7" },
+        { "id": "day5_lunch_eunsu_break_7", "next": "day5_lunch_breakthrough" },
+        { "id": "day5_lunch_eunsu_stay", "next": "day5_lunch_eunsu_stay_2" },
+        { "id": "day5_lunch_eunsu_stay_2", "next": "day5_lunch_eunsu_stay_3" },
+        { "id": "day5_lunch_eunsu_stay_3", "next": "day5_lunch_eunsu_stay_4" },
+        { "id": "day5_lunch_eunsu_stay_4", "next": "day5_lunch_end", "flag": "stayed_with_eunsu" },
+        { "id": "day5_lunch_breakthrough", "next": "day5_lunch_end" },
+        {
+            "id": "day5_lunch_escape_caught_sea",
+            "next": "day5_lunch_caught"
+        },
+        {
+            "id": "day5_lunch_escape_caught_riin",
+            "next": "day5_lunch_caught"
+        },
+        { "id": "day5_lunch_caught", "next": "day5_lunch_end", "flag": "was_captured" },
+        { "id": "day5_lunch_end", "next": null }
+    ],
+    "mergePoints": {
+        "day5_lunch_yuna_12": "day5_lunch_escape_start",
+        "day5_lunch_solo_2": "day5_lunch_escape_start",
+        "day5_lunch_sea_push_2": "day5_lunch_continue",
+        "day5_lunch_sea_persuade_9": "day5_lunch_continue",
+        "day5_lunch_sea_pass": "day5_lunch_continue",
+        "day5_lunch_riin_dodge_3": "day5_lunch_continue",
+        "day5_lunch_riin_confront_7": "day5_lunch_continue",
+        "day5_lunch_breakthrough": "day5_lunch_end",
+        "day5_lunch_eunsu_stay_4": "day5_lunch_end",
+        "day5_lunch_caught": "day5_lunch_end"
+    }
+}

@@ -1,0 +1,298 @@
+{
+    "scenes": [
+        {
+            "id": "day5_night_start",
+            "next": "day5_night_routing"
+        },
+        {
+            "id": "day5_night_routing",
+            "type": "flagBranch",
+            "flag": "escaped_school",
+            "branches": {
+                "true": "day5_night_escaped_routing",
+                "false": "day5_night_not_escaped_routing"
+            }
+        },
+        {
+            "id": "day5_night_escaped_routing",
+            "type": "affinityBranch",
+            "character": "yuna",
+            "stat": "trust",
+            "branches": {
+                "40": "day5_ending_true",
+                "default": "day5_ending_escape"
+            }
+        },
+        {
+            "id": "day5_night_not_escaped_routing",
+            "type": "flagBranch",
+            "flag": "resisted_treatment",
+            "branches": {
+                "true": "day5_ending_resist",
+                "false": "day5_night_captured_or_stayed"
+            }
+        },
+        {
+            "id": "day5_night_captured_or_stayed",
+            "type": "flagBranch",
+            "flag": "stayed_with_eunsu",
+            "branches": {
+                "true": "day5_ending_cage",
+                "false": "day5_night_submit_routing"
+            }
+        },
+        {
+            "id": "day5_night_submit_routing",
+            "type": "flagBranch",
+            "flag": "accepted_treatment",
+            "branches": {
+                "true": "day5_night_forget_or_ghost",
+                "false": "day5_ending_ghost"
+            }
+        },
+        {
+            "id": "day5_night_forget_or_ghost",
+            "type": "flagBranch",
+            "flag": "chose_ignore",
+            "branches": {
+                "true": "day5_ending_ghost",
+                "false": "day5_ending_forget"
+            }
+        },
+
+        {
+            "id": "day5_ending_true",
+            "background": "outside_day",
+            "bgm": "ending_hope",
+            "next": "day5_ending_true_2"
+        },
+        { "id": "day5_ending_true_2", "next": "day5_ending_true_3" },
+        { "id": "day5_ending_true_3", "next": "day5_ending_true_4" },
+        { "id": "day5_ending_true_4", "next": "day5_ending_true_5" },
+        { "id": "day5_ending_true_5", "next": "day5_ending_true_6" },
+        { "id": "day5_ending_true_6", "next": "day5_ending_true_7" },
+        { "id": "day5_ending_true_7", "next": "day5_ending_true_8" },
+        { "id": "day5_ending_true_8", "next": "day5_ending_true_9" },
+        { "id": "day5_ending_true_9", "next": "day5_ending_true_10" },
+        { "id": "day5_ending_true_10", "next": "day5_ending_true_11" },
+        { "id": "day5_ending_true_11", "next": "day5_ending_true_12" },
+        { "id": "day5_ending_true_12", "next": "day5_ending_true_13" },
+        { "id": "day5_ending_true_13", "next": "day5_ending_true_14" },
+        { "id": "day5_ending_true_14", "next": "day5_ending_true_15" },
+        { "id": "day5_ending_true_15", "next": "day5_ending_true_16" },
+        { "id": "day5_ending_true_16", "next": "day5_ending_true_17" },
+        { "id": "day5_ending_true_17", "next": "day5_ending_true_18" },
+        { "id": "day5_ending_true_18", "next": "day5_ending_true_19" },
+        { "id": "day5_ending_true_19", "next": "day5_ending_true_20" },
+        { "id": "day5_ending_true_20", "next": "day5_ending_true_21" },
+        { "id": "day5_ending_true_21", "next": "day5_ending_true_22" },
+        { "id": "day5_ending_true_22", "next": "day5_ending_true_23" },
+        { "id": "day5_ending_true_23", "next": "day5_ending_true_24" },
+        { "id": "day5_ending_true_24", "next": "day5_ending_true_25" },
+        { "id": "day5_ending_true_25", "next": "day5_ending_true_subtitle" },
+        {
+            "id": "day5_ending_true_subtitle",
+            "type": "ending",
+            "endingId": "TRUE_END",
+            "next": "day5_ending_true_title"
+        },
+        { "id": "day5_ending_true_title", "next": "day5_postcredit_1" },
+        { "id": "day5_postcredit_1", "next": "day5_postcredit_2" },
+        {
+            "id": "day5_postcredit_2",
+            "background": "office",
+            "bgm": "tension_low",
+            "next": "day5_postcredit_3"
+        },
+        { "id": "day5_postcredit_3", "next": "day5_postcredit_4" },
+        { "id": "day5_postcredit_4", "next": "day5_postcredit_5" },
+        { "id": "day5_postcredit_5", "next": "day5_postcredit_6" },
+        { "id": "day5_postcredit_6", "next": "day5_postcredit_7" },
+        { "id": "day5_postcredit_7", "next": "day5_postcredit_8" },
+        { "id": "day5_postcredit_8", "next": "day5_postcredit_end" },
+        { "id": "day5_postcredit_end", "next": null },
+
+        {
+            "id": "day5_ending_escape",
+            "background": "outside_rain",
+            "bgm": "ending_bittersweet",
+            "next": "day5_ending_escape_2"
+        },
+        { "id": "day5_ending_escape_2", "next": "day5_ending_escape_3" },
+        { "id": "day5_ending_escape_3", "next": "day5_ending_escape_4" },
+        { "id": "day5_ending_escape_4", "next": "day5_ending_escape_5" },
+        { "id": "day5_ending_escape_5", "next": "day5_ending_escape_6" },
+        { "id": "day5_ending_escape_6", "next": "day5_ending_escape_7" },
+        { "id": "day5_ending_escape_7", "next": "day5_ending_escape_8" },
+        { "id": "day5_ending_escape_8", "next": "day5_ending_escape_9" },
+        { "id": "day5_ending_escape_9", "next": "day5_ending_escape_10" },
+        { "id": "day5_ending_escape_10", "next": "day5_ending_escape_11" },
+        { "id": "day5_ending_escape_11", "next": "day5_ending_escape_ghost" },
+        {
+            "id": "day5_ending_escape_ghost",
+            "type": "glitch",
+            "glitchLevel": "SUBTLE",
+            "next": "day5_ending_escape_subtitle"
+        },
+        {
+            "id": "day5_ending_escape_subtitle",
+            "type": "ending",
+            "endingId": "ESCAPE_END",
+            "next": "day5_ending_escape_title"
+        },
+        { "id": "day5_ending_escape_title", "next": null },
+
+        {
+            "id": "day5_ending_resist",
+            "background": "outside_dawn",
+            "bgm": "ending_resolve",
+            "next": "day5_ending_resist_2"
+        },
+        { "id": "day5_ending_resist_2", "next": "day5_ending_resist_3" },
+        { "id": "day5_ending_resist_3", "next": "day5_ending_resist_4" },
+        { "id": "day5_ending_resist_4", "next": "day5_ending_resist_5" },
+        { "id": "day5_ending_resist_5", "next": "day5_ending_resist_6" },
+        { "id": "day5_ending_resist_6", "next": "day5_ending_resist_7" },
+        { "id": "day5_ending_resist_7", "next": "day5_ending_resist_8" },
+        { "id": "day5_ending_resist_8", "next": "day5_ending_resist_9" },
+        { "id": "day5_ending_resist_9", "next": "day5_ending_resist_10" },
+        { "id": "day5_ending_resist_10", "next": "day5_ending_resist_11" },
+        { "id": "day5_ending_resist_11", "next": "day5_ending_resist_12" },
+        { "id": "day5_ending_resist_12", "next": "day5_ending_resist_subtitle" },
+        {
+            "id": "day5_ending_resist_subtitle",
+            "type": "ending",
+            "endingId": "RESIST_END",
+            "next": "day5_ending_resist_title"
+        },
+        { "id": "day5_ending_resist_title", "next": null },
+
+        {
+            "id": "day5_ending_cage",
+            "background": "classroom",
+            "bgm": "daily_calm",
+            "next": "day5_ending_cage_2"
+        },
+        { "id": "day5_ending_cage_2", "next": "day5_ending_cage_3" },
+        { "id": "day5_ending_cage_3", "next": "day5_ending_cage_4" },
+        { "id": "day5_ending_cage_4", "next": "day5_ending_cage_5" },
+        { "id": "day5_ending_cage_5", "next": "day5_ending_cage_6" },
+        { "id": "day5_ending_cage_6", "next": "day5_ending_cage_7" },
+        { "id": "day5_ending_cage_7", "next": "day5_ending_cage_8" },
+        { "id": "day5_ending_cage_8", "next": "day5_ending_cage_9" },
+        { "id": "day5_ending_cage_9", "next": "day5_ending_cage_10" },
+        { "id": "day5_ending_cage_10", "next": "day5_ending_cage_11" },
+        { "id": "day5_ending_cage_11", "next": "day5_ending_cage_12" },
+        { "id": "day5_ending_cage_12", "next": "day5_ending_cage_13" },
+        { "id": "day5_ending_cage_13", "next": "day5_ending_cage_14" },
+        { "id": "day5_ending_cage_14", "next": "day5_ending_cage_15" },
+        { "id": "day5_ending_cage_15", "next": "day5_ending_cage_16" },
+        { "id": "day5_ending_cage_16", "next": "day5_ending_cage_subtitle" },
+        {
+            "id": "day5_ending_cage_subtitle",
+            "type": "ending",
+            "endingId": "CAGE_END",
+            "next": "day5_ending_cage_title"
+        },
+        { "id": "day5_ending_cage_title", "next": null },
+
+        {
+            "id": "day5_ending_forget",
+            "background": "black",
+            "bgm": "ending_melancholy",
+            "next": "day5_ending_forget_2"
+        },
+        { "id": "day5_ending_forget_2", "next": "day5_ending_forget_3" },
+        { "id": "day5_ending_forget_3", "next": "day5_ending_forget_4" },
+        {
+            "id": "day5_ending_forget_4",
+            "background": "room_morning",
+            "bgm": "spring_bright",
+            "next": "day5_ending_forget_5"
+        },
+        { "id": "day5_ending_forget_5", "next": "day5_ending_forget_6" },
+        { "id": "day5_ending_forget_6", "next": "day5_ending_forget_7" },
+        { "id": "day5_ending_forget_7", "next": "day5_ending_forget_8" },
+        { "id": "day5_ending_forget_8", "next": "day5_ending_forget_9" },
+        { "id": "day5_ending_forget_9", "next": "day5_ending_forget_10" },
+        { "id": "day5_ending_forget_10", "next": "day5_ending_forget_11" },
+        { "id": "day5_ending_forget_11", "next": "day5_ending_forget_12" },
+        { "id": "day5_ending_forget_12", "next": "day5_ending_forget_13" },
+        { "id": "day5_ending_forget_13", "next": "day5_ending_forget_14" },
+        { "id": "day5_ending_forget_14", "next": "day5_ending_forget_15" },
+        {
+            "id": "day5_ending_forget_15",
+            "next": "day5_ending_forget_ghost"
+        },
+        {
+            "id": "day5_ending_forget_ghost",
+            "type": "glitch",
+            "glitchLevel": "SUBTLE",
+            "next": "day5_ending_forget_16"
+        },
+        { "id": "day5_ending_forget_16", "next": "day5_ending_forget_sea_branch" },
+        {
+            "id": "day5_ending_forget_sea_branch",
+            "type": "affinityBranch",
+            "character": "sea",
+            "stat": "affinity",
+            "branches": {
+                "20": "day5_ending_forget_sea_max",
+                "default": "day5_ending_forget_subtitle"
+            }
+        },
+        {
+            "id": "day5_ending_forget_sea_max",
+            "background": "school_gate",
+            "next": "day5_ending_forget_sea_max_2"
+        },
+        { "id": "day5_ending_forget_sea_max_2", "next": "day5_ending_forget_sea_max_3" },
+        { "id": "day5_ending_forget_sea_max_3", "next": "day5_ending_forget_sea_max_4" },
+        { "id": "day5_ending_forget_sea_max_4", "next": "day5_ending_forget_subtitle" },
+        {
+            "id": "day5_ending_forget_subtitle",
+            "type": "ending",
+            "endingId": "FORGET_END",
+            "next": "day5_ending_forget_title"
+        },
+        { "id": "day5_ending_forget_title", "next": null },
+
+        {
+            "id": "day5_ending_ghost",
+            "background": "school_night",
+            "bgm": "ending_ghost",
+            "next": "day5_ending_ghost_2"
+        },
+        { "id": "day5_ending_ghost_2", "next": "day5_ending_ghost_3" },
+        { "id": "day5_ending_ghost_3", "next": "day5_ending_ghost_4" },
+        { "id": "day5_ending_ghost_4", "next": "day5_ending_ghost_5" },
+        { "id": "day5_ending_ghost_5", "next": "day5_ending_ghost_6" },
+        { "id": "day5_ending_ghost_6", "next": "day5_ending_ghost_7" },
+        { "id": "day5_ending_ghost_7", "next": "day5_ending_ghost_8" },
+        { "id": "day5_ending_ghost_8", "next": "day5_ending_ghost_9" },
+        { "id": "day5_ending_ghost_9", "next": "day5_ending_ghost_10" },
+        { "id": "day5_ending_ghost_10", "next": "day5_ending_ghost_11" },
+        { "id": "day5_ending_ghost_11", "next": "day5_ending_ghost_12" },
+        { "id": "day5_ending_ghost_12", "next": "day5_ending_ghost_13" },
+        { "id": "day5_ending_ghost_13", "next": "day5_ending_ghost_14" },
+        { "id": "day5_ending_ghost_14", "next": "day5_ending_ghost_15" },
+        { "id": "day5_ending_ghost_15", "next": "day5_ending_ghost_whisper" },
+        {
+            "id": "day5_ending_ghost_whisper",
+            "type": "glitch",
+            "glitchLevel": "SUBTLE",
+            "next": "day5_ending_ghost_16"
+        },
+        { "id": "day5_ending_ghost_16", "next": "day5_ending_ghost_17" },
+        { "id": "day5_ending_ghost_17", "next": "day5_ending_ghost_18" },
+        { "id": "day5_ending_ghost_18", "next": "day5_ending_ghost_subtitle" },
+        {
+            "id": "day5_ending_ghost_subtitle",
+            "type": "ending",
+            "endingId": "GHOST_END",
+            "next": "day5_ending_ghost_title"
+        },
+        { "id": "day5_ending_ghost_title", "next": null }
+    ],
+    "mergePoints": {}
+}

@@ -1,0 +1,148 @@
+{
+    "scenes": [
+        {
+            "id": "day4_night_start",
+            "background": "room_night",
+            "bgm": "tension_high",
+            "next": "day4_night_start_2"
+        },
+        { "id": "day4_night_start_2", "next": "day4_night_start_3" },
+        { "id": "day4_night_start_3", "next": "day4_night_phone" },
+        { "id": "day4_night_phone", "next": "day4_night_phone_2" },
+        { "id": "day4_night_phone_2", "next": "day4_night_phone_3" },
+        { "id": "day4_night_phone_3", "next": "day4_night_phone_4" },
+        { "id": "day4_night_phone_4", "next": "day4_night_phone_5" },
+        { "id": "day4_night_phone_5", "next": "day4_night_phone_6" },
+        { "id": "day4_night_phone_6", "next": "day4_night_phone_7" },
+        { "id": "day4_night_phone_7", "next": "day4_night_phone_8" },
+        { "id": "day4_night_phone_8", "next": "day4_night_phone_9" },
+        { "id": "day4_night_phone_9", "next": "day4_night_phone_10" },
+        { "id": "day4_night_phone_10", "next": "day4_night_phone_11" },
+        { "id": "day4_night_phone_11", "next": "day4_night_phone_12" },
+        { "id": "day4_night_phone_12", "next": "day4_night_plan" },
+        { "id": "day4_night_plan", "next": "day4_night_plan_2" },
+        { "id": "day4_night_plan_2", "next": "day4_night_plan_3" },
+        { "id": "day4_night_plan_3", "next": "day4_night_plan_4" },
+        { "id": "day4_night_plan_4", "next": "day4_night_plan_5" },
+        { "id": "day4_night_plan_5", "next": "day4_night_plan_6" },
+        { "id": "day4_night_plan_6", "next": "day4_night_plan_7" },
+        { "id": "day4_night_plan_7", "next": "day4_night_plan_8" },
+        { "id": "day4_night_plan_8", "next": "day4_night_plan_9" },
+        { "id": "day4_night_plan_9", "next": "day4_night_plan_10" },
+        { "id": "day4_night_plan_10", "next": "day4_night_plan_11" },
+        { "id": "day4_night_plan_11", "next": "day4_night_plan_12" },
+        { "id": "day4_night_plan_12", "next": "day4_night_plan_13" },
+        { "id": "day4_night_plan_13", "next": "day4_night_plan_choice" },
+        {
+            "id": "day4_night_plan_choice",
+            "type": "choice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day4_night_plan_escape",
+                    "flag": "plan_escape"
+                },
+                {
+                    "index": 1,
+                    "next": "day4_night_plan_expose",
+                    "flag": "plan_expose"
+                },
+                {
+                    "index": 2,
+                    "next": "day4_night_plan_confront",
+                    "flag": "plan_confront"
+                }
+            ]
+        },
+        { "id": "day4_night_plan_escape", "next": "day4_night_plan_escape_2" },
+        { "id": "day4_night_plan_escape_2", "next": "day4_night_plan_escape_3" },
+        { "id": "day4_night_plan_escape_3", "next": "day4_night_sleep" },
+        { "id": "day4_night_plan_expose", "next": "day4_night_plan_expose_2" },
+        { "id": "day4_night_plan_expose_2", "next": "day4_night_sleep" },
+        { "id": "day4_night_plan_confront", "next": "day4_night_plan_confront_2" },
+        { "id": "day4_night_plan_confront_2", "next": "day4_night_sleep" },
+        { "id": "day4_night_sleep", "next": "day4_night_sleep_2" },
+        { "id": "day4_night_sleep_2", "next": "day4_night_sleep_3" },
+        {
+            "id": "day4_night_sleep_3",
+            "type": "glitch",
+            "glitchLevel": "NIGHTMARE",
+            "next": "day4_night_seolhwa"
+        },
+        {
+            "id": "day4_night_seolhwa",
+            "background": "school_night",
+            "bgm": "nightmare",
+            "uiNameOverride": "이설화",
+            "next": "day4_night_seolhwa_2"
+        },
+        { "id": "day4_night_seolhwa_2", "next": "day4_night_seolhwa_3" },
+        { "id": "day4_night_seolhwa_3", "next": "day4_night_seolhwa_4" },
+        { "id": "day4_night_seolhwa_4", "next": "day4_night_seolhwa_5" },
+        { "id": "day4_night_seolhwa_5", "next": "day4_night_seolhwa_6" },
+        { "id": "day4_night_seolhwa_6", "next": "day4_night_seolhwa_7" },
+        { "id": "day4_night_seolhwa_7", "next": "day4_night_seolhwa_8" },
+        { "id": "day4_night_seolhwa_8", "next": "day4_night_seolhwa_9" },
+        { "id": "day4_night_seolhwa_9", "next": "day4_night_seolhwa_10" },
+        { "id": "day4_night_seolhwa_10", "next": "day4_night_seolhwa_11" },
+        { "id": "day4_night_seolhwa_11", "next": "day4_night_seolhwa_12" },
+        { "id": "day4_night_seolhwa_12", "next": "day4_night_seolhwa_13" },
+        {
+            "id": "day4_night_seolhwa_13",
+            "background": "teacher_office",
+            "next": "day4_night_seolhwa_14"
+        },
+        { "id": "day4_night_seolhwa_14", "next": "day4_night_seolhwa_15" },
+        { "id": "day4_night_seolhwa_15", "next": "day4_night_seolhwa_16" },
+        { "id": "day4_night_seolhwa_16", "next": "day4_night_seolhwa_17" },
+        { "id": "day4_night_seolhwa_17", "next": "day4_night_seolhwa_18" },
+        { "id": "day4_night_seolhwa_18", "next": "day4_night_seolhwa_19" },
+        {
+            "id": "day4_night_seolhwa_19",
+            "background": "basement",
+            "next": "day4_night_seolhwa_20"
+        },
+        { "id": "day4_night_seolhwa_20", "next": "day4_night_seolhwa_21" },
+        { "id": "day4_night_seolhwa_21", "next": "day4_night_seolhwa_22" },
+        { "id": "day4_night_seolhwa_22", "next": "day4_night_seolhwa_23" },
+        { "id": "day4_night_seolhwa_23", "next": "day4_night_seolhwa_24" },
+        { "id": "day4_night_seolhwa_24", "next": "day4_night_seolhwa_25" },
+        { "id": "day4_night_seolhwa_25", "next": "day4_night_seolhwa_26" },
+        { "id": "day4_night_seolhwa_26", "next": "day4_night_seolhwa_27" },
+        { "id": "day4_night_seolhwa_27", "next": "day4_night_seolhwa_28" },
+        { "id": "day4_night_seolhwa_28", "next": "day4_night_seolhwa_29" },
+        { "id": "day4_night_seolhwa_29", "next": "day4_night_seolhwa_30" },
+        { "id": "day4_night_seolhwa_30", "next": "day4_night_seolhwa_31" },
+        { "id": "day4_night_seolhwa_31", "next": "day4_night_seolhwa_32" },
+        { "id": "day4_night_seolhwa_32", "next": "day4_night_seolhwa_33" },
+        { "id": "day4_night_seolhwa_33", "next": "day4_night_seolhwa_34" },
+        { "id": "day4_night_seolhwa_34", "next": "day4_night_seolhwa_35" },
+        { "id": "day4_night_seolhwa_35", "next": "day4_night_seolhwa_36" },
+        { "id": "day4_night_seolhwa_36", "next": "day4_night_seolhwa_37" },
+        { "id": "day4_night_seolhwa_37", "next": "day4_night_seolhwa_38" },
+        { "id": "day4_night_seolhwa_38", "next": "day4_night_seolhwa_39" },
+        { "id": "day4_night_seolhwa_39", "next": "day4_night_seolhwa_40" },
+        { "id": "day4_night_seolhwa_40", "next": "day4_night_seolhwa_41" },
+        { "id": "day4_night_seolhwa_41", "next": "day4_night_seolhwa_42" },
+        { "id": "day4_night_seolhwa_42", "next": "day4_night_seolhwa_43" },
+        { "id": "day4_night_seolhwa_43", "next": "day4_night_wake" },
+        {
+            "id": "day4_night_wake",
+            "background": "room_night",
+            "bgm": "tension_high",
+            "uiNameOverride": null,
+            "next": "day4_night_wake_2"
+        },
+        { "id": "day4_night_wake_2", "next": "day4_night_wake_3" },
+        { "id": "day4_night_wake_3", "next": "day4_night_wake_4" },
+        { "id": "day4_night_wake_4", "next": "day4_night_wake_5" },
+        { "id": "day4_night_wake_5", "next": "day4_night_wake_6" },
+        { "id": "day4_night_wake_6", "next": "day4_night_end" },
+        { "id": "day4_night_end", "next": null }
+    ],
+    "mergePoints": {
+        "day4_night_plan_escape_3": "day4_night_sleep",
+        "day4_night_plan_expose_2": "day4_night_sleep",
+        "day4_night_plan_confront_2": "day4_night_sleep"
+    }
+}

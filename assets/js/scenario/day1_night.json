@@ -1,0 +1,74 @@
+{
+    "scenes": [
+        {
+            "id": "day1_night_start",
+            "background": "room_night",
+            "bgm": "night_calm",
+            "next": "day1_night_2"
+        },
+        { "id": "day1_night_2", "next": "day1_night_3" },
+        { "id": "day1_night_3", "next": "day1_night_4" },
+        { "id": "day1_night_4", "next": "day1_night_recall_sea" },
+        { "id": "day1_night_recall_sea", "next": "day1_night_recall_eunsu" },
+        { "id": "day1_night_recall_eunsu", "next": "day1_night_recall_riin" },
+        { "id": "day1_night_recall_riin", "next": "day1_night_recall_yuna" },
+        { "id": "day1_night_recall_yuna", "next": "day1_night_5" },
+        { "id": "day1_night_5", "next": "day1_night_phone" },
+        { "id": "day1_night_phone", "next": "day1_night_phone_2" },
+        { "id": "day1_night_phone_2", "next": "day1_night_phone_3" },
+        { "id": "day1_night_phone_3", "next": "day1_night_phone_4" },
+        { "id": "day1_night_phone_4", "next": "day1_night_phone_5" },
+        { "id": "day1_night_phone_5", "next": "day1_night_phone_6" },
+        { "id": "day1_night_phone_6", "next": "day1_night_phone_7" },
+        { "id": "day1_night_phone_7", "next": "day1_night_sea_reply" },
+        {
+            "id": "day1_night_sea_reply",
+            "type": "choice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day1_night_sea_reply_1",
+                    "stats": { "sea": { "affinity": 2 } }
+                },
+                {
+                    "index": 1,
+                    "next": "day1_night_sea_reply_2",
+                    "stats": { "sea": { "affinity": 1 } }
+                },
+                {
+                    "index": 2,
+                    "next": "day1_night_sea_reply_3",
+                    "stats": { "sea": { "affinity": -1, "danger": 1 } }
+                }
+            ]
+        },
+        { "id": "day1_night_sea_reply_1", "next": "day1_night_recall_seolhwa" },
+        { "id": "day1_night_sea_reply_2", "next": "day1_night_recall_seolhwa" },
+        { "id": "day1_night_sea_reply_3", "next": "day1_night_recall_seolhwa" },
+        { "id": "day1_night_recall_seolhwa", "next": "day1_night_recall_seolhwa_branch" },
+        {
+            "id": "day1_night_recall_seolhwa_branch",
+            "type": "flagBranch",
+            "flag": "seolhwa_greeted",
+            "branches": {
+                "true": "day1_night_recall_seolhwa_yes",
+                "false": "day1_night_recall_seolhwa_no"
+            }
+        },
+        { "id": "day1_night_recall_seolhwa_yes", "next": "day1_night_recall_seolhwa_yes_2" },
+        { "id": "day1_night_recall_seolhwa_yes_2", "next": "day1_night_sleep" },
+        { "id": "day1_night_recall_seolhwa_no", "next": "day1_night_sleep" },
+        { "id": "day1_night_sleep", "next": "day1_night_sleep_2" },
+        { "id": "day1_night_sleep_2", "next": "day1_night_sleep_3" },
+        { "id": "day1_night_sleep_3", "next": "day1_night_sleep_4" },
+        { "id": "day1_night_sleep_4", "next": "day1_night_end" },
+        { "id": "day1_night_end", "next": null }
+    ],
+    "mergePoints": {
+        "day1_night_sea_reply_1": "day1_night_recall_seolhwa",
+        "day1_night_sea_reply_2": "day1_night_recall_seolhwa",
+        "day1_night_sea_reply_3": "day1_night_recall_seolhwa",
+        "day1_night_recall_seolhwa_yes_2": "day1_night_sleep",
+        "day1_night_recall_seolhwa_no": "day1_night_sleep"
+    }
+}

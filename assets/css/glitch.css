@@ -281,3 +281,568 @@
     0% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
     100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
+
+/* ===== Dodge Button (Day 5 열린 감옥) ===== */
+.dodge-btn {
+    transition: transform 0.15s ease-out, opacity 0.3s ease;
+    will-change: transform;
+}
+
+.dodge-btn:hover {
+    /* PC: 호버 시 미세한 떨림 — 잡으려 하지만 빠져나가는 느낌 */
+    animation: dodge-tremble 0.08s ease infinite;
+}
+
+@keyframes dodge-tremble {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-1px, 1px); }
+    50% { transform: translate(1px, -1px); }
+    75% { transform: translate(-1px, -1px); }
+    100% { transform: translate(1px, 1px); }
+}
+
+.dodge-btn.fading {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ===== Timed Choice Timer Bar ===== */
+.choice-timer {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.choice-timer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #ff4444, #ff8844);
+    border-radius: 2px;
+    animation: timer-shrink var(--timer-duration, 10s) linear forwards;
+}
+
+@keyframes timer-shrink {
+    0% { width: 100%; }
+    60% { background: linear-gradient(90deg, #ff4444, #ff8844); }
+    80% { background: linear-gradient(90deg, #ff2222, #ff4444); }
+    100% { width: 0%; background: #ff0000; }
+}
+
+.choice-timer-text {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 100, 100, 0.8);
+    margin-bottom: 4px;
+    font-variant-numeric: tabular-nums;
+}
+
+/* 타이머 위급 (3초 이하) */
+.choice-timer.urgent::after {
+    animation-timing-function: steps(2, jump-none);
+    background: #ff0000 !important;
+}
+
+/* ===== Long Press Indicator (모바일 탈출) ===== */
+.long-press-btn {
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+}
+
+.long-press-btn .press-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ff4444, #ff8888);
+    width: 0%;
+    border-radius: 0 0 4px 4px;
+    transition: none;
+}
+
+.long-press-btn .press-progress.success {
+    background: linear-gradient(90deg, #44ff44, #88ff88);
+    width: 100%;
+}
+
+.long-press-btn:active {
+    transform: scale(0.97);
+}
+
+/* 누르는 동안 테두리 펄스 */
+.long-press-btn.pressing {
+    animation: press-border-pulse 1s ease infinite;
+    border-color: #ff4444;
+}
+
+@keyframes press-border-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.4); }
+    50% { box-shadow: 0 0 0 6px rgba(255, 68, 68, 0); }
+}
+
+/* ===== Cursor Slowdown (PC Day 5) ===== */
+.cursor-slowdown-overlay {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(139, 0, 0, 0.3);
+    border: 1px solid rgba(139, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 9999;
+    transition: left 0.3s ease-out, top 0.3s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+/* 커서 감속 중 전체 화면 커서 변경 */
+body.cursor-slowed {
+    cursor: wait !important;
+}
+
+body.cursor-slowed * {
+    cursor: inherit !important;
+}
+
+/* ===== Screen Crack Effect ===== */
+.screen-crack-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    pointer-events: none;
+    animation: crack-appear 0.1s ease-out forwards;
+}
+
+@keyframes crack-appear {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0.9; }
+}
+
+.screen-crack-overlay.fading {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+/* ===== Fake Emergency Alert (모바일 가짜 긴급 알림) ===== */
+.fake-emergency-alert {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    width: 92%;
+    max-width: 400px;
+    background: rgba(30, 30, 30, 0.97);
+    color: #fff;
+    border-radius: 0 0 14px 14px;
+    padding: 16px 20px;
+    z-index: 200;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fake-emergency-alert.visible {
+    transform: translateX(-50%) translateY(0);
+}
+
+.fake-emergency-alert .alert-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.fake-emergency-alert .alert-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.fake-emergency-alert .alert-icon.ios {
+    background: #ff3b30;
+}
+
+.fake-emergency-alert .alert-icon.android {
+    background: #f44336;
+}
+
+.fake-emergency-alert .alert-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.fake-emergency-alert .alert-time {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.fake-emergency-alert .alert-body {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #ddd;
+}
+
+/* ===== Mobile Shake + Vibration Dual Effect ===== */
+@media (hover: none) and (pointer: coarse) {
+    /* 모바일: CSS shake + vibration API 동시 적용 */
+    .screen-shake-mobile {
+        animation: mobile-shake 0.15s infinite;
+    }
+
+    @keyframes mobile-shake {
+        0% { transform: translate(0); }
+        20% { transform: translate(-4px, 3px); }
+        40% { transform: translate(4px, -2px); }
+        60% { transform: translate(-3px, -4px); }
+        80% { transform: translate(3px, 4px); }
+        100% { transform: translate(0); }
+    }
+}
+
+/* ===== Heartbeat Pulse (공포 절정) ===== */
+.heartbeat-pulse {
+    animation: heartbeat 0.8s ease infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.04); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.06); }
+    56% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
+/* =============================================================================
+   가로 모드(Landscape) 전용 기믹 스타일
+   ============================================================================= */
+
+/* ===== Orientation Hijack Overlay ===== */
+.orientation-hijack {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    transition: background 0.3s ease;
+}
+
+/* Day 1~3: 정상 안내 */
+.orientation-hijack.normal {
+    background: #111;
+    color: #aaa;
+}
+
+.orientation-hijack.normal .orient-icon {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    animation: rotate-phone 1.5s ease-in-out infinite;
+    position: relative;
+}
+
+.orientation-hijack.normal .orient-icon::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 3px;
+    background: #aaa;
+    border-radius: 2px;
+}
+
+@keyframes rotate-phone {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(90deg); }
+}
+
+.orientation-hijack.normal .orient-text {
+    font-size: 0.9rem;
+    color: #888;
+    max-width: 260px;
+    line-height: 1.5;
+}
+
+/* Day 4: 은수 하이재킹 */
+.orientation-hijack.hijack-eunsu {
+    background: #0a0000;
+}
+
+.orientation-hijack.hijack-eunsu .hijack-face {
+    width: 80%;
+    max-width: 300px;
+    filter: brightness(0.7) contrast(1.3) saturate(0.5);
+    animation: hijack-face-pulse 2s ease infinite;
+}
+
+.orientation-hijack.hijack-eunsu .hijack-text {
+    font-size: 1.2rem;
+    color: #cc0000;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(200, 0, 0, 0.5);
+    animation: hijack-text-flicker 0.1s ease infinite;
+}
+
+/* Day 5: 세아 하이재킹 */
+.orientation-hijack.hijack-sea {
+    background: #000008;
+}
+
+.orientation-hijack.hijack-sea .hijack-face {
+    width: 80%;
+    max-width: 300px;
+    filter: brightness(0.5) contrast(1.5) hue-rotate(340deg);
+    animation: hijack-face-close 3s ease-in forwards;
+}
+
+.orientation-hijack.hijack-sea .hijack-text {
+    font-size: 1.1rem;
+    color: #8888ff;
+    text-shadow: 0 0 15px rgba(100, 100, 255, 0.6);
+}
+
+@keyframes hijack-face-pulse {
+    0%, 100% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.02); }
+}
+
+@keyframes hijack-face-close {
+    0% { transform: scale(1); opacity: 0.7; }
+    100% { transform: scale(1.3); opacity: 1; }
+}
+
+@keyframes hijack-text-flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+/* ===== Multi-Touch Door Push ===== */
+.multi-touch-door {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.85);
+    gap: 20px;
+}
+
+.multi-touch-door .door-instruction {
+    font-size: 0.85rem;
+    color: rgba(255, 100, 100, 0.8);
+    text-align: center;
+    max-width: 280px;
+    line-height: 1.5;
+    animation: door-text-pulse 1.5s ease infinite;
+}
+
+@keyframes door-text-pulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+}
+
+.multi-touch-door .door-progress-bar {
+    width: 80%;
+    max-width: 320px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.multi-touch-door .door-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff4444, #ff8844, #ffcc44);
+    border-radius: 4px;
+    transition: none;
+}
+
+.multi-touch-door .door-progress-fill.success {
+    background: linear-gradient(90deg, #44ff44, #88ff88);
+    width: 100%;
+}
+
+/* 양쪽 터치 영역 시각 힌트 */
+.multi-touch-door .touch-zone {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 120px;
+    border: 2px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.multi-touch-door .touch-zone.left {
+    left: 5%;
+}
+
+.multi-touch-door .touch-zone.right {
+    right: 5%;
+}
+
+.multi-touch-door .touch-zone.active {
+    border-color: rgba(255, 100, 100, 0.5);
+    background: rgba(255, 100, 100, 0.05);
+}
+
+.multi-touch-door .touch-zone .thumb-icon {
+    font-size: 1.5rem;
+    opacity: 0.3;
+}
+
+/* ===== Peripheral Ghost (주변부 시야 공포) ===== */
+.peripheral-ghost {
+    position: fixed;
+    z-index: 45;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.peripheral-ghost.left {
+    left: 2%;
+    top: 30%;
+}
+
+.peripheral-ghost.right {
+    right: 2%;
+    top: 30%;
+}
+
+/* ===== Thumb-Hostile Choice Placement ===== */
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+    /* 가로 모드 + 터치 전용 */
+    .choice-btn.thumb-easy {
+        position: absolute !important;
+        right: 5%;
+        bottom: 15%;
+        font-size: 1.1rem;
+        padding: 14px 28px;
+        min-width: 160px;
+    }
+
+    .choice-btn.thumb-hard {
+        position: absolute !important;
+        left: 8%;
+        top: 15%;
+        font-size: 0.8rem;
+        padding: 6px 14px;
+        min-width: auto;
+        opacity: 0.7;
+    }
+
+    .choice-btn.thumb-extreme {
+        position: absolute !important;
+        left: 50%;
+        top: 8%;
+        transform: translateX(-50%);
+        font-size: 0.7rem;
+        padding: 4px 10px;
+        min-width: auto;
+        opacity: 0.5;
+    }
+}
+
+/* ===== AI Free Input UI ===== */
+.ai-input-container {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.ai-input-container input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ddd;
+    font-size: 0.9rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.ai-input-container input:focus {
+    border-color: var(--color-accent, #ff69b4);
+}
+
+.ai-input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ai-input-container button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--color-accent, #ff69b4);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+.ai-input-container button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* AI 응답 대기 중 입력 비활성화 */
+.ai-input-container.waiting input {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.ai-input-container.waiting button {
+    opacity: 0.3;
+    pointer-events: none;
+}

@@ -1,0 +1,146 @@
+{
+    "scenes": [
+        {
+            "id": "day5_after_start",
+            "bgm": "nightmare",
+            "next": "day5_after_branch"
+        },
+        {
+            "id": "day5_after_branch",
+            "type": "flagBranch",
+            "flag": "escaped_school",
+            "branches": {
+                "true": "day5_after_escaped",
+                "false": "day5_after_branch_2"
+            }
+        },
+        {
+            "id": "day5_after_branch_2",
+            "type": "flagBranch",
+            "flag": "stayed_with_eunsu",
+            "branches": {
+                "true": "day5_after_stayed",
+                "false": "day5_after_captured"
+            }
+        },
+        {
+            "id": "day5_after_escaped",
+            "background": "outside_rain",
+            "bgm": "escape",
+            "next": "day5_after_escaped_2"
+        },
+        { "id": "day5_after_escaped_2", "next": "day5_after_escaped_3" },
+        { "id": "day5_after_escaped_3", "next": "day5_after_escaped_4" },
+        { "id": "day5_after_escaped_4", "next": "day5_after_escaped_5" },
+        { "id": "day5_after_escaped_5", "next": "day5_after_escaped_6" },
+        { "id": "day5_after_escaped_6", "next": "day5_after_escaped_7" },
+        { "id": "day5_after_escaped_7", "next": "day5_after_escaped_8" },
+        { "id": "day5_after_escaped_8", "next": "day5_after_escaped_yuna_branch" },
+        {
+            "id": "day5_after_escaped_yuna_branch",
+            "type": "affinityBranch",
+            "character": "yuna",
+            "stat": "trust",
+            "branches": {
+                "40": "day5_after_escaped_yuna",
+                "default": "day5_after_escaped_solo"
+            }
+        },
+        { "id": "day5_after_escaped_yuna", "next": "day5_after_escaped_yuna_2" },
+        { "id": "day5_after_escaped_yuna_2", "next": "day5_after_escaped_yuna_3" },
+        { "id": "day5_after_escaped_yuna_3", "next": "day5_after_escaped_yuna_4" },
+        { "id": "day5_after_escaped_yuna_4", "next": "day5_after_escaped_yuna_5" },
+        { "id": "day5_after_escaped_yuna_5", "next": "day5_after_escaped_choice" },
+        { "id": "day5_after_escaped_solo", "next": "day5_after_escaped_solo_2" },
+        { "id": "day5_after_escaped_solo_2", "next": "day5_after_escaped_choice" },
+        {
+            "id": "day5_after_escaped_choice",
+            "type": "choice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day5_after_police",
+                    "flag": "reported_to_police"
+                },
+                {
+                    "index": 1,
+                    "next": "day5_after_expose_online",
+                    "flag": "exposed_online"
+                }
+            ]
+        },
+        { "id": "day5_after_police", "next": "day5_after_police_2" },
+        { "id": "day5_after_police_2", "next": "day5_after_end" },
+        { "id": "day5_after_expose_online", "next": "day5_after_expose_2" },
+        { "id": "day5_after_expose_2", "next": "day5_after_end" },
+        {
+            "id": "day5_after_captured",
+            "background": "basement",
+            "bgm": "nightmare",
+            "next": "day5_after_captured_2"
+        },
+        { "id": "day5_after_captured_2", "next": "day5_after_captured_3" },
+        { "id": "day5_after_captured_3", "next": "day5_after_captured_4" },
+        { "id": "day5_after_captured_4", "next": "day5_after_captured_5" },
+        { "id": "day5_after_captured_5", "next": "day5_after_captured_6" },
+        { "id": "day5_after_captured_6", "next": "day5_after_captured_7" },
+        { "id": "day5_after_captured_7", "next": "day5_after_captured_8" },
+        { "id": "day5_after_captured_8", "next": "day5_after_captured_9" },
+        { "id": "day5_after_captured_9", "next": "day5_after_captured_10" },
+        { "id": "day5_after_captured_10", "next": "day5_after_captured_choice" },
+        {
+            "id": "day5_after_captured_choice",
+            "type": "timedChoice",
+            "timeout": 5000,
+            "timeoutNext": "day5_after_captured_submit",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day5_after_captured_resist",
+                    "flag": "resisted_treatment"
+                },
+                {
+                    "index": 1,
+                    "next": "day5_after_captured_submit",
+                    "flag": "accepted_treatment"
+                }
+            ]
+        },
+        { "id": "day5_after_captured_resist", "next": "day5_after_captured_resist_2" },
+        { "id": "day5_after_captured_resist_2", "next": "day5_after_captured_resist_3" },
+        { "id": "day5_after_captured_resist_3", "next": "day5_after_captured_resist_4" },
+        { "id": "day5_after_captured_resist_4", "next": "day5_after_captured_resist_5" },
+        { "id": "day5_after_captured_resist_5", "next": "day5_after_captured_resist_6" },
+        { "id": "day5_after_captured_resist_6", "next": "day5_after_captured_resist_7" },
+        { "id": "day5_after_captured_resist_7", "next": "day5_after_captured_resist_8" },
+        { "id": "day5_after_captured_resist_8", "next": "day5_after_captured_resist_9" },
+        { "id": "day5_after_captured_resist_9", "next": "day5_after_end" },
+        { "id": "day5_after_captured_submit", "next": "day5_after_captured_submit_2" },
+        { "id": "day5_after_captured_submit_2", "next": "day5_after_captured_submit_3" },
+        { "id": "day5_after_captured_submit_3", "next": "day5_after_captured_submit_4" },
+        { "id": "day5_after_captured_submit_4", "next": "day5_after_end" },
+        {
+            "id": "day5_after_stayed",
+            "background": "classroom",
+            "bgm": "daily_calm",
+            "next": "day5_after_stayed_2"
+        },
+        { "id": "day5_after_stayed_2", "next": "day5_after_stayed_3" },
+        { "id": "day5_after_stayed_3", "next": "day5_after_stayed_4" },
+        { "id": "day5_after_stayed_4", "next": "day5_after_stayed_5" },
+        { "id": "day5_after_stayed_5", "next": "day5_after_stayed_6" },
+        { "id": "day5_after_stayed_6", "next": "day5_after_stayed_7" },
+        { "id": "day5_after_stayed_7", "next": "day5_after_stayed_8" },
+        { "id": "day5_after_stayed_8", "next": "day5_after_stayed_9" },
+        { "id": "day5_after_stayed_9", "next": "day5_after_stayed_10" },
+        { "id": "day5_after_stayed_10", "next": "day5_after_end" },
+        { "id": "day5_after_end", "next": null }
+    ],
+    "mergePoints": {
+        "day5_after_police_2": "day5_after_end",
+        "day5_after_expose_2": "day5_after_end",
+        "day5_after_captured_resist_9": "day5_after_end",
+        "day5_after_captured_submit_4": "day5_after_end",
+        "day5_after_stayed_10": "day5_after_end"
+    }
+}

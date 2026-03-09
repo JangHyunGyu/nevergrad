@@ -1,0 +1,208 @@
+{
+    "scenes": [
+        {
+            "id": "day4_after_start",
+            "background": "classroom",
+            "bgm": "tension_high",
+            "next": "day4_after_start_2"
+        },
+        { "id": "day4_after_start_2", "next": "day4_after_start_3" },
+        { "id": "day4_after_start_3", "next": "day4_after_start_4" },
+        { "id": "day4_after_start_4", "next": "day4_after_choice" },
+        {
+            "id": "day4_after_choice",
+            "type": "choice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day4_after_basement",
+                    "flag": "day4_found_basement"
+                },
+                {
+                    "index": 1,
+                    "next": "day4_after_sea_route",
+                    "stats": { "sea": { "affinity": 2, "danger": 3 } },
+                    "flag": "day4_followed_sea"
+                },
+                {
+                    "index": 2,
+                    "next": "day4_after_evidence",
+                    "flag": "day4_gathered_evidence"
+                }
+            ]
+        },
+        {
+            "id": "day4_after_basement",
+            "background": "hallway",
+            "next": "day4_after_basement_2"
+        },
+        { "id": "day4_after_basement_2", "next": "day4_after_basement_3" },
+        { "id": "day4_after_basement_3", "next": "day4_after_basement_4" },
+        { "id": "day4_after_basement_4", "next": "day4_after_basement_5" },
+        { "id": "day4_after_basement_5", "next": "day4_after_basement_6" },
+        { "id": "day4_after_basement_6", "next": "day4_after_basement_7" },
+        {
+            "id": "day4_after_basement_7",
+            "background": "basement",
+            "bgm": "nightmare",
+            "next": "day4_after_basement_8"
+        },
+        { "id": "day4_after_basement_8", "next": "day4_after_basement_9" },
+        { "id": "day4_after_basement_9", "next": "day4_after_basement_10" },
+        { "id": "day4_after_basement_10", "next": "day4_after_basement_11" },
+        { "id": "day4_after_basement_11", "next": "day4_after_basement_12" },
+        { "id": "day4_after_basement_12", "next": "day4_after_basement_13" },
+        { "id": "day4_after_basement_13", "next": "day4_after_basement_14" },
+        { "id": "day4_after_basement_14", "next": "day4_after_basement_15" },
+        { "id": "day4_after_basement_15", "next": "day4_after_basement_16" },
+        { "id": "day4_after_basement_16", "next": "day4_after_basement_17" },
+        { "id": "day4_after_basement_17", "next": "day4_after_basement_18" },
+        { "id": "day4_after_basement_18", "next": "day4_after_basement_19", "flag": "found_project_nevergrad" },
+        { "id": "day4_after_basement_19", "next": "day4_after_basement_20" },
+        { "id": "day4_after_basement_20", "next": "day4_after_basement_21" },
+        { "id": "day4_after_basement_21", "next": "day4_after_basement_22" },
+        { "id": "day4_after_basement_22", "next": "day4_after_basement_23" },
+        { "id": "day4_after_basement_23", "next": "day4_after_basement_24" },
+        { "id": "day4_after_basement_24", "next": "day4_after_basement_25" },
+        { "id": "day4_after_basement_25", "next": "day4_after_basement_26" },
+        { "id": "day4_after_basement_26", "next": "day4_after_basement_timer" },
+        {
+            "id": "day4_after_basement_timer",
+            "type": "timedChoice",
+            "timeout": 6000,
+            "timeoutNext": "day4_after_basement_hide",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day4_after_basement_rescue",
+                    "stats": { "yuna": { "trust": 10 } },
+                    "flag": "day4_rescued_yuna"
+                },
+                {
+                    "index": 1,
+                    "next": "day4_after_basement_hide",
+                    "flag": "day4_hid_in_basement"
+                }
+            ]
+        },
+        { "id": "day4_after_basement_rescue", "next": "day4_after_basement_rescue_2" },
+        { "id": "day4_after_basement_rescue_2", "next": "day4_after_basement_rescue_3" },
+        { "id": "day4_after_basement_rescue_3", "next": "day4_after_basement_rescue_4" },
+        { "id": "day4_after_basement_rescue_4", "next": "day4_after_basement_rescue_5" },
+        { "id": "day4_after_basement_rescue_5", "next": "day4_after_end" },
+        { "id": "day4_after_basement_hide", "next": "day4_after_basement_hide_2" },
+        { "id": "day4_after_basement_hide_2", "next": "day4_after_basement_hide_3" },
+        { "id": "day4_after_basement_hide_3", "next": "day4_after_basement_hide_4" },
+        { "id": "day4_after_basement_hide_4", "next": "day4_after_basement_hide_5" },
+        { "id": "day4_after_basement_hide_5", "next": "day4_after_end" },
+        {
+            "id": "day4_after_sea_route",
+            "background": "student_council",
+            "next": "day4_after_sea_2"
+        },
+        { "id": "day4_after_sea_2", "next": "day4_after_sea_3" },
+        { "id": "day4_after_sea_3", "next": "day4_after_sea_4" },
+        { "id": "day4_after_sea_4", "next": "day4_after_sea_5" },
+        { "id": "day4_after_sea_5", "next": "day4_after_sea_6" },
+        { "id": "day4_after_sea_6", "next": "day4_after_sea_7" },
+        { "id": "day4_after_sea_7", "next": "day4_after_sea_8" },
+        { "id": "day4_after_sea_8", "next": "day4_after_sea_force" },
+        {
+            "id": "day4_after_sea_force",
+            "type": "forcedChoice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day4_after_sea_accept",
+                    "stats": { "sea": { "affinity": 1, "danger": 2 } }
+                },
+                {
+                    "index": 1,
+                    "next": "day4_after_sea_accept",
+                    "stats": { "sea": { "affinity": 1, "danger": 2 } }
+                }
+            ]
+        },
+        { "id": "day4_after_sea_accept", "next": "day4_after_sea_accept_2" },
+        { "id": "day4_after_sea_accept_2", "next": "day4_after_sea_accept_3" },
+        { "id": "day4_after_sea_accept_3", "next": "day4_after_sea_accept_4" },
+        { "id": "day4_after_sea_accept_4", "next": "day4_after_sea_crack" },
+        { "id": "day4_after_sea_crack", "next": "day4_after_sea_crack_2" },
+        { "id": "day4_after_sea_crack_2", "next": "day4_after_sea_crack_3" },
+        { "id": "day4_after_sea_crack_3", "next": "day4_after_sea_crack_4" },
+        { "id": "day4_after_sea_crack_4", "next": "day4_after_sea_crack_5" },
+        { "id": "day4_after_sea_crack_5", "next": "day4_after_sea_crack_6" },
+        { "id": "day4_after_sea_crack_6", "next": "day4_after_sea_crack_7" },
+        { "id": "day4_after_sea_crack_7", "next": "day4_after_sea_crack_8" },
+        { "id": "day4_after_sea_crack_8", "next": "day4_after_sea_crack_9" },
+        { "id": "day4_after_sea_crack_9", "next": "day4_after_sea_crack_10" },
+        { "id": "day4_after_sea_crack_10", "next": "day4_after_sea_crack_11" },
+        { "id": "day4_after_sea_crack_11", "next": "day4_after_sea_crack_12" },
+        { "id": "day4_after_sea_crack_12", "next": "day4_after_sea_crack_13" },
+        { "id": "day4_after_sea_crack_13", "next": "day4_after_sea_crack_14" },
+        { "id": "day4_after_sea_crack_14", "next": "day4_after_sea_crack_15" },
+        { "id": "day4_after_sea_crack_15", "next": "day4_after_sea_crack_16" },
+        { "id": "day4_after_sea_crack_16", "next": "day4_after_sea_crack_17" },
+        { "id": "day4_after_sea_crack_17", "next": "day4_after_sea_crack_18" },
+        { "id": "day4_after_sea_crack_18", "next": "day4_after_sea_crack_19" },
+        { "id": "day4_after_sea_crack_19", "next": "day4_after_sea_crack_20" },
+        { "id": "day4_after_sea_crack_20", "next": "day4_after_end" },
+        {
+            "id": "day4_after_evidence",
+            "background": "classroom",
+            "next": "day4_after_evidence_2"
+        },
+        { "id": "day4_after_evidence_2", "next": "day4_after_evidence_3" },
+        { "id": "day4_after_evidence_3", "next": "day4_after_evidence_4" },
+        { "id": "day4_after_evidence_4", "next": "day4_after_evidence_5" },
+        { "id": "day4_after_evidence_5", "next": "day4_after_evidence_6" },
+        { "id": "day4_after_evidence_6", "next": "day4_after_evidence_7" },
+        { "id": "day4_after_evidence_7", "next": "day4_after_evidence_8" },
+        { "id": "day4_after_evidence_8", "next": "day4_after_evidence_9" },
+        { "id": "day4_after_evidence_9", "next": "day4_after_evidence_timer" },
+        {
+            "id": "day4_after_evidence_timer",
+            "type": "timedChoice",
+            "timeout": 5000,
+            "timeoutNext": "day4_after_evidence_stay",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day4_after_evidence_run",
+                    "flag": "day4_ran_from_eunsu"
+                },
+                {
+                    "index": 1,
+                    "next": "day4_after_evidence_stay",
+                    "stats": { "eunsu": { "control": 5 } },
+                    "flag": "day4_stayed_with_eunsu"
+                }
+            ]
+        },
+        { "id": "day4_after_evidence_run", "next": "day4_after_evidence_run_2" },
+        { "id": "day4_after_evidence_run_2", "next": "day4_after_evidence_run_3" },
+        { "id": "day4_after_evidence_run_3", "next": "day4_after_evidence_run_4" },
+        { "id": "day4_after_evidence_run_4", "next": "day4_after_evidence_run_5" },
+        { "id": "day4_after_evidence_run_5", "next": "day4_after_evidence_run_6" },
+        { "id": "day4_after_evidence_run_6", "next": "day4_after_evidence_run_7" },
+        { "id": "day4_after_evidence_run_7", "next": "day4_after_end" },
+        { "id": "day4_after_evidence_stay", "next": "day4_after_evidence_stay_2" },
+        { "id": "day4_after_evidence_stay_2", "next": "day4_after_evidence_stay_3" },
+        { "id": "day4_after_evidence_stay_3", "next": "day4_after_evidence_stay_4" },
+        { "id": "day4_after_evidence_stay_4", "next": "day4_after_evidence_stay_5" },
+        { "id": "day4_after_evidence_stay_5", "next": "day4_after_evidence_stay_6" },
+        { "id": "day4_after_evidence_stay_6", "next": "day4_after_evidence_stay_7" },
+        { "id": "day4_after_evidence_stay_7", "next": "day4_after_evidence_stay_8" },
+        { "id": "day4_after_evidence_stay_8", "next": "day4_after_evidence_stay_9" },
+        { "id": "day4_after_evidence_stay_9", "next": "day4_after_evidence_stay_10" },
+        { "id": "day4_after_evidence_stay_10", "next": "day4_after_end" },
+        { "id": "day4_after_end", "next": null }
+    ],
+    "mergePoints": {
+        "day4_after_basement_rescue_5": "day4_after_end",
+        "day4_after_basement_hide_5": "day4_after_end",
+        "day4_after_sea_crack_20": "day4_after_end",
+        "day4_after_evidence_run_7": "day4_after_end",
+        "day4_after_evidence_stay_10": "day4_after_end"
+    }
+}

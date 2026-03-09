@@ -1,0 +1,186 @@
+{
+    "scenes": [
+        {
+            "id": "day2_after_start",
+            "background": "classroom",
+            "bgm": "sunset_warm",
+            "next": "day2_after_eunsu_1"
+        },
+        { "id": "day2_after_eunsu_1", "next": "day2_after_eunsu_2" },
+        { "id": "day2_after_eunsu_2", "next": "day2_after_eunsu_3" },
+        { "id": "day2_after_eunsu_3", "next": "day2_after_eunsu_4" },
+        { "id": "day2_after_eunsu_4", "next": "day2_after_eunsu_5" },
+        { "id": "day2_after_eunsu_5", "next": "day2_after_eunsu_6" },
+        { "id": "day2_after_eunsu_6", "next": "day2_after_eunsu_choice" },
+        {
+            "id": "day2_after_eunsu_choice",
+            "type": "choice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day2_after_comply_1",
+                    "stats": { "eunsu": { "affinity": 3, "control": 3 } },
+                    "flag": "app_full_access"
+                },
+                {
+                    "index": 1,
+                    "next": "day2_after_refuse_1",
+                    "stats": { "eunsu": { "affinity": -1, "danger": 2 } },
+                    "flag": "app_refused"
+                }
+            ]
+        },
+        { "id": "day2_after_comply_1", "next": "day2_after_comply_2" },
+        { "id": "day2_after_comply_2", "next": "day2_after_comply_3" },
+        { "id": "day2_after_comply_3", "next": "day2_after_comply_4" },
+        { "id": "day2_after_comply_4", "next": "day2_after_comply_5" },
+        { "id": "day2_after_comply_5", "next": "day2_after_comply_6" },
+        { "id": "day2_after_comply_6", "next": "day2_after_transition" },
+        { "id": "day2_after_refuse_1", "next": "day2_after_refuse_2" },
+        { "id": "day2_after_refuse_2", "next": "day2_after_refuse_3" },
+        { "id": "day2_after_refuse_3", "next": "day2_after_refuse_4" },
+        { "id": "day2_after_refuse_4", "next": "day2_after_transition" },
+        { "id": "day2_after_transition", "next": "day2_after_choice" },
+        {
+            "id": "day2_after_choice",
+            "type": "routeChoice",
+            "choices": [
+                {
+                    "index": 0,
+                    "next": "day2_after_sea_1",
+                    "stats": { "sea": { "affinity": 3 } },
+                    "flag": "day2_after_sea"
+                },
+                {
+                    "index": 1,
+                    "next": "day2_after_yuna_1",
+                    "stats": { "yuna": { "trust": 3 } },
+                    "flag": "day2_after_yuna"
+                },
+                {
+                    "index": 2,
+                    "next": "day2_after_riin_1",
+                    "stats": { "riin": { "affinity": 3 } },
+                    "flag": "day2_after_riin"
+                },
+                {
+                    "index": 3,
+                    "next": "day2_after_home_1",
+                    "flag": "day2_after_home"
+                }
+            ]
+        },
+        {
+            "id": "day2_after_sea_1",
+            "background": "student_council",
+            "next": "day2_after_sea_2"
+        },
+        { "id": "day2_after_sea_2", "next": "day2_after_sea_3" },
+        { "id": "day2_after_sea_3", "next": "day2_after_sea_4" },
+        { "id": "day2_after_sea_4", "next": "day2_after_sea_5" },
+        { "id": "day2_after_sea_5", "next": "day2_after_sea_6" },
+        { "id": "day2_after_sea_6", "next": "day2_after_sea_7" },
+        { "id": "day2_after_sea_7", "next": "day2_after_sea_8" },
+        { "id": "day2_after_sea_8", "next": "day2_after_sea_9" },
+        { "id": "day2_after_sea_9", "next": "day2_after_sea_10" },
+        { "id": "day2_after_sea_10", "next": "day2_after_sea_11" },
+        { "id": "day2_after_sea_11", "next": "day2_after_sea_12" },
+        { "id": "day2_after_sea_12", "next": "day2_after_sea_13" },
+        { "id": "day2_after_sea_13", "next": "day2_after_sea_14" },
+        { "id": "day2_after_sea_14", "next": "day2_after_sea_15" },
+        { "id": "day2_after_sea_15", "next": "day2_after_sea_16" },
+        { "id": "day2_after_sea_16", "next": "day2_after_sea_17" },
+        { "id": "day2_after_sea_17", "next": "day2_after_sea_18" },
+        { "id": "day2_after_sea_18", "next": "day2_after_sea_19" },
+        { "id": "day2_after_sea_19", "next": "day2_after_sea_20" },
+        { "id": "day2_after_sea_20", "next": "day2_after_sea_21" },
+        { "id": "day2_after_sea_21", "next": "day2_after_sea_22" },
+        { "id": "day2_after_sea_22", "next": "day2_after_sea_23" },
+        { "id": "day2_after_sea_23", "next": "day2_after_sea_24" },
+        { "id": "day2_after_sea_24", "next": "day2_after_sea_25" },
+        { "id": "day2_after_sea_25", "next": "day2_after_sea_26" },
+        { "id": "day2_after_sea_26", "next": "day2_after_sea_27" },
+        { "id": "day2_after_sea_27", "next": "day2_after_sea_28" },
+        { "id": "day2_after_sea_28", "next": "day2_after_sea_29" },
+        { "id": "day2_after_sea_29", "next": "day2_after_home_1" },
+        {
+            "id": "day2_after_yuna_1",
+            "background": "library",
+            "next": "day2_after_yuna_2"
+        },
+        { "id": "day2_after_yuna_2", "next": "day2_after_yuna_3" },
+        { "id": "day2_after_yuna_3", "next": "day2_after_yuna_4" },
+        { "id": "day2_after_yuna_4", "next": "day2_after_yuna_5" },
+        { "id": "day2_after_yuna_5", "next": "day2_after_yuna_6" },
+        { "id": "day2_after_yuna_6", "next": "day2_after_yuna_7" },
+        { "id": "day2_after_yuna_7", "next": "day2_after_yuna_8" },
+        { "id": "day2_after_yuna_8", "next": "day2_after_yuna_9" },
+        { "id": "day2_after_yuna_9", "next": "day2_after_yuna_10" },
+        { "id": "day2_after_yuna_10", "next": "day2_after_yuna_11" },
+        { "id": "day2_after_yuna_11", "next": "day2_after_yuna_12" },
+        { "id": "day2_after_yuna_12", "next": "day2_after_yuna_13" },
+        { "id": "day2_after_yuna_13", "next": "day2_after_yuna_14" },
+        { "id": "day2_after_yuna_14", "next": "day2_after_yuna_15" },
+        { "id": "day2_after_yuna_15", "next": "day2_after_yuna_16" },
+        { "id": "day2_after_yuna_16", "next": "day2_after_yuna_17" },
+        { "id": "day2_after_yuna_17", "next": "day2_after_yuna_18" },
+        { "id": "day2_after_yuna_18", "next": "day2_after_home_1" },
+        {
+            "id": "day2_after_riin_1",
+            "background": "nurse_office",
+            "next": "day2_after_riin_2"
+        },
+        { "id": "day2_after_riin_2", "next": "day2_after_riin_3" },
+        { "id": "day2_after_riin_3", "next": "day2_after_riin_4" },
+        { "id": "day2_after_riin_4", "next": "day2_after_riin_5" },
+        { "id": "day2_after_riin_5", "next": "day2_after_riin_6" },
+        { "id": "day2_after_riin_6", "next": "day2_after_riin_7" },
+        { "id": "day2_after_riin_7", "next": "day2_after_riin_8" },
+        { "id": "day2_after_riin_8", "next": "day2_after_riin_9" },
+        { "id": "day2_after_riin_9", "next": "day2_after_riin_10" },
+        { "id": "day2_after_riin_10", "next": "day2_after_riin_11" },
+        { "id": "day2_after_riin_11", "next": "day2_after_riin_12" },
+        { "id": "day2_after_riin_12", "next": "day2_after_riin_13" },
+        { "id": "day2_after_riin_13", "next": "day2_after_home_1" },
+        {
+            "id": "day2_after_home_1",
+            "background": "school_gate_evening",
+            "next": "day2_after_home_check"
+        },
+        {
+            "id": "day2_after_home_check",
+            "type": "flagBranch",
+            "flag": "seolhwa_greeted",
+            "branches": {
+                "true": "day2_after_home_2",
+                "false": "day2_after_end"
+            }
+        },
+        { "id": "day2_after_home_2", "next": "day2_after_home_3" },
+        { "id": "day2_after_home_3", "next": "day2_after_seolhwa_1" },
+        {
+            "id": "day2_after_seolhwa_1",
+            "type": "bgmChange",
+            "bgm": null,
+            "next": "day2_after_seolhwa_2"
+        },
+        { "id": "day2_after_seolhwa_2", "next": "day2_after_seolhwa_3" },
+        {
+            "id": "day2_after_seolhwa_3",
+            "type": "bgmChange",
+            "bgm": "sunset_warm",
+            "next": "day2_after_seolhwa_4"
+        },
+        { "id": "day2_after_seolhwa_4", "next": "day2_after_seolhwa_5" },
+        { "id": "day2_after_seolhwa_5", "next": "day2_after_end" },
+        { "id": "day2_after_end", "next": null }
+    ],
+    "mergePoints": {
+        "day2_after_comply_6": "day2_after_transition",
+        "day2_after_refuse_4": "day2_after_transition",
+        "day2_after_sea_29": "day2_after_home_1",
+        "day2_after_yuna_18": "day2_after_home_1",
+        "day2_after_riin_13": "day2_after_home_1",
+        "day2_after_seolhwa_5": "day2_after_end"
+    }
+}

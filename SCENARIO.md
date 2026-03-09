@@ -4560,4 +4560,523 @@ Day 3 밤 `triggerGenreShift` 이후, 플레이어가 브라우저 탭을 떠나
 
 ---
 
+## 디바이스별 메타 호러 기믹 매핑
+
+### 디바이스 감지
+
+```js
+const isMobile = /Android|iPhone|iPad/.test(navigator.userAgent) || ('ontouchstart' in window);
+const isTablet = /iPad|Android/.test(navigator.userAgent) && window.innerWidth >= 768;
+```
+
+### 공포 채널 매핑 (PC vs 모바일)
+
+| 공포 채널 | PC (마우스/키보드) | 모바일 (터치/센서) | 비고 |
+|-----------|-------------------|-------------------|------|
+| **입력 방해** | 마우스 커서 도망 (CSS transition) | 버튼 위치 변경 + Long Press 요구 | 동일 장면, 다른 인터랙션 |
+| **행동 감시** | hover 체공 시간 측정 | 허공 터치 / 빈 공간 탭 감지 | NPC가 플레이어 망설임을 지적 |
+| **시각적 충격** | CSS shake | CSS shake | 공통 |
+| **물리적 충격** | 불가 | **+ 진동 API** (중첩 가능) | 모바일은 시각+촉각 2채널 |
+| **현실 침범** | 탭 제목 변경 + console 메시지 | **푸시 알림 + 가짜 OS UI** | 게임 밖까지 침범 |
+| **배터리 읽기** | Chrome/Edge `navigator.getBattery()` | Chrome Android (iOS 미지원 → 시간 기반 대체) | 세아가 실제 배터리 % 언급 |
+| **시간 동기화** | `new Date()` | `new Date()` | 공통: 밤 접속 시 "이 시간까지 뭐해?" |
+
+### Day별 기믹 적용 맵
+
+#### Day 1~2: 잠복기 (기믹 최소)
+
+| 장면 | PC | 모바일 | API |
+|------|-----|--------|-----|
+| Day 1 전체 | 기믹 없음 (순수 미연시) | 기믹 없음 | - |
+| Day 2 안전 앱 설치 | 브라우저 `[알림 허용]` 팝업 | 브라우저 `[알림 허용]` 팝업 | `Notification.requestPermission()` |
+| Day 2 밤 민수 답장 | `messengerDelay: 5000` | `messengerDelay: 5000` | 타이핑 인디케이터 |
+
+#### Day 3: 장르 전환 시작
+
+| 장면 | PC | 모바일 | API |
+|------|-----|--------|-----|
+| 세아 메시지 폭격 | CSS shake + 메시지 가속 | CSS shake + **진동 패턴** `[100,50,100,50,300]` → `[50,30]×10` | `navigator.vibrate()` |
+| 배터리 읽기 (세아 대사) | "배터리 {n}% 남았는데 충전 안 해?" | 동일 (iOS: 시간 기반 대체 "이 시간에 아직 안 자?") | `navigator.getBattery()` |
+| 탭 이탈 감지 시작 | 탭 제목 → "어디 가?" / "보고 있어" | **푸시 알림** "돌아와" (Day 2 권한 획득 시) | `visibilitychange` + `Push API` |
+| 스탯 라벨 크랙 | 호감도 → 위험도 깜빡임 | 호감도 → 위험도 깜빡임 + **미세 진동** | CSS + `vibrate(50)` |
+
+#### Day 4: 스릴러 본격화
+
+| 장면 | PC | 모바일 | API |
+|------|-----|--------|-----|
+| 세아 강제 선택지 | 마우스 hover 체공 시간 측정 → "4.2초 망설였잖아" | **허공 터치 감지** → "화면 그만 두드리고 선택해" | `mouseover` / `touchstart` 좌표 |
+| 리인 주사기 장면 | 화면 미세 흔들림 | CSS shake + **진동** `vibrate(1500)` (길게 징ㅡ) | `vibrate()` |
+| 타이머 선택지 전체 | 타이머 바 표시 | 타이머 바 + **진동 카운트다운** (1초마다 짧은 진동) | `vibrate(100)` per second |
+| 지하실 발견 | 화면 어둡게 + 노이즈 | 화면 어둡게 + 노이즈 + **진동 불규칙 패턴** | CSS + `vibrate([200,100,50,100,200])` |
+
+#### Day 5: 풀 나이트메어
+
+| 장면 | PC | 모바일 | API |
+|------|-----|--------|-----|
+| **열린 감옥 (정문)** | `[앞으로 걷는다]` 버튼이 마우스 커서에서 도망 (3~4회 → 소멸) | 버튼 탭 시 위치 변경 (3~4회 → 소멸) + Long Press 시도 불가 | CSS transition / touch event |
+| 열린 감옥 (약물 마비) | CSS cursor slowdown (`cursor: wait`) | **진동 지속** `vibrate([100,50]×20)` + 터치 반응 지연 200ms | `vibrate()` + `setTimeout` |
+| 가짜 재난문자 | 없음 | **가짜 OS 알림 UI** "[긴급재난문자] 피험자 #13 이탈 금지" | CSS 위장 (iOS/Android 구분) |
+| 액정 깨짐 | CSS `clip-path` 균열 + 효과음 | CSS `clip-path` 균열 + **충격 진동** `vibrate(300)` + 효과음 | CSS + `vibrate()` + Audio |
+| 추격 시퀀스 | 화면 흔들림 가속 | 화면 흔들림 + **심장박동 진동** `vibrate([100,100,300,500])` 반복 | CSS shake + `vibrate()` |
+| 리인 최종 주사 | 화면 블러 + 페이드아웃 | 블러 + 페이드아웃 + **바늘 진동** `vibrate(2000)` | CSS blur + `vibrate()` |
+| 탈출 성공 (비상구) | 모든 글리치 정지 + 깨끗한 화면 | 모든 글리치/진동 정지 + 깨끗한 화면 | 전체 이펙트 해제 |
+
+### 진동 패턴 사전 (Vibration Pattern Dictionary)
+
+```js
+const VIBRATION_PATTERNS = {
+    // Day 3
+    message_buzz:      [100, 50, 100, 50, 300],          // 세아 메시지 도착
+    message_frenzy:    [50, 30, 50, 30, 50, 30, 50, 30],  // 세아 폭격 (가속)
+    stat_crack:        [50],                               // 스탯 깜빡임
+
+    // Day 4
+    needle_touch:      [1500],                             // 리인 주사기 (길게)
+    timer_tick:        [100],                              // 타이머 1초 카운트다운
+    underground:       [200, 100, 50, 100, 200],           // 지하실 불안
+    heartbeat:         [100, 100, 300, 500],               // 심장박동
+
+    // Day 5
+    paralysis:         Array(20).fill(100).flatMap(v => [v, 50]),  // 약물 마비
+    impact:            [300],                              // 액정 깨짐 충격
+    final_needle:      [2000],                             // 최종 주사
+    escape_relief:     []                                  // 탈출 = 진동 정지
+};
+```
+
+### 가짜 OS UI 위장 명세
+
+#### 가짜 재난문자 (Day 5 아침)
+
+```
+[iOS 위장]
+┌─────────────────────────────────┐
+│ ⚠️ 긴급재난문자                  │
+│ 프로젝트 네버그라드 통제 상황.     │
+│ 피험자 #13의 이탈을 금지함.       │
+│                        [확인]    │
+└─────────────────────────────────┘
+
+[Android 위장]
+┌─────────────────────────────────┐
+│ 🔴 긴급재난문자                  │
+│ [한울고등학교]                    │
+│ 프로젝트 네버그라드 통제 상황.     │
+│ 피험자 #13의 이탈을 금지함.       │
+│                        [확인]    │
+└─────────────────────────────────┘
+```
+
+- `userAgent`로 iOS/Android 판별 후 해당 OS 스타일 적용
+- 화면 상단에서 슬라이드 다운 → 3초 유지 → 탭하면 닫힘
+- PC에서는 표시하지 않음
+
+#### 가짜 시스템 알림 (세아 푸시)
+
+Day 3 이후, 게임 탭을 떠날 때:
+- **PC**: 탭 제목 변경 ("어디 가?" → "보고 있어" → ...)
+- **모바일 (알림 허용 시)**: 실제 브라우저 푸시 알림 발송
+
+```js
+// 푸시 알림 메시지 큐
+const PUSH_MESSAGES = [
+    { title: "한세아", body: "어디 가? 돌아와." },
+    { title: "한세아", body: "...보고 있어." },
+    { title: "한세아", body: "{name}, 왜 안 돌아와?" },
+    { title: "박은수", body: "수업 중인데 어디 갔어요?" },
+    { title: "한울 스마트캠퍼스", body: "비정상 이탈 감지. 위치 확인 중..." }
+];
+```
+
+### 마우스/터치 행동 분석 시스템
+
+#### PC: 마우스 트래킹
+
+```js
+// Day 4 세아 강제 선택지에서 hover 체공 시간 측정
+choiceEl.addEventListener('mouseover', () => {
+    hoverStart = Date.now();
+    hoveredChoice = choiceIndex;
+});
+choiceEl.addEventListener('mouseout', () => {
+    hoverDuration = (Date.now() - hoverStart) / 1000;
+});
+// 선택 후 → 세아: "두 번째 선택지 위에서 {hoverDuration}초 망설였잖아"
+```
+
+#### 모바일: 터치 패턴 분석
+
+```js
+// 선택지 밖 터치 감지
+document.addEventListener('touchstart', (e) => {
+    if (!e.target.closest('.choice-btn')) {
+        emptyTouchCount++;
+        if (emptyTouchCount >= 3) {
+            // 은수: "화면 그만 두드리고, 빨리 선택해."
+            triggerNPCReaction('eunsu_touch_warn');
+        }
+    }
+});
+
+// Long Press 탈출 버튼 (Day 5)
+escapeBtn.addEventListener('touchstart', () => {
+    pressTimer = setTimeout(() => {
+        // 3초 꾹 누르기 성공 → 탈출 진행
+        proceedEscape();
+    }, 3000);
+});
+escapeBtn.addEventListener('touchend', () => {
+    clearTimeout(pressTimer);
+    // "손가락이 떨려서 힘이 안 들어간다... 꽉 눌러야 해!"
+    showMessage('press_harder');
+});
+```
+
+### 시간 동기화 연출
+
+```js
+const hour = new Date().getHours();
+
+// Day 1~2: 은수 선생님 대사 분기
+if (hour >= 22 || hour < 5) {
+    // "이 시간까지 뭐하고 있는 거야, {name}? 내일 수업인데."
+    dialogue = 'eunsu_late_night';
+} else if (hour >= 5 && hour < 9) {
+    // "아침 일찍 일어났네? 착하다."
+    dialogue = 'eunsu_early_morning';
+}
+
+// Day 4~5: 세아 메시지 시간 반영
+// "지금 {hour}시인데... 아직 안 자?"
+```
+
+---
+
+## 📱 가로 모드(Landscape) 전용 메타 호러 기믹
+
+가로 모드는 모바일 기기를 **'두 손으로 꽉 쥐고'** 플레이하게 만든다. 이 물리적 구속을 공포 매체로 전환한다.
+
+### 1. Orientation 안내 화면 하이재킹
+
+| 항목 | 내용 |
+|------|------|
+| **트리거** | 유저가 세로(Portrait)로 폰을 돌렸을 때 |
+| **Day 1~3** | 정상 시스템 안내: "원활한 플레이를 위해 기기를 가로로 회전해주세요" + 회전 아이콘 |
+| **Day 4+** | 하이재킹: 은수 클로즈업 + 붉은 글씨 **"어딜 보는 거야? 다시 똑바로 들어."** |
+| **Day 5** | 세아 클로즈업 + **"도망치려고? 나를 두고?"** + 강한 진동 `vibrate(500)` |
+| **API** | `screen.orientation` + `orientationchange` 이벤트 |
+
+```js
+// Orientation Hijack
+window.addEventListener('orientationchange', () => {
+    const isPortrait = screen.orientation?.type?.includes('portrait')
+        || window.innerHeight > window.innerWidth;
+    if (isPortrait && state.currentDay >= 4) {
+        showHijackedOrientationScreen(state.currentDay);
+    }
+});
+```
+
+**핵심 연출**: Day 3까지 정상이었던 시스템 화면이 Day 4부터 오염 → "시스템조차 게임 안이었다"는 4번째 벽 파괴
+
+### 2. 멀티 터치 비상구 (Two-Thumb Door Push)
+
+| 항목 | 내용 |
+|------|------|
+| **적용 구간** | Day 5 비상구 탈출 씬 |
+| **메카닉** | 화면 양쪽 끝을 두 엄지로 동시에 5초간 꾹 누르기 |
+| **유효 판정** | 두 터치 포인트 간 거리 ≥ 화면 폭의 60% |
+| **진동 패턴** | 점점 강해지는 저항감: `[100,50,200,50,400,50,800,50,1200]` |
+| **실패 시** | "손가락이 떨린다... 양쪽을 꽉 잡아!" + 진동 패턴 리셋 |
+| **성공 시** | 진동 정지 → 정적 → 탈출 진행 |
+
+```js
+// Two-thumb detection
+const touches = Array.from(e.touches);
+if (touches.length >= 2) {
+    const dist = Math.abs(touches[0].clientX - touches[1].clientX);
+    const threshold = window.innerWidth * 0.6;
+    if (dist >= threshold) {
+        // 유효한 양손 그립 — 카운트다운 시작
+        startDoorPush(5000);
+    }
+}
+```
+
+**공포 포인트**: 양손이 화면에 묶인 상태에서 강한 진동 = "누군가 팔을 잡아당기는" 촉각 피드백
+
+### 3. 주변부 시야(Peripheral Vision) 공포
+
+가로 모드의 와이드 화면(16:9~21:9) 좌우 여백을 활용한 은근한 공포.
+
+| Day | 위치 | 지속시간 | 투명도 | 내용 |
+|-----|------|----------|--------|------|
+| **Day 3 밤** | 화면 최우측 구석 | 0.05초 | 10% | 설화의 손끝 실루엣 |
+| **Day 4** | 좌측 또는 우측 랜덤 | 0.1초 | 20% | 설화의 눈동자 |
+| **Day 5 오전** | 양쪽 동시 | 0.2초 | 40% | 세아+은수 실루엣 (포위) |
+| **Day 5 밤** | 전체 화면 가장자리 | 0.3초 | 60% | 다수의 손 (기억 조작된 학생들) |
+
+```js
+// Peripheral apparition
+function showPeripheralGhost(side, duration, opacity, imageKey) {
+    const ghost = document.createElement('div');
+    ghost.className = 'peripheral-ghost';
+    ghost.style.cssText = `
+        position: fixed;
+        ${side}: 2%;
+        top: 30%;
+        width: 60px;
+        height: 80px;
+        background: url(${CONFIG.EXPRESSIONS[imageKey]}) center/contain no-repeat;
+        opacity: 0;
+        z-index: 45;
+        pointer-events: none;
+    `;
+    document.body.appendChild(ghost);
+
+    requestAnimationFrame(() => {
+        ghost.style.transition = `opacity ${duration}ms ease`;
+        ghost.style.opacity = opacity;
+        setTimeout(() => {
+            ghost.style.opacity = '0';
+            setTimeout(() => ghost.remove(), duration);
+        }, duration);
+    });
+}
+```
+
+**핵심**: 중앙 텍스트에 집중하던 유저의 주변시(peripheral vision)가 움직임 감지 → 본능적 불안
+
+### 4. 엄지 동선 꼬기 (Thumb Reach Manipulation)
+
+가로 모드에서 엄지가 닿기 편한/불편한 영역을 선택지 배치에 악용.
+
+| 선택지 | 위치 | 크기 | 의도 |
+|--------|------|------|------|
+| 순응 (세아에게 동의) | 우측 하단 (엄지 바로 밑) | 크게 | 자연스럽게 눌리도록 |
+| 저항 (거절/탈출) | 좌측 상단 (엄지 사각지대) | 작게 | 그립 바꿔야 닿음 |
+| Day 5 탈출 선택지 | 화면 정중앙 상단 | 아주 작게 | 양손 모두 뻗어야 닿음 |
+
+```js
+// Thumb-hostile placement
+function placeThumbHostile(btnEl, difficulty) {
+    const positions = {
+        easy:   { right: '5%', bottom: '15%', fontSize: '1.1rem', padding: '14px 28px' },
+        medium: { left: '8%', top: '20%', fontSize: '0.85rem', padding: '8px 16px' },
+        hard:   { left: '50%', top: '8%', fontSize: '0.75rem', padding: '6px 12px',
+                  transform: 'translateX(-50%)' }
+    };
+    Object.assign(btnEl.style, positions[difficulty] || positions.easy);
+    btnEl.style.position = 'absolute';
+}
+```
+
+**추가 연출**: 유저가 그립을 바꾸는 순간 폰이 미세하게 흔들림 → 가속도계 감지 → 세아: **"왜 손이 떨려?"**
+
+```js
+// Grip change detection via accelerometer
+if ('DeviceMotionEvent' in window) {
+    window.addEventListener('devicemotion', (e) => {
+        const acc = e.accelerationIncludingGravity;
+        const magnitude = Math.sqrt(acc.x**2 + acc.y**2 + acc.z**2);
+        if (magnitude > 15 && state.currentDay >= 4) {
+            // 그립 변경으로 인한 흔들림 감지
+            triggerNPCReaction('sea_hand_tremor');
+        }
+    });
+}
+```
+
+### 가로 모드 기믹 Day별 적용 맵
+
+| Day | Orientation Hijack | Peripheral Ghost | Thumb Manipulation | Multi-Touch Door |
+|-----|-------------------|-----------------|-------------------|-----------------|
+| 1~2 | 정상 안내 | 없음 | 없음 | 없음 |
+| 3 | 정상 안내 | 0.05초/10% | 없음 | 없음 |
+| 4 | **은수 하이재킹** | 0.1초/20% | **순응=쉬움, 저항=어려움** | 없음 |
+| 5 | **세아 하이재킹+진동** | 0.2~0.3초/40~60% | **탈출=극어려움** | **비상구 탈출** |
+
+---
+
+## 🤖 AI API 연동 시스템
+
+### 설계 원칙
+
+- **국소적(Surgical) 배치**: 게임 전체를 AI에 맡기지 않음. 가장 소름 돋아야 할 클라이맥스에만 사용
+- **시나리오 뼈대 보존**: AI는 고정 시나리오를 대체하지 않고 "빈칸"을 채움
+- **레이턴시 위장**: API 응답 대기(1~3초)를 타이핑 인디케이터/글리치 효과로 덮음
+- **탈선 방지**: 프롬프트에 출력 길이·금지 키워드·캐릭터 경계 가드레일
+- **Fallback**: 네트워크 오류 시 하드코딩된 기본 텍스트로 자연스럽게 분기
+
+### API 엔드포인트
+
+```js
+CONFIG.API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
+CONFIG.APP_TYPE = "nevergrad";
+```
+
+### 1. "변명해 봐" — 자유 입력 가스라이팅
+
+| 항목 | 내용 |
+|------|------|
+| **적용 구간** | Day 4 방과후 (은수 심문), Day 5 세아 대면 |
+| **트리거** | 선택지 대신 텍스트 입력창 등장 |
+| **AI 역할** | 유저 입력의 감정(두려움/거짓말/공격성)을 분석하여 맞춤형 반박 생성 |
+| **턴 수** | 최대 3턴 (3턴 후 강제 진행) |
+| **Fallback** | 하드코딩 대사 3종 (변명/침묵/공격 분기) |
+
+```
+[System Prompt — 은수 심문]
+당신은 비주얼노벨 "졸업하지 못한 교실"의 캐릭터 '박은수'(담임교사)입니다.
+상황: 학생 {name}이 허가 없이 구관 지하실에 있는 것을 발견했습니다.
+당신의 임무: 학생이 무슨 변명을 하든 논리적으로 반박하여 궁지에 몰아넣으세요.
+
+규칙:
+- 반드시 한국어로 대답
+- 최대 2문장
+- 학생의 입력을 직접 인용하며 반박 ("~라고 했지만" 패턴)
+- '기억 조작', '프로젝트 네버그라드' 등 핵심 비밀은 절대 언급 금지
+- 표면적으로는 걱정하는 선생님이지만, 교묘하게 공포감을 조성
+- 학생이 장난/무의미한 입력을 하면: "지금 장난칠 상황이 아닐 텐데, {name}."
+
+출력 형식:
+{"text": "대사 텍스트", "emotion": "gentle|cold|angry", "danger_delta": 1~3}
+```
+
+```
+[System Prompt — 세아 대면]
+당신은 '한세아'(반장)입니다. {name}이 학교를 떠나려 하고 있습니다.
+당신의 임무: 학생이 무슨 말을 하든, 슬픔과 집착 사이를 오가며 감정적으로 붙잡으세요.
+
+규칙:
+- 반드시 한국어, 최대 2문장
+- 학생의 입력 감정을 읽고 반응 (거부→슬픔, 동정→집착, 분노→위협)
+- 절대 폭력 묘사 금지, 감정적 조종만 사용
+- "나 없이는 안 돼", "네가 원한 거잖아" 같은 가스라이팅 패턴
+
+출력 형식:
+{"text": "대사 텍스트", "emotion": "cry|yandere|hurt|smile", "danger_delta": 1~5}
+```
+
+### 2. AI 페르소나 메신저 — "민수" 사칭 대화
+
+| 항목 | 내용 |
+|------|------|
+| **적용 구간** | Day 2 밤 카톡 씬, Day 3 밤 재시도 |
+| **트리거** | 메신저 UI에서 유저가 자유 입력 |
+| **AI 역할** | 전학 전 친구 '민수'를 사칭하는 학교 감시자 |
+| **턴 수** | 최대 5턴 (이후 "읽음" 표시만 뜸) |
+| **소름 포인트** | 유저가 아무리 다급해도 건조한 답변만 돌아옴 |
+| **Fallback** | 하드코딩 대사: "응 잘 지내. 거긴 어때?" / "그렇군요." / (읽음) |
+
+```
+[System Prompt — 민수 사칭]
+당신은 주인공의 전학 전 친구 '민수'의 카톡을 빼앗은 학교 감시자입니다.
+절대 정체를 드러내면 안 됩니다.
+
+규칙:
+- 반드시 한국어, 최대 1문장
+- 극도로 건조하고 짧게 대답 (진짜 민수라면 안 쓸 존댓말/딱딱한 어투)
+- 유저가 "살려줘", "갇혔어" 등 긴급 메시지를 보내도: "그렇군요. 학교생활 잘 하고 있나 보네요."
+- 가끔 미묘하게 민수답지 않은 단어 선택 ("학교 측"이라든가 "출석률" 같은)
+- 5턴 초과 시 더 이상 답하지 않음
+
+출력 형식:
+{"text": "답장 텍스트", "typingDelay": 3000~8000}
+```
+
+**레이턴시 위장**: AI 응답 대기 중 `"···"` 타이핑 인디케이터 표시 (실제 민수가 치고 있는 것처럼)
+
+### 3. 커스텀 악몽 생성 — 플레이 기록 기반 동적 텍스트
+
+| 항목 | 내용 |
+|------|------|
+| **적용 구간** | Day 4 밤 악몽 씬 |
+| **입력 데이터** | 1~3일차 플레이 플래그 전체 |
+| **AI 역할** | 플레이어의 행동이 초현실적으로 뒤틀린 악몽 묘사 생성 |
+| **출력** | 5문장의 악몽 텍스트 (매 플레이마다 다름) |
+| **Fallback** | 하드코딩된 범용 악몽 텍스트 |
+
+```
+[System Prompt — 커스텀 악몽]
+당신은 비주얼노벨 "졸업하지 못한 교실"의 악몽 시퀀스 작성자입니다.
+
+아래는 플레이어가 1~3일차에 한 행동 목록입니다:
+{flag_summary}
+
+이 데이터를 바탕으로, 플레이어가 이 학교에 완전히 종속되어 가고 있다는
+기괴하고 초현실적인 악몽 묘사를 작성하세요.
+
+규칙:
+- 반드시 한국어
+- 정확히 5문장
+- 각 문장은 *이탤릭 마크다운*으로 감쌈 (내레이션 형식)
+- 플레이어의 실제 행동을 뒤틀어 반영 (도시락→입안에서 녹지 않는 밥, 사진→얼굴이 지워진 사진 등)
+- 마지막 문장은 반드시 설화의 목소리로 끝남
+- 직접적 폭력/고어 묘사 금지, 심리적 불안감만
+
+출력 형식:
+{"lines": ["*문장1*", "*문장2*", "*문장3*", "*문장4*", "*문장5*"]}
+```
+
+**플래그 요약 생성 예시**:
+```js
+function buildFlagSummary(state) {
+    return FLAG_MEMORIES
+        .filter(m => state.hasFlag(m.flag))
+        .map(m => `- ${m.text}`)
+        .join('\n');
+}
+```
+
+### AI 연동 Day별 적용 맵
+
+| Day | 장면 | AI 타입 | 프롬프트 | 턴 수 |
+|-----|------|---------|----------|-------|
+| 2 밤 | 민수 카톡 | 페르소나 메신저 | 민수 사칭 | 5 |
+| 3 밤 | 민수 재시도 | 페르소나 메신저 | 민수 사칭 (더 건조) | 3 |
+| 4 방과후 | 은수 심문 | 자유 입력 가스라이팅 | 은수 심문 | 3 |
+| 4 밤 | 악몽 | 커스텀 텍스트 생성 | 커스텀 악몽 | 1 (원샷) |
+| 5 오전 | 세아 대면 | 자유 입력 가스라이팅 | 세아 대면 | 3 |
+
+### messengerDelay + AI 레이턴시 위장 통합
+
+```js
+async function sendAIMessage(prompt, userInput) {
+    // 1. 타이핑 인디케이터 표시
+    showTypingIndicator();
+
+    try {
+        // 2. AI API 호출
+        const response = await fetch(CONFIG.API_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                app_type: CONFIG.APP_TYPE,
+                prompt: prompt,
+                message: userInput
+            })
+        });
+
+        const data = await response.json();
+        const parsed = JSON.parse(data.reply);
+
+        // 3. AI 응답에 포함된 typingDelay만큼 추가 대기 (인간적 느낌)
+        if (parsed.typingDelay) {
+            await sleep(parsed.typingDelay);
+        }
+
+        hideTypingIndicator();
+        return parsed;
+
+    } catch (e) {
+        // 4. Fallback — 네트워크 오류 시 하드코딩 텍스트
+        hideTypingIndicator();
+        return getFallbackResponse(prompt.type);
+    }
+}
+```
+
+---
+
 *끝*

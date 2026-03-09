@@ -28,7 +28,7 @@ class GameEngine {
     async init() {
         // 언어 감지 (URL 파라미터 또는 브라우저 언어)
         const urlLang = new URLSearchParams(location.search).get('lang');
-        const lang = urlLang || navigator.language?.slice(0, 2) || 'ko';
+        const lang = window.__NEVERGRAD_LANG__ || urlLang || navigator.language?.slice(0, 2) || 'ko';
         const supported = Object.keys(I18nManager.LANGUAGES);
         this.i18n.setLanguage(supported.includes(lang) ? lang : 'ko');
 

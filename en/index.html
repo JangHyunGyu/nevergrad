@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nevergrad - The Classroom of No Graduation</title>
+    <meta name="description" content="The first day of transfer, everything was perfect. Too perfect to be normal.">
+    <meta name="theme-color" content="#FFB7C5">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://nevergrad.archerlab.dev/en/">
+
+    <!-- Hreflang: multilingual SEO -->
+    <link rel="alternate" hreflang="ko" href="https://nevergrad.archerlab.dev/">
+    <link rel="alternate" hreflang="en" href="https://nevergrad.archerlab.dev/en/">
+    <link rel="alternate" hreflang="ja" href="https://nevergrad.archerlab.dev/ja/">
+    <link rel="alternate" hreflang="es" href="https://nevergrad.archerlab.dev/es/">
+    <link rel="alternate" hreflang="fr" href="https://nevergrad.archerlab.dev/fr/">
+    <link rel="alternate" hreflang="de" href="https://nevergrad.archerlab.dev/de/">
+    <link rel="alternate" hreflang="x-default" href="https://nevergrad.archerlab.dev/">
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="The Classroom of No Graduation | Nevergrad">
+    <meta property="og:description" content="The first day of transfer, everything was perfect. Too perfect to be normal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nevergrad.archerlab.dev/en/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:site_name" content="Nevergrad">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dialogue.css">
+    <link rel="stylesheet" href="../assets/css/glitch.css">
+</head>
+<body>
+    <!-- ===== Title Screen ===== -->
+    <div id="title-screen" class="screen active">
+        <div class="title-bg">
+            <div class="cherry-blossoms" id="cherry-blossoms"></div>
+            <h1 class="title-text">The Classroom of No Graduation</h1>
+            <p class="title-subtitle">5 Days Record</p>
+        </div>
+        <div class="title-menu">
+            <button id="btn-new-game" class="menu-btn">New Game</button>
+            <button id="btn-continue" class="menu-btn" disabled>Continue</button>
+            <button id="btn-gallery" class="menu-btn">Gallery</button>
+        </div>
+    </div>
+
+    <!-- ===== Name Input Screen ===== -->
+    <div id="name-screen" class="screen">
+        <div class="name-input-container">
+            <p class="name-prompt">What is your name?</p>
+            <input type="text" id="player-name-input" maxlength="8" placeholder="Enter your name">
+            <button id="btn-start" class="menu-btn">Start</button>
+        </div>
+    </div>
+
+    <!-- ===== Game Screen ===== -->
+    <div id="game-screen" class="screen">
+        <!-- Background Layer -->
+        <div id="bg-layer" class="bg-layer"></div>
+        <div id="bg-overlay" class="bg-overlay"></div>
+
+        <!-- Character Layer -->
+        <div id="char-layer" class="char-layer">
+            <img id="char-left" class="character-sprite pos-left" src="" alt="">
+            <img id="char-center" class="character-sprite pos-center" src="" alt="">
+            <img id="char-right" class="character-sprite pos-right" src="" alt="">
+        </div>
+
+        <!-- Glitch Overlay (thriller) -->
+        <div id="glitch-overlay" class="glitch-overlay hidden"></div>
+
+        <!-- Dialogue Box -->
+        <div id="dialogue-box" class="dialogue-box">
+            <div id="speaker-name" class="speaker-name"></div>
+            <div id="dialogue-text" class="dialogue-text"></div>
+            <div id="click-indicator" class="click-indicator">▼</div>
+        </div>
+
+        <!-- Choice Panel -->
+        <div id="choice-panel" class="choice-panel hidden"></div>
+
+        <!-- HUD -->
+        <div id="hud" class="hud">
+            <div id="day-display" class="day-display">Day 1 - Morning</div>
+            <div id="stat-display" class="stat-display hidden"></div>
+        </div>
+
+        <!-- Menu Button -->
+        <button id="btn-menu" class="ingame-menu-btn">MENU</button>
+    </div>
+
+    <!-- ===== Pause Menu ===== -->
+    <div id="pause-menu" class="screen overlay hidden">
+        <div class="pause-container">
+            <button id="btn-save" class="menu-btn">Save</button>
+            <button id="btn-load" class="menu-btn">Load</button>
+            <button id="btn-settings" class="menu-btn">Settings</button>
+            <button id="btn-title" class="menu-btn">Title</button>
+            <button id="btn-resume" class="menu-btn">Resume</button>
+        </div>
+    </div>
+
+    <!-- ===== FreeTalk Screen ===== -->
+    <div id="freetalk-screen" class="screen hidden">
+        <div id="ft-bg-layer" class="bg-layer"></div>
+        <div id="ft-char" class="ft-character"></div>
+        <div id="ft-chat-log" class="ft-chat-log"></div>
+        <div class="ft-input-area">
+            <input type="text" id="ft-input" placeholder="Type a message...">
+            <button id="ft-send" class="ft-send-btn">Send</button>
+        </div>
+        <div id="ft-turns" class="ft-turns"></div>
+    </div>
+
+    <!-- ===== Scripts ===== -->
+    <!-- Language override -->
+    <script>window.__NEVERGRAD_LANG__='en';</script>
+
+    <!-- Config & Data -->
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/prompts.js"></script>
+
+    <!-- Scenario Files -->
+    <script src="../assets/js/scenario/day1_1_morning.js"></script>
+    <script src="../assets/js/scenario/day1_2_lunch.js"></script>
+    <script src="../assets/js/scenario/day1_3_afterschool.js"></script>
+    <script src="../assets/js/scenario/day1_4_night.js"></script>
+    <script src="../assets/js/scenario/day2_1_morning.js"></script>
+    <script src="../assets/js/scenario/day2_2_lunch.js"></script>
+    <script src="../assets/js/scenario/day2_3_afterschool.js"></script>
+    <script src="../assets/js/scenario/day2_4_night.js"></script>
+    <script src="../assets/js/scenario/day3_1_morning.js"></script>
+    <script src="../assets/js/scenario/day3_2_lunch.js"></script>
+    <script src="../assets/js/scenario/day3_3_afterschool.js"></script>
+    <script src="../assets/js/scenario/day3_4_night.js"></script>
+    <script src="../assets/js/scenario/day4_1_morning.js"></script>
+    <script src="../assets/js/scenario/day4_2_lunch.js"></script>
+    <script src="../assets/js/scenario/day4_3_afterschool.js"></script>
+    <script src="../assets/js/scenario/day4_4_night.js"></script>
+    <script src="../assets/js/scenario/day5_1_morning.js"></script>
+    <script src="../assets/js/scenario/day5_2_lunch.js"></script>
+    <script src="../assets/js/scenario/day5_3_afterschool.js"></script>
+    <script src="../assets/js/scenario/day5_4_night.js"></script>
+
+    <!-- Engine Modules -->
+    <script src="../assets/js/modules/StateManager.js"></script>
+    <script src="../assets/js/modules/SaveManager.js"></script>
+    <script src="../assets/js/modules/I18nManager.js"></script>
+    <script src="../assets/js/modules/SceneRenderer.js"></script>
+    <script src="../assets/js/modules/DialogueSystem.js"></script>
+    <script src="../assets/js/modules/ChoiceSystem.js"></script>
+    <script src="../assets/js/modules/FreeTalkSystem.js"></script>
+    <script src="../assets/js/modules/GlitchSystem.js"></script>
+    <script src="../assets/js/modules/GameEngine.js"></script>
+
+    <!-- App Entry -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

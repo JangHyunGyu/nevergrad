@@ -1,279 +1,275 @@
 {
-    "day4_lunch_start": {
-        "name": "Moi",
-        "text": "*L'heure du déjeuner. La place vide de Yuna attire sans cesse mon regard.*"
-    },
-    "day4_lunch_start_2": {
-        "name": "Moi",
-        "text": "*Je ne peux pas croire qu'elle a été 'transférée'. Elle était encore là hier.*"
-    },
-    "day4_lunch_start_3": {
-        "name": "Moi",
-        "text": "*유나. 유나를 찾아야 한다. '갑자기 전학 갔다'는 말, 믿을 수 없다.*"
-    },
-    "day4_lunch_start_4": {
-        "name": "Moi",
-        "text": "*아니면... 보건실. 리인 선생님이 주사기에 옮기던 약품. 그게 뭔지 알아내야 한다.*"
-    },
-    "day4_lunch_start_5": {
-        "name": "Moi",
-        "text": "*옥상도 있다. 어제 설화가 꿈에서 했던 말. 단서가 남아있을지도.*"
-    },
-    "day4_lunch_choice": {
-        "name": "Moi",
-        "text": "*Qu'est-ce que je fais maintenant ?*",
-        "choices": [
-            "Chercher Yuna",
-            "Enquêter à l'infirmerie",
-            "Aller sur le toit"
-        ]
-    },
-    "day4_lunch_search_yuna": {
-        "name": "Moi",
-        "text": "*J'erre dans les couloirs. Les endroits que Yuna fréquentait... la salle du club photo.*"
-    },
-    "day4_lunch_search_2": {
-        "name": "Moi",
-        "text": "*La salle du club photo est ouverte. Personne à l'intérieur.*"
-    },
-    "day4_lunch_search_3": {
-        "name": "Moi",
-        "text": "*Le casier de Yuna. Je l'ouvre. Vide... sauf une chose.*"
-    },
-    "day4_lunch_search_4": {
-        "name": "Moi",
-        "text": "*Un petit appareil photo. Caché dans le coin du casier. Yuna a dû le laisser derrière elle.*"
-    },
-    "day4_lunch_search_5": {
-        "name": "Moi",
-        "text": "*J'ai mis l'appareil dans ma poche. ...Des pas dans le couloir, soudain.*"
-    },
-    "day4_lunch_search_6": {
-        "name": "Moi",
-        "text": "*J'ai regardé en arrière. Quelqu'un se tenait au bout du couloir... puis a disparu. Je suis vite retourné en classe.*"
-    },
-    "day4_lunch_search_7": {
-        "name": "Moi",
-        "text": "*유나의 사물함. 번호가 적힌 스티커가 붙어있었다. '최유나'. 스티커가 반쯤 벗겨져 있다. 누군가 뜯으려고 한 흔적.*"
-    },
-    "day4_lunch_search_8": {
-        "name": "Moi",
-        "text": "*사물함을 열었다. ...텅 비어있다. 가방도, 교과서도, 사진도... 전부 사라져 있다. 마치 처음부터 아무도 쓰지 않은 것처럼.*"
-    },
-    "day4_lunch_search_9": {
-        "name": "Moi",
-        "text": "*깨끗하다. **너무** 깨끗하다. 먼지 하나 없이. 누군가 '정리'한 거다. 유나가 이 사물함에서 사진을 꺼내 보여줬던 게 이틀 전이다. 고양이 사진을 빼곡히 붙여놨던 이 사물함이... 공장 초기화된 것처럼 비어있다.*"
-    },
-    "day4_lunch_search_10": {
-        "name": "Moi",
-        "text": "*...잠깐. 사물함 바닥. 합판이 미세하게 들떠 있다. 손톱으로 끝을 들어올렸다. 이중 바닥.*"
-    },
-    "day4_lunch_search_11": {
-        "name": "Moi",
-        "text": "*틈새에 뭔가 끼워져 있다. 유나의 카메라다. 합판 아래에 일부러 숨겨둔 거다. 사물함을 비운 사람이 바닥까지는 뜯지 않을 거라고 판단한 거지. ...발견할 사람을 위해. 즉, 나를 위해.*"
-    },
-    "day4_lunch_search_12": {
-        "name": "Moi",
-        "text": "*카메라를 켰다. 배터리 표시가 깜빡인다. 거의 바닥이다. 마지막 사진 한 장만 화면에 뜬다.*"
-    },
-    "day4_lunch_search_13": {
-        "name": "Moi",
-        "text": "*...지하로 향하는 계단. 어두운 계단. 구관 건물 어딘가. 보이지 않는 곳.*"
-    },
-    "day4_lunch_search_14": {
-        "name": "Moi",
-        "text": "*사진 구석에 손으로 쓴 글씨가 보인다. '여기 아래 — 유'. 유나가 남긴 마지막 메시지.*"
-    },
-    "day4_lunch_search_15": {
-        "name": "Moi",
-        "text": "*카메라가 꺼졌다. 배터리가 다 된 거다. ...하지만 충분하다.*"
-    },
-    "day4_lunch_search_16": {
-        "name": "Moi",
-        "text": "*유나는 '갑자기 전학 간' 게 아니다. 유나는 뭔가를 발견했고, 그래서 —*"
-    },
-    "day4_lunch_search_17": {
-        "name": "Moi",
-        "text": "*...지하. 이 학교 어딘가에 지하실이 있다.*"
-    },
-    "day4_lunch_nurse": {
-        "name": "Infirmière",
-        "text": "\"Oh, {name}. Encore toi. Qu'est-ce qui te fait mal aujourd'hui ?\""
-    },
-    "day4_lunch_nurse_2": {
-        "name": "Moi",
-        "text": "*Une armoire verrouillée dans le coin de l'infirmerie. Elle a un cadenas qui n'était pas là avant.*"
-    },
-    "day4_lunch_nurse_3": {
-        "name": "Infirmière",
-        "text": "\"Comment c'était, la boisson d'hier ? ...Tu dors bien ?\""
-    },
-    "day4_lunch_nurse_4": {
-        "name": "Moi",
-        "text": "*Est-ce que je demande à Riin pour Yuna ?*",
-        "choices": [
-            "Demander où est passée Yuna",
-            "Ne rien dire"
-        ]
-    },
-    "day4_lunch_nurse_5": {
-        "name": "Moi",
-        "text": "*투명한 액체. 주사기 눈금이 정확히 맞춰져 있다. 익숙한 동작.*"
-    },
-    "day4_lunch_nurse_6": {
-        "name": "Moi",
-        "text": "*...나를 보고 멈춘다. 어깨가 굳는 게 보인다.*"
-    },
-    "day4_lunch_nurse_7": {
-        "name": "Kang Riin",
-        "text": "\"...놀랐잖아. 노크 좀.\""
-    },
-    "day4_lunch_nurse_8": {
-        "name": "Moi",
-        "text": "*주사기를 재빨리 서랍에 넣는다. 웃는다. 하지만 손이 떨리고 있다.*"
-    },
-    "day4_lunch_nurse_9": {
-        "name": "Kang Riin",
-        "text": "\"무슨 일이야? 점심시간인데.\""
-    },
-    "day4_lunch_nurse_10": {
-        "name": "Moi",
-        "text": "\"...그냥 좀 머리가 아파서.\""
-    },
-    "day4_lunch_nurse_11": {
-        "name": "Moi",
-        "text": "*리인 선생님이 다가온다. 이마에 손을 대려고 한다. ...이 손으로 방금 주사기를 잡고 있었다. 그 주사기에 뭘 넣은 거지?*"
-    },
-    "day4_lunch_nurse_timer": {
-        "name": "Kang Riin",
-        "text": "\"열은 없네. 어제 마신 음료 효과는 어때? ...잘 자고 있어?\"",
-        "choices": [
-            "유나에 대해 묻는다",
-            "아무 말 하지 않는다"
-        ]
-    },
-    "day4_lunch_nurse_ask": {
-        "name": "Moi",
-        "text": "\"유나가... 갑자기 전학 갔다고 들었는데. 어젯밤에요.\""
-    },
-    "day4_lunch_nurse_ask_2": {
-        "name": "Moi",
-        "text": "*리인 선생님의 표정이 미세하게 변했다. 0.3초. 아주 짧게.*"
-    },
-    "day4_lunch_nurse_ask_3": {
-        "name": "Kang Riin",
-        "text": "\"...유나? 아, 최유나. 그랬구나. 갑자기였네.\""
-    },
-    "day4_lunch_nurse_ask_4": {
-        "name": "Moi",
-        "text": "\"혹시 유나가 어제 보건실에 온 적 있어요?\""
-    },
-    "day4_lunch_nurse_ask_5": {
-        "name": "Kang Riin",
-        "text": "\"...\""
-    },
-    "day4_lunch_nurse_ask_6": {
-        "name": "Moi",
-        "text": "*리인 선생님이 나를 본다. 웃고 있지만, 눈이 웃고 있지 않다.*"
-    },
-    "day4_lunch_nurse_ask_7": {
-        "name": "Kang Riin",
-        "text": "\"...왜 그렇게 쳐다봐? {name}, 너 혹시 무슨 이상한 생각 하고 있는 건 아니지?\""
-    },
-    "day4_lunch_nurse_ask_8": {
-        "name": "Moi",
-        "text": "*목소리가 차가워졌다. 순간적으로. 다시 부드러워진다.*"
-    },
-    "day4_lunch_nurse_ask_9": {
-        "name": "Kang Riin",
-        "text": "\"유나는 괜찮을 거야. 원래 학교로 돌아갔으니까. 걱정할 거 없어.\""
-    },
-    "day4_lunch_nurse_ask_10": {
-        "name": "Moi",
-        "text": "*'걱정할 거 없다.' 은수 선생님도 같은 말을 했다. 세아도. 리인 선생님의 손이 또 떨리고 있다. ...캐비넷을 닫는 손. 약병이 안에서 부딪히며 달그락거린다. 이 사람도 뭔가와 싸우고 있는 건가? 아니면... 나를 관찰하고 있는 건가?*"
-    },
-    "day4_lunch_nurse_silent": {
-        "name": "Moi",
-        "text": "*아무 말 하지 않았다. 리인 선생님이 나를 가만히 바라본다.*"
-    },
-    "day4_lunch_nurse_silent_2": {
-        "name": "Kang Riin",
-        "text": "\"...약 줄까? 두통약.\""
-    },
-    "day4_lunch_nurse_silent_3": {
-        "name": "Moi",
-        "text": "*선생님이 서랍에서 약을 꺼낸다. 흰 알약 두 알. ...이걸 먹어도 되는 걸까? 설화가 말했다. '약을 줬어. 기억을 지우는 약.'*"
-    },
-    "day4_lunch_nurse_silent_4": {
-        "name": "Moi",
-        "text": "\"괜찮아요. 좀 쉬면 나을 것 같아요.\""
-    },
-    "day4_lunch_nurse_silent_5": {
-        "name": "Kang Riin",
-        "text": "\"...그래.\""
-    },
-    "day4_lunch_nurse_silent_6": {
-        "name": "Moi",
-        "text": "*리인 선생님이 약을 다시 서랍에 넣는다. 그 서랍 안에 아까 넣은 주사기가 보인다. 눈을 돌렸다. 못 본 척했다. ...심장이 너무 빨리 뛴다.*"
-    },
-    "day4_lunch_rooftop": {
-        "name": "Moi",
-        "text": "*Le toit. Là où j'étais avec Yuna hier. Le vent est froid.*"
-    },
-    "day4_lunch_rooftop_2": {
-        "name": "Moi",
-        "text": "*Quelque chose est gravé sous la rambarde. Des lettres grattées, comme avec un couteau.*"
-    },
-    "day4_lunch_rooftop_3": {
-        "name": "Moi",
-        "text": "*'Il n'y a qu'une seule sortie. — Lee Seolhwa' ...Seolhwa a laissé ça.*"
-    },
-    "day4_lunch_rooftop_4": {
-        "name": "Moi",
-        "text": "*...Une seule sortie ? Quelle sortie ?*"
-    },
-    "day4_lunch_rooftop_5": {
-        "name": "Moi",
-        "text": "*Soudain froid. Je redescends vite.*"
-    },
-    "day4_lunch_rooftop_6": {
-        "name": "Moi",
-        "text": "*난간 밑에 뭔가 새겨져 있다. 칼로 긁은 듯한 글씨. 녹이 슬어 있다. 오래된 것 같다. '여기서 나가는 방법은 하나. — 이설화'*"
-    },
-    "day4_lunch_rooftop_7": {
-        "name": "Moi",
-        "text": "*...설화가 새긴 거다. 1년 전에. 손가락으로 글씨를 따라가 봤다. 깊게 팠다. 힘을 줘서 새긴 거다. 절박하게.*"
-    },
-    "day4_lunch_rooftop_8": {
-        "name": "Moi",
-        "text": "*'나가는 방법은 하나.' ...뭘까. 탈출? 아니면... 그 아래에 더 작은 글씨가 있다. 거의 보이지 않을 만큼 작게. '지하에 답이 있어'*"
-    },
-    "day4_lunch_rooftop_9": {
-        "name": "Moi",
-        "text": "*지하. 유나의 카메라에도 지하로 가는 계단이 찍혀있었다.*"
-    },
-    "day4_lunch_rooftop_10": {
-        "name": "Moi",
-        "text": "*옥상 바닥에 벚꽃잎이 하나 떨어져 있다. 바람에 살짝 흔들린다. ...지금은 벚꽃 계절이 아닌데. 3일차 아침 복도에서도 이걸 봤다.*"
-    },
-    "day4_lunch_rooftop_11": {
-        "name": "Moi",
-        "text": "*설화의 흔적. 설화가 여기에 있었다는 증거. 모든 게 지워져도... 이건 남아있다. 벚꽃잎을 주머니에 넣었다. ...가져가야 할 것 같아서.*"
-    },
-    "day4_lunch_rooftop_12": {
-        "name": "Moi",
-        "text": "*...지하. 방과후에 찾아야 한다. 유나가 사진으로 남긴 그 계단을.*"
-    },
-    "day4_lunch_rooftop_13": {
-        "name": "Moi",
-        "text": "*서둘러 내려간다.*"
-    },
-    "day4_lunch_ghost": {
-        "name": "",
-        "text": "**\"지하\"**"
-    },
-    "day4_lunch_end": {
-        "name": "Moi",
-        "text": "*Les cours de l'après-midi commencent. J'ai l'impression que mon cœur va exploser.*"
-    }
+  "day4_lunch_start": {
+    "name": "Moi",
+    "text": "*La cloche du déjeuner sonne.*"
+  },
+  "day4_lunch_start_2": {
+    "name": "Moi",
+    "text": "*...Je n'ai pas d'appétit. Mon estomac est noué.*"
+  },
+  "day4_lunch_start_3": {
+    "name": "Moi",
+    "text": "*Yuna. Je dois retrouver Yuna. Je ne peux pas croire qu'elle 'ait changé de lycée soudainement'.*"
+  },
+  "day4_lunch_start_4": {
+    "name": "Moi",
+    "text": "*Ou... l'infirmerie. Le médicament de Riin. Je dois découvrir ce que c'est.*"
+  },
+  "day4_lunch_start_5": {
+    "name": "Moi",
+    "text": "*Il y a aussi le toit. Ce que Seolhwa a dit dans le rêve. Il pourrait y avoir des indices là-haut.*"
+  },
+  "day4_lunch_choice": {
+    "name": "Moi",
+    "text": "*Je n'ai que la pause déjeuner. Je dois aller vite.*",
+    "choices": [
+      "Chercher Yuna",
+      "Fouiller l'infirmerie",
+      "Monter sur le toit"
+    ]
+  },
+  "day4_lunch_search_yuna": {
+    "name": "Moi",
+    "text": "*La salle du club photo est au bout du deuxième étage du bâtiment ancien. Le couloir est vide pendant le déjeuner.*"
+  },
+  "day4_lunch_search_2": {
+    "name": "Moi",
+    "text": "*...Non, ce n'est pas 'vide'. J'évite les gens. Je ne peux pas me laisser voir par Sea ou Madame Eunsu.*"
+  },
+  "day4_lunch_search_3": {
+    "name": "Moi",
+    "text": "*J'ai étouffé mes pas en marchant. Mon cœur bat fort. Ça n'a rien d'inhabituel... alors pourquoi suis-je aussi tendu ?*"
+  },
+  "day4_lunch_search_4": {
+    "name": "Moi",
+    "text": "*...Parce que ça n'a rien d'ordinaire.*"
+  },
+  "day4_lunch_search_5": {
+    "name": "Moi",
+    "text": "*J'arrive devant la porte de la salle du club photo. Elle est fermée. Je tourne la poignée. ...Elle s'ouvre.*"
+  },
+  "day4_lunch_search_6": {
+    "name": "Moi",
+    "text": "*J'entre. Une légère odeur de chambre noire. L'odeur acide du révélateur et du bain d'arrêt.*"
+  },
+  "day4_lunch_search_7": {
+    "name": "Moi",
+    "text": "*Le casier de Yuna. Un autocollant avec son numéro y était collé. 'Choi Yuna'. L'autocollant est à moitié décollé. Des traces de quelqu'un qui a essayé de l'arracher.*"
+  },
+  "day4_lunch_search_8": {
+    "name": "Moi",
+    "text": "*J'ouvre le casier. ...Vide. Pas de sac, pas de manuels, pas de photos... Tout disparu. Comme si personne ne l'avait jamais utilisé.*"
+  },
+  "day4_lunch_search_9": {
+    "name": "Moi",
+    "text": "*C'est propre. **Trop** propre. Pas un grain de poussière. Quelqu'un a 'nettoyé' ça. Il y a deux jours Yuna me montrait des photos depuis ce casier. Ce casier couvert de photos de chat... vide comme réinitialisé en usine.*"
+  },
+  "day4_lunch_search_10": {
+    "name": "Moi",
+    "text": "*...Attendez. Le fond du casier. Le panneau est très légèrement soulevé. J'ai forcé le bord avec l'ongle. Un double fond.*"
+  },
+  "day4_lunch_search_11": {
+    "name": "Moi",
+    "text": "*Quelque chose glissé dans l'interstice. C'est l'appareil photo de Yuna. Délibérément caché sous le panneau. Elle a calculé que celui qui avait vidé le casier ne forcerait pas le fond. ...Laissé pour que quelqu'un le trouve. Pour moi.*"
+  },
+  "day4_lunch_search_12": {
+    "name": "Moi",
+    "text": "*J'allume l'appareil. L'indicateur de batterie clignote. Presque vide. Une seule dernière photo apparaît à l'écran.*"
+  },
+  "day4_lunch_search_13": {
+    "name": "Moi",
+    "text": "*...Des escaliers qui descendent sous terre. Des escaliers sombres. Quelque part dans le bâtiment ancien. Un endroit qu'on ne voit pas.*"
+  },
+  "day4_lunch_search_14": {
+    "name": "Moi",
+    "text": "*Dans le coin de la photo il y a une écriture à la main. 'En dessous — Yu.' Le dernier message de Yuna.*"
+  },
+  "day4_lunch_search_15": {
+    "name": "Moi",
+    "text": "*L'appareil s'éteint. Batterie morte. ...Mais c'est suffisant.*"
+  },
+  "day4_lunch_search_16": {
+    "name": "Moi",
+    "text": "*Yuna n'a pas 'changé de lycée soudainement'. Yuna a découvert quelque chose, et alors —*"
+  },
+  "day4_lunch_search_17": {
+    "name": "Moi",
+    "text": "*...Le sous-sol. Quelque part dans ce lycée il y a un sous-sol.*"
+  },
+  "day4_lunch_nurse": {
+    "name": "Moi",
+    "text": "*Je me tiens devant l'infirmerie. J'entends le tintement du verre à l'intérieur. Le bruit de flacons de médicaments qu'on trie.*"
+  },
+  "day4_lunch_nurse_2": {
+    "name": "Moi",
+    "text": "*...Inspiration profonde. C'est bon. Je vais juste entrer normalement.*"
+  },
+  "day4_lunch_nurse_3": {
+    "name": "Moi",
+    "text": "*J'ouvre la porte.*"
+  },
+  "day4_lunch_nurse_4": {
+    "name": "Moi",
+    "text": "*L'infirmière Riin se tient devant l'armoire à médicaments. Elle m'est dos. Elle transvase quelque chose dans une seringue.*"
+  },
+  "day4_lunch_nurse_5": {
+    "name": "Moi",
+    "text": "*Un liquide transparent. Les graduations de la seringue sont calibrées avec précision. Des gestes entraînés.*"
+  },
+  "day4_lunch_nurse_6": {
+    "name": "Moi",
+    "text": "*...Elle s'arrête en me voyant. Ses épaules se raidissent visiblement.*"
+  },
+  "day4_lunch_nurse_7": {
+    "name": "Riin",
+    "text": "\"...Tu m'as fait peur. Frappe avant d'entrer.\""
+  },
+  "day4_lunch_nurse_8": {
+    "name": "Moi",
+    "text": "*Elle range rapidement la seringue dans un tiroir. Sourit. Mais ses mains tremblent.*"
+  },
+  "day4_lunch_nurse_9": {
+    "name": "Riin",
+    "text": "\"Qu'est-ce qui t'amène ? C'est l'heure du déjeuner.\""
+  },
+  "day4_lunch_nurse_10": {
+    "name": "Moi",
+    "text": "\"...J'ai un peu mal à la tête.\""
+  },
+  "day4_lunch_nurse_11": {
+    "name": "Moi",
+    "text": "*L'infirmière Riin s'approche. Elle est sur le point de poser la main sur mon front. ...Cette main tenait juste la seringue. Qu'est-ce qu'elle y mettait ?*"
+  },
+  "day4_lunch_nurse_timer": {
+    "name": "Riin",
+    "text": "\"Pas de fièvre. Comment s'est passée la boisson d'hier ? ...Tu dors bien ?\"",
+    "choices": [
+      "Demander à propos de Yuna",
+      "Ne rien dire"
+    ]
+  },
+  "day4_lunch_nurse_ask": {
+    "name": "Moi",
+    "text": "\"J'ai entendu dire que Yuna... avait changé de lycée subitement. Hier soir.\""
+  },
+  "day4_lunch_nurse_ask_2": {
+    "name": "Moi",
+    "text": "*L'expression de l'infirmière Riin s'est très légèrement modifiée. 0,3 secondes. Très brièvement.*"
+  },
+  "day4_lunch_nurse_ask_3": {
+    "name": "Riin",
+    "text": "\"...Yuna ? Oh, Choi Yuna. Je vois. C'était soudain.\""
+  },
+  "day4_lunch_nurse_ask_4": {
+    "name": "Moi",
+    "text": "\"Yuna est passée à l'infirmerie hier ?\""
+  },
+  "day4_lunch_nurse_ask_5": {
+    "name": "Riin",
+    "text": "\"...\""
+  },
+  "day4_lunch_nurse_ask_6": {
+    "name": "Moi",
+    "text": "*L'infirmière Riin me regarde. Elle sourit, mais ses yeux ne sourient pas.*"
+  },
+  "day4_lunch_nurse_ask_7": {
+    "name": "Riin",
+    "text": "\"...Pourquoi tu me regardes comme ça ? {name}, tu n'as pas des pensées bizarres, j'espère ?\""
+  },
+  "day4_lunch_nurse_ask_8": {
+    "name": "Moi",
+    "text": "*Sa voix s'est glacée. Juste un instant. Puis s'est radoucie à nouveau.*"
+  },
+  "day4_lunch_nurse_ask_9": {
+    "name": "Riin",
+    "text": "\"Yuna va bien. Elle est retournée dans son lycée d'origine. Il n'y a rien à s'inquiéter.\""
+  },
+  "day4_lunch_nurse_ask_10": {
+    "name": "Moi",
+    "text": "*'Il n'y a rien à s'inquiéter.' Madame Eunsu a dit la même chose. Sea aussi. La main de l'infirmière Riin tremble à nouveau. ...La main qui ferme l'armoire. Les flacons de médicaments tintent à l'intérieur. Cette personne se bat-elle aussi contre quelque chose ? Ou... est-ce qu'elle m'observe ?*"
+  },
+  "day4_lunch_nurse_silent": {
+    "name": "Moi",
+    "text": "*Je ne dis rien. L'infirmière Riin m'observe en silence.*"
+  },
+  "day4_lunch_nurse_silent_2": {
+    "name": "Riin",
+    "text": "\"...Je te donne un médicament ? Pour le mal de tête.\""
+  },
+  "day4_lunch_nurse_silent_3": {
+    "name": "Moi",
+    "text": "*La prof sort des médicaments d'un tiroir. Deux pilules blanches. ...Est-ce que je les prends ? Seolhwa a dit : 'Ils m'ont donné un médicament. Un médicament pour effacer les souvenirs.'*"
+  },
+  "day4_lunch_nurse_silent_4": {
+    "name": "Moi",
+    "text": "\"Ça ira. Je crois que je vais mieux avec du repos.\""
+  },
+  "day4_lunch_nurse_silent_5": {
+    "name": "Riin",
+    "text": "\"...D'accord.\""
+  },
+  "day4_lunch_nurse_silent_6": {
+    "name": "Moi",
+    "text": "*L'infirmière Riin remet le médicament dans le tiroir. Je vois la seringue qu'elle y a rangée tout à l'heure. J'ai détourné le regard. Fait semblant de ne pas avoir vu. ...Mon cœur bat trop vite.*"
+  },
+  "day4_lunch_rooftop": {
+    "name": "Moi",
+    "text": "*Je pousse la porte du toit. ...Elle s'ouvre. Hier elle était fermée à clé.*"
+  },
+  "day4_lunch_rooftop_2": {
+    "name": "Moi",
+    "text": "*Le vent souffle fort. Mes cheveux volent. Le ciel est d'un gris terne.*"
+  },
+  "day4_lunch_rooftop_3": {
+    "name": "Moi",
+    "text": "*Personne sur le toit. Même pendant le déjeuner. ...Est-ce qu'il y avait habituellement des élèves qui montaient ici ?*"
+  },
+  "day4_lunch_rooftop_4": {
+    "name": "Moi",
+    "text": "*Je marche vers la rambarde. On voit le terrain du lycée en bas. Des élèves déjeunent. Ils sourient. Tous avec le même sourire.*"
+  },
+  "day4_lunch_rooftop_5": {
+    "name": "Moi",
+    "text": "*...Vus d'en bas, pourraient-ils me voir ? Si je faisais signe de la main d'ici, quelqu'un me verrait-il vraiment ?*"
+  },
+  "day4_lunch_rooftop_6": {
+    "name": "Moi",
+    "text": "*Quelque chose est gravé sous la rambarde. Des lettres griffées comme avec un couteau. Rouillées. Ça a l'air vieux. 'Il n'y a qu'une seule sortie. — Lee Seolhwa'*"
+  },
+  "day4_lunch_rooftop_7": {
+    "name": "Moi",
+    "text": "*...Seolhwa a gravé ça. Il y a un an. J'ai tracé les lettres du doigt. Elle a creusé profond. Avec force. Désespérément.*"
+  },
+  "day4_lunch_rooftop_8": {
+    "name": "Moi",
+    "text": "*'Une seule sortie.' ...Laquelle ? L'évasion ? Ou... Il y a une écriture encore plus petite en dessous. À peine visible. 'La réponse est dans le sous-sol'*"
+  },
+  "day4_lunch_rooftop_9": {
+    "name": "Moi",
+    "text": "*Le sous-sol. L'appareil photo de Yuna avait aussi des escaliers menant sous terre sur la photo.*"
+  },
+  "day4_lunch_rooftop_10": {
+    "name": "Moi",
+    "text": "*Sur le sol du toit il y a un seul pétale de cerisier. Il frémir légèrement dans la brise. ...Ce n'est pas la saison des cerisiers maintenant. Je l'ai aussi vu dans le couloir le matin du jour 3.*"
+  },
+  "day4_lunch_rooftop_11": {
+    "name": "Moi",
+    "text": "*Les traces de Seolhwa. La preuve que Seolhwa était là. Même quand tout le reste est effacé... ça reste. Je mets le pétale de cerisier dans ma poche. ...J'avais l'impression de devoir l'emporter.*"
+  },
+  "day4_lunch_rooftop_12": {
+    "name": "Moi",
+    "text": "*...Le sous-sol. Je dois le trouver après les cours. Ces escaliers que Yuna a photographiés.*"
+  },
+  "day4_lunch_rooftop_13": {
+    "name": "Moi",
+    "text": "*Je redescends en hâte.*"
+  },
+  "day4_lunch_ghost": {
+    "name": "",
+    "text": "**\"Sous-sol\"**"
+  },
+  "day4_lunch_end": {
+    "name": "Moi",
+    "text": "*Les cours de l'après-midi commencent. Mon cœur semble sur le point d'éclater.*"
+  }
 }

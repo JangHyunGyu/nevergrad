@@ -1,279 +1,275 @@
 {
   "day4_lunch_start": {
     "name": "私",
-    "text": "*昼休み。ユナの空いた席がずっと目に焼きつく。*"
+    "text": "*昼の鐘が鳴った。*"
   },
   "day4_lunch_start_2": {
     "name": "私",
-    "text": "*『転校した』なんて信じられない。昨日までここにいたのに。*"
+    "text": "*……食欲がない。胃が縮んでいる。*"
   },
   "day4_lunch_start_3": {
     "name": "私",
-    "text": "*Yuna. I need to find Yuna. I can't believe 'she suddenly transferred.'*"
+    "text": "*ユナ。ユナを探さなければ。「突然転校した」なんて信じられない。*"
   },
   "day4_lunch_start_4": {
     "name": "私",
-    "text": "*Or... the nurse's office. Riin's medicine. I need to find out what it is.*"
+    "text": "*あるいは……保健室。リインの薬。何なのか調べなければ。*"
   },
   "day4_lunch_start_5": {
     "name": "私",
-    "text": "*There's also the rooftop. What Seolhwa said in the dream. There might be clues there.*"
+    "text": "*それに屋上。夢の中でソルファが言ったことも。そこに手がかりがあるかもしれない。*"
   },
   "day4_lunch_choice": {
     "name": "私",
-    "text": "*今、何をすべきだ？*",
+    "text": "*昼休みしかない。急がなければ。*",
     "choices": [
       "ユナを探す",
       "保健室を調べる",
-      "屋上へ行く"
+      "屋上に行く"
     ]
   },
   "day4_lunch_search_yuna": {
     "name": "私",
-    "text": "*廊下を歩き回る。ユナがよく行っていた場所……写真部の教室。*"
+    "text": "*写真部の部室は旧校舎の2階の端にある。昼休みは廊下が空いている。*"
   },
   "day4_lunch_search_2": {
     "name": "私",
-    "text": "*写真部の教室のドアが開いている。中には誰もいない。*"
+    "text": "*……いや、「空いている」じゃない。人を避けているんだ。セアにもウンス先生にも見られてはいけない。*"
   },
   "day4_lunch_search_3": {
     "name": "私",
-    "text": "*ユナのロッカー。開けてみた。空っぽだ……一つを除いて。*"
+    "text": "*足音を殺して歩いた。心臓が鳴っている。これは普通のことじゃないのに……なんでこんなに緊張しているんだろう。*"
   },
   "day4_lunch_search_4": {
     "name": "私",
-    "text": "*小型カメラが一台。ロッカーの隅に隠されていた。ユナが残したものに違いない。*"
+    "text": "*……普通のことじゃないからだ。*"
   },
   "day4_lunch_search_5": {
     "name": "私",
-    "text": "*カメラをポケットに入れた。……突然、廊下から足音が。*"
+    "text": "*写真部の部室のドアに辿り着いた。閉まっている。ノブを回した。……開く。*"
   },
   "day4_lunch_search_6": {
     "name": "私",
-    "text": "*振り返った。廊下の奥に誰かが立っていて……消えた。急いで教室に戻る。*"
+    "text": "*中に入った。薄い暗室の匂い。現像液と停止液の酸っぱい匂い。*"
   },
   "day4_lunch_search_7": {
     "name": "私",
-    "text": "*Yuna's locker. A sticker with her number was on it. 'Choi Yuna.' The sticker is half peeled off. Signs someone tried to pull it off.*"
+    "text": "*ユナのロッカー。番号のシールが貼ってある。「チェ・ユナ」。シールが半分剥がれかかっている。誰かが引き剥がそうとした痕跡。*"
   },
   "day4_lunch_search_8": {
     "name": "私",
-    "text": "*I opened the locker. ...Empty. No bag, no textbooks, no photos... All gone. As if nobody had ever used it.*"
+    "text": "*ロッカーを開けた。……空っぽ。バッグも教科書も写真も……全部消えている。誰も使っていなかったかのように。*"
   },
   "day4_lunch_search_9": {
     "name": "私",
-    "text": "*It's clean. **Too** clean. Not a speck of dust. Someone 'tidied' this. Two days ago Yuna was showing me photos from this locker. This locker that was covered in cat photos... empty like it was factory reset.*"
+    "text": "*きれいすぎる。**きれいすぎる。**埃一つない。誰かが「整理した」んだ。二日前ユナはこのロッカーから写真を見せてくれた。猫の写真でいっぱいだったこのロッカーが……工場出荷時のようにリセットされている。*"
   },
   "day4_lunch_search_10": {
     "name": "私",
-    "text": "*...Wait. The floor of the locker. The panel is very slightly lifted. I pried up the edge with my fingernail. A false bottom.*"
+    "text": "*……待って。ロッカーの床。パネルがほんの少し浮いている。爪で端を引っかけた。二重底だ。*"
   },
   "day4_lunch_search_11": {
     "name": "私",
-    "text": "*Something wedged in the gap. It's Yuna's camera. Deliberately hidden under the panel. She calculated that whoever emptied the locker wouldn't pry up the floor. ...Left for someone to find. For me.*"
+    "text": "*隙間に何かが挟まっている。ユナのカメラだ。意図的に底板の下に隠してあった。ロッカーを空にした人間が底を引っかけるとは思わないと計算して。……誰かが見つけるために残した。私のために。*"
   },
   "day4_lunch_search_12": {
     "name": "私",
-    "text": "*I turned on the camera. The battery indicator blinks. Nearly empty. Only one last photo appears on the screen.*"
+    "text": "*カメラの電源を入れた。バッテリーインジケーターが点滅している。残量わずか。最後の一枚だけが画面に映った。*"
   },
   "day4_lunch_search_13": {
     "name": "私",
-    "text": "*...Stairs heading underground. Dark stairs. Somewhere in the old building. A place you can't see.*"
+    "text": "*……地下へ続く階段。暗い階段。旧校舎のどこか。見えない場所。*"
   },
   "day4_lunch_search_14": {
     "name": "私",
-    "text": "*In the corner of the photo there's handwriting. 'Under here — Yu.' Yuna's final message.*"
+    "text": "*写真の隅に手書きの文字がある。「ここの下——ユ」。ユナの最後のメッセージ。*"
   },
   "day4_lunch_search_15": {
     "name": "私",
-    "text": "*The camera shut off. Battery dead. ...But it's enough.*"
+    "text": "*カメラが切れた。電池切れ。……でも十分だ。*"
   },
   "day4_lunch_search_16": {
     "name": "私",
-    "text": "*Yuna didn't 'suddenly transfer.' Yuna found something, and so —*"
+    "text": "*ユナは「突然転校した」んじゃない。ユナは何かを見つけて、だから——*"
   },
   "day4_lunch_search_17": {
     "name": "私",
-    "text": "*...The basement. Somewhere in this school there's a basement.*"
+    "text": "*……地下。この学校のどこかに地下室がある。*"
   },
   "day4_lunch_nurse": {
-    "name": "保健教師",
-    "text": "\"あら、{name}。また来たのね。今日はどこが具合悪いの？\""
+    "name": "私",
+    "text": "*保健室の外に立った。中からガラスのぶつかる音がする。薬の瓶を整理している音だ。*"
   },
   "day4_lunch_nurse_2": {
     "name": "私",
-    "text": "*保健室の片隅に施錠されたキャビネットが見える。以前はなかった南京錠がかかっている。*"
+    "text": "*……深呼吸。大丈夫。普通に入るだけだ。*"
   },
   "day4_lunch_nurse_3": {
-    "name": "保健教師",
-    "text": "\"昨日飲んだドリンクの効果はどう？ ……よく眠れてる？\""
+    "name": "私",
+    "text": "*ドアを開けた。*"
   },
   "day4_lunch_nurse_4": {
     "name": "私",
-    "text": "*リインにユナのことを聞いてみようか？*",
-    "choices": [
-      "ユナがどこに行ったか聞く",
-      "何も言わない"
-    ]
+    "text": "*リイン先生が薬品棚の前に立っている。背中を向けている。何かを注射器に移している。*"
   },
   "day4_lunch_nurse_5": {
     "name": "私",
-    "text": "*A transparent liquid. The syringe graduations are precisely calibrated. Practiced movements.*"
+    "text": "*透明な液体。注射器の目盛りが正確に合わせられている。慣れた動き。*"
   },
   "day4_lunch_nurse_6": {
     "name": "私",
-    "text": "*...She stops when she sees me. Her shoulders visibly stiffen.*"
+    "text": "*……私に気づいて止まった。肩が目に見えて強張った。*"
   },
   "day4_lunch_nurse_7": {
-    "name": "カン・リイン",
-    "text": "\"...You startled me. Knock, please.\""
+    "name": "リイン",
+    "text": "\"……びっくりした。ノックしてね。\""
   },
   "day4_lunch_nurse_8": {
     "name": "私",
-    "text": "*She quickly puts the syringe in a drawer. Smiles. But her hands are trembling.*"
+    "text": "*注射器をすぐ引き出しにしまった。微笑む。でも手が震えている。*"
   },
   "day4_lunch_nurse_9": {
-    "name": "カン・リイン",
-    "text": "\"What brings you here? It's lunchtime.\""
+    "name": "リイン",
+    "text": "\"何かあったの？昼休みに。\""
   },
   "day4_lunch_nurse_10": {
     "name": "私",
-    "text": "\"...My head hurts a little.\""
+    "text": "\"……少し頭が痛くて。\""
   },
   "day4_lunch_nurse_11": {
     "name": "私",
-    "text": "*Nurse Riin approaches. She's about to put her hand on my forehead. ...This hand was just holding the syringe. What was she putting in that syringe?*"
+    "text": "*リイン先生が近づいてくる。額に手を当てようとしている。……その手は今まさに注射器を持っていた。注射器に入っていたのは何だったんだろう。*"
   },
   "day4_lunch_nurse_timer": {
-    "name": "カン・リイン",
-    "text": "\"No fever. How was the drink you had yesterday? ...Sleeping well?\"",
+    "name": "リイン",
+    "text": "\"熱はないわね。昨日飲んだドリンクはどうだった？……ちゃんと眠れてる？\"",
     "choices": [
-      "Ask about Yuna",
-      "Say nothing"
+      "ユナのことを聞く",
+      "何も言わない"
     ]
   },
   "day4_lunch_nurse_ask": {
     "name": "私",
-    "text": "\"I heard Yuna... transferred suddenly. Last night.\""
+    "text": "\"ユナが……昨夜突然転校したって聞いたんですけど。\""
   },
   "day4_lunch_nurse_ask_2": {
     "name": "私",
-    "text": "*Nurse Riin's expression shifted very slightly. 0.3 seconds. Very briefly.*"
+    "text": "*リイン先生の表情がほんの少しだけ動いた。0.3秒。ごくわずかな間。*"
   },
   "day4_lunch_nurse_ask_3": {
-    "name": "カン・リイン",
-    "text": "\"...Yuna? Oh, Choi Yuna. I see. That was sudden.\""
+    "name": "リイン",
+    "text": "\"……ユナ？ああ、チェ・ユナ。そうなの。突然だったわね。\""
   },
   "day4_lunch_nurse_ask_4": {
     "name": "私",
-    "text": "\"Did Yuna come by the nurse's office yesterday?\""
+    "text": "\"昨日ユナが保健室に来ましたか？\""
   },
   "day4_lunch_nurse_ask_5": {
-    "name": "カン・リイン",
-    "text": "\"...\""
+    "name": "リイン",
+    "text": "\"……\""
   },
   "day4_lunch_nurse_ask_6": {
     "name": "私",
-    "text": "*Nurse Riin looks at me. She's smiling, but her eyes aren't.*"
+    "text": "*リイン先生が私を見た。笑顔だけど目が笑っていない。*"
   },
   "day4_lunch_nurse_ask_7": {
-    "name": "カン・リイン",
-    "text": "\"...Why are you staring like that? {name}, you're not having strange thoughts, are you?\""
+    "name": "リイン",
+    "text": "\"……そんな目で見てどうしたの？{name}、変なことを考えてないわよね？\""
   },
   "day4_lunch_nurse_ask_8": {
     "name": "私",
-    "text": "*Her voice went cold. Just for a moment. Then softened again.*"
+    "text": "*声が一瞬冷たくなった。それからすぐ柔らかくなった。*"
   },
   "day4_lunch_nurse_ask_9": {
-    "name": "カン・リイン",
-    "text": "\"Yuna will be fine. She went back to her original school. There's nothing to worry about.\""
+    "name": "リイン",
+    "text": "\"ユナは大丈夫よ。元の学校に帰ったんだから。心配しなくていい。\""
   },
   "day4_lunch_nurse_ask_10": {
     "name": "私",
-    "text": "*'Nothing to worry about.' Ms. Eunsu said the same thing. So did Sea. Nurse Riin's hand is trembling again. ...The hand closing the cabinet. Medicine bottles clink inside. Is this person also fighting something? Or... is she observing me?*"
+    "text": "*「心配しなくていい」。ウンス先生も同じことを言っていた。セアも。リイン先生の手がまた震えている。……棚を閉める手。中で薬の瓶がぶつかっている。この人も何かと戦っているのか？それとも……私を観察しているのか。*"
   },
   "day4_lunch_nurse_silent": {
     "name": "私",
-    "text": "*I said nothing. Nurse Riin watches me quietly.*"
+    "text": "*何も言わなかった。リイン先生が静かに私を見ている。*"
   },
   "day4_lunch_nurse_silent_2": {
-    "name": "カン・リイン",
-    "text": "\"...Should I give you medicine? For the headache.\""
+    "name": "リイン",
+    "text": "\"……薬を飲む？頭痛に。\""
   },
   "day4_lunch_nurse_silent_3": {
     "name": "私",
-    "text": "*The teacher takes medicine out of a drawer. Two white pills. ...Should I take these? Seolhwa said: 'They gave medicine. Medicine to erase memories.'*"
+    "text": "*先生が引き出しから薬を出した。白い錠剤が二つ。……飲んでいいのか？ソルファが言っていた。「薬を飲まされた。記憶を消す薬を」。*"
   },
   "day4_lunch_nurse_silent_4": {
     "name": "私",
-    "text": "\"It's fine. I think I'll get better with some rest.\""
+    "text": "\"大丈夫です。少し休めばよくなると思うので。\""
   },
   "day4_lunch_nurse_silent_5": {
-    "name": "カン・リイン",
-    "text": "\"...Alright.\""
+    "name": "リイン",
+    "text": "\"……そう。\""
   },
   "day4_lunch_nurse_silent_6": {
     "name": "私",
-    "text": "*Nurse Riin puts the medicine back in the drawer. I can see the syringe she put in there earlier. I looked away. Pretended I didn't see. ...My heart is beating too fast.*"
+    "text": "*リイン先生が薬を引き出しに戻した。さっき入れた注射器が見えた。目を逸らした。見ていないふりをした。……心臓が速く打ちすぎている。*"
   },
   "day4_lunch_rooftop": {
     "name": "私",
-    "text": "*屋上。昨日ユナと来た場所。風が冷たい。*"
+    "text": "*屋上のドアを押した。……開いた。昨日は鍵がかかっていたのに。*"
   },
   "day4_lunch_rooftop_2": {
     "name": "私",
-    "text": "*手すりの下に何か刻まれている。刃物で削ったような文字。*"
+    "text": "*強い風が吹く。髪が飛ぶ。空は鈍い灰色だ。*"
   },
   "day4_lunch_rooftop_3": {
     "name": "私",
-    "text": "*『ここから出る方法は一つ。 — イ・ソルファ』……ソルファが残したものだ。*"
+    "text": "*昼休みなのに屋上に誰もいない。……いつも生徒が来ないのか？*"
   },
   "day4_lunch_rooftop_4": {
     "name": "私",
-    "text": "*……方法は一つ？ どんな方法？*"
+    "text": "*柵の方に歩いた。下に学校のグラウンドが見える。生徒が昼食を食べている。微笑んでいる。全員同じ笑顔で。*"
   },
   "day4_lunch_rooftop_5": {
     "name": "私",
-    "text": "*急に寒くなった。急いで降りる。*"
+    "text": "*……下から見上げたら、ここの私が見えるだろうか。上で手を振ったら、誰かが本当に見てくれるだろうか。*"
   },
   "day4_lunch_rooftop_6": {
     "name": "私",
-    "text": "*Something is carved under the railing. Letters scratched as if with a knife. Rusted. It looks old. 'There is only one way out. — Lee Seolhwa'*"
+    "text": "*柵の下に何かが刻まれている。ナイフで傷つけたような文字。錆びている。古そうだ。「脱出する方法は一つだけ。——イ・ソルファ」*"
   },
   "day4_lunch_rooftop_7": {
     "name": "私",
-    "text": "*...Seolhwa carved this. One year ago. I traced the letters with my finger. She carved deep. Put force into it. Desperately.*"
+    "text": "*……ソルファが刻んだんだ。一年前。指でその文字をなぞった。深く刻んである。力を込めて。必死に。*"
   },
   "day4_lunch_rooftop_8": {
     "name": "私",
-    "text": "*'Only one way out.' ...What is it? Escape? Or... There's even smaller writing underneath. Barely visible. 'The answer is in the basement'*"
+    "text": "*「脱出する方法は一つだけ」……何だろう。逃げること？それとも……下にさらに小さな文字がある。かろうじて見える。「答えは地下にある」*"
   },
   "day4_lunch_rooftop_9": {
     "name": "私",
-    "text": "*The basement. Yuna's camera also had stairs leading underground in the photo.*"
+    "text": "*地下室。ユナのカメラにも地下へ続く階段の写真があった。*"
   },
   "day4_lunch_rooftop_10": {
     "name": "私",
-    "text": "*On the rooftop floor there's a single cherry blossom petal. Rustling slightly in the breeze. ...It's not cherry blossom season now. I saw this on the morning of day 3 in the corridor too.*"
+    "text": "*屋上の床に桜の花びらが一枚。風にかすかに揺れている。……今は桜の季節じゃない。3日目の朝、廊下でも見た。*"
   },
   "day4_lunch_rooftop_11": {
     "name": "私",
-    "text": "*Seolhwa's traces. Evidence that Seolhwa was here. Even when everything else is erased... this remains. I put the cherry blossom petal in my pocket. ...I felt like I should take it with me.*"
+    "text": "*ソルファの痕跡。他のすべてが消されても……これだけは残っている。桜の花びらをポケットに入れた。……持っていかなければならない気がした。*"
   },
   "day4_lunch_rooftop_12": {
     "name": "私",
-    "text": "*...The basement. I need to find it after school. Those stairs that Yuna photographed.*"
+    "text": "*……地下室。放課後に見つけなければ。ユナが撮ったあの階段。*"
   },
   "day4_lunch_rooftop_13": {
     "name": "私",
-    "text": "*I hurry back down.*"
+    "text": "*急いで降りた。*"
   },
   "day4_lunch_ghost": {
     "name": "",
-    "text": "**\"Basement\"**"
+    "text": "**「地下室」**"
   },
   "day4_lunch_end": {
     "name": "私",
-    "text": "*午後の授業が始まる。心臓が破裂しそうだ。*"
+    "text": "*午後の授業が始まった。心臓が弾け飛びそうだ。*"
   }
 }

@@ -1,518 +1,518 @@
 {
-    "day5_night_start": {
-        "name": "",
-        "text": "*...*"
-    },
-    "day5_night_routing": {
-        "name": "",
-        "text": ""
-    },
-    "day5_ending_true": {
-        "name": "Moi",
-        "text": "*La police a bouclé l'école. Le laboratoire souterrain a été découvert. Tout est mis en lumière.*"
-    },
-    "day5_ending_true_2": {
-        "name": "Moi",
-        "text": "*Mme Eunsu, Riin et la direction de l'école ont été arrêtées. C'est partout dans les médias.*"
-    },
-    "day5_ending_true_3": {
-        "name": "Choi Yuna",
-        "text": "\"Senpai... on a réussi.\""
-    },
-    "day5_ending_true_4": {
-        "name": "Moi",
-        "text": "*Yuna sourit. Un vrai sourire que je n'ai jamais vu avant. Même sans son appareil photo.*"
-    },
-    "day5_ending_true_5": {
-        "name": "Moi",
-        "text": "*Les élèves transférés disparus sont retrouvés. Certains ont été découverts dans d'autres installations. On dit que leurs souvenirs reviennent.*"
-    },
-    "day5_ending_true_6": {
-        "name": "Moi",
-        "text": "*Sea... au final, elle aussi était une victime de cette école. 'Éduquée' ici depuis l'enfance.*"
-    },
-    "day5_ending_true_7": {
-        "name": "Lee Seolhwa",
-        "text": "\"...Merci. Maintenant, moi aussi je peux enfin obtenir mon diplôme.\""
-    },
-    "day5_ending_true_8": {
-        "name": "Moi",
-        "text": "*Le vent souffle. Pas des fleurs de cerisier — un vent trempé de pluie. Mais il est chaleureux.*"
-    },
-    "day5_ending_true_9": {
-        "name": "Moi",
-        "text": "*일주일 뒤.*"
-    },
-    "day5_ending_true_10": {
-        "name": "Moi",
-        "text": "*학교가 내려다보이는 언덕에 왔다. 유나와 함께. 학교는 폐쇄됐다. 교문에 노란 테이프가 감겨있다. 학생들은 다른 학교로 편입됐다.*"
-    },
-    "day5_ending_true_11": {
-        "name": "Choi Yuna",
-        "text": "\"선배.\""
-    },
-    "day5_ending_true_12": {
-        "name": "Moi",
-        "text": "*유나가 카메라를 들고 있다. 새 카메라다.*"
-    },
-    "day5_ending_true_13": {
-        "name": "Choi Yuna",
-        "text": "\"우리가 해냈어요.\""
-    },
-    "day5_ending_true_14": {
-        "name": "Moi",
-        "text": "*유나가 웃고 있다. 처음 보는 진짜 미소. 눈이 웃고 있다. 카메라 뒤에 숨지 않는 미소.*"
-    },
-    "day5_ending_true_15": {
-        "name": "Moi",
-        "text": "*사라졌던 전학생들의 행방이 밝혀지고 있다. 일부는 다른 시설에서 발견됐다. 기억을 되찾는 중이라고 한다.*"
-    },
-    "day5_ending_true_16": {
-        "name": "Moi",
-        "text": "*세아는... 병원에 있다. 상담을 받고 있다고 한다. 어릴 때부터 이 학교에서 '교육'받았던 아이. 감시자이자 피해자였던 아이. ...언젠가 만나러 가야 한다. 아직은 아니더라도.*"
-    },
-    "day5_ending_true_17": {
-        "name": "Moi",
-        "text": "*바람이 분다. 언덕 위의 풀이 흔들린다. 그때 ─ 바람 속에서 ─ 벚꽃잎 하나가 날아왔다. 어디서 왔는지 모를 벚꽃잎. 주머니에서 4일차에 주웠던 벚꽃잎을 꺼냈다. 바람에 날려 보냈다.*"
-    },
-    "day5_ending_true_18": {
-        "name": "Lee Seolhwa",
-        "text": "\"...고마워.\""
-    },
-    "day5_ending_true_19": {
-        "name": "Lee Seolhwa",
-        "text": "\"이제 나도... 갈게.\""
-    },
-    "day5_ending_true_20": {
-        "name": "Moi",
-        "text": "*벚꽃잎이 바람에 실려 하늘 높이 올라간다. 빛 속으로. 설화가 마침내 이 잔혹한 교실을 졸업했다. 1년 동안 묶여있던 영혼이... 마침내.*"
-    },
-    "day5_ending_true_21": {
-        "name": "Moi",
-        "text": "*비 냄새, 젖은 흙 냄새, 그리고 차가운 바람. 소독약 냄새도, 달콤한 방향제 냄새도 나지 않았다. 이 모든 거칠고 불쾌한 감각들이... 내가 진짜 세계에 살아있다는 걸 증명하고 있었다.*"
-    },
-    "day5_ending_true_22": {
-        "name": "Choi Yuna",
-        "text": "\"선배, 울고 있어요.\""
-    },
-    "day5_ending_true_23": {
-        "name": "Moi",
-        "text": "\"...응. 좀.\""
-    },
-    "day5_ending_true_24": {
-        "name": "Choi Yuna",
-        "text": "\"...저도요.\""
-    },
-    "day5_ending_true_25": {
-        "name": "Moi",
-        "text": "*유나가 내 옆에 서서 석양을 바라본다. 눈물을 닦지 않았다. 나도. 비가 그쳤다. 구름 사이로 햇빛이 내려온다. 비를 머금은 바람이 분다. 따뜻하다.*"
-    },
-    "day5_ending_true_subtitle": {
-        "name": "",
-        "text": "졸업 ─ 졸업하지 못한 교실에서, 마침내."
-    },
-    "day5_ending_true_title": {
-        "name": "",
-        "text": ""
-    },
-    "day5_postcredit_1": {
-        "name": "",
-        "text": "*...Quelque part, un téléphone sonne.*"
-    },
-    "day5_postcredit_2": {
-        "name": "???",
-        "text": "\"Oui... Confirmé. Nous procéderons à la fermeture de ce site.\""
-    },
-    "day5_postcredit_3": {
-        "name": "???",
-        "text": "\"Le dossier numéro 13 présente une fuite de grande ampleur, une gestion médiatique est nécessaire. Selon le protocole établi.\""
-    },
-    "day5_postcredit_4": {
-        "name": "???",
-        "text": "\"L'affaire du sujet n°13 a attiré l'attention des médias. Conformément au protocole, on présente cela comme un écart individuel de la responsable sur site. Coupez tous les liens avec la fondation.\""
-    },
-    "day5_postcredit_5": {
-        "name": "Moi",
-        "text": "\"...Oui. La sélection du prochain établissement pilote est terminée.\""
-    },
-    "day5_postcredit_6": {
-        "name": "???",
-        "text": "\"교직원 재배치 기안은 올렸고요?\""
-    },
-    "day5_postcredit_7": {
-        "name": "Moi",
-        "text": "*모니터 화면이 바뀐다. 새 학교의 사진. 새 교복. 새 이름들. 파일 제목이 보인다. '부적응 학생 교정 프로그램 ─ 2차 년도 시행 계획안'.*"
-    },
-    "day5_postcredit_8": {
-        "name": "Moi",
-        "text": "*...새로운 전학생 프로필이 화면에 뜬다. 사진 속 학생이 웃고 있다. 아무것도 모르는 얼굴로.*"
-    },
-    "day5_postcredit_end": {
-        "name": "",
-        "text": ""
-    },
-    "day5_ending_escape": {
-        "name": "Moi",
-        "text": "*Je marche sous la pluie. L'école est derrière moi maintenant.*"
-    },
-    "day5_ending_escape_2": {
-        "name": "Moi",
-        "text": "*J'ai soumis les preuves. La police devrait intervenir. Mais...*"
-    },
-    "day5_ending_escape_3": {
-        "name": "Moi",
-        "text": "*Yuna est encore là-dedans. Je n'ai pas pu la sauver. Cette culpabilité... je la porterai à jamais.*"
-    },
-    "day5_ending_escape_4": {
-        "name": "Moi",
-        "text": "*J'ai survécu. Est-ce que ça seul... suffit ?*"
-    },
-    "day5_ending_escape_5": {
-        "name": "Moi",
-        "text": "*하지만. 유나는 아직 그곳에 있다.*"
-    },
-    "day5_ending_escape_6": {
-        "name": "Moi",
-        "text": "*지하실에서 유나의 얼굴이 떠오른다. 창백한 얼굴. 주사 자국이 점점이 박힌 팔. '선배'라고 부르던 떨리는 목소리.*"
-    },
-    "day5_ending_escape_7": {
-        "name": "Moi",
-        "text": "*...구하지 못했다.*"
-    },
-    "day5_ending_escape_8": {
-        "name": "Moi",
-        "text": "*이 죄책감은... 평생 안고 가야 한다. 비에 씻겨 사라지는 게 아니다.*"
-    },
-    "day5_ending_escape_9": {
-        "name": "Moi",
-        "text": "*멈춰 서서 하늘을 올려다봤다. 빗물이 얼굴 위로 쏟아진다. 차갑다.*"
-    },
-    "day5_ending_escape_10": {
-        "name": "Moi",
-        "text": "*살아남았다. 나는 살아남았다. 그것만으로... 충분한 걸까. ...충분하지 않다. 하지만 살아남았으니까. 살아남았으니까 할 수 있는 일이 있다.*"
-    },
-    "day5_ending_escape_11": {
-        "name": "Moi",
-        "text": "*다시 걷기 시작했다. 비 속으로.*"
-    },
-    "day5_ending_escape_ghost": {
-        "name": "",
-        "text": "\"...기다리고 있을게요, 선배.\""
-    },
-    "day5_ending_escape_subtitle": {
-        "name": "",
-        "text": "생존자 ─ 살아남은 자의 무게."
-    },
-    "day5_ending_escape_title": {
-        "name": "",
-        "text": ""
-    },
-    "day5_ending_resist": {
-        "name": "Moi",
-        "text": "*Quand j'ai repris connaissance, j'étais sur la colline derrière l'école. L'aube se lève.*"
-    },
-    "day5_ending_resist_2": {
-        "name": "Moi",
-        "text": "*Seolhwa m'a aidé. Elle a guidé le chemin à travers la coupure de courant.*"
-    },
-    "day5_ending_resist_3": {
-        "name": "Lee Seolhwa",
-        "text": "\"...C'est ton tour maintenant. Ne finis pas comme moi.\""
-    },
-    "day5_ending_resist_4": {
-        "name": "Moi",
-        "text": "*La silhouette de Seolhwa se dissout dans la lumière du matin. ...Merci.*"
-    },
-    "day5_ending_resist_5": {
-        "name": "Moi",
-        "text": "*학교가 아래에 보인다. 안개에 싸여있다. 비현실적으로. 꿈처럼. ...꿈이 아니다. 진짜로 빠져나온 거다.*"
-    },
-    "day5_ending_resist_6": {
-        "name": "Moi",
-        "text": "*옆에서 빛이 흔들린다. 설화가 서 있다. 새벽빛에 반투명하게. ...웃고 있다. 슬프지 않은 미소. 처음 보는 표정.*"
-    },
-    "day5_ending_resist_7": {
-        "name": "Lee Seolhwa",
-        "text": "\"...이제 네 차례야.\""
-    },
-    "day5_ending_resist_8": {
-        "name": "Lee Seolhwa",
-        "text": "\"나처럼 되지 마. 돌아가서... 살아.\""
-    },
-    "day5_ending_resist_9": {
-        "name": "Moi",
-        "text": "*설화의 몸이 새벽빛에 녹기 시작한다. 가장자리부터. 반짝이면서.*"
-    },
-    "day5_ending_resist_10": {
-        "name": "Lee Seolhwa",
-        "text": "\"...그리고 가끔. 나를 기억해줘.\""
-    },
-    "day5_ending_resist_11": {
-        "name": "Moi",
-        "text": "*설화의 모습이 아침 빛에 완전히 녹아 사라진다. 벚꽃잎 하나가 남았다. 바람에 흔들리다가... 날아간다. ...고마워.*"
-    },
-    "day5_ending_resist_12": {
-        "name": "Moi",
-        "text": "*아직 끝나지 않았다. 유나가 그곳에 있다. 증거를 가지고 있다. 밝혀야 한다. 뒷산을 내려가기 시작했다. 새벽이 밝아오고 있다. 길은 보인다.*"
-    },
-    "day5_ending_resist_subtitle": {
-        "name": "",
-        "text": "미완의 탈출 ─ 아직 끝나지 않았다."
-    },
-    "day5_ending_resist_title": {
-        "name": "",
-        "text": ""
-    },
-    "day5_ending_cage": {
-        "name": "Professeure",
-        "text": "\"Bonjour, {name}.\""
-    },
-    "day5_ending_cage_2": {
-        "name": "Moi",
-        "text": "*...J'ai perdu le compte des matins. La salle de classe est toujours la même. Mêmes sourires, mêmes leçons, même jour.*"
-    },
-    "day5_ending_cage_3": {
-        "name": "Moi",
-        "text": "*Mme Eunsu sourit. Sea sourit. Riin sourit. Tout le monde sourit. Je souris aussi.*"
-    },
-    "day5_ending_cage_4": {
-        "name": "Moi",
-        "text": "*...Pourquoi est-ce que je souris ?*"
-    },
-    "day5_ending_cage_5": {
-        "name": "Moi",
-        "text": "*같은 아침. 같은 교실. 같은 수업.*"
-    },
-    "day5_ending_cage_6": {
-        "name": "Moi",
-        "text": "*...몇 번째 아침인지 모르겠다. 어제도 이랬다. 그제도 이랬다. 3일 전도, 일주일 전도, 한 달 전도... 전부 같은 하루.*"
-    },
-    "day5_ending_cage_7": {
-        "name": "Moi",
-        "text": "*은수 선생님이 웃는다. 세아가 웃는다. 리인이 웃는다. 모두가 웃는다. 나도 웃는다.*"
-    },
-    "day5_ending_cage_8": {
-        "name": "Moi",
-        "text": "*...자연스럽게. 힘을 주지 않아도 입꼬리가 올라간다. 예전에는 이게 무서웠던 것 같은데... 언제부터 무섭지 않게 됐지?*"
-    },
-    "day5_ending_cage_9": {
-        "name": "Han Sea",
-        "text": "\"{name}, 오늘도 문어 소시지 만들어왔어.\""
-    },
-    "day5_ending_cage_10": {
-        "name": "Moi",
-        "text": "*맛있다. 매일 맛있다. 방과후. 학생회실. 세아와 과자를 먹으며 웃는다. 무슨 이야기를 했는지 기억이 안 나지만... 웃었다.*"
-    },
-    "day5_ending_cage_11": {
-        "name": "Moi",
-        "text": "*밤. 잠이 든다. 꿈을 꾸지 않는다. 아침. 눈을 뜬다.*"
-    },
-    "day5_ending_cage_12": {
-        "name": "Park Eunsu",
-        "text": "\"좋은 아침이야, {name}.\""
-    },
-    "day5_ending_cage_13": {
-        "name": "Moi",
-        "text": "*...같은 인사. 같은 미소.*"
-    },
-    "day5_ending_cage_14": {
-        "name": "Moi",
-        "text": "*...나는 왜 웃고 있는 거지?*"
-    },
-    "day5_ending_cage_15": {
-        "name": "Moi",
-        "text": "*뭔가 빠져있다. 기억에 구멍이 있다. 뭘 잊은 것 같다. 중요한 뭔가를. ...누군가의 이름. 투명한 손. 벚꽃잎. '도망쳐'라는 말. ...뭐였지?*"
-    },
-    "day5_ending_cage_16": {
-        "name": "Moi",
-        "text": "*생각하려고 하면 머리가 아프다. 그만두자. 생각하지 말자. 여기는 안전하다. 선생님이 지켜주니까. ...나도 웃는다. 같은 미소로. 같은 각도로.*"
-    },
-    "day5_ending_cage_subtitle": {
-        "name": "",
-        "text": "새장 ─ 영원한 학교생활."
-    },
-    "day5_ending_cage_title": {
-        "name": "",
-        "text": ""
-    },
-    "day5_ending_forget": {
-        "name": "",
-        "text": "*...*"
-    },
-    "day5_ending_forget_2": {
-        "name": "",
-        "text": "*...*"
-    },
-    "day5_ending_forget_3": {
-        "name": "Moi",
-        "text": "*...Le réveil sonne. C'est le matin.*"
-    },
-    "day5_ending_forget_4": {
-        "name": "Moi",
-        "text": "*Aujourd'hui c'est... mon premier jour dans une nouvelle école. Un transfert. Mon cœur bat la chamade.*"
-    },
-    "day5_ending_forget_5": {
-        "name": "Moi",
-        "text": "*Je me regarde dans le miroir. Sans savoir pourquoi... des larmes coulent sur mon visage.*"
-    },
-    "day5_ending_forget_6": {
-        "name": "Moi",
-        "text": "*눈을 떴다. 천장이 보인다. 낯선 천장. ...아니, 낯설지 않다. 내 방이다.*"
-    },
-    "day5_ending_forget_7": {
-        "name": "Moi",
-        "text": "*...아침이다.*"
-    },
-    "day5_ending_forget_8": {
-        "name": "Moi",
-        "text": "*몸을 일으켰다. 기지개를 켠다. 창밖으로 벚꽃이 보인다. 예쁘다.*"
-    },
-    "day5_ending_forget_9": {
-        "name": "Moi",
-        "text": "*오늘은... 전학 첫날이다.*"
-    },
-    "day5_ending_forget_10": {
-        "name": "Moi",
-        "text": "*새로운 학교. 새로운 반. 새로운 친구들. 두근거린다. 조금 긴장되지만... 설레기도 한다. 어떤 사람들이 있을까?*"
-    },
-    "day5_ending_forget_11": {
-        "name": "Moi",
-        "text": "*교복을 입었다. 거울을 본다.*"
-    },
-    "day5_ending_forget_12": {
-        "name": "Moi",
-        "text": "*왜인지 모르게... 눈물이 흐르고 있다. 왜 울고 있지? 슬프지 않은데. 아무것도 슬프지 않은데.*"
-    },
-    "day5_ending_forget_13": {
-        "name": "Moi",
-        "text": "*눈물을 닦았다. 이상하다. 왜 울었지. ...기분 탓이겠지. 첫날이라 긴장해서 그런 거야.*"
-    },
-    "day5_ending_forget_14": {
-        "name": "Moi",
-        "text": "*핸드폰을 들었다. 연락처에 아무 이름도 없다. 빈 연락처. ...원래 이랬나? 전 학교 친구들은? ...전 학교가 어디였지? ...생각나지 않는다. 괜찮다. 새로 사귀면 되니까.*"
-    },
-    "day5_ending_forget_15": {
-        "name": "Moi",
-        "text": "*현관문을 열었다. 벚꽃잎이 날려온다. 예쁘다. ...왜 벚꽃잎을 보면 가슴이 아프지?*"
-    },
-    "day5_ending_forget_ghost": {
-        "name": "",
-        "text": "\"도망쳐\""
-    },
-    "day5_ending_forget_16": {
-        "name": "Moi",
-        "text": "*...뭔가 들린 것 같은데. 기분 탓이다. 학교에 가자.*"
-    },
-    "day5_ending_forget_sea_branch": {
-        "name": "",
-        "text": ""
-    },
-    "day5_ending_forget_sea_max": {
-        "name": "Moi",
-        "text": "*교문 앞에 여학생이 서 있다. 밝은 미소. 반장 완장.*"
-    },
-    "day5_ending_forget_sea_max_2": {
-        "name": "Han Sea",
-        "text": "\"안녕! 오늘 전학 온 학생이지? 내가 안내해줄게.\""
-    },
-    "day5_ending_forget_sea_max_3": {
-        "name": "Moi",
-        "text": "*...이 사람, 어디서 본 것 같은데. 어디서였지? ...기억나지 않는다.*"
-    },
-    "day5_ending_forget_sea_max_4": {
-        "name": "Han Sea",
-        "text": "\"이쪽으로 와. ...{name}.\""
-    },
-    "day5_ending_forget_subtitle": {
-        "name": "",
-        "text": "리셋 ─ 모든 것이 처음으로."
-    },
-    "day5_ending_forget_title": {
-        "name": "",
-        "text": ""
-    },
-    "day5_ending_ghost": {
-        "name": "Moi",
-        "text": "*...Où suis-je ? L'école... c'est ça. Mais personne ne peut me voir.*"
-    },
-    "day5_ending_ghost_2": {
-        "name": "Moi",
-        "text": "*Je suis devenu comme Seolhwa. Je suis... lié à cette école désormais.*"
-    },
-    "day5_ending_ghost_3": {
-        "name": "Moi",
-        "text": "*...Un nouvel élève transféré arrive. La porte de la salle de classe s'ouvre, et un visage inconnu entre.*"
-    },
-    "day5_ending_ghost_4": {
-        "name": "???",
-        "text": "\"Bonjour ! Je suis transféré dans cette école à partir d'aujourd'hui...\""
-    },
-    "day5_ending_ghost_5": {
-        "name": "Moi",
-        "text": "*...Cette fois, c'est moi qui dois le prévenir.*"
-    },
-    "day5_ending_ghost_6": {
-        "name": "Moi",
-        "text": "*손을 들어봤다. 들어올렸다. ...투명하다. 손가락 사이로 복도의 타일이 비쳐 보인다.*"
-    },
-    "day5_ending_ghost_7": {
-        "name": "Moi",
-        "text": "*설화처럼 됐구나. 나는... 이 학교에 묶인 존재가 됐다.*"
-    },
-    "day5_ending_ghost_8": {
-        "name": "Moi",
-        "text": "*걸어봤다. 발소리가 나지 않는다. 교실을 지나간다. 안에 학생들이 앉아있다. 공부하고 있다. 아무도 나를 보지 않는다.*"
-    },
-    "day5_ending_ghost_9": {
-        "name": "Moi",
-        "text": "*나를 스쳐 지나가는 학생이 있다. 팔이 내 몸을 통과했다. 느낌이 없다. ...보이지 않는다. 들리지 않는다. 만져지지 않는다.*"
-    },
-    "day5_ending_ghost_10": {
-        "name": "Moi",
-        "text": "*이름. 내 이름이 뭐였지? ...기억나지 않는다. 출석부에서 지워졌을 것이다. 설화처럼. 시간이 흐른다. 얼마나 흘렀는지 모르겠다. 계절이 바뀐다. 벚꽃이 피고 진다.*"
-    },
-    "day5_ending_ghost_11": {
-        "name": "Moi",
-        "text": "*...새로운 전학생이 온다.*"
-    },
-    "day5_ending_ghost_12": {
-        "name": "Moi",
-        "text": "*교실 문이 열리고, 낯선 얼굴이 들어온다. 긴장한 표정. 설레는 눈. ...나도 처음에 저랬다.*"
-    },
-    "day5_ending_ghost_13": {
-        "name": "???",
-        "text": "\"안녕하세요! 오늘부터 이 학교에 전학 온...\""
-    },
-    "day5_ending_ghost_14": {
-        "name": "Moi",
-        "text": "*은수 선생님이 웃으며 맞이한다. 세아가 손을 흔든다. 리인이 보건실에서 미소 짓는다. 같은 패턴. 같은 미소. 같은 덫.*"
-    },
-    "day5_ending_ghost_15": {
-        "name": "Moi",
-        "text": "*...이번에는 내가 경고해야 한다. 설화가 나한테 그랬던 것처럼. 전학생에게 다가갔다. 보이지 않는 손으로 어깨를 건드려봤다. 느끼지 못한다.*"
-    },
-    "day5_ending_ghost_whisper": {
-        "name": "",
-        "text": "\"여기서 나가\""
-    },
-    "day5_ending_ghost_16": {
-        "name": "Moi",
-        "text": "*대사창에 글자를 새기려고 했다. 설화가 그랬던 것처럼. 유령 텍스트로. ...써진다. 아주 작게. 희미하게.*"
-    },
-    "day5_ending_ghost_17": {
-        "name": "Moi",
-        "text": "*전학생이 화면을 봤다. 잠깐 멈칫했다. ...그리고 지나갔다. 신경 쓰지 않았다. ...당연하다. 나도 처음에는 그랬으니까.*"
-    },
-    "day5_ending_ghost_18": {
-        "name": "Moi",
-        "text": "*하지만 계속할 것이다. 매일. 매 순간. 이 아이가 진실을 알게 될 때까지. 설화가 나한테 그랬던 것처럼. 포기하지 않았던 것처럼. ...나는 여기 있다. 보이지 않지만. 졸업하지 못했지만. 여기서, 경고를 계속할 것이다.*"
-    },
-    "day5_ending_ghost_subtitle": {
-        "name": "",
-        "text": "잔향 ─ 졸업하지 못한 자의 기록."
-    },
-    "day5_ending_ghost_title": {
-        "name": "",
-        "text": ""
-    }
+  "day5_night_start": {
+    "name": "",
+    "text": "*...*"
+  },
+  "day5_night_routing": {
+    "name": "",
+    "text": ""
+  },
+  "day5_ending_true": {
+    "name": "Moi",
+    "text": "*Le commissariat de police.*"
+  },
+  "day5_ending_true_2": {
+    "name": "Moi",
+    "text": "*Assis sur une chaise en plastique sous des tubes fluorescents. Yuna est à côté de moi. Nous sommes tous les deux enveloppés dans des couvertures. Tous les deux trempés.*"
+  },
+  "day5_ending_true_3": {
+    "name": "Moi",
+    "text": "*Un policier nous écoute. Son regard était sceptique au début. J'ai montré les photos sur mon téléphone. Remis la carte mémoire de Yuna. Expliqué les dossiers de Seolhwa.*"
+  },
+  "day5_ending_true_4": {
+    "name": "Moi",
+    "text": "*...L'expression du policier a changé.*"
+  },
+  "day5_ending_true_5": {
+    "name": "Moi",
+    "text": "*Des heures plus tard. La police a bouclé le lycée. Des véhicules spéciaux passent le portail. Le laboratoire souterrain est découvert. Matériel médical. Drogues. Dossiers des sujets.*"
+  },
+  "day5_ending_true_6": {
+    "name": "Moi",
+    "text": "*Tout vient à la lumière.*"
+  },
+  "day5_ending_true_7": {
+    "name": "Moi",
+    "text": "*Les informations en parlent tous les jours. 'Scandale du laboratoire scolaire.' 'Expériences de manipulation mémorielle sur des élèves transférés.' 'Tout le conseil d'administration arrêté.'*"
+  },
+  "day5_ending_true_8": {
+    "name": "Moi",
+    "text": "*La scène de l'arrestation de Madame Eunsu est passée à la télé. La professeure... souriait. Devant les caméras aussi. Jusqu'au bout. L'infirmière Riin s'est apparemment rendue d'elle-même. Elle a personnellement soumis les preuves.*"
+  },
+  "day5_ending_true_9": {
+    "name": "Moi",
+    "text": "*Une semaine plus tard.*"
+  },
+  "day5_ending_true_10": {
+    "name": "Moi",
+    "text": "*Je suis venu sur la colline qui surplombe le lycée. Avec Yuna. Le lycée est fermé. Du ruban jaune est enroulé autour du portail. Les élèves ont été transférés dans d'autres établissements.*"
+  },
+  "day5_ending_true_11": {
+    "name": "Yuna",
+    "text": "\"Senpai.\""
+  },
+  "day5_ending_true_12": {
+    "name": "Moi",
+    "text": "*Yuna tient un appareil photo. Un nouvel appareil.*"
+  },
+  "day5_ending_true_13": {
+    "name": "Yuna",
+    "text": "\"On l'a fait.\""
+  },
+  "day5_ending_true_14": {
+    "name": "Moi",
+    "text": "*Yuna sourit. Un vrai sourire que je n'avais jamais vu. Ses yeux sourient. Un sourire qui ne se cache pas derrière un appareil photo.*"
+  },
+  "day5_ending_true_15": {
+    "name": "Moi",
+    "text": "*On retrouve peu à peu la trace des élèves transférés disparus. Certains ont été retrouvés dans d'autres établissements. On dit que leurs souvenirs reviennent.*"
+  },
+  "day5_ending_true_16": {
+    "name": "Moi",
+    "text": "*Sea est... à l'hôpital. Apparemment en thérapie. Une enfant qui avait été 'éduquée' dans ce lycée depuis son plus jeune âge. Une enfant qui était à la fois observatrice et victime. ...Je dois aller lui rendre visite un jour. Pas encore, mais un jour.*"
+  },
+  "day5_ending_true_17": {
+    "name": "Moi",
+    "text": "*Le vent souffle. L'herbe de la colline oscille. Et alors — dans le vent — un seul pétale de cerisier vient flotter. Un pétale de cerisier sans origine connue. J'ai sorti de ma poche le pétale de cerisier ramassé au Jour 4. Je l'ai laissé partir dans le vent.*"
+  },
+  "day5_ending_true_18": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Merci.\""
+  },
+  "day5_ending_true_19": {
+    "name": "Lee Seolhwa",
+    "text": "\"Maintenant moi aussi... je peux partir.\""
+  },
+  "day5_ending_true_20": {
+    "name": "Moi",
+    "text": "*Le pétale de cerisier monte haut dans le ciel porté par le vent. Vers la lumière. Seolhwa a enfin obtenu son diplôme de cette salle de classe cruelle. L'âme qui avait été liée pendant un an... enfin.*"
+  },
+  "day5_ending_true_21": {
+    "name": "Moi",
+    "text": "*L'odeur de la pluie, l'odeur de la terre mouillée, et un vent froid. Pas d'odeur de désinfectant, pas de doux désodorisant. Toutes ces sensations rudes et désagréables... étaient la preuve que j'étais vivant dans le monde réel.*"
+  },
+  "day5_ending_true_22": {
+    "name": "Yuna",
+    "text": "\"Senpai, vous pleurez.\""
+  },
+  "day5_ending_true_23": {
+    "name": "Moi",
+    "text": "\"...Oui. Un peu.\""
+  },
+  "day5_ending_true_24": {
+    "name": "Yuna",
+    "text": "\"...Moi aussi.\""
+  },
+  "day5_ending_true_25": {
+    "name": "Moi",
+    "text": "*Yuna se tient à côté de moi et regarde le soleil couchant. Elle n'a pas essuyé ses larmes. Moi non plus. La pluie s'est arrêtée. La lumière descend à travers les nuages. Un vent portant la pluie souffle. Il fait chaud.*"
+  },
+  "day5_ending_true_subtitle": {
+    "name": "",
+    "text": "Remise de diplômes — D'une salle de classe qui n'en a jamais accordé, enfin."
+  },
+  "day5_ending_true_title": {
+    "name": "",
+    "text": ""
+  },
+  "day5_postcredit_1": {
+    "name": "",
+    "text": "*...Quelque part, un téléphone sonne.*"
+  },
+  "day5_postcredit_2": {
+    "name": "Moi",
+    "text": "*Un grand bureau. Une table couverte de documents. Plusieurs moniteurs. Le plan d'un lycée s'affiche sur l'écran.*"
+  },
+  "day5_postcredit_3": {
+    "name": "???",
+    "text": "\"Oui. ...Confirmé. On va procéder à la fermeture de ce site. La récupération des actifs est terminée, le personnel sera réaffecté.\""
+  },
+  "day5_postcredit_4": {
+    "name": "???",
+    "text": "\"Les médias font du bruit à propos de l'affaire du Sujet n°13, mais conformément à la procédure standard on l'imputera aux agissements individuels au niveau du responsable sur site. Détruire tous les liens avec la fondation.\""
+  },
+  "day5_postcredit_5": {
+    "name": "???",
+    "text": "\"...Oui. La sélection du prochain lycée pilote est terminée.\""
+  },
+  "day5_postcredit_6": {
+    "name": "???",
+    "text": "\"La proposition de réaffectation du personnel a-t-elle été soumise ?\""
+  },
+  "day5_postcredit_7": {
+    "name": "Moi",
+    "text": "*L'écran du moniteur change. Des photos d'un nouveau lycée. De nouveaux uniformes. De nouveaux noms. Le titre du fichier est visible. 'Programme de correction des élèves non-adaptatifs — Plan de mise en œuvre Année 2.'*"
+  },
+  "day5_postcredit_8": {
+    "name": "Moi",
+    "text": "*...Le profil d'un nouvel élève transféré apparaît à l'écran. L'élève sur la photo sourit. Un visage qui ne sait rien.*"
+  },
+  "day5_postcredit_end": {
+    "name": "",
+    "text": ""
+  },
+  "day5_ending_escape": {
+    "name": "Moi",
+    "text": "*Je marche sous la pluie.*"
+  },
+  "day5_ending_escape_2": {
+    "name": "Moi",
+    "text": "*Le lycée est derrière moi maintenant. Seuls des lampadaires brillent en rangée dans l'obscurité.*"
+  },
+  "day5_ending_escape_3": {
+    "name": "Moi",
+    "text": "*J'ai appelé la police sur mon téléphone. Envoyé les preuves. Photos. Documents. Localisation.*"
+  },
+  "day5_ending_escape_4": {
+    "name": "Moi",
+    "text": "*La police devrait être en mouvement. ...Je veux le croire.*"
+  },
+  "day5_ending_escape_5": {
+    "name": "Moi",
+    "text": "*Mais. Yuna est encore là-bas.*"
+  },
+  "day5_ending_escape_6": {
+    "name": "Moi",
+    "text": "*Le visage de Yuna dans le sous-sol me revient. Son visage pâle. Un bras parsemé de marques d'aiguille. La voix tremblante qui m'appelait 'senpai'.*"
+  },
+  "day5_ending_escape_7": {
+    "name": "Moi",
+    "text": "*...Je n'ai pas pu la sauver.*"
+  },
+  "day5_ending_escape_8": {
+    "name": "Moi",
+    "text": "*Cette culpabilité... je devrai la porter pour le reste de ma vie. La pluie ne la lavera pas.*"
+  },
+  "day5_ending_escape_9": {
+    "name": "Moi",
+    "text": "*Je me suis arrêté de marcher et j'ai levé les yeux vers le ciel. L'eau de pluie dégouline sur mon visage. Froid.*"
+  },
+  "day5_ending_escape_10": {
+    "name": "Moi",
+    "text": "*J'ai survécu. J'ai survécu. Est-ce que ça seul... suffit ? ...Ça ne suffit pas. Mais j'ai survécu. Parce que j'ai survécu, il y a encore des choses que je peux faire.*"
+  },
+  "day5_ending_escape_11": {
+    "name": "Moi",
+    "text": "*Je me suis remis à marcher. Dans la pluie.*"
+  },
+  "day5_ending_escape_ghost": {
+    "name": "",
+    "text": "\"...Je t'attendrai, senpai.\""
+  },
+  "day5_ending_escape_subtitle": {
+    "name": "",
+    "text": "Survivant — Le poids de celui qui a vécu."
+  },
+  "day5_ending_escape_title": {
+    "name": "",
+    "text": ""
+  },
+  "day5_ending_resist": {
+    "name": "Moi",
+    "text": "*...Je suis revenu à moi.*"
+  },
+  "day5_ending_resist_2": {
+    "name": "Moi",
+    "text": "*De l'herbe. De l'herbe trempée de rosée. La lumière de l'aube.*"
+  },
+  "day5_ending_resist_3": {
+    "name": "Moi",
+    "text": "*Je lève le corps. C'est... la colline derrière le lycée. Comment suis-je arrivé ici ?*"
+  },
+  "day5_ending_resist_4": {
+    "name": "Moi",
+    "text": "*Ma mémoire est fragmentée. Dans le sous-sol... le courant a été coupé... et quelqu'un a pris ma main et m'a guidé dans l'obscurité. Une main transparente. Froide mais ferme. ...Seolhwa.*"
+  },
+  "day5_ending_resist_5": {
+    "name": "Moi",
+    "text": "*Le lycée est visible en bas. Enveloppé de brume. De façon irréelle. Comme un rêve. ...Ce n'est pas un rêve. Je suis vraiment sorti.*"
+  },
+  "day5_ending_resist_6": {
+    "name": "Moi",
+    "text": "*La lumière bouge à côté de moi. Seolhwa se tient là. Translucide dans la lumière de l'aube. ...Elle sourit. Un sourire qui n'est pas triste. Une expression que je n'ai jamais vue.*"
+  },
+  "day5_ending_resist_7": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Maintenant c'est ton tour.\""
+  },
+  "day5_ending_resist_8": {
+    "name": "Lee Seolhwa",
+    "text": "\"Ne finis pas comme moi. Rentre... et vis.\""
+  },
+  "day5_ending_resist_9": {
+    "name": "Moi",
+    "text": "*Le corps de Seolhwa commence à se fondre dans la lumière de l'aube. Depuis les bords. En scintillant.*"
+  },
+  "day5_ending_resist_10": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Et parfois. Souviens-toi de moi.\""
+  },
+  "day5_ending_resist_11": {
+    "name": "Moi",
+    "text": "*La silhouette de Seolhwa se fond complètement dans la lumière du matin et disparaît. Un seul pétale de cerisier demeure. Il frémit dans le vent... puis s'envole. ...Merci.*"
+  },
+  "day5_ending_resist_12": {
+    "name": "Moi",
+    "text": "*Ce n'est pas encore fini. Yuna est encore là-bas. J'ai les preuves. Ça doit venir à la lumière. J'ai commencé à descendre la colline derrière le lycée. L'aube se lève. Le chemin est visible.*"
+  },
+  "day5_ending_resist_subtitle": {
+    "name": "",
+    "text": "Évasion incomplète — Ce n'est pas encore fini."
+  },
+  "day5_ending_resist_title": {
+    "name": "",
+    "text": ""
+  },
+  "day5_ending_cage": {
+    "name": "Moi",
+    "text": "*...*"
+  },
+  "day5_ending_cage_2": {
+    "name": "Moi",
+    "text": "*...C'est le matin.*"
+  },
+  "day5_ending_cage_3": {
+    "name": "Professeure principale",
+    "text": "\"Bonjour, {name}.\""
+  },
+  "day5_ending_cage_4": {
+    "name": "Moi",
+    "text": "*La prof sourit. Un sourire chaleureux. Je m'assieds à ma place. J'ouvre le manuel. Sea est assise à côté de moi. De derrière, l'infirmière Riin tend une tasse de thé.*"
+  },
+  "day5_ending_cage_5": {
+    "name": "Moi",
+    "text": "*La même matinée. La même salle de classe. Les mêmes cours.*"
+  },
+  "day5_ending_cage_6": {
+    "name": "Moi",
+    "text": "*...Je n'ai plus le compte de combien de matins comme celui-ci. Hier c'était pareil. L'avant-veille aussi. Il y a trois jours, il y a une semaine, il y a un mois... tous le même jour.*"
+  },
+  "day5_ending_cage_7": {
+    "name": "Moi",
+    "text": "*Madame Eunsu sourit. Sea sourit. Riin sourit. Tout le monde sourit. Je souris aussi.*"
+  },
+  "day5_ending_cage_8": {
+    "name": "Moi",
+    "text": "*...Naturellement. Les coins de mes lèvres se relèvent sans effort. Je crois que ça me faisait peur autrefois... depuis quand est-ce que ça ne fait plus peur ?*"
+  },
+  "day5_ending_cage_9": {
+    "name": "Han Sea",
+    "text": "\"{name}, j'ai encore fait des saucisses en forme de pieuvre aujourd'hui.\""
+  },
+  "day5_ending_cage_10": {
+    "name": "Moi",
+    "text": "*C'est bon. C'est bon tous les jours. Après les cours. La salle du conseil. Manger des gâteaux avec Sea et rire. Je ne me souviens plus de quoi on parlait mais... on riait.*"
+  },
+  "day5_ending_cage_11": {
+    "name": "Moi",
+    "text": "*La nuit. Je m'endors. Pas de rêves. Le matin. Les yeux s'ouvrent.*"
+  },
+  "day5_ending_cage_12": {
+    "name": "Professeure principale",
+    "text": "\"Bonjour, {name}.\""
+  },
+  "day5_ending_cage_13": {
+    "name": "Moi",
+    "text": "*...Le même bonjour. Le même sourire.*"
+  },
+  "day5_ending_cage_14": {
+    "name": "Moi",
+    "text": "*...Pourquoi est-ce que je souris ?*"
+  },
+  "day5_ending_cage_15": {
+    "name": "Moi",
+    "text": "*Il manque quelque chose. Il y a un trou dans ma mémoire. J'ai l'impression d'avoir oublié quelque chose. Quelque chose d'important. ...Le nom de quelqu'un. Une main transparente. Un pétale de cerisier. Les mots 'fuis'. ...C'était quoi ?*"
+  },
+  "day5_ending_cage_16": {
+    "name": "Moi",
+    "text": "*J'ai mal à la tête quand j'essaie d'y penser. Je laisse tomber. Je n'y pense pas. C'est sûr ici. Parce que la professeure me protège. ...Je souris aussi. Le même sourire. Au même angle.*"
+  },
+  "day5_ending_cage_subtitle": {
+    "name": "",
+    "text": "Cage — Une vie scolaire éternelle."
+  },
+  "day5_ending_cage_title": {
+    "name": "",
+    "text": ""
+  },
+  "day5_ending_forget": {
+    "name": "",
+    "text": "*...*"
+  },
+  "day5_ending_forget_2": {
+    "name": "",
+    "text": "*L'obscurité.*"
+  },
+  "day5_ending_forget_3": {
+    "name": "",
+    "text": "*L'obscurité pendant longtemps.*"
+  },
+  "day5_ending_forget_4": {
+    "name": "Moi",
+    "text": "*...Il fait chaud. Dans une couette. Je sens la lumière. La lumière du soleil entre par les rideaux.*"
+  },
+  "day5_ending_forget_5": {
+    "name": "Moi",
+    "text": "*...Un réveil sonne. Dring dring dring. Dring dring dring.*"
+  },
+  "day5_ending_forget_6": {
+    "name": "Moi",
+    "text": "*J'ai ouvert les yeux. Je vois le plafond. Un plafond inconnu. ...Non, il n'est pas inconnu. C'est ma chambre.*"
+  },
+  "day5_ending_forget_7": {
+    "name": "Moi",
+    "text": "*...C'est le matin.*"
+  },
+  "day5_ending_forget_8": {
+    "name": "Moi",
+    "text": "*Je me lève. Je m'étire. Des cerisiers sont visibles par la fenêtre. Beaux.*"
+  },
+  "day5_ending_forget_9": {
+    "name": "Moi",
+    "text": "*Aujourd'hui, c'est... mon premier jour de transfert.*"
+  },
+  "day5_ending_forget_10": {
+    "name": "Moi",
+    "text": "*Un nouveau lycée. Une nouvelle classe. De nouveaux amis. Le cœur bat. Un peu nerveux, mais... aussi excité. Quel genre de personnes y aura-t-il ?*"
+  },
+  "day5_ending_forget_11": {
+    "name": "Moi",
+    "text": "*J'enfile l'uniforme. Je me regarde dans le miroir.*"
+  },
+  "day5_ending_forget_12": {
+    "name": "Moi",
+    "text": "*Pour une raison quelconque... des larmes coulent. Pourquoi est-ce que je pleure ? Je ne suis pas triste. Il n'y a rien de triste.*"
+  },
+  "day5_ending_forget_13": {
+    "name": "Moi",
+    "text": "*J'ai essuyé les larmes. Bizarre. Pourquoi j'ai pleuré. ...Ce doit être l'état d'esprit du moment. Nerveux parce que c'est le premier jour.*"
+  },
+  "day5_ending_forget_14": {
+    "name": "Moi",
+    "text": "*Je prends mon téléphone. Pas de noms dans les contacts. Une liste de contacts vide. ...C'était toujours comme ça ? Et mes amis de mon ancien lycée ? ...C'était où, mon ancien lycée ? ...Je ne me souviens pas. Ça va. Je me ferai de nouveaux amis.*"
+  },
+  "day5_ending_forget_15": {
+    "name": "Moi",
+    "text": "*J'ouvre la porte d'entrée. Des pétales de cerisier entrent en flottant. Beaux. ...Pourquoi j'ai le cœur serré quand je vois des pétales de cerisier ?*"
+  },
+  "day5_ending_forget_ghost": {
+    "name": "",
+    "text": "\"Fuis\""
+  },
+  "day5_ending_forget_16": {
+    "name": "Moi",
+    "text": "*...J'ai cru entendre quelque chose. Juste mon imagination. Allons au lycée.*"
+  },
+  "day5_ending_forget_sea_branch": {
+    "name": "",
+    "text": ""
+  },
+  "day5_ending_forget_sea_max": {
+    "name": "Moi",
+    "text": "*Une fille se tient devant le portail du lycée. Un sourire lumineux. Un brassard de déléguée de classe.*"
+  },
+  "day5_ending_forget_sea_max_2": {
+    "name": "Han Sea",
+    "text": "\"Bonjour ! T'es l'élève qui a transféré aujourd'hui, hein ? Je vais te faire visiter.\""
+  },
+  "day5_ending_forget_sea_max_3": {
+    "name": "Moi",
+    "text": "*...Cette personne, j'ai l'impression de l'avoir vue quelque part. Où était-ce ? ...Je ne me souviens pas.*"
+  },
+  "day5_ending_forget_sea_max_4": {
+    "name": "Han Sea",
+    "text": "\"Viens par ici. ...{name}.\""
+  },
+  "day5_ending_forget_subtitle": {
+    "name": "",
+    "text": "Réinitialisation — Tout depuis le début."
+  },
+  "day5_ending_forget_title": {
+    "name": "",
+    "text": ""
+  },
+  "day5_ending_ghost": {
+    "name": "Moi",
+    "text": "*...*"
+  },
+  "day5_ending_ghost_2": {
+    "name": "Moi",
+    "text": "*...Où est-ce ?*"
+  },
+  "day5_ending_ghost_3": {
+    "name": "Moi",
+    "text": "*Le lycée. ...C'est ça. Le lycée. Le lycée que je fréquentais.*"
+  },
+  "day5_ending_ghost_4": {
+    "name": "Moi",
+    "text": "*Je suis debout dans le couloir. Les tubes fluorescents brillent faiblement. La lumière rouge des lumières de secours.*"
+  },
+  "day5_ending_ghost_5": {
+    "name": "Moi",
+    "text": "*J'ai regardé mes pieds. ...Mes pieds ne touchent pas le sol. Très légèrement. En lévitation.*"
+  },
+  "day5_ending_ghost_6": {
+    "name": "Moi",
+    "text": "*J'ai levé la main. Je l'ai regardée. ...Elle est transparente. À travers les espaces entre mes doigts, les carreaux du couloir sont visibles.*"
+  },
+  "day5_ending_ghost_7": {
+    "name": "Moi",
+    "text": "*Je suis devenu comme Seolhwa. Je suis... un être lié à ce lycée.*"
+  },
+  "day5_ending_ghost_8": {
+    "name": "Moi",
+    "text": "*J'ai essayé de marcher. Aucun bruit de pas. Je passe devant des salles de classe. Des élèves sont assis à l'intérieur. Ils étudient. Personne ne me regarde.*"
+  },
+  "day5_ending_ghost_9": {
+    "name": "Moi",
+    "text": "*Un élève passe à travers moi. Son bras a traversé mon corps. Aucune sensation. ...Invisible. Inaudible. Intouchable.*"
+  },
+  "day5_ending_ghost_10": {
+    "name": "Moi",
+    "text": "*Mon nom. Comment je m'appelais ? ...Je ne me souviens plus. Il aura été effacé de la liste de présence. Comme Seolhwa. Le temps passe. Je ne sais pas combien. Les saisons changent. Les cerisiers fleurissent et tombent.*"
+  },
+  "day5_ending_ghost_11": {
+    "name": "Moi",
+    "text": "*...Un nouvel élève transféré arrive.*"
+  },
+  "day5_ending_ghost_12": {
+    "name": "Moi",
+    "text": "*La porte de la classe s'ouvre, et un visage inconnu entre. Une expression tendue. Des yeux excités. ...J'étais comme ça au début moi aussi.*"
+  },
+  "day5_ending_ghost_13": {
+    "name": "???",
+    "text": "\"Bonjour ! À partir d'aujourd'hui je change de lycée pour venir ici...\""
+  },
+  "day5_ending_ghost_14": {
+    "name": "Moi",
+    "text": "*Madame Eunsu sourit et l'accueille. Sea fait signe de la main. Riin sourit depuis l'infirmerie. Le même schéma. Les mêmes sourires. Le même piège.*"
+  },
+  "day5_ending_ghost_15": {
+    "name": "Moi",
+    "text": "*...Cette fois, c'est moi qui dois les prévenir. Comme Seolhwa l'a fait pour moi. Je me suis approché de l'élève transféré. J'ai essayé de toucher son épaule avec une main invisible. Il ne le sent pas.*"
+  },
+  "day5_ending_ghost_whisper": {
+    "name": "",
+    "text": "\"Fuis\""
+  },
+  "day5_ending_ghost_16": {
+    "name": "Moi",
+    "text": "*J'ai essayé de graver des mots dans la boîte de dialogue. Comme Seolhwa le faisait. En texte fantôme. ...Ça s'écrit. Très petit. Faiblement.*"
+  },
+  "day5_ending_ghost_17": {
+    "name": "Moi",
+    "text": "*L'élève transféré a regardé l'écran. S'est arrêté un moment. ...Et a continué. N'y a pas prêté attention. ...Bien sûr. J'étais pareil au début.*"
+  },
+  "day5_ending_ghost_18": {
+    "name": "Moi",
+    "text": "*Mais je continuerai. Tous les jours. À chaque instant. Jusqu'à ce que cet enfant apprenne la vérité. Comme Seolhwa l'a fait pour moi. Comme elle n'a pas abandonné. ...Je suis là. Invisible, mais. Incapable d'obtenir mon diplôme, mais. D'ici, je continuerai à prévenir.*"
+  },
+  "day5_ending_ghost_subtitle": {
+    "name": "",
+    "text": "Vestige — Les chroniques de celui qui n'a jamais obtenu son diplôme."
+  },
+  "day5_ending_ghost_title": {
+    "name": "",
+    "text": ""
+  }
 }

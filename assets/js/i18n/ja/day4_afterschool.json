@@ -1,443 +1,431 @@
 {
   "day4_after_start": {
     "name": "私",
-    "text": "*放課後。今日で4日目だ。ソルファが言った『5日』……明日が最後だ。*"
+    "text": "*放課後。4日目だ。ソルファが言った「五日間」……明日が最後の日だ。*"
   },
   "day4_after_start_2": {
-    "name": "私",
-    "text": "*今、動かなければ。*"
+    "name": "ハン・セア",
+    "text": "\"{name}、今日も生徒会室に来る？新しいお菓子を買ったんだけど。\""
   },
   "day4_after_start_3": {
     "name": "私",
-    "text": "*...Knowing now what's behind Sea's smile, that smile looks different.*"
+    "text": "*……セアの笑顔の裏にあるものを知った今、その笑顔は違って見える。*"
   },
   "day4_after_start_4": {
     "name": "私",
-    "text": "*The basement. The stairs that were in Yuna's camera. What Seolhwa carved on the rooftop: 'The answer is in the basement.' Everything points to the same place.*"
+    "text": "*地下室。ユナのカメラにあった階段。屋上のソルファの言葉：「答えは地下にある」。全部が同じ場所を指している。*"
   },
   "day4_after_choice": {
     "name": "私",
-    "text": "*どこへ行く。*",
+    "text": "*あるいは……セアについていって直接真実を聞くべきか。それとも今まで集めた証拠を整理するか。*",
     "choices": [
       "地下室を探す",
-      "セアについて行く",
+      "セアについていく",
       "証拠を整理する"
     ]
   },
   "day4_after_basement": {
     "name": "私",
-    "text": "*ソルファが残した手がかり。『地下』。校舎裏の階段を見つけた。*"
+    "text": "*「すぐ戻る」とセアに言って抜け出した。*"
   },
   "day4_after_basement_2": {
     "name": "私",
-    "text": "*錆びたドア。南京錠が壊れている。誰かがすでにここに来たことがある。*"
+    "text": "*旧校舎に向かう。ユナのカメラの写真にあった階段を探さなければ。*"
   },
   "day4_after_basement_3": {
     "name": "私",
-    "text": "*……地下室。蛍光灯がちらついている。生臭い匂い。*"
+    "text": "*旧校舎は授業に使われていない。照明が薄暗い。蛍光灯の半分が消えている。*"
   },
   "day4_after_basement_4": {
     "name": "私",
-    "text": "*ベッドが複数。医療機器。薬品が入ったキャビネット。これは……実験室？*"
+    "text": "*廊下を歩く。自分の足音だけが響く。ドン。ドン。ドン。*"
   },
   "day4_after_basement_5": {
     "name": "私",
-    "text": "*壁にチャートが貼ってある。『被験者反応記録』。名前と番号。ほとんどに赤いX印。*"
+    "text": "*……ここだ。廊下の奥にドアがある。「関係者以外立入禁止」のサイン。カメラの写真と同じ場所だ。*"
   },
   "day4_after_basement_6": {
     "name": "私",
-    "text": "*机の引き出しから文書を見つけた。『記憶操作プロトコル』……『転校生確保手順』……『理事会承認：不適応生徒特別自律化行動矯正プログラム（内部コードネーム：ネバーグラード）— 完全な順応性達成のための認知再構築研究』……行動矯正プログラム。名前だけ見ればまともな福祉事業だ。コードネーム「ネバーグラード」。この学校の名前であり……実験の本当の名前。*"
+    "text": "*錆びたドア。南京錠がついていたけど……壊れている。誰かがここに来た。ユナ？それともソルファ？*"
   },
   "day4_after_basement_7": {
     "name": "私",
-    "text": "*……！ 隅の方から物音がする。誰かいる。*"
+    "text": "*ドアを開けた。ギィ。音が廊下に響いた。心臓が止まりそうだった。*"
   },
   "day4_after_basement_8": {
-    "name": "チェ・ユナ",
-    "text": "\"……先輩……？ 先輩……なの……？\""
+    "name": "私",
+    "text": "*階段が下へ続いている。暗い。湿った匂いが上がってくる。かすかに金属的な……消毒液の匂い。……降りていく。一段。一段。壁に手を当てる。冷たい。湿っている。*"
   },
   "day4_after_basement_9": {
     "name": "私",
-    "text": "*ユナが倒れている。顔が蒼白だ。腕に注射の跡。*",
-    "choices": [
-      "ユナを連れて出る",
-      "ひとまず隠れる"
-    ]
+    "text": "*階段が終わった。もう一つドアがある。開いている。……地下室だ。蛍光灯がちらついている。ジジジ。ジジジ。光が入るたびに内部が見える。*"
   },
   "day4_after_basement_10": {
     "name": "私",
-    "text": "***Beds. Multiple. Medical beds. Leather straps on the armrests.***"
+    "text": "***ベッドが並んでいる。複数。医療用ベッド。肘掛けに革製の拘束帯がついている。***"
   },
   "day4_after_basement_11": {
     "name": "私",
-    "text": "***Medical equipment. Monitors. Cabinets filled with chemicals. Syringes arranged in rows.***"
+    "text": "***医療機器。モニター。薬品で満たされたキャビネット。注射器が一列に並んでいる。***"
   },
   "day4_after_basement_12": {
     "name": "私",
-    "text": "*...This isn't a nurse's office. This is... a laboratory.*"
+    "text": "*……これは保健室じゃない。これは……研究室だ。*"
   },
   "day4_after_basement_13": {
     "name": "私",
-    "text": "*My hands are shaking. My legs are shaking. I want to run out. But I have to see. To the end.*"
+    "text": "*手が震えている。足が震えている。走って出たい。でも見なければ。最後まで。*"
   },
   "day4_after_basement_14": {
     "name": "私",
-    "text": "*A chart hanging on the wall. It reads 'Subject Response Records.' Names and numbers listed. Subject #1... #3... #7... #12... Most with a red X beside the names. 'Memory reconstruction failed,' 'Side effects: personality dissociation,' 'Processing complete'...*"
+    "text": "*壁にかかった表。「被験者応答記録」と書いてある。名前と番号が並んでいる。被験者№1……№3……№7……№12……ほとんどの名前に赤い×印がついている。「記憶再構成失敗」、「副作用：人格解離」、「処理完了」……*"
   },
   "day4_after_basement_15": {
     "name": "私",
-    "text": "*#7 — Lee Seolhwa. Beside the X there's a note: 'Adverse effect. Retained all memories. Containment impossible. Final processing executed.' ...Seolhwa.*"
+    "text": "*№7——イ・ソルファ。×印の横にメモがある。「悪影響あり。全記憶保持。封じ込め不可能。最終処理実行。」……ソルファ。*"
   },
   "day4_after_basement_16": {
     "name": "私",
-    "text": "*I opened a desk drawer. A pile of documents. My hands are shaking so badly I can barely hold them. 'Memory Manipulation Protocol — ver.4.2'*"
+    "text": "*机の引き出しを開けた。書類の束。手が震えすぎてまともに持てない。「記憶操作プロトコル——ver.4.2」*"
   },
   "day4_after_basement_17": {
     "name": "私",
-    "text": "*'Transfer Student Acquisition Procedures: Sever ties with original school → Induce adaptation to new environment → Gradual drug administration over 5 days → Memory reconstruction → Compliance verification'*"
+    "text": "*「転校生獲得手順：元の学校との関係を断つ→新環境への適応を促す→5日間にわたり段階的に薬物投与→記憶再構成→服従確認」*"
   },
   "day4_after_basement_18": {
     "name": "私",
-    "text": "*'Board Approved: Special Autonomous Behavioral Correction Program for Maladjusted Students (Internal Codename: Nevergrad) — Cognitive Restructuring Research for Complete Compliance' ...A behavioral correction program. Just reading the name it sounds like a normal welfare initiative. Codename 'Nevergrad.' This school's name and... the experiment's true name.*"
+    "text": "*「理事会認可：不適応学生向け特別自律型行動矯正プログラム（内部コードネーム：Nevergrad）——完全服従のための認知再構成研究」……行動矯正プログラム。その名前を見るだけでは普通の福祉事業に聞こえる。コードネーム「Nevergrad」。この学校の名前と……実験の本当の名前。*"
   },
   "day4_after_basement_19": {
     "name": "私",
-    "text": "*I unfolded another document. 'Subject #13 — In Progress.' A photo is attached. ...My photo. My legs gave out. I had to lean against the wall. Struggling to breathe. ...Number 13. My number. They were targeting me from the start...*"
+    "text": "*もう一枚の書類を広げた。「被験者№13——進行中」。写真が貼ってある。……私の写真だ。膝から力が抜けた。壁にもたれかかるしかなかった。息ができない。……番号13。私の番号。最初から私が標的だった……*"
   },
   "day4_after_basement_20": {
     "name": "私",
-    "text": "*...! From the corner, a sound. A small moan. Someone is here. The fluorescent light flickers. As the light came in, I saw someone lying in the corner.*"
+    "text": "*……！隅から音がした。小さなうめき声。誰かいる。蛍光灯がちらついた。光が差した瞬間、隅に倒れている人が見えた。*"
   },
   "day4_after_basement_21": {
-    "name": "チェ・ユナ",
-    "text": "\"...Senpai...?\""
+    "name": "ユナ",
+    "text": "\"……先輩……？\""
   },
   "day4_after_basement_22": {
     "name": "私",
-    "text": "*It's Yuna. Collapsed on a bed in the corner.*"
+    "text": "*ユナだ。隅のベッドに倒れている。*"
   },
   "day4_after_basement_23": {
-    "name": "チェ・ユナ",
-    "text": "\"Senpai... is that you...? ...How did you...\""
+    "name": "ユナ",
+    "text": "\"先輩……そこにいるんですか……？……どうやって……\""
   },
   "day4_after_basement_24": {
     "name": "私",
-    "text": "*I approached. Yuna's face is pale. Her lips are cracked. The area under her eyes is darkly sunken. Needle marks on her arm. Multiple. From fresh to old. ...Yuna didn't 'transfer.' She was here. From the start.*"
+    "text": "*近づいた。ユナの顔が青白い。唇が乾ききっている。目の下が暗く落ちくぼんでいる。腕に注射の跡。複数。新しいものから古いものまで。……ユナは「突然転校した」んじゃなかった。ずっとここにいた。最初から。*"
   },
   "day4_after_basement_25": {
-    "name": "チェ・ユナ",
-    "text": "\"...Senpai, we need to... get out of here. Quickly...\""
+    "name": "ユナ",
+    "text": "\"……先輩、逃げないといけない。早く……\""
   },
   "day4_after_basement_26": {
     "name": "私",
-    "text": "*Yuna grabs my sleeve. Her hand has no strength.*"
+    "text": "*ユナが袖を掴む。力がない手で。*"
   },
   "day4_after_basement_timer": {
-    "name": "チェ・ユナ",
-    "text": "\"They're... coming soon. Every day at this time...\"",
+    "name": "ユナ",
+    "text": "\"あの人たちが……もうすぐ来るんです。毎日この時間に……\"",
     "choices": [
-      "Take Yuna and leave",
-      "Hide for now"
+      "ユナを連れて出る",
+      "今は隠れる"
     ]
   },
   "day4_after_basement_rescue": {
     "name": "私",
-    "text": "*ユナを支えた。重い。でもここに置いてはいけない。*"
+    "text": "*ユナの腕を肩に担いだ。軽い。何日食べていないんだろう。*"
   },
   "day4_after_basement_rescue_2": {
-    "name": "チェ・ユナ",
-    "text": "\"先輩……ありがとう……ここから……出なきゃ……\""
+    "name": "私",
+    "text": "\"立てる？\""
   },
   "day4_after_basement_rescue_3": {
-    "name": "チェ・ユナ",
-    "text": "\"...Yes. Slowly but...\""
+    "name": "ユナ",
+    "text": "\"……はい。ゆっくりなら……\""
   },
   "day4_after_basement_rescue_4": {
     "name": "私",
-    "text": "*I found another exit on the opposite side. There's a small door beside the ventilation shaft. Looks like it leads outside.*"
+    "text": "*反対側に別の出口を見つけた。換気口の横に小さなドアがある。外につながっているようだ。*"
   },
   "day4_after_basement_rescue_5": {
     "name": "私",
-    "text": "*Supporting Yuna, I opened the door and slipped out into the darkness.*"
+    "text": "*ユナを支えてドアを開け、暗闇の中へ出た。*"
   },
   "day4_after_basement_hide": {
     "name": "私",
-    "text": "*足音が聞こえる。キャビネットの裏に隠れた。*"
+    "text": "*キャビネットの陰に隠れた。ユナに合図した。頷いた。*"
   },
   "day4_after_basement_hide_2": {
     "name": "私",
-    "text": "*誰かが地下室を確認して去った。ユナを置いて出てきた。……ごめん、ユナ。*"
+    "text": "*足音が近づいてくる。地下室のドアが開いた。蛍光灯の下に長い影が落ちた。*"
   },
   "day4_after_basement_hide_3": {
     "name": "私",
-    "text": "*...It's Nurse Riin. She enters carrying a medicine tray. I held my breath. My heart hammers against my ribs. Will I be found? Will she hear my heartbeat?*"
+    "text": "*……リイン先生だ。薬のトレーを持って入ってきた。息を止めた。心臓が肋骨を叩いている。見つかるだろうか。心臓の音が聞こえないか。*"
   },
   "day4_after_basement_hide_4": {
     "name": "私",
-    "text": "*Nurse Riin takes medicine from the cabinet and... left. The door closes. Footsteps fade away.*"
+    "text": "*リイン先生がキャビネットから薬を取り出して……出ていった。ドアが閉まった。足音が遠ざかっていく。*"
   },
   "day4_after_basement_hide_5": {
     "name": "私",
-    "text": "*...We made it. I need to get Yuna out. Now.*"
+    "text": "*……助かった。今すぐユナを連れ出さなければ。*"
   },
   "day4_after_sea_route": {
-    "name": "ハン・セア",
-    "text": "\"{name}、今日も一緒に行こう！ どこがいいかな。\""
+    "name": "私",
+    "text": "*セアについていって生徒会室に来た。*"
   },
   "day4_after_sea_2": {
     "name": "私",
-    "text": "*セアについて行った。セアが空き教室に入る。*"
+    "text": "*セアが鍵をかけた。カチャ。……今までかけたことなかったのに。*"
   },
   "day4_after_sea_3": {
     "name": "ハン・セア",
-    "text": "\"{name}。話があるの。\""
+    "text": "\"今日は二人だけでいたかったんだ。\""
   },
   "day4_after_sea_4": {
-    "name": "ハン・セア",
-    "text": "\"ユナと一緒にいる時の{name}の顔……つらそうだったよ。ウンス先生といる時も。リイン先生といる時も。\""
+    "name": "私",
+    "text": "*セアが微笑む。でもその目が……いつもと違う。何かに追われているような目。*"
   },
   "day4_after_sea_5": {
     "name": "ハン・セア",
-    "text": "\"私と一緒にいる時が{name}が一番リラックスしてるように見える。……私だけ見てればいいんじゃない？\"",
-    "choices": [
-      "わかった",
-      "それはちょっと……"
-    ]
+    "text": "\"……{name}。\""
   },
   "day4_after_sea_6": {
     "name": "私",
-    "text": "*Sea sits down in a chair. She looks up at me.*"
+    "text": "*セアが椅子に座る。見上げてくる。*"
   },
   "day4_after_sea_7": {
     "name": "ハン・セア",
-    "text": "\"When {name} is with Yuna, your expression... isn't good. Same with Ms. Eunsu. And Nurse Riin.\""
+    "text": "\"ユナといると、{name}の表情が……よくないんだよね。ウンス先生のときも。リイン先生のときも。\""
   },
   "day4_after_sea_8": {
     "name": "私",
-    "text": "*Sea's voice drops lower.*"
+    "text": "*セアの声が低くなった。*"
   },
   "day4_after_sea_force": {
     "name": "ハン・セア",
-    "text": "\"When you're with me, {name} looks most comfortable. ...Don't you only need to look at me?\"",
+    "text": "\"私といるとき、{name}が一番楽そうだよ。……私だけを見ていれば良くない？\"",
     "choices": [
-      "Okay",
-      "That's a bit..."
+      "うん",
+      "それはちょっと……"
     ]
   },
   "day4_after_sea_accept": {
-    "name": "ハン・セア",
-    "text": "\"...やっぱり{name}は優しいね。私だけの{name}。\""
+    "name": "私",
+    "text": "*……何？二番目の選択肢……文字が歪んで一番目と同じ文字に変わった。どちらを選んでも同じ結果だ。これは「選択」じゃない。通知だ。*"
   },
   "day4_after_sea_accept_2": {
-    "name": "私",
-    "text": "*セアが抱きついてきた。背中に回された手がぎゅっと締めつけてくる。……これは抱擁じゃない。*"
+    "name": "ハン・セア",
+    "text": "\"……そう。{name}は本当に私の味方なんだね。\""
   },
   "day4_after_sea_accept_3": {
     "name": "私",
-    "text": "*Sea smiles. But this time the smile doesn't stop. It's as if her upturned mouth corners are frozen.*"
+    "text": "*セアが微笑む。でも今度はその笑みが止まらない。上がった口角が凍りついたかのようだ。*"
   },
   "day4_after_sea_accept_4": {
     "name": "ハン・セア",
-    "text": "\"**My person.**\""
+    "text": "\"**私の人。**\""
   },
   "day4_after_sea_crack": {
-    "name": "ハン・セア",
-    "text": "\"……たまに考えるの。ここを出たら……私はどこに行けばいいんだろう。\""
+    "name": "私",
+    "text": "*……その言葉に鳥肌が立った。「人」という言葉が「物」のように聞こえた。セアが窓の外を見る。陽が沈んでいく。*"
   },
   "day4_after_sea_crack_2": {
-    "name": "私",
-    "text": "*一瞬、セアの目に恐怖が走った。本当の感情。この子も……何かに囚われているのか。でもすぐに消えた。*"
+    "name": "ハン・セア",
+    "text": "\"……たまに考えるの。ここを出たら、私どこに行けばいいんだろうって。\""
   },
   "day4_after_sea_crack_3": {
     "name": "私",
-    "text": "*Her voice changed. The firm voice is... wavering.*"
+    "text": "*声が変わった。固かった声が……揺らいでいる。*"
   },
   "day4_after_sea_crack_4": {
     "name": "ハン・セア",
-    "text": "\"I don't know what the outside world is like. I've spent my whole life just doing what Ms. Eunsu told me.\""
+    "text": "\"外の世界がどんなものかわからない。ウンス先生に言われたことをただやるだけで、一生を過ごしてきたから。\""
   },
   "day4_after_sea_crack_5": {
     "name": "ハン・セア",
-    "text": "\"She told me to get close to the new students... to report on them.\""
+    "text": "\"新しく来た生徒に近づいて……報告するように言われてた。\""
   },
   "day4_after_sea_crack_6": {
     "name": "私",
-    "text": "*Sea gripped her hands tightly on her knees. Her knuckles turned white.*"
+    "text": "*セアが膝の上で手をぎゅっと握った。指の関節が白くなった。*"
   },
   "day4_after_sea_crack_7": {
     "name": "ハン・セア",
-    "text": "\"...I thought that's all there was. I thought it was doing good things.\""
+    "text": "\"……それしかないと思ってた。それが正しいことをしていると思ってた。\""
   },
   "day4_after_sea_crack_8": {
     "name": "ハン・セア",
-    "text": "\"But the students I reported on changed one by one. Seolhwa... disappeared entirely.\""
+    "text": "\"でも私が報告した生徒たちが一人一人変わっていった。ソルファは……完全に消えた。\""
   },
   "day4_after_sea_crack_9": {
     "name": "ハン・セア",
-    "text": "\"...That's when I got scared for the first time.\""
+    "text": "\"……そのとき初めて怖くなった。\""
   },
   "day4_after_sea_crack_10": {
     "name": "私",
-    "text": "*Sea's voice grows smaller. Barely audible.*"
+    "text": "*セアの声がどんどん小さくなる。ほとんど聞こえないくらい。*"
   },
   "day4_after_sea_crack_11": {
     "name": "ハン・セア",
-    "text": "\"But I thought {name}... would be different.\""
+    "text": "\"でも{name}は……違うと思った。\""
   },
   "day4_after_sea_crack_12": {
     "name": "私",
-    "text": "*Sea's eyes waver.*"
+    "text": "*セアの目が揺れる。*"
   },
   "day4_after_sea_crack_13": {
     "name": "ハン・セア",
-    "text": "\"In the end you'll also... run away and leave me here alone.\""
+    "text": "\"結局あなたも……逃げて私を一人残していくんだよね。\""
   },
   "day4_after_sea_crack_14": {
     "name": "ハン・セア",
-    "text": "\"You'll abandon me.\""
+    "text": "\"捨てるんだよね。私を。\""
   },
   "day4_after_sea_crack_15": {
     "name": "私",
-    "text": "*Sea looks at me. Tears are pooling in her eyes.*"
+    "text": "*セアが私を見る。目に涙が溜まっている。*"
   },
   "day4_after_sea_crack_16": {
     "name": "ハン・セア",
-    "text": "\"I really fell for you. Not surveillance. Genuinely. This isn't an act. At least this... please believe me.\""
+    "text": "\"本当に好きだったんだよ。監視じゃなくて。心から。演技じゃない。これだけは……信じてほしい。\""
   },
   "day4_after_sea_crack_17": {
     "name": "私",
-    "text": "*For a moment, fear flickered through Sea's eyes. Real emotion. Raw beneath the mask. Sea is also trapped in something. This school. Ms. Eunsu. The cage called 'a role.' It vanished quickly. Sea wipes her tears. Smiles. Puts the mask back on.*"
+    "text": "*一瞬、セアの目に恐怖が走った。仮面の下から滲み出た本物の感情。セアも何かに囚われている。この学校。ウンス先生。「役割」という名の檻。それはすぐ消えた。セアが涙を拭く。微笑む。仮面をつけ直す。*"
   },
   "day4_after_sea_crack_18": {
     "name": "ハン・セア",
-    "text": "\"...Forget it. Forget everything I just said.\""
+    "text": "\"……忘れて。今言ったこと全部忘れて。\""
   },
   "day4_after_sea_crack_19": {
     "name": "私",
-    "text": "*Sea hugged me. Her hands tighten around my back. I can barely breathe. ...I can tell this isn't a hug. This is obsession.*"
+    "text": "*セアが抱きしめてきた。背中に腕が回って力が入る。息ができない。……これは抱擁じゃない。執着だ。*"
   },
   "day4_after_sea_crack_20": {
     "name": "私",
-    "text": "*But Sea's shoulders are trembling. Slightly. Quietly. This trembling is... not just obsession. It's fear. Fear of being alone if she lets go. ...Sea is also a victim. Understanding that doesn't make this situation less frightening.*"
+    "text": "*でもセアの肩が震えている。かすかに。静かに。この震えは……執着だけじゃない。離したら一人になってしまうという恐怖。……セアも被害者なんだ。それを理解しても、この状況が怖いことに変わりはない。*"
   },
   "day4_after_evidence": {
     "name": "私",
-    "text": "*教室に残って、これまで集めた証拠を整理する。*"
+    "text": "*教室に一人で残った。今まで集めたものをバッグから全部出した。*"
   },
   "day4_after_evidence_2": {
     "name": "私",
-    "text": "*メモリーカードの写真、転校生の名簿、『処理完了日』……パズルが組み上がり始める。*"
+    "text": "*ユナのメモリーカード。ロッカーで見つけたカメラ。写真の欠片。屋上のソルファのメッセージを撮った写真。*"
   },
   "day4_after_evidence_3": {
     "name": "私",
-    "text": "*ユナのカメラに撮られた写真を確認する。地下室の入口の写真がある。*"
+    "text": "*一つ一つつなげていく。パズルのピースのように。*"
   },
   "day4_after_evidence_4": {
     "name": "私",
-    "text": "*転校生たちは『消えた』んじゃない。『処理された』んだ。記憶を消し、完全に従順な生徒に作り変える……理事会が支援する実験施設。この学校全体が。*"
+    "text": "*転校生がやってくる。5日間かけて適応させる。薬を投与する。記憶を操作する。服従すれば「卒業」。抵抗すれば……「処理」。*"
   },
   "day4_after_evidence_5": {
-    "name": "担任教師",
-    "text": "\"……{name}。まだここにいたの？\""
+    "name": "私",
+    "text": "*転校生たちは「消えた」んじゃない——「処理された」んだ。記憶を消して、完全に従順な生徒に変える……理事会が資金提供する研究施設。この学校全体が。*"
   },
   "day4_after_evidence_6": {
     "name": "私",
-    "text": "*ウンス先生が教室のドアの前に立っている。表情が暗い。*",
+    "text": "*ウンス先生が転校生を「管理」する。リインが薬を投与する。セアが監視して報告する。……そして私は番号13だ。スマホに証拠を写真に収めた。念のために。これが外に出れば——*"
+  },
+  "day4_after_evidence_7": {
+    "name": "担任",
+    "text": "\"……{name}。まだいたの？\""
+  },
+  "day4_after_evidence_8": {
+    "name": "私",
+    "text": "*顔を上げた。ウンス先生が教室のドアに立っている。……いつから？足音が聞こえなかった。ウンス先生の表情は複雑だ。怒っているわけでも悲しんでいるわけでもない……ただ疲れている。*"
+  },
+  "day4_after_evidence_9": {
+    "name": "私",
+    "text": "*先生の視線が机の上のメモリーカードと写真の欠片の上を通り過ぎた。*"
+  },
+  "day4_after_evidence_timer": {
+    "name": "私",
+    "text": "*先生の視線が机の上のメモリーカードと写真の欠片の上を通り過ぎた。*",
     "choices": [
       "逃げる",
       "じっとしている"
     ]
   },
-  "day4_after_evidence_7": {
-    "name": "パク・ウンス",
-    "text": "\"...{name}. You're still here?\""
-  },
-  "day4_after_evidence_8": {
-    "name": "私",
-    "text": "*I looked up. Ms. Eunsu is standing at the classroom door. ...When did she get there? I didn't hear footsteps. Ms. Eunsu's expression is complicated. Not angry, not sad... just exhausted.*"
-  },
-  "day4_after_evidence_9": {
-    "name": "私",
-    "text": "*The teacher's gaze sweeps over the memory card and photo fragment on my desk.*"
-  },
-  "day4_after_evidence_timer": {
-    "name": "私",
-    "text": "*The teacher's gaze sweeps over the memory card and photo fragment on my desk.*",
-    "choices": [
-      "Run",
-      "Stay still"
-    ]
-  },
   "day4_after_evidence_run": {
     "name": "私",
-    "text": "*机を押して道を塞ぎ、走った。後ろからヒールの音が追ってくる。でも逃げ切った。*"
+    "text": "*椅子から立ち上がった。証拠をバッグに払い込んで反対側のドアに走った。廊下に飛び出した。後ろでウンス先生の声が聞こえる。*"
   },
   "day4_after_evidence_run_2": {
-    "name": "パク・ウンス",
-    "text": "\"...{name}.\""
+    "name": "担任",
+    "text": "\"……{name}。\""
   },
   "day4_after_evidence_run_3": {
     "name": "私",
-    "text": "*She doesn't chase. Standing in place and speaking.*"
+    "text": "*追いかけてこない。その場に立ったまま話している。*"
   },
   "day4_after_evidence_run_4": {
-    "name": "パク・ウンス",
-    "text": "\"Come back, {name}. No matter how far you run, you'll only get hurt.\""
+    "name": "担任",
+    "text": "\"戻っておいで{name}。どれだけ逃げても、傷つくだけよ。\""
   },
   "day4_after_evidence_run_5": {
-    "name": "パク・ウンス",
-    "text": "\"You just need to do what your teacher says here. That's the safest.\""
+    "name": "担任",
+    "text": "\"ここで先生の言うことを聞いていれば、それが一番安全なの。\""
   },
   "day4_after_evidence_run_6": {
     "name": "私",
-    "text": "*Running down the corridor, I looked back. Ms. Eunsu is leaning against the doorframe. A pitying expression.*"
+    "text": "*廊下を走りながら振り返った。ウンス先生がドア枠に寄りかかっている。哀れむような表情。*"
   },
   "day4_after_evidence_run_7": {
     "name": "私",
-    "text": "*...This person genuinely believes she's right. That's even more frightening. No time to think further. I have to run.*"
+    "text": "*……この人は本当に自分が正しいと思っている。それがかえって怖い。考えている暇はない。走らなければ。*"
   },
   "day4_after_evidence_stay": {
     "name": "私",
-    "text": "*My body froze. I can't move. ...I need to run, but my legs won't listen.*"
+    "text": "*体が固まった。動けない。……逃げなければ、でも足が言うことを聞かない。*"
   },
   "day4_after_evidence_stay_2": {
-    "name": "パク・ウンス",
-    "text": "\"You saw it all.\""
+    "name": "担任",
+    "text": "\"全部見ていたのね。\""
   },
   "day4_after_evidence_stay_3": {
     "name": "私",
-    "text": "*Ms. Eunsu slowly enters the classroom. One step. One step.*"
+    "text": "*ウンス先生がゆっくり教室に入ってくる。一歩。一歩。*"
   },
   "day4_after_evidence_stay_4": {
-    "name": "パク・ウンス",
-    "text": "\"...The documents.\""
+    "name": "担任",
+    "text": "\"……書類を。\""
   },
   "day4_after_evidence_stay_5": {
     "name": "私",
-    "text": "*The teacher lets out a sigh. A long, deep sigh. An expression I've never seen before.*"
+    "text": "*先生が深いため息をつく。長い、重いため息。今まで見たことのない表情。*"
   },
   "day4_after_evidence_stay_6": {
-    "name": "パク・ウンス",
-    "text": "\"...I didn't want it to be like this from the start, {name}.\""
+    "name": "担任",
+    "text": "\"……最初からこうしたかったわけじゃないの、{name}。\""
   },
   "day4_after_evidence_stay_7": {
     "name": "私",
-    "text": "*The teacher stands before me. Close.*"
+    "text": "*先生が私の前に立った。近く。*"
   },
   "day4_after_evidence_stay_8": {
-    "name": "パク・ウンス",
-    "text": "\"It's alright, {name}. Your teacher will take care of everything.\""
+    "name": "担任",
+    "text": "\"大丈夫よ{name}。先生が全部なんとかしてあげる。\""
   },
   "day4_after_evidence_stay_9": {
     "name": "私",
-    "text": "*The teacher's hand strokes my head. Gently. Warmly.*"
+    "text": "*先生の手が頭を撫でた。そっと。温かく。*"
   },
   "day4_after_evidence_stay_10": {
-    "name": "パク・ウンス",
-    "text": "\"...**You just need to stay here.**\""
+    "name": "担任",
+    "text": "\"……**ここにいるだけでいいの。**\""
   },
   "day4_after_end": {
     "name": "私",
-    "text": "*日が暮れる。明日が最後の日だ。必ず……ここから出なければ。*"
+    "text": "*「大丈夫」には二つの意味がある。慰めなのか警告なのか。……たぶん両方だ。先生の手が温かい。その温もりが怖い。*"
   }
 }

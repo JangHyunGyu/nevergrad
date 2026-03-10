@@ -1,200 +1,199 @@
 {
-    "day3_after_start": {
-        "name": "Moi",
-        "text": "*Après les cours. L'école est étrangement calme aujourd'hui.*"
-    },
-    "day3_after_choice": {
-        "name": "Moi",
-        "text": "*C'est la fin des cours.*",
-        "choices": [
-            "Passer à l'infirmerie",
-            "Rentrer avec Sea",
-            "Aller à la salle des professeurs",
-            "Rester seul"
-        ]
-    },
-    "day3_after_riin": {
-        "name": "Infirmière",
-        "text": "\"Oh, {name}. Tu tombes bien. Tu as l'air un peu fatigué aujourd'hui ?\""
-    },
-    "day3_after_riin_2": {
-        "name": "Infirmière",
-        "text": "\"Assieds-toi ici. J'ai préparé une boisson santé spéciale — un mélange de vitamines et de plantes.\""
-    },
-    "day3_after_riin_3": {
-        "name": "Moi",
-        "text": "*Riin me tend une tasse avec un liquide violet pâle. ...L'odeur est un peu étrange.*"
-    },
-    "day3_after_riin_flicker": {
-        "name": "",
-        "text": "도망쳐"
-    },
-    "day3_after_riin_choice": {
-        "name": "Moi",
-        "text": "*Est-ce que je la bois ?*",
-        "choices": [
-            "La boire",
-            "Décliner poliment"
-        ]
-    },
-    "day3_after_riin_drink": {
-        "name": "Riin",
-        "text": "\"Bien. Tu en sentiras l'effet bientôt.\""
-    },
-    "day3_after_riin_drink_2": {
-        "name": "Moi",
-        "text": "*Je l'ai bue. ...Un arrière-goût amer persiste sur ma langue. Attends, ma vision est légèrement...*"
-    },
-    "day3_after_riin_drink_3": {
-        "name": "Moi",
-        "text": "*...Non, ça va. Je suis juste fatigué, c'est tout.*"
-    },
-    "day3_after_riin_refuse": {
-        "name": "Riin",
-        "text": "\"...Ah bon ? Quel dommage.\""
-    },
-    "day3_after_riin_refuse_2": {
-        "name": "Riin",
-        "text": "\"Ce n'est pas grave, tu pourras la boire la prochaine fois. ...Tu la boiras la prochaine fois, n'est-ce pas ?\""
-    },
-    "day3_after_sea": {
-        "name": "Han Sea",
-        "text": "\"{name}, allons-y ensemble. Je veux aller voir la nouvelle boulangerie !\""
-    },
-    "day3_after_sea_2": {
-        "name": "Moi",
-        "text": "*En marchant dans le couloir avec Sea. Elle a l'air joyeuse comme d'habitude, mais...*"
-    },
-    "day3_after_sea_choice": {
-        "name": "Moi",
-        "text": "*Comment je réponds ?*",
-        "choices": [
-            "Dire la vérité",
-            "Éluder la question"
-        ]
-    },
-    "day3_after_sea_truth": {
-        "name": "Han Sea",
-        "text": "\"...Avec Yuna. Seuls. Je vois.\""
-    },
-    "day3_after_sea_truth_2": {
-        "name": "Moi",
-        "text": "*Sea sourit. Elle sourit, mais... ses yeux ne sourient pas.*"
-    },
-    "day3_after_sea_truth_3": {
-        "name": "Moi",
-        "text": "*세아가 창밖을 본다. 한참을.*"
-    },
-    "day3_after_sea_truth_4": {
-        "name": "Han Sea",
-        "text": "\"...나도 가끔 생각해. 내가 왜 이러고 있는 건지.\""
-    },
-    "day3_after_sea_truth_5": {
-        "name": "Moi",
-        "text": "*세아가 말을 멈추고 고개를 흔든다. 뭔가 말하려다 삼킨 것 같다.*"
-    },
-    "day3_after_sea_truth_6": {
-        "name": "Han Sea",
-        "text": "\"...아무것도 아니야. 잊어.\""
-    },
-    "day3_after_sea_truth_7": {
-        "name": "Moi",
-        "text": "*세아가 다시 웃는다. 이번에는 눈도 웃고 있다. 하지만 아까의 그 순간이... 연기가 아니었다는 건 알겠다.*"
-    },
-    "day3_after_sea_lie": {
-        "name": "Han Sea",
-        "text": "\"Vraiment ? Tant mieux. J'étais toute seule, je me sentais abandonnée !\""
-    },
-    "day3_after_sea_lie_2": {
-        "name": "Moi",
-        "text": "*Sea a attrapé mon bras. Plus fort que d'habitude.*"
-    },
-    "day3_after_eunsu": {
-        "name": "Professeure",
-        "text": "\"Oh, {name}. Tu es encore là ? Je travaille tard moi aussi, haha.\""
-    },
-    "day3_after_eunsu_2": {
-        "name": "Moi",
-        "text": "*La professeure est plongée dans une pile de documents. J'aperçois quelque chose entre les pages.*"
-    },
-    "day3_after_eunsu_3": {
-        "name": "Professeure",
-        "text": "\"Attends un instant, je finis ça... Oh, tu veux un café ?\""
-    },
-    "day3_after_eunsu_choice": {
-        "name": "Moi",
-        "text": "*Est-ce que je regarde les documents ?*",
-        "choices": [
-            "Jeter un œil en secret",
-            "Ne pas regarder"
-        ]
-    },
-    "day3_after_eunsu_peek": {
-        "name": "Moi",
-        "text": "*J'ai feuilleté les documents. Une liste d'élèves transférés... avec des dates à côté de chaque nom. Date de transfert et... 'Date d'achèvement du traitement' ?*"
-    },
-    "day3_after_eunsu_peek_2": {
-        "name": "Moi",
-        "text": "*Mon nom est là aussi. La colonne à côté de la date est... encore vide.*"
-    },
-    "day3_after_eunsu_peek_3": {
-        "name": "Eunsu",
-        "text": "\"...Qu'est-ce que tu regardes ?\""
-    },
-    "day3_after_eunsu_peek_4": {
-        "name": "Park Eunsu",
-        "text": "\"출석부 보고 있었구나?\""
-    },
-    "day3_after_eunsu_peek_5": {
-        "name": "Moi",
-        "text": "*은수 선생님이 웃고 있다. 커피를 들고. 여유롭게. ...이 사람은 내가 보는 걸 알고 있었다. 아니, **보게 둔 거다.***"
-    },
-    "day3_after_eunsu_peek_6": {
-        "name": "Park Eunsu",
-        "text": "\"열심이네. 선생님이 관리하는 명단이야. 전학생 적응 현황 같은 거지.\""
-    },
-    "day3_after_eunsu_peek_7": {
-        "name": "Park Eunsu",
-        "text": "\"...뭐, 궁금한 거 있어?\""
-    },
-    "day3_after_eunsu_ignore": {
-        "name": "Eunsu",
-        "text": "\"Merci d'avoir attendu. Tiens, du café.\""
-    },
-    "day3_after_eunsu_ignore_2": {
-        "name": "Moi",
-        "text": "*J'ai discuté avec Mme Eunsu autour d'un café. C'était chaleureux et confortable. ...Vraiment ?*"
-    },
-    "day3_after_eunsu_ignore_3": {
-        "name": "Park Eunsu",
-        "text": "\"전학생 적응 현황표야. {name}... 적응 잘 하고 있다고 적어놨어.\""
-    },
-    "day3_after_eunsu_ignore_4": {
-        "name": "Moi",
-        "text": "*서류를 서랍에 넣는다. 자연스럽게. 하지만 '네 이름도 있다'는 말이 남아 있다.*"
-    },
-    "day3_after_alone": {
-        "name": "Moi",
-        "text": "*Seul dans la salle de classe. La carte mémoire dans ma poche me pèse sur la conscience.*"
-    },
-    "day3_after_alone_no_card": {
-        "name": "Moi",
-        "text": "*Salle de classe silencieuse. Le temps a passé sans rien de particulier.*"
-    },
-    "day3_after_alone_2": {
-        "name": "Moi",
-        "text": "*J'ai sorti mon ordinateur portable et inséré la carte mémoire.*"
-    },
-    "day3_after_alone_3": {
-        "name": "Moi",
-        "text": "*Des photos. Des salles de classe vides, des casiers vidés, des bureaux avec des noms grattés... Et des photos de documents prises dans la salle des professeurs.*"
-    },
-    "day3_after_alone_4": {
-        "name": "Moi",
-        "text": "*Un document intitulé 'Liste des sujets'. Des numéros et des noms en lignes... la plupart barrés en rouge.*"
-    },
-    "day3_after_end": {
-        "name": "Moi",
-        "text": "*Je quitte l'école. Le coucher de soleil est rouge. ...Rouge comme du sang.*"
-    }
+  "day3_after_start": {
+    "name": "Moi",
+    "text": "*Après les cours. Le lycée semble étrangement silencieux aujourd'hui.*"
+  },
+  "day3_after_choice": {
+    "name": "Moi",
+    "text": "*C'est l'heure d'après les cours.*",
+    "choices": [
+      "Passer à l'infirmerie",
+      "Rentrer avec Sea",
+      "Aller en salle des profs",
+      "Rester seul"
+    ]
+  },
+  "day3_after_riin": {
+    "name": "Riin",
+    "text": "\"Assieds-toi. J'ai préparé une boisson de santé. Un mélange de vitamines et de plantes.\""
+  },
+  "day3_after_riin_2": {
+    "name": "Moi",
+    "text": "*Riin me tend une tasse avec un liquide violet pâle. Une odeur légèrement bizarre.*"
+  },
+  "day3_after_riin_3": {
+    "name": "Moi",
+    "text": "*...Attendez. La main de l'infirmière Riin tremble très légèrement. La main qui tient la tasse.*"
+  },
+  "day3_after_riin_flicker": {
+    "text": "Fuis"
+  },
+  "day3_after_riin_choice": {
+    "name": "Moi",
+    "text": "*Est-ce que je la bois ?*",
+    "choices": [
+      "La boire",
+      "Décliner poliment"
+    ]
+  },
+  "day3_after_riin_drink": {
+    "name": "Riin",
+    "text": "\"Bien. L'effet va se faire sentir bientôt.\""
+  },
+  "day3_after_riin_drink_2": {
+    "name": "Moi",
+    "text": "*Je l'ai bue. ...Un arrière-goût amer persiste sur ma langue. Attendez, ma vision est légèrement...*"
+  },
+  "day3_after_riin_drink_3": {
+    "name": "Moi",
+    "text": "*...Au moment où l'infirmière Riin s'est détournée, j'ai surpris son expression. Du soulagement ? Non. De la **douleur**. Ça a disparu aussitôt.*"
+  },
+  "day3_after_riin_refuse": {
+    "name": "Riin",
+    "text": "\"...Ah bon ? D'accord, je ne vais pas t'y forcer.\""
+  },
+  "day3_after_riin_refuse_2": {
+    "name": "Moi",
+    "text": "*L'infirmière Riin reprend la tasse. Elle sourit, mais sa main tremble encore.*"
+  },
+  "day3_after_sea": {
+    "name": "Han Sea",
+    "text": "\"...{name}, t'étais où à la pause déjeuner ?\""
+  },
+  "day3_after_sea_2": {
+    "name": "Han Sea",
+    "text": "\"J'ai entendu dire que t'étais sur le toit avec Yuna, tous les deux seuls. Quelqu'un me l'a dit.\""
+  },
+  "day3_after_sea_choice": {
+    "name": "Moi",
+    "text": "*Comment je réponds ?*",
+    "choices": [
+      "Dire la vérité",
+      "Esquiver la question"
+    ]
+  },
+  "day3_after_sea_truth": {
+    "name": "Moi",
+    "text": "*Sea sourit. Elle sourit, mais... ses yeux ne sourient pas.*"
+  },
+  "day3_after_sea_truth_2": {
+    "name": "Han Sea",
+    "text": "\"Je vois, honnête. ...J'aime l'honnêteté.\""
+  },
+  "day3_after_sea_truth_3": {
+    "name": "Moi",
+    "text": "*Sea regarde par la fenêtre. Pendant un long moment.*"
+  },
+  "day3_after_sea_truth_4": {
+    "name": "Han Sea",
+    "text": "\"...Je me demande parfois. Pourquoi je fais ça.\""
+  },
+  "day3_after_sea_truth_5": {
+    "name": "Moi",
+    "text": "*Sea s'arrête de parler et secoue la tête. On dirait qu'elle allait dire quelque chose et qu'elle l'a ravalé.*"
+  },
+  "day3_after_sea_truth_6": {
+    "name": "Han Sea",
+    "text": "\"...Laisse tomber. Oublie ça.\""
+  },
+  "day3_after_sea_truth_7": {
+    "name": "Moi",
+    "text": "*Sea sourit à nouveau. Cette fois ses yeux sourient aussi. Mais ce moment juste là... je sens que ce n'était pas un acte.*"
+  },
+  "day3_after_sea_lie": {
+    "name": "Moi",
+    "text": "*Les yeux de Sea se plissent.*"
+  },
+  "day3_after_sea_lie_2": {
+    "name": "Han Sea",
+    "text": "\"...Tu mens. Je vois tout de suite quand {name} ment.\""
+  },
+  "day3_after_eunsu": {
+    "name": "Moi",
+    "text": "*Madame Eunsu me tend un café. Il est chaud.*"
+  },
+  "day3_after_eunsu_2": {
+    "name": "Moi",
+    "text": "*Des documents sont éparpillés sur le bureau. On peut lire **'Registre de suivi des élèves transférés'**. ...Mes yeux s'y sont posés.*"
+  },
+  "day3_after_eunsu_3": {
+    "name": "Moi",
+    "text": "*Madame Eunsu boit son café et me regarde. Elle ne range pas les documents.*"
+  },
+  "day3_after_eunsu_choice": {
+    "name": "Moi",
+    "text": "*Est-ce que je regarde les documents ?*",
+    "choices": [
+      "Jeter un coup d'œil discrètement",
+      "Détourner le regard"
+    ]
+  },
+  "day3_after_eunsu_peek": {
+    "name": "Moi",
+    "text": "*Liste des élèves transférés. Des dates écrites à côté des noms. Date de transfert et... **'Date de finalisation du traitement'** ?*"
+  },
+  "day3_after_eunsu_peek_2": {
+    "name": "Moi",
+    "text": "*Septième ligne. 'Lee Seolhwa'. Une date d'il y a un an. Dans la colonne de finalisation, en rouge : **'ÉCHEC'**.*"
+  },
+  "day3_after_eunsu_peek_3": {
+    "name": "Moi",
+    "text": "*...Seolhwa ? La fille assise au fond de la classe ? Traitement ? Échec ? Mon nom est là aussi. Treizième ligne. La colonne à côté de la date est... **encore vide**.*"
+  },
+  "day3_after_eunsu_peek_4": {
+    "name": "Professeure principale",
+    "text": "\"Vous regardiez la feuille d'appel ?\""
+  },
+  "day3_after_eunsu_peek_5": {
+    "name": "Moi",
+    "text": "*Madame Eunsu sourit. Elle tient son café. À l'aise. ...Elle savait que je regardais. Non — **elle m'a laissé regarder**.*"
+  },
+  "day3_after_eunsu_peek_6": {
+    "name": "Professeure principale",
+    "text": "\"Quelle minutie. C'est une liste que je gère. Quelque chose comme un rapport d'avancement de l'intégration des élèves transférés.\""
+  },
+  "day3_after_eunsu_peek_7": {
+    "name": "Professeure principale",
+    "text": "\"...Vous avez des questions ?\""
+  },
+  "day3_after_eunsu_ignore": {
+    "name": "Moi",
+    "text": "*...Ce n'est pas bien de regarder les documents de quelqu'un d'autre. J'ai juste bu mon café.*"
+  },
+  "day3_after_eunsu_ignore_2": {
+    "name": "Professeure principale",
+    "text": "\"Pas curieux ? Votre nom y est aussi, vous savez.\""
+  },
+  "day3_after_eunsu_ignore_3": {
+    "name": "Professeure principale",
+    "text": "\"C'est une feuille de suivi d'intégration. J'ai écrit que {name}... s'adapte bien.\""
+  },
+  "day3_after_eunsu_ignore_4": {
+    "name": "Moi",
+    "text": "*Elle range les documents dans un tiroir. Sans façon. Mais les mots 'votre nom y est aussi' restent avec moi.*"
+  },
+  "day3_after_alone": {
+    "name": "Moi",
+    "text": "*J'ai sorti mon ordinateur portable et inséré la carte mémoire.*"
+  },
+  "day3_after_alone_no_card": {
+    "name": "Moi",
+    "text": "*La salle de classe silencieuse. Le temps a passé sans rien de particulier.*"
+  },
+  "day3_after_alone_2": {
+    "name": "Moi",
+    "text": "*Des photos. Des salles de classe vides, des casiers vidés, des bureaux dont les noms ont été grattés... Et des photos de documents prises en salle des profs.*"
+  },
+  "day3_after_alone_3": {
+    "name": "Moi",
+    "text": "*Un document intitulé **'Liste des sujets'**. Des numéros et des noms en rangées... la plupart barrés en rouge.*"
+  },
+  "day3_after_alone_4": {
+    "name": "Moi",
+    "text": "*La dernière ligne. **Numéro 07. Mon nom est écrit là.** Le trait rouge... n'y est pas encore.*"
+  },
+  "day3_after_end": {
+    "name": "Moi",
+    "text": "*Je quitte le lycée. Le coucher de soleil est rouge. ...Rouge comme du sang.*"
+  }
 }

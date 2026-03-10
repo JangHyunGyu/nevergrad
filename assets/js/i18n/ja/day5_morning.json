@@ -1,302 +1,305 @@
 {
   "day5_morning_start": {
     "name": "私",
-    "text": "*5日目。最後の日。目が覚めた。*"
+    "text": "*5日目。*"
   },
   "day5_morning_start_2": {
     "name": "私",
-    "text": "*窓の外を見る。空が灰色だ。雨が降りそうだ。*"
+    "text": "*最後の日だ。*"
   },
   "day5_morning_start_3": {
     "name": "私",
-    "text": "*……行こう。今日中に終わらせる。*"
+    "text": "*目が覚めた。アラームは鳴らなかった。体が自然に起きた。*"
   },
   "day5_morning_start_4": {
     "name": "私",
-    "text": "*I look out the window. The sky is gray. Clouds hang low. It looks like rain.*"
+    "text": "*窓の外を見た。空が灰色だ。雲が低く垂れ込めている。雨が降りそうだ。*"
   },
   "day5_morning_start_5": {
     "name": "私",
-    "text": "*...Day 1 morning was clear. Cherry blossoms were in bloom. In just four days, the world has changed this much.*"
+    "text": "*……1日目の朝は晴れていた。桜が咲いていた。たった4日で、世界はこんなに変わった。*"
   },
   "day5_morning_start_6": {
     "name": "私",
-    "text": "*No. The world hasn't changed. It's the way I see it that has changed.*"
+    "text": "*違う。世界が変わったんじゃない。私の見方が変わったんだ。*"
   },
   "day5_morning_start_7": {
     "name": "私",
-    "text": "*I checked my bag. The things I packed last night. My phone with the evidence. Yuna's memory card. The photo fragment.*"
+    "text": "*バッグを確認した。昨夜詰めたもの。証拠が入ったスマホ。ユナのメモリーカード。写真の欠片。*"
   },
   "day5_morning_start_8": {
     "name": "私",
-    "text": "*...I have to get out today. Before 11 PM tonight.*"
+    "text": "*……今日中に出ないといけない。今夜11時より前に。*"
   },
   "day5_morning_start_9": {
     "name": "私",
-    "text": "*I put on my uniform. My face in the mirror... is not the face from Day 1. My eyes are different. Eyes that have learned what fear looks like.*"
+    "text": "*制服を着た。鏡の中の顔が……1日目とは別人だ。目が違う。恐怖がどんなものか知った目。*"
   },
   "day5_morning_start_10": {
     "name": "私",
-    "text": "*Deep breath. One. Two. Three.*"
+    "text": "*深呼吸。一つ。二つ。三つ。*"
   },
   "day5_morning_start_11": {
     "name": "私",
-    "text": "*...I'm going.*"
+    "text": "*……行く。*"
   },
   "day5_morning_gate": {
     "name": "私",
-    "text": "*学校の正門。鎖が巻かれている。正門以外の出口は……すべて塞がれている。*"
+    "text": "*学校への道。最後の登校。*"
   },
   "day5_morning_gate_2": {
     "name": "私",
-    "text": "*生徒たちが何事もないかのように正門を通り過ぎていく。まるで……見えていないかのように。*"
+    "text": "*……足取りが重い。一歩一歩が鉛を引きずるようだ。*"
   },
   "day5_morning_gate_3": {
     "name": "私",
-    "text": "*三人が正門の前に並んで立っている。*"
+    "text": "*校門が見えてきた。*"
   },
   "day5_morning_gate_4": {
     "name": "私",
-    "text": "*The front gate is open. Same as always. Students pass through in small groups.*"
+    "text": "*校門は開いている。いつも通り。生徒が小グループで通り抜けている。*"
   },
   "day5_morning_gate_5": {
     "name": "私",
-    "text": "*...I just have to go out. Past the front gate, turn left, and the bus stop is there. Get on any bus.*"
+    "text": "*……ただ出ればいいだけだ。校門を出て左に曲がればバス停がある。どのバスにでも乗ればいい。*"
   },
   "day5_morning_gate_6": {
     "name": "私",
-    "text": "*I took one step forward. Two steps. The gate gets closer.*"
+    "text": "*一歩踏み出した。二歩。校門が近くなる。*"
   },
   "day5_morning_gate_choice": {
     "name": "私",
     "text": "",
     "choices": [
-      "Keep walking forward",
-      "Turn back"
-    ]
+      "そのまま前へ進む",
+      "引き返す"
+    ],
+    "dodgeChoice": true,
+    "dodgeIndex": 0,
+    "maxAttempts": 4
   },
   "day5_morning_gate_dodge_fail": {
     "name": "私",
-    "text": "*...Forward. I have to go forward.*"
+    "text": "*……前へ。前へ進まなければ。*"
   },
   "day5_morning_paralysis_1": {
     "name": "私",
-    "text": "*...On the third step, my legs stopped.*"
+    "text": "*……三歩目で足が止まった。*"
   },
   "day5_morning_paralysis_2": {
     "name": "私",
-    "text": "*They won't move. I have the will to walk, but my legs won't listen. As if they've been embedded in concrete.*"
+    "text": "*動かない。歩こうという意志はあるのに足が言うことを聞かない。コンクリートに埋め込まれたかのように。*"
   },
   "day5_morning_paralysis_3": {
     "name": "私",
-    "text": "*The tea I drank last night. The 'good for sleep' tea that Nurse Riin gave me. ...Could it be?*"
+    "text": "*昨夜飲んだお茶。「よく眠れる」とリイン先生がくれたお茶。……まさか。*"
   },
   "day5_morning_paralysis_4": {
     "name": "私",
-    "text": "*I look around. Students pass through the gate. Casually. Smiling.*"
+    "text": "*周りを見た。生徒たちが校門を通り抜けていく。気軽に。微笑みながら。*"
   },
   "day5_morning_paralysis_5": {
     "name": "私",
-    "text": "*Only I can't move. The gate is open. Nobody is blocking me.*"
+    "text": "*私だけが動けない。校門は開いている。誰も塞いでいない。*"
   },
   "day5_morning_paralysis_6": {
     "name": "私",
-    "text": "*Standing in front of an open door and I can't take a single step out. This... this is the school's real prison.*"
+    "text": "*開いたドアの前に立って、一歩も外に踏み出せない。これが……この学校の本当の牢獄だ。*"
   },
   "day5_morning_watchers_1": {
     "name": "私",
-    "text": "*I turned around and looked back.*"
+    "text": "*振り返った。*"
   },
   "day5_morning_watchers_2": {
     "name": "私",
-    "text": "*Inside the school gate. Ms. Eunsu is sitting on a bench. Sea is standing under a tree. Nurse Riin is looking down from the nurse's office window.*"
+    "text": "*校門の中。ウンス先生がベンチに座っている。セアが木の下に立っている。リイン先生が保健室の窓から見下ろしている。*"
   },
   "day5_morning_watchers_3": {
     "name": "私",
-    "text": "*All in different positions. A natural-looking scene. But all three are watching me.*"
+    "text": "*三人がそれぞれ違う場所に。自然に見える風景。でも三人とも私を見ている。*"
   },
   "day5_morning_watchers_4": {
     "name": "私",
-    "text": "*All three are smiling.*"
+    "text": "*三人とも微笑んでいる。*"
   },
   "day5_morning_welcome": {
-    "name": "担任教師",
-    "text": "\"おはよう、{name}。今日は特別な日よ。\""
+    "name": "担任",
+    "text": "\"おはよう{name}。\""
   },
   "day5_morning_welcome_2": {
-    "name": "ハン・セア",
-    "text": "\"{name}！ 今日は一日中一緒にいよう。\""
+    "name": "私",
+    "text": "*ウンス先生がベンチから立ち上がってゆっくり近づいてくる。急がずに。まるで私が動けないと最初からわかっているかのように。*"
   },
   "day5_morning_welcome_3": {
-    "name": "保健教師",
-    "text": "\"今日、健康診断の仕上げをしないとね。放課後に必ず保健室に来てね。\""
+    "name": "担任",
+    "text": "\"今日は特別な日ね。準備はできてる？\""
   },
   "day5_morning_welcome_4": {
-    "name": "私",
-    "text": "*三人の微笑みが重なって見える。同じ微笑み。……狩人の微笑み。*"
+    "name": "ハン・セア",
+    "text": "\"{name}。\""
   },
   "day5_morning_welcome_5": {
     "name": "私",
-    "text": "*Sea takes my arm. Naturally. Her grip is strong.*"
+    "text": "*セアが腕を取った。自然に。力強い。*"
   },
   "day5_morning_welcome_6": {
     "name": "ハン・セア",
-    "text": "\"Let's stay together all day today. Let's never separate.\""
+    "text": "\"今日は一日中ずっと一緒にいよう。絶対に離れないで。\""
   },
   "day5_morning_welcome_7": {
     "name": "私",
-    "text": "*There's weight in the word 'never.'*"
+    "text": "*「絶対に」という言葉に重みがあった。*"
   },
   "day5_morning_welcome_8": {
-    "name": "カン・リイン",
-    "text": "\"There's still the health checkup to finish.\""
+    "name": "リイン",
+    "text": "\"健康診断の続きがあるわ。\""
   },
   "day5_morning_welcome_9": {
     "name": "私",
-    "text": "*Nurse Riin smiles. Her hand is in her coat pocket. Something bulges inside the pocket.*"
+    "text": "*リイン先生が微笑む。コートのポケットに手が入っている。ポケットの中で何かが膨らんでいる。*"
   },
   "day5_morning_welcome_10": {
-    "name": "カン・リイン",
-    "text": "\"Come to the nurse's office after school. ...Be sure to come.\""
+    "name": "リイン",
+    "text": "\"放課後、保健室に来てね。……必ず来るのよ。\""
   },
   "day5_morning_welcome_11": {
     "name": "私",
-    "text": "*The three smiles overlap before my eyes.*"
+    "text": "*三つの笑顔が目の前で重なる。*"
   },
   "day5_morning_welcome_12": {
     "name": "私",
-    "text": "*The same smile. The same angle. The same depth. The same warmth.*"
+    "text": "*同じ笑顔。同じ角度。同じ深さ。同じ温もり。*"
   },
   "day5_morning_welcome_13": {
     "name": "私",
-    "text": "*...A hunter's smile.*"
+    "text": "*……狩人の笑顔だ。*"
   },
   "day5_morning_welcome_14": {
     "name": "私",
-    "text": "*And I am the prey. Already inside the cage.*"
+    "text": "*そして私は獲物だ。すでに檻の中にいる。*"
   },
   "day5_morning_classroom": {
     "name": "私",
-    "text": "*教室。黒板に文字が書いてある。*"
+    "text": "*セアに腕を掴まれたまま教室に入った。*"
   },
   "day5_morning_classroom_2": {
     "name": "私",
-    "text": "*『卒業式』と書いてある。……卒業式？ まだ5日目なのに？*"
+    "text": "*黒板に文字が書いてある。ウンス先生の筆跡で。*"
   },
   "day5_morning_classroom_3": {
     "name": "私",
-    "text": "*ウンス先生が教壇に立つ。*"
+    "text": "*「卒業式」*"
   },
   "day5_morning_classroom_4": {
     "name": "私",
-    "text": "*...Graduation ceremony? Only five days since I transferred? What graduation?*"
+    "text": "*……卒業式？転校してまだ5日なのに？何の卒業？*"
   },
   "day5_morning_classroom_5": {
     "name": "私",
-    "text": "*I sat down. Sea sits next to me. Not her usual seat. She dragged a chair right up beside me.*"
+    "text": "*席に座った。セアが隣に座った。いつもの席じゃない。椅子を引きずってすぐ隣に持ってきた。*"
   },
   "day5_morning_classroom_6": {
     "name": "私",
-    "text": "*Ms. Eunsu stands at the podium. She doesn't call roll. She starts talking right away.*"
+    "text": "*ウンス先生が教壇に立った。出欠を取らない。すぐ話し始めた。*"
   },
   "day5_morning_class": {
-    "name": "担任教師",
-    "text": "\"今日は特別な授業よ。『卒業』について話してみましょうか。\""
+    "name": "担任",
+    "text": "\"今日は特別な授業をしましょう。\""
   },
   "day5_morning_class_2": {
-    "name": "担任教師",
-    "text": "\"卒業とは一つの過程の終わりよ。過程を終えれば……新しい場所へ行くことになるの。\""
+    "name": "担任",
+    "text": "\"「卒業」について話しましょう。\""
   },
   "day5_morning_class_3": {
-    "name": "担任教師",
-    "text": "\"{name}、あなたの卒業も……今日よ。\""
+    "name": "私",
+    "text": "*先生が黒板を指した。「卒業式」の文字の下にさらに書き加えた。「＝完成」*"
   },
   "day5_morning_class_4": {
-    "name": "担任教師",
-    "text": "\"みんなも知っての通り、学校の外はとても冷たくて危険な場所でしょう。傷ついて、失敗して、折れて……\""
+    "name": "担任",
+    "text": "\"みなさんも知っているように、学校の外の世界はとても冷たくて危険よ。傷ついて、失敗して、壊れて……\""
   },
   "day5_morning_class_5": {
-    "name": "パク・ウンス",
-    "text": "\"That's why your teacher wants you to 'graduate' in the safest and most pristine state possible.\""
+    "name": "担任",
+    "text": "\"だから先生は、あなたたちに一番安全できれいな状態で「卒業」してほしいの。\""
   },
   "day5_morning_class_6": {
     "name": "私",
-    "text": "*The teacher turns around. She looks at me. Only me.*"
+    "text": "*先生が振り返った。私だけを見ている。*"
   },
   "day5_morning_class_7": {
-    "name": "パク・ウンス",
-    "text": "\"Some students take three years to realize that, but our class is very special...\""
+    "name": "担任",
+    "text": "\"中には3年かけてそれに気づく生徒もいるけど、うちのクラスはとても特別で……\""
   },
   "day5_morning_class_8": {
-    "name": "パク・ウンス",
-    "text": "\"...Five days is enough.\""
+    "name": "担任",
+    "text": "\"……5日で十分なの。\""
   },
   "day5_morning_class_9": {
     "name": "私",
-    "text": "*The classroom goes quiet. You can't even hear breathing.*"
+    "text": "*教室が静まり返った。息の音さえしない。*"
   },
   "day5_morning_class_10": {
-    "name": "パク・ウンス",
-    "text": "\"{name}, your graduation too... is today.\""
+    "name": "担任",
+    "text": "\"{name}、あなたの卒業も……今日よ。\""
   },
   "day5_morning_class_11": {
     "name": "私",
-    "text": "*The teacher smiles. Warmly. As if in congratulation.*"
+    "text": "*先生が微笑む。温かく。お祝いするように。*"
   },
   "day5_morning_class_12": {
     "name": "私",
-    "text": "*...Every other student in the classroom is staring at me. Thirty faces. Nobody moves.*"
+    "text": "*……教室の他の生徒が全員私を見ている。三十の顔。誰も動かない。*"
   },
   "day5_morning_class_13": {
     "name": "私",
-    "text": "*It seems like nobody is breathing. Like mannequins. Like dolls.*"
+    "text": "*誰も呼吸していないようだ。マネキンのよう。人形のよう。*"
   },
   "day5_morning_class_14": {
     "name": "私",
-    "text": "*Sea takes my hand. Tight. My fingers hurt.*"
+    "text": "*セアが手を握った。強く。指が痛い。*"
   },
   "day5_morning_class_15": {
     "name": "私",
-    "text": "*I have to get out of this classroom. I have to hold on until lunch. That's when I move.*"
+    "text": "*昼まで持ちこたえなければ。そこが行動するタイミングだ。*"
   },
   "day5_morning_class_16": {
     "name": "私",
-    "text": "*...Can I hold on?*"
+    "text": "*……持ちこたえられるか。*"
   },
   "day5_morning_note": {
     "name": "私",
-    "text": "*机の裏にメモが貼ってある。ユナの字だ。*"
+    "text": "*授業の途中。鉛筆を落としたふりをして机の下を見た。*"
   },
   "day5_morning_note_2": {
     "name": "私",
-    "text": "*『昼休みに旧館3階。脱出ルートを見つけたよ。— ユナ』*"
+    "text": "*メモが貼ってある。いつの間に貼ったんだろう。ユナの字だ。小さくびっしりと書かれている。*"
   },
   "day5_morning_note_3": {
     "name": "私",
-    "text": "*'Lunch — end corridor, 3rd floor, old building. There's an emergency exit. The route Seolhwa-sunbae found. I found the escape route. — Yuna'*"
+    "text": "*「昼休み——旧校舎3階の廊下の端。非常口がある。ソルファ先輩が見つけたルート。逃げ道を見つけた。——ユナ」*"
   },
   "day5_morning_note_4": {
     "name": "私",
-    "text": "*The route Seolhwa found. The very route Seolhwa told me about in last night's dream.*"
+    "text": "*ソルファが見つけたルート。昨夜の夢でソルファが教えてくれたのと全く同じ場所だ。*"
   },
   "day5_morning_note_5": {
     "name": "私",
-    "text": "*How did Yuna know this? ...Did Yuna also meet Seolhwa?*"
+    "text": "*ユナはどうして知っているんだろう。……ユナもソルファと会ったのか？*"
   },
   "day5_morning_note_6": {
     "name": "私",
-    "text": "*I put the note in my pocket. My heart beats. I feel something called hope again for the first time in four days.*"
+    "text": "*メモをポケットにしまった。4日ぶりに「希望」というものを感じた。*"
   },
   "day5_morning_note_7": {
     "name": "私",
-    "text": "*Lunch. That's the only chance.*"
+    "text": "*昼休み。それが唯一のチャンスだ。*"
   },
   "day5_morning_no_note": {
     "name": "私",
-    "text": "*Class ended. I have to find a way to escape on my own. There might be an emergency exit on the old building side...*"
+    "text": "*授業が終わった。自分で逃げ道を探さなければ。旧校舎の方に非常口があるかもしれない……*"
   },
   "day5_morning_end": {
     "name": "私",
-    "text": "*午前が終わった。時計が止まったかのように遅い。*"
+    "text": "*午前が終わった。時間が止まったように過ぎていく。*"
   }
 }

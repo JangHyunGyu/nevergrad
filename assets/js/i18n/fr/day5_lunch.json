@@ -1,562 +1,562 @@
 {
-    "day5_lunch_start": {
-        "name": "Moi",
-        "text": "*La sonnerie du déjeuner a retenti. Maintenant ou jamais.*"
-    },
-    "day5_lunch_start_2": {
-        "name": "Moi",
-        "text": "*J'ai attrapé mon sac. Toutes les preuves dans mes poches. Mon cœur bat à tout rompre.*"
-    },
-    "day5_lunch_start_3": {
-        "name": "Moi",
-        "text": "*세아가 \"같이 밥 먹자\"라고 말하기 전에 자리에서 일어났다.*"
-    },
-    "day5_lunch_start_4": {
-        "name": "Moi",
-        "text": "\"화장실.\""
-    },
-    "day5_lunch_start_5": {
-        "name": "Moi",
-        "text": "*세아를 보지 않았다. 보면 멈출 것 같아서.*"
-    },
-    "day5_lunch_start_6": {
-        "name": "Moi",
-        "text": "*교실을 나왔다. 복도. 왼쪽으로. 구관 쪽으로.*"
-    },
-    "day5_lunch_start_7": {
-        "name": "Moi",
-        "text": "*걷는다. 뛰고 싶지만 걸어야 한다. 뛰면 눈에 띈다. 가방 끈을 꽉 쥐었다. 손바닥에 땀이 배어있다.*"
-    },
-    "day5_lunch_start_8": {
-        "name": "Moi",
-        "text": "*복도가 길다. 끝없이 길다. 구관으로 향하는 연결 통로가 보인다. 뒤를 돌아봤다. 아무도 없다. ...아직은.*"
-    },
-    "day5_lunch_branch": {
-        "name": "Moi",
-        "text": "*L'endroit que Yuna m'a indiqué. Ancien bâtiment, 3e étage.*"
-    },
-    "day5_lunch_yuna_meet": {
-        "name": "Choi Yuna",
-        "text": "\"Senpai... ! Tu es venu.\""
-    },
-    "day5_lunch_yuna_2": {
-        "name": "Choi Yuna",
-        "text": "\"Il y a une sortie de secours au bout du 3e étage. La seule issue.\""
-    },
-    "day5_lunch_yuna_3": {
-        "name": "Choi Yuna",
-        "text": "\"Mais... il faut traverser ce couloir. Quelqu'un le surveille sûrement.\""
-    },
-    "day5_lunch_yuna_4": {
-        "name": "Moi",
-        "text": "*Nos regards se sont croisés. On est prêts.*"
-    },
-    "day5_lunch_yuna_5": {
-        "name": "Moi",
-        "text": "\"유나. 괜찮아?\""
-    },
-    "day5_lunch_yuna_6": {
-        "name": "Choi Yuna",
-        "text": "\"괜찮지는 않아요. 근데... 갈 수 있어요.\""
-    },
-    "day5_lunch_yuna_7": {
-        "name": "Choi Yuna",
-        "text": "\"구관 3층 끝에 비상구가 있어요. 설화 선배가... 1년 전에 찾아놨던 길이래요. 선배가 꿈에서 알려줬어요.\""
-    },
-    "day5_lunch_yuna_8": {
-        "name": "Choi Yuna",
-        "text": "\"밖으로 나갈 수 있는 유일한 길이에요.\""
-    },
-    "day5_lunch_yuna_9": {
-        "name": "Choi Yuna",
-        "text": "\"근데... 그쪽 복도를 지나야 해요. 누군가 지키고 있을 거예요. ...아마.\""
-    },
-    "day5_lunch_yuna_10": {
-        "name": "Moi",
-        "text": "\"괜찮아. 같이 가자.\""
-    },
-    "day5_lunch_yuna_11": {
-        "name": "Moi",
-        "text": "*유나가 고개를 끄덕인다. 입술을 꽉 깨문다. 겁먹고 있다. 하지만 움직인다.*"
-    },
-    "day5_lunch_yuna_12": {
-        "name": "Moi",
-        "text": "*계단을 오르기 시작했다. 1층. 2층. 3층.*"
-    },
-    "day5_lunch_solo": {
-        "name": "Moi",
-        "text": "*Je marche dans le couloir. Où aller ? Je dois trouver... une sortie.*"
-    },
-    "day5_lunch_solo_2": {
-        "name": "Moi",
-        "text": "*Direction l'ancien bâtiment. Il devrait y avoir une sortie de secours là-bas.*"
-    },
-    "day5_lunch_escape_start": {
-        "name": "Moi",
-        "text": "*Je me suis mis à courir dans le couloir. Des pas derrière moi.*"
-    },
-    "day5_lunch_escape_2": {
-        "name": "Moi",
-        "text": "*Un embranchement !*",
-        "choices": [
-            "Couloir de gauche",
-            "Couloir de droite"
-        ]
-    },
-    "day5_lunch_escape_3": {
-        "name": "Moi",
-        "text": "*뒤에서 발소리가 들린다. 또각. 또각. 구두 소리. 한 쌍이 아니다. 여러 개.*"
-    },
-    "day5_lunch_escape_4": {
-        "name": "Moi",
-        "text": "*...쫓아왔다.*"
-    },
-    "day5_lunch_escape_5": {
-        "name": "Moi",
-        "text": "*뛴다. 복도를 뛰기 시작했다. 운동화가 타일을 때린다. 탁탁탁탁. 가방이 등에서 덜그럭거린다.*"
-    },
-    "day5_lunch_escape_6": {
-        "name": "Moi",
-        "text": "*분기점이 나온다. 복도가 T자로 갈라진다.*",
-        "choices": [
-            "왼쪽 복도",
-            "오른쪽 복도"
-        ]
-    },
-    "day5_lunch_escape_left": {
-        "name": "Han Sea",
-        "text": "\"...Où tu vas, {name} ?\""
-    },
-    "day5_lunch_left_2": {
-        "name": "Moi",
-        "text": "*...얼마 전까지 교실에 있었는데. 어떻게 여기에?*"
-    },
-    "day5_lunch_left_3": {
-        "name": "Han Sea",
-        "text": "\"...어디 가는 거야, {name}.\""
-    },
-    "day5_lunch_sea_talk_1": {
-        "name": "Han Sea",
-        "text": "\"나를 두고?\""
-    },
-    "day5_lunch_sea_talk_1b": {
-        "name": "Han Sea",
-        "text": "\"...버리는 거야?\""
-    },
-    "day5_lunch_sea_talk_1c": {
-        "name": "Moi",
-        "text": "*세아의 목소리가 차갑다. 1일차의 그 밝은 목소리가 아니다.*"
-    },
-    "day5_lunch_sea_callback": {
-        "name": "",
-        "text": ""
-    },
-    "day5_lunch_sea_cb_choco": {
-        "name": "Han Sea",
-        "text": "\"Tu avais dit que tu aimais le lait chocolaté en souriant. Tu m'as... menti ?\""
-    },
-    "day5_lunch_sea_cb_choco_2": {
-        "name": "Han Sea",
-        "text": "\"나한테... 거짓말한 거야?\""
-    },
-    "day5_lunch_sea_cb_lunch": {
-        "name": "Han Sea",
-        "text": "\"Je t'ai préparé le déjeuner chaque jour... Tout ça ne comptait pour rien ?\""
-    },
-    "day5_lunch_sea_cb_lunch_2": {
-        "name": "Han Sea",
-        "text": "\"그게 다 아무것도 아니었어?\""
-    },
-    "day5_lunch_sea_cb_vulnerability": {
-        "name": "Han Sea",
-        "text": "\"노을 지는 학생회실에서... 내 곁에 있어달라고 했을 때 고개 끄덕였잖아.\""
-    },
-    "day5_lunch_sea_cb_vulnerability_2": {
-        "name": "Han Sea",
-        "text": "\"거짓말쟁이.\""
-    },
-    "day5_lunch_sea_cb_default": {
-        "name": "Han Sea",
-        "text": "\"...On était dans la même classe. Rien que ça... c'était suffisant.\""
-    },
-    "day5_lunch_sea_cb_default_2": {
-        "name": "Han Sea",
-        "text": "\"그것만으로도... 충분했는데.\""
-    },
-    "day5_lunch_sea_tears": {
-        "name": "Moi",
-        "text": "*세아의 눈에서 눈물이 흐른다. 진짜 눈물이다. 이건 연기가 아니다.*"
-    },
-    "day5_lunch_sea_tears_2": {
-        "name": "Moi",
-        "text": "*...가슴이 아프다. 세아도 피해자라는 걸 안다. 이 학교에 갇힌 또 다른 새.*"
-    },
-    "day5_lunch_sea_tears_3": {
-        "name": "Moi",
-        "text": "*하지만 멈출 수 없다.*"
-    },
-    "day5_lunch_sea_block_route": {
-        "name": "",
-        "text": ""
-    },
-    "day5_lunch_sea_pass": {
-        "name": "Moi",
-        "text": "*Sea se tient dans le couloir. ...Mais elle ne bloque pas le passage. Elle me regarde d'un air absent.*"
-    },
-    "day5_lunch_sea_block_mid": {
-        "name": "Han Sea",
-        "text": "\"나를 두고? ...버리는 거야?\""
-    },
-    "day5_lunch_sea_block_mid_2": {
-        "name": "Moi",
-        "text": "*세아가 복도를 막고 있다.*",
-        "choices": [
-            "밀치고 지나간다",
-            "세아를 설득한다"
-        ]
-    },
-    "day5_lunch_sea_block_high": {
-        "name": "Han Sea",
-        "text": "\"...Non. Je ne peux pas te laisser partir.\""
-    },
-    "day5_lunch_sea_block_high_2": {
-        "name": "Moi",
-        "text": "*Sea m'a attrapé le bras. Sa main serre fort.*",
-        "choices": [
-            "La pousser et passer",
-            "Convaincre Sea"
-        ]
-    },
-    "day5_lunch_sea_block_max": {
-        "name": "Moi",
-        "text": "*'Clic.' Sea a verrouillé la porte de la salle de classe derrière elle. ...Impossible de sortir d'ici.*"
-    },
-    "day5_lunch_sea_block_max_2": {
-        "name": "Han Sea",
-        "text": "\"Tu n'as qu'à me regarder. Tu n'as qu'à me regarder, moi. ...Tu comprends, {name} ?\"",
-        "choices": [
-            "Convaincre Sea",
-            "Convaincre Sea"
-        ]
-    },
-    "day5_lunch_sea_push": {
-        "name": "Moi",
-        "text": "*J'ai poussé Sea et j'ai couru. J'entends des pleurs derrière moi.*"
-    },
-    "day5_lunch_sea_push_2": {
-        "name": "Moi",
-        "text": "*뒤에서 세아의 울음소리가 들린다. 뒤돌아보지 않았다. 돌아보면 멈추니까.*"
-    },
-    "day5_lunch_sea_persuade": {
-        "name": "Moi",
-        "text": "\"세아. 같이 나가자.\""
-    },
-    "day5_lunch_sea_persuade_2": {
-        "name": "Moi",
-        "text": "*세아가 멈췄다. 눈이 커진다.*"
-    },
-    "day5_lunch_sea_persuade_3": {
-        "name": "Moi",
-        "text": "\"너도 여기에 갇혀있잖아. 은수 선생님한테. 이 학교한테.\""
-    },
-    "day5_lunch_sea_persuade_4": {
-        "name": "Han Sea",
-        "text": "\"...나는 밖에 나가면 아무것도 없어. 여기밖에 몰라.\""
-    },
-    "day5_lunch_sea_persuade_5": {
-        "name": "Moi",
-        "text": "\"그래도. 여기보다는 낫잖아.\""
-    },
-    "day5_lunch_sea_persuade_6": {
-        "name": "Han Sea",
-        "text": "\"...진짜 나 없이 가는 거야?\""
-    },
-    "day5_lunch_sea_persuade_7": {
-        "name": "Moi",
-        "text": "*잠깐의 침묵. 길고 무거운 침묵.*"
-    },
-    "day5_lunch_sea_persuade_8": {
-        "name": "Han Sea",
-        "text": "\"...됐어. 가. 빨리.\""
-    },
-    "day5_lunch_sea_persuade_9": {
-        "name": "Moi",
-        "text": "*\"...뒤돌아보지 마.\" 세아의 마지막 말이 복도에 울린다. 뛰기 시작했다. 뒤돌아보지 않았다.*"
-    },
-    "day5_lunch_escape_right": {
-        "name": "Infirmière",
-        "text": "\"Tiens, quelle rencontre. {name}, ton bilan n'est pas encore terminé.\""
-    },
-    "day5_lunch_right_2": {
-        "name": "Moi",
-        "text": "*복도 한가운데 리인 선생님이 서 있다. 하얀 가운. 한 손이 주머니에 들어가 있다.*"
-    },
-    "day5_lunch_right_3": {
-        "name": "Kang Riin",
-        "text": "\"여기서 마주치네.\""
-    },
-    "day5_lunch_riin_talk_1": {
-        "name": "Kang Riin",
-        "text": "\"{name}, 아직 검진이 안 끝났는데.\""
-    },
-    "day5_lunch_riin_talk_1b": {
-        "name": "Moi",
-        "text": "*선생님이 주머니에서 손을 뺀다. 주사기를 들고 있다.*"
-    },
-    "day5_lunch_riin_callback": {
-        "name": "",
-        "text": ""
-    },
-    "day5_lunch_riin_cb_drink": {
-        "name": "Infirmière",
-        "text": "\"Tu avais dit que le thé était bon, tu te souviens ? La professeure l'avait préparé avec tout son cœur... Tu en veux encore une tasse ?\""
-    },
-    "day5_lunch_riin_cb_drink_2": {
-        "name": "Kang Riin",
-        "text": "\"...한 잔 더 마실래?\""
-    },
-    "day5_lunch_riin_cb_drink_3": {
-        "name": "Moi",
-        "text": "*리인 선생님의 손이 떨리고 있다. 주사기를 잡은 손이.*"
-    },
-    "day5_lunch_riin_cb_met": {
-        "name": "Infirmière",
-        "text": "\"Quand tu es venu à l'infirmerie dès le premier jour, la professeure était vraiment contente. ...Tu le savais ?\""
-    },
-    "day5_lunch_riin_cb_met_2": {
-        "name": "Kang Riin",
-        "text": "\"...알고 있었어? 너 같은 학생은 처음이었어.\""
-    },
-    "day5_lunch_riin_cb_default": {
-        "name": "Infirmière",
-        "text": "\"Dernier examen. Juste une prise de sang et c'est fini. Détends-toi~\""
-    },
-    "day5_lunch_riin_cb_default_2": {
-        "name": "Kang Riin",
-        "text": "\"...선생님한테 주사 맞고 아프다고 한 학생 없었어.\""
-    },
-    "day5_lunch_riin_block": {
-        "name": "Infirmière",
-        "text": "\"Ça ne prendra qu'un instant. Une prise de sang et... ce sera fini.\""
-    },
-    "day5_lunch_riin_block_2": {
-        "name": "Moi",
-        "text": "*Riin tient une seringue.*",
-        "choices": [
-            "Esquiver et courir",
-            "Parler à Riin"
-        ]
-    },
-    "day5_lunch_riin_dodge": {
-        "name": "Moi",
-        "text": "*J'ai esquivé Riin et j'ai couru. La seringue s'est fracassée contre le mur.*"
-    },
-    "day5_lunch_riin_dodge_2": {
-        "name": "Moi",
-        "text": "*...맞지 않았다. 간신히.*"
-    },
-    "day5_lunch_riin_dodge_3": {
-        "name": "Moi",
-        "text": "*뒤에서 유리 깨지는 소리가 들렸다. 주사기를 떨어뜨린 것 같다.*"
-    },
-    "day5_lunch_riin_confront": {
-        "name": "Infirmière",
-        "text": "\"...Alors tu savais. Tout.\""
-    },
-    "day5_lunch_riin_confront_2": {
-        "name": "Infirmière",
-        "text": "\"...Pars. Je suis... fatiguée de tout ça moi aussi.\""
-    },
-    "day5_lunch_riin_confront_3": {
-        "name": "Moi",
-        "text": "*선생님이 한숨을 내쉰다. 길고 깊은 한숨. 몸에서 뭔가 빠져나가는 것 같은.*"
-    },
-    "day5_lunch_riin_confront_4": {
-        "name": "Kang Riin",
-        "text": "\"...나도 처음에는 거부했어. 이사회가 시켰을 때.\""
-    },
-    "day5_lunch_riin_confront_5": {
-        "name": "Kang Riin",
-        "text": "\"근데 한 번 시작하면... 멈출 수가 없더라.\""
-    },
-    "day5_lunch_riin_confront_6": {
-        "name": "Kang Riin",
-        "text": "\"...가. 나도 이제 지쳤어.\""
-    },
-    "day5_lunch_riin_confront_7": {
-        "name": "Moi",
-        "text": "*리인 선생님이 주사기를 바닥에 내려놓는다. 유리가 타일에 부딪히며 또각 소리를 낸다. 벽에 기대어 앉는다. 눈을 감는다. 뛰었다. 리인 선생님을 지나쳐. 비상구를 향해.*"
-    },
-    "day5_lunch_escape_caught_sea": {
-        "name": "Han Sea",
-        "text": "\"Je te tiens. ...Tu ne vas nulle part maintenant, hein ?\""
-    },
-    "day5_lunch_escape_caught_riin": {
-        "name": "Infirmière",
-        "text": "\"Chut. C'est bon. Je ne te ferai pas mal.\""
-    },
-    "day5_lunch_caught": {
-        "name": "Moi",
-        "text": "*...On m'a attrapé.*"
-    },
-    "day5_lunch_continue": {
-        "name": "Moi",
-        "text": "*Je monte les escaliers en courant. La sortie de secours est en vue. J'y suis presque !*"
-    },
-    "day5_lunch_continue_2": {
-        "name": "Moi",
-        "text": "*...Mme Eunsu se tient devant la sortie de secours.*"
-    },
-    "day5_lunch_continue_3": {
-        "name": "Moi",
-        "text": "*거의 다 왔다! ...멈췄다.*"
-    },
-    "day5_lunch_continue_4": {
-        "name": "Moi",
-        "text": "*은수 선생님이 비상구 앞에 서 있다. 팔짱을 끼고. 기다리고 있었다. 처음부터 여기에 있었다는 듯이.*"
-    },
-    "day5_lunch_eunsu_face": {
-        "name": "Park Eunsu",
-        "text": "\"{name}.\""
-    },
-    "day5_lunch_eunsu_face_2": {
-        "name": "Moi",
-        "text": "*선생님이 나를 본다. 슬픈 눈.*"
-    },
-    "day5_lunch_eunsu_face_3": {
-        "name": "Park Eunsu",
-        "text": "\"...여기까지 왔구나.\""
-    },
-    "day5_lunch_eunsu_callback": {
-        "name": "",
-        "text": ""
-    },
-    "day5_lunch_eunsu_cb_app": {
-        "name": "Professeure",
-        "text": "\"Quand la professeure t'a configuré l'application, tu as dit merci, non ? ...À ce moment-là, j'ai pensé que tu étais un bon élève.\""
-    },
-    "day5_lunch_eunsu_cb_app_2": {
-        "name": "Park Eunsu",
-        "text": "\"...그때 참 착한 학생이라고 생각했는데. 진심이었어.\""
-    },
-    "day5_lunch_eunsu_cb_visit": {
-        "name": "Professeure",
-        "text": "\"Le premier jour après les cours, tu es venu te présenter. Depuis ce moment... la professeure a su que tu étais spécial.\""
-    },
-    "day5_lunch_eunsu_cb_visit_2": {
-        "name": "Park Eunsu",
-        "text": "\"그때부터... 선생님은 네가 특별하다고 느꼈어. 다른 전학생들과는 달랐거든.\""
-    },
-    "day5_lunch_eunsu_cb_default": {
-        "name": "Professeure",
-        "text": "\"La professeure a fait tout ça pour toi.\""
-    },
-    "day5_lunch_eunsu_cb_default_2": {
-        "name": "Park Eunsu",
-        "text": "\"...다 너를 지키려고 한 거야.\""
-    },
-    "day5_lunch_eunsu_plea": {
-        "name": "Moi",
-        "text": "*은수 선생님의 눈가에 주름이 잡힌다. 피곤한 얼굴. 밤을 새운 것 같다.*"
-    },
-    "day5_lunch_eunsu_plea_2": {
-        "name": "Park Eunsu",
-        "text": "\"...선생님이랑 같이 있으면 안 돼?\""
-    },
-    "day5_lunch_eunsu_plea_3": {
-        "name": "Park Eunsu",
-        "text": "\"밖에 나가면... 아무도 너를 이만큼 생각해주지 않아.\""
-    },
-    "day5_lunch_eunsu_plea_4": {
-        "name": "Park Eunsu",
-        "text": "\"여기 있으면 안전해. 선생님이 다 지켜줄게.\""
-    },
-    "day5_lunch_eunsu_plea_5": {
-        "name": "Moi",
-        "text": "*선생님의 목소리가 떨린다. ...진심이다. 이 사람은, 뒤틀렸지만, 진심으로 '보호'하고 있다고 믿고 있다. ...하지만 그 '보호'가 감옥이라는 걸 선생님은 모르는 걸까. 아니면 알면서도 멈추지 못하는 걸까.*"
-    },
-    "day5_lunch_eunsu_affinity_route": {
-        "name": "",
-        "text": ""
-    },
-    "day5_lunch_eunsu_final": {
-        "name": "Professeure",
-        "text": "\"{name}. ...Tu es arrivé jusqu'ici.\""
-    },
-    "day5_lunch_eunsu_final_high": {
-        "name": "Professeure",
-        "text": "\"{name}. Tu sais à quel point je me suis inquiétée ? ...Allez, il est temps de revenir.\""
-    },
-    "day5_lunch_eunsu_final_high_2": {
-        "name": "Professeure",
-        "text": "\"Tu ne vas pas écouter ta professeure ? ...{name} est un bon élève, non ?\"",
-        "choices": [
-            "Forcer le passage",
-            "Rester avec Eunsu"
-        ]
-    },
-    "day5_lunch_eunsu_final_max": {
-        "name": "Moi",
-        "text": "*Un cadenas est accroché à la sortie de secours. ...Elle ne s'ouvre pas.*"
-    },
-    "day5_lunch_eunsu_final_max_2": {
-        "name": "Professeure",
-        "text": "\"Tu comptais aller où ? ...J'ai tout préparé. {name} n'a qu'à rester ici.\""
-    },
-    "day5_lunch_eunsu_yuna_help": {
-        "name": "Moi",
-        "text": "*Soudain, l'alarme incendie retentit au bout du couloir. ...C'est Yuna ! Au moment où le regard de Mme Park s'est détourné, j'ai couru.*"
-    },
-    "day5_lunch_eunsu_break": {
-        "name": "Moi",
-        "text": "*J'ai poussé Mme Eunsu et j'ai ouvert la sortie de secours d'un coup. L'air froid m'a frappé le visage.*"
-    },
-    "day5_lunch_eunsu_break_2": {
-        "name": "Moi",
-        "text": "*비상구를 밀었다. 무거운 문. 온몸의 힘을 실었다.*"
-    },
-    "day5_lunch_eunsu_break_3": {
-        "name": "Moi",
-        "text": "*...열렸다.*"
-    },
-    "day5_lunch_eunsu_break_4": {
-        "name": "Moi",
-        "text": "*찬 바람이 얼굴을 때린다. 비가 내리고 있다. 빗방울이 얼굴에 부딪힌다.*"
-    },
-    "day5_lunch_eunsu_break_5": {
-        "name": "Moi",
-        "text": "*비상구 너머로 빛이 보인다. 흐린 하늘이지만... 바깥 세상의 빛.*"
-    },
-    "day5_lunch_eunsu_break_6": {
-        "name": "Moi",
-        "text": "*출구다.*"
-    },
-    "day5_lunch_eunsu_break_7": {
-        "name": "Park Eunsu",
-        "text": "\"...{name}.\""
-    },
-    "day5_lunch_eunsu_stay": {
-        "name": "Professeure",
-        "text": "\"...Merci, {name}. C'est comme ça que ça doit être.\""
-    },
-    "day5_lunch_eunsu_stay_2": {
-        "name": "Moi",
-        "text": "*Mme Eunsu a pris ma main. ...Il n'y a plus de retour en arrière.*"
-    },
-    "day5_lunch_eunsu_stay_3": {
-        "name": "Park Eunsu",
-        "text": "\"이게 맞는 거야. 선생님이 다 지켜줄게.\""
-    },
-    "day5_lunch_eunsu_stay_4": {
-        "name": "Moi",
-        "text": "*은수 선생님이 내 손을 잡았다. 따뜻한 손. 큰 손. 부드럽게 감싸는 손. ...되돌릴 수 없다. 이 손을 잡은 순간.*"
-    },
-    "day5_lunch_breakthrough": {
-        "name": "Moi",
-        "text": "*De la lumière au-delà de la sortie de secours. La voie de sortie.*"
-    },
-    "day5_lunch_end": {
-        "name": "Moi",
-        "text": "*...*"
-    }
+  "day5_lunch_start": {
+    "name": "Moi",
+    "text": "*La cloche du déjeuner sonne.*"
+  },
+  "day5_lunch_start_2": {
+    "name": "Moi",
+    "text": "*Maintenant.*"
+  },
+  "day5_lunch_start_3": {
+    "name": "Moi",
+    "text": "*Je me lève avant que Sea ait pu dire 'on mange ensemble'.*"
+  },
+  "day5_lunch_start_4": {
+    "name": "Moi",
+    "text": "\"Les toilettes.\""
+  },
+  "day5_lunch_start_5": {
+    "name": "Moi",
+    "text": "*Je n'ai pas regardé Sea. J'avais peur de m'arrêter si je le faisais.*"
+  },
+  "day5_lunch_start_6": {
+    "name": "Moi",
+    "text": "*Je quitte la classe. Le couloir. Tourner à gauche. Vers le bâtiment ancien.*"
+  },
+  "day5_lunch_start_7": {
+    "name": "Moi",
+    "text": "*Je marche. J'ai envie de courir mais je dois marcher. Courir attire l'attention. J'ai serré la bretelle du sac fort. Mes paumes sont moites.*"
+  },
+  "day5_lunch_start_8": {
+    "name": "Moi",
+    "text": "*Le couloir est long. Interminable. Je vois le passage de connexion vers le bâtiment ancien. J'ai regardé en arrière. Personne. ...Pas encore.*"
+  },
+  "day5_lunch_branch": {
+    "name": "Moi",
+    "text": "*L'endroit dont Yuna m'a parlé. Bâtiment ancien, 3ème étage.*"
+  },
+  "day5_lunch_yuna_meet": {
+    "name": "Moi",
+    "text": "*J'entre dans le bâtiment ancien. L'éclairage est sombre. Plus de la moitié des néons sont éteints. Aucun signe de présence.*"
+  },
+  "day5_lunch_yuna_2": {
+    "name": "Moi",
+    "text": "*...Quelqu'un est debout près de l'escalier. Une petite silhouette. Elle tient un appareil photo.*"
+  },
+  "day5_lunch_yuna_3": {
+    "name": "Yuna",
+    "text": "\"...Senpai.\""
+  },
+  "day5_lunch_yuna_4": {
+    "name": "Yuna",
+    "text": "\"Vous êtes venu.\""
+  },
+  "day5_lunch_yuna_5": {
+    "name": "Moi",
+    "text": "\"Yuna. Ça va ?\""
+  },
+  "day5_lunch_yuna_6": {
+    "name": "Yuna",
+    "text": "\"Ça ne va pas. Mais... je peux bouger.\""
+  },
+  "day5_lunch_yuna_7": {
+    "name": "Yuna",
+    "text": "\"Il y a une sortie de secours au bout du 3ème étage du bâtiment ancien. C'est un chemin que Seolhwa-senpai... a trouvé il y a un an. Elle me l'a dit dans un rêve.\""
+  },
+  "day5_lunch_yuna_8": {
+    "name": "Yuna",
+    "text": "\"C'est la seule issue.\""
+  },
+  "day5_lunch_yuna_9": {
+    "name": "Yuna",
+    "text": "\"Mais... il faut traverser ce couloir. Quelqu'un le surveille. ...Probablement.\""
+  },
+  "day5_lunch_yuna_10": {
+    "name": "Moi",
+    "text": "\"C'est bon. On y va ensemble.\""
+  },
+  "day5_lunch_yuna_11": {
+    "name": "Moi",
+    "text": "*Yuna acquiesce. Elle se mord fort la lèvre. Elle a peur. Mais elle avance.*"
+  },
+  "day5_lunch_yuna_12": {
+    "name": "Moi",
+    "text": "*On a commencé à monter les escaliers. 1er étage. 2ème étage. 3ème étage.*"
+  },
+  "day5_lunch_solo": {
+    "name": "Moi",
+    "text": "*J'entre dans le bâtiment ancien. Seul. L'éclairage est sombre. Je dois trouver la sortie de secours.*"
+  },
+  "day5_lunch_solo_2": {
+    "name": "Moi",
+    "text": "*Je monte les escaliers. Au bout du couloir du 3ème étage, je vois le halo vert du panneau de sortie de secours. ...Là-bas.*"
+  },
+  "day5_lunch_escape_start": {
+    "name": "Moi",
+    "text": "*Couloir du 3ème étage. Long et sombre. Au fond, le halo vert du panneau de sortie de secours est visible.*"
+  },
+  "day5_lunch_escape_2": {
+    "name": "Moi",
+    "text": "*...Là-bas. Il suffit d'ouvrir cette porte et —*"
+  },
+  "day5_lunch_escape_3": {
+    "name": "Moi",
+    "text": "*Des pas derrière. Clac. Clac. Des talons de chaussures. Pas qu'une seule paire. Plusieurs.*"
+  },
+  "day5_lunch_escape_4": {
+    "name": "Moi",
+    "text": "*...Ils nous suivent.*"
+  },
+  "day5_lunch_escape_5": {
+    "name": "Moi",
+    "text": "*Je cours. Je me suis mis à courir dans le couloir. Les baskets claquent sur le carrelage. Tap-tap-tap-tap. Le sac rebondit dans mon dos.*"
+  },
+  "day5_lunch_escape_6": {
+    "name": "Moi",
+    "text": "*Une fourche dans le chemin. Le couloir se divise en T.*",
+    "choices": [
+      "Couloir de gauche",
+      "Couloir de droite"
+    ]
+  },
+  "day5_lunch_escape_left": {
+    "name": "Moi",
+    "text": "*J'ai tourné à gauche. ...Je me suis arrêté. Sea est debout là. Au milieu du couloir. Les bras croisés. Elle m'attendait.*"
+  },
+  "day5_lunch_left_2": {
+    "name": "Moi",
+    "text": "*...Elle était en classe il y a un instant. Comment est-elle arrivée ici ?*"
+  },
+  "day5_lunch_left_3": {
+    "name": "Han Sea",
+    "text": "\"...Où tu crois que tu vas, {name}.\""
+  },
+  "day5_lunch_sea_talk_1": {
+    "name": "Han Sea",
+    "text": "\"Sans moi ?\""
+  },
+  "day5_lunch_sea_talk_1b": {
+    "name": "Han Sea",
+    "text": "\"...Tu m'abandonnes ?\""
+  },
+  "day5_lunch_sea_talk_1c": {
+    "name": "Moi",
+    "text": "*La voix de Sea est froide. Ce n'est plus la voix lumineuse du Jour 1.*"
+  },
+  "day5_lunch_sea_callback": {
+    "name": "",
+    "text": ""
+  },
+  "day5_lunch_sea_cb_choco": {
+    "name": "Han Sea",
+    "text": "\"Tu avais souri et dit que tu aimais le lait au chocolat ce jour-là. J'ai fait trois fois le tour de la boutique du lycée juste pour t'en trouver.\""
+  },
+  "day5_lunch_sea_cb_choco_2": {
+    "name": "Han Sea",
+    "text": "\"Tu me... mentais ?\""
+  },
+  "day5_lunch_sea_cb_lunch": {
+    "name": "Han Sea",
+    "text": "\"Je me levais à l'aube chaque matin pour préparer le déjeuner... je souriais en faisant les saucisses en forme de pieuvre...\""
+  },
+  "day5_lunch_sea_cb_lunch_2": {
+    "name": "Han Sea",
+    "text": "\"Tout ça ne signifiait rien ?\""
+  },
+  "day5_lunch_sea_cb_vulnerability": {
+    "name": "Han Sea",
+    "text": "\"Dans la salle du conseil au coucher de soleil... tu avais acquiescé quand j'ai dit que je voulais que tu restes à mes côtés.\""
+  },
+  "day5_lunch_sea_cb_vulnerability_2": {
+    "name": "Han Sea",
+    "text": "\"Menteur.\""
+  },
+  "day5_lunch_sea_cb_default": {
+    "name": "Han Sea",
+    "text": "\"...On était dans la même classe. Cinq jours seulement, mais...\""
+  },
+  "day5_lunch_sea_cb_default_2": {
+    "name": "Han Sea",
+    "text": "\"Ça seul... c'était suffisant.\""
+  },
+  "day5_lunch_sea_tears": {
+    "name": "Moi",
+    "text": "*Des larmes coulent des yeux de Sea. De vraies larmes. Ce n'est pas un acte.*"
+  },
+  "day5_lunch_sea_tears_2": {
+    "name": "Moi",
+    "text": "*...J'ai le cœur serré. Je sais que Sea est aussi une victime. Un autre oiseau pris dans ce lycée.*"
+  },
+  "day5_lunch_sea_tears_3": {
+    "name": "Moi",
+    "text": "*Mais je ne peux pas m'arrêter.*"
+  },
+  "day5_lunch_sea_block_route": {
+    "name": "",
+    "text": ""
+  },
+  "day5_lunch_sea_pass": {
+    "name": "Moi",
+    "text": "*Sea est debout dans le couloir. ...Mais elle ne bloque pas le passage. Elle me fixe d'un air hébété. Je suis passé devant elle.*"
+  },
+  "day5_lunch_sea_block_mid": {
+    "name": "Han Sea",
+    "text": "\"Sans moi ? ...Tu m'abandonnes ?\""
+  },
+  "day5_lunch_sea_block_mid_2": {
+    "name": "Moi",
+    "text": "*Sea bloque le couloir.*",
+    "choices": [
+      "La bousculer pour passer",
+      "Essayer de convaincre Sea"
+    ]
+  },
+  "day5_lunch_sea_block_high": {
+    "name": "Han Sea",
+    "text": "\"...Non. Je ne peux pas te laisser partir.\""
+  },
+  "day5_lunch_sea_block_high_2": {
+    "name": "Moi",
+    "text": "*Sea a saisi mon bras. Sa prise est ferme.*",
+    "choices": [
+      "La bousculer pour passer",
+      "Convaincre Sea"
+    ]
+  },
+  "day5_lunch_sea_block_max": {
+    "name": "Moi",
+    "text": "*'Clic.' Sea a fermé la porte de la salle à clé derrière elle. ...Il n'y a pas d'issue ici.*"
+  },
+  "day5_lunch_sea_block_max_2": {
+    "name": "Han Sea",
+    "text": "\"Regarde-moi juste. Tu n'as besoin que de me regarder. ...Tu comprends, hein, {name} ?\"",
+    "choices": [
+      "Convaincre Sea",
+      "Convaincre Sea"
+    ]
+  },
+  "day5_lunch_sea_push": {
+    "name": "Moi",
+    "text": "*J'ai bousculé Sea en passant. Nos épaules se sont heurtées.*"
+  },
+  "day5_lunch_sea_push_2": {
+    "name": "Moi",
+    "text": "*Derrière moi, j'entends Sea pleurer. Je n'ai pas regardé en arrière. Si je regarde, je m'arrêterai.*"
+  },
+  "day5_lunch_sea_persuade": {
+    "name": "Moi",
+    "text": "\"Sea. Viens avec moi.\""
+  },
+  "day5_lunch_sea_persuade_2": {
+    "name": "Moi",
+    "text": "*Sea s'est figée. Ses yeux s'écarquillent.*"
+  },
+  "day5_lunch_sea_persuade_3": {
+    "name": "Moi",
+    "text": "\"Toi aussi tu es prisonnière ici. Par Madame Eunsu. Par ce lycée.\""
+  },
+  "day5_lunch_sea_persuade_4": {
+    "name": "Han Sea",
+    "text": "\"...Il n'y a rien pour moi dehors. C'est tout ce que je connais.\""
+  },
+  "day5_lunch_sea_persuade_5": {
+    "name": "Moi",
+    "text": "\"Même ainsi. C'est mieux qu'ici.\""
+  },
+  "day5_lunch_sea_persuade_6": {
+    "name": "Han Sea",
+    "text": "\"...Tu t'en vas vraiment sans moi ?\""
+  },
+  "day5_lunch_sea_persuade_7": {
+    "name": "Moi",
+    "text": "*Un bref silence. Long et lourd.*"
+  },
+  "day5_lunch_sea_persuade_8": {
+    "name": "Han Sea",
+    "text": "\"...D'accord. Vas-y. Vite.\""
+  },
+  "day5_lunch_sea_persuade_9": {
+    "name": "Moi",
+    "text": "*\"...Ne te retourne pas.\" Les derniers mots de Sea résonnent dans le couloir. Je me suis mis à courir. Je ne me suis pas retourné.*"
+  },
+  "day5_lunch_escape_right": {
+    "name": "Moi",
+    "text": "*J'ai tourné à droite. Une odeur de désinfectant. Forte. ...La même odeur que l'infirmerie.*"
+  },
+  "day5_lunch_right_2": {
+    "name": "Moi",
+    "text": "*Au milieu du couloir, l'infirmière Riin est debout. Blouse blanche. Une main dans sa poche.*"
+  },
+  "day5_lunch_right_3": {
+    "name": "Riin",
+    "text": "\"On se retrouve ici.\""
+  },
+  "day5_lunch_riin_talk_1": {
+    "name": "Riin",
+    "text": "\"{name}, ton bilan de santé n'est pas terminé.\""
+  },
+  "day5_lunch_riin_talk_1b": {
+    "name": "Moi",
+    "text": "*La prof sort la main de sa poche. Elle tient une seringue.*"
+  },
+  "day5_lunch_riin_callback": {
+    "name": "",
+    "text": ""
+  },
+  "day5_lunch_riin_cb_drink": {
+    "name": "Riin",
+    "text": "\"Tu avais dit que le thé était bon ce jour-là. J'avais personnellement choisi les herbes et préparé le mélange.\""
+  },
+  "day5_lunch_riin_cb_drink_2": {
+    "name": "Riin",
+    "text": "\"...Tu en veux encore une tasse ?\""
+  },
+  "day5_lunch_riin_cb_drink_3": {
+    "name": "Moi",
+    "text": "*La main de l'infirmière Riin tremble. La main qui tient la seringue.*"
+  },
+  "day5_lunch_riin_cb_met": {
+    "name": "Riin",
+    "text": "\"Quand tu es venu à l'infirmerie ton tout premier jour, j'étais sincèrement heureuse.\""
+  },
+  "day5_lunch_riin_cb_met_2": {
+    "name": "Riin",
+    "text": "\"...Tu le savais ? Tu étais le premier élève comme toi que j'aie jamais eu.\""
+  },
+  "day5_lunch_riin_cb_default": {
+    "name": "Riin",
+    "text": "\"Dernier bilan. Juste une prise de sang et c'est fini. Détends-toi~\""
+  },
+  "day5_lunch_riin_cb_default_2": {
+    "name": "Riin",
+    "text": "\"...Aucun élève à qui j'ai fait une injection ne m'a jamais dit que ça faisait mal.\""
+  },
+  "day5_lunch_riin_block": {
+    "name": "Moi",
+    "text": "*L'infirmière Riin sourit. Le même sourire doux que toujours. Mais ses yeux sont acérés.*"
+  },
+  "day5_lunch_riin_block_2": {
+    "name": "Moi",
+    "text": "*L'infirmière Riin s'approche avec la seringue.*",
+    "choices": [
+      "Esquiver et courir",
+      "Parler à Riin"
+    ]
+  },
+  "day5_lunch_riin_dodge": {
+    "name": "Moi",
+    "text": "*J'ai couru en passant devant l'infirmière Riin. La seringue a frôlé mon bras. L'aiguille a déchiré ma manche d'uniforme.*"
+  },
+  "day5_lunch_riin_dodge_2": {
+    "name": "Moi",
+    "text": "*...Pas touché. De justesse.*"
+  },
+  "day5_lunch_riin_dodge_3": {
+    "name": "Moi",
+    "text": "*Derrière moi, j'ai entendu du verre qui se brise. Elle doit avoir lâché la seringue.*"
+  },
+  "day5_lunch_riin_confront": {
+    "name": "Moi",
+    "text": "\"Vous le savez aussi, infirmière Riin. Que c'est mal.\""
+  },
+  "day5_lunch_riin_confront_2": {
+    "name": "Riin",
+    "text": "\"...Donc tu savais tout.\""
+  },
+  "day5_lunch_riin_confront_3": {
+    "name": "Moi",
+    "text": "*La prof expire. Une longue et profonde expiration. Comme si quelque chose se vidait de son corps.*"
+  },
+  "day5_lunch_riin_confront_4": {
+    "name": "Riin",
+    "text": "\"...J'ai refusé aussi au début. Quand le conseil d'administration me l'a ordonné.\""
+  },
+  "day5_lunch_riin_confront_5": {
+    "name": "Riin",
+    "text": "\"Mais une fois qu'on commence... on ne peut plus s'arrêter.\""
+  },
+  "day5_lunch_riin_confront_6": {
+    "name": "Riin",
+    "text": "\"...Pars. Je suis épuisée aussi maintenant.\""
+  },
+  "day5_lunch_riin_confront_7": {
+    "name": "Moi",
+    "text": "*L'infirmière Riin pose la seringue sur le sol. Le verre fait un léger bruit sourd contre le carrelage. Elle s'adosse au mur et s'assied. Les yeux fermés. Je me suis mis à courir. Devant l'infirmière Riin. Vers la sortie de secours.*"
+  },
+  "day5_lunch_escape_caught_sea": {
+    "name": "Han Sea",
+    "text": "\"Attrape. ...Tu ne vas nulle part maintenant, hein ?\""
+  },
+  "day5_lunch_escape_caught_riin": {
+    "name": "Riin",
+    "text": "\"Chut. Ça va. Ça ne fera pas mal.\""
+  },
+  "day5_lunch_caught": {
+    "name": "Moi",
+    "text": "*...Je me suis fait attraper.*"
+  },
+  "day5_lunch_continue": {
+    "name": "Moi",
+    "text": "*On monte les escaliers. À bout de souffle. Les jambes sont lourdes. Mais je ne peux pas m'arrêter.*"
+  },
+  "day5_lunch_continue_2": {
+    "name": "Moi",
+    "text": "*Bout du couloir du 3ème étage. Je vois la sortie de secours. Le panneau vert 'SORTIE'. Il brille.*"
+  },
+  "day5_lunch_continue_3": {
+    "name": "Moi",
+    "text": "*Presque là ! ...Je me suis arrêté.*"
+  },
+  "day5_lunch_continue_4": {
+    "name": "Moi",
+    "text": "*Madame Eunsu est debout devant la sortie de secours. Les bras croisés. Elle attendait. Comme si elle était là depuis le tout début.*"
+  },
+  "day5_lunch_eunsu_face": {
+    "name": "Professeure principale",
+    "text": "\"{name}.\""
+  },
+  "day5_lunch_eunsu_face_2": {
+    "name": "Moi",
+    "text": "*La prof me regarde. Des yeux tristes.*"
+  },
+  "day5_lunch_eunsu_face_3": {
+    "name": "Professeure principale",
+    "text": "\"...Tu es arrivé jusque là.\""
+  },
+  "day5_lunch_eunsu_callback": {
+    "name": "",
+    "text": ""
+  },
+  "day5_lunch_eunsu_cb_app": {
+    "name": "Professeure principale",
+    "text": "\"Tu m'avais remercié quand j'avais installé l'appli, tu te souviens ?\""
+  },
+  "day5_lunch_eunsu_cb_app_2": {
+    "name": "Professeure principale",
+    "text": "\"...J'ai pensé à quel bon élève tu étais à ce moment-là. C'était sincère.\""
+  },
+  "day5_lunch_eunsu_cb_visit": {
+    "name": "Professeure principale",
+    "text": "\"Tu es venu te présenter toi-même après les cours le premier jour.\""
+  },
+  "day5_lunch_eunsu_cb_visit_2": {
+    "name": "Professeure principale",
+    "text": "\"Dès ce moment... ta professeure a senti que tu étais spécial. Tu étais différent des autres élèves transférés.\""
+  },
+  "day5_lunch_eunsu_cb_default": {
+    "name": "Professeure principale",
+    "text": "\"Ta professeure a fait tout ça pour toi.\""
+  },
+  "day5_lunch_eunsu_cb_default_2": {
+    "name": "Professeure principale",
+    "text": "\"...Tout ça pour te protéger.\""
+  },
+  "day5_lunch_eunsu_plea": {
+    "name": "Moi",
+    "text": "*Des rides se forment autour des yeux de Madame Eunsu. Un visage fatigué. On dirait qu'elle n'a pas dormi.*"
+  },
+  "day5_lunch_eunsu_plea_2": {
+    "name": "Professeure principale",
+    "text": "\"...Tu ne peux pas rester avec moi ?\""
+  },
+  "day5_lunch_eunsu_plea_3": {
+    "name": "Professeure principale",
+    "text": "\"Dehors... personne ne pensera autant à toi.\""
+  },
+  "day5_lunch_eunsu_plea_4": {
+    "name": "Professeure principale",
+    "text": "\"Tu es en sécurité ici. Ta professeure te protégera de tout.\""
+  },
+  "day5_lunch_eunsu_plea_5": {
+    "name": "Moi",
+    "text": "*La voix de la prof tremble. ...Elle est sincère. Cette personne, aussi tordue soit-elle, croit vraiment qu'elle 'protège'. ...Est-ce qu'elle ne sait pas que sa 'protection' est une prison ? Ou le sait-elle et ne peut quand même pas s'arrêter ?*"
+  },
+  "day5_lunch_eunsu_affinity_route": {
+    "name": "",
+    "text": ""
+  },
+  "day5_lunch_eunsu_final": {
+    "name": "Moi",
+    "text": "*...Qu'est-ce que je fais.*",
+    "choices": [
+      "La bousculer et partir",
+      "Rester avec Eunsu"
+    ]
+  },
+  "day5_lunch_eunsu_final_high": {
+    "name": "Professeure principale",
+    "text": "\"{name}. Tu sais combien j'étais inquiète ? ...Arrêtons ça et revenons maintenant.\""
+  },
+  "day5_lunch_eunsu_final_high_2": {
+    "name": "Professeure principale",
+    "text": "\"Tu ne vas pas écouter ta professeure ? ...{name} est un bon élève, n'est-ce pas.\"",
+    "choices": [
+      "La bousculer et partir",
+      "Rester avec Eunsu"
+    ]
+  },
+  "day5_lunch_eunsu_final_max": {
+    "name": "Moi",
+    "text": "*Il y a un cadenas sur la sortie de secours. ...Elle ne s'ouvre pas.*"
+  },
+  "day5_lunch_eunsu_final_max_2": {
+    "name": "Professeure principale",
+    "text": "\"Où tu crois aller ? ...J'ai tout préparé. {name}, tu n'as qu'à rester ici.\""
+  },
+  "day5_lunch_eunsu_yuna_help": {
+    "name": "Moi",
+    "text": "*Soudain, l'alarme incendie se déclenche au bout du couloir. ...C'est Yuna ! Au moment où l'attention de Madame Eunsu s'est détournée, j'ai couru.*"
+  },
+  "day5_lunch_eunsu_break": {
+    "name": "Moi",
+    "text": "*Je suis passé devant Madame Eunsu. Nos épaules se sont heurtées. La prof a tendu la main pour me rattraper. Ses doigts ont effleuré ma manche d'uniforme. ...Elle a raté.*"
+  },
+  "day5_lunch_eunsu_break_2": {
+    "name": "Moi",
+    "text": "*J'ai poussé la sortie de secours. Une porte lourde. J'ai mis tout mon corps dedans.*"
+  },
+  "day5_lunch_eunsu_break_3": {
+    "name": "Moi",
+    "text": "*...Elle s'est ouverte.*"
+  },
+  "day5_lunch_eunsu_break_4": {
+    "name": "Moi",
+    "text": "*L'air froid me frappe le visage. Il pleut. Les gouttes de pluie me frappent le visage.*"
+  },
+  "day5_lunch_eunsu_break_5": {
+    "name": "Moi",
+    "text": "*Au-delà de la sortie de secours, il y a de la lumière. Un ciel nuageux, mais... la lumière du monde extérieur.*"
+  },
+  "day5_lunch_eunsu_break_6": {
+    "name": "Moi",
+    "text": "*La sortie.*"
+  },
+  "day5_lunch_eunsu_break_7": {
+    "name": "Professeure principale",
+    "text": "\"...{name}.\""
+  },
+  "day5_lunch_eunsu_stay": {
+    "name": "Moi",
+    "text": "*...Mes jambes se sont dérobées. Je me suis effondré. Je ne peux plus courir. Mon corps n'obéit plus.*"
+  },
+  "day5_lunch_eunsu_stay_2": {
+    "name": "Professeure principale",
+    "text": "\"...Merci, {name}.\""
+  },
+  "day5_lunch_eunsu_stay_3": {
+    "name": "Professeure principale",
+    "text": "\"C'est bien. Ta professeure te protégera de tout.\""
+  },
+  "day5_lunch_eunsu_stay_4": {
+    "name": "Moi",
+    "text": "*Madame Eunsu a pris ma main. Une main chaude. Une grande main. Une main qui enveloppe doucement. ...Il n'y a plus de retour en arrière. Au moment où j'ai pris cette main.*"
+  },
+  "day5_lunch_breakthrough": {
+    "name": "Moi",
+    "text": "*Je n'ai pas regardé en arrière. Je descends les escaliers. Sous la pluie.*"
+  },
+  "day5_lunch_end": {
+    "name": "Moi",
+    "text": "*...*"
+  }
 }

@@ -1,174 +1,176 @@
 {
   "day2_night_start": {
     "name": "Yo",
-    "text": "*En casa. Reviso el telefono otra vez. El grupo de la antigua escuela... soy el unico que queda. Todos los demas se salieron.*"
+    "text": "*En casa. Hoy también fue un día agotador. Pero es un cansancio que no está mal.*"
   },
   "day2_night_2": {
     "name": "Yo",
-    "text": "*Intente llamar a mi antiguo tutor. 'Este numero no se encuentra en servicio.' ...Que?*"
+    "text": "*La expresión de Sea bañada por el atardecer no para de volver a mi mente. Esa cara cuando dijo 'sola'.*"
   },
   "day2_night_3": {
     "name": "Yo",
-    "text": "*Habra cambiado de numero? Tambien llame a otros amigos, pero ninguno contesta o el numero no existe.*"
+    "text": "*...Es buena persona. Alguien con mucho fondo.*"
   },
   "day2_night_phone_1": {
     "name": "Yo",
-    "text": "*폰을 다시 확인한다.*"
+    "text": "*Reviso el teléfono de nuevo.*"
   },
   "day2_night_phone_2": {
     "name": "Yo",
-    "text": "*전 학교 그룹방. 어제 보낸 메시지... '읽음 0'이었는데, 지금 확인하니 '읽음 3'으로 바뀌어 있다.*"
+    "text": "*El grupo de la antigua escuela. El mensaje que mandé ayer... tenía '0 lecturas', pero ahora al revisarlo ha cambiado a '3 lecturas'.*"
   },
   "day2_night_phone_3": {
     "name": "Yo",
-    "text": "*읽긴 했네. 근데 아무도 답을 안 했다. ...뭐, 바쁜가 보지.*"
+    "text": "*Lo leyeron. Pero nadie contestó. ...Bueno, deben de estar ocupados.*"
   },
   "day2_night_phone_4": {
     "name": "Yo",
-    "text": "*민수한테 개인 메시지를 보냈다. '야 민수 나 전학 왔는데 왜 연락이 없냐 ㅋㅋ'*"
+    "text": "*Le mando un mensaje privado a Minsu. '¡Ey Minsu, me cambié de colegio, ¿por qué no me has escrito?'*"
   },
   "day2_night_phone_5": {
     "name": "Yo",
-    "text": "*10분 뒤.*"
+    "text": "*10 minutos después.*",
+    "messengerDelay": 5000,
+    "messengerTypingName": "Minsu"
   },
   "day2_night_phone_6": {
     "name": "Yo",
-    "text": "*...뭘 이렇게 오래 치고 있어? 보통 1초 만에 답장 쏘는 놈이.*"
+    "text": "*...¿Por qué tarda tanto? Este tío normalmente responde al segundo.*"
   },
   "day2_night_phone_7": {
     "name": "Yo",
-    "text": "*5초. 타이핑 표시가 계속 깜빡인다. 긴 문장을 쓰고 있나?*"
+    "text": "*5 segundos. El indicador de escritura sigue parpadeando. ¿Estará escribiendo algo largo?*"
   },
   "day2_night_phone_8": {
     "name": "Yo",
-    "text": "*답장이 왔다.*"
+    "text": "*Llegó la respuesta.*"
   },
   "day2_night_phone_9": {
     "name": "Yo",
-    "text": "*민수: '응 잘 지내. 거긴 어때?'*"
+    "text": "*Minsu: 'Sí, estoy bien. ¿Qué tal por allá?'*"
   },
   "day2_night_phone_10": {
     "name": "Yo",
-    "text": "*...뭐야 이게. 내가 왜 연락이 없냐고 물었는데, 대답은 안 하고 되려 '거긴 어때?'라고?*"
+    "text": "*...¿Qué es esto? Le pregunté por qué no me había escrito, y en vez de responder me pregunta '¿qué tal por allá?'*"
   },
   "day2_night_phone_11": {
     "name": "Yo",
-    "text": "*이게 민수 맞아? 평소에 '야 이 미친놈아 ㅋㅋㅋㅋ 드디어 답하냐' 하고 욕부터 박는 놈인데.*"
+    "text": "*¿Es en serio Minsu? Normalmente empezaría con 'tío, por fin contestas' y me soltaría un insulto de broma.*"
   },
   "day2_night_phone_12": {
     "name": "Yo",
-    "text": "*'응 잘 지내.' ...5초 동안 고른 단어가 이거라고?*"
+    "text": "*'Sí, estoy bien.' ...¿Eso es lo que tardó 5 segundos en escribir?*"
   },
   "day2_night_msg_1": {
     "name": "Yo",
-    "text": "*세아한테 메시지가 와있다.*"
+    "text": "*Tengo un mensaje de Seoa.*"
   },
   "day2_night_msg_2": {
     "name": "Yo",
-    "text": "*세아: '오늘도 고마워. 학생회실에 와줘서.'*"
+    "text": "*Seoa: 'Gracias por hoy también. Por venir a la sala del consejo.'*"
   },
   "day2_night_msg_3": {
     "name": "Yo",
-    "text": "*세아: '내일도 같이 먹자!'*"
+    "text": "*Seoa: '¡Comamos juntos mañana también!'*"
   },
   "day2_night_msg_4": {
     "name": "Yo",
-    "text": "*세아: '...{name}이랑 있으면 좋다.'*"
+    "text": "*Seoa: '...Me siento bien cuando estoy con {name}.'*"
   },
   "day2_night_msg_5": {
     "name": "Yo",
-    "text": "*...세 번째 메시지. '좋다.' 그냥 친절한 건지, 아니면 다른 의미인 건지. ...둘 다인 것 같기도 하고.*"
+    "text": "*...El tercer mensaje. 'Me siento bien.' No sé si es solo amabilidad o si tiene otro significado. ...Puede que las dos cosas.*"
   },
   "day2_night_msg_6": {
     "name": "Yo",
-    "text": "*답장을 보낸다. '나도 오늘 즐거웠어. 내일 보자.'*"
+    "text": "*Le mando una respuesta. 'Yo también lo pasé bien hoy. Nos vemos mañana.'*"
   },
   "day2_night_msg_7": {
     "name": "Yo",
-    "text": "*세아: '♡' ...하트. 진짜 적극적이다.*"
+    "text": "*Seoa: '♡' ...Un corazón. Qué directa es.*"
   },
   "day2_night_sleep_1": {
     "name": "Yo",
-    "text": "*이불에 누워서 천장을 본다.*"
+    "text": "*Me tumbo en la cama y miro el techo.*"
   },
   "day2_night_sleep_2": {
     "name": "Yo",
-    "text": "*전 학교 연락 건이 좀 신경 쓰이지만... 뭐, 내일 해결될 거야. 눈을 감는다. 피곤하다. 의식이 흐려진다.*"
-  },
-  "day2_night_dream_1": {
-    "name": "Yo",
-    "text": "*...어두운 복도를 걷고 있다.*"
-  },
-  "day2_night_dream_2": {
-    "name": "Yo",
-    "text": "*Camino por un pasillo oscuro. Esto es... la escuela? El pasillo de la escuela de noche. Solo resuenan mis pasos.*"
-  },
-  "day2_night_dream_3": {
-    "name": "???",
-    "text": "\"...hu...ye...\""
-  },
-  "day2_night_dream_4": {
-    "name": "Yo",
-    "text": "*Me di la vuelta. No hay nadie. Pero lo escuche claramente. Una voz de chica.*"
-  },
-  "day2_night_dream_5": {
-    "name": "Yo",
-    "text": "*Al final del pasillo hay alguien de pie. Cara palida, ojos que miran a lo lejos. ...La chica del asiento de atras?*"
-  },
-  "day2_night_dream_6": {
-    "name": "Yo",
-    "text": "*Justo cuando intento acercarme, todo se oscurece como si el suelo se desmoronara.*"
-  },
-  "day2_night_dream_7": {
-    "name": "Yo",
-    "text": "*복도 끝에 누군가 서 있다. 창백한 얼굴. 먼 곳을 보는 눈. 길고 검은 머리카락.*"
-  },
-  "day2_night_dream_8": {
-    "name": "Yo",
-    "text": "*...뒷자리 그 애? 설화?*"
-  },
-  "day2_night_dream_9": {
-    "name": "Yo",
-    "text": "*다가간다. 한 걸음, 두 걸음. 발소리가 울린다. 그 애의 입이 움직인다.*"
-  },
-  "day2_night_dream_10": {
-    "name": "???",
-    "text": "\"...나를... 기억해줘...\""
-  },
-  "day2_night_dream_11": {
-    "name": "Yo",
-    "text": "*손을 뻗었다. 닿을 것 같았다. 손끝이 닿으려는 순간—*"
-  },
-  "day2_night_dream_12": {
-    "name": "Yo",
-    "text": "*바닥이 무너지듯 시야가 어두워진다. 떨어진다. 끝없이.*"
-  },
-  "day2_night_wake_1": {
-    "name": "Yo",
-    "text": "*...! 땀에 젖어 일어났다. 심장이 미친 듯이 뛴다.*"
-  },
-  "day2_night_wake_2": {
-    "name": "Yo",
-    "text": "*시계를 본다. 새벽 3시 47분.*"
-  },
-  "day2_night_wake_3": {
-    "name": "Yo",
-    "text": "*꿈이다. 그냥 꿈이야. ...그렇지?*"
-  },
-  "day2_night_wake_4": {
-    "name": "Yo",
-    "text": "*...근데 왜 설화의 얼굴이 그렇게 선명하게 기억나지?*"
-  },
-  "day2_night_wake_5": {
-    "name": "Yo",
-    "text": "*물을 한 잔 마시고 다시 눕는다. 좀처럼 잠이 오지 않는다.*"
-  },
-  "day2_night_end": {
-    "name": "",
-    "text": "*Fin del Dia 2*"
+    "text": "*Lo del contacto con el colegio anterior me da vueltas en la cabeza... pero bueno, se resolverá mañana. Cierro los ojos. Estoy agotado. La conciencia se va difuminando.*"
   },
   "day2_night_sleep_3": {
     "name": "Yo",
-    "text": "*...La conciencia se desvanece. Una sensación como hundirse en la oscuridad.*"
+    "text": "*...La consciencia se va volviendo borrosa. Una sensación como de hundirse en la oscuridad.*"
+  },
+  "day2_night_dream_1": {
+    "name": "Yo",
+    "text": "*...Camino por un pasillo oscuro.*"
+  },
+  "day2_night_dream_2": {
+    "name": "Yo",
+    "text": "*¿Esto es... la escuela? El pasillo de la escuela de noche. Solo las luces de emergencia brillan tenuemente.*"
+  },
+  "day2_night_dream_3": {
+    "name": "Yo",
+    "text": "*Solo resuenan mis pasos. Tac. Tac. Tac.*"
+  },
+  "day2_night_dream_4": {
+    "name": "Yo",
+    "text": "*...¿Por qué estoy aquí? ¿Cómo llegué?*"
+  },
+  "day2_night_dream_5": {
+    "name": "???",
+    "text": "\"...Hu...ye...\""
+  },
+  "day2_night_dream_6": {
+    "name": "Yo",
+    "text": "*Me di la vuelta. No hay nadie. Pero sin duda lo escuché. Una voz de chica. Una voz temblorosa.*"
+  },
+  "day2_night_dream_7": {
+    "name": "Yo",
+    "text": "*Al fondo del pasillo hay alguien de pie. Cara pálida. Ojos que miran lejos. Pelo largo y negro.*"
+  },
+  "day2_night_dream_8": {
+    "name": "Yo",
+    "text": "*...¿La chica del asiento de atrás? ¿Seolhwa?*"
+  },
+  "day2_night_dream_9": {
+    "name": "Yo",
+    "text": "*Me acerco. Un paso, dos pasos. Los pasos resuenan. Su boca se mueve.*"
+  },
+  "day2_night_dream_10": {
+    "name": "???",
+    "text": "\"...Recuérdame...\""
+  },
+  "day2_night_dream_11": {
+    "name": "Yo",
+    "text": "*Extendí la mano. Parecía que iba a alcanzarla. En el momento en que mis dedos estaban a punto de tocarla—*"
+  },
+  "day2_night_dream_12": {
+    "name": "Yo",
+    "text": "*El suelo se desmorona y la vista se oscurece. Caigo. Sin fin.*"
+  },
+  "day2_night_wake_1": {
+    "name": "Yo",
+    "text": "*...¡! Me desperté empapado en sudor. El corazón me late desbocado.*"
+  },
+  "day2_night_wake_2": {
+    "name": "Yo",
+    "text": "*Miro el reloj. Las 3:47 de la madrugada.*"
+  },
+  "day2_night_wake_3": {
+    "name": "Yo",
+    "text": "*Era un sueño. Solo un sueño. ...¿Verdad?*"
+  },
+  "day2_night_wake_4": {
+    "name": "Yo",
+    "text": "*...Pero ¿por qué recuerdo la cara de Seolhwa con tanta nitidez?*"
+  },
+  "day2_night_wake_5": {
+    "name": "Yo",
+    "text": "*Bebo un vaso de agua y me vuelvo a tumbar. El sueño no llega.*"
+  },
+  "day2_night_end": {
+    "name": "",
+    "text": "*— Fin del Día 2 —*"
   }
 }

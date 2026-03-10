@@ -1,279 +1,275 @@
 {
-    "day4_lunch_start": {
-        "name": "Yo",
-        "text": "*Hora del almuerzo. El asiento vacío de Yuna no deja de atraer mi mirada.*"
-    },
-    "day4_lunch_start_2": {
-        "name": "Yo",
-        "text": "*No puedo creer que se haya 'trasladado'. Estaba aquí ayer mismo.*"
-    },
-    "day4_lunch_start_3": {
-        "name": "Yo",
-        "text": "*유나. 유나를 찾아야 한다. '갑자기 전학 갔다'는 말, 믿을 수 없다.*"
-    },
-    "day4_lunch_start_4": {
-        "name": "Yo",
-        "text": "*아니면... 보건실. 리인 선생님이 주사기에 옮기던 약품. 그게 뭔지 알아내야 한다.*"
-    },
-    "day4_lunch_start_5": {
-        "name": "Yo",
-        "text": "*옥상도 있다. 어제 설화가 꿈에서 했던 말. 단서가 남아있을지도.*"
-    },
-    "day4_lunch_choice": {
-        "name": "Yo",
-        "text": "*¿Qué hago ahora?*",
-        "choices": [
-            "Buscar a Yuna",
-            "Investigar la enfermería",
-            "Ir a la azotea"
-        ]
-    },
-    "day4_lunch_search_yuna": {
-        "name": "Yo",
-        "text": "*Recorro los pasillos. Los lugares que Yuna frecuentaba... la sala del club de fotografía.*"
-    },
-    "day4_lunch_search_2": {
-        "name": "Yo",
-        "text": "*La sala del club de fotografía está abierta. Nadie dentro.*"
-    },
-    "day4_lunch_search_3": {
-        "name": "Yo",
-        "text": "*La taquilla de Yuna. La abrí. Vacía... excepto por una cosa.*"
-    },
-    "day4_lunch_search_4": {
-        "name": "Yo",
-        "text": "*Una cámara pequeña. Escondida en la esquina de la taquilla. Yuna debió dejarla atrás.*"
-    },
-    "day4_lunch_search_5": {
-        "name": "Yo",
-        "text": "*Me guardé la cámara en el bolsillo. ...Pasos en el pasillo, de repente.*"
-    },
-    "day4_lunch_search_6": {
-        "name": "Yo",
-        "text": "*Miré hacia atrás. Alguien estaba de pie al final del pasillo... y luego desapareció. Volví rápidamente a clase.*"
-    },
-    "day4_lunch_search_7": {
-        "name": "Yo",
-        "text": "*유나의 사물함. 번호가 적힌 스티커가 붙어있었다. '최유나'. 스티커가 반쯤 벗겨져 있다. 누군가 뜯으려고 한 흔적.*"
-    },
-    "day4_lunch_search_8": {
-        "name": "Yo",
-        "text": "*사물함을 열었다. ...텅 비어있다. 가방도, 교과서도, 사진도... 전부 사라져 있다. 마치 처음부터 아무도 쓰지 않은 것처럼.*"
-    },
-    "day4_lunch_search_9": {
-        "name": "Yo",
-        "text": "*깨끗하다. **너무** 깨끗하다. 먼지 하나 없이. 누군가 '정리'한 거다. 유나가 이 사물함에서 사진을 꺼내 보여줬던 게 이틀 전이다. 고양이 사진을 빼곡히 붙여놨던 이 사물함이... 공장 초기화된 것처럼 비어있다.*"
-    },
-    "day4_lunch_search_10": {
-        "name": "Yo",
-        "text": "*...잠깐. 사물함 바닥. 합판이 미세하게 들떠 있다. 손톱으로 끝을 들어올렸다. 이중 바닥.*"
-    },
-    "day4_lunch_search_11": {
-        "name": "Yo",
-        "text": "*틈새에 뭔가 끼워져 있다. 유나의 카메라다. 합판 아래에 일부러 숨겨둔 거다. 사물함을 비운 사람이 바닥까지는 뜯지 않을 거라고 판단한 거지. ...발견할 사람을 위해. 즉, 나를 위해.*"
-    },
-    "day4_lunch_search_12": {
-        "name": "Yo",
-        "text": "*카메라를 켰다. 배터리 표시가 깜빡인다. 거의 바닥이다. 마지막 사진 한 장만 화면에 뜬다.*"
-    },
-    "day4_lunch_search_13": {
-        "name": "Yo",
-        "text": "*...지하로 향하는 계단. 어두운 계단. 구관 건물 어딘가. 보이지 않는 곳.*"
-    },
-    "day4_lunch_search_14": {
-        "name": "Yo",
-        "text": "*사진 구석에 손으로 쓴 글씨가 보인다. '여기 아래 — 유'. 유나가 남긴 마지막 메시지.*"
-    },
-    "day4_lunch_search_15": {
-        "name": "Yo",
-        "text": "*카메라가 꺼졌다. 배터리가 다 된 거다. ...하지만 충분하다.*"
-    },
-    "day4_lunch_search_16": {
-        "name": "Yo",
-        "text": "*유나는 '갑자기 전학 간' 게 아니다. 유나는 뭔가를 발견했고, 그래서 —*"
-    },
-    "day4_lunch_search_17": {
-        "name": "Yo",
-        "text": "*...지하. 이 학교 어딘가에 지하실이 있다.*"
-    },
-    "day4_lunch_nurse": {
-        "name": "Enfermera",
-        "text": "\"Vaya, {name}. De vuelta otra vez. ¿Qué te duele hoy?\""
-    },
-    "day4_lunch_nurse_2": {
-        "name": "Yo",
-        "text": "*Un armario cerrado con llave en la esquina de la enfermería. Tiene un candado que antes no estaba ahí.*"
-    },
-    "day4_lunch_nurse_3": {
-        "name": "Enfermera",
-        "text": "\"¿Qué tal te sentó la bebida de ayer? ...¿Estás durmiendo bien?\""
-    },
-    "day4_lunch_nurse_4": {
-        "name": "Yo",
-        "text": "*¿Debería preguntarle a Riin sobre Yuna?*",
-        "choices": [
-            "Preguntar adónde fue Yuna",
-            "No decir nada"
-        ]
-    },
-    "day4_lunch_nurse_5": {
-        "name": "Yo",
-        "text": "*투명한 액체. 주사기 눈금이 정확히 맞춰져 있다. 익숙한 동작.*"
-    },
-    "day4_lunch_nurse_6": {
-        "name": "Yo",
-        "text": "*...나를 보고 멈춘다. 어깨가 굳는 게 보인다.*"
-    },
-    "day4_lunch_nurse_7": {
-        "name": "Kang Riin",
-        "text": "\"...놀랐잖아. 노크 좀.\""
-    },
-    "day4_lunch_nurse_8": {
-        "name": "Yo",
-        "text": "*주사기를 재빨리 서랍에 넣는다. 웃는다. 하지만 손이 떨리고 있다.*"
-    },
-    "day4_lunch_nurse_9": {
-        "name": "Kang Riin",
-        "text": "\"무슨 일이야? 점심시간인데.\""
-    },
-    "day4_lunch_nurse_10": {
-        "name": "Yo",
-        "text": "\"...그냥 좀 머리가 아파서.\""
-    },
-    "day4_lunch_nurse_11": {
-        "name": "Yo",
-        "text": "*리인 선생님이 다가온다. 이마에 손을 대려고 한다. ...이 손으로 방금 주사기를 잡고 있었다. 그 주사기에 뭘 넣은 거지?*"
-    },
-    "day4_lunch_nurse_timer": {
-        "name": "Kang Riin",
-        "text": "\"열은 없네. 어제 마신 음료 효과는 어때? ...잘 자고 있어?\"",
-        "choices": [
-            "유나에 대해 묻는다",
-            "아무 말 하지 않는다"
-        ]
-    },
-    "day4_lunch_nurse_ask": {
-        "name": "Yo",
-        "text": "\"유나가... 갑자기 전학 갔다고 들었는데. 어젯밤에요.\""
-    },
-    "day4_lunch_nurse_ask_2": {
-        "name": "Yo",
-        "text": "*리인 선생님의 표정이 미세하게 변했다. 0.3초. 아주 짧게.*"
-    },
-    "day4_lunch_nurse_ask_3": {
-        "name": "Kang Riin",
-        "text": "\"...유나? 아, 최유나. 그랬구나. 갑자기였네.\""
-    },
-    "day4_lunch_nurse_ask_4": {
-        "name": "Yo",
-        "text": "\"혹시 유나가 어제 보건실에 온 적 있어요?\""
-    },
-    "day4_lunch_nurse_ask_5": {
-        "name": "Kang Riin",
-        "text": "\"...\""
-    },
-    "day4_lunch_nurse_ask_6": {
-        "name": "Yo",
-        "text": "*리인 선생님이 나를 본다. 웃고 있지만, 눈이 웃고 있지 않다.*"
-    },
-    "day4_lunch_nurse_ask_7": {
-        "name": "Kang Riin",
-        "text": "\"...왜 그렇게 쳐다봐? {name}, 너 혹시 무슨 이상한 생각 하고 있는 건 아니지?\""
-    },
-    "day4_lunch_nurse_ask_8": {
-        "name": "Yo",
-        "text": "*목소리가 차가워졌다. 순간적으로. 다시 부드러워진다.*"
-    },
-    "day4_lunch_nurse_ask_9": {
-        "name": "Kang Riin",
-        "text": "\"유나는 괜찮을 거야. 원래 학교로 돌아갔으니까. 걱정할 거 없어.\""
-    },
-    "day4_lunch_nurse_ask_10": {
-        "name": "Yo",
-        "text": "*'걱정할 거 없다.' 은수 선생님도 같은 말을 했다. 세아도. 리인 선생님의 손이 또 떨리고 있다. ...캐비넷을 닫는 손. 약병이 안에서 부딪히며 달그락거린다. 이 사람도 뭔가와 싸우고 있는 건가? 아니면... 나를 관찰하고 있는 건가?*"
-    },
-    "day4_lunch_nurse_silent": {
-        "name": "Yo",
-        "text": "*아무 말 하지 않았다. 리인 선생님이 나를 가만히 바라본다.*"
-    },
-    "day4_lunch_nurse_silent_2": {
-        "name": "Kang Riin",
-        "text": "\"...약 줄까? 두통약.\""
-    },
-    "day4_lunch_nurse_silent_3": {
-        "name": "Yo",
-        "text": "*선생님이 서랍에서 약을 꺼낸다. 흰 알약 두 알. ...이걸 먹어도 되는 걸까? 설화가 말했다. '약을 줬어. 기억을 지우는 약.'*"
-    },
-    "day4_lunch_nurse_silent_4": {
-        "name": "Yo",
-        "text": "\"괜찮아요. 좀 쉬면 나을 것 같아요.\""
-    },
-    "day4_lunch_nurse_silent_5": {
-        "name": "Kang Riin",
-        "text": "\"...그래.\""
-    },
-    "day4_lunch_nurse_silent_6": {
-        "name": "Yo",
-        "text": "*리인 선생님이 약을 다시 서랍에 넣는다. 그 서랍 안에 아까 넣은 주사기가 보인다. 눈을 돌렸다. 못 본 척했다. ...심장이 너무 빨리 뛴다.*"
-    },
-    "day4_lunch_rooftop": {
-        "name": "Yo",
-        "text": "*La azotea. Donde estuve con Yuna ayer. El viento está frío.*"
-    },
-    "day4_lunch_rooftop_2": {
-        "name": "Yo",
-        "text": "*Hay algo grabado debajo de la barandilla. Letras raspadas, como con un cuchillo.*"
-    },
-    "day4_lunch_rooftop_3": {
-        "name": "Yo",
-        "text": "*'Solo hay una salida. — Lee Seolhwa' ...Seolhwa dejó esto.*"
-    },
-    "day4_lunch_rooftop_4": {
-        "name": "Yo",
-        "text": "*...¿Una salida? ¿Cuál?*"
-    },
-    "day4_lunch_rooftop_5": {
-        "name": "Yo",
-        "text": "*De repente siento frío. Me apresuro a bajar.*"
-    },
-    "day4_lunch_rooftop_6": {
-        "name": "Yo",
-        "text": "*난간 밑에 뭔가 새겨져 있다. 칼로 긁은 듯한 글씨. 녹이 슬어 있다. 오래된 것 같다. '여기서 나가는 방법은 하나. — 이설화'*"
-    },
-    "day4_lunch_rooftop_7": {
-        "name": "Yo",
-        "text": "*...설화가 새긴 거다. 1년 전에. 손가락으로 글씨를 따라가 봤다. 깊게 팠다. 힘을 줘서 새긴 거다. 절박하게.*"
-    },
-    "day4_lunch_rooftop_8": {
-        "name": "Yo",
-        "text": "*'나가는 방법은 하나.' ...뭘까. 탈출? 아니면... 그 아래에 더 작은 글씨가 있다. 거의 보이지 않을 만큼 작게. '지하에 답이 있어'*"
-    },
-    "day4_lunch_rooftop_9": {
-        "name": "Yo",
-        "text": "*지하. 유나의 카메라에도 지하로 가는 계단이 찍혀있었다.*"
-    },
-    "day4_lunch_rooftop_10": {
-        "name": "Yo",
-        "text": "*옥상 바닥에 벚꽃잎이 하나 떨어져 있다. 바람에 살짝 흔들린다. ...지금은 벚꽃 계절이 아닌데. 3일차 아침 복도에서도 이걸 봤다.*"
-    },
-    "day4_lunch_rooftop_11": {
-        "name": "Yo",
-        "text": "*설화의 흔적. 설화가 여기에 있었다는 증거. 모든 게 지워져도... 이건 남아있다. 벚꽃잎을 주머니에 넣었다. ...가져가야 할 것 같아서.*"
-    },
-    "day4_lunch_rooftop_12": {
-        "name": "Yo",
-        "text": "*...지하. 방과후에 찾아야 한다. 유나가 사진으로 남긴 그 계단을.*"
-    },
-    "day4_lunch_rooftop_13": {
-        "name": "Yo",
-        "text": "*서둘러 내려간다.*"
-    },
-    "day4_lunch_ghost": {
-        "name": "",
-        "text": "**\"지하\"**"
-    },
-    "day4_lunch_end": {
-        "name": "Yo",
-        "text": "*Comienzan las clases de la tarde. Siento que el corazón va a estallarme.*"
-    }
+  "day4_lunch_start": {
+    "name": "Yo",
+    "text": "*Sonó el timbre del almuerzo.*"
+  },
+  "day4_lunch_start_2": {
+    "name": "Yo",
+    "text": "*...No tengo apetito. El estómago se ha encogido.*"
+  },
+  "day4_lunch_start_3": {
+    "name": "Yo",
+    "text": "*La hora del almuerzo. Tengo que moverme.*"
+  },
+  "day4_lunch_start_4": {
+    "name": "Yo",
+    "text": "*Yuna. La nota. 'Hay algo que debo contarte.'*"
+  },
+  "day4_lunch_start_5": {
+    "name": "Yo",
+    "text": "*Fui al pasillo del fondo de la tercera planta. Yuna estaba esperando.*"
+  },
+  "day4_lunch_choice": {
+    "name": "Yo",
+    "text": "*Solo tengo el descanso del almuerzo. Tengo que moverme rápido.*",
+    "choices": [
+      "Buscar a Yuna",
+      "Investigar la enfermería",
+      "Ir a la azotea"
+    ]
+  },
+  "day4_lunch_search_yuna": {
+    "name": "Yo",
+    "text": "*La sala del club de fotografía está al fondo del segundo piso del edificio viejo. El pasillo está vacío durante el almuerzo.*"
+  },
+  "day4_lunch_search_2": {
+    "name": "Yo",
+    "text": "*...No, no es que esté 'vacío'. Estoy evitando a la gente. No puedo dejar que Sea o la profesora Eunsu me vean.*"
+  },
+  "day4_lunch_search_3": {
+    "name": "Yo",
+    "text": "*Amortiguando los pasos, caminé. El corazón me late con fuerza. No hay nada de inusual en esto... entonces ¿por qué estoy tan tenso?*"
+  },
+  "day4_lunch_search_4": {
+    "name": "Yo",
+    "text": "*...Porque sí hay algo de inusual.*"
+  },
+  "day4_lunch_search_5": {
+    "name": "Yo",
+    "text": "*Llegué a la puerta de la sala del club de fotografía. Está cerrada. Giré el pomo. ...Abre.*"
+  },
+  "day4_lunch_search_6": {
+    "name": "Yo",
+    "text": "*Entré. Un leve olor a cuarto oscuro. El olor agrio del revelador y el fijador.*"
+  },
+  "day4_lunch_search_7": {
+    "name": "Yo",
+    "text": "*Yuna me tiende algo. Una tarjeta de memoria.*"
+  },
+  "day4_lunch_search_8": {
+    "name": "Choi Yuna",
+    "text": "\"Senpai. Esto... es de Seolhwa-senpai.\""
+  },
+  "day4_lunch_search_9": {
+    "name": "Yo",
+    "text": "\"¿De Seolhwa? ¿Cómo la conseguiste?\""
+  },
+  "day4_lunch_search_10": {
+    "name": "Choi Yuna",
+    "text": "\"La encontré. En el sótano. Cuando fui a buscar evidencias.\""
+  },
+  "day4_lunch_search_11": {
+    "name": "Yo",
+    "text": "\"¿El sótano? ¿Fuiste ahí sola?\""
+  },
+  "day4_lunch_search_12": {
+    "name": "Choi Yuna",
+    "text": "\"Sí. Tenía miedo pero... quería saber la verdad.\""
+  },
+  "day4_lunch_search_13": {
+    "name": "Yo",
+    "text": "*Yuna abraza la cámara con fuerza. Tiene las manos temblando.*"
+  },
+  "day4_lunch_search_14": {
+    "name": "Choi Yuna",
+    "text": "\"Senpai. En esta tarjeta de memoria... creo que hay registros de lo que le hicieron a Seolhwa-senpai.\""
+  },
+  "day4_lunch_search_15": {
+    "name": "Yo",
+    "text": "*Me quedo sin habla.*"
+  },
+  "day4_lunch_search_16": {
+    "name": "Choi Yuna",
+    "text": "\"No tuve el valor de mirarlo. Senpai... ¿puedes hacerlo tú?\""
+  },
+  "day4_lunch_search_17": {
+    "name": "Yo",
+    "text": "*Tomo la tarjeta de memoria. Está fría.*"
+  },
+  "day4_lunch_nurse": {
+    "name": "Yo",
+    "text": "*Me quedé fuera de la enfermería. Desde dentro escucho el tintineo del cristal. El sonido de organizar botellas de medicamentos.*"
+  },
+  "day4_lunch_nurse_2": {
+    "name": "Yo",
+    "text": "*...Respiración profunda. Está bien. Entro como siempre.*"
+  },
+  "day4_lunch_nurse_3": {
+    "name": "Yo",
+    "text": "*Abrí la puerta.*"
+  },
+  "day4_lunch_nurse_4": {
+    "name": "Yo",
+    "text": "*La enfermera Riin está de pie frente al armario de medicamentos. De espaldas. Está pasando algo a una jeringa.*"
+  },
+  "day4_lunch_nurse_5": {
+    "name": "Yo",
+    "text": "*La enfermería. Riin está de espaldas, preparando algo.*"
+  },
+  "day4_lunch_nurse_6": {
+    "name": "Yo",
+    "text": "*...No lo sabe. Que estoy aquí.*"
+  },
+  "day4_lunch_nurse_7": {
+    "name": "Riin",
+    "text": "*Hay papeles sobre la mesa. Registros. Nombres.*"
+  },
+  "day4_lunch_nurse_8": {
+    "name": "Yo",
+    "text": "*Un nombre familiar. Lee Seolhwa.*"
+  },
+  "day4_lunch_nurse_9": {
+    "name": "Riin",
+    "text": "*Junto a él... fechas. Dosis. 'Tratamiento completado'.*"
+  },
+  "day4_lunch_nurse_10": {
+    "name": "Yo",
+    "text": "*Las manos me tiemblan. Esto es...*"
+  },
+  "day4_lunch_nurse_11": {
+    "name": "Yo",
+    "text": "*Riin se da la vuelta.*"
+  },
+  "day4_lunch_nurse_timer": {
+    "name": "Riin",
+    "text": "*¿Qué hago?*",
+    "choices": [
+      "Esconderme",
+      "Hacer como si nada"
+    ]
+  },
+  "day4_lunch_nurse_ask": {
+    "name": "Yo",
+    "text": "*Me acerco. Finjo naturalidad.*"
+  },
+  "day4_lunch_nurse_ask_2": {
+    "name": "Kang Riin",
+    "text": "\"Vaya, ¿hoy también viniste? Siéntate.\""
+  },
+  "day4_lunch_nurse_ask_3": {
+    "name": "Riin",
+    "text": "\"Sí. Quería pasar.\""
+  },
+  "day4_lunch_nurse_ask_4": {
+    "name": "Kang Riin",
+    "text": "\"¿Estás bien? Hoy pareces tensa.\""
+  },
+  "day4_lunch_nurse_ask_5": {
+    "name": "Riin",
+    "text": "\"Estoy bien. Solo un poco cansada.\""
+  },
+  "day4_lunch_nurse_ask_6": {
+    "name": "Kang Riin",
+    "text": "\"Ya veo. Toma, te preparo el té.\""
+  },
+  "day4_lunch_nurse_ask_7": {
+    "name": "Riin",
+    "text": "*Riin pone el agua a hervir. Yo sigo pensando en aquellos documentos.*"
+  },
+  "day4_lunch_nurse_ask_8": {
+    "name": "Yo",
+    "text": "*Lee Seolhwa. Tratamiento completado. Esas palabras.*"
+  },
+  "day4_lunch_nurse_ask_9": {
+    "name": "Kang Riin",
+    "text": "\"...¿{name}? ¿En qué estás pensando?\""
+  },
+  "day4_lunch_nurse_ask_10": {
+    "name": "Yo",
+    "text": "\"Nada. Perdona.\""
+  },
+  "day4_lunch_nurse_silent": {
+    "name": "Yo",
+    "text": "*Me escondo detrás de la estantería. Riin pasa cerca.*"
+  },
+  "day4_lunch_nurse_silent_2": {
+    "name": "Riin",
+    "text": "*...No me ve. Sale de la enfermería.*"
+  },
+  "day4_lunch_nurse_silent_3": {
+    "name": "Yo",
+    "text": "*Cuando se va, vuelvo a mirar los documentos.*"
+  },
+  "day4_lunch_nurse_silent_4": {
+    "name": "Yo",
+    "text": "*Lee Seolhwa. Día 1 al Día 5. 'Tratamiento completado'.*"
+  },
+  "day4_lunch_nurse_silent_5": {
+    "name": "Riin",
+    "text": "*Debajo... otros nombres. Nombres que no reconozco.*"
+  },
+  "day4_lunch_nurse_silent_6": {
+    "name": "Yo",
+    "text": "*Cuántas personas. Cuántos...*"
+  },
+  "day4_lunch_rooftop": {
+    "name": "Yo",
+    "text": "*Empujé la puerta de la azotea. ...Abre. Ayer estaba cerrada con llave.*"
+  },
+  "day4_lunch_rooftop_2": {
+    "name": "Yo",
+    "text": "*El viento sopla con fuerza. El pelo sale volando. El cielo es un gris apagado.*"
+  },
+  "day4_lunch_rooftop_3": {
+    "name": "Yo",
+    "text": "*No hay nadie en la azotea. Ni siquiera a la hora del almuerzo. ...¿Normalmente no solían subir estudiantes aquí?*"
+  },
+  "day4_lunch_rooftop_4": {
+    "name": "Yo",
+    "text": "*Caminé hacia la barandilla. Debajo se ve el campo de la escuela. Los estudiantes comen el almuerzo. Sonriendo. Todos con la misma sonrisa.*"
+  },
+  "day4_lunch_rooftop_5": {
+    "name": "Yo",
+    "text": "*...Mirando desde abajo, ¿podrían verme? Si agitara la mano aquí arriba, ¿alguien me vería de verdad?*"
+  },
+  "day4_lunch_rooftop_6": {
+    "name": "Yo",
+    "text": "*La azotea. Saco el teléfono. Miro los archivos de la tarjeta de memoria.*"
+  },
+  "day4_lunch_rooftop_7": {
+    "name": "Yo",
+    "text": "*Fotos. Documentos. Archivos de video.*"
+  },
+  "day4_lunch_rooftop_8": {
+    "name": "Yo",
+    "text": "*Abro uno. Un pasillo oscuro. Una habitación. Esa silla.*"
+  },
+  "day4_lunch_rooftop_9": {
+    "name": "Yo",
+    "text": "*Y en ella... Seolhwa.*"
+  },
+  "day4_lunch_rooftop_10": {
+    "name": "Yo",
+    "text": "*Con las muñecas sujetas. La cabeza gacha. No se mueve.*"
+  },
+  "day4_lunch_rooftop_11": {
+    "name": "Yo",
+    "text": "*Alguien le pone una inyección. La cámara tiembla.*"
+  },
+  "day4_lunch_rooftop_12": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Recuérdame. Por favor.\""
+  },
+  "day4_lunch_rooftop_13": {
+    "name": "Yo",
+    "text": "*El vídeo se corta.*"
+  },
+  "day4_lunch_ghost": {
+    "name": "",
+    "text": "**\"Sótano\"**"
+  },
+  "day4_lunch_end": {
+    "name": "Yo",
+    "text": "*Empiezan las clases de la tarde. El corazón parece a punto de estallar.*"
+  }
 }

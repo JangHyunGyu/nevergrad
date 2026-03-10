@@ -1,346 +1,345 @@
 {
-    "day3_night_start": {
-        "name": "Moi",
-        "text": "*De retour à la maison. Allongé dans mon lit, mais le sommeil ne vient pas.*"
-    },
-    "day3_night_start_2": {
-        "name": "Moi",
-        "text": "*...잠깐. 현관문 잠금 상태가 이상했다. 아침에 나갈 때 분명 잠갔는데... 한 번 더 돌려야 열렸다?*"
-    },
-    "day3_night_start_3": {
-        "name": "Moi",
-        "text": "*...잠금장치가 이상한 거겠지. 이 집 좀 낡으니까.*"
-    },
-    "day3_night_start_4": {
-        "name": "Moi",
-        "text": "*저녁을 먹으면서 오늘 있었던 일을 정리해본다.*"
-    },
-    "day3_night_start_5": {
-        "name": "Moi",
-        "text": "*긁힌 사물함. 절반이 잘린 증명사진. 복도에서 만난 설화. '아직은'이라는 말. 벚꽃잎.*"
-    },
-    "day3_night_start_6": {
-        "name": "Moi",
-        "text": "*유나의 메모리카드. 전학생이 사라졌다는 이야기. 잠긴 옥상 문.*"
-    },
-    "day3_night_start_7": {
-        "name": "Moi",
-        "text": "*세아의 질투. 리인의 약. 은수의 서류. ...너무 많다. 3일 만에 일어난 일이라고는 믿기 어려울 정도로.*"
-    },
-    "day3_night_sea_msg": {
-        "name": "Moi",
-        "text": "*폰이 울린다. 세아다.*"
-    },
-    "day3_night_sea_msg_2": {
-        "name": "Moi",
-        "text": "*세아: '{name}, 오늘 재밌었어! 내일도 같이 가자♥'*"
-    },
-    "day3_night_sea_msg_3": {
-        "name": "Moi",
-        "text": "*1분 후. 세아: '자기 전에 답장해줘'*"
-    },
-    "day3_night_sea_msg_4": {
-        "name": "Moi",
-        "text": "*3분 후. 세아: '...'*"
-    },
-    "day3_night_sea_msg_5": {
-        "name": "Moi",
-        "text": "*2분 후. 세아: '{name}?'*"
-    },
-    "day3_night_sea_msg_6": {
-        "name": "Moi",
-        "text": "*세아: '왜 안 읽어?'*"
-    },
-    "day3_night_sea_msg_7": {
-        "name": "Moi",
-        "text": "*세아: '자는 거지...?'*"
-    },
-    "day3_night_sea_msg_8": {
-        "name": "Moi",
-        "text": "*...13분 사이에 6개. 읽지도 않았는데 연달아 오는 메시지.*"
-    },
-    "day3_night_sea_msg_9": {
-        "name": "Moi",
-        "text": "*핸드폰을 뒤집어 놓았다. 진동이 울린다. 또 왔다. ...무시한다.*"
-    },
-    "day3_night_recall": {
-        "name": "Moi",
-        "text": "*Je repasse les événements de la journée. Le casier gratté. La carte mémoire de Yuna. La porte du toit verrouillée.*"
-    },
-    "day3_night_recall_2": {
-        "name": "Moi",
-        "text": "*Trois jours depuis mon transfert. Yuna a dit que des élèves transférés avaient 'disparu' de cette école.*"
-    },
-    "day3_night_recall_3": {
-        "name": "Moi",
-        "text": "*...Étrange. Mes souvenirs d'avant le transfert ici sont... flous. Pourquoi suis-je venu dans cette école, déjà ?*"
-    },
-    "day3_night_recall_4": {
-        "name": "Moi",
-        "text": "*Mes parents ? Quand les ai-je contactés pour la dernière fois... quand est-ce que je leur ai parlé la dernière fois ? Je n'arrive pas... à m'en souvenir.*"
-    },
-    "day3_night_recall_5": {
-        "name": "Moi",
-        "text": "*...이상하다. 이 학교에 오기 전의 기억이... 흐릿하다.*"
-    },
-    "day3_night_recall_6": {
-        "name": "Moi",
-        "text": "*왜 여기로 전학을 온 거였지? 부모님 일 때문이라고 했는데... 무슨 일?*"
-    },
-    "day3_night_recall_7": {
-        "name": "Moi",
-        "text": "*부모님은? 연락이... 마지막으로 연락한 게 언제였지? ...기억이... 안 난다.*"
-    },
-    "day3_night_recall_8": {
-        "name": "Moi",
-        "text": "*전 학교 친구들 얼굴은? ...민수. 민수의 얼굴이... 흐릿하다. 어제까지만 해도 선명했는데.*"
-    },
-    "day3_night_recall_9": {
-        "name": "Moi",
-        "text": "*...뭐야 이건. 왜 기억이 안 나지?*"
-    },
-    "day3_night_stat_crack": {
-        "name": "Moi",
-        "text": "*...Quelque chose ne va pas. Ce sentiment n'est pas de 'l'affection'. C'est...*"
-    },
-    "day3_night_stat_crack_2": {
-        "name": "Moi",
-        "text": "*...De la peur ?*"
-    },
-    "day3_night_stat_crack_3": {
-        "name": "Moi",
-        "text": "*...뭔가 이상하다. 이 감정은 '호감'이 아니다. 이건...*"
-    },
-    "day3_night_stat_crack_4": {
-        "name": "Moi",
-        "text": "*...공포?*"
-    },
-    "day3_night_stat_crack_5": {
-        "name": "Moi",
-        "text": "*왜 무서운 거지? 왜 지금 떨리고 있는 거지?*"
-    },
-    "day3_night_nightmare": {
-        "name": "Moi",
-        "text": "*...Je me suis endormi ? C'est... l'école ? Il fait sombre.*"
-    },
-    "day3_night_nightmare_2": {
-        "name": "Moi",
-        "text": "*Je marche dans le couloir. Seuls mes pas résonnent. Les portes des salles de classe s'ouvrent les unes après les autres.*"
-    },
-    "day3_night_nightmare_3": {
-        "name": "???",
-        "text": "\"...{name} est à moi.\""
-    },
-    "day3_night_nightmare_4": {
-        "name": "Moi",
-        "text": "*J'ai regardé derrière moi. Personne. ...Mais j'entends des rires.*"
-    },
-    "day3_night_nightmare_5": {
-        "name": "???",
-        "text": "\"...Je te protégerai. Ne va nulle part. Nulle... part... ne va...\""
-    },
-    "day3_night_nightmare_6": {
-        "name": "Moi",
-        "text": "*Je me suis mis à courir. Le couloir s'étire à l'infini. Des talons claquent derrière moi, de plus en plus proches.*"
-    },
-    "day3_night_nightmare_7": {
-        "name": "???",
-        "text": "\"Ça ne fait pas mal. Ça ne fait pas mal. Ça ne fait pas mal. Çanefaitpasmalçanefaitpasmal...\""
-    },
-    "day3_night_nightmare_8": {
-        "name": "Moi",
-        "text": "*Cul-de-sac. Je me retourne... Trois ombres se tiennent là. Souriantes.*"
-    },
-    "day3_night_nightmare_9": {
-        "name": "Moi",
-        "text": "*뛴다. 숨이 차다. 다리가 무겁다. 뒤를 돌아보면 안 된다. 절대 돌아보면 안 된다.*"
-    },
-    "day3_night_nightmare_10": {
-        "name": "???",
-        "text": "\"아프지 않아. 아프지 않아. 아프지 않아. 아프지않아아프지않아아프지...\""
-    },
-    "day3_night_nightmare_11": {
-        "name": "Moi",
-        "text": "*...막다른 길. 벽이다.*"
-    },
-    "day3_night_nightmare_12": {
-        "name": "Moi",
-        "text": "*뒤를 돌아보면... 세 개의 그림자가 서 있다. 웃고 있다. 세 명 다 같은 미소.*"
-    },
-    "day3_night_nightmare_13": {
-        "name": "Moi",
-        "text": "*이 미소를 어제까지는 '따뜻하다'고 느꼈다.*"
-    },
-    "day3_night_nightmare_14": {
-        "name": "Moi",
-        "text": "*그림자들이 다가온다. 한 발, 한 발. 도망칠 곳이 없다.*"
-    },
-    "day3_night_seolhwa": {
-        "name": "???",
-        "text": "\"...Fuis.\""
-    },
-    "day3_night_seolhwa_2": {
-        "name": "Lee Seolhwa",
-        "text": "\"Il y a un an... je suis venue ici exactement comme toi.\""
-    },
-    "day3_night_seolhwa_3": {
-        "name": "Lee Seolhwa",
-        "text": "\"Ne leur fais pas confiance. Cinq jours. Tu dois sortir... en cinq jours.\""
-    },
-    "day3_night_seolhwa_4": {
-        "name": "Moi",
-        "text": "*La silhouette de Seolhwa s'efface. Les mots 'cinq jours' résonnent dans mon esprit.*"
-    },
-    "day3_night_seolhwa_5": {
-        "name": "Moi",
-        "text": "*설화의 목소리가 떨린다. 하지만 또렷하다. 처음으로 제대로 된 문장을 말하고 있다.*"
-    },
-    "day3_night_seolhwa_6": {
-        "name": "Lee Seolhwa",
-        "text": "\"처음엔 다 좋았어. 선생님도 친절하고, 세아도 웃어주고, 리인 선생님도 차를 타줬어.\""
-    },
-    "day3_night_seolhwa_7": {
-        "name": "Lee Seolhwa",
-        "text": "\"...전부 따뜻했어. 이 학교가 천국인 줄 알았어.\""
-    },
-    "day3_night_seolhwa_8": {
-        "name": "Moi",
-        "text": "*설화가 잠깐 말을 멈춘다. 눈물을 닦는다. 손이 투명하다.*"
-    },
-    "day3_night_seolhwa_9": {
-        "name": "Lee Seolhwa",
-        "text": "\"...거짓말이었어. 전부.\""
-    },
-    "day3_night_seolhwa_10": {
-        "name": "Lee Seolhwa",
-        "text": "\"약을... 줬어... 기억을 지우는... 매일... 조금씩...\""
-    },
-    "day3_night_seolhwa_11": {
-        "name": "Lee Seolhwa",
-        "text": "\"...삼키지... 않았어. 약을... 숨겼어. 기억을... 지키려고...\""
-    },
-    "day3_night_seolhwa_12": {
-        "name": "Lee Seolhwa",
-        "text": "\"그랬더니...\""
-    },
-    "day3_night_seolhwa_13": {
-        "name": "Moi",
-        "text": "*설화가 자기 손을 내려다본다. 손이 투명하다. 손가락 사이로 복도의 타일이 비쳐 보인다.*"
-    },
-    "day3_night_seolhwa_14": {
-        "name": "Lee Seolhwa",
-        "text": "\"**...이렇게 됐어.**\""
-    },
-    "day3_night_seolhwa_15": {
-        "name": "Lee Seolhwa",
-        "text": "\"아무도 나를 못 봐. 아무도 내 이름을 기억 못 해. 출석부에서도 지워졌어.\""
-    },
-    "day3_night_seolhwa_16": {
-        "name": "Lee Seolhwa",
-        "text": "\"...나는 죽은 건지, 살아있는 건지도 모르겠어. 그냥 여기에... 묶여 있어.\""
-    },
-    "day3_night_seolhwa_17": {
-        "name": "Moi",
-        "text": "*설화가 나를 본다. 눈물 젖은 눈이 나를 똑바로 바라보고 있다.*"
-    },
-    "day3_night_seolhwa_18": {
-        "name": "Lee Seolhwa",
-        "text": "\"그 사람들을 믿으면 안 돼. **5일이야.** 너한테 남은 시간.\""
-    },
-    "day3_night_seolhwa_19": {
-        "name": "Lee Seolhwa",
-        "text": "\"**5일 안에... 여기서 나가야 해.** 나처럼 되기 전에.\""
-    },
-    "day3_night_seolhwa_20": {
-        "name": "Lee Seolhwa",
-        "text": "\"...그리고, {name}.\""
-    },
-    "day3_night_seolhwa_21": {
-        "name": "Lee Seolhwa",
-        "text": "\"나를... 기억해줘.\""
-    },
-    "day3_night_seolhwa_22": {
-        "name": "Lee Seolhwa",
-        "text": "\"아무도 기억 안 하니까. 여기서는. 나라는 사람이 있었다는 것조차.\""
-    },
-    "day3_night_seolhwa_23": {
-        "name": "Moi",
-        "text": "*설화의 모습이 흐려지기 시작한다. 가장자리부터 투명해진다. 마지막으로 웃었다. 슬프지만... 처음 본 웃음이다. '5일'이라는 단어와 설화의 마지막 미소가 머릿속에서 사라지지 않는다.*"
-    },
-    "day3_night_wakeup": {
-        "name": "Moi",
-        "text": "*...! Je me suis réveillé. Trempé de sueur froide.*"
-    },
-    "day3_night_wakeup_2": {
-        "name": "Moi",
-        "text": "*Un rêve... ? Le nom Seolhwa. Il était clairement sur la feuille de présence... non, il n'y était pas.*"
-    },
-    "day3_night_wakeup_3": {
-        "name": "Moi",
-        "text": "*'Sortir en cinq jours.' ...De cette école ? ...Ou de tout ça ?*"
-    },
-    "day3_night_wakeup_4": {
-        "name": "Moi",
-        "text": "*설화라는 이름. 분명히 출석부에 있던... 아니, 없던 이름.*"
-    },
-    "day3_night_wakeup_5": {
-        "name": "Moi",
-        "text": "*투명한 손. 눈물. '5일'.*"
-    },
-    "day3_night_wakeup_6": {
-        "name": "Moi",
-        "text": "*...이건 그냥 꿈이 아니다. 뭔가가 나한테 경고하고 있다.*"
-    },
-    "day3_night_wakeup_7": {
-        "name": "Moi",
-        "text": "*'5일 안에 나가야 한다.' ...이 학교에서? ...아니면 이 모든 것에서?*"
-    },
-    "day3_night_wakeup_8": {
-        "name": "Moi",
-        "text": "*주머니에서 아까 주운 사진 조각을 꺼내본다. 절반이 잘린 증명사진. ...이 사진의 주인도 '처리'된 건가?*"
-    },
-    "day3_night_wakeup_9": {
-        "name": "Moi",
-        "text": "*내일부터 어떻게 할까.*"
-    },
-    "day3_night_choice": {
-        "name": "Moi",
-        "text": "*Qu'est-ce que je fais à partir de demain ?*",
-        "choices": [
-            "Découvrir la vérité",
-            "Faire semblant de ne rien savoir"
-        ]
-    },
-    "day3_night_investigate": {
-        "name": "Moi",
-        "text": "*Je ne peux plus détourner le regard. La carte mémoire de Yuna, les documents, les élèves transférés disparus... Je dois tout relier.*"
-    },
-    "day3_night_investigate_2": {
-        "name": "Moi",
-        "text": "*À partir de demain, les choses changent. Je vais exposer le vrai visage de cette école.*"
-    },
-    "day3_night_investigate_3": {
-        "name": "Moi",
-        "text": "*...모든 걸 연결해야 한다. 내일. 어떻게든.*"
-    },
-    "day3_night_deny": {
-        "name": "Moi",
-        "text": "*...C'était juste un rêve. Tout ira bien au matin.*"
-    },
-    "day3_night_deny_2": {
-        "name": "Moi",
-        "text": "*J'ai remonté la couverture et fermé les yeux.*"
-    },
-    "day3_night_deny_3": {
-        "name": "Moi",
-        "text": "*이불을 덮고 눈을 감았다.*"
-    },
-    "day3_night_ghost_msg": {
-        "name": "",
-        "text": "정말 괜찮을까?"
-    },
-    "day3_night_end": {
-        "name": "Moi",
-        "text": "*...Le Jour 3 est terminé.*"
-    }
+  "day3_night_start": {
+    "name": "Moi",
+    "text": "*Rentré. Je verrouille la porte d'entrée et retire mes chaussures.*"
+  },
+  "day3_night_start_2": {
+    "name": "Moi",
+    "text": "*...Attendez. La serrure était bizarre. Je l'avais bien fermée ce matin en partant... j'ai dû la tourner une fois de plus avant qu'elle s'ouvre ?*"
+  },
+  "day3_night_start_3": {
+    "name": "Moi",
+    "text": "*...La serrure doit juste faire des siennes. Cet appartement est un peu vieux.*"
+  },
+  "day3_night_start_4": {
+    "name": "Moi",
+    "text": "*En dînant, j'essaie de faire le point sur les événements de la journée.*"
+  },
+  "day3_night_start_5": {
+    "name": "Moi",
+    "text": "*Le casier gratté. La photo d'identité coupée en deux. Seolhwa dans le couloir. Les mots 'pas encore'. Le pétale de cerisier.*"
+  },
+  "day3_night_start_6": {
+    "name": "Moi",
+    "text": "*La carte mémoire de Yuna. L'histoire que des élèves transférés ont disparu. La porte du toit fermée de l'extérieur.*"
+  },
+  "day3_night_start_7": {
+    "name": "Moi",
+    "text": "*La jalousie de Sea. La boisson de Riin. Les documents d'Eunsu. ...C'est trop. C'est difficile à croire que tout ça s'est passé en seulement 3 jours.*"
+  },
+  "day3_night_sea_msg": {
+    "name": "Moi",
+    "text": "*Mon téléphone vibre. C'est Sea.*"
+  },
+  "day3_night_sea_msg_2": {
+    "name": "Moi",
+    "text": "*Sea : '{name}, c'était sympa aujourd'hui ! On fait pareil demain aussi♥'*"
+  },
+  "day3_night_sea_msg_3": {
+    "name": "Moi",
+    "text": "*Une minute plus tard. Sea : 'Réponds avant de dormir'*"
+  },
+  "day3_night_sea_msg_4": {
+    "name": "Moi",
+    "text": "*Trois minutes plus tard. Sea : '...'*"
+  },
+  "day3_night_sea_msg_5": {
+    "name": "Moi",
+    "text": "*Deux minutes plus tard. Sea : '{name} ?'*"
+  },
+  "day3_night_sea_msg_6": {
+    "name": "Moi",
+    "text": "*Sea : 'Pourquoi tu lis pas ?'*"
+  },
+  "day3_night_sea_msg_7": {
+    "name": "Moi",
+    "text": "*Sea : 'Tu dors... c'est ça ?'*"
+  },
+  "day3_night_sea_msg_8": {
+    "name": "Moi",
+    "text": "*...6 messages en 13 minutes. Les messages s'accumulent sans être lus.*"
+  },
+  "day3_night_sea_msg_9": {
+    "name": "Moi",
+    "text": "*J'ai retourné le téléphone face contre table. Il vibre. Encore un. ...Je l'ignore.*"
+  },
+  "day3_night_recall": {
+    "name": "Moi",
+    "text": "*Allongé dans mon lit à fixer le plafond. Trois jours depuis mon transfert. Seulement trois jours.*"
+  },
+  "day3_night_recall_2": {
+    "name": "Moi",
+    "text": "*Yuna a dit que des élèves transférés avaient 'disparu' de ce lycée. Elle avait des preuves. La carte mémoire.*"
+  },
+  "day3_night_recall_3": {
+    "name": "Moi",
+    "text": "*...Et mes anciens amis du lycée. Tout contact coupé. Ils ont quitté le groupe. Changé de numéro.*"
+  },
+  "day3_night_recall_4": {
+    "name": "Moi",
+    "text": "*Autant de choses peuvent-elles se produire simultanément en seulement 3 jours ? Est-ce logique que tout le monde change de numéro en même temps ?*"
+  },
+  "day3_night_recall_5": {
+    "name": "Moi",
+    "text": "*...Bizarre. Mes souvenirs d'avant que j'arrive dans ce lycée sont... flous.*"
+  },
+  "day3_night_recall_6": {
+    "name": "Moi",
+    "text": "*Pourquoi ai-je changé de lycée pour venir ici ? J'ai dit que c'était à cause du travail de mes parents... mais quelle situation de travail ?*"
+  },
+  "day3_night_recall_7": {
+    "name": "Moi",
+    "text": "*Mes parents ? Le contact... la dernière fois que je les ai contactés, c'était quand ? ...Je... je ne me souviens pas.*"
+  },
+  "day3_night_recall_8": {
+    "name": "Moi",
+    "text": "*Les visages de mes anciens amis de lycée ? ...Minsu. Le visage de Minsu est... flou. C'était clair encore hier.*"
+  },
+  "day3_night_recall_9": {
+    "name": "Moi",
+    "text": "*...Qu'est-ce que c'est que ça. Pourquoi je n'arrive pas à me souvenir ?*"
+  },
+  "day3_night_stat_crack": {
+    "name": "Moi",
+    "text": "*J'ai la poitrine serrée. Mon cœur s'emballe.*"
+  },
+  "day3_night_stat_crack_2": {
+    "name": "Moi",
+    "text": "*La chaleur que Sea m'a montrée. La gentillesse de Madame Eunsu. Le sourire de Riin. Tout ça... tous de bonnes personnes. N'est-ce pas ?*"
+  },
+  "day3_night_stat_crack_3": {
+    "name": "Moi",
+    "text": "*...Quelque chose ne va pas. Ce sentiment n'est pas de l'affection. C'est...*"
+  },
+  "day3_night_stat_crack_4": {
+    "name": "Moi",
+    "text": "*...De la peur ?*"
+  },
+  "day3_night_stat_crack_5": {
+    "name": "Moi",
+    "text": "*Pourquoi j'ai peur ? Pourquoi je tremble en ce moment ?*"
+  },
+  "day3_night_nightmare": {
+    "name": "Moi",
+    "text": "*...J'ai fermé les yeux et aussitôt c'était un rêve. Non, je n'arrive même pas à savoir quand je me suis endormi.*"
+  },
+  "day3_night_nightmare_2": {
+    "name": "Moi",
+    "text": "*Je marche dans un couloir. Le lycée. Le lycée la nuit.*"
+  },
+  "day3_night_nightmare_3": {
+    "name": "Moi",
+    "text": "*Seules les lumières de secours brillent en rouge. Seuls mes pas résonnent. Pas. Pas. Les portes des salles de classe sont ouvertes une à une. L'obscurité à l'intérieur.*"
+  },
+  "day3_night_nightmare_4": {
+    "name": "???",
+    "text": "\"...{name} m'appartient.\""
+  },
+  "day3_night_nightmare_5": {
+    "name": "Moi",
+    "text": "*! Je me suis retourné. Personne. ...J'entends des rires. Des gloussements. De l'autre côté des murs.*"
+  },
+  "day3_night_nightmare_6": {
+    "name": "Moi",
+    "text": "*Ça vient du bout du couloir. J'ai commencé à courir. Le couloir s'étire à l'infini.*"
+  },
+  "day3_night_nightmare_7": {
+    "name": "???",
+    "text": "\"...Je te protégerai. Ne va nulle part. Ne... va... nulle... part...\""
+  },
+  "day3_night_nightmare_8": {
+    "name": "Moi",
+    "text": "*Des talons qui claquent derrière moi. Clac. Clac. Clac. De plus en plus vite.*"
+  },
+  "day3_night_nightmare_9": {
+    "name": "Moi",
+    "text": "*Je cours. Je suis à bout de souffle. Mes jambes sont lourdes. Je ne peux pas me retourner. Il ne faut absolument pas que je me retourne.*"
+  },
+  "day3_night_nightmare_10": {
+    "name": "???",
+    "text": "\"Ça ne fera pas mal. Ça ne fera pas mal. Ça ne fera pas mal. Çanefera pasmalçaneferapas...\""
+  },
+  "day3_night_nightmare_11": {
+    "name": "Moi",
+    "text": "*...Cul-de-sac. Un mur.*"
+  },
+  "day3_night_nightmare_12": {
+    "name": "Moi",
+    "text": "*Quand je me retourne... trois ombres se tiennent là. Elles sourient. Toutes les trois avec le même sourire.*"
+  },
+  "day3_night_nightmare_13": {
+    "name": "Moi",
+    "text": "*Jusqu'à hier je trouvais ce sourire 'chaleureux'.*"
+  },
+  "day3_night_nightmare_14": {
+    "name": "Moi",
+    "text": "*Les ombres s'approchent. Pas à pas. Il n'y a nulle part où fuir.*"
+  },
+  "day3_night_seolhwa": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Fuis.\""
+  },
+  "day3_night_seolhwa_2": {
+    "name": "Moi",
+    "text": "*Une main m'a saisi par derrière et m'a tiré. Seolhwa se tient là. Cette fois elle ne disparaît pas. Elle a une expression. ...Elle pleure.*"
+  },
+  "day3_night_seolhwa_3": {
+    "name": "Lee Seolhwa",
+    "text": "\"...{name}.\""
+  },
+  "day3_night_seolhwa_4": {
+    "name": "Lee Seolhwa",
+    "text": "\"Il y a un an... je suis arrivée ici comme toi.\""
+  },
+  "day3_night_seolhwa_5": {
+    "name": "Moi",
+    "text": "*La voix de Seolhwa tremble. Mais elle est distincte. Pour la première fois elle parle en phrases complètes.*"
+  },
+  "day3_night_seolhwa_6": {
+    "name": "Lee Seolhwa",
+    "text": "\"Au début tout allait bien. La professeure était gentille, Sea me souriait, l'infirmière Riin me faisait du thé.\""
+  },
+  "day3_night_seolhwa_7": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Tout semblait chaleureux. Je pensais que ce lycée était un paradis.\""
+  },
+  "day3_night_seolhwa_8": {
+    "name": "Moi",
+    "text": "*Seolhwa marque une courte pause. Elle essuie ses larmes. Sa main est transparente.*"
+  },
+  "day3_night_seolhwa_9": {
+    "name": "Lee Seolhwa",
+    "text": "\"...C'était tout un mensonge. Tout.\""
+  },
+  "day3_night_seolhwa_10": {
+    "name": "Lee Seolhwa",
+    "text": "\"Ils m'ont donné... un médicament... pour effacer les souvenirs... tous les jours... petit à petit...\""
+  },
+  "day3_night_seolhwa_11": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Je ne l'ai pas... avalé. J'ai... caché le médicament. Pour préserver mes souvenirs...\""
+  },
+  "day3_night_seolhwa_12": {
+    "name": "Lee Seolhwa",
+    "text": "\"Et ensuite...\""
+  },
+  "day3_night_seolhwa_13": {
+    "name": "Moi",
+    "text": "*Seolhwa regarde sa propre main. La main est transparente. Les carreaux du couloir sont visibles à travers ses doigts.*"
+  },
+  "day3_night_seolhwa_14": {
+    "name": "Lee Seolhwa",
+    "text": "\"**...Je me suis retrouvée comme ça.**\""
+  },
+  "day3_night_seolhwa_15": {
+    "name": "Lee Seolhwa",
+    "text": "\"Personne ne peut me voir. Personne ne se souvient de mon nom. J'ai été effacée de la liste de présence aussi.\""
+  },
+  "day3_night_seolhwa_16": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Je ne sais même pas si je suis morte ou vivante. Je suis juste... liée ici.\""
+  },
+  "day3_night_seolhwa_17": {
+    "name": "Moi",
+    "text": "*Seolhwa me regarde. Des yeux baignés de larmes qui me fixent droit dans les yeux.*"
+  },
+  "day3_night_seolhwa_18": {
+    "name": "Lee Seolhwa",
+    "text": "\"Ne fais pas confiance à ces personnes. **Cinq jours.** Le temps qu'il te reste.\""
+  },
+  "day3_night_seolhwa_19": {
+    "name": "Lee Seolhwa",
+    "text": "\"**Dans cinq jours... tu dois sortir d'ici.** Avant de finir comme moi.\""
+  },
+  "day3_night_seolhwa_20": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Et, {name}.\""
+  },
+  "day3_night_seolhwa_21": {
+    "name": "Lee Seolhwa",
+    "text": "\"Souviens-toi... de moi.\""
+  },
+  "day3_night_seolhwa_22": {
+    "name": "Lee Seolhwa",
+    "text": "\"Personne ne se souvient. Ici. Pas même qu'une personne comme moi a existé.\""
+  },
+  "day3_night_seolhwa_23": {
+    "name": "Moi",
+    "text": "*La silhouette de Seolhwa commence à se dissoudre. Elle devient transparente par les bords. Elle a souri une dernière fois. Triste, mais... le premier sourire que j'aie vu d'elle. Les mots 'cinq jours' et le dernier sourire de Seolhwa refusent de quitter mon esprit.*"
+  },
+  "day3_night_wakeup": {
+    "name": "Moi",
+    "text": "*—! J'ai ouvert les yeux. Trempé de sueur froide. La couette est imbibée.*"
+  },
+  "day3_night_wakeup_2": {
+    "name": "Moi",
+    "text": "*L'horloge. 4h12. Mon cœur semble prêt à éclater. Je régule ma respiration. Un, deux, trois...*"
+  },
+  "day3_night_wakeup_3": {
+    "name": "Moi",
+    "text": "*C'était... un rêve ?*"
+  },
+  "day3_night_wakeup_4": {
+    "name": "Moi",
+    "text": "*Le nom Seolhwa. Il était bien sur la liste de présence... non, il n'y était pas.*"
+  },
+  "day3_night_wakeup_5": {
+    "name": "Moi",
+    "text": "*Une main transparente. Des larmes. 'Cinq jours.'*"
+  },
+  "day3_night_wakeup_6": {
+    "name": "Moi",
+    "text": "*...Ce n'est pas juste un rêve. Quelque chose m'avertit.*"
+  },
+  "day3_night_wakeup_7": {
+    "name": "Moi",
+    "text": "*'Sortir en cinq jours.' ...De ce lycée ? ...Ou de tout ça ?*"
+  },
+  "day3_night_wakeup_8": {
+    "name": "Moi",
+    "text": "*Je sors le fragment de photo ramassé tout à l'heure. La photo d'identité coupée en deux. ...Son propriétaire a-t-il aussi été 'traité' ?*"
+  },
+  "day3_night_wakeup_9": {
+    "name": "Moi",
+    "text": "*Qu'est-ce que je fais à partir de demain ?*"
+  },
+  "day3_night_choice": {
+    "name": "Moi",
+    "text": "*...*",
+    "choices": [
+      "Découvrir la vérité",
+      "Faire semblant de ne rien savoir"
+    ]
+  },
+  "day3_night_investigate": {
+    "name": "Moi",
+    "text": "*Je ne peux plus détourner le regard.*"
+  },
+  "day3_night_investigate_2": {
+    "name": "Moi",
+    "text": "*La carte mémoire de Yuna. Les documents. Les élèves transférés disparus. Les anciens amis qui ont coupé le contact.*"
+  },
+  "day3_night_investigate_3": {
+    "name": "Moi",
+    "text": "*...Je dois relier tout ça. Demain. D'une façon ou d'une autre.*"
+  },
+  "day3_night_deny": {
+    "name": "Moi",
+    "text": "*...C'était probablement juste un rêve. À cause du stress. Je ne suis là que depuis 3 jours, je ne devrais pas me mettre la pression.*"
+  },
+  "day3_night_deny_2": {
+    "name": "Moi",
+    "text": "*Tout ira bien au matin.*"
+  },
+  "day3_night_deny_3": {
+    "name": "Moi",
+    "text": "*J'ai tiré la couette sur moi et fermé les yeux.*"
+  },
+  "day3_night_ghost_msg": {
+    "text": "Est-ce que ça ira vraiment ?"
+  },
+  "day3_night_end": {
+    "name": "Moi",
+    "text": "*...Le Jour 3 s'est terminé.*"
+  }
 }

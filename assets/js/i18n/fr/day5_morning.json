@@ -1,302 +1,305 @@
 {
-    "day5_morning_start": {
-        "name": "Moi",
-        "text": "*Jour 5. Le dernier jour. J'ai ouvert les yeux.*"
-    },
-    "day5_morning_start_2": {
-        "name": "Moi",
-        "text": "*Je regarde par la fenêtre. Ciel gris. On dirait qu'il va pleuvoir.*"
-    },
-    "day5_morning_start_3": {
-        "name": "Moi",
-        "text": "*...Allons-y. J'en finis aujourd'hui.*"
-    },
-    "day5_morning_start_4": {
-        "name": "Moi",
-        "text": "*창밖을 본다. 하늘이 회색이다. 구름이 낮게 깔려있다. 비가 올 것 같다.*"
-    },
-    "day5_morning_start_5": {
-        "name": "Moi",
-        "text": "*...1일차 아침은 맑았다. 벚꽃이 피어있었다. 4일 만에 세상이 이렇게 달라졌다.*"
-    },
-    "day5_morning_start_6": {
-        "name": "Moi",
-        "text": "*아니. 세상이 달라진 게 아니다. 내가 보는 방식이 달라진 거다.*"
-    },
-    "day5_morning_start_7": {
-        "name": "Moi",
-        "text": "*가방을 확인했다. 어젯밤에 챙겨뒀던 짐. 증거가 든 핸드폰. 유나의 메모리카드. 사진 조각.*"
-    },
-    "day5_morning_start_8": {
-        "name": "Moi",
-        "text": "*...오늘 안에 나가야 한다. 밤 11시 전에.*"
-    },
-    "day5_morning_start_9": {
-        "name": "Moi",
-        "text": "*교복을 입었다. 거울 속의 내 얼굴이... 1일차의 그 얼굴이 아니다. 눈이 다르다. 공포를 알게 된 눈.*"
-    },
-    "day5_morning_start_10": {
-        "name": "Moi",
-        "text": "*심호흡. 하나. 둘. 셋.*"
-    },
-    "day5_morning_start_11": {
-        "name": "Moi",
-        "text": "*...간다.*"
-    },
-    "day5_morning_gate": {
-        "name": "Moi",
-        "text": "*Le portail de l'école. Enveloppé de chaînes. Toutes les sorties à part le portail principal sont... bloquées.*"
-    },
-    "day5_morning_gate_2": {
-        "name": "Moi",
-        "text": "*Les élèves passent le portail comme si de rien n'était. Comme s'ils... ne pouvaient pas le voir.*"
-    },
-    "day5_morning_gate_3": {
-        "name": "Moi",
-        "text": "*Trois personnes se tiennent côte à côte devant le portail.*"
-    },
-    "day5_morning_gate_4": {
-        "name": "Moi",
-        "text": "*정문은 열려있다. 평소와 같다. 학생들이 삼삼오오 지나간다.*"
-    },
-    "day5_morning_gate_5": {
-        "name": "Moi",
-        "text": "*...나가면 된다. 정문을 지나서 왼쪽으로 꺾으면 버스정류장이다. 거기서 아무 버스나 타면 된다.*"
-    },
-    "day5_morning_gate_6": {
-        "name": "Moi",
-        "text": "*한 걸음 내딛었다. 두 걸음. 정문이 가까워진다.*"
-    },
-    "day5_morning_gate_choice": {
-        "name": "Moi",
-        "text": "",
-        "choices": [
-            "앞으로 걷는다",
-            "돌아간다"
-        ]
-    },
-    "day5_morning_gate_dodge_fail": {
-        "name": "Moi",
-        "text": "*...앞으로. 앞으로 가야 하는데.*"
-    },
-    "day5_morning_paralysis_1": {
-        "name": "Moi",
-        "text": "*...세 걸음째에서 다리가 멈췄다.*"
-    },
-    "day5_morning_paralysis_2": {
-        "name": "Moi",
-        "text": "*움직이지 않는다. 걸으려는 의지는 있는데 다리가 말을 안 듣는다. 마치 콘크리트에 박힌 것처럼.*"
-    },
-    "day5_morning_paralysis_3": {
-        "name": "Moi",
-        "text": "*어젯밤에 마신 차. 리인 선생님이 건넨 '숙면에 좋은' 차. ...혹시?*"
-    },
-    "day5_morning_paralysis_4": {
-        "name": "Moi",
-        "text": "*주변을 둘러본다. 학생들이 정문을 지나간다. 아무렇지도 않게. 웃으면서.*"
-    },
-    "day5_morning_paralysis_5": {
-        "name": "Moi",
-        "text": "*나만 움직이지 못한다. 정문은 열려있는데. 아무도 막고 있지 않은데.*"
-    },
-    "day5_morning_paralysis_6": {
-        "name": "Moi",
-        "text": "*열린 문 앞에서 한 발짝도 나갈 수 없다. 이게... 이 학교의 진짜 감옥이다.*"
-    },
-    "day5_morning_watchers_1": {
-        "name": "Moi",
-        "text": "*뒤를 돌아봤다.*"
-    },
-    "day5_morning_watchers_2": {
-        "name": "Moi",
-        "text": "*교문 안쪽. 은수 선생님이 벤치에 앉아 있다. 세아가 나무 아래에 서 있다. 리인 선생님이 보건실 창가에서 내려다보고 있다.*"
-    },
-    "day5_morning_watchers_3": {
-        "name": "Moi",
-        "text": "*각자 다른 위치. 자연스러운 풍경. 그런데 셋 다 나를 보고 있다.*"
-    },
-    "day5_morning_watchers_4": {
-        "name": "Moi",
-        "text": "*셋 다 웃고 있다.*"
-    },
-    "day5_morning_welcome": {
-        "name": "Professeure",
-        "text": "\"Bonjour, {name}. Aujourd'hui est un jour spécial.\""
-    },
-    "day5_morning_welcome_2": {
-        "name": "Han Sea",
-        "text": "\"{name} ! Restons ensemble toute la journée.\""
-    },
-    "day5_morning_welcome_3": {
-        "name": "Infirmière",
-        "text": "\"Je dois finir ton bilan de santé aujourd'hui. Passe à l'infirmerie après les cours, d'accord ?\""
-    },
-    "day5_morning_welcome_4": {
-        "name": "Moi",
-        "text": "*Trois sourires identiques se superposent devant mes yeux. Le même sourire. ...Un sourire de prédateur.*"
-    },
-    "day5_morning_welcome_5": {
-        "name": "Moi",
-        "text": "*세아가 내 팔을 잡는다. 자연스럽게. 힘이 세다.*"
-    },
-    "day5_morning_welcome_6": {
-        "name": "Han Sea",
-        "text": "\"오늘은 하루 종일 같이 있자. 절대 떨어지지 말자.\""
-    },
-    "day5_morning_welcome_7": {
-        "name": "Moi",
-        "text": "*'절대'라는 단어에 힘이 들어가 있다.*"
-    },
-    "day5_morning_welcome_8": {
-        "name": "Kang Riin",
-        "text": "\"건강검진 마무리가 남았어.\""
-    },
-    "day5_morning_welcome_9": {
-        "name": "Moi",
-        "text": "*리인 선생님이 미소 짓는다. 가운 주머니에 손을 넣고 있다. 주머니 안에서 뭔가가 불룩하다.*"
-    },
-    "day5_morning_welcome_10": {
-        "name": "Kang Riin",
-        "text": "\"방과후에 보건실로 와. ...꼭.\""
-    },
-    "day5_morning_welcome_11": {
-        "name": "Moi",
-        "text": "*세 사람의 미소가 겹쳐 보인다.*"
-    },
-    "day5_morning_welcome_12": {
-        "name": "Moi",
-        "text": "*똑같은 미소. 같은 각도. 같은 깊이. 같은 온도.*"
-    },
-    "day5_morning_welcome_13": {
-        "name": "Moi",
-        "text": "*...사냥꾼의 미소.*"
-    },
-    "day5_morning_welcome_14": {
-        "name": "Moi",
-        "text": "*그리고 나는 사냥감이다. 이미 우리 안에 들어온.*"
-    },
-    "day5_morning_classroom": {
-        "name": "Moi",
-        "text": "*La salle de classe. Des mots écrits au tableau noir.*"
-    },
-    "day5_morning_classroom_2": {
-        "name": "Moi",
-        "text": "*'Cérémonie de remise des diplômes'. ...Remise des diplômes ? Au Jour 5 ?*"
-    },
-    "day5_morning_classroom_3": {
-        "name": "Moi",
-        "text": "*Mme Eunsu monte sur l'estrade.*"
-    },
-    "day5_morning_classroom_4": {
-        "name": "Moi",
-        "text": "*...졸업식? 전학 온 지 5일인데? 무슨 졸업?*"
-    },
-    "day5_morning_classroom_5": {
-        "name": "Moi",
-        "text": "*자리에 앉았다. 세아가 옆에 앉는다. 평소 자리가 아닌데. 내 바로 옆으로 의자를 끌어왔다.*"
-    },
-    "day5_morning_classroom_6": {
-        "name": "Moi",
-        "text": "*은수 선생님이 교탁에 선다. 출석을 부르지 않는다. 바로 말을 시작한다.*"
-    },
-    "day5_morning_class": {
-        "name": "Professeure",
-        "text": "\"Aujourd'hui, c'est une leçon spéciale. Parlons de la 'remise des diplômes'.\""
-    },
-    "day5_morning_class_2": {
-        "name": "Professeure",
-        "text": "\"La remise des diplômes est la fin d'un processus. Quand le processus est terminé... on passe à un nouvel endroit.\""
-    },
-    "day5_morning_class_3": {
-        "name": "Professeure",
-        "text": "\"{name}, ta remise des diplômes... c'est aujourd'hui.\""
-    },
-    "day5_morning_class_4": {
-        "name": "Moi",
-        "text": "\"Comme vous le savez tous, le monde en dehors de l'école est froid et dangereux. On se blesse, on échoue, on se brise...\""
-    },
-    "day5_morning_class_5": {
-        "name": "Park Eunsu",
-        "text": "\"그래서 선생님은 너희가 가장 안전하고 깨끗한 상태로 '졸업'하길 바라는 거야.\""
-    },
-    "day5_morning_class_6": {
-        "name": "Moi",
-        "text": "*선생님이 돌아선다. 나를 본다. 나만.*"
-    },
-    "day5_morning_class_7": {
-        "name": "Park Eunsu",
-        "text": "\"어떤 아이들은 그걸 깨닫는 데 3년이 걸리지만, 우리 반은 아주 특별하니까...\""
-    },
-    "day5_morning_class_8": {
-        "name": "Park Eunsu",
-        "text": "\"...5일이면 충분해.\""
-    },
-    "day5_morning_class_9": {
-        "name": "Moi",
-        "text": "*교실이 조용해진다. 숨소리조차 들리지 않는다.*"
-    },
-    "day5_morning_class_10": {
-        "name": "Park Eunsu",
-        "text": "\"{name}, 너의 졸업도... 오늘이야.\""
-    },
-    "day5_morning_class_11": {
-        "name": "Moi",
-        "text": "*선생님이 웃는다. 따뜻하게. 축하하듯이.*"
-    },
-    "day5_morning_class_12": {
-        "name": "Moi",
-        "text": "*...교실의 다른 학생들이 전부 나를 보고 있다. 30개의 얼굴. 아무도 움직이지 않는다.*"
-    },
-    "day5_morning_class_13": {
-        "name": "Moi",
-        "text": "*아무도 숨을 쉬지 않는 것 같다. 마네킹처럼. 인형처럼.*"
-    },
-    "day5_morning_class_14": {
-        "name": "Moi",
-        "text": "*세아가 내 손을 잡는다. 꽉. 손가락이 아프다.*"
-    },
-    "day5_morning_class_15": {
-        "name": "Moi",
-        "text": "*이 교실에서 나가야 한다. 점심시간까지 버텨야 한다. 그때 움직인다.*"
-    },
-    "day5_morning_class_16": {
-        "name": "Moi",
-        "text": "*...버틸 수 있을까.*"
-    },
-    "day5_morning_note": {
-        "name": "Moi",
-        "text": "*Un mot collé sous mon bureau. L'écriture de Yuna.*"
-    },
-    "day5_morning_note_2": {
-        "name": "Moi",
-        "text": "*'Déjeuner. Ancien bâtiment, 3e étage. J'ai trouvé une voie d'évacuation. - Yuna'*"
-    },
-    "day5_morning_note_3": {
-        "name": "Moi",
-        "text": "*'점심때 구관 3층 끝 복도. 비상구가 있어. 설화 선배가 찾아뒀던 길. 탈출로를 찾았어. - 유나'*"
-    },
-    "day5_morning_note_4": {
-        "name": "Moi",
-        "text": "*설화가 찾아뒀던 길. 어젯밤 꿈에서 설화가 말했던 그 길.*"
-    },
-    "day5_morning_note_5": {
-        "name": "Moi",
-        "text": "*유나는 어떻게 이걸 알았지? ...유나도 설화를 만난 건가?*"
-    },
-    "day5_morning_note_6": {
-        "name": "Moi",
-        "text": "*쪽지를 주머니에 넣었다. 심장이 뛴다. 희망이라는 걸 4일 만에 다시 느낀다.*"
-    },
-    "day5_morning_note_7": {
-        "name": "Moi",
-        "text": "*점심시간. 그때가 유일한 기회다.*"
-    },
-    "day5_morning_no_note": {
-        "name": "Moi",
-        "text": "*수업이 끝났다. 혼자서 탈출할 방법을 찾아야 한다. 구관 쪽에 비상구가 있을지도...*"
-    },
-    "day5_morning_end": {
-        "name": "Moi",
-        "text": "*La matinée est terminée. Le temps s'écoule comme si l'horloge s'était arrêtée.*"
-    }
+  "day5_morning_start": {
+    "name": "Moi",
+    "text": "*Jour 5.*"
+  },
+  "day5_morning_start_2": {
+    "name": "Moi",
+    "text": "*Le dernier jour.*"
+  },
+  "day5_morning_start_3": {
+    "name": "Moi",
+    "text": "*J'ai ouvert les yeux. Le réveil n'a pas sonné. Mon corps s'est réveillé tout seul.*"
+  },
+  "day5_morning_start_4": {
+    "name": "Moi",
+    "text": "*Je regarde par la fenêtre. Le ciel est gris. Les nuages sont bas. Il va pleuvoir.*"
+  },
+  "day5_morning_start_5": {
+    "name": "Moi",
+    "text": "*...Le matin du Jour 1 était clair. Les cerisiers étaient en fleurs. En quatre jours seulement, le monde a autant changé.*"
+  },
+  "day5_morning_start_6": {
+    "name": "Moi",
+    "text": "*Non. Le monde n'a pas changé. C'est la façon dont je le vois qui a changé.*"
+  },
+  "day5_morning_start_7": {
+    "name": "Moi",
+    "text": "*Je vérifie mon sac. Ce que j'ai préparé hier soir. Mon téléphone avec les preuves. La carte mémoire de Yuna. Le fragment de photo.*"
+  },
+  "day5_morning_start_8": {
+    "name": "Moi",
+    "text": "*...Je dois sortir aujourd'hui. Avant 23h ce soir.*"
+  },
+  "day5_morning_start_9": {
+    "name": "Moi",
+    "text": "*J'enfile l'uniforme. Mon visage dans le miroir... n'est pas le visage du Jour 1. Mes yeux sont différents. Des yeux qui ont appris à quoi ressemble la peur.*"
+  },
+  "day5_morning_start_10": {
+    "name": "Moi",
+    "text": "*Inspiration profonde. Un. Deux. Trois.*"
+  },
+  "day5_morning_start_11": {
+    "name": "Moi",
+    "text": "*...J'y vais.*"
+  },
+  "day5_morning_gate": {
+    "name": "Moi",
+    "text": "*Le trajet vers le lycée. Le dernier trajet.*"
+  },
+  "day5_morning_gate_2": {
+    "name": "Moi",
+    "text": "*...Mes pas sont lourds. Chaque pas semble traîner un poids de plomb.*"
+  },
+  "day5_morning_gate_3": {
+    "name": "Moi",
+    "text": "*Le portail d'entrée apparaît.*"
+  },
+  "day5_morning_gate_4": {
+    "name": "Moi",
+    "text": "*Le portail est ouvert. Comme toujours. Les élèves passent par petits groupes.*"
+  },
+  "day5_morning_gate_5": {
+    "name": "Moi",
+    "text": "*...Je n'ai qu'à sortir. Passer le portail, tourner à gauche, et l'arrêt de bus est là. Monter dans n'importe quel bus.*"
+  },
+  "day5_morning_gate_6": {
+    "name": "Moi",
+    "text": "*J'ai avancé d'un pas. Deux pas. Le portail se rapproche.*"
+  },
+  "day5_morning_gate_choice": {
+    "name": "Moi",
+    "text": "",
+    "choices": [
+      "Continuer d'avancer",
+      "Faire demi-tour"
+    ],
+    "dodgeChoice": true,
+    "dodgeIndex": 0,
+    "maxAttempts": 4
+  },
+  "day5_morning_gate_dodge_fail": {
+    "name": "Moi",
+    "text": "*...Avancer. Je dois avancer.*"
+  },
+  "day5_morning_paralysis_1": {
+    "name": "Moi",
+    "text": "*...Au troisième pas, mes jambes se sont arrêtées.*"
+  },
+  "day5_morning_paralysis_2": {
+    "name": "Moi",
+    "text": "*Elles ne bougent plus. J'ai la volonté de marcher, mais mes jambes n'obéissent pas. Comme si elles étaient coulées dans du béton.*"
+  },
+  "day5_morning_paralysis_3": {
+    "name": "Moi",
+    "text": "*Le thé que j'ai bu hier soir. Le thé 'bon pour le sommeil' que l'infirmière Riin m'a donné. ...Ce serait ça ?*"
+  },
+  "day5_morning_paralysis_4": {
+    "name": "Moi",
+    "text": "*Je regarde autour de moi. Les élèves passent le portail. Tranquillement. En souriant.*"
+  },
+  "day5_morning_paralysis_5": {
+    "name": "Moi",
+    "text": "*Moi seul ne peux pas bouger. Le portail est ouvert. Personne ne me bloque.*"
+  },
+  "day5_morning_paralysis_6": {
+    "name": "Moi",
+    "text": "*Debout devant une porte ouverte et je ne peux pas faire un seul pas dehors. C'est... c'est la vraie prison de ce lycée.*"
+  },
+  "day5_morning_watchers_1": {
+    "name": "Moi",
+    "text": "*Je me suis retourné et j'ai regardé en arrière.*"
+  },
+  "day5_morning_watchers_2": {
+    "name": "Moi",
+    "text": "*À l'intérieur du portail du lycée. Madame Eunsu est assise sur un banc. Sea est debout sous un arbre. L'infirmière Riin regarde depuis la fenêtre de l'infirmerie.*"
+  },
+  "day5_morning_watchers_3": {
+    "name": "Moi",
+    "text": "*Toutes dans des positions différentes. Une scène d'apparence naturelle. Mais toutes les trois me regardent.*"
+  },
+  "day5_morning_watchers_4": {
+    "name": "Moi",
+    "text": "*Toutes les trois sourient.*"
+  },
+  "day5_morning_welcome": {
+    "name": "Professeure principale",
+    "text": "\"Bonjour, {name}.\""
+  },
+  "day5_morning_welcome_2": {
+    "name": "Moi",
+    "text": "*Madame Eunsu se lève du banc et s'approche. Lentement. Sans se presser. Comme si elle savait déjà que je ne peux pas bouger.*"
+  },
+  "day5_morning_welcome_3": {
+    "name": "Professeure principale",
+    "text": "\"Aujourd'hui est un jour spécial. Tu es prêt ?\""
+  },
+  "day5_morning_welcome_4": {
+    "name": "Han Sea",
+    "text": "\"{name}.\""
+  },
+  "day5_morning_welcome_5": {
+    "name": "Moi",
+    "text": "*Sea prend mon bras. Naturellement. Sa prise est ferme.*"
+  },
+  "day5_morning_welcome_6": {
+    "name": "Han Sea",
+    "text": "\"On reste ensemble toute la journée aujourd'hui. On ne se sépare jamais.\""
+  },
+  "day5_morning_welcome_7": {
+    "name": "Moi",
+    "text": "*Il y a du poids dans le mot 'jamais'.*"
+  },
+  "day5_morning_welcome_8": {
+    "name": "Riin",
+    "text": "\"Il reste encore le bilan de santé à terminer.\""
+  },
+  "day5_morning_welcome_9": {
+    "name": "Moi",
+    "text": "*L'infirmière Riin sourit. Sa main est dans la poche de sa blouse. Quelque chose fait une bosse dans la poche.*"
+  },
+  "day5_morning_welcome_10": {
+    "name": "Riin",
+    "text": "\"Passe à l'infirmerie après les cours. ...Sans faute.\""
+  },
+  "day5_morning_welcome_11": {
+    "name": "Moi",
+    "text": "*Les trois sourires se superposent devant mes yeux.*"
+  },
+  "day5_morning_welcome_12": {
+    "name": "Moi",
+    "text": "*Le même sourire. Le même angle. La même profondeur. La même chaleur.*"
+  },
+  "day5_morning_welcome_13": {
+    "name": "Moi",
+    "text": "*...Le sourire d'un chasseur.*"
+  },
+  "day5_morning_welcome_14": {
+    "name": "Moi",
+    "text": "*Et je suis la proie. Déjà à l'intérieur de la cage.*"
+  },
+  "day5_morning_classroom": {
+    "name": "Moi",
+    "text": "*Le bras tenu par Sea, j'entre dans la salle de classe.*"
+  },
+  "day5_morning_classroom_2": {
+    "name": "Moi",
+    "text": "*Des mots sont écrits au tableau. L'écriture de Madame Eunsu.*"
+  },
+  "day5_morning_classroom_3": {
+    "name": "Moi",
+    "text": "*'Cérémonie de remise de diplômes'*"
+  },
+  "day5_morning_classroom_4": {
+    "name": "Moi",
+    "text": "*...Cérémonie de remise de diplômes ? Seulement cinq jours depuis mon transfert ? Quel diplôme ?*"
+  },
+  "day5_morning_classroom_5": {
+    "name": "Moi",
+    "text": "*Je m'assieds. Sea s'assied à côté de moi. Pas à sa place habituelle. Elle a traîné une chaise juste à côté de moi.*"
+  },
+  "day5_morning_classroom_6": {
+    "name": "Moi",
+    "text": "*Madame Eunsu se tient à l'estrade. Elle ne fait pas l'appel. Elle commence à parler directement.*"
+  },
+  "day5_morning_class": {
+    "name": "Professeure principale",
+    "text": "\"Aujourd'hui est un cours spécial.\""
+  },
+  "day5_morning_class_2": {
+    "name": "Professeure principale",
+    "text": "\"Parlons de la 'remise de diplômes'.\""
+  },
+  "day5_morning_class_3": {
+    "name": "Moi",
+    "text": "*La prof pointe le tableau. En dessous des mots 'Cérémonie de remise de diplômes', elle écrit quelque chose de plus. '= Achèvement'*"
+  },
+  "day5_morning_class_4": {
+    "name": "Professeure principale",
+    "text": "\"Comme vous le savez tous, le monde extérieur au lycée est bien trop froid et dangereux. On se blesse, on échoue, on se brise...\""
+  },
+  "day5_morning_class_5": {
+    "name": "Professeure principale",
+    "text": "\"C'est pourquoi votre professeure veut que vous 'obteniez votre diplôme' dans l'état le plus sûr et le plus pur possible.\""
+  },
+  "day5_morning_class_6": {
+    "name": "Moi",
+    "text": "*La prof se retourne. Elle me regarde. Moi seul.*"
+  },
+  "day5_morning_class_7": {
+    "name": "Professeure principale",
+    "text": "\"Certains élèves mettent trois ans à comprendre ça, mais notre classe est très spéciale...\""
+  },
+  "day5_morning_class_8": {
+    "name": "Professeure principale",
+    "text": "\"...Cinq jours suffisent.\""
+  },
+  "day5_morning_class_9": {
+    "name": "Moi",
+    "text": "*La salle se tait. On n'entend même plus les respirations.*"
+  },
+  "day5_morning_class_10": {
+    "name": "Professeure principale",
+    "text": "\"{name}, ta remise de diplômes à toi aussi... c'est aujourd'hui.\""
+  },
+  "day5_morning_class_11": {
+    "name": "Moi",
+    "text": "*La prof sourit. Chaleureusement. Comme en guise de félicitations.*"
+  },
+  "day5_morning_class_12": {
+    "name": "Moi",
+    "text": "*...Tous les autres élèves de la salle me fixent. Trente visages. Personne ne bouge.*"
+  },
+  "day5_morning_class_13": {
+    "name": "Moi",
+    "text": "*On dirait que personne ne respire. Comme des mannequins. Comme des poupées.*"
+  },
+  "day5_morning_class_14": {
+    "name": "Moi",
+    "text": "*Sea prend ma main. Fort. Mes doigts font mal.*"
+  },
+  "day5_morning_class_15": {
+    "name": "Moi",
+    "text": "*Je dois sortir de cette salle. Je dois tenir jusqu'au déjeuner. C'est là que j'agis.*"
+  },
+  "day5_morning_class_16": {
+    "name": "Moi",
+    "text": "*...Est-ce que je peux tenir ?*"
+  },
+  "day5_morning_note": {
+    "name": "Moi",
+    "text": "*En plein cours. J'ai fait semblant de laisser tomber un crayon et j'ai regardé sous le bureau.*"
+  },
+  "day5_morning_note_2": {
+    "name": "Moi",
+    "text": "*Un mot y est collé. Quand l'a-t-elle mis ? L'écriture de Yuna. De petites lettres serrées.*"
+  },
+  "day5_morning_note_3": {
+    "name": "Moi",
+    "text": "*'Déjeuner — bout du couloir, 3ème étage, bâtiment ancien. Il y a une sortie de secours. Le chemin que Seolhwa-senpai a trouvé. J'ai trouvé la route d'évasion. — Yuna'*"
+  },
+  "day5_morning_note_4": {
+    "name": "Moi",
+    "text": "*Le chemin que Seolhwa a trouvé. Exactement le chemin dont Seolhwa m'a parlé dans le rêve de la nuit dernière.*"
+  },
+  "day5_morning_note_5": {
+    "name": "Moi",
+    "text": "*Comment Yuna le savait-elle ? ...Yuna a aussi rencontré Seolhwa ?*"
+  },
+  "day5_morning_note_6": {
+    "name": "Moi",
+    "text": "*Je mets le mot dans ma poche. Mon cœur bat. Je ressens quelque chose appelé espoir pour la première fois depuis quatre jours.*"
+  },
+  "day5_morning_note_7": {
+    "name": "Moi",
+    "text": "*Le déjeuner. C'est la seule chance.*"
+  },
+  "day5_morning_no_note": {
+    "name": "Moi",
+    "text": "*Le cours s'est terminé. Je dois trouver moi-même une façon de m'échapper. Il doit y avoir une sortie de secours du côté du bâtiment ancien...*"
+  },
+  "day5_morning_end": {
+    "name": "Moi",
+    "text": "*La matinée est terminée. Le temps s'écoule comme si l'horloge s'était arrêtée.*"
+  }
 }

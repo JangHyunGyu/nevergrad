@@ -1,484 +1,489 @@
 {
-    "day1_lunch_start": {
-        "name": "Moi",
-        "text": "*Pause déjeuner. J'ai faim. Je ne sais même pas où est la cantine.*"
-    },
-    "day1_lunch_start_2": {
-        "name": "Moi",
-        "text": "*Je mange où ?*"
-    },
-    "day1_lunch_choice": {
-        "name": "Moi",
-        "text": "*Pause déjeuner, où est-ce que je vais ?*",
-        "choices": [
-            "Sea m'a proposé de manger ensemble, je reste en classe",
-            "Aller faire un tour à la bibliothèque, au calme",
-            "J'ai un peu mal à la tête depuis tout à l'heure... je passe à l'infirmerie ?",
-            "Manger seul sur le toit"
-        ]
-    },
-    "day1_lunch_sea_1": {
-        "name": "Moi",
-        "text": "*자리에서 일어나려는데 세아가 다가온다.*"
-    },
-    "day1_lunch_sea_2": {
-        "name": "Moi",
-        "text": "*Sea ouvre son bentô. Il y en a beaucoup.*"
-    },
-    "day1_lunch_sea_3": {
-        "name": "Han Sea",
-        "text": "\"J'en ai un peu trop préparé, on partage. J'espère que ça te plaira.\""
-    },
-    "day1_lunch_sea_4": {
-        "name": "Moi",
-        "text": "*Du maquereau mijoté, des omelettes roulées, des épinards assaisonnés. Ça a un goût de cuisine maison, c'est bon.*"
-    },
-    "day1_lunch_sea_5": {
-        "name": "Han Sea",
-        "text": "\"Alors ? C'est bon ?\""
-    },
-    "day1_lunch_sea_6": {
-        "name": "Moi",
-        "text": "\"C'est vraiment délicieux. C'est toi qui l'as préparé ?\""
-    },
-    "day1_lunch_sea_7": {
-        "name": "Han Sea",
-        "text": "\"...Oui. Je me suis levée à l'aube pour le préparer.\""
-    },
-    "day1_lunch_sea_8": {
-        "name": "Moi",
-        "text": "*Les oreilles de Sea ont légèrement rougi. Elle est du genre à rougir aux compliments.*"
-    },
-    "day1_lunch_sea_9": {
-        "name": "Moi",
-        "text": "\"Hé, tu as un grain de riz là.\""
-    },
-    "day1_lunch_sea_10": {
-        "name": "Han Sea",
-        "text": "\"...! Hein, où ça ?!\""
-    },
-    "day1_lunch_sea_11": {
-        "name": "Moi",
-        "text": "*Sea se frotte la joue précipitamment. Où est passée la dignité de la déléguée ? Son visage est devenu écarlate.*"
-    },
-    "day1_lunch_sea_12": {
-        "name": "Han Sea",
-        "text": "\"...Ne ris pas. Demain je mangerai plus élégamment.\""
-    },
-    "day1_lunch_sea_13": {
-        "name": "Han Sea",
-        "text": "\"Moi, je me souviens de tout sur {name}. Tes plats préférés, à quelle heure tu t'es endormi en cours aujourd'hui...\""
-    },
-    "day1_lunch_sea_14": {
-        "name": "Moi",
-        "text": "*C'est la première fois que quelqu'un fait autant attention à moi. C'est un peu gênant. C'est une fille adorable.*"
-    },
-    "day1_lunch_sea_15": {
-        "name": "Han Sea",
-        "text": "\"여기, 계란말이부터 먹어봐. 달달하게 해봤는데.\""
-    },
-    "day1_lunch_sea_16": {
-        "name": "Moi",
-        "text": "*...먹여주려는 건가? 아니, 그냥 집어주는 거겠지.*"
-    },
-    "day1_lunch_sea_17": {
-        "name": "Moi",
-        "text": "\"아, 내가 먹을게.\""
-    },
-    "day1_lunch_sea_18": {
-        "name": "Moi",
-        "text": "*황급히 받아먹었다. ...맛있다. 진짜로.*"
-    },
-    "day1_lunch_sea_19": {
-        "name": "Han Sea",
-        "text": "\"...어때? 짜지 않아?\""
-    },
-    "day1_lunch_sea_20": {
-        "name": "Moi",
-        "text": "\"응, 완전 맛있어. 파는 것보다 나은데?\""
-    },
-    "day1_lunch_sea_21": {
-        "name": "Han Sea",
-        "text": "\"진짜?!\""
-    },
-    "day1_lunch_sea_22": {
-        "name": "Moi",
-        "text": "*세아의 얼굴이 환하게 빛난다. 진심으로 기뻐하는 표정이다.*"
-    },
-    "day1_lunch_sea_23": {
-        "name": "Han Sea",
-        "text": "\"다행이다~ 그럼 소시지도 먹어봐. 문어 모양으로 잘랐어.\""
-    },
-    "day1_lunch_sea_24": {
-        "name": "Moi",
-        "text": "\"문어 모양? ...진짜네.\""
-    },
-    "day1_lunch_sea_25": {
-        "name": "Moi",
-        "text": "*소시지 끝에 칼집을 넣어서 다리처럼 벌어져 있다. 정성이 보인다.*"
-    },
-    "day1_lunch_sea_26": {
-        "name": "Han Sea",
-        "text": "\"어릴 때부터 이렇게 해먹는 게 좋더라고. 유치하지?\""
-    },
-    "day1_lunch_sea_27": {
-        "name": "Moi",
-        "text": "\"아니, 귀여운데. 맛있고.\""
-    },
-    "day1_lunch_sea_28": {
-        "name": "Han Sea",
-        "text": "\"...귀엽다고?\""
-    },
-    "day1_lunch_sea_29": {
-        "name": "Moi",
-        "text": "*세아가 얼굴을 살짝 붉히며 웃는다.*"
-    },
-    "day1_lunch_sea_30": {
-        "name": "Han Sea",
-        "text": "\"아무튼 많이 먹어. 주먹밥도 있으니까.\""
-    },
-    "day1_lunch_sea_31": {
-        "name": "Moi",
-        "text": "*그렇게 한참 동안 반찬에 대한 칭찬과 수다가 이어졌다.*"
-    },
-    "day1_lunch_sea_32": {
-        "name": "Moi",
-        "text": "\"세아는 맨날 이렇게 도시락 싸와?\""
-    },
-    "day1_lunch_sea_33": {
-        "name": "Han Sea",
-        "text": "\"응. 급식도 괜찮긴 한데, 만든 게 더 맛있잖아.\""
-    },
-    "day1_lunch_sea_34": {
-        "name": "Moi",
-        "text": "\"혼자 먹기엔 양이 많은 것 같은데.\""
-    },
-    "day1_lunch_sea_35": {
-        "name": "Han Sea",
-        "text": "\".........\""
-    },
-    "day1_lunch_sea_36": {
-        "name": "Moi",
-        "text": "*세아가 잠깐 말을 멈추더니 웃는다.*"
-    },
-    "day1_lunch_sea_37": {
-        "name": "Han Sea",
-        "text": "\"원래 좀 많이 만드는 편이야. 많이 먹어줘서 좋다.\""
-    },
-    "day1_lunch_sea_38": {
-        "name": "Moi",
-        "text": "\"덕분에 잘 먹었어. 진짜 고마워.\""
-    },
-    "day1_lunch_sea_39": {
-        "name": "Moi",
-        "text": "*세아가 빈 도시락을 정리하면서 슬쩍 물어본다.*"
-    },
-    "day1_lunch_sea_40": {
-        "name": "Han Sea",
-        "text": "\"...잘 먹으니까 너무 좋다. 내일도 싸 올까?\""
-    },
-    "day1_lunch_sea_41": {
-        "name": "Moi",
-        "text": "\"매일? 그건 좀 미안하지 않아?\""
-    },
-    "day1_lunch_sea_42": {
-        "name": "Han Sea",
-        "text": "\"미안하긴. 먹어주는 사람이 있으면 만드는 보람이 있으니까.\""
-    },
-    "day1_lunch_sea_43": {
-        "name": "Moi",
-        "text": "*세아가 활짝 웃는다. 첫날부터 도시락까지 챙겨주다니. 좋은 사람인 건 확실한 것 같다.*"
-    },
-    "day1_lunch_sea_44": {
-        "name": "Moi",
-        "text": "*...근데 반찬이 전부 내 취향이다. 계란말이, 소시지, 주먹밥. 우연인가?*"
-    },
-    "day1_lunch_sea_45": {
-        "name": "Moi",
-        "text": "*뭐, 대중적인 메뉴니까 그럴 수도 있지. 누가 이런 거 싫어하겠어.*"
-    },
-    "day1_lunch_yuna_1": {
-        "name": "Moi",
-        "text": "*Je marche entre les rayons quand j'entends un « clic » venant du fond.*"
-    },
-    "day1_lunch_yuna_2": {
-        "name": "???",
-        "text": "\"...Oh !\""
-    },
-    "day1_lunch_yuna_3": {
-        "name": "Moi",
-        "text": "*Une fille avec un appareil photo me regarde, l'air prise au dépourvu.*"
-    },
-    "day1_lunch_yuna_4": {
-        "name": "Moi",
-        "text": "\"Club photo ?\""
-    },
-    "day1_lunch_yuna_5": {
-        "name": "Choi Yuna",
-        "text": "\"Oui ! Je prenais des photos de la bibliothèque et vous êtes apparu d'un coup... Pardon ! Je suis Choi Yuna, en première année. Vous êtes le nouveau, n'est-ce pas ?\""
-    },
-    "day1_lunch_yuna_6": {
-        "name": "Moi",
-        "text": "*Elle sourit de bon cœur. Mignonne, cette petite.*"
-    },
-    "day1_lunch_yuna_7": {
-        "name": "Choi Yuna",
-        "text": "\"Senpai, attendez un instant. Ne bougez pas.\""
-    },
-    "day1_lunch_yuna_8": {
-        "name": "Moi",
-        "text": "*Yuna lève soudainement son appareil photo vers la fenêtre et prend une photo. Clic.*"
-    },
-    "day1_lunch_yuna_9": {
-        "name": "Choi Yuna",
-        "text": "\"Regardez, la lumière qui entre derrière vous était tellement belle... Ah, votre visage n'apparaît pas ! C'est juste le paysage !\""
-    },
-    "day1_lunch_yuna_10": {
-        "name": "Moi",
-        "text": "*Elle s'excuse maladroitement, mais sur l'écran de l'appareil, ma silhouette est bien nette. ...Cette fille est plus audacieuse qu'elle n'en a l'air.*"
-    },
-    "day1_lunch_yuna_11": {
-        "name": "Choi Yuna",
-        "text": "\"죄, 죄송해요. 바로 지울게요...!\""
-    },
-    "day1_lunch_yuna_12": {
-        "name": "Moi",
-        "text": "\"아니, 괜찮아. 놀라서 그런 거야. 사진부구나.\""
-    },
-    "day1_lunch_yuna_13": {
-        "name": "Choi Yuna",
-        "text": "\"네...! 1학년 최유나예요. 전학 온 선배 맞죠?\""
-    },
-    "day1_lunch_yuna_14": {
-        "name": "Moi",
-        "text": "\"응. {name}이야. 잘 부탁해.\""
-    },
-    "day1_lunch_yuna_15": {
-        "name": "Choi Yuna",
-        "text": "\"아... 네. 잘 부탁드려요, 선배.\""
-    },
-    "day1_lunch_yuna_16": {
-        "name": "Moi",
-        "text": "*유나가 카메라를 가슴에 꼭 안고 고개를 숙인다. 얼굴이 빨개져 있다. 수줍은 애인 것 같다.*"
-    },
-    "day1_lunch_yuna_17": {
-        "name": "Moi",
-        "text": "\"사진 많이 찍어? 사진부면.\""
-    },
-    "day1_lunch_yuna_18": {
-        "name": "Choi Yuna",
-        "text": "\"네! 맨날 찍어요. 학교 풍경이랑, 고양이랑... 아, 학교 뒷마당에 고양이가 있거든요.\""
-    },
-    "day1_lunch_yuna_19": {
-        "name": "Moi",
-        "text": "\"고양이?\""
-    },
-    "day1_lunch_yuna_20": {
-        "name": "Choi Yuna",
-        "text": "\"아... 네. 뒷마당에 오는 길고양이요... 제가 치즈라고 부르는데...\""
-    },
-    "day1_lunch_yuna_21": {
-        "name": "Moi",
-        "text": "*고양이 이야기를 하니까 눈이 반짝거린다. 아까의 수줍은 모습이 거짓말처럼.*"
-    },
-    "day1_lunch_yuna_22": {
-        "name": "Choi Yuna",
-        "text": "\"...그, 선배. 도서관 자주 오세요? 저 여기 맨날 있거든요.\""
-    },
-    "day1_lunch_yuna_23": {
-        "name": "Moi",
-        "text": "\"응, 조용해서 좋다. 점심시간에 쉬기 딱이야.\""
-    },
-    "day1_lunch_yuna_24": {
-        "name": "Choi Yuna",
-        "text": "\"그죠?! 여기가 학교에서 제일 편한 곳이에요. 사람도 별로 안 오고.\""
-    },
-    "day1_lunch_yuna_25": {
-        "name": "Moi",
-        "text": "*유나가 카메라를 꼭 안고 웃는다. 수줍지만 따뜻한 웃음.*"
-    },
-    "day1_lunch_yuna_26": {
-        "name": "Choi Yuna",
-        "text": "\"선배가 여기 자주 오시면... 심심하지 않겠다.\""
-    },
-    "day1_lunch_yuna_27": {
-        "name": "Moi",
-        "text": "*작은 목소리로 중얼거린다. 착한 후배인 것 같다.*"
-    },
-    "day1_lunch_yuna_28": {
-        "name": "Moi",
-        "text": "\"그럼 다음에 고양이 사진 보여줘.\""
-    },
-    "day1_lunch_yuna_29": {
-        "name": "Choi Yuna",
-        "text": "\"아... 진짜요? 그럼... 나중에도 도서관 오실 거죠...?\""
-    },
-    "day1_lunch_yuna_30": {
-        "name": "Moi",
-        "text": "*유나가 활짝 웃는다. 귀엽다.*"
-    },
-    "day1_lunch_riin_1": {
-        "name": "Infirmière",
-        "text": "\"Oh, à l'infirmerie dès le premier jour ? Tu ne te sens pas bien ?\""
-    },
-    "day1_lunch_riin_2": {
-        "name": "Moi",
-        "text": "\"J'ai un peu mal à la tête. Vous auriez un antidouleur ?\""
-    },
-    "day1_lunch_riin_3": {
-        "name": "Infirmière",
-        "text": "\"Assieds-toi un instant. Je vais faire un petit contrôle. ...Bon, rien de grave. Tant mieux.\""
-    },
-    "day1_lunch_riin_4": {
-        "name": "Moi",
-        "text": "*Un rapide examen. L'infirmerie est propre et calme.*"
-    },
-    "day1_lunch_riin_5": {
-        "name": "Infirmière",
-        "text": "\"Voilà le médicament. Si tu es fatigué, tu peux rester te reposer un peu.\""
-    },
-    "day1_lunch_riin_6": {
-        "name": "Infirmière",
-        "text": "\"La santé, c'est le plus important. Je veillerai bien sur {name}.\""
-    },
-    "day1_lunch_riin_7": {
-        "name": "Moi",
-        "text": "*Je me sens rassuré sans trop savoir pourquoi. C'est rassurant d'avoir une infirmière comme elle à l'école.*"
-    },
-    "day1_lunch_riin_8": {
-        "name": "Kang Riin",
-        "text": "\"열은 없네. 혀 좀 내밀어볼래? ... 응, 괜찮아.\""
-    },
-    "day1_lunch_riin_9": {
-        "name": "Moi",
-        "text": "\"그냥 긴장해서 그런 것 같아요.\""
-    },
-    "day1_lunch_riin_10": {
-        "name": "Kang Riin",
-        "text": "\"첫날이니까 그럴 수 있어. 긴장성 두통이야. 심한 건 아니야.\""
-    },
-    "day1_lunch_riin_11": {
-        "name": "Moi",
-        "text": "*리인 선생님이 서랍에서 약을 꺼내며 웃는다. 편안한 미소다.*"
-    },
-    "day1_lunch_riin_12": {
-        "name": "Kang Riin",
-        "text": "\"자, 여기. 식후에 하나 먹으면 돼.\""
-    },
-    "day1_lunch_riin_13": {
-        "name": "Moi",
-        "text": "\"감사합니다.\""
-    },
-    "day1_lunch_riin_14": {
-        "name": "Kang Riin",
-        "text": "\"밥은 먹었어? 빈속에 약 먹으면 안 돼.\""
-    },
-    "day1_lunch_riin_15": {
-        "name": "Moi",
-        "text": "\"아... 아직 안 먹었어요. 긴장해서.\""
-    },
-    "day1_lunch_riin_16": {
-        "name": "Kang Riin",
-        "text": "\"이런. 잠깐만.\""
-    },
-    "day1_lunch_riin_17": {
-        "name": "Moi",
-        "text": "*리인 선생님이 서랍에서 에너지바를 하나 꺼내준다.*"
-    },
-    "day1_lunch_riin_18": {
-        "name": "Kang Riin",
-        "text": "\"이거라도 먹어. 빈속에 약 먹으면 위에 안 좋아.\""
-    },
-    "day1_lunch_riin_19": {
-        "name": "Moi",
-        "text": "\"이것까지... 감사합니다.\""
-    },
-    "day1_lunch_riin_20": {
-        "name": "Kang Riin",
-        "text": "\"보건교사가 학생 건강 챙기는 거지, 뭘.\""
-    },
-    "day1_lunch_riin_21": {
-        "name": "Moi",
-        "text": "*리인 선생님이 물도 따라준다. 편안한 사람이다. 언니 같은 느낌.*"
-    },
-    "day1_lunch_riin_22": {
-        "name": "Kang Riin",
-        "text": "\"졸리면 좀 쉬다 가도 돼. 저기 침대 쓰면 되니까.\""
-    },
-    "day1_lunch_riin_23": {
-        "name": "Moi",
-        "text": "\"괜찮아요. 약 먹으면 나을 것 같아요.\""
-    },
-    "day1_lunch_riin_24": {
-        "name": "Kang Riin",
-        "text": "\"그래. 근데 자주 두통 있어? 전부터?\""
-    },
-    "day1_lunch_riin_25": {
-        "name": "Moi",
-        "text": "\"아뇨, 가끔요. 잠을 못 자면 좀.\""
-    },
-    "day1_lunch_riin_26": {
-        "name": "Kang Riin",
-        "text": "\"그렇구나. 앞으로 아프면 언제든 와. 보건실은 항상 열려 있으니까.\""
-    },
-    "day1_lunch_riin_27": {
-        "name": "Moi",
-        "text": "*따뜻한 사람이다. 보건실이 아늑해서 자주 오고 싶어질 것 같다.*"
-    },
-    "day1_lunch_alone_1": {
-        "name": "Moi",
-        "text": "*계단을 올라 옥상 문을 열었다. 바람이 확 불어온다.*"
-    },
-    "day1_lunch_alone_2": {
-        "name": "Moi",
-        "text": "*Je mange mon bentô en regardant la cour en contrebas. C'est paisible.*"
-    },
-    "day1_lunch_alone_3": {
-        "name": "Moi",
-        "text": "*Un moment pour soi, c'est pas mal non plus.*"
-    },
-    "day1_lunch_alone_4": {
-        "name": "Moi",
-        "text": "*매점에서 사온 삼각김밥을 먹으면서 아래 운동장을 내려다본다.*"
-    },
-    "day1_lunch_alone_5": {
-        "name": "Moi",
-        "text": "*학생들이 삼삼오오 모여 있다. 축구하는 애들, 벤치에서 수다 떠는 애들. 평화로운 점심시간.*"
-    },
-    "day1_lunch_alone_6": {
-        "name": "Moi",
-        "text": "*바람이 좋다. 머리가 맑아지는 기분이다.*"
-    },
-    "day1_lunch_alone_7": {
-        "name": "Moi",
-        "text": "*난간에 기대서 하늘을 올려다본다. 구름이 천천히 흘러간다.*"
-    },
-    "day1_lunch_alone_8": {
-        "name": "Moi",
-        "text": "*...어? 운동장 구석에 누가 카메라를 들고 이쪽을 찍고 있는 것 같은데...*"
-    },
-    "day1_lunch_alone_9": {
-        "name": "Moi",
-        "text": "*아냐, 거리가 멀어서 착각이겠지. 사진부 같은 거 아닐까.*"
-    },
-    "day1_lunch_alone_10": {
-        "name": "Moi",
-        "text": "*...난간 밑에 뭔가 긁힌 자국이 있다. 글씨? ...아닌 것 같다. 그냥 오래된 흠집이겠지.*"
-    },
-    "day1_lunch_alone_11": {
-        "name": "Moi",
-        "text": "*바람이 불었다. 옥상 문 너머로... 뭔가 하얀 것이 스친 것 같았다.*"
-    },
-    "day1_lunch_alone_12": {
-        "name": "Moi",
-        "text": "*돌아봤을 때는 아무도 없었다. ...바람에 뭐가 날린 건가.*"
-    },
-    "day1_lunch_alone_13": {
-        "name": "Moi",
-        "text": "*삼각김밥을 다 먹고 스트레칭을 한다. 오후 수업도 힘내자.*"
-    },
-    "day1_lunch_end": {
-        "name": "Moi",
-        "text": "*La pause déjeuner est terminée. Allons en cours cet après-midi.*"
-    }
+  "day1_lunch_start": {
+    "name": "Moi",
+    "text": "*Le quatrième cours se termine, la cloche du déjeuner retentit. Tout le monde bondit de sa chaise.*"
+  },
+  "day1_lunch_start_2": {
+    "name": "Moi",
+    "text": "*J'ai faim. Ce matin j'étais trop stressé pour avaler quoi que ce soit.*"
+  },
+  "day1_lunch_choice": {
+    "name": "Moi",
+    "text": "*Pause déjeuner — où est-ce que je vais ?*",
+    "choices": [
+      "Sea m'a proposé de manger ensemble — rester en classe",
+      "Aller jeter un œil à la bibliothèque calme",
+      "J'ai un peu mal à la tête depuis tout à l'heure... passer à l'infirmerie ?",
+      "Manger seul sur le toit"
+    ]
+  },
+
+  "day1_lunch_sea_1": {
+    "name": "Moi",
+    "text": "*Je suis sur le point de me lever quand Sea s'approche.*"
+  },
+  "day1_lunch_sea_2": {
+    "name": "Han Sea",
+    "text": "\"T'allais où ? J'attendais pour qu'on mange ensemble.\""
+  },
+  "day1_lunch_sea_3": {
+    "name": "Moi",
+    "text": "\"Oh, je pensais aller à la cantine...\""
+  },
+  "day1_lunch_sea_4": {
+    "name": "Han Sea",
+    "text": "\"Pas la peine. J'ai apporté un bentô. J'ai réservé une place — assieds-toi là.\""
+  },
+  "day1_lunch_sea_5": {
+    "name": "Moi",
+    "text": "*Sea pousse deux bureaux l'un contre l'autre et sort un bentô de son sac.*"
+  },
+  "day1_lunch_sea_6": {
+    "name": "Moi",
+    "text": "*...C'est un bentô à deux étages. Quelle que soit l'angle, c'est clairement plus qu'une seule portion.*"
+  },
+  "day1_lunch_sea_7": {
+    "name": "Moi",
+    "text": "\"...T'as tout ça pour toi ?\""
+  },
+  "day1_lunch_sea_8": {
+    "name": "Han Sea",
+    "text": "\"Ta-da. Alors ?\""
+  },
+  "day1_lunch_sea_9": {
+    "name": "Moi",
+    "text": "*Je soulève le couvercle. Omelette roulée, mini-saucisses, onigiri, brocoli, tomates cerises. Tout arrangé soigneusement par couleur.*"
+  },
+  "day1_lunch_sea_10": {
+    "name": "Moi",
+    "text": "\"...Wow. T'as vraiment tout fait toi-même ?\""
+  },
+  "day1_lunch_sea_11": {
+    "name": "Han Sea",
+    "text": "\"Goûte. J'avais comme une intuition que tu préférerais ça au pain de la cantine.\""
+  },
+  "day1_lunch_sea_12": {
+    "name": "Moi",
+    "text": "\"...T'as préparé tout ça ? Pour moi ?\""
+  },
+  "day1_lunch_sea_13": {
+    "name": "Han Sea",
+    "text": "\"La cuisine c'est juste un hobby. ...Mon instinct était bon, non ?\""
+  },
+  "day1_lunch_sea_14": {
+    "name": "Moi",
+    "text": "*Sea attrape un rouleau d'omelette avec ses baguettes et le tend vers moi.*"
+  },
+  "day1_lunch_sea_15": {
+    "name": "Han Sea",
+    "text": "\"Tiens, commence par l'omelette roulée. Je l'ai faite un peu sucrée.\""
+  },
+  "day1_lunch_sea_16": {
+    "name": "Moi",
+    "text": "*...Elle essaie de me nourrir ? Non, elle tend juste. C'est ça.*"
+  },
+  "day1_lunch_sea_17": {
+    "name": "Moi",
+    "text": "\"Oh, je le prends.\""
+  },
+  "day1_lunch_sea_18": {
+    "name": "Moi",
+    "text": "*Je le prends rapidement et mange. ...C'est bon. Vraiment bon.*"
+  },
+  "day1_lunch_sea_19": {
+    "name": "Han Sea",
+    "text": "\"...Alors ? Pas trop salé ?\""
+  },
+  "day1_lunch_sea_20": {
+    "name": "Moi",
+    "text": "\"Ouais, c'est super. Meilleur qu'au resto.\""
+  },
+  "day1_lunch_sea_21": {
+    "name": "Han Sea",
+    "text": "\"Vraiment ?!\""
+  },
+  "day1_lunch_sea_22": {
+    "name": "Moi",
+    "text": "*Le visage de Sea s'illumine. Elle est sincèrement ravie.*"
+  },
+  "day1_lunch_sea_23": {
+    "name": "Han Sea",
+    "text": "\"Super~ Alors goûte aussi les saucisses. Je les ai découpées en forme de pieuvre.\""
+  },
+  "day1_lunch_sea_24": {
+    "name": "Moi",
+    "text": "\"En pieuvre ? ...Ah si, c'est vrai.\""
+  },
+  "day1_lunch_sea_25": {
+    "name": "Moi",
+    "text": "*Les extrémités des saucisses sont entaillées pour s'écarter comme des petites pattes. Elle y a mis du soin.*"
+  },
+  "day1_lunch_sea_26": {
+    "name": "Han Sea",
+    "text": "\"Je les fais comme ça depuis que je suis petite. C'est puéril, non ?\""
+  },
+  "day1_lunch_sea_27": {
+    "name": "Moi",
+    "text": "\"Non, c'est mignon. Et délicieux.\""
+  },
+  "day1_lunch_sea_28": {
+    "name": "Han Sea",
+    "text": "\"...Mignon ?\""
+  },
+  "day1_lunch_sea_29": {
+    "name": "Moi",
+    "text": "*Les joues de Sea rosissent légèrement pendant qu'elle sourit.*"
+  },
+  "day1_lunch_sea_30": {
+    "name": "Han Sea",
+    "text": "\"Bref, mange bien. Y'a aussi des onigiri.\""
+  },
+  "day1_lunch_sea_31": {
+    "name": "Moi",
+    "text": "*On a discuté longtemps de la nourriture — compliment après compliment.*"
+  },
+  "day1_lunch_sea_32": {
+    "name": "Moi",
+    "text": "\"T'apportes toujours un bentô ?\""
+  },
+  "day1_lunch_sea_33": {
+    "name": "Han Sea",
+    "text": "\"Ouais. La cantine c'est bien, mais fait maison c'est meilleur.\""
+  },
+  "day1_lunch_sea_34": {
+    "name": "Moi",
+    "text": "\"Ça fait beaucoup pour une personne.\""
+  },
+  "day1_lunch_sea_35": {
+    "name": "Han Sea",
+    "text": "\".........\""
+  },
+  "day1_lunch_sea_36": {
+    "name": "Moi",
+    "text": "*Sea marque une pause, puis sourit.*"
+  },
+  "day1_lunch_sea_37": {
+    "name": "Han Sea",
+    "text": "\"J'ai tendance à en faire beaucoup. C'est bien d'avoir quelqu'un qui mange tout.\""
+  },
+  "day1_lunch_sea_38": {
+    "name": "Moi",
+    "text": "\"C'était excellent. Vraiment, merci.\""
+  },
+  "day1_lunch_sea_39": {
+    "name": "Moi",
+    "text": "*Sea range le bentô vide et demande l'air de rien :*"
+  },
+  "day1_lunch_sea_40": {
+    "name": "Han Sea",
+    "text": "\"...Je suis vraiment contente que ça t'ait plu. Je t'en apporte un demain aussi ?\""
+  },
+  "day1_lunch_sea_41": {
+    "name": "Moi",
+    "text": "\"Tous les jours ? C'est pas trop de peine ?\""
+  },
+  "day1_lunch_sea_42": {
+    "name": "Han Sea",
+    "text": "\"Pas du tout. C'est tellement plus gratifiant de cuisiner quand il y a quelqu'un pour manger.\""
+  },
+  "day1_lunch_sea_43": {
+    "name": "Moi",
+    "text": "*Sea rayonne. Un bentô dès le premier jour. C'est vraiment quelqu'un de bien.*"
+  },
+  "day1_lunch_sea_44": {
+    "name": "Moi",
+    "text": "*...Mais tout ce qu'il y a dans cette boîte correspond exactement à ce que j'aurais choisi. Omelette, saucisses, onigiri. Une coïncidence ?*"
+  },
+  "day1_lunch_sea_45": {
+    "name": "Moi",
+    "text": "*Bah, ce sont des plats courants. N'importe qui aimerait ça.*"
+  },
+
+  "day1_lunch_yuna_1": {
+    "name": "Moi",
+    "text": "*J'entre dans la bibliothèque. Presque déserte à l'heure du déjeuner.*"
+  },
+  "day1_lunch_yuna_2": {
+    "name": "Moi",
+    "text": "*Le silence. Une odeur de papier et de bois. Le plafond est haut — une sensation d'espace, de fraîcheur.*"
+  },
+  "day1_lunch_yuna_3": {
+    "name": "Moi",
+    "text": "*Je déambule entre les rayonnages. Romans, ouvrages de référence... c'est une grande bibliothèque. Beaucoup plus de livres qu'à mon ancien lycée.*"
+  },
+  "day1_lunch_yuna_4": {
+    "name": "Moi",
+    "text": "*Je me dirige vers un coin tranquille quand j'entends — clic.*"
+  },
+  "day1_lunch_yuna_5": {
+    "name": "???",
+    "text": "\"...!\""
+  },
+  "day1_lunch_yuna_6": {
+    "name": "Moi",
+    "text": "*Une fille tenant un appareil photo s'est figée sur place, l'air affolé. Quel gros appareil pour une si petite personne.*"
+  },
+  "day1_lunch_yuna_7": {
+    "name": "Moi",
+    "text": "*...Elle me photographiait ?*"
+  },
+  "day1_lunch_yuna_8": {
+    "name": "Moi",
+    "text": "\"...Tu venais de me prendre en photo ?\""
+  },
+  "day1_lunch_yuna_9": {
+    "name": "Choi Yuna",
+    "text": "\"Non, non ! Je suis au club photo, je prenais l'atmosphère de la bibliothèque, et puis t'es entré et...\""
+  },
+  "day1_lunch_yuna_10": {
+    "name": "Moi",
+    "text": "*Elle agite frénétiquement les mains.*"
+  },
+  "day1_lunch_yuna_11": {
+    "name": "Choi Yuna",
+    "text": "\"Je suis vraiment désolée. Je l'efface tout de suite...!\""
+  },
+  "day1_lunch_yuna_12": {
+    "name": "Moi",
+    "text": "\"Non, ça va. J'ai juste eu un choc. Donc t'es au club photo.\""
+  },
+  "day1_lunch_yuna_13": {
+    "name": "Choi Yuna",
+    "text": "\"Oui...! Je m'appelle Choi Yuna, je suis en première année. T'es le nouveau, c'est ça ?\""
+  },
+  "day1_lunch_yuna_14": {
+    "name": "Moi",
+    "text": "\"Ouais. Moi c'est {name}. Enchanté.\""
+  },
+  "day1_lunch_yuna_15": {
+    "name": "Choi Yuna",
+    "text": "\"Oh... oui. Enchantée, senpai.\""
+  },
+  "day1_lunch_yuna_16": {
+    "name": "Moi",
+    "text": "*Yuna serre son appareil contre sa poitrine et baisse la tête. Son visage est rouge. Elle a l'air timide.*"
+  },
+  "day1_lunch_yuna_17": {
+    "name": "Moi",
+    "text": "\"Tu prends beaucoup de photos ? Vu que t'es au club photo.\""
+  },
+  "day1_lunch_yuna_18": {
+    "name": "Choi Yuna",
+    "text": "\"Ouais ! Tout le temps. Les paysages du lycée, les chats... ah, il y a un chat dans la cour derrière le lycée.\""
+  },
+  "day1_lunch_yuna_19": {
+    "name": "Moi",
+    "text": "\"Un chat ?\""
+  },
+  "day1_lunch_yuna_20": {
+    "name": "Choi Yuna",
+    "text": "\"Ouais... un chat errant qui vient dans la cour. Je l'appelle Fromage...\""
+  },
+  "day1_lunch_yuna_21": {
+    "name": "Moi",
+    "text": "*Ses yeux s'illuminent dès qu'elle parle du chat. Comme si la version timide que je venais de rencontrer n'avait jamais existé.*"
+  },
+  "day1_lunch_yuna_22": {
+    "name": "Choi Yuna",
+    "text": "\"...Senpai. Tu viens souvent à la bibliothèque ? Moi j'y suis tous les jours.\""
+  },
+  "day1_lunch_yuna_23": {
+    "name": "Moi",
+    "text": "\"Ouais, j'aime le calme. L'endroit idéal pour se reposer à midi.\""
+  },
+  "day1_lunch_yuna_24": {
+    "name": "Choi Yuna",
+    "text": "\"Hein ?! C'est l'endroit le plus paisible de tout le lycée. Et pas beaucoup de monde non plus.\""
+  },
+  "day1_lunch_yuna_25": {
+    "name": "Moi",
+    "text": "*Yuna serre son appareil et sourit. Timide, mais chaleureux.*"
+  },
+  "day1_lunch_yuna_26": {
+    "name": "Choi Yuna",
+    "text": "\"Si senpai vient souvent ici... je me sentirai moins seule.\""
+  },
+  "day1_lunch_yuna_27": {
+    "name": "Moi",
+    "text": "*Elle murmure tout doucement. Elle a l'air d'être quelqu'un de bien.*"
+  },
+  "day1_lunch_yuna_28": {
+    "name": "Moi",
+    "text": "\"Alors montre-moi les photos du chat la prochaine fois.\""
+  },
+  "day1_lunch_yuna_29": {
+    "name": "Choi Yuna",
+    "text": "\"Oh... vraiment ? Alors... tu reviendras à la bibliothèque, n'est-ce pas...?\""
+  },
+  "day1_lunch_yuna_30": {
+    "name": "Moi",
+    "text": "*Yuna sourit de toutes ses dents. Adorable.*"
+  },
+
+  "day1_lunch_riin_1": {
+    "name": "Moi",
+    "text": "*J'ouvre la porte de l'infirmerie. Une légère odeur de désinfectant.*"
+  },
+  "day1_lunch_riin_2": {
+    "name": "Moi",
+    "text": "*Une femme est assise au fond. Longs cheveux, blouse blanche. Elle est renversée en arrière, lisant quelque chose.*"
+  },
+  "day1_lunch_riin_3": {
+    "name": "Moi",
+    "text": "*Je frappe. Elle lève les yeux.*"
+  },
+  "day1_lunch_riin_4": {
+    "name": "Kang Riin",
+    "text": "\"Oh ? À l'infirmerie dès le premier jour ? Tu ne te sens pas bien ?\""
+  },
+  "day1_lunch_riin_5": {
+    "name": "Moi",
+    "text": "\"J'ai mal à la tête. Vous auriez quelque chose contre ça ?\""
+  },
+  "day1_lunch_riin_6": {
+    "name": "Kang Riin",
+    "text": "\"Ah bon ? Viens t'asseoir. Laisse-moi regarder d'abord.\""
+  },
+  "day1_lunch_riin_7": {
+    "name": "Moi",
+    "text": "*Riin s'approche et vérifie mon front. Ses mains sont fraîches.*"
+  },
+  "day1_lunch_riin_8": {
+    "name": "Kang Riin",
+    "text": "\"Pas de fièvre. Ouvre la bouche ? ... Bien, t'as l'air en forme.\""
+  },
+  "day1_lunch_riin_9": {
+    "name": "Moi",
+    "text": "\"Je crois que c'est le stress.\""
+  },
+  "day1_lunch_riin_10": {
+    "name": "Kang Riin",
+    "text": "\"Céphalée de tension — ça se comprend, c'est ton premier jour. Rien de grave.\""
+  },
+  "day1_lunch_riin_11": {
+    "name": "Moi",
+    "text": "*Riin sort un médicament d'un tiroir et sourit. Un sourire détendu.*"
+  },
+  "day1_lunch_riin_12": {
+    "name": "Kang Riin",
+    "text": "\"Tiens. Un comprimé après avoir mangé.\""
+  },
+  "day1_lunch_riin_13": {
+    "name": "Moi",
+    "text": "\"Merci.\""
+  },
+  "day1_lunch_riin_14": {
+    "name": "Kang Riin",
+    "text": "\"T'as mangé ? Il ne faut pas prendre des médicaments à jeun.\""
+  },
+  "day1_lunch_riin_15": {
+    "name": "Moi",
+    "text": "\"Oh... pas encore. Le stress, je suppose.\""
+  },
+  "day1_lunch_riin_16": {
+    "name": "Kang Riin",
+    "text": "\"Oh là. Une seconde.\""
+  },
+  "day1_lunch_riin_17": {
+    "name": "Moi",
+    "text": "*Riin sort une barre énergétique d'un tiroir et me la tend.*"
+  },
+  "day1_lunch_riin_18": {
+    "name": "Kang Riin",
+    "text": "\"Mange ça d'abord. Le médicament à jeun, c'est dur pour l'estomac.\""
+  },
+  "day1_lunch_riin_19": {
+    "name": "Moi",
+    "text": "\"Même ça... merci vraiment.\""
+  },
+  "day1_lunch_riin_20": {
+    "name": "Kang Riin",
+    "text": "\"Prendre soin des élèves, c'est mon travail.\""
+  },
+  "day1_lunch_riin_21": {
+    "name": "Moi",
+    "text": "*Riin me verse aussi un verre d'eau. Elle est agréable à fréquenter. Comme une grande sœur.*"
+  },
+  "day1_lunch_riin_22": {
+    "name": "Kang Riin",
+    "text": "\"Si tu te sens somnolent, tu peux te reposer sur le lit. C'est là-bas.\""
+  },
+  "day1_lunch_riin_23": {
+    "name": "Moi",
+    "text": "\"Ça va. Je pense que le médicament suffira.\""
+  },
+  "day1_lunch_riin_24": {
+    "name": "Kang Riin",
+    "text": "\"D'accord. Mais tu as souvent des maux de tête comme ça ?\""
+  },
+  "day1_lunch_riin_25": {
+    "name": "Moi",
+    "text": "\"Parfois. Quand je dors mal.\""
+  },
+  "day1_lunch_riin_26": {
+    "name": "Kang Riin",
+    "text": "\"Je vois. Viens quand tu ne te sens pas bien. L'infirmerie est toujours ouverte.\""
+  },
+  "day1_lunch_riin_27": {
+    "name": "Moi",
+    "text": "*Elle est chaleureuse. L'infirmerie est tellement accueillante que j'imagine bien y revenir souvent.*"
+  },
+
+  "day1_lunch_alone_1": {
+    "name": "Moi",
+    "text": "*Je monte les escaliers et pousse la porte du toit. Une bouffée de vent me frappe.*"
+  },
+  "day1_lunch_alone_2": {
+    "name": "Moi",
+    "text": "*Tout est ouvert ici. Le ciel à perte de vue. L'odeur des cerisiers portée par la brise.*"
+  },
+  "day1_lunch_alone_3": {
+    "name": "Moi",
+    "text": "*Un moment pour soi, c'est pas mal non plus. J'avais besoin de décompresser — c'est le premier jour, après tout.*"
+  },
+  "day1_lunch_alone_4": {
+    "name": "Moi",
+    "text": "*Je mange un onigiri acheté à la cantine en regardant la cour en contrebas.*"
+  },
+  "day1_lunch_alone_5": {
+    "name": "Moi",
+    "text": "*Les élèves sont répartis en petits groupes. Certains jouent au foot, d'autres bavardent sur des bancs. Une pause déjeuner paisible.*"
+  },
+  "day1_lunch_alone_6": {
+    "name": "Moi",
+    "text": "*Le vent est agréable. La tête se clarifie.*"
+  },
+  "day1_lunch_alone_7": {
+    "name": "Moi",
+    "text": "*Je m'appuie sur la rambarde et lève les yeux vers le ciel. Les nuages dérivent lentement.*"
+  },
+  "day1_lunch_alone_8": {
+    "name": "Moi",
+    "text": "*...Attends. Est-ce que quelqu'un dans le coin de la cour pointe un appareil photo vers moi ?*"
+  },
+  "day1_lunch_alone_9": {
+    "name": "Moi",
+    "text": "*Non, c'est trop loin — j'imagine probablement des choses. Le club photo, peut-être.*"
+  },
+  "day1_lunch_alone_10": {
+    "name": "Moi",
+    "text": "*...Il y a une sorte d'égratignure sur la rambarde en dessous. Des lettres gravées ? ...Non, ça ne ressemble pas à des lettres. Juste une vieille marque.*"
+  },
+  "day1_lunch_alone_11": {
+    "name": "Moi",
+    "text": "*Une rafale de vent. Au-delà de la porte du toit... quelque chose de blanc a semblé passer en éclair.*"
+  },
+  "day1_lunch_alone_12": {
+    "name": "Moi",
+    "text": "*Quand je me suis retourné, il n'y avait personne. ...Quelque chose emporté par le vent, sans doute.*"
+  },
+  "day1_lunch_alone_13": {
+    "name": "Moi",
+    "text": "*Je finis l'onigiri et m'étire. Courage pour cet après-midi.*"
+  },
+
+  "day1_lunch_end": {
+    "name": "Moi",
+    "text": "*La pause déjeuner est terminée. L'heure des cours de l'après-midi.*"
+  }
 }

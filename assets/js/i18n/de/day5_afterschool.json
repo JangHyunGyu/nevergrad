@@ -1,246 +1,246 @@
 {
-    "day5_after_start": {
-        "name": "Ich",
-        "text": "*...*"
-    },
-    "day5_after_branch": {
-        "name": "",
-        "text": ""
-    },
-    "day5_after_escaped": {
-        "name": "Ich",
-        "text": "*Außerhalb der Schule. Es regnet. Zum ersten Mal... atme ich die Luft außerhalb der Schule.*"
-    },
-    "day5_after_escaped_2": {
-        "name": "Ich",
-        "text": "*Ich rannte. Irgendwohin. So weit wie möglich von dieser Schule weg.*"
-    },
-    "day5_after_escaped_3": {
-        "name": "Ich",
-        "text": "*Ich bin allein. Aber ich bin am Leben.*"
-    },
-    "day5_after_escaped_4": {
-        "name": "Ich",
-        "text": "*Ich muss diese Beweise der Welt zeigen. Sofort.*"
-    },
-    "day5_after_escaped_5": {
-        "name": "Ich",
-        "text": "*비가 내리고 있다. 빗방울이 얼굴을 때린다. 차갑다. 하지만 이 차가움이... 살아있다는 증거다.*"
-    },
-    "day5_after_escaped_6": {
-        "name": "Ich",
-        "text": "*처음으로... 이 학교에 온 뒤로 처음으로, 학교 밖 공기를 마신다.*"
-    },
-    "day5_after_escaped_7": {
-        "name": "Ich",
-        "text": "*숨을 들이쉬었다. 깊게. 폐가 터질 것 같을 만큼. ...냄새가 다르다. 소독약 냄새가 아니다. 벚꽃 냄새가 아니다. 그냥 비 냄새. 흙 냄새. 세상의 냄새.*"
-    },
-    "day5_after_escaped_8": {
-        "name": "Ich",
-        "text": "*뛰었다. 어디로든. 이 학교에서 최대한 멀리. 다리가 떨린다. 무릎이 풀린다. 그래도 뛴다.*"
-    },
-    "day5_after_escaped_yuna_branch": {
-        "name": "",
-        "text": ""
-    },
-    "day5_after_escaped_yuna": {
-        "name": "Ich",
-        "text": "*Yuna weint. Ich weine auch.*"
-    },
-    "day5_after_escaped_yuna_2": {
-        "name": "Ich",
-        "text": "*뛰다가 멈췄다. 학교에서 충분히 멀어진 뒤에. 가로등 밑에서.*"
-    },
-    "day5_after_escaped_yuna_3": {
-        "name": "Choi Yuna",
-        "text": "\"선배...\""
-    },
-    "day5_after_escaped_yuna_4": {
-        "name": "Choi Yuna",
-        "text": "\"우리 나왔어요...\""
-    },
-    "day5_after_escaped_yuna_5": {
-        "name": "Ich",
-        "text": "\"나왔어. 나왔어, 유나.\""
-    },
-    "day5_after_escaped_solo": {
-        "name": "Ich",
-        "text": "*Ich habe Yuna zurückgelassen. ...Es tut mir leid.*"
-    },
-    "day5_after_escaped_solo_2": {
-        "name": "Ich",
-        "text": "*멈출 수 없다. 아직 충분히 멀지 않다. 더. 더 멀리.*"
-    },
-    "day5_after_escaped_choice": {
-        "name": "Ich",
-        "text": "*Was soll ich tun?*",
-        "choices": [
-            "Die Polizei rufen",
-            "Im Internet veröffentlichen"
-        ]
-    },
-    "day5_after_police": {
-        "name": "Ich",
-        "text": "*Ich rief die Polizei an. Meine Stimme zitterte, aber ich erklärte alles. Die Speicherkarte und die Fotos legte ich als Beweise vor.*"
-    },
-    "day5_after_police_2": {
-        "name": "Ich",
-        "text": "*Die Polizei rückte aus. Sirenen heulen aus der Richtung der Schule.*"
-    },
-    "day5_after_expose_online": {
-        "name": "Ich",
-        "text": "*Ich verband mich mit dem WLAN eines Convenience-Stores. Ich lade alle Fotos und Dokumente hoch. Soziale Medien, Nachrichtenredaktionen, Foren...*"
-    },
-    "day5_after_expose_2": {
-        "name": "Ich",
-        "text": "*Upload abgeschlossen. ...Bald wird die Welt es erfahren.*"
-    },
-    "day5_after_captured": {
-        "name": "Ich",
-        "text": "*...Ich öffnete die Augen. Ein Keller. Die Neonröhre flackert.*"
-    },
-    "day5_after_captured_2": {
-        "name": "Ich",
-        "text": "*Meine Hände sind gefesselt. Ich sitze auf einem Stuhl. ...Ist es vorbei?*"
-    },
-    "day5_after_captured_3": {
-        "name": "Klassenlehrerin",
-        "text": "\"Du bist aufgewacht, {name}. ...Wolltest du etwa fliehen?\""
-    },
-    "day5_after_captured_4": {
-        "name": "Schulkrankenschwester",
-        "text": "\"Ich bereite die letzte Untersuchung vor. Nur Blutentnahme und Infusion, das ist alles.\""
-    },
-    "day5_after_captured_5": {
-        "name": "Ich",
-        "text": "*...Soll ich aufgeben?*",
-        "choices": [
-            "Sich wehren",
-            "Es akzeptieren"
-        ]
-    },
-    "day5_after_captured_6": {
-        "name": "Park Eunsu",
-        "text": "\"...도망치려고 했어? 선생님이 얼마나 걱정했는지 알아?\""
-    },
-    "day5_after_captured_7": {
-        "name": "Kang Riin",
-        "text": "\"마지막 검진 준비할게.\""
-    },
-    "day5_after_captured_8": {
-        "name": "Kang Riin",
-        "text": "\"채혈이랑 수액만 연결하면 끝나. 이번이 마지막이야.\""
-    },
-    "day5_after_captured_9": {
-        "name": "Ich",
-        "text": "*'마지막'. 그 단어가 무겁다. 이게 끝나면... 어떻게 되는 거지? 설화처럼?*"
-    },
-    "day5_after_captured_10": {
-        "name": "Ich",
-        "text": "*리인 선생님이 팔꿈치 안쪽을 소독한다. 알코올 솜의 차가움이 피부에 닿는다. ...여기서 포기하면 안 된다. 아직 끝나지 않았다.*"
-    },
-    "day5_after_captured_choice": {
-        "name": "Ich",
-        "text": "*...어떻게 할까.*",
-        "choices": [
-            "저항한다",
-            "받아들인다"
-        ]
-    },
-    "day5_after_captured_resist": {
-        "name": "Ich",
-        "text": "*Ich stürzte den Stuhl um! Mit gefesselten Händen stehe ich auf.*"
-    },
-    "day5_after_captured_resist_2": {
-        "name": "Lee Seolhwa",
-        "text": "\"...Ich helfe dir.\""
-    },
-    "day5_after_captured_resist_3": {
-        "name": "Ich",
-        "text": "*Plötzlich fiel der Strom aus. Der Keller versinkt in Dunkelheit. Im Chaos... fand ich den Ausgang.*"
-    },
-    "day5_after_captured_resist_4": {
-        "name": "Ich",
-        "text": "*그 순간. 전기가 나갔다.*"
-    },
-    "day5_after_captured_resist_5": {
-        "name": "Park Eunsu",
-        "text": "\"...뭐야?\""
-    },
-    "day5_after_captured_resist_6": {
-        "name": "Kang Riin",
-        "text": "\"정전? 이 시간에?\""
-    },
-    "day5_after_captured_resist_7": {
-        "name": "Ich",
-        "text": "*어둠 속에서... 손이 느껴진다. 차갑고 투명한 손. 가죽 끈을 풀어주고 있다.*"
-    },
-    "day5_after_captured_resist_8": {
-        "name": "Ich",
-        "text": "*...설화. 끈이 풀렸다. 설화가 내 손을 잡는다. 투명한 손이라 잡히지 않을 줄 알았는데... 잡힌다.*"
-    },
-    "day5_after_captured_resist_9": {
-        "name": "Ich",
-        "text": "*어둠 속에서 끌려간다. 발소리를 죽이며. 비상구를 향해.*"
-    },
-    "day5_after_captured_submit": {
-        "name": "Schulkrankenschwester",
-        "text": "\"Brav. Es ist gleich vorbei. Du wirst alles vergessen.\""
-    },
-    "day5_after_captured_submit_2": {
-        "name": "Ich",
-        "text": "*In dem Moment, als die Nadel meinen Arm berührt. Das Bewusstsein... verschwimmt...*"
-    },
-    "day5_after_captured_submit_3": {
-        "name": "Ich",
-        "text": "*...따뜻해진다. 몸이 녹는 것 같다. 생각이 흐려진다.*"
-    },
-    "day5_after_captured_submit_4": {
-        "name": "Ich",
-        "text": "*뭔가를... 잊고 있다. 뭘 잊고 있지? 중요한 건데... 뭐였지...*"
-    },
-    "day5_after_stayed": {
-        "name": "Klassenlehrerin",
-        "text": "\"...Gut entschieden, {name}. So ist es richtig.\""
-    },
-    "day5_after_stayed_2": {
-        "name": "Klassenlehrerin",
-        "text": "\"Deine Lehrerin wird dich beschützen. Du brauchst dir keine Sorgen zu machen.\""
-    },
-    "day5_after_stayed_3": {
-        "name": "Klassenlehrerin",
-        "text": "\"...{name} muss nur bei seiner Lehrerin bleiben. Für immer.\""
-    },
-    "day5_after_stayed_4": {
-        "name": "Ich",
-        "text": "*은수-Lehrerin lächelt. Ein warmes Lächeln. ...War dieses Lächeln schon immer so furchteinflößend?*"
-    },
-    "day5_after_stayed_5": {
-        "name": "Park Eunsu",
-        "text": "\"선생님이 다 지켜줄게. 아무것도 걱정할 필요 없어.\""
-    },
-    "day5_after_stayed_6": {
-        "name": "Ich",
-        "text": "*자리에 앉았다. 세아가 내 옆에 앉는다. 리인 선생님이 차를 건넨다.*"
-    },
-    "day5_after_stayed_7": {
-        "name": "Park Eunsu",
-        "text": "\"...{name}은 선생님 곁에 있으면 돼. 영원히.\""
-    },
-    "day5_after_stayed_8": {
-        "name": "Ich",
-        "text": "*은수 선생님이 웃고 있다. 따뜻한 미소.*"
-    },
-    "day5_after_stayed_9": {
-        "name": "Ich",
-        "text": "*...이 미소가 항상 이렇게 무서웠던가. 아니. 무섭지 않다. ...무섭지 않다. ...왜 무섭지 않지?*"
-    },
-    "day5_after_stayed_10": {
-        "name": "Ich",
-        "text": "*차를 마셨다. 따뜻하다. 좋다. ...뭔가 잊고 있는 것 같은데. 뭐였지. ...괜찮다. 잊어도 된다. 여기는 안전하니까.*"
-    },
-    "day5_after_end": {
-        "name": "Ich",
-        "text": "*...*"
-    }
+  "day5_after_start": {
+    "name": "Ich",
+    "text": "*...*"
+  },
+  "day5_after_branch": {
+    "name": "",
+    "text": ""
+  },
+  "day5_after_escaped": {
+    "name": "Ich",
+    "text": "*Außerhalb der Schule. Es regnet. Zum ersten Mal... atme ich die Luft außerhalb der Schule.*"
+  },
+  "day5_after_escaped_2": {
+    "name": "Ich",
+    "text": "*Ich rannte. Irgendwohin. So weit wie möglich von dieser Schule weg.*"
+  },
+  "day5_after_escaped_3": {
+    "name": "Ich",
+    "text": "*Ich bin allein. Aber ich bin am Leben.*"
+  },
+  "day5_after_escaped_4": {
+    "name": "Ich",
+    "text": "*Ich muss diese Beweise der Welt zeigen. Sofort.*"
+  },
+  "day5_after_escaped_5": {
+    "name": "Ich",
+    "text": "*Es regnet. Regentropfen schlagen in mein Gesicht. Kalt. Aber diese Kälte... ist der Beweis, dass ich lebe.*"
+  },
+  "day5_after_escaped_6": {
+    "name": "Ich",
+    "text": "*Zum ersten Mal... seit ich an diese Schule gekommen bin, zum allerersten Mal atme ich die Luft außerhalb der Schule.*"
+  },
+  "day5_after_escaped_7": {
+    "name": "Ich",
+    "text": "*Ich atmete ein. Tief. So tief, dass es sich anfühlte, als könnten meine Lungen platzen. ...Der Geruch ist anders. Kein Desinfektionsmittel. Keine Kirschblüten. Nur Regengeruch. Erdgeruch. Der Geruch der Welt.*"
+  },
+  "day5_after_escaped_8": {
+    "name": "Ich",
+    "text": "*Ich rannte. Irgendwohin. So weit wie möglich von dieser Schule weg. Meine Beine zittern. Meine Knie werden weich. Ich renne trotzdem.*"
+  },
+  "day5_after_escaped_yuna_branch": {
+    "name": "",
+    "text": ""
+  },
+  "day5_after_escaped_yuna": {
+    "name": "Ich",
+    "text": "*Yuna weint. Ich weine auch.*"
+  },
+  "day5_after_escaped_yuna_2": {
+    "name": "Ich",
+    "text": "*Ich rannte, bis ich anhielt. Nachdem ich weit genug von der Schule entfernt war. Unter einer Straßenlaterne.*"
+  },
+  "day5_after_escaped_yuna_3": {
+    "name": "Choi Yuna",
+    "text": "\"Senpai...\""
+  },
+  "day5_after_escaped_yuna_4": {
+    "name": "Choi Yuna",
+    "text": "\"Wir haben es rausgeschafft...\""
+  },
+  "day5_after_escaped_yuna_5": {
+    "name": "Ich",
+    "text": "\"Wir haben es geschafft. Wir haben es geschafft, Yuna.\""
+  },
+  "day5_after_escaped_solo": {
+    "name": "Ich",
+    "text": "*Ich habe Yuna zurückgelassen. ...Es tut mir leid.*"
+  },
+  "day5_after_escaped_solo_2": {
+    "name": "Ich",
+    "text": "*Ich kann nicht aufhören. Noch nicht weit genug. Mehr. Weiter.*"
+  },
+  "day5_after_escaped_choice": {
+    "name": "Ich",
+    "text": "*Was soll ich tun?*",
+    "choices": [
+      "Die Polizei rufen",
+      "Im Internet veröffentlichen"
+    ]
+  },
+  "day5_after_police": {
+    "name": "Ich",
+    "text": "*Ich rief die Polizei an. Meine Stimme zitterte, aber ich erklärte alles. Die Speicherkarte und die Fotos legte ich als Beweise vor.*"
+  },
+  "day5_after_police_2": {
+    "name": "Ich",
+    "text": "*Die Polizei rückte aus. Sirenen heulen aus der Richtung der Schule.*"
+  },
+  "day5_after_expose_online": {
+    "name": "Ich",
+    "text": "*Ich verband mich mit dem WLAN eines Convenience-Stores. Ich lade alle Fotos und Dokumente hoch. Soziale Medien, Nachrichtenredaktionen, Foren...*"
+  },
+  "day5_after_expose_2": {
+    "name": "Ich",
+    "text": "*Upload abgeschlossen. ...Bald wird die Welt es erfahren.*"
+  },
+  "day5_after_captured": {
+    "name": "Ich",
+    "text": "*...Ich öffnete die Augen. Ein Keller. Die Neonröhre flackert.*"
+  },
+  "day5_after_captured_2": {
+    "name": "Ich",
+    "text": "*Meine Hände sind gefesselt. Ich sitze auf einem Stuhl. ...Ist es vorbei?*"
+  },
+  "day5_after_captured_3": {
+    "name": "Klassenlehrerin",
+    "text": "\"Du bist aufgewacht, {name}. ...Wolltest du etwa fliehen?\""
+  },
+  "day5_after_captured_4": {
+    "name": "Schulkrankenschwester",
+    "text": "\"Ich bereite die letzte Untersuchung vor. Nur Blutentnahme und Infusion, das ist alles.\""
+  },
+  "day5_after_captured_5": {
+    "name": "Ich",
+    "text": "*...Soll ich aufgeben?*",
+    "choices": [
+      "Sich wehren",
+      "Es akzeptieren"
+    ]
+  },
+  "day5_after_captured_6": {
+    "name": "Klassenlehrerin",
+    "text": "\"...Du wolltest fliehen? Weißt du, wie viel Sorgen ich mir gemacht habe?\""
+  },
+  "day5_after_captured_7": {
+    "name": "Kang Riin",
+    "text": "\"Ich bereite die letzte Untersuchung vor.\""
+  },
+  "day5_after_captured_8": {
+    "name": "Kang Riin",
+    "text": "\"Nur eine Blutentnahme und eine Infusion — dann ist es vorbei. Das hier ist das letzte Mal.\""
+  },
+  "day5_after_captured_9": {
+    "name": "Ich",
+    "text": "*'Das letzte Mal.' Dieses Wort lastet schwer. Wenn das vorbei ist... was passiert dann? Wie mit Seolhwa?*"
+  },
+  "day5_after_captured_10": {
+    "name": "Ich",
+    "text": "*Riin-Sensei desinfiziert die Innenseite meines Ellbogens. Die Kälte des Alkoholtupfers berührt meine Haut. ...Ich darf hier nicht aufgeben. Es ist noch nicht vorbei.*"
+  },
+  "day5_after_captured_choice": {
+    "name": "Ich",
+    "text": "*...Was soll ich tun?*",
+    "choices": [
+      "Widersetzen",
+      "Akzeptieren"
+    ]
+  },
+  "day5_after_captured_resist": {
+    "name": "Ich",
+    "text": "*Ich stürzte den Stuhl um! Mit gefesselten Händen stehe ich auf.*"
+  },
+  "day5_after_captured_resist_2": {
+    "name": "Lee Seolhwa",
+    "text": "\"...Ich helfe dir.\""
+  },
+  "day5_after_captured_resist_3": {
+    "name": "Ich",
+    "text": "*Plötzlich fiel der Strom aus. Der Keller versinkt in Dunkelheit. Im Chaos... fand ich den Ausgang.*"
+  },
+  "day5_after_captured_resist_4": {
+    "name": "Ich",
+    "text": "*In diesem Moment. Der Strom fiel aus.*"
+  },
+  "day5_after_captured_resist_5": {
+    "name": "Park Eunsu",
+    "text": "\"...Was?\""
+  },
+  "day5_after_captured_resist_6": {
+    "name": "Kang Riin",
+    "text": "\"Stromausfall? Zu dieser Stunde?\""
+  },
+  "day5_after_captured_resist_7": {
+    "name": "Ich",
+    "text": "*In der Dunkelheit... spüre ich eine Hand. Eine kalte, transparente Hand. Sie löst die Lederriemen.*"
+  },
+  "day5_after_captured_resist_8": {
+    "name": "Ich",
+    "text": "*...Seolhwa. Die Riemen sind locker. Seolhwa ergreift meine Hand. Ich dachte, eine transparente Hand könnte nichts festhalten... aber sie hält.*"
+  },
+  "day5_after_captured_resist_9": {
+    "name": "Ich",
+    "text": "*Ich werde durch die Dunkelheit gezogen. Die Schritte gedämpft. In Richtung Notausgang.*"
+  },
+  "day5_after_captured_submit": {
+    "name": "Schulkrankenschwester",
+    "text": "\"Brav. Es ist gleich vorbei. Du wirst alles vergessen.\""
+  },
+  "day5_after_captured_submit_2": {
+    "name": "Ich",
+    "text": "*In dem Moment, als die Nadel meinen Arm berührt. Das Bewusstsein... verschwimmt...*"
+  },
+  "day5_after_captured_submit_3": {
+    "name": "Ich",
+    "text": "*...Es wird warm. Als würde mein Körper schmelzen. Meine Gedanken verschwimmen.*"
+  },
+  "day5_after_captured_submit_4": {
+    "name": "Ich",
+    "text": "*Irgendetwas... vergesse ich. Was vergesse ich? Es war wichtig... was war es noch...*"
+  },
+  "day5_after_stayed": {
+    "name": "Klassenlehrerin",
+    "text": "\"...Gut entschieden, {name}. So ist es richtig.\""
+  },
+  "day5_after_stayed_2": {
+    "name": "Klassenlehrerin",
+    "text": "\"Deine Lehrerin wird dich beschützen. Du brauchst dir keine Sorgen zu machen.\""
+  },
+  "day5_after_stayed_3": {
+    "name": "Klassenlehrerin",
+    "text": "\"...{name} muss nur bei seiner Lehrerin bleiben. Für immer.\""
+  },
+  "day5_after_stayed_4": {
+    "name": "Ich",
+    "text": "*Eunsu-Sensei lächelt. Ein warmes Lächeln. ...War dieses Lächeln schon immer so furchteinflößend? Nein. Es ist nicht furchteinflößend. ...Nicht furchteinflößend. ...Warum ist es nicht mehr furchteinflößend?*"
+  },
+  "day5_after_stayed_5": {
+    "name": "Park Eunsu",
+    "text": "\"Deine Lehrerin wird dich beschützen. Du musst dir um nichts Sorgen machen.\""
+  },
+  "day5_after_stayed_6": {
+    "name": "Ich",
+    "text": "*Ich setzte mich. Sea setzt sich neben mich. Riin-Sensei reicht mir eine Tasse Tee.*"
+  },
+  "day5_after_stayed_7": {
+    "name": "Park Eunsu",
+    "text": "\"...{name} muss nur bei seiner Lehrerin bleiben. Für immer.\""
+  },
+  "day5_after_stayed_8": {
+    "name": "Ich",
+    "text": "*Eunsu-Sensei lächelt. Ein warmes Lächeln.*"
+  },
+  "day5_after_stayed_9": {
+    "name": "Ich",
+    "text": "*...War dieses Lächeln schon immer so beängstigend? Nein. Es macht mir keine Angst. ...Keine Angst. ...Warum macht es mir keine Angst mehr?*"
+  },
+  "day5_after_stayed_10": {
+    "name": "Ich",
+    "text": "*Ich trank den Tee. Er ist warm. Es ist schön. ...Irgendetwas vergesse ich, glaube ich. Was war es noch. ...Schon gut. Ich darf vergessen. Hier ist es sicher.*"
+  },
+  "day5_after_end": {
+    "name": "Ich",
+    "text": "*...*"
+  }
 }

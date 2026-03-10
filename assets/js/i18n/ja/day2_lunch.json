@@ -1,245 +1,245 @@
 {
   "day2_lunch_start": {
     "name": "私",
-    "text": "*昼休み。今日はどこで食べようか。*"
+    "text": "*お昼の鐘が鳴った。昨日より腹が減っている。*"
   },
   "day2_lunch_choice": {
     "name": "私",
-    "text": "*昼休みだ。*",
+    "text": "*昼休みだ。どこで食べようか。*",
     "choices": [
       "セアと一緒に食べる",
-      "ユナに会いに図書室へ行く",
+      "図書室でユナと会う",
       "保健室に寄る",
       "屋上で一人で食べる"
     ]
   },
   "day2_lunch_sea_1": {
     "name": "ハン・セア",
-    "text": "\"I packed lunch again today. I noticed you ate a lot of the rolled egg yesterday, so I added more.\""
+    "text": "\"今日もお弁当を作ってきたよ。昨日、卵焼きをたくさん食べてたから、多めに入れておいたんだ。\""
   },
   "day2_lunch_sea_2": {
-    "name": "ハン・セア",
-    "text": "\"ねえ、{name}……私以外の子たちとよく遊んでる？\""
+    "name": "私",
+    "text": "\"また？毎日こんなことしてもらったら申し訳ないよ。\""
   },
   "day2_lunch_sea_3": {
-    "name": "私",
-    "text": "*セアが僕の手の甲をそっと握る。小さくて温かい手だ。*"
+    "name": "ハン・セア",
+    "text": "\"気にしないで。作るの楽しいから。\""
   },
   "day2_lunch_sea_4": {
     "name": "私",
-    "text": "*「……{name}は私のだからね。」セアが囁いた。冗談だと思ったけど……表情が真剣だ。あ、違うか。笑っているから冗談だろう。*"
+    "text": "*今日のお弁当を開けた。昨日より手が込んでいる。チキンカツ、花形のニンジン、ミニのり巻き。*"
   },
   "day2_lunch_sea_5": {
     "name": "私",
-    "text": "\"...How early did you get up to make all this?\""
+    "text": "\"……これ全部作るのに何時に起きたの？\""
   },
   "day2_lunch_sea_6": {
     "name": "ハン・セア",
-    "text": "\"It makes me happy when you eat it all. Don't leave anything.\""
+    "text": "\"全部食べてくれると嬉しい。残さないでね。\""
   },
   "day2_lunch_sea_7": {
     "name": "私",
-    "text": "*Sea smiles. But one thing nags at me. It's true I ate a lot of the rolled egg yesterday. But how does she remember that so clearly? Even down to the portions?*"
+    "text": "*セアが微笑む。でも一つ気になることがある。昨日卵焼きをたくさん食べたのは確かだ。でもなんでそこまで正確に覚えているんだろう。量まで把握して？*"
   },
   "day2_lunch_sea_8": {
     "name": "私",
-    "text": "*...She must just be observant. Class president and all.*"
+    "text": "*……観察眼が鋭いだけだろう。学級委員だし。*"
   },
   "day2_lunch_sea_9": {
     "name": "私",
-    "text": "*We talked about all sorts of things while eating. Music, games, movies...*"
+    "text": "*食べながらいろんな話をした。音楽、ゲーム、映画……*"
   },
   "day2_lunch_sea_10": {
     "name": "私",
-    "text": "*Sea hands me one earbud. A soft song plays. ...Sharing earbuds brings us naturally closer together. Sea's hair smells like shampoo.*"
+    "text": "*セアが片方のイヤホンを渡してくれる。柔らかな曲が流れてくる。……イヤホンを共有すると自然と距離が縮まる。セアの髪からシャンプーの香りがする。*"
   },
   "day2_lunch_sea_11": {
     "name": "ハン・セア",
-    "text": "\"...Nice, right?\""
+    "text": "\"……いいでしょ？\""
   },
   "day2_lunch_sea_12": {
     "name": "私",
-    "text": "\"Yeah, it's good.\""
+    "text": "\"うん、いいね。\""
   },
   "day2_lunch_sea_13": {
     "name": "ハン・セア",
-    "text": "\"...{name}, do you hang out with a lot of other people besides me?\""
+    "text": "\"……{name}って、私以外にも仲いい人いるの？\""
   },
   "day2_lunch_sea_14": {
     "name": "私",
-    "text": "\"It's only been two days, so...\""
+    "text": "\"まだ二日目だから……\""
   },
   "day2_lunch_sea_15": {
     "name": "私",
-    "text": "*Sea gently grabs the back of my hand. Soft, but... fingers that have no intention of letting go.*"
+    "text": "*セアがそっと私の手の甲を掴む。柔らかいけど……離す気のない指。*"
   },
   "day2_lunch_sea_16": {
     "name": "ハン・セア",
-    "text": "\"...Wherever {name} is, whatever you're doing, I'll always know. That's what friends are for.\""
+    "text": "\"……{name}がどこにいても、何をしていても、私はいつもわかるよ。それが友達ってものでしょ。\""
   },
   "day2_lunch_sea_17": {
     "name": "私",
-    "text": "*Sea said it softly. She's smiling. But whether those eyes are smiling too... I can't quite tell. When I tried to gently pull my hand back, Sea held it tighter. ...Then naturally let go after a second, smiling.*"
+    "text": "*セアが静かに言った。笑っている。でもその目も笑っているかどうか……よくわからない。そっと手を引こうとしたら、セアがより強く握った。……それからすぐ自然に離した。笑いながら。*"
   },
   "day2_lunch_sea_18": {
     "name": "ハン・セア",
-    "text": "\"...I'm joking. I just mean I like you, {name}.\""
+    "text": "\"……冗談だよ。ただ{name}のことが好きってこと。\""
   },
   "day2_lunch_sea_19": {
     "name": "私",
-    "text": "*What was that just now? ...It was just a close friend messing around, probably.*"
+    "text": "*今のはどういう意味だったんだろう。……仲のいい友達がふざけただけ、だよね。たぶん。*"
   },
   "day2_lunch_yuna_1": {
     "name": "私",
-    "text": "*I walk into the library to find Yuna tinkering with a camera at a desk.*"
+    "text": "*図書室に入るとユナが机でカメラをいじっていた。*"
   },
   "day2_lunch_yuna_2": {
-    "name": "私",
-    "text": "*写真をめくっていたら、また変な写真が目に入る。職員室の前に書類の山が積まれた写真。……これをなぜ撮ったんだろう？*"
+    "name": "ユナ",
+    "text": "\"先輩！来てくれたんですね？\""
   },
   "day2_lunch_yuna_3": {
-    "name": "チェ・ユナ",
-    "text": "\"あ、それは間違いです！ 消しますね！\""
+    "name": "ユナ",
+    "text": "\"今日撮ったもの見てください。学校の裏の丘が綺麗に撮れたんですよ。\""
   },
   "day2_lunch_yuna_4": {
     "name": "私",
-    "text": "\"This came out really well. The composition is great.\""
+    "text": "\"これすごくいいね。構図もいい。\""
   },
   "day2_lunch_yuna_5": {
     "name": "私",
-    "text": "*The hill, the gym, the field... Nice shots. Lots of frames where the light came in beautifully.*"
+    "text": "*丘、体育館、グラウンド……いい写真だ。光がきれいに入ったコマが多い。*"
   },
   "day2_lunch_yuna_6": {
-    "name": "チェ・ユナ",
-    "text": "\"Really?! The light was good today. This time of day is the prettiest.\""
+    "name": "ユナ",
+    "text": "\"ほんとですか？！今日は光がよかったんです。この時間帯が一番綺麗なんですよ。\""
   },
   "day2_lunch_yuna_7": {
     "name": "私",
-    "text": "\"You got the cat too. A tabby?\""
+    "text": "\"猫も撮ってるね。キジトラ？\""
   },
   "day2_lunch_yuna_8": {
-    "name": "チェ・ユナ",
-    "text": "\"Yes! I gave him a can of tuna today and he loved it. Look at this expression.\""
+    "name": "ユナ",
+    "text": "\"はい！今日ツナ缶あげたらすごく喜んでくれて。この表情見てください。\""
   },
   "day2_lunch_yuna_9": {
     "name": "私",
-    "text": "*I keep flipping through the photos... but as I get further, the tone of the pictures changes. A stack of documents in front of the faculty office. The medicine cabinet in the nurse's office. Stairs descending underground.*"
+    "text": "*写真をめくり続けると……途中から雰囲気が変わった。職員室前に積まれた書類の束。保健室の薬品棚。地下へ降りる階段。*"
   },
   "day2_lunch_yuna_10": {
     "name": "私",
-    "text": "\"This one... isn't a landscape photo.\""
+    "text": "\"これ……風景写真じゃないね。\""
   },
   "day2_lunch_yuna_11": {
-    "name": "チェ・ユナ",
-    "text": "\"Oh, that was... an accident. I'll delete it.\""
+    "name": "ユナ",
+    "text": "\"あ、それは……偶然撮れちゃったやつで。消しますね。\""
   },
   "day2_lunch_yuna_12": {
     "name": "私",
-    "text": "*Yuna hurriedly closes the camera. The same girl who was happily talking about the cat a moment ago suddenly went rigid.*"
+    "text": "*ユナが慌ててカメラを閉じる。猫の話で嬉しそうにしていたのに、急に固まってしまった。*"
   },
   "day2_lunch_yuna_13": {
-    "name": "チェ・ユナ",
-    "text": "\"Senpai... you'll come again tomorrow, right? ...Please come.\""
+    "name": "ユナ",
+    "text": "\"先輩……明日もまた来てくれますよね？……来てください。\""
   },
   "day2_lunch_yuna_14": {
     "name": "私",
-    "text": "*There was weight on 'please.' ...Why so serious?*"
+    "text": "*「来てください」に重みがあった。……なんでそんなに真剣なんだろう。*"
   },
   "day2_lunch_riin_1": {
     "name": "私",
-    "text": "*I go to the nurse's office and Nurse Riin greets me as if she'd been expecting me.*"
+    "text": "*保健室に行くとリイン先生が待っていたかのように迎えてくれた。*"
   },
   "day2_lunch_riin_2": {
-    "name": "保健教師",
-    "text": "\"血圧、視力、体重……いろいろチェックさせてね。腕、まくってくれる？\""
+    "name": "リイン",
+    "text": "\"{name}、ちょうどよかった。ちょうどあなたのことを考えてたところなの。\""
   },
   "day2_lunch_riin_3": {
-    "name": "私",
-    "text": "*健康診断にしては……質問がちょっと変だった。『睡眠パターン』、『薬物アレルギー』、『家族の病歴』まで。養護教諭がここまで聞くものなのか？*"
+    "name": "リイン",
+    "text": "\"転校生のあなたの健康診断記録がまだないから。簡単にチェックさせてね。\""
   },
   "day2_lunch_riin_4": {
     "name": "私",
-    "text": "*She wraps the blood pressure cuff around my arm. Nurse Riin's hands are cold. But unexpectedly gentle.*"
+    "text": "*腕に血圧計を巻かれた。リイン先生の手は冷たい。でも意外と優しい。*"
   },
   "day2_lunch_riin_5": {
-    "name": "カン・リイン",
-    "text": "\"Blood pressure normal. Eyesight... both eyes are good. Weight... healthy for your age.\""
+    "name": "リイン",
+    "text": "\"血圧正常。視力……両目良好。体重……年齢的に健康的ね。\""
   },
   "day2_lunch_riin_6": {
-    "name": "カン・リイン",
-    "text": "\"That's good. ...But let me ask a few more things. The transfer student form is a bit detailed.\""
+    "name": "リイン",
+    "text": "\"いいわ。……でも、もう少し聞かせて。転校生の書類は少し詳しいから。\""
   },
   "day2_lunch_riin_7": {
-    "name": "カン・リイン",
-    "text": "\"Sleep patterns? How many hours do you sleep on average? Do you dream often?\""
+    "name": "リイン",
+    "text": "\"睡眠パターンは？平均何時間寝てる？よく夢を見る？\""
   },
   "day2_lunch_riin_8": {
     "name": "私",
-    "text": "\"About 7 hours. Dreams... sometimes?\""
+    "text": "\"7時間くらいです。夢は……たまに。\""
   },
   "day2_lunch_riin_9": {
-    "name": "カン・リイン",
-    "text": "\"Any drug allergies? On the sedative side?\""
+    "name": "リイン",
+    "text": "\"薬のアレルギーは？鎮静系は？\""
   },
   "day2_lunch_riin_10": {
     "name": "私",
-    "text": "*For a health check, the questions are a bit detailed. Does a school nurse really ask about sleep patterns and sedative allergies?*"
+    "text": "*健康診断にしては少し詳しすぎる質問だ。学校の保健師が睡眠パターンや鎮静剤のアレルギーまで聞くものなんだろうか。*"
   },
   "day2_lunch_riin_11": {
     "name": "私",
-    "text": "*Nurse Riin is writing something down. It looks like a health record... but the form seems a bit different from the usual kind.*"
+    "text": "*リイン先生が何かを書き留めている。健康診断票のように見えるけど……書式が普通のものとちょっと違う気がする。*"
   },
   "day2_lunch_riin_12": {
-    "name": "カン・リイン",
-    "text": "\"All done. You're healthy. No issues.\""
+    "name": "リイン",
+    "text": "\"終わりよ。健康ね。問題なし。\""
   },
   "day2_lunch_riin_13": {
-    "name": "カン・リイン",
-    "text": "\"...Come by often in the future. I'll take good care of you.\""
+    "name": "リイン",
+    "text": "\"……これからもよく来てね。ちゃんと診てあげるから。\""
   },
   "day2_lunch_riin_14": {
     "name": "私",
-    "text": "*Nurse Riin smiles and holds the door open for me. She's a kind person.*"
+    "text": "*リイン先生が笑顔でドアを開けてくれた。優しい人だ。*"
   },
   "day2_lunch_rooftop_1": {
     "name": "私",
-    "text": "*I'm climbing the stairs to go up to the rooftop when I hear a voice from the middle landing.*"
+    "text": "*屋上に向かおうと階段を上っていたら、踊り場から声が聞こえた。*"
   },
   "day2_lunch_rooftop_2": {
     "name": "私",
-    "text": "*……ウンス先生の声だ。「……あの子の状態は安定しています。予定通り進めても……」電話しているようだ。何の話だろう？*"
+    "text": "*……ウンス先生の声だ。電話中だ。*"
   },
   "day2_lunch_rooftop_3": {
-    "name": "私",
-    "text": "*気配を出したら先生が慌てて電話を切った。ただの業務連絡だろう。*"
+    "name": "担任",
+    "text": "\"……あの子の状態は安定しています。予定通り進められます……\""
   },
   "day2_lunch_rooftop_4": {
     "name": "私",
-    "text": "*What is she talking about? Whose situation? When I made a noise, the teacher quickly hung up. Her expression froze for a moment when she turned around, then immediately relaxed.*"
+    "text": "*何の話をしているんだろう。誰の話？物音を立てたら先生がすぐに電話を切った。振り向いた瞬間、表情が一瞬固まって……すぐ和らいだ。*"
   },
   "day2_lunch_rooftop_5": {
-    "name": "パク・ウンス",
-    "text": "\"{name}? ...Going to the rooftop? You should have just eaten in the classroom.\""
+    "name": "担任",
+    "text": "\"{name}？……屋上に行くの？教室で食べればよかったのに。\""
   },
   "day2_lunch_rooftop_6": {
     "name": "私",
-    "text": "\"I wanted to get some fresh air.\""
+    "text": "\"外の空気が吸いたくて。\""
   },
   "day2_lunch_rooftop_7": {
-    "name": "パク・ウンス",
-    "text": "\"Sure, getting some air is good. But don't go near the railing. It's dangerous.\""
+    "name": "担任",
+    "text": "\"そう、外の空気はいいものね。でも柵に近づかないでね。危ないから。\""
   },
   "day2_lunch_rooftop_8": {
     "name": "私",
-    "text": "*The teacher smiled and passed by. It was probably just a work call. ...But what does 'proceed as planned' mean?*"
+    "text": "*先生が微笑んで通り過ぎた。たぶん仕事の電話だっただけだ。……でも「予定通り」ってどういう意味だろう。*"
   },
   "day2_lunch_rooftop_9": {
     "name": "私",
-    "text": "*I've reached the rooftop. The wind is blowing. A bit colder than yesterday.*"
+    "text": "*屋上に着いた。風が吹いている。昨日より少し寒い。*"
   },
   "day2_lunch_rooftop_10": {
     "name": "私",
-    "text": "*I don't want to think about it. I'll just enjoy the breeze.*"
+    "text": "*余計なことは考えないようにしよう。ただ風にあたろう。*"
   },
   "day2_lunch_end": {
     "name": "私",

@@ -1,0 +1,85 @@
+import sys
+sys.path.insert(0, 'assets/js/i18n')
+from translate_helper import apply_translations
+
+T = {}
+
+T['day5_lunch_start_3'] = {'name': 'Moi', 'text': "*Je me suis lev\u00e9(e) avant que Sea puisse dire 'mangeons ensemble'.*"}
+T['day5_lunch_start_4'] = {'name': 'Moi', 'text': "\"Toilettes.\""}
+T['day5_lunch_start_5'] = {'name': 'Moi', 'text': "*Je n'ai pas regard\u00e9 Sea. J'avais peur de m'arr\u00eater si je le faisais.*"}
+T['day5_lunch_start_6'] = {'name': 'Moi', 'text': "*J'ai quitt\u00e9 la salle. Le couloir. \u00c0 gauche. Vers l'ancien b\u00e2timent.*"}
+T['day5_lunch_start_7'] = {'name': 'Moi', 'text': "*Je marche. Je veux courir mais je dois marcher. Courir attire l'attention. J'ai serr\u00e9 la bandouli\u00e8re de mon sac. Mes paumes sont moites.*"}
+T['day5_lunch_start_8'] = {'name': 'Moi', 'text': "*Le couloir est long. Interminablement long. Je vois la passerelle vers l'ancien b\u00e2timent. J'ai regard\u00e9 derri\u00e8re moi. Personne. ...Pas encore.*"}
+T['day5_lunch_yuna_5'] = {'name': 'Moi', 'text': "\"Yuna. Tu vas bien\u00a0?\""}
+T['day5_lunch_yuna_6'] = {'name': 'Choi Yuna', 'text': "\"Pas bien. Mais... je peux bouger.\""}
+T['day5_lunch_yuna_7'] = {'name': 'Choi Yuna', 'text': "\"Il y a une sortie de secours au bout du 3\u00e8me \u00e9tage de l'ancien b\u00e2timent. C'est un chemin que Seolhwa-senpai... avait trouv\u00e9 il y a un an. Elle me l'a dit dans un r\u00eave.\""}
+T['day5_lunch_yuna_8'] = {'name': 'Choi Yuna', 'text': "\"C'est la seule voie de sortie.\""}
+T['day5_lunch_yuna_9'] = {'name': 'Choi Yuna', 'text': "\"Mais... il faut traverser ce couloir. Quelqu'un le surveille surement. ...Probablement.\""}
+T['day5_lunch_yuna_10'] = {'name': 'Moi', 'text': "\"\u00c7a va. On y va ensemble.\""}
+T['day5_lunch_yuna_11'] = {'name': 'Moi', 'text': "*Yuna acquiesce. Elle se mord fort les l\u00e8vres. Elle a peur. Mais elle bouge.*"}
+T['day5_lunch_yuna_12'] = {'name': 'Moi', 'text': "*On a commenc\u00e9 \u00e0 monter l'escalier. 1er \u00e9tage. 2\u00e8me. 3\u00e8me.*"}
+T['day5_lunch_escape_3'] = {'name': 'Moi', 'text': "*Des pas venant de derri\u00e8re. Click. Click. Des talons. Pas qu'une seule paire. Plusieurs.*"}
+T['day5_lunch_escape_4'] = {'name': 'Moi', 'text': "*...Ils ont suivi.*"}
+T['day5_lunch_escape_5'] = {'name': 'Moi', 'text': "*Je cours. J'ai commenc\u00e9 \u00e0 courir dans le couloir. Mes baskets claquent sur le carrelage. Tap-tap-tap-tap. Mon sac s'agite contre mon dos.*"}
+T['day5_lunch_escape_6'] = {'name': 'Moi', 'text': "*Un embranchement. Le couloir se divise en T.*", 'choices': ["Couloir de gauche", "Couloir de droite"]}
+T['day5_lunch_left_2'] = {'name': 'Moi', 'text': "*...Elle \u00e9tait en classe il y a un moment. Comment est-elle arriv\u00e9e ici\u00a0?*"}
+T['day5_lunch_left_3'] = {'name': 'Han Sea', 'text': "\"...O\u00f9 tu vas, {name}.\""}
+T['day5_lunch_sea_talk_1'] = {'name': 'Han Sea', 'text': "\"Sans moi\u00a0?\""}
+T['day5_lunch_sea_talk_1b'] = {'name': 'Han Sea', 'text': "\"...Tu m'abandonnes\u00a0?\""}
+T['day5_lunch_sea_talk_1c'] = {'name': 'Moi', 'text': "*La voix de Sea est froide. Ce n'est plus la voix joyeuse du Jour 1.*"}
+T['day5_lunch_sea_cb_choco_2'] = {'name': 'Han Sea', 'text': "\"Tu m'as... menti\u00a0?\""}
+T['day5_lunch_sea_cb_lunch_2'] = {'name': 'Han Sea', 'text': "\"\u00c7a ne comptait pour rien\u00a0?\""}
+T['day5_lunch_sea_cb_vulnerability'] = {'name': 'Han Sea', 'text': "\"Dans la salle du conseil au coucher de soleil... tu avais hochard la t\u00eate quand je t'avais demand\u00e9 de rester \u00e0 mes c\u00f4t\u00e9s.\""}
+T['day5_lunch_sea_cb_vulnerability_2'] = {'name': 'Han Sea', 'text': "\"Menteur(se).\""}
+T['day5_lunch_sea_cb_default_2'] = {'name': 'Han Sea', 'text': "\"...C'\u00e9tait suffisant comme \u00e7a.\""}
+T['day5_lunch_sea_tears'] = {'name': 'Moi', 'text': "*Des larmes coulent des yeux de Sea. De vraies larmes. Ce n'est pas du jeu.*"}
+T['day5_lunch_sea_tears_2'] = {'name': 'Moi', 'text': "*...J'ai le c\u0153ur serr\u00e9. Je sais que Sea est elle aussi une victime. Un autre oiseau pi\u00e9g\u00e9 dans cette \u00e9cole.*"}
+T['day5_lunch_sea_tears_3'] = {'name': 'Moi', 'text': "*Mais je ne peux pas m'arr\u00eater.*"}
+T['day5_lunch_sea_block_mid'] = {'name': 'Han Sea', 'text': "\"Sans moi\u00a0? ...Tu m'abandonnes\u00a0?\""}
+T['day5_lunch_sea_block_mid_2'] = {'name': 'Moi', 'text': "*Sea bloque le couloir.*", 'choices': ["La pousser et passer", "Convaincre Sea"]}
+T['day5_lunch_sea_push_2'] = {'name': 'Moi', 'text': "*Derri\u00e8re moi, j'entends les pleurs de Sea. Je n'ai pas regard\u00e9 en arri\u00e8re. Parce que si je regarde, je m'arr\u00eate.*"}
+T['day5_lunch_sea_persuade'] = {'name': 'Moi', 'text': "\"Sea. Viens avec moi.\""}
+T['day5_lunch_sea_persuade_2'] = {'name': 'Moi', 'text': "*Sea s'est fig\u00e9e. Ses yeux s'\u00e9carquillent.*"}
+T['day5_lunch_sea_persuade_3'] = {'name': 'Moi', 'text': "\"Toi aussi tu es enferm\u00e9e ici. Par Mme Eunsu. Par cette \u00e9cole.\""}
+T['day5_lunch_sea_persuade_4'] = {'name': 'Han Sea', 'text': "\"...Dehors il n'y a rien pour moi. Je ne connais que \u00e7a.\""}
+T['day5_lunch_sea_persuade_5'] = {'name': 'Moi', 'text': "\"Quand m\u00eame. C'est mieux qu'ici.\""}
+T['day5_lunch_sea_persuade_6'] = {'name': 'Han Sea', 'text': "\"...Tu pars vraiment sans moi\u00a0?\""}
+T['day5_lunch_sea_persuade_7'] = {'name': 'Moi', 'text': "*Un bref silence. Long et lourd.*"}
+T['day5_lunch_sea_persuade_8'] = {'name': 'Han Sea', 'text': "\"...\u00c7a va. Pars. Vite.\""}
+T['day5_lunch_sea_persuade_9'] = {'name': 'Moi', 'text': "*'...Ne regarde pas en arri\u00e8re.' Les derniers mots de Sea r\u00e9sonnent dans le couloir. J'ai commenc\u00e9 \u00e0 courir. Je n'ai pas regard\u00e9 en arri\u00e8re.*"}
+T['day5_lunch_right_2'] = {'name': 'Moi', 'text': "*Au milieu du couloir, l'infirmi\u00e8re Riin est debout. Blouse blanche. Une main dans la poche.*"}
+T['day5_lunch_right_3'] = {'name': 'Kang Riin', 'text': "\"On se retrouve ici.\""}
+T['day5_lunch_riin_talk_1'] = {'name': 'Kang Riin', 'text': "\"{name}, l'examen n'est pas encore termin\u00e9.\""}
+T['day5_lunch_riin_talk_1b'] = {'name': 'Moi', 'text': "*L'infirmi\u00e8re sort la main de sa poche. Elle tient une seringue.*"}
+T['day5_lunch_riin_cb_drink_2'] = {'name': 'Kang Riin', 'text': "\"...Tu en veux encore une tasse\u00a0?\""}
+T['day5_lunch_riin_cb_drink_3'] = {'name': 'Moi', 'text': "*La main de l'infirmi\u00e8re Riin tremble. La main qui tient la seringue.*"}
+T['day5_lunch_riin_cb_met_2'] = {'name': 'Kang Riin', 'text': "\"...Tu le savais\u00a0? Tu \u00e9tais le(la) premier(e) \u00e9l\u00e8ve comme toi que j'avais.\""}
+T['day5_lunch_riin_cb_default_2'] = {'name': 'Kang Riin', 'text': "\"...Aucun \u00e9l\u00e8ve \u00e0 qui j'ai fait une piqure ne s'est plaint.\""}
+T['day5_lunch_riin_dodge_2'] = {'name': 'Moi', 'text': "*...Pas touch\u00e9(e). De justesse.*"}
+T['day5_lunch_riin_dodge_3'] = {'name': 'Moi', 'text': "*Derri\u00e8re moi, j'ai entendu un bruit de verre bris\u00e9. Elle a d\u00fb laisser tomber la seringue.*"}
+T['day5_lunch_riin_confront_3'] = {'name': 'Moi', 'text': "*L'infirmi\u00e8re pousse un soupir. Long et profond. Comme si quelque chose se vidait de son corps.*"}
+T['day5_lunch_riin_confront_4'] = {'name': 'Kang Riin', 'text': "\"...Moi aussi j'avais refus\u00e9 au d\u00e9but. Quand le conseil d'administration l'a ordonn\u00e9.\""}
+T['day5_lunch_riin_confront_5'] = {'name': 'Kang Riin', 'text': "\"Mais une fois qu'on commence... on ne peut plus s'arr\u00eater.\""}
+T['day5_lunch_riin_confront_6'] = {'name': 'Kang Riin', 'text': "\"...Pars. Je suis \u00e9puis\u00e9e maintenant aussi.\""}
+T['day5_lunch_riin_confront_7'] = {'name': 'Moi', 'text': "*L'infirmi\u00e8re Riin pose la seringue sur le sol. Le verre fait un son de tap sur le carrelage. Elle s'appuie contre le mur et s'assied. Ferme les yeux. J'ai couru. Pass\u00e9 l'infirmi\u00e8re Riin. Vers la sortie de secours.*"}
+T['day5_lunch_continue_3'] = {'name': 'Moi', 'text': "*Presque arriv\u00e9(e)\u00a0! ...Je me suis arr\u00eat\u00e9(e).*"}
+T['day5_lunch_continue_4'] = {'name': 'Moi', 'text': "*Mme Eunsu se tient devant la sortie de secours. Les bras crois\u00e9s. Elle attendait. Comme si elle avait \u00e9t\u00e9 l\u00e0 depuis le d\u00e9but.*"}
+T['day5_lunch_eunsu_face_2'] = {'name': 'Moi', 'text': "*La professeure me regarde. Des yeux tristes.*"}
+T['day5_lunch_eunsu_face_3'] = {'name': 'Professeure principale', 'text': "\"...Tu es arriv\u00e9(e) jusque l\u00e0.\""}
+T['day5_lunch_eunsu_cb_app_2'] = {'name': 'Professeure principale', 'text': "\"...J'avais pens\u00e9 \u00e0 ce moment-l\u00e0 quel(le) bon(ne) \u00e9l\u00e8ve tu \u00e9tais. C'\u00e9tait sinc\u00e8re.\""}
+T['day5_lunch_eunsu_cb_visit_2'] = {'name': 'Professeure principale', 'text': "\"D\u00e8s ce moment-l\u00e0... ta professeure a senti que tu \u00e9tais sp\u00e9cial(e). Tu \u00e9tais diff\u00e9rent(e) des autres \u00e9l\u00e8ves transf\u00e9r\u00e9s.\""}
+T['day5_lunch_eunsu_cb_default_2'] = {'name': 'Professeure principale', 'text': "\"...C'\u00e9tait pour te prot\u00e9ger.\""}
+T['day5_lunch_eunsu_plea'] = {'name': 'Moi', 'text': "*Des rides se forment autour des yeux de Mme Eunsu. Un visage fatigu\u00e9. On dirait qu'elle n'a pas dormi.*"}
+T['day5_lunch_eunsu_plea_2'] = {'name': 'Professeure principale', 'text': "\"...Tu ne peux pas rester avec moi\u00a0?\""}
+T['day5_lunch_eunsu_plea_3'] = {'name': 'Professeure principale', 'text': "\"Dehors... personne ne pensera \u00e0 toi autant.\""}
+T['day5_lunch_eunsu_plea_4'] = {'name': 'Professeure principale', 'text': "\"Tu es en s\u00e9curit\u00e9 ici. Ta professeure te prot\u00e9gera de tout.\""}
+T['day5_lunch_eunsu_plea_5'] = {'name': 'Moi', 'text': "*La voix de la professeure tremble. ...C'est sinc\u00e8re. Cette personne, tord\u00e9e qu'elle soit, croit sinc\u00e8rement qu'elle 'prot\u00e8ge'. ...Mais est-ce qu'elle ne sait pas que sa 'protection' est une prison\u00a0? Ou est-ce qu'elle sait mais ne peut pas s'arr\u00eater\u00a0?*"}
+T['day5_lunch_eunsu_break_2'] = {'name': 'Moi', 'text': "*J'ai pouss\u00e9 la sortie de secours. Une porte lourde. J'ai mis toutes mes forces.*"}
+T['day5_lunch_eunsu_break_3'] = {'name': 'Moi', 'text': "*...Elle s'est ouverte.*"}
+T['day5_lunch_eunsu_break_4'] = {'name': 'Moi', 'text': "*Un air froid me gifle le visage. Il pleut. Des gouttes de pluie me heurtent le visage.*"}
+T['day5_lunch_eunsu_break_5'] = {'name': 'Moi', 'text': "*Au-del\u00e0 de la sortie de secours, il y a de la lumi\u00e8re. Un ciel nuageux, mais... la lumi\u00e8re du monde ext\u00e9rieur.*"}
+T['day5_lunch_eunsu_break_6'] = {'name': 'Moi', 'text': "*La sortie.*"}
+T['day5_lunch_eunsu_stay_3'] = {'name': 'Professeure principale', 'text': "\"C'est comme \u00e7a que \u00e7a doit \u00eatre. Ta professeure te prot\u00e9gera de tout.\""}
+T['day5_lunch_eunsu_stay_4'] = {'name': 'Moi', 'text': "*Mme Eunsu a pris ma main. Une main chaude. Une grande main. Une main qui enveloppe doucement. ...Impossible de revenir en arri\u00e8re. \u00c0 l'instant o\u00f9 j'ai pris cette main.*"}
+
+apply_translations('day5_lunch.json', T)

@@ -1,168 +1,168 @@
 {
-    "day3_lunch_start": {
-        "name": "Yo",
-        "text": "*Hora del almuerzo. Hay una nota en el cajón de mi pupitre.*"
-    },
-    "day3_lunch_note": {
-        "name": "Yo",
-        "text": "*'선배, 점심때 옥상으로 와주세요. 꼭 혼자서요. - 유나'*"
-    },
-    "day3_lunch_note_2": {
-        "name": "Yo",
-        "text": "*...분위기가 심상치 않다. 어떻게 할까?*"
-    },
-    "day3_lunch_choice": {
-        "name": "Yo",
-        "text": "*점심시간이다.*",
-        "choices": [
-            "옥상으로 간다",
-            "세아와 점심을 먹는다",
-            "보건실에 들른다",
-            "교실에 남는다"
-        ]
-    },
-    "day3_lunch_rooftop": {
-        "name": "Choi Yuna",
-        "text": "\"Senpai... viniste. Gracias.\""
-    },
-    "day3_lunch_rooftop_2": {
-        "name": "Choi Yuna",
-        "text": "\"Yo... ya no puedo guardarme esto. Solo te lo enseñaré a ti. Esto...\""
-    },
-    "day3_lunch_rooftop_3": {
-        "name": "Yo",
-        "text": "*Yuna me entrega una tarjeta de memoria con las manos temblorosas. \"Lo que pasó en esta escuela... está todo aquí.\"*"
-    },
-    "day3_lunch_rooftop_4": {
-        "name": "Choi Yuna",
-        "text": "\"Los estudiantes de intercambio... fueron desapareciendo uno por uno. Lo fotografié todo. Tengo pruebas. Senpai, por favor créeme...\""
-    },
-    "day3_lunch_rooftop_5": {
-        "name": "Yo",
-        "text": "*...¿Qué? ¿Desaparecieron? Espera — la taquilla borrada, los amigos de la antigua escuela ilocalizable, Seolhwa que no aparece en la lista de asistencia...*"
-    },
-    "day3_lunch_rooftop_6": {
-        "name": "Yo",
-        "text": "*...! 갑자기 옥상 문이 '쾅' 소리와 함께 닫혔다.*"
-    },
-    "day3_lunch_door_locked": {
-        "name": "Yo",
-        "text": "*...¡! De repente la puerta de la azotea se cierra de un PORTAZO.*"
-    },
-    "day3_lunch_door_locked_2": {
-        "name": "Yo",
-        "text": "*Empujo la puerta. No se mueve. Cerrada desde fuera. ¿Quién...?*"
-    },
-    "day3_lunch_door_choice": {
-        "name": "Yo",
-        "text": "*¿Qué hago?*",
-        "choices": [
-            "Golpear la puerta y gritar pidiendo ayuda",
-            "Quedarse en silencio (calmar a Yuna)"
-        ]
-    },
-    "day3_lunch_door_bang": {
-        "name": "Yo",
-        "text": "*Golpeé la puerta. Después de un momento, un 'clic' — y se abrió. Nadie fuera.*"
-    },
-    "day3_lunch_door_wait": {
-        "name": "Yo",
-        "text": "*Sujeté a Yuna por los hombros y la calmé. Unos 5 minutos después, la puerta se abrió sola. ...¿Sola? Nadie fuera.*"
-    },
-    "day3_lunch_door_open": {
-        "name": "Yo",
-        "text": "*Me guardo la tarjeta de memoria bien adentro. Esto... necesito revisarlo a solas más tarde.*"
-    },
-    "day3_lunch_sea": {
-        "name": "Han Sea",
-        "text": "\"오늘은 나랑 먹지? 도시락 특별히 신경 썼어.\""
-    },
-    "day3_lunch_sea_2": {
-        "name": "Yo",
-        "text": "*세아가 웃고 있다. ...근데 이 웃음이 어제랑 다르다. 뭔가를 숨기고 있는 웃음.*"
-    },
-    "day3_lunch_sea_3": {
-        "name": "Han Sea",
-        "text": "\"...요즘 유나랑 자주 만나더라?\""
-    },
-    "day3_lunch_sea_4": {
-        "name": "Yo",
-        "text": "\"유나? 별로 안 만나는데.\""
-    },
-    "day3_lunch_sea_5": {
-        "name": "Han Sea",
-        "text": "\"...그래?\""
-    },
-    "day3_lunch_sea_6": {
-        "name": "Han Sea",
-        "text": "\"나한테 숨기는 거 없지, {name}?\""
-    },
-    "day3_lunch_sea_7": {
-        "name": "Yo",
-        "text": "*눈이 웃고 있지 않다. 확실하다. ...이 사람이 무섭다고 느낀 건 이번이 처음이다.*"
-    },
-    "day3_lunch_sea_8": {
-        "name": "Han Sea",
-        "text": "\"...농담이야. 먹어.\""
-    },
-    "day3_lunch_riin": {
-        "name": "Yo",
-        "text": "*보건실에 갔다. 어젯밤 꿈 때문인지 머리가 아프다.*"
-    },
-    "day3_lunch_riin_2": {
-        "name": "Kang Riin",
-        "text": "\"얼굴색이 안 좋은데? 또 잠을 못 잤어?\""
-    },
-    "day3_lunch_riin_3": {
-        "name": "Kang Riin",
-        "text": "\"오늘은 특별히... 선생님이 만든 건강 음료 줄까? 비타민이랑 허브 블렌딩이야.\""
-    },
-    "day3_lunch_riin_4": {
-        "name": "Yo",
-        "text": "*연보라색 액체가 담긴 컵을 건넨다. ...뭔가 미세하게 약품 같은 냄새.*"
-    },
-    "day3_lunch_riin_choice": {
-        "name": "Yo",
-        "text": "*마실까?*",
-        "choices": [
-            "마신다",
-            "거절한다"
-        ]
-    },
-    "day3_lunch_riin_drink": {
-        "name": "Yo",
-        "text": "*마셨다. ...맛은 그럭저럭인데, 혀끝에 쓴맛이 남는다.*"
-    },
-    "day3_lunch_riin_drink_2": {
-        "name": "Kang Riin",
-        "text": "\"착하네. 금방 효과가 날 거야.\""
-    },
-    "day3_lunch_riin_refuse": {
-        "name": "Kang Riin",
-        "text": "\"...그래, 억지로 권하진 않을게.\""
-    },
-    "day3_lunch_riin_refuse_2": {
-        "name": "Yo",
-        "text": "*리인 선생님이 아쉬운 표정으로 컵을 가져간다.*"
-    },
-    "day3_lunch_alone": {
-        "name": "Yo",
-        "text": "*교실에 남아서 혼자 먹는다. 다른 학생들이 모두 나가서 교실이 텅 비어있다.*"
-    },
-    "day3_lunch_alone_2": {
-        "name": "Yo",
-        "text": "*...뒷자리를 본다. 설화의 자리. 책상 위에 뭔가 있다. 연필로 쓴 글씨. 흐릿하지만 읽을 수 있다.*"
-    },
-    "day3_lunch_alone_3": {
-        "name": "Yo",
-        "text": "*'여기서 나가'*"
-    },
-    "day3_lunch_alone_4": {
-        "name": "Yo",
-        "text": "*...누가 쓴 거지? 장난인가? ...지우개로 지운 흔적이 있다. 여러 번 쓰고 지운 것 같다.*"
-    },
-    "day3_lunch_end": {
-        "name": "Yo",
-        "text": "*De vuelta al aula. El corazón no deja de latirme a toda velocidad.*"
-    }
+  "day3_lunch_start": {
+    "name": "Yo",
+    "text": "*Hora del almuerzo. Hay una nota en el cajón de mi pupitre.*"
+  },
+  "day3_lunch_note": {
+    "name": "Yo",
+    "text": "*'Hoy en el almuerzo, ve al pasillo del fondo de la tercera planta, edificio antiguo. Hay algo que debo contarte. — Yuna'*"
+  },
+  "day3_lunch_note_2": {
+    "name": "Yo",
+    "text": "*...Una nota de Yuna. ¿Cuándo la puso aquí?*"
+  },
+  "day3_lunch_choice": {
+    "name": "Yo",
+    "text": "*Almuerzo — ¿adónde voy?*",
+    "choices": [
+      "Seguir el mensaje de Yuna — ir al pasillo del fondo",
+      "Comer con Sea como de costumbre",
+      "Ir a ver a Riin",
+      "Comer solo"
+    ]
+  },
+  "day3_lunch_rooftop": {
+    "name": "Yuna",
+    "text": "\"...Vino. Gracias, senpai.\""
+  },
+  "day3_lunch_rooftop_2": {
+    "name": "Yuna",
+    "text": "\"Ya no puedo seguir cargando esto sola. Solo se lo voy a mostrar a usted, senpai.\""
+  },
+  "day3_lunch_rooftop_3": {
+    "name": "Yo",
+    "text": "*Yuna me tiende una tarjeta de memoria con manos temblorosas. \"Lo que pasó en esta escuela... está todo aquí.\"*"
+  },
+  "day3_lunch_rooftop_4": {
+    "name": "Yuna",
+    "text": "\"Los estudiantes de traslado desaparecieron uno a uno. Lo fotografié todo. Es evidencia. Senpai, por favor créame.\""
+  },
+  "day3_lunch_rooftop_5": {
+    "name": "Yo",
+    "text": "*...¿Qué? ¿Desaparecieron? Espera — el casillero raspado, los amigos de la antigua escuela a los que no puedo contactar, Seolhwa sin aparecer en la lista de asistencia...*"
+  },
+  "day3_lunch_rooftop_6": {
+    "name": "Yo",
+    "text": "*...! De repente la puerta de la azotea se cerró de golpe con un BANG.*"
+  },
+  "day3_lunch_door_locked": {
+    "name": "Yo",
+    "text": "*Empujo la puerta. No cede. Cerrada desde fuera. ¿Quién...?*"
+  },
+  "day3_lunch_door_locked_2": {
+    "name": "Yuna",
+    "text": "\"...! Senpai, se enteraron. Alguien nos estaba vigilando...\""
+  },
+  "day3_lunch_door_choice": {
+    "name": "Yo",
+    "text": "*¿Qué hago?*",
+    "choices": [
+      "Golpear la puerta y pedir ayuda a gritos",
+      "Quedarme callado (calmar a Yuna)"
+    ]
+  },
+  "day3_lunch_door_bang": {
+    "name": "Yo",
+    "text": "*Aporreé la puerta. Un momento después, un 'clic' — y se abrió. Nadie afuera.*"
+  },
+  "day3_lunch_door_wait": {
+    "name": "Yo",
+    "text": "*Le puse las manos en los hombros a Yuna y la calmé. Unos cinco minutos después, la puerta se abrió sola. ...¿Sola? Nadie afuera.*"
+  },
+  "day3_lunch_door_open": {
+    "name": "Yo",
+    "text": "*Me metí la tarjeta de memoria bien guardada en el bolsillo. Esto... necesito revisarlo solo más tarde.*"
+  },
+  "day3_lunch_sea": {
+    "name": "Han Sea",
+    "text": "\"Hoy comes conmigo, ¿verdad? Hoy me esmeré especialmente con el almuerzo.\""
+  },
+  "day3_lunch_sea_2": {
+    "name": "Yo",
+    "text": "*Sea está esperando en el aula. Con una fiambrera preparada.*"
+  },
+  "day3_lunch_sea_3": {
+    "name": "Han Sea",
+    "text": "\"Hoy también hay bastante. Come bien.\""
+  },
+  "day3_lunch_sea_4": {
+    "name": "Yo",
+    "text": "*Sea abre la fiambrera. Los mismos platos de siempre.*"
+  },
+  "day3_lunch_sea_5": {
+    "name": "Han Sea",
+    "text": "*Tortilla enrollada, salchichas, bolas de arroz. Perfectamente ordenados.*"
+  },
+  "day3_lunch_sea_6": {
+    "name": "Han Sea",
+    "text": "*...Los mismos de ayer. Y de antes de ayer.*"
+  },
+  "day3_lunch_sea_7": {
+    "name": "Yo",
+    "text": "\"Sea, ¿siempre preparas lo mismo?\""
+  },
+  "day3_lunch_sea_8": {
+    "name": "Han Sea",
+    "text": "\"¿A que sí? Son tus favoritos. Sabía que te gustarían.\""
+  },
+  "day3_lunch_riin": {
+    "name": "Yo",
+    "text": "*La enfermería. Riin está en su mesa, como siempre.*"
+  },
+  "day3_lunch_riin_2": {
+    "name": "Kang Riin",
+    "text": "\"Vaya, hoy también has venido. ¿Estás bien?\""
+  },
+  "day3_lunch_riin_3": {
+    "name": "Riin",
+    "text": "\"Sí, solo quería pasar.\""
+  },
+  "day3_lunch_riin_4": {
+    "name": "Kang Riin",
+    "text": "\"Qué bien. Siéntate. Te preparo té.\""
+  },
+  "day3_lunch_riin_choice": {
+    "name": "Yo",
+    "text": "*Riin saca una taza. Té de hierbas. El mismo olor de siempre.*",
+    "choices": [
+      "Beber el té",
+      "Rechazarlo"
+    ]
+  },
+  "day3_lunch_riin_drink": {
+    "name": "Yo",
+    "text": "*Bebo el té. Está caliente. Tiene un sabor dulce.*"
+  },
+  "day3_lunch_riin_drink_2": {
+    "name": "Riin",
+    "text": "*...¿Por qué hoy huele diferente? No a manzanilla. Un olor más dulce, un poco extraño.*"
+  },
+  "day3_lunch_riin_refuse": {
+    "name": "Riin",
+    "text": "\"No, hoy no, gracias.\""
+  },
+  "day3_lunch_riin_refuse_2": {
+    "name": "Kang Riin",
+    "text": "\"¿Ah sí? De acuerdo. Cuéntame si en algún momento no te encuentras bien.\""
+  },
+  "day3_lunch_alone": {
+    "name": "Yo",
+    "text": "*La azotea. Sola.*"
+  },
+  "day3_lunch_alone_2": {
+    "name": "Yo",
+    "text": "*El viento sopla. Los pétalos de cerezo flotan.*"
+  },
+  "day3_lunch_alone_3": {
+    "name": "Yo",
+    "text": "*...Hoy también los mismos cerezos. El mismo viento. El mismo cielo.*"
+  },
+  "day3_lunch_alone_4": {
+    "name": "Yo",
+    "text": "*Pero algo es diferente. No sé el qué.*"
+  },
+  "day3_lunch_end": {
+    "name": "Yo",
+    "text": "*Volví al aula. El corazón no para de acelerarse.*"
+  }
 }

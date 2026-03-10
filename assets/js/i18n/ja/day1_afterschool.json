@@ -1,333 +1,333 @@
 {
   "day1_after_start": {
     "name": "私",
-    "text": "*チャイムが鳴った。夕焼けが教室を染めている。初日にしては悪くなかった。*"
+    "text": "*最後の授業が終わった。チャイムが鳴り、みんないっせいに立ち上がる。*"
   },
   "day1_after_start_2": {
     "name": "私",
-    "text": "*すぐ帰ろうか、もうちょっと見て回ろうか。*"
+    "text": "*初日にしてはかなり長かった。でも悪い意味じゃない疲れだ。*"
   },
   "day1_after_choice": {
     "name": "私",
-    "text": "*放課後、どこに行こう？*",
+    "text": "*放課後——どこに行こうか？*",
     "choices": [
-      "セアが生徒会室に遊びに来いって言ってた",
-      "図書室でユナにまた会ってみる",
-      "保健室のリイン先生が気になる",
-      "職員室でウンス先生にご挨拶する",
-      "今日はこのまま家に帰ろう"
+      "セアが生徒会室に誘ってくれた",
+      "図書室に寄ってユナにまた会う",
+      "なぜか保健室のリイン先生のことが気になる",
+      "職員室のウンス先生に挨拶しに行く",
+      "今日は家に帰ろう"
     ]
   },
   "day1_after_sea": {
-    "name": "ハン・セア",
-    "text": "「来た？ここが生徒会室だよ。私しかいないから気楽にしてて。」"
+    "name": "私",
+    "text": "*二階の端にある生徒会室。ドアに「生徒会」という小さな表示がある。*"
   },
   "day1_after_sea_2": {
     "name": "ハン・セア",
-    "text": "「{name}、初日どうだった？慣れそう？」"
+    "text": "\"入って～\""
   },
   "day1_after_sea_3": {
     "name": "私",
-    "text": "「悪くなかったよ。セアのおかげで楽だったし。」"
+    "text": "*ドアを開ける。小さな部屋だ。机が二つ、ロッカーが一つ、窓際に植木鉢が一つ。全部きちんと整っている。*"
   },
   "day1_after_sea_4": {
     "name": "ハン・セア",
-    "text": "「よかった。わかんないことあったら気軽に聞いてね。なんでも手伝うから。」"
+    "text": "\"来てくれた！ここが生徒会室だよ。狭いでしょ？でも静かで気に入ってるの。\""
   },
   "day1_after_sea_5": {
     "name": "私",
-    "text": "*セアが生徒会ノートを取り出すと、ページの隅に小さな落書きが見える。猫の絵。*"
+    "text": "\"あ、居心地よさそう。悪くないよ。\""
   },
   "day1_after_sea_6": {
-    "name": "私",
-    "text": "「委員長が授業中に落書き？」"
+    "name": "ハン・セア",
+    "text": "\"座って。飲み物要る？冷蔵庫に色々あるよ。\""
   },
   "day1_after_sea_7": {
-    "name": "ハン・セア",
-    "text": "「...！見なかったことにして。会議が長引くと暇で...」"
+    "name": "私",
+    "text": "\"生徒会室に冷蔵庫があるの？\""
   },
   "day1_after_sea_8": {
-    "name": "私",
-    "text": "*窓の外から夕焼けが差し込む。生徒会室がオレンジ色に染まる。*"
+    "name": "ハン・セア",
+    "text": "\"学級委員特権～ 冗談だよ。去年の先輩たちが置いていったの。\""
   },
   "day1_after_sea_9": {
-    "name": "ハン・セア",
-    "text": "「...この時間が好き。学校に人がほとんどいなくて、静かで。」"
+    "name": "私",
+    "text": "*セアが缶飲料を渡してくれる。まるでいつも通りみたいな自然さで。*"
   },
   "day1_after_sea_10": {
-    "name": "私",
-    "text": "*セアが窓の外を見て微笑む。委員長じゃなくて、ただの同い年の顔。*"
+    "name": "ハン・セア",
+    "text": "\"{name}、今日が初日だったけど……辛くなかった？\""
   },
   "day1_after_sea_11": {
-    "name": "ハン・セア",
-    "text": "「{name}は心配しないで。この学校で何があっても、私が全部なんとかするから。」"
+    "name": "私",
+    "text": "\"ううん、ちゃんと馴染めたと思う——正直セアのおかげだよ。\""
   },
   "day1_after_sea_12": {
-    "name": "私",
-    "text": "*...頼もしい。こんな委員長なら何でも大丈夫そうだ。*"
+    "name": "ハン・セア",
+    "text": "\"……よかった。\""
   },
   "day1_after_sea_13": {
     "name": "私",
-    "text": "*Sea's expression shows genuine relief.*"
+    "text": "*セアが心から安堵した表情を見せる。*"
   },
   "day1_after_sea_14": {
     "name": "ハン・セア",
-    "text": "\"It's always hard at first when you transfer. You don't know anyone at all.\""
+    "text": "\"転校すると最初はきついよね。知ってる子が誰もいないから。\""
   },
   "day1_after_sea_15": {
     "name": "ハン・セア",
-    "text": "\"...I'm happy {name} came. It gets a little lonely being in the student council room alone.\""
+    "text": "\"……{name}が来てくれて嬉しいな。生徒会室に一人でいると少し寂しかったから。\""
   },
   "day1_after_sea_16": {
     "name": "ハン・セア",
-    "text": "\"Well, now that {name} is here, I guess that's sorted.\""
+    "text": "\"まあ、これで{name}が来てくれればそれも解決だね。\""
   },
   "day1_after_sea_17": {
     "name": "私",
-    "text": "*She grins playfully. She's a good person. Glad the class president is like this.*"
+    "text": "*いたずらっぽく笑う。いい人だ。学級委員がこういう子でよかった。*"
   },
   "day1_after_sea_18": {
     "name": "ハン・セア",
-    "text": "\"...You'll come again tomorrow, right?\""
+    "text": "\"……明日も来る？\""
   },
   "day1_after_sea_19": {
     "name": "私",
-    "text": "\"Yeah, if I have time.\""
+    "text": "\"うん、時間があれば。\""
   },
   "day1_after_sea_20": {
     "name": "ハン・セア",
-    "text": "\"It's a promise.\""
+    "text": "\"約束だよ。\""
   },
   "day1_after_sea_21": {
     "name": "私",
-    "text": "*Sea held out her pinky. ...We're not in elementary school. But I couldn't say no.*"
+    "text": "*セアが小指を差し出した。……小学生じゃないんだし。でも断れなかった。*"
   },
   "day1_after_sea_22": {
     "name": "私",
-    "text": "*I locked pinkies. Sea smiled brightly.*"
+    "text": "*指を絡めた。セアがぱっと笑顔になった。*"
   },
   "day1_after_yuna": {
     "name": "私",
-    "text": "*図書室に行くとユナが先に来ていた。写真を整理している。*"
+    "text": "*図書室に行くとユナがもういた。窓の傍で写真を整理している。*"
   },
   "day1_after_yuna_2": {
     "name": "チェ・ユナ",
-    "text": "「先輩！また来てくれたんですか？ここ私のアジトなんですよ。私が撮った写真、見てくれます？」"
+    "text": "\"先輩！また来てくれたんですか？\""
   },
   "day1_after_yuna_3": {
     "name": "私",
-    "text": "*ユナの写真をめくっていく。学校の風景、猫、夕焼け……なかなか上手い。*"
+    "text": "\"静かにゆっくりできる場所が欲しくて。\""
   },
   "day1_after_yuna_4": {
-    "name": "私",
-    "text": "*最後の写真は暗い廊下の奥の閉ざされた扉。「これは？」と聞こうとしたら、ユナがさっとめくってしまった。*"
+    "name": "チェ・ユナ",
+    "text": "\"ここ私の秘密の場所なんです。座って、ここ私の隣に。\""
   },
   "day1_after_yuna_5": {
     "name": "私",
-    "text": "*I sit next to Yuna. Photos are up on her camera screen.*"
+    "text": "*ユナの隣に座る。カメラの画面に写真が映っている。*"
   },
   "day1_after_yuna_6": {
     "name": "チェ・ユナ",
-    "text": "\"I have something to show you. These are photos I've taken.\""
+    "text": "\"見せたいものがあるんです。私が撮った写真です。\""
   },
   "day1_after_yuna_7": {
     "name": "私",
-    "text": "*Yuna flips through the camera and shows me. School scenery. The schoolyard in full bloom. A cat sitting on the bench by the gym. The track field at sunset.*"
+    "text": "*ユナがカメラを操作して見せてくれる。学校の風景。満開の桜の校庭。体育館の隣のベンチに座った猫。夕焼けに染まった陸上トラック。*"
   },
   "day1_after_yuna_8": {
     "name": "私",
-    "text": "\"You took all of these? They're really good.\""
+    "text": "\"これ全部ユナが撮ったの？すごく上手いね。\""
   },
   "day1_after_yuna_9": {
     "name": "チェ・ユナ",
-    "text": "\"Really?! Thank you so much...\""
+    "text": "\"本当ですか？！ありがとうございます……\""
   },
   "day1_after_yuna_10": {
     "name": "私",
-    "text": "*Yuna's cheeks flush.*"
+    "text": "*ユナの頬が赤くなる。*"
   },
   "day1_after_yuna_11": {
     "name": "私",
-    "text": "*We chat about the cat for a long time. Yuna is shy, but when she talks about something she loves, her eyes sparkle.*"
+    "text": "*猫の話で長い間盛り上がった。ユナは恥ずかしがり屋だけど、好きなものの話をするとき目が輝く。*"
   },
   "day1_after_yuna_12": {
     "name": "私",
-    "text": "*I keep scrolling through the photos... and then one comes up that's different in feel. A dark hallway ending. A closed door. Low lighting, an unsettling atmosphere.*"
+    "text": "*写真をどんどん見ていくと……雰囲気の違う一枚が出てきた。暗い廊下の奥。閉ざされたドア。照明が暗く、不気味な雰囲気。*"
   },
   "day1_after_yuna_13": {
     "name": "私",
-    "text": "\"...What's this?\""
+    "text": "\"……これは？\""
   },
   "day1_after_yuna_14": {
     "name": "私",
-    "text": "*Just as I'm about to ask, Yuna quickly closes the camera.*"
+    "text": "*聞こうとした瞬間、ユナが素早くカメラを閉じた。*"
   },
   "day1_after_yuna_15": {
     "name": "チェ・ユナ",
-    "text": "\"Oh, that's just... an accident. I'll delete it.\""
+    "text": "\"あ、それはただの……撮り損じです。消しますね。\""
   },
   "day1_after_yuna_16": {
     "name": "チェ・ユナ",
-    "text": "\"Senpai, I'll show you better ones next time. I'll take nicer photos!\""
+    "text": "\"先輩、今度またいいの見せますね。もっといい写真撮っておきます！\""
   },
   "day1_after_yuna_17": {
     "name": "私",
-    "text": "*Yuna smiles brightly. ...That photo is still on my mind. But photography students shoot all kinds of things. Probably nothing.*"
+    "text": "*ユナが明るく笑う。……さっきの写真がまだ気になるけど。写真部だから色々なものを撮るんだろう。たぶん何でもないよ。*"
   },
   "day1_after_riin": {
-    "name": "保健教師",
-    "text": "「また来たの？薬は効いてる？」"
+    "name": "私",
+    "text": "*保健室のドアを開ける。リイン先生が机で何かを読んでいる。*"
   },
   "day1_after_riin_2": {
-    "name": "保健教師",
-    "text": "「放課後ヒマだったらここおいでよ。お茶くらいは出してあげるから。」"
+    "name": "カン・リイン",
+    "text": "\"あら、また来たの。\""
   },
   "day1_after_riin_3": {
     "name": "私",
-    "text": "*リイン先生とお茶を飲みながら話した。穏やかな時間だった。*"
+    "text": "*リイン先生が眼鏡を外して微笑む。*"
   },
   "day1_after_riin_4": {
     "name": "カン・リイン",
-    "text": "\"Still not feeling well, or just stopping by?\""
+    "text": "\"まだ具合が悪いの、それとも寄っただけ？\""
   },
   "day1_after_riin_5": {
     "name": "私",
-    "text": "\"Oh... just stopping in.\""
+    "text": "\"あ……ただ寄ってみただけで。\""
   },
   "day1_after_riin_6": {
     "name": "カン・リイン",
-    "text": "\"I'm joking. Come on in. I'll make you some tea.\""
+    "text": "\"冗談よ。入って入って。お茶入れてあげるわ。\""
   },
   "day1_after_riin_7": {
     "name": "私",
-    "text": "*Riin-sensei fills the electric kettle. She takes out a herbal tea bag from a drawer.*"
+    "text": "*リイン先生が電気ケトルに水を入れる。引き出しからハーブティーのティーバッグを取り出す。*"
   },
   "day1_after_riin_8": {
     "name": "カン・リイン",
-    "text": "\"Is herbal tea okay? It's chamomile. Good for helping you relax.\""
+    "text": "\"ハーブティーでいい？カモミールよ。緊張をほぐすのにいいの。\""
   },
   "day1_after_riin_9": {
     "name": "私",
-    "text": "*I take the warm cup. The herb scent is nice. The nurse's office feels cozy.*"
+    "text": "*温かいカップを受け取る。ハーブの香りがいい。保健室が居心地よく感じる。*"
   },
   "day1_after_riin_10": {
     "name": "カン・リイン",
-    "text": "\"Is the headache any better?\""
+    "text": "\"頭痛は良くなった？\""
   },
   "day1_after_riin_11": {
     "name": "私",
-    "text": "\"Yes, the medicine helped.\""
+    "text": "\"はい、薬を飲んだら治りました。\""
   },
   "day1_after_riin_12": {
     "name": "カン・リイン",
-    "text": "\"Good. Just nerves from the first day. It'll get easier from tomorrow.\""
+    "text": "\"よかった。初日で緊張してただけだから。明日からは楽になるよ。\""
   },
   "day1_after_riin_13": {
     "name": "カン・リイン",
-    "text": "\"What was your old school like? Was it fun?\""
+    "text": "\"前の学校ってどんなとこだった？楽しかった？\""
   },
   "day1_after_riin_14": {
     "name": "カン・リイン",
-    "text": "\"You'll settle in fast here too. I'll keep an eye on you.\""
+    "text": "\"こっちでもすぐ慣れるよ。先生が見ておいてあげるから。\""
   },
   "day1_after_riin_15": {
     "name": "私",
-    "text": "*Riin-sensei refills my cup with a smile. A warm, peaceful time. It's reassuring to have a teacher like her.*"
+    "text": "*リイン先生が微笑みながらカップにお茶を注ぎ足してくれた。温かくて穏やかな時間。こんな先生がいてくれて安心だ。*"
   },
   "day1_after_eunsu": {
-    "name": "担任教師",
-    "text": "「{name}！放課後にわざわざ職員室まで？ありがとうございます。」"
+    "name": "私",
+    "text": "*職員室のドアをノックする。*"
   },
   "day1_after_eunsu_2": {
-    "name": "私",
-    "text": "*ウンス先生がコーヒーを淹れてくれながら、学校生活についてあれこれ聞いてきた。*"
+    "name": "パク・ウンス",
+    "text": "\"はい、どうぞ。\""
   },
   "day1_after_eunsu_3": {
-    "name": "担任教師",
-    "text": "「前の学校はどうでしたか？慣れるのに大変なことがなければいいんですけど。」"
+    "name": "私",
+    "text": "*ドアを開ける。ウンス先生が机で書類を整理している。顔を上げ、驚いた様子。*"
   },
   "day1_after_eunsu_4": {
-    "name": "担任教師",
-    "text": "「この学校では何も心配しなくていいですよ。先生が{name}をちゃんと守ってあげますから。」"
+    "name": "パク・ウンス",
+    "text": "\"{name}？放課後に直接来てくれたの？嬉しいわ。\""
   },
   "day1_after_eunsu_5": {
     "name": "私",
-    "text": "*温かい先生だ。こういう人が担任で良かった。*"
+    "text": "\"初日だし、挨拶に来ようと思って。\""
   },
   "day1_after_eunsu_6": {
     "name": "パク・ウンス",
-    "text": "\"How thoughtful. Sit down. Would you like coffee?\""
+    "text": "\"気が利くじゃない。座って。コーヒーはどう？\""
   },
   "day1_after_eunsu_7": {
     "name": "パク・ウンス",
-    "text": "\"I was going to make some for myself anyway — no trouble at all.\""
+    "text": "\"どうせ自分の分を作るところだったから——全然手間じゃないよ。\""
   },
   "day1_after_eunsu_8": {
     "name": "私",
-    "text": "*Eunsu-sensei brews coffee. The teachers' office fills with the aroma.*"
+    "text": "*ウンス先生がコーヒーを入れてくれる。職員室がコーヒーの香りで満ちる。*"
   },
   "day1_after_eunsu_9": {
     "name": "パク・ウンス",
-    "text": "\"How was today? Could you keep up with the lessons?\""
+    "text": "\"今日はどうだった？授業についていけた？\""
   },
   "day1_after_eunsu_10": {
     "name": "パク・ウンス",
-    "text": "\"Did you make any friends? Was Sea taking care of you?\""
+    "text": "\"友達はできた？セアがちゃんと面倒見てくれてた？\""
   },
   "day1_after_eunsu_11": {
     "name": "パク・ウンス",
-    "text": "\"...{name}, was there anything going on at your previous school? Your transfer reason seemed a bit... unusual.\""
+    "text": "\"……{name}、前の学校で何かあったの？転校の理由がちょっと……変わってたから。\""
   },
   "day1_after_eunsu_12": {
     "name": "私",
-    "text": "\"Unusual? It's just my parents moving...\""
+    "text": "\"変わってる？ただ親が引っ越ししただけで……\""
   },
   "day1_after_eunsu_13": {
     "name": "パク・ウンス",
-    "text": "\"Oh, no. I was just asking out of curiosity. No particular reason.\""
+    "text": "\"あ、ごめんなさい。ただ気になって聞いただけよ。特に意味はないの。\""
   },
   "day1_after_eunsu_14": {
     "name": "パク・ウンス",
-    "text": "\"I hope you make plenty of good memories here. I'll be here to help.\""
+    "text": "\"新しい学校でいい思い出をたくさん作ってね。先生が力になってあげるから。\""
   },
   "day1_after_eunsu_15": {
     "name": "私",
-    "text": "*She's warm. I'm in a good mood leaving the teachers' office.*"
+    "text": "*温かい人だ。職員室を出るときに気分がいい。*"
   },
   "day1_after_home": {
     "name": "私",
-    "text": "*校門を出ながら振り返る。いい学校だ。*"
+    "text": "*校門を出ながら振り返る。*"
   },
   "day1_after_home_2": {
     "name": "私",
-    "text": "*夕焼けがきれいだ。明日も晴れるだろう。*"
+    "text": "*初日にしては悪くなかった。いい人がたくさんいる。*"
   },
   "day1_after_home_3": {
     "name": "私",
-    "text": "*Sea looked after me at every turn, Eunsu-sensei was warm, Riin-sensei was kind.*"
+    "text": "*セアは何かにつけて面倒を見てくれたし、ウンス先生は温かかったし、リイン先生は親切だったし。*"
   },
   "day1_after_home_4": {
     "name": "私",
-    "text": "*...Someone seems to be looking down at me from a third-floor window.*"
+    "text": "*……三階の窓から誰かが私を見下ろしているようだ。*"
   },
   "day1_after_home_5": {
     "name": "私",
-    "text": "*The backlight makes their face invisible. Just a silhouette.*"
+    "text": "*逆光で顔が見えない。シルエットだけ。*"
   },
   "day1_after_home_6": {
     "name": "私",
-    "text": "*...That window is our classroom. From that spot... the rear window seat. Right next to Seolhwa's seat.*"
+    "text": "*……あの窓は私たちの教室だ。あの位置なら……後ろの窓際の席。ソルファの席の隣。*"
   },
   "day1_after_home_7": {
     "name": "私",
-    "text": "*I wave. No response.*"
+    "text": "*手を振ってみた。反応はない。*"
   },
   "day1_after_home_8": {
     "name": "私",
-    "text": "*...Maybe it's just the sunlight messing with me. Or maybe someone's on cleaning duty. I turn and start walking. Let's go home.*"
+    "text": "*……日差しのせいで見間違えたのかも。それとも掃除当番が残っているのかな。向き直って歩き始める。帰ろう。*"
   },
   "day1_after_end": {
     "name": "私",
-    "text": "*家に向かう。明日が楽しみだ。*"
+    "text": "*家に帰る。*"
   }
 }

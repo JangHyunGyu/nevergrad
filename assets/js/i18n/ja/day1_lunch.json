@@ -1,484 +1,484 @@
 {
   "day1_lunch_start": {
     "name": "私",
-    "text": "*昼休み。腹減った。食堂がどこかもわからないし。*"
+    "text": "*四時間目が終わり、昼休みのチャイムが鳴った。みんないっせいに立ち上がる。*"
   },
   "day1_lunch_start_2": {
     "name": "私",
-    "text": "*どこで食べよう。*"
+    "text": "*お腹が空いた。今朝は緊張して朝ご飯を食べられなかった。*"
   },
   "day1_lunch_choice": {
     "name": "私",
-    "text": "*昼休み、どこに行こう？*",
+    "text": "*昼休み——どこに行こうか？*",
     "choices": [
-      "セアが一緒に食べようって言ってたし教室に残る",
-      "静かな図書室に行ってみる",
-      "さっきから頭がちょっと痛い……保健室に行ってみようか",
-      "一人で屋上で食べる"
+      "セアが一緒に食べようって言ってた——教室に残る",
+      "静かな図書室を見てみる",
+      "さっきから少し頭が痛い……保健室に行ってみようか",
+      "屋上で一人で食べる"
     ]
   },
   "day1_lunch_sea_1": {
     "name": "私",
-    "text": "*I'm about to get up when Sea comes over.*"
+    "text": "*立ち上がろうとするとセアが近づいてくる。*"
   },
   "day1_lunch_sea_2": {
-    "name": "私",
-    "text": "*セアがお弁当を広げる。量が多い。*"
+    "name": "ハン・セア",
+    "text": "\"どこ行くの？一緒に食べようと思って待ってたのに。\""
   },
   "day1_lunch_sea_3": {
-    "name": "ハン・セア",
-    "text": "「ちょっと多めに詰めてきちゃった、一緒に食べよ。口に合うといいんだけど。」"
+    "name": "私",
+    "text": "\"あ、購買に行こうとしてたんだけど……\""
   },
   "day1_lunch_sea_4": {
-    "name": "私",
-    "text": "*サバの煮付けに卵焼きにほうれん草のナムル。家庭の味って感じで美味しい。*"
+    "name": "ハン・セア",
+    "text": "\"必要ないよ。お弁当持ってきたから。場所取っておいたから——ここに座って。\""
   },
   "day1_lunch_sea_5": {
-    "name": "ハン・セア",
-    "text": "「どう？大丈夫？」"
+    "name": "私",
+    "text": "*セアが二つの机をくっつけてバッグからお弁当箱を取り出す。*"
   },
   "day1_lunch_sea_6": {
     "name": "私",
-    "text": "「これ本当に美味しい。自分で作ったの？」"
+    "text": "*……二段のお弁当箱だ。どう見ても一人分の量じゃない。*"
   },
   "day1_lunch_sea_7": {
-    "name": "ハン・セア",
-    "text": "「...うん。朝早く起きて作ったの。」"
+    "name": "私",
+    "text": "\"……これ全部セアのなの？\""
   },
   "day1_lunch_sea_8": {
-    "name": "私",
-    "text": "*セアの耳たぶがほんのり赤くなった。褒められるのに弱いタイプなのか。*"
+    "name": "ハン・セア",
+    "text": "\"じゃーん。どう？\""
   },
   "day1_lunch_sea_9": {
     "name": "私",
-    "text": "「ねえ、ここにご飯粒ついてるよ。」"
+    "text": "*蓋を開ける。卵焼き、ミニソーセージ、おにぎり、ブロッコリー、プチトマト。全部色ごとにきれいに並べてある。*"
   },
   "day1_lunch_sea_10": {
-    "name": "ハン・セア",
-    "text": "「...！え、どこ？！」"
+    "name": "私",
+    "text": "\"……すごい。本当に自分で作ったの？\""
   },
   "day1_lunch_sea_11": {
-    "name": "私",
-    "text": "*セアが慌てて頬をこする。委員長の体面はどこへやら、顔が真っ赤になった。*"
+    "name": "ハン・セア",
+    "text": "\"食べてみて。購買のパンよりこっちの方がいいかなと思って。\""
   },
   "day1_lunch_sea_12": {
-    "name": "ハン・セア",
-    "text": "「...笑わないで。明日はもっと綺麗に食べるから。」"
+    "name": "私",
+    "text": "\"……これ全部作ったの？私のために？\""
   },
   "day1_lunch_sea_13": {
     "name": "ハン・セア",
-    "text": "「私、{name}のことは全部覚えてるよ。好きなおかずも、今日何時間目に居眠りしたかも。」"
+    "text": "\"料理は趣味なの。……当たってたでしょ？\""
   },
   "day1_lunch_sea_14": {
     "name": "私",
-    "text": "*そこまで見てくれるのは初めてで、少し照れくさい。ありがたい子だ。*"
+    "text": "*セアが箸で卵焼きを一切れ取って私の方に差し出す。*"
   },
   "day1_lunch_sea_15": {
     "name": "ハン・セア",
-    "text": "\"Here, try the egg roll first. I made it on the sweet side.\""
+    "text": "\"ほら、まず卵焼きから食べてみて。甘めに作ったから。\""
   },
   "day1_lunch_sea_16": {
     "name": "私",
-    "text": "*...Is she trying to feed me? No, she's just holding it out. Right.*"
+    "text": "*……食べさせようとしてるの？いや、ただ差し出してるだけか。そうだよね。*"
   },
   "day1_lunch_sea_17": {
     "name": "私",
-    "text": "\"Oh, I've got it.\""
+    "text": "\"あ、自分で取るね。\""
   },
   "day1_lunch_sea_18": {
     "name": "私",
-    "text": "*I quickly take it and eat it. ...It's good. Actually good.*"
+    "text": "*急いで受け取って食べた。……美味しい。本当に美味しい。*"
   },
   "day1_lunch_sea_19": {
     "name": "ハン・セア",
-    "text": "\"...How is it? Not too salty?\""
+    "text": "\"……どう？しょっぱくない？\""
   },
   "day1_lunch_sea_20": {
     "name": "私",
-    "text": "\"Yeah, it's great. Better than takeout.\""
+    "text": "\"うん、すごく美味しい。テイクアウトより美味しいくらい。\""
   },
   "day1_lunch_sea_21": {
     "name": "ハン・セア",
-    "text": "\"For real?!\""
+    "text": "\"本当に？！\""
   },
   "day1_lunch_sea_22": {
     "name": "私",
-    "text": "*Sea's face lights up. She looks genuinely happy.*"
+    "text": "*セアの顔がぱっと明るくなる。心から喜んでいる表情だ。*"
   },
   "day1_lunch_sea_23": {
     "name": "ハン・セア",
-    "text": "\"Great~ Then try the sausages too. I cut them into octopus shapes.\""
+    "text": "\"よかった～ じゃあソーセージも食べてみて。タコの形に切ったんだ。\""
   },
   "day1_lunch_sea_24": {
     "name": "私",
-    "text": "\"Octopus shapes? ...Oh, you did.\""
+    "text": "\"タコの形？……ほんとだ。\""
   },
   "day1_lunch_sea_25": {
     "name": "私",
-    "text": "*The ends of the sausages are slit to fan out like little legs. She put thought into this.*"
+    "text": "*ソーセージの端に切り込みを入れて、脚みたいに広がっている。手がかかっている。*"
   },
   "day1_lunch_sea_26": {
     "name": "ハン・セア",
-    "text": "\"I've been making them like this since I was little. Childish, right?\""
+    "text": "\"小さい頃からこうして食べるのが好きでさ。子どもっぽいよね？\""
   },
   "day1_lunch_sea_27": {
     "name": "私",
-    "text": "\"No, it's cute. And delicious.\""
+    "text": "\"ううん、かわいいよ。美味しいし。\""
   },
   "day1_lunch_sea_28": {
     "name": "ハン・セア",
-    "text": "\"...Cute?\""
+    "text": "\"……かわいい？\""
   },
   "day1_lunch_sea_29": {
     "name": "私",
-    "text": "*Sea's cheeks go faintly pink as she smiles.*"
+    "text": "*セアの頬がかすかに赤くなって微笑む。*"
   },
   "day1_lunch_sea_30": {
     "name": "ハン・セア",
-    "text": "\"Anyway, eat up. There are rice balls too.\""
+    "text": "\"とにかくたくさん食べてね。おにぎりもあるから。\""
   },
   "day1_lunch_sea_31": {
     "name": "私",
-    "text": "*We chat about the food for a long time — one compliment after another.*"
+    "text": "*そのまましばらく、食べ物についての話と褒め言葉が続いた。*"
   },
   "day1_lunch_sea_32": {
     "name": "私",
-    "text": "\"Do you always bring a lunchbox?\""
+    "text": "\"いつもお弁当持ってきてるの？\""
   },
   "day1_lunch_sea_33": {
     "name": "ハン・セア",
-    "text": "\"Yep. The school lunch is fine, but homemade just tastes better.\""
+    "text": "\"うん。給食も悪くないけど、手作りの方が美味しいし。\""
   },
   "day1_lunch_sea_34": {
     "name": "私",
-    "text": "\"Seems like a lot for one person.\""
+    "text": "\"一人分にしては多すぎない？\""
   },
   "day1_lunch_sea_35": {
     "name": "ハン・セア",
-    "text": "\".........\""
+    "text": "\"…………\""
   },
   "day1_lunch_sea_36": {
     "name": "私",
-    "text": "*Sea pauses for a moment, then smiles.*"
+    "text": "*セアが少し黙ってから笑う。*"
   },
   "day1_lunch_sea_37": {
     "name": "ハン・セア",
-    "text": "\"I just tend to make a lot. It's nice having someone who actually eats it all.\""
+    "text": "\"もともとたくさん作る方なの。ちゃんと全部食べてくれる人がいると嬉しいな。\""
   },
   "day1_lunch_sea_38": {
     "name": "私",
-    "text": "\"It was great. Seriously, thank you.\""
+    "text": "\"美味しかったよ。本当にありがとう。\""
   },
   "day1_lunch_sea_39": {
     "name": "私",
-    "text": "*Sea cleans up the empty lunchbox and asks casually:*"
+    "text": "*セアが空になったお弁当箱を片付けながら何気なく聞く。*"
   },
   "day1_lunch_sea_40": {
     "name": "ハン・セア",
-    "text": "\"...I'm really glad you enjoyed it. Should I bring one again tomorrow?\""
+    "text": "\"……全部食べてくれてすごく嬉しい。明日もまた持ってこようか？\""
   },
   "day1_lunch_sea_41": {
     "name": "私",
-    "text": "\"Every day? Isn't that too much trouble?\""
+    "text": "\"毎日？そんな手間かけさせて悪いんじゃない？\""
   },
   "day1_lunch_sea_42": {
     "name": "ハン・セア",
-    "text": "\"Not at all. Making it is so much more rewarding when there's someone to eat it.\""
+    "text": "\"手間じゃないよ。食べてくれる人がいると作りがいがあるもん。\""
   },
   "day1_lunch_sea_43": {
     "name": "私",
-    "text": "*Sea beams. A lunchbox on my very first day. She's definitely a good person.*"
+    "text": "*セアがぱっと笑う。初日からお弁当まで用意してくれるなんて。いい人なのは確かだ。*"
   },
   "day1_lunch_sea_44": {
     "name": "私",
-    "text": "*...But everything in this box is exactly what I'd pick. Egg roll, sausages, rice balls. Just a coincidence?*"
+    "text": "*……でもおかず全部が私の好みだ。卵焼き、ソーセージ、おにぎり。偶然かな？*"
   },
   "day1_lunch_sea_45": {
     "name": "私",
-    "text": "*Well, they're all pretty common foods. Anyone would like these.*"
+    "text": "*まあ、ありきたりなメニューだし。こういうの嫌いな人はいないよね。*"
   },
   "day1_lunch_yuna_1": {
     "name": "私",
-    "text": "*本棚の間を歩いていると、奥の方から「カシャッ」と音がする。*"
+    "text": "*図書室に入る。昼休みだからほとんど人がいない。*"
   },
   "day1_lunch_yuna_2": {
-    "name": "???",
-    "text": "「……あっ！」"
+    "name": "私",
+    "text": "*静かだ。紙と木の匂いがする。天井が高く——涼しくて開放的な感じ。*"
   },
   "day1_lunch_yuna_3": {
     "name": "私",
-    "text": "*カメラを持った女子生徒が慌てた顔でこっちを見ている。*"
+    "text": "*本棚の間を歩く。小説、参考書……大きな図書室だ。前の学校よりずっと本が多い。*"
   },
   "day1_lunch_yuna_4": {
     "name": "私",
-    "text": "「写真部？」"
+    "text": "*奥の席に向かおうとすると——カシャッという音がした。*"
   },
   "day1_lunch_yuna_5": {
-    "name": "チェ・ユナ",
-    "text": "「はい！図書室の風景撮ってたんですけど、急に現れたから……すみません！1年のチェ・ユナです。転校生の先輩ですよね？」"
+    "name": "???",
+    "text": "\"……！\""
   },
   "day1_lunch_yuna_6": {
     "name": "私",
-    "text": "*にこにこ笑ってる。かわいい後輩だ。*"
+    "text": "*カメラを持った女子生徒が固まって、戸惑った様子でこちらを見ている。小柄な子にしては大きなカメラだ。*"
   },
   "day1_lunch_yuna_7": {
-    "name": "チェ・ユナ",
-    "text": "「先輩、ちょっと待ってください。動かないでください。」"
+    "name": "私",
+    "text": "*……私の写真を撮ってたの？*"
   },
   "day1_lunch_yuna_8": {
     "name": "私",
-    "text": "*ユナが突然カメラを持ち上げて窓に向かってシャッターを切る。カシャッ。*"
+    "text": "\"……今私の写真撮ってた？\""
   },
   "day1_lunch_yuna_9": {
     "name": "チェ・ユナ",
-    "text": "「見てください、先輩の後ろから光が差し込んでてすごく綺麗で...あ、先輩の顔は写ってないですよ！風景だけ！」"
+    "text": "\"違います違います！写真部で図書室の雰囲気を撮ってたんですけど、そしたら先輩が入ってきて……\""
   },
   "day1_lunch_yuna_10": {
     "name": "私",
-    "text": "*慌てて言い訳しているが、カメラの画面には私のシルエットがくっきり。...この後輩、意外と大胆だ。*"
+    "text": "*両手をばたばたさせる。*"
   },
   "day1_lunch_yuna_11": {
     "name": "チェ・ユナ",
-    "text": "\"I'm so sorry. I'll delete it right away...!\""
+    "text": "\"本当にごめんなさい。すぐ消しますから……！\""
   },
   "day1_lunch_yuna_12": {
     "name": "私",
-    "text": "\"No, it's fine. I was just surprised. So you're in the photography club.\""
+    "text": "\"ううん、大丈夫。驚いただけだから。写真部なんだね。\""
   },
   "day1_lunch_yuna_13": {
     "name": "チェ・ユナ",
-    "text": "\"Yes...! I'm Choi Yuna, first year. You're the transfer student, right?\""
+    "text": "\"はい……！1年のチェ・ユナです。転校してきた先輩ですよね？\""
   },
   "day1_lunch_yuna_14": {
     "name": "私",
-    "text": "\"Yeah. I'm {name}. Nice to meet you.\""
+    "text": "\"うん。{name}だよ。よろしくね。\""
   },
   "day1_lunch_yuna_15": {
     "name": "チェ・ユナ",
-    "text": "\"Oh... yes. Nice to meet you, senpai.\""
+    "text": "\"あ……はい。よろしくお願いします、先輩。\""
   },
   "day1_lunch_yuna_16": {
     "name": "私",
-    "text": "*Yuna hugs her camera to her chest and bows her head. Her face is red. Seems like a shy kid.*"
+    "text": "*ユナがカメラを胸に抱きしめておじぎをする。顔が赤い。恥ずかしがり屋の子みたいだ。*"
   },
   "day1_lunch_yuna_17": {
     "name": "私",
-    "text": "\"Do you take a lot of pictures? Being in the photography club and all.\""
+    "text": "\"写真いっぱい撮るの？写真部だし。\""
   },
   "day1_lunch_yuna_18": {
     "name": "チェ・ユナ",
-    "text": "\"Yeah! All the time. School scenery, cats... oh, there's a cat in the school backyard.\""
+    "text": "\"はい！毎日撮ってます。学校の風景とか、猫とか……あ、学校の裏庭に猫がいるんですよ。\""
   },
   "day1_lunch_yuna_19": {
     "name": "私",
-    "text": "\"A cat?\""
+    "text": "\"猫？\""
   },
   "day1_lunch_yuna_20": {
     "name": "チェ・ユナ",
-    "text": "\"Yeah... a stray that comes to the backyard. I call her Cheeze...\""
+    "text": "\"はい……裏庭に来る野良猫です。私がチーズって呼んでるんですけど……\""
   },
   "day1_lunch_yuna_21": {
     "name": "私",
-    "text": "*Her eyes light up the moment she mentions the cat. Like the shy version of her I just met never existed.*"
+    "text": "*猫の話をすると目が輝く。さっきの恥ずかしがり屋の姿が嘘みたいに。*"
   },
   "day1_lunch_yuna_22": {
     "name": "チェ・ユナ",
-    "text": "\"...Senpai. Do you come to the library often? I'm here every day.\""
+    "text": "\"……せ、先輩。図書室よく来ますか？私毎日ここにいるんですよ。\""
   },
   "day1_lunch_yuna_23": {
     "name": "私",
-    "text": "\"Yeah, I like that it's quiet. Perfect place to relax during lunch.\""
+    "text": "\"うん、静かで好きだよ。昼休みに休むには最高の場所だ。\""
   },
   "day1_lunch_yuna_24": {
     "name": "チェ・ユナ",
-    "text": "\"Right?! This is the most peaceful spot in the whole school. Not many people come here either.\""
+    "text": "\"でしょ？！ここが学校で一番落ち着けます。人もあまり来ないし。\""
   },
   "day1_lunch_yuna_25": {
     "name": "私",
-    "text": "*Yuna hugs her camera and smiles. Shy, but warm.*"
+    "text": "*ユナがカメラを抱きしめて微笑む。恥ずかしがり屋だけど、温かい笑顔。*"
   },
   "day1_lunch_yuna_26": {
     "name": "チェ・ユナ",
-    "text": "\"If senpai comes here often... I won't feel so lonely.\""
+    "text": "\"先輩がよく来てくれたら……寂しくなくなるな。\""
   },
   "day1_lunch_yuna_27": {
     "name": "私",
-    "text": "*She murmurs quietly. She seems like a sweet kid.*"
+    "text": "*小さな声でつぶやく。いい後輩みたいだ。*"
   },
   "day1_lunch_yuna_28": {
     "name": "私",
-    "text": "\"Then show me those cat photos sometime.\""
+    "text": "\"じゃあ今度その猫の写真見せてよ。\""
   },
   "day1_lunch_yuna_29": {
     "name": "チェ・ユナ",
-    "text": "\"Oh... really? Then... you'll come to the library again, right...?\""
+    "text": "\"あ……本当ですか？じゃあ……また図書室来てくれますよね……？\""
   },
   "day1_lunch_yuna_30": {
     "name": "私",
-    "text": "*Yuna smiles radiantly. Adorable.*"
+    "text": "*ユナがぱっと笑顔になる。かわいい。*"
   },
   "day1_lunch_riin_1": {
-    "name": "保健教師",
-    "text": "「あら、初日から保健室？どこか具合悪い？」"
+    "name": "私",
+    "text": "*保健室のドアを開ける。消毒薬のかすかな匂い。*"
   },
   "day1_lunch_riin_2": {
     "name": "私",
-    "text": "「頭がちょっと痛くて。頭痛薬ありますか？」"
+    "text": "*奥に女の先生が座っている。長い髪、白衣。もたれながら何かを読んでいる。*"
   },
   "day1_lunch_riin_3": {
-    "name": "保健教師",
-    "text": "「ちょっと座って。基本的なチェックするね。……うん、健康だね。よかった。」"
+    "name": "私",
+    "text": "*ノックする。顔を上げた。*"
   },
   "day1_lunch_riin_4": {
-    "name": "私",
-    "text": "*簡単に診てもらった。保健室は清潔で静かだ。*"
+    "name": "カン・リイン",
+    "text": "\"あら？初日から保健室？体の具合が悪いの？\""
   },
   "day1_lunch_riin_5": {
-    "name": "保健教師",
-    "text": "「薬ここにあるよ。疲れてたら少し休んでいっていいからね。」"
+    "name": "私",
+    "text": "\"頭が痛くて。何か薬ありますか？\""
   },
   "day1_lunch_riin_6": {
-    "name": "保健教師",
-    "text": "「健康が一番大事だからね。{name}は先生がちゃんと管理してあげるから。」"
+    "name": "カン・リイン",
+    "text": "\"そう？座って。まず診てみましょう。\""
   },
   "day1_lunch_riin_7": {
     "name": "私",
-    "text": "*なんだか安心する。学校にこんな保健の先生がいると心強い。*"
+    "text": "*リイン先生が来ておでこを触る。手がひんやりしている。*"
   },
   "day1_lunch_riin_8": {
     "name": "カン・リイン",
-    "text": "\"No fever. Open your mouth? ... Okay, you look fine.\""
+    "text": "\"熱はないね。口を開けてみて？……うん、見た感じ大丈夫そう。\""
   },
   "day1_lunch_riin_9": {
     "name": "私",
-    "text": "\"I think it's just nerves.\""
+    "text": "\"緊張してるだけだと思います。\""
   },
   "day1_lunch_riin_10": {
     "name": "カン・リイン",
-    "text": "\"Tension headache — makes sense on your first day. Nothing too serious.\""
+    "text": "\"緊張による頭痛——初日だから仕方ないね。そんなに深刻じゃないよ。\""
   },
   "day1_lunch_riin_11": {
     "name": "私",
-    "text": "*Riin-sensei takes some medicine from a drawer and smiles. A relaxed smile.*"
+    "text": "*リイン先生が引き出しから薬を取り出して微笑む。ゆったりした笑顔だ。*"
   },
   "day1_lunch_riin_12": {
     "name": "カン・リイン",
-    "text": "\"Here. Take one after you eat.\""
+    "text": "\"はい、どうぞ。ご飯を食べた後に一錠飲んで。\""
   },
   "day1_lunch_riin_13": {
     "name": "私",
-    "text": "\"Thank you.\""
+    "text": "\"ありがとうございます。\""
   },
   "day1_lunch_riin_14": {
     "name": "カン・リイン",
-    "text": "\"Have you eaten? Don't take medicine on an empty stomach.\""
+    "text": "\"ご飯は食べた？空きっ腹に薬を飲んだらダメよ。\""
   },
   "day1_lunch_riin_15": {
     "name": "私",
-    "text": "\"Oh... not yet. Nerves, I guess.\""
+    "text": "\"あ……まだなんです。緊張してたので。\""
   },
   "day1_lunch_riin_16": {
     "name": "カン・リイン",
-    "text": "\"Oh dear. Hold on.\""
+    "text": "\"まあ。ちょっと待って。\""
   },
   "day1_lunch_riin_17": {
     "name": "私",
-    "text": "*Riin-sensei pulls an energy bar from her drawer and hands it to me.*"
+    "text": "*リイン先生が引き出しからエナジーバーを一本取り出して渡してくれる。*"
   },
   "day1_lunch_riin_18": {
     "name": "カン・リイン",
-    "text": "\"Eat this first. Medicine on an empty stomach is hard on you.\""
+    "text": "\"これを先に食べて。空きっ腹に薬は体に良くないから。\""
   },
   "day1_lunch_riin_19": {
     "name": "私",
-    "text": "\"Even this... thank you so much.\""
+    "text": "\"これまで……本当にありがとうございます。\""
   },
   "day1_lunch_riin_20": {
     "name": "カン・リイン",
-    "text": "\"Looking after students is part of the job.\""
+    "text": "\"生徒の健康を守るのが仕事だから。\""
   },
   "day1_lunch_riin_21": {
     "name": "私",
-    "text": "*Riin-sensei pours me water too. She's a comfortable person. Feels like an older sister.*"
+    "text": "*リイン先生が水も注いでくれる。居心地のいい人だ。お姉さんみたいな感じ。*"
   },
   "day1_lunch_riin_22": {
     "name": "カン・リイン",
-    "text": "\"If you're feeling drowsy, you can rest in the bed. It's right over there.\""
+    "text": "\"眠くなったら少し休んでいっていいよ。あそこのベッドを使えばいいから。\""
   },
   "day1_lunch_riin_23": {
     "name": "私",
-    "text": "\"It's okay. I think I'll be fine once I take the medicine.\""
+    "text": "\"大丈夫です。薬を飲んだら治ると思います。\""
   },
   "day1_lunch_riin_24": {
     "name": "カン・リイン",
-    "text": "\"Sure. But have you had headaches like this before?\""
+    "text": "\"そう。でも頭痛はよくあるの？前から？\""
   },
   "day1_lunch_riin_25": {
     "name": "私",
-    "text": "\"Sometimes. When I don't sleep well.\""
+    "text": "\"いや、たまに。よく眠れないと少し。\""
   },
   "day1_lunch_riin_26": {
     "name": "カン・リイン",
-    "text": "\"Got it. Come whenever you're not feeling well. The nurse's office is always open.\""
+    "text": "\"わかった。具合が悪くなったらいつでも来てね。保健室はいつでも開いてるから。\""
   },
   "day1_lunch_riin_27": {
     "name": "私",
-    "text": "*She's warm. The nurse's office feels so cozy I could see myself coming here often.*"
+    "text": "*温かい人だ。保健室が居心地よくて、よく来ることになりそうだ。*"
   },
   "day1_lunch_alone_1": {
     "name": "私",
-    "text": "*I climb the stairs and push open the rooftop door. A gust of wind hits me.*"
+    "text": "*階段を上って屋上のドアを開けた。風がどっと吹き込んでくる。*"
   },
   "day1_lunch_alone_2": {
     "name": "私",
-    "text": "*弁当食べながらグラウンドを見下ろす。平和だ。*"
+    "text": "*広々としている。空が広がっている。桜の花びらの香りが風に乗って漂ってくる。*"
   },
   "day1_lunch_alone_3": {
     "name": "私",
-    "text": "*一人の時間も悪くない。*"
+    "text": "*一人の時間も悪くない。初日だし、少し気持ちをリセットしたかった。*"
   },
   "day1_lunch_alone_4": {
     "name": "私",
-    "text": "*I eat a rice triangle I bought from the school store and look down at the schoolyard.*"
+    "text": "*購買で買った三角おにぎりを食べながら校庭を見下ろす。*"
   },
   "day1_lunch_alone_5": {
     "name": "私",
-    "text": "*Students are scattered in small groups. Some playing soccer, some chatting on benches. A peaceful lunch scene.*"
+    "text": "*生徒たちがあちこちに集まっている。サッカーをしている子たち、ベンチで話している子たち。平和な昼休みの光景。*"
   },
   "day1_lunch_alone_6": {
     "name": "私",
-    "text": "*The wind is nice. My head feels clearer.*"
+    "text": "*風が気持ちいい。頭がすっきりしてきた気がする。*"
   },
   "day1_lunch_alone_7": {
     "name": "私",
-    "text": "*I lean against the railing and look up at the sky. Clouds drift slowly.*"
+    "text": "*手すりにもたれて空を見上げる。雲がゆっくりと流れていく。*"
   },
   "day1_lunch_alone_8": {
     "name": "私",
-    "text": "*...Wait. Is someone in the corner of the schoolyard pointing a camera up at me?*"
+    "text": "*……あれ？校庭の端で誰かがカメラを持ってこっちを撮ってるように見えるんだけど……*"
   },
   "day1_lunch_alone_9": {
     "name": "私",
-    "text": "*No, the distance is too far — probably my imagination. Photography club maybe.*"
+    "text": "*いや、距離が遠すぎるから気のせいかも。写真部とかじゃないかな。*"
   },
   "day1_lunch_alone_10": {
     "name": "私",
-    "text": "*...There's some kind of scratch on the railing below. Carved letters? ...Actually no, it doesn't look like letters. Just an old scuff mark.*"
+    "text": "*……手すりの下に何か引っ掻いたような跡がある。刻まれた文字？……いや違う。ただの古い傷跡だろう。*"
   },
   "day1_lunch_alone_11": {
     "name": "私",
-    "text": "*A gust of wind. Beyond the rooftop door... something white flickered past.*"
+    "text": "*風が吹いた。屋上のドアの向こうに……何か白いものがよぎった気がした。*"
   },
   "day1_lunch_alone_12": {
     "name": "私",
-    "text": "*When I turned, no one was there. ...Maybe something blew in with the wind.*"
+    "text": "*振り返ったとき、誰もいなかった。……風で何か飛んできたのかな。*"
   },
   "day1_lunch_alone_13": {
     "name": "私",
-    "text": "*I finish the rice triangle and stretch. Let's do our best this afternoon.*"
+    "text": "*三角おにぎりを食べ終えてストレッチをする。午後もがんばろう。*"
   },
   "day1_lunch_end": {
     "name": "私",
-    "text": "*昼休みが終わった。午後の授業行こう。*"
+    "text": "*昼休みが終わった。午後の授業の時間だ。*"
   }
 }

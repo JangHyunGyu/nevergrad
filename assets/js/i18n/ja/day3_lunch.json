@@ -1,168 +1,168 @@
 {
-    "day3_lunch_start": {
-        "name": "私",
-        "text": "*昼休み。机の引き出しにメモが入っている。*"
-    },
-    "day3_lunch_note": {
-        "name": "私",
-        "text": "*'선배, 점심때 옥상으로 와주세요. 꼭 혼자서요. - 유나'*"
-    },
-    "day3_lunch_note_2": {
-        "name": "私",
-        "text": "*...분위기가 심상치 않다. 어떻게 할까?*"
-    },
-    "day3_lunch_choice": {
-        "name": "私",
-        "text": "*점심시간이다.*",
-        "choices": [
-            "옥상으로 간다",
-            "세아와 점심을 먹는다",
-            "보건실에 들른다",
-            "교실에 남는다"
-        ]
-    },
-    "day3_lunch_rooftop": {
-        "name": "チェ・ユナ",
-        "text": "\"先輩……来てくれたんだ。ありがとう。\""
-    },
-    "day3_lunch_rooftop_2": {
-        "name": "チェ・ユナ",
-        "text": "\"私……もう一人で抱えていられなくて。先輩にだけ見せるね。これ……\""
-    },
-    "day3_lunch_rooftop_3": {
-        "name": "私",
-        "text": "*ユナが震える手でメモリーカードを差し出す。「この中に……この学校で起きたことが記録されているんです。」*"
-    },
-    "day3_lunch_rooftop_4": {
-        "name": "チェ・ユナ",
-        "text": "\"転校してきた子たちが……一人ずつ消えていったんです。私はカメラで全部撮りました。証拠があるんです。先輩、お願い、信じて……\""
-    },
-    "day3_lunch_rooftop_5": {
-        "name": "私",
-        "text": "*……何だって？ 消えた？ 待て、あの削り取られたロッカー、連絡がつかない前の学校の友達、出席簿にいないソルファ……*"
-    },
-    "day3_lunch_rooftop_6": {
-        "name": "私",
-        "text": "*...! 갑자기 옥상 문이 '쾅' 소리와 함께 닫혔다.*"
-    },
-    "day3_lunch_door_locked": {
-        "name": "私",
-        "text": "*……！ 突然、屋上のドアが『バンッ』という音と共に閉まった。*"
-    },
-    "day3_lunch_door_locked_2": {
-        "name": "私",
-        "text": "*ドアを押してみる。開かない。外から鍵がかけられている。誰が……？*"
-    },
-    "day3_lunch_door_choice": {
-        "name": "私",
-        "text": "*どうする？*",
-        "choices": [
-            "ドアを激しく叩いて叫ぶ",
-            "静かに待つ（ユナを落ち着かせる）"
-        ]
-    },
-    "day3_lunch_door_bang": {
-        "name": "私",
-        "text": "*ドアを激しく叩いた。しばらくして『カチャッ』という音と共にドアが開いた。外には誰もいない。*"
-    },
-    "day3_lunch_door_wait": {
-        "name": "私",
-        "text": "*ユナの肩を掴んで落ち着かせた。5分ほど経って、ドアが勝手に開いた。……勝手に？ 外には誰もいない。*"
-    },
-    "day3_lunch_door_open": {
-        "name": "私",
-        "text": "*メモリーカードをポケットの奥深くにしまう。これは……後で一人で確認しなければ。*"
-    },
-    "day3_lunch_sea": {
-        "name": "ハン・セア",
-        "text": "\"오늘은 나랑 먹지? 도시락 특별히 신경 썼어.\""
-    },
-    "day3_lunch_sea_2": {
-        "name": "私",
-        "text": "*세아가 웃고 있다. ...근데 이 웃음이 어제랑 다르다. 뭔가를 숨기고 있는 웃음.*"
-    },
-    "day3_lunch_sea_3": {
-        "name": "ハン・セア",
-        "text": "\"...요즘 유나랑 자주 만나더라?\""
-    },
-    "day3_lunch_sea_4": {
-        "name": "私",
-        "text": "\"유나? 별로 안 만나는데.\""
-    },
-    "day3_lunch_sea_5": {
-        "name": "ハン・セア",
-        "text": "\"...그래?\""
-    },
-    "day3_lunch_sea_6": {
-        "name": "ハン・セア",
-        "text": "\"나한테 숨기는 거 없지, {name}?\""
-    },
-    "day3_lunch_sea_7": {
-        "name": "私",
-        "text": "*눈이 웃고 있지 않다. 확실하다. ...이 사람이 무섭다고 느낀 건 이번이 처음이다.*"
-    },
-    "day3_lunch_sea_8": {
-        "name": "ハン・セア",
-        "text": "\"...농담이야. 먹어.\""
-    },
-    "day3_lunch_riin": {
-        "name": "私",
-        "text": "*보건실에 갔다. 어젯밤 꿈 때문인지 머리가 아프다.*"
-    },
-    "day3_lunch_riin_2": {
-        "name": "カン・リイン",
-        "text": "\"얼굴색이 안 좋은데? 또 잠을 못 잤어?\""
-    },
-    "day3_lunch_riin_3": {
-        "name": "カン・リイン",
-        "text": "\"오늘은 특별히... 선생님이 만든 건강 음료 줄까? 비타민이랑 허브 블렌딩이야.\""
-    },
-    "day3_lunch_riin_4": {
-        "name": "私",
-        "text": "*연보라색 액체가 담긴 컵을 건넨다. ...뭔가 미세하게 약품 같은 냄새.*"
-    },
-    "day3_lunch_riin_choice": {
-        "name": "私",
-        "text": "*마실까?*",
-        "choices": [
-            "마신다",
-            "거절한다"
-        ]
-    },
-    "day3_lunch_riin_drink": {
-        "name": "私",
-        "text": "*마셨다. ...맛은 그럭저럭인데, 혀끝에 쓴맛이 남는다.*"
-    },
-    "day3_lunch_riin_drink_2": {
-        "name": "カン・リイン",
-        "text": "\"착하네. 금방 효과가 날 거야.\""
-    },
-    "day3_lunch_riin_refuse": {
-        "name": "カン・リイン",
-        "text": "\"...그래, 억지로 권하진 않을게.\""
-    },
-    "day3_lunch_riin_refuse_2": {
-        "name": "私",
-        "text": "*리인 선생님이 아쉬운 표정으로 컵을 가져간다.*"
-    },
-    "day3_lunch_alone": {
-        "name": "私",
-        "text": "*교실에 남아서 혼자 먹는다. 다른 학생들이 모두 나가서 교실이 텅 비어있다.*"
-    },
-    "day3_lunch_alone_2": {
-        "name": "私",
-        "text": "*...뒷자리를 본다. 설화의 자리. 책상 위에 뭔가 있다. 연필로 쓴 글씨. 흐릿하지만 읽을 수 있다.*"
-    },
-    "day3_lunch_alone_3": {
-        "name": "私",
-        "text": "*'여기서 나가'*"
-    },
-    "day3_lunch_alone_4": {
-        "name": "私",
-        "text": "*...누가 쓴 거지? 장난인가? ...지우개로 지운 흔적이 있다. 여러 번 쓰고 지운 것 같다.*"
-    },
-    "day3_lunch_end": {
-        "name": "私",
-        "text": "*教室に戻ってきた。心臓が止まらない。*"
-    }
+  "day3_lunch_start": {
+    "name": "私",
+    "text": "*昼休み。机の引き出しにメモが入っている。*"
+  },
+  "day3_lunch_note": {
+    "name": "私",
+    "text": "*'Senpai, please come to the rooftop during lunch. Come alone. - Yuna'*"
+  },
+  "day3_lunch_note_2": {
+    "name": "私",
+    "text": "*...The tone feels serious. What do I do?*"
+  },
+  "day3_lunch_choice": {
+    "name": "私",
+    "text": "*It's lunchtime.*",
+    "choices": [
+      "Go to the rooftop",
+      "Eat lunch with Sea",
+      "Stop by the nurse's office",
+      "Stay in the classroom"
+    ]
+  },
+  "day3_lunch_rooftop": {
+    "name": "チェ・ユナ",
+    "text": "\"先輩……来てくれたんだ。ありがとう。\""
+  },
+  "day3_lunch_rooftop_2": {
+    "name": "チェ・ユナ",
+    "text": "\"私……もう一人で抱えていられなくて。先輩にだけ見せるね。これ……\""
+  },
+  "day3_lunch_rooftop_3": {
+    "name": "私",
+    "text": "*ユナが震える手でメモリーカードを差し出す。「この中に……この学校で起きたことが記録されているんです。」*"
+  },
+  "day3_lunch_rooftop_4": {
+    "name": "チェ・ユナ",
+    "text": "\"転校してきた子たちが……一人ずつ消えていったんです。私はカメラで全部撮りました。証拠があるんです。先輩、お願い、信じて……\""
+  },
+  "day3_lunch_rooftop_5": {
+    "name": "私",
+    "text": "*……何だって？ 消えた？ 待て、あの削り取られたロッカー、連絡がつかない前の学校の友達、出席簿にいないソルファ……*"
+  },
+  "day3_lunch_rooftop_6": {
+    "name": "私",
+    "text": "*...! Suddenly the rooftop door slammed shut with a BANG.*"
+  },
+  "day3_lunch_door_locked": {
+    "name": "私",
+    "text": "*……！ 突然、屋上のドアが『バンッ』という音と共に閉まった。*"
+  },
+  "day3_lunch_door_locked_2": {
+    "name": "私",
+    "text": "*ドアを押してみる。開かない。外から鍵がかけられている。誰が……？*"
+  },
+  "day3_lunch_door_choice": {
+    "name": "私",
+    "text": "*どうする？*",
+    "choices": [
+      "ドアを激しく叩いて叫ぶ",
+      "静かに待つ（ユナを落ち着かせる）"
+    ]
+  },
+  "day3_lunch_door_bang": {
+    "name": "私",
+    "text": "*ドアを激しく叩いた。しばらくして『カチャッ』という音と共にドアが開いた。外には誰もいない。*"
+  },
+  "day3_lunch_door_wait": {
+    "name": "私",
+    "text": "*ユナの肩を掴んで落ち着かせた。5分ほど経って、ドアが勝手に開いた。……勝手に？ 外には誰もいない。*"
+  },
+  "day3_lunch_door_open": {
+    "name": "私",
+    "text": "*メモリーカードをポケットの奥深くにしまう。これは……後で一人で確認しなければ。*"
+  },
+  "day3_lunch_sea": {
+    "name": "ハン・セア",
+    "text": "\"You're eating with me today, right? I paid extra attention to the lunch today.\""
+  },
+  "day3_lunch_sea_2": {
+    "name": "私",
+    "text": "*Sea is smiling. ...But this smile is different from yesterday. A smile that's hiding something.*"
+  },
+  "day3_lunch_sea_3": {
+    "name": "ハン・セア",
+    "text": "\"...You've been seeing Yuna a lot lately, haven't you?\""
+  },
+  "day3_lunch_sea_4": {
+    "name": "私",
+    "text": "\"Yuna? Not that much.\""
+  },
+  "day3_lunch_sea_5": {
+    "name": "ハン・セア",
+    "text": "\"...Is that right?\""
+  },
+  "day3_lunch_sea_6": {
+    "name": "ハン・セア",
+    "text": "\"You're not hiding anything from me, are you, {name}?\""
+  },
+  "day3_lunch_sea_7": {
+    "name": "私",
+    "text": "*Her eyes aren't smiling. I'm certain. ...This is the first time I've felt scared of this person.*"
+  },
+  "day3_lunch_sea_8": {
+    "name": "ハン・セア",
+    "text": "\"...I'm joking. Eat.\""
+  },
+  "day3_lunch_riin": {
+    "name": "私",
+    "text": "*I went to the nurse's office. Maybe because of last night's dream, my head hurts.*"
+  },
+  "day3_lunch_riin_2": {
+    "name": "カン・リイン",
+    "text": "\"Your color looks off. Can't sleep again?\""
+  },
+  "day3_lunch_riin_3": {
+    "name": "カン・リイン",
+    "text": "\"Today specially... how about a health drink I made? It's a vitamin and herb blend.\""
+  },
+  "day3_lunch_riin_4": {
+    "name": "私",
+    "text": "*She hands me a cup with pale purple liquid. ...A faint, slightly medicinal smell.*"
+  },
+  "day3_lunch_riin_choice": {
+    "name": "私",
+    "text": "*Should I drink it?*",
+    "choices": [
+      "Drink it",
+      "Decline"
+    ]
+  },
+  "day3_lunch_riin_drink": {
+    "name": "私",
+    "text": "*I drank it. ...The taste is okay, but a bitter aftertaste lingers on my tongue.*"
+  },
+  "day3_lunch_riin_drink_2": {
+    "name": "カン・リイン",
+    "text": "\"Good. It'll take effect soon.\""
+  },
+  "day3_lunch_riin_refuse": {
+    "name": "カン・リイン",
+    "text": "\"...Alright, I won't force you.\""
+  },
+  "day3_lunch_riin_refuse_2": {
+    "name": "私",
+    "text": "*Nurse Riin takes the cup away with a look of disappointment.*"
+  },
+  "day3_lunch_alone": {
+    "name": "私",
+    "text": "*I stay in the classroom and eat alone. Everyone else has left so the classroom is empty.*"
+  },
+  "day3_lunch_alone_2": {
+    "name": "私",
+    "text": "*...I look at the back row. Seolhwa's seat. There's something on the desk. Writing in pencil. Faint but readable.*"
+  },
+  "day3_lunch_alone_3": {
+    "name": "私",
+    "text": "*'Get out of here'*"
+  },
+  "day3_lunch_alone_4": {
+    "name": "私",
+    "text": "*...Who wrote this? Is it a prank? ...There are traces of erasing with a rubber. It looks like it was written and erased multiple times.*"
+  },
+  "day3_lunch_end": {
+    "name": "私",
+    "text": "*教室に戻ってきた。心臓が止まらない。*"
+  }
 }

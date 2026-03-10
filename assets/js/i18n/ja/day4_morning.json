@@ -1,210 +1,210 @@
 {
-    "day4_morning_start": {
-        "name": "私",
-        "text": "*4日目の朝。目を開けた途端、昨夜の悪夢がよみがえる。*"
-    },
-    "day4_morning_start_2": {
-        "name": "私",
-        "text": "*鏡を見る。顔色が蒼白だ。目の下にクマ。*"
-    },
-    "day4_morning_start_3": {
-        "name": "私",
-        "text": "*……学校に行かなきゃ。いや、行くべきなのか？ ……行かなかったらどうなるんだ？*"
-    },
-    "day4_morning_start_4": {
-        "name": "私",
-        "text": "*거울을 본다. 얼굴이 창백하다. 눈 밑에 다크서클이 짙다. 3일 전의 나와 다른 사람 같다.*"
-    },
-    "day4_morning_start_5": {
-        "name": "私",
-        "text": "*...학교에 가야 한다. 아니, 가야 하나? 가지 않으면 어떻게 되지? 은수 선생님이 찾아올까? 세아가 연락을 할까?*"
-    },
-    "day4_morning_start_6": {
-        "name": "私",
-        "text": "*...안전 앱. 위치 추적. 이미 내 위치를 알고 있을 수도.*"
-    },
-    "day4_morning_start_7": {
-        "name": "私",
-        "text": "*가야 한다. 안 가면 더 의심받는다. 유나도 찾아야 하고.*"
-    },
-    "day4_morning_start_8": {
-        "name": "私",
-        "text": "*교복을 입는 손이 떨린다. ...떨림을 멈추려고 주먹을 쥐었다.*"
-    },
-    "day4_morning_start_9": {
-        "name": "私",
-        "text": "*...학교로 가야 한다.*"
-    },
-    "day4_morning_commute": {
-        "name": "私",
-        "text": "*학교로 가는 길. 발걸음이 무겁다.*"
-    },
-    "day4_morning_commute_2": {
-        "name": "私",
-        "text": "*어제까지는 이 길이 벚꽃이 예쁜 등굣길이었다. 오늘은... 무덤으로 가는 길 같다.*"
-    },
-    "day4_morning_commute_3": {
-        "name": "私",
-        "text": "*과장이다. 그렇지? ...과장이길 바란다.*"
-    },
-    "day4_morning_gate": {
-        "name": "私",
-        "text": "*学校の正門。雰囲気が昨日と違う。生徒たちの表情が……全部同じだ。*"
-    },
-    "day4_morning_gate_2": {
-        "name": "私",
-        "text": "*みんな笑っている。同じ微笑み。まるで練習したかのように。*"
-    },
-    "day4_morning_gate_3": {
-        "name": "私",
-        "text": "*……ウンス先生が正門の前に立っている。僕を待っていたようだ。*"
-    },
-    "day4_morning_gate_4": {
-        "name": "私",
-        "text": "*모두 웃고 있다. 똑같은 미소. 같은 각도로 올라간 입꼬리. 마치 연습한 것처럼.*"
-    },
-    "day4_morning_gate_5": {
-        "name": "私",
-        "text": "*...이게 원래 이랬나? 1일차에도 이랬나? 기억이... 확실하지 않다.*"
-    },
-    "day4_morning_gate_6": {
-        "name": "私",
-        "text": "*정문 앞에 은수 선생님이 서 있다. ...선생님이 왜 정문에? 평소에는 교무실에 계셨는데.*"
-    },
-    "day4_morning_eunsu": {
-        "name": "担任教師",
-        "text": "\"{name}、おはよう。今日は私が直接連れて行ってあげる。一緒に行こう。\""
-    },
-    "day4_morning_eunsu_2": {
-        "name": "担任教師",
-        "text": "\"手を繋いでもいい？ 学校まで安全に連れて行ってあげるから。\"",
-        "choices": [
-            "手を繋ぐ",
-            "大丈夫ですと断る"
-        ]
-    },
-    "day4_morning_eunsu_3": {
-        "name": "パク・ウンス",
-        "text": "\"손 잡아도 될까? 학교까지 안전하게 데려다줄게.\""
-    },
-    "day4_morning_eunsu_4": {
-        "name": "私",
-        "text": "*선생님이 손을 내민다. 웃고 있다. 따뜻한 미소. ...이 미소가 항상 이렇게 무서웠던가?*",
-        "choices": [
-            "손을 잡는다",
-            "괜찮다고 한다"
-        ]
-    },
-    "day4_morning_eunsu_comply": {
-        "name": "私",
-        "text": "*ウンス先生の手が冷たい。……それに力が強い。離す気がないようだ。*"
-    },
-    "day4_morning_eunsu_comply_2": {
-        "name": "パク・ウンス",
-        "text": "\"자, 같이 가자.\""
-    },
-    "day4_morning_eunsu_comply_3": {
-        "name": "私",
-        "text": "*선생님이 내 손을 잡고 교실까지 데려간다. ...호위인지, 호송인지.*"
-    },
-    "day4_morning_eunsu_refuse": {
-        "name": "担任教師",
-        "text": "\"……そう？ それなら仕方ないわね。\""
-    },
-    "day4_morning_eunsu_refuse_2": {
-        "name": "担任教師",
-        "text": "\"でも{name}、この学校では一人で歩き回らない方がいいわよ。……危険だから。\""
-    },
-    "day4_morning_eunsu_refuse_3": {
-        "name": "パク・ウンス",
-        "text": "\"하지만 {name}, 이 학교에서는 혼자 돌아다니지 않는 게 좋아.\""
-    },
-    "day4_morning_eunsu_refuse_4": {
-        "name": "パク・ウンス",
-        "text": "\"...**위험하니까.**\""
-    },
-    "day4_morning_classroom": {
-        "name": "私",
-        "text": "*教室に入った。一つ席が空いている。*"
-    },
-    "day4_morning_classroom_2": {
-        "name": "私",
-        "text": "*ユナの席。空いている。カバンもない。誰も気にしていない。*"
-    },
-    "day4_morning_classroom_3": {
-        "name": "私",
-        "text": "*セアが近づいてくる。*"
-    },
-    "day4_morning_classroom_4": {
-        "name": "私",
-        "text": "*...아무도 신경 쓰지 않는다. 옆 자리 학생이 유나의 빈 자리를 멀뚱멀뚱 보다가 시선을 돌린다.*"
-    },
-    "day4_morning_classroom_5": {
-        "name": "私",
-        "text": "\"유나가 안 왔는데...\""
-    },
-    "day4_morning_sea": {
-        "name": "ハン・セア",
-        "text": "\"おはよう、{name}！ 昨日はよく眠れた？\""
-    },
-    "day4_morning_sea_2": {
-        "name": "ハン・セア",
-        "text": "\"……ユナ？ ああ、あの子転校したんだって。元の学校に戻ったらしいよ。\""
-    },
-    "day4_morning_sea_3": {
-        "name": "ハン・セア",
-        "text": "\"気にしなくていいよ。{name}には私がいるでしょ。\""
-    },
-    "day4_morning_sea_4": {
-        "name": "私",
-        "text": "*갑자기 전학? 어젯밤에? 유나가 그런 말을 한 적 없는데... 어제 유나는 나한테 메모리카드를 줬다. '전학생이 사라졌다'고 했다. 그런 애가 갑자기 전학을?*"
-    },
-    "day4_morning_sea_5": {
-        "name": "ハン・セア",
-        "text": "\"신경 쓸 거 없어. {name}한테는 내가 있으니까.\""
-    },
-    "day4_morning_sea_6": {
-        "name": "私",
-        "text": "*세아가 웃는다. ...이 웃음이 오늘따라 유난히 차갑다.*"
-    },
-    "day4_morning_class_start": {
-        "name": "担任教師",
-        "text": "\"さあ、授業を始めましょう。今日は特別授業よ。\""
-    },
-    "day4_morning_class_2": {
-        "name": "担任教師",
-        "text": "\"『帰属』について話してみましょうか。あなたたちはこの学校に『帰属』しているの。この学校の一部なのよ。\""
-    },
-    "day4_morning_class_3": {
-        "name": "担任教師",
-        "text": "\"この学校を離れようとすることは……自分の一部を捨てることと同じよ。そうでしょう、{name}？\""
-    },
-    "day4_morning_class_4": {
-        "name": "私",
-        "text": "*……先生が僕だけを見ている。教室中の視線が僕に向いている。*"
-    },
-    "day4_morning_class_5": {
-        "name": "パク・ウンス",
-        "text": "\"하지만 이 학교를 떠나려는 건... 자신의 일부를 버리는 것과 같아.\""
-    },
-    "day4_morning_class_6": {
-        "name": "パク・ウンス",
-        "text": "\"**그렇지, {name}?**\""
-    },
-    "day4_morning_class_7": {
-        "name": "私",
-        "text": "*...선생님이 나만 보고 있다. 교실의 모든 시선이 나를 향한다. 30쌍의 눈. 전부 웃고 있다. 전부 같은 미소.*"
-    },
-    "day4_morning_class_8": {
-        "name": "私",
-        "text": "\"...네.\""
-    },
-    "day4_morning_class_9": {
-        "name": "私",
-        "text": "*그 한마디가 입에서 간신히 나왔다. 선생님이 만족스럽게 웃는다. ...이 교실에서 나가고 싶다. 지금 당장.*"
-    },
-    "day4_morning_end": {
-        "name": "私",
-        "text": "*午前の授業が終わった。息が詰まる。*"
-    }
+  "day4_morning_start": {
+    "name": "私",
+    "text": "*4日目の朝。目を開けた途端、昨夜の悪夢がよみがえる。*"
+  },
+  "day4_morning_start_2": {
+    "name": "私",
+    "text": "*鏡を見る。顔色が蒼白だ。目の下にクマ。*"
+  },
+  "day4_morning_start_3": {
+    "name": "私",
+    "text": "*……学校に行かなきゃ。いや、行くべきなのか？ ……行かなかったらどうなるんだ？*"
+  },
+  "day4_morning_start_4": {
+    "name": "私",
+    "text": "*I look in the mirror. My face is pale. Dark circles under my eyes are deep. I look like a different person from three days ago.*"
+  },
+  "day4_morning_start_5": {
+    "name": "私",
+    "text": "*...I have to go to school. Or do I? What happens if I don't go? Will Ms. Eunsu come looking for me? Will Sea contact me?*"
+  },
+  "day4_morning_start_6": {
+    "name": "私",
+    "text": "*...The safety app. Location tracking. They might already know where I am.*"
+  },
+  "day4_morning_start_7": {
+    "name": "私",
+    "text": "*I have to go. Not going would only make them more suspicious. I also need to find Yuna.*"
+  },
+  "day4_morning_start_8": {
+    "name": "私",
+    "text": "*My hands tremble as I put on my uniform. ...I clenched my fist to stop the shaking.*"
+  },
+  "day4_morning_start_9": {
+    "name": "私",
+    "text": "*...I have to go to school.*"
+  },
+  "day4_morning_commute": {
+    "name": "私",
+    "text": "*The walk to school. My steps are heavy.*"
+  },
+  "day4_morning_commute_2": {
+    "name": "私",
+    "text": "*Until yesterday this was a beautiful cherry-blossom commute. Today... it feels like a path to a grave.*"
+  },
+  "day4_morning_commute_3": {
+    "name": "私",
+    "text": "*That's an exaggeration. Right? ...I hope it's an exaggeration.*"
+  },
+  "day4_morning_gate": {
+    "name": "私",
+    "text": "*学校の正門。雰囲気が昨日と違う。生徒たちの表情が……全部同じだ。*"
+  },
+  "day4_morning_gate_2": {
+    "name": "私",
+    "text": "*みんな笑っている。同じ微笑み。まるで練習したかのように。*"
+  },
+  "day4_morning_gate_3": {
+    "name": "私",
+    "text": "*……ウンス先生が正門の前に立っている。僕を待っていたようだ。*"
+  },
+  "day4_morning_gate_4": {
+    "name": "私",
+    "text": "*Everyone is smiling. The exact same smile. Corners of the mouth lifted at the same angle. As if rehearsed.*"
+  },
+  "day4_morning_gate_5": {
+    "name": "私",
+    "text": "*...Was it always like this? Was it like this on day 1? My memory... isn't certain.*"
+  },
+  "day4_morning_gate_6": {
+    "name": "私",
+    "text": "*Ms. Eunsu is standing at the front gate. ...Why is the teacher at the gate? She was usually in the faculty office.*"
+  },
+  "day4_morning_eunsu": {
+    "name": "担任教師",
+    "text": "\"{name}、おはよう。今日は私が直接連れて行ってあげる。一緒に行こう。\""
+  },
+  "day4_morning_eunsu_2": {
+    "name": "担任教師",
+    "text": "\"手を繋いでもいい？ 学校まで安全に連れて行ってあげるから。\"",
+    "choices": [
+      "手を繋ぐ",
+      "大丈夫ですと断る"
+    ]
+  },
+  "day4_morning_eunsu_3": {
+    "name": "パク・ウンス",
+    "text": "\"May I hold your hand? I'll get you to school safely.\""
+  },
+  "day4_morning_eunsu_4": {
+    "name": "私",
+    "text": "*The teacher holds out her hand. She's smiling. A warm smile. ...Was this smile always this scary?*",
+    "choices": [
+      "Take her hand",
+      "Say I'm fine"
+    ]
+  },
+  "day4_morning_eunsu_comply": {
+    "name": "私",
+    "text": "*ウンス先生の手が冷たい。……それに力が強い。離す気がないようだ。*"
+  },
+  "day4_morning_eunsu_comply_2": {
+    "name": "パク・ウンス",
+    "text": "\"Alright, let's go.\""
+  },
+  "day4_morning_eunsu_comply_3": {
+    "name": "私",
+    "text": "*The teacher takes my hand and leads me to the classroom. ...Whether this is an escort or a march, I can't tell.*"
+  },
+  "day4_morning_eunsu_refuse": {
+    "name": "担任教師",
+    "text": "\"……そう？ それなら仕方ないわね。\""
+  },
+  "day4_morning_eunsu_refuse_2": {
+    "name": "担任教師",
+    "text": "\"でも{name}、この学校では一人で歩き回らない方がいいわよ。……危険だから。\""
+  },
+  "day4_morning_eunsu_refuse_3": {
+    "name": "パク・ウンス",
+    "text": "\"But {name}, it's best not to wander alone in this school.\""
+  },
+  "day4_morning_eunsu_refuse_4": {
+    "name": "パク・ウンス",
+    "text": "\"...**It's dangerous.**\""
+  },
+  "day4_morning_classroom": {
+    "name": "私",
+    "text": "*教室に入った。一つ席が空いている。*"
+  },
+  "day4_morning_classroom_2": {
+    "name": "私",
+    "text": "*ユナの席。空いている。カバンもない。誰も気にしていない。*"
+  },
+  "day4_morning_classroom_3": {
+    "name": "私",
+    "text": "*セアが近づいてくる。*"
+  },
+  "day4_morning_classroom_4": {
+    "name": "私",
+    "text": "*...Nobody notices. The student at the adjacent seat stares blankly at Yuna's empty seat and then looks away.*"
+  },
+  "day4_morning_classroom_5": {
+    "name": "私",
+    "text": "\"Yuna didn't come...\""
+  },
+  "day4_morning_sea": {
+    "name": "ハン・セア",
+    "text": "\"おはよう、{name}！ 昨日はよく眠れた？\""
+  },
+  "day4_morning_sea_2": {
+    "name": "ハン・セア",
+    "text": "\"……ユナ？ ああ、あの子転校したんだって。元の学校に戻ったらしいよ。\""
+  },
+  "day4_morning_sea_3": {
+    "name": "ハン・セア",
+    "text": "\"気にしなくていいよ。{name}には私がいるでしょ。\""
+  },
+  "day4_morning_sea_4": {
+    "name": "私",
+    "text": "*Suddenly transferred? Last night? Yuna never said anything like that... yesterday Yuna gave me a memory card. Said that 'transfer students disappeared.' Someone who said that suddenly transferred?*"
+  },
+  "day4_morning_sea_5": {
+    "name": "ハン・セア",
+    "text": "\"Don't worry about it. You have me, {name}.\""
+  },
+  "day4_morning_sea_6": {
+    "name": "私",
+    "text": "*Sea smiles. ...That smile feels particularly cold today.*"
+  },
+  "day4_morning_class_start": {
+    "name": "担任教師",
+    "text": "\"さあ、授業を始めましょう。今日は特別授業よ。\""
+  },
+  "day4_morning_class_2": {
+    "name": "担任教師",
+    "text": "\"『帰属』について話してみましょうか。あなたたちはこの学校に『帰属』しているの。この学校の一部なのよ。\""
+  },
+  "day4_morning_class_3": {
+    "name": "担任教師",
+    "text": "\"この学校を離れようとすることは……自分の一部を捨てることと同じよ。そうでしょう、{name}？\""
+  },
+  "day4_morning_class_4": {
+    "name": "私",
+    "text": "*……先生が僕だけを見ている。教室中の視線が僕に向いている。*"
+  },
+  "day4_morning_class_5": {
+    "name": "パク・ウンス",
+    "text": "\"But trying to leave this school... is like throwing away a part of yourself.\""
+  },
+  "day4_morning_class_6": {
+    "name": "パク・ウンス",
+    "text": "\"Isn't that right, **{name}?**\""
+  },
+  "day4_morning_class_7": {
+    "name": "私",
+    "text": "*...The teacher is only looking at me. Every pair of eyes in the classroom is pointed my way. 30 pairs of eyes. All smiling. All with the same smile.*"
+  },
+  "day4_morning_class_8": {
+    "name": "私",
+    "text": "\"...Yes.\""
+  },
+  "day4_morning_class_9": {
+    "name": "私",
+    "text": "*That one word barely made it out of my mouth. The teacher smiles with satisfaction. ...I want to get out of this classroom. Right now.*"
+  },
+  "day4_morning_end": {
+    "name": "私",
+    "text": "*午前の授業が終わった。息が詰まる。*"
+  }
 }

@@ -1,246 +1,246 @@
 {
-    "day5_after_start": {
-        "name": "私",
-        "text": "*……*"
-    },
-    "day5_after_branch": {
-        "name": "",
-        "text": ""
-    },
-    "day5_after_escaped": {
-        "name": "私",
-        "text": "*学校の外。雨が降っている。初めて……学校の外の空気を吸う。*"
-    },
-    "day5_after_escaped_2": {
-        "name": "私",
-        "text": "*走った。どこへでもいい。この学校からできるだけ遠くへ。*"
-    },
-    "day5_after_escaped_3": {
-        "name": "私",
-        "text": "*一人だ。でも生きている。*"
-    },
-    "day5_after_escaped_4": {
-        "name": "私",
-        "text": "*この証拠を世間に知らせなければ。今すぐに。*"
-    },
-    "day5_after_escaped_5": {
-        "name": "私",
-        "text": "*비가 내리고 있다. 빗방울이 얼굴을 때린다. 차갑다. 하지만 이 차가움이... 살아있다는 증거다.*"
-    },
-    "day5_after_escaped_6": {
-        "name": "私",
-        "text": "*처음으로... 이 학교에 온 뒤로 처음으로, 학교 밖 공기를 마신다.*"
-    },
-    "day5_after_escaped_7": {
-        "name": "私",
-        "text": "*숨을 들이쉬었다. 깊게. 폐가 터질 것 같을 만큼. ...냄새가 다르다. 소독약 냄새가 아니다. 벚꽃 냄새가 아니다. 그냥 비 냄새. 흙 냄새. 세상의 냄새.*"
-    },
-    "day5_after_escaped_8": {
-        "name": "私",
-        "text": "*뛰었다. 어디로든. 이 학교에서 최대한 멀리. 다리가 떨린다. 무릎이 풀린다. 그래도 뛴다.*"
-    },
-    "day5_after_escaped_yuna_branch": {
-        "name": "",
-        "text": ""
-    },
-    "day5_after_escaped_yuna": {
-        "name": "私",
-        "text": "*ユナが泣いている。僕も泣いている。*"
-    },
-    "day5_after_escaped_yuna_2": {
-        "name": "私",
-        "text": "*뛰다가 멈췄다. 학교에서 충분히 멀어진 뒤에. 가로등 밑에서.*"
-    },
-    "day5_after_escaped_yuna_3": {
-        "name": "チェ・ユナ",
-        "text": "\"선배...\""
-    },
-    "day5_after_escaped_yuna_4": {
-        "name": "チェ・ユナ",
-        "text": "\"우리 나왔어요...\""
-    },
-    "day5_after_escaped_yuna_5": {
-        "name": "私",
-        "text": "\"나왔어. 나왔어, 유나.\""
-    },
-    "day5_after_escaped_solo": {
-        "name": "私",
-        "text": "*ユナを置いてきた。……ごめん。*"
-    },
-    "day5_after_escaped_solo_2": {
-        "name": "私",
-        "text": "*멈출 수 없다. 아직 충분히 멀지 않다. 더. 더 멀리.*"
-    },
-    "day5_after_escaped_choice": {
-        "name": "私",
-        "text": "*どうする。*",
-        "choices": [
-            "警察に通報する",
-            "インターネットに公開する"
-        ]
-    },
-    "day5_after_police": {
-        "name": "私",
-        "text": "*警察に電話した。声が震えているが、すべてを説明した。メモリーカードと写真を証拠として提出した。*"
-    },
-    "day5_after_police_2": {
-        "name": "私",
-        "text": "*警察が出動した。サイレンの音が学校の方角から聞こえる。*"
-    },
-    "day5_after_expose_online": {
-        "name": "私",
-        "text": "*コンビニのWi-Fiに接続した。すべての写真と文書をアップロードする。SNS、ニュース投稿、掲示板……*"
-    },
-    "day5_after_expose_2": {
-        "name": "私",
-        "text": "*アップロード完了。……もうすぐ世間が知ることになる。*"
-    },
-    "day5_after_captured": {
-        "name": "私",
-        "text": "*……目が覚めた。地下室だ。蛍光灯がちらついている。*"
-    },
-    "day5_after_captured_2": {
-        "name": "私",
-        "text": "*手が縛られている。椅子に座らされている。……終わったのか？*"
-    },
-    "day5_after_captured_3": {
-        "name": "担任教師",
-        "text": "\"目が覚めたのね、{name}。……逃げようとしたの？\""
-    },
-    "day5_after_captured_4": {
-        "name": "保健教師",
-        "text": "\"最後の検診の準備をするわ。採血と点滴を繋ぐだけよ。\""
-    },
-    "day5_after_captured_5": {
-        "name": "私",
-        "text": "*……諦めようか？*",
-        "choices": [
-            "抵抗する",
-            "受け入れる"
-        ]
-    },
-    "day5_after_captured_6": {
-        "name": "パク・ウンス",
-        "text": "\"...도망치려고 했어? 선생님이 얼마나 걱정했는지 알아?\""
-    },
-    "day5_after_captured_7": {
-        "name": "カン・リイン",
-        "text": "\"마지막 검진 준비할게.\""
-    },
-    "day5_after_captured_8": {
-        "name": "カン・リイン",
-        "text": "\"채혈이랑 수액만 연결하면 끝나. 이번이 마지막이야.\""
-    },
-    "day5_after_captured_9": {
-        "name": "私",
-        "text": "*'마지막'. 그 단어가 무겁다. 이게 끝나면... 어떻게 되는 거지? 설화처럼?*"
-    },
-    "day5_after_captured_10": {
-        "name": "私",
-        "text": "*리인 선생님이 팔꿈치 안쪽을 소독한다. 알코올 솜의 차가움이 피부에 닿는다. ...여기서 포기하면 안 된다. 아직 끝나지 않았다.*"
-    },
-    "day5_after_captured_choice": {
-        "name": "私",
-        "text": "*...어떻게 할까.*",
-        "choices": [
-            "저항한다",
-            "받아들인다"
-        ]
-    },
-    "day5_after_captured_resist": {
-        "name": "私",
-        "text": "*椅子ごと倒した！ 縛られた手で立ち上がる。*"
-    },
-    "day5_after_captured_resist_2": {
-        "name": "イ・ソルファ",
-        "text": "\"……私が助けてあげる。\""
-    },
-    "day5_after_captured_resist_3": {
-        "name": "私",
-        "text": "*突然停電になった。地下室が闇に包まれる。混乱の中で……出口を見つけた。*"
-    },
-    "day5_after_captured_resist_4": {
-        "name": "私",
-        "text": "*그 순간. 전기가 나갔다.*"
-    },
-    "day5_after_captured_resist_5": {
-        "name": "パク・ウンス",
-        "text": "\"...뭐야?\""
-    },
-    "day5_after_captured_resist_6": {
-        "name": "カン・リイン",
-        "text": "\"정전? 이 시간에?\""
-    },
-    "day5_after_captured_resist_7": {
-        "name": "私",
-        "text": "*어둠 속에서... 손이 느껴진다. 차갑고 투명한 손. 가죽 끈을 풀어주고 있다.*"
-    },
-    "day5_after_captured_resist_8": {
-        "name": "私",
-        "text": "*...설화. 끈이 풀렸다. 설화가 내 손을 잡는다. 투명한 손이라 잡히지 않을 줄 알았는데... 잡힌다.*"
-    },
-    "day5_after_captured_resist_9": {
-        "name": "私",
-        "text": "*어둠 속에서 끌려간다. 발소리를 죽이며. 비상구를 향해.*"
-    },
-    "day5_after_captured_submit": {
-        "name": "保健教師",
-        "text": "\"いい子ね。すぐ終わるわ。全部忘れられるから。\""
-    },
-    "day5_after_captured_submit_2": {
-        "name": "私",
-        "text": "*注射針が腕に触れる瞬間。意識が……薄れていく……*"
-    },
-    "day5_after_captured_submit_3": {
-        "name": "私",
-        "text": "*...따뜻해진다. 몸이 녹는 것 같다. 생각이 흐려진다.*"
-    },
-    "day5_after_captured_submit_4": {
-        "name": "私",
-        "text": "*뭔가를... 잊고 있다. 뭘 잊고 있지? 중요한 건데... 뭐였지...*"
-    },
-    "day5_after_stayed": {
-        "name": "担任教師",
-        "text": "\"……よく考えたわね、{name}。これでいいの。\""
-    },
-    "day5_after_stayed_2": {
-        "name": "担任教師",
-        "text": "\"先生が全部守ってあげる。何も心配しなくていいのよ。\""
-    },
-    "day5_after_stayed_3": {
-        "name": "担任教師",
-        "text": "\"……{name}は先生のそばにいればいいの。永遠に。\""
-    },
-    "day5_after_stayed_4": {
-        "name": "私",
-        "text": "*ウンス先生が笑っている。温かい微笑み。……この微笑みがいつもこんなに怖かっただろうか。*"
-    },
-    "day5_after_stayed_5": {
-        "name": "パク・ウンス",
-        "text": "\"선생님이 다 지켜줄게. 아무것도 걱정할 필요 없어.\""
-    },
-    "day5_after_stayed_6": {
-        "name": "私",
-        "text": "*자리에 앉았다. 세아가 내 옆에 앉는다. 리인 선생님이 차를 건넨다.*"
-    },
-    "day5_after_stayed_7": {
-        "name": "パク・ウンス",
-        "text": "\"...{name}은 선생님 곁에 있으면 돼. 영원히.\""
-    },
-    "day5_after_stayed_8": {
-        "name": "私",
-        "text": "*은수 선생님이 웃고 있다. 따뜻한 미소.*"
-    },
-    "day5_after_stayed_9": {
-        "name": "私",
-        "text": "*...이 미소가 항상 이렇게 무서웠던가. 아니. 무섭지 않다. ...무섭지 않다. ...왜 무섭지 않지?*"
-    },
-    "day5_after_stayed_10": {
-        "name": "私",
-        "text": "*차를 마셨다. 따뜻하다. 좋다. ...뭔가 잊고 있는 것 같은데. 뭐였지. ...괜찮다. 잊어도 된다. 여기는 안전하니까.*"
-    },
-    "day5_after_end": {
-        "name": "私",
-        "text": "*……*"
-    }
+  "day5_after_start": {
+    "name": "私",
+    "text": "*……*"
+  },
+  "day5_after_branch": {
+    "name": "",
+    "text": ""
+  },
+  "day5_after_escaped": {
+    "name": "私",
+    "text": "*学校の外。雨が降っている。初めて……学校の外の空気を吸う。*"
+  },
+  "day5_after_escaped_2": {
+    "name": "私",
+    "text": "*走った。どこへでもいい。この学校からできるだけ遠くへ。*"
+  },
+  "day5_after_escaped_3": {
+    "name": "私",
+    "text": "*一人だ。でも生きている。*"
+  },
+  "day5_after_escaped_4": {
+    "name": "私",
+    "text": "*この証拠を世間に知らせなければ。今すぐに。*"
+  },
+  "day5_after_escaped_5": {
+    "name": "私",
+    "text": "*It's raining. Raindrops hit my face. Cold. But this coldness... is proof that I'm alive.*"
+  },
+  "day5_after_escaped_6": {
+    "name": "私",
+    "text": "*For the first time... since coming to this school, for the very first time, I breathe air outside it.*"
+  },
+  "day5_after_escaped_7": {
+    "name": "私",
+    "text": "*I inhaled. Deep. So deep it felt like my lungs might burst. ...The smell is different. Not disinfectant. Not cherry blossoms. Just the smell of rain. Smell of earth. The smell of the world.*"
+  },
+  "day5_after_escaped_8": {
+    "name": "私",
+    "text": "*I ran. Anywhere. As far as possible from this school. My legs are trembling. My knees buckle. I still run.*"
+  },
+  "day5_after_escaped_yuna_branch": {
+    "name": "",
+    "text": ""
+  },
+  "day5_after_escaped_yuna": {
+    "name": "私",
+    "text": "*ユナが泣いている。僕も泣いている。*"
+  },
+  "day5_after_escaped_yuna_2": {
+    "name": "私",
+    "text": "*We ran until we stopped. After getting far enough from the school. Under a streetlight.*"
+  },
+  "day5_after_escaped_yuna_3": {
+    "name": "チェ・ユナ",
+    "text": "\"Senpai...\""
+  },
+  "day5_after_escaped_yuna_4": {
+    "name": "チェ・ユナ",
+    "text": "\"We made it out...\""
+  },
+  "day5_after_escaped_yuna_5": {
+    "name": "私",
+    "text": "\"We made it. We made it, Yuna.\""
+  },
+  "day5_after_escaped_solo": {
+    "name": "私",
+    "text": "*ユナを置いてきた。……ごめん。*"
+  },
+  "day5_after_escaped_solo_2": {
+    "name": "私",
+    "text": "*I can't stop. Not far enough yet. More. Further.*"
+  },
+  "day5_after_escaped_choice": {
+    "name": "私",
+    "text": "*どうする。*",
+    "choices": [
+      "警察に通報する",
+      "インターネットに公開する"
+    ]
+  },
+  "day5_after_police": {
+    "name": "私",
+    "text": "*警察に電話した。声が震えているが、すべてを説明した。メモリーカードと写真を証拠として提出した。*"
+  },
+  "day5_after_police_2": {
+    "name": "私",
+    "text": "*警察が出動した。サイレンの音が学校の方角から聞こえる。*"
+  },
+  "day5_after_expose_online": {
+    "name": "私",
+    "text": "*コンビニのWi-Fiに接続した。すべての写真と文書をアップロードする。SNS、ニュース投稿、掲示板……*"
+  },
+  "day5_after_expose_2": {
+    "name": "私",
+    "text": "*アップロード完了。……もうすぐ世間が知ることになる。*"
+  },
+  "day5_after_captured": {
+    "name": "私",
+    "text": "*……目が覚めた。地下室だ。蛍光灯がちらついている。*"
+  },
+  "day5_after_captured_2": {
+    "name": "私",
+    "text": "*手が縛られている。椅子に座らされている。……終わったのか？*"
+  },
+  "day5_after_captured_3": {
+    "name": "担任教師",
+    "text": "\"目が覚めたのね、{name}。……逃げようとしたの？\""
+  },
+  "day5_after_captured_4": {
+    "name": "保健教師",
+    "text": "\"最後の検診の準備をするわ。採血と点滴を繋ぐだけよ。\""
+  },
+  "day5_after_captured_5": {
+    "name": "私",
+    "text": "*……諦めようか？*",
+    "choices": [
+      "抵抗する",
+      "受け入れる"
+    ]
+  },
+  "day5_after_captured_6": {
+    "name": "パク・ウンス",
+    "text": "\"...You tried to run? Do you know how worried I was?\""
+  },
+  "day5_after_captured_7": {
+    "name": "カン・リイン",
+    "text": "\"I'll prepare for the final checkup.\""
+  },
+  "day5_after_captured_8": {
+    "name": "カン・リイン",
+    "text": "\"Just a blood draw and an IV drip and it's done. This is the last time.\""
+  },
+  "day5_after_captured_9": {
+    "name": "私",
+    "text": "*'Last.' That word weighs heavy. Once this is over... what happens? Like Seolhwa?*"
+  },
+  "day5_after_captured_10": {
+    "name": "私",
+    "text": "*Nurse Riin disinfects the inside of my elbow. The coldness of the alcohol swab touches my skin. ...I can't give up here. It's not over yet.*"
+  },
+  "day5_after_captured_choice": {
+    "name": "私",
+    "text": "*...What do I do?*",
+    "choices": [
+      "Resist",
+      "Accept it"
+    ]
+  },
+  "day5_after_captured_resist": {
+    "name": "私",
+    "text": "*椅子ごと倒した！ 縛られた手で立ち上がる。*"
+  },
+  "day5_after_captured_resist_2": {
+    "name": "イ・ソルファ",
+    "text": "\"……私が助けてあげる。\""
+  },
+  "day5_after_captured_resist_3": {
+    "name": "私",
+    "text": "*突然停電になった。地下室が闇に包まれる。混乱の中で……出口を見つけた。*"
+  },
+  "day5_after_captured_resist_4": {
+    "name": "私",
+    "text": "*That moment. The power went out.*"
+  },
+  "day5_after_captured_resist_5": {
+    "name": "パク・ウンス",
+    "text": "\"...What?\""
+  },
+  "day5_after_captured_resist_6": {
+    "name": "カン・リイン",
+    "text": "\"A blackout? At this hour?\""
+  },
+  "day5_after_captured_resist_7": {
+    "name": "私",
+    "text": "*In the darkness... I feel a hand. A cold, transparent hand. It's loosening the leather strap.*"
+  },
+  "day5_after_captured_resist_8": {
+    "name": "私",
+    "text": "*...Seolhwa. The strap came undone. Seolhwa takes my hand. I thought a transparent hand couldn't grasp anything... but it holds.*"
+  },
+  "day5_after_captured_resist_9": {
+    "name": "私",
+    "text": "*I'm pulled through the darkness. Muffling my footsteps. Toward the emergency exit.*"
+  },
+  "day5_after_captured_submit": {
+    "name": "保健教師",
+    "text": "\"いい子ね。すぐ終わるわ。全部忘れられるから。\""
+  },
+  "day5_after_captured_submit_2": {
+    "name": "私",
+    "text": "*注射針が腕に触れる瞬間。意識が……薄れていく……*"
+  },
+  "day5_after_captured_submit_3": {
+    "name": "私",
+    "text": "*...It gets warm. It feels like my body is melting. My thoughts blur.*"
+  },
+  "day5_after_captured_submit_4": {
+    "name": "私",
+    "text": "*There's something... I'm forgetting. What am I forgetting? It was important... what was it...*"
+  },
+  "day5_after_stayed": {
+    "name": "担任教師",
+    "text": "\"……よく考えたわね、{name}。これでいいの。\""
+  },
+  "day5_after_stayed_2": {
+    "name": "担任教師",
+    "text": "\"先生が全部守ってあげる。何も心配しなくていいのよ。\""
+  },
+  "day5_after_stayed_3": {
+    "name": "担任教師",
+    "text": "\"……{name}は先生のそばにいればいいの。永遠に。\""
+  },
+  "day5_after_stayed_4": {
+    "name": "私",
+    "text": "*ウンス先生が笑っている。温かい微笑み。……この微笑みがいつもこんなに怖かっただろうか。*"
+  },
+  "day5_after_stayed_5": {
+    "name": "パク・ウンス",
+    "text": "\"Your teacher will protect you from everything. You don't need to worry about anything.\""
+  },
+  "day5_after_stayed_6": {
+    "name": "私",
+    "text": "*I sat down. Sea sits next to me. Nurse Riin hands over a cup of tea.*"
+  },
+  "day5_after_stayed_7": {
+    "name": "パク・ウンス",
+    "text": "\"...{name} just needs to be by your teacher's side. Forever.\""
+  },
+  "day5_after_stayed_8": {
+    "name": "私",
+    "text": "*Ms. Eunsu is smiling. A warm smile.*"
+  },
+  "day5_after_stayed_9": {
+    "name": "私",
+    "text": "*...Was this smile always this frightening? No. It's not frightening. ...It's not frightening. ...Why isn't it frightening?*"
+  },
+  "day5_after_stayed_10": {
+    "name": "私",
+    "text": "*I drank the tea. It's warm. It feels good. ...There's something I feel like I'm forgetting. What was it. ...It's fine. I can forget it. This place is safe.*"
+  },
+  "day5_after_end": {
+    "name": "私",
+    "text": "*……*"
+  }
 }

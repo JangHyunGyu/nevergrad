@@ -1,200 +1,200 @@
 {
-    "day3_after_start": {
-        "name": "私",
-        "text": "*放課後。今日に限って学校が妙に静かだ。*"
-    },
-    "day3_after_choice": {
-        "name": "私",
-        "text": "*放課後の時間だ。*",
-        "choices": [
-            "保健室に寄る",
-            "セアと一緒に行く",
-            "職員室に寄る",
-            "一人で残る"
-        ]
-    },
-    "day3_after_riin": {
-        "name": "保健教師",
-        "text": "\"あら、{name}。ちょうどよかった。今日はちょっと疲れて見えるけど？\""
-    },
-    "day3_after_riin_2": {
-        "name": "保健教師",
-        "text": "\"ここに座って。私が特別に作った健康ドリンクがあるの。ビタミンとハーブのブレンドよ。\""
-    },
-    "day3_after_riin_3": {
-        "name": "私",
-        "text": "*リインが薄紫色の液体が入ったカップを渡してくる。……ちょっと変な匂いがするんだけど。*"
-    },
-    "day3_after_riin_flicker": {
-        "name": "",
-        "text": "도망쳐"
-    },
-    "day3_after_riin_choice": {
-        "name": "私",
-        "text": "*飲もうか？*",
-        "choices": [
-            "飲む",
-            "丁重に断る"
-        ]
-    },
-    "day3_after_riin_drink": {
-        "name": "リイン",
-        "text": "\"いい子ね。すぐに効果が出るわよ。\""
-    },
-    "day3_after_riin_drink_2": {
-        "name": "私",
-        "text": "*飲んだ。……苦味が舌先に残る。ちょっと待って、視界がちょっと……*"
-    },
-    "day3_after_riin_drink_3": {
-        "name": "私",
-        "text": "*……いや、大丈夫だ。ただ疲れているだけだろう。*"
-    },
-    "day3_after_riin_refuse": {
-        "name": "リイン",
-        "text": "\"……そう？ 残念ね。\""
-    },
-    "day3_after_riin_refuse_2": {
-        "name": "リイン",
-        "text": "\"いいわ、今度飲めばいいもの。……今度は必ず飲んでくれる？\""
-    },
-    "day3_after_sea": {
-        "name": "ハン・セア",
-        "text": "\"{name}、一緒に行こう。今日新しくできたパン屋さんに行ってみたいの！\""
-    },
-    "day3_after_sea_2": {
-        "name": "私",
-        "text": "*セアと廊下を歩く。いつも通り明るいけど……*"
-    },
-    "day3_after_sea_choice": {
-        "name": "私",
-        "text": "*何て答えよう？*",
-        "choices": [
-            "正直に話す",
-            "ごまかす"
-        ]
-    },
-    "day3_after_sea_truth": {
-        "name": "ハン・セア",
-        "text": "\"……ユナと二人きりで。そうなんだ。\""
-    },
-    "day3_after_sea_truth_2": {
-        "name": "私",
-        "text": "*セアは笑っている。笑っているのに……目が笑っていない。*"
-    },
-    "day3_after_sea_truth_3": {
-        "name": "私",
-        "text": "*세아가 창밖을 본다. 한참을.*"
-    },
-    "day3_after_sea_truth_4": {
-        "name": "ハン・セア",
-        "text": "\"...나도 가끔 생각해. 내가 왜 이러고 있는 건지.\""
-    },
-    "day3_after_sea_truth_5": {
-        "name": "私",
-        "text": "*세아가 말을 멈추고 고개를 흔든다. 뭔가 말하려다 삼킨 것 같다.*"
-    },
-    "day3_after_sea_truth_6": {
-        "name": "ハン・セア",
-        "text": "\"...아무것도 아니야. 잊어.\""
-    },
-    "day3_after_sea_truth_7": {
-        "name": "私",
-        "text": "*세아가 다시 웃는다. 이번에는 눈도 웃고 있다. 하지만 아까의 그 순간이... 연기가 아니었다는 건 알겠다.*"
-    },
-    "day3_after_sea_lie": {
-        "name": "ハン・セア",
-        "text": "\"そう？ よかった。一人で寂しかったんだから！\""
-    },
-    "day3_after_sea_lie_2": {
-        "name": "私",
-        "text": "*セアが僕の腕を掴んだ。いつもより力が強い。*"
-    },
-    "day3_after_eunsu": {
-        "name": "担任教師",
-        "text": "\"あら、{name}。まだ帰ってなかったの？ 私も残業よ、あはは。\""
-    },
-    "day3_after_eunsu_2": {
-        "name": "私",
-        "text": "*先生が書類の山に埋もれている。隙間から何かが見える。*"
-    },
-    "day3_after_eunsu_3": {
-        "name": "担任教師",
-        "text": "\"ちょっと待ってね、これだけ整理したら……あ、コーヒーでも一杯出そうか？\""
-    },
-    "day3_after_eunsu_choice": {
-        "name": "私",
-        "text": "*書類を見ようか？*",
-        "choices": [
-            "こっそり確認する",
-            "見ない"
-        ]
-    },
-    "day3_after_eunsu_peek": {
-        "name": "私",
-        "text": "*書類をめくった。転校生の名簿……名前の横に日付が書いてある。転校してきた日付と……『処理完了日』？*"
-    },
-    "day3_after_eunsu_peek_2": {
-        "name": "私",
-        "text": "*僕の名前もある。日付の隣の欄は……まだ空白だ。*"
-    },
-    "day3_after_eunsu_peek_3": {
-        "name": "ウンス",
-        "text": "\"……何を見ているの？\""
-    },
-    "day3_after_eunsu_peek_4": {
-        "name": "パク・ウンス",
-        "text": "\"출석부 보고 있었구나?\""
-    },
-    "day3_after_eunsu_peek_5": {
-        "name": "私",
-        "text": "*은수 선생님이 웃고 있다. 커피를 들고. 여유롭게. ...이 사람은 내가 보는 걸 알고 있었다. 아니, **보게 둔 거다.***"
-    },
-    "day3_after_eunsu_peek_6": {
-        "name": "パク・ウンス",
-        "text": "\"열심이네. 선생님이 관리하는 명단이야. 전학생 적응 현황 같은 거지.\""
-    },
-    "day3_after_eunsu_peek_7": {
-        "name": "パク・ウンス",
-        "text": "\"...뭐, 궁금한 거 있어?\""
-    },
-    "day3_after_eunsu_ignore": {
-        "name": "ウンス",
-        "text": "\"ありがとう、待っていてくれて。はい、コーヒーどうぞ。\""
-    },
-    "day3_after_eunsu_ignore_2": {
-        "name": "私",
-        "text": "*ウンス先生とコーヒーを飲みながら話した。温かくて穏やかな時間だった。……本当に？*"
-    },
-    "day3_after_eunsu_ignore_3": {
-        "name": "パク・ウンス",
-        "text": "\"전학생 적응 현황표야. {name}... 적응 잘 하고 있다고 적어놨어.\""
-    },
-    "day3_after_eunsu_ignore_4": {
-        "name": "私",
-        "text": "*서류를 서랍에 넣는다. 자연스럽게. 하지만 '네 이름도 있다'는 말이 남아 있다.*"
-    },
-    "day3_after_alone": {
-        "name": "私",
-        "text": "*教室に一人残った。ポケットの中のメモリーカードが気になる。*"
-    },
-    "day3_after_alone_no_card": {
-        "name": "私",
-        "text": "*静かな教室。特に何もなく時間が過ぎた。*"
-    },
-    "day3_after_alone_2": {
-        "name": "私",
-        "text": "*ノートパソコンを取り出してメモリーカードを挿した。*"
-    },
-    "day3_after_alone_3": {
-        "name": "私",
-        "text": "*写真。空っぽの教室、がらんとしたロッカー、名前が消された机……そして職員室で撮られた書類の写真。*"
-    },
-    "day3_after_alone_4": {
-        "name": "私",
-        "text": "*『被験者リスト』というタイトルの文書。番号と名前が列挙されていて……ほとんどに赤い線が引かれている。*"
-    },
-    "day3_after_end": {
-        "name": "私",
-        "text": "*学校を出る。夕焼けが赤い。……血のように赤い。*"
-    }
+  "day3_after_start": {
+    "name": "私",
+    "text": "*放課後。今日に限って学校が妙に静かだ。*"
+  },
+  "day3_after_choice": {
+    "name": "私",
+    "text": "*放課後の時間だ。*",
+    "choices": [
+      "保健室に寄る",
+      "セアと一緒に行く",
+      "職員室に寄る",
+      "一人で残る"
+    ]
+  },
+  "day3_after_riin": {
+    "name": "保健教師",
+    "text": "\"あら、{name}。ちょうどよかった。今日はちょっと疲れて見えるけど？\""
+  },
+  "day3_after_riin_2": {
+    "name": "保健教師",
+    "text": "\"ここに座って。私が特別に作った健康ドリンクがあるの。ビタミンとハーブのブレンドよ。\""
+  },
+  "day3_after_riin_3": {
+    "name": "私",
+    "text": "*リインが薄紫色の液体が入ったカップを渡してくる。……ちょっと変な匂いがするんだけど。*"
+  },
+  "day3_after_riin_flicker": {
+    "name": "",
+    "text": "Run away"
+  },
+  "day3_after_riin_choice": {
+    "name": "私",
+    "text": "*飲もうか？*",
+    "choices": [
+      "飲む",
+      "丁重に断る"
+    ]
+  },
+  "day3_after_riin_drink": {
+    "name": "リイン",
+    "text": "\"いい子ね。すぐに効果が出るわよ。\""
+  },
+  "day3_after_riin_drink_2": {
+    "name": "私",
+    "text": "*飲んだ。……苦味が舌先に残る。ちょっと待って、視界がちょっと……*"
+  },
+  "day3_after_riin_drink_3": {
+    "name": "私",
+    "text": "*……いや、大丈夫だ。ただ疲れているだけだろう。*"
+  },
+  "day3_after_riin_refuse": {
+    "name": "リイン",
+    "text": "\"……そう？ 残念ね。\""
+  },
+  "day3_after_riin_refuse_2": {
+    "name": "リイン",
+    "text": "\"いいわ、今度飲めばいいもの。……今度は必ず飲んでくれる？\""
+  },
+  "day3_after_sea": {
+    "name": "ハン・セア",
+    "text": "\"{name}、一緒に行こう。今日新しくできたパン屋さんに行ってみたいの！\""
+  },
+  "day3_after_sea_2": {
+    "name": "私",
+    "text": "*セアと廊下を歩く。いつも通り明るいけど……*"
+  },
+  "day3_after_sea_choice": {
+    "name": "私",
+    "text": "*何て答えよう？*",
+    "choices": [
+      "正直に話す",
+      "ごまかす"
+    ]
+  },
+  "day3_after_sea_truth": {
+    "name": "ハン・セア",
+    "text": "\"……ユナと二人きりで。そうなんだ。\""
+  },
+  "day3_after_sea_truth_2": {
+    "name": "私",
+    "text": "*セアは笑っている。笑っているのに……目が笑っていない。*"
+  },
+  "day3_after_sea_truth_3": {
+    "name": "私",
+    "text": "*Sea looks out the window. For a long moment.*"
+  },
+  "day3_after_sea_truth_4": {
+    "name": "ハン・セア",
+    "text": "\"...Sometimes I think about it. Why I'm doing this.\""
+  },
+  "day3_after_sea_truth_5": {
+    "name": "私",
+    "text": "*Sea stops talking and shakes her head. It looks like she was about to say something and swallowed it.*"
+  },
+  "day3_after_sea_truth_6": {
+    "name": "ハン・セア",
+    "text": "\"...Never mind. Forget it.\""
+  },
+  "day3_after_sea_truth_7": {
+    "name": "私",
+    "text": "*Sea smiles again. This time her eyes are smiling too. But that moment just now... I can tell it wasn't an act.*"
+  },
+  "day3_after_sea_lie": {
+    "name": "ハン・セア",
+    "text": "\"そう？ よかった。一人で寂しかったんだから！\""
+  },
+  "day3_after_sea_lie_2": {
+    "name": "私",
+    "text": "*セアが僕の腕を掴んだ。いつもより力が強い。*"
+  },
+  "day3_after_eunsu": {
+    "name": "担任教師",
+    "text": "\"あら、{name}。まだ帰ってなかったの？ 私も残業よ、あはは。\""
+  },
+  "day3_after_eunsu_2": {
+    "name": "私",
+    "text": "*先生が書類の山に埋もれている。隙間から何かが見える。*"
+  },
+  "day3_after_eunsu_3": {
+    "name": "担任教師",
+    "text": "\"ちょっと待ってね、これだけ整理したら……あ、コーヒーでも一杯出そうか？\""
+  },
+  "day3_after_eunsu_choice": {
+    "name": "私",
+    "text": "*書類を見ようか？*",
+    "choices": [
+      "こっそり確認する",
+      "見ない"
+    ]
+  },
+  "day3_after_eunsu_peek": {
+    "name": "私",
+    "text": "*書類をめくった。転校生の名簿……名前の横に日付が書いてある。転校してきた日付と……『処理完了日』？*"
+  },
+  "day3_after_eunsu_peek_2": {
+    "name": "私",
+    "text": "*僕の名前もある。日付の隣の欄は……まだ空白だ。*"
+  },
+  "day3_after_eunsu_peek_3": {
+    "name": "ウンス",
+    "text": "\"……何を見ているの？\""
+  },
+  "day3_after_eunsu_peek_4": {
+    "name": "パク・ウンス",
+    "text": "\"Were you looking at the attendance sheet?\""
+  },
+  "day3_after_eunsu_peek_5": {
+    "name": "私",
+    "text": "*Ms. Eunsu is smiling. Holding her coffee. At ease. ...She knew I was looking. No — **she let me look**.*"
+  },
+  "day3_after_eunsu_peek_6": {
+    "name": "パク・ウンス",
+    "text": "\"How thorough. It's a list I manage. Something like a transfer student adjustment progress report.\""
+  },
+  "day3_after_eunsu_peek_7": {
+    "name": "パク・ウンス",
+    "text": "\"...Anything you're curious about?\""
+  },
+  "day3_after_eunsu_ignore": {
+    "name": "ウンス",
+    "text": "\"ありがとう、待っていてくれて。はい、コーヒーどうぞ。\""
+  },
+  "day3_after_eunsu_ignore_2": {
+    "name": "私",
+    "text": "*ウンス先生とコーヒーを飲みながら話した。温かくて穏やかな時間だった。……本当に？*"
+  },
+  "day3_after_eunsu_ignore_3": {
+    "name": "パク・ウンス",
+    "text": "\"It's a transfer student adjustment progress sheet. I wrote that {name}... is adjusting well.\""
+  },
+  "day3_after_eunsu_ignore_4": {
+    "name": "私",
+    "text": "*She puts the documents in a drawer. Casually. But the words 'your name is in there too' stay with me.*"
+  },
+  "day3_after_alone": {
+    "name": "私",
+    "text": "*教室に一人残った。ポケットの中のメモリーカードが気になる。*"
+  },
+  "day3_after_alone_no_card": {
+    "name": "私",
+    "text": "*静かな教室。特に何もなく時間が過ぎた。*"
+  },
+  "day3_after_alone_2": {
+    "name": "私",
+    "text": "*ノートパソコンを取り出してメモリーカードを挿した。*"
+  },
+  "day3_after_alone_3": {
+    "name": "私",
+    "text": "*写真。空っぽの教室、がらんとしたロッカー、名前が消された机……そして職員室で撮られた書類の写真。*"
+  },
+  "day3_after_alone_4": {
+    "name": "私",
+    "text": "*『被験者リスト』というタイトルの文書。番号と名前が列挙されていて……ほとんどに赤い線が引かれている。*"
+  },
+  "day3_after_end": {
+    "name": "私",
+    "text": "*学校を出る。夕焼けが赤い。……血のように赤い。*"
+  }
 }

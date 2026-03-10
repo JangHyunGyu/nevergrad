@@ -188,31 +188,26 @@ const AI_PROMPTS = {
  * }}
  */
 const FALLBACK_RESPONSES = {
-    /** 심문 모드 폴백 — 캐릭터별 3개 응답 */
+    /** 심문 모드 폴백 — 은수 2개(maxTurns=2), 세아 1개(maxTurns=1) */
     interrogation: {
-        /** 은수 폴백 — 논리적이고 냉정한 반박 */
+        /** 은수 폴백 — 논리적이고 냉정한 반박 (2턴: 반박→압도) */
         eunsu: [
             { text: "지금 변명할 때가 아니야, {name}. 선생님한테 솔직해져.", emotion: "cold", danger_delta: 2 },
-            { text: "...그래. 아무 말도 못 하는 거지. 예상했어.", emotion: "gentle", danger_delta: 1 },
             { text: "선생님이 실망했다는 건 알지?", emotion: "angry", danger_delta: 3 }
         ],
-        /** 세아 폴백 — 감정적 조종과 집착 */
+        /** 세아 폴백 — 감정적 조종과 집착 (1턴: 최후의 호소→감정 폭발) */
         sea: [
-            { text: "나한테 그렇게 말할 거야? ...좋아. 알겠어.", emotion: "hurt", danger_delta: 2 },
-            { text: "{name}, 나 없이는 안 돼. 너도 알잖아.", emotion: "yandere", danger_delta: 4 },
-            { text: "...울지 마. 내가 울게.", emotion: "cry", danger_delta: 3 }
+            { text: "{name}, 나 없이는 안 돼. 너도 알잖아.", emotion: "yandere", danger_delta: 4 }
         ]
     },
 
     /** 메신저 모드 폴백 — 건조하고 미묘하게 어긋나는 응답 */
     messenger: {
-        /** 민수 폴백 — 5개 응답 (maxTurns = 5) */
+        /** 민수 폴백 — 3개 응답 (Day 2 maxTurns = 3, 확신 직전 읽씹) */
         minsu: [
             { text: "응 잘 지내. 거긴 어때?", typingDelay: 5000 },
             { text: "그렇군요.", typingDelay: 3000 },
-            { text: "학교생활 잘 하고 있나 보네요.", typingDelay: 4000 },
-            { text: "네.", typingDelay: 6000 },
-            { text: "출석률 관리 잘 하세요.", typingDelay: 8000 }
+            { text: "학교생활 잘 하고 있나 보네요.", typingDelay: 4000 }
         ]
     },
 

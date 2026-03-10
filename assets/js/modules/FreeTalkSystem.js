@@ -85,7 +85,8 @@ class FreeTalkSystem {
         this.currentMode = 'interrogation';
         this.currentChar = charId;
         this.turnCount = 0;
-        this.maxTurns = 3;
+        // 은수: 2턴(반박→압도), 세아: 1턴(최후의 호소→감정 폭발)
+        this.maxTurns = charId === 'eunsu' ? 2 : 1;
         this.conversationHistory = [];
         this.sceneContext = sceneContext;
         this.nextSceneId = nextScene;
@@ -222,7 +223,8 @@ class FreeTalkSystem {
     /**
      * 메신저 모드를 시작합니다.
      * 카톡 스타일 UI를 표시하고, '민수'(실제로는 학교 감시자)와 대화합니다.
-     * 메신저 모드는 최대 5턴까지 허용됩니다.
+     * Day 2: 최대 3턴 (확신 직전 읽씹 전환)
+     * Day 3: AI 선제 1턴 → startPreemptiveMessenger() 사용
      *
      * @param {string} personaId - 페르소나 ID ('minsu')
      */
@@ -230,7 +232,7 @@ class FreeTalkSystem {
         this.currentMode = 'messenger';
         this.currentChar = personaId;
         this.turnCount = 0;
-        this.maxTurns = 5;
+        this.maxTurns = 3;
         this.conversationHistory = [];
 
         this._showInputUI('메시지를 입력하세요...');
@@ -525,6 +527,8 @@ class FreeTalkSystem {
                 this.sendInterrogation(value);
             } else if (this.currentMode === 'messenger') {
                 this.sendMessengerMessage(value);
+            } else if (this.currentMode === 'messenger_preemptive') {
+                this.sendPreemptiveReply(value);
             }
         };
 
@@ -631,6 +635,72 @@ class FreeTalkSystem {
      */
     _delay(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    // =========================================================================
+    //  모드 2-B: AI 선제 메신저 (Day 3 밤)
+    // =========================================================================
+
+    /**
+     * Day 3 밤: AI(사칭범)가 먼저 의미심장한 메시지를 보내는 모드.
+     * 유저가 답장을 시도하면 타이핑 인디케이터(···)만 깜빡이고
+     * 실제 응답은 오지 않습니다. (무력감 연출)
+     *
+     * @param {string} personaId - 페르소나 ID ('minsu')
+     * @param {string} preemptiveMessage - AI가 선제로 보내는 메시지
+     * @param {string} [nextScene] - 이후 이동할 씬 ID
+     */
+    async startPreemptiveMessenger(personaId, preemptiveMessage, nextScene = null) {
+        this.currentMode = 'messenger_preemptive';
+        this.currentChar = personaId;
+        this.turnCount = 0;
+        this.maxTurns = 0; // 유저 턴 없음
+        this.nextSceneId = nextScene;
+        this.conversationHistory = [];
+
+        // AI가 먼저 메시지를 보낸다
+        this._showTypingIndicator('민수');
+        await this._delay(4000);
+        this._hideTypingIndicator();
+        this._displayResponse('민수', preemptiveMessage);
+
+        // 유저 입력 UI 표시 — 답장 시도 시 타이핑만 깜빡임
+        setTimeout(() => {
+            this._showInputUI('메시지를 입력하세요...');
+        }, 1500);
+    }
+
+    /**
+     * Day 3 선제 메신저에서 유저가 답장을 시도했을 때:
+     * 타이핑 인디케이터만 반복 표시, 실제 응답 없음.
+     * 일정 시간 후 자동으로 다음 씬으로 진행.
+     *
+     * @param {string} userInput - 플레이어가 입력한 메시지
+     */
+    async sendPreemptiveReply(userInput) {
+        if (this.isWaiting || this.currentMode !== 'messenger_preemptive') return;
+        if (!userInput || !userInput.trim()) return;
+
+        this.isWaiting = true;
+        this._hideInputUI();
+
+        // 타이핑 인디케이터만 깜빡이고 응답은 오지 않음
+        this._showTypingIndicator('민수');
+
+        // 8초 후 타이핑 인디케이터 사라지고 "읽음"만 표시
+        await this._delay(8000);
+        this._hideTypingIndicator();
+        this._showReadBadge();
+
+        this.isWaiting = false;
+
+        // 잠시 후 다음 씬 진행
+        setTimeout(() => {
+            this.cleanup();
+            if (this.nextSceneId && this.engine._loadScene) {
+                this.engine._loadScene(this.nextSceneId);
+            }
+        }, 3000);
     }
 
     /**

@@ -1,46 +1,145 @@
 {
     "day2_morning_start": {
         "name": "Me",
-        "text": "*The alarm wakes me. Day 2. Less nervous than yesterday.*"
+        "text": "*The alarm wakes me. Day 2.*"
     },
     "day2_morning_2": {
         "name": "Me",
-        "text": "*I check my phone. Old school friends... still no messages. My texts in the group chat show 'Read by 0.'*"
+        "text": "*Less nervous than yesterday. My body is starting to adjust to the school rhythm.*"
     },
     "day2_morning_3": {
         "name": "Me",
+        "text": "*I wash my face and look in the mirror. Not bad. My expression is brighter than yesterday.*"
+    },
+    "day2_morning_4": {
+        "name": "Me",
+        "text": "*I check my phone.*"
+    },
+    "day2_morning_5": {
+        "name": "Me",
+        "text": "*Old school friends... still no messages. My texts in the group chat show 'Read by 0.'*"
+    },
+    "day2_morning_6": {
+        "name": "Me",
+        "text": "*...Strange. Minsu hasn't replied either. There's no way he'd go over 24 hours without checking his messages.*"
+    },
+    "day2_morning_7": {
+        "name": "Me",
+        "text": "*Maybe it's exam season. I'll try again later.*"
+    },
+    "day2_morning_8": {
+        "name": "Me",
+        "text": "*There's a message from Sea. Sent at 1 AM. 'Sleep well~' ...1 AM? She must have stayed up late.*"
+    },
+
+    "day2_morning_9": {
+        "name": "Me",
         "text": "*I arrive at the school gate and... Sea is standing there.*"
     },
-    "day2_morning_sea_wait": {
+    "day2_morning_sea_1": {
         "name": "Han Sea",
-        "text": "\"Oh, hey. I waited a bit so we could walk together.\""
+        "text": "\"Hey! I waited so we could walk together.\""
     },
     "day2_morning_sea_2": {
         "name": "Me",
-        "text": "\"Waiting? How did you know what time I'd come...\""
+        "text": "\"...You waited? Oh, thanks, but... what time did you come out?\""
     },
     "day2_morning_sea_3": {
-        "name": "Me",
-        "text": "*Instead of answering, Sea linked her arm with mine and headed to class. ...I came 10 minutes earlier than usual today.*"
+        "name": "Han Sea",
+        "text": "\"Just a little while ago~ I live close by.\""
     },
-    "day2_morning_classroom": {
+    "day2_morning_sea_4": {
+        "name": "Me",
+        "text": "*She waited? How did she know what time I'd show up...*"
+    },
+    "day2_morning_sea_5": {
+        "name": "Me",
+        "text": "*Well, if we come at around the same time, we could just run into each other.*"
+    },
+    "day2_morning_sea_6": {
+        "name": "Han Sea",
+        "text": "\"Did you sleep well? Did you see my message?\""
+    },
+    "day2_morning_sea_7": {
+        "name": "Me",
+        "text": "\"Yeah, slept fine. Thanks for the message.\""
+    },
+    "day2_morning_sea_8": {
+        "name": "Han Sea",
+        "text": "\"Glad to hear it. Look forward to today's lunch. I made it even better than yesterday.\""
+    },
+    "day2_morning_sea_9": {
+        "name": "Me",
+        "text": "*Sea holds her bag with both hands as she walks. The lunch must be inside. It looks heavy.*"
+    },
+    "day2_morning_sea_10": {
+        "name": "Me",
+        "text": "*Sea naturally falls into step beside me and heads toward the classroom. ...I came 10 minutes earlier than usual today, and she was already here waiting.*"
+    },
+
+    "day2_morning_sea_11": {
+        "name": "Me",
+        "text": "*As we enter the classroom, a few students say hello.*"
+    },
+    "day2_morning_class_1": {
+        "name": "Me",
+        "text": "*The mood is more relaxed than yesterday. Some kids already know my name.*"
+    },
+    "day2_morning_class_2": {
+        "name": "Me",
+        "text": "*Ms. Eunsu calls attendance with a smile.*"
+    },
+    "day2_morning_class_3": {
         "name": "Homeroom Teacher",
-        "text": "\"{name}, how was your first day yesterday? Nothing uncomfortable?\""
+        "text": "\"Alright, everyone to your seats. ...{name}, how was your first day yesterday? Was everything okay?\""
     },
     "day2_morning_eunsu_1": {
         "name": "Me",
-        "text": "\"Everyone was nice, so it went well.\""
+        "text": "\"It was fine, everyone looked after me well.\""
     },
     "day2_morning_eunsu_2": {
         "name": "Homeroom Teacher",
-        "text": "\"That's good. By the way, {name}, you haven't gotten any contact from your previous school, right?\""
+        "text": "\"That's great. The kids in our class are kind-hearted.\""
     },
     "day2_morning_eunsu_3": {
+        "name": "Homeroom Teacher",
+        "text": "\"By the way, {name}, you haven't gotten any contact from your previous school, have you?\""
+    },
+    "day2_morning_eunsu_4": {
+        "name": "Me",
+        "text": "\"...No, not yet.\""
+    },
+    "day2_morning_eunsu_5": {
         "name": "Me",
         "text": "*...Why would she ask that? Probably just checking in.*"
     },
+    "day2_morning_eunsu_6": {
+        "name": "Homeroom Teacher",
+        "text": "\"When you transfer, the paperwork takes a while to process. Let me know if you hear anything.\""
+    },
 
-    "day2_morning_seolhwa": {
+    "day2_morning_lesson_1": {
+        "name": "Me",
+        "text": "*Math class. A different teacher is teaching.*"
+    },
+    "day2_morning_lesson_2": {
+        "name": "Me",
+        "text": "*Sea quietly holds out a pencil from the side.*"
+    },
+    "day2_morning_lesson_3": {
+        "name": "Han Sea",
+        "text": "\"(whispering) This teacher has a unique style. Type 6 problems come up a lot.\""
+    },
+    "day2_morning_lesson_4": {
+        "name": "Me",
+        "text": "*Sea gives me a little smile. She's even giving me test tips. What a reliable class president.*"
+    },
+
+    "day2_morning_seolhwa_check": {
+        "name": "",
+        "text": ""
+    },
+    "day2_morning_seolhwa_1": {
         "name": "Me",
         "text": "*Sitting down, I glance behind me. Seolhwa is... still there. Same seat, same expression.*"
     },
@@ -52,13 +151,25 @@
         "name": "Me",
         "text": "*Strange. There's no name listed for the back seat. The headcount doesn't seem to add up either... Did I miscount?*"
     },
-    "day2_morning_seolhwa_skip": {
+    "day2_morning_seolhwa_4": {
         "name": "Me",
-        "text": "*Morning classes begin.*"
+        "text": "*Break time. I looked back. My eyes met Seolhwa's.*"
+    },
+    "day2_morning_seolhwa_5": {
+        "name": "Me",
+        "text": "*...No, they nearly met. The moment our gazes connected, Seolhwa looked away.*"
+    },
+    "day2_morning_seolhwa_6": {
+        "name": "Me",
+        "text": "*But... her lips moved. Was she trying to say something? Or just yawning?*"
+    },
+    "day2_morning_seolhwa_7": {
+        "name": "Me",
+        "text": "*The teacher said \"Focus!\" so I turned back to the front. ...Looking again, Seolhwa is just staring out the window. ...I'll definitely try talking to her tomorrow.*"
     },
 
     "day2_morning_end": {
         "name": "Me",
-        "text": "*Let's focus on class. It's only Day 2.*"
+        "text": "*I see. It must be for administrative reasons. Let's focus on class.*"
     }
 }

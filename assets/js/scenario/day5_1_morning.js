@@ -73,37 +73,67 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_gate_6"
     },
     "day5_morning_gate_6": {
-        next: "day5_morning_gate_7"
-    },
-    "day5_morning_gate_7": {
-        next: "day5_morning_gate_8"
-    },
-    "day5_morning_gate_8": {
-        next: "day5_morning_gate_9"
-    },
-    "day5_morning_gate_9": {
-        next: "day5_morning_gate_10"
-    },
-    "day5_morning_gate_10": {
-        next: "day5_morning_gate_11"
-    },
-    "day5_morning_gate_11": {
-        next: "day5_morning_gate_12"
+        next: "day5_morning_gate_choice"
     },
 
-    // ── 세 사람 동시 등장 ──
-    "day5_morning_gate_12": {
+    // ── 피할까? 선택지 (어떤 선택이든 돌아올 수 없다) ──
+    "day5_morning_gate_choice": {
         unskippable: true,
-        next: "day5_morning_gate_13"
+        choices: [
+            { next: "day5_morning_gate_dodge_fail" },
+            { next: "day5_morning_paralysis_1" }
+        ]
     },
-    "day5_morning_gate_13": {
+    "day5_morning_gate_dodge_fail": {
+        glitch: { noise: true, noiseDuration: 200 },
+        next: "day5_morning_paralysis_1"
+    },
+
+    // ── 마비 시퀀스 ──
+    "day5_morning_paralysis_1": {
         unskippable: true,
-        next: "day5_morning_gate_14"
+        next: "day5_morning_paralysis_2"
     },
-    "day5_morning_gate_14": {
+    "day5_morning_paralysis_2": {
+        unskippable: true,
+        next: "day5_morning_paralysis_3"
+    },
+    "day5_morning_paralysis_3": {
+        unskippable: true,
+        next: "day5_morning_paralysis_4"
+    },
+    "day5_morning_paralysis_4": {
+        unskippable: true,
+        next: "day5_morning_paralysis_5"
+    },
+    "day5_morning_paralysis_5": {
+        unskippable: true,
+        next: "day5_morning_paralysis_6"
+    },
+    "day5_morning_paralysis_6": {
+        unskippable: true,
+        next: "day5_morning_watchers_1"
+    },
+
+    // ── 관찰자들 ──
+    "day5_morning_watchers_1": {
+        unskippable: true,
+        next: "day5_morning_watchers_2"
+    },
+    "day5_morning_watchers_2": {
+        unskippable: true,
+        next: "day5_morning_watchers_3"
+    },
+    "day5_morning_watchers_3": {
+        unskippable: true,
+        next: "day5_morning_watchers_4"
+    },
+    "day5_morning_watchers_4": {
         unskippable: true,
         next: "day5_morning_welcome"
     },
+
+    // ── 세 사람 등장 ──
     "day5_morning_welcome": {
         character: "eunsu_gentle",
         next: "day5_morning_welcome_2"

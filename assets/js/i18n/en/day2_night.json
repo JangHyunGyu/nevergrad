@@ -1,67 +1,176 @@
 {
     "day2_night_start": {
         "name": "Me",
-        "text": "*Home. I check my phone again. The old school group chat... I'm the only one left. Everyone else left the chat.*"
+        "text": "*Home. Today was tiring too. But it's a good kind of tired.*"
     },
     "day2_night_2": {
         "name": "Me",
-        "text": "*I tried calling my old homeroom teacher. 'The number you have dialed is no longer in service.' ...What?*"
+        "text": "*Sea's expression in the sunset light keeps coming back to me. That face when she said 'lonely.'*"
     },
     "day2_night_3": {
         "name": "Me",
-        "text": "*Did they change numbers? I tried calling other friends too, but none of them pick up or the numbers are disconnected.*"
+        "text": "*...She's a good person. Someone with depth.*"
     },
-    "day2_night_4": {
+    "day2_night_phone_1": {
         "name": "Me",
-        "text": "*...This is strange. There's no way everyone is unreachable like this.*"
+        "text": "*I check my phone again.*"
     },
-    "day2_night_phone_sea": {
+    "day2_night_phone_2": {
+        "name": "Me",
+        "text": "*The old school group chat. The message I sent yesterday... showed 'Read by 0,' but now it says 'Read by 3.'*"
+    },
+    "day2_night_phone_3": {
+        "name": "Me",
+        "text": "*So they read it. But nobody replied. ...Guess they're busy.*"
+    },
+    "day2_night_phone_4": {
+        "name": "Me",
+        "text": "*I sent Minsu a direct message. 'Hey Minsu, I transferred, why no contact lol'*"
+    },
+    "day2_night_phone_5": {
+        "name": "Me",
+        "text": "*10 minutes later.*",
+        "messengerDelay": 5000,
+        "messengerTypingName": "Minsu"
+    },
+    "day2_night_phone_6": {
+        "name": "Me",
+        "text": "*...Why is he typing for so long? This guy normally fires off a reply in a second.*"
+    },
+    "day2_night_phone_7": {
+        "name": "Me",
+        "text": "*5 seconds. The typing indicator keeps blinking. Is he writing a long message?*"
+    },
+    "day2_night_phone_8": {
+        "name": "Me",
+        "text": "*The reply came.*"
+    },
+    "day2_night_phone_9": {
+        "name": "Me",
+        "text": "*Minsu: 'Yeah doing well. How's it there?'*"
+    },
+    "day2_night_phone_10": {
+        "name": "Me",
+        "text": "*...What is this. I asked why he hadn't contacted me, but he ignores that and just says 'how's it there?'?*"
+    },
+    "day2_night_phone_11": {
+        "name": "Me",
+        "text": "*Is this even Minsu? Normally he'd be like 'hey you idiot lmaooo finally replying' with a string of curses.*"
+    },
+    "day2_night_phone_12": {
+        "name": "Me",
+        "text": "*'Yeah doing well.' ...That's what he chose after 5 seconds of typing?*"
+    },
+    "day2_night_msg_1": {
         "name": "Me",
         "text": "*There's a message from Sea.*"
     },
-    "day2_night_phone_sea_2": {
+    "day2_night_msg_2": {
         "name": "Me",
-        "text": "*Sea: 'Thanks for today. Let's eat together again tomorrow!'*\n*Sea: '...I like being with you, {name}.'*"
+        "text": "*Sea: 'Thanks for today. For coming to the student council room.'*"
     },
-    "day2_night_phone_sea_3": {
+    "day2_night_msg_3": {
         "name": "Me",
-        "text": "*...That second message hits differently. Is she just being friendly, or...*"
+        "text": "*Sea: 'Let's eat together again tomorrow!'*"
     },
-    "day2_night_5": {
+    "day2_night_msg_4": {
         "name": "Me",
-        "text": "*I should ask Ms. Eunsu tomorrow. Why all the contacts from my old school are cut off. For now, let's just sleep.*"
+        "text": "*Sea: '...Being with {name} is nice.'*"
     },
-    "day2_night_stat_flicker": "Danger Level: ████",
-    "day2_night_dream": {
-        "name": "",
-        "text": "*...A dream begins.*"
+    "day2_night_msg_5": {
+        "name": "Me",
+        "text": "*...The third message. 'Nice.' Is it just being friendly, or does it mean something else. ...Maybe both.*"
+    },
+    "day2_night_msg_6": {
+        "name": "Me",
+        "text": "*I send a reply. 'I had fun today too. See you tomorrow.'*"
+    },
+    "day2_night_msg_7": {
+        "name": "Me",
+        "text": "*Sea: '♡' ...A heart. She's really bold.*"
+    },
+    "day2_night_sleep_1": {
+        "name": "Me",
+        "text": "*I lie down and look at the ceiling.*"
+    },
+    "day2_night_sleep_2": {
+        "name": "Me",
+        "text": "*The thing about my old school contacts nags at me a little, but... well, it'll sort itself out tomorrow. I close my eyes. Tired. My consciousness blurs.*"
+    },
+    "day2_night_dream_1": {
+        "name": "Me",
+        "text": "*...I'm walking down a dark corridor.*"
     },
     "day2_night_dream_2": {
         "name": "Me",
-        "text": "*I'm walking down a dark hallway. This is... the school? The school corridor at night. Only my footsteps echo.*"
+        "text": "*This is... the school? The school corridor at night. Only the emergency lights are dimly lit.*"
     },
     "day2_night_dream_3": {
-        "name": "???",
-        "text": "\"...Ru...n...\""
+        "name": "Me",
+        "text": "*Only my footsteps echo. Thud. Thud. Thud.*"
     },
     "day2_night_dream_4": {
         "name": "Me",
-        "text": "*I turned around. No one there. But I definitely heard it. A girl's voice.*"
+        "text": "*...Why am I here? How did I get here?*"
     },
     "day2_night_dream_5": {
-        "name": "Me",
-        "text": "*Someone is standing at the end of the corridor. A pale face, eyes gazing into the distance. ...The girl from the back row?*"
+        "name": "???",
+        "text": "\"...Ru...n...\""
     },
     "day2_night_dream_6": {
         "name": "Me",
-        "text": "*The moment I try to step closer, the floor gives way and everything goes dark.*"
+        "text": "*I turned around. Nobody there. But I definitely heard it. A girl's voice. A trembling voice.*"
     },
-    "day2_night_wake": {
+    "day2_night_dream_7": {
         "name": "Me",
-        "text": "*...! I jolt awake, drenched in sweat. It was a dream. Just a dream. ...Right?*"
+        "text": "*Someone is standing at the end of the corridor. A pale face. Eyes gazing into the distance. Long black hair.*"
+    },
+    "day2_night_dream_8": {
+        "name": "Me",
+        "text": "*...The girl from the back row? Seolhwa?*"
+    },
+    "day2_night_dream_9": {
+        "name": "Me",
+        "text": "*I move closer. One step, two steps. My footsteps echo. Her mouth is moving.*"
+    },
+    "day2_night_dream_10": {
+        "name": "???",
+        "text": "\"...Remember... me...\""
+    },
+    "day2_night_dream_11": {
+        "name": "Me",
+        "text": "*I reached out. Almost within reach. Just as my fingertips were about to touch—*"
+    },
+    "day2_night_dream_12": {
+        "name": "Me",
+        "text": "*My vision goes dark as if the floor collapsed. Falling. Endlessly.*"
+    },
+    "day2_night_wake_1": {
+        "name": "Me",
+        "text": "*...! I woke up drenched in sweat. My heart is pounding like crazy.*"
+    },
+    "day2_night_wake_2": {
+        "name": "Me",
+        "text": "*I look at the clock. 3:47 AM.*"
+    },
+    "day2_night_wake_3": {
+        "name": "Me",
+        "text": "*A dream. Just a dream. ...Right?*"
+    },
+    "day2_night_wake_4": {
+        "name": "Me",
+        "text": "*...But why does Seolhwa's face stick in my mind so vividly?*"
+    },
+    "day2_night_wake_5": {
+        "name": "Me",
+        "text": "*I drink a glass of water and lie back down. Sleep doesn't come easily.*"
     },
     "day2_night_end": {
         "name": "",
-        "text": "*End of Day 2*"
+        "text": "*— End of Day 2 —*"
+    },
+    "day2_night_sleep_3": {
+        "name": "Me",
+        "text": "*...My consciousness grows hazy. A sensation like sinking into darkness.*"
     }
 }

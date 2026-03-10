@@ -40,8 +40,13 @@ class DialogueSystem {
 
         if (this.textEl) {
             this.textEl.innerHTML = '';
-            if (isNarration) this.textEl.classList.add('narration');
-            else this.textEl.classList.remove('narration');
+            if (isNarration) {
+                this.textEl.classList.add('narration');
+                if (this.nameEl) this.nameEl.classList.add('hidden');
+            } else {
+                this.textEl.classList.remove('narration');
+                if (this.nameEl) this.nameEl.classList.remove('hidden');
+            }
         }
 
         let idx = 0;
@@ -69,6 +74,10 @@ class DialogueSystem {
 
         if (this.textEl) {
             this.textEl.textContent = displayText;
+            if (isNarration) {
+                this.textEl.classList.add('narration');
+                if (this.nameEl) this.nameEl.classList.add('hidden');
+            }
         }
         this._finishTyping();
     }

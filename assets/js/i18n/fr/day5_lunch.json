@@ -126,10 +126,10 @@
     "day5_lunch_riin_callback": { "name": "", "text": "" },
     "day5_lunch_riin_cb_drink": { "name": "Infirmière", "text": "\"Tu avais dit que le thé était bon, tu te souviens ? La professeure l'avait préparé avec tout son cœur... Tu en veux encore une tasse ?\"" },
     "day5_lunch_riin_cb_met": { "name": "Infirmière", "text": "\"Quand tu es venu à l'infirmerie dès le premier jour, la professeure était vraiment contente. ...Tu le savais ?\"" },
-    "day5_lunch_riin_cb_default": { "name": "Infirmière", "text": "\"Ce sera rapide. Une injection et tu te sentiras mieux.\"" },
+    "day5_lunch_riin_cb_default": { "name": "Infirmière", "text": "\"Dernier examen. Juste une prise de sang et c'est fini. Détends-toi~\"" },
     "day5_lunch_riin_block": {
         "name": "Infirmière",
-        "text": "\"Ça ne prendra qu'un instant. Une injection et... tu te sentiras tellement mieux.\""
+        "text": "\"Ça ne prendra qu'un instant. Une prise de sang et... ce sera fini.\""
     },
     "day5_lunch_riin_block_2": {
         "name": "Moi",
@@ -158,7 +158,7 @@
     },
     "day5_lunch_escape_caught_riin": {
         "name": "Infirmière",
-        "text": "\"Chut. Ce sera bientôt fini. Ça ne fera pas mal.\""
+        "text": "\"Chut. C'est bon. Je ne te ferai pas mal.\""
     },
     "day5_lunch_caught": {
         "name": "Moi",

@@ -1,110 +1,206 @@
 {
     "day4_morning_start": {
         "name": "Me",
-        "text": "*Day 4 morning. The nightmare from last night hits me the moment I open my eyes.*"
+        "text": "*Day 4 morning. My eyes opened before the alarm. 5:38 AM.*"
     },
     "day4_morning_start_2": {
         "name": "Me",
-        "text": "*I look in the mirror. My face is pale. Dark circles under my eyes.*"
+        "text": "*Last night's nightmare comes back to me. Seolhwa's transparent hand. 'Five days.' Tears.*"
     },
     "day4_morning_start_3": {
         "name": "Me",
-        "text": "*...I need to go to school. Do I? ...What happens if I don't?*"
+        "text": "*...If it wasn't a dream but a warning. Two days remain.*"
     },
-
+    "day4_morning_start_4": {
+        "name": "Me",
+        "text": "*I look in the mirror. My face is pale. Dark circles under my eyes are deep. I look like a different person from three days ago.*"
+    },
+    "day4_morning_start_5": {
+        "name": "Me",
+        "text": "*...I have to go to school. Or do I? What happens if I don't go? Will Ms. Eunsu come looking for me? Will Sea contact me?*"
+    },
+    "day4_morning_start_6": {
+        "name": "Me",
+        "text": "*...The safety app. Location tracking. They might already know where I am.*"
+    },
+    "day4_morning_start_7": {
+        "name": "Me",
+        "text": "*I have to go. Not going would only make them more suspicious. I also need to find Yuna.*"
+    },
+    "day4_morning_start_8": {
+        "name": "Me",
+        "text": "*My hands tremble as I put on my uniform. ...I clenched my fist to stop the shaking.*"
+    },
+    "day4_morning_start_9": {
+        "name": "Me",
+        "text": "*...I have to go to school.*"
+    },
+    "day4_morning_commute": {
+        "name": "Me",
+        "text": "*The walk to school. My steps are heavy.*"
+    },
+    "day4_morning_commute_2": {
+        "name": "Me",
+        "text": "*Until yesterday this was a beautiful cherry-blossom commute. Today... it feels like a path to a grave.*"
+    },
+    "day4_morning_commute_3": {
+        "name": "Me",
+        "text": "*That's an exaggeration. Right? ...I hope it's an exaggeration.*"
+    },
     "day4_morning_gate": {
         "name": "Me",
-        "text": "*School gate. The atmosphere is different from yesterday. The students' expressions are... all the same.*"
+        "text": "*I arrived at the school gate. ...The atmosphere is different from yesterday.*"
     },
     "day4_morning_gate_2": {
         "name": "Me",
-        "text": "*Everyone is smiling. The exact same smile. As if rehearsed.*"
+        "text": "*Students pass through the gate in small groups. A normal morning scene... it should be.*"
     },
     "day4_morning_gate_3": {
         "name": "Me",
-        "text": "*...Ms. Eunsu is standing at the gate. She was waiting for me.*"
+        "text": "*The students' expressions... are all the same.*"
+    },
+    "day4_morning_gate_4": {
+        "name": "Me",
+        "text": "*Everyone is smiling. The exact same smile. Corners of the mouth lifted at the same angle. As if rehearsed.*"
+    },
+    "day4_morning_gate_5": {
+        "name": "Me",
+        "text": "*...Was it always like this? Was it like this on day 1? My memory... isn't certain.*"
+    },
+    "day4_morning_gate_6": {
+        "name": "Me",
+        "text": "*Ms. Eunsu is standing at the front gate. ...Why is the teacher at the gate? She was usually in the faculty office.*"
     },
     "day4_morning_eunsu": {
         "name": "Homeroom Teacher",
-        "text": "\"{name}, good morning. I'll escort you myself today. Let's walk together.\""
+        "text": "\"{name}, good morning.\""
     },
     "day4_morning_eunsu_2": {
         "name": "Homeroom Teacher",
-        "text": "\"May I hold your hand? I'll get you to school safely.\"",
+        "text": "\"I'll walk you there myself today. Let's go together.\""
+    },
+    "day4_morning_eunsu_3": {
+        "name": "Homeroom Teacher",
+        "text": "\"May I hold your hand? I'll get you to school safely.\""
+    },
+    "day4_morning_eunsu_4": {
+        "name": "Me",
+        "text": "*The teacher holds out her hand. She's smiling. A warm smile. ...Was this smile always this scary?*",
         "choices": [
             "Take her hand",
             "Say I'm fine"
         ]
     },
-    "day4_morning_eunsu_timeout": {
-        "name": "Homeroom Teacher",
-        "text": "\"...No answer?\""
-    },
-    "day4_morning_eunsu_timeout_2": {
-        "name": "Me",
-        "text": "*Before I could respond, Ms. Eunsu grabbed my wrist. Hard enough to leave a bruise.*"
-    },
-    "day4_morning_eunsu_timeout_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"When your teacher asks you something, you answer. ...Let's go.\""
-    },
     "day4_morning_eunsu_comply": {
         "name": "Me",
-        "text": "*Ms. Eunsu's hand is cold. ...And strong. She doesn't seem to plan on letting go.*"
+        "text": "*I took the teacher's hand. Warm, but... strong. It's hard to pull away.*"
+    },
+    "day4_morning_eunsu_comply_2": {
+        "name": "Homeroom Teacher",
+        "text": "\"Alright, let's go.\""
+    },
+    "day4_morning_eunsu_comply_3": {
+        "name": "Me",
+        "text": "*The teacher takes my hand and leads me to the classroom. ...Whether this is an escort or a march, I can't tell.*"
     },
     "day4_morning_eunsu_refuse": {
-        "name": "Homeroom Teacher",
-        "text": "\"...Is that so? Well, can't be helped.\""
+        "name": "Me",
+        "text": "\"It's fine. I can go by myself.\""
     },
     "day4_morning_eunsu_refuse_2": {
-        "name": "Homeroom Teacher",
-        "text": "\"But {name}, it's best not to wander alone in this school. ...It's dangerous.\""
+        "name": "Me",
+        "text": "*The teacher's smile froze for 0.5 seconds.*"
     },
-
+    "day4_morning_eunsu_refuse_3": {
+        "name": "Homeroom Teacher",
+        "text": "\"But {name}, it's best not to wander alone in this school.\""
+    },
+    "day4_morning_eunsu_refuse_4": {
+        "name": "Homeroom Teacher",
+        "text": "\"...**It's dangerous.**\""
+    },
     "day4_morning_classroom": {
         "name": "Me",
-        "text": "*I entered the classroom. One seat is empty.*"
+        "text": "*I stepped into the classroom.*"
     },
     "day4_morning_classroom_2": {
         "name": "Me",
-        "text": "*Yuna's seat. Empty. No bag. Nobody seems to care.*"
+        "text": "*One seat is empty.*"
     },
     "day4_morning_classroom_3": {
         "name": "Me",
-        "text": "*Sea walks over.*"
+        "text": "*Yuna's seat. Empty. No bag. Not even a trace.*"
+    },
+    "day4_morning_classroom_4": {
+        "name": "Me",
+        "text": "*...Nobody notices. The student at the adjacent seat stares blankly at Yuna's empty seat and then looks away.*"
+    },
+    "day4_morning_classroom_5": {
+        "name": "Me",
+        "text": "\"Yuna didn't come...\""
     },
     "day4_morning_sea": {
         "name": "Han Sea",
-        "text": "\"Good morning, {name}! Did you sleep well?\""
+        "text": "\"Yuna? ...They say she transferred. Back to her original school.\""
     },
     "day4_morning_sea_2": {
-        "name": "Han Sea",
-        "text": "\"...Yuna? Oh, she transferred out. Went back to her old school, they say.\""
+        "name": "Me",
+        "text": "\"Transferred? When?\""
     },
     "day4_morning_sea_3": {
         "name": "Han Sea",
-        "text": "\"Don't worry about it. You've got me, right?\""
+        "text": "\"Last night, I think? It was sudden, even I was surprised.\""
     },
-
+    "day4_morning_sea_4": {
+        "name": "Me",
+        "text": "*Suddenly transferred? Last night? Yuna never said anything like that... yesterday Yuna gave me a memory card. Said that 'transfer students disappeared.' Someone who said that suddenly transferred?*"
+    },
+    "day4_morning_sea_5": {
+        "name": "Han Sea",
+        "text": "\"Don't worry about it. You have me, {name}.\""
+    },
+    "day4_morning_sea_6": {
+        "name": "Me",
+        "text": "*Sea smiles. ...That smile feels particularly cold today.*"
+    },
     "day4_morning_class_start": {
-        "name": "Homeroom Teacher",
-        "text": "\"Alright, let's begin class. Today is a special lesson.\""
+        "name": "Me",
+        "text": "*First period. Ms. Eunsu stands at the podium.*"
     },
     "day4_morning_class_2": {
         "name": "Homeroom Teacher",
-        "text": "\"Let's talk about 'belonging'. You all 'belong' to this school. You are part of this school.\""
+        "text": "\"Today let's talk about a special topic. 'Belonging.'\""
     },
     "day4_morning_class_3": {
         "name": "Homeroom Teacher",
-        "text": "\"Trying to leave this school... is like throwing away a part of yourself. Isn't that right, {name}?\""
+        "text": "\"You 'belong' to this school. You are part of this school.\""
     },
     "day4_morning_class_4": {
-        "name": "Me",
-        "text": "*...The teacher is staring only at me. Every pair of eyes in the classroom is pointed my way.*"
+        "name": "Homeroom Teacher",
+        "text": "\"Belonging is... safety. Being here means being protected.\""
     },
-
+    "day4_morning_class_5": {
+        "name": "Homeroom Teacher",
+        "text": "\"But trying to leave this school... is like throwing away a part of yourself.\""
+    },
+    "day4_morning_class_6": {
+        "name": "Homeroom Teacher",
+        "text": "\"Isn't that right, **{name}?**\""
+    },
+    "day4_morning_class_7": {
+        "name": "Me",
+        "text": "*...The teacher is only looking at me. Every pair of eyes in the classroom is pointed my way. 30 pairs of eyes. All smiling. All with the same smile.*"
+    },
+    "day4_morning_class_8": {
+        "name": "Me",
+        "text": "\"...Yes.\""
+    },
+    "day4_morning_class_9": {
+        "name": "Me",
+        "text": "*That one word barely made it out of my mouth. The teacher smiles with satisfaction. ...I want to get out of this classroom. Right now.*"
+    },
     "day4_morning_end": {
         "name": "Me",
-        "text": "*Morning class ended. I can't breathe.*"
+        "text": "*Morning classes ended. I can't breathe.*"
     }
 }

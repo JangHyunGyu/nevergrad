@@ -4,37 +4,82 @@
         "text": "*...*"
     },
 
+    "day5_after_branch": {
+        "name": "",
+        "text": ""
+    },
+
     "day5_after_escaped": {
         "name": "Me",
-        "text": "*Outside the school. Rain is falling. For the first time... I'm breathing air outside these walls.*"
+        "text": "*Going down the emergency staircase. The metal steps are slippery from the rain.*"
     },
     "day5_after_escaped_2": {
         "name": "Me",
-        "text": "*I ran. Anywhere. As far from this school as possible.*"
+        "text": "*One step. Two steps. Three steps. Coming down as if leaping.*"
     },
     "day5_after_escaped_3": {
         "name": "Me",
-        "text": "*Alone. But alive.*"
-    },
-    "day5_after_escaped_solo": {
-        "name": "Me",
-        "text": "*I left Yuna behind. ...I'm sorry.*"
-    },
-    "day5_after_escaped_branch": {
-        "name": "Choi Yuna",
-        "text": "\"Senpai...! We... made it out...\""
-    },
-    "day5_after_escaped_yuna": {
-        "name": "Me",
-        "text": "*Yuna is crying. So am I.*"
+        "text": "*My feet hit the ground. Asphalt. The back road behind the school.*"
     },
     "day5_after_escaped_4": {
         "name": "Me",
-        "text": "*This evidence needs to reach the world. Right now.*"
+        "text": "*I'm outside the school.*"
     },
+    "day5_after_escaped_5": {
+        "name": "Me",
+        "text": "*It's raining. Raindrops hit my face. Cold. But this coldness... is proof that I'm alive.*"
+    },
+    "day5_after_escaped_6": {
+        "name": "Me",
+        "text": "*For the first time... since coming to this school, for the very first time, I breathe air outside it.*"
+    },
+    "day5_after_escaped_7": {
+        "name": "Me",
+        "text": "*I inhaled. Deep. So deep it felt like my lungs might burst. ...The smell is different. Not disinfectant. Not cherry blossoms. Just the smell of rain. Smell of earth. The smell of the world.*"
+    },
+    "day5_after_escaped_8": {
+        "name": "Me",
+        "text": "*I ran. Anywhere. As far as possible from this school. My legs are trembling. My knees buckle. I still run.*"
+    },
+
+    "day5_after_escaped_yuna_branch": {
+        "name": "",
+        "text": ""
+    },
+
+    "day5_after_escaped_yuna": {
+        "name": "Me",
+        "text": "*Yuna is running beside me. Yuna is crying too.*"
+    },
+    "day5_after_escaped_yuna_2": {
+        "name": "Me",
+        "text": "*We ran until we stopped. After getting far enough from the school. Under a streetlight.*"
+    },
+    "day5_after_escaped_yuna_3": {
+        "name": "Yuna",
+        "text": "\"Senpai...\""
+    },
+    "day5_after_escaped_yuna_4": {
+        "name": "Yuna",
+        "text": "\"We made it out...\""
+    },
+    "day5_after_escaped_yuna_5": {
+        "name": "Me",
+        "text": "\"We made it. We made it, Yuna.\""
+    },
+
+    "day5_after_escaped_solo": {
+        "name": "Me",
+        "text": "*Alone. I ran through the rain. The streetlights sway in the downpour.*"
+    },
+    "day5_after_escaped_solo_2": {
+        "name": "Me",
+        "text": "*I can't stop. Not far enough yet. More. Further.*"
+    },
+
     "day5_after_escaped_choice": {
         "name": "Me",
-        "text": "*What do I do?*",
+        "text": "*I have to tell the world about this evidence. Right now.*",
         "choices": [
             "Call the police",
             "Expose it online"
@@ -50,7 +95,7 @@
     },
     "day5_after_expose_online": {
         "name": "Me",
-        "text": "*Connected to a convenience store's WiFi. Uploading every photo and document. Social media, news tips, forums...*"
+        "text": "*Connected to a convenience store's WiFi. Uploading every photo and document. Social media, news tips, online communities...*"
     },
     "day5_after_expose_2": {
         "name": "Me",
@@ -59,64 +104,146 @@
 
     "day5_after_captured": {
         "name": "Me",
-        "text": "*...I opened my eyes. The basement. Fluorescent lights flickering.*"
+        "text": "*...I opened my eyes.*"
     },
     "day5_after_captured_2": {
         "name": "Me",
-        "text": "*My hands are bound. Seated in a chair. ...Is it over?*"
+        "text": "*...Where am I?*"
     },
     "day5_after_captured_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"You're awake, {name}. ...You tried to run?\""
+        "name": "Me",
+        "text": "*Fluorescent lights flicker. Zzt. Zzt. The ceiling. A concrete ceiling. The basement.*"
     },
     "day5_after_captured_4": {
-        "name": "School Nurse",
-        "text": "\"I'll prep the final checkup. Just a blood draw and an IV, that's all.\""
+        "name": "Me",
+        "text": "*I tried to move my hands. They won't move. ...Leather straps. Wrapped around my wrists. I'm bound to a chair. ...The same as what I saw in Seolhwa's dream. The same chair. The same straps. The same fluorescent lights.*"
     },
     "day5_after_captured_5": {
+        "name": "Homeroom Teacher",
+        "text": "\"You're awake, {name}.\""
+    },
+    "day5_after_captured_6": {
+        "name": "Homeroom Teacher",
+        "text": "\"...You tried to run? Do you know how worried I was?\""
+    },
+    "day5_after_captured_7": {
+        "name": "Riin",
+        "text": "\"I'll prepare for the final checkup.\""
+    },
+    "day5_after_captured_8": {
+        "name": "Riin",
+        "text": "\"Just a blood draw and an IV drip and it's done. This is the last time.\""
+    },
+    "day5_after_captured_9": {
         "name": "Me",
-        "text": "*...Should I give up?*",
+        "text": "*'Last.' That word weighs heavy. Once this is over... what happens? Like Seolhwa?*"
+    },
+    "day5_after_captured_10": {
+        "name": "Me",
+        "text": "*Nurse Riin disinfects the inside of my elbow. The coldness of the alcohol swab touches my skin. ...I can't give up here. It's not over yet.*"
+    },
+    "day5_after_captured_choice": {
+        "name": "Me",
+        "text": "*...What do I do?*",
         "choices": [
             "Resist",
             "Accept it"
         ]
     },
+
     "day5_after_captured_resist": {
         "name": "Me",
-        "text": "*I knocked the chair over! Rising with bound hands.*"
+        "text": "*I tensed every muscle in my body. The leather strap digs into my wrist. It hurts. It doesn't matter.*"
     },
     "day5_after_captured_resist_2": {
-        "name": "Lee Seolhwa",
-        "text": "\"...I'll help you.\""
+        "name": "Me",
+        "text": "\"No...! Let me go...!\""
     },
     "day5_after_captured_resist_3": {
-        "name": "Me",
-        "text": "*Sudden blackout. The basement plunges into darkness. In the chaos... I found the exit.*"
+        "name": "Riin",
+        "text": "\"If you move it's dangerous. Stay still —\""
     },
+    "day5_after_captured_resist_4": {
+        "name": "Me",
+        "text": "*That moment. The power went out.*"
+    },
+    "day5_after_captured_resist_5": {
+        "name": "Homeroom Teacher",
+        "text": "\"...What?\""
+    },
+    "day5_after_captured_resist_6": {
+        "name": "Riin",
+        "text": "\"A blackout? At this hour?\""
+    },
+    "day5_after_captured_resist_7": {
+        "name": "Me",
+        "text": "*In the darkness... I feel a hand. A cold, transparent hand. It's loosening the leather strap.*"
+    },
+    "day5_after_captured_resist_8": {
+        "name": "Me",
+        "text": "*...Seolhwa. The strap came undone. Seolhwa takes my hand. I thought a transparent hand couldn't grasp anything... but it holds.*"
+    },
+    "day5_after_captured_resist_9": {
+        "name": "Me",
+        "text": "*I'm pulled through the darkness. Muffling my footsteps. Toward the emergency exit.*"
+    },
+
     "day5_after_captured_submit": {
-        "name": "School Nurse",
-        "text": "\"Good. It'll be over soon. You'll forget everything.\""
+        "name": "Me",
+        "text": "*...The strength drains from me. No energy left to resist. My head drops. My eyes close.*"
     },
     "day5_after_captured_submit_2": {
         "name": "Me",
-        "text": "*The needle touches my arm. Consciousness... fading...*"
+        "text": "*The syringe touches my arm. The needle goes in. Cold liquid spreads through the veins.*"
+    },
+    "day5_after_captured_submit_3": {
+        "name": "Me",
+        "text": "*...It gets warm. It feels like my body is melting. My thoughts blur.*"
+    },
+    "day5_after_captured_submit_4": {
+        "name": "Me",
+        "text": "*There's something... I'm forgetting. What am I forgetting? It was important... what was it...*"
     },
 
     "day5_after_stayed": {
-        "name": "Homeroom Teacher",
-        "text": "\"...You made the right choice, {name}. This is how it should be.\""
+        "name": "Me",
+        "text": "*Ms. Eunsu takes my hand and helps me up.*"
     },
     "day5_after_stayed_2": {
         "name": "Homeroom Teacher",
-        "text": "\"I'll protect you. You don't need to worry about anything.\""
+        "text": "\"You're a good child, {name}.\""
     },
     "day5_after_stayed_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"...Just stay by my side, {name}. Forever.\""
+        "name": "Me",
+        "text": "*The teacher leads me to the classroom. We walk down the corridor. My footsteps and the teacher's heels echo.*"
     },
     "day5_after_stayed_4": {
         "name": "Me",
-        "text": "*Ms. Eunsu is smiling. A warm smile. ...Was this smile always this terrifying?*"
+        "text": "*The classroom door opens. Sea is seated. Nurse Riin is standing. Everyone is smiling.*"
+    },
+    "day5_after_stayed_5": {
+        "name": "Homeroom Teacher",
+        "text": "\"Your teacher will protect you from everything. You don't need to worry about anything.\""
+    },
+    "day5_after_stayed_6": {
+        "name": "Me",
+        "text": "*I sat down. Sea sits next to me. Nurse Riin hands over a cup of tea.*"
+    },
+    "day5_after_stayed_7": {
+        "name": "Homeroom Teacher",
+        "text": "\"...{name} just needs to be by your teacher's side. Forever.\""
+    },
+    "day5_after_stayed_8": {
+        "name": "Me",
+        "text": "*Ms. Eunsu is smiling. A warm smile.*"
+    },
+    "day5_after_stayed_9": {
+        "name": "Me",
+        "text": "*...Was this smile always this frightening? No. It's not frightening. ...It's not frightening. ...Why isn't it frightening?*"
+    },
+    "day5_after_stayed_10": {
+        "name": "Me",
+        "text": "*I drank the tea. It's warm. It feels good. ...There's something I feel like I'm forgetting. What was it. ...It's fine. I can forget it. This place is safe.*"
     },
 
     "day5_after_end": {

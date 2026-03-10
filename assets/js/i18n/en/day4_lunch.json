@@ -1,15 +1,27 @@
 {
     "day4_lunch_start": {
         "name": "Me",
-        "text": "*Lunchtime. Yuna's empty seat keeps drawing my eyes.*"
+        "text": "*The lunch bell rang.*"
     },
     "day4_lunch_start_2": {
         "name": "Me",
-        "text": "*I can't believe she 'transferred out'. She was here just yesterday.*"
+        "text": "*...I have no appetite. My stomach feels shrunken.*"
+    },
+    "day4_lunch_start_3": {
+        "name": "Me",
+        "text": "*Yuna. I need to find Yuna. I can't believe 'she suddenly transferred.'*"
+    },
+    "day4_lunch_start_4": {
+        "name": "Me",
+        "text": "*Or... the nurse's office. Riin's medicine. I need to find out what it is.*"
+    },
+    "day4_lunch_start_5": {
+        "name": "Me",
+        "text": "*There's also the rooftop. What Seolhwa said in the dream. There might be clues there.*"
     },
     "day4_lunch_choice": {
         "name": "Me",
-        "text": "*What should I do now?*",
+        "text": "*I only have the lunch break. I need to move fast.*",
         "choices": [
             "Search for Yuna",
             "Investigate the nurse's office",
@@ -19,90 +31,248 @@
 
     "day4_lunch_search_yuna": {
         "name": "Me",
-        "text": "*I wander the corridors. The places Yuna frequented... the photography club room.*"
+        "text": "*The photography club room is at the end of the second floor of the old building. The corridor is empty during lunch.*"
     },
     "day4_lunch_search_2": {
         "name": "Me",
-        "text": "*The photography club room is open. Nobody inside.*"
+        "text": "*...No, it's not 'empty.' I'm avoiding people. I can't let Sea or Ms. Eunsu see me.*"
     },
     "day4_lunch_search_3": {
         "name": "Me",
-        "text": "*Yuna's locker. I opened it. Empty... except for one thing.*"
+        "text": "*I muffled my footsteps and walked. My heart pounds. This is nothing unusual... so why am I so tense?*"
     },
     "day4_lunch_search_4": {
         "name": "Me",
-        "text": "*A small camera. Hidden in the corner of the locker. Yuna must have left it behind.*"
+        "text": "*...Because it's not nothing unusual.*"
     },
     "day4_lunch_search_5": {
         "name": "Me",
-        "text": "*I pocketed the camera. ...Footsteps in the corridor, suddenly.*"
+        "text": "*I reached the photography club room door. It's closed. I turned the handle. ...It opens.*"
     },
     "day4_lunch_search_6": {
         "name": "Me",
-        "text": "*I looked back. Someone was standing at the end of the hall... then vanished. I hurried back to class.*"
+        "text": "*I went inside. A faint darkroom smell. The sour smell of developer and stop bath.*"
+    },
+    "day4_lunch_search_7": {
+        "name": "Me",
+        "text": "*Yuna's locker. A sticker with her number was on it. 'Choi Yuna.' The sticker is half peeled off. Signs someone tried to pull it off.*"
+    },
+    "day4_lunch_search_8": {
+        "name": "Me",
+        "text": "*I opened the locker. ...Empty. No bag, no textbooks, no photos... All gone. As if nobody had ever used it.*"
+    },
+    "day4_lunch_search_9": {
+        "name": "Me",
+        "text": "*It's clean. **Too** clean. Not a speck of dust. Someone 'tidied' this. Two days ago Yuna was showing me photos from this locker. This locker that was covered in cat photos... empty like it was factory reset.*"
+    },
+    "day4_lunch_search_10": {
+        "name": "Me",
+        "text": "*...Wait. The floor of the locker. The panel is very slightly lifted. I pried up the edge with my fingernail. A false bottom.*"
+    },
+    "day4_lunch_search_11": {
+        "name": "Me",
+        "text": "*Something wedged in the gap. It's Yuna's camera. Deliberately hidden under the panel. She calculated that whoever emptied the locker wouldn't pry up the floor. ...Left for someone to find. For me.*"
+    },
+    "day4_lunch_search_12": {
+        "name": "Me",
+        "text": "*I turned on the camera. The battery indicator blinks. Nearly empty. Only one last photo appears on the screen.*"
+    },
+    "day4_lunch_search_13": {
+        "name": "Me",
+        "text": "*...Stairs heading underground. Dark stairs. Somewhere in the old building. A place you can't see.*"
+    },
+    "day4_lunch_search_14": {
+        "name": "Me",
+        "text": "*In the corner of the photo there's handwriting. 'Under here — Yu.' Yuna's final message.*"
+    },
+    "day4_lunch_search_15": {
+        "name": "Me",
+        "text": "*The camera shut off. Battery dead. ...But it's enough.*"
+    },
+    "day4_lunch_search_16": {
+        "name": "Me",
+        "text": "*Yuna didn't 'suddenly transfer.' Yuna found something, and so —*"
+    },
+    "day4_lunch_search_17": {
+        "name": "Me",
+        "text": "*...The basement. Somewhere in this school there's a basement.*"
     },
 
     "day4_lunch_nurse": {
-        "name": "School Nurse",
-        "text": "\"Oh my, {name}. Back again. What hurts today?\""
+        "name": "Me",
+        "text": "*I stood outside the nurse's office. I can hear glass clinking from inside. The sound of sorting medicine bottles.*"
     },
     "day4_lunch_nurse_2": {
         "name": "Me",
-        "text": "*A locked cabinet in the corner of the nurse's office. It has a padlock that wasn't there before.*"
+        "text": "*...Deep breath. It's fine. I'll just go in like normal.*"
     },
     "day4_lunch_nurse_3": {
-        "name": "School Nurse",
-        "text": "\"How was the drink from yesterday? ...Are you sleeping well?\""
-    },
-    "day4_lunch_nurse_3_alt": {
-        "name": "School Nurse",
-        "text": "\"Have you been sleeping well lately? You look a bit tired.\""
+        "name": "Me",
+        "text": "*I opened the door.*"
     },
     "day4_lunch_nurse_4": {
         "name": "Me",
-        "text": "*Should I ask Riin about Yuna?*",
+        "text": "*Nurse Riin is standing in front of the medicine cabinet. Her back is turned. She's transferring something into a syringe.*"
+    },
+    "day4_lunch_nurse_5": {
+        "name": "Me",
+        "text": "*A transparent liquid. The syringe graduations are precisely calibrated. Practiced movements.*"
+    },
+    "day4_lunch_nurse_6": {
+        "name": "Me",
+        "text": "*...She stops when she sees me. Her shoulders visibly stiffen.*"
+    },
+    "day4_lunch_nurse_7": {
+        "name": "Riin",
+        "text": "\"...You startled me. Knock, please.\""
+    },
+    "day4_lunch_nurse_8": {
+        "name": "Me",
+        "text": "*She quickly puts the syringe in a drawer. Smiles. But her hands are trembling.*"
+    },
+    "day4_lunch_nurse_9": {
+        "name": "Riin",
+        "text": "\"What brings you here? It's lunchtime.\""
+    },
+    "day4_lunch_nurse_10": {
+        "name": "Me",
+        "text": "\"...My head hurts a little.\""
+    },
+    "day4_lunch_nurse_11": {
+        "name": "Me",
+        "text": "*Nurse Riin approaches. She's about to put her hand on my forehead. ...This hand was just holding the syringe. What was she putting in that syringe?*"
+    },
+    "day4_lunch_nurse_timer": {
+        "name": "Riin",
+        "text": "\"No fever. How was the drink you had yesterday? ...Sleeping well?\"",
         "choices": [
-            "Ask where Yuna went",
+            "Ask about Yuna",
             "Say nothing"
         ]
     },
-    "day4_lunch_nurse_confront": {
-        "name": "School Nurse",
-        "text": "\"Yuna? ...Oh, that girl. They said she transferred, didn't they?\""
-    },
-    "day4_lunch_nurse_confront_2": {
-        "name": "School Nurse",
-        "text": "\"...{name}, you said you weren't feeling well. If you're sick, you need treatment. I said I'd make you better. Why do you keep having strange thoughts?\""
-    },
-    "day4_lunch_nurse_pretend": {
+
+    "day4_lunch_nurse_ask": {
         "name": "Me",
-        "text": "*I said nothing. Riin smiled and offered me a vitamin.*"
+        "text": "\"I heard Yuna... transferred suddenly. Last night.\""
     },
-    "day4_lunch_nurse_pretend_2": {
-        "name": "School Nurse",
-        "text": "\"Here, vitamins. Just leave your health management to me. ...Please take them this time?\""
+    "day4_lunch_nurse_ask_2": {
+        "name": "Me",
+        "text": "*Nurse Riin's expression shifted very slightly. 0.3 seconds. Very briefly.*"
+    },
+    "day4_lunch_nurse_ask_3": {
+        "name": "Riin",
+        "text": "\"...Yuna? Oh, Choi Yuna. I see. That was sudden.\""
+    },
+    "day4_lunch_nurse_ask_4": {
+        "name": "Me",
+        "text": "\"Did Yuna come by the nurse's office yesterday?\""
+    },
+    "day4_lunch_nurse_ask_5": {
+        "name": "Riin",
+        "text": "\"...\""
+    },
+    "day4_lunch_nurse_ask_6": {
+        "name": "Me",
+        "text": "*Nurse Riin looks at me. She's smiling, but her eyes aren't.*"
+    },
+    "day4_lunch_nurse_ask_7": {
+        "name": "Riin",
+        "text": "\"...Why are you staring like that? {name}, you're not having strange thoughts, are you?\""
+    },
+    "day4_lunch_nurse_ask_8": {
+        "name": "Me",
+        "text": "*Her voice went cold. Just for a moment. Then softened again.*"
+    },
+    "day4_lunch_nurse_ask_9": {
+        "name": "Riin",
+        "text": "\"Yuna will be fine. She went back to her original school. There's nothing to worry about.\""
+    },
+    "day4_lunch_nurse_ask_10": {
+        "name": "Me",
+        "text": "*'Nothing to worry about.' Ms. Eunsu said the same thing. So did Sea. Nurse Riin's hand is trembling again. ...The hand closing the cabinet. Medicine bottles clink inside. Is this person also fighting something? Or... is she observing me?*"
+    },
+
+    "day4_lunch_nurse_silent": {
+        "name": "Me",
+        "text": "*I said nothing. Nurse Riin watches me quietly.*"
+    },
+    "day4_lunch_nurse_silent_2": {
+        "name": "Riin",
+        "text": "\"...Should I give you medicine? For the headache.\""
+    },
+    "day4_lunch_nurse_silent_3": {
+        "name": "Me",
+        "text": "*The teacher takes medicine out of a drawer. Two white pills. ...Should I take these? Seolhwa said: 'They gave medicine. Medicine to erase memories.'*"
+    },
+    "day4_lunch_nurse_silent_4": {
+        "name": "Me",
+        "text": "\"It's fine. I think I'll get better with some rest.\""
+    },
+    "day4_lunch_nurse_silent_5": {
+        "name": "Riin",
+        "text": "\"...Alright.\""
+    },
+    "day4_lunch_nurse_silent_6": {
+        "name": "Me",
+        "text": "*Nurse Riin puts the medicine back in the drawer. I can see the syringe she put in there earlier. I looked away. Pretended I didn't see. ...My heart is beating too fast.*"
     },
 
     "day4_lunch_rooftop": {
         "name": "Me",
-        "text": "*The rooftop. Where I was with Yuna yesterday. The wind is cold.*"
+        "text": "*I pushed open the rooftop door. ...It opens. Yesterday it was locked.*"
     },
     "day4_lunch_rooftop_2": {
         "name": "Me",
-        "text": "*Something is carved under the railing. Letters scratched in, as if with a knife.*"
+        "text": "*The wind blows strongly. My hair flies. The sky is a dull gray.*"
     },
     "day4_lunch_rooftop_3": {
         "name": "Me",
-        "text": "*'There's only one way out. — Lee Seolhwa' ...Seolhwa left this.*"
+        "text": "*Nobody on the rooftop. Even during lunch. ...Were there usually no students coming up here?*"
     },
     "day4_lunch_rooftop_4": {
         "name": "Me",
-        "text": "*...One way? What way?*"
+        "text": "*I walked toward the railing. The school field is visible below. Students are eating lunch. Smiling. All with the same smile.*"
     },
-    "day4_lunch_ghost": "The basement",
     "day4_lunch_rooftop_5": {
         "name": "Me",
-        "text": "*Suddenly cold. I hurry back down.*"
+        "text": "*...Looking up from down there, could they see me? If I waved my hand up here, would anyone really see me?*"
+    },
+    "day4_lunch_rooftop_6": {
+        "name": "Me",
+        "text": "*Something is carved under the railing. Letters scratched as if with a knife. Rusted. It looks old. 'There is only one way out. — Lee Seolhwa'*"
+    },
+    "day4_lunch_rooftop_7": {
+        "name": "Me",
+        "text": "*...Seolhwa carved this. One year ago. I traced the letters with my finger. She carved deep. Put force into it. Desperately.*"
+    },
+    "day4_lunch_rooftop_8": {
+        "name": "Me",
+        "text": "*'Only one way out.' ...What is it? Escape? Or... There's even smaller writing underneath. Barely visible. 'The answer is in the basement'*"
+    },
+    "day4_lunch_rooftop_9": {
+        "name": "Me",
+        "text": "*The basement. Yuna's camera also had stairs leading underground in the photo.*"
+    },
+    "day4_lunch_rooftop_10": {
+        "name": "Me",
+        "text": "*On the rooftop floor there's a single cherry blossom petal. Rustling slightly in the breeze. ...It's not cherry blossom season now. I saw this on the morning of day 3 in the corridor too.*"
+    },
+    "day4_lunch_rooftop_11": {
+        "name": "Me",
+        "text": "*Seolhwa's traces. Evidence that Seolhwa was here. Even when everything else is erased... this remains. I put the cherry blossom petal in my pocket. ...I felt like I should take it with me.*"
+    },
+    "day4_lunch_rooftop_12": {
+        "name": "Me",
+        "text": "*...The basement. I need to find it after school. Those stairs that Yuna photographed.*"
+    },
+    "day4_lunch_rooftop_13": {
+        "name": "Me",
+        "text": "*I hurry back down.*"
+    },
+
+    "day4_lunch_ghost": {
+        "name": "",
+        "text": "**\"Basement\"**"
     },
 
     "day4_lunch_end": {

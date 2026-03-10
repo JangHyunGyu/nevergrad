@@ -1,88 +1,303 @@
 {
     "day5_morning_start": {
         "name": "Me",
-        "text": "*Day 5. The last day. I opened my eyes.*"
+        "text": "*Day 5.*"
     },
     "day5_morning_start_2": {
         "name": "Me",
-        "text": "*I look out the window. Gray sky. Looks like rain.*"
+        "text": "*The last day.*"
     },
     "day5_morning_start_3": {
         "name": "Me",
-        "text": "*...Let's go. I finish this today.*"
+        "text": "*I opened my eyes. The alarm didn't ring. My body woke up on its own.*"
     },
-
+    "day5_morning_start_4": {
+        "name": "Me",
+        "text": "*I look out the window. The sky is gray. Clouds hang low. It looks like rain.*"
+    },
+    "day5_morning_start_5": {
+        "name": "Me",
+        "text": "*...Day 1 morning was clear. Cherry blossoms were in bloom. In just four days, the world has changed this much.*"
+    },
+    "day5_morning_start_6": {
+        "name": "Me",
+        "text": "*No. The world hasn't changed. It's the way I see it that has changed.*"
+    },
+    "day5_morning_start_7": {
+        "name": "Me",
+        "text": "*I checked my bag. The things I packed last night. My phone with the evidence. Yuna's memory card. The photo fragment.*"
+    },
+    "day5_morning_start_8": {
+        "name": "Me",
+        "text": "*...I have to get out today. Before 11 PM tonight.*"
+    },
+    "day5_morning_start_9": {
+        "name": "Me",
+        "text": "*I put on my uniform. My face in the mirror... is not the face from Day 1. My eyes are different. Eyes that have learned what fear looks like.*"
+    },
+    "day5_morning_start_10": {
+        "name": "Me",
+        "text": "*Deep breath. One. Two. Three.*"
+    },
+    "day5_morning_start_11": {
+        "name": "Me",
+        "text": "*...I'm going.*"
+    },
     "day5_morning_gate": {
         "name": "Me",
-        "text": "*School gate. Wrapped in chains. Every exit besides the front gate is... blocked.*"
+        "text": "*The walk to school. The last commute.*"
     },
     "day5_morning_gate_2": {
         "name": "Me",
-        "text": "*Students pass through the gate as if nothing is wrong. As if... they can't see it.*"
+        "text": "*...My steps are heavy. Each step feels like dragging a lead weight.*"
     },
     "day5_morning_gate_3": {
         "name": "Me",
-        "text": "*Three people stand side by side in front of the gate.*"
+        "text": "*The front gate comes into view.*"
+    },
+    "day5_morning_gate_4": {
+        "name": "Me",
+        "text": "*The front gate is open. Same as always. Students pass through in small groups.*"
+    },
+    "day5_morning_gate_5": {
+        "name": "Me",
+        "text": "*...I just have to go out. Past the front gate, turn left, and the bus stop is there. Get on any bus.*"
+    },
+    "day5_morning_gate_6": {
+        "name": "Me",
+        "text": "*I took one step forward. Two steps. The gate gets closer.*"
+    },
+    "day5_morning_gate_choice": {
+        "name": "Me",
+        "text": "",
+        "choices": [
+            "Keep walking forward",
+            "Turn back"
+        ],
+        "dodgeChoice": true,
+        "dodgeIndex": 0,
+        "maxAttempts": 4
+    },
+    "day5_morning_gate_dodge_fail": {
+        "name": "Me",
+        "text": "*...Forward. I have to go forward.*"
+    },
+    "day5_morning_paralysis_1": {
+        "name": "Me",
+        "text": "*...On the third step, my legs stopped.*"
+    },
+    "day5_morning_paralysis_2": {
+        "name": "Me",
+        "text": "*They won't move. I have the will to walk, but my legs won't listen. As if they've been embedded in concrete.*"
+    },
+    "day5_morning_paralysis_3": {
+        "name": "Me",
+        "text": "*The tea I drank last night. The 'good for sleep' tea that Nurse Riin gave me. ...Could it be?*"
+    },
+    "day5_morning_paralysis_4": {
+        "name": "Me",
+        "text": "*I look around. Students pass through the gate. Casually. Smiling.*"
+    },
+    "day5_morning_paralysis_5": {
+        "name": "Me",
+        "text": "*Only I can't move. The gate is open. Nobody is blocking me.*"
+    },
+    "day5_morning_paralysis_6": {
+        "name": "Me",
+        "text": "*Standing in front of an open door and I can't take a single step out. This... this is the school's real prison.*"
+    },
+    "day5_morning_watchers_1": {
+        "name": "Me",
+        "text": "*I turned around and looked back.*"
+    },
+    "day5_morning_watchers_2": {
+        "name": "Me",
+        "text": "*Inside the school gate. Ms. Eunsu is sitting on a bench. Sea is standing under a tree. Nurse Riin is looking down from the nurse's office window.*"
+    },
+    "day5_morning_watchers_3": {
+        "name": "Me",
+        "text": "*All in different positions. A natural-looking scene. But all three are watching me.*"
+    },
+    "day5_morning_watchers_4": {
+        "name": "Me",
+        "text": "*All three are smiling.*"
     },
     "day5_morning_welcome": {
         "name": "Homeroom Teacher",
-        "text": "\"Good morning, {name}. Today is a special day.\""
+        "text": "\"Good morning, {name}.\""
     },
     "day5_morning_welcome_2": {
-        "name": "Han Sea",
-        "text": "\"{name}! Let's be together all day today.\""
+        "name": "Me",
+        "text": "*Ms. Eunsu rises from the bench and approaches. Slowly. Without hurrying. As if she already knows I can't move.*"
     },
     "day5_morning_welcome_3": {
-        "name": "School Nurse",
-        "text": "\"I need to finish your health checkup today. Come to the nurse's office after school, okay?\""
+        "name": "Homeroom Teacher",
+        "text": "\"Today is a special day. Are you ready?\""
     },
     "day5_morning_welcome_4": {
-        "name": "Me",
-        "text": "*Three identical smiles overlap before my eyes. The same smile. ...A predator's smile.*"
+        "name": "Han Sea",
+        "text": "\"{name}.\""
     },
-
+    "day5_morning_welcome_5": {
+        "name": "Me",
+        "text": "*Sea takes my arm. Naturally. Her grip is strong.*"
+    },
+    "day5_morning_welcome_6": {
+        "name": "Han Sea",
+        "text": "\"Let's stay together all day today. Let's never separate.\""
+    },
+    "day5_morning_welcome_7": {
+        "name": "Me",
+        "text": "*There's weight in the word 'never.'*"
+    },
+    "day5_morning_welcome_8": {
+        "name": "Riin",
+        "text": "\"There's still the health checkup to finish.\""
+    },
+    "day5_morning_welcome_9": {
+        "name": "Me",
+        "text": "*Nurse Riin smiles. Her hand is in her coat pocket. Something bulges inside the pocket.*"
+    },
+    "day5_morning_welcome_10": {
+        "name": "Riin",
+        "text": "\"Come to the nurse's office after school. ...Be sure to come.\""
+    },
+    "day5_morning_welcome_11": {
+        "name": "Me",
+        "text": "*The three smiles overlap before my eyes.*"
+    },
+    "day5_morning_welcome_12": {
+        "name": "Me",
+        "text": "*The same smile. The same angle. The same depth. The same warmth.*"
+    },
+    "day5_morning_welcome_13": {
+        "name": "Me",
+        "text": "*...A hunter's smile.*"
+    },
+    "day5_morning_welcome_14": {
+        "name": "Me",
+        "text": "*And I am the prey. Already inside the cage.*"
+    },
     "day5_morning_classroom": {
         "name": "Me",
-        "text": "*The classroom. Words written on the blackboard.*"
+        "text": "*Arm held by Sea, I entered the classroom.*"
     },
     "day5_morning_classroom_2": {
         "name": "Me",
-        "text": "*'Graduation Ceremony'. ...Graduation? On Day 5?*"
+        "text": "*Words are written on the blackboard. Ms. Eunsu's handwriting.*"
     },
     "day5_morning_classroom_3": {
         "name": "Me",
-        "text": "*Ms. Eunsu takes the podium.*"
+        "text": "*'Graduation Ceremony'*"
+    },
+    "day5_morning_classroom_4": {
+        "name": "Me",
+        "text": "*...Graduation ceremony? Only five days since I transferred? What graduation?*"
+    },
+    "day5_morning_classroom_5": {
+        "name": "Me",
+        "text": "*I sat down. Sea sits next to me. Not her usual seat. She dragged a chair right up beside me.*"
+    },
+    "day5_morning_classroom_6": {
+        "name": "Me",
+        "text": "*Ms. Eunsu stands at the podium. She doesn't call roll. She starts talking right away.*"
     },
     "day5_morning_class": {
         "name": "Homeroom Teacher",
-        "text": "\"Today is a special lesson. Let's talk about 'graduation'.\""
+        "text": "\"Today is a special lesson.\""
     },
     "day5_morning_class_2": {
         "name": "Homeroom Teacher",
-        "text": "\"Graduation is the end of a process. When the process is complete... you move on to a new place.\""
+        "text": "\"Let's talk about 'graduation.'\""
     },
     "day5_morning_class_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"{name}, your graduation... is today.\""
+        "name": "Me",
+        "text": "*The teacher points at the blackboard. Below the words 'Graduation Ceremony,' she writes something more. '= Completion'*"
     },
     "day5_morning_class_4": {
-        "name": "Me",
-        "text": "\"As you all know, the world outside school is cold and dangerous. You get hurt, you fail, you break...\""
+        "name": "Homeroom Teacher",
+        "text": "\"As you all know, the world outside school is far too cold and dangerous. You get hurt, you fail, you break...\""
     },
-
+    "day5_morning_class_5": {
+        "name": "Homeroom Teacher",
+        "text": "\"That's why your teacher wants you to 'graduate' in the safest and most pristine state possible.\""
+    },
+    "day5_morning_class_6": {
+        "name": "Me",
+        "text": "*The teacher turns around. She looks at me. Only me.*"
+    },
+    "day5_morning_class_7": {
+        "name": "Homeroom Teacher",
+        "text": "\"Some students take three years to realize that, but our class is very special...\""
+    },
+    "day5_morning_class_8": {
+        "name": "Homeroom Teacher",
+        "text": "\"...Five days is enough.\""
+    },
+    "day5_morning_class_9": {
+        "name": "Me",
+        "text": "*The classroom goes quiet. You can't even hear breathing.*"
+    },
+    "day5_morning_class_10": {
+        "name": "Homeroom Teacher",
+        "text": "\"{name}, your graduation too... is today.\""
+    },
+    "day5_morning_class_11": {
+        "name": "Me",
+        "text": "*The teacher smiles. Warmly. As if in congratulation.*"
+    },
+    "day5_morning_class_12": {
+        "name": "Me",
+        "text": "*...Every other student in the classroom is staring at me. Thirty faces. Nobody moves.*"
+    },
+    "day5_morning_class_13": {
+        "name": "Me",
+        "text": "*It seems like nobody is breathing. Like mannequins. Like dolls.*"
+    },
+    "day5_morning_class_14": {
+        "name": "Me",
+        "text": "*Sea takes my hand. Tight. My fingers hurt.*"
+    },
+    "day5_morning_class_15": {
+        "name": "Me",
+        "text": "*I have to get out of this classroom. I have to hold on until lunch. That's when I move.*"
+    },
+    "day5_morning_class_16": {
+        "name": "Me",
+        "text": "*...Can I hold on?*"
+    },
     "day5_morning_note": {
         "name": "Me",
-        "text": "*A note stuck under my desk. Yuna's handwriting.*"
-    },
-    "day5_morning_note_alt": {
-        "name": "Me",
-        "text": "*Class ended. There's nobody to help me.*"
+        "text": "*Mid-lesson. I pretended to drop a pencil and looked under the desk.*"
     },
     "day5_morning_note_2": {
         "name": "Me",
-        "text": "*'Lunch. Old building, 3rd floor. I found an escape route. - Yuna'*"
+        "text": "*A note is stuck there. When did she put it? Yuna's handwriting. Small, densely packed letters.*"
     },
-
+    "day5_morning_note_3": {
+        "name": "Me",
+        "text": "*'Lunch — end corridor, 3rd floor, old building. There's an emergency exit. The route Seolhwa-sunbae found. I found the escape route. — Yuna'*"
+    },
+    "day5_morning_note_4": {
+        "name": "Me",
+        "text": "*The route Seolhwa found. The very route Seolhwa told me about in last night's dream.*"
+    },
+    "day5_morning_note_5": {
+        "name": "Me",
+        "text": "*How did Yuna know this? ...Did Yuna also meet Seolhwa?*"
+    },
+    "day5_morning_note_6": {
+        "name": "Me",
+        "text": "*I put the note in my pocket. My heart beats. I feel something called hope again for the first time in four days.*"
+    },
+    "day5_morning_note_7": {
+        "name": "Me",
+        "text": "*Lunch. That's the only chance.*"
+    },
+    "day5_morning_no_note": {
+        "name": "Me",
+        "text": "*Class ended. I have to find a way to escape on my own. There might be an emergency exit on the old building side...*"
+    },
     "day5_morning_end": {
         "name": "Me",
         "text": "*Morning is over. Time crawls like the clock has stopped.*"

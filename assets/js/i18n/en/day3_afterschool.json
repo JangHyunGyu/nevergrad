@@ -15,24 +15,19 @@
     },
 
     "day3_after_riin": {
-        "name": "School Nurse",
-        "text": "\"Oh, {name}. Good timing. You look a bit tired today?\""
+        "name": "Riin",
+        "text": "\"Sit down. I made a health drink. A vitamin and herb blend.\""
     },
     "day3_after_riin_2": {
-        "name": "School Nurse",
-        "text": "\"Sit down here. I made a special health drink — a vitamin and herb blend.\""
+        "name": "Me",
+        "text": "*Riin hands me a cup with pale purple liquid. A slightly odd smell.*"
     },
     "day3_after_riin_3": {
         "name": "Me",
-        "text": "*Riin hands me a cup with a pale purple liquid. ...It smells a little odd.*"
+        "text": "*...Wait. Nurse Riin's hand is trembling very slightly. The hand holding the cup.*"
     },
-    "day3_after_riin_name": {
-        "name": "School Nurse",
-        "text": "\"...Hey, {name}. Don't you think we've gotten pretty close by now?\""
-    },
-    "day3_after_riin_name_2": {
-        "name": "School Nurse",
-        "text": "\"Don't call me 'nurse'... Call me Riin. When it's just the two of us.\""
+    "day3_after_riin_flicker": {
+        "text": "Run away"
     },
     "day3_after_riin_choice": {
         "name": "Me",
@@ -42,7 +37,6 @@
             "Politely decline"
         ]
     },
-    "day3_after_riin_flicker": "Run away",
     "day3_after_riin_drink": {
         "name": "Riin",
         "text": "\"Good. It'll take effect soon.\""
@@ -53,36 +47,24 @@
     },
     "day3_after_riin_drink_3": {
         "name": "Me",
-        "text": "*...No, I'm fine. Just tired, that's all.*"
+        "text": "*...The moment Nurse Riin turned away, I caught her expression. Relief? No. **Pain.** It vanished quickly.*"
     },
     "day3_after_riin_refuse": {
         "name": "Riin",
-        "text": "\"...Is that so? What a shame.\""
+        "text": "\"...Is that so? Alright, I won't force you.\""
     },
     "day3_after_riin_refuse_2": {
-        "name": "Riin",
-        "text": "\"That's okay, you can drink it next time. ...You will drink it next time, right?\""
+        "name": "Me",
+        "text": "*Nurse Riin takes the cup away. She's smiling, but her hand is still trembling.*"
     },
 
     "day3_after_sea": {
         "name": "Han Sea",
-        "text": "\"{name}, let's walk home together. I want to check out the new bakery!\""
+        "text": "\"...{name}, where were you at lunch?\""
     },
     "day3_after_sea_2": {
-        "name": "Me",
-        "text": "*Walking down the corridor with Sea. She seems cheerful as usual, but...*"
-    },
-    "day3_after_sea_3": {
         "name": "Han Sea",
-        "text": "\"...By the way, {name}, where did you go during lunch?\""
-    },
-    "day3_after_sea_4": {
-        "name": "Han Sea",
-        "text": "\"I heard you were on the rooftop with Yuna. Just the two of you. ...Someone told me.\""
-    },
-    "day3_after_sea_4_alt": {
-        "name": "Han Sea",
-        "text": "\"You disappeared during lunch... I was a little worried.\""
+        "text": "\"I heard you were on the rooftop with Yuna, just the two of you. Someone told me.\""
     },
     "day3_after_sea_choice": {
         "name": "Me",
@@ -93,134 +75,126 @@
         ]
     },
     "day3_after_sea_truth": {
-        "name": "Han Sea",
-        "text": "\"...With Yuna. Alone. I see.\""
-    },
-    "day3_after_sea_truth_2": {
         "name": "Me",
         "text": "*Sea is smiling. She's smiling, but... her eyes aren't.*"
     },
-    "day3_after_sea_lie": {
+    "day3_after_sea_truth_2": {
         "name": "Han Sea",
-        "text": "\"Really? Good, I was lonely all by myself!\""
+        "text": "\"I see, honest. ...I like honesty.\""
+    },
+    "day3_after_sea_truth_3": {
+        "name": "Me",
+        "text": "*Sea looks out the window. For a long moment.*"
+    },
+    "day3_after_sea_truth_4": {
+        "name": "Han Sea",
+        "text": "\"...Sometimes I think about it. Why I'm doing this.\""
+    },
+    "day3_after_sea_truth_5": {
+        "name": "Me",
+        "text": "*Sea stops talking and shakes her head. It looks like she was about to say something and swallowed it.*"
+    },
+    "day3_after_sea_truth_6": {
+        "name": "Han Sea",
+        "text": "\"...Never mind. Forget it.\""
+    },
+    "day3_after_sea_truth_7": {
+        "name": "Me",
+        "text": "*Sea smiles again. This time her eyes are smiling too. But that moment just now... I can tell it wasn't an act.*"
+    },
+    "day3_after_sea_lie": {
+        "name": "Me",
+        "text": "*Sea's eyes narrow.*"
     },
     "day3_after_sea_lie_2": {
-        "name": "Me",
-        "text": "*Sea grabbed my arm. Tighter than usual.*"
+        "name": "Han Sea",
+        "text": "\"...You're lying. I can tell right away when {name} lies.\""
     },
 
     "day3_after_eunsu": {
-        "name": "Homeroom Teacher",
-        "text": "\"Oh, {name}. You're still here? I'm working late too, haha.\""
+        "name": "Me",
+        "text": "*Ms. Eunsu hands me a coffee. It's warm.*"
     },
     "day3_after_eunsu_2": {
         "name": "Me",
-        "text": "*The teacher is buried in a pile of documents. I can see something through the gaps.*"
+        "text": "*Documents are spread out on the desk. It reads **'Transfer Student Management Registry'**. ...My eyes went to it.*"
     },
     "day3_after_eunsu_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"Wait just a moment, let me finish this... Oh, want some coffee?\""
-    },
-    "day3_after_eunsu_name": {
-        "name": "Homeroom Teacher",
-        "text": "\"...{name}. When it's just us, you don't have to call me 'teacher'.\""
-    },
-    "day3_after_eunsu_name_2": {
-        "name": "Homeroom Teacher",
-        "text": "\"Call me Eunsu. ...Or 'Ms. Eunsu' if that's easier.\""
-    },
-    "day3_after_eunsu_4": {
         "name": "Me",
-        "text": "*While Ms. Eunsu goes to make coffee. Documents on her desk catch my eye. 'Transfer Student Management Registry'.*"
+        "text": "*Ms. Eunsu drinks her coffee and looks at me. She doesn't put the documents away.*"
     },
     "day3_after_eunsu_choice": {
         "name": "Me",
         "text": "*Should I look at the documents?*",
         "choices": [
             "Peek secretly",
-            "Don't look"
+            "Look away"
         ]
     },
     "day3_after_eunsu_peek": {
         "name": "Me",
-        "text": "*I flipped through the documents. A list of transfer students... with dates beside each name. Transfer date and... 'Processing Completion Date'?*"
+        "text": "*Transfer student list. Dates written next to the names. Transfer date and... **'Processing Completion Date'**?*"
     },
     "day3_after_eunsu_peek_2": {
         "name": "Me",
-        "text": "*My name is here too. The column next to the date is... still blank.*"
+        "text": "*Seventh row. 'Lee Seolhwa'. A date from one year ago. In the processing completion column, in red: **'FAILED'**.*"
     },
     "day3_after_eunsu_peek_3": {
-        "name": "Eunsu",
-        "text": "\"...What are you looking at?\""
+        "name": "Me",
+        "text": "*...Seolhwa? The girl sitting in the back row? Processing? Failed? My name is here too. Thirteenth row. The column beside the date is... **still blank**.*"
+    },
+    "day3_after_eunsu_peek_4": {
+        "name": "Homeroom Teacher",
+        "text": "\"Were you looking at the attendance sheet?\""
+    },
+    "day3_after_eunsu_peek_5": {
+        "name": "Me",
+        "text": "*Ms. Eunsu is smiling. Holding her coffee. At ease. ...She knew I was looking. No — **she let me look**.*"
+    },
+    "day3_after_eunsu_peek_6": {
+        "name": "Homeroom Teacher",
+        "text": "\"How thorough. It's a list I manage. Something like a transfer student adjustment progress report.\""
+    },
+    "day3_after_eunsu_peek_7": {
+        "name": "Homeroom Teacher",
+        "text": "\"...Anything you're curious about?\""
     },
     "day3_after_eunsu_ignore": {
-        "name": "Eunsu",
-        "text": "\"Thanks for waiting. Here, coffee.\""
+        "name": "Me",
+        "text": "*...It's not right to look at someone else's documents. I just drank my coffee.*"
     },
     "day3_after_eunsu_ignore_2": {
+        "name": "Homeroom Teacher",
+        "text": "\"Not interested? Your name is in there too, you know.\""
+    },
+    "day3_after_eunsu_ignore_3": {
+        "name": "Homeroom Teacher",
+        "text": "\"It's a transfer student adjustment progress sheet. I wrote that {name}... is adjusting well.\""
+    },
+    "day3_after_eunsu_ignore_4": {
         "name": "Me",
-        "text": "*I chatted with Ms. Eunsu over coffee. It was warm and comfortable. ...Was it really?*"
+        "text": "*She puts the documents in a drawer. Casually. But the words 'your name is in there too' stay with me.*"
     },
 
     "day3_after_alone": {
         "name": "Me",
-        "text": "*Alone in the classroom. The memory card in my pocket weighs on my mind.*"
-    },
-    "day3_after_alone_2": {
-        "name": "Me",
-        "text": "*I pulled out my laptop and inserted the memory card.*"
+        "text": "*I took out my laptop and inserted the memory card.*"
     },
     "day3_after_alone_no_card": {
         "name": "Me",
         "text": "*Quiet classroom. Time passed without anything special happening.*"
     },
-    "day3_after_alone_branch": {
-        "name": "Me",
-        "text": "*Files appear. Photo folders, document folders... My heart pounds.*"
-    },
-    "day3_after_alone_3": {
+    "day3_after_alone_2": {
         "name": "Me",
         "text": "*Photos. Empty classrooms, cleared-out lockers, desks with names scratched off... And photos of documents taken in the faculty office.*"
     },
-    "day3_after_alone_yuna_photos": {
+    "day3_after_alone_3": {
         "name": "Me",
-        "text": "*...Wait. There's another folder. It's labeled 'Observation Records'.*"
-    },
-    "day3_after_alone_yuna_photos_2": {
-        "name": "Me",
-        "text": "*I opened it. ...They're photos of me. Dozens of them. Sleeping during class, walking down the hallway from behind, eating lunch from the side...*"
-    },
-    "day3_after_alone_yuna_photos_3": {
-        "name": "Me",
-        "text": "*...What is this? Yuna took these? This is... stalking, isn't it?*"
-    },
-    "day3_after_alone_yuna_photos_4": {
-        "name": "Me",
-        "text": "*My heart is pounding. Was Yuna one of them too? Made me trust her, and then...*"
-    },
-    "day3_after_alone_yuna_photos_5": {
-        "name": "Me",
-        "text": "*...No, wait. Looking more carefully, they're all taken from surveillance camera angles. It's not that Yuna took photos of me — she photographed 'the surveillants photographing me.'*"
-    },
-    "day3_after_alone_yuna_photos_6": {
-        "name": "Me",
-        "text": "*So this is... evidence that I'm being watched. Material Yuna gathered for my sake.*"
-    },
-    "day3_after_alone_yuna_photos_7": {
-        "name": "Me",
-        "text": "*...But that fear I felt just now was real. In this school, I don't know who I can trust.*"
+        "text": "*A document titled **'Subject List'**. Numbers and names in rows... most crossed out in red.*"
     },
     "day3_after_alone_4": {
         "name": "Me",
-        "text": "*A document titled 'Subject List'. Numbers and names in rows... most crossed out in red.*"
-    },
-    "day3_after_alone_5": {
-        "name": "Me",
-        "text": "*The last line. Number 07. My name. The red line... isn't there yet.*"
-    },
-    "day3_after_alone_6": {
-        "name": "Me",
-        "text": "*Footsteps in the corridor. I yanked the card out.*"
+        "text": "*The last line. **Number 07. My name is written there.** The red line... isn't there yet.*"
     },
 
     "day3_after_end": {

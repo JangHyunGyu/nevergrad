@@ -1,80 +1,83 @@
 {
     "day2_after_start": {
-        "name": "Ich",
-        "text": "*Nach der Schule. Auch heute ist das Abendrot schön. Als ich meine Tasche packen will, kommt Frau Eunsu auf mich zu.*"
+        "name": "",
+        "text": "*Nach dem Ende der letzten Stunde, als ich meine Sachen einpacke, kommt Eunsu-Sensei auf mich zu.*"
     },
     "day2_after_eunsu_1": {
-        "name": "Park Eunsu",
-        "text": "\"{name}, 잠깐 시간 있어?\""
+        "name": "Klassenlehrerin",
+        "text": "\"{name}, hast du kurz Zeit?\""
     },
     "day2_after_eunsu_2": {
         "name": "Ich",
-        "text": "\"네, 무슨 일이세요?\""
+        "text": "\"Ja, was ist los?\""
     },
     "day2_after_eunsu_3": {
-        "name": "Park Eunsu",
-        "text": "\"우리 학교, 스마트 캠퍼스 시스템이 잘 되어 있거든. 교내 와이파이도 빠르고, 출결도 자동이야.\""
+        "name": "Klassenlehrerin",
+        "text": "\"Unsere Schule hat ein tolles Smart-Campus-System. Das WLAN ist schnell und die Anwesenheit wird automatisch erfasst.\""
     },
     "day2_after_eunsu_4": {
         "name": "Ich",
-        "text": "\"아, 그래서 출석을 따로 안 부르는 거였군요.\""
+        "text": "\"Oh, deshalb wird die Anwesenheit nicht separat aufgerufen.\""
     },
     "day2_after_eunsu_5": {
-        "name": "Park Eunsu",
-        "text": "\"맞아. 다 시스템으로 돌아가. 전학생이면 '학생 안전 앱'을 아직 안 깔았지?\""
+        "name": "Klassenlehrerin",
+        "text": "\"Genau. Alles läuft über das System. Als neuer Schüler hast du die 'Schülersicherheits-App' noch nicht installiert, oder?\""
     },
     "day2_after_eunsu_6": {
         "name": "Ich",
-        "text": "\"안전 앱이요?\""
+        "text": "\"Eine Sicherheits-App?\""
     },
     "day2_after_eunsu_choice": {
-        "name": "Park Eunsu",
-        "text": "\"이거 하나만 깔아둘래? 요새 위치 파악 안 되면 선생님이 너무 불안해서. {name}이 안전해야 나도 마음이 편하니까.\"",
+        "name": "Klassenlehrerin",
+        "text": "\"Könntest du nur diese eine installieren? Es macht mich so unruhig, wenn ich deinen Aufenthaltsort heutzutage nicht kenne. Ich bin beruhigter, wenn ich weiß, dass {name} sicher ist.\"",
         "choices": [
-            "\"네, 부탁드려요.\" (폰을 건넨다)",
-            "\"제가 직접 깔아도 될까요?\" (거절한다)"
+            "\"Ja, bitte.\" (Handy aushändigen)",
+            "\"Darf ich es selbst installieren?\" (Ablehnen)"
         ]
     },
+
     "day2_after_comply_1": {
         "name": "Ich",
-        "text": "*폰을 건넸다. 선생님이 능숙하게 조작한다.*"
+        "text": "*Ich habe mein Handy übergeben. Die Lehrerin bedient es gekonnt.*"
     },
     "day2_after_comply_2": {
-        "name": "Park Eunsu",
-        "text": "\"금방이야. ...이거 하나 깔고, 설정 좀 만지고... 됐다.\""
+        "name": "Klassenlehrerin",
+        "text": "\"Dauert nicht lange. ...Diese hier installieren, ein paar Einstellungen anpassen... Fertig.\""
     },
     "day2_after_comply_3": {
         "name": "Ich",
-        "text": "*선생님이 폰을 돌려줬다. 능숙한 손놀림이었다. 앱은 깔끔해 보인다.*"
+        "text": "*Die Lehrerin gab das Handy zurück. Geschickte Hände. Die App sieht sauber aus.*"
     },
     "day2_after_comply_4": {
         "name": "Ich",
-        "text": "*...근데 설정을 보니 위치 권한이 '항상 허용'으로 되어 있다. 학교 앱이니까 그런 거겠지.*"
+        "text": "*...Aber beim Blick auf die Einstellungen ist die Standortberechtigung auf 'Immer erlaubt' gesetzt. Das ist wohl normal für eine Schul-App.*"
     },
     "day2_after_comply_5": {
-        "name": "Park Eunsu",
-        "text": "\"이제 {name}이 어디 있든 선생님이 바로 알 수 있어. 안심이다.\""
+        "name": "Klassenlehrerin",
+        "text": "\"Jetzt kann ich jederzeit wissen, wo {name} ist. Was für eine Erleichterung.\""
     },
     "day2_after_comply_6": {
         "name": "Ich",
-        "text": "\"네, 감사합니다.\""
+        "text": "\"Danke.\""
     },
+
     "day2_after_refuse_1": {
         "name": "Ich",
-        "text": "\"아, 제가 직접 깔아도 될까요? 폰 설정 좀 민감해서...\""
+        "text": "\"Oh, darf ich es selbst installieren? Meine Handyeinstellungen sind ein bisschen empfindlich...\""
     },
     "day2_after_refuse_2": {
-        "name": "Park Eunsu",
-        "text": "\"그래? 그럼 나중에 직접 해도 돼. 앱스토어에서 검색하면 나올 거야.\""
+        "name": "Klassenlehrerin",
+        "text": "\"Ach ja? Dann kannst du es später selbst machen. Such einfach im App-Store danach.\""
     },
     "day2_after_refuse_3": {
         "name": "Ich",
-        "text": "*선생님이 웃으며 돌아갔다. 근데 그 웃음이... 어딘가 아쉬워 보였다.*"
+        "text": "*Die Lehrerin lächelte und drehte sich weg. Aber dieses Lächeln... wirkte irgendwie enttäuscht.*"
     },
     "day2_after_refuse_4": {
         "name": "Ich",
-        "text": "*아니, 화나 보였다? ...착각이겠지.*"
+        "text": "*Nein, fast wütend? ...Ich bilde es mir wohl ein.*"
     },
+
     "day2_after_transition": {
         "name": "",
         "text": ""
@@ -83,255 +86,259 @@
         "name": "Ich",
         "text": "*Nach der Schule, wohin soll ich gehen?*",
         "choices": [
-            "Mit Sea zusammen sein",
-            "Yuna treffen",
-            "Zum Krankenzimmer gehen",
-            "Nach Hause gehen"
+            "In den Schülervertretungsraum zu Sea gehen",
+            "In die Bibliothek zu Yuna gehen",
+            "Ins Krankenzimmer zu Riin-Sensei gehen",
+            "Einfach nach Hause gehen"
         ]
     },
+
     "day2_after_sea_1": {
         "name": "Ich",
-        "text": "*학생회실 문을 열었다. 세아가 창가에 앉아 있다.*"
+        "text": "*Ich öffnete die Tür des Schülervertretungsraums. Sea sitzt am Fenster.*"
     },
     "day2_after_sea_2": {
         "name": "Han Sea",
-        "text": "\"Sag mal... du warst vorhin im Krankenzimmer, oder? Worüber hast du mit der Krankenschwester Riin geredet?\""
+        "text": "\"Du bist da? Du bist heute wieder hier.\""
     },
     "day2_after_sea_3": {
         "name": "Ich",
-        "text": "\"War nur eine Gesundheitsuntersuchung... woher weißt du das?\""
+        "text": "\"Ich hab's versprochen, oder?\""
     },
     "day2_after_sea_4": {
-        "name": "Ich",
-        "text": "*Sea sagte lächelnd \"Einfach so\". Aber in ihren lächelnden Augen blitzte etwas... Kaltes auf. Wohl nur Einbildung.*"
+        "name": "Han Sea",
+        "text": "\"...Du hast es tatsächlich behalten.\""
     },
     "day2_after_sea_5": {
-        "name": "Han Sea",
-        "text": "\"...{name}. Bevor du kamst, war ich immer allein im Schülerratszimmer.\""
+        "name": "Ich",
+        "text": "*Sea lächelt. Ein aufrichtig glücklicher Ausdruck.*"
     },
     "day2_after_sea_6": {
-        "name": "Han Sea",
-        "text": "\"Alle halten Abstand, weil ich Klassensprecherin bin. Selbst wenn ich nett bin... da ist immer diese Mauer. Deshalb...\""
+        "name": "Ich",
+        "text": "*Heute hat Sea Snacks vorbereitet. Schokolade und Saft auf dem Tisch.*"
     },
     "day2_after_sea_7": {
-        "name": "Ich",
-        "text": "*Sea blickt aus dem Fenster. Das Abendrot färbt ihr Gesicht rot. Zum ersten Mal... sieht sie aus wie einfach nur 'Han Sea', nicht die Klassensprecherin.*"
+        "name": "Han Sea",
+        "text": "\"Das hab ich vorhin am Schulkiosk gekauft. Lass uns beim Essen reden.\""
     },
     "day2_after_sea_8": {
-        "name": "Han Sea",
-        "text": "\"...Ich hoffe, dass {name} nicht so wird. Ich hoffe, du entfernst dich nicht von mir.\""
+        "name": "Ich",
+        "text": "\"Worüber reden wir heute?\""
     },
     "day2_after_sea_9": {
         "name": "Han Sea",
-        "text": "\"...Egal wo {name} ist, egal was du tust, ich werde es immer wissen. Dafür sind Freunde da.\""
+        "text": "\"Hmm... Ich will mehr wissen, was {name} für ein Mensch ist.\""
     },
     "day2_after_sea_10": {
         "name": "Ich",
-        "text": "*...Mir wird warm ums Herz. So etwas hat noch nie jemand zu mir gesagt.*"
+        "text": "*Sea reicht mir Schokolade und stellt alle möglichen Fragen. Hobbys, Lieblingszeit, Familie...*"
     },
     "day2_after_sea_11": {
         "name": "Han Sea",
-        "text": "\"형제자매는?\""
+        "text": "\"Geschwister?\""
     },
     "day2_after_sea_12": {
         "name": "Ich",
-        "text": "\"없어. 외동.\""
+        "text": "\"Keine. Einzelkind.\""
     },
     "day2_after_sea_13": {
         "name": "Han Sea",
-        "text": "\"...나도. 외동이라 외로웠거든.\""
+        "text": "\"...Ich auch. Einzelkind zu sein war einsam.\""
     },
     "day2_after_sea_14": {
         "name": "Ich",
-        "text": "*잠깐 침묵이 흘렀다.*"
+        "text": "*Eine kurze Stille trat ein.*"
     },
     "day2_after_sea_15": {
         "name": "Han Sea",
-        "text": "\"...{name}. 나, {name} 오기 전에는 여기 항상 혼자 있었거든.\""
+        "text": "\"...{name}. Bevor du kamst, war ich hier immer allein.\""
     },
     "day2_after_sea_16": {
         "name": "Han Sea",
-        "text": "\"다들 반장이라고 선을 그어. 웃으면서도... 거리를 두는 느낌.\""
+        "text": "\"Alle ziehen eine Grenze, weil ich Klassensprecherin bin. Auch wenn ich lächle... ich fühlte mich immer auf Abstand gehalten.\""
     },
     "day2_after_sea_17": {
         "name": "Ich",
-        "text": "*세아가 창밖을 본다. 노을빛이 얼굴을 비춘다.*"
+        "text": "*Sea schaut aus dem Fenster. Das Abendrot fällt auf ihr Gesicht.*"
     },
     "day2_after_sea_18": {
         "name": "Ich",
-        "text": "*처음으로 '반장'이 아닌, 그냥 한세아의 표정.*"
+        "text": "*Zum ersten Mal — nicht als Klassensprecherin, sondern einfach Han Seas Ausdruck.*"
     },
     "day2_after_sea_19": {
         "name": "Han Sea",
-        "text": "\"솔직히... 가끔 외롭다. 혼자라는 게.\""
+        "text": "\"Ehrlich gesagt... bin ich manchmal einsam. Allein zu sein.\""
     },
     "day2_after_sea_20": {
         "name": "Ich",
-        "text": "*세아의 눈가가 살짝 붉어졌다. 이 사람이 이런 표정을 짓는 걸 상상한 적 없었는데.*"
+        "text": "*Die Augenwinkel von Sea wurden leicht rot. Ich hätte nie gedacht, dass diese Person einen solchen Ausdruck machen würde.*"
     },
     "day2_after_sea_21": {
         "name": "Ich",
-        "text": "\"...세아.\""
+        "text": "\"...Sea.\""
     },
     "day2_after_sea_22": {
         "name": "Han Sea",
-        "text": "\"아, 미안. 갑자기 무거운 얘기 해서.\""
+        "text": "\"Oh, tut mir leid. Das wurde plötzlich schwer.\""
     },
     "day2_after_sea_23": {
         "name": "Ich",
-        "text": "\"아니야. ...고마워, 솔직하게 말해줘서.\""
+        "text": "\"Nein. ...Danke, dass du ehrlich mit mir bist.\""
     },
     "day2_after_sea_24": {
         "name": "Ich",
-        "text": "*세아가 나를 본다. 놀란 표정이다.*"
+        "text": "*Sea schaut mich an. Überraschter Ausdruck.*"
     },
     "day2_after_sea_25": {
         "name": "Han Sea",
-        "text": "\"...{name}은 안 그랬으면 좋겠어. 내 곁에 있어줬으면.\""
+        "text": "\"...Ich hoffe, {name} wird nicht so werden. Ich hoffe, du bleibst an meiner Seite.\""
     },
     "day2_after_sea_26": {
         "name": "Ich",
-        "text": "*노을에 젖은 세아의 표정이... 예쁘다. 그냥 외로운 사람의 얼굴이다.*"
+        "text": "*Seas Ausdruck im Abendrot... ist wunderschön. Einfach das Gesicht einer einsamen Person.*"
     },
     "day2_after_sea_27": {
         "name": "Ich",
-        "text": "*이 순간이 연기가 아니라는 건 알겠다. 적어도... 이 감정은 진짜다.*"
+        "text": "*Ich kann erkennen, dass dieser Moment keine Aufführung ist. Zumindest... diese Gefühle sind echt.*"
     },
     "day2_after_sea_28": {
         "name": "Han Sea",
-        "text": "\"...고마워. 들어줘서.\""
+        "text": "\"...Danke. Dass du zugehört hast.\""
     },
     "day2_after_sea_29": {
         "name": "Ich",
-        "text": "*세아가 눈을 비비며 웃는다. 해가 지고 있다.*"
+        "text": "*Sea reibt sich die Augen und lächelt. Die Sonne geht unter.*"
     },
+
     "day2_after_yuna_1": {
         "name": "Ich",
-        "text": "*도서관에 들어서니 유나가 구석 자리에 앉아 있다. 오늘은 사진 정리가 아니라 뭔가를 적고 있다.*"
+        "text": "*Ich betrete die Bibliothek und finde Yuna in einer Ecke sitzend. Heute ordnet sie keine Fotos, sondern schreibt etwas.*"
     },
     "day2_after_yuna_2": {
         "name": "Ich",
-        "text": "*Yuna wollte etwas sagen, blickt sich aber nervös um. Als würde jemand zusehen.*"
+        "text": "*Als ich mich nähere, bedeckt sie schnell das Notizbuch.*"
     },
     "day2_after_yuna_3": {
-        "name": "Choi Yuna",
-        "text": "\"...Ach, vergiss es! Ich sag es ein andermal. Es ist nichts!\""
+        "name": "Yuna",
+        "text": "\"Senpai...!\""
     },
     "day2_after_yuna_4": {
         "name": "Ich",
-        "text": "\"뭐 적고 있었어?\""
+        "text": "\"Was hast du da geschrieben?\""
     },
     "day2_after_yuna_5": {
-        "name": "Choi Yuna",
-        "text": "\"아, 아무것도 아니에요. 그냥 일기...\""
+        "name": "Yuna",
+        "text": "\"Oh, nichts. Nur ein Tagebuch...\""
     },
     "day2_after_yuna_6": {
         "name": "Ich",
-        "text": "*유나가 노트를 가방에 넣는다. 표지에 고양이 스티커가 붙어있다.*"
+        "text": "*Yuna legt das Notizbuch in ihre Tasche. Auf dem Einband klebt ein Katzenaufkleber.*"
     },
     "day2_after_yuna_7": {
-        "name": "Choi Yuna",
-        "text": "\"선배, 저... 드릴 말씀이 있는데...\""
+        "name": "Yuna",
+        "text": "\"Senpai, ich... wollte Ihnen etwas sagen...\""
     },
     "day2_after_yuna_8": {
         "name": "Ich",
-        "text": "*유나가 뭔가 말하려다 주위를 살핀다. 도서관 입구 너머로 누군가 지나갔다.*"
+        "text": "*Yuna versucht etwas zu sagen, schaut sich aber nervös um. Jemand ging am Bibliothekseingang vorbei.*"
     },
     "day2_after_yuna_9": {
         "name": "Ich",
-        "text": "*유나의 얼굴이 굳어진다.*"
+        "text": "*Yunas Gesicht versteinert sich.*"
     },
     "day2_after_yuna_10": {
-        "name": "Choi Yuna",
-        "text": "\"...아뇨, 아무것도 아니에요. 나중에요.\""
+        "name": "Yuna",
+        "text": "\"...Nein, vergessen Sie's. Später.\""
     },
     "day2_after_yuna_11": {
         "name": "Ich",
-        "text": "\"아니, 뭔데? 말해봐.\""
+        "text": "\"Nein, was ist es? Sag es mir.\""
     },
     "day2_after_yuna_12": {
-        "name": "Choi Yuna",
-        "text": "\"그냥... 선배, 이 학교 좋죠?\""
+        "name": "Yuna",
+        "text": "\"Nur... Senpai, Sie mögen diese Schule doch, oder?\""
     },
     "day2_after_yuna_13": {
         "name": "Ich",
-        "text": "\"응, 괜찮은 것 같아.\""
+        "text": "\"Ja, scheint okay zu sein.\""
     },
     "day2_after_yuna_14": {
-        "name": "Choi Yuna",
-        "text": "\"저도 이 학교 좋아해요. 다들 좋은 곳이라고 하니까... 좋은 곳이겠죠.\""
+        "name": "Yuna",
+        "text": "\"Ich mag diese Schule auch. Da alle sagen, es ist ein guter Ort... muss es ein guter Ort sein.\""
     },
     "day2_after_yuna_15": {
         "name": "Ich",
-        "text": "*유나가 억지로 웃는다. 방금 자기가 한 말을 스스로 납득하려는 듯한 표정이다.*"
+        "text": "*Yuna zwingt sich zu einem Lächeln. Ein Ausdruck, als würde sie versuchen, sich selbst zu überzeugen.*"
     },
     "day2_after_yuna_16": {
         "name": "Ich",
-        "text": "\"...그게 무슨 뜻이야?\""
+        "text": "\"...Was meinst du damit?\""
     },
     "day2_after_yuna_17": {
-        "name": "Choi Yuna",
-        "text": "\"아, 아무 뜻 아니에요! 그냥 좋다는 거예요!\""
+        "name": "Yuna",
+        "text": "\"Oh, nichts dahinter! Ich mein nur, es ist gut!\""
     },
     "day2_after_yuna_18": {
         "name": "Ich",
-        "text": "*유나가 억지로 웃는다. ...그냥 말버릇인가. 근데 아까 뭔가 말하려다 만 게 신경 쓰인다.*"
+        "text": "*Yuna zwingt sich zu einem Lächeln. ...Nur eine Redegewohnheit, vielleicht. Aber was sie gerade eben fast gesagt hätte, lässt mich nicht los.*"
     },
+
     "day2_after_riin_1": {
         "name": "Ich",
-        "text": "*보건실에 갔는데, 문이 살짝 열려 있다. 노크를 안 하고 들어갔다.*"
+        "text": "*Ich ging zum Krankenzimmer, aber die Tür steht leicht offen. Ich betrat es ohne zu klopfen.*"
     },
     "day2_after_riin_2": {
         "name": "Ich",
-        "text": "*Während die Krankenschwester Riin mir Tee einschenkt, sehe ich Unterlagen auf dem Schreibtisch. Darauf steht 'Proband Nr. 13 - Verlaufsbeobachtungsbericht'.*"
+        "text": "*Riin-Sensei sortiert Dokumente. Sie wirkt erschrocken, als ich reinkomme.*"
     },
     "day2_after_riin_3": {
         "name": "Ich",
-        "text": "*\"Was ist das...\" Gerade als ich fragen will, dreht die Krankenschwester Riin die Unterlagen blitzschnell um.*"
+        "text": "*Dokumente sind auf dem Schreibtisch sichtbar. Riin-Sensei dreht sie schnell um.*"
     },
     "day2_after_riin_4": {
-        "name": "Schulkrankenschwester",
-        "text": "\"Ach, das sind Unterlagen für eine wissenschaftliche Arbeit. Auch Lehrerinnen lernen weiter, weißt du? Komm, trink deinen Tee.\""
+        "name": "Kang Riin",
+        "text": "\"...! {name}, du solltest anklopfen.\""
     },
     "day2_after_riin_5": {
         "name": "Ich",
-        "text": "\"아, 죄송해요. 문이 열려 있어서...\""
+        "text": "\"Oh, tut mir leid. Die Tür war offen...\""
     },
     "day2_after_riin_6": {
         "name": "Kang Riin",
-        "text": "\"괜찮아. 놀라서 그래.\""
+        "text": "\"Ist schon gut. Ich war nur erschrocken.\""
     },
     "day2_after_riin_7": {
         "name": "Ich",
-        "text": "\"뭐 보고 계셨어요?\""
+        "text": "\"Was haben Sie da angeschaut?\""
     },
     "day2_after_riin_8": {
         "name": "Kang Riin",
-        "text": "\"학술 자료야. 대학원 때 연구하던 거. 신경 쓸 거 없어.\""
+        "text": "\"Studienmaterial. Forschung aus meiner Zeit im Masterstudium. Nichts, worüber du dir Sorgen machen müsstest.\""
     },
     "day2_after_riin_9": {
         "name": "Ich",
-        "text": "*웃고 있지만 잠깐 날카로운 눈빛이었다. ...금방 원래 표정으로 돌아왔다.*"
+        "text": "*Sie lächelt, aber ihre Augen waren einen Moment lang scharf. ...Dann kehrte sie schnell zu ihrem normalen Ausdruck zurück.*"
     },
     "day2_after_riin_10": {
         "name": "Ich",
-        "text": "*놀라서 그런 거겠지. 누구나 갑자기 들어오면 놀라지.*"
+        "text": "*Sie war nur erschrocken. Jeder wäre erschrocken, wenn jemand plötzlich reinkommt.*"
     },
     "day2_after_riin_11": {
         "name": "Kang Riin",
-        "text": "\"차 마실래? 오늘은 루이보스야.\""
+        "text": "\"Möchtest du Tee? Heute gibt es Rooibos.\""
     },
     "day2_after_riin_12": {
         "name": "Ich",
-        "text": "\"네, 좋아요.\""
+        "text": "\"Ja, bitte.\""
     },
     "day2_after_riin_13": {
         "name": "Ich",
-        "text": "*리인 선생님과 차를 마셨다. 분위기는 다시 편안해졌다. ...아까 일은 뭐였을까.*"
+        "text": "*Ich trank Tee mit Riin-Sensei. Die Stimmung entspannte sich wieder. ...Was war das vorhin, frage ich mich.*"
     },
+
     "day2_after_home_1": {
         "name": "Ich",
-        "text": "*교문을 나서려는데, 뒤에서 느껴지는 시선.*"
+        "text": "*Als ich gerade durch das Schultor treten will, spüre ich Blicke in meinem Rücken.*"
     },
     "day2_after_home_check": {
         "name": "",
@@ -339,34 +346,35 @@
     },
     "day2_after_home_2": {
         "name": "Ich",
-        "text": "*돌아보니...*"
+        "text": "*Ich drehe mich um...*"
     },
     "day2_after_home_3": {
         "name": "Ich",
-        "text": "*설화다. 교문 안쪽에 서서 나를 보고 있다.*"
+        "text": "*Es ist Seolhwa. Sie steht innerhalb des Tores und schaut mich an.*"
     },
     "day2_after_seolhwa_1": {
         "name": "Ich",
-        "text": "*BGM이 갑자기 꺼진다. 주변이 이상하게 조용하다. 바람 소리도, 학생들 소리도 전부.*"
+        "text": "*Die Hintergrundmusik bricht plötzlich ab. Alles um mich herum ist unheimlich still. Kein Windgeräusch, keine Schülerstimmen. Nichts.*"
     },
     "day2_after_seolhwa_2": {
         "name": "Ich",
-        "text": "*설화의 입이 움직인다. 뭔가 말하고 있다. 하지만 소리가 안 들린다.*"
+        "text": "*Seolhwas Lippen bewegen sich. Sie sagt etwas. Aber es ist kein Ton zu hören.*"
     },
     "day2_after_seolhwa_3": {
         "name": "Ich",
-        "text": "*눈을 깜빡이니 설화는 사라져 있다. BGM이 다시 흐른다.*"
+        "text": "*Ich blinzle und Seolhwa ist verschwunden. Die Hintergrundmusik setzt wieder ein.*"
     },
     "day2_after_seolhwa_4": {
         "name": "Ich",
-        "text": "*...방금 뭐였지? 심장이 빨리 뛴다. 등에 식은땀이.*"
+        "text": "*...Was war das eben? Mein Herz rast. Kalter Schweiß auf dem Rücken.*"
     },
     "day2_after_seolhwa_5": {
         "name": "Ich",
-        "text": "*...착각이었을 거야. 피곤해서 그런 거다.*"
+        "text": "*...Das muss meine Einbildung gewesen sein. Ich bin nur müde.*"
     },
+
     "day2_after_end": {
-        "name": "Ich",
-        "text": "*Ich mache mich auf den Heimweg. Heute war alles... irgendwie seltsam.*"
+        "name": "",
+        "text": ""
     }
 }

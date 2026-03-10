@@ -11,9 +11,33 @@
         "name": "Yo",
         "text": "*Llego a la puerta de la escuela y... Sea está ahí parada.*"
     },
-    "day2_morning_sea_wait": {
+    "day2_morning_4": {
+        "name": "Yo",
+        "text": "*폰을 확인한다.*"
+    },
+    "day2_morning_5": {
+        "name": "Yo",
+        "text": "*전 학교 친구들... 여전히 연락이 없다. 그룹방에 내 메시지가 '읽음 0'이다.*"
+    },
+    "day2_morning_6": {
+        "name": "Yo",
+        "text": "*...이상하다. 민수도 답이 없다. 걔가 24시간 넘게 카톡을 안 볼 리가.*"
+    },
+    "day2_morning_7": {
+        "name": "Yo",
+        "text": "*뭐, 시험 기간인가 보다. 나중에 다시 보내야지.*"
+    },
+    "day2_morning_8": {
+        "name": "Yo",
+        "text": "*세아한테 메시지가 와있다. 새벽 1시에 보낸 거다. '잘 자~' ...새벽 1시? 늦게까지 안 잤나 보다.*"
+    },
+    "day2_morning_9": {
+        "name": "Yo",
+        "text": "*교문 앞에 도착했는데... 세아가 서 있다.*"
+    },
+    "day2_morning_sea_1": {
         "name": "Han Sea",
-        "text": "\"Ah, hola. Te esperé un rato para ir juntos.\""
+        "text": "\"안녕! 같이 가려고 기다렸어.\""
     },
     "day2_morning_sea_2": {
         "name": "Yo",
@@ -23,9 +47,49 @@
         "name": "Yo",
         "text": "*En vez de responder, Sea se agarró de mi brazo y se dirigió al aula. ...Hoy llegué 10 minutos antes de lo habitual.*"
     },
-    "day2_morning_classroom": {
-        "name": "Tutora",
-        "text": "\"{name}, ¿qué tal tu primer día ayer? ¿Nada incómodo?\""
+    "day2_morning_sea_4": {
+        "name": "Yo",
+        "text": "*기다렸다고? 내가 몇 시에 오는지 어떻게 알고...*"
+    },
+    "day2_morning_sea_5": {
+        "name": "Yo",
+        "text": "*뭐, 등교 시간대가 비슷하면 마주칠 수도 있지.*"
+    },
+    "day2_morning_sea_6": {
+        "name": "Han Sea",
+        "text": "\"어제 잘 잤어? 메시지 봤어?\""
+    },
+    "day2_morning_sea_7": {
+        "name": "Yo",
+        "text": "\"응, 잘 잤어. 메시지 고마워.\""
+    },
+    "day2_morning_sea_8": {
+        "name": "Han Sea",
+        "text": "\"다행이다. 오늘 도시락 기대해. 어제보다 업그레이드했거든.\""
+    },
+    "day2_morning_sea_9": {
+        "name": "Yo",
+        "text": "*세아가 가방을 두 손으로 잡고 걷는다. 안에 도시락이 들어있는 모양이다. 무거워 보인다.*"
+    },
+    "day2_morning_sea_10": {
+        "name": "Yo",
+        "text": "*세아가 자연스럽게 옆에 서서 교실로 향한다. ...오늘 평소보다 10분 일찍 왔는데, 그 시간에 맞춰 기다리고 있었다는 건가.*"
+    },
+    "day2_morning_sea_11": {
+        "name": "Yo",
+        "text": "*교실에 들어서니 몇몇 학생들이 인사를 건넨다.*"
+    },
+    "day2_morning_class_1": {
+        "name": "Yo",
+        "text": "*어제보다 분위기가 편하다. 이름을 기억하는 애들도 있다.*"
+    },
+    "day2_morning_class_2": {
+        "name": "Yo",
+        "text": "*은수 선생님이 웃으며 출석을 부른다.*"
+    },
+    "day2_morning_class_3": {
+        "name": "Park Eunsu",
+        "text": "\"자, 다들 자리에. ...{name} 학생, 어제 첫날 어땠어요? 불편한 건 없었어요?\""
     },
     "day2_morning_eunsu_1": {
         "name": "Yo",
@@ -39,10 +103,41 @@
         "name": "Yo",
         "text": "*...¿Por qué preguntaría eso? Seguramente solo está verificando.*"
     },
-
-    "day2_morning_seolhwa": {
+    "day2_morning_eunsu_4": {
         "name": "Yo",
-        "text": "*Me siento y echo un vistazo detrás de mí. Seolhwa... sigue ahí. Mismo asiento, misma expresión.*"
+        "text": "\"...아뇨, 아직 없는데요.\""
+    },
+    "day2_morning_eunsu_5": {
+        "name": "Yo",
+        "text": "*...왜 그런 걸 물어보지? 그냥 안부 차원인가.*"
+    },
+    "day2_morning_eunsu_6": {
+        "name": "Park Eunsu",
+        "text": "\"전학하면 서류 이관이 좀 걸리거든요. 혹시 연락 오면 알려줘요.\""
+    },
+    "day2_morning_lesson_1": {
+        "name": "Yo",
+        "text": "*수학 시간이다. 다른 선생님이 가르친다.*"
+    },
+    "day2_morning_lesson_2": {
+        "name": "Yo",
+        "text": "*세아가 옆에서 슬쩍 연필을 내민다.*"
+    },
+    "day2_morning_lesson_3": {
+        "name": "Han Sea",
+        "text": "\"(속삭이며) 이 선생님 문제 스타일 좀 독특해. 6번 유형 잘 나와.\""
+    },
+    "day2_morning_lesson_4": {
+        "name": "Yo",
+        "text": "*세아가 슬쩍 웃는다. 시험 정보까지 알려주다니. 든든한 반장이다.*"
+    },
+    "day2_morning_seolhwa_check": {
+        "name": "",
+        "text": ""
+    },
+    "day2_morning_seolhwa_1": {
+        "name": "Yo",
+        "text": "*자리에 앉으면서 뒤를 슬쩍 본다. 설화는... 오늘도 있다. 같은 자리, 같은 표정.*"
     },
     "day2_morning_seolhwa_2": {
         "name": "Yo",
@@ -52,11 +147,22 @@
         "name": "Yo",
         "text": "*Extraño. No hay ningún nombre asignado al asiento del fondo. El recuento de alumnos tampoco parece cuadrar... ¿Habré contado mal?*"
     },
-    "day2_morning_seolhwa_skip": {
+    "day2_morning_seolhwa_4": {
         "name": "Yo",
-        "text": "*Comienzan las clases de la mañana.*"
+        "text": "*쉬는 시간. 뒤를 돌아봤다. 설화와 눈이 마주쳤다.*"
     },
-
+    "day2_morning_seolhwa_5": {
+        "name": "Yo",
+        "text": "*...아니, 마주쳤었다. 눈이 닿는 순간 설화가 시선을 돌렸다.*"
+    },
+    "day2_morning_seolhwa_6": {
+        "name": "Yo",
+        "text": "*그런데... 입술이 움직였다. 뭔가 말하려 했나? 아니면 그냥 하품?*"
+    },
+    "day2_morning_seolhwa_7": {
+        "name": "Yo",
+        "text": "*선생님이 \"집중!\"이라고 해서 앞을 돌아봤다. ...다시 보니 설화는 창밖만 보고 있다. ...내일은 꼭 말 걸어봐야지.*"
+    },
     "day2_morning_end": {
         "name": "Yo",
         "text": "*Vamos a concentrarnos en clase. Solo es el Día 2.*"

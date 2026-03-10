@@ -1,187 +1,527 @@
 {
     "day1_opening": {
         "name": "Me",
-        "text": "*Cherry blossoms scatter in the wind. A warm spring breeze slips through my uniform. Starting today, I'm a student at this school.*"
+        "text": "*April.*"
     },
     "day1_opening_2": {
         "name": "Me",
-        "text": "*Standing in front of the new school gate. A little nervous, but it's not a bad kind of excitement.*"
+        "text": "*Cherry blossoms scatter in the wind. The warm spring breeze seeps through my new uniform.*"
     },
     "day1_opening_3": {
         "name": "Me",
-        "text": "*Alright, let's go in.*"
+        "text": "*The uniform still feels stiff. Smells faintly of starch. I pressed it yesterday, but the fold marks are still there.*"
+    },
+    "day1_opening_4": {
+        "name": "Me",
+        "text": "*Starting today, I'm a student at this school.*"
+    },
+    "day1_opening_5": {
+        "name": "Me",
+        "text": "*...Transferring. It's my first time. It was unavoidable because of my parents' work, but honestly — I'm a little anxious.*"
+    },
+    "day1_opening_6": {
+        "name": "Me",
+        "text": "*I can keep in touch with my old friends over social media. That's just how things are these days.*"
+    },
+    "day1_opening_7": {
+        "name": "Me",
+        "text": "*A cherry blossom petal grazes my nose. ...Pretty. Let's take it as a good sign.*"
+    },
+
+    "day1_gate_1": {
+        "name": "Me",
+        "text": "*I'm standing in front of an unfamiliar school gate.*"
+    },
+    "day1_gate_2": {
+        "name": "Me",
+        "text": "*It's a pretty big school. The building is clean and the schoolyard is wide. The facilities look better than my last school.*"
+    },
+    "day1_gate_3": {
+        "name": "Me",
+        "text": "*Students pass through the gate in small groups. A perfectly ordinary morning scene — laughing and chatting.*"
+    },
+    "day1_gate_4": {
+        "name": "Me",
+        "text": "*...Nobody pays any attention to me. Of course. Nobody knows me yet.*"
+    },
+    "day1_gate_5": {
+        "name": "Me",
+        "text": "*My heart is pounding. A new school, new friends... I hope only good things happen.*"
     },
 
     "day1_hallway_1": {
         "name": "Me",
         "text": "*One deep breath. ...It'll work out somehow. Let's go.*"
     },
-    "day1_sea_first": {
+    "day1_hallway_2": {
+        "name": "Me",
+        "text": "*I walk down the hallway. I have no idea where I'm going.*"
+    },
+    "day1_hallway_3": {
+        "name": "Me",
+        "text": "*Even looking at the map, I can't figure out where the classroom is. First-year building... second-year building... main building? annex?*"
+    },
+    "day1_hallway_4": {
+        "name": "Me",
+        "text": "*I think about asking a student passing by, but everyone rushes past.*"
+    },
+    "day1_sea_meet_1": {
+        "name": "Me",
+        "text": "*Getting lost on the first day. This is why I hate transferring.*"
+    },
+    "day1_sea_meet_2": {
         "name": "???",
-        "text": "\"Hey, you're the transfer student, right? I heard you were coming today.\""
+        "text": "\"Hey — are you the transfer student? I heard you were coming today.\""
     },
-    "day1_sea_first_2": {
+    "day1_sea_meet_3": {
         "name": "Me",
-        "text": "*I turn around and there's a girl standing there with a smile. Clean-cut, well-put-together look.*"
+        "text": "*I turn around. There's a girl with a neat appearance standing there.*"
     },
-    "day1_sea_first_3": {
+    "day1_sea_meet_4": {
+        "name": "Me",
+        "text": "*Short hair, uniform worn neatly. A class president badge on her chest.*"
+    },
+    "day1_sea_meet_5": {
+        "name": "Me",
+        "text": "*She's smiling naturally. A friendly impression.*"
+    },
+    "day1_sea_meet_6": {
         "name": "Han Sea",
-        "text": "\"Han Sea. I'm the class president. The homeroom teacher asked me to show you around. Nice to meet you, {name}.\""
+        "text": "\"Han Sea. Class president. You're {name}, right?\""
     },
-    "day1_sea_first_4": {
+    "day1_sea_meet_7": {
         "name": "Me",
-        "text": "\"Oh, nice to meet you too. Thanks for the help.\""
+        "text": "\"Oh, yeah, that's me... How did you know my name?\""
     },
-    "day1_sea_choco": {
+    "day1_sea_meet_8": {
         "name": "Han Sea",
-        "text": "\"Oh, here. Transferring to a new school is stressful, right? I always find that something sweet helps.\""
+        "text": "\"Our homeroom teacher told me. She let me know in advance that a transfer student was coming.\""
     },
-    "day1_sea_choco_2": {
+    "day1_sea_meet_9": {
         "name": "Me",
-        "text": "*She hands me a chocolate milk. That's thoughtful.*"
+        "text": "\"Oh... I see.\""
     },
-    "day1_sea_choco_choice": {
+    "day1_sea_meet_10": {
         "name": "Me",
-        "text": "*Should I take it?*",
+        "text": "*Makes sense for the class president to know ahead of time.*"
+    },
+    "day1_sea_meet_11": {
+        "name": "Han Sea",
+        "text": "\"Were you looking for your classroom? Follow me — I'll show you the way.\""
+    },
+    "day1_sea_meet_12": {
+        "name": "Me",
+        "text": "\"Thanks. Honestly I was getting a little lost, the building is huge.\""
+    },
+    "day1_sea_meet_13": {
+        "name": "Han Sea",
+        "text": "\"Everyone's like that at first. I circled the entire building looking for a bathroom in my first year.\""
+    },
+    "day1_sea_meet_14": {
+        "name": "Me",
+        "text": "*Sea walks ahead. She points things out as we go down the hallway.*"
+    },
+    "day1_sea_meet_15": {
+        "name": "Han Sea",
+        "text": "\"This is the science room, and the music room is at the far end. The second floor is the third-years, so you probably won't need to go there.\""
+    },
+    "day1_sea_meet_16": {
+        "name": "Me",
+        "text": "\"It's more complicated than I expected.\""
+    },
+    "day1_sea_meet_17": {
+        "name": "Han Sea",
+        "text": "\"You'll get used to it fast. Within a week you'll know it with your eyes closed.\""
+    },
+    "day1_sea_meet_18": {
+        "name": "Han Sea",
+        "text": "\"Oh, and the school store is at the far end of the first floor. The line gets long during lunch so it's good to know in advance.\""
+    },
+    "day1_sea_meet_19": {
+        "name": "Me",
+        "text": "\"Wow, so helpful. Is it because you're class president?\""
+    },
+
+    "day1_choco_1": {
+        "name": "Han Sea",
+        "text": "\"Partly because of that...\""
+    },
+    "day1_choco_2": {
+        "name": "Me",
+        "text": "*Sea smiles slightly.*"
+    },
+    "day1_choco_3": {
+        "name": "Han Sea",
+        "text": "\"But mostly — if I see someone new wandering around, I just want to help.\""
+    },
+    "day1_choco_4": {
+        "name": "Me",
+        "text": "*She seems like a good person. Meeting someone this kind on my very first day.*"
+    },
+    "day1_choco_5": {
+        "name": "Me",
+        "text": "*On the way to the classroom, Sea pulls something out of her bag.*"
+    },
+    "day1_choco_6": {
+        "name": "Han Sea",
+        "text": "\"Oh right, here. Chocolate milk — you like this, right?\""
+    },
+    "day1_choco_7": {
+        "name": "Me",
+        "text": "*She holds out a small carton of chocolate milk.*"
+    },
+    "day1_choco_8": {
+        "name": "Me",
+        "text": "*...Chocolate milk? I never told anyone I liked this. I don't even remember drinking it at my old school.*"
+    },
+    "day1_choco_9": {
+        "name": "Me",
+        "text": "\"Oh? Thanks, but... why?\""
+    },
+    "day1_choco_choice": {
+        "name": "Han Sea",
+        "text": "\"You were nervous and skipped breakfast, right? An empty stomach makes everything worse. At least drink this.\"",
         "choices": [
-            "\"Oh, thanks. I'll enjoy it.\"",
-            "\"Chocolate milk? You read my mind.\"",
-            "\"That's sweet of you, but I'm more of a strawberry person.\""
+            "\"Thanks, I'll take it.\"",
+            "\"...How did you know I liked this?\"",
+            "\"Actually, I'm more of a strawberry milk person.\""
         ]
     },
-    "day1_sea_choco_accept": {
-        "name": "Han Sea",
-        "text": "\"Glad you like it. I was hoping I'd pick the right one.\""
-    },
-    "day1_sea_choco_question": {
-        "name": "Han Sea",
-        "text": "\"Oh really? I'll bring strawberry next time then.\""
-    },
-    "day1_sea_choco_question_2": {
+
+    "day1_choco_accept_1": {
         "name": "Me",
-        "text": "*She answers with a smile. What a nice class president.*"
+        "text": "*I stab in the straw and take a sip. It's sweet. Tastes good.*"
     },
-    "day1_sea_choco_joke": {
+    "day1_choco_accept_2": {
+        "name": "Me",
+        "text": "\"Delicious. Thanks, Sea.\""
+    },
+    "day1_choco_accept_3": {
         "name": "Han Sea",
-        "text": "\"Strawberry? Oh, for real? I'll get strawberry next time. I'll remember that.\""
+        "text": "\"Right? I somehow had a feeling you'd like chocolate milk.\""
+    },
+    "day1_choco_accept_4": {
+        "name": "Me",
+        "text": "*A feeling? Well, most people like it.*"
     },
 
-    "day1_classroom_enter": {
+    "day1_choco_question_1": {
         "name": "Me",
-        "text": "*I follow Sea into the classroom. All eyes on me.*"
+        "text": "\"...Wait, how do you know I like chocolate milk?\""
     },
-    "day1_classroom_enter_2": {
-        "name": "Me",
-        "text": "*I'm the transfer student, so of course they're staring. Maybe I should give a little wave.*"
+    "day1_choco_question_2": {
+        "name": "Han Sea",
+        "text": "\"...Just a feeling? Most people like it. Should I swap it for strawberry?\""
     },
-    "day1_classroom_enter_3": {
+    "day1_choco_question_3": {
         "name": "Me",
-        "text": "*The vibe isn't bad. Everyone looks half curious, half welcoming.*"
+        "text": "*For a moment her expression flickered. ...Or maybe not. Maybe she just got flustered.*"
+    },
+    "day1_choco_question_4": {
+        "name": "Me",
+        "text": "\"No, you're right. I do like it. Thanks.\""
+    },
+    "day1_choco_question_5": {
+        "name": "Han Sea",
+        "text": "\"Glad to hear it~\""
+    },
+    "day1_choco_question_6": {
+        "name": "Me",
+        "text": "*Sea smiles. I must have imagined that look in her eyes.*"
     },
 
-    "day1_eunsu_enter": {
+    "day1_choco_joke_1": {
         "name": "Me",
-        "text": "*The classroom door opens and the homeroom teacher walks in.*"
+        "text": "\"Actually I'm a strawberry milk person.\""
     },
-    "day1_eunsu_first": {
-        "name": "Homeroom Teacher",
-        "text": "\"Alright, everyone. We have a new transfer student joining us today.\""
+    "day1_choco_joke_2": {
+        "name": "Han Sea",
+        "text": "\"Oh really? I'll bring strawberry next time. Promise!\""
     },
-    "day1_eunsu_first_2": {
-        "name": "Homeroom Teacher",
+    "day1_choco_joke_3": {
+        "name": "Me",
+        "text": "\"No no, this is fine too. Thanks.\""
+    },
+    "day1_choco_joke_4": {
+        "name": "Me",
+        "text": "*I walk along, sipping the chocolate milk. Sweet. My nerves are starting to ease a little.*"
+    },
+
+    "day1_classroom_1": {
+        "name": "Me",
+        "text": "*Sea guides me to the classroom.*"
+    },
+    "day1_classroom_2": {
+        "name": "Han Sea",
+        "text": "\"Here we are. Let's go in.\""
+    },
+    "day1_classroom_3": {
+        "name": "Me",
+        "text": "*I open the door and walk in — every head in the class turns to look at me.*"
+    },
+    "day1_classroom_4": {
+        "name": "Me",
+        "text": "*...I'm nervous. I hear murmuring. 'It's the transfer student.' 'Where did they come from?' That kind of thing.*"
+    },
+    "day1_classroom_5": {
+        "name": "Han Sea",
+        "text": "\"Your seat is over there by the window. Want to set down your stuff? You can introduce yourself when the homeroom teacher arrives.\""
+    },
+    "day1_classroom_6": {
+        "name": "Me",
+        "text": "\"Sure, thanks.\""
+    },
+    "day1_classroom_7": {
+        "name": "Me",
+        "text": "*I put my bag down and take my seat. A window seat. Cherry blossoms are visible through the glass. Not bad.*"
+    },
+    "day1_classroom_8": {
+        "name": "Me",
+        "text": "*The boy at the next desk leans over.*"
+    },
+    "day1_classroom_9": {
+        "name": "Boy next seat",
+        "text": "\"Hey, you're the transfer? Where did you come from?\""
+    },
+    "day1_classroom_10": {
+        "name": "Me",
+        "text": "\"○○ High. Family stuff.\""
+    },
+    "day1_classroom_11": {
+        "name": "Boy next seat",
+        "text": "\"Oh yeah? This place is pretty decent. Good school lunches, teachers are alright.\""
+    },
+    "day1_classroom_12": {
+        "name": "Me",
+        "text": "\"That's a relief. Sounds like I'll fit in.\""
+    },
+    "day1_eunsu_1": {
+        "name": "Me",
+        "text": "*Mid-chat, the classroom door opens and the homeroom teacher walks in.*"
+    },
+    "day1_eunsu_2": {
+        "name": "Me",
+        "text": "*A young male teacher in glasses. Warm, approachable look.*"
+    },
+    "day1_eunsu_3": {
+        "name": "Park Eunsu",
+        "text": "\"Alright everyone. I'd like to introduce a new transfer student joining us today.\""
+    },
+    "day1_eunsu_4": {
+        "name": "Me",
+        "text": "*The classroom goes quiet.*"
+    },
+    "day1_eunsu_5": {
+        "name": "Park Eunsu",
         "text": "\"{name}, would you come up front and introduce yourself?\""
     },
-    "day1_eunsu_first_3": {
+    "day1_eunsu_6": {
         "name": "Me",
-        "text": "*I stand in front of the blackboard. A bit nervous, but it's not like this is my first time transferring.*"
+        "text": "*Standing at the front of the class makes it worse. Thirty pairs of eyes on me.*"
     },
-    "day1_eunsu_first_4": {
-        "name": "Homeroom Teacher",
-        "text": "\"I've been waiting for you. It's been so long since we've had a transfer student.\""
+    "day1_eunsu_7": {
+        "name": "Park Eunsu",
+        "text": "\"I've been looking forward to this. Transfer students are quite rare here.\""
     },
-    "day1_eunsu_first_5": {
-        "name": "Homeroom Teacher",
-        "text": "\"Well then, why don't you introduce yourself?\""
-    },
-    "day1_eunsu_first_6": {
+    "day1_eunsu_8": {
         "name": "Me",
-        "text": "*I finished my introduction. Not bad, considering how nervous I was.*"
+        "text": "*...Rare? I guess not many people transfer into this school.*"
     },
-    "day1_eunsu_first_7": {
+    "day1_eunsu_9": {
+        "name": "Park Eunsu",
+        "text": "\"Go ahead whenever you're ready.\""
+    },
+    "day1_eunsu_10": {
         "name": "Me",
-        "text": "*I gave a quick introduction. Good reactions. That's a relief.*"
+        "text": "\"Hello. I'm {name}. I transferred from ○○ High. Nice to meet you all.\""
+    },
+    "day1_eunsu_11": {
+        "name": "Me",
+        "text": "*Kept it short. I had no idea what else to say.*"
+    },
+    "day1_eunsu_12": {
+        "name": "Park Eunsu",
+        "text": "\"Any hobbies or things you like? I'm sure everyone would love to know more.\""
+    },
+    "day1_eunsu_13": {
+        "name": "Me",
+        "text": "\"Um... I like gaming and listening to music.\""
+    },
+    "day1_eunsu_14": {
+        "name": "Me",
+        "text": "*A few people smile. Probably because it's such a standard answer.*"
+    },
+    "day1_eunsu_15": {
+        "name": "Park Eunsu",
+        "text": "\"Great. Please look after {name}, everyone. Alright, {name} — your seat is in the back row by the window. Go ahead.\""
     },
 
-    "day1_seat_guide": {
-        "name": "Homeroom Teacher",
-        "text": "\"Your seat is over there, back row by the window. Make yourself comfortable.\""
-    },
-    "day1_seolhwa_notice": {
+    "day1_class_1": {
         "name": "Me",
-        "text": "*I sit down. It's by the window, so the sunlight feels nice.*"
+        "text": "*I walk back to my seat. Sea gives me a thumbs up. Eunsu-sensei smiles warmly.*"
     },
-    "day1_seolhwa_notice_2": {
+    "day1_class_2": {
         "name": "Me",
-        "text": "*...Someone's sitting in the seat behind me. Pale skin, eyes gazing off somewhere far away.*"
+        "text": "*...Not bad for a first introduction. What a relief.*"
     },
-    "day1_seolhwa_notice_3": {
+    "day1_class_3": {
         "name": "Me",
-        "text": "*Should I say hi?*"
+        "text": "*It's Korean class. Eunsu-sensei teaches it directly.*"
     },
-    "day1_seolhwa_greet_choice": {
+    "day1_class_4": {
+        "name": "Park Eunsu",
+        "text": "\"Today we're reading contemporary poetry. {name}, how far did you get at your previous school?\""
+    },
+    "day1_class_5": {
         "name": "Me",
-        "text": "*Turn around?*",
+        "text": "\"About the same range, I think.\""
+    },
+    "day1_class_6": {
+        "name": "Park Eunsu",
+        "text": "\"That works out nicely. You can just follow along from here.\""
+    },
+    "day1_class_7": {
+        "name": "Me",
+        "text": "*I sit through the lecture. Eunsu-sensei explains things in a way that's actually interesting. The whole class is paying attention.*"
+    },
+
+    "day1_break_1": {
+        "name": "Me",
+        "text": "*This class has a good atmosphere. Quieter and more organized than my last school.*"
+    },
+    "day1_break_2": {
+        "name": "Me",
+        "text": "*Break time. A few students come to talk to me.*"
+    },
+    "day1_break_3": {
+        "name": "Girl A",
+        "text": "\"We were just curious about you~ What was your old school like?\""
+    },
+    "day1_break_4": {
+        "name": "Me",
+        "text": "\"Pretty ordinary. The building was a bit smaller than here.\""
+    },
+    "day1_break_5": {
+        "name": "Girl A",
+        "text": "\"Ahh~ This school has nice facilities, but there's nothing fun around here.\""
+    },
+    "day1_break_6": {
+        "name": "Boy B",
+        "text": "\"For real. There's just a convenience store in front of the school.\""
+    },
+    "day1_break_7": {
+        "name": "Me",
+        "text": "*The students laugh lightly. Not a bad atmosphere. I think I can fit in here.*"
+    },
+    "day1_break_8": {
+        "name": "Me",
+        "text": "*Sea slides over and sits beside me.*"
+    },
+    "day1_break_9": {
+        "name": "Han Sea",
+        "text": "\"How's your first class going? Eunsu-sensei is great, right?\""
+    },
+
+    "day1_seolhwa_1": {
+        "name": "Me",
+        "text": "\"Yeah, she explains things really well.\""
+    },
+    "day1_seolhwa_2": {
+        "name": "Han Sea",
+        "text": "\"We're lucky she's our homeroom teacher. She's the most popular teacher in the whole school.\""
+    },
+    "day1_seolhwa_3": {
+        "name": "Me",
+        "text": "*Sea watches Eunsu-sensei and smiles. She seems to really respect her.*"
+    },
+    "day1_seolhwa_4": {
+        "name": "Me",
+        "text": "*Before the second period starts. Sitting at my desk, I glance behind me.*"
+    },
+    "day1_seolhwa_5": {
+        "name": "Me",
+        "text": "*Someone is sitting behind me.*"
+    },
+    "day1_seolhwa_6": {
+        "name": "Me",
+        "text": "*Pale skin, long black hair. Eyes gazing somewhere far away.*"
+    },
+    "day1_seolhwa_choice": {
+        "name": "Me",
+        "text": "*She feels disconnected from the bustle of the classroom. As if all the noise can't reach her.*",
         "choices": [
             "\"Hey, I'm {name}. Looks like I'm sitting in front of you.\"",
             "(Focus on class for now)"
         ]
     },
-    "day1_seolhwa_greet": {
+
+    "day1_seolhwa_greet_1": {
         "name": "Me",
-        "text": "\"Hey, I'm {name}. Nice to meet you.\""
+        "text": "*I hadn't noticed during my introduction earlier... but someone was sitting behind me.*"
     },
     "day1_seolhwa_greet_2": {
-        "name": "Lee Seolhwa",
-        "text": "\".......\""
+        "name": "Me",
+        "text": "*...Should I say hi?*"
     },
     "day1_seolhwa_greet_3": {
         "name": "Me",
-        "text": "*No answer. I think our eyes met for a second, but she immediately looked away. Must be really shy.*"
+        "text": "*I turn around.*"
     },
     "day1_seolhwa_greet_4": {
-        "name": "Boy Next Seat",
-        "text": "\"Yo, transfer kid. What are you looking at?\""
+        "name": "Me",
+        "text": "\"Hey, I'm {name}. Nice to meet you.\""
     },
     "day1_seolhwa_greet_5": {
-        "name": "Me",
-        "text": "\"Nothing, I was just saying hi to the person behind me.\""
+        "name": "Lee Seolhwa",
+        "text": "\".........\""
     },
     "day1_seolhwa_greet_6": {
-        "name": "Boy Next Seat",
-        "text": "\"Oh, her? She's so quiet I forgot she was even there.\""
+        "name": "Me",
+        "text": "*No response. I thought our eyes met for just a second... but she immediately looked away.*"
     },
     "day1_seolhwa_greet_7": {
         "name": "Me",
-        "text": "*...Really? I glance back again. The girl is... still sitting right there. Same expression as before.*"
+        "text": "*...Did she ignore me? Or did she not hear?*"
     },
     "day1_seolhwa_greet_8": {
-        "name": "Me",
-        "text": "*I guess she's just the type with zero presence.*"
+        "name": "Boy next seat",
+        "text": "\"Hey, transfer. What are you looking at back there?\""
     },
     "day1_seolhwa_greet_9": {
         "name": "Me",
-        "text": "*...Is he messing with me? Hazing the new kid? Yeah, that's probably it.*"
+        "text": "\"Oh, I was just saying hi to the person behind me...\""
     },
     "day1_seolhwa_greet_10": {
-        "name": "Me",
-        "text": "*Let it go. It's the first day -- no need to start anything.*"
+        "name": "Boy next seat",
+        "text": "\"Oh, her? Lee Seolhwa. She's always like that. Barely talks.\""
     },
+    "day1_seolhwa_greet_11": {
+        "name": "Boy next seat",
+        "text": "\"She's so quiet, sometimes I forget she's even there.\""
+    },
+    "day1_seolhwa_greet_12": {
+        "name": "Me",
+        "text": "\"...I see.\""
+    },
+    "day1_seolhwa_greet_13": {
+        "name": "Me",
+        "text": "*I glance back again. Seolhwa is... still sitting there. Same expression. Just looking out the window.*"
+    },
+    "day1_seolhwa_greet_14": {
+        "name": "Me",
+        "text": "*I guess she's just the introverted type. I'll try talking to her again later.*"
+    },
+    "day1_seolhwa_greet_15": {
+        "name": "Me",
+        "text": "*...But wait — during roll call at the start of class, I don't remember hearing her name called. Maybe I just missed it.*"
+    },
+
     "day1_seolhwa_skip": {
         "name": "Me",
         "text": "*Let's focus on class.*"
     },
     "day1_morning_end": {
         "name": "Me",
-        "text": "*Before long, the morning classes were over. Break time.*"
+        "text": "*Before long, morning classes were over. Lunch time.*"
     }
 }

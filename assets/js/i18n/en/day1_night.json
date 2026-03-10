@@ -1,66 +1,126 @@
 {
     "day1_night_start": {
         "name": "Me",
-        "text": "*Back home. I haven't even finished unpacking yet, but I collapse onto the bed.*"
+        "text": "*I'm home. I set down my bag and change out of my uniform.*"
     },
     "day1_night_2": {
         "name": "Me",
-        "text": "*New school, new people. Everyone was kind. Seems like a good school.*"
-    },
-    "day1_night_recall_sea": {
-        "name": "Me",
-        "text": "*Sea... She's the class president, and she looked after me from day one. Even packed lunch for two. She's really thoughtful.*"
-    },
-    "day1_night_recall_eunsu": {
-        "name": "Me",
-        "text": "*The teacher seemed warm. Said it's been a long time since they had a transfer student... I guess this school doesn't get many.*"
+        "text": "*...Today felt really long. Tired, but in a not-bad kind of way.*"
     },
     "day1_night_3": {
         "name": "Me",
-        "text": "*Not bad for a first day. I think I can adjust just fine.*"
+        "text": "*I make some ramen and replay the day in my head.*"
     },
+    "day1_night_4": {
+        "name": "Me",
+        "text": "*New school. New classroom. New people. Everyone was friendlier than I expected. Somehow it feels like all the good people ended up at this school.*"
+    },
+    "day1_night_recall_sea": {
+        "name": "Me",
+        "text": "*Sea... class president and she looked after me from the very first moment. Showing me around, the chocolate milk, a lunchbox. She really put in a lot of thought.*"
+    },
+    "day1_night_recall_eunsu": {
+        "name": "Me",
+        "text": "*Eunsu-sensei was warm too. I remember her saying transfer students were 'quite rare.' She seems like she'll take good care of us.*"
+    },
+    "day1_night_recall_riin": {
+        "name": "Me",
+        "text": "*The school nurse Riin-sensei was easy to be around. Felt like an older sister.*"
+    },
+    "day1_night_recall_yuna": {
+        "name": "Me",
+        "text": "*Yuna from the library... photography club junior. Shy, but her eyes lit up the moment she talked about cats. Cute.*"
+    },
+    "day1_night_5": {
+        "name": "Me",
+        "text": "*I lie down on the bed and stare at the ceiling. ...I think I can adapt. To this school.*"
+    },
+
     "day1_night_phone": {
         "name": "Me",
-        "text": "*I check my phone. Messages from friends at my old school... none.*"
+        "text": "*I check my phone.*"
     },
     "day1_night_phone_2": {
         "name": "Me",
-        "text": "*Well, everyone's probably busy. I should reach out first sometime.*"
+        "text": "*The group chat from my old school. The 'I transferred, take care everyone~' message I sent this morning. ...No one has read it. 0 reads.*"
     },
-    "day1_night_phone_sea": {
+    "day1_night_phone_3": {
         "name": "Me",
-        "text": "*...But there's a message from Sea.*"
+        "text": "*Well, they might have still been in class. Everyone's probably busy.*"
     },
-    "day1_night_phone_sea_2": {
+    "day1_night_phone_4": {
         "name": "Me",
-        "text": "*Sea: 'Today was fun! What do you want for lunch tomorrow?'*"
+        "text": "*I also sent a direct message to my close friend Minsu — no reply either. He's usually quick to respond. ...It'll come tomorrow.*"
     },
-    "day1_night_phone_sea_3": {
+    "day1_night_phone_5": {
         "name": "Me",
-        "text": "*Already planning tomorrow's lunch on the first day. ...She really is warm-hearted.*"
+        "text": "*Meanwhile, Sea messaged me.*"
     },
-    "day1_night_seolhwa_hint": {
+    "day1_night_phone_6": {
         "name": "Me",
-        "text": "*...Wait. That girl in the back row. What was her name again? Nobody seemed to notice her... but she was definitely sitting there.*"
+        "text": "*Sea: 'Today was fun!' / Sea: 'What do you want in tomorrow's lunchbox?' / Sea: 'Taking requests lol'*"
     },
-    "day1_night_seolhwa_skip": {
+    "day1_night_phone_7": {
         "name": "Me",
-        "text": "*...Well, I'll try saying hi tomorrow.*"
+        "text": "*...She's already asking about tomorrow's lunch menu on the very first day. She really does care about people.*"
     },
+    "day1_night_sea_reply": {
+        "name": "Me",
+        "text": "*What should I reply?*",
+        "choices": [
+            "'Hmm~ how about chicken cutlet?' (reply specifically)",
+            "'I'm good with anything lol' (casual reply)",
+            "(Don't reply)"
+        ]
+    },
+    "day1_night_sea_reply_1": {
+        "name": "Me",
+        "text": "*Sea: 'Ooh nice! Look forward to tomorrow ♡'*"
+    },
+    "day1_night_sea_reply_2": {
+        "name": "Me",
+        "text": "*Sea: 'lol okay~ don't be surprised tomorrow!'*"
+    },
+    "day1_night_sea_reply_3": {
+        "name": "Me",
+        "text": "*...I'll reply tomorrow. I'm tired.*"
+    },
+
     "day1_night_recall_seolhwa": {
         "name": "Me",
-        "text": "*That girl in the back seat... what was her name? Everyone seemed to barely notice her... but I felt like our eyes met.*"
+        "text": "*...Wait. That girl behind me. What was her name?*"
     },
+    "day1_night_recall_seolhwa_yes": {
+        "name": "Me",
+        "text": "*Lee Seolhwa. Right. The guy next to me told me.*"
+    },
+    "day1_night_recall_seolhwa_yes_2": {
+        "name": "Me",
+        "text": "*They said everyone forgets she's even there because she has so little presence... but I'm pretty sure we made eye contact. ...I should try talking to her again tomorrow. We're in the same class — at least a proper hello.*"
+    },
+    "day1_night_recall_seolhwa_no": {
+        "name": "Me",
+        "text": "*They said everyone forgets she's even there... but I'm pretty sure we made eye contact.*"
+    },
+
     "day1_night_sleep": {
         "name": "Me",
-        "text": "*I pull the covers up. Wonder what tomorrow will bring.*"
+        "text": "*I brush my teeth and get into bed.*"
     },
     "day1_night_sleep_2": {
         "name": "Me",
-        "text": "*...Right before I fall asleep, I thought I saw something flash outside the window. ...Probably just a dream.*"
+        "text": "*I pull the covers up. I wonder what tomorrow will be like.*"
+    },
+    "day1_night_sleep_3": {
+        "name": "Me",
+        "text": "*...Right before I drift off, something seems to flash outside the window. ...What was that? A streetlight?*"
+    },
+    "day1_night_sleep_4": {
+        "name": "Me",
+        "text": "*My eyes close. ...Probably just a dream.*"
     },
     "day1_night_end": {
         "name": "",
-        "text": "*End of Day 1*"
+        "text": "*— End of Day 1 —*"
     }
 }

@@ -13,7 +13,6 @@
             "Quedarme solo"
         ]
     },
-
     "day3_after_riin": {
         "name": "Enfermera",
         "text": "\"Oh, {name}. Llegas en buen momento. ¿Te ves un poco cansado hoy?\""
@@ -26,13 +25,9 @@
         "name": "Yo",
         "text": "*Riin me pasa una taza con un líquido violeta pálido. ...Huele un poco raro.*"
     },
-    "day3_after_riin_name": {
-        "name": "Enfermera",
-        "text": "\"...Oye, {name}. ¿No crees que ya nos hemos hecho bastante cercanos?\""
-    },
-    "day3_after_riin_name_2": {
-        "name": "Enfermera",
-        "text": "\"No me llames 'enfermera'... Llámame Riin. Cuando estemos solos.\""
+    "day3_after_riin_flicker": {
+        "name": "",
+        "text": "도망쳐"
     },
     "day3_after_riin_choice": {
         "name": "Yo",
@@ -42,7 +37,6 @@
             "Declinar educadamente"
         ]
     },
-    "day3_after_riin_flicker": "Huye",
     "day3_after_riin_drink": {
         "name": "Riin",
         "text": "\"Bien. Sentirás el efecto pronto.\""
@@ -63,7 +57,6 @@
         "name": "Riin",
         "text": "\"Está bien, lo puedes beber la próxima vez. ...Lo beberás la próxima vez, ¿verdad?\""
     },
-
     "day3_after_sea": {
         "name": "Han Sea",
         "text": "\"¡{name}! Vamos a casa juntos. Quiero visitar la nueva panadería.\""
@@ -71,18 +64,6 @@
     "day3_after_sea_2": {
         "name": "Yo",
         "text": "*Caminando por el pasillo con Sea. Parece alegre como siempre, pero...*"
-    },
-    "day3_after_sea_3": {
-        "name": "Han Sea",
-        "text": "\"...Por cierto, {name}, ¿adónde fuiste durante el almuerzo?\""
-    },
-    "day3_after_sea_4": {
-        "name": "Han Sea",
-        "text": "\"Me dijeron que estuviste en la azotea con Yuna. Solo los dos. ...Alguien me lo contó.\""
-    },
-    "day3_after_sea_4_alt": {
-        "name": "Han Sea",
-        "text": "\"Desapareciste durante el almuerzo... me preocupé un poco.\""
     },
     "day3_after_sea_choice": {
         "name": "Yo",
@@ -100,6 +81,26 @@
         "name": "Yo",
         "text": "*Sea está sonriendo. Está sonriendo, pero... sus ojos no.*"
     },
+    "day3_after_sea_truth_3": {
+        "name": "Yo",
+        "text": "*세아가 창밖을 본다. 한참을.*"
+    },
+    "day3_after_sea_truth_4": {
+        "name": "Han Sea",
+        "text": "\"...나도 가끔 생각해. 내가 왜 이러고 있는 건지.\""
+    },
+    "day3_after_sea_truth_5": {
+        "name": "Yo",
+        "text": "*세아가 말을 멈추고 고개를 흔든다. 뭔가 말하려다 삼킨 것 같다.*"
+    },
+    "day3_after_sea_truth_6": {
+        "name": "Han Sea",
+        "text": "\"...아무것도 아니야. 잊어.\""
+    },
+    "day3_after_sea_truth_7": {
+        "name": "Yo",
+        "text": "*세아가 다시 웃는다. 이번에는 눈도 웃고 있다. 하지만 아까의 그 순간이... 연기가 아니었다는 건 알겠다.*"
+    },
     "day3_after_sea_lie": {
         "name": "Han Sea",
         "text": "\"¿En serio? ¡Qué bien! Me sentí muy sola.\""
@@ -108,7 +109,6 @@
         "name": "Yo",
         "text": "*Sea me agarró del brazo. Más fuerte que de costumbre.*"
     },
-
     "day3_after_eunsu": {
         "name": "Tutora",
         "text": "\"Oh, {name}. ¿Todavía sigues aquí? Yo también me quedé trabajando hasta tarde, jaja.\""
@@ -120,18 +120,6 @@
     "day3_after_eunsu_3": {
         "name": "Tutora",
         "text": "\"Espera un momento, déjame terminar esto... Oh, ¿quieres un café?\""
-    },
-    "day3_after_eunsu_name": {
-        "name": "Tutora",
-        "text": "\"...{name}. Cuando estemos solos, no tienes que llamarme 'profesora'.\""
-    },
-    "day3_after_eunsu_name_2": {
-        "name": "Tutora",
-        "text": "\"Llámame Eunsu. ...O 'Srta. Eunsu' si te resulta más fácil.\""
-    },
-    "day3_after_eunsu_4": {
-        "name": "Yo",
-        "text": "*Mientras la profesora Eunsu va a preparar café. Los documentos sobre su escritorio me llaman la atención. 'Registro de Gestión de Estudiantes de Intercambio'.*"
     },
     "day3_after_eunsu_choice": {
         "name": "Yo",
@@ -153,6 +141,22 @@
         "name": "Eunsu",
         "text": "\"...¿Qué estás mirando?\""
     },
+    "day3_after_eunsu_peek_4": {
+        "name": "Park Eunsu",
+        "text": "\"출석부 보고 있었구나?\""
+    },
+    "day3_after_eunsu_peek_5": {
+        "name": "Yo",
+        "text": "*은수 선생님이 웃고 있다. 커피를 들고. 여유롭게. ...이 사람은 내가 보는 걸 알고 있었다. 아니, **보게 둔 거다.***"
+    },
+    "day3_after_eunsu_peek_6": {
+        "name": "Park Eunsu",
+        "text": "\"열심이네. 선생님이 관리하는 명단이야. 전학생 적응 현황 같은 거지.\""
+    },
+    "day3_after_eunsu_peek_7": {
+        "name": "Park Eunsu",
+        "text": "\"...뭐, 궁금한 거 있어?\""
+    },
     "day3_after_eunsu_ignore": {
         "name": "Eunsu",
         "text": "\"Gracias por esperar. Aquí tienes, café.\""
@@ -161,68 +165,34 @@
         "name": "Yo",
         "text": "*Charlé con la profesora Eunsu tomando café. Fue cálido y cómodo. ...¿De verdad lo fue?*"
     },
-
+    "day3_after_eunsu_ignore_3": {
+        "name": "Park Eunsu",
+        "text": "\"전학생 적응 현황표야. {name}... 적응 잘 하고 있다고 적어놨어.\""
+    },
+    "day3_after_eunsu_ignore_4": {
+        "name": "Yo",
+        "text": "*서류를 서랍에 넣는다. 자연스럽게. 하지만 '네 이름도 있다'는 말이 남아 있다.*"
+    },
     "day3_after_alone": {
         "name": "Yo",
         "text": "*Solo en el aula. La tarjeta de memoria en mi bolsillo me pesa en la mente.*"
-    },
-    "day3_after_alone_2": {
-        "name": "Yo",
-        "text": "*Saqué mi portátil e inserté la tarjeta de memoria.*"
     },
     "day3_after_alone_no_card": {
         "name": "Yo",
         "text": "*Aula tranquila. El tiempo pasó sin que ocurriera nada especial.*"
     },
-    "day3_after_alone_branch": {
+    "day3_after_alone_2": {
         "name": "Yo",
-        "text": "*Aparecen archivos. Carpetas de fotos, carpetas de documentos... El corazón me late con fuerza.*"
+        "text": "*Saqué mi portátil e inserté la tarjeta de memoria.*"
     },
     "day3_after_alone_3": {
         "name": "Yo",
         "text": "*Fotos. Aulas vacías, taquillas limpiadas, pupitres con nombres borrados... Y fotos de documentos tomadas en la sala de profesores.*"
     },
-    "day3_after_alone_yuna_photos": {
-        "name": "Yo",
-        "text": "*...Espera. Hay otra carpeta. Dice 'Registros de observación'.*"
-    },
-    "day3_after_alone_yuna_photos_2": {
-        "name": "Yo",
-        "text": "*La abrí. ...Son fotos mías. Decenas. Durmiendo en clase, caminando por el pasillo de espaldas, comiendo de perfil...*"
-    },
-    "day3_after_alone_yuna_photos_3": {
-        "name": "Yo",
-        "text": "*...¿Qué es esto? ¿Yuna sacó estas fotos? Esto es... acoso, ¿no?*"
-    },
-    "day3_after_alone_yuna_photos_4": {
-        "name": "Yo",
-        "text": "*El corazón me late con fuerza. ¿Yuna también era de ellos? Me hizo confiar en ella y luego...*"
-    },
-    "day3_after_alone_yuna_photos_5": {
-        "name": "Yo",
-        "text": "*...No, espera. Mirando con más atención, todas están tomadas desde ángulos de cámaras de vigilancia. No es que Yuna me fotografiara — ella fotografió 'las fotos que los vigilantes me sacaban a mí'.*"
-    },
-    "day3_after_alone_yuna_photos_6": {
-        "name": "Yo",
-        "text": "*Entonces esto es... evidencia de que me están vigilando. Material que Yuna recopiló por mi bien.*"
-    },
-    "day3_after_alone_yuna_photos_7": {
-        "name": "Yo",
-        "text": "*...Pero el miedo que sentí hace un momento era real. En esta escuela, no sé en quién puedo confiar.*"
-    },
     "day3_after_alone_4": {
         "name": "Yo",
         "text": "*Un documento titulado 'Lista de Sujetos'. Números y nombres en filas... la mayoría tachados en rojo.*"
     },
-    "day3_after_alone_5": {
-        "name": "Yo",
-        "text": "*La última línea. Número 07. Mi nombre. La línea roja... aún no está.*"
-    },
-    "day3_after_alone_6": {
-        "name": "Yo",
-        "text": "*Pasos en el pasillo. Saqué la tarjeta de golpe.*"
-    },
-
     "day3_after_end": {
         "name": "Yo",
         "text": "*Salgo de la escuela. El atardecer es rojo. ...Rojo como la sangre.*"

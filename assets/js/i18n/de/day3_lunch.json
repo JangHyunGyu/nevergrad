@@ -1,18 +1,168 @@
 {
-    "day3_lunch_start": { "name": "Ich", "text": "*Mittagspause. In meiner Schublade liegt ein Zettel.*" },
-    "day3_lunch_yuna_note": { "name": "Ich", "text": "*'Senpai, bitte komm in der Mittagspause aufs Dach. Unbedingt allein. - 최유나'*" },
-    "day3_lunch_yuna_note_2": { "name": "Ich", "text": "*...Das klingt ernst. Ich sollte hingehen.*" },
-    "day3_lunch_rooftop": { "name": "최유나", "text": "\"Senpai... du bist gekommen. Danke.\"" },
-    "day3_lunch_rooftop_2": { "name": "최유나", "text": "\"Ich... kann das nicht mehr alleine mit mir herumtragen. Ich zeige es nur dir. Das hier...\"" },
-    "day3_lunch_rooftop_3": { "name": "Ich", "text": "*최유나 reicht mir mit zitternden Händen eine Speicherkarte. \"Da drin sind... Aufnahmen von dem, was an dieser Schule passiert ist.\"*" },
-    "day3_lunch_rooftop_4": { "name": "최유나", "text": "\"Transferschüler sind... einer nach dem anderen verschwunden. Ich habe alles mit meiner Kamera festgehalten. Ich habe Beweise. Senpai, bitte glaub mir...\"" },
-    "day3_lunch_rooftop_5": { "name": "Ich", "text": "*...Was? Verschwunden? Moment, das zerkratzte Schließfach, die unerreichbaren Freunde von meiner alten Schule, 이설화, die nicht im Klassenbuch steht...*" },
-    "day3_lunch_door_locked": { "name": "Ich", "text": "*...! Plötzlich fällt die Dachtür mit einem lauten Knall zu.*" },
-    "day3_lunch_door_locked_2": { "name": "Ich", "text": "*Ich drücke gegen die Tür. Sie geht nicht auf. Von außen verriegelt. Wer...?*" },
-    "day3_lunch_door_locked_3": { "name": "최유나", "text": "\"...! Senpai, sie haben uns erwischt. Jemand hat uns beobachtet...\"" },
-    "day3_lunch_door_choice": { "name": "Ich", "text": "*Was soll ich tun?*", "choices": ["Laut gegen die Tür hämmern und rufen", "Still warten (최유나 beruhigen)"] },
-    "day3_lunch_door_bang": { "name": "Ich", "text": "*Ich hämmerte laut gegen die Tür. Kurz darauf ertönte ein 'Klick' und die Tür ging auf. Draußen war niemand.*" },
-    "day3_lunch_door_wait": { "name": "Ich", "text": "*Ich legte meine Hände auf 최유나s Schultern und beruhigte sie. Nach etwa fünf Minuten ging die Tür von selbst auf. ...Von selbst? Draußen war niemand.*" },
-    "day3_lunch_door_open": { "name": "Ich", "text": "*Ich stecke die Speicherkarte tief in meine Tasche. Das muss ich... später allein überprüfen.*" },
-    "day3_lunch_end": { "name": "Ich", "text": "*Zurück im Klassenzimmer. Mein Herz will nicht aufhören zu rasen.*" }
+    "day3_lunch_start": {
+        "name": "Ich",
+        "text": "*Mittagspause. In meiner Schublade liegt ein Zettel.*"
+    },
+    "day3_lunch_note": {
+        "name": "Ich",
+        "text": "*'선배, 점심때 옥상으로 와주세요. 꼭 혼자서요. - 유나'*"
+    },
+    "day3_lunch_note_2": {
+        "name": "Ich",
+        "text": "*...분위기가 심상치 않다. 어떻게 할까?*"
+    },
+    "day3_lunch_choice": {
+        "name": "Ich",
+        "text": "*점심시간이다.*",
+        "choices": [
+            "옥상으로 간다",
+            "세아와 점심을 먹는다",
+            "보건실에 들른다",
+            "교실에 남는다"
+        ]
+    },
+    "day3_lunch_rooftop": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai... du bist gekommen. Danke.\""
+    },
+    "day3_lunch_rooftop_2": {
+        "name": "Choi Yuna",
+        "text": "\"Ich... kann das nicht mehr alleine mit mir herumtragen. Ich zeige es nur dir. Das hier...\""
+    },
+    "day3_lunch_rooftop_3": {
+        "name": "Ich",
+        "text": "*최유나 reicht mir mit zitternden Händen eine Speicherkarte. \"Da drin sind... Aufnahmen von dem, was an dieser Schule passiert ist.\"*"
+    },
+    "day3_lunch_rooftop_4": {
+        "name": "Choi Yuna",
+        "text": "\"Transferschüler sind... einer nach dem anderen verschwunden. Ich habe alles mit meiner Kamera festgehalten. Ich habe Beweise. Senpai, bitte glaub mir...\""
+    },
+    "day3_lunch_rooftop_5": {
+        "name": "Ich",
+        "text": "*...Was? Verschwunden? Moment, das zerkratzte Schließfach, die unerreichbaren Freunde von meiner alten Schule, 이설화, die nicht im Klassenbuch steht...*"
+    },
+    "day3_lunch_rooftop_6": {
+        "name": "Ich",
+        "text": "*...! 갑자기 옥상 문이 '쾅' 소리와 함께 닫혔다.*"
+    },
+    "day3_lunch_door_locked": {
+        "name": "Ich",
+        "text": "*...! Plötzlich fällt die Dachtür mit einem lauten Knall zu.*"
+    },
+    "day3_lunch_door_locked_2": {
+        "name": "Ich",
+        "text": "*Ich drücke gegen die Tür. Sie geht nicht auf. Von außen verriegelt. Wer...?*"
+    },
+    "day3_lunch_door_choice": {
+        "name": "Ich",
+        "text": "*Was soll ich tun?*",
+        "choices": [
+            "Laut gegen die Tür hämmern und rufen",
+            "Still warten (최유나 beruhigen)"
+        ]
+    },
+    "day3_lunch_door_bang": {
+        "name": "Ich",
+        "text": "*Ich hämmerte laut gegen die Tür. Kurz darauf ertönte ein 'Klick' und die Tür ging auf. Draußen war niemand.*"
+    },
+    "day3_lunch_door_wait": {
+        "name": "Ich",
+        "text": "*Ich legte meine Hände auf 최유나s Schultern und beruhigte sie. Nach etwa fünf Minuten ging die Tür von selbst auf. ...Von selbst? Draußen war niemand.*"
+    },
+    "day3_lunch_door_open": {
+        "name": "Ich",
+        "text": "*Ich stecke die Speicherkarte tief in meine Tasche. Das muss ich... später allein überprüfen.*"
+    },
+    "day3_lunch_sea": {
+        "name": "Han Sea",
+        "text": "\"오늘은 나랑 먹지? 도시락 특별히 신경 썼어.\""
+    },
+    "day3_lunch_sea_2": {
+        "name": "Ich",
+        "text": "*세아가 웃고 있다. ...근데 이 웃음이 어제랑 다르다. 뭔가를 숨기고 있는 웃음.*"
+    },
+    "day3_lunch_sea_3": {
+        "name": "Han Sea",
+        "text": "\"...요즘 유나랑 자주 만나더라?\""
+    },
+    "day3_lunch_sea_4": {
+        "name": "Ich",
+        "text": "\"유나? 별로 안 만나는데.\""
+    },
+    "day3_lunch_sea_5": {
+        "name": "Han Sea",
+        "text": "\"...그래?\""
+    },
+    "day3_lunch_sea_6": {
+        "name": "Han Sea",
+        "text": "\"나한테 숨기는 거 없지, {name}?\""
+    },
+    "day3_lunch_sea_7": {
+        "name": "Ich",
+        "text": "*눈이 웃고 있지 않다. 확실하다. ...이 사람이 무섭다고 느낀 건 이번이 처음이다.*"
+    },
+    "day3_lunch_sea_8": {
+        "name": "Han Sea",
+        "text": "\"...농담이야. 먹어.\""
+    },
+    "day3_lunch_riin": {
+        "name": "Ich",
+        "text": "*보건실에 갔다. 어젯밤 꿈 때문인지 머리가 아프다.*"
+    },
+    "day3_lunch_riin_2": {
+        "name": "Kang Riin",
+        "text": "\"얼굴색이 안 좋은데? 또 잠을 못 잤어?\""
+    },
+    "day3_lunch_riin_3": {
+        "name": "Kang Riin",
+        "text": "\"오늘은 특별히... 선생님이 만든 건강 음료 줄까? 비타민이랑 허브 블렌딩이야.\""
+    },
+    "day3_lunch_riin_4": {
+        "name": "Ich",
+        "text": "*연보라색 액체가 담긴 컵을 건넨다. ...뭔가 미세하게 약품 같은 냄새.*"
+    },
+    "day3_lunch_riin_choice": {
+        "name": "Ich",
+        "text": "*마실까?*",
+        "choices": [
+            "마신다",
+            "거절한다"
+        ]
+    },
+    "day3_lunch_riin_drink": {
+        "name": "Ich",
+        "text": "*마셨다. ...맛은 그럭저럭인데, 혀끝에 쓴맛이 남는다.*"
+    },
+    "day3_lunch_riin_drink_2": {
+        "name": "Kang Riin",
+        "text": "\"착하네. 금방 효과가 날 거야.\""
+    },
+    "day3_lunch_riin_refuse": {
+        "name": "Kang Riin",
+        "text": "\"...그래, 억지로 권하진 않을게.\""
+    },
+    "day3_lunch_riin_refuse_2": {
+        "name": "Ich",
+        "text": "*리인 선생님이 아쉬운 표정으로 컵을 가져간다.*"
+    },
+    "day3_lunch_alone": {
+        "name": "Ich",
+        "text": "*교실에 남아서 혼자 먹는다. 다른 학생들이 모두 나가서 교실이 텅 비어있다.*"
+    },
+    "day3_lunch_alone_2": {
+        "name": "Ich",
+        "text": "*...뒷자리를 본다. 설화의 자리. 책상 위에 뭔가 있다. 연필로 쓴 글씨. 흐릿하지만 읽을 수 있다.*"
+    },
+    "day3_lunch_alone_3": {
+        "name": "Ich",
+        "text": "*'여기서 나가'*"
+    },
+    "day3_lunch_alone_4": {
+        "name": "Ich",
+        "text": "*...누가 쓴 거지? 장난인가? ...지우개로 지운 흔적이 있다. 여러 번 쓰고 지운 것 같다.*"
+    },
+    "day3_lunch_end": {
+        "name": "Ich",
+        "text": "*Zurück im Klassenzimmer. Mein Herz will nicht aufhören zu rasen.*"
+    }
 }

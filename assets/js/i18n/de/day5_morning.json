@@ -1,23 +1,302 @@
 {
-    "day5_morning_start": { "name": "Ich", "text": "*Tag 5. Der letzte Tag. Ich habe die Augen geöffnet.*" },
-    "day5_morning_start_2": { "name": "Ich", "text": "*Ich schaue aus dem Fenster. Der Himmel ist grau. Es sieht nach Regen aus.*" },
-    "day5_morning_start_3": { "name": "Ich", "text": "*...Gehen wir. Heute bringe ich es zu Ende.*" },
-    "day5_morning_gate": { "name": "Ich", "text": "*Das Schultor. Ketten sind darum gewickelt. Alle Ausgänge außer dem Haupttor sind... komplett versperrt.*" },
-    "day5_morning_gate_2": { "name": "Ich", "text": "*Die Schüler gehen durch das Tor, als wäre nichts. Als ob... sie es nicht sehen könnten.*" },
-    "day5_morning_gate_3": { "name": "Ich", "text": "*Drei Personen stehen nebeneinander vor dem Tor.*" },
-    "day5_morning_welcome": { "name": "Klassenlehrerin", "text": "\"Guten Morgen, {name}. Heute ist ein besonderer Tag.\"" },
-    "day5_morning_welcome_2": { "name": "한세아", "text": "\"{name}! Lass uns heute den ganzen Tag zusammen sein.\"" },
-    "day5_morning_welcome_3": { "name": "Schulkrankenschwester", "text": "\"Wir müssen die Gesundheitsuntersuchung heute abschließen. Komm bitte nach dem Unterricht ins Krankenzimmer.\"" },
-    "day5_morning_welcome_4": { "name": "Ich", "text": "*Das Lächeln der drei überlagert sich. Dasselbe Lächeln. ...Das Lächeln von Jägern.*" },
-    "day5_morning_classroom": { "name": "Ich", "text": "*Das Klassenzimmer. An der Tafel steht etwas geschrieben.*" },
-    "day5_morning_classroom_2": { "name": "Ich", "text": "*'Abschlussfeier' steht dort. ...Abschlussfeier? Am fünften Tag?*" },
-    "day5_morning_classroom_3": { "name": "Ich", "text": "*은수-Lehrerin steht am Pult.*" },
-    "day5_morning_class": { "name": "Klassenlehrerin", "text": "\"Heute haben wir eine besondere Stunde. Wollen wir über den 'Abschluss' sprechen?\"" },
-    "day5_morning_class_2": { "name": "Klassenlehrerin", "text": "\"Ein Abschluss ist das Ende eines Abschnitts. Wenn man ihn vollendet... geht man an einen neuen Ort.\"" },
-    "day5_morning_class_3": { "name": "Klassenlehrerin", "text": "\"{name}, dein Abschluss ist... heute.\"" },
-    "day5_morning_class_4": { "name": "Klassenlehrerin", "text": "\"Wie ihr alle wisst, ist die Welt außerhalb der Schule kalt und gefährlich. Man wird verletzt, scheitert, zerbricht...\"" },
-    "day5_morning_note": { "name": "Ich", "text": "*Unter dem Tisch klebt ein Zettel. Yunas Handschrift.*" },
-    "day5_morning_note_alt": { "name": "Ich", "text": "*Der Unterricht ist vorbei. Niemand ist da, der mir helfen könnte.*" },
-    "day5_morning_note_2": { "name": "Ich", "text": "*'Zur Mittagszeit, Altbau 3. Stock. Ich habe einen Fluchtweg gefunden. - Yuna'*" },
-    "day5_morning_end": { "name": "Ich", "text": "*Der Vormittag ist vorbei. Die Uhr scheint stehen geblieben zu sein.*" }
+    "day5_morning_start": {
+        "name": "Ich",
+        "text": "*Tag 5. Der letzte Tag. Ich habe die Augen geöffnet.*"
+    },
+    "day5_morning_start_2": {
+        "name": "Ich",
+        "text": "*Ich schaue aus dem Fenster. Der Himmel ist grau. Es sieht nach Regen aus.*"
+    },
+    "day5_morning_start_3": {
+        "name": "Ich",
+        "text": "*...Gehen wir. Heute bringe ich es zu Ende.*"
+    },
+    "day5_morning_start_4": {
+        "name": "Ich",
+        "text": "*창밖을 본다. 하늘이 회색이다. 구름이 낮게 깔려있다. 비가 올 것 같다.*"
+    },
+    "day5_morning_start_5": {
+        "name": "Ich",
+        "text": "*...1일차 아침은 맑았다. 벚꽃이 피어있었다. 4일 만에 세상이 이렇게 달라졌다.*"
+    },
+    "day5_morning_start_6": {
+        "name": "Ich",
+        "text": "*아니. 세상이 달라진 게 아니다. 내가 보는 방식이 달라진 거다.*"
+    },
+    "day5_morning_start_7": {
+        "name": "Ich",
+        "text": "*가방을 확인했다. 어젯밤에 챙겨뒀던 짐. 증거가 든 핸드폰. 유나의 메모리카드. 사진 조각.*"
+    },
+    "day5_morning_start_8": {
+        "name": "Ich",
+        "text": "*...오늘 안에 나가야 한다. 밤 11시 전에.*"
+    },
+    "day5_morning_start_9": {
+        "name": "Ich",
+        "text": "*교복을 입었다. 거울 속의 내 얼굴이... 1일차의 그 얼굴이 아니다. 눈이 다르다. 공포를 알게 된 눈.*"
+    },
+    "day5_morning_start_10": {
+        "name": "Ich",
+        "text": "*심호흡. 하나. 둘. 셋.*"
+    },
+    "day5_morning_start_11": {
+        "name": "Ich",
+        "text": "*...간다.*"
+    },
+    "day5_morning_gate": {
+        "name": "Ich",
+        "text": "*Das Schultor. Ketten sind darum gewickelt. Alle Ausgänge außer dem Haupttor sind... komplett versperrt.*"
+    },
+    "day5_morning_gate_2": {
+        "name": "Ich",
+        "text": "*Die Schüler gehen durch das Tor, als wäre nichts. Als ob... sie es nicht sehen könnten.*"
+    },
+    "day5_morning_gate_3": {
+        "name": "Ich",
+        "text": "*Drei Personen stehen nebeneinander vor dem Tor.*"
+    },
+    "day5_morning_gate_4": {
+        "name": "Ich",
+        "text": "*정문은 열려있다. 평소와 같다. 학생들이 삼삼오오 지나간다.*"
+    },
+    "day5_morning_gate_5": {
+        "name": "Ich",
+        "text": "*...나가면 된다. 정문을 지나서 왼쪽으로 꺾으면 버스정류장이다. 거기서 아무 버스나 타면 된다.*"
+    },
+    "day5_morning_gate_6": {
+        "name": "Ich",
+        "text": "*한 걸음 내딛었다. 두 걸음. 정문이 가까워진다.*"
+    },
+    "day5_morning_gate_choice": {
+        "name": "Ich",
+        "text": "",
+        "choices": [
+            "앞으로 걷는다",
+            "돌아간다"
+        ]
+    },
+    "day5_morning_gate_dodge_fail": {
+        "name": "Ich",
+        "text": "*...앞으로. 앞으로 가야 하는데.*"
+    },
+    "day5_morning_paralysis_1": {
+        "name": "Ich",
+        "text": "*...세 걸음째에서 다리가 멈췄다.*"
+    },
+    "day5_morning_paralysis_2": {
+        "name": "Ich",
+        "text": "*움직이지 않는다. 걸으려는 의지는 있는데 다리가 말을 안 듣는다. 마치 콘크리트에 박힌 것처럼.*"
+    },
+    "day5_morning_paralysis_3": {
+        "name": "Ich",
+        "text": "*어젯밤에 마신 차. 리인 선생님이 건넨 '숙면에 좋은' 차. ...혹시?*"
+    },
+    "day5_morning_paralysis_4": {
+        "name": "Ich",
+        "text": "*주변을 둘러본다. 학생들이 정문을 지나간다. 아무렇지도 않게. 웃으면서.*"
+    },
+    "day5_morning_paralysis_5": {
+        "name": "Ich",
+        "text": "*나만 움직이지 못한다. 정문은 열려있는데. 아무도 막고 있지 않은데.*"
+    },
+    "day5_morning_paralysis_6": {
+        "name": "Ich",
+        "text": "*열린 문 앞에서 한 발짝도 나갈 수 없다. 이게... 이 학교의 진짜 감옥이다.*"
+    },
+    "day5_morning_watchers_1": {
+        "name": "Ich",
+        "text": "*뒤를 돌아봤다.*"
+    },
+    "day5_morning_watchers_2": {
+        "name": "Ich",
+        "text": "*교문 안쪽. 은수 선생님이 벤치에 앉아 있다. 세아가 나무 아래에 서 있다. 리인 선생님이 보건실 창가에서 내려다보고 있다.*"
+    },
+    "day5_morning_watchers_3": {
+        "name": "Ich",
+        "text": "*각자 다른 위치. 자연스러운 풍경. 그런데 셋 다 나를 보고 있다.*"
+    },
+    "day5_morning_watchers_4": {
+        "name": "Ich",
+        "text": "*셋 다 웃고 있다.*"
+    },
+    "day5_morning_welcome": {
+        "name": "Klassenlehrerin",
+        "text": "\"Guten Morgen, {name}. Heute ist ein besonderer Tag.\""
+    },
+    "day5_morning_welcome_2": {
+        "name": "Han Sea",
+        "text": "\"{name}! Lass uns heute den ganzen Tag zusammen sein.\""
+    },
+    "day5_morning_welcome_3": {
+        "name": "Schulkrankenschwester",
+        "text": "\"Wir müssen die Gesundheitsuntersuchung heute abschließen. Komm bitte nach dem Unterricht ins Krankenzimmer.\""
+    },
+    "day5_morning_welcome_4": {
+        "name": "Ich",
+        "text": "*Das Lächeln der drei überlagert sich. Dasselbe Lächeln. ...Das Lächeln von Jägern.*"
+    },
+    "day5_morning_welcome_5": {
+        "name": "Ich",
+        "text": "*세아가 내 팔을 잡는다. 자연스럽게. 힘이 세다.*"
+    },
+    "day5_morning_welcome_6": {
+        "name": "Han Sea",
+        "text": "\"오늘은 하루 종일 같이 있자. 절대 떨어지지 말자.\""
+    },
+    "day5_morning_welcome_7": {
+        "name": "Ich",
+        "text": "*'절대'라는 단어에 힘이 들어가 있다.*"
+    },
+    "day5_morning_welcome_8": {
+        "name": "Kang Riin",
+        "text": "\"건강검진 마무리가 남았어.\""
+    },
+    "day5_morning_welcome_9": {
+        "name": "Ich",
+        "text": "*리인 선생님이 미소 짓는다. 가운 주머니에 손을 넣고 있다. 주머니 안에서 뭔가가 불룩하다.*"
+    },
+    "day5_morning_welcome_10": {
+        "name": "Kang Riin",
+        "text": "\"방과후에 보건실로 와. ...꼭.\""
+    },
+    "day5_morning_welcome_11": {
+        "name": "Ich",
+        "text": "*세 사람의 미소가 겹쳐 보인다.*"
+    },
+    "day5_morning_welcome_12": {
+        "name": "Ich",
+        "text": "*똑같은 미소. 같은 각도. 같은 깊이. 같은 온도.*"
+    },
+    "day5_morning_welcome_13": {
+        "name": "Ich",
+        "text": "*...사냥꾼의 미소.*"
+    },
+    "day5_morning_welcome_14": {
+        "name": "Ich",
+        "text": "*그리고 나는 사냥감이다. 이미 우리 안에 들어온.*"
+    },
+    "day5_morning_classroom": {
+        "name": "Ich",
+        "text": "*Das Klassenzimmer. An der Tafel steht etwas geschrieben.*"
+    },
+    "day5_morning_classroom_2": {
+        "name": "Ich",
+        "text": "*'Abschlussfeier' steht dort. ...Abschlussfeier? Am fünften Tag?*"
+    },
+    "day5_morning_classroom_3": {
+        "name": "Ich",
+        "text": "*은수-Lehrerin steht am Pult.*"
+    },
+    "day5_morning_classroom_4": {
+        "name": "Ich",
+        "text": "*...졸업식? 전학 온 지 5일인데? 무슨 졸업?*"
+    },
+    "day5_morning_classroom_5": {
+        "name": "Ich",
+        "text": "*자리에 앉았다. 세아가 옆에 앉는다. 평소 자리가 아닌데. 내 바로 옆으로 의자를 끌어왔다.*"
+    },
+    "day5_morning_classroom_6": {
+        "name": "Ich",
+        "text": "*은수 선생님이 교탁에 선다. 출석을 부르지 않는다. 바로 말을 시작한다.*"
+    },
+    "day5_morning_class": {
+        "name": "Klassenlehrerin",
+        "text": "\"Heute haben wir eine besondere Stunde. Wollen wir über den 'Abschluss' sprechen?\""
+    },
+    "day5_morning_class_2": {
+        "name": "Klassenlehrerin",
+        "text": "\"Ein Abschluss ist das Ende eines Abschnitts. Wenn man ihn vollendet... geht man an einen neuen Ort.\""
+    },
+    "day5_morning_class_3": {
+        "name": "Klassenlehrerin",
+        "text": "\"{name}, dein Abschluss ist... heute.\""
+    },
+    "day5_morning_class_4": {
+        "name": "Klassenlehrerin",
+        "text": "\"Wie ihr alle wisst, ist die Welt außerhalb der Schule kalt und gefährlich. Man wird verletzt, scheitert, zerbricht...\""
+    },
+    "day5_morning_class_5": {
+        "name": "Park Eunsu",
+        "text": "\"그래서 선생님은 너희가 가장 안전하고 깨끗한 상태로 '졸업'하길 바라는 거야.\""
+    },
+    "day5_morning_class_6": {
+        "name": "Ich",
+        "text": "*선생님이 돌아선다. 나를 본다. 나만.*"
+    },
+    "day5_morning_class_7": {
+        "name": "Park Eunsu",
+        "text": "\"어떤 아이들은 그걸 깨닫는 데 3년이 걸리지만, 우리 반은 아주 특별하니까...\""
+    },
+    "day5_morning_class_8": {
+        "name": "Park Eunsu",
+        "text": "\"...5일이면 충분해.\""
+    },
+    "day5_morning_class_9": {
+        "name": "Ich",
+        "text": "*교실이 조용해진다. 숨소리조차 들리지 않는다.*"
+    },
+    "day5_morning_class_10": {
+        "name": "Park Eunsu",
+        "text": "\"{name}, 너의 졸업도... 오늘이야.\""
+    },
+    "day5_morning_class_11": {
+        "name": "Ich",
+        "text": "*선생님이 웃는다. 따뜻하게. 축하하듯이.*"
+    },
+    "day5_morning_class_12": {
+        "name": "Ich",
+        "text": "*...교실의 다른 학생들이 전부 나를 보고 있다. 30개의 얼굴. 아무도 움직이지 않는다.*"
+    },
+    "day5_morning_class_13": {
+        "name": "Ich",
+        "text": "*아무도 숨을 쉬지 않는 것 같다. 마네킹처럼. 인형처럼.*"
+    },
+    "day5_morning_class_14": {
+        "name": "Ich",
+        "text": "*세아가 내 손을 잡는다. 꽉. 손가락이 아프다.*"
+    },
+    "day5_morning_class_15": {
+        "name": "Ich",
+        "text": "*이 교실에서 나가야 한다. 점심시간까지 버텨야 한다. 그때 움직인다.*"
+    },
+    "day5_morning_class_16": {
+        "name": "Ich",
+        "text": "*...버틸 수 있을까.*"
+    },
+    "day5_morning_note": {
+        "name": "Ich",
+        "text": "*Unter dem Tisch klebt ein Zettel. Yunas Handschrift.*"
+    },
+    "day5_morning_note_2": {
+        "name": "Ich",
+        "text": "*'Zur Mittagszeit, Altbau 3. Stock. Ich habe einen Fluchtweg gefunden. - Yuna'*"
+    },
+    "day5_morning_note_3": {
+        "name": "Ich",
+        "text": "*'점심때 구관 3층 끝 복도. 비상구가 있어. 설화 선배가 찾아뒀던 길. 탈출로를 찾았어. - 유나'*"
+    },
+    "day5_morning_note_4": {
+        "name": "Ich",
+        "text": "*설화가 찾아뒀던 길. 어젯밤 꿈에서 설화가 말했던 그 길.*"
+    },
+    "day5_morning_note_5": {
+        "name": "Ich",
+        "text": "*유나는 어떻게 이걸 알았지? ...유나도 설화를 만난 건가?*"
+    },
+    "day5_morning_note_6": {
+        "name": "Ich",
+        "text": "*쪽지를 주머니에 넣었다. 심장이 뛴다. 희망이라는 걸 4일 만에 다시 느낀다.*"
+    },
+    "day5_morning_note_7": {
+        "name": "Ich",
+        "text": "*점심시간. 그때가 유일한 기회다.*"
+    },
+    "day5_morning_no_note": {
+        "name": "Ich",
+        "text": "*수업이 끝났다. 혼자서 탈출할 방법을 찾아야 한다. 구관 쪽에 비상구가 있을지도...*"
+    },
+    "day5_morning_end": {
+        "name": "Ich",
+        "text": "*Der Vormittag ist vorbei. Die Uhr scheint stehen geblieben zu sein.*"
+    }
 }

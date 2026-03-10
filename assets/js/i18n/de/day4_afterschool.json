@@ -1,39 +1,443 @@
 {
-    "day4_after_start": { "name": "Ich", "text": "*Nach der Schule. Heute ist der vierte Tag. Die '5 Tage', von denen 이설화 sprach... morgen ist der letzte Tag.*" },
-    "day4_after_start_2": { "name": "Ich", "text": "*Ich muss jetzt handeln.*" },
-    "day4_after_choice": { "name": "Ich", "text": "*Wohin soll ich gehen?*", "choices": ["Den Keller suchen", "한세아 folgen", "Beweise zusammentragen"] },
-    "day4_after_basement": { "name": "Ich", "text": "*이설화s Hinweis. 'Der Keller'. Ich habe die Treppe hinter dem Schulgebäude gefunden.*" },
-    "day4_after_basement_2": { "name": "Ich", "text": "*Eine rostige Tür. Das Schloss ist zerbrochen. Jemand war schon einmal hier.*" },
-    "day4_after_basement_3": { "name": "Ich", "text": "*...Der Keller. Die Neonröhre flackert. Ein beißender Geruch.*" },
-    "day4_after_basement_4": { "name": "Ich", "text": "*Mehrere Betten. Medizinische Geräte. Ein Schrank voller Medikamente. Das ist... ein Labor?*" },
-    "day4_after_basement_5": { "name": "Ich", "text": "*An der Wand hängt ein Diagramm. 'Probanden-Reaktionsprotokoll'. Namen und Nummern. Die meisten sind mit einem roten X durchgestrichen.*" },
-    "day4_after_basement_6": { "name": "Ich", "text": "*In der Schreibtischschublade finde ich Dokumente. 'Gedächtnismanipulationsprotokoll'... 'Verfahren zur Akquise von Transferschülern'... 'Vorstandsgenehmigung: Sonderprogramm zur autonomen Verhaltenskorrektur für unangepasste Schüler (Interner Codename: Nevergrad)'...*" },
-    "day4_after_basement_7": { "name": "Ich", "text": "*...! Aus der Ecke kommt ein Geräusch. Jemand ist hier.*" },
-    "day4_after_basement_8": { "name": "최유나", "text": "\"...Senpai...? Bist du es... wirklich...?\"" },
-    "day4_after_basement_9": { "name": "Ich", "text": "*최유나 liegt zusammengebrochen da. Ihr Gesicht ist bleich. Einstichstellen an den Armen.*", "choices": ["최유나 mitnehmen und rausgehen", "Erstmal verstecken"] },
-    "day4_after_basement_rescue": { "name": "Ich", "text": "*Ich stütze 최유나. Sie ist schwer. Aber ich kann sie nicht hier lassen.*" },
-    "day4_after_basement_rescue_2": { "name": "최유나", "text": "\"Senpai... danke... wir müssen... hier raus...\"" },
-    "day4_after_basement_hide": { "name": "Ich", "text": "*Ich höre Schritte. Ich verstecke mich hinter dem Schrank.*" },
-    "day4_after_basement_hide_2": { "name": "Ich", "text": "*Jemand kontrollierte den Keller und ging wieder. Ich habe 최유나 zurückgelassen. ...Es tut mir leid, 최유나.*" },
-    "day4_after_basement_escape": { "name": "Ich", "text": "*Ich bin aus dem Keller entkommen. Meine Hände zittern. Was ist diese Schule... was ist diese Schule nur?*" },
-    "day4_after_sea_route": { "name": "한세아", "text": "\"{name}, lass uns heute auch zusammen gehen. Wohin sollen wir?\"" },
-    "day4_after_sea_2": { "name": "Ich", "text": "*Ich folge 한세아. Sie geht in ein leeres Klassenzimmer.*" },
-    "day4_after_sea_3": { "name": "한세아", "text": "\"{name}. Ich muss dir etwas sagen.\"" },
-    "day4_after_sea_4": { "name": "한세아", "text": "\"Du siehst... angespannt aus, wenn du mit anderen zusammen bist. Mit Yuna. Mit Frau Eunsu.\"" },
-    "day4_after_sea_5": { "name": "한세아", "text": "\"Du wirkst am entspanntesten, wenn du bei mir bist. ...Du brauchst doch nur mich anzusehen, oder?\"", "choices": ["Verstanden", "Das ist etwas..."] },
-    "day4_after_sea_accept": { "name": "한세아", "text": "\"...{name} ist wirklich brav. Mein {name}.\"" },
-    "day4_after_sea_crack": { "name": "한세아", "text": "\"...Manchmal denke ich... wenn ich hier rauskomme... wohin gehe ich dann?\"" },
-    "day4_after_sea_crack_2": { "name": "Ich", "text": "*Einen Moment lang huschte Angst durch 한세아s Augen. Echte Gefühle. Ist auch dieses Mädchen... in irgendetwas gefangen? Doch es verschwand sofort wieder.*" },
-    "day4_after_sea_accept_2": { "name": "Ich", "text": "*한세아 umarmt mich. Ihre Hände drücken fest auf meinen Rücken. ...Das ist keine Umarmung.*" },
-    "day4_after_evidence": { "name": "Ich", "text": "*Ich bleibe im Klassenzimmer und ordne die bisher gesammelten Beweise.*" },
-    "day4_after_evidence_2": { "name": "Ich", "text": "*Fotos auf der Speicherkarte, die Liste der Transferschüler, 'Abschlussdatum der Verarbeitung'... das Puzzle fügt sich zusammen.*" },
-    "day4_after_evidence_3": { "name": "Ich", "text": "*Ich überprüfe die Fotos auf 최유나s Kamera. Es gibt ein Foto vom Kellereingang.*" },
-    "day4_after_evidence_3_alt": { "name": "Ich", "text": "*Die Beweise reichen noch nicht aus... aber die Umrisse dessen, was in dieser Schule passiert, werden sichtbar.*" },
-    "day4_after_evidence_4": { "name": "Ich", "text": "*Die Transferschüler sind nicht 'verschwunden', sondern wurden 'verarbeitet'. Erinnerungen gelöscht, zu vollkommen fügsamen Schülern gemacht... eine vom Vorstand finanzierte Versuchsanstalt. Die gesamte Schule.*" },
-    "day4_after_evidence_5": { "name": "Klassenlehrerin", "text": "\"...{name}. Du bist immer noch hier?\"" },
-    "day4_after_evidence_6": { "name": "Ich", "text": "*은수 steht vor der Klassenzimmertür. Ihr Gesicht ist düster.*", "choices": ["Fliehen", "Still bleiben"] },
-    "day4_after_evidence_run": { "name": "Ich", "text": "*Ich schiebe einen Tisch in den Weg und renne. Hinter mir das Klacken von Absätzen. Aber ich bin entkommen.*" },
-    "day4_after_evidence_caught": { "name": "Klassenlehrerin", "text": "\"Ach, {name}. Ich habe doch gesagt, der Flur ist gefährlich. Die Lehrerin hat gesagt, du sollst brav im Klassenzimmer bleiben.\"" },
-    "day4_after_evidence_caught_2": { "name": "Klassenlehrerin", "text": "\"Keine Sorge. Die Lehrerin wird {name} sicher beschützen. ...Komm, komm her.\"" },
-    "day4_after_end": { "name": "Ich", "text": "*Die Sonne geht unter. Morgen ist der letzte Tag. Ich muss... hier raus.*" }
+    "day4_after_start": {
+        "name": "Ich",
+        "text": "*Nach der Schule. Heute ist der vierte Tag. Die '5 Tage', von denen 이설화 sprach... morgen ist der letzte Tag.*"
+    },
+    "day4_after_start_2": {
+        "name": "Ich",
+        "text": "*Ich muss jetzt handeln.*"
+    },
+    "day4_after_start_3": {
+        "name": "Ich",
+        "text": "*...세아의 웃음 뒤에 뭐가 있는지 알게 된 지금, 저 웃음이 다르게 보인다.*"
+    },
+    "day4_after_start_4": {
+        "name": "Ich",
+        "text": "*지하실. 유나의 카메라에 찍혀있던 계단. 설화가 옥상에 새긴 '지하에 답이 있어'. 전부 같은 곳을 가리키고 있다.*"
+    },
+    "day4_after_choice": {
+        "name": "Ich",
+        "text": "*Wohin soll ich gehen?*",
+        "choices": [
+            "Den Keller suchen",
+            "한세아 folgen",
+            "Beweise zusammentragen"
+        ]
+    },
+    "day4_after_basement": {
+        "name": "Ich",
+        "text": "*이설화s Hinweis. 'Der Keller'. Ich habe die Treppe hinter dem Schulgebäude gefunden.*"
+    },
+    "day4_after_basement_2": {
+        "name": "Ich",
+        "text": "*Eine rostige Tür. Das Schloss ist zerbrochen. Jemand war schon einmal hier.*"
+    },
+    "day4_after_basement_3": {
+        "name": "Ich",
+        "text": "*...Der Keller. Die Neonröhre flackert. Ein beißender Geruch.*"
+    },
+    "day4_after_basement_4": {
+        "name": "Ich",
+        "text": "*Mehrere Betten. Medizinische Geräte. Ein Schrank voller Medikamente. Das ist... ein Labor?*"
+    },
+    "day4_after_basement_5": {
+        "name": "Ich",
+        "text": "*An der Wand hängt ein Diagramm. 'Probanden-Reaktionsprotokoll'. Namen und Nummern. Die meisten sind mit einem roten X durchgestrichen.*"
+    },
+    "day4_after_basement_6": {
+        "name": "Ich",
+        "text": "*In der Schreibtischschublade finde ich Dokumente. 'Gedächtnismanipulationsprotokoll'... 'Verfahren zur Akquise von Transferschülern'... 'Vorstandsgenehmigung: Sonderprogramm zur autonomen Verhaltenskorrektur für unangepasste Schüler (Interner Codename: Nevergrad)'...*"
+    },
+    "day4_after_basement_7": {
+        "name": "Ich",
+        "text": "*...! Aus der Ecke kommt ein Geräusch. Jemand ist hier.*"
+    },
+    "day4_after_basement_8": {
+        "name": "Choi Yuna",
+        "text": "\"...Senpai...? Bist du es... wirklich...?\""
+    },
+    "day4_after_basement_9": {
+        "name": "Ich",
+        "text": "*최유나 liegt zusammengebrochen da. Ihr Gesicht ist bleich. Einstichstellen an den Armen.*",
+        "choices": [
+            "최유나 mitnehmen und rausgehen",
+            "Erstmal verstecken"
+        ]
+    },
+    "day4_after_basement_10": {
+        "name": "Ich",
+        "text": "***침대. 여러 개. 의료용 침대. 팔걸이에 가죽 끈이 달려있다.***"
+    },
+    "day4_after_basement_11": {
+        "name": "Ich",
+        "text": "***의료 기기. 모니터. 약품이 든 캐비넷. 주사기가 정렬되어 놓여있다.***"
+    },
+    "day4_after_basement_12": {
+        "name": "Ich",
+        "text": "*...이건 보건실이 아니다. 이건... 실험실이다.*"
+    },
+    "day4_after_basement_13": {
+        "name": "Ich",
+        "text": "*손이 떨린다. 다리가 떨린다. 뛰쳐나가고 싶다. 하지만 봐야 한다. 끝까지.*"
+    },
+    "day4_after_basement_14": {
+        "name": "Ich",
+        "text": "*벽에 차트가 걸려있다. '피험자 반응 기록'이라고 적혀있다. 이름과 번호가 나열되어 있다. 피험자 #1... #3... #7... #12... 대부분 이름 옆에 빨간 X표. '기억 재구성 실패', '부작용: 인격 해리', '처리 완료'...*"
+    },
+    "day4_after_basement_15": {
+        "name": "Ich",
+        "text": "*#7 — 이설화. X표 옆에 메모: '역효과. 모든 기억 보유. 격리 불가. 최종 처리 집행.' ...설화.*"
+    },
+    "day4_after_basement_16": {
+        "name": "Ich",
+        "text": "*책상 서랍을 열었다. 문서 더미. 손이 떨려서 제대로 잡히지 않는다. '기억 조작 프로토콜 — ver.4.2'*"
+    },
+    "day4_after_basement_17": {
+        "name": "Ich",
+        "text": "*'전학생 확보 절차: 원 학교 관계 단절 → 새 환경 적응 유도 → 5일간 단계적 약물 투여 → 기억 재구성 → 순응성 검증'*"
+    },
+    "day4_after_basement_18": {
+        "name": "Ich",
+        "text": "*'이사회 승인: 부적응 학생 특별 자율화 행동 교정 프로그램(내부 코드네임: 네버그라드) — 완전한 순응성 달성을 위한 인지 재구성 연구' ...행동 교정 프로그램. 이름만 보면 멀쩡한 복지 사업이다. 코드네임 '네버그라드'. 이 학교의 이름이자... 실험의 진짜 이름.*"
+    },
+    "day4_after_basement_19": {
+        "name": "Ich",
+        "text": "*다른 문서를 펼쳤다. '피험자 #13 — 진행 중'. 사진이 첨부되어 있다. ...내 사진이다. 다리에서 힘이 빠진다. 벽에 기대야 했다. 숨이 가쁘다. ...13번째. 내 번호다. 처음부터 나를 노리고...*"
+    },
+    "day4_after_basement_20": {
+        "name": "Ich",
+        "text": "*...! 구석에서 소리가 들린다. 작은 신음소리. 누군가 있다. 형광등이 깜빡인다. 빛이 들어온 순간, 구석에 누워있는 사람이 보인다.*"
+    },
+    "day4_after_basement_21": {
+        "name": "Choi Yuna",
+        "text": "\"...선배...?\""
+    },
+    "day4_after_basement_22": {
+        "name": "Ich",
+        "text": "*유나다. 구석 침대에 쓰러져 있다.*"
+    },
+    "day4_after_basement_23": {
+        "name": "Choi Yuna",
+        "text": "\"선배... 맞아...? ...여기 어떻게...\""
+    },
+    "day4_after_basement_24": {
+        "name": "Ich",
+        "text": "*다가갔다. 유나의 얼굴이 창백하다. 입술이 갈라져 있다. 눈 밑이 검게 내려앉아 있다. 팔에 주사 자국. 여러 개. 신선한 것부터 오래된 것까지. ...유나는 '전학 간' 게 아니었다. 여기에 있었다. 처음부터.*"
+    },
+    "day4_after_basement_25": {
+        "name": "Choi Yuna",
+        "text": "\"...선배, 여기서... 나가야 해요. 빨리...\""
+    },
+    "day4_after_basement_26": {
+        "name": "Ich",
+        "text": "*유나가 내 소매를 잡는다. 손에 힘이 없다.*"
+    },
+    "day4_after_basement_timer": {
+        "name": "Choi Yuna",
+        "text": "\"그 사람들이... 곧 와요. 매일 이 시간에...\"",
+        "choices": [
+            "유나를 데리고 나간다",
+            "일단 숨는다"
+        ]
+    },
+    "day4_after_basement_rescue": {
+        "name": "Ich",
+        "text": "*Ich stütze 최유나. Sie ist schwer. Aber ich kann sie nicht hier lassen.*"
+    },
+    "day4_after_basement_rescue_2": {
+        "name": "Choi Yuna",
+        "text": "\"Senpai... danke... wir müssen... hier raus...\""
+    },
+    "day4_after_basement_rescue_3": {
+        "name": "Choi Yuna",
+        "text": "\"...네. 느리지만...\""
+    },
+    "day4_after_basement_rescue_4": {
+        "name": "Ich",
+        "text": "*반대쪽 출구를 찾았다. 환기구 옆에 작은 문이 있다. 밖으로 통하는 것 같다.*"
+    },
+    "day4_after_basement_rescue_5": {
+        "name": "Ich",
+        "text": "*유나를 부축하고 문을 열었다. 어둠 속으로 빠져나갔다.*"
+    },
+    "day4_after_basement_hide": {
+        "name": "Ich",
+        "text": "*Ich höre Schritte. Ich verstecke mich hinter dem Schrank.*"
+    },
+    "day4_after_basement_hide_2": {
+        "name": "Ich",
+        "text": "*Jemand kontrollierte den Keller und ging wieder. Ich habe 최유나 zurückgelassen. ...Es tut mir leid, 최유나.*"
+    },
+    "day4_after_basement_hide_3": {
+        "name": "Ich",
+        "text": "*...리인 선생님이다. 약품 트레이를 들고 들어온다. 숨을 멈췄다. 심장이 갈비뼈를 두드린다. 들킬까. 이 심장 소리가 들릴까.*"
+    },
+    "day4_after_basement_hide_4": {
+        "name": "Ich",
+        "text": "*리인 선생님이 캐비넷에서 약품을 꺼내고... 나갔다. 문이 닫힌다. 발소리가 멀어진다.*"
+    },
+    "day4_after_basement_hide_5": {
+        "name": "Ich",
+        "text": "*...살았다. 유나를 데리고 나가야 한다. 지금.*"
+    },
+    "day4_after_sea_route": {
+        "name": "Han Sea",
+        "text": "\"{name}, lass uns heute auch zusammen gehen. Wohin sollen wir?\""
+    },
+    "day4_after_sea_2": {
+        "name": "Ich",
+        "text": "*Ich folge 한세아. Sie geht in ein leeres Klassenzimmer.*"
+    },
+    "day4_after_sea_3": {
+        "name": "Han Sea",
+        "text": "\"{name}. Ich muss dir etwas sagen.\""
+    },
+    "day4_after_sea_4": {
+        "name": "Han Sea",
+        "text": "\"Du siehst... angespannt aus, wenn du mit anderen zusammen bist. Mit Yuna. Mit Frau Eunsu.\""
+    },
+    "day4_after_sea_5": {
+        "name": "Han Sea",
+        "text": "\"Du wirkst am entspanntesten, wenn du bei mir bist. ...Du brauchst doch nur mich anzusehen, oder?\"",
+        "choices": [
+            "Verstanden",
+            "Das ist etwas..."
+        ]
+    },
+    "day4_after_sea_6": {
+        "name": "Ich",
+        "text": "*세아가 의자에 앉는다. 나를 올려다본다.*"
+    },
+    "day4_after_sea_7": {
+        "name": "Han Sea",
+        "text": "\"유나랑 있을 때 {name} 표정이... 안 좋더라. 은수 선생님이랑 있을 때도. 리인 선생님이랑 있을 때도.\""
+    },
+    "day4_after_sea_8": {
+        "name": "Ich",
+        "text": "*세아의 목소리가 낮아진다.*"
+    },
+    "day4_after_sea_force": {
+        "name": "Han Sea",
+        "text": "\"나랑 있을 때가 {name}이 제일 편해 보여. ...나만 보면 되는 거 아니야?\"",
+        "choices": [
+            "알겠어",
+            "그건 좀..."
+        ]
+    },
+    "day4_after_sea_accept": {
+        "name": "Han Sea",
+        "text": "\"...{name} ist wirklich brav. Mein {name}.\""
+    },
+    "day4_after_sea_accept_2": {
+        "name": "Ich",
+        "text": "*한세아 umarmt mich. Ihre Hände drücken fest auf meinen Rücken. ...Das ist keine Umarmung.*"
+    },
+    "day4_after_sea_accept_3": {
+        "name": "Ich",
+        "text": "*세아가 웃는다. 하지만 이번에는 웃음이 멈추지 않는다. 입꼬리가 올라간 채로 고정된 것처럼.*"
+    },
+    "day4_after_sea_accept_4": {
+        "name": "Han Sea",
+        "text": "\"**내 사람.**\""
+    },
+    "day4_after_sea_crack": {
+        "name": "Han Sea",
+        "text": "\"...Manchmal denke ich... wenn ich hier rauskomme... wohin gehe ich dann?\""
+    },
+    "day4_after_sea_crack_2": {
+        "name": "Ich",
+        "text": "*Einen Moment lang huschte Angst durch 한세아s Augen. Echte Gefühle. Ist auch dieses Mädchen... in irgendetwas gefangen? Doch es verschwand sofort wieder.*"
+    },
+    "day4_after_sea_crack_3": {
+        "name": "Ich",
+        "text": "*목소리가 달라졌다. 단단했던 목소리가... 흔들리고 있다.*"
+    },
+    "day4_after_sea_crack_4": {
+        "name": "Han Sea",
+        "text": "\"나, 밖이 어떤 곳인지 몰라. 평생 은수 선생님이 시키는 대로만 살았어.\""
+    },
+    "day4_after_sea_crack_5": {
+        "name": "Han Sea",
+        "text": "\"새로 오는 애들이랑 친하게 지내라고... 보고하라고 했어.\""
+    },
+    "day4_after_sea_crack_6": {
+        "name": "Ich",
+        "text": "*세아가 무릎 위에서 손을 꽉 쥐었다. 손등이 하얗게 질린다.*"
+    },
+    "day4_after_sea_crack_7": {
+        "name": "Han Sea",
+        "text": "\"...그게 전부인 줄 알았어. 착한 일 하는 거라고.\""
+    },
+    "day4_after_sea_crack_8": {
+        "name": "Han Sea",
+        "text": "\"근데 내가 보고한 애들이 하나씩 달라지더라. 설화는... 아예 사라졌어.\""
+    },
+    "day4_after_sea_crack_9": {
+        "name": "Han Sea",
+        "text": "\"...그때 처음 무서웠어.\""
+    },
+    "day4_after_sea_crack_10": {
+        "name": "Ich",
+        "text": "*세아의 목소리가 작아진다. 거의 들리지 않을 만큼.*"
+    },
+    "day4_after_sea_crack_11": {
+        "name": "Han Sea",
+        "text": "\"근데 {name}은... 다를 줄 알았는데.\""
+    },
+    "day4_after_sea_crack_12": {
+        "name": "Ich",
+        "text": "*세아의 눈이 흔들린다.*"
+    },
+    "day4_after_sea_crack_13": {
+        "name": "Han Sea",
+        "text": "\"결국 너도... 나만 여기 두고 도망칠 거잖아.\""
+    },
+    "day4_after_sea_crack_14": {
+        "name": "Han Sea",
+        "text": "\"날 버릴 거잖아.\""
+    },
+    "day4_after_sea_crack_15": {
+        "name": "Ich",
+        "text": "*세아가 나를 본다. 눈에 눈물이 고여있다.*"
+    },
+    "day4_after_sea_crack_16": {
+        "name": "Han Sea",
+        "text": "\"진짜로 좋아하게 된 거야. 감시가 아니라. 진심으로. 나 이거 연기 아니야. 이것만은... 믿어줘.\""
+    },
+    "day4_after_sea_crack_17": {
+        "name": "Ich",
+        "text": "*순간, 세아의 눈에서 공포가 스쳤다. 진짜 감정. 가면 뒤의 날것. 세아도 무언가에 갇혀 있다. 이 학교에. 은수 선생님에게. '역할'이라는 이름의 새장에. 금방 사라졌다. 세아가 눈물을 닦는다. 웃는다. 다시 가면을 쓴다.*"
+    },
+    "day4_after_sea_crack_18": {
+        "name": "Han Sea",
+        "text": "\"...잊어. 지금 한 말 다 잊어.\""
+    },
+    "day4_after_sea_crack_19": {
+        "name": "Ich",
+        "text": "*세아가 안았다. 등 뒤로 손이 꽉 조여온다. 숨이 막힐 것 같다. ...포옹이 아닌 건 알겠다. 이건 집착이다.*"
+    },
+    "day4_after_sea_crack_20": {
+        "name": "Ich",
+        "text": "*하지만 세아의 어깨가 떨리고 있다. 미세하게. 작게. 이 떨림은... 집착만은 아니다. 공포다. 나를 놓으면 혼자가 되는 것에 대한 공포. ...세아도 피해자다. 그걸 이해한다고 해서, 이 상황이 덜 무서운 건 아니지만.*"
+    },
+    "day4_after_evidence": {
+        "name": "Ich",
+        "text": "*Ich bleibe im Klassenzimmer und ordne die bisher gesammelten Beweise.*"
+    },
+    "day4_after_evidence_2": {
+        "name": "Ich",
+        "text": "*Fotos auf der Speicherkarte, die Liste der Transferschüler, 'Abschlussdatum der Verarbeitung'... das Puzzle fügt sich zusammen.*"
+    },
+    "day4_after_evidence_3": {
+        "name": "Ich",
+        "text": "*Ich überprüfe die Fotos auf 최유나s Kamera. Es gibt ein Foto vom Kellereingang.*"
+    },
+    "day4_after_evidence_4": {
+        "name": "Ich",
+        "text": "*Die Transferschüler sind nicht 'verschwunden', sondern wurden 'verarbeitet'. Erinnerungen gelöscht, zu vollkommen fügsamen Schülern gemacht... eine vom Vorstand finanzierte Versuchsanstalt. Die gesamte Schule.*"
+    },
+    "day4_after_evidence_5": {
+        "name": "Klassenlehrerin",
+        "text": "\"...{name}. Du bist immer noch hier?\""
+    },
+    "day4_after_evidence_6": {
+        "name": "Ich",
+        "text": "*은수 steht vor der Klassenzimmertür. Ihr Gesicht ist düster.*",
+        "choices": [
+            "Fliehen",
+            "Still bleiben"
+        ]
+    },
+    "day4_after_evidence_7": {
+        "name": "Park Eunsu",
+        "text": "\"...{name}. 아직도 여기 있었어?\""
+    },
+    "day4_after_evidence_8": {
+        "name": "Ich",
+        "text": "*고개를 들었다. 교실 문 앞에 은수 선생님이 서 있다. ...언제부터 거기 있었지? 발소리를 못 들었다. 은수 선생님의 표정이 복잡하다. 화난 것도 아니고, 슬픈 것도 아니고... 피곤한 것 같다.*"
+    },
+    "day4_after_evidence_9": {
+        "name": "Ich",
+        "text": "*선생님의 시선이 내 책상 위의 메모리카드와 사진 조각을 훑는다.*"
+    },
+    "day4_after_evidence_timer": {
+        "name": "Ich",
+        "text": "*선생님의 시선이 내 책상 위의 메모리카드와 사진 조각을 훑는다.*",
+        "choices": [
+            "도망친다",
+            "가만히 있는다"
+        ]
+    },
+    "day4_after_evidence_run": {
+        "name": "Ich",
+        "text": "*Ich schiebe einen Tisch in den Weg und renne. Hinter mir das Klacken von Absätzen. Aber ich bin entkommen.*"
+    },
+    "day4_after_evidence_run_2": {
+        "name": "Park Eunsu",
+        "text": "\"...{name}.\""
+    },
+    "day4_after_evidence_run_3": {
+        "name": "Ich",
+        "text": "*쫓아오지 않는다. 그 자리에 서서 말하고 있다.*"
+    },
+    "day4_after_evidence_run_4": {
+        "name": "Park Eunsu",
+        "text": "\"돌아와, {name}. 밖에 나가봤자 상처받을 일투성이야.\""
+    },
+    "day4_after_evidence_run_5": {
+        "name": "Park Eunsu",
+        "text": "\"넌 그냥 여기서 선생님이 하라는 대로만 하면 돼. 그게 제일 안전해.\""
+    },
+    "day4_after_evidence_run_6": {
+        "name": "Ich",
+        "text": "*복도를 뛰면서 뒤를 돌아봤다. 은수 선생님이 문틀에 기대어 서 있다. 안타깝다는 표정이다.*"
+    },
+    "day4_after_evidence_run_7": {
+        "name": "Ich",
+        "text": "*...이 사람은 진심으로 자기가 옳다고 믿고 있다. 그게 더 무섭다. 더 생각할 여유가 없다. 뛰어야 한다.*"
+    },
+    "day4_after_evidence_stay": {
+        "name": "Ich",
+        "text": "*몸이 굳었다. 움직일 수 없다. ...도망쳐야 하는데, 다리가 말을 안 듣는다.*"
+    },
+    "day4_after_evidence_stay_2": {
+        "name": "Park Eunsu",
+        "text": "\"다 봤구나.\""
+    },
+    "day4_after_evidence_stay_3": {
+        "name": "Ich",
+        "text": "*은수 선생님이 천천히 교실로 들어온다. 한 발. 한 발.*"
+    },
+    "day4_after_evidence_stay_4": {
+        "name": "Park Eunsu",
+        "text": "\"...서류.\""
+    },
+    "day4_after_evidence_stay_5": {
+        "name": "Ich",
+        "text": "*선생님이 한숨을 쉰다. 길고 깊은 한숨. 처음 보는 표정이다.*"
+    },
+    "day4_after_evidence_stay_6": {
+        "name": "Park Eunsu",
+        "text": "\"...처음부터 이러고 싶었던 건 아니야, {name}.\""
+    },
+    "day4_after_evidence_stay_7": {
+        "name": "Ich",
+        "text": "*선생님이 내 앞에 선다. 가까이.*"
+    },
+    "day4_after_evidence_stay_8": {
+        "name": "Park Eunsu",
+        "text": "\"괜찮아, {name}. 선생님이 다 해결해줄게.\""
+    },
+    "day4_after_evidence_stay_9": {
+        "name": "Ich",
+        "text": "*선생님의 손이 내 머리를 쓰다듬는다. 부드럽게. 따뜻하게.*"
+    },
+    "day4_after_evidence_stay_10": {
+        "name": "Park Eunsu",
+        "text": "\"...**넌 여기 있으면 돼.**\""
+    },
+    "day4_after_end": {
+        "name": "Ich",
+        "text": "*Die Sonne geht unter. Morgen ist der letzte Tag. Ich muss... hier raus.*"
+    }
 }

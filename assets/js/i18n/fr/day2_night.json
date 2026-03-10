@@ -1,19 +1,206 @@
 {
-    "day2_night_start": {"name": "Moi", "text": "*Rentré chez moi, je vérifie encore mon téléphone. Le groupe de mon ancien lycée... il ne reste plus que moi. Tous les autres ont quitté la conversation.*"},
-    "day2_night_2": {"name": "Moi", "text": "*J'ai essayé d'appeler mon ancien professeur principal. 'Le numéro que vous avez composé n'est plus attribué.' ...Quoi ?*"},
-    "day2_night_3": {"name": "Moi", "text": "*Il a changé de numéro ? J'ai aussi essayé d'appeler d'autres amis, mais personne ne décroche, ou bien le numéro n'existe pas.*"},
-    "day2_night_4": {"name": "Moi", "text": "*...C'est bizarre. Ce n'est pas normal de ne pouvoir joindre personne à ce point.*"},
-    "day2_night_phone_sea": {"name": "Moi", "text": "*J'ai un message de Sea.*"},
-    "day2_night_phone_sea_2": {"name": "Moi", "text": "*Sea : 'Merci encore pour aujourd'hui. On mange ensemble demain aussi !'*\n*Sea : '...Je me sens bien quand je suis avec {name}.'*"},
-    "day2_night_phone_sea_3": {"name": "Moi", "text": "*...Le deuxième message me laisse songeur. C'est juste de la gentillesse, ou bien...*"},
-    "day2_night_5": {"name": "Moi", "text": "*Demain, je demanderai à Mme Eunsu. Pourquoi tous les contacts de mon ancien lycée sont coupés. En attendant, dormons.*"},
-    "day2_night_stat_flicker": "Niveau de danger : ████",
-    "day2_night_dream": {"name": "", "text": "*...Je fais un rêve.*"},
-    "day2_night_dream_2": {"name": "Moi", "text": "*Je marche dans un couloir sombre. C'est... l'école ? Le couloir de l'école, la nuit. Seul le bruit de mes pas résonne.*"},
-    "day2_night_dream_3": {"name": "???", "text": "\"...fu...is...\""},
-    "day2_night_dream_4": {"name": "Moi", "text": "*Je me suis retourné. Personne. Mais j'ai clairement entendu. Une voix de fille.*"},
-    "day2_night_dream_5": {"name": "Moi", "text": "*Au bout du couloir, quelqu'un se tient debout. Un visage livide, un regard perdu dans le vide. ...La fille du fond de la classe ?*"},
-    "day2_night_dream_6": {"name": "Moi", "text": "*Au moment où j'allais m'approcher, le sol s'est dérobé et tout est devenu noir.*"},
-    "day2_night_wake": {"name": "Moi", "text": "*...! Je me suis réveillé en sueur. C'est un rêve. Juste un rêve. ...N'est-ce pas ?*"},
-    "day2_night_end": {"name": "", "text": "*Fin du Jour 2*"}
+    "day2_night_start": {
+        "name": "Moi",
+        "text": "*Rentré chez moi, je vérifie encore mon téléphone. Le groupe de mon ancien lycée... il ne reste plus que moi. Tous les autres ont quitté la conversation.*"
+    },
+    "day2_night_2": {
+        "name": "Moi",
+        "text": "*J'ai essayé d'appeler mon ancien professeur principal. 'Le numéro que vous avez composé n'est plus attribué.' ...Quoi ?*"
+    },
+    "day2_night_3": {
+        "name": "Moi",
+        "text": "*Il a changé de numéro ? J'ai aussi essayé d'appeler d'autres amis, mais personne ne décroche, ou bien le numéro n'existe pas.*"
+    },
+    "day2_night_phone_1": {
+        "name": "Moi",
+        "text": "*폰을 다시 확인한다.*"
+    },
+    "day2_night_phone_2": {
+        "name": "Moi",
+        "text": "*전 학교 그룹방. 어제 보낸 메시지... '읽음 0'이었는데, 지금 확인하니 '읽음 3'으로 바뀌어 있다.*"
+    },
+    "day2_night_phone_3": {
+        "name": "Moi",
+        "text": "*읽긴 했네. 근데 아무도 답을 안 했다. ...뭐, 바쁜가 보지.*"
+    },
+    "day2_night_phone_4": {
+        "name": "Moi",
+        "text": "*민수한테 개인 메시지를 보냈다. '야 민수 나 전학 왔는데 왜 연락이 없냐 ㅋㅋ'*"
+    },
+    "day2_night_phone_5": {
+        "name": "Moi",
+        "text": "*10분 뒤.*"
+    },
+    "day2_night_phone_typing": {
+        "name": "Moi",
+        "text": "*\"···\" 표시가 떴다. 민수가 타이핑 중이다.*"
+    },
+    "day2_night_phone_6": {
+        "name": "Moi",
+        "text": "*...뭘 이렇게 오래 치고 있어? 보통 1초 만에 답장 쏘는 놈이.*"
+    },
+    "day2_night_phone_7": {
+        "name": "Moi",
+        "text": "*5초. 타이핑 표시가 계속 깜빡인다. 긴 문장을 쓰고 있나?*"
+    },
+    "day2_night_phone_8": {
+        "name": "Moi",
+        "text": "*답장이 왔다.*"
+    },
+    "day2_night_phone_9": {
+        "name": "Moi",
+        "text": "*민수: '응 잘 지내. 거긴 어때?'*"
+    },
+    "day2_night_phone_10": {
+        "name": "Moi",
+        "text": "*...뭐야 이게. 내가 왜 연락이 없냐고 물었는데, 대답은 안 하고 되려 '거긴 어때?'라고?*"
+    },
+    "day2_night_phone_11": {
+        "name": "Moi",
+        "text": "*이게 민수 맞아? 평소에 '야 이 미친놈아 ㅋㅋㅋㅋ 드디어 답하냐' 하고 욕부터 박는 놈인데.*"
+    },
+    "day2_night_phone_12": {
+        "name": "Moi",
+        "text": "*'응 잘 지내.' ...5초 동안 고른 단어가 이거라고?*"
+    },
+    "day2_night_phone_13": {
+        "name": "Moi",
+        "text": "*나: '여기 애들 좀 특이해 ㅋㅋ 너희는 시험공부 하냐?'*"
+    },
+    "day2_night_phone_14": {
+        "name": "Moi",
+        "text": "*읽음 1. ...읽었다. 그런데 답이 없다. 5분. 10분. 20분.*"
+    },
+    "day2_night_phone_15": {
+        "name": "Moi",
+        "text": "*...바쁜가 보다. 원래 카톡 느린 놈도 아닌데.*"
+    },
+    "day2_night_phone_16": {
+        "name": "Moi",
+        "text": "*그룹방에도 다시 메시지를 보내봤다. '다들 잘 지내지?? 연락 좀 해라 ㅠㅠ'*"
+    },
+    "day2_night_phone_17": {
+        "name": "Moi",
+        "text": "*읽음 표시가 올라간다. 5... 8... 12...*"
+    },
+    "day2_night_phone_18": {
+        "name": "Moi",
+        "text": "*읽고 있다. 전부 읽고 있다. 그런데 아무도 답을 안 한다.*"
+    },
+    "day2_night_phone_19": {
+        "name": "Moi",
+        "text": "*...뭐야. 뭔가 잘못한 건가? 전학 간 게 그렇게 관심 없나?*"
+    },
+    "day2_night_phone_20": {
+        "name": "Moi",
+        "text": "*...내일 다시 해보자. 시험 기간이라 바쁜 거겠지.*"
+    },
+    "day2_night_msg_1": {
+        "name": "Moi",
+        "text": "*세아한테 메시지가 와있다.*"
+    },
+    "day2_night_msg_2": {
+        "name": "Moi",
+        "text": "*세아: '오늘도 고마워. 학생회실에 와줘서.'*"
+    },
+    "day2_night_msg_3": {
+        "name": "Moi",
+        "text": "*세아: '내일도 같이 먹자!'*"
+    },
+    "day2_night_msg_4": {
+        "name": "Moi",
+        "text": "*세아: '...{name}이랑 있으면 좋다.'*"
+    },
+    "day2_night_msg_5": {
+        "name": "Moi",
+        "text": "*...세 번째 메시지. '좋다.' 그냥 친절한 건지, 아니면 다른 의미인 건지. ...둘 다인 것 같기도 하고.*"
+    },
+    "day2_night_msg_6": {
+        "name": "Moi",
+        "text": "*답장을 보낸다. '나도 오늘 즐거웠어. 내일 보자.'*"
+    },
+    "day2_night_msg_7": {
+        "name": "Moi",
+        "text": "*세아: '♡' ...하트. 진짜 적극적이다.*"
+    },
+    "day2_night_sleep_1": {
+        "name": "Moi",
+        "text": "*이불에 누워서 천장을 본다.*"
+    },
+    "day2_night_sleep_2": {
+        "name": "Moi",
+        "text": "*전 학교 연락 건이 좀 신경 쓰이지만... 뭐, 내일 해결될 거야. 눈을 감는다. 피곤하다. 의식이 흐려진다.*"
+    },
+    "day2_night_dream_1": {
+        "name": "Moi",
+        "text": "*...어두운 복도를 걷고 있다.*"
+    },
+    "day2_night_dream_2": {
+        "name": "Moi",
+        "text": "*Je marche dans un couloir sombre. C'est... l'école ? Le couloir de l'école, la nuit. Seul le bruit de mes pas résonne.*"
+    },
+    "day2_night_dream_3": {
+        "name": "???",
+        "text": "\"...fu...is...\""
+    },
+    "day2_night_dream_4": {
+        "name": "Moi",
+        "text": "*Je me suis retourné. Personne. Mais j'ai clairement entendu. Une voix de fille.*"
+    },
+    "day2_night_dream_5": {
+        "name": "Moi",
+        "text": "*Au bout du couloir, quelqu'un se tient debout. Un visage livide, un regard perdu dans le vide. ...La fille du fond de la classe ?*"
+    },
+    "day2_night_dream_6": {
+        "name": "Moi",
+        "text": "*Au moment où j'allais m'approcher, le sol s'est dérobé et tout est devenu noir.*"
+    },
+    "day2_night_dream_7": {
+        "name": "Moi",
+        "text": "*복도 끝에 누군가 서 있다. 창백한 얼굴. 먼 곳을 보는 눈. 길고 검은 머리카락.*"
+    },
+    "day2_night_dream_8": {
+        "name": "Moi",
+        "text": "*...뒷자리 그 애? 설화?*"
+    },
+    "day2_night_dream_9": {
+        "name": "Moi",
+        "text": "*다가간다. 한 걸음, 두 걸음. 발소리가 울린다. 그 애의 입이 움직인다.*"
+    },
+    "day2_night_dream_10": {
+        "name": "???",
+        "text": "\"...나를... 기억해줘...\""
+    },
+    "day2_night_dream_11": {
+        "name": "Moi",
+        "text": "*손을 뻗었다. 닿을 것 같았다. 손끝이 닿으려는 순간—*"
+    },
+    "day2_night_dream_12": {
+        "name": "Moi",
+        "text": "*바닥이 무너지듯 시야가 어두워진다. 떨어진다. 끝없이.*"
+    },
+    "day2_night_wake_1": {
+        "name": "Moi",
+        "text": "*...! 땀에 젖어 일어났다. 심장이 미친 듯이 뛴다.*"
+    },
+    "day2_night_wake_2": {
+        "name": "Moi",
+        "text": "*시계를 본다. 새벽 3시 47분.*"
+    },
+    "day2_night_wake_3": {
+        "name": "Moi",
+        "text": "*꿈이다. 그냥 꿈이야. ...그렇지?*"
+    },
+    "day2_night_wake_4": {
+        "name": "Moi",
+        "text": "*...근데 왜 설화의 얼굴이 그렇게 선명하게 기억나지?*"
+    },
+    "day2_night_wake_5": {
+        "name": "Moi",
+        "text": "*물을 한 잔 마시고 다시 눕는다. 좀처럼 잠이 오지 않는다.*"
+    },
+    "day2_night_end": {
+        "name": "",
+        "text": "*Fin du Jour 2*"
+    }
 }

@@ -11,7 +11,42 @@
         "name": "Yo",
         "text": "*...Tengo que ir a la escuela. ¿Tengo que ir? ...¿Qué pasaría si no voy?*"
     },
-
+    "day4_morning_start_4": {
+        "name": "Yo",
+        "text": "*거울을 본다. 얼굴이 창백하다. 눈 밑에 다크서클이 짙다. 3일 전의 나와 다른 사람 같다.*"
+    },
+    "day4_morning_start_5": {
+        "name": "Yo",
+        "text": "*...학교에 가야 한다. 아니, 가야 하나? 가지 않으면 어떻게 되지? 은수 선생님이 찾아올까? 세아가 연락을 할까?*"
+    },
+    "day4_morning_start_6": {
+        "name": "Yo",
+        "text": "*...안전 앱. 위치 추적. 이미 내 위치를 알고 있을 수도.*"
+    },
+    "day4_morning_start_7": {
+        "name": "Yo",
+        "text": "*가야 한다. 안 가면 더 의심받는다. 유나도 찾아야 하고.*"
+    },
+    "day4_morning_start_8": {
+        "name": "Yo",
+        "text": "*교복을 입는 손이 떨린다. ...떨림을 멈추려고 주먹을 쥐었다.*"
+    },
+    "day4_morning_start_9": {
+        "name": "Yo",
+        "text": "*...학교로 가야 한다.*"
+    },
+    "day4_morning_commute": {
+        "name": "Yo",
+        "text": "*학교로 가는 길. 발걸음이 무겁다.*"
+    },
+    "day4_morning_commute_2": {
+        "name": "Yo",
+        "text": "*어제까지는 이 길이 벚꽃이 예쁜 등굣길이었다. 오늘은... 무덤으로 가는 길 같다.*"
+    },
+    "day4_morning_commute_3": {
+        "name": "Yo",
+        "text": "*과장이다. 그렇지? ...과장이길 바란다.*"
+    },
     "day4_morning_gate": {
         "name": "Yo",
         "text": "*Puerta de la escuela. El ambiente es diferente al de ayer. Las expresiones de los estudiantes son... todas iguales.*"
@@ -23,6 +58,18 @@
     "day4_morning_gate_3": {
         "name": "Yo",
         "text": "*...La profesora Eunsu está parada en la puerta. Me estaba esperando.*"
+    },
+    "day4_morning_gate_4": {
+        "name": "Yo",
+        "text": "*모두 웃고 있다. 똑같은 미소. 같은 각도로 올라간 입꼬리. 마치 연습한 것처럼.*"
+    },
+    "day4_morning_gate_5": {
+        "name": "Yo",
+        "text": "*...이게 원래 이랬나? 1일차에도 이랬나? 기억이... 확실하지 않다.*"
+    },
+    "day4_morning_gate_6": {
+        "name": "Yo",
+        "text": "*정문 앞에 은수 선생님이 서 있다. ...선생님이 왜 정문에? 평소에는 교무실에 계셨는데.*"
     },
     "day4_morning_eunsu": {
         "name": "Tutora",
@@ -36,21 +83,29 @@
             "Decir que estoy bien"
         ]
     },
-    "day4_morning_eunsu_timeout": {
-        "name": "Tutora",
-        "text": "\"...¿Sin respuesta?\""
+    "day4_morning_eunsu_3": {
+        "name": "Park Eunsu",
+        "text": "\"손 잡아도 될까? 학교까지 안전하게 데려다줄게.\""
     },
-    "day4_morning_eunsu_timeout_2": {
+    "day4_morning_eunsu_4": {
         "name": "Yo",
-        "text": "*Antes de poder responder, la profesora Eunsu me agarró la muñeca. Con fuerza suficiente para dejar un moretón.*"
-    },
-    "day4_morning_eunsu_timeout_3": {
-        "name": "Tutora",
-        "text": "\"Cuando tu profesora te pregunta algo, respondes. ...Vamos.\""
+        "text": "*선생님이 손을 내민다. 웃고 있다. 따뜻한 미소. ...이 미소가 항상 이렇게 무서웠던가?*",
+        "choices": [
+            "손을 잡는다",
+            "괜찮다고 한다"
+        ]
     },
     "day4_morning_eunsu_comply": {
         "name": "Yo",
         "text": "*La mano de la profesora Eunsu está fría. ...Y es fuerte. No parece tener intención de soltar.*"
+    },
+    "day4_morning_eunsu_comply_2": {
+        "name": "Park Eunsu",
+        "text": "\"자, 같이 가자.\""
+    },
+    "day4_morning_eunsu_comply_3": {
+        "name": "Yo",
+        "text": "*선생님이 내 손을 잡고 교실까지 데려간다. ...호위인지, 호송인지.*"
     },
     "day4_morning_eunsu_refuse": {
         "name": "Tutora",
@@ -60,7 +115,14 @@
         "name": "Tutora",
         "text": "\"Pero {name}, es mejor que no andes solo por esta escuela. ...Es peligroso.\""
     },
-
+    "day4_morning_eunsu_refuse_3": {
+        "name": "Park Eunsu",
+        "text": "\"하지만 {name}, 이 학교에서는 혼자 돌아다니지 않는 게 좋아.\""
+    },
+    "day4_morning_eunsu_refuse_4": {
+        "name": "Park Eunsu",
+        "text": "\"...**위험하니까.**\""
+    },
     "day4_morning_classroom": {
         "name": "Yo",
         "text": "*Entré al aula. Un asiento está vacío.*"
@@ -72,6 +134,14 @@
     "day4_morning_classroom_3": {
         "name": "Yo",
         "text": "*Sea se acerca.*"
+    },
+    "day4_morning_classroom_4": {
+        "name": "Yo",
+        "text": "*...아무도 신경 쓰지 않는다. 옆 자리 학생이 유나의 빈 자리를 멀뚱멀뚱 보다가 시선을 돌린다.*"
+    },
+    "day4_morning_classroom_5": {
+        "name": "Yo",
+        "text": "\"유나가 안 왔는데...\""
     },
     "day4_morning_sea": {
         "name": "Han Sea",
@@ -85,7 +155,18 @@
         "name": "Han Sea",
         "text": "\"No te preocupes por eso. Me tienes a mí, ¿no?\""
     },
-
+    "day4_morning_sea_4": {
+        "name": "Yo",
+        "text": "*갑자기 전학? 어젯밤에? 유나가 그런 말을 한 적 없는데... 어제 유나는 나한테 메모리카드를 줬다. '전학생이 사라졌다'고 했다. 그런 애가 갑자기 전학을?*"
+    },
+    "day4_morning_sea_5": {
+        "name": "Han Sea",
+        "text": "\"신경 쓸 거 없어. {name}한테는 내가 있으니까.\""
+    },
+    "day4_morning_sea_6": {
+        "name": "Yo",
+        "text": "*세아가 웃는다. ...이 웃음이 오늘따라 유난히 차갑다.*"
+    },
     "day4_morning_class_start": {
         "name": "Tutora",
         "text": "\"Bien, empecemos la clase. Hoy es una lección especial.\""
@@ -102,7 +183,26 @@
         "name": "Yo",
         "text": "*...La profesora me mira fijamente solo a mí. Todos los ojos del aula apuntan en mi dirección.*"
     },
-
+    "day4_morning_class_5": {
+        "name": "Park Eunsu",
+        "text": "\"하지만 이 학교를 떠나려는 건... 자신의 일부를 버리는 것과 같아.\""
+    },
+    "day4_morning_class_6": {
+        "name": "Park Eunsu",
+        "text": "\"**그렇지, {name}?**\""
+    },
+    "day4_morning_class_7": {
+        "name": "Yo",
+        "text": "*...선생님이 나만 보고 있다. 교실의 모든 시선이 나를 향한다. 30쌍의 눈. 전부 웃고 있다. 전부 같은 미소.*"
+    },
+    "day4_morning_class_8": {
+        "name": "Yo",
+        "text": "\"...네.\""
+    },
+    "day4_morning_class_9": {
+        "name": "Yo",
+        "text": "*그 한마디가 입에서 간신히 나왔다. 선생님이 만족스럽게 웃는다. ...이 교실에서 나가고 싶다. 지금 당장.*"
+    },
     "day4_morning_end": {
         "name": "Yo",
         "text": "*La clase de la mañana terminó. No puedo respirar.*"

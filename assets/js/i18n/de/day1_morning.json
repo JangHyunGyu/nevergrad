@@ -1,45 +1,515 @@
 {
-    "day1_opening": { "name": "Ich", "text": "*Kirschblüten tanzen durch die Luft. Eine warme Frühlingsbrise schleicht sich durch die Schuluniform. Ab heute bin ich Schüler an dieser Schule.*" },
-    "day1_opening_2": { "name": "Ich", "text": "*Vor dem Tor der neuen Schule. Ich bin etwas nervös, aber es ist kein unangenehmes Kribbeln.*" },
-    "day1_opening_3": { "name": "Ich", "text": "*Also dann, gehen wir rein.*" },
-    "day1_hallway_1": { "name": "Ich", "text": "*Einmal tief durchatmen. ...Wird schon irgendwie klappen. Rein da.*" },
-    "day1_sea_first": { "name": "???", "text": "\"Oh, du bist der Neue, oder? Ich hab gehört, dass du heute kommst.\"" },
-    "day1_sea_first_2": { "name": "Ich", "text": "*Ich drehe mich um und sehe ein lächelndes Mädchen. Ein gepflegter und ordentlicher Eindruck.*" },
-    "day1_sea_first_3": { "name": "한세아", "text": "\"한세아. Ich bin die Klassensprecherin deiner Klasse. Die Klassenlehrerin hat mich gebeten, dir alles zu zeigen. Freut mich, {name}.\"" },
-    "day1_sea_first_4": { "name": "Ich", "text": "\"Oh, freut mich auch. Ich zähle auf dich.\"" },
-    "day1_sea_choco": { "name": "한세아", "text": "\"Ach ja, hier. Am ersten Tag an einer neuen Schule ist man ja nervös. Da hilft was Süßes.\"" },
-    "day1_sea_choco_2": { "name": "Ich", "text": "*Sie reicht mir eine Schokomilch. Aufmerksam.*" },
-    "day1_sea_choco_choice": { "name": "Ich", "text": "*Soll ich sie annehmen?*", "choices": ["\"Oh, danke. Die trink ich gerne.\"", "\"Schokomilch? Genau mein Geschmack.\"", "\"Nett von dir, aber ich steh eher auf Erdbeere.\""] },
-    "day1_sea_choco_accept": { "name": "한세아", "text": "\"Gut. Ich hatte gehofft, dass sie dir schmeckt.\"" },
-    "day1_sea_choco_question": { "name": "한세아", "text": "\"Oh, echt? Nächstes Mal bring ich Erdbeere mit.\"" },
-    "day1_sea_choco_question_2": { "name": "Ich", "text": "*Ich antworte mit einem Lächeln. Eine nette Klassensprecherin.*" },
-    "day1_sea_choco_joke": { "name": "한세아", "text": "\"Erdbeere? Ach, wirklich? Nächstes Mal dann Erdbeere. Ich merk's mir.\"" },
-    "day1_classroom_enter": { "name": "Ich", "text": "*Ich folge 한세아 ins Klassenzimmer. Alle Blicke richten sich auf mich.*" },
-    "day1_classroom_enter_2": { "name": "Ich", "text": "*Klar, ich bin der Neue. Soll ich mal winken?*" },
-    "day1_classroom_enter_3": { "name": "Ich", "text": "*Die Stimmung ist gar nicht schlecht. Alle schauen halb neugierig, halb einladend.*" },
-    "day1_eunsu_enter": { "name": "Ich", "text": "*Die Klassenzimmertür geht auf, und die Klassenlehrerin kommt herein.*" },
-    "day1_eunsu_first": { "name": "Klassenlehrerin", "text": "\"So, alle zusammen. Wir haben heute einen neuen Mitschüler.\"" },
-    "day1_eunsu_first_2": { "name": "Klassenlehrerin", "text": "\"{name}, könntest du nach vorne kommen und dich kurz vorstellen?\"" },
-    "day1_eunsu_first_3": { "name": "Ich", "text": "*Ich stehe vor der Tafel. Nervös, aber naja, es ist nicht mein erster Schulwechsel.*" },
-    "day1_eunsu_first_4": { "name": "Klassenlehrerin", "text": "\"Ich habe schon auf dich gewartet. Es ist wirklich lange her, dass wir einen Transferschüler hatten.\"" },
-    "day1_eunsu_first_5": { "name": "Klassenlehrerin", "text": "\"Bitte, möchtest du dich vorstellen?\"" },
-    "day1_eunsu_first_6": { "name": "Ich", "text": "*Die Vorstellung ist geschafft. Gar nicht schlecht dafür, wie nervös ich war.*" },
-    "day1_eunsu_first_7": { "name": "Ich", "text": "*Ich habe mich kurz vorgestellt. Die Reaktion war gut. Zum Glück.*" },
-    "day1_seat_guide": { "name": "Klassenlehrerin", "text": "\"Dein Platz ist dort hinten am Fenster. Setz dich ruhig hin.\"" },
-    "day1_seolhwa_notice": { "name": "Ich", "text": "*Ich habe mich gesetzt. Am Fenster, schönes Sonnenlicht.*" },
-    "day1_seolhwa_notice_2": { "name": "Ich", "text": "*...Hinter mir sitzt jemand. Blasse Haut und ein Blick, der irgendwo in die Ferne gerichtet ist.*" },
-    "day1_seolhwa_notice_3": { "name": "Ich", "text": "*Soll ich sie begrüßen?*" },
-    "day1_seolhwa_greet_choice": { "name": "Ich", "text": "*Soll ich mich umdrehen?*", "choices": ["\"Hi, ich bin {name}. Ich sitze jetzt vor dir.\"", "(Lieber erstmal auf den Unterricht konzentrieren)"] },
-    "day1_seolhwa_greet": { "name": "Ich", "text": "\"Hi, ich bin {name}. Freut mich.\"" },
-    "day1_seolhwa_greet_2": { "name": "이설화", "text": "\".......\"" },
-    "day1_seolhwa_greet_3": { "name": "Ich", "text": "*Keine Antwort. Unsere Blicke haben sich kurz gekreuzt, aber sie hat sofort weggeschaut. Scheint sehr schüchtern zu sein.*" },
-    "day1_seolhwa_greet_4": { "name": "Sitznachbar", "text": "\"Hey, Neuer. Was guckst du denn da?\"" },
-    "day1_seolhwa_greet_5": { "name": "Ich", "text": "\"Nichts, ich hab nur die hinter mir begrüßt.\"" },
-    "day1_seolhwa_greet_6": { "name": "Sitznachbar", "text": "\"Ach, die? Die ist so still, dass ich gar nicht gemerkt hab, dass sie da sitzt.\"" },
-    "day1_seolhwa_greet_7": { "name": "Ich", "text": "*...Wirklich? Ich schaue noch einmal nach hinten. Das Mädchen sitzt... immer noch da. Derselbe Gesichtsausdruck.*" },
-    "day1_seolhwa_greet_8": { "name": "Ich", "text": "*Einfach der Typ Mensch, der nicht auffällt, schätze ich.*" },
-    "day1_seolhwa_greet_9": { "name": "Ich", "text": "*...Ist das ein Witz? Den Neuen verarschen? Naja, wird wohl so was sein.*" },
-    "day1_seolhwa_greet_10": { "name": "Ich", "text": "*Vergiss es. Es ist der erste Tag, kein Grund, Ärger zu suchen.*" },
-    "day1_seolhwa_skip": { "name": "Ich", "text": "*Konzentrieren wir uns auf den Unterricht.*" },
-    "day1_morning_end": { "name": "Ich", "text": "*Der Vormittagsunterricht ist vorbei. Pause.*" }
+    "day1_opening": {
+        "name": "Ich",
+        "text": "*Kirschblüten tanzen durch die Luft. Eine warme Frühlingsbrise schleicht sich durch die Schuluniform. Ab heute bin ich Schüler an dieser Schule.*"
+    },
+    "day1_opening_2": {
+        "name": "Ich",
+        "text": "*Vor dem Tor der neuen Schule. Ich bin etwas nervös, aber es ist kein unangenehmes Kribbeln.*"
+    },
+    "day1_opening_3": {
+        "name": "Ich",
+        "text": "*Also dann, gehen wir rein.*"
+    },
+    "day1_opening_4": {
+        "name": "Ich",
+        "text": "*오늘부터 이 학교 학생이다.*"
+    },
+    "day1_opening_5": {
+        "name": "Ich",
+        "text": "*...전학. 처음이다. 부모님 일 때문에 어쩔 수 없었지만, 솔직히 좀 불안하다.*"
+    },
+    "day1_opening_6": {
+        "name": "Ich",
+        "text": "*전 학교 애들이랑은 SNS로 연락하면 되지. 요즘 세상에 뭐.*"
+    },
+    "day1_opening_7": {
+        "name": "Ich",
+        "text": "*벚꽃잎이 코끝을 스친다. ...예쁘다. 좋은 징조라고 생각하자.*"
+    },
+    "day1_gate_1": {
+        "name": "Ich",
+        "text": "*낯선 교문 앞에 섰다.*"
+    },
+    "day1_gate_2": {
+        "name": "Ich",
+        "text": "*꽤 큰 학교다. 건물이 깨끗하고 운동장도 넓다. 전 학교보다 시설이 좋아 보인다.*"
+    },
+    "day1_gate_3": {
+        "name": "Ich",
+        "text": "*학생들이 삼삼오오 교문을 지나간다. 웃고 떠드는 평범한 아침 풍경.*"
+    },
+    "day1_gate_4": {
+        "name": "Ich",
+        "text": "*...아무도 나를 신경 쓰지 않는다. 당연하지. 아직 아무도 모르니까.*"
+    },
+    "day1_gate_5": {
+        "name": "Ich",
+        "text": "*가슴이 두근거린다. 새 학교, 새 친구들... 좋은 일만 있으면 좋겠다.*"
+    },
+    "day1_hallway_1": {
+        "name": "Ich",
+        "text": "*Einmal tief durchatmen. ...Wird schon irgendwie klappen. Rein da.*"
+    },
+    "day1_hallway_2": {
+        "name": "Ich",
+        "text": "*복도를 걷는다. 어디로 가야 할지 모르겠다.*"
+    },
+    "day1_hallway_3": {
+        "name": "Ich",
+        "text": "*안내판을 봐도 교실 위치가 헷갈린다. 1학년 건물... 2학년 건물... 본관? 별관?*"
+    },
+    "day1_hallway_4": {
+        "name": "Ich",
+        "text": "*지나가는 학생한테 물어볼까 하는데, 다들 바쁘게 지나간다.*"
+    },
+    "day1_sea_meet_1": {
+        "name": "Ich",
+        "text": "*첫날부터 길을 헤매다니. 전학은 이래서 피곤해.*"
+    },
+    "day1_sea_meet_2": {
+        "name": "???",
+        "text": "\"혹시 전학생? 오늘 온다고 들었는데.\""
+    },
+    "day1_sea_meet_3": {
+        "name": "Ich",
+        "text": "*뒤를 돌아보니 단정한 인상의 여학생이 서 있다.*"
+    },
+    "day1_sea_meet_4": {
+        "name": "Ich",
+        "text": "*단발머리에 교복을 깔끔하게 입고 있다. 가슴 쪽에 반장 뱃지가 달려있다.*"
+    },
+    "day1_sea_meet_5": {
+        "name": "Ich",
+        "text": "*자연스럽게 웃고 있다. 친근한 인상.*"
+    },
+    "day1_sea_meet_6": {
+        "name": "Han Sea",
+        "text": "\"한세아야. 이 반 반장. {name} 맞지?\""
+    },
+    "day1_sea_meet_7": {
+        "name": "Ich",
+        "text": "\"어, 응. 맞는데... 내 이름 어떻게 알아?\""
+    },
+    "day1_sea_meet_8": {
+        "name": "Han Sea",
+        "text": "\"담임선생님한테 들었지. 전학생 온다고 미리 알려주셨거든.\""
+    },
+    "day1_sea_meet_9": {
+        "name": "Ich",
+        "text": "\"아... 그렇구나.\""
+    },
+    "day1_sea_meet_10": {
+        "name": "Ich",
+        "text": "*반장이니까 미리 얘기 듣는 게 당연하다.*"
+    },
+    "day1_sea_meet_11": {
+        "name": "Han Sea",
+        "text": "\"교실 찾고 있었지? 따라와, 안내해줄게.\""
+    },
+    "day1_sea_meet_12": {
+        "name": "Ich",
+        "text": "\"고마워. 솔직히 건물이 커서 좀 헤매고 있었어.\""
+    },
+    "day1_sea_meet_13": {
+        "name": "Han Sea",
+        "text": "\"처음엔 다 그래. 나도 1학년 때 화장실 찾느라 건물 한 바퀴 돌았어.\""
+    },
+    "day1_sea_meet_14": {
+        "name": "Ich",
+        "text": "*세아가 앞서 걷는다. 복도를 지나면서 이것저것 알려준다.*"
+    },
+    "day1_sea_meet_15": {
+        "name": "Han Sea",
+        "text": "\"여기가 과학실이고, 저 끝이 음악실. 2층은 3학년이니까 볼 일 없을 거야.\""
+    },
+    "day1_sea_meet_16": {
+        "name": "Ich",
+        "text": "\"의외로 복잡하네.\""
+    },
+    "day1_sea_meet_17": {
+        "name": "Han Sea",
+        "text": "\"금방 익숙해져. 일주일이면 눈 감고도 다녀.\""
+    },
+    "day1_sea_meet_18": {
+        "name": "Han Sea",
+        "text": "\"아, 매점은 1층 끝에 있어. 점심시간에 줄이 길어지니까 미리 알아두면 좋아.\""
+    },
+    "day1_sea_meet_19": {
+        "name": "Ich",
+        "text": "\"와, 친절하다. 반장이라 그런 거야?\""
+    },
+    "day1_choco_1": {
+        "name": "Han Sea",
+        "text": "\"반장이라 그런 것도 있고...\""
+    },
+    "day1_choco_2": {
+        "name": "Ich",
+        "text": "*세아가 살짝 웃는다.*"
+    },
+    "day1_choco_3": {
+        "name": "Han Sea",
+        "text": "\"그냥 새로 온 애가 헤매고 있으면 도와주고 싶잖아.\""
+    },
+    "day1_choco_4": {
+        "name": "Ich",
+        "text": "*좋은 사람이다. 전학 첫날부터 이렇게 친절한 애를 만나다니.*"
+    },
+    "day1_choco_5": {
+        "name": "Ich",
+        "text": "*교실 가는 길에 세아가 가방에서 뭔가를 꺼낸다.*"
+    },
+    "day1_choco_6": {
+        "name": "Han Sea",
+        "text": "\"아 맞다, 이거. 초코우유 마시지?\""
+    },
+    "day1_choco_7": {
+        "name": "Ich",
+        "text": "*작은 초코우유 팩을 내민다.*"
+    },
+    "day1_choco_8": {
+        "name": "Ich",
+        "text": "*...초코우유? 좋아한다고 말한 적 없는데. 전 학교에서도 먹은 기억이 없다.*"
+    },
+    "day1_choco_9": {
+        "name": "Ich",
+        "text": "\"어? 고마운데... 이거 왜?\""
+    },
+    "day1_choco_choice": {
+        "name": "Han Sea",
+        "text": "\"너 긴장해서 아침 안 먹고 왔지? 빈속이면 더 떨려. 이거라도 마셔.\"",
+        "choices": [
+            "\"고마워, 잘 마실게.\"",
+            "\"...내가 이거 좋아하는 걸 어떻게 알아?\"",
+            "\"나 사실 딸기우유가 더 좋긴 한데.\""
+        ]
+    },
+    "day1_choco_accept_1": {
+        "name": "Ich",
+        "text": "*빨대를 꽂아서 마신다. 달다. 맛있다.*"
+    },
+    "day1_choco_accept_2": {
+        "name": "Ich",
+        "text": "\"맛있다. 고마워, 세아.\""
+    },
+    "day1_choco_accept_3": {
+        "name": "Han Sea",
+        "text": "\"맞지? 왠지 초코우유 좋아할 것 같았어.\""
+    },
+    "day1_choco_accept_4": {
+        "name": "Ich",
+        "text": "*왠지? 뭐, 대부분 좋아하긴 하지.*"
+    },
+    "day1_choco_question_1": {
+        "name": "Ich",
+        "text": "\"...잠깐, 내가 초코우유 좋아하는 거 어떻게 알아?\""
+    },
+    "day1_choco_question_2": {
+        "name": "Han Sea",
+        "text": "\"...그냥 느낌? 대부분 좋아하니까. 아니면 딸기로 바꿔줄까?\""
+    },
+    "day1_choco_question_3": {
+        "name": "Ich",
+        "text": "*순간 눈빛이 흔들린 것 같다. ...아닌가. 그냥 당황한 건가.*"
+    },
+    "day1_choco_question_4": {
+        "name": "Ich",
+        "text": "\"아니, 맞아. 좋아해. 고마워.\""
+    },
+    "day1_choco_question_5": {
+        "name": "Han Sea",
+        "text": "\"다행이다~\""
+    },
+    "day1_choco_question_6": {
+        "name": "Ich",
+        "text": "*세아가 웃는다. 아까의 눈빛은 착각이었겠지.*"
+    },
+    "day1_choco_joke_1": {
+        "name": "Ich",
+        "text": "\"나 사실 딸기우유파인데.\""
+    },
+    "day1_choco_joke_2": {
+        "name": "Han Sea",
+        "text": "\"아 진짜? 다음엔 딸기로 가져올게. 약속!\""
+    },
+    "day1_choco_joke_3": {
+        "name": "Ich",
+        "text": "\"아니야, 이것도 잘 마실게. 고마워.\""
+    },
+    "day1_choco_joke_4": {
+        "name": "Ich",
+        "text": "*초코우유를 마시면서 걷는다. 달달하다. 긴장이 좀 풀리는 것 같기도.*"
+    },
+    "day1_classroom_1": {
+        "name": "Ich",
+        "text": "*세아의 안내로 교실에 도착했다.*"
+    },
+    "day1_classroom_2": {
+        "name": "Han Sea",
+        "text": "\"여기야. 들어가자.\""
+    },
+    "day1_classroom_3": {
+        "name": "Ich",
+        "text": "*문을 열고 들어서니, 교실 안 학생들의 시선이 일제히 나를 향한다.*"
+    },
+    "day1_classroom_4": {
+        "name": "Ich",
+        "text": "*...긴장된다. 웅성웅성 소리가 들린다. '전학생이다' '어디서 왔대?' 이런 소리.*"
+    },
+    "day1_classroom_5": {
+        "name": "Han Sea",
+        "text": "\"자리는 저기 창가 쪽이야. 짐 먼저 내려놓을래? 담임 선생님 오시면 인사하면 돼.\""
+    },
+    "day1_classroom_6": {
+        "name": "Ich",
+        "text": "\"응, 고마워.\""
+    },
+    "day1_classroom_7": {
+        "name": "Ich",
+        "text": "*가방을 내려놓고 자리에 앉았다. 창가 자리다. 창밖으로 벚꽃이 보인다. 나쁘지 않다.*"
+    },
+    "day1_classroom_8": {
+        "name": "Ich",
+        "text": "*옆 자리 남학생이 슬쩍 말을 걸어온다.*"
+    },
+    "day1_classroom_9": {
+        "name": "Junge im Nebensitz",
+        "text": "\"야, 너 전학생? 어디서 왔어?\""
+    },
+    "day1_classroom_10": {
+        "name": "Ich",
+        "text": "\"○○고에서. 부모님 일 때문에.\""
+    },
+    "day1_classroom_11": {
+        "name": "Junge im Nebensitz",
+        "text": "\"아~ 그래? 여기 꽤 괜찮아. 급식도 맛있고, 선생님들도 괜찮고.\""
+    },
+    "day1_classroom_12": {
+        "name": "Ich",
+        "text": "\"다행이다. 잘 지낼 수 있을 것 같아.\""
+    },
+    "day1_eunsu_1": {
+        "name": "Ich",
+        "text": "*가벼운 수다를 떠는 사이, 교실 문이 열리고 담임선생님이 들어온다.*"
+    },
+    "day1_eunsu_2": {
+        "name": "Ich",
+        "text": "*안경을 쓴 젊은 남자 선생님. 부드러운 인상이다.*"
+    },
+    "day1_eunsu_3": {
+        "name": "Park Eunsu",
+        "text": "\"자, 여러분. 오늘 새로 전학 온 학생을 소개할게요.\""
+    },
+    "day1_eunsu_4": {
+        "name": "Ich",
+        "text": "*교실이 조용해진다.*"
+    },
+    "day1_eunsu_5": {
+        "name": "Park Eunsu",
+        "text": "\"{name} 학생, 나와서 인사해줄래요?\""
+    },
+    "day1_eunsu_6": {
+        "name": "Ich",
+        "text": "*칠판 앞에 서니 더 긴장된다. 30쌍의 눈이 나를 보고 있다.*"
+    },
+    "day1_eunsu_7": {
+        "name": "Park Eunsu",
+        "text": "\"기다리고 있었어요. 전학생은 정말 오래간만이거든요.\""
+    },
+    "day1_eunsu_8": {
+        "name": "Ich",
+        "text": "*...오래간만이라고? 이 학교에 전학생이 별로 안 오나 보다.*"
+    },
+    "day1_eunsu_9": {
+        "name": "Park Eunsu",
+        "text": "\"자, 자기소개 해볼까요?\""
+    },
+    "day1_eunsu_10": {
+        "name": "Ich",
+        "text": "\"안녕하세요. {name}입니다. ○○고에서 전학 왔습니다. 잘 부탁드립니다.\""
+    },
+    "day1_eunsu_11": {
+        "name": "Ich",
+        "text": "*짧게 끝냈다. 뭘 더 말해야 할지 모르겠다.*"
+    },
+    "day1_eunsu_12": {
+        "name": "Park Eunsu",
+        "text": "\"취미나 좋아하는 거 없어요? 친구들이 궁금해할 텐데.\""
+    },
+    "day1_eunsu_13": {
+        "name": "Ich",
+        "text": "\"음... 게임이랑 음악 듣는 거 좋아합니다.\""
+    },
+    "day1_eunsu_14": {
+        "name": "Ich",
+        "text": "*학생들이 웃는다. 평범한 대답이라서 그런가.*"
+    },
+    "day1_eunsu_15": {
+        "name": "Park Eunsu",
+        "text": "\"좋아요. 다들 잘 챙겨주세요. 자, {name}, 자리는 저기 창가 뒷줄이에요. 가서 앉으렴.\""
+    },
+    "day1_class_1": {
+        "name": "Ich",
+        "text": "*자리로 돌아간다. 세아가 엄지를 들어 보여준다. 은수 선생님이 따뜻하게 웃어준다.*"
+    },
+    "day1_class_2": {
+        "name": "Ich",
+        "text": "*...첫인사 치고 무난했다. 다행이다.*"
+    },
+    "day1_class_3": {
+        "name": "Ich",
+        "text": "*국어 시간이다. 은수 선생님이 직접 가르친다.*"
+    },
+    "day1_class_4": {
+        "name": "Park Eunsu",
+        "text": "\"자, 오늘은 현대시를 읽어볼게요. {name}, 전 학교에서 어디까지 했어요?\""
+    },
+    "day1_class_5": {
+        "name": "Ich",
+        "text": "\"비슷한 범위까지 했습니다.\""
+    },
+    "day1_class_6": {
+        "name": "Park Eunsu",
+        "text": "\"다행이다. 그럼 같이 따라오면 돼요.\""
+    },
+    "day1_class_7": {
+        "name": "Ich",
+        "text": "*수업을 듣는다. 은수 선생님은 설명을 재밌게 한다. 학생들도 집중하고 있다.*"
+    },
+    "day1_break_1": {
+        "name": "Ich",
+        "text": "*분위기 좋은 교실이다. 전 학교보다 조용하고 정돈된 느낌.*"
+    },
+    "day1_break_2": {
+        "name": "Ich",
+        "text": "*쉬는 시간. 몇몇 학생들이 말을 걸어온다.*"
+    },
+    "day1_break_3": {
+        "name": "Mädchen A",
+        "text": "\"전학생이라 궁금해서~ 전 학교는 어땠어?\""
+    },
+    "day1_break_4": {
+        "name": "Ich",
+        "text": "\"평범했어. 여기보다 건물이 좀 작고.\""
+    },
+    "day1_break_5": {
+        "name": "Mädchen A",
+        "text": "\"아~ 여긴 시설은 좋은데 주변에 놀 데가 없어서.\""
+    },
+    "day1_break_6": {
+        "name": "Junge B",
+        "text": "\"맞아 맞아. 학교 앞에 편의점이 전부야.\""
+    },
+    "day1_break_7": {
+        "name": "Ich",
+        "text": "*학생들이 가볍게 웃는다. 나쁘지 않은 분위기다. 적응할 수 있을 것 같다.*"
+    },
+    "day1_break_8": {
+        "name": "Ich",
+        "text": "*세아가 슬쩍 와서 옆에 앉는다.*"
+    },
+    "day1_break_9": {
+        "name": "Han Sea",
+        "text": "\"첫 수업 어때? 은수 선생님 좋지?\""
+    },
+    "day1_seolhwa_1": {
+        "name": "Ich",
+        "text": "\"응, 설명 잘하시더라.\""
+    },
+    "day1_seolhwa_2": {
+        "name": "Han Sea",
+        "text": "\"우리 반 담임이 저 분이라 운 좋은 거야. 학교에서 제일 인기 많으신 선생님이거든.\""
+    },
+    "day1_seolhwa_3": {
+        "name": "Ich",
+        "text": "*세아가 은수 선생님을 보며 웃는다. 존경하는 것 같다.*"
+    },
+    "day1_seolhwa_4": {
+        "name": "Ich",
+        "text": "*두 번째 수업이 시작되기 전. 자리에 앉아서 뒤를 슬쩍 봤다.*"
+    },
+    "day1_seolhwa_5": {
+        "name": "Ich",
+        "text": "*뒷자리에 누가 있다.*"
+    },
+    "day1_seolhwa_6": {
+        "name": "Ich",
+        "text": "*창백한 피부, 길고 검은 머리카락. 어딘가 먼 곳을 보는 듯한 눈.*"
+    },
+    "day1_seolhwa_choice": {
+        "name": "Ich",
+        "text": "*교실의 시끌벅적함과 동떨어진 존재감. 마치 이 소음이 그 애한테는 닿지 않는 것처럼.*",
+        "choices": [
+            "\"안녕, 나 {name}이야. 뒤에 앉게 됐네.\"",
+            "(지금은 수업에 집중하자)"
+        ]
+    },
+    "day1_seolhwa_greet_1": {
+        "name": "Ich",
+        "text": "*아까 자기소개할 때는 몰랐는데... 뒤에 사람이 있었구나.*"
+    },
+    "day1_seolhwa_greet_2": {
+        "name": "Lee Seolhwa",
+        "text": "\".......\""
+    },
+    "day1_seolhwa_greet_3": {
+        "name": "Ich",
+        "text": "*Keine Antwort. Unsere Blicke haben sich kurz gekreuzt, aber sie hat sofort weggeschaut. Scheint sehr schüchtern zu sein.*"
+    },
+    "day1_seolhwa_greet_4": {
+        "name": "Sitznachbar",
+        "text": "\"Hey, Neuer. Was guckst du denn da?\""
+    },
+    "day1_seolhwa_greet_5": {
+        "name": "Ich",
+        "text": "\"Nichts, ich hab nur die hinter mir begrüßt.\""
+    },
+    "day1_seolhwa_greet_6": {
+        "name": "Sitznachbar",
+        "text": "\"Ach, die? Die ist so still, dass ich gar nicht gemerkt hab, dass sie da sitzt.\""
+    },
+    "day1_seolhwa_greet_7": {
+        "name": "Ich",
+        "text": "*...Wirklich? Ich schaue noch einmal nach hinten. Das Mädchen sitzt... immer noch da. Derselbe Gesichtsausdruck.*"
+    },
+    "day1_seolhwa_greet_8": {
+        "name": "Ich",
+        "text": "*Einfach der Typ Mensch, der nicht auffällt, schätze ich.*"
+    },
+    "day1_seolhwa_greet_9": {
+        "name": "Ich",
+        "text": "*...Ist das ein Witz? Den Neuen verarschen? Naja, wird wohl so was sein.*"
+    },
+    "day1_seolhwa_greet_10": {
+        "name": "Ich",
+        "text": "*Vergiss es. Es ist der erste Tag, kein Grund, Ärger zu suchen.*"
+    },
+    "day1_seolhwa_greet_11": {
+        "name": "Junge im Nebensitz",
+        "text": "\"너무 조용해서 있는지도 모를 때가 있다.\""
+    },
+    "day1_seolhwa_greet_12": {
+        "name": "Ich",
+        "text": "\"...그렇구나.\""
+    },
+    "day1_seolhwa_greet_13": {
+        "name": "Ich",
+        "text": "*뒤를 다시 돌아본다. 설화는... 지금도 거기 앉아 있다. 같은 표정으로. 창밖만 보고 있다.*"
+    },
+    "day1_seolhwa_greet_14": {
+        "name": "Ich",
+        "text": "*그냥 내성적인 타입인가 보다. 다음에 다시 말 걸어봐야지.*"
+    },
+    "day1_seolhwa_greet_15": {
+        "name": "Ich",
+        "text": "*...그런데 아까 수업 시작할 때 출석 부를 때, 설화 이름이 불린 걸 들은 기억이 없다. 잘못 들은 건가.*"
+    },
+    "day1_seolhwa_skip": {
+        "name": "Ich",
+        "text": "*Konzentrieren wir uns auf den Unterricht.*"
+    },
+    "day1_morning_end": {
+        "name": "Ich",
+        "text": "*Der Vormittagsunterricht ist vorbei. Pause.*"
+    }
 }

@@ -3,7 +3,10 @@
         "name": "Yo",
         "text": "*...*"
     },
-
+    "day5_after_branch": {
+        "name": "",
+        "text": ""
+    },
     "day5_after_escaped": {
         "name": "Yo",
         "text": "*Fuera de la escuela. Está lloviendo. Por primera vez... estoy respirando aire fuera de estos muros.*"
@@ -16,21 +19,57 @@
         "name": "Yo",
         "text": "*Solo. Pero vivo.*"
     },
-    "day5_after_escaped_solo": {
+    "day5_after_escaped_4": {
         "name": "Yo",
-        "text": "*Dejé a Yuna atrás. ...Lo siento.*"
+        "text": "*Estas pruebas tienen que llegar al mundo. Ahora mismo.*"
     },
-    "day5_after_escaped_branch": {
-        "name": "Choi Yuna",
-        "text": "\"¡Senpai...! Lo... logramos...\""
+    "day5_after_escaped_5": {
+        "name": "Yo",
+        "text": "*비가 내리고 있다. 빗방울이 얼굴을 때린다. 차갑다. 하지만 이 차가움이... 살아있다는 증거다.*"
+    },
+    "day5_after_escaped_6": {
+        "name": "Yo",
+        "text": "*처음으로... 이 학교에 온 뒤로 처음으로, 학교 밖 공기를 마신다.*"
+    },
+    "day5_after_escaped_7": {
+        "name": "Yo",
+        "text": "*숨을 들이쉬었다. 깊게. 폐가 터질 것 같을 만큼. ...냄새가 다르다. 소독약 냄새가 아니다. 벚꽃 냄새가 아니다. 그냥 비 냄새. 흙 냄새. 세상의 냄새.*"
+    },
+    "day5_after_escaped_8": {
+        "name": "Yo",
+        "text": "*뛰었다. 어디로든. 이 학교에서 최대한 멀리. 다리가 떨린다. 무릎이 풀린다. 그래도 뛴다.*"
+    },
+    "day5_after_escaped_yuna_branch": {
+        "name": "",
+        "text": ""
     },
     "day5_after_escaped_yuna": {
         "name": "Yo",
         "text": "*Yuna está llorando. Yo también.*"
     },
-    "day5_after_escaped_4": {
+    "day5_after_escaped_yuna_2": {
         "name": "Yo",
-        "text": "*Estas pruebas tienen que llegar al mundo. Ahora mismo.*"
+        "text": "*뛰다가 멈췄다. 학교에서 충분히 멀어진 뒤에. 가로등 밑에서.*"
+    },
+    "day5_after_escaped_yuna_3": {
+        "name": "Choi Yuna",
+        "text": "\"선배...\""
+    },
+    "day5_after_escaped_yuna_4": {
+        "name": "Choi Yuna",
+        "text": "\"우리 나왔어요...\""
+    },
+    "day5_after_escaped_yuna_5": {
+        "name": "Yo",
+        "text": "\"나왔어. 나왔어, 유나.\""
+    },
+    "day5_after_escaped_solo": {
+        "name": "Yo",
+        "text": "*Dejé a Yuna atrás. ...Lo siento.*"
+    },
+    "day5_after_escaped_solo_2": {
+        "name": "Yo",
+        "text": "*멈출 수 없다. 아직 충분히 멀지 않다. 더. 더 멀리.*"
     },
     "day5_after_escaped_choice": {
         "name": "Yo",
@@ -56,7 +95,6 @@
         "name": "Yo",
         "text": "*Subida completa. ...Pronto el mundo lo sabrá.*"
     },
-
     "day5_after_captured": {
         "name": "Yo",
         "text": "*...Abrí los ojos. El sótano. Luces fluorescentes parpadeando.*"
@@ -81,6 +119,34 @@
             "Aceptarlo"
         ]
     },
+    "day5_after_captured_6": {
+        "name": "Park Eunsu",
+        "text": "\"...도망치려고 했어? 선생님이 얼마나 걱정했는지 알아?\""
+    },
+    "day5_after_captured_7": {
+        "name": "Kang Riin",
+        "text": "\"마지막 검진 준비할게.\""
+    },
+    "day5_after_captured_8": {
+        "name": "Kang Riin",
+        "text": "\"채혈이랑 수액만 연결하면 끝나. 이번이 마지막이야.\""
+    },
+    "day5_after_captured_9": {
+        "name": "Yo",
+        "text": "*'마지막'. 그 단어가 무겁다. 이게 끝나면... 어떻게 되는 거지? 설화처럼?*"
+    },
+    "day5_after_captured_10": {
+        "name": "Yo",
+        "text": "*리인 선생님이 팔꿈치 안쪽을 소독한다. 알코올 솜의 차가움이 피부에 닿는다. ...여기서 포기하면 안 된다. 아직 끝나지 않았다.*"
+    },
+    "day5_after_captured_choice": {
+        "name": "Yo",
+        "text": "*...어떻게 할까.*",
+        "choices": [
+            "저항한다",
+            "받아들인다"
+        ]
+    },
     "day5_after_captured_resist": {
         "name": "Yo",
         "text": "*¡Volcé la silla! Levantándome con las manos atadas.*"
@@ -93,6 +159,30 @@
         "name": "Yo",
         "text": "*Apagón repentino. El sótano se sume en la oscuridad. En el caos... encontré la salida.*"
     },
+    "day5_after_captured_resist_4": {
+        "name": "Yo",
+        "text": "*그 순간. 전기가 나갔다.*"
+    },
+    "day5_after_captured_resist_5": {
+        "name": "Park Eunsu",
+        "text": "\"...뭐야?\""
+    },
+    "day5_after_captured_resist_6": {
+        "name": "Kang Riin",
+        "text": "\"정전? 이 시간에?\""
+    },
+    "day5_after_captured_resist_7": {
+        "name": "Yo",
+        "text": "*어둠 속에서... 손이 느껴진다. 차갑고 투명한 손. 가죽 끈을 풀어주고 있다.*"
+    },
+    "day5_after_captured_resist_8": {
+        "name": "Yo",
+        "text": "*...설화. 끈이 풀렸다. 설화가 내 손을 잡는다. 투명한 손이라 잡히지 않을 줄 알았는데... 잡힌다.*"
+    },
+    "day5_after_captured_resist_9": {
+        "name": "Yo",
+        "text": "*어둠 속에서 끌려간다. 발소리를 죽이며. 비상구를 향해.*"
+    },
     "day5_after_captured_submit": {
         "name": "Enfermera",
         "text": "\"Bien. Acabará pronto. Lo olvidarás todo.\""
@@ -101,7 +191,14 @@
         "name": "Yo",
         "text": "*La aguja toca mi brazo. La conciencia... se desvanece...*"
     },
-
+    "day5_after_captured_submit_3": {
+        "name": "Yo",
+        "text": "*...따뜻해진다. 몸이 녹는 것 같다. 생각이 흐려진다.*"
+    },
+    "day5_after_captured_submit_4": {
+        "name": "Yo",
+        "text": "*뭔가를... 잊고 있다. 뭘 잊고 있지? 중요한 건데... 뭐였지...*"
+    },
     "day5_after_stayed": {
         "name": "Tutora",
         "text": "\"...Tomaste la decisión correcta, {name}. Así es como debe ser.\""
@@ -118,7 +215,30 @@
         "name": "Yo",
         "text": "*La profesora Eunsu está sonriendo. Una sonrisa cálida. ...¿Siempre fue esta sonrisa tan aterradora?*"
     },
-
+    "day5_after_stayed_5": {
+        "name": "Park Eunsu",
+        "text": "\"선생님이 다 지켜줄게. 아무것도 걱정할 필요 없어.\""
+    },
+    "day5_after_stayed_6": {
+        "name": "Yo",
+        "text": "*자리에 앉았다. 세아가 내 옆에 앉는다. 리인 선생님이 차를 건넨다.*"
+    },
+    "day5_after_stayed_7": {
+        "name": "Park Eunsu",
+        "text": "\"...{name}은 선생님 곁에 있으면 돼. 영원히.\""
+    },
+    "day5_after_stayed_8": {
+        "name": "Yo",
+        "text": "*은수 선생님이 웃고 있다. 따뜻한 미소.*"
+    },
+    "day5_after_stayed_9": {
+        "name": "Yo",
+        "text": "*...이 미소가 항상 이렇게 무서웠던가. 아니. 무섭지 않다. ...무섭지 않다. ...왜 무섭지 않지?*"
+    },
+    "day5_after_stayed_10": {
+        "name": "Yo",
+        "text": "*차를 마셨다. 따뜻하다. 좋다. ...뭔가 잊고 있는 것 같은데. 뭐였지. ...괜찮다. 잊어도 된다. 여기는 안전하니까.*"
+    },
     "day5_after_end": {
         "name": "Yo",
         "text": "*...*"

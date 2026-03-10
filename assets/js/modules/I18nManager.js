@@ -40,6 +40,7 @@ class I18nManager {
     /**
      * 특정 Day의 텍스트 로드 (모든 시간대 파일 병합)
      * day1_morning.json + day1_lunch.json + day1_afterschool.json + day1_night.json → texts["day1"]
+     * 번역 미완료 항목은 ko 원문으로 폴백
      * @param {number} day - 1~5
      */
     async loadDay(day) {
@@ -47,22 +48,47 @@ class I18nManager {
         if (this.loaded[key]) return;
 
         const slots = ['_morning', '_lunch', '_afterschool', '_night'];
-        const basePath = `assets/js/i18n/${this.currentLang}`;
         this.texts[key] = {};
 
-        const fetches = slots.map(async (slot) => {
-            const filename = `day${day}${slot}.json`;
-            try {
-                const res = await fetch(`${basePath}/${filename}`);
-                if (!res.ok) return;
-                const data = await res.json();
-                Object.assign(this.texts[key], data);
-            } catch (e) {
-                // Slot file may not exist for all days — that's fine
-            }
-        });
+        // ko를 베이스로 먼저 로드 (번역 미완료 항목 폴백용)
+        if (this.currentLang !== 'ko') {
+            const koFetches = slots.map(async (slot) => {
+                const filename = `day${day}${slot}.json`;
+                try {
+                    const res = await fetch(`assets/js/i18n/ko/${filename}`);
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    Object.assign(this.texts[key], data);
+                } catch (e) {}
+            });
+            await Promise.all(koFetches);
+        }
 
-        await Promise.all(fetches);
+        // 대상 언어로 오버레이 (번역된 항목만 덮어씀)
+        if (this.currentLang !== 'ko') {
+            const fetches = slots.map(async (slot) => {
+                const filename = `day${day}${slot}.json`;
+                try {
+                    const res = await fetch(`assets/js/i18n/${this.currentLang}/${filename}`);
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    Object.assign(this.texts[key], data);
+                } catch (e) {}
+            });
+            await Promise.all(fetches);
+        } else {
+            const fetches = slots.map(async (slot) => {
+                const filename = `day${day}${slot}.json`;
+                try {
+                    const res = await fetch(`assets/js/i18n/ko/${filename}`);
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    Object.assign(this.texts[key], data);
+                } catch (e) {}
+            });
+            await Promise.all(fetches);
+        }
+
         this.loaded[key] = true;
     }
 

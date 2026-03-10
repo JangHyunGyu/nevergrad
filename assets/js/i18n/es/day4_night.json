@@ -11,7 +11,6 @@
         "name": "Yo",
         "text": "*Mi teléfono suena.*"
     },
-
     "day4_night_phone": {
         "name": "Yo",
         "text": "*Sea: '¡{name}, mañana vayamos juntos! ¿Prometido?'*\n*Sea: 'Prometido.'*\n*Sea: 'Prometido.'*"
@@ -24,28 +23,42 @@
         "name": "Yo",
         "text": "*...Quiero apagar el teléfono. Pero eso las haría sospechar más.*"
     },
-
-    "day4_night_eunsu_crack": {
+    "day4_night_phone_4": {
         "name": "Yo",
-        "text": "*...Suena el teléfono. Es la profesora Park.*"
+        "text": "*1분 후. 세아: '약속이야.'*"
     },
-    "day4_night_eunsu_crack_2": {
-        "name": "Tutora",
-        "text": "\"...{name}. Mañana... ven sin falta. La profesora te estará esperando.\""
-    },
-    "day4_night_eunsu_crack_3": {
-        "name": "Tutora",
-        "text": "\"......La profesora también... sinceramente tiene miedo. De cuánto tiempo más tendrá que seguir con esto...\""
-    },
-    "day4_night_eunsu_crack_4": {
-        "name": "Tutora",
-        "text": "\"...No, olvídalo. No es nada. Nos vemos mañana, {name}.\""
-    },
-    "day4_night_eunsu_crack_5": {
+    "day4_night_phone_5": {
         "name": "Yo",
-        "text": "*...Se cortó la llamada. La voz de la profesora Park estaba temblando. Ella también... ¿no puede escapar de esto?*"
+        "text": "*30초 후. 세아: '약속이야.'*"
     },
-
+    "day4_night_phone_6": {
+        "name": "Yo",
+        "text": "*15초 후. 세아: '약속이야?????'*"
+    },
+    "day4_night_phone_7": {
+        "name": "Yo",
+        "text": "*...같은 말이 반복되고 있다. 타임스탬프 간격이 점점 짧아진다.*"
+    },
+    "day4_night_phone_8": {
+        "name": "Yo",
+        "text": "*세아: '내일 아침에 교문에서 기다릴게'*"
+    },
+    "day4_night_phone_9": {
+        "name": "Yo",
+        "text": "*세아: '꼭 와야 해' 세아: '꼭'*"
+    },
+    "day4_night_phone_10": {
+        "name": "Yo",
+        "text": "*...읽지 않았다. 핸드폰을 뒤집어 놓았다. 진동이 계속 울린다. 탁. 탁. 탁.*"
+    },
+    "day4_night_phone_11": {
+        "name": "Yo",
+        "text": "*은수 선생님에게서도 메시지가 왔다. 은수 선생님: '내일 조금 일찍 와줄 수 있을까? 할 이야기가 있어.'*"
+    },
+    "day4_night_phone_12": {
+        "name": "Yo",
+        "text": "*은수 선생님: '{name}한테 해주고 싶은 이야기가 있거든. 중요한 거야.' ...중요한 이야기. 무슨 이야기? '최종 처리'에 대한 이야기? 핸드폰을 서랍에 넣었다. 진동 소리가 서랍 안에서 웅웅거린다.*"
+    },
     "day4_night_plan": {
         "name": "Yo",
         "text": "*Déjame organizar esto. Esta escuela está experimentando con estudiantes de intercambio.*"
@@ -54,17 +67,49 @@
         "name": "Yo",
         "text": "*La profesora Eunsu 'gestiona' a los estudiantes de intercambio, Riin administra las drogas, y Sea... ¿vigilancia? ¿O algo más?*"
     },
-    "day4_night_plan_branch": {
-        "name": "Yo",
-        "text": "*Tengo suficientes pruebas. Tarjeta de memoria, fotos de documentos, el laboratorio subterráneo... Solo necesito hacer llegar esto al exterior.*"
-    },
-    "day4_night_plan_branch_alt": {
-        "name": "Yo",
-        "text": "*No tengo suficientes pruebas. Pero ya no queda tiempo para esperar.*"
-    },
     "day4_night_plan_3": {
         "name": "Yo",
         "text": "*Mañana. ¿Qué hago?*"
+    },
+    "day4_night_plan_4": {
+        "name": "Yo",
+        "text": "*둘. 은수 선생님이 총괄한다. 전학생 선별, 관리, 최종 처리 판단.*"
+    },
+    "day4_night_plan_5": {
+        "name": "Yo",
+        "text": "*셋. 리인은 약물을 담당한다. 기억 조작 약. 진정제. 주사.*"
+    },
+    "day4_night_plan_6": {
+        "name": "Yo",
+        "text": "*넷. 세아는 감시자다. 전학생에게 접근해서 행동을 보고한다. 하지만... 세아 자신도 이 학교에 갇혀있다.*"
+    },
+    "day4_night_plan_7": {
+        "name": "Yo",
+        "text": "*다섯. 유나는 내부 저항자다. 증거를 모으고 있었다. 발각돼서 지하실에 감금됐다.*"
+    },
+    "day4_night_plan_8": {
+        "name": "Yo",
+        "text": "*여섯. 설화는 1년 전 피험자 #7. 실험에 저항했다가 '처리'됐다. 유령이 됐다.*"
+    },
+    "day4_night_plan_9": {
+        "name": "Yo",
+        "text": "*일곱. 나는 피험자 #13. 5일째가 마지막이다. 내일.*"
+    },
+    "day4_night_plan_10": {
+        "name": "Yo",
+        "text": "*펜을 놓았다. 손이 떨려서 글씨가 삐뚤삐뚤하다.*"
+    },
+    "day4_night_plan_11": {
+        "name": "Yo",
+        "text": "*...내일. 내일이 5일째. 설화가 말한 '마지막 날'.*"
+    },
+    "day4_night_plan_12": {
+        "name": "Yo",
+        "text": "*어떻게 해야 하지?*"
+    },
+    "day4_night_plan_13": {
+        "name": "Yo",
+        "text": "*최종 계획을 세운다.*"
     },
     "day4_night_plan_choice": {
         "name": "Yo",
@@ -79,15 +124,42 @@
         "name": "Yo",
         "text": "*Mañana, encontraré un hueco y saldré de la escuela. Necesito llevarme a Yuna también.*"
     },
+    "day4_night_plan_escape_2": {
+        "name": "Yo",
+        "text": "*정문은 안 된다. 감시당하고 있다. 안전 앱 — GPS 추적. 교문 — 은수 선생님이 지키고 있다. 구관 비상구? 유나가 뭔가 알고 있을 수도 있다. 유나를 구했다면... 같이 나갈 수 있다.*"
+    },
+    "day4_night_plan_escape_3": {
+        "name": "Yo",
+        "text": "*증거는 핸드폰에 저장해뒀다. 밖에 나가면 바로 경찰에 신고한다.*"
+    },
     "day4_night_plan_expose": {
         "name": "Yo",
         "text": "*Subir las pruebas a internet. Denunciar a la policía. Que el mundo conozca la verdad sobre esta escuela.*"
+    },
+    "day4_night_plan_expose_2": {
+        "name": "Yo",
+        "text": "*문제는 통신이다. 학교 와이파이는 감시당하고 있을 거다. 데이터는... 안전 앱이 모니터링하고 있을 수도. 밖에 나가서 공중 와이파이를 쓰거나... 아니면 USB에 담아서 누군가에게 전달하거나.*"
     },
     "day4_night_plan_confront": {
         "name": "Yo",
         "text": "*La profesora Eunsu, Riin, Sea... Las enfrentaré directamente. Les preguntaré por qué hacen esto.*"
     },
-
+    "day4_night_plan_confront_2": {
+        "name": "Yo",
+        "text": "*...무모한 건 알고 있다. 하지만 세아도, 리인도, 어쩌면 은수 선생님도... 이 상황에서 빠져나오고 싶어하는 건 아닐까? 아니면 그건 내 착각일 수도 있다.*"
+    },
+    "day4_night_sleep": {
+        "name": "Yo",
+        "text": "*...계획을 세웠다. 이게 최선인지는 모르겠다. 하지만 아무것도 안 하면 설화처럼 된다.*"
+    },
+    "day4_night_sleep_2": {
+        "name": "Yo",
+        "text": "*불을 끄고 누웠다. 잠이 올 리 없다. 천장을 바라본다. 시계가 째깍거린다.*"
+    },
+    "day4_night_sleep_3": {
+        "name": "Yo",
+        "text": "*...언제 잠이 들었는지 모르겠다.*"
+    },
     "day4_night_seolhwa": {
         "name": "Yo",
         "text": "*Me quedo dormido. ...No, ni siquiera sé si me dormí. Al abrir los ojos, estoy en la escuela. Pero algo no está bien. Todo está ligeramente desplazado. Los colores están desvaídos, y el reloj gira al revés.*"
@@ -132,7 +204,158 @@
         "name": "Yo",
         "text": "*...Abrí los ojos. Estoy empapado en sudor frío. ...No fue un sueño. No, fue un sueño, pero... fue real.*"
     },
-
+    "day4_night_seolhwa_12": {
+        "name": "Yo",
+        "text": "*같은 미소. 같은 말투. ...1년이 지나도 변하지 않는 대본. 바늘이 들어간다. 차가운 액체가 혈관을 타고 퍼진다. 시야가 흐려진다. 장면이 바뀐다.*"
+    },
+    "day4_night_seolhwa_13": {
+        "name": "Yo",
+        "text": "*교무실. 은수가 서류를 정리하고 있다. 설화가 — 내가 — 문 앞에 서 있다. 몰래 보고 있다. 서류 제목이 보인다. '피험자 #7 — 최종 보고서'*"
+    },
+    "day4_night_seolhwa_14": {
+        "name": "Yo",
+        "text": "*내용이 읽힌다. 글씨가 흐릿하다. 약물 때문에. 하지만 단어들이 머릿속에 박힌다.*"
+    },
+    "day4_night_seolhwa_15": {
+        "name": "Yo",
+        "text": "*\"기억 재구성 프로토콜 ver.3.8... 피험자 #7 이설화...\"*"
+    },
+    "day4_night_seolhwa_16": {
+        "name": "Yo",
+        "text": "*\"4일차까지 정상 진행... 5일차 ██실패██...\"*"
+    },
+    "day4_night_seolhwa_17": {
+        "name": "Yo",
+        "text": "*\"역효과 발생. 피험자가 오히려 ██모든 기억██을 보유... 약물 저항성 확인...\"*"
+    },
+    "day4_night_seolhwa_18": {
+        "name": "Yo",
+        "text": "*\"격리 불가 판단... **5일차 23:00 최종 처리 집행**...\" ...최종 처리. 그게 무슨 뜻인지, 설화의 몸이 알고 있다. 공포가 밀려온다. 설화의 공포가 내 것이 된다. 장면이 또 바뀐다.*"
+    },
+    "day4_night_seolhwa_19": {
+        "name": "Yo",
+        "text": "*지하실. 형광등이 깜빡인다. 의자에 묶여 있다. 가죽 끈이 팔목을 조인다. 은수가 서 있다. 표정이... 지금과 같다. 피곤하고 복잡한 표정.*"
+    },
+    "day4_night_seolhwa_20": {
+        "name": "Park Eunsu",
+        "text": "\"미안해, 설화.\""
+    },
+    "day4_night_seolhwa_21": {
+        "name": "Yo",
+        "text": "*은수가 한 발 다가온다.*"
+    },
+    "day4_night_seolhwa_22": {
+        "name": "Park Eunsu",
+        "text": "\"...아프지 않게 해줄게. 다 끝나면 편해질 거야.\""
+    },
+    "day4_night_seolhwa_23": {
+        "name": "Yo",
+        "text": "*은수의 뒤에서 리인이 주사기를 들고 다가온다.*"
+    },
+    "day4_night_seolhwa_24": {
+        "name": "Park Eunsu",
+        "text": "\"금방이야. 눈 감고 있으면 돼. ...선생님을 믿어.\""
+    },
+    "day4_night_seolhwa_25": {
+        "name": "Yo",
+        "text": "*설화가 — 내가 — 소리를 질렀다. 하지만 목소리가 나오지 않는다. 주사기가 팔에 닿는다. 차갑다. 액체가 들어온다. 시야가 하얘진다. 하얗게. 하얗게. ...그리고 어둠.*"
+    },
+    "day4_night_seolhwa_26": {
+        "name": "Yo",
+        "text": "*...어둠 속에서 빛이 스며든다. 설화가 서 있다. 처음 보는 표정이다. 슬프지만... 결연한 눈. 각오를 굳힌 눈. 투명한 손이 주먹을 쥐고 있다. 손가락 사이로 빛이 비쳐 보인다.*"
+    },
+    "day4_night_seolhwa_27": {
+        "name": "Lee Seolhwa",
+        "text": "\"...이제 알겠지?\""
+    },
+    "day4_night_seolhwa_28": {
+        "name": "Lee Seolhwa",
+        "text": "\"나한테 일어난 일. 전부.\""
+    },
+    "day4_night_seolhwa_29": {
+        "name": "Yo",
+        "text": "*설화의 목소리가 또렷하다. 꿈속이지만... 진짜 목소리다.*"
+    },
+    "day4_night_seolhwa_30": {
+        "name": "Lee Seolhwa",
+        "text": "\"5일차 밤 11시. 그때 '최종 처리'를 한대.\""
+    },
+    "day4_night_seolhwa_31": {
+        "name": "Lee Seolhwa",
+        "text": "\"나도 그랬어. 5일째 밤에... 끝났어.\""
+    },
+    "day4_night_seolhwa_32": {
+        "name": "Yo",
+        "text": "*설화가 나를 본다. 진지한 눈.*"
+    },
+    "day4_night_seolhwa_33": {
+        "name": "Lee Seolhwa",
+        "text": "\"**내일 밤이야.** {name}한테 남은 시간.\""
+    },
+    "day4_night_seolhwa_34": {
+        "name": "Lee Seolhwa",
+        "text": "\"...유나를 지켜줘. 유나는... 나처럼 되면 안 돼.\""
+    },
+    "day4_night_seolhwa_35": {
+        "name": "Yo",
+        "text": "*설화의 입이 떨린다. 울음을 참고 있다.*"
+    },
+    "day4_night_seolhwa_36": {
+        "name": "Lee Seolhwa",
+        "text": "\"...그리고.\""
+    },
+    "day4_night_seolhwa_37": {
+        "name": "Yo",
+        "text": "*설화가 내 손을 잡으려고 한다. 투명한 손이 내 손을 스쳐 지나간다. 잡히지 않는다.*"
+    },
+    "day4_night_seolhwa_38": {
+        "name": "Lee Seolhwa",
+        "text": "\"구관 3층. 비상구. ...내가 찾아뒀던 길이야.\""
+    },
+    "day4_night_seolhwa_39": {
+        "name": "Lee Seolhwa",
+        "text": "\"나는 그 길로 나가지 못했지만... {name}은 나갈 수 있을 거야.\""
+    },
+    "day4_night_seolhwa_40": {
+        "name": "Yo",
+        "text": "*설화의 모습이 가장자리부터 노이즈처럼 흩어지기 시작한다.*"
+    },
+    "day4_night_seolhwa_41": {
+        "name": "Lee Seolhwa",
+        "text": "\"...살아서 나가.\""
+    },
+    "day4_night_seolhwa_42": {
+        "name": "Yo",
+        "text": "*설화가 웃었다. 마지막 웃음. 눈물 없이, 결연하게. 빛이 흩어진다. 설화가 흩어진다. 꿈이 흩어진다.*"
+    },
+    "day4_night_seolhwa_43": {
+        "name": "Yo",
+        "text": "*—!*"
+    },
+    "day4_night_wake": {
+        "name": "Yo",
+        "text": "*눈을 떴다. 식은땀이 흠뻑이다. 이불이 젖어있다.*"
+    },
+    "day4_night_wake_2": {
+        "name": "Yo",
+        "text": "*시계. 새벽 3시 41분. 심장이 목구멍까지 올라온 것 같다.*"
+    },
+    "day4_night_wake_3": {
+        "name": "Yo",
+        "text": "*꿈이었다. 하지만... 꿈이 아니었다. 설화의 공포를 직접 느꼈다. 주사기의 차가움을. 가죽 끈의 조임을. '최종 처리'의 의미를.*"
+    },
+    "day4_night_wake_4": {
+        "name": "Yo",
+        "text": "***내일 밤 11시. 그때까지 이 학교에서 나가야 한다.***"
+    },
+    "day4_night_wake_5": {
+        "name": "Yo",
+        "text": "*구관 3층 비상구. 설화가 찾아뒀던 길.*"
+    },
+    "day4_night_wake_6": {
+        "name": "Yo",
+        "text": "*...가방을 챙겼다. 증거. 핸드폰. 충전기. 최소한의 짐. ...내일이다. 마지막 날.*"
+    },
     "day4_night_end": {
         "name": "Yo",
         "text": "*Día 5. El último día.*"

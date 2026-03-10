@@ -4,6 +4,7 @@
             "id": "day3_after_start",
             "background": "classroom",
             "bgm": "tension_low",
+            "sunset": true,
             "next": "day3_after_choice"
         },
         {
@@ -40,8 +41,8 @@
             "background": "nurse_office",
             "next": "day3_after_riin_2"
         },
-        { "id": "day3_after_riin_2", "next": "day3_after_riin_3" },
-        { "id": "day3_after_riin_3", "next": "day3_after_riin_flicker" },
+        { "id": "day3_after_riin_2", "character": "riin_smile", "next": "day3_after_riin_3" },
+        { "id": "day3_after_riin_3", "character": "riin_cold", "next": "day3_after_riin_flicker" },
         {
             "id": "day3_after_riin_flicker",
             "type": "glitch",
@@ -57,7 +58,7 @@
                     "index": 0,
                     "next": "day3_after_riin_drink",
                     "stats": { "riin": { "control": 3 } },
-                    "flag": "day3_after_drank_riin"
+                    "flag": "drank_riin_drink"
                 },
                 {
                     "index": 1,
@@ -77,7 +78,7 @@
             "background": "student_council",
             "next": "day3_after_sea_2"
         },
-        { "id": "day3_after_sea_2", "next": "day3_after_sea_choice" },
+        { "id": "day3_after_sea_2", "character": "sea_serious", "next": "day3_after_sea_choice" },
         {
             "id": "day3_after_sea_choice",
             "type": "choice",
@@ -94,13 +95,13 @@
                 }
             ]
         },
-        { "id": "day3_after_sea_truth", "next": "day3_after_sea_truth_2" },
-        { "id": "day3_after_sea_truth_2", "next": "day3_after_sea_truth_3" },
-        { "id": "day3_after_sea_truth_3", "next": "day3_after_sea_truth_4" },
-        { "id": "day3_after_sea_truth_4", "next": "day3_after_sea_truth_5" },
-        { "id": "day3_after_sea_truth_5", "next": "day3_after_sea_truth_6" },
-        { "id": "day3_after_sea_truth_6", "next": "day3_after_sea_truth_7" },
-        { "id": "day3_after_sea_truth_7", "next": "day3_after_end" },
+        { "id": "day3_after_sea_truth", "character": "sea_serious", "next": "day3_after_sea_truth_2" },
+        { "id": "day3_after_sea_truth_2", "character": "sea_serious", "next": "day3_after_sea_truth_3" },
+        { "id": "day3_after_sea_truth_3", "character": "sea_dark", "next": "day3_after_sea_truth_4" },
+        { "id": "day3_after_sea_truth_4", "character": "sea_serious", "next": "day3_after_sea_truth_5" },
+        { "id": "day3_after_sea_truth_5", "character": "sea_serious", "next": "day3_after_sea_truth_6" },
+        { "id": "day3_after_sea_truth_6", "character": "sea_serious", "next": "day3_after_sea_truth_7" },
+        { "id": "day3_after_sea_truth_7", "character": "sea_serious", "next": "day3_after_end" },
         { "id": "day3_after_sea_lie", "next": "day3_after_sea_lie_2" },
         { "id": "day3_after_sea_lie_2", "next": "day3_after_end" },
         {
@@ -108,8 +109,8 @@
             "background": "teacher_office",
             "next": "day3_after_eunsu_2"
         },
-        { "id": "day3_after_eunsu_2", "next": "day3_after_eunsu_3" },
-        { "id": "day3_after_eunsu_3", "next": "day3_after_eunsu_choice" },
+        { "id": "day3_after_eunsu_2", "character": "eunsu_smile", "next": "day3_after_eunsu_3" },
+        { "id": "day3_after_eunsu_3", "character": "eunsu_smile", "next": "day3_after_eunsu_choice" },
         {
             "id": "day3_after_eunsu_choice",
             "type": "choice",
@@ -125,8 +126,8 @@
                 }
             ]
         },
-        { "id": "day3_after_eunsu_peek", "next": "day3_after_eunsu_peek_2" },
-        { "id": "day3_after_eunsu_peek_2", "next": "day3_after_eunsu_peek_3" },
+        { "id": "day3_after_eunsu_peek", "character": "eunsu_smile", "next": "day3_after_eunsu_peek_2" },
+        { "id": "day3_after_eunsu_peek_2", "character": "eunsu_smile", "evidence": {"id": "management_ledger", "name": "전학생 관리 대장"}, "flag": "saw_management_ledger", "next": "day3_after_eunsu_peek_3" },
         { "id": "day3_after_eunsu_peek_3", "next": "day3_after_eunsu_peek_4" },
         { "id": "day3_after_eunsu_peek_4", "next": "day3_after_eunsu_peek_5" },
         { "id": "day3_after_eunsu_peek_5", "next": "day3_after_eunsu_peek_6" },

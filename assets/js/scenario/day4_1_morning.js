@@ -62,6 +62,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_morning_gate_2"
     },
     "day4_morning_gate_2": {
+        glitch: { noise: true, noiseDuration: 150 },
         next: "day4_morning_gate_3"
     },
     "day4_morning_gate_3": {
@@ -147,6 +148,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_morning_classroom_4"
     },
     "day4_morning_classroom_4": {
+        glitch: { silence: true, silenceDuration: 1500 },
         next: "day4_morning_classroom_5"
     },
     "day4_morning_classroom_5": {
@@ -193,14 +195,17 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_class_5": {
         // 은수가 주인공을 지목
+        unskippable: true,
         next: "day4_morning_class_6"
     },
     "day4_morning_class_6": {
+        unskippable: true,
         glitch: { corruptText: true, corruptIndices: [3, 7, 12] },
         next: "day4_morning_class_7"
     },
     "day4_morning_class_7": {
         // 30쌍의 눈
+        unskippable: true,
         next: "day4_morning_class_8"
     },
     "day4_morning_class_8": {

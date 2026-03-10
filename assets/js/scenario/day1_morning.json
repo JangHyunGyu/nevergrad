@@ -6,57 +6,188 @@
             "bgm": "spring_bright",
             "next": "day1_opening_2"
         },
-        { "id": "day1_opening_2", "next": "day1_opening_3" },
-        { "id": "day1_opening_3", "next": "day1_opening_4" },
-        { "id": "day1_opening_4", "next": "day1_opening_5" },
-        { "id": "day1_opening_5", "next": "day1_opening_6" },
-        { "id": "day1_opening_6", "next": "day1_opening_7" },
-        { "id": "day1_opening_7", "next": "day1_gate_1" },
+        {
+            "id": "day1_opening_2",
+            "next": "day1_opening_3"
+        },
+        {
+            "id": "day1_opening_3",
+            "next": "day1_opening_4"
+        },
+        {
+            "id": "day1_opening_4",
+            "next": "day1_opening_5"
+        },
+        {
+            "id": "day1_opening_5",
+            "next": "day1_opening_6"
+        },
+        {
+            "id": "day1_opening_6",
+            "next": "day1_opening_7"
+        },
+        {
+            "id": "day1_opening_7",
+            "next": "day1_gate_1"
+        },
         {
             "id": "day1_gate_1",
             "background": "school_gate",
             "next": "day1_gate_2"
         },
-        { "id": "day1_gate_2", "next": "day1_gate_3" },
-        { "id": "day1_gate_3", "next": "day1_gate_4" },
-        { "id": "day1_gate_4", "next": "day1_gate_5" },
-        { "id": "day1_gate_5", "next": "day1_hallway_1" },
+        {
+            "id": "day1_gate_2",
+            "next": "day1_gate_3"
+        },
+        {
+            "id": "day1_gate_3",
+            "next": "day1_gate_4"
+        },
+        {
+            "id": "day1_gate_4",
+            "next": "day1_gate_5"
+        },
+        {
+            "id": "day1_gate_5",
+            "next": "day1_hallway_1"
+        },
         {
             "id": "day1_hallway_1",
             "background": "hallway",
             "next": "day1_hallway_2"
         },
-        { "id": "day1_hallway_2", "next": "day1_hallway_3" },
-        { "id": "day1_hallway_3", "next": "day1_hallway_4" },
-        { "id": "day1_hallway_4", "next": "day1_sea_meet_1" },
-        { "id": "day1_sea_meet_1", "next": "day1_sea_meet_2" },
-        { "id": "day1_sea_meet_2", "next": "day1_sea_meet_3" },
-        { "id": "day1_sea_meet_3", "next": "day1_sea_meet_4" },
-        { "id": "day1_sea_meet_4", "next": "day1_sea_meet_5" },
-        { "id": "day1_sea_meet_5", "next": "day1_sea_meet_6" },
-        { "id": "day1_sea_meet_6", "next": "day1_sea_meet_7" },
-        { "id": "day1_sea_meet_7", "next": "day1_sea_meet_8" },
-        { "id": "day1_sea_meet_8", "next": "day1_sea_meet_9" },
-        { "id": "day1_sea_meet_9", "next": "day1_sea_meet_10" },
-        { "id": "day1_sea_meet_10", "next": "day1_sea_meet_11" },
-        { "id": "day1_sea_meet_11", "next": "day1_sea_meet_12" },
-        { "id": "day1_sea_meet_12", "next": "day1_sea_meet_13" },
-        { "id": "day1_sea_meet_13", "next": "day1_sea_meet_14" },
-        { "id": "day1_sea_meet_14", "next": "day1_sea_meet_15" },
-        { "id": "day1_sea_meet_15", "next": "day1_sea_meet_16" },
-        { "id": "day1_sea_meet_16", "next": "day1_sea_meet_17" },
-        { "id": "day1_sea_meet_17", "next": "day1_sea_meet_18" },
-        { "id": "day1_sea_meet_18", "next": "day1_sea_meet_19" },
-        { "id": "day1_sea_meet_19", "next": "day1_choco_1" },
-        { "id": "day1_choco_1", "next": "day1_choco_2" },
-        { "id": "day1_choco_2", "next": "day1_choco_3" },
-        { "id": "day1_choco_3", "next": "day1_choco_4" },
-        { "id": "day1_choco_4", "next": "day1_choco_5" },
-        { "id": "day1_choco_5", "next": "day1_choco_6" },
-        { "id": "day1_choco_6", "next": "day1_choco_7" },
-        { "id": "day1_choco_7", "next": "day1_choco_8" },
-        { "id": "day1_choco_8", "next": "day1_choco_9" },
-        { "id": "day1_choco_9", "next": "day1_choco_choice" },
+        {
+            "id": "day1_hallway_2",
+            "next": "day1_hallway_3"
+        },
+        {
+            "id": "day1_hallway_3",
+            "next": "day1_hallway_4"
+        },
+        {
+            "id": "day1_hallway_4",
+            "next": "day1_sea_meet_1"
+        },
+        {
+            "id": "day1_sea_meet_1",
+            "next": "day1_sea_meet_2"
+        },
+        {
+            "id": "day1_sea_meet_2",
+            "next": "day1_sea_meet_3",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_sea_meet_3",
+            "next": "day1_sea_meet_4"
+        },
+        {
+            "id": "day1_sea_meet_4",
+            "next": "day1_sea_meet_5"
+        },
+        {
+            "id": "day1_sea_meet_5",
+            "next": "day1_sea_meet_6"
+        },
+        {
+            "id": "day1_sea_meet_6",
+            "next": "day1_sea_meet_7",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_sea_meet_7",
+            "next": "day1_sea_meet_8"
+        },
+        {
+            "id": "day1_sea_meet_8",
+            "next": "day1_sea_meet_9",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_sea_meet_9",
+            "next": "day1_sea_meet_10"
+        },
+        {
+            "id": "day1_sea_meet_10",
+            "next": "day1_sea_meet_11"
+        },
+        {
+            "id": "day1_sea_meet_11",
+            "next": "day1_sea_meet_12",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_sea_meet_12",
+            "next": "day1_sea_meet_13"
+        },
+        {
+            "id": "day1_sea_meet_13",
+            "next": "day1_sea_meet_14",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_sea_meet_14",
+            "next": "day1_sea_meet_15"
+        },
+        {
+            "id": "day1_sea_meet_15",
+            "next": "day1_sea_meet_16"
+        },
+        {
+            "id": "day1_sea_meet_16",
+            "next": "day1_sea_meet_17"
+        },
+        {
+            "id": "day1_sea_meet_17",
+            "next": "day1_sea_meet_18"
+        },
+        {
+            "id": "day1_sea_meet_18",
+            "next": "day1_sea_meet_19"
+        },
+        {
+            "id": "day1_sea_meet_19",
+            "next": "day1_choco_1"
+        },
+        {
+            "id": "day1_choco_1",
+            "next": "day1_choco_2",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_choco_2",
+            "next": "day1_choco_3"
+        },
+        {
+            "id": "day1_choco_3",
+            "next": "day1_choco_4",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_choco_4",
+            "next": "day1_choco_5"
+        },
+        {
+            "id": "day1_choco_5",
+            "next": "day1_choco_6"
+        },
+        {
+            "id": "day1_choco_6",
+            "next": "day1_choco_7",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_choco_7",
+            "next": "day1_choco_8"
+        },
+        {
+            "id": "day1_choco_8",
+            "next": "day1_choco_9"
+        },
+        {
+            "id": "day1_choco_9",
+            "next": "day1_choco_choice"
+        },
         {
             "id": "day1_choco_choice",
             "type": "choice",
@@ -64,90 +195,304 @@
                 {
                     "index": 0,
                     "next": "day1_choco_accept_1",
-                    "stats": { "sea": { "affinity": 3 } },
+                    "stats": {
+                        "sea": {
+                            "affinity": 3
+                        }
+                    },
                     "flag": "day1_choco_accept"
                 },
                 {
                     "index": 1,
                     "next": "day1_choco_question_1",
-                    "stats": { "sea": { "affinity": 2, "danger": 1 } },
+                    "stats": {
+                        "sea": {
+                            "affinity": 2,
+                            "danger": 1
+                        }
+                    },
                     "flag": "day1_choco_question"
                 },
                 {
                     "index": 2,
                     "next": "day1_choco_joke_1",
-                    "stats": { "sea": { "affinity": 1 } }
+                    "stats": {
+                        "sea": {
+                            "affinity": 1
+                        }
+                    }
                 }
-            ]
+            ],
+            "character": "sea_smile"
         },
-        { "id": "day1_choco_accept_1", "next": "day1_choco_accept_2" },
-        { "id": "day1_choco_accept_2", "next": "day1_choco_accept_3" },
-        { "id": "day1_choco_accept_3", "next": "day1_choco_accept_4" },
-        { "id": "day1_choco_accept_4", "next": "day1_classroom_1" },
-        { "id": "day1_choco_question_1", "next": "day1_choco_question_2" },
-        { "id": "day1_choco_question_2", "next": "day1_choco_question_3" },
-        { "id": "day1_choco_question_3", "next": "day1_choco_question_4" },
-        { "id": "day1_choco_question_4", "next": "day1_choco_question_5" },
-        { "id": "day1_choco_question_5", "next": "day1_choco_question_6" },
-        { "id": "day1_choco_question_6", "next": "day1_classroom_1" },
-        { "id": "day1_choco_joke_1", "next": "day1_choco_joke_2" },
-        { "id": "day1_choco_joke_2", "next": "day1_choco_joke_3" },
-        { "id": "day1_choco_joke_3", "next": "day1_choco_joke_4" },
-        { "id": "day1_choco_joke_4", "next": "day1_classroom_1" },
+        {
+            "id": "day1_choco_accept_1",
+            "next": "day1_choco_accept_2"
+        },
+        {
+            "id": "day1_choco_accept_2",
+            "next": "day1_choco_accept_3"
+        },
+        {
+            "id": "day1_choco_accept_3",
+            "next": "day1_choco_accept_4",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_choco_accept_4",
+            "next": "day1_classroom_1"
+        },
+        {
+            "id": "day1_choco_question_1",
+            "next": "day1_choco_question_2"
+        },
+        {
+            "id": "day1_choco_question_2",
+            "next": "day1_choco_question_3",
+            "character": "sea_shy"
+        },
+        {
+            "id": "day1_choco_question_3",
+            "next": "day1_choco_question_4"
+        },
+        {
+            "id": "day1_choco_question_4",
+            "next": "day1_choco_question_5"
+        },
+        {
+            "id": "day1_choco_question_5",
+            "next": "day1_choco_question_6",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_choco_question_6",
+            "next": "day1_classroom_1"
+        },
+        {
+            "id": "day1_choco_joke_1",
+            "next": "day1_choco_joke_2"
+        },
+        {
+            "id": "day1_choco_joke_2",
+            "next": "day1_choco_joke_3",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_choco_joke_3",
+            "next": "day1_choco_joke_4"
+        },
+        {
+            "id": "day1_choco_joke_4",
+            "next": "day1_classroom_1"
+        },
         {
             "id": "day1_classroom_1",
             "background": "classroom",
             "bgm": "daily_bright",
             "next": "day1_classroom_2"
         },
-        { "id": "day1_classroom_2", "next": "day1_classroom_3" },
-        { "id": "day1_classroom_3", "next": "day1_classroom_4" },
-        { "id": "day1_classroom_4", "next": "day1_classroom_5" },
-        { "id": "day1_classroom_5", "next": "day1_classroom_6" },
-        { "id": "day1_classroom_6", "next": "day1_classroom_7" },
-        { "id": "day1_classroom_7", "next": "day1_classroom_8" },
-        { "id": "day1_classroom_8", "next": "day1_classroom_9" },
-        { "id": "day1_classroom_9", "next": "day1_classroom_10" },
-        { "id": "day1_classroom_10", "next": "day1_classroom_11" },
-        { "id": "day1_classroom_11", "next": "day1_classroom_12" },
-        { "id": "day1_classroom_12", "next": "day1_eunsu_1" },
-        { "id": "day1_eunsu_1", "next": "day1_eunsu_2" },
-        { "id": "day1_eunsu_2", "next": "day1_eunsu_3" },
-        { "id": "day1_eunsu_3", "next": "day1_eunsu_4" },
-        { "id": "day1_eunsu_4", "next": "day1_eunsu_5" },
-        { "id": "day1_eunsu_5", "next": "day1_eunsu_6" },
-        { "id": "day1_eunsu_6", "next": "day1_eunsu_7" },
-        { "id": "day1_eunsu_7", "next": "day1_eunsu_8" },
-        { "id": "day1_eunsu_8", "next": "day1_eunsu_9" },
-        { "id": "day1_eunsu_9", "next": "day1_eunsu_10" },
-        { "id": "day1_eunsu_10", "next": "day1_eunsu_11" },
-        { "id": "day1_eunsu_11", "next": "day1_eunsu_12" },
-        { "id": "day1_eunsu_12", "next": "day1_eunsu_13" },
-        { "id": "day1_eunsu_13", "next": "day1_eunsu_14" },
-        { "id": "day1_eunsu_14", "next": "day1_eunsu_15" },
-        { "id": "day1_eunsu_15", "next": "day1_class_1" },
-        { "id": "day1_class_1", "next": "day1_class_2" },
-        { "id": "day1_class_2", "next": "day1_class_3" },
-        { "id": "day1_class_3", "next": "day1_class_4" },
-        { "id": "day1_class_4", "next": "day1_class_5" },
-        { "id": "day1_class_5", "next": "day1_class_6" },
-        { "id": "day1_class_6", "next": "day1_class_7" },
-        { "id": "day1_class_7", "next": "day1_break_1" },
-        { "id": "day1_break_1", "next": "day1_break_2" },
-        { "id": "day1_break_2", "next": "day1_break_3" },
-        { "id": "day1_break_3", "next": "day1_break_4" },
-        { "id": "day1_break_4", "next": "day1_break_5" },
-        { "id": "day1_break_5", "next": "day1_break_6" },
-        { "id": "day1_break_6", "next": "day1_break_7" },
-        { "id": "day1_break_7", "next": "day1_break_8" },
-        { "id": "day1_break_8", "next": "day1_break_9" },
-        { "id": "day1_break_9", "next": "day1_seolhwa_1" },
-        { "id": "day1_seolhwa_1", "next": "day1_seolhwa_2" },
-        { "id": "day1_seolhwa_2", "next": "day1_seolhwa_3" },
-        { "id": "day1_seolhwa_3", "next": "day1_seolhwa_4" },
-        { "id": "day1_seolhwa_4", "next": "day1_seolhwa_5" },
-        { "id": "day1_seolhwa_5", "next": "day1_seolhwa_6" },
-        { "id": "day1_seolhwa_6", "next": "day1_seolhwa_choice" },
+        {
+            "id": "day1_classroom_2",
+            "next": "day1_classroom_3"
+        },
+        {
+            "id": "day1_classroom_3",
+            "next": "day1_classroom_4"
+        },
+        {
+            "id": "day1_classroom_4",
+            "next": "day1_classroom_5"
+        },
+        {
+            "id": "day1_classroom_5",
+            "next": "day1_classroom_6",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_classroom_6",
+            "next": "day1_classroom_7"
+        },
+        {
+            "id": "day1_classroom_7",
+            "next": "day1_classroom_8"
+        },
+        {
+            "id": "day1_classroom_8",
+            "next": "day1_classroom_9"
+        },
+        {
+            "id": "day1_classroom_9",
+            "next": "day1_classroom_10"
+        },
+        {
+            "id": "day1_classroom_10",
+            "next": "day1_classroom_11"
+        },
+        {
+            "id": "day1_classroom_11",
+            "next": "day1_classroom_12"
+        },
+        {
+            "id": "day1_classroom_12",
+            "next": "day1_eunsu_1"
+        },
+        {
+            "id": "day1_eunsu_1",
+            "next": "day1_eunsu_2",
+            "character": null
+        },
+        {
+            "id": "day1_eunsu_2",
+            "next": "day1_eunsu_3"
+        },
+        {
+            "id": "day1_eunsu_3",
+            "next": "day1_eunsu_4",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_eunsu_4",
+            "next": "day1_eunsu_5"
+        },
+        {
+            "id": "day1_eunsu_5",
+            "next": "day1_eunsu_6",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_eunsu_6",
+            "next": "day1_eunsu_7"
+        },
+        {
+            "id": "day1_eunsu_7",
+            "next": "day1_eunsu_8",
+            "character": "eunsu_gentle"
+        },
+        {
+            "id": "day1_eunsu_8",
+            "next": "day1_eunsu_9"
+        },
+        {
+            "id": "day1_eunsu_9",
+            "next": "day1_eunsu_10",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_eunsu_10",
+            "next": "day1_eunsu_11"
+        },
+        {
+            "id": "day1_eunsu_11",
+            "next": "day1_eunsu_12"
+        },
+        {
+            "id": "day1_eunsu_12",
+            "next": "day1_eunsu_13",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_eunsu_13",
+            "next": "day1_eunsu_14"
+        },
+        {
+            "id": "day1_eunsu_14",
+            "next": "day1_eunsu_15"
+        },
+        {
+            "id": "day1_eunsu_15",
+            "next": "day1_class_1",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_class_1",
+            "next": "day1_class_2"
+        },
+        {
+            "id": "day1_class_2",
+            "next": "day1_class_3"
+        },
+        {
+            "id": "day1_class_3",
+            "next": "day1_class_4"
+        },
+        {
+            "id": "day1_class_4",
+            "next": "day1_class_5"
+        },
+        {
+            "id": "day1_class_5",
+            "next": "day1_class_6"
+        },
+        {
+            "id": "day1_class_6",
+            "next": "day1_class_7"
+        },
+        {
+            "id": "day1_class_7",
+            "next": "day1_break_1"
+        },
+        {
+            "id": "day1_break_1",
+            "next": "day1_break_2"
+        },
+        {
+            "id": "day1_break_2",
+            "next": "day1_break_3"
+        },
+        {
+            "id": "day1_break_3",
+            "next": "day1_break_4"
+        },
+        {
+            "id": "day1_break_4",
+            "next": "day1_break_5"
+        },
+        {
+            "id": "day1_break_5",
+            "next": "day1_break_6"
+        },
+        {
+            "id": "day1_break_6",
+            "next": "day1_break_7"
+        },
+        {
+            "id": "day1_break_7",
+            "next": "day1_break_8"
+        },
+        {
+            "id": "day1_break_8",
+            "next": "day1_break_9"
+        },
+        {
+            "id": "day1_break_9",
+            "next": "day1_seolhwa_1",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_seolhwa_1",
+            "next": "day1_seolhwa_2"
+        },
+        {
+            "id": "day1_seolhwa_2",
+            "next": "day1_seolhwa_3"
+        },
+        {
+            "id": "day1_seolhwa_3",
+            "next": "day1_seolhwa_4"
+        },
+        {
+            "id": "day1_seolhwa_4",
+            "next": "day1_seolhwa_5"
+        },
+        {
+            "id": "day1_seolhwa_5",
+            "next": "day1_seolhwa_6",
+            "character": "seolhwa_normal"
+        },
+        {
+            "id": "day1_seolhwa_6",
+            "next": "day1_seolhwa_choice"
+        },
         {
             "id": "day1_seolhwa_choice",
             "type": "choice",
@@ -156,7 +501,11 @@
                     "index": 0,
                     "next": "day1_seolhwa_greet_1",
                     "flag": "seolhwa_greeted",
-                    "stats": { "seolhwa": { "trust": 1 } }
+                    "stats": {
+                        "seolhwa": {
+                            "trust": 1
+                        }
+                    }
                 },
                 {
                     "index": 1,
@@ -164,23 +513,77 @@
                 }
             ]
         },
-        { "id": "day1_seolhwa_greet_1", "next": "day1_seolhwa_greet_2" },
-        { "id": "day1_seolhwa_greet_2", "next": "day1_seolhwa_greet_3" },
-        { "id": "day1_seolhwa_greet_3", "next": "day1_seolhwa_greet_4" },
-        { "id": "day1_seolhwa_greet_4", "next": "day1_seolhwa_greet_5" },
-        { "id": "day1_seolhwa_greet_5", "next": "day1_seolhwa_greet_6" },
-        { "id": "day1_seolhwa_greet_6", "next": "day1_seolhwa_greet_7" },
-        { "id": "day1_seolhwa_greet_7", "next": "day1_seolhwa_greet_8" },
-        { "id": "day1_seolhwa_greet_8", "next": "day1_seolhwa_greet_9" },
-        { "id": "day1_seolhwa_greet_9", "next": "day1_seolhwa_greet_10" },
-        { "id": "day1_seolhwa_greet_10", "next": "day1_seolhwa_greet_11" },
-        { "id": "day1_seolhwa_greet_11", "next": "day1_seolhwa_greet_12" },
-        { "id": "day1_seolhwa_greet_12", "next": "day1_seolhwa_greet_13" },
-        { "id": "day1_seolhwa_greet_13", "next": "day1_seolhwa_greet_14" },
-        { "id": "day1_seolhwa_greet_14", "next": "day1_seolhwa_greet_15" },
-        { "id": "day1_seolhwa_greet_15", "next": "day1_morning_end" },
-        { "id": "day1_seolhwa_skip", "next": "day1_morning_end" },
-        { "id": "day1_morning_end", "next": null }
+        {
+            "id": "day1_seolhwa_greet_1",
+            "next": "day1_seolhwa_greet_2"
+        },
+        {
+            "id": "day1_seolhwa_greet_2",
+            "next": "day1_seolhwa_greet_3"
+        },
+        {
+            "id": "day1_seolhwa_greet_3",
+            "next": "day1_seolhwa_greet_4"
+        },
+        {
+            "id": "day1_seolhwa_greet_4",
+            "next": "day1_seolhwa_greet_5"
+        },
+        {
+            "id": "day1_seolhwa_greet_5",
+            "next": "day1_seolhwa_greet_6",
+            "character": "seolhwa_normal"
+        },
+        {
+            "id": "day1_seolhwa_greet_6",
+            "next": "day1_seolhwa_greet_7"
+        },
+        {
+            "id": "day1_seolhwa_greet_7",
+            "next": "day1_seolhwa_greet_8"
+        },
+        {
+            "id": "day1_seolhwa_greet_8",
+            "next": "day1_seolhwa_greet_9",
+            "character": null
+        },
+        {
+            "id": "day1_seolhwa_greet_9",
+            "next": "day1_seolhwa_greet_10"
+        },
+        {
+            "id": "day1_seolhwa_greet_10",
+            "next": "day1_seolhwa_greet_11"
+        },
+        {
+            "id": "day1_seolhwa_greet_11",
+            "next": "day1_seolhwa_greet_12"
+        },
+        {
+            "id": "day1_seolhwa_greet_12",
+            "next": "day1_seolhwa_greet_13"
+        },
+        {
+            "id": "day1_seolhwa_greet_13",
+            "next": "day1_seolhwa_greet_14",
+            "character": "seolhwa_normal"
+        },
+        {
+            "id": "day1_seolhwa_greet_14",
+            "next": "day1_seolhwa_greet_15"
+        },
+        {
+            "id": "day1_seolhwa_greet_15",
+            "next": "day1_morning_end"
+        },
+        {
+            "id": "day1_seolhwa_skip",
+            "next": "day1_morning_end"
+        },
+        {
+            "id": "day1_morning_end",
+            "next": null
+        }
     ],
     "mergePoints": {
         "day1_choco_accept_4": "day1_classroom_1",

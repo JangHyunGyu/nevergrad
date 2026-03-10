@@ -163,7 +163,8 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_seolhwa_7"
     },
     "day2_morning_seolhwa_7": {
-        next: "day2_morning_end"
+        next: "day2_morning_end",
+        glitch: { silence: true, silenceDuration: 2000 }
     },
 
     // ===== 아침 종료 =====

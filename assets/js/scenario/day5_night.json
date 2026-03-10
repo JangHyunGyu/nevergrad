@@ -72,23 +72,23 @@
         { "id": "day5_ending_true_5", "next": "day5_ending_true_6" },
         { "id": "day5_ending_true_6", "next": "day5_ending_true_7" },
         { "id": "day5_ending_true_7", "next": "day5_ending_true_8" },
-        { "id": "day5_ending_true_8", "next": "day5_ending_true_9" },
-        { "id": "day5_ending_true_9", "next": "day5_ending_true_10" },
-        { "id": "day5_ending_true_10", "next": "day5_ending_true_11" },
-        { "id": "day5_ending_true_11", "next": "day5_ending_true_12" },
+        { "id": "day5_ending_true_8", "character": "yuna_cry", "next": "day5_ending_true_9" },
+        { "id": "day5_ending_true_9", "background": "sunset_outside", "next": "day5_ending_true_10" },
+        { "id": "day5_ending_true_10", "character": "yuna_smile", "next": "day5_ending_true_11" },
+        { "id": "day5_ending_true_11", "character": "yuna_smile", "next": "day5_ending_true_12" },
         { "id": "day5_ending_true_12", "next": "day5_ending_true_13" },
-        { "id": "day5_ending_true_13", "next": "day5_ending_true_14" },
+        { "id": "day5_ending_true_13", "character": "yuna_smile", "next": "day5_ending_true_14" },
         { "id": "day5_ending_true_14", "next": "day5_ending_true_15" },
         { "id": "day5_ending_true_15", "next": "day5_ending_true_16" },
         { "id": "day5_ending_true_16", "next": "day5_ending_true_17" },
         { "id": "day5_ending_true_17", "next": "day5_ending_true_18" },
-        { "id": "day5_ending_true_18", "next": "day5_ending_true_19" },
-        { "id": "day5_ending_true_19", "next": "day5_ending_true_20" },
+        { "id": "day5_ending_true_18", "character": "seolhwa_smile", "next": "day5_ending_true_19" },
+        { "id": "day5_ending_true_19", "character": "seolhwa_smile", "glitch": {"ghostText": "...고마워.", "ghostX": 50, "ghostY": 30}, "next": "day5_ending_true_20" },
         { "id": "day5_ending_true_20", "next": "day5_ending_true_21" },
         { "id": "day5_ending_true_21", "next": "day5_ending_true_22" },
-        { "id": "day5_ending_true_22", "next": "day5_ending_true_23" },
+        { "id": "day5_ending_true_22", "character": "yuna_smile", "next": "day5_ending_true_23" },
         { "id": "day5_ending_true_23", "next": "day5_ending_true_24" },
-        { "id": "day5_ending_true_24", "next": "day5_ending_true_25" },
+        { "id": "day5_ending_true_24", "character": "yuna_cry", "next": "day5_ending_true_25" },
         { "id": "day5_ending_true_25", "next": "day5_ending_true_subtitle" },
         {
             "id": "day5_ending_true_subtitle",
@@ -97,11 +97,12 @@
             "next": "day5_ending_true_title"
         },
         { "id": "day5_ending_true_title", "next": "day5_postcredit_1" },
-        { "id": "day5_postcredit_1", "next": "day5_postcredit_2" },
+        { "id": "day5_postcredit_1", "character": null, "background": "black", "next": "day5_postcredit_2" },
         {
             "id": "day5_postcredit_2",
-            "background": "office",
+            "background": "black",
             "bgm": "tension_low",
+            "character": null,
             "next": "day5_postcredit_3"
         },
         { "id": "day5_postcredit_3", "next": "day5_postcredit_4" },
@@ -114,8 +115,9 @@
 
         {
             "id": "day5_ending_escape",
-            "background": "outside_rain",
+            "background": "night_rain",
             "bgm": "ending_bittersweet",
+            "character": null,
             "next": "day5_ending_escape_2"
         },
         { "id": "day5_ending_escape_2", "next": "day5_ending_escape_3" },
@@ -132,6 +134,8 @@
             "id": "day5_ending_escape_ghost",
             "type": "glitch",
             "glitchLevel": "SUBTLE",
+            "character": null,
+            "glitch": {"ghostText": "...기다리고 있을게요, 선배.", "ghostX": 50, "ghostY": 80},
             "next": "day5_ending_escape_subtitle"
         },
         {
@@ -144,7 +148,7 @@
 
         {
             "id": "day5_ending_resist",
-            "background": "outside_dawn",
+            "background": "school_dawn",
             "bgm": "ending_resolve",
             "next": "day5_ending_resist_2"
         },
@@ -152,11 +156,11 @@
         { "id": "day5_ending_resist_3", "next": "day5_ending_resist_4" },
         { "id": "day5_ending_resist_4", "next": "day5_ending_resist_5" },
         { "id": "day5_ending_resist_5", "next": "day5_ending_resist_6" },
-        { "id": "day5_ending_resist_6", "next": "day5_ending_resist_7" },
-        { "id": "day5_ending_resist_7", "next": "day5_ending_resist_8" },
-        { "id": "day5_ending_resist_8", "next": "day5_ending_resist_9" },
+        { "id": "day5_ending_resist_6", "character": "seolhwa_ghost", "next": "day5_ending_resist_7" },
+        { "id": "day5_ending_resist_7", "character": "seolhwa_smile", "next": "day5_ending_resist_8" },
+        { "id": "day5_ending_resist_8", "character": "seolhwa_smile", "next": "day5_ending_resist_9" },
         { "id": "day5_ending_resist_9", "next": "day5_ending_resist_10" },
-        { "id": "day5_ending_resist_10", "next": "day5_ending_resist_11" },
+        { "id": "day5_ending_resist_10", "character": "seolhwa_fade", "next": "day5_ending_resist_11" },
         { "id": "day5_ending_resist_11", "next": "day5_ending_resist_12" },
         { "id": "day5_ending_resist_12", "next": "day5_ending_resist_subtitle" },
         {
@@ -174,19 +178,19 @@
             "next": "day5_ending_cage_2"
         },
         { "id": "day5_ending_cage_2", "next": "day5_ending_cage_3" },
-        { "id": "day5_ending_cage_3", "next": "day5_ending_cage_4" },
+        { "id": "day5_ending_cage_3", "character": "eunsu_smile", "next": "day5_ending_cage_4" },
         { "id": "day5_ending_cage_4", "next": "day5_ending_cage_5" },
         { "id": "day5_ending_cage_5", "next": "day5_ending_cage_6" },
         { "id": "day5_ending_cage_6", "next": "day5_ending_cage_7" },
         { "id": "day5_ending_cage_7", "next": "day5_ending_cage_8" },
         { "id": "day5_ending_cage_8", "next": "day5_ending_cage_9" },
-        { "id": "day5_ending_cage_9", "next": "day5_ending_cage_10" },
+        { "id": "day5_ending_cage_9", "character": "sea_smile", "next": "day5_ending_cage_10" },
         { "id": "day5_ending_cage_10", "next": "day5_ending_cage_11" },
         { "id": "day5_ending_cage_11", "next": "day5_ending_cage_12" },
-        { "id": "day5_ending_cage_12", "next": "day5_ending_cage_13" },
+        { "id": "day5_ending_cage_12", "character": "eunsu_smile", "next": "day5_ending_cage_13" },
         { "id": "day5_ending_cage_13", "next": "day5_ending_cage_14" },
         { "id": "day5_ending_cage_14", "next": "day5_ending_cage_15" },
-        { "id": "day5_ending_cage_15", "next": "day5_ending_cage_16" },
+        { "id": "day5_ending_cage_15", "glitch": {"noise": true, "noiseDuration": 100}, "next": "day5_ending_cage_16" },
         { "id": "day5_ending_cage_16", "next": "day5_ending_cage_subtitle" },
         {
             "id": "day5_ending_cage_subtitle",
@@ -206,7 +210,7 @@
         { "id": "day5_ending_forget_3", "next": "day5_ending_forget_4" },
         {
             "id": "day5_ending_forget_4",
-            "background": "room_morning",
+            "background": "cherry_blossom",
             "bgm": "spring_bright",
             "next": "day5_ending_forget_5"
         },
@@ -228,6 +232,7 @@
             "id": "day5_ending_forget_ghost",
             "type": "glitch",
             "glitchLevel": "SUBTLE",
+            "glitch": {"ghostText": "도망쳐", "ghostX": 50, "ghostY": 50},
             "next": "day5_ending_forget_16"
         },
         { "id": "day5_ending_forget_16", "next": "day5_ending_forget_sea_branch" },
@@ -244,11 +249,12 @@
         {
             "id": "day5_ending_forget_sea_max",
             "background": "school_gate",
+            "character": "sea_smile",
             "next": "day5_ending_forget_sea_max_2"
         },
-        { "id": "day5_ending_forget_sea_max_2", "next": "day5_ending_forget_sea_max_3" },
+        { "id": "day5_ending_forget_sea_max_2", "character": "sea_smile", "next": "day5_ending_forget_sea_max_3" },
         { "id": "day5_ending_forget_sea_max_3", "next": "day5_ending_forget_sea_max_4" },
-        { "id": "day5_ending_forget_sea_max_4", "next": "day5_ending_forget_subtitle" },
+        { "id": "day5_ending_forget_sea_max_4", "character": "sea_smile", "next": "day5_ending_forget_subtitle" },
         {
             "id": "day5_ending_forget_subtitle",
             "type": "ending",
@@ -261,6 +267,7 @@
             "id": "day5_ending_ghost",
             "background": "school_night",
             "bgm": "ending_ghost",
+            "character": null,
             "next": "day5_ending_ghost_2"
         },
         { "id": "day5_ending_ghost_2", "next": "day5_ending_ghost_3" },
@@ -275,12 +282,14 @@
         { "id": "day5_ending_ghost_11", "next": "day5_ending_ghost_12" },
         { "id": "day5_ending_ghost_12", "next": "day5_ending_ghost_13" },
         { "id": "day5_ending_ghost_13", "next": "day5_ending_ghost_14" },
-        { "id": "day5_ending_ghost_14", "next": "day5_ending_ghost_15" },
+        { "id": "day5_ending_ghost_14", "character": "eunsu_smile", "next": "day5_ending_ghost_15" },
         { "id": "day5_ending_ghost_15", "next": "day5_ending_ghost_whisper" },
         {
             "id": "day5_ending_ghost_whisper",
             "type": "glitch",
             "glitchLevel": "SUBTLE",
+            "character": null,
+            "glitch": {"ghostText": "여기서 나가", "ghostX": 50, "ghostY": 80},
             "next": "day5_ending_ghost_16"
         },
         { "id": "day5_ending_ghost_16", "next": "day5_ending_ghost_17" },

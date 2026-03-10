@@ -6,7 +6,10 @@
             "bgm": "sunset_warm",
             "next": "day1_after_start_2"
         },
-        { "id": "day1_after_start_2", "next": "day1_after_choice" },
+        {
+            "id": "day1_after_start_2",
+            "next": "day1_after_choice"
+        },
         {
             "id": "day1_after_choice",
             "type": "routeChoice",
@@ -14,25 +17,41 @@
                 {
                     "index": 0,
                     "next": "day1_after_sea",
-                    "stats": { "sea": { "affinity": 3 } },
+                    "stats": {
+                        "sea": {
+                            "affinity": 3
+                        }
+                    },
                     "flag": "day1_after_sea"
                 },
                 {
                     "index": 1,
                     "next": "day1_after_yuna",
-                    "stats": { "yuna": { "trust": 3 } },
+                    "stats": {
+                        "yuna": {
+                            "trust": 3
+                        }
+                    },
                     "flag": "day1_after_yuna"
                 },
                 {
                     "index": 2,
                     "next": "day1_after_riin",
-                    "stats": { "riin": { "affinity": 3 } },
+                    "stats": {
+                        "riin": {
+                            "affinity": 3
+                        }
+                    },
                     "flag": "day1_after_riin"
                 },
                 {
                     "index": 3,
                     "next": "day1_after_eunsu",
-                    "stats": { "eunsu": { "affinity": 3 } },
+                    "stats": {
+                        "eunsu": {
+                            "affinity": 3
+                        }
+                    },
                     "flag": "day1_after_eunsu"
                 },
                 {
@@ -47,99 +66,360 @@
             "background": "student_council",
             "next": "day1_after_sea_2"
         },
-        { "id": "day1_after_sea_2", "next": "day1_after_sea_3" },
-        { "id": "day1_after_sea_3", "next": "day1_after_sea_4" },
-        { "id": "day1_after_sea_4", "next": "day1_after_sea_5" },
-        { "id": "day1_after_sea_5", "next": "day1_after_sea_6" },
-        { "id": "day1_after_sea_6", "next": "day1_after_sea_7" },
-        { "id": "day1_after_sea_7", "next": "day1_after_sea_8" },
-        { "id": "day1_after_sea_8", "next": "day1_after_sea_9" },
-        { "id": "day1_after_sea_9", "next": "day1_after_sea_10" },
-        { "id": "day1_after_sea_10", "next": "day1_after_sea_11" },
-        { "id": "day1_after_sea_11", "next": "day1_after_sea_12" },
-        { "id": "day1_after_sea_12", "next": "day1_after_sea_13" },
-        { "id": "day1_after_sea_13", "next": "day1_after_sea_14" },
-        { "id": "day1_after_sea_14", "next": "day1_after_sea_15" },
-        { "id": "day1_after_sea_15", "next": "day1_after_sea_16" },
-        { "id": "day1_after_sea_16", "next": "day1_after_sea_17" },
-        { "id": "day1_after_sea_17", "next": "day1_after_sea_18" },
-        { "id": "day1_after_sea_18", "next": "day1_after_sea_19" },
-        { "id": "day1_after_sea_19", "next": "day1_after_sea_20" },
-        { "id": "day1_after_sea_20", "next": "day1_after_sea_21" },
-        { "id": "day1_after_sea_21", "next": "day1_after_sea_22" },
-        { "id": "day1_after_sea_22", "next": "day1_after_home" },
+        {
+            "id": "day1_after_sea_2",
+            "next": "day1_after_sea_3",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_after_sea_3",
+            "next": "day1_after_sea_4",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_after_sea_4",
+            "next": "day1_after_sea_5"
+        },
+        {
+            "id": "day1_after_sea_5",
+            "next": "day1_after_sea_6",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_after_sea_6",
+            "next": "day1_after_sea_7"
+        },
+        {
+            "id": "day1_after_sea_7",
+            "next": "day1_after_sea_8",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_after_sea_8",
+            "next": "day1_after_sea_9"
+        },
+        {
+            "id": "day1_after_sea_9",
+            "next": "day1_after_sea_10",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_after_sea_10",
+            "next": "day1_after_sea_11",
+            "character": "sea_shy"
+        },
+        {
+            "id": "day1_after_sea_11",
+            "next": "day1_after_sea_12"
+        },
+        {
+            "id": "day1_after_sea_12",
+            "next": "day1_after_sea_13",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_after_sea_13",
+            "next": "day1_after_sea_14"
+        },
+        {
+            "id": "day1_after_sea_14",
+            "next": "day1_after_sea_15",
+            "character": "sea_sad"
+        },
+        {
+            "id": "day1_after_sea_15",
+            "next": "day1_after_sea_16"
+        },
+        {
+            "id": "day1_after_sea_16",
+            "next": "day1_after_sea_17",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_after_sea_17",
+            "next": "day1_after_sea_18"
+        },
+        {
+            "id": "day1_after_sea_18",
+            "next": "day1_after_sea_19",
+            "character": "sea_smile"
+        },
+        {
+            "id": "day1_after_sea_19",
+            "next": "day1_after_sea_20"
+        },
+        {
+            "id": "day1_after_sea_20",
+            "next": "day1_after_sea_21",
+            "character": "sea_shy"
+        },
+        {
+            "id": "day1_after_sea_21",
+            "next": "day1_after_sea_22"
+        },
+        {
+            "id": "day1_after_sea_22",
+            "next": "day1_after_home",
+            "character": "sea_smile"
+        },
         {
             "id": "day1_after_yuna",
             "background": "library",
             "next": "day1_after_yuna_2"
         },
-        { "id": "day1_after_yuna_2", "next": "day1_after_yuna_3" },
-        { "id": "day1_after_yuna_3", "next": "day1_after_yuna_4" },
-        { "id": "day1_after_yuna_4", "next": "day1_after_yuna_5" },
-        { "id": "day1_after_yuna_5", "next": "day1_after_yuna_6" },
-        { "id": "day1_after_yuna_6", "next": "day1_after_yuna_7" },
-        { "id": "day1_after_yuna_7", "next": "day1_after_yuna_8" },
-        { "id": "day1_after_yuna_8", "next": "day1_after_yuna_9" },
-        { "id": "day1_after_yuna_9", "next": "day1_after_yuna_10" },
-        { "id": "day1_after_yuna_10", "next": "day1_after_yuna_11" },
-        { "id": "day1_after_yuna_11", "next": "day1_after_yuna_12" },
-        { "id": "day1_after_yuna_12", "next": "day1_after_yuna_13" },
-        { "id": "day1_after_yuna_13", "next": "day1_after_yuna_14" },
-        { "id": "day1_after_yuna_14", "next": "day1_after_yuna_15" },
-        { "id": "day1_after_yuna_15", "next": "day1_after_yuna_16" },
-        { "id": "day1_after_yuna_16", "next": "day1_after_yuna_17" },
-        { "id": "day1_after_yuna_17", "next": "day1_after_home" },
+        {
+            "id": "day1_after_yuna_2",
+            "next": "day1_after_yuna_3",
+            "character": "yuna_scared"
+        },
+        {
+            "id": "day1_after_yuna_3",
+            "next": "day1_after_yuna_4"
+        },
+        {
+            "id": "day1_after_yuna_4",
+            "next": "day1_after_yuna_5",
+            "character": "yuna_smile"
+        },
+        {
+            "id": "day1_after_yuna_5",
+            "next": "day1_after_yuna_6"
+        },
+        {
+            "id": "day1_after_yuna_6",
+            "next": "day1_after_yuna_7",
+            "character": "yuna_smile"
+        },
+        {
+            "id": "day1_after_yuna_7",
+            "next": "day1_after_yuna_8"
+        },
+        {
+            "id": "day1_after_yuna_8",
+            "next": "day1_after_yuna_9",
+            "character": "yuna_smile"
+        },
+        {
+            "id": "day1_after_yuna_9",
+            "next": "day1_after_yuna_10"
+        },
+        {
+            "id": "day1_after_yuna_10",
+            "next": "day1_after_yuna_11",
+            "character": "yuna_smile"
+        },
+        {
+            "id": "day1_after_yuna_11",
+            "next": "day1_after_yuna_12"
+        },
+        {
+            "id": "day1_after_yuna_12",
+            "next": "day1_after_yuna_13",
+            "character": "yuna_scared"
+        },
+        {
+            "id": "day1_after_yuna_13",
+            "next": "day1_after_yuna_14"
+        },
+        {
+            "id": "day1_after_yuna_14",
+            "next": "day1_after_yuna_15",
+            "character": "yuna_smile"
+        },
+        {
+            "id": "day1_after_yuna_15",
+            "next": "day1_after_yuna_16"
+        },
+        {
+            "id": "day1_after_yuna_16",
+            "next": "day1_after_yuna_17",
+            "character": "yuna_smile"
+        },
+        {
+            "id": "day1_after_yuna_17",
+            "next": "day1_after_home"
+        },
         {
             "id": "day1_after_riin",
             "background": "nurse_office",
             "next": "day1_after_riin_2"
         },
-        { "id": "day1_after_riin_2", "next": "day1_after_riin_3" },
-        { "id": "day1_after_riin_3", "next": "day1_after_riin_4" },
-        { "id": "day1_after_riin_4", "next": "day1_after_riin_5" },
-        { "id": "day1_after_riin_5", "next": "day1_after_riin_6" },
-        { "id": "day1_after_riin_6", "next": "day1_after_riin_7" },
-        { "id": "day1_after_riin_7", "next": "day1_after_riin_8" },
-        { "id": "day1_after_riin_8", "next": "day1_after_riin_9" },
-        { "id": "day1_after_riin_9", "next": "day1_after_riin_10" },
-        { "id": "day1_after_riin_10", "next": "day1_after_riin_11" },
-        { "id": "day1_after_riin_11", "next": "day1_after_riin_12" },
-        { "id": "day1_after_riin_12", "next": "day1_after_riin_13" },
-        { "id": "day1_after_riin_13", "next": "day1_after_riin_14" },
-        { "id": "day1_after_riin_14", "next": "day1_after_riin_15" },
-        { "id": "day1_after_riin_15", "next": "day1_after_home" },
+        {
+            "id": "day1_after_riin_2",
+            "next": "day1_after_riin_3",
+            "character": "riin_normal"
+        },
+        {
+            "id": "day1_after_riin_3",
+            "next": "day1_after_riin_4"
+        },
+        {
+            "id": "day1_after_riin_4",
+            "next": "day1_after_riin_5",
+            "character": "riin_smile"
+        },
+        {
+            "id": "day1_after_riin_5",
+            "next": "day1_after_riin_6"
+        },
+        {
+            "id": "day1_after_riin_6",
+            "next": "day1_after_riin_7",
+            "character": "riin_smile"
+        },
+        {
+            "id": "day1_after_riin_7",
+            "next": "day1_after_riin_8"
+        },
+        {
+            "id": "day1_after_riin_8",
+            "next": "day1_after_riin_9",
+            "character": "riin_normal"
+        },
+        {
+            "id": "day1_after_riin_9",
+            "next": "day1_after_riin_10"
+        },
+        {
+            "id": "day1_after_riin_10",
+            "next": "day1_after_riin_11",
+            "character": "riin_smile"
+        },
+        {
+            "id": "day1_after_riin_11",
+            "next": "day1_after_riin_12"
+        },
+        {
+            "id": "day1_after_riin_12",
+            "next": "day1_after_riin_13",
+            "character": "riin_smile"
+        },
+        {
+            "id": "day1_after_riin_13",
+            "next": "day1_after_riin_14"
+        },
+        {
+            "id": "day1_after_riin_14",
+            "next": "day1_after_riin_15",
+            "character": "riin_normal"
+        },
+        {
+            "id": "day1_after_riin_15",
+            "next": "day1_after_home"
+        },
         {
             "id": "day1_after_eunsu",
             "background": "teacher_office",
             "next": "day1_after_eunsu_2"
         },
-        { "id": "day1_after_eunsu_2", "next": "day1_after_eunsu_3" },
-        { "id": "day1_after_eunsu_3", "next": "day1_after_eunsu_4" },
-        { "id": "day1_after_eunsu_4", "next": "day1_after_eunsu_5" },
-        { "id": "day1_after_eunsu_5", "next": "day1_after_eunsu_6" },
-        { "id": "day1_after_eunsu_6", "next": "day1_after_eunsu_7" },
-        { "id": "day1_after_eunsu_7", "next": "day1_after_eunsu_8" },
-        { "id": "day1_after_eunsu_8", "next": "day1_after_eunsu_9" },
-        { "id": "day1_after_eunsu_9", "next": "day1_after_eunsu_10" },
-        { "id": "day1_after_eunsu_10", "next": "day1_after_eunsu_11" },
-        { "id": "day1_after_eunsu_11", "next": "day1_after_eunsu_12" },
-        { "id": "day1_after_eunsu_12", "next": "day1_after_eunsu_13" },
-        { "id": "day1_after_eunsu_13", "next": "day1_after_eunsu_14" },
-        { "id": "day1_after_eunsu_14", "next": "day1_after_eunsu_15" },
-        { "id": "day1_after_eunsu_15", "next": "day1_after_home" },
+        {
+            "id": "day1_after_eunsu_2",
+            "next": "day1_after_eunsu_3",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_after_eunsu_3",
+            "next": "day1_after_eunsu_4"
+        },
+        {
+            "id": "day1_after_eunsu_4",
+            "next": "day1_after_eunsu_5",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_after_eunsu_5",
+            "next": "day1_after_eunsu_6"
+        },
+        {
+            "id": "day1_after_eunsu_6",
+            "next": "day1_after_eunsu_7",
+            "character": "eunsu_gentle"
+        },
+        {
+            "id": "day1_after_eunsu_7",
+            "next": "day1_after_eunsu_8"
+        },
+        {
+            "id": "day1_after_eunsu_8",
+            "next": "day1_after_eunsu_9",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_after_eunsu_9",
+            "next": "day1_after_eunsu_10"
+        },
+        {
+            "id": "day1_after_eunsu_10",
+            "next": "day1_after_eunsu_11",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_after_eunsu_11",
+            "next": "day1_after_eunsu_12"
+        },
+        {
+            "id": "day1_after_eunsu_12",
+            "next": "day1_after_eunsu_13",
+            "character": "eunsu_gentle"
+        },
+        {
+            "id": "day1_after_eunsu_13",
+            "next": "day1_after_eunsu_14"
+        },
+        {
+            "id": "day1_after_eunsu_14",
+            "next": "day1_after_eunsu_15",
+            "character": "eunsu_smile"
+        },
+        {
+            "id": "day1_after_eunsu_15",
+            "next": "day1_after_home"
+        },
         {
             "id": "day1_after_home",
             "background": "school_gate_evening",
-            "next": "day1_after_home_2"
+            "next": "day1_after_home_2",
+            "character": null
         },
-        { "id": "day1_after_home_2", "next": "day1_after_home_3" },
-        { "id": "day1_after_home_3", "next": "day1_after_home_4" },
-        { "id": "day1_after_home_4", "next": "day1_after_home_5" },
-        { "id": "day1_after_home_5", "next": "day1_after_home_6" },
-        { "id": "day1_after_home_6", "next": "day1_after_home_7" },
-        { "id": "day1_after_home_7", "next": "day1_after_home_8" },
-        { "id": "day1_after_home_8", "next": "day1_after_end" },
-        { "id": "day1_after_end", "next": null }
+        {
+            "id": "day1_after_home_2",
+            "next": "day1_after_home_3",
+            "character": null
+        },
+        {
+            "id": "day1_after_home_3",
+            "next": "day1_after_home_4",
+            "character": null
+        },
+        {
+            "id": "day1_after_home_4",
+            "next": "day1_after_home_5",
+            "character": null
+        },
+        {
+            "id": "day1_after_home_5",
+            "next": "day1_after_home_6",
+            "character": null
+        },
+        {
+            "id": "day1_after_home_6",
+            "next": "day1_after_home_7",
+            "character": null
+        },
+        {
+            "id": "day1_after_home_7",
+            "next": "day1_after_home_8",
+            "character": null
+        },
+        {
+            "id": "day1_after_home_8",
+            "next": "day1_after_end",
+            "character": null
+        },
+        {
+            "id": "day1_after_end",
+            "next": null
+        }
     ],
     "mergePoints": {
         "day1_after_sea_22": "day1_after_home",

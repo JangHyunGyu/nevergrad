@@ -84,12 +84,16 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_basement_13"
     },
     "day4_after_basement_13": {
+        unskippable: true,
         next: "day4_after_basement_14"
     },
     "day4_after_basement_14": {
+        unskippable: true,
         next: "day4_after_basement_15"
     },
     "day4_after_basement_15": {
+        unskippable: true,
+        evidence: { id: "experiment_docs", name: "기억 조작 프로토콜" },
         next: "day4_after_basement_16",
         setFlags: ["evidence_lab_documents"]
     },
@@ -172,6 +176,7 @@ Object.assign(SCENARIO[4], {
     // 선택2: 일단 숨는다
     "day4_after_basement_hide": {
         character: null,
+        glitch: { silence: true, silenceDuration: 1000 },
         next: "day4_after_basement_hide_2"
     },
     "day4_after_basement_hide_2": {
@@ -262,9 +267,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_crack_2"
     },
     "day4_after_sea_crack_2": {
+        unskippable: true,
         next: "day4_after_sea_crack_3"
     },
     "day4_after_sea_crack_3": {
+        unskippable: true,
         next: "day4_after_sea_crack_4"
     },
     "day4_after_sea_crack_4": {
@@ -287,10 +294,12 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_crack_10"
     },
     "day4_after_sea_crack_10": {
+        unskippable: true,
         character: "sea_sad",
         next: "day4_after_sea_crack_11"
     },
     "day4_after_sea_crack_11": {
+        unskippable: true,
         character: "sea_cry",
         next: "day4_after_sea_crack_12"
     },
@@ -349,16 +358,19 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_evidence_6"
     },
     "day4_after_evidence_6": {
+        unskippable: true,
         next: "day4_after_evidence_7",
         setFlags: ["evidence_compiled"]
     },
     "day4_after_evidence_7": {
         // 은수가 나타남
+        unskippable: true,
         character: "eunsu_serious",
         glitch: { screenShake: true },
         next: "day4_after_evidence_8"
     },
     "day4_after_evidence_8": {
+        unskippable: true,
         character: null,
         next: "day4_after_evidence_9"
     },

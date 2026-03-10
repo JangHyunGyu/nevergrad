@@ -31,6 +31,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_escaped": {
         background: "exit_door",
         character: null,
+        rain: true,
         next: "day5_after_escaped_2"
     },
     "day5_after_escaped_2": {
@@ -171,6 +172,7 @@ Object.assign(SCENARIO[5], {
     // ── 저항 → 설화 개입 ──
     "day5_after_captured_resist": {
         glitch: { heavyGlitch: true },
+        unskippable: true,
         next: "day5_after_captured_resist_2"
     },
     "day5_after_captured_resist_2": {
@@ -180,7 +182,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_captured_resist_4"
     },
     "day5_after_captured_resist_4": {
-        glitch: { screenShake: true },
+        glitch: { heavy: true },
+        unskippable: true,
         next: "day5_after_captured_resist_5"
     },
     "day5_after_captured_resist_5": {
@@ -191,7 +194,8 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_captured_resist_7": {
         character: "seolhwa_fading",
-        glitch: { screenShake: true },
+        glitch: { silence: true, silenceDuration: 3000 },
+        unskippable: true,
         next: "day5_after_captured_resist_8"
     },
     "day5_after_captured_resist_8": {
@@ -212,6 +216,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_captured_submit_3"
     },
     "day5_after_captured_submit_3": {
+        unskippable: true,
         next: "day5_after_captured_submit_4"
     },
     "day5_after_captured_submit_4": {
@@ -246,6 +251,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_stayed_7": {
         character: "eunsu_obsessed",
         typingSpeed: 100,
+        unskippable: true,
         next: "day5_after_stayed_8"
     },
     "day5_after_stayed_8": {

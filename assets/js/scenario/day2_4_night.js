@@ -86,6 +86,7 @@ Object.assign(SCENARIO[2], {
     // ===== 세아의 메시지 =====
     "day2_night_msg_1": {
         night: true,
+        messengerDelay: 5000,
         next: "day2_night_msg_2"
     },
     "day2_night_msg_2": {
@@ -152,8 +153,9 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_dream_5"
     },
     "day2_night_dream_5": {
-        character: "seolhwa_fading",
+        character: "seolhwa_ghost",
         night: true,
+        glitch: { noise: true, noiseDuration: 500 },
         next: "day2_night_dream_6"
     },
     "day2_night_dream_6": {
@@ -174,6 +176,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_dream_10": {
         night: true,
+        glitch: { noise: true, noiseDuration: 800 },
         next: "day2_night_dream_11"
     },
     "day2_night_dream_11": {

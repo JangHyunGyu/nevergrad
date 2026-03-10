@@ -26,50 +26,62 @@ Object.assign(SCENARIO[4], {
 
     // ── 세아의 집착 메시지 ──
     "day4_night_phone": {
+        unskippable: true,
         next: "day4_night_phone_2"
     },
     "day4_night_phone_2": {
+        unskippable: true,
         messengerDelay: 1200,
         next: "day4_night_phone_3"
     },
     "day4_night_phone_3": {
-        messengerDelay: 1000,
+        unskippable: true,
+        messengerDelay: 1200,
         next: "day4_night_phone_4"
     },
     "day4_night_phone_4": {
+        unskippable: true,
         messengerDelay: 800,
         next: "day4_night_phone_5"
     },
     "day4_night_phone_5": {
-        messengerDelay: 600,
+        unskippable: true,
+        messengerDelay: 400,
         next: "day4_night_phone_6"
     },
     "day4_night_phone_6": {
-        messengerDelay: 400,
+        unskippable: true,
+        messengerDelay: 200,
         glitch: { noise: true },
         next: "day4_night_phone_7"
     },
     "day4_night_phone_7": {
+        unskippable: true,
         next: "day4_night_phone_8"
     },
     "day4_night_phone_8": {
+        unskippable: true,
         messengerDelay: 1000,
         next: "day4_night_phone_9"
     },
     "day4_night_phone_9": {
+        unskippable: true,
         messengerDelay: 500,
         next: "day4_night_phone_10"
     },
 
     // ── 은수 메시지 ──
     "day4_night_phone_10": {
+        unskippable: true,
         next: "day4_night_phone_11"
     },
     "day4_night_phone_11": {
+        unskippable: true,
         messengerDelay: 1500,
         next: "day4_night_phone_12"
     },
     "day4_night_phone_12": {
+        unskippable: true,
         messengerDelay: 1200,
         next: "day4_night_plan"
     },
@@ -170,10 +182,12 @@ Object.assign(SCENARIO[4], {
         background: "corridor_dark",
         bgm: null,
         character: null,
+        unskippable: true,
         glitch: { noise: true },
         next: "day4_night_seolhwa_2"
     },
     "day4_night_seolhwa_2": {
+        unskippable: true,
         next: "day4_night_seolhwa_3"
     },
     // 글리치: UI 날짜 변경 + 주인공 이름 → '이설화'로 위장
@@ -246,24 +260,30 @@ Object.assign(SCENARIO[4], {
     "day4_night_seolhwa_19": {
         background: "old_building",
         character: "eunsu_serious",
+        unskippable: true,
         next: "day4_night_seolhwa_20"
     },
     "day4_night_seolhwa_20": {
+        unskippable: true,
         next: "day4_night_seolhwa_21"
     },
     "day4_night_seolhwa_21": {
+        unskippable: true,
         character: null,
         next: "day4_night_seolhwa_22"
     },
     "day4_night_seolhwa_22": {
+        unskippable: true,
         character: "eunsu_serious",
         next: "day4_night_seolhwa_23"
     },
     "day4_night_seolhwa_23": {
+        unskippable: true,
         character: null,
         next: "day4_night_seolhwa_24"
     },
     "day4_night_seolhwa_24": {
+        unskippable: true,
         next: "day4_night_seolhwa_25"
     },
 
@@ -272,11 +292,13 @@ Object.assign(SCENARIO[4], {
         background: "black",
         glitch: { heavyGlitch: true },
         character: null,
+        unskippable: true,
         next: "day4_night_seolhwa_26"
     },
 
     // 현재 꿈속 — 설화와 대면
     "day4_night_seolhwa_26": {
+        unskippable: true,
         character: "seolhwa_normal",
         next: "day4_night_seolhwa_27"
     },
@@ -299,6 +321,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_seolhwa_32"
     },
     "day4_night_seolhwa_32": {
+        unskippable: true,
         character: "seolhwa_normal",
         next: "day4_night_seolhwa_33",
         stats: { seolhwa: { trust: 20 } }
@@ -307,6 +330,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_seolhwa_34"
     },
     "day4_night_seolhwa_34": {
+        unskippable: true,
         character: "seolhwa_sad",
         next: "day4_night_seolhwa_35"
     },
@@ -335,6 +359,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_seolhwa_41"
     },
     "day4_night_seolhwa_41": {
+        unskippable: true,
         character: "seolhwa_fading",
         next: "day4_night_seolhwa_42"
     },
@@ -350,9 +375,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_wake"
     },
     "day4_night_wake": {
+        unskippable: true,
         next: "day4_night_wake_2"
     },
     "day4_night_wake_2": {
+        unskippable: true,
         next: "day4_night_wake_3"
     },
     "day4_night_wake_3": {

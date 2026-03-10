@@ -16,6 +16,7 @@ Object.assign(SCENARIO[5], {
         bgm: "nightmare.mp3",
         character: null,
         glitchLevel: 4,
+        unskippable: true,
         next: "day5_morning_start_2"
     },
     "day5_morning_start_2": {
@@ -56,6 +57,7 @@ Object.assign(SCENARIO[5], {
         background: "school_gate",
         character: null,
         glitch: { noise: true, noiseDuration: 300 },
+        unskippable: true,
         next: "day5_morning_gate_2"
     },
     "day5_morning_gate_2": {
@@ -91,12 +93,15 @@ Object.assign(SCENARIO[5], {
 
     // ── 세 사람 동시 등장 ──
     "day5_morning_gate_12": {
+        unskippable: true,
         next: "day5_morning_gate_13"
     },
     "day5_morning_gate_13": {
+        unskippable: true,
         next: "day5_morning_gate_14"
     },
     "day5_morning_gate_14": {
+        unskippable: true,
         next: "day5_morning_welcome"
     },
     "day5_morning_welcome": {
@@ -111,6 +116,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_welcome_4": {
         character: "sea_smile",
+        unskippable: true,
         next: "day5_morning_welcome_5"
     },
     "day5_morning_welcome_5": {
@@ -135,6 +141,7 @@ Object.assign(SCENARIO[5], {
     "day5_morning_welcome_11": {
         character: null,
         glitch: { expressionFlash: "eunsu_obsessed", flashDuration: 100 },
+        unskippable: true,
         next: "day5_morning_welcome_12"
     },
     "day5_morning_welcome_12": {
@@ -153,6 +160,7 @@ Object.assign(SCENARIO[5], {
     "day5_morning_classroom": {
         background: "classroom",
         character: null,
+        unskippable: true,
         next: "day5_morning_classroom_2"
     },
     "day5_morning_classroom_2": {
@@ -169,6 +177,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_classroom_6": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_class"
     },
     "day5_morning_class": {
@@ -202,6 +211,7 @@ Object.assign(SCENARIO[5], {
     "day5_morning_class_10": {
         character: "eunsu_dark",
         glitch: { screenShake: true, shakeDuration: 300 },
+        unskippable: true,
         next: "day5_morning_class_11"
     },
     "day5_morning_class_11": {
@@ -232,6 +242,7 @@ Object.assign(SCENARIO[5], {
     },
 
     "day5_morning_note": {
+        glitch: { ghostText: "...희망", ghostX: 50, ghostY: 50 },
         next: "day5_morning_note_2"
     },
     "day5_morning_note_2": {

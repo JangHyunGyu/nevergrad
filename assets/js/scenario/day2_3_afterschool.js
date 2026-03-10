@@ -20,6 +20,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_start": {
         background: "classroom",
         character: null,
+        sunset: true,
         next: "day2_after_eunsu_1"
     },
     "day2_after_eunsu_1": {

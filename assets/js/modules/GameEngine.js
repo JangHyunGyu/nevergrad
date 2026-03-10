@@ -167,8 +167,14 @@ class GameEngine {
             return;
         }
 
-        // Scene-level condition: if not met, try _alt variant or walk to next sibling
+        // Scene-level condition: if not met, try fallback → _alt variant → walk to next sibling
         while (scene.condition && !this._checkCondition(scene.condition)) {
+            // fallback 프로퍼티가 있으면 해당 씬으로 이동
+            if (scene.fallback && dayScenario[scene.fallback]) {
+                sceneId = scene.fallback;
+                scene = dayScenario[sceneId];
+                break;
+            }
             const alt = dayScenario[sceneId + '_alt'];
             if (alt) {
                 sceneId = sceneId + '_alt';
@@ -236,6 +242,11 @@ class GameEngine {
 
         // 글리치
         if (scene.glitch) this._handleGlitch(scene.glitch);
+
+        // 엔딩 타이틀
+        if (scene.endingTitle) {
+            this._showEndingTitle(scene.endingTitle, scene.endingSubtitle);
+        }
 
         // ===== i18n에서 텍스트 가져오기 =====
         const t = this.i18n.get(sceneId);
@@ -351,6 +362,30 @@ class GameEngine {
 
             panel.appendChild(btn);
         });
+
+        // 씬 글리치에서 예약된 forceChoice 처리
+        if (typeof this._pendingForceChoice === 'number') {
+            const forcedIdx = this._pendingForceChoice;
+            this._pendingForceChoice = null;
+            const buttons = panel.querySelectorAll('.choice-btn');
+            if (buttons.length > 0) {
+                this.glitch.forceChoice(Array.from(buttons), forcedIdx);
+            }
+        }
+
+        // 씬 글리치에서 예약된 flickerChoice 처리
+        if (this._pendingFlickerChoice) {
+            const { index, text, duration } = this._pendingFlickerChoice;
+            this._pendingFlickerChoice = null;
+            const buttons = panel.querySelectorAll('.choice-btn');
+            const btn = buttons[index];
+            if (btn) {
+                const flickerLabel = this.i18n.get(text)?.text || text;
+                setTimeout(() => {
+                    this.glitch.flickerChoice(btn, flickerLabel, btn.textContent);
+                }, 1500);
+            }
+        }
     }
 
     // ===== Timed Choices (Day 4~5 타이머 선택지) =====
@@ -459,13 +494,62 @@ class GameEngine {
         if (g.noise) this.glitch.screenNoise(g.noiseDuration);
         if (g.silence) this.glitch.silenceDrop(this.renderer.bgmAudio, g.silenceDuration);
         if (g.themeShift) this.glitch.shiftTheme(g.themeShift);
-        if (g.heavy) this.glitch.heavyGlitch(g.heavyDuration);
+        if (g.heavy || g.heavyGlitch) this.glitch.heavyGlitch(g.heavyDuration);
         if (g.ghostText) this.glitch.ghostText(g.ghostText, g.ghostX || 50, g.ghostY || 30);
         if (g.expressionFlash) {
             this.glitch.expressionFlash(
                 document.getElementById('char-center'), g.expressionFlash, g.flashDuration
             );
         }
+        if (g.screenShake) {
+            const gameScreen = document.getElementById('game-screen');
+            if (gameScreen) {
+                gameScreen.classList.add('screen-shake');
+                setTimeout(() => gameScreen.classList.remove('screen-shake'), g.shakeDuration || 500);
+            }
+        }
+        if (g.shatterStatLabel) {
+            const statEl = document.querySelector('.stat-label');
+            if (statEl) this.glitch.shatterStatLabel(statEl);
+        }
+        if (typeof g.forceChoice === 'number') {
+            this._pendingForceChoice = g.forceChoice;
+        }
+        if (typeof g.flickerChoice === 'number') {
+            this._pendingFlickerChoice = {
+                index: g.flickerChoice,
+                text: g.flickerText,
+                duration: g.flickerDuration || 100
+            };
+        }
+    }
+
+    // ===== Ending Title =====
+
+    _showEndingTitle(title, subtitleKey) {
+        const overlay = document.createElement('div');
+        overlay.className = 'ending-title-overlay';
+
+        const titleEl = document.createElement('div');
+        titleEl.className = 'ending-title';
+        titleEl.textContent = title;
+
+        overlay.appendChild(titleEl);
+
+        if (subtitleKey) {
+            const subtitleText = this.i18n.get(subtitleKey)?.text || '';
+            if (subtitleText) {
+                const subEl = document.createElement('div');
+                subEl.className = 'ending-subtitle';
+                subEl.textContent = subtitleText;
+                overlay.appendChild(subEl);
+            }
+        }
+
+        document.getElementById('game-screen')?.appendChild(overlay);
+
+        // 탭 기믹 해제
+        this.glitch.stopTabGimmick();
     }
 
     // ===== Text =====

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const titleBgLayer = document.querySelector('.title-bg-layer');
     if (titleBgLayer) {
         const img = new Image();
-        img.src = 'assets/images/bg/title_bg.png';
+        img.src = 'assets/images/background/title_bg.png';
         img.onerror = () => titleBgLayer.classList.add('no-image');
     }
 

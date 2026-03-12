@@ -23,6 +23,15 @@ class GameEngine {
 
         this.currentSceneData = null;
         this.isTransitioning = false;
+
+        // Quick menu state
+        this.isAutoMode = false;
+        this.isSkipMode = false;
+        this._autoTimer = null;
+        this._skipTimer = null;
+
+        // Backlog
+        this.backlog = [];
     }
 
     async init() {
@@ -41,6 +50,8 @@ class GameEngine {
         this._bindTitleScreen();
         this._bindGameScreen();
         this._bindPauseMenu();
+        this._bindQuickMenu();
+        this._bindBacklog();
 
         if (this.save.hasSaveData()) {
             document.getElementById('btn-continue').disabled = false;
@@ -66,6 +77,10 @@ class GameEngine {
         const subtitleEl = document.querySelector('.title-subtitle');
         if (titleEl) titleEl.textContent = ui('title');
         if (subtitleEl) subtitleEl.textContent = ui('subtitle');
+
+        // 백로그 타이틀
+        const backlogTitle = document.querySelector('.backlog-title');
+        if (backlogTitle) backlogTitle.textContent = ui('backlogTitle') || '대사 기록';
 
         // 메뉴 버튼
         const btnMap = {
@@ -134,9 +149,7 @@ class GameEngine {
             this._advanceScene();
         });
 
-        document.getElementById('btn-menu')?.addEventListener('click', () => {
-            this._showOverlay('pause-menu');
-        });
+        // btn-menu removed — replaced by quick menu
     }
 
     _bindPauseMenu() {
@@ -266,10 +279,20 @@ class GameEngine {
             ? (n, t, cb, o) => this.dialogue.typeMessenger(n, t, cb, o)
             : (n, t, cb, o) => this.dialogue.type(n, t, cb, o);
 
+        // 백로그 기록
+        this._addToBacklog(name, text);
+
+        // 선택지가 표시되면 Auto/Skip 중지
+        const stopAutoOnChoices = () => {
+            this._stopAuto();
+            this._stopSkip();
+        };
+
         // 선택지
         if (scene.choices) {
             const choiceLabels = (t.choices || []).map(l => this.i18n.resolve(l, this.state.playerName));
             typeFn(name, text, () => {
+                stopAutoOnChoices();
                 if (scene.timedChoice) {
                     this._showTimedChoices(scene, choiceLabels);
                 } else {
@@ -280,6 +303,7 @@ class GameEngine {
         // FreeTalk
         else if (scene.type === "free_talk") {
             typeFn(name, text, () => {
+                stopAutoOnChoices();
                 this._startFreeTalk(scene);
             }, typeOpts);
         }
@@ -590,6 +614,138 @@ class GameEngine {
     _hideOverlay(id) {
         const el = document.getElementById(id);
         if (el) { el.classList.add('hidden'); el.classList.remove('active'); }
+    }
+
+    // ===== Quick Menu =====
+
+    _bindQuickMenu() {
+        document.getElementById('qm-auto')?.addEventListener('click', () => this._toggleAuto());
+        document.getElementById('qm-skip')?.addEventListener('click', () => this._toggleSkip());
+        document.getElementById('qm-log')?.addEventListener('click', () => this._showOverlay('backlog-panel'));
+        document.getElementById('qm-save')?.addEventListener('click', () => {
+            this.save.save();
+        });
+        document.getElementById('qm-load')?.addEventListener('click', () => {
+            if (this.save.hasSaveData()) {
+                this.save.load();
+                this._loadScene(this.state.currentScene);
+            }
+        });
+        document.getElementById('qm-menu')?.addEventListener('click', () => {
+            this._stopAuto();
+            this._stopSkip();
+            this._showOverlay('pause-menu');
+        });
+    }
+
+    _toggleAuto() {
+        if (this.isAutoMode) {
+            this._stopAuto();
+        } else {
+            this._stopSkip();
+            this.isAutoMode = true;
+            document.getElementById('qm-auto')?.classList.add('active');
+            this._autoAdvance();
+        }
+    }
+
+    _stopAuto() {
+        this.isAutoMode = false;
+        clearTimeout(this._autoTimer);
+        this._autoTimer = null;
+        document.getElementById('qm-auto')?.classList.remove('active');
+    }
+
+    _autoAdvance() {
+        if (!this.isAutoMode) return;
+        this._autoTimer = setTimeout(() => {
+            if (!this.isAutoMode) return;
+            if (this.dialogue.isTyping) {
+                this._autoAdvance();
+                return;
+            }
+            this._advanceScene();
+            this._autoAdvance();
+        }, 2500);
+    }
+
+    _toggleSkip() {
+        if (this.isSkipMode) {
+            this._stopSkip();
+        } else {
+            this._stopAuto();
+            this.isSkipMode = true;
+            document.getElementById('qm-skip')?.classList.add('active');
+            this._skipAdvance();
+        }
+    }
+
+    _stopSkip() {
+        this.isSkipMode = false;
+        clearTimeout(this._skipTimer);
+        this._skipTimer = null;
+        document.getElementById('qm-skip')?.classList.remove('active');
+    }
+
+    _skipAdvance() {
+        if (!this.isSkipMode) return;
+        this._skipTimer = setTimeout(() => {
+            if (!this.isSkipMode) return;
+            if (this.dialogue.isTyping) {
+                this.dialogue.skipTyping();
+            }
+            this._advanceScene();
+            this._skipAdvance();
+        }, 200);
+    }
+
+    // ===== Backlog =====
+
+    _bindBacklog() {
+        document.getElementById('backlog-close')?.addEventListener('click', () => {
+            this._hideOverlay('backlog-panel');
+        });
+
+        // Click outside to close
+        document.getElementById('backlog-panel')?.addEventListener('click', (e) => {
+            if (e.target.id === 'backlog-panel') {
+                this._hideOverlay('backlog-panel');
+            }
+        });
+    }
+
+    _addToBacklog(name, text) {
+        this.backlog.push({ name, text });
+        // Keep max 100 entries
+        if (this.backlog.length > 100) this.backlog.shift();
+        this._renderBacklog();
+    }
+
+    _renderBacklog() {
+        const container = document.getElementById('backlog-content');
+        if (!container) return;
+
+        container.innerHTML = '';
+        for (const entry of this.backlog) {
+            const div = document.createElement('div');
+            div.className = 'backlog-entry';
+
+            if (entry.name) {
+                const nameEl = document.createElement('div');
+                nameEl.className = 'backlog-entry-name';
+                nameEl.textContent = entry.name;
+                div.appendChild(nameEl);
+            }
+
+            const textEl = document.createElement('div');
+            textEl.className = 'backlog-entry-text';
+            textEl.textContent = entry.text;
+            div.appendChild(textEl);
+
+            container.appendChild(div);
+        }
+
+        container.scrollTop = container.scrollHeight;
     }
 
     // ===== FreeTalk =====

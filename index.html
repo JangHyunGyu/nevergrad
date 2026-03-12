@@ -45,15 +45,21 @@
 <body>
     <!-- ===== Title Screen ===== -->
     <div id="title-screen" class="screen active">
-        <div class="title-bg">
-            <div class="cherry-blossoms" id="cherry-blossoms"></div>
+        <div class="title-bg-layer"></div>
+        <div class="title-bg-vignette"></div>
+        <div class="cherry-blossoms" id="cherry-blossoms"></div>
+        <div class="title-content">
             <h1 class="title-text">졸업하지 못한 교실</h1>
+            <div class="title-divider"></div>
             <p class="title-subtitle">5일의 기록</p>
         </div>
         <div class="title-menu">
             <button id="btn-new-game" class="menu-btn">새 게임</button>
             <button id="btn-continue" class="menu-btn" disabled>이어하기</button>
             <button id="btn-gallery" class="menu-btn">갤러리</button>
+        </div>
+        <div class="title-footer">
+            <span class="title-copyright">NEVERGRAD</span>
         </div>
     </div>
 
@@ -98,8 +104,26 @@
             <div id="stat-display" class="stat-display hidden"></div>
         </div>
 
-        <!-- Menu Button -->
-        <button id="btn-menu" class="ingame-menu-btn">MENU</button>
+        <!-- Quick Menu -->
+        <div id="quick-menu" class="quick-menu">
+            <button id="qm-auto" class="qm-btn">AUTO</button>
+            <button id="qm-skip" class="qm-btn">SKIP</button>
+            <button id="qm-log" class="qm-btn">LOG</button>
+            <button id="qm-save" class="qm-btn">SAVE</button>
+            <button id="qm-load" class="qm-btn">LOAD</button>
+            <button id="qm-menu" class="qm-btn">MENU</button>
+        </div>
+    </div>
+
+    <!-- ===== Backlog Panel ===== -->
+    <div id="backlog-panel" class="screen overlay hidden">
+        <div class="backlog-container">
+            <div class="backlog-header">
+                <span class="backlog-title">대사 기록</span>
+                <button id="backlog-close" class="backlog-close-btn">&times;</button>
+            </div>
+            <div id="backlog-content" class="backlog-content"></div>
+        </div>
     </div>
 
     <!-- ===== Pause Menu ===== -->

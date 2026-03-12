@@ -330,7 +330,15 @@ Object.assign(SCENARIO[5], {
         endingTitle: "CAGE END",
         endingSubtitle: "day5_ending_cage_subtitle",
         unskippable: true,
-        next: null
+        next: "day5_cage_loop"
+    },
+
+    // CAGE END 무한 루프 — 평화로운 일상이 영원히 반복되는 새장
+    "day5_cage_loop": {
+        background: "classroom",
+        bgm: "spring_bright.mp3",
+        character: null,
+        cageLoop: true
     },
 
     // ══════════════════════════════════════════

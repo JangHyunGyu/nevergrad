@@ -32,6 +32,13 @@ class GameEngine {
 
         // Backlog
         this.backlog = [];
+
+        // CAGE END 상태
+        this._cageMode = false;
+        this._cageClickCount = 0;
+        this._cagePool = [];
+        this._cagePoolIndex = 0;
+        this._cageExitBtn = null;
     }
 
     async init() {
@@ -261,6 +268,12 @@ class GameEngine {
             this._showEndingTitle(scene.endingTitle, scene.endingSubtitle);
         }
 
+        // CAGE END 무한 루프 진입
+        if (scene.cageLoop) {
+            this._enterCageMode();
+            return;
+        }
+
         // ===== i18n에서 텍스트 가져오기 =====
         const t = this.i18n.get(sceneId);
         const name = this._resolveName(t.name);
@@ -314,6 +327,12 @@ class GameEngine {
     }
 
     _advanceScene() {
+        // CAGE END 모드에서는 무한 루프 텍스트 출력
+        if (this._cageMode) {
+            this._cageAdvance();
+            return;
+        }
+
         if (!this.currentSceneData) return;
         const scene = this.currentSceneData;
 
@@ -752,5 +771,280 @@ class GameEngine {
 
     _startFreeTalk(scene) {
         console.log('[GameEngine] FreeTalk start:', scene.affinityChar);
+    }
+
+    // ===== CAGE END — 무한 루프 새장 =====
+
+    /**
+     * CAGE END 모드 진입.
+     * Day 1의 밝은 교실로 되돌리고, 퀵 메뉴를 숨기고, 무한 루프 시작.
+     *
+     * 구조:
+     * - 0~30 클릭: 평화로운 문장만 반복
+     * - 30~50: 글리치가 미세하게 섞임
+     * - 50~58: 설화의 목소리 등장
+     * - 60: 화면 구석에 탈출 버튼 서서히 등장
+     */
+    _enterCageMode() {
+        this._cageMode = true;
+        this._cageClickCount = 0;
+
+        // 문장 풀 셔플
+        const lang = this.i18n.currentLang || 'ko';
+        const pool = (typeof CAGE_END_POOL !== 'undefined' && CAGE_END_POOL[lang])
+            ? CAGE_END_POOL[lang]
+            : (typeof CAGE_END_POOL !== 'undefined' ? CAGE_END_POOL.ko : []);
+        this._cagePool = this._shuffleArray([...pool]);
+        this._cagePoolIndex = 0;
+
+        // Day 1 분위기로 복원
+        this.renderer.setBackground(CONFIG.BACKGROUNDS.classroom);
+        this.renderer.clearOverlays();
+        this.renderer.clearCharacters();
+        this.renderer.playBGM('spring_bright.mp3');
+
+        // 글리치 테마를 로맨스로 복원
+        this.glitch.shiftTheme?.('romance');
+
+        // 퀵 메뉴 숨기기
+        const qm = document.getElementById('quick-menu');
+        if (qm) qm.classList.add('cage-hidden');
+
+        // HUD 변경 — "행복한 교실"
+        const dayEl = document.getElementById('day-display');
+        if (dayEl) dayEl.textContent = this._getCageHudText();
+
+        // Auto/Skip 중지
+        this._stopAuto();
+        this._stopSkip();
+
+        // 메타 공포: 탭 제목 변경
+        if (this.meta) {
+            this.meta.deactivate();
+            document.title = this._getCageTabTitle();
+        }
+
+        // 첫 문장 표시
+        this._cageAdvance();
+    }
+
+    /**
+     * CAGE END 모드에서 클릭 시 다음 문장 출력.
+     * 클릭 수에 따라 글리치, 설화 목소리, 탈출 버튼 등장.
+     */
+    _cageAdvance() {
+        if (this.dialogue.isTyping) {
+            this.dialogue.skipTyping();
+            return;
+        }
+
+        this._cageClickCount++;
+        const count = this._cageClickCount;
+
+        // 30~50: 가끔 글리치
+        if (count > 30 && count <= 50 && Math.random() < 0.25) {
+            this.glitch.screenNoise?.(200);
+        }
+
+        // 50~58: 설화 목소리 (5번 중 랜덤)
+        if (count > 50 && count <= 58 && Math.random() < 0.4) {
+            this._cageSeolhwaWhisper();
+            return;
+        }
+
+        // 59: 마지막 설화 메시지
+        if (count === 59) {
+            this._cageSeolhwaFinal();
+            return;
+        }
+
+        // 60: 탈출 버튼 등장 + 일반 문장 계속
+        if (count === 60) {
+            this._cageShowExitButton();
+        }
+
+        // 문장 풀에서 다음 문장 선택
+        const text = this._getNextCageText();
+        const isNarration = text.startsWith('*') && text.endsWith('*');
+        const display = isNarration ? text.slice(1, -1) : text;
+
+        this.dialogue.type('', `*${display}*`, null, {
+            typingSpeed: CONFIG.TYPING_SPEED
+        });
+    }
+
+    /**
+     * CAGE END 설화 속삭임 (50~58 클릭)
+     */
+    _cageSeolhwaWhisper() {
+        const whispers = this._getCageSeolhwaTexts();
+        const idx = Math.floor(Math.random() * whispers.length);
+
+        // 글리치 효과
+        this.glitch.screenNoise?.(300);
+
+        // 캐릭터 잠깐 표시
+        this.renderer.setCharacter('center', CONFIG.EXPRESSIONS.seolhwa?.fade);
+
+        this.dialogue.type('', `*${whispers[idx]}*`, () => {
+            // 1.5초 후 캐릭터 사라짐
+            setTimeout(() => {
+                this.renderer.clearCharacters();
+            }, 1500);
+        }, { typingSpeed: 60, unskippable: true });
+    }
+
+    /**
+     * CAGE END 설화 마지막 메시지 (59 클릭)
+     */
+    _cageSeolhwaFinal() {
+        this.glitch.heavyGlitch?.(500);
+        this.renderer.setCharacter('center', CONFIG.EXPRESSIONS.seolhwa?.fade);
+
+        const finalText = this._getCageSeolhwaFinal();
+
+        this.dialogue.type('', `*${finalText}*`, () => {
+            setTimeout(() => {
+                this.renderer.clearCharacters();
+            }, 2000);
+        }, { typingSpeed: 80, unskippable: true });
+    }
+
+    /**
+     * CAGE END 탈출 버튼 표시 (60 클릭)
+     * 작고 희미하게 시작하여 서서히 밝아지는 [X] 버튼
+     */
+    _cageShowExitButton() {
+        if (this._cageExitBtn) return;
+
+        const gameScreen = document.getElementById('game-screen');
+        if (!gameScreen) return;
+
+        const btn = document.createElement('button');
+        btn.className = 'cage-exit-btn';
+        btn.textContent = '×';
+        btn.title = this._getCageExitTooltip();
+
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this._exitCageMode();
+        });
+
+        gameScreen.appendChild(btn);
+        this._cageExitBtn = btn;
+
+        // 서서히 나타남 (CSS transition)
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                btn.classList.add('cage-exit-visible');
+            });
+        });
+    }
+
+    /**
+     * CAGE END 모드에서 탈출. 타이틀 화면으로 복귀.
+     */
+    _exitCageMode() {
+        this._cageMode = false;
+        this._cageClickCount = 0;
+        this._cagePool = [];
+
+        // 탈출 버튼 제거
+        if (this._cageExitBtn) {
+            this._cageExitBtn.remove();
+            this._cageExitBtn = null;
+        }
+
+        // 퀵 메뉴 복원
+        const qm = document.getElementById('quick-menu');
+        if (qm) qm.classList.remove('cage-hidden');
+
+        // 탭 제목 복원
+        if (this.meta) {
+            document.title = this.meta.originalTitle;
+        }
+
+        // 글리치 연출 후 타이틀로
+        this.glitch.heavyGlitch?.(800);
+        setTimeout(() => {
+            this._showScreen('title-screen');
+        }, 1000);
+    }
+
+    /**
+     * CAGE END 문장 풀에서 다음 문장을 가져옵니다.
+     * 풀 끝에 도달하면 재셔플합니다.
+     */
+    _getNextCageText() {
+        if (this._cagePoolIndex >= this._cagePool.length) {
+            this._cagePool = this._shuffleArray(this._cagePool);
+            this._cagePoolIndex = 0;
+        }
+        return this._cagePool[this._cagePoolIndex++];
+    }
+
+    /**
+     * Fisher-Yates 셔플
+     */
+    _shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
+
+    // ── CAGE END i18n 텍스트 ──
+
+    _getCageHudText() {
+        const map = {
+            ko: '행복한 교실', en: 'Happy Classroom', ja: '幸せな教室',
+            es: 'Aula Feliz', fr: 'Classe Heureuse', de: 'Glückliches Klassenzimmer'
+        };
+        return map[this.i18n.currentLang] || map.ko;
+    }
+
+    _getCageTabTitle() {
+        const map = {
+            ko: '졸업하지 못한 교실 — 행복한 매일',
+            en: 'The Classroom — Happy Every Day',
+            ja: '卒業できない教室 — 幸せな毎日',
+            es: 'El Aula — Feliz Cada Día',
+            fr: 'La Classe — Heureux Chaque Jour',
+            de: 'Das Klassenzimmer — Glücklich Jeden Tag'
+        };
+        return map[this.i18n.currentLang] || map.ko;
+    }
+
+    _getCageSeolhwaTexts() {
+        const map = {
+            ko: ['...여기서 나가.', '이건 진짜가 아니야.', '기억해. 너는 13번째야.', '눈을 떠.', '...나를 기억해?'],
+            en: ['...Get out of here.', 'This isn\'t real.', 'Remember. You are the 13th.', 'Open your eyes.', '...Do you remember me?'],
+            ja: ['...ここから出て.', 'これは本物じゃない.', '思い出して。あなたは13番目.', '目を覚まして.', '...私を覚えてる？'],
+            es: ['...Sal de aquí.', 'Esto no es real.', 'Recuerda. Eres el 13°.', 'Abre los ojos.', '...¿Me recuerdas?'],
+            fr: ['...Sors d\'ici.', 'Ce n\'est pas réel.', 'Souviens-toi. Tu es le 13e.', 'Ouvre les yeux.', '...Tu te souviens de moi ?'],
+            de: ['...Geh hier raus.', 'Das ist nicht echt.', 'Erinnere dich. Du bist der 13.', 'Öffne die Augen.', '...Erinnerst du dich an mich?']
+        };
+        return map[this.i18n.currentLang] || map.ko;
+    }
+
+    _getCageSeolhwaFinal() {
+        const map = {
+            ko: '...화면 오른쪽 위를 봐. 내가 길을 열어놨어.',
+            en: '...Look at the top right of the screen. I opened a way out.',
+            ja: '...画面の右上を見て。道を開けておいたから。',
+            es: '...Mira la esquina superior derecha. Abrí una salida.',
+            fr: '...Regarde en haut à droite. J\'ai ouvert un passage.',
+            de: '...Schau oben rechts. Ich habe einen Weg geöffnet.'
+        };
+        return map[this.i18n.currentLang] || map.ko;
+    }
+
+    _getCageExitTooltip() {
+        const map = {
+            ko: '나가기', en: 'Exit', ja: '出る',
+            es: 'Salir', fr: 'Sortir', de: 'Raus'
+        };
+        return map[this.i18n.currentLang] || map.ko;
     }
 }

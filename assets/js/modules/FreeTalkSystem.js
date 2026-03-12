@@ -3,26 +3,24 @@
  * FreeTalkSystem.js - AI 인터랙션 시스템
  * ============================================================================
  *
- * 3가지 AI 상호작용 모드를 처리합니다:
+ * 3가지 인터랙션 모드를 처리합니다:
  *
- * 1. 자유 입력 가스라이팅 ("변명해 봐")
- *    - 플레이어가 자유 텍스트를 입력하면, NPC AI가 개인화된 가스라이팅으로 반응
+ * 1. 자유 입력 가스라이팅 ("변명해 봐") — 고정 스크립트
+ *    - 플레이어가 자유 텍스트를 입력하면, 사전 작성된 대사로 반응
  *    - 은수(담임) / 세아(반장) 두 캐릭터 지원
  *
- * 2. AI 페르소나 메신저
+ * 2. 페르소나 메신저 — 고정 스크립트
  *    - '민수'와의 카톡 대화 (실제로는 학교 감시자가 빼앗은 계정)
- *    - 극도로 건조하고 미묘하게 어긋나는 답변
+ *    - 사전 작성된 건조하고 어긋나는 답변
  *
- * 3. 커스텀 악몽 생성
+ * 3. 커스텀 악몽 생성 — AI 사용 (유일한 API 호출)
  *    - 플레이어의 플레이 히스토리 플래그를 기반으로 개인화된 악몽 텍스트 생성
  *    - Day 1~3 행동을 뒤틀어 반영한 5문장 악몽 시퀀스
+ *    - 네트워크 오류 시 하드코딩된 폴백 사용
  *
- * [API 구조]
- * - 엔드포인트: CONFIG.API_ENDPOINT (Cloudflare Worker)
- * - 요청: POST { app_type, prompt, message }
- * - 응답: { reply: "JSON 문자열" }
- * - 네트워크 오류 시 항상 하드코딩된 폴백 응답 사용
- * - API 지연은 타이핑 인디케이터 또는 글리치 효과로 위장
+ * [설계 결정]
+ * - 심문/메신저: 작가가 쓴 고정 대사가 AI보다 퀄리티 높음 + 요금 절감
+ * - 악몽: 개인화 가치가 높아 AI 유지 (게임 전체 1회 호출)
  */
 
 class FreeTalkSystem {
@@ -99,16 +97,13 @@ class FreeTalkSystem {
     }
 
     /**
-     * 플레이어의 심문 응답을 AI에게 전송하고 결과를 처리합니다.
+     * 플레이어의 심문 응답을 처리합니다 (고정 스크립트 사용).
      *
      * 처리 흐름:
-     * 1. CHARACTER_PROMPTS + AI_PROMPTS.interrogation 기반 시스템 프롬프트 빌드
-     * 2. 대화 히스토리 포함 API 호출
-     * 3. 응답 파싱 → { text, emotion, danger_delta }
-     * 4. danger_delta를 state에 반영
-     * 5. 적절한 표정으로 응답 표시
-     * 6. maxTurns 도달 시 자동으로 다음 씬 진행
-     * 7. 오류 시 FALLBACK_RESPONSES 사용
+     * 1. FALLBACK_RESPONSES에서 턴에 맞는 응답 선택
+     * 2. danger_delta를 state에 반영
+     * 3. 타이핑 인디케이터 → 대사 표시
+     * 4. maxTurns 도달 시 자동으로 다음 씬 진행
      *
      * @param {string} userInput - 플레이어가 입력한 텍스트
      */
@@ -119,67 +114,22 @@ class FreeTalkSystem {
         this.isWaiting = true;
         this._hideInputUI();
 
-        // 대화 히스토리에 유저 메시지 추가
-        this.conversationHistory.push({ role: 'user', content: userInput.trim() });
-
-        // 시스템 프롬프트 빌드 — 캐릭터 설정 + AI 심문 프롬프트 결합
-        const charPrompt = CHARACTER_PROMPTS[this.currentChar];
-        const aiPrompt = AI_PROMPTS.interrogation[this.currentChar]
-            .replace(/\{name\}/g, this.state.playerName || '학생');
-
-        const systemPrompt = `[캐릭터 설정]\n표면: ${charPrompt.surface}\n이면: ${charPrompt.hidden}\n\n[상황]\n${this.sceneContext}\n\n${aiPrompt}`;
-
-        // 대화 히스토리를 하나의 메시지로 결합
-        const historyText = this.conversationHistory
-            .map(h => h.role === 'user' ? `학생: ${h.content}` : `응답: ${h.content}`)
-            .join('\n');
-
-        // 타이핑 인디케이터 표시 (API 지연 위장)
+        // 타이핑 인디케이터 표시 (응답 지연 연출)
         const charName = this.currentChar === 'eunsu' ? '박은수' : '한세아';
         this._showTypingIndicator(charName);
 
-        try {
-            const raw = await this._callAPI(systemPrompt, historyText);
-            this._hideTypingIndicator();
+        // 1~2초 대기 (사람이 생각하고 답하는 느낌)
+        await this._delay(1000 + Math.random() * 1000);
+        this._hideTypingIndicator();
 
-            /** @type {{ text: string, emotion: string, danger_delta: number }} */
-            let parsed;
-            try {
-                parsed = typeof raw === 'string' ? JSON.parse(raw) : raw;
-            } catch {
-                throw new Error('JSON 파싱 실패');
-            }
-
-            // 응답 유효성 검증
-            if (!parsed.text || !parsed.emotion || parsed.danger_delta == null) {
-                throw new Error('응답 형식 불일치');
-            }
-
-            // 대화 히스토리에 AI 응답 추가
-            this.conversationHistory.push({ role: 'assistant', content: parsed.text });
-
-            // danger_delta를 state에 반영
-            const delta = Math.max(1, Math.min(
-                this.currentChar === 'sea' ? 5 : 3,
-                parseInt(parsed.danger_delta) || 1
-            ));
-            this.state.changeStat(this.currentChar, 'danger', delta);
-
-            // 대사 표시
-            this._displayResponse(charName, parsed.text);
-
-        } catch (err) {
-            console.warn('[FreeTalkSystem] API 오류, 폴백 사용:', err.message);
-            this._hideTypingIndicator();
-            this._useFallbackInterrogation();
-        }
+        // 고정 스크립트 응답
+        this._useFallbackInterrogation();
 
         this.turnCount++;
         this.isWaiting = false;
 
         // 최대 턴 도달 확인
         if (this.turnCount >= this.maxTurns) {
-            // 잠시 후 자동으로 다음 씬 진행
             setTimeout(() => {
                 this.cleanup();
                 if (this.nextSceneId && this.engine._loadScene) {
@@ -187,7 +137,6 @@ class FreeTalkSystem {
                 }
             }, 2000);
         } else {
-            // 다음 입력 대기
             setTimeout(() => {
                 const placeholder = this.currentChar === 'eunsu'
                     ? '변명해 봐... (자유 입력)'
@@ -239,14 +188,12 @@ class FreeTalkSystem {
     }
 
     /**
-     * 메신저 메시지를 전송하고 AI 응답을 처리합니다.
+     * 메신저 메시지를 처리합니다 (고정 스크립트 사용).
      *
      * 처리 흐름:
-     * 1. AI_PROMPTS.messenger[personaId] 기반 프롬프트 사용
-     * 2. API 호출 후 typingDelay(3000~8000ms)만큼 타이핑 인디케이터 표시
-     * 3. 의도적으로 짧고 불안한 응답 표시
-     * 4. maxTurns 도달 시 "읽음" 뱃지만 표시, 더 이상 응답 없음
-     * 5. 오류 시 FALLBACK_RESPONSES.messenger 사용
+     * 1. FALLBACK_RESPONSES에서 턴에 맞는 응답 선택
+     * 2. typingDelay만큼 타이핑 인디케이터 표시
+     * 3. maxTurns 도달 시 "읽음" 뱃지만 표시
      *
      * @param {string} userInput - 플레이어가 입력한 메시지
      */
@@ -257,9 +204,6 @@ class FreeTalkSystem {
         this.isWaiting = true;
         this._hideInputUI();
 
-        // 대화 히스토리에 유저 메시지 추가
-        this.conversationHistory.push({ role: 'user', content: userInput.trim() });
-
         // maxTurns 도달 — "읽음" 뱃지만 표시
         if (this.turnCount >= this.maxTurns) {
             this._showReadBadge();
@@ -267,62 +211,19 @@ class FreeTalkSystem {
             return;
         }
 
-        // 시스템 프롬프트 빌드
-        const aiPrompt = AI_PROMPTS.messenger[this.currentChar];
-
-        // 대화 히스토리 결합
-        const historyText = this.conversationHistory
-            .map(h => h.role === 'user' ? `유저: ${h.content}` : `민수: ${h.content}`)
-            .join('\n');
-
         // 타이핑 인디케이터 표시 (상대방이 입력 중)
         this._showTypingIndicator('민수');
 
-        try {
-            const raw = await this._callAPI(aiPrompt, historyText);
-
-            /** @type {{ text: string, typingDelay: number }} */
-            let parsed;
-            try {
-                parsed = typeof raw === 'string' ? JSON.parse(raw) : raw;
-            } catch {
-                throw new Error('JSON 파싱 실패');
-            }
-
-            if (!parsed.text) {
-                throw new Error('응답 형식 불일치');
-            }
-
-            // typingDelay: 3000~8000ms 사이로 클램핑
-            const typingDelay = Math.max(3000, Math.min(8000, parsed.typingDelay || 5000));
-
-            // 대화 히스토리에 AI 응답 추가
-            this.conversationHistory.push({ role: 'assistant', content: parsed.text });
-
-            // 타이핑 딜레이 후 메시지 표시 (실제 사람이 타이핑하는 것처럼)
-            await this._delay(typingDelay);
-            this._hideTypingIndicator();
-            this._displayResponse('민수', parsed.text);
-
-        } catch (err) {
-            console.warn('[FreeTalkSystem] 메신저 API 오류, 폴백 사용:', err.message);
-            this._useFallbackMessenger();
-        }
+        // 고정 스크립트 응답 (typingDelay 포함)
+        await this._useFallbackMessenger();
 
         this.turnCount++;
         this.isWaiting = false;
 
-        // 다음 입력 대기 (maxTurns 미도달 시)
-        if (this.turnCount < this.maxTurns) {
-            setTimeout(() => {
-                this._showInputUI('메시지를 입력하세요...');
-            }, 1000);
-        } else {
-            // 마지막 턴 — 다음 입력 시 "읽음"만 표시될 것임
-            setTimeout(() => {
-                this._showInputUI('메시지를 입력하세요...');
-            }, 1000);
-        }
+        // 다음 입력 대기
+        setTimeout(() => {
+            this._showInputUI('메시지를 입력하세요...');
+        }, 1000);
     }
 
     /**

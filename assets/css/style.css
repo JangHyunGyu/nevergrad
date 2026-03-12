@@ -666,6 +666,57 @@ body {
     border-radius: 2px;
 }
 
+/* ===== CAGE END — 새장 엔딩 ===== */
+
+/* 퀵 메뉴 숨기기 (CAGE 모드) */
+.cage-hidden {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.5s ease;
+}
+
+/* 탈출 버튼 — 오른쪽 상단에 작고 희미하게 등장 */
+.cage-exit-btn {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    z-index: 25;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: 1px solid rgba(200, 162, 200, 0);
+    color: rgba(200, 162, 200, 0);
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* 서서히 나타남 */
+.cage-exit-btn.cage-exit-visible {
+    border-color: rgba(200, 162, 200, 0.35);
+    color: rgba(200, 162, 200, 0.35);
+    animation: cage-exit-pulse 3s ease-in-out infinite;
+}
+
+.cage-exit-btn.cage-exit-visible:hover {
+    border-color: rgba(200, 162, 200, 0.8);
+    color: rgba(200, 162, 200, 0.9);
+    background: rgba(200, 162, 200, 0.1);
+    text-shadow: 0 0 8px rgba(200, 162, 200, 0.5);
+    transition: all 0.3s ease;
+}
+
+@keyframes cage-exit-pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .title-text { font-size: 1.8rem; }

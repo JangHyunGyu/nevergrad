@@ -358,8 +358,8 @@ body {
 
 .character-sprite {
     position: absolute;
-    bottom: 0;
-    height: 85%;
+    bottom: 10%;
+    height: 80%;
     object-fit: contain;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }

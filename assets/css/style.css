@@ -77,12 +77,24 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: url('../images/bg/title_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 이미지 위에 어두운 오버레이를 얹어 텍스트 가독성 확보 */
+    filter: brightness(0.45) saturate(0.8);
+    animation: title-bg-breathe 8s ease-in-out infinite;
+}
+
+/* 타이틀 이미지 미로드 시 CSS 그라디언트 폴백 */
+.title-bg-layer.no-image {
+    background-image: none;
+    filter: none;
     background:
         radial-gradient(ellipse at 30% 20%, rgba(255, 183, 197, 0.15) 0%, transparent 50%),
         radial-gradient(ellipse at 70% 80%, rgba(180, 130, 200, 0.12) 0%, transparent 50%),
         radial-gradient(ellipse at 50% 50%, rgba(255, 105, 180, 0.08) 0%, transparent 70%),
         linear-gradient(180deg, #0f0010 0%, #1a0520 30%, #0d0018 70%, #050008 100%);
-    animation: title-bg-breathe 8s ease-in-out infinite;
 }
 
 @keyframes title-bg-breathe {

@@ -13,6 +13,14 @@
  */
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // 타이틀 배경 이미지 로드 체크 — 이미지 없으면 CSS 그라디언트 폴백
+    const titleBgLayer = document.querySelector('.title-bg-layer');
+    if (titleBgLayer) {
+        const img = new Image();
+        img.src = 'assets/images/bg/title_bg.png';
+        img.onerror = () => titleBgLayer.classList.add('no-image');
+    }
+
     const game = new GameEngine();
 
     // 디바이스 기믹 시스템 초기화

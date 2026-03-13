@@ -644,10 +644,168 @@ class GlitchSystemAdvanced {
                 break;
             }
 
+            // ===== Day 4 밤: 세이브 파일 강제 오픈 =====
+            // 핸드폰 화면이 혼자 켜지며 12개의 이전 주기 폭로
+            case 'day4_night_save_slot': {
+                this.setLevel('BREAKING');
+
+                // 화면 흔들림 + 노이즈로 시작
+                await this.showScreenShake(500);
+                await this.showNoise(300);
+
+                // 세이브 슬롯 UI 표시
+                const playerName = this.engine?.state?.playerName || '{name}';
+                if (this.engine?.save) {
+                    await this.showSaveSlotGlitch(this.engine.save, playerName);
+                }
+
+                // 닫힌 후 글리치 여운
+                await this.showHeavyGlitch(800);
+                break;
+            }
+
             default:
                 console.warn(`[GlitchSystemAdvanced] 알 수 없는 트리거 키: ${key}`);
                 break;
         }
+    }
+
+    // =========================================================================
+    // 세이브 슬롯 글리치 UI (Day 4 밤 연출)
+    // =========================================================================
+
+    /**
+     * Day 4 밤: 세이브 파일 강제 오픈 연출
+     * 핸드폰 화면이 갑자기 켜지며 13개 슬롯이 드러남
+     *
+     * @param {SaveManager} saveManager - 세이브 매니저 인스턴스
+     * @param {string} playerName - 현재 플레이어 이름
+     * @returns {Promise<void>} 유저가 닫을 때까지 대기
+     */
+    async showSaveSlotGlitch(saveManager, playerName) {
+        const overlay = document.getElementById('save-slot-overlay');
+        const list = document.getElementById('save-slot-list');
+        if (!overlay || !list) return;
+
+        // 슬롯 데이터 생성
+        const slots = saveManager.getSubjectSlots(playerName);
+
+        // 기존 내용 클리어
+        list.innerHTML = '';
+
+        // 화면 진동 (모바일)
+        if (this.engine?.deviceGimmick) {
+            this.engine.deviceGimmick.vibrate('pulse');
+        }
+
+        // 오버레이 표시
+        overlay.classList.remove('hidden');
+
+        // 글리치 사운드 (있으면)
+        await this.showNoise(200);
+
+        // 슬롯 하나씩 순차 표시 (타자기 효과)
+        for (let i = 0; i < slots.length; i++) {
+            const slot = slots[i];
+            const item = document.createElement('div');
+            item.className = `save-slot-item ${slot.statusClass}`;
+            item.style.animationDelay = `${i * 0.08}s`;
+            item.style.position = 'relative';
+
+            item.innerHTML = `
+                <span class="slot-number">[${String(slot.number).padStart(2, '0')}]</span>
+                <div class="slot-info">
+                    <span class="slot-name">${slot.name}</span>
+                    <span class="slot-day">${slot.day} ${slot.time}</span>
+                </div>
+                <span class="slot-status">${slot.status}</span>
+            `;
+
+            // 클릭 시 "로드 거절" 연출
+            item.addEventListener('click', () => {
+                this._handleSlotClick(item, slot);
+            });
+
+            list.appendChild(item);
+
+            // 7번 슬롯(corrupted)에서 잠깐 멈춤 + 노이즈
+            if (slot.number === 7) {
+                await this._sleep(300);
+                await this.showNoise(150);
+            }
+        }
+
+        // NG+ 모드: 슬롯 13이 잠깐 1회차 결과를 보여줌
+        if (slots[12].ngPlusFlash) {
+            await this._sleep(800);
+            const slot13 = list.children[12];
+            if (slot13) {
+                const statusEl = slot13.querySelector('.slot-status');
+                const origStatus = statusEl.textContent;
+                const origClass = slot13.className;
+
+                // 0.5초간 1회차 결과 플래시
+                statusEl.textContent = slots[12].ngPlusFlash.status;
+                slot13.className = `save-slot-item ${slots[12].ngPlusFlash.statusClass} ng-flash`;
+
+                await this._sleep(500);
+
+                // 원래대로 복구
+                statusEl.textContent = origStatus;
+                slot13.className = origClass;
+            }
+        }
+
+        // 유저가 닫을 때까지 대기 (ESC 또는 클릭으로 닫기)
+        return new Promise((resolve) => {
+            const closeHandler = (e) => {
+                // 슬롯 아이템 클릭은 무시 (로드 거절 연출이 처리)
+                if (e.target.closest('.save-slot-item')) return;
+
+                // ESC 키 또는 배경 클릭으로 닫기
+                if (e.type === 'keydown' && e.key !== 'Escape') return;
+
+                overlay.classList.add('hidden');
+                document.removeEventListener('keydown', closeHandler);
+                overlay.removeEventListener('click', closeHandler);
+                resolve();
+            };
+
+            // 3초 후에 닫기 활성화 (바로 닫히는 것 방지)
+            const timer = setTimeout(() => {
+                document.addEventListener('keydown', closeHandler);
+                overlay.addEventListener('click', closeHandler);
+            }, 3000);
+            this._activeTimers.push(timer);
+        });
+    }
+
+    /**
+     * 슬롯 클릭 시 "로드 불가" 연출
+     * @private
+     */
+    _handleSlotClick(item, slot) {
+        // 이미 거절 메시지가 있으면 무시
+        if (item.querySelector('.slot-denied-msg')) return;
+
+        // 흔들림 애니메이션
+        item.classList.add('load-denied');
+        setTimeout(() => item.classList.remove('load-denied'), 400);
+
+        // 거절 메시지
+        let msg = '권한이 없습니다.';
+        if (slot.number === 7) {
+            msg = '해당 데이터는 손상되었습니다.';
+        } else if (slot.statusClass === 'active') {
+            msg = '진행 중...';
+        }
+
+        const msgEl = document.createElement('span');
+        msgEl.className = 'slot-denied-msg';
+        msgEl.textContent = msg;
+        item.appendChild(msgEl);
+
+        setTimeout(() => msgEl.remove(), 1500);
     }
 
     // =========================================================================

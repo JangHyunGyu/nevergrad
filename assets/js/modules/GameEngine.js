@@ -17,6 +17,7 @@ class GameEngine {
         this.save = new SaveManager(this.state);
         this.i18n = new I18nManager();
         this.renderer = new SceneRenderer();
+        this.audio = new AudioManager();
         this.dialogue = new DialogueSystem();
         this.choices = new ChoiceSystem();
         this.glitch = new GlitchSystem();
@@ -42,6 +43,13 @@ class GameEngine {
     }
 
     async init() {
+        // 오디오 시스템 초기화
+        this.audio.init();
+        this.renderer.audio = this.audio;
+
+        // SFX 미리 로드
+        this.audio.preloadSFX(['affinity_up.mp3', 'affinity_down.mp3']);
+
         // 언어 감지 (URL 파라미터 또는 브라우저 언어)
         const urlLang = new URLSearchParams(location.search).get('lang');
         const lang = window.__NEVERGRAD_LANG__ || urlLang || navigator.language?.slice(0, 2) || 'ko';
@@ -535,7 +543,14 @@ class GameEngine {
     _handleGlitch(g) {
         if (!g) return;
         if (g.noise) this.glitch.screenNoise(g.noiseDuration);
-        if (g.silence) this.glitch.silenceDrop(this.renderer.bgmAudio, g.silenceDuration);
+        if (g.silence) {
+            // AudioManager 우선, 폴백: 레거시 HTML5 Audio
+            if (this.audio?.ctx) {
+                this.audio.silenceDrop(g.silenceDuration);
+            } else {
+                this.glitch.silenceDrop(this.renderer.bgmAudio, g.silenceDuration);
+            }
+        }
         if (g.themeShift) this.glitch.shiftTheme(g.themeShift);
         if (g.heavy || g.heavyGlitch) this.glitch.heavyGlitch(g.heavyDuration);
         if (g.ghostText) this.glitch.ghostText(g.ghostText, g.ghostX || 50, g.ghostY || 30);

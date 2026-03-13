@@ -846,3 +846,217 @@ body.cursor-slowed * {
     opacity: 0.3;
     pointer-events: none;
 }
+
+/* =========================================================================
+   Save Slot Glitch UI — Day 4 세이브파일 강제 오픈 연출
+   ========================================================================= */
+
+#save-slot-overlay {
+    z-index: 55;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slot-overlay-appear 0.8s ease forwards;
+}
+
+#save-slot-overlay.hidden {
+    display: none;
+}
+
+@keyframes slot-overlay-appear {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    35% { opacity: 0.3; }
+    40% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.save-slot-container {
+    width: min(90vw, 700px);
+    max-height: 85vh;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+    color: #00ff41;
+    scrollbar-width: thin;
+    scrollbar-color: #00ff41 #0a0a0a;
+}
+
+.save-slot-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #00ff4140;
+    padding-bottom: 12px;
+}
+
+.save-slot-title {
+    display: block;
+    font-size: 1.4em;
+    letter-spacing: 6px;
+    animation: slot-title-glitch 3s infinite;
+}
+
+.save-slot-subtitle {
+    display: block;
+    font-size: 0.75em;
+    color: #00ff4160;
+    margin-top: 4px;
+    letter-spacing: 2px;
+}
+
+@keyframes slot-title-glitch {
+    0%, 92%, 100% { text-shadow: none; transform: none; }
+    93% { text-shadow: -2px 0 #ff0040, 2px 0 #00f0ff; transform: skewX(-2deg); }
+    95% { text-shadow: 2px 0 #ff0040, -2px 0 #00f0ff; transform: skewX(1deg); }
+    96% { text-shadow: none; transform: none; }
+}
+
+/* Individual slot */
+.save-slot-item {
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 14px;
+    margin: 4px 0;
+    background: rgba(0, 255, 65, 0.03);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: 0.85em;
+    opacity: 0;
+    animation: slot-item-reveal 0.3s ease forwards;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.save-slot-item:hover {
+    border-color: #00ff4130;
+    background: rgba(0, 255, 65, 0.06);
+}
+
+@keyframes slot-item-reveal {
+    0% { opacity: 0; transform: translateX(-10px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.slot-number {
+    font-weight: bold;
+    color: #00ff4180;
+    text-align: center;
+}
+
+.slot-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.slot-name {
+    color: #00ff41;
+    font-weight: bold;
+}
+
+.slot-day {
+    font-size: 0.8em;
+    color: #00ff4160;
+}
+
+.slot-status {
+    text-align: right;
+    font-size: 0.8em;
+    padding: 3px 8px;
+    border-radius: 2px;
+}
+
+/* Status classes */
+.save-slot-item.completed .slot-status {
+    color: #808080;
+}
+
+.save-slot-item.failed .slot-status {
+    color: #ff6644;
+}
+
+.save-slot-item.corrupted {
+    animation: slot-item-reveal 0.3s ease forwards, slot-corrupt-flicker 2s infinite;
+}
+
+.save-slot-item.corrupted .slot-status {
+    color: #ff0040;
+    text-shadow: 0 0 5px #ff004080;
+}
+
+.save-slot-item.corrupted .slot-name {
+    color: #ff8844;
+}
+
+@keyframes slot-corrupt-flicker {
+    0%, 90%, 100% { opacity: 1; }
+    92% { opacity: 0.4; }
+    94% { opacity: 1; }
+    95% { opacity: 0.6; transform: skewX(-1deg); }
+    96% { opacity: 1; transform: none; }
+}
+
+.save-slot-item.active {
+    border-color: #00ff41;
+    background: rgba(0, 255, 65, 0.08);
+    animation: slot-item-reveal 0.3s ease forwards, slot-active-pulse 1.5s ease infinite;
+}
+
+.save-slot-item.active .slot-name {
+    color: #ffffff;
+    text-shadow: 0 0 8px #00ff4180;
+}
+
+.save-slot-item.active .slot-status {
+    color: #00ff41;
+    font-weight: bold;
+}
+
+@keyframes slot-active-pulse {
+    0%, 100% { border-color: #00ff41; box-shadow: none; }
+    50% { border-color: #00ff41aa; box-shadow: 0 0 10px #00ff4120; }
+}
+
+/* Graduated (TRUE END 이후) */
+.save-slot-item.graduated .slot-status {
+    color: #ffcc00;
+}
+
+.save-slot-item.graduated {
+    border-color: #ffcc0040;
+}
+
+/* NG+ flash: 1회차 결과 잠깐 보였다 사라지는 효과 */
+.save-slot-item.ng-flash {
+    animation: slot-ng-flash 0.6s ease forwards;
+}
+
+@keyframes slot-ng-flash {
+    0% { opacity: 1; }
+    30% { background: rgba(255, 0, 64, 0.15); }
+    100% { background: rgba(0, 255, 65, 0.08); }
+}
+
+/* Load attempt (클릭 시 거절) */
+.save-slot-item.load-denied {
+    animation: slot-load-denied 0.4s ease;
+}
+
+@keyframes slot-load-denied {
+    0%, 100% { transform: none; }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-2px); }
+}
+
+.slot-denied-msg {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff0040;
+    font-size: 0.75em;
+    animation: ghost-fade 1.5s ease forwards;
+    pointer-events: none;
+}

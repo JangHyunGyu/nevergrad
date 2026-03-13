@@ -149,6 +149,19 @@
         <div id="ft-turns" class="ft-turns"></div>
     </div>
 
+    <!-- ===== Save Slot Glitch UI (Day 4 세이브파일 강제 오픈) ===== -->
+    <div id="save-slot-overlay" class="screen overlay hidden">
+        <div class="save-slot-container">
+            <div class="save-slot-header">
+                <span class="save-slot-title">SAVE DATA</span>
+                <span class="save-slot-subtitle">— Project Nevergrad —</span>
+            </div>
+            <div id="save-slot-list" class="save-slot-list">
+                <!-- JS로 13개 슬롯 동적 생성 -->
+            </div>
+        </div>
+    </div>
+
     <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->
     <div id="rotate-prompt" class="rotate-prompt">
         <div class="rotate-icon">📱</div>
@@ -189,6 +202,7 @@
     <script src="assets/js/modules/StateManager.js"></script>
     <script src="assets/js/modules/SaveManager.js"></script>
     <script src="assets/js/modules/I18nManager.js"></script>
+    <script src="assets/js/modules/AudioManager.js"></script>
     <script src="assets/js/modules/SceneRenderer.js"></script>
     <script src="assets/js/modules/DialogueSystem.js"></script>
     <script src="assets/js/modules/ChoiceSystem.js"></script>

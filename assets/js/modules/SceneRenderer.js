@@ -11,6 +11,11 @@ class SceneRenderer {
         this.charLeft = document.getElementById('char-left');
         this.charCenter = document.getElementById('char-center');
         this.charRight = document.getElementById('char-right');
+
+        /** @type {AudioManager|null} Web Audio API 매니저 (외부에서 주입) */
+        this.audio = null;
+
+        // 레거시 호환 (GlitchSystem.silenceDrop 등에서 참조)
         this.bgmAudio = null;
     }
 
@@ -87,6 +92,12 @@ class SceneRenderer {
     }
 
     playBGM(src) {
+        // AudioManager가 있으면 크로스페이드 재생
+        if (this.audio) {
+            this.audio.playBGM(src);
+            return;
+        }
+        // 폴백: HTML5 Audio
         if (this.bgmAudio) {
             this.bgmAudio.pause();
         }
@@ -97,9 +108,31 @@ class SceneRenderer {
     }
 
     stopBGM() {
+        if (this.audio) {
+            this.audio.stopBGM();
+            return;
+        }
         if (this.bgmAudio) {
             this.bgmAudio.pause();
             this.bgmAudio = null;
+        }
+    }
+
+    playSFX(src, options) {
+        if (this.audio) {
+            this.audio.playSFX(src, options);
+        }
+    }
+
+    playAmbient(src, fadeIn) {
+        if (this.audio) {
+            this.audio.playAmbient(src, fadeIn);
+        }
+    }
+
+    stopAmbient(fadeOut) {
+        if (this.audio) {
+            this.audio.stopAmbient(fadeOut);
         }
     }
 }

@@ -1,175 +1,292 @@
 {
-    "day2_morning_start": {
+    "day2_morning_wakeup_1": {
         "name": "Ich",
-        "text": "*Der Wecker weckt mich. Tag 2.*"
+        "text": "*Der Wecker klingelt. Ich öffne die Augen. Tag 2.*"
     },
-    "day2_morning_2": {
+    "day2_morning_wakeup_2": {
         "name": "Ich",
-        "text": "*Weniger nervös als gestern. Mein Körper beginnt sich an den Schulrhythmus zu gewöhnen.*"
+        "text": "*Weniger nervös als gestern. Vielleicht gewöhnt sich mein Körper langsam an den Schulrhythmus.*"
     },
-    "day2_morning_3": {
+    "day2_morning_wakeup_3": {
         "name": "Ich",
-        "text": "*Ich wasche mein Gesicht und schau in den Spiegel. Nicht schlecht. Mein Gesichtsausdruck ist heller als gestern.*"
+        "text": "*Ich überprüfe mein Handy.*"
     },
-    "day2_morning_4": {
+    "day2_morning_wakeup_4": {
         "name": "Ich",
-        "text": "*Ich checke mein Handy.*"
+        "text": "*Der Gruppenchat der alten Schule... die Lesebestätigungen sind gestiegen. 'Gelesen von 3'. Sie haben es gelesen, aber niemand hat geantwortet.*"
     },
-    "day2_morning_5": {
+    "day2_morning_wakeup_5": {
         "name": "Ich",
-        "text": "*Alte Schulfreunde... immer noch keine Nachrichten. Meine Texte im Gruppenchat zeigen 'Gelesen 0.'*"
+        "text": "*Auch von Minsu noch keine Antwort.*"
     },
-    "day2_morning_6": {
+    "day2_morning_wakeup_6": {
         "name": "Ich",
-        "text": "*...Seltsam. Minsu hat auch nicht geantwortet. Unmöglich, dass er mehr als 24 Stunden seine Nachrichten nicht checkt.*"
-    },
-    "day2_morning_7": {
-        "name": "Ich",
-        "text": "*Vielleicht ist Prüfungszeit. Ich versuch's später nochmal.*"
-    },
-    "day2_morning_8": {
-        "name": "Ich",
-        "text": "*Eine Nachricht von Sea. Gesendet um 1 Uhr morgens. 'Schlaf gut~' ...1 Uhr morgens? Sie muss lange aufgeblieben sein.*"
+        "text": "*Eine Nachricht von Sea. Um 1 Uhr nachts gesendet. 'Gute Nacht~'*"
     },
 
-    "day2_morning_9": {
+    "day2_morning_wakeup_7": {
         "name": "Ich",
-        "text": "*Ich komme am Schultor an und... Sea steht dort.*"
+        "text": "*Ich komme am Schultor an... und Sea steht da.*"
     },
-    "day2_morning_sea_1": {
+    "day2_morning_gate_1": {
         "name": "Han Sea",
-        "text": "\"Hey! Ich hab gewartet, damit wir zusammen gehen können.\""
+        "text": "Hey! Ich hab gewartet, damit wir zusammen gehen können."
     },
-    "day2_morning_sea_2": {
+    "day2_morning_gate_2": {
         "name": "Ich",
-        "text": "\"...Du hast gewartet? Oh, danke, aber... wann bist du rausgekommen?\""
+        "text": "...Du hast gewartet? Seit wann bist du hier?"
     },
-    "day2_morning_sea_3": {
+    "day2_morning_gate_3": {
         "name": "Han Sea",
-        "text": "\"Gerade eben~ Ich wohn nah dran.\""
+        "text": "Erst seit Kurzem~ Ich wohne ganz in der Nähe."
     },
-    "day2_morning_sea_4": {
+    "day2_morning_gate_4": {
         "name": "Ich",
         "text": "*Sie hat gewartet? Woher wusste sie, wann ich kommen würde...*"
     },
-    "day2_morning_sea_5": {
+
+    "day2_morning_gate_5": {
         "name": "Ich",
-        "text": "*Naja, wenn wir ungefähr zur gleichen Zeit kommen, könnten wir uns einfach begegnen.*"
+        "text": "*Vom Schultor zum Klassenzimmer. Sea geht neben mir.*"
     },
-    "day2_morning_sea_6": {
+    "day2_morning_walk_1": {
         "name": "Han Sea",
-        "text": "\"Gut geschlafen? Hast du meine Nachricht gesehen?\""
+        "text": "Was hast du gestern gemacht? Zu Hause."
     },
-    "day2_morning_sea_7": {
+    "day2_morning_walk_2": {
         "name": "Ich",
-        "text": "\"Ja, gut geschlafen. Danke für die Nachricht.\""
+        "text": "Instant-Nudeln gemacht, aufs Handy geschaut und eingeschlafen. Nichts Besonderes."
     },
-    "day2_morning_sea_8": {
+    "day2_morning_walk_3": {
         "name": "Han Sea",
-        "text": "\"Schön zu hören. Freu dich auf die heutige Lunchbox. Ich hab sie noch besser gemacht als gestern.\""
+        "text": "...Isst du jeden Tag Instant-Nudeln, wenn du alleine lebst?"
     },
-    "day2_morning_sea_9": {
+    "day2_morning_walk_4": {
         "name": "Ich",
-        "text": "*Sea hält ihre Tasche mit beiden Händen, während sie geht. Das Mittagessen muss darin sein. Es sieht schwer aus.*"
+        "text": "Nein, manchmal hole ich mir auch Fertiggerichte vom Konbini."
     },
-    "day2_morning_sea_10": {
+    "day2_morning_walk_5": {
+        "name": "Han Sea",
+        "text": "Das ist noch trauriger."
+    },
+    "day2_morning_walk_6": {
         "name": "Ich",
-        "text": "*Sea fällt ganz natürlich neben mich und geht in Richtung Klassenzimmer. ...Ich bin heute 10 Minuten früher als sonst gekommen, und sie wartete hier bereits.*"
+        "text": "*Sea tippt sich genervt mit den Fingern an die Stirn.*"
+    },
+    "day2_morning_walk_7": {
+        "name": "Han Sea",
+        "text": "Ab jetzt mache ich dir eine Lunchbox, also essen wir mittags zusammen."
+    },
+    "day2_morning_walk_8": {
+        "name": "Ich",
+        "text": "...Bist du immer so nett zu anderen?"
+    },
+    "day2_morning_walk_9": {
+        "name": "Han Sea",
+        "text": "Wer macht das schon für jeden? ...Ich mach das, weil du es bist."
+    },
+    "day2_morning_walk_10": {
+        "name": "Ich",
+        "text": "*Sea geht voraus, ohne sich umzudrehen. Ich kann ihren Gesichtsausdruck nicht sehen.*"
+    },
+    "day2_morning_walk_11": {
+        "name": "Han Sea",
+        "text": "Ach richtig, {name}, was für Musik hörst du?"
+    },
+    "day2_morning_walk_12": {
+        "name": "Ich",
+        "text": "Ich bin nicht wählerisch bei Genres. Wenn es gut klingt, höre ich es."
+    },
+    "day2_morning_walk_13": {
+        "name": "Han Sea",
+        "text": "Ich auch. Aber in letzter Zeit bin ich voll in diesen Künstler vertieft. Die Stimme hat so einen melancholischen Touch?"
+    },
+    "day2_morning_walk_14": {
+        "name": "Ich",
+        "text": "*Sea zeigt mir ihr Handy. Ein Indie-Band-Kanal.*"
+    },
+    "day2_morning_walk_15": {
+        "name": "Ich",
+        "text": "Oh, das Lied kenne ich. Kam mal im Algorithmus."
+    },
+    "day2_morning_walk_16": {
+        "name": "Han Sea",
+        "text": "Wir haben den gleichen Geschmack."
+    },
+    "day2_morning_walk_17": {
+        "name": "Ich",
+        "text": "*Sea sieht zufrieden aus. Ehrlich gesagt, diese Art von Reaktion fühlt sich ziemlich gut an.*"
     },
 
-    "day2_morning_sea_11": {
+    "day2_morning_deja4_1": {
         "name": "Ich",
-        "text": "*Als wir das Klassenzimmer betreten, begrüßen uns ein paar Schüler.*"
+        "text": "*Auf dem Weg zum Klassenzimmer mit Sea habe ich Durst.*"
     },
-    "day2_morning_class_1": {
+    "day2_morning_deja4_2": {
         "name": "Ich",
-        "text": "*Die Stimmung ist entspannter als gestern. Manche Kinder kennen schon meinen Namen.*"
+        "text": "Moment, wo ist der Automat?"
+    },
+    "day2_morning_deja4_3": {
+        "name": "Ich",
+        "text": "*Während ich das sage, gehe ich ganz natürlich zur Treppe im zweiten Stock.*"
+    },
+    "day2_morning_deja4_4": {
+        "name": "Han Sea",
+        "text": "Ah, stimmt. Da ist ein Automat. ...Aber {name}, woher wusstest du das?"
+    },
+    "day2_morning_deja4_5": {
+        "name": "Ich",
+        "text": "*...Keine Ahnung. Warum bin ich in diese Richtung gegangen? Gestern war ich zum ersten Mal in diesem Gebäude.*"
+    },
+    "day2_morning_deja4_6": {
+        "name": "Ich",
+        "text": "Ah, ich hab ihn wahrscheinlich vorhin im Vorbeigehen gesehen."
+    },
+
+    "day2_morning_class_1": {
+        "name": "Han Sea",
+        "text": "Ah~ Das ergibt Sinn."
     },
     "day2_morning_class_2": {
         "name": "Ich",
-        "text": "*Eunsu-Sensei ruft mit einem Lächeln die Anwesenheit auf.*"
+        "text": "*Sea lächelt. Aber für etwa eine halbe Sekunde war da ein prüfender Blick in ihren Augen.*"
     },
+
     "day2_morning_class_3": {
-        "name": "Klassenlehrerin",
-        "text": "\"Also, alle auf ihre Plätze. ...{name}, wie war dein erster Tag gestern? War alles okay?\""
-    },
-    "day2_morning_eunsu_1": {
         "name": "Ich",
-        "text": "\"War gut, alle haben sich gut um mich gekümmert.\""
+        "text": "*Eunsu macht die Anwesenheitskontrolle. Die Namen werden nacheinander aufgerufen.*"
     },
-    "day2_morning_eunsu_2": {
-        "name": "Klassenlehrerin",
-        "text": "\"Das ist schön. Die Kinder in unserer Klasse sind herzlich.\""
-    },
-    "day2_morning_eunsu_3": {
-        "name": "Klassenlehrerin",
-        "text": "\"Übrigens, {name}, du hast doch keinen Kontakt von deiner vorherigen Schule bekommen, oder?\""
-    },
-    "day2_morning_eunsu_4": {
+    "day2_morning_class_4": {
         "name": "Ich",
-        "text": "\"...Nein, noch nicht.\""
+        "text": "*...Fertig. Aber irgendetwas fehlt. Ich schaue unauffällig nach hinten. Seolhwa sitzt auf ihrem Platz. Sie ist definitiv da... aber ihr Name wurde bei der Anwesenheit nicht aufgerufen.*"
     },
-    "day2_morning_eunsu_5": {
+    "day2_morning_class_5": {
         "name": "Ich",
-        "text": "*...Warum fragt sie das? Wahrscheinlich nur Fürsorge.*"
+        "text": "*...War ich unaufmerksam und hab es verpasst? Niemand sonst scheint es zu stören, also ist es wohl normal.*"
     },
-    "day2_morning_eunsu_6": {
-        "name": "Klassenlehrerin",
-        "text": "\"Beim Schulwechsel dauert die Bearbeitung der Unterlagen eine Weile. Sag mir Bescheid, wenn du was hörst.\""
+    "day2_morning_class_6": {
+        "name": "Eunsu",
+        "text": "Übrigens, {name}, hast du etwas von deiner alten Schule gehört?"
+    },
+    "day2_morning_class_7": {
+        "name": "Ich",
+        "text": "...Nein, noch nicht."
     },
 
-    "day2_morning_lesson_1": {
-        "name": "Ich",
-        "text": "*Matheunterricht. Ein anderer Lehrer unterrichtet.*"
+    "day2_morning_pres_1": {
+        "name": "Eunsu",
+        "text": "Bei einem Schulwechsel dauert die Aktenübertragung etwas. Sag mir Bescheid, wenn sie sich melden."
     },
-    "day2_morning_lesson_2": {
+    "day2_morning_pres_2": {
         "name": "Ich",
-        "text": "*Sea hält mir leise von der Seite einen Bleistift hin.*"
+        "text": "*Erste Stunde, Koreanisch. Eunsu unterrichtet.*"
     },
-    "day2_morning_lesson_3": {
+    "day2_morning_pres_3": {
+        "name": "Eunsu",
+        "text": "Heute haben wir Gruppenpräsentationen. Das Thema ist 'Mein Lieblingsort'."
+    },
+    "day2_morning_pres_4": {
+        "name": "Ich",
+        "text": "*Ich schaue mir die Gruppen an — ich bin mit Sea und einem Jungen, den ich kaum kenne.*"
+    },
+    "day2_morning_pres_5": {
         "name": "Han Sea",
-        "text": "\"(flüsternd) Dieser Lehrer hat einen einzigartigen Stil. Aufgaben vom Typ 6 kommen oft vor.\""
+        "text": "Wir sind in einer Gruppe! Was machen wir? Wir müssen ein Thema wählen."
     },
-    "day2_morning_lesson_4": {
+    "day2_morning_pres_6": {
+        "name": "",
+        "text": "Ein Cafe oder so? Ehrlich gesagt, ist doch egal, oder?"
+    },
+    "day2_morning_pres_7": {
         "name": "Ich",
-        "text": "*Sea lächelt mich kurz an. Sie gibt mir sogar Prüfungstipps. Was für eine zuverlässige Klassensprecherin.*"
+        "text": "Hmm... wie wäre es mit der Bibliothek? Die ist ruhig."
+    },
+    "day2_morning_pres_8": {
+        "name": "Han Sea",
+        "text": "Gut. Soll ich die Folien machen?"
+    },
+    "day2_morning_pres_9": {
+        "name": "Ich",
+        "text": "Ich präsentiere, und du suchst die Materialien — einverstanden?"
+    },
+    "day2_morning_pres_10": {
+        "name": "Han Sea",
+        "text": "Perfekt."
+    },
+    "day2_morning_pres_11": {
+        "name": "Ich",
+        "text": "*Sea hebt den Daumen. Es fühlt sich nicht an, als hätten wir uns erst gestern kennengelernt.*"
+    },
+    "day2_morning_pres_12": {
+        "name": "Ich",
+        "text": "*Wir sind dran. Ich gehe nach vorne und rede, ohne nervös zu werden. Vielleicht weil Sea unten sitzt und nickend zuhört.*"
     },
 
-    "day2_morning_seolhwa_check": {
-        "name": "",
-        "text": ""
+    "day2_morning_deja5_1": {
+        "name": "Eunsu",
+        "text": "{name}, gute Präsentation. Du hast sicher an deiner alten Schule oft vorgetragen."
     },
-    "day2_morning_seolhwa_1": {
+    "day2_morning_deja5_2": {
         "name": "Ich",
-        "text": "*Ich setze mich hin und schaue kurz nach hinten. Seolhwa ist... immer noch da. Gleicher Platz, gleicher Ausdruck.*"
+        "text": "...Ah, ja. Wahrscheinlich."
     },
+    "day2_morning_deja5_3": {
+        "name": "Ich",
+        "text": "*Ich kann mich nicht erinnern. Habe ich an meiner alten Schule Vorträge gehalten? ...Bestimmt. Sonst wäre ich nicht so locker dabei.*"
+    },
+
+    "day2_morning_deja5_4": {
+        "name": "Ich",
+        "text": "*Pause. Eunsu kommt zu meinem Platz.*"
+    },
+    "day2_morning_deja5_5": {
+        "name": "Eunsu",
+        "text": "Findest du dich gut ein? Du siehst fröhlicher aus als gestern."
+    },
+    "day2_morning_deja5_6": {
+        "name": "Ich",
+        "text": "*Sie klopft mir leicht auf die Schulter. — Kalt. Ihre Hand ist kalt. Aber diese Kälte... fühlt sich vertraut an. Dieses Gefühl einer Hand auf meiner Schulter. Diese Temperatur. Ich habe das Gefühl, das schon einmal gespürt zu haben —*"
+    },
+    "day2_morning_deja5_7": {
+        "name": "Eunsu",
+        "text": "Was ist los? Ist dir kalt?"
+    },
+    "day2_morning_deja5_8": {
+        "name": "Ich",
+        "text": "...Nein. Es ist nichts."
+    },
+    "day2_morning_deja5_9": {
+        "name": "Ich",
+        "text": "*Nur Einbildung. Die Klimaanlage ist wohl zu stark eingestellt.*"
+    },
+    "day2_morning_deja5_10": {
+        "name": "Eunsu",
+        "text": "Wenn dich etwas stört, sag mir Bescheid. Ich bin schließlich deine Klassenlehrerin."
+    },
+    "day2_morning_deja5_11": {
+        "name": "Ich",
+        "text": "*Sie lächelt und geht zurück. Eine warmherzige Person... warum sind ihre Hände dann so kalt.*"
+    },
+
     "day2_morning_seolhwa_2": {
         "name": "Ich",
-        "text": "*Was der Typ gestern gesagt hat, 'gar nicht gemerkt, dass sie da ist'... lässt mich nicht los. Ist sie wirklich so unsichtbar...?*"
+        "text": "*Pause. Ich schaue unauffällig nach hinten. Mein Blick trifft Seolhwas.*"
     },
     "day2_morning_seolhwa_3": {
         "name": "Ich",
-        "text": "*Seltsam. Beim hinteren Platz steht kein Name. Auch die Schüleranzahl scheint nicht zu stimmen... Hab ich mich verzählt?*"
+        "text": "*...Diesmal schaut sie nicht weg. Sie beobachtet mich. Still.*"
     },
     "day2_morning_seolhwa_4": {
         "name": "Ich",
-        "text": "*Pause. Ich schaute nach hinten. Mein Blick traf Seolhwas.*"
+        "text": "*Seolhwas Ausdruck... es sieht aus, als wolle sie etwas sagen, aber am Ende schließt sie den Mund. Vielleicht liegt ihr Reden nicht.*"
     },
     "day2_morning_seolhwa_5": {
         "name": "Ich",
-        "text": "*...Nein, fast. In dem Moment, als unsere Blicke sich trafen, schaute Seolhwa weg.*"
-    },
-    "day2_morning_seolhwa_6": {
-        "name": "Ich",
-        "text": "*Aber... ihre Lippen bewegten sich. Wollte sie etwas sagen? Oder gähnte sie nur?*"
-    },
-    "day2_morning_seolhwa_7": {
-        "name": "Ich",
-        "text": "*Die Lehrerin sagte \"Konzentriert euch!\", also schaute ich wieder nach vorne. ...Wenn ich nochmal schaue, starrt Seolhwa nur aus dem Fenster. ...Morgen versuche ich definitiv, mit ihr zu reden.*"
+        "text": "*Der Sitznachbar plaudert und wirft einen Blick zur hinteren Reihe, aber beachtet Seolhwa gar nicht. Na ja, normalerweise beachtet niemand die Stillen. Die Lehrerin sagt \"Aufpassen!\" und ich drehe mich wieder nach vorne.*"
     },
 
     "day2_morning_end": {
-        "name": "Ich",
-        "text": "*Verstanden. Das ist wahrscheinlich wegen der Verwaltung. Konzentrier dich auf den Unterricht.*"
+        "name": "",
+        "text": ""
     }
 }

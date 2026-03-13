@@ -1,13 +1,11 @@
 /**
  * ============================================================================
- * Day 2-3: Afterschool - 위화감 상승
+ * Day 2-3: Afterschool - 방과후
  * ============================================================================
- * - 은수의 학생 안전 앱 설치 (핵심 위화감 이벤트, 2 choices)
- * - 방과후 선택지 (세아/유나/리인/귀가)
- * - 세아 학생회실: 노을 속 취약성 장면 (핵심 캐릭터 씬)
- * - 유나 도서관: 뭔가 말하려다 멈춤
- * - 리인 보건실: 서류 목격
- * - 귀가: 설화 목격 (greeted_seolhwa 조건), BGM silence glitch
+ * - 은수의 학생 안전 앱 설치 (권한 선택지 2개)
+ * - 세아 학생회실: 체육대회 서류, 음악, 외로움 고백, "변하지 마" / "기억할게"
+ * - 복도 급우들과 짧은 수다 (자판기 앞)
+ * - 귀가: 설화 목격 (교문, 자연스러운 차단)
  * ============================================================================
  */
 
@@ -16,15 +14,14 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
 
 Object.assign(SCENARIO[2], {
 
-    // ===== 은수의 학생 안전 앱 (핵심 위화감 이벤트) =====
+    // ===== 은수의 학생 안전 앱 =====
     "day2_after_start": {
         background: "classroom",
         character: null,
-        sunset: true,
         next: "day2_after_eunsu_1"
     },
     "day2_after_eunsu_1": {
-        character: "eunsu_smile",
+        character: "eunsu_warm",
         next: "day2_after_eunsu_2"
     },
     "day2_after_eunsu_2": {
@@ -40,83 +37,70 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_eunsu_6"
     },
     "day2_after_eunsu_6": {
+        next: "day2_after_eunsu_7"
+    },
+    "day2_after_eunsu_7": {
+        next: "day2_after_eunsu_8"
+    },
+    "day2_after_eunsu_8": {
         next: "day2_after_eunsu_choice"
     },
+
+    // --- 권한 선택 ---
     "day2_after_eunsu_choice": {
         choices: [
             {
-                next: "day2_after_comply_1",
+                next: "day2_after_allow_1",
                 stats: { eunsu: { affinity: 5, danger: 10 } },
-                setFlags: ["gave_phone_eunsu", "installed_safety_app"]
+                setFlags: ["app_all_permissions"]
             },
             {
-                next: "day2_after_refuse_1",
+                next: "day2_after_limit_1",
                 stats: { eunsu: { danger: 3 } },
-                setFlags: ["refused_phone_eunsu"]
+                setFlags: ["app_limited_permissions"]
             }
         ]
     },
 
-    // --- 선택 1: 폰을 건넨다 ---
-    "day2_after_comply_1": {
-        next: "day2_after_comply_2"
+    // --- 선택 1: 전부 허용한다 ---
+    "day2_after_allow_1": {
+        next: "day2_after_allow_2"
     },
-    "day2_after_comply_2": {
-        next: "day2_after_comply_3"
-    },
-    "day2_after_comply_3": {
-        next: "day2_after_comply_4",
-        setFlags: ["phone_checked"],
-        glitch: { fakePermissionModal: true }
-    },
-    "day2_after_comply_4": {
-        next: "day2_after_comply_5"
-    },
-    "day2_after_comply_5": {
-        next: "day2_after_comply_6"
-    },
-    "day2_after_comply_6": {
+    "day2_after_allow_2": {
         character: null,
-        next: "day2_after_transition"
+        next: "day2_after_sea_start"
     },
 
-    // --- 선택 2: 거절한다 ---
-    "day2_after_refuse_1": {
-        next: "day2_after_refuse_2"
+    // --- 선택 2: 위치 권한만 제한 ---
+    "day2_after_limit_1": {
+        next: "day2_after_limit_2"
     },
-    "day2_after_refuse_2": {
-        next: "day2_after_refuse_3"
+    "day2_after_limit_2": {
+        character: "eunsu_normal",
+        next: "day2_after_limit_3"
     },
-    "day2_after_refuse_3": {
-        next: "day2_after_refuse_4"
+    "day2_after_limit_3": {
+        next: "day2_after_limit_4"
     },
-    "day2_after_refuse_4": {
+    "day2_after_limit_4": {
+        next: "day2_after_limit_5"
+    },
+    "day2_after_limit_5": {
         character: null,
-        next: "day2_after_transition"
+        next: "day2_after_sea_start"
     },
 
-    // ===== 방과후 선택지 =====
-    "day2_after_transition": {
-        bgm: "sunset_warm.mp3",
-        next: "day2_after_choice"
+    // ===== 세아 — 학생회실 =====
+    "day2_after_sea_start": {
+        background: "student_council",
+        character: null,
+        next: "day2_after_sea_1"
     },
-    "day2_after_choice": {
-        choices: [
-            { next: "day2_after_sea_1" },
-            { next: "day2_after_yuna_1", condition: "met_yuna" },
-            { next: "day2_after_riin_1", condition: "met_riin" },
-            { next: "day2_after_home_1" }
-        ]
-    },
-
-    // ===== 세아 -- 학생회실 (핵심 캐릭터 씬) =====
     "day2_after_sea_1": {
-        background: "classroom",
-        character: null,
+        character: "sea_smile",
         next: "day2_after_sea_2"
     },
     "day2_after_sea_2": {
-        character: "sea_smile",
         next: "day2_after_sea_3"
     },
     "day2_after_sea_3": {
@@ -144,7 +128,6 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_11"
     },
     "day2_after_sea_11": {
-        character: "sea_sad",
         next: "day2_after_sea_12"
     },
     "day2_after_sea_12": {
@@ -154,20 +137,20 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_14"
     },
     "day2_after_sea_14": {
-        next: "day2_after_sea_15",
-        stats: { sea: { affinity: 8 } }
+        next: "day2_after_sea_15"
     },
     "day2_after_sea_15": {
-        character: "sea_cry",
         next: "day2_after_sea_16"
     },
     "day2_after_sea_16": {
+        character: "sea_normal",
         next: "day2_after_sea_17"
     },
     "day2_after_sea_17": {
         next: "day2_after_sea_18"
     },
     "day2_after_sea_18": {
+        character: "sea_vulnerable",
         next: "day2_after_sea_19"
     },
     "day2_after_sea_19": {
@@ -177,10 +160,10 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_21"
     },
     "day2_after_sea_21": {
-        next: "day2_after_sea_22"
+        next: "day2_after_sea_22",
+        stats: { sea: { affinity: 8 } }
     },
     "day2_after_sea_22": {
-        character: "sea_shy",
         next: "day2_after_sea_23"
     },
     "day2_after_sea_23": {
@@ -196,159 +179,81 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_27"
     },
     "day2_after_sea_27": {
+        character: "sea_smile",
         next: "day2_after_sea_28"
     },
     "day2_after_sea_28": {
-        character: "sea_smile",
-        next: "day2_after_sea_29"
-    },
-    "day2_after_sea_29": {
         character: null,
-        next: "day2_after_end"
+        next: "day2_after_hallway_1"
     },
 
-    // ===== 유나 -- 도서관 =====
-    "day2_after_yuna_1": {
-        background: "library",
+    // ===== 복도 — 급우들과 짧은 수다 =====
+    "day2_after_hallway_1": {
+        background: "hallway",
         character: null,
-        next: "day2_after_yuna_2"
+        next: "day2_after_hallway_2"
     },
-    "day2_after_yuna_2": {
-        next: "day2_after_yuna_3"
+    "day2_after_hallway_2": {
+        next: "day2_after_hallway_3"
     },
-    "day2_after_yuna_3": {
-        character: "yuna_normal",
-        next: "day2_after_yuna_4"
+    "day2_after_hallway_3": {
+        next: "day2_after_hallway_4"
     },
-    "day2_after_yuna_4": {
-        next: "day2_after_yuna_5"
+    "day2_after_hallway_4": {
+        next: "day2_after_hallway_5"
     },
-    "day2_after_yuna_5": {
-        next: "day2_after_yuna_6"
+    "day2_after_hallway_5": {
+        next: "day2_after_hallway_6"
     },
-    "day2_after_yuna_6": {
-        character: "yuna_scared",
-        next: "day2_after_yuna_7",
-        stats: { yuna: { trust: 5 } }
+    "day2_after_hallway_6": {
+        next: "day2_after_hallway_7"
     },
-    "day2_after_yuna_7": {
-        next: "day2_after_yuna_8"
+    "day2_after_hallway_7": {
+        next: "day2_after_hallway_8"
     },
-    "day2_after_yuna_8": {
-        next: "day2_after_yuna_9"
+    "day2_after_hallway_8": {
+        next: "day2_after_hallway_9"
     },
-    "day2_after_yuna_9": {
-        next: "day2_after_yuna_10"
+    "day2_after_hallway_9": {
+        next: "day2_after_hallway_10"
     },
-    "day2_after_yuna_10": {
-        next: "day2_after_yuna_11"
+    "day2_after_hallway_10": {
+        next: "day2_after_hallway_11"
     },
-    "day2_after_yuna_11": {
-        next: "day2_after_yuna_12"
-    },
-    "day2_after_yuna_12": {
-        next: "day2_after_yuna_13"
-    },
-    "day2_after_yuna_13": {
-        next: "day2_after_yuna_14"
-    },
-    "day2_after_yuna_14": {
-        next: "day2_after_yuna_15"
-    },
-    "day2_after_yuna_15": {
-        next: "day2_after_yuna_16"
-    },
-    "day2_after_yuna_16": {
-        next: "day2_after_yuna_17"
-    },
-    "day2_after_yuna_17": {
-        next: "day2_after_yuna_18"
-    },
-    "day2_after_yuna_18": {
-        character: null,
-        next: "day2_after_end"
+    "day2_after_hallway_11": {
+        next: "day2_after_seolhwa_start"
     },
 
-    // ===== 리인 -- 보건실 =====
-    "day2_after_riin_1": {
-        background: "nurse_office",
-        character: null,
-        next: "day2_after_riin_2"
-    },
-    "day2_after_riin_2": {
-        next: "day2_after_riin_3"
-    },
-    "day2_after_riin_3": {
-        next: "day2_after_riin_4"
-    },
-    "day2_after_riin_4": {
-        character: "riin_cold",
-        next: "day2_after_riin_5"
-    },
-    "day2_after_riin_5": {
-        next: "day2_after_riin_6"
-    },
-    "day2_after_riin_6": {
-        next: "day2_after_riin_7"
-    },
-    "day2_after_riin_7": {
-        next: "day2_after_riin_8"
-    },
-    "day2_after_riin_8": {
-        character: "riin_smile",
-        next: "day2_after_riin_9"
-    },
-    "day2_after_riin_9": {
-        next: "day2_after_riin_10"
-    },
-    "day2_after_riin_10": {
-        next: "day2_after_riin_11"
-    },
-    "day2_after_riin_11": {
-        next: "day2_after_riin_12"
-    },
-    "day2_after_riin_12": {
-        next: "day2_after_riin_13"
-    },
-    "day2_after_riin_13": {
-        character: null,
-        next: "day2_after_end"
-    },
-
-    // ===== 귀가 -- 설화 목격 (greeted_seolhwa 조건) =====
-    "day2_after_home_1": {
+    // ===== 귀가 — 설화 목격 =====
+    "day2_after_seolhwa_start": {
         background: "school_gate",
         character: null,
-        next: "day2_after_home_check"
-    },
-    "day2_after_home_check": {
-        branches: [
-            { condition: "greeted_seolhwa", next: "day2_after_home_2" }
-        ],
-        fallback: "day2_after_end"
-    },
-    "day2_after_home_2": {
-        next: "day2_after_home_3"
-    },
-    "day2_after_home_3": {
         next: "day2_after_seolhwa_1"
     },
     "day2_after_seolhwa_1": {
-        character: "seolhwa_fading",
-        glitch: { silence: true, silenceDuration: 3000 },
         next: "day2_after_seolhwa_2"
     },
     "day2_after_seolhwa_2": {
+        character: "seolhwa_sad",
         next: "day2_after_seolhwa_3"
     },
     "day2_after_seolhwa_3": {
-        character: null,
         next: "day2_after_seolhwa_4"
     },
     "day2_after_seolhwa_4": {
         next: "day2_after_seolhwa_5"
     },
     "day2_after_seolhwa_5": {
+        next: "day2_after_seolhwa_6"
+    },
+    "day2_after_seolhwa_6": {
+        character: null,
+        next: "day2_after_seolhwa_7"
+    },
+    "day2_after_seolhwa_7": {
+        next: "day2_after_seolhwa_8"
+    },
+    "day2_after_seolhwa_8": {
         next: "day2_after_end"
     },
 

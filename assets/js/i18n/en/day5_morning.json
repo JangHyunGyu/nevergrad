@@ -1,305 +1,600 @@
 {
-    "day5_morning_start": {
-        "name": "Me",
-        "text": "*Day 5.*"
-    },
-    "day5_morning_start_2": {
-        "name": "Me",
-        "text": "*The last day.*"
-    },
-    "day5_morning_start_3": {
-        "name": "Me",
-        "text": "*I opened my eyes. The alarm didn't ring. My body woke up on its own.*"
-    },
-    "day5_morning_start_4": {
-        "name": "Me",
-        "text": "*I look out the window. The sky is gray. Clouds hang low. It looks like rain.*"
-    },
-    "day5_morning_start_5": {
-        "name": "Me",
-        "text": "*...Day 1 morning was clear. Cherry blossoms were in bloom. In just four days, the world has changed this much.*"
-    },
-    "day5_morning_start_6": {
-        "name": "Me",
-        "text": "*No. The world hasn't changed. It's the way I see it that has changed.*"
-    },
-    "day5_morning_start_7": {
-        "name": "Me",
-        "text": "*I checked my bag. The things I packed last night. My phone with the evidence. Yuna's memory card. The photo fragment.*"
-    },
-    "day5_morning_start_8": {
-        "name": "Me",
-        "text": "*...I have to get out today. Before 11 PM tonight.*"
-    },
-    "day5_morning_start_9": {
-        "name": "Me",
-        "text": "*I put on my uniform. My face in the mirror... is not the face from Day 1. My eyes are different. Eyes that have learned what fear looks like.*"
-    },
-    "day5_morning_start_10": {
-        "name": "Me",
-        "text": "*Deep breath. One. Two. Three.*"
-    },
-    "day5_morning_start_11": {
-        "name": "Me",
-        "text": "*...I'm going.*"
-    },
-    "day5_morning_gate": {
-        "name": "Me",
-        "text": "*The walk to school. The last commute.*"
-    },
-    "day5_morning_gate_2": {
-        "name": "Me",
-        "text": "*...My steps are heavy. Each step feels like dragging a lead weight.*"
-    },
-    "day5_morning_gate_3": {
-        "name": "Me",
-        "text": "*The front gate comes into view.*"
-    },
-    "day5_morning_gate_4": {
-        "name": "Me",
-        "text": "*The front gate is open. Same as always. Students pass through in small groups.*"
-    },
-    "day5_morning_gate_5": {
-        "name": "Me",
-        "text": "*...I just have to go out. Past the front gate, turn left, and the bus stop is there. Get on any bus.*"
-    },
-    "day5_morning_gate_6": {
-        "name": "Me",
-        "text": "*I took one step forward. Two steps. The gate gets closer.*"
-    },
-    "day5_morning_gate_choice": {
-        "name": "Me",
-        "text": "",
-        "choices": [
-            "Keep walking forward",
-            "Turn back"
-        ],
-        "dodgeChoice": true,
-        "dodgeIndex": 0,
-        "maxAttempts": 4
-    },
-    "day5_morning_gate_dodge_fail": {
-        "name": "Me",
-        "text": "*...Forward. I have to go forward.*"
-    },
-    "day5_morning_paralysis_1": {
-        "name": "Me",
-        "text": "*...On the third step, my legs stopped.*"
-    },
-    "day5_morning_paralysis_2": {
-        "name": "Me",
-        "text": "*They won't move. I have the will to walk, but my legs won't listen. As if they've been embedded in concrete.*"
-    },
-    "day5_morning_paralysis_3": {
-        "name": "Me",
-        "text": "*The tea I drank last night. The 'good for sleep' tea that Nurse Riin gave me. ...Could it be?*"
-    },
-    "day5_morning_paralysis_4": {
-        "name": "Me",
-        "text": "*I look around. Students pass through the gate. Casually. Smiling.*"
-    },
-    "day5_morning_paralysis_5": {
-        "name": "Me",
-        "text": "*Only I can't move. The gate is open. Nobody is blocking me.*"
-    },
-    "day5_morning_paralysis_6": {
-        "name": "Me",
-        "text": "*Standing in front of an open door and I can't take a single step out. This... this is the school's real prison.*"
-    },
-    "day5_morning_watchers_1": {
-        "name": "Me",
-        "text": "*I turned around and looked back.*"
-    },
-    "day5_morning_watchers_2": {
-        "name": "Me",
-        "text": "*Inside the school gate. Ms. Eunsu is sitting on a bench. Sea is standing under a tree. Nurse Riin is looking down from the nurse's office window.*"
-    },
-    "day5_morning_watchers_3": {
-        "name": "Me",
-        "text": "*All in different positions. A natural-looking scene. But all three are watching me.*"
-    },
-    "day5_morning_watchers_4": {
-        "name": "Me",
-        "text": "*All three are smiling.*"
-    },
-    "day5_morning_welcome": {
-        "name": "Homeroom Teacher",
-        "text": "\"Good morning, {name}.\""
-    },
-    "day5_morning_welcome_2": {
-        "name": "Me",
-        "text": "*Ms. Eunsu rises from the bench and approaches. Slowly. Without hurrying. As if she already knows I can't move.*"
-    },
-    "day5_morning_welcome_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"Today is a special day. Are you ready?\""
-    },
-    "day5_morning_welcome_4": {
-        "name": "Han Sea",
-        "text": "\"{name}.\""
-    },
-    "day5_morning_welcome_5": {
-        "name": "Me",
-        "text": "*Sea takes my arm. Naturally. Her grip is strong.*"
-    },
-    "day5_morning_welcome_6": {
-        "name": "Han Sea",
-        "text": "\"Let's stay together all day today. Let's never separate.\""
-    },
-    "day5_morning_welcome_7": {
-        "name": "Me",
-        "text": "*There's weight in the word 'never.'*"
-    },
-    "day5_morning_welcome_8": {
-        "name": "Riin",
-        "text": "\"There's still the health checkup to finish.\""
-    },
-    "day5_morning_welcome_9": {
-        "name": "Me",
-        "text": "*Nurse Riin smiles. Her hand is in her coat pocket. Something bulges inside the pocket.*"
-    },
-    "day5_morning_welcome_10": {
-        "name": "Riin",
-        "text": "\"Come to the nurse's office after school. ...Be sure to come.\""
-    },
-    "day5_morning_welcome_11": {
-        "name": "Me",
-        "text": "*The three smiles overlap before my eyes.*"
-    },
-    "day5_morning_welcome_12": {
-        "name": "Me",
-        "text": "*The same smile. The same angle. The same depth. The same warmth.*"
-    },
-    "day5_morning_welcome_13": {
-        "name": "Me",
-        "text": "*...A hunter's smile.*"
-    },
-    "day5_morning_welcome_14": {
-        "name": "Me",
-        "text": "*And I am the prey. Already inside the cage.*"
-    },
-    "day5_morning_classroom": {
-        "name": "Me",
-        "text": "*Arm held by Sea, I entered the classroom.*"
-    },
-    "day5_morning_classroom_2": {
-        "name": "Me",
-        "text": "*Words are written on the blackboard. Ms. Eunsu's handwriting.*"
-    },
-    "day5_morning_classroom_3": {
-        "name": "Me",
-        "text": "*'Graduation Ceremony'*"
-    },
-    "day5_morning_classroom_4": {
-        "name": "Me",
-        "text": "*...Graduation ceremony? Only five days since I transferred? What graduation?*"
-    },
-    "day5_morning_classroom_5": {
-        "name": "Me",
-        "text": "*I sat down. Sea sits next to me. Not her usual seat. She dragged a chair right up beside me.*"
-    },
-    "day5_morning_classroom_6": {
-        "name": "Me",
-        "text": "*Ms. Eunsu stands at the podium. She doesn't call roll. She starts talking right away.*"
-    },
-    "day5_morning_class": {
-        "name": "Homeroom Teacher",
-        "text": "\"Today is a special lesson.\""
-    },
-    "day5_morning_class_2": {
-        "name": "Homeroom Teacher",
-        "text": "\"Let's talk about 'graduation.'\""
-    },
-    "day5_morning_class_3": {
-        "name": "Me",
-        "text": "*The teacher points at the blackboard. Below the words 'Graduation Ceremony,' she writes something more. '= Completion'*"
-    },
-    "day5_morning_class_4": {
-        "name": "Homeroom Teacher",
-        "text": "\"As you all know, the world outside school is far too cold and dangerous. You get hurt, you fail, you break...\""
-    },
-    "day5_morning_class_5": {
-        "name": "Homeroom Teacher",
-        "text": "\"That's why your teacher wants you to 'graduate' in the safest and most pristine state possible.\""
-    },
-    "day5_morning_class_6": {
-        "name": "Me",
-        "text": "*The teacher turns around. She looks at me. Only me.*"
-    },
-    "day5_morning_class_7": {
-        "name": "Homeroom Teacher",
-        "text": "\"Some students take three years to realize that, but our class is very special...\""
-    },
-    "day5_morning_class_8": {
-        "name": "Homeroom Teacher",
-        "text": "\"...Five days is enough.\""
-    },
-    "day5_morning_class_9": {
-        "name": "Me",
-        "text": "*The classroom goes quiet. You can't even hear breathing.*"
-    },
-    "day5_morning_class_10": {
-        "name": "Homeroom Teacher",
-        "text": "\"{name}, your graduation too... is today.\""
-    },
-    "day5_morning_class_11": {
-        "name": "Me",
-        "text": "*The teacher smiles. Warmly. As if in congratulation.*"
-    },
-    "day5_morning_class_12": {
-        "name": "Me",
-        "text": "*...Every other student in the classroom is staring at me. Thirty faces. Nobody moves.*"
-    },
-    "day5_morning_class_13": {
-        "name": "Me",
-        "text": "*It seems like nobody is breathing. Like mannequins. Like dolls.*"
-    },
-    "day5_morning_class_14": {
-        "name": "Me",
-        "text": "*Sea takes my hand. Tight. My fingers hurt.*"
-    },
-    "day5_morning_class_15": {
-        "name": "Me",
-        "text": "*I have to get out of this classroom. I have to hold on until lunch. That's when I move.*"
-    },
-    "day5_morning_class_16": {
-        "name": "Me",
-        "text": "*...Can I hold on?*"
-    },
-    "day5_morning_note": {
-        "name": "Me",
-        "text": "*Mid-lesson. I pretended to drop a pencil and looked under the desk.*"
-    },
-    "day5_morning_note_2": {
-        "name": "Me",
-        "text": "*A note is stuck there. When did she put it? Yuna's handwriting. Small, densely packed letters.*"
-    },
-    "day5_morning_note_3": {
-        "name": "Me",
-        "text": "*'Lunch — end corridor, 3rd floor, old building. There's an emergency exit. The route Seolhwa-sunbae found. I found the escape route. — Yuna'*"
-    },
-    "day5_morning_note_4": {
-        "name": "Me",
-        "text": "*The route Seolhwa found. The very route Seolhwa told me about in last night's dream.*"
-    },
-    "day5_morning_note_5": {
-        "name": "Me",
-        "text": "*How did Yuna know this? ...Did Yuna also meet Seolhwa?*"
-    },
-    "day5_morning_note_6": {
-        "name": "Me",
-        "text": "*I put the note in my pocket. My heart beats. I feel something called hope again for the first time in four days.*"
-    },
-    "day5_morning_note_7": {
-        "name": "Me",
-        "text": "*Lunch. That's the only chance.*"
-    },
-    "day5_morning_no_note": {
-        "name": "Me",
-        "text": "*Class ended. I have to find a way to escape on my own. There might be an emergency exit on the old building side...*"
-    },
-    "day5_morning_end": {
-        "name": "Me",
-        "text": "*Morning is over. Time crawls like the clock has stopped.*"
-    }
+  "day5_morning_dawn_1": {
+    "name": "Me",
+    "text": "*4 AM. I couldn't sleep. No — I wasn't allowed to sleep.*"
+  },
+  "day5_morning_dawn_2": {
+    "name": "Me",
+    "text": "*I check the clock in the darkness. The fluorescent hands tremble. — No, it's my hands that are trembling.*"
+  },
+  "day5_morning_dawn_3": {
+    "name": "Me",
+    "text": "*I check my bag. Yuna's camera — making sure the lens isn't cracked. The photos taken in the basement — I removed the memory card and put it in my pocket separately. If they take my bag, it's over. Phone — 68% battery. I debated whether to bring the charger, then shoved it in. No telling when I'll get to use it.*"
+  },
+  "day5_morning_dawn_4": {
+    "name": "Me",
+    "text": "*I pulled out my notebook. The plan I wrote last night. My handwriting was so shaky that half of it is barely legible. But it's all in my head. My body remembers. — I've repeated this 12 times, after all.*"
+  },
+  "day5_morning_dawn_5": {
+    "name": "Me",
+    "text": "*I tied my sneakers tight. I might have to run.*"
+  },
+  "day5_morning_dawn_6": {
+    "name": "Me",
+    "text": "*I stood at the door. Paused for a moment.*"
+  },
+  "day5_morning_dawn_7": {
+    "name": "Me",
+    "text": "*Beyond the door. The hallway. Is the hallway of a studio apartment always this quiet at 4 AM? No — it was always quiet. It's just that before, the silence wasn't frightening.*"
+  },
+  "day5_morning_dawn_8": {
+    "name": "Me",
+    "text": "*I held my breath and opened the door. The hallway. Only the green glow of emergency lights. No one's here.*"
+  },
+  "day5_morning_dawn_9": {
+    "name": "Me",
+    "text": "*The absence of anyone — is somehow scarier. If they're watching, I'd rather they be somewhere I can see.*"
+  },
+  "day5_morning_dawn_10": {
+    "name": "Me",
+    "text": "*I went down the stairs. Muffled my footsteps. The predawn streets. Streetlights glowing orange. No signs of life. No cars. Just the wind.*"
+  },
+  "day5_morning_dawn_11": {
+    "name": "Me",
+    "text": "*I'm alone. Completely alone. ...No. I've always been alone for 12 cycles. Every time losing my memory, every time from the start, every time knowing nothing. If that's not being alone, what is?*"
+  },
+  "day5_morning_dawn_12": {
+    "name": "Me",
+    "text": "*I walked. 20 minutes to school. The predawn roads are empty, with only my footsteps echoing. I'm heading to school. I need to save Yuna first.*"
+  },
+  "day5_morning_school_1": {
+    "name": "Me",
+    "text": "*The school came into view. Only the building's silhouette visible in the darkness. Normally it was just a school. Now — it's just the husk of something.*"
+  },
+  "day5_morning_school_2": {
+    "name": "Me",
+    "text": "*The front gate is open. No lock. Just — open.*"
+  },
+  "day5_morning_school_3": {
+    "name": "Me",
+    "text": "*The iron gate sways slightly in the wind, half-open. Creak, creak. The sound amplifies in my ears.*"
+  },
+  "day5_morning_school_4": {
+    "name": "Me",
+    "text": "*Of course. This school isn't a prison. There's no need to lock the gates.*"
+  },
+  "day5_morning_school_5": {
+    "name": "Me",
+    "text": "***You just erase the memories of anyone who tries to escape.***"
+  },
+  "day5_morning_school_6": {
+    "name": "Me",
+    "text": "*That single line echoed in my head. Escaping was meaningless. For 12 cycles. Running, hiding, screaming — I always ended up back at the beginning. Erasing memories was all it took to nullify every escape.*"
+  },
+  "day5_morning_school_7": {
+    "name": "Me",
+    "text": "*But the 13th time is different. Riin switched the drugs. My memories remain. — And Riin told me. She said she'd disable the tracking system before dawn today. \"That's all I can do. Two hours at most.\" If I fail this time — there might not be a next time.*"
+  },
+  "day5_morning_school_8": {
+    "name": "Me",
+    "text": "*I passed through the front gate and crossed the schoolyard. Sand crunches beneath my feet. Past the main building toward the old wing. I must have walked this path 12 times. I don't remember, but my feet know.*"
+  },
+  "day5_morning_school_9": {
+    "name": "Me",
+    "text": "*The entrance to the old wing. The door is open. Inside is pitch black. I turned on my phone flashlight. The beam swept across the hallway.*"
+  },
+  "day5_morning_school_10": {
+    "name": "Me",
+    "text": "*Something's written on the wall. — Graffiti? No. These are scratches made by fingernails. Unreadable. Who, when, why. Was it 'me' from a previous cycle?*"
+  },
+  "day5_morning_school_11": {
+    "name": "Me",
+    "text": "*The stairs leading down to the basement. Step by step, the concrete is cold. Somewhere, a pipe resonates. Thump, thump, thump. Like a heartbeat.*"
+  },
+  "day5_morning_rescue_1": {
+    "name": "Me",
+    "text": "*The phone light swept across the basement. Pipes, filing cabinets, old medical equipment. — And a bed in the corner.*"
+  },
+  "day5_morning_rescue_2": {
+    "name": "Me",
+    "text": "*Yuna is strapped to the bed. She's conscious but drugged. Leather restraints are wrapped around her wrists, her skin rubbed raw and red. Signs of struggling.*"
+  },
+  "day5_morning_rescue_3": {
+    "name": "Yuna",
+    "text": "\"...Sunbae. You came.\""
+  },
+  "day5_morning_rescue_4": {
+    "name": "Me",
+    "text": "*Yuna's voice is hoarse. How long has she been here?*"
+  },
+  "day5_morning_rescue_5": {
+    "name": "Yuna",
+    "text": "\"...You saw the records... down here, right?\""
+  },
+  "day5_morning_rescue_6": {
+    "name": "Me",
+    "text": "\"Yeah. All of them.\""
+  },
+  "day5_morning_rescue_7": {
+    "name": "Me",
+    "text": "*I undid the leather straps binding Yuna. The knots were tight. My nails scraped raw before I finally got them undone. Yuna's hands are cold. — Mine are too.*"
+  },
+  "day5_morning_rescue_8": {
+    "name": "Yuna",
+    "text": "\"...Actually, I... knew too. Since the 8th time.\""
+  },
+  "day5_morning_rescue_9": {
+    "name": "Yuna",
+    "text": "\"The 8th you... asked me to take photos. 'Record who I was,' you said.\""
+  },
+  "day5_morning_rescue_10": {
+    "name": "Yuna",
+    "text": "\"...That person's name was 'Lee Jeongwoo.' Tall, quiet, always sitting alone in the corner of the library.\""
+  },
+  "day5_morning_rescue_11": {
+    "name": "Yuna",
+    "text": "\"One day he just showed up — eyes bloodshot — and said, 'Yuna, I have one favor. Take my picture. Record who I was.'\""
+  },
+  "day5_morning_rescue_12": {
+    "name": "Yuna",
+    "text": "\"...I didn't understand what he meant. Back then. I just thought he was a strange upperclassman.\""
+  },
+  "day5_morning_rescue_13": {
+    "name": "Yuna",
+    "text": "\"...The next week, that person — transferred in under a different name. Same face, but he didn't recognize me.\""
+  },
+  "day5_morning_rescue_14": {
+    "name": "Me",
+    "text": "*Yuna's lips trembled.*"
+  },
+  "day5_morning_rescue_15": {
+    "name": "Yuna",
+    "text": "\"...That's when I started taking photos. Every time. The 9th, the 10th, the 11th, the 12th.\""
+  },
+  "day5_morning_rescue_16": {
+    "name": "Yuna",
+    "text": "\"The 9th was 'Park Seojun.' He caught on after 3 days — but by the morning of the 4th day, his memory was gone. He said 'Nice to meet you' to me in the hallway. We'd had lunch together three days before.\""
+  },
+  "day5_morning_rescue_17": {
+    "name": "Yuna",
+    "text": "\"...Every time the name was different, but every time the same request. 'Record me.' ...I guess even when memories are erased, the body remembers.\""
+  },
+  "day5_morning_rescue_18": {
+    "name": "Yuna",
+    "text": "\"...Three years, sunbae. For three years, I watched the same person come under different names, forget everything, and make the same request again.\""
+  },
+  "day5_morning_rescue_19": {
+    "name": "Me",
+    "text": "*Tears welled in Yuna's eyes, but they didn't fall.*"
+  },
+  "day5_morning_rescue_20": {
+    "name": "Yuna",
+    "text": "\"...I was scared. Every time. But if I ran — there'd be no one left to keep the record.\""
+  },
+  "day5_morning_rescue_21": {
+    "name": "Me",
+    "text": "*Deja vu pin #9: \"Record me\" — asking Yuna to take photos wasn't the first time. A behavior repeated every cycle.*"
+  },
+  "day5_morning_rescue_22": {
+    "name": "Me",
+    "text": "*I helped Yuna to her feet. Her legs gave out and she staggered. I put her arm over my shoulder.*"
+  },
+  "day5_morning_rescue_choice": {
+    "name": "Me",
+    "text": "",
+    "choices": [
+      "Escape now",
+      "Gather more evidence"
+    ]
+  },
+  "day5_morning_escape_end": {
+    "name": "Me",
+    "text": "*I grabbed Yuna's arm and headed up the stairs. Getting out comes first.*"
+  },
+  "day5_morning_true_1": {
+    "name": "Me",
+    "text": "*I rifled through the filing cabinets in the basement. Photographing documents. As many as possible. My hands shake so the focus is off. Deep breath. Try again.*"
+  },
+  "day5_morning_true_2": {
+    "name": "Me",
+    "text": "*'Project Nevergrad — Final Report'*"
+  },
+  "day5_morning_true_3": {
+    "name": "Me",
+    "text": "*First page. 'This project is a long-term experiment to verify the practicality of selective memory erasure technology. The subject is a single individual used repeatedly, with a new identity package (name, past memories, family relations) implanted each cycle.'*"
+  },
+  "day5_morning_true_4": {
+    "name": "Me",
+    "text": "*...A single individual. They're calling me a 'subject.'*"
+  },
+  "day5_morning_true_5": {
+    "name": "Me",
+    "text": "*'Subject Identity Package Modification Protocol' — a table listing the name assigned, family configuration, and implanted 'past memories' for each cycle. Cycle #1 Kim Dojin: both parents alive, from Seoul. Cycle #5 Kang Minhyeok: single mother, transferred from Busan. Cycle #13 {name}: —*"
+  },
+  "day5_morning_true_6": {
+    "name": "Me",
+    "text": "*My 'past' is written here. The parents I remember, my hometown, my elementary school friends — all data designed by someone.*"
+  },
+  "day5_morning_true_7": {
+    "name": "Me",
+    "text": "*'Drug Administration Records (Cycles #1~#12)' — dates, dosages, subject responses. A note on Cycle #4: 'Subject resisted immediately before injection. Administered after physical restraint.' On Cycle #7: 'Subject escape attempt. Accomplice (Lee Seolhwa) secured. Lee Seolhwa — deemed uncorrectable. Disposed.' One line. A person disappeared in one line.*"
+  },
+  "day5_morning_true_8": {
+    "name": "Me",
+    "text": "*'Board Approval Document: Proposal for Commercialization of Memory Manipulation Technology'*"
+  },
+  "day5_morning_true_9": {
+    "name": "Me",
+    "text": "*...Commercialization. 'This technology has applications in criminal rehabilitation, trauma therapy, corporate confidentiality protection, and more. We propose proceeding with investor acquisition based on the results of Cycle #13.'*"
+  },
+  "day5_morning_true_10": {
+    "name": "Me",
+    "text": "*I'm a test subject, and they're planning to sell this technology. My suffering is a 'success story' in a business proposal.*"
+  },
+  "day5_morning_true_11": {
+    "name": "Me",
+    "text": "*The last document.*"
+  },
+  "day5_morning_true_12": {
+    "name": "Me",
+    "text": "*'Cycle #13 Anomalies: Subject persistently perceiving hallucination (Lee Seolhwa — Cycle #7 disposal target). Residual memory aggregation past critical threshold. Early termination before Day 5 under review.'*"
+  },
+  "day5_morning_true_13": {
+    "name": "Me",
+    "text": "*'Early termination under review.' Those words seared into my eyes. It means they might not have given me all five days.*"
+  },
+  "day5_morning_true_14": {
+    "name": "Yuna",
+    "text": "\"...Sunbae, hurry. Footsteps.\""
+  },
+  "day5_morning_true_15": {
+    "name": "Me",
+    "text": "*Footsteps from above. Not one person. Multiple. Regular stride. — A search pattern.*"
+  },
+  "day5_morning_true_16": {
+    "name": "Me",
+    "text": "*I shoved the camera into my bag and grabbed Yuna's arm.*"
+  },
+  "day5_morning_blockade_1": {
+    "name": "Me",
+    "text": "*I came up the stairs. End of the hallway — the door is shut. The door that was open until yesterday. A steel locking bar is in place. That wasn't there yesterday.*"
+  },
+  "day5_morning_blockade_2": {
+    "name": "Me",
+    "text": "*I ran to the opposite end. The other hallway door — also shut. Locked.*"
+  },
+  "day5_morning_blockade_3": {
+    "name": "Me",
+    "text": "***Lockdown.***"
+  },
+  "day5_morning_blockade_4": {
+    "name": "Me",
+    "text": "*My eyes met Yuna's. Her face is white. Mine must look the same.*"
+  },
+  "day5_morning_blockade_5": {
+    "name": "Me",
+    "text": "*Ksshht— Static burst from the speakers. Then — a sound beneath it. A music box. Slow, off-key music box melody. Like a warped version of a graduation hymn.*"
+  },
+  "day5_morning_broadcast_1": {
+    "name": "Eunsu",
+    "text": "\"Good morning, everyone.\""
+  },
+  "day5_morning_broadcast_2": {
+    "name": "Me",
+    "text": "*Teacher Eunsu's voice echoes through the speakers. The same warm tone as always. That warmth — now it makes me sick.*"
+  },
+  "day5_morning_broadcast_3": {
+    "name": "Eunsu",
+    "text": "\"Today is a special day. We have a **graduation ceremony**.\""
+  },
+  "day5_morning_broadcast_4": {
+    "name": "Me",
+    "text": "*Graduation ceremony. The words echoed through the hallway. Bouncing off walls, hitting the ceiling, coming back again.*"
+  },
+  "day5_morning_broadcast_5": {
+    "name": "Eunsu",
+    "text": "\"{name}. Would you come to the classroom?\""
+  },
+  "day5_morning_broadcast_6": {
+    "name": "Eunsu",
+    "text": "\"...It's the last class, after all.\""
+  },
+  "day5_morning_broadcast_7": {
+    "name": "Me",
+    "text": "*The music box played one more measure — then cut off. The broadcast ended. Silence.*"
+  },
+  "day5_morning_broadcast_8": {
+    "name": "Yuna",
+    "text": "\"...Do we have to go?\""
+  },
+  "day5_morning_broadcast_9": {
+    "name": "Me",
+    "text": "*Yuna's voice is shaking. This girl has endured three years in this school. Three years without breaking. And now — she's trembling.*"
+  },
+  "day5_morning_broadcast_10": {
+    "name": "Me",
+    "text": "\"We're not going. There's an escape route on the 3rd floor of the old wing that Seolhwa found.\""
+  },
+  "day5_morning_broadcast_11": {
+    "name": "Yuna",
+    "text": "\"...The 3rd floor is just two flights of stairs from here—\""
+  },
+  "day5_morning_broadcast_12": {
+    "name": "Me",
+    "text": "*Thud. The sound of a door closing above. A heavy steel door closing.*"
+  },
+  "day5_morning_broadcast_13": {
+    "name": "Me",
+    "text": "*Yuna stopped mid-sentence. We both looked up. Thud. Another one. The 3rd floor is sealed too.*"
+  },
+  "day5_morning_broadcast_14": {
+    "name": "Yuna",
+    "text": "\"...Sunbae.\""
+  },
+  "day5_morning_broadcast_15": {
+    "name": "Me",
+    "text": "*Yuna grabbed my sleeve. Her fingers gripping tight.*"
+  },
+  "day5_morning_broadcast_16": {
+    "name": "Me",
+    "text": "\"...It's okay. There's a way.\""
+  },
+  "day5_morning_broadcast_17": {
+    "name": "Me",
+    "text": "*There might not be. But if I break down here, it's over.*"
+  },
+  "day5_morning_broadcast_18": {
+    "name": "Me",
+    "text": "*Only the classroom door is open. Every other door is locked. There's no choice.*"
+  },
+  "day5_morning_grad_1": {
+    "name": "Yuna",
+    "text": "\"...I'll wait outside. If I go in — they'll catch me too.\""
+  },
+  "day5_morning_grad_2": {
+    "name": "Me",
+    "text": "\"...I'm sorry.\""
+  },
+  "day5_morning_grad_3": {
+    "name": "Yuna",
+    "text": "\"Don't be sorry. I'm okay. — When you come out, we run together.\""
+  },
+  "day5_morning_grad_4": {
+    "name": "Me",
+    "text": "*Yuna hid in the corner of the hallway. I pressed the record button on my phone.*"
+  },
+  "day5_morning_grad_5": {
+    "name": "Me",
+    "text": "*I stepped into the classroom.*"
+  },
+  "day5_morning_grad_6": {
+    "name": "Me",
+    "text": "***No one is here. 30 empty desks. All chairs facing the blackboard. Not arranged — placed. Someone deliberately turned every chair toward the blackboard.***"
+  },
+  "day5_morning_grad_7": {
+    "name": "Me",
+    "text": "*On each desk, a name tag. Numbers 1 through 12. Cycle numbers and the names assigned then. — Seat 13 is empty. My seat.*"
+  },
+  "day5_morning_grad_8": {
+    "name": "Me",
+    "text": "***Written on the blackboard: 'Congratulations on Your Graduation — 13th'***"
+  },
+  "day5_morning_grad_9": {
+    "name": "Me",
+    "text": "*The chalk writing is clean. Written this morning. The handwriting is familiar — Teacher Eunsu's. The same neat hand she always used in class.*"
+  },
+  "day5_morning_grad_10": {
+    "name": "Me",
+    "text": "*Papers are stacked on the lectern. 13 of them. Each clipped together, with a photo attached. — They're all me. Same face. Different names.*"
+  },
+  "day5_morning_grad_11": {
+    "name": "Eunsu",
+    "text": "\"You came. Thank you, {name}.\""
+  },
+  "day5_morning_grad_12": {
+    "name": "Me",
+    "text": "*Teacher Eunsu lifts the papers from the lectern. Her hands don't tremble. — She's used to this.*"
+  },
+  "day5_morning_grad_13": {
+    "name": "Eunsu",
+    "text": "\"It's your diploma. In your name.\""
+  },
+  "day5_morning_grad_14": {
+    "name": "Me",
+    "text": "*The paper has 13 names written on it. From 'Kim Dojin' at the top to '{name}' at the bottom. They're not diplomas — they're 'Processing Complete Confirmations.' Stamped. 'Complete.' 'Complete.' 'Complete.' 12 'Completes.' Only the 13th slot is blank.*"
+  },
+  "day5_morning_grad_15": {
+    "name": "Eunsu",
+    "text": "\"The first one, Dojin, ran away crying after 3 days. Well, he probably didn't even know what was going on.\""
+  },
+  "day5_morning_grad_16": {
+    "name": "Eunsu",
+    "text": "\"The 2nd, Yoon Jaehyeon, was a quiet kid. Never suspected a thing. On the night of Day 5 — he took the injection with a smile. Without knowing anything.\""
+  },
+  "day5_morning_grad_17": {
+    "name": "Eunsu",
+    "text": "\"The 5th, Kang Minhyeok, genuinely liked his teacher. Sincerely. ...It felt like a waste to erase his memories.\""
+  },
+  "day5_morning_grad_18": {
+    "name": "Eunsu",
+    "text": "\"The 6th, Jeong Haryul... was clever. On Day 4, he found a drug vial in Riin's infirmary. That night, I erased his memory. — While he was still just suspicious.\""
+  },
+  "day5_morning_grad_19": {
+    "name": "Eunsu",
+    "text": "\"The 7th, Kim Taeho... there was a problem. He made contact with a student from the facility and attempted to escape.\""
+  },
+  "day5_morning_grad_20": {
+    "name": "Eunsu",
+    "text": "\"...That child was disposed of. But even after erasing your memory, you kept seeing her. As a hallucination.\""
+  },
+  "day5_morning_grad_21": {
+    "name": "Eunsu",
+    "text": "\"The 9th, Han Jiho, was caught on Day 3. Quietly dealt with.\""
+  },
+  "day5_morning_grad_22": {
+    "name": "Eunsu",
+    "text": "\"The 11th, Seo Mingyu... confessed that he liked me. ...You'll never know how much I cried that night while erasing his memory.\""
+  },
+  "day5_morning_grad_23": {
+    "name": "Me",
+    "text": "*Teacher's voice grows quieter. She grips the lectern. Her fingers are white. Clenched tight.*"
+  },
+  "day5_morning_grad_24": {
+    "name": "Eunsu",
+    "text": "\"...After 12 repetitions, you learn. Erasing memories is easy. But—\""
+  },
+  "day5_morning_grad_25": {
+    "name": "Eunsu",
+    "text": "\"**Even if you erase memories, you can't erase the heart.**\""
+  },
+  "day5_morning_grad_26": {
+    "name": "Eunsu",
+    "text": "\"Every time, you picked up chopsticks with your left hand first. Every time, you turned left in the hallway. Every time — you sat in the same seat.\""
+  },
+  "day5_morning_grad_27": {
+    "name": "Eunsu",
+    "text": "\"When buying chocolate milk, you always shook it twice. When climbing stairs, you skipped the third step. When looking out the window, you rested your right cheek on your hand.\""
+  },
+  "day5_morning_grad_28": {
+    "name": "Eunsu",
+    "text": "\"...Watch someone 12 times, and you can't help but memorize them. The habits of a person with no memories. The things that don't change even when memories are replaced.\""
+  },
+  "day5_morning_grad_29": {
+    "name": "Me",
+    "text": "*Even when memories were erased, **you** were the same. So— Teacher's eyes glistened. An expression I've never seen. No — maybe not the first time. I might have seen it 12 times. I just don't remember.*"
+  },
+  "day5_morning_grad_30": {
+    "name": "Eunsu",
+    "text": "\"**Every time, I fell in love.**\""
+  },
+  "day5_morning_grad_timer": {
+    "name": "Me",
+    "text": "",
+    "choices": [
+      "\"That's not love.\"",
+      "\"...Why did you do this?\"",
+      "(Stay silent)"
+    ]
+  },
+  "day5_morning_grad_reply_1": {
+    "name": "Eunsu",
+    "text": "\"...Maybe. But if it's not love, then what is it?\""
+  },
+  "day5_morning_grad_reply_1b": {
+    "name": "Eunsu",
+    "text": "\"I waited 12 times, lost you 12 times, and met you again 12 times.\""
+  },
+  "day5_morning_grad_reply_2": {
+    "name": "Eunsu",
+    "text": "\"...At first, it was research. Orders from the board. But—\""
+  },
+  "day5_morning_grad_reply_2b": {
+    "name": "Eunsu",
+    "text": "\"**From the 3rd time on, it was my choice.** If I reported to the board that 'the subject is still viable,' I could get the next cycle approved.\""
+  },
+  "day5_morning_grad_reply_2c": {
+    "name": "Eunsu",
+    "text": "\"...Because you came back. Because you had no memory, so from the beginning again — you smiled at me again.\""
+  },
+  "day5_morning_grad_reply_3": {
+    "name": "Me",
+    "text": "*Teacher Eunsu smiled. The saddest smile I've ever seen.*"
+  },
+  "day5_morning_grad_reply_3b": {
+    "name": "Eunsu",
+    "text": "\"...Yeah. Nothing to say.\""
+  },
+  "day5_morning_proposal_1": {
+    "name": "Me",
+    "text": "*Silence settled. Just the two of us left in the classroom.*"
+  },
+  "day5_morning_proposal_2": {
+    "name": "Me",
+    "text": "*Teacher Eunsu stepped away from the lectern. One step, two steps. Walking toward me. Stopped. — Two meters away.*"
+  },
+  "day5_morning_proposal_3": {
+    "name": "Me",
+    "text": "*Teacher's lips moved. No sound came out. Again.*"
+  },
+  "day5_morning_proposal_4": {
+    "name": "Eunsu",
+    "text": "\"...I'm sorry.\""
+  },
+  "day5_morning_proposal_5": {
+    "name": "Me",
+    "text": "*Those two words filled the classroom. Teacher — knelt down. In front of the lectern. Among 30 empty desks.*"
+  },
+  "day5_morning_proposal_6": {
+    "name": "Eunsu",
+    "text": "\"I know. This isn't something an apology can fix.\""
+  },
+  "day5_morning_proposal_7": {
+    "name": "Eunsu",
+    "text": "\"Erasing 12 cycles of memories was my doing. Disposing of Seolhwa was my judgment. ...And what I'm doing to you right now is ultimately my selfishness.\""
+  },
+  "day5_morning_proposal_8": {
+    "name": "Me",
+    "text": "*Teacher looked up. Red eyes.*"
+  },
+  "day5_morning_proposal_9": {
+    "name": "Eunsu",
+    "text": "\"But — I mean it. I know that being sincere is itself a crime here. Even so, I mean it.\""
+  },
+  "day5_morning_proposal_10": {
+    "name": "Me",
+    "text": "*Teacher stood up. Didn't wipe the tears. Just — like that.*"
+  },
+  "day5_morning_proposal_11": {
+    "name": "Eunsu",
+    "text": "\"{name}.\""
+  },
+  "day5_morning_proposal_12": {
+    "name": "Eunsu",
+    "text": "\"Choose.\""
+  },
+  "day5_morning_proposal_13": {
+    "name": "Eunsu",
+    "text": "\"One. Stay here. I'll protect you. I won't erase your memories. I promise.\""
+  },
+  "day5_morning_proposal_14": {
+    "name": "Eunsu",
+    "text": "\"Two. Erase your memories. The pain disappears too. As the 14th — start over.\""
+  },
+  "day5_morning_proposal_15": {
+    "name": "Eunsu",
+    "text": "\"Three. ...\""
+  },
+  "day5_morning_proposal_16": {
+    "name": "Me",
+    "text": "*Teacher closed her mouth.*"
+  },
+  "day5_morning_proposal_17": {
+    "name": "Eunsu",
+    "text": "\"...I'd rather there wasn't a three.\""
+  },
+  "day5_morning_proposal_18": {
+    "name": "Me",
+    "text": "*The classroom door opens.*"
+  },
+  "day5_morning_proposal_timer": {
+    "name": "Me",
+    "text": "",
+    "choices": [
+      "\"I'll stay here.\"",
+      "\"Please erase my memories.\"",
+      "Run (out of the classroom)"
+    ]
+  },
+  "day5_morning_end_cage": {
+    "name": "Me",
+    "text": "*...My feet won't move. I sat down in the chair. Teacher Eunsu smiles.*"
+  },
+  "day5_morning_end_forget": {
+    "name": "Me",
+    "text": "*...I closed my eyes. Teacher Eunsu's hand touches my forehead. It's cold.*"
+  },
+  "day5_morning_end_run": {
+    "name": "Me",
+    "text": "*My body moved first. The muscle memory of 12 cycles. My legs move faster than expected. — I ran.*"
+  }
 }

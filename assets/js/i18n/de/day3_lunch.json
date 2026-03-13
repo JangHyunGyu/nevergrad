@@ -1,173 +1,442 @@
 {
     "day3_lunch_start": {
         "name": "Ich",
-        "text": "*Mittagspause. In meiner Schreibtischschublade liegt ein Zettel.*"
+        "text": "*Mittagspause. Ich offnete die Schublade und ein Zettel liegt darin.*"
     },
     "day3_lunch_note": {
         "name": "Ich",
-        "text": "*'Senpai, bitte komm während der Mittagspause aufs Dach. Komm alleine. - Yuna'*"
-    },
-    "day3_lunch_note_2": {
-        "name": "Ich",
-        "text": "*...Der Ton klingt ernst. Was soll ich tun?*"
+        "text": "*'Senpai, bitte komm in der Mittagspause aufs Dach. Unbedingt alleine. Es ist wichtig. - Yuna'*"
     },
     "day3_lunch_choice": {
         "name": "Ich",
-        "text": "*Es ist Mittagspause.*",
+        "text": "*...Was soll ich tun?*",
         "choices": [
             "Aufs Dach gehen",
-            "Mit Sea zu Mittag essen",
-            "Im Krankenzimmer vorbeischauen",
-            "Im Klassenzimmer bleiben"
+            "Mit Sea Mittag essen",
+            "Ins Krankenzimmer gehen",
+            "Alleine im Klassenzimmer bleiben"
         ]
     },
 
-    "day3_lunch_rooftop": {
+    "day3_lunch_rooftop_1": {
         "name": "Yuna",
         "text": "\"...Du bist gekommen. Danke, Senpai.\""
     },
     "day3_lunch_rooftop_2": {
-        "name": "Yuna",
-        "text": "\"Ich kann das nicht mehr alleine tragen. Ich zeige das nur dir, Senpai.\""
+        "name": "Ich",
+        "text": "*Yuna zieht mit zitternden Handen eine Speicherkarte hervor.*"
     },
     "day3_lunch_rooftop_3": {
-        "name": "Ich",
-        "text": "*Yuna reicht mir mit zitternden Händen eine Speicherkarte. \"Was an dieser Schule passiert ist... das ist alles hier drin.\"*"
+        "name": "Yuna",
+        "text": "\"Ich konnte das nicht mehr alleine behalten...\""
     },
     "day3_lunch_rooftop_4": {
         "name": "Yuna",
-        "text": "\"Neue Schüler sind einer nach dem anderen verschwunden. Ich habe alles fotografiert. Es sind Beweise. Senpai, bitte glaub mir.\""
+        "text": "\"Senpai, ich bin seit 3 Jahren an dieser Schule. Ich bin im Fotoclub. Ich fotografiere alles, was an der Schule passiert.\""
     },
     "day3_lunch_rooftop_5": {
-        "name": "Ich",
-        "text": "*...Was? Verschwunden? Warte — das abgekratzte Schließfach, die unerreichbaren alten Schulfreunde, Seolhwa fehlt auf der Anwesenheitsliste...*"
+        "name": "Yuna",
+        "text": "\"Jedes Mal, wenn ein neuer Schueler kam, habe ich ihn fotografiert. Als Dokumentation.\""
     },
     "day3_lunch_rooftop_6": {
         "name": "Ich",
-        "text": "*...! Plötzlich knallte die Dachtür mit einem PENG zu.*"
+        "text": "*Yuna scrollt durch den Kamerabildschirm.*"
     },
-    "day3_lunch_door_locked": {
-        "name": "Ich",
-        "text": "*Ich drücke gegen die Tür. Sie geht nicht auf. Von außen verriegelt. Wer...?*"
-    },
-    "day3_lunch_door_locked_2": {
+    "day3_lunch_rooftop_7": {
         "name": "Yuna",
-        "text": "\"...! Senpai, sie haben es herausgefunden. Jemand hat uns beobachtet...\""
+        "text": "\"Das ist der 1. Transferschueler, der vor 3 Jahren kam.\""
+    },
+    "day3_lunch_rooftop_8": {
+        "name": "Ich",
+        "text": "*Ein Foto. Ein Schueler vor dem Schultor. Kurze schwarze Haare. Steife Schuluniform. Namensschild: 'Kim Dojin'.*"
+    },
+    "day3_lunch_rooftop_9": {
+        "name": "Yuna",
+        "text": "\"Das ist Nummer 3, der danach kam.\""
+    },
+    "day3_lunch_rooftop_10": {
+        "name": "Ich",
+        "text": "*Ein Foto. Dasselbe Schultor. Ein anderer Schueler. Braune Haare. Namensschild: 'Park Seojin'.*"
+    },
+    "day3_lunch_rooftop_11": {
+        "name": "Yuna",
+        "text": "\"Das ist Nummer 7.\""
+    },
+    "day3_lunch_rooftop_12": {
+        "name": "Ich",
+        "text": "*Ein Foto. Ein Junge mit langen Haaren. Ausgezehrtes Gesicht. Namensschild: 'Kim Taeho'.*"
+    },
+    "day3_lunch_rooftop_13": {
+        "name": "Yuna",
+        "text": "\"...Und das bist du, Senpai.\""
+    },
+    "day3_lunch_rooftop_14": {
+        "name": "Ich",
+        "text": "*Ein Foto. Vor dem Schultor. Gestern Morgen. Das ist mein Foto.*"
+    },
+    "day3_lunch_rooftop_15": {
+        "name": "Ich",
+        "text": "*...Moment.*"
+    },
+    "day3_lunch_rooftop_16": {
+        "name": "Ich",
+        "text": "*Yuna ordnet die Fotos nebeneinander auf einem Bildschirm an. Nummer 1 bis 13. Verschiedene Haarfarben. Verschiedene Namensschilder. Verschiedene Uniformstile. **Aber es sind alles Jungen. Derselbe Junge.***"
+    },
+    "day3_lunch_rooftop_17": {
+        "name": "Ich",
+        "text": "***13 Fotos. 13 Namen. Alle dasselbe Gesicht.***"
+    },
+    "day3_lunch_rooftop_18": {
+        "name": "Ich",
+        "text": "*...Es ist mein Gesicht.*"
+    },
+    "day3_lunch_rooftop_19": {
+        "name": "Yuna",
+        "text": "\"Senpai... **warum haben alle 13 genau dasselbe Gesicht?**\""
+    },
+    "day3_lunch_rooftop_20": {
+        "name": "Yuna",
+        "text": "\"Senpai... warum tun sie alle so, als wuessten sie ihren eigenen Namen nicht, als waeren sie voellig Fremde, die gerade erst angekommen sind...?\""
+    },
+    "day3_lunch_rooftop_21": {
+        "name": "Ich",
+        "text": "*...Mein Kopf wird leer.*"
+    },
+    "day3_lunch_rooftop_22": {
+        "name": "Ich",
+        "text": "*Yunas Stimme scheint in die Ferne zu ruecken. Mein Herz haemmert in meinen Ohren.*"
+    },
+    "day3_lunch_rooftop_23": {
+        "name": "Ich",
+        "text": "\"...Ist das nicht gefaelscht? Mit Photoshop oder so...\""
+    },
+    "day3_lunch_rooftop_24": {
+        "name": "Yuna",
+        "text": "\"3 Jahre, Senpai. 3 Jahre lang ist jedes Mal dasselbe Gesicht mit einem anderen Namensschild an diese Schule gekommen. Ich dachte, ich wuerde verrueckt werden.\""
+    },
+    "day3_lunch_rooftop_25": {
+        "name": "Yuna",
+        "text": "\"Ich konnte es niemandem sagen. Wer wuerde mir glauben? Ich selbst habe es am Anfang nicht geglaubt.\""
+    },
+    "day3_lunch_rooftop_26": {
+        "name": "Ich",
+        "text": "*Yunas Augen sind rot. Sie beisst sich auf die Lippe. Die Kamera in ihren Haenden zittert.*"
+    },
+    "day3_lunch_rooftop_27": {
+        "name": "Yuna",
+        "text": "\"Als Nummer 1 kam... war ich in der siebten Klasse. Da dachte ich nur, ach, ein neuer Transferschueler.\""
+    },
+    "day3_lunch_rooftop_28": {
+        "name": "Yuna",
+        "text": "\"Als Nummer 3 kam, hatte ich das Gefuehl, dass etwas nicht stimmt. Sie sahen sich aehnlich, dachte ich. Aber als ich es den Leuten um mich herum erzaehlte, sagten alle 'Was redest du da?'. Auch die Lehrer.\""
+    },
+    "day3_lunch_rooftop_29": {
+        "name": "Yuna",
+        "text": "\"Ab dem 5. hatte ich Angst. Ich konnte nicht unterscheiden, ob ich falsch lag oder die Welt.\""
+    },
+    "day3_lunch_rooftop_30": {
+        "name": "Ich",
+        "text": "*Yuna legt die Kamera ab und bedeckt ihr Gesicht mit beiden Haenden. Einen Moment lang. Ihre Schultern zittern.*"
+    },
+    "day3_lunch_rooftop_31": {
+        "name": "Yuna",
+        "text": "\"...Tut mir leid. Dass ich dir das so ploetzlich zeige.\""
+    },
+    "day3_lunch_rooftop_32": {
+        "name": "Ich",
+        "text": "\"...Nein, schon gut.\""
+    },
+    "day3_lunch_rooftop_33": {
+        "name": "Ich",
+        "text": "*Es ist nicht gut. Nichts ist gut. Aber diejenige, die gerade weint, ist Yuna.*"
+    },
+    "day3_lunch_rooftop_34": {
+        "name": "Yuna",
+        "text": "\"Es alleine zu wissen hat mich wahnsinnig gemacht. Jedes Mal, wenn ich ein Foto mache, zittern meine Haende. Was, wenn es wieder dasselbe Gesicht ist. Wie viele Tage, bis dieser auch verschwindet.\""
+    },
+    "day3_lunch_rooftop_35": {
+        "name": "Ich",
+        "text": "*'Verschwindet'.*"
+    },
+    "day3_lunch_rooftop_36": {
+        "name": "Ich",
+        "text": "\"...Verschwinden? Die Transferschueler?\""
+    },
+    "day3_lunch_rooftop_37": {
+        "name": "Yuna",
+        "text": "\"Ja. Alle. Hoechstens eine Woche. Mindestens drei Tage. Eines Tages sind sie ploetzlich weg. Niemand erinnert sich. 'Gab es so einen Schueler?' sagen sie.\""
+    },
+    "day3_lunch_rooftop_38": {
+        "name": "Ich",
+        "text": "*Yuna schaut mich an. Ihre Augen sind rot, die Nasenspitze ist rot. Aber ihr Blick ist fest.*"
+    },
+    "day3_lunch_rooftop_39": {
+        "name": "Yuna",
+        "text": "\"Senpai... du bist der 13.\""
+    },
+    "day3_lunch_rooftop_40": {
+        "name": "Ich",
+        "text": "*...Der 13.*"
+    },
+    "day3_lunch_rooftop_41": {
+        "name": "Ich",
+        "text": "*Meine Brust ist eng. Ich kann nicht atmen.*"
+    },
+    "day3_lunch_rooftop_42": {
+        "name": "Ich",
+        "text": "*Das ist nicht mein erstes Mal an dieser Schule? Ich bin... der 13.?*"
+    },
+    "day3_lunch_rooftop_43": {
+        "name": "Ich",
+        "text": "*Was ist dann mit meiner \"frueheren Schule\"? Mit \"Minsu\"? Der Erinnerung an \"Schulwechsel wegen der Arbeit meiner Eltern\"?*"
+    },
+
+    "day3_lunch_door_1": {
+        "name": "Ich",
+        "text": "*...! Ploetzlich knallte die Dachtuer mit einem WUMM zu.*"
+    },
+    "day3_lunch_door_2": {
+        "name": "Ich",
+        "text": "*Ich druecke gegen die Tuer. Sie oeffnet sich nicht. Von aussen verriegelt.*"
+    },
+    "day3_lunch_door_3": {
+        "name": "Yuna",
+        "text": "\"...! Senpai, sie haben uns entdeckt...\""
     },
     "day3_lunch_door_choice": {
         "name": "Ich",
-        "text": "*Was soll ich tun?*",
+        "text": "*Was mache ich?*",
         "choices": [
-            "Gegen die Tür hämmern und um Hilfe rufen",
-            "Ruhig bleiben (Yuna beruhigen)"
+            "Laut gegen die Tuer haemmern und rufen",
+            "Ruhig warten (Yuna beruhigen)"
         ]
     },
     "day3_lunch_door_bang": {
         "name": "Ich",
-        "text": "*Ich hämmerte gegen die Tür. Nach einem Moment ein 'Klick' — und sie öffnete sich. Niemand draußen.*"
+        "text": "*Ich haemmerte laut gegen die Tuer. 5 Minuten spaeter oeffnet sie sich. Niemand da. Kein Schloss. ...Keine Spur davon, wer sie verriegelt hat.*"
     },
     "day3_lunch_door_wait": {
         "name": "Ich",
-        "text": "*Ich hielt Yunas Schultern und beruhigte sie. Etwa 5 Minuten später öffnete sich die Tür von selbst. ...Von selbst? Niemand draußen.*"
+        "text": "*Ich hielt Yunas Schultern und beruhigte sie. 5 Minuten spaeter oeffnet sich die Tuer. Niemand da. Kein Schloss. ...Keine Spur davon, wer sie verriegelt hat.*"
     },
     "day3_lunch_door_open": {
         "name": "Ich",
-        "text": "*Ich stecke die Speicherkarte tief in die Tasche. Das... muss ich später allein überprüfen.*"
+        "text": "*Wir gehen die Treppe hinunter. Yuna folgt hinter mir. Keiner von uns sagt ein Wort.*"
+    },
+    "day3_lunch_door_open_2": {
+        "name": "Ich",
+        "text": "*...Die Fotos, die Yuna mir vorhin gezeigt hat, gehen mir nicht aus dem Kopf. 13 Fotos vom selben Gesicht. Meinem Gesicht.*"
+    },
+    "day3_lunch_door_open_3": {
+        "name": "Ich",
+        "text": "*Das ergibt keinen Sinn. Logisch ergibt es keinen Sinn.*"
+    },
+    "day3_lunch_door_open_4": {
+        "name": "Ich",
+        "text": "*\"Das kann nicht sein... ich war an meiner alten Schule... mit Minsu...\"*"
+    },
+    "day3_lunch_door_open_5": {
+        "name": "Ich",
+        "text": "*Es sind meine eigenen Erinnerungen, die aus meinem eigenen Mund kommen, aber meine Lippen fuehlen sich an, als wuerden sie das Drehbuch eines anderen lesen.*"
+    },
+    "day3_lunch_door_open_6": {
+        "name": "Ich",
+        "text": "*Mir dreht sich der Magen um. Ich stuetze mich an die Wand. Was hochkommt, ich kann nicht unterscheiden, ob es Uebelkeit oder Angst ist.*"
+    },
+    "day3_lunch_door_open_7": {
+        "name": "Ich",
+        "text": "*Aber leugnen kann ich es auch nicht. Weil die Fotos existieren.*"
+    },
+    "day3_lunch_door_open_8": {
+        "name": "Ich",
+        "text": "*Waehrend ich den Flur entlanggehe, schaue ich die vorbeigehenden Schueler an. Wer von ihnen weiss es? Wer weiss es nicht? Wer denkt gerade 'Ach, er ist wieder da'?*"
+    },
+    "day3_lunch_door_open_9": {
+        "name": "Yuna",
+        "text": "\"Senpai, die Fotos... zeig sie niemandem. Besonders nicht den Lehrern.\""
+    },
+    "day3_lunch_door_open_10": {
+        "name": "Ich",
+        "text": "\"...Verstanden.\""
+    },
+    "day3_lunch_door_open_11": {
+        "name": "Ich",
+        "text": "*Yuna trennt sich im Erdgeschoss. Bevor sie sich umdreht, schaut sie mich einmal an. Diese Augen sagen gleichzeitig 'Es tut mir leid' und 'Bitte'.*"
+    },
+    "day3_lunch_door_open_12": {
+        "name": "Ich",
+        "text": "*Ich bin allein zurueckgeblieben. Der Flur ist lang.*"
     },
 
-    "day3_lunch_sea": {
+    "day3_lunch_sea_1": {
         "name": "Han Sea",
-        "text": "\"Du isst heute mit mir, oder? Ich hab heute besonders auf das Mittagessen geachtet.\""
+        "text": "\"Isst du heute mit mir?\""
     },
     "day3_lunch_sea_2": {
         "name": "Ich",
-        "text": "*Sea lächelt. ...Aber dieses Lächeln ist anders als gestern. Ein Lächeln, das etwas verbirgt.*"
+        "text": "*Sea laechelt. ...Aber dieses Laecheln ist anders als gestern. Wenn das Laecheln von gestern 'Freude' war, ist das heutige naeher an 'Ueberpruefen'.*"
     },
     "day3_lunch_sea_3": {
-        "name": "Han Sea",
-        "text": "\"...Du triffst dich in letzter Zeit oft mit Yuna, oder?\""
+        "name": "Ich",
+        "text": "*Ich setzte mich Sea gegenueber. Sea schaut auf mein Tablett.*"
     },
     "day3_lunch_sea_4": {
-        "name": "Ich",
-        "text": "\"Yuna? Nicht wirklich.\""
+        "name": "Han Sea",
+        "text": "\"Das Menue heute ist gut. {name}, du magst Makrele, oder.\""
     },
     "day3_lunch_sea_5": {
-        "name": "Han Sea",
-        "text": "\"...So?\""
+        "name": "Ich",
+        "text": "*...Ich habe nie gesagt, dass ich Makrele mag. Aber ich mag sie tatsaechlich.*"
     },
     "day3_lunch_sea_6": {
-        "name": "Han Sea",
-        "text": "\"Du verbirgst doch nichts vor mir, oder {name}?\""
+        "name": "Ich",
+        "text": "\"Woher weisst du das?\""
     },
     "day3_lunch_sea_7": {
-        "name": "Ich",
-        "text": "*Ihre Augen lächeln nicht. Ich bin sicher. ...Das erste Mal, dass ich diese Person als beängstigend empfinde.*"
+        "name": "Han Sea",
+        "text": "\"Ich hab dich gestern gesehen, als du die Beilagen ausgesucht hast. Du hast zuerst zum Fisch gegriffen.\""
     },
     "day3_lunch_sea_8": {
+        "name": "Ich",
+        "text": "*...War das so? Ich kann mich nicht erinnern. Sea liest meinen Gesichtsausdruck. Praezise.*"
+    },
+    "day3_lunch_sea_9": {
         "name": "Han Sea",
-        "text": "\"...Ich scherze nur. Iss.\""
+        "text": "\"...{name}, du laeuftst in letzter Zeit viel alleine rum, oder?\""
+    },
+    "day3_lunch_sea_10": {
+        "name": "Ich",
+        "text": "\"Wirklich? Finde ich nicht.\""
+    },
+    "day3_lunch_sea_11": {
+        "name": "Han Sea",
+        "text": "\"...Dann bilde ich es mir wohl ein.\""
+    },
+    "day3_lunch_sea_12": {
+        "name": "Ich",
+        "text": "*Sea greift mit den Staebchen nach einer Beilage und haelt inne. Ihr Blick ist auf das Tablett fixiert. Langes Schweigen.*"
+    },
+    "day3_lunch_sea_13": {
+        "name": "Ich",
+        "text": "*Um uns herum ist es laut, aber an diesem Tisch ist es still. Die Luft ist schwer.*"
+    },
+    "day3_lunch_sea_14": {
+        "name": "Han Sea",
+        "text": "\"...Du verheimlichst mir doch etwas.\""
+    },
+    "day3_lunch_sea_15": {
+        "name": "Ich",
+        "text": "*Ihre Augen laecheln nicht. Ihre Stimme ist leise. Ist das die normale Sea? Oder ist das die echte Sea? Fuer einen Moment treffen sich unsere Blicke. Was dort ist, ist weder Enttaeuschung noch Wut. Es ist **Angst**. Sie hat Angst, dass ich ihr entgleite.*"
+    },
+    "day3_lunch_sea_16": {
+        "name": "Han Sea",
+        "text": "\"...Nur ein Scherz. Iss.\""
+    },
+    "day3_lunch_sea_17": {
+        "name": "Ich",
+        "text": "*Sea laechelt. Diesmal ist es ein perfektes Laecheln. So perfekt, dass es mir Gaensehaut macht.*"
     },
 
-    "day3_lunch_riin": {
+    "day3_lunch_riin_1": {
         "name": "Ich",
-        "text": "*Ich ging ins Krankenzimmer. Wahrscheinlich wegen dem Traum gestern Nacht tut mir der Kopf weh.*"
+        "text": "*Ich oeffnete die Tuer zum Krankenzimmer. Der Geruch von Desinfektionsmittel sticht mir in die Nase. Riin-Sensei steht vor dem Schrank. Sie dreht sich um, als die Tuer aufgeht.*"
     },
     "day3_lunch_riin_2": {
-        "name": "Kang Riin",
-        "text": "\"Du siehst blass aus. Kannst wieder nicht schlafen?\""
+        "name": "Riin",
+        "text": "\"Was ist los, {name}? Du siehst nicht gut aus.\""
     },
     "day3_lunch_riin_3": {
-        "name": "Kang Riin",
-        "text": "\"Heute besonders... wie wär's mit einem Gesundheitsdrink, den ich gemacht habe? Es ist eine Vitamin- und Kräutermischung.\""
+        "name": "Ich",
+        "text": "\"Mir ist etwas schwindelig.\""
     },
     "day3_lunch_riin_4": {
         "name": "Ich",
-        "text": "*Sie reicht mir eine Tasse mit hellvioletter Flüssigkeit. ...Ein schwacher, leicht medizinischer Geruch.*"
+        "text": "*Riin-Sensei zeigt auf das Bett. Ich setzte mich. Sie legt mir die Hand auf die Stirn. Eine kuehle Hand.*"
+    },
+    "day3_lunch_riin_5": {
+        "name": "Riin",
+        "text": "\"Kein Fieber... aber deine Gesichtsfarbe ist nicht gut.\""
+    },
+    "day3_lunch_riin_6": {
+        "name": "Ich",
+        "text": "*Riin-Sensei dreht sich um und nimmt etwas aus dem Schrank. Ich sehe ihren Ruecken. Ihre Schultern halten kurz inne. Ein kurzes Zoegern, als wuerde sie eine Entscheidung treffen.*"
+    },
+    "day3_lunch_riin_7": {
+        "name": "Riin",
+        "text": "\"Heute ausnahmsweise... moechtest du ein Gesundheitsgetraenk, das ich gemacht habe?\""
+    },
+    "day3_lunch_riin_8": {
+        "name": "Ich",
+        "text": "*Als sie sich umdreht, haelt sie einen durchsichtigen Becher mit einer hellvioletten Fluessigkeit in den Haenden. Ein leichter, chemischer Geruch. Und die Hand, die den Becher reicht, zittert. Ein feines Zittern. Man wuerde es nicht bemerken, wenn man nicht hinsieht. Aber sie zittert definitiv.*"
+    },
+    "day3_lunch_riin_9": {
+        "name": "Riin",
+        "text": "\"Das ist eine Vitamin- und Kraeutermischung. Gut fuer dich.\""
     },
     "day3_lunch_riin_choice": {
         "name": "Ich",
-        "text": "*Soll ich trinken?*",
+        "text": "*Riin-Sensei laechelt. Ein sanftes Laecheln. Aber ihre Augen... halten etwas zurueck.*",
         "choices": [
             "Trinken",
             "Ablehnen"
         ]
     },
-    "day3_lunch_riin_drink": {
+    "day3_lunch_riin_drink_1": {
         "name": "Ich",
-        "text": "*Ich trank es. ...Der Geschmack ist okay, aber ein bitterer Nachgeschmack bleibt auf der Zunge.*"
+        "text": "*Ich nahm einen Schluck. ...Ein bitterer Geschmack bleibt unter der Zunge. Mein Mund fuehlt sich leicht trocken an.*"
     },
     "day3_lunch_riin_drink_2": {
-        "name": "Kang Riin",
-        "text": "\"Gut. Es wird bald wirken.\""
+        "name": "Riin",
+        "text": "\"...Du musst nicht alles trinken. Der Geschmack ist etwas gewoehnungsbeduerftig, oder?\""
     },
-    "day3_lunch_riin_refuse": {
-        "name": "Kang Riin",
-        "text": "\"...In Ordnung, ich zwinge dich nicht.\""
+    "day3_lunch_riin_drink_3": {
+        "name": "Ich",
+        "text": "*Riin-Sensei nimmt den Becher zurueck. In dem Moment, als sie sich umdreht — beisst sie sich fest auf die Lippe.*"
+    },
+    "day3_lunch_riin_refuse_1": {
+        "name": "Riin",
+        "text": "\"...Ach so? Ist in Ordnung.\""
     },
     "day3_lunch_riin_refuse_2": {
         "name": "Ich",
-        "text": "*Riin-Sensei nimmt die Tasse mit einem enttäuschten Blick weg.*"
+        "text": "*Riin-Sensei nimmt den Becher zurueck. Sie schuettet den Inhalt in die Spuele. Ich sehe ihren Ruecken. Die Anspannung weicht aus ihren Schultern. ...Erleichterung?*"
     },
 
-    "day3_lunch_alone": {
+    "day3_lunch_alone_1": {
         "name": "Ich",
-        "text": "*Ich bleibe im Klassenzimmer und esse alleine. Alle anderen sind gegangen, das Klassenzimmer ist leer.*"
+        "text": "*Ich blieb im Klassenzimmer und ass alleine. Durch das Fenster sehe ich den Schulhof. Die Schueler spielen Fussball.*"
     },
     "day3_lunch_alone_2": {
         "name": "Ich",
-        "text": "*...Ich schaue zur hinteren Reihe. Seolhwas Platz. Auf dem Tisch steht etwas. Mit Bleistift geschrieben. Blass, aber lesbar.*"
+        "text": "*...Still. Zu still. Ich bin allein im Klassenzimmer.*"
     },
     "day3_lunch_alone_3": {
         "name": "Ich",
-        "text": "*'Geh hier raus'*"
+        "text": "*Ich schaue zur hinteren Reihe. Seolhwas Platz. Auch heute leer. Drei Tage in Folge nicht anwesend. Aber niemand scheint es seltsam zu finden. Sogar der Klassenlehrer ueberspringt ihren Namen bei der Anwesenheitskontrolle.*"
     },
     "day3_lunch_alone_4": {
         "name": "Ich",
-        "text": "*...Wer hat das geschrieben? Ist es ein Streich? ...Es gibt Spuren von Radiergummi. Sieht aus, als wäre es mehrmals geschrieben und gelöscht worden.*"
+        "text": "*Auf Seolhwas Tisch ist etwas. Mit Bleistift geschrieben. Sehr duenn. **'Geh hier raus'***"
+    },
+    "day3_lunch_alone_5": {
+        "name": "Ich",
+        "text": "*Mein Herz blieb fast stehen.*"
+    },
+    "day3_lunch_alone_6": {
+        "name": "Ich",
+        "text": "*Ich fahre mit der Hand ueber die Tischplatte. Es ist tief eingeritzt. Nicht einmal geschrieben. Mehrmals. Spuren derselben Worte, immer und immer wieder geschrieben.*"
+    },
+    "day3_lunch_alone_7": {
+        "name": "Ich",
+        "text": "*...Die Handschrift ist dieselbe wie unter dem Tisch und im Schliessfach. Meine Handschrift.*"
+    },
+    "day3_lunch_alone_8": {
+        "name": "Ich",
+        "text": "*Kein Appetit mehr. Ich machte meine Lunchbox zu.*"
     },
 
     "day3_lunch_end": {
         "name": "Ich",
-        "text": "*Ich kehrte ins Klassenzimmer zurück. Mein Herz will nicht aufhören zu rasen.*"
+        "text": "*Ich kam zurueck ins Klassenzimmer. Mein Herz hoert nicht auf zu rasen.*"
     }
 }

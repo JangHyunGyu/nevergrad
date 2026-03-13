@@ -1,313 +1,288 @@
 {
     "day3_night_start": {
         "name": "Me",
-        "text": "*Home. I lock the front door and take off my shoes.*"
+        "text": "*I'm home.*"
     },
     "day3_night_start_2": {
         "name": "Me",
-        "text": "*...Wait. The lock was strange. I definitely locked it when I left this morning... I had to turn it once more before it opened?*"
-    },
-    "day3_night_start_3": {
-        "name": "Me",
-        "text": "*...The lock must just be acting up. This apartment is a bit old.*"
-    },
-    "day3_night_start_4": {
-        "name": "Me",
-        "text": "*While eating dinner, I try to sort through today's events.*"
-    },
-    "day3_night_start_5": {
-        "name": "Me",
-        "text": "*The scratched locker. The passport photo cut in half. Seolhwa in the corridor. The words 'not yet.' The cherry blossom petal.*"
-    },
-    "day3_night_start_6": {
-        "name": "Me",
-        "text": "*Yuna's memory card. The story that transfer students disappeared. The locked rooftop door.*"
-    },
-    "day3_night_start_7": {
-        "name": "Me",
-        "text": "*Sea's jealousy. Riin's drink. Eunsu's documents. ...Too much. It's hard to believe all this happened in just 3 days.*"
+        "text": "*I took a shower and came out. My phone screen is lit up. Notifications.*"
     },
 
     "day3_night_sea_msg": {
         "name": "Me",
-        "text": "*My phone buzzes. It's Sea.*"
+        "text": "*Sea: '{name}, today was fun! Let's go together tomorrow too♥' — 10:02 PM*"
     },
     "day3_night_sea_msg_2": {
         "name": "Me",
-        "text": "*Sea: '{name}, today was fun! Let's go together tomorrow too♥'*"
+        "text": "*I didn't read it. I put the phone down while brushing my teeth.*"
     },
     "day3_night_sea_msg_3": {
         "name": "Me",
-        "text": "*One minute later. Sea: 'Reply before you sleep'*"
+        "text": "*1 minute later. Buzz. Sea: 'Reply before you go to sleep' — 10:03 PM*"
     },
     "day3_night_sea_msg_4": {
         "name": "Me",
-        "text": "*Three minutes later. Sea: '...'*"
+        "text": "*3 minutes later. Buzz. Sea: '...' — 10:06 PM*"
     },
     "day3_night_sea_msg_5": {
         "name": "Me",
-        "text": "*Two minutes later. Sea: '{name}?'*"
+        "text": "*...Three dots. What is she trying to say? This bothers me more.*"
     },
     "day3_night_sea_msg_6": {
         "name": "Me",
-        "text": "*Sea: 'Why aren't you reading?'*"
+        "text": "*2 minutes later. Buzz. Sea: '{name}?' — 10:08 PM*"
     },
     "day3_night_sea_msg_7": {
         "name": "Me",
-        "text": "*Sea: 'You're sleeping... right?'*"
+        "text": "*Buzz. Sea: 'Why aren't you reading?' — 10:11 PM*"
     },
     "day3_night_sea_msg_8": {
         "name": "Me",
-        "text": "*...6 messages in 13 minutes. Messages piling up without being read.*"
+        "text": "*Buzz. Sea: 'You're sleeping... right?' — 10:15 PM*"
     },
     "day3_night_sea_msg_9": {
         "name": "Me",
-        "text": "*I flipped the phone face-down. It vibrates. Another one. ...I ignore it.*"
+        "text": "*...6 messages in 13 minutes. Messages piling up without being read. The ellipsis after that last question mark... feels less like checking and more like surveillance.*"
+    },
+    "day3_night_sea_msg_10": {
+        "name": "Me",
+        "text": "*I flipped the phone face down. It still buzzes.*"
+    },
+    "day3_night_sea_msg_11": {
+        "name": "Me",
+        "text": "*Buzz. Again. I told myself I wouldn't check the screen, but my hand reaches for it.*"
+    },
+    "day3_night_sea_msg_12": {
+        "name": "Me",
+        "text": "*Sea: 'You left the window open, right? Air it out before bed' — 10:19 PM*"
+    },
+    "day3_night_sea_msg_13": {
+        "name": "Me",
+        "text": "*...The window? It is open right now. How does she know that from there?*"
+    },
+    "day3_night_sea_msg_14": {
+        "name": "Me",
+        "text": "*I look at the window. The curtain is open. It's dark outside. I can't see anything.*"
+    },
+    "day3_night_sea_msg_15": {
+        "name": "Me",
+        "text": "*...I can't see anything out there, so why does it feel like someone can see me?*"
+    },
+    "day3_night_sea_msg_16": {
+        "name": "Me",
+        "text": "*I closed the curtain. Put the phone in the drawer. Closed the drawer.*"
+    },
+    "day3_night_sea_msg_17": {
+        "name": "Me",
+        "text": "*...It buzzes again from inside the drawer.*"
     },
 
-    "day3_night_recall": {
+    "day3_night_bleed": {
         "name": "Me",
-        "text": "*Lying in bed staring at the ceiling. Three days since I transferred. Only three days.*"
+        "text": "*Lying under the covers, thinking. The lights are off. Streetlight casts a rectangular glow on the ceiling.*"
     },
-    "day3_night_recall_2": {
+    "day3_night_bleed_2": {
         "name": "Me",
-        "text": "*Yuna said that transfer students 'disappeared' from this school. She had evidence. The memory card.*"
+        "text": "*The photos Yuna showed me. 13 identical faces, different names. They're all supposed to be me?*"
     },
-    "day3_night_recall_3": {
+    "day3_night_bleed_3": {
         "name": "Me",
-        "text": "*...And my old school friends. All contact cut off. Left the group chat. Changed numbers.*"
+        "text": "*...No. Maybe not. They could be people who look alike. Yuna could be mistaken.*"
     },
-    "day3_night_recall_4": {
+    "day3_night_bleed_4": {
         "name": "Me",
-        "text": "*Can that many things happen simultaneously in just 3 days? Does it make sense for everyone to change their numbers at the same time?*"
+        "text": "*That's what I try to tell myself. I close my eyes. But when I close them, I see the photos. 13 ID photos in a row. Different hair colors. Different name tags. Same eyes.*"
     },
-    "day3_night_recall_5": {
+    "day3_night_bleed_5": {
         "name": "Me",
-        "text": "*...Strange. My memories from before coming to this school are... hazy.*"
+        "text": "*But. If I piece things together one by one...*"
     },
-    "day3_night_recall_6": {
+    "day3_night_bleed_6": {
         "name": "Me",
-        "text": "*Why did I transfer here? I said it was because of my parents' work situation... but what situation?*"
+        "text": "*Why did I know the school layout from day one? Why did my body find the vending machine before I did?*"
     },
-    "day3_night_recall_7": {
+    "day3_night_bleed_7": {
         "name": "Me",
-        "text": "*My parents? Contact... when was the last time I contacted them? ...I... can't remember.*"
+        "text": "*...It was definitely strange then. It was my first day, yet I never got lost in the hallways. My body already knew which way the faculty office was.*"
     },
-    "day3_night_recall_8": {
+    "day3_night_bleed_8": {
         "name": "Me",
-        "text": "*My old school friends' faces? ...Minsu. Minsu's face is... blurry. It was clear just yesterday.*"
+        "text": "*Why does the handwriting on the locker match mine?*"
     },
-    "day3_night_recall_9": {
+    "day3_night_bleed_9": {
         "name": "Me",
-        "text": "*...What is this. Why can't I remember?*"
+        "text": "*Why does Seolhwa know that I'm left-handed?*"
+    },
+    "day3_night_bleed_10": {
+        "name": "Me",
+        "text": "*Why has Sea's lunchbox been perfectly tailored to my taste from the start?*"
+    },
+    "day3_night_bleed_11": {
+        "name": "Me",
+        "text": "*...Why are my memories of my \"old school\" so hazy? I can't remember what the classroom looked like, what the school gate looked like... I attended for two years, yet...*"
+    },
+    "day3_night_bleed_12": {
+        "name": "Me",
+        "text": "*I try to recall it. My old school's classroom. ...Nothing comes up. White walls. That's it. The teachers' faces? Gone. Who sat next to me? Gone. Two years' worth of memories, all of it blurred.*"
+    },
+    "day3_night_bleed_13": {
+        "name": "Me",
+        "text": "*My breathing quickens. The ceiling feels like it's pressing down on me.*"
+    },
+    "day3_night_bleed_14": {
+        "name": "Me",
+        "text": "***...Did my old school even exist?***"
+    },
+    "day3_night_bleed_15": {
+        "name": "Me",
+        "text": "*I sat up. Sweat beads on my forehead. My hands are shaking. ...What is this? What have I learned? No — what have I been not knowing?*"
     },
 
     "day3_night_stat_crack": {
         "name": "Me",
-        "text": "*My chest feels tight. My heart is racing.*"
+        "text": "*I lay back down. Closed my eyes.*"
     },
     "day3_night_stat_crack_2": {
         "name": "Me",
-        "text": "*The warmth Sea showed me. Ms. Eunsu's kindness. Riin's smile. All of them... all good people. Right?*"
+        "text": "*The warmth Sea showed me. Mr. Eunsu's kindness. Riin's smile.*"
     },
     "day3_night_stat_crack_3": {
         "name": "Me",
-        "text": "*...Something is wrong. This feeling isn't 'affection.' This is...*"
+        "text": "*...They're all good people. They're all nice to me. And yet. Why am I so anxious? Why am I scared?*"
     },
     "day3_night_stat_crack_4": {
         "name": "Me",
-        "text": "*...Fear?*"
+        "text": "*I'm surrounded by good people, so why does it feel like walls on all sides?*"
     },
     "day3_night_stat_crack_5": {
         "name": "Me",
-        "text": "*Why am I scared? Why am I trembling right now?*"
+        "text": "*...Just now, I think I saw something. On the screen.*"
+    },
+    "day3_night_stat_crack_6": {
+        "name": "Me",
+        "text": "*No. Nothing's there. My eyes are just tired.*"
     },
 
-    "day3_night_nightmare": {
+    "day3_night_wall": {
         "name": "Me",
-        "text": "*...I closed my eyes and immediately it was a dream. No, I can't even tell when I fell asleep.*"
+        "text": "*I can't fall asleep. After tossing and turning for a long time, I finally drifted off.*"
     },
-    "day3_night_nightmare_2": {
+    "day3_night_wall_2": {
         "name": "Me",
-        "text": "*I'm walking down a corridor. The school. The school at night.*"
+        "text": "*3 AM. I got up to use the bathroom. My head feels heavy.*"
     },
-    "day3_night_nightmare_3": {
+    "day3_night_wall_3": {
         "name": "Me",
-        "text": "*Only the emergency lights glow red. Only my footsteps echo. Thud. Thud. Classroom doors stand open one by one. Darkness inside.*"
+        "text": "*I walk down the hallway without turning on the light. The floor is cold under my feet. ...I stopped.*"
     },
-    "day3_night_nightmare_4": {
-        "name": "???",
-        "text": "\"...{name} belongs to me.\""
-    },
-    "day3_night_nightmare_5": {
+    "day3_night_wall_4": {
         "name": "Me",
-        "text": "*! I looked behind me. Nobody there. ...I can hear laughter. Giggling. From beyond the walls.*"
+        "text": "*Something is written on the wall. Faintly visible in the streetlight. In pencil. In my handwriting.*"
     },
-    "day3_night_nightmare_6": {
+    "day3_night_wall_5": {
         "name": "Me",
-        "text": "*It comes from the end of the corridor. I started running. The corridor stretches endlessly.*"
+        "text": "***'Get out of here'***"
     },
-    "day3_night_nightmare_7": {
-        "name": "???",
-        "text": "\"...I'll protect you. Don't go anywhere. Don't... go... anywhere...\""
-    },
-    "day3_night_nightmare_8": {
+    "day3_night_wall_6": {
         "name": "Me",
-        "text": "*Heels clicking behind me. Tap. Tap. Tap. Getting faster and faster.*"
+        "text": "*I stopped breathing. I turned on the light. The fluorescent flickers on. The writing becomes clearly visible.*"
     },
-    "day3_night_nightmare_9": {
+    "day3_night_wall_7": {
         "name": "Me",
-        "text": "*I run. I'm out of breath. My legs are heavy. I can't look back. I absolutely cannot look back.*"
+        "text": "*...Did I write this? In my sleep? I have no memory of it. I definitely fell asleep and then woke up.*"
     },
-    "day3_night_nightmare_10": {
-        "name": "???",
-        "text": "\"It won't hurt. It won't hurt. It won't hurt. Itwonthurtitwonthurtitwont...\""
-    },
-    "day3_night_nightmare_11": {
+    "day3_night_wall_8": {
         "name": "Me",
-        "text": "*...Dead end. A wall.*"
+        "text": "*I touched the writing with my hand. Pencil graphite smudges onto my fingertips. This was written recently. It's not a dried mark.*"
     },
-    "day3_night_nightmare_12": {
+    "day3_night_wall_9": {
         "name": "Me",
-        "text": "*When I look back... three shadows are standing there. Smiling. All three with the same smile.*"
+        "text": "*I looked at my hands. Right index finger. Clean. ...Left hand. Pencil marks on my left index and middle finger. The first joint of my index finger is blackened.*"
     },
-    "day3_night_nightmare_13": {
+    "day3_night_wall_10": {
         "name": "Me",
-        "text": "*Until yesterday I felt this smile was 'warm.'*"
+        "text": "*I'm left-handed. In my sleep, I wrote on the wall with my left hand.*"
     },
-    "day3_night_nightmare_14": {
+    "day3_night_wall_11": {
         "name": "Me",
-        "text": "*The shadows approach. Step by step. There's nowhere to run.*"
+        "text": "*I looked around the room. A pencil is sitting on the desk. I didn't put it there. I had put it in the drawer. ...Someone — no, I — while asleep, opened the drawer, took out the pencil, wrote on the wall, placed the pencil on the desk, and lay back down.*"
+    },
+    "day3_night_wall_12": {
+        "name": "Me",
+        "text": "*I have no memory of it. None at all. ...Someone who isn't me — with my own hands — while I slept — my thoughts won't organize. I'm just scared.*"
     },
 
     "day3_night_seolhwa": {
-        "name": "Lee Seolhwa",
-        "text": "\"...Run.\""
+        "name": "Me",
+        "text": "*I'm staring at the writing on the wall. The air changes. The temperature seems to drop. The fluorescent light flickers once.*"
     },
     "day3_night_seolhwa_2": {
         "name": "Me",
-        "text": "*A hand grabbed me from behind and pulled. Seolhwa is standing there. This time she doesn't disappear. She has an expression. ...She's crying.*"
+        "text": "*Someone is standing in the corner of the room.*"
     },
     "day3_night_seolhwa_3": {
-        "name": "Lee Seolhwa",
-        "text": "\"...{name}.\""
+        "name": "Me",
+        "text": "*My heart feels like it stopped. My body freezes.*"
     },
     "day3_night_seolhwa_4": {
-        "name": "Lee Seolhwa",
-        "text": "\"One year ago... I came here just like you.\""
+        "name": "Me",
+        "text": "*...It's Seolhwa. Pale face. Silver-white hair. Wet eyes. The figure of a frail girl. Wearing the school uniform. In the middle of the night. In my room. ...Is this a hallucination? Is it real? The door is locked, so how did she get in?*"
     },
     "day3_night_seolhwa_5": {
-        "name": "Me",
-        "text": "*Seolhwa's voice trembles. But it's clear. For the first time she's speaking in proper sentences.*"
+        "name": "Seolhwa",
+        "text": "\"...Five days.\""
     },
     "day3_night_seolhwa_6": {
-        "name": "Lee Seolhwa",
-        "text": "\"At first everything was good. The teacher was kind, Sea smiled at me, Nurse Riin made me tea.\""
+        "name": "Me",
+        "text": "\"...Five days until what?\""
     },
     "day3_night_seolhwa_7": {
-        "name": "Lee Seolhwa",
-        "text": "\"...Everything felt warm. I thought this school was heaven.\""
+        "name": "Seolhwa",
+        "text": "\"Within five days... you have to get out of here.\""
     },
     "day3_night_seolhwa_8": {
-        "name": "Me",
-        "text": "*Seolhwa pauses briefly. She wipes her tears. Her hand is transparent.*"
+        "name": "Seolhwa",
+        "text": "\"Before you end up like me.\""
     },
     "day3_night_seolhwa_9": {
-        "name": "Lee Seolhwa",
-        "text": "\"...It was all a lie. Everything.\""
+        "name": "Me",
+        "text": "\"...Like you? What happened to you...\""
     },
     "day3_night_seolhwa_10": {
-        "name": "Lee Seolhwa",
-        "text": "\"They gave me... medicine... to erase memories... every day... little by little...\""
+        "name": "Me",
+        "text": "*Seolhwa reaches out her hand. Toward my face. Just before it touches — she stops.*"
     },
     "day3_night_seolhwa_11": {
-        "name": "Lee Seolhwa",
-        "text": "\"...I didn't... swallow it. I... hid the medicine. To protect my memories...\""
+        "name": "Me",
+        "text": "*...Her hand is translucent. The streetlight from beyond the window passes through the back of her hand. Where veins should be, light passes through. Seolhwa's outline is wavering. Like a reflection on the surface of water. As if she has no substance.*"
     },
     "day3_night_seolhwa_12": {
-        "name": "Lee Seolhwa",
-        "text": "\"And then...\""
+        "name": "Seolhwa",
+        "text": "\"...Remember. The left hand.\""
     },
     "day3_night_seolhwa_13": {
         "name": "Me",
-        "text": "*Seolhwa looks down at her own hand. The hand is transparent. The corridor tiles are visible through her fingers.*"
+        "text": "*I blinked. Seolhwa is gone. Nothing where she stood. No footprints on the floor.*"
     },
     "day3_night_seolhwa_14": {
-        "name": "Lee Seolhwa",
-        "text": "\"**...I ended up like this.**\""
+        "name": "Me",
+        "text": "*...Was it a dream? But I was standing up. I was definitely standing. I heard her voice.*"
     },
     "day3_night_seolhwa_15": {
-        "name": "Lee Seolhwa",
-        "text": "\"Nobody can see me. Nobody remembers my name. I was erased from the attendance sheet too.\""
+        "name": "Me",
+        "text": "*I went to where she had been standing. Touched the floor. It's cold. Definitely colder than the surrounding area. ...That's all.*"
     },
     "day3_night_seolhwa_16": {
-        "name": "Lee Seolhwa",
-        "text": "\"...I don't even know if I'm dead or alive. I'm just... bound here.\""
+        "name": "Me",
+        "text": "*The writing on the wall is still there. 'Get out of here.' In my handwriting. I look at my left hand. The left hand with pencil marks. What Seolhwa said last. \"The left hand.\" ...What does that mean?*"
     },
     "day3_night_seolhwa_17": {
         "name": "Me",
-        "text": "*Seolhwa looks at me. Tear-stained eyes staring straight at me.*"
+        "text": "*The room is too quiet. Only the clock ticking. Tick. Tick. Tick.*"
     },
     "day3_night_seolhwa_18": {
-        "name": "Lee Seolhwa",
-        "text": "\"Don't trust those people. **Five days.** The time you have left.\""
-    },
-    "day3_night_seolhwa_19": {
-        "name": "Lee Seolhwa",
-        "text": "\"**Within five days... you have to get out of here.** Before you end up like me.\""
-    },
-    "day3_night_seolhwa_20": {
-        "name": "Lee Seolhwa",
-        "text": "\"...And, {name}.\""
-    },
-    "day3_night_seolhwa_21": {
-        "name": "Lee Seolhwa",
-        "text": "\"Remember... me.\""
-    },
-    "day3_night_seolhwa_22": {
-        "name": "Lee Seolhwa",
-        "text": "\"Nobody remembers. Here. Not even that a person like me existed.\""
-    },
-    "day3_night_seolhwa_23": {
         "name": "Me",
-        "text": "*Seolhwa's form begins to fade. Becoming transparent from the edges. She smiled one last time. Sad, but... the first smile I've seen from her. The word 'five days' and Seolhwa's final smile refuse to leave my mind.*"
-    },
-
-    "day3_night_wakeup": {
-        "name": "Me",
-        "text": "*—! I opened my eyes. Drenched in cold sweat. The blanket is soaked.*"
-    },
-    "day3_night_wakeup_2": {
-        "name": "Me",
-        "text": "*The clock. 4:12 AM. My heart feels like it could burst. I steady my breathing. One, two, three...*"
-    },
-    "day3_night_wakeup_3": {
-        "name": "Me",
-        "text": "*Was it... a dream?*"
-    },
-    "day3_night_wakeup_4": {
-        "name": "Me",
-        "text": "*The name Seolhwa. It was definitely on the attendance sheet... no, it wasn't.*"
-    },
-    "day3_night_wakeup_5": {
-        "name": "Me",
-        "text": "*A transparent hand. Tears. 'Five days.'*"
-    },
-    "day3_night_wakeup_6": {
-        "name": "Me",
-        "text": "*...This isn't just a dream. Something is warning me.*"
-    },
-    "day3_night_wakeup_7": {
-        "name": "Me",
-        "text": "*'Get out within five days.' ...From this school? ...Or from all of this?*"
-    },
-    "day3_night_wakeup_8": {
-        "name": "Me",
-        "text": "*I take out the photo fragment I picked up earlier. The passport photo cut in half. ...Was this person's owner also 'processed'?*"
-    },
-    "day3_night_wakeup_9": {
-        "name": "Me",
-        "text": "*What do I do starting tomorrow?*"
+        "text": "*...Something is crumbling. Inside me. The things I'd thought were 'normal' until now, one by one.*"
     },
 
     "day3_night_choice": {
@@ -318,32 +293,37 @@
             "Pretend I don't know"
         ]
     },
+
     "day3_night_investigate": {
         "name": "Me",
-        "text": "*I can't look away anymore.*"
+        "text": "*I can't close my eyes anymore. Tomorrow, somehow. The locked door in the old building. The Subject Management Log. The 13 photos. It's all connected.*"
     },
     "day3_night_investigate_2": {
         "name": "Me",
-        "text": "*Yuna's memory card. The documents. The missing transfer students. The old school friends who cut contact.*"
+        "text": "*I took a photo of the writing on the wall. Evidence. Evidence I left for myself.*"
     },
-    "day3_night_investigate_3": {
-        "name": "Me",
-        "text": "*...I need to connect everything. Tomorrow. Somehow.*"
-    },
+
     "day3_night_deny": {
         "name": "Me",
-        "text": "*...It was probably just a dream. Because of stress. I've only been here 3 days, I shouldn't push myself.*"
+        "text": "*...It's probably just stress. I'm just on edge because of the transfer. It'll be fine tomorrow.*"
     },
     "day3_night_deny_2": {
         "name": "Me",
-        "text": "*Everything will be fine by morning.*"
+        "text": "*I pulled the covers over myself. Closed my eyes. The writing on the wall lingers behind my eyelids.*"
     },
     "day3_night_deny_3": {
         "name": "Me",
-        "text": "*I pulled the blanket over myself and closed my eyes.*"
+        "text": "*...*"
     },
-    "day3_night_ghost_msg": {
+    "day3_night_deny_4": {
+        "name": "Me",
+        "text": "*...*"
+    },
+    "day3_night_ghost_ok": {
         "text": "Will it really be okay?"
+    },
+    "day3_night_ghost_run": {
+        "text": "Run away"
     },
     "day3_night_end": {
         "name": "Me",

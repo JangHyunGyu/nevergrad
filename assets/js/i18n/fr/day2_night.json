@@ -1,173 +1,217 @@
 {
   "day2_night_start": {
     "name": "Moi",
-    "text": "*Rentré. Cette journée m'a fatigué, elle aussi. Mais d'une bonne fatigue.*"
-  },
-  "day2_night_2": {
-    "name": "Moi",
-    "text": "*L'expression de Sea dans la lumière du couchant me revient sans cesse. Ce visage quand elle a dit 'solitaire'.*"
-  },
-  "day2_night_3": {
-    "name": "Moi",
-    "text": "*...C'est quelqu'un de bien. Quelqu'un de profond.*"
+    "text": "*Je vérifie mon téléphone.*"
   },
   "day2_night_phone_1": {
     "name": "Moi",
-    "text": "*Je vérifie à nouveau mon téléphone.*"
+    "text": "*Le groupe de l'ancien lycée. 'Lu par 3'. Personne n'a répondu. Ça fait deux jours.*"
   },
   "day2_night_phone_2": {
     "name": "Moi",
-    "text": "*Le groupe de mon ancien lycée. Mon message d'hier affichait '0 lu'... maintenant il affiche '3 lu'.*"
+    "text": "*J'ai envoyé un message à Minsu. 'Eh Minsu j'ai changé de lycée et tu m'écris même pas lol'*"
   },
   "day2_night_phone_3": {
     "name": "Moi",
-    "text": "*Donc ils l'ont lu. Mais personne n'a répondu. ...Ils doivent être occupés.*"
-  },
-  "day2_night_phone_4": {
-    "name": "Moi",
-    "text": "*J'ai envoyé un message direct à Minsu. 'Eh Minsu, j'ai changé de lycée, pourquoi tu donnes pas de nouvelles lol'*"
-  },
-  "day2_night_phone_5": {
-    "name": "Moi",
-    "text": "*Dix minutes plus tard.*",
+    "text": "*10 minutes plus tard. L'indicateur '···' est apparu. Minsu est en train d'écrire.*",
     "messengerDelay": 5000,
     "messengerTypingName": "Minsu"
   },
-  "day2_night_phone_6": {
+  "day2_night_phone_4": {
     "name": "Moi",
-    "text": "*...Pourquoi il met autant de temps à écrire ? Ce type répond normalement en une seconde.*"
+    "text": "*5 secondes. L'indicateur de frappe continue de clignoter. Il écrit un long message ?*"
   },
-  "day2_night_phone_7": {
-    "name": "Moi",
-    "text": "*5 secondes. L'indicateur de frappe continue de clignoter. Il écrit un roman ?*"
-  },
-  "day2_night_phone_8": {
+  "day2_night_phone_5": {
     "name": "Moi",
     "text": "*La réponse est arrivée.*"
   },
-  "day2_night_phone_9": {
+  "day2_night_phone_6": {
     "name": "Moi",
     "text": "*Minsu : 'Ouais ça va. C'est comment là-bas ?'*"
   },
+  "day2_night_phone_7": {
+    "name": "Moi",
+    "text": "*...C'est quoi ça. Le mec qui commence normalement par 'hé l'abruti mdrr' suivi d'un flot d'insultes, et il me sort un truc aussi sec ?*"
+  },
+  "day2_night_phone_8": {
+    "name": "Moi",
+    "text": "*'Ouais ça va.' ...C'est tout ce qu'il a choisi après 5 secondes de frappe ?*"
+  },
+  "day2_night_phone_9": {
+    "name": "Moi",
+    "text": "*J'ai répondu. 'Pourquoi t'es si formel lol il se passe quoi ?'*"
+  },
   "day2_night_phone_10": {
     "name": "Moi",
-    "text": "*...C'est quoi ça. J'ai demandé pourquoi il n'avait pas donné de nouvelles, il ignore ça et me répond juste 'c'est comment là-bas ?'?*"
+    "text": "*1 minute. 2 minutes. L'indicateur de frappe réapparaît.*"
   },
   "day2_night_phone_11": {
     "name": "Moi",
-    "text": "*C'est vraiment Minsu ? Normalement il dirait 'hé l'idiot lmaooo t'as mis le temps' suivi d'un flot d'insultes.*"
+    "text": "*Minsu : 'Non rien de spécial lol je suis juste occupé'*"
   },
   "day2_night_phone_12": {
     "name": "Moi",
-    "text": "*'Ça va.' ...C'est tout ce qu'il a trouvé après 5 secondes de frappe ?*"
+    "text": "*...Son ton a l'air un peu différent. Il doit être occupé.*"
   },
-  "day2_night_msg_1": {
+  "day2_night_phone_13": {
     "name": "Moi",
-    "text": "*Il y a un message de Sea.*"
+    "text": "*Je pose le téléphone. La lune brille dehors. Une autre notification sonne.*"
   },
-  "day2_night_msg_2": {
+  "day2_night_sea_1": {
     "name": "Moi",
-    "text": "*Sea : 'Merci pour aujourd'hui. D'être passé à la salle du conseil.'*"
+    "text": "*Sea : 'Merci encore pour aujourd'hui. D'être venu à la salle du conseil.'*"
   },
-  "day2_night_msg_3": {
+  "day2_night_sea_2": {
     "name": "Moi",
     "text": "*Sea : 'On mange encore ensemble demain !'*"
   },
-  "day2_night_msg_4": {
+  "day2_night_sea_3": {
     "name": "Moi",
     "text": "*Sea : '...Être avec {name}, c'est bien.'*"
   },
-  "day2_night_msg_5": {
+  "day2_night_sea_4": {
     "name": "Moi",
-    "text": "*...Ce troisième message. 'C'est bien.' Simple amitié, ou quelque chose de plus. ...Peut-être les deux.*"
+    "text": "*Je réponds. 'Moi aussi je me suis bien amusé aujourd'hui. Bon courage pour la fête sportive lol'*"
   },
-  "day2_night_msg_6": {
+  "day2_night_sea_5": {
     "name": "Moi",
-    "text": "*J'envoie une réponse. 'Moi aussi j'ai passé une bonne journée. À demain.'*"
+    "text": "*Sea : 'Bon courage ? lol C'est toi qui dois m'aider'*"
   },
-  "day2_night_msg_7": {
+  "day2_night_sea_6": {
     "name": "Moi",
-    "text": "*Sea : '♡' ...Un cœur. Elle est vraiment directe.*"
+    "text": "*Sea : 'Demain matin je t'attends encore'*"
   },
-  "day2_night_sleep_1": {
+  "day2_night_sea_7": {
     "name": "Moi",
-    "text": "*Je m'allonge et fixe le plafond.*"
+    "text": "*'Encore attendre ? T'as pas froid ?'*"
   },
-  "day2_night_sleep_2": {
+  "day2_night_sea_8": {
     "name": "Moi",
-    "text": "*L'histoire des contacts de mon ancien lycée me tracasse un peu, mais... bah, ça s'arrangera demain. Je ferme les yeux. Fatigué. Ma conscience se brouille.*"
+    "text": "*Sea : 'J'ai pas froid~'*"
   },
-  "day2_night_sleep_3": {
+  "day2_night_sea_9": {
     "name": "Moi",
-    "text": "*...Ma conscience s'estompe. Une sensation de sombrer dans les ténèbres.*"
+    "text": "*Sea : 'Mais tu te souviens de la promesse de ce midi, hein ?'*"
+  },
+  "day2_night_sea_10": {
+    "name": "Moi",
+    "text": "*'Samedi ? Bien sûr.'*"
+  },
+  "day2_night_sea_11": {
+    "name": "Moi",
+    "text": "*Sea : '♡'*"
+  },
+  "day2_night_sea_12": {
+    "name": "Moi",
+    "text": "*Sea : 'Alors bonne nuit'*"
+  },
+  "day2_night_sea_13": {
+    "name": "Moi",
+    "text": "*'Bonne nuit.'*"
+  },
+  "day2_night_sea_14": {
+    "name": "Moi",
+    "text": "*Un message est arrivé via l'appli Sécurité Étudiante.*"
+  },
+  "day2_night_eunsu_1": {
+    "name": "Moi",
+    "text": "*Eunsu : '{name}, tu as bien fait ta présentation aujourd'hui. Tu t'adaptes vite.'*"
+  },
+  "day2_night_eunsu_2": {
+    "name": "Moi",
+    "text": "*Eunsu : 'Tu peux passer à la salle des profs demain ? J'ai un document à vérifier.'*"
+  },
+  "day2_night_eunsu_3": {
+    "name": "Moi",
+    "text": "*'Oui, d'accord.'*"
+  },
+  "day2_night_eunsu_4": {
+    "name": "Moi",
+    "text": "*Eunsu : '👍 Repose-toi bien.'*"
+  },
+  "day2_night_eunsu_5": {
+    "name": "Moi",
+    "text": "*...La prof qui envoie même ce genre de messages. Mon ancien prof principal ne se souvenait même pas de mon nom.*"
+  },
+  "day2_night_flash_1": {
+    "name": "Moi",
+    "text": "*Je me couche sous la couette et ferme les yeux.*"
+  },
+  "day2_night_flash_2": {
+    "name": "Moi",
+    "text": "*...Soudain, une image a flashé. Je marche dans le couloir de ce lycée. Il pleut. Mon uniforme est trempé. Je cours avec quelqu'un —*"
+  },
+  "day2_night_flash_3": {
+    "name": "Moi",
+    "text": "*On se tient la main. Une main de fille. Une main froide.*"
+  },
+  "day2_night_flash_4": {
+    "name": "Moi",
+    "text": "*\"Par ici\" — la voix de quelqu'un. J'ai l'impression de l'avoir déjà entendue.*"
+  },
+  "day2_night_flash_5": {
+    "name": "Moi",
+    "text": "*J'ai ouvert les yeux. Mon cœur bat fort.*"
+  },
+  "day2_night_flash_6": {
+    "name": "Moi",
+    "text": "*...C'était quoi ? À l'instant. Ce n'était pas un rêve, mais une image est apparue. Le couloir de ce lycée... comme si je l'avais déjà parcouru. J'ai couru en tenant la main de quelqu'un. Une main froide.*"
+  },
+  "day2_night_flash_7": {
+    "name": "Moi",
+    "text": "*...Eunsu ? Sa main était froide quand elle m'a tapé l'épaule tout à l'heure. ...Non, ça ne peut pas avoir de rapport.*"
+  },
+  "day2_night_flash_8": {
+    "name": "Moi",
+    "text": "*...C'est sûrement parce que la tension du premier jour ne s'est pas encore dissipée. Ma tête est remplie d'images de l'école.*"
   },
   "day2_night_dream_1": {
     "name": "Moi",
-    "text": "*...Je marche dans un couloir sombre.*"
+    "text": "*Je referme les yeux. Cette fois, je m'endors.*"
   },
   "day2_night_dream_2": {
     "name": "Moi",
-    "text": "*C'est... le lycée ? Le couloir du lycée, la nuit. Seules les lumières de secours brillent faiblement.*"
+    "text": "*Je rêve.*"
   },
   "day2_night_dream_3": {
     "name": "Moi",
-    "text": "*Seuls mes pas résonnent. Pas. Pas. Pas.*"
+    "text": "*Une salle de classe. Mais pas celle d'aujourd'hui. Les bureaux sont disposés différemment. Il y a une date au tableau mais je n'arrive pas à la lire.*"
   },
   "day2_night_dream_4": {
     "name": "Moi",
-    "text": "*...Qu'est-ce que je fais là ? Comment je suis arrivé ici ?*"
+    "text": "*Quelqu'un est assis au premier rang. Des cheveux longs. Je ne vois que son dos.*"
   },
   "day2_night_dream_5": {
-    "name": "???",
-    "text": "\"...Fu...is...\""
+    "name": "Moi",
+    "text": "*\"Hé, ça va ?\"*"
   },
   "day2_night_dream_6": {
     "name": "Moi",
-    "text": "*Je me suis retourné. Personne. Mais je l'ai entendue distinctement. Une voix de fille. Une voix tremblante.*"
+    "text": "*La personne se retourne. C'est Seolhwa. Mais l'expression de Seolhwa est différente. La Seolhwa d'aujourd'hui est toujours triste, mais la Seolhwa du rêve — sourit.*"
   },
   "day2_night_dream_7": {
     "name": "Moi",
-    "text": "*Quelqu'un se tient au bout du couloir. Un visage pâle. Des yeux qui regardent au loin. De longs cheveux noirs.*"
+    "text": "*Seolhwa ouvre la bouche. Elle dit quelque chose mais je n'entends pas. J'essaie de lire sur ses lèvres. 'Ai—' Elle dit quelque chose.*"
   },
   "day2_night_dream_8": {
     "name": "Moi",
-    "text": "*...La fille du fond ? Seolhwa ?*"
+    "text": "*La salle de classe s'assombrit. Le visage de Seolhwa devient flou.*"
   },
   "day2_night_dream_9": {
     "name": "Moi",
-    "text": "*Je m'approche. Un pas, deux pas. Mes pas résonnent. Sa bouche bouge.*"
-  },
-  "day2_night_dream_10": {
-    "name": "???",
-    "text": "\"...Souviens-toi... de moi...\""
-  },
-  "day2_night_dream_11": {
-    "name": "Moi",
-    "text": "*J'ai tendu la main. Presque à portée. Au moment où le bout de mes doigts allait la toucher —*"
-  },
-  "day2_night_dream_12": {
-    "name": "Moi",
-    "text": "*Mon champ de vision s'obscurcit comme si le sol s'était dérobé. Je tombe. Sans fin.*"
+    "text": "*—*"
   },
   "day2_night_wake_1": {
     "name": "Moi",
-    "text": "*...! Je me réveille trempé de sueur. Mon cœur bat à se rompre.*"
+    "text": "*C'est le matin. Le réveil sonne.*"
   },
   "day2_night_wake_2": {
     "name": "Moi",
-    "text": "*Je regarde l'horloge. 3h47.*"
+    "text": "*...Un rêve ? Seolhwa y était. Elle souriait. Elle essayait de dire quelque chose...*"
   },
   "day2_night_wake_3": {
     "name": "Moi",
-    "text": "*Un rêve. Juste un rêve. ...N'est-ce pas ?*"
-  },
-  "day2_night_wake_4": {
-    "name": "Moi",
-    "text": "*...Mais pourquoi le visage de Seolhwa reste-t-il gravé si nettement dans mon esprit ?*"
-  },
-  "day2_night_wake_5": {
-    "name": "Moi",
-    "text": "*Je bois un verre d'eau et me recouche. Le sommeil ne revient pas facilement.*"
+    "text": "*Je ne me souviens plus. De ce qu'elle a dit. ...C'était juste un rêve.*"
   },
   "day2_night_end": {
     "name": "",

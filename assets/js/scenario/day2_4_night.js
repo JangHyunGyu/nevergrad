@@ -1,12 +1,12 @@
 /**
  * ============================================================================
- * Day 2-4: Night - 이상한 꿈
+ * Day 2-4: Night - 연락 두절, 메시지, 데자뷔
  * ============================================================================
- * - 귀가 후 회상
- * - 연락 두절 (전 학교 그룹방, 전화 시도)
- * - 세아의 메시지
- * - 잠들기 전
- * - 꿈 시퀀스 (설화, 글리치)
+ * - 연락 두절 (전 학교 그룹방 '읽음 3', 민수 개인 메시지)
+ * - 세아와의 카톡
+ * - 은수 선생님 메시지
+ * - 잠들기 전 — 데자뷔 플래시 (MEMORY LEAK)
+ * - 설화의 꿈
  * - 기상 후 2일차 종료
  * ============================================================================
  */
@@ -16,24 +16,14 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
 
 Object.assign(SCENARIO[2], {
 
-    // ===== 귀가 =====
+    // ===== 연락 두절 =====
     "day2_night_start": {
         background: "home",
         bgm: "night_calm.mp3",
         character: null,
         night: true,
-        next: "day2_night_2"
-    },
-    "day2_night_2": {
-        night: true,
-        next: "day2_night_3"
-    },
-    "day2_night_3": {
-        night: true,
         next: "day2_night_phone_1"
     },
-
-    // ===== 연락 두절 =====
     "day2_night_phone_1": {
         night: true,
         next: "day2_night_phone_2"
@@ -48,6 +38,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_phone_4": {
         night: true,
+        messengerDelay: 5000,
         next: "day2_night_phone_5"
     },
     "day2_night_phone_5": {
@@ -80,67 +71,171 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_phone_12": {
         night: true,
-        next: "day2_night_msg_1"
+        next: "day2_night_phone_13"
+    },
+    "day2_night_phone_13": {
+        night: true,
+        next: "day2_night_sea_1"
     },
 
-    // ===== 세아의 메시지 =====
-    "day2_night_msg_1": {
-        night: true,
-        messengerDelay: 5000,
-        next: "day2_night_msg_2"
-    },
-    "day2_night_msg_2": {
+    // ===== 세아와의 카톡 =====
+    "day2_night_sea_1": {
+        character: "sea_smile",
         night: true,
         messengerDelay: 1200,
-        next: "day2_night_msg_3"
+        next: "day2_night_sea_2"
     },
-    "day2_night_msg_3": {
+    "day2_night_sea_2": {
+        character: "sea_smile",
         night: true,
         messengerDelay: 1200,
-        next: "day2_night_msg_4"
+        next: "day2_night_sea_3"
     },
-    "day2_night_msg_4": {
+    "day2_night_sea_3": {
+        character: "sea_smile",
         night: true,
         messengerDelay: 1200,
-        next: "day2_night_msg_5"
+        next: "day2_night_sea_4"
     },
-    "day2_night_msg_5": {
+    "day2_night_sea_4": {
+        character: null,
         night: true,
-        next: "day2_night_msg_6"
+        next: "day2_night_sea_5"
     },
-    "day2_night_msg_6": {
+    "day2_night_sea_5": {
+        character: "sea_smile",
         night: true,
-        next: "day2_night_msg_7"
+        messengerDelay: 1200,
+        next: "day2_night_sea_6"
+    },
+    "day2_night_sea_6": {
+        character: "sea_smile",
+        night: true,
+        messengerDelay: 1200,
+        next: "day2_night_sea_7"
+    },
+    "day2_night_sea_7": {
+        character: null,
+        night: true,
+        next: "day2_night_sea_8"
+    },
+    "day2_night_sea_8": {
+        character: "sea_smile",
+        night: true,
+        messengerDelay: 1200,
+        next: "day2_night_sea_9"
+    },
+    "day2_night_sea_9": {
+        character: "sea_smile",
+        night: true,
+        messengerDelay: 1200,
+        next: "day2_night_sea_10"
+    },
+    "day2_night_sea_10": {
+        character: null,
+        night: true,
+        next: "day2_night_sea_11"
+    },
+    "day2_night_sea_11": {
+        character: "sea_smile",
+        night: true,
+        messengerDelay: 1200,
+        next: "day2_night_sea_12"
+    },
+    "day2_night_sea_12": {
+        character: "sea_smile",
+        night: true,
+        messengerDelay: 1200,
+        next: "day2_night_sea_13"
+    },
+    "day2_night_sea_13": {
+        character: null,
+        night: true,
+        next: "day2_night_sea_14"
     },
 
-    // ===== 잠들기 전 =====
-    "day2_night_msg_7": {
+    // ===== 은수 선생님 메시지 =====
+    "day2_night_sea_14": {
+        character: null,
+        night: true,
+        next: "day2_night_eunsu_1"
+    },
+    "day2_night_eunsu_1": {
+        character: "eunsu_warm",
+        night: true,
+        messengerDelay: 1200,
+        next: "day2_night_eunsu_2"
+    },
+    "day2_night_eunsu_2": {
+        character: "eunsu_warm",
+        night: true,
+        messengerDelay: 1200,
+        next: "day2_night_eunsu_3"
+    },
+    "day2_night_eunsu_3": {
+        character: null,
+        night: true,
+        next: "day2_night_eunsu_4"
+    },
+    "day2_night_eunsu_4": {
+        character: "eunsu_warm",
         night: true,
         messengerDelay: 800,
-        next: "day2_night_sleep_1"
+        next: "day2_night_eunsu_5"
     },
-    "day2_night_sleep_1": {
+    "day2_night_eunsu_5": {
+        character: null,
         night: true,
-        next: "day2_night_sleep_2"
-    },
-    "day2_night_sleep_2": {
-        night: true,
-        next: "day2_night_sleep_3"
+        next: "day2_night_flash_1"
     },
 
-    // ===== 꿈 시퀀스 =====
-    "day2_night_sleep_3": {
-        background: "corridor_dark",
-        bgm: null,
+    // ===== 잠들기 전 — 데자뷔 플래시 (MEMORY LEAK) =====
+    "day2_night_flash_1": {
+        character: null,
+        night: true,
+        next: "day2_night_flash_2"
+    },
+    "day2_night_flash_2": {
         night: true,
         glitch: { noise: true, noiseDuration: 300 },
+        next: "day2_night_flash_3"
+    },
+    "day2_night_flash_3": {
+        night: true,
+        next: "day2_night_flash_4"
+    },
+    "day2_night_flash_4": {
+        night: true,
+        next: "day2_night_flash_5"
+    },
+    "day2_night_flash_5": {
+        night: true,
+        glitch: { noise: true, noiseDuration: 500 },
+        next: "day2_night_flash_6"
+    },
+    "day2_night_flash_6": {
+        night: true,
+        next: "day2_night_flash_7"
+    },
+    "day2_night_flash_7": {
+        night: true,
+        next: "day2_night_flash_8"
+    },
+
+    // ===== 설화의 꿈 =====
+    "day2_night_flash_8": {
+        night: true,
         next: "day2_night_dream_1"
     },
     "day2_night_dream_1": {
+        background: "black",
+        bgm: null,
+        character: null,
         night: true,
         next: "day2_night_dream_2"
     },
     "day2_night_dream_2": {
+        background: "classroom",
         night: true,
         next: "day2_night_dream_3"
     },
@@ -153,39 +248,29 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_dream_5"
     },
     "day2_night_dream_5": {
-        character: "seolhwa_ghost",
+        character: "seolhwa_quiet",
         night: true,
-        glitch: { noise: true, noiseDuration: 500 },
         next: "day2_night_dream_6"
     },
     "day2_night_dream_6": {
+        character: "seolhwa_quiet",
         night: true,
         next: "day2_night_dream_7"
     },
     "day2_night_dream_7": {
+        character: "seolhwa_quiet",
         night: true,
+        glitch: { noise: true, noiseDuration: 500 },
         next: "day2_night_dream_8"
     },
     "day2_night_dream_8": {
         night: true,
+        glitch: { noise: true, noiseDuration: 800 },
         next: "day2_night_dream_9"
     },
     "day2_night_dream_9": {
-        night: true,
-        next: "day2_night_dream_10"
-    },
-    "day2_night_dream_10": {
-        night: true,
-        glitch: { noise: true, noiseDuration: 800 },
-        next: "day2_night_dream_11"
-    },
-    "day2_night_dream_11": {
         background: "black",
         character: null,
-        night: true,
-        next: "day2_night_dream_12"
-    },
-    "day2_night_dream_12": {
         night: true,
         next: "day2_night_wake_1"
     },
@@ -193,6 +278,7 @@ Object.assign(SCENARIO[2], {
     // ===== 기상 =====
     "day2_night_wake_1": {
         background: "home",
+        character: null,
         night: true,
         next: "day2_night_wake_2"
     },
@@ -201,14 +287,6 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_wake_3"
     },
     "day2_night_wake_3": {
-        night: true,
-        next: "day2_night_wake_4"
-    },
-    "day2_night_wake_4": {
-        night: true,
-        next: "day2_night_wake_5"
-    },
-    "day2_night_wake_5": {
         night: true,
         next: "day2_night_end"
     },

@@ -1,173 +1,442 @@
 {
     "day3_lunch_start": {
         "name": "Me",
-        "text": "*Lunchtime. There's a note in my desk drawer.*"
+        "text": "*Lunchtime. I opened my desk drawer, and there's a note inside.*"
     },
     "day3_lunch_note": {
         "name": "Me",
-        "text": "*'Senpai, please come to the rooftop during lunch. Come alone. - Yuna'*"
-    },
-    "day3_lunch_note_2": {
-        "name": "Me",
-        "text": "*...The tone feels serious. What do I do?*"
+        "text": "*'Senpai, please come to the rooftop during lunch. Make sure you come alone. It's important. - Yuna'*"
     },
     "day3_lunch_choice": {
         "name": "Me",
-        "text": "*It's lunchtime.*",
+        "text": "*...What should I do?*",
         "choices": [
             "Go to the rooftop",
-            "Eat lunch with Sea",
-            "Stop by the nurse's office",
-            "Stay in the classroom"
+            "Have lunch with Sea",
+            "Go to the nurse's office",
+            "Stay in the classroom alone"
         ]
     },
 
-    "day3_lunch_rooftop": {
+    "day3_lunch_rooftop_1": {
         "name": "Yuna",
         "text": "\"...You came. Thank you, senpai.\""
     },
     "day3_lunch_rooftop_2": {
-        "name": "Yuna",
-        "text": "\"I can't keep holding onto this alone anymore. I'll only show this to you, senpai.\""
+        "name": "Me",
+        "text": "*Yuna pulls out a memory card with trembling hands.*"
     },
     "day3_lunch_rooftop_3": {
-        "name": "Me",
-        "text": "*Yuna hands me a memory card with trembling hands. \"What happened at this school... it's all in here.\"*"
+        "name": "Yuna",
+        "text": "\"I couldn't keep holding onto this alone anymore...\""
     },
     "day3_lunch_rooftop_4": {
         "name": "Yuna",
-        "text": "\"Transfer students disappeared one by one. I photographed everything. It's evidence. Senpai, please believe me.\""
+        "text": "\"Senpai, I've been at this school for 3 years. I'm in the photography club. I photograph everything that happens at school.\""
     },
     "day3_lunch_rooftop_5": {
-        "name": "Me",
-        "text": "*...What? Disappeared? Wait — the scratched locker, the unreachable old school friends, Seolhwa missing from the attendance sheet...*"
+        "name": "Yuna",
+        "text": "\"Every time a transfer student came, I photographed them. For the record.\""
     },
     "day3_lunch_rooftop_6": {
         "name": "Me",
+        "text": "*Yuna scrolls through the camera screen.*"
+    },
+    "day3_lunch_rooftop_7": {
+        "name": "Yuna",
+        "text": "\"This is transfer student number 1, who came 3 years ago.\""
+    },
+    "day3_lunch_rooftop_8": {
+        "name": "Me",
+        "text": "*A photo. A student standing in front of the school gate. Short black hair. Stiff school uniform. Name tag: 'Kim Dojin'.*"
+    },
+    "day3_lunch_rooftop_9": {
+        "name": "Yuna",
+        "text": "\"This is number 3, who came after that.\""
+    },
+    "day3_lunch_rooftop_10": {
+        "name": "Me",
+        "text": "*A photo. Same school gate. Different student. Brown hair. Name tag: 'Park Seojin'.*"
+    },
+    "day3_lunch_rooftop_11": {
+        "name": "Yuna",
+        "text": "\"This is number 7.\""
+    },
+    "day3_lunch_rooftop_12": {
+        "name": "Me",
+        "text": "*A photo. A boy with long hair. Haggard face. Name tag: 'Kim Taeho'.*"
+    },
+    "day3_lunch_rooftop_13": {
+        "name": "Yuna",
+        "text": "\"...And this one is you, senpai.\""
+    },
+    "day3_lunch_rooftop_14": {
+        "name": "Me",
+        "text": "*A photo. In front of the school gate. Yesterday morning. It's my photo.*"
+    },
+    "day3_lunch_rooftop_15": {
+        "name": "Me",
+        "text": "*...Wait.*"
+    },
+    "day3_lunch_rooftop_16": {
+        "name": "Me",
+        "text": "*Yuna arranges the photos side by side on one screen. Number 1 through 13. Different hair colors. Different name tags. Different uniform styles. **But they're all boys. The same boy.***"
+    },
+    "day3_lunch_rooftop_17": {
+        "name": "Me",
+        "text": "***13 photos. 13 names. All the same face.***"
+    },
+    "day3_lunch_rooftop_18": {
+        "name": "Me",
+        "text": "*...It's my face.*"
+    },
+    "day3_lunch_rooftop_19": {
+        "name": "Yuna",
+        "text": "\"Senpai... **why do all 13 of them have the exact same face?**\""
+    },
+    "day3_lunch_rooftop_20": {
+        "name": "Yuna",
+        "text": "\"Senpai... why do they all act like they don't know their own names, like they're complete strangers who just arrived...?\""
+    },
+    "day3_lunch_rooftop_21": {
+        "name": "Me",
+        "text": "*...My mind goes blank.*"
+    },
+    "day3_lunch_rooftop_22": {
+        "name": "Me",
+        "text": "*Yuna's voice seems to fade into the distance. My heartbeat pounds in my ears.*"
+    },
+    "day3_lunch_rooftop_23": {
+        "name": "Me",
+        "text": "\"...Isn't this photoshopped? Like, with editing software...\""
+    },
+    "day3_lunch_rooftop_24": {
+        "name": "Yuna",
+        "text": "\"It's been 3 years, senpai. For 3 years, the same face with a different name tag has been coming to this school every time. I thought I was going insane.\""
+    },
+    "day3_lunch_rooftop_25": {
+        "name": "Yuna",
+        "text": "\"I couldn't tell anyone. Who would believe me? Even I didn't believe it at first.\""
+    },
+    "day3_lunch_rooftop_26": {
+        "name": "Me",
+        "text": "*Yuna's eyes are red. She's biting her lip. The camera in her hands is shaking.*"
+    },
+    "day3_lunch_rooftop_27": {
+        "name": "Yuna",
+        "text": "\"When number 1 came... I was in my first year of middle school. I just thought, oh, a new transfer student.\""
+    },
+    "day3_lunch_rooftop_28": {
+        "name": "Yuna",
+        "text": "\"When number 3 came, I felt something was off. They looked alike, I thought. But when I mentioned it to people around me, everyone said 'What are you talking about?' Even the teachers.\""
+    },
+    "day3_lunch_rooftop_29": {
+        "name": "Yuna",
+        "text": "\"From the 5th one, I was scared. I couldn't tell if I was the one who was wrong, or if the world was wrong.\""
+    },
+    "day3_lunch_rooftop_30": {
+        "name": "Me",
+        "text": "*Yuna sets the camera down and covers her face with both hands. A moment. Her shoulders are trembling.*"
+    },
+    "day3_lunch_rooftop_31": {
+        "name": "Yuna",
+        "text": "\"...I'm sorry. For suddenly showing you all this.\""
+    },
+    "day3_lunch_rooftop_32": {
+        "name": "Me",
+        "text": "\"...No, it's fine.\""
+    },
+    "day3_lunch_rooftop_33": {
+        "name": "Me",
+        "text": "*It's not fine. Nothing is fine. But right now, the one crying is Yuna.*"
+    },
+    "day3_lunch_rooftop_34": {
+        "name": "Yuna",
+        "text": "\"Knowing this alone was driving me crazy. Every time I take a photo, my hands shake. What if it's the same face again. How many days until this one disappears too.\""
+    },
+    "day3_lunch_rooftop_35": {
+        "name": "Me",
+        "text": "*'Disappears.'*"
+    },
+    "day3_lunch_rooftop_36": {
+        "name": "Me",
+        "text": "\"...Disappear? The transfer students?\""
+    },
+    "day3_lunch_rooftop_37": {
+        "name": "Yuna",
+        "text": "\"Yes. All of them. A week at most. Three days at least. One day they're suddenly gone. Nobody remembers. 'Was there ever a student like that?' they say.\""
+    },
+    "day3_lunch_rooftop_38": {
+        "name": "Me",
+        "text": "*Yuna looks at me. Her eyes are red, her nose tip is red. But her gaze is steady.*"
+    },
+    "day3_lunch_rooftop_39": {
+        "name": "Yuna",
+        "text": "\"Senpai... you're the 13th.\""
+    },
+    "day3_lunch_rooftop_40": {
+        "name": "Me",
+        "text": "*...The 13th.*"
+    },
+    "day3_lunch_rooftop_41": {
+        "name": "Me",
+        "text": "*My chest is tight. I can't breathe.*"
+    },
+    "day3_lunch_rooftop_42": {
+        "name": "Me",
+        "text": "*This isn't my first time at this school? I'm... the 13th?*"
+    },
+    "day3_lunch_rooftop_43": {
+        "name": "Me",
+        "text": "*Then what about my \"previous school\"? What about \"Minsu\"? The memory of \"transferring because of my parents' work\"?*"
+    },
+
+    "day3_lunch_door_1": {
+        "name": "Me",
         "text": "*...! Suddenly the rooftop door slammed shut with a BANG.*"
     },
-    "day3_lunch_door_locked": {
+    "day3_lunch_door_2": {
         "name": "Me",
-        "text": "*I push the door. It won't budge. Locked from outside. Who...?*"
+        "text": "*I push the door. It won't open. It's been locked from the outside.*"
     },
-    "day3_lunch_door_locked_2": {
+    "day3_lunch_door_3": {
         "name": "Yuna",
-        "text": "\"...! Senpai, they found out. Someone was watching us...\""
+        "text": "\"...! Senpai, they found out...\""
     },
     "day3_lunch_door_choice": {
         "name": "Me",
         "text": "*What do I do?*",
         "choices": [
-            "Bang on the door and shout for help",
-            "Stay quiet (calm Yuna down)"
+            "Bang on the door and shout",
+            "Wait quietly (calm Yuna down)"
         ]
     },
     "day3_lunch_door_bang": {
         "name": "Me",
-        "text": "*I pounded on the door. After a moment, a 'click' — and it opened. Nobody outside.*"
+        "text": "*I pounded on the door hard. 5 minutes later, the door opens. Nobody there. No lock either. ...No trace of who locked it.*"
     },
     "day3_lunch_door_wait": {
         "name": "Me",
-        "text": "*I held Yuna's shoulders and calmed her down. About 5 minutes later, the door opened on its own. ...On its own? Nobody outside.*"
+        "text": "*I held Yuna's shoulders and calmed her down. 5 minutes later, the door opens. Nobody there. No lock either. ...No trace of who locked it.*"
     },
     "day3_lunch_door_open": {
         "name": "Me",
-        "text": "*I pocket the memory card deep. This... I need to check it alone later.*"
+        "text": "*We go down the stairs. Yuna follows behind me. Neither of us says a word.*"
+    },
+    "day3_lunch_door_open_2": {
+        "name": "Me",
+        "text": "*...The photos Yuna showed me earlier won't leave my head. 13 photos of the same face. My face.*"
+    },
+    "day3_lunch_door_open_3": {
+        "name": "Me",
+        "text": "*It doesn't make sense. It logically doesn't make sense.*"
+    },
+    "day3_lunch_door_open_4": {
+        "name": "Me",
+        "text": "*\"That's impossible... I was at my old school... with Minsu...\"*"
+    },
+    "day3_lunch_door_open_5": {
+        "name": "Me",
+        "text": "*These are my own memories coming out of my own mouth, yet my lips feel like they're reading someone else's script.*"
+    },
+    "day3_lunch_door_open_6": {
+        "name": "Me",
+        "text": "*My stomach turns. I brace myself against the wall. I can't tell if what's rising is nausea or terror.*"
+    },
+    "day3_lunch_door_open_7": {
+        "name": "Me",
+        "text": "*But I can't deny it either. Because the photos exist.*"
+    },
+    "day3_lunch_door_open_8": {
+        "name": "Me",
+        "text": "*Walking down the hallway, I look at the students passing by. Which of them knows? Which of them doesn't? Which of them is thinking 'Oh, he's back again'?*"
+    },
+    "day3_lunch_door_open_9": {
+        "name": "Yuna",
+        "text": "\"Senpai, the photos... don't show them to anyone. Especially not the teachers.\""
+    },
+    "day3_lunch_door_open_10": {
+        "name": "Me",
+        "text": "\"...Got it.\""
+    },
+    "day3_lunch_door_open_11": {
+        "name": "Me",
+        "text": "*Yuna parts ways at the first floor. Before turning away, she looks at me once. Those eyes are saying 'I'm sorry' and 'please' at the same time.*"
+    },
+    "day3_lunch_door_open_12": {
+        "name": "Me",
+        "text": "*I'm left alone. The hallway is long.*"
     },
 
-    "day3_lunch_sea": {
+    "day3_lunch_sea_1": {
         "name": "Han Sea",
-        "text": "\"You're eating with me today, right? I paid extra attention to the lunch today.\""
+        "text": "\"You're eating with me today, right?\""
     },
     "day3_lunch_sea_2": {
         "name": "Me",
-        "text": "*Sea is smiling. ...But this smile is different from yesterday. A smile that's hiding something.*"
+        "text": "*Sea is smiling. ...But this smile is different from yesterday's. If yesterday's smile was 'happy,' today's smile is closer to 'confirming.'*"
     },
     "day3_lunch_sea_3": {
-        "name": "Han Sea",
-        "text": "\"...You've been seeing Yuna a lot lately, haven't you?\""
+        "name": "Me",
+        "text": "*I sat down across from Sea. Sea looks at my lunch tray.*"
     },
     "day3_lunch_sea_4": {
-        "name": "Me",
-        "text": "\"Yuna? Not that much.\""
+        "name": "Han Sea",
+        "text": "\"Today's menu looks good. {name}, you like mackerel, right.\""
     },
     "day3_lunch_sea_5": {
-        "name": "Han Sea",
-        "text": "\"...Is that right?\""
+        "name": "Me",
+        "text": "*...I never said I like mackerel. I do like it, though.*"
     },
     "day3_lunch_sea_6": {
-        "name": "Han Sea",
-        "text": "\"You're not hiding anything from me, are you, {name}?\""
+        "name": "Me",
+        "text": "\"How do you know that?\""
     },
     "day3_lunch_sea_7": {
-        "name": "Me",
-        "text": "*Her eyes aren't smiling. I'm certain. ...This is the first time I've felt scared of this person.*"
+        "name": "Han Sea",
+        "text": "\"I saw you yesterday when you were picking side dishes. You went for the fish first.\""
     },
     "day3_lunch_sea_8": {
+        "name": "Me",
+        "text": "*...Did I? I don't remember. Sea reads my expression. Precisely.*"
+    },
+    "day3_lunch_sea_9": {
         "name": "Han Sea",
-        "text": "\"...I'm joking. Eat.\""
+        "text": "\"...{name}, you seem to be wandering around alone a lot lately?\""
+    },
+    "day3_lunch_sea_10": {
+        "name": "Me",
+        "text": "\"Really? I don't think so.\""
+    },
+    "day3_lunch_sea_11": {
+        "name": "Han Sea",
+        "text": "\"...Must just be my imagination.\""
+    },
+    "day3_lunch_sea_12": {
+        "name": "Me",
+        "text": "*Sea picks up a side dish with her chopsticks and stops. Her gaze is fixed on her tray. A long silence.*"
+    },
+    "day3_lunch_sea_13": {
+        "name": "Me",
+        "text": "*It's noisy all around, but this table is quiet. The air is heavy.*"
+    },
+    "day3_lunch_sea_14": {
+        "name": "Han Sea",
+        "text": "\"...You're hiding something from me, aren't you.\""
+    },
+    "day3_lunch_sea_15": {
+        "name": "Me",
+        "text": "*Her eyes aren't smiling. Her voice is low. Is this the usual Sea? Or is this the real Sea? For a moment our eyes meet. What's in there isn't hurt or anger. It's **fear**. She's afraid of me slipping away.*"
+    },
+    "day3_lunch_sea_16": {
+        "name": "Han Sea",
+        "text": "\"...Just kidding. Eat.\""
+    },
+    "day3_lunch_sea_17": {
+        "name": "Me",
+        "text": "*Sea smiles. This time it's a perfect smile. So perfect it gives me chills.*"
     },
 
-    "day3_lunch_riin": {
+    "day3_lunch_riin_1": {
         "name": "Me",
-        "text": "*I went to the nurse's office. Maybe because of last night's dream, my head hurts.*"
+        "text": "*I opened the nurse's office door. The smell of disinfectant stings my nose. Nurse Riin is standing in front of the cabinet. She turns when the door opens.*"
     },
     "day3_lunch_riin_2": {
         "name": "Riin",
-        "text": "\"Your color looks off. Can't sleep again?\""
+        "text": "\"What's wrong, {name}? You don't look well.\""
     },
     "day3_lunch_riin_3": {
-        "name": "Riin",
-        "text": "\"Today specially... how about a health drink I made? It's a vitamin and herb blend.\""
+        "name": "Me",
+        "text": "\"I'm a bit dizzy.\""
     },
     "day3_lunch_riin_4": {
         "name": "Me",
-        "text": "*She hands me a cup with pale purple liquid. ...A faint, slightly medicinal smell.*"
+        "text": "*Nurse Riin points to the bed. I sat down. She places her hand on my forehead. A cool hand.*"
+    },
+    "day3_lunch_riin_5": {
+        "name": "Riin",
+        "text": "\"No fever... but your complexion is bad.\""
+    },
+    "day3_lunch_riin_6": {
+        "name": "Me",
+        "text": "*Nurse Riin turns around and takes something from the cabinet. I can see her back. Her shoulders pause for a moment. A brief hesitation, as if she's making a decision.*"
+    },
+    "day3_lunch_riin_7": {
+        "name": "Riin",
+        "text": "\"Today, specially... how about a health drink I made?\""
+    },
+    "day3_lunch_riin_8": {
+        "name": "Me",
+        "text": "*When she turns back, there's a clear cup with pale purple liquid in her hands. A faint, chemical-like smell. And — the hand offering the cup is trembling. A subtle tremor. You wouldn't notice unless you looked. But it's definitely trembling.*"
+    },
+    "day3_lunch_riin_9": {
+        "name": "Riin",
+        "text": "\"It's a vitamin and herb blend. Good for you.\""
     },
     "day3_lunch_riin_choice": {
         "name": "Me",
-        "text": "*Should I drink it?*",
+        "text": "*Nurse Riin is smiling. A gentle smile. But her eyes... are holding something back.*",
         "choices": [
             "Drink it",
             "Decline"
         ]
     },
-    "day3_lunch_riin_drink": {
+    "day3_lunch_riin_drink_1": {
         "name": "Me",
-        "text": "*I drank it. ...The taste is okay, but a bitter aftertaste lingers on my tongue.*"
+        "text": "*I took a sip. ...A bitter taste lingers under my tongue. My mouth feels slightly dry.*"
     },
     "day3_lunch_riin_drink_2": {
         "name": "Riin",
-        "text": "\"Good. It'll take effect soon.\""
+        "text": "\"...You don't have to finish it. The taste is a bit much, right?\""
     },
-    "day3_lunch_riin_refuse": {
+    "day3_lunch_riin_drink_3": {
+        "name": "Me",
+        "text": "*Nurse Riin takes the cup away. The moment she turns — she's biting her lip hard.*"
+    },
+    "day3_lunch_riin_refuse_1": {
         "name": "Riin",
-        "text": "\"...Alright, I won't force you.\""
+        "text": "\"...Is that so? It's okay.\""
     },
     "day3_lunch_riin_refuse_2": {
         "name": "Me",
-        "text": "*Nurse Riin takes the cup away with a look of disappointment.*"
+        "text": "*Nurse Riin takes the cup away. She pours the contents down the sink. I see her back. The tension leaves her shoulders. ...Relief?*"
     },
 
-    "day3_lunch_alone": {
+    "day3_lunch_alone_1": {
         "name": "Me",
-        "text": "*I stay in the classroom and eat alone. Everyone else has left so the classroom is empty.*"
+        "text": "*I stayed in the classroom and ate alone. Through the window, I can see the schoolyard. Kids are playing soccer.*"
     },
     "day3_lunch_alone_2": {
         "name": "Me",
-        "text": "*...I look at the back row. Seolhwa's seat. There's something on the desk. Writing in pencil. Faint but readable.*"
+        "text": "*...It's quiet. Too quiet. I'm the only one in the classroom.*"
     },
     "day3_lunch_alone_3": {
         "name": "Me",
-        "text": "*'Get out of here'*"
+        "text": "*I look at the back seat. Seolhwa's seat. Empty again today. She hasn't attended for 3 days straight. But nobody seems to think it's strange. Even the homeroom teacher skips her name during roll call.*"
     },
     "day3_lunch_alone_4": {
         "name": "Me",
-        "text": "*...Who wrote this? Is it a prank? ...There are traces of erasing with a rubber. It looks like it was written and erased multiple times.*"
+        "text": "*There's something on Seolhwa's desk. Writing in pencil. Very faint. **'Get out of here'***"
+    },
+    "day3_lunch_alone_5": {
+        "name": "Me",
+        "text": "*My heart felt like it stopped.*"
+    },
+    "day3_lunch_alone_6": {
+        "name": "Me",
+        "text": "*I run my hand over the desk surface. It's been carved deeply. It wasn't written once. Multiple times. Traces of the same words written over and over.*"
+    },
+    "day3_lunch_alone_7": {
+        "name": "Me",
+        "text": "*...The handwriting is the same as under the desk and the locker. My handwriting.*"
+    },
+    "day3_lunch_alone_8": {
+        "name": "Me",
+        "text": "*I've lost my appetite. I closed my lunch box.*"
     },
 
     "day3_lunch_end": {
         "name": "Me",
-        "text": "*I returned to the classroom. My heart won't stop racing.*"
+        "text": "*I came back to the classroom. My heart won't stop racing.*"
     }
 }

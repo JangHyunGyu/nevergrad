@@ -1,249 +1,377 @@
 {
     "day2_lunch_start": {
         "name": "Me",
-        "text": "*The lunch bell rang. I'm hungrier than yesterday.*"
+        "text": "*The lunch bell rang.*"
     },
     "day2_lunch_choice": {
         "name": "Me",
         "text": "*It's lunchtime. Where should I eat?*",
         "choices": [
             "Eat with Sea",
-            "Meet Yuna at the library",
+            "Go to the library to see Yuna",
             "Stop by the nurse's office",
             "Eat alone on the rooftop"
         ]
     },
 
     "day2_lunch_sea_1": {
-        "name": "Han Sea",
-        "text": "\"I packed lunch again today. I noticed you ate a lot of the rolled egg yesterday, so I added more.\""
+        "name": "Me",
+        "text": "*Today's lunch box. Even more elaborate than yesterday. Chicken cutlet, flower-shaped carrots, mini kimbap.*"
     },
     "day2_lunch_sea_2": {
         "name": "Me",
-        "text": "\"Again? I feel bad if you keep doing this every day.\""
+        "text": "\"...How early did you get up to make all this?\""
     },
     "day2_lunch_sea_3": {
         "name": "Han Sea",
-        "text": "\"Don't feel bad. I enjoy making it.\""
+        "text": "\"It makes me happy when you eat well.\""
     },
     "day2_lunch_sea_4": {
         "name": "Me",
-        "text": "*I opened today's lunchbox. More elaborate than yesterday. Chicken cutlet, flower-shaped carrots, mini kimbap.*"
+        "text": "\"You're really good at this. Cooking.\""
     },
     "day2_lunch_sea_5": {
-        "name": "Me",
-        "text": "\"...How early did you get up to make all this?\""
+        "name": "Han Sea",
+        "text": "\"My mom taught me. We cooked together since elementary school.\""
     },
     "day2_lunch_sea_6": {
-        "name": "Han Sea",
-        "text": "\"It makes me happy when you eat it all. Don't leave anything.\""
+        "name": "Me",
+        "text": "\"Do you still cook together?\""
     },
     "day2_lunch_sea_7": {
-        "name": "Me",
-        "text": "*Sea smiles. But one thing nags at me. It's true I ate a lot of the rolled egg yesterday. But how does she remember that so clearly? Even down to the portions?*"
+        "name": "Han Sea",
+        "text": "\"...No. These days it's just me.\""
     },
     "day2_lunch_sea_8": {
         "name": "Me",
-        "text": "*...She must just be observant. Class president and all.*"
+        "text": "*Sea trails off, picking up a piece of kimbap with her chopsticks.*"
     },
     "day2_lunch_sea_9": {
-        "name": "Me",
-        "text": "*We talked about all sorts of things while eating. Music, games, movies...*"
+        "name": "Han Sea",
+        "text": "\"Mom's busy. Dad too. So making lunch boxes in the morning is kind of... a routine for me. It feels empty if I don't.\""
     },
     "day2_lunch_sea_10": {
         "name": "Me",
-        "text": "*Sea hands me one earbud. A soft song plays. ...Sharing earbuds brings us naturally closer together. Sea's hair smells like shampoo.*"
+        "text": "\"...Thank you. Really.\""
     },
     "day2_lunch_sea_11": {
         "name": "Han Sea",
-        "text": "\"...Nice, right?\""
+        "text": "\"It's fine~ You eat everything without leaving any, so that makes me happy too.\""
     },
     "day2_lunch_sea_12": {
         "name": "Me",
-        "text": "\"Yeah, it's good.\""
+        "text": "*Sea moves a mini kimbap into my lunch box. We eat for a while, talking about music, games, and movies.*"
     },
     "day2_lunch_sea_13": {
         "name": "Han Sea",
-        "text": "\"...{name}, do you hang out with a lot of other people besides me?\""
+        "text": "\"{name}, what are you doing this weekend?\""
     },
     "day2_lunch_sea_14": {
         "name": "Me",
-        "text": "\"It's only been two days, so...\""
+        "text": "\"Nothing really... I don't even know the area yet.\""
     },
     "day2_lunch_sea_15": {
-        "name": "Me",
-        "text": "*Sea gently grabs the back of my hand. Soft, but... fingers that have no intention of letting go.*"
+        "name": "Han Sea",
+        "text": "\"Then do you want to go downtown on Saturday? Let's go to a cafe. There's a great croffle place.\""
     },
     "day2_lunch_sea_16": {
-        "name": "Han Sea",
-        "text": "\"...Wherever {name} is, whatever you're doing, I'll always know. That's what friends are for.\""
+        "name": "Me",
+        "text": "\"Sure.\""
     },
     "day2_lunch_sea_17": {
-        "name": "Me",
-        "text": "*Sea said it softly. She's smiling. But whether those eyes are smiling too... I can't quite tell. When I tried to gently pull my hand back, Sea held it tighter. ...Then naturally let go after a second, smiling.*"
+        "name": "Han Sea",
+        "text": "\"Really? That was fast.\""
     },
     "day2_lunch_sea_18": {
-        "name": "Han Sea",
-        "text": "\"...I'm joking. I just mean I like you, {name}.\""
+        "name": "Me",
+        "text": "\"Why not?\""
     },
     "day2_lunch_sea_19": {
+        "name": "Han Sea",
+        "text": "\"No... I'm just happy.\""
+    },
+    "day2_lunch_sea_20": {
         "name": "Me",
-        "text": "*What was that just now? ...It was just a close friend messing around, probably.*"
+        "text": "*Sea ducks her head, pretending to focus on her lunch box. She hands me one earbud. A gentle song flows through.*"
+    },
+    "day2_lunch_sea_21": {
+        "name": "Han Sea",
+        "text": "\"This is the band I mentioned earlier. This song is my favorite.\""
+    },
+    "day2_lunch_sea_22": {
+        "name": "Me",
+        "text": "*The lyrics play. 'Even knowing I'll be forgotten, I call your name into the night' — Sea mouths along to the words.*"
+    },
+    "day2_lunch_sea_23": {
+        "name": "Han Sea",
+        "text": "\"...Nice, right?\""
+    },
+    "day2_lunch_sea_24": {
+        "name": "Me",
+        "text": "\"Yeah, it's good.\""
+    },
+    "day2_lunch_sea_25": {
+        "name": "Me",
+        "text": "*Sea smiles contentedly. She looks somehow relieved.*"
     },
 
     "day2_lunch_yuna_1": {
         "name": "Me",
-        "text": "*I walk into the library to find Yuna tinkering with a camera at a desk.*"
+        "text": "*Yuna is fiddling with her camera. A corner seat in the library. A bag of snacks sits beside her.*"
     },
     "day2_lunch_yuna_2": {
         "name": "Yuna",
-        "text": "\"Senpai! You came?\""
+        "text": "\"Senpai! You came? Look at what I took today.\""
     },
     "day2_lunch_yuna_3": {
-        "name": "Yuna",
-        "text": "\"Look at what I shot today. The hill behind school came out pretty well.\""
+        "name": "Me",
+        "text": "*I flip through the photos. The hill behind school, the gym, a cat...*"
     },
     "day2_lunch_yuna_4": {
         "name": "Me",
-        "text": "\"This came out really well. The composition is great.\""
+        "text": "\"You're really good at photography. Where's this cat?\""
     },
     "day2_lunch_yuna_5": {
-        "name": "Me",
-        "text": "*The hill, the gym, the field... Nice shots. Lots of frames where the light came in beautifully.*"
+        "name": "Yuna",
+        "text": "\"Behind the gym. It's always in the same spot. I named it 'Acorn.'\""
     },
     "day2_lunch_yuna_6": {
-        "name": "Yuna",
-        "text": "\"Really?! The light was good today. This time of day is the prettiest.\""
+        "name": "Me",
+        "text": "\"Acorn?\""
     },
     "day2_lunch_yuna_7": {
-        "name": "Me",
-        "text": "\"You got the cat too. A tabby?\""
+        "name": "Yuna",
+        "text": "\"Because it has a round face like an acorn. See, look here.\""
     },
     "day2_lunch_yuna_8": {
-        "name": "Yuna",
-        "text": "\"Yes! I gave him a can of tuna today and he loved it. Look at this expression.\""
+        "name": "Me",
+        "text": "*Yuna zooms in on the screen. Its face is definitely round.*"
     },
     "day2_lunch_yuna_9": {
-        "name": "Me",
-        "text": "*I keep flipping through the photos... but as I get further, the tone of the pictures changes. A stack of documents in front of the faculty office. The medicine cabinet in the nurse's office. Stairs descending underground.*"
+        "name": "Yuna",
+        "text": "\"Do you take photos too, senpai?\""
     },
     "day2_lunch_yuna_10": {
         "name": "Me",
-        "text": "\"This one... isn't a landscape photo.\""
+        "text": "\"No, just phone camera stuff? I don't really take photos.\""
     },
     "day2_lunch_yuna_11": {
         "name": "Yuna",
-        "text": "\"Oh, that was... an accident. I'll delete it.\""
+        "text": "\"But you have a good eye. Yesterday you said the composition of the gym photo was good.\""
     },
     "day2_lunch_yuna_12": {
         "name": "Me",
-        "text": "*Yuna hurriedly closes the camera. The same girl who was happily talking about the cat a moment ago suddenly went rigid.*"
+        "text": "\"That was just a feeling...\""
     },
     "day2_lunch_yuna_13": {
         "name": "Yuna",
-        "text": "\"Senpai... you'll come again tomorrow, right? ...Please come.\""
+        "text": "\"That 'feeling' is talent.\""
     },
     "day2_lunch_yuna_14": {
         "name": "Me",
-        "text": "*There was weight on 'please.' ...Why so serious?*"
+        "text": "*Yuna smiles slightly. She seems sincere. As we keep flipping through photos, Yuna suddenly asks.*"
+    },
+    "day2_lunch_yuna_15": {
+        "name": "Yuna",
+        "text": "\"Senpai... have you been to this school before?\""
+    },
+    "day2_lunch_yuna_16": {
+        "name": "Me",
+        "text": "\"No? My first day was yesterday.\""
+    },
+    "day2_lunch_yuna_17": {
+        "name": "Yuna",
+        "text": "\"...Right. Of course.\""
+    },
+    "day2_lunch_yuna_18": {
+        "name": "Me",
+        "text": "*Yuna smiles, but her eyes aren't smiling. It felt like she was trying to confirm something.*"
+    },
+    "day2_lunch_yuna_19": {
+        "name": "Yuna",
+        "text": "\"Oh, it's nothing. I just asked because you seemed familiar somehow...\""
+    },
+    "day2_lunch_yuna_20": {
+        "name": "Me",
+        "text": "*...Familiar? We're meeting for the first time. Maybe she's confusing me with someone else since she's in the photography club.*"
+    },
+    "day2_lunch_yuna_21": {
+        "name": "Yuna",
+        "text": "\"If you're interested in the photography club, join us. We're a bit short on members...\""
+    },
+    "day2_lunch_yuna_22": {
+        "name": "Me",
+        "text": "\"I'll think about it.\""
+    },
+    "day2_lunch_yuna_23": {
+        "name": "Yuna",
+        "text": "\"Okay! No pressure. I just thought... it'd be fun to take photos together, senpai.\""
+    },
+    "day2_lunch_yuna_24": {
+        "name": "Me",
+        "text": "*Yuna says this, hugging the camera to her chest. She has this careful way of speaking. Like she's trying not to hurt the other person.*"
     },
 
     "day2_lunch_riin_1": {
-        "name": "Me",
-        "text": "*I go to the nurse's office and Nurse Riin greets me as if she'd been expecting me.*"
-    },
-    "day2_lunch_riin_2": {
-        "name": "Riin",
-        "text": "\"{name}, perfect timing. I was just thinking about you.\""
-    },
-    "day2_lunch_riin_3": {
         "name": "Riin",
         "text": "\"There's no health record for you as a transfer student yet. Let me do a quick check.\""
     },
+    "day2_lunch_riin_2": {
+        "name": "Me",
+        "text": "*Blood pressure, eyesight, weight. A basic checkup.*"
+    },
+    "day2_lunch_riin_3": {
+        "name": "Riin",
+        "text": "\"Do you have any allergies? Food or medication.\""
+    },
     "day2_lunch_riin_4": {
         "name": "Me",
-        "text": "*She wraps the blood pressure cuff around my arm. Nurse Riin's hands are cold. But unexpectedly gentle.*"
+        "text": "\"Not really.\""
     },
     "day2_lunch_riin_5": {
         "name": "Riin",
-        "text": "\"Blood pressure normal. Eyesight... both eyes are good. Weight... healthy for your age.\""
+        "text": "\"All done. You're healthy.\""
     },
     "day2_lunch_riin_6": {
-        "name": "Riin",
-        "text": "\"That's good. ...But let me ask a few more things. The transfer student form is a bit detailed.\""
+        "name": "Me",
+        "text": "*Nurse Riin writes something in the record book. She's writing quite a lot. For a basic checkup.*"
     },
     "day2_lunch_riin_7": {
         "name": "Riin",
-        "text": "\"Sleep patterns? How many hours do you sleep on average? Do you dream often?\""
+        "text": "\"...Hold on.\""
     },
     "day2_lunch_riin_8": {
         "name": "Me",
-        "text": "\"About 7 hours. Dreams... sometimes?\""
+        "text": "*Nurse Riin stops writing and looks at me. Something seems to be bothering her.*"
     },
     "day2_lunch_riin_9": {
         "name": "Riin",
-        "text": "\"Any drug allergies? On the sedative side?\""
+        "text": "\"Have you been dreaming a lot lately?\""
     },
     "day2_lunch_riin_10": {
         "name": "Me",
-        "text": "*For a health check, the questions are a bit detailed. Does a school nurse really ask about sleep patterns and sedative allergies?*"
+        "text": "\"...Suddenly?\""
     },
     "day2_lunch_riin_11": {
-        "name": "Me",
-        "text": "*Nurse Riin is writing something down. It looks like a health record... but the form seems a bit different from the usual kind.*"
+        "name": "Riin",
+        "text": "\"Transfer stress can lower sleep quality. If you're dreaming a lot, it means you're not getting deep sleep.\""
     },
     "day2_lunch_riin_12": {
-        "name": "Riin",
-        "text": "\"All done. You're healthy. No issues.\""
+        "name": "Me",
+        "text": "\"I had a strange dream yesterday. I don't remember it well, though.\""
     },
     "day2_lunch_riin_13": {
-        "name": "Riin",
-        "text": "\"...Come by often in the future. I'll take good care of you.\""
+        "name": "Me",
+        "text": "*Nurse Riin pauses for a moment, then continues writing.*"
     },
     "day2_lunch_riin_14": {
+        "name": "Riin",
+        "text": "\"If you remember the details, tell me. It can be a stress indicator.\""
+    },
+    "day2_lunch_riin_15": {
         "name": "Me",
-        "text": "*Nurse Riin smiles and holds the door open for me. She's a kind person.*"
+        "text": "\"Okay...\""
+    },
+    "day2_lunch_riin_16": {
+        "name": "Me",
+        "text": "*The checkup is over and I'm about to leave when Nurse Riin takes out tea from a cabinet.*"
+    },
+    "day2_lunch_riin_17": {
+        "name": "Riin",
+        "text": "\"If you're not in a hurry, have a cup of tea before you go. Chamomile.\""
+    },
+    "day2_lunch_riin_18": {
+        "name": "Me",
+        "text": "*I sit on the nurse's office sofa. A quiet space with sunlight streaming in. Nurse Riin sits across from me.*"
+    },
+    "day2_lunch_riin_19": {
+        "name": "Riin",
+        "text": "\"How's school going for you?\""
+    },
+    "day2_lunch_riin_20": {
+        "name": "Me",
+        "text": "\"Better than I expected. Everyone's been nice.\""
+    },
+    "day2_lunch_riin_21": {
+        "name": "Riin",
+        "text": "\"Sea?\""
+    },
+    "day2_lunch_riin_22": {
+        "name": "Me",
+        "text": "\"Yeah. And Eunsu too.\""
+    },
+    "day2_lunch_riin_23": {
+        "name": "Riin",
+        "text": "\"That's good to hear.\""
+    },
+    "day2_lunch_riin_24": {
+        "name": "Me",
+        "text": "*Nurse Riin wraps both hands around her teacup and gazes out the window.*"
+    },
+    "day2_lunch_riin_25": {
+        "name": "Riin",
+        "text": "\"...But sometimes when people are too kind, it makes you anxious. Like, 'Do I deserve this?'\""
+    },
+    "day2_lunch_riin_26": {
+        "name": "Me",
+        "text": "\"...Have you felt that way too, teacher?\""
+    },
+    "day2_lunch_riin_27": {
+        "name": "Me",
+        "text": "*Nurse Riin turns to look at me. She seems about to say something, but then —*"
+    },
+    "day2_lunch_riin_28": {
+        "name": "Riin",
+        "text": "\"Finish your tea and head to class. You'll be late for the afternoon.\""
+    },
+    "day2_lunch_riin_29": {
+        "name": "Me",
+        "text": "*She dodged the question. ...Maybe I asked something too personal. It almost got awkward, but Nurse Riin smoothed it over with a smile.*"
     },
 
     "day2_lunch_rooftop_1": {
         "name": "Me",
-        "text": "*I'm climbing the stairs to go up to the rooftop when I hear a voice from the middle landing.*"
+        "text": "*I'm climbing the stairs to the rooftop when I hear a voice from the landing.*"
     },
     "day2_lunch_rooftop_2": {
-        "name": "Me",
-        "text": "*...It's Ms. Eunsu's voice. She's on the phone.*"
+        "name": "Eunsu",
+        "text": "\"...Yes, I've submitted the approval. I'll wrap this one up without issues, like last year. ...I'll finish within five days.\""
     },
     "day2_lunch_rooftop_3": {
-        "name": "Homeroom Teacher",
-        "text": "\"...The child's condition is stable. We can proceed as planned...\""
+        "name": "Me",
+        "text": "*I make a sound and the teacher hangs up.*"
     },
     "day2_lunch_rooftop_4": {
-        "name": "Me",
-        "text": "*What is she talking about? Whose situation? When I made a noise, the teacher quickly hung up. Her expression froze for a moment when she turned around, then immediately relaxed.*"
+        "name": "Eunsu",
+        "text": "\"Oh, {name}? Going to the rooftop?\""
     },
     "day2_lunch_rooftop_5": {
-        "name": "Homeroom Teacher",
-        "text": "\"{name}? ...Going to the rooftop? You should have just eaten in the classroom.\""
+        "name": "Me",
+        "text": "\"Were you on the phone?\""
     },
     "day2_lunch_rooftop_6": {
-        "name": "Me",
-        "text": "\"I wanted to get some fresh air.\""
+        "name": "Eunsu",
+        "text": "\"It's the start of the semester, so there's a lot of paperwork. Board of education stuff. Nothing for {name} to worry about.\""
     },
     "day2_lunch_rooftop_7": {
-        "name": "Homeroom Teacher",
-        "text": "\"Sure, getting some air is good. But don't go near the railing. It's dangerous.\""
+        "name": "Me",
+        "text": "*The teacher smiled and walked past. She looks busy. Being a homeroom teacher at the start of the semester must be like that.*"
     },
     "day2_lunch_rooftop_8": {
         "name": "Me",
-        "text": "*The teacher smiled and passed by. It was probably just a work call. ...But what does 'proceed as planned' mean?*"
+        "text": "*I'm on the rooftop. The wind blows. No lunch box, but I unwrap a convenience store rice ball.*"
     },
     "day2_lunch_rooftop_9": {
         "name": "Me",
-        "text": "*I've reached the rooftop. The wind is blowing. A bit colder than yesterday.*"
+        "text": "*...It's wide open. Mountains visible beyond the school buildings. A strangely familiar landscape.*"
     },
     "day2_lunch_rooftop_10": {
         "name": "Me",
-        "text": "*I don't want to think about it. I'll just enjoy the breeze.*"
+        "text": "*The teacher's phone call from earlier is bothering me. It sounded like she was reporting on someone's condition. ...But if it's the board of education, maybe they use that kind of language. Don't overthink it.*"
+    },
+    "day2_lunch_rooftop_11": {
+        "name": "Me",
+        "text": "*The wind ruffles my hair. If I close my eyes, I think I can hear another sound. Someone laughing. Here. On this rooftop. ...Am I hearing things? It must be the wind.*"
     },
 
     "day2_lunch_end": {

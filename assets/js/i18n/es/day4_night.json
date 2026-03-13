@@ -1,363 +1,459 @@
 {
-  "day4_night_start": {
-    "name": "Yo",
-    "text": "*De vuelta en mi habitación. Puerta con llave, incluso con el cerrojo de cadena.*"
-  },
-  "day4_night_start_2": {
-    "name": "Yo",
-    "text": "*...Exhalo. Largo, lento. Me apoyo contra la pared. Las piernas me fallan.*"
-  },
-  "day4_night_start_3": {
-    "name": "Yo",
-    "text": "*Todo lo que vi hoy da vueltas en mi cabeza. El sótano. Las camas. Las jeringas. 'Sujeto #13.' La cara pálida de Yuna. ...Era real. Todo.*"
-  },
-  "day4_night_phone": {
-    "name": "Yo",
-    "text": "*Suena el teléfono. Es Sea.*"
-  },
-  "day4_night_phone_2": {
-    "name": "Yo",
-    "text": "*Sea: '{name}, hoy desapareciste de repente, estaba preocupadísima T_T'*"
-  },
-  "day4_night_phone_3": {
-    "name": "Yo",
-    "text": "*Sea: '¡Mañana vayamos juntos! ¿Prometido?'*"
-  },
-  "day4_night_phone_4": {
-    "name": "Yo",
-    "text": "*1 minuto después. Sea: 'Prometido.'*"
-  },
-  "day4_night_phone_5": {
-    "name": "Yo",
-    "text": "*30 segundos después. Sea: 'Prometido.'*"
-  },
-  "day4_night_phone_6": {
-    "name": "Yo",
-    "text": "*15 segundos después. Sea: '¿¿¿¿¿Prometido?????'*"
-  },
-  "day4_night_phone_7": {
-    "name": "Yo",
-    "text": "*...El mismo mensaje repitiéndose. Los intervalos se van acortando.*"
-  },
-  "day4_night_phone_8": {
-    "name": "Yo",
-    "text": "*Sea: 'Mañana por la mañana te espero en la puerta del colegio'*"
-  },
-  "day4_night_phone_9": {
-    "name": "Yo",
-    "text": "*Sea: 'Tienes que venir' Sea: 'Tienes que'*"
-  },
-  "day4_night_phone_10": {
-    "name": "Yo",
-    "text": "*...Los dejé sin leer. Puse el teléfono boca abajo. Sigue vibrando. Tap. Tap. Tap.*"
-  },
-  "day4_night_phone_11": {
-    "name": "Yo",
-    "text": "*También hay un mensaje de la profesora Eunsu. Profesora Eunsu: '¿Podrías venir un poco antes mañana? Tengo algo que contarte.'*"
-  },
-  "day4_night_phone_12": {
-    "name": "Yo",
-    "text": "*Profesora Eunsu: 'Hay algo que quiero decirte, {name}. Es importante.' ...Algo importante. ¿Qué? ¿Sobre el 'Procesamiento Final'? Metí el teléfono en un cajón. Las vibraciones siguen zumbando desde dentro.*"
-  },
-  "day4_night_plan": {
-    "name": "Yo",
-    "text": "*Me senté al escritorio. Abrí un cuaderno.*"
-  },
-  "day4_night_plan_2": {
-    "name": "Yo",
-    "text": "*Déjame organizar esto. Con calma. Todo lo que sé.*"
-  },
-  "day4_night_plan_3": {
-    "name": "Yo",
-    "text": "*Uno. Esta escuela está realizando experimentos de manipulación de memoria en estudiantes de traslado. 'Proyecto Nevergrad.'*"
-  },
-  "day4_night_plan_4": {
-    "name": "Yo",
-    "text": "*Dos. La profesora Eunsu lo supervisa todo. Seleccionar a los estudiantes de traslado, gestionarlos, decidir el Procesamiento Final.*"
-  },
-  "day4_night_plan_5": {
-    "name": "Yo",
-    "text": "*Tres. Riin se encarga de las drogas. Drogas de manipulación de memoria. Sedantes. Inyecciones.*"
-  },
-  "day4_night_plan_6": {
-    "name": "Yo",
-    "text": "*Cuatro. Sea es una vigilante. Se acerca a los estudiantes de traslado e informa de su comportamiento. Pero... la propia Sea también está atrapada en esta escuela.*"
-  },
-  "day4_night_plan_7": {
-    "name": "Yo",
-    "text": "*Cinco. Yuna es una resistente interna. Estaba recopilando evidencias. La descubrieron y la encarcelaron en el sótano.*"
-  },
-  "day4_night_plan_8": {
-    "name": "Yo",
-    "text": "*Seis. Seolhwa era el Sujeto #7, hace un año. Se resistió al experimento y fue 'procesada'. Se convirtió en un fantasma.*"
-  },
-  "day4_night_plan_9": {
-    "name": "Yo",
-    "text": "*Siete. Yo soy el Sujeto #13. El Día 5 es el final. Mañana.*"
-  },
-  "day4_night_plan_10": {
-    "name": "Yo",
-    "text": "*Solté el bolígrafo. Las manos me tiemblan y las letras quedaron todas torcidas.*"
-  },
-  "day4_night_plan_11": {
-    "name": "Yo",
-    "text": "*...Mañana. Mañana es el Día 5. El 'último día' del que me advirtió Seolhwa.*"
-  },
-  "day4_night_plan_12": {
-    "name": "Yo",
-    "text": "*¿Qué hago?*"
-  },
-  "day4_night_plan_13": {
-    "name": "Yo",
-    "text": "*Trazo mi plan definitivo.*"
-  },
-  "day4_night_plan_choice": {
-    "name": "Yo",
-    "text": "*Trazo mi plan definitivo.*",
-    "choices": [
-      "Escapar de la escuela",
-      "Hacer públicas las evidencias",
-      "Enfrentarlas directamente"
-    ]
-  },
-  "day4_night_plan_escape": {
-    "name": "Yo",
-    "text": "*Escapar. Salir físicamente de esta escuela.*"
-  },
-  "day4_night_plan_escape_2": {
-    "name": "Yo",
-    "text": "*La puerta principal está descartada. Me vigilan. La app de seguridad — rastreo GPS. La verja del colegio — la profesora Eunsu la custodia. ¿La salida de emergencia del edificio viejo? Yuna quizás sepa algo. Si la rescaté a Yuna... podríamos salir juntas.*"
-  },
-  "day4_night_plan_escape_3": {
-    "name": "Yo",
-    "text": "*Guardé las evidencias en el teléfono. En cuanto salga, voy directo a la policía.*"
-  },
-  "day4_night_plan_expose": {
-    "name": "Yo",
-    "text": "*Sacar las evidencias primero. Publicarlas en internet, o enviárselas a la policía.*"
-  },
-  "day4_night_plan_expose_2": {
-    "name": "Yo",
-    "text": "*El problema es la comunicación. El wifi del colegio probablemente está monitoreado. Los datos... la app de seguridad quizás también los monitorea. Tendría que salir fuera y usar una red wifi pública... o meterlo en un USB y dárselo a alguien.*"
-  },
-  "day4_night_plan_confront": {
-    "name": "Yo",
-    "text": "*Confrontación directa. Decirle a la profesora Eunsu directamente. Que lo sé todo. Que tiene que parar.*"
-  },
-  "day4_night_plan_confront_2": {
-    "name": "Yo",
-    "text": "*...Sé que es temerario. Pero Sea, Riin, quizás incluso la propia profesora Eunsu... ¿no es posible que ellas también quieran escapar de esta situación? O quizás eso sea solo pensamiento ilusorio.*"
-  },
-  "day4_night_sleep": {
-    "name": "Yo",
-    "text": "*...Ya tengo mi plan. No sé si es el correcto. Pero no hacer nada significa acabar como Seolhwa.*"
-  },
-  "day4_night_sleep_2": {
-    "name": "Yo",
-    "text": "*Apagué la luz y me tumbé. No hay manera de que pueda dormir. Miro el techo. El reloj hace tic-tac.*"
-  },
-  "day4_night_sleep_3": {
-    "name": "Yo",
-    "text": "*...No sé en qué momento me quedé dormida.*"
-  },
-  "day4_night_seolhwa": {
-    "name": "Yo",
-    "text": "*...Abrí los ojos.*"
-  },
-  "day4_night_seolhwa_2": {
-    "name": "Yo",
-    "text": "*La escuela. La escuela de noche. Pero algo va mal. Todo está ligeramente desplazado. Los colores están desvaídos. Tonos sepia. Como una fotografía vieja. El reloj gira al revés.*"
-  },
-  "day4_night_seolhwa_3": {
-    "name": "Yo",
-    "text": "*...¿Es un sueño? O —*"
-  },
-  "day4_night_seolhwa_4": {
-    "name": "Yo",
-    "text": "*El nombre en la parte superior de la pantalla cambió. No es el mío. 'Lee Seolhwa.'*"
-  },
-  "day4_night_seolhwa_5": {
-    "name": "Yo",
-    "text": "*...Camino por el pasillo. No, esto no soy yo. Este cuerpo es más pequeño que el mío. Las manos son delgadas. El uniforme es diferente.*"
-  },
-  "day4_night_seolhwa_6": {
-    "name": "Yo",
-    "text": "*Este cuerpo es... el recuerdo de Seolhwa. Estoy viviendo a Seolhwa de hace un año.*"
-  },
-  "day4_night_seolhwa_7": {
-    "name": "Yo",
-    "text": "*Camino por el pasillo. Los pasos resuenan. Un corredor familiar. La misma escuela. Pero hace un año. La puerta de la enfermería está abierta. Entro. Mi cuerpo se mueve solo. Siguiendo el recuerdo de Seolhwa.*"
-  },
-  "day4_night_seolhwa_8": {
-    "name": "Yo",
-    "text": "*Riin está sentada. La Riin de hace un año. La misma sonrisa. El mismo guardapolvo blanco.*"
-  },
-  "day4_night_seolhwa_9": {
-    "name": "Riin",
-    "text": "\"Seolhwa, ya estás aquí. Siéntate.\""
-  },
-  "day4_night_seolhwa_10": {
-    "name": "Yo",
-    "text": "*Riin prepara la inyección. Se extiende un brazo. El brazo de Seolhwa. Ya hay múltiples marcas de pinchazos en él.*"
-  },
-  "day4_night_seolhwa_11": {
-    "name": "Riin",
-    "text": "\"Venga, relájate. En un segundo habrá terminado.\""
-  },
-  "day4_night_seolhwa_12": {
-    "name": "Yo",
-    "text": "*La misma sonrisa. El mismo tono. ...Un guión sin cambios después de un año. La aguja entra. Un líquido frío se extiende por las venas. La visión se nubla. La escena cambia.*"
-  },
-  "day4_night_seolhwa_13": {
-    "name": "Yo",
-    "text": "*La sala de profesores. Eunsu está ordenando documentos. Seolhwa — yo — estoy de pie en la puerta. Espiando en secreto. Puedo ver el título del documento. 'Sujeto #7 — Informe Final'*"
-  },
-  "day4_night_seolhwa_14": {
-    "name": "Yo",
-    "text": "*El texto se puede leer. Las palabras están borrosas. Por las drogas. Pero se graban en mi mente.*"
-  },
-  "day4_night_seolhwa_15": {
-    "name": "Yo",
-    "text": "*\"Protocolo de Reconstrucción de Memoria ver.3.8... Sujeto #7 Lee Seolhwa...\"*"
-  },
-  "day4_night_seolhwa_16": {
-    "name": "Yo",
-    "text": "*\"Progreso normal hasta el Día 4... Día 5 ██FRACASO██...\"*"
-  },
-  "day4_night_seolhwa_17": {
-    "name": "Yo",
-    "text": "*\"Efecto adverso observado. El sujeto retuvo ██todos los recuerdos██ en cambio... Resistencia a las drogas confirmada...\"*"
-  },
-  "day4_night_seolhwa_18": {
-    "name": "Yo",
-    "text": "*\"Contención considerada imposible... **Día 5, 23:00: Procesamiento Final Ejecutado**...\" ...Procesamiento Final. El cuerpo de Seolhwa sabe lo que eso significa. El terror se apodera de mí. El terror de Seolhwa se vuelve el mío. La escena cambia de nuevo.*"
-  },
-  "day4_night_seolhwa_19": {
-    "name": "Yo",
-    "text": "*El sótano. Las luces fluorescentes parpadean. Atada a una silla. Las correas de cuero se clavan en las muñecas. Eunsu está de pie ahí. Su expresión... es la misma que ahora. Cansada y complicada.*"
-  },
-  "day4_night_seolhwa_20": {
-    "name": "Profesora tutora",
-    "text": "\"Lo siento, Seolhwa.\""
-  },
-  "day4_night_seolhwa_21": {
-    "name": "Yo",
-    "text": "*Eunsu da un paso al frente.*"
-  },
-  "day4_night_seolhwa_22": {
-    "name": "Profesora tutora",
-    "text": "\"...Me aseguraré de que no duela. Cuando acabe, sentirás paz.\""
-  },
-  "day4_night_seolhwa_23": {
-    "name": "Yo",
-    "text": "*Desde detrás de Eunsu, Riin se acerca sosteniendo una jeringa.*"
-  },
-  "day4_night_seolhwa_24": {
-    "name": "Profesora tutora",
-    "text": "\"Será rápido. Mantén los ojos cerrados. ...Confía en tu profesora.\""
-  },
-  "day4_night_seolhwa_25": {
-    "name": "Yo",
-    "text": "*Seolhwa — yo — grité. Pero no sale ningún sonido. La jeringa toca el brazo. Frío. El líquido entra. La visión se vuelve blanca. Blanca. Blanca. ...Y luego oscuridad.*"
-  },
-  "day4_night_seolhwa_26": {
-    "name": "Yo",
-    "text": "*...La luz se filtra por la oscuridad. Seolhwa está de pie ahí. Con una expresión que no había visto nunca. Ojos tristes, pero... resueltos. Ojos que han tomado una decisión. Las manos transparentes apretadas en puños. La luz brilla entre los dedos.*"
-  },
-  "day4_night_seolhwa_27": {
-    "name": "Lee Seolhwa",
-    "text": "\"...¿Ahora lo entiendes?\""
-  },
-  "day4_night_seolhwa_28": {
-    "name": "Lee Seolhwa",
-    "text": "\"Todo lo que me pasó a mí.\""
-  },
-  "day4_night_seolhwa_29": {
-    "name": "Yo",
-    "text": "*La voz de Seolhwa es clara. Estamos dentro de un sueño, pero... es una voz real.*"
-  },
-  "day4_night_seolhwa_30": {
-    "name": "Lee Seolhwa",
-    "text": "\"Día 5, las 11 de la noche. Eso es cuando hacen el 'Procesamiento Final'.\""
-  },
-  "day4_night_seolhwa_31": {
-    "name": "Lee Seolhwa",
-    "text": "\"A mí también me pasó. En la quinta noche... terminó.\""
-  },
-  "day4_night_seolhwa_32": {
-    "name": "Yo",
-    "text": "*Seolhwa me mira. Con ojos serios.*"
-  },
-  "day4_night_seolhwa_33": {
-    "name": "Lee Seolhwa",
-    "text": "\"**Mañana por la noche.** Eso es el tiempo que te queda, {name}.\""
-  },
-  "day4_night_seolhwa_34": {
-    "name": "Lee Seolhwa",
-    "text": "\"...Protege a Yuna. Yuna... no puede acabar como yo.\""
-  },
-  "day4_night_seolhwa_35": {
-    "name": "Yo",
-    "text": "*Los labios de Seolhwa tiemblan. Está conteniendo las lágrimas.*"
-  },
-  "day4_night_seolhwa_36": {
-    "name": "Lee Seolhwa",
-    "text": "\"...Y.\""
-  },
-  "day4_night_seolhwa_37": {
-    "name": "Yo",
-    "text": "*Seolhwa intenta tomarme la mano. Su mano transparente la atraviesa. No puede aferrarla.*"
-  },
-  "day4_night_seolhwa_38": {
-    "name": "Lee Seolhwa",
-    "text": "\"Edificio viejo, tercera planta. La salida de emergencia. ...Es la ruta que encontré yo.\""
-  },
-  "day4_night_seolhwa_39": {
-    "name": "Lee Seolhwa",
-    "text": "\"Yo no conseguí salir por esa ruta... pero tú puedes, {name}.\""
-  },
-  "day4_night_seolhwa_40": {
-    "name": "Yo",
-    "text": "*La figura de Seolhwa empieza a dispersarse como ruido estático desde los bordes.*"
-  },
-  "day4_night_seolhwa_41": {
-    "name": "Lee Seolhwa",
-    "text": "\"...Sal viva.\""
-  },
-  "day4_night_seolhwa_42": {
-    "name": "Yo",
-    "text": "*Seolhwa sonrió. Una sonrisa final. Sin lágrimas, resuelta. La luz se dispersa. Seolhwa se dispersa. El sueño se dispersa.*"
-  },
-  "day4_night_seolhwa_43": {
-    "name": "Yo",
-    "text": "*—!*"
-  },
-  "day4_night_wake": {
-    "name": "Yo",
-    "text": "*Los ojos se abrieron. Empapada en sudor frío. Las sábanas caladas.*"
-  },
-  "day4_night_wake_2": {
-    "name": "Yo",
-    "text": "*El reloj. Las 3:41. El corazón parece habérseme disparado a la garganta.*"
-  },
-  "day4_night_wake_3": {
-    "name": "Yo",
-    "text": "*Fue un sueño. Pero... no fue un sueño. Sentí directamente el terror de Seolhwa. El frío de la jeringa. La presión de las correas de cuero. El significado de 'Procesamiento Final'.*"
-  },
-  "day4_night_wake_4": {
-    "name": "Yo",
-    "text": "***Mañana por la noche, a las 11. Tengo que salir de esta escuela antes de eso.***"
-  },
-  "day4_night_wake_5": {
-    "name": "Yo",
-    "text": "*Edificio viejo, salida de emergencia de la tercera planta. La ruta que encontró Seolhwa.*"
-  },
-  "day4_night_wake_6": {
-    "name": "Yo",
-    "text": "*...Hice la mochila. Evidencias. Teléfono. Cargador. Lo mínimo imprescindible. ...Mañana. El último día.*"
-  },
-  "day4_night_end": {
-    "name": "",
-    "text": "*— Fin del Día 4 —*"
-  }
+    "day4_night_start": {
+        "name": "Yo",
+        "text": "*Volví a la habitación. Cerré la puerta con llave y puse la cadena.*"
+    },
+    "day4_night_start_2": {
+        "name": "Yo",
+        "text": "*Incluso después de poner la cadena, no me siento seguro. Puse una silla frente a la puerta. Aun así, no me siento seguro.*"
+    },
+    "day4_night_start_3": {
+        "name": "Yo",
+        "text": "*...Esta habitación también fue proporcionada por 'ellos'. ¿De qué sirve un cerrojo?*"
+    },
+
+    "day4_night_phone": {
+        "name": "Yo",
+        "text": "*Mi teléfono suena. Es Sea.*"
+    },
+    "day4_night_phone_2": {
+        "name": "Yo",
+        "text": "*Sea: '{name}, me preocupé porque desapareciste de repente hoy'*"
+    },
+    "day4_night_phone_3": {
+        "name": "Yo",
+        "text": "*Sea: 'Vamos juntos mañana también'*"
+    },
+    "day4_night_phone_4": {
+        "name": "Yo",
+        "text": "*Sea: 'Es una promesa.'*"
+    },
+    "day4_night_phone_5": {
+        "name": "Yo",
+        "text": "*30 segundos después. Sea: 'Es una promesa.'*"
+    },
+    "day4_night_phone_6": {
+        "name": "Yo",
+        "text": "*15 segundos después. Sea: '¿¿¿¿¿Es una promesa?????'*"
+    },
+    "day4_night_phone_7": {
+        "name": "Yo",
+        "text": "*Los mensajes no paran.*"
+    },
+    "day4_night_phone_8": {
+        "name": "Yo",
+        "text": "*10 segundos después. Sea: '¿Estás durmiendo?'*"
+    },
+    "day4_night_phone_9": {
+        "name": "Yo",
+        "text": "*5 segundos después. Sea: '...No te duermas. Solo un poco más.'*"
+    },
+    "day4_night_phone_10": {
+        "name": "Yo",
+        "text": "*3 segundos después. Sea: 'Por favor'*"
+    },
+    "day4_night_phone_11": {
+        "name": "Yo",
+        "text": "*...No los leí. No pude leerlos.*"
+    },
+
+    "day4_night_phone_eunsu": {
+        "name": "Yo",
+        "text": "*Profesor Eunsu: '¿Podrías venir un poco temprano mañana? Hay algo de lo que necesito hablar contigo.'*"
+    },
+    "day4_night_phone_eunsu_2": {
+        "name": "Yo",
+        "text": "*Profesor Eunsu: 'Buenas noches, {name}.'*"
+    },
+    "day4_night_phone_eunsu_3": {
+        "name": "Yo",
+        "text": "*'Buenas noches.' La persona que diseñó todo lo que pasó en esta escuela hoy -- dice 'buenas noches.'*"
+    },
+    "day4_night_phone_end": {
+        "name": "Yo",
+        "text": "*Guardé el teléfono en el cajón. La vibración seguía sonando. Lo envolví en una toalla para amortiguar el sonido.*"
+    },
+
+    "day4_night_save_glitch": {
+        "name": "Yo",
+        "text": "*...La pantalla del teléfono se encendió de repente. Sola. La luz se filtra desde dentro del cajón.*"
+    },
+    "day4_night_save_glitch_2": {
+        "name": "Yo",
+        "text": "*Lo envolví en una toalla -- pero la luz atraviesa la toalla. No es luz física.*"
+    },
+    "day4_night_save_glitch_3": {
+        "name": "Yo",
+        "text": "*Lo saqué. Una app de juego está abierta. ...¿Una app de seguridad? No, esta es una pantalla diferente.*"
+    },
+    "day4_night_save_glitch_4": {
+        "name": "",
+        "text": "[Dirección meta: La pantalla de guardado/carga del juego real se abre por la fuerza. Sin la intervención del jugador.]"
+    },
+    "day4_night_save_glitch_5": {
+        "name": "Yo",
+        "text": "*Puedo ver una lista de ranuras de guardado. Del 1 al 13. ...12 ranuras que nunca guardé están llenas.*"
+    },
+    "day4_night_save_glitch_6": {
+        "name": "Yo",
+        "text": "*Ranura 1. Kim Dojin. Día 5 23:00 -- Procesamiento Completo. El primero. El primerísimo yo. Atrapado a los 3 días sin saber nada -- 'procesado.'*"
+    },
+    "day4_night_save_glitch_7": {
+        "name": "Yo",
+        "text": "*Ranura 2. Lee Junseo. Procesamiento Completo. Ranura 4. Procesamiento Completo. Ranura 5. Procesamiento Completo. Ranura 6. Procesamiento Completo.*"
+    },
+    "day4_night_save_glitch_8": {
+        "name": "Yo",
+        "text": "***Cada vez que se repite 'Procesamiento Completo' -- otra persona que era yo muere.***"
+    },
+    "day4_night_save_glitch_9": {
+        "name": "Yo",
+        "text": "*12 nombres. 12 'Procesamientos Completos.' Todos... eran yo.*"
+    },
+    "day4_night_save_glitch_10": {
+        "name": "Yo",
+        "text": "*Ranura 7. Kim Taeho. 'Efectos secundarios, contacto externo, intento de fuga.' ...El séptimo. ¿Contacto externo? ¿Con quién? -- Seolhwa. Lee Seolhwa.*"
+    },
+    "day4_night_save_glitch_11": {
+        "name": "Yo",
+        "text": "*Solo la Ranura 7 tiene una hora de finalización diferente. 22:47. Todos los demás 'Procesamientos Completos' son exactamente a las 23:00. El séptimo fue 13 minutos antes -- algo fue diferente.*"
+    },
+    "day4_night_save_glitch_12": {
+        "name": "Yo",
+        "text": "*Ranura 3. Park Seojin. 'Intento de fuga en Día 4, fallido.' ...Yo intenté escapar antes. Y me atraparon. El tercer yo también vio el sótano. El tercer yo también sintió el terror. El tercer yo también -- fracasó.*"
+    },
+    "day4_night_save_glitch_13": {
+        "name": "Yo",
+        "text": "*Ranura 9. Han Jiho. 'Detección temprana en Día 3.' Detectado el Día 3. El 'yo' que se dio cuenta más rápido. Y el 'yo' que fue procesado más rápido.*"
+    },
+    "day4_night_save_glitch_14": {
+        "name": "Yo",
+        "text": "*Ranura 13. En progreso. -- Mi nombre está escrito ahí. Aún no es 'Procesamiento Completo.' Aún no.*"
+    },
+    "day4_night_save_glitch_15": {
+        "name": "Yo",
+        "text": "*Intenté tocar la pantalla. Pulsé la Ranura 1. '¿Cargar este guardado?' Sí. -- 'Acceso denegado.'*"
+    },
+    "day4_night_save_glitch_16": {
+        "name": "Yo",
+        "text": "*Ranura 7. '¿Cargar este guardado?' Sí. -- 'Estos datos están corruptos.'*"
+    },
+    "day4_night_save_glitch_17": {
+        "name": "Yo",
+        "text": "*La pantalla se distorsiona y se apaga.*"
+    },
+
+    "day4_night_mirror": {
+        "name": "Yo",
+        "text": "*...No puedo respirar. Fui al baño. Abrí el grifo. Me lavé la cara.*"
+    },
+    "day4_night_mirror_2": {
+        "name": "Yo",
+        "text": "*El agua fría golpea mi cara. Mis sentidos no vuelven. Una vez más. Una vez más.*"
+    },
+    "day4_night_mirror_3": {
+        "name": "Yo",
+        "text": "*...El espejo. Está empañado.*"
+    },
+    "day4_night_mirror_4": {
+        "name": "Yo",
+        "text": "*Nunca lo limpié hasta ahora. No quería limpiarlo. Por alguna razón.*"
+    },
+    "day4_night_mirror_5": {
+        "name": "Yo",
+        "text": "*Por alguna razón -- ahora lo sé. Mi subconsciente lo sabía. Lo que vería en el espejo.*"
+    },
+    "day4_night_mirror_6": {
+        "name": "Yo",
+        "text": "*...Esta vez, tengo que limpiarlo.*"
+    },
+    "day4_night_mirror_7": {
+        "name": "Yo",
+        "text": "*Levanté la mano. Me detuve justo antes de tocar la superficie del espejo. Respiración profunda. Uno. Dos.*"
+    },
+    "day4_night_mirror_8": {
+        "name": "Yo",
+        "text": "***Una presencia detrás de mí. Me di la vuelta. Seolhwa está ahí de pie. Frente a la puerta del baño. Piel pálida, cabello blanco plateado, complexión delgada.***"
+    },
+    "day4_night_mirror_9": {
+        "name": "Yo",
+        "text": "***La chica me está mirando. Con ojos tristes.***"
+    },
+    "day4_night_mirror_10": {
+        "name": "Seolhwa",
+        "text": "\"...No lo limpies.\""
+    },
+    "day4_night_mirror_11": {
+        "name": "Seolhwa",
+        "text": "\"Todavía no... no mires.\""
+    },
+    "day4_night_mirror_12": {
+        "name": "Yo",
+        "text": "*...Miré el espejo de nuevo.*"
+    },
+
+    "day4_night_mirror_swipe": {
+        "name": "Yo",
+        "text": "*Levanté la mano. Puse la palma sobre el espejo. Está frío.*"
+    },
+    "day4_night_mirror_swipe_2": {
+        "name": "Yo",
+        "text": "*Limpié lentamente. De arriba abajo. Una vez.*"
+    },
+    "day4_night_mirror_swipe_3": {
+        "name": "Yo",
+        "text": "*El vaho se disipa. Mi frente se revela.*"
+    },
+    "day4_night_mirror_swipe_4": {
+        "name": "Yo",
+        "text": "*Segunda vez. Mis ojos se revelan.*"
+    },
+    "day4_night_mirror_swipe_5": {
+        "name": "Yo",
+        "text": "*Tercera vez. Nariz. Boca. Mentón. Mi cara se revela.*"
+    },
+
+    "day4_night_mirror_hit1": {
+        "name": "Yo",
+        "text": "***En el espejo -- se refleja el espacio detrás de mí.***"
+    },
+    "day4_night_mirror_hit1_2": {
+        "name": "Yo",
+        "text": "***No hay nadie.***"
+    },
+    "day4_night_mirror_hit1_3": {
+        "name": "Yo",
+        "text": "***Seolhwa, que estaba ahí hace un momento -- no se refleja en el espejo.***"
+    },
+    "day4_night_mirror_hit1_4": {
+        "name": "Yo",
+        "text": "*No pude respirar.*"
+    },
+    "day4_night_mirror_hit1_5": {
+        "name": "Yo",
+        "text": "*Me di la vuelta. Seolhwa está ahí. Claramente. Su cabello blanco plateado brilla bajo la luz fluorescente. Sus ojos están húmedos.*"
+    },
+    "day4_night_mirror_hit1_6": {
+        "name": "Yo",
+        "text": "*Miré el espejo de nuevo. En el espejo -- solo yo. Yo y un baño vacío.*"
+    },
+    "day4_night_mirror_hit1_7": {
+        "name": "Yo",
+        "text": "*Miré detrás de mí. Seolhwa está ahí. Miré el espejo. No está. Detrás. Está. Espejo. No está.*"
+    },
+    "day4_night_mirror_hit1_8": {
+        "name": "Yo",
+        "text": "***...Seolhwa no se refleja en el espejo.***"
+    },
+    "day4_night_mirror_hit1_9": {
+        "name": "Yo",
+        "text": "***Seolhwa -- no existe físicamente.***"
+    },
+    "day4_night_mirror_hit1_10": {
+        "name": "Yo",
+        "text": "*Viene a mi mente el diario de observación de Eunsu del sótano.*"
+    },
+    "day4_night_mirror_hit1_11": {
+        "name": "Yo",
+        "text": "*'Mecanismo de defensa de depender de otro inexistente... confirmado como alucinación.'*"
+    },
+    "day4_night_mirror_hit1_12": {
+        "name": "Yo",
+        "text": "***La chica que está de pie detrás de mí, vigilándome ahora mismo -- murió hace un año.***"
+    },
+    "day4_night_mirror_hit1_13": {
+        "name": "Yo",
+        "text": "***La persona con la que he estado hablando, en quien me he apoyado, de quien recibí advertencias -- era una alucinación creada dentro de mi cabeza.***"
+    },
+    "day4_night_mirror_hit1_14": {
+        "name": "Seolhwa",
+        "text": "\"...Lo siento.\""
+    },
+    "day4_night_mirror_hit1_15": {
+        "name": "Yo",
+        "text": "*Escucho una voz. Claramente. Mis tímpanos vibran. Pero esta voz -- no vino a través del aire. Resuena desde dentro de mi cabeza.*"
+    },
+
+    "day4_night_mirror_hit2": {
+        "name": "Yo",
+        "text": "*Mi visión se estrecha. Miro fijamente el espejo. Mi cara. Miro mi cara.*"
+    },
+    "day4_night_mirror_hit2_2": {
+        "name": "Yo",
+        "text": "*Por primera vez en 4 días, miro bien mi propia cara. Es extraña. ¿Esta cara soy yo?*"
+    },
+    "day4_night_mirror_hit2_3": {
+        "name": "Yo",
+        "text": "*Esta cara fue también Kim Dojin, también Lee Junseo, también Park Seojin. Saco las 13 fotos que Yuna me dio sobre el lavabo. Las comparo una por una con mi cara en el espejo.*"
+    },
+    "day4_night_mirror_hit2_4": {
+        "name": "Yo",
+        "text": "*#1. Kim Dojin. Pelo negro corto. La cara -- idéntica.*"
+    },
+    "day4_night_mirror_hit2_5": {
+        "name": "Yo",
+        "text": "*#3. Park Seojin. Pelo castaño. La cara -- idéntica.*"
+    },
+    "day4_night_mirror_hit2_6": {
+        "name": "Yo",
+        "text": "*#7. Kim Taeho. Pelo largo. Mejillas demacradas. Pero la disposición de ojos, nariz, boca -- idéntica.*"
+    },
+    "day4_night_mirror_hit2_7": {
+        "name": "Yo",
+        "text": "***Diferente color de pelo. Diferentes nombres. Pero comparados con mi cara en el espejo -- todos idénticos.***"
+    },
+    "day4_night_mirror_hit2_8": {
+        "name": "Yo",
+        "text": "***Soy la decimotercera cáscara.***"
+    },
+    "day4_night_mirror_hit2_9": {
+        "name": "Yo",
+        "text": "***Cuál fue el almuerzo de ayer. El filete de pollo que Sea preparó. El café que el Profesor Eunsu hizo. ...Coloqué la alucinación de una persona que murió por mí a mis espaldas, y tragué todo eso sonriendo con las personas que la mataron.***"
+    },
+
+    "day4_night_mirror_overlay": {
+        "name": "",
+        "text": "[Las 13 fotos de identificación se superponen rápidamente sobre la cara en el espejo. #1 Kim Dojin → #3 Park Seojin → #7 Kim Taeho → ... → #12 Im Seoyul → {name}. Diferentes colores de pelo, diferentes etiquetas de nombre parpadean y se superponen, pero los contornos del rostro coinciden perfectamente.]"
+    },
+
+    "day4_night_mirror_collapse": {
+        "name": "Yo",
+        "text": "*Retrocedí tambaleándome. Mi espalda golpeó la pared. Me deslicé hacia abajo.*"
+    },
+    "day4_night_mirror_collapse_2": {
+        "name": "Yo",
+        "text": "***La razón por la que Seolhwa dijo 'recuérdame.' Era literal. -- No olvides a la persona que desapareció por mi bien.***"
+    },
+    "day4_night_mirror_collapse_3": {
+        "name": "Yo",
+        "text": "*Me derrumbé en el suelo. Abracé mis rodillas.*"
+    },
+    "day4_night_mirror_collapse_4": {
+        "name": "Yo",
+        "text": "*Mis dientes castañean. Mi cuerpo no me obedece.*"
+    },
+    "day4_night_mirror_collapse_5": {
+        "name": "Yo",
+        "text": "*Las lágrimas salen. En silencio. Mi garganta se cierra y no sale ningún sonido.*"
+    },
+    "day4_night_mirror_collapse_6": {
+        "name": "Yo",
+        "text": "*...¿Son estas lágrimas por Seolhwa? ¿O por mí mismo, la decimotercera cáscara? ¿O por un yo que, a pesar de morir doce veces -- nunca lloró por sí mismo ni una vez?*"
+    },
+    "day4_night_mirror_collapse_7": {
+        "name": "Yo",
+        "text": "*No lo sé. Simplemente -- me derrumbo. El suelo del baño está frío. El frío de las baldosas se filtra a través de mi espalda. No sé cuánto tiempo estuve así.*"
+    },
+    "day4_night_mirror_collapse_8": {
+        "name": "Yo",
+        "text": "*...Seolhwa está sentada a mi lado. La chica que no se refleja en el espejo. La alucinación. La persona muerta.*"
+    },
+    "day4_night_mirror_collapse_9": {
+        "name": "Yo",
+        "text": "*Pero -- alguien está a mi lado. Real o no. Por ahora, solo eso es suficiente.*"
+    },
+
+    "day4_night_plan": {
+        "name": "Yo",
+        "text": "*...No sé cuánto tiempo estuve así. Solo después de que mis lágrimas se secaron me levanté.*"
+    },
+    "day4_night_plan_2": {
+        "name": "Yo",
+        "text": "*Miré el espejo de nuevo. La cara después de llorar. Ojos hinchados. Nariz roja. -- Este es el decimotercer yo.*"
+    },
+    "day4_night_plan_3": {
+        "name": "Yo",
+        "text": "*Abrí mi cuaderno. Mis manos tiemblan pero escribo. Con la mano izquierda. Porque soy zurdo. ...Los hechos que Seolhwa sabía -- ahora yo también los sé.*"
+    },
+    "day4_night_plan_4": {
+        "name": "Yo",
+        "text": "*Uno. Esta escuela está realizando experimentos de manipulación de memoria en mí. Decimotercera iteración.*"
+    },
+    "day4_night_plan_5": {
+        "name": "Yo",
+        "text": "*Dos. Eunsu = Director. Riin = Drogas. Sea = Vigilancia.*"
+    },
+    "day4_night_plan_6": {
+        "name": "Yo",
+        "text": "*Tres. Seolhwa = Una persona que se rebeló conmigo durante la séptima iteración y fue eliminada. La Seolhwa que veo ahora es una alucinación creada por la memoria.*"
+    },
+    "day4_night_plan_7": {
+        "name": "Yo",
+        "text": "*Cuatro. Yuna = La única observadora. Actualmente confinada en el sótano.*"
+    },
+    "day4_night_plan_8": {
+        "name": "Yo",
+        "text": "*Cinco. Mañana es el quinto día. 'Procesamiento final' a las 11 PM.*"
+    },
+    "day4_night_plan_9": {
+        "name": "Yo",
+        "text": "*Seis. Salida de emergencia del 3er piso del edificio antiguo = La ruta de escape que Seolhwa encontró.*"
+    },
+    "day4_night_plan_10": {
+        "name": "Yo",
+        "text": "*...Dejé de escribir. Solté el bolígrafo.*"
+    },
+    "day4_night_plan_11": {
+        "name": "Yo",
+        "text": "*Siete. La Profesora Riin tiene la llave. Dijo que ganaría tiempo hasta mañana por la mañana.*"
+    },
+    "day4_night_plan_12": {
+        "name": "Yo",
+        "text": "*Ocho. El tercer yo intentó escapar en el Día 4 y fracasó. Atrapado en la puerta principal. -- La puerta principal no es una opción.*"
+    },
+    "day4_night_plan_13": {
+        "name": "Yo",
+        "text": "*Nueve. El séptimo yo lo intentó con Seolhwa. Terminó a las 22:47. 13 minutos antes de las 23:00. -- Algo fue diferente.*"
+    },
+    "day4_night_plan_14": {
+        "name": "Yo",
+        "text": "*Diez. El noveno yo fue detectado en el Día 3. No puedo moverme demasiado rápido.*"
+    },
+    "day4_night_plan_15": {
+        "name": "Yo",
+        "text": "*Mis manos tiemblan. Las letras salen torcidas. Pero no me detuve.*"
+    },
+    "day4_night_plan_choice": {
+        "name": "Yo",
+        "text": "*Hago el plan final.*",
+        "choices": [
+            "Escapar de la escuela",
+            "Exponer las pruebas al exterior",
+            "Confrontarlos directamente"
+        ]
+    },
+    "day4_night_plan_escape": {
+        "name": "Yo",
+        "text": "*Escapar. La puerta principal es el camino donde #3 fracasó. Iré por la salida de emergencia del edificio antiguo.*"
+    },
+    "day4_night_plan_expose": {
+        "name": "Yo",
+        "text": "*Sacar las pruebas primero. Con los registros de las 13 iteraciones, no pueden ser ignorados.*"
+    },
+    "day4_night_plan_confront": {
+        "name": "Yo",
+        "text": "*De frente. Le diré a Eunsu directamente. Que sé sobre las 13 veces.*"
+    },
+
+    "day4_night_plan_final": {
+        "name": "Yo",
+        "text": "*Preparé mi bolsa. Pruebas. Teléfono. La cámara de Yuna. Lo mínimo.*"
+    },
+    "day4_night_plan_final_2": {
+        "name": "Yo",
+        "text": "*Escribí en la última línea del cuaderno.*"
+    },
+    "day4_night_plan_final_3": {
+        "name": "Yo",
+        "text": "***'Los 12 yo fracasaron. El decimotercero -- lo hará diferente.'***"
+    },
+    "day4_night_plan_final_4": {
+        "name": "Yo",
+        "text": "*...Mañana. El último día.*"
+    },
+
+    "day4_night_end": {
+        "name": "",
+        "text": "*-- Fin del Día 4 --*"
+    }
 }

@@ -1,210 +1,336 @@
 {
-  "day4_morning_start": {
-    "name": "Yo",
-    "text": "*Mañana del Día 4. Los ojos se abrieron antes de que sonara la alarma. Las 5:38.*"
-  },
-  "day4_morning_start_2": {
-    "name": "Yo",
-    "text": "*La pesadilla de anoche vuelve a mí. La mano transparente de Seolhwa. 'Cinco días'. Lágrimas.*"
-  },
-  "day4_morning_start_3": {
-    "name": "Yo",
-    "text": "*...Si no fue un sueño sino una advertencia. Quedan dos días.*"
-  },
-  "day4_morning_start_4": {
-    "name": "Yo",
-    "text": "*Día 4.*"
-  },
-  "day4_morning_start_5": {
-    "name": "Yo",
-    "text": "*El despertador sonó. Me senté en la cama.*"
-  },
-  "day4_morning_start_6": {
-    "name": "Yo",
-    "text": "*Queda hoy y mañana. Antes del quinto día.*"
-  },
-  "day4_morning_start_7": {
-    "name": "Yo",
-    "text": "*Tengo que salir. No sé cómo todavía. Pero tengo que salir.*"
-  },
-  "day4_morning_start_8": {
-    "name": "Yo",
-    "text": "*Me pongo el uniforme. Me miro en el espejo. Mi cara... parece diferente a la del día 1.*"
-  },
-  "day4_morning_start_9": {
-    "name": "Yo",
-    "text": "*Los ojos. Algo en los ojos es diferente. Como si supieran algo que no deberían saber.*"
-  },
-  "day4_morning_commute": {
-    "name": "Yo",
-    "text": "*De camino al colegio. El mismo trayecto de siempre.*"
-  },
-  "day4_morning_commute_2": {
-    "name": "Yo",
-    "text": "*Pero hoy, el entorno parece diferente. Los árboles, las casas, las personas.*"
-  },
-  "day4_morning_commute_3": {
-    "name": "Yo",
-    "text": "*...¿Cuándo fue la última vez que vi a alguien fuera del colegio? ¿Fue ayer? ¿Anteayer?*"
-  },
-  "day4_morning_gate": {
-    "name": "Yo",
-    "text": "*Llegué a la entrada de la escuela. ...El ambiente es diferente al de ayer.*"
-  },
-  "day4_morning_gate_2": {
-    "name": "Yo",
-    "text": "*Los estudiantes pasan por la entrada en pequeños grupos. Una escena matutina normal... debería serlo.*"
-  },
-  "day4_morning_gate_3": {
-    "name": "Yo",
-    "text": "*Las expresiones de los estudiantes... son todas iguales.*"
-  },
-  "day4_morning_gate_4": {
-    "name": "Yo",
-    "text": "*La entrada del colegio. Antes de cruzar, me detengo.*"
-  },
-  "day4_morning_gate_5": {
-    "name": "Yo",
-    "text": "*La puerta está abierta. Los estudiantes pasan.*"
-  },
-  "day4_morning_gate_6": {
-    "name": "Yo",
-    "text": "*...¿Podría darme la vuelta ahora mismo? ¿Simplemente salir corriendo?*"
-  },
-  "day4_morning_eunsu": {
-    "name": "Profesora tutora",
-    "text": "\"{name}, buenos días.\""
-  },
-  "day4_morning_eunsu_2": {
-    "name": "Profesora tutora",
-    "text": "\"Hoy te acompaño yo misma. Vamos juntos.\""
-  },
-  "day4_morning_eunsu_3": {
-    "name": "Profesora tutora",
-    "text": "*¿Qué hago?*",
-    "choices": [
-      "Ir con la profesora",
-      "Escapar ahora"
-    ]
-  },
-  "day4_morning_eunsu_4": {
-    "name": "Yo",
-    "text": "*La profesora extiende la mano. Está sonriendo. Una sonrisa cálida. ...¿Siempre fue esta sonrisa tan aterradora?*",
-    "choices": [
-      "Tomarle la mano",
-      "Decir que estoy bien"
-    ]
-  },
-  "day4_morning_eunsu_comply": {
-    "name": "Yo",
-    "text": "*Le tomé la mano a la profesora. Cálida, pero... firme. Cuesta soltarse.*"
-  },
-  "day4_morning_eunsu_comply_2": {
-    "name": "Profesora tutora",
-    "text": "*La profesora Eunsu me lleva de vuelta al aula. Su mano en mi hombro es firme.*"
-  },
-  "day4_morning_eunsu_comply_3": {
-    "name": "Park Eunsu",
-    "text": "\"{name}, no tienes que ir a ningún sitio. Aquí estás a salvo.\""
-  },
-  "day4_morning_eunsu_refuse": {
-    "name": "Yo",
-    "text": "\"Estoy bien. Puedo ir solo.\""
-  },
-  "day4_morning_eunsu_refuse_2": {
-    "name": "Yo",
-    "text": "*La sonrisa de la profesora se congeló durante 0,5 segundos.*"
-  },
-  "day4_morning_eunsu_refuse_3": {
-    "name": "Profesora tutora",
-    "text": "*Intenté correr. Pero las piernas no me respondían.*"
-  },
-  "day4_morning_eunsu_refuse_4": {
-    "name": "Profesora tutora",
-    "text": "*La profesora Eunsu me coge del brazo. Su agarre es suave pero no puedo soltarme.*"
-  },
-  "day4_morning_classroom": {
-    "name": "Yo",
-    "text": "*Entré al aula.*"
-  },
-  "day4_morning_classroom_2": {
-    "name": "Yo",
-    "text": "*Un asiento está vacío.*"
-  },
-  "day4_morning_classroom_3": {
-    "name": "Yo",
-    "text": "*El asiento de Yuna. Vacío. Sin mochila. Sin ni siquiera rastro.*"
-  },
-  "day4_morning_classroom_4": {
-    "name": "Yo",
-    "text": "*El aula. Los mismos compañeros de siempre. Las mismas caras.*"
-  },
-  "day4_morning_classroom_5": {
-    "name": "Yo",
-    "text": "*Pero hoy... todos parecen estar mirándome. Sin que yo se lo pida.*"
-  },
-  "day4_morning_sea": {
-    "name": "Han Sea",
-    "text": "\"¿Yuna? ...Dicen que se trasladó. De vuelta a su escuela original.\""
-  },
-  "day4_morning_sea_2": {
-    "name": "Yo",
-    "text": "\"¿Trasladada? ¿Cuándo?\""
-  },
-  "day4_morning_sea_3": {
-    "name": "Han Sea",
-    "text": "\"Anoche, creo. Fue de repente, yo misma me sorprendí.\""
-  },
-  "day4_morning_sea_4": {
-    "name": "Yo",
-    "text": "*Sea se sienta a mi lado. Más cerca que de costumbre.*"
-  },
-  "day4_morning_sea_5": {
-    "name": "Han Sea",
-    "text": "\"...{name}. Hoy quédate cerca de mí.\""
-  },
-  "day4_morning_sea_6": {
-    "name": "Yo",
-    "text": "*Las palabras de Sea. No como una propuesta. Como una advertencia.*"
-  },
-  "day4_morning_class_start": {
-    "name": "Yo",
-    "text": "*Primera hora. La profesora Eunsu está de pie en el podio.*"
-  },
-  "day4_morning_class_2": {
-    "name": "Profesora tutora",
-    "text": "\"Hoy hablemos de un tema especial. 'La pertenencia'.\""
-  },
-  "day4_morning_class_3": {
-    "name": "Profesora tutora",
-    "text": "\"Vosotros 'pertenecéis' a esta escuela. Sois parte de esta escuela.\""
-  },
-  "day4_morning_class_4": {
-    "name": "Profesora tutora",
-    "text": "\"Pertenecer es... seguridad. Estar aquí significa estar protegido.\""
-  },
-  "day4_morning_class_5": {
-    "name": "Profesora tutora",
-    "text": "*La clase de la profesora Eunsu continúa.*"
-  },
-  "day4_morning_class_6": {
-    "name": "Profesora tutora",
-    "text": "*Pero no puedo concentrarme. Las palabras de Seolhwa del sueño me dan vueltas en la cabeza.*"
-  },
-  "day4_morning_class_7": {
-    "name": "Yo",
-    "text": "*'Sal antes del quinto día.'*"
-  },
-  "day4_morning_class_8": {
-    "name": "Yo",
-    "text": "*Hoy es el cuarto día. Mañana es el quinto.*"
-  },
-  "day4_morning_class_9": {
-    "name": "Yo",
-    "text": "*...Tengo que actuar. Hoy.*"
-  },
-  "day4_morning_end": {
-    "name": "Yo",
-    "text": "*Terminaron las clases de la mañana. No puedo respirar.*"
-  }
+    "day4_morning_start": {
+        "name": "Yo",
+        "text": "*Mañana del día 4. Me desperté antes de que sonara la alarma. 5:38 AM.*"
+    },
+    "day4_morning_start_2": {
+        "name": "Yo",
+        "text": "*Las letras en la pared siguen ahí. 'Sal de aquí.' No fue un sueño.*"
+    },
+    "day4_morning_start_3": {
+        "name": "Yo",
+        "text": "*Tracé las letras con la punta de los dedos. Son marcas de uñas. Profundas. Demasiado profundas para haberse hecho de una sola vez.*"
+    },
+    "day4_morning_start_4": {
+        "name": "Yo",
+        "text": "*...La piel bajo mis uñas está desgarrada. Anoche antes de dormir no estaba así.*"
+    },
+    "day4_morning_start_5": {
+        "name": "Yo",
+        "text": "*No puede ser... ¿lo escribí yo mientras dormía?*"
+    },
+    "day4_morning_start_6": {
+        "name": "Yo",
+        "text": "*O acaso... ¿estaba despierto y simplemente no lo recuerdo?*"
+    },
+    "day4_morning_start_7": {
+        "name": "Yo",
+        "text": "*Me paré frente al espejo. ...Está empañado otra vez. Iba a limpiarlo, pero me detuve.*"
+    },
+    "day4_morning_start_8": {
+        "name": "Yo",
+        "text": "*A través del espejo empañado se refleja una forma. Borrosa. El contorno de una persona. ...Debería ser mi contorno. ¿Por qué se siente tan... extraño?*"
+    },
+    "day4_morning_start_9": {
+        "name": "Yo",
+        "text": "*Algo parece superponerse entre la niebla. Otro rostro sobre el mío. ...Debe ser mi imaginación.*"
+    },
+    "day4_morning_start_10": {
+        "name": "Yo",
+        "text": "*...No lo limpié. Por alguna razón, me da miedo ver mi cara. Hasta ayer creía que simplemente no me molestaba en limpiarlo. Hoy... no estoy tan seguro.*"
+    },
+    "day4_morning_start_11": {
+        "name": "Yo",
+        "text": "*El instinto me dice: no lo limpies.*"
+    },
+    "day4_morning_start_12": {
+        "name": "Yo",
+        "text": "*Me lavé la cara a medias. Me cepillé los dientes de espaldas al espejo. Sé que no es normal. No poder mirar un espejo.*"
+    },
+    "day4_morning_start_13": {
+        "name": "Yo",
+        "text": "*Las manos me tiemblan al ponerme el uniforme. Me equivoqué con los botones tres veces.*"
+    },
+    "day4_morning_start_14": {
+        "name": "Yo",
+        "text": "*La luz de la mañana entra por las cortinas. Un día luminoso. Pero... hay alguien de pie en la acera debajo de la ventana. Traje. Gafas de sol. Brazos cruzados, mirando hacia arriba.*"
+    },
+    "day4_morning_start_15": {
+        "name": "Yo",
+        "text": "*Dos segundos. Parpadeé. Ya no está. ...¿Realmente había alguien?*"
+    },
+    "day4_morning_start_16": {
+        "name": "Yo",
+        "text": "*Recuerdo las palabras de Yuna. 'Siempre hay las mismas personas alrededor de esta escuela. No son padres ni vecinos.'*"
+    },
+    "day4_morning_start_17": {
+        "name": "Yo",
+        "text": "*Me detuve frente a la puerta. Por la rendija debajo de la puerta se ve una sombra. Del tamaño de dos pies. Alguien está parado justo afuera.*"
+    },
+    "day4_morning_start_18": {
+        "name": "Yo",
+        "text": "*Cinco segundos. Diez segundos. Contuve la respiración. La sombra no se mueve.*"
+    },
+    "day4_morning_start_19": {
+        "name": "Yo",
+        "text": "*Quince segundos. La sombra desaparece. Pasos... ninguno. Se desvaneció sin hacer ruido.*"
+    },
+    "day4_morning_start_20": {
+        "name": "Yo",
+        "text": "*...Abrí la puerta. No hay nadie en el pasillo. Un pasillo luminoso de mañana. Nadie.*"
+    },
+    "day4_morning_start_21": {
+        "name": "Yo",
+        "text": "*Un sobre blanco en el suelo frente a la puerta. Sin nombre.*"
+    },
+    "day4_morning_start_22": {
+        "name": "Yo",
+        "text": "*Lo abrí. Una sola hoja de papel adentro. Texto impreso: **'Horario de hoy: Proceder con normalidad. -- División de Gestión'***"
+    },
+    "day4_morning_start_23": {
+        "name": "Yo",
+        "text": "*...¿División de Gestión? Este edificio de apartamentos no tiene ninguna división de gestión.*"
+    },
+    "day4_morning_start_24": {
+        "name": "Yo",
+        "text": "*Guardé el sobre en la mochila. Las manos me tiemblan.*"
+    },
+
+    "day4_morning_commute": {
+        "name": "Yo",
+        "text": "*Camino a la escuela. Apareció una notificación de la app de seguridad en mi teléfono.*"
+    },
+    "day4_morning_commute_2": {
+        "name": "Yo",
+        "text": "*'Bienvenido, Sujeto #1--'*"
+    },
+    "day4_morning_commute_3": {
+        "name": "Yo",
+        "text": "*Un parpadeo. Desapareció. Al mirar de nuevo, es una notificación normal. '¡Buenos días, {name}!'*"
+    },
+    "day4_morning_commute_4": {
+        "name": "Yo",
+        "text": "*...¿Qué acaba de decir? ¿'Sujeto'? ...Será un error de la app de seguridad. No. No es un error. Yuna me lo mostró ayer. Lo que realmente es esta app.*"
+    },
+    "day4_morning_commute_5": {
+        "name": "Yo",
+        "text": "*Miro el teléfono otra vez. El icono de la app. 'App de Seguridad.' Una app que nunca instalé. Una app que no se puede borrar.*"
+    },
+    "day4_morning_commute_6": {
+        "name": "Yo",
+        "text": "*Mantengo pulsada la app. '¿Eliminar?' -- Sí. 'Permiso denegado.'*"
+    },
+    "day4_morning_commute_7": {
+        "name": "Yo",
+        "text": "*...Por supuesto. Porque esta no es mi app. Es una app que me controla.*"
+    },
+    "day4_morning_commute_8": {
+        "name": "Yo",
+        "text": "*A mitad del camino. Me detuve en un paso de peatones. Estudiantes caminando hacia mí desde el otro lado. Cinco. En fila.*"
+    },
+    "day4_morning_commute_9": {
+        "name": "Yo",
+        "text": "*Todos caminan a la misma velocidad. Misma longitud de paso. Mismo ángulo al mover los brazos. Como si... funcionaran con el mismo programa.*"
+    },
+
+    "day4_morning_gate": {
+        "name": "Yo",
+        "text": "*Puerta principal de la escuela. Los estudiantes pasan en pequeños grupos.*"
+    },
+    "day4_morning_gate_2": {
+        "name": "Yo",
+        "text": "*Las expresiones de los estudiantes son... todas iguales.*"
+    },
+    "day4_morning_gate_3": {
+        "name": "Yo",
+        "text": "***Todos están sonriendo. La misma sonrisa. Las comisuras de los labios elevadas en el mismo ángulo.***"
+    },
+    "day4_morning_gate_4": {
+        "name": "Yo",
+        "text": "*Observé a uno. En el instante en que cruzó la puerta, su expresión cambió. De inexpresivo a sonriente. Como si se activara un interruptor.*"
+    },
+    "day4_morning_gate_5": {
+        "name": "Yo",
+        "text": "*Otro. Lo mismo. Al pasar el pilar de la puerta: sonrisa. Y otro más. Conversaba con expresión seria frente a la puerta, pero al cruzarla, ambos mostraron simultáneamente la misma sonrisa.*"
+    },
+    "day4_morning_gate_6": {
+        "name": "Yo",
+        "text": "***Todos. Sin excepción. En el momento en que cruzan la frontera de la puerta principal, todos ponen la misma cara.***"
+    },
+    "day4_morning_gate_7": {
+        "name": "Yo",
+        "text": "*Tres estudiantes pasan por la puerta. Giran la cabeza hacia mí simultáneamente. Mismo ángulo. Mismo momento. Misma sonrisa.*"
+    },
+    "day4_morning_gate_8": {
+        "name": "Yo",
+        "text": "*...Es como un espectáculo de marionetas.*"
+    },
+    "day4_morning_gate_9": {
+        "name": "Yo",
+        "text": "*Eunsu está de pie junto a la puerta principal. Apoyado en ella. Sonriendo. La misma sonrisa que los demás estudiantes... no. La suya es diferente. Es el único que sonríe de verdad.*"
+    },
+    "day4_morning_gate_10": {
+        "name": "Yo",
+        "text": "*Eso es aún más aterrador.*"
+    },
+    "day4_morning_eunsu": {
+        "name": "Eunsu",
+        "text": "\"{name}, buenos días.\""
+    },
+    "day4_morning_eunsu_2": {
+        "name": "Eunsu",
+        "text": "\"Vamos juntos al aula hoy.\""
+    },
+    "day4_morning_eunsu_3": {
+        "name": "Yo",
+        "text": "*Se pone a mi lado y me toma del brazo. Con naturalidad. Como si lo hiciera todos los días.*"
+    },
+    "day4_morning_eunsu_choice": {
+        "name": "Yo",
+        "text": "*Eunsu está esperando.*",
+        "choices": [
+            "Caminar juntos",
+            "Decir que iré adelante"
+        ]
+    },
+
+    "day4_morning_eunsu_comply": {
+        "name": "Yo",
+        "text": "*Caminé junto a Eunsu hasta el aula. ...Una escolta... o un traslado. No sabía cuál de las dos.*"
+    },
+
+    "day4_morning_eunsu_refuse": {
+        "name": "Yo",
+        "text": "\"Está bien. Me adelanto.\""
+    },
+    "day4_morning_eunsu_refuse_2": {
+        "name": "Eunsu",
+        "text": "\"Es mejor no andar solo por esta escuela.\""
+    },
+    "day4_morning_eunsu_refuse_3": {
+        "name": "Eunsu",
+        "text": "\"...**Es peligroso.**\""
+    },
+    "day4_morning_eunsu_refuse_4": {
+        "name": "Yo",
+        "text": "*El peso de la palabra 'peligroso' ha cambiado. Hasta ayer era un consejo amable. Hoy es una advertencia.*"
+    },
+    "day4_morning_eunsu_refuse_5": {
+        "name": "Yo",
+        "text": "*Eunsu me sigue por detrás. Medio paso atrás. La distancia exacta para no salir nunca de mi campo visual.*"
+    },
+
+    "day4_morning_classroom": {
+        "name": "Yo",
+        "text": "*Entré al aula.*"
+    },
+    "day4_morning_classroom_2": {
+        "name": "Yo",
+        "text": "***El asiento de Yuna. Vacío. Sin mochila. Sin rastro alguno.***"
+    },
+    "day4_morning_classroom_3": {
+        "name": "Yo",
+        "text": "*El escritorio está limpio. Demasiado limpio. Ni un garabato. Como si nunca nadie se hubiera sentado ahí.*"
+    },
+    "day4_morning_classroom_4": {
+        "name": "Yo",
+        "text": "*...Hasta ayer tenía pegatinas. Pegatinas del club de fotografía. También desaparecieron.*"
+    },
+    "day4_morning_classroom_5": {
+        "name": "Yo",
+        "text": "\"Yuna no ha venido...\""
+    },
+    "day4_morning_sea": {
+        "name": "Han Sea",
+        "text": "\"¿Yuna? ...Se transfirió. De vuelta a su antigua escuela.\""
+    },
+    "day4_morning_sea_2": {
+        "name": "Yo",
+        "text": "\"¿Se transfirió? ¿Cuándo?\""
+    },
+    "day4_morning_sea_3": {
+        "name": "Han Sea",
+        "text": "\"¿Anoche, creo?\""
+    },
+    "day4_morning_sea_4": {
+        "name": "Yo",
+        "text": "*Ayer Yuna me mostró tres años de evidencia. ¿Y de repente se transfirió?*"
+    },
+    "day4_morning_sea_5": {
+        "name": "Yo",
+        "text": "\"¿Conoces a Yuna Choi? La del club de fotografía.\""
+    },
+    "day4_morning_sea_6": {
+        "name": "Boy student",
+        "text": "\"...¿Yuna Choi? ¿Había alguien con ese nombre?\""
+    },
+    "day4_morning_sea_7": {
+        "name": "Girl student",
+        "text": "\"¿Yuna...? Ah, ¿la que se transfirió el año pasado?\""
+    },
+    "day4_morning_sea_8": {
+        "name": "Yo",
+        "text": "*¿El año pasado? Yuna estuvo aquí hasta ayer.*"
+    },
+    "day4_morning_sea_9": {
+        "name": "Yo",
+        "text": "*Todo el aula actúa como si hubieran olvidado a Yuna.*"
+    },
+    "day4_morning_sea_10": {
+        "name": "Yo",
+        "text": "*...No, no la olvidaron. Es como si nunca hubiera existido.*"
+    },
+
+    "day4_morning_class_start": {
+        "name": "Eunsu",
+        "text": "\"Hoy hablaremos sobre 'la pertenencia'.\""
+    },
+    "day4_morning_class_2": {
+        "name": "Yo",
+        "text": "*Eunsu se para en el estrado. Toma la tiza. Escribe 'Pertenencia' en la pizarra.*"
+    },
+    "day4_morning_class_3": {
+        "name": "Yo",
+        "text": "*...La lista de asistencia está abierta sobre el estrado. El espacio donde debería estar el nombre de Yuna está en blanco. Se ven marcas de cinta correctora.*"
+    },
+    "day4_morning_class_4": {
+        "name": "Eunsu",
+        "text": "\"La pertenencia significa... seguridad. Estar aquí significa que estás protegido.\""
+    },
+    "day4_morning_class_5": {
+        "name": "Eunsu",
+        "text": "\"Pertenecer significa que alguien cuida de ti.\""
+    },
+    "day4_morning_class_6": {
+        "name": "Eunsu",
+        "text": "\"Pero intentar dejar esta escuela... no es fácil.\""
+    },
+    "day4_morning_class_7": {
+        "name": "Yo",
+        "text": "*Su mirada se fija en mí. Da un paso desde el estrado hacia mí.*"
+    },
+    "day4_morning_class_8": {
+        "name": "Eunsu",
+        "text": "\"Los que intentaron irse... la mayoría se arrepintió.\""
+    },
+    "day4_morning_class_9": {
+        "name": "Eunsu",
+        "text": "\"**¿Verdad, {name}?**\""
+    },
+    "day4_morning_class_10": {
+        "name": "Yo",
+        "text": "*Todas las miradas del aula se dirigen hacia mí. Treinta pares de ojos. Todos sonriendo.*"
+    },
+    "day4_morning_class_11": {
+        "name": "Yo",
+        "text": "*...No, veintinueve pares. Solo el asiento de Yuna está vacío.*"
+    },
+    "day4_morning_class_12": {
+        "name": "Yo",
+        "text": "*El asiento vacío parece una respuesta. Lo que les pasa a los que intentan irse.*"
+    },
+    "day4_morning_end": {
+        "name": "Yo",
+        "text": "*Terminaron las clases de la mañana. No puedo respirar.*"
+    }
 }

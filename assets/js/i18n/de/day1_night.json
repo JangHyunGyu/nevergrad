@@ -1,126 +1,103 @@
 {
     "day1_night_start": {
         "name": "Ich",
-        "text": "*Zu Hause. Ich stelle meine Tasche ab und ziehe die Uniform aus.*"
+        "text": "*Zu Hause angekommen. Ich koche mir Instantnudeln und lasse den Tag Revue passieren.*"
     },
-    "day1_night_2": {
+    "day1_night_home_2": {
         "name": "Ich",
-        "text": "*...Heute fühlte sich wirklich lang an. Müde, aber auf eine nicht unangenehme Art.*"
+        "text": "*Sea, Frau Eunsu, Frau Riin, Yuna...*"
     },
-    "day1_night_3": {
+    "day1_night_home_3": {
         "name": "Ich",
-        "text": "*Ich mache mir Ramen und lasse den Tag noch einmal Revue passieren.*"
-    },
-    "day1_night_4": {
-        "name": "Ich",
-        "text": "*Neue Schule. Neues Klassenzimmer. Neue Menschen. Alle waren freundlicher als erwartet. Irgendwie scheint diese Schule nur gute Menschen zu haben.*"
-    },
-    "day1_night_recall_sea": {
-        "name": "Ich",
-        "text": "*Sea... Klassensprecherin und sie hat sich von der ersten Minute an um mich gekümmert. Herumführen, die Schokoladenmilch, eine Lunchbox. Sie hat sich wirklich viele Gedanken gemacht.*"
-    },
-    "day1_night_recall_eunsu": {
-        "name": "Ich",
-        "text": "*Eunsu-Sensei war auch warmherzig. Ich erinnere mich, dass sie sagte, neue Schüler seien 'sehr selten.' Sie scheint sich gut um uns zu kümmern.*"
-    },
-    "day1_night_recall_riin": {
-        "name": "Ich",
-        "text": "*Die Schulkrankenschwester Riin-Sensei war angenehm. Fühlte sich an wie eine ältere Schwester.*"
-    },
-    "day1_night_recall_yuna": {
-        "name": "Ich",
-        "text": "*Yuna aus der Bibliothek... Jüngere aus der Foto-AG. Schüchtern, aber ihre Augen leuchteten auf, sobald sie über Katzen sprach. Süß.*"
-    },
-    "day1_night_5": {
-        "name": "Ich",
-        "text": "*Ich lege mich aufs Bett und starre an die Decke. ...Ich glaube, ich kann mich anpassen. An diese Schule.*"
+        "text": "*Alles gute Leute.*"
     },
 
-    "day1_night_phone": {
+    "day1_night_phone_1": {
         "name": "Ich",
-        "text": "*Ich checke mein Handy.*"
+        "text": "*Ich schaue aufs Handy.*"
     },
     "day1_night_phone_2": {
         "name": "Ich",
-        "text": "*Der Gruppenchat von meiner alten Schule. Die Nachricht 'Ich hab gewechselt, tschüss alle~', die ich heute Morgen geschickt habe. ...Niemand hat sie gelesen. 0 Lesebestätigungen.*"
+        "text": "*Der Gruppenchat meiner alten Schule. Die Nachricht, die ich heute Morgen geschickt habe -- 'Bin an die neue Schule gewechselt, macht's gut~'*"
     },
     "day1_night_phone_3": {
         "name": "Ich",
-        "text": "*Naja, sie könnten noch im Unterricht gewesen sein. Alle sind wahrscheinlich beschäftigt.*"
+        "text": "*...Niemand hat sie gelesen. Gelesen von 0.*"
     },
     "day1_night_phone_4": {
         "name": "Ich",
-        "text": "*Ich hab auch meinem guten Freund Minsu eine Direktnachricht geschickt — auch keine Antwort. Normalerweise antwortet er schnell. ...Kommt morgen.*"
+        "text": "*Ich habe auch meinem engen Freund Minsu eine Nachricht geschickt. 'Ey Minsu, bin an der neuen Schule! Die ist riesig hier' -- immer noch keine Antwort.*"
     },
     "day1_night_phone_5": {
         "name": "Ich",
-        "text": "*Dafür hat Sea mir eine Nachricht geschickt.*"
+        "text": "*...Naja, morgen kommt bestimmt eine Antwort.*"
     },
+
     "day1_night_phone_6": {
         "name": "Ich",
-        "text": "*Sea: 'Heute hat's Spaß gemacht!' / Sea: 'Was soll morgen in die Lunchbox?' / Sea: 'Nimm Wünsche entgegen lol'*"
+        "text": "*Dafuer habe ich Nachrichten von Sea.*"
     },
-    "day1_night_phone_7": {
+    "day1_night_sea_1": {
+        "name": "Han Sea",
+        "text": "Heute war lustig!"
+    },
+    "day1_night_sea_2": {
+        "name": "Han Sea",
+        "text": "Was willst du morgen in der Lunchbox haben?"
+    },
+    "day1_night_sea_3": {
+        "name": "Han Sea",
+        "text": "Wuensche werden angenommen haha"
+    },
+    "day1_night_sea_4": {
         "name": "Ich",
-        "text": "*...Sie fragt schon am ersten Tag nach dem morgigen Lunchmenü. Sie kümmert sich wirklich um Menschen.*"
+        "text": "*...Am ersten Tag schon nach dem Lunchbox-Menue fuer morgen fragen.*"
     },
+
     "day1_night_sea_reply": {
         "name": "Ich",
         "text": "*Was soll ich antworten?*",
         "choices": [
-            "'Hmm~ wie wär's mit Hähnchenbraten?' (konkret antworten)",
-            "'Mir ist alles recht lol' (locker antworten)",
+            "'Hmm~ wie waer's mit Haehnchenkatsu?' (konkrete Antwort)",
+            "'Ich ess alles haha' (lockere Antwort)",
             "(Nicht antworten)"
         ]
     },
     "day1_night_sea_reply_1": {
-        "name": "Ich",
-        "text": "*Sea: 'Oh, toll! Freu mich auf morgen ♡'*"
+        "name": "Han Sea",
+        "text": "Oh super! Freu dich auf morgen <3"
     },
     "day1_night_sea_reply_2": {
-        "name": "Ich",
-        "text": "*Sea: 'lol okay~ lass dich morgen überraschen!'*"
+        "name": "Han Sea",
+        "text": "Haha okay~ lass dich morgen ueberraschen!"
     },
     "day1_night_sea_reply_3": {
         "name": "Ich",
-        "text": "*...Morgen antworten. Ich bin müde.*"
+        "text": "*...Ich antworte morgen. Bin muede.*"
     },
 
-    "day1_night_recall_seolhwa": {
+    "day1_night_sleep_1": {
         "name": "Ich",
-        "text": "*...Warte. Das Mädchen hinter mir. Wie war noch ihr Name?*"
-    },
-    "day1_night_recall_seolhwa_yes": {
-        "name": "Ich",
-        "text": "*Lee Seolhwa. Stimmt. Der Junge neben mir hat es mir gesagt.*"
-    },
-    "day1_night_recall_seolhwa_yes_2": {
-        "name": "Ich",
-        "text": "*Sie sagten, alle vergessen, dass sie überhaupt da ist, weil sie so wenig Präsenz hat... aber ich bin ziemlich sicher, dass wir Augenkontakt hatten. ...Ich sollte morgen wieder versuchen, mit ihr zu reden. Wir sind in derselben Klasse — zumindest ein richtiges Hallo.*"
-    },
-    "day1_night_recall_seolhwa_no": {
-        "name": "Ich",
-        "text": "*Sie sagten, alle vergessen, dass sie da ist... aber ich bin ziemlich sicher, dass wir Augenkontakt hatten.*"
-    },
-
-    "day1_night_sleep": {
-        "name": "Ich",
-        "text": "*Ich putze die Zähne und gehe ins Bett.*"
+        "text": "*Ich liege im Bett und starre an die Decke.*"
     },
     "day1_night_sleep_2": {
         "name": "Ich",
-        "text": "*Ich ziehe die Decke hoch. Ich frage mich, wie morgen wird.*"
+        "text": "*...Ich glaube, ich kann mich hier einleben. An dieser Schule.*"
     },
     "day1_night_sleep_3": {
         "name": "Ich",
-        "text": "*...Kurz bevor ich einschlafe, scheint draußen vor dem Fenster etwas aufzublitzen. ...Was war das? Eine Straßenlaterne?*"
+        "text": "*Ich schliesse die Augen. Bin muede.*"
     },
     "day1_night_sleep_4": {
         "name": "Ich",
-        "text": "*Meine Augen schließen sich. ...Wahrscheinlich nur ein Traum.*"
+        "text": "*...Kurz bevor ich einschlafe, ueberkommt mich ein seltsames Gefuehl. Dieser Fleck an der Decke -- die Form kommt mir irgendwie bekannt vor.*"
+    },
+    "day1_night_sleep_5": {
+        "name": "Ich",
+        "text": "*...Wohnungsdecken sehen wohl alle gleich aus. Ich schloss die Augen.*"
     },
     "day1_night_end": {
         "name": "",
-        "text": "*— Ende von Tag 1 —*"
+        "text": "*-- Ende von Tag 1 --*"
     }
 }

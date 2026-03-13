@@ -1,12 +1,12 @@
 /**
  * ============================================================================
- * Day 2-2: Lunch - 다가오는 여자들, 이상한 장면 하나
+ * Day 2-2: Lunch - 점심시간의 네 갈래
  * ============================================================================
  * 4 route choices: 세아/유나/리인/옥상
- * - 세아: "너는 내 거야" 핀, 손등 잡기
- * - 유나: 수상한 사진 (dark photos), "꼭 오세요"
- * - 리인: 건강검진, 과도한 질문 (수면패턴, 진정제 알레르기)
- * - 옥상: 은수의 통화 목격 ("예정대로 진행해도...")
+ * - 세아: 도시락 (치킨가스, 꽃당근, 미니김밥), 주말 약속, 이어폰 공유
+ * - 유나: 도서관 사진, 고양이 도토리, "이 학교에 전에 온 적 있어요?" 복선
+ * - 리인: 건강검진, 꿈 질문, 카모마일 차, "사람이 너무 좋으면 불안" 고백
+ * - 옥상: 은수 통화 목격 ("결재 올렸습니다... 5일 안으로")
  * ============================================================================
  */
 
@@ -15,6 +15,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
 
 Object.assign(SCENARIO[2], {
 
+    // ===== 점심 시작 & 선택지 =====
     "day2_lunch_start": {
         background: "classroom",
         character: null,
@@ -23,23 +24,24 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_choice": {
         choices: [
             { next: "day2_lunch_sea_1" },
-            { next: "day2_lunch_yuna_1", condition: "met_yuna" },
-            { next: "day2_lunch_riin_1", condition: "met_riin" },
+            { next: "day2_lunch_yuna_1" },
+            { next: "day2_lunch_riin_1" },
             { next: "day2_lunch_rooftop_1" }
         ]
     },
 
-    // ===== 세아 — "너는 내 거야" 핀 =====
+    // ===== Route A: 세아 — 도시락 (sea_1 ~ sea_25) =====
     "day2_lunch_sea_1": {
+        background: "classroom",
         character: "sea_smile",
-        next: "day2_lunch_sea_2",
-        stats: { sea: { affinity: 5 } }
+        next: "day2_lunch_sea_2"
     },
     "day2_lunch_sea_2": {
         next: "day2_lunch_sea_3"
     },
     "day2_lunch_sea_3": {
-        next: "day2_lunch_sea_4"
+        next: "day2_lunch_sea_4",
+        stats: { sea: { affinity: 3 } }
     },
     "day2_lunch_sea_4": {
         next: "day2_lunch_sea_5"
@@ -48,12 +50,14 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_sea_6"
     },
     "day2_lunch_sea_6": {
+        character: "sea_normal",
         next: "day2_lunch_sea_7"
     },
     "day2_lunch_sea_7": {
         next: "day2_lunch_sea_8"
     },
     "day2_lunch_sea_8": {
+        character: "sea_smile",
         next: "day2_lunch_sea_9"
     },
     "day2_lunch_sea_9": {
@@ -63,41 +67,59 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_sea_11"
     },
     "day2_lunch_sea_11": {
-        next: "day2_lunch_sea_12"
+        next: "day2_lunch_sea_12",
+        stats: { sea: { affinity: 3 } }
     },
     "day2_lunch_sea_12": {
         next: "day2_lunch_sea_13"
     },
     "day2_lunch_sea_13": {
-        character: "sea_shy",
         next: "day2_lunch_sea_14"
     },
     "day2_lunch_sea_14": {
+        character: "sea_normal",
         next: "day2_lunch_sea_15"
     },
     "day2_lunch_sea_15": {
         next: "day2_lunch_sea_16"
     },
     "day2_lunch_sea_16": {
-        next: "day2_lunch_sea_17",
-        stats: { sea: { danger: 5 } }
+        next: "day2_lunch_sea_17"
     },
     "day2_lunch_sea_17": {
+        character: "sea_smile",
         next: "day2_lunch_sea_18"
     },
     "day2_lunch_sea_18": {
-        character: "sea_smile",
         next: "day2_lunch_sea_19"
     },
     "day2_lunch_sea_19": {
+        next: "day2_lunch_sea_20"
+    },
+    "day2_lunch_sea_20": {
+        next: "day2_lunch_sea_21"
+    },
+    "day2_lunch_sea_21": {
+        next: "day2_lunch_sea_22"
+    },
+    "day2_lunch_sea_22": {
+        next: "day2_lunch_sea_23"
+    },
+    "day2_lunch_sea_23": {
+        next: "day2_lunch_sea_24"
+    },
+    "day2_lunch_sea_24": {
+        next: "day2_lunch_sea_25"
+    },
+    "day2_lunch_sea_25": {
         character: null,
         next: "day2_lunch_end"
     },
 
-    // ===== 유나 — 수상한 사진 =====
+    // ===== Route B: 유나 — 도서관 (yuna_1 ~ yuna_24) =====
     "day2_lunch_yuna_1": {
         background: "library",
-        character: "yuna_smile",
+        character: "yuna_shy",
         next: "day2_lunch_yuna_2"
     },
     "day2_lunch_yuna_2": {
@@ -114,6 +136,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_yuna_6"
     },
     "day2_lunch_yuna_6": {
+        character: "yuna_normal",
         next: "day2_lunch_yuna_7"
     },
     "day2_lunch_yuna_7": {
@@ -123,7 +146,6 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_yuna_9"
     },
     "day2_lunch_yuna_9": {
-        character: "yuna_scared",
         next: "day2_lunch_yuna_10"
     },
     "day2_lunch_yuna_10": {
@@ -133,50 +155,80 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_yuna_12"
     },
     "day2_lunch_yuna_12": {
-        character: "yuna_smile",
-        next: "day2_lunch_yuna_13",
-        stats: { yuna: { trust: 3 } }
+        next: "day2_lunch_yuna_13"
     },
     "day2_lunch_yuna_13": {
         next: "day2_lunch_yuna_14"
     },
     "day2_lunch_yuna_14": {
+        character: "yuna_shy",
+        next: "day2_lunch_yuna_15"
+    },
+    "day2_lunch_yuna_15": {
+        next: "day2_lunch_yuna_16"
+    },
+    "day2_lunch_yuna_16": {
+        next: "day2_lunch_yuna_17"
+    },
+    "day2_lunch_yuna_17": {
+        next: "day2_lunch_yuna_18"
+    },
+    "day2_lunch_yuna_18": {
+        next: "day2_lunch_yuna_19"
+    },
+    "day2_lunch_yuna_19": {
+        character: "yuna_normal",
+        next: "day2_lunch_yuna_20"
+    },
+    "day2_lunch_yuna_20": {
+        next: "day2_lunch_yuna_21",
+        stats: { yuna: { trust: 3 } }
+    },
+    "day2_lunch_yuna_21": {
+        next: "day2_lunch_yuna_22"
+    },
+    "day2_lunch_yuna_22": {
+        next: "day2_lunch_yuna_23"
+    },
+    "day2_lunch_yuna_23": {
+        next: "day2_lunch_yuna_24"
+    },
+    "day2_lunch_yuna_24": {
         character: null,
         next: "day2_lunch_end"
     },
 
-    // ===== 리인 — 건강검진 명목의 접근 =====
+    // ===== Route C: 리인 — 건강검진 (riin_1 ~ riin_29) =====
     "day2_lunch_riin_1": {
         background: "nurse_office",
-        character: "riin_smile",
+        character: "riin_gentle",
         next: "day2_lunch_riin_2"
     },
     "day2_lunch_riin_2": {
         next: "day2_lunch_riin_3"
     },
     "day2_lunch_riin_3": {
-        next: "day2_lunch_riin_4"
-    },
-    "day2_lunch_riin_4": {
-        next: "day2_lunch_riin_5",
+        next: "day2_lunch_riin_4",
         stats: { riin: { affinity: 3 } }
     },
+    "day2_lunch_riin_4": {
+        next: "day2_lunch_riin_5"
+    },
     "day2_lunch_riin_5": {
+        character: "riin_normal",
         next: "day2_lunch_riin_6"
     },
     "day2_lunch_riin_6": {
         next: "day2_lunch_riin_7"
     },
     "day2_lunch_riin_7": {
-        character: "riin_seductive",
         next: "day2_lunch_riin_8"
     },
     "day2_lunch_riin_8": {
         next: "day2_lunch_riin_9"
     },
     "day2_lunch_riin_9": {
-        next: "day2_lunch_riin_10",
-        stats: { riin: { danger: 8 } }
+        next: "day2_lunch_riin_10"
     },
     "day2_lunch_riin_10": {
         next: "day2_lunch_riin_11"
@@ -185,54 +237,103 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_riin_12"
     },
     "day2_lunch_riin_12": {
-        character: "riin_smile",
         next: "day2_lunch_riin_13"
     },
     "day2_lunch_riin_13": {
         next: "day2_lunch_riin_14"
     },
     "day2_lunch_riin_14": {
+        next: "day2_lunch_riin_15"
+    },
+    "day2_lunch_riin_15": {
+        next: "day2_lunch_riin_16"
+    },
+    "day2_lunch_riin_16": {
+        character: "riin_gentle",
+        next: "day2_lunch_riin_17"
+    },
+    "day2_lunch_riin_17": {
+        next: "day2_lunch_riin_18"
+    },
+    "day2_lunch_riin_18": {
+        next: "day2_lunch_riin_19"
+    },
+    "day2_lunch_riin_19": {
+        next: "day2_lunch_riin_20"
+    },
+    "day2_lunch_riin_20": {
+        next: "day2_lunch_riin_21"
+    },
+    "day2_lunch_riin_21": {
+        next: "day2_lunch_riin_22"
+    },
+    "day2_lunch_riin_22": {
+        next: "day2_lunch_riin_23"
+    },
+    "day2_lunch_riin_23": {
+        next: "day2_lunch_riin_24"
+    },
+    "day2_lunch_riin_24": {
+        character: "riin_normal",
+        next: "day2_lunch_riin_25"
+    },
+    "day2_lunch_riin_25": {
+        next: "day2_lunch_riin_26"
+    },
+    "day2_lunch_riin_26": {
+        next: "day2_lunch_riin_27"
+    },
+    "day2_lunch_riin_27": {
+        next: "day2_lunch_riin_28"
+    },
+    "day2_lunch_riin_28": {
+        character: "riin_gentle",
+        next: "day2_lunch_riin_29"
+    },
+    "day2_lunch_riin_29": {
         character: null,
         next: "day2_lunch_end"
     },
 
-    // ===== 옥상 — 은수의 통화 목격 =====
+    // ===== Route D: 옥상 — 은수의 통화 목격 (rooftop_1 ~ rooftop_11) =====
     "day2_lunch_rooftop_1": {
-        background: "rooftop",
+        background: "stairway",
         character: null,
         next: "day2_lunch_rooftop_2"
     },
     "day2_lunch_rooftop_2": {
-        next: "day2_lunch_rooftop_3"
-    },
-    "day2_lunch_rooftop_3": {
         character: "eunsu_normal",
-        next: "day2_lunch_rooftop_4",
+        next: "day2_lunch_rooftop_3",
         stats: { eunsu: { danger: 5 } }
     },
+    "day2_lunch_rooftop_3": {
+        next: "day2_lunch_rooftop_4"
+    },
     "day2_lunch_rooftop_4": {
+        character: "eunsu_warm",
         next: "day2_lunch_rooftop_5"
     },
     "day2_lunch_rooftop_5": {
-        character: null,
         next: "day2_lunch_rooftop_6"
     },
     "day2_lunch_rooftop_6": {
-        character: "eunsu_smile",
         next: "day2_lunch_rooftop_7"
     },
     "day2_lunch_rooftop_7": {
+        character: null,
         next: "day2_lunch_rooftop_8"
     },
     "day2_lunch_rooftop_8": {
-        character: null,
+        background: "rooftop",
         next: "day2_lunch_rooftop_9"
     },
     "day2_lunch_rooftop_9": {
-        background: "rooftop",
         next: "day2_lunch_rooftop_10"
     },
     "day2_lunch_rooftop_10": {
+        next: "day2_lunch_rooftop_11"
+    },
+    "day2_lunch_rooftop_11": {
         next: "day2_lunch_end"
     },
 

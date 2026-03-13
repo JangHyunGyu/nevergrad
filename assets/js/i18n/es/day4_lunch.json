@@ -1,275 +1,511 @@
 {
-  "day4_lunch_start": {
-    "name": "Yo",
-    "text": "*Sonó el timbre del almuerzo.*"
-  },
-  "day4_lunch_start_2": {
-    "name": "Yo",
-    "text": "*...No tengo apetito. El estómago se ha encogido.*"
-  },
-  "day4_lunch_start_3": {
-    "name": "Yo",
-    "text": "*La hora del almuerzo. Tengo que moverme.*"
-  },
-  "day4_lunch_start_4": {
-    "name": "Yo",
-    "text": "*Yuna. La nota. 'Hay algo que debo contarte.'*"
-  },
-  "day4_lunch_start_5": {
-    "name": "Yo",
-    "text": "*Fui al pasillo del fondo de la tercera planta. Yuna estaba esperando.*"
-  },
-  "day4_lunch_choice": {
-    "name": "Yo",
-    "text": "*Solo tengo el descanso del almuerzo. Tengo que moverme rápido.*",
-    "choices": [
-      "Buscar a Yuna",
-      "Investigar la enfermería",
-      "Ir a la azotea"
-    ]
-  },
-  "day4_lunch_search_yuna": {
-    "name": "Yo",
-    "text": "*La sala del club de fotografía está al fondo del segundo piso del edificio viejo. El pasillo está vacío durante el almuerzo.*"
-  },
-  "day4_lunch_search_2": {
-    "name": "Yo",
-    "text": "*...No, no es que esté 'vacío'. Estoy evitando a la gente. No puedo dejar que Sea o la profesora Eunsu me vean.*"
-  },
-  "day4_lunch_search_3": {
-    "name": "Yo",
-    "text": "*Amortiguando los pasos, caminé. El corazón me late con fuerza. No hay nada de inusual en esto... entonces ¿por qué estoy tan tenso?*"
-  },
-  "day4_lunch_search_4": {
-    "name": "Yo",
-    "text": "*...Porque sí hay algo de inusual.*"
-  },
-  "day4_lunch_search_5": {
-    "name": "Yo",
-    "text": "*Llegué a la puerta de la sala del club de fotografía. Está cerrada. Giré el pomo. ...Abre.*"
-  },
-  "day4_lunch_search_6": {
-    "name": "Yo",
-    "text": "*Entré. Un leve olor a cuarto oscuro. El olor agrio del revelador y el fijador.*"
-  },
-  "day4_lunch_search_7": {
-    "name": "Yo",
-    "text": "*Yuna me tiende algo. Una tarjeta de memoria.*"
-  },
-  "day4_lunch_search_8": {
-    "name": "Choi Yuna",
-    "text": "\"Senpai. Esto... es de Seolhwa-senpai.\""
-  },
-  "day4_lunch_search_9": {
-    "name": "Yo",
-    "text": "\"¿De Seolhwa? ¿Cómo la conseguiste?\""
-  },
-  "day4_lunch_search_10": {
-    "name": "Choi Yuna",
-    "text": "\"La encontré. En el sótano. Cuando fui a buscar evidencias.\""
-  },
-  "day4_lunch_search_11": {
-    "name": "Yo",
-    "text": "\"¿El sótano? ¿Fuiste ahí sola?\""
-  },
-  "day4_lunch_search_12": {
-    "name": "Choi Yuna",
-    "text": "\"Sí. Tenía miedo pero... quería saber la verdad.\""
-  },
-  "day4_lunch_search_13": {
-    "name": "Yo",
-    "text": "*Yuna abraza la cámara con fuerza. Tiene las manos temblando.*"
-  },
-  "day4_lunch_search_14": {
-    "name": "Choi Yuna",
-    "text": "\"Senpai. En esta tarjeta de memoria... creo que hay registros de lo que le hicieron a Seolhwa-senpai.\""
-  },
-  "day4_lunch_search_15": {
-    "name": "Yo",
-    "text": "*Me quedo sin habla.*"
-  },
-  "day4_lunch_search_16": {
-    "name": "Choi Yuna",
-    "text": "\"No tuve el valor de mirarlo. Senpai... ¿puedes hacerlo tú?\""
-  },
-  "day4_lunch_search_17": {
-    "name": "Yo",
-    "text": "*Tomo la tarjeta de memoria. Está fría.*"
-  },
-  "day4_lunch_nurse": {
-    "name": "Yo",
-    "text": "*Me quedé fuera de la enfermería. Desde dentro escucho el tintineo del cristal. El sonido de organizar botellas de medicamentos.*"
-  },
-  "day4_lunch_nurse_2": {
-    "name": "Yo",
-    "text": "*...Respiración profunda. Está bien. Entro como siempre.*"
-  },
-  "day4_lunch_nurse_3": {
-    "name": "Yo",
-    "text": "*Abrí la puerta.*"
-  },
-  "day4_lunch_nurse_4": {
-    "name": "Yo",
-    "text": "*La enfermera Riin está de pie frente al armario de medicamentos. De espaldas. Está pasando algo a una jeringa.*"
-  },
-  "day4_lunch_nurse_5": {
-    "name": "Yo",
-    "text": "*La enfermería. Riin está de espaldas, preparando algo.*"
-  },
-  "day4_lunch_nurse_6": {
-    "name": "Yo",
-    "text": "*...No lo sabe. Que estoy aquí.*"
-  },
-  "day4_lunch_nurse_7": {
-    "name": "Riin",
-    "text": "*Hay papeles sobre la mesa. Registros. Nombres.*"
-  },
-  "day4_lunch_nurse_8": {
-    "name": "Yo",
-    "text": "*Un nombre familiar. Lee Seolhwa.*"
-  },
-  "day4_lunch_nurse_9": {
-    "name": "Riin",
-    "text": "*Junto a él... fechas. Dosis. 'Tratamiento completado'.*"
-  },
-  "day4_lunch_nurse_10": {
-    "name": "Yo",
-    "text": "*Las manos me tiemblan. Esto es...*"
-  },
-  "day4_lunch_nurse_11": {
-    "name": "Yo",
-    "text": "*Riin se da la vuelta.*"
-  },
-  "day4_lunch_nurse_timer": {
-    "name": "Riin",
-    "text": "*¿Qué hago?*",
-    "choices": [
-      "Esconderme",
-      "Hacer como si nada"
-    ]
-  },
-  "day4_lunch_nurse_ask": {
-    "name": "Yo",
-    "text": "*Me acerco. Finjo naturalidad.*"
-  },
-  "day4_lunch_nurse_ask_2": {
-    "name": "Kang Riin",
-    "text": "\"Vaya, ¿hoy también viniste? Siéntate.\""
-  },
-  "day4_lunch_nurse_ask_3": {
-    "name": "Riin",
-    "text": "\"Sí. Quería pasar.\""
-  },
-  "day4_lunch_nurse_ask_4": {
-    "name": "Kang Riin",
-    "text": "\"¿Estás bien? Hoy pareces tensa.\""
-  },
-  "day4_lunch_nurse_ask_5": {
-    "name": "Riin",
-    "text": "\"Estoy bien. Solo un poco cansada.\""
-  },
-  "day4_lunch_nurse_ask_6": {
-    "name": "Kang Riin",
-    "text": "\"Ya veo. Toma, te preparo el té.\""
-  },
-  "day4_lunch_nurse_ask_7": {
-    "name": "Riin",
-    "text": "*Riin pone el agua a hervir. Yo sigo pensando en aquellos documentos.*"
-  },
-  "day4_lunch_nurse_ask_8": {
-    "name": "Yo",
-    "text": "*Lee Seolhwa. Tratamiento completado. Esas palabras.*"
-  },
-  "day4_lunch_nurse_ask_9": {
-    "name": "Kang Riin",
-    "text": "\"...¿{name}? ¿En qué estás pensando?\""
-  },
-  "day4_lunch_nurse_ask_10": {
-    "name": "Yo",
-    "text": "\"Nada. Perdona.\""
-  },
-  "day4_lunch_nurse_silent": {
-    "name": "Yo",
-    "text": "*Me escondo detrás de la estantería. Riin pasa cerca.*"
-  },
-  "day4_lunch_nurse_silent_2": {
-    "name": "Riin",
-    "text": "*...No me ve. Sale de la enfermería.*"
-  },
-  "day4_lunch_nurse_silent_3": {
-    "name": "Yo",
-    "text": "*Cuando se va, vuelvo a mirar los documentos.*"
-  },
-  "day4_lunch_nurse_silent_4": {
-    "name": "Yo",
-    "text": "*Lee Seolhwa. Día 1 al Día 5. 'Tratamiento completado'.*"
-  },
-  "day4_lunch_nurse_silent_5": {
-    "name": "Riin",
-    "text": "*Debajo... otros nombres. Nombres que no reconozco.*"
-  },
-  "day4_lunch_nurse_silent_6": {
-    "name": "Yo",
-    "text": "*Cuántas personas. Cuántos...*"
-  },
-  "day4_lunch_rooftop": {
-    "name": "Yo",
-    "text": "*Empujé la puerta de la azotea. ...Abre. Ayer estaba cerrada con llave.*"
-  },
-  "day4_lunch_rooftop_2": {
-    "name": "Yo",
-    "text": "*El viento sopla con fuerza. El pelo sale volando. El cielo es un gris apagado.*"
-  },
-  "day4_lunch_rooftop_3": {
-    "name": "Yo",
-    "text": "*No hay nadie en la azotea. Ni siquiera a la hora del almuerzo. ...¿Normalmente no solían subir estudiantes aquí?*"
-  },
-  "day4_lunch_rooftop_4": {
-    "name": "Yo",
-    "text": "*Caminé hacia la barandilla. Debajo se ve el campo de la escuela. Los estudiantes comen el almuerzo. Sonriendo. Todos con la misma sonrisa.*"
-  },
-  "day4_lunch_rooftop_5": {
-    "name": "Yo",
-    "text": "*...Mirando desde abajo, ¿podrían verme? Si agitara la mano aquí arriba, ¿alguien me vería de verdad?*"
-  },
-  "day4_lunch_rooftop_6": {
-    "name": "Yo",
-    "text": "*La azotea. Saco el teléfono. Miro los archivos de la tarjeta de memoria.*"
-  },
-  "day4_lunch_rooftop_7": {
-    "name": "Yo",
-    "text": "*Fotos. Documentos. Archivos de video.*"
-  },
-  "day4_lunch_rooftop_8": {
-    "name": "Yo",
-    "text": "*Abro uno. Un pasillo oscuro. Una habitación. Esa silla.*"
-  },
-  "day4_lunch_rooftop_9": {
-    "name": "Yo",
-    "text": "*Y en ella... Seolhwa.*"
-  },
-  "day4_lunch_rooftop_10": {
-    "name": "Yo",
-    "text": "*Con las muñecas sujetas. La cabeza gacha. No se mueve.*"
-  },
-  "day4_lunch_rooftop_11": {
-    "name": "Yo",
-    "text": "*Alguien le pone una inyección. La cámara tiembla.*"
-  },
-  "day4_lunch_rooftop_12": {
-    "name": "Lee Seolhwa",
-    "text": "\"...Recuérdame. Por favor.\""
-  },
-  "day4_lunch_rooftop_13": {
-    "name": "Yo",
-    "text": "*El vídeo se corta.*"
-  },
-  "day4_lunch_ghost": {
-    "name": "",
-    "text": "**\"Sótano\"**"
-  },
-  "day4_lunch_end": {
-    "name": "Yo",
-    "text": "*Empiezan las clases de la tarde. El corazón parece a punto de estallar.*"
-  }
+    "day4_lunch_start": {
+        "name": "Yo",
+        "text": "*Es la hora del almuerzo. Tengo que decidir adónde ir.*"
+    },
+    "day4_lunch_choice": {
+        "name": "Yo",
+        "text": "*Solo tengo el almuerzo. Debo moverme rápido.*",
+        "choices": [
+            "Buscar a Yuna",
+            "Investigar la enfermería",
+            "Ir a la azotea"
+        ]
+    },
+
+    "day4_lunch_yuna_1": {
+        "name": "Yo",
+        "text": "*El aula del club de fotografía. La puerta está cerrada con llave. Hasta ayer estaba abierta.*"
+    },
+    "day4_lunch_yuna_2": {
+        "name": "Yo",
+        "text": "*Miré alrededor. Nadie en el pasillo. Una ventana no está bien cerrada. Me colé por ella.*"
+    },
+    "day4_lunch_yuna_3": {
+        "name": "Yo",
+        "text": "*El casillero de Yuna. Completamente vacío. **Demasiado** limpio.*"
+    },
+    "day4_lunch_yuna_4": {
+        "name": "Yo",
+        "text": "*Los otros casilleros tienen polvo acumulado. Solo el de Yuna parece haber sido limpiado. Alguien lo vació.*"
+    },
+    "day4_lunch_yuna_5": {
+        "name": "Yo",
+        "text": "*La tabla del fondo del casillero está ligeramente levantada. Un doble fondo. La cámara de Yuna está escondida dentro.*"
+    },
+    "day4_lunch_yuna_6": {
+        "name": "Yo",
+        "text": "*Saqué la cámara. Casi sin batería. La encendí.*"
+    },
+    "day4_lunch_yuna_7": {
+        "name": "Yo",
+        "text": "*Galería de fotos. Más de 200 imágenes. La mayoría son paisajes de la escuela. Parecen normales, pero... las mismas personas aparecen en cada rincón. Personas de traje. No son padres. Evidencia que Yuna recopiló durante tres años.*"
+    },
+    "day4_lunch_yuna_8": {
+        "name": "Yo",
+        "text": "*La última foto: escaleras que bajan al subterráneo. En la esquina, texto escrito a mano: **'Aquí abajo -- Yu'***"
+    },
+    "day4_lunch_yuna_9": {
+        "name": "Yo",
+        "text": "*La fecha es de anoche. Yuna tomó esta foto justo antes de desaparecer.*"
+    },
+    "day4_lunch_yuna_10": {
+        "name": "Yo",
+        "text": "*Al final del pasillo del edificio viejo. 'Solo personal autorizado.' Una puerta oxidada. La cerradura está rota.*"
+    },
+    "day4_lunch_yuna_11": {
+        "name": "Yo",
+        "text": "*Fue forzada desde adentro. Yuna entró por aquí.*"
+    },
+    "day4_lunch_yuna_12": {
+        "name": "Yo",
+        "text": "*Bajo las escaleras.*"
+    },
+    "day4_lunch_yuna_13": {
+        "name": "Yo",
+        "text": "*Primer tramo de escaleras. Sin luz. Encendí la linterna del teléfono.*"
+    },
+    "day4_lunch_yuna_14": {
+        "name": "Yo",
+        "text": "*Olor a humedad. Concreto y moho. Y... olor a desinfectante. Como un hospital.*"
+    },
+    "day4_lunch_yuna_15": {
+        "name": "Yo",
+        "text": "*Segundo tramo. Tercero. El aire se vuelve más pesado. La humedad sube. Gotas de agua en las paredes.*"
+    },
+    "day4_lunch_yuna_16": {
+        "name": "Yo",
+        "text": "*Me detuve donde las escaleras giran. Luz fluorescente se filtra desde abajo. Alguien la dejó encendida.*"
+    },
+    "day4_lunch_yuna_17": {
+        "name": "Yo",
+        "text": "*Mi corazón late fuerte. Puedo volver. Ahora todavía puedo.*"
+    },
+    "day4_lunch_yuna_18": {
+        "name": "Yo",
+        "text": "*...¿Qué cambia si vuelvo? Yuna está aquí abajo. -- Bajo.*"
+    },
+    "day4_lunch_yuna_19": {
+        "name": "Yo",
+        "text": "*...Un sótano.*"
+    },
+    "day4_lunch_yuna_20": {
+        "name": "Yo",
+        "text": "***Es enorme. Del tamaño de dos aulas. Techo bajo. Las luces fluorescentes parpadean y zumban.***"
+    },
+    "day4_lunch_yuna_21": {
+        "name": "Yo",
+        "text": "***Camas. Varias. Camas médicas. Seis. Alineadas en fila. Correas de cuero en los reposabrazos. Marcas de arañazos en las correas. Señales de alguien forcejeando mientras estaba atado.***"
+    },
+    "day4_lunch_yuna_22": {
+        "name": "Yo",
+        "text": "***Equipo médico. Un monitor de ECG, un electroencefalógrafo. Están apagados, pero los LEDs de espera parpadean en rojo.***"
+    },
+    "day4_lunch_yuna_23": {
+        "name": "Yo",
+        "text": "***Un armario de medicamentos. La puerta de cristal está destrozada. Grietas radiales como si alguien la hubiera golpeado con el puño, fragmentos esparcidos por el suelo. -- Fue Yuna. Llegó hasta aquí antes de que la atraparan.*** *Ampollas y jeringas están alineadas ordenadamente. Etiquetas pegadas -- 'M-07', 'M-09', 'S-13'. ¿La última está en uso actualmente?*"
+    },
+    "day4_lunch_yuna_24": {
+        "name": "Yo",
+        "text": "*Hay un refrigerador junto al armario. Lo abrí. Bolsas de sangre en fila. Con nombres escritos. -- Todos nombres desconocidos. No, quizás sí los conozco. Podrían ser los nombres del #1 al #12.*"
+    },
+    "day4_lunch_yuna_25": {
+        "name": "Yo",
+        "text": "*Papeles esparcidos por el suelo. Un archivador volcado -- Yuna debió tirarlo al romper el armario de medicamentos. Recogí los papeles. Me tiemblan tanto las manos que no puedo leerlos en orden.*"
+    },
+    "day4_lunch_yuna_26": {
+        "name": "Yo",
+        "text": "*Un gráfico cuelga en la pared. 'Registros de respuesta de sujetos.' Más documentos caídos debajo del gráfico.*"
+    },
+    "day4_lunch_yuna_27": {
+        "name": "Yo",
+        "text": "*Leo. Números y fotos en lista.*"
+    },
+    "day4_lunch_yuna_28": {
+        "name": "Yo",
+        "text": "*#1 -- Foto: un **chico** de pelo negro corto. Nombre: Kim Dojin. Notas: 'Respuesta inicial favorable. Día 3 intento de escape. Recuperado inmediatamente.'*"
+    },
+    "day4_lunch_yuna_29": {
+        "name": "Yo",
+        "text": "*Miré fijamente el rostro de la foto. ...La forma de los labios. La distancia entre los ojos. La disposición de los rasgos --*"
+    },
+    "day4_lunch_yuna_30": {
+        "name": "Yo",
+        "text": "*#2 -- Lee Junseo. 'Sumiso. Día 5 procesamiento estándar.'*"
+    },
+    "day4_lunch_yuna_31": {
+        "name": "Yo",
+        "text": "*#3 -- Foto: un **chico** de pelo castaño. Nombre: Park Seojin. Notas: 'Día 4 descubrimiento del sótano. Intento de escape, asegurado en la puerta principal. Signos de resistencia a los fármacos.'*"
+    },
+    "day4_lunch_yuna_32": {
+        "name": "Yo",
+        "text": "*...Día 4 descubrimiento del sótano. Como yo. El tercero hizo lo mismo que estoy haciendo ahora.*"
+    },
+    "day4_lunch_yuna_33": {
+        "name": "Yo",
+        "text": "*#4 -- Jeong Hayul. #5 -- Kang Minhyuk. #6 -- Yoon Jaewon. Todos 'Día 5 procesamiento estándar.'*"
+    },
+    "day4_lunch_yuna_34": {
+        "name": "Yo",
+        "text": "*Cada vez que se repite 'procesamiento estándar', mis dedos tiemblan más.*"
+    },
+    "day4_lunch_yuna_35": {
+        "name": "Yo",
+        "text": "*#13 -- Mi nombre. Mi foto. La columna junto a la fecha: 'En progreso.'*"
+    },
+    "day4_lunch_yuna_36": {
+        "name": "Yo",
+        "text": "*Las piernas me fallan. Me apoyé contra la pared. Casi me deslicé hasta el suelo.*"
+    },
+    "day4_lunch_yuna_37": {
+        "name": "Yo",
+        "text": "*...Número 13. Soy el decimotercero. Viviendo en el mismo cuerpo por decimotercera vez. Cada vez con un nombre diferente. Cada vez los mismos cinco días.*"
+    },
+    "day4_lunch_yuna_38": {
+        "name": "Yo",
+        "text": "*Entonces -- un gemido desde el rincón.*"
+    },
+    "day4_lunch_yuna_39": {
+        "name": "Yo",
+        "text": "*Mi cuerpo se paralizó. Lentamente miré hacia el sonido.*"
+    },
+    "day4_lunch_yuna_40": {
+        "name": "Yo",
+        "text": "*La última cama. Una cortina la rodea. Más allá de la cortina, se ven los pies de alguien. Descalzos. Moretones en los tobillos.*"
+    },
+    "day4_lunch_yuna_41": {
+        "name": "Yuna",
+        "text": "\"...¿Senpai...?\""
+    },
+    "day4_lunch_yuna_42": {
+        "name": "Yo",
+        "text": "*Abrí la cortina.*"
+    },
+    "day4_lunch_yuna_43": {
+        "name": "Yo",
+        "text": "*Es Yuna. Está atada a la cama -- no, estaba atada. Una de las correas de cuero está parcialmente suelta. Señales de haber forcejeado para liberarse.*"
+    },
+    "day4_lunch_yuna_44": {
+        "name": "Yo",
+        "text": "*Su rostro está pálido. Los labios agrietados. Tres marcas de inyecciones en el brazo.*"
+    },
+    "day4_lunch_yuna_45": {
+        "name": "Yo",
+        "text": "*Sus ojos pierden el enfoque, luego me reconocen.*"
+    },
+    "day4_lunch_yuna_46": {
+        "name": "Yuna",
+        "text": "\"...Senpai... ¿viniste hasta aquí...?\""
+    },
+    "day4_lunch_yuna_47": {
+        "name": "Yo",
+        "text": "\"¡Yuna...! ¿Estás bien?\""
+    },
+    "day4_lunch_yuna_48": {
+        "name": "Yo",
+        "text": "*Desaté las correas de Yuna. Los nudos son firmes. Se me desgarraron las uñas al apenas lograr soltarlas. Las manos de Yuna están frías. -- Las mías también están frías.*"
+    },
+    "day4_lunch_yuna_49": {
+        "name": "Yuna",
+        "text": "\"...La cámara... ¿la encontraste...?\""
+    },
+    "day4_lunch_yuna_50": {
+        "name": "Yo",
+        "text": "\"La encontré. Está aquí.\""
+    },
+    "day4_lunch_yuna_51": {
+        "name": "Yo",
+        "text": "*El enfoque vuelve a los ojos de Yuna. Débilmente. Parece darse cuenta de que vi los registros. Jadeando, habla.*"
+    },
+    "day4_lunch_yuna_52": {
+        "name": "Yuna",
+        "text": "\"Senpai... el número siete... mira el registro del número siete...\""
+    },
+    "day4_lunch_yuna_53": {
+        "name": "Yo",
+        "text": "*El dedo de Yuna señala la pila de documentos esparcidos en el suelo. Su mano tiembla. Pero la dirección es segura.*"
+    },
+    "day4_lunch_yuna_54": {
+        "name": "Yo",
+        "text": "*Busqué entre los papeles. Lo encontré donde Yuna señaló.*"
+    },
+    "day4_lunch_yuna_55": {
+        "name": "Yo",
+        "text": "*#7 -- Foto: un chico de pelo largo. Nombre: Kim Taeho. ...Un rostro demacrado. Pómulos marcados. El ángulo de los pómulos. Las comisuras de los ojos. Pero el rostro es -- el mío.*"
+    },
+    "day4_lunch_yuna_56": {
+        "name": "Yo",
+        "text": "*La sección de notas del #7 es larga. 'Respuesta significativa de resistencia farmacológica. Contacto con estudiante del establecimiento Lee Seolhwa (F). Conspiración de escape. Resultado: Sujeto asegurado, Lee Seolhwa procesada permanentemente. Sujeto completamente borrado y reinsertado.'*"
+    },
+    "day4_lunch_yuna_57": {
+        "name": "Yuna",
+        "text": "\"...Lee Seolhwa... la chica que te habla en el pasillo... está aquí...\""
+    },
+    "day4_lunch_yuna_58": {
+        "name": "Yo",
+        "text": "*Yuna no puede terminar la frase. Le falta el aire. Son los fármacos.*"
+    },
+    "day4_lunch_yuna_59": {
+        "name": "Yo",
+        "text": "*Busco entre el resto de los documentos. Me tiemblan tanto las manos que los papeles caen al suelo. No los recojo.*"
+    },
+    "day4_lunch_yuna_60": {
+        "name": "Yo",
+        "text": "*#8 -- Choi Siwoo. #9 -- Han Jiho. 'Día 3 detección temprana.' ...Solo aguantó tres días.*"
+    },
+    "day4_lunch_yuna_61": {
+        "name": "Yo",
+        "text": "*#10 -- Song Yejun. #11 -- Oh Taehyun. #12 -- Lim Seoyul. Todos 'Día 5 procesamiento completo.'*"
+    },
+    "day4_lunch_yuna_62": {
+        "name": "Yo",
+        "text": "***Miro las fotos una por una. Diferentes colores de pelo. Diferentes nombres. Pero todos son chicos. Todos tienen -- la misma cara.***"
+    },
+    "day4_lunch_yuna_63": {
+        "name": "Yo",
+        "text": "***Igual que lo que Yuna me mostró. Trece chicos. Trece nombres diferentes, la misma cara. Mi cara.***"
+    },
+    "day4_lunch_yuna_64": {
+        "name": "Yo",
+        "text": "*Sigo buscando entre los documentos.*"
+    },
+    "day4_lunch_yuna_65": {
+        "name": "Yo",
+        "text": "***'Registro de ensayos repetidos del mismo sujeto -- Proyecto Nevergrad'***"
+    },
+    "day4_lunch_yuna_66": {
+        "name": "Yo",
+        "text": "***'Identificador único del sujeto: [CENSURADO]. Número de ensayos: 13. Historial de cambios de paquete de identidad: Ver Apéndice B'***"
+    },
+    "day4_lunch_yuna_67": {
+        "name": "Yo",
+        "text": "*'Paquete de identidad.' Llaman 'paquete' a intercambiar nombres y recuerdos. La vida entera de una persona... tratada como una pieza reemplazable.*"
+    },
+    "day4_lunch_yuna_68": {
+        "name": "Yuna",
+        "text": "\"...Por allá... también está... el diario de Eunsu...\""
+    },
+    "day4_lunch_yuna_69": {
+        "name": "Yo",
+        "text": "*Yuna señala desde donde está apoyada contra la cama. Otro montón de documentos. Letra pulcra. Oraciones ordenadas. Oraciones que describen a una persona como un objeto. -- El diario de observación de Eunsu.*"
+    },
+    "day4_lunch_yuna_70": {
+        "name": "Yo",
+        "text": "***'Notas del ensayo #7: Respuesta de resistencia farmacológica. Contacto externo con estudiante del establecimiento Lee Seolhwa (F, 17 años) confirmado. Conspiración para intentar escape. Resultado: Lee Seolhwa -- evaluada como incorregible, aislamiento permanente. Sujeto -- borrado total de memoria, reinsertado como #8'***"
+    },
+    "day4_lunch_yuna_71": {
+        "name": "Yo",
+        "text": "*...Lee Seolhwa. Una estudiante del establecimiento. Durante el séptimo ensayo... la persona que intentó escapar conmigo.*"
+    },
+    "day4_lunch_yuna_72": {
+        "name": "Yo",
+        "text": "***Y -- la persona que fue 'procesada permanentemente' mientras me borraban la memoria.***"
+    },
+    "day4_lunch_yuna_73": {
+        "name": "Yo",
+        "text": "*...'Procesada permanentemente.' En otra parte de los documentos dice 'eliminada.' El mismo significado.*"
+    },
+    "day4_lunch_yuna_74": {
+        "name": "Yo",
+        "text": "*...Seolhwa. La chica sentada en la última fila del aula. ¿Es la misma persona que la 'Lee Seolhwa' de estos registros?*"
+    },
+    "day4_lunch_yuna_75": {
+        "name": "Yo",
+        "text": "***'Observación post-ensayo #8: Se observa repetidamente al sujeto intentando conversar con el vacío. Exhibe mecanismo de defensa de dependencia hacia otro inexistente (referido como \"Lee Seolhwa\"). Se presume fenómeno de cohesión de memoria residual. Revisión de dosis de medicación requerida.'***"
+    },
+    "day4_lunch_yuna_76": {
+        "name": "Yo",
+        "text": "*...Eunsu escribió esto. La persona que me sonreía mientras me observaba. Escribió 'revisión de dosis de medicación requerida.'*"
+    },
+    "day4_lunch_yuna_77": {
+        "name": "Yo",
+        "text": "***'Ensayos #9-#12: El mismo fenómeno persiste. El sujeto percibe a \"Lee Seolhwa\" en cada ciclo, sin embargo dicho individuo ya fue eliminado al final del ensayo #7. Confirmado como alucinación.'***"
+    },
+    "day4_lunch_yuna_78": {
+        "name": "Yo",
+        "text": "***'Nota adicional: La dependencia del sujeto hacia la alucinación es alta; el borrado forzoso conlleva riesgo de colapso psicológico. La no intervención es racional en esta etapa. No es necesaria intervención mientras la alucinación contribuya a la estabilidad del sujeto.'***"
+    },
+    "day4_lunch_yuna_79": {
+        "name": "Yo",
+        "text": "*...No intervención. Sabían que veía alucinaciones de una persona muerta -- y lo dejaron estar porque 'contribuía a mi estabilidad.'*"
+    },
+    "day4_lunch_yuna_80": {
+        "name": "Yo",
+        "text": "*...Alucinación.*"
+    },
+    "day4_lunch_yuna_81": {
+        "name": "Yo",
+        "text": "***La chica sentada en la última fila. La chica que me observaba desde el pasillo. La chica que dijo 'recuérdame.' Todo eso -- fabricado dentro de mi cabeza.***"
+    },
+    "day4_lunch_yuna_82": {
+        "name": "Yo",
+        "text": "*La última página del diario de observación. La fecha es de hace dos días.*"
+    },
+    "day4_lunch_yuna_83": {
+        "name": "Yo",
+        "text": "***'Ensayo #13 Día 2 Observación: Contacto con Choi Yuna (observadora externa) confirmado. Riesgo de filtración de evidencia. Se recomienda aislamiento inmediato.'***"
+    },
+    "day4_lunch_yuna_84": {
+        "name": "Yo",
+        "text": "***'Ensayo #13 Día 3 Adenda: Aislamiento de Choi Yuna completado. Informe al consejo aplazado -- informar revelaría la existencia de observadora externa, resultando en evaluación de fallo de seguridad del proyecto y posible eliminación del sujeto. Gestión autónoma con informe posterior planificado.'***"
+    },
+    "day4_lunch_yuna_85": {
+        "name": "Yo",
+        "text": "*...Hace dos días. El mismo día que Yuna me mostró las fotos. Eunsu lo sabía.*"
+    },
+    "day4_lunch_yuna_86": {
+        "name": "Yo",
+        "text": "*Y anoche, Yuna fue 'transferida.'*"
+    },
+    "day4_lunch_yuna_87": {
+        "name": "Yo",
+        "text": "***Seolhwa murió hace un año. Murió por mí. Y yo, con la memoria borrada -- había estado riendo y comiendo con las personas que la mataron.***"
+    },
+    "day4_lunch_yuna_88": {
+        "name": "Yo",
+        "text": "*Miré a Yuna. Ella también leyó todo esto. Sola. Atada.*"
+    },
+    "day4_lunch_yuna_89": {
+        "name": "Yuna",
+        "text": "\"...Tenemos que... salir de aquí. Ellos van a... venir pronto.\""
+    },
+    "day4_lunch_yuna_90": {
+        "name": "Yuna",
+        "text": "\"Cuando termine el almuerzo... Riin baja... aquí. Cada vez...\""
+    },
+    "day4_lunch_yuna_91": {
+        "name": "Yo",
+        "text": "*Yuna se aferra a mí. Sin fuerza en su agarre.*"
+    },
+    "day4_lunch_yuna_92": {
+        "name": "Yuna",
+        "text": "\"...Senpai. Todo está en esta cámara. Tres años... de evidencia.\""
+    },
+    "day4_lunch_yuna_93": {
+        "name": "Yuna",
+        "text": "\"Si salimos de aquí... la policía... las noticias...\""
+    },
+    "day4_lunch_yuna_94": {
+        "name": "Yo",
+        "text": "*Tomé la mano de Yuna. Está fría.*"
+    },
+    "day4_lunch_yuna_timer": {
+        "name": "Yo",
+        "text": "*Elija lo que elija -- no hay tiempo.*",
+        "choices": [
+            "Llevarme a Yuna",
+            "Escondernos por ahora"
+        ]
+    },
+    "day4_lunch_yuna_escape": {
+        "name": "Yo",
+        "text": "*Pasé el brazo de Yuna sobre mi hombro. Apenas siento su peso. ...¿Siempre fue tan liviana? Subo las escaleras.*"
+    },
+    "day4_lunch_yuna_hide": {
+        "name": "Yo",
+        "text": "*Llevé a Yuna detrás de la cortina. Contenemos la respiración. Los latidos del corazón de Yuna llegan a mi pecho.*"
+    },
+    "day4_lunch_yuna_end": {
+        "name": "Yo",
+        "text": "*...No hay tiempo.*"
+    },
+
+    "day4_lunch_nurse_1": {
+        "name": "Yo",
+        "text": "*Riin está transfiriendo algo a una jeringa frente al armario de medicamentos.*"
+    },
+    "day4_lunch_nurse_2": {
+        "name": "Yo",
+        "text": "*Puedo ver la etiqueta de la ampolla. 'M-13.' El mismo código que los del armario del sótano.*"
+    },
+    "day4_lunch_nurse_3": {
+        "name": "Yo",
+        "text": "*Me ve y se detiene.*"
+    },
+    "day4_lunch_nurse_4": {
+        "name": "Riin",
+        "text": "\"...Me asustaste.\""
+    },
+    "day4_lunch_nurse_5": {
+        "name": "Yo",
+        "text": "*Esconde la jeringa detrás de su espalda. Con naturalidad. Pero yo la vi.*"
+    },
+    "day4_lunch_nurse_6": {
+        "name": "Yo",
+        "text": "\"Escuché que Yuna... se transfirió de repente.\""
+    },
+    "day4_lunch_nurse_7": {
+        "name": "Yo",
+        "text": "*La expresión de Riin cambió por un instante. Medio segundo. Sus ojos se afilaron -- y luego se suavizaron de nuevo.*"
+    },
+    "day4_lunch_nurse_8": {
+        "name": "Riin",
+        "text": "\"...¿Por qué me miras así? {name}, no estarás pensando cosas raras, ¿verdad?\""
+    },
+    "day4_lunch_nurse_9": {
+        "name": "Yo",
+        "text": "*Su voz se enfrió un instante, luego volvió a ser suave.*"
+    },
+    "day4_lunch_nurse_10": {
+        "name": "Riin",
+        "text": "\"Yuna estará bien.\""
+    },
+    "day4_lunch_nurse_11": {
+        "name": "Yo",
+        "text": "*Dijo 'estará bien.' No 'está bien.' Tiempo futuro.*"
+    },
+    "day4_lunch_nurse_12": {
+        "name": "Yo",
+        "text": "*...Riin sabe que Yuna no está bien ahora mismo.*"
+    },
+    "day4_lunch_nurse_13": {
+        "name": "Riin",
+        "text": "\"...Te ves cansado. Parece que no has dormido bien últimamente.\""
+    },
+    "day4_lunch_nurse_14": {
+        "name": "Riin",
+        "text": "\"¿Quieres que te dé algo? Para ayudarte a dormir.\""
+    },
+    "day4_lunch_nurse_15": {
+        "name": "Yo",
+        "text": "*Un rostro sonriente. Una voz suave. Una jeringa en la mano.*"
+    },
+    "day4_lunch_nurse_16": {
+        "name": "Yo",
+        "text": "*...Rechacé y me fui. Detrás de mí, escuché a Riin murmurando algo. Fingí no oírlo.*"
+    },
+
+    "day4_lunch_roof_1": {
+        "name": "Yo",
+        "text": "*El viento sopla.*"
+    },
+    "day4_lunch_roof_2": {
+        "name": "Yo",
+        "text": "*Letras grabadas bajo la barandilla. Profundamente talladas con un cuchillo.*"
+    },
+    "day4_lunch_roof_3": {
+        "name": "Yo",
+        "text": "***'Solo hay una forma de salir. -- Lee Seolhwa'***"
+    },
+    "day4_lunch_roof_4": {
+        "name": "Yo",
+        "text": "*Debajo, en letras más pequeñas: ***'La respuesta está bajo tierra'***"
+    },
+    "day4_lunch_roof_5": {
+        "name": "Yo",
+        "text": "*Toqué las letras con los dedos. Frío. Escritura grabada en una barandilla de metal. Marcas antiguas.*"
+    },
+    "day4_lunch_roof_6": {
+        "name": "Yo",
+        "text": "*...Esto no fue grabado por una alucinación. Es una marca que existe físicamente.*"
+    },
+    "day4_lunch_roof_7": {
+        "name": "Yo",
+        "text": "*Seolhwa lo grabó -- cuando realmente estaba aquí.*"
+    },
+
+    "day4_lunch_end": {
+        "name": "Yo",
+        "text": "*Las clases de la tarde están por empezar.*"
+    }
 }

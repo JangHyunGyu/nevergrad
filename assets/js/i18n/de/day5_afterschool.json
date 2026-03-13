@@ -1,246 +1,446 @@
 {
-  "day5_after_start": {
-    "name": "Ich",
-    "text": "*...*"
-  },
-  "day5_after_branch": {
-    "name": "",
-    "text": ""
-  },
-  "day5_after_escaped": {
-    "name": "Ich",
-    "text": "*Außerhalb der Schule. Es regnet. Zum ersten Mal... atme ich die Luft außerhalb der Schule.*"
-  },
-  "day5_after_escaped_2": {
-    "name": "Ich",
-    "text": "*Ich rannte. Irgendwohin. So weit wie möglich von dieser Schule weg.*"
-  },
-  "day5_after_escaped_3": {
-    "name": "Ich",
-    "text": "*Ich bin allein. Aber ich bin am Leben.*"
-  },
-  "day5_after_escaped_4": {
-    "name": "Ich",
-    "text": "*Ich muss diese Beweise der Welt zeigen. Sofort.*"
-  },
-  "day5_after_escaped_5": {
-    "name": "Ich",
-    "text": "*Es regnet. Regentropfen schlagen in mein Gesicht. Kalt. Aber diese Kälte... ist der Beweis, dass ich lebe.*"
-  },
-  "day5_after_escaped_6": {
-    "name": "Ich",
-    "text": "*Zum ersten Mal... seit ich an diese Schule gekommen bin, zum allerersten Mal atme ich die Luft außerhalb der Schule.*"
-  },
-  "day5_after_escaped_7": {
-    "name": "Ich",
-    "text": "*Ich atmete ein. Tief. So tief, dass es sich anfühlte, als könnten meine Lungen platzen. ...Der Geruch ist anders. Kein Desinfektionsmittel. Keine Kirschblüten. Nur Regengeruch. Erdgeruch. Der Geruch der Welt.*"
-  },
-  "day5_after_escaped_8": {
-    "name": "Ich",
-    "text": "*Ich rannte. Irgendwohin. So weit wie möglich von dieser Schule weg. Meine Beine zittern. Meine Knie werden weich. Ich renne trotzdem.*"
-  },
-  "day5_after_escaped_yuna_branch": {
-    "name": "",
-    "text": ""
-  },
-  "day5_after_escaped_yuna": {
-    "name": "Ich",
-    "text": "*Yuna weint. Ich weine auch.*"
-  },
-  "day5_after_escaped_yuna_2": {
-    "name": "Ich",
-    "text": "*Ich rannte, bis ich anhielt. Nachdem ich weit genug von der Schule entfernt war. Unter einer Straßenlaterne.*"
-  },
-  "day5_after_escaped_yuna_3": {
-    "name": "Choi Yuna",
-    "text": "\"Senpai...\""
-  },
-  "day5_after_escaped_yuna_4": {
-    "name": "Choi Yuna",
-    "text": "\"Wir haben es rausgeschafft...\""
-  },
-  "day5_after_escaped_yuna_5": {
-    "name": "Ich",
-    "text": "\"Wir haben es geschafft. Wir haben es geschafft, Yuna.\""
-  },
-  "day5_after_escaped_solo": {
-    "name": "Ich",
-    "text": "*Ich habe Yuna zurückgelassen. ...Es tut mir leid.*"
-  },
-  "day5_after_escaped_solo_2": {
-    "name": "Ich",
-    "text": "*Ich kann nicht aufhören. Noch nicht weit genug. Mehr. Weiter.*"
-  },
-  "day5_after_escaped_choice": {
-    "name": "Ich",
-    "text": "*Was soll ich tun?*",
-    "choices": [
-      "Die Polizei rufen",
-      "Im Internet veröffentlichen"
-    ]
-  },
-  "day5_after_police": {
-    "name": "Ich",
-    "text": "*Ich rief die Polizei an. Meine Stimme zitterte, aber ich erklärte alles. Die Speicherkarte und die Fotos legte ich als Beweise vor.*"
-  },
-  "day5_after_police_2": {
-    "name": "Ich",
-    "text": "*Die Polizei rückte aus. Sirenen heulen aus der Richtung der Schule.*"
-  },
-  "day5_after_expose_online": {
-    "name": "Ich",
-    "text": "*Ich verband mich mit dem WLAN eines Convenience-Stores. Ich lade alle Fotos und Dokumente hoch. Soziale Medien, Nachrichtenredaktionen, Foren...*"
-  },
-  "day5_after_expose_2": {
-    "name": "Ich",
-    "text": "*Upload abgeschlossen. ...Bald wird die Welt es erfahren.*"
-  },
-  "day5_after_captured": {
-    "name": "Ich",
-    "text": "*...Ich öffnete die Augen. Ein Keller. Die Neonröhre flackert.*"
-  },
-  "day5_after_captured_2": {
-    "name": "Ich",
-    "text": "*Meine Hände sind gefesselt. Ich sitze auf einem Stuhl. ...Ist es vorbei?*"
-  },
-  "day5_after_captured_3": {
-    "name": "Klassenlehrerin",
-    "text": "\"Du bist aufgewacht, {name}. ...Wolltest du etwa fliehen?\""
-  },
-  "day5_after_captured_4": {
-    "name": "Schulkrankenschwester",
-    "text": "\"Ich bereite die letzte Untersuchung vor. Nur Blutentnahme und Infusion, das ist alles.\""
-  },
-  "day5_after_captured_5": {
-    "name": "Ich",
-    "text": "*...Soll ich aufgeben?*",
-    "choices": [
-      "Sich wehren",
-      "Es akzeptieren"
-    ]
-  },
-  "day5_after_captured_6": {
-    "name": "Klassenlehrerin",
-    "text": "\"...Du wolltest fliehen? Weißt du, wie viel Sorgen ich mir gemacht habe?\""
-  },
-  "day5_after_captured_7": {
-    "name": "Kang Riin",
-    "text": "\"Ich bereite die letzte Untersuchung vor.\""
-  },
-  "day5_after_captured_8": {
-    "name": "Kang Riin",
-    "text": "\"Nur eine Blutentnahme und eine Infusion — dann ist es vorbei. Das hier ist das letzte Mal.\""
-  },
-  "day5_after_captured_9": {
-    "name": "Ich",
-    "text": "*'Das letzte Mal.' Dieses Wort lastet schwer. Wenn das vorbei ist... was passiert dann? Wie mit Seolhwa?*"
-  },
-  "day5_after_captured_10": {
-    "name": "Ich",
-    "text": "*Riin-Sensei desinfiziert die Innenseite meines Ellbogens. Die Kälte des Alkoholtupfers berührt meine Haut. ...Ich darf hier nicht aufgeben. Es ist noch nicht vorbei.*"
-  },
-  "day5_after_captured_choice": {
-    "name": "Ich",
-    "text": "*...Was soll ich tun?*",
-    "choices": [
-      "Widersetzen",
-      "Akzeptieren"
-    ]
-  },
-  "day5_after_captured_resist": {
-    "name": "Ich",
-    "text": "*Ich stürzte den Stuhl um! Mit gefesselten Händen stehe ich auf.*"
-  },
-  "day5_after_captured_resist_2": {
-    "name": "Lee Seolhwa",
-    "text": "\"...Ich helfe dir.\""
-  },
-  "day5_after_captured_resist_3": {
-    "name": "Ich",
-    "text": "*Plötzlich fiel der Strom aus. Der Keller versinkt in Dunkelheit. Im Chaos... fand ich den Ausgang.*"
-  },
-  "day5_after_captured_resist_4": {
-    "name": "Ich",
-    "text": "*In diesem Moment. Der Strom fiel aus.*"
-  },
-  "day5_after_captured_resist_5": {
-    "name": "Park Eunsu",
-    "text": "\"...Was?\""
-  },
-  "day5_after_captured_resist_6": {
-    "name": "Kang Riin",
-    "text": "\"Stromausfall? Zu dieser Stunde?\""
-  },
-  "day5_after_captured_resist_7": {
-    "name": "Ich",
-    "text": "*In der Dunkelheit... spüre ich eine Hand. Eine kalte, transparente Hand. Sie löst die Lederriemen.*"
-  },
-  "day5_after_captured_resist_8": {
-    "name": "Ich",
-    "text": "*...Seolhwa. Die Riemen sind locker. Seolhwa ergreift meine Hand. Ich dachte, eine transparente Hand könnte nichts festhalten... aber sie hält.*"
-  },
-  "day5_after_captured_resist_9": {
-    "name": "Ich",
-    "text": "*Ich werde durch die Dunkelheit gezogen. Die Schritte gedämpft. In Richtung Notausgang.*"
-  },
-  "day5_after_captured_submit": {
-    "name": "Schulkrankenschwester",
-    "text": "\"Brav. Es ist gleich vorbei. Du wirst alles vergessen.\""
-  },
-  "day5_after_captured_submit_2": {
-    "name": "Ich",
-    "text": "*In dem Moment, als die Nadel meinen Arm berührt. Das Bewusstsein... verschwimmt...*"
-  },
-  "day5_after_captured_submit_3": {
-    "name": "Ich",
-    "text": "*...Es wird warm. Als würde mein Körper schmelzen. Meine Gedanken verschwimmen.*"
-  },
-  "day5_after_captured_submit_4": {
-    "name": "Ich",
-    "text": "*Irgendetwas... vergesse ich. Was vergesse ich? Es war wichtig... was war es noch...*"
-  },
-  "day5_after_stayed": {
-    "name": "Klassenlehrerin",
-    "text": "\"...Gut entschieden, {name}. So ist es richtig.\""
-  },
-  "day5_after_stayed_2": {
-    "name": "Klassenlehrerin",
-    "text": "\"Deine Lehrerin wird dich beschützen. Du brauchst dir keine Sorgen zu machen.\""
-  },
-  "day5_after_stayed_3": {
-    "name": "Klassenlehrerin",
-    "text": "\"...{name} muss nur bei seiner Lehrerin bleiben. Für immer.\""
-  },
-  "day5_after_stayed_4": {
-    "name": "Ich",
-    "text": "*Eunsu-Sensei lächelt. Ein warmes Lächeln. ...War dieses Lächeln schon immer so furchteinflößend? Nein. Es ist nicht furchteinflößend. ...Nicht furchteinflößend. ...Warum ist es nicht mehr furchteinflößend?*"
-  },
-  "day5_after_stayed_5": {
-    "name": "Park Eunsu",
-    "text": "\"Deine Lehrerin wird dich beschützen. Du musst dir um nichts Sorgen machen.\""
-  },
-  "day5_after_stayed_6": {
-    "name": "Ich",
-    "text": "*Ich setzte mich. Sea setzt sich neben mich. Riin-Sensei reicht mir eine Tasse Tee.*"
-  },
-  "day5_after_stayed_7": {
-    "name": "Park Eunsu",
-    "text": "\"...{name} muss nur bei seiner Lehrerin bleiben. Für immer.\""
-  },
-  "day5_after_stayed_8": {
-    "name": "Ich",
-    "text": "*Eunsu-Sensei lächelt. Ein warmes Lächeln.*"
-  },
-  "day5_after_stayed_9": {
-    "name": "Ich",
-    "text": "*...War dieses Lächeln schon immer so beängstigend? Nein. Es macht mir keine Angst. ...Keine Angst. ...Warum macht es mir keine Angst mehr?*"
-  },
-  "day5_after_stayed_10": {
-    "name": "Ich",
-    "text": "*Ich trank den Tee. Er ist warm. Es ist schön. ...Irgendetwas vergesse ich, glaube ich. Was war es noch. ...Schon gut. Ich darf vergessen. Hier ist es sicher.*"
-  },
-  "day5_after_end": {
-    "name": "Ich",
-    "text": "*...*"
-  }
+    "day5_after_start": {
+        "name": "",
+        "text": "*...*"
+    },
+    "day5_after_branch": {
+        "name": "",
+        "text": ""
+    },
+
+    "day5_after_cage_1": {
+        "name": "Eunsu",
+        "text": "\"...Wirklich?\""
+    },
+    "day5_after_cage_2": {
+        "name": "Ich",
+        "text": "\"...Ja.\""
+    },
+    "day5_after_cage_3": {
+        "name": "Ich",
+        "text": "*Die Lehrerin laechelte. Aufrichtig. Zum ersten Mal in 12 Zyklen -- ein Laecheln, das nicht mehr warten musste.*"
+    },
+    "day5_after_cage_4": {
+        "name": "Eunsu",
+        "text": "\"...Danke, {name}.\""
+    },
+    "day5_after_cage_5": {
+        "name": "Ich",
+        "text": "*Die Lehrerin umarmte mich. Es war warm. Unmoegich warm.*"
+    },
+    "day5_after_cage_6": {
+        "name": "Ich",
+        "text": "*Ich ging zurueck ins Klassenzimmer. Setzte mich. Sea setzt sich neben mich. Lehrerin Riin reicht mir Tee. Alle laecheln.*"
+    },
+    "day5_after_cage_7": {
+        "name": "Eunsu",
+        "text": "\"...{name} muss einfach nur bei mir bleiben. Fuer immer.\""
+    },
+    "day5_after_cage_8": {
+        "name": "Ich",
+        "text": "*Ich trank den Tee. Er ist warm. Es ist angenehm. ...Irgendwoher -- glaube ich eine Stimme zu hoeren. 'Flieh', sagt sie. Aber von weit weg, ganz weit weg.*"
+    },
+    "day5_after_cage_9": {
+        "name": "Ich",
+        "text": "*...War dieses Laecheln schon immer so beaengstigend? Nein. Es ist nicht beaengstigend. ...Es ist nicht beaengstigend. ...Warum ist es nicht beaengstigend?*"
+    },
+    "day5_after_cage_10": {
+        "name": "Ich",
+        "text": "*...Ich glaube, ich vergesse etwas. Was war es? ...Ist schon gut. Ich darf vergessen. Hier bin ich sicher.*"
+    },
+
+    "day5_after_caught_1": {
+        "name": "Ich",
+        "text": "*...Ich oeffnete die Augen. Neonlicht flackert. Betondecke. Der Keller.*"
+    },
+    "day5_after_caught_2": {
+        "name": "Ich",
+        "text": "*Ich versuchte, meine Haende zu bewegen. Sie bewegen sich nicht. ...Lederriemen. An einen Stuhl gefesselt.*"
+    },
+    "day5_after_caught_3": {
+        "name": "Ich",
+        "text": "*Genau wie in Seolhwas Traum. Derselbe Stuhl. Dieselben Riemen. Dasselbe Neonlicht.*"
+    },
+    "day5_after_caught_4": {
+        "name": "Eunsu",
+        "text": "\"Du bist wach, {name}.\""
+    },
+    "day5_after_caught_5": {
+        "name": "Eunsu",
+        "text": "\"...Wolltest du fliehen? Weisst du, wie viele Sorgen sich deine Lehrerin gemacht hat?\""
+    },
+    "day5_after_caught_6": {
+        "name": "Riin",
+        "text": "\"Ich bereite die letzte Untersuchung vor. Nur Blutentnahme und Infusion, dann ist es vorbei.\""
+    },
+    "day5_after_caught_7": {
+        "name": "Ich",
+        "text": "*Lehrerin Riin desinfiziert die Innenseite meines Ellbogens. Die Kaelte des Alkoholtupfers beruehrt meine Haut. ...Ich darf hier nicht aufgeben.*"
+    },
+    "day5_after_caught_choice": {
+        "name": "Ich",
+        "text": "*...Was soll ich tun?*",
+        "choices": [
+            "Widersetzen",
+            "Akzeptieren"
+        ]
+    },
+
+    "day5_after_caught_resist_1": {
+        "name": "Ich",
+        "text": "*Ich spannte jeden Muskel an. Die Lederriemen graben sich in meine Handgelenke. Es tut weh. Es ist mir egal.*"
+    },
+    "day5_after_caught_resist_2": {
+        "name": "Ich",
+        "text": "\"Nein...! Lasst mich los...!\""
+    },
+    "day5_after_caught_resist_3": {
+        "name": "Riin",
+        "text": "\"Wenn du dich bewegst, ist es gefaehrlich. Bleib still --\""
+    },
+    "day5_after_caught_resist_4": {
+        "name": "Ich",
+        "text": "*In diesem Moment. Der Strom fiel aus.*"
+    },
+    "day5_after_caught_resist_5": {
+        "name": "Ich",
+        "text": "*In der Dunkelheit... spuere ich eine Hand. Kalt und durchscheinend. Sie loest die Lederriemen. ...Seolhwa.*"
+    },
+    "day5_after_caught_resist_6": {
+        "name": "Ich",
+        "text": "*Die Riemen loesten sich. Seolhwa ergreift meine Hand. Ich dachte, eine durchscheinende Hand koennte nicht gehalten werden... aber sie haelt.*"
+    },
+    "day5_after_caught_resist_7": {
+        "name": "Ich",
+        "text": "*Durch die Dunkelheit gezogen. Die Schritte gedaempft. In Richtung Notausgang.*"
+    },
+
+    "day5_after_caught_submit_1": {
+        "name": "Ich",
+        "text": "*...Die Kraft verlaesst mich. Keine Energie mehr, um zu kaempfen. Mein Kopf sinkt. Meine Augen fallen zu.*"
+    },
+    "day5_after_caught_submit_2": {
+        "name": "Ich",
+        "text": "*Die Spritze beruehrt meinen Arm. Die Nadel dringt ein. Kalte Fluessigkeit breitet sich in meinen Adern aus.*"
+    },
+    "day5_after_caught_submit_3": {
+        "name": "Ich",
+        "text": "*...Es wird warm. Als wuerde mein Koerper schmelzen. Die Gedanken verschwimmen.*"
+    },
+    "day5_after_caught_submit_4": {
+        "name": "Ich",
+        "text": "*Ich vergesse... etwas. Was vergesse ich? Es war wichtig... was war es...*"
+    },
+
+    "day5_after_confront_1": {
+        "name": "Ich",
+        "text": "*Von hinten -- Schritte. Jemand kommt die Treppe herauf. Eine Stufe. Eine Stufe. Langsam. Ohne zu rennen.*"
+    },
+    "day5_after_confront_2": {
+        "name": "Ich",
+        "text": "*Die Schritte kommen naeher. Das Geraeusch von Absatzschuhen auf Beton. Frau Eunsus Schuhe.*"
+    },
+    "day5_after_confront_3": {
+        "name": "Ich",
+        "text": "*Angehalten. Oben an der Treppe. Frau Eunsu taucht auf. Ausser Atem. Die Haare zerzaust.*"
+    },
+    "day5_after_confront_4": {
+        "name": "Ich",
+        "text": "*Die Lehrerin faengt sich, zwingt die Mundwinkel nach oben. Das uebliche sanfte Laecheln. Aber die Gesichtsmuskeln zucken leicht.*"
+    },
+    "day5_after_confront_5": {
+        "name": "Eunsu",
+        "text": "\"{name}... dort ist es gefaehrlich. Komm her. Komm zu deiner Lehrerin...\""
+    },
+    "day5_after_confront_6": {
+        "name": "Ich",
+        "text": "*Als ich zurueckwich, fiel das Laecheln, das sich an Frau Eunsus Gesicht geklammert hatte, mit einem Ruck ab. Die Maske zerbrach.*"
+    },
+    "day5_after_confront_7": {
+        "name": "Ich",
+        "text": "*Schweissperlen auf ihrer Stirn. Dunkle Ringe unter den Augen. Ich war nicht der Einzige, der heute Nacht nicht geschlafen hatte. Ein kalter Wind vom Notausgang wehte zwischen uns hindurch.*"
+    },
+    "day5_after_confront_8": {
+        "name": "Eunsu",
+        "text": "\"Jedes Mal das Gleiche. Jedes Mal rennst du. Jedes Mal wirst du gefangen. Jedes Mal von vorn.\""
+    },
+    "day5_after_confront_9": {
+        "name": "Eunsu",
+        "text": "\"Beim 1. Mal war ich wuetend. Dass du gerannt bist. Beim 2. Mal konnte ich es nicht verstehen. Warum du gehst.\""
+    },
+    "day5_after_confront_10": {
+        "name": "Eunsu",
+        "text": "\"Ab dem 3. Mal -- hatte ich Angst. Nicht davor, dass du gehst, sondern dass du zurueckkommst und mich nicht mehr erkennst.\""
+    },
+    "day5_after_confront_11": {
+        "name": "Eunsu",
+        "text": "\"Das war unertraeglich. Deshalb wollte ich diesmal -- verhindern, dass du rennst.\""
+    },
+    "day5_after_confront_12": {
+        "name": "Eunsu",
+        "text": "\"Ich dachte, wenn ich nett zu dir bin, wuerdest du bleiben. Wenn ich dich aufrichtig liebe -- wuerdest du nicht gehen.\""
+    },
+    "day5_after_confront_13": {
+        "name": "Eunsu",
+        "text": "\"...Am 1. Tag, als du ins Klassenzimmer kamst. Obwohl es das 13. Mal war -- mein Herz hat gerast.\""
+    },
+    "day5_after_confront_14": {
+        "name": "Eunsu",
+        "text": "\"Nach 12 Malen sollte man meinen, man gewoehnt sich daran. Aber diese Augen, die mich zum ersten Mal sehen. Diese Augen ohne jede Erinnerung -- sie tun jedes Mal weh.\""
+    },
+    "day5_after_confront_15": {
+        "name": "Ich",
+        "text": "*Die Lehrerin blieb stehen. Vor dem Notausgang. Drei Meter von mir entfernt. Sie zog eine Spritze aus der Tasche. Langsam. Als wollte sie sie mir zeigen.*"
+    },
+    "day5_after_confront_16": {
+        "name": "Ich",
+        "text": "*Die Fluessigkeit in der Spritze glaenzt unter dem Neonlicht. -- Das hat 12 Zyklen an Erinnerungen ausgeloescht. Diese eine klare Fluessigkeit.*"
+    },
+    "day5_after_confront_17": {
+        "name": "Eunsu",
+        "text": "\"Letzte Chance, {name}. Eine Spritze und alles ist vorbei. Die schreckliche Wahrheit, die Angst, die du gerade gespuert hast, sogar dein Hass auf mich -- alles.\""
+    },
+    "day5_after_confront_18": {
+        "name": "Eunsu",
+        "text": "\"Zurueck zu Tag 1. Wieder der {name}, der so schoen laechelt. ...**Bitte.**\""
+    },
+    "day5_after_confront_19": {
+        "name": "Ich",
+        "text": "*Die Hand der Lehrerin zittert. Die Spritze schwankt. Ein Tropfen faellt zu Boden. Traenen fliessen aus ihren Augen. Sie wischt sie nicht ab. Ein Gesichtsausdruck, der weiss, dass es keinen Sinn hat.*"
+    },
+    "day5_after_confront_20": {
+        "name": "Ich",
+        "text": "*Spritze und Notausgang. Vergessen und Erinnern. Kaefig und Himmel. Seolhwa -- ist sichtbar. Hinter der Lehrerin. Am Fuss der Treppe. Eine verschwommene Silhouette. Sie sagt nichts. Sie schaut mich nur -- an.*"
+    },
+
+    "day5_after_final_choice": {
+        "name": "Ich",
+        "text": "*Ich muss nur an ihr vorbei rennen. Sie hat nicht die Kraft, mich aufzuhalten. -- Aber meine Beine bewegen sich nicht. Das Koerpergedaechtnis von 12 Zyklen erinnert sich. Dass die Arme dieser Person sicher waren. Dass die Haende dieser Person warm waren.*",
+        "choices": [
+            "Nein. Ich werde mich erinnern.",
+            "...Loescht mich aus.",
+            "Lassen Sie uns zusammen rausgehen."
+        ]
+    },
+
+    "day5_after_true_1": {
+        "name": "Ich",
+        "text": "*Frau Eunsus Hand zittert. Die Spritze fiel zu Boden. Glas zersplitterte auf den Fliesen.*"
+    },
+    "day5_after_true_2": {
+        "name": "Eunsu",
+        "text": "\"...Also. Der 13. geht auch -- weg.\""
+    },
+    "day5_after_true_3": {
+        "name": "Ich",
+        "text": "*Die Lehrerin trat zur Seite. Mit geschlossenen Augen. Als haette sie keine Kraft mehr, den Weg zu versperren.*"
+    },
+    "day5_after_true_4": {
+        "name": "Ich",
+        "text": "*Ich ging durch den Notausgang. Mit Yuna. Die Feuertreppe hinter dem alten Gebaeude.*"
+    },
+    "day5_after_true_5": {
+        "name": "Ich",
+        "text": "*Die Morgenluft ist kalt. Jenseits des Schulzauns -- die Strasse ist sichtbar. Ich schaute zurueck.*"
+    },
+    "day5_after_true_6": {
+        "name": "Ich",
+        "text": "*Seolhwa steht innerhalb des Notausgangs. Sie kann nicht durch die Tuer treten.*"
+    },
+    "day5_after_true_7": {
+        "name": "Ich",
+        "text": "\"Seolhwa --\""
+    },
+    "day5_after_true_seolhwa_branch": {
+        "name": "Seolhwa",
+        "text": "\"...Geh.\""
+    },
+    "day5_after_true_8": {
+        "name": "Seolhwa",
+        "text": "\"**Ich sagte, geh.**\""
+    },
+    "day5_after_true_9": {
+        "name": "Ich",
+        "text": "*Seolhwa laechelte. Das Licht verblasst.*"
+    },
+    "day5_after_true_10": {
+        "name": "Seolhwa",
+        "text": "\"Ich habe 6 Zyklen gewartet. Darauf, dass du rauskommst.\""
+    },
+    "day5_after_true_11": {
+        "name": "Seolhwa",
+        "text": "\"...Ich bin vor einem Jahr zu Ende gegangen. ...Aber wenn du rauskommst, reicht mir das.\""
+    },
+    "day5_after_true_12": {
+        "name": "Ich",
+        "text": "*Seolhwas Koerper wird durchscheinend. Loest sich in Lichtpartikel auf. Dieses Licht -- fliesst zu mir. Sickert in meine Brust. ...Es ist warm. Das ist keine Halluzination -- es ist Erinnerung.*"
+    },
+
+    "day5_after_forget_1": {
+        "name": "Ich",
+        "text": "\"...Loescht mich aus.\""
+    },
+    "day5_after_forget_2": {
+        "name": "Eunsu",
+        "text": "\"...Meinst du das ernst?\""
+    },
+    "day5_after_forget_3": {
+        "name": "Ich",
+        "text": "\"...Wenn das alles meine Erinnerungen sind... dann sind die 12 namenlosen Zeilen, die in diesem Keller zurueckgelassen wurden, alle ich.\""
+    },
+    "day5_after_forget_4": {
+        "name": "Ich",
+        "text": "\"Ich kann nicht... ich kann das nicht ertragen. Es fuehlt sich an, als wuerde mein Kopf explodieren...\""
+    },
+    "day5_after_forget_5": {
+        "name": "Ich",
+        "text": "\"Bitte loescht mich aus. Lasst mich alles vergessen.\""
+    },
+    "day5_after_forget_6": {
+        "name": "Ich",
+        "text": "*Frau Eunsu hob die Spritze. Ihre Hand zittert.*"
+    },
+    "day5_after_forget_7": {
+        "name": "Eunsu",
+        "text": "\"...Es tut mir leid.\""
+    },
+    "day5_after_forget_8": {
+        "name": "Ich",
+        "text": "*Die Nadel drang in meinen Arm. Kalt. Das Bewusstsein schwindet.*"
+    },
+    "day5_after_forget_9": {
+        "name": "Ich",
+        "text": "*Das Letzte, was ich sah -- Seolhwa. Seolhwa weint. Ihre Lippen bewegen sich. Kein Ton.*"
+    },
+    "day5_after_forget_10": {
+        "name": "Ich",
+        "text": "*...Ich kann es lesen. Die Bewegung ihrer Lippen. -- \"Vergiss nicht\"*"
+    },
+    "day5_after_forget_11": {
+        "name": "Ich",
+        "text": "*Ich vergass.*"
+    },
+    "day5_after_forget_12": {
+        "name": "",
+        "text": "*...*"
+    },
+
+    "day5_after_resist_1": {
+        "name": "Eunsu",
+        "text": "\"...Zusammen?\""
+    },
+    "day5_after_resist_2": {
+        "name": "Ich",
+        "text": "\"Sie sind auch ein Opfer, Frau Lehrerin. Sie wurden vom Vorstand benutzt.\""
+    },
+    "day5_after_resist_3": {
+        "name": "Eunsu",
+        "text": "\"......\""
+    },
+    "day5_after_resist_4": {
+        "name": "Eunsu",
+        "text": "\"Nein. Ab dem 3. Mal war es meine Entscheidung.\""
+    },
+    "day5_after_resist_5": {
+        "name": "Eunsu",
+        "text": "\"Ich bin die Taeterin, {name}.\""
+    },
+    "day5_after_resist_6": {
+        "name": "Ich",
+        "text": "\"Trotzdem. Wenn Sie hier bleiben, beginnt der 14. Zyklus. Fuer jemand anderen.\""
+    },
+    "day5_after_resist_7": {
+        "name": "Ich",
+        "text": "*Frau Eunsu blieb stehen. Seolhwa erschien. Hinter Frau Eunsu.*"
+    },
+    "day5_after_resist_8": {
+        "name": "Seolhwa",
+        "text": "\"...Eunsu.\""
+    },
+    "day5_after_resist_9": {
+        "name": "Seolhwa",
+        "text": "\"6 Jahre lang habe ich jeden Tag zugesehen. Wie Sie jedes Mal ein neues Ich begruesst haben. Jedes Mal gelaechelt haben. -- Jedes Mal ein bisschen mehr zerbrochen sind.\""
+    },
+    "day5_after_resist_10": {
+        "name": "Seolhwa",
+        "text": "\"...Auch Sie muessen gehen, Frau Lehrerin.\""
+    },
+    "day5_after_resist_11": {
+        "name": "Ich",
+        "text": "*Frau Eunsu legte die Spritze auf den Boden. ...Sie stand lange da.*"
+    },
+    "day5_after_resist_12": {
+        "name": "Eunsu",
+        "text": "\"...Wenn ich rausgehe, kommt alles ans Licht, was ich getan habe.\""
+    },
+    "day5_after_resist_13": {
+        "name": "Ich",
+        "text": "\"Ich weiss.\""
+    },
+    "day5_after_resist_14": {
+        "name": "Ich",
+        "text": "*Frau Eunsu -- weinte. Als wuerde das Gewicht von 12 Zyklen auf einmal zusammenbrechen. \"...Wie kannst du mich mitnehmen wollen. Nach dem, was ich dir angetan habe.\"*"
+    },
+    "day5_after_resist_15": {
+        "name": "Ich",
+        "text": "*\"...Sie muessen die Konsequenzen tragen. Aber das ist besser als das hier zu wiederholen.\" Ich ging durch den Notausgang. Mit Frau Eunsu. Seolhwa laechelte von der anderen Seite der Tuer. Licht zerstreute sich.*"
+    },
+
+    "day5_after_ghost_1": {
+        "name": "Ich",
+        "text": "*Ich kann mich nicht bewegen. Mein Koerper ist erstarrt.*"
+    },
+    "day5_after_ghost_2": {
+        "name": "Ich",
+        "text": "*Frau Eunsu naehert sich. Spritze in der Hand.*"
+    },
+    "day5_after_ghost_3": {
+        "name": "Seolhwa",
+        "text": "\"...Ich mache das.\""
+    },
+    "day5_after_ghost_4": {
+        "name": "Ich",
+        "text": "\"Seolhwa --?\""
+    },
+    "day5_after_ghost_5": {
+        "name": "Seolhwa",
+        "text": "\"Ich habe 6 Zyklen lang zugesehen. Wie du dich nicht entscheiden konntest. Diesmal auch. Ich weiss. Es ist eine Gewohnheit.\""
+    },
+    "day5_after_ghost_6": {
+        "name": "Seolhwa",
+        "text": "\"Also -- **entscheide ich fuer dich.**\""
+    },
+    "day5_after_ghost_7": {
+        "name": "Ich",
+        "text": "*Seolhwa sah mir direkt in die Augen. Eine Halluzination -- und doch nie so klar wie jetzt.*"
+    },
+    "day5_after_ghost_8": {
+        "name": "Seolhwa",
+        "text": "\"**Renn. Jetzt.**\""
+    },
+    "day5_after_ghost_9": {
+        "name": "Ich",
+        "text": "*Mein Koerper bewegte sich. Seolhwas Stimme -- die Erinnerung in mir -- setzt meinen Koerper in Bewegung. Ich griff Yunas Hand und rannte zum Notausgang.*"
+    },
+    "day5_after_ghost_10": {
+        "name": "Ich",
+        "text": "*Frau Eunsu rief von hinten, aber ich hielt nicht an. Ich trat durch den Notausgang. Schaute zurueck. Seolhwa steht innerhalb der Tuer. Sie laechelt.*"
+    },
+    "day5_after_ghost_11": {
+        "name": "Seolhwa",
+        "text": "\"...Eunsu. Es wird keinen 14. geben.\""
+    },
+    "day5_after_ghost_12": {
+        "name": "Ich",
+        "text": "*Seolhwa verschwand. Wie Licht. Ohne ein Geraeusch. Im selben Moment -- ging im Gebaeude der Alarm los.*"
+    },
+    "day5_after_ghost_13": {
+        "name": "Ich",
+        "text": "*Das Gebaeude wurde laut. Sirenen, Schritte, Rufe. ...Seolhwa ist weg. Auch in meinem Kopf -- Stille. Ich verliess die Schule.*"
+    },
+
+    "day5_after_end": {
+        "name": "",
+        "text": "*...*"
+    }
 }

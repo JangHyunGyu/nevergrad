@@ -1,242 +1,446 @@
 {
-  "day5_after_start": {
-    "name": "Moi",
-    "text": "*...*"
-  },
-  "day5_after_branch": {
-    "name": "",
-    "text": ""
-  },
-  "day5_after_escaped": {
-    "name": "Moi",
-    "text": "*Je descends l'escalier de secours. Les marches métalliques sont glissantes sous la pluie.*"
-  },
-  "day5_after_escaped_2": {
-    "name": "Moi",
-    "text": "*Un pas. Deux pas. Trois pas. Je descends comme en sautant.*"
-  },
-  "day5_after_escaped_3": {
-    "name": "Moi",
-    "text": "*Mes pieds touchent le sol. De l'asphalte. La ruelle derrière le lycée.*"
-  },
-  "day5_after_escaped_4": {
-    "name": "Moi",
-    "text": "*Je suis à l'extérieur du lycée.*"
-  },
-  "day5_after_escaped_5": {
-    "name": "Moi",
-    "text": "*Il pleut. Les gouttes de pluie me frappent le visage. Froid. Mais ce froid... est la preuve que je suis vivant.*"
-  },
-  "day5_after_escaped_6": {
-    "name": "Moi",
-    "text": "*Pour la première fois... depuis mon arrivée dans ce lycée, pour la toute première fois, je respire l'air de l'extérieur.*"
-  },
-  "day5_after_escaped_7": {
-    "name": "Moi",
-    "text": "*J'ai inspiré. Profondément. Si profondément que mes poumons semblaient prêts à éclater. ...L'odeur est différente. Pas le désinfectant. Pas les cerisiers. Juste l'odeur de la pluie. L'odeur de la terre. L'odeur du monde.*"
-  },
-  "day5_after_escaped_8": {
-    "name": "Moi",
-    "text": "*J'ai couru. N'importe où. Aussi loin que possible de ce lycée. Mes jambes tremblent. Mes genoux fléchissent. Je cours quand même.*"
-  },
-  "day5_after_escaped_yuna_branch": {
-    "name": "",
-    "text": ""
-  },
-  "day5_after_escaped_yuna": {
-    "name": "Moi",
-    "text": "*Yuna court à côté de moi. Yuna pleure aussi.*"
-  },
-  "day5_after_escaped_yuna_2": {
-    "name": "Moi",
-    "text": "*On a couru jusqu'à s'arrêter. Une fois suffisamment loin du lycée. Sous un lampadaire.*"
-  },
-  "day5_after_escaped_yuna_3": {
-    "name": "Yuna",
-    "text": "\"Senpai...\""
-  },
-  "day5_after_escaped_yuna_4": {
-    "name": "Yuna",
-    "text": "\"On s'en est sortis...\""
-  },
-  "day5_after_escaped_yuna_5": {
-    "name": "Moi",
-    "text": "\"On s'en est sortis. On s'en est sortis, Yuna.\""
-  },
-  "day5_after_escaped_solo": {
-    "name": "Moi",
-    "text": "*Seul. J'ai couru sous la pluie. Les lampadaires oscillent dans l'averse.*"
-  },
-  "day5_after_escaped_solo_2": {
-    "name": "Moi",
-    "text": "*Je ne peux pas m'arrêter. Pas assez loin encore. Plus. Plus loin.*"
-  },
-  "day5_after_escaped_choice": {
-    "name": "Moi",
-    "text": "*Je dois informer le monde de ces preuves. Maintenant.*",
-    "choices": [
-      "Appeler la police",
-      "Divulguer en ligne"
-    ]
-  },
-  "day5_after_police": {
-    "name": "Moi",
-    "text": "*J'ai appelé la police. Ma voix tremblait, mais j'ai tout expliqué. J'ai soumis la carte mémoire et les photos comme preuves.*"
-  },
-  "day5_after_police_2": {
-    "name": "Moi",
-    "text": "*La police se déploie. Des sirènes résonnent en direction du lycée.*"
-  },
-  "day5_after_expose_online": {
-    "name": "Moi",
-    "text": "*Connecté au wifi d'une supérette. En train de télécharger toutes les photos et documents. Réseaux sociaux, rédactions de journaux, forums en ligne...*"
-  },
-  "day5_after_expose_2": {
-    "name": "Moi",
-    "text": "*Téléchargement terminé. ...Bientôt le monde saura.*"
-  },
-  "day5_after_captured": {
-    "name": "Moi",
-    "text": "*...J'ai ouvert les yeux.*"
-  },
-  "day5_after_captured_2": {
-    "name": "Moi",
-    "text": "*...Où suis-je ?*"
-  },
-  "day5_after_captured_3": {
-    "name": "Moi",
-    "text": "*Des tubes fluorescents qui clignotent. Bzzzt. Bzzzt. Le plafond. Un plafond en béton. Le sous-sol.*"
-  },
-  "day5_after_captured_4": {
-    "name": "Moi",
-    "text": "*J'ai essayé de bouger les mains. Elles ne bougent pas. ...Des sangles en cuir. Enroulées autour de mes poignets. Je suis attaché à une chaise. ...Comme ce que j'ai vu dans le rêve de Seolhwa. La même chaise. Les mêmes sangles. Les mêmes tubes fluorescents.*"
-  },
-  "day5_after_captured_5": {
-    "name": "Professeure principale",
-    "text": "\"Tu t'es réveillé, {name}.\""
-  },
-  "day5_after_captured_6": {
-    "name": "Professeure principale",
-    "text": "\"...Tu as essayé de fuir ? Tu sais combien j'étais inquiète ?\""
-  },
-  "day5_after_captured_7": {
-    "name": "Riin",
-    "text": "\"Je vais préparer le bilan final.\""
-  },
-  "day5_after_captured_8": {
-    "name": "Riin",
-    "text": "\"Juste une prise de sang et une perfusion et c'est terminé. C'est la dernière fois.\""
-  },
-  "day5_after_captured_9": {
-    "name": "Moi",
-    "text": "*'La dernière'. Ce mot pèse lourd. Une fois que ce sera fini... que se passe-t-il ? Comme Seolhwa ?*"
-  },
-  "day5_after_captured_10": {
-    "name": "Moi",
-    "text": "*L'infirmière Riin désinfecte l'intérieur de mon coude. Le froid du tampon alcoolisé touche ma peau. ...Je ne peux pas abandonner ici. Ce n'est pas encore fini.*"
-  },
-  "day5_after_captured_choice": {
-    "name": "Moi",
-    "text": "*...Qu'est-ce que je fais ?*",
-    "choices": [
-      "Résister",
-      "L'accepter"
-    ]
-  },
-  "day5_after_captured_resist": {
-    "name": "Moi",
-    "text": "*J'ai bandé tous les muscles de mon corps. La sangle en cuir s'enfonce dans mon poignet. Ça fait mal. Peu importe.*"
-  },
-  "day5_after_captured_resist_2": {
-    "name": "Moi",
-    "text": "\"Non...! Lâchez-moi...!\""
-  },
-  "day5_after_captured_resist_3": {
-    "name": "Riin",
-    "text": "\"Si tu bouges c'est dangereux. Reste tranquille —\""
-  },
-  "day5_after_captured_resist_4": {
-    "name": "Moi",
-    "text": "*À ce moment-là. Le courant a été coupé.*"
-  },
-  "day5_after_captured_resist_5": {
-    "name": "Professeure principale",
-    "text": "\"...Quoi ?\""
-  },
-  "day5_after_captured_resist_6": {
-    "name": "Riin",
-    "text": "\"Une coupure de courant ? À cette heure-là ?\""
-  },
-  "day5_after_captured_resist_7": {
-    "name": "Moi",
-    "text": "*Dans l'obscurité... je sens une main. Une main froide et transparente. Elle desserre la sangle en cuir.*"
-  },
-  "day5_after_captured_resist_8": {
-    "name": "Moi",
-    "text": "*...Seolhwa. La sangle s'est dénouée. Seolhwa prend ma main. Je pensais qu'une main transparente ne pouvait rien saisir... mais elle tient.*"
-  },
-  "day5_after_captured_resist_9": {
-    "name": "Moi",
-    "text": "*Je suis entraîné dans l'obscurité. En étouffant mes pas. Vers la sortie de secours.*"
-  },
-  "day5_after_captured_submit": {
-    "name": "Moi",
-    "text": "*...La force me quitte. Plus d'énergie pour résister. Ma tête se penche. Mes yeux se ferment.*"
-  },
-  "day5_after_captured_submit_2": {
-    "name": "Moi",
-    "text": "*La seringue touche mon bras. L'aiguille entre. Un liquide froid se répand dans les veines.*"
-  },
-  "day5_after_captured_submit_3": {
-    "name": "Moi",
-    "text": "*...Il fait chaud. C'est comme si mon corps fondait. Mes pensées se brouillent.*"
-  },
-  "day5_after_captured_submit_4": {
-    "name": "Moi",
-    "text": "*Il y a quelque chose... que j'oublie. Qu'est-ce que j'oublie ? C'était important... c'était quoi...*"
-  },
-  "day5_after_stayed": {
-    "name": "Moi",
-    "text": "*Madame Eunsu prend ma main et m'aide à me lever.*"
-  },
-  "day5_after_stayed_2": {
-    "name": "Professeure principale",
-    "text": "\"Tu es un bon élève, {name}.\""
-  },
-  "day5_after_stayed_3": {
-    "name": "Moi",
-    "text": "*La prof me conduit à la classe. On marche dans le couloir. Mes pas et les talons de la prof résonnent.*"
-  },
-  "day5_after_stayed_4": {
-    "name": "Moi",
-    "text": "*La porte de la classe s'ouvre. Sea est assise. L'infirmière Riin est debout. Tout le monde sourit.*"
-  },
-  "day5_after_stayed_5": {
-    "name": "Professeure principale",
-    "text": "\"Ta professeure te protégera de tout. Tu n'as besoin de t'inquiéter de rien.\""
-  },
-  "day5_after_stayed_6": {
-    "name": "Moi",
-    "text": "*Je m'assieds. Sea s'assied à côté de moi. L'infirmière Riin tend une tasse de thé.*"
-  },
-  "day5_after_stayed_7": {
-    "name": "Professeure principale",
-    "text": "\"...{name} n'a qu'à rester aux côtés de sa professeure. Pour toujours.\""
-  },
-  "day5_after_stayed_8": {
-    "name": "Moi",
-    "text": "*Madame Eunsu sourit. Un sourire chaleureux.*"
-  },
-  "day5_after_stayed_9": {
-    "name": "Moi",
-    "text": "*...Ce sourire a-t-il toujours été aussi effrayant ? Non. Ce n'est pas effrayant. ...Ce n'est pas effrayant. ...Pourquoi ce n'est pas effrayant ?*"
-  },
-  "day5_after_stayed_10": {
-    "name": "Moi",
-    "text": "*J'ai bu le thé. Il est chaud. C'est agréable. ...Il y a quelque chose que j'ai l'impression d'oublier. C'était quoi. ...Ça va. Je peux l'oublier. Cet endroit est sûr.*"
-  },
-  "day5_after_end": {
-    "name": "Moi",
-    "text": "*...*"
-  }
+    "day5_after_start": {
+        "name": "",
+        "text": "*...*"
+    },
+    "day5_after_branch": {
+        "name": "",
+        "text": ""
+    },
+
+    "day5_after_cage_1": {
+        "name": "Eunsu",
+        "text": "\"...Vraiment ?\""
+    },
+    "day5_after_cage_2": {
+        "name": "Moi",
+        "text": "\"...Oui.\""
+    },
+    "day5_after_cage_3": {
+        "name": "Moi",
+        "text": "*La professeure a souri. Sincerement. Pour la premiere fois en 12 cycles -- un sourire qui n'avait plus besoin d'attendre.*"
+    },
+    "day5_after_cage_4": {
+        "name": "Eunsu",
+        "text": "\"...Merci, {name}.\""
+    },
+    "day5_after_cage_5": {
+        "name": "Moi",
+        "text": "*La professeure m'a pris dans ses bras. C'etait chaud. Impossiblement chaud.*"
+    },
+    "day5_after_cage_6": {
+        "name": "Moi",
+        "text": "*Je suis retourne en classe. Je me suis assis. Sea s'assoit a cote de moi. L'infirmiere Riin me tend du the. Tout le monde sourit.*"
+    },
+    "day5_after_cage_7": {
+        "name": "Eunsu",
+        "text": "\"...{name} n'a qu'a rester aupres de moi. Pour toujours.\""
+    },
+    "day5_after_cage_8": {
+        "name": "Moi",
+        "text": "*J'ai bu le the. C'est chaud. C'est agreable. ...Quelque part -- il me semble entendre une voix. 'Fuis', dit-elle. Mais de loin, de tres loin.*"
+    },
+    "day5_after_cage_9": {
+        "name": "Moi",
+        "text": "*...Ce sourire a-t-il toujours ete aussi effrayant ? Non. Il n'est pas effrayant. ...Il n'est pas effrayant. ...Pourquoi n'est-il pas effrayant ?*"
+    },
+    "day5_after_cage_10": {
+        "name": "Moi",
+        "text": "*...J'ai l'impression d'oublier quelque chose. Quoi donc ? ...Ce n'est rien. Je peux oublier. Ici, je suis en securite.*"
+    },
+
+    "day5_after_caught_1": {
+        "name": "Moi",
+        "text": "*...J'ai ouvert les yeux. Les neons clignotent. Plafond en beton. Le sous-sol.*"
+    },
+    "day5_after_caught_2": {
+        "name": "Moi",
+        "text": "*J'ai essaye de bouger les mains. Elles ne bougent pas. ...Des sangles en cuir. Attache a une chaise.*"
+    },
+    "day5_after_caught_3": {
+        "name": "Moi",
+        "text": "*C'est identique a ce que j'ai vu dans le reve de Seolhwa. La meme chaise. Les memes sangles. Les memes neons.*"
+    },
+    "day5_after_caught_4": {
+        "name": "Eunsu",
+        "text": "\"Tu t'es reveille, {name}.\""
+    },
+    "day5_after_caught_5": {
+        "name": "Eunsu",
+        "text": "\"...Tu as essaye de fuir ? Tu sais combien ta professeure s'est inquietee ?\""
+    },
+    "day5_after_caught_6": {
+        "name": "Riin",
+        "text": "\"Je vais preparer le dernier examen. Juste une prise de sang et une perfusion, et c'est termine.\""
+    },
+    "day5_after_caught_7": {
+        "name": "Moi",
+        "text": "*L'infirmiere Riin desinfecte l'interieur de mon coude. Le froid du tampon alcoolise touche ma peau. ...Je ne peux pas abandonner ici.*"
+    },
+    "day5_after_caught_choice": {
+        "name": "Moi",
+        "text": "*...Qu'est-ce que je fais ?*",
+        "choices": [
+            "Resister",
+            "Accepter"
+        ]
+    },
+
+    "day5_after_caught_resist_1": {
+        "name": "Moi",
+        "text": "*J'ai bande tous mes muscles. Les sangles en cuir s'enfoncent dans mes poignets. Ca fait mal. Peu importe.*"
+    },
+    "day5_after_caught_resist_2": {
+        "name": "Moi",
+        "text": "\"Non... ! Lachez-moi... !\""
+    },
+    "day5_after_caught_resist_3": {
+        "name": "Riin",
+        "text": "\"Si tu bouges, c'est dangereux. Reste tranquille --\""
+    },
+    "day5_after_caught_resist_4": {
+        "name": "Moi",
+        "text": "*A cet instant. Le courant a ete coupe.*"
+    },
+    "day5_after_caught_resist_5": {
+        "name": "Moi",
+        "text": "*Dans l'obscurite... je sens une main. Froide et translucide. Elle defait les sangles en cuir. ...Seolhwa.*"
+    },
+    "day5_after_caught_resist_6": {
+        "name": "Moi",
+        "text": "*Les sangles se sont defaites. Seolhwa prend ma main. Je pensais qu'une main translucide ne pourrait pas etre saisie... mais elle tient.*"
+    },
+    "day5_after_caught_resist_7": {
+        "name": "Moi",
+        "text": "*Entraine dans l'obscurite. En etouffant nos pas. Vers la sortie de secours.*"
+    },
+
+    "day5_after_caught_submit_1": {
+        "name": "Moi",
+        "text": "*...La force me quitte. Plus d'energie pour resister. Ma tete retombe. Mes yeux se ferment.*"
+    },
+    "day5_after_caught_submit_2": {
+        "name": "Moi",
+        "text": "*La seringue touche mon bras. L'aiguille penetre. Un liquide froid se repand dans mes veines.*"
+    },
+    "day5_after_caught_submit_3": {
+        "name": "Moi",
+        "text": "*...Ca se rechauffe. Comme si mon corps fondait. Les pensees se brouillent.*"
+    },
+    "day5_after_caught_submit_4": {
+        "name": "Moi",
+        "text": "*J'oublie... quelque chose. Qu'est-ce que j'oublie ? C'etait important... c'etait quoi...*"
+    },
+
+    "day5_after_confront_1": {
+        "name": "Moi",
+        "text": "*Derriere -- des pas. Quelqu'un monte l'escalier. Une marche. Une marche. Lentement. Sans courir.*"
+    },
+    "day5_after_confront_2": {
+        "name": "Moi",
+        "text": "*Les pas se rapprochent. Le bruit de chaussures a talons sur le beton. Les chaussures de Mme Eunsu.*"
+    },
+    "day5_after_confront_3": {
+        "name": "Moi",
+        "text": "*Elle s'est arretee. En haut de l'escalier. Mme Eunsu est apparue. Essoufflee. Les cheveux en desordre.*"
+    },
+    "day5_after_confront_4": {
+        "name": "Moi",
+        "text": "*La professeure reprend son souffle, forcant les coins de ses levres vers le haut. Le sourire doux habituel. Mais les muscles de son visage tressaillent legerement.*"
+    },
+    "day5_after_confront_5": {
+        "name": "Eunsu",
+        "text": "\"{name}... c'est dangereux la-bas. Viens ici. Viens vers ta professeure...\""
+    },
+    "day5_after_confront_6": {
+        "name": "Moi",
+        "text": "*Quand j'ai recule, le sourire qui s'accrochait au visage de Mme Eunsu est tombe d'un coup. Le masque s'est brise.*"
+    },
+    "day5_after_confront_7": {
+        "name": "Moi",
+        "text": "*De la sueur perle sur son front. Des cernes sous les yeux. Je n'etais pas le seul a ne pas avoir dormi cette nuit. Un vent froid de la sortie de secours est passe entre nous.*"
+    },
+    "day5_after_confront_8": {
+        "name": "Eunsu",
+        "text": "\"C'etait toujours comme ca. A chaque fois tu t'enfuis. A chaque fois tu te fais attraper. A chaque fois on recommence depuis le debut.\""
+    },
+    "day5_after_confront_9": {
+        "name": "Eunsu",
+        "text": "\"La 1ere fois, j'etais en colere. Que tu fuies. La 2e fois, je ne comprenais pas. Pourquoi tu partais.\""
+    },
+    "day5_after_confront_10": {
+        "name": "Eunsu",
+        "text": "\"A partir de la 3e fois -- j'ai eu peur. Pas que tu partes, mais qu'en revenant, tu ne me reconnaisses plus.\""
+    },
+    "day5_after_confront_11": {
+        "name": "Eunsu",
+        "text": "\"Ca me faisait horreur. Alors cette fois -- je voulais t'empecher de fuir.\""
+    },
+    "day5_after_confront_12": {
+        "name": "Eunsu",
+        "text": "\"Je pensais que si j'etais gentille avec toi, tu resterais. Que si je t'aimais sincerement -- tu ne partirais pas.\""
+    },
+    "day5_after_confront_13": {
+        "name": "Eunsu",
+        "text": "\"...Le 1er jour, quand tu es entre dans la classe. Meme si c'etait la 13e fois -- mon coeur s'est emballe.\""
+    },
+    "day5_after_confront_14": {
+        "name": "Eunsu",
+        "text": "\"Apres 12 fois, on pourrait croire que je m'y serais habituee. Mais ces yeux qui me voient pour la premiere fois. Ces yeux sans aucun souvenir -- ca fait mal a chaque fois.\""
+    },
+    "day5_after_confront_15": {
+        "name": "Moi",
+        "text": "*La professeure s'est arretee. Devant la sortie de secours. A trois metres de moi. Elle a sorti une seringue de sa poche. Lentement. Comme pour me la montrer.*"
+    },
+    "day5_after_confront_16": {
+        "name": "Moi",
+        "text": "*Le liquide dans la seringue scintille sous le neon. -- C'est ca qui a efface 12 cycles de souvenirs. Ce simple liquide transparent.*"
+    },
+    "day5_after_confront_17": {
+        "name": "Eunsu",
+        "text": "\"Derniere chance, {name}. Une seule injection et tout s'arrete. L'horrible verite, la peur que tu viens de ressentir, meme ta haine envers moi -- tout.\""
+    },
+    "day5_after_confront_18": {
+        "name": "Eunsu",
+        "text": "\"Retour au 1er jour. Redevenir le {name} qui sourit si joliment. ...**S'il te plait.**\""
+    },
+    "day5_after_confront_19": {
+        "name": "Moi",
+        "text": "*La main de la professeure tremble. La seringue oscille. Une goutte tombe au sol. Des larmes coulent de ses yeux. Elle ne les essuie pas. Une expression qui sait que ca n'a plus aucun sens.*"
+    },
+    "day5_after_confront_20": {
+        "name": "Moi",
+        "text": "*La seringue et la sortie de secours. L'oubli et la memoire. La cage et le ciel. Seolhwa -- est visible. Derriere la professeure. Au bas de l'escalier. Une silhouette floue. Elle ne dit rien. Elle me regarde -- c'est tout.*"
+    },
+
+    "day5_after_final_choice": {
+        "name": "Moi",
+        "text": "*Il suffit de la pousser et de courir. Elle n'a pas la force de m'arreter. -- Mais mes jambes refusent de bouger. La memoire corporelle de 12 cycles se souvient. Que les bras de cette personne etaient un refuge. Que les mains de cette personne etaient chaudes.*",
+        "choices": [
+            "Non. Je me souviendrai.",
+            "...Effacez-moi.",
+            "Sortons ensemble, Madame."
+        ]
+    },
+
+    "day5_after_true_1": {
+        "name": "Moi",
+        "text": "*La main de Mme Eunsu tremble. La seringue est tombee au sol. Le verre s'est fracasse contre le carrelage.*"
+    },
+    "day5_after_true_2": {
+        "name": "Eunsu",
+        "text": "\"...Alors. Le 13e aussi -- s'en va.\""
+    },
+    "day5_after_true_3": {
+        "name": "Moi",
+        "text": "*La professeure s'est ecartee. Les yeux fermes. Comme si elle n'avait plus la force de barrer le chemin.*"
+    },
+    "day5_after_true_4": {
+        "name": "Moi",
+        "text": "*J'ai passe la sortie de secours. Avec Yuna. L'escalier de secours derriere l'ancien batiment.*"
+    },
+    "day5_after_true_5": {
+        "name": "Moi",
+        "text": "*L'air de l'aube est froid. Au-dela de la cloture de l'ecole -- la route est visible. Je me suis retourne.*"
+    },
+    "day5_after_true_6": {
+        "name": "Moi",
+        "text": "*Seolhwa se tient a l'interieur de la sortie de secours. Elle ne peut pas franchir la porte.*"
+    },
+    "day5_after_true_7": {
+        "name": "Moi",
+        "text": "\"Seolhwa --\""
+    },
+    "day5_after_true_seolhwa_branch": {
+        "name": "Seolhwa",
+        "text": "\"...Va-t'en.\""
+    },
+    "day5_after_true_8": {
+        "name": "Seolhwa",
+        "text": "\"**Je t'ai dit de partir.**\""
+    },
+    "day5_after_true_9": {
+        "name": "Moi",
+        "text": "*Seolhwa a souri. La lumiere s'estompe.*"
+    },
+    "day5_after_true_10": {
+        "name": "Seolhwa",
+        "text": "\"J'ai attendu 6 cycles. Que tu sortes.\""
+    },
+    "day5_after_true_11": {
+        "name": "Seolhwa",
+        "text": "\"...J'ai pris fin il y a un an. ...Mais si tu sors, ca me suffit.\""
+    },
+    "day5_after_true_12": {
+        "name": "Moi",
+        "text": "*Le corps de Seolhwa devient translucide. Il se dissipe en particules de lumiere. Cette lumiere -- afflue vers moi. S'infiltre dans ma poitrine. ...C'est chaud. Ce n'est pas une hallucination -- c'est un souvenir.*"
+    },
+
+    "day5_after_forget_1": {
+        "name": "Moi",
+        "text": "\"...Effacez-moi.\""
+    },
+    "day5_after_forget_2": {
+        "name": "Eunsu",
+        "text": "\"...Tu es serieux ?\""
+    },
+    "day5_after_forget_3": {
+        "name": "Moi",
+        "text": "\"...Si tout cela fait partie de mes souvenirs... alors les 12 lignes sans nom abandonnees dans ce sous-sol sont toutes moi.\""
+    },
+    "day5_after_forget_4": {
+        "name": "Moi",
+        "text": "\"Je ne peux pas... je ne peux pas supporter ca. J'ai l'impression que ma tete va exploser...\""
+    },
+    "day5_after_forget_5": {
+        "name": "Moi",
+        "text": "\"S'il vous plait, effacez-moi. Faites-moi tout oublier.\""
+    },
+    "day5_after_forget_6": {
+        "name": "Moi",
+        "text": "*Mme Eunsu a leve la seringue. Sa main tremble.*"
+    },
+    "day5_after_forget_7": {
+        "name": "Eunsu",
+        "text": "\"...Pardon.\""
+    },
+    "day5_after_forget_8": {
+        "name": "Moi",
+        "text": "*L'aiguille est entree dans mon bras. Froid. La conscience s'efface.*"
+    },
+    "day5_after_forget_9": {
+        "name": "Moi",
+        "text": "*La derniere chose que j'ai vue -- Seolhwa. Seolhwa pleure. Ses levres bougent. Aucun son.*"
+    },
+    "day5_after_forget_10": {
+        "name": "Moi",
+        "text": "*...Je peux le lire. Le mouvement de ses levres. -- \"N'oublie pas\"*"
+    },
+    "day5_after_forget_11": {
+        "name": "Moi",
+        "text": "*J'ai oublie.*"
+    },
+    "day5_after_forget_12": {
+        "name": "",
+        "text": "*...*"
+    },
+
+    "day5_after_resist_1": {
+        "name": "Eunsu",
+        "text": "\"...Ensemble ?\""
+    },
+    "day5_after_resist_2": {
+        "name": "Moi",
+        "text": "\"Vous etes aussi une victime, Madame. Vous avez ete utilisee par le conseil.\""
+    },
+    "day5_after_resist_3": {
+        "name": "Eunsu",
+        "text": "\"......\""
+    },
+    "day5_after_resist_4": {
+        "name": "Eunsu",
+        "text": "\"Non. A partir de la 3e fois, c'etait mon choix.\""
+    },
+    "day5_after_resist_5": {
+        "name": "Eunsu",
+        "text": "\"Je suis la coupable, {name}.\""
+    },
+    "day5_after_resist_6": {
+        "name": "Moi",
+        "text": "\"Malgre tout. Si vous restez ici, le 14e cycle commencera. Pour quelqu'un d'autre.\""
+    },
+    "day5_after_resist_7": {
+        "name": "Moi",
+        "text": "*Mme Eunsu s'est arretee. Seolhwa est apparue. Derriere Mme Eunsu.*"
+    },
+    "day5_after_resist_8": {
+        "name": "Seolhwa",
+        "text": "\"...Eunsu.\""
+    },
+    "day5_after_resist_9": {
+        "name": "Seolhwa",
+        "text": "\"Pendant 6 ans, j'ai regarde chaque jour. Vous accueillir un nouveau moi a chaque fois. Sourire a chaque fois. -- Vous briser un peu plus a chaque fois.\""
+    },
+    "day5_after_resist_10": {
+        "name": "Seolhwa",
+        "text": "\"...Vous aussi, vous devez partir, Madame.\""
+    },
+    "day5_after_resist_11": {
+        "name": "Moi",
+        "text": "*Mme Eunsu a pose la seringue au sol. ...Elle est restee debout un long moment.*"
+    },
+    "day5_after_resist_12": {
+        "name": "Eunsu",
+        "text": "\"...Si je sors, tout ce que j'ai fait sera revele.\""
+    },
+    "day5_after_resist_13": {
+        "name": "Moi",
+        "text": "\"Je sais.\""
+    },
+    "day5_after_resist_14": {
+        "name": "Moi",
+        "text": "*Mme Eunsu -- a pleure. Comme si le poids de 12 cycles s'effondrait d'un coup. \"...Comment peux-tu m'emmener avec toi. Apres ce que je t'ai fait.\"*"
+    },
+    "day5_after_resist_15": {
+        "name": "Moi",
+        "text": "*\"...Vous devez repondre de vos actes. Mais c'est mieux que de repeter tout ca.\" J'ai passe la sortie de secours. Avec Mme Eunsu. Seolhwa a souri depuis l'interieur de la porte. La lumiere s'est dispersee.*"
+    },
+
+    "day5_after_ghost_1": {
+        "name": "Moi",
+        "text": "*Je ne peux pas bouger. Mon corps est fige.*"
+    },
+    "day5_after_ghost_2": {
+        "name": "Moi",
+        "text": "*Mme Eunsu s'approche. Seringue a la main.*"
+    },
+    "day5_after_ghost_3": {
+        "name": "Seolhwa",
+        "text": "\"...C'est moi qui vais le faire.\""
+    },
+    "day5_after_ghost_4": {
+        "name": "Moi",
+        "text": "\"Seolhwa -- ?\""
+    },
+    "day5_after_ghost_5": {
+        "name": "Seolhwa",
+        "text": "\"J'ai regarde pendant 6 cycles. Toi, incapable de te decider. Cette fois aussi. Je sais. C'est une habitude.\""
+    },
+    "day5_after_ghost_6": {
+        "name": "Seolhwa",
+        "text": "\"Alors -- **c'est moi qui vais decider pour toi.**\""
+    },
+    "day5_after_ghost_7": {
+        "name": "Moi",
+        "text": "*Seolhwa m'a regarde droit dans les yeux. Une hallucination -- et pourtant jamais aussi nette.*"
+    },
+    "day5_after_ghost_8": {
+        "name": "Seolhwa",
+        "text": "\"**Cours. Maintenant.**\""
+    },
+    "day5_after_ghost_9": {
+        "name": "Moi",
+        "text": "*Mon corps a bouge. La voix de Seolhwa -- la memoire en moi -- met mon corps en mouvement. J'ai saisi la main de Yuna et couru vers la sortie de secours.*"
+    },
+    "day5_after_ghost_10": {
+        "name": "Moi",
+        "text": "*Mme Eunsu a crie derriere moi mais je ne me suis pas arrete. J'ai franchi la sortie de secours. Je me suis retourne. Seolhwa se tient a l'interieur de la porte. Elle sourit.*"
+    },
+    "day5_after_ghost_11": {
+        "name": "Seolhwa",
+        "text": "\"...Eunsu. Il n'y aura pas de 14e.\""
+    },
+    "day5_after_ghost_12": {
+        "name": "Moi",
+        "text": "*Seolhwa a disparu. Comme la lumiere. Sans un bruit. Au meme moment -- une alarme s'est declenchee dans le batiment.*"
+    },
+    "day5_after_ghost_13": {
+        "name": "Moi",
+        "text": "*Le batiment s'est anime. Sirenes, pas, cris. ...Seolhwa n'est plus la. Dans ma tete non plus -- le silence. J'ai quitte l'ecole.*"
+    },
+
+    "day5_after_end": {
+        "name": "",
+        "text": "*...*"
+    }
 }

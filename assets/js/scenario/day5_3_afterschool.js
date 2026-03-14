@@ -47,7 +47,7 @@ Object.assign(SCENARIO[5], {
         background: "classroom",
         bgm: "ending_dark.mp3",
         character: "eunsu_gentle",
-        next: "day5_after_cage_2"
+        next: "day5_after_end"
     },
     "day5_after_cage_2": {
         next: "day5_after_cage_3"

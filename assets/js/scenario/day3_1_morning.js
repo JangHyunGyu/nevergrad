@@ -95,6 +95,9 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_gate_5"
     },
     "day3_morning_gate_5": {
+        next: "day3_morning_gate_6"
+    },
+    "day3_morning_gate_6": {
         next: "day3_morning_locker_1"
     },
 
@@ -197,14 +200,6 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_classroom_5"
     },
     "day3_morning_classroom_5": {
-        next: "day3_morning_nametag_1"
-    },
-
-    // ===== 이름표 해리감 (Day 3 정체성 해리) =====
-    "day3_morning_nametag_1": {
-        next: "day3_morning_nametag_2"
-    },
-    "day3_morning_nametag_2": {
         next: "day3_morning_sea_1"
     },
 
@@ -232,13 +227,13 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_6"
     },
     "day3_morning_sea_6": {
-        next: "day3_morning_sea_6a"
-    },
-    "day3_morning_sea_6a": {
         next: "day3_morning_sea_7"
     },
     "day3_morning_sea_7": {
         character: null,
+        next: "day3_morning_sea_6a"
+    },
+    "day3_morning_sea_6a": {
         next: "day3_morning_sea_8"
     },
     "day3_morning_sea_8": {

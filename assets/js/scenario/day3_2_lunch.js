@@ -286,6 +286,13 @@ Object.assign(SCENARIO[3], {
     },
     // 속이 뒤집힌다. 구역질인지 공포인지
     "day3_lunch_door_open_6": {
+        next: "day3_lunch_nametag_1"
+    },
+    // ── 이름표 해리감 (복도) ──
+    "day3_lunch_nametag_1": {
+        next: "day3_lunch_nametag_2"
+    },
+    "day3_lunch_nametag_2": {
         next: "day3_lunch_door_open_7"
     },
     // 하지만 부정할 수도 없다. 사진이 있으니까.

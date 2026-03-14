@@ -189,11 +189,12 @@ Object.assign(SCENARIO[5], {
         ]
     },
 
-    // ── ESCAPE 루트 종료 → 점심으로 ──
+    // ── ESCAPE 루트 종료 → 추격 스킵, 방과후로 직행 ──
     "day5_morning_escape_end": {
         character: null,
-        changeSlot: "lunch",
-        next: "day5_lunch_start"
+        setFlags: ["route_escape"],
+        changeSlot: "afterschool",
+        next: "day5_after_start"
     },
 
     // ══════════════════════════════════════

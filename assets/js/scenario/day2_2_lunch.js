@@ -328,6 +328,9 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_rooftop_9"
     },
     "day2_lunch_rooftop_9": {
+        next: "day2_lunch_rooftop_9a"
+    },
+    "day2_lunch_rooftop_9a": {
         next: "day2_lunch_rooftop_10"
     },
     "day2_lunch_rooftop_10": {

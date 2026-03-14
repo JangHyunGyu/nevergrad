@@ -90,12 +90,8 @@ class SceneRenderer {
             const newPrefix = this._getCharPrefix(src);
 
             if (prevPrefix === newPrefix) {
-                // 같은 캐릭터 표정 변화 → 빠른 크로스페이드
-                el.style.opacity = '0';
-                setTimeout(() => {
-                    el.src = src;
-                    requestAnimationFrame(() => { el.style.opacity = ''; });
-                }, 120);
+                // 같은 캐릭터 표정 변화 → 즉시 교체
+                el.src = src;
             } else {
                 // 다른 캐릭터 → 페이드아웃 후 페이드인
                 el.style.opacity = '0';

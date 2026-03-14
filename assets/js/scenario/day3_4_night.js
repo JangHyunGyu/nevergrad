@@ -117,6 +117,9 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_bleed_7"
     },
     "day3_night_bleed_7": {
+        next: "day3_night_bleed_7a"
+    },
+    "day3_night_bleed_7a": {
         next: "day3_night_bleed_8"
     },
     "day3_night_bleed_8": {
@@ -126,6 +129,9 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_bleed_10"
     },
     "day3_night_bleed_10": {
+        next: "day3_night_bleed_10a"
+    },
+    "day3_night_bleed_10a": {
         next: "day3_night_bleed_11"
     },
     "day3_night_bleed_11": {
@@ -160,6 +166,9 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_stat_crack_4": {
         glitch: { shatterStatLabel: true, revealDuration: 2000 },
+        next: "day3_night_stat_crack_4a"
+    },
+    "day3_night_stat_crack_4a": {
         next: "day3_night_stat_crack_5"
     },
     "day3_night_stat_crack_5": {
@@ -228,6 +237,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_4"
     },
     "day3_night_seolhwa_4": {
+        next: "day3_night_seolhwa_4a"
+    },
+    "day3_night_seolhwa_4a": {
+        next: "day3_night_seolhwa_4b"
+    },
+    "day3_night_seolhwa_4b": {
         next: "day3_night_seolhwa_5"
     },
     // "...5일이야."
@@ -238,12 +253,18 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_6"
     },
     "day3_night_seolhwa_6": {
+        next: "day3_night_seolhwa_6a"
+    },
+    "day3_night_seolhwa_6a": {
         next: "day3_night_seolhwa_7"
     },
     // "5일 안에... 여기서 나가야 해."
     "day3_night_seolhwa_7": {
         typingSpeed: 150,
         unskippable: true,
+        next: "day3_night_seolhwa_7a"
+    },
+    "day3_night_seolhwa_7a": {
         next: "day3_night_seolhwa_8"
     },
     // "나처럼 되기 전에."
@@ -259,6 +280,9 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_11"
     },
     "day3_night_seolhwa_11": {
+        next: "day3_night_seolhwa_11a"
+    },
+    "day3_night_seolhwa_11a": {
         next: "day3_night_seolhwa_12"
     },
     // "...기억해. 왼손."

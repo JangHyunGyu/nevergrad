@@ -244,6 +244,19 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_escape_12": {
         glitch: { noise: true },
+        next: "day5_ending_escape_13"
+    },
+    // ── 에필로그 ──
+    "day5_ending_escape_13": {
+        background: "black",
+        fadeIn: true,
+        next: "day5_ending_escape_14"
+    },
+    "day5_ending_escape_14": {
+        next: "day5_ending_escape_15"
+    },
+    "day5_ending_escape_15": {
+        character: "yuna_normal",
         next: "day5_ending_escape_title"
     },
     "day5_ending_escape_title": {
@@ -324,6 +337,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_resist_18": {
         character: "eunsu_crying",
+        next: "day5_ending_resist_18a"
+    },
+    "day5_ending_resist_18a": {
+        character: "eunsu_normal",
+        next: "day5_ending_resist_18b"
+    },
+    "day5_ending_resist_18b": {
+        character: null,
+        next: "day5_ending_resist_18c"
+    },
+    "day5_ending_resist_18c": {
+        character: "eunsu_normal",
+        next: "day5_ending_resist_18d"
+    },
+    "day5_ending_resist_18d": {
         next: "day5_ending_resist_19"
     },
     "day5_ending_resist_19": {
@@ -337,6 +365,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_22"
     },
     "day5_ending_resist_22": {
+        next: "day5_ending_resist_23"
+    },
+    "day5_ending_resist_23": {
+        next: "day5_ending_resist_24"
+    },
+    "day5_ending_resist_24": {
         next: "day5_ending_resist_title"
     },
     "day5_ending_resist_title": {
@@ -631,6 +665,9 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_21"
     },
     "day5_ending_ghost_21": {
+        next: "day5_ending_ghost_22"
+    },
+    "day5_ending_ghost_22": {
         next: "day5_ending_ghost_title"
     },
     "day5_ending_ghost_title": {
@@ -674,6 +711,12 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_complicit_8": {
         autoAdvance: true,
+        next: "day5_ending_complicit_8a"
+    },
+    "day5_ending_complicit_8a": {
+        next: "day5_ending_complicit_8b"
+    },
+    "day5_ending_complicit_8b": {
         next: "day5_ending_complicit_9"
     },
     "day5_ending_complicit_9": {

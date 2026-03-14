@@ -162,12 +162,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_seolhwa_6"
     },
     "day3_morning_seolhwa_6": {
-        character: null,
+        character: "seolhwa_sad",
+        typingSpeed: 120,
         next: "day3_morning_seolhwa_7"
     },
     "day3_morning_seolhwa_7": {
-        character: "seolhwa_sad",
-        typingSpeed: 120,
+        character: null,
         next: "day3_morning_seolhwa_8"
     },
     "day3_morning_seolhwa_8": {
@@ -211,6 +211,9 @@ Object.assign(SCENARIO[3], {
     // ===== 세아 가짜 미소 =====
     "day3_morning_sea_1": {
         character: "sea_smile",
+        next: "day3_morning_sea_1a"
+    },
+    "day3_morning_sea_1a": {
         next: "day3_morning_sea_2"
     },
     "day3_morning_sea_2": {
@@ -229,6 +232,9 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_6"
     },
     "day3_morning_sea_6": {
+        next: "day3_morning_sea_6a"
+    },
+    "day3_morning_sea_6a": {
         next: "day3_morning_sea_7"
     },
     "day3_morning_sea_7": {

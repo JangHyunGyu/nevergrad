@@ -130,6 +130,9 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_sea_4"
     },
     "day3_after_sea_4": {
+        next: "day3_after_sea_4a"
+    },
+    "day3_after_sea_4a": {
         next: "day3_after_sea_choice"
     },
 
@@ -188,12 +191,21 @@ Object.assign(SCENARIO[3], {
         stats: { sea: { danger: 5 } }
     },
     "day3_after_sea_lie_3": {
+        next: "day3_after_sea_lie_3a"
+    },
+    "day3_after_sea_lie_3a": {
         next: "day3_after_sea_lie_4"
     },
     "day3_after_sea_lie_4": {
+        next: "day3_after_sea_lie_4a"
+    },
+    "day3_after_sea_lie_4a": {
         next: "day3_after_sea_lie_5"
     },
     "day3_after_sea_lie_5": {
+        next: "day3_after_sea_lie_5a"
+    },
+    "day3_after_sea_lie_5a": {
         character: "sea_smile",
         glitch: { noise: true, noiseDuration: 150 },
         next: "day3_after_yuna_check"
@@ -262,6 +274,9 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_eunsu_peek_8": {
         character: "eunsu_smile",
+        next: "day3_after_eunsu_peek_8a"
+    },
+    "day3_after_eunsu_peek_8a": {
         next: "day3_after_eunsu_peek_9"
     },
     "day3_after_eunsu_peek_9": {
@@ -351,6 +366,9 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_yuna_6"
     },
     "day3_after_yuna_6": {
+        next: "day3_after_yuna_6a"
+    },
+    "day3_after_yuna_6a": {
         next: "day3_after_yuna_7"
     },
     "day3_after_yuna_7": {
@@ -361,6 +379,9 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_yuna_9"
     },
     "day3_after_yuna_9": {
+        next: "day3_after_yuna_9a"
+    },
+    "day3_after_yuna_9a": {
         next: "day3_after_end"
     },
 

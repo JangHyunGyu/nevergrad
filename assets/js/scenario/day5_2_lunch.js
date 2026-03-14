@@ -29,6 +29,9 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_chase_3"
     },
     "day5_lunch_chase_3": {
+        next: "day5_lunch_chase_3a"
+    },
+    "day5_lunch_chase_3a": {
         next: "day5_lunch_chase_4"
     },
     // PA broadcast - Eunsu
@@ -792,15 +795,14 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_eunsu_final"
     },
 
-    // ★ 최종 선택지: 20초 타이머, 4 choices
+    // ★ 최종 선택지: 20초 타이머, 3 choices (GHOST는 타이머 초과로만 진입)
     "day5_lunch_eunsu_final": {
         glitch: { screenShake: true },
         timedChoice: 20000,
         choices: [
             { next: "day5_lunch_final_true", setFlags: ["chose_remember"] },
             { next: "day5_lunch_final_forget", setFlags: ["chose_forget"] },
-            { next: "day5_lunch_final_resist", setFlags: ["chose_together"] },
-            { next: "day5_lunch_final_ghost", setFlags: ["ghost_route"] }
+            { next: "day5_lunch_final_resist", setFlags: ["chose_together"] }
         ],
         timeoutNext: "day5_lunch_final_ghost"
     },

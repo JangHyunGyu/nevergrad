@@ -165,7 +165,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_stat_crack_4"
     },
     "day3_night_stat_crack_4": {
-        glitch: { shatterStatLabel: true, revealDuration: 2000 },
+        glitch: { shatterStatLabel: true, revealDuration: 300 },
         next: "day3_night_stat_crack_4a"
     },
     "day3_night_stat_crack_4a": {

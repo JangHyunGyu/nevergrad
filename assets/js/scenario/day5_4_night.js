@@ -25,7 +25,7 @@ Object.assign(SCENARIO[5], {
     // ── 엔딩 라우터 ──
     "day5_night_routing": {
         branches: [
-            { condition: ["complicit_route", "all_evidence", "high_eunsu_affinity"], next: "day5_ending_complicit_1" },
+            { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_ending_complicit_1" },
             { condition: ["broke_through_eunsu", "escape_with_yuna", "has_evidence"], next: "day5_ending_true_1" },
             { condition: ["broke_through_eunsu", "escape_with_yuna"], next: "day5_ending_escape_1" },
             { condition: ["chose_together"], next: "day5_ending_resist_1" },

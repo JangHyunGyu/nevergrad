@@ -460,8 +460,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_29"
     },
     "day5_morning_grad_29": {
-        character: null,
+        character: "eunsu_dark",
         unskippable: true,
+        next: "day5_morning_grad_29a"
+    },
+    "day5_morning_grad_29a": {
+        character: null,
         next: "day5_morning_grad_30"
     },
     "day5_morning_grad_30": {

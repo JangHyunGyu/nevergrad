@@ -9,6 +9,17 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
 Object.assign(SCENARIO[5], {
 
     // ══════════════════════════════════════
+    // Day 5 아침 진입점 (day4_night_end에서 연결)
+    // ══════════════════════════════════════
+    "day5_morning_start": {
+        background: "room_dark",
+        bgm: "heartbeat_loop.mp3",
+        character: null,
+        glitchLevel: 4,
+        next: "day5_morning_dawn_1"
+    },
+
+    // ══════════════════════════════════════
     // 새벽: 출발 — 자취방 4AM
     // ══════════════════════════════════════
     "day5_morning_dawn_1": {

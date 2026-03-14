@@ -18,6 +18,14 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
 
 Object.assign(SCENARIO[2], {
 
+    // ===== Day 2 아침 진입점 (day1_night_end에서 연결) =====
+    "day2_morning_start": {
+        background: "room_morning",
+        bgm: "morning_bright.mp3",
+        character: null,
+        next: "day2_morning_wakeup_1"
+    },
+
     // ===== 자취방: 기상 =====
     "day2_morning_wakeup_1": {
         background: "room_morning",

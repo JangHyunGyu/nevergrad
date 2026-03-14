@@ -294,7 +294,7 @@ Object.assign(SCENARIO[4], {
     // 리인 루트 — 내부 반란자
     // ═══════════════════════════════════════
     "day4_after_riin_route": {
-        background: "infirmary",
+        background: "nurse_office",
         bgm: "riin_theme.mp3",
         character: null,
         next: "day4_after_riin_2"

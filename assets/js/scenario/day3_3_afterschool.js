@@ -203,7 +203,7 @@ Object.assign(SCENARIO[3], {
     //  은수 루트: 피험자 관리 대장
     // ══════════════════════════════════════
     "day3_after_eunsu": {
-        background: "teachers_office",
+        background: "teacher_office",
         bgm: "eunsu_theme.mp3",
         character: null,
         next: "day3_after_eunsu_2"

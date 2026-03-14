@@ -33,6 +33,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_branch": {
         branches: [
             { condition: "stayed_with_eunsu", next: "day5_after_cage_1" },
+            { condition: "stayed_with_sea", next: "day5_after_end" },
             { condition: "caught_by_sea", next: "day5_after_caught_1" },
             { condition: "caught_by_riin", next: "day5_after_caught_1" },
             { condition: "broke_through_eunsu", next: "day5_after_confront_1" }

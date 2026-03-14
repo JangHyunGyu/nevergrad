@@ -185,7 +185,7 @@ Object.assign(SCENARIO[5], {
         unskippable: true,
         choices: [
             { next: "day5_morning_escape_end", setFlags: ["route_escape"] },
-            { next: "day5_morning_true_1", setFlags: ["route_true"] }
+            { next: "day5_morning_true_1", setFlags: ["route_true", "has_evidence"] }
         ]
     },
 
@@ -591,7 +591,7 @@ Object.assign(SCENARIO[5], {
         timedChoice: 15000,
         unskippable: true,
         choices: [
-            { next: "day5_morning_end_cage", setFlags: ["route_cage"] },
+            { next: "day5_morning_end_cage", setFlags: ["route_cage", "stayed_with_eunsu"] },
             { next: "day5_morning_end_forget", setFlags: ["route_forget"] },
             { next: "day5_morning_end_run", setFlags: ["route_chase"] }
         ],
@@ -601,15 +601,16 @@ Object.assign(SCENARIO[5], {
     // ── CAGE 루트 종료 ──
     "day5_morning_end_cage": {
         character: null,
-        changeSlot: "lunch",
-        next: "day5_lunch_start"
+        setFlags: ["route_cage", "stayed_with_eunsu"],
+        changeSlot: "afterschool",
+        next: "day5_after_start"
     },
 
     // ── FORGET 루트 종료 ──
     "day5_morning_end_forget": {
         character: null,
-        changeSlot: "lunch",
-        next: "day5_lunch_start"
+        changeSlot: "afterschool",
+        next: "day5_after_start"
     },
 
     // ── 추격전 진입 ──

@@ -210,7 +210,7 @@ Object.assign(SCENARIO[3], {
 
     // ===== 세아 가짜 미소 =====
     "day3_morning_sea_1": {
-        character: "sea_smile",
+        character: null,
         next: "day3_morning_sea_1a"
     },
     "day3_morning_sea_1a": {

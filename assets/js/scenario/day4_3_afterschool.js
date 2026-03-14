@@ -279,6 +279,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_19"
     },
     "day4_after_eunsu_19": {
+        character: "eunsu_gentle",
         next: "day4_after_eunsu_20"
     },
     "day4_after_eunsu_20": {
@@ -317,13 +318,14 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_7"
     },
     "day4_after_riin_7": {
-        character: null,
+        character: "riin_neutral",
         next: "day4_after_riin_8"
     },
     "day4_after_riin_8": {
         next: "day4_after_riin_9"
     },
     "day4_after_riin_9": {
+        character: "riin_neutral",
         next: "day4_after_riin_10"
     },
     "day4_after_riin_10": {
@@ -336,6 +338,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_12"
     },
     "day4_after_riin_12": {
+        character: "riin_cold",
         next: "day4_after_riin_13"
     },
     "day4_after_riin_13": {
@@ -356,6 +359,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_17"
     },
     "day4_after_riin_17": {
+        character: "riin_cold",
         next: "day4_after_riin_18"
     },
     "day4_after_riin_18": {
@@ -398,6 +402,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_27"
     },
     "day4_after_riin_27": {
+        character: "riin_cold",
         next: "day4_after_end",
         setFlags: ["riin_rebel_reveal"]
     },

@@ -253,12 +253,12 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_dream_6"
     },
     "day2_night_dream_6": {
-        character: "seolhwa_quiet",
+        character: "seolhwa_smile",
         night: true,
         next: "day2_night_dream_7"
     },
     "day2_night_dream_7": {
-        character: "seolhwa_quiet",
+        character: "seolhwa_smile",
         night: true,
         glitch: { noise: true, noiseDuration: 500 },
         next: "day2_night_dream_8"

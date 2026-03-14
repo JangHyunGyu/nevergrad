@@ -9,6 +9,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
 Object.assign(SCENARIO[5], {
 
     // ══════════════════════════════════════
+    // 진입점: 아침에서 점심으로 전환
+    // ══════════════════════════════════════
+    "day5_lunch_start": {
+        next: "day5_lunch_chase_1"
+    },
+
+    // ══════════════════════════════════════
     // 추격전 - 교실 탈출, 복도, PA 방송
     // ══════════════════════════════════════
     "day5_lunch_chase_1": {
@@ -226,7 +233,7 @@ Object.assign(SCENARIO[5], {
     // ── 선택 3: "...비키지 마. 여기 있을게." → CAGE 루트 ──
     "day5_lunch_left_c3_1": {
         next: "day5_lunch_end",
-        setFlags: ["cage_route_sea"]
+        setFlags: ["cage_route_sea", "stayed_with_sea"]
     },
 
     // ══════════════════════════════════════

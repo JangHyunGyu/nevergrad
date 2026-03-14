@@ -311,7 +311,7 @@ Object.assign(SCENARIO[1], {
     },
     // L206: 한세아 "아 진짜? ...다음엔 무조건 딸기다. 기억해 둘게."
     "day1_choco_joke_3": {
-        character: "sea_normal",
+        character: "sea_smile",
         next: "day1_classroom_1"
     },
 

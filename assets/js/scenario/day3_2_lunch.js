@@ -438,7 +438,7 @@ Object.assign(SCENARIO[3], {
     },
     // 리인: 선생님이 만든 건강 음료 줄까?
     "day3_lunch_riin_7": {
-        character: "riin_seductive",
+        character: "riin_smile",
         next: "day3_lunch_riin_8"
     },
     // 연보라색 액체. 약품 같은 냄새. 손이 떨리고 있다.
@@ -448,7 +448,7 @@ Object.assign(SCENARIO[3], {
     },
     // 리인: 비타민이랑 허브 블렌딩이야. 몸에 좋아.
     "day3_lunch_riin_9": {
-        character: "riin_seductive",
+        character: "riin_smile",
         next: "day3_lunch_riin_choice"
     },
     "day3_lunch_riin_choice": {

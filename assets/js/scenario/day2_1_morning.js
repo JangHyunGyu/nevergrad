@@ -85,7 +85,7 @@ Object.assign(SCENARIO[2], {
         stats: { sea: { affinity: 3 } }
     },
     "day2_morning_walk_7": {
-        character: "sea_normal",
+        character: "sea_smile",
         next: "day2_morning_walk_8"
     },
     "day2_morning_walk_8": {
@@ -179,7 +179,7 @@ Object.assign(SCENARIO[2], {
 
     // ===== 오전 수업 — 조별 발표 =====
     "day2_morning_class_7": {
-        character: "eunsu_warm",
+        character: null,
         next: "day2_morning_pres_1"
     },
     "day2_morning_pres_1": {
@@ -206,10 +206,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_7"
     },
     "day2_morning_pres_7": {
-        character: "sea_smile",
+        character: null,
         next: "day2_morning_pres_8"
     },
     "day2_morning_pres_8": {
+        character: "sea_smile",
         next: "day2_morning_pres_9"
     },
     "day2_morning_pres_9": {
@@ -276,7 +277,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_seolhwa_3"
     },
     "day2_morning_seolhwa_3": {
-        character: "seolhwa_sad",
+        character: "seolhwa_quiet",
         next: "day2_morning_seolhwa_4"
     },
     "day2_morning_seolhwa_4": {

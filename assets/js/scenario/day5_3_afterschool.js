@@ -282,7 +282,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_2"
     },
     "day5_after_true_2": {
-        next: "day5_after_true_3"
+        setFlags: ["route_true", "broke_through_eunsu", "escape_with_yuna"],
+        next: "day5_after_end"
     },
     "day5_after_true_3": {
         character: null,
@@ -321,6 +322,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_12"
     },
     "day5_after_true_12": {
+        setFlags: ["broke_through_eunsu", "escape_with_yuna"],
         next: "day5_after_end"
     },
 
@@ -333,7 +335,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_forget_2"
     },
     "day5_after_forget_2": {
-        next: "day5_after_forget_3"
+        setFlags: ["route_forget"],
+        next: "day5_after_end"
     },
     "day5_after_forget_3": {
         next: "day5_after_forget_4"
@@ -380,7 +383,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_2"
     },
     "day5_after_resist_2": {
-        next: "day5_after_resist_3"
+        setFlags: ["route_resist", "chose_together"],
+        next: "day5_after_end"
     },
     "day5_after_resist_3": {
         next: "day5_after_resist_4"
@@ -439,7 +443,8 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_ghost_2": {
         character: "eunsu_obsessed",
-        next: "day5_after_ghost_3"
+        setFlags: ["route_ghost", "timer_expired"],
+        next: "day5_after_end"
     },
     "day5_after_ghost_3": {
         character: "seolhwa_fading",

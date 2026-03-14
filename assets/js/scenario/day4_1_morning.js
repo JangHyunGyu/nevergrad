@@ -322,7 +322,7 @@ Object.assign(SCENARIO[4], {
     },
     // 어제 유나는 3년간의 증거를 보여줬다
     "day4_morning_sea_3": {
-        character: null,
+        character: "sea_smile",
         next: "day4_morning_sea_4"
     },
 

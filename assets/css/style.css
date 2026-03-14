@@ -281,7 +281,26 @@ body {
     background-size: cover;
     background-position: center;
     z-index: 1;
-    transition: background-image 0.5s ease;
+    transition: filter 1s ease;
+}
+
+/* 배경 크로스페이드용 오버레이 */
+.bg-layer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-next);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    pointer-events: none;
+}
+.bg-layer.bg-crossfade::after {
+    opacity: 1;
 }
 
 .bg-overlay {
@@ -361,7 +380,8 @@ body {
     bottom: 10%;
     height: 80%;
     object-fit: contain;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.25s ease-in-out, transform 0.3s ease, filter 0.3s ease;
+    will-change: opacity;
 }
 
 .character-sprite[src=""] {

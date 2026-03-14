@@ -20,9 +20,29 @@ class SceneRenderer {
     }
 
     setBackground(src) {
-        if (this.bgLayer) {
-            this.bgLayer.style.backgroundImage = `url('${src}')`;
+        if (!this.bgLayer) return;
+
+        const newBg = `url('${src}')`;
+        const currentBg = this.bgLayer.style.backgroundImage;
+
+        // 첫 배경이거나 같은 배경이면 즉시 적용
+        if (!currentBg || currentBg === 'none' || currentBg === newBg) {
+            this.bgLayer.style.backgroundImage = newBg;
+            return;
         }
+
+        // 크로스페이드: ::after에 새 배경 설정 후 페이드인
+        this.bgLayer.style.setProperty('--bg-next', newBg);
+        this.bgLayer.classList.remove('bg-crossfade');
+        void this.bgLayer.offsetWidth; // force reflow
+        this.bgLayer.classList.add('bg-crossfade');
+
+        // 페이드 완료 후 메인 배경으로 교체
+        this._bgFadeTimer && clearTimeout(this._bgFadeTimer);
+        this._bgFadeTimer = setTimeout(() => {
+            this.bgLayer.style.backgroundImage = newBg;
+            this.bgLayer.classList.remove('bg-crossfade');
+        }, 420);
     }
 
     clearOverlays() {
@@ -51,6 +71,13 @@ class SceneRenderer {
         }
     }
 
+    // 캐릭터 이름 프리픽스 추출 (eunsu_smile.png → eunsu)
+    _getCharPrefix(src) {
+        if (!src) return null;
+        const filename = src.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
+        return filename.split('_')[0];
+    }
+
     setCharacter(position, src) {
         const el = position === 'left' ? this.charLeft
                   : position === 'right' ? this.charRight
@@ -59,8 +86,24 @@ class SceneRenderer {
 
         const prevSrc = el.getAttribute('src');
         if (prevSrc && prevSrc !== '') {
-            // 표정 변경 — 즉시 교체 (위치 유지)
-            el.src = src;
+            const prevPrefix = this._getCharPrefix(prevSrc);
+            const newPrefix = this._getCharPrefix(src);
+
+            if (prevPrefix === newPrefix) {
+                // 같은 캐릭터 표정 변화 → 빠른 크로스페이드
+                el.style.opacity = '0';
+                setTimeout(() => {
+                    el.src = src;
+                    requestAnimationFrame(() => { el.style.opacity = ''; });
+                }, 120);
+            } else {
+                // 다른 캐릭터 → 페이드아웃 후 페이드인
+                el.style.opacity = '0';
+                setTimeout(() => {
+                    el.src = src;
+                    requestAnimationFrame(() => { el.style.opacity = ''; });
+                }, 280);
+            }
         } else {
             // 새 등장 — fade in
             el.style.opacity = '0';

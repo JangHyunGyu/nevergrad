@@ -133,6 +133,27 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_yuna_9": {
         character: null,
+        next: "day1_after_yuna_10"
+    },
+    // 폴라로이드 선물
+    "day1_after_yuna_10": {
+        next: "day1_after_yuna_11"
+    },
+    "day1_after_yuna_11": {
+        character: "yuna_shy",
+        next: "day1_after_yuna_12"
+    },
+    "day1_after_yuna_12": {
+        character: null,
+        next: "day1_after_yuna_13"
+    },
+    "day1_after_yuna_13": {
+        character: "yuna_normal",
+        next: "day1_after_yuna_14",
+        stats: { yuna: { affinity: 3 } }
+    },
+    "day1_after_yuna_14": {
+        character: null,
         next: "day1_after_end"
     },
 
@@ -154,6 +175,35 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_riin_5"
     },
     "day1_after_riin_5": {
+        character: null,
+        next: "day1_after_riin_6"
+    },
+    // 허브티 선물 + 음악
+    "day1_after_riin_6": {
+        character: "riin_gentle",
+        next: "day1_after_riin_7"
+    },
+    "day1_after_riin_7": {
+        character: null,
+        next: "day1_after_riin_8"
+    },
+    "day1_after_riin_8": {
+        character: "riin_gentle",
+        next: "day1_after_riin_9"
+    },
+    "day1_after_riin_9": {
+        character: null,
+        next: "day1_after_riin_10"
+    },
+    "day1_after_riin_10": {
+        next: "day1_after_riin_11"
+    },
+    "day1_after_riin_11": {
+        character: "riin_gentle",
+        next: "day1_after_riin_12",
+        stats: { riin: { affinity: 3 } }
+    },
+    "day1_after_riin_12": {
         character: null,
         next: "day1_after_end"
     },
@@ -181,6 +231,23 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_eunsu_6"
     },
     "day1_after_eunsu_6": {
+        character: null,
+        next: "day1_after_eunsu_7"
+    },
+    // 따뜻한 마무리
+    "day1_after_eunsu_7": {
+        character: "eunsu_warm",
+        next: "day1_after_eunsu_8"
+    },
+    "day1_after_eunsu_8": {
+        next: "day1_after_eunsu_9"
+    },
+    "day1_after_eunsu_9": {
+        character: "eunsu_warm",
+        next: "day1_after_eunsu_10",
+        stats: { eunsu: { affinity: 3 } }
+    },
+    "day1_after_eunsu_10": {
         character: null,
         next: "day1_after_end"
     },

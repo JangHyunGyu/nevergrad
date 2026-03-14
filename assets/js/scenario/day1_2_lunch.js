@@ -249,6 +249,29 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_riin_12": {
         character: null,
+        next: "day1_lunch_riin_13"
+    },
+    // 보건실에서 잠깐 잠들기
+    "day1_lunch_riin_13": {
+        next: "day1_lunch_riin_14"
+    },
+    "day1_lunch_riin_14": {
+        next: "day1_lunch_riin_15"
+    },
+    "day1_lunch_riin_15": {
+        character: "riin_gentle",
+        next: "day1_lunch_riin_16"
+    },
+    "day1_lunch_riin_16": {
+        character: null,
+        next: "day1_lunch_riin_17"
+    },
+    "day1_lunch_riin_17": {
+        character: "riin_gentle",
+        next: "day1_lunch_riin_18"
+    },
+    "day1_lunch_riin_18": {
+        character: null,
         next: "day1_lunch_end",
         stats: { riin: { affinity: 5, danger: 5 } },
         glitch: "loop_truth"

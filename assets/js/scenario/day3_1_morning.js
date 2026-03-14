@@ -197,6 +197,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_classroom_5"
     },
     "day3_morning_classroom_5": {
+        next: "day3_morning_nametag_1"
+    },
+
+    // ===== 이름표 해리감 (Day 3 정체성 해리) =====
+    "day3_morning_nametag_1": {
+        next: "day3_morning_nametag_2"
+    },
+    "day3_morning_nametag_2": {
         next: "day3_morning_sea_1"
     },
 

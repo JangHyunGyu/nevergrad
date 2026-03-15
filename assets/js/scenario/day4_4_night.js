@@ -315,7 +315,7 @@ Object.assign(SCENARIO[4], {
     },
     // 설화: "아직... 보지 마."
     "day4_night_mirror_11": {
-        character: null,
+        character: "seolhwa_sad",
         unskippable: true,
         next: "day4_night_mirror_12"
     },

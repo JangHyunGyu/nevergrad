@@ -187,7 +187,7 @@ Object.assign(SCENARIO[1], {
     },
     // L143: 한세아 "아, 매점은 1층 끝에 있어..."
     "day1_sea_meet_13": {
-        character: null,
+        character: "sea_smile",
         next: "day1_sea_meet_14"
     },
     // L145: 나 "와, 친절하다. 반장이라 그런 거야?"
@@ -379,7 +379,7 @@ Object.assign(SCENARIO[1], {
     },
     // L226: 박은수 "자, 여러분. 오늘 새로 전학 온 학생을 소개할게요."
     "day1_eunsu_2": {
-        character: null,
+        character: "eunsu_warm",
         next: "day1_eunsu_3"
     },
     // L228: *교실이 조용해진다.*

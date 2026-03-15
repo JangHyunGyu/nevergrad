@@ -81,11 +81,11 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_sea_12"
     },
     "day1_after_sea_12": {
-        character: null,
+        character: "sea_smile",
         next: "day1_after_sea_13"
     },
     "day1_after_sea_13": {
-        character: null,
+        character: "sea_smile",
         next: "day1_after_sea_14"
     },
     "day1_after_sea_14": {
@@ -181,7 +181,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_riin_4"
     },
     "day1_after_riin_4": {
-        character: null,
+        character: "riin_smile",
         next: "day1_after_riin_5"
     },
     "day1_after_riin_5": {

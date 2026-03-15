@@ -52,7 +52,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_3"
     },
     "day5_ending_true_3": {
-        character: null,
+        character: "eunsu_shaking",
         next: "day5_ending_true_4"
     },
     "day5_ending_true_4": {
@@ -81,7 +81,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_10"
     },
     "day5_ending_true_10": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_ending_true_11"
     },
     "day5_ending_true_11": {
@@ -89,11 +89,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_12"
     },
     "day5_ending_true_12": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_ending_true_13"
     },
     "day5_ending_true_13": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_ending_true_14"
     },
     "day5_ending_true_14": {
@@ -105,7 +105,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_16"
     },
     "day5_ending_true_16": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_ending_true_17"
     },
     "day5_ending_true_17": {
@@ -133,7 +133,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_23"
     },
     "day5_ending_true_23": {
-        character: null,
+        character: "yuna_normal",
         next: "day5_ending_true_24"
     },
     // ── 에필로그 / 3개월 후 ──
@@ -144,7 +144,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_25"
     },
     "day5_ending_true_25": {
-        character: null,
+        character: "yuna_normal",
         background: "news_article",
         next: "day5_ending_true_26"
     },
@@ -328,11 +328,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_4"
     },
     "day5_ending_resist_4": {
-        character: null,
+        character: "eunsu_normal",
         next: "day5_ending_resist_5"
     },
     "day5_ending_resist_5": {
-        character: null,
+        character: "eunsu_normal",
         next: "day5_ending_resist_6"
     },
     "day5_ending_resist_6": {
@@ -352,15 +352,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_10"
     },
     "day5_ending_resist_10": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_ending_resist_11"
     },
     "day5_ending_resist_11": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_ending_resist_12"
     },
     "day5_ending_resist_12": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_ending_resist_13"
     },
     "day5_ending_resist_13": {
@@ -380,7 +380,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_17"
     },
     "day5_ending_resist_17": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_ending_resist_18"
     },
     "day5_ending_resist_18": {
@@ -400,7 +400,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_18d"
     },
     "day5_ending_resist_18d": {
-        character: null,
+        character: "eunsu_normal",
         next: "day5_ending_resist_19"
     },
     "day5_ending_resist_19": {
@@ -408,7 +408,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_20"
     },
     "day5_ending_resist_20": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_ending_resist_21"
     },
     "day5_ending_resist_21": {
@@ -454,7 +454,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_eunsu_4"
     },
     "day5_ending_cage_eunsu_4": {
-        character: null,
+        character: "eunsu_smile",
         next: "day5_ending_cage_eunsu_5"
     },
     "day5_ending_cage_eunsu_5": {
@@ -495,11 +495,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_sea_2"
     },
     "day5_ending_cage_sea_2": {
-        character: null,
+        character: "sea_normal",
         next: "day5_ending_cage_sea_3"
     },
     "day5_ending_cage_sea_3": {
-        character: null,
+        character: "sea_normal",
         next: "day5_ending_cage_sea_4"
     },
     "day5_ending_cage_sea_4": {
@@ -577,7 +577,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_8"
     },
     "day5_ending_forget_8": {
-        character: null,
+        character: "eunsu_normal",
         next: "day5_ending_forget_9"
     },
     "day5_ending_forget_9": {
@@ -632,11 +632,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_20"
     },
     "day5_ending_forget_20": {
-        character: null,
+        character: "eunsu_smile",
         next: "day5_ending_forget_21"
     },
     "day5_ending_forget_21": {
-        character: null,
+        character: "eunsu_smile",
         next: "day5_ending_forget_22"
     },
     "day5_ending_forget_22": {
@@ -658,7 +658,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_sea_2"
     },
     "day5_ending_forget_sea_2": {
-        character: null,
+        character: "sea_smile",
         next: "day5_ending_forget_sea_3"
     },
     "day5_ending_forget_sea_3": {
@@ -693,7 +693,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_4"
     },
     "day5_ending_ghost_4": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_ending_ghost_5"
     },
     "day5_ending_ghost_5": {
@@ -701,15 +701,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_6"
     },
     "day5_ending_ghost_6": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_ending_ghost_7"
     },
     "day5_ending_ghost_7": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_ending_ghost_8"
     },
     "day5_ending_ghost_8": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_ending_ghost_9"
     },
     "day5_ending_ghost_9": {
@@ -717,7 +717,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_10"
     },
     "day5_ending_ghost_10": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_ending_ghost_11"
     },
     "day5_ending_ghost_11": {
@@ -733,7 +733,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_14"
     },
     "day5_ending_ghost_14": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_ending_ghost_15"
     },
     "day5_ending_ghost_15": {
@@ -794,7 +794,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_3"
     },
     "day5_ending_complicit_3": {
-        character: null,
+        character: "eunsu_normal",
         next: "day5_ending_complicit_4"
     },
     "day5_ending_complicit_4": {
@@ -810,7 +810,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_7"
     },
     "day5_ending_complicit_7": {
-        character: null,
+        character: "eunsu_normal",
         next: "day5_ending_complicit_8"
     },
     "day5_ending_complicit_8": {

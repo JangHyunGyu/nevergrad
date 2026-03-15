@@ -60,7 +60,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_cage_4"
     },
     "day5_after_cage_4": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_cage_5"
     },
     "day5_after_cage_5": {
@@ -114,7 +114,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_5"
     },
     "day5_after_caught_5": {
-        character: null,
+        character: "eunsu_obsessed",
         next: "day5_after_caught_6"
     },
     "day5_after_caught_6": {
@@ -152,7 +152,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_resist_3"
     },
     "day5_after_caught_resist_3": {
-        character: null,
+        character: "riin_smile",
         next: "day5_after_caught_resist_4"
     },
     "day5_after_caught_resist_4": {
@@ -221,7 +221,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_5"
     },
     "day5_after_confront_5": {
-        character: null,
+        character: "eunsu_obsessed",
         next: "day5_after_confront_6"
     },
     "day5_after_confront_6": {
@@ -233,31 +233,31 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_8"
     },
     "day5_after_confront_8": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_confront_9"
     },
     "day5_after_confront_9": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_confront_10"
     },
     "day5_after_confront_10": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_confront_11"
     },
     "day5_after_confront_11": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_confront_12"
     },
     "day5_after_confront_12": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_confront_13"
     },
     "day5_after_confront_13": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_confront_14"
     },
     "day5_after_confront_14": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_confront_15"
     },
     "day5_after_confront_15": {
@@ -269,11 +269,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_17"
     },
     "day5_after_confront_17": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_confront_18"
     },
     "day5_after_confront_18": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_confront_19"
     },
     "day5_after_confront_19": {
@@ -320,7 +320,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_2"
     },
     "day5_after_true_2": {
-        character: null,
+        character: "eunsu_obsessed",
         setFlags: ["route_true", "broke_through_eunsu", "escape_with_yuna"],
         next: "day5_after_end"
     },
@@ -352,7 +352,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_8"
     },
     "day5_after_true_8": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_after_true_9"
     },
     "day5_after_true_9": {
@@ -360,11 +360,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_10"
     },
     "day5_after_true_10": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_after_true_11"
     },
     "day5_after_true_11": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_after_true_12"
     },
     "day5_after_true_12": {
@@ -382,7 +382,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_forget_2"
     },
     "day5_after_forget_2": {
-        character: null,
+        character: "eunsu_obsessed",
         setFlags: ["route_forget"],
         next: "day5_after_end"
     },
@@ -403,7 +403,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_forget_7"
     },
     "day5_after_forget_7": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_after_forget_8"
     },
@@ -444,15 +444,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_end"
     },
     "day5_after_resist_3": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_resist_4"
     },
     "day5_after_resist_4": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_resist_5"
     },
     "day5_after_resist_5": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_resist_6"
     },
     "day5_after_resist_6": {
@@ -468,7 +468,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_9"
     },
     "day5_after_resist_9": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_after_resist_10"
     },
     "day5_after_resist_10": {
@@ -480,7 +480,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_12"
     },
     "day5_after_resist_12": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_after_resist_13"
     },
     "day5_after_resist_13": {
@@ -521,11 +521,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_5"
     },
     "day5_after_ghost_5": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_after_ghost_6"
     },
     "day5_after_ghost_6": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_after_ghost_7"
     },
     "day5_after_ghost_7": {
@@ -533,7 +533,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_8"
     },
     "day5_after_ghost_8": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_after_ghost_9"
     },
     "day5_after_ghost_9": {
@@ -545,7 +545,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_11"
     },
     "day5_after_ghost_11": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_after_ghost_12"
     },
     "day5_after_ghost_12": {

@@ -131,7 +131,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_4"
     },
     "day4_after_sea_12loop_4": {
-        character: null,
+        character: "sea_sad",
         unskippable: true,
         next: "day4_after_sea_12loop_5"
     },
@@ -155,7 +155,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_9"
     },
     "day4_after_sea_12loop_9": {
-        character: null,
+        character: "sea_cry",
         unskippable: true,
         next: "day4_after_sea_12loop_10"
     },
@@ -201,12 +201,12 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_19"
     },
     "day4_after_sea_12loop_19": {
-        character: null,
+        character: "sea_cry",
         unskippable: true,
         next: "day4_after_sea_12loop_20"
     },
     "day4_after_sea_12loop_20": {
-        character: null,
+        character: "sea_cry",
         unskippable: true,
         glitch: { noise: true },
         next: "day4_after_end",
@@ -231,7 +231,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_4"
     },
     "day4_after_eunsu_4": {
-        character: null,
+        character: "eunsu_serious",
         unskippable: true,
         next: "day4_after_eunsu_5"
     },
@@ -245,21 +245,21 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_7"
     },
     "day4_after_eunsu_7": {
-        character: null,
+        character: "eunsu_serious",
         unskippable: true,
         next: "day4_after_eunsu_8"
     },
     "day4_after_eunsu_8": {
-        character: null,
+        character: "eunsu_serious",
         next: "day4_after_eunsu_9"
     },
     "day4_after_eunsu_9": {
-        character: null,
+        character: "eunsu_serious",
         unskippable: true,
         next: "day4_after_eunsu_10"
     },
     "day4_after_eunsu_10": {
-        character: null,
+        character: "eunsu_serious",
         next: "day4_after_eunsu_11"
     },
     "day4_after_eunsu_11": {
@@ -272,7 +272,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_13"
     },
     "day4_after_eunsu_13": {
-        character: null,
+        character: "eunsu_serious",
         next: "day4_after_eunsu_14"
     },
     "day4_after_eunsu_14": {
@@ -369,7 +369,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_14"
     },
     "day4_after_riin_14": {
-        character: null,
+        character: "riin_cold",
         unskippable: true,
         next: "day4_after_riin_15"
     },
@@ -409,7 +409,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_23"
     },
     "day4_after_riin_23": {
-        character: null,
+        character: "riin_cold",
         unskippable: true,
         next: "day4_after_riin_24"
     },

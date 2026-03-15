@@ -69,7 +69,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_gate_3"
     },
     "day2_morning_gate_3": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_gate_4"
     },
     "day2_morning_gate_4": {
@@ -83,7 +83,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_walk_1"
     },
     "day2_morning_walk_1": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_walk_2"
     },
     "day2_morning_walk_2": {
@@ -91,7 +91,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_walk_3"
     },
     "day2_morning_walk_3": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_walk_4"
     },
     "day2_morning_walk_4": {
@@ -99,7 +99,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_walk_5"
     },
     "day2_morning_walk_5": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_walk_6"
     },
     "day2_morning_walk_6": {
@@ -124,7 +124,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_walk_11"
     },
     "day2_morning_walk_11": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_walk_12"
     },
     "day2_morning_walk_12": {
@@ -208,7 +208,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_class_6"
     },
     "day2_morning_class_6": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day2_morning_class_7"
     },
 
@@ -218,7 +218,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_1"
     },
     "day2_morning_pres_1": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day2_morning_pres_2"
     },
     "day2_morning_pres_2": {
@@ -254,7 +254,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_10"
     },
     "day2_morning_pres_10": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_pres_11"
     },
     "day2_morning_pres_11": {

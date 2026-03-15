@@ -321,7 +321,7 @@ Object.assign(SCENARIO[3], {
     },
     // "5일 안에... 여기서 나가야 해."
     "day3_night_seolhwa_7": {
-        character: null,
+        character: "seolhwa_normal",
         typingSpeed: 150,
         unskippable: true,
         next: "day3_night_seolhwa_7a"
@@ -332,7 +332,7 @@ Object.assign(SCENARIO[3], {
     },
     // "나처럼 되기 전에."
     "day3_night_seolhwa_8": {
-        character: null,
+        character: "seolhwa_normal",
         typingSpeed: 150,
         unskippable: true,
         next: "day3_night_seolhwa_9"

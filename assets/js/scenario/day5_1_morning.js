@@ -142,7 +142,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_3"
     },
     "day5_morning_rescue_3": {
-        character: null,
+        character: "yuna_weak",
         next: "day5_morning_rescue_4"
     },
     "day5_morning_rescue_4": {
@@ -166,23 +166,23 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_9"
     },
     "day5_morning_rescue_9": {
-        character: null,
+        character: "yuna_weak",
         next: "day5_morning_rescue_10"
     },
     "day5_morning_rescue_10": {
-        character: null,
+        character: "yuna_weak",
         next: "day5_morning_rescue_11"
     },
     "day5_morning_rescue_11": {
-        character: null,
+        character: "yuna_weak",
         next: "day5_morning_rescue_12"
     },
     "day5_morning_rescue_12": {
-        character: null,
+        character: "yuna_weak",
         next: "day5_morning_rescue_13"
     },
     "day5_morning_rescue_13": {
-        character: null,
+        character: "yuna_weak",
         next: "day5_morning_rescue_14"
     },
     "day5_morning_rescue_14": {
@@ -190,19 +190,19 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_15"
     },
     "day5_morning_rescue_15": {
-        character: null,
+        character: "yuna_normal",
         next: "day5_morning_rescue_16"
     },
     "day5_morning_rescue_16": {
-        character: null,
+        character: "yuna_normal",
         next: "day5_morning_rescue_17"
     },
     "day5_morning_rescue_17": {
-        character: null,
+        character: "yuna_normal",
         next: "day5_morning_rescue_18"
     },
     "day5_morning_rescue_18": {
-        character: null,
+        character: "yuna_normal",
         next: "day5_morning_rescue_19"
     },
     "day5_morning_rescue_19": {
@@ -344,7 +344,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_1"
     },
     "day5_morning_broadcast_1": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_broadcast_2"
     },
     "day5_morning_broadcast_2": {
@@ -352,7 +352,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_3"
     },
     "day5_morning_broadcast_3": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_broadcast_4"
     },
     "day5_morning_broadcast_4": {
@@ -361,7 +361,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_5"
     },
     "day5_morning_broadcast_5": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_broadcast_6"
     },
     "day5_morning_broadcast_6": {
@@ -399,7 +399,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_14"
     },
     "day5_morning_broadcast_14": {
-        character: null,
+        character: "yuna_normal",
         next: "day5_morning_broadcast_15"
     },
     "day5_morning_broadcast_15": {
@@ -467,7 +467,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_11"
     },
     "day5_morning_grad_11": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_grad_12"
     },
     "day5_morning_grad_12": {
@@ -475,7 +475,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_13"
     },
     "day5_morning_grad_13": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_grad_14"
     },
 
@@ -486,36 +486,36 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_15"
     },
     "day5_morning_grad_15": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_grad_16"
     },
     "day5_morning_grad_16": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_grad_17"
     },
     "day5_morning_grad_17": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_grad_18"
     },
     "day5_morning_grad_18": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_grad_19"
     },
     "day5_morning_grad_19": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_grad_20"
     },
     "day5_morning_grad_20": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_grad_21"
     },
     "day5_morning_grad_21": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_morning_grad_21a"
     },
     "day5_morning_grad_21a": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day5_morning_grad_22"
     },
     "day5_morning_grad_22": {
@@ -529,23 +529,23 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_24"
     },
     "day5_morning_grad_24": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_grad_25"
     },
     "day5_morning_grad_25": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_grad_26"
     },
     "day5_morning_grad_26": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_grad_27"
     },
     "day5_morning_grad_27": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_grad_28"
     },
     "day5_morning_grad_28": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_grad_29"
     },
     "day5_morning_grad_29": {
@@ -582,7 +582,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_reply_1b"
     },
     "day5_morning_grad_reply_1b": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_proposal_1"
     },
 
@@ -592,11 +592,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_reply_2b"
     },
     "day5_morning_grad_reply_2b": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_grad_reply_2c"
     },
     "day5_morning_grad_reply_2c": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_proposal_1"
     },
 
@@ -640,7 +640,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_proposal_7"
     },
     "day5_morning_proposal_7": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_proposal_8"
     },
     "day5_morning_proposal_8": {
@@ -661,19 +661,19 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_proposal_12"
     },
     "day5_morning_proposal_12": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_proposal_13"
     },
     "day5_morning_proposal_13": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_proposal_14"
     },
     "day5_morning_proposal_14": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_proposal_15"
     },
     "day5_morning_proposal_15": {
-        character: null,
+        character: "eunsu_dark",
         next: "day5_morning_proposal_16"
     },
     "day5_morning_proposal_16": {

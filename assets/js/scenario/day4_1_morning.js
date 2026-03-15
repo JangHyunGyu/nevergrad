@@ -268,11 +268,11 @@ Object.assign(SCENARIO[4], {
     },
 
     "day4_morning_eunsu": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_eunsu_2"
     },
     "day4_morning_eunsu_2": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_eunsu_3"
     },
     // 팔짱을 끼고 내 옆에 선다
@@ -316,7 +316,7 @@ Object.assign(SCENARIO[4], {
     },
     // '위험하니까'
     "day4_morning_eunsu_refuse_3": {
-        character: null,
+        character: "eunsu_cold",
         unskippable: true,
         next: "day4_morning_eunsu_refuse_4"
     },
@@ -363,7 +363,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_morning_sea"
     },
     "day4_morning_sea": {
-        character: null,
+        character: "sea_smile",
         next: "day4_morning_sea_2"
     },
     "day4_morning_sea_2": {
@@ -437,17 +437,17 @@ Object.assign(SCENARIO[4], {
     },
     // '소속이란 건... 안전함이야'
     "day4_morning_class_4": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_class_5"
     },
     // '소속되어 있다는 건 — 누군가가 너를 돌봐주고 있다는 뜻이야'
     "day4_morning_class_5": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_class_6"
     },
     // '이 학교를 떠나려는 건... 쉬운 일이 아니야'
     "day4_morning_class_6": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_class_7"
     },
     // 선생님의 시선이 나에게 고정, 한 발짝 다가옴
@@ -457,13 +457,13 @@ Object.assign(SCENARIO[4], {
     },
     // '떠나려고 한 사람은... 대부분 후회하더라'
     "day4_morning_class_8": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day4_morning_class_9"
     },
     // '그렇지, {name}?'
     "day4_morning_class_9": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         glitch: { corruptText: true, corruptIndices: [3, 7, 12] },
         next: "day4_morning_class_10"

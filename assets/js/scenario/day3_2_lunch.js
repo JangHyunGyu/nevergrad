@@ -43,18 +43,18 @@ Object.assign(SCENARIO[3], {
     },
     // 유나: 메모리카드 꺼냄
     "day3_lunch_rooftop_3": {
-        character: null,
+        character: "yuna_normal",
         next: "day3_lunch_rooftop_4",
         setFlags: ["yuna_memory_card"]
     },
     // 유나: 3년 사진부
     "day3_lunch_rooftop_4": {
-        character: null,
+        character: "yuna_normal",
         next: "day3_lunch_rooftop_5"
     },
     // 유나: 전학생 올 때마다 찍었어요
     "day3_lunch_rooftop_5": {
-        character: null,
+        character: "yuna_normal",
         next: "day3_lunch_rooftop_6"
     },
     // 나레이션: 카메라 화면을 넘긴다
@@ -132,7 +132,7 @@ Object.assign(SCENARIO[3], {
     },
     // 유나: 왜 다들 자기 이름도 모르고...
     "day3_lunch_rooftop_20": {
-        character: null,
+        character: "yuna_scared",
         next: "day3_lunch_rooftop_21"
     },
     // 머릿속이 하얘진다
@@ -158,7 +158,7 @@ Object.assign(SCENARIO[3], {
     },
     // 유나: 아무한테도 말 못 했어요
     "day3_lunch_rooftop_25": {
-        character: null,
+        character: "yuna_scared",
         next: "day3_lunch_rooftop_26"
     },
     // 유나 눈이 빨갛다. 카메라가 흔들린다
@@ -173,12 +173,12 @@ Object.assign(SCENARIO[3], {
     },
     // 유나: 3번이 왔을 때 이상하다고 느꼈어요
     "day3_lunch_rooftop_28": {
-        character: null,
+        character: "yuna_scared",
         next: "day3_lunch_rooftop_29"
     },
     // 유나: 5번째부터 무서웠어요
     "day3_lunch_rooftop_29": {
-        character: null,
+        character: "yuna_scared",
         next: "day3_lunch_rooftop_30"
     },
     // 유나가 두 손으로 얼굴을 감싼다. 어깨가 떨린다

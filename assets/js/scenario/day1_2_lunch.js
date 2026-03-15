@@ -172,7 +172,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_yuna_6"
     },
     "day1_lunch_yuna_6": {
-        character: null,
+        character: "yuna_shy",
         next: "day1_lunch_yuna_7"
     },
     "day1_lunch_yuna_7": {

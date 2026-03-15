@@ -27,6 +27,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_start_2"
     },
     "day3_night_start_2": {
+        character: null,
         next: "day3_night_sea_msg"
     },
 
@@ -34,63 +35,80 @@ Object.assign(SCENARIO[3], {
     //  세아의 메시지 폭격 (13분 6개 → CRITICAL 메시지)
     // ══════════════════════════════════════
     "day3_night_sea_msg": {
+        character: null,
         next: "day3_night_sea_msg_2"
     },
     "day3_night_sea_msg_2": {
+        character: null,
         messengerDelay: 1200,
         next: "day3_night_sea_msg_3"
     },
     "day3_night_sea_msg_3": {
+        character: null,
         messengerDelay: 800,
         next: "day3_night_sea_msg_4"
     },
     "day3_night_sea_msg_4": {
+        character: null,
         messengerDelay: 600,
         next: "day3_night_sea_msg_5"
     },
     "day3_night_sea_msg_5": {
+        character: null,
         messengerDelay: 500,
         next: "day3_night_sea_msg_6"
     },
     "day3_night_sea_msg_6": {
+        character: null,
         messengerDelay: 400,
         next: "day3_night_sea_msg_7"
     },
     "day3_night_sea_msg_7": {
+        character: null,
         next: "day3_night_sea_msg_8"
     },
     "day3_night_sea_msg_8": {
+        character: null,
         next: "day3_night_sea_msg_9"
     },
     "day3_night_sea_msg_9": {
+        character: null,
         next: "day3_night_sea_msg_10"
     },
     "day3_night_sea_msg_10": {
+        character: null,
         next: "day3_night_sea_msg_11"
     },
     "day3_night_sea_msg_11": {
+        character: null,
         next: "day3_night_sea_msg_12"
     },
     // CRITICAL: 창문 메시지 — 세아가 밖에서 보고 있다
     "day3_night_sea_msg_12": {
+        character: null,
         messengerDelay: 300,
         stats: { sea: { danger: 10 } },
         next: "day3_night_sea_msg_13"
     },
     "day3_night_sea_msg_13": {
+        character: null,
         glitch: { noise: true, noiseDuration: 200 },
         next: "day3_night_sea_msg_14"
     },
     "day3_night_sea_msg_14": {
+        character: null,
         next: "day3_night_sea_msg_15"
     },
     "day3_night_sea_msg_15": {
+        character: null,
         next: "day3_night_sea_msg_16"
     },
     "day3_night_sea_msg_16": {
+        character: null,
         next: "day3_night_sea_msg_17"
     },
     "day3_night_sea_msg_17": {
+        character: null,
         next: "day3_night_bleed"
     },
 
@@ -98,57 +116,74 @@ Object.assign(SCENARIO[3], {
     //  ★ 기억 블리드 — 장르 전환의 시작
     // ══════════════════════════════════════
     "day3_night_bleed": {
+        character: null,
         next: "day3_night_bleed_2"
     },
     "day3_night_bleed_2": {
+        character: null,
         next: "day3_night_bleed_3"
     },
     "day3_night_bleed_3": {
+        character: null,
         next: "day3_night_bleed_4"
     },
     "day3_night_bleed_4": {
+        character: null,
         next: "day3_night_bleed_5"
     },
     "day3_night_bleed_5": {
+        character: null,
         glitch: { themeShift: true },
         next: "day3_night_bleed_6"
     },
     "day3_night_bleed_6": {
+        character: null,
         next: "day3_night_bleed_7"
     },
     "day3_night_bleed_7": {
+        character: null,
         next: "day3_night_bleed_7a"
     },
     "day3_night_bleed_7a": {
+        character: null,
         next: "day3_night_bleed_8"
     },
     "day3_night_bleed_8": {
+        character: null,
         next: "day3_night_bleed_9"
     },
     "day3_night_bleed_9": {
+        character: null,
         next: "day3_night_bleed_10"
     },
     "day3_night_bleed_10": {
+        character: null,
         next: "day3_night_bleed_10a"
     },
     "day3_night_bleed_10a": {
+        character: null,
         next: "day3_night_bleed_11"
     },
     "day3_night_bleed_11": {
+        character: null,
         next: "day3_night_bleed_12"
     },
     "day3_night_bleed_12": {
+        character: null,
         next: "day3_night_bleed_13"
     },
     // CRITICAL: "전 학교가 진짜 있긴 했나?"
     "day3_night_bleed_13": {
+        character: null,
         glitch: { screenShake: true, noise: true, noiseDuration: 300 },
         next: "day3_night_bleed_14"
     },
     "day3_night_bleed_14": {
+        character: null,
         next: "day3_night_bleed_15"
     },
     "day3_night_bleed_15": {
+        character: null,
         next: "day3_night_stat_crack"
     },
 
@@ -156,25 +191,32 @@ Object.assign(SCENARIO[3], {
     //  ★ 스탯 라벨 크랙 [글리치: '호감도' → '위험도' / '투■량']
     // ══════════════════════════════════════
     "day3_night_stat_crack": {
+        character: null,
         next: "day3_night_stat_crack_2"
     },
     "day3_night_stat_crack_2": {
+        character: null,
         next: "day3_night_stat_crack_3"
     },
     "day3_night_stat_crack_3": {
+        character: null,
         next: "day3_night_stat_crack_4"
     },
     "day3_night_stat_crack_4": {
+        character: null,
         glitch: { shatterStatLabel: true, revealDuration: 300 },
         next: "day3_night_stat_crack_4a"
     },
     "day3_night_stat_crack_4a": {
+        character: null,
         next: "day3_night_stat_crack_5"
     },
     "day3_night_stat_crack_5": {
+        character: null,
         next: "day3_night_stat_crack_6"
     },
     "day3_night_stat_crack_6": {
+        character: null,
         next: "day3_night_wall"
     },
 
@@ -182,42 +224,54 @@ Object.assign(SCENARIO[3], {
     //  벽의 글씨 — 꿈이 아닌 현실 (새벽 3시 각성)
     // ══════════════════════════════════════
     "day3_night_wall": {
+        character: null,
         bgm: { fadeOut: 3000 },
         next: "day3_night_wall_2"
     },
     "day3_night_wall_2": {
+        character: null,
         next: "day3_night_wall_3"
     },
     "day3_night_wall_3": {
+        character: null,
         next: "day3_night_wall_4"
     },
     // "여기서 나가"
     "day3_night_wall_4": {
+        character: null,
         glitch: { screenShake: true, noise: true, noiseDuration: 500 },
         next: "day3_night_wall_5"
     },
     "day3_night_wall_5": {
+        character: null,
         next: "day3_night_wall_6"
     },
     "day3_night_wall_6": {
+        character: null,
         next: "day3_night_wall_7"
     },
     "day3_night_wall_7": {
+        character: null,
         next: "day3_night_wall_8"
     },
     "day3_night_wall_8": {
+        character: null,
         next: "day3_night_wall_9"
     },
     "day3_night_wall_9": {
+        character: null,
         next: "day3_night_wall_10"
     },
     "day3_night_wall_10": {
+        character: null,
         next: "day3_night_wall_11"
     },
     "day3_night_wall_11": {
+        character: null,
         next: "day3_night_wall_12"
     },
     "day3_night_wall_12": {
+        character: null,
         next: "day3_night_seolhwa"
     },
 
@@ -231,18 +285,23 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_2"
     },
     "day3_night_seolhwa_2": {
+        character: null,
         next: "day3_night_seolhwa_3"
     },
     "day3_night_seolhwa_3": {
+        character: null,
         next: "day3_night_seolhwa_4"
     },
     "day3_night_seolhwa_4": {
+        character: null,
         next: "day3_night_seolhwa_4a"
     },
     "day3_night_seolhwa_4a": {
+        character: null,
         next: "day3_night_seolhwa_4b"
     },
     "day3_night_seolhwa_4b": {
+        character: null,
         next: "day3_night_seolhwa_5"
     },
     // "...5일이야."
@@ -253,36 +312,45 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_6"
     },
     "day3_night_seolhwa_6": {
+        character: null,
         next: "day3_night_seolhwa_6a"
     },
     "day3_night_seolhwa_6a": {
+        character: null,
         next: "day3_night_seolhwa_7"
     },
     // "5일 안에... 여기서 나가야 해."
     "day3_night_seolhwa_7": {
+        character: null,
         typingSpeed: 150,
         unskippable: true,
         next: "day3_night_seolhwa_7a"
     },
     "day3_night_seolhwa_7a": {
+        character: null,
         next: "day3_night_seolhwa_8"
     },
     // "나처럼 되기 전에."
     "day3_night_seolhwa_8": {
+        character: null,
         typingSpeed: 150,
         unskippable: true,
         next: "day3_night_seolhwa_9"
     },
     "day3_night_seolhwa_9": {
+        character: null,
         next: "day3_night_seolhwa_10"
     },
     "day3_night_seolhwa_10": {
+        character: null,
         next: "day3_night_seolhwa_11"
     },
     "day3_night_seolhwa_11": {
+        character: null,
         next: "day3_night_seolhwa_11a"
     },
     "day3_night_seolhwa_11a": {
+        character: null,
         next: "day3_night_seolhwa_12"
     },
     // "...기억해. 왼손."
@@ -300,18 +368,23 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_14"
     },
     "day3_night_seolhwa_14": {
+        character: null,
         next: "day3_night_seolhwa_15"
     },
     "day3_night_seolhwa_15": {
+        character: null,
         next: "day3_night_seolhwa_16"
     },
     "day3_night_seolhwa_16": {
+        character: null,
         next: "day3_night_seolhwa_17"
     },
     "day3_night_seolhwa_17": {
+        character: null,
         next: "day3_night_seolhwa_18"
     },
     "day3_night_seolhwa_18": {
+        character: null,
         next: "day3_night_choice"
     },
 
@@ -319,6 +392,7 @@ Object.assign(SCENARIO[3], {
     //  최종 선택
     // ══════════════════════════════════════
     "day3_night_choice": {
+        character: null,
         choices: [
             {
                 next: "day3_night_investigate",
@@ -332,25 +406,31 @@ Object.assign(SCENARIO[3], {
 
     // 진실을 파헤친다
     "day3_night_investigate": {
+        character: null,
         next: "day3_night_investigate_2",
         stats: { yuna: { trust: 5 } }
     },
     "day3_night_investigate_2": {
+        character: null,
         next: "day3_night_end"
     },
 
     // 모른 척한다
     "day3_night_deny": {
+        character: null,
         next: "day3_night_deny_2"
     },
     "day3_night_deny_2": {
+        character: null,
         next: "day3_night_deny_3"
     },
     "day3_night_deny_3": {
+        character: null,
         glitch: { ghostText: "day3_night_ghost_ok", ghostDuration: 1500 },
         next: "day3_night_deny_4"
     },
     "day3_night_deny_4": {
+        character: null,
         glitch: { ghostText: "day3_night_ghost_run", ghostDuration: 1500, ghostDelay: 500 },
         next: "day3_night_end"
     },

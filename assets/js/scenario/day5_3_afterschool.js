@@ -31,6 +31,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 메인 분기: 이전 선택에 따른 라우팅 ──
     "day5_after_branch": {
+        character: null,
         branches: [
             { condition: "stayed_with_eunsu", next: "day5_after_cage_1" },
             { condition: "stayed_with_sea", next: "day5_after_end" },
@@ -51,12 +52,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_end"
     },
     "day5_after_cage_2": {
+        character: null,
         next: "day5_after_cage_3"
     },
     "day5_after_cage_3": {
+        character: null,
         next: "day5_after_cage_4"
     },
     "day5_after_cage_4": {
+        character: null,
         next: "day5_after_cage_5"
     },
     "day5_after_cage_5": {
@@ -64,6 +68,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_cage_6"
     },
     "day5_after_cage_6": {
+        character: null,
         next: "day5_after_cage_7"
     },
     "day5_after_cage_7": {
@@ -77,9 +82,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_cage_9"
     },
     "day5_after_cage_9": {
+        character: null,
         next: "day5_after_cage_10"
     },
     "day5_after_cage_10": {
+        character: null,
         next: "day5_after_end"
     },
 
@@ -95,9 +102,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_2"
     },
     "day5_after_caught_2": {
+        character: null,
         next: "day5_after_caught_3"
     },
     "day5_after_caught_3": {
+        character: null,
         next: "day5_after_caught_4"
     },
     "day5_after_caught_4": {
@@ -105,6 +114,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_5"
     },
     "day5_after_caught_5": {
+        character: null,
         next: "day5_after_caught_6"
     },
     "day5_after_caught_6": {
@@ -112,9 +122,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_7"
     },
     "day5_after_caught_7": {
+        character: null,
         next: "day5_after_caught_choice"
     },
     "day5_after_caught_choice": {
+        character: null,
         timedChoice: 5000,
         choices: [
             {
@@ -130,17 +142,21 @@ Object.assign(SCENARIO[5], {
 
     // ── 붙잡힘 → 저항 → 설화 개입 ──
     "day5_after_caught_resist_1": {
+        character: null,
         glitch: { heavyGlitch: true },
         unskippable: true,
         next: "day5_after_caught_resist_2"
     },
     "day5_after_caught_resist_2": {
+        character: null,
         next: "day5_after_caught_resist_3"
     },
     "day5_after_caught_resist_3": {
+        character: null,
         next: "day5_after_caught_resist_4"
     },
     "day5_after_caught_resist_4": {
+        character: null,
         glitch: { heavy: true },
         unskippable: true,
         next: "day5_after_caught_resist_5"
@@ -152,6 +168,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_resist_6"
     },
     "day5_after_caught_resist_6": {
+        character: null,
         next: "day5_after_caught_resist_7"
     },
     "day5_after_caught_resist_7": {
@@ -166,13 +183,16 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_submit_2"
     },
     "day5_after_caught_submit_2": {
+        character: null,
         next: "day5_after_caught_submit_3"
     },
     "day5_after_caught_submit_3": {
+        character: null,
         unskippable: true,
         next: "day5_after_caught_submit_4"
     },
     "day5_after_caught_submit_4": {
+        character: null,
         glitch: { heavyGlitch: true, drugBlur: true },
         next: "day5_after_end",
         setFlags: ["chose_forget"]
@@ -188,9 +208,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_2"
     },
     "day5_after_confront_2": {
+        character: null,
         next: "day5_after_confront_3"
     },
     "day5_after_confront_3": {
+        character: null,
         next: "day5_after_confront_4"
     },
     "day5_after_confront_4": {
@@ -199,45 +221,59 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_5"
     },
     "day5_after_confront_5": {
+        character: null,
         next: "day5_after_confront_6"
     },
     "day5_after_confront_6": {
+        character: null,
         next: "day5_after_confront_7"
     },
     "day5_after_confront_7": {
+        character: null,
         next: "day5_after_confront_8"
     },
     "day5_after_confront_8": {
+        character: null,
         next: "day5_after_confront_9"
     },
     "day5_after_confront_9": {
+        character: null,
         next: "day5_after_confront_10"
     },
     "day5_after_confront_10": {
+        character: null,
         next: "day5_after_confront_11"
     },
     "day5_after_confront_11": {
+        character: null,
         next: "day5_after_confront_12"
     },
     "day5_after_confront_12": {
+        character: null,
         next: "day5_after_confront_13"
     },
     "day5_after_confront_13": {
+        character: null,
         next: "day5_after_confront_14"
     },
     "day5_after_confront_14": {
+        character: null,
         next: "day5_after_confront_15"
     },
     "day5_after_confront_15": {
+        character: null,
         next: "day5_after_confront_16"
     },
     "day5_after_confront_16": {
+        character: null,
         next: "day5_after_confront_17"
     },
     "day5_after_confront_17": {
+        character: null,
         next: "day5_after_confront_18"
     },
     "day5_after_confront_18": {
+        character: null,
         next: "day5_after_confront_19"
     },
     "day5_after_confront_19": {
@@ -254,6 +290,7 @@ Object.assign(SCENARIO[5], {
     // ★ 최종 선택지: 20초 타이머
     // ══════════════════════════════════════
     "day5_after_final_choice": {
+        character: null,
         timedChoice: 20000,
         choices: [
             {
@@ -283,6 +320,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_2"
     },
     "day5_after_true_2": {
+        character: null,
         setFlags: ["route_true", "broke_through_eunsu", "escape_with_yuna"],
         next: "day5_after_end"
     },
@@ -291,15 +329,19 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_4"
     },
     "day5_after_true_4": {
+        character: null,
         next: "day5_after_true_5"
     },
     "day5_after_true_5": {
+        character: null,
         next: "day5_after_true_6"
     },
     "day5_after_true_6": {
+        character: null,
         next: "day5_after_true_7"
     },
     "day5_after_true_7": {
+        character: null,
         next: "day5_after_true_seolhwa_branch"
     },
 
@@ -310,12 +352,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_8"
     },
     "day5_after_true_8": {
+        character: null,
         next: "day5_after_true_9"
     },
     "day5_after_true_9": {
+        character: null,
         next: "day5_after_true_10"
     },
     "day5_after_true_10": {
+        character: null,
         next: "day5_after_true_11"
     },
     "day5_after_true_11": {
@@ -323,6 +368,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_12"
     },
     "day5_after_true_12": {
+        character: null,
         setFlags: ["broke_through_eunsu", "escape_with_yuna"],
         next: "day5_after_end"
     },
@@ -336,26 +382,33 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_forget_2"
     },
     "day5_after_forget_2": {
+        character: null,
         setFlags: ["route_forget"],
         next: "day5_after_end"
     },
     "day5_after_forget_3": {
+        character: null,
         next: "day5_after_forget_4"
     },
     "day5_after_forget_4": {
+        character: null,
         next: "day5_after_forget_5"
     },
     "day5_after_forget_5": {
+        character: null,
         next: "day5_after_forget_6"
     },
     "day5_after_forget_6": {
+        character: null,
         next: "day5_after_forget_7"
     },
     "day5_after_forget_7": {
+        character: null,
         unskippable: true,
         next: "day5_after_forget_8"
     },
     "day5_after_forget_8": {
+        character: null,
         next: "day5_after_forget_9"
     },
     "day5_after_forget_9": {
@@ -363,9 +416,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_forget_10"
     },
     "day5_after_forget_10": {
+        character: null,
         next: "day5_after_forget_11"
     },
     "day5_after_forget_11": {
+        character: null,
         glitch: { heavyGlitch: true, drugBlur: true },
         unskippable: true,
         next: "day5_after_forget_12"
@@ -384,16 +439,20 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_2"
     },
     "day5_after_resist_2": {
+        character: null,
         setFlags: ["route_resist", "chose_together"],
         next: "day5_after_end"
     },
     "day5_after_resist_3": {
+        character: null,
         next: "day5_after_resist_4"
     },
     "day5_after_resist_4": {
+        character: null,
         next: "day5_after_resist_5"
     },
     "day5_after_resist_5": {
+        character: null,
         next: "day5_after_resist_6"
     },
     "day5_after_resist_6": {
@@ -409,6 +468,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_9"
     },
     "day5_after_resist_9": {
+        character: null,
         next: "day5_after_resist_10"
     },
     "day5_after_resist_10": {
@@ -416,9 +476,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_11"
     },
     "day5_after_resist_11": {
+        character: null,
         next: "day5_after_resist_12"
     },
     "day5_after_resist_12": {
+        character: null,
         next: "day5_after_resist_13"
     },
     "day5_after_resist_13": {
@@ -426,6 +488,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_14"
     },
     "day5_after_resist_14": {
+        character: null,
         next: "day5_after_resist_15"
     },
     "day5_after_resist_15": {
@@ -454,12 +517,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_4"
     },
     "day5_after_ghost_4": {
+        character: null,
         next: "day5_after_ghost_5"
     },
     "day5_after_ghost_5": {
+        character: null,
         next: "day5_after_ghost_6"
     },
     "day5_after_ghost_6": {
+        character: null,
         next: "day5_after_ghost_7"
     },
     "day5_after_ghost_7": {
@@ -467,6 +533,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_8"
     },
     "day5_after_ghost_8": {
+        character: null,
         next: "day5_after_ghost_9"
     },
     "day5_after_ghost_9": {
@@ -474,6 +541,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_10"
     },
     "day5_after_ghost_10": {
+        character: null,
         next: "day5_after_ghost_11"
     },
     "day5_after_ghost_11": {
@@ -481,10 +549,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_12"
     },
     "day5_after_ghost_12": {
+        character: null,
         glitch: { noise: true },
         next: "day5_after_ghost_13"
     },
     "day5_after_ghost_13": {
+        character: null,
         next: "day5_after_end"
     },
 

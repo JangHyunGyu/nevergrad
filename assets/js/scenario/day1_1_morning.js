@@ -30,30 +30,37 @@ Object.assign(SCENARIO[1], {
     },
     // L79: *벚꽃이 흩날린다...*
     "day1_opening_2": {
+        character: null,
         next: "day1_opening_3"
     },
     // L81: *교복이 아직 뻣뻣하다...*
     "day1_opening_3": {
+        character: null,
         next: "day1_opening_4"
     },
     // L83: *오늘부터 이 학교 학생이다.*
     "day1_opening_4": {
+        character: null,
         next: "day1_opening_5"
     },
     // L85: *전학. 처음이다...*
     "day1_opening_5": {
+        character: null,
         next: "day1_opening_6"
     },
     // L87: *전 학교 애들이랑은 SNS로...*
     "day1_opening_6": {
+        character: null,
         next: "day1_opening_7"
     },
     // L89: *벚꽃잎이 코끝을 스친다...*
     "day1_opening_7": {
+        character: null,
         next: "day1_opening_8"
     },
     // L91: *현실은 그냥 재채기다.*
     "day1_opening_8": {
+        character: null,
         next: "day1_gate_1"
     },
 
@@ -62,23 +69,28 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L95: *낯선 교문 앞에 섰다.*
     "day1_gate_1": {
+        character: null,
         background: "school_gate",
         next: "day1_gate_2"
     },
     // L97: *꽤 큰 학교다...*
     "day1_gate_2": {
+        character: null,
         next: "day1_gate_3"
     },
     // L99: *학생들이 삼삼오오 교문을 지나간다...*
     "day1_gate_3": {
+        character: null,
         next: "day1_gate_4"
     },
     // L101: *...아무도 나를 신경 쓰지 않는다...*
     "day1_gate_4": {
+        character: null,
         next: "day1_gate_5"
     },
     // L103: *심호흡 한 번. 들어가자...*
     "day1_gate_5": {
+        character: null,
         next: "day1_hallway_1"
     },
 
@@ -87,20 +99,24 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L109: *복도를 걷는다. 어디로 가야 할지 모르겠다.*
     "day1_hallway_1": {
+        character: null,
         background: "hallway",
         next: "day1_hallway_2"
     },
     // L111: *안내판을 봐도 교실 위치가 헷갈린다...*
     "day1_hallway_2": {
+        character: null,
         next: "day1_hallway_3"
     },
     // L113: *...그런데 발걸음이 자연스럽게 오른쪽 복도로...*
     "day1_hallway_3": {
+        character: null,
         glitch: "deja_vu_direction",
         next: "day1_hallway_4"
     },
     // L115: *...왜 이쪽으로 가고 있지?...*
     "day1_hallway_4": {
+        character: null,
         next: "day1_sea_meet_1"
     },
 
@@ -120,10 +136,12 @@ Object.assign(SCENARIO[1], {
     },
     // L123: *밤색 트윈테일에 교복을 깔끔하게 입고 있다...*
     "day1_sea_meet_3": {
+        character: null,
         next: "day1_sea_meet_4"
     },
     // L125: *웃고 있다. 밝은 애다.*
     "day1_sea_meet_4": {
+        character: null,
         next: "day1_sea_meet_5"
     },
     // L127: 한세아 "한세아야. 이 반 반장. {name} 맞지?"
@@ -149,6 +167,7 @@ Object.assign(SCENARIO[1], {
     },
     // L135: *반장이니까 미리 얘기 듣는 게 당연하다.*
     "day1_sea_meet_9": {
+        character: null,
         next: "day1_sea_meet_10"
     },
     // L137: 한세아 "교실 찾고 있었지? 따라와, 안내해줄게."
@@ -168,6 +187,7 @@ Object.assign(SCENARIO[1], {
     },
     // L143: 한세아 "아, 매점은 1층 끝에 있어..."
     "day1_sea_meet_13": {
+        character: null,
         next: "day1_sea_meet_14"
     },
     // L145: 나 "와, 친절하다. 반장이라 그런 거야?"
@@ -201,6 +221,7 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L157: *교실 가는 길에 세아가 가방에서 뭔가를 꺼낸다.*
     "day1_choco_1": {
+        character: null,
         next: "day1_choco_2"
     },
     // L159: 한세아 "아 맞다, 이거. 초코우유 하나 줄까?..."
@@ -215,10 +236,12 @@ Object.assign(SCENARIO[1], {
     },
     // L163: *1+1이면 공짜니까 안 받을 이유가 없지.*
     "day1_choco_4": {
+        character: null,
         next: "day1_choco_5"
     },
     // L167: 나 "어? 고마운데... 이거 왜?"
     "day1_choco_5": {
+        character: null,
         next: "day1_choco_6"
     },
     // L169: 한세아 "너 긴장해서 아침 안 먹고 왔지?..."
@@ -228,6 +251,7 @@ Object.assign(SCENARIO[1], {
     },
     // L171-174: 선택지 3개
     "day1_choco_choice": {
+        character: null,
         choices: [
             {
                 next: "day1_choco_accept_1",
@@ -255,6 +279,7 @@ Object.assign(SCENARIO[1], {
     },
     // L180: 나 "맛있다. 고마워, 세아."
     "day1_choco_accept_2": {
+        character: null,
         next: "day1_choco_accept_3"
     },
     // L182: 한세아 "맞지? 초코가 무난하잖아."
@@ -276,6 +301,7 @@ Object.assign(SCENARIO[1], {
     },
     // L190: *세아의 표정이 아주 미세하게 경직됐다...*
     "day1_choco_question_2": {
+        character: null,
         next: "day1_choco_question_3"
     },
     // L192: 한세아 "...1+1이었다니까?..."
@@ -307,6 +333,7 @@ Object.assign(SCENARIO[1], {
     },
     // L204: *세아가 멈칫한다. 아주 잠깐...*
     "day1_choco_joke_2": {
+        character: null,
         next: "day1_choco_joke_3"
     },
     // L206: 한세아 "아 진짜? ...다음엔 무조건 딸기다. 기억해 둘게."
@@ -326,18 +353,22 @@ Object.assign(SCENARIO[1], {
     },
     // L216: *문을 열고 들어서니...*
     "day1_classroom_2": {
+        character: null,
         next: "day1_classroom_3"
     },
     // L218: *...긴장된다. 웅성웅성...*
     "day1_classroom_3": {
+        character: null,
         next: "day1_classroom_4"
     },
     // L220: *가방을 내려놓고 자리에 앉았다...*
     "day1_classroom_4": {
+        character: null,
         next: "day1_classroom_5"
     },
     // L222: *가벼운 수다를 떠는 사이, 교실 문이 열리고 담임선생님이 들어온다.*
     "day1_classroom_5": {
+        character: null,
         next: "day1_eunsu_1"
     },
     // L224: *안경을 쓴 젊은 여자 선생님. 부드러운 인상이다.*
@@ -348,6 +379,7 @@ Object.assign(SCENARIO[1], {
     },
     // L226: 박은수 "자, 여러분. 오늘 새로 전학 온 학생을 소개할게요."
     "day1_eunsu_2": {
+        character: null,
         next: "day1_eunsu_3"
     },
     // L228: *교실이 조용해진다.*
@@ -397,6 +429,7 @@ Object.assign(SCENARIO[1], {
     },
     // L248: *학생들이 웃는다...*
     "day1_eunsu_12": {
+        character: null,
         next: "day1_eunsu_13"
     },
     // L250: 박은수 "좋아요. 다들 잘 챙겨주세요..."
@@ -415,10 +448,12 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L256: *두 번째 수업이 시작되기 전. 자리에 앉아서 뒤를 슬쩍 봤다.*
     "day1_seolhwa_1": {
+        character: null,
         next: "day1_seolhwa_2"
     },
     // L258: *뒷자리에 누가 있다.*
     "day1_seolhwa_2": {
+        character: null,
         next: "day1_seolhwa_3"
     },
     // L260: *색이 옅고 부스스한 머리...*
@@ -433,10 +468,12 @@ Object.assign(SCENARIO[1], {
     },
     // L264: *뒤쪽 구석에 안경 쓴 남학생도...*
     "day1_seolhwa_5": {
+        character: null,
         next: "day1_seolhwa_choice"
     },
     // L268-270: 선택지 2개
     "day1_seolhwa_choice": {
+        character: null,
         choices: [
             {
                 next: "day1_seolhwa_greet_1",
@@ -458,6 +495,7 @@ Object.assign(SCENARIO[1], {
     },
     // L276: 나 "안녕, 나 {name}이야. 잘 부탁해."
     "day1_seolhwa_greet_2": {
+        character: null,
         next: "day1_seolhwa_greet_3"
     },
     // L278: *설화가 나를 봤다. 눈이 마주친다.*
@@ -472,6 +510,7 @@ Object.assign(SCENARIO[1], {
     },
     // L282: *짧은 침묵 후, 아주 작은 목소리로:*
     "day1_seolhwa_greet_5": {
+        character: null,
         next: "day1_seolhwa_greet_6"
     },
     // L284: 이설화 "...안녕."
@@ -486,7 +525,7 @@ Object.assign(SCENARIO[1], {
     },
     // L288: 옆자리 남학생 "야, 전학생. 뒤에 누구한테 말한 거야?"
     "day1_seolhwa_greet_8": {
-        character: "classmate",
+        character: null,
         next: "day1_seolhwa_greet_9"
     },
     // L290: 나 "뒤에 앉은 애한테 인사했는데, 반응이 없어서."
@@ -496,7 +535,7 @@ Object.assign(SCENARIO[1], {
     },
     // L292: 옆자리 남학생 "아, 쟤? 원래 아무랑도 말 안 해. 1학년 때부터 저래."
     "day1_seolhwa_greet_10": {
-        character: "classmate",
+        character: null,
         next: "day1_seolhwa_greet_11"
     },
     // L294: *뒤를 봤다. 설화가 창밖을 보고 있다. 구석의 안경 남학생도...*
@@ -506,11 +545,12 @@ Object.assign(SCENARIO[1], {
     },
     // L296: 나 "그런가. 조용한 타입이구나."
     "day1_seolhwa_greet_12": {
+        character: null,
         next: "day1_seolhwa_greet_13"
     },
     // L298: 옆자리 남학생 "말 걸면 가끔 대답은 하는데, 먼저 말 걸어 본 적은 없음. 나도 이름 모름."
     "day1_seolhwa_greet_13": {
-        character: "classmate",
+        character: null,
         next: "day1_seolhwa_greet_14"
     },
     // L300: *그렇구나. 뭐, 반에 한두 명은 있는 타입이지...*
@@ -530,19 +570,23 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L306: *수업 중 연필을 떨어뜨려서 책상 밑을 봤다.*
     "day1_dejavu2_1": {
+        character: null,
         glitch: "deja_vu_desk",
         next: "day1_dejavu2_2"
     },
     // L308: *책상 밑면에 뭔가 긁힌 자국이 있다...*
     "day1_dejavu2_2": {
+        character: null,
         next: "day1_dejavu2_3"
     },
     // L310: *...필체가 낯익다...*
     "day1_dejavu2_3": {
+        character: null,
         next: "day1_dejavu2_4"
     },
     // L312: *...읽을 수 없을 만큼 흐릿하다. 신경 쓰지 말자.*
     "day1_dejavu2_4": {
+        character: null,
         next: "day1_break_1"
     },
 
@@ -551,11 +595,12 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L318: *쉬는 시간. 남학생 몇 명이 다가온다.*
     "day1_break_1": {
+        character: null,
         next: "day1_break_2"
     },
     // L320: 급우A "야, 전학생. 어디서 왔어?"
     "day1_break_2": {
-        character: "classmate",
+        character: null,
         next: "day1_break_3"
     },
     // L322: 나 "○○시요."
@@ -565,7 +610,7 @@ Object.assign(SCENARIO[1], {
     },
     // L324: 급우A "게임 뭐 해?"
     "day1_break_4": {
-        character: "classmate",
+        character: null,
         next: "day1_break_5"
     },
     // L326: *자연스럽게 대화가 이어진다...*
@@ -575,15 +620,17 @@ Object.assign(SCENARIO[1], {
     },
     // L328: 급우B "야 근데 세아가 엄청 챙겨주더라."
     "day1_break_6": {
-        character: "classmate",
+        character: null,
         next: "day1_break_7"
     },
     // L330: 급우A "세아가 원래 저래."
     "day1_break_7": {
+        character: null,
         next: "day1_break_8"
     },
     // L332: 급우B "도시락까지 싸온 건 처음인데?"
     "day1_break_8": {
+        character: null,
         next: "day1_break_9"
     },
     // L334: *...도시락?*
@@ -604,11 +651,12 @@ Object.assign(SCENARIO[1], {
     },
     // L344: *...생각보다 잘한다...*
     "day1_pe_2": {
+        character: null,
         next: "day1_pe_3"
     },
     // L346: 급우A "오 잘하는데?"
     "day1_pe_3": {
-        character: "classmate",
+        character: null,
         next: "day1_pe_4"
     },
     // L348: *유나가 운동장 구석에서 카메라를 들고 있다.*

@@ -31,33 +31,43 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_dawn_2"
     },
     "day5_morning_dawn_2": {
+        character: null,
         next: "day5_morning_dawn_3"
     },
     "day5_morning_dawn_3": {
+        character: null,
         next: "day5_morning_dawn_4"
     },
     "day5_morning_dawn_4": {
+        character: null,
         next: "day5_morning_dawn_5"
     },
     "day5_morning_dawn_5": {
+        character: null,
         next: "day5_morning_dawn_6"
     },
     "day5_morning_dawn_6": {
+        character: null,
         next: "day5_morning_dawn_7"
     },
     "day5_morning_dawn_7": {
+        character: null,
         next: "day5_morning_dawn_8"
     },
     "day5_morning_dawn_8": {
+        character: null,
         next: "day5_morning_dawn_9"
     },
     "day5_morning_dawn_9": {
+        character: null,
         next: "day5_morning_dawn_10"
     },
     "day5_morning_dawn_10": {
+        character: null,
         next: "day5_morning_dawn_11"
     },
     "day5_morning_dawn_11": {
+        character: null,
         next: "day5_morning_dawn_12"
     },
 
@@ -73,34 +83,44 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_school_1"
     },
     "day5_morning_school_1": {
+        character: null,
         next: "day5_morning_school_2"
     },
     "day5_morning_school_2": {
+        character: null,
         next: "day5_morning_school_3"
     },
     "day5_morning_school_3": {
+        character: null,
         next: "day5_morning_school_4"
     },
     "day5_morning_school_4": {
+        character: null,
         next: "day5_morning_school_5"
     },
     "day5_morning_school_5": {
+        character: null,
         next: "day5_morning_school_6"
     },
     "day5_morning_school_6": {
+        character: null,
         next: "day5_morning_school_7"
     },
     "day5_morning_school_7": {
+        character: null,
         next: "day5_morning_school_8"
     },
     "day5_morning_school_8": {
+        character: null,
         background: "old_building",
         next: "day5_morning_school_9"
     },
     "day5_morning_school_9": {
+        character: null,
         next: "day5_morning_school_10"
     },
     "day5_morning_school_10": {
+        character: null,
         next: "day5_morning_school_11"
     },
 
@@ -114,6 +134,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_1"
     },
     "day5_morning_rescue_1": {
+        character: null,
         next: "day5_morning_rescue_2"
     },
     "day5_morning_rescue_2": {
@@ -121,6 +142,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_3"
     },
     "day5_morning_rescue_3": {
+        character: null,
         next: "day5_morning_rescue_4"
     },
     "day5_morning_rescue_4": {
@@ -132,6 +154,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_6"
     },
     "day5_morning_rescue_6": {
+        character: null,
         next: "day5_morning_rescue_7"
     },
     "day5_morning_rescue_7": {
@@ -143,33 +166,43 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_9"
     },
     "day5_morning_rescue_9": {
+        character: null,
         next: "day5_morning_rescue_10"
     },
     "day5_morning_rescue_10": {
+        character: null,
         next: "day5_morning_rescue_11"
     },
     "day5_morning_rescue_11": {
+        character: null,
         next: "day5_morning_rescue_12"
     },
     "day5_morning_rescue_12": {
+        character: null,
         next: "day5_morning_rescue_13"
     },
     "day5_morning_rescue_13": {
+        character: null,
         next: "day5_morning_rescue_14"
     },
     "day5_morning_rescue_14": {
+        character: null,
         next: "day5_morning_rescue_15"
     },
     "day5_morning_rescue_15": {
+        character: null,
         next: "day5_morning_rescue_16"
     },
     "day5_morning_rescue_16": {
+        character: null,
         next: "day5_morning_rescue_17"
     },
     "day5_morning_rescue_17": {
+        character: null,
         next: "day5_morning_rescue_18"
     },
     "day5_morning_rescue_18": {
+        character: null,
         next: "day5_morning_rescue_19"
     },
     "day5_morning_rescue_19": {
@@ -182,6 +215,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_21"
     },
     "day5_morning_rescue_21": {
+        character: null,
         glitch: { ghostText: "기록해줘", ghostX: 50, ghostY: 50 },
         setFlags: ["dejavu_pin_9"],
         next: "day5_morning_rescue_22"
@@ -193,6 +227,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 선택지: 탈출 / 증거 확보 ──
     "day5_morning_rescue_choice": {
+        character: null,
         unskippable: true,
         choices: [
             { next: "day5_morning_escape_end", setFlags: ["route_escape"] },
@@ -218,39 +253,51 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_2"
     },
     "day5_morning_true_2": {
+        character: null,
         next: "day5_morning_true_3"
     },
     "day5_morning_true_3": {
+        character: null,
         next: "day5_morning_true_4"
     },
     "day5_morning_true_4": {
+        character: null,
         next: "day5_morning_true_5"
     },
     "day5_morning_true_5": {
+        character: null,
         next: "day5_morning_true_6"
     },
     "day5_morning_true_6": {
+        character: null,
         next: "day5_morning_true_7"
     },
     "day5_morning_true_7": {
+        character: null,
         next: "day5_morning_true_8"
     },
     "day5_morning_true_8": {
+        character: null,
         next: "day5_morning_true_9"
     },
     "day5_morning_true_9": {
+        character: null,
         next: "day5_morning_true_10"
     },
     "day5_morning_true_10": {
+        character: null,
         next: "day5_morning_true_11"
     },
     "day5_morning_true_11": {
+        character: null,
         next: "day5_morning_true_12"
     },
     "day5_morning_true_12": {
+        character: null,
         next: "day5_morning_true_13"
     },
     "day5_morning_true_13": {
+        character: null,
         next: "day5_morning_true_14"
     },
     "day5_morning_true_14": {
@@ -262,6 +309,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_16"
     },
     "day5_morning_true_16": {
+        character: null,
         next: "day5_morning_blockade_1"
     },
 
@@ -273,25 +321,30 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_blockade_2"
     },
     "day5_morning_blockade_2": {
+        character: null,
         next: "day5_morning_blockade_3"
     },
     "day5_morning_blockade_3": {
+        character: null,
         glitch: { screenShake: true, shakeDuration: 200 },
         unskippable: true,
         next: "day5_morning_blockade_4"
     },
     "day5_morning_blockade_4": {
+        character: null,
         next: "day5_morning_blockade_5"
     },
 
     // ── 교내 방송 — 은수 ──
     "day5_morning_blockade_5": {
+        character: null,
         glitch: { noise: true, noiseDuration: 500 },
         bgm: "music_box_broken.mp3",
         unskippable: true,
         next: "day5_morning_broadcast_1"
     },
     "day5_morning_broadcast_1": {
+        character: null,
         next: "day5_morning_broadcast_2"
     },
     "day5_morning_broadcast_2": {
@@ -308,6 +361,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_5"
     },
     "day5_morning_broadcast_5": {
+        character: null,
         next: "day5_morning_broadcast_6"
     },
     "day5_morning_broadcast_6": {
@@ -327,6 +381,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_10"
     },
     "day5_morning_broadcast_10": {
+        character: null,
         next: "day5_morning_broadcast_11"
     },
     "day5_morning_broadcast_11": {
@@ -338,11 +393,13 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_13"
     },
     "day5_morning_broadcast_13": {
+        character: null,
         glitch: { screenShake: true, shakeDuration: 300 },
         unskippable: true,
         next: "day5_morning_broadcast_14"
     },
     "day5_morning_broadcast_14": {
+        character: null,
         next: "day5_morning_broadcast_15"
     },
     "day5_morning_broadcast_15": {
@@ -354,6 +411,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_17"
     },
     "day5_morning_broadcast_17": {
+        character: null,
         next: "day5_morning_broadcast_18"
     },
 
@@ -372,6 +430,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_2"
     },
     "day5_morning_grad_2": {
+        character: null,
         next: "day5_morning_grad_3"
     },
     "day5_morning_grad_3": {
@@ -383,19 +442,24 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_5"
     },
     "day5_morning_grad_5": {
+        character: null,
         next: "day5_morning_grad_6"
     },
     "day5_morning_grad_6": {
+        character: null,
         unskippable: true,
         next: "day5_morning_grad_7"
     },
     "day5_morning_grad_7": {
+        character: null,
         next: "day5_morning_grad_8"
     },
     "day5_morning_grad_8": {
+        character: null,
         next: "day5_morning_grad_9"
     },
     "day5_morning_grad_9": {
+        character: null,
         next: "day5_morning_grad_10"
     },
     "day5_morning_grad_10": {
@@ -422,21 +486,27 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_15"
     },
     "day5_morning_grad_15": {
+        character: null,
         next: "day5_morning_grad_16"
     },
     "day5_morning_grad_16": {
+        character: null,
         next: "day5_morning_grad_17"
     },
     "day5_morning_grad_17": {
+        character: null,
         next: "day5_morning_grad_18"
     },
     "day5_morning_grad_18": {
+        character: null,
         next: "day5_morning_grad_19"
     },
     "day5_morning_grad_19": {
+        character: null,
         next: "day5_morning_grad_20"
     },
     "day5_morning_grad_20": {
+        character: null,
         next: "day5_morning_grad_21"
     },
     "day5_morning_grad_21": {
@@ -445,9 +515,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_21a"
     },
     "day5_morning_grad_21a": {
+        character: null,
         next: "day5_morning_grad_22"
     },
     "day5_morning_grad_22": {
+        character: null,
         next: "day5_morning_grad_23"
     },
     "day5_morning_grad_23": {
@@ -457,18 +529,23 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_24"
     },
     "day5_morning_grad_24": {
+        character: null,
         next: "day5_morning_grad_25"
     },
     "day5_morning_grad_25": {
+        character: null,
         next: "day5_morning_grad_26"
     },
     "day5_morning_grad_26": {
+        character: null,
         next: "day5_morning_grad_27"
     },
     "day5_morning_grad_27": {
+        character: null,
         next: "day5_morning_grad_28"
     },
     "day5_morning_grad_28": {
+        character: null,
         next: "day5_morning_grad_29"
     },
     "day5_morning_grad_29": {
@@ -488,6 +565,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 타이머 선택지: 10초 ──
     "day5_morning_grad_timer": {
+        character: null,
         timedChoice: 10000,
         unskippable: true,
         choices: [
@@ -504,6 +582,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_reply_1b"
     },
     "day5_morning_grad_reply_1b": {
+        character: null,
         next: "day5_morning_proposal_1"
     },
 
@@ -513,9 +592,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_reply_2b"
     },
     "day5_morning_grad_reply_2b": {
+        character: null,
         next: "day5_morning_grad_reply_2c"
     },
     "day5_morning_grad_reply_2c": {
+        character: null,
         next: "day5_morning_proposal_1"
     },
 
@@ -538,6 +619,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_proposal_2"
     },
     "day5_morning_proposal_2": {
+        character: null,
         next: "day5_morning_proposal_3"
     },
     "day5_morning_proposal_3": {
@@ -558,6 +640,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_proposal_7"
     },
     "day5_morning_proposal_7": {
+        character: null,
         next: "day5_morning_proposal_8"
     },
     "day5_morning_proposal_8": {
@@ -578,15 +661,19 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_proposal_12"
     },
     "day5_morning_proposal_12": {
+        character: null,
         next: "day5_morning_proposal_13"
     },
     "day5_morning_proposal_13": {
+        character: null,
         next: "day5_morning_proposal_14"
     },
     "day5_morning_proposal_14": {
+        character: null,
         next: "day5_morning_proposal_15"
     },
     "day5_morning_proposal_15": {
+        character: null,
         next: "day5_morning_proposal_16"
     },
     "day5_morning_proposal_16": {
@@ -604,6 +691,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 최종 타이머 선택지: 15초 ──
     "day5_morning_proposal_timer": {
+        character: null,
         timedChoice: 15000,
         unskippable: true,
         choices: [

@@ -34,18 +34,23 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_wakeup_2"
     },
     "day2_morning_wakeup_2": {
+        character: null,
         next: "day2_morning_wakeup_3"
     },
     "day2_morning_wakeup_3": {
+        character: null,
         next: "day2_morning_wakeup_4"
     },
     "day2_morning_wakeup_4": {
+        character: null,
         next: "day2_morning_wakeup_5"
     },
     "day2_morning_wakeup_5": {
+        character: null,
         next: "day2_morning_wakeup_6"
     },
     "day2_morning_wakeup_6": {
+        character: null,
         next: "day2_morning_wakeup_7"
     },
 
@@ -60,35 +65,45 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_gate_2"
     },
     "day2_morning_gate_2": {
+        character: null,
         next: "day2_morning_gate_3"
     },
     "day2_morning_gate_3": {
+        character: null,
         next: "day2_morning_gate_4"
     },
     "day2_morning_gate_4": {
+        character: null,
         next: "day2_morning_gate_5"
     },
 
     // ===== 등교길 — 세아와 수다 =====
     "day2_morning_gate_5": {
+        character: null,
         next: "day2_morning_walk_1"
     },
     "day2_morning_walk_1": {
+        character: null,
         next: "day2_morning_walk_2"
     },
     "day2_morning_walk_2": {
+        character: null,
         next: "day2_morning_walk_3"
     },
     "day2_morning_walk_3": {
+        character: null,
         next: "day2_morning_walk_4"
     },
     "day2_morning_walk_4": {
+        character: null,
         next: "day2_morning_walk_5"
     },
     "day2_morning_walk_5": {
+        character: null,
         next: "day2_morning_walk_6"
     },
     "day2_morning_walk_6": {
+        character: null,
         next: "day2_morning_walk_7",
         stats: { sea: { affinity: 3 } }
     },
@@ -97,6 +112,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_walk_8"
     },
     "day2_morning_walk_8": {
+        character: null,
         next: "day2_morning_walk_9"
     },
     "day2_morning_walk_9": {
@@ -104,12 +120,15 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_walk_10"
     },
     "day2_morning_walk_10": {
+        character: null,
         next: "day2_morning_walk_11"
     },
     "day2_morning_walk_11": {
+        character: null,
         next: "day2_morning_walk_12"
     },
     "day2_morning_walk_12": {
+        character: null,
         next: "day2_morning_walk_13"
     },
     "day2_morning_walk_13": {
@@ -121,6 +140,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_walk_15"
     },
     "day2_morning_walk_15": {
+        character: null,
         next: "day2_morning_walk_16"
     },
     "day2_morning_walk_16": {
@@ -136,12 +156,15 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja4_1"
     },
     "day2_morning_deja4_1": {
+        character: null,
         next: "day2_morning_deja4_2"
     },
     "day2_morning_deja4_2": {
+        character: null,
         next: "day2_morning_deja4_3"
     },
     "day2_morning_deja4_3": {
+        character: null,
         next: "day2_morning_deja4_4"
     },
     "day2_morning_deja4_4": {
@@ -155,6 +178,7 @@ Object.assign(SCENARIO[2], {
         glitch: { type: "flicker", duration: 300 }
     },
     "day2_morning_deja4_6": {
+        character: null,
         next: "day2_morning_class_1"
     },
 
@@ -170,6 +194,7 @@ Object.assign(SCENARIO[2], {
 
     // ===== 교실 — 출석 & 설화 =====
     "day2_morning_class_3": {
+        character: null,
         background: "classroom",
         next: "day2_morning_class_4"
     },
@@ -179,9 +204,11 @@ Object.assign(SCENARIO[2], {
         stats: { eunsu: { danger: 3 } }
     },
     "day2_morning_class_5": {
+        character: null,
         next: "day2_morning_class_6"
     },
     "day2_morning_class_6": {
+        character: null,
         next: "day2_morning_class_7"
     },
 
@@ -191,6 +218,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_1"
     },
     "day2_morning_pres_1": {
+        character: null,
         next: "day2_morning_pres_2"
     },
     "day2_morning_pres_2": {
@@ -222,9 +250,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_9"
     },
     "day2_morning_pres_9": {
+        character: null,
         next: "day2_morning_pres_10"
     },
     "day2_morning_pres_10": {
+        character: null,
         next: "day2_morning_pres_11"
     },
     "day2_morning_pres_11": {
@@ -232,6 +262,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_12"
     },
     "day2_morning_pres_12": {
+        character: null,
         next: "day2_morning_deja5_1",
         stats: { sea: { affinity: 2 } }
     },
@@ -242,6 +273,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja5_2"
     },
     "day2_morning_deja5_2": {
+        character: null,
         next: "day2_morning_deja5_3"
     },
     "day2_morning_deja5_3": {
@@ -249,6 +281,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja5_4"
     },
     "day2_morning_deja5_4": {
+        character: null,
         next: "day2_morning_deja5_5"
     },
     "day2_morning_deja5_5": {
@@ -256,14 +289,17 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja5_6"
     },
     "day2_morning_deja5_6": {
+        character: null,
         next: "day2_morning_deja5_6a",
         stats: { dejavu: 1, eunsu: { danger: 2 } },
         glitch: { type: "cold", duration: 500 }
     },
     "day2_morning_deja5_6a": {
+        character: null,
         next: "day2_morning_deja5_7"
     },
     "day2_morning_deja5_7": {
+        character: null,
         next: "day2_morning_deja5_7a"
     },
     "day2_morning_deja5_7a": {
@@ -275,6 +311,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja5_9"
     },
     "day2_morning_deja5_9": {
+        character: null,
         next: "day2_morning_deja5_10"
     },
     "day2_morning_deja5_10": {
@@ -300,6 +337,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_seolhwa_5"
     },
     "day2_morning_seolhwa_5": {
+        character: null,
         next: "day2_morning_end",
         glitch: { silence: true, silenceDuration: 2000 }
     },

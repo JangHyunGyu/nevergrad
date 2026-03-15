@@ -23,6 +23,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_choice"
     },
     "day1_after_choice": {
+        character: null,
         choices: [
             { next: "day1_after_sea_1" },
             { next: "day1_after_yuna_1", condition: "met_yuna" },
@@ -51,6 +52,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_sea_5"
     },
     "day1_after_sea_5": {
+        character: null,
         next: "day1_after_sea_6"
     },
     "day1_after_sea_6": {
@@ -75,15 +77,19 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_sea_11"
     },
     "day1_after_sea_11": {
+        character: null,
         next: "day1_after_sea_12"
     },
     "day1_after_sea_12": {
+        character: null,
         next: "day1_after_sea_13"
     },
     "day1_after_sea_13": {
+        character: null,
         next: "day1_after_sea_14"
     },
     "day1_after_sea_14": {
+        character: null,
         next: "day1_after_sea_15"
     },
     "day1_after_sea_15": {
@@ -124,6 +130,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_yuna_7"
     },
     "day1_after_yuna_7": {
+        character: null,
         next: "day1_after_yuna_8"
     },
     "day1_after_yuna_8": {
@@ -137,6 +144,7 @@ Object.assign(SCENARIO[1], {
     },
     // 폴라로이드 선물
     "day1_after_yuna_10": {
+        character: null,
         next: "day1_after_yuna_11"
     },
     "day1_after_yuna_11": {
@@ -169,9 +177,11 @@ Object.assign(SCENARIO[1], {
         stats: { riin: { affinity: 3 } }
     },
     "day1_after_riin_3": {
+        character: null,
         next: "day1_after_riin_4"
     },
     "day1_after_riin_4": {
+        character: null,
         next: "day1_after_riin_5"
     },
     "day1_after_riin_5": {
@@ -196,6 +206,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_riin_10"
     },
     "day1_after_riin_10": {
+        character: null,
         next: "day1_after_riin_11"
     },
     "day1_after_riin_11": {
@@ -224,6 +235,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_eunsu_4"
     },
     "day1_after_eunsu_4": {
+        character: null,
         next: "day1_after_eunsu_5"
     },
     "day1_after_eunsu_5": {
@@ -240,6 +252,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_eunsu_8"
     },
     "day1_after_eunsu_8": {
+        character: null,
         next: "day1_after_eunsu_9"
     },
     "day1_after_eunsu_9": {
@@ -260,18 +273,23 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_home_2"
     },
     "day1_after_home_2": {
+        character: null,
         next: "day1_after_home_3"
     },
     "day1_after_home_3": {
+        character: null,
         next: "day1_after_home_4"
     },
     "day1_after_home_4": {
+        character: null,
         next: "day1_after_home_5"
     },
     "day1_after_home_5": {
+        character: null,
         next: "day1_after_home_6"
     },
     "day1_after_home_6": {
+        character: null,
         next: "day1_after_end"
     },
 

@@ -24,6 +24,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 엔딩 라우터 ──
     "day5_night_routing": {
+        character: null,
         branches: [
             { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_ending_complicit_1" },
             { condition: ["broke_through_eunsu", "escape_with_yuna", "has_evidence"], next: "day5_ending_true_1" },
@@ -51,6 +52,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_3"
     },
     "day5_ending_true_3": {
+        character: null,
         next: "day5_ending_true_4"
     },
     "day5_ending_true_4": {
@@ -58,13 +60,16 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_5"
     },
     "day5_ending_true_5": {
+        character: null,
         next: "day5_ending_true_6"
     },
     "day5_ending_true_6": {
+        character: null,
         background: "emergency_exit",
         next: "day5_ending_true_7"
     },
     "day5_ending_true_7": {
+        character: null,
         next: "day5_ending_true_8"
     },
     "day5_ending_true_8": {
@@ -72,9 +77,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_9"
     },
     "day5_ending_true_9": {
+        character: null,
         next: "day5_ending_true_10"
     },
     "day5_ending_true_10": {
+        character: null,
         next: "day5_ending_true_11"
     },
     "day5_ending_true_11": {
@@ -82,9 +89,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_12"
     },
     "day5_ending_true_12": {
+        character: null,
         next: "day5_ending_true_13"
     },
     "day5_ending_true_13": {
+        character: null,
         next: "day5_ending_true_14"
     },
     "day5_ending_true_14": {
@@ -92,6 +101,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_15"
     },
     "day5_ending_true_15": {
+        character: null,
         next: "day5_ending_true_16"
     },
     "day5_ending_true_16": {
@@ -99,18 +109,23 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_17"
     },
     "day5_ending_true_17": {
+        character: null,
         next: "day5_ending_true_18"
     },
     "day5_ending_true_18": {
+        character: null,
         next: "day5_ending_true_19"
     },
     "day5_ending_true_19": {
+        character: null,
         next: "day5_ending_true_20"
     },
     "day5_ending_true_20": {
+        character: null,
         next: "day5_ending_true_21"
     },
     "day5_ending_true_21": {
+        character: null,
         next: "day5_ending_true_22"
     },
     "day5_ending_true_22": {
@@ -118,6 +133,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_23"
     },
     "day5_ending_true_23": {
+        character: null,
         next: "day5_ending_true_24"
     },
     // ── 에필로그 / 3개월 후 ──
@@ -128,32 +144,41 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_25"
     },
     "day5_ending_true_25": {
+        character: null,
         background: "news_article",
         next: "day5_ending_true_26"
     },
     "day5_ending_true_26": {
+        character: null,
         next: "day5_ending_true_27"
     },
     "day5_ending_true_27": {
+        character: null,
         next: "day5_ending_true_28"
     },
     "day5_ending_true_28": {
+        character: null,
         background: "new_classroom",
         next: "day5_ending_true_29"
     },
     "day5_ending_true_29": {
+        character: null,
         next: "day5_ending_true_30"
     },
     "day5_ending_true_30": {
+        character: null,
         next: "day5_ending_true_31"
     },
     "day5_ending_true_31": {
+        character: null,
         next: "day5_ending_true_32"
     },
     "day5_ending_true_32": {
+        character: null,
         next: "day5_ending_true_title"
     },
     "day5_ending_true_title": {
+        character: null,
         endingTitle: "TRUE END",
         endingSubtitle: "day5_ending_true_subtitle",
         unskippable: true,
@@ -171,30 +196,38 @@ Object.assign(SCENARIO[5], {
         next: "day5_postcredit_2"
     },
     "day5_postcredit_2": {
+        character: null,
         next: "day5_postcredit_3"
     },
     "day5_postcredit_3": {
+        character: null,
         typingSpeed: 60,
         next: "day5_postcredit_4"
     },
     "day5_postcredit_4": {
+        character: null,
         next: "day5_postcredit_5"
     },
     "day5_postcredit_5": {
+        character: null,
         next: "day5_postcredit_6"
     },
     "day5_postcredit_6": {
+        character: null,
         next: "day5_postcredit_7"
     },
     "day5_postcredit_7": {
+        character: null,
         glitch: { heavyGlitch: true },
         typingSpeed: 100,
         next: "day5_postcredit_8"
     },
     "day5_postcredit_8": {
+        character: null,
         next: "day5_postcredit_end"
     },
     "day5_postcredit_end": {
+        character: null,
         next: null
     },
 
@@ -208,9 +241,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_escape_2"
     },
     "day5_ending_escape_2": {
+        character: null,
         next: "day5_ending_escape_3"
     },
     "day5_ending_escape_3": {
+        character: null,
         next: "day5_ending_escape_4"
     },
     "day5_ending_escape_4": {
@@ -222,13 +257,16 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_escape_6"
     },
     "day5_ending_escape_6": {
+        character: null,
         background: "dawn_road",
         next: "day5_ending_escape_7"
     },
     "day5_ending_escape_7": {
+        character: null,
         next: "day5_ending_escape_8"
     },
     "day5_ending_escape_8": {
+        character: null,
         next: "day5_ending_escape_9"
     },
     "day5_ending_escape_9": {
@@ -240,19 +278,23 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_escape_11"
     },
     "day5_ending_escape_11": {
+        character: null,
         next: "day5_ending_escape_12"
     },
     "day5_ending_escape_12": {
+        character: null,
         glitch: { noise: true },
         next: "day5_ending_escape_13"
     },
     // ── 에필로그 ──
     "day5_ending_escape_13": {
+        character: null,
         background: "black",
         fadeIn: true,
         next: "day5_ending_escape_14"
     },
     "day5_ending_escape_14": {
+        character: null,
         next: "day5_ending_escape_15"
     },
     "day5_ending_escape_15": {
@@ -260,6 +302,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_escape_title"
     },
     "day5_ending_escape_title": {
+        character: null,
         endingTitle: "ESCAPE END",
         endingSubtitle: "day5_ending_escape_subtitle",
         unskippable: true,
@@ -285,6 +328,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_4"
     },
     "day5_ending_resist_4": {
+        character: null,
         next: "day5_ending_resist_5"
     },
     "day5_ending_resist_5": {
@@ -292,6 +336,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_6"
     },
     "day5_ending_resist_6": {
+        character: null,
         next: "day5_ending_resist_7"
     },
     "day5_ending_resist_7": {
@@ -307,9 +352,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_10"
     },
     "day5_ending_resist_10": {
+        character: null,
         next: "day5_ending_resist_11"
     },
     "day5_ending_resist_11": {
+        character: null,
         next: "day5_ending_resist_12"
     },
     "day5_ending_resist_12": {
@@ -333,6 +380,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_17"
     },
     "day5_ending_resist_17": {
+        character: null,
         next: "day5_ending_resist_18"
     },
     "day5_ending_resist_18": {
@@ -352,6 +400,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_18d"
     },
     "day5_ending_resist_18d": {
+        character: null,
         next: "day5_ending_resist_19"
     },
     "day5_ending_resist_19": {
@@ -359,21 +408,27 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_20"
     },
     "day5_ending_resist_20": {
+        character: null,
         next: "day5_ending_resist_21"
     },
     "day5_ending_resist_21": {
+        character: null,
         next: "day5_ending_resist_22"
     },
     "day5_ending_resist_22": {
+        character: null,
         next: "day5_ending_resist_23"
     },
     "day5_ending_resist_23": {
+        character: null,
         next: "day5_ending_resist_24"
     },
     "day5_ending_resist_24": {
+        character: null,
         next: "day5_ending_resist_title"
     },
     "day5_ending_resist_title": {
+        character: null,
         endingTitle: "RESIST END",
         endingSubtitle: "day5_ending_resist_subtitle",
         unskippable: true,
@@ -403,26 +458,33 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_eunsu_5"
     },
     "day5_ending_cage_eunsu_5": {
+        character: null,
         fadeOut: true,
         next: "day5_ending_cage_eunsu_6"
     },
     "day5_ending_cage_eunsu_6": {
+        character: null,
         background: "classroom_afternoon",
         next: "day5_ending_cage_eunsu_7"
     },
     "day5_ending_cage_eunsu_7": {
+        character: null,
         next: "day5_ending_cage_eunsu_8"
     },
     "day5_ending_cage_eunsu_8": {
+        character: null,
         next: "day5_ending_cage_eunsu_9"
     },
     "day5_ending_cage_eunsu_9": {
+        character: null,
         next: "day5_ending_cage_eunsu_10"
     },
     "day5_ending_cage_eunsu_10": {
+        character: null,
         next: "day5_ending_cage_eunsu_11"
     },
     "day5_ending_cage_eunsu_11": {
+        character: null,
         next: "day5_ending_cage_title"
     },
     // ── CAGE END — "새장" (세아 변형) ──
@@ -433,6 +495,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_sea_2"
     },
     "day5_ending_cage_sea_2": {
+        character: null,
         next: "day5_ending_cage_sea_3"
     },
     "day5_ending_cage_sea_3": {
@@ -440,9 +503,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_sea_4"
     },
     "day5_ending_cage_sea_4": {
+        character: null,
         next: "day5_ending_cage_sea_5"
     },
     "day5_ending_cage_sea_5": {
+        character: null,
         fadeOut: true,
         next: "day5_ending_cage_sea_6"
     },
@@ -452,16 +517,20 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_sea_7"
     },
     "day5_ending_cage_sea_7": {
+        character: null,
         next: "day5_ending_cage_sea_8"
     },
     "day5_ending_cage_sea_8": {
+        character: null,
         next: "day5_ending_cage_sea_9"
     },
     "day5_ending_cage_sea_9": {
+        character: null,
         next: "day5_ending_cage_title"
     },
     // ── CAGE END 공통 타이틀 + 루프 ──
     "day5_ending_cage_title": {
+        character: null,
         endingTitle: "CAGE END",
         endingSubtitle: "day5_ending_cage_subtitle",
         unskippable: true,
@@ -484,6 +553,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_2"
     },
     "day5_ending_forget_2": {
+        character: null,
         next: "day5_ending_forget_3"
     },
     "day5_ending_forget_3": {
@@ -495,9 +565,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_5"
     },
     "day5_ending_forget_5": {
+        character: null,
         next: "day5_ending_forget_6"
     },
     "day5_ending_forget_6": {
+        character: null,
         next: "day5_ending_forget_7"
     },
     "day5_ending_forget_7": {
@@ -509,39 +581,49 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_9"
     },
     "day5_ending_forget_9": {
+        character: null,
         next: "day5_ending_forget_10"
     },
     "day5_ending_forget_10": {
+        character: null,
         next: "day5_ending_forget_11"
     },
     "day5_ending_forget_11": {
+        character: null,
         next: "day5_ending_forget_12"
     },
     "day5_ending_forget_12": {
+        character: null,
         glitch: { heavyGlitch: true },
         next: "day5_ending_forget_13"
     },
     // ── 화이트아웃 후 새 아침 ──
     "day5_ending_forget_13": {
+        character: null,
         background: "white",
         fadeOut: true,
         next: "day5_ending_forget_14"
     },
     "day5_ending_forget_14": {
+        character: null,
         background: "home",
         bgm: "morning_peaceful.mp3",
         next: "day5_ending_forget_15"
     },
     "day5_ending_forget_15": {
+        character: null,
         next: "day5_ending_forget_16"
     },
     "day5_ending_forget_16": {
+        character: null,
         next: "day5_ending_forget_17"
     },
     "day5_ending_forget_17": {
+        character: null,
         next: "day5_ending_forget_18"
     },
     "day5_ending_forget_18": {
+        character: null,
         next: "day5_ending_forget_19"
     },
     "day5_ending_forget_19": {
@@ -550,6 +632,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_20"
     },
     "day5_ending_forget_20": {
+        character: null,
         next: "day5_ending_forget_21"
     },
     "day5_ending_forget_21": {
@@ -557,10 +640,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_22"
     },
     "day5_ending_forget_22": {
+        character: null,
         next: "day5_ending_forget_sea_branch"
     },
     // ── 세아 호감도 MAX 분기 ──
     "day5_ending_forget_sea_branch": {
+        character: null,
         affinityChar: "sea",
         affinityBranches: [
             { minAffinity: 60, next: "day5_ending_forget_sea_1" },
@@ -573,12 +658,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_sea_2"
     },
     "day5_ending_forget_sea_2": {
+        character: null,
         next: "day5_ending_forget_sea_3"
     },
     "day5_ending_forget_sea_3": {
+        character: null,
         next: "day5_ending_forget_title"
     },
     "day5_ending_forget_title": {
+        character: null,
         endingTitle: "FORGET END",
         endingSubtitle: "day5_ending_forget_subtitle",
         unskippable: true,
@@ -597,6 +685,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_2"
     },
     "day5_ending_ghost_2": {
+        character: null,
         next: "day5_ending_ghost_3"
     },
     "day5_ending_ghost_3": {
@@ -612,9 +701,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_6"
     },
     "day5_ending_ghost_6": {
+        character: null,
         next: "day5_ending_ghost_7"
     },
     "day5_ending_ghost_7": {
+        character: null,
         next: "day5_ending_ghost_8"
     },
     "day5_ending_ghost_8": {
@@ -630,9 +721,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_11"
     },
     "day5_ending_ghost_11": {
+        character: null,
         next: "day5_ending_ghost_12"
     },
     "day5_ending_ghost_12": {
+        character: null,
         next: "day5_ending_ghost_13"
     },
     "day5_ending_ghost_13": {
@@ -644,33 +737,42 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_15"
     },
     "day5_ending_ghost_15": {
+        character: null,
         next: "day5_ending_ghost_16"
     },
     // ── 에필로그 ──
     "day5_ending_ghost_16": {
+        character: null,
         background: "new_place",
         bgm: "ending_melancholy.mp3",
         next: "day5_ending_ghost_17"
     },
     "day5_ending_ghost_17": {
+        character: null,
         next: "day5_ending_ghost_18"
     },
     "day5_ending_ghost_18": {
+        character: null,
         next: "day5_ending_ghost_19"
     },
     "day5_ending_ghost_19": {
+        character: null,
         next: "day5_ending_ghost_20"
     },
     "day5_ending_ghost_20": {
+        character: null,
         next: "day5_ending_ghost_21"
     },
     "day5_ending_ghost_21": {
+        character: null,
         next: "day5_ending_ghost_22"
     },
     "day5_ending_ghost_22": {
+        character: null,
         next: "day5_ending_ghost_title"
     },
     "day5_ending_ghost_title": {
+        character: null,
         endingTitle: "GHOST END",
         endingSubtitle: "day5_ending_ghost_subtitle",
         unskippable: true,
@@ -692,6 +794,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_3"
     },
     "day5_ending_complicit_3": {
+        character: null,
         next: "day5_ending_complicit_4"
     },
     "day5_ending_complicit_4": {
@@ -699,6 +802,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_5"
     },
     "day5_ending_complicit_5": {
+        character: null,
         next: "day5_ending_complicit_6"
     },
     "day5_ending_complicit_6": {
@@ -710,22 +814,28 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_8"
     },
     "day5_ending_complicit_8": {
+        character: null,
         autoAdvance: true,
         next: "day5_ending_complicit_8a"
     },
     "day5_ending_complicit_8a": {
+        character: null,
         next: "day5_ending_complicit_8b"
     },
     "day5_ending_complicit_8b": {
+        character: null,
         next: "day5_ending_complicit_9"
     },
     "day5_ending_complicit_9": {
+        character: null,
         next: "day5_ending_complicit_10"
     },
     "day5_ending_complicit_10": {
+        character: null,
         next: "day5_ending_complicit_11"
     },
     "day5_ending_complicit_11": {
+        character: null,
         fadeOut: true,
         next: "day5_ending_complicit_12"
     },
@@ -737,24 +847,31 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_13"
     },
     "day5_ending_complicit_13": {
+        character: null,
         next: "day5_ending_complicit_14"
     },
     "day5_ending_complicit_14": {
+        character: null,
         next: "day5_ending_complicit_15"
     },
     "day5_ending_complicit_15": {
+        character: null,
         next: "day5_ending_complicit_16"
     },
     "day5_ending_complicit_16": {
+        character: null,
         next: "day5_ending_complicit_17"
     },
     "day5_ending_complicit_17": {
+        character: null,
         next: "day5_ending_complicit_18"
     },
     "day5_ending_complicit_18": {
+        character: null,
         next: "day5_ending_complicit_title"
     },
     "day5_ending_complicit_title": {
+        character: null,
         endingTitle: "COMPLICIT END",
         endingSubtitle: "day5_ending_complicit_subtitle",
         unskippable: true,

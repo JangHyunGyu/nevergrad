@@ -15,6 +15,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_choice"
     },
     "day1_lunch_choice": {
+        character: null,
         choices: [
             { next: "day1_lunch_sea_1", setFlags: ["lunch_with_sea"] },
             { next: "day1_lunch_yuna_1", setFlags: ["met_yuna"] },
@@ -30,9 +31,11 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_sea_2"
     },
     "day1_lunch_sea_2": {
+        character: null,
         next: "day1_lunch_sea_3"
     },
     "day1_lunch_sea_3": {
+        character: null,
         next: "day1_lunch_sea_4"
     },
     "day1_lunch_sea_4": {
@@ -44,6 +47,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_sea_6"
     },
     "day1_lunch_sea_6": {
+        character: null,
         next: "day1_lunch_sea_7"
     },
     "day1_lunch_sea_7": {
@@ -63,6 +67,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_sea_11"
     },
     "day1_lunch_sea_11": {
+        character: null,
         next: "day1_lunch_sea_12"
     },
     "day1_lunch_sea_12": {
@@ -76,9 +81,11 @@ Object.assign(SCENARIO[1], {
     },
     // 수다 이어짐
     "day1_lunch_sea_14": {
+        character: null,
         next: "day1_lunch_sea_15"
     },
     "day1_lunch_sea_15": {
+        character: null,
         next: "day1_lunch_sea_16"
     },
     "day1_lunch_sea_16": {
@@ -86,6 +93,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_sea_17"
     },
     "day1_lunch_sea_17": {
+        character: null,
         next: "day1_lunch_sea_18"
     },
     "day1_lunch_sea_18": {
@@ -115,6 +123,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_sea_24"
     },
     "day1_lunch_sea_24": {
+        character: null,
         next: "day1_lunch_sea_25"
     },
     "day1_lunch_sea_25": {
@@ -126,6 +135,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_sea_27"
     },
     "day1_lunch_sea_27": {
+        character: null,
         next: "day1_lunch_sea_28"
     },
     "day1_lunch_sea_28": {
@@ -146,12 +156,15 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_yuna_2"
     },
     "day1_lunch_yuna_2": {
+        character: null,
         next: "day1_lunch_yuna_3"
     },
     "day1_lunch_yuna_3": {
+        character: null,
         next: "day1_lunch_yuna_4"
     },
     "day1_lunch_yuna_4": {
+        character: null,
         next: "day1_lunch_yuna_5"
     },
     "day1_lunch_yuna_5": {
@@ -159,6 +172,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_yuna_6"
     },
     "day1_lunch_yuna_6": {
+        character: null,
         next: "day1_lunch_yuna_7"
     },
     "day1_lunch_yuna_7": {
@@ -174,6 +188,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_yuna_10"
     },
     "day1_lunch_yuna_10": {
+        character: null,
         next: "day1_lunch_yuna_11"
     },
     "day1_lunch_yuna_11": {
@@ -186,9 +201,11 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_yuna_13"
     },
     "day1_lunch_yuna_13": {
+        character: null,
         next: "day1_lunch_yuna_14"
     },
     "day1_lunch_yuna_14": {
+        character: null,
         next: "day1_lunch_yuna_15"
     },
     "day1_lunch_yuna_15": {
@@ -209,6 +226,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_riin_2"
     },
     "day1_lunch_riin_2": {
+        character: null,
         next: "day1_lunch_riin_3"
     },
     "day1_lunch_riin_3": {
@@ -253,9 +271,11 @@ Object.assign(SCENARIO[1], {
     },
     // 보건실에서 잠깐 잠들기
     "day1_lunch_riin_13": {
+        character: null,
         next: "day1_lunch_riin_14"
     },
     "day1_lunch_riin_14": {
+        character: null,
         next: "day1_lunch_riin_15"
     },
     "day1_lunch_riin_15": {
@@ -284,15 +304,19 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_alone_2"
     },
     "day1_lunch_alone_2": {
+        character: null,
         next: "day1_lunch_alone_3"
     },
     "day1_lunch_alone_3": {
+        character: null,
         next: "day1_lunch_alone_4"
     },
     "day1_lunch_alone_4": {
+        character: null,
         next: "day1_lunch_alone_5"
     },
     "day1_lunch_alone_5": {
+        character: null,
         next: "day1_lunch_end",
         glitch: "loop_truth"
     },

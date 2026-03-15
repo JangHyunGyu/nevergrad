@@ -25,55 +25,68 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_phone_1"
     },
     "day2_night_phone_1": {
+        character: null,
         night: true,
         next: "day2_night_phone_2"
     },
     "day2_night_phone_2": {
+        character: null,
         night: true,
         next: "day2_night_phone_3"
     },
     "day2_night_phone_3": {
+        character: null,
         night: true,
         next: "day2_night_phone_4"
     },
     "day2_night_phone_4": {
+        character: null,
         night: true,
         messengerDelay: 5000,
         next: "day2_night_phone_5"
     },
     "day2_night_phone_5": {
+        character: null,
         night: true,
         next: "day2_night_phone_6"
     },
     "day2_night_phone_6": {
+        character: null,
         night: true,
         next: "day2_night_phone_7"
     },
     "day2_night_phone_7": {
+        character: null,
         night: true,
         next: "day2_night_phone_8"
     },
     "day2_night_phone_8": {
+        character: null,
         night: true,
         next: "day2_night_phone_9"
     },
     "day2_night_phone_9": {
+        character: null,
         night: true,
         next: "day2_night_phone_10"
     },
     "day2_night_phone_10": {
+        character: null,
         night: true,
         next: "day2_night_phone_11"
     },
     "day2_night_phone_11": {
+        character: null,
         night: true,
         next: "day2_night_phone_12"
     },
     "day2_night_phone_12": {
+        character: null,
         night: true,
         next: "day2_night_phone_13"
     },
     "day2_night_phone_13": {
+        character: null,
         night: true,
         next: "day2_night_sea_1"
     },
@@ -196,34 +209,41 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_flash_2"
     },
     "day2_night_flash_2": {
+        character: null,
         night: true,
         glitch: { noise: true, noiseDuration: 300 },
         next: "day2_night_flash_3"
     },
     "day2_night_flash_3": {
+        character: null,
         night: true,
         next: "day2_night_flash_4"
     },
     "day2_night_flash_4": {
+        character: null,
         night: true,
         next: "day2_night_flash_5"
     },
     "day2_night_flash_5": {
+        character: null,
         night: true,
         glitch: { noise: true, noiseDuration: 500 },
         next: "day2_night_flash_6"
     },
     "day2_night_flash_6": {
+        character: null,
         night: true,
         next: "day2_night_flash_7"
     },
     "day2_night_flash_7": {
+        character: null,
         night: true,
         next: "day2_night_flash_8"
     },
 
     // ===== 설화의 꿈 =====
     "day2_night_flash_8": {
+        character: null,
         night: true,
         next: "day2_night_dream_1"
     },
@@ -235,15 +255,18 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_dream_2"
     },
     "day2_night_dream_2": {
+        character: null,
         background: "classroom",
         night: true,
         next: "day2_night_dream_3"
     },
     "day2_night_dream_3": {
+        character: null,
         night: true,
         next: "day2_night_dream_4"
     },
     "day2_night_dream_4": {
+        character: null,
         night: true,
         next: "day2_night_dream_5"
     },
@@ -269,6 +292,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_dream_8"
     },
     "day2_night_dream_8": {
+        character: null,
         night: true,
         glitch: { noise: true, noiseDuration: 800 },
         next: "day2_night_dream_9"
@@ -288,10 +312,12 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_wake_2"
     },
     "day2_night_wake_2": {
+        character: null,
         night: true,
         next: "day2_night_wake_3"
     },
     "day2_night_wake_3": {
+        character: null,
         night: true,
         next: "day2_night_end"
     },

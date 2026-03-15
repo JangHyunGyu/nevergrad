@@ -25,29 +25,37 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_eunsu_2"
     },
     "day2_after_eunsu_2": {
+        character: null,
         next: "day2_after_eunsu_3"
     },
     "day2_after_eunsu_3": {
+        character: null,
         next: "day2_after_eunsu_4"
     },
     "day2_after_eunsu_4": {
+        character: null,
         next: "day2_after_eunsu_5"
     },
     "day2_after_eunsu_5": {
+        character: null,
         next: "day2_after_eunsu_6"
     },
     "day2_after_eunsu_6": {
+        character: null,
         next: "day2_after_eunsu_7"
     },
     "day2_after_eunsu_7": {
+        character: null,
         next: "day2_after_eunsu_8"
     },
     "day2_after_eunsu_8": {
+        character: null,
         next: "day2_after_eunsu_choice"
     },
 
     // --- 권한 선택 ---
     "day2_after_eunsu_choice": {
+        character: null,
         choices: [
             {
                 next: "day2_after_allow_1",
@@ -64,6 +72,7 @@ Object.assign(SCENARIO[2], {
 
     // --- 선택 1: 전부 허용한다 ---
     "day2_after_allow_1": {
+        character: null,
         next: "day2_after_allow_2"
     },
     "day2_after_allow_2": {
@@ -73,6 +82,7 @@ Object.assign(SCENARIO[2], {
 
     // --- 선택 2: 위치 권한만 제한 ---
     "day2_after_limit_1": {
+        character: null,
         next: "day2_after_limit_2"
     },
     "day2_after_limit_2": {
@@ -80,9 +90,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_limit_3"
     },
     "day2_after_limit_3": {
+        character: null,
         next: "day2_after_limit_4"
     },
     "day2_after_limit_4": {
+        character: null,
         next: "day2_after_limit_5"
     },
     "day2_after_limit_5": {
@@ -101,45 +113,59 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_2"
     },
     "day2_after_sea_2": {
+        character: null,
         next: "day2_after_sea_3"
     },
     "day2_after_sea_3": {
+        character: null,
         next: "day2_after_sea_4"
     },
     "day2_after_sea_4": {
+        character: null,
         next: "day2_after_sea_5"
     },
     "day2_after_sea_5": {
+        character: null,
         next: "day2_after_sea_6"
     },
     "day2_after_sea_6": {
+        character: null,
         next: "day2_after_sea_7"
     },
     "day2_after_sea_7": {
+        character: null,
         next: "day2_after_sea_8"
     },
     "day2_after_sea_8": {
+        character: null,
         next: "day2_after_sea_9"
     },
     "day2_after_sea_9": {
+        character: null,
         next: "day2_after_sea_10"
     },
     "day2_after_sea_10": {
+        character: null,
         next: "day2_after_sea_11"
     },
     "day2_after_sea_11": {
+        character: null,
         next: "day2_after_sea_12"
     },
     "day2_after_sea_12": {
+        character: null,
         next: "day2_after_sea_13"
     },
     "day2_after_sea_13": {
+        character: null,
         next: "day2_after_sea_14"
     },
     "day2_after_sea_14": {
+        character: null,
         next: "day2_after_sea_15"
     },
     "day2_after_sea_15": {
+        character: null,
         next: "day2_after_sea_16"
     },
     "day2_after_sea_16": {
@@ -147,6 +173,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_17"
     },
     "day2_after_sea_17": {
+        character: null,
         next: "day2_after_sea_18"
     },
     "day2_after_sea_18": {
@@ -154,28 +181,36 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_19"
     },
     "day2_after_sea_19": {
+        character: null,
         next: "day2_after_sea_20"
     },
     "day2_after_sea_20": {
+        character: null,
         next: "day2_after_sea_21"
     },
     "day2_after_sea_21": {
+        character: null,
         next: "day2_after_sea_22",
         stats: { sea: { affinity: 8 } }
     },
     "day2_after_sea_22": {
+        character: null,
         next: "day2_after_sea_23"
     },
     "day2_after_sea_23": {
+        character: null,
         next: "day2_after_sea_24"
     },
     "day2_after_sea_24": {
+        character: null,
         next: "day2_after_sea_25"
     },
     "day2_after_sea_25": {
+        character: null,
         next: "day2_after_sea_26"
     },
     "day2_after_sea_26": {
+        character: null,
         next: "day2_after_sea_27"
     },
     "day2_after_sea_27": {
@@ -194,33 +229,43 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_hallway_2"
     },
     "day2_after_hallway_2": {
+        character: null,
         next: "day2_after_hallway_3"
     },
     "day2_after_hallway_3": {
+        character: null,
         next: "day2_after_hallway_4"
     },
     "day2_after_hallway_4": {
+        character: null,
         next: "day2_after_hallway_5"
     },
     "day2_after_hallway_5": {
+        character: null,
         next: "day2_after_hallway_6"
     },
     "day2_after_hallway_6": {
+        character: null,
         next: "day2_after_hallway_7"
     },
     "day2_after_hallway_7": {
+        character: null,
         next: "day2_after_hallway_8"
     },
     "day2_after_hallway_8": {
+        character: null,
         next: "day2_after_hallway_9"
     },
     "day2_after_hallway_9": {
+        character: null,
         next: "day2_after_hallway_10"
     },
     "day2_after_hallway_10": {
+        character: null,
         next: "day2_after_hallway_11"
     },
     "day2_after_hallway_11": {
+        character: null,
         next: "day2_after_seolhwa_start"
     },
 
@@ -231,6 +276,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_seolhwa_1"
     },
     "day2_after_seolhwa_1": {
+        character: null,
         next: "day2_after_seolhwa_2"
     },
     "day2_after_seolhwa_2": {
@@ -238,12 +284,15 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_seolhwa_3"
     },
     "day2_after_seolhwa_3": {
+        character: null,
         next: "day2_after_seolhwa_4"
     },
     "day2_after_seolhwa_4": {
+        character: null,
         next: "day2_after_seolhwa_5"
     },
     "day2_after_seolhwa_5": {
+        character: null,
         next: "day2_after_seolhwa_6"
     },
     "day2_after_seolhwa_6": {
@@ -251,9 +300,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_seolhwa_7"
     },
     "day2_after_seolhwa_7": {
+        character: null,
         next: "day2_after_seolhwa_8"
     },
     "day2_after_seolhwa_8": {
+        character: null,
         next: "day2_after_end"
     },
 

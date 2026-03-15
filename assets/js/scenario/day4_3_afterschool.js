@@ -19,13 +19,16 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_start_2"
     },
     "day4_after_start_2": {
+        character: null,
         next: "day4_after_start_3"
     },
     "day4_after_start_3": {
+        character: null,
         next: "day4_after_choice"
     },
 
     "day4_after_choice": {
+        character: null,
         choices: [
             { next: "day4_after_sea_route" },
             { next: "day4_after_eunsu_route" },
@@ -43,6 +46,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_2"
     },
     "day4_after_sea_2": {
+        character: null,
         next: "day4_after_sea_3"
     },
     "day4_after_sea_3": {
@@ -54,6 +58,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_5"
     },
     "day4_after_sea_5": {
+        character: null,
         next: "day4_after_sea_6"
     },
     "day4_after_sea_6": {
@@ -73,6 +78,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_10"
     },
     "day4_after_sea_10": {
+        character: null,
         next: "day4_after_sea_11"
     },
     "day4_after_sea_11": {
@@ -82,6 +88,7 @@ Object.assign(SCENARIO[4], {
 
     // ★ FORCE CHOICE: 두 번째 선택지가 첫 번째와 같은 텍스트로 바뀜
     "day4_after_sea_force": {
+        character: null,
         glitch: { forceChoice: 0 },
         choices: [
             {
@@ -124,6 +131,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_4"
     },
     "day4_after_sea_12loop_4": {
+        character: null,
         unskippable: true,
         next: "day4_after_sea_12loop_5"
     },
@@ -147,6 +155,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_9"
     },
     "day4_after_sea_12loop_9": {
+        character: null,
         unskippable: true,
         next: "day4_after_sea_12loop_10"
     },
@@ -183,6 +192,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_17"
     },
     "day4_after_sea_12loop_17": {
+        character: null,
         next: "day4_after_sea_12loop_18"
     },
     "day4_after_sea_12loop_18": {
@@ -191,10 +201,12 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_19"
     },
     "day4_after_sea_12loop_19": {
+        character: null,
         unskippable: true,
         next: "day4_after_sea_12loop_20"
     },
     "day4_after_sea_12loop_20": {
+        character: null,
         unskippable: true,
         glitch: { noise: true },
         next: "day4_after_end",
@@ -211,6 +223,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_2"
     },
     "day4_after_eunsu_2": {
+        character: null,
         next: "day4_after_eunsu_3"
     },
     "day4_after_eunsu_3": {
@@ -218,6 +231,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_4"
     },
     "day4_after_eunsu_4": {
+        character: null,
         unskippable: true,
         next: "day4_after_eunsu_5"
     },
@@ -231,17 +245,21 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_7"
     },
     "day4_after_eunsu_7": {
+        character: null,
         unskippable: true,
         next: "day4_after_eunsu_8"
     },
     "day4_after_eunsu_8": {
+        character: null,
         next: "day4_after_eunsu_9"
     },
     "day4_after_eunsu_9": {
+        character: null,
         unskippable: true,
         next: "day4_after_eunsu_10"
     },
     "day4_after_eunsu_10": {
+        character: null,
         next: "day4_after_eunsu_11"
     },
     "day4_after_eunsu_11": {
@@ -254,6 +272,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_13"
     },
     "day4_after_eunsu_13": {
+        character: null,
         next: "day4_after_eunsu_14"
     },
     "day4_after_eunsu_14": {
@@ -300,6 +319,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_2"
     },
     "day4_after_riin_2": {
+        character: null,
         next: "day4_after_riin_3"
     },
     "day4_after_riin_3": {
@@ -311,6 +331,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_5"
     },
     "day4_after_riin_5": {
+        character: null,
         next: "day4_after_riin_6"
     },
     "day4_after_riin_6": {
@@ -322,6 +343,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_8"
     },
     "day4_after_riin_8": {
+        character: null,
         next: "day4_after_riin_9"
     },
     "day4_after_riin_9": {
@@ -347,6 +369,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_14"
     },
     "day4_after_riin_14": {
+        character: null,
         unskippable: true,
         next: "day4_after_riin_15"
     },
@@ -355,6 +378,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_16"
     },
     "day4_after_riin_16": {
+        character: null,
         // 열쇠 등장
         next: "day4_after_riin_17"
     },
@@ -385,6 +409,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_23"
     },
     "day4_after_riin_23": {
+        character: null,
         unskippable: true,
         next: "day4_after_riin_24"
     },

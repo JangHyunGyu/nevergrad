@@ -21,29 +21,36 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_wake_2"
     },
     "day3_morning_wake_2": {
+        character: null,
         next: "day3_morning_wake_3"
     },
 
     // ===== 거울 회피 =====
     "day3_morning_wake_3": {
+        character: null,
         next: "day3_morning_mirror_1"
     },
     "day3_morning_mirror_1": {
+        character: null,
         next: "day3_morning_mirror_2"
     },
     "day3_morning_mirror_2": {
+        character: null,
         next: "day3_morning_mirror_3",
         setFlags: ["mirror_avoidance_1"]
     },
     "day3_morning_mirror_3": {
+        character: null,
         next: "day3_morning_milk_1"
     },
 
     // ===== 냉장고: 우유 위치 변경 =====
     "day3_morning_milk_1": {
+        character: null,
         next: "day3_morning_milk_2"
     },
     "day3_morning_milk_2": {
+        character: null,
         next: "day3_morning_commute_1"
     },
 
@@ -54,13 +61,15 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_commute_2"
     },
     "day3_morning_commute_2": {
+        character: null,
         next: "day3_morning_commute_3"
     },
     "day3_morning_commute_3": {
-        character: "classmate",
+        character: null,
         next: "day3_morning_commute_4"
     },
     "day3_morning_commute_4": {
+        character: null,
         next: "day3_morning_commute_5"
     },
     "day3_morning_commute_5": {
@@ -68,14 +77,17 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_commute_6"
     },
     "day3_morning_commute_6": {
+        character: null,
         next: "day3_morning_commute_7",
         stats: { dejavu: 1 },
         glitch: { type: "flicker", duration: 300 }
     },
     "day3_morning_commute_7": {
+        character: null,
         next: "day3_morning_commute_8"
     },
     "day3_morning_commute_8": {
+        character: null,
         next: "day3_morning_gate_1"
     },
 
@@ -86,18 +98,23 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_gate_2"
     },
     "day3_morning_gate_2": {
+        character: null,
         next: "day3_morning_gate_3"
     },
     "day3_morning_gate_3": {
+        character: null,
         next: "day3_morning_gate_4"
     },
     "day3_morning_gate_4": {
+        character: null,
         next: "day3_morning_gate_5"
     },
     "day3_morning_gate_5": {
+        character: null,
         next: "day3_morning_gate_6"
     },
     "day3_morning_gate_6": {
+        character: null,
         next: "day3_morning_locker_1"
     },
 
@@ -108,37 +125,46 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_locker_2"
     },
     "day3_morning_locker_2": {
+        character: null,
         next: "day3_morning_locker_3",
         setFlags: ["found_scratched_locker"]
     },
     "day3_morning_locker_3": {
+        character: null,
         next: "day3_morning_locker_4"
     },
     "day3_morning_locker_4": {
+        character: null,
         next: "day3_morning_locker_5"
     },
     "day3_morning_locker_5": {
+        character: null,
         next: "day3_morning_photo_1",
         setFlags: ["found_photo_fragment"]
     },
 
     // ===== 사진 조각 발견 =====
     "day3_morning_photo_1": {
+        character: null,
         next: "day3_morning_photo_2"
     },
     "day3_morning_photo_2": {
+        character: null,
         next: "day3_morning_inscription_1"
     },
 
     // ===== 사물함 내부 필체 =====
     "day3_morning_inscription_1": {
+        character: null,
         next: "day3_morning_inscription_2"
     },
     "day3_morning_inscription_2": {
+        character: null,
         next: "day3_morning_inscription_3",
         setFlags: ["found_locker_inscription"]
     },
     "day3_morning_inscription_3": {
+        character: null,
         next: "day3_morning_seolhwa_1"
     },
 
@@ -149,6 +175,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_seolhwa_2"
     },
     "day3_morning_seolhwa_2": {
+        character: null,
         next: "day3_morning_seolhwa_3"
     },
     "day3_morning_seolhwa_3": {
@@ -178,9 +205,11 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_seolhwa_9"
     },
     "day3_morning_seolhwa_9": {
+        character: null,
         next: "day3_morning_seolhwa_10"
     },
     "day3_morning_seolhwa_10": {
+        character: null,
         next: "day3_morning_classroom_1"
     },
 
@@ -191,15 +220,19 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_classroom_2"
     },
     "day3_morning_classroom_2": {
+        character: null,
         next: "day3_morning_classroom_3"
     },
     "day3_morning_classroom_3": {
+        character: null,
         next: "day3_morning_classroom_4"
     },
     "day3_morning_classroom_4": {
+        character: null,
         next: "day3_morning_classroom_5"
     },
     "day3_morning_classroom_5": {
+        character: null,
         next: "day3_morning_sea_1"
     },
 
@@ -209,9 +242,11 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_1a"
     },
     "day3_morning_sea_1a": {
+        character: null,
         next: "day3_morning_sea_2"
     },
     "day3_morning_sea_2": {
+        character: null,
         next: "day3_morning_sea_3"
     },
     "day3_morning_sea_3": {
@@ -227,6 +262,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_6"
     },
     "day3_morning_sea_6": {
+        character: null,
         next: "day3_morning_sea_7"
     },
     "day3_morning_sea_7": {
@@ -234,6 +270,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_6a"
     },
     "day3_morning_sea_6a": {
+        character: null,
         next: "day3_morning_sea_8"
     },
     "day3_morning_sea_8": {
@@ -248,17 +285,21 @@ Object.assign(SCENARIO[3], {
 
     // ===== 필통 위치 바뀜 =====
     "day3_morning_pencil_1": {
+        character: null,
         next: "day3_morning_pencil_2"
     },
     "day3_morning_pencil_2": {
+        character: null,
         next: "day3_morning_pencil_3"
     },
     "day3_morning_pencil_3": {
+        character: null,
         next: "day3_morning_end"
     },
 
     // ===== Day 3 아침 종료 =====
     "day3_morning_end": {
+        character: null,
         changeSlot: "lunch",
         next: "day3_lunch_start"
     }

@@ -16,9 +16,11 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_note"
     },
     "day3_lunch_note": {
+        character: null,
         next: "day3_lunch_choice"
     },
     "day3_lunch_choice": {
+        character: null,
         choices: [
             { next: "day3_lunch_rooftop_1" },
             { next: "day3_lunch_sea_1" },
@@ -36,19 +38,23 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_rooftop_2"
     },
     "day3_lunch_rooftop_2": {
+        character: null,
         next: "day3_lunch_rooftop_3"
     },
     // 유나: 메모리카드 꺼냄
     "day3_lunch_rooftop_3": {
+        character: null,
         next: "day3_lunch_rooftop_4",
         setFlags: ["yuna_memory_card"]
     },
     // 유나: 3년 사진부
     "day3_lunch_rooftop_4": {
+        character: null,
         next: "day3_lunch_rooftop_5"
     },
     // 유나: 전학생 올 때마다 찍었어요
     "day3_lunch_rooftop_5": {
+        character: null,
         next: "day3_lunch_rooftop_6"
     },
     // 나레이션: 카메라 화면을 넘긴다
@@ -98,20 +104,24 @@ Object.assign(SCENARIO[3], {
     },
     // ...잠깐.
     "day3_lunch_rooftop_15": {
+        character: null,
         next: "day3_lunch_rooftop_16"
     },
     // 사진 나란히 배열: 13장
     "day3_lunch_rooftop_16": {
+        character: null,
         next: "day3_lunch_rooftop_17",
         glitch: { shake: true, shakeDuration: 500 }
     },
     // 13장의 사진. 13개의 이름. 전부 같은 얼굴.
     "day3_lunch_rooftop_17": {
+        character: null,
         next: "day3_lunch_rooftop_18",
         glitch: { noise: true, noiseDuration: 400 }
     },
     // ...내 얼굴이다.
     "day3_lunch_rooftop_18": {
+        character: null,
         next: "day3_lunch_rooftop_19"
     },
     // 유나: 왜 13명의 얼굴이 전부 똑같은 거죠?
@@ -122,6 +132,7 @@ Object.assign(SCENARIO[3], {
     },
     // 유나: 왜 다들 자기 이름도 모르고...
     "day3_lunch_rooftop_20": {
+        character: null,
         next: "day3_lunch_rooftop_21"
     },
     // 머릿속이 하얘진다
@@ -132,10 +143,12 @@ Object.assign(SCENARIO[3], {
     },
     // 유나의 목소리가 멀어지는 것 같다
     "day3_lunch_rooftop_22": {
+        character: null,
         next: "day3_lunch_rooftop_23"
     },
     // 나: 이거 합성 아니야?
     "day3_lunch_rooftop_23": {
+        character: null,
         next: "day3_lunch_rooftop_24"
     },
     // 유나: 3년이에요, 선배. 3년 동안 매번...
@@ -145,6 +158,7 @@ Object.assign(SCENARIO[3], {
     },
     // 유나: 아무한테도 말 못 했어요
     "day3_lunch_rooftop_25": {
+        character: null,
         next: "day3_lunch_rooftop_26"
     },
     // 유나 눈이 빨갛다. 카메라가 흔들린다
@@ -159,10 +173,12 @@ Object.assign(SCENARIO[3], {
     },
     // 유나: 3번이 왔을 때 이상하다고 느꼈어요
     "day3_lunch_rooftop_28": {
+        character: null,
         next: "day3_lunch_rooftop_29"
     },
     // 유나: 5번째부터 무서웠어요
     "day3_lunch_rooftop_29": {
+        character: null,
         next: "day3_lunch_rooftop_30"
     },
     // 유나가 두 손으로 얼굴을 감싼다. 어깨가 떨린다
@@ -182,6 +198,7 @@ Object.assign(SCENARIO[3], {
     },
     // 괜찮지 않다. 하지만 지금 울고 있는 건 유나다.
     "day3_lunch_rooftop_33": {
+        character: null,
         next: "day3_lunch_rooftop_34"
     },
     // 유나: 저 혼자 알고 있으니까 미칠 것 같았어요
@@ -196,6 +213,7 @@ Object.assign(SCENARIO[3], {
     },
     // 나: 사라져? 전학생들이?
     "day3_lunch_rooftop_36": {
+        character: null,
         next: "day3_lunch_rooftop_37"
     },
     // 유나: 네. 다 그래요. 길면 일주일...
@@ -221,23 +239,28 @@ Object.assign(SCENARIO[3], {
     },
     // 가슴이 답답하다. 숨이 안 쉬어진다.
     "day3_lunch_rooftop_41": {
+        character: null,
         next: "day3_lunch_rooftop_42"
     },
     // 이 학교에 온 게 처음이 아니다? 내가... 13번째?
     "day3_lunch_rooftop_42": {
+        character: null,
         next: "day3_lunch_rooftop_43"
     },
     // 그러면 "전 학교"는? "민수"는? 기억은?
     "day3_lunch_rooftop_43": {
+        character: null,
         next: "day3_lunch_door_1"
     },
 
     // ── 잠긴 문 ──
     "day3_lunch_door_1": {
+        character: null,
         glitch: { noise: true, noiseDuration: 300 },
         next: "day3_lunch_door_2"
     },
     "day3_lunch_door_2": {
+        character: null,
         next: "day3_lunch_door_3"
     },
     "day3_lunch_door_3": {
@@ -245,6 +268,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_door_choice"
     },
     "day3_lunch_door_choice": {
+        character: null,
         choices: [
             {
                 next: "day3_lunch_door_bang",
@@ -266,41 +290,51 @@ Object.assign(SCENARIO[3], {
     },
     // 문 열림 → 계단 내려감
     "day3_lunch_door_open": {
+        character: null,
         next: "day3_lunch_door_open_2"
     },
     // 유나가 보여준 사진이 머릿속에서 안 지워진다
     "day3_lunch_door_open_2": {
+        character: null,
         next: "day3_lunch_door_open_3"
     },
     // 말이 안 된다. 논리적으로 안 된다.
     "day3_lunch_door_open_3": {
+        character: null,
         next: "day3_lunch_door_open_4"
     },
     // "말이 안 되잖아... 나는 전 학교에서... 민수랑..."
     "day3_lunch_door_open_4": {
+        character: null,
         next: "day3_lunch_door_open_5"
     },
     // 내 기억인데 남의 대본을 읽는 것처럼
     "day3_lunch_door_open_5": {
+        character: null,
         next: "day3_lunch_door_open_6"
     },
     // 속이 뒤집힌다. 구역질인지 공포인지
     "day3_lunch_door_open_6": {
+        character: null,
         next: "day3_lunch_nametag_1"
     },
     // ── 이름표 해리감 (복도) ──
     "day3_lunch_nametag_1": {
+        character: null,
         next: "day3_lunch_nametag_2"
     },
     "day3_lunch_nametag_2": {
+        character: null,
         next: "day3_lunch_door_open_7"
     },
     // 하지만 부정할 수도 없다. 사진이 있으니까.
     "day3_lunch_door_open_7": {
+        character: null,
         next: "day3_lunch_door_open_8"
     },
     // 복도에서 스쳐가는 학생들. 누가 알고 있는 거지?
     "day3_lunch_door_open_8": {
+        character: null,
         next: "day3_lunch_door_open_9"
     },
     // 유나: 사진 아무한테도 보여주지 마세요. 특히 선생님들한테.
@@ -315,10 +349,12 @@ Object.assign(SCENARIO[3], {
     },
     // 유나가 1층에서 갈라진다. 그 눈이 '미안해요'와 '부탁해요'
     "day3_lunch_door_open_11": {
+        character: null,
         next: "day3_lunch_door_open_12"
     },
     // 혼자 남겨졌다. 복도가 길다.
     "day3_lunch_door_open_12": {
+        character: null,
         next: "day3_lunch_end"
     },
 
@@ -338,6 +374,7 @@ Object.assign(SCENARIO[3], {
     },
     // 배경: 급식실. 세아 맞은편에 앉았다.
     "day3_lunch_sea_3": {
+        character: null,
         background: "cafeteria",
         next: "day3_lunch_sea_4"
     },
@@ -353,6 +390,7 @@ Object.assign(SCENARIO[3], {
     },
     // 나: 그걸 어떻게 알아?
     "day3_lunch_sea_6": {
+        character: null,
         next: "day3_lunch_sea_7"
     },
     // 세아: 어제 반찬 고를 때 봤지
@@ -387,6 +425,7 @@ Object.assign(SCENARIO[3], {
     },
     // 주변이 시끄러운데 이 테이블만 조용하다
     "day3_lunch_sea_13": {
+        character: null,
         next: "day3_lunch_sea_14"
     },
     // 세아: 너 나한테 뭐 말 안 한 거 있지.
@@ -431,6 +470,7 @@ Object.assign(SCENARIO[3], {
     },
     // 침대에 앉았다. 이마에 손. 서늘한 손.
     "day3_lunch_riin_4": {
+        character: null,
         next: "day3_lunch_riin_5"
     },
     // 리인: 열은 없는데 얼굴색이 안 좋네
@@ -459,6 +499,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_riin_choice"
     },
     "day3_lunch_riin_choice": {
+        character: null,
         choices: [
             {
                 next: "day3_lunch_riin_drink_1",
@@ -506,32 +547,39 @@ Object.assign(SCENARIO[3], {
     },
     // 조용하다. 너무 조용하다.
     "day3_lunch_alone_2": {
+        character: null,
         next: "day3_lunch_alone_3"
     },
     // 설화의 자리. 3일째 출석 안 함. 담임도 이름 건너뜀.
     "day3_lunch_alone_3": {
+        character: null,
         next: "day3_lunch_alone_4"
     },
     // 책상 위에 연필로 쓴 글씨: '여기서 나가'
     "day3_lunch_alone_4": {
+        character: null,
         next: "day3_lunch_alone_5",
         setFlags: ["saw_seolhwa_desk_msg"],
         glitch: { shake: true, shakeDuration: 300 }
     },
     // 심장이 멎는 것 같았다
     "day3_lunch_alone_5": {
+        character: null,
         next: "day3_lunch_alone_6"
     },
     // 깊이 파여있다. 여러 번 같은 글씨를 반복해서 쓴 자국.
     "day3_lunch_alone_6": {
+        character: null,
         next: "day3_lunch_alone_7"
     },
     // 필체가 책상 밑, 사물함과 같다. 내 글씨체.
     "day3_lunch_alone_7": {
+        character: null,
         next: "day3_lunch_alone_8"
     },
     // 밥맛이 없다. 도시락을 덮었다.
     "day3_lunch_alone_8": {
+        character: null,
         next: "day3_lunch_end"
     },
 

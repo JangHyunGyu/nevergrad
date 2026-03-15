@@ -23,38 +23,46 @@ Object.assign(SCENARIO[1], {
         next: "day1_night_home_2"
     },
     "day1_night_home_2": {
+        character: null,
         night: true,
         next: "day1_night_home_3"
     },
     "day1_night_home_3": {
+        character: null,
         night: true,
         next: "day1_night_phone_1"
     },
 
     // ===== 폰 확인 =====
     "day1_night_phone_1": {
+        character: null,
         night: true,
         next: "day1_night_phone_2"
     },
     "day1_night_phone_2": {
+        character: null,
         night: true,
         next: "day1_night_phone_3"
     },
     "day1_night_phone_3": {
+        character: null,
         night: true,
         next: "day1_night_phone_4"
     },
     "day1_night_phone_4": {
+        character: null,
         night: true,
         next: "day1_night_phone_5"
     },
     "day1_night_phone_5": {
+        character: null,
         night: true,
         next: "day1_night_phone_6"
     },
 
     // ===== 세아 메시지 =====
     "day1_night_phone_6": {
+        character: null,
         night: true,
         next: "day1_night_sea_1"
     },
@@ -81,6 +89,7 @@ Object.assign(SCENARIO[1], {
 
     // ===== 세아 답장 선택지 =====
     "day1_night_sea_reply": {
+        character: null,
         night: true,
         choices: [
             { next: "day1_night_sea_reply_1", stats: { sea: { affinity: 3 } } },
@@ -101,6 +110,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_night_sleep_1"
     },
     "day1_night_sea_reply_3": {
+        character: null,
         night: true,
         setFlags: ["ignored_sea_msg"],
         next: "day1_night_sleep_1"
@@ -113,25 +123,30 @@ Object.assign(SCENARIO[1], {
         next: "day1_night_sleep_2"
     },
     "day1_night_sleep_2": {
+        character: null,
         night: true,
         next: "day1_night_sleep_3"
     },
     "day1_night_sleep_3": {
+        character: null,
         night: true,
         next: "day1_night_sleep_4"
     },
 
     // ===== 데자뷔 핀 #3: 천장 얼룩 =====
     "day1_night_sleep_4": {
+        character: null,
         night: true,
         dejavu: true,
         next: "day1_night_sleep_5"
     },
     "day1_night_sleep_5": {
+        character: null,
         night: true,
         next: "day1_night_end"
     },
     "day1_night_end": {
+        character: null,
         background: "black",
         changeDay: 2,
         changeSlot: "morning",

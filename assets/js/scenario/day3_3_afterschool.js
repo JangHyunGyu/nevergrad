@@ -17,12 +17,15 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_start_2"
     },
     "day3_after_start_2": {
+        character: null,
         next: "day3_after_start_3"
     },
     "day3_after_start_3": {
+        character: null,
         next: "day3_after_choice"
     },
     "day3_after_choice": {
+        character: null,
         choices: [
             { next: "day3_after_riin" },
             { next: "day3_after_sea" },
@@ -41,6 +44,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_2"
     },
     "day3_after_riin_2": {
+        character: null,
         next: "day3_after_riin_3"
     },
     "day3_after_riin_3": {
@@ -48,20 +52,25 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_4"
     },
     "day3_after_riin_4": {
+        character: null,
         next: "day3_after_riin_5"
     },
     "day3_after_riin_5": {
+        character: null,
         next: "day3_after_riin_6"
     },
     "day3_after_riin_6": {
+        character: null,
         next: "day3_after_riin_7"
     },
     "day3_after_riin_7": {
+        character: null,
         next: "day3_after_riin_choice"
     },
 
     // ★ FLICKER GLITCH: 첫 번째 선택지가 0.1초간 "도망쳐"로 깜빡임 (붉은색)
     "day3_after_riin_choice": {
+        character: null,
         glitch: { flickerChoice: 0, flickerText: "day3_after_riin_flicker", flickerDuration: 100, flickerColor: "#ff0000" },
         choices: [
             {
@@ -81,6 +90,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_drink_2"
     },
     "day3_after_riin_drink_2": {
+        character: null,
         glitch: { screenShake: true, shakeDuration: 500 },
         next: "day3_after_riin_drink_3"
     },
@@ -104,6 +114,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_refuse_2"
     },
     "day3_after_riin_refuse_2": {
+        character: null,
         next: "day3_after_riin_refuse_3"
     },
     "day3_after_riin_refuse_3": {
@@ -111,6 +122,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_refuse_4"
     },
     "day3_after_riin_refuse_4": {
+        character: null,
         next: "day3_after_yuna_check"
     },
 
@@ -124,20 +136,25 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_sea_2"
     },
     "day3_after_sea_2": {
+        character: null,
         next: "day3_after_sea_3"
     },
     "day3_after_sea_3": {
+        character: null,
         next: "day3_after_sea_4"
     },
     "day3_after_sea_4": {
+        character: null,
         next: "day3_after_sea_4a"
     },
     "day3_after_sea_4a": {
+        character: null,
         next: "day3_after_sea_choice"
     },
 
     // 솔직히 말한다 / 얼버무린다
     "day3_after_sea_choice": {
+        character: null,
         choices: [
             {
                 next: "day3_after_sea_truth",
@@ -151,6 +168,7 @@ Object.assign(SCENARIO[3], {
 
     // 솔직히 말하면
     "day3_after_sea_truth": {
+        character: null,
         next: "day3_after_sea_truth_2"
     },
     "day3_after_sea_truth_2": {
@@ -158,15 +176,19 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_sea_truth_3"
     },
     "day3_after_sea_truth_3": {
+        character: null,
         next: "day3_after_sea_truth_4"
     },
     "day3_after_sea_truth_4": {
+        character: null,
         next: "day3_after_sea_truth_5"
     },
     "day3_after_sea_truth_5": {
+        character: null,
         next: "day3_after_sea_truth_6"
     },
     "day3_after_sea_truth_6": {
+        character: null,
         next: "day3_after_sea_truth_7"
     },
     "day3_after_sea_truth_7": {
@@ -174,6 +196,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_sea_truth_8"
     },
     "day3_after_sea_truth_8": {
+        character: null,
         next: "day3_after_sea_truth_9"
     },
     "day3_after_sea_truth_9": {
@@ -183,6 +206,7 @@ Object.assign(SCENARIO[3], {
 
     // 얼버무리면
     "day3_after_sea_lie": {
+        character: null,
         next: "day3_after_sea_lie_2"
     },
     "day3_after_sea_lie_2": {
@@ -191,18 +215,23 @@ Object.assign(SCENARIO[3], {
         stats: { sea: { danger: 5 } }
     },
     "day3_after_sea_lie_3": {
+        character: null,
         next: "day3_after_sea_lie_3a"
     },
     "day3_after_sea_lie_3a": {
+        character: null,
         next: "day3_after_sea_lie_4"
     },
     "day3_after_sea_lie_4": {
+        character: null,
         next: "day3_after_sea_lie_4a"
     },
     "day3_after_sea_lie_4a": {
+        character: null,
         next: "day3_after_sea_lie_5"
     },
     "day3_after_sea_lie_5": {
+        character: null,
         next: "day3_after_sea_lie_5a"
     },
     "day3_after_sea_lie_5a": {
@@ -221,6 +250,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_eunsu_2"
     },
     "day3_after_eunsu_2": {
+        character: null,
         next: "day3_after_eunsu_3"
     },
     "day3_after_eunsu_3": {
@@ -228,6 +258,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_eunsu_4"
     },
     "day3_after_eunsu_4": {
+        character: null,
         next: "day3_after_eunsu_5"
     },
     "day3_after_eunsu_5": {
@@ -237,6 +268,7 @@ Object.assign(SCENARIO[3], {
 
     // 슬쩍 읽어본다 / 시선을 돌린다
     "day3_after_eunsu_choice": {
+        character: null,
         choices: [
             {
                 next: "day3_after_eunsu_peek",
@@ -255,21 +287,27 @@ Object.assign(SCENARIO[3], {
         setFlags: ["evidence_subject_ledger"]
     },
     "day3_after_eunsu_peek_2": {
+        character: null,
         next: "day3_after_eunsu_peek_3"
     },
     "day3_after_eunsu_peek_3": {
+        character: null,
         next: "day3_after_eunsu_peek_4"
     },
     "day3_after_eunsu_peek_4": {
+        character: null,
         next: "day3_after_eunsu_peek_5"
     },
     "day3_after_eunsu_peek_5": {
+        character: null,
         next: "day3_after_eunsu_peek_6"
     },
     "day3_after_eunsu_peek_6": {
+        character: null,
         next: "day3_after_eunsu_peek_7"
     },
     "day3_after_eunsu_peek_7": {
+        character: null,
         next: "day3_after_eunsu_peek_8"
     },
     "day3_after_eunsu_peek_8": {
@@ -277,12 +315,15 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_eunsu_peek_8a"
     },
     "day3_after_eunsu_peek_8a": {
+        character: null,
         next: "day3_after_eunsu_peek_9"
     },
     "day3_after_eunsu_peek_9": {
+        character: null,
         next: "day3_after_eunsu_peek_10"
     },
     "day3_after_eunsu_peek_10": {
+        character: null,
         next: "day3_after_eunsu_peek_11",
         stats: { eunsu: { danger: 10 } }
     },
@@ -293,6 +334,7 @@ Object.assign(SCENARIO[3], {
 
     // 시선을 돌리면
     "day3_after_eunsu_ignore": {
+        character: null,
         next: "day3_after_yuna_check"
     },
 
@@ -306,35 +348,45 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_alone_2"
     },
     "day3_after_alone_2": {
+        character: null,
         next: "day3_after_alone_3"
     },
     "day3_after_alone_3": {
+        character: null,
         next: "day3_after_alone_4"
     },
     "day3_after_alone_4": {
+        character: null,
         next: "day3_after_alone_5"
     },
     "day3_after_alone_5": {
+        character: null,
         next: "day3_after_alone_6"
     },
     "day3_after_alone_6": {
+        character: null,
         glitch: { noise: true, noiseDuration: 200 },
         next: "day3_after_alone_7"
     },
     "day3_after_alone_7": {
+        character: null,
         next: "day3_after_alone_8"
     },
     "day3_after_alone_8": {
+        character: null,
         next: "day3_after_alone_9"
     },
     "day3_after_alone_9": {
+        character: null,
         next: "day3_after_alone_10",
         setFlags: ["found_old_building_nametags"]
     },
     "day3_after_alone_10": {
+        character: null,
         next: "day3_after_alone_11"
     },
     "day3_after_alone_11": {
+        character: null,
         next: "day3_after_yuna_check"
     },
 
@@ -342,6 +394,7 @@ Object.assign(SCENARIO[3], {
     //  유나 후속: 메모리카드 (점심에 옥상에 갔을 경우)
     // ══════════════════════════════════════
     "day3_after_yuna_check": {
+        character: null,
         condition: "yuna_memory_card",
         next: "day3_after_yuna",
         fallback: "day3_after_end"
@@ -353,25 +406,32 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_yuna_2"
     },
     "day3_after_yuna_2": {
+        character: null,
         next: "day3_after_yuna_3"
     },
     "day3_after_yuna_3": {
+        character: null,
         next: "day3_after_yuna_4"
     },
     "day3_after_yuna_4": {
+        character: null,
         next: "day3_after_yuna_5",
         setFlags: ["yuna_sd_card_copy"]
     },
     "day3_after_yuna_5": {
+        character: null,
         next: "day3_after_yuna_6"
     },
     "day3_after_yuna_6": {
+        character: null,
         next: "day3_after_yuna_6a"
     },
     "day3_after_yuna_6a": {
+        character: null,
         next: "day3_after_yuna_7"
     },
     "day3_after_yuna_7": {
+        character: null,
         next: "day3_after_yuna_8"
     },
     "day3_after_yuna_8": {
@@ -379,9 +439,11 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_yuna_9"
     },
     "day3_after_yuna_9": {
+        character: null,
         next: "day3_after_yuna_9a"
     },
     "day3_after_yuna_9a": {
+        character: null,
         next: "day3_after_end"
     },
 

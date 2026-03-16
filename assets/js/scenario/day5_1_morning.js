@@ -216,7 +216,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_rescue_21": {
         character: null,
-        glitch: { ghostText: "기록해줘", ghostX: 50, ghostY: 50 },
+        glitch: { ghostText: "day5_morning_ghost_record", ghostX: 50, ghostY: 50 },
         setFlags: ["dejavu_pin_9"],
         next: "day5_morning_rescue_22"
     },

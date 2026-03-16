@@ -59,11 +59,11 @@ const CONFIG = {
     EXPRESSIONS: {
         eunsu: {
             normal: "assets/images/characters/eunsu_normal.png",
-            smile: "assets/images/characters/eunsu_smile.png",
+            smile: "assets/images/characters/eunsu_gentle.png",        // alias: smile.png 없음 → gentle 재사용
             gentle: "assets/images/characters/eunsu_gentle.png",
             warm: "assets/images/characters/eunsu_gentle.png",       // alias: 따뜻한 표정
             shy: "assets/images/characters/eunsu_shy.png",
-            serious: "assets/images/characters/eunsu_serious.png",
+            serious: "assets/images/characters/eunsu_cold.png",         // alias: serious.png 없음 → cold 재사용
             angry: "assets/images/characters/eunsu_angry.png",
             close: "assets/images/characters/eunsu_close.png",
             cold: "assets/images/characters/eunsu_cold.png",
@@ -154,7 +154,7 @@ const CONFIG = {
         room_morning: "assets/images/background/home.png",               // home + morning
         school_gate_evening: "assets/images/background/school_gate.png", // school_gate + sunset
         // 학교 외부 (구도가 고유한 것)
-        garden: "assets/images/background/garden.png",
+        garden: "assets/images/background/cherry_blossom.png",        // alias: garden.png 없음 → cherry_blossom 재사용
         school_gate: "assets/images/background/school_gate.png",
         school_night: "assets/images/background/school_night.png",      // 외부에서 본 밤 학교 (고유)
         school_dark: "assets/images/background/school_dark.png",        // 내부 칠흑 복도 (고유)
@@ -170,11 +170,11 @@ const CONFIG = {
         room_night: "assets/images/background/room_night.png",        // 스탠드+폰빛 고유 구도
         // 특수
         black: "assets/images/background/black.png",
-        white: "assets/images/background/white.png",
+        white: "assets/images/background/black.png",               // alias: white.png 없음 → black 재사용 (CSS 필터로 반전)
         // 학교 내부 (추가)
-        playground: "assets/images/background/playground.png",            // 운동장
-        student_council: "assets/images/background/student_council.png",  // 학생회실
-        cafeteria: "assets/images/background/cafeteria.png",              // 급식실
+        playground: "assets/images/background/outside_school.png",        // alias: playground.png 없음 → outside_school 재사용
+        student_council: "assets/images/background/classroom.png",        // alias: student_council.png 없음 → classroom 재사용
+        cafeteria: "assets/images/background/classroom.png",              // alias: cafeteria.png 없음 → classroom 재사용
         old_building_corridor: "assets/images/background/old_building.png", // 구관 복도 (구관 재사용)
         corridor_old: "assets/images/background/old_building.png",         // 구관 복도 alias
         corridor_main: "assets/images/background/corridor.png",            // 본관 복도 (corridor 재사용)

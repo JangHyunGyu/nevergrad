@@ -399,7 +399,8 @@ Object.assign(SCENARIO[3], {
                 setFlags: ["chose_investigate_d3"]
             },
             {
-                next: "day3_night_deny"
+                next: "day3_night_deny",
+                setFlags: ["complicit_route"]
             }
         ]
     },

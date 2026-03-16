@@ -31,7 +31,6 @@
         "name": "Moi",
         "text": "*La realite, c'est juste un eternuement.*"
     },
-
     "day1_gate_1": {
         "name": "Moi",
         "text": "*Je me suis arrete devant un portail d'ecole inconnu.*"
@@ -52,7 +51,6 @@
         "name": "Moi",
         "text": "*Une grande inspiration. Allons-y. Rester plante ici ne fera pas venir l'ecole a moi.*"
     },
-
     "day1_hallway_1": {
         "name": "Moi",
         "text": "*Je marche dans le couloir. Aucune idee d'ou je dois aller.*"
@@ -69,7 +67,6 @@
         "name": "Moi",
         "text": "*...Pourquoi je vais par la ? Je n'ai jamais mis les pieds dans ce batiment. ...Ah, il y avait peut-etre une fleche sur le panneau ? Sans doute.*"
     },
-
     "day1_sea_meet_1": {
         "name": "Han Sea",
         "text": "Tu es le nouvel eleve transfere ? On m'a dit que quelqu'un arrivait aujourd'hui."
@@ -142,7 +139,6 @@
         "name": "Moi",
         "text": "*...Elle a l'air d'une bonne personne.*"
     },
-
     "day1_choco_1": {
         "name": "Moi",
         "text": "*En chemin vers la classe, Sea sort quelque chose de son sac.*"
@@ -167,16 +163,6 @@
         "name": "Han Sea",
         "text": "Tu etais trop stresse pour prendre ton petit-dejeuner, pas vrai ? L'estomac vide, ca rend encore plus nerveux. Bois au moins ca."
     },
-    "day1_choco_choice": {
-        "name": "",
-        "text": "",
-        "choices": [
-            "Merci, je vais me regaler.",
-            "...Comment tu as su que j'aimais ca ?",
-            "En fait, je prefere le lait a la fraise."
-        ]
-    },
-
     "day1_choco_accept_1": {
         "name": "Moi",
         "text": "*Je plante la paille et je bois une gorgee. Sucre. Bon.*"
@@ -193,7 +179,6 @@
         "name": "Moi",
         "text": "*Enfin, la plupart des gens aiment ca. S'il y avait deux pour un, il devait y avoir fraise aussi -- mais elle a choisi chocolat.*"
     },
-
     "day1_choco_question_1": {
         "name": "Moi",
         "text": "...Attends, comment tu savais que j'aime le lait au chocolat ?"
@@ -218,7 +203,6 @@
         "name": "Moi",
         "text": "*Sea sourit. Bon, si c'etait deux pour un, c'est logique de choisir l'option sure.*"
     },
-
     "day1_choco_joke_1": {
         "name": "Moi",
         "text": "En fait, je suis plutot equipe lait a la fraise."
@@ -231,7 +215,6 @@
         "name": "Han Sea",
         "text": "Ah bon ? ...La prochaine fois, ce sera fraise, c'est sur. Je m'en souviendrai."
     },
-
     "day1_classroom_1": {
         "name": "Moi",
         "text": "*Grace a Sea, je suis arrive en classe.*"
@@ -252,7 +235,6 @@
         "name": "Moi",
         "text": "*Apres quelques bavardages, la porte de la classe s'ouvre et le professeur principal entre.*"
     },
-
     "day1_eunsu_1": {
         "name": "Moi",
         "text": "*Une jeune enseignante avec des lunettes. Elle a l'air douce.*"
@@ -309,7 +291,6 @@
         "name": "Moi",
         "text": "*Je retourne a ma place. Sea me fait un pouce leve. Mme Eunsu hoche la tete en souriant.*"
     },
-
     "day1_seolhwa_1": {
         "name": "Moi",
         "text": "*Avant le debut du deuxieme cours. J'ai jete un coup d'oeil derriere moi depuis ma place.*"
@@ -330,15 +311,6 @@
         "name": "Moi",
         "text": "*Il y a aussi un garcon a lunettes assis dans le coin au fond. Lui aussi est seul, en train de lire un manga. Le dernier rang semble etre la zone tranquille.*"
     },
-    "day1_seolhwa_choice": {
-        "name": "",
-        "text": "",
-        "choices": [
-            "Salut, moi c'est {name}. On dirait que je suis assis devant toi.",
-            "(Concentrons-nous sur le cours pour l'instant)"
-        ]
-    },
-
     "day1_seolhwa_greet_1": {
         "name": "Moi",
         "text": "*Je me suis retourne.*"
@@ -395,12 +367,10 @@
         "name": "Moi",
         "text": "*D'accord. Bon, il y en a toujours un ou deux comme ca dans chaque classe. Mon ancienne ecole avait quelqu'un comme ca aussi.*"
     },
-
     "day1_seolhwa_skip": {
         "name": "Moi",
         "text": "*Concentrons-nous sur le cours. Pas le moment de se preoccuper du fond de la classe.*"
     },
-
     "day1_dejavu2_1": {
         "name": "Moi",
         "text": "*Pendant le cours, j'ai laisse tomber mon crayon et j'ai regarde sous le bureau.*"
@@ -417,7 +387,6 @@
         "name": "Moi",
         "text": "*...Trop efface pour etre lu. N'y pense plus.*"
     },
-
     "day1_break_1": {
         "name": "Moi",
         "text": "*Pause. Quelques garcons s'approchent.*"
@@ -454,7 +423,6 @@
         "name": "Moi",
         "text": "*...Un bentou ?*"
     },
-
     "day1_pe_1": {
         "name": "Moi",
         "text": "*Cours d'EPS. Football. Le ballon est monte haut. Je l'ai controle du pied gauche.*"
@@ -471,7 +439,6 @@
         "name": "Moi",
         "text": "*Yuna se tient dans un coin du terrain de sport, appareil photo a la main.*"
     },
-
     "day1_morning_end": {
         "name": "",
         "text": "*La matinee est finie. C'est l'heure du dejeuner.*"

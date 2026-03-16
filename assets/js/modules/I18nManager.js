@@ -126,10 +126,16 @@ class I18nManager {
      */
     resolve(text, playerName) {
         if (!text) return "";
+        const fallback = I18nManager.DEFAULT_PLAYER_NAME[this.currentLang] || "전학생";
         return text
-            .replace(/\{name\}/g, playerName || "전학생")
-            .replace(/\{name\?\}/g, playerName || "전학생");
+            .replace(/\{name\}/g, playerName || fallback)
+            .replace(/\{name\?\}/g, playerName || fallback);
     }
+
+    static DEFAULT_PLAYER_NAME = {
+        ko: "전학생", en: "Transfer Student", ja: "転校生",
+        es: "Estudiante", fr: "Nouvel Élève", de: "Schüler"
+    };
 
     /**
      * 특정 키가 존재하는지 확인 (디버깅용)

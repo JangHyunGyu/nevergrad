@@ -31,7 +31,6 @@
         "name": "Ich",
         "text": "*Die Realitaet ist nur ein Nieser.*"
     },
-
     "day1_gate_1": {
         "name": "Ich",
         "text": "*Ich stehe vor einem fremden Schultor.*"
@@ -52,7 +51,6 @@
         "name": "Ich",
         "text": "*Einmal tief durchatmen. Rein da. Hier stehen bleiben bringt die Schule auch nicht zu mir.*"
     },
-
     "day1_hallway_1": {
         "name": "Ich",
         "text": "*Ich gehe den Flur entlang. Keine Ahnung, wo ich hin muss.*"
@@ -69,7 +67,6 @@
         "name": "Ich",
         "text": "*...Warum gehe ich in diese Richtung? Ich war noch nie in diesem Gebaeude. ...Ach, vielleicht war da ein Pfeil auf der Tafel? Wahrscheinlich schon.*"
     },
-
     "day1_sea_meet_1": {
         "name": "Han Sea",
         "text": "Bist du der neue Schueler? Ich habe gehoert, dass heute jemand kommt."
@@ -142,7 +139,6 @@
         "name": "Ich",
         "text": "*...Sie scheint ein guter Mensch zu sein.*"
     },
-
     "day1_choco_1": {
         "name": "Ich",
         "text": "*Auf dem Weg zum Klassenzimmer holt Sea etwas aus ihrer Tasche.*"
@@ -167,16 +163,6 @@
         "name": "Han Sea",
         "text": "Du warst zu nervoes zum Fruehstuecken, oder? Mit leerem Magen wird man noch nervoeser. Trink wenigstens das."
     },
-    "day1_choco_choice": {
-        "name": "",
-        "text": "",
-        "choices": [
-            "Danke, die trinke ich gern.",
-            "...Woher wusstest du, dass ich das mag?",
-            "Eigentlich mag ich Erdbeermilch lieber."
-        ]
-    },
-
     "day1_choco_accept_1": {
         "name": "Ich",
         "text": "*Ich stecke den Strohhalm rein und trinke einen Schluck. Suess. Lecker.*"
@@ -193,7 +179,6 @@
         "name": "Ich",
         "text": "*Naja, die meisten moegen es. Wenn es Zwei-fuer-eins war, gab es bestimmt auch Erdbeere -- aber sie hat Schoko gewaehlt.*"
     },
-
     "day1_choco_question_1": {
         "name": "Ich",
         "text": "...Moment, woher wusstest du, dass ich Schokomilch mag?"
@@ -218,7 +203,6 @@
         "name": "Ich",
         "text": "*Sea laechelt. Naja, bei Zwei-fuer-eins wuerde man natuerlich die sichere Wahl treffen.*"
     },
-
     "day1_choco_joke_1": {
         "name": "Ich",
         "text": "Ich bin eigentlich Team Erdbeermilch."
@@ -231,7 +215,6 @@
         "name": "Han Sea",
         "text": "Echt? ...Naechstes Mal auf jeden Fall Erdbeere. Das merke ich mir."
     },
-
     "day1_classroom_1": {
         "name": "Ich",
         "text": "*Mit Seas Hilfe bin ich im Klassenzimmer angekommen.*"
@@ -252,7 +235,6 @@
         "name": "Ich",
         "text": "*Nach etwas Smalltalk oeffnet sich die Klassentuer und die Klassenlehrerin kommt rein.*"
     },
-
     "day1_eunsu_1": {
         "name": "Ich",
         "text": "*Eine junge Lehrerin mit Brille. Sie hat ein sanftes Auftreten.*"
@@ -309,7 +291,6 @@
         "name": "Ich",
         "text": "*Ich gehe zurueck zu meinem Platz. Sea zeigt mir einen Daumen hoch. Frau Eunsu nickt und laechelt.*"
     },
-
     "day1_seolhwa_1": {
         "name": "Ich",
         "text": "*Vor Beginn der zweiten Stunde. Ich schaue beilaeufig von meinem Platz nach hinten.*"
@@ -330,15 +311,6 @@
         "name": "Ich",
         "text": "*In der hinteren Ecke sitzt auch ein Junge mit Brille. Er sitzt ebenfalls allein und liest einen Manga. Die letzte Reihe scheint die Ruhezone zu sein.*"
     },
-    "day1_seolhwa_choice": {
-        "name": "",
-        "text": "",
-        "choices": [
-            "Hi, ich bin {name}. Sieht aus, als sitze ich vor dir.",
-            "(Konzentrieren wir uns erstmal auf den Unterricht)"
-        ]
-    },
-
     "day1_seolhwa_greet_1": {
         "name": "Ich",
         "text": "*Ich habe mich umgedreht.*"
@@ -395,12 +367,10 @@
         "name": "Ich",
         "text": "*Verstehe. Naja, in jeder Klasse gibt es ein, zwei von der Sorte. An meiner alten Schule gab es auch so jemanden.*"
     },
-
     "day1_seolhwa_skip": {
         "name": "Ich",
         "text": "*Konzentrieren wir uns auf den Unterricht. Keine Zeit, sich um die letzte Reihe zu kuemmern.*"
     },
-
     "day1_dejavu2_1": {
         "name": "Ich",
         "text": "*Waehrend des Unterrichts fiel mir mein Bleistift runter und ich schaute unter den Tisch.*"
@@ -417,7 +387,6 @@
         "name": "Ich",
         "text": "*...Zu verblasst zum Lesen. Denk nicht weiter drueber nach.*"
     },
-
     "day1_break_1": {
         "name": "Ich",
         "text": "*Pause. Ein paar Jungs kommen rueber.*"
@@ -454,7 +423,6 @@
         "name": "Ich",
         "text": "*...Eine Lunchbox?*"
     },
-
     "day1_pe_1": {
         "name": "Ich",
         "text": "*Sportunterricht. Fussball. Der Ball flog hoch. Ich stoppte ihn mit dem linken Fuss.*"
@@ -471,7 +439,6 @@
         "name": "Ich",
         "text": "*Yuna steht in einer Ecke des Sportplatzes und haelt eine Kamera.*"
     },
-
     "day1_morning_end": {
         "name": "",
         "text": "*Der Vormittag ist vorbei. Es ist Mittagszeit.*"

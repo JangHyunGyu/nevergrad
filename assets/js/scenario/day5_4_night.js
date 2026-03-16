@@ -19,6 +19,21 @@ Object.assign(SCENARIO[5], {
         background: "black",
         bgm: null,
         character: null,
+        next: "day5_night_affinity_check"
+    },
+
+    // ── 호감도 → 플래그 변환 (COMPLICIT END 조건) ──
+    "day5_night_affinity_check": {
+        character: null,
+        affinityChar: "eunsu",
+        affinityBranches: [
+            { minAffinity: 60, next: "day5_night_set_high_affinity" },
+            { minAffinity: 0, next: "day5_night_routing" }
+        ]
+    },
+    "day5_night_set_high_affinity": {
+        character: null,
+        setFlags: ["high_eunsu_affinity"],
         next: "day5_night_routing"
     },
 

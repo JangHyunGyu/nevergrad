@@ -31,7 +31,6 @@
         "name": "Yo",
         "text": "*La realidad es solo un estornudo.*"
     },
-
     "day1_gate_1": {
         "name": "Yo",
         "text": "*Me plante frente a una puerta de escuela desconocida.*"
@@ -52,7 +51,6 @@
         "name": "Yo",
         "text": "*Una respiracion profunda. Vamos adentro. Quedarme aqui parado no va a hacer que la escuela venga a mi.*"
     },
-
     "day1_hallway_1": {
         "name": "Yo",
         "text": "*Camino por el pasillo. No tengo idea de adonde ir.*"
@@ -69,7 +67,6 @@
         "name": "Yo",
         "text": "*...Por que estoy yendo por aqui? Nunca he estado en este edificio. ...Ah, tal vez habia una flecha en el directorio? Si, probablemente.*"
     },
-
     "day1_sea_meet_1": {
         "name": "Han Sea",
         "text": "Eres el estudiante transferido? Me dijeron que alguien vendria hoy."
@@ -142,7 +139,6 @@
         "name": "Yo",
         "text": "*...Parece buena persona.*"
     },
-
     "day1_choco_1": {
         "name": "Yo",
         "text": "*De camino al aula, Sea saca algo de su mochila.*"
@@ -167,16 +163,6 @@
         "name": "Han Sea",
         "text": "Estabas tan nervioso que no desayunaste, verdad? Con el estomago vacio los nervios son peores. Al menos tomate esto."
     },
-    "day1_choco_choice": {
-        "name": "",
-        "text": "",
-        "choices": [
-            "Gracias, me la tomo con gusto.",
-            "...Como supiste que me gusta esto?",
-            "En realidad soy mas de leche de fresa."
-        ]
-    },
-
     "day1_choco_accept_1": {
         "name": "Yo",
         "text": "*Meto la pajita y bebo un trago. Dulce. Rica.*"
@@ -193,7 +179,6 @@
         "name": "Yo",
         "text": "*Bueno, a la mayoria le gusta. Si era 2x1, seguro habia de fresa tambien -- pero eligio chocolate.*"
     },
-
     "day1_choco_question_1": {
         "name": "Yo",
         "text": "...Espera, como supiste que me gusta la leche con chocolate?"
@@ -218,7 +203,6 @@
         "name": "Yo",
         "text": "*Sea sonrie. Bueno, si era 2x1, es logico que eligiera la opcion segura.*"
     },
-
     "day1_choco_joke_1": {
         "name": "Yo",
         "text": "En realidad soy del equipo leche de fresa."
@@ -231,7 +215,6 @@
         "name": "Han Sea",
         "text": "En serio? ...La proxima vez sera fresa seguro. Lo recordare."
     },
-
     "day1_classroom_1": {
         "name": "Yo",
         "text": "*Con la guia de Sea, llegue al aula.*"
@@ -252,7 +235,6 @@
         "name": "Yo",
         "text": "*Despues de charlar un poco, la puerta se abre y entra el profesor titular.*"
     },
-
     "day1_eunsu_1": {
         "name": "Yo",
         "text": "*Una profesora joven con lentes. Tiene un aspecto amable.*"
@@ -309,7 +291,6 @@
         "name": "Yo",
         "text": "*Vuelvo a mi asiento. Sea me levanta el pulgar. La profesora Eunsu asiente y sonrie.*"
     },
-
     "day1_seolhwa_1": {
         "name": "Yo",
         "text": "*Antes de que empiece la segunda clase. Mire hacia atras desde mi asiento.*"
@@ -330,15 +311,6 @@
         "name": "Yo",
         "text": "*Tambien hay un chico con lentes sentado en la esquina del fondo. Tambien esta solo, leyendo un manga. La fila de atras parece ser la zona tranquila.*"
     },
-    "day1_seolhwa_choice": {
-        "name": "",
-        "text": "",
-        "choices": [
-            "Hola, soy {name}. Parece que me sente delante de ti.",
-            "(Vamos a concentrarnos en la clase por ahora)"
-        ]
-    },
-
     "day1_seolhwa_greet_1": {
         "name": "Yo",
         "text": "*Me di la vuelta.*"
@@ -395,12 +367,10 @@
         "name": "Yo",
         "text": "*Ya veo. Bueno, en todas las clases hay uno o dos asi. En mi escuela anterior tambien habia alguien asi.*"
     },
-
     "day1_seolhwa_skip": {
         "name": "Yo",
         "text": "*Vamos a concentrarnos en la clase. No es momento de preocuparse por la fila de atras.*"
     },
-
     "day1_dejavu2_1": {
         "name": "Yo",
         "text": "*Durante la clase, se me cayo el lapiz y mire debajo del pupitre.*"
@@ -417,7 +387,6 @@
         "name": "Yo",
         "text": "*...Demasiado borroso para leer. No le des mas vueltas.*"
     },
-
     "day1_break_1": {
         "name": "Yo",
         "text": "*Recreo. Unos chicos se acercan.*"
@@ -454,7 +423,6 @@
         "name": "Yo",
         "text": "*...Un almuerzo?*"
     },
-
     "day1_pe_1": {
         "name": "Yo",
         "text": "*Clase de educacion fisica. Futbol. El balon subio alto. Lo controle con el pie izquierdo.*"
@@ -471,7 +439,6 @@
         "name": "Yo",
         "text": "*Yuna esta en una esquina del campo deportivo, sosteniendo una camara.*"
     },
-
     "day1_morning_end": {
         "name": "",
         "text": "*La manana ha terminado. Es hora del almuerzo.*"

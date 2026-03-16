@@ -321,7 +321,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_true_2": {
         character: "eunsu_obsessed",
-        setFlags: ["route_true", "broke_through_eunsu", "escape_with_yuna"],
+        setFlags: ["route_true", "broke_through_eunsu", "escape_with_yuna", "has_evidence"],
         next: "day5_after_end"
     },
     "day5_after_true_3": {
@@ -369,7 +369,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_true_12": {
         character: null,
-        setFlags: ["broke_through_eunsu", "escape_with_yuna"],
+        setFlags: ["broke_through_eunsu", "escape_with_yuna", "has_evidence"],
         next: "day5_after_end"
     },
 

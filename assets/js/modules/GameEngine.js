@@ -476,6 +476,7 @@ class GameEngine {
     _handleTimedResult(scene, idx) {
         // 타임아웃 (idx < 0 또는 범위 초과)
         if (idx < 0 || idx >= scene.choices.length) {
+            if (scene.timeoutFlags) this.state.setFlags(scene.timeoutFlags);
             if (scene.timeoutNext) {
                 this._loadScene(scene.timeoutNext);
             }

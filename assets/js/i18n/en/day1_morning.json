@@ -163,6 +163,15 @@
         "name": "Han Sea",
         "text": "You were too nervous to eat breakfast, right? An empty stomach makes the jitters worse. At least drink this."
     },
+    "day1_choco_choice": {
+        "name": "",
+        "text": "",
+        "choices": [
+            "고마워, 잘 마실게.",
+            "...내가 이거 좋아하는 걸 어떻게 알아?",
+            "나 사실 딸기우유가 더 좋긴 한데."
+        ]
+    },
     "day1_choco_accept_1": {
         "name": "Me",
         "text": "*I poke in the straw and take a sip. Sweet. Tasty.*"
@@ -310,6 +319,14 @@
     "day1_seolhwa_5": {
         "name": "Me",
         "text": "*There's also a boy with glasses sitting in the far corner of the back row. He's also sitting alone, reading a manga. The back row seems to be the quiet zone.*"
+    },
+    "day1_seolhwa_choice": {
+        "name": "",
+        "text": "",
+        "choices": [
+            "안녕, 나 {name}이야. 뒤에 앉게 됐네.",
+            "(지금은 수업에 집중하자)"
+        ]
     },
     "day1_seolhwa_greet_1": {
         "name": "Me",

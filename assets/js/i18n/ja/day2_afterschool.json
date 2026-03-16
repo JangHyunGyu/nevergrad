@@ -35,9 +35,21 @@
         "name": "",
         "text": "*……権限が多いな。*"
     },
+    "day2_after_eunsu_choice": {
+        "name": "",
+        "text": "",
+        "choices": [
+            "전부 허용한다",
+            "위치 권한만 '앱 사용 중에만'으로 바꾼다"
+        ]
+    },
     "day2_after_allow_1": {
         "name": "",
         "text": "*全部許可した。楽だから。*"
+    },
+    "day2_after_allow_2": {
+        "name": "",
+        "text": ""
     },
     "day2_after_limit_1": {
         "name": "",
@@ -58,6 +70,10 @@
     "day2_after_limit_5": {
         "name": "",
         "text": "*去年倒れた生徒……そんなことがあったのか。安全のためなんだな。*"
+    },
+    "day2_after_sea_start": {
+        "name": "",
+        "text": ""
     },
     "day2_after_sea_1": {
         "name": "ハン・セア",
@@ -215,6 +231,10 @@
         "name": "",
         "text": "*自然な会話だ。この学校の人たち……ほんとにみんないい人だ。*"
     },
+    "day2_after_seolhwa_start": {
+        "name": "",
+        "text": ""
+    },
     "day2_after_seolhwa_1": {
         "name": "",
         "text": "*校門を出ようとしたとき、後ろから視線を感じた。*\n\n*足を止めて振り返った。*"
@@ -246,5 +266,9 @@
     "day2_after_seolhwa_8": {
         "name": "",
         "text": "*……あの子。クラスでもそうだし。友達がいないのか。それとも一人が楽なタイプなのか。*\n\n*……気になる。明日は絶対話しかけてみよう。*"
+    },
+    "day2_after_end": {
+        "name": "",
+        "text": ""
     }
 }

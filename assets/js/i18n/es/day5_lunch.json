@@ -1,4 +1,8 @@
 {
+    "day5_lunch_start": {
+        "name": "",
+        "text": ""
+    },
     "day5_lunch_chase_1": {
         "name": "Yo",
         "text": "*Corrí. Salí de golpe por la puerta del aula. No miré atrás.*"
@@ -10,6 +14,10 @@
     "day5_lunch_chase_3": {
         "name": "Yo",
         "text": "*Yuna me sigue detrás. Corriendo con piernas aún drogadas. Tambaleándose — pero sin detenerse.*"
+    },
+    "day5_lunch_chase_3a": {
+        "name": "Yo",
+        "text": "*— 유나를 놓으면 빠르게 달릴 수 있다. 그 생각이 스쳤다. 바로 지웠다.*"
     },
     "day5_lunch_chase_4": {
         "name": "Eunsu",
@@ -43,7 +51,6 @@
             "Derecha — ala antigua"
         ]
     },
-
     "day5_lunch_left_1": {
         "name": "Yo",
         "text": "*Final del pasillo. Sea está de pie ahí.*"
@@ -153,7 +160,6 @@
             "\"...No te muevas. Me quedo.\""
         ]
     },
-
     "day5_lunch_left_c1_1": {
         "name": "Yo",
         "text": "*Sea se secó las lágrimas. Y — se apartó.*"
@@ -186,7 +192,6 @@
         "name": "Han Sea",
         "text": "\"...Adiós.\""
     },
-
     "day5_lunch_left_c2_1": {
         "name": "Han Sea",
         "text": "\"...¿Juntos?\""
@@ -227,12 +232,14 @@
         "name": "Han Sea",
         "text": "\"...Aunque afuera dé miedo — probablemente sea mejor que aquí. Probablemente.\""
     },
-
     "day5_lunch_left_c3_1": {
         "name": "Yo",
         "text": "*...La fuerza abandonó mis piernas. Me desplomé frente a Sea. Ya no puedo correr más.*"
     },
-
+    "day5_lunch_left_timeout": {
+        "name": "",
+        "text": ""
+    },
     "day5_lunch_right_1": {
         "name": "Yo",
         "text": "*Corriendo por el pasillo — me detuve. Los pasos desaparecieron. Los que perseguían desde atrás. Los que resonaban en las escaleras. Todos.*"
@@ -398,17 +405,14 @@
             "\"...¿Cómo sé que esto no es otro experimento?\""
         ]
     },
-
     "day5_lunch_right_c1_1": {
         "name": "Yo",
         "text": "*Tomé la llave. Pequeña, fría, plateada. En mi mano — pesa.*"
     },
-
     "day5_lunch_right_c2_1": {
         "name": "Yo",
         "text": "*La profesora Riin se detuvo un momento. Luego — negó con la cabeza. \"Tengo que quedarme. Necesito sostener la persiana para que Eunsu no pueda seguirte.\" ...Me puso la llave en la mano.*"
     },
-
     "day5_lunch_right_c3_1": {
         "name": "Yo",
         "text": "\"...¿Cómo sé que esto no es otro experimento?\""
@@ -429,7 +433,10 @@
         "name": "Yo",
         "text": "*La profesora esbozó una sonrisa amarga. Tomé la llave.*"
     },
-
+    "day5_lunch_right_timeout": {
+        "name": "",
+        "text": ""
+    },
     "day5_lunch_seolhwa_1": {
         "name": "Yo",
         "text": "*La escalera hacia el 3er piso del ala antigua. Sosteniendo a Yuna.*"
@@ -554,7 +561,6 @@
             "\"¿Qué pasará contigo?\""
         ]
     },
-
     "day5_lunch_seolhwa_c1_1": {
         "name": "Seolhwa",
         "text": "\"...Gracias. Pero eso no es posible.\""
@@ -567,7 +573,6 @@
         "name": "Seolhwa",
         "text": "\"Está bien. **La memoria de la verdadera Lee Seolhwa permanecerá dentro de ti.** Esta vez no olvides.\""
     },
-
     "day5_lunch_seolhwa_c2_1": {
         "name": "Seolhwa",
         "text": "\"...Yo.\""
@@ -592,7 +597,6 @@
         "name": "Seolhwa",
         "text": "\"Aunque la verdadera Lee Seolhwa murió hace mucho... aun así te salvé esta vez. Con eso basta.\""
     },
-
     "day5_lunch_seolhwa_guide_1": {
         "name": "Seolhwa",
         "text": "\"Te guiaré hasta la salida de emergencia. Conozco un camino que evita los bloqueos de Eunsu.\""
@@ -661,7 +665,6 @@
         "name": "Yo",
         "text": "*Pasos desde atrás.*"
     },
-
     "day5_lunch_eunsu_1": {
         "name": "Yo",
         "text": "*Desde atrás — pasos. Subiendo las escaleras.*"
@@ -800,7 +803,6 @@
             "..."
         ]
     },
-
     "day5_lunch_final_true": {
         "name": "Yo",
         "text": "*..."
@@ -817,7 +819,6 @@
         "name": "Seolhwa",
         "text": "\"Yo lo haré.\""
     },
-
     "day5_lunch_end": {
         "name": "Yo",
         "text": "*...*"

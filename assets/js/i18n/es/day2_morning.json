@@ -1,4 +1,8 @@
 {
+    "day2_morning_start": {
+        "name": "",
+        "text": "*— 2일차 —*"
+    },
     "day2_morning_wakeup_1": {
         "name": "Yo",
         "text": "*La alarma suena. Abro los ojos. Día 2.*"
@@ -239,9 +243,17 @@
         "name": "Yo",
         "text": "*Me da una palmadita suave en el hombro. — Está frío. Su mano está fría. Pero esta frialdad... me resulta familiar. Esta sensación de una mano sobre mi hombro. Esta temperatura. Siento que ya la he sentido antes —*"
     },
+    "day2_morning_deja5_6a": {
+        "name": "Yo",
+        "text": "*— 차갑다.*"
+    },
     "day2_morning_deja5_7": {
         "name": "Eunsu",
         "text": "¿Qué pasa? ¿Tienes frío?"
+    },
+    "day2_morning_deja5_7a": {
+        "name": "Park Eunsu",
+        "text": "왜 그래요? 추워?"
     },
     "day2_morning_deja5_8": {
         "name": "Yo",
@@ -274,5 +286,9 @@
     "day2_morning_seolhwa_5": {
         "name": "Yo",
         "text": "*El chico de al lado mira de reojo a la fila de atrás mientras charla, pero ni repara en Seolhwa. Bueno, normalmente nadie presta atención a los callados. La profesora dice \"¡Atención!\" y me giro hacia el frente.*"
+    },
+    "day2_morning_end": {
+        "name": "",
+        "text": ""
     }
 }

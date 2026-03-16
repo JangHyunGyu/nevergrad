@@ -112,6 +112,10 @@
         "name": "Han Sea",
         "text": "\"Il paraît que tu étais avec Yuna.\"\n\n*'Il paraît.' Ce n'est pas une question — c'est une affirmation. Que quelqu'un le lui ait dit, ou qu'elle ait vu elle-même.*\n\n*Les yeux de Sea me lisent. Observent ma réaction. Comment je réponds, où mes yeux se tournent, où je mets mes mains.*"
     },
+    "day3_after_sea_4a": {
+        "name": "Moi",
+        "text": "*'있었다며.' 확인이 아니라 확정이다. 어디서 들은 건지 묻지도 않는다. 세아의 눈이 나를 읽고 있다. 지금 이 순간에도.*"
+    },
     "day3_after_sea_choice": {
         "name": "Moi",
         "text": "*Comment je réponds ?*",
@@ -168,13 +172,25 @@
         "name": "Han Sea",
         "text": "\"...Tes yeux viennent encore de dévier vers la gauche. Tu fais toujours ça quand tu mens.\"\n\n*Sa voix est basse. Comme un murmure. Impossible de savoir si c'est de la peine ou un avertissement.*"
     },
+    "day3_after_sea_lie_3a": {
+        "name": "Moi",
+        "text": "*목소리가 낮다. 속삭이는 것처럼. 주변에 사람이 없는데도.*"
+    },
     "day3_after_sea_lie_4": {
         "name": "Han Sea",
         "text": "\"...N'essaie même pas de me cacher des choses.\"\n\n*...Elle a raison. Cette habitude de regarder à gauche quand on ment. Mais comment Sea le sait-elle ? Ça ne fait que trois jours.*"
     },
+    "day3_after_sea_lie_4a": {
+        "name": "Moi",
+        "text": "*...맞다. 거짓말할 때 눈을 왼쪽으로 돌리는 버릇. 어떻게 알고 있는 거지. 내가 말한 적 없는데. 알고 있다. 12번의 반복이 알려줬다.*"
+    },
     "day3_after_sea_lie_5": {
         "name": "Han Sea",
         "text": "\"...La prochaine fois, sois honnête avec moi. Je suis du côté de {name}, après tout.\"\n\n*Sea sourit. Cette fois ses yeux sourient aussi. Mais ce sourire est encore plus effrayant.*"
+    },
+    "day3_after_sea_lie_5a": {
+        "name": "Moi",
+        "text": "*세아가 웃는다. 이번에는 눈도 웃는다. 하지만 그 웃음이 더 무섭다.*"
     },
     "day3_after_eunsu": {
         "name": "Moi",
@@ -236,6 +252,10 @@
         "name": "Park Eunsu",
         "text": "\"Ah, ça ? Ce sont des dossiers de suivi d'élèves transférés que j'étais en train de trier. Pourquoi, tu es curieux de savoir si ton nom y figure ?\"\n\n*M. Eunsu se tient dans l'encadrement de la porte. Il sourit. **Il m'a laissé voir ça exprès.** L'appel téléphonique était peut-être un prétexte.*"
     },
+    "day3_after_eunsu_peek_8a": {
+        "name": "Moi",
+        "text": "*은수 선생님이 문 앞에 서 있다. 웃고 있다. **이 사람은 내가 보는 걸 보게 둔 거다.** 전화는 핑계였을 수도 있다.*"
+    },
     "day3_after_eunsu_peek_9": {
         "name": "Moi",
         "text": "*M. Eunsu s'approche lentement et referme les documents. Sans se presser. Détendu.*"
@@ -296,6 +316,10 @@
         "name": "Moi",
         "text": "*...Rentrons. Je ne devrais pas rester ici plus longtemps.*"
     },
+    "day3_after_yuna_check": {
+        "name": "",
+        "text": ""
+    },
     "day3_after_yuna": {
         "name": "Moi",
         "text": "*Les activités périscolaires terminées, je sortais quand j'ai aperçu Yuna derrière le parterre de fleurs. Un gilet sur son uniforme, l'appareil photo autour du cou.*\n\n*Je regarde autour. Personne d'autre ici.*"
@@ -320,6 +344,10 @@
         "name": "Yuna",
         "text": "\"C'est dangereux pour moi de la garder. Si les profs... s'en aperçoivent, ils la confisqueront.\"\n\n*La main de Yuna est froide. Elle a touché la mienne en me passant la carte.*"
     },
+    "day3_after_yuna_6a": {
+        "name": "Moi",
+        "text": "*유나의 손이 차갑다. 카드를 건네면서 내 손에 닿았다.*"
+    },
     "day3_after_yuna_7": {
         "name": "Yuna",
         "text": "\"Faites attention, senpai. Plus quelqu'un a tenu longtemps ici... plus c'est dangereux.\""
@@ -331,6 +359,10 @@
     "day3_after_yuna_9": {
         "name": "Yuna",
         "text": "\"...Faites juste attention. Surtout la nuit.\"\n\n*Yuna se retourne et s'éloigne rapidement. Elle disparaît au coin du parterre de fleurs.*\n\n*La carte SD restée dans ma main est petite et légère. Elle contient 13 visages identiques.*\n\n*Je l'ai enfouie au fond de ma poche.*"
+    },
+    "day3_after_yuna_9a": {
+        "name": "Moi",
+        "text": "*유나가 돌아선다. 짧은 인사도 없이. 복도에 발소리만 남았다. 손에 남은 SD카드가 작고 가볍다. 주머니 깊숙이 넣었다.*"
     },
     "day3_after_end": {
         "name": "Moi",

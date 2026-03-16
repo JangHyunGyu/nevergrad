@@ -112,6 +112,10 @@
         "name": "Han Sea",
         "text": "\"Ich hab gehört, du warst mit Yuna zusammen.\"\n\n*'Ich hab gehört.' Das ist keine Frage — es ist eine Feststellung. Ob es ihr jemand gesagt hat oder ob sie es selbst gesehen hat.*\n\n*Seas Augen lesen mich. Beobachten meine Reaktion. Wie ich antworte, wohin meine Augen gehen, wo ich meine Hände hinlege.*"
     },
+    "day3_after_sea_4a": {
+        "name": "Ich",
+        "text": "*'있었다며.' 확인이 아니라 확정이다. 어디서 들은 건지 묻지도 않는다. 세아의 눈이 나를 읽고 있다. 지금 이 순간에도.*"
+    },
     "day3_after_sea_choice": {
         "name": "Ich",
         "text": "*Wie soll ich antworten?*",
@@ -168,13 +172,25 @@
         "name": "Han Sea",
         "text": "\"...Deine Augen sind gerade wieder nach links gewandert. Das machst du immer, wenn du lügst.\"\n\n*Ihre Stimme ist leise. Wie ein Flüstern. Ich kann nicht unterscheiden, ob das Verletztheit ist oder eine Warnung.*"
     },
+    "day3_after_sea_lie_3a": {
+        "name": "Ich",
+        "text": "*목소리가 낮다. 속삭이는 것처럼. 주변에 사람이 없는데도.*"
+    },
     "day3_after_sea_lie_4": {
         "name": "Han Sea",
         "text": "\"...Denk nicht mal daran, mir etwas zu verheimlichen.\"\n\n*...Sie hat recht. Die Angewohnheit, beim Lügen nach links zu schauen. Aber woher weiß Sea das? Es sind erst drei Tage vergangen.*"
     },
+    "day3_after_sea_lie_4a": {
+        "name": "Ich",
+        "text": "*...맞다. 거짓말할 때 눈을 왼쪽으로 돌리는 버릇. 어떻게 알고 있는 거지. 내가 말한 적 없는데. 알고 있다. 12번의 반복이 알려줬다.*"
+    },
     "day3_after_sea_lie_5": {
         "name": "Han Sea",
         "text": "\"...Nächstes Mal sei ehrlich zu mir. Ich bin schließlich auf {name}s Seite.\"\n\n*Sea lächelt. Diesmal lächeln auch ihre Augen. Aber dieses Lächeln ist noch beängstigender.*"
+    },
+    "day3_after_sea_lie_5a": {
+        "name": "Ich",
+        "text": "*세아가 웃는다. 이번에는 눈도 웃는다. 하지만 그 웃음이 더 무섭다.*"
     },
     "day3_after_eunsu": {
         "name": "Ich",
@@ -236,6 +252,10 @@
         "name": "Park Eunsu",
         "text": "\"Ach, das? Das sind Beratungsunterlagen von versetzten Schülern, die ich gerade ordne. Warum, bist du neugierig, ob dein Name drinsteht?\"\n\n*Herr Eunsu steht im Türrahmen. Er lächelt. **Er hat mich das absichtlich sehen lassen.** Der Anruf war vielleicht nur ein Vorwand.*"
     },
+    "day3_after_eunsu_peek_8a": {
+        "name": "Ich",
+        "text": "*은수 선생님이 문 앞에 서 있다. 웃고 있다. **이 사람은 내가 보는 걸 보게 둔 거다.** 전화는 핑계였을 수도 있다.*"
+    },
     "day3_after_eunsu_peek_9": {
         "name": "Ich",
         "text": "*Herr Eunsu kommt langsam herüber und klappt die Dokumente zu. Ohne Eile. Gelassen.*"
@@ -296,6 +316,10 @@
         "name": "Ich",
         "text": "*...Gehen wir zurück. Ich sollte nicht länger hierbleiben.*"
     },
+    "day3_after_yuna_check": {
+        "name": "",
+        "text": ""
+    },
     "day3_after_yuna": {
         "name": "Ich",
         "text": "*Die Nachmittagsaktivitäten waren vorbei und ich war auf dem Weg hinaus, als ich Yuna hinter dem Blumenbeet stehen sah. Eine Strickjacke über der Uniform, die Kamera um den Hals.*\n\n*Ich schaue mich um. Niemand sonst hier.*"
@@ -320,6 +344,10 @@
         "name": "Yuna",
         "text": "\"Es ist gefährlich für mich, sie zu behalten. Wenn die Lehrer... es bemerken, werden sie sie konfiszieren.\"\n\n*Yunas Hand ist kalt. Sie berührte meine, als sie mir die Karte gab.*"
     },
+    "day3_after_yuna_6a": {
+        "name": "Ich",
+        "text": "*유나의 손이 차갑다. 카드를 건네면서 내 손에 닿았다.*"
+    },
     "day3_after_yuna_7": {
         "name": "Yuna",
         "text": "\"Seien Sie vorsichtig, Senpai. Je länger jemand hier durchgehalten hat... desto gefährlicher wird es.\""
@@ -331,6 +359,10 @@
     "day3_after_yuna_9": {
         "name": "Yuna",
         "text": "\"...Seien Sie einfach vorsichtig. Besonders nachts.\"\n\n*Yuna dreht sich um und geht schnell davon. Sie verschwindet um die Ecke des Blumenbeets.*\n\n*Die SD-Karte, die in meiner Hand zurückbleibt, ist klein und leicht. Darin sind 13 identische Gesichter.*\n\n*Ich steckte sie tief in meine Tasche.*"
+    },
+    "day3_after_yuna_9a": {
+        "name": "Ich",
+        "text": "*유나가 돌아선다. 짧은 인사도 없이. 복도에 발소리만 남았다. 손에 남은 SD카드가 작고 가볍다. 주머니 깊숙이 넣었다.*"
     },
     "day3_after_end": {
         "name": "Ich",

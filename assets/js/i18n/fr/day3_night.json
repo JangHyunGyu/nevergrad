@@ -7,7 +7,6 @@
         "name": "Moi",
         "text": "*J'ai pris une douche et je suis sorti. L'écran de mon téléphone est allumé. Des notifications.*"
     },
-
     "day3_night_sea_msg": {
         "name": "Moi",
         "text": "*Sea : '{name}, c'était sympa aujourd'hui ! On fait pareil demain aussi♥' — 22h02*"
@@ -76,7 +75,6 @@
         "name": "Moi",
         "text": "*...Ça vibre encore depuis l'intérieur du tiroir.*"
     },
-
     "day3_night_bleed": {
         "name": "Moi",
         "text": "*Allongé sous la couette, je réfléchis. Les lumières sont éteintes. Le réverbère projette un rectangle lumineux au plafond.*"
@@ -105,6 +103,10 @@
         "name": "Moi",
         "text": "*...C'était clairement bizarre à ce moment-là. C'était mon premier jour, pourtant je ne me suis jamais perdu dans les couloirs. Mon corps savait déjà où se trouvait la salle des profs.*"
     },
+    "day3_night_bleed_7a": {
+        "name": "Moi",
+        "text": "*왜 은수 선생님의 교무실이 몇 층인지 물어보지도 않고 찾아갔지?*"
+    },
     "day3_night_bleed_8": {
         "name": "Moi",
         "text": "*Pourquoi l'écriture sur le casier correspond-elle à la mienne ?*"
@@ -116,6 +118,10 @@
     "day3_night_bleed_10": {
         "name": "Moi",
         "text": "*Pourquoi le bento de Sea correspond-il parfaitement à mes goûts depuis le début ?*"
+    },
+    "day3_night_bleed_10a": {
+        "name": "Moi",
+        "text": "*왜 \"민수\"의 답장이 그렇게 어색했지? '성격 달라졌네'라는 답장. ...민수가 정말 있는 건가? 아니면 누군가가 만들어낸 번호인가?*"
     },
     "day3_night_bleed_11": {
         "name": "Moi",
@@ -137,7 +143,6 @@
         "name": "Moi",
         "text": "*Je me suis redressé. De la sueur perle sur mon front. Mes mains tremblent. ...C'est quoi ça ? Qu'est-ce que j'ai appris ? Non — qu'est-ce que j'ignorais depuis tout ce temps ?*"
     },
-
     "day3_night_stat_crack": {
         "name": "Moi",
         "text": "*Je me suis rallongé. J'ai fermé les yeux.*"
@@ -154,6 +159,10 @@
         "name": "Moi",
         "text": "*Je suis entouré de bonnes personnes, alors pourquoi on dirait des murs de tous les côtés ?*"
     },
+    "day3_night_stat_crack_4a": {
+        "name": "Moi",
+        "text": "*이 불안이 정상인가? 내가 이상한 건가? 아니면 이 상황이 이상한 건가?*"
+    },
     "day3_night_stat_crack_5": {
         "name": "Moi",
         "text": "*...À l'instant, je crois avoir vu quelque chose. Sur l'écran.*"
@@ -162,7 +171,6 @@
         "name": "Moi",
         "text": "*Non. Il n'y a rien. J'ai juste les yeux fatigués.*"
     },
-
     "day3_night_wall": {
         "name": "Moi",
         "text": "*Je n'arrive pas à m'endormir. Après m'être retourné longtemps, j'ai fini par sombrer.*"
@@ -211,7 +219,6 @@
         "name": "Moi",
         "text": "*Je n'en ai aucun souvenir. Aucun. ...Quelqu'un qui n'est pas moi — avec mes propres mains — pendant que je dormais — mes pensées ne s'organisent plus. J'ai simplement peur.*"
     },
-
     "day3_night_seolhwa": {
         "name": "Moi",
         "text": "*Je fixe l'écriture sur le mur. L'air change. La température semble baisser. Le néon clignote une fois.*"
@@ -228,6 +235,14 @@
         "name": "Moi",
         "text": "*...C'est Seolhwa. Visage pâle. Cheveux blanc argenté. Yeux humides. La silhouette d'une fille frêle. En uniforme scolaire. En pleine nuit. Dans ma chambre. ...Est-ce une hallucination ? Est-ce réel ? La porte est verrouillée, alors comment est-elle entrée ?*"
     },
+    "day3_night_seolhwa_4a": {
+        "name": "Moi",
+        "text": "*현관문 소리를 못 들었다. 발소리도 없었다.*"
+    },
+    "day3_night_seolhwa_4b": {
+        "name": "Moi",
+        "text": "*설화가 나를 보고 있다. 슬픈 눈이다. 화가 난 것도 아니고, 무서운 것도 아니다. 그냥... 슬프다. 깊은 곳에서 올라오는 슬픔.*"
+    },
     "day3_night_seolhwa_5": {
         "name": "Seolhwa",
         "text": "\"...Cinq jours.\""
@@ -236,9 +251,17 @@
         "name": "Moi",
         "text": "\"...Cinq jours avant quoi ?\""
     },
+    "day3_night_seolhwa_6a": {
+        "name": "Moi",
+        "text": "*목소리가 안 나온다. 입술이 마른다.*"
+    },
     "day3_night_seolhwa_7": {
         "name": "Seolhwa",
         "text": "\"Dans cinq jours... tu dois sortir d'ici.\""
+    },
+    "day3_night_seolhwa_7a": {
+        "name": "Moi",
+        "text": "*설화의 목소리가 이상하다. 멀리서 들리는 것 같다. 같은 방에 있는데, 유리벽 너머에서 말하는 것처럼.*"
     },
     "day3_night_seolhwa_8": {
         "name": "Seolhwa",
@@ -255,6 +278,10 @@
     "day3_night_seolhwa_11": {
         "name": "Moi",
         "text": "*...Sa main est translucide. La lumière du réverbère de l'autre côté de la fenêtre traverse le dos de sa main. Là où devraient être les veines, la lumière passe à travers. Le contour de Seolhwa vacille. Comme un reflet à la surface de l'eau. Comme si elle n'avait pas de substance.*"
+    },
+    "day3_night_seolhwa_11a": {
+        "name": "Moi",
+        "text": "*설화의 눈에서 뭔가가 흘러내린다. 눈물인지, 빛인지.*"
     },
     "day3_night_seolhwa_12": {
         "name": "Seolhwa",
@@ -284,7 +311,6 @@
         "name": "Moi",
         "text": "*...Quelque chose s'effondre. En moi. Les choses que je croyais 'normales' jusqu'à présent, une par une.*"
     },
-
     "day3_night_choice": {
         "name": "Moi",
         "text": "*...*",
@@ -293,7 +319,6 @@
             "Faire semblant de ne rien savoir"
         ]
     },
-
     "day3_night_investigate": {
         "name": "Moi",
         "text": "*Je ne peux plus fermer les yeux. Demain, d'une façon ou d'une autre. La porte verrouillée de l'ancien bâtiment. Le registre de gestion des sujets. Les 13 photos. Tout est lié.*"
@@ -302,7 +327,6 @@
         "name": "Moi",
         "text": "*J'ai pris en photo l'écriture sur le mur. Une preuve. Une preuve que je me suis laissée à moi-même.*"
     },
-
     "day3_night_deny": {
         "name": "Moi",
         "text": "*...C'est sûrement juste le stress. Je suis à cran à cause du transfert. Demain, ça ira mieux.*"

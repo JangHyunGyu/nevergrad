@@ -1,4 +1,8 @@
 {
+    "day5_lunch_start": {
+        "name": "",
+        "text": ""
+    },
     "day5_lunch_chase_1": {
         "name": "Ich",
         "text": "*Ich rannte. Stuerzte aus der Klassenzimmertuer. Schaute nicht zurueck.*"
@@ -10,6 +14,10 @@
     "day5_lunch_chase_3": {
         "name": "Ich",
         "text": "*Yuna folgt. Rennt auf Beinen, die noch unter Medikamenteneinfluss stehen. Sie taumelt — aber hoert nicht auf.*"
+    },
+    "day5_lunch_chase_3a": {
+        "name": "Ich",
+        "text": "*— 유나를 놓으면 빠르게 달릴 수 있다. 그 생각이 스쳤다. 바로 지웠다.*"
     },
     "day5_lunch_chase_4": {
         "name": "Eunsu",
@@ -43,7 +51,6 @@
             "Rechts — alter Fluegel"
         ]
     },
-
     "day5_lunch_left_1": {
         "name": "Ich",
         "text": "*Ende des Flurs. Sea steht dort.*"
@@ -153,7 +160,6 @@
             "\"...Tritt nicht zur Seite. Ich bleibe.\""
         ]
     },
-
     "day5_lunch_left_c1_1": {
         "name": "Ich",
         "text": "*Sea wischte sich die Traenen ab. Und — trat zur Seite.*"
@@ -186,7 +192,6 @@
         "name": "Han Sea",
         "text": "\"...Leb wohl.\""
     },
-
     "day5_lunch_left_c2_1": {
         "name": "Han Sea",
         "text": "\"...Zusammen?\""
@@ -227,12 +232,14 @@
         "name": "Han Sea",
         "text": "\"...Selbst wenn draussen Angst auf mich wartet — es ist wahrscheinlich besser als hier. Wahrscheinlich.\""
     },
-
     "day5_lunch_left_c3_1": {
         "name": "Ich",
         "text": "*...Die Kraft verliess meine Beine. Ich sackte vor Sea zusammen. Ich kann nicht mehr rennen.*"
     },
-
+    "day5_lunch_left_timeout": {
+        "name": "",
+        "text": ""
+    },
     "day5_lunch_right_1": {
         "name": "Ich",
         "text": "*Ich rannte den Flur entlang — und blieb stehen. Die Schritte verschwanden. Die von hinten. Die auf der Treppe. Alle.*"
@@ -398,17 +405,14 @@
             "\"...Woher weiss ich, dass das nicht auch ein Experiment ist?\""
         ]
     },
-
     "day5_lunch_right_c1_1": {
         "name": "Ich",
         "text": "*Ich nahm den Schluessel. Klein, kalt, silbern. In meiner Hand — fuehlt er sich schwer an.*"
     },
-
     "day5_lunch_right_c2_1": {
         "name": "Ich",
         "text": "*Riin hielt kurz inne. Dann — schuettelte den Kopf. \"Ich muss hierbleiben. Ich muss den Rollladen halten, damit Eunsu nicht folgen kann.\" ...Sie drueckte mir den Schluessel in die Hand.*"
     },
-
     "day5_lunch_right_c3_1": {
         "name": "Ich",
         "text": "\"...Woher weiss ich, dass das nicht auch ein Experiment ist?\""
@@ -429,7 +433,10 @@
         "name": "Ich",
         "text": "*Die Lehrerin laechelte bitter. Ich nahm den Schluessel.*"
     },
-
+    "day5_lunch_right_timeout": {
+        "name": "",
+        "text": ""
+    },
     "day5_lunch_seolhwa_1": {
         "name": "Ich",
         "text": "*Die Treppe zum 3. Stock des alten Fluegels. Ich stuetze Yuna.*"
@@ -554,7 +561,6 @@
             "\"Was passiert mit dir?\""
         ]
     },
-
     "day5_lunch_seolhwa_c1_1": {
         "name": "Seolhwa",
         "text": "\"...Danke. Aber das geht nicht.\""
@@ -567,7 +573,6 @@
         "name": "Seolhwa",
         "text": "\"Es ist in Ordnung. **Die Erinnerung an die echte Lee Seolhwa wird in dir bleiben.** Vergiss nicht, dieses Mal.\""
     },
-
     "day5_lunch_seolhwa_c2_1": {
         "name": "Seolhwa",
         "text": "\"...Ich.\""
@@ -592,7 +597,6 @@
         "name": "Seolhwa",
         "text": "\"Selbst wenn die echte Lee Seolhwa laengst gestorben ist... habe ich dich diesmal gerettet. Das genuegt.\""
     },
-
     "day5_lunch_seolhwa_guide_1": {
         "name": "Seolhwa",
         "text": "\"Ich fuehre dich zum Notausgang. Ich kenne einen Weg, der Eunsus Abriegelungen umgeht.\""
@@ -661,7 +665,6 @@
         "name": "Ich",
         "text": "*Schritte von hinten.*"
     },
-
     "day5_lunch_eunsu_1": {
         "name": "Ich",
         "text": "*Von hinten — Schritte. Die Treppe heraufkommend.*"
@@ -800,7 +803,6 @@
             "..."
         ]
     },
-
     "day5_lunch_final_true": {
         "name": "Ich",
         "text": "*..."
@@ -817,7 +819,6 @@
         "name": "Seolhwa",
         "text": "\"Ich mache das.\""
     },
-
     "day5_lunch_end": {
         "name": "Ich",
         "text": "*...*"

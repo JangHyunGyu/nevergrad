@@ -112,6 +112,10 @@
         "name": "Han Sea",
         "text": "\"Me dijeron que estabas con Yuna.\"\n\n*'Me dijeron que estabas.' No es una pregunta — es una afirmación. Si alguien se lo dijo, o si lo vio ella misma.*\n\n*Los ojos de Sea me leen. Observan mi reacción. Cómo respondo, adónde miro, dónde pongo las manos.*"
     },
+    "day3_after_sea_4a": {
+        "name": "Yo",
+        "text": "*'있었다며.' 확인이 아니라 확정이다. 어디서 들은 건지 묻지도 않는다. 세아의 눈이 나를 읽고 있다. 지금 이 순간에도.*"
+    },
     "day3_after_sea_choice": {
         "name": "Yo",
         "text": "*¿Cómo respondo?*",
@@ -168,13 +172,25 @@
         "name": "Han Sea",
         "text": "\"...Tus ojos acaban de desviarse a la izquierda otra vez. Siempre haces eso cuando mientes.\"\n\n*Su voz es baja. Como un susurro. No puedo distinguir si esto es dolor o una advertencia.*"
     },
+    "day3_after_sea_lie_3a": {
+        "name": "Yo",
+        "text": "*목소리가 낮다. 속삭이는 것처럼. 주변에 사람이 없는데도.*"
+    },
     "day3_after_sea_lie_4": {
         "name": "Han Sea",
         "text": "\"...Ni se te ocurra ocultarme cosas.\"\n\n*...Tiene razón. La costumbre de mirar a la izquierda al mentir. Pero ¿cómo lo sabe Sea? Solo han pasado tres días.*"
     },
+    "day3_after_sea_lie_4a": {
+        "name": "Yo",
+        "text": "*...맞다. 거짓말할 때 눈을 왼쪽으로 돌리는 버릇. 어떻게 알고 있는 거지. 내가 말한 적 없는데. 알고 있다. 12번의 반복이 알려줬다.*"
+    },
     "day3_after_sea_lie_5": {
         "name": "Han Sea",
         "text": "\"...La próxima vez, sé sincero conmigo. Al fin y al cabo, estoy del lado de {name}.\"\n\n*Sea sonríe. Esta vez sus ojos también sonríen. Pero esa sonrisa es aún más aterradora.*"
+    },
+    "day3_after_sea_lie_5a": {
+        "name": "Yo",
+        "text": "*세아가 웃는다. 이번에는 눈도 웃는다. 하지만 그 웃음이 더 무섭다.*"
     },
     "day3_after_eunsu": {
         "name": "Yo",
@@ -236,6 +252,10 @@
         "name": "Park Eunsu",
         "text": "\"Ah, ¿eso? Son registros de asesoramiento de estudiantes transferidos que estaba organizando. ¿Por qué, te da curiosidad si tu nombre está ahí?\"\n\n*El profesor Eunsu está de pie en la entrada. Sonriendo. **Me dejó ver esto a propósito.** La llamada podría haber sido una excusa.*"
     },
+    "day3_after_eunsu_peek_8a": {
+        "name": "Yo",
+        "text": "*은수 선생님이 문 앞에 서 있다. 웃고 있다. **이 사람은 내가 보는 걸 보게 둔 거다.** 전화는 핑계였을 수도 있다.*"
+    },
     "day3_after_eunsu_peek_9": {
         "name": "Yo",
         "text": "*El profesor Eunsu se acerca lentamente y cierra los documentos. Sin prisa. Con calma.*"
@@ -296,6 +316,10 @@
         "name": "Yo",
         "text": "*...Volvamos. No debería quedarme aquí más tiempo.*"
     },
+    "day3_after_yuna_check": {
+        "name": "",
+        "text": ""
+    },
     "day3_after_yuna": {
         "name": "Yo",
         "text": "*Las actividades extraescolares terminaron y cuando iba saliendo, vi a Yuna de pie detrás del macizo de flores. Con un cárdigan sobre el uniforme, la cámara colgada del cuello.*\n\n*Miro alrededor. No hay nadie más aquí.*"
@@ -320,6 +344,10 @@
         "name": "Yuna",
         "text": "\"Es peligroso que yo la tenga. Si los profesores... se dan cuenta, me la confiscarán.\"\n\n*La mano de Yuna está fría. Tocó la mía al pasarme la tarjeta.*"
     },
+    "day3_after_yuna_6a": {
+        "name": "Yo",
+        "text": "*유나의 손이 차갑다. 카드를 건네면서 내 손에 닿았다.*"
+    },
     "day3_after_yuna_7": {
         "name": "Yuna",
         "text": "\"Tenga cuidado, senpai. Cuanto más tiempo haya resistido alguien aquí... más peligroso se vuelve.\""
@@ -331,6 +359,10 @@
     "day3_after_yuna_9": {
         "name": "Yuna",
         "text": "\"...Solo tenga cuidado. Especialmente por la noche.\"\n\n*Yuna se da la vuelta y se aleja rápidamente. Desaparece doblando la esquina del macizo de flores.*\n\n*La tarjeta SD que queda en mi mano es pequeña y ligera. Dentro hay 13 rostros idénticos.*\n\n*La guardé en lo más profundo de mi bolsillo.*"
+    },
+    "day3_after_yuna_9a": {
+        "name": "Yo",
+        "text": "*유나가 돌아선다. 짧은 인사도 없이. 복도에 발소리만 남았다. 손에 남은 SD카드가 작고 가볍다. 주머니 깊숙이 넣었다.*"
     },
     "day3_after_end": {
         "name": "Yo",

@@ -163,6 +163,15 @@
         "name": "Han Sea",
         "text": "Tu etais trop stresse pour prendre ton petit-dejeuner, pas vrai ? L'estomac vide, ca rend encore plus nerveux. Bois au moins ca."
     },
+    "day1_choco_choice": {
+        "name": "",
+        "text": "",
+        "choices": [
+            "고마워, 잘 마실게.",
+            "...내가 이거 좋아하는 걸 어떻게 알아?",
+            "나 사실 딸기우유가 더 좋긴 한데."
+        ]
+    },
     "day1_choco_accept_1": {
         "name": "Moi",
         "text": "*Je plante la paille et je bois une gorgee. Sucre. Bon.*"
@@ -310,6 +319,14 @@
     "day1_seolhwa_5": {
         "name": "Moi",
         "text": "*Il y a aussi un garcon a lunettes assis dans le coin au fond. Lui aussi est seul, en train de lire un manga. Le dernier rang semble etre la zone tranquille.*"
+    },
+    "day1_seolhwa_choice": {
+        "name": "",
+        "text": "",
+        "choices": [
+            "안녕, 나 {name}이야. 뒤에 앉게 됐네.",
+            "(지금은 수업에 집중하자)"
+        ]
     },
     "day1_seolhwa_greet_1": {
         "name": "Moi",

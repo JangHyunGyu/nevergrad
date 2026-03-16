@@ -1,4 +1,8 @@
 {
+    "day5_lunch_start": {
+        "name": "",
+        "text": ""
+    },
     "day5_lunch_chase_1": {
         "name": "Me",
         "text": "*I ran. Burst through the classroom door. Didn't look back.*"
@@ -10,6 +14,10 @@
     "day5_lunch_chase_3": {
         "name": "Me",
         "text": "*Yuna follows behind. Running on legs still drugged. Stumbling — but not stopping.*"
+    },
+    "day5_lunch_chase_3a": {
+        "name": "Me",
+        "text": "*— 유나를 놓으면 빠르게 달릴 수 있다. 그 생각이 스쳤다. 바로 지웠다.*"
     },
     "day5_lunch_chase_4": {
         "name": "Eunsu",
@@ -43,7 +51,6 @@
             "Right — old wing"
         ]
     },
-
     "day5_lunch_left_1": {
         "name": "Me",
         "text": "*End of the hallway. Sea is standing there.*"
@@ -153,7 +160,6 @@
             "\"...Don't move. I'll stay.\""
         ]
     },
-
     "day5_lunch_left_c1_1": {
         "name": "Me",
         "text": "*Sea wiped her tears. And — stepped aside.*"
@@ -186,7 +192,6 @@
         "name": "Han Sea",
         "text": "\"...Goodbye.\""
     },
-
     "day5_lunch_left_c2_1": {
         "name": "Han Sea",
         "text": "\"...Together?\""
@@ -227,12 +232,14 @@
         "name": "Han Sea",
         "text": "\"...Even if outside is scary — it's probably better than here. Probably.\""
     },
-
     "day5_lunch_left_c3_1": {
         "name": "Me",
         "text": "*...The strength left my legs. I sank down in front of Sea. I can't run anymore.*"
     },
-
+    "day5_lunch_left_timeout": {
+        "name": "",
+        "text": ""
+    },
     "day5_lunch_right_1": {
         "name": "Me",
         "text": "*Running down the hallway — I stopped. The footsteps disappeared. The ones chasing from behind. The ones echoing on the stairs. All of them.*"
@@ -398,17 +405,14 @@
             "\"...How do I know this isn't another experiment?\""
         ]
     },
-
     "day5_lunch_right_c1_1": {
         "name": "Me",
         "text": "*I took the key. Small, cold, silver. In my hand — it feels heavy.*"
     },
-
     "day5_lunch_right_c2_1": {
         "name": "Me",
         "text": "*Teacher Riin paused for a moment. Then — shook her head. \"I have to stay. I need to hold the shutter so Eunsu can't follow.\" ...She pressed the key into my hand.*"
     },
-
     "day5_lunch_right_c3_1": {
         "name": "Me",
         "text": "\"...How do I know this isn't another experiment?\""
@@ -429,7 +433,10 @@
         "name": "Me",
         "text": "*Teacher gave a wry smile. I took the key.*"
     },
-
+    "day5_lunch_right_timeout": {
+        "name": "",
+        "text": ""
+    },
     "day5_lunch_seolhwa_1": {
         "name": "Me",
         "text": "*The staircase up to the 3rd floor of the old wing. Supporting Yuna.*"
@@ -554,7 +561,6 @@
             "\"What happens to you?\""
         ]
     },
-
     "day5_lunch_seolhwa_c1_1": {
         "name": "Seolhwa",
         "text": "\"...Thank you. But that's not possible.\""
@@ -567,7 +573,6 @@
         "name": "Seolhwa",
         "text": "\"It's okay. **The real Lee Seolhwa's memory will remain inside you.** Don't forget this time.\""
     },
-
     "day5_lunch_seolhwa_c2_1": {
         "name": "Seolhwa",
         "text": "\"...I.\""
@@ -592,7 +597,6 @@
         "name": "Seolhwa",
         "text": "\"Even if the real Lee Seolhwa died long ago... I still saved you this time. That's enough.\""
     },
-
     "day5_lunch_seolhwa_guide_1": {
         "name": "Seolhwa",
         "text": "\"I'll guide you to the emergency exit. I know a way around Eunsu's blockades.\""
@@ -661,7 +665,6 @@
         "name": "Me",
         "text": "*Footsteps from behind.*"
     },
-
     "day5_lunch_eunsu_1": {
         "name": "Me",
         "text": "*From behind — footsteps. Coming up the stairs.*"
@@ -800,7 +803,6 @@
             "..."
         ]
     },
-
     "day5_lunch_final_true": {
         "name": "Me",
         "text": "*..."
@@ -817,7 +819,6 @@
         "name": "Seolhwa",
         "text": "\"I'll do it.\""
     },
-
     "day5_lunch_end": {
         "name": "Me",
         "text": "*...*"

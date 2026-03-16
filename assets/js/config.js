@@ -169,7 +169,36 @@ const CONFIG = {
         home: "assets/images/background/home.png",
         room_night: "assets/images/background/room_night.png",        // 스탠드+폰빛 고유 구도
         // 특수
-        black: "assets/images/background/black.png"
+        black: "assets/images/background/black.png",
+        white: "assets/images/background/white.png",
+        // 학교 내부 (추가)
+        playground: "assets/images/background/playground.png",            // 운동장
+        student_council: "assets/images/background/student_council.png",  // 학생회실
+        cafeteria: "assets/images/background/cafeteria.png",              // 급식실
+        old_building_corridor: "assets/images/background/old_building.png", // 구관 복도 (구관 재사용)
+        corridor_old: "assets/images/background/old_building.png",         // 구관 복도 alias
+        corridor_main: "assets/images/background/corridor.png",            // 본관 복도 (corridor 재사용)
+        corridor_emergency: "assets/images/background/corridor.png",       // 비상 복도 (corridor 재사용)
+        old_infirmary: "assets/images/background/nurse_office.png",        // 옛 보건실 (nurse_office 재사용)
+        old_stairway: "assets/images/background/stairway.png",             // 구관 계단 (stairway 재사용)
+        old_corridor_dark: "assets/images/background/old_building.png",    // 구관 어두운 복도
+        underground_lab: "assets/images/background/basement.png",          // 지하 연구실 (basement 재사용)
+        // 학교 외부 (추가)
+        school_back: "assets/images/background/outside_school.png",        // 학교 뒤편
+        street_morning: "assets/images/background/street.png",             // 아침 통학로 (street 재사용)
+        school_gate_dark: "assets/images/background/school_gate.png",      // 새벽 교문 (school_gate + dark)
+        school_gate_morning: "assets/images/background/school_gate.png",   // 아침 교문
+        school_fence_dawn: "assets/images/background/school_gate.png",     // 새벽 울타리
+        // 자취방 (추가)
+        room_dark: "assets/images/background/home.png",                    // 어두운 방 (home + dark)
+        // 엔딩 전용
+        emergency_exit: "assets/images/background/exit_door.png",          // 비상구 (exit_door 재사용)
+        classroom_afternoon: "assets/images/background/classroom.png",     // 오후 교실
+        new_classroom: "assets/images/background/classroom.png",           // 새 교실 (에필로그)
+        news_article: "assets/images/background/black.png",                // 뉴스 기사 화면
+        dawn_road: "assets/images/background/street.png",                  // 새벽 도로
+        new_place: "assets/images/background/street.png",                  // 새로운 장소 (에필로그)
+        office: "assets/images/background/teacher_office.png"              // 사무실 (교무실 재사용)
     },
 
     // ===== 스탯 시스템 =====

@@ -193,7 +193,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_choice"
     },
 
-    // 8초 타이머: 3 choices
+    // 8초 타이머: 3 choices (타임아웃 = 세아에게 붙잡힘)
     "day5_lunch_left_choice": {
         character: null,
         timedChoice: 8000,
@@ -202,7 +202,13 @@ Object.assign(SCENARIO[5], {
             { next: "day5_lunch_left_c2_1", setFlags: ["sea_companion"] },
             { next: "day5_lunch_left_c3_1", setFlags: ["cage_route_sea"] }
         ],
-        timeoutNext: "day5_lunch_left_c1_1"
+        timeoutNext: "day5_lunch_left_timeout",
+        timeoutFlags: ["caught_by_sea"]
+    },
+    "day5_lunch_left_timeout": {
+        character: null,
+        setFlags: ["caught_by_sea"],
+        next: "day5_lunch_end"
     },
 
     // ── 선택 1: "...미안해. 하지만 가야 해." ──
@@ -476,7 +482,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_choice"
     },
 
-    // 6초 타이머: 3 choices
+    // 6초 타이머: 3 choices (타임아웃 = 리인에게 붙잡힘)
     "day5_lunch_right_choice": {
         character: null,
         timedChoice: 6000,
@@ -485,7 +491,13 @@ Object.assign(SCENARIO[5], {
             { next: "day5_lunch_right_c2_1", setFlags: ["emergency_key", "riin_companion"] },
             { next: "day5_lunch_right_c3_1" }
         ],
-        timeoutNext: "day5_lunch_right_c1_1"
+        timeoutNext: "day5_lunch_right_timeout",
+        timeoutFlags: ["caught_by_riin"]
+    },
+    "day5_lunch_right_timeout": {
+        character: null,
+        setFlags: ["caught_by_riin"],
+        next: "day5_lunch_end"
     },
 
     // ── 선택 1: 열쇠를 받는다 ──

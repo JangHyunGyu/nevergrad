@@ -142,11 +142,11 @@ class GameEngine {
             this.state.playerName = name;
             this.state.currentDay = 1;
             this.state.currentSlot = "morning";
-            this.state.currentScene = "day1_opening";
+            this.state.currentScene = "day1_opening_1";
 
             this.glitch.initConsoleEasterEgg(1);
             this._showScreen('game-screen');
-            this._loadScene("day1_opening");
+            this._loadScene("day1_opening_1");
         });
     }
 

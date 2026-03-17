@@ -17,18 +17,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     const titleBgLayer = document.querySelector('.title-bg-layer');
     if (titleBgLayer) {
         const img = new Image();
-        img.src = 'assets/images/background/title_bg.png';
+        img.src = new URL('assets/images/background/title_bg.png', document.baseURI).href;
         img.onerror = () => titleBgLayer.classList.add('no-image');
     }
 
     const game = new GameEngine();
 
     // 디바이스 기믹 시스템 초기화
-    game.device = new DeviceGimmickSystem(game);
-    await game.device.init();
+    game.deviceGimmick = new DeviceGimmickSystem(game);
+    await game.deviceGimmick.init();
 
     // 메타 공포 시스템 초기화
-    game.meta = new MetaHorrorSystem(game);
+    game.metaHorror = new MetaHorrorSystem(game);
 
     // 엔진 초기화 (i18n 로드, UI 바인딩)
     await game.init();

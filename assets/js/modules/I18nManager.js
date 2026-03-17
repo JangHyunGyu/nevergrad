@@ -22,6 +22,9 @@
  */
 
 class I18nManager {
+    // 언어 하위 디렉토리(/en/, /ja/ 등)에서 로드 시 상위 경로 보정
+    static BASE = window.__NEVERGRAD_LANG__ ? '../' : '';
+
     constructor() {
         this.currentLang = 'ko';
         this.texts = {};       // { day1: { scene_id: { name, text, choices } }, day2: {...} }
@@ -55,7 +58,7 @@ class I18nManager {
             const koFetches = slots.map(async (slot) => {
                 const filename = `day${day}${slot}.json`;
                 try {
-                    const res = await fetch(`assets/js/i18n/ko/${filename}`);
+                    const res = await fetch(`${I18nManager.BASE}assets/js/i18n/ko/${filename}`);
                     if (!res.ok) return;
                     const data = await res.json();
                     Object.assign(this.texts[key], data);
@@ -69,7 +72,7 @@ class I18nManager {
             const fetches = slots.map(async (slot) => {
                 const filename = `day${day}${slot}.json`;
                 try {
-                    const res = await fetch(`assets/js/i18n/${this.currentLang}/${filename}`);
+                    const res = await fetch(`${I18nManager.BASE}assets/js/i18n/${this.currentLang}/${filename}`);
                     if (!res.ok) return;
                     const data = await res.json();
                     Object.assign(this.texts[key], data);
@@ -80,7 +83,7 @@ class I18nManager {
             const fetches = slots.map(async (slot) => {
                 const filename = `day${day}${slot}.json`;
                 try {
-                    const res = await fetch(`assets/js/i18n/ko/${filename}`);
+                    const res = await fetch(`${I18nManager.BASE}assets/js/i18n/ko/${filename}`);
                     if (!res.ok) return;
                     const data = await res.json();
                     Object.assign(this.texts[key], data);
@@ -124,12 +127,19 @@ class I18nManager {
      * 텍스트 내 플레이스홀더 치환
      * {name} → 플레이어 이름
      */
-    resolve(text, playerName) {
+    resolve(text, playerName, extraVars) {
         if (!text) return "";
         const fallback = I18nManager.DEFAULT_PLAYER_NAME[this.currentLang] || "전학생";
-        return text
+        let result = text
             .replace(/\{name\}/g, playerName || fallback)
             .replace(/\{name\?\}/g, playerName || fallback);
+        // 추가 플레이스홀더 치환 ({14th_name}, {new_name} 등)
+        if (extraVars) {
+            for (const [key, val] of Object.entries(extraVars)) {
+                result = result.replace(new RegExp(`\\{${key}\\}`, 'g'), val);
+            }
+        }
+        return result;
     }
 
     static DEFAULT_PLAYER_NAME = {

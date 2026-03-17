@@ -580,10 +580,7 @@ body.cursor-slowed * {
     border-radius: 2px;
 }
 
-@keyframes rotate-phone {
-    0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(90deg); }
-}
+/* rotate-phone keyframes는 style.css에 정의됨 */
 
 .orientation-hijack.normal .orient-text {
     font-size: 0.9rem;

@@ -535,7 +535,10 @@ class GameEngine {
      */
     _resolveCharImage(key) {
         if (!key || key.includes('/')) return key; // 이미 경로면 그대로
-        const [charId, expression] = key.split('_');
+        const idx = key.indexOf('_');
+        if (idx === -1) return key;
+        const charId = key.substring(0, idx);
+        const expression = key.substring(idx + 1);
         return CONFIG.EXPRESSIONS[charId]?.[expression] || key;
     }
 

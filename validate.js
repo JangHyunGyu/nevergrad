@@ -42,6 +42,16 @@
  * 33. 게임 UI/UX 기능 완결성 (타이틀, 퀵메뉴, 대화, 선택지, 퍼즈, 백로그, 세이브/로드, 모바일)
  * 34. 메모리 누수 패턴 (addEventListener, setInterval, DOM, Audio, global)
  * 35. AI 프리토킹 시스템 (API 엔드포인트, 폴백, 에러 핸들링, 3모드 구현)
+ *
+ * ── 유저 엣지 케이스 ──
+ * 36. localStorage 안전성 (JSON.parse try-catch, 용량 초과, 비활성화 대응)
+ * 37. 이름 입력 보안 (maxlength, XSS via innerHTML, 빈 이름 처리)
+ * 38. innerHTML XSS 위험 검사 (유저 입력이 innerHTML에 주입되는 경로)
+ * 39. 오디오 autoplay 정책 대응 (AudioContext resume, 에러 핸들링)
+ * 40. 이미지 로딩 실패 대응 (onerror 핸들러 존재)
+ * 41. CSS z-index 스태킹 일관성 (오버레이 < 모달 < 최상위)
+ * 42. 다국어 HTML maxlength/placeholder 동기화
+ * 43. 중복 클릭 방지 (선택지/버튼 더블클릭 가드)
  */
 const fs = require('fs');
 const path = require('path');
@@ -1213,6 +1223,180 @@ if (fs.existsSync(modulesPath)) {
                 !m[1].startsWith('__'))
                 warnings.push(`[MEM] ${file}: window.${m[1]} global — may prevent GC`);
         }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 36. localStorage 안전성
+// ═══════════════════════════════════════════
+{
+    const smPath = path.join(ROOT, 'assets/js/modules/SaveManager.js');
+    if (fs.existsSync(smPath)) {
+        const sm = fs.readFileSync(smPath, 'utf8');
+        // JSON.parse가 try-catch 안에 있는지 확인
+        const parseCount = (sm.match(/JSON\.parse/g) || []).length;
+        const tryCount = (sm.match(/try\s*\{/g) || []).length;
+        if (parseCount > tryCount) {
+            errors.push(`[STORAGE] SaveManager.js: ${parseCount} JSON.parse but only ${tryCount} try blocks — crash on corrupted data`);
+        }
+        // localStorage.setItem에 대한 try-catch (용량 초과 대비)
+        const setItemCount = (sm.match(/localStorage\.setItem/g) || []).length;
+        if (setItemCount > 0 && !sm.includes('QuotaExceededError') && tryCount < setItemCount) {
+            warnings.push(`[STORAGE] SaveManager.js: ${setItemCount} setItem calls — no QuotaExceededError handling`);
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 37. 이름 입력 안전성
+// ═══════════════════════════════════════════
+{
+    // HTML에 maxlength가 있는지
+    if (koHtmlContent.includes('player-name-input') && !koHtmlContent.includes('maxlength')) {
+        errors.push(`[INPUT] player-name-input: no maxlength attribute — allows infinite input`);
+    }
+    // 빈 이름 제출 가드
+    if (geContent.includes('player-name-input') &&
+        !geContent.includes('.trim()') && !geContent.includes('length')) {
+        warnings.push(`[INPUT] player-name-input: no empty name validation`);
+    }
+    // 이름이 textContent로 삽입되는지 (innerHTML이면 XSS 위험)
+    if (geContent.includes('playerName') && geContent.includes('innerHTML')) {
+        // playerName이 innerHTML 근처에 쓰이는지 체크
+        const lines = geContent.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            if (lines[i].includes('innerHTML') && lines[i].includes('playerName')) {
+                errors.push(`[XSS] GameEngine.js:${i+1}: playerName injected via innerHTML`);
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 38. innerHTML XSS 위험 검사
+// ═══════════════════════════════════════════
+{
+    // i18n 텍스트가 innerHTML로 주입되는 경우 체크
+    // i18n 텍스트는 JSON에서 오므로 상대적으로 안전하지만, 유저 입력({name})이 포함됨
+    for (const [file, content] of Object.entries(allJsContent)) {
+        const lines = content.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            // innerHTML에 변수를 직접 삽입하는 패턴 (템플릿 리터럴)
+            if (line.includes('innerHTML') && line.includes('${') &&
+                (line.includes('playerName') || line.includes('state.') || line.includes('input'))) {
+                warnings.push(`[XSS] ${file}:${i+1}: dynamic content in innerHTML via template literal`);
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 39. 오디오 autoplay 정책 대응
+// ═══════════════════════════════════════════
+{
+    const amPath = path.join(ROOT, 'assets/js/modules/AudioManager.js');
+    if (fs.existsSync(amPath)) {
+        const am = fs.readFileSync(amPath, 'utf8');
+        // AudioContext resume 존재 확인
+        if (!am.includes('.resume()')) {
+            errors.push(`[AUDIO] AudioManager.js: no AudioContext.resume() — audio will not play on mobile`);
+        }
+        // 사용자 인터랙션에서 unlock 처리
+        if (!am.includes('click') && !am.includes('touchstart') && !am.includes('interaction')) {
+            warnings.push(`[AUDIO] AudioManager.js: no user interaction listener for audio unlock`);
+        }
+        // 오디오 로딩 에러 핸들링
+        if (am.includes('fetch(') && !am.includes('.catch') && !am.includes('try')) {
+            warnings.push(`[AUDIO] AudioManager.js: audio fetch without error handling`);
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 40. 이미지 로딩 실패 대응
+// ═══════════════════════════════════════════
+{
+    const srPath = path.join(ROOT, 'assets/js/modules/SceneRenderer.js');
+    if (fs.existsSync(srPath)) {
+        const sr = fs.readFileSync(srPath, 'utf8');
+        if (sr.includes('.src =') && !sr.includes('onerror') && !sr.includes('.catch')) {
+            warnings.push(`[IMG] SceneRenderer.js: image .src assignment without onerror handler — broken images shown`);
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 41. CSS z-index 스태킹 일관성
+// ═══════════════════════════════════════════
+{
+    const zIndexMap = {};
+    for (const cssFile of cssFiles) {
+        const cssPath2 = path.join(ROOT, cssFile);
+        if (!fs.existsSync(cssPath2)) continue;
+        const css = fs.readFileSync(cssPath2, 'utf8');
+        for (const m of css.matchAll(/([.#][\w-]+)\s*\{[^}]*z-index:\s*(\d+)/g)) {
+            const selector = m[1];
+            const zIndex = parseInt(m[2]);
+            zIndexMap[selector] = { zIndex, file: cssFile };
+        }
+    }
+    // 오버레이 계층 검사: overlay는 game-screen보다 높아야 함
+    const overlayZ = Object.entries(zIndexMap).filter(([sel]) =>
+        (sel.includes('overlay') || sel.includes('modal') || sel.includes('pause')) &&
+        !sel.includes('bg-overlay') // bg-overlay는 배경이므로 dialogue보다 낮은 게 정상
+    );
+    const baseZ = zIndexMap['.dialogue-box']?.zIndex || 10;
+    for (const [sel, { zIndex }] of overlayZ) {
+        if (zIndex <= baseZ) {
+            warnings.push(`[ZINDEX] ${sel} (z-index:${zIndex}) ≤ .dialogue-box (z-index:${baseZ}) — overlay hidden behind dialogue`);
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 42. 다국어 HTML input maxlength/placeholder 동기화
+// ═══════════════════════════════════════════
+{
+    const koInputs = [...koHtmlContent.matchAll(/<input[^>]+id="([^"]+)"[^>]*>/g)];
+    for (const koInput of koInputs) {
+        const inputId = koInput[1];
+        const koMaxLen = koInput[0].match(/maxlength="(\d+)"/)?.[1];
+
+        for (const lang of langs) {
+            const langHtmlPath = path.join(ROOT, lang, 'index.html');
+            if (!fs.existsSync(langHtmlPath)) continue;
+            const langHtml = fs.readFileSync(langHtmlPath, 'utf8');
+            const langInput = langHtml.match(new RegExp(`<input[^>]+id="${inputId}"[^>]*>`));
+            if (!langInput) {
+                errors.push(`[HTML_INPUT] ${lang}: input#${inputId} missing`);
+                continue;
+            }
+            const langMaxLen = langInput[0].match(/maxlength="(\d+)"/)?.[1];
+            if (koMaxLen && langMaxLen !== koMaxLen) {
+                errors.push(`[HTML_INPUT] ${lang}: input#${inputId} maxlength="${langMaxLen}" ≠ ko "${koMaxLen}"`);
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 43. 중복 클릭 방지 (선택지/버튼 더블클릭)
+// ═══════════════════════════════════════════
+{
+    // 선택지 버튼 클릭 후 패널 숨김이 즉시 일어나는지 (더블클릭 방지)
+    const csPath = path.join(ROOT, 'assets/js/modules/ChoiceSystem.js');
+    if (fs.existsSync(csPath)) {
+        const cs = fs.readFileSync(csPath, 'utf8');
+        // click 핸들러 내에서 패널을 숨기거나 disabled 처리하는지
+        if (cs.includes('addEventListener') && !cs.includes('hidden') && !cs.includes('disabled') && !cs.includes('pointer-events')) {
+            warnings.push(`[DBLCLICK] ChoiceSystem.js: choice buttons may not prevent double-click`);
+        }
+    }
+    // 타이틀 시작 버튼 더블클릭 방지
+    if (geContent.includes('btn-start') && !geContent.includes('disabled') &&
+        !geContent.match(/btn.start.*disabled|startClicked|isStarting/)) {
+        warnings.push(`[DBLCLICK] GameEngine.js: btn-start may not prevent double-click → duplicate game init`);
     }
 }
 

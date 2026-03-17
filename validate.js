@@ -26,6 +26,22 @@
  * 21. i18n 플레이스홀더 검증 ({name}, {xxx} 패턴)
  * 22. 다국어 choices 배열 길이 일치 (ko 기준)
  * 23. i18n 텍스트 내 잔존 한국어 검사 (비ko 언어)
+ *
+ * ── 플레이스루 시뮬레이션 ──
+ * 24. BFS 도달 가능성 + 고아 씬 검출
+ * 25. Dead-End (막다른 씬) 검출
+ * 26. 7개 엔딩 도달 + 플래그 기반 시뮬레이션
+ * 27. 무한 루프 검출
+ * 28. Day/Slot 전환 연속성
+ * 29. 다국어 전체 텍스트 커버리지 (6개 언어 × 도달 가능 씬)
+ * 30. 타이머 선택지 타임아웃 경로
+ * 31. 빈 선택지 패널 검출
+ * 32. 랜덤 플레이스루 100회 (엔딩 분포)
+ *
+ * ── 게임 UI / UX ──
+ * 33. 게임 UI/UX 기능 완결성 (타이틀, 퀵메뉴, 대화, 선택지, 퍼즈, 백로그, 세이브/로드, 모바일)
+ * 34. 메모리 누수 패턴 (addEventListener, setInterval, DOM, Audio, global)
+ * 35. AI 프리토킹 시스템 (API 엔드포인트, 폴백, 에러 핸들링, 3모드 구현)
  */
 const fs = require('fs');
 const path = require('path');
@@ -712,6 +728,494 @@ for (const lang of langs) {
     }
 }
 
+// ═══════════════════════════════════════════════════════════════════
+//
+//  ▼▼▼ 플레이스루 시뮬레이션 + 게임 UI + 메모리 누수 검증 ▼▼▼
+//
+// ═══════════════════════════════════════════════════════════════════
+
+const playInfo = [];
+
+// ── State Simulator (mirrors StateManager) ──
+class StateSim {
+    constructor() { this.reset(); }
+    reset() {
+        this.currentDay = 1; this.currentSlot = 'morning'; this.mode = 'romance';
+        this.flags = {}; this.stats = {};
+        for (const [id, init] of Object.entries(INITIAL_STATS)) this.stats[id] = { ...init };
+    }
+    hasFlag(f) { return !!this.flags[f]; }
+    setFlag(f) { this.flags[f] = true; }
+    setFlags(arr) { if (Array.isArray(arr)) arr.forEach(f => this.setFlag(f)); }
+    clearFlag(f) { delete this.flags[f]; }
+    changeStat(cid, stat, d) {
+        if (!this.stats[cid]) return;
+        this.stats[cid][stat] = Math.max(-100, Math.min(100, (this.stats[cid][stat]||0) + d));
+    }
+    getDisplayAffinity(cid) {
+        const s = this.stats[cid]; if (!s) return 0;
+        return this.mode === 'romance' ? Math.round(s.affinity*0.6 + s.danger*0.4) : s.affinity;
+    }
+    checkCondition(c) {
+        if (!c) return true;
+        return Array.isArray(c) ? c.every(f => this.hasFlag(f)) : this.hasFlag(c);
+    }
+    applyScene(scene) {
+        if (scene.setFlag) this.setFlag(scene.setFlag);
+        if (scene.setFlags) this.setFlags(scene.setFlags);
+        if (scene.clearFlags) scene.clearFlags.forEach(f => this.clearFlag(f));
+        if (scene.stats) {
+            for (const [cid, ch] of Object.entries(scene.stats))
+                for (const [st, v] of Object.entries(ch)) this.changeStat(cid, st, v);
+        }
+        if (scene.changeDay) this.currentDay = scene.changeDay;
+        if (scene.changeSlot) this.currentSlot = scene.changeSlot;
+        if (scene.triggerGenreShift) this.mode = 'thriller';
+    }
+}
+
+function resolveBranch(branches, state) {
+    for (const b of branches) {
+        if (b.condition && !state.checkCondition(b.condition)) continue;
+        if (b.excludeCondition && state.hasFlag(b.excludeCondition)) continue;
+        return b.next;
+    }
+    return null;
+}
+function resolveAffinityBranch(scene, state) {
+    const cid = scene.affinityChar; if (!cid) return null;
+    const aff = state.getDisplayAffinity(cid);
+    const sorted = [...(scene.affinityBranches||[])].sort((a,b) => b.minAffinity - a.minAffinity);
+    for (const b of sorted) { if (aff >= b.minAffinity) return b.next; }
+    return null;
+}
+
+// ═══════════════════════════════════════════
+// 24. BFS 도달 가능성 + 고아 씬
+// ═══════════════════════════════════════════
+const START_SCENE = 'day1_opening_1';
+const reachable = new Set();
+const bfsQ = [START_SCENE];
+while (bfsQ.length > 0) {
+    const sid = bfsQ.shift();
+    if (reachable.has(sid) || !allScenes[sid]) continue;
+    reachable.add(sid);
+    const sc = allScenes[sid].scene;
+    [sc.next, sc.fallback, sc.timeoutNext].forEach(n => { if (n && !reachable.has(n)) bfsQ.push(n); });
+    if (allScenes[sid+'_alt'] && !reachable.has(sid+'_alt')) bfsQ.push(sid+'_alt');
+    (sc.choices||[]).forEach(c => { if (c.next && !reachable.has(c.next)) bfsQ.push(c.next); });
+    (sc.branches||[]).forEach(b => { if (b.next && !reachable.has(b.next)) bfsQ.push(b.next); });
+    (sc.affinityBranches||[]).forEach(b => { if (b.next && !reachable.has(b.next)) bfsQ.push(b.next); });
+}
+const orphans = Object.keys(allScenes).filter(id => !reachable.has(id));
+orphans.forEach(id => errors.push(`[ORPHAN] "${id}" unreachable from ${START_SCENE}`));
+playInfo.push(`Reachable: ${reachable.size} / ${Object.keys(allScenes).length} (orphans: ${orphans.length})`);
+
+// ═══════════════════════════════════════════
+// 25. Dead-End 검출
+// ═══════════════════════════════════════════
+for (const sid of reachable) {
+    const sc = allScenes[sid].scene;
+    const hasExit = sc.next || sc.choices || sc.branches || sc.affinityBranches ||
+                    sc.endingTitle || sc.cageLoop || sc.type === 'free_talk' ||
+                    sid.includes('postcredit') || sid.includes('credit_end');
+    if (!hasExit) errors.push(`[DEAD_END] "${sid}" has no exit`);
+}
+
+// ═══════════════════════════════════════════
+// 26. 엔딩 도달 가능성 + 플레이스루 시뮬레이션
+// ═══════════════════════════════════════════
+const ENDINGS = [
+    { name: 'TRUE END', pattern: 'ending_true' },
+    { name: 'ESCAPE END', pattern: 'ending_escape' },
+    { name: 'RESIST END', pattern: 'ending_resist' },
+    { name: 'CAGE END', pattern: 'ending_cage' },
+    { name: 'FORGET END', pattern: 'ending_forget' },
+    { name: 'GHOST END', pattern: 'ending_ghost' },
+    { name: 'COMPLICIT END', pattern: 'ending_complicit' },
+];
+const foundEndings = [];
+for (const e of ENDINGS) {
+    const found = [...reachable].some(sid => {
+        const sc = allScenes[sid]?.scene;
+        return (sc?.endingTitle || sc?.cageLoop) && sid.includes(e.pattern);
+    });
+    if (found) foundEndings.push(e.name);
+    else errors.push(`[ENDING] "${e.name}" — not reachable`);
+}
+playInfo.push(`Endings: ${foundEndings.length}/${ENDINGS.length}`);
+
+// 엔딩별 시뮬레이션
+const PRESETS = [
+    { name: 'TRUE', flags: ['broke_through_eunsu','escape_with_yuna','has_evidence'], target: 'ending_true' },
+    { name: 'ESCAPE', flags: ['broke_through_eunsu','escape_with_yuna'], target: 'ending_escape' },
+    { name: 'RESIST', flags: ['chose_together'], target: 'ending_resist' },
+    { name: 'CAGE(E)', flags: ['stayed_with_eunsu'], target: 'ending_cage' },
+    { name: 'CAGE(S)', flags: ['stayed_with_sea'], target: 'ending_cage' },
+    { name: 'FORGET', flags: ['chose_forget'], target: 'ending_forget' },
+    { name: 'GHOST', flags: ['timer_expired'], target: 'ending_ghost' },
+    { name: 'COMPLICIT', flags: ['complicit_route','high_eunsu_affinity'], target: 'ending_complicit',
+      stats: { eunsu: { affinity: 70, danger: 60 } } },
+];
+
+const routingScenes = Object.keys(allScenes).filter(id =>
+    id.includes('day5_night') && allScenes[id].scene.branches &&
+    allScenes[id].scene.branches.some(b => b.next?.includes('ending'))
+);
+
+for (const p of PRESETS) {
+    const st = new StateSim();
+    st.currentDay = 5; st.currentSlot = 'night'; st.mode = 'thriller';
+    p.flags.forEach(f => st.setFlag(f));
+    if (p.stats) for (const [c, ch] of Object.entries(p.stats))
+        for (const [s, v] of Object.entries(ch)) st.stats[c][s] = v;
+
+    let reached = false;
+    for (const rid of routingScenes) {
+        let cur = rid; const vis = new Set(); let steps = 0;
+        while (cur && steps < 500 && !vis.has(cur)) {
+            vis.add(cur);
+            const entry = allScenes[cur]; if (!entry) break;
+            const sc = entry.scene; st.applyScene(sc);
+            if ((sc.endingTitle || sc.cageLoop) && cur.includes(p.target)) { reached = true; break; }
+            let nx = null;
+            if (sc.branches) nx = resolveBranch(sc.branches, st);
+            if (!nx && sc.affinityBranches) nx = resolveAffinityBranch(sc, st);
+            if (!nx && sc.next) nx = sc.next;
+            cur = nx; steps++;
+        }
+        if (reached) break;
+    }
+    if (!reached) errors.push(`[PLAYTHROUGH] ${p.name} — ending unreachable`);
+}
+
+// ═══════════════════════════════════════════
+// 27. 무한 루프 검출
+// ═══════════════════════════════════════════
+for (const sid of reachable) {
+    const sc = allScenes[sid].scene;
+    if (sc.next === sid && !sc.cageLoop) errors.push(`[LOOP] "${sid}" self-loop without cageLoop`);
+    if (sc.next && allScenes[sc.next]?.scene?.next === sid &&
+        !sc.choices && !allScenes[sc.next].scene.choices && !sc.cageLoop)
+        warnings.push(`[LOOP] 2-node cycle: "${sid}" ↔ "${sc.next}"`);
+}
+
+// ═══════════════════════════════════════════
+// 28. Day/Slot 전환 연속성
+// ═══════════════════════════════════════════
+{
+    const st = new StateSim();
+    let cur = START_SCENE; const vis = new Set(); let lastDay = 1; let steps = 0;
+    while (cur && steps < 3000 && !vis.has(cur)) {
+        vis.add(cur);
+        const entry = allScenes[cur]; if (!entry) break;
+        const sc = entry.scene; st.applyScene(sc);
+        if (sc.changeDay && sc.changeDay !== lastDay) {
+            if (sc.changeDay !== lastDay + 1)
+                warnings.push(`[DAY_SEQ] "${cur}": day jump ${lastDay}→${sc.changeDay}`);
+            lastDay = sc.changeDay;
+        }
+        if (sc.endingTitle || sc.cageLoop) break;
+        let nx = null;
+        if (sc.branches) nx = resolveBranch(sc.branches, st);
+        if (!nx && sc.affinityBranches) nx = resolveAffinityBranch(sc, st);
+        if (!nx && sc.choices) {
+            for (const c of sc.choices) {
+                if (c.condition && !st.checkCondition(c.condition)) continue;
+                if (c.excludeCondition && st.hasFlag(c.excludeCondition)) continue;
+                if (c.stats) for (const [cid,ch] of Object.entries(c.stats))
+                    for (const [s,v] of Object.entries(ch)) st.changeStat(cid,s,v);
+                if (c.setFlags) st.setFlags(c.setFlags);
+                nx = c.next; break;
+            }
+        }
+        if (!nx && sc.next) nx = sc.next;
+        cur = nx; steps++;
+    }
+    if (steps >= 3000) errors.push(`[MAIN_PATH] exceeded 3000 steps — infinite loop?`);
+    playInfo.push(`Main path: ${vis.size} scenes, ${steps} steps`);
+}
+
+// ═══════════════════════════════════════════
+// 29. 다국어 전체 텍스트 커버리지
+// ═══════════════════════════════════════════
+const allLangs = ['ko', ...langs];
+const langAllData = {};
+for (const lang of allLangs) {
+    langAllData[lang] = {};
+    const dir = path.join(I18N_DIR, lang);
+    if (!fs.existsSync(dir)) continue;
+    for (const file of fs.readdirSync(dir).filter(f => f.endsWith('.json'))) {
+        try { Object.assign(langAllData[lang], JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'))); }
+        catch(e) {}
+    }
+}
+const textScenes = [...reachable].filter(sid => {
+    const sc = allScenes[sid].scene;
+    return !sc.branches && !sc.affinityBranches && !sc.endingTitle && !sc.cageLoop;
+});
+for (const lang of allLangs) {
+    let missing = 0;
+    for (const sid of textScenes) {
+        const e = langAllData[lang][sid];
+        if (!e || (!e.text && !e.choices)) missing++;
+    }
+    if (missing > 0) warnings.push(`[LANG] ${lang}: ${missing} reachable scenes missing text (${((textScenes.length-missing)/textScenes.length*100).toFixed(1)}% coverage)`);
+}
+
+// ═══════════════════════════════════════════
+// 30. 타이머 선택지 타임아웃 경로
+// ═══════════════════════════════════════════
+for (const sid of reachable) {
+    const sc = allScenes[sid].scene;
+    if (!sc.timedChoice) continue;
+    if (!sc.timeoutNext && !sc.next)
+        errors.push(`[TIMEOUT] "${sid}" timed choice with no timeoutNext/next`);
+    if (sc.timeoutNext && !allScenes[sc.timeoutNext])
+        errors.push(`[TIMEOUT] "${sid}" timeoutNext "${sc.timeoutNext}" not found`);
+}
+
+// ═══════════════════════════════════════════
+// 31. 빈 선택지 패널 검출
+// ═══════════════════════════════════════════
+for (const sid of reachable) {
+    const sc = allScenes[sid].scene;
+    if (!sc.choices) continue;
+    if (sc.choices.every(c => c.condition || c.excludeCondition) && !sc.timedChoice)
+        warnings.push(`[EMPTY_CHOICES] "${sid}" all choices conditional — may show empty panel`);
+}
+
+// ═══════════════════════════════════════════
+// 32. 랜덤 플레이스루 100회 (엔딩 분포)
+// ═══════════════════════════════════════════
+{
+    const endingDist = {};
+    for (let i = 0; i < 100; i++) {
+        const st = new StateSim();
+        let cur = START_SCENE; const vis = new Set(); let steps = 0;
+        while (cur && steps < 3000 && !vis.has(cur)) {
+            vis.add(cur);
+            const entry = allScenes[cur]; if (!entry) break;
+            const sc = entry.scene; st.applyScene(sc);
+            if (sc.endingTitle || sc.cageLoop) {
+                const tag = sc.endingTitle || 'CAGE LOOP';
+                endingDist[tag] = (endingDist[tag]||0) + 1; break;
+            }
+            let nx = null;
+            if (sc.branches) nx = resolveBranch(sc.branches, st);
+            if (!nx && sc.affinityBranches) nx = resolveAffinityBranch(sc, st);
+            if (!nx && sc.choices) {
+                const avail = sc.choices.filter(c => {
+                    if (c.condition && !st.checkCondition(c.condition)) return false;
+                    if (c.excludeCondition && st.hasFlag(c.excludeCondition)) return false;
+                    return true;
+                });
+                if (avail.length) {
+                    const c = avail[Math.floor(Math.random()*avail.length)];
+                    if (c.stats) for (const [cid,ch] of Object.entries(c.stats))
+                        for (const [s,v] of Object.entries(ch)) st.changeStat(cid,s,v);
+                    if (c.setFlags) st.setFlags(c.setFlags);
+                    nx = c.next;
+                }
+            }
+            if (!nx && sc.next) nx = sc.next;
+            cur = nx; steps++;
+        }
+    }
+    const dist = Object.entries(endingDist).sort((a,b)=>b[1]-a[1]).map(([e,c])=>`${e}:${c}`).join(' ');
+    playInfo.push(`Random 100 runs: ${dist || 'none reached'}`);
+}
+
+// ═══════════════════════════════════════════
+// 33. 게임 UI / UX 기능 완결성 검사
+// ═══════════════════════════════════════════
+const koHtmlContent = fs.existsSync(path.join(ROOT, 'index.html'))
+    ? fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8') : '';
+const geContent = fs.existsSync(path.join(ROOT, 'assets/js/modules/GameEngine.js'))
+    ? fs.readFileSync(path.join(ROOT, 'assets/js/modules/GameEngine.js'), 'utf8') : '';
+const allJsContent = {};
+if (fs.existsSync(path.join(ROOT, 'assets/js/modules'))) {
+    for (const f of fs.readdirSync(path.join(ROOT, 'assets/js/modules')).filter(f => f.endsWith('.js'))) {
+        allJsContent[f] = fs.readFileSync(path.join(ROOT, 'assets/js/modules', f), 'utf8');
+    }
+}
+const appContent = fs.existsSync(path.join(ROOT, 'assets/js/app.js'))
+    ? fs.readFileSync(path.join(ROOT, 'assets/js/app.js'), 'utf8') : '';
+const allJsCombined = Object.values(allJsContent).join('\n') + '\n' + appContent;
+
+// ── 타이틀 화면 ──
+const titleButtons = ['btn-new-game','btn-start','btn-continue','btn-gallery'];
+for (const btn of titleButtons) {
+    if (koHtmlContent.includes(`id="${btn}"`) && !allJsCombined.includes(btn))
+        warnings.push(`[UI_TITLE] ${btn}: button has no event listener`);
+}
+// 이름 입력
+if (koHtmlContent.includes('id="player-name-input"') && !allJsCombined.includes('player-name-input'))
+    errors.push(`[UI_TITLE] player-name-input: no JS reference`);
+
+// ── 인게임 퀵 메뉴 ──
+const qmButtons = ['qm-auto','qm-skip','qm-log','qm-save','qm-load','qm-menu'];
+for (const btn of qmButtons) {
+    if (koHtmlContent.includes(`id="${btn}"`) && !allJsCombined.includes(btn))
+        errors.push(`[UI_QM] ${btn}: quick menu button has no event listener`);
+}
+
+// ── 대화 클릭 진행 ──
+if (koHtmlContent.includes('id="dialogue-box"') && !allJsCombined.includes('dialogue-box'))
+    errors.push(`[UI_DIAL] dialogue-box: no click handler for advancing text`);
+
+// ── 선택지 패널 ──
+if (koHtmlContent.includes('id="choice-panel"') && !allJsCombined.includes('choice-panel'))
+    errors.push(`[UI_CHOICE] choice-panel: no JS reference`);
+
+// ── 퍼즈 메뉴 ──
+const pauseButtons = ['btn-save','btn-load','btn-settings','btn-title','btn-resume'];
+for (const btn of pauseButtons) {
+    if (koHtmlContent.includes(`id="${btn}"`) && !allJsCombined.includes(btn))
+        warnings.push(`[UI_PAUSE] ${btn}: pause menu button has no event listener`);
+}
+
+// ── 백로그 ──
+if (koHtmlContent.includes('id="backlog-panel"') && !allJsCombined.includes('backlog-panel'))
+    warnings.push(`[UI_LOG] backlog-panel: no JS reference`);
+if (koHtmlContent.includes('id="backlog-close"') && !allJsCombined.includes('backlog-close'))
+    warnings.push(`[UI_LOG] backlog-close: no event listener`);
+
+// ── 세이브 슬롯 UI ──
+if (koHtmlContent.includes('id="save-slot-overlay"')) {
+    if (!allJsCombined.includes('save-slot-overlay'))
+        warnings.push(`[UI_SAVE] save-slot-overlay: no JS reference`);
+}
+if (koHtmlContent.includes('id="save-slot-list"') && !allJsCombined.includes('save-slot-list'))
+    warnings.push(`[UI_SAVE] save-slot-list: no JS reference`);
+
+// ── 모바일 회전 프롬프트 ──
+if (koHtmlContent.includes('id="rotate-prompt"') && !allJsCombined.includes('rotate-prompt'))
+    warnings.push(`[UI_MOBILE] rotate-prompt: no JS reference`);
+
+// ── 배경/캐릭터 레이어 ──
+const renderElements = ['bg-layer','bg-overlay','char-left','char-center','char-right','glitch-overlay'];
+for (const el of renderElements) {
+    if (koHtmlContent.includes(`id="${el}"`) && !allJsCombined.includes(el))
+        errors.push(`[UI_RENDER] ${el}: render element has no JS reference`);
+}
+
+// ── 스탯 표시 ──
+if (koHtmlContent.includes('id="stat-display"') && !allJsCombined.includes('stat-display'))
+    warnings.push(`[UI_STAT] stat-display: no JS reference`);
+if (koHtmlContent.includes('id="day-display"') && !allJsCombined.includes('day-display'))
+    warnings.push(`[UI_STAT] day-display: no JS reference`);
+
+// ── 모든 HTML id에 대해 JS 참조 존재 확인 ──
+const htmlIds = [...koHtmlContent.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
+const unreferencedIds = htmlIds.filter(id => !allJsCombined.includes(id));
+if (unreferencedIds.length > 0) {
+    warnings.push(`[UI_ORPHAN_ID] ${unreferencedIds.length} HTML ids with no JS reference: ${unreferencedIds.slice(0,5).join(', ')}${unreferencedIds.length > 5 ? '...' : ''}`);
+}
+
+// ═══════════════════════════════════════════
+// 35. AI 프리토킹 시스템 검증
+// ═══════════════════════════════════════════
+const ftsPath = path.join(ROOT, 'assets/js/modules/FreeTalkSystem.js');
+if (fs.existsSync(ftsPath)) {
+    const ftsContent = fs.readFileSync(ftsPath, 'utf8');
+
+    // API 엔드포인트가 config에 정의되어 있는지
+    if (!CONFIG.API_ENDPOINT) {
+        errors.push(`[FREETALK] CONFIG.API_ENDPOINT not defined`);
+    }
+    if (!CONFIG.APP_TYPE) {
+        errors.push(`[FREETALK] CONFIG.APP_TYPE not defined`);
+    }
+
+    // 폴백 응답 존재 여부 (네트워크 오류 시 하드코딩 텍스트)
+    if (!ftsContent.includes('FALLBACK_RESPONSES') && !ftsContent.includes('fallback')) {
+        errors.push(`[FREETALK] No FALLBACK_RESPONSES — network error will crash`);
+    }
+
+    // API 오류 핸들링 (try-catch)
+    const apiCalls = (ftsContent.match(/fetch\(/g) || []).length;
+    const tryCatches = (ftsContent.match(/try\s*\{/g) || []).length;
+    if (apiCalls > 0 && tryCatches === 0) {
+        errors.push(`[FREETALK] ${apiCalls} fetch calls but no try-catch error handling`);
+    }
+
+    // 3가지 모드 구현 확인 (interrogation, messenger, nightmare)
+    const modes = ['interrogation', 'messenger', 'nightmare'];
+    for (const mode of modes) {
+        if (!ftsContent.includes(mode)) {
+            warnings.push(`[FREETALK] mode "${mode}" not found in FreeTalkSystem.js`);
+        }
+    }
+
+    // GameEngine에서 _startFreeTalk가 실제 FreeTalkSystem 호출하는지
+    if (geContent.includes('_startFreeTalk') && !geContent.includes('freeTalk.')) {
+        warnings.push(`[FREETALK] _startFreeTalk exists but does not call freeTalk system`);
+    }
+
+    // 프리토킹 씬이 시나리오에 있는지
+    const ftScenes = Object.values(allScenes).filter(({scene}) => scene.type === 'free_talk');
+    playInfo.push(`FreeTalk scenes: ${ftScenes.length}`);
+    if (ftScenes.length === 0) {
+        warnings.push(`[FREETALK] No scenes with type="free_talk" in scenarios`);
+    }
+
+    // 입력 UI 요소 존재 확인
+    if (ftsContent.includes('freetalk-input') && !koHtmlContent.includes('freetalk-input')) {
+        // 동적 생성이면 OK — CSS에 스타일이 있는지만 체크
+        const allCss = cssFiles.map(f => {
+            const p = path.join(ROOT, f);
+            return fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : '';
+        }).join('\n');
+        if (!allCss.includes('freetalk-input')) {
+            warnings.push(`[FREETALK] freetalk-input class used but no CSS style defined`);
+        }
+    }
+
+    // 타임아웃/레이트 리밋 처리
+    if (ftsContent.includes('fetch(') && !ftsContent.includes('timeout') && !ftsContent.includes('AbortController')) {
+        warnings.push(`[FREETALK] API fetch has no timeout — may hang indefinitely`);
+    }
+} else {
+    errors.push(`[FREETALK] FreeTalkSystem.js not found`);
+}
+
+// ═══════════════════════════════════════════
+// 34. 메모리 누수 패턴 검사
+// ═══════════════════════════════════════════
+const modulesPath = path.join(ROOT, 'assets/js/modules');
+if (fs.existsSync(modulesPath)) {
+    for (const file of fs.readdirSync(modulesPath).filter(f => f.endsWith('.js'))) {
+        const content = fs.readFileSync(path.join(modulesPath, file), 'utf8');
+
+        const addEL = (content.match(/addEventListener\(/g)||[]).length;
+        const rmEL = (content.match(/removeEventListener\(/g)||[]).length;
+        if (addEL > 3 && rmEL === 0)
+            warnings.push(`[MEM] ${file}: ${addEL} addEventListener, 0 removeEventListener`);
+
+        const setI = (content.match(/setInterval\(/g)||[]).length;
+        const clearI = (content.match(/clearInterval\(/g)||[]).length;
+        if (setI > 0 && clearI === 0)
+            warnings.push(`[MEM] ${file}: ${setI} setInterval, 0 clearInterval`);
+
+        const setT = (content.match(/setTimeout\(/g)||[]).length;
+        const clearT = (content.match(/clearTimeout\(/g)||[]).length;
+        if (setT > 5 && clearT === 0)
+            warnings.push(`[MEM] ${file}: ${setT} setTimeout, 0 clearTimeout`);
+
+        const createEl = (content.match(/createElement\(/g)||[]).length;
+        const removeEl = (content.match(/\.remove\(\)|\.removeChild\(|innerHTML\s*=\s*['"]/g)||[]).length;
+        if (createEl > 5 && removeEl === 0)
+            warnings.push(`[MEM] ${file}: ${createEl} createElement, no DOM cleanup`);
+
+        for (const m of content.matchAll(/\bwindow\.(\w+)\s*=/g)) {
+            if (!['__game','__NEVERGRAD_LANG__','__NEVERGRAD_BASE__'].includes(`__${m[1]}`) &&
+                !m[1].startsWith('__'))
+                warnings.push(`[MEM] ${file}: window.${m[1]} global — may prevent GC`);
+        }
+    }
+}
+
 // ═══════════════════════════════════════════
 // 결과 출력
 // ═══════════════════════════════════════════
@@ -722,6 +1226,10 @@ console.log(`Flags: ${flagsSet.size} set, ${flagsChecked.size} checked`);
 console.log(`BGM: ${bgmUsed.size} referenced`);
 console.log(`BG keys: ${Object.keys(CONFIG.BACKGROUNDS).length}`);
 console.log(`Expression keys: ${Object.values(CONFIG.EXPRESSIONS).reduce((s, e) => s + Object.keys(e).length, 0)}`);
+if (playInfo.length > 0) {
+    console.log();
+    playInfo.forEach(i => console.log('  ' + i));
+}
 console.log();
 
 if (errors.length === 0 && warnings.length === 0) {

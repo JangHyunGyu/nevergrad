@@ -1,10 +1,10 @@
 # Nevergrad 프로젝트 규칙
 
-## 코드 수정 후 필수 작업
-- JS/HTML/CSS 코드를 수정한 후에는 반드시 `node validate.js`를 실행하여 검증할 것
+## 코드 수정 후 필수 작업 (매번 반드시 실행)
+- **어떤 파일이든 수정이 발생하면** 반드시 `node validate.js`를 실행하여 검증할 것
 - 에러가 0건이 될 때까지 수정을 반복할 것
-- `node scripts/i18n-check.js`로 다국어 동기화도 확인할 것
-- index.html(KO) 수정 시 en/ja/es/fr/de/index.html에도 동일하게 반영할 것
+- validate.js는 35개 검증 항목을 포함 (정적 분석 + 플레이스루 시뮬 + UI + 메모리 + AI 프리토킹)
+- warning은 참고사항, error는 반드시 수정
 
 ## 프로젝트 구조
 - `assets/js/scenario/` — 시나리오 로직 (분기, 배경, 스탯만, 텍스트 없음)
@@ -45,9 +45,10 @@
 
 ### 동기화 체크리스트
 - 시나리오 JS 수정 → i18n 6개 언어 확인 → SCENARIO.md 반영
-- i18n 키 추가/삭제 → 6개 언어 모두 동기화 → `node scripts/i18n-check.js` 확인
-- 캐릭터/배경 이미지 추가/변경 → config.js 업데이트 → `node validate.js` 확인
+- i18n 키 추가/삭제 → 6개 언어 모두 동기화
+- 캐릭터/배경 이미지 추가/변경 → config.js 업데이트
 - HTML 구조 변경 → 6개 언어 HTML 모두 동기화
+- **위 모든 작업 후 `node validate.js` 실행하여 에러 0건 확인**
 
 ## 기술 환경
 - 웹 브라우저 기반 게임 — localStorage, URL, HTML/CSS/JS만 사용

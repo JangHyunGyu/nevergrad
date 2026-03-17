@@ -22,7 +22,9 @@ class SceneRenderer {
     setBackground(src) {
         if (!this.bgLayer) return;
 
-        const newBg = `url('${src}')`;
+        // CSS 변수(--bg-next)는 style.css 기준으로 URL이 해석되므로 절대 경로 사용
+        const absoluteSrc = new URL(src, document.baseURI).href;
+        const newBg = `url('${absoluteSrc}')`;
         const currentBg = this.bgLayer.style.backgroundImage;
 
         // 첫 배경이거나 같은 배경이면 즉시 적용

@@ -838,8 +838,8 @@ class GameEngine {
         this._stopSkip();
 
         // 메타 공포: 탭 제목 변경
-        if (this.meta) {
-            this.meta.deactivate();
+        if (this.metaHorror) {
+            this.metaHorror.deactivate();
             document.title = this._getCageTabTitle();
         }
 
@@ -979,8 +979,8 @@ class GameEngine {
         if (qm) qm.classList.remove('cage-hidden');
 
         // 탭 제목 복원
-        if (this.meta) {
-            document.title = this.meta.originalTitle;
+        if (this.metaHorror) {
+            document.title = this.metaHorror.originalTitle;
         }
 
         // 글리치 연출 후 타이틀로

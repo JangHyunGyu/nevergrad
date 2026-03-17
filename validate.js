@@ -52,6 +52,11 @@
  * 41. CSS z-index 스태킹 일관성 (오버레이 < 모달 < 최상위)
  * 42. 다국어 HTML maxlength/placeholder 동기화
  * 43. 중복 클릭 방지 (선택지/버튼 더블클릭 가드)
+ * 44. JS 모듈 간 메서드 호출 정합성 (호출되는 메서드가 실제 존재하는지)
+ * 45. getElementById 결과 null 가드 검사
+ * 46. 브라우저 API 피쳐 디텍션 (vibrate, Battery, orientation 등)
+ * 47. 세이브 역직렬화 스키마 안전성
+ * 48. async/await 초기화 순서 검증
  */
 const fs = require('fs');
 const path = require('path');
@@ -1397,6 +1402,179 @@ if (fs.existsSync(modulesPath)) {
     if (geContent.includes('btn-start') && !geContent.includes('disabled') &&
         !geContent.match(/btn.start.*disabled|startClicked|isStarting/)) {
         warnings.push(`[DBLCLICK] GameEngine.js: btn-start may not prevent double-click → duplicate game init`);
+    }
+}
+
+// ═══════════════════════════════════════════
+// 44. JS 모듈 간 메서드 호출 정합성
+// ═══════════════════════════════════════════
+{
+    // 각 모듈 파일에서 클래스 메서드 목록 추출
+    const classMethods = {}; // { ClassName: Set(['method1','method2',...]) }
+    for (const [file, content] of Object.entries(allJsContent)) {
+        const className = file.replace('.js', '');
+        classMethods[className] = new Set();
+        // 메서드 패턴: methodName( 또는 async methodName(
+        for (const m of content.matchAll(/^\s+(?:async\s+)?(\w+)\s*\(/gm)) {
+            if (!['if', 'for', 'while', 'switch', 'catch', 'constructor', 'return', 'new', 'function'].includes(m[1])) {
+                classMethods[className].add(m[1]);
+            }
+        }
+    }
+
+    // this.engine.X.method() 패턴에서 method가 X 클래스에 존재하는지
+    const engineSubsystems = {
+        'glitch': 'GlitchSystem',
+        'glitchAdv': 'GlitchSystemAdvanced',
+        'dialogue': 'DialogueSystem',
+        'choice': 'ChoiceSystem',
+        'choiceAdv': 'ChoiceSystemAdvanced',
+        'audio': 'AudioManager',
+        'save': 'SaveManager',
+        'i18n': 'I18nManager',
+        'freeTalk': 'FreeTalkSystem',
+        'deviceGimmick': 'DeviceGimmickSystem',
+        'metaHorror': 'MetaHorrorSystem',
+        'renderer': 'SceneRenderer',
+        'scene': 'SceneRenderer',
+    };
+
+    for (const [file, content] of Object.entries(allJsContent)) {
+        for (const m of content.matchAll(/this\.engine\.(\w+)\.(\w+)\s*\(/g)) {
+            const subsys = m[1];
+            const method = m[2];
+            const targetClass = engineSubsystems[subsys];
+            if (targetClass && classMethods[targetClass] && !classMethods[targetClass].has(method)) {
+                const lineNum = content.substring(0, m.index).split('\n').length;
+                errors.push(`[METHOD] ${file}:${lineNum}: this.engine.${subsys}.${method}() — "${method}" not found in ${targetClass}`);
+            }
+        }
+        // this.glitch.method(), this.audio.method() 등 (GameEngine 내부)
+        if (file === 'GameEngine.js') {
+            for (const m of content.matchAll(/this\.(glitch|audio|dialogue|choice|save|i18n|renderer|metaHorror|deviceGimmick)\.(\w+)\s*\(/g)) {
+                const subsys = m[1];
+                const method = m[2];
+                const targetClass = engineSubsystems[subsys];
+                if (targetClass && classMethods[targetClass] && !classMethods[targetClass].has(method)) {
+                    const lineNum = content.substring(0, m.index).split('\n').length;
+                    warnings.push(`[METHOD] GameEngine.js:${lineNum}: this.${subsys}.${method}() — "${method}" not found in ${targetClass}`);
+                }
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 45. getElementById 결과 null 가드 검사
+// ═══════════════════════════════════════════
+{
+    for (const [file, content] of Object.entries(allJsContent)) {
+        const lines = content.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            // getElementById 결과를 바로 .xxx 체이닝하는 패턴 (null 크래시)
+            const match = line.match(/getElementById\(\s*['"]([^'"]+)['"]\s*\)\s*\./);
+            if (match) {
+                // ?. 사용 여부 확인
+                if (!line.includes('?.') && !line.includes('getElementById') && false) {
+                    // skip — 이 패턴은 너무 많아서 optional chaining 미사용만 체크
+                }
+                // 직접 .addEventListener, .style, .textContent 등 호출하는데 ?. 없는 경우
+                const dangerPattern = line.match(/getElementById\([^)]+\)\s*\.(?![\s\S]*\?\.)(\w+)/);
+                if (dangerPattern && !lines.slice(Math.max(0,i-2), i).some(l => l.includes('if') && l.includes(match[1]))) {
+                    // 앞 2줄에 if guard가 없으면 경고
+                    warnings.push(`[NULL_EL] ${file}:${i+1}: getElementById("${match[1]}").${dangerPattern[1]} without null check`);
+                }
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 46. 브라우저 API 피쳐 디텍션
+// ═══════════════════════════════════════════
+{
+    const browserAPIs = [
+        { api: 'navigator.vibrate', detection: 'vibrate', name: 'Vibration API' },
+        { api: 'navigator.getBattery', detection: 'getBattery', name: 'Battery API' },
+        { api: 'screen.orientation', detection: 'orientation', name: 'Screen Orientation API' },
+        { api: 'Notification.requestPermission', detection: 'Notification', name: 'Notification API' },
+    ];
+    for (const [file, content] of Object.entries(allJsContent)) {
+        for (const { api, detection, name } of browserAPIs) {
+            // API를 사용하지만 피쳐 디텍션이 없는 경우
+            const apiParts = api.split('.');
+            const usagePattern = new RegExp(apiParts[apiParts.length - 1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*\\(', 'g');
+            const uses = (content.match(usagePattern) || []).length;
+            if (uses > 0) {
+                const hasDetection = content.includes(`'${detection}' in`) ||
+                    content.includes(`"${detection}" in`) ||
+                    content.includes(`${detection}Supported`) ||
+                    content.includes(`typeof ${apiParts[0]}`) ||
+                    content.includes(`window.${apiParts[0]}`);
+                if (!hasDetection) {
+                    warnings.push(`[FEATURE] ${file}: uses ${name} (${api}) without feature detection`);
+                }
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 47. 세이브 역직렬화 스키마 안전성
+// ═══════════════════════════════════════════
+{
+    const smPath2 = path.join(ROOT, 'assets/js/modules/SaveManager.js');
+    const stPath = path.join(ROOT, 'assets/js/modules/StateManager.js');
+    if (fs.existsSync(smPath2) && fs.existsSync(stPath)) {
+        const stContent = fs.readFileSync(stPath, 'utf8');
+        // deserialize에서 필수 필드에 기본값이 있는지
+        const deserializeMatch = stContent.match(/deserialize\s*\([^)]*\)\s*\{([\s\S]*?)\n\s*\}/);
+        if (deserializeMatch) {
+            const body = deserializeMatch[1];
+            const requiredFields = ['currentDay', 'currentSlot', 'currentScene', 'stats', 'flags'];
+            for (const field of requiredFields) {
+                if (!body.includes(field)) {
+                    errors.push(`[SAVE] StateManager.deserialize: missing "${field}" — crash on old save format`);
+                } else if (!body.includes(`|| `) && !body.includes(`?? `)) {
+                    // 기본값 없이 직접 할당하면 위험
+                }
+            }
+            // stats가 빈 객체일 때 changeStat 크래시 방지
+            if (!body.includes('stats') || !stContent.includes('if (!this.stats[charId])')) {
+                // changeStat에 가드가 있는지 확인
+                if (stContent.includes('changeStat') && !stContent.match(/if\s*\(!this\.stats\[/)) {
+                    warnings.push(`[SAVE] StateManager.changeStat: no guard for missing charId — crash if save has partial stats`);
+                }
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 48. async/await 초기화 순서 검증
+// ═══════════════════════════════════════════
+{
+    if (appContent) {
+        // app.js에서 game.init()가 await되는지
+        if (appContent.includes('game.init()') && !appContent.includes('await game.init()')) {
+            errors.push(`[ASYNC] app.js: game.init() not awaited — i18n may not be loaded when game starts`);
+        }
+        // deviceGimmick.init()가 await되는지
+        if (appContent.includes('.init()') && appContent.includes('DeviceGimmickSystem')) {
+            const initCalls = appContent.match(/await\s+\w+\.\w+\.init\(\)/g) || [];
+            if (initCalls.length === 0 && appContent.includes('.init()')) {
+                // init이 있는데 await가 없으면
+                if (!appContent.includes('await game.deviceGimmick.init()') &&
+                    !appContent.includes('await game.device.init()')) {
+                    warnings.push(`[ASYNC] app.js: DeviceGimmickSystem.init() may not be awaited`);
+                }
+            }
+        }
+        // DOMContentLoaded 안에서 실행되는지
+        if (!appContent.includes('DOMContentLoaded')) {
+            errors.push(`[ASYNC] app.js: no DOMContentLoaded listener — DOM elements may not exist`);
+        }
     }
 }
 

@@ -235,13 +235,17 @@ class GameEngine {
         // character/characters가 명시된 경우만 변경, 없으면 이전 상태 유지
         // character: null 로 명시하면 캐릭터 제거
         if ('character' in scene || 'characters' in scene) {
-            this.renderer.clearCharacters();
-            if (scene.character) {
-                this.renderer.setCharacter('center', this._resolveCharImage(scene.character));
-            }
-            if (scene.characters) {
-                for (const [pos, key] of Object.entries(scene.characters)) {
-                    if (key) this.renderer.setCharacter(pos, this._resolveCharImage(key));
+            if (scene.character === null && !scene.characters) {
+                // 명시적 null — 캐릭터 퇴장
+                this.renderer.clearCharacters();
+            } else {
+                if (scene.character) {
+                    this.renderer.setCharacter('center', this._resolveCharImage(scene.character));
+                }
+                if (scene.characters) {
+                    for (const [pos, key] of Object.entries(scene.characters)) {
+                        if (key) this.renderer.setCharacter(pos, this._resolveCharImage(key));
+                    }
                 }
             }
         }

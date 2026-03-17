@@ -17,6 +17,15 @@
  * 12. changeDay/changeSlot 일관성
  * 13. 다국어 빈 text 덮어쓰기 검사
  * 14. JSON 유효성
+ * 15. 다국어 HTML 구조 동기화 (스크립트/링크 태그, DOM ID)
+ * 16. JS 모듈 내 하드코딩 리소스 경로 검증
+ * 17. JS 엔진 프로퍼티 참조 일관성 (app.js ↔ modules)
+ * 18. HTML DOM ID ↔ JS getElementById 참조 일치
+ * 19. CSS @keyframes 중복 정의 검사
+ * 20. JS에서 사용하는 CSS 클래스 존재 여부
+ * 21. i18n 플레이스홀더 검증 ({name}, {xxx} 패턴)
+ * 22. 다국어 choices 배열 길이 일치 (ko 기준)
+ * 23. i18n 텍스트 내 잔존 한국어 검사 (비ko 언어)
  */
 const fs = require('fs');
 const path = require('path');
@@ -388,6 +397,317 @@ for (const cssFile of cssFiles) {
         const full = path.normalize(path.join(path.dirname(cssPath), imgRef));
         if (!fs.existsSync(full)) {
             errors.push(`[CSS_IMG] ${cssFile}: url("${imgRef}") → file not found`);
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 15. 다국어 HTML 구조 동기화
+// ═══════════════════════════════════════════
+const koHtmlPath = path.join(ROOT, 'index.html');
+if (fs.existsSync(koHtmlPath)) {
+    const koHtml = fs.readFileSync(koHtmlPath, 'utf8');
+    // ko HTML에서 스크립트/CSS 참조 추출 (파일명만)
+    const koScripts = [...koHtml.matchAll(/src="([^"]+\.js)"/g)].map(m => path.basename(m[1]));
+    const koStyles = [...koHtml.matchAll(/href="([^"]+\.css)"/g)].map(m => path.basename(m[1]));
+    // ko HTML에서 DOM ID 추출
+    const koIds = [...koHtml.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
+
+    for (const lang of langs) {
+        const langHtml = path.join(ROOT, lang, 'index.html');
+        if (!fs.existsSync(langHtml)) {
+            errors.push(`[HTML_SYNC] ${lang}/index.html not found`);
+            continue;
+        }
+        const html = fs.readFileSync(langHtml, 'utf8');
+        const langScripts = [...html.matchAll(/src="([^"]+\.js)"/g)].map(m => path.basename(m[1]));
+        const langStyles = [...html.matchAll(/href="([^"]+\.css)"/g)].map(m => path.basename(m[1]));
+        const langIds = [...html.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
+
+        // 스크립트 파일 비교
+        for (const s of koScripts) {
+            if (!langScripts.includes(s)) {
+                errors.push(`[HTML_SYNC] ${lang}/index.html: missing script "${s}" (exists in ko)`);
+            }
+        }
+        for (const s of langScripts) {
+            if (!koScripts.includes(s)) {
+                warnings.push(`[HTML_SYNC] ${lang}/index.html: extra script "${s}" (not in ko)`);
+            }
+        }
+        // CSS 파일 비교
+        for (const s of koStyles) {
+            if (!langStyles.includes(s)) {
+                errors.push(`[HTML_SYNC] ${lang}/index.html: missing CSS "${s}" (exists in ko)`);
+            }
+        }
+        // DOM ID 비교
+        for (const id of koIds) {
+            if (!langIds.includes(id)) {
+                errors.push(`[HTML_SYNC] ${lang}/index.html: missing DOM id="${id}" (exists in ko)`);
+            }
+        }
+        // 다국어 HTML 리소스 참조 파일 존재
+        const langSrcRefs = [...html.matchAll(/src="([^"]+)"/g)].map(m => m[1]);
+        const langHrefRefs = [...html.matchAll(/href="([^"]+\.css)"/g)].map(m => m[1]);
+        for (const ref of [...langSrcRefs, ...langHrefRefs]) {
+            if (ref.startsWith('http')) continue;
+            const full = path.join(ROOT, lang, ref);
+            if (!fs.existsSync(full)) {
+                errors.push(`[HTML_REF] ${lang}/index.html: "${ref}" file not found`);
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 16. JS 모듈 내 하드코딩 리소스 경로 검증
+// ═══════════════════════════════════════════
+const JS_DIRS = [
+    path.join(ROOT, 'assets/js/modules'),
+    path.join(ROOT, 'assets/js')
+];
+const jsResourcePatterns = [
+    // fetch('path'), fetch(`path`)
+    /fetch\(\s*['"`]([^'"`$][^'"`]*\.(?:json|png|jpg|mp3|ogg|wav|webp|css|js))['"`]\s*\)/g,
+    // .src = 'path'
+    /\.src\s*=\s*['"]([^'"$][^'"]*\.(?:png|jpg|mp3|ogg|wav|webp))['"];?/g,
+    // new Audio('path')
+    /new\s+Audio\(\s*['"]([^'"]+\.(?:mp3|ogg|wav))['"]\s*\)/g,
+];
+for (const dir of JS_DIRS) {
+    if (!fs.existsSync(dir)) continue;
+    const jsFiles = fs.readdirSync(dir).filter(f => f.endsWith('.js'));
+    for (const file of jsFiles) {
+        const filePath = path.join(dir, file);
+        const content = fs.readFileSync(filePath, 'utf8');
+        for (const pattern of jsResourcePatterns) {
+            pattern.lastIndex = 0;
+            let match;
+            while ((match = pattern.exec(content)) !== null) {
+                const ref = match[1];
+                if (ref.includes('${') || ref.includes('$I18n')) continue; // 템플릿 리터럴 skip
+                const full = path.join(ROOT, ref);
+                if (!fs.existsSync(full)) {
+                    const lineNum = content.substring(0, match.index).split('\n').length;
+                    errors.push(`[JS_RES] ${file}:${lineNum}: "${ref}" file not found`);
+                }
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 17. JS 엔진 프로퍼티 참조 일관성
+// ═══════════════════════════════════════════
+const appJsPath = path.join(ROOT, 'assets/js/app.js');
+if (fs.existsSync(appJsPath)) {
+    const appContent = fs.readFileSync(appJsPath, 'utf8');
+    // app.js에서 game.xxx = new Xxx 패턴 추출
+    const registeredProps = new Map();
+    for (const m of appContent.matchAll(/game\.(\w+)\s*=\s*new\s+(\w+)/g)) {
+        registeredProps.set(m[2], m[1]); // ClassName → propertyName
+    }
+
+    // modules에서 this.engine.xxx 참조 수집
+    const modulesDir = path.join(ROOT, 'assets/js/modules');
+    if (fs.existsSync(modulesDir)) {
+        for (const file of fs.readdirSync(modulesDir).filter(f => f.endsWith('.js'))) {
+            const content = fs.readFileSync(path.join(modulesDir, file), 'utf8');
+            for (const m of content.matchAll(/this\.engine\.(\w+)/g)) {
+                const propRef = m[1];
+                // 기본 엔진 프로퍼티는 skip (state, i18n, dialogue, choice, etc.)
+                const builtinProps = ['state', 'i18n', 'dialogue', 'choice', 'choiceAdv',
+                    'scene', 'glitch', 'glitchAdv', 'audio', 'save', 'freeTalk',
+                    '_loadScene', 'currentScene'];
+                if (builtinProps.includes(propRef)) continue;
+                // app.js에서 등록된 프로퍼티에 존재하는지 확인
+                const registeredNames = [...registeredProps.values()];
+                if (!registeredNames.includes(propRef) && !builtinProps.includes(propRef)) {
+                    const lineNum = content.substring(0, m.index).split('\n').length;
+                    warnings.push(`[PROP_REF] ${file}:${lineNum}: this.engine.${propRef} — not registered in app.js`);
+                }
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 18. HTML DOM ID ↔ JS getElementById 참조 일치
+// ═══════════════════════════════════════════
+if (fs.existsSync(koHtmlPath)) {
+    const koHtml = fs.readFileSync(koHtmlPath, 'utf8');
+    const htmlIds = new Set([...koHtml.matchAll(/id="([^"]+)"/g)].map(m => m[1]));
+
+    // JS에서 getElementById로 참조하는 ID 수집
+    const modulesDir = path.join(ROOT, 'assets/js/modules');
+    if (fs.existsSync(modulesDir)) {
+        for (const file of fs.readdirSync(modulesDir).filter(f => f.endsWith('.js'))) {
+            const content = fs.readFileSync(path.join(modulesDir, file), 'utf8');
+            for (const m of content.matchAll(/getElementById\(\s*['"]([^'"]+)['"]\s*\)/g)) {
+                const id = m[1];
+                if (!htmlIds.has(id)) {
+                    // 동적으로 생성되는 ID는 warning
+                    const lineNum = content.substring(0, m.index).split('\n').length;
+                    warnings.push(`[DOM_ID] ${file}:${lineNum}: getElementById("${id}") — id not found in index.html`);
+                }
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 19. CSS @keyframes 중복 정의 검사
+// ═══════════════════════════════════════════
+const keyframeMap = {}; // name → [file, ...]
+for (const cssFile of cssFiles) {
+    const cssPath = path.join(ROOT, cssFile);
+    if (!fs.existsSync(cssPath)) continue;
+    const css = fs.readFileSync(cssPath, 'utf8');
+    for (const m of css.matchAll(/@keyframes\s+([\w-]+)/g)) {
+        const name = m[1];
+        if (!keyframeMap[name]) keyframeMap[name] = [];
+        keyframeMap[name].push(cssFile);
+    }
+}
+for (const [name, files] of Object.entries(keyframeMap)) {
+    if (files.length > 1) {
+        warnings.push(`[CSS_DUP_KF] @keyframes "${name}" defined in multiple files: ${files.join(', ')}`);
+    }
+}
+
+// ═══════════════════════════════════════════
+// 20. JS에서 사용하는 CSS 클래스 존재 여부
+// ═══════════════════════════════════════════
+// CSS에서 정의된 클래스 수집
+const allCssClasses = new Set();
+for (const cssFile of cssFiles) {
+    const cssPath = path.join(ROOT, cssFile);
+    if (!fs.existsSync(cssPath)) continue;
+    const css = fs.readFileSync(cssPath, 'utf8');
+    for (const m of css.matchAll(/\.([a-zA-Z][\w-]*)/g)) {
+        allCssClasses.add(m[1]);
+    }
+}
+// HTML에서 정의된 클래스도 추가 (인라인)
+if (fs.existsSync(koHtmlPath)) {
+    const koHtml = fs.readFileSync(koHtmlPath, 'utf8');
+    for (const m of koHtml.matchAll(/class="([^"]+)"/g)) {
+        m[1].split(/\s+/).forEach(c => allCssClasses.add(c));
+    }
+}
+// JS에서 className = 'xxx' 또는 classList.add('xxx') 패턴 수집
+const jsClassPatterns = [
+    /className\s*=\s*'([^']+)'/g,
+    /className\s*=\s*"([^"]+)"/g,
+    /classList\.add\(\s*'([^']+)'\s*\)/g,
+    /classList\.add\(\s*"([^"]+)"\s*\)/g,
+];
+const knownDynamicClasses = new Set(['hidden', 'active', 'no-image', 'paused', 'disabled']);
+{
+    const modulesDir = path.join(ROOT, 'assets/js/modules');
+    if (fs.existsSync(modulesDir)) {
+        for (const file of fs.readdirSync(modulesDir).filter(f => f.endsWith('.js'))) {
+            const content = fs.readFileSync(path.join(modulesDir, file), 'utf8');
+            for (const pattern of jsClassPatterns) {
+                pattern.lastIndex = 0;
+                let match;
+                while ((match = pattern.exec(content)) !== null) {
+                    const classes = match[1].split(/\s+/);
+                    for (const cls of classes) {
+                        if (knownDynamicClasses.has(cls)) continue;
+                        if (!allCssClasses.has(cls)) {
+                            const lineNum = content.substring(0, match.index).split('\n').length;
+                            warnings.push(`[CSS_CLASS] ${file}:${lineNum}: class "${cls}" used in JS but not defined in CSS`);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 21. i18n 플레이스홀더 검증
+// ═══════════════════════════════════════════
+const validPlaceholders = new Set(['name', 'name?', '14th_name', 'new_name']);
+for (const [key, val] of Object.entries(koData)) {
+    if (!val.text) continue;
+    for (const m of val.text.matchAll(/\{(\w+[?]?)\}/g)) {
+        if (!validPlaceholders.has(m[1])) {
+            warnings.push(`[PLACEHOLDER] ko "${key}": unknown placeholder {${m[1]}}`);
+        }
+    }
+    // choices 내 플레이스홀더도 검사
+    if (val.choices && Array.isArray(val.choices)) {
+        val.choices.forEach((c, i) => {
+            if (typeof c !== 'string') return;
+            for (const m of c.matchAll(/\{(\w+[?]?)\}/g)) {
+                if (!validPlaceholders.has(m[1])) {
+                    warnings.push(`[PLACEHOLDER] ko "${key}" choices[${i}]: unknown placeholder {${m[1]}}`);
+                }
+            }
+        });
+    }
+}
+
+// ═══════════════════════════════════════════
+// 22. 다국어 choices 배열 길이 일치 (ko 기준)
+// ═══════════════════════════════════════════
+for (const lang of langs) {
+    const langDir = path.join(I18N_DIR, lang);
+    if (!fs.existsSync(langDir)) continue;
+    for (const file of fs.readdirSync(langDir).filter(f => f.endsWith('.json'))) {
+        let langFileData;
+        try {
+            langFileData = JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'));
+        } catch (e) { continue; }
+
+        const koFilePath = path.join(koDir, file);
+        if (!fs.existsSync(koFilePath)) continue;
+        let koFileData;
+        try {
+            koFileData = JSON.parse(fs.readFileSync(koFilePath, 'utf8'));
+        } catch (e) { continue; }
+
+        for (const [key, koVal] of Object.entries(koFileData)) {
+            if (!koVal.choices || !Array.isArray(koVal.choices)) continue;
+            const langVal = langFileData[key];
+            if (!langVal || !langVal.choices || !Array.isArray(langVal.choices)) continue;
+            if (koVal.choices.length !== langVal.choices.length) {
+                errors.push(`[I18N_CHOICES] ${lang}/${file} "${key}": ko=${koVal.choices.length} ${lang}=${langVal.choices.length}`);
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 23. i18n 텍스트 내 잔존 한국어 검사 (비ko 언어)
+// ═══════════════════════════════════════════
+const koreanRange = /[\uAC00-\uD7AF]/;
+for (const lang of langs) {
+    const langDir = path.join(I18N_DIR, lang);
+    if (!fs.existsSync(langDir)) continue;
+    for (const file of fs.readdirSync(langDir).filter(f => f.endsWith('.json'))) {
+        let langFileData;
+        try {
+            langFileData = JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'));
+        } catch (e) { continue; }
+
+        for (const [key, val] of Object.entries(langFileData)) {
+            if (!val.text || val.text === '') continue;
+            if (koreanRange.test(val.text)) {
+                // name 필드가 아닌 text 필드에 한국어가 있는 경우
+                errors.push(`[I18N_KO_TEXT] ${lang}/${file} "${key}": text contains Korean characters`);
+            }
+            // choices 내 한국어 검사
+            if (val.choices && Array.isArray(val.choices)) {
+                val.choices.forEach((c, i) => {
+                    if (typeof c === 'string' && koreanRange.test(c)) {
+                        errors.push(`[I18N_KO_TEXT] ${lang}/${file} "${key}" choices[${i}]: contains Korean characters`);
+                    }
+                });
+            }
         }
     }
 }

@@ -60,4 +60,5 @@
 ## 기술 환경
 - 웹 브라우저 기반 게임 — localStorage, URL, HTML/CSS/JS만 사용
 - exe, 설치 폴더, 파일 시스템 접근 절대 불가
-- Cloudflare Pages로 배포
+- Cloudflare Pages로 배포 (https://nevergrad.archerlab.dev)
+- **Cloudflare API 토큰**: GitHub Secrets `CLOUDFLARE_API_TOKEN`에 저장 (DNS/Zone 편집 권한, 모든 레포 공통)

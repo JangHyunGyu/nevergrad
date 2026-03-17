@@ -50,6 +50,13 @@
 - HTML 구조 변경 → 6개 언어 HTML 모두 동기화
 - **위 모든 작업 후 `node validate.js` 실행하여 에러 0건 확인**
 
+## 이미지 에셋 현황 (2026-03-17)
+- **모든 캐릭터/배경 이미지 삭제됨** — 새로 생성 예정
+- 현재 남아있는 파일: `black.png`, `title_bg.png`만 존재
+- 생성용 프롬프트: `PROMPTS_READY.md` 참조 (캐릭터 43장 + 배경 26장 + BGM/SFX)
+- 생성 순서: 캐릭터는 시나리오 등장순(은수→세아→리인→유나→설화), 배경은 Day 1→5 순
+- config.js의 EXPRESSIONS/BACKGROUNDS alias는 이미지 미존재 시 실제 파일로 fallback
+
 ## 기술 환경
 - 웹 브라우저 기반 게임 — localStorage, URL, HTML/CSS/JS만 사용
 - exe, 설치 폴더, 파일 시스템 접근 절대 불가

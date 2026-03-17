@@ -45,15 +45,21 @@
 <body>
     <!-- ===== Title Screen ===== -->
     <div id="title-screen" class="screen active">
-        <div class="title-bg">
-            <div class="cherry-blossoms" id="cherry-blossoms"></div>
+        <div class="title-bg-layer"></div>
+        <div class="title-bg-vignette"></div>
+        <div class="cherry-blossoms" id="cherry-blossoms"></div>
+        <div class="title-content">
             <h1 class="title-text">The Classroom of No Graduation</h1>
+            <div class="title-divider"></div>
             <p class="title-subtitle">5 Days Record</p>
         </div>
         <div class="title-menu">
             <button id="btn-new-game" class="menu-btn">New Game</button>
             <button id="btn-continue" class="menu-btn" disabled>Continue</button>
             <button id="btn-gallery" class="menu-btn">Gallery</button>
+        </div>
+        <div class="title-footer">
+            <span class="title-copyright">NEVERGRAD</span>
         </div>
     </div>
 
@@ -98,8 +104,26 @@
             <div id="stat-display" class="stat-display hidden"></div>
         </div>
 
-        <!-- Menu Button -->
-        <button id="btn-menu" class="ingame-menu-btn">MENU</button>
+        <!-- Quick Menu -->
+        <div id="quick-menu" class="quick-menu">
+            <button id="qm-auto" class="qm-btn">AUTO</button>
+            <button id="qm-skip" class="qm-btn">SKIP</button>
+            <button id="qm-log" class="qm-btn">LOG</button>
+            <button id="qm-save" class="qm-btn">SAVE</button>
+            <button id="qm-load" class="qm-btn">LOAD</button>
+            <button id="qm-menu" class="qm-btn">MENU</button>
+        </div>
+    </div>
+
+    <!-- ===== Backlog Panel ===== -->
+    <div id="backlog-panel" class="screen overlay hidden">
+        <div class="backlog-container">
+            <div class="backlog-header">
+                <span class="backlog-title">Dialogue Log</span>
+                <button id="backlog-close" class="backlog-close-btn">&times;</button>
+            </div>
+            <div id="backlog-content" class="backlog-content"></div>
+        </div>
     </div>
 
     <!-- ===== Pause Menu ===== -->
@@ -123,6 +147,23 @@
             <button id="ft-send" class="ft-send-btn">Send</button>
         </div>
         <div id="ft-turns" class="ft-turns"></div>
+    </div>
+
+    <!-- ===== Save Slot Glitch UI ===== -->
+    <div id="save-slot-overlay" class="screen overlay hidden">
+        <div class="save-slot-container">
+            <div class="save-slot-header">
+                <span class="save-slot-title">SAVE DATA</span>
+                <span class="save-slot-subtitle">— Project Nevergrad —</span>
+            </div>
+            <div id="save-slot-list" class="save-slot-list"></div>
+        </div>
+    </div>
+
+    <!-- ===== Rotate Prompt ===== -->
+    <div id="rotate-prompt" class="rotate-prompt">
+        <div class="rotate-icon">📱</div>
+        <div class="rotate-text">Please rotate your device<br>to landscape mode</div>
     </div>
 
     <!-- ===== Scripts ===== -->
@@ -162,11 +203,16 @@
     <script src="../assets/js/modules/StateManager.js"></script>
     <script src="../assets/js/modules/SaveManager.js"></script>
     <script src="../assets/js/modules/I18nManager.js"></script>
+    <script src="../assets/js/modules/AudioManager.js"></script>
     <script src="../assets/js/modules/SceneRenderer.js"></script>
     <script src="../assets/js/modules/DialogueSystem.js"></script>
     <script src="../assets/js/modules/ChoiceSystem.js"></script>
     <script src="../assets/js/modules/FreeTalkSystem.js"></script>
     <script src="../assets/js/modules/GlitchSystem.js"></script>
+    <script src="../assets/js/modules/GlitchSystemAdvanced.js"></script>
+    <script src="../assets/js/modules/ChoiceSystemAdvanced.js"></script>
+    <script src="../assets/js/modules/DeviceGimmickSystem.js"></script>
+    <script src="../assets/js/modules/MetaHorrorSystem.js"></script>
     <script src="../assets/js/modules/GameEngine.js"></script>
 
     <!-- App Entry -->

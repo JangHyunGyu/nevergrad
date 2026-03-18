@@ -101,7 +101,20 @@ class DeviceGimmickSystem {
             /** 위험 감지 (스릴러 전환, 반전 장면) */
             danger: [300, 100, 300, 100, 600],
             /** 추격전 (빠른 연속 진동) */
-            chase: [80, 40, 80, 40, 80, 40, 80, 40, 80, 40, 80, 40]
+            chase: [80, 40, 80, 40, 80, 40, 80, 40, 80, 40, 80, 40],
+            /** 거울 스와이프 심장박동 — 간격 점점 좁아짐 (SCENARIO.md 5163) */
+            mirror_heartbeat: [100, 800, 100, 600, 100, 400, 100, 300, 100, 200, 100, 100, 100, 80, 100, 60, 100],
+            /** 거울 13명 얼굴 오버레이 — 0.4초 간격 13회 (SCENARIO.md 5168) */
+            mirror_13faces: Array(13).fill(0).flatMap(() => [100, 300]),
+            /** Day 5 20초 카운트다운 — 1초→0.5초→0.3초 점진적 (SCENARIO.md 5165) */
+            countdown_20s: [
+                // 1초 간격 (0~10초)
+                ...Array(10).fill(0).flatMap(() => [100, 900]),
+                // 0.5초 간격 (10~15초)
+                ...Array(10).fill(0).flatMap(() => [100, 400]),
+                // 0.3초 간격 (15~20초)
+                ...Array(16).fill(0).flatMap(() => [100, 200])
+            ]
         };
     }
 
@@ -1262,6 +1275,57 @@ class DeviceGimmickSystem {
     }
 
     // =========================================================================
+    // Day 5 카운트다운 진동 동기화 (SCENARIO.md 5165)
+    // =========================================================================
+
+    /**
+     * 20초 카운트다운과 동기화된 점진적 진동
+     * 1초 간격 → 0.5초 → 0.3초
+     *
+     * @param {number} [totalMs=20000] - 전체 카운트다운 시간 (ms)
+     * @returns {{ stop: Function }} 중단 핸들
+     */
+    startCountdownVibration(totalMs = 20000) {
+        if (!this.isMobile || !this.vibrationSupported) return { stop: () => {} };
+
+        let elapsed = 0;
+        let stopped = false;
+
+        const tick = () => {
+            if (stopped) return;
+            if (elapsed >= totalMs) return;
+
+            navigator.vibrate(100);
+
+            let interval;
+            const progress = elapsed / totalMs;
+            if (progress < 0.5) {
+                interval = 1000; // 1초 간격
+            } else if (progress < 0.75) {
+                interval = 500;  // 0.5초 간격
+            } else {
+                interval = 300;  // 0.3초 간격
+            }
+
+            elapsed += interval;
+            this._countdownTimer = setTimeout(tick, interval);
+        };
+
+        tick();
+
+        return {
+            stop: () => {
+                stopped = true;
+                if (this._countdownTimer) {
+                    clearTimeout(this._countdownTimer);
+                    this._countdownTimer = null;
+                }
+                navigator.vibrate(0);
+            }
+        };
+    }
+
+    // =========================================================================
     // 정리
     // =========================================================================
 
@@ -1277,6 +1341,11 @@ class DeviceGimmickSystem {
         if (this._longPressTimer) {
             clearTimeout(this._longPressTimer);
             this._longPressTimer = null;
+        }
+
+        if (this._countdownTimer) {
+            clearTimeout(this._countdownTimer);
+            this._countdownTimer = null;
         }
 
         this.hoverTracker = { startTime: 0, choiceIndex: -1, duration: 0 };

@@ -809,6 +809,568 @@ class GlitchSystemAdvanced {
     }
 
     // =========================================================================
+    // NG+ 타이틀 화면 변조 (SCENARIO.md 5002-5012)
+    // =========================================================================
+
+    /**
+     * 2회차 타이틀 화면 변조 적용
+     * - 로고 균열 텍스처
+     * - [이어하기] 버튼 아래 서브텍스트
+     * - [새 게임] 버튼 엔딩별 깜빡임
+     *
+     * @param {SaveManager} saveManager
+     */
+    applyNGPlusTitleCorruption(saveManager) {
+        if (!saveManager.isNewGamePlus()) return;
+
+        const meta = saveManager.getMeta();
+
+        // 1. 로고 균열 텍스처
+        const titleText = document.querySelector('.title-text');
+        if (titleText) {
+            titleText.classList.add('ng-plus-cracked');
+        }
+
+        // 2. [이어하기] 버튼 아래 서브텍스트
+        const continueBtn = document.getElementById('btn-continue');
+        if (continueBtn && !continueBtn.querySelector('.ng-plus-load-subtext')) {
+            const sub = document.createElement('span');
+            sub.className = 'ng-plus-load-subtext';
+            // i18n은 한국어 기본, 다국어 HTML에서는 해당 언어 적용
+            sub.textContent = '\u200B'; // zero-width space placeholder
+            continueBtn.style.position = 'relative';
+            continueBtn.appendChild(sub);
+
+            // 매우 작은 글씨로 읽히지 않을 정도로
+            const lang = document.documentElement.lang || 'ko';
+            const loadSubTexts = {
+                ko: '(죽은 자는 덮어쓸 수 없습니다)',
+                en: '(the dead cannot be overwritten)',
+                ja: '(死者は上書きできません)',
+                es: '(los muertos no pueden sobrescribirse)',
+                fr: '(les morts ne peuvent pas \u00eatre \u00e9cras\u00e9s)',
+                de: '(die Toten k\u00f6nnen nicht \u00fcberschrieben werden)'
+            };
+            sub.textContent = loadSubTexts[lang] || loadSubTexts.ko;
+        }
+
+        // 3. [새 게임] 버튼 엔딩별 깜빡임
+        const newGameBtn = document.getElementById('btn-new-game');
+        if (newGameBtn && meta.lastEnding) {
+            this._setupNewGameFlicker(newGameBtn, meta.lastEnding);
+        }
+    }
+
+    /**
+     * [새 게임] 버튼에 엔딩별 깜빡임 적용
+     * @param {HTMLElement} btn
+     * @param {string} lastEnding
+     * @private
+     */
+    _setupNewGameFlicker(btn, lastEnding) {
+        const playerName = this.engine?.state?.playerName || '{name}';
+
+        const flickerTexts = {
+            FORGET: '#14 \uD22C\uC785 (Load Subject #14)',
+            ESCAPE: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
+            GHOST: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
+            RESIST: '\uC740\uC218\uB294 \uB5A0\uB0AC\uB2E4. \uC774\uC0AC\uD68C\uB294 \uB0A8\uC558\uB2E4.',
+            TRUE: '...\uB2E4 \uB05D\uB0AC\uB294\uB370.',
+            COMPLICIT: `#14 \uD22C\uC785 \uC2B9\uC778 \u2014 \uB2F4\uB2F9: ${playerName}`
+        };
+
+        const flickerText = flickerTexts[lastEnding];
+        if (!flickerText) return; // CAGE: no flicker
+
+        const originalText = btn.textContent;
+        const flickerDuration = (lastEnding === 'TRUE' || lastEnding === 'COMPLICIT') ? 500 : 300;
+
+        // 5초마다 반복 깜빡임 (타이틀 화면에 있는 동안)
+        const doFlicker = () => {
+            if (!btn.isConnected) return; // DOM에서 제거되면 중단
+            btn.textContent = flickerText;
+            btn.classList.add('glitch-text');
+
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.classList.remove('glitch-text');
+            }, flickerDuration);
+        };
+
+        // 첫 깜빡임은 2초 후
+        const t1 = setTimeout(doFlicker, 2000);
+        this._activeTimers.push(t1);
+
+        // 이후 8초마다 반복
+        const interval = setInterval(() => {
+            if (!btn.isConnected) { clearInterval(interval); return; }
+            doFlicker();
+        }, 8000);
+        this._ngPlusTitleInterval = interval;
+    }
+
+    /**
+     * NG+ 타이틀 BGM 변조 — 피치 다운 + 0.75배속
+     * @param {AudioManager} audio
+     */
+    applyNGPlusTitleBGM(audio) {
+        if (!audio?.ctx) return;
+
+        // BGM 피치 다운은 playbackRate로 구현
+        // AudioManager의 BGM이 시작된 후 호출해야 함
+        const applyPitchDown = () => {
+            const activeGain = audio._activeSlotA ? audio.bgmGainA : audio.bgmGainB;
+            const activeSource = audio._activeSlotA ? audio.bgmSourceA : audio.bgmSourceB;
+            if (activeSource) {
+                // 반음 다운 = 2^(-1/12) ≈ 0.9439, * 0.75 배속 = ~0.708
+                activeSource.playbackRate.value = 0.75 * Math.pow(2, -1/12);
+            }
+        };
+
+        // 약간 지연 (BGM 로드 후)
+        const t = setTimeout(applyPitchDown, 500);
+        this._activeTimers.push(t);
+    }
+
+    // =========================================================================
+    // NG+ 선택지 스테이닝 (SCENARIO.md 5036-5047)
+    // =========================================================================
+
+    /**
+     * 선택지 버튼에 1회차 선택 흔적 표시
+     * - 이전 회차에서 선택한 선택지에 붉은 체크마크
+     * - 특정 씬에서 고스트 텍스트 표시
+     *
+     * @param {HTMLElement[]} buttons - 선택지 버튼 배열
+     * @param {string} sceneId - 현재 씬 ID
+     * @param {SaveManager} saveManager
+     */
+    applyChoiceStaining(buttons, sceneId, saveManager) {
+        if (!saveManager.isNewGamePlus()) return;
+
+        const prevChoice = saveManager.getPreviousChoice(sceneId);
+        if (!prevChoice) return;
+
+        const prevIndex = prevChoice.index;
+        if (prevIndex < 0 || prevIndex >= buttons.length) return;
+
+        const targetBtn = buttons[prevIndex];
+        if (!targetBtn) return;
+
+        // 붉은 체크마크 0.3초간 깜빡임
+        targetBtn.style.position = 'relative';
+        const check = document.createElement('span');
+        check.className = 'ng-plus-check';
+        check.textContent = '\u2713';
+        targetBtn.appendChild(check);
+
+        const t = setTimeout(() => check.remove(), 300);
+        this._activeTimers.push(t);
+
+        // 특정 씬에서 고스트 텍스트 (전체 게임에서 3~5회로 제한)
+        const ghostTexts = {
+            day1_chocomilk: '...\uBB3C\uC5B4\uBD24\uC790 \uAC19\uC740 \uB300\uB2F5\uC774\uC57C.',
+            day3_riin_drink: '\uB108 \uC774\uAC70 \uB9DB \uC54C\uC796\uC544.',
+            day5_final_choice: '\uB610?'
+        };
+
+        const ghostText = ghostTexts[sceneId];
+        if (ghostText) {
+            const ghost = document.createElement('span');
+            ghost.className = 'choice-ghost-text';
+            ghost.textContent = ghostText;
+            targetBtn.appendChild(ghost);
+
+            const duration = sceneId === 'day5_final_choice' ? 300 : 500;
+            const t2 = setTimeout(() => ghost.remove(), duration);
+            this._activeTimers.push(t2);
+        }
+    }
+
+    // =========================================================================
+    // NG+ 대사 미세 왜곡 (SCENARIO.md 5049-5062)
+    // =========================================================================
+
+    /**
+     * 대사 표시 전 깜빡임 단어 삽입
+     * 특정 씬에서 대사 앞에 "또" 등의 단어가 0.3초 깜빡임
+     *
+     * @param {string} sceneId - 현재 씬 ID
+     * @param {HTMLElement} textEl - 대사 텍스트 요소
+     * @param {SaveManager} saveManager
+     * @returns {number} 추가 딜레이 ms (깜빡임이 있으면 300, 없으면 0)
+     */
+    applyDialogueDistortion(sceneId, textEl, saveManager) {
+        if (!saveManager.isNewGamePlus()) return 0;
+        if (!textEl) return 0;
+
+        // 씬별 깜빡임 단어 매핑
+        const flashWords = {
+            day1_eunsu_greeting: '\uB610',
+            day1_eunsu_greeting_1: '\uB610',
+            day1_sea_chocomilk_1: '\uC774\uBC88\uC5D0\uB3C4'
+        };
+
+        const word = flashWords[sceneId];
+        if (!word) return 0;
+
+        // 텍스트 요소 위에 깜빡임 단어 오버레이
+        textEl.style.position = 'relative';
+        const flash = document.createElement('span');
+        flash.className = 'ng-plus-flash-word';
+        flash.textContent = word;
+        textEl.appendChild(flash);
+
+        const t = setTimeout(() => flash.remove(), 300);
+        this._activeTimers.push(t);
+
+        return 300;
+    }
+
+    // =========================================================================
+    // NG+ Day 1 조기 탈출 (SCENARIO.md 5064-5096)
+    // =========================================================================
+
+    /**
+     * Day 1 교문에서 뒤로 가기 시도 감지 및 히든 이벤트
+     * 3회 이상 시도 시 발동
+     *
+     * @param {Function} onTrigger - 히든 이벤트 발동 시 콜백 (씬 전환)
+     * @param {SaveManager} saveManager
+     * @returns {{ increment: Function, getCount: Function }}
+     */
+    setupEarlyEscape(saveManager) {
+        if (!saveManager.isNewGamePlus()) return null;
+
+        let escapeAttempts = 0;
+
+        return {
+            increment: () => ++escapeAttempts,
+            getCount: () => escapeAttempts,
+            shouldTrigger: () => escapeAttempts >= 3
+        };
+    }
+
+    /**
+     * 조기 탈출 히든 이벤트 연출 — 화면 하얘짐 + 교실 복귀
+     * @returns {Promise<void>}
+     */
+    async playEarlyEscapeSequence() {
+        // 1. 화면 서서히 하얘짐
+        const white = document.createElement('div');
+        white.className = 'early-escape-white';
+        document.body.appendChild(white);
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                white.classList.add('active');
+            });
+        });
+
+        // BGM 페이드아웃
+        const audio = this.engine?.audio;
+        if (audio?.ctx) {
+            audio.fadeOutAll(2000);
+        }
+
+        await this._sleep(2500);
+
+        // 2. 완전 화이트아웃 후 제거
+        await this._sleep(500);
+        white.remove();
+
+        // 3. 블랙아웃으로 전환
+        await this.showBlackout(1500);
+    }
+
+    // =========================================================================
+    // Day 5 노이즈 필터 (SCENARIO.md 3408)
+    // =========================================================================
+
+    /**
+     * Day 5 모든 대화창에 노이즈 필터 CSS 적용
+     */
+    enableDay5NoiseFilter() {
+        const dialogueBox = document.getElementById('dialogue-box');
+        if (dialogueBox) {
+            dialogueBox.classList.add('day5-noise');
+        }
+    }
+
+    /**
+     * Day 5 노이즈 필터 제거
+     */
+    disableDay5NoiseFilter() {
+        const dialogueBox = document.getElementById('dialogue-box');
+        if (dialogueBox) {
+            dialogueBox.classList.remove('day5-noise');
+        }
+    }
+
+    // =========================================================================
+    // 인터랙티브 거울 스와이프 (SCENARIO.md 3253)
+    // =========================================================================
+
+    /**
+     * 거울 안개 닦기 인터랙션
+     * canvas 마스크로 구현: 위에서 아래로 스와이프하면 안개가 걷힘
+     *
+     * @param {string} mirrorBgUrl - 거울 아래 배경(반사) 이미지 URL
+     * @param {Function} onComplete - 안개 70% 이상 제거 시 콜백
+     * @returns {Promise<void>}
+     */
+    async showMirrorSwipe(mirrorBgUrl, onComplete) {
+        return new Promise((resolve) => {
+            const container = document.createElement('div');
+            container.className = 'mirror-swipe-container';
+
+            const canvas = document.createElement('canvas');
+            canvas.className = 'mirror-swipe-canvas';
+            container.appendChild(canvas);
+
+            // 힌트 텍스트
+            const hint = document.createElement('div');
+            hint.className = 'mirror-swipe-hint';
+            const lang = document.documentElement.lang || 'ko';
+            const hintTexts = {
+                ko: '\u2191 \uC704\uC5D0\uC11C \uC544\uB798\uB85C \uB2E6\uC73C\uC138\uC694',
+                en: '\u2191 Swipe down to wipe',
+                ja: '\u2191 \u4E0A\u304B\u3089\u4E0B\u3078\u62ED\u3044\u3066\u304F\u3060\u3055\u3044',
+                es: '\u2191 Desliza hacia abajo',
+                fr: '\u2191 Glissez vers le bas',
+                de: '\u2191 Nach unten wischen'
+            };
+            hint.textContent = hintTexts[lang] || hintTexts.ko;
+            container.appendChild(hint);
+
+            document.body.appendChild(container);
+
+            // Canvas 설정
+            const resize = () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                drawFog();
+            };
+
+            const ctx = canvas.getContext('2d');
+            let totalPixels = 0;
+            let clearedPixels = 0;
+            let completed = false;
+
+            const drawFog = () => {
+                ctx.fillStyle = 'rgba(200, 210, 220, 0.95)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                totalPixels = canvas.width * canvas.height;
+                clearedPixels = 0;
+            };
+
+            resize();
+            window.addEventListener('resize', resize);
+
+            // 스와이프로 안개 제거
+            let isDrawing = false;
+            const brushSize = Math.max(40, Math.min(canvas.width, canvas.height) * 0.08);
+
+            const clearFog = (x, y) => {
+                ctx.globalCompositeOperation = 'destination-out';
+                ctx.beginPath();
+                ctx.arc(x, y, brushSize, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.globalCompositeOperation = 'source-over';
+
+                clearedPixels += Math.PI * brushSize * brushSize;
+                const clearRatio = clearedPixels / totalPixels;
+
+                if (clearRatio > 0.35 && !completed) {
+                    completed = true;
+                    hint.remove();
+
+                    // 안개 완전 제거 애니메이션
+                    const fadeOut = () => {
+                        canvas.style.transition = 'opacity 0.5s ease';
+                        canvas.style.opacity = '0';
+                        setTimeout(() => {
+                            window.removeEventListener('resize', resize);
+                            container.remove();
+                            if (onComplete) onComplete();
+                            resolve();
+                        }, 500);
+                    };
+
+                    setTimeout(fadeOut, 300);
+                }
+            };
+
+            // 마우스 이벤트
+            canvas.addEventListener('mousedown', (e) => { isDrawing = true; clearFog(e.clientX, e.clientY); });
+            canvas.addEventListener('mousemove', (e) => { if (isDrawing) clearFog(e.clientX, e.clientY); });
+            canvas.addEventListener('mouseup', () => { isDrawing = false; });
+
+            // 터치 이벤트
+            canvas.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                isDrawing = true;
+                const t = e.touches[0];
+                clearFog(t.clientX, t.clientY);
+            }, { passive: false });
+            canvas.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                if (!isDrawing) return;
+                const t = e.touches[0];
+                clearFog(t.clientX, t.clientY);
+            }, { passive: false });
+            canvas.addEventListener('touchend', () => { isDrawing = false; });
+        });
+    }
+
+    // =========================================================================
+    // 거울 13명 얼굴 오버레이 (SCENARIO.md 3337)
+    // =========================================================================
+
+    /**
+     * 거울 2타: 13장의 증명사진을 빠르게 오버레이
+     * @param {string[]} faceNames - 13명의 이름 배열
+     * @param {string} playerName - 현재 플레이어 이름 (13번째)
+     * @param {string} finalText - 최종 표시 텍스트
+     * @returns {Promise<void>}
+     */
+    async showMirror13Faces(faceNames, playerName, finalText) {
+        const overlay = document.createElement('div');
+        overlay.className = 'mirror-face-overlay';
+        document.body.appendChild(overlay);
+
+        // 기본 이름 목록 (이미지가 없으면 텍스트로 대체)
+        const names = faceNames || [
+            '#1 \uAE40\uB3C4\uC9C4', '#2 \uC774\uC900\uC11C', '#3 \uBC15\uC11C\uC9C4',
+            '#4 \uC815\uD558\uC728', '#5 \uAC15\uBBFC\uD601', '#6 \uC724\uC7AC\uC6D0',
+            '#7 \uAE40\uD0DC\uD638', '#8 \uCD5C\uC2DC\uC6B0', '#9 \uD55C\uC9C0\uD638',
+            '#10 \uC1A1\uC608\uC900', '#11 \uC624\uD0DC\uD604', '#12 \uC784\uC11C\uC728',
+            `#13 ${playerName}`
+        ];
+
+        // 진동 동기화 (모바일)
+        const deviceGimmick = this.engine?.deviceGimmick;
+
+        for (let i = 0; i < names.length; i++) {
+            // 이름 텍스트 오버레이
+            const nameEl = document.createElement('div');
+            nameEl.className = 'mirror-face-name';
+            nameEl.textContent = names[i];
+            overlay.appendChild(nameEl);
+
+            // 진동 (0.4초 간격)
+            if (deviceGimmick) {
+                deviceGimmick.vibrate([100]);
+            }
+
+            await this._sleep(400);
+            nameEl.remove();
+        }
+
+        // 최종 텍스트
+        const finalEl = document.createElement('div');
+        finalEl.className = 'mirror-final-text';
+        finalEl.textContent = finalText || '\uB098\uB294 13\uBC88\uC9F8 \uAECD\uB370\uAE30\uB2E4.';
+        overlay.appendChild(finalEl);
+
+        await this._sleep(3000);
+
+        // 페이드아웃
+        overlay.style.transition = 'opacity 1s ease';
+        overlay.style.opacity = '0';
+        await this._sleep(1000);
+        overlay.remove();
+    }
+
+    // =========================================================================
+    // NG+ 스킵 시스템 삽입 (SCENARIO.md 5025-5034)
+    // =========================================================================
+
+    /**
+     * 스킵 중 기시감 텍스트 삽입
+     * 2회차 스킵 시 특정 씬에서 0.5초 더 긴 표시 + 기시감 텍스트
+     *
+     * @param {string} sceneId - 현재 씬 ID
+     * @param {SaveManager} saveManager
+     * @returns {boolean} true면 스킵 딜레이 적용
+     */
+    checkSkipDejaVu(sceneId, saveManager) {
+        if (!saveManager.isNewGamePlus()) return false;
+
+        const dejaVuTexts = {
+            day1_gate_1: '...\uC774 \uAE38\uC744 \uC544\uB294 \uAC83 \uAC19\uB2E4. \uC65C\uC9C0? \uCC98\uC74C \uC624\uB294 \uD559\uAD50\uC778\uB370. ......\uD53C\uACE4\uD574\uC11C \uADF8\uB7F0 \uAC70\uACA0\uC9C0.',
+            day1_hallway_1: '...\uC774 \uC6C3\uC74C. \uC5B4\uB518\uAC00\uC5D0\uC11C \uBD24\uB2E4. ...\uC544\uB2CC\uAC00.',
+            day2_sea_arrival_1: '...\uC138\uC544\uC758 \uB3D9\uC791\uC774 \uC5B4\uCAD0\uC9C0 \uC775\uC219\uD558\uB2E4. \uAE30\uBD84 \uD0D3\uC774\uACA0\uC9C0.',
+            day3_riin_drink_1: '...\uC774 \uB9DB. \uB0AF\uC124\uC9C0 \uC54A\uB2E4. \uB9C8\uC154\uBCF8 \uC801\uB3C4 \uC5C6\uB294\uB370.'
+        };
+
+        const text = dejaVuTexts[sceneId];
+        if (!text) return false;
+
+        // 기시감 텍스트 표시
+        const el = document.createElement('div');
+        el.className = 'skip-dejavu-text';
+        el.textContent = text;
+        document.body.appendChild(el);
+
+        const t = setTimeout(() => el.remove(), 2000);
+        this._activeTimers.push(t);
+
+        return true;
+    }
+
+    // =========================================================================
+    // COMPLICIT 2회차 서명 인터랙션 (SCENARIO.md 5107-5120)
+    // =========================================================================
+
+    /**
+     * COMPLICIT END 2회차: 서명란 터치 인터랙션
+     * 자동 진행이 아닌 플레이어가 직접 서명란을 클릭해야 진행
+     *
+     * @param {string} playerName - 서명할 이름
+     * @param {SaveManager} saveManager
+     * @returns {Promise<void>} 서명 완료 시 resolve
+     */
+    async showComplicitSignature(playerName, saveManager) {
+        if (!saveManager.hasSeenEnding('COMPLICIT')) {
+            return; // 1회차에는 자동 진행
+        }
+
+        const choicePanel = document.getElementById('choice-panel');
+        if (!choicePanel) return;
+
+        return new Promise((resolve) => {
+            choicePanel.innerHTML = '';
+            choicePanel.classList.remove('hidden');
+
+            const signArea = document.createElement('div');
+            signArea.className = 'complicit-sign-area';
+            signArea.textContent = playerName;
+
+            choicePanel.appendChild(signArea);
+
+            // 서명 직전 0.5초간 멈춤 + 유령 텍스트
+            const ghost = document.createElement('span');
+            ghost.className = 'sign-ghost';
+            ghost.textContent = '\uB450 \uBC88\uC9F8\uC57C.';
+            signArea.appendChild(ghost);
+
+            const t = setTimeout(() => ghost.remove(), 500);
+            this._activeTimers.push(t);
+
+            // 진동 (서명 순간)
+            signArea.addEventListener('click', () => {
+                if (this.engine?.deviceGimmick) {
+                    this.engine.deviceGimmick.vibrate([100]);
+                }
+                choicePanel.classList.add('hidden');
+                choicePanel.innerHTML = '';
+                resolve();
+            }, { once: true });
+        });
+    }
+
+    // =========================================================================
     // 정리
     // =========================================================================
 
@@ -841,6 +1403,15 @@ class GlitchSystemAdvanced {
 
         // 레드 비네트 제거
         this.hideRedVignette();
+
+        // Day 5 노이즈 필터 제거
+        this.disableDay5NoiseFilter();
+
+        // NG+ 타이틀 인터벌 정리
+        if (this._ngPlusTitleInterval) {
+            clearInterval(this._ngPlusTitleInterval);
+            this._ngPlusTitleInterval = null;
+        }
 
         // 글리치 텍스트 클래스 정리
         document.querySelectorAll('.glitch-text').forEach(el => {

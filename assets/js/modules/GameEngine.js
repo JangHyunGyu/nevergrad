@@ -143,6 +143,12 @@ class GameEngine {
             titleScreen.addEventListener('touchstart', enterFullscreen, { once: true });
         }
 
+        // NG+ 타이틀 화면 변조 (SCENARIO.md 5002-5012)
+        if (this.glitchAdvanced && this.save.isNewGamePlus()) {
+            this.glitchAdvanced.applyNGPlusTitleCorruption(this.save);
+            this.glitchAdvanced.applyNGPlusTitleBGM(this.audio);
+        }
+
         document.getElementById('btn-new-game')?.addEventListener('click', () => {
             this.audio?.playUIClick();
             // 모바일 풀스크린 진입 (유저 제스처 필요)
@@ -371,12 +377,38 @@ class GameEngine {
             return;
         }
 
+        // Day 5 노이즈 필터 (SCENARIO.md 3408)
+        if (this.state.currentDay >= 5 && this.glitchAdvanced) {
+            this.glitchAdvanced.enableDay5NoiseFilter();
+        }
+
+        // 스크린샷 감지 컨텍스트 업데이트
+        if (this.metaHorror) {
+            if (sceneId.includes('save_slot') || sceneId.includes('day4_night_save')) {
+                this.metaHorror.setScreenshotContext('save_slot');
+            } else if (sceneId.includes('mirror_13') || sceneId.includes('mirror_2nd')) {
+                this.metaHorror.setScreenshotContext('mirror_13faces');
+            } else if (sceneId.includes('day5_docs') || sceneId.includes('day5_basement')) {
+                this.metaHorror.setScreenshotContext('day5_docs');
+            } else if (sceneId.includes('complicit_sign')) {
+                this.metaHorror.setScreenshotContext('complicit_sign');
+            } else {
+                this.metaHorror.setScreenshotContext(null);
+            }
+        }
+
         // ===== i18n에서 텍스트 가져오기 =====
         const t = this.i18n.get(sceneId);
         const name = this._resolveName(t.name);
         const text = this.i18n.resolve(t.text, this.state.playerName);
 
         this._updateHUD();
+
+        // NG+ 대사 미세 왜곡 (SCENARIO.md 5049-5062)
+        if (this.glitchAdvanced && this.save.isNewGamePlus()) {
+            const textEl = document.getElementById('dialogue-text');
+            this.glitchAdvanced.applyDialogueDistortion(sceneId, textEl, this.save);
+        }
 
         // 타이핑 옵션 (공포 연출: 느린 텍스트, 스킵 불가)
         const typeOpts = {};
@@ -453,6 +485,20 @@ class GameEngine {
             this.state.currentDay = scene.changeDay;
             // 콘솔 이스터에그 — Day별 설화 메시지 업데이트
             this.glitch.initConsoleEasterEgg(scene.changeDay);
+
+            // 푸시 알림 스케줄링 (SCENARIO.md 5140-5153)
+            if (this.metaHorror) {
+                this.metaHorror.scheduleExitNotification(
+                    scene.changeDay,
+                    this.save.isNewGamePlus(),
+                    this.save.getMeta().lastEnding
+                );
+            }
+
+            // Day 5 노이즈 필터 활성화
+            if (scene.changeDay >= 5 && this.glitchAdvanced) {
+                this.glitchAdvanced.enableDay5NoiseFilter();
+            }
         }
         if (scene.changeSlot) {
             this.state.currentSlot = scene.changeSlot;
@@ -505,6 +551,20 @@ class GameEngine {
             });
 
             panel.appendChild(btn);
+        });
+
+        // NG+ 선택지 스테이닝 (SCENARIO.md 5036-5047)
+        if (this.glitchAdvanced && this.save.isNewGamePlus()) {
+            const btns = Array.from(panel.querySelectorAll('.choice-btn'));
+            this.glitchAdvanced.applyChoiceStaining(btns, this.state.currentScene, this.save);
+        }
+
+        // 선택지 선택 이력 기록 (2회차용)
+        const choiceBtns = panel.querySelectorAll('.choice-btn');
+        choiceBtns.forEach((btn, idx) => {
+            btn.addEventListener('click', () => {
+                this.save.recordChoice(this.state.currentScene, idx, btn.textContent);
+            }, { once: true });
         });
 
         // 씬 글리치에서 예약된 forceChoice 처리
@@ -1038,6 +1098,18 @@ class GameEngine {
 
     _skipAdvance() {
         if (!this.isSkipMode) return;
+
+        // NG+ 스킵 중 기시감 텍스트 삽입 (SCENARIO.md 5025-5034)
+        let skipDelay = 200;
+        if (this.glitchAdvanced && this.save.isNewGamePlus()) {
+            const hasDejaVu = this.glitchAdvanced.checkSkipDejaVu(
+                this.state.currentScene, this.save
+            );
+            if (hasDejaVu) {
+                skipDelay = 700; // 0.5초 더 길게 표시
+            }
+        }
+
         this._skipTimer = setTimeout(() => {
             if (!this.isSkipMode) return;
             if (this.dialogue.isTyping) {
@@ -1045,7 +1117,7 @@ class GameEngine {
             }
             this._advanceScene();
             this._skipAdvance();
-        }, 200);
+        }, skipDelay);
     }
 
     // ===== Backlog =====

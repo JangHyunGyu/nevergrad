@@ -593,6 +593,144 @@ class AudioManager {
     // 유틸리티
     // =========================================================================
 
+    // =========================================================================
+    // 바이노럴/스테레오 오디오 (SCENARIO.md 5174-5185)
+    // =========================================================================
+
+    /**
+     * 이어폰/스테레오 출력 감지
+     * Web Audio API의 출력 채널 수로 판별
+     *
+     * @returns {Promise<boolean>} true: 스테레오(이어폰 가능), false: 모노
+     */
+    async detectStereoOutput() {
+        if (!this.ctx) return false;
+
+        try {
+            // AudioContext destination의 채널 수로 판별
+            const channelCount = this.ctx.destination.channelCount;
+            // mediaDevices로 출력 장치 확인 (가능한 경우)
+            if (navigator.mediaDevices?.enumerateDevices) {
+                const devices = await navigator.mediaDevices.enumerateDevices();
+                const audioOutputs = devices.filter(d => d.kind === 'audiooutput');
+                // 이어폰/헤드셋이 있으면 스테레오로 간주
+                const hasHeadphones = audioOutputs.some(d =>
+                    d.label.toLowerCase().includes('headphone') ||
+                    d.label.toLowerCase().includes('earphone') ||
+                    d.label.toLowerCase().includes('headset') ||
+                    d.label.toLowerCase().includes('airpod') ||
+                    d.label.toLowerCase().includes('buds')
+                );
+                if (hasHeadphones) return true;
+            }
+            return channelCount >= 2;
+        } catch {
+            return false;
+        }
+    }
+
+    /**
+     * 바이노럴 모드 활성화 — 설화 목소리를 왼쪽 채널로 패닝
+     * StereoPannerNode를 SFX 체인에 삽입
+     */
+    enableBinauralMode() {
+        if (!this.ctx) return;
+        if (this._binauralPanner) return; // 이미 활성
+
+        this._binauralPanner = this.ctx.createStereoPanner();
+        this._binauralPanner.pan.value = -1; // 완전 왼쪽
+        this._binauralPanner.connect(this.masterGain);
+
+        this._binauralActive = true;
+    }
+
+    /**
+     * 바이노럴 패닝으로 SFX 재생 (설화 전용)
+     * @param {string} filename - SFX 파일명
+     * @param {number} [pan=-1] - 패닝 값 (-1: 왼쪽, 0: 중앙, 1: 오른쪽)
+     */
+    async playSFXPanned(filename, pan = -1) {
+        if (!this.ctx) return;
+
+        const synthKey = filename.replace(/\.[^.]+$/, '');
+        if (this._synthRegistry && this._synthRegistry[synthKey]) {
+            // 합성 SFX에 패닝 적용
+            const panner = this.ctx.createStereoPanner();
+            panner.pan.value = pan;
+            panner.connect(this.masterGain);
+            // 합성 함수에 destination 전달은 미지원이므로 기본 호출
+            this._synthRegistry[synthKey]({});
+            return;
+        }
+
+        const path = `assets/audio/sfx/${filename}`;
+        const buffer = await this.loadBuffer(path);
+        if (!buffer) return;
+
+        const source = this.ctx.createBufferSource();
+        source.buffer = buffer;
+
+        const panner = this.ctx.createStereoPanner();
+        panner.pan.value = pan;
+
+        const gain = this.ctx.createGain();
+        gain.gain.value = this.volumes.sfx;
+
+        source.connect(gain);
+        gain.connect(panner);
+        panner.connect(this.masterGain);
+        source.start(0);
+    }
+
+    /**
+     * 바이노럴 모드 비활성화
+     */
+    disableBinauralMode() {
+        if (this._binauralPanner) {
+            try { this._binauralPanner.disconnect(); } catch { /* ok */ }
+            this._binauralPanner = null;
+        }
+        this._binauralActive = false;
+    }
+
+    /**
+     * 바이노럴 모드 활성 여부
+     * @returns {boolean}
+     */
+    isBinauralActive() {
+        return !!this._binauralActive;
+    }
+
+    // =========================================================================
+    // 전체 페이드아웃
+    // =========================================================================
+
+    /**
+     * 모든 오디오를 페이드아웃
+     * @param {number} [durationMs=2000] - 페이드아웃 시간 (ms)
+     */
+    fadeOutAll(durationMs = 2000) {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const sec = durationMs / 1000;
+
+        if (this.masterGain) {
+            this.masterGain.gain.setValueAtTime(this.masterGain.gain.value, now);
+            this.masterGain.gain.linearRampToValueAtTime(0, now + sec);
+        }
+
+        // 페이드 완료 후 마스터 볼륨 복구
+        setTimeout(() => {
+            if (this.masterGain) {
+                this.masterGain.gain.setValueAtTime(this.volumes.master, this.ctx.currentTime);
+            }
+        }, durationMs + 100);
+    }
+
+    // =========================================================================
+    // 내부 헬퍼
+    // =========================================================================
+
     /**
      * 루프 소스 노드 생성
      * @private

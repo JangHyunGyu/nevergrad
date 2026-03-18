@@ -402,6 +402,193 @@ class MetaHorrorSystem {
     }
 
     // =========================================================================
+    // 스크린샷 감지 (SCENARIO.md 5189-5202)
+    // =========================================================================
+
+    /**
+     * 스크린샷 키 감지 초기화
+     * PrintScreen / Win+Shift+S 등을 keydown으로 감지
+     *
+     * @param {string} currentScene - 현재 씬 ID (반응할 씬 판별용)
+     */
+    initScreenshotDetection() {
+        if (this._screenshotHandler) return;
+
+        /** @type {string|null} 현재 활성 씬 컨텍스트 */
+        this._screenshotScene = null;
+
+        this._screenshotHandler = (e) => {
+            // PrintScreen 키 감지
+            const isPrintScreen = e.key === 'PrintScreen';
+            // Win+Shift+S (Snipping Tool) — Shift+S with Meta
+            const isSnipTool = e.key === 's' && e.shiftKey && e.metaKey;
+
+            if (!isPrintScreen && !isSnipTool) return;
+
+            this._onScreenshotDetected();
+        };
+
+        document.addEventListener('keydown', this._screenshotHandler);
+    }
+
+    /**
+     * 현재 씬 컨텍스트 업데이트 (스크린샷 반응 판별용)
+     * @param {string} sceneContext - 'save_slot' | 'mirror_13faces' | 'day5_docs' | 'complicit_sign' | null
+     */
+    setScreenshotContext(sceneContext) {
+        this._screenshotScene = sceneContext;
+    }
+
+    /**
+     * 스크린샷 감지 시 반응
+     * @private
+     */
+    _onScreenshotDetected() {
+        const ctx = this._screenshotScene;
+        if (!ctx) return;
+
+        const reactions = {
+            save_slot: {
+                text: '[\uAE30\uB85D \uC2DC\uB3C4 \uAC10\uC9C0] ...\uB204\uAD6C\uD55C\uD14C \uBCF4\uC5EC\uC904 \uAC70\uC57C?',
+                blackout: true,
+                blackoutDuration: 500
+            },
+            mirror_13faces: {
+                text: '\uCC0D\uC5B4\uB3C4 \uC18C\uC6A9\uC5C6\uC5B4',
+                blackout: true,
+                blackoutDuration: 1000
+            },
+            day5_docs: {
+                text: '[\uC678\uBD80 \uBC18\uCD9C \uAE08\uC9C0]',
+                blackout: false
+            },
+            complicit_sign: null // 반응 없음 — 기록을 허용한다
+        };
+
+        const reaction = reactions[ctx];
+        if (!reaction) return;
+
+        // 팬텀 텍스트 표시
+        const phantom = document.createElement('div');
+        phantom.className = 'screenshot-phantom';
+        phantom.textContent = reaction.text;
+        document.body.appendChild(phantom);
+
+        setTimeout(() => phantom.remove(), reaction.blackout ? 500 : 300);
+
+        // 암전 효과
+        if (reaction.blackout) {
+            const blackout = document.createElement('div');
+            blackout.style.cssText = `
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: #000; z-index: 199; opacity: 0;
+                transition: opacity 0.1s ease;
+            `;
+            document.body.appendChild(blackout);
+
+            requestAnimationFrame(() => {
+                blackout.style.opacity = '1';
+                setTimeout(() => {
+                    blackout.style.opacity = '0';
+                    setTimeout(() => blackout.remove(), 200);
+                }, reaction.blackoutDuration);
+            });
+        }
+    }
+
+    // =========================================================================
+    // 게임 종료 후 푸시 알림 스케줄링 (SCENARIO.md 5140-5153)
+    // =========================================================================
+
+    /**
+     * visibilitychange + setTimeout 기반 지연 알림 스케줄링
+     * Service Worker 없이 가능한 범위: 탭이 숨겨진 상태에서 setTimeout 실행
+     *
+     * @param {number} day - 현재 Day
+     * @param {boolean} isNGPlus - 2회차 여부
+     * @param {string} lastEnding - 마지막 엔딩 (COMPLICIT 전용 알림용)
+     */
+    scheduleExitNotification(day, isNGPlus, lastEnding) {
+        if (!this.pushPermission) return;
+        if (this._exitNotifScheduled) return;
+
+        const NOTIF_KEY = 'nevergrad_last_exit_notif';
+
+        // 이미 동일 Day에서 알림을 보냈으면 스킵 (최대 1회)
+        try {
+            const last = localStorage.getItem(NOTIF_KEY);
+            if (last) {
+                const parsed = JSON.parse(last);
+                if (parsed.day === day && Date.now() - parsed.time < 86400000) return;
+            }
+        } catch (e) { /* ignore */ }
+
+        // Day별 타이밍 및 메시지 결정
+        let delayMs, title, body;
+        if (day <= 3) {
+            delayMs = 30 * 60 * 1000; // 30분
+            title = '\uC740\uC218 \uC120\uC0DD\uB2D8';
+            body = '\uC5B4\uB514 \uAC14\uC5B4\uC694? \uC218\uC5C5 \uC2DC\uAC04\uC774\uC5D0\uC694 :)';
+        } else if (day === 4 && !isNGPlus) {
+            delayMs = 15 * 60 * 1000; // 15분
+            title = '\uD55C\uC138\uC544';
+            body = '...\uC65C \uC548 \uC640?';
+        } else if (day === 4 && isNGPlus) {
+            delayMs = 10 * 60 * 1000; // 10분
+            title = '\uD55C\uC6B8 \uC548\uC804 \uC571';
+            body = '\uD53C\uD5D8\uC790 #13 \uC774\uD0C8 \uAC10\uC9C0. \uC704\uCE58 \uCD94\uC801 \uC911.';
+        } else if (day === 5) {
+            delayMs = 24 * 60 * 60 * 1000; // 24시간
+            title = '\uD55C\uC6B8 \uC548\uC804 \uC571';
+            body = '\uC81C13\uCC28 \uC8FC\uAE30 \uC2DC\uAC04 \uCD08\uACFC. \uC7AC\uD22C\uC785 \uC900\uBE44.';
+        } else {
+            return;
+        }
+
+        this._exitNotifScheduled = true;
+
+        const scheduleHandler = () => {
+            if (!document.hidden) return;
+
+            // 탭이 숨겨지면 타이머 시작
+            this._exitNotifTimer = setTimeout(() => {
+                const playerName = this.engine?.state?.playerName || '';
+                this.sendPushNotification(title, body.replace('{name}', playerName));
+
+                // 기록 저장
+                try {
+                    localStorage.setItem(NOTIF_KEY, JSON.stringify({ day, time: Date.now() }));
+                } catch (e) { /* ignore */ }
+
+                // 리스너 제거
+                document.removeEventListener('visibilitychange', scheduleHandler);
+                this._exitNotifScheduled = false;
+            }, delayMs);
+
+            // 탭으로 돌아오면 취소
+            const cancelOnReturn = () => {
+                if (!document.hidden && this._exitNotifTimer) {
+                    clearTimeout(this._exitNotifTimer);
+                    this._exitNotifTimer = null;
+                }
+            };
+            document.addEventListener('visibilitychange', cancelOnReturn, { once: true });
+        };
+
+        document.addEventListener('visibilitychange', scheduleHandler);
+
+        // 정리 함수 저장
+        this._exitNotifCleanup = () => {
+            document.removeEventListener('visibilitychange', scheduleHandler);
+            if (this._exitNotifTimer) {
+                clearTimeout(this._exitNotifTimer);
+                this._exitNotifTimer = null;
+            }
+            this._exitNotifScheduled = false;
+        };
+    }
+
+    // =========================================================================
     // 비활성화 / 정리
     // =========================================================================
 
@@ -428,6 +615,19 @@ class MetaHorrorSystem {
      */
     destroy() {
         this.deactivate();
+
+        // 스크린샷 감지 정리
+        if (this._screenshotHandler) {
+            document.removeEventListener('keydown', this._screenshotHandler);
+            this._screenshotHandler = null;
+        }
+        this._screenshotScene = null;
+
+        // 푸시 알림 스케줄링 정리
+        if (this._exitNotifCleanup) {
+            this._exitNotifCleanup();
+            this._exitNotifCleanup = null;
+        }
 
         // 콘솔 트랩 프로퍼티 정리
         try {

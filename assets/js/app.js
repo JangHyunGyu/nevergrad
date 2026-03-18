@@ -112,6 +112,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 메타 공포 시스템 초기화
     game.metaHorror = new MetaHorrorSystem(game);
 
+    // 확장 글리치 시스템 초기화
+    game.glitchAdvanced = new GlitchSystemAdvanced(game);
+
+    // 스크린샷 감지 초기화 (SCENARIO.md 5189-5202)
+    game.metaHorror.initScreenshotDetection();
+
+    // 바이노럴 오디오 감지 (SCENARIO.md 5174-5185)
+    game.audio.detectStereoOutput().then(isStereo => {
+        if (isStereo) {
+            game.audio.enableBinauralMode();
+        }
+    });
+
     // AI 프리토킹 시스템 초기화
     game.freeTalk = new FreeTalkSystem(game);
 

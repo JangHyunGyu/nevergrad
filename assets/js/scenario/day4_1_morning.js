@@ -181,8 +181,15 @@ Object.assign(SCENARIO[4], {
         character: null,
         next: "day4_morning_commute_4"
     },
-    // '피험자'? 보안 앱 버그겠지... 아니다
+    // '피험자'? — met_yuna에 따라 다른 해석
     "day4_morning_commute_4": {
+        character: null,
+        branches: [
+            { condition: "met_yuna", next: "day4_morning_commute_4_yuna" }
+        ],
+        next: "day4_morning_commute_5"
+    },
+    "day4_morning_commute_4_yuna": {
         character: null,
         next: "day4_morning_commute_5"
     },
@@ -470,8 +477,16 @@ Object.assign(SCENARIO[4], {
         character: "eunsu_gentle",
         next: "day4_morning_class_3"
     },
-    // 출석부 — 유나의 이름이 수정 테이프로 지워져 있다
+    // 출석부 — met_yuna에 따라 유나 이름 언급 여부 분기
     "day4_morning_class_3": {
+        character: "eunsu_gentle",
+        glitch: { noise: true, noiseDuration: 150 },
+        branches: [
+            { condition: "met_yuna", next: "day4_morning_class_3_met" }
+        ],
+        next: "day4_morning_class_4"
+    },
+    "day4_morning_class_3_met": {
         character: "eunsu_gentle",
         glitch: { noise: true, noiseDuration: 150 },
         next: "day4_morning_class_4"
@@ -515,8 +530,15 @@ Object.assign(SCENARIO[4], {
         unskippable: true,
         next: "day4_morning_class_11"
     },
-    // 아니, 29쌍. 유나의 자리만 비어있다
+    // 아니, 29쌍 — met_yuna에 따라 유나 자리 언급 분기
     "day4_morning_class_11": {
+        character: null,
+        branches: [
+            { condition: "met_yuna", next: "day4_morning_class_11_met" }
+        ],
+        next: "day4_morning_class_12"
+    },
+    "day4_morning_class_11_met": {
         character: null,
         next: "day4_morning_class_12"
     },

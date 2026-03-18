@@ -3,9 +3,34 @@
         "name": "나",
         "text": "*점심시간. 책상 서랍을 열었는데, 쪽지가 들어있다.*"
     },
-    "day3_lunch_note": {
+    "day3_lunch_note_yuna": {
         "name": "나",
         "text": "*'선배, 점심때 옥상으로 와주세요. 꼭 혼자서요. 중요한 게 있어요. - 유나'*"
+    },
+    "day3_lunch_note_yuna_2": {
+        "name": "나",
+        "text": "*유나... 도서관에서 만났던 후배. 무슨 일이지?*"
+    },
+    "day3_lunch_note_unknown": {
+        "name": "나",
+        "text": "*'선배, 점심때 옥상으로 와주세요. 꼭 혼자서요. 중요한 게 있어요. - 유나'*"
+    },
+    "day3_lunch_note_unknown_2": {
+        "name": "나",
+        "text": "*유나? ...모르는 이름인데.*"
+    },
+    "day3_lunch_note_unknown_3": {
+        "name": "나",
+        "text": "*장난인가. 누군지도 모르는 사람한테 불려갈 이유는 없다.*"
+    },
+    "day3_lunch_choice_no_yuna": {
+        "name": "나",
+        "text": "*...어떻게 할까?*",
+        "choices": [
+            "세아와 점심을 먹는다",
+            "보건실에 간다",
+            "혼자 교실에 남는다"
+        ]
     },
     "day3_lunch_choice": {
         "name": "나",

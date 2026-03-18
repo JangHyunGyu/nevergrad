@@ -3,9 +3,34 @@
         "name": "Moi",
         "text": "*Pause dejeuner. J'ai ouvert le tiroir de mon bureau, et il y a un mot a l'interieur.*"
     },
-    "day3_lunch_note": {
+    "day3_lunch_note_yuna": {
         "name": "Moi",
-        "text": "*'Senpai, venez sur le toit a la pause dejeuner. Venez seul, s'il vous plait. C'est important. - Yuna'*"
+        "text": "*« Senpai, venez sur le toit à midi. Seul, s'il vous plaît. C'est important. – Yuna »*"
+    },
+    "day3_lunch_note_yuna_2": {
+        "name": "Moi",
+        "text": "*Yuna... la fille de la bibliothèque. Qu'est-ce qui se passe ?*"
+    },
+    "day3_lunch_note_unknown": {
+        "name": "Moi",
+        "text": "*« Senpai, venez sur le toit à midi. Seul, s'il vous plaît. C'est important. – Yuna »*"
+    },
+    "day3_lunch_note_unknown_2": {
+        "name": "Moi",
+        "text": "*Yuna ? ...Ce nom ne me dit rien.*"
+    },
+    "day3_lunch_note_unknown_3": {
+        "name": "Moi",
+        "text": "*Sûrement une blague. Pas de raison d'aller voir quelqu'un que je ne connais même pas.*"
+    },
+    "day3_lunch_choice_no_yuna": {
+        "name": "Moi",
+        "text": "*...Qu'est-ce que je fais ?*",
+        "choices": [
+            "Déjeuner avec Sea",
+            "Aller à l'infirmerie",
+            "Rester seul en classe"
+        ]
     },
     "day3_lunch_choice": {
         "name": "Moi",

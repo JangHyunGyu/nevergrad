@@ -3,9 +3,34 @@
         "name": "僕",
         "text": "*昼休み。机の引き出しを開けたら、メモが入っていた。*"
     },
-    "day3_lunch_note": {
+    "day3_lunch_note_yuna": {
         "name": "僕",
         "text": "*「先輩、お昼に屋上に来てください。必ず一人で。大事なことがあるんです。——ユナ」*"
+    },
+    "day3_lunch_note_yuna_2": {
+        "name": "僕",
+        "text": "*ユナ……図書室で会った後輩。何があったんだ？*"
+    },
+    "day3_lunch_note_unknown": {
+        "name": "僕",
+        "text": "*「先輩、お昼に屋上に来てください。必ず一人で。大事なことがあるんです。——ユナ」*"
+    },
+    "day3_lunch_note_unknown_2": {
+        "name": "僕",
+        "text": "*ユナ？……知らない名前だ。*"
+    },
+    "day3_lunch_note_unknown_3": {
+        "name": "僕",
+        "text": "*いたずらか。知らない人間に呼び出される理由はない。*"
+    },
+    "day3_lunch_choice_no_yuna": {
+        "name": "僕",
+        "text": "*……どうしよう？*",
+        "choices": [
+            "セアと昼食を食べる",
+            "保健室へ行く",
+            "一人で教室に残る"
+        ]
     },
     "day3_lunch_choice": {
         "name": "僕",

@@ -3,9 +3,34 @@
         "name": "Yo",
         "text": "*Hora del almuerzo. Abri el cajon del pupitre y hay una nota dentro.*"
     },
-    "day3_lunch_note": {
+    "day3_lunch_note_yuna": {
         "name": "Yo",
-        "text": "*'Senpai, ven a la azotea a la hora del almuerzo. Ven solo, por favor. Es importante. - Yuna'*"
+        "text": "*'Senpai, ven a la azotea a la hora del almuerzo. Asegúrate de venir solo. Es importante. - Yuna'*"
+    },
+    "day3_lunch_note_yuna_2": {
+        "name": "Yo",
+        "text": "*Yuna... la chica de la biblioteca. ¿Qué está pasando?*"
+    },
+    "day3_lunch_note_unknown": {
+        "name": "Yo",
+        "text": "*'Senpai, ven a la azotea a la hora del almuerzo. Asegúrate de venir solo. Es importante. - Yuna'*"
+    },
+    "day3_lunch_note_unknown_2": {
+        "name": "Yo",
+        "text": "*¿Yuna? ...No conozco ese nombre.*"
+    },
+    "day3_lunch_note_unknown_3": {
+        "name": "Yo",
+        "text": "*Será una broma. No tengo razón para ir a ver a alguien que ni conozco.*"
+    },
+    "day3_lunch_choice_no_yuna": {
+        "name": "Yo",
+        "text": "*...¿Qué hago?*",
+        "choices": [
+            "Almorzar con Sea",
+            "Ir a la enfermería",
+            "Quedarme solo en el aula"
+        ]
     },
     "day3_lunch_choice": {
         "name": "Yo",

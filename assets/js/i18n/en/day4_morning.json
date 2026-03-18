@@ -61,6 +61,10 @@
     },
     "day4_morning_start_16": {
         "name": "Me",
+        "text": "*...No. Someone was definitely standing there.*"
+    },
+    "day4_morning_start_16_yuna": {
+        "name": "Me",
         "text": "*Yuna's words come back to me. 'There are always the same people around this school. Not parents, not residents.'*"
     },
     "day4_morning_start_17": {
@@ -110,7 +114,11 @@
     },
     "day4_morning_commute_4": {
         "name": "Me",
-        "text": "*...What did it just say? 'Subject'? ...Must be a bug in the security app. No. It's not a bug. Yuna showed me yesterday. What this app really is.*"
+        "text": "*...What did that just say? 'Subject'? ...Must be a security app bug. ...It should be. But too many things have been strange.*"
+    },
+    "day4_morning_commute_4_yuna": {
+        "name": "Me",
+        "text": "*...What did that just say? 'Subject'? ...Must be a security app bug. No. Yuna showed me yesterday. The 13 transfer students. The word 'subject' fits perfectly.*"
     },
     "day4_morning_commute_5": {
         "name": "Me",
@@ -224,21 +232,37 @@
         "name": "Me",
         "text": "*I entered the classroom.*"
     },
-    "day4_morning_classroom_2": {
+    "day4_morning_classroom_met": {
         "name": "Me",
         "text": "***Yuna's seat. Empty. No bag. No trace of her at all.***"
     },
-    "day4_morning_classroom_3": {
+    "day4_morning_classroom_met_2": {
         "name": "Me",
-        "text": "*The desk is clean. Too clean. Not a single piece of graffiti. As if no one has ever sat there.*"
+        "text": "*The desk is clean. Too clean. Not a single doodle. As if no one ever sat there.*"
     },
-    "day4_morning_classroom_4": {
+    "day4_morning_classroom_met_3": {
         "name": "Me",
-        "text": "*...Until yesterday, there were stickers on it. Photography club stickers. Those are gone too.*"
+        "text": "*...There were stickers on it until yesterday. Photo club stickers. Those are gone too.*"
     },
-    "day4_morning_classroom_5": {
+    "day4_morning_classroom_met_4": {
         "name": "Me",
-        "text": "\"Yuna isn't here...\""
+        "text": "\"Yuna didn't come today...\""
+    },
+    "day4_morning_classroom_notmet": {
+        "name": "Me",
+        "text": "*...My eyes stop somewhere. Second row by the window. One empty seat.*"
+    },
+    "day4_morning_classroom_notmet_2": {
+        "name": "Me",
+        "text": "*That desk is unusually clean. The desks around it have textbooks, pencil cases, doodles. That one has nothing.*"
+    },
+    "day4_morning_classroom_notmet_3": {
+        "name": "Sea",
+        "text": "\"That seat? It's always been empty.\""
+    },
+    "day4_morning_classroom_notmet_4": {
+        "name": "Me",
+        "text": "*...Nobody goes near that seat. Nobody sets their bag there, nobody borrows the chair. As if something's there.*"
     },
     "day4_morning_sea": {
         "name": "Han Sea",
@@ -251,6 +275,10 @@
     "day4_morning_sea_3": {
         "name": "Han Sea",
         "text": "\"Last night, I think?\""
+    },
+    "day4_morning_sea_3a": {
+        "name": "Me",
+        "text": "*Yuna... the underclassman from the library. A sudden transfer?*"
     },
     "day4_morning_sea_4": {
         "name": "Me",
@@ -291,7 +319,11 @@
     },
     "day4_morning_class_3": {
         "name": "Me",
-        "text": "*...The attendance sheet lies open on the lectern. The space where Yuna's name should be -- is blank. I can see traces of correction tape.*"
+        "text": "*...The attendance ledger is open on the podium. There's one empty field in the middle. Traces of correction tape.*"
+    },
+    "day4_morning_class_3_met": {
+        "name": "Me",
+        "text": "*...The attendance ledger is open on the podium. The field where Yuna's name should be -- it's blank. Traces of correction tape.*"
     },
     "day4_morning_class_4": {
         "name": "Eunsu",
@@ -323,7 +355,11 @@
     },
     "day4_morning_class_11": {
         "name": "Me",
-        "text": "*...No, twenty-nine pairs. Only Yuna's seat is empty.*"
+        "text": "*...No, 29 pairs. That clean, empty desk.*"
+    },
+    "day4_morning_class_11_met": {
+        "name": "Me",
+        "text": "*...No, 29 pairs. Only Yuna's seat is empty.*"
     },
     "day4_morning_class_12": {
         "name": "Me",

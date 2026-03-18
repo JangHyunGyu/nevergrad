@@ -61,6 +61,10 @@
     },
     "day4_morning_start_16": {
         "name": "나",
+        "text": "*...아닌 것 같다. 분명히 누군가 서 있었다.*"
+    },
+    "day4_morning_start_16_yuna": {
+        "name": "나",
         "text": "*유나의 말이 떠오른다. '이 학교 주변에 항상 같은 사람들이 있어요. 학부모도 아니고, 주민도 아닌 사람들.'*"
     },
     "day4_morning_start_17": {
@@ -110,7 +114,11 @@
     },
     "day4_morning_commute_4": {
         "name": "나",
-        "text": "*...방금 뭐라고 떴지? '피험자'? ...보안 앱 버그겠지. 아니다. 버그가 아니다. 어제 유나가 보여줬잖아. 이 앱이 뭔지.*"
+        "text": "*...방금 뭐라고 떴지? '피험자'? ...보안 앱 버그겠지. ...그래야 하는데. 이상한 것들이 너무 많다.*"
+    },
+    "day4_morning_commute_4_yuna": {
+        "name": "나",
+        "text": "*...방금 뭐라고 떴지? '피험자'? ...보안 앱 버그겠지. 아니다. 어제 유나가 보여줬잖아. 13명의 전학생. '피험자'라는 단어가 맞아떨어진다.*"
     },
     "day4_morning_commute_5": {
         "name": "나",
@@ -224,21 +232,37 @@
         "name": "나",
         "text": "*교실에 들어섰다.*"
     },
-    "day4_morning_classroom_2": {
+    "day4_morning_classroom_met": {
         "name": "나",
         "text": "***유나의 자리. 비어있다. 가방도 없다. 흔적 자체가 없다.***"
     },
-    "day4_morning_classroom_3": {
+    "day4_morning_classroom_met_2": {
         "name": "나",
         "text": "*책상이 깨끗하다. 너무 깨끗하다. 낙서 하나 없다. 마치 한 번도 누가 앉은 적 없는 것처럼.*"
     },
-    "day4_morning_classroom_4": {
+    "day4_morning_classroom_met_3": {
         "name": "나",
         "text": "*...어제까지 스티커가 붙어 있었다. 사진부 스티커. 그것도 없다.*"
     },
-    "day4_morning_classroom_5": {
+    "day4_morning_classroom_met_4": {
         "name": "나",
         "text": "\"유나가 안 왔는데...\""
+    },
+    "day4_morning_classroom_notmet": {
+        "name": "나",
+        "text": "*...시선이 어딘가에 멈춘다. 창가 두 번째 줄. 비어있는 자리 하나.*"
+    },
+    "day4_morning_classroom_notmet_2": {
+        "name": "나",
+        "text": "*책상이 유난히 깨끗하다. 주변 책상에는 교과서도, 필통도, 낙서도 있는데. 저 자리만 아무것도 없다.*"
+    },
+    "day4_morning_classroom_notmet_3": {
+        "name": "한세아",
+        "text": "\"그 자리? 원래 빈 자리야.\""
+    },
+    "day4_morning_classroom_notmet_4": {
+        "name": "나",
+        "text": "*...아무도 그 자리 쪽으로 가지 않는다. 가방을 놓는 애도, 의자를 빌리는 애도 없다. 마치 거기에 뭔가가 있는 것처럼.*"
     },
     "day4_morning_sea": {
         "name": "한세아",
@@ -251,6 +275,10 @@
     "day4_morning_sea_3": {
         "name": "한세아",
         "text": "\"어젯밤인가?\""
+    },
+    "day4_morning_sea_3a": {
+        "name": "나",
+        "text": "*유나... 도서관에서 만난 후배인데. 갑자기 전학이라니?*"
     },
     "day4_morning_sea_4": {
         "name": "나",
@@ -291,6 +319,10 @@
     },
     "day4_morning_class_3": {
         "name": "나",
+        "text": "*...교탁 위에 출석부가 펼쳐져 있다. 중간에 비어 있는 칸이 하나 있다. 수정 테이프로 지운 흔적이 보인다.*"
+    },
+    "day4_morning_class_3_met": {
+        "name": "나",
         "text": "*...교탁 위에 출석부가 펼쳐져 있다. 유나의 이름이 있어야 할 칸이 — 비어 있다. 수정 테이프로 지운 흔적이 보인다.*"
     },
     "day4_morning_class_4": {
@@ -322,6 +354,10 @@
         "text": "*교실의 모든 시선이 나를 향한다. 30쌍의 눈. 전부 웃고 있다.*"
     },
     "day4_morning_class_11": {
+        "name": "나",
+        "text": "*...아니, 29쌍. 아까 그 깨끗한 빈 자리.*"
+    },
+    "day4_morning_class_11_met": {
         "name": "나",
         "text": "*...아니, 29쌍. 유나의 자리만 비어있다.*"
     },

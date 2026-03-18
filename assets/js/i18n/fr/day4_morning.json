@@ -61,7 +61,11 @@
     },
     "day4_morning_start_16": {
         "name": "Moi",
-        "text": "*Les mots de Yuna me reviennent. 'Il y a toujours les mêmes personnes autour de cette école. Ni parents, ni résidents.'*"
+        "text": "*...Non. Quelqu'un se tenait bien là.*"
+    },
+    "day4_morning_start_16_yuna": {
+        "name": "Moi",
+        "text": "*Les mots de Yuna me reviennent. « Il y a toujours les mêmes personnes autour de cette école. Ni parents, ni voisins. »*"
     },
     "day4_morning_start_17": {
         "name": "Moi",
@@ -110,7 +114,11 @@
     },
     "day4_morning_commute_4": {
         "name": "Moi",
-        "text": "*...Qu'est-ce que ça vient de dire ? 'Sujet' ? ...Un bug de l'application de sécurité, sûrement. Non. Ce n'est pas un bug. Yuna me l'a montré hier. Ce qu'est vraiment cette application.*"
+        "text": "*...Qu'est-ce que ça vient d'afficher ? « Sujet » ? ...Un bug de l'appli de sécurité, sûrement. ...Ça devrait l'être. Mais il y a trop de choses étranges.*"
+    },
+    "day4_morning_commute_4_yuna": {
+        "name": "Moi",
+        "text": "*...Qu'est-ce que ça vient d'afficher ? « Sujet » ? ...Un bug de l'appli de sécurité. Non. Yuna me l'a montré hier. Les 13 étudiants transférés. Le mot « sujet » colle parfaitement.*"
     },
     "day4_morning_commute_5": {
         "name": "Moi",
@@ -224,21 +232,37 @@
         "name": "Moi",
         "text": "*Je suis entré dans la salle de classe.*"
     },
-    "day4_morning_classroom_2": {
+    "day4_morning_classroom_met": {
         "name": "Moi",
-        "text": "***La place de Yuna. Vide. Pas de sac. Aucune trace.***"
+        "text": "***La place de Yuna. Vide. Pas de sac. Aucune trace d'elle.***"
     },
-    "day4_morning_classroom_3": {
+    "day4_morning_classroom_met_2": {
         "name": "Moi",
         "text": "*Le bureau est propre. Trop propre. Pas un seul gribouillage. Comme si personne ne s'y était jamais assis.*"
     },
-    "day4_morning_classroom_4": {
+    "day4_morning_classroom_met_3": {
         "name": "Moi",
-        "text": "*...Jusqu'à hier, il y avait des autocollants. Des autocollants du club photo. Eux aussi ont disparu.*"
+        "text": "*...Hier encore il y avait des autocollants. Ceux du club photo. Eux aussi ont disparu.*"
     },
-    "day4_morning_classroom_5": {
+    "day4_morning_classroom_met_4": {
         "name": "Moi",
-        "text": "\"Yuna n'est pas venue...\""
+        "text": "\"Yuna n'est pas venue aujourd'hui...\""
+    },
+    "day4_morning_classroom_notmet": {
+        "name": "Moi",
+        "text": "*...Mon regard s'arrête quelque part. Deuxième rangée côté fenêtre. Un siège vide.*"
+    },
+    "day4_morning_classroom_notmet_2": {
+        "name": "Moi",
+        "text": "*Ce bureau est étrangement propre. Autour, les autres ont des manuels, des trousses, des gribouillages. Celui-là n'a rien.*"
+    },
+    "day4_morning_classroom_notmet_3": {
+        "name": "Sea",
+        "text": "\"Cette place ? Elle a toujours été vide.\""
+    },
+    "day4_morning_classroom_notmet_4": {
+        "name": "Moi",
+        "text": "*...Personne ne s'approche de cette place. Personne n'y pose son sac ni n'emprunte la chaise. Comme s'il y avait quelque chose là.*"
     },
     "day4_morning_sea": {
         "name": "Han Sea",
@@ -251,6 +275,10 @@
     "day4_morning_sea_3": {
         "name": "Han Sea",
         "text": "\"Hier soir, je crois ?\""
+    },
+    "day4_morning_sea_3a": {
+        "name": "Moi",
+        "text": "*Yuna... la fille de la bibliothèque. Un transfert soudain ?*"
     },
     "day4_morning_sea_4": {
         "name": "Moi",
@@ -291,7 +319,11 @@
     },
     "day4_morning_class_3": {
         "name": "Moi",
-        "text": "*...Le cahier d'appel est ouvert sur l'estrade. L'espace où le nom de Yuna devrait être -- est vide. On voit les traces de ruban correcteur.*"
+        "text": "*...Le registre de présence est ouvert sur l'estrade. Il y a un champ vide au milieu. Des traces de correcteur blanc.*"
+    },
+    "day4_morning_class_3_met": {
+        "name": "Moi",
+        "text": "*...Le registre de présence est ouvert sur l'estrade. La case où devrait être le nom de Yuna est vide. Des traces de correcteur blanc.*"
     },
     "day4_morning_class_4": {
         "name": "Eunsu",
@@ -323,7 +355,11 @@
     },
     "day4_morning_class_11": {
         "name": "Moi",
-        "text": "*...Non, vingt-neuf paires. Seule la place de Yuna est vide.*"
+        "text": "*...Non, 29 paires. Ce bureau vide et propre.*"
+    },
+    "day4_morning_class_11_met": {
+        "name": "Moi",
+        "text": "*...Non, 29 paires. Seule la place de Yuna est vide.*"
     },
     "day4_morning_class_12": {
         "name": "Moi",

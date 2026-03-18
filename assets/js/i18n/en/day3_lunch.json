@@ -3,9 +3,34 @@
         "name": "Me",
         "text": "*Lunchtime. I opened my desk drawer, and there's a note inside.*"
     },
-    "day3_lunch_note": {
+    "day3_lunch_note_yuna": {
         "name": "Me",
         "text": "*'Senpai, please come to the rooftop during lunch. Make sure you come alone. It's important. - Yuna'*"
+    },
+    "day3_lunch_note_yuna_2": {
+        "name": "Me",
+        "text": "*Yuna... the underclassman from the library. What's going on?*"
+    },
+    "day3_lunch_note_unknown": {
+        "name": "Me",
+        "text": "*'Senpai, please come to the rooftop during lunch. Make sure you come alone. It's important. - Yuna'*"
+    },
+    "day3_lunch_note_unknown_2": {
+        "name": "Me",
+        "text": "*Yuna? ...I don't know that name.*"
+    },
+    "day3_lunch_note_unknown_3": {
+        "name": "Me",
+        "text": "*Probably a prank. No reason to go meet someone I don't even know.*"
+    },
+    "day3_lunch_choice_no_yuna": {
+        "name": "Me",
+        "text": "*...What should I do?*",
+        "choices": [
+            "Have lunch with Sea",
+            "Go to the nurse's office",
+            "Stay in the classroom alone"
+        ]
     },
     "day3_lunch_choice": {
         "name": "Me",

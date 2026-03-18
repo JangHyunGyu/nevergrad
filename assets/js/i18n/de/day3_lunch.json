@@ -3,9 +3,34 @@
         "name": "Ich",
         "text": "*Mittagspause. Ich offnete die Schublade und ein Zettel liegt darin.*"
     },
-    "day3_lunch_note": {
+    "day3_lunch_note_yuna": {
         "name": "Ich",
-        "text": "*'Senpai, bitte komm in der Mittagspause aufs Dach. Unbedingt alleine. Es ist wichtig. - Yuna'*"
+        "text": "*‚Senpai, bitte komm in der Mittagspause aufs Dach. Allein. Es ist wichtig. – Yuna'*"
+    },
+    "day3_lunch_note_yuna_2": {
+        "name": "Ich",
+        "text": "*Yuna... das Mädchen aus der Bibliothek. Was ist los?*"
+    },
+    "day3_lunch_note_unknown": {
+        "name": "Ich",
+        "text": "*‚Senpai, bitte komm in der Mittagspause aufs Dach. Allein. Es ist wichtig. – Yuna'*"
+    },
+    "day3_lunch_note_unknown_2": {
+        "name": "Ich",
+        "text": "*Yuna? ...Den Namen kenne ich nicht.*"
+    },
+    "day3_lunch_note_unknown_3": {
+        "name": "Ich",
+        "text": "*Wahrscheinlich ein Scherz. Kein Grund, jemanden zu treffen, den ich nicht mal kenne.*"
+    },
+    "day3_lunch_choice_no_yuna": {
+        "name": "Ich",
+        "text": "*...Was soll ich tun?*",
+        "choices": [
+            "Mit Sea zu Mittag essen",
+            "Zum Krankenzimmer gehen",
+            "Allein im Klassenzimmer bleiben"
+        ]
     },
     "day3_lunch_choice": {
         "name": "Ich",

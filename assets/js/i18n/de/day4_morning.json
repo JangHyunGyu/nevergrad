@@ -61,7 +61,11 @@
     },
     "day4_morning_start_16": {
         "name": "Ich",
-        "text": "*Yunas Worte kommen mir in den Sinn. 'Um diese Schule herum sind immer die gleichen Leute. Keine Eltern, keine Anwohner.'*"
+        "text": "*...Nein. Da stand definitiv jemand.*"
+    },
+    "day4_morning_start_16_yuna": {
+        "name": "Ich",
+        "text": "*Yunas Worte kommen mir in den Sinn. ‚Um diese Schule herum sind immer dieselben Leute. Keine Eltern, keine Anwohner.'*"
     },
     "day4_morning_start_17": {
         "name": "Ich",
@@ -110,7 +114,11 @@
     },
     "day4_morning_commute_4": {
         "name": "Ich",
-        "text": "*...Was stand da gerade? 'Proband'? ...Bestimmt ein Bug der Sicherheits-App. Nein. Kein Bug. Yuna hat es mir gestern gezeigt. Was diese App wirklich ist.*"
+        "text": "*...Was stand da gerade? ‚Proband'? ...Ein Bug der Sicherheits-App, bestimmt. ...Sollte es sein. Aber zu viele Dinge sind seltsam.*"
+    },
+    "day4_morning_commute_4_yuna": {
+        "name": "Ich",
+        "text": "*...Was stand da gerade? ‚Proband'? ...Ein Bug der Sicherheits-App. Nein. Yuna hat es mir gestern gezeigt. Die 13 Transferschüler. Das Wort ‚Proband' passt perfekt.*"
     },
     "day4_morning_commute_5": {
         "name": "Ich",
@@ -224,21 +232,37 @@
         "name": "Ich",
         "text": "*Ich betrat den Klassenraum.*"
     },
-    "day4_morning_classroom_2": {
+    "day4_morning_classroom_met": {
         "name": "Ich",
         "text": "***Yunas Platz. Leer. Keine Tasche. Keine Spur von ihr.***"
     },
-    "day4_morning_classroom_3": {
+    "day4_morning_classroom_met_2": {
         "name": "Ich",
         "text": "*Der Tisch ist sauber. Zu sauber. Kein einziges Gekritzel. Als hätte dort nie jemand gesessen.*"
     },
-    "day4_morning_classroom_4": {
+    "day4_morning_classroom_met_3": {
         "name": "Ich",
-        "text": "*...Bis gestern waren Aufkleber drauf. Aufkleber vom Fotografie-Club. Auch die sind weg.*"
+        "text": "*...Gestern waren noch Sticker drauf. Sticker vom Fotoclub. Auch die sind weg.*"
     },
-    "day4_morning_classroom_5": {
+    "day4_morning_classroom_met_4": {
         "name": "Ich",
-        "text": "\"Yuna ist nicht da...\""
+        "text": "\"Yuna ist heute nicht da...\""
+    },
+    "day4_morning_classroom_notmet": {
+        "name": "Ich",
+        "text": "*...Mein Blick bleibt irgendwo hängen. Zweite Reihe am Fenster. Ein leerer Platz.*"
+    },
+    "day4_morning_classroom_notmet_2": {
+        "name": "Ich",
+        "text": "*Dieser Tisch ist auffallend sauber. Die Tische drumherum haben Bücher, Federmäppchen, Gekritzel. Dieser hat gar nichts.*"
+    },
+    "day4_morning_classroom_notmet_3": {
+        "name": "Sea",
+        "text": "\"Der Platz? Der war schon immer leer.\""
+    },
+    "day4_morning_classroom_notmet_4": {
+        "name": "Ich",
+        "text": "*...Niemand geht an diesen Platz. Niemand stellt dort seine Tasche ab oder leiht sich den Stuhl. Als wäre dort etwas.*"
     },
     "day4_morning_sea": {
         "name": "Han Sea",
@@ -251,6 +275,10 @@
     "day4_morning_sea_3": {
         "name": "Han Sea",
         "text": "\"Gestern Nacht, glaube ich?\""
+    },
+    "day4_morning_sea_3a": {
+        "name": "Ich",
+        "text": "*Yuna... das Mädchen aus der Bibliothek. Ein plötzlicher Schulwechsel?*"
     },
     "day4_morning_sea_4": {
         "name": "Ich",
@@ -291,7 +319,11 @@
     },
     "day4_morning_class_3": {
         "name": "Ich",
-        "text": "*...Das Klassenbuch liegt aufgeschlagen auf dem Pult. Die Stelle, wo Yunas Name stehen sollte -- ist leer. Spuren von Korrekturband sind zu sehen.*"
+        "text": "*...Das Klassenbuch liegt aufgeschlagen auf dem Pult. In der Mitte ist ein leeres Feld. Spuren von Korrekturband.*"
+    },
+    "day4_morning_class_3_met": {
+        "name": "Ich",
+        "text": "*...Das Klassenbuch liegt aufgeschlagen auf dem Pult. Das Feld, wo Yunas Name stehen sollte — ist leer. Spuren von Korrekturband.*"
     },
     "day4_morning_class_4": {
         "name": "Eunsu",
@@ -323,7 +355,11 @@
     },
     "day4_morning_class_11": {
         "name": "Ich",
-        "text": "*...Nein, neunundzwanzig Paare. Nur Yunas Platz ist leer.*"
+        "text": "*...Nein, 29 Paar. Dieser saubere, leere Platz.*"
+    },
+    "day4_morning_class_11_met": {
+        "name": "Ich",
+        "text": "*...Nein, 29 Paar. Nur Yunas Platz ist leer.*"
     },
     "day4_morning_class_12": {
         "name": "Ich",

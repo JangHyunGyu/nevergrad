@@ -70,6 +70,9 @@ class FreeTalkSystem {
 
         /** @type {number} FreeTalk 전체(3턴) 최대 누적 호감도 변경량 */
         this._maxAffinityPerSession = 9;
+
+        /** @type {Function|null} visualViewport resize 핸들러 (키보드 회피) */
+        this._vvHandler = null;
     }
 
     // =========================================================================
@@ -768,6 +771,9 @@ ${memories}
 
         // 전송 이벤트 바인딩 (기존 리스너 제거 후 재바인딩)
         this._bindChatEvents();
+
+        // 모바일: 가상 키보드 회피 (입력창 올리기)
+        this._attachKeyboardAvoidance('chat');
     }
 
     /**
@@ -775,6 +781,8 @@ ${memories}
      * @private
      */
     _hideFreeTalkScreen() {
+        this._detachKeyboardAvoidance();
+
         const ftScreen = document.getElementById('freetalk-screen');
         if (ftScreen) {
             ftScreen.classList.add('hidden');
@@ -1072,9 +1080,14 @@ ${memories}
         panel.appendChild(container);
 
         setTimeout(() => input.focus(), 100);
+
+        // 모바일: 가상 키보드 회피 (패널 높이를 visual viewport에 맞춤)
+        this._attachKeyboardAvoidance('panel');
     }
 
     _hideInputUI() {
+        this._detachKeyboardAvoidance();
+
         const panel = document.getElementById('choice-panel');
         if (!panel) return;
 
@@ -1125,6 +1138,58 @@ ${memories}
 
     _delay(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    // =========================================================================
+    //  모바일 가상 키보드 회피
+    // =========================================================================
+
+    /**
+     * 입력창이 가상 키보드에 가려지지 않도록 visualViewport resize 이벤트 등록.
+     *
+     * @param {'chat'|'panel'} mode
+     *   'chat'  — #freetalk-screen의 .ft-input-area bottom 오프셋 조정
+     *   'panel' — #choice-panel 높이를 visual viewport 높이로 제한
+     */
+    _attachKeyboardAvoidance(mode) {
+        if (!window.visualViewport) return;
+        this._detachKeyboardAvoidance();
+
+        if (mode === 'chat') {
+            const inputArea = document.querySelector('#freetalk-screen .ft-input-area');
+            if (!inputArea) return;
+            this._vvHandler = () => {
+                const keyboardHeight = Math.max(0, window.innerHeight - window.visualViewport.height);
+                inputArea.style.bottom = keyboardHeight + 'px';
+            };
+        } else if (mode === 'panel') {
+            const panel = document.getElementById('choice-panel');
+            if (!panel) return;
+            this._vvHandler = () => {
+                const vv = window.visualViewport;
+                panel.style.top = vv.offsetTop + 'px';
+                panel.style.height = vv.height + 'px';
+            };
+        }
+
+        window.visualViewport.addEventListener('resize', this._vvHandler);
+        // 등록 직후 한 번 실행해 현재 상태 반영
+        this._vvHandler();
+    }
+
+    /**
+     * 키보드 회피 리스너 제거 및 스타일 초기화
+     */
+    _detachKeyboardAvoidance() {
+        if (this._vvHandler && window.visualViewport) {
+            window.visualViewport.removeEventListener('resize', this._vvHandler);
+            this._vvHandler = null;
+        }
+        // 스타일 리셋
+        const inputArea = document.querySelector('#freetalk-screen .ft-input-area');
+        if (inputArea) inputArea.style.bottom = '';
+        const panel = document.getElementById('choice-panel');
+        if (panel) { panel.style.height = ''; panel.style.top = ''; }
     }
 
     /**

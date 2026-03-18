@@ -13,15 +13,38 @@
 const fs = require('fs');
 const path = require('path');
 
+// .env 로드 (프로젝트 루트 → 워크스페이스 루트 순서)
+function loadEnv() {
+    const candidates = [
+        path.join(__dirname, '.env'),
+        path.resolve(__dirname, '..', '.env')
+    ];
+    for (const p of candidates) {
+        if (fs.existsSync(p)) {
+            for (const line of fs.readFileSync(p, 'utf8').split('\n')) {
+                const trimmed = line.trim();
+                if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
+                    const [k, ...v] = trimmed.split('=');
+                    if (!process.env[k.trim()]) process.env[k.trim()] = v.join('=').trim();
+                }
+            }
+        }
+    }
+}
+loadEnv();
+
 const API_KEY = process.env.GEMINI_API_KEY;
 if (!API_KEY) {
     console.error('❌ GEMINI_API_KEY 환경변수를 설정해주세요.');
-    console.error('   export GEMINI_API_KEY=your_key_here');
+    console.error('   ../. env 또는 .env에 GEMINI_API_KEY=your_key 추가');
     process.exit(1);
 }
 
-const MODEL = 'gemini-3.1-flash-image-preview';
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
+// 모델: _normal/배경 → Imagen 4, 표정 변형 → Gemini 3.1 Flash
+const FLASH_MODEL = 'gemini-3.1-flash-image-preview';
+const IMAGEN_MODEL = 'imagen-4.0-generate-001';
+const FLASH_URL = `https://generativelanguage.googleapis.com/v1beta/models/${FLASH_MODEL}:generateContent?key=${API_KEY}`;
+const IMAGEN_URL = `https://generativelanguage.googleapis.com/v1beta/models/${IMAGEN_MODEL}:predict?key=${API_KEY}`;
 const DELAY_MS = 5000; // API 호출 간 딜레이 (rate limit 대비)
 const MAX_RETRIES = 3;
 

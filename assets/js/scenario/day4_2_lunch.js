@@ -634,10 +634,27 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_5"
     },
     "day4_lunch_nurse_5": {
-        // 주사기를 뒤로 숨긴다
+        // 주사기를 뒤로 숨긴다 — met_yuna에 따라 유나 질문 or 주사기 질문
         character: "riin_smile",
-        next: "day4_lunch_nurse_6"
+        branches: [
+            { condition: "met_yuna", next: "day4_lunch_nurse_6" }
+        ],
+        next: "day4_lunch_nurse_noyuna"
     },
+    // ── met_yuna = false: 유나 대신 주사기에 대해 질문 ──
+    "day4_lunch_nurse_noyuna": {
+        character: null,
+        next: "day4_lunch_nurse_noyuna_2"
+    },
+    "day4_lunch_nurse_noyuna_2": {
+        character: "riin_cold",
+        next: "day4_lunch_nurse_noyuna_3"
+    },
+    "day4_lunch_nurse_noyuna_3": {
+        character: "riin_smile",
+        next: "day4_lunch_nurse_13"
+    },
+    // ── met_yuna = true: 유나 전학 언급 ──
     "day4_lunch_nurse_6": {
         character: null,
         // 유나 전학 언급

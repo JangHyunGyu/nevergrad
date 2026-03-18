@@ -486,7 +486,20 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_riin_1": {
         background: "nurse_office",
         character: null,
-        next: "day3_lunch_riin_2"
+        branches: [
+            { condition: "met_riin", next: "day3_lunch_riin_2" }
+        ],
+        next: "day3_lunch_riin_first"
+    },
+    // 리인을 처음 만나는 경우: 주인공 위화감
+    "day3_lunch_riin_first": {
+        character: "riin_smile",
+        setFlags: ["met_riin"],
+        next: "day3_lunch_riin_first_2"
+    },
+    "day3_lunch_riin_first_2": {
+        character: "riin_smile",
+        next: "day3_lunch_riin_3"
     },
     // 리인: 안색이 별로네
     "day3_lunch_riin_2": {

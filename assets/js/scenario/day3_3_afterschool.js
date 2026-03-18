@@ -41,7 +41,20 @@ Object.assign(SCENARIO[3], {
         background: "nurse_office",
         bgm: "riin_theme.mp3",
         character: null,
-        next: "day3_after_riin_2"
+        branches: [
+            { condition: "met_riin", next: "day3_after_riin_2" }
+        ],
+        next: "day3_after_riin_first"
+    },
+    // 리인을 처음 만나는 경우 (Day 1/Day 3 점심 모두 안 감)
+    "day3_after_riin_first": {
+        character: null,
+        setFlags: ["met_riin"],
+        next: "day3_after_riin_first_2"
+    },
+    "day3_after_riin_first_2": {
+        character: "riin_smile",
+        next: "day3_after_riin_3"
     },
     "day3_after_riin_2": {
         character: null,

@@ -762,5 +762,58 @@
     "day5_cage_loop": {
         "name": "",
         "text": ""
+    },
+
+    "day5_xover_server_1": {
+        "name": "",
+        "text": "*Conectado al servidor del instituto. Un directorio de archivos aparece en el viejo monitor.*"
+    },
+    "day5_xover_server_2": {
+        "name": "",
+        "text": "*PROJECT CUPID — Registros de ciclos anteriores:*"
+    },
+    "day5_xover_server_3": {
+        "name": "",
+        "text": "*> cycle_01.zip  [INTACTO]*"
+    },
+    "day5_xover_server_3_damaged": {
+        "name": "",
+        "text": "*> cycle_01.zip  [DAÑADO]*"
+    },
+    "day5_xover_server_4": {
+        "name": "",
+        "text": "*Archivo adjunto: CUPID_ENV_PREVIEW*"
+    },
+    "day5_xover_server_preview_choice": {
+        "name": "",
+        "text": "*¿Ejecutar vista previa?*",
+        "choices": [
+            "EJECUTAR PREVIEW",
+            "Cerrar"
+        ]
+    },
+    "day5_xover_preview_1": {
+        "name": "",
+        "text": "*...Cerezos en flor.*"
+    },
+    "day5_xover_preview_2": {
+        "name": "",
+        "text": "*Brisa primaveral. Uniforme nuevo. Primer día de transferencia.*"
+    },
+    "day5_xover_preview_3": {
+        "name": "",
+        "text": "*...¿Es esto mi recuerdo? O — un entorno diseñado.*"
+    },
+    "day5_xover_preview_4": {
+        "name": "",
+        "text": "*En la esquina inferior derecha, en texto pequeño: cycle_01*"
+    },
+    "day5_xover_preview_5": {
+        "name": "",
+        "text": "*El monitor se apagó.*"
+    },
+    "day5_xover_server_end": {
+        "name": "",
+        "text": "*...Cerré los archivos.*"
     }
 }

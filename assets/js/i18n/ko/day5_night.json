@@ -774,5 +774,58 @@
     "day5_cage_loop": {
         "name": "",
         "text": ""
+    },
+
+    "day5_xover_server_1": {
+        "name": "",
+        "text": "*연구소 서버에 접속했다. 낡은 모니터에 파일 목록이 뜬다.*"
+    },
+    "day5_xover_server_2": {
+        "name": "",
+        "text": "*PROJECT CUPID — 이전 주기 기록:*"
+    },
+    "day5_xover_server_3": {
+        "name": "",
+        "text": "*> cycle_01.zip  [정상]*"
+    },
+    "day5_xover_server_3_damaged": {
+        "name": "",
+        "text": "*> cycle_01.zip  [손상됨]*"
+    },
+    "day5_xover_server_4": {
+        "name": "",
+        "text": "*첨부파일: CUPID_ENV_PREVIEW*"
+    },
+    "day5_xover_server_preview_choice": {
+        "name": "",
+        "text": "*미리보기를 실행할까?*",
+        "choices": [
+            "PREVIEW 실행",
+            "닫기"
+        ]
+    },
+    "day5_xover_preview_1": {
+        "name": "",
+        "text": "*...벚꽃.*"
+    },
+    "day5_xover_preview_2": {
+        "name": "",
+        "text": "*봄바람. 새 교복. 전학 첫날.*"
+    },
+    "day5_xover_preview_3": {
+        "name": "",
+        "text": "*...이건 내 기억인가. 아니면 — 설계된 환경인가.*"
+    },
+    "day5_xover_preview_4": {
+        "name": "",
+        "text": "*화면 우측 하단에 작게: cycle_01*"
+    },
+    "day5_xover_preview_5": {
+        "name": "",
+        "text": "*모니터가 꺼졌다.*"
+    },
+    "day5_xover_server_end": {
+        "name": "",
+        "text": "*...파일을 닫았다.*"
     }
 }

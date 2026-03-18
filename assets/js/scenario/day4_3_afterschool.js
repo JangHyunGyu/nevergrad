@@ -24,6 +24,70 @@ Object.assign(SCENARIO[4], {
     },
     "day4_after_start_3": {
         character: null,
+        next: "day4_xover_yuna_1"
+    },
+
+    // ═══════════════════════════════════════
+    // ★ 크로스오버: 유나 단독 씬 (Cupid 플레이어 전용)
+    // Cupid 미플레이 → fallback(짧은 버전)으로 분기
+    // ═══════════════════════════════════════
+    "day4_xover_yuna_1": {
+        condition: "cupid_played",
+        fallback: "day4_xover_yuna_skip",
+        background: "corridor",
+        character: "yuna_cautious",
+        next: "day4_xover_yuna_2"
+    },
+    "day4_xover_yuna_2": {
+        character: "yuna_normal",
+        next: "day4_xover_yuna_3"
+    },
+    "day4_xover_yuna_3": {
+        character: null,
+        next: "day4_xover_yuna_4"
+    },
+    "day4_xover_yuna_4": {
+        character: "yuna_normal",
+        next: "day4_xover_yuna_5"
+    },
+    "day4_xover_yuna_5": {
+        character: "yuna_normal",
+        next: "day4_xover_yuna_6"
+    },
+    "day4_xover_yuna_6": {
+        character: null,
+        next: "day4_xover_yuna_7"
+    },
+    "day4_xover_yuna_7": {
+        character: "yuna_determined",
+        next: "day4_xover_yuna_8"
+    },
+    "day4_xover_yuna_8": {
+        character: "yuna_determined",
+        next: "day4_xover_yuna_9"
+    },
+    "day4_xover_yuna_9": {
+        character: null,
+        next: "day4_xover_yuna_10"
+    },
+    "day4_xover_yuna_10": {
+        character: null,
+        glitch: { noise: true, noiseDuration: 200 },
+        setFlags: ["xover_yuna_d4"],
+        next: "day4_after_choice"
+    },
+    // ── Cupid 미플레이어용 짧은 버전 ──
+    "day4_xover_yuna_skip": {
+        background: "corridor",
+        character: "yuna_normal",
+        next: "day4_xover_yuna_skip_2"
+    },
+    "day4_xover_yuna_skip_2": {
+        character: "yuna_normal",
+        next: "day4_xover_yuna_skip_3"
+    },
+    "day4_xover_yuna_skip_3": {
+        character: null,
         next: "day4_after_choice"
     },
 

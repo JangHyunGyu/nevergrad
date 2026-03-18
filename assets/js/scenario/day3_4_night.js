@@ -272,6 +272,45 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_wall_12": {
         character: null,
+        next: "day3_xover_glitch_1"
+    },
+
+    // ══════════════════════════════════════
+    //  ★ 크로스오버: 글리치 장면 (Cupid 플레이어 전용)
+    //  Cupid 미플레이 → fallback으로 건너뜀
+    // ══════════════════════════════════════
+    "day3_xover_glitch_1": {
+        condition: "cupid_played",
+        fallback: "day3_night_seolhwa",
+        background: "corridor_dark",
+        character: null,
+        glitch: { heavyGlitch: true },
+        next: "day3_xover_glitch_2"
+    },
+    "day3_xover_glitch_2": {
+        character: "seolhwa_ghost",
+        glitch: { noise: true, noiseDuration: 300 },
+        next: "day3_xover_glitch_3"
+    },
+    "day3_xover_glitch_3": {
+        character: "seolhwa_ghost",
+        typingSpeed: 100,
+        unskippable: true,
+        next: "day3_xover_glitch_4"
+    },
+    "day3_xover_glitch_4": {
+        character: null,
+        next: "day3_xover_glitch_5"
+    },
+    // 설화 사라짐
+    "day3_xover_glitch_5": {
+        character: null,
+        glitch: { heavyGlitch: true },
+        next: "day3_xover_glitch_6"
+    },
+    "day3_xover_glitch_6": {
+        character: null,
+        setFlags: ["xover_glitch_d3"],
         next: "day3_night_seolhwa"
     },
 

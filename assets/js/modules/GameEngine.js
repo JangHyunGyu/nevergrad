@@ -133,6 +133,8 @@ class GameEngine {
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
             this.save.load();
+            // Cupid 크로스오버 플래그 설정 (세이브 데이터에 포함되지 않으므로 매번 감지)
+            if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
             this.glitch.initConsoleEasterEgg(this.state.currentDay);
             if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
             this._showScreen('game-screen');
@@ -147,6 +149,9 @@ class GameEngine {
             this.state.currentDay = 1;
             this.state.currentSlot = "morning";
             this.state.currentScene = "day1_opening_1";
+
+            // Cupid 크로스오버 플래그 설정
+            if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
 
             this.glitch.initConsoleEasterEgg(1);
             this._showScreen('game-screen');

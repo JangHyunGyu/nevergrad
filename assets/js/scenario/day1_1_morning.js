@@ -117,6 +117,39 @@ Object.assign(SCENARIO[1], {
     // L115: *...왜 이쪽으로 가고 있지?...*
     "day1_hallway_4": {
         character: null,
+        next: "day1_xover_seolhwa_1"
+    },
+
+    // =====================================================================
+    // ★ 크로스오버: 설화 특수 대사 (Cupid 플레이어 전용)
+    // Cupid 미플레이 시 condition 불충족 → fallback으로 건너뜀
+    // =====================================================================
+    "day1_xover_seolhwa_1": {
+        condition: "cupid_played",
+        fallback: "day1_sea_meet_1",
+        background: "corridor",
+        character: "seolhwa_fade",
+        glitch: { noise: true, noiseDuration: 200 },
+        next: "day1_xover_seolhwa_2"
+    },
+    "day1_xover_seolhwa_2": {
+        character: "seolhwa_fade",
+        next: "day1_xover_seolhwa_3"
+    },
+    "day1_xover_seolhwa_3": {
+        character: null,
+        next: "day1_xover_seolhwa_4"
+    },
+    // 설화 사라짐
+    "day1_xover_seolhwa_4": {
+        character: null,
+        background: "hallway",
+        glitch: { noise: true, noiseDuration: 150 },
+        next: "day1_xover_seolhwa_5"
+    },
+    "day1_xover_seolhwa_5": {
+        character: null,
+        setFlags: ["xover_seolhwa_d1"],
         next: "day1_sea_meet_1"
     },
 

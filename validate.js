@@ -330,8 +330,11 @@ for (const [, { scene }] of Object.entries(allScenes)) {
     });
 }
 
+// JS 런타임에서 동적으로 설정되는 플래그 (CrossoverSystem 등)
+const RUNTIME_FLAGS = new Set(['cupid_played']);
+
 for (const f of flagsChecked) {
-    if (!flagsSet.has(f)) {
+    if (!flagsSet.has(f) && !RUNTIME_FLAGS.has(f)) {
         errors.push(`[FLAG] "${f}" checked in condition but never set via setFlags`);
     }
 }

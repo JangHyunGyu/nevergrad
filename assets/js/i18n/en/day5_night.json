@@ -762,5 +762,58 @@
     "day5_cage_loop": {
         "name": "",
         "text": ""
+    },
+
+    "day5_xover_server_1": {
+        "name": "",
+        "text": "*Connected to the institute's server. A file directory appears on the old monitor.*"
+    },
+    "day5_xover_server_2": {
+        "name": "",
+        "text": "*PROJECT CUPID — Previous Cycle Records:*"
+    },
+    "day5_xover_server_3": {
+        "name": "",
+        "text": "*> cycle_01.zip  [INTACT]*"
+    },
+    "day5_xover_server_3_damaged": {
+        "name": "",
+        "text": "*> cycle_01.zip  [CORRUPTED]*"
+    },
+    "day5_xover_server_4": {
+        "name": "",
+        "text": "*Attachment: CUPID_ENV_PREVIEW*"
+    },
+    "day5_xover_server_preview_choice": {
+        "name": "",
+        "text": "*Run preview?*",
+        "choices": [
+            "RUN PREVIEW",
+            "Close"
+        ]
+    },
+    "day5_xover_preview_1": {
+        "name": "",
+        "text": "*...Cherry blossoms.*"
+    },
+    "day5_xover_preview_2": {
+        "name": "",
+        "text": "*Spring breeze. New uniform. First day of transfer.*"
+    },
+    "day5_xover_preview_3": {
+        "name": "",
+        "text": "*...Is this my memory. Or — a designed environment.*"
+    },
+    "day5_xover_preview_4": {
+        "name": "",
+        "text": "*Bottom right of the screen, in small text: cycle_01*"
+    },
+    "day5_xover_preview_5": {
+        "name": "",
+        "text": "*The monitor went dark.*"
+    },
+    "day5_xover_server_end": {
+        "name": "",
+        "text": "*...Closed the files.*"
     }
 }

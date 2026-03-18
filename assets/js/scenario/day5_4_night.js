@@ -198,6 +198,83 @@ Object.assign(SCENARIO[5], {
         endingSubtitle: "day5_ending_true_subtitle",
         unskippable: true,
         metaEffect: "graduationSlots",
+        next: "day5_xover_server_1"
+    },
+
+    // ══════════════════════════════════════════
+    // ★ 크로스오버: 연구소 서버 파일 (진엔딩 후)
+    // Cupid 플레이어: cycle_01.zip [정상] + PREVIEW 선택지
+    // 비플레이어: cycle_01.zip [손상됨]
+    // ══════════════════════════════════════════
+    "day5_xover_server_1": {
+        background: "black",
+        bgm: null,
+        character: null,
+        typingSpeed: 40,
+        next: "day5_xover_server_2"
+    },
+    "day5_xover_server_2": {
+        character: null,
+        typingSpeed: 40,
+        next: "day5_xover_server_3"
+    },
+    // 분기: Cupid 플레이 여부에 따라 cycle_01 상태 다름
+    "day5_xover_server_3": {
+        character: null,
+        condition: "cupid_played",
+        fallback: "day5_xover_server_3_damaged",
+        typingSpeed: 40,
+        next: "day5_xover_server_4"
+    },
+    // Cupid 비플레이어: cycle_01 [손상됨]
+    "day5_xover_server_3_damaged": {
+        character: null,
+        typingSpeed: 40,
+        next: "day5_xover_server_end"
+    },
+    // Cupid 플레이어: cycle_01 [정상] → PREVIEW 선택지
+    "day5_xover_server_4": {
+        character: null,
+        typingSpeed: 40,
+        next: "day5_xover_server_preview_choice"
+    },
+    "day5_xover_server_preview_choice": {
+        character: null,
+        choices: [
+            { next: "day5_xover_preview_1" },
+            { next: "day5_xover_server_end" }
+        ]
+    },
+    // PREVIEW 실행 — Cupid Day 1 오프닝 연출
+    "day5_xover_preview_1": {
+        background: "cherry_blossom",
+        bgm: "spring_bright.mp3",
+        character: null,
+        next: "day5_xover_preview_2"
+    },
+    "day5_xover_preview_2": {
+        character: null,
+        next: "day5_xover_preview_3"
+    },
+    "day5_xover_preview_3": {
+        character: null,
+        next: "day5_xover_preview_4"
+    },
+    "day5_xover_preview_4": {
+        character: null,
+        next: "day5_xover_preview_5"
+    },
+    // cycle_01 표시 + 페이드아웃
+    "day5_xover_preview_5": {
+        character: null,
+        glitch: { noise: true, noiseDuration: 500 },
+        setFlags: ["xover_preview_played"],
+        next: "day5_xover_server_end"
+    },
+    "day5_xover_server_end": {
+        background: "black",
+        bgm: null,
+        character: null,
         next: "day5_postcredit_1"
     },
 

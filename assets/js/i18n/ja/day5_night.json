@@ -762,5 +762,58 @@
     "day5_cage_loop": {
         "name": "",
         "text": ""
+    },
+
+    "day5_xover_server_1": {
+        "name": "",
+        "text": "*研究所のサーバーに接続した。古いモニターにファイル一覧が表示される。*"
+    },
+    "day5_xover_server_2": {
+        "name": "",
+        "text": "*PROJECT CUPID ── 過去サイクル記録:*"
+    },
+    "day5_xover_server_3": {
+        "name": "",
+        "text": "*> cycle_01.zip  [正常]*"
+    },
+    "day5_xover_server_3_damaged": {
+        "name": "",
+        "text": "*> cycle_01.zip  [破損]*"
+    },
+    "day5_xover_server_4": {
+        "name": "",
+        "text": "*添付ファイル: CUPID_ENV_PREVIEW*"
+    },
+    "day5_xover_server_preview_choice": {
+        "name": "",
+        "text": "*プレビューを実行する？*",
+        "choices": [
+            "PREVIEW 実行",
+            "閉じる"
+        ]
+    },
+    "day5_xover_preview_1": {
+        "name": "",
+        "text": "*……桜。*"
+    },
+    "day5_xover_preview_2": {
+        "name": "",
+        "text": "*春風。新しい制服。転校初日。*"
+    },
+    "day5_xover_preview_3": {
+        "name": "",
+        "text": "*……これは僕の記憶なのか。それとも——設計された環境なのか。*"
+    },
+    "day5_xover_preview_4": {
+        "name": "",
+        "text": "*画面右下に小さく: cycle_01*"
+    },
+    "day5_xover_preview_5": {
+        "name": "",
+        "text": "*モニターが消えた。*"
+    },
+    "day5_xover_server_end": {
+        "name": "",
+        "text": "*……ファイルを閉じた。*"
     }
 }

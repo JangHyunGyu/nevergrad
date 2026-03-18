@@ -59,9 +59,9 @@ const CONFIG = {
     EXPRESSIONS: {
         eunsu: {
             normal: "assets/images/characters/eunsu_normal.png",
-            smile: "assets/images/characters/eunsu_gentle.png",        // alias: smile.png 없음 → gentle 재사용
+            smile: "assets/images/characters/eunsu_smile.png",
             gentle: "assets/images/characters/eunsu_gentle.png",
-            warm: "assets/images/characters/eunsu_gentle.png",       // alias: 따뜻한 표정
+            warm: "assets/images/characters/eunsu_warm.png",
             shy: "assets/images/characters/eunsu_shy.png",
             serious: "assets/images/characters/eunsu_cold.png",         // alias: serious.png 없음 → cold 재사용
             angry: "assets/images/characters/eunsu_angry.png",
@@ -101,8 +101,8 @@ const CONFIG = {
             cry: "assets/images/characters/sea_cry.png",
             yandere: "assets/images/characters/sea_yandere.png",
             cold: "assets/images/characters/sea_serious.png",        // alias: 차가운 표정
-            vulnerable: "assets/images/characters/sea_sad.png",      // alias: 취약한 순간
-            broken_smile: "assets/images/characters/sea_hurt.png"    // alias: 무너진 미소
+            vulnerable: "assets/images/characters/sea_vulnerable.png",
+            broken_smile: "assets/images/characters/sea_broken_smile.png"
         },
         yuna: {
             normal: "assets/images/characters/yuna_normal.png",
@@ -123,7 +123,7 @@ const CONFIG = {
             fade: "assets/images/characters/seolhwa_fade.png",
             fading: "assets/images/characters/seolhwa_fade.png",     // alias: 사라지는 중
             ghost: "assets/images/characters/seolhwa_ghost.png",
-            quiet: "assets/images/characters/seolhwa_normal.png"     // alias: 조용한 상태
+            quiet: "assets/images/characters/seolhwa_quiet.png"
         },
         classmate: {
             default: null  // 급우: 전용 이미지 없음, 엔진에서 null 처리

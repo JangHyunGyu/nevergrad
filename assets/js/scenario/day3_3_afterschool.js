@@ -139,8 +139,13 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_sea_2": {
         character: "sea_serious",
-        next: "day3_after_sea_3"
+        // 점심에 유나 루트를 탔는지에 따라 분기
+        branches: [
+            { condition: "yuna_memory_card", next: "day3_after_sea_3" }
+        ],
+        next: "day3_after_sea_noyuna"
     },
+    // ── 유나 루트를 탄 경우: 세아가 유나를 직접 언급 ──
     "day3_after_sea_3": {
         character: "sea_serious",
         next: "day3_after_sea_4"
@@ -167,6 +172,29 @@ Object.assign(SCENARIO[3], {
                 stats: { sea: { affinity: 5 } }
             }
         ]
+    },
+
+    // ── 유나 루트 안 탄 경우: 세아가 일반적으로 걱정/감시 ──
+    "day3_after_sea_noyuna": {
+        character: "sea_serious",
+        next: "day3_after_sea_noyuna_2"
+    },
+    "day3_after_sea_noyuna_2": {
+        character: "sea_serious",
+        next: "day3_after_sea_noyuna_3"
+    },
+    "day3_after_sea_noyuna_3": {
+        character: "sea_serious",
+        next: "day3_after_sea_noyuna_4"
+    },
+    "day3_after_sea_noyuna_4": {
+        character: "sea_smile",
+        next: "day3_after_sea_noyuna_5"
+    },
+    "day3_after_sea_noyuna_5": {
+        character: "sea_smile",
+        glitch: { noise: true, noiseDuration: 150 },
+        next: "day3_after_yuna_check"
     },
 
     // 솔직히 말하면

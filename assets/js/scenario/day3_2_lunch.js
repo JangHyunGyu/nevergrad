@@ -13,11 +13,41 @@ Object.assign(SCENARIO[3], {
         background: "classroom",
         bgm: "daily_tense.mp3",
         character: null,
-        next: "day3_lunch_note"
+        branches: [
+            { condition: "met_yuna", next: "day3_lunch_note_yuna" }
+        ],
+        next: "day3_lunch_note_unknown"
     },
-    "day3_lunch_note": {
+    // 유나를 만난 적 있을 때: 쪽지의 발신자를 안다
+    "day3_lunch_note_yuna": {
+        character: null,
+        next: "day3_lunch_note_yuna_2"
+    },
+    "day3_lunch_note_yuna_2": {
         character: null,
         next: "day3_lunch_choice"
+    },
+    // 유나를 만난 적 없을 때: 쪽지의 발신자를 모른다
+    "day3_lunch_note_unknown": {
+        character: null,
+        next: "day3_lunch_note_unknown_2"
+    },
+    "day3_lunch_note_unknown_2": {
+        character: null,
+        next: "day3_lunch_note_unknown_3"
+    },
+    "day3_lunch_note_unknown_3": {
+        character: null,
+        next: "day3_lunch_choice_no_yuna"
+    },
+    // 유나를 모르면 옥상 선택지 없음
+    "day3_lunch_choice_no_yuna": {
+        character: null,
+        choices: [
+            { next: "day3_lunch_sea_1", stats: { sea: { affinity: 5 } } },
+            { next: "day3_lunch_riin_1", stats: { riin: { affinity: 5 } } },
+            { next: "day3_lunch_alone_1", stats: { seolhwa: { affinity: 5 }, sea: { affinity: -3 } } }
+        ]
     },
     "day3_lunch_choice": {
         character: null,

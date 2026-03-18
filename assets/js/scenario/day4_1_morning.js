@@ -100,8 +100,15 @@ Object.assign(SCENARIO[4], {
         glitch: { screenFlash: true, flashDuration: 100 },
         next: "day4_morning_start_16"
     },
-    // 유나의 말 회상: '같은 사람들이 있어요'
+    // met_yuna: 유나의 말 회상 / 아니면 일반 위화감
     "day4_morning_start_16": {
+        character: null,
+        branches: [
+            { condition: "met_yuna", next: "day4_morning_start_16_yuna" }
+        ],
+        next: "day4_morning_start_17"
+    },
+    "day4_morning_start_16_yuna": {
         character: null,
         next: "day4_morning_start_17"
     },
@@ -340,27 +347,31 @@ Object.assign(SCENARIO[4], {
     "day4_morning_classroom": {
         background: "classroom",
         character: null,
-        next: "day4_morning_classroom_2"
-    },
-    // 유나의 자리 — 비어있다. 흔적 자체가 없다
-    "day4_morning_classroom_2": {
-        character: null,
-        glitch: { silence: true, silenceDuration: 1500 },
-        next: "day4_morning_classroom_3"
-    },
-    // 책상이 너무 깨끗하다
-    "day4_morning_classroom_3": {
-        character: null,
-        next: "day4_morning_classroom_4"
-    },
-    // 스티커도 없다
-    "day4_morning_classroom_4": {
-        character: null,
-        next: "day4_morning_classroom_5"
+        // 유나를 만난 적 있으면 빈 자리에 충격, 없으면 미묘한 위화감
+        branches: [
+            { condition: "met_yuna", next: "day4_morning_classroom_met" }
+        ],
+        next: "day4_morning_classroom_notmet"
     },
 
+    // ── met_yuna = true: 유나를 알고 있는 경우 ──
+    "day4_morning_classroom_met": {
+        character: null,
+        glitch: { silence: true, silenceDuration: 1500 },
+        next: "day4_morning_classroom_met_2"
+    },
+    // 책상이 너무 깨끗하다
+    "day4_morning_classroom_met_2": {
+        character: null,
+        next: "day4_morning_classroom_met_3"
+    },
+    // 스티커도 없다
+    "day4_morning_classroom_met_3": {
+        character: null,
+        next: "day4_morning_classroom_met_4"
+    },
     // 세아: '전학 갔대'
-    "day4_morning_classroom_5": {
+    "day4_morning_classroom_met_4": {
         character: "sea_smile",
         next: "day4_morning_sea"
     },
@@ -373,14 +384,18 @@ Object.assign(SCENARIO[4], {
         branches: [
             { condition: "yuna_memory_card", next: "day4_morning_sea_3" }
         ],
-        next: "day4_morning_sea_4"
+        next: "day4_morning_sea_3a"
     },
-    // 어제 유나는 3년간의 증거를 보여줬다 (유나 루트 경험 시에만 표시)
+    // 어제 유나는 3년간의 증거를 보여줬다 (유나 메모리카드 받았을 때)
     "day4_morning_sea_3": {
         character: "sea_smile",
         next: "day4_morning_sea_4"
     },
-
+    // 유나를 만났지만 메모리카드는 없을 때
+    "day4_morning_sea_3a": {
+        character: "sea_smile",
+        next: "day4_morning_sea_4"
+    },
     // 앞자리 남학생에게 질문
     "day4_morning_sea_4": {
         character: "sea_smile",
@@ -418,6 +433,27 @@ Object.assign(SCENARIO[4], {
         character: null,
         unskippable: true,
         glitch: { silence: true, silenceDuration: 2000 },
+        next: "day4_morning_class_start"
+    },
+
+    // ── met_yuna = false: 유나를 모르는 경우 (미묘한 위화감) ──
+    "day4_morning_classroom_notmet": {
+        character: null,
+        next: "day4_morning_classroom_notmet_2"
+    },
+    // 빈 자리가 유난히 깨끗하다
+    "day4_morning_classroom_notmet_2": {
+        character: null,
+        next: "day4_morning_classroom_notmet_3"
+    },
+    // 세아: 원래 빈 자리야
+    "day4_morning_classroom_notmet_3": {
+        character: "sea_smile",
+        next: "day4_morning_classroom_notmet_4"
+    },
+    // 아무도 그 자리 쪽으로 가지 않는다
+    "day4_morning_classroom_notmet_4": {
+        character: null,
         next: "day4_morning_class_start"
     },
 

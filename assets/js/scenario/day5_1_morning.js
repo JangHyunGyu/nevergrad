@@ -234,7 +234,7 @@ Object.assign(SCENARIO[5], {
         unskippable: true,
         choices: [
             { next: "day5_morning_escape_end", setFlags: ["route_escape"], stats: { yuna: { affinity: -5 }, eunsu: { affinity: -5 } } },
-            { next: "day5_morning_true_1", setFlags: ["route_true", "has_evidence"], stats: { yuna: { affinity: 12 }, seolhwa: { affinity: 8 }, eunsu: { affinity: 10 } } }
+            { next: "day5_morning_true_1", setFlags: ["route_true", "has_evidence"], stats: { yuna: { affinity: 10 }, seolhwa: { affinity: 8 }, eunsu: { affinity: 8 } } }
         ]
     },
 
@@ -573,7 +573,7 @@ Object.assign(SCENARIO[5], {
         timedChoice: 10000,
         unskippable: true,
         choices: [
-            { next: "day5_morning_grad_reply_1", stats: { eunsu: { affinity: -10 }, seolhwa: { affinity: 5 } } },
+            { next: "day5_morning_grad_reply_1", stats: { eunsu: { affinity: -8 }, seolhwa: { affinity: 5 } } },
             { next: "day5_morning_grad_reply_2", stats: { eunsu: { affinity: 8 }, seolhwa: { affinity: 3 } } },
             { next: "day5_morning_grad_reply_3", stats: { eunsu: { affinity: 5 } } }
         ],
@@ -700,9 +700,9 @@ Object.assign(SCENARIO[5], {
         unskippable: true,
         vibrate: "heartbeat",
         choices: [
-            { next: "day5_morning_end_cage", setFlags: ["route_cage", "stayed_with_eunsu"], stats: { eunsu: { affinity: 15 } } },
-            { next: "day5_morning_end_forget", setFlags: ["route_forget"], stats: { eunsu: { affinity: 10 } } },
-            { next: "day5_morning_end_run", setFlags: ["route_chase"], stats: { eunsu: { affinity: -10 }, seolhwa: { affinity: 10 } } }
+            { next: "day5_morning_end_cage", setFlags: ["route_cage", "stayed_with_eunsu"], stats: { eunsu: { affinity: 10 } } },
+            { next: "day5_morning_end_forget", setFlags: ["route_forget"], stats: { eunsu: { affinity: 8 } } },
+            { next: "day5_morning_end_run", setFlags: ["route_chase"], stats: { eunsu: { affinity: -8 }, seolhwa: { affinity: 8 } } }
         ],
         timeoutNext: "day5_morning_end_run"
     },

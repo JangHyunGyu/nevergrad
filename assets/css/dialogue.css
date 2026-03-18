@@ -224,6 +224,30 @@
     white-space: nowrap;
 }
 
+/* 프리토킹 스킵 버튼 */
+.ft-skip-btn {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    z-index: 15;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.7rem;
+    border: 1px solid rgba(255, 183, 197, 0.25);
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 240, 245, 0.6);
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+    letter-spacing: 0.05em;
+}
+.ft-skip-btn:hover {
+    background: rgba(255, 183, 197, 0.15);
+    color: #fff;
+    border-color: rgba(255, 183, 197, 0.5);
+}
+.ft-skip-btn.hidden { display: none; }
+
 /* ===== FreeTalk Input (동적 생성, choice-panel 내부) ===== */
 .freetalk-input-container {
     display: flex;

@@ -1187,6 +1187,27 @@ body {
     letter-spacing: 0.05em;
 }
 
+.ending-return-btn {
+    margin-top: 2.5rem;
+    padding: 0.6rem 1.8rem;
+    border: 1px solid rgba(255, 183, 197, 0.3);
+    border-radius: 2rem;
+    background: rgba(255, 183, 197, 0.1);
+    color: rgba(255, 240, 245, 0.7);
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 2s ease 3s forwards;
+}
+.ending-return-btn:hover {
+    background: rgba(255, 183, 197, 0.25);
+    color: #fff;
+    border-color: rgba(255, 183, 197, 0.6);
+}
+
 /* ===== Loading Screen ===== */
 #loading-screen {
     background: #0a0008;

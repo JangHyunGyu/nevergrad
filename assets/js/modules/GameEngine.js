@@ -154,6 +154,7 @@ class GameEngine {
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
             this._showScreen('name-screen');
+            this._attachNameScreenKBAvoidance();
         });
 
         document.getElementById('btn-continue')?.addEventListener('click', async () => {
@@ -177,6 +178,7 @@ class GameEngine {
 
         document.getElementById('btn-start')?.addEventListener('click', async () => {
             this.audio?.playUIClick();
+            this._detachNameScreenKBAvoidance();
             const name = document.getElementById('player-name-input')?.value.trim();
             if (!name) return;
 
@@ -453,6 +455,7 @@ class GameEngine {
         }
 
         if (!this.currentSceneData) return;
+        if (this._endingReached) return;
         const scene = this.currentSceneData;
 
         if (scene.branches) {
@@ -633,7 +636,7 @@ class GameEngine {
                 for (const [stat, val] of Object.entries(changes)) {
                     this.state.changeStat(charId, stat, val);
                     if (stat === 'affinity' && val !== 0) {
-                        this._playStatChangeFX(stat, val);
+                        this._playStatChangeFX(stat, val, charId);
                     }
                 }
             }
@@ -752,10 +755,24 @@ class GameEngine {
             }
         }
 
+        // 타이틀 복귀 버튼
+        const returnBtn = document.createElement('button');
+        returnBtn.className = 'ending-return-btn';
+        returnBtn.textContent = this.i18n?.get('returnToTitle')?.text || '타이틀로 돌아가기';
+        returnBtn.addEventListener('click', () => {
+            overlay.remove();
+            this.glitchAdvanced?.disableDay5NoiseFilter();
+            this._showScreen('title-screen');
+        });
+        overlay.appendChild(returnBtn);
+
         document.getElementById('game-screen')?.appendChild(overlay);
 
         // 탭 기믹 해제
         this.glitch.stopTabGimmick();
+
+        // 엔딩 도달 — 대화창 클릭 무효화
+        this._endingReached = true;
     }
 
     // ===== Text =====
@@ -838,19 +855,28 @@ class GameEngine {
      * @param {number} val - 변화량 (양수: 증가, 음수: 감소)
      */
     _playStatChangeFX(stat, val, charId) {
-        // 효과음 재생 (합성 SFX)
+        // 큐에 추가하여 순차 재생 (겹침 방지)
+        if (!this._statFXQueue) this._statFXQueue = [];
+        this._statFXQueue.push({ val, charId });
+        if (this._statFXQueue.length === 1) this._processStatFXQueue();
+    }
+
+    _processStatFXQueue() {
+        if (!this._statFXQueue?.length) return;
+        const { val, charId } = this._statFXQueue[0];
+
+        // 효과음
         if (this.audio?.ctx) {
-            if (val > 0) {
-                this.audio.playSFX('affinity_up.mp3');
-            } else {
-                this.audio.playSFX('affinity_down.mp3');
-            }
+            this.audio.playSFX(val > 0 ? 'affinity_up.mp3' : 'affinity_down.mp3');
         }
 
-        // 시각 이펙트: 캐릭터명 + 증감 팝업 + 하트 이펙트 (증가 시)
+        // 시각 이펙트
         this._showStatChangePopup(val, charId);
-        if (val > 0) {
-            this._showHeartEffect();
+        if (val > 0) this._showHeartEffect();
+
+        this._statFXQueue.shift();
+        if (this._statFXQueue.length > 0) {
+            setTimeout(() => this._processStatFXQueue(), 600);
         }
     }
 
@@ -997,6 +1023,28 @@ class GameEngine {
         });
         const el = document.getElementById(id);
         if (el) { el.classList.remove('hidden'); el.classList.add('active'); }
+    }
+
+    // 모바일: 이름 입력 화면 가상 키보드 회피
+    _attachNameScreenKBAvoidance() {
+        if (!window.visualViewport) return;
+        this._detachNameScreenKBAvoidance();
+        const ns = document.getElementById('name-screen');
+        if (!ns) return;
+        this._nameScreenVVH = () => {
+            const vv = window.visualViewport;
+            ns.style.height = vv.height + 'px';
+            ns.style.top = vv.offsetTop + 'px';
+        };
+        window.visualViewport.addEventListener('resize', this._nameScreenVVH);
+    }
+    _detachNameScreenKBAvoidance() {
+        if (this._nameScreenVVH && window.visualViewport) {
+            window.visualViewport.removeEventListener('resize', this._nameScreenVVH);
+            this._nameScreenVVH = null;
+        }
+        const ns = document.getElementById('name-screen');
+        if (ns) { ns.style.height = ''; ns.style.top = ''; }
     }
 
     _showOverlay(id) {

@@ -157,11 +157,11 @@ Object.assign(SCENARIO[4], {
         choices: [
             {
                 next: "day4_after_sea_accept",
-                stats: { sea: { affinity: 12 } }
+                stats: { sea: { affinity: 10 } }
             },
             {
                 next: "day4_after_sea_accept",
-                stats: { sea: { affinity: 12 } }
+                stats: { sea: { affinity: 10 } }
             }
 
         ]

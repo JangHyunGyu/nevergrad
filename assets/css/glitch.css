@@ -1173,7 +1173,7 @@ body.cursor-slowed * {
    ========================================================================= */
 
 .dialogue-box.day5-noise {
-    position: relative;
+    /* position은 absolute 유지 — ::before 의사요소가 absolute로 자체 처리 */
 }
 
 .dialogue-box.day5-noise::before {

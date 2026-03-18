@@ -22,7 +22,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choice": {
         character: null,
         choices: [
-            { next: "day3_lunch_rooftop_1", stats: { yuna: { affinity: 8 }, seolhwa: { affinity: 3 } } },
+            { next: "day3_lunch_rooftop_1", condition: "met_yuna", stats: { yuna: { affinity: 8 }, seolhwa: { affinity: 3 } } },
             { next: "day3_lunch_sea_1", stats: { sea: { affinity: 5 } } },
             { next: "day3_lunch_riin_1", stats: { riin: { affinity: 5 } } },
             { next: "day3_lunch_alone_1", stats: { seolhwa: { affinity: 5 }, sea: { affinity: -3 } } }

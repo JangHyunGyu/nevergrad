@@ -27,7 +27,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         affinityChar: "eunsu",
         affinityBranches: [
-            { minAffinity: 60, next: "day5_night_set_high_affinity" },
+            { minAffinity: 50, next: "day5_night_set_high_affinity" },
             { minAffinity: 0, next: "day5_night_routing" }
         ]
     },
@@ -741,7 +741,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         affinityChar: "sea",
         affinityBranches: [
-            { minAffinity: 60, next: "day5_ending_forget_sea_1" },
+            { minAffinity: 50, next: "day5_ending_forget_sea_1" },
             { minAffinity: 0, next: "day5_ending_forget_title" }
         ]
     },

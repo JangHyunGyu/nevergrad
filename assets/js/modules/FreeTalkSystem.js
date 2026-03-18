@@ -772,6 +772,15 @@ ${memories}
         // 전송 이벤트 바인딩 (기존 리스너 제거 후 재바인딩)
         this._bindChatEvents();
 
+        // 스킵 버튼 표시 및 바인딩
+        const skipBtn = document.getElementById('ft-skip');
+        if (skipBtn) {
+            skipBtn.classList.remove('hidden');
+            const newSkip = skipBtn.cloneNode(true);
+            skipBtn.parentNode.replaceChild(newSkip, skipBtn);
+            newSkip.addEventListener('click', () => this.skipAIChat());
+        }
+
         // 모바일: 가상 키보드 회피 (입력창 올리기)
         this._attachKeyboardAvoidance('chat');
     }
@@ -782,6 +791,9 @@ ${memories}
      */
     _hideFreeTalkScreen() {
         this._detachKeyboardAvoidance();
+
+        const skipBtn = document.getElementById('ft-skip');
+        if (skipBtn) skipBtn.classList.add('hidden');
 
         const ftScreen = document.getElementById('freetalk-screen');
         if (ftScreen) {

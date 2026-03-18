@@ -24,7 +24,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_choice": {
         character: null,
         choices: [
-            { next: "day4_lunch_yuna_1", stats: { yuna: { affinity: 10 }, seolhwa: { affinity: 5 } } },
+            { next: "day4_lunch_yuna_1", condition: "met_yuna", stats: { yuna: { affinity: 10 }, seolhwa: { affinity: 5 } } },
             { next: "day4_lunch_nurse_1", stats: { riin: { affinity: 8 } } },
             { next: "day4_lunch_roof_1", stats: { seolhwa: { affinity: 10 }, eunsu: { affinity: -5 } } }
         ]
@@ -565,7 +565,7 @@ Object.assign(SCENARIO[4], {
         timedChoice: 6000,
         vibrate: "timer_tick",
         choices: [
-            { next: "day4_lunch_yuna_escape", stats: { yuna: { affinity: 12 }, eunsu: { affinity: 10 } } },
+            { next: "day4_lunch_yuna_escape", stats: { yuna: { affinity: 10 }, eunsu: { affinity: 8 } } },
             { next: "day4_lunch_yuna_hide", stats: { yuna: { affinity: 8 }, eunsu: { affinity: 5 } } }
         ],
         timeoutNext: "day4_lunch_yuna_hide"

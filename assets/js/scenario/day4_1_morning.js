@@ -370,9 +370,12 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_sea_2": {
         character: "sea_smile",
-        next: "day4_morning_sea_3"
+        branches: [
+            { condition: "yuna_memory_card", next: "day4_morning_sea_3" }
+        ],
+        next: "day4_morning_sea_4"
     },
-    // 어제 유나는 3년간의 증거를 보여줬다
+    // 어제 유나는 3년간의 증거를 보여줬다 (유나 루트 경험 시에만 표시)
     "day4_morning_sea_3": {
         character: "sea_smile",
         next: "day4_morning_sea_4"

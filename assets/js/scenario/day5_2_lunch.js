@@ -202,9 +202,9 @@ Object.assign(SCENARIO[5], {
         character: null,
         timedChoice: 8000,
         choices: [
-            { next: "day5_lunch_left_c1_1", stats: { sea: { affinity: -10 }, seolhwa: { affinity: 5 } } },
-            { next: "day5_lunch_left_c2_1", setFlags: ["sea_companion"], stats: { sea: { affinity: 10 } } },
-            { next: "day5_lunch_left_c3_1", setFlags: ["cage_route_sea"], stats: { sea: { affinity: 15 } } }
+            { next: "day5_lunch_left_c1_1", stats: { sea: { affinity: -8 }, seolhwa: { affinity: 5 } } },
+            { next: "day5_lunch_left_c2_1", setFlags: ["sea_companion"], stats: { sea: { affinity: 8 } } },
+            { next: "day5_lunch_left_c3_1", setFlags: ["cage_route_sea"], stats: { sea: { affinity: 10 } } }
         ],
         timeoutNext: "day5_lunch_left_timeout",
         timeoutFlags: ["caught_by_sea"]
@@ -494,7 +494,7 @@ Object.assign(SCENARIO[5], {
         timedChoice: 6000,
         choices: [
             { next: "day5_lunch_right_c1_1", setFlags: ["emergency_key"], stats: { riin: { affinity: 10 } } },
-            { next: "day5_lunch_right_c2_1", setFlags: ["emergency_key", "riin_companion"], stats: { riin: { affinity: 12 } } },
+            { next: "day5_lunch_right_c2_1", setFlags: ["emergency_key", "riin_companion"], stats: { riin: { affinity: 10 } } },
             { next: "day5_lunch_right_c3_1", stats: { riin: { affinity: -5 } } }
         ],
         timeoutNext: "day5_lunch_right_timeout",
@@ -693,7 +693,7 @@ Object.assign(SCENARIO[5], {
         character: "seolhwa_normal",
         timedChoice: 8000,
         choices: [
-            { next: "day5_lunch_seolhwa_c1_1", stats: { seolhwa: { affinity: 12 } } },
+            { next: "day5_lunch_seolhwa_c1_1", stats: { seolhwa: { affinity: 10 } } },
             { next: "day5_lunch_seolhwa_c2_1", stats: { seolhwa: { affinity: 8 } } }
         ],
         timeoutNext: "day5_lunch_seolhwa_c2_1"
@@ -1000,9 +1000,9 @@ Object.assign(SCENARIO[5], {
         vibrate: "heartbeat",
         timedChoice: 20000,
         choices: [
-            { next: "day5_lunch_final_true", setFlags: ["chose_remember"], stats: { eunsu: { affinity: -10 }, yuna: { affinity: 10 }, seolhwa: { affinity: 10 } } },
-            { next: "day5_lunch_final_forget", setFlags: ["chose_forget"], stats: { eunsu: { affinity: 10 } } },
-            { next: "day5_lunch_final_resist", setFlags: ["chose_together"], stats: { seolhwa: { affinity: 15 } } }
+            { next: "day5_lunch_final_true", setFlags: ["chose_remember"], stats: { eunsu: { affinity: -8 }, yuna: { affinity: 10 }, seolhwa: { affinity: 8 } } },
+            { next: "day5_lunch_final_forget", setFlags: ["chose_forget"], stats: { eunsu: { affinity: 8 } } },
+            { next: "day5_lunch_final_resist", setFlags: ["chose_together"], stats: { seolhwa: { affinity: 10 } } }
         ],
         timeoutNext: "day5_lunch_final_ghost"
     },

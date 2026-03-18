@@ -410,15 +410,15 @@ body {
     width: 100%;
     padding: 1rem 1.5rem 1.5rem;
     background: linear-gradient(180deg,
-        rgba(20, 10, 20, 0.15) 0%,
-        rgba(15, 8, 18, 0.35) 100%
+        rgba(10, 5, 10, 0.05) 0%,
+        rgba(10, 5, 10, 0.2) 100%
     );
-    border-top: 1px solid rgba(255, 183, 197, 0.15);
+    border-top: 1px solid rgba(255, 183, 197, 0.08);
     z-index: 10;
     min-height: 150px;
     cursor: pointer;
     transition: var(--transition-theme);
-    backdrop-filter: blur(6px);
+    backdrop-filter: none;
 }
 
 .speaker-name {

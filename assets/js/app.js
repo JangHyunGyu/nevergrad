@@ -33,6 +33,15 @@ function requestMobileFullscreen() {
     // iOS Safari: Fullscreen API 미지원 — PWA standalone + viewport meta로 대응
 }
 
+// 화면 회전 시 풀스크린 복구
+window.addEventListener('orientationchange', () => {
+    // 이미 게임 화면에 진입한 상태에서만 복구
+    const gameScreen = document.getElementById('game-screen');
+    if (gameScreen && gameScreen.style.display !== 'none' && !document.fullscreenElement) {
+        setTimeout(() => requestMobileFullscreen(), 300);
+    }
+});
+
 /**
  * 이미지 프리로더 — CONFIG.EXPRESSIONS + CONFIG.BACKGROUNDS에서 고유 경로 수집 후 프리로드
  * @param {function(number, number)} onProgress - (loaded, total) 콜백

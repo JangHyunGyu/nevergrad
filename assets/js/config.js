@@ -173,7 +173,7 @@ const CONFIG = {
         white: "assets/images/background/black.png",               // alias: white.png 없음 → black 재사용 (CSS 필터로 반전)
         // 학교 내부 (추가)
         playground: "assets/images/background/outside_school.png",        // alias: playground.png 없음 → outside_school 재사용
-        student_council: "assets/images/background/classroom.png",        // alias: student_council.png 없음 → classroom 재사용
+        student_council: "assets/images/background/student_council.png",
         cafeteria: "assets/images/background/classroom.png",              // alias: cafeteria.png 없음 → classroom 재사용
         old_building_corridor: "assets/images/background/old_building.png", // 구관 복도 (구관 재사용)
         corridor_old: "assets/images/background/old_building.png",         // 구관 복도 alias

@@ -33,18 +33,8 @@ class SceneRenderer {
             return;
         }
 
-        // 크로스페이드: ::after에 새 배경 설정 후 페이드인
-        this.bgLayer.style.setProperty('--bg-next', newBg);
-        this.bgLayer.classList.remove('bg-crossfade');
-        void this.bgLayer.offsetWidth; // force reflow
-        this.bgLayer.classList.add('bg-crossfade');
-
-        // 페이드 완료 후 메인 배경으로 교체
-        this._bgFadeTimer && clearTimeout(this._bgFadeTimer);
-        this._bgFadeTimer = setTimeout(() => {
-            this.bgLayer.style.backgroundImage = newBg;
-            this.bgLayer.classList.remove('bg-crossfade');
-        }, 420);
+        // 즉시 교체
+        this.bgLayer.style.backgroundImage = newBg;
     }
 
     clearOverlays() {

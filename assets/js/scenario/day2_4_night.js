@@ -94,75 +94,84 @@ Object.assign(SCENARIO[2], {
     // ===== 세아와의 카톡 =====
     "day2_night_sea_1": {
         character: "sea_smile",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_sea_2"
     },
     "day2_night_sea_2": {
-        character: "sea_smile",
+        character: "sea_normal",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_sea_3"
     },
     "day2_night_sea_3": {
         character: "sea_smile",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_sea_4"
     },
     "day2_night_sea_4": {
-        character: null,
+        character: "sea_smile",
         night: true,
         next: "day2_night_sea_5"
     },
     "day2_night_sea_5": {
-        character: "sea_smile",
+        character: "sea_normal",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_sea_6"
     },
     "day2_night_sea_6": {
-        character: "sea_smile",
+        character: "sea_normal",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_sea_7"
     },
     "day2_night_sea_7": {
-        character: null,
+        character: "sea_normal",
         night: true,
         next: "day2_night_sea_8"
     },
     "day2_night_sea_8": {
-        character: "sea_smile",
+        character: "sea_normal",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_sea_9"
     },
     "day2_night_sea_9": {
-        character: "sea_smile",
+        character: "sea_normal",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_sea_10"
     },
     "day2_night_sea_10": {
-        character: null,
+        character: "sea_normal",
         night: true,
         next: "day2_night_sea_11"
     },
     "day2_night_sea_11": {
         character: "sea_smile",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_sea_12"
     },
     "day2_night_sea_12": {
-        character: "sea_smile",
+        character: "sea_normal",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_sea_13"
     },
     "day2_night_sea_13": {
-        character: null,
+        character: "sea_smile",
         night: true,
         next: "day2_night_sea_14"
     },
@@ -175,29 +184,32 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_eunsu_1": {
         character: "eunsu_warm",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_eunsu_2"
     },
     "day2_night_eunsu_2": {
         character: "eunsu_warm",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
         next: "day2_night_eunsu_3"
     },
     "day2_night_eunsu_3": {
-        character: null,
+        character: "eunsu_warm",
         night: true,
         next: "day2_night_eunsu_4"
     },
     "day2_night_eunsu_4": {
         character: "eunsu_warm",
+        charOpacity: 0.35,
         night: true,
         messengerDelay: 800,
         next: "day2_night_eunsu_5"
     },
     "day2_night_eunsu_5": {
-        character: null,
+        character: "eunsu_warm",
         night: true,
         next: "day2_night_flash_1"
     },

@@ -44,7 +44,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_chase_5"
     },
     "day5_lunch_chase_5": {
-        character: null,
+        character: "eunsu_pa",
         next: "day5_lunch_chase_6"
     },
     "day5_lunch_chase_6": {

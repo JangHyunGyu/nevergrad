@@ -137,7 +137,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_xover_seolhwa_3"
     },
     "day1_xover_seolhwa_3": {
-        character: null,
+        character: "seolhwa_fade",
         next: "day1_xover_seolhwa_4"
     },
     // 설화 사라짐
@@ -164,17 +164,17 @@ Object.assign(SCENARIO[1], {
     },
     // L121: *뒤를 돌아보니 단정한 인상의 여학생이 서 있다.*
     "day1_sea_meet_2": {
-        character: null,
+        character: "sea_smile",
         next: "day1_sea_meet_3"
     },
     // L123: *밤색 트윈테일에 교복을 깔끔하게 입고 있다...*
     "day1_sea_meet_3": {
-        character: null,
+        character: "sea_smile",
         next: "day1_sea_meet_4"
     },
     // L125: *웃고 있다. 밝은 애다.*
     "day1_sea_meet_4": {
-        character: null,
+        character: "sea_smile",
         next: "day1_sea_meet_5"
     },
     // L127: 한세아 "한세아야. 이 반 반장. {name} 맞지?"
@@ -185,57 +185,57 @@ Object.assign(SCENARIO[1], {
     },
     // L129: 나 "어, 응. 맞는데... 내 이름 어떻게 알아?"
     "day1_sea_meet_6": {
-        character: null,
+        character: "sea_smile",
         next: "day1_sea_meet_7"
     },
     // L131: 한세아 "담임선생님한테 들었지..."
     "day1_sea_meet_7": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day1_sea_meet_8"
     },
     // L133: 나 "아... 그렇구나."
     "day1_sea_meet_8": {
-        character: null,
+        character: "sea_normal",
         next: "day1_sea_meet_9"
     },
     // L135: *반장이니까 미리 얘기 듣는 게 당연하다.*
     "day1_sea_meet_9": {
-        character: null,
+        character: "sea_normal",
         next: "day1_sea_meet_10"
     },
     // L137: 한세아 "교실 찾고 있었지? 따라와, 안내해줄게."
     "day1_sea_meet_10": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day1_sea_meet_11"
     },
     // L139: *세아가 앞서 걷는다...*
     "day1_sea_meet_11": {
-        character: null,
+        character: "sea_normal",
         next: "day1_sea_meet_12"
     },
     // L141: 한세아 "여기가 과학실이고, 저 끝이 음악실..."
     "day1_sea_meet_12": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day1_sea_meet_13"
     },
     // L143: 한세아 "아, 매점은 1층 끝에 있어..."
     "day1_sea_meet_13": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day1_sea_meet_14"
     },
     // L145: 나 "와, 친절하다. 반장이라 그런 거야?"
     "day1_sea_meet_14": {
-        character: null,
+        character: "sea_normal",
         next: "day1_sea_meet_15"
     },
     // L147: 한세아 "반장이라 그런 것도 있고..."
     "day1_sea_meet_15": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day1_sea_meet_16"
     },
     // L149: *세아가 살짝 웃는다.*
     "day1_sea_meet_16": {
-        character: null,
+        character: "sea_normal",
         next: "day1_sea_meet_17"
     },
     // L151: 한세아 "그냥 새로 온 애가 헤매고 있으면 도와주고 싶잖아."
@@ -245,7 +245,7 @@ Object.assign(SCENARIO[1], {
     },
     // L153: *...좋은 사람이네.*
     "day1_sea_meet_18": {
-        character: null,
+        character: "sea_smile",
         next: "day1_choco_1"
     },
 
@@ -254,37 +254,37 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L157: *교실 가는 길에 세아가 가방에서 뭔가를 꺼낸다.*
     "day1_choco_1": {
-        character: null,
+        character: "sea_smile",
         next: "day1_choco_2"
     },
     // L159: 한세아 "아 맞다, 이거. 초코우유 하나 줄까?..."
     "day1_choco_2": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day1_choco_3"
     },
     // L161: *작은 초코우유 팩을 내민다.*
     "day1_choco_3": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_4"
     },
     // L163: *1+1이면 공짜니까 안 받을 이유가 없지.*
     "day1_choco_4": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_5"
     },
     // L167: 나 "어? 고마운데... 이거 왜?"
     "day1_choco_5": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_6"
     },
     // L169: 한세아 "너 긴장해서 아침 안 먹고 왔지?..."
     "day1_choco_6": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day1_choco_choice"
     },
     // L171-174: 선택지 3개
     "day1_choco_choice": {
-        character: null,
+        character: "sea_normal",
         choices: [
             {
                 next: "day1_choco_accept_1",
@@ -307,12 +307,12 @@ Object.assign(SCENARIO[1], {
     // --- 선택 1: "고마워, 잘 마실게." (L176-184) ---
     // L178: *빨대를 꽂아서 마신다. 달다. 맛있다.*
     "day1_choco_accept_1": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_accept_2"
     },
     // L180: 나 "맛있다. 고마워, 세아."
     "day1_choco_accept_2": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_accept_3"
     },
     // L182: 한세아 "맞지? 초코가 무난하잖아."
@@ -322,19 +322,19 @@ Object.assign(SCENARIO[1], {
     },
     // L184: narration *뭐, 대부분 좋아하긴 하지...*
     "day1_choco_accept_4": {
-        character: null,
+        character: "sea_smile",
         next: "day1_classroom_1"
     },
 
     // --- 선택 2: "...내가 이거 좋아하는 걸 어떻게 알아?" (L186-198) ---
     // L188: 나 "...잠깐, 내가 초코우유 좋아하는 거 어떻게 알아?"
     "day1_choco_question_1": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_question_2"
     },
     // L190: *세아의 표정이 아주 미세하게 경직됐다...*
     "day1_choco_question_2": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_question_3"
     },
     // L192: 한세아 "...1+1이었다니까?..."
@@ -344,7 +344,7 @@ Object.assign(SCENARIO[1], {
     },
     // L194: 나 "아니, 맞아. 좋아해. 고마워."
     "day1_choco_question_4": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_question_5"
     },
     // L196: 한세아 "다행이다~"
@@ -354,19 +354,19 @@ Object.assign(SCENARIO[1], {
     },
     // L198: *세아가 웃는다. 뭐, 1+1이니까...*
     "day1_choco_question_6": {
-        character: null,
+        character: "sea_smile",
         next: "day1_classroom_1"
     },
 
     // --- 선택 3: "나 사실 딸기우유가 더 좋긴 한데." (L200-208) ---
     // L202: 나 "나 사실 딸기우유파인데."
     "day1_choco_joke_1": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_joke_2"
     },
     // L204: *세아가 멈칫한다. 아주 잠깐...*
     "day1_choco_joke_2": {
-        character: null,
+        character: "sea_normal",
         next: "day1_choco_joke_3"
     },
     // L206: 한세아 "아 진짜? ...다음엔 무조건 딸기다. 기억해 둘게."
@@ -417,7 +417,7 @@ Object.assign(SCENARIO[1], {
     },
     // L228: *교실이 조용해진다.*
     "day1_eunsu_3": {
-        character: null,
+        character: "eunsu_warm",
         next: "day1_eunsu_4"
     },
     // L230: 박은수 "{name} 학생, 나와서 인사해줄래요?"
@@ -427,7 +427,7 @@ Object.assign(SCENARIO[1], {
     },
     // L232: *칠판 앞에 서니 더 긴장된다...*
     "day1_eunsu_5": {
-        character: null,
+        character: "eunsu_warm",
         next: "day1_eunsu_6"
     },
     // L234: 박은수 "어서 와요, 잘 왔어요."
@@ -437,7 +437,7 @@ Object.assign(SCENARIO[1], {
     },
     // L236: *선생님이 웃는다. 따뜻하게...*
     "day1_eunsu_7": {
-        character: null,
+        character: "eunsu_warm",
         next: "day1_eunsu_8"
     },
     // L240: 박은수 "자, 자기소개 해볼까요?"
@@ -447,7 +447,7 @@ Object.assign(SCENARIO[1], {
     },
     // L242: 나 "안녕하세요. {name}입니다..."
     "day1_eunsu_9": {
-        character: null,
+        character: "eunsu_normal",
         next: "day1_eunsu_10"
     },
     // L244: 박은수 "취미나 좋아하는 거 없어요?"
@@ -457,12 +457,12 @@ Object.assign(SCENARIO[1], {
     },
     // L246: 나 "음... 게임이랑 음악 듣는 거 좋아합니다."
     "day1_eunsu_11": {
-        character: null,
+        character: "eunsu_normal",
         next: "day1_eunsu_12"
     },
     // L248: *학생들이 웃는다...*
     "day1_eunsu_12": {
-        character: null,
+        character: "eunsu_normal",
         next: "day1_eunsu_13"
     },
     // L250: 박은수 "좋아요. 다들 잘 챙겨주세요..."
@@ -496,7 +496,7 @@ Object.assign(SCENARIO[1], {
     },
     // L262: *유독 조용하다...*
     "day1_seolhwa_4": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day1_seolhwa_5"
     },
     // L264: *뒤쪽 구석에 안경 쓴 남학생도...*
@@ -538,12 +538,12 @@ Object.assign(SCENARIO[1], {
     },
     // L280: *...어색하게 웃는다...*
     "day1_seolhwa_greet_4": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day1_seolhwa_greet_5"
     },
     // L282: *짧은 침묵 후, 아주 작은 목소리로:*
     "day1_seolhwa_greet_5": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day1_seolhwa_greet_6"
     },
     // L284: 이설화 "...안녕."
@@ -553,7 +553,7 @@ Object.assign(SCENARIO[1], {
     },
     // L286: *한마디. 그것뿐이다...*
     "day1_seolhwa_greet_7": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day1_seolhwa_greet_8"
     },
     // L288: 옆자리 남학생 "야, 전학생. 뒤에 누구한테 말한 거야?"

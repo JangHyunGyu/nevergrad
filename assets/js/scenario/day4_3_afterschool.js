@@ -43,7 +43,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_xover_yuna_3"
     },
     "day4_xover_yuna_3": {
-        character: null,
+        character: "yuna_normal",
         next: "day4_xover_yuna_4"
     },
     "day4_xover_yuna_4": {
@@ -55,7 +55,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_xover_yuna_6"
     },
     "day4_xover_yuna_6": {
-        character: null,
+        character: "yuna_normal",
         next: "day4_xover_yuna_7"
     },
     "day4_xover_yuna_7": {
@@ -67,7 +67,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_xover_yuna_9"
     },
     "day4_xover_yuna_9": {
-        character: null,
+        character: "yuna_determined",
         next: "day4_xover_yuna_10"
     },
     "day4_xover_yuna_10": {
@@ -87,7 +87,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_xover_yuna_skip_3"
     },
     "day4_xover_yuna_skip_3": {
-        character: null,
+        character: "yuna_normal",
         next: "day4_after_choice"
     },
 
@@ -118,11 +118,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_4"
     },
     "day4_after_sea_4": {
-        character: null,
+        character: "sea_smile",
         next: "day4_after_sea_5"
     },
     "day4_after_sea_5": {
-        character: null,
+        character: "sea_smile",
         next: "day4_after_sea_6"
     },
     "day4_after_sea_6": {
@@ -130,7 +130,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_7"
     },
     "day4_after_sea_7": {
-        character: null,
+        character: "sea_serious",
         next: "day4_after_sea_8"
     },
     "day4_after_sea_8": {
@@ -138,11 +138,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_9"
     },
     "day4_after_sea_9": {
-        character: null,
+        character: "sea_serious",
         next: "day4_after_sea_10"
     },
     "day4_after_sea_10": {
-        character: null,
+        character: "sea_serious",
         next: "day4_after_sea_11"
     },
     "day4_after_sea_11": {
@@ -175,7 +175,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_accept_3"
     },
     "day4_after_sea_accept_3": {
-        character: null,
+        character: "sea_serious",
         next: "day4_after_sea_12loop"
     },
 
@@ -186,7 +186,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_2"
     },
     "day4_after_sea_12loop_2": {
-        character: null,
+        character: "sea_sad",
         next: "day4_after_sea_12loop_3"
     },
     "day4_after_sea_12loop_3": {
@@ -200,7 +200,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_5"
     },
     "day4_after_sea_12loop_5": {
-        character: null,
+        character: "sea_sad",
         next: "day4_after_sea_12loop_6"
     },
     "day4_after_sea_12loop_6": {
@@ -210,7 +210,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_7"
     },
     "day4_after_sea_12loop_7": {
-        character: null,
+        character: "sea_cry",
         next: "day4_after_sea_12loop_8"
     },
     "day4_after_sea_12loop_8": {
@@ -224,7 +224,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_10"
     },
     "day4_after_sea_12loop_10": {
-        character: null,
+        character: "sea_cry",
         next: "day4_after_sea_12loop_11"
     },
     "day4_after_sea_12loop_11": {
@@ -233,7 +233,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_12"
     },
     "day4_after_sea_12loop_12": {
-        character: null,
+        character: "sea_cry",
         next: "day4_after_sea_12loop_13"
     },
     "day4_after_sea_12loop_13": {
@@ -242,7 +242,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_14"
     },
     "day4_after_sea_12loop_14": {
-        character: null,
+        character: "sea_cry",
         next: "day4_after_sea_12loop_15"
     },
     "day4_after_sea_12loop_15": {
@@ -252,11 +252,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop_16"
     },
     "day4_after_sea_12loop_16": {
-        character: null,
+        character: "sea_cry",
         next: "day4_after_sea_12loop_17"
     },
     "day4_after_sea_12loop_17": {
-        character: null,
+        character: "sea_cry",
         next: "day4_after_sea_12loop_18"
     },
     "day4_after_sea_12loop_18": {
@@ -300,7 +300,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_5"
     },
     "day4_after_eunsu_5": {
-        character: null,
+        character: "eunsu_serious",
         next: "day4_after_eunsu_6"
     },
     "day4_after_eunsu_6": {
@@ -327,7 +327,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_11"
     },
     "day4_after_eunsu_11": {
-        character: null,
+        character: "eunsu_serious",
         next: "day4_after_eunsu_12"
     },
     "day4_after_eunsu_12": {
@@ -340,7 +340,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_14"
     },
     "day4_after_eunsu_14": {
-        character: null,
+        character: "eunsu_serious",
         next: "day4_after_eunsu_15"
     },
     "day4_after_eunsu_15": {
@@ -349,7 +349,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_16"
     },
     "day4_after_eunsu_16": {
-        character: null,
+        character: "eunsu_serious",
         next: "day4_after_eunsu_17"
     },
     "day4_after_eunsu_17": {
@@ -358,7 +358,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_18"
     },
     "day4_after_eunsu_18": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_after_eunsu_19"
     },
     "day4_after_eunsu_19": {
@@ -366,7 +366,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_20"
     },
     "day4_after_eunsu_20": {
-        character: null,
+        character: "eunsu_gentle",
         glitch: { heavyGlitch: true },
         next: "day4_after_end",
         setFlags: ["eunsu_confession_d4"],
@@ -391,11 +391,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_4"
     },
     "day4_after_riin_4": {
-        character: null,
+        character: "riin_neutral",
         next: "day4_after_riin_5"
     },
     "day4_after_riin_5": {
-        character: null,
+        character: "riin_neutral",
         next: "day4_after_riin_6"
     },
     "day4_after_riin_6": {
@@ -407,7 +407,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_8"
     },
     "day4_after_riin_8": {
-        character: null,
+        character: "riin_neutral",
         next: "day4_after_riin_9"
     },
     "day4_after_riin_9": {
@@ -420,7 +420,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_11"
     },
     "day4_after_riin_11": {
-        character: null,
+        character: "riin_cold",
         next: "day4_after_riin_12"
     },
     "day4_after_riin_12": {
@@ -438,11 +438,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_15"
     },
     "day4_after_riin_15": {
-        character: null,
+        character: "riin_cold",
         next: "day4_after_riin_16"
     },
     "day4_after_riin_16": {
-        character: null,
+        character: "riin_cold",
         // 열쇠 등장
         next: "day4_after_riin_17"
     },
@@ -456,7 +456,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_19"
     },
     "day4_after_riin_19": {
-        character: null,
+        character: "riin_cold",
         next: "day4_after_riin_20"
     },
     "day4_after_riin_20": {
@@ -464,7 +464,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_21"
     },
     "day4_after_riin_21": {
-        character: null,
+        character: "riin_cold",
         next: "day4_after_riin_22"
     },
     "day4_after_riin_22": {
@@ -478,7 +478,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_24"
     },
     "day4_after_riin_24": {
-        character: null,
+        character: "riin_cold",
         next: "day4_after_riin_25"
     },
     "day4_after_riin_25": {
@@ -487,7 +487,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_26"
     },
     "day4_after_riin_26": {
-        character: null,
+        character: "riin_cold",
         next: "day4_after_riin_27"
     },
     "day4_after_riin_27": {

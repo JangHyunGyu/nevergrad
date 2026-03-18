@@ -80,11 +80,19 @@ class SceneRenderer {
         return filename.split('_')[0];
     }
 
-    setCharacter(position, src) {
+    /**
+     * @param {string} position  'left' | 'center' | 'right'
+     * @param {string} src       이미지 경로
+     * @param {number} [opacity] 0~1 사이 값. 생략하면 1(기본 불투명)
+     */
+    setCharacter(position, src, opacity) {
         const el = position === 'left' ? this.charLeft
                   : position === 'right' ? this.charRight
                   : this.charCenter;
         if (!el) return;
+
+        // 목표 opacity 문자열 ('0.35' 등). undefined이면 '' (CSS 기본값 = 1)
+        const targetOpacity = (opacity != null && opacity < 1) ? String(opacity) : '';
 
         const prevSrc = el.getAttribute('src');
         if (prevSrc && prevSrc !== '') {
@@ -94,12 +102,13 @@ class SceneRenderer {
             if (prevPrefix === newPrefix) {
                 // 같은 캐릭터 표정 변화 → 즉시 교체
                 el.src = src;
+                el.style.opacity = targetOpacity;
             } else {
                 // 다른 캐릭터 → 페이드아웃 후 페이드인
                 el.style.opacity = '0';
                 setTimeout(() => {
                     el.src = src;
-                    requestAnimationFrame(() => { el.style.opacity = ''; });
+                    requestAnimationFrame(() => { el.style.opacity = targetOpacity; });
                 }, 280);
             }
         } else {
@@ -107,7 +116,7 @@ class SceneRenderer {
             el.style.opacity = '0';
             el.src = src;
             requestAnimationFrame(() => {
-                requestAnimationFrame(() => { el.style.opacity = ''; });
+                requestAnimationFrame(() => { el.style.opacity = targetOpacity; });
             });
         }
     }

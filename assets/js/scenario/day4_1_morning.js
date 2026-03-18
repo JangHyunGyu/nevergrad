@@ -263,7 +263,7 @@ Object.assign(SCENARIO[4], {
     },
     // 그게 더 무섭다
     "day4_morning_gate_10": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_eunsu"
     },
 
@@ -277,7 +277,7 @@ Object.assign(SCENARIO[4], {
     },
     // 팔짱을 끼고 내 옆에 선다
     "day4_morning_eunsu_3": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_eunsu_choice"
     },
 
@@ -367,7 +367,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_morning_sea_2"
     },
     "day4_morning_sea_2": {
-        character: null,
+        character: "sea_smile",
         next: "day4_morning_sea_3"
     },
     // 어제 유나는 3년간의 증거를 보여줬다
@@ -378,7 +378,7 @@ Object.assign(SCENARIO[4], {
 
     // 앞자리 남학생에게 질문
     "day4_morning_sea_4": {
-        character: null,
+        character: "sea_smile",
         next: "day4_morning_sea_5"
     },
     // '그런 애 있었나?'
@@ -426,12 +426,12 @@ Object.assign(SCENARIO[4], {
     },
     // 분필로 '소속' 쓴다
     "day4_morning_class_2": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_class_3"
     },
     // 출석부 — 유나의 이름이 수정 테이프로 지워져 있다
     "day4_morning_class_3": {
-        character: null,
+        character: "eunsu_gentle",
         glitch: { noise: true, noiseDuration: 150 },
         next: "day4_morning_class_4"
     },
@@ -452,7 +452,7 @@ Object.assign(SCENARIO[4], {
     },
     // 선생님의 시선이 나에게 고정, 한 발짝 다가옴
     "day4_morning_class_7": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_class_8"
     },
     // '떠나려고 한 사람은... 대부분 후회하더라'
@@ -470,7 +470,7 @@ Object.assign(SCENARIO[4], {
     },
     // 30쌍의 눈 — 전부 웃고 있다
     "day4_morning_class_10": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day4_morning_class_11"
     },

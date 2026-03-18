@@ -299,7 +299,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_xover_glitch_4"
     },
     "day3_xover_glitch_4": {
-        character: null,
+        character: "seolhwa_ghost",
         next: "day3_xover_glitch_5"
     },
     // 설화 사라짐
@@ -324,11 +324,11 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_2"
     },
     "day3_night_seolhwa_2": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day3_night_seolhwa_3"
     },
     "day3_night_seolhwa_3": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day3_night_seolhwa_4"
     },
     "day3_night_seolhwa_4": {
@@ -351,11 +351,11 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_6"
     },
     "day3_night_seolhwa_6": {
-        character: null,
+        character: "seolhwa_sad",
         next: "day3_night_seolhwa_6a"
     },
     "day3_night_seolhwa_6a": {
-        character: null,
+        character: "seolhwa_sad",
         next: "day3_night_seolhwa_7"
     },
     // "5일 안에... 여기서 나가야 해."
@@ -366,7 +366,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_7a"
     },
     "day3_night_seolhwa_7a": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day3_night_seolhwa_8"
     },
     // "나처럼 되기 전에."
@@ -377,19 +377,19 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_9"
     },
     "day3_night_seolhwa_9": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day3_night_seolhwa_10"
     },
     "day3_night_seolhwa_10": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day3_night_seolhwa_11"
     },
     "day3_night_seolhwa_11": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day3_night_seolhwa_11a"
     },
     "day3_night_seolhwa_11a": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day3_night_seolhwa_12"
     },
     // "...기억해. 왼손."

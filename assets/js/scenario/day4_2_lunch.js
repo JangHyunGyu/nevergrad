@@ -267,7 +267,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_yuna_42": {
         // 커튼을 젖혔다
-        character: null,
+        character: "yuna_weak",
         next: "day4_lunch_yuna_43"
     },
     "day4_lunch_yuna_43": {
@@ -292,7 +292,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_yuna_47": {
         // "유나...! 괜찮아?"
-        character: null,
+        character: "yuna_weak",
         next: "day4_lunch_yuna_48"
     },
     "day4_lunch_yuna_48": {
@@ -307,7 +307,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_yuna_50": {
         // "찾았어. 여기 있어."
-        character: null,
+        character: "yuna_weak",
         next: "day4_lunch_yuna_51"
     },
 
@@ -324,7 +324,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_yuna_53": {
         // 유나 손가락이 서류 가리킴
-        character: null,
+        character: "yuna_weak",
         next: "day4_lunch_yuna_54"
     },
     "day4_lunch_yuna_54": {
@@ -352,7 +352,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_yuna_58": {
         // 유나 숨 가쁨, 약 때문
-        character: null,
+        character: "yuna_weak",
         next: "day4_lunch_yuna_59"
     },
 
@@ -537,7 +537,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_yuna_91": {
         // 유나가 나를 붙잡는다
-        character: null,
+        character: "yuna_weak",
         next: "day4_lunch_yuna_92"
     },
     "day4_lunch_yuna_92": {
@@ -552,7 +552,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_yuna_94": {
         // 유나의 손을 잡았다. 차갑다.
-        character: null,
+        character: "yuna_weak",
         next: "day4_lunch_yuna_timer"
     },
 
@@ -608,7 +608,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_nurse_5": {
         // 주사기를 뒤로 숨긴다
-        character: null,
+        character: "riin_smile",
         next: "day4_lunch_nurse_6"
     },
     "day4_lunch_nurse_6": {
@@ -628,7 +628,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_nurse_9": {
         // 목소리 차가웠다가 부드러워짐
-        character: null,
+        character: "riin_cold",
         next: "day4_lunch_nurse_10"
     },
     "day4_lunch_nurse_10": {
@@ -638,7 +638,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_nurse_11": {
         // '괜찮을 거야' — 미래형
-        character: null,
+        character: "riin_smile",
         next: "day4_lunch_nurse_12"
     },
     "day4_lunch_nurse_12": {

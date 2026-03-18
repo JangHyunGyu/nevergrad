@@ -65,82 +65,82 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_gate_2"
     },
     "day2_morning_gate_2": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_gate_3"
     },
     "day2_morning_gate_3": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_gate_4"
     },
     "day2_morning_gate_4": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_gate_5"
     },
 
     // ===== 등교길 — 세아와 수다 =====
     "day2_morning_gate_5": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_walk_1"
     },
     "day2_morning_walk_1": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_walk_2"
     },
     "day2_morning_walk_2": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_walk_3"
     },
     "day2_morning_walk_3": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_walk_4"
     },
     "day2_morning_walk_4": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_walk_5"
     },
     "day2_morning_walk_5": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_walk_6"
     },
     "day2_morning_walk_6": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_walk_7",
         stats: { sea: { affinity: 3 } }
     },
     "day2_morning_walk_7": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_walk_8"
     },
     "day2_morning_walk_8": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_walk_9"
     },
     "day2_morning_walk_9": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_walk_10"
     },
     "day2_morning_walk_10": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_walk_11"
     },
     "day2_morning_walk_11": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_walk_12"
     },
     "day2_morning_walk_12": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_walk_13"
     },
     "day2_morning_walk_13": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_walk_14"
     },
     "day2_morning_walk_14": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_walk_15"
     },
     "day2_morning_walk_15": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_walk_16"
     },
     "day2_morning_walk_16": {
@@ -168,27 +168,27 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja4_4"
     },
     "day2_morning_deja4_4": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_deja4_5"
     },
     "day2_morning_deja4_5": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_deja4_6",
         stats: { dejavu: 1, sea: { danger: 2 } },
         glitch: { type: "flicker", duration: 300 }
     },
     "day2_morning_deja4_6": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_class_1"
     },
 
     // ===== 세아 반응 (아직 복도) =====
     "day2_morning_class_1": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_class_2"
     },
     "day2_morning_class_2": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_class_3"
     },
 
@@ -204,7 +204,7 @@ Object.assign(SCENARIO[2], {
         stats: { eunsu: { danger: 3 } }
     },
     "day2_morning_class_5": {
-        character: null,
+        character: "eunsu_normal",
         next: "day2_morning_class_6"
     },
     "day2_morning_class_6": {
@@ -214,7 +214,7 @@ Object.assign(SCENARIO[2], {
 
     // ===== 오전 수업 — 조별 발표 =====
     "day2_morning_class_7": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day2_morning_pres_1"
     },
     "day2_morning_pres_1": {
@@ -222,7 +222,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_2"
     },
     "day2_morning_pres_2": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day2_morning_pres_3"
     },
     "day2_morning_pres_3": {
@@ -230,7 +230,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_4"
     },
     "day2_morning_pres_4": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_morning_pres_5"
     },
     "day2_morning_pres_5": {
@@ -238,19 +238,19 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_6"
     },
     "day2_morning_pres_6": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_pres_7"
     },
     "day2_morning_pres_7": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_pres_8"
     },
     "day2_morning_pres_8": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_pres_9"
     },
     "day2_morning_pres_9": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_pres_10"
     },
     "day2_morning_pres_10": {
@@ -258,11 +258,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_11"
     },
     "day2_morning_pres_11": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_pres_12"
     },
     "day2_morning_pres_12": {
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_deja5_1",
         stats: { sea: { affinity: 2 } }
     },
@@ -273,11 +273,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja5_2"
     },
     "day2_morning_deja5_2": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_morning_deja5_3"
     },
     "day2_morning_deja5_3": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_morning_deja5_4"
     },
     "day2_morning_deja5_4": {
@@ -289,17 +289,17 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja5_6"
     },
     "day2_morning_deja5_6": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_morning_deja5_6a",
         stats: { dejavu: 1, eunsu: { danger: 2 } },
         glitch: { type: "cold", duration: 500 }
     },
     "day2_morning_deja5_6a": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_morning_deja5_7"
     },
     "day2_morning_deja5_7": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_morning_deja5_7a"
     },
     "day2_morning_deja5_7a": {
@@ -307,11 +307,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja5_8"
     },
     "day2_morning_deja5_8": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_morning_deja5_9"
     },
     "day2_morning_deja5_9": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_morning_deja5_10"
     },
     "day2_morning_deja5_10": {
@@ -319,7 +319,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_deja5_11"
     },
     "day2_morning_deja5_11": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_morning_seolhwa_2"
     },
 
@@ -333,11 +333,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_seolhwa_4"
     },
     "day2_morning_seolhwa_4": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day2_morning_seolhwa_5"
     },
     "day2_morning_seolhwa_5": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day2_morning_end",
         glitch: { silence: true, silenceDuration: 2000 }
     },

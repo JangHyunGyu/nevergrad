@@ -303,7 +303,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_mirror_9"
     },
     "day4_night_mirror_9": {
-        character: null,
+        character: "seolhwa_sad",
         unskippable: true,
         next: "day4_night_mirror_10"
     },
@@ -321,7 +321,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_mirror_12": {
         unskippable: true,
-        character: null,
+        character: "seolhwa_sad",
         next: "day4_night_mirror_swipe"
     },
 
@@ -454,7 +454,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_mirror_hit1_15": {
         unskippable: true,
-        character: null,
+        character: "seolhwa_sad",
         next: "day4_night_mirror_hit2"
     },
 
@@ -589,7 +589,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_mirror_collapse_9": {
         unskippable: true,
-        character: null,
+        character: "seolhwa_sad",
         next: "day4_night_plan"
     },
 

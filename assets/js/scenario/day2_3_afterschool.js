@@ -29,11 +29,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_eunsu_3"
     },
     "day2_after_eunsu_3": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_after_eunsu_4"
     },
     "day2_after_eunsu_4": {
-        character: null,
+        character: "eunsu_warm",
         next: "day2_after_eunsu_5"
     },
     "day2_after_eunsu_5": {
@@ -41,15 +41,15 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_eunsu_6"
     },
     "day2_after_eunsu_6": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day2_after_eunsu_7"
     },
     "day2_after_eunsu_7": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day2_after_eunsu_8"
     },
     "day2_after_eunsu_8": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day2_after_eunsu_choice"
     },
 
@@ -90,7 +90,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_limit_3"
     },
     "day2_after_limit_3": {
-        character: null,
+        character: "eunsu_normal",
         next: "day2_after_limit_4"
     },
     "day2_after_limit_4": {
@@ -98,7 +98,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_limit_5"
     },
     "day2_after_limit_5": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day2_after_sea_start"
     },
 
@@ -113,7 +113,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_2"
     },
     "day2_after_sea_2": {
-        character: null,
+        character: "sea_smile",
         next: "day2_after_sea_3"
     },
     "day2_after_sea_3": {
@@ -121,19 +121,19 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_4"
     },
     "day2_after_sea_4": {
-        character: null,
+        character: "sea_smile",
         next: "day2_after_sea_5"
     },
     "day2_after_sea_5": {
-        character: null,
+        character: "sea_smile",
         next: "day2_after_sea_6"
     },
     "day2_after_sea_6": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_after_sea_7"
     },
     "day2_after_sea_7": {
-        character: null,
+        character: "sea_normal",
         next: "day2_after_sea_8"
     },
     "day2_after_sea_8": {
@@ -141,31 +141,31 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_9"
     },
     "day2_after_sea_9": {
-        character: null,
+        character: "sea_smile",
         next: "day2_after_sea_10"
     },
     "day2_after_sea_10": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_after_sea_11"
     },
     "day2_after_sea_11": {
-        character: null,
+        character: "sea_normal",
         next: "day2_after_sea_12"
     },
     "day2_after_sea_12": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_after_sea_13"
     },
     "day2_after_sea_13": {
-        character: null,
+        character: "sea_normal",
         next: "day2_after_sea_14"
     },
     "day2_after_sea_14": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_after_sea_15"
     },
     "day2_after_sea_15": {
-        character: null,
+        character: "sea_normal",
         next: "day2_after_sea_16"
     },
     "day2_after_sea_16": {
@@ -173,7 +173,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_17"
     },
     "day2_after_sea_17": {
-        character: null,
+        character: "sea_normal",
         next: "day2_after_sea_18"
     },
     "day2_after_sea_18": {
@@ -185,20 +185,20 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_20"
     },
     "day2_after_sea_20": {
-        character: null,
+        character: "sea_vulnerable",
         next: "day2_after_sea_21"
     },
     "day2_after_sea_21": {
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_after_sea_22",
         stats: { sea: { affinity: 8 } }
     },
     "day2_after_sea_22": {
-        character: null,
+        character: "sea_normal",
         next: "day2_after_sea_23"
     },
     "day2_after_sea_23": {
-        character: null,
+        character: "sea_normal",
         next: "day2_after_sea_24"
     },
     "day2_after_sea_24": {
@@ -206,11 +206,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_25"
     },
     "day2_after_sea_25": {
-        character: null,
+        character: "sea_smile",
         next: "day2_after_sea_26"
     },
     "day2_after_sea_26": {
-        character: null,
+        character: "sea_smile",
         next: "day2_after_sea_27"
     },
     "day2_after_sea_27": {
@@ -218,7 +218,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_sea_28"
     },
     "day2_after_sea_28": {
-        character: null,
+        character: "sea_smile",
         next: "day2_after_hallway_1"
     },
 
@@ -284,15 +284,15 @@ Object.assign(SCENARIO[2], {
         next: "day2_after_seolhwa_3"
     },
     "day2_after_seolhwa_3": {
-        character: null,
+        character: "seolhwa_sad",
         next: "day2_after_seolhwa_4"
     },
     "day2_after_seolhwa_4": {
-        character: null,
+        character: "seolhwa_sad",
         next: "day2_after_seolhwa_5"
     },
     "day2_after_seolhwa_5": {
-        character: null,
+        character: "seolhwa_sad",
         next: "day2_after_seolhwa_6"
     },
     "day2_after_seolhwa_6": {

@@ -184,7 +184,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_seolhwa_4"
     },
     "day3_morning_seolhwa_4": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day3_morning_seolhwa_5"
     },
     "day3_morning_seolhwa_5": {
@@ -197,11 +197,11 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_seolhwa_7"
     },
     "day3_morning_seolhwa_7": {
-        character: null,
+        character: "seolhwa_sad",
         next: "day3_morning_seolhwa_8"
     },
     "day3_morning_seolhwa_8": {
-        character: null,
+        character: "seolhwa_sad",
         next: "day3_morning_seolhwa_9"
     },
     "day3_morning_seolhwa_9": {
@@ -250,7 +250,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_3"
     },
     "day3_morning_sea_3": {
-        character: null,
+        character: "sea_smile",
         next: "day3_morning_sea_4"
     },
     "day3_morning_sea_4": {
@@ -258,19 +258,19 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_5"
     },
     "day3_morning_sea_5": {
-        character: null,
+        character: "sea_smile",
         next: "day3_morning_sea_6"
     },
     "day3_morning_sea_6": {
-        character: null,
+        character: "sea_smile",
         next: "day3_morning_sea_7"
     },
     "day3_morning_sea_7": {
-        character: null,
+        character: "sea_smile",
         next: "day3_morning_sea_6a"
     },
     "day3_morning_sea_6a": {
-        character: null,
+        character: "sea_smile",
         next: "day3_morning_sea_8"
     },
     "day3_morning_sea_8": {
@@ -279,7 +279,7 @@ Object.assign(SCENARIO[3], {
         stats: { sea: { danger: 3 } }
     },
     "day3_morning_sea_9": {
-        character: null,
+        character: "sea_cold",
         next: "day3_morning_pencil_1"
     },
 

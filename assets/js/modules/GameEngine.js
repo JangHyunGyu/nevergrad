@@ -243,17 +243,19 @@ class GameEngine {
         // 캐릭터 (키 기반: "sea_smile" → CONFIG.EXPRESSIONS에서 경로 조회)
         // character/characters가 명시된 경우만 변경, 없으면 이전 상태 유지
         // character: null 로 명시하면 캐릭터 제거
+        // charOpacity: 0~1 — 메신저/문자 씬에서 캐릭터를 반투명으로 표시
         if ('character' in scene || 'characters' in scene) {
+            const opacity = scene.charOpacity;
             if (scene.character === null && !scene.characters) {
                 // 명시적 null — 캐릭터 퇴장
                 this.renderer.clearCharacters();
             } else {
                 if (scene.character) {
-                    this.renderer.setCharacter('center', this._resolveCharImage(scene.character));
+                    this.renderer.setCharacter('center', this._resolveCharImage(scene.character), opacity);
                 }
                 if (scene.characters) {
                     for (const [pos, key] of Object.entries(scene.characters)) {
-                        if (key) this.renderer.setCharacter(pos, this._resolveCharImage(key));
+                        if (key) this.renderer.setCharacter(pos, this._resolveCharImage(key), opacity);
                     }
                 }
             }

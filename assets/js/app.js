@@ -12,6 +12,27 @@
  * HTML에서 <script> 순서로 로드되거나, 빌드 도구로 번들링
  */
 
+/**
+ * 모바일 풀스크린 유틸리티
+ * - Fullscreen API 지원 시 풀스크린 진입
+ * - iOS Safari는 Fullscreen API 미지원이므로 standalone 모드(PWA)로 대체
+ */
+function requestMobileFullscreen() {
+    const elem = document.documentElement;
+
+    // Fullscreen API (Chrome, Firefox, Edge, Samsung Internet 등)
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen().catch(() => {});
+    } else if (elem.webkitRequestFullscreen) {
+        // Safari desktop / older WebKit
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+        // IE11 / Edge Legacy
+        elem.msRequestFullscreen();
+    }
+    // iOS Safari: Fullscreen API 미지원 — PWA standalone + viewport meta로 대응
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     // 타이틀 배경 이미지 로드 체크 — 이미지 없으면 CSS 그라디언트 폴백
     const titleBgLayer = document.querySelector('.title-bg-layer');

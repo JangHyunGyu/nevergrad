@@ -124,10 +124,14 @@ class GameEngine {
 
     _bindTitleScreen() {
         document.getElementById('btn-new-game')?.addEventListener('click', () => {
+            // 모바일 풀스크린 진입 (유저 제스처 필요)
+            if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
             this._showScreen('name-screen');
         });
 
         document.getElementById('btn-continue')?.addEventListener('click', async () => {
+            // 모바일 풀스크린 진입 (유저 제스처 필요)
+            if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
             this.save.load();
             this.glitch.initConsoleEasterEgg(this.state.currentDay);
             if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);

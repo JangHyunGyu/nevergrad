@@ -866,7 +866,7 @@ Object.assign(SCENARIO[5], {
     },
     // "거긴 위험해. 이리 와."
     "day5_lunch_eunsu_7": {
-        character: "eunsu_gentle",
+        character: "eunsu_warm",
         next: "day5_lunch_eunsu_8"
     },
     // 미소가 떨어져 내림
@@ -880,26 +880,26 @@ Object.assign(SCENARIO[5], {
     },
     // "매번 이러더라."
     "day5_lunch_eunsu_10": {
-        character: "eunsu_gentle",
+        character: "eunsu_warm",
         next: "day5_lunch_eunsu_11"
     },
     // "1번째 때는 화가 났어."
     "day5_lunch_eunsu_11": {
-        character: "eunsu_gentle",
+        character: "eunsu_warm",
         next: "day5_lunch_eunsu_12"
     },
     // "3번째 때부터 — 무서웠어."
     "day5_lunch_eunsu_12": {
-        character: "eunsu_gentle",
+        character: "eunsu_warm",
         next: "day5_lunch_eunsu_13"
     },
     "day5_lunch_eunsu_13": {
-        character: "eunsu_gentle",
+        character: "eunsu_warm",
         next: "day5_lunch_eunsu_14"
     },
     // "선생님이 잘해주면 남아있을 줄 알았어."
     "day5_lunch_eunsu_14": {
-        character: "eunsu_gentle",
+        character: "eunsu_warm",
         next: "day5_lunch_eunsu_15"
     },
     // 한 발 다가옴
@@ -909,11 +909,11 @@ Object.assign(SCENARIO[5], {
     },
     // "1일차에 교실에 들어왔을 때. 13번째인데도."
     "day5_lunch_eunsu_16": {
-        character: "eunsu_gentle",
+        character: "eunsu_warm",
         next: "day5_lunch_eunsu_17"
     },
     "day5_lunch_eunsu_17": {
-        character: "eunsu_gentle",
+        character: "eunsu_warm",
         next: "day5_lunch_eunsu_18"
     },
     // 주사기 꺼냄
@@ -927,19 +927,19 @@ Object.assign(SCENARIO[5], {
     },
     // "마지막 기회야"
     "day5_lunch_eunsu_20": {
-        character: "eunsu_gentle",
+        character: "eunsu_obsessed",
         next: "day5_lunch_eunsu_21"
     },
     // "이거 한 대면 다 끝나."
     "day5_lunch_eunsu_21": {
-        character: "eunsu_gentle",
+        character: "eunsu_obsessed",
         typingSpeed: 80,
         vibrate: "final_needle",
         next: "day5_lunch_eunsu_22"
     },
     // "다시 1일차부터."
     "day5_lunch_eunsu_22": {
-        character: "eunsu_gentle",
+        character: "eunsu_obsessed",
         next: "day5_lunch_eunsu_23"
     },
     // 침묵

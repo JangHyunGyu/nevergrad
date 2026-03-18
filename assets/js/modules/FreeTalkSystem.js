@@ -112,9 +112,10 @@ class FreeTalkSystem {
 
         if (this.turnCount >= this.maxTurns) {
             setTimeout(() => {
+                const nextScene = this.nextSceneId;
                 this.cleanup();
-                if (this.nextSceneId && this.engine._loadScene) {
-                    this.engine._loadScene(this.nextSceneId);
+                if (nextScene && this.engine._loadScene) {
+                    this.engine._loadScene(nextScene);
                 }
             }, 2000);
         } else {
@@ -166,9 +167,10 @@ class FreeTalkSystem {
             this._showReadBadge();
             this.isWaiting = false;
             setTimeout(() => {
+                const nextScene = this.nextSceneId;
                 this.cleanup();
-                if (this.nextSceneId && this.engine._loadScene) {
-                    this.engine._loadScene(this.nextSceneId);
+                if (nextScene && this.engine._loadScene) {
+                    this.engine._loadScene(nextScene);
                 }
             }, 3000);
             return;
@@ -251,9 +253,10 @@ class FreeTalkSystem {
         this.isWaiting = false;
 
         setTimeout(() => {
+            const nextScene = this.nextSceneId;
             this.cleanup();
-            if (this.nextSceneId && this.engine._loadScene) {
-                this.engine._loadScene(this.nextSceneId);
+            if (nextScene && this.engine._loadScene) {
+                this.engine._loadScene(nextScene);
             }
         }, 3000);
     }

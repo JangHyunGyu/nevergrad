@@ -531,7 +531,7 @@ class GameEngine {
                         for (const [stat, val] of Object.entries(changes)) {
                             this.state.changeStat(charId, stat, val);
                             if (stat === 'affinity' && val !== 0) {
-                                this._playStatChangeFX(stat, val);
+                                this._playStatChangeFX(stat, val, charId);
                             }
                         }
                     }
@@ -839,7 +839,7 @@ class GameEngine {
      * @param {string} stat - 스탯 종류 ('affinity')
      * @param {number} val - 변화량 (양수: 증가, 음수: 감소)
      */
-    _playStatChangeFX(stat, val) {
+    _playStatChangeFX(stat, val, charId) {
         // 효과음 재생 (합성 SFX)
         if (this.audio?.ctx) {
             if (val > 0) {
@@ -849,8 +849,8 @@ class GameEngine {
             }
         }
 
-        // 시각 이펙트: 증감 팝업 + 하트 이펙트 (증가 시)
-        this._showStatChangePopup(val);
+        // 시각 이펙트: 캐릭터명 + 증감 팝업 + 하트 이펙트 (증가 시)
+        this._showStatChangePopup(val, charId);
         if (val > 0) {
             this._showHeartEffect();
         }
@@ -861,22 +861,27 @@ class GameEngine {
      * stat-display 옆에 짧게 표시되었다 사라짐
      * @param {number} val - 변화량
      */
-    _showStatChangePopup(val) {
-        const hud = document.getElementById('hud');
-        if (!hud) return;
+    _showStatChangePopup(val, charId) {
+        const gameScreen = document.getElementById('game-screen');
+        if (!gameScreen) return;
+
+        // 캐릭터 이름 가져오기
+        const charName = charId ? (CONFIG.CHAR_NAMES[charId] || charId) : '';
+        const label = this.state.getCharLabel(charId);
+        const icon = label?.icon || '♡';
 
         const popup = document.createElement('div');
         popup.className = 'stat-change-popup';
 
         if (val > 0) {
-            popup.textContent = `♥ +${val}`;
+            popup.textContent = `${charName} ${icon} +${val}`;
             popup.classList.add('stat-change-up');
         } else {
-            popup.textContent = `♥ ${val}`;
+            popup.textContent = `${charName} ${icon} ${val}`;
             popup.classList.add('stat-change-down');
         }
 
-        hud.appendChild(popup);
+        gameScreen.appendChild(popup);
 
         // 애니메이션 후 제거 (1.5초)
         setTimeout(() => popup.remove(), 1500);

@@ -346,9 +346,10 @@ class GameEngine {
         // 글리치
         if (scene.glitch) this._handleGlitch(scene.glitch);
 
-        // 디바이스 기믹: 진동
-        if (scene.vibrate && this.deviceGimmick) {
-            this.deviceGimmick.vibrate(scene.vibrate);
+        // 디바이스 기믹: 진동 + PC용 시각 효과
+        if (scene.vibrate) {
+            if (this.deviceGimmick) this.deviceGimmick.vibrate(scene.vibrate);
+            this._vibrateVisual(scene.vibrate);
         }
 
         // 디바이스 기믹: 가짜 푸시 알림
@@ -860,6 +861,53 @@ class GameEngine {
 
         // 컨테이너 정리 (2초)
         setTimeout(() => container.remove(), 2000);
+    }
+
+    /**
+     * 진동 패턴에 맞는 CSS 시각 효과 (PC에서도 진동 느낌 전달)
+     */
+    _vibrateVisual(pattern) {
+        const gameScreen = document.getElementById('game-screen');
+        if (!gameScreen) return;
+
+        // 패턴별 CSS 클래스 매핑
+        const visualMap = {
+            notification: 'vfx-buzz',
+            message_buzz: 'vfx-buzz',
+            message_frenzy: 'vfx-shake-heavy',
+            heartbeat: 'vfx-pulse',
+            danger: 'vfx-shake',
+            chase: 'vfx-shake-heavy',
+            impact: 'vfx-impact',
+            stat_crack: 'vfx-crack',
+            needle_touch: 'vfx-pulse',
+            underground: 'vfx-rumble',
+            paralysis: 'vfx-shake-heavy',
+            final_needle: 'vfx-impact',
+            door_resistance: 'vfx-rumble',
+            timer_tick: 'vfx-buzz',
+            grip_change: 'vfx-buzz',
+            escape_relief: null
+        };
+
+        const cls = visualMap[pattern] || 'vfx-shake';
+        if (!cls) return;
+
+        gameScreen.classList.remove('vfx-buzz', 'vfx-shake', 'vfx-shake-heavy', 'vfx-pulse', 'vfx-impact', 'vfx-crack', 'vfx-rumble');
+        void gameScreen.offsetWidth;
+        gameScreen.classList.add(cls);
+
+        // 애니메이션 종료 후 클래스 제거
+        const durations = {
+            'vfx-buzz': 200,
+            'vfx-shake': 400,
+            'vfx-shake-heavy': 800,
+            'vfx-pulse': 1000,
+            'vfx-impact': 300,
+            'vfx-crack': 500,
+            'vfx-rumble': 600
+        };
+        setTimeout(() => gameScreen.classList.remove(cls), durations[cls] || 500);
     }
 
     // ===== Save Toast =====

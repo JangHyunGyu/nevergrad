@@ -124,6 +124,18 @@ class GameEngine {
     // ===== Title Screen =====
 
     _bindTitleScreen() {
+        // 타이틀 화면 첫 터치 시 풀스크린 진입 (주소창 숨김)
+        const titleScreen = document.getElementById('title-screen');
+        if (titleScreen) {
+            const enterFullscreen = () => {
+                if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
+                titleScreen.removeEventListener('click', enterFullscreen);
+                titleScreen.removeEventListener('touchstart', enterFullscreen);
+            };
+            titleScreen.addEventListener('click', enterFullscreen, { once: true });
+            titleScreen.addEventListener('touchstart', enterFullscreen, { once: true });
+        }
+
         document.getElementById('btn-new-game')?.addEventListener('click', () => {
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();

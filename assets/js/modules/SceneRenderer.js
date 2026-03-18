@@ -106,46 +106,24 @@ class SceneRenderer {
         // 목표 opacity 문자열 ('0.35' 등). undefined이면 '' (CSS 기본값 = 1)
         const targetOpacity = (opacity != null && opacity < 1) ? String(opacity) : '';
 
+        // 같은 이미지 + 같은 opacity면 아무것도 안 함 (깜빡임 방지)
+        const prevSrc = el.getAttribute('src');
+        if (prevSrc === src && el.style.opacity === targetOpacity) return;
+
         // 이전 클론이 남아있으면 제거
         this._removePrevClone(el);
 
         // 이전 전환 타이머가 남아있으면 정리
         if (el._charTimer) { clearTimeout(el._charTimer); el._charTimer = null; }
 
-        const prevSrc = el.getAttribute('src');
         if (prevSrc && prevSrc !== '') {
             const prevPrefix = this._getCharPrefix(prevSrc);
             const newPrefix = this._getCharPrefix(src);
 
             if (prevPrefix === newPrefix) {
-                // 같은 캐릭터 표정 변화 → 크로스페이드
-                // 1. 현재 이미지를 클론하여 뒤에 배치 (이전 표정)
-                const clone = el.cloneNode(false);
-                clone.removeAttribute('id');
-                clone.classList.add('char-crossfade-out');
-                clone.style.opacity = el.style.opacity || '';
-                el.parentNode.insertBefore(clone, el);
-                el._fadeClone = clone;
-
-                // 2. 메인 이미지에 새 표정 설정, opacity 0에서 시작해 페이드인
-                el.classList.add('char-crossfade-in');
-                el.style.opacity = '0';
+                // 같은 캐릭터 표정 변화 → 즉시 교체 (깜빡임 없음)
                 el.src = src;
-
-                requestAnimationFrame(() => {
-                    requestAnimationFrame(() => {
-                        el.style.opacity = targetOpacity;
-                        // 클론(이전 표정) 페이드아웃
-                        clone.style.opacity = '0';
-                    });
-                });
-
-                // 3. 전환 완료 후 클론 제거 & 클래스 정리
-                el._charTimer = setTimeout(() => {
-                    this._removePrevClone(el);
-                    el.classList.remove('char-crossfade-in');
-                    el._charTimer = null;
-                }, 280);
+                el.style.opacity = targetOpacity;
             } else {
                 // 다른 캐릭터 → 페이드아웃 후 페이드인
                 el.classList.add('char-fade-out');

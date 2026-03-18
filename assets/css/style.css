@@ -468,7 +468,7 @@ body {
     min-height: 3em;
     transition: color 2s ease;
     padding-top: 0.3rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1), 0 0 6px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 1), 0 0 12px rgba(0, 0, 0, 0.5);
 }
 
 .click-indicator {
@@ -776,6 +776,55 @@ body {
     .quick-menu { gap: 1px; }
     .qm-btn { padding: 0.2rem 0.4rem; font-size: 0.6rem; }
     .backlog-container { width: 95%; height: 85%; }
+}
+
+/* ===== 모바일 가로모드 최적화 ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .dialogue-box {
+        padding: 0.5rem 1rem 0.8rem;
+        min-height: 90px;
+    }
+    .speaker-name {
+        font-size: 0.75rem;
+        margin-bottom: 0.2rem;
+        padding: 0.1rem 0.6rem;
+    }
+    .dialogue-text {
+        font-size: 0.82rem;
+        line-height: 1.5;
+        min-height: 2em;
+    }
+    .character-sprite {
+        height: 95%;
+    }
+    .char-crossfade-out {
+        height: 95%;
+    }
+    .quick-menu {
+        top: 0.3rem;
+        right: 0.5rem;
+        gap: 1px;
+    }
+    .qm-btn {
+        padding: 0.15rem 0.35rem;
+        font-size: 0.55rem;
+    }
+    .click-indicator {
+        bottom: 0.4rem;
+        right: 0.8rem;
+        font-size: 0.7rem;
+    }
+    .choice-container {
+        gap: 0.4rem;
+    }
+    .choice-btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
+    }
+    .backlog-container {
+        width: 95%;
+        height: 90%;
+    }
 }
 
 /* ===== Rotate Prompt (모바일/태블릿 세로모드 → 가로 회전 안내) ===== */

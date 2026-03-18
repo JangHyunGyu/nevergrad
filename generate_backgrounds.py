@@ -8,9 +8,25 @@ import os
 import urllib.request
 import urllib.error
 
-API_KEY = "AIzaSyCCx_tOgSGRPg3A_dORFHHAoLak_I1bT5c"
+def load_env():
+    """Load .env file if exists."""
+    env_path = os.path.join(os.path.dirname(__file__), ".env")
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, val = line.split("=", 1)
+                    os.environ.setdefault(key.strip(), val.strip())
+
+load_env()
+API_KEY = os.environ.get("GEMINI_API_KEY")
+if not API_KEY:
+    print("❌ GEMINI_API_KEY가 없습니다.")
+    print("   .env 파일에 GEMINI_API_KEY=your_key 형태로 추가해주세요.")
+    exit(1)
 API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key={API_KEY}"
-OUTPUT_DIR = "C:/workspace/nevergrad/assets/images/background"
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "assets/images/background")
 
 # All backgrounds with English translations of the Korean prompts
 BACKGROUNDS = [

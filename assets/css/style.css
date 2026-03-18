@@ -394,7 +394,7 @@ body {
 .pos-right { right: 5%; }
 
 .char-talking {
-    animation: char-breathe 0.8s ease-in-out infinite;
+    /* breathing 제거 — 투명 대화창에서 글자 가독성 저해 */
 }
 
 @keyframes char-breathe {
@@ -432,7 +432,7 @@ body {
     display: inline-block;
     border-radius: 0 0.2rem 0.2rem 0;
     transition: var(--transition-theme);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .dialogue-text {
@@ -442,7 +442,7 @@ body {
     min-height: 3em;
     transition: var(--transition-theme);
     padding-top: 0.3rem;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .click-indicator {

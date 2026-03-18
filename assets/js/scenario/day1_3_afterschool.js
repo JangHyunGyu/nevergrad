@@ -25,11 +25,11 @@ Object.assign(SCENARIO[1], {
     "day1_after_choice": {
         character: null,
         choices: [
-            { next: "day1_after_sea_1", stats: { sea: { affinity: 3 } } },
-            { next: "day1_after_yuna_1", condition: "met_yuna", stats: { yuna: { affinity: 3 } } },
-            { next: "day1_after_riin_1", condition: "met_riin", stats: { riin: { affinity: 3 } } },
-            { next: "day1_after_eunsu_1", stats: { eunsu: { affinity: 3 } } },
-            { next: "day1_after_home_1" }
+            { next: "day1_after_sea_1", stats: { sea: { affinity: 4 } } },
+            { next: "day1_after_yuna_1", condition: "met_yuna", stats: { yuna: { affinity: 4 } } },
+            { next: "day1_after_riin_1", condition: "met_riin", stats: { riin: { affinity: 4 } } },
+            { next: "day1_after_eunsu_1", stats: { eunsu: { affinity: 4 } } },
+            { next: "day1_after_home_1", stats: { sea: { affinity: -2 }, eunsu: { affinity: -1 } } }
         ]
     },
 
@@ -65,8 +65,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_sea_8": {
         character: "sea_normal",
-        next: "day1_after_sea_9",
-        stats: { sea: { affinity: 3 } }
+        next: "day1_after_sea_9"
     },
     "day1_after_sea_9": {
         character: "sea_normal",
@@ -94,8 +93,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_sea_15": {
         character: "sea_smile",
-        next: "day1_after_sea_16",
-        stats: { sea: { affinity: 3 } }
+        next: "day1_after_sea_16"
     },
     "day1_after_sea_16": {
         character: "sea_smile",
@@ -122,8 +120,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_yuna_5": {
         character: "yuna_shy",
-        next: "day1_after_yuna_6",
-        stats: { yuna: { affinity: 3 } }
+        next: "day1_after_yuna_6"
     },
     "day1_after_yuna_6": {
         character: "yuna_normal",
@@ -135,8 +132,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_yuna_8": {
         character: "yuna_shy",
-        next: "day1_after_yuna_9",
-        stats: { yuna: { trust: 3 } }
+        next: "day1_after_yuna_9"
     },
     "day1_after_yuna_9": {
         character: "yuna_shy",
@@ -157,8 +153,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_yuna_13": {
         character: "yuna_normal",
-        next: "day1_after_yuna_14",
-        stats: { yuna: { affinity: 3 } }
+        next: "day1_after_yuna_14"
     },
     "day1_after_yuna_14": {
         character: "yuna_normal",
@@ -173,8 +168,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_riin_2": {
         character: "riin_gentle",
-        next: "day1_after_riin_3",
-        stats: { riin: { affinity: 3 } }
+        next: "day1_after_riin_3"
     },
     "day1_after_riin_3": {
         character: "riin_gentle",
@@ -211,8 +205,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_riin_11": {
         character: "riin_gentle",
-        next: "day1_after_riin_12",
-        stats: { riin: { affinity: 3 } }
+        next: "day1_after_riin_12"
     },
     "day1_after_riin_12": {
         character: "riin_gentle",
@@ -227,8 +220,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_eunsu_2": {
         character: "eunsu_warm",
-        next: "day1_after_eunsu_3",
-        stats: { eunsu: { affinity: 3 } }
+        next: "day1_after_eunsu_3"
     },
     "day1_after_eunsu_3": {
         character: "eunsu_normal",
@@ -257,8 +249,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_eunsu_9": {
         character: "eunsu_warm",
-        next: "day1_after_eunsu_10",
-        stats: { eunsu: { affinity: 3 } }
+        next: "day1_after_eunsu_10"
     },
     "day1_after_eunsu_10": {
         character: "eunsu_warm",

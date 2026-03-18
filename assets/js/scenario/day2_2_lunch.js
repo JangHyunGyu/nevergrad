@@ -24,10 +24,10 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_choice": {
         character: null,
         choices: [
-            { next: "day2_lunch_sea_1", stats: { sea: { affinity: 3 } } },
-            { next: "day2_lunch_yuna_1", stats: { yuna: { affinity: 3 } } },
-            { next: "day2_lunch_riin_1", stats: { riin: { affinity: 3 } } },
-            { next: "day2_lunch_rooftop_1" }
+            { next: "day2_lunch_sea_1", stats: { sea: { affinity: 5 } } },
+            { next: "day2_lunch_yuna_1", stats: { yuna: { affinity: 5 } } },
+            { next: "day2_lunch_riin_1", stats: { riin: { affinity: 5 } } },
+            { next: "day2_lunch_rooftop_1", stats: { eunsu: { affinity: 3 }, sea: { affinity: -2 } } }
         ]
     },
 
@@ -43,8 +43,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_sea_3": {
         character: "sea_smile",
-        next: "day2_lunch_sea_4",
-        stats: { sea: { affinity: 3 } }
+        next: "day2_lunch_sea_4"
     },
     "day2_lunch_sea_4": {
         character: "sea_smile",
@@ -76,8 +75,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_sea_11": {
         character: "sea_smile",
-        next: "day2_lunch_sea_12",
-        stats: { sea: { affinity: 3 } }
+        next: "day2_lunch_sea_12"
     },
     "day2_lunch_sea_12": {
         character: "sea_smile",
@@ -152,8 +150,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_yuna_4": {
         character: "yuna_shy",
-        next: "day2_lunch_yuna_5",
-        stats: { yuna: { affinity: 3 } }
+        next: "day2_lunch_yuna_5"
     },
     "day2_lunch_yuna_5": {
         character: "yuna_normal",
@@ -217,8 +214,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_yuna_20": {
         character: "yuna_normal",
-        next: "day2_lunch_yuna_21",
-        stats: { yuna: { trust: 3 } }
+        next: "day2_lunch_yuna_21"
     },
     "day2_lunch_yuna_21": {
         character: "yuna_normal",
@@ -249,8 +245,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_riin_3": {
         character: "riin_smile",
-        next: "day2_lunch_riin_4",
-        stats: { riin: { affinity: 3 } }
+        next: "day2_lunch_riin_4"
     },
     "day2_lunch_riin_4": {
         character: "riin_smile",
@@ -365,8 +360,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_rooftop_2": {
         character: "eunsu_normal",
-        next: "day2_lunch_rooftop_3",
-        stats: { eunsu: { danger: 5 } }
+        next: "day2_lunch_rooftop_3"
     },
     "day2_lunch_rooftop_3": {
         character: "eunsu_normal",

@@ -290,11 +290,11 @@ Object.assign(SCENARIO[4], {
         choices: [
             {
                 next: "day4_morning_eunsu_comply",
-                stats: { eunsu: { affinity: 5, danger: 5 } }
+                stats: { eunsu: { affinity: 8 } }
             },
             {
                 next: "day4_morning_eunsu_refuse",
-                stats: { eunsu: { danger: 10 } }
+                stats: { eunsu: { affinity: -5 } }
             }
         ],
         timeoutNext: "day4_morning_eunsu_comply"

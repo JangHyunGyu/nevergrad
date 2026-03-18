@@ -106,8 +106,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_walk_6": {
         character: "sea_normal",
-        next: "day2_morning_walk_7",
-        stats: { sea: { affinity: 3 } }
+        next: "day2_morning_walk_7"
     },
     "day2_morning_walk_7": {
         character: "sea_normal",
@@ -147,8 +146,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_walk_16": {
         character: "sea_smile",
-        next: "day2_morning_walk_17",
-        stats: { sea: { affinity: 2 } }
+        next: "day2_morning_walk_17"
     },
 
     // ===== 데자뷔 핀 #4 — 자판기 =====
@@ -176,7 +174,6 @@ Object.assign(SCENARIO[2], {
     "day2_morning_deja4_5": {
         character: "sea_normal",
         next: "day2_morning_deja4_6",
-        stats: { dejavu: 1, sea: { danger: 2 } },
         glitch: { type: "flicker", duration: 300 }
     },
     "day2_morning_deja4_6": {
@@ -202,8 +199,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_class_4": {
         character: "eunsu_normal",
-        next: "day2_morning_class_5",
-        stats: { eunsu: { danger: 3 } }
+        next: "day2_morning_class_5"
     },
     "day2_morning_class_5": {
         character: "eunsu_normal",
@@ -265,8 +261,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_pres_12": {
         character: "sea_smile",
-        next: "day2_morning_deja5_1",
-        stats: { sea: { affinity: 2 } }
+        next: "day2_morning_deja5_1"
     },
 
     // ===== 데자뷔 핀 #5 — 은수의 체온 =====
@@ -293,7 +288,6 @@ Object.assign(SCENARIO[2], {
     "day2_morning_deja5_6": {
         character: "eunsu_warm",
         next: "day2_morning_deja5_6a",
-        stats: { dejavu: 1, eunsu: { danger: 2 } },
         glitch: { type: "cold", duration: 500 }
     },
     "day2_morning_deja5_6a": {

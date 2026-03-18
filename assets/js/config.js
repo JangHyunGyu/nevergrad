@@ -212,13 +212,15 @@ const CONFIG = {
     STAT_LABELS: {
         romance: {
             primary: "호감도",
-            icon: "♥"
+            icon: "♡"
         },
         thriller: {
-            trust: "신뢰도",
-            danger: "위험도",
-            icon_trust: "◈",
-            icon_danger: "⚠"
+            // Day 4+에서 캐릭터별 다른 라벨로 표시
+            eunsu:   { label: "위험도",  icon: "⚠" },
+            sea:     { label: "집착도",  icon: "⚠" },
+            riin:    { label: "신뢰도",  icon: "♦" },
+            yuna:    { label: "호감도",  icon: "♡" },
+            seolhwa: { label: "동기화",  icon: "☆" }
         }
     },
 
@@ -266,14 +268,11 @@ const CONFIG = {
 };
 
 // ===== 초기 캐릭터 스탯 =====
+// affinity 하나로 통합 — Day 1~3은 "호감도", Day 4+는 캐릭터별 라벨 전환
 const INITIAL_STATS = {
-    eunsu:   { trust: 0, danger: 30, affinity: 10 },  // 처음부터 은근한 위험
-    riin:    { trust: 0, danger: 20, affinity: 5 },
-    sea:     { trust: 0, danger: 10, affinity: 15 },   // 처음엔 가장 안전해 보임
-    yuna:    { trust: 0, danger: 0,  affinity: 5 },    // 유일한 아군 후보
-    seolhwa: { trust: 0, danger: 0,  affinity: 0 }     // 미지수
+    eunsu:   { affinity: 10 },   // 처음부터 은근한 호감
+    riin:    { affinity: 5 },
+    sea:     { affinity: 15 },   // 처음엔 가장 가까움
+    yuna:    { affinity: 5 },    // 유일한 아군 후보
+    seolhwa: { affinity: 0 }     // 미지수
 };
-
-// Phase 1(로맨스)에서는 affinity만 유저에게 보여줌
-// Phase 2(스릴러 전환)에서 trust/danger가 드러남
-// affinity는 사실 내부적으로 trust + danger의 가중 합이었음을 나중에 폭로

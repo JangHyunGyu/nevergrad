@@ -27,10 +27,10 @@ Object.assign(SCENARIO[3], {
     "day3_after_choice": {
         character: null,
         choices: [
-            { next: "day3_after_riin", stats: { riin: { affinity: 3, danger: 3 } } },
-            { next: "day3_after_sea", stats: { sea: { affinity: 3, danger: 2 } } },
-            { next: "day3_after_eunsu", stats: { eunsu: { affinity: 3, danger: 3 } } },
-            { next: "day3_after_alone" }
+            { next: "day3_after_riin", stats: { riin: { affinity: 5 } } },
+            { next: "day3_after_sea", stats: { sea: { affinity: 5 } } },
+            { next: "day3_after_eunsu", stats: { eunsu: { affinity: 5 } } },
+            { next: "day3_after_alone", stats: { seolhwa: { affinity: 5 }, sea: { affinity: -3 }, eunsu: { affinity: -3 } } }
         ]
     },
 
@@ -77,11 +77,11 @@ Object.assign(SCENARIO[3], {
             {
                 next: "day3_after_riin_drink",
                 setFlags: ["drank_riin_drink"],
-                stats: { riin: { affinity: 5, danger: 10 } }
+                stats: { riin: { affinity: 5 } }
             },
             {
                 next: "day3_after_riin_refuse",
-                stats: { riin: { affinity: -2, trust: 3 } }
+                stats: { riin: { affinity: -3 } }
             }
         ]
     },
@@ -107,8 +107,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_riin_drink_5": {
         character: "riin_smile",
-        next: "day3_after_yuna_check",
-        stats: { riin: { danger: 5 } }
+        next: "day3_after_yuna_check"
     },
 
     // 거절했을 경우
@@ -161,11 +160,11 @@ Object.assign(SCENARIO[3], {
         choices: [
             {
                 next: "day3_after_sea_truth",
-                stats: { sea: { trust: 5, danger: 5 } }
+                stats: { sea: { affinity: -3 }, seolhwa: { affinity: 3 } }
             },
             {
                 next: "day3_after_sea_lie",
-                stats: { sea: { affinity: 3, danger: -2 } }
+                stats: { sea: { affinity: 5 } }
             }
         ]
     },
@@ -215,8 +214,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_sea_lie_2": {
         character: "sea_yandere",
-        next: "day3_after_sea_lie_3",
-        stats: { sea: { danger: 5 } }
+        next: "day3_after_sea_lie_3"
     },
     "day3_after_sea_lie_3": {
         character: "sea_yandere",
@@ -277,11 +275,11 @@ Object.assign(SCENARIO[3], {
             {
                 next: "day3_after_eunsu_peek",
                 setFlags: ["saw_eunsu_documents"],
-                stats: { eunsu: { trust: -3, danger: 5 } }
+                stats: { eunsu: { affinity: 8 }, seolhwa: { affinity: 5 } }
             },
             {
                 next: "day3_after_eunsu_ignore",
-                stats: { eunsu: { affinity: 3, danger: -2 } }
+                stats: { eunsu: { affinity: 5 } }
             }
         ]
     },
@@ -332,8 +330,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_eunsu_peek_10": {
         character: "eunsu_gentle",
-        next: "day3_after_eunsu_peek_11",
-        stats: { eunsu: { danger: 10 } }
+        next: "day3_after_eunsu_peek_11"
     },
     "day3_after_eunsu_peek_11": {
         character: "eunsu_gentle",

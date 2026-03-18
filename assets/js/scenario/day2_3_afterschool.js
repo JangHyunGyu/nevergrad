@@ -59,12 +59,12 @@ Object.assign(SCENARIO[2], {
         choices: [
             {
                 next: "day2_after_allow_1",
-                stats: { eunsu: { affinity: 5, danger: 10 } },
+                stats: { eunsu: { affinity: 5 } },
                 setFlags: ["app_all_permissions"]
             },
             {
                 next: "day2_after_limit_1",
-                stats: { eunsu: { danger: 3 } },
+                stats: { eunsu: { affinity: -2 } },
                 setFlags: ["app_limited_permissions"]
             }
         ]
@@ -190,8 +190,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_sea_21": {
         character: "sea_normal",
-        next: "day2_after_sea_22",
-        stats: { sea: { affinity: 8 } }
+        next: "day2_after_sea_22"
     },
     "day2_after_sea_22": {
         character: "sea_normal",

@@ -333,18 +333,8 @@ class GameEngine {
         if (scene.setFlags) this.state.setFlags(scene.setFlags);
         if (scene.clearFlags) scene.clearFlags.forEach(f => this.state.clearFlag(f));
 
-        // 스탯
-        if (scene.stats) {
-            for (const [charId, changes] of Object.entries(scene.stats)) {
-                for (const [stat, val] of Object.entries(changes)) {
-                    this.state.changeStat(charId, stat, val);
-                    // 호감도(affinity) 변경 시 효과음 + 시각 이펙트
-                    if (stat === 'affinity' && val !== 0) {
-                        this._playStatChangeFX(stat, val);
-                    }
-                }
-            }
-        }
+        // 스탯: 일반 씬의 stats는 무시 (선택지 결과에서만 변경)
+        // scene.stats는 기존 호환용으로 남겨두되 적용하지 않음
 
         // 증거
         if (scene.evidence) this.state.addEvidence(scene.evidence);
@@ -822,28 +812,23 @@ class GameEngine {
 
         statEl.classList.remove('stat-hidden');
 
+        const aff = this.state.getDisplayAffinity(charId);
+        const charLabel = this.state.getCharLabel(charId);
+
+        let newText;
         if (this.state.mode === CONFIG.STAT_MODES.ROMANCE) {
-            // 호감도 모드
-            const aff = this.state.getDisplayAffinity(charId);
-            const label = CONFIG.STAT_LABELS.romance;
-            const newText = `${label.icon} ${label.primary} ${aff}`;
-            if (statEl.textContent !== newText) {
-                statEl.textContent = newText;
-                statEl.classList.remove('stat-bump');
-                void statEl.offsetWidth; // reflow
-                statEl.classList.add('stat-bump');
-            }
+            // Day 1~3: "♡ 호감도 X"
+            newText = `${charLabel.icon} ${charLabel.primary} ${aff}`;
         } else {
-            // 스릴러 모드: 신뢰도 + 위험도
-            const real = this.state.getRealStats(charId);
-            const label = CONFIG.STAT_LABELS.thriller;
-            const newText = `${label.icon_trust} ${label.trust} ${real.trust}  ${label.icon_danger} ${label.danger} ${real.danger}`;
-            if (statEl.textContent !== newText) {
-                statEl.textContent = newText;
-                statEl.classList.remove('stat-bump');
-                void statEl.offsetWidth;
-                statEl.classList.add('stat-bump');
-            }
+            // Day 4+: 캐릭터별 라벨 (위험도/집착도/신뢰도/호감도/동기화)
+            newText = `${charLabel.icon} ${charLabel.label} ${aff}`;
+        }
+
+        if (statEl.textContent !== newText) {
+            statEl.textContent = newText;
+            statEl.classList.remove('stat-bump');
+            void statEl.offsetWidth; // reflow
+            statEl.classList.add('stat-bump');
         }
     }
 
@@ -877,24 +862,24 @@ class GameEngine {
      * @param {number} val - 변화량
      */
     _showStatChangePopup(val) {
-        const statEl = document.getElementById('stat-display');
-        if (!statEl) return;
+        const hud = document.getElementById('hud');
+        if (!hud) return;
 
         const popup = document.createElement('div');
         popup.className = 'stat-change-popup';
 
         if (val > 0) {
-            popup.textContent = `+${val}`;
+            popup.textContent = `♥ +${val}`;
             popup.classList.add('stat-change-up');
         } else {
-            popup.textContent = `${val}`;
+            popup.textContent = `♥ ${val}`;
             popup.classList.add('stat-change-down');
         }
 
-        statEl.parentElement.appendChild(popup);
+        hud.appendChild(popup);
 
-        // 애니메이션 후 제거 (1.2초)
-        setTimeout(() => popup.remove(), 1200);
+        // 애니메이션 후 제거 (1.5초)
+        setTimeout(() => popup.remove(), 1500);
     }
 
     /**

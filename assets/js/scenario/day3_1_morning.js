@@ -80,7 +80,6 @@ Object.assign(SCENARIO[3], {
     "day3_morning_commute_6": {
         character: null,
         next: "day3_morning_commute_7",
-        stats: { dejavu: 1 },
         glitch: { type: "flicker", duration: 300 }
     },
     "day3_morning_commute_7": {
@@ -276,8 +275,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_sea_8": {
         character: "sea_cold",
-        next: "day3_morning_sea_9",
-        stats: { sea: { danger: 3 } }
+        next: "day3_morning_sea_9"
     },
     "day3_morning_sea_9": {
         character: "sea_cold",

@@ -682,17 +682,17 @@ Object.assign(SCENARIO[4], {
             {
                 next: "day4_night_plan_escape",
                 setFlags: ["plan_escape_school"],
-                stats: { yuna: { trust: 3 }, eunsu: { danger: -3 } }
+                stats: { yuna: { affinity: 8 }, eunsu: { affinity: -5 }, sea: { affinity: -5 } }
             },
             {
                 next: "day4_night_plan_expose",
                 setFlags: ["plan_expose_truth"],
-                stats: { yuna: { trust: 5 }, sea: { danger: 5 } }
+                stats: { yuna: { affinity: 10 }, sea: { affinity: 8 }, seolhwa: { affinity: 8 } }
             },
             {
                 next: "day4_night_plan_confront",
                 setFlags: ["plan_confront_them"],
-                stats: { eunsu: { danger: 5 }, riin: { danger: 5 } }
+                stats: { eunsu: { affinity: 10 }, riin: { affinity: 8 }, seolhwa: { affinity: 5 } }
             }
         ]
     },

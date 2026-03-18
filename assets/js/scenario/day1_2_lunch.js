@@ -18,10 +18,10 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_choice": {
         character: null,
         choices: [
-            { next: "day1_lunch_sea_1", setFlags: ["lunch_with_sea"], stats: { sea: { affinity: 3 } } },
-            { next: "day1_lunch_yuna_1", setFlags: ["met_yuna"], stats: { yuna: { affinity: 3 } } },
-            { next: "day1_lunch_riin_1", setFlags: ["met_riin"], stats: { riin: { affinity: 3 } } },
-            { next: "day1_lunch_alone_1" }
+            { next: "day1_lunch_sea_1", setFlags: ["lunch_with_sea"], stats: { sea: { affinity: 4 } } },
+            { next: "day1_lunch_yuna_1", setFlags: ["met_yuna"], stats: { yuna: { affinity: 4 } } },
+            { next: "day1_lunch_riin_1", setFlags: ["met_riin"], stats: { riin: { affinity: 4 } } },
+            { next: "day1_lunch_alone_1", stats: { sea: { affinity: -1 }, eunsu: { affinity: -1 } } }
         ]
     },
 
@@ -146,7 +146,6 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_sea_29": {
         character: "sea_normal",
         next: "day1_lunch_end",
-        stats: { sea: { affinity: 5, danger: 2 } },
         glitch: "loop_truth"
     },
 
@@ -216,7 +215,6 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_yuna_16": {
         character: "yuna_normal",
         next: "day1_lunch_end",
-        stats: { yuna: { affinity: 5, trust: 3 } },
         glitch: "loop_truth"
     },
 
@@ -295,7 +293,6 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_riin_18": {
         character: "riin_gentle",
         next: "day1_lunch_end",
-        stats: { riin: { affinity: 5, danger: 5 } },
         glitch: "loop_truth"
     },
 

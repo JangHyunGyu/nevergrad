@@ -61,6 +61,15 @@ class FreeTalkSystem {
 
         /** @type {string|null} 현재 프리토킹 씬 ID */
         this.currentSceneId = null;
+
+        /** @type {number} FreeTalk 세션 내 누적 호감도 변경량 */
+        this._sessionAffinityTotal = 0;
+
+        /** @type {number} FreeTalk 1턴당 최대 호감도 변경량 */
+        this._maxAffinityPerTurn = 3;
+
+        /** @type {number} FreeTalk 전체(3턴) 최대 누적 호감도 변경량 */
+        this._maxAffinityPerSession = 9;
     }
 
     // =========================================================================
@@ -126,7 +135,7 @@ class FreeTalkSystem {
         const text = fb.text.replace(/\{name\}/g, this.state.playerName || '학생');
         const delta = fb.danger_delta || 1;
 
-        this.state.changeStat(this.currentChar, 'danger', delta);
+        this.state.changeStat(this.currentChar, 'affinity', delta);
 
         const charName = this.currentChar === 'eunsu' ? '박은수' : '한세아';
         this._displayResponse(charName, text);
@@ -307,6 +316,7 @@ class FreeTalkSystem {
         this.nextSceneId = scene.freeTalkNext || scene.next;
         this.currentSceneId = this.engine.state.currentScene;
         this.isWaiting = false;
+        this._sessionAffinityTotal = 0;
 
         const lang = this.engine.i18n?.currentLang || 'ko';
         const charId = this.currentChar;
@@ -914,12 +924,34 @@ ${memories}
     }
 
     /**
-     * 호감도 변경 적용
+     * 호감도 변경 적용 (FreeTalk용)
+     * - AI 응답 JSON의 affinity 필드: -5 ~ +5
+     * - 1턴당 최대 ±3으로 클램프
+     * - 세션 전체(3턴) 최대 ±9로 클램프
+     * - 변경 시 GameEngine의 _playStatChangeFX 호출
      * @private
      */
     _applyAffinity(change) {
         if (!change || change === 0 || !this.currentChar) return;
-        this.state.changeStat(this.currentChar, 'affinity', change);
+
+        // 1턴당 최대 ±3 클램프
+        let clamped = Math.max(-this._maxAffinityPerTurn, Math.min(this._maxAffinityPerTurn, change));
+
+        // 세션 누적 한도 체크 (±9)
+        const remaining = this._maxAffinityPerSession - Math.abs(this._sessionAffinityTotal);
+        if (remaining <= 0) return; // 이미 한도 도달
+
+        if (Math.abs(clamped) > remaining) {
+            clamped = clamped > 0 ? remaining : -remaining;
+        }
+
+        this._sessionAffinityTotal += clamped;
+        this.state.changeStat(this.currentChar, 'affinity', clamped);
+
+        // 스탯 변경 FX 재생
+        if (this.engine && this.engine._playStatChangeFX) {
+            this.engine._playStatChangeFX('affinity', clamped);
+        }
     }
 
     /**

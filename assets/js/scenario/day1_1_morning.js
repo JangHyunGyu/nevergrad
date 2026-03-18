@@ -181,8 +181,7 @@ Object.assign(SCENARIO[1], {
     // L127: 한세아 "한세아야. 이 반 반장. {name} 맞지?"
     "day1_sea_meet_5": {
         character: "sea_smile",
-        next: "day1_sea_meet_6",
-        stats: { sea: { affinity: 5 } }
+        next: "day1_sea_meet_6"
     },
     // L129: 나 "어, 응. 맞는데... 내 이름 어떻게 알아?"
     "day1_sea_meet_6": {
@@ -289,17 +288,17 @@ Object.assign(SCENARIO[1], {
         choices: [
             {
                 next: "day1_choco_accept_1",
-                stats: { sea: { affinity: 3, danger: 2 } },
+                stats: { sea: { affinity: 3 } },
                 setFlags: ["accepted_choco"]
             },
             {
                 next: "day1_choco_question_1",
-                stats: { sea: { affinity: -1, danger: 3 } },
+                stats: { sea: { affinity: -1 } },
                 setFlags: ["questioned_sea", "sea_choco_milk"]
             },
             {
                 next: "day1_choco_joke_1",
-                stats: { sea: { affinity: 5, danger: 1 } },
+                stats: { sea: { affinity: 5 } },
                 setFlags: ["joked_choco"]
             }
         ]
@@ -513,7 +512,7 @@ Object.assign(SCENARIO[1], {
             {
                 next: "day1_seolhwa_greet_1",
                 setFlags: ["greeted_seolhwa", "met_seolhwa"],
-                stats: { seolhwa: { trust: 5, affinity: 3 } }
+                stats: { seolhwa: { affinity: 3 } }
             },
             {
                 next: "day1_seolhwa_skip",

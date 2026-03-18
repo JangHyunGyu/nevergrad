@@ -97,9 +97,9 @@ Object.assign(SCENARIO[1], {
         character: null,
         night: true,
         choices: [
-            { next: "day1_night_sea_reply_1", stats: { sea: { affinity: 3 } } },
-            { next: "day1_night_sea_reply_2", stats: { sea: { affinity: 1 } } },
-            { next: "day1_night_sea_reply_3", stats: { sea: { danger: 2 } } }
+            { next: "day1_night_sea_reply_1", stats: { sea: { affinity: 4 } } },
+            { next: "day1_night_sea_reply_2", stats: { sea: { affinity: 2 } } },
+            { next: "day1_night_sea_reply_3", stats: { sea: { affinity: -2 } } }
         ]
     },
     "day1_night_sea_reply_1": {

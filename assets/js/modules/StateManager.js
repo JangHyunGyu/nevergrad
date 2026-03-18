@@ -6,10 +6,9 @@
  * 플레이어 정보, 캐릭터 스탯, 플래그, 장르 전환 상태를 관리합니다.
  *
  * [핵심 설계]
- * - Phase 1 (Day 1 ~ Day 3 오전): 유저에게 "호감도"만 보여줌
- *   → 내부적으로는 trust/danger가 이미 변동 중
- * - Phase 2 (Day 3 밤 ~): UI가 깨지며 trust/danger가 드러남
- *   → "호감도였던 것"이 사실 위험도의 가중합이었음을 폭로
+ * - affinity 하나로 통합
+ * - Day 1~3: UI에 "♡ 호감도 X" 표시
+ * - Day 4+: 캐릭터별 라벨로 전환 (위험도/집착도/신뢰도/호감도/동기화)
  */
 
 class StateManager {
@@ -25,7 +24,7 @@ class StateManager {
         // 글리치 강도
         this.glitchLevel = CONFIG.GLITCH_LEVELS.NONE;
 
-        // 캐릭터 스탯 (내부적으로 항상 3개 축 유지)
+        // 캐릭터 스탯 (affinity 하나로 통합)
         this.stats = {};
         for (const [id, initial] of Object.entries(INITIAL_STATS)) {
             this.stats[id] = { ...initial };
@@ -47,38 +46,45 @@ class StateManager {
     // ===== 스탯 조작 =====
 
     /**
-     * 스탯 변경 (내부용 - trust, danger, affinity 모두 조절 가능)
+     * 스탯 변경 (affinity만 사용)
      */
     changeStat(charId, statName, delta) {
         if (!this.stats[charId]) return;
-        const current = this.stats[charId][statName] || 0;
-        this.stats[charId][statName] = Math.max(
+        // affinity 외의 스탯은 모두 affinity로 통합
+        const key = 'affinity';
+        const current = this.stats[charId][key] || 0;
+        this.stats[charId][key] = Math.max(
             CONFIG.STAT_MIN,
             Math.min(CONFIG.STAT_MAX, current + delta)
         );
     }
 
     /**
-     * Phase 1에서 유저에게 보여줄 "호감도" 계산
-     * 실제로는 (affinity * 0.6 + danger * 0.4)의 가중합
-     * → 위험한 캐릭터일수록 "호감도"가 높아 보이는 트릭
+     * 호감도(affinity) 값 반환
+     * Day 1~3: "♡ 호감도 X"
+     * Day 4+: 캐릭터별 라벨 (위험도/집착도/신뢰도/호감도/동기화)
      */
     getDisplayAffinity(charId) {
         const s = this.stats[charId];
         if (!s) return 0;
-
-        if (this.mode === CONFIG.STAT_MODES.ROMANCE) {
-            // 위장 호감도: danger가 높을수록 호감도도 올라감 (함정)
-            return Math.round(s.affinity * 0.6 + s.danger * 0.4);
-        }
-        return s.affinity;
+        return s.affinity || 0;
     }
 
     /**
-     * Phase 2에서 보여줄 실제 수치
+     * 캐릭터별 라벨 정보 반환 (Day 4+ thriller 모드용)
+     */
+    getCharLabel(charId) {
+        if (this.mode === CONFIG.STAT_MODES.THRILLER && CONFIG.STAT_LABELS.thriller[charId]) {
+            return CONFIG.STAT_LABELS.thriller[charId];
+        }
+        return CONFIG.STAT_LABELS.romance;
+    }
+
+    /**
+     * 실제 스탯 반환 (affinity만)
      */
     getRealStats(charId) {
-        return this.stats[charId] || { trust: 0, danger: 0, affinity: 0 };
+        return this.stats[charId] || { affinity: 0 };
     }
 
     // ===== 플래그 관리 =====

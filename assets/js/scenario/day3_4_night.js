@@ -88,7 +88,6 @@ Object.assign(SCENARIO[3], {
     "day3_night_sea_msg_12": {
         character: null,
         messengerDelay: 300,
-        stats: { sea: { danger: 10 } },
         next: "day3_night_sea_msg_13"
     },
     "day3_night_sea_msg_13": {
@@ -454,12 +453,12 @@ Object.assign(SCENARIO[3], {
             {
                 next: "day3_night_investigate",
                 setFlags: ["chose_investigate_d3"],
-                stats: { yuna: { trust: 5, affinity: 3 }, sea: { danger: 5 } }
+                stats: { yuna: { affinity: 8 }, sea: { affinity: 8 }, eunsu: { affinity: 8 }, seolhwa: { affinity: 5 } }
             },
             {
                 next: "day3_night_deny",
                 setFlags: ["complicit_route"],
-                stats: { sea: { affinity: 3 }, yuna: { trust: -5 } }
+                stats: { sea: { affinity: 5 }, eunsu: { affinity: -5 }, yuna: { affinity: -5 } }
             }
         ]
     },
@@ -467,8 +466,7 @@ Object.assign(SCENARIO[3], {
     // 진실을 파헤친다
     "day3_night_investigate": {
         character: null,
-        next: "day3_night_investigate_2",
-        stats: { yuna: { trust: 5 } }
+        next: "day3_night_investigate_2"
     },
     "day3_night_investigate_2": {
         character: null,

@@ -94,9 +94,9 @@ Object.assign(SCENARIO[4], {
     "day4_after_choice": {
         character: null,
         choices: [
-            { next: "day4_after_sea_route", stats: { sea: { affinity: 3, danger: 5 } } },
-            { next: "day4_after_eunsu_route", stats: { eunsu: { affinity: 3, danger: 5 } } },
-            { next: "day4_after_riin_route", stats: { riin: { affinity: 3, danger: 5 } } }
+            { next: "day4_after_sea_route", stats: { sea: { affinity: 10 } } },
+            { next: "day4_after_eunsu_route", stats: { eunsu: { affinity: 10 } } },
+            { next: "day4_after_riin_route", stats: { riin: { affinity: 10 } } }
         ]
     },
 
@@ -157,12 +157,13 @@ Object.assign(SCENARIO[4], {
         choices: [
             {
                 next: "day4_after_sea_accept",
-                stats: { sea: { affinity: 10, danger: 15 } }
+                stats: { sea: { affinity: 12 } }
             },
             {
                 next: "day4_after_sea_accept",
-                stats: { sea: { affinity: 10, danger: 15 } }
+                stats: { sea: { affinity: 12 } }
             }
+
         ]
     },
 
@@ -296,7 +297,6 @@ Object.assign(SCENARIO[4], {
     },
     "day4_after_ft_sea_post": {
         character: "sea_sad",
-        stats: { sea: { danger: 10 } },
         next: "day4_after_end"
     },
 
@@ -392,8 +392,7 @@ Object.assign(SCENARIO[4], {
         character: "eunsu_gentle",
         glitch: { heavyGlitch: true },
         next: "day4_after_end",
-        setFlags: ["eunsu_confession_d4"],
-        stats: { eunsu: { danger: 20 } }
+        setFlags: ["eunsu_confession_d4"]
     },
 
     // ═══════════════════════════════════════

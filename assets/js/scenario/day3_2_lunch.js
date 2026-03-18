@@ -22,10 +22,10 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choice": {
         character: null,
         choices: [
-            { next: "day3_lunch_rooftop_1", stats: { yuna: { affinity: 3, trust: 3 } } },
-            { next: "day3_lunch_sea_1", stats: { sea: { affinity: 3 } } },
-            { next: "day3_lunch_riin_1", stats: { riin: { affinity: 3 } } },
-            { next: "day3_lunch_alone_1" }
+            { next: "day3_lunch_rooftop_1", stats: { yuna: { affinity: 8 }, seolhwa: { affinity: 3 } } },
+            { next: "day3_lunch_sea_1", stats: { sea: { affinity: 5 } } },
+            { next: "day3_lunch_riin_1", stats: { riin: { affinity: 5 } } },
+            { next: "day3_lunch_alone_1", stats: { seolhwa: { affinity: 5 }, sea: { affinity: -3 } } }
         ]
     },
 
@@ -128,8 +128,7 @@ Object.assign(SCENARIO[3], {
     // 유나: 왜 13명의 얼굴이 전부 똑같은 거죠?
     "day3_lunch_rooftop_19": {
         character: "yuna_scared",
-        next: "day3_lunch_rooftop_20",
-        stats: { yuna: { trust: 10 } }
+        next: "day3_lunch_rooftop_20"
     },
     // 유나: 왜 다들 자기 이름도 모르고...
     "day3_lunch_rooftop_20": {
@@ -275,11 +274,11 @@ Object.assign(SCENARIO[3], {
             {
                 next: "day3_lunch_door_bang",
                 setFlags: ["door_made_noise"],
-                stats: { yuna: { trust: -2, danger: 3 } }
+                stats: { yuna: { affinity: -3 }, sea: { affinity: 5 }, eunsu: { affinity: 5 } }
             },
             {
                 next: "day3_lunch_door_wait",
-                stats: { yuna: { trust: 5, affinity: 3 } }
+                stats: { yuna: { affinity: 5 }, sea: { affinity: -2 } }
             }
         ]
     },
@@ -367,8 +366,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_sea_1": {
         background: "classroom",
         character: "sea_smile",
-        next: "day3_lunch_sea_2",
-        stats: { sea: { affinity: 5 } }
+        next: "day3_lunch_sea_2"
     },
     // 세아의 웃음이 어제랑 다르다. '확인한다'에 가깝다.
     "day3_lunch_sea_2": {
@@ -434,8 +432,7 @@ Object.assign(SCENARIO[3], {
     // 세아: 너 나한테 뭐 말 안 한 거 있지.
     "day3_lunch_sea_14": {
         character: "sea_serious",
-        next: "day3_lunch_sea_15",
-        stats: { sea: { danger: 5 } }
+        next: "day3_lunch_sea_15"
     },
     // 눈이 웃고 있지 않다. 거기에 있는 건 공포다. 내가 벗어나는 게 무서운 거다.
     "day3_lunch_sea_15": {
@@ -507,11 +504,11 @@ Object.assign(SCENARIO[3], {
             {
                 next: "day3_lunch_riin_drink_1",
                 setFlags: ["drank_riin_drink"],
-                stats: { riin: { affinity: 5, danger: 10 } }
+                stats: { riin: { affinity: 5 } }
             },
             {
                 next: "day3_lunch_riin_refuse_1",
-                stats: { riin: { affinity: -2, trust: 3 } }
+                stats: { riin: { affinity: -3 } }
             }
         ]
     },

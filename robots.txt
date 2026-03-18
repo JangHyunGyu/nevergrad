@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+Disallow: /classified/
+Disallow: /project-cupid/
+Disallow: /cycle_logs/
+Disallow: /subject_records/
+
 Sitemap: https://nevergrad.archerlab.dev/sitemap.xml

@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const game = new GameEngine();
 
+    // 크로스오버 감지 시스템 초기화 (Cupid 플레이 기록 감지)
+    game.crossover = new CrossoverSystem(game);
+    game.crossover.detect();
+
     // 디바이스 기믹 시스템 초기화
     game.deviceGimmick = new DeviceGimmickSystem(game);
     await game.deviceGimmick.init();

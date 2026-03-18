@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESS DENIED</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #ff3333;
+            font-family: 'Courier New', 'Consolas', monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .terminal {
+            max-width: 600px;
+            width: 90%;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .terminal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(255, 0, 0, 0.01) 2px,
+                rgba(255, 0, 0, 0.01) 4px
+            );
+            pointer-events: none;
+        }
+
+        .warning-icon {
+            font-size: 48px;
+            margin-bottom: 24px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-bottom: 16px;
+            animation: glitch-text 3s infinite;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #aa2222;
+            margin-bottom: 32px;
+        }
+
+        .details {
+            color: #662222;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .cursor-blink {
+            display: inline-block;
+            width: 8px;
+            height: 14px;
+            background: #ff3333;
+            animation: cursor 1s step-end infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes cursor {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        @keyframes glitch-text {
+            0%, 95%, 100% { transform: none; }
+            96% { transform: translateX(-2px) skewX(-1deg); }
+            97% { transform: translateX(2px) skewX(1deg); }
+            98% { transform: translateX(-1px); }
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            animation: flicker 0.15s infinite;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.02; }
+            50% { opacity: 0; }
+            100% { opacity: 0.02; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="warning-icon">&#9888;</div>
+        <div class="title">ACCESS DENIED</div>
+        <div class="subtitle">보안 등급 미달</div>
+        <div class="details">
+            요청한 문서에 대한 열람 권한이 없습니다.<br>
+            현재 접속 기록이 보안팀에 전달되었습니다.<br><br>
+            <span style="color: #441111;">ERR_CLEARANCE_INSUFFICIENT</span><br>
+            <span style="color: #441111;">required: LEVEL 5 / current: NONE</span><br><br>
+            <span class="cursor-blink"></span>
+        </div>
+    </div>
+</body>
+</html>

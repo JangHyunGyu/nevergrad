@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYCLE LOGS</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #33ff33;
+            font-family: 'Courier New', 'Consolas', monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .terminal {
+            max-width: 640px;
+            width: 90%;
+            padding: 40px;
+            border: 1px solid #1a3a1a;
+            position: relative;
+        }
+
+        .terminal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0, 255, 0, 0.015) 2px,
+                rgba(0, 255, 0, 0.015) 4px
+            );
+            pointer-events: none;
+        }
+
+        .header {
+            color: #66ff66;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+
+        .sub-header {
+            color: #888;
+            font-size: 11px;
+            margin-bottom: 24px;
+        }
+
+        .divider {
+            color: #1a5a1a;
+            font-size: 12px;
+            margin-bottom: 16px;
+        }
+
+        .log-list {
+            list-style: none;
+        }
+
+        .log-list li {
+            padding: 6px 0;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #0d1f0d;
+        }
+
+        .log-name {
+            color: #33ff33;
+        }
+
+        .log-status {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .log-status.corrupted {
+            color: #664422;
+        }
+
+        .log-status.normal {
+            color: #33ff33;
+        }
+
+        .log-status.active {
+            color: #ffaa00;
+            animation: blink-active 1.5s step-end infinite;
+        }
+
+        @keyframes blink-active {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .footer {
+            margin-top: 24px;
+            color: #444;
+            font-size: 11px;
+        }
+
+        .cursor-blink {
+            display: inline-block;
+            width: 8px;
+            height: 14px;
+            background: #33ff33;
+            animation: cursor 1s step-end infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes cursor {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            animation: flicker 0.15s infinite;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.02; }
+            50% { opacity: 0; }
+            100% { opacity: 0.02; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">NEVERGRAD RESEARCH INSTITUTE</div>
+        <div class="sub-header">PROJECT DATABASE — CYCLE ARCHIVE</div>
+        <div class="divider">════════════════════════════════════════</div>
+
+        <ul class="log-list">
+            <li><span class="log-name">cycle_01.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_02.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_03.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_04.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_05.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_06.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_07.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_08.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_09.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_10.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_11.zip</span><span class="log-status corrupted">[손상됨]</span></li>
+            <li><span class="log-name">cycle_12.zip</span><span class="log-status normal">[정상]</span></li>
+            <li><span class="log-name">cycle_13.zip</span><span class="log-status active">[기록 중]</span></li>
+        </ul>
+
+        <div class="footer">
+            총 13개 주기 | 복구 가능: 1개 | 진행 중: 1개<br>
+            <span class="cursor-blink"></span>
+        </div>
+    </div>
+</body>
+</html>

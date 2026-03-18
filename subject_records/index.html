@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBJECT RECORDS</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #33ff33;
+            font-family: 'Courier New', 'Consolas', monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .terminal {
+            max-width: 600px;
+            width: 90%;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #1a3a1a;
+            position: relative;
+        }
+
+        .terminal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0, 255, 0, 0.015) 2px,
+                rgba(0, 255, 0, 0.015) 4px
+            );
+            pointer-events: none;
+        }
+
+        .header {
+            color: #66ff66;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+
+        .sub-header {
+            color: #888;
+            font-size: 11px;
+            margin-bottom: 24px;
+        }
+
+        .divider {
+            color: #1a5a1a;
+            font-size: 12px;
+            margin-bottom: 32px;
+        }
+
+        .lock-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #22aa22;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #33ff33;
+            margin-bottom: 8px;
+        }
+
+        .message {
+            font-size: 13px;
+            color: #aa8822;
+            margin-bottom: 32px;
+        }
+
+        .details {
+            color: #333;
+            font-size: 11px;
+            line-height: 2;
+            text-align: left;
+            padding: 16px;
+            border: 1px solid #1a2a1a;
+        }
+
+        .details span {
+            color: #555;
+        }
+
+        .cursor-blink {
+            display: inline-block;
+            width: 8px;
+            height: 14px;
+            background: #33ff33;
+            animation: cursor 1s step-end infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes cursor {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            animation: flicker 0.15s infinite;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.02; }
+            50% { opacity: 0; }
+            100% { opacity: 0.02; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">NEVERGRAD RESEARCH INSTITUTE</div>
+        <div class="sub-header">SUBJECT MANAGEMENT SYSTEM</div>
+        <div class="divider">════════════════════════════════════════</div>
+
+        <div class="lock-icon">&#128274;</div>
+        <div class="title">피험자 기록</div>
+        <div class="message">열람 권한 없음</div>
+
+        <div class="details">
+            <span>등록 피험자:</span> 13명<br>
+            <span>활성 상태:</span> 1명 (피험자 #13)<br>
+            <span>폐기 완료:</span> 11명<br>
+            <span>상태 불명:</span> 1명 (피험자 #12)<br><br>
+            <span>마지막 접속:</span> [기록 없음]<br>
+            <span>권한 요청:</span> 연구소장 승인 필요<br><br>
+            <span class="cursor-blink"></span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT CUPID</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #33ff33;
+            font-family: 'Courier New', 'Consolas', monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .terminal {
+            max-width: 720px;
+            width: 90%;
+            padding: 40px;
+            border: 1px solid #1a3a1a;
+            position: relative;
+        }
+
+        .terminal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0, 255, 0, 0.015) 2px,
+                rgba(0, 255, 0, 0.015) 4px
+            );
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .header {
+            color: #66ff66;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            opacity: 0;
+            animation: typeIn 0.5s forwards;
+            animation-delay: 0.3s;
+        }
+
+        .divider {
+            color: #1a5a1a;
+            font-size: 12px;
+            margin-bottom: 24px;
+            opacity: 0;
+            animation: typeIn 0.3s forwards;
+            animation-delay: 0.8s;
+        }
+
+        .title {
+            color: #33ff33;
+            font-size: 16px;
+            margin-bottom: 4px;
+            opacity: 0;
+            animation: typeIn 0.5s forwards;
+            animation-delay: 1.2s;
+        }
+
+        .clearance {
+            color: #888;
+            font-size: 12px;
+            margin-bottom: 32px;
+            opacity: 0;
+            animation: typeIn 0.5s forwards;
+            animation-delay: 1.6s;
+        }
+
+        .section-title {
+            color: #22aa22;
+            font-size: 13px;
+            margin-bottom: 12px;
+            opacity: 0;
+            animation: typeIn 0.5s forwards;
+            animation-delay: 2.2s;
+        }
+
+        .spec-list {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .spec-list li {
+            color: #33ff33;
+            font-size: 13px;
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+            opacity: 0;
+        }
+
+        .spec-list li::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+        }
+
+        .spec-list li:nth-child(1) { animation: typeIn 0.4s forwards; animation-delay: 2.6s; }
+        .spec-list li:nth-child(2) { animation: typeIn 0.4s forwards; animation-delay: 2.9s; }
+        .spec-list li:nth-child(3) { animation: typeIn 0.4s forwards; animation-delay: 3.2s; }
+        .spec-list li:nth-child(4) { animation: typeIn 0.4s forwards; animation-delay: 3.5s; }
+
+        .preview-btn {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 24px;
+            background: transparent;
+            border: 1px solid #33ff33;
+            color: #33ff33;
+            font-family: 'Courier New', 'Consolas', monospace;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            opacity: 0;
+            animation: typeIn 0.5s forwards, blink-border 2s infinite;
+            animation-delay: 4.0s, 4.5s;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .preview-btn:hover {
+            background: #33ff33;
+            color: #0a0a0a;
+        }
+
+        @keyframes typeIn {
+            from {
+                opacity: 0;
+                transform: translateY(4px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes blink-border {
+            0%, 100% { border-color: #33ff33; }
+            50% { border-color: #0a3a0a; }
+        }
+
+        .cursor-blink {
+            display: inline-block;
+            width: 8px;
+            height: 14px;
+            background: #33ff33;
+            animation: cursor 1s step-end infinite;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+
+        @keyframes cursor {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* CRT flicker effect */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            animation: flicker 0.15s infinite;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.02; }
+            50% { opacity: 0; }
+            100% { opacity: 0.02; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">NEVERGRAD RESEARCH INSTITUTE</div>
+        <div class="divider">════════════════════════════════════════</div>
+        <div class="title">PROJECT CUPID — 실험 환경 설계 문서</div>
+        <div class="clearance">열람 권한: 연구소장</div>
+
+        <div class="section-title">환경 설계 기준:<span class="cursor-blink"></span></div>
+        <ul class="spec-list">
+            <li>배경: 일반 고등학교 (벚꽃 계절)</li>
+            <li>인물 구성: 히로인 3인 + 히든 루트 2인</li>
+            <li>목표 감정: 완전한 귀속감, 이탈 의지 소멸</li>
+            <li>기간: 주기당 5일</li>
+        </ul>
+
+        <a href="https://cupid.archerlab.dev" class="preview-btn">[PREVIEW 실행]</a>
+    </div>
+</body>
+</html>

@@ -50,10 +50,19 @@
 - HTML 구조 변경 → 6개 언어 HTML 모두 동기화
 - **위 모든 작업 후 `node validate.js` 실행하여 에러 0건 확인**
 
-## 이미지 에셋 현황 (2026-03-17)
-- **모든 캐릭터/배경 이미지 삭제됨** — 새로 생성 예정
-- 현재 남아있는 파일: `black.png`, `title_bg.png`만 존재
-- 생성용 프롬프트: `PROMPTS_READY.md` 참조 (캐릭터 43장 + 배경 26장 + BGM/SFX)
+## 이미지 생성 모델 우선순위
+- **배경 이미지**: Imagen 4 Ultra (1순위) → Imagen 4 (2순위)
+- **캐릭터 레퍼런스(_normal)**: Imagen 4 Ultra (1순위) → Imagen 4 (2순위)
+- **캐릭터 표정/행동 변형**: 레퍼런스 이미지 + Gemini 3.1 Flash Image (편집)
+- imagen fast, 2.5 flash image 모델은 사용 금지
+- 프롬프트에 "DDLC" 포함 금지 (워터마크 생성됨), "anime visual novel style" 사용
+- 모든 이미지에 텍스트 금지 지시 필수 포함
+- API 키는 `.env` 파일에서 로드 (하드코딩 금지, `.gitignore`에 등록됨)
+
+## 이미지 에셋 현황 (2026-03-18)
+- 배경 이미지: 24/28 생성 완료 (Imagen 4), 4개 미완 (school_night, school_dark, school_dawn, sunset_outside)
+- 캐릭터 이미지: 미생성
+- 생성용 프롬프트: `PROMPTS_READY.md` 참조 (캐릭터 43장 + 배경 28장 + BGM/SFX)
 - 생성 순서: 캐릭터는 시나리오 등장순(은수→세아→리인→유나→설화), 배경은 Day 1→5 순
 - config.js의 EXPRESSIONS/BACKGROUNDS alias는 이미지 미존재 시 실제 파일로 fallback
 

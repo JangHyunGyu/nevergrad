@@ -49,7 +49,7 @@ Object.assign(SCENARIO[5], {
         background: "classroom",
         bgm: "ending_dark.mp3",
         character: "eunsu_gentle",
-        next: "day5_after_end"
+        next: "day5_after_cage_2"
     },
     "day5_after_cage_2": {
         character: null,
@@ -322,7 +322,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_true_2": {
         character: "eunsu_obsessed",
         setFlags: ["route_true", "broke_through_eunsu", "escape_with_yuna", "has_evidence"],
-        next: "day5_after_end"
+        next: "day5_after_true_3"
     },
     "day5_after_true_3": {
         character: null,
@@ -384,7 +384,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_forget_2": {
         character: "eunsu_obsessed",
         setFlags: ["route_forget"],
-        next: "day5_after_end"
+        next: "day5_after_forget_3"
     },
     "day5_after_forget_3": {
         character: null,
@@ -441,7 +441,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_resist_2": {
         character: null,
         setFlags: ["route_resist", "chose_together"],
-        next: "day5_after_end"
+        next: "day5_after_resist_3"
     },
     "day5_after_resist_3": {
         character: "eunsu_gentle",
@@ -508,7 +508,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_ghost_2": {
         character: "eunsu_obsessed",
         setFlags: ["route_ghost", "timer_expired"],
-        next: "day5_after_end"
+        next: "day5_after_ghost_3"
     },
     "day5_after_ghost_3": {
         character: "seolhwa_fading",

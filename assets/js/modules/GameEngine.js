@@ -24,6 +24,7 @@ class GameEngine {
 
         this.currentSceneData = null;
         this.isTransitioning = false;
+        this._clickLocked = false;
 
         // Quick menu state
         this.isAutoMode = false;
@@ -163,7 +164,7 @@ class GameEngine {
 
     _bindGameScreen() {
         document.getElementById('dialogue-box')?.addEventListener('click', () => {
-            if (this.isTransitioning) return;
+            if (this._clickLocked) return;
 
             if (this.dialogue.isTyping) {
                 this.dialogue.skipTyping();
@@ -242,9 +243,13 @@ class GameEngine {
 
         // 캐릭터 (키 기반: "sea_smile" → CONFIG.EXPRESSIONS에서 경로 조회)
         // character/characters가 명시된 경우만 변경, 없으면 이전 상태 유지
-        // character: null 로 명시하면 캐릭터 제거
+        // character: null 로 명시하면 캐릭터 퇴장
         // charOpacity: 0~1 — 메신저/문자 씬에서 캐릭터를 반투명으로 표시
+        // 전환 중 빠른 클릭 방지 (300ms 잠금)
         if ('character' in scene || 'characters' in scene) {
+            this._clickLocked = true;
+            clearTimeout(this._clickLockTimer);
+            this._clickLockTimer = setTimeout(() => { this._clickLocked = false; }, 300);
             const opacity = scene.charOpacity;
             if (scene.character === null && !scene.characters) {
                 // 명시적 null — 캐릭터 퇴장

@@ -81,6 +81,18 @@ class SceneRenderer {
     }
 
     /**
+     * 크로스페이드용 임시 클론 제거 헬퍼
+     * @param {HTMLElement} el - 메인 캐릭터 <img>
+     */
+    _removePrevClone(el) {
+        const prev = el._fadeClone;
+        if (prev && prev.parentNode) {
+            prev.parentNode.removeChild(prev);
+        }
+        el._fadeClone = null;
+    }
+
+    /**
      * @param {string} position  'left' | 'center' | 'right'
      * @param {string} src       이미지 경로
      * @param {number} [opacity] 0~1 사이 값. 생략하면 1(기본 불투명)
@@ -94,41 +106,89 @@ class SceneRenderer {
         // 목표 opacity 문자열 ('0.35' 등). undefined이면 '' (CSS 기본값 = 1)
         const targetOpacity = (opacity != null && opacity < 1) ? String(opacity) : '';
 
+        // 이전 클론이 남아있으면 제거
+        this._removePrevClone(el);
+
+        // 이전 전환 타이머가 남아있으면 정리
+        if (el._charTimer) { clearTimeout(el._charTimer); el._charTimer = null; }
+
         const prevSrc = el.getAttribute('src');
         if (prevSrc && prevSrc !== '') {
             const prevPrefix = this._getCharPrefix(prevSrc);
             const newPrefix = this._getCharPrefix(src);
 
             if (prevPrefix === newPrefix) {
-                // 같은 캐릭터 표정 변화 → 즉시 교체
+                // 같은 캐릭터 표정 변화 → 크로스페이드
+                // 1. 현재 이미지를 클론하여 뒤에 배치 (이전 표정)
+                const clone = el.cloneNode(false);
+                clone.removeAttribute('id');
+                clone.classList.add('char-crossfade-out');
+                clone.style.opacity = el.style.opacity || '';
+                el.parentNode.insertBefore(clone, el);
+                el._fadeClone = clone;
+
+                // 2. 메인 이미지에 새 표정 설정, opacity 0에서 시작해 페이드인
+                el.classList.add('char-crossfade-in');
+                el.style.opacity = '0';
                 el.src = src;
-                el.style.opacity = targetOpacity;
+
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        el.style.opacity = targetOpacity;
+                        // 클론(이전 표정) 페이드아웃
+                        clone.style.opacity = '0';
+                    });
+                });
+
+                // 3. 전환 완료 후 클론 제거 & 클래스 정리
+                el._charTimer = setTimeout(() => {
+                    this._removePrevClone(el);
+                    el.classList.remove('char-crossfade-in');
+                    el._charTimer = null;
+                }, 280);
             } else {
                 // 다른 캐릭터 → 페이드아웃 후 페이드인
+                el.classList.add('char-fade-out');
                 el.style.opacity = '0';
-                setTimeout(() => {
+                el._charTimer = setTimeout(() => {
+                    el.classList.remove('char-fade-out');
                     el.src = src;
-                    requestAnimationFrame(() => { el.style.opacity = targetOpacity; });
-                }, 280);
+                    el.classList.add('char-fade-in');
+                    el.style.opacity = '0';
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            el.style.opacity = targetOpacity;
+                        });
+                    });
+                    el._charTimer = setTimeout(() => {
+                        el.classList.remove('char-fade-in');
+                        el._charTimer = null;
+                    }, 260);
+                }, 260);
             }
         } else {
-            // 새 등장 — fade in
+            // 새 등장 — 페이드인
+            el.classList.add('char-fade-in');
             el.style.opacity = '0';
             el.src = src;
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => { el.style.opacity = targetOpacity; });
             });
+            setTimeout(() => { el.classList.remove('char-fade-in'); }, 260);
         }
     }
 
     clearCharacters() {
         [this.charLeft, this.charCenter, this.charRight].forEach(el => {
             if (!el || el.getAttribute('src') === '') return;
+            this._removePrevClone(el);
+            el.classList.add('char-fade-out');
             el.style.opacity = '0';
             setTimeout(() => {
                 el.src = '';
                 el.style.opacity = '';
-            }, 300);
+                el.classList.remove('char-fade-out');
+            }, 260);
         });
     }
 

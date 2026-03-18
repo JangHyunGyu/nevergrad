@@ -199,8 +199,11 @@ body {
 }
 
 .menu-btn:disabled {
-    opacity: 0.3;
+    opacity: 0.25;
     cursor: not-allowed;
+    filter: grayscale(1);
+    pointer-events: none;
+    border-color: rgba(255, 183, 197, 0.1);
 }
 
 .title-footer {
@@ -400,6 +403,29 @@ body {
 @keyframes char-breathe {
     0%, 100% { transform: translateX(var(--char-offset-x, 0)) translateY(0); }
     50% { transform: translateX(var(--char-offset-x, 0)) translateY(-3px); }
+}
+
+/* 캐릭터 페이드 인/아웃 */
+.character-sprite.char-fade-in {
+    opacity: 0;
+}
+.character-sprite.char-fade-out {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+/* 같은 캐릭터 표정 크로스페이드 */
+.character-sprite.char-crossfade-in {
+    opacity: 0;
+}
+.char-crossfade-out {
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    object-fit: contain;
+    pointer-events: none;
+    transition: opacity 0.25s ease-in-out;
+    will-change: opacity;
 }
 
 /* ===== Dialogue Box ===== */

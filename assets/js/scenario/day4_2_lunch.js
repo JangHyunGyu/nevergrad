@@ -24,9 +24,9 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_choice": {
         character: null,
         choices: [
-            { next: "day4_lunch_yuna_1" },
-            { next: "day4_lunch_nurse_1" },
-            { next: "day4_lunch_roof_1" }
+            { next: "day4_lunch_yuna_1", stats: { yuna: { trust: 3, affinity: 3 } } },
+            { next: "day4_lunch_nurse_1", stats: { riin: { danger: 3 } } },
+            { next: "day4_lunch_roof_1", stats: { seolhwa: { trust: 3 } } }
         ]
     },
 
@@ -144,6 +144,7 @@ Object.assign(SCENARIO[4], {
         // ...지하실.
         background: "underground_lab",
         bgm: "dread.mp3",
+        vibrate: "underground",
         next: "day4_lunch_yuna_20"
     },
     "day4_lunch_yuna_20": {
@@ -563,8 +564,8 @@ Object.assign(SCENARIO[4], {
         character: null,
         timedChoice: 6000,
         choices: [
-            { next: "day4_lunch_yuna_escape" },
-            { next: "day4_lunch_yuna_hide" }
+            { next: "day4_lunch_yuna_escape", stats: { yuna: { trust: 5, affinity: 3 } } },
+            { next: "day4_lunch_yuna_hide", stats: { yuna: { trust: 3 } } }
         ],
         timeoutNext: "day4_lunch_yuna_hide"
     },

@@ -22,9 +22,9 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choice": {
         character: null,
         choices: [
-            { next: "day3_lunch_rooftop_1" },
-            { next: "day3_lunch_sea_1" },
-            { next: "day3_lunch_riin_1" },
+            { next: "day3_lunch_rooftop_1", stats: { yuna: { affinity: 3, trust: 3 } } },
+            { next: "day3_lunch_sea_1", stats: { sea: { affinity: 3 } } },
+            { next: "day3_lunch_riin_1", stats: { riin: { affinity: 3 } } },
             { next: "day3_lunch_alone_1" }
         ]
     },
@@ -274,11 +274,12 @@ Object.assign(SCENARIO[3], {
         choices: [
             {
                 next: "day3_lunch_door_bang",
-                setFlags: ["door_made_noise"]
+                setFlags: ["door_made_noise"],
+                stats: { yuna: { trust: -2, danger: 3 } }
             },
             {
                 next: "day3_lunch_door_wait",
-                stats: { yuna: { trust: 5 } }
+                stats: { yuna: { trust: 5, affinity: 3 } }
             }
         ]
     },
@@ -509,7 +510,8 @@ Object.assign(SCENARIO[3], {
                 stats: { riin: { affinity: 5, danger: 10 } }
             },
             {
-                next: "day3_lunch_riin_refuse_1"
+                next: "day3_lunch_riin_refuse_1",
+                stats: { riin: { affinity: -2, trust: 3 } }
             }
         ]
     },

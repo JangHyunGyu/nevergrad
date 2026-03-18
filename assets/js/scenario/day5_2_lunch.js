@@ -25,6 +25,7 @@ Object.assign(SCENARIO[5], {
         sfx: "sfx_footsteps_running.mp3",
         character: null,
         glitch: { screenShake: true, noise: true },
+        vibrate: "chase",
         next: "day5_lunch_chase_2"
     },
     "day5_lunch_chase_2": {
@@ -69,10 +70,11 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_chase_10": {
         character: null,
         glitch: { screenShake: true },
+        vibrate: "impact",
         timedChoice: 5000,
         choices: [
-            { next: "day5_lunch_left_1" },
-            { next: "day5_lunch_right_1" }
+            { next: "day5_lunch_left_1", stats: { sea: { danger: 3 } } },
+            { next: "day5_lunch_right_1", stats: { riin: { danger: 3 } } }
         ],
         timeoutNext: "day5_lunch_left_1"
     },
@@ -200,9 +202,9 @@ Object.assign(SCENARIO[5], {
         character: null,
         timedChoice: 8000,
         choices: [
-            { next: "day5_lunch_left_c1_1" },
-            { next: "day5_lunch_left_c2_1", setFlags: ["sea_companion"] },
-            { next: "day5_lunch_left_c3_1", setFlags: ["cage_route_sea"] }
+            { next: "day5_lunch_left_c1_1", stats: { sea: { affinity: -3, trust: 5 } } },
+            { next: "day5_lunch_left_c2_1", setFlags: ["sea_companion"], stats: { sea: { affinity: 5, danger: 5 } } },
+            { next: "day5_lunch_left_c3_1", setFlags: ["cage_route_sea"], stats: { sea: { affinity: 10, danger: 10 } } }
         ],
         timeoutNext: "day5_lunch_left_timeout",
         timeoutFlags: ["caught_by_sea"]
@@ -488,11 +490,12 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_right_choice": {
         character: null,
         sfx: "sfx_scream.mp3",
+        vibrate: "danger",
         timedChoice: 6000,
         choices: [
-            { next: "day5_lunch_right_c1_1", setFlags: ["emergency_key"] },
-            { next: "day5_lunch_right_c2_1", setFlags: ["emergency_key", "riin_companion"] },
-            { next: "day5_lunch_right_c3_1" }
+            { next: "day5_lunch_right_c1_1", setFlags: ["emergency_key"], stats: { riin: { trust: 3 } } },
+            { next: "day5_lunch_right_c2_1", setFlags: ["emergency_key", "riin_companion"], stats: { riin: { affinity: 5, trust: 5 } } },
+            { next: "day5_lunch_right_c3_1", stats: { riin: { trust: -3, danger: 3 } } }
         ],
         timeoutNext: "day5_lunch_right_timeout",
         timeoutFlags: ["caught_by_riin"]
@@ -690,8 +693,8 @@ Object.assign(SCENARIO[5], {
         character: "seolhwa_normal",
         timedChoice: 8000,
         choices: [
-            { next: "day5_lunch_seolhwa_c1_1" },
-            { next: "day5_lunch_seolhwa_c2_1" }
+            { next: "day5_lunch_seolhwa_c1_1", stats: { seolhwa: { affinity: 5, trust: 5 } } },
+            { next: "day5_lunch_seolhwa_c2_1", stats: { seolhwa: { trust: 3 } } }
         ],
         timeoutNext: "day5_lunch_seolhwa_c2_1"
     },
@@ -993,11 +996,12 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_eunsu_final": {
         character: null,
         glitch: { screenShake: true },
+        vibrate: "heartbeat",
         timedChoice: 20000,
         choices: [
-            { next: "day5_lunch_final_true", setFlags: ["chose_remember"] },
-            { next: "day5_lunch_final_forget", setFlags: ["chose_forget"] },
-            { next: "day5_lunch_final_resist", setFlags: ["chose_together"] }
+            { next: "day5_lunch_final_true", setFlags: ["chose_remember"], stats: { eunsu: { affinity: -5, trust: 5 }, yuna: { trust: 5 } } },
+            { next: "day5_lunch_final_forget", setFlags: ["chose_forget"], stats: { eunsu: { affinity: 5, danger: 5 } } },
+            { next: "day5_lunch_final_resist", setFlags: ["chose_together"], stats: { seolhwa: { trust: 5, affinity: 5 } } }
         ],
         timeoutNext: "day5_lunch_final_ghost"
     },

@@ -128,13 +128,16 @@ Object.assign(SCENARIO[5], {
     "day5_after_caught_choice": {
         character: null,
         timedChoice: 5000,
+        vibrate: "danger",
         choices: [
             {
                 next: "day5_after_caught_resist_1",
-                setFlags: ["final_resistance"]
+                setFlags: ["final_resistance"],
+                stats: { eunsu: { affinity: -5, danger: 5 }, seolhwa: { trust: 5 } }
             },
             {
-                next: "day5_after_caught_submit_1"
+                next: "day5_after_caught_submit_1",
+                stats: { eunsu: { affinity: 5, danger: 10 } }
             }
         ],
         timeoutNext: "day5_after_caught_submit_1"
@@ -144,6 +147,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_caught_resist_1": {
         character: null,
         glitch: { heavyGlitch: true },
+        vibrate: "danger",
         unskippable: true,
         next: "day5_after_caught_resist_2"
     },
@@ -293,17 +297,21 @@ Object.assign(SCENARIO[5], {
     "day5_after_final_choice": {
         character: null,
         timedChoice: 20000,
+        vibrate: "heartbeat",
         choices: [
             {
-                next: "day5_after_true_1"
+                next: "day5_after_true_1",
+                stats: { eunsu: { affinity: -5, trust: 5 }, yuna: { trust: 5 } }
             },
             {
                 next: "day5_after_forget_1",
-                setFlags: ["chose_forget"]
+                setFlags: ["chose_forget"],
+                stats: { eunsu: { affinity: 5, danger: 5 } }
             },
             {
                 next: "day5_after_resist_1",
-                setFlags: ["chose_together"]
+                setFlags: ["chose_together"],
+                stats: { seolhwa: { trust: 5, affinity: 5 } }
             }
         ],
         timeoutNext: "day5_after_ghost_1",

@@ -37,6 +37,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         sfx: "sfx_notification.mp3",
         unskippable: true,
+        vibrate: "notification",
         next: "day4_night_phone_2"
     },
     "day4_night_phone_2": {
@@ -71,6 +72,7 @@ Object.assign(SCENARIO[4], {
         unskippable: true,
         messengerDelay: 300,
         glitch: { noise: true, noiseDuration: 200 },
+        vibrate: "message_frenzy",
         next: "day4_night_phone_7"
     },
     "day4_night_phone_7": {
@@ -250,6 +252,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         unskippable: true,
         glitch: { heavyGlitch: true, screenOff: true },
+        vibrate: "heartbeat",
         next: "day4_night_mirror"
     },
 
@@ -439,6 +442,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         unskippable: true,
         glitch: { heavyGlitch: true },
+        vibrate: "heartbeat",
         next: "day4_night_mirror_hit1_13"
     },
     // 환각이었다
@@ -677,15 +681,18 @@ Object.assign(SCENARIO[4], {
         choices: [
             {
                 next: "day4_night_plan_escape",
-                setFlags: ["plan_escape_school"]
+                setFlags: ["plan_escape_school"],
+                stats: { yuna: { trust: 3 }, eunsu: { danger: -3 } }
             },
             {
                 next: "day4_night_plan_expose",
-                setFlags: ["plan_expose_truth"]
+                setFlags: ["plan_expose_truth"],
+                stats: { yuna: { trust: 5 }, sea: { danger: 5 } }
             },
             {
                 next: "day4_night_plan_confront",
-                setFlags: ["plan_confront_them"]
+                setFlags: ["plan_confront_them"],
+                stats: { eunsu: { danger: 5 }, riin: { danger: 5 } }
             }
         ]
     },

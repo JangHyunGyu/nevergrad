@@ -586,7 +586,13 @@ body {
     border-radius: 0.2rem;
     letter-spacing: 0.08em;
     white-space: nowrap;
-    transition: color 0.3s ease, opacity 0.3s ease;
+    transition: color 0.3s ease, opacity 0.4s ease, transform 0.4s ease;
+}
+
+.stat-display.stat-hidden {
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
 }
 
 .stat-display.stat-bump {

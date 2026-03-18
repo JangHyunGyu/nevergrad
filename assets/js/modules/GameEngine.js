@@ -342,6 +342,17 @@ class GameEngine {
         // 글리치
         if (scene.glitch) this._handleGlitch(scene.glitch);
 
+        // 디바이스 기믹: 진동
+        if (scene.vibrate && this.deviceGimmick) {
+            this.deviceGimmick.vibrate(scene.vibrate);
+        }
+
+        // 디바이스 기믹: 가짜 푸시 알림
+        if (scene.pushNotif && this.deviceGimmick) {
+            const msg = scene.pushNotif.body || scene.pushNotif.title || '';
+            this.deviceGimmick.showFakeEmergencyAlert(msg, scene.pushNotif.duration || 4000);
+        }
+
         // 엔딩 타이틀
         if (scene.endingTitle) {
             this._showEndingTitle(scene.endingTitle, scene.endingSubtitle);
@@ -718,6 +729,12 @@ class GameEngine {
         const statEl = document.getElementById('stat-display');
         if (!statEl) return;
 
+        // 최초 표시 시 hidden → stat-hidden으로 전환 (CSS 트랜지션 활성화)
+        if (statEl.classList.contains('hidden')) {
+            statEl.classList.remove('hidden');
+            statEl.classList.add('stat-hidden');
+        }
+
         // 현재 씬에서 대화 중인 캐릭터 파악
         const charKey = this.currentSceneData?.character;
         let charId = null;
@@ -728,11 +745,11 @@ class GameEngine {
 
         // 캐릭터가 없으면 (나레이션 등) 스탯 숨김
         if (!charId || !this.state.stats[charId]) {
-            statEl.classList.add('hidden');
+            statEl.classList.add('stat-hidden');
             return;
         }
 
-        statEl.classList.remove('hidden');
+        statEl.classList.remove('stat-hidden');
 
         if (this.state.mode === CONFIG.STAT_MODES.ROMANCE) {
             // 호감도 모드

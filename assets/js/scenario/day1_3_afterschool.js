@@ -25,10 +25,10 @@ Object.assign(SCENARIO[1], {
     "day1_after_choice": {
         character: null,
         choices: [
-            { next: "day1_after_sea_1" },
-            { next: "day1_after_yuna_1", condition: "met_yuna" },
-            { next: "day1_after_riin_1", condition: "met_riin" },
-            { next: "day1_after_eunsu_1" },
+            { next: "day1_after_sea_1", stats: { sea: { affinity: 3 } } },
+            { next: "day1_after_yuna_1", condition: "met_yuna", stats: { yuna: { affinity: 3 } } },
+            { next: "day1_after_riin_1", condition: "met_riin", stats: { riin: { affinity: 3 } } },
+            { next: "day1_after_eunsu_1", stats: { eunsu: { affinity: 3 } } },
             { next: "day1_after_home_1" }
         ]
     },

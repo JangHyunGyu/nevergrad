@@ -94,9 +94,9 @@ Object.assign(SCENARIO[4], {
     "day4_after_choice": {
         character: null,
         choices: [
-            { next: "day4_after_sea_route" },
-            { next: "day4_after_eunsu_route" },
-            { next: "day4_after_riin_route" }
+            { next: "day4_after_sea_route", stats: { sea: { affinity: 3, danger: 5 } } },
+            { next: "day4_after_eunsu_route", stats: { eunsu: { affinity: 3, danger: 5 } } },
+            { next: "day4_after_riin_route", stats: { riin: { affinity: 3, danger: 5 } } }
         ]
     },
 

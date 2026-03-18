@@ -233,8 +233,8 @@ Object.assign(SCENARIO[5], {
         character: null,
         unskippable: true,
         choices: [
-            { next: "day5_morning_escape_end", setFlags: ["route_escape"] },
-            { next: "day5_morning_true_1", setFlags: ["route_true", "has_evidence"] }
+            { next: "day5_morning_escape_end", setFlags: ["route_escape"], stats: { yuna: { trust: -3 } } },
+            { next: "day5_morning_true_1", setFlags: ["route_true", "has_evidence"], stats: { yuna: { trust: 5, affinity: 3 } } }
         ]
     },
 
@@ -253,6 +253,7 @@ Object.assign(SCENARIO[5], {
         background: "basement",
         character: null,
         unskippable: true,
+        vibrate: "underground",
         next: "day5_morning_true_2"
     },
     "day5_morning_true_2": {
@@ -572,9 +573,9 @@ Object.assign(SCENARIO[5], {
         timedChoice: 10000,
         unskippable: true,
         choices: [
-            { next: "day5_morning_grad_reply_1" },
-            { next: "day5_morning_grad_reply_2" },
-            { next: "day5_morning_grad_reply_3" }
+            { next: "day5_morning_grad_reply_1", stats: { eunsu: { affinity: -5, danger: 5 } } },
+            { next: "day5_morning_grad_reply_2", stats: { eunsu: { trust: 3, danger: 3 } } },
+            { next: "day5_morning_grad_reply_3", stats: { eunsu: { danger: 3 } } }
         ],
         timeoutNext: "day5_morning_grad_reply_3"
     },
@@ -697,10 +698,11 @@ Object.assign(SCENARIO[5], {
         character: null,
         timedChoice: 15000,
         unskippable: true,
+        vibrate: "heartbeat",
         choices: [
-            { next: "day5_morning_end_cage", setFlags: ["route_cage", "stayed_with_eunsu"] },
-            { next: "day5_morning_end_forget", setFlags: ["route_forget"] },
-            { next: "day5_morning_end_run", setFlags: ["route_chase"] }
+            { next: "day5_morning_end_cage", setFlags: ["route_cage", "stayed_with_eunsu"], stats: { eunsu: { affinity: 10, danger: 10 } } },
+            { next: "day5_morning_end_forget", setFlags: ["route_forget"], stats: { eunsu: { affinity: 5, danger: 5 } } },
+            { next: "day5_morning_end_run", setFlags: ["route_chase"], stats: { eunsu: { affinity: -5, danger: -3 } } }
         ],
         timeoutNext: "day5_morning_end_run"
     },

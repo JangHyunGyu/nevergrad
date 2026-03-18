@@ -135,6 +135,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_bleed_5": {
         character: null,
         glitch: { themeShift: true },
+        vibrate: "danger",
         next: "day3_night_bleed_6"
     },
     "day3_night_bleed_6": {
@@ -447,14 +448,17 @@ Object.assign(SCENARIO[3], {
     // ══════════════════════════════════════
     "day3_night_choice": {
         character: null,
+        vibrate: "danger",
         choices: [
             {
                 next: "day3_night_investigate",
-                setFlags: ["chose_investigate_d3"]
+                setFlags: ["chose_investigate_d3"],
+                stats: { yuna: { trust: 5, affinity: 3 }, sea: { danger: 5 } }
             },
             {
                 next: "day3_night_deny",
-                setFlags: ["complicit_route"]
+                setFlags: ["complicit_route"],
+                stats: { sea: { affinity: 3 }, yuna: { trust: -5 } }
             }
         ]
     },

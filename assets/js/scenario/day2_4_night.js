@@ -127,6 +127,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_sea_4": {
         character: "sea_smile",
+        charOpacity: 0.35,
         night: true,
         next: "day2_night_sea_5"
     },
@@ -146,6 +147,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_sea_7": {
         character: "sea_normal",
+        charOpacity: 0.35,
         night: true,
         next: "day2_night_sea_8"
     },
@@ -165,6 +167,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_sea_10": {
         character: "sea_normal",
+        charOpacity: 0.35,
         night: true,
         next: "day2_night_sea_11"
     },
@@ -184,6 +187,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_sea_13": {
         character: "sea_smile",
+        charOpacity: 0.35,
         night: true,
         next: "day2_night_sea_14"
     },
@@ -210,6 +214,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_eunsu_3": {
         character: "eunsu_warm",
+        charOpacity: 0.35,
         night: true,
         next: "day2_night_eunsu_4"
     },
@@ -222,6 +227,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_eunsu_5": {
         character: "eunsu_warm",
+        charOpacity: 0.35,
         night: true,
         next: "day2_night_flash_1"
     },

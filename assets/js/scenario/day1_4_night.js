@@ -88,6 +88,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_night_sea_4": {
         character: "sea_normal",
+        charOpacity: 0.35,
         night: true,
         next: "day1_night_sea_reply"
     },

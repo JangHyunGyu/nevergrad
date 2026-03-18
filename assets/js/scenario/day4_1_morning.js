@@ -286,6 +286,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_eunsu_choice": {
         character: null,
         timedChoice: 8000,
+        vibrate: "timer_tick",
         choices: [
             {
                 next: "day4_morning_eunsu_comply",

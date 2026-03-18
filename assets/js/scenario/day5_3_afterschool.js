@@ -193,6 +193,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_caught_submit_3": {
         character: null,
         unskippable: true,
+        vibrate: "paralysis",
         next: "day5_after_caught_submit_4"
     },
     "day5_after_caught_submit_4": {
@@ -344,6 +345,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_true_5": {
         character: null,
+        vibrate: "door_resistance",
         next: "day5_after_true_6"
     },
     "day5_after_true_6": {

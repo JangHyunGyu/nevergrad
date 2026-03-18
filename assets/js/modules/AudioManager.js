@@ -659,6 +659,8 @@ class AudioManager {
             'sfx_scream':            (o) => this._synthScream(o),
             'sfx_notification':      (o) => this._synthNotification(o),
             'sfx_page_turn':         (o) => this._synthPageTurn(o),
+            'affinity_up':           (o) => this._synthAffinityUp(o),
+            'affinity_down':         (o) => this._synthAffinityDown(o),
         };
     }
 
@@ -1400,6 +1402,152 @@ class AudioManager {
 
         noise.start(now);
         noise.stop(now + 0.3);
+    }
+
+    // =========================================================================
+    // 호감도 변화 SFX (Cupid 스타일 합성)
+    // =========================================================================
+
+    /**
+     * 호감도 증가 — 밝고 따뜻한 상승 글로켄슈필 + 하모닉스 + 스파클
+     * 레이어 1: 3음 상승 아르페지오 (C6-E6-G6, 사인파 + 약간의 삼각파)
+     * 레이어 2: 옥타브 위 하모닉스 스파클 (미세한 고주파 사인파)
+     * 레이어 3: 소프트 노이즈 셔머 (공기감)
+     * @private
+     */
+    _synthAffinityUp(options = {}) {
+        const vol = options.volume || 0.45;
+        const now = this.ctx.currentTime;
+
+        // 레이어 1: 3음 상승 아르페지오 (C6, E6, G6)
+        const notes = [1047, 1319, 1568];
+        const noteDur = 0.18;
+
+        notes.forEach((freq, i) => {
+            const t = now + i * 0.1;
+
+            // 메인 사인파 (글로켄슈필)
+            const osc = this.ctx.createOscillator();
+            osc.type = 'sine';
+            osc.frequency.value = freq;
+            const gain = this._createSFXGain(0);
+            osc.connect(gain);
+            gain.gain.setValueAtTime(0, t);
+            gain.gain.linearRampToValueAtTime(vol * (0.6 + i * 0.15), t + 0.008);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + noteDur + 0.1);
+            osc.start(t);
+            osc.stop(t + noteDur + 0.12);
+
+            // 삼각파 서브하모닉 (따뜻함)
+            const sub = this.ctx.createOscillator();
+            sub.type = 'triangle';
+            sub.frequency.value = freq * 0.5;
+            const sGain = this._createSFXGain(0);
+            sub.connect(sGain);
+            sGain.gain.setValueAtTime(0, t);
+            sGain.gain.linearRampToValueAtTime(vol * 0.15, t + 0.01);
+            sGain.gain.exponentialRampToValueAtTime(0.001, t + noteDur + 0.05);
+            sub.start(t);
+            sub.stop(t + noteDur + 0.07);
+        });
+
+        // 레이어 2: 옥타브 위 스파클 (하모닉스)
+        const sparkles = [2093, 2637, 3136]; // C7, E7, G7
+        sparkles.forEach((freq, i) => {
+            const t = now + i * 0.1 + 0.03;
+            const osc = this.ctx.createOscillator();
+            osc.type = 'sine';
+            osc.frequency.value = freq;
+            const gain = this._createSFXGain(0);
+            osc.connect(gain);
+            gain.gain.setValueAtTime(0, t);
+            gain.gain.linearRampToValueAtTime(vol * 0.08, t + 0.005);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 0.12);
+            osc.start(t);
+            osc.stop(t + 0.14);
+        });
+
+        // 레이어 3: 소프트 노이즈 셔머 (공기감)
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.25);
+        const nGain = this._createSFXGain(0);
+        const hpf = this.ctx.createBiquadFilter();
+        hpf.type = 'highpass';
+        hpf.frequency.value = 6000;
+        noise.connect(hpf);
+        hpf.connect(nGain);
+        nGain.gain.setValueAtTime(0, now);
+        nGain.gain.linearRampToValueAtTime(vol * 0.04, now + 0.05);
+        nGain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+        noise.start(now);
+        noise.stop(now + 0.32);
+    }
+
+    /**
+     * 호감도 감소 — 어둡고 짧은 하강 톤 + 불협화 + 먹먹한 테일
+     * 레이어 1: 2음 하강 (E4-C4, 사인파 디튠)
+     * 레이어 2: 불협화 간섭 (미세 디튠 사인파)
+     * 레이어 3: 로우패스 노이즈 테일 (먹먹한 울림)
+     * @private
+     */
+    _synthAffinityDown(options = {}) {
+        const vol = options.volume || 0.4;
+        const now = this.ctx.currentTime;
+
+        // 레이어 1: 2음 하강 (E4 → C4)
+        const notes = [330, 262];
+        notes.forEach((freq, i) => {
+            const t = now + i * 0.12;
+            const osc = this.ctx.createOscillator();
+            osc.type = 'sine';
+            osc.frequency.value = freq;
+            const gain = this._createSFXGain(0);
+            osc.connect(gain);
+            gain.gain.setValueAtTime(0, t);
+            gain.gain.linearRampToValueAtTime(vol * 0.55, t + 0.01);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+            osc.start(t);
+            osc.stop(t + 0.27);
+
+            // 디튠 복제 (불안정감)
+            const detune = this.ctx.createOscillator();
+            detune.type = 'sine';
+            detune.frequency.value = freq * 1.015; // 미세 디튠
+            const dGain = this._createSFXGain(0);
+            detune.connect(dGain);
+            dGain.gain.setValueAtTime(0, t);
+            dGain.gain.linearRampToValueAtTime(vol * 0.2, t + 0.015);
+            dGain.gain.exponentialRampToValueAtTime(0.001, t + 0.2);
+            detune.start(t);
+            detune.stop(t + 0.22);
+        });
+
+        // 레이어 2: 불협화 간섭 (Eb4 — 반음 아래)
+        const dissonant = this.ctx.createOscillator();
+        dissonant.type = 'triangle';
+        dissonant.frequency.value = 311; // Eb4
+        const disGain = this._createSFXGain(0);
+        dissonant.connect(disGain);
+        disGain.gain.setValueAtTime(0, now + 0.05);
+        disGain.gain.linearRampToValueAtTime(vol * 0.12, now + 0.07);
+        disGain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+        dissonant.start(now + 0.05);
+        dissonant.stop(now + 0.32);
+
+        // 레이어 3: 로우패스 노이즈 테일
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.3);
+        const lpf = this.ctx.createBiquadFilter();
+        lpf.type = 'lowpass';
+        lpf.frequency.value = 800;
+        const nGain = this._createSFXGain(0);
+        noise.connect(lpf);
+        lpf.connect(nGain);
+        nGain.gain.setValueAtTime(0, now + 0.1);
+        nGain.gain.linearRampToValueAtTime(vol * 0.08, now + 0.15);
+        nGain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+        noise.start(now + 0.1);
+        noise.stop(now + 0.42);
     }
 
     // =========================================================================

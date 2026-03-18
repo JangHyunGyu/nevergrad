@@ -207,6 +207,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_stat_crack_4": {
         character: null,
         glitch: { shatterStatLabel: true, revealDuration: 300 },
+        vibrate: "stat_crack",
         next: "day3_night_stat_crack_4a"
     },
     "day3_night_stat_crack_4a": {

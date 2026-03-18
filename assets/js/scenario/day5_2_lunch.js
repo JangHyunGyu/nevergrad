@@ -934,6 +934,7 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_eunsu_21": {
         character: "eunsu_gentle",
         typingSpeed: 80,
+        vibrate: "final_needle",
         next: "day5_lunch_eunsu_22"
     },
     // "다시 1일차부터."

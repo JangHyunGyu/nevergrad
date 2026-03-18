@@ -48,8 +48,7 @@ class GameEngine {
         this.audio.init();
         this.renderer.audio = this.audio;
 
-        // SFX 미리 로드
-        this.audio.preloadSFX(['affinity_up.mp3', 'affinity_down.mp3']);
+        // 합성 SFX이므로 preload 불필요 — affinity_up / affinity_down은 initSynthSFX에 등록됨
 
         // 언어 감지 (URL 파라미터 또는 브라우저 언어)
         const urlLang = new URLSearchParams(location.search).get('lang');
@@ -222,6 +221,7 @@ class GameEngine {
         document.getElementById('btn-save')?.addEventListener('click', () => {
             this.audio?.playUIClick();
             this.save.save();
+            this.showSaveToast();
             this._hideOverlay('pause-menu');
         });
 
@@ -332,6 +332,10 @@ class GameEngine {
             for (const [charId, changes] of Object.entries(scene.stats)) {
                 for (const [stat, val] of Object.entries(changes)) {
                     this.state.changeStat(charId, stat, val);
+                    // 호감도(affinity) 변경 시 효과음 + 시각 이펙트
+                    if (stat === 'affinity' && val !== 0) {
+                        this._playStatChangeFX(stat, val);
+                    }
                 }
             }
         }
@@ -489,6 +493,9 @@ class GameEngine {
                     for (const [charId, changes] of Object.entries(choice.stats)) {
                         for (const [stat, val] of Object.entries(changes)) {
                             this.state.changeStat(charId, stat, val);
+                            if (stat === 'affinity' && val !== 0) {
+                                this._playStatChangeFX(stat, val);
+                            }
                         }
                     }
                 }
@@ -576,6 +583,9 @@ class GameEngine {
             for (const [charId, changes] of Object.entries(choice.stats)) {
                 for (const [stat, val] of Object.entries(changes)) {
                     this.state.changeStat(charId, stat, val);
+                    if (stat === 'affinity' && val !== 0) {
+                        this._playStatChangeFX(stat, val);
+                    }
                 }
             }
         }
@@ -776,6 +786,112 @@ class GameEngine {
         }
     }
 
+    // ===== Stat Change Effects =====
+
+    /**
+     * 호감도 변화 시 효과음 + 시각 이펙트 (Cupid 스타일)
+     * @param {string} stat - 스탯 종류 ('affinity')
+     * @param {number} val - 변화량 (양수: 증가, 음수: 감소)
+     */
+    _playStatChangeFX(stat, val) {
+        // 효과음 재생 (합성 SFX)
+        if (this.audio?.ctx) {
+            if (val > 0) {
+                this.audio.playSFX('affinity_up.mp3');
+            } else {
+                this.audio.playSFX('affinity_down.mp3');
+            }
+        }
+
+        // 시각 이펙트: 증감 팝업 + 하트 이펙트 (증가 시)
+        this._showStatChangePopup(val);
+        if (val > 0) {
+            this._showHeartEffect();
+        }
+    }
+
+    /**
+     * 스탯 증감 팝업 표시 (+5, -3 등)
+     * stat-display 옆에 짧게 표시되었다 사라짐
+     * @param {number} val - 변화량
+     */
+    _showStatChangePopup(val) {
+        const statEl = document.getElementById('stat-display');
+        if (!statEl) return;
+
+        const popup = document.createElement('div');
+        popup.className = 'stat-change-popup';
+
+        if (val > 0) {
+            popup.textContent = `+${val}`;
+            popup.classList.add('stat-change-up');
+        } else {
+            popup.textContent = `${val}`;
+            popup.classList.add('stat-change-down');
+        }
+
+        statEl.parentElement.appendChild(popup);
+
+        // 애니메이션 후 제거 (1.2초)
+        setTimeout(() => popup.remove(), 1200);
+    }
+
+    /**
+     * 하트 이펙트 — 호감도 증가 시 화면에 하트 파티클
+     */
+    _showHeartEffect() {
+        const gameScreen = document.getElementById('game-screen');
+        if (!gameScreen) return;
+
+        const container = document.createElement('div');
+        container.className = 'heart-effect-container';
+        gameScreen.appendChild(container);
+
+        // 5개 하트 파티클 생성
+        for (let i = 0; i < 5; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'heart-particle';
+            heart.textContent = '\u2665'; // ♥
+            heart.style.left = `${40 + Math.random() * 20}%`;
+            heart.style.animationDelay = `${i * 0.1}s`;
+            heart.style.fontSize = `${0.8 + Math.random() * 0.8}rem`;
+            container.appendChild(heart);
+        }
+
+        // 컨테이너 정리 (2초)
+        setTimeout(() => container.remove(), 2000);
+    }
+
+    // ===== Save Toast =====
+
+    /**
+     * 저장 완료 토스트 메시지 표시 (1.5초 후 사라짐)
+     */
+    showSaveToast() {
+        // 기존 토스트 제거
+        const existing = document.getElementById('save-toast');
+        if (existing) existing.remove();
+
+        const toast = document.createElement('div');
+        toast.id = 'save-toast';
+        toast.className = 'save-toast';
+        toast.textContent = this.i18n.getUI('saveComplete') || '\uC800\uC7A5 \uC644\uB8CC';
+
+        document.body.appendChild(toast);
+
+        // 강제 리플로우 후 visible 추가 (페이드인)
+        requestAnimationFrame(() => {
+            toast.classList.add('save-toast-visible');
+        });
+
+        // 1.5초 후 페이드아웃 → 제거
+        setTimeout(() => {
+            toast.classList.remove('save-toast-visible');
+            toast.classList.add('save-toast-hiding');
+            setTimeout(() => toast.remove(), 400);
+        }, 1500);
+    }
+
     // ===== Screen =====
 
     _showScreen(id) {
@@ -806,6 +922,7 @@ class GameEngine {
         document.getElementById('qm-save')?.addEventListener('click', () => {
             this.audio?.playUIClick();
             this.save.save();
+            this.showSaveToast();
         });
         document.getElementById('qm-load')?.addEventListener('click', () => {
             this.audio?.playUIClick();

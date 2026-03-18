@@ -563,6 +563,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_yuna_timer": {
         character: null,
         timedChoice: 6000,
+        vibrate: "timer_tick",
         choices: [
             { next: "day4_lunch_yuna_escape", stats: { yuna: { trust: 5, affinity: 3 } } },
             { next: "day4_lunch_yuna_hide", stats: { yuna: { trust: 3 } } }

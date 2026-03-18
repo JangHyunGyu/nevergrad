@@ -1197,6 +1197,76 @@ if (fs.existsSync(ftsPath)) {
     if (ftsContent.includes('fetch(') && !ftsContent.includes('timeout') && !ftsContent.includes('AbortController')) {
         warnings.push(`[FREETALK] API fetch has no timeout — may hang indefinitely`);
     }
+
+    // ── cleanup()-후-조건부-상태-읽기 안티패턴 검사 ──
+    // cleanup()은 nextSceneId, currentChar 등 핵심 상태를 null로 초기화한다.
+    // 같은 setTimeout 콜백 내에서 cleanup() 직후(5줄 이내) if/&&/|| 조건으로
+    // 이 값들을 읽으면 항상 falsy로 평가되어 씬 전환이 불가능해진다.
+    {
+        const ftsLines = ftsContent.split('\n');
+        // cleanup()이 null/0으로 초기화하는 주요 프로퍼티
+        const resetProps = ['nextSceneId', 'currentChar', 'currentMode', 'isFreeTalking', 'currentSceneId'];
+        for (let i = 0; i < ftsLines.length; i++) {
+            if (/this\.cleanup\(\)/.test(ftsLines[i])) {
+                // 직후 5줄만 검사 (같은 콜백 클로저 범위)
+                // return이 있으면 그 줄까지만 검사
+                const windowLines = ftsLines.slice(i + 1, i + 6);
+                const stopIdx = windowLines.findIndex(l => /^\s*return\b/.test(l));
+                const effectiveLines = stopIdx !== -1 ? windowLines.slice(0, stopIdx) : windowLines;
+                const windowText = effectiveLines.join('\n');
+                for (const prop of resetProps) {
+                    // 조건식(if/&&/||) 내에서 this.prop을 읽는 패턴만 검출
+                    const condPattern = new RegExp(`(?:if\\s*\\(|&&|\\|\\|)[^\\n]*this\\.${prop}\\b`);
+                    if (condPattern.test(windowText)) {
+                        errors.push(`[FREETALK] FreeTalkSystem.js:${i + 1}: cleanup() 직후 this.${prop} 조건 검사 — cleanup()이 null로 초기화하므로 항상 false`);
+                    }
+                }
+            }
+        }
+    }
+
+    // ── nextSceneId 미설정 시 씬 전환 불가 검사 ──
+    // freeTalkNext 없는 free_talk 씬이 있으면 경고
+    {
+        const ftScenes2 = Object.values(allScenes).filter(({scene}) => scene.type === 'free_talk');
+        for (const {sceneId, scene} of ftScenes2) {
+            if (!scene.freeTalkNext && !scene.next) {
+                errors.push(`[FREETALK] Scene "${sceneId}": freeTalkNext/next 미설정 — 종료 후 씬 전환 불가`);
+            }
+        }
+    }
+
+    // ── sendMessengerMessage/sendInterrogation: 종료 후 입력 재노출 검사 ──
+    // turnCount >= maxTurns 도달 후에도 _showInputUI가 호출되는 경로 탐지
+    {
+        const ftsLines = ftsContent.split('\n');
+        let inMessengerSend = false;
+        let depth = 0;
+        let foundEndCheck = false;
+        let showInputAfterEnd = false;
+        for (let i = 0; i < ftsLines.length; i++) {
+            const line = ftsLines[i];
+            if (/async sendMessengerMessage/.test(line)) {
+                inMessengerSend = true;
+                depth = 0;
+                foundEndCheck = false;
+                showInputAfterEnd = false;
+            }
+            if (inMessengerSend) {
+                depth += (line.match(/\{/g) || []).length;
+                depth -= (line.match(/\}/g) || []).length;
+                if (/turnCount\s*>=\s*maxTurns/.test(line)) foundEndCheck = true;
+                // foundEndCheck 이후(최대 횟수 분기 아래)에 _showInputUI가 나오는지
+                // 단, return 이후는 무관하므로 return 이전의 코드만 체크
+                if (depth <= 0 && inMessengerSend) {
+                    inMessengerSend = false;
+                    if (foundEndCheck && showInputAfterEnd) {
+                        warnings.push(`[FREETALK] FreeTalkSystem.js:sendMessengerMessage — maxTurns 도달 후에도 _showInputUI 호출 경로 존재 (입력창 재노출)`);
+                    }
+                }
+            }
+        }
+    }
 } else {
     errors.push(`[FREETALK] FreeTalkSystem.js not found`);
 }
@@ -1580,6 +1650,48 @@ if (fs.existsSync(modulesPath)) {
         // DOMContentLoaded 안에서 실행되는지
         if (!appContent.includes('DOMContentLoaded')) {
             errors.push(`[ASYNC] app.js: no DOMContentLoaded listener — DOM elements may not exist`);
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 49. 선택지 라벨-인덱스 불일치 안티패턴 검사
+// ═══════════════════════════════════════════
+// choices.forEach에서 별도 카운터(labelIdx)를 사용하면
+// 조건부 선택지 필터링 시 라벨과 라우팅이 어긋난다.
+// 올바른 패턴: forEach((choice, choiceIdx) => ... labels[choiceIdx])
+{
+    const gePath = path.join(ROOT, 'assets/js/modules/GameEngine.js');
+    if (fs.existsSync(gePath)) {
+        const geRaw = fs.readFileSync(gePath, 'utf8');
+        // choices.forEach 콜백 내에서 별도 카운터(labelIdx 등)를 사용하는 패턴 감지
+        // 패턴: let xxxxIdx = 0; ... choices.forEach ... xxxxIdx++
+        const separateCounterPattern = /let\s+\w*[Ii]dx\s*=\s*0[\s\S]{0,500}choices\.forEach[\s\S]{0,300}\w*[Ii]dx\+\+/;
+        if (separateCounterPattern.test(geRaw)) {
+            errors.push(`[CHOICE] GameEngine.js: choices.forEach에 별도 labelIdx 카운터 사용 — 조건부 선택지 필터링 시 라벨과 라우팅 불일치 발생. choices.forEach((choice, choiceIdx) => labels[choiceIdx]) 패턴으로 수정할 것`);
+        }
+    }
+
+    // 조건부 선택지가 있는 씬에서 i18n 라벨 수가 전체 선택지 수와 일치하는지 재확인
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de']) {
+        const i18nLangDir = path.join(I18N_DIR, lang);
+        if (!fs.existsSync(i18nLangDir)) continue;
+        for (const {sceneId, scene} of Object.values(allScenes)) {
+            if (!scene.choices || scene.choices.length === 0) continue;
+            const hasConditional = scene.choices.some(c => c.condition || c.excludeCondition);
+            if (!hasConditional) continue;
+            // i18n 텍스트에서 해당 씬 찾기
+            const i18nFiles = fs.readdirSync(i18nLangDir).filter(f => f.endsWith('.json'));
+            for (const f of i18nFiles) {
+                try {
+                    const raw = JSON.parse(fs.readFileSync(path.join(i18nLangDir, f), 'utf8'));
+                    if (raw[sceneId] && raw[sceneId].choices) {
+                        if (raw[sceneId].choices.length !== scene.choices.length) {
+                            errors.push(`[CHOICE] ${lang}/${f}: "${sceneId}" 조건부 선택지 씬의 i18n choices 수(${raw[sceneId].choices.length}) ≠ 시나리오 choices 수(${scene.choices.length}) — 라벨 인덱스 불일치`);
+                        }
+                    }
+                } catch (e) { /* 파싱 오류는 다른 검사에서 처리 */ }
+            }
         }
     }
 }

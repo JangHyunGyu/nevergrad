@@ -506,15 +506,13 @@ class GameEngine {
         panel.innerHTML = '';
         panel.classList.remove('hidden');
 
-        let labelIdx = 0;
-        choices.forEach((choice) => {
+        choices.forEach((choice, choiceIdx) => {
             if (choice.condition && !this._checkCondition(choice.condition)) return;
             if (choice.excludeCondition && this.state.hasFlag(choice.excludeCondition)) return;
 
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
-            btn.textContent = labels?.[labelIdx] || `선택 ${labelIdx + 1}`;
-            labelIdx++;
+            btn.textContent = labels?.[choiceIdx] || `선택 ${choiceIdx + 1}`;
 
             // 글리치: 선택지 깜빡임
             if (choice.glitchFlicker) {

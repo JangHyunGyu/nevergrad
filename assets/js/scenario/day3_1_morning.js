@@ -58,6 +58,7 @@ Object.assign(SCENARIO[3], {
     "day3_morning_commute_1": {
         background: "street_morning",
         character: null,
+        sfx: "sfx_footsteps.mp3",
         next: "day3_morning_commute_2"
     },
     "day3_morning_commute_2": {

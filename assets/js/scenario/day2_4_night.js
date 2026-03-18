@@ -27,6 +27,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_phone_1": {
         character: null,
         night: true,
+        sfx: "sfx_phone_vibrate.mp3",
         next: "day2_night_phone_2"
     },
     "day2_night_phone_2": {
@@ -88,7 +89,17 @@ Object.assign(SCENARIO[2], {
     "day2_night_phone_13": {
         character: null,
         night: true,
-        next: "day2_night_sea_1"
+        next: "day2_night_ft_messenger"
+    },
+
+    // ===== 민수에게 답장 (FreeTalk 메신저 모드) =====
+    "day2_night_ft_messenger": {
+        character: null,
+        night: true,
+        type: "free_talk",
+        freeTalkMode: "messenger",
+        freeTalkChar: "minsu",
+        freeTalkNext: "day2_night_sea_1"
     },
 
     // ===== 세아와의 카톡 =====
@@ -239,6 +250,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_flash_5": {
         character: null,
         night: true,
+        sfx: "sfx_heartbeat_fast.mp3",
         glitch: { noise: true, noiseDuration: 500 },
         next: "day2_night_flash_6"
     },
@@ -262,6 +274,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_dream_1": {
         background: "black",
         bgm: null,
+        sfx: "sfx_heartbeat.mp3",
         character: null,
         night: true,
         next: "day2_night_dream_2"

@@ -205,6 +205,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_confront_1": {
         background: "exit_door",
         character: null,
+        sfx: "sfx_footsteps.mp3",
         next: "day5_after_confront_2"
     },
     "day5_after_confront_2": {
@@ -315,6 +316,7 @@ Object.assign(SCENARIO[5], {
     // ══════════════════════════════════════
     "day5_after_true_1": {
         character: "eunsu_obsessed",
+        sfx: "sfx_glass_break.mp3",
         glitch: { heavyGlitch: true },
         unskippable: true,
         next: "day5_after_true_2"

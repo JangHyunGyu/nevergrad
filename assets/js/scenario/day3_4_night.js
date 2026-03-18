@@ -36,6 +36,7 @@ Object.assign(SCENARIO[3], {
     // ══════════════════════════════════════
     "day3_night_sea_msg": {
         character: null,
+        sfx: "sfx_notification.mp3",
         next: "day3_night_sea_msg_2"
     },
     "day3_night_sea_msg_2": {
@@ -217,7 +218,19 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_stat_crack_6": {
         character: null,
-        next: "day3_night_wall"
+        next: "day3_night_ft_nightmare"
+    },
+
+    // ══════════════════════════════════════
+    //  ★ AI 커스텀 악몽 (FreeTalk 나이트메어 모드)
+    // ══════════════════════════════════════
+    "day3_night_ft_nightmare": {
+        background: "black",
+        character: null,
+        night: true,
+        type: "free_talk",
+        freeTalkMode: "nightmare",
+        freeTalkNext: "day3_night_wall"
     },
 
     // ══════════════════════════════════════
@@ -239,6 +252,7 @@ Object.assign(SCENARIO[3], {
     // "여기서 나가"
     "day3_night_wall_4": {
         character: null,
+        sfx: "sfx_static.mp3",
         glitch: { screenShake: true, noise: true, noiseDuration: 500 },
         next: "day3_night_wall_5"
     },
@@ -319,6 +333,7 @@ Object.assign(SCENARIO[3], {
     // ══════════════════════════════════════
     "day3_night_seolhwa": {
         bgm: null,
+        sfx: "sfx_whisper.mp3",
         character: "seolhwa_fading",
         glitch: { noise: true, noiseDuration: 300, temperatureDrop: true },
         next: "day3_night_seolhwa_2"

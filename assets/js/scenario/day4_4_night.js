@@ -35,6 +35,7 @@ Object.assign(SCENARIO[4], {
     // ══════════════════════════════════════════
     "day4_night_phone": {
         character: null,
+        sfx: "sfx_notification.mp3",
         unskippable: true,
         next: "day4_night_phone_2"
     },

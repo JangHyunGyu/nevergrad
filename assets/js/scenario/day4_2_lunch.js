@@ -16,6 +16,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_start": {
         background: "classroom",
         bgm: "tension.mp3",
+        sfx: "sfx_school_bell.mp3",
         character: null,
         next: "day4_lunch_choice"
     },
@@ -162,6 +163,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_yuna_23": {
         character: null,
+        sfx: "sfx_glass_break.mp3",
         // 약품 캐비넷 유리 깨짐 — 유나. 앰플 M-07, M-09, S-13
         next: "day4_lunch_yuna_24"
     },
@@ -579,6 +581,30 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_yuna_end": {
         character: null,
+        next: "day4_lunch_ft_eunsu_pre"
+    },
+
+    // ═══════════════════════════════════════
+    // ★ 은수 심문 (FreeTalk 가스라이팅)
+    // 지하에서 올라오다 은수에게 발각됨
+    // ═══════════════════════════════════════
+    "day4_lunch_ft_eunsu_pre": {
+        background: "old_building",
+        character: "eunsu_serious",
+        night: false,
+        next: "day4_lunch_ft_eunsu"
+    },
+    "day4_lunch_ft_eunsu": {
+        character: "eunsu_serious",
+        type: "free_talk",
+        freeTalkMode: "interrogation",
+        freeTalkChar: "eunsu",
+        freeTalkContext: "학생이 허가 없이 구관 지하실에 있는 것을 발견",
+        freeTalkNext: "day4_lunch_ft_eunsu_post"
+    },
+    "day4_lunch_ft_eunsu_post": {
+        character: "eunsu_warm",
+        stats: { eunsu: { danger: 5 } },
         next: "day4_lunch_end"
     },
 
@@ -674,6 +700,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_roof_1": {
         background: "rooftop",
         bgm: "wind_ambient.mp3",
+        sfx: "sfx_wind.mp3",
         character: null,
         next: "day4_lunch_roof_2"
     },

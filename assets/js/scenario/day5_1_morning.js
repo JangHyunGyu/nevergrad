@@ -56,6 +56,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_dawn_8": {
         character: null,
+        sfx: "sfx_door_open.mp3",
         next: "day5_morning_dawn_9"
     },
     "day5_morning_dawn_9": {
@@ -64,6 +65,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_dawn_10": {
         character: null,
+        sfx: "sfx_footsteps.mp3",
         next: "day5_morning_dawn_11"
     },
     "day5_morning_dawn_11": {
@@ -113,6 +115,7 @@ Object.assign(SCENARIO[5], {
     "day5_morning_school_8": {
         character: null,
         background: "old_building",
+        sfx: "sfx_thunder.mp3",
         next: "day5_morning_school_9"
     },
     "day5_morning_school_9": {

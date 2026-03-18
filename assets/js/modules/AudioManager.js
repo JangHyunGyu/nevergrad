@@ -122,6 +122,9 @@ class AudioManager {
 
         // Autoplay 정책 unlock
         this._setupAutoplayUnlock();
+
+        // 합성 SFX 레지스트리 초기화
+        this.initSynthSFX();
     }
 
     /**
@@ -309,7 +312,8 @@ class AudioManager {
     // =========================================================================
 
     /**
-     * 효과음 재생 (중복 허용, 캐시된 버퍼 사용)
+     * 효과음 재생 (중복 허용)
+     * 합성 SFX가 등록되어 있으면 Web Audio API로 합성, 없으면 파일 로드
      * @param {string} filename - SFX 파일명 (예: 'affinity_up.mp3')
      * @param {object} [options]
      * @param {number} [options.volume=1.0] - 상대 볼륨 (0~1, sfxGain에 곱해짐)
@@ -317,6 +321,13 @@ class AudioManager {
      */
     async playSFX(filename, options = {}) {
         if (!this.ctx) return;
+
+        // 합성 SFX 매핑 확인
+        const synthKey = filename.replace(/\.[^.]+$/, ''); // 확장자 제거
+        if (this._synthRegistry && this._synthRegistry[synthKey]) {
+            this._synthRegistry[synthKey](options);
+            return;
+        }
 
         const path = `assets/audio/sfx/${filename}`;
         const buffer = await this.loadBuffer(path);
@@ -614,6 +625,855 @@ class AudioManager {
      */
     getCurrentBGM() {
         return this._currentBGM;
+    }
+
+    // =========================================================================
+    // SFX 합성 (Web Audio API)
+    // =========================================================================
+
+    /**
+     * 합성 SFX 레지스트리 초기화
+     * init() 이후 호출 가능
+     */
+    initSynthSFX() {
+        if (!this.ctx) return;
+
+        this._synthRegistry = {
+            'sfx_school_bell':       (o) => this._synthSchoolBell(o),
+            'sfx_door_open':         (o) => this._synthDoorOpen(o),
+            'sfx_door_slam':         (o) => this._synthDoorSlam(o),
+            'sfx_footsteps':         (o) => this._synthFootsteps(o),
+            'sfx_footsteps_running': (o) => this._synthFootstepsRunning(o),
+            'sfx_heartbeat':         (o) => this._synthHeartbeat(o),
+            'sfx_heartbeat_fast':    (o) => this._synthHeartbeatFast(o),
+            'sfx_glass_break':       (o) => this._synthGlassBreak(o),
+            'sfx_thunder':           (o) => this._synthThunder(o),
+            'sfx_rain_loop':         (o) => this._synthRainLoop(o),
+            'sfx_wind':              (o) => this._synthWind(o),
+            'sfx_clock_tick':        (o) => this._synthClockTick(o),
+            'sfx_phone_vibrate':     (o) => this._synthPhoneVibrate(o),
+            'sfx_knock':             (o) => this._synthKnock(o),
+            'sfx_static':            (o) => this._synthStatic(o),
+            'sfx_whisper':           (o) => this._synthWhisper(o),
+            'sfx_camera_shutter':    (o) => this._synthCameraShutter(o),
+            'sfx_scream':            (o) => this._synthScream(o),
+            'sfx_notification':      (o) => this._synthNotification(o),
+            'sfx_page_turn':         (o) => this._synthPageTurn(o),
+        };
+    }
+
+    /**
+     * 합성 SFX용 gain 노드 생성 헬퍼
+     * @private
+     * @param {number} [volume=1.0]
+     * @returns {GainNode}
+     */
+    _createSFXGain(volume = 1.0) {
+        const gain = this.ctx.createGain();
+        gain.gain.value = volume;
+        gain.connect(this.sfxGain);
+        return gain;
+    }
+
+    /**
+     * 노이즈 버퍼 생성 헬퍼
+     * @private
+     * @param {number} duration - 초
+     * @returns {AudioBuffer}
+     */
+    _createNoiseBuffer(duration) {
+        const sampleRate = this.ctx.sampleRate;
+        const length = sampleRate * duration;
+        const buffer = this.ctx.createBuffer(1, length, sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < length; i++) {
+            data[i] = Math.random() * 2 - 1;
+        }
+        return buffer;
+    }
+
+    /**
+     * 학교 차임벨 — 4음 멜로디 (솔-미-라-레)
+     * @private
+     */
+    _synthSchoolBell(options = {}) {
+        const vol = options.volume || 0.5;
+        const now = this.ctx.currentTime;
+        const notes = [784, 659, 880, 587]; // G5, E5, A5, D5
+        const noteDur = 0.6;
+
+        notes.forEach((freq, i) => {
+            const osc = this.ctx.createOscillator();
+            const gain = this._createSFXGain(0);
+            osc.type = 'sine';
+            osc.frequency.value = freq;
+            osc.connect(gain);
+
+            const t = now + i * noteDur;
+            gain.gain.setValueAtTime(0, t);
+            gain.gain.linearRampToValueAtTime(vol, t + 0.02);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + noteDur - 0.05);
+
+            osc.start(t);
+            osc.stop(t + noteDur);
+        });
+    }
+
+    /**
+     * 문 열림 — 경첩 삐걱 + 공기 이동
+     * @private
+     */
+    _synthDoorOpen(options = {}) {
+        const vol = options.volume || 0.4;
+        const now = this.ctx.currentTime;
+        const gain = this._createSFXGain(vol);
+
+        // 삐걱거리는 경첩 (낮은 주파수 스윕)
+        const osc = this.ctx.createOscillator();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(120, now);
+        osc.frequency.exponentialRampToValueAtTime(300, now + 0.3);
+        osc.frequency.exponentialRampToValueAtTime(80, now + 0.8);
+
+        const filter = this.ctx.createBiquadFilter();
+        filter.type = 'bandpass';
+        filter.frequency.value = 200;
+        filter.Q.value = 5;
+
+        osc.connect(filter);
+        filter.connect(gain);
+
+        gain.gain.setValueAtTime(vol * 0.6, now);
+        gain.gain.linearRampToValueAtTime(vol, now + 0.2);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.9);
+
+        osc.start(now);
+        osc.stop(now + 0.9);
+
+        // 공기 이동 (노이즈)
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.5);
+        const nGain = this._createSFXGain(0);
+        const lpf = this.ctx.createBiquadFilter();
+        lpf.type = 'lowpass';
+        lpf.frequency.value = 500;
+        noise.connect(lpf);
+        lpf.connect(nGain);
+        nGain.gain.setValueAtTime(0, now + 0.3);
+        nGain.gain.linearRampToValueAtTime(vol * 0.2, now + 0.5);
+        nGain.gain.exponentialRampToValueAtTime(0.001, now + 1.0);
+        noise.start(now + 0.3);
+        noise.stop(now + 1.0);
+    }
+
+    /**
+     * 문 쾅 닫힘 — 강한 충격음 + 금속 잔향
+     * @private
+     */
+    _synthDoorSlam(options = {}) {
+        const vol = options.volume || 0.7;
+        const now = this.ctx.currentTime;
+
+        // 충격음 (노이즈 버스트)
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.3);
+        const nGain = this._createSFXGain(vol);
+        const hpf = this.ctx.createBiquadFilter();
+        hpf.type = 'highpass';
+        hpf.frequency.value = 100;
+        noise.connect(hpf);
+        hpf.connect(nGain);
+        nGain.gain.setValueAtTime(vol, now);
+        nGain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+        noise.start(now);
+        noise.stop(now + 0.3);
+
+        // 금속 울림
+        const osc = this.ctx.createOscillator();
+        osc.type = 'sine';
+        osc.frequency.value = 150;
+        const mGain = this._createSFXGain(0);
+        osc.connect(mGain);
+        mGain.gain.setValueAtTime(vol * 0.5, now);
+        mGain.gain.exponentialRampToValueAtTime(0.001, now + 0.8);
+        osc.start(now);
+        osc.stop(now + 0.8);
+    }
+
+    /**
+     * 걷는 발소리 — 4~5걸음, 규칙적
+     * @private
+     */
+    _synthFootsteps(options = {}) {
+        const vol = options.volume || 0.35;
+        const now = this.ctx.currentTime;
+        const steps = 5;
+        const interval = 0.5; // 걸음 간격
+
+        for (let i = 0; i < steps; i++) {
+            const t = now + i * interval;
+            const noise = this.ctx.createBufferSource();
+            noise.buffer = this._createNoiseBuffer(0.1);
+            const gain = this._createSFXGain(0);
+            const filter = this.ctx.createBiquadFilter();
+            filter.type = 'bandpass';
+            filter.frequency.value = 800 + Math.random() * 200;
+            filter.Q.value = 2;
+            noise.connect(filter);
+            filter.connect(gain);
+
+            gain.gain.setValueAtTime(vol * (0.8 + Math.random() * 0.2), t);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 0.08);
+            noise.start(t);
+            noise.stop(t + 0.1);
+        }
+    }
+
+    /**
+     * 달리는 발소리 — 빠르고 다급한
+     * @private
+     */
+    _synthFootstepsRunning(options = {}) {
+        const vol = options.volume || 0.45;
+        const now = this.ctx.currentTime;
+        const steps = 10;
+        const interval = 0.2;
+
+        for (let i = 0; i < steps; i++) {
+            const t = now + i * interval;
+            const noise = this.ctx.createBufferSource();
+            noise.buffer = this._createNoiseBuffer(0.08);
+            const gain = this._createSFXGain(0);
+            const filter = this.ctx.createBiquadFilter();
+            filter.type = 'bandpass';
+            filter.frequency.value = 1000 + Math.random() * 400;
+            filter.Q.value = 3;
+            noise.connect(filter);
+            filter.connect(gain);
+
+            const v = vol * (0.6 + Math.random() * 0.4);
+            gain.gain.setValueAtTime(v, t);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 0.06);
+            noise.start(t);
+            noise.stop(t + 0.08);
+        }
+    }
+
+    /**
+     * 심장박동 — 차분한 두근두근 3~4회
+     * @private
+     */
+    _synthHeartbeat(options = {}) {
+        const vol = options.volume || 0.5;
+        const now = this.ctx.currentTime;
+        const beats = 4;
+        const interval = 0.8;
+
+        for (let i = 0; i < beats; i++) {
+            const t = now + i * interval;
+
+            // 첫번째 박동 (강)
+            const osc1 = this.ctx.createOscillator();
+            osc1.type = 'sine';
+            osc1.frequency.value = 50;
+            const g1 = this._createSFXGain(0);
+            osc1.connect(g1);
+            g1.gain.setValueAtTime(0, t);
+            g1.gain.linearRampToValueAtTime(vol, t + 0.02);
+            g1.gain.exponentialRampToValueAtTime(0.001, t + 0.15);
+            osc1.start(t);
+            osc1.stop(t + 0.15);
+
+            // 두번째 박동 (약)
+            const osc2 = this.ctx.createOscillator();
+            osc2.type = 'sine';
+            osc2.frequency.value = 45;
+            const g2 = this._createSFXGain(0);
+            osc2.connect(g2);
+            g2.gain.setValueAtTime(0, t + 0.2);
+            g2.gain.linearRampToValueAtTime(vol * 0.6, t + 0.22);
+            g2.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+            osc2.start(t + 0.2);
+            osc2.stop(t + 0.35);
+        }
+    }
+
+    /**
+     * 빠른 심장박동 — 공포/패닉 5~6회
+     * @private
+     */
+    _synthHeartbeatFast(options = {}) {
+        const vol = options.volume || 0.6;
+        const now = this.ctx.currentTime;
+        const beats = 6;
+        const baseInterval = 0.5;
+
+        for (let i = 0; i < beats; i++) {
+            // 점점 빨라짐
+            const interval = baseInterval - (i * 0.04);
+            const t = now + i * interval;
+
+            const osc1 = this.ctx.createOscillator();
+            osc1.type = 'sine';
+            osc1.frequency.value = 55;
+            const g1 = this._createSFXGain(0);
+            osc1.connect(g1);
+            g1.gain.setValueAtTime(0, t);
+            g1.gain.linearRampToValueAtTime(vol * (1 + i * 0.05), t + 0.015);
+            g1.gain.exponentialRampToValueAtTime(0.001, t + 0.1);
+            osc1.start(t);
+            osc1.stop(t + 0.1);
+
+            const osc2 = this.ctx.createOscillator();
+            osc2.type = 'sine';
+            osc2.frequency.value = 50;
+            const g2 = this._createSFXGain(0);
+            osc2.connect(g2);
+            g2.gain.setValueAtTime(0, t + 0.12);
+            g2.gain.linearRampToValueAtTime(vol * 0.7, t + 0.135);
+            g2.gain.exponentialRampToValueAtTime(0.001, t + 0.22);
+            osc2.start(t + 0.12);
+            osc2.stop(t + 0.22);
+        }
+    }
+
+    /**
+     * 유리 깨짐 — 파열음 + 파편 산란
+     * @private
+     */
+    _synthGlassBreak(options = {}) {
+        const vol = options.volume || 0.6;
+        const now = this.ctx.currentTime;
+
+        // 파열 충격 (노이즈 버스트)
+        const burst = this.ctx.createBufferSource();
+        burst.buffer = this._createNoiseBuffer(0.15);
+        const bGain = this._createSFXGain(vol);
+        const hpf = this.ctx.createBiquadFilter();
+        hpf.type = 'highpass';
+        hpf.frequency.value = 2000;
+        burst.connect(hpf);
+        hpf.connect(bGain);
+        bGain.gain.setValueAtTime(vol, now);
+        bGain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+        burst.start(now);
+        burst.stop(now + 0.15);
+
+        // 파편 (고주파 작은 노이즈들)
+        for (let i = 0; i < 8; i++) {
+            const t = now + 0.05 + Math.random() * 0.4;
+            const shard = this.ctx.createOscillator();
+            shard.type = 'sine';
+            shard.frequency.value = 3000 + Math.random() * 5000;
+            const sGain = this._createSFXGain(0);
+            shard.connect(sGain);
+            const v = vol * (0.1 + Math.random() * 0.2);
+            sGain.gain.setValueAtTime(v, t);
+            sGain.gain.exponentialRampToValueAtTime(0.001, t + 0.03 + Math.random() * 0.05);
+            shard.start(t);
+            shard.stop(t + 0.1);
+        }
+    }
+
+    /**
+     * 천둥 — 깊은 럼블 + 잔향
+     * @private
+     */
+    _synthThunder(options = {}) {
+        const vol = options.volume || 0.7;
+        const now = this.ctx.currentTime;
+
+        // 저주파 럼블
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(3.0);
+        const lpf = this.ctx.createBiquadFilter();
+        lpf.type = 'lowpass';
+        lpf.frequency.value = 200;
+        const gain = this._createSFXGain(0);
+        noise.connect(lpf);
+        lpf.connect(gain);
+
+        gain.gain.setValueAtTime(0, now);
+        gain.gain.linearRampToValueAtTime(vol, now + 0.1);
+        gain.gain.setValueAtTime(vol * 0.8, now + 0.3);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 2.5);
+        noise.start(now);
+        noise.stop(now + 2.5);
+
+        // 크랙 (순간 밝은 소리)
+        const crack = this.ctx.createBufferSource();
+        crack.buffer = this._createNoiseBuffer(0.1);
+        const cGain = this._createSFXGain(0);
+        const bpf = this.ctx.createBiquadFilter();
+        bpf.type = 'bandpass';
+        bpf.frequency.value = 1500;
+        bpf.Q.value = 1;
+        crack.connect(bpf);
+        bpf.connect(cGain);
+        cGain.gain.setValueAtTime(vol * 0.8, now);
+        cGain.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+        crack.start(now);
+        crack.stop(now + 0.1);
+    }
+
+    /**
+     * 빗소리 루프 — 약 4초 동안 재생 (원샷, 루프 아님)
+     * @private
+     */
+    _synthRainLoop(options = {}) {
+        const vol = options.volume || 0.3;
+        const now = this.ctx.currentTime;
+        const duration = 4.0;
+
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(duration);
+        const lpf = this.ctx.createBiquadFilter();
+        lpf.type = 'lowpass';
+        lpf.frequency.value = 3000;
+        const gain = this._createSFXGain(0);
+        noise.connect(lpf);
+        lpf.connect(gain);
+
+        gain.gain.setValueAtTime(0, now);
+        gain.gain.linearRampToValueAtTime(vol, now + 0.5);
+        gain.gain.setValueAtTime(vol, now + duration - 0.8);
+        gain.gain.linearRampToValueAtTime(0, now + duration);
+        noise.start(now);
+        noise.stop(now + duration);
+
+        // 간헐적 빗방울 (높은 틱)
+        for (let i = 0; i < 15; i++) {
+            const t = now + Math.random() * (duration - 0.5);
+            const drop = this.ctx.createOscillator();
+            drop.type = 'sine';
+            drop.frequency.value = 4000 + Math.random() * 4000;
+            const dGain = this._createSFXGain(0);
+            drop.connect(dGain);
+            dGain.gain.setValueAtTime(vol * (0.05 + Math.random() * 0.1), t);
+            dGain.gain.exponentialRampToValueAtTime(0.001, t + 0.01 + Math.random() * 0.02);
+            drop.start(t);
+            drop.stop(t + 0.05);
+        }
+    }
+
+    /**
+     * 바람 — 옥상에서 부는 강한 바람
+     * @private
+     */
+    _synthWind(options = {}) {
+        const vol = options.volume || 0.35;
+        const now = this.ctx.currentTime;
+        const duration = 3.0;
+
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(duration);
+        const bpf = this.ctx.createBiquadFilter();
+        bpf.type = 'bandpass';
+        bpf.frequency.value = 400;
+        bpf.Q.value = 0.5;
+        const gain = this._createSFXGain(0);
+        noise.connect(bpf);
+        bpf.connect(gain);
+
+        // 돌풍 느낌: 파도처럼 볼륨 변동
+        gain.gain.setValueAtTime(0, now);
+        gain.gain.linearRampToValueAtTime(vol * 0.5, now + 0.3);
+        gain.gain.linearRampToValueAtTime(vol, now + 0.8);
+        gain.gain.linearRampToValueAtTime(vol * 0.4, now + 1.5);
+        gain.gain.linearRampToValueAtTime(vol * 0.9, now + 2.0);
+        gain.gain.linearRampToValueAtTime(0, now + duration);
+
+        // 주파수도 변동
+        bpf.frequency.setValueAtTime(400, now);
+        bpf.frequency.linearRampToValueAtTime(800, now + 0.8);
+        bpf.frequency.linearRampToValueAtTime(300, now + 1.5);
+        bpf.frequency.linearRampToValueAtTime(600, now + 2.0);
+        bpf.frequency.linearRampToValueAtTime(200, now + duration);
+
+        noise.start(now);
+        noise.stop(now + duration);
+    }
+
+    /**
+     * 시계 초침 — 째깍째깍 4~5초
+     * @private
+     */
+    _synthClockTick(options = {}) {
+        const vol = options.volume || 0.3;
+        const now = this.ctx.currentTime;
+        const ticks = 5;
+
+        for (let i = 0; i < ticks; i++) {
+            const t = now + i * 1.0;
+
+            // 째깍 (매우 짧은 클릭)
+            const osc = this.ctx.createOscillator();
+            osc.type = 'square';
+            osc.frequency.value = 1800;
+            const gain = this._createSFXGain(0);
+            osc.connect(gain);
+            gain.gain.setValueAtTime(vol, t);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 0.015);
+            osc.start(t);
+            osc.stop(t + 0.02);
+        }
+    }
+
+    /**
+     * 스마트폰 진동 — 짧은 진동 2회
+     * @private
+     */
+    _synthPhoneVibrate(options = {}) {
+        const vol = options.volume || 0.3;
+        const now = this.ctx.currentTime;
+
+        for (let i = 0; i < 2; i++) {
+            const t = now + i * 0.4;
+            const osc = this.ctx.createOscillator();
+            osc.type = 'sine';
+            osc.frequency.value = 150;
+            const gain = this._createSFXGain(0);
+            const lpf = this.ctx.createBiquadFilter();
+            lpf.type = 'lowpass';
+            lpf.frequency.value = 300;
+            osc.connect(lpf);
+            lpf.connect(gain);
+
+            gain.gain.setValueAtTime(0, t);
+            gain.gain.linearRampToValueAtTime(vol, t + 0.02);
+            gain.gain.setValueAtTime(vol, t + 0.15);
+            gain.gain.linearRampToValueAtTime(0, t + 0.2);
+
+            osc.start(t);
+            osc.stop(t + 0.2);
+        }
+    }
+
+    /**
+     * 노크 — 나무 문에 똑똑똑 3회
+     * @private
+     */
+    _synthKnock(options = {}) {
+        const vol = options.volume || 0.5;
+        const now = this.ctx.currentTime;
+        const knocks = [0, 0.25, 0.5]; // 3회 타이밍
+
+        knocks.forEach((offset) => {
+            const t = now + offset;
+
+            // 충격음 (짧은 노이즈)
+            const noise = this.ctx.createBufferSource();
+            noise.buffer = this._createNoiseBuffer(0.05);
+            const bpf = this.ctx.createBiquadFilter();
+            bpf.type = 'bandpass';
+            bpf.frequency.value = 600;
+            bpf.Q.value = 3;
+            const gain = this._createSFXGain(0);
+            noise.connect(bpf);
+            bpf.connect(gain);
+            gain.gain.setValueAtTime(vol, t);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 0.06);
+            noise.start(t);
+            noise.stop(t + 0.06);
+
+            // 나무 울림 (저주파 감쇠)
+            const osc = this.ctx.createOscillator();
+            osc.type = 'sine';
+            osc.frequency.value = 200 + Math.random() * 30;
+            const rGain = this._createSFXGain(0);
+            osc.connect(rGain);
+            rGain.gain.setValueAtTime(vol * 0.4, t);
+            rGain.gain.exponentialRampToValueAtTime(0.001, t + 0.12);
+            osc.start(t);
+            osc.stop(t + 0.12);
+        });
+    }
+
+    /**
+     * 정적/글리치 노이즈 — 지지직 전자 잡음
+     * @private
+     */
+    _synthStatic(options = {}) {
+        const vol = options.volume || 0.4;
+        const now = this.ctx.currentTime;
+        const duration = 0.8;
+
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(duration);
+        const gain = this._createSFXGain(0);
+
+        // 비트크러셔 효과 (bandpass로 근사)
+        const bpf = this.ctx.createBiquadFilter();
+        bpf.type = 'bandpass';
+        bpf.frequency.value = 3000;
+        bpf.Q.value = 0.5;
+        noise.connect(bpf);
+        bpf.connect(gain);
+
+        // 간헐적 버스트 (글리치)
+        gain.gain.setValueAtTime(0, now);
+        gain.gain.setValueAtTime(vol, now + 0.01);
+        gain.gain.setValueAtTime(vol * 0.3, now + 0.1);
+        gain.gain.setValueAtTime(vol * 0.9, now + 0.15);
+        gain.gain.setValueAtTime(vol * 0.1, now + 0.3);
+        gain.gain.setValueAtTime(vol * 0.8, now + 0.35);
+        gain.gain.setValueAtTime(vol * 0.2, now + 0.5);
+        gain.gain.linearRampToValueAtTime(0, now + duration);
+
+        noise.start(now);
+        noise.stop(now + duration);
+    }
+
+    /**
+     * 속삭임 — 알아들을 수 없는 필터드 노이즈
+     * @private
+     */
+    _synthWhisper(options = {}) {
+        const vol = options.volume || 0.25;
+        const now = this.ctx.currentTime;
+        const duration = 2.0;
+
+        // 여러 레이어의 필터드 노이즈로 속삭임 근사
+        for (let layer = 0; layer < 3; layer++) {
+            const noise = this.ctx.createBufferSource();
+            noise.buffer = this._createNoiseBuffer(duration);
+            const bpf = this.ctx.createBiquadFilter();
+            bpf.type = 'bandpass';
+            bpf.frequency.value = 1500 + layer * 800;
+            bpf.Q.value = 8;
+            const gain = this._createSFXGain(0);
+            noise.connect(bpf);
+            bpf.connect(gain);
+
+            // 리듬감 있는 볼륨 변동 (말하는 듯한)
+            const segments = 6;
+            for (let s = 0; s < segments; s++) {
+                const st = now + (s / segments) * duration + layer * 0.05;
+                const v = vol * (0.1 + Math.random() * 0.3);
+                gain.gain.setValueAtTime(v, st);
+                gain.gain.linearRampToValueAtTime(vol * 0.02, st + duration / segments * 0.7);
+            }
+            gain.gain.linearRampToValueAtTime(0, now + duration);
+
+            noise.start(now);
+            noise.stop(now + duration);
+        }
+    }
+
+    /**
+     * 카메라 셔터 — 기계식 찰칵
+     * @private
+     */
+    _synthCameraShutter(options = {}) {
+        const vol = options.volume || 0.5;
+        const now = this.ctx.currentTime;
+
+        // 셔터 열림 (날카로운 클릭)
+        const click1 = this.ctx.createBufferSource();
+        click1.buffer = this._createNoiseBuffer(0.02);
+        const hpf1 = this.ctx.createBiquadFilter();
+        hpf1.type = 'highpass';
+        hpf1.frequency.value = 3000;
+        const g1 = this._createSFXGain(vol);
+        click1.connect(hpf1);
+        hpf1.connect(g1);
+        g1.gain.setValueAtTime(vol, now);
+        g1.gain.exponentialRampToValueAtTime(0.001, now + 0.025);
+        click1.start(now);
+        click1.stop(now + 0.03);
+
+        // 미러 업 (약간 더 긴 두번째 클릭)
+        const click2 = this.ctx.createBufferSource();
+        click2.buffer = this._createNoiseBuffer(0.03);
+        const hpf2 = this.ctx.createBiquadFilter();
+        hpf2.type = 'highpass';
+        hpf2.frequency.value = 2000;
+        const g2 = this._createSFXGain(0);
+        click2.connect(hpf2);
+        hpf2.connect(g2);
+        g2.gain.setValueAtTime(vol * 0.7, now + 0.08);
+        g2.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+        click2.start(now + 0.08);
+        click2.stop(now + 0.13);
+    }
+
+    /**
+     * 비명 — 짧고 날카로운 합성 (고주파 톤 스윕)
+     * @private
+     */
+    _synthScream(options = {}) {
+        const vol = options.volume || 0.5;
+        const now = this.ctx.currentTime;
+
+        // 메인 톤 (고주파 스윕)
+        const osc = this.ctx.createOscillator();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(800, now);
+        osc.frequency.linearRampToValueAtTime(1400, now + 0.15);
+        osc.frequency.linearRampToValueAtTime(600, now + 0.6);
+
+        const gain = this._createSFXGain(0);
+        const filter = this.ctx.createBiquadFilter();
+        filter.type = 'bandpass';
+        filter.frequency.value = 1200;
+        filter.Q.value = 2;
+        osc.connect(filter);
+        filter.connect(gain);
+
+        gain.gain.setValueAtTime(0, now);
+        gain.gain.linearRampToValueAtTime(vol, now + 0.03);
+        gain.gain.setValueAtTime(vol * 0.8, now + 0.2);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+
+        osc.start(now);
+        osc.stop(now + 0.6);
+
+        // 잔향 (노이즈 테일)
+        const reverb = this.ctx.createBufferSource();
+        reverb.buffer = this._createNoiseBuffer(0.5);
+        const rGain = this._createSFXGain(0);
+        const lpf = this.ctx.createBiquadFilter();
+        lpf.type = 'lowpass';
+        lpf.frequency.value = 2000;
+        reverb.connect(lpf);
+        lpf.connect(rGain);
+        rGain.gain.setValueAtTime(vol * 0.15, now + 0.1);
+        rGain.gain.exponentialRampToValueAtTime(0.001, now + 0.8);
+        reverb.start(now + 0.1);
+        reverb.stop(now + 0.8);
+    }
+
+    /**
+     * 알림음 — 짧고 귀여운 전자음 띠링
+     * @private
+     */
+    _synthNotification(options = {}) {
+        const vol = options.volume || 0.4;
+        const now = this.ctx.currentTime;
+
+        // 2음 상승 (띠-링)
+        const freqs = [880, 1320]; // A5 → E6
+        freqs.forEach((freq, i) => {
+            const osc = this.ctx.createOscillator();
+            osc.type = 'sine';
+            osc.frequency.value = freq;
+            const gain = this._createSFXGain(0);
+            osc.connect(gain);
+
+            const t = now + i * 0.12;
+            gain.gain.setValueAtTime(0, t);
+            gain.gain.linearRampToValueAtTime(vol, t + 0.01);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 0.2);
+
+            osc.start(t);
+            osc.stop(t + 0.2);
+        });
+    }
+
+    /**
+     * 책 페이지 넘김 — 부드러운 종이 마찰음
+     * @private
+     */
+    _synthPageTurn(options = {}) {
+        const vol = options.volume || 0.25;
+        const now = this.ctx.currentTime;
+
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.3);
+        const bpf = this.ctx.createBiquadFilter();
+        bpf.type = 'bandpass';
+        bpf.frequency.value = 5000;
+        bpf.Q.value = 1;
+        const gain = this._createSFXGain(0);
+        noise.connect(bpf);
+        bpf.connect(gain);
+
+        gain.gain.setValueAtTime(0, now);
+        gain.gain.linearRampToValueAtTime(vol, now + 0.02);
+        gain.gain.linearRampToValueAtTime(vol * 0.7, now + 0.1);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+
+        // 주파수 스윕 (페이지가 넘어가는 느낌)
+        bpf.frequency.setValueAtTime(5000, now);
+        bpf.frequency.linearRampToValueAtTime(8000, now + 0.1);
+        bpf.frequency.linearRampToValueAtTime(3000, now + 0.25);
+
+        noise.start(now);
+        noise.stop(now + 0.3);
+    }
+
+    // =========================================================================
+    // UI 효과음 (버튼 클릭/호버)
+    // =========================================================================
+
+    /**
+     * UI 클릭음 — 짧고 깔끔한 멀티레이어 클릭
+     * 레이어 1: 고주파 사인파 짧은 틱 (2000~3000Hz, 30ms)
+     * 레이어 2: 살짝 낮은 사인파로 따뜻한 느낌 (800~1000Hz, 50ms)
+     * 레이어 3: 아주 미세한 노이즈 텍스처 (20ms)
+     */
+    playUIClick() {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const vol = 0.25;
+
+        // 레이어 1: 고주파 틱 (2500Hz, 30ms)
+        const osc1 = this.ctx.createOscillator();
+        osc1.type = 'sine';
+        osc1.frequency.value = 2500;
+        const g1 = this._createSFXGain(0);
+        osc1.connect(g1);
+        g1.gain.setValueAtTime(0, now);
+        g1.gain.linearRampToValueAtTime(vol * 0.7, now + 0.003);
+        g1.gain.exponentialRampToValueAtTime(0.001, now + 0.03);
+        osc1.start(now);
+        osc1.stop(now + 0.035);
+
+        // 레이어 2: 따뜻한 중저주파 (900Hz, 50ms)
+        const osc2 = this.ctx.createOscillator();
+        osc2.type = 'sine';
+        osc2.frequency.value = 900;
+        const g2 = this._createSFXGain(0);
+        osc2.connect(g2);
+        g2.gain.setValueAtTime(0, now);
+        g2.gain.linearRampToValueAtTime(vol * 0.4, now + 0.005);
+        g2.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+        osc2.start(now);
+        osc2.stop(now + 0.055);
+
+        // 레이어 3: 미세 노이즈 텍스처 (20ms)
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.02);
+        const nGain = this._createSFXGain(0);
+        const hpf = this.ctx.createBiquadFilter();
+        hpf.type = 'highpass';
+        hpf.frequency.value = 4000;
+        noise.connect(hpf);
+        hpf.connect(nGain);
+        nGain.gain.setValueAtTime(vol * 0.08, now);
+        nGain.gain.exponentialRampToValueAtTime(0.001, now + 0.02);
+        noise.start(now);
+        noise.stop(now + 0.025);
+    }
+
+    /**
+     * UI 호버음 — 더 미세한 소프트 틱
+     */
+    playUIHover() {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const vol = 0.1;
+
+        const osc = this.ctx.createOscillator();
+        osc.type = 'sine';
+        osc.frequency.value = 3200;
+        const g = this._createSFXGain(0);
+        osc.connect(g);
+        g.gain.setValueAtTime(0, now);
+        g.gain.linearRampToValueAtTime(vol, now + 0.002);
+        g.gain.exponentialRampToValueAtTime(0.001, now + 0.015);
+        osc.start(now);
+        osc.stop(now + 0.02);
     }
 
     /**

@@ -45,6 +45,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_riin_2": {
         character: null,
+        sfx: "sfx_knock.mp3",
         next: "day3_after_riin_3"
     },
     "day3_after_riin_3": {
@@ -300,6 +301,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_eunsu_peek_5": {
         character: null,
+        sfx: "sfx_page_turn.mp3",
         next: "day3_after_eunsu_peek_6"
     },
     "day3_after_eunsu_peek_6": {
@@ -308,6 +310,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_eunsu_peek_7": {
         character: null,
+        sfx: "sfx_footsteps.mp3",
         next: "day3_after_eunsu_peek_8"
     },
     "day3_after_eunsu_peek_8": {
@@ -344,6 +347,7 @@ Object.assign(SCENARIO[3], {
     "day3_after_alone": {
         background: "old_building_corridor",
         bgm: "tension.mp3",
+        sfx: "sfx_footsteps.mp3",
         character: null,
         next: "day3_after_alone_2"
     },
@@ -365,6 +369,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_alone_6": {
         character: null,
+        sfx: "sfx_static.mp3",
         glitch: { noise: true, noiseDuration: 200 },
         next: "day3_after_alone_7"
     },

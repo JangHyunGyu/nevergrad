@@ -11,6 +11,7 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_start": {
         background: "classroom",
         bgm: "daily_bright.mp3",
+        sfx: "sfx_school_bell.mp3",
         character: null,
         next: "day1_lunch_choice"
     },
@@ -223,6 +224,7 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_riin_1": {
         background: "nurse_office",
         character: null,
+        sfx: "sfx_door_open.mp3",
         next: "day1_lunch_riin_2"
     },
     "day1_lunch_riin_2": {
@@ -301,6 +303,7 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_alone_1": {
         background: "rooftop",
         character: null,
+        sfx: "sfx_wind.mp3",
         next: "day1_lunch_alone_2"
     },
     "day1_lunch_alone_2": {

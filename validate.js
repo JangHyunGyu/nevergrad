@@ -819,7 +819,7 @@ while (bfsQ.length > 0) {
     if (reachable.has(sid) || !allScenes[sid]) continue;
     reachable.add(sid);
     const sc = allScenes[sid].scene;
-    [sc.next, sc.fallback, sc.timeoutNext].forEach(n => { if (n && !reachable.has(n)) bfsQ.push(n); });
+    [sc.next, sc.fallback, sc.timeoutNext, sc.freeTalkNext].forEach(n => { if (n && !reachable.has(n)) bfsQ.push(n); });
     if (allScenes[sid+'_alt'] && !reachable.has(sid+'_alt')) bfsQ.push(sid+'_alt');
     (sc.choices||[]).forEach(c => { if (c.next && !reachable.has(c.next)) bfsQ.push(c.next); });
     (sc.branches||[]).forEach(b => { if (b.next && !reachable.has(b.next)) bfsQ.push(b.next); });
@@ -900,6 +900,7 @@ for (const p of PRESETS) {
             if (sc.branches) nx = resolveBranch(sc.branches, st);
             if (!nx && sc.affinityBranches) nx = resolveAffinityBranch(sc, st);
             if (!nx && sc.next) nx = sc.next;
+            if (!nx && sc.freeTalkNext) nx = sc.freeTalkNext;
             cur = nx; steps++;
         }
         if (reached) break;
@@ -948,6 +949,7 @@ for (const sid of reachable) {
             }
         }
         if (!nx && sc.next) nx = sc.next;
+        if (!nx && sc.freeTalkNext) nx = sc.freeTalkNext;
         cur = nx; steps++;
     }
     if (steps >= 3000) errors.push(`[MAIN_PATH] exceeded 3000 steps — infinite loop?`);
@@ -1037,6 +1039,7 @@ for (const sid of reachable) {
                 }
             }
             if (!nx && sc.next) nx = sc.next;
+            if (!nx && sc.freeTalkNext) nx = sc.freeTalkNext;
             cur = nx; steps++;
         }
     }

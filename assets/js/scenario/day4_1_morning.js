@@ -115,6 +115,7 @@ Object.assign(SCENARIO[4], {
     // 5초, 10초, 숨을 죽였다
     "day4_morning_start_18": {
         character: null,
+        sfx: "sfx_clock_tick.mp3",
         unskippable: true,
         glitch: { silence: true, silenceDuration: 2000 },
         next: "day4_morning_start_19"

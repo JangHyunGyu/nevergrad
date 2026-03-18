@@ -37,6 +37,7 @@ Object.assign(SCENARIO[1], {
     "day1_night_phone_1": {
         character: null,
         night: true,
+        sfx: "sfx_phone_vibrate.mp3",
         next: "day1_night_phone_2"
     },
     "day1_night_phone_2": {

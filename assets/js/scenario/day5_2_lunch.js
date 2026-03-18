@@ -22,6 +22,7 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_chase_1": {
         background: "corridor",
         bgm: "chase.mp3",
+        sfx: "sfx_footsteps_running.mp3",
         character: null,
         glitch: { screenShake: true, noise: true },
         next: "day5_lunch_chase_2"
@@ -135,6 +136,7 @@ Object.assign(SCENARIO[5], {
     // 본관 1층 철문 소리
     "day5_lunch_left_13": {
         character: null,
+        sfx: "sfx_door_slam.mp3",
         glitch: { screenShake: true },
         next: "day5_lunch_left_14"
     },
@@ -485,6 +487,7 @@ Object.assign(SCENARIO[5], {
     // 6초 타이머: 3 choices (타임아웃 = 리인에게 붙잡힘)
     "day5_lunch_right_choice": {
         character: null,
+        sfx: "sfx_scream.mp3",
         timedChoice: 6000,
         choices: [
             { next: "day5_lunch_right_c1_1", setFlags: ["emergency_key"] },

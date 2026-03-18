@@ -34,6 +34,7 @@ Object.assign(SCENARIO[3], {
     // ══════════════════════════════════════
     "day3_lunch_rooftop_1": {
         background: "rooftop",
+        sfx: "sfx_wind.mp3",
         character: "yuna_scared",
         next: "day3_lunch_rooftop_2"
     },
@@ -256,6 +257,7 @@ Object.assign(SCENARIO[3], {
     // ── 잠긴 문 ──
     "day3_lunch_door_1": {
         character: null,
+        sfx: "sfx_door_slam.mp3",
         glitch: { noise: true, noiseDuration: 300 },
         next: "day3_lunch_door_2"
     },

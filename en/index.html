@@ -69,6 +69,23 @@
         </div>
     </div>
 
+    <!-- ===== Gallery Screen ===== -->
+    <div id="gallery-screen" class="screen hidden">
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <span class="gallery-title">Ending Gallery</span>
+                <div class="gallery-progress-area">
+                    <span class="gallery-progress-label">Progress</span>
+                    <span id="gallery-progress">0 / 7</span>
+                </div>
+            </div>
+            <div id="gallery-grid"></div>
+            <div class="gallery-footer">
+                <button id="gallery-back" class="menu-btn">Back</button>
+            </div>
+        </div>
+    </div>
+
     <!-- ===== Name Input Screen ===== -->
     <div id="name-screen" class="screen">
         <div class="name-input-container">
@@ -166,6 +183,17 @@
         </div>
     </div>
 
+    <!-- ===== Loading Screen ===== -->
+    <div id="loading-screen" class="screen hidden">
+        <div class="loading-container">
+            <div class="loading-title">NEVERGRAD</div>
+            <div class="loading-bar-outer">
+                <div id="loading-bar-inner" class="loading-bar-inner"></div>
+            </div>
+            <div id="loading-text" class="loading-text">Loading...</div>
+        </div>
+    </div>
+
     <!-- ===== Rotate Prompt ===== -->
     <div id="rotate-prompt" class="rotate-prompt">
         <div class="rotate-icon">📱</div>
@@ -220,6 +248,7 @@
     <script src="../assets/js/modules/DeviceGimmickSystem.js"></script>
     <script src="../assets/js/modules/CrossoverSystem.js"></script>
     <script src="../assets/js/modules/MetaHorrorSystem.js"></script>
+    <script src="../assets/js/modules/GallerySystem.js"></script>
     <script src="../assets/js/modules/GameEngine.js"></script>
 
     <!-- App Entry -->

@@ -101,6 +101,7 @@ Object.assign(SCENARIO[1], {
     "day1_hallway_1": {
         character: null,
         background: "hallway",
+        sfx: "sfx_footsteps.mp3",
         next: "day1_hallway_2"
     },
     // L111: *안내판을 봐도 교실 위치가 헷갈린다...*
@@ -387,6 +388,7 @@ Object.assign(SCENARIO[1], {
     // L216: *문을 열고 들어서니...*
     "day1_classroom_2": {
         character: null,
+        sfx: "sfx_door_open.mp3",
         next: "day1_classroom_3"
     },
     // L218: *...긴장된다. 웅성웅성...*
@@ -695,6 +697,7 @@ Object.assign(SCENARIO[1], {
     // L348: *유나가 운동장 구석에서 카메라를 들고 있다.*
     "day1_pe_4": {
         character: null,
+        sfx: "sfx_camera_shutter.mp3",
         next: "day1_morning_end"
     },
 

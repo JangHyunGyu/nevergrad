@@ -119,6 +119,14 @@ class GameEngine {
         // FreeTalk 입력
         const ftInput = document.getElementById('ft-input');
         if (ftInput) ftInput.placeholder = ui('ftPlaceholder');
+
+        // 갤러리 화면
+        const galleryTitle = document.querySelector('.gallery-title');
+        const galleryBack = document.getElementById('gallery-back');
+        const galleryProgressLabel = document.querySelector('.gallery-progress-label');
+        if (galleryTitle) galleryTitle.textContent = ui('galleryTitle');
+        if (galleryBack) galleryBack.textContent = ui('galleryBack');
+        if (galleryProgressLabel) galleryProgressLabel.textContent = ui('galleryProgress');
     }
 
     // ===== Title Screen =====
@@ -137,12 +145,14 @@ class GameEngine {
         }
 
         document.getElementById('btn-new-game')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
             this._showScreen('name-screen');
         });
 
         document.getElementById('btn-continue')?.addEventListener('click', async () => {
+            this.audio?.playUIClick();
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
             this.save.load();
@@ -150,11 +160,18 @@ class GameEngine {
             if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
             this.glitch.initConsoleEasterEgg(this.state.currentDay);
             if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
-            this._showScreen('game-screen');
+
+            // 이미지 프리로드 후 게임 화면 표시
+            if (this._preloadImages) {
+                await this._preloadImages('game-screen');
+            } else {
+                this._showScreen('game-screen');
+            }
             this._loadScene(this.state.currentScene);
         });
 
-        document.getElementById('btn-start')?.addEventListener('click', () => {
+        document.getElementById('btn-start')?.addEventListener('click', async () => {
+            this.audio?.playUIClick();
             const name = document.getElementById('player-name-input')?.value.trim();
             if (!name) return;
 
@@ -167,7 +184,13 @@ class GameEngine {
             if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
 
             this.glitch.initConsoleEasterEgg(1);
-            this._showScreen('game-screen');
+
+            // 이미지 프리로드 후 게임 화면 표시
+            if (this._preloadImages) {
+                await this._preloadImages('game-screen');
+            } else {
+                this._showScreen('game-screen');
+            }
             this._loadScene("day1_opening_1");
         });
     }
@@ -177,6 +200,7 @@ class GameEngine {
     _bindGameScreen() {
         document.getElementById('dialogue-box')?.addEventListener('click', () => {
             if (this._clickLocked) return;
+            this.audio?.playUIClick();
 
             if (this.dialogue.isTyping) {
                 this.dialogue.skipTyping();
@@ -191,15 +215,18 @@ class GameEngine {
 
     _bindPauseMenu() {
         document.getElementById('btn-resume')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
             this._hideOverlay('pause-menu');
         });
 
         document.getElementById('btn-save')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
             this.save.save();
             this._hideOverlay('pause-menu');
         });
 
         document.getElementById('btn-title')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
             this._hideOverlay('pause-menu');
             this._showScreen('title-screen');
         });
@@ -283,6 +310,18 @@ class GameEngine {
         // BGM
         if (scene.bgm) this.renderer.playBGM(scene.bgm);
 
+        // SFX
+        if (scene.sfx) {
+            const sfxList = Array.isArray(scene.sfx) ? scene.sfx : [scene.sfx];
+            sfxList.forEach(s => {
+                if (typeof s === 'string') {
+                    this.audio.playSFX(s);
+                } else if (s && s.file) {
+                    this.audio.playSFX(s.file, { volume: s.volume, playbackRate: s.playbackRate });
+                }
+            });
+        }
+
         // 플래그
         if (scene.setFlag) this.state.setFlag(scene.setFlag);
         if (scene.setFlags) this.state.setFlags(scene.setFlags);
@@ -306,6 +345,8 @@ class GameEngine {
         // 엔딩 타이틀
         if (scene.endingTitle) {
             this._showEndingTitle(scene.endingTitle, scene.endingSubtitle);
+            // 갤러리: 엔딩 달성 기록
+            if (this.gallery) this.gallery.unlockEnding(scene.endingTitle);
         }
 
         // CAGE END 무한 루프 진입
@@ -431,6 +472,7 @@ class GameEngine {
             }
 
             btn.addEventListener('click', () => {
+                this.audio?.playUIClick();
                 panel.classList.add('hidden');
                 if (choice.stats) {
                     for (const [charId, changes] of Object.entries(choice.stats)) {
@@ -663,6 +705,58 @@ class GameEngine {
         const slotName = slots[this.state.currentSlot] || CONFIG.TIME_SLOT_NAMES[this.state.currentSlot] || "";
         const fmt = this.i18n.getUI('dayFormat') || "{day}일차 - {slot}";
         dayEl.textContent = fmt.replace('{day}', this.state.currentDay).replace('{slot}', slotName);
+
+        this._updateStatDisplay();
+    }
+
+    /**
+     * 스탯 표시 UI 업데이트
+     * - romance 모드: 현재 대화 캐릭터의 호감도 (♥)
+     * - thriller 모드: 신뢰도(◈) / 위험도(⚠)
+     */
+    _updateStatDisplay() {
+        const statEl = document.getElementById('stat-display');
+        if (!statEl) return;
+
+        // 현재 씬에서 대화 중인 캐릭터 파악
+        const charKey = this.currentSceneData?.character;
+        let charId = null;
+        if (charKey && typeof charKey === 'string') {
+            const idx = charKey.indexOf('_');
+            charId = idx > 0 ? charKey.substring(0, idx) : charKey;
+        }
+
+        // 캐릭터가 없으면 (나레이션 등) 스탯 숨김
+        if (!charId || !this.state.stats[charId]) {
+            statEl.classList.add('hidden');
+            return;
+        }
+
+        statEl.classList.remove('hidden');
+
+        if (this.state.mode === CONFIG.STAT_MODES.ROMANCE) {
+            // 호감도 모드
+            const aff = this.state.getDisplayAffinity(charId);
+            const label = CONFIG.STAT_LABELS.romance;
+            const newText = `${label.icon} ${label.primary} ${aff}`;
+            if (statEl.textContent !== newText) {
+                statEl.textContent = newText;
+                statEl.classList.remove('stat-bump');
+                void statEl.offsetWidth; // reflow
+                statEl.classList.add('stat-bump');
+            }
+        } else {
+            // 스릴러 모드: 신뢰도 + 위험도
+            const real = this.state.getRealStats(charId);
+            const label = CONFIG.STAT_LABELS.thriller;
+            const newText = `${label.icon_trust} ${label.trust} ${real.trust}  ${label.icon_danger} ${label.danger} ${real.danger}`;
+            if (statEl.textContent !== newText) {
+                statEl.textContent = newText;
+                statEl.classList.remove('stat-bump');
+                void statEl.offsetWidth;
+                statEl.classList.add('stat-bump');
+            }
+        }
     }
 
     // ===== Screen =====
@@ -689,19 +783,22 @@ class GameEngine {
     // ===== Quick Menu =====
 
     _bindQuickMenu() {
-        document.getElementById('qm-auto')?.addEventListener('click', () => this._toggleAuto());
-        document.getElementById('qm-skip')?.addEventListener('click', () => this._toggleSkip());
-        document.getElementById('qm-log')?.addEventListener('click', () => this._showOverlay('backlog-panel'));
+        document.getElementById('qm-auto')?.addEventListener('click', () => { this.audio?.playUIClick(); this._toggleAuto(); });
+        document.getElementById('qm-skip')?.addEventListener('click', () => { this.audio?.playUIClick(); this._toggleSkip(); });
+        document.getElementById('qm-log')?.addEventListener('click', () => { this.audio?.playUIClick(); this._showOverlay('backlog-panel'); });
         document.getElementById('qm-save')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
             this.save.save();
         });
         document.getElementById('qm-load')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
             if (this.save.hasSaveData()) {
                 this.save.load();
                 this._loadScene(this.state.currentScene);
             }
         });
         document.getElementById('qm-menu')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
             this._stopAuto();
             this._stopSkip();
             this._showOverlay('pause-menu');
@@ -773,6 +870,7 @@ class GameEngine {
 
     _bindBacklog() {
         document.getElementById('backlog-close')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
             this._hideOverlay('backlog-panel');
         });
 
@@ -821,7 +919,62 @@ class GameEngine {
     // ===== FreeTalk =====
 
     _startFreeTalk(scene) {
-        console.log('[GameEngine] FreeTalk start:', scene.affinityChar);
+        if (!this.freeTalk) {
+            console.warn('[GameEngine] FreeTalkSystem not registered');
+            return;
+        }
+
+        const mode = scene.freeTalkMode || 'interrogation';
+        const charId = scene.freeTalkChar;
+        const nextScene = scene.freeTalkNext || scene.next;
+
+        if (mode === 'interrogation') {
+            const context = scene.freeTalkContext || '';
+            this.freeTalk.startInterrogation(charId, context, nextScene);
+        } else if (mode === 'messenger') {
+            this.freeTalk.startMessenger(charId);
+            // messenger 모드는 자동으로 다음 씬 진행 안 함 — freeTalkNext로 수동 설정
+            if (nextScene) {
+                this.freeTalk.nextSceneId = nextScene;
+            }
+        } else if (mode === 'messenger_preemptive') {
+            const preMsg = scene.freeTalkPreemptive || '';
+            this.freeTalk.startPreemptiveMessenger(charId, preMsg, nextScene);
+        } else if (mode === 'nightmare') {
+            this._startNightmareSequence(nextScene);
+        } else if (mode === 'ai_chat') {
+            this.freeTalk.startAIChat(scene);
+        }
+    }
+
+    /**
+     * 악몽 시퀀스를 생성하고 순차적으로 표시합니다.
+     * @param {string} nextScene - 악몽 종료 후 이동할 씬 ID
+     */
+    async _startNightmareSequence(nextScene) {
+        if (!this.freeTalk) return;
+
+        const lines = await this.freeTalk.generateNightmare();
+
+        // 악몽 문장을 순차적으로 표시
+        for (let i = 0; i < lines.length; i++) {
+            await new Promise(resolve => {
+                const line = lines[i];
+                // 이탤릭 마크다운 제거 후 나레이션으로 표시
+                const cleanLine = line.replace(/^\*/, '').replace(/\*$/, '');
+                this.dialogue.type('', `*${cleanLine}*`, () => {
+                    setTimeout(resolve, 800);
+                }, { typingSpeed: 50, unskippable: true });
+            });
+        }
+
+        // 악몽 종료 후 다음 씬으로
+        if (nextScene) {
+            setTimeout(() => {
+                this.freeTalk.cleanup();
+                this._loadScene(nextScene);
+            }, 1500);
+        }
     }
 
     // ===== CAGE END — 무한 루프 새장 =====

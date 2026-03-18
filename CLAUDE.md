@@ -66,6 +66,13 @@
 - 생성 순서: 캐릭터는 시나리오 등장순(은수→세아→리인→유나→설화), 배경은 Day 1→5 순
 - config.js의 EXPRESSIONS/BACKGROUNDS alias는 이미지 미존재 시 실제 파일로 fallback
 
+## 사운드(SFX) 규칙
+- Web Audio API로 합성 — 외부 파일 불필요
+- **고퀄리티 필수**: 여러 레이어(오실레이터, 노이즈, 필터, 엔벨로프)를 조합하여 풍부한 사운드 생성
+- Tone.js 스타일의 멀티레이어 합성 지향
+- 버튼 클릭/터치 시 UI 효과음 포함
+- 시나리오 사운드 프롬프트는 PROMPTS_READY.md 참조
+
 ## 기술 환경
 - 웹 브라우저 기반 게임 — localStorage, URL, HTML/CSS/JS만 사용
 - exe, 설치 폴더, 파일 시스템 접근 절대 불가

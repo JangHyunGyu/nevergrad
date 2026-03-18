@@ -248,6 +248,7 @@ Object.assign(SCENARIO[4], {
     "day4_after_sea_12loop_15": {
         // 포옹
         character: "sea_cry",
+        sfx: "sfx_heartbeat_fast.mp3",
         unskippable: true,
         next: "day4_after_sea_12loop_16"
     },
@@ -273,8 +274,30 @@ Object.assign(SCENARIO[4], {
         character: "sea_cry",
         unskippable: true,
         glitch: { noise: true },
-        next: "day4_after_end",
+        next: "day4_after_ft_sea_pre",
         setFlags: ["sea_12loop_confession"]
+    },
+
+    // ═══════════════════════════════════════
+    // ★ 세아 심문 (FreeTalk 감정적 조종)
+    // 12번의 고백 후, 세아가 마지막으로 붙잡으며 자유 입력
+    // ═══════════════════════════════════════
+    "day4_after_ft_sea_pre": {
+        character: "sea_cry",
+        next: "day4_after_ft_sea"
+    },
+    "day4_after_ft_sea": {
+        character: "sea_cry",
+        type: "free_talk",
+        freeTalkMode: "interrogation",
+        freeTalkChar: "sea",
+        freeTalkContext: "12번의 반복 고백 후, 주인공이 떠나려 한다",
+        freeTalkNext: "day4_after_ft_sea_post"
+    },
+    "day4_after_ft_sea_post": {
+        character: "sea_sad",
+        stats: { sea: { danger: 10 } },
+        next: "day4_after_end"
     },
 
     // ═══════════════════════════════════════

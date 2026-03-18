@@ -33,6 +33,54 @@ function requestMobileFullscreen() {
     // iOS Safari: Fullscreen API 미지원 — PWA standalone + viewport meta로 대응
 }
 
+/**
+ * 이미지 프리로더 — CONFIG.EXPRESSIONS + CONFIG.BACKGROUNDS에서 고유 경로 수집 후 프리로드
+ * @param {function(number, number)} onProgress - (loaded, total) 콜백
+ * @returns {Promise<void>}
+ */
+function preloadGameImages(onProgress) {
+    // 고유 이미지 경로 수집
+    const pathSet = new Set();
+
+    // 캐릭터 표정 이미지
+    for (const charExps of Object.values(CONFIG.EXPRESSIONS)) {
+        for (const path of Object.values(charExps)) {
+            if (path) pathSet.add(path);
+        }
+    }
+
+    // 배경 이미지
+    for (const path of Object.values(CONFIG.BACKGROUNDS)) {
+        if (path) pathSet.add(path);
+    }
+
+    const paths = [...pathSet];
+    const total = paths.length;
+    let loaded = 0;
+
+    if (total === 0) {
+        onProgress?.(0, 0);
+        return Promise.resolve();
+    }
+
+    return new Promise((resolve) => {
+        let settled = 0;
+        const settle = () => {
+            settled++;
+            loaded++;
+            onProgress?.(loaded, total);
+            if (settled >= total) resolve();
+        };
+
+        paths.forEach((src) => {
+            const img = new Image();
+            img.onload = settle;
+            img.onerror = settle; // 실패해도 진행
+            img.src = src;
+        });
+    });
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     // 타이틀 배경 이미지 로드 체크 — 이미지 없으면 CSS 그라디언트 폴백
     const titleBgLayer = document.querySelector('.title-bg-layer');
@@ -55,8 +103,53 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 메타 공포 시스템 초기화
     game.metaHorror = new MetaHorrorSystem(game);
 
+    // AI 프리토킹 시스템 초기화
+    game.freeTalk = new FreeTalkSystem(game);
+
+    // 갤러리 시스템 초기화
+    game.gallery = new GallerySystem(game);
+
     // 엔진 초기화 (i18n 로드, UI 바인딩)
     await game.init();
+
+    // 갤러리 이벤트 바인딩 (init 후 — UI locale이 적용된 후)
+    game.gallery.bind();
+
+    // 이미지 프리로드 기능을 엔진에 등록
+    game._preloadImages = async function(afterScreen) {
+        // 이미 프리로드 완료된 경우 스킵
+        if (game._imagesPreloaded) {
+            game._showScreen(afterScreen);
+            return;
+        }
+
+        const loadingScreen = document.getElementById('loading-screen');
+        const bar = document.getElementById('loading-bar-inner');
+        const text = document.getElementById('loading-text');
+
+        // 로딩 화면 표시
+        document.querySelectorAll('.screen').forEach(s => {
+            s.classList.remove('active');
+            s.classList.add('hidden');
+        });
+        if (loadingScreen) {
+            loadingScreen.classList.remove('hidden');
+            loadingScreen.classList.add('active');
+        }
+
+        await preloadGameImages((loaded, total) => {
+            if (bar) bar.style.width = `${Math.round((loaded / total) * 100)}%`;
+            if (text) text.textContent = `${loaded} / ${total}`;
+        });
+
+        game._imagesPreloaded = true;
+
+        // 잠시 대기 (100% 표시 유지)
+        await new Promise(r => setTimeout(r, 300));
+
+        // 로딩 화면 숨기고 목표 화면 표시
+        game._showScreen(afterScreen);
+    };
 
     // 전역 접근 (디버그용)
     window.__game = game;

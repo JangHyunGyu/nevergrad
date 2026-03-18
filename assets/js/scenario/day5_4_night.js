@@ -534,6 +534,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_cage_eunsu_1": {
         background: "classroom",
         bgm: "ending_dark.mp3",
+        sfx: "sfx_door_slam.mp3",
         character: "eunsu_normal",
         next: "day5_ending_cage_eunsu_2"
     },
@@ -772,6 +773,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_ghost_1": {
         background: "emergency_exit",
         bgm: "ending_ghost.mp3",
+        sfx: "sfx_whisper.mp3",
         character: null,
         glitch: { heavyGlitch: true },
         next: "day5_ending_ghost_2"

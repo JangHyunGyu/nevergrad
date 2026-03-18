@@ -190,7 +190,8 @@ class I18nManager {
             save: "저장", load: "불러오기", settings: "설정", toTitle: "타이틀로", resume: "돌아가기",
             ftPlaceholder: "대화를 입력하세요...", ftSend: "전송",
             dayFormat: "{day}일차 - {slot}",
-            slots: { morning: "아침", lunch: "점심", afterschool: "방과후", night: "밤" }
+            slots: { morning: "아침", lunch: "점심", afterschool: "방과후", night: "밤" },
+            galleryTitle: "엔딩 갤러리", galleryBack: "돌아가기", galleryProgress: "달성률"
         },
         en: {
             title: "The Classroom of No Graduation", subtitle: "5 Days Record",
@@ -201,7 +202,8 @@ class I18nManager {
             save: "Save", load: "Load", settings: "Settings", toTitle: "Title", resume: "Resume",
             ftPlaceholder: "Type a message...", ftSend: "Send",
             dayFormat: "Day {day} - {slot}",
-            slots: { morning: "Morning", lunch: "Lunch", afterschool: "After School", night: "Night" }
+            slots: { morning: "Morning", lunch: "Lunch", afterschool: "After School", night: "Night" },
+            galleryTitle: "Ending Gallery", galleryBack: "Back", galleryProgress: "Progress"
         },
         ja: {
             title: "卒業できない教室", subtitle: "5日間の記録",
@@ -212,7 +214,8 @@ class I18nManager {
             save: "セーブ", load: "ロード", settings: "設定", toTitle: "タイトルへ", resume: "戻る",
             ftPlaceholder: "メッセージを入力...", ftSend: "送信",
             dayFormat: "{day}日目 - {slot}",
-            slots: { morning: "朝", lunch: "昼", afterschool: "放課後", night: "夜" }
+            slots: { morning: "朝", lunch: "昼", afterschool: "放課後", night: "夜" },
+            galleryTitle: "エンディングギャラリー", galleryBack: "戻る", galleryProgress: "達成率"
         },
         es: {
             title: "El Aula Sin Graduación", subtitle: "Registro de 5 Días",
@@ -223,7 +226,8 @@ class I18nManager {
             save: "Guardar", load: "Cargar", settings: "Ajustes", toTitle: "Título", resume: "Volver",
             ftPlaceholder: "Escribe un mensaje...", ftSend: "Enviar",
             dayFormat: "Día {day} - {slot}",
-            slots: { morning: "Mañana", lunch: "Almuerzo", afterschool: "Después de Clases", night: "Noche" }
+            slots: { morning: "Mañana", lunch: "Almuerzo", afterschool: "Después de Clases", night: "Noche" },
+            galleryTitle: "Galería de Finales", galleryBack: "Volver", galleryProgress: "Progreso"
         },
         fr: {
             title: "La Classe Sans Diplôme", subtitle: "Chronique de 5 Jours",
@@ -234,7 +238,8 @@ class I18nManager {
             save: "Sauvegarder", load: "Charger", settings: "Paramètres", toTitle: "Titre", resume: "Retour",
             ftPlaceholder: "Écrivez un message...", ftSend: "Envoyer",
             dayFormat: "Jour {day} - {slot}",
-            slots: { morning: "Matin", lunch: "Midi", afterschool: "Après les Cours", night: "Nuit" }
+            slots: { morning: "Matin", lunch: "Midi", afterschool: "Après les Cours", night: "Nuit" },
+            galleryTitle: "Galerie des Fins", galleryBack: "Retour", galleryProgress: "Progression"
         },
         de: {
             title: "Das Klassenzimmer ohne Abschluss", subtitle: "Aufzeichnung von 5 Tagen",
@@ -245,7 +250,8 @@ class I18nManager {
             save: "Speichern", load: "Laden", settings: "Einstellungen", toTitle: "Titelbildschirm", resume: "Zurück",
             ftPlaceholder: "Nachricht eingeben...", ftSend: "Senden",
             dayFormat: "Tag {day} - {slot}",
-            slots: { morning: "Morgen", lunch: "Mittag", afterschool: "Nach der Schule", night: "Nacht" }
+            slots: { morning: "Morgen", lunch: "Mittag", afterschool: "Nach der Schule", night: "Nacht" },
+            galleryTitle: "Ending-Galerie", galleryBack: "Zurück", galleryProgress: "Fortschritt"
         }
     };
 

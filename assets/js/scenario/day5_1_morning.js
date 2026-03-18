@@ -193,23 +193,23 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_15"
     },
     "day5_morning_rescue_15": {
-        character: "yuna_normal",
+        character: "yuna_weak",
         next: "day5_morning_rescue_16"
     },
     "day5_morning_rescue_16": {
-        character: "yuna_normal",
+        character: "yuna_weak",
         next: "day5_morning_rescue_17"
     },
     "day5_morning_rescue_17": {
-        character: "yuna_normal",
+        character: "yuna_weak",
         next: "day5_morning_rescue_18"
     },
     "day5_morning_rescue_18": {
-        character: "yuna_normal",
+        character: "yuna_weak",
         next: "day5_morning_rescue_19"
     },
     "day5_morning_rescue_19": {
-        character: "yuna_normal",
+        character: "yuna_weak",
         next: "day5_morning_rescue_20"
     },
     "day5_morning_rescue_20": {
@@ -403,7 +403,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_14"
     },
     "day5_morning_broadcast_14": {
-        character: "yuna_normal",
+        character: "yuna_weak",
         next: "day5_morning_broadcast_15"
     },
     "day5_morning_broadcast_15": {

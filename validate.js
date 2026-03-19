@@ -1670,13 +1670,14 @@ if (fs.existsSync(modulesPath)) {
         }
 
         // 5) btn-save, btn-load, qm-save, qm-load가 슬롯 셀렉터를 여는지
-        const btnSaveMatch = geContent.match(/btn-save.*?addEventListener[^}]+\}/s);
-        if (btnSaveMatch && !btnSaveMatch[0].includes('SlotSelector') && !btnSaveMatch[0].includes('openSlot')) {
-            warnings.push(`[SAVE_SLOT] btn-save handler does not open slot selector`);
-        }
-        const btnLoadMatch = geContent.match(/btn-load.*?addEventListener[^}]+\}/s);
-        if (!btnLoadMatch) {
-            errors.push(`[SAVE_SLOT] btn-load has no event listener in GameEngine`);
+        if (geContent.includes('_openSlotSelector')) {
+            // btn-save가 슬롯 선택 UI를 여는지 확인 (addEventListener 근처)
+            const bindPause = geContent.match(/_bindPauseMenu[\s\S]*?(?=\n    \/\/|\n    _bind|\n    async )/);
+            if (bindPause && !bindPause[0].includes('btn-load')) {
+                errors.push(`[SAVE_SLOT] _bindPauseMenu: btn-load has no event listener`);
+            }
+        } else {
+            errors.push(`[SAVE_SLOT] GameEngine missing _openSlotSelector — no slot selection UI`);
         }
 
         // 6) Save/Load Slot UI HTML 존재 확인

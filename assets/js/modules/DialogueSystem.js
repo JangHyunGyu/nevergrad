@@ -17,6 +17,20 @@ class DialogueSystem {
     }
 
     /**
+     * 마크다운 텍스트 서식을 HTML로 변환
+     * **bold** → <strong>bold</strong>
+     * *italic* → <em>italic</em>
+     * 반드시 ** 를 먼저 처리해야 * 와 충돌하지 않음
+     */
+    _formatText(text) {
+        // 1) **bold** → <strong>
+        let result = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        // 2) *italic* → <em>  (이미 <strong>으로 변환된 부분은 건드리지 않음)
+        result = result.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        return result;
+    }
+
+    /**
      * 이름 + 대사를 타이핑 효과로 출력
      * @param {string} name - 화자 이름
      * @param {string} text - 대사 텍스트
@@ -49,19 +63,61 @@ class DialogueSystem {
             }
         }
 
+        // 마크다운 마커(* **)를 제거한 순수 텍스트 + 서식 완성 HTML
+        const plainText = displayText.replace(/\*\*(.+?)\*\*/g, '$1').replace(/\*(.+?)\*/g, '$1');
+        const formattedFull = this._formatText(displayText);
+
         let idx = 0;
         const speed = options.typingSpeed || CONFIG.TYPING_SPEED;
 
         this._typeTimer = setInterval(() => {
-            if (idx < displayText.length) {
+            if (idx < plainText.length) {
                 if (this.textEl) {
-                    this.textEl.textContent += displayText[idx];
+                    // 순수 텍스트 idx 글자까지 잘라서 보여줘야 하지만,
+                    // 서식을 유지하려면 원본 마크다운 기준으로 자르고 변환해야 함
+                    const partialPlain = plainText.slice(0, idx + 1);
+                    // 원본 displayText에서 plainText idx+1 글자에 해당하는 위치 찾기
+                    const partialSource = this._sliceByPlainLength(displayText, idx + 1);
+                    this.textEl.innerHTML = this._formatText(partialSource);
                 }
                 idx++;
             } else {
+                if (this.textEl) {
+                    this.textEl.innerHTML = formattedFull;
+                }
                 this._finishTyping();
             }
         }, speed);
+    }
+
+    /**
+     * 마크다운 마커(* **)를 무시하고 순수 글자 count개 만큼의 원본 문자열 잘라내기
+     * 마커가 잘리지 않도록 경계 보정
+     */
+    _sliceByPlainLength(source, count) {
+        let plain = 0;
+        let i = 0;
+        while (i < source.length && plain < count) {
+            // ** 패턴 감지 (열기/닫기 마커)
+            if (source[i] === '*' && i + 1 < source.length && source[i + 1] === '*') {
+                // ** 마커 → 통째로 포함
+                i += 2;
+                continue;
+            }
+            // * 패턴 감지 (단일 마커)
+            if (source[i] === '*') {
+                i += 1;
+                continue;
+            }
+            // 일반 글자
+            plain++;
+            i++;
+        }
+        // 남은 마커(*  **)가 있으면 포함시켜 태그가 깨지지 않게 함
+        while (i < source.length && source[i] === '*') {
+            i++;
+        }
+        return source.slice(0, i);
     }
 
     skipTyping() {
@@ -73,7 +129,7 @@ class DialogueSystem {
         const displayText = isNarration ? this._fullText.slice(1, -1) : this._fullText;
 
         if (this.textEl) {
-            this.textEl.textContent = displayText;
+            this.textEl.innerHTML = this._formatText(displayText);
             if (isNarration) {
                 this.textEl.classList.add('narration');
                 if (this.nameEl) this.nameEl.classList.add('hidden');

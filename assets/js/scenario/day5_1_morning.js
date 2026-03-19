@@ -142,6 +142,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_rescue_2": {
         character: "yuna_weak",
+        branches: [
+            { condition: "met_yuna", next: "day5_morning_rescue_3" }
+        ],
+        next: "day5_morning_rescue_2_unknown"
+    },
+    // ── met_yuna 미충족: 모르는 여학생 — 한 씬 후 합류 ──
+    "day5_morning_rescue_2_unknown": {
+        character: "yuna_weak",
         next: "day5_morning_rescue_3"
     },
     "day5_morning_rescue_3": {

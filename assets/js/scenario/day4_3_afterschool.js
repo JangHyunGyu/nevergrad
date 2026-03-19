@@ -32,7 +32,7 @@ Object.assign(SCENARIO[4], {
     // Cupid 미플레이 → fallback(짧은 버전)으로 분기
     // ═══════════════════════════════════════
     "day4_xover_yuna_1": {
-        condition: "cupid_played",
+        condition: ["cupid_played", "met_yuna"],
         fallback: "day4_xover_yuna_skip",
         background: "corridor",
         character: "yuna_cautious",
@@ -76,8 +76,18 @@ Object.assign(SCENARIO[4], {
         setFlags: ["xover_yuna_d4"],
         next: "day4_after_choice"
     },
-    // ── Cupid 미플레이어용 짧은 버전 ──
+    // ── Cupid 미플레이어 또는 유나 미조우 플레이어용 짧은 버전 ──
     "day4_xover_yuna_skip": {
+        background: "corridor",
+        branches: [
+            { condition: "met_yuna", next: "day4_xover_yuna_skip_met" }
+        ],
+        // met_yuna 미충족 시: 유나를 모르는 상태이므로 스프라이트 없이 스킵
+        character: null,
+        next: "day4_after_choice"
+    },
+    // ── met_yuna는 있지만 cupid_played가 없는 경우 ──
+    "day4_xover_yuna_skip_met": {
         background: "corridor",
         character: "yuna_normal",
         next: "day4_xover_yuna_skip_2"
@@ -96,7 +106,7 @@ Object.assign(SCENARIO[4], {
         choices: [
             { next: "day4_after_sea_route", stats: { sea: { affinity: 10 } } },
             { next: "day4_after_eunsu_route", stats: { eunsu: { affinity: 10 } } },
-            { next: "day4_after_riin_route", stats: { riin: { affinity: 10 } } }
+            { next: "day4_after_riin_route", stats: { riin: { affinity: 10 } }, condition: "met_riin" }
         ]
     },
 

@@ -1712,68 +1712,385 @@ class AudioManager {
      * 레이어 2: 살짝 낮은 사인파로 따뜻한 느낌 (800~1000Hz, 50ms)
      * 레이어 3: 아주 미세한 노이즈 텍스처 (20ms)
      */
+    /**
+     * UI 클릭 — 부드러운 버블 팝 + 미세한 글라스 공명
+     * 메뉴 버튼, 일반 UI 인터랙션용
+     */
     playUIClick() {
         if (!this.ctx) return;
         const now = this.ctx.currentTime;
-        const vol = 0.25;
+        const vol = 0.22;
 
-        // 레이어 1: 고주파 틱 (2500Hz, 30ms)
+        // 리버브용 짧은 딜레이 (공간감)
+        const dly = this.ctx.createDelay(0.2);
+        dly.delayTime.value = 0.06;
+        const dlyG = this._createSFXGain(0.08);
+        dly.connect(dlyG);
+
+        const master = this._createSFXGain(1);
+        master.connect(dly);
+
+        // 레이어 1: 버블 팝 — 짧은 피치 드롭 (물방울 느낌)
         const osc1 = this.ctx.createOscillator();
         osc1.type = 'sine';
-        osc1.frequency.value = 2500;
-        const g1 = this._createSFXGain(0);
-        osc1.connect(g1);
+        osc1.frequency.setValueAtTime(2800, now);
+        osc1.frequency.exponentialRampToValueAtTime(1800, now + 0.015);
+        const g1 = this.ctx.createGain();
         g1.gain.setValueAtTime(0, now);
-        g1.gain.linearRampToValueAtTime(vol * 0.7, now + 0.003);
-        g1.gain.exponentialRampToValueAtTime(0.001, now + 0.03);
-        osc1.start(now);
-        osc1.stop(now + 0.035);
+        g1.gain.linearRampToValueAtTime(vol * 0.8, now + 0.002);
+        g1.gain.exponentialRampToValueAtTime(vol * 0.15, now + 0.025);
+        g1.gain.exponentialRampToValueAtTime(0.001, now + 0.06);
+        osc1.connect(g1); g1.connect(master);
+        osc1.start(now); osc1.stop(now + 0.065);
 
-        // 레이어 2: 따뜻한 중저주파 (900Hz, 50ms)
+        // 레이어 2: 따뜻한 바디 (부드러운 중음)
         const osc2 = this.ctx.createOscillator();
         osc2.type = 'sine';
-        osc2.frequency.value = 900;
-        const g2 = this._createSFXGain(0);
-        osc2.connect(g2);
+        osc2.frequency.setValueAtTime(1100, now);
+        osc2.frequency.exponentialRampToValueAtTime(900, now + 0.02);
+        const g2 = this.ctx.createGain();
         g2.gain.setValueAtTime(0, now);
-        g2.gain.linearRampToValueAtTime(vol * 0.4, now + 0.005);
-        g2.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
-        osc2.start(now);
-        osc2.stop(now + 0.055);
+        g2.gain.linearRampToValueAtTime(vol * 0.35, now + 0.004);
+        g2.gain.exponentialRampToValueAtTime(0.001, now + 0.045);
+        osc2.connect(g2); g2.connect(master);
+        osc2.start(now); osc2.stop(now + 0.05);
 
-        // 레이어 3: 미세 노이즈 텍스처 (20ms)
+        // 레이어 3: 미세 노이즈 텍스처 (공기감)
         const noise = this.ctx.createBufferSource();
-        noise.buffer = this._createNoiseBuffer(0.02);
-        const nGain = this._createSFXGain(0);
-        const hpf = this.ctx.createBiquadFilter();
-        hpf.type = 'highpass';
-        hpf.frequency.value = 4000;
-        noise.connect(hpf);
-        hpf.connect(nGain);
-        nGain.gain.setValueAtTime(vol * 0.08, now);
-        nGain.gain.exponentialRampToValueAtTime(0.001, now + 0.02);
-        noise.start(now);
-        noise.stop(now + 0.025);
+        noise.buffer = this._createNoiseBuffer(0.018);
+        const nbpf = this.ctx.createBiquadFilter();
+        nbpf.type = 'bandpass';
+        nbpf.frequency.value = 6000;
+        nbpf.Q.value = 2;
+        const nG = this.ctx.createGain();
+        nG.gain.setValueAtTime(vol * 0.06, now);
+        nG.gain.exponentialRampToValueAtTime(0.001, now + 0.018);
+        noise.connect(nbpf); nbpf.connect(nG); nG.connect(master);
+        noise.start(now); noise.stop(now + 0.02);
+
+        // 레이어 4: 서브 하모닉 (따스한 울림)
+        const sub = this.ctx.createOscillator();
+        sub.type = 'sine';
+        sub.frequency.value = 440;
+        const sg = this.ctx.createGain();
+        sg.gain.setValueAtTime(0, now);
+        sg.gain.linearRampToValueAtTime(vol * 0.12, now + 0.005);
+        sg.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+        sub.connect(sg); sg.connect(master);
+        sub.start(now); sub.stop(now + 0.045);
     }
 
     /**
-     * UI 호버음 — 더 미세한 소프트 틱
+     * 대화 넘기기 — 종이 스치는 듯한 부드러운 틱
+     * 대화창 클릭/터치 시 사용
+     */
+    playUIDialogueAdvance() {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const vol = 0.12;
+
+        const master = this._createSFXGain(1);
+
+        // 레이어 1: 소프트 틱 (높은 사인파, 매우 짧음)
+        const osc = this.ctx.createOscillator();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(3400, now);
+        osc.frequency.exponentialRampToValueAtTime(2600, now + 0.008);
+        const g1 = this.ctx.createGain();
+        g1.gain.setValueAtTime(0, now);
+        g1.gain.linearRampToValueAtTime(vol, now + 0.001);
+        g1.gain.exponentialRampToValueAtTime(vol * 0.1, now + 0.012);
+        g1.gain.exponentialRampToValueAtTime(0.001, now + 0.025);
+        osc.connect(g1); g1.connect(master);
+        osc.start(now); osc.stop(now + 0.03);
+
+        // 레이어 2: 종이 러스틀 (밴드패스 노이즈, 짧고 부드러움)
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.02);
+        const bpf = this.ctx.createBiquadFilter();
+        bpf.type = 'bandpass';
+        bpf.frequency.value = 5500;
+        bpf.Q.value = 3;
+        const nG = this.ctx.createGain();
+        nG.gain.setValueAtTime(vol * 0.15, now);
+        nG.gain.exponentialRampToValueAtTime(0.001, now + 0.015);
+        noise.connect(bpf); bpf.connect(nG); nG.connect(master);
+        noise.start(now); noise.stop(now + 0.02);
+    }
+
+    /**
+     * 선택지 선택 — 결정적인 확인음 (글로켄슈필 톤)
+     * 선택지 버튼 클릭 시 사용
+     */
+    playUIChoiceSelect() {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const vol = 0.2;
+
+        // 공명 딜레이
+        const dly = this.ctx.createDelay(0.3);
+        dly.delayTime.value = 0.1;
+        const dlyG = this._createSFXGain(0.12);
+        dly.connect(dlyG);
+
+        const master = this._createSFXGain(1);
+        master.connect(dly);
+
+        // 메인 톤 (C6 → E6 피치 라이즈 — 결정/확인 느낌)
+        const osc1 = this.ctx.createOscillator();
+        osc1.type = 'sine';
+        osc1.frequency.setValueAtTime(1047, now);  // C6
+        osc1.frequency.linearRampToValueAtTime(1319, now + 0.04); // E6
+        const g1 = this.ctx.createGain();
+        g1.gain.setValueAtTime(0, now);
+        g1.gain.linearRampToValueAtTime(vol, now + 0.003);
+        g1.gain.exponentialRampToValueAtTime(vol * 0.3, now + 0.08);
+        g1.gain.exponentialRampToValueAtTime(0.001, now + 0.2);
+        osc1.connect(g1); g1.connect(master);
+        osc1.start(now); osc1.stop(now + 0.22);
+
+        // 고음 배음 (글로켄슈필 비정수 배음)
+        const osc2 = this.ctx.createOscillator();
+        osc2.type = 'sine';
+        osc2.frequency.value = 1319 * 2.76; // E6의 비정수 배음
+        const g2 = this.ctx.createGain();
+        g2.gain.setValueAtTime(0, now);
+        g2.gain.linearRampToValueAtTime(vol * 0.15, now + 0.003);
+        g2.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+        osc2.connect(g2); g2.connect(master);
+        osc2.start(now); osc2.stop(now + 0.12);
+
+        // 부드러운 바디 (하모닉 서스테인)
+        const osc3 = this.ctx.createOscillator();
+        osc3.type = 'sine';
+        osc3.frequency.value = 659; // E5 (옥타브 아래)
+        const g3 = this.ctx.createGain();
+        g3.gain.setValueAtTime(0, now);
+        g3.gain.linearRampToValueAtTime(vol * 0.1, now + 0.01);
+        g3.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+        osc3.connect(g3); g3.connect(master);
+        osc3.start(now); osc3.stop(now + 0.16);
+
+        // 말렛 어택 트랜지언트
+        const n = this.ctx.createBufferSource();
+        n.buffer = this._createNoiseBuffer(0.006);
+        const nG = this.ctx.createGain();
+        nG.gain.setValueAtTime(vol * 0.25, now);
+        nG.gain.exponentialRampToValueAtTime(0.001, now + 0.006);
+        const hpf = this.ctx.createBiquadFilter();
+        hpf.type = 'highpass';
+        hpf.frequency.value = 5000;
+        n.connect(hpf); hpf.connect(nG); nG.connect(master);
+        n.start(now); n.stop(now + 0.008);
+    }
+
+    /**
+     * 저장 완료 — 부드러운 상승 2음 (확인/완료 느낌)
+     */
+    playUISaveConfirm() {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const vol = 0.18;
+
+        const dly = this.ctx.createDelay(0.2);
+        dly.delayTime.value = 0.08;
+        const dlyG = this._createSFXGain(0.1);
+        dly.connect(dlyG);
+
+        const master = this._createSFXGain(1);
+        master.connect(dly);
+
+        // 1음: G5
+        const osc1 = this.ctx.createOscillator();
+        osc1.type = 'sine';
+        osc1.frequency.value = 784;
+        const g1 = this.ctx.createGain();
+        g1.gain.setValueAtTime(0, now);
+        g1.gain.linearRampToValueAtTime(vol, now + 0.003);
+        g1.gain.exponentialRampToValueAtTime(vol * 0.2, now + 0.1);
+        g1.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+        osc1.connect(g1); g1.connect(master);
+        osc1.start(now); osc1.stop(now + 0.2);
+
+        // 배음 shimmer
+        const sh1 = this.ctx.createOscillator();
+        sh1.type = 'sine';
+        sh1.frequency.value = 784 * 2;
+        const shg1 = this.ctx.createGain();
+        shg1.gain.setValueAtTime(0, now);
+        shg1.gain.linearRampToValueAtTime(vol * 0.08, now + 0.005);
+        shg1.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+        sh1.connect(shg1); shg1.connect(master);
+        sh1.start(now); sh1.stop(now + 0.13);
+
+        // 2음: B5 (장3도 위 — 밝고 완료된 느낌)
+        const osc2 = this.ctx.createOscillator();
+        osc2.type = 'sine';
+        osc2.frequency.value = 988;
+        const g2 = this.ctx.createGain();
+        g2.gain.setValueAtTime(0, now + 0.1);
+        g2.gain.linearRampToValueAtTime(vol * 0.9, now + 0.103);
+        g2.gain.exponentialRampToValueAtTime(vol * 0.15, now + 0.22);
+        g2.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+        osc2.connect(g2); g2.connect(master);
+        osc2.start(now + 0.1); osc2.stop(now + 0.37);
+
+        // 배음 shimmer 2
+        const sh2 = this.ctx.createOscillator();
+        sh2.type = 'sine';
+        sh2.frequency.value = 988 * 2;
+        const shg2 = this.ctx.createGain();
+        shg2.gain.setValueAtTime(0, now + 0.1);
+        shg2.gain.linearRampToValueAtTime(vol * 0.06, now + 0.105);
+        shg2.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+        sh2.connect(shg2); shg2.connect(master);
+        sh2.start(now + 0.1); sh2.stop(now + 0.27);
+    }
+
+    /**
+     * 로드 완료 — 하강 후 상승 (복원/되돌림 느낌)
+     */
+    playUILoadConfirm() {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const vol = 0.18;
+
+        const dly = this.ctx.createDelay(0.2);
+        dly.delayTime.value = 0.07;
+        const dlyG = this._createSFXGain(0.1);
+        dly.connect(dlyG);
+
+        const master = this._createSFXGain(1);
+        master.connect(dly);
+
+        // 1음: E5 (살짝 낮은 데서 시작)
+        const osc1 = this.ctx.createOscillator();
+        osc1.type = 'sine';
+        osc1.frequency.value = 659;
+        const g1 = this.ctx.createGain();
+        g1.gain.setValueAtTime(0, now);
+        g1.gain.linearRampToValueAtTime(vol * 0.8, now + 0.003);
+        g1.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+        osc1.connect(g1); g1.connect(master);
+        osc1.start(now); osc1.stop(now + 0.13);
+
+        // 2음: G5 (상승)
+        const osc2 = this.ctx.createOscillator();
+        osc2.type = 'sine';
+        osc2.frequency.value = 784;
+        const g2 = this.ctx.createGain();
+        g2.gain.setValueAtTime(0, now + 0.08);
+        g2.gain.linearRampToValueAtTime(vol, now + 0.083);
+        g2.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+        osc2.connect(g2); g2.connect(master);
+        osc2.start(now + 0.08); osc2.stop(now + 0.27);
+
+        // 3음: C6 (완성 — 옥타브 도달)
+        const osc3 = this.ctx.createOscillator();
+        osc3.type = 'sine';
+        osc3.frequency.value = 1047;
+        const g3 = this.ctx.createGain();
+        g3.gain.setValueAtTime(0, now + 0.16);
+        g3.gain.linearRampToValueAtTime(vol * 0.7, now + 0.163);
+        g3.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+        osc3.connect(g3); g3.connect(master);
+        osc3.start(now + 0.16); osc3.stop(now + 0.37);
+    }
+
+    /**
+     * UI 호버음 — 미세한 에어 틱 (부드러운 포커스)
      */
     playUIHover() {
         if (!this.ctx) return;
         const now = this.ctx.currentTime;
-        const vol = 0.1;
+        const vol = 0.08;
 
+        const master = this._createSFXGain(1);
+
+        // 소프트 사인 (매우 높은 주파수, 극히 짧음)
         const osc = this.ctx.createOscillator();
         osc.type = 'sine';
-        osc.frequency.value = 3200;
-        const g = this._createSFXGain(0);
-        osc.connect(g);
+        osc.frequency.setValueAtTime(4200, now);
+        osc.frequency.exponentialRampToValueAtTime(3600, now + 0.006);
+        const g = this.ctx.createGain();
         g.gain.setValueAtTime(0, now);
-        g.gain.linearRampToValueAtTime(vol, now + 0.002);
-        g.gain.exponentialRampToValueAtTime(0.001, now + 0.015);
-        osc.start(now);
-        osc.stop(now + 0.02);
+        g.gain.linearRampToValueAtTime(vol, now + 0.001);
+        g.gain.exponentialRampToValueAtTime(0.001, now + 0.012);
+        osc.connect(g); g.connect(master);
+        osc.start(now); osc.stop(now + 0.015);
+
+        // 에어 위스프 (밴드패스 노이즈)
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.01);
+        const bpf = this.ctx.createBiquadFilter();
+        bpf.type = 'bandpass';
+        bpf.frequency.value = 8000;
+        bpf.Q.value = 4;
+        const nG = this.ctx.createGain();
+        nG.gain.setValueAtTime(vol * 0.15, now);
+        nG.gain.exponentialRampToValueAtTime(0.001, now + 0.008);
+        noise.connect(bpf); bpf.connect(nG); nG.connect(master);
+        noise.start(now); noise.stop(now + 0.012);
+    }
+
+    /**
+     * 메뉴 열기 — 부드러운 스월 업 (오버레이 등장)
+     */
+    playUIMenuOpen() {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const vol = 0.15;
+
+        const master = this._createSFXGain(1);
+
+        // 스월 업 (낮은→높은 주파수 스윕)
+        const osc = this.ctx.createOscillator();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(600, now);
+        osc.frequency.exponentialRampToValueAtTime(1600, now + 0.06);
+        const g = this.ctx.createGain();
+        g.gain.setValueAtTime(0, now);
+        g.gain.linearRampToValueAtTime(vol * 0.5, now + 0.01);
+        g.gain.exponentialRampToValueAtTime(vol * 0.1, now + 0.06);
+        g.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+        osc.connect(g); g.connect(master);
+        osc.start(now); osc.stop(now + 0.12);
+
+        // 에어 층 (메뉴가 펼쳐지는 느낌)
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.06);
+        const lpf = this.ctx.createBiquadFilter();
+        lpf.type = 'lowpass';
+        lpf.frequency.setValueAtTime(2000, now);
+        lpf.frequency.exponentialRampToValueAtTime(6000, now + 0.04);
+        const nG = this.ctx.createGain();
+        nG.gain.setValueAtTime(vol * 0.08, now);
+        nG.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+        noise.connect(lpf); lpf.connect(nG); nG.connect(master);
+        noise.start(now); noise.stop(now + 0.06);
+    }
+
+    /**
+     * 메뉴 닫기 — 부드러운 스월 다운 (오버레이 퇴장)
+     */
+    playUIMenuClose() {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const vol = 0.12;
+
+        const master = this._createSFXGain(1);
+
+        // 스월 다운
+        const osc = this.ctx.createOscillator();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(1400, now);
+        osc.frequency.exponentialRampToValueAtTime(500, now + 0.05);
+        const g = this.ctx.createGain();
+        g.gain.setValueAtTime(0, now);
+        g.gain.linearRampToValueAtTime(vol * 0.4, now + 0.005);
+        g.gain.exponentialRampToValueAtTime(0.001, now + 0.06);
+        osc.connect(g); g.connect(master);
+        osc.start(now); osc.stop(now + 0.07);
     }
 
     /**

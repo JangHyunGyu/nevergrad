@@ -209,7 +209,7 @@ class GameEngine {
     _bindGameScreen() {
         document.getElementById('dialogue-box')?.addEventListener('click', () => {
             if (this._clickLocked) return;
-            this.audio?.playUIClick();
+            this.audio?.playUIDialogueAdvance();
 
             if (this.dialogue.isTyping) {
                 this.dialogue.skipTyping();
@@ -224,7 +224,7 @@ class GameEngine {
 
     _bindPauseMenu() {
         document.getElementById('btn-resume')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
+            this.audio?.playUIMenuClose();
             this._hideOverlay('pause-menu');
         });
 
@@ -539,7 +539,7 @@ class GameEngine {
             btn.addEventListener('click', () => {
                 if (choiceSelected) return;
                 choiceSelected = true;
-                this.audio?.playUIClick();
+                this.audio?.playUIChoiceSelect();
                 panel.classList.add('hidden');
                 if (choice.stats) {
                     for (const [charId, changes] of Object.entries(choice.stats)) {
@@ -1066,7 +1066,7 @@ class GameEngine {
         const closeBtn = document.getElementById('sl-close');
         if (closeBtn) {
             const handler = () => {
-                this.audio?.playUIClick();
+                this.audio?.playUIMenuClose();
                 this._hideOverlay('sl-overlay');
                 closeBtn.removeEventListener('click', handler);
             };
@@ -1156,11 +1156,13 @@ class GameEngine {
                 this._showSlotConfirm(slotIndex, container);
             } else {
                 this._saveToSlotAndClose(slotIndex);
+                this.audio?.playUISaveConfirm();
             }
         } else {
             // load 모드
             if (!info) return; // 빈 슬롯은 무시
             if (this.save.loadFromSlot(slotIndex)) {
+                this.audio?.playUILoadConfirm();
                 this._endingReached = false;
                 // Cupid 크로스오버 플래그 재설정
                 if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
@@ -1194,7 +1196,7 @@ class GameEngine {
         yesBtn.textContent = this.i18n.getUI('slotYes') || '예';
         yesBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            this.audio?.playUIClick();
+            this.audio?.playUISaveConfirm();
             this._saveToSlotAndClose(slotIndex);
         });
 
@@ -1288,7 +1290,7 @@ class GameEngine {
             this._openSlotSelector('load');
         });
         document.getElementById('qm-menu')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
+            this.audio?.playUIMenuOpen();
             this._stopAuto();
             this._stopSkip();
             this._showOverlay('pause-menu');
@@ -1372,7 +1374,7 @@ class GameEngine {
 
     _bindBacklog() {
         document.getElementById('backlog-close')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
+            this.audio?.playUIMenuClose();
             this._hideOverlay('backlog-panel');
         });
 

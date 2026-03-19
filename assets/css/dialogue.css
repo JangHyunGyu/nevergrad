@@ -303,6 +303,29 @@
     box-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
 }
 
+/* ===== FreeTalk Skip Button (choice-panel 내부) ===== */
+.freetalk-skip-btn {
+    position: absolute;
+    top: -2.5rem;
+    right: 0.5rem;
+    z-index: 15;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.7rem;
+    border: 1px solid rgba(255, 183, 197, 0.25);
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 240, 245, 0.6);
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+    letter-spacing: 0.05em;
+}
+.freetalk-skip-btn:hover {
+    background: rgba(255, 183, 197, 0.15);
+    color: #fff;
+    border-color: rgba(255, 183, 197, 0.5);
+}
+
 /* ===== Messenger Typing Indicator ===== */
 .messenger-typing {
     min-height: 1.5em;

@@ -1087,14 +1087,50 @@ ${memories}
 
         sendBtn.addEventListener('click', handleSend);
 
+        // 스킵 버튼 (대화 건너뛰기)
+        const skipBtn = document.createElement('button');
+        skipBtn.className = 'freetalk-skip-btn';
+        const skipLabels = { ko: 'SKIP ▶▶', en: 'SKIP ▶▶', ja: 'SKIP ▶▶', es: 'SKIP ▶▶', fr: 'SKIP ▶▶', de: 'SKIP ▶▶' };
+        const lang = this.engine.i18n?.currentLang || 'ko';
+        skipBtn.textContent = skipLabels[lang] || 'SKIP ▶▶';
+        skipBtn.addEventListener('click', () => this._skipCurrentMode());
+
         container.appendChild(input);
         container.appendChild(sendBtn);
         panel.appendChild(container);
+        panel.appendChild(skipBtn);
 
         setTimeout(() => input.focus(), 100);
 
         // 모바일: 가상 키보드 회피 (패널 높이를 visual viewport에 맞춤)
         this._attachKeyboardAvoidance('panel');
+    }
+
+    /**
+     * 현재 모드 스킵 (interrogation/messenger/messenger_preemptive)
+     * @private
+     */
+    _skipCurrentMode() {
+        if (this.isWaiting) return;
+
+        const lang = this.engine.i18n?.currentLang || 'ko';
+        const confirmMsg = {
+            ko: '대화를 건너뛰시겠습니까?',
+            en: 'Skip this conversation?',
+            ja: '会話をスキップしますか？',
+            es: '¿Saltar esta conversación?',
+            fr: 'Passer cette conversation ?',
+            de: 'Gespräch überspringen?'
+        };
+
+        if (confirm(confirmMsg[lang] || confirmMsg.ko)) {
+            this._hideInputUI();
+            const nextScene = this.nextSceneId;
+            this.cleanup();
+            if (nextScene && this.engine._loadScene) {
+                this.engine._loadScene(nextScene);
+            }
+        }
     }
 
     _hideInputUI() {

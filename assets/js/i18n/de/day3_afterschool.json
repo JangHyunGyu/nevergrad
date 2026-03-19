@@ -116,25 +116,45 @@
         "name": "Ich",
         "text": "*Es klingt beiläufig, aber in ihrer Stimme liegt Nachdruck. Es ist nicht 'wo warst du?' — es ist eher 'ich weiß schon, wo du warst.'*"
     },
+    "day3_after_sea_noyuna_0": {
+        "name": "",
+        "text": "*Seas Augen lesen mich. Ihr Lächeln bleibt. Aber dieser Blick — das ist Überprüfung.*"
+    },
+    "day3_after_sea_noyuna_0a": {
+        "name": "Han Sea",
+        "text": "\"Warst du allein?\""
+    },
+    "day3_after_sea_noyuna_0b": {
+        "name": "Ich",
+        "text": "\"Ja, hab mich etwas ausgeruht.\""
+    },
+    "day3_after_sea_noyuna_0c": {
+        "name": "",
+        "text": "*Sea neigt den Kopf. Zwei Sekunden. Drei. Ihr Blick löst sich nicht von meinen Augen.*"
+    },
     "day3_after_sea_noyuna": {
-        "name": "Sea",
-        "text": "\"Du wirkst in letzter Zeit anders, {name}.\""
+        "name": "Han Sea",
+        "text": "\"...Du wirkst in letzter Zeit irgendwie anders, {name}.\""
     },
     "day3_after_sea_noyuna_2": {
         "name": "Ich",
-        "text": "\"Anders? Wie meinst du das?\""
+        "text": "\"Inwiefern?\""
     },
     "day3_after_sea_noyuna_3": {
-        "name": "Sea",
-        "text": "\"...Als würdest du dich entfernen? Allein unterwegs, in Gedanken versunken.\""
+        "name": "Han Sea",
+        "text": "\"Weiß nicht. Einfach... als würdest du dich entfernen.\""
     },
     "day3_after_sea_noyuna_4": {
-        "name": "Sea",
-        "text": "\"Wenn du mir etwas verschweigst, sag es mir. Ich kann damit umgehen.\""
+        "name": "Han Sea",
+        "text": "\"...Wenn du mir etwas verschweigst, sag es einfach. Ich bin auf deiner Seite, {name}.\""
     },
     "day3_after_sea_noyuna_5": {
         "name": "Ich",
-        "text": "*Sea lächelt. Ein perfektes Lächeln. So perfekt, dass mir ein Schauer über den Rücken läuft.*"
+        "text": "*Sea lächelt. Ein perfektes Lächeln. So perfekt, dass es mir Gänsehaut macht.*"
+    },
+    "day3_after_sea_noyuna_6": {
+        "name": "Ich",
+        "text": "*...Es sind erst drei Tage, und sie sagt, sie sei 'auf meiner Seite.' Die Worte sind warm, aber irgendwie... schwer.*"
     },
     "day3_after_sea_4": {
         "name": "Han Sea",
@@ -214,7 +234,7 @@
     },
     "day3_after_sea_lie_5": {
         "name": "Han Sea",
-        "text": "\"...Nächstes Mal sei ehrlich zu mir. Ich bin schließlich auf {name}s Seite.\"\n\n*Sea lächelt. Diesmal lächeln auch ihre Augen. Aber dieses Lächeln ist noch beängstigender.*"
+        "text": "\"...Sag es mir nächstes Mal ehrlich. Ich bin auf deiner Seite, {name}.\""
     },
     "day3_after_sea_lie_5a": {
         "name": "Ich",

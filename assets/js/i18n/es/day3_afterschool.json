@@ -116,25 +116,45 @@
         "name": "Yo",
         "text": "*Suena casual, pero hay fuerza en su voz. No es '¿dónde estabas?' — es más cercano a 'ya sé dónde estabas.'*"
     },
+    "day3_after_sea_noyuna_0": {
+        "name": "",
+        "text": "*Los ojos de Sea me están leyendo. Su sonrisa no se mueve. Pero esa mirada... es verificación.*"
+    },
+    "day3_after_sea_noyuna_0a": {
+        "name": "Han Sea",
+        "text": "\"¿Estabas solo?\""
+    },
+    "day3_after_sea_noyuna_0b": {
+        "name": "Yo",
+        "text": "\"Sí, descansando un poco.\""
+    },
+    "day3_after_sea_noyuna_0c": {
+        "name": "",
+        "text": "*Sea inclina la cabeza. Dos segundos. Tres. Su mirada no se aparta de mis ojos.*"
+    },
     "day3_after_sea_noyuna": {
-        "name": "Sea",
-        "text": "\"Últimamente pareces diferente, {name}.\""
+        "name": "Han Sea",
+        "text": "\"...Pareces diferente últimamente, {name}.\""
     },
     "day3_after_sea_noyuna_2": {
         "name": "Yo",
-        "text": "\"¿Diferente? ¿En qué?\""
+        "text": "\"¿En qué?\""
     },
     "day3_after_sea_noyuna_3": {
-        "name": "Sea",
-        "text": "\"...¿Como si te alejaras? Yendo solo a todas partes, perdido en tus pensamientos.\""
+        "name": "Han Sea",
+        "text": "\"No sé. Solo... como si te alejaras.\""
     },
     "day3_after_sea_noyuna_4": {
-        "name": "Sea",
-        "text": "\"Si hay algo que no me estás diciendo, dímelo. Puedo con ello.\""
+        "name": "Han Sea",
+        "text": "\"...Si hay algo que no me estás diciendo, dilo. Estoy de tu lado, {name}.\""
     },
     "day3_after_sea_noyuna_5": {
         "name": "Yo",
-        "text": "*Sea sonríe. Una sonrisa perfecta. Tan perfecta que me recorre un escalofrío por la espalda.*"
+        "text": "*Sea sonríe. Una sonrisa perfecta. Tan perfecta que me da escalofríos.*"
+    },
+    "day3_after_sea_noyuna_6": {
+        "name": "Yo",
+        "text": "*...Solo han pasado tres días y dice que está 'de mi lado.' Las palabras son cálidas, pero de alguna manera... pesadas.*"
     },
     "day3_after_sea_4": {
         "name": "Han Sea",
@@ -214,7 +234,7 @@
     },
     "day3_after_sea_lie_5": {
         "name": "Han Sea",
-        "text": "\"...La próxima vez, sé sincero conmigo. Al fin y al cabo, estoy del lado de {name}.\"\n\n*Sea sonríe. Esta vez sus ojos también sonríen. Pero esa sonrisa es aún más aterradora.*"
+        "text": "\"...La próxima vez, sé honesto conmigo. Estoy de tu lado, {name}.\""
     },
     "day3_after_sea_lie_5a": {
         "name": "Yo",

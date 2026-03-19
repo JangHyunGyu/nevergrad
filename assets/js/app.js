@@ -118,6 +118,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 스크린샷 감지 초기화 (SCENARIO.md 5189-5202)
     game.metaHorror.initScreenshotDetection();
 
+    // BGM 합성 엔진 초기화 (프로시저럴 BGM 생성)
+    const bgmSynth = new BGMSynth();
+    bgmSynth.init(game.audio);
+
     // 바이노럴 오디오 감지 (SCENARIO.md 5174-5185)
     game.audio.detectStereoOutput().then(isStereo => {
         if (isStereo) {

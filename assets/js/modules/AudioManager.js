@@ -171,6 +171,20 @@ class AudioManager {
             return this._bufferCache.get(path);
         }
 
+        // BGM 합성 레지스트리 확인 (파일 fetch 전에 synth 시도)
+        const filename = path.split('/').pop().replace(/\.[^.]+$/, '');
+        if (this._bgmSynthRegistry && this._bgmSynthRegistry[filename]) {
+            try {
+                const buffer = await this._bgmSynthRegistry[filename]();
+                if (buffer) {
+                    this._bufferCache.set(path, buffer);
+                    return buffer;
+                }
+            } catch (e) {
+                console.warn(`[AudioManager] BGM synth failed: ${filename}`, e);
+            }
+        }
+
         try {
             const response = await fetch(path);
             const arrayBuffer = await response.arrayBuffer();

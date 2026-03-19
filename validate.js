@@ -237,10 +237,20 @@ for (const [, { scene }] of Object.entries(allScenes)) {
         bgmUsed.add(scene.bgm);
     }
 }
+// BGMSynth.js에서 합성 레지스트리 키 추출
+const bgmSynthKeys = new Set();
+const bgmSynthPath = path.join(__dirname, 'assets/js/modules/BGMSynth.js');
+if (fs.existsSync(bgmSynthPath)) {
+    const synthSrc = fs.readFileSync(bgmSynthPath, 'utf-8');
+    const regMatches = synthSrc.matchAll(/this\._registry\['([^']+)'\]/g);
+    for (const m of regMatches) bgmSynthKeys.add(m[1]);
+}
 for (const bgm of bgmUsed) {
-    const found = AUDIO_DIRS.some(d => fs.existsSync(path.join(d, bgm)));
-    if (!found) {
-        errors.push(`[BGM_FILE] "${bgm}" not found in audio directories`);
+    const key = bgm.replace(/\.[^.]+$/, ''); // 확장자 제거
+    const inSynth = bgmSynthKeys.has(key);
+    const inFile = AUDIO_DIRS.some(d => fs.existsSync(path.join(d, bgm)));
+    if (!inSynth && !inFile) {
+        errors.push(`[BGM_FILE] "${bgm}" not found in audio directories or BGMSynth registry`);
     }
 }
 

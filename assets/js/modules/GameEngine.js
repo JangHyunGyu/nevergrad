@@ -162,6 +162,7 @@ class GameEngine {
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
             this.save.load();
+            this._endingReached = false;
             // Cupid 크로스오버 플래그 설정 (세이브 데이터에 포함되지 않으므로 매번 감지)
             if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
             this.glitch.initConsoleEasterEgg(this.state.currentDay);
@@ -182,10 +183,11 @@ class GameEngine {
             const name = document.getElementById('player-name-input')?.value.trim();
             if (!name) return;
 
-            this.state.playerName = name;
+            this.state.playerName = this._sanitizeName(name);
             this.state.currentDay = 1;
             this.state.currentSlot = "morning";
             this.state.currentScene = "day1_opening_1";
+            this._endingReached = false;
 
             // Cupid 크로스오버 플래그 설정
             if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
@@ -248,6 +250,10 @@ class GameEngine {
     // ===== Scene Management =====
 
     _loadScene(sceneId) {
+        // 자동저장 (슬롯 0) — 씬 전환 시 현재 상태를 저장
+        this.state.currentScene = sceneId;
+        this.save.save();
+
         const day = this.state.currentDay;
         const dayScenario = SCENARIO[day];
         let scene = dayScenario?.[sceneId];
@@ -513,6 +519,7 @@ class GameEngine {
 
         panel.innerHTML = '';
         panel.classList.remove('hidden');
+        let choiceSelected = false;
 
         choices.forEach((choice, choiceIdx) => {
             if (choice.condition && !this._checkCondition(choice.condition)) return;
@@ -530,6 +537,8 @@ class GameEngine {
             }
 
             btn.addEventListener('click', () => {
+                if (choiceSelected) return;
+                choiceSelected = true;
                 this.audio?.playUIClick();
                 panel.classList.add('hidden');
                 if (choice.stats) {
@@ -1019,6 +1028,13 @@ class GameEngine {
         }, 1500);
     }
 
+    /**
+     * 플레이어 이름 입력값 살균 (XSS 방지)
+     */
+    _sanitizeName(name) {
+        return name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
     // ===== Save/Load Slot Selector =====
 
     /**
@@ -1145,8 +1161,11 @@ class GameEngine {
             // load 모드
             if (!info) return; // 빈 슬롯은 무시
             if (this.save.loadFromSlot(slotIndex)) {
+                this._endingReached = false;
                 // Cupid 크로스오버 플래그 재설정
                 if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
+                this.glitch.initConsoleEasterEgg(this.state.currentDay);
+                if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
                 this._hideOverlay('sl-overlay');
                 this._loadScene(this.state.currentScene);
             }
@@ -1198,9 +1217,11 @@ class GameEngine {
      * 슬롯에 저장 후 UI 닫기
      */
     _saveToSlotAndClose(slotIndex) {
-        this.save.saveToSlot(slotIndex);
+        const ok = this.save.saveToSlot(slotIndex);
         this._hideOverlay('sl-overlay');
-        this.showSaveToast();
+        if (ok) {
+            this.showSaveToast();
+        }
     }
 
     // ===== Screen =====
@@ -1212,6 +1233,12 @@ class GameEngine {
         });
         const el = document.getElementById(id);
         if (el) { el.classList.remove('hidden'); el.classList.add('active'); }
+
+        // 타이틀 복귀 시 이어하기 버튼 상태 갱신
+        if (id === 'title-screen') {
+            const btn = document.getElementById('btn-continue');
+            if (btn) btn.disabled = !this.save.hasSaveData();
+        }
     }
 
     // 모바일: 이름 입력 화면 가상 키보드 회피
@@ -1382,7 +1409,9 @@ class GameEngine {
 
             const textEl = document.createElement('div');
             textEl.className = 'backlog-entry-text';
-            textEl.textContent = entry.text;
+            // 마크다운 마커 제거 (** → bold, * → italic → 순수 텍스트로)
+            const cleanText = entry.text.replace(/\*\*(.+?)\*\*/g, '$1').replace(/\*(.+?)\*/g, '$1');
+            textEl.textContent = cleanText;
             div.appendChild(textEl);
 
             container.appendChild(div);

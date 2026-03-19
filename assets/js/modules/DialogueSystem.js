@@ -40,6 +40,10 @@ class DialogueSystem {
      * @param {boolean} [options.unskippable] - true면 클릭으로 스킵 불가
      */
     type(name, text, onComplete = null, options = {}) {
+        // 이전 타이머 정리 (재진입 방지)
+        clearInterval(this._typeTimer);
+        clearTimeout(this._messengerTimer);
+
         if (this.nameEl) this.nameEl.textContent = name;
         if (this.indicatorEl) this.indicatorEl.style.display = 'none';
 
@@ -48,8 +52,8 @@ class DialogueSystem {
         this.isTyping = true;
         this._unskippable = !!options.unskippable;
 
-        // 나레이션 처리 (*로 감싸진 텍스트)
-        const isNarration = text.startsWith('*') && text.endsWith('*');
+        // 나레이션 처리 (*로 감싸진 텍스트, **bold**와 충돌 방지)
+        const isNarration = text.startsWith('*') && !text.startsWith('**') && text.endsWith('*') && !text.endsWith('**');
         const displayText = isNarration ? text.slice(1, -1) : text;
 
         if (this.textEl) {
@@ -125,7 +129,7 @@ class DialogueSystem {
         // unskippable 장면에서는 스킵 차단 (공포 연출용)
         if (this._unskippable) return;
 
-        const isNarration = this._fullText.startsWith('*') && this._fullText.endsWith('*');
+        const isNarration = this._fullText.startsWith('*') && !this._fullText.startsWith('**') && this._fullText.endsWith('*') && !this._fullText.endsWith('**');
         const displayText = isNarration ? this._fullText.slice(1, -1) : this._fullText;
 
         if (this.textEl) {

@@ -414,7 +414,7 @@ class AudioManager {
     distortPlaybackRate(rate = 0.97, duration = 2000) {
         if (!this.ctx) return;
 
-        const source = this._activeSlotA ? this.bgmSourceB : this.bgmSourceA;
+        const source = this._activeSlotA ? this.bgmSourceA : this.bgmSourceB;
         if (!source) return;
 
         const original = source.playbackRate.value;
@@ -465,7 +465,7 @@ class AudioManager {
         if (!this.ctx || !this._glitchFilter) return;
 
         // 현재 BGM gain → glitch filter → masterGain 으로 경로 재연결
-        const activeGain = this._activeSlotA ? this.bgmGainB : this.bgmGainA;
+        const activeGain = this._activeSlotA ? this.bgmGainA : this.bgmGainB;
         if (!activeGain) return;
 
         activeGain.disconnect();
@@ -490,7 +490,7 @@ class AudioManager {
     slowdown(targetRate = 0.5, duration = 2000) {
         if (!this.ctx) return;
 
-        const source = this._activeSlotA ? this.bgmSourceB : this.bgmSourceA;
+        const source = this._activeSlotA ? this.bgmSourceA : this.bgmSourceB;
         if (!source) return;
 
         const now = this.ctx.currentTime;
@@ -515,7 +515,7 @@ class AudioManager {
 
         const interval = 60000 / bpm; // ms per beat
         const beats = Math.floor(duration / interval);
-        const activeGain = this._activeSlotA ? this.bgmGainB : this.bgmGainA;
+        const activeGain = this._activeSlotA ? this.bgmGainA : this.bgmGainB;
         if (!activeGain) return;
 
         const baseVol = this.volumes.bgm;
@@ -564,11 +564,11 @@ class AudioManager {
                 this.masterGain.gain.setValueAtTime(value, this.ctx.currentTime);
                 break;
             case 'bgm':
-                // 활성 슬롯만 볼륨 갱신
+                // 활성 슬롯만 볼륨 갱신 (_activeSlotA=true → A가 재생 중)
                 if (this._activeSlotA) {
-                    if (this.bgmSourceB) this.bgmGainB.gain.setValueAtTime(value, this.ctx.currentTime);
-                } else {
                     if (this.bgmSourceA) this.bgmGainA.gain.setValueAtTime(value, this.ctx.currentTime);
+                } else {
+                    if (this.bgmSourceB) this.bgmGainB.gain.setValueAtTime(value, this.ctx.currentTime);
                 }
                 break;
             case 'sfx':

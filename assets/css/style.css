@@ -570,8 +570,9 @@ body {
     padding: 0.6rem 1rem;
     z-index: 15;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 0.5rem;
     pointer-events: none;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
 }
@@ -910,6 +911,17 @@ body {
     }
     .char-crossfade-out {
         height: 95%;
+    }
+    .hud {
+        padding: 0.3rem 0.5rem;
+        padding-right: 14rem;
+    }
+    .day-display {
+        font-size: 0.7rem;
+        max-width: 50%;
+    }
+    .stat-display {
+        font-size: 0.7rem;
     }
     .quick-menu {
         top: 0.3rem;

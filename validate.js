@@ -56,6 +56,7 @@
  * 45. getElementById 결과 null 가드 검사
  * 46. 브라우저 API 피쳐 디텍션 (vibrate, Battery, orientation 등)
  * 47. 세이브 역직렬화 스키마 안전성
+ * 47A. 세이브/로드 멀티슬롯 시스템 무결성
  * 48. async/await 초기화 순서 검증
  */
 const fs = require('fs');
@@ -1622,6 +1623,113 @@ if (fs.existsSync(modulesPath)) {
                 if (stContent.includes('changeStat') && !stContent.match(/if\s*\(!this\.stats\[/)) {
                     warnings.push(`[SAVE] StateManager.changeStat: no guard for missing charId — crash if save has partial stats`);
                 }
+            }
+        }
+    }
+}
+
+// ═══════════════════════════════════════════
+// 47A. 세이브/로드 멀티슬롯 시스템 무결성
+// ═══════════════════════════════════════════
+{
+    const smPath3 = path.join(ROOT, 'assets/js/modules/SaveManager.js');
+    const gePath = path.join(ROOT, 'assets/js/modules/GameEngine.js');
+    if (fs.existsSync(smPath3) && fs.existsSync(gePath)) {
+        const smContent = fs.readFileSync(smPath3, 'utf8');
+        const geContent = fs.readFileSync(gePath, 'utf8');
+
+        // 1) SaveManager 필수 메서드 존재
+        const requiredMethods = ['saveToSlot', 'loadFromSlot', 'getSlotInfo', 'getAllSlotInfo', 'hasSlotData', 'deleteSlot'];
+        for (const method of requiredMethods) {
+            if (!smContent.includes(method)) {
+                errors.push(`[SAVE_SLOT] SaveManager missing method: ${method}`);
+            }
+        }
+
+        // 2) 하위호환: save()/load()/hasSaveData() 인터페이스 유지
+        const legacyMethods = ['save()', 'load()', 'hasSaveData()'];
+        for (const method of legacyMethods) {
+            if (!smContent.includes(method)) {
+                errors.push(`[SAVE_SLOT] SaveManager missing legacy interface: ${method}`);
+            }
+        }
+
+        // 3) loadFromSlot에 하위호환 (gameState 래핑 + 이전 형식) 처리
+        if (smContent.includes('loadFromSlot')) {
+            if (!smContent.includes('gameState')) {
+                warnings.push(`[SAVE_SLOT] loadFromSlot: no backwards-compatible gameState unwrapping`);
+            }
+        }
+
+        // 4) GameEngine에서 슬롯 선택 UI 연동 확인
+        if (!geContent.includes('_openSlotSelector')) {
+            errors.push(`[SAVE_SLOT] GameEngine missing _openSlotSelector method`);
+        }
+        if (!geContent.includes('_renderSlots')) {
+            errors.push(`[SAVE_SLOT] GameEngine missing _renderSlots method`);
+        }
+
+        // 5) btn-save, btn-load, qm-save, qm-load가 슬롯 셀렉터를 여는지
+        const btnSaveMatch = geContent.match(/btn-save.*?addEventListener[^}]+\}/s);
+        if (btnSaveMatch && !btnSaveMatch[0].includes('SlotSelector') && !btnSaveMatch[0].includes('openSlot')) {
+            warnings.push(`[SAVE_SLOT] btn-save handler does not open slot selector`);
+        }
+        const btnLoadMatch = geContent.match(/btn-load.*?addEventListener[^}]+\}/s);
+        if (!btnLoadMatch) {
+            errors.push(`[SAVE_SLOT] btn-load has no event listener in GameEngine`);
+        }
+
+        // 6) Save/Load Slot UI HTML 존재 확인
+        const koHtmlContent2 = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+        if (!koHtmlContent2.includes('sl-overlay')) {
+            errors.push(`[SAVE_SLOT] index.html missing save/load slot overlay (id="sl-overlay")`);
+        }
+        if (!koHtmlContent2.includes('sl-slots')) {
+            errors.push(`[SAVE_SLOT] index.html missing sl-slots container`);
+        }
+
+        // 7) 다국어 HTML에도 sl-overlay 존재 확인
+        const slLangs = ['en', 'ja', 'es', 'fr', 'de'];
+        for (const lang of slLangs) {
+            const langHtml = path.join(ROOT, lang, 'index.html');
+            if (fs.existsSync(langHtml)) {
+                const content = fs.readFileSync(langHtml, 'utf8');
+                if (!content.includes('sl-overlay')) {
+                    errors.push(`[SAVE_SLOT] ${lang}/index.html missing save/load slot overlay (id="sl-overlay")`);
+                }
+            }
+        }
+
+        // 8) CSS에 sl-container, sl-slot 스타일 존재
+        const allCss = fs.readdirSync(path.join(ROOT, 'assets/css'))
+            .filter(f => f.endsWith('.css'))
+            .map(f => fs.readFileSync(path.join(ROOT, 'assets/css', f), 'utf8'))
+            .join('\n');
+        if (!allCss.includes('.sl-container')) {
+            errors.push(`[SAVE_SLOT] CSS missing .sl-container styles`);
+        }
+        if (!allCss.includes('.sl-slot')) {
+            errors.push(`[SAVE_SLOT] CSS missing .sl-slot styles`);
+        }
+
+        // 9) i18n에 슬롯 관련 UI 텍스트 존재 (모든 언어)
+        const i18nPath = path.join(ROOT, 'assets/js/modules/I18nManager.js');
+        if (fs.existsSync(i18nPath)) {
+            const i18nContent = fs.readFileSync(i18nPath, 'utf8');
+            const slotKeys = ['slotEmpty', 'slotOverwrite', 'slotYes', 'slotNo'];
+            for (const key of slotKeys) {
+                const occurrences = (i18nContent.match(new RegExp(key, 'g')) || []).length;
+                if (occurrences < 6) {
+                    errors.push(`[SAVE_SLOT] i18n UI key "${key}" missing in some languages (found ${occurrences}, need 6)`);
+                }
+            }
+        }
+
+        // 10) saveToSlot에 try-catch 존재 (localStorage 용량 초과 대응)
+        if (smContent.includes('saveToSlot')) {
+            const saveToSlotMatch = smContent.match(/saveToSlot[\s\S]*?catch/);
+            if (!saveToSlotMatch) {
+                warnings.push(`[SAVE_SLOT] saveToSlot: no try-catch for localStorage quota exceeded`);
             }
         }
     }

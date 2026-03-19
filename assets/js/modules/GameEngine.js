@@ -228,9 +228,14 @@ class GameEngine {
 
         document.getElementById('btn-save')?.addEventListener('click', () => {
             this.audio?.playUIClick();
-            this.save.save();
-            this.showSaveToast();
             this._hideOverlay('pause-menu');
+            this._openSlotSelector('save');
+        });
+
+        document.getElementById('btn-load')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
+            this._hideOverlay('pause-menu');
+            this._openSlotSelector('load');
         });
 
         document.getElementById('btn-title')?.addEventListener('click', () => {
@@ -1014,6 +1019,190 @@ class GameEngine {
         }, 1500);
     }
 
+    // ===== Save/Load Slot Selector =====
+
+    /**
+     * 슬롯 선택 UI 열기
+     * @param {'save'|'load'} mode
+     */
+    _openSlotSelector(mode) {
+        this._slotMode = mode;
+        const overlay = document.getElementById('sl-overlay');
+        const title = document.getElementById('sl-title');
+        const slotsEl = document.getElementById('sl-slots');
+        if (!overlay || !slotsEl) return;
+
+        // 타이틀 설정
+        if (title) {
+            title.textContent = mode === 'save'
+                ? (this.i18n.getUI('save') || '저장')
+                : (this.i18n.getUI('load') || '불러오기');
+        }
+
+        // 모드 클래스
+        overlay.classList.remove('sl-load-mode');
+        if (mode === 'load') overlay.classList.add('sl-load-mode');
+
+        // 슬롯 렌더링
+        this._renderSlots(slotsEl, mode);
+
+        // 닫기 버튼
+        const closeBtn = document.getElementById('sl-close');
+        if (closeBtn) {
+            const handler = () => {
+                this.audio?.playUIClick();
+                this._hideOverlay('sl-overlay');
+                closeBtn.removeEventListener('click', handler);
+            };
+            closeBtn.addEventListener('click', handler);
+        }
+
+        this._showOverlay('sl-overlay');
+    }
+
+    /**
+     * 슬롯 목록 렌더링
+     */
+    _renderSlots(container, mode) {
+        container.innerHTML = '';
+        const slots = this.save.getAllSlotInfo();
+        const ui = (k) => this.i18n.getUI(k);
+        const slotNames = this.i18n.getUI('slots') || {};
+
+        for (let i = 0; i <= this.save.MAX_SLOTS; i++) {
+            const info = slots[i];
+            const el = document.createElement('div');
+            el.className = 'sl-slot' + (i === 0 ? ' sl-slot-auto' : '') + (!info ? ' sl-empty' : '');
+
+            const numEl = document.createElement('div');
+            numEl.className = 'sl-slot-num';
+            numEl.textContent = i === 0 ? (ui('slotAuto') || 'AUTO') : `${i}`;
+
+            const infoEl = document.createElement('div');
+            infoEl.className = 'sl-slot-info';
+
+            if (info) {
+                const nameEl = document.createElement('div');
+                nameEl.className = 'sl-slot-name';
+                const dayText = `Day ${info.currentDay}`;
+                const slotLabel = slotNames[info.currentSlot] || info.currentSlot || '';
+                nameEl.textContent = `${info.playerName || '???'} — ${dayText} ${slotLabel}`;
+
+                const detailEl = document.createElement('div');
+                detailEl.className = 'sl-slot-detail';
+                detailEl.textContent = info.timestamp
+                    ? new Date(info.timestamp).toLocaleString()
+                    : (ui('slotOldFormat') || '');
+
+                infoEl.appendChild(nameEl);
+                infoEl.appendChild(detailEl);
+            } else {
+                const emptyEl = document.createElement('div');
+                emptyEl.className = 'sl-slot-empty-label';
+                emptyEl.textContent = ui('slotEmpty') || '빈 슬롯';
+                infoEl.appendChild(emptyEl);
+            }
+
+            el.appendChild(numEl);
+            el.appendChild(infoEl);
+
+            // 삭제 버튼 (수동 슬롯 + 데이터 있을 때 + save 모드)
+            if (i > 0 && info && mode === 'save') {
+                const delBtn = document.createElement('button');
+                delBtn.className = 'sl-delete';
+                delBtn.textContent = '✕';
+                delBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.audio?.playUIClick();
+                    this.save.deleteSlot(i);
+                    this._renderSlots(container, mode);
+                });
+                el.appendChild(delBtn);
+            }
+
+            // 클릭 핸들러
+            el.addEventListener('click', () => this._onSlotClick(i, info, mode, container));
+
+            container.appendChild(el);
+        }
+    }
+
+    /**
+     * 슬롯 클릭 처리
+     */
+    _onSlotClick(slotIndex, info, mode, container) {
+        this.audio?.playUIClick();
+
+        if (mode === 'save') {
+            // 자동저장 슬롯(0)에도 수동 저장 가능
+            if (info) {
+                // 덮어쓰기 확인
+                this._showSlotConfirm(slotIndex, container);
+            } else {
+                this._saveToSlotAndClose(slotIndex);
+            }
+        } else {
+            // load 모드
+            if (!info) return; // 빈 슬롯은 무시
+            if (this.save.loadFromSlot(slotIndex)) {
+                // Cupid 크로스오버 플래그 재설정
+                if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
+                this._hideOverlay('sl-overlay');
+                this._loadScene(this.state.currentScene);
+            }
+        }
+    }
+
+    /**
+     * 덮어쓰기 확인 UI
+     */
+    _showSlotConfirm(slotIndex, container) {
+        // 기존 확인 UI 제거
+        container.querySelectorAll('.sl-confirm').forEach(c => c.remove());
+
+        const slotEl = container.children[slotIndex];
+        if (!slotEl) return;
+
+        const confirm = document.createElement('div');
+        confirm.className = 'sl-confirm';
+
+        const text = document.createElement('span');
+        text.className = 'sl-confirm-text';
+        text.textContent = this.i18n.getUI('slotOverwrite') || '덮어쓰시겠습니까?';
+
+        const yesBtn = document.createElement('button');
+        yesBtn.className = 'sl-confirm-btn';
+        yesBtn.textContent = this.i18n.getUI('slotYes') || '예';
+        yesBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.audio?.playUIClick();
+            this._saveToSlotAndClose(slotIndex);
+        });
+
+        const noBtn = document.createElement('button');
+        noBtn.className = 'sl-confirm-btn sl-cancel';
+        noBtn.textContent = this.i18n.getUI('slotNo') || '아니오';
+        noBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.audio?.playUIClick();
+            confirm.remove();
+        });
+
+        confirm.appendChild(text);
+        confirm.appendChild(yesBtn);
+        confirm.appendChild(noBtn);
+        slotEl.appendChild(confirm);
+    }
+
+    /**
+     * 슬롯에 저장 후 UI 닫기
+     */
+    _saveToSlotAndClose(slotIndex) {
+        this.save.saveToSlot(slotIndex);
+        this._hideOverlay('sl-overlay');
+        this.showSaveToast();
+    }
+
     // ===== Screen =====
 
     _showScreen(id) {
@@ -1065,15 +1254,11 @@ class GameEngine {
         document.getElementById('qm-log')?.addEventListener('click', () => { this.audio?.playUIClick(); this._showOverlay('backlog-panel'); });
         document.getElementById('qm-save')?.addEventListener('click', () => {
             this.audio?.playUIClick();
-            this.save.save();
-            this.showSaveToast();
+            this._openSlotSelector('save');
         });
         document.getElementById('qm-load')?.addEventListener('click', () => {
             this.audio?.playUIClick();
-            if (this.save.hasSaveData()) {
-                this.save.load();
-                this._loadScene(this.state.currentScene);
-            }
+            this._openSlotSelector('load');
         });
         document.getElementById('qm-menu')?.addEventListener('click', () => {
             this.audio?.playUIClick();

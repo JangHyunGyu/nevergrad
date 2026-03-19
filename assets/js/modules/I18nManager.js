@@ -192,7 +192,9 @@ class I18nManager {
             dayFormat: "{day}일차 - {slot}",
             slots: { morning: "아침", lunch: "점심", afterschool: "방과후", night: "밤" },
             galleryTitle: "엔딩 갤러리", galleryBack: "돌아가기", galleryProgress: "달성률",
-            saveComplete: "저장 완료"
+            saveComplete: "저장 완료",
+            slotAuto: "AUTO", slotEmpty: "빈 슬롯", slotOldFormat: "이전 저장",
+            slotOverwrite: "덮어쓰시겠습니까?", slotYes: "예", slotNo: "아니오"
         },
         en: {
             title: "The Classroom of No Graduation", subtitle: "5 Days Record",
@@ -205,7 +207,9 @@ class I18nManager {
             dayFormat: "Day {day} - {slot}",
             slots: { morning: "Morning", lunch: "Lunch", afterschool: "After School", night: "Night" },
             galleryTitle: "Ending Gallery", galleryBack: "Back", galleryProgress: "Progress",
-            saveComplete: "Saved"
+            saveComplete: "Saved",
+            slotAuto: "AUTO", slotEmpty: "Empty Slot", slotOldFormat: "Legacy Save",
+            slotOverwrite: "Overwrite this slot?", slotYes: "Yes", slotNo: "No"
         },
         ja: {
             title: "卒業できない教室", subtitle: "5日間の記録",
@@ -218,7 +222,9 @@ class I18nManager {
             dayFormat: "{day}日目 - {slot}",
             slots: { morning: "朝", lunch: "昼", afterschool: "放課後", night: "夜" },
             galleryTitle: "エンディングギャラリー", galleryBack: "戻る", galleryProgress: "達成率",
-            saveComplete: "保存完了"
+            saveComplete: "保存完了",
+            slotAuto: "AUTO", slotEmpty: "空きスロット", slotOldFormat: "旧セーブ",
+            slotOverwrite: "上書きしますか？", slotYes: "はい", slotNo: "いいえ"
         },
         es: {
             title: "El Aula Sin Graduación", subtitle: "Registro de 5 Días",
@@ -231,7 +237,9 @@ class I18nManager {
             dayFormat: "Día {day} - {slot}",
             slots: { morning: "Mañana", lunch: "Almuerzo", afterschool: "Después de Clases", night: "Noche" },
             galleryTitle: "Galería de Finales", galleryBack: "Volver", galleryProgress: "Progreso",
-            saveComplete: "Guardado"
+            saveComplete: "Guardado",
+            slotAuto: "AUTO", slotEmpty: "Vacío", slotOldFormat: "Guardado anterior",
+            slotOverwrite: "¿Sobrescribir?", slotYes: "Sí", slotNo: "No"
         },
         fr: {
             title: "La Classe Sans Diplôme", subtitle: "Chronique de 5 Jours",
@@ -244,7 +252,9 @@ class I18nManager {
             dayFormat: "Jour {day} - {slot}",
             slots: { morning: "Matin", lunch: "Midi", afterschool: "Après les Cours", night: "Nuit" },
             galleryTitle: "Galerie des Fins", galleryBack: "Retour", galleryProgress: "Progression",
-            saveComplete: "Sauvegardé"
+            saveComplete: "Sauvegardé",
+            slotAuto: "AUTO", slotEmpty: "Vide", slotOldFormat: "Ancienne sauvegarde",
+            slotOverwrite: "Écraser ?", slotYes: "Oui", slotNo: "Non"
         },
         de: {
             title: "Das Klassenzimmer ohne Abschluss", subtitle: "Aufzeichnung von 5 Tagen",
@@ -257,7 +267,9 @@ class I18nManager {
             dayFormat: "Tag {day} - {slot}",
             slots: { morning: "Morgen", lunch: "Mittag", afterschool: "Nach der Schule", night: "Nacht" },
             galleryTitle: "Ending-Galerie", galleryBack: "Zurück", galleryProgress: "Fortschritt",
-            saveComplete: "Gespeichert"
+            saveComplete: "Gespeichert",
+            slotAuto: "AUTO", slotEmpty: "Leer", slotOldFormat: "Alter Speicherstand",
+            slotOverwrite: "Überschreiben?", slotYes: "Ja", slotNo: "Nein"
         }
     };
 

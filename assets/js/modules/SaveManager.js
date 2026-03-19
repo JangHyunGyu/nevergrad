@@ -4,18 +4,20 @@
  * ============================================================================
  *
  * [localStorage 키 구조]
- * - nevergrad_save          : 현재 진행 중인 게임 상태 (단일)
+ * - nevergrad_save          : 자동저장 슬롯 (이어하기용, 하위호환)
+ * - nevergrad_slot_1 ~ _9   : 수동 저장 슬롯 9개
  * - nevergrad_meta          : 회차 메타데이터 (엔딩 기록, NG+ 감지)
  * - nevergrad_choices       : 1회차 선택 이력 (2회차 선택지 오염용)
+ *
+ * [세이브 슬롯 설계]
+ * - 슬롯 0 (자동): 씬 전환 시 자동저장, "이어하기" 전용
+ * - 슬롯 1~9 (수동): 플레이어가 직접 관리 (7개 엔딩 탐색용)
+ * - 13개 "피험자 슬롯"은 Day 4 메타호러 연출 전용 (별도)
  *
  * [NG+ 설계]
  * - 1회차 클리어 시 엔딩 종류를 meta에 기록
  * - 2회차 시작 시 meta를 읽어 isNewGamePlus 판별
  * - 1회차 선택 이력은 choices에 별도 보관 (게임 세이브와 독립)
- *
- * [세이브 슬롯 UI 데이터]
- * - 13개의 "피험자 슬롯"은 게임 내 연출용 (실제 세이브가 아님)
- * - getSubjectSlots()로 Day 4 세이브파일 글리치 UI에 데이터 제공
  */
 
 class SaveManager {
@@ -23,44 +25,144 @@ class SaveManager {
         this.state = stateManager;
 
         // localStorage 키
-        this.SAVE_KEY = 'nevergrad_save';
+        this.SAVE_KEY = 'nevergrad_save';        // 자동저장 (슬롯 0)
+        this.SLOT_PREFIX = 'nevergrad_slot_';     // 수동슬롯 1~9
         this.META_KEY = 'nevergrad_meta';
         this.CHOICES_KEY = 'nevergrad_choices';
+        this.MAX_SLOTS = 9;
     }
 
     // =========================================================================
-    // 기본 저장/불러오기 (현재 게임 상태)
+    // 멀티슬롯 저장/불러오기
+    // =========================================================================
+
+    /**
+     * 슬롯에 저장
+     * @param {number} slotIndex - 0=자동, 1~9=수동
+     * @returns {boolean}
+     */
+    saveToSlot(slotIndex) {
+        try {
+            const gameData = this.state.serialize();
+            const slotData = {
+                gameState: gameData,
+                timestamp: Date.now(),
+                playerName: gameData.playerName,
+                currentDay: gameData.currentDay,
+                currentSlot: gameData.currentSlot,
+                currentScene: gameData.currentScene
+            };
+            const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
+            localStorage.setItem(key, JSON.stringify(slotData));
+            return true;
+        } catch (e) {
+            console.error('[SaveManager] Save to slot', slotIndex, 'failed:', e);
+            return false;
+        }
+    }
+
+    /**
+     * 슬롯에서 불러오기
+     * @param {number} slotIndex - 0=자동, 1~9=수동
+     * @returns {boolean}
+     */
+    loadFromSlot(slotIndex) {
+        try {
+            const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
+            const raw = localStorage.getItem(key);
+            if (!raw) return false;
+            const slotData = JSON.parse(raw);
+            // 하위호환: 이전 형식(gameState 래핑 없음)도 지원
+            const gameState = slotData.gameState || slotData;
+            this.state.deserialize(gameState);
+            return true;
+        } catch (e) {
+            console.error('[SaveManager] Load from slot', slotIndex, 'failed:', e);
+            return false;
+        }
+    }
+
+    /**
+     * 슬롯 데이터 읽기 (UI 표시용, 게임 상태에 영향 없음)
+     * @param {number} slotIndex
+     * @returns {object|null} { playerName, currentDay, currentSlot, timestamp } 또는 null
+     */
+    getSlotInfo(slotIndex) {
+        try {
+            const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
+            const raw = localStorage.getItem(key);
+            if (!raw) return null;
+            const data = JSON.parse(raw);
+            // 하위호환
+            if (data.gameState) {
+                return {
+                    playerName: data.playerName,
+                    currentDay: data.currentDay,
+                    currentSlot: data.currentSlot,
+                    timestamp: data.timestamp
+                };
+            }
+            // 이전 형식 (자동저장 하위호환)
+            return {
+                playerName: data.playerName,
+                currentDay: data.currentDay,
+                currentSlot: data.currentSlot,
+                timestamp: null
+            };
+        } catch {
+            return null;
+        }
+    }
+
+    /**
+     * 모든 슬롯 정보 반환 (0=자동, 1~9=수동)
+     * @returns {Array<object|null>}
+     */
+    getAllSlotInfo() {
+        const slots = [];
+        for (let i = 0; i <= this.MAX_SLOTS; i++) {
+            slots.push(this.getSlotInfo(i));
+        }
+        return slots;
+    }
+
+    /**
+     * 슬롯 삭제
+     * @param {number} slotIndex
+     */
+    deleteSlot(slotIndex) {
+        const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
+        localStorage.removeItem(key);
+    }
+
+    /**
+     * 슬롯에 데이터가 있는지 확인
+     * @param {number} slotIndex
+     * @returns {boolean}
+     */
+    hasSlotData(slotIndex) {
+        const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
+        return !!localStorage.getItem(key);
+    }
+
+    // =========================================================================
+    // 하위호환 인터페이스 (기존 코드 유지)
     // =========================================================================
 
     save() {
-        try {
-            const data = this.state.serialize();
-            localStorage.setItem(this.SAVE_KEY, JSON.stringify(data));
-            return true;
-        } catch (e) {
-            console.error('[SaveManager] Save failed:', e);
-            return false;
-        }
+        return this.saveToSlot(0);
     }
 
     load() {
-        try {
-            const raw = localStorage.getItem(this.SAVE_KEY);
-            if (!raw) return false;
-            this.state.deserialize(JSON.parse(raw));
-            return true;
-        } catch (e) {
-            console.error('[SaveManager] Load failed:', e);
-            return false;
-        }
+        return this.loadFromSlot(0);
     }
 
     hasSaveData() {
-        return !!localStorage.getItem(this.SAVE_KEY);
+        return this.hasSlotData(0);
     }
 
     deleteSave() {
-        localStorage.removeItem(this.SAVE_KEY);
+        this.deleteSlot(0);
     }
 
     // =========================================================================
@@ -267,10 +369,13 @@ class SaveManager {
     // =========================================================================
 
     /**
-     * 모든 저장 데이터 삭제 (게임 + 메타 + 선택 이력)
+     * 모든 저장 데이터 삭제 (게임 + 메타 + 선택 이력 + 모든 슬롯)
      */
     deleteAll() {
         localStorage.removeItem(this.SAVE_KEY);
+        for (let i = 1; i <= this.MAX_SLOTS; i++) {
+            localStorage.removeItem(`${this.SLOT_PREFIX}${i}`);
+        }
         localStorage.removeItem(this.META_KEY);
         localStorage.removeItem(this.CHOICES_KEY);
     }

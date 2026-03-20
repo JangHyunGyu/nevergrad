@@ -49,6 +49,9 @@ class ChoiceSystem {
             btn.className = 'choice-btn';
             btn.textContent = labels?.[i] || `선택 ${i + 1}`;
 
+            // 시차(stagger) 애니메이션
+            btn.style.animationDelay = `${i * 80}ms`;
+
             btn.addEventListener('click', () => {
                 if (selected) return;
                 selected = true;
@@ -59,6 +62,15 @@ class ChoiceSystem {
 
             this.panel.appendChild(btn);
         });
+
+        // 렌파이 스타일 연타 방지: 애니메이션 완료 후 클릭 활성화
+        const totalDelay = (choices.length - 1) * 80 + 400;
+        setTimeout(() => {
+            const buttons = this.panel.querySelectorAll('.choice-btn');
+            if (buttons) {
+                buttons.forEach(b => b.classList.add('choice-ready'));
+            }
+        }, totalDelay);
     }
 
     hide() {

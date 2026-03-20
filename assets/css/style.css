@@ -581,7 +581,7 @@ body {
     width: 80%;
     max-width: 500px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     word-break: keep-all;
     overflow-wrap: break-word;
     backdrop-filter: blur(10px);
@@ -591,6 +591,22 @@ body {
     line-height: 1.4;
     hyphens: auto;
     -webkit-hyphens: auto;
+    /* 렌파이 스타일 페이드인+슬라이드업 */
+    opacity: 0;
+    transform: translateY(15px);
+    animation: choiceFadeIn 0.4s ease-out forwards;
+    pointer-events: none;
+}
+
+.choice-btn.choice-ready {
+    pointer-events: auto;
+}
+
+@keyframes choiceFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .choice-btn:hover {

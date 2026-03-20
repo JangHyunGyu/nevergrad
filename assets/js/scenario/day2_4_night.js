@@ -272,12 +272,39 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_flash_8"
     },
 
-    // ===== 설화의 꿈 =====
+    // ── 주인공 능동성: 데자뷔에 불안 → 스스로 학교 검색 ──
     "day2_night_flash_8": {
+        character: null,
+        night: true,
+        next: "day2_night_search_1"
+    },
+    "day2_night_search_1": {
+        character: null,
+        night: true,
+        next: "day2_night_search_2"
+    },
+    "day2_night_search_2": {
+        character: null,
+        night: true,
+        next: "day2_night_search_3"
+    },
+    "day2_night_search_3": {
+        character: null,
+        night: true,
+        next: "day2_night_search_4"
+    },
+    "day2_night_search_4": {
+        character: null,
+        night: true,
+        next: "day2_night_search_5"
+    },
+    "day2_night_search_5": {
         character: null,
         night: true,
         next: "day2_night_dream_1"
     },
+
+    // ===== 설화의 꿈 =====
     "day2_night_dream_1": {
         background: "black",
         bgm: null,

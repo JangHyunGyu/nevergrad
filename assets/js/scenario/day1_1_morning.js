@@ -91,6 +91,25 @@ Object.assign(SCENARIO[1], {
     // L103: *심호흡 한 번. 들어가자...*
     "day1_gate_5": {
         character: null,
+        next: "day1_gate_cctv_1"
+    },
+
+    // ── 미세 공포 핀: CCTV 관찰 (위화감 2% 이하, 주인공이 즉시 합리화) ──
+    // 정문을 지나며 뒤통수가 서늘한 느낌 → CCTV 3대 관찰 → 합리화
+    "day1_gate_cctv_1": {
+        character: null,
+        next: "day1_gate_cctv_2"
+    },
+    "day1_gate_cctv_2": {
+        character: null,
+        next: "day1_gate_cctv_3"
+    },
+    "day1_gate_cctv_3": {
+        character: null,
+        next: "day1_gate_cctv_4"
+    },
+    "day1_gate_cctv_4": {
+        character: null,
         next: "day1_hallway_1"
     },
 
@@ -697,6 +716,20 @@ Object.assign(SCENARIO[1], {
     "day1_pe_4": {
         character: null,
         sfx: "sfx_camera_shutter.mp3",
+        next: "day1_pe_wall_1"
+    },
+
+    // ── 미세 공포 핀: 담장 높이 관찰 (위화감 2% 이하, 주인공이 즉시 합리화) ──
+    "day1_pe_wall_1": {
+        character: null,
+        next: "day1_pe_wall_2"
+    },
+    "day1_pe_wall_2": {
+        character: null,
+        next: "day1_pe_wall_3"
+    },
+    "day1_pe_wall_3": {
+        character: null,
         next: "day1_morning_end"
     },
 

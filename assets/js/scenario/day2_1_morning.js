@@ -338,11 +338,43 @@ Object.assign(SCENARIO[2], {
         glitch: { silence: true, silenceDuration: 2000 }
     },
 
-    // ===== 아침 종료 =====
+    // ===== 아침 종료 → 방송 사고 이벤트 → 점심 =====
     "day2_morning_end": {
         background: "classroom",
         character: null,
         changeSlot: "lunch",
+        next: "day2_broadcast_1"
+    },
+
+    // ── ★ 교내 방송 사고 (Day 2 고유 이벤트, Day 1과 차별화) ──
+    "day2_broadcast_1": {
+        character: null,
+        sfx: "sfx_speaker_static.mp3",
+        next: "day2_broadcast_2"
+    },
+    "day2_broadcast_2": {
+        character: null,
+        next: "day2_broadcast_3"
+    },
+    "day2_broadcast_3": {
+        character: null,
+        next: "day2_broadcast_4"
+    },
+    "day2_broadcast_4": {
+        character: "eunsu_normal",
+        next: "day2_broadcast_5"
+    },
+    "day2_broadcast_5": {
+        character: null,
+        next: "day2_broadcast_6"
+    },
+    "day2_broadcast_6": {
+        character: "seolhwa_quiet",
+        charOpacity: 0.4,
+        next: "day2_broadcast_7"
+    },
+    "day2_broadcast_7": {
+        character: null,
         next: "day2_lunch_start"
     }
 });

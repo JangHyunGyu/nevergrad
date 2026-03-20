@@ -151,8 +151,32 @@ Object.assign(SCENARIO[1], {
     "day1_night_sleep_5": {
         character: null,
         night: true,
+        next: "day1_night_key_1"
+    },
+
+    // ── 미세 공포 핀: 새벽 열쇠 소리 (은수의 야간 점검 복선) ──
+    "day1_night_key_1": {
+        character: null,
+        night: true,
+        sfx: "sfx_key_turn.mp3",
+        next: "day1_night_key_2"
+    },
+    "day1_night_key_2": {
+        character: null,
+        night: true,
+        next: "day1_night_key_3"
+    },
+    "day1_night_key_3": {
+        character: null,
+        night: true,
+        next: "day1_night_key_4"
+    },
+    "day1_night_key_4": {
+        character: null,
+        night: true,
         next: "day1_night_end"
     },
+
     "day1_night_end": {
         character: null,
         background: "black",

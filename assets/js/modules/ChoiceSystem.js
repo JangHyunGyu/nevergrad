@@ -63,8 +63,8 @@ class ChoiceSystem {
             this.panel.appendChild(btn);
         });
 
-        // 렌파이 스타일 연타 방지: 애니메이션 완료 후 클릭 활성화
-        const totalDelay = (choices.length - 1) * 80 + 400;
+        // 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
+        const totalDelay = (choices.length - 1) * 80 + 1500;
         setTimeout(() => {
             const buttons = this.panel.querySelectorAll('.choice-btn');
             if (buttons) {

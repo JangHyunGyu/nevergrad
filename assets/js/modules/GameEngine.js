@@ -599,9 +599,9 @@ class GameEngine {
             }
         }
 
-        // 📌 렌파이 스타일 연타 방지: 애니메이션 완료 후 클릭 활성화
+        // 📌 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
         const allBtns = panel.querySelectorAll('.choice-btn');
-        const totalDelay = (allBtns.length - 1) * 80 + 400;
+        const totalDelay = (allBtns.length - 1) * 80 + 1500;
         setTimeout(() => {
             const buttons = panel.querySelectorAll('.choice-btn');
             if (buttons) {

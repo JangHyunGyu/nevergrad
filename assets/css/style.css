@@ -229,6 +229,12 @@ body {
 .archerlab-link:hover {
     background: rgba(0, 0, 0, 0.6);
 }
+@media (max-width: 768px) {
+    .archerlab-link {
+        font-size: 0.78rem;
+        padding: 6px 14px;
+    }
+}
 
 .title-footer {
     position: absolute;

@@ -212,18 +212,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         } catch (_) { return 'ctx-error'; }
     }
 
-    function _isNoise(msg, stack, src) {
-        if (!msg) return true;
-        if (msg === 'Script error.' && !stack) return true;
-        if (/Can't find variable: (gmo|__gCrWeb|ytcfg|__)/.test(msg)) return true;
-        if (/ResizeObserver loop|Loading chunk|dynamically imported module/.test(msg)) return true;
-        if (src && /googletagmanager|google-analytics|gtag\/js|cloudflare|chrome-extension|moz-extension|safari-extension/.test(src)) return true;
-        if (src && /^undefined:/.test(src) && !(stack || '').match(/\/(assets|js|modules)\//)) return true;
-        return false;
+    function _classifyError(msg, stack, src) {
+        if (!msg) return 'noise';
+        if (msg === 'Script error.' && !stack) return 'noise';
+        if (/Can't find variable: (gmo|__gCrWeb|ytcfg|__)/.test(msg)) return 'noise';
+        if (/ResizeObserver loop/.test(msg)) return 'noise';
+        // External scripts
+        if (src && /googletagmanager|google-analytics|gtag\/js|cloudflare|chrome-extension|moz-extension|safari-extension/.test(src)) return 'external';
+        if (src && /^undefined:/.test(src) && !(stack || '').match(/\/(assets|js|modules)\//)) return 'external';
+        if (/Loading chunk|dynamically imported module/.test(msg)) return 'network';
+        return 'app';
     }
 
     function _sendError(type, msg, stack, src) {
-        if (_isNoise(msg, stack, src)) return;
+        var errClass = _classifyError(msg, stack, src);
+        if (!msg) return;
         var key = msg + '|' + src;
         if (key === _lastError) { _errorCount++; if (_errorCount > 5) return; }
         else { _lastError = key; _errorCount = 1; }
@@ -231,7 +234,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         var ctx = _getContext();
         var payload = {
             appId: APP_ID, userId: '',
-            message: ('[' + type + '] ' + (msg || '')).substring(0, 500),
+            message: ('[' + errClass + ':' + type + '] ' + (msg || '')).substring(0, 500),
             stack: (
                 '[ctx] ' + ctx +
                 '\n[src] ' + (src || 'N/A') +

@@ -51,6 +51,10 @@
         "name": "Ich",
         "text": "*Einmal tief durchatmen. Rein da. Hier stehen bleiben bringt die Schule auch nicht zu mir.*"
     },
+    "day1_gate_cctv_1": {
+        "name": "Ich",
+        "text": "*Ich gehe durch das Haupttor. Neben einem Pfeiler eine Ueberwachungskamera. An der Mauerecke noch eine. Am Eingang auch. -- Heutzutage ist das wohl normal an Schulen.*"
+    },
     "day1_hallway_1": {
         "name": "Ich",
         "text": "*Ich gehe den Flur entlang. Keine Ahnung, wo ich hin muss.*"
@@ -61,11 +65,7 @@
     },
     "day1_hallway_3": {
         "name": "Ich",
-        "text": "*...Aber meine Fuesse fuehren mich ganz natuerlich zum rechten Flur.*"
-    },
-    "day1_hallway_4": {
-        "name": "Ich",
-        "text": "*...Warum gehe ich in diese Richtung? Ich war noch nie in diesem Gebaeude. ...Ach, vielleicht war da ein Pfeil auf der Tafel? Wahrscheinlich schon.*"
+        "text": "*Ich gehe den Flur entlang. Ein kurzer Blick auf die Orientierungstafel, dann biege ich nach rechts ab.*"
     },
     "day1_sea_meet_1": {
         "name": "Han Sea",
@@ -444,23 +444,30 @@
         "name": "Ich",
         "text": "*Sportunterricht. Fussball. Der Ball flog hoch. Ich stoppte ihn mit dem linken Fuss.*"
     },
-    "day1_pe_2": {
-        "name": "Ich",
-        "text": "*...Ich bin besser als erwartet. War ich an meiner alten Schule immer so gut im Fussball?*"
-    },
     "day1_pe_3": {
         "name": "Mitschüler A",
         "text": "Oh, nicht schlecht!"
+    },
+    "day1_pe_3b": {
+        "name": "Ich",
+        "text": "Haha, nur Glueck gehabt."
     },
     "day1_pe_4": {
         "name": "Ich",
         "text": "*Ein Maedchen steht in einer Ecke des Sportplatzes und haelt eine Kamera.*"
     },
+    "day1_pe_wall_1": {
+        "name": "Ich",
+        "text": "*Nach dem Fussball setzte ich mich auf die Bank. Ich trinke Wasser und betrachte den Sportplatz. Ueber der rotbraunen Backsteinmauer verlaeuft ein gruener Maschendrahtzaun. Dahinter sind Berge zu sehen. Eine gut ausgestattete Schule.*"
+    },
+    "day1_pe_wall_3": {
+        "name": "Ich",
+        "text": "*Die Schulglocke laeutete, also ging ich zurueck ins Klassenzimmer.*"
+    },
     "day1_morning_end": {
         "name": "",
         "text": "*Der Vormittag ist vorbei. Es ist Mittagszeit.*"
     },
-
     "day1_xover_seolhwa_1": {
         "name": "",
         "text": "*Auf dem Flur — jemand steht dort. Am Ende des Korridors. Wo das Licht nicht hinreicht.*"

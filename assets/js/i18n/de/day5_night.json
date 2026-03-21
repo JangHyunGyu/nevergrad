@@ -17,14 +17,14 @@
     },
     "day5_ending_true_1": {
         "name": "",
-        "text": "*Frau Eunsus Hand zittert. Die Spritze fiel zu Boden.*"
+        "text": "*Frau Eunsus Hand zittert. Die Finger, die die Spritze umklammern, sind weiss.*"
     },
     "day5_ending_true_2": {
         "name": "Eunsu",
         "text": "\"......\""
     },
     "day5_ending_true_3": {
-        "name": "Eunsu",
+        "name": "Park Eunsu",
         "text": "\"...Also. Der 13. geht auch -- weg.\""
     },
     "day5_ending_true_4": {
@@ -99,9 +99,13 @@
         "name": "",
         "text": "***Und die Erinnerungen davor. Der 1., der 2., der 3. -- zwoelf Leben stuermen auf einmal herein.***"
     },
+    "day5_ending_true_21a": {
+        "name": "",
+        "text": "*Dazwischen -- zerfiel Minsus Gesicht wie zerbrochenes Glas. Das Klassenzimmer der alten Schule. Der Umzugsgrund der Eltern. Zwei Jahre an Erinnerungen, die nie existiert haben, zersprangen in tausend Stuecke. An ihrer Stelle stroemte meine wahre Vergangenheit herein.*"
+    },
     "day5_ending_true_22": {
         "name": "",
-        "text": "*Ich fiel auf die Knie. Weinte. Die Traenen von 12 Zyklen auf einmal. ...Yuna kam und umarmte mich von hinten. In der kalten Morgenluft war Yunas Koerperwaerme das Einzige, was sich real anfuehlte.*"
+        "text": "*Ich fiel auf die Knie. Weinte. Erinnerungen, die nicht meine waren -- nein, die alle meine waren -- stuerzten auf einmal herein. ...Yuna kam und legte ihre Arme um meinen Ruecken. In der kalten Morgenluft war Yunas Koerperwaerme das Einzige, was sich real anfuehlte.*"
     },
     "day5_ending_true_23": {
         "name": "Yuna",
@@ -165,7 +169,7 @@
     },
     "day5_postcredit_4": {
         "name": "???",
-        "text": "\"Die Medien sind wegen Proband 13 aufgeregt. Gemaess Protokoll wird es als individuelles Fehlverhalten auf Standortebene dargestellt. Kappen Sie alle Verbindungen zur Stiftung.\""
+        "text": "\"Die Medien sind wegen Proband 13 aufgeregt. Gemaess Protokoll wird es als individuelles Fehlverhalten der Standortleitung dargestellt. Alle Verbindungen zur Edina-Stiftung sind zu vernichten.\""
     },
     "day5_postcredit_5": {
         "name": "???",
@@ -177,7 +181,7 @@
     },
     "day5_postcredit_7": {
         "name": "",
-        "text": "*Der Bildschirm wechselt. Foto einer neuen Schule. Neue Uniformen. Neue Namen. Der Dateititel ist sichtbar. 'Korrektionsprogramm fuer unangepasste Schueler -- Durchfuehrungsplan Jahr 2.'*"
+        "text": "*Der Bildschirm wechselt. Foto einer neuen Schule. Neue Uniformen. Neue Namen. Der Dateititel ist sichtbar. 'Edina-Stiftung -- Korrektionsprogramm fuer unangepasste Schueler, Durchfuehrungsplan Standort 2'. Oben auf dem Dokument dasselbe Logo. Ein Kreis mit einem offenen Buch und einem Gehirn.*"
     },
     "day5_postcredit_8": {
         "name": "",
@@ -549,7 +553,7 @@
     },
     "day5_ending_forget_22": {
         "name": "",
-        "text": "*Die Lehrerin laechelte. Warm. ...Ein Laecheln, das ich irgendwo schon einmal gesehen zu haben glaube.*"
+        "text": "*Die Lehrerin laechelte. Warmherzig. ...Mit einem Laecheln, das so makellos war, als waere etwas darin zerbrochen.*"
     },
     "day5_ending_forget_sea_branch": {
         "name": "",
@@ -763,7 +767,22 @@
         "name": "",
         "text": ""
     },
-
+    "day5_cage_repeat_flash": {
+        "name": "",
+        "text": "Beobachtungsprotokoll: Probandenkonformitaet bestaetigt. Beobachter verweilt."
+    },
+    "day5_cage_eunsu_4thwall": {
+        "name": "Park Eunsu",
+        "text": "\"...Sie schauen immer noch zu.\""
+    },
+    "day5_cage_sea_empty_1": {
+        "name": "Han Sea",
+        "text": "\"...Auch dieses Mal ist er nicht gegangen.\""
+    },
+    "day5_cage_sea_empty_2": {
+        "name": "Han Sea",
+        "text": "\"Lassen Sie ihn auch nicht gehen?\""
+    },
     "day5_xover_server_1": {
         "name": "",
         "text": "*Verbindung zum Server des Instituts hergestellt. Ein Dateiverzeichnis erscheint auf dem alten Monitor.*"
@@ -815,5 +834,53 @@
     "day5_xover_server_end": {
         "name": "",
         "text": "*...Dateien geschlossen.*"
+    },
+    "day5_observer_1": {
+        "name": "",
+        "text": "*Der Abspann ist vorbei. Der Bildschirm wird dunkel. Voellige Finsternis.*"
+    },
+    "day5_observer_2": {
+        "name": "",
+        "text": "*3 Sekunden.*"
+    },
+    "day5_observer_3": {
+        "name": "",
+        "text": "*...In der Mitte des Bildschirms erscheint Text. Langsam.*"
+    },
+    "day5_observer_4": {
+        "name": "",
+        "text": "══════════════════════════════════════════\n  NEVERGRAD RESEARCH INSTITUTE\n  Verhaltensprotokoll des externen Beobachters\n══════════════════════════════════════════"
+    },
+    "day5_observer_5": {
+        "name": "",
+        "text": "*...Externer Beobachter?*"
+    },
+    "day5_observer_6": {
+        "name": "",
+        "text": "Beobachtungsobjekt: Proband #13 ({name})\nBeobachtungszeitraum: {play_time}\nZusammenfassung des Beobachterverhaltens:\n\n· Anzahl Sea-Route-Wahlen: {route_data}\n· Yuna-Kontakt: {met_yuna}\n· Riin-Besuche: {stat_data}\n· Seolhwa-Gespraechsversuche: {stat_data}\n· Beweissicherung: {stat_data}\n· Dauer bis zur finalen Entscheidung: {timer_data}"
+    },
+    "day5_observer_7": {
+        "name": "",
+        "text": "*Der Text scrollt nach unten.*"
+    },
+    "day5_observer_8": {
+        "name": "",
+        "text": "Anmerkung:\n\nDer Beobachter hat die 5 Tage von Proband #13 verfolgt.\nDer Beobachter hat die Gespraechspartner des Probanden ausgewaehlt.\nDer Beobachter hat entschieden, zu wem der Proband eine emotionale Bindung aufbaut.\nDer Beobachter hat zugesehen, als der Proband Angst empfand.\nDer Beobachter hat ueber die Flucht des Probanden entschieden.\n\nFrage:\nPark Eunsu hat 13 Zyklen entworfen und beobachtet.\nSie haben {play_time} lang das Leben von {name} beobachtet.\n\nWas ist der Unterschied?"
+    },
+    "day5_observer_9": {
+        "name": "",
+        "text": "*Der Bildschirm friert ein. 5 Sekunden lang.*"
+    },
+    "day5_observer_10": {
+        "name": "",
+        "text": "*Und ganz unten, in winziger Schrift:*"
+    },
+    "day5_observer_11": {
+        "name": "",
+        "text": "[Moechten Sie den Abschluss machen?]",
+        "choices": [
+            "Ja",
+            "Nein"
+        ]
     }
 }

@@ -287,26 +287,9 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_deja5_6": {
         character: "eunsu_warm",
-        next: "day2_morning_deja5_6a",
-        glitch: { type: "cold", duration: 500 }
-    },
-    "day2_morning_deja5_6a": {
-        character: "eunsu_warm",
         next: "day2_morning_deja5_7"
     },
     "day2_morning_deja5_7": {
-        character: "eunsu_warm",
-        next: "day2_morning_deja5_7a"
-    },
-    "day2_morning_deja5_7a": {
-        character: "eunsu_warm",
-        next: "day2_morning_deja5_8"
-    },
-    "day2_morning_deja5_8": {
-        character: "eunsu_warm",
-        next: "day2_morning_deja5_9"
-    },
-    "day2_morning_deja5_9": {
         character: "eunsu_warm",
         next: "day2_morning_deja5_10"
     },

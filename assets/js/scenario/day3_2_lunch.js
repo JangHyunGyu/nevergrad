@@ -60,225 +60,164 @@ Object.assign(SCENARIO[3], {
     },
 
     // ══════════════════════════════════════
-    //  ★ 옥상 루트: 유나의 폭로 ★
+    //  ★ 옥상 루트: 유나의 폭로 (재설계 — 유나는 거의 침묵, 나레이션 중심) ★
     // ══════════════════════════════════════
+    // 유나: "...와줬네요."
     "day3_lunch_rooftop_1": {
         background: "rooftop",
         sfx: "sfx_wind.mp3",
         character: "yuna_scared",
         next: "day3_lunch_rooftop_2"
     },
+    // 유나가 아무 말 없이 카메라를 건넨다
     "day3_lunch_rooftop_2": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_3"
     },
-    // 유나: 메모리카드 꺼냄
+    // 손이 떨리고 있다. 유나의 손이. 손가락 마디가 하얗다.
     "day3_lunch_rooftop_3": {
-        character: "yuna_normal",
+        character: "yuna_scared",
         next: "day3_lunch_rooftop_4",
         setFlags: ["yuna_memory_card"]
     },
-    // 유나: 3년 사진부
+    // 유나: "...넘겨보세요."
     "day3_lunch_rooftop_4": {
-        character: "yuna_normal",
+        character: "yuna_scared",
         next: "day3_lunch_rooftop_5"
     },
-    // 유나: 전학생 올 때마다 찍었어요
+    // 카메라를 받았다. 화면에 사진이 떠 있다.
     "day3_lunch_rooftop_5": {
-        character: "yuna_normal",
+        character: "yuna_scared",
         next: "day3_lunch_rooftop_6"
     },
-    // 나레이션: 카메라 화면을 넘긴다
+    // 사진: 김도진
     "day3_lunch_rooftop_6": {
-        character: "yuna_normal",
+        character: "yuna_scared",
         next: "day3_lunch_rooftop_7"
     },
-    // 유나: 1번 전학생
+    // 넘겼다.
     "day3_lunch_rooftop_7": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_8"
     },
-    // 사진: 김도진
+    // 사진: 박서진
     "day3_lunch_rooftop_8": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_9"
     },
-    // 유나: 3번
+    // 넘겼다.
     "day3_lunch_rooftop_9": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_10"
     },
-    // 사진: 박서진
+    // 사진: 김태호
     "day3_lunch_rooftop_10": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_11"
     },
-    // 유나: 7번
+    // 넘겼다. 넘겼다. 넘겼다. 넘겼다.
     "day3_lunch_rooftop_11": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_12"
     },
-    // 사진: 김태호
+    // ...마지막 사진. 교문 앞. 어제 아침.
     "day3_lunch_rooftop_12": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_13"
     },
-    // 유나: 그리고 이게 선배예요
+    // 내 사진이다.
     "day3_lunch_rooftop_13": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_14"
     },
-    // 사진: 내 사진
+    // ...
     "day3_lunch_rooftop_14": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_15"
     },
-    // ...잠깐.
+    // 카메라를 내려놓지 못했다. 처음부터 다시 넘겼다.
     "day3_lunch_rooftop_15": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_16"
     },
-    // 사진 나란히 배열: 13장
+    // 다른 머리색. 다른 이름표.
     "day3_lunch_rooftop_16": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_17",
         glitch: { shake: true, shakeDuration: 500 }
     },
-    // 13장의 사진. 13개의 이름. 전부 같은 얼굴.
+    // ★ 같은 눈. 같은 코. 같은 입.
     "day3_lunch_rooftop_17": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_18",
         glitch: { noise: true, noiseDuration: 400 }
     },
-    // ...내 얼굴이다.
+    // ★ 13장. 13명. 한 사람.
     "day3_lunch_rooftop_18": {
         character: "yuna_scared",
-        next: "day3_lunch_rooftop_19"
+        next: "day3_lunch_rooftop_19",
+        glitch: { noise: true, noiseDuration: 500, shake: true, shakeDuration: 500 }
     },
-    // 유나: 왜 13명의 얼굴이 전부 똑같은 거죠?
+    // 유나가 아무 말도 하지 않는다. 나를 보고 있을 뿐이다.
     "day3_lunch_rooftop_19": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_20"
     },
-    // 유나: 왜 다들 자기 이름도 모르고...
+    // 카메라를 든 손이 떨린다. — 내 손이.
     "day3_lunch_rooftop_20": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_21"
     },
-    // 머릿속이 하얘진다
+    // 유나가 입술을 깨물고 있다. 3년을 혼자 품고 있었다.
     "day3_lunch_rooftop_21": {
         character: "yuna_scared",
-        next: "day3_lunch_rooftop_22",
-        glitch: { whiteout: true, whiteoutDuration: 300 }
+        next: "day3_lunch_rooftop_22"
     },
-    // 유나의 목소리가 멀어지는 것 같다
+    // 무슨 질문을 해야 하는지 모르겠다.
     "day3_lunch_rooftop_22": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_23"
     },
-    // 나: 이거 합성 아니야?
+    // 유나가 마침내 입을 연다. 작은 목소리.
     "day3_lunch_rooftop_23": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_24"
     },
-    // 유나: 3년이에요, 선배. 3년 동안 매번...
+    // 유나: "...매번 사라져요. 길면 일주일."
     "day3_lunch_rooftop_24": {
         character: "yuna_scared",
+        typingSpeed: 120,
+        unskippable: true,
         next: "day3_lunch_rooftop_25"
     },
-    // 유나: 아무한테도 말 못 했어요
+    // 그것뿐이다. 그 한마디뿐이다.
     "day3_lunch_rooftop_25": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_26"
     },
-    // 유나 눈이 빨갛다. 카메라가 흔들린다
+    // ...13번째.
     "day3_lunch_rooftop_26": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_27"
     },
-    // 유나: 1번이 왔을 때 저 중1이었어요
+    // 넥타이를 잡아당겼다. 숨을 들이마시는데 공기가 목에서 걸린다.
     "day3_lunch_rooftop_27": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_28"
     },
-    // 유나: 3번이 왔을 때 이상하다고 느꼈어요
+    // 카메라를 돌려주려는데 — 유나가 고개를 저었다.
     "day3_lunch_rooftop_28": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_29"
     },
-    // 유나: 5번째부터 무서웠어요
+    // 유나: "...갖고 계세요."
     "day3_lunch_rooftop_29": {
         character: "yuna_scared",
-        next: "day3_lunch_rooftop_30"
+        next: "day3_lunch_rooftop_30",
+        setFlags: ["yuna_sd_card_copy"]
     },
-    // 유나가 두 손으로 얼굴을 감싼다. 어깨가 떨린다
+    // 유나의 눈에서 눈물이 한 줄 흘렀다. 닦지 않았다.
     "day3_lunch_rooftop_30": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_31"
-    },
-    // 유나: 죄송해요. 갑자기 이런 거 보여줘서.
-    "day3_lunch_rooftop_31": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_32"
-    },
-    // 나: 아니, 괜찮아.
-    "day3_lunch_rooftop_32": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_33"
-    },
-    // 괜찮지 않다. 하지만 지금 울고 있는 건 유나다.
-    "day3_lunch_rooftop_33": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_34"
-    },
-    // 유나: 저 혼자 알고 있으니까 미칠 것 같았어요
-    "day3_lunch_rooftop_34": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_35"
-    },
-    // '사라진다'.
-    "day3_lunch_rooftop_35": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_36"
-    },
-    // 나: 사라져? 전학생들이?
-    "day3_lunch_rooftop_36": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_37"
-    },
-    // 유나: 네. 다 그래요. 길면 일주일...
-    "day3_lunch_rooftop_37": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_38"
-    },
-    // 유나가 나를 본다. 시선은 단단하다.
-    "day3_lunch_rooftop_38": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_39"
-    },
-    // 유나: 선배는... 13번째예요.
-    "day3_lunch_rooftop_39": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_40",
-        glitch: { noise: true, noiseDuration: 500, shake: true, shakeDuration: 500 }
-    },
-    // ...13번째.
-    "day3_lunch_rooftop_40": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_41"
-    },
-    // 가슴이 답답하다. 숨이 안 쉬어진다.
-    "day3_lunch_rooftop_41": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_42"
-    },
-    // 이 학교에 온 게 처음이 아니다? 내가... 13번째?
-    "day3_lunch_rooftop_42": {
-        character: "yuna_scared",
-        next: "day3_lunch_rooftop_43"
-    },
-    // 그러면 "전 학교"는? "민수"는? 기억은?
-    "day3_lunch_rooftop_43": {
         character: "yuna_scared",
         next: "day3_lunch_door_1"
     },

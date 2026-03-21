@@ -11,7 +11,6 @@
         "name": "Ich",
         "text": "*...Dieses Zimmer wurde auch von 'denen' bereitgestellt. Was bringt ein Schloss.*"
     },
-
     "day4_night_phone": {
         "name": "Ich",
         "text": "*Mein Handy klingelt. Es ist Sea.*"
@@ -56,7 +55,6 @@
         "name": "Ich",
         "text": "*...Ich habe sie nicht gelesen. Ich konnte sie nicht lesen.*"
     },
-
     "day4_night_phone_eunsu": {
         "name": "Ich",
         "text": "*Lehrerin Eunsu: 'Kannst du morgen etwas früher kommen? Es gibt etwas, worüber ich mit dir reden muss.'*"
@@ -73,79 +71,89 @@
         "name": "Ich",
         "text": "*Ich legte mein Handy in die Schublade. Die Vibration hörte nicht auf. Ich wickelte es in ein Handtuch, um das Geräusch zu dämpfen.*"
     },
-
     "day4_night_save_glitch": {
         "name": "Ich",
-        "text": "*...Der Handybildschirm ging plötzlich an. Von selbst. Licht dringt aus der Schublade.*"
+        "text": "*Vibration aus der Schublade. Das Handy. Ich hatte es vorhin hineingelegt -- es vibriert von selbst.*"
     },
     "day4_night_save_glitch_2": {
         "name": "Ich",
-        "text": "*Ich hatte es in ein Handtuch gewickelt -- aber das Licht durchdringt das Handtuch. Es ist kein physisches Licht.*"
+        "text": "*Ich nahm es heraus. Eine Benachrichtigung der Schueler-Sicherheits-App leuchtet auf.*"
     },
     "day4_night_save_glitch_3": {
         "name": "Ich",
-        "text": "*Ich nahm es heraus. Eine Spiele-App ist geöffnet. ...Eine Sicherheits-App? Nein, das ist ein anderer Bildschirm.*"
+        "text": "*'Proband--' Flackern. Die Benachrichtigung aendert sich. 'Gute Nacht, {name}!'*"
     },
     "day4_night_save_glitch_4": {
-        "name": "",
-        "text": "[Meta-Inszenierung: Der Speicher-/Ladebildschirm des echten Spiels öffnet sich zwangsweise. Ohne Eingabe des Spielers.]"
+        "name": "Ich",
+        "text": "*...Was stand da gerade?*"
     },
     "day4_night_save_glitch_5": {
         "name": "Ich",
-        "text": "*Ich kann eine Liste von Speicherplätzen sehen. Von 1 bis 13. ...12 Speicherplätze, die ich nie gespeichert habe, sind belegt.*"
+        "text": "*Ich oeffnete die App. Das uebliche Schueler-Menue ist es nicht. Der Bildschirm ist anders. Schwarzer Hintergrund mit weisser Schrift. -- Ein Admin-Panel.*"
     },
     "day4_night_save_glitch_6": {
         "name": "Ich",
-        "text": "*Platz 1. Kim Dojin. Tag 5 23:00 -- Verarbeitung Abgeschlossen. Der Erste. Das allererste Ich. Nach nur 3 Tagen gefasst -- 'verarbeitet.'*"
+        "text": "***Oben auf dem Bildschirm: 'NEVERGRAD -- Probandenverwaltungssystem v4.7'***"
     },
     "day4_night_save_glitch_7": {
         "name": "Ich",
-        "text": "*Platz 2. Lee Junseo. Verarbeitung Abgeschlossen. Platz 4. Verarbeitung Abgeschlossen. Platz 5. Verarbeitung Abgeschlossen. Platz 6. Verarbeitung Abgeschlossen.*"
+        "text": "*Eine Liste erscheint. 13 Zeilen. #01 Kim Dojin -- Beendet. #02 Lee Junseo -- Beendet. #03 Park Seojin -- Beendet (Tag 4 Fluchtversuch). #04 Jeong Hayul -- Beendet. #05 Kang Minhyuk -- Beendet. #06 Yoon Jaewon -- Beendet. #07 Kim Taeho -- ██Anomale Reaktion██ (Externer Kontakt: Lee Seolhwa). #08 Choi Siwoo -- Beendet. #09 Han Jiho -- Beendet (Tag 3 Frueherkennung). #10 Song Yejun -- Beendet. #11 Oh Taehyun -- Beendet. #12 Im Seoyul -- Beendet. #13 {name} -- In Bearbeitung.*"
     },
     "day4_night_save_glitch_8": {
         "name": "Ich",
-        "text": "***Jedes Mal, wenn sich 'Verarbeitung Abgeschlossen' wiederholt -- stirbt eine weitere Person, die ich war.***"
+        "text": "*13 Zeilen. 13 Namen. 12 Mal 'Beendet'.*"
     },
     "day4_night_save_glitch_9": {
         "name": "Ich",
-        "text": "*12 Namen. 12 Mal 'Verarbeitung Abgeschlossen.' Alle... waren ich.*"
+        "text": "*Ich sah auf die Daten. Die Abstaende sind unregelmaessig. 3 Monate, 4 Monate, 3 Monate... Aber die Dauer ist immer gleich. **5 Tage.***"
     },
     "day4_night_save_glitch_10": {
         "name": "Ich",
-        "text": "*Platz 7. Kim Taeho. 'Nebenwirkungen, externer Kontakt, Fluchtversuch.' ...Der Siebte. Externer Kontakt? Mit wem? -- Seolhwa. Lee Seolhwa.*"
+        "text": "*Nur #07 ist anders. 'Anomale Reaktion'. Externer Kontakt: Lee Seolhwa. -- Seolhwa.*"
     },
     "day4_night_save_glitch_11": {
         "name": "Ich",
-        "text": "*Nur Platz 7 hat eine andere Endzeit. 22:47. Alle anderen 'Verarbeitung Abgeschlossen' sind genau 23:00. Der Siebte war 13 Minuten früher -- etwas war anders.*"
+        "text": "*#09. Han Jiho. Tag 3 Frueherkennung. Am dritten Tag zu Ende. Das 'Ich', das am schnellsten begriff. Das 'Ich', das am schnellsten geloescht wurde.*"
     },
     "day4_night_save_glitch_12": {
         "name": "Ich",
-        "text": "*Platz 3. Park Seojin. 'Tag 4 Fluchtversuch, gescheitert.' ...Ich habe schon vorher versucht zu fliehen. Und wurde gefasst. Das dritte Ich hat auch den Keller gesehen. Das dritte Ich hat auch den Schrecken gespürt. Das dritte Ich ist auch -- gescheitert.*"
+        "text": "*#13. Mein Name. 'In Bearbeitung'.*"
     },
     "day4_night_save_glitch_13": {
         "name": "Ich",
-        "text": "*Platz 9. Han Jiho. 'Tag 3 Früherkennung.' Am Tag 3 entdeckt. Das 'Ich', das am schnellsten begriffen hat. Und das 'Ich', das am schnellsten verarbeitet wurde.*"
+        "text": "*Ich scrollte nach unten. Darunter gibt es weitere Tabs.*"
     },
     "day4_night_save_glitch_14": {
         "name": "Ich",
-        "text": "*Platz 13. In Bearbeitung. -- Mein Name steht dort. Noch nicht 'Verarbeitung Abgeschlossen.' Noch nicht.*"
+        "text": "*'Standortverfolgungsprotokoll'. Ich tippte auf den Tab. Eine Karte erschien. Der Grundriss der Schule. Darauf bewegt sich ein roter Punkt. -- Meine gesamten Wege der letzten 4 Tage sind lueckenlos aufgezeichnet.*"
     },
     "day4_night_save_glitch_15": {
         "name": "Ich",
-        "text": "*Ich versuchte den Bildschirm zu berühren. Ich drückte auf Platz 1. 'Diesen Spielstand laden?' Ja. -- 'Zugriff verweigert.'*"
+        "text": "*Tag 1: Schultor → Flur → Klassenzimmer → Sportplatz → Klassenzimmer → Schultor. Tag 2: Schultor → Flur → Klassenzimmer → Bibliothek → SV-Raum → Schultor. Tag 3: Schultor → Klassenzimmer → Dach → Flur → Klassenzimmer → Schultor. Tag 4: Schultor → Klassenzimmer → Flur Altbau → Krankenzimmer → SV-Raum.*"
     },
     "day4_night_save_glitch_16": {
         "name": "Ich",
-        "text": "*Platz 7. 'Diesen Spielstand laden?' Ja. -- 'Diese Daten sind beschädigt.'*"
+        "text": "*...Jeder einzelne Schritt ist aufgezeichnet. Diese App, die Frau Eunsu mich an Tag 2 installieren liess -- war von Anfang an dafuer gedacht.*"
     },
     "day4_night_save_glitch_17": {
         "name": "Ich",
-        "text": "*Der Bildschirm glitcht und wird dunkel.*"
+        "text": "*Unten auf dem Bildschirm in kleiner Schrift: 'Echtzeit-Ueberwachung aktiv / Mikrofon EIN / Standortverfolgung EIN'*"
     },
-
+    "day4_night_save_glitch_18": {
+        "name": "Ich",
+        "text": "*An Tag 2 habe ich selbst auf 'Alle erlauben' gedrueckt. Mit meiner eigenen Hand.*"
+    },
+    "day4_night_save_glitch_19": {
+        "name": "Ich",
+        "text": "*Die App schloss sich. Von selbst. Zurueck zum normalen Schueler-Menue. 'Gute Nacht, {name}!'*"
+    },
+    "day4_night_save_glitch_20": {
+        "name": "Ich",
+        "text": "*...Dieselbe App. Vorhin wie jetzt. Sie hatte nur eine Vorder- und eine Rueckseite.*"
+    },
     "day4_night_mirror": {
         "name": "Ich",
-        "text": "*...Ich kann nicht atmen. Ich ging ins Badezimmer. Drehte den Wasserhahn auf. Wusch mir das Gesicht.*"
+        "text": "*Ich knoepfte zwei Knoepfe meines Schulhemdes auf. Der Hals ist eng. Ich ging ins Bad. Drehte den Wasserhahn auf. Wusch mir das Gesicht.*"
     },
     "day4_night_mirror_2": {
         "name": "Ich",
@@ -191,7 +199,6 @@
         "name": "Ich",
         "text": "*...Ich schaute wieder in den Spiegel.*"
     },
-
     "day4_night_mirror_swipe": {
         "name": "Ich",
         "text": "*Ich hob die Hand. Legte meine Handfläche auf den Spiegel. Er ist kalt.*"
@@ -212,7 +219,6 @@
         "name": "Ich",
         "text": "*Drittes Mal. Nase. Mund. Kinn. Mein Gesicht wird sichtbar.*"
     },
-
     "day4_night_mirror_hit1": {
         "name": "Ich",
         "text": "***Im Spiegel -- der Raum hinter mir spiegelt sich.***"
@@ -273,7 +279,6 @@
         "name": "Ich",
         "text": "*Ich höre eine Stimme. Deutlich. Meine Trommelfelle vibrieren. Aber diese Stimme -- kam nicht durch die Luft. Sie hallt in meinem Kopf wider.*"
     },
-
     "day4_night_mirror_hit2": {
         "name": "Ich",
         "text": "*Mein Blickfeld verengt sich. Ich starre in den Spiegel. Mein Gesicht. Ich betrachte mein Gesicht.*"
@@ -310,12 +315,10 @@
         "name": "Ich",
         "text": "***Was gab es gestern zum Mittagessen. Das Hähnchenschnitzel, das Sea vorbereitet hat. Den Kaffee, den Lehrerin Eunsu gemacht hat. ...Ich habe die Halluzination einer Person, die für mich gestorben ist, hinter meinem Rücken stehen lassen und all das lächelnd mit den Menschen heruntergeschluckt, die sie getötet haben.***"
     },
-
     "day4_night_mirror_overlay": {
         "name": "",
-        "text": "[Die 13 Passfotos überlagern sich schnell auf dem Gesicht im Spiegel. #1 Kim Dojin → #3 Park Seojin → #7 Kim Taeho → ... → #12 Im Seoyul → {name}. Verschiedene Haarfarben, verschiedene Namensschilder flackern und überlagern sich, aber die Konturen des Gesichts stimmen perfekt überein.]"
+        "text": ""
     },
-
     "day4_night_mirror_collapse": {
         "name": "Ich",
         "text": "*Ich taumelte rückwärts. Mein Rücken traf die Wand. Ich rutschte herunter.*"
@@ -352,7 +355,6 @@
         "name": "Ich",
         "text": "*Aber -- jemand ist neben mir. Echt oder nicht. Für jetzt reicht das allein.*"
     },
-
     "day4_night_plan": {
         "name": "Ich",
         "text": "*...Ich weiß nicht, wie lange ich so dalag. Erst nachdem meine Tränen versiegt waren, stand ich auf.*"
@@ -434,7 +436,6 @@
         "name": "Ich",
         "text": "*Frontalangriff. Ich sage Eunsu direkt. Dass ich über alle 13 Male Bescheid weiß.*"
     },
-
     "day4_night_plan_final": {
         "name": "Ich",
         "text": "*Ich packte meine Tasche. Beweise. Handy. Yunas Kamera. Das Nötigste.*"
@@ -451,7 +452,6 @@
         "name": "Ich",
         "text": "*...Morgen. Der letzte Tag.*"
     },
-
     "day4_night_end": {
         "name": "",
         "text": "*-- Ende von Tag 4 --*"

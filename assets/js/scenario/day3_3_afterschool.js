@@ -138,6 +138,26 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_riin_refuse_4": {
         character: "riin_relief",
+        next: "day3_after_liin_sugar_1"
+    },
+
+    // ── 설탕물 복선: 보건실 쓰레기통 (리인 거절 후) ──
+    "day3_after_liin_sugar_1": {
+        character: null,
+        next: "day3_after_liin_sugar_2"
+    },
+    "day3_after_liin_sugar_2": {
+        character: null,
+        next: "day3_after_liin_sugar_3",
+        setFlags: ["saw_m13_ampoule"]
+    },
+    "day3_after_liin_sugar_3": {
+        character: null,
+        next: "day3_after_liin_sugar_4"
+    },
+    "day3_after_liin_sugar_4": {
+        character: null,
+        sfx: "sfx_door_close.mp3",
         next: "day3_after_yuna_check"
     },
 

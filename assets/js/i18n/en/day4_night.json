@@ -11,7 +11,6 @@
         "name": "Me",
         "text": "*...This room was provided by 'them' too. What good is a lock.*"
     },
-
     "day4_night_phone": {
         "name": "Me",
         "text": "*My phone rings. It's Sea.*"
@@ -56,14 +55,13 @@
         "name": "Me",
         "text": "*...I didn't read them. I couldn't read them.*"
     },
-
     "day4_night_phone_eunsu": {
         "name": "Me",
-        "text": "*Teacher Eunsu: 'Can you come a little early tomorrow? There's something I need to talk to you about.'*"
+        "text": "*Ms. Eunsu: 'Can you come a little early tomorrow? There's something I need to talk to you about.'*"
     },
     "day4_night_phone_eunsu_2": {
         "name": "Me",
-        "text": "*Teacher Eunsu: 'Good night, {name}.'*"
+        "text": "*Ms. Eunsu: 'Good night, {name}.'*"
     },
     "day4_night_phone_eunsu_3": {
         "name": "Me",
@@ -73,79 +71,89 @@
         "name": "Me",
         "text": "*I put my phone in the drawer. The vibration kept going. I wrapped it in a towel to muffle the sound.*"
     },
-
     "day4_night_save_glitch": {
         "name": "Me",
-        "text": "*...The phone screen suddenly turned on. By itself. Light leaks from inside the drawer.*"
+        "text": "*A vibration from inside the drawer. The phone. I put it away earlier -- but it's buzzing on its own.*"
     },
     "day4_night_save_glitch_2": {
         "name": "Me",
-        "text": "*I wrapped it in a towel -- but the light passes through the towel. It's not physical light.*"
+        "text": "*I took it out. A student safety app notification is on the screen.*"
     },
     "day4_night_save_glitch_3": {
         "name": "Me",
-        "text": "*I took it out. A game app is open. ...A safety app? No, this is a different screen.*"
+        "text": "*'Subje--' Flicker. The notification changes. 'Have a good night, {name}!'*"
     },
     "day4_night_save_glitch_4": {
-        "name": "",
-        "text": "[Meta direction: The actual game's save/load screen opens by force. Without the player's input.]"
+        "name": "Me",
+        "text": "*...What did it just say?*"
     },
     "day4_night_save_glitch_5": {
         "name": "Me",
-        "text": "*I can see a list of save slots. From 1 to 13. ...12 slots I never saved are filled.*"
+        "text": "*I opened the app. It's not the usual student menu. The screen is different. White text on a black background. -- An admin panel.*"
     },
     "day4_night_save_glitch_6": {
         "name": "Me",
-        "text": "*Slot 1. Kim Dojin. Day 5 23:00 -- Processing Complete. The first. The very first me. Caught after just 3 days -- 'processed.'*"
+        "text": "***Top of screen: 'NEVERGRAD -- Subject Management System v4.7'***"
     },
     "day4_night_save_glitch_7": {
         "name": "Me",
-        "text": "*Slot 2. Lee Junseo. Processing Complete. Slot 4. Processing Complete. Slot 5. Processing Complete. Slot 6. Processing Complete.*"
+        "text": "*A list appears. 13 rows. #01 Kim Dojin -- Terminated. #02 Lee Junseo -- Terminated. #03 Park Seojin -- Terminated (Day 4 escape attempt). #04 Jeong Hayul -- Terminated. #05 Kang Minhyuk -- Terminated. #06 Yoon Jaewon -- Terminated. #07 Kim Taeho -- [REDACTED] Anomalous Response [REDACTED] (External contact: Lee Seolhwa). #08 Choi Siwoo -- Terminated. #09 Han Jiho -- Terminated (Day 3 early detection). #10 Song Yejun -- Terminated. #11 Oh Taehyun -- Terminated. #12 Im Seoyul -- Terminated. #13 {name} -- In Progress.*"
     },
     "day4_night_save_glitch_8": {
         "name": "Me",
-        "text": "***Every time 'Processing Complete' repeats -- another person who was me dies.***"
+        "text": "*13 rows. 13 names. 12 instances of 'Terminated.'*"
     },
     "day4_night_save_glitch_9": {
         "name": "Me",
-        "text": "*12 names. 12 instances of 'Processing Complete.' All of them... were me.*"
+        "text": "*I looked at the dates. The intervals aren't consistent. 3 months, 4 months, 3 months... But the duration is always the same. **5 days.***"
     },
     "day4_night_save_glitch_10": {
         "name": "Me",
-        "text": "*Slot 7. Kim Taeho. 'Side effects, external contact, escape attempt.' ...The seventh. External contact? With whom? -- Seolhwa. Lee Seolhwa.*"
+        "text": "*Only #07 is different. 'Anomalous response.' External contact: Lee Seolhwa. -- Seolhwa.*"
     },
     "day4_night_save_glitch_11": {
         "name": "Me",
-        "text": "*Only Slot 7 has a different end time. 22:47. Every other 'Processing Complete' is exactly 23:00. The seventh was 13 minutes early -- something was different.*"
+        "text": "*#09. Han Jiho. Day 3 early detection. It ended on Day 3. The 'me' who caught on fastest. The 'me' who was erased fastest.*"
     },
     "day4_night_save_glitch_12": {
         "name": "Me",
-        "text": "*Slot 3. Park Seojin. 'Day 4 escape attempt, failed.' ...I tried to escape before. And was caught. The third me also saw the basement. The third me also felt the terror. The third me also -- failed.*"
+        "text": "*#13. My name. 'In Progress.'*"
     },
     "day4_night_save_glitch_13": {
         "name": "Me",
-        "text": "*Slot 9. Han Jiho. 'Day 3 early detection.' Detected on Day 3. The 'me' who caught on fastest. And the 'me' who was processed fastest.*"
+        "text": "*I scrolled down. There are more tabs below.*"
     },
     "day4_night_save_glitch_14": {
         "name": "Me",
-        "text": "*Slot 13. In progress. -- My name is written there. Not yet 'Processing Complete.' Not yet.*"
+        "text": "*'Location Tracking Log.' I tapped it. A map appeared. The school's floor plan. A red dot moves across it. -- Four days of my movements, recorded without exception.*"
     },
     "day4_night_save_glitch_15": {
         "name": "Me",
-        "text": "*I tried touching the screen. I pressed Slot 1. 'Load this save?' Yes. -- 'Access denied.'*"
+        "text": "*Day 1: Gate -> Hallway -> Classroom -> Field -> Classroom -> Gate. Day 2: Gate -> Hallway -> Classroom -> Library -> Student Council Room -> Gate. Day 3: Gate -> Classroom -> Rooftop -> Hallway -> Classroom -> Gate. Day 4: Gate -> Classroom -> Old Building Hallway -> Nurse's Office -> Student Council Room.*"
     },
     "day4_night_save_glitch_16": {
         "name": "Me",
-        "text": "*Slot 7. 'Load this save?' Yes. -- 'This data is corrupted.'*"
+        "text": "*...Every step recorded. This app that Ms. Eunsu told me to install on Day 2 -- this is what it was from the start.*"
     },
     "day4_night_save_glitch_17": {
         "name": "Me",
-        "text": "*The screen glitches and goes dark.*"
+        "text": "*Small text at the bottom of the screen: 'Real-time monitoring active / Mic ON / Location tracking ON'*"
     },
-
+    "day4_night_save_glitch_18": {
+        "name": "Me",
+        "text": "*On Day 2, I personally pressed 'Allow All.' With my own hands.*"
+    },
+    "day4_night_save_glitch_19": {
+        "name": "Me",
+        "text": "*The app closed. By itself. Back to the normal student menu. 'Have a good night, {name}!'*"
+    },
+    "day4_night_save_glitch_20": {
+        "name": "Me",
+        "text": "*...It's the same app. Then and now. It just had a front side and a back side.*"
+    },
     "day4_night_mirror": {
         "name": "Me",
-        "text": "*...I can't breathe. I went to the bathroom. Turned on the faucet. Washed my face.*"
+        "text": "*I unbuttoned two buttons on my uniform shirt. My neck feels constricted. I went to the bathroom. Turned on the faucet. Washed my face.*"
     },
     "day4_night_mirror_2": {
         "name": "Me",
@@ -191,7 +199,6 @@
         "name": "Me",
         "text": "*...I looked at the mirror again.*"
     },
-
     "day4_night_mirror_swipe": {
         "name": "Me",
         "text": "*I raised my hand. Placed my palm on the mirror. It's cold.*"
@@ -212,7 +219,6 @@
         "name": "Me",
         "text": "*Third time. Nose. Mouth. Chin. My face is revealed.*"
     },
-
     "day4_night_mirror_hit1": {
         "name": "Me",
         "text": "***In the mirror -- the space behind me is reflected.***"
@@ -251,7 +257,7 @@
     },
     "day4_night_mirror_hit1_10": {
         "name": "Me",
-        "text": "*Eunsu's observation journal from the basement comes to mind.*"
+        "text": "*The scene of Ms. Eunsu unlocking the basement door with her key flashes through my mind.*"
     },
     "day4_night_mirror_hit1_11": {
         "name": "Me",
@@ -273,7 +279,6 @@
         "name": "Me",
         "text": "*I hear a voice. Clearly. My eardrums vibrate. But this voice -- didn't come through the air. It resonates from inside my head.*"
     },
-
     "day4_night_mirror_hit2": {
         "name": "Me",
         "text": "*My vision narrows. I stare at the mirror. My face. I look at my face.*"
@@ -308,14 +313,12 @@
     },
     "day4_night_mirror_hit2_9": {
         "name": "Me",
-        "text": "***What was yesterday's lunch. The chicken cutlet Sea packed. The coffee Teacher Eunsu made. ...I placed the hallucination of a person who died for me behind my back, and swallowed all of that while smiling with the people who killed her.***"
+        "text": "***What was yesterday's lunch. The chicken cutlet Sea packed. The coffee Ms. Eunsu made. ...I placed the hallucination of a person who died for me behind my back, and swallowed all of that while smiling with the people who killed her.***"
     },
-
     "day4_night_mirror_overlay": {
         "name": "",
-        "text": "[The 13 ID photos rapidly overlay onto the face in the mirror. #1 Kim Dojin → #3 Park Seojin → #7 Kim Taeho → ... → #12 Im Seoyul → {name}. Different hair colors, different name tags flicker and overlap, but the contours of the face align perfectly.]"
+        "text": ""
     },
-
     "day4_night_mirror_collapse": {
         "name": "Me",
         "text": "*I stumbled backward. My back hit the wall. I slid down.*"
@@ -338,7 +341,7 @@
     },
     "day4_night_mirror_collapse_6": {
         "name": "Me",
-        "text": "*...I don't know who these tears are for. For Seolhwa, for twelve names, or for myself — who never had a name at all.*"
+        "text": "*...I don't know who these tears are for. For Seolhwa, for twelve names, or for myself -- who never had a name at all.*"
     },
     "day4_night_mirror_collapse_7": {
         "name": "Me",
@@ -352,7 +355,6 @@
         "name": "Me",
         "text": "*But -- someone is beside me. Real or not. For now, that alone is enough.*"
     },
-
     "day4_night_plan": {
         "name": "Me",
         "text": "*...I don't know how long I stayed like that. Only after my tears dried did I get up.*"
@@ -395,7 +397,7 @@
     },
     "day4_night_plan_11": {
         "name": "Me",
-        "text": "*Seven. Teacher Riin has the key. She said she'd buy time until tomorrow morning.*"
+        "text": "*Seven. Nurse Riin has the key. She said she'd buy time until tomorrow morning.*"
     },
     "day4_night_plan_12": {
         "name": "Me",
@@ -434,7 +436,6 @@
         "name": "Me",
         "text": "*Head-on. I'll tell Eunsu directly. That I know about all 13 times.*"
     },
-
     "day4_night_plan_final": {
         "name": "Me",
         "text": "*I packed my bag. Evidence. Phone. Yuna's camera. The bare minimum.*"
@@ -445,13 +446,12 @@
     },
     "day4_night_plan_final_3": {
         "name": "Me",
-        "text": "***'All 12 of me failed. The thirteenth -- will do it differently.'***"
+        "text": "***'I've failed 12 times. There won't be a next time. If I forget here -- I'll be erased forever.'***"
     },
     "day4_night_plan_final_4": {
         "name": "Me",
         "text": "*...Tomorrow. The last day.*"
     },
-
     "day4_night_end": {
         "name": "",
         "text": "*-- End of Day 4 --*"

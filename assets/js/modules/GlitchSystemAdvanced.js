@@ -879,6 +879,9 @@ class GlitchSystemAdvanced {
             COMPLICIT: `#14 \uD22C\uC785 \uC2B9\uC778 \u2014 \uB2F4\uB2F9: ${playerName}`
         };
 
+        // TRUE END 추가 깜빡임 — "관찰자가 재시작을 요청하였습니다."
+        const trueEndSecondFlicker = '\uAD00\uCC30\uC790\uAC00 \uC7AC\uC2DC\uC791\uC744 \uC694\uCCAD\uD558\uC600\uC2B5\uB2C8\uB2E4.';
+
         const flickerText = flickerTexts[lastEnding];
         if (!flickerText) return; // CAGE: no flicker
 
@@ -891,10 +894,22 @@ class GlitchSystemAdvanced {
             btn.textContent = flickerText;
             btn.classList.add('glitch-text');
 
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.classList.remove('glitch-text');
-            }, flickerDuration);
+            if (lastEnding === 'TRUE') {
+                // TRUE END: 0.5초 "...다 끝났는데." 후 0.3초 "관찰자가 재시작을 요청하였습니다."
+                setTimeout(() => {
+                    if (!btn.isConnected) return;
+                    btn.textContent = trueEndSecondFlicker;
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.classList.remove('glitch-text');
+                    }, 300);
+                }, flickerDuration);
+            } else {
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('glitch-text');
+                }, flickerDuration);
+            }
         };
 
         // 첫 깜빡임은 2초 후

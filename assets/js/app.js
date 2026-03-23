@@ -273,3 +273,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }, 60000);
 })();
+
+// SPA 가상 페이지뷰 전송
+window.sendGAPageView = function(pageName) {
+    if (typeof gtag === 'function') {
+        gtag('event', 'page_view', {
+            page_title: document.title + ' - ' + pageName,
+            page_location: window.location.href + '#' + pageName
+        });
+    }
+};

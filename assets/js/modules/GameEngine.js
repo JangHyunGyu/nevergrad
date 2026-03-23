@@ -1249,6 +1249,11 @@ class GameEngine {
         const el = document.getElementById(id);
         if (el) { el.classList.remove('hidden'); el.classList.add('active'); }
 
+        // GA 가상 페이지뷰 전송
+        if (typeof window.sendGAPageView === 'function') {
+            window.sendGAPageView(id);
+        }
+
         // 타이틀 복귀 시 이어하기 버튼 상태 갱신
         if (id === 'title-screen') {
             const btn = document.getElementById('btn-continue');

@@ -71,6 +71,8 @@ class GameEngine {
         if (this.save.hasSaveData()) {
             document.getElementById('btn-continue').disabled = false;
         }
+
+        this._setupMobileKeyboardFix();
     }
 
     /**
@@ -1259,6 +1261,36 @@ class GameEngine {
             const btn = document.getElementById('btn-continue');
             if (btn) btn.disabled = !this.save.hasSaveData();
         }
+    }
+
+    // 모바일 가상키보드 추천바(suggestion bar) 분리 방지
+    // Android Chrome에서 body overflow:hidden 시 키보드 추천바가 본체에서 분리되는 버그 수정
+    _setupMobileKeyboardFix() {
+        if (!window.visualViewport) return;
+
+        this._kbResize = () => {
+            if (document.activeElement?.matches('input, textarea')) {
+                const vvh = window.visualViewport.height;
+                document.documentElement.style.height = vvh + 'px';
+                document.body.style.height = vvh + 'px';
+            }
+        };
+
+        this._kbFocusIn = (e) => {
+            if (!e.target.matches('input, textarea')) return;
+            this._kbResize();
+            window.visualViewport.addEventListener('resize', this._kbResize);
+        };
+
+        this._kbFocusOut = (e) => {
+            if (!e.target.matches('input, textarea')) return;
+            window.visualViewport.removeEventListener('resize', this._kbResize);
+            document.documentElement.style.height = '';
+            document.body.style.height = '';
+        };
+
+        document.addEventListener('focusin', this._kbFocusIn);
+        document.addEventListener('focusout', this._kbFocusOut);
     }
 
     // 모바일: 이름 입력 화면 가상 키보드 회피

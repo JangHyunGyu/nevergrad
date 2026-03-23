@@ -1278,6 +1278,9 @@ class GameEngine {
 
         this._kbFocusIn = (e) => {
             if (!e.target.matches('input, textarea')) return;
+            // overflow:hidden이 키보드 추천바 위치 계산을 깨뜨리므로 임시 해제
+            document.documentElement.style.overflow = 'clip';
+            document.body.style.overflow = 'clip';
             this._kbResize();
             window.visualViewport.addEventListener('resize', this._kbResize);
         };
@@ -1287,6 +1290,8 @@ class GameEngine {
             window.visualViewport.removeEventListener('resize', this._kbResize);
             document.documentElement.style.height = '';
             document.body.style.height = '';
+            document.documentElement.style.overflow = '';
+            document.body.style.overflow = '';
         };
 
         document.addEventListener('focusin', this._kbFocusIn);

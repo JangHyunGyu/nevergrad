@@ -1,7 +1,7 @@
 /**
- * Day 4-4: Night - 세이브 파일 글리치 & 거울 반전
+ * Day 4-4: Night - 안전 앱 글리치 & 거울 반전
  * Room return + lock, Sea escalating messages, Eunsu messages
- * ★ Save file glitch: 13 save slots (forced system menu open)
+ * ★ Safety app glitch: admin panel reveals NEVERGRAD subject management system
  * ★ Mirror reversal: Seolhwa not reflected, 13-photo overlay, "13th shell"
  * Tactical planning notes with past iteration references
  * 3-way final plan choice
@@ -132,126 +132,149 @@ Object.assign(SCENARIO[4], {
     },
 
     // ══════════════════════════════════════════
-    // ★ 세이브 파일 글리치 [메타: 시스템 메뉴 강제 오픈]
+    // ★ 안전 앱 글리치 [디제틱 메타: 앱의 어드민 패널 노출]
     // ══════════════════════════════════════════
     "day4_night_save_glitch": {
+        // 서랍 안에서 진동
         character: null,
         unskippable: true,
         next: "day4_night_save_glitch_2"
     },
     "day4_night_save_glitch_2": {
+        // 안전 앱 알림 '피험—'
         character: null,
         unskippable: true,
         next: "day4_night_save_glitch_3"
     },
     "day4_night_save_glitch_3": {
+        // 깜빡. '좋은 밤이에요'
         character: null,
         unskippable: true,
+        glitch: { noise: true, noiseDuration: 200 },
         next: "day4_night_save_glitch_4"
     },
-    // ★ 실제 세이브/로드 화면 강제 오픈
     "day4_night_save_glitch_4": {
+        // 방금 뭐라고 떴지?
         character: null,
         unskippable: true,
-        glitch: { forceSaveMenu: true, noise: true, noiseDuration: 500 },
         next: "day4_night_save_glitch_5"
     },
     "day4_night_save_glitch_5": {
+        // 앱을 열었다. 어드민 패널.
         character: null,
         unskippable: true,
-        glitch: {
-            saveSlotDisplay: true,
-            slots: [
-                { slot: 1,  day: "Day 5", time: "23:00", status: "처리 완료", name: "김도진" },
-                { slot: 2,  day: "Day 5", time: "23:00", status: "처리 완료", name: "이준서" },
-                { slot: 3,  day: "Day 4", time: "15:30", status: "탈출 시도, 실패", name: "박서진" },
-                { slot: 4,  day: "Day 5", time: "23:00", status: "처리 완료", name: "정하율" },
-                { slot: 5,  day: "Day 5", time: "23:00", status: "처리 완료", name: "강민혁" },
-                { slot: 6,  day: "Day 5", time: "23:00", status: "처리 완료", name: "윤재원" },
-                { slot: 7,  day: "Day 5", time: "22:47", status: "██역효과██ 외부 접촉, 탈출 시도", name: "김태호" },
-                { slot: 8,  day: "Day 5", time: "23:00", status: "처리 완료", name: "최시우" },
-                { slot: 9,  day: "Day 3", time: "11:20", status: "조기 발각, 강제 처리", name: "한지호" },
-                { slot: 10, day: "Day 5", time: "23:00", status: "처리 완료", name: "송예준" },
-                { slot: 11, day: "Day 5", time: "23:00", status: "처리 완료", name: "오태현" },
-                { slot: 12, day: "Day 5", time: "23:00", status: "처리 완료", name: "임서율" },
-                { slot: 13, day: "Day 4", time: "",       status: "진행 중",   name: "{name}" }
-            ]
-        },
+        glitch: { noise: true, noiseDuration: 300 },
         next: "day4_night_save_glitch_6"
     },
-    // 슬롯 1 — 김도진
+    // ★ NEVERGRAD 피험자 관리 시스템
     "day4_night_save_glitch_6": {
         character: null,
         unskippable: true,
         next: "day4_night_save_glitch_7"
     },
-    // 처리 완료 반복
     "day4_night_save_glitch_7": {
+        // 피험자 목록 표시
         character: null,
         unskippable: true,
+        glitch: {
+            adminPanel: true,
+            subjects: [
+                { id: 1,  name: "김도진", status: "종료" },
+                { id: 2,  name: "이준서", status: "종료" },
+                { id: 3,  name: "박서진", status: "종료", note: "Day 4 이탈 시도" },
+                { id: 4,  name: "정하율", status: "종료" },
+                { id: 5,  name: "강민혁", status: "종료" },
+                { id: 6,  name: "윤재원", status: "종료" },
+                { id: 7,  name: "김태호", status: "이상 반응", note: "외부 접촉: 이설화" },
+                { id: 8,  name: "최시우", status: "종료" },
+                { id: 9,  name: "한지호", status: "종료", note: "Day 3 조기 발각" },
+                { id: 10, name: "송예준", status: "종료" },
+                { id: 11, name: "오태현", status: "종료" },
+                { id: 12, name: "임서율", status: "종료" },
+                { id: 13, name: "{name}", status: "진행 중" }
+            ]
+        },
         next: "day4_night_save_glitch_8"
     },
     "day4_night_save_glitch_8": {
+        // 13개의 행. 12개의 '종료'.
         character: null,
         unskippable: true,
-        glitch: { noise: true, noiseDuration: 400 },
         next: "day4_night_save_glitch_9"
     },
     "day4_night_save_glitch_9": {
+        // 날짜 간격, 5일
         character: null,
         unskippable: true,
         next: "day4_night_save_glitch_10"
     },
-    // 슬롯 7 — 김태호 (역효과, 설화)
     "day4_night_save_glitch_10": {
+        // #07 이상 반응. 이설화.
         character: null,
         unskippable: true,
         next: "day4_night_save_glitch_11"
     },
-    // 슬롯 7 종료시간 차이: 22:47 vs 23:00
     "day4_night_save_glitch_11": {
+        // #09 한지호. Day 3 조기 발각.
         character: null,
         unskippable: true,
         next: "day4_night_save_glitch_12"
     },
-    // 슬롯 3 — 박서진 (Day 4 탈출 실패)
     "day4_night_save_glitch_12": {
+        // #13 내 이름. '진행 중'.
         character: null,
         unskippable: true,
+        glitch: { noise: true, noiseDuration: 300 },
         next: "day4_night_save_glitch_13"
     },
-    // 슬롯 9 — 한지호 (Day 3 조기 발각)
     "day4_night_save_glitch_13": {
+        // 스크롤. 아래에 탭.
         character: null,
         unskippable: true,
         next: "day4_night_save_glitch_14"
     },
-    // 슬롯 13 — 진행 중 (나)
     "day4_night_save_glitch_14": {
+        // '위치 추적 기록'. 지도.
         character: null,
         unskippable: true,
-        glitch: { noise: true, noiseDuration: 300 },
         next: "day4_night_save_glitch_15"
     },
-    // 슬롯 1 로드 시도 → 권한 없음
     "day4_night_save_glitch_15": {
+        // Day 1~4 동선 기록
         character: null,
         unskippable: true,
-        glitch: { saveSlotInteract: 1, result: "권한이 없습니다." },
         next: "day4_night_save_glitch_16"
     },
-    // 슬롯 7 로드 시도 → 데이터 손상
     "day4_night_save_glitch_16": {
+        // 모든 발걸음이 기록. Day 2에 설치한 앱.
         character: null,
         unskippable: true,
-        glitch: { saveSlotInteract: 7, result: "해당 데이터는 손상되었습니다." },
         next: "day4_night_save_glitch_17"
     },
-    // 화면 글리치 → 꺼짐
     "day4_night_save_glitch_17": {
+        // 실시간 모니터링 / 마이크 ON / 위치추적 ON
         character: null,
         unskippable: true,
-        glitch: { heavyGlitch: true, screenOff: true },
+        next: "day4_night_save_glitch_18"
+    },
+    "day4_night_save_glitch_18": {
+        // Day 2에 내가 직접 '전부 허용'
+        character: null,
+        unskippable: true,
+        next: "day4_night_save_glitch_19"
+    },
+    "day4_night_save_glitch_19": {
+        // 앱이 꺼졌다. '좋은 밤이에요, {name}!'
+        character: null,
+        unskippable: true,
+        glitch: { noise: true, noiseDuration: 400 },
+        next: "day4_night_save_glitch_20"
+    },
+    "day4_night_save_glitch_20": {
+        // ...같은 앱이다. 앞면과 뒷면.
+        character: null,
+        unskippable: true,
+        glitch: { heavyGlitch: true },
         vibrate: "heartbeat",
         next: "day4_night_mirror"
     },

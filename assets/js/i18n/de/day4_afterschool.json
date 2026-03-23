@@ -5,13 +5,12 @@
     },
     "day4_after_start_2": {
         "name": "Ich",
-        "text": "*Was ich im Keller gesehen habe. Die Tabellen. Das Beobachtungstagebuch. Yuna. ...Das wahre Gesicht dieser Schule.*"
+        "text": "*Die Geraeusche hinter der Kellertuer. Yunas Stoehnen. Frau Eunsus Schluessel. ...Das wahre Gesicht dieser Schule.*"
     },
     "day4_after_start_3": {
         "name": "Ich",
         "text": "*Sea geht Richtung Schülervertretungsraum. Eunsu dürfte im Lehrerzimmer sein. Riin ist im Krankenzimmer. ...Zu wem gehe ich zuerst?*"
     },
-
     "day4_after_choice": {
         "name": "Ich",
         "text": "*Ich muss mich entscheiden.*",
@@ -21,7 +20,6 @@
             "Riin konfrontieren"
         ]
     },
-
     "day4_after_sea_route": {
         "name": "Ich",
         "text": "*Ich folgte Sea zum Schülervertretungsraum.*"
@@ -66,7 +64,6 @@
         "name": "Han Sea",
         "text": "\"Nichts... vergiss es.\""
     },
-
     "day4_after_sea_force": {
         "name": "Ich",
         "text": "*'Vergiss es.' Wie grausam dieses Wort in dieser Situation ist -- das weiß nur Sea. Auswahlmöglichkeiten erscheinen.*",
@@ -77,7 +74,7 @@
     },
     "day4_after_sea_accept": {
         "name": "Ich",
-        "text": "*Im Moment der Auswahl -- friert der Bildschirm 0,3 Sekunden ein. Beide Optionen blinken gleichzeitig und verschmelzen zu einer. Egal welche ich wähle, dasselbe Ergebnis. Für Sea sind 'Wahlmöglichkeiten' bedeutungslos -- alle zwölf Male endeten gleich.*"
+        "text": "*...Die Optionen haben sich geändert. Nein — von Anfang an gab es nur eine.*"
     },
     "day4_after_sea_accept_2": {
         "name": "Han Sea",
@@ -87,86 +84,61 @@
         "name": "Ich",
         "text": "*Sea blickt aus dem Fenster. Der Sonnenuntergang taucht den Raum in Rot.*"
     },
-
     "day4_after_sea_12loop": {
-        "name": "Han Sea",
-        "text": "\"...Zwölf Mal.\""
+        "name": "Ich",
+        "text": "*Sea umarmte mich. Ihre Haende pressen sich fest auf meinen Ruecken.*"
     },
     "day4_after_sea_12loop_2": {
         "name": "Ich",
-        "text": "\"...Was?\""
+        "text": "*Sea fluestert. So nah, dass ihre Lippen mein Ohr beruehren.*"
     },
     "day4_after_sea_12loop_3": {
         "name": "Han Sea",
-        "text": "\"Zwölf Mal lang... jedes Mal in diesem Raum hast du gelächelt und gesagt 'Ich komme morgen wieder.' Jedes Mal hast du 'danke' zu mir gesagt. Jedes Mal hast du gesagt, mein Mittagessen sei lecker.\""
+        "text": "\"...Seojin.\""
     },
     "day4_after_sea_12loop_4": {
-        "name": "Han Sea",
-        "text": "\"Und jedes Mal... am fünften Tag hast du mich vergessen.\""
+        "name": "Ich",
+        "text": "*...Was?*"
     },
     "day4_after_sea_12loop_5": {
         "name": "Ich",
-        "text": "*Tränen fließen aus Seas Augen. Sie wischt sie nicht weg.*"
+        "text": "\"...Wer?\""
     },
     "day4_after_sea_12loop_6": {
-        "name": "Han Sea",
-        "text": "\"Beim neunten Mal... hast du mir ein Armband gemacht. Mit 'Sea' eingraviert. Ich habe es noch.\""
+        "name": "Ich",
+        "text": "*Seas Koerper erstarrt. Sie hat gemerkt, was sie gesagt hat.*"
     },
     "day4_after_sea_12loop_7": {
         "name": "Ich",
-        "text": "*Sea krempelt ihren Ärmel hoch. Ein abgenutztes Fadenarmband ist um ihr Handgelenk gewickelt. Der Faden ist ausgefranst. Sieht Jahre alt aus.*"
+        "text": "*Seojin. Der Name auf dem 3. Namensschild. Park Seojin.*"
     },
     "day4_after_sea_12loop_8": {
         "name": "Han Sea",
-        "text": "\"Beim zehnten Mal hast du das angesehen und gefragt 'Hübsch, wer hat dir das geschenkt?'\""
+        "text": "\"...Nichts.\""
     },
     "day4_after_sea_12loop_9": {
-        "name": "Han Sea",
-        "text": "\"Du hattest es mir gemacht. Aber du hattest keine Erinnerung daran.\""
+        "name": "Ich",
+        "text": "*Sea laesst mich nicht los. Im Gegenteil, sie drueckt mich noch fester. Ihre Schultern zittern.*"
     },
     "day4_after_sea_12loop_10": {
         "name": "Ich",
-        "text": "*Sea lächelte. Während sie weinte.*"
+        "text": "*Als sie den Aermel hochkrempelte, sah ich es. Ein altes Fadenarmband am Handgelenk. Der Faden ist ausgefranst. Sieht Jahre alt aus.*"
     },
     "day4_after_sea_12loop_11": {
-        "name": "Han Sea",
-        "text": "\"Ich wünschte, dieses Mal wäre es anders. Jedes Mal habe ich mir gewünscht, es wäre anders.\""
+        "name": "Ich",
+        "text": "*...Darauf ist ein Name eingraviert. 'Sea'. Ein handgemachtes Armband. -- In meiner Handschrift.*"
     },
     "day4_after_sea_12loop_12": {
         "name": "Ich",
-        "text": "*Seas Stimme zittert.*"
+        "text": "*Sea hat es bemerkt. Dass ich das Armband betrachte.*"
     },
     "day4_after_sea_12loop_13": {
         "name": "Han Sea",
-        "text": "\"...{name} erinnert sich nicht, aber. Ich erinnere mich an alle zwölf Male.\""
+        "text": "\"...Huebsch, oder?\""
     },
     "day4_after_sea_12loop_14": {
         "name": "Ich",
-        "text": "*Sea umarmte mich. Ihre Hände pressen sich fest auf meinen Rücken.*"
-    },
-    "day4_after_sea_12loop_15": {
-        "name": "Ich",
-        "text": "*...Dieses Zittern. Ich kann Seas Herzschlag hören. Schnell. Unregelmäßig. Das ist -- der Herzschlag von jemandem, der kurz vor dem Zusammenbruch steht.*"
-    },
-    "day4_after_sea_12loop_16": {
-        "name": "Ich",
-        "text": "*Seas Schultern zittern.*"
-    },
-    "day4_after_sea_12loop_17": {
-        "name": "Ich",
-        "text": "*Seas Besitzdenken wurde aus zwölf Zyklen Trauma geboren. Der Schmerz, sich alle fünf Tage zu verlieben und dann wieder jemanden zu treffen, der jede Erinnerung verloren hat. 'Verändere dich nicht' bedeutete eigentlich 'vergiss mich nicht,' und 'bleib immer an meiner Seite' bedeutete 'verschwinde nie wieder.'*"
-    },
-    "day4_after_sea_12loop_18": {
-        "name": "Han Sea",
-        "text": "\"Morgen... ist der fünfte Tag.\""
-    },
-    "day4_after_sea_12loop_19": {
-        "name": "Han Sea",
-        "text": "\"Nach morgen wirst du wieder verschwinden.\""
-    },
-    "day4_after_sea_12loop_20": {
-        "name": "Han Sea",
-        "text": "\"...Aber wenigstens für heute. Bleib hier bei mir.\""
+        "text": "*Sie laechelt. Waehrend sie weint.*"
     },
     "day4_after_ft_sea_pre": {
         "name": "Ich",
@@ -180,88 +152,70 @@
         "name": "Ich",
         "text": "*Sea ließ los. Egal was ich sagte, ihre Augen änderten sich nicht. Nicht traurig, nicht wütend — nur alte Resignation.*"
     },
-
     "day4_after_eunsu_route": {
         "name": "Ich",
         "text": "*Ich ging zum Lehrerzimmer. Ich kann dem nicht mehr ausweichen. Ich muss direkt fragen.*"
     },
     "day4_after_eunsu_2": {
         "name": "Ich",
-        "text": "*Eunsu sieht mich und seufzt. Ein müder Ausdruck. Dunkle Augenringe. Er ist allein im Lehrerzimmer. Alle anderen Lehrer haben ihre Plätze verlassen. -- Sind sie gegangen, oder wurden sie weggeschickt?*"
+        "text": "*Frau Eunsu sieht mich und seufzt. Ein mueder Ausdruck. Dunkle Ringe unter den Augen. Sie ist allein im Lehrerzimmer. Alle anderen Lehrer haben ihre Plaetze verlassen. -- Sind sie gegangen, oder wurden sie weggeschickt.*"
     },
     "day4_after_eunsu_3": {
         "name": "Eunsu",
-        "text": "\"...Du hast es gesehen. Den Keller.\""
+        "text": "\"...Du warst also im Altbau.\""
     },
     "day4_after_eunsu_4": {
         "name": "Eunsu",
-        "text": "\"...Du weißt, dass du der Dreizehnte bist, oder?\""
+        "text": "\"Bist du bis zur Tuer gekommen?\""
     },
     "day4_after_eunsu_5": {
         "name": "Ich",
-        "text": "*Er spricht, während er Kaffee kocht. Ruhig. Seine Hände zittern nicht beim Eingießen. Als hätte er sich auf dieses Gespräch vorbereitet.*"
+        "text": "*Die Lehrerin kocht Kaffee. Zwei Tassen. Eine stellt sie vor mich hin.*"
     },
     "day4_after_eunsu_6": {
-        "name": "Eunsu",
-        "text": "\"Von Anfang an wollte ich das nicht.\""
+        "name": "Ich",
+        "text": "*...Zwei Loeffel Zucker, einen halben Schuss Sahne. Genau wie ich es gestern im Lehrerzimmer genommen habe.*"
     },
     "day4_after_eunsu_7": {
-        "name": "Eunsu",
-        "text": "\"Beim ersten Mal... bist du nach drei Tagen geflohen. Wir haben dich eingefangen und deine Erinnerung gelöscht.\""
+        "name": "Ich",
+        "text": "*...Ich habe es ihr nie gesagt. Sie hat es gestern nur einmal gesehen.*"
     },
     "day4_after_eunsu_8": {
         "name": "Eunsu",
-        "text": "\"Damals war es einfach nur Arbeit. Probandenverwaltung. Nicht mehr, nicht weniger.\""
+        "text": "\"Stimmt doch, oder? Dein Geschmack.\""
     },
     "day4_after_eunsu_9": {
-        "name": "Eunsu",
-        "text": "\"Beim dritten Mal ungefähr... kamst du ins Lehrerzimmer und sagtest 'Lehrer, können Sie mich beraten?' Die gleichen Worte mit dem gleichen Ausdruck jedes Mal.\""
+        "name": "Ich",
+        "text": "*Die Lehrerin laechelt. Dieses Laecheln -- ist ein neuer Typ. Nicht das warme Laecheln von Tag 1, sondern das einer Person, die lange gewartet hat und endlich ihr Gegenueber vor sich sieht -- Erleichterung.*"
     },
     "day4_after_eunsu_10": {
-        "name": "Eunsu",
-        "text": "\"Da spürte ich, dass etwas nicht stimmte. Dieselben Worte zum dritten Mal hören -- warum tat es weh?\""
+        "name": "Ich",
+        "text": "*Die Schreibtischschublade steht halb offen. Darin kleben Post-its. Dutzende. Vollgeschrieben. -- Alles Namen. Verschiedene Namen. Einige sind durchgestrichen.*"
     },
     "day4_after_eunsu_11": {
         "name": "Ich",
-        "text": "*Er nimmt einen Schluck Kaffee. Ein Lippenabdruck bleibt auf der Tasse.*"
+        "text": "*Auf dem untersten Post-it steht mein Name. Nicht durchgestrichen.*"
     },
     "day4_after_eunsu_12": {
         "name": "Eunsu",
-        "text": "\"Ab dem fünften Mal ungefähr... freute ich mich auf deine Besuche.\""
+        "text": "\"...Du hast alles gesehen. Den Keller.\""
     },
     "day4_after_eunsu_13": {
-        "name": "Eunsu",
-        "text": "\"Wenn ich deine Erinnerung lösche, kann ich dich wiedersehen. Wieder vom ersten Tag an. Du wirst mich wieder begrüßen kommen.\""
+        "name": "Ich",
+        "text": "*Stille.*"
     },
     "day4_after_eunsu_14": {
-        "name": "Ich",
-        "text": "*Seine Stimme zittert.*"
+        "name": "Park Eunsu",
+        "text": "\"Es wird alles gut, {name}. Deine Lehrerin kuemmert sich um alles.\""
     },
     "day4_after_eunsu_15": {
-        "name": "Eunsu",
-        "text": "\"Wenn ich deine Erinnerung lösche, ist alles gelöst. Dieser erste Morgen, als du hierher versetzt wurdest... wir können immer dorthin zurück.\""
+        "name": "Ich",
+        "text": "*Ihre Hand streichelt mir ueber das Haar. Sanft.*"
     },
     "day4_after_eunsu_16": {
         "name": "Ich",
-        "text": "*Seine Hand zittert. Die Kaffeetasse schwankt leicht.*"
+        "text": "*...Diese Hand hat zwoelf Mal die Erinnerung geloescht.*"
     },
-    "day4_after_eunsu_17": {
-        "name": "Eunsu",
-        "text": "\"...Ob das Liebe oder Obsession ist, weiß ich selbst nicht mehr. Nach zwölf Wiederholungen... verschwindet die Grenze.\""
-    },
-    "day4_after_eunsu_18": {
-        "name": "Ich",
-        "text": "*Er steht vor mir. Nah.*"
-    },
-    "day4_after_eunsu_19": {
-        "name": "Eunsu",
-        "text": "\"Es wird alles gut, {name}. Ich kümmere mich um alles.\""
-    },
-    "day4_after_eunsu_20": {
-        "name": "Ich",
-        "text": "*Seine Hand streichelt mein Haar. Sanft. Warm. ...Zwölf Mal. Zwölf Mal hat diese Hand mein Haar gestreichelt. Zwölf Mal sagte er 'es wird alles gut.' Zwölf Mal löschte er meine Erinnerung. **Diese Wärme ist furchteinflößend.***"
-    },
-
     "day4_after_riin_route": {
         "name": "Ich",
         "text": "*Ich ging zum Krankenzimmer. Nicht wegen Medizin. Es gibt etwas, das ich bestätigen muss.*"
@@ -300,7 +254,7 @@
     },
     "day4_after_riin_10": {
         "name": "Ich",
-        "text": "\"Alles. Die Tabellen. Das Beobachtungstagebuch. Yuna.\""
+        "text": "\"Ich habe Yunas Stimme gehoert. Hinter der Tuer. Und ich habe gesehen, wie Frau Eunsu die Tuer mit einem Schluessel geoeffnet hat und hineingegangen ist.\""
     },
     "day4_after_riin_11": {
         "name": "Ich",
@@ -340,7 +294,7 @@
     },
     "day4_after_riin_20": {
         "name": "Riin",
-        "text": "\"Der Notausgangsschlüssel für den Altbau. Morgen.\""
+        "text": "\"Morgen.\""
     },
     "day4_after_riin_21": {
         "name": "Ich",
@@ -360,7 +314,7 @@
     },
     "day4_after_riin_25": {
         "name": "Riin",
-        "text": "\"Warte einfach bis morgen früh. Ich muss mich auch noch vorbereiten.\""
+        "text": "\"...Ich verschaffe dir Zeit. Bis morgen frueh.\""
     },
     "day4_after_riin_26": {
         "name": "Ich",
@@ -370,12 +324,10 @@
         "name": "Riin",
         "text": "\"...Ich kann auch nicht mehr. Das hier.\""
     },
-
     "day4_after_end": {
         "name": "Ich",
         "text": "*Die Sonne ist untergegangen. Die Schule versinkt in Dunkelheit. Morgen kommt. Der fünfte Tag.*"
     },
-
     "day4_xover_yuna_1": {
         "name": "",
         "text": "*Als ich das Klassenzimmer verlasse — Yuna steht im Flur. Sie hat gewartet.*"

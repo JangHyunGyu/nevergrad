@@ -190,98 +190,82 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_12loop"
     },
 
-    // 세아의 12번 루프 고백
+    // 세아의 Show don't tell — 서진, 팔찌
     "day4_after_sea_12loop": {
+        // 세아가 나를 안았다
         character: "sea_sad",
         unskippable: true,
         next: "day4_after_sea_12loop_2"
     },
     "day4_after_sea_12loop_2": {
+        // 세아가 중얼거린다
         character: "sea_sad",
         next: "day4_after_sea_12loop_3"
     },
     "day4_after_sea_12loop_3": {
+        // "...서진아."
         character: "sea_sad",
         unskippable: true,
         next: "day4_after_sea_12loop_4"
     },
     "day4_after_sea_12loop_4": {
-        character: "sea_sad",
+        // ...뭐?
+        character: null,
         unskippable: true,
         next: "day4_after_sea_12loop_5"
     },
     "day4_after_sea_12loop_5": {
-        character: "sea_sad",
+        // "...누구?"
+        character: null,
         next: "day4_after_sea_12loop_6"
     },
     "day4_after_sea_12loop_6": {
-        // 팔찌 공개
+        // 세아의 몸이 굳었다
         character: "sea_cry",
         unskippable: true,
         next: "day4_after_sea_12loop_7"
     },
     "day4_after_sea_12loop_7": {
-        character: "sea_cry",
+        // 서진. 3번째 이름표.
+        character: null,
         next: "day4_after_sea_12loop_8"
     },
     "day4_after_sea_12loop_8": {
+        // "...아무것도 아니야."
         character: "sea_cry",
         unskippable: true,
         next: "day4_after_sea_12loop_9"
     },
     "day4_after_sea_12loop_9": {
+        // 세아가 나를 놓지 않는다. 어깨가 떨린다.
         character: "sea_cry",
         unskippable: true,
         next: "day4_after_sea_12loop_10"
     },
     "day4_after_sea_12loop_10": {
+        // 실팔찌 발견
         character: "sea_cry",
         next: "day4_after_sea_12loop_11"
     },
     "day4_after_sea_12loop_11": {
-        character: "sea_cry",
+        // '세아'. 내 필체다.
+        character: null,
         unskippable: true,
         next: "day4_after_sea_12loop_12"
     },
     "day4_after_sea_12loop_12": {
+        // 세아가 눈치챘다
         character: "sea_cry",
         next: "day4_after_sea_12loop_13"
     },
     "day4_after_sea_12loop_13": {
+        // "...예쁘지?"
         character: "sea_cry",
         unskippable: true,
         next: "day4_after_sea_12loop_14"
     },
     "day4_after_sea_12loop_14": {
-        character: "sea_cry",
-        next: "day4_after_sea_12loop_15"
-    },
-    "day4_after_sea_12loop_15": {
-        // 포옹
-        character: "sea_cry",
-        sfx: "sfx_heartbeat_fast.mp3",
-        unskippable: true,
-        next: "day4_after_sea_12loop_16"
-    },
-    "day4_after_sea_12loop_16": {
-        character: "sea_cry",
-        next: "day4_after_sea_12loop_17"
-    },
-    "day4_after_sea_12loop_17": {
-        character: "sea_cry",
-        next: "day4_after_sea_12loop_18"
-    },
-    "day4_after_sea_12loop_18": {
-        character: "sea_cry",
-        unskippable: true,
-        next: "day4_after_sea_12loop_19"
-    },
-    "day4_after_sea_12loop_19": {
-        character: "sea_cry",
-        unskippable: true,
-        next: "day4_after_sea_12loop_20"
-    },
-    "day4_after_sea_12loop_20": {
+        // 웃고 있다. 울면서.
         character: "sea_cry",
         unskippable: true,
         glitch: { noise: true },
@@ -333,73 +317,72 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_5"
     },
     "day4_after_eunsu_5": {
+        // 커피를 내린다. 잔 두 개.
         character: "eunsu_serious",
         next: "day4_after_eunsu_6"
     },
     "day4_after_eunsu_6": {
-        character: "eunsu_serious",
+        // 설탕 두 스푼, 크림 반
+        character: null,
         unskippable: true,
         next: "day4_after_eunsu_7"
     },
     "day4_after_eunsu_7": {
-        character: "eunsu_serious",
+        // 내가 알려준 적 없다
+        character: null,
         unskippable: true,
         next: "day4_after_eunsu_8"
     },
     "day4_after_eunsu_8": {
+        // "맞지? 네 취향."
         character: "eunsu_serious",
         next: "day4_after_eunsu_9"
     },
     "day4_after_eunsu_9": {
-        character: "eunsu_serious",
+        // 선생님이 웃는다. 안도.
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day4_after_eunsu_10"
     },
     "day4_after_eunsu_10": {
-        character: "eunsu_serious",
+        // 서랍. 포스트잇. 이름들.
+        character: null,
+        unskippable: true,
         next: "day4_after_eunsu_11"
     },
     "day4_after_eunsu_11": {
-        character: "eunsu_serious",
+        // 맨 아래 포스트잇에 내 이름
+        character: null,
+        unskippable: true,
         next: "day4_after_eunsu_12"
     },
     "day4_after_eunsu_12": {
+        // "...다 봤구나. 지하실."
         character: "eunsu_serious",
         unskippable: true,
         next: "day4_after_eunsu_13"
     },
     "day4_after_eunsu_13": {
-        character: "eunsu_serious",
+        // 침묵.
+        character: null,
         next: "day4_after_eunsu_14"
     },
     "day4_after_eunsu_14": {
-        character: "eunsu_serious",
+        // "괜찮아, {name}. 선생님이 다 해결해줄게."
+        character: "eunsu_gentle",
+        unskippable: true,
         next: "day4_after_eunsu_15"
     },
     "day4_after_eunsu_15": {
-        character: "eunsu_serious",
+        // 선생님의 손이 내 머리를 쓰다듬는다
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day4_after_eunsu_16"
     },
     "day4_after_eunsu_16": {
-        character: "eunsu_serious",
-        next: "day4_after_eunsu_17"
-    },
-    "day4_after_eunsu_17": {
+        // ...이 손이 12번의 기억을 지웠다
         character: "eunsu_gentle",
         unskippable: true,
-        next: "day4_after_eunsu_18"
-    },
-    "day4_after_eunsu_18": {
-        character: "eunsu_gentle",
-        next: "day4_after_eunsu_19"
-    },
-    "day4_after_eunsu_19": {
-        character: "eunsu_gentle",
-        next: "day4_after_eunsu_20"
-    },
-    "day4_after_eunsu_20": {
-        character: "eunsu_gentle",
         glitch: { heavyGlitch: true },
         next: "day4_after_end",
         setFlags: ["eunsu_confession_d4"]

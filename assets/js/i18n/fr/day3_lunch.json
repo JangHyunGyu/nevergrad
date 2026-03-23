@@ -5,15 +5,15 @@
     },
     "day3_lunch_note_yuna": {
         "name": "Moi",
-        "text": "*« Senpai, venez sur le toit à midi. Seul, s'il vous plaît. C'est important. – Yuna »*"
+        "text": "*'Senpai, venez sur le toit a midi. Seul, s'il vous plait. C'est important. - Yuna'*"
     },
     "day3_lunch_note_yuna_2": {
         "name": "Moi",
-        "text": "*Yuna... la fille de la bibliothèque. Qu'est-ce qui se passe ?*"
+        "text": "*Yuna... la fille de la bibliotheque. Qu'est-ce qui se passe ?*"
     },
     "day3_lunch_note_unknown": {
         "name": "Moi",
-        "text": "*« Senpai, venez sur le toit à midi. Seul, s'il vous plaît. C'est important. – Yuna »*"
+        "text": "*'Senpai, venez sur le toit a midi. Seul, s'il vous plait. C'est important. - Yuna'*"
     },
     "day3_lunch_note_unknown_2": {
         "name": "Moi",
@@ -21,14 +21,14 @@
     },
     "day3_lunch_note_unknown_3": {
         "name": "Moi",
-        "text": "*Sûrement une blague. Pas de raison d'aller voir quelqu'un que je ne connais même pas.*"
+        "text": "*Surement une blague. Pas de raison d'aller voir quelqu'un que je ne connais meme pas.*"
     },
     "day3_lunch_choice_no_yuna": {
         "name": "Moi",
         "text": "*...Qu'est-ce que je fais ?*",
         "choices": [
-            "Déjeuner avec Sea",
-            "Aller à l'infirmerie",
+            "Dejeuner avec Sea",
+            "Aller a l'infirmerie",
             "Rester seul en classe"
         ]
     },
@@ -39,181 +39,129 @@
             "Aller sur le toit",
             "Dejeuner avec Sea",
             "Aller a l'infirmerie",
-            "Rester seul dans la classe"
+            "Rester seul en classe"
         ]
     },
 
     "day3_lunch_rooftop_1": {
         "name": "Yuna",
-        "text": "\"...Vous etes venu. Merci, senpai.\""
+        "text": "\"...Vous etes venu.\""
     },
     "day3_lunch_rooftop_2": {
         "name": "Moi",
-        "text": "*Yuna sort une carte memoire de ses mains tremblantes.*"
+        "text": "*Yuna me tend l'appareil photo sans un mot.*"
     },
     "day3_lunch_rooftop_3": {
-        "name": "Yuna",
-        "text": "\"Je ne pouvais plus garder ca pour moi toute seule...\""
+        "name": "Moi",
+        "text": "*Ses mains tremblent. Les mains de Yuna. Ses doigts sont blancs a force de serrer l'appareil.*"
     },
     "day3_lunch_rooftop_4": {
         "name": "Yuna",
-        "text": "\"Senpai, je suis dans ce lycee depuis 3 ans. Je suis au club photo. Je photographie tout ce qui se passe a l'ecole.\""
+        "text": "\"...Faites defiler.\""
     },
     "day3_lunch_rooftop_5": {
-        "name": "Yuna",
-        "text": "\"A chaque fois qu'un eleve transfere arrivait, je le photographiais. Pour les archives.\""
+        "name": "Moi",
+        "text": "*J'ai pris l'appareil. Une photo s'affiche a l'ecran.*"
     },
     "day3_lunch_rooftop_6": {
         "name": "Moi",
-        "text": "*Yuna fait defiler l'ecran de l'appareil photo.*"
+        "text": "*Un eleve debout devant le portail de l'ecole. Cheveux noirs courts. Uniforme raide. Badge : 'Kim Dojin'.*"
     },
     "day3_lunch_rooftop_7": {
-        "name": "Yuna",
-        "text": "\"Celui-ci est le transfere numero 1, arrive il y a 3 ans.\""
+        "name": "Moi",
+        "text": "*Photo suivante.*"
     },
     "day3_lunch_rooftop_8": {
         "name": "Moi",
-        "text": "*Une photo. Un eleve debout devant le portail de l'ecole. Cheveux noirs courts. Uniforme raide. Badge : 'Kim Dojin'.*"
+        "text": "*Meme portail. Un autre eleve. Cheveux bruns. Badge : 'Park Seojin'.*"
     },
     "day3_lunch_rooftop_9": {
-        "name": "Yuna",
-        "text": "\"Celui-ci est le numero 3, arrive apres.\""
+        "name": "Moi",
+        "text": "*Suivante.*"
     },
     "day3_lunch_rooftop_10": {
         "name": "Moi",
-        "text": "*Une photo. Meme portail. Un autre eleve. Cheveux bruns. Badge : 'Park Seojin'.*"
+        "text": "*Un garcon aux cheveux longs. Visage emacier. Badge : 'Kim Taeho'.*"
     },
     "day3_lunch_rooftop_11": {
-        "name": "Yuna",
-        "text": "\"Celui-ci est le numero 7.\""
+        "name": "Moi",
+        "text": "*Suivante. Suivante. Suivante. Suivante.*"
     },
     "day3_lunch_rooftop_12": {
         "name": "Moi",
-        "text": "*Une photo. Un garcon aux cheveux longs. Visage emacier. Badge : 'Kim Taeho'.*"
+        "text": "*...La derniere photo. Devant le portail. Hier matin.*"
     },
     "day3_lunch_rooftop_13": {
-        "name": "Yuna",
-        "text": "\"...Et celui-ci, c'est vous, senpai.\""
+        "name": "Moi",
+        "text": "*C'est ma photo.*"
     },
     "day3_lunch_rooftop_14": {
         "name": "Moi",
-        "text": "*Une photo. Devant le portail. Hier matin. C'est ma photo.*"
+        "text": "*...*"
     },
     "day3_lunch_rooftop_15": {
         "name": "Moi",
-        "text": "*...Attendez.*"
+        "text": "*Je n'ai pas pu reposer l'appareil. J'ai refait defiler depuis le debut. Lentement. Une par une.*"
     },
     "day3_lunch_rooftop_16": {
         "name": "Moi",
-        "text": "*Yuna dispose les photos cote a cote sur un seul ecran. Du numero 1 au 13. Differentes couleurs de cheveux. Differents badges. Differents styles d'uniforme. **Mais ce sont tous des garcons. Le meme garcon.***"
+        "text": "*Differentes couleurs de cheveux. Differents badges.*"
     },
     "day3_lunch_rooftop_17": {
         "name": "Moi",
-        "text": "***13 photos. 13 noms. Tous le meme visage.***"
+        "text": "***Les memes yeux. Le meme nez. La meme bouche.***"
     },
     "day3_lunch_rooftop_18": {
         "name": "Moi",
-        "text": "*...C'est mon visage.*"
+        "text": "***13 photos. 13 personnes. Un seul visage.***"
     },
     "day3_lunch_rooftop_19": {
-        "name": "Yuna",
-        "text": "\"Senpai... **pourquoi les 13 ont-ils exactement le meme visage ?**\""
+        "name": "Moi",
+        "text": "*Yuna ne dit rien. Elle me regarde, c'est tout. Ses yeux sont rouges.*"
     },
     "day3_lunch_rooftop_20": {
-        "name": "Yuna",
-        "text": "\"Senpai... pourquoi est-ce qu'ils agissent tous comme s'ils ne connaissaient pas leur propre nom, comme s'ils etaient des inconnus qui venaient d'arriver...?\""
+        "name": "Moi",
+        "text": "*La main qui tient l'appareil tremble. -- Ma main.*"
     },
     "day3_lunch_rooftop_21": {
         "name": "Moi",
-        "text": "*...Les photos se superposent devant mes yeux. Je n'arrive pas à faire le point.*"
+        "text": "*J'ai regarde Yuna. Elle se mord la levre. Trois ans qu'elle gardait ca toute seule. Ces photos.*"
     },
     "day3_lunch_rooftop_22": {
         "name": "Moi",
-        "text": "*La voix de Yuna semble s'éloigner. Mes oreilles bourdonnent.*"
+        "text": "*...Je ne sais meme pas quelle question poser. Les mots ne se forment pas dans ma tete.*"
     },
     "day3_lunch_rooftop_23": {
         "name": "Moi",
-        "text": "\"...C'est pas du montage ? Avec Photoshop ou quelque chose...\""
+        "text": "*Yuna finit par ouvrir la bouche. D'une petite voix.*"
     },
     "day3_lunch_rooftop_24": {
         "name": "Yuna",
-        "text": "\"Ca fait 3 ans, senpai. Pendant 3 ans, le meme visage avec un badge different est venu dans ce lycee a chaque fois. Je pensais que je devenais folle.\""
+        "text": "\"...A chaque fois, ils disparaissent. Une semaine au plus.\""
     },
     "day3_lunch_rooftop_25": {
-        "name": "Yuna",
-        "text": "\"Je n'ai pu le dire a personne. Qui m'aurait crue ? Moi-meme je n'y croyais pas au debut.\""
+        "name": "Moi",
+        "text": "*C'est tout. Cette seule phrase.*"
     },
     "day3_lunch_rooftop_26": {
         "name": "Moi",
-        "text": "*Les yeux de Yuna sont rouges. Elle se mord la levre. L'appareil photo dans ses mains tremble.*"
+        "text": "*...Le 13e.*"
     },
     "day3_lunch_rooftop_27": {
-        "name": "Yuna",
-        "text": "\"Quand le numero 1 est arrive... j'etais en sixieme. A l'epoque je me suis juste dit, ah, un nouvel eleve transfere.\""
+        "name": "Moi",
+        "text": "*J'ai tire sur ma cravate. J'essaie d'inspirer mais l'air se bloque dans ma gorge.*"
     },
     "day3_lunch_rooftop_28": {
-        "name": "Yuna",
-        "text": "\"Quand le numero 3 est arrive, j'ai senti que quelque chose clochait. Ils se ressemblaient, je me suis dit. Mais quand j'en ai parle autour de moi, tout le monde m'a dit 'De quoi tu parles ?'. Meme les profs.\""
+        "name": "Moi",
+        "text": "*J'allais rendre l'appareil a Yuna -- elle a secoue la tete.*"
     },
     "day3_lunch_rooftop_29": {
         "name": "Yuna",
-        "text": "\"A partir du 5eme, j'ai eu peur. Je ne savais plus si c'etait moi qui etais anormale, ou le monde.\""
+        "text": "\"...Gardez-le.\""
     },
     "day3_lunch_rooftop_30": {
         "name": "Moi",
-        "text": "*Yuna pose l'appareil et couvre son visage de ses deux mains. Un instant. Ses epaules tremblent.*"
-    },
-    "day3_lunch_rooftop_31": {
-        "name": "Yuna",
-        "text": "\"...Pardon. De vous montrer tout ca soudainement.\""
-    },
-    "day3_lunch_rooftop_32": {
-        "name": "Moi",
-        "text": "\"...Non, ca va.\""
-    },
-    "day3_lunch_rooftop_33": {
-        "name": "Moi",
-        "text": "*Ca ne va pas. Rien ne va. Mais en ce moment, c'est Yuna qui pleure.*"
-    },
-    "day3_lunch_rooftop_34": {
-        "name": "Yuna",
-        "text": "\"Le savoir toute seule, ca me rendait folle. A chaque fois que je prends une photo, mes mains tremblent. Et si c'est encore le meme visage. Combien de jours avant que celui-ci disparaisse aussi.\""
-    },
-    "day3_lunch_rooftop_35": {
-        "name": "Moi",
-        "text": "*'Disparaisse'.*"
-    },
-    "day3_lunch_rooftop_36": {
-        "name": "Moi",
-        "text": "\"...Ils disparaissent ? Les eleves transferes ?\""
-    },
-    "day3_lunch_rooftop_37": {
-        "name": "Yuna",
-        "text": "\"Oui. Tous. Une semaine au plus. Trois jours au moins. Un jour ils disparaissent soudainement. Personne ne s'en souvient. 'Il y avait un eleve comme ca ?' qu'ils disent.\""
-    },
-    "day3_lunch_rooftop_38": {
-        "name": "Moi",
-        "text": "*Yuna me regarde. Les yeux rouges, le bout du nez rouge. Mais le regard est ferme.*"
-    },
-    "day3_lunch_rooftop_39": {
-        "name": "Yuna",
-        "text": "\"Senpai... vous etes le 13eme.\""
-    },
-    "day3_lunch_rooftop_40": {
-        "name": "Moi",
-        "text": "*...Le 13eme.*"
-    },
-    "day3_lunch_rooftop_41": {
-        "name": "Moi",
-        "text": "*Je m'agrippe à la rambarde du toit. De la rouille reste sur ma paume.*"
-    },
-    "day3_lunch_rooftop_42": {
-        "name": "Moi",
-        "text": "*Ce n'est pas la premiere fois que je viens dans ce lycee ? Je suis... le 13eme ?*"
-    },
-    "day3_lunch_rooftop_43": {
-        "name": "Moi",
-        "text": "*Alors qu'en est-il de mon \"ancien lycee\" ? De \"Minsu\" ? Du souvenir d'\"avoir ete transfere a cause du travail de mes parents\" ?*"
+        "text": "*Une larme a coule de l'oeil de Yuna. Elle ne l'a pas essuyee.*"
     },
 
     "day3_lunch_door_1": {
@@ -238,7 +186,7 @@
     },
     "day3_lunch_door_bang": {
         "name": "Moi",
-        "text": "*J'ai frappe fort a la porte. 5 minutes plus tard, la porte s'ouvre. Personne. Pas de serrure non plus. ...Aucune trace de qui l'a verrouilee.*"
+        "text": "*J'ai frappe fort a la porte. 5 minutes plus tard, la porte s'ouvre. Personne. Pas de serrure non plus. ...Aucune trace de qui l'a verrouillee.*"
     },
     "day3_lunch_door_wait": {
         "name": "Moi",
@@ -266,7 +214,7 @@
     },
     "day3_lunch_door_open_6": {
         "name": "Moi",
-        "text": "*J'ai l'estomac retourne. Je m'appuie contre le mur. Ce qui monte, je ne sais pas si c'est la nausee ou la terreur.*"
+        "text": "*Je m'appuie contre le mur. La salive s'accumule dans ma bouche -- quelque chose remonte. J'ai avale. Le front colle contre le mur, plie en deux. Le carrelage est froid.*"
     },
     "day3_lunch_nametag_1": {
         "name": "Moi",
@@ -274,7 +222,7 @@
     },
     "day3_lunch_nametag_2": {
         "name": "Moi",
-        "text": "*\u2014 Soudain, ca semble etranger, comme un mot d'une autre langue. Je l'ai touche du bout des doigts. Seule la sensation froide du plastique m'est revenue.*"
+        "text": "*-- Soudain, ca semble etranger, comme un mot d'une autre langue. Je l'ai touche du bout des doigts. Seule la sensation froide du plastique m'est revenue.*"
     },
     "day3_lunch_door_open_7": {
         "name": "Moi",
@@ -367,12 +315,20 @@
     },
     "day3_lunch_sea_17": {
         "name": "Moi",
-        "text": "*Sea sourit. Cette fois c'est un sourire parfait. Tellement parfait que j'en ai des frissons.*"
+        "text": "*Sea sourit. Cette fois c'est un sourire parfait. L'angle des levres, les rides autour des yeux, la position des pommettes -- pas la moindre faille. C'est un sourire humain, mais on dirait qu'elle 'rejoue' quelque chose.*"
     },
 
     "day3_lunch_riin_1": {
         "name": "Moi",
         "text": "*J'ai ouvert la porte de l'infirmerie. L'odeur de desinfectant me pique le nez. L'infirmiere Riin est debout devant l'armoire. Elle se retourne quand la porte s'ouvre.*"
+    },
+    "day3_lunch_riin_first": {
+        "name": "Riin",
+        "text": "\"Qu'est-ce qui ne va pas, {name} ? Tu n'as pas l'air bien.\""
+    },
+    "day3_lunch_riin_first_2": {
+        "name": "Moi",
+        "text": "*...C'est la premiere fois que je viens a l'infirmerie, mais elle m'a appele par mon nom tout de suite. Elle l'a vu dans le registre d'appel ?*"
     },
     "day3_lunch_riin_2": {
         "name": "Riin",
@@ -471,13 +427,5 @@
     "day3_lunch_end": {
         "name": "Moi",
         "text": "*Je suis retourne en classe. Mon coeur n'arrete pas de battre.*"
-    },
-    "day3_lunch_riin_first": {
-        "name": "Riin",
-        "text": "\"Qu'est-ce qui ne va pas, {name} ? Tu n'as pas l'air bien.\""
-    },
-    "day3_lunch_riin_first_2": {
-        "name": "Moi",
-        "text": "*...C'est la première fois que je viens à l'infirmerie, mais elle m'a appelé par mon nom tout de suite. Elle l'a vu dans le registre d'appel ?*"
     }
 }

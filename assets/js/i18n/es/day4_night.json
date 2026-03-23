@@ -67,7 +67,7 @@
     },
     "day4_night_phone_eunsu_3": {
         "name": "Yo",
-        "text": "*'Buenas noches.' La persona que diseñó todo lo que pasó en esta escuela hoy -- dice 'buenas noches.'*"
+        "text": "*'Buenas noches.' La persona que diseñó todo lo que pasó en esta escuela hoy — dice 'buenas noches.'*"
     },
     "day4_night_phone_end": {
         "name": "Yo",
@@ -76,76 +76,88 @@
 
     "day4_night_save_glitch": {
         "name": "Yo",
-        "text": "*...La pantalla del teléfono se encendió de repente. Sola. La luz se filtra desde dentro del cajón.*"
+        "text": "*Vibración dentro del cajón. El teléfono. Lo había guardado antes, pero vibra por su cuenta.*"
     },
     "day4_night_save_glitch_2": {
         "name": "Yo",
-        "text": "*Lo envolví en una toalla -- pero la luz atraviesa la toalla. No es luz física.*"
+        "text": "*Lo saqué. Una notificación de la app de seguridad estudiantil.*"
     },
     "day4_night_save_glitch_3": {
         "name": "Yo",
-        "text": "*Lo saqué. Una app de juego está abierta. ...¿Una app de seguridad? No, esta es una pantalla diferente.*"
+        "text": "*'Sujet—' Parpadeo. La notificación cambia. '¡Buenas noches, {name}!'*"
     },
     "day4_night_save_glitch_4": {
-        "name": "",
-        "text": "[Dirección meta: La pantalla de guardado/carga del juego real se abre por la fuerza. Sin la intervención del jugador.]"
+        "name": "Yo",
+        "text": "*...¿Qué ponía hace un momento?*"
     },
     "day4_night_save_glitch_5": {
         "name": "Yo",
-        "text": "*Puedo ver una lista de ranuras de guardado. Del 1 al 13. ...12 ranuras que nunca guardé están llenas.*"
+        "text": "*Abrí la app. No es el menú estudiantil de siempre. La pantalla es diferente. Fondo negro con letras blancas. — Un panel de administración.*"
     },
     "day4_night_save_glitch_6": {
         "name": "Yo",
-        "text": "*Ranura 1. Kim Dojin. Día 5 23:00 -- Procesamiento Completo. El primero. El primerísimo yo. Atrapado en solo 3 días -- 'procesado.'*"
+        "text": "***Parte superior de la pantalla: 'NEVERGRAD — Sistema de Gestión de Sujetos v4.7'***"
     },
     "day4_night_save_glitch_7": {
         "name": "Yo",
-        "text": "*Ranura 2. Lee Junseo. Procesamiento Completo. Ranura 4. Procesamiento Completo. Ranura 5. Procesamiento Completo. Ranura 6. Procesamiento Completo.*"
+        "text": "*Aparece una lista. 13 filas. #01 Kim Dojin — Terminado. #02 Lee Junseo — Terminado. #03 Park Seojin — Terminado (Intento de fuga Día 4). #04 Jeong Hayul — Terminado. #05 Kang Minhyuk — Terminado. #06 Yoon Jaewon — Terminado. #07 Kim Taeho — ██Respuesta anómala██ (Contacto externo: Lee Seolhwa). #08 Choi Siwoo — Terminado. #09 Han Jiho — Terminado (Detección temprana Día 3). #10 Song Yejun — Terminado. #11 Oh Taehyun — Terminado. #12 Im Seoyul — Terminado. #13 {name} — En curso.*"
     },
     "day4_night_save_glitch_8": {
         "name": "Yo",
-        "text": "***Cada vez que se repite 'Procesamiento Completo' -- otra persona que era yo muere.***"
+        "text": "*13 filas. 13 nombres. 12 'Terminados'.*"
     },
     "day4_night_save_glitch_9": {
         "name": "Yo",
-        "text": "*12 nombres. 12 'Procesamientos Completos.' Todos... eran yo.*"
+        "text": "*Miré las fechas. Los intervalos no son regulares. 3 meses, 4 meses, 3 meses... Pero la duración es siempre la misma. **5 días.***"
     },
     "day4_night_save_glitch_10": {
         "name": "Yo",
-        "text": "*Ranura 7. Kim Taeho. 'Efectos secundarios, contacto externo, intento de fuga.' ...El séptimo. ¿Contacto externo? ¿Con quién? -- Seolhwa. Lee Seolhwa.*"
+        "text": "*Solo el #07 es diferente. 'Respuesta anómala'. Contacto externo: Lee Seolhwa. — Seolhwa.*"
     },
     "day4_night_save_glitch_11": {
         "name": "Yo",
-        "text": "*Solo la Ranura 7 tiene una hora de finalización diferente. 22:47. Todos los demás 'Procesamientos Completos' son exactamente a las 23:00. El séptimo fue 13 minutos antes -- algo fue diferente.*"
+        "text": "*#09. Han Jiho. Detección temprana Día 3. Terminó el tercer día. El 'yo' que se dio cuenta más rápido. El 'yo' que fue borrado más rápido.*"
     },
     "day4_night_save_glitch_12": {
         "name": "Yo",
-        "text": "*Ranura 3. Park Seojin. 'Intento de fuga en Día 4, fallido.' ...Yo intenté escapar antes. Y me atraparon. El tercer yo también vio el sótano. El tercer yo también sintió el terror. El tercer yo también -- fracasó.*"
+        "text": "*#13. Mi nombre. 'En curso'.*"
     },
     "day4_night_save_glitch_13": {
         "name": "Yo",
-        "text": "*Ranura 9. Han Jiho. 'Detección temprana en Día 3.' Detectado el Día 3. El 'yo' que se dio cuenta más rápido. Y el 'yo' que fue procesado más rápido.*"
+        "text": "*Bajé con el scroll. Hay más pestañas abajo.*"
     },
     "day4_night_save_glitch_14": {
         "name": "Yo",
-        "text": "*Ranura 13. En progreso. -- Mi nombre está escrito ahí. Aún no es 'Procesamiento Completo.' Aún no.*"
+        "text": "*'Registro de rastreo de ubicación'. Toqué la pestaña. Apareció un mapa. El plano de la escuela. Un punto rojo se mueve sobre él. — Mis movimientos de los 4 días están registrados sin excepción.*"
     },
     "day4_night_save_glitch_15": {
         "name": "Yo",
-        "text": "*Intenté tocar la pantalla. Pulsé la Ranura 1. '¿Cargar este guardado?' Sí. -- 'Acceso denegado.'*"
+        "text": "*Día 1: Puerta → Pasillo → Aula → Campo deportivo → Aula → Puerta. Día 2: Puerta → Pasillo → Aula → Biblioteca → Sala del consejo → Puerta. Día 3: Puerta → Aula → Azotea → Pasillo → Aula → Puerta. Día 4: Puerta → Aula → Pasillo edificio viejo → Enfermería → Sala del consejo.*"
     },
     "day4_night_save_glitch_16": {
         "name": "Yo",
-        "text": "*Ranura 7. '¿Cargar este guardado?' Sí. -- 'Estos datos están corruptos.'*"
+        "text": "*...Cada paso registrado. La app que la profesora Eunsu me dijo que instalara el Día 2 — era esto desde el principio.*"
     },
     "day4_night_save_glitch_17": {
         "name": "Yo",
-        "text": "*La pantalla se distorsiona y se apaga.*"
+        "text": "*En la parte inferior de la pantalla, en letra pequeña: 'Monitoreo en tiempo real ACTIVO / Micrófono ON / Rastreo de ubicación ON'*"
+    },
+    "day4_night_save_glitch_18": {
+        "name": "Yo",
+        "text": "*El Día 2 yo mismo pulsé 'Permitir todo'. Con mi propia mano.*"
+    },
+    "day4_night_save_glitch_19": {
+        "name": "Yo",
+        "text": "*La app se cerró. Sola. Volvió al menú estudiantil normal. '¡Buenas noches, {name}!'*"
+    },
+    "day4_night_save_glitch_20": {
+        "name": "Yo",
+        "text": "*...Es la misma app. Antes y ahora. Solo tenía un lado visible y uno oculto.*"
     },
 
     "day4_night_mirror": {
         "name": "Yo",
-        "text": "*...No puedo respirar. Fui al baño. Abrí el grifo. Me lavé la cara.*"
+        "text": "*Me desabroché dos botones de la camisa del uniforme. Me aprieta el cuello. Fui al baño. Abrí el grifo del lavabo. Me lavé la cara.*"
     },
     "day4_night_mirror_2": {
         "name": "Yo",
@@ -161,7 +173,7 @@
     },
     "day4_night_mirror_5": {
         "name": "Yo",
-        "text": "*Por alguna razón -- ahora lo sé. Mi subconsciente lo sabía. Lo que vería en el espejo.*"
+        "text": "*Por alguna razón — ahora lo sé. Mi subconsciente lo sabía. Lo que vería en el espejo.*"
     },
     "day4_night_mirror_6": {
         "name": "Yo",
@@ -215,7 +227,7 @@
 
     "day4_night_mirror_hit1": {
         "name": "Yo",
-        "text": "***En el espejo -- se refleja el espacio detrás de mí.***"
+        "text": "***En el espejo — se refleja el espacio detrás de mí.***"
     },
     "day4_night_mirror_hit1_2": {
         "name": "Yo",
@@ -223,7 +235,7 @@
     },
     "day4_night_mirror_hit1_3": {
         "name": "Yo",
-        "text": "***Seolhwa, que estaba ahí hace un momento -- no se refleja en el espejo.***"
+        "text": "***Seolhwa, que estaba ahí hace un momento — no se refleja en el espejo.***"
     },
     "day4_night_mirror_hit1_4": {
         "name": "Yo",
@@ -235,7 +247,7 @@
     },
     "day4_night_mirror_hit1_6": {
         "name": "Yo",
-        "text": "*Miré el espejo de nuevo. En el espejo -- solo yo. Yo y un baño vacío.*"
+        "text": "*Miré el espejo de nuevo. En el espejo — solo yo. Yo y un baño vacío.*"
     },
     "day4_night_mirror_hit1_7": {
         "name": "Yo",
@@ -247,11 +259,11 @@
     },
     "day4_night_mirror_hit1_9": {
         "name": "Yo",
-        "text": "***Seolhwa -- no existe físicamente.***"
+        "text": "***Seolhwa — no existe físicamente.***"
     },
     "day4_night_mirror_hit1_10": {
         "name": "Yo",
-        "text": "*Viene a mi mente el diario de observación de Eunsu del sótano.*"
+        "text": "*Recuerdo a la profesora Eunsu abriendo la puerta del sótano con su llave.*"
     },
     "day4_night_mirror_hit1_11": {
         "name": "Yo",
@@ -259,11 +271,11 @@
     },
     "day4_night_mirror_hit1_12": {
         "name": "Yo",
-        "text": "***La chica que está de pie detrás de mí, vigilándome ahora mismo -- murió hace un año.***"
+        "text": "***La chica que está de pie detrás de mí, vigilándome ahora mismo — murió hace un año.***"
     },
     "day4_night_mirror_hit1_13": {
         "name": "Yo",
-        "text": "***La persona con la que he estado hablando, en quien me he apoyado, de quien recibí advertencias -- era una alucinación creada dentro de mi cabeza.***"
+        "text": "***La persona con la que he estado hablando, en quien me he apoyado, de quien recibí advertencias — era una alucinación creada dentro de mi cabeza.***"
     },
     "day4_night_mirror_hit1_14": {
         "name": "Seolhwa",
@@ -271,7 +283,7 @@
     },
     "day4_night_mirror_hit1_15": {
         "name": "Yo",
-        "text": "*Escucho una voz. Claramente. Mis tímpanos vibran. Pero esta voz -- no vino a través del aire. Resuena desde dentro de mi cabeza.*"
+        "text": "*Escucho una voz. Claramente. Mis tímpanos vibran. Pero esta voz — no vino a través del aire. Resuena desde dentro de mi cabeza.*"
     },
 
     "day4_night_mirror_hit2": {
@@ -288,19 +300,19 @@
     },
     "day4_night_mirror_hit2_4": {
         "name": "Yo",
-        "text": "*#1. Kim Dojin. Pelo negro corto. La cara -- idéntica.*"
+        "text": "*#1. Kim Dojin. Pelo negro corto. La cara — idéntica.*"
     },
     "day4_night_mirror_hit2_5": {
         "name": "Yo",
-        "text": "*#3. Park Seojin. Pelo castaño. La cara -- idéntica.*"
+        "text": "*#3. Park Seojin. Pelo castaño. La cara — idéntica.*"
     },
     "day4_night_mirror_hit2_6": {
         "name": "Yo",
-        "text": "*#7. Kim Taeho. Pelo largo. Mejillas demacradas. Pero la disposición de ojos, nariz, boca -- idéntica.*"
+        "text": "*#7. Kim Taeho. Pelo largo. Mejillas demacradas. Pero la disposición de ojos, nariz, boca — idéntica.*"
     },
     "day4_night_mirror_hit2_7": {
         "name": "Yo",
-        "text": "***Diferente color de pelo. Diferentes nombres. Pero comparados con mi cara en el espejo -- todos idénticos.***"
+        "text": "***Diferente color de pelo. Diferentes nombres. Pero comparados con mi cara en el espejo — todos idénticos.***"
     },
     "day4_night_mirror_hit2_8": {
         "name": "Yo",
@@ -313,7 +325,7 @@
 
     "day4_night_mirror_overlay": {
         "name": "",
-        "text": "[Las 13 fotos de identificación se superponen rápidamente sobre la cara en el espejo. #1 Kim Dojin → #3 Park Seojin → #7 Kim Taeho → ... → #12 Im Seoyul → {name}. Diferentes colores de pelo, diferentes etiquetas de nombre parpadean y se superponen, pero los contornos del rostro coinciden perfectamente.]"
+        "text": ""
     },
 
     "day4_night_mirror_collapse": {
@@ -322,7 +334,7 @@
     },
     "day4_night_mirror_collapse_2": {
         "name": "Yo",
-        "text": "***La razón por la que Seolhwa dijo 'recuérdame.' Era literal. -- No olvides a la persona que desapareció por mi bien.***"
+        "text": "***La razón por la que Seolhwa dijo 'recuérdame.' Era literal. — No olvides a la persona que desapareció por mi bien.***"
     },
     "day4_night_mirror_collapse_3": {
         "name": "Yo",
@@ -342,7 +354,7 @@
     },
     "day4_night_mirror_collapse_7": {
         "name": "Yo",
-        "text": "*No lo sé. Simplemente -- me derrumbo. El suelo del baño está frío. El frío de las baldosas se filtra a través de mi espalda. No sé cuánto tiempo estuve así.*"
+        "text": "*No lo sé. Simplemente — me derrumbo. El suelo del baño está frío. El frío de las baldosas se filtra a través de mi espalda. No sé cuánto tiempo estuve así.*"
     },
     "day4_night_mirror_collapse_8": {
         "name": "Yo",
@@ -350,7 +362,7 @@
     },
     "day4_night_mirror_collapse_9": {
         "name": "Yo",
-        "text": "*Pero -- alguien está a mi lado. Real o no. Por ahora, solo eso es suficiente.*"
+        "text": "*Pero — alguien está a mi lado. Real o no. Por ahora, solo eso es suficiente.*"
     },
 
     "day4_night_plan": {
@@ -359,11 +371,11 @@
     },
     "day4_night_plan_2": {
         "name": "Yo",
-        "text": "*Miré el espejo de nuevo. La cara después de llorar. Ojos hinchados. Nariz roja. -- Este es el decimotercer yo.*"
+        "text": "*Miré el espejo de nuevo. La cara después de llorar. Ojos hinchados. Nariz roja. — Este es el decimotercer yo.*"
     },
     "day4_night_plan_3": {
         "name": "Yo",
-        "text": "*Abrí mi cuaderno. Mis manos tiemblan pero escribo. Con la mano izquierda. Porque soy zurdo. ...Los hechos que Seolhwa sabía -- ahora yo también los sé.*"
+        "text": "*Abrí mi cuaderno. Mis manos tiemblan pero escribo. Con la mano izquierda. Porque soy zurdo. ...Los hechos que Seolhwa sabía — ahora yo también los sé.*"
     },
     "day4_night_plan_4": {
         "name": "Yo",
@@ -395,15 +407,15 @@
     },
     "day4_night_plan_11": {
         "name": "Yo",
-        "text": "*Siete. La Profesora Riin tiene la llave. Dijo que ganaría tiempo hasta mañana por la mañana.*"
+        "text": "*Siete. La profesora Riin tiene la llave. Dijo que ganaría tiempo hasta mañana por la mañana.*"
     },
     "day4_night_plan_12": {
         "name": "Yo",
-        "text": "*Ocho. El tercer yo intentó escapar en el Día 4 y fracasó. Atrapado en la puerta principal. -- La puerta principal no es una opción.*"
+        "text": "*Ocho. El tercer yo intentó escapar en el Día 4 y fracasó. Atrapado en la puerta principal. — La puerta principal no es una opción.*"
     },
     "day4_night_plan_13": {
         "name": "Yo",
-        "text": "*Nueve. El séptimo yo lo intentó con Seolhwa. Terminó a las 22:47. 13 minutos antes de las 23:00. -- Algo fue diferente.*"
+        "text": "*Nueve. El séptimo yo lo intentó con Seolhwa. Terminó a las 22:47. 13 minutos antes de las 23:00. — Algo fue diferente.*"
     },
     "day4_night_plan_14": {
         "name": "Yo",
@@ -445,7 +457,7 @@
     },
     "day4_night_plan_final_3": {
         "name": "Yo",
-        "text": "***'Los 12 yo fracasaron. El decimotercero -- lo hará diferente.'***"
+        "text": "***'Fracasé 12 veces. No habrá una próxima. Si aquí me olvido — me borrarán para siempre.'***"
     },
     "day4_night_plan_final_4": {
         "name": "Yo",
@@ -454,6 +466,6 @@
 
     "day4_night_end": {
         "name": "",
-        "text": "*-- Fin del Día 4 --*"
+        "text": "*— Fin del Día 4 —*"
     }
 }

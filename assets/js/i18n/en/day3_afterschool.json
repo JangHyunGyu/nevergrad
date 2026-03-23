@@ -21,6 +21,7 @@
             "Stay alone"
         ]
     },
+
     "day3_after_riin": {
         "name": "Me",
         "text": "*I stood in front of the nurse's office door. I can hear small sounds from inside. Glass bottles clinking.*"
@@ -68,6 +69,7 @@
             "Politely decline"
         ]
     },
+
     "day3_after_riin_drink": {
         "name": "Me",
         "text": "*I swallowed a sip. ...A bitter taste lingers on the tip of my tongue. Slightly metallic. Not what you'd expect from vitamins...*"
@@ -88,6 +90,7 @@
         "name": "Me",
         "text": "*Nurse Riin pours the rest of the drink down the sink. I can see her back. Her shoulders are rigid.*"
     },
+
     "day3_after_riin_refuse": {
         "name": "Riin",
         "text": "\"...Is that so? That's fine.\""
@@ -104,24 +107,42 @@
         "name": "Riin",
         "text": "\"...Go home early and rest. You look tired today.\""
     },
+
+    "day3_after_liin_sugar_1": {
+        "name": "Me",
+        "text": "*Leaving the nurse's office, the trash bin by the door caught my eye. Its lid is half open.*"
+    },
+    "day3_after_liin_sugar_2": {
+        "name": "Me",
+        "text": "*Ampoules inside. Several broken glass bottles. Labels attached -- 'M-13.' And next to those, another bottle. I can see the ingredients: 'Glucose Solution.'*"
+    },
+    "day3_after_liin_sugar_3": {
+        "name": "Me",
+        "text": "*...Glucose? Not vitamins?*"
+    },
+    "day3_after_liin_sugar_4": {
+        "name": "Me",
+        "text": "*Nurse Riin closed the door behind me. I couldn't see any more.*"
+    },
+
     "day3_after_sea": {
         "name": "Me",
         "text": "*I came out of the classroom and Sea is waiting. Leaning against the wall. I don't know how long she's been there.*\n\n*Sea's expression... isn't her usual bright face. The corners of her mouth are turned up, but her eyes are cold. Under the fluorescent light, those eyes are like glass.*"
     },
     "day3_after_sea_2": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"...{name}, where were you during lunch?\""
     },
     "day3_after_sea_3": {
         "name": "Me",
-        "text": "*It sounds casual, but there's force in her voice. It's not 'where were you?' — it's closer to 'I already know where you were.'*"
+        "text": "*It sounds casual, but there's force in her voice. It's not 'where were you?' -- it's closer to 'I already know where you were.'*"
     },
     "day3_after_sea_noyuna_0": {
         "name": "",
-        "text": "*Sea's eyes are reading me. Her smile stays put. But the look in her eyes — it's verification.*"
+        "text": "*Sea's eyes are reading me. Her smile stays put. But the look in her eyes -- it's verification.*"
     },
     "day3_after_sea_noyuna_0a": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"Were you alone?\""
     },
     "day3_after_sea_noyuna_0b": {
@@ -133,7 +154,7 @@
         "text": "*Sea tilts her head. Two seconds. Three. Her gaze doesn't leave my eyes.*"
     },
     "day3_after_sea_noyuna": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"...You seem different lately, {name}.\""
     },
     "day3_after_sea_noyuna_2": {
@@ -141,28 +162,28 @@
         "text": "\"How so?\""
     },
     "day3_after_sea_noyuna_3": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"I don't know. Just... like you're pulling away.\""
     },
     "day3_after_sea_noyuna_4": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"...If there's something you're not telling me, just say it. I'm on your side, {name}.\""
     },
     "day3_after_sea_noyuna_5": {
         "name": "Me",
-        "text": "*Sea smiles. A perfect smile. So perfect it actually gives me chills.*"
+        "text": "*Sea smiles. The corners of her lips lift precisely. A flawless smile. -- I rubbed my forearm. A chill ran through me for some reason.*"
     },
     "day3_after_sea_noyuna_6": {
         "name": "Me",
         "text": "*...It's only been three days, and she says she's 'on my side.' The words are warm, but somehow... heavy.*"
     },
     "day3_after_sea_4": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"I heard you were with Yuna.\""
     },
     "day3_after_sea_4a": {
         "name": "Me",
-        "text": "*'I heard you were.' Not a question — a statement. She doesn't even ask where she heard it from. Sea's eyes are reading me. Even right now.*"
+        "text": "*'I heard you were.' Not a question -- a statement. She doesn't even ask where she heard it from. Sea's eyes are reading me. Even right now.*"
     },
     "day3_after_sea_choice": {
         "name": "Me",
@@ -172,6 +193,7 @@
             "Deflect"
         ]
     },
+
     "day3_after_sea_truth": {
         "name": "Me",
         "text": "\"Yeah, Yuna said she had something to show me.\""
@@ -181,7 +203,7 @@
         "text": "*Sea's expression changes. Slightly. Her eyelid twitches once.*"
     },
     "day3_after_sea_truth_3": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"I see, you're honest. ...I like honesty.\""
     },
     "day3_after_sea_truth_4": {
@@ -189,7 +211,7 @@
         "text": "*Sea looks out the window. For a long time. Nobody else in the hallway but us. Sunlight illuminates half of Sea's face.*"
     },
     "day3_after_sea_truth_5": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"...What did she show you?\""
     },
     "day3_after_sea_truth_6": {
@@ -197,17 +219,18 @@
         "text": "\"...Photos. School photos.\""
     },
     "day3_after_sea_truth_7": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"School photos...\"\n\n*Sea repeats it. There's no emotion in her voice. It's hollow.*"
     },
     "day3_after_sea_truth_8": {
-        "name": "Han Sea",
-        "text": "\"...I sometimes wonder too. Why I'm doing this.\"\n\n*Sea's eyes are strange. She's smiling, but... it looks like she could burst into tears at any moment, or maybe scream — an oddly unfocused expression.*"
+        "name": "Sea",
+        "text": "\"...I sometimes wonder too. Why I'm doing this.\"\n\n*Sea's eyes are strange. She's smiling, but... it looks like she could burst into tears at any moment, or maybe scream -- an oddly unfocused expression.*"
     },
     "day3_after_sea_truth_9": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"...It's nothing. Forget it.\"\n\n*Sea turns around. Her back looks small.*"
     },
+
     "day3_after_sea_lie": {
         "name": "Me",
         "text": "\"I was in the cafeteria? Why?\""
@@ -217,15 +240,15 @@
         "text": "*Sea's eyes narrow. With the smile still in place. The corners of her mouth up, but only her eyes turning cold.*"
     },
     "day3_after_sea_lie_3": {
-        "name": "Han Sea",
-        "text": "\"...Your eyes just shifted to the left again. You always do that when you lie.\""
+        "name": "Sea",
+        "text": "\"...Your eyes just shifted to the left again.\""
     },
     "day3_after_sea_lie_3a": {
         "name": "Me",
         "text": "*Her voice is low. Almost a whisper. Even though no one else is around.*"
     },
     "day3_after_sea_lie_4": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"...Don't even think about hiding things from me.\""
     },
     "day3_after_sea_lie_4a": {
@@ -233,13 +256,14 @@
         "text": "*...She's right. The habit of looking left when I lie. But how does Sea know that? It's only been three days.*"
     },
     "day3_after_sea_lie_5": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "\"...Next time, just be honest with me. I'm on your side, {name}.\""
     },
     "day3_after_sea_lie_5a": {
         "name": "Me",
         "text": "*Sea smiles. This time her eyes smile too. But that smile is even more frightening.*"
     },
+
     "day3_after_eunsu": {
         "name": "Me",
         "text": "*I hesitated in front of the faculty office door. Most teachers have already left since it's after school. The light is on inside.*"
@@ -268,9 +292,10 @@
             "Look away"
         ]
     },
+
     "day3_after_eunsu_peek": {
         "name": "Me",
-        "text": "*I approached the desk, muffling my footsteps. My heart races.*\n\n*The documents are old. The corners are folded, coffee stains on them. This wasn't made recently.*"
+        "text": "*I approached the desk, muffling my footsteps. My fingertips are cold. I picked up the document -- the paper trembled faintly -- my hands are shaking.*\n\n*The documents are old. The corners are folded, coffee stains on them. This wasn't made recently.*"
     },
     "day3_after_eunsu_peek_2": {
         "name": "Me",
@@ -282,11 +307,11 @@
     },
     "day3_after_eunsu_peek_4": {
         "name": "Me",
-        "text": "*Next to #7, there's a note in red ballpoint pen: **'Failure — residual response. Unexpected variable occurred. Processing deferred.'***\n\n*...Failure? Residual response? Processing?*"
+        "text": "*Next to #7, there's a note in red ballpoint pen: **'Failure -- residual response. Unexpected variable occurred. Processing deferred.'***\n\n*...Failure? Residual response? Processing?*"
     },
     "day3_after_eunsu_peek_5": {
         "name": "Me",
-        "text": "*My hands are trembling. I turned the page.*\n\n*#13 — my name is written there. Date: this Monday. The status column is empty. Not yet recorded.*"
+        "text": "*My hands are trembling. I turned the page.*\n\n*#13 -- my name is written there. Date: this Monday. The status column is empty. Not yet recorded.*"
     },
     "day3_after_eunsu_peek_6": {
         "name": "Me",
@@ -297,7 +322,7 @@
         "text": "*I hear footsteps. I looked up.*"
     },
     "day3_after_eunsu_peek_8": {
-        "name": "Park Eunsu",
+        "name": "Eunsu",
         "text": "\"Oh, that? It's counseling records for transfer students I've been organizing. Why, curious if your name's in there?\""
     },
     "day3_after_eunsu_peek_8a": {
@@ -309,17 +334,19 @@
         "text": "*Ms. Eunsu walks over slowly and closes the documents. Unhurried. Relaxed.*"
     },
     "day3_after_eunsu_peek_10": {
-        "name": "Park Eunsu",
+        "name": "Eunsu",
         "text": "\"Good to see you studying hard. Looks like you're adjusting well?\""
     },
     "day3_after_eunsu_peek_11": {
         "name": "Me",
         "text": "*...She's smiling. This person has been smiling from the start. She's never once stopped smiling. And that's what's frightening now.*"
     },
+
     "day3_after_eunsu_ignore": {
         "name": "Me",
         "text": "*...I shouldn't be looking at this here. I turned my gaze away. Quietly backed off.*"
     },
+
     "day3_after_alone": {
         "name": "Me",
         "text": "*I was heading home, but my feet take me toward the old building. I don't know why. My body moves on its own.*"
@@ -330,11 +357,11 @@
     },
     "day3_after_alone_3": {
         "name": "Me",
-        "text": "*...Quiet. Too quiet. After-school activities should be over, so all the students should be gone, but even so, this level of silence is abnormal.*\n\n*I walk down the corridor. Only my footsteps echo. Tap. Tap. Tap.*"
+        "text": "*My footsteps bounce off the walls and come back. Only my footsteps. After-school activities should be over, so all the students should be gone, but even so, this level of silence is abnormal.*\n\n*I walk down the corridor. Only my footsteps echo. Tap. Tap. Tap.*"
     },
     "day3_after_alone_4": {
         "name": "Me",
-        "text": "*Passing the third classroom — I stopped.*\n\n*I can hear a sound. From beyond the door. A low machine hum. A steady 'whirrrrr' vibration.*\n\n*...Why would there be machine sounds in a classroom?*"
+        "text": "*Passing the third classroom -- I stopped.*\n\n*I can hear a sound. From beyond the door. A low machine hum. A steady 'whirrrrr' vibration.*\n\n*...Why would there be machine sounds in a classroom?*"
     },
     "day3_after_alone_5": {
         "name": "Me",
@@ -346,7 +373,7 @@
     },
     "day3_after_alone_7": {
         "name": "Me",
-        "text": "*...Is this really a school?*"
+        "text": "*I tried to stand, but my knees were trembling. -- Is this really a school?*"
     },
     "day3_after_alone_8": {
         "name": "Me",
@@ -354,16 +381,17 @@
     },
     "day3_after_alone_9": {
         "name": "Me",
-        "text": "*Name-tag-sized rectangles have been scratched into the wall. One, two... twelve. All scratched off.*\n\n*Twelve name tags that were once hung here, then removed.*\n\n*...Twelve.*"
+        "text": "*Name-tag-sized rectangles have been scratched into the wall. One, two... twelve. All scratched off.*\n\n*Twelve name tags that were once hung here, then removed.*\n\n*I counted three times. Twelve.*"
     },
     "day3_after_alone_10": {
         "name": "Me",
-        "text": "*My legs are trembling. I hate this hallway. I hate this building. But why I came here — why my body brought me here on its own — that's even more frightening.*"
+        "text": "*My legs are trembling. I hate this hallway. I hate this building. But why I came here -- why my body brought me here on its own -- that's even more frightening.*"
     },
     "day3_after_alone_11": {
         "name": "Me",
         "text": "*...Let's go back. I shouldn't stay here any longer.*"
     },
+
     "day3_after_yuna_check": {
         "name": "",
         "text": ""
@@ -412,6 +440,7 @@
         "name": "Me",
         "text": "*Yuna turns and walks away. Without even a brief goodbye. Only footsteps remain in the hallway. The SD card left in my hand is small and light. I put it deep in my pocket.*"
     },
+
     "day3_after_end": {
         "name": "Me",
         "text": "*I leave school. The field is red under the sunset. ...Why does this feel so wrong.*"

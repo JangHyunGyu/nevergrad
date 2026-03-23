@@ -529,6 +529,9 @@ class GameEngine {
             btn.className = 'choice-btn';
             btn.textContent = labels?.[choiceIdx] || `선택 ${choiceIdx + 1}`;
 
+            // 시차(stagger) 애니메이션: 각 버튼이 80ms 간격으로 순차 등장
+            btn.style.animationDelay = `${choiceIdx * 80}ms`;
+
             // 글리치: 선택지 깜빡임
             if (choice.glitchFlicker) {
                 setTimeout(() => {
@@ -595,6 +598,16 @@ class GameEngine {
                 }, 1500);
             }
         }
+
+        // 📌 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
+        const allBtns = panel.querySelectorAll('.choice-btn');
+        const totalDelay = (allBtns.length - 1) * 80 + 1500;
+        setTimeout(() => {
+            const buttons = panel.querySelectorAll('.choice-btn');
+            if (buttons) {
+                buttons.forEach(b => b.classList.add('choice-ready'));
+            }
+        }, totalDelay);
     }
 
     // ===== Timed Choices (Day 4~5 타이머 선택지) =====
@@ -1235,6 +1248,11 @@ class GameEngine {
         });
         const el = document.getElementById(id);
         if (el) { el.classList.remove('hidden'); el.classList.add('active'); }
+
+        // GA 가상 페이지뷰 전송
+        if (typeof window.sendGAPageView === 'function') {
+            window.sendGAPageView(id);
+        }
 
         // 타이틀 복귀 시 이어하기 버튼 상태 갱신
         if (id === 'title-screen') {

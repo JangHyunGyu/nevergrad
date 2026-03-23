@@ -31,6 +31,7 @@
         "name": "Yo",
         "text": "*La realidad es solo un estornudo.*"
     },
+
     "day1_gate_1": {
         "name": "Yo",
         "text": "*Me plante frente a una puerta de escuela desconocida.*"
@@ -51,6 +52,12 @@
         "name": "Yo",
         "text": "*Una respiracion profunda. Vamos adentro. Quedarme aqui parado no va a hacer que la escuela venga a mi.*"
     },
+
+    "day1_gate_cctv_1": {
+        "name": "Yo",
+        "text": "*Cruzo la puerta principal. Al lado de una columna hay una camara de seguridad. Otra en la esquina del muro. En la entrada tambien. — Supongo que hoy en dia todas las escuelas son asi.*"
+    },
+
     "day1_hallway_1": {
         "name": "Yo",
         "text": "*Camino por el pasillo. No tengo idea de adonde ir.*"
@@ -61,12 +68,9 @@
     },
     "day1_hallway_3": {
         "name": "Yo",
-        "text": "*...Pero mis pies se dirigen naturalmente hacia el pasillo de la derecha.*"
+        "text": "*Camino por el pasillo. Eche un vistazo al directorio y dobre a la derecha.*"
     },
-    "day1_hallway_4": {
-        "name": "Yo",
-        "text": "*...Por que estoy yendo por aqui? Nunca he estado en este edificio. ...Ah, tal vez habia una flecha en el directorio? Si, probablemente.*"
-    },
+
     "day1_sea_meet_1": {
         "name": "Han Sea",
         "text": "Eres el estudiante transferido? Me dijeron que alguien vendria hoy."
@@ -384,26 +388,29 @@
         "name": "Yo",
         "text": "*Ya veo. Bueno, en todas las clases hay uno o dos asi. En mi escuela anterior tambien habia alguien asi.*"
     },
+
     "day1_seolhwa_skip": {
         "name": "Yo",
         "text": "*Vamos a concentrarnos en la clase. No es momento de preocuparse por la fila de atras.*"
     },
+
     "day1_dejavu2_1": {
         "name": "Yo",
         "text": "*Durante la clase, se me cayo el lapiz y mire debajo del pupitre.*"
     },
     "day1_dejavu2_2": {
         "name": "Yo",
-        "text": "*Hay marcas rasgunas en la parte de abajo del pupitre. Algo escrito con lapiz o boligrafo. Viejo y descolorido.*"
+        "text": "*Hay marcas rasgadas en la parte de abajo del pupitre. Algo grabado con un lapiz o un compas. Viejo y borroso.*"
     },
     "day1_dejavu2_3": {
         "name": "Yo",
-        "text": "*...La letra me resulta familiar. Se parece a la mia? No, no puede ser. Es mi primer dia como transferido -- es imposible que mi letra este debajo de este pupitre.*"
+        "text": "*...Parece que tiene algo escrito, pero es tan viejo que no se puede leer. Lo habra grabado un antiguo ocupante del pupitre.*"
     },
     "day1_dejavu2_4": {
         "name": "Yo",
-        "text": "*...Demasiado borroso para leer. No le des mas vueltas.*"
+        "text": "*Recogi el lapiz y me concentre en la clase.*"
     },
+
     "day1_break_1": {
         "name": "Yo",
         "text": "*Recreo. Unos chicos se acercan.*"
@@ -444,18 +451,28 @@
         "name": "Yo",
         "text": "*Clase de educacion fisica. Futbol. El balon subio alto. Lo controle con el pie izquierdo.*"
     },
-    "day1_pe_2": {
-        "name": "Yo",
-        "text": "*...Soy mejor de lo que esperaba. Siempre fui asi de bueno en futbol en mi escuela anterior?*"
-    },
     "day1_pe_3": {
         "name": "Compañero A",
         "text": "Oye, nada mal!"
     },
+    "day1_pe_3b": {
+        "name": "Yo",
+        "text": "Jaja, fue suerte."
+    },
     "day1_pe_4": {
         "name": "Yo",
-        "text": "*Una chica esta en una esquina del campo deportivo, sosteniendo una camara.*"
+        "text": "*Yuna esta en una esquina del campo deportivo, sosteniendo una camara.*"
     },
+
+    "day1_pe_wall_1": {
+        "name": "Yo",
+        "text": "*Termino el futbol y me sente en un banco. Bebo agua mientras observo el campo. Un muro de ladrillo rojizo con alambrada verde por encima. Detras se ven las montanas. Una escuela con buenas instalaciones.*"
+    },
+    "day1_pe_wall_3": {
+        "name": "Yo",
+        "text": "*Sono la campana de fin de clase y volvi al aula.*"
+    },
+
     "day1_morning_end": {
         "name": "",
         "text": "*La manana ha terminado. Es hora del almuerzo.*"

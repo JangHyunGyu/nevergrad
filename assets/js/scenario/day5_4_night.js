@@ -141,6 +141,11 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_21": {
         character: null,
+        next: "day5_ending_true_21a"
+    },
+    "day5_ending_true_21a": {
+        character: null,
+        glitch: { noise: true, noiseDuration: 300 },
         next: "day5_ending_true_22"
     },
     "day5_ending_true_22": {
@@ -320,7 +325,77 @@ Object.assign(SCENARIO[5], {
     },
     "day5_postcredit_end": {
         character: null,
-        next: null
+        next: "day5_observer_1"
+    },
+
+    // ══════════════════════════════════════════
+    // ★ 관찰자 포스트크레딧 (TRUE END only)
+    // ══════════════════════════════════════════
+    "day5_observer_1": {
+        background: "black",
+        bgm: null,
+        character: null,
+        typingSpeed: 80,
+        next: "day5_observer_2"
+    },
+    "day5_observer_2": {
+        character: null,
+        autoAdvance: true,
+        autoAdvanceDelay: 3000,
+        next: "day5_observer_3"
+    },
+    "day5_observer_3": {
+        character: null,
+        typingSpeed: 100,
+        next: "day5_observer_4"
+    },
+    "day5_observer_4": {
+        character: null,
+        monospace: true,
+        typingSpeed: 30,
+        next: "day5_observer_5"
+    },
+    "day5_observer_5": {
+        character: null,
+        next: "day5_observer_6"
+    },
+    "day5_observer_6": {
+        character: null,
+        monospace: true,
+        typingSpeed: 20,
+        dynamicData: true,
+        next: "day5_observer_7"
+    },
+    "day5_observer_7": {
+        character: null,
+        autoAdvance: true,
+        autoAdvanceDelay: 2000,
+        next: "day5_observer_8"
+    },
+    "day5_observer_8": {
+        character: null,
+        monospace: true,
+        typingSpeed: 25,
+        dynamicData: true,
+        next: "day5_observer_9"
+    },
+    "day5_observer_9": {
+        character: null,
+        autoAdvance: true,
+        autoAdvanceDelay: 5000,
+        next: "day5_observer_10"
+    },
+    "day5_observer_10": {
+        character: null,
+        typingSpeed: 100,
+        next: "day5_observer_11"
+    },
+    "day5_observer_11": {
+        character: null,
+        choices: [
+            { next: null, setFlags: ["observer_graduated"] },
+            { next: null, setFlags: ["observer_stayed"] }
+        ]
     },
 
     // ══════════════════════════════════════════
@@ -622,6 +697,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_title"
     },
     // ── CAGE END 공통 타이틀 + 루프 ──
+    // 게임이 끝나지 않는다. 엔딩 크레딧이 뜨지 않는다.
+    // 화면이 어두워졌다 밝아지며 "Day 1"이 반복된다.
     "day5_ending_cage_title": {
         character: null,
         endingTitle: "CAGE END",
@@ -633,7 +710,47 @@ Object.assign(SCENARIO[5], {
         background: "classroom",
         bgm: "spring_bright.mp3",
         character: null,
-        cageLoop: true
+        cageLoop: true,
+        // ── 메타 연출 강화 ──
+        // 2nd repeat: subtle changes
+        //   - 세아 대사 타이밍 0.1초 빨라짐
+        //   - 은수 미소 longer duration
+        //   - 설화 자리에 빈 교복 (주인 없는)
+        // 3rd repeat: 0.5초간 텍스트 플래시
+        //   "관찰 기록: 피험자 순응 확인. 관찰자 체류 중."
+        // 5th repeat: 은수가 카메라/플레이어를 정면으로 본다
+        //   "...아직 보고 계시네요." → 화면 꺼짐
+        cageRepeatEffects: {
+            2: {
+                seaDialogTimingOffset: -100,
+                eunsuSmileDurationMultiplier: 1.5,
+                seolhwaSeatOverride: "empty_uniform"
+            },
+            3: {
+                flashText: "관찰 기록: 피험자 순응 확인. 관찰자 체류 중.",
+                flashDuration: 500
+            },
+            5: {
+                eunsuBreaksFourthWall: true,
+                eunsuLine: "...아직 보고 계시네요.",
+                screenBlackout: true
+            }
+        },
+        // ── 세아 변형 (CAGE 세아 루트) ──
+        // 매 반복마다 도시락 반찬이 줄어든다
+        // 5th repeat: 빈 도시락통
+        //   "...이번에도 안 나갔네."
+        //   "당신도 안 보내주는 거예요?"
+        seaCageVariants: {
+            lunchboxDegrade: true,
+            5: {
+                emptyLunchbox: true,
+                seaLines: [
+                    "...이번에도 안 나갔네.",
+                    "당신도 안 보내주는 거예요?"
+                ]
+            }
+        }
     },
 
     // ══════════════════════════════════════════

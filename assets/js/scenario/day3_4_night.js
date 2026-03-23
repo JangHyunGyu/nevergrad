@@ -5,7 +5,7 @@
  * 위화감 60%+. 글리치: BREAKING.
  * - 세아 메시지 폭격 (13분 6개 + CRITICAL: '창문 열어둔 거지?')
  * - ★ 기억 블리드 (데자뷔 질문들 → "전 학교가 진짜 있긴 했나?")
- * - ★ 스탯 라벨 크랙 (호감도 → 위험도 / 투■량)
+ * - ★ 스탯 라벨 크랙 (표면 레이어가 벗겨지며 호감도 아래의 위험도가 드러남)
  * - 벽의 글씨 (3AM 각성 이벤트, 꿈 아님 — "여기서 나가")
  * - 설화의 경고 (각성 상태, "5일이야", "기억해. 왼손.")
  * - 최종 선택 + 유령 텍스트 x2
@@ -189,7 +189,9 @@ Object.assign(SCENARIO[3], {
     },
 
     // ══════════════════════════════════════
-    //  ★ 스탯 라벨 크랙 [글리치: '호감도' → '위험도' / '투■량']
+    //  ★ 스탯 라벨 크랙 [UI 전환: 표면 레이어가 벗겨지며 아래의 진짜 인터페이스가 드러남.
+    //     글리치/노이즈 없이, 마치 페인트가 벗겨지듯 조용하게.
+    //     "시스템이 망가진 것"이 아니라 "시스템의 진짜 얼굴이 보이기 시작한 것"]
     // ══════════════════════════════════════
     "day3_night_stat_crack": {
         character: null,
@@ -205,8 +207,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_stat_crack_4": {
         character: null,
-        glitch: { shatterStatLabel: true, revealDuration: 300 },
-        vibrate: "stat_crack",
+        glitch: { peelStatLabel: true, revealDuration: 300 },
         next: "day3_night_stat_crack_4a"
     },
     "day3_night_stat_crack_4a": {

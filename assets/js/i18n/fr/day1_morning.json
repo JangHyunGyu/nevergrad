@@ -51,6 +51,11 @@
         "name": "Moi",
         "text": "*Une grande inspiration. Allons-y. Rester plante ici ne fera pas venir l'ecole a moi.*"
     },
+    "day1_gate_cctv_1": {
+        "name": "Moi",
+        "text": "*Je passe le portail. Une camera de surveillance sur le poteau. Une autre a l'angle du mur d'enceinte. Une troisieme a l'entree du hall. -- Les ecoles sont toutes comme ca de nos jours.*"
+    },
+
     "day1_hallway_1": {
         "name": "Moi",
         "text": "*Je marche dans le couloir. Aucune idee d'ou je dois aller.*"
@@ -61,11 +66,7 @@
     },
     "day1_hallway_3": {
         "name": "Moi",
-        "text": "*...Pourtant mes pas se dirigent naturellement vers le couloir de droite.*"
-    },
-    "day1_hallway_4": {
-        "name": "Moi",
-        "text": "*...Pourquoi je vais par la ? Je n'ai jamais mis les pieds dans ce batiment. ...Ah, il y avait peut-etre une fleche sur le panneau ? Sans doute.*"
+        "text": "*Je marche dans le couloir. J'ai jete un coup d'oeil au panneau d'orientation et tourne a droite.*"
     },
     "day1_sea_meet_1": {
         "name": "Han Sea",
@@ -186,7 +187,7 @@
     },
     "day1_choco_accept_4": {
         "name": "Moi",
-        "text": "*Enfin, la plupart des gens aiment ca. S'il y avait deux pour un, il devait y avoir fraise aussi -- mais elle a choisi chocolat.*"
+        "text": "*Bon, la plupart des gens aiment ca. Il devait y avoir fraise aussi en deux pour un -- mais elle a choisi chocolat.*"
     },
     "day1_choco_question_1": {
         "name": "Moi",
@@ -298,7 +299,7 @@
     },
     "day1_eunsu_14": {
         "name": "Moi",
-        "text": "*Je retourne a ma place. Sea me fait un pouce leve. Mme Eunsu hoche la tete en souriant.*"
+        "text": "*Je retourne a ma place. Sea me fait un pouce leve. Mme Eunsu hoche la tete avec un sourire.*"
     },
     "day1_seolhwa_1": {
         "name": "Moi",
@@ -394,15 +395,15 @@
     },
     "day1_dejavu2_2": {
         "name": "Moi",
-        "text": "*Il y a des marques de grattage sous le bureau. Quelque chose ecrit au crayon ou au stylo. Ancien et efface.*"
+        "text": "*Il y a des marques gravees sous le bureau. Quelque chose grave au crayon ou au compas. C'est ancien et presque efface.*"
     },
     "day1_dejavu2_3": {
         "name": "Moi",
-        "text": "*...L'ecriture me semble familiere. On dirait la mienne ? Non, impossible. C'est mon premier jour de transfere -- mon ecriture ne peut pas se trouver sous ce bureau.*"
+        "text": "*...On dirait qu'il y a quelque chose d'ecrit, mais c'est trop ancien pour etre lisible. L'ancien occupant du bureau a du graver ca.*"
     },
     "day1_dejavu2_4": {
         "name": "Moi",
-        "text": "*...Trop efface pour etre lu. N'y pense plus.*"
+        "text": "*J'ai ramasse mon crayon et me suis concentre sur le cours.*"
     },
     "day1_break_1": {
         "name": "Moi",
@@ -444,18 +445,28 @@
         "name": "Moi",
         "text": "*Cours d'EPS. Football. Le ballon est monte haut. Je l'ai controle du pied gauche.*"
     },
-    "day1_pe_2": {
-        "name": "Moi",
-        "text": "*...Je suis meilleur que prevu. J'etais toujours aussi bon en foot dans mon ancienne ecole ?*"
-    },
     "day1_pe_3": {
         "name": "Camarade A",
         "text": "Oh, pas mal !"
     },
+    "day1_pe_3b": {
+        "name": "Moi",
+        "text": "Haha, j'ai eu de la chance."
+    },
     "day1_pe_4": {
         "name": "Moi",
-        "text": "*Une fille se tient dans un coin du terrain de sport, appareil photo a la main.*"
+        "text": "*Yuna se tient dans un coin du terrain de sport, appareil photo a la main.*"
     },
+
+    "day1_pe_wall_1": {
+        "name": "Moi",
+        "text": "*Le match de foot est termine, je me suis assis sur le banc. Je bois de l'eau en regardant le terrain. Un mur de briques rouges surmonte d'un grillage vert. La montagne se dessine au-dela. Une ecole bien equipee.*"
+    },
+    "day1_pe_wall_3": {
+        "name": "Moi",
+        "text": "*La sonnerie a retenti et je suis retourne en classe.*"
+    },
+
     "day1_morning_end": {
         "name": "",
         "text": "*La matinee est finie. C'est l'heure du dejeuner.*"

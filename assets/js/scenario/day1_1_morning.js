@@ -91,6 +91,13 @@ Object.assign(SCENARIO[1], {
     // L103: *심호흡 한 번. 들어가자...*
     "day1_gate_5": {
         character: null,
+        next: "day1_gate_cctv_1"
+    },
+
+    // ── 미세 공포 핀: CCTV (위화감 0%, 주인공은 전혀 의식하지 않음) ──
+    // CCTV 3대를 배경 묘사로만 언급, 합리화조차 하지 않음
+    "day1_gate_cctv_1": {
+        character: null,
         next: "day1_hallway_1"
     },
 
@@ -109,15 +116,11 @@ Object.assign(SCENARIO[1], {
         character: null,
         next: "day1_hallway_3"
     },
-    // L113: *...그런데 발걸음이 자연스럽게 오른쪽 복도로...*
+    // L113: *복도를 걷는다. 안내판을 슬쩍 보고 오른쪽으로 꺾었다.*
+    // ★ 데자뷔 핀: 주인공은 안내판을 "보고" 선택했다고 믿는다. 1회차 위화감 0%
     "day1_hallway_3": {
         character: null,
         glitch: "deja_vu_direction",
-        next: "day1_hallway_4"
-    },
-    // L115: *...왜 이쪽으로 가고 있지?...*
-    "day1_hallway_4": {
-        character: null,
         next: "day1_xover_seolhwa_1"
     },
 
@@ -681,22 +684,32 @@ Object.assign(SCENARIO[1], {
         background: "playground",
         bgm: "daily_bright.mp3",
         character: null,
-        next: "day1_pe_2"
-    },
-    // L344: *...생각보다 잘한다...*
-    "day1_pe_2": {
-        character: null,
         next: "day1_pe_3"
     },
     // L346: 급우A "오 잘하는데?"
     "day1_pe_3": {
         character: null,
+        next: "day1_pe_3b"
+    },
+    // 나 "ㅋㅋ 운 좋았어."
+    "day1_pe_3b": {
+        character: null,
         next: "day1_pe_4"
     },
-    // L348: *유나가 운동장 구석에서 카메라를 들고 있다.*
+    // *유나가 운동장 구석에서 카메라를 들고 있다.*
     "day1_pe_4": {
         character: null,
         sfx: "sfx_camera_shutter.mp3",
+        next: "day1_pe_wall_1"
+    },
+
+    // ── 담장 (위화감 0%, 배경 묘사만. 주인공은 전혀 의식하지 않음) ──
+    "day1_pe_wall_1": {
+        character: null,
+        next: "day1_pe_wall_3"
+    },
+    "day1_pe_wall_3": {
+        character: null,
         next: "day1_morning_end"
     },
 

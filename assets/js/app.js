@@ -194,10 +194,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     var APP_ID = lang === 'ko' ? 'nevergrad' : 'nevergrad-' + lang;
     var _lastError = '';
     var _errorCount = 0;
+    var _session = Math.random().toString(36).substring(2, 8);
 
     function _getContext() {
         try {
-            var parts = [];
+            var parts = ['sess:' + _session];
+            parts.push('path:' + p);
+            parts.push('online:' + navigator.onLine);
             var g = window.__game;
             if (g) {
                 if (g.stateManager?.currentDay) parts.push('day:' + g.stateManager.currentDay);
@@ -206,32 +209,77 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             parts.push('vw:' + window.innerWidth + 'x' + window.innerHeight);
             return parts.join(' | ');
-        } catch (_) { return ''; }
+        } catch (_) { return 'ctx-error'; }
     }
 
-    function _sendError(message, stack, url) {
-        var key = message + (url || '');
-        if (key === _lastError) { _errorCount++; if (_errorCount > 3) return; }
+    function _classifyError(msg, stack, src) {
+        if (!msg) return 'noise';
+        if (msg === 'Script error.' && !stack) return 'noise';
+        if (/Can't find variable: (gmo|__gCrWeb|ytcfg|__)/.test(msg)) return 'noise';
+        if (/ResizeObserver loop/.test(msg)) return 'noise';
+        // External scripts
+        if (src && /googletagmanager|google-analytics|gtag\/js|cloudflare|chrome-extension|moz-extension|safari-extension/.test(src)) return 'external';
+        if (src && /^undefined:/.test(src) && !(stack || '').match(/\/(assets|js|modules)\//)) return 'external';
+        if (/Loading chunk|dynamically imported module/.test(msg)) return 'network';
+        return 'app';
+    }
+
+    function _sendError(type, msg, stack, src) {
+        var errClass = _classifyError(msg, stack, src);
+        if (!msg) return;
+        var key = msg + '|' + src;
+        if (key === _lastError) { _errorCount++; if (_errorCount > 5) return; }
         else { _lastError = key; _errorCount = 1; }
 
-        var context = _getContext();
-        try {
-            navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify({
-                appId: APP_ID, userId: '',
-                message: (message || '').substring(0, 500),
-                stack: (context ? '[ctx] ' + context + '\n' : '') + (stack || '').substring(0, 1900),
-                url: (url || '').substring(0, 500)
-            }));
-        } catch (_) {}
+        var ctx = _getContext();
+        var payload = {
+            appId: APP_ID, userId: '',
+            message: ('[' + errClass + ':' + type + '] ' + (msg || '')).substring(0, 500),
+            stack: (
+                '[ctx] ' + ctx +
+                '\n[src] ' + (src || 'N/A') +
+                '\n[ua] ' + navigator.userAgent.substring(0, 150) +
+                '\n[ref] ' + (document.referrer || 'direct') +
+                '\n[time] ' + new Date().toISOString() +
+                '\n[trace]\n' + (stack || 'no stack')
+            ).substring(0, 2000),
+            url: (src || window.location.href).substring(0, 500)
+        };
+
+        try { navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify(payload)); } catch (_) {}
     }
 
     window.addEventListener('error', function(e) {
-        _sendError(e.message, e.error?.stack || '', e.filename + ':' + e.lineno + ':' + e.colno);
+        var src = (e.filename || '') + ':' + e.lineno + ':' + e.colno;
+        _sendError(e.error?.name || 'Error', e.message, e.error?.stack || '', src);
     });
 
     window.addEventListener('unhandledrejection', function(e) {
         var reason = e.reason;
-        var message = reason?.message || String(reason || 'Unhandled rejection');
-        _sendError(message, reason?.stack || '', location.href);
+        var msg = reason?.message || String(reason || 'Unhandled rejection');
+        _sendError('UnhandledRejection', msg, reason?.stack || '', window.location.href);
     });
 })();
+
+// SPA 참여시간 보정: 60초마다 engagement 이벤트 전송
+(function() {
+    var startTime = Date.now();
+    setInterval(function() {
+        if (document.visibilityState === 'visible') {
+            gtag('event', 'spa_engagement', {
+                engagement_time_msec: 60000,
+                elapsed_seconds: Math.round((Date.now() - startTime) / 1000)
+            });
+        }
+    }, 60000);
+})();
+
+// SPA 가상 페이지뷰 전송
+window.sendGAPageView = function(pageName) {
+    if (typeof gtag === 'function') {
+        gtag('event', 'page_view', {
+            page_title: document.title + ' - ' + pageName,
+            page_location: window.location.href + '#' + pageName
+        });
+    }
+};

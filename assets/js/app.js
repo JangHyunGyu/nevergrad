@@ -260,3 +260,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         _sendError('UnhandledRejection', msg, reason?.stack || '', window.location.href);
     });
 })();
+
+// SPA 참여시간 보정: 60초마다 engagement 이벤트 전송
+(function() {
+    var startTime = Date.now();
+    setInterval(function() {
+        if (document.visibilityState === 'visible') {
+            gtag('event', 'spa_engagement', {
+                engagement_time_msec: 60000,
+                elapsed_seconds: Math.round((Date.now() - startTime) / 1000)
+            });
+        }
+    }, 60000);
+})();

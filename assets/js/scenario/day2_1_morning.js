@@ -332,7 +332,7 @@ Object.assign(SCENARIO[2], {
     // ── ★ 교내 방송 사고 (Day 2 고유 이벤트, Day 1과 차별화) ──
     "day2_broadcast_1": {
         character: null,
-        sfx: "sfx_speaker_static.mp3",
+        sfx: "sfx_static.mp3",
         next: "day2_broadcast_2"
     },
     "day2_broadcast_2": {

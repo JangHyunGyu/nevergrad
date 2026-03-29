@@ -327,7 +327,15 @@ class GameEngine {
         if (scene.silhouette) this.renderer.setSilhouette(true);
 
         // BGM
-        if (scene.bgm) this.renderer.playBGM(scene.bgm);
+        if (typeof scene.bgm === 'string') {
+            this.renderer.playBGM(scene.bgm);
+        } else if (scene.bgm && typeof scene.bgm === 'object') {
+            // { fadeOut: ms } → BGM 정지 with fade
+            const fadeOut = (scene.bgm.fadeOut || 1000) / 1000;
+            this.audio?.stopBGM(fadeOut);
+        } else if (scene.bgm === null) {
+            this.audio?.stopBGM(1.0);
+        }
 
         // SFX
         if (scene.sfx) {

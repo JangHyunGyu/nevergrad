@@ -994,14 +994,18 @@ ${memories}
     // =========================================================================
 
     async _callAPI(systemPrompt, userMessage) {
+        const messages = [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userMessage }
+        ];
+
         const response = await fetch(this.endpoint, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                app_type: this.appType,
-                prompt: systemPrompt,
-                message: userMessage
-            })
+            headers: {
+                'Content-Type': 'application/json',
+                'x-app-type': this.appType
+            },
+            body: JSON.stringify({ messages })
         });
 
         if (!response.ok) {
@@ -1009,15 +1013,16 @@ ${memories}
         }
 
         const data = await response.json();
+        const text = data?.choices?.[0]?.message?.content?.trim();
 
-        if (!data.reply) {
-            throw new Error('API 응답에 reply 필드 없음');
+        if (!text) {
+            throw new Error('API 응답에 content 없음');
         }
 
         try {
-            return JSON.parse(data.reply);
+            return JSON.parse(text);
         } catch {
-            return data.reply;
+            return text;
         }
     }
 

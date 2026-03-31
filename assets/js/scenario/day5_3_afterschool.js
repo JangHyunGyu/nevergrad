@@ -95,7 +95,7 @@ Object.assign(SCENARIO[5], {
     //    약물 투여 or 저항 → 최종 대면으로 합류
     // ══════════════════════════════════════
     "day5_after_caught_1": {
-        background: "old_building",
+        background: "basement",
         bgm: "confrontation.mp3",
         character: null,
         glitch: { heavyGlitch: true },
@@ -156,7 +156,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_resist_3"
     },
     "day5_after_caught_resist_3": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_after_caught_resist_4"
     },
     "day5_after_caught_resist_4": {
@@ -183,7 +183,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 붙잡힘 → 굴복 → 약물 투여 ──
     "day5_after_caught_submit_1": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_after_caught_submit_2"
     },
     "day5_after_caught_submit_2": {
@@ -377,6 +377,11 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_true_11": {
         character: "seolhwa_normal",
+        next: "day5_after_true_11a"
+    },
+    // "기억할게. 이설화."
+    "day5_after_true_11a": {
+        character: "seolhwa_fading",
         next: "day5_after_true_12"
     },
     "day5_after_true_12": {
@@ -497,6 +502,41 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_resist_13": {
         character: null,
+        next: "day5_after_resist_13a"
+    },
+    // "감옥에 갈 수도 있어."
+    "day5_after_resist_13a": {
+        character: "eunsu_shaking",
+        next: "day5_after_resist_13b"
+    },
+    // "알아요."
+    "day5_after_resist_13b": {
+        character: null,
+        next: "day5_after_resist_13c"
+    },
+    // "11번째 오태현은..."
+    "day5_after_resist_13c": {
+        character: "eunsu_shaking",
+        next: "day5_after_resist_13d"
+    },
+    // 선생님의 손이 미세하게 떨렸다
+    "day5_after_resist_13d": {
+        character: null,
+        next: "day5_after_resist_13e"
+    },
+    // "그날 밤 기억을 지웠어..."
+    "day5_after_resist_13e": {
+        character: "eunsu_crying",
+        next: "day5_after_resist_13f"
+    },
+    // "그 한마디가... 12번 중에 제일 아팠어."
+    "day5_after_resist_13f": {
+        character: "eunsu_crying",
+        next: "day5_after_resist_13g"
+    },
+    // "어떻게 나를 데려가겠다는 거야."
+    "day5_after_resist_13g": {
+        character: "eunsu_crying",
         next: "day5_after_resist_14"
     },
     "day5_after_resist_14": {

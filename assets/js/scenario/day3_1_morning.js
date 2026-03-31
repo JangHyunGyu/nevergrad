@@ -172,10 +172,6 @@ Object.assign(SCENARIO[3], {
     "day3_morning_seolhwa_1": {
         background: "corridor",
         character: null,
-        next: "day3_morning_seolhwa_2"
-    },
-    "day3_morning_seolhwa_2": {
-        character: null,
         next: "day3_morning_seolhwa_3"
     },
     "day3_morning_seolhwa_3": {
@@ -206,10 +202,6 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_seolhwa_9": {
         character: null,
-        next: "day3_morning_seolhwa_10"
-    },
-    "day3_morning_seolhwa_10": {
-        character: null,
         next: "day3_morning_classroom_1"
     },
 
@@ -233,11 +225,11 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_classroom_5": {
         character: null,
-        next: "day3_morning_sea_1"
+        next: "day3_morning_goosebumps"
     },
 
-    // ===== 세아 가짜 미소 =====
-    "day3_morning_sea_1": {
+    // ===== 닭살 묘사 (MD 라인 1758) =====
+    "day3_morning_goosebumps": {
         character: null,
         next: "day3_morning_sea_1a"
     },

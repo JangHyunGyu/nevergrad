@@ -97,7 +97,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_sea_16": {
         character: "sea_smile",
-        next: "day1_after_end"
+        next: "day1_after_home_1"
     },
 
     // ===== 유나 — 도서관 (lines 565-587) =====
@@ -157,7 +157,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_yuna_14": {
         character: "yuna_normal",
-        next: "day1_after_end"
+        next: "day1_after_home_1"
     },
 
     // ===== 리인 — 보건실 (lines 589-603) =====
@@ -209,7 +209,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_riin_12": {
         character: "riin_gentle",
-        next: "day1_after_end"
+        next: "day1_after_home_1"
     },
 
     // ===== 은수 — 교무실 (lines 605-621) =====
@@ -253,7 +253,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_eunsu_10": {
         character: "eunsu_warm",
-        next: "day1_after_end"
+        next: "day1_after_home_1"
     },
 
     // ===== 귀가 (lines 623-637) =====

@@ -401,9 +401,14 @@ Object.assign(SCENARIO[4], {
     // 유나를 만났지만 메모리카드는 없을 때
     "day4_morning_sea_3a": {
         character: "sea_smile",
-        next: "day4_morning_sea_4"
+        next: "day4_morning_sea_3a_react"
     },
-    // 앞자리 남학생에게 질문
+    // yuna_memory_card=false 반응 (MD 2787)
+    "day4_morning_sea_3a_react": {
+        character: "sea_smile",
+        next: "day4_morning_sea_5"
+    },
+    // 앞자리 남학생에게 질문 (sea_3 → sea_4는 yuna_memory_card=true 전용)
     "day4_morning_sea_4": {
         character: "sea_smile",
         next: "day4_morning_sea_5"

@@ -50,7 +50,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_chase_6"
     },
     "day5_lunch_chase_6": {
-        character: "eunsu_gentle",
+        character: "eunsu_pa",
         next: "day5_lunch_chase_7"
     },
     "day5_lunch_chase_7": {
@@ -96,16 +96,26 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_4"
     },
     "day5_lunch_left_4": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_5"
     },
     "day5_lunch_left_5": {
+        character: null,
+        next: "day5_lunch_left_5a"
+    },
+    // "세아, 비켜."
+    "day5_lunch_left_5a": {
+        character: "sea_cry",
+        next: "day5_lunch_left_5b"
+    },
+    // 세아가 고개를 저었다. 입술을 깨물었다. 피가 맺혔다.
+    "day5_lunch_left_5b": {
         character: null,
         next: "day5_lunch_left_6"
     },
     // "못 보내. 이번에는 못 보내."
     "day5_lunch_left_6": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_7"
     },
     "day5_lunch_left_7": {
@@ -114,25 +124,25 @@ Object.assign(SCENARIO[5], {
     },
     // "나도 알아... 내가 지금 제정신 아닌 거."
     "day5_lunch_left_8": {
-        character: "sea_smile",
+        character: "sea_vulnerable",
         next: "day5_lunch_left_9"
     },
     "day5_lunch_left_9": {
-        character: "sea_smile",
+        character: "sea_vulnerable",
         next: "day5_lunch_left_10"
     },
     // "기억 지우면 또 만날 수 있어."
     "day5_lunch_left_10": {
-        character: "sea_smile",
+        character: "sea_broken_smile",
         next: "day5_lunch_left_11"
     },
     // "1일차에 '안녕하세요' 했을 때"
     "day5_lunch_left_11": {
-        character: "sea_smile",
+        character: "sea_hurt",
         next: "day5_lunch_left_12"
     },
     "day5_lunch_left_12": {
-        character: "sea_smile",
+        character: "sea_hurt",
         next: "day5_lunch_left_13"
     },
     // 본관 1층 철문 소리
@@ -152,12 +162,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_16"
     },
     "day5_lunch_left_16": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_17"
     },
     // "...12번."
     "day5_lunch_left_17": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_18"
     },
     "day5_lunch_left_18": {
@@ -165,11 +175,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_19"
     },
     "day5_lunch_left_19": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_20"
     },
     "day5_lunch_left_20": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_21"
     },
     "day5_lunch_left_21": {
@@ -178,22 +188,22 @@ Object.assign(SCENARIO[5], {
     },
     // "매번 기억이 지워져서 또 왔어."
     "day5_lunch_left_22": {
-        character: "sea_smile",
+        character: "sea_hurt",
         next: "day5_lunch_left_23"
     },
     // 계단 발소리 가까워짐
     "day5_lunch_left_23": {
-        character: "sea_smile",
+        character: "sea_vulnerable",
         glitch: { screenShake: true },
         next: "day5_lunch_left_24"
     },
     "day5_lunch_left_24": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_25"
     },
     // "...13번째도 비켜줘야 하는 거야?"
     "day5_lunch_left_25": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_choice"
     },
 
@@ -221,15 +231,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c1_2"
     },
     "day5_lunch_left_c1_2": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_c1_3"
     },
     "day5_lunch_left_c1_3": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_c1_4"
     },
     "day5_lunch_left_c1_4": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_c1_5"
     },
     "day5_lunch_left_c1_5": {
@@ -245,14 +255,14 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c1_8"
     },
     "day5_lunch_left_c1_8": {
-        character: "sea_smile",
+        character: "sea_broken_smile",
         next: "day5_lunch_seolhwa_1",
         setFlags: ["sea_let_go_13"]
     },
 
     // ── 선택 2: "같이 가자." ──
     "day5_lunch_left_c2_1": {
-        character: "sea_smile",
+        character: "sea_cry",
         next: "day5_lunch_left_c2_2"
     },
     "day5_lunch_left_c2_2": {
@@ -260,7 +270,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_3"
     },
     "day5_lunch_left_c2_3": {
-        character: "sea_smile",
+        character: "sea_vulnerable",
         next: "day5_lunch_left_c2_4"
     },
     "day5_lunch_left_c2_4": {
@@ -268,7 +278,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_5"
     },
     "day5_lunch_left_c2_5": {
-        character: "sea_smile",
+        character: "sea_vulnerable",
         next: "day5_lunch_left_c2_6"
     },
     "day5_lunch_left_c2_6": {
@@ -276,7 +286,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_7"
     },
     "day5_lunch_left_c2_7": {
-        character: "sea_smile",
+        character: "sea_vulnerable",
         next: "day5_lunch_left_c2_8"
     },
     "day5_lunch_left_c2_8": {
@@ -284,11 +294,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_9"
     },
     "day5_lunch_left_c2_9": {
-        character: "sea_smile",
+        character: "sea_broken_smile",
         next: "day5_lunch_left_c2_10"
     },
     "day5_lunch_left_c2_10": {
-        character: "sea_smile",
+        character: "sea_broken_smile",
         next: "day5_lunch_seolhwa_1",
         setFlags: ["sea_companion"]
     },
@@ -333,7 +343,7 @@ Object.assign(SCENARIO[5], {
     },
     // "...왔어."
     "day5_lunch_right_7": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_8"
     },
     "day5_lunch_right_8": {
@@ -352,7 +362,7 @@ Object.assign(SCENARIO[5], {
     },
     // "...진정해." - 주사기를 싱크대에 내려놓음
     "day5_lunch_right_11": {
-        character: "riin_smile",
+        character: "riin_neutral",
         next: "day5_lunch_right_12"
     },
     "day5_lunch_right_12": {
@@ -361,7 +371,7 @@ Object.assign(SCENARIO[5], {
     },
     // 캐비넷에서 약병 꺼냄
     "day5_lunch_right_13": {
-        character: "riin_smile",
+        character: "riin_neutral",
         next: "day5_lunch_right_14"
     },
     "day5_lunch_right_14": {
@@ -375,7 +385,7 @@ Object.assign(SCENARIO[5], {
     },
     // ★ "설탕물이야."
     "day5_lunch_right_16": {
-        character: "riin_smile",
+        character: "riin_pain",
         glitch: { screenShake: true },
         next: "day5_lunch_right_17"
     },
@@ -385,7 +395,7 @@ Object.assign(SCENARIO[5], {
     },
     // "7번째부터."
     "day5_lunch_right_18": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_19"
     },
     "day5_lunch_right_19": {
@@ -399,19 +409,19 @@ Object.assign(SCENARIO[5], {
     },
     // 이설화 비명 회상
     "day5_lunch_right_21": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_22"
     },
     "day5_lunch_right_22": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_23"
     },
     "day5_lunch_right_23": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_24"
     },
     "day5_lunch_right_24": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_25"
     },
     // "수정 불가" 판정
@@ -420,31 +430,31 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_26"
     },
     "day5_lunch_right_26": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_27"
     },
     // 리인 자기 혐오 독백
     "day5_lunch_right_27": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_28"
     },
     "day5_lunch_right_28": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_29"
     },
     // 약 농도 줄임 -> 8번째부터 설탕물
     "day5_lunch_right_29": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_30"
     },
     // 10번째 때 은수가 의심
     "day5_lunch_right_30": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_31"
     },
     // 데자뷔의 이유
     "day5_lunch_right_31": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_32"
     },
     // 비상구 열쇠 꺼냄
@@ -458,11 +468,11 @@ Object.assign(SCENARIO[5], {
     },
     // 구관 3층 비상구 설명
     "day5_lunch_right_34": {
-        character: "riin_smile",
+        character: "riin_neutral",
         next: "day5_lunch_right_35"
     },
     "day5_lunch_right_35": {
-        character: "riin_smile",
+        character: "riin_neutral",
         next: "day5_lunch_right_36"
     },
     // 이 구역이 조용한 이유
@@ -477,7 +487,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_38"
     },
     "day5_lunch_right_38": {
-        character: "riin_smile",
+        character: "riin_neutral",
         next: "day5_lunch_right_39"
     },
     // "...시간 없어. 받아."
@@ -531,11 +541,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_c3_3"
     },
     "day5_lunch_right_c3_3": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_c3_4"
     },
     "day5_lunch_right_c3_4": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day5_lunch_right_c3_5"
     },
     "day5_lunch_right_c3_5": {

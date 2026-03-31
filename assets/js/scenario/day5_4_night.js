@@ -80,7 +80,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_6": {
         character: null,
-        background: "emergency_exit",
+        background: "exit_door",
         next: "day5_ending_true_7"
     },
     "day5_ending_true_7": {
@@ -113,6 +113,17 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_14": {
         character: "seolhwa_fading",
+        next: "day5_ending_true_14a"
+    },
+    // 은수의 반응: "결국, 내가 진 거구나. 그 아이한테."
+    "day5_ending_true_14a": {
+        character: "eunsu_shocked",
+        next: "day5_ending_true_14b"
+    },
+    // 주사기가 바닥에 떨어져 굴러갔다
+    "day5_ending_true_14b": {
+        character: null,
+        sfx: "sfx_glass_break.mp3",
         next: "day5_ending_true_15"
     },
     "day5_ending_true_15": {
@@ -481,7 +492,7 @@ Object.assign(SCENARIO[5], {
     // C. RESIST END — "반항"
     // ══════════════════════════════════════════
     "day5_ending_resist_1": {
-        background: "emergency_exit",
+        background: "exit_door",
         bgm: "ending_bittersweet.mp3",
         character: "eunsu_normal",
         next: "day5_ending_resist_2"

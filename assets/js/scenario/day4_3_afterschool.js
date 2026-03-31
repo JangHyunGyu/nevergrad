@@ -187,6 +187,67 @@ Object.assign(SCENARIO[4], {
     },
     "day4_after_sea_accept_3": {
         character: "sea_serious",
+        next: "day4_after_sea_confess_1"
+    },
+
+    // ── 세아 12번 고백 핵심 대사 블록 (MD 3111~3128) ──
+    "day4_after_sea_confess_1": {
+        // "...12번."
+        character: "sea_sad",
+        unskippable: true,
+        next: "day4_after_sea_confess_2"
+    },
+    "day4_after_sea_confess_2": {
+        // "...뭐?"
+        character: "sea_sad",
+        next: "day4_after_sea_confess_3"
+    },
+    "day4_after_sea_confess_3": {
+        // 12번 동안... 매번 이 학생회실에서...
+        character: "sea_sad",
+        unskippable: true,
+        next: "day4_after_sea_confess_4"
+    },
+    "day4_after_sea_confess_4": {
+        // 그리고 매번... 5일째에 나를 잊었어.
+        character: "sea_cry",
+        unskippable: true,
+        next: "day4_after_sea_confess_5"
+    },
+    "day4_after_sea_confess_5": {
+        // 세아의 눈에서 눈물이 흐른다. 닦지 않는다.
+        character: "sea_cry",
+        unskippable: true,
+        next: "day4_after_sea_confess_6"
+    },
+    "day4_after_sea_confess_6": {
+        // 9번째 때... 팔찌를 만들어줬어.
+        character: "sea_cry",
+        unskippable: true,
+        next: "day4_after_sea_confess_7"
+    },
+    "day4_after_sea_confess_7": {
+        // 세아가 소매를 걷는다. 실팔찌.
+        character: "sea_cry",
+        unskippable: true,
+        next: "day4_after_sea_confess_8"
+    },
+    "day4_after_sea_confess_8": {
+        // 10번째 때 너는 이걸 보고 '예쁘다, 누가 줬어?'라고 물었어.
+        character: "sea_cry",
+        unskippable: true,
+        next: "day4_after_sea_confess_9"
+    },
+    "day4_after_sea_confess_9": {
+        // 네가 만들어준 건데. 기억이 없으니까.
+        character: "sea_cry",
+        unskippable: true,
+        next: "day4_after_sea_confess_10"
+    },
+    "day4_after_sea_confess_10": {
+        // 세아가 웃었다. 울면서.
+        character: "sea_cry",
+        unskippable: true,
         next: "day4_after_sea_12loop"
     },
 
@@ -308,79 +369,81 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_3"
     },
     "day4_after_eunsu_3": {
+        // "...다 봤구나. 지하실." (MD 3179)
         character: "eunsu_serious",
+        unskippable: true,
         next: "day4_after_eunsu_4"
     },
     "day4_after_eunsu_4": {
+        // "...네가 13번째라는 거, 알고 있어?" (MD 3181)
         character: "eunsu_serious",
         unskippable: true,
+        next: "day4_after_eunsu_4a"
+    },
+    "day4_after_eunsu_4a": {
+        // 커피 내리며 담담하게... (MD 3183)
+        character: "eunsu_serious",
         next: "day4_after_eunsu_5"
     },
     "day4_after_eunsu_5": {
-        // 커피를 내린다. 잔 두 개.
+        // 커피를 내린다. 잔 두 개. (MD 3185)
         character: "eunsu_serious",
         next: "day4_after_eunsu_6"
     },
     "day4_after_eunsu_6": {
-        // 설탕 두 스푼, 크림 반
+        // 설탕 두 스푼, 크림 반 (MD 3187)
         character: null,
         unskippable: true,
         next: "day4_after_eunsu_7"
     },
     "day4_after_eunsu_7": {
-        // 내가 알려준 적 없다
+        // 내가 알려준 적 없다 (MD 3189)
         character: null,
         unskippable: true,
         next: "day4_after_eunsu_8"
     },
     "day4_after_eunsu_8": {
-        // "맞지? 네 취향."
+        // "맞지? 네 취향." (MD 3191)
         character: "eunsu_serious",
         next: "day4_after_eunsu_9"
     },
     "day4_after_eunsu_9": {
-        // 선생님이 웃는다. 안도.
+        // 선생님이 웃는다. 안도. (MD 3193)
         character: "eunsu_gentle",
         unskippable: true,
         next: "day4_after_eunsu_10"
     },
     "day4_after_eunsu_10": {
-        // 서랍. 포스트잇. 이름들.
+        // 서랍. 포스트잇. 이름들. (MD 3195)
         character: null,
         unskippable: true,
         next: "day4_after_eunsu_11"
     },
     "day4_after_eunsu_11": {
-        // 맨 아래 포스트잇에 내 이름
+        // 맨 아래 포스트잇에 내 이름 (MD 3197)
         character: null,
         unskippable: true,
         next: "day4_after_eunsu_12"
     },
     "day4_after_eunsu_12": {
-        // "...다 봤구나. 지하실."
-        character: "eunsu_serious",
-        unskippable: true,
+        // 침묵. (MD 3201)
+        character: null,
         next: "day4_after_eunsu_13"
     },
     "day4_after_eunsu_13": {
-        // 침묵.
-        character: null,
+        // "괜찮아, {name}. 선생님이 다 해결해줄게." (MD 3203)
+        character: "eunsu_gentle",
+        unskippable: true,
         next: "day4_after_eunsu_14"
     },
     "day4_after_eunsu_14": {
-        // "괜찮아, {name}. 선생님이 다 해결해줄게."
+        // 선생님의 손이 내 머리를 쓰다듬는다 (MD 3205)
         character: "eunsu_gentle",
         unskippable: true,
         next: "day4_after_eunsu_15"
     },
     "day4_after_eunsu_15": {
-        // 선생님의 손이 내 머리를 쓰다듬는다
-        character: "eunsu_gentle",
-        unskippable: true,
-        next: "day4_after_eunsu_16"
-    },
-    "day4_after_eunsu_16": {
-        // ...이 손이 12번의 기억을 지웠다
+        // ...이 손이 12번의 기억을 지웠다 (MD 3207)
         character: "eunsu_gentle",
         unskippable: true,
         glitch: { heavyGlitch: true },
@@ -406,50 +469,59 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_riin_4"
     },
     "day4_after_riin_4": {
+        // 경계→탐색 나레이션
         character: "riin_neutral",
         next: "day4_after_riin_5"
     },
     "day4_after_riin_5": {
+        // "리인 선생님." (MD 3227)
+        character: "riin_neutral",
+        next: "day4_after_riin_5a"
+    },
+    "day4_after_riin_5a": {
+        // "응?" (MD 3229)
+        character: "riin_neutral",
+        next: "day4_after_riin_5b"
+    },
+    "day4_after_riin_5b": {
+        // "지하실 갔다 왔어요." (MD 3231)
         character: "riin_neutral",
         next: "day4_after_riin_6"
     },
     "day4_after_riin_6": {
+        // 침묵. 3초. (MD 3233~3235)
         character: "riin_neutral",
         next: "day4_after_riin_7"
     },
     "day4_after_riin_7": {
+        // "...너 거기 갔구나." (MD 3237)
         character: "riin_neutral",
         next: "day4_after_riin_8"
     },
     "day4_after_riin_8": {
+        // 일어서고 문 잠금 (MD 3239~3241)
         character: "riin_neutral",
         next: "day4_after_riin_9"
     },
     "day4_after_riin_9": {
+        // "거기서 뭘 봤어?" (MD 3243)
         character: "riin_neutral",
         next: "day4_after_riin_10"
     },
     "day4_after_riin_10": {
+        // "전부요. 차트도. 관찰 일지도. 유나도." (MD 3245)
         character: "riin_cold",
         unskippable: true,
         next: "day4_after_riin_11"
     },
     "day4_after_riin_11": {
+        // 한숨 나레이션 (MD 3247)
         character: "riin_cold",
         next: "day4_after_riin_12"
     },
     "day4_after_riin_12": {
+        // "...빠르다. 12번째보다 빨라." (MD 3249)
         character: "riin_cold",
-        next: "day4_after_riin_13"
-    },
-    "day4_after_riin_13": {
-        character: "riin_cold",
-        unskippable: true,
-        next: "day4_after_riin_14"
-    },
-    "day4_after_riin_14": {
-        character: "riin_cold",
-        unskippable: true,
         next: "day4_after_riin_15"
     },
     "day4_after_riin_15": {

@@ -220,19 +220,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_stat_crack_6": {
         character: null,
-        next: "day3_night_ft_nightmare"
-    },
-
-    // ══════════════════════════════════════
-    //  ★ AI 커스텀 악몽 (FreeTalk 나이트메어 모드)
-    // ══════════════════════════════════════
-    "day3_night_ft_nightmare": {
-        background: "black",
-        character: null,
-        night: true,
-        type: "free_talk",
-        freeTalkMode: "nightmare",
-        freeTalkNext: "day3_night_wall"
+        next: "day3_night_wall"
     },
 
     // ══════════════════════════════════════
@@ -471,7 +459,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_investigate_2": {
         character: null,
-        next: "day3_night_end"
+        next: "day3_night_ft_nightmare"
     },
 
     // 모른 척한다
@@ -491,7 +479,20 @@ Object.assign(SCENARIO[3], {
     "day3_night_deny_4": {
         character: null,
         glitch: { ghostText: "day3_night_ghost_run", ghostDuration: 1500, ghostDelay: 500 },
-        next: "day3_night_end"
+        next: "day3_night_ft_nightmare"
+    },
+
+    // ══════════════════════════════════════
+    //  ★ AI 커스텀 악몽 (FreeTalk 나이트메어 모드)
+    //  MD 순서: 최종 선택 후 → 프리토크 악몽 → 3일차 종료
+    // ══════════════════════════════════════
+    "day3_night_ft_nightmare": {
+        background: "black",
+        character: null,
+        night: true,
+        type: "free_talk",
+        freeTalkMode: "nightmare",
+        freeTalkNext: "day3_night_end"
     },
 
     // ══════════════════════════════════════

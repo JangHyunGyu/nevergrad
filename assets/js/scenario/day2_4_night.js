@@ -18,7 +18,7 @@ Object.assign(SCENARIO[2], {
 
     // ===== 연락 두절 =====
     "day2_night_start": {
-        background: "home",
+        background: "room_night",
         bgm: "night_calm.mp3",
         character: null,
         night: true,
@@ -192,10 +192,17 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_sea_14"
     },
 
-    // ===== 은수 선생님 메시지 =====
+    // ===== 폰 내려놓기 — 은수 선생님 메시지 =====
     "day2_night_sea_14": {
         character: null,
         night: true,
+        next: "day2_night_sea_14a"
+    },
+    "day2_night_sea_14a": {
+        character: null,
+        night: true,
+        sfx: "sfx_phone_vibrate.mp3",
+        vibrate: "notification",
         next: "day2_night_eunsu_1"
     },
     "day2_night_eunsu_1": {

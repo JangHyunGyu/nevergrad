@@ -11,9 +11,63 @@
         "name": "",
         "text": ""
     },
+    "day5_night_sea_affinity_check": {
+        "name": "",
+        "text": ""
+    },
+    "day5_night_set_high_sea_affinity": {
+        "name": "",
+        "text": ""
+    },
+    "day5_night_complicit_eval": {
+        "name": "",
+        "text": ""
+    },
+    "day5_night_set_complicit_ready": {
+        "name": "",
+        "text": ""
+    },
     "day5_night_routing": {
         "name": "",
         "text": ""
+    },
+
+    "day5_ending_forget_forced_1": {
+        "name": "",
+        "text": "*이미 늦었다. 바늘이 빠져나간 자리만 싸늘하게 남아 있다.*"
+    },
+    "day5_ending_forget_forced_2": {
+        "name": "박은수",
+        "text": "\"...미안해. 이번에도, 내가 너무 늦었어.\""
+    },
+    "day5_ending_forget_forced_3": {
+        "name": "",
+        "text": "*리인 선생님이 눈을 감았다. 뭐라고 말하는데, 소리가 물속에서처럼 멀다.*"
+    },
+    "day5_ending_forget_forced_4": {
+        "name": "",
+        "text": "*의식이 가라앉는다. 후회도, 분노도, 말이 되지 못한 채 미끄러진다.*"
+    },
+
+    "day5_ending_ghost_guided_1": {
+        "name": "",
+        "text": "*정전 속에서 비상벨이 한번 울렸다. 누군가 등을 거칠게 떠민다.*"
+    },
+    "day5_ending_ghost_guided_2": {
+        "name": "설화",
+        "text": "\"...멈추지 마. 네 몸이 길을 기억해.\""
+    },
+    "day5_ending_ghost_guided_3": {
+        "name": "",
+        "text": "*계단을 두 칸씩 뛰어올랐다. 설화가 앞장서는 것처럼 보이지만, 실제로는 내 발이 먼저 비상구를 향한다.*"
+    },
+    "day5_ending_ghost_guided_4": {
+        "name": "설화",
+        "text": "\"좋아. 그대로. 이제 문만 밀어.\""
+    },
+    "day5_ending_ghost_guided_5": {
+        "name": "",
+        "text": "*문이 열리고 찬 공기가 밀려들었다. 그제야 숨이 돌아온다.*"
     },
 
     "day5_ending_true_1": {
@@ -70,7 +124,7 @@
     },
     "day5_ending_true_14": {
         "name": "나",
-        "text": "\"기억할게. 이설화. 왼손잡이 이설화.\""
+        "text": "\"기억할게. 이설화. 네가 끝까지 되돌려준 이름.\""
     },
     "day5_ending_true_14a": {
         "name": "박은수",
@@ -150,7 +204,7 @@
     },
     "day5_ending_true_31": {
         "name": "",
-        "text": "*왼손으로 연필을 잡았다. 7번째의 버릇. 설화의 버릇. — 내 버릇.*"
+        "text": "*왼손으로 연필을 잡았다. 7번째에 남았던 버릇. 설화가 기억해낸 — 내 버릇.*"
     },
     "day5_ending_true_32": {
         "name": "",
@@ -297,7 +351,7 @@
     },
     "day5_ending_resist_7": {
         "name": "",
-        "text": "*은수 선생님이 멈췄다. 설화가 나타났다. 은수 선생님 뒤에.*"
+        "text": "*은수 선생님이 멈췄다. 설화가 보였다. 선생님 뒤에 서 있는 게 아니라 — 내 시야 위로 겹쳐진 잔상처럼.*"
     },
     "day5_ending_resist_8": {
         "name": "설화",
@@ -305,15 +359,15 @@
     },
     "day5_ending_resist_9": {
         "name": "",
-        "text": "*은수 선생님이 몸을 돌렸다. 설화를 봤다.*"
+        "text": "*그 이름이 내 입 밖으로 새어 나왔다. 은수 선생님의 표정이 굳었다.*"
     },
     "day5_ending_resist_10": {
         "name": "박은수",
-        "text": "\"...이설화.\""
+        "text": "\"...아직도 그 이름을 기억하고 있구나.\""
     },
     "day5_ending_resist_11": {
         "name": "설화",
-        "text": "\"6년 동안 매일 봤어. 선생님이 매번 새로운 나를 맞이하는 거.\""
+        "text": "\"그날 이후 여섯 번을 더 봤어. 선생님이 매번 새로운 나를 맞이하는 거.\""
     },
     "day5_ending_resist_12": {
         "name": "설화",
@@ -373,7 +427,7 @@
     },
     "day5_ending_resist_22": {
         "name": "",
-        "text": "*비상구를 지났다. 은수 선생님과 함께. 설화가 문 안에서 웃었다. 빛이 흩어졌다.*"
+        "text": "*비상구를 지났다. 은수 선생님과 함께. 문 안쪽, 유리 너머로 설화가 잠깐 웃는 듯 보였다. 다음 순간, 빛이 흩어졌다.*"
     },
     "day5_ending_resist_23": {
         "name": "",
@@ -393,28 +447,28 @@
     },
 
     "day5_ending_cage_eunsu_1": {
-        "name": "박은수",
-        "text": "\"...진짜?\""
+        "name": "",
+        "text": "*저녁이 지나고도 교실 불은 꺼지지 않았다. 은수 선생님은 아무 일도 없었다는 듯 출석부를 정리했다.*"
     },
     "day5_ending_cage_eunsu_2": {
-        "name": "나",
-        "text": "\"...네.\""
+        "name": "박은수",
+        "text": "\"...이제 괜찮아. 오늘은 푹 쉬자.\""
     },
     "day5_ending_cage_eunsu_3": {
         "name": "",
-        "text": "*선생님이 웃었다. 진심으로. 12번 동안 처음으로 — 기다리지 않아도 되는 미소.*"
+        "text": "*고개를 끄덕였다. 거절해야 하는데, 이상하게 목 안쪽이 잠잠했다.*"
     },
     "day5_ending_cage_eunsu_4": {
         "name": "박은수",
-        "text": "\"...고마워, {name}.\""
+        "text": "\"내일부터는 다시 평소처럼 하면 돼. 선생님 곁에서.\""
     },
     "day5_ending_cage_eunsu_5": {
         "name": "",
-        "text": "*선생님이 나를 안았다.*"
+        "text": "*교실 문이 부드럽게 닫혔다. 잠그지 않았다는 걸 알면서도, 나는 자리에서 일어나지 않았다.*"
     },
     "day5_ending_cage_eunsu_6": {
         "name": "",
-        "text": "*...교실. 오후의 햇살. 은수 선생님이 수업을 하고 있다. 나는 창가 자리에 앉아있다.*"
+        "text": "*...다음 날 오후. 같은 교실, 같은 창가 자리. 은수 선생님의 목소리가 종소리처럼 멀게 울린다.*"
     },
     "day5_ending_cage_eunsu_7": {
         "name": "",
@@ -619,15 +673,15 @@
     },
     "day5_ending_ghost_6": {
         "name": "설화",
-        "text": "\"6번 동안 봤어. 네가 결정하지 못하는 걸.\""
+        "text": "\"6번 동안 봤어. 네가 마지막 순간마다 멈칫하는 걸.\""
     },
     "day5_ending_ghost_7": {
         "name": "설화",
-        "text": "\"이번에도 못 하는 거지. 알아. 습관이니까.\""
+        "text": "\"이번에도 혼자서는 못 나가. 알아. 몸이 먼저 붙잡히니까.\""
     },
     "day5_ending_ghost_8": {
         "name": "설화",
-        "text": "\"그러니까 — **내가 결정해줄게.**\""
+        "text": "\"그러니까 — **이번만은 내가 등을 밀어줄게.**\""
     },
     "day5_ending_ghost_9": {
         "name": "",

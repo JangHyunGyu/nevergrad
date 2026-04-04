@@ -16,6 +16,27 @@ Object.assign(SCENARIO[5], {
         bgm: "heartbeat_loop.mp3",
         character: null,
         glitchLevel: 4,
+        next: "day5_morning_plan_branch"
+    },
+    "day5_morning_plan_branch": {
+        character: null,
+        branches: [
+            { condition: "plan_escape_school", next: "day5_morning_plan_escape" },
+            { condition: "plan_expose_truth", next: "day5_morning_plan_expose" },
+            { condition: "plan_confront_them", next: "day5_morning_plan_confront" }
+        ],
+        next: "day5_morning_dawn_1"
+    },
+    "day5_morning_plan_escape": {
+        character: null,
+        next: "day5_morning_dawn_1"
+    },
+    "day5_morning_plan_expose": {
+        character: null,
+        next: "day5_morning_dawn_1"
+    },
+    "day5_morning_plan_confront": {
+        character: null,
         next: "day5_morning_dawn_1"
     },
 
@@ -150,7 +171,19 @@ Object.assign(SCENARIO[5], {
     // ── met_yuna 미충족: 모르는 여학생 — 한 씬 후 합류 ──
     "day5_morning_rescue_2_unknown": {
         character: "yuna_weak",
-        next: "day5_morning_rescue_3"
+        next: "day5_morning_rescue_3_unknown"
+    },
+    "day5_morning_rescue_3_unknown": {
+        character: "yuna_weak",
+        next: "day5_morning_rescue_4_unknown"
+    },
+    "day5_morning_rescue_4_unknown": {
+        character: "yuna_weak",
+        next: "day5_morning_rescue_5_unknown"
+    },
+    "day5_morning_rescue_5_unknown": {
+        character: "yuna_weak",
+        next: "day5_morning_rescue_5"
     },
     "day5_morning_rescue_3": {
         character: "yuna_weak",
@@ -249,7 +282,7 @@ Object.assign(SCENARIO[5], {
     // ── ESCAPE 루트 종료 → 추격 스킵, 방과후로 직행 ──
     "day5_morning_escape_end": {
         character: null,
-        setFlags: ["route_escape"],
+        setFlags: ["route_escape", "escape_with_yuna"],
         changeSlot: "afterschool",
         next: "day5_after_start"
     },

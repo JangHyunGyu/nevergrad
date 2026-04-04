@@ -19,6 +19,7 @@ Object.assign(SCENARIO[5], {
         background: "black",
         bgm: null,
         character: null,
+        clearFlags: ["high_eunsu_affinity", "high_sea_affinity", "complicit_ready"],
         next: "day5_night_affinity_check"
     },
 
@@ -28,12 +29,38 @@ Object.assign(SCENARIO[5], {
         affinityChar: "eunsu",
         affinityBranches: [
             { minAffinity: 50, next: "day5_night_set_high_affinity" },
-            { minAffinity: 0, next: "day5_night_routing" }
+            { minAffinity: 0, next: "day5_night_sea_affinity_check" }
         ]
     },
     "day5_night_set_high_affinity": {
         character: null,
         setFlags: ["high_eunsu_affinity"],
+        next: "day5_night_sea_affinity_check"
+    },
+    "day5_night_sea_affinity_check": {
+        character: null,
+        affinityChar: "sea",
+        affinityBranches: [
+            { minAffinity: 50, next: "day5_night_set_high_sea_affinity" },
+            { minAffinity: 0, next: "day5_night_complicit_eval" }
+        ]
+    },
+    "day5_night_set_high_sea_affinity": {
+        character: null,
+        setFlags: ["high_sea_affinity"],
+        next: "day5_night_complicit_eval"
+    },
+    "day5_night_complicit_eval": {
+        character: null,
+        branches: [
+            { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_night_set_complicit_ready" },
+            { condition: ["complicit_route", "high_sea_affinity"], next: "day5_night_set_complicit_ready" }
+        ],
+        next: "day5_night_routing"
+    },
+    "day5_night_set_complicit_ready": {
+        character: null,
+        setFlags: ["complicit_ready"],
         next: "day5_night_routing"
     },
 
@@ -41,16 +68,70 @@ Object.assign(SCENARIO[5], {
     "day5_night_routing": {
         character: null,
         branches: [
-            { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_ending_complicit_1" },
+            { condition: ["route_escape"], next: "day5_ending_escape_1" },
+            { condition: ["forced_forget"], next: "day5_ending_forget_forced_1" },
+            { condition: ["ghost_guided"], next: "day5_ending_ghost_guided_1" },
+            { condition: ["route_true", "has_evidence"], next: "day5_ending_true_1" },
+            { condition: ["route_true"], next: "day5_ending_escape_1" },
+            { condition: ["route_resist"], next: "day5_ending_resist_1" },
+            { condition: ["route_forget"], next: "day5_ending_forget_1" },
+            { condition: ["route_ghost"], next: "day5_ending_ghost_1" },
             { condition: ["broke_through_eunsu", "escape_with_yuna", "has_evidence"], next: "day5_ending_true_1" },
             { condition: ["broke_through_eunsu", "escape_with_yuna"], next: "day5_ending_escape_1" },
             { condition: ["chose_together"], next: "day5_ending_resist_1" },
+            { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_ending_complicit_1" },
+            { condition: ["complicit_route", "high_sea_affinity"], next: "day5_ending_complicit_1" },
+            { condition: ["complicit_ready"], next: "day5_ending_complicit_1" },
             { condition: ["stayed_with_eunsu"], next: "day5_ending_cage_eunsu_1" },
             { condition: ["stayed_with_sea"], next: "day5_ending_cage_sea_1" },
             { condition: ["chose_forget"], next: "day5_ending_forget_1" },
             { condition: ["timer_expired"], next: "day5_ending_ghost_1" },
             { condition: [], next: "day5_ending_forget_1" }
         ]
+    },
+
+    // ── 붙잡힘 후 강제 망각 진입 ──
+    "day5_ending_forget_forced_1": {
+        background: "emergency_exit",
+        bgm: null,
+        character: null,
+        next: "day5_ending_forget_forced_2"
+    },
+    "day5_ending_forget_forced_2": {
+        character: "eunsu_normal",
+        next: "day5_ending_forget_forced_3"
+    },
+    "day5_ending_forget_forced_3": {
+        character: null,
+        next: "day5_ending_forget_forced_4"
+    },
+    "day5_ending_forget_forced_4": {
+        character: null,
+        next: "day5_ending_forget_10"
+    },
+
+    // ── 붙잡힘 후 설화가 밀어 올린 탈출 ──
+    "day5_ending_ghost_guided_1": {
+        background: "emergency_exit",
+        bgm: "ending_ghost.mp3",
+        character: null,
+        next: "day5_ending_ghost_guided_2"
+    },
+    "day5_ending_ghost_guided_2": {
+        character: "seolhwa_fading",
+        next: "day5_ending_ghost_guided_3"
+    },
+    "day5_ending_ghost_guided_3": {
+        character: null,
+        next: "day5_ending_ghost_guided_4"
+    },
+    "day5_ending_ghost_guided_4": {
+        character: "seolhwa_fading",
+        next: "day5_ending_ghost_guided_5"
+    },
+    "day5_ending_ghost_guided_5": {
+        character: null,
+        next: "day5_ending_ghost_17"
     },
 
     // ══════════════════════════════════════════

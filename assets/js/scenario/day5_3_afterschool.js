@@ -37,6 +37,11 @@ Object.assign(SCENARIO[5], {
             { condition: "stayed_with_sea", next: "day5_after_end" },
             { condition: "caught_by_sea", next: "day5_after_caught_1" },
             { condition: "caught_by_riin", next: "day5_after_caught_1" },
+            { condition: "route_escape", next: "day5_after_end" },
+            { condition: "route_true", next: "day5_after_end" },
+            { condition: "route_forget", next: "day5_after_end" },
+            { condition: "route_resist", next: "day5_after_end" },
+            { condition: "route_ghost", next: "day5_after_end" },
             { condition: "broke_through_eunsu", next: "day5_after_confront_1" }
         ],
         next: "day5_after_confront_1"
@@ -178,7 +183,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_caught_resist_7": {
         character: null,
         next: "day5_after_end",
-        setFlags: ["timer_expired"]
+        setFlags: ["ghost_guided", "timer_expired"]
     },
 
     // ── 붙잡힘 → 굴복 → 약물 투여 ──
@@ -200,7 +205,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         glitch: { heavyGlitch: true, drugBlur: true },
         next: "day5_after_end",
-        setFlags: ["chose_forget"]
+        setFlags: ["forced_forget"]
     },
 
     // ══════════════════════════════════════
@@ -615,6 +620,8 @@ Object.assign(SCENARIO[5], {
     // ══════════════════════════════════════
     "day5_after_end": {
         character: null,
+        autoAdvance: true,
+        autoAdvanceDelay: 300,
         changeSlot: "night",
         next: "day5_night_start"
     }

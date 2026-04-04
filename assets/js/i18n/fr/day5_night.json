@@ -871,7 +871,7 @@
     },
     "day5_observer_6": {
         "name": "",
-        "text": "Sujet observe : Sujet #13 ({name})\nDuree d'observation : {実際のプレイ時間}\nResume du comportement de l'observateur :\n\n· Nombre de selections du chemin Sea : {実際の選択データ}\n· Contact avec Yuna : {met_yuna 値}\n· Nombre de visites a Riin : {実際のデータ}\n· Tentatives de dialogue avec Seolhwa : {実際のデータ}\n· Preuves securisees : {実際のデータ}\n· Temps ecoule avant la decision finale : {20秒タイマーでの実際の所要時間}"
+        "text": "Sujet observe : Sujet #13 ({name})\nDuree d'observation : {play_time}\nResume du comportement de l'observateur :\n\n· Nombre de selections du chemin Sea : {route_data}\n· Contact avec Yuna : {met_yuna}\n· Nombre de visites a Riin : {riin_visits}\n· Tentatives de dialogue avec Seolhwa : {seolhwa_attempts}\n· Preuves securisees : {evidence_data}\n· Temps ecoule avant la decision finale : {timer_data}"
     },
     "day5_observer_7": {
         "name": "",
@@ -879,7 +879,7 @@
     },
     "day5_observer_8": {
         "name": "",
-        "text": "Remarques :\n\nL'observateur a visionne les 5 jours du Sujet #13.\nL'observateur a choisi les interlocuteurs du sujet.\nL'observateur a determine les objets d'attachement emotionnel du sujet.\nL'observateur a regarde le sujet ressentir la peur.\nL'observateur a decide si le sujet s'echapperait ou non.\n\nQuestion :\nPark Eunsu a concu et observe 13 cycles.\nVous avez observe la vie de {name} pendant {実際のプレイ時間}.\n\nQuelle est la difference ?"
+        "text": "Remarques :\n\nL'observateur a visionne les 5 jours du Sujet #13.\nL'observateur a choisi les interlocuteurs du sujet.\nL'observateur a determine les objets d'attachement emotionnel du sujet.\nL'observateur a regarde le sujet ressentir la peur.\nL'observateur a decide si le sujet s'echapperait ou non.\n\nQuestion :\nPark Eunsu a concu et observe 13 cycles.\nVous avez observe la vie de {name} pendant {play_time}.\n\nQuelle est la difference ?"
     },
     "day5_observer_9": {
         "name": "",

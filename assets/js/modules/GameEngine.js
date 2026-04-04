@@ -162,6 +162,7 @@ class GameEngine {
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
             this.save.load();
+            this.state.resumeRun();
             this._endingReached = false;
             // Cupid 크로스오버 플래그 설정 (세이브 데이터에 포함되지 않으므로 매번 감지)
             if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
@@ -183,6 +184,7 @@ class GameEngine {
             const name = document.getElementById('player-name-input')?.value.trim();
             if (!name) return;
 
+            this.state.startNewRun();
             this.state.playerName = this._sanitizeName(name);
             this.state.currentDay = 1;
             this.state.currentSlot = "morning";
@@ -286,6 +288,10 @@ class GameEngine {
 
         this.state.currentScene = sceneId;
         this.currentSceneData = scene;
+
+        if (this.deviceGimmick?.setupOrientationHijack) {
+            this.deviceGimmick.setupOrientationHijack(this.state.currentDay);
+        }
 
         // 배경
         if (scene.background) {
@@ -411,7 +417,8 @@ class GameEngine {
         // ===== i18n에서 텍스트 가져오기 =====
         const t = this.i18n.get(sceneId);
         const name = this._resolveName(t.name);
-        const text = this.i18n.resolve(t.text, this.state.playerName);
+        const extraVars = this._buildSceneVars(sceneId, scene);
+        const text = this.i18n.resolve(t.text, this.state.playerName, extraVars);
 
         this._updateHUD();
 
@@ -443,7 +450,9 @@ class GameEngine {
 
         // 선택지
         if (scene.choices) {
-            const choiceLabels = (t.choices || []).map(l => this.i18n.resolve(l, this.state.playerName));
+            const choiceLabels = (t.choices || []).map(
+                l => this.i18n.resolve(l, this.state.playerName, extraVars)
+            );
             typeFn(name, text, () => {
                 stopAutoOnChoices();
                 if (scene.timedChoice) {
@@ -528,6 +537,7 @@ class GameEngine {
         panel.innerHTML = '';
         panel.classList.remove('hidden');
         let choiceSelected = false;
+        let visibleChoiceIdx = 0;
 
         choices.forEach((choice, choiceIdx) => {
             if (choice.condition && !this._checkCondition(choice.condition)) return;
@@ -535,10 +545,12 @@ class GameEngine {
 
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
-            btn.textContent = labels?.[choiceIdx] || `선택 ${choiceIdx + 1}`;
+            const label = labels?.[choiceIdx] || `선택 ${choiceIdx + 1}`;
+            const displayedIndex = visibleChoiceIdx++;
+            btn.textContent = label;
 
             // 시차(stagger) 애니메이션: 각 버튼이 80ms 간격으로 순차 등장
-            btn.style.animationDelay = `${choiceIdx * 80}ms`;
+            btn.style.animationDelay = `${displayedIndex * 80}ms`;
 
             // 글리치: 선택지 깜빡임
             if (choice.glitchFlicker) {
@@ -551,6 +563,12 @@ class GameEngine {
                 if (choiceSelected) return;
                 choiceSelected = true;
                 this.audio?.playUIChoiceSelect();
+                this._recordChoiceTelemetry(
+                    this.state.currentScene,
+                    choice,
+                    label,
+                    displayedIndex
+                );
                 panel.classList.add('hidden');
                 if (choice.stats) {
                     for (const [charId, changes] of Object.entries(choice.stats)) {
@@ -574,14 +592,6 @@ class GameEngine {
             const btns = Array.from(panel.querySelectorAll('.choice-btn'));
             this.glitchAdvanced.applyChoiceStaining(btns, this.state.currentScene, this.save);
         }
-
-        // 선택지 선택 이력 기록 (2회차용)
-        const choiceBtns = panel.querySelectorAll('.choice-btn');
-        choiceBtns.forEach((btn, idx) => {
-            btn.addEventListener('click', () => {
-                this.save.recordChoice(this.state.currentScene, idx, btn.textContent);
-            }, { once: true });
-        });
 
         // 씬 글리치에서 예약된 forceChoice 처리
         if (typeof this._pendingForceChoice === 'number') {
@@ -633,12 +643,19 @@ class GameEngine {
 
         // 약물 시야 흐림: 타이머 시작 직전 블랙아웃
         const startChoices = () => {
+            const startedAt = Date.now();
             this.choices.showTimedChoices(
                 scene.choices,
                 labels,
                 Math.round(timeMs / 1000),
                 -1, // timeout sentinel
-                (idx) => this._handleTimedResult(scene, idx)
+                (idx) => this._handleTimedResult(
+                    scene,
+                    idx,
+                    labels,
+                    timeMs,
+                    Date.now() - startedAt
+                )
             );
         };
 
@@ -652,9 +669,10 @@ class GameEngine {
     /**
      * 타이머 선택지 결과 처리
      */
-    _handleTimedResult(scene, idx) {
+    _handleTimedResult(scene, idx, labels = [], timeMs = scene.timedChoice, elapsedMs = 0) {
         // 타임아웃 (idx < 0 또는 범위 초과)
         if (idx < 0 || idx >= scene.choices.length) {
+            this.state.recordTimedChoice(this.state.currentScene, timeMs, elapsedMs, true);
             if (scene.timeoutFlags) this.state.setFlags(scene.timeoutFlags);
             if (scene.timeoutNext) {
                 this._loadScene(scene.timeoutNext);
@@ -665,6 +683,14 @@ class GameEngine {
         // 정상 선택
         const choice = scene.choices[idx];
         if (!choice) return;
+
+        this._recordChoiceTelemetry(
+            this.state.currentScene,
+            choice,
+            labels?.[idx] || `선택 ${idx + 1}`,
+            idx,
+            { timed: true, timeMs, elapsedMs, timedOut: false }
+        );
 
         if (choice.stats) {
             for (const [charId, changes] of Object.entries(choice.stats)) {
@@ -678,6 +704,38 @@ class GameEngine {
         }
         if (choice.setFlags) this.state.setFlags(choice.setFlags);
         if (choice.next) this._loadScene(choice.next);
+    }
+
+    _recordChoiceTelemetry(sceneId, choice, label, displayedIndex, options = {}) {
+        this.save.recordChoice(sceneId, displayedIndex, label);
+
+        const routeKey = this._detectRouteSelection(choice?.next);
+        if (routeKey) {
+            this.state.recordRouteSelection(routeKey);
+        }
+
+        if (choice?.next && /(?:^|_)seolhwa(?:_|$)/.test(choice.next)) {
+            this.state.recordSeolhwaAttempt();
+        }
+
+        if (options.timed) {
+            this.state.recordTimedChoice(
+                sceneId,
+                options.timeMs,
+                options.elapsedMs,
+                !!options.timedOut
+            );
+        }
+    }
+
+    _detectRouteSelection(nextSceneId) {
+        if (!nextSceneId || typeof nextSceneId !== 'string') return null;
+        if (/(?:^|_)sea(?:_|$)/.test(nextSceneId)) return 'sea';
+        if (/(?:^|_)yuna(?:_|$)/.test(nextSceneId)) return 'yuna';
+        if (/(?:^|_)riin(?:_|$)/.test(nextSceneId)) return 'riin';
+        if (/(?:^|_)eunsu(?:_|$)/.test(nextSceneId)) return 'eunsu';
+        if (/(?:^|_)(alone|home)(?:_|$)/.test(nextSceneId)) return 'alone';
+        return null;
     }
 
     // ===== Branch Resolution =====
@@ -816,6 +874,131 @@ class GameEngine {
         const selfNames = ["나", "Me", "Ich", "私", "Yo", "Moi"];
         if (selfNames.includes(name)) return this.state.playerName || name;
         return name;
+    }
+
+    _buildSceneVars(sceneId, scene) {
+        const futureName = this._getFutureSubjectName();
+        const vars = {
+            new_name: futureName,
+            '14th_name': futureName
+        };
+
+        if (scene?.dynamicData || sceneId.startsWith('day5_observer_')) {
+            Object.assign(vars, this._buildObserverVars());
+        }
+
+        return vars;
+    }
+
+    _getFutureSubjectName() {
+        const pool = [
+            '강하준', '김시온', '박도윤', '서이안',
+            '윤태오', '이현우', '정민재', '최도현'
+        ];
+        const seedSource = this.state.playerName || 'NEVERGRAD';
+        const seed = [...seedSource].reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
+        const picked = this.state.getGeneratedName('14th_name', () => pool[seed % pool.length]);
+        this.state.getGeneratedName('new_name', () => picked);
+        return picked;
+    }
+
+    _buildObserverVars() {
+        const analytics = this.state.analytics || {};
+        const hasEvidence =
+            this.state.hasFlag('has_evidence') ||
+            this.state.hasFlag('yuna_memory_card') ||
+            this.state.hasFlag('yuna_sd_card_copy') ||
+            this.state.hasFlag('evidence_subject_ledger') ||
+            this.state.hasFlag('found_photo_fragment') ||
+            this.state.hasFlag('found_yuna_camera') ||
+            (Array.isArray(this.state.evidence) && this.state.evidence.length > 0);
+
+        return {
+            play_time: this._formatPlayTime(this.state.getTotalPlayMs()),
+            route_data: String(analytics.routeSelections?.sea || 0),
+            met_yuna: this._formatBinaryStatus(this.state.hasFlag('met_yuna')),
+            riin_visits: String(analytics.riinVisits || analytics.routeSelections?.riin || 0),
+            seolhwa_attempts: String(analytics.seolhwaAttempts || 0),
+            evidence_data: this._formatEvidenceStatus(hasEvidence),
+            timer_data: this._formatTimedChoice(analytics.lastTimedChoice)
+        };
+    }
+
+    _formatPlayTime(totalMs) {
+        const totalSec = Math.max(0, Math.floor((totalMs || 0) / 1000));
+        const hours = Math.floor(totalSec / 3600);
+        const minutes = Math.floor((totalSec % 3600) / 60);
+        const seconds = totalSec % 60;
+        return [
+            String(hours).padStart(2, '0'),
+            String(minutes).padStart(2, '0'),
+            String(seconds).padStart(2, '0')
+        ].join(':');
+    }
+
+    _formatBinaryStatus(value) {
+        const lang = this.i18n.currentLang || 'ko';
+        const labels = {
+            ko: value ? '예' : '아니오',
+            en: value ? 'Yes' : 'No',
+            ja: value ? 'あり' : 'なし',
+            es: value ? 'Sí' : 'No',
+            fr: value ? 'Oui' : 'Non',
+            de: value ? 'Ja' : 'Nein'
+        };
+        return labels[lang] || labels.ko;
+    }
+
+    _formatEvidenceStatus(value) {
+        const lang = this.i18n.currentLang || 'ko';
+        const labels = {
+            ko: value ? '확보' : '미확보',
+            en: value ? 'Secured' : 'Missing',
+            ja: value ? '確保' : '未確保',
+            es: value ? 'Asegurada' : 'No asegurada',
+            fr: value ? 'Sécurisées' : 'Aucune',
+            de: value ? 'Gesichert' : 'Nicht gesichert'
+        };
+        return labels[lang] || labels.ko;
+    }
+
+    _formatTimedChoice(record) {
+        const lang = this.i18n.currentLang || 'ko';
+        if (!record) {
+            const empty = {
+                ko: '기록 없음',
+                en: 'No record',
+                ja: '記録なし',
+                es: 'Sin registro',
+                fr: 'Aucune donnée',
+                de: 'Kein Eintrag'
+            };
+            return empty[lang] || empty.ko;
+        }
+
+        const elapsedSec = ((record.elapsedMs || 0) / 1000).toFixed(1);
+        const limitSec = Math.round((record.timeLimitMs || 0) / 1000);
+        if (record.timedOut) {
+            const timeout = {
+                ko: `시간 초과 (${limitSec}초 제한)`,
+                en: `Timed out (${limitSec}s limit)`,
+                ja: `時間切れ（${limitSec}秒制限）`,
+                es: `Tiempo agotado (${limitSec}s)`,
+                fr: `Temps écoulé (${limitSec}s)`,
+                de: `Zeit abgelaufen (${limitSec}s)`
+            };
+            return timeout[lang] || timeout.ko;
+        }
+
+        const values = {
+            ko: `${elapsedSec}초 / ${limitSec}초`,
+            en: `${elapsedSec}s / ${limitSec}s`,
+            ja: `${elapsedSec}秒 / ${limitSec}秒`,
+            es: `${elapsedSec}s / ${limitSec}s`,
+            fr: `${elapsedSec}s / ${limitSec}s`,
+            de: `${elapsedSec}s / ${limitSec}s`
+        };
+        return values[lang] || values.ko;
     }
 
     // ===== HUD =====
@@ -1184,6 +1367,7 @@ class GameEngine {
             if (!info) return; // 빈 슬롯은 무시
             if (this.save.loadFromSlot(slotIndex)) {
                 this.audio?.playUILoadConfirm();
+                this.state.resumeRun();
                 this._endingReached = false;
                 // Cupid 크로스오버 플래그 재설정
                 if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
@@ -1256,6 +1440,16 @@ class GameEngine {
         });
         const el = document.getElementById(id);
         if (el) { el.classList.remove('hidden'); el.classList.add('active'); }
+
+        if (id === 'game-screen') {
+            this.state.resumeRun();
+        } else {
+            this.state.pauseRun();
+        }
+
+        if (this.deviceGimmick?.setupOrientationHijack) {
+            this.deviceGimmick.setupOrientationHijack(this.state.currentDay);
+        }
 
         // GA 가상 페이지뷰 전송
         if (typeof window.sendGAPageView === 'function') {

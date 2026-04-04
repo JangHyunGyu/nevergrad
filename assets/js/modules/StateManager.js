@@ -41,6 +41,118 @@ class StateManager {
 
         // UI 테마 (점진적 변환용)
         this.currentTheme = "romance";
+
+        // 포스트크레딧/메타 연출용 플레이 분석 데이터
+        this.analytics = this._defaultAnalytics();
+    }
+
+    // ===== 플레이 분석 =====
+
+    _defaultAnalytics() {
+        return {
+            totalPlayMs: 0,
+            sessionActiveAt: Date.now(),
+            routeSelections: {
+                sea: 0,
+                yuna: 0,
+                riin: 0,
+                eunsu: 0,
+                alone: 0
+            },
+            seolhwaAttempts: 0,
+            riinVisits: 0,
+            lastTimedChoice: null,
+            timedChoiceHistory: {},
+            generatedNames: {
+                new_name: null,
+                '14th_name': null
+            }
+        };
+    }
+
+    _ensureAnalytics() {
+        if (!this.analytics) {
+            this.analytics = this._defaultAnalytics();
+            return;
+        }
+
+        const defaults = this._defaultAnalytics();
+        this.analytics = {
+            ...defaults,
+            ...this.analytics,
+            routeSelections: {
+                ...defaults.routeSelections,
+                ...(this.analytics.routeSelections || {})
+            },
+            timedChoiceHistory: {
+                ...(this.analytics.timedChoiceHistory || {})
+            },
+            generatedNames: {
+                ...defaults.generatedNames,
+                ...(this.analytics.generatedNames || {})
+            }
+        };
+    }
+
+    startNewRun() {
+        this.analytics = this._defaultAnalytics();
+    }
+
+    resumeRun() {
+        this._ensureAnalytics();
+        if (!this.analytics.sessionActiveAt) {
+            this.analytics.sessionActiveAt = Date.now();
+        }
+    }
+
+    pauseRun() {
+        this._ensureAnalytics();
+        if (!this.analytics.sessionActiveAt) return;
+        this.analytics.totalPlayMs += Date.now() - this.analytics.sessionActiveAt;
+        this.analytics.sessionActiveAt = null;
+    }
+
+    getTotalPlayMs() {
+        this._ensureAnalytics();
+        const activeMs = this.analytics.sessionActiveAt
+            ? Date.now() - this.analytics.sessionActiveAt
+            : 0;
+        return (this.analytics.totalPlayMs || 0) + activeMs;
+    }
+
+    recordRouteSelection(routeKey) {
+        this._ensureAnalytics();
+        if (!(routeKey in this.analytics.routeSelections)) return;
+        this.analytics.routeSelections[routeKey]++;
+        if (routeKey === 'riin') {
+            this.analytics.riinVisits++;
+        }
+    }
+
+    recordSeolhwaAttempt() {
+        this._ensureAnalytics();
+        this.analytics.seolhwaAttempts++;
+    }
+
+    recordTimedChoice(sceneId, timeLimitMs, elapsedMs, timedOut = false) {
+        this._ensureAnalytics();
+        const record = {
+            sceneId,
+            timeLimitMs,
+            elapsedMs,
+            timedOut,
+            recordedAt: Date.now()
+        };
+        this.analytics.lastTimedChoice = record;
+        this.analytics.timedChoiceHistory[sceneId] = record;
+    }
+
+    getGeneratedName(key, factory) {
+        this._ensureAnalytics();
+        if (!this.analytics.generatedNames[key]) {
+            this.analytics.generatedNames[key] = factory ? factory() : '';
+        }
+        return this.analytics.generatedNames[key];
     }
 
     // ===== 스탯 조작 =====
@@ -147,6 +259,13 @@ class StateManager {
     // ===== 직렬화 (저장/불러오기) =====
 
     serialize() {
+        this._ensureAnalytics();
+        const analytics = {
+            ...JSON.parse(JSON.stringify(this.analytics)),
+            totalPlayMs: this.getTotalPlayMs(),
+            sessionActiveAt: Date.now()
+        };
+
         return {
             playerName: this.playerName,
             currentDay: this.currentDay,
@@ -158,7 +277,8 @@ class StateManager {
             flags: { ...this.flags },
             evidence: [...this.evidence],
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
-            currentTheme: this.currentTheme
+            currentTheme: this.currentTheme,
+            analytics
         };
     }
 
@@ -175,5 +295,24 @@ class StateManager {
         this.evidence = data.evidence || [];
         this.chatMemories = data.chatMemories || {};
         this.currentTheme = data.currentTheme || "romance";
+
+        const defaults = this._defaultAnalytics();
+        const analytics = data.analytics || {};
+        this.analytics = {
+            ...defaults,
+            ...analytics,
+            routeSelections: {
+                ...defaults.routeSelections,
+                ...(analytics.routeSelections || {})
+            },
+            timedChoiceHistory: {
+                ...(analytics.timedChoiceHistory || {})
+            },
+            generatedNames: {
+                ...defaults.generatedNames,
+                ...(analytics.generatedNames || {})
+            },
+            sessionActiveAt: Date.now()
+        };
     }
 }

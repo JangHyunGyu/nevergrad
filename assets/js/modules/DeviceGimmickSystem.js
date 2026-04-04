@@ -802,145 +802,76 @@ class DeviceGimmickSystem {
      */
     setupOrientationHijack(day) {
         if (!this.isMobile) return;
+        this._orientationHijackDay = day;
 
-        /** @type {HTMLElement|null} 현재 표시 중인 오버레이 */
-        let overlay = null;
+        const prompt = document.getElementById('rotate-prompt');
+        if (!prompt) return;
 
-        /**
-         * 세로 모드(portrait) 여부 판별
-         * @returns {boolean}
-         * @private
-         */
-        const isPortrait = () => {
-            return screen.orientation?.type?.includes('portrait') ||
-                window.innerHeight > window.innerWidth;
-        };
+        const isPortrait = () => (
+            screen.orientation?.type?.includes('portrait') ||
+            window.innerHeight > window.innerWidth
+        );
 
-        /**
-         * 오버레이 생성 및 표시
-         * @private
-         */
-        const showOverlay = () => {
-            // 이미 표시 중이면 무시
-            if (overlay) return;
-            // 세로 모드에서는 오버레이 불필요
-            if (isPortrait()) return;
+        const renderPrompt = () => {
+            const portrait = isPortrait();
+            const gameActive = !!document.getElementById('game-screen')?.classList.contains('active');
+            const shouldShow = portrait;
 
-            overlay = document.createElement('div');
-            overlay.className = 'orientation-hijack';
-            overlay.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 300;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                background: rgba(0, 0, 0, 0.95);
-                color: #fff;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-                text-align: center;
-                padding: 20px;
-                box-sizing: border-box;
-            `;
-
-            if (day <= 3) {
-                // Day 1~3: 일반 안내
-                overlay.innerHTML = `
-                    <div style="font-size: 3rem; margin-bottom: 20px;">📱</div>
-                    <div style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">
-                        가로로 회전해주세요
-                    </div>
-                    <div style="font-size: 0.85rem; color: #888;">
-                        이 게임은 세로 모드에 최적화되어 있습니다.
-                    </div>
-                `;
-            } else if (day === 4) {
-                // Day 4: 은수 클로즈업 + 적색 경고
-                overlay.innerHTML = `
-                    <div style="
-                        width: 180px; height: 180px; border-radius: 50%;
-                        background: radial-gradient(circle, #1a0000 0%, #000 70%);
-                        display: flex; align-items: center; justify-content: center;
-                        margin-bottom: 24px;
-                        box-shadow: 0 0 40px rgba(139, 0, 0, 0.6);
-                    ">
-                        <div style="font-size: 4rem;">👁️</div>
-                    </div>
-                    <div style="
-                        font-size: 1.3rem; font-weight: 700;
-                        color: #ff2222;
-                        text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-                        line-height: 1.6;
-                    ">
-                        어딜 보는 거야?<br>다시 똑바로 들어.
-                    </div>
-                `;
-            } else {
-                // Day 5: 세아 클로즈업 + 집착 대사 + 진동
-                overlay.innerHTML = `
-                    <div style="
-                        width: 180px; height: 180px; border-radius: 50%;
-                        background: radial-gradient(circle, #0a0010 0%, #000 70%);
-                        display: flex; align-items: center; justify-content: center;
-                        margin-bottom: 24px;
-                        box-shadow: 0 0 40px rgba(100, 0, 150, 0.6);
-                    ">
-                        <div style="font-size: 4rem;">🖤</div>
-                    </div>
-                    <div style="
-                        font-size: 1.3rem; font-weight: 700;
-                        color: #cc88ff;
-                        text-shadow: 0 0 10px rgba(150, 0, 255, 0.5);
-                        line-height: 1.6;
-                    ">
-                        도망치려고?<br>나를 두고?
-                    </div>
-                `;
-                this.vibrate([500]);
+            prompt.className = 'rotate-prompt';
+            prompt.style.display = shouldShow ? 'flex' : 'none';
+            if (!shouldShow) {
+                this._orientationPromptVisible = false;
+                return;
             }
 
-            document.body.appendChild(overlay);
-        };
-
-        /**
-         * 오버레이 제거
-         * @private
-         */
-        const hideOverlay = () => {
-            if (!overlay) return;
-            overlay.remove();
-            overlay = null;
-        };
-
-        /**
-         * 방향 변경 시 처리
-         * @private
-         */
-        const handleOrientationChange = () => {
-            if (isPortrait()) {
-                hideOverlay();
+            if (!gameActive || this._orientationHijackDay <= 3) {
+                prompt.classList.add('orientation-hijack', 'normal');
+                prompt.innerHTML = `
+                    <div class="orient-icon"></div>
+                    <div class="orient-text">화면을 가로로 회전해주세요<br>Please rotate your device</div>
+                `;
+            } else if (this._orientationHijackDay === 4) {
+                prompt.classList.add('orientation-hijack', 'hijack-eunsu');
+                prompt.innerHTML = `
+                    <div class="hijack-face">👁️</div>
+                    <div class="hijack-text">어딜 보는 거야?<br>다시 똑바로 들어.</div>
+                `;
             } else {
-                showOverlay();
+                prompt.classList.add('orientation-hijack', 'hijack-sea');
+                prompt.innerHTML = `
+                    <div class="hijack-face">🖤</div>
+                    <div class="hijack-text">도망치려고?<br>나를 두고?</div>
+                `;
+                if (!this._orientationPromptVisible) {
+                    this.vibrate([500]);
+                }
             }
+
+            this._orientationPromptVisible = true;
         };
 
-        // 이벤트 리스너 등록
-        window.addEventListener('orientationchange', handleOrientationChange);
-        window.addEventListener('resize', handleOrientationChange);
+        if (!this._orientationHijackBound) {
+            this._orientationHijackBound = true;
+            this._orientationHijackHandler = renderPrompt;
+            window.addEventListener('orientationchange', this._orientationHijackHandler);
+            window.addEventListener('resize', this._orientationHijackHandler);
 
-        // 초기 상태 확인
-        handleOrientationChange();
+            this._cleanupFns.push(() => {
+                window.removeEventListener('orientationchange', this._orientationHijackHandler);
+                window.removeEventListener('resize', this._orientationHijackHandler);
+                prompt.style.display = '';
+                prompt.className = 'rotate-prompt';
+                prompt.innerHTML = `
+                    <div class="rotate-icon">📱</div>
+                    <div class="rotate-text">화면을 가로로 회전해주세요<br>Please rotate your device</div>
+                `;
+                this._orientationHijackBound = false;
+                this._orientationHijackHandler = null;
+                this._orientationPromptVisible = false;
+            });
+        }
 
-        // 정리 함수 등록
-        this._cleanupFns.push(() => {
-            window.removeEventListener('orientationchange', handleOrientationChange);
-            window.removeEventListener('resize', handleOrientationChange);
-            hideOverlay();
-        });
+        renderPrompt();
     }
 
     /**

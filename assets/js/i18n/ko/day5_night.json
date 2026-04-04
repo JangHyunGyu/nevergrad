@@ -879,7 +879,7 @@
     },
     "day5_observer_6": {
         "name": "",
-        "text": "관찰 대상: 피험자 #13 ({name})\n관찰 기간: {play_time}\n관찰자 행동 요약:\n\n· 세아 루트 선택 횟수: {route_data}\n· 유나 접촉 여부: {met_yuna}\n· 리인 방문 횟수: {stat_data}\n· 설화 대화 시도: {stat_data}\n· 증거 확보 여부: {stat_data}\n· 최종 선택까지 소요 시간: {timer_data}"
+        "text": "관찰 대상: 피험자 #13 ({name})\n관찰 기간: {play_time}\n관찰자 행동 요약:\n\n· 세아 루트 선택 횟수: {route_data}\n· 유나 접촉 여부: {met_yuna}\n· 리인 방문 횟수: {riin_visits}\n· 설화 대화 시도: {seolhwa_attempts}\n· 증거 확보 여부: {evidence_data}\n· 최종 선택까지 소요 시간: {timer_data}"
     },
     "day5_observer_7": {
         "name": "",

@@ -871,7 +871,7 @@
     },
     "day5_observer_6": {
         "name": "",
-        "text": "Sujeto observado: Sujeto #13 ({name})\nPeriodo de observación: {play_time}\nResumen de comportamiento del observador:\n\n· Veces que eligió la ruta de Sea: {route_data}\n· Contacto con Yuna: {met_yuna}\n· Visitas a Riin: {stat_data}\n· Intentos de diálogo con Seolhwa: {stat_data}\n· Evidencia asegurada: {stat_data}\n· Tiempo hasta la decisión final: {timer_data}"
+        "text": "Sujeto observado: Sujeto #13 ({name})\nPeriodo de observación: {play_time}\nResumen de comportamiento del observador:\n\n· Veces que eligió la ruta de Sea: {route_data}\n· Contacto con Yuna: {met_yuna}\n· Visitas a Riin: {riin_visits}\n· Intentos de diálogo con Seolhwa: {seolhwa_attempts}\n· Evidencia asegurada: {evidence_data}\n· Tiempo hasta la decisión final: {timer_data}"
     },
     "day5_observer_7": {
         "name": "",

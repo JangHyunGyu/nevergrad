@@ -859,7 +859,7 @@
     },
     "day5_observer_6": {
         "name": "",
-        "text": "Observation target: Subject #13 ({name})\nObservation period: {actual play time}\nObserver behavior summary:\n\n- Sea route selections: {actual selection data}\n- Yuna contact: {met_yuna value}\n- Riin visits: {actual data}\n- Seolhwa conversation attempts: {actual data}\n- Evidence secured: {actual data}\n- Time to final choice: {actual time from 20-second timer}"
+        "text": "Observation target: Subject #13 ({name})\nObservation period: {play_time}\nObserver behavior summary:\n\n- Sea route selections: {route_data}\n- Yuna contact: {met_yuna}\n- Riin visits: {riin_visits}\n- Seolhwa conversation attempts: {seolhwa_attempts}\n- Evidence secured: {evidence_data}\n- Time to final choice: {timer_data}"
     },
     "day5_observer_7": {
         "name": "",
@@ -867,7 +867,7 @@
     },
     "day5_observer_8": {
         "name": "",
-        "text": "Notes:\n\nThe observer watched Subject #13's five days.\nThe observer selected the subject's conversation partners.\nThe observer determined the subject's emotional bonds.\nThe observer watched the moments the subject felt terror.\nThe observer decided whether the subject would escape.\n\nQuestion:\nPark Eunsu designed and observed 13 cycles.\nYou observed {name}'s life for {actual play time}.\n\nWhat is the difference?"
+        "text": "Notes:\n\nThe observer watched Subject #13's five days.\nThe observer selected the subject's conversation partners.\nThe observer determined the subject's emotional bonds.\nThe observer watched the moments the subject felt terror.\nThe observer decided whether the subject would escape.\n\nQuestion:\nPark Eunsu designed and observed 13 cycles.\nYou observed {name}'s life for {play_time}.\n\nWhat is the difference?"
     },
     "day5_observer_9": {
         "name": "",

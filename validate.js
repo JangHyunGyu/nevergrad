@@ -675,7 +675,11 @@ const knownDynamicClasses = new Set(['hidden', 'active', 'no-image', 'paused', '
 // ═══════════════════════════════════════════
 // 21. i18n 플레이스홀더 검증
 // ═══════════════════════════════════════════
-const validPlaceholders = new Set(['name', 'name?', '14th_name', 'new_name']);
+const validPlaceholders = new Set([
+    'name', 'name?', '14th_name', 'new_name',
+    'play_time', 'route_data', 'met_yuna',
+    'riin_visits', 'seolhwa_attempts', 'evidence_data', 'timer_data'
+]);
 for (const [key, val] of Object.entries(koData)) {
     if (!val.text) continue;
     for (const m of val.text.matchAll(/\{(\w+[?]?)\}/g)) {

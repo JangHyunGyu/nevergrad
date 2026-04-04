@@ -164,6 +164,18 @@ class MetaHorrorSystem {
             { title: '박은수', body: '수업 중인데 어디 갔어요?' },
             { title: '한울 스마트캠퍼스', body: '비정상 이탈 감지. 위치 확인 중...' }
         ];
+
+        /** @type {Function|null} blur 기반 안티캡처 핸들러 */
+        this._windowBlurHandler = null;
+
+        /** @type {Function|null} focus 복귀 핸들러 */
+        this._windowFocusHandler = null;
+
+        /** @type {HTMLElement|null} 포커스 이탈 차단 오버레이 */
+        this._captureBlockOverlay = null;
+
+        /** @type {number} 최근 안티캡처 반응 timestamp */
+        this._lastCaptureReactionAt = 0;
     }
 
     // =========================================================================
@@ -406,10 +418,9 @@ class MetaHorrorSystem {
     // =========================================================================
 
     /**
-     * 스크린샷 키 감지 초기화
-     * PrintScreen / Win+Shift+S 등을 keydown으로 감지
-     *
-     * @param {string} currentScene - 현재 씬 ID (반응할 씬 판별용)
+     * 스크린샷/포커스 이탈 감지 초기화
+     * - keydown: PrintScreen / Win+Shift+S 보조 감지
+     * - blur/focus: 캡처 도구 실행, Alt+Tab, 앱 전환 등 핵심 감지
      */
     initScreenshotDetection() {
         if (this._screenshotHandler) return;
@@ -429,6 +440,18 @@ class MetaHorrorSystem {
         };
 
         document.addEventListener('keydown', this._screenshotHandler);
+
+        this._windowBlurHandler = () => {
+            if (!this._screenshotScene || this._screenshotScene === 'complicit_sign') return;
+            this._showCaptureBlockOverlay();
+        };
+
+        this._windowFocusHandler = () => {
+            this._hideCaptureBlockOverlay();
+        };
+
+        window.addEventListener('blur', this._windowBlurHandler);
+        window.addEventListener('focus', this._windowFocusHandler);
     }
 
     /**
@@ -446,6 +469,8 @@ class MetaHorrorSystem {
     _onScreenshotDetected() {
         const ctx = this._screenshotScene;
         if (!ctx) return;
+        if (Date.now() - this._lastCaptureReactionAt < 250) return;
+        this._lastCaptureReactionAt = Date.now();
 
         const reactions = {
             save_slot: {
@@ -494,6 +519,56 @@ class MetaHorrorSystem {
                 }, reaction.blackoutDuration);
             });
         }
+    }
+
+    _showCaptureBlockOverlay() {
+        if (this._captureBlockOverlay) return;
+        if (Date.now() - this._lastCaptureReactionAt < 250) return;
+        this._lastCaptureReactionAt = Date.now();
+
+        const overlay = document.createElement('div');
+        overlay.className = 'capture-block-overlay';
+        overlay.style.cssText = `
+            position: fixed;
+            inset: 0;
+            z-index: 9998;
+            background: rgba(0, 0, 0, 0.97);
+            color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            text-align: center;
+            letter-spacing: 0.08em;
+        `;
+
+        const label = document.createElement('div');
+        label.textContent = '[외부 반출 금지]';
+        label.style.cssText = `
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #ff6b6b;
+            text-shadow: 0 0 12px rgba(255, 64, 64, 0.35);
+        `;
+
+        const sub = document.createElement('div');
+        sub.textContent = '포커스 복귀 시 화면이 복원됩니다.';
+        sub.style.cssText = `
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.72);
+        `;
+
+        overlay.appendChild(label);
+        overlay.appendChild(sub);
+        document.body.appendChild(overlay);
+        this._captureBlockOverlay = overlay;
+    }
+
+    _hideCaptureBlockOverlay() {
+        if (!this._captureBlockOverlay) return;
+        this._captureBlockOverlay.remove();
+        this._captureBlockOverlay = null;
     }
 
     // =========================================================================
@@ -605,6 +680,7 @@ class MetaHorrorSystem {
             this._visibilityHandler = null;
         }
 
+        this._hideCaptureBlockOverlay();
         this._stopPushOnHidden();
         this.tabMessageIndex = 0;
     }
@@ -621,7 +697,16 @@ class MetaHorrorSystem {
             document.removeEventListener('keydown', this._screenshotHandler);
             this._screenshotHandler = null;
         }
+        if (this._windowBlurHandler) {
+            window.removeEventListener('blur', this._windowBlurHandler);
+            this._windowBlurHandler = null;
+        }
+        if (this._windowFocusHandler) {
+            window.removeEventListener('focus', this._windowFocusHandler);
+            this._windowFocusHandler = null;
+        }
         this._screenshotScene = null;
+        this._hideCaptureBlockOverlay();
 
         // 푸시 알림 스케줄링 정리
         if (this._exitNotifCleanup) {

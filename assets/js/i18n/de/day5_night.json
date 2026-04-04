@@ -857,7 +857,7 @@
     },
     "day5_observer_6": {
         "name": "",
-        "text": "Beobachtungsobjekt: Proband #13 ({name})\nBeobachtungszeitraum: {play_time}\nZusammenfassung des Beobachterverhaltens:\n\n· Anzahl Sea-Route-Wahlen: {route_data}\n· Yuna-Kontakt: {met_yuna}\n· Riin-Besuche: {stat_data}\n· Seolhwa-Gespraechsversuche: {stat_data}\n· Beweissicherung: {stat_data}\n· Dauer bis zur finalen Entscheidung: {timer_data}"
+        "text": "Beobachtungsobjekt: Proband #13 ({name})\nBeobachtungszeitraum: {play_time}\nZusammenfassung des Beobachterverhaltens:\n\n· Anzahl Sea-Route-Wahlen: {route_data}\n· Yuna-Kontakt: {met_yuna}\n· Riin-Besuche: {riin_visits}\n· Seolhwa-Gespraechsversuche: {seolhwa_attempts}\n· Beweissicherung: {evidence_data}\n· Dauer bis zur finalen Entscheidung: {timer_data}"
     },
     "day5_observer_7": {
         "name": "",

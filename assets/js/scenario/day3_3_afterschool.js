@@ -75,6 +75,10 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_riin_6": {
         character: "riin_smile",
+        next: "day3_after_riin_6a"
+    },
+    "day3_after_riin_6a": {
+        character: "riin_smile",
         next: "day3_after_riin_7"
     },
     "day3_after_riin_7": {

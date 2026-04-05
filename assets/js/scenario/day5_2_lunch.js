@@ -1021,7 +1021,7 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_final_true": {
         character: null,
         next: "day5_lunch_end",
-        setFlags: ["route_true"]
+        setFlags: ["route_true", "has_evidence"]
     },
     "day5_lunch_final_forget": {
         character: null,

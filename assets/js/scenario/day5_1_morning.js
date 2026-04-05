@@ -195,6 +195,10 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_rescue_5": {
         character: "yuna_weak",
+        next: "day5_morning_rescue_5a"
+    },
+    "day5_morning_rescue_5a": {
+        character: "yuna_weak",
         next: "day5_morning_rescue_6"
     },
     "day5_morning_rescue_6": {
@@ -354,6 +358,153 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_16"
     },
     "day5_morning_true_16": {
+        character: null,
+        next: "day5_morning_true_17"
+    },
+    "day5_morning_true_17": {
+        character: null,
+        next: "day5_morning_true_18"
+    },
+    "day5_morning_true_18": {
+        character: null,
+        next: "day5_morning_true_19"
+    },
+    "day5_morning_true_19": {
+        character: null,
+        next: "day5_morning_true_20"
+    },
+    "day5_morning_true_20": {
+        character: null,
+        unskippable: true,
+        next: "day5_morning_true_21"
+    },
+    "day5_morning_true_21": {
+        character: null,
+        unskippable: true,
+        next: "day5_morning_true_22"
+    },
+    "day5_morning_true_22": {
+        character: null,
+        next: "day5_morning_true_23"
+    },
+    "day5_morning_true_23": {
+        character: null,
+        next: "day5_morning_true_24"
+    },
+    "day5_morning_true_24": {
+        character: null,
+        next: "day5_morning_true_25"
+    },
+    "day5_morning_true_25": {
+        character: null,
+        next: "day5_morning_true_26"
+    },
+    "day5_morning_true_26": {
+        character: null,
+        next: "day5_morning_true_27"
+    },
+    "day5_morning_true_27": {
+        character: null,
+        unskippable: true,
+        next: "day5_morning_true_28"
+    },
+    "day5_morning_true_28": {
+        character: "yuna_weak",
+        next: "day5_morning_true_29"
+    },
+    "day5_morning_true_29": {
+        character: "yuna_weak",
+        next: "day5_morning_true_30"
+    },
+    "day5_morning_true_30": {
+        character: "yuna_weak",
+        next: "day5_morning_true_31"
+    },
+    "day5_morning_true_31": {
+        character: "yuna_weak",
+        next: "day5_morning_true_32"
+    },
+    "day5_morning_true_32": {
+        character: "yuna_weak",
+        next: "day5_morning_true_33"
+    },
+    "day5_morning_true_33": {
+        character: "yuna_weak",
+        next: "day5_morning_true_34"
+    },
+    "day5_morning_true_34": {
+        character: "yuna_weak",
+        next: "day5_morning_true_35"
+    },
+    "day5_morning_true_35": {
+        character: null,
+        next: "day5_morning_true_36"
+    },
+    "day5_morning_true_36": {
+        character: null,
+        next: "day5_morning_true_37"
+    },
+    "day5_morning_true_37": {
+        character: null,
+        next: "day5_morning_true_38"
+    },
+    "day5_morning_true_38": {
+        character: null,
+        next: "day5_morning_true_39"
+    },
+    "day5_morning_true_39": {
+        character: null,
+        next: "day5_morning_true_timer_choice"
+    },
+
+    "day5_morning_true_timer_choice": {
+        character: null,
+        unskippable: true,
+        choices: [
+            { next: "day5_morning_true_run_1", stats: { yuna: { affinity: 4 } } },
+            { next: "day5_morning_true_hide_1", stats: { eunsu: { affinity: 2 } } }
+        ]
+    },
+    "day5_morning_true_run_1": {
+        character: "yuna_weak",
+        next: "day5_morning_true_exit_1"
+    },
+    "day5_morning_true_hide_1": {
+        character: "yuna_weak",
+        next: "day5_morning_true_hide_2"
+    },
+    "day5_morning_true_hide_2": {
+        character: null,
+        next: "day5_morning_true_exit_1"
+    },
+    "day5_morning_true_exit_1": {
+        background: "corridor_old",
+        character: null,
+        unskippable: true,
+        next: "day5_morning_true_exit_2"
+    },
+    "day5_morning_true_exit_2": {
+        character: "eunsu_gentle",
+        next: "day5_morning_true_ft"
+    },
+    "day5_morning_true_ft": {
+        character: "eunsu_gentle",
+        type: "free_talk",
+        freeTalkMode: "ai_chat",
+        freeTalkChar: "eunsu",
+        freeTalkMax: 2,
+        freeTalkContext: "구관 지하실 출구 앞. {name}와 최유나는 서류와 카메라를 들고 있다. 은수는 실험과 유나 격리에 대한 질문을 받아도 능숙하게 회피하며 시간을 끈다.",
+        freeTalkNext: "day5_morning_true_post_ft_1"
+    },
+    "day5_morning_true_post_ft_1": {
+        character: "eunsu_gentle",
+        next: "day5_morning_true_post_ft_2"
+    },
+    "day5_morning_true_post_ft_2": {
+        character: "eunsu_gentle",
+        next: "day5_morning_true_post_ft_3"
+    },
+    "day5_morning_true_post_ft_3": {
         character: "yuna_weak",
         next: "day5_morning_blockade_1"
     },

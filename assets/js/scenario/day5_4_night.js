@@ -8,7 +8,7 @@
  * D. CAGE END     - "새장" — "여기 남을게요" 선택 (은수/세아 변형)
  * E. FORGET END   - "망각" — "기억을 지워주세요" 선택
  * F. GHOST END    - "잔상" — 타이머 초과 → 설화 개입
- * G. COMPLICIT END - "공범" — 숨겨진 엔딩 (모른 척 계열 + 세아/은수 호감도 최대)
+ * G. COMPLICIT END - "공범" — 숨겨진 엔딩 (모른 척 계열 + 은수 호감도 최대)
  */
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[5]) SCENARIO[5] = {};
@@ -53,8 +53,7 @@ Object.assign(SCENARIO[5], {
     "day5_night_complicit_eval": {
         character: null,
         branches: [
-            { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_night_set_complicit_ready" },
-            { condition: ["complicit_route", "high_sea_affinity"], next: "day5_night_set_complicit_ready" }
+            { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_night_set_complicit_ready" }
         ],
         next: "day5_night_routing"
     },
@@ -72,7 +71,6 @@ Object.assign(SCENARIO[5], {
             { condition: ["forced_forget"], next: "day5_ending_forget_forced_1" },
             { condition: ["ghost_guided"], next: "day5_ending_ghost_guided_1" },
             { condition: ["route_true", "has_evidence"], next: "day5_ending_true_1" },
-            { condition: ["route_true"], next: "day5_ending_escape_1" },
             { condition: ["route_resist"], next: "day5_ending_resist_1" },
             { condition: ["route_forget"], next: "day5_ending_forget_1" },
             { condition: ["route_ghost"], next: "day5_ending_ghost_1" },
@@ -80,7 +78,6 @@ Object.assign(SCENARIO[5], {
             { condition: ["broke_through_eunsu", "escape_with_yuna"], next: "day5_ending_escape_1" },
             { condition: ["chose_together"], next: "day5_ending_resist_1" },
             { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_ending_complicit_1" },
-            { condition: ["complicit_route", "high_sea_affinity"], next: "day5_ending_complicit_1" },
             { condition: ["complicit_ready"], next: "day5_ending_complicit_1" },
             { condition: ["stayed_with_eunsu"], next: "day5_ending_cage_eunsu_1" },
             { condition: ["stayed_with_sea"], next: "day5_ending_cage_sea_1" },

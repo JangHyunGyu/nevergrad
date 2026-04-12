@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1520"/>
+      <stop offset="100%" stop-color="#2d1f3a"/>
+    </linearGradient>
+    <linearGradient id="sakura" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffc4d6"/>
+      <stop offset="50%" stop-color="#FFB7C5"/>
+      <stop offset="100%" stop-color="#e8899c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="180" fill="#FFB7C5" opacity="0.04"/>
+  <g filter="shadow">
+    <rect x="150" y="130" width="212" height="290" rx="8" fill="#f5e6d0" opacity="0.95"/>
+    <rect x="165" y="145" width="182" height="260" rx="4" fill="#faf3e8"/>
+    <line x1="185" y1="190" x2="330" y2="190" stroke="#d4c4a8" stroke-width="2" opacity="0.5"/>
+    <line x1="185" y1="220" x2="310" y2="220" stroke="#d4c4a8" stroke-width="2" opacity="0.4"/>
+    <line x1="185" y1="250" x2="320" y2="250" stroke="#d4c4a8" stroke-width="2" opacity="0.3"/>
+  </g>
+  <g filter="glow">
+    <circle cx="300" cy="320" r="28" fill="url(#sakura)" opacity="0.7"/>
+    <circle cx="330" cy="290" r="18" fill="url(#sakura)" opacity="0.5"/>
+    <circle cx="270" cy="345" r="14" fill="url(#sakura)" opacity="0.4"/>
+    <circle cx="345" cy="325" r="10" fill="url(#sakura)" opacity="0.3"/>
+  </g>
+  <g fill="#FFB7C5" opacity="0.3">
+    <circle cx="120" cy="150" r="6"/><circle cx="400" cy="180" r="5"/><circle cx="110" cy="360" r="4"/>
+    <circle cx="410" cy="400" r="5"/><circle cx="380" cy="130" r="3"/>
+  </g>
+</svg>

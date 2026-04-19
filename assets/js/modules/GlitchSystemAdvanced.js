@@ -1410,6 +1410,150 @@ class GlitchSystemAdvanced {
         });
     }
 
+    // =========================================================================
+    // ★ COMPLICIT 서명 패드 (SCENARIO.md 5608)
+    // 유저가 직접 드래그/터치로 "서명"해야 진행된다 — 돌이킬 수 없음의 촉감.
+    // 완료 시 짧고 날카로운 진동 0.1초 + 스크린샷 컨텍스트 활성화(반응 없음).
+    // =========================================================================
+
+    startSignaturePad(opts = {}) {
+        if (document.querySelector('.signature-pad-container')) return;
+        const engine = this.engine;
+        if (opts.requireSignature && engine) {
+            if (engine._clickLockTimer) {
+                clearTimeout(engine._clickLockTimer);
+                engine._clickLockTimer = null;
+            }
+            engine._clickLocked = true;
+        }
+        // 스크린샷 감지: '반응 없음'이지만 컨텍스트는 활성화 (SCENARIO.md 5640 — 기록 허용)
+        engine?.metaHorror?.setScreenshotContext?.('complicit_sign');
+        this._showSignaturePad(() => {
+            if (engine) engine._clickLocked = false;
+            // 짧고 날카로운 단일 진동 0.1초 (돌이킬 수 없음의 촉감)
+            engine?.deviceGimmick?.vibrate?.('complicit_sign');
+            engine?._vibrateVisual?.('complicit_sign');
+        });
+    }
+
+    _showSignaturePad(onComplete) {
+        const container = document.createElement('div');
+        container.className = 'signature-pad-container';
+
+        const paper = document.createElement('div');
+        paper.className = 'signature-pad-paper';
+
+        const label = document.createElement('div');
+        label.className = 'signature-pad-label';
+        const lang = document.documentElement.lang || 'ko';
+        const labels = {
+            ko: '서명',
+            en: 'Signature',
+            ja: '署名',
+            es: 'Firma',
+            fr: 'Signature',
+            de: 'Unterschrift'
+        };
+        label.textContent = labels[lang] || labels.ko;
+
+        const line = document.createElement('div');
+        line.className = 'signature-pad-line';
+
+        const canvas = document.createElement('canvas');
+        canvas.className = 'signature-pad-canvas';
+
+        paper.appendChild(label);
+        paper.appendChild(canvas);
+        paper.appendChild(line);
+        container.appendChild(paper);
+        document.body.appendChild(container);
+
+        // 캔버스 사이즈 (paper 기준)
+        const resize = () => {
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+        };
+        resize();
+        window.addEventListener('resize', resize);
+
+        const ctx = canvas.getContext('2d');
+        ctx.strokeStyle = '#1a1a1a';
+        ctx.lineWidth = 2.2;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+
+        let drawing = false;
+        let last = null;
+        let drawnPixels = 0;
+        let completed = false;
+        // 서명 "유효" 기준 — 총 이동 거리 > threshold
+        const threshold = Math.max(180, canvas.width * 0.35);
+
+        const toLocal = (clientX, clientY) => {
+            const rect = canvas.getBoundingClientRect();
+            return { x: clientX - rect.left, y: clientY - rect.top };
+        };
+
+        const beginStroke = (x, y) => {
+            drawing = true;
+            last = { x, y };
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+        };
+        const extendStroke = (x, y) => {
+            if (!drawing) return;
+            ctx.lineTo(x, y);
+            ctx.stroke();
+            const dx = x - last.x, dy = y - last.y;
+            drawnPixels += Math.sqrt(dx * dx + dy * dy);
+            last = { x, y };
+            if (drawnPixels > threshold && !completed) {
+                completed = true;
+                setTimeout(() => {
+                    container.classList.add('signature-pad-done');
+                    setTimeout(() => {
+                        window.removeEventListener('resize', resize);
+                        container.remove();
+                        if (onComplete) onComplete();
+                    }, 400);
+                }, 200);
+            }
+        };
+        const endStroke = () => { drawing = false; };
+
+        canvas.addEventListener('mousedown', (e) => {
+            const p = toLocal(e.clientX, e.clientY);
+            beginStroke(p.x, p.y);
+        });
+        canvas.addEventListener('mousemove', (e) => {
+            if (!drawing) return;
+            const p = toLocal(e.clientX, e.clientY);
+            extendStroke(p.x, p.y);
+        });
+        canvas.addEventListener('mouseup', endStroke);
+        canvas.addEventListener('mouseleave', endStroke);
+
+        canvas.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            const t = e.touches[0];
+            const p = toLocal(t.clientX, t.clientY);
+            beginStroke(p.x, p.y);
+        }, { passive: false });
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            if (!drawing) return;
+            const t = e.touches[0];
+            const p = toLocal(t.clientX, t.clientY);
+            extendStroke(p.x, p.y);
+        }, { passive: false });
+        canvas.addEventListener('touchend', endStroke);
+    }
+
+    hideSignaturePad() {
+        document.querySelector('.signature-pad-container')?.remove();
+    }
+
     /** scenario의 photoOverlay 키를 기존 showMirror13Faces로 연결 */
     async showPhotoOverlay(opts = {}) {
         const sequence = opts.photoSequence || [];

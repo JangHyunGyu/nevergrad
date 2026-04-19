@@ -106,6 +106,8 @@ class DeviceGimmickSystem {
             mirror_heartbeat: [100, 800, 100, 600, 100, 400, 100, 300, 100, 200, 100, 100, 100, 80, 100, 60, 100],
             /** 거울 13명 얼굴 오버레이 — 0.4초 간격 13회 (SCENARIO.md 5168) */
             mirror_13faces: Array(13).fill(0).flatMap(() => [100, 300]),
+            /** COMPLICIT 서명란 터치 — 짧고 날카로운 단일 0.1초 (SCENARIO.md 5608) */
+            complicit_sign: [100],
             /** Day 5 20초 카운트다운 — 1초→0.5초→0.3초 점진적 (SCENARIO.md 5165) */
             countdown_20s: [
                 // 1초 간격 (0~10초)
@@ -543,7 +545,9 @@ class DeviceGimmickSystem {
     // =========================================================================
 
     /**
-     * 현재 실제 시각을 참조하는 대사 반환
+     * 현재 실제 시각을 참조하는 대사 반환 (i18n 6개 언어 지원)
+     * 시간대별 템플릿은 I18nManager.UI.timeDialogue에 있고,
+     * {time} 플레이스홀더에 "3시 24분" / "3:24" 같은 지역화된 표기가 치환된다.
      *
      * @returns {string}
      */
@@ -551,35 +555,41 @@ class DeviceGimmickSystem {
         const now = new Date();
         const hour = now.getHours();
         const minute = now.getMinutes();
-        const timeStr = `${hour}시 ${minute}분`;
+        const lang = this.engine?.i18n?.currentLang || 'ko';
+        const pad2 = (n) => String(n).padStart(2, '0');
+        const timeStr = (lang === 'ko')
+            ? `${hour}시 ${minute}분`
+            : (lang === 'ja')
+                ? `${hour}時${minute}分`
+                : `${hour}:${pad2(minute)}`;
 
-        if (hour >= 0 && hour < 4) {
-            return `지금 ${timeStr}이야... 이 시간까지 깨어있는 거야?`;
-        }
-        if (hour >= 4 && hour < 6) {
-            return `새벽 ${timeStr}... 밤새 한 거야? 그렇게까지...`;
-        }
-        if (hour >= 6 && hour < 9) {
-            return `${timeStr}. 아침이네. 수업 시작하기 딱 좋은 시간이야.`;
-        }
-        if (hour >= 9 && hour < 12) {
-            return `${timeStr}... 수업 시간 아니야? 여기 있어도 되는 거야?`;
-        }
-        if (hour >= 12 && hour < 14) {
-            return `${timeStr}. 점심시간이네. 밥은 먹었어?`;
-        }
-        if (hour >= 14 && hour < 17) {
-            return `${timeStr}... 오후네. 방과후까지 얼마 안 남았어.`;
-        }
-        if (hour >= 17 && hour < 19) {
-            return `${timeStr}. 해가 지고 있어... 학교에 남아있을 거야?`;
-        }
-        if (hour >= 19 && hour < 22) {
-            return `${timeStr}... 밤이 되고 있어. 학교가 조용해지는 시간이야.`;
-        }
+        const bucket =
+            (hour >= 0 && hour < 4) ? 'lateNight' :
+            (hour >= 4 && hour < 6) ? 'dawn' :
+            (hour >= 6 && hour < 9) ? 'morning' :
+            (hour >= 9 && hour < 12) ? 'lateMorning' :
+            (hour >= 12 && hour < 14) ? 'noon' :
+            (hour >= 14 && hour < 17) ? 'afternoon' :
+            (hour >= 17 && hour < 19) ? 'sunset' :
+            (hour >= 19 && hour < 22) ? 'evening' :
+            'night';
 
-        // 22시~자정
-        return `${timeStr}... 늦은 시간이네. 여기 혼자 있는 거 무섭지 않아?`;
+        const templates = this.engine?.i18n?.getUI?.('timeDialogue') || {};
+        const template = templates[bucket] || templates.night || `${timeStr}...`;
+        return template.replace('{time}', timeStr);
+    }
+
+    /**
+     * 유저 입력에서 시간 관련 키워드 감지 (6언어 지원)
+     * FreeTalkSystem이 API 호출 전 먼저 이 메서드로 단축 응답 가능.
+     * @param {string} text - 유저 입력
+     * @returns {boolean}
+     */
+    isTimeQuery(text) {
+        if (!text) return false;
+        // 6개 언어 공통 패턴: 한국어/일본어 문자열 직접, 나머지는 영/유럽어 키워드
+        const rx = /시간|몇\s*시|지금\s*몇|何時|いま何|\btime\b|\bclock\b|\bhour\b|\bhora\b|\bheure\b|\bquelle heure\b|\buhrzeit\b|\bwie spät\b|\buhr\b/i;
+        return rx.test(text);
     }
 
     // =========================================================================

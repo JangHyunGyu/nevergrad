@@ -136,16 +136,15 @@ class ChoiceSystemAdvanced {
                 const remaining = Math.max(0, timeMs - elapsed);
                 const progress = remaining / timeMs;
 
-                // 타이머 바 업데이트
+                // 타이머 바 업데이트 (색/애니메이션은 .timer-warning/.timer-critical 클래스로)
                 if (barFill) {
                     barFill.style.width = `${progress * 100}%`;
-
-                    // 잔여 시간에 따라 색상 변경
                     if (progress < 0.2) {
-                        barFill.style.background = '#ff0000';
-                        barFill.style.animation = 'timer-critical 0.3s ease infinite';
+                        barFill.classList.add('timer-critical');
+                        barFill.classList.remove('timer-warning');
                     } else if (progress < 0.5) {
-                        barFill.style.background = '#ff6600';
+                        barFill.classList.add('timer-warning');
+                        barFill.classList.remove('timer-critical');
                     }
                 }
 
@@ -524,39 +523,14 @@ class ChoiceSystemAdvanced {
      * @private
      */
     _createTimerBar(duration) {
+        // 스타일은 전부 dialogue.css의 .timer-bar-wrapper / .timer-bar-fill에 있다.
+        // fill.style.width만 JS가 매 프레임 업데이트한다 (타이머 진행도).
         const wrapper = document.createElement('div');
         wrapper.className = 'timer-bar-wrapper';
-        wrapper.style.cssText = `
-            width: 100%;
-            height: 6px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 3px;
-            margin-bottom: 12px;
-            overflow: hidden;
-        `;
 
         const fill = document.createElement('div');
         fill.className = 'timer-bar-fill';
-        fill.style.cssText = `
-            width: 100%;
-            height: 100%;
-            background: #FFB7C5;
-            border-radius: 3px;
-            transition: width 0.05s linear;
-        `;
-
-        // CSS critical 애니메이션 주입
-        if (!document.getElementById('timer-critical-style')) {
-            const style = document.createElement('style');
-            style.id = 'timer-critical-style';
-            style.textContent = `
-                @keyframes timer-critical {
-                    0%, 100% { opacity: 1; }
-                    50% { opacity: 0.5; }
-                }
-            `;
-            document.head.appendChild(style);
-        }
+        fill.style.width = '100%';
 
         wrapper.appendChild(fill);
         return wrapper;

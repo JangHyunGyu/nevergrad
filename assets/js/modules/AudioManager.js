@@ -710,6 +710,59 @@ class AudioManager {
     }
 
     /**
+     * 발소리 패닝 스윕 — 좌→우(또는 역방향)로 이동하는 추격전 발소리
+     * SCENARIO.md 5622: "Day 5 추격전 발소리는 좌→우로 패닝"
+     *
+     * 개별 발소리 버스트를 시간순으로 스케줄하면서 각 버스트에 서로 다른 pan 값을 건다.
+     * 바이노럴 모드 아니어도 스테레오 스피커/헤드폰이면 이동감 인지 가능.
+     *
+     * @param {Object} opts
+     * @param {number} [opts.fromPan=-1]   시작 pan (-1: 왼쪽)
+     * @param {number} [opts.toPan=1]      종료 pan (1: 오른쪽)
+     * @param {number} [opts.steps=12]     발소리 개수
+     * @param {number} [opts.interval=0.18] 발소리 간격 (초)
+     * @param {number} [opts.volume=0.45]  볼륨
+     */
+    playFootstepsPanSweep(opts = {}) {
+        if (!this.ctx) return;
+        const fromPan = typeof opts.fromPan === 'number' ? opts.fromPan : -1;
+        const toPan = typeof opts.toPan === 'number' ? opts.toPan : 1;
+        const steps = opts.steps || 12;
+        const interval = opts.interval || 0.18;
+        const vol = opts.volume || 0.45;
+        const now = this.ctx.currentTime;
+
+        for (let i = 0; i < steps; i++) {
+            const t = now + i * interval;
+            const progress = steps > 1 ? i / (steps - 1) : 0.5;
+            const pan = fromPan + (toPan - fromPan) * progress;
+
+            const noise = this.ctx.createBufferSource();
+            noise.buffer = this._createNoiseBuffer(0.08);
+
+            const filter = this.ctx.createBiquadFilter();
+            filter.type = 'bandpass';
+            filter.frequency.value = 1000 + Math.random() * 400;
+            filter.Q.value = 3;
+
+            const gain = this.ctx.createGain();
+            const panner = this.ctx.createStereoPanner();
+            panner.pan.value = pan;
+
+            noise.connect(filter);
+            filter.connect(gain);
+            gain.connect(panner);
+            panner.connect(this.sfxGain);
+
+            const v = vol * (0.6 + Math.random() * 0.4);
+            gain.gain.setValueAtTime(v, t);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 0.06);
+            noise.start(t);
+            noise.stop(t + 0.08);
+        }
+    }
+
+    /**
      * 바이노럴 모드 비활성화
      */
     disableBinauralMode() {

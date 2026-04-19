@@ -186,6 +186,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 바이노럴 초기 동기화 (i18n 로드 후여야 토스트 메시지 번역 적용됨)
     syncBinaural();
 
+    // 앱 아이콘(favicon) 동적 변이 (SCENARIO.md 5420-5423)
+    // 세이브 메타 + 현재 상태를 읽어 현재 상황에 맞는 favicon 적용
+    game.favicon = new FaviconManager();
+    game.favicon.sync({
+        saveMeta: game.save?.getMeta?.(),
+        state: game.state
+    });
+
     // 이미지 프리로드 기능을 엔진에 등록
     game._preloadImages = async function(afterScreen) {
         // 이미 프리로드 완료된 경우 스킵

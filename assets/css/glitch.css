@@ -1593,6 +1593,73 @@ body.cursor-slowed * {
 }
 
 /* ============================================================
+ * COMPLICIT 서명 패드 (SCENARIO.md 5608)
+ * 계약서 종이 위에 드래그/터치로 서명. 완료 시 진동.
+ * ============================================================ */
+.signature-pad-container {
+    position: fixed;
+    inset: 0;
+    z-index: 9500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+    animation: signature-fade-in 0.4s ease;
+}
+
+@keyframes signature-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.signature-pad-paper {
+    position: relative;
+    width: min(90%, 560px);
+    height: min(50vh, 300px);
+    background: #f5f1e4;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 28px 32px 48px;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    color: #2a2a2a;
+    overflow: hidden;
+}
+
+.signature-pad-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    opacity: 0.7;
+    margin-bottom: 8px;
+}
+
+.signature-pad-canvas {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: block;
+    cursor: crosshair;
+    touch-action: none;
+}
+
+.signature-pad-line {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 36px;
+    height: 1px;
+    background: #1a1a1a;
+    opacity: 0.6;
+}
+
+.signature-pad-done {
+    animation: signature-fade-out 0.4s ease forwards;
+}
+
+@keyframes signature-fade-out {
+    to { opacity: 0; transform: scale(0.98); }
+}
+
+/* ============================================================
  * temperatureDrop — 화면 전체 푸른 색조 + 서리
  * ============================================================ */
 #game-screen.temperature-drop::before {

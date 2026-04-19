@@ -384,6 +384,22 @@ class FreeTalkSystem {
         // 대화 히스토리에 추가
         this.conversationHistory.push({ role: "user", content: text });
 
+        // 시간 질문 단축 응답 — API 호출 없이 실시간 시각 기반 대사 즉시 반환
+        // (DeviceGimmickSystem.getTimeDialogue가 i18n UI.timeDialogue 템플릿 사용)
+        const device = this.engine?.deviceGimmick;
+        if (device?.isTimeQuery?.(text)) {
+            const reply = device.getTimeDialogue();
+            this.conversationHistory.push({ role: "assistant", content: reply });
+            this._appendChatBubble(reply, 'char');
+            const charImg = document.querySelector('#ft-char img');
+            if (charImg) charImg.classList.remove('thinking');
+            this.isWaiting = false;
+            const sendBtn = document.getElementById('ft-send');
+            if (sendBtn) sendBtn.disabled = false;
+            if (input) { input.disabled = false; input.focus(); }
+            return;
+        }
+
         // 로딩 상태
         const sendBtn = document.getElementById('ft-send');
         if (sendBtn) sendBtn.disabled = true;

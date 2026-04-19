@@ -372,6 +372,13 @@ class GameEngine {
         // 글리치
         if (scene.glitch) this._handleGlitch(scene.glitch);
 
+        // 실시간 시계 연동 (SCENARIO.md 5652-5658)
+        // 자정~새벽 3시 Day 4~5 밤 씬 진입 시 단 1회 팬텀 지문
+        this._checkLatenightGimmick(sceneId);
+
+        // 이어폰 미감지 — 거울 씬 직전 팬텀 힌트 (SCENARIO.md 5623)
+        this._checkHeadphoneHint(sceneId);
+
         // 디바이스 기믹: 진동 + PC용 시각 효과
         if (scene.vibrate) {
             if (this.deviceGimmick) this.deviceGimmick.vibrate(scene.vibrate);
@@ -389,6 +396,19 @@ class GameEngine {
             this._showEndingTitle(scene.endingTitle, scene.endingSubtitle);
             // 갤러리: 엔딩 달성 기록
             if (this.gallery) this.gallery.unlockEnding(scene.endingTitle);
+            // 세이브 메타: playCount / endingsSeen / lastEnding 기록
+            //   "TRUE END" → "TRUE" 로 정규화 (SaveManager.recordEnding 규약)
+            if (this.save) {
+                const endingKey = scene.endingTitle.replace(/\s*END\s*$/i, '').trim().toUpperCase();
+                this.save.recordEnding(endingKey);
+            }
+            // 앱 아이콘 변이 재평가 (COMPLICIT → thirteen, 1회차 후 → red 등)
+            if (this.favicon) {
+                this.favicon.sync({
+                    saveMeta: this.save?.getMeta?.(),
+                    state: this.state
+                });
+            }
         }
 
         // CAGE END 무한 루프 진입
@@ -499,9 +519,15 @@ class GameEngine {
             if (next) { this._loadScene(next); return; }
         }
 
-        // 장르 전환 트리거 — 브라우저 탭 기믹 활성화
+        // 장르 전환 트리거 — 브라우저 탭 기믹 활성화 + 앱 아이콘 금 간 방패로
         if (scene.triggerGenreShift) {
             this.glitch.initTabGimmick(this.state);
+            if (this.favicon) {
+                this.favicon.sync({
+                    saveMeta: this.save?.getMeta?.(),
+                    state: this.state
+                });
+            }
         }
 
         // 날짜 변경 (day1_night_end → day2_morning_start 등)
@@ -793,6 +819,49 @@ class GameEngine {
      * - mirrorReflection: mirror_hit1 구간에서만 표시
      * - mirrorWipe/photoOverlay: 각각 해당 씬을 벗어나면 제거
      */
+    /**
+     * SCENARIO.md 5652-5658: 실시간 시계 연동 — 단 하나의 시간 기믹
+     * 자정~새벽 3시(로컬 시간) 사이에 Day 4~5 밤 씬에 진입하면
+     * 1회만 팬텀 지문을 띄운다. 세션당 1회, 재진입 재표시 없음.
+     * @private
+     */
+    _checkLatenightGimmick(sceneId) {
+        if (!this.glitchAdvanced) return;
+        // 이미 표시됨 → 스킵
+        if (this.state.hasFlag('latenight_shown')) return;
+        // 대상: Day 4~5 + 밤 씬 (sceneId에 "_night" 포함)
+        if (this.state.currentDay < 4) return;
+        if (!/_night/.test(sceneId)) return;
+        // 로컬 시간 체크
+        const hour = new Date().getHours();
+        if (hour < 0 || hour >= 3) return;
+
+        this.state.setFlag('latenight_shown');
+        const text = this.i18n?.getUI('latenightAlone') ||
+            '...\uC774 \uC2DC\uAC04\uC5D0 \uAE68\uC5B4\uC788\uB294 \uAC74 \uB098\ubfd0\uC77C\uAE4C.';
+        // 화면 중앙 위쪽에 2.8초간 팬텀 텍스트
+        this.glitchAdvanced.showGhostText(text, 50, 22, 2800);
+    }
+
+    /**
+     * SCENARIO.md 5623: 이어폰 미감지 시 거울 씬 직전 팬텀 힌트
+     * "...이어폰을 끼면 더 잘 들릴 텐데." 0.5초 노출.
+     * day4_night_save_glitch_20 (거울 진입 직전 씬)에서 단 1회.
+     * @private
+     */
+    _checkHeadphoneHint(sceneId) {
+        if (!this.glitchAdvanced) return;
+        if (sceneId !== 'day4_night_save_glitch_20') return;
+        if (this.state.hasFlag('headphone_hint_shown')) return;
+        // 바이노럴 활성 상태면 이어폰 착용 중 → 힌트 불필요
+        if (this.audio?.isBinauralActive?.()) return;
+
+        this.state.setFlag('headphone_hint_shown');
+        const text = this.i18n?.getUI('headphoneHint') ||
+            '...\uC774\uC5B4\uD3F0\uC744 \uB07C\uBA74 \uB354 \uC798 \uB4E4\uB9B4 \uD150\uB370.';
+        this.glitchAdvanced.showGhostText(text, 50, 78, 500);
+    }
+
     _cleanupPersistentOverlays(sceneId, scene) {
         if (!this.glitchAdvanced) return;
         const g = scene?.glitch || {};
@@ -810,6 +879,10 @@ class GameEngine {
         }
         if (!g.photoOverlay && !/mirror_hit2|mirror_overlay/.test(sceneId)) {
             this.glitchAdvanced.hidePhotoOverlay();
+        }
+        // 서명 패드: 전용 씬 밖에서는 즉시 제거
+        if (sceneId !== 'day5_ending_complicit_sign' && !g.requireSignature) {
+            this.glitchAdvanced.hideSignaturePad?.();
         }
     }
 
@@ -899,6 +972,18 @@ class GameEngine {
                 overlayText: g.overlayText,
                 overlayFadeDuration: g.overlayFadeDuration
             });
+        }
+
+        // ── COMPLICIT 서명 패드 (SCENARIO.md 5608)
+        if (g.requireSignature && this.glitchAdvanced) {
+            this.glitchAdvanced.startSignaturePad({ requireSignature: true });
+        }
+
+        // ── Day 5 추격전 발소리 좌→우 스윕 (SCENARIO.md 5622)
+        // g.chaseFootsteps: { fromPan, toPan, steps, interval } 또는 true
+        if (g.chaseFootsteps && this.audio?.playFootstepsPanSweep) {
+            const opts = (typeof g.chaseFootsteps === 'object') ? g.chaseFootsteps : {};
+            this.audio.playFootstepsPanSweep(opts);
         }
 
         // ── 바이노럴 패닝 SFX (SCENARIO.md 5616~5630)

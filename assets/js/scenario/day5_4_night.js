@@ -1124,6 +1124,15 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_complicit_8b": {
         character: null,
+        next: "day5_ending_complicit_sign"
+    },
+    // ★ 서명 인터랙션 — 유저가 직접 드래그/터치로 서명해야 진행
+    // SCENARIO.md 5608: 짧고 날카로운 단일 진동 0.1초 (돌이킬 수 없음의 촉감)
+    // SCENARIO.md 5640: 스크린샷 감지 '반응 없음' — 기록을 허용한다
+    "day5_ending_complicit_sign": {
+        character: null,
+        unskippable: true,
+        glitch: { requireSignature: true },
         next: "day5_ending_complicit_9"
     },
     "day5_ending_complicit_9": {

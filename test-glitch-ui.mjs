@@ -455,6 +455,230 @@ async function runDesktopSuite(browser) {
             '바이노럴 토스트: .binaural-toast가 하단 배치 (save-toast 상단과 충돌 없음)',
             `bottom 설정됨=${toastResult.bottomPosition}`);
 
+        // === Test A: 실시간 시계 연동 ===
+        // 자정~새벽3시 Day 4~5 밤 씬 진입 시 1회 팬텀 지문
+        // Date.now/Hour 직접 모킹이 까다로우므로 _checkLatenightGimmick의 조건 로직을 간접 검증
+        const lateNight = await page.evaluate(() => {
+            const e = window.game;
+            // 기존 플래그 제거 + currentDay=4 + Hour 훅
+            e.state.clearFlag('latenight_shown');
+            e.state.currentDay = 4;
+            // Date.prototype.getHours 일시 모킹 (Playwright clock API 대신 간단히)
+            const origGetHours = Date.prototype.getHours;
+            Date.prototype.getHours = function () { return 2; };
+            // 팬텀 텍스트 DOM을 관측
+            let ghostText = null;
+            const beforeNodes = document.querySelectorAll('.ghost-text').length;
+            e._checkLatenightGimmick('day4_night_mirror_2');
+            const afterNodes = document.querySelectorAll('.ghost-text').length;
+            if (afterNodes > beforeNodes) {
+                ghostText = document.querySelectorAll('.ghost-text')[afterNodes - 1].textContent;
+            }
+            const flagSet = e.state.hasFlag('latenight_shown');
+            // 2번째 호출 — 플래그 때문에 스킵되어야 함
+            const beforeNodes2 = document.querySelectorAll('.ghost-text').length;
+            e._checkLatenightGimmick('day4_night_mirror_2');
+            const afterNodes2 = document.querySelectorAll('.ghost-text').length;
+            const secondCallSkipped = afterNodes2 === beforeNodes2;
+            Date.prototype.getHours = origGetHours;
+            return { ghostText, flagSet, secondCallSkipped };
+        });
+        log(!!lateNight.ghostText && /나뿐일까|only one|一人|sola|seule|einzige/.test(lateNight.ghostText),
+            '실시간시계: 자정~새벽3시 Day4 밤 씬 → "이 시간에 깨어있는 건 나뿐일까" 팬텀 지문',
+            `text='${lateNight.ghostText}'`);
+        log(lateNight.flagSet && lateNight.secondCallSkipped,
+            '실시간시계: 1회만 표시 (latenight_shown 플래그 세트 후 재진입 무시)',
+            `flag=${lateNight.flagSet} secondSkipped=${lateNight.secondCallSkipped}`);
+
+        // === Test B: 이어폰 미감지 팬텀 텍스트 ===
+        const headphone = await page.evaluate(() => {
+            const e = window.game;
+            e.state.clearFlag('headphone_hint_shown');
+            // 바이노럴 OFF로 세팅
+            e.audio._binauralActive = false;
+            const before = document.querySelectorAll('.ghost-text').length;
+            e._checkHeadphoneHint('day4_night_save_glitch_20');
+            const after = document.querySelectorAll('.ghost-text').length;
+            const text = after > before
+                ? document.querySelectorAll('.ghost-text')[after - 1].textContent
+                : null;
+            const flagSet = e.state.hasFlag('headphone_hint_shown');
+
+            // 바이노럴 ON이면 힌트 스킵
+            e.state.clearFlag('headphone_hint_shown');
+            e.audio._binauralActive = true;
+            const before2 = document.querySelectorAll('.ghost-text').length;
+            e._checkHeadphoneHint('day4_night_save_glitch_20');
+            const after2 = document.querySelectorAll('.ghost-text').length;
+            return { text, flagSet, skippedWhenBinaural: after2 === before2 };
+        });
+        log(!!headphone.text && /이어폰|headphones|イヤホン|auriculares|écouteurs|Kopfhörern/.test(headphone.text),
+            '이어폰힌트: 바이노럴 비활성 + save_glitch_20 진입 → "이어폰을 끼면" 팬텀 텍스트',
+            `text='${headphone.text}'`);
+        log(headphone.skippedWhenBinaural,
+            '이어폰힌트: 바이노럴 활성 시 힌트 스킵 (이어폰 이미 낀 상태)');
+
+        // === Test C: Day 5 추격전 발소리 패닝 스윕 ===
+        const chaseResult = await page.evaluate(() => {
+            const e = window.game;
+            const calls = [];
+            const orig = e.audio.playFootstepsPanSweep?.bind(e.audio);
+            if (!orig) return { ok: false, reason: 'playFootstepsPanSweep not available' };
+            e.audio.playFootstepsPanSweep = (opts) => calls.push(opts);
+            e._handleGlitch({ chaseFootsteps: { fromPan: -1, toPan: 1, steps: 14, interval: 0.14 } });
+            e.audio.playFootstepsPanSweep = orig;
+            return { ok: true, calls };
+        });
+        log(chaseResult.ok && chaseResult.calls.length === 1 &&
+            chaseResult.calls[0].fromPan === -1 && chaseResult.calls[0].toPan === 1,
+            '추격전발소리: chaseFootsteps 글리치 키 → playFootstepsPanSweep(-1→1) 호출',
+            JSON.stringify(chaseResult.calls));
+
+        // === Test D: Timer Bar CSS ===
+        const timerCss = await page.evaluate(() => {
+            const style = document.createElement('style'); // dummy
+            const test = document.createElement('div');
+            test.className = 'timer-bar-wrapper';
+            test.innerHTML = '<div class="timer-bar-fill"></div>';
+            document.body.appendChild(test);
+            const wrapper = window.getComputedStyle(test);
+            const fill = window.getComputedStyle(test.querySelector('.timer-bar-fill'));
+            const result = {
+                wrapperHeight: wrapper.height,
+                wrapperOverflow: wrapper.overflow,
+                fillBg: fill.backgroundColor
+            };
+            test.remove();
+            return result;
+        });
+        log(timerCss.wrapperHeight === '6px' && timerCss.wrapperOverflow === 'hidden',
+            'Timer Bar: .timer-bar-wrapper CSS 적용됨 (height:6px, overflow:hidden)',
+            JSON.stringify(timerCss));
+        log(/rgb\(255, ?183, ?197\)/.test(timerCss.fillBg),
+            'Timer Bar: .timer-bar-fill 기본 배경 #FFB7C5 적용',
+            timerCss.fillBg);
+
+        // === Test E: COMPLICIT 서명 패드 ===
+        const signResult = await page.evaluate(async () => {
+            const e = window.game;
+            // 서명 패드 직접 호출 (씬 없이)
+            let completed = false;
+            e.glitchAdvanced.hideSignaturePad?.();
+            e.glitchAdvanced._showSignaturePad(() => { completed = true; });
+            await new Promise(r => setTimeout(r, 100));
+
+            const container = document.querySelector('.signature-pad-container');
+            const canvas = document.querySelector('.signature-pad-canvas');
+            if (!container || !canvas) return { ok: false, reason: 'DOM missing' };
+
+            // 서명 시뮬레이션 — 캔버스에서 충분히 긴 드래그
+            const rect = canvas.getBoundingClientRect();
+            const dispatch = (type, x, y) => {
+                const evt = new MouseEvent(type, {
+                    bubbles: true, cancelable: true, clientX: x, clientY: y
+                });
+                canvas.dispatchEvent(evt);
+            };
+            dispatch('mousedown', rect.left + 10, rect.top + 30);
+            for (let i = 1; i <= 40; i++) {
+                const t = i / 40;
+                dispatch('mousemove', rect.left + 10 + t * (rect.width - 20),
+                                       rect.top + 30 + Math.sin(t * Math.PI * 2) * 20);
+            }
+            dispatch('mouseup', rect.left + rect.width - 10, rect.top + 40);
+            await new Promise(r => setTimeout(r, 1000));
+            return {
+                ok: true,
+                completed,
+                stillMounted: !!document.querySelector('.signature-pad-container')
+            };
+        });
+        log(signResult.ok, 'COMPLICIT 서명: signature-pad-container + canvas 생성됨',
+            signResult.reason || '');
+        log(signResult.ok && signResult.completed && !signResult.stillMounted,
+            'COMPLICIT 서명: 충분한 드래그 후 onComplete 콜백 호출 + container 자동 제거',
+            `completed=${signResult.completed} unmounted=${!signResult.stillMounted}`);
+
+        // complicit_sign 진동 패턴이 등록됐는지
+        const signVib = await page.evaluate(() => {
+            const p = window.game.deviceGimmick.constructor.VIBRATION_PATTERNS;
+            return Array.isArray(p.complicit_sign) && p.complicit_sign.length === 1 && p.complicit_sign[0] === 100;
+        });
+        log(signVib, 'COMPLICIT 서명: VIBRATION_PATTERNS.complicit_sign = [100] (0.1초 단일)');
+
+        // === Test F: Favicon 동적 변경 ===
+        const faviconResult = await page.evaluate(() => {
+            const e = window.game;
+            if (!e.favicon) return { ok: false, reason: 'no favicon manager' };
+            const getHref = () => document.querySelector('link[rel="icon"]')?.href || '';
+
+            // default 상태
+            e.favicon.apply('default');
+            const defaultHref = getHref();
+
+            // cracked (스릴러)
+            e.favicon.apply('cracked');
+            const crackedHref = getHref();
+
+            // red (1회차 후)
+            e.favicon.apply('red');
+            const redHref = getHref();
+
+            // thirteen (COMPLICIT 후)
+            e.favicon.apply('thirteen');
+            const thirteenHref = getHref();
+
+            // picker 로직 검증
+            const pickCracked = e.favicon._pickVariant({ saveMeta: {}, state: { mode: 'thriller' } });
+            const pickRed = e.favicon._pickVariant({ saveMeta: { playCount: 1, endingsSeen: ['TRUE'] } });
+            const pickThirteen = e.favicon._pickVariant({ saveMeta: { playCount: 2, endingsSeen: ['COMPLICIT'] } });
+            const pickDefault = e.favicon._pickVariant({ saveMeta: {}, state: { mode: 'romance' } });
+
+            return {
+                ok: true,
+                defaultHref, crackedHref, redHref, thirteenHref,
+                pickCracked, pickRed, pickThirteen, pickDefault
+            };
+        });
+        log(faviconResult.ok &&
+            /favicon\.svg/.test(faviconResult.defaultHref) &&
+            /data:image\/svg\+xml/.test(faviconResult.crackedHref) &&
+            /data:image\/svg\+xml/.test(faviconResult.redHref) &&
+            /data:image\/svg\+xml/.test(faviconResult.thirteenHref),
+            'Favicon: 4종 변이(default/cracked/red/thirteen) 모두 link[rel=icon]에 적용',
+            faviconResult.reason || '');
+        log(faviconResult.pickCracked === 'cracked' &&
+            faviconResult.pickRed === 'red' &&
+            faviconResult.pickThirteen === 'thirteen' &&
+            faviconResult.pickDefault === 'default',
+            'Favicon: _pickVariant — COMPLICIT > playCount > thriller > default 우선순위',
+            `picks=${[faviconResult.pickCracked, faviconResult.pickRed, faviconResult.pickThirteen, faviconResult.pickDefault].join(',')}`);
+
+        // === Test G: FreeTalk 시간 질문 단축 응답 ===
+        const timeQuery = await page.evaluate(() => {
+            const e = window.game;
+            const d = e.deviceGimmick;
+            if (!d) return { ok: false, reason: 'no deviceGimmick' };
+            return {
+                ok: true,
+                ko1: d.isTimeQuery('지금 몇 시야?'),
+                ko2: d.isTimeQuery('시간이 얼마나 됐어?'),
+                en1: d.isTimeQuery("what time is it?"),
+                en2: d.isTimeQuery("do you know the hour"),
+                ja1: d.isTimeQuery('今何時?'),
+                unrelated: d.isTimeQuery('밥은 먹었어?'),
+                dialogueSample: d.getTimeDialogue()
+            };
+        });
+        log(timeQuery.ok && timeQuery.ko1 && timeQuery.en1 && timeQuery.ja1 && !timeQuery.unrelated,
+            'FreeTalk: isTimeQuery — 한국어/영어/일본어 시간 키워드 감지, 무관한 질문은 false',
+            `ko=${timeQuery.ko1} en=${timeQuery.en1} ja=${timeQuery.ja1} unrelated=${timeQuery.unrelated}`);
+        log(timeQuery.ok && typeof timeQuery.dialogueSample === 'string' &&
+            timeQuery.dialogueSample.length > 10 &&
+            /\d+/.test(timeQuery.dialogueSample),
+            'FreeTalk: getTimeDialogue() 실제 시각 삽입된 문자열 반환',
+            `sample='${timeQuery.dialogueSample}'`);
+
         // === Test 12: 스크린샷 ===
         await loadSceneDirect(page, 'day4_night_save_glitch_7');
         await wait(400);

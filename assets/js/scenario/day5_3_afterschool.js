@@ -342,15 +342,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_true_3": {
         character: null,
+        // 추격전 시작 — 뒤(왼쪽)에서 점점 오른쪽으로 발소리
+        glitch: { chaseFootsteps: { fromPan: -1, toPan: 1, steps: 12, interval: 0.18 } },
         next: "day5_after_true_4"
     },
     "day5_after_true_4": {
         character: null,
+        // 발소리 더 가까이 — 빠르고 강한 스윕
+        glitch: { chaseFootsteps: { fromPan: -0.8, toPan: 0.8, steps: 14, interval: 0.14 } },
         next: "day5_after_true_5"
     },
     "day5_after_true_5": {
         character: null,
         vibrate: "door_resistance",
+        // 비상구 앞 — 발소리가 오른쪽 뒤에서 몰아쳐옴
+        glitch: { chaseFootsteps: { fromPan: 0.3, toPan: 1, steps: 10, interval: 0.12 } },
         next: "day5_after_true_6"
     },
     "day5_after_true_6": {

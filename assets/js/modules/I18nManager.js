@@ -195,7 +195,20 @@ class I18nManager {
             saveComplete: "저장 완료",
             slotAuto: "AUTO", slotEmpty: "빈 슬롯", slotOldFormat: "이전 저장",
             slotOverwrite: "덮어쓰시겠습니까?", slotYes: "예", slotNo: "아니오",
-            binauralActivated: "🎧 바이노럴 모드 — 이어폰 권장"
+            binauralActivated: "🎧 바이노럴 모드 — 이어폰 권장",
+            latenightAlone: "...이 시간에 깨어있는 건 나뿐일까.",
+            headphoneHint: "...이어폰을 끼면 더 잘 들릴 텐데.",
+            timeDialogue: {
+                lateNight:   "지금 {time}이야... 이 시간까지 깨어있는 거야?",
+                dawn:        "새벽 {time}... 밤새 한 거야? 그렇게까지...",
+                morning:     "{time}. 아침이네. 수업 시작하기 딱 좋은 시간이야.",
+                lateMorning: "{time}... 수업 시간 아니야? 여기 있어도 되는 거야?",
+                noon:        "{time}. 점심시간이네. 밥은 먹었어?",
+                afternoon:   "{time}... 오후네. 방과후까지 얼마 안 남았어.",
+                sunset:      "{time}. 해가 지고 있어... 학교에 남아있을 거야?",
+                evening:     "{time}... 밤이 되고 있어. 학교가 조용해지는 시간이야.",
+                night:       "{time}... 늦은 시간이네. 여기 혼자 있는 거 무섭지 않아?"
+            }
         },
         en: {
             title: "The Classroom of No Graduation", subtitle: "5 Days Record",
@@ -211,7 +224,20 @@ class I18nManager {
             saveComplete: "Saved",
             slotAuto: "AUTO", slotEmpty: "Empty Slot", slotOldFormat: "Legacy Save",
             slotOverwrite: "Overwrite this slot?", slotYes: "Yes", slotNo: "No",
-            binauralActivated: "🎧 Binaural Mode — Headphones Recommended"
+            binauralActivated: "🎧 Binaural Mode — Headphones Recommended",
+            latenightAlone: "...am I the only one awake at this hour.",
+            headphoneHint: "...it'd be clearer with headphones.",
+            timeDialogue: {
+                lateNight:   "It's {time}... you're still awake at this hour?",
+                dawn:        "{time} in the morning... did you pull an all-nighter?",
+                morning:     "{time}. A fine hour to start class.",
+                lateMorning: "{time}... aren't you supposed to be in class?",
+                noon:        "{time}. Lunch time. Have you eaten?",
+                afternoon:   "{time}... afternoon already. Not long until school ends.",
+                sunset:      "{time}. The sun is setting... you're staying at school?",
+                evening:     "{time}... it's getting dark. The school gets quiet around this time.",
+                night:       "{time}... getting late. Aren't you scared being here alone?"
+            }
         },
         ja: {
             title: "卒業できない教室", subtitle: "5日間の記録",
@@ -227,7 +253,20 @@ class I18nManager {
             saveComplete: "保存完了",
             slotAuto: "AUTO", slotEmpty: "空きスロット", slotOldFormat: "旧セーブ",
             slotOverwrite: "上書きしますか？", slotYes: "はい", slotNo: "いいえ",
-            binauralActivated: "🎧 バイノーラルモード — イヤホン推奨"
+            binauralActivated: "🎧 バイノーラルモード — イヤホン推奨",
+            latenightAlone: "...こんな時間に起きてるのは私だけかな。",
+            headphoneHint: "...イヤホンをつけたらもっとよく聞こえそうなのに。",
+            timeDialogue: {
+                lateNight:   "今{time}だよ…こんな時間まで起きてるの?",
+                dawn:        "早朝{time}…一晩中?そこまでして…",
+                morning:     "{time}。朝だね。授業を始めるのにちょうどいい時間。",
+                lateMorning: "{time}…授業中じゃないの?ここにいていいの?",
+                noon:        "{time}。お昼だね。ご飯は食べた?",
+                afternoon:   "{time}…午後だね。放課後まであと少し。",
+                sunset:      "{time}。日が沈んでいく…学校に残るの?",
+                evening:     "{time}…夜になるね。学校が静かになる時間。",
+                night:       "{time}…遅い時間だね。一人でここにいて怖くないの?"
+            }
         },
         es: {
             title: "El Aula Sin Graduación", subtitle: "Registro de 5 Días",
@@ -243,7 +282,20 @@ class I18nManager {
             saveComplete: "Guardado",
             slotAuto: "AUTO", slotEmpty: "Vacío", slotOldFormat: "Guardado anterior",
             slotOverwrite: "¿Sobrescribir?", slotYes: "Sí", slotNo: "No",
-            binauralActivated: "🎧 Modo Binaural — Auriculares Recomendados"
+            binauralActivated: "🎧 Modo Binaural — Auriculares Recomendados",
+            latenightAlone: "...¿seré la única despierta a estas horas?",
+            headphoneHint: "...se oiría mejor con auriculares.",
+            timeDialogue: {
+                lateNight:   "Son las {time}... ¿todavía despierto a esta hora?",
+                dawn:        "{time} de la madrugada... ¿pasaste toda la noche?",
+                morning:     "{time}. Es por la mañana. Hora perfecta para empezar clases.",
+                lateMorning: "{time}... ¿no deberías estar en clase?",
+                noon:        "{time}. Hora del almuerzo. ¿Has comido?",
+                afternoon:   "{time}... ya es la tarde. Poco queda hasta el fin de clases.",
+                sunset:      "{time}. Se está poniendo el sol... ¿vas a quedarte en la escuela?",
+                evening:     "{time}... se está haciendo de noche. La escuela se queda en silencio.",
+                night:       "{time}... tarde. ¿No te da miedo estar aquí sola?"
+            }
         },
         fr: {
             title: "La Classe Sans Diplôme", subtitle: "Chronique de 5 Jours",
@@ -259,7 +311,20 @@ class I18nManager {
             saveComplete: "Sauvegardé",
             slotAuto: "AUTO", slotEmpty: "Vide", slotOldFormat: "Ancienne sauvegarde",
             slotOverwrite: "Écraser ?", slotYes: "Oui", slotNo: "Non",
-            binauralActivated: "🎧 Mode Binaural — Écouteurs Recommandés"
+            binauralActivated: "🎧 Mode Binaural — Écouteurs Recommandés",
+            latenightAlone: "...suis-je la seule à être réveillée à cette heure.",
+            headphoneHint: "...ce serait plus clair avec des écouteurs.",
+            timeDialogue: {
+                lateNight:   "Il est {time}... encore éveillé à cette heure ?",
+                dawn:        "{time} du matin... t'as veillé toute la nuit ?",
+                morning:     "{time}. C'est le matin. Heure idéale pour commencer les cours.",
+                lateMorning: "{time}... t'es pas censé être en cours ?",
+                noon:        "{time}. L'heure du déjeuner. T'as mangé ?",
+                afternoon:   "{time}... déjà l'après-midi. Plus longtemps avant la fin des cours.",
+                sunset:      "{time}. Le soleil se couche... tu restes à l'école ?",
+                evening:     "{time}... il commence à faire nuit. L'école devient silencieuse.",
+                night:       "{time}... il est tard. Tu n'as pas peur d'être seule ici ?"
+            }
         },
         de: {
             title: "Das Klassenzimmer ohne Abschluss", subtitle: "Aufzeichnung von 5 Tagen",
@@ -275,7 +340,20 @@ class I18nManager {
             saveComplete: "Gespeichert",
             slotAuto: "AUTO", slotEmpty: "Leer", slotOldFormat: "Alter Speicherstand",
             slotOverwrite: "Überschreiben?", slotYes: "Ja", slotNo: "Nein",
-            binauralActivated: "🎧 Binauraler Modus — Kopfhörer Empfohlen"
+            binauralActivated: "🎧 Binauraler Modus — Kopfhörer Empfohlen",
+            latenightAlone: "...bin ich um diese Zeit als einzige wach.",
+            headphoneHint: "...mit Kopfhörern würde es klarer klingen.",
+            timeDialogue: {
+                lateNight:   "Es ist {time}... noch wach um diese Zeit?",
+                dawn:        "{time} morgens... hast du die ganze Nacht durchgemacht?",
+                morning:     "{time}. Morgen. Perfekte Zeit für den Unterricht.",
+                lateMorning: "{time}... solltest du nicht im Unterricht sein?",
+                noon:        "{time}. Mittagspause. Hast du gegessen?",
+                afternoon:   "{time}... schon Nachmittag. Nicht mehr lange bis Schulschluss.",
+                sunset:      "{time}. Die Sonne geht unter... bleibst du in der Schule?",
+                evening:     "{time}... es wird dunkel. Die Schule wird still um diese Zeit.",
+                night:       "{time}... spät. Hast du keine Angst, allein hier zu sein?"
+            }
         }
     };
 

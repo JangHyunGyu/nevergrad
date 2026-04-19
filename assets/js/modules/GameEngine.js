@@ -366,6 +366,9 @@ class GameEngine {
         // 증거
         if (scene.evidence) this.state.addEvidence(scene.evidence);
 
+        // 지속 오버레이(adminPanel/mirrorReflection/mirrorWipe) 경계 정리
+        this._cleanupPersistentOverlays(sceneId, scene);
+
         // 글리치
         if (scene.glitch) this._handleGlitch(scene.glitch);
 
@@ -784,6 +787,32 @@ class GameEngine {
 
     // ===== Glitch =====
 
+    /**
+     * 장면 경계에서 지속 오버레이를 정리한다.
+     * - adminPanel: save_glitch 구간에서만 표시, mirror 진입 시 제거
+     * - mirrorReflection: mirror_hit1 구간에서만 표시
+     * - mirrorWipe/photoOverlay: 각각 해당 씬을 벗어나면 제거
+     */
+    _cleanupPersistentOverlays(sceneId, scene) {
+        if (!this.glitchAdvanced) return;
+        const g = scene?.glitch || {};
+        const inSaveGlitch = /day4_night_save_glitch/.test(sceneId);
+        if (!inSaveGlitch && !g.adminPanel) {
+            this.glitchAdvanced.hideAdminPanel();
+        }
+        const inMirrorHit1 = /day4_night_mirror_hit1/.test(sceneId);
+        if (!inMirrorHit1 && !g.mirrorReflection) {
+            this.glitchAdvanced.hideMirrorReflection();
+        }
+        const inMirrorSwipe = /day4_night_mirror_swipe/.test(sceneId);
+        if (!inMirrorSwipe && !g.mirrorWipe) {
+            this.glitchAdvanced._teardownMirrorWipe?.();
+        }
+        if (!g.photoOverlay && !/mirror_hit2|mirror_overlay/.test(sceneId)) {
+            this.glitchAdvanced.hidePhotoOverlay();
+        }
+    }
+
     _handleGlitch(g) {
         if (!g) return;
         if (g.noise) this.glitch.screenNoise(g.noiseDuration);
@@ -811,7 +840,7 @@ class GameEngine {
             }
         }
         if (g.shatterStatLabel) {
-            const statEl = document.querySelector('.stat-label');
+            const statEl = document.getElementById('stat-display');
             if (statEl) this.glitch.shatterStatLabel(statEl);
         }
         if (typeof g.forceChoice === 'number') {
@@ -823,6 +852,53 @@ class GameEngine {
                 text: g.flickerText,
                 duration: g.flickerDuration || 100
             };
+        }
+
+        // ── Day 3 밤: '호감도' → '위험도' 라벨 벗겨내기
+        if (g.peelStatLabel && this.glitchAdvanced) {
+            this.glitchAdvanced.peelStatLabel(g.revealDuration);
+        }
+
+        // ── Day 3 밤: 온도 하강 (푸른 색조 + 서리)
+        if (g.temperatureDrop && this.glitchAdvanced) {
+            this.glitchAdvanced.temperatureDrop(g.temperatureDuration);
+        }
+
+        // ── Day 4 밤: 안전앱 어드민 패널 (13명 피험자 목록)
+        if (g.adminPanel && this.glitchAdvanced) {
+            this.glitchAdvanced.showAdminPanel(g.subjects || []);
+        }
+
+        // ── Day 4 밤: BGM까지 완전 음소거 (거울 스와이프 직전)
+        if (g.silenceAll) {
+            if (this.audio?.ctx) this.audio.silenceDrop(g.silenceDuration || 0);
+            if (this.renderer?.bgmAudio) {
+                try { this.renderer.bgmAudio.pause(); } catch (_) {}
+            }
+        }
+
+        // ── Day 4 밤: 인터랙티브 거울 닦기 (마우스/터치 스와이프)
+        if (g.mirrorWipe && this.glitchAdvanced) {
+            this.glitchAdvanced.startMirrorWipe({
+                requireSwipe: g.requireSwipe === true,
+                silenceAll: g.silenceAll === true,
+                threshold: g.swipeThreshold
+            });
+        }
+
+        // ── Day 4 밤: 거울 속에 특정 캐릭터 미반사 (설화)
+        if (g.mirrorReflection && this.glitchAdvanced) {
+            this.glitchAdvanced.showMirrorReflection(g.characterAbsentInMirror);
+        }
+
+        // ── Day 4 밤: 13장 증명사진 오버레이 + "나는 13번째 껍데기다"
+        if (g.photoOverlay && this.glitchAdvanced) {
+            this.glitchAdvanced.showPhotoOverlay({
+                photoSequence: g.photoSequence || [],
+                photoInterval: g.photoInterval,
+                overlayText: g.overlayText,
+                overlayFadeDuration: g.overlayFadeDuration
+            });
         }
     }
 

@@ -1386,6 +1386,215 @@ class GlitchSystemAdvanced {
     }
 
     // =========================================================================
+    // ★ 인터랙티브 거울 스와이프 래퍼 (Day 4 밤)
+    // 기존 showMirrorSwipe()를 scene.glitch.mirrorWipe 키로 호출한다.
+    // requireSwipe=true면 스와이프 완료 전까지 대화 진행을 차단한다.
+    // =========================================================================
+
+    startMirrorWipe(opts = {}) {
+        // 이미 실행 중이면 무시 (swipe_2~5의 silence만 있는 후속 씬)
+        if (document.querySelector('.mirror-swipe-container')) return;
+
+        const engine = this.engine;
+        if (opts.requireSwipe && engine) engine._clickLocked = true;
+
+        this.showMirrorSwipe(null, () => {
+            if (engine) engine._clickLocked = false;
+        });
+    }
+
+    /** scenario의 photoOverlay 키를 기존 showMirror13Faces로 연결 */
+    async showPhotoOverlay(opts = {}) {
+        const sequence = opts.photoSequence || [];
+        const playerName = this.engine?.state?.playerName || '';
+        const names = sequence.map(p => {
+            const display = (p.name === '{name}') ? playerName : p.name;
+            return `#${String(p.slot).padStart(2, '0')}  ${display}`;
+        });
+        const overlayText = (opts.overlayText || '').replace('{name}', playerName);
+        await this.showMirror13Faces(names, playerName, overlayText);
+    }
+
+    hidePhotoOverlay() {
+        document.querySelector('.mirror-face-overlay')?.remove();
+    }
+
+    _teardownMirrorWipe() {
+        document.querySelector('.mirror-swipe-container')?.remove();
+    }
+
+    // =========================================================================
+    // ★ 거울 속 반사 (characterAbsentInMirror)
+    // 화면 위쪽에 거울 프레임을 띄우고, 캐릭터 레이어의 특정 캐릭터를
+    // 반사상에서 제외해 '설화는 거울에 비치지 않는다' 연출
+    // =========================================================================
+
+    showMirrorReflection(absentCharId) {
+        const gameScreen = document.getElementById('game-screen');
+        if (!gameScreen) return;
+        this.hideMirrorReflection();
+
+        const mirror = document.createElement('div');
+        mirror.className = 'mirror-reflection';
+        mirror.id = 'mirror-reflection';
+
+        const inner = document.createElement('div');
+        inner.className = 'mirror-reflection-inner';
+
+        // 현재 캐릭터 레이어 복제 (transform scaleX(-1)로 거울상)
+        ['char-left', 'char-center', 'char-right'].forEach(id => {
+            const src = document.getElementById(id);
+            if (!src?.src || src.src.endsWith('/') || src.style.display === 'none') return;
+
+            // 캐릭터 키에서 ID 추출: src URL에서 폴더명이 charId
+            const url = src.src;
+            const m = url.match(/\/([a-z]+)\/[^/]+$/i);
+            const charId = m?.[1];
+            if (absentCharId && charId === absentCharId) return;
+
+            const clone = document.createElement('img');
+            clone.src = src.src;
+            clone.className = `mirror-reflection-sprite mirror-pos-${id.replace('char-', '')}`;
+            inner.appendChild(clone);
+        });
+
+        mirror.appendChild(inner);
+        gameScreen.appendChild(mirror);
+
+        // 페이드 인
+        requestAnimationFrame(() => mirror.classList.add('visible'));
+    }
+
+    hideMirrorReflection() {
+        document.getElementById('mirror-reflection')?.remove();
+    }
+
+
+    // =========================================================================
+    // ★ 피험자 관리 시스템 어드민 패널 (Day 4 밤)
+    // 안전앱이 뒤집혀 13명의 피험자 목록이 노출된다
+    // save_glitch_7에서 생성, mirror 씬 진입 시 자동 정리
+    // =========================================================================
+
+    showAdminPanel(subjects = []) {
+        this.hideAdminPanel();
+
+        const panel = document.createElement('div');
+        panel.className = 'admin-panel-overlay';
+        panel.id = 'admin-panel-overlay';
+
+        const playerName = this.engine?.state?.playerName || '';
+        panel.innerHTML = `
+            <div class="admin-panel-header">
+                <span class="admin-panel-title">NEVERGRAD — 피험자 관리 시스템</span>
+                <span class="admin-panel-version">v4.7</span>
+            </div>
+            <div class="admin-panel-columns">
+                <span>ID</span>
+                <span>이름</span>
+                <span>상태</span>
+                <span>비고</span>
+            </div>
+            <div class="admin-panel-rows" id="admin-panel-rows"></div>
+            <div class="admin-panel-footer">
+                <span class="admin-panel-tab">▸ 위치 추적 기록</span>
+                <span class="admin-panel-tab">▸ 실시간 모니터링</span>
+                <span class="admin-panel-live">● LIVE</span>
+            </div>
+        `;
+
+        const rows = panel.querySelector('#admin-panel-rows');
+        subjects.forEach(sub => {
+            const row = document.createElement('div');
+            row.className = 'admin-panel-row';
+            const isActive = sub.status === '진행 중' || sub.status === '이상 반응';
+            if (isActive) row.classList.add('admin-row-active');
+            if (sub.status === '이상 반응') row.classList.add('admin-row-warning');
+
+            const name = (sub.name === '{name}')
+                ? playerName
+                : sub.name;
+
+            row.innerHTML = `
+                <span class="admin-cell-id">#${String(sub.id).padStart(2, '0')}</span>
+                <span class="admin-cell-name">${this._escape(name)}</span>
+                <span class="admin-cell-status">${this._escape(sub.status)}</span>
+                <span class="admin-cell-note">${this._escape(sub.note || '')}</span>
+            `;
+            rows.appendChild(row);
+        });
+
+        (document.getElementById('game-screen') || document.body).appendChild(panel);
+        requestAnimationFrame(() => panel.classList.add('visible'));
+    }
+
+    hideAdminPanel() {
+        document.getElementById('admin-panel-overlay')?.remove();
+    }
+
+    _escape(s) {
+        return String(s).replace(/[&<>"']/g, c => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        }[c]));
+    }
+
+    // =========================================================================
+    // ★ 스탯 라벨 벗겨내기 (peelStatLabel, Day 3 밤)
+    // '호감도' 라벨이 얇은 막처럼 벗겨지며 '위험도'가 드러난다
+    // =========================================================================
+
+    async peelStatLabel(revealDuration = 300) {
+        const statEl = document.getElementById('stat-display');
+        if (!statEl) return;
+
+        const original = statEl.textContent;
+        // 뒤에 있을 '진짜' 라벨 — 위험도 계열
+        const revealed = statEl.dataset.thrillerlabel || '⚠ 위험도 ' + (original.match(/\d+/)?.[0] || '');
+
+        // 벗겨지는 라벨을 감싸기
+        statEl.classList.add('stat-peeling');
+        const peelLayer = document.createElement('span');
+        peelLayer.className = 'stat-peel-layer';
+        peelLayer.textContent = original;
+
+        // 원래 텍스트는 revealed로 미리 교체
+        statEl.textContent = '';
+        const base = document.createElement('span');
+        base.className = 'stat-peel-base';
+        base.textContent = revealed;
+        statEl.appendChild(base);
+        statEl.appendChild(peelLayer);
+
+        // 벗겨짐 애니메이션
+        await this._sleep(50);
+        peelLayer.classList.add('peeling');
+        await this._sleep(revealDuration);
+        peelLayer.remove();
+
+        await this._sleep(400);
+        statEl.textContent = revealed;
+        statEl.classList.remove('stat-peeling');
+        statEl.classList.add('stat-revealed');
+    }
+
+    // =========================================================================
+    // ★ 온도 하강 (temperatureDrop, Day 3 밤)
+    // 화면 전체가 차갑게 식는 연출 — 푸른 색조 + 미세한 서리 오버레이
+    // =========================================================================
+
+    temperatureDrop(duration = 2000) {
+        const gameScreen = document.getElementById('game-screen');
+        if (!gameScreen) return;
+
+        gameScreen.classList.add('temperature-drop');
+
+        const timer = setTimeout(() => {
+            gameScreen.classList.remove('temperature-drop');
+        }, duration);
+        this._activeTimers.push(timer);
+    }
+
+    // =========================================================================
     // 정리
     // =========================================================================
 
@@ -1432,6 +1641,13 @@ class GlitchSystemAdvanced {
         document.querySelectorAll('.glitch-text').forEach(el => {
             el.classList.remove('glitch-text');
         });
+
+        // 인터랙티브 연출 정리
+        this._teardownMirrorWipe();
+        this.hideMirrorReflection();
+        this.hidePhotoOverlay();
+        this.hideAdminPanel();
+        document.getElementById('game-screen')?.classList.remove('temperature-drop');
 
         // stat-revealed 클래스는 제거하지 않음 (영구 전환)
 

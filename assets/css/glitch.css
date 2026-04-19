@@ -1421,3 +1421,216 @@ body.cursor-slowed * {
     pointer-events: none;
     white-space: nowrap;
 }
+
+/* ============================================================
+ * 거울 속 반사 (characterAbsentInMirror)
+ * ============================================================ */
+.mirror-reflection {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.92);
+    width: 48%;
+    aspect-ratio: 4 / 5;
+    z-index: 40;
+    border: 3px solid rgba(180, 180, 200, 0.35);
+    border-radius: 6% / 4%;
+    background: linear-gradient(135deg, rgba(30, 35, 50, 0.82) 0%, rgba(10, 12, 20, 0.92) 100%);
+    box-shadow:
+        inset 0 0 40px rgba(0, 0, 0, 0.9),
+        0 0 30px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    pointer-events: none;
+    filter: blur(0.4px) brightness(0.85) hue-rotate(-8deg);
+}
+.mirror-reflection.visible { opacity: 0.92; }
+.mirror-reflection-inner {
+    position: absolute;
+    inset: 0;
+    transform: scaleX(-1);
+}
+.mirror-reflection-sprite {
+    position: absolute;
+    bottom: 0;
+    height: 110%;
+    filter: brightness(0.8) contrast(1.05);
+}
+.mirror-reflection-sprite.mirror-pos-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mirror-reflection-sprite.mirror-pos-left { left: 8%; }
+.mirror-reflection-sprite.mirror-pos-right { right: 8%; }
+.mirror-reflection::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.08) 50%, transparent 60%);
+    pointer-events: none;
+}
+
+/* ============================================================
+ * 피험자 관리 시스템 어드민 패널 (Day 4 밤)
+ * ============================================================ */
+.admin-panel-overlay {
+    position: absolute;
+    inset: 5% 6% 18% 6%;
+    z-index: 55;
+    background: #0a0d12;
+    border: 1px solid rgba(90, 200, 120, 0.35);
+    box-shadow: 0 0 40px rgba(0, 255, 140, 0.12), inset 0 0 60px rgba(0, 0, 0, 0.9);
+    font-family: 'Courier New', 'Consolas', monospace;
+    color: #8dff9e;
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    overflow: hidden;
+}
+.admin-panel-overlay.visible { opacity: 0.96; }
+.admin-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(90, 200, 120, 0.4);
+    padding-bottom: 8px;
+}
+.admin-panel-title {
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+    color: #d4ffda;
+}
+.admin-panel-version {
+    font-size: 0.7rem;
+    color: rgba(141, 255, 158, 0.6);
+}
+.admin-panel-columns,
+.admin-panel-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 2fr;
+    gap: 10px;
+    font-size: 0.78rem;
+    padding: 3px 4px;
+}
+.admin-panel-columns {
+    color: rgba(141, 255, 158, 0.55);
+    border-bottom: 1px dashed rgba(90, 200, 120, 0.25);
+    padding-bottom: 6px;
+}
+.admin-panel-rows {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.admin-panel-row {
+    color: rgba(141, 255, 158, 0.75);
+    border-bottom: 1px solid rgba(90, 200, 120, 0.08);
+}
+.admin-panel-row .admin-cell-status { opacity: 0.7; }
+.admin-row-active {
+    color: #ffff88;
+    animation: admin-row-blink 1.2s ease-in-out infinite;
+}
+.admin-row-active .admin-cell-status { opacity: 1; }
+.admin-row-warning { color: #ff6666; }
+.admin-panel-footer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-top: 1px solid rgba(90, 200, 120, 0.3);
+    padding-top: 8px;
+    font-size: 0.72rem;
+    color: rgba(141, 255, 158, 0.55);
+}
+.admin-panel-tab { cursor: default; }
+.admin-panel-live {
+    margin-left: auto;
+    color: #ff4444;
+    letter-spacing: 0.1em;
+    animation: admin-live-pulse 1s ease-in-out infinite;
+}
+@keyframes admin-row-blink {
+    0%, 100% { background: rgba(255, 255, 120, 0.08); }
+    50%      { background: rgba(255, 255, 120, 0.22); }
+}
+@keyframes admin-live-pulse {
+    0%, 100% { opacity: 0.5; }
+    50%      { opacity: 1; }
+}
+
+/* ============================================================
+ * peelStatLabel — '호감도' 표면이 벗겨지며 '위험도' 드러남
+ * ============================================================ */
+.stat-display.stat-peeling {
+    position: relative;
+}
+.stat-display .stat-peel-base {
+    position: relative;
+    display: inline-block;
+    color: #c53030;
+    text-shadow: 0 0 6px rgba(197, 48, 48, 0.45);
+}
+.stat-display .stat-peel-layer {
+    position: absolute;
+    inset: 0;
+    display: inline-block;
+    background: inherit;
+    color: inherit;
+    transform-origin: top center;
+    transition: transform 0.3s ease-in, opacity 0.3s ease;
+}
+.stat-display .stat-peel-layer.peeling {
+    transform: rotateX(90deg) translateY(-60%);
+    opacity: 0;
+    filter: blur(1px);
+}
+
+/* ============================================================
+ * temperatureDrop — 화면 전체 푸른 색조 + 서리
+ * ============================================================ */
+#game-screen.temperature-drop::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 30;
+    pointer-events: none;
+    background:
+        linear-gradient(180deg, rgba(120, 170, 220, 0.22) 0%, rgba(40, 70, 120, 0.18) 100%),
+        radial-gradient(ellipse at 50% 40%, transparent 0%, rgba(10, 30, 60, 0.25) 100%);
+    mix-blend-mode: screen;
+    animation: temp-drop-in 0.8s ease-out;
+}
+#game-screen.temperature-drop::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 31;
+    pointer-events: none;
+    background-image:
+        radial-gradient(circle at 10% 10%, rgba(255,255,255,0.04) 0 2px, transparent 3px),
+        radial-gradient(circle at 80% 30%, rgba(255,255,255,0.04) 0 2px, transparent 3px),
+        radial-gradient(circle at 30% 70%, rgba(255,255,255,0.04) 0 2px, transparent 3px),
+        radial-gradient(circle at 90% 85%, rgba(255,255,255,0.04) 0 2px, transparent 3px),
+        radial-gradient(circle at 55% 45%, rgba(255,255,255,0.04) 0 2px, transparent 3px);
+    background-size: 140px 140px;
+    animation: temp-drop-in 0.8s ease-out;
+}
+@keyframes temp-drop-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 모바일 — 어드민 패널 밀도 조정 */
+@media (max-width: 767px) {
+    .admin-panel-overlay { inset: 4% 4% 22% 4%; padding: 12px 14px; }
+    .admin-panel-columns,
+    .admin-panel-row { grid-template-columns: 42px 1fr 1fr 1.5fr; font-size: 0.68rem; gap: 6px; }
+    .admin-panel-title { font-size: 0.82rem; }
+}

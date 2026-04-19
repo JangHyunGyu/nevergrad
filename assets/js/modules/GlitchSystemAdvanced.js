@@ -1396,7 +1396,14 @@ class GlitchSystemAdvanced {
         if (document.querySelector('.mirror-swipe-container')) return;
 
         const engine = this.engine;
-        if (opts.requireSwipe && engine) engine._clickLocked = true;
+        if (opts.requireSwipe && engine) {
+            // _loadScene이 걸어둔 300ms 자동 해제 타이머를 무효화 — 스와이프 완료까지 유지
+            if (engine._clickLockTimer) {
+                clearTimeout(engine._clickLockTimer);
+                engine._clickLockTimer = null;
+            }
+            engine._clickLocked = true;
+        }
 
         this.showMirrorSwipe(null, () => {
             if (engine) engine._clickLocked = false;
@@ -1546,6 +1553,15 @@ class GlitchSystemAdvanced {
     async peelStatLabel(revealDuration = 300) {
         const statEl = document.getElementById('stat-display');
         if (!statEl) return;
+
+        // 나레이션 씬이라 숨겨진 상태면 강제 노출 (장르 전환 연출의 핵심)
+        statEl.classList.remove('hidden', 'stat-hidden');
+        if (!statEl.textContent.trim()) {
+            // 호감도 UI가 아직 한 번도 표시된 적 없으면 기본값으로 표시
+            const last = this.engine?.state?._lastCharLabel;
+            const aff = this.engine?.state ? this.engine.state.getDisplayAffinity?.('sea') : 0;
+            statEl.textContent = last?.text || `♡ 호감도 ${aff ?? ''}`.trim();
+        }
 
         const original = statEl.textContent;
         // 뒤에 있을 '진짜' 라벨 — 위험도 계열

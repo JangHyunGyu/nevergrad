@@ -138,6 +138,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 엔진 초기화 (i18n 로드, UI 바인딩)
     await game.init();
 
+    // 전역 노출 — 개발자 도구/테스트 접근용
+    window.game = game;
+
     // 갤러리 이벤트 바인딩 (init 후 — UI locale이 적용된 후)
     game.gallery.bind();
 

@@ -255,10 +255,15 @@ class GameEngine {
 
     _loadScene(sceneId) {
         // 씬 ID 접두사로 slot 자동 추론 (HUD 시간대 불일치 방지)
-        // 패턴: day{N}_{morning|lunch|afterschool|night}_...
         const slotMatch = /^day\d_(morning|lunch|afterschool|night)_/.exec(sceneId);
         if (slotMatch && this.state.currentSlot !== slotMatch[1]) {
             this.state.currentSlot = slotMatch[1];
+        }
+
+        // NG+ 기시감 텍스트: SKIP 버튼 제거됨 → 씬 진입 시 자동 표시
+        // (SCENARIO.md 5467-5477 "스킵 시스템 변조" 기믹을 일반 플레이에서도 체험)
+        if (this.glitchAdvanced && this.save?.isNewGamePlus()) {
+            this.glitchAdvanced.checkSkipDejaVu(sceneId, this.save);
         }
 
         // 자동저장 (슬롯 0) — 씬 전환 시 현재 상태를 저장
@@ -1741,9 +1746,8 @@ class GameEngine {
     // ===== Quick Menu =====
 
     _bindQuickMenu() {
-        document.getElementById('qm-auto')?.addEventListener('click', () => { this.audio?.playUIClick(); this._toggleAuto(); });
-        document.getElementById('qm-skip')?.addEventListener('click', () => { this.audio?.playUIClick(); this._toggleSkip(); });
-        document.getElementById('qm-log')?.addEventListener('click', () => { this.audio?.playUIClick(); this._showOverlay('backlog-panel'); });
+        // AUTO / SKIP / LOG 전부 UI에서 제거됨 — 대사는 클릭/탭으로 진행
+        // (NG+ 기시감 텍스트는 _loadScene 진입 시 자동 표시로 대체됨)
         document.getElementById('qm-save')?.addEventListener('click', () => {
             this.audio?.playUIClick();
             this._openSlotSelector('save');
@@ -1754,84 +1758,12 @@ class GameEngine {
         });
         document.getElementById('qm-menu')?.addEventListener('click', () => {
             this.audio?.playUIMenuOpen();
-            this._stopAuto();
-            this._stopSkip();
             this._showOverlay('pause-menu');
         });
     }
-
-    _toggleAuto() {
-        if (this.isAutoMode) {
-            this._stopAuto();
-        } else {
-            this._stopSkip();
-            this.isAutoMode = true;
-            document.getElementById('qm-auto')?.classList.add('active');
-            this._autoAdvance();
-        }
-    }
-
-    _stopAuto() {
-        this.isAutoMode = false;
-        clearTimeout(this._autoTimer);
-        this._autoTimer = null;
-        document.getElementById('qm-auto')?.classList.remove('active');
-    }
-
-    _autoAdvance() {
-        if (!this.isAutoMode) return;
-        this._autoTimer = setTimeout(() => {
-            if (!this.isAutoMode) return;
-            if (this.dialogue.isTyping) {
-                this._autoAdvance();
-                return;
-            }
-            this._advanceScene();
-            this._autoAdvance();
-        }, 2500);
-    }
-
-    _toggleSkip() {
-        if (this.isSkipMode) {
-            this._stopSkip();
-        } else {
-            this._stopAuto();
-            this.isSkipMode = true;
-            document.getElementById('qm-skip')?.classList.add('active');
-            this._skipAdvance();
-        }
-    }
-
-    _stopSkip() {
-        this.isSkipMode = false;
-        clearTimeout(this._skipTimer);
-        this._skipTimer = null;
-        document.getElementById('qm-skip')?.classList.remove('active');
-    }
-
-    _skipAdvance() {
-        if (!this.isSkipMode) return;
-
-        // NG+ 스킵 중 기시감 텍스트 삽입 (SCENARIO.md 5025-5034)
-        let skipDelay = 200;
-        if (this.glitchAdvanced && this.save.isNewGamePlus()) {
-            const hasDejaVu = this.glitchAdvanced.checkSkipDejaVu(
-                this.state.currentScene, this.save
-            );
-            if (hasDejaVu) {
-                skipDelay = 700; // 0.5초 더 길게 표시
-            }
-        }
-
-        this._skipTimer = setTimeout(() => {
-            if (!this.isSkipMode) return;
-            if (this.dialogue.isTyping) {
-                this.dialogue.skipTyping();
-            }
-            this._advanceScene();
-            this._skipAdvance();
-        }, skipDelay);
-    }
+    // AUTO / SKIP 모드는 UI에서 제거됨. 관련 stub들은 호환성 위해 유지.
+    _stopAuto() { this.isAutoMode = false; clearTimeout(this._autoTimer); this._autoTimer = null; }
+    _stopSkip() { this.isSkipMode = false; clearTimeout(this._skipTimer); this._skipTimer = null; }
 
     // ===== Backlog =====
 

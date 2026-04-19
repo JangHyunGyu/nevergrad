@@ -1746,16 +1746,9 @@ class GameEngine {
     // ===== Quick Menu =====
 
     _bindQuickMenu() {
-        // AUTO / SKIP / LOG 전부 UI에서 제거됨 — 대사는 클릭/탭으로 진행
-        // (NG+ 기시감 텍스트는 _loadScene 진입 시 자동 표시로 대체됨)
-        document.getElementById('qm-save')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
-            this._openSlotSelector('save');
-        });
-        document.getElementById('qm-load')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
-            this._openSlotSelector('load');
-        });
+        // AUTO / SKIP / LOG / SAVE / LOAD 전부 UI에서 제거됨.
+        // 대사는 클릭/탭으로 진행. 저장·불러오기는 MENU → pause-menu 안에서 접근.
+        // NG+ 기시감 텍스트는 _loadScene 진입 시 자동 표시.
         document.getElementById('qm-menu')?.addEventListener('click', () => {
             this.audio?.playUIMenuOpen();
             this._showOverlay('pause-menu');

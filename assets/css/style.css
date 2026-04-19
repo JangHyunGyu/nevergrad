@@ -1425,6 +1425,25 @@ body {
     transform: translateX(-50%) translateY(-10px);
 }
 
+/* 바이노럴 토스트 — save-toast 스타일 재사용하되 하단으로 이동, 살짝 더 큼 */
+.binaural-toast {
+    top: auto;
+    bottom: 2rem;
+    transform: translateX(-50%) translateY(10px);
+    font-size: 0.9rem;
+    padding: 0.6rem 1.6rem;
+    border-color: rgba(120, 200, 255, 0.35);
+    background: rgba(10, 20, 35, 0.85);
+}
+
+.binaural-toast.save-toast-visible {
+    transform: translateX(-50%) translateY(0);
+}
+
+.binaural-toast.save-toast-hiding {
+    transform: translateX(-50%) translateY(10px);
+}
+
 /* ===== Save/Load Slot Selector ===== */
 .sl-container {
     width: 90%;

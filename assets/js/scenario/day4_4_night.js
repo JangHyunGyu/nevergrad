@@ -428,7 +428,10 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_mirror_hit1_6": {
         unskippable: true,
-        character: null,
+        // 설화는 물리적으로 등 뒤에 서 있다 — 스프라이트 유지.
+        // mirrorReflection 연출이 거울 반사상에서만 설화를 제외하면서
+        // "실제로는 있는데 거울에는 없다"는 공포를 드러낸다.
+        character: "seolhwa_sad",
         glitch: { mirrorReflection: true, characterAbsentInMirror: "seolhwa" },
         next: "day4_night_mirror_hit1_7"
     },
@@ -478,6 +481,8 @@ Object.assign(SCENARIO[4], {
     "day4_night_mirror_hit1_14": {
         unskippable: true,
         character: "seolhwa_sad",
+        // 바이노럴 왼쪽 귀 속삭임 — 거울엔 없지만 귀 옆에 바로 있는 듯한 연출
+        glitch: { panSFX: "sfx_whisper_seolhwa", pan: -1 },
         next: "day4_night_mirror_hit1_15"
     },
     "day4_night_mirror_hit1_15": {

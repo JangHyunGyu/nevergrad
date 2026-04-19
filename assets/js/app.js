@@ -13,6 +13,29 @@
  */
 
 /**
+ * 바이노럴 모드 토스트 — save-toast 스타일 재사용, 하단 표시
+ * 이어폰 연결 시 1회만 노출되어 "왼쪽 귀 속삭임 연출이 있다"는 걸 알림
+ */
+function showBinauralToast(message) {
+    // 기존 토스트 있으면 제거
+    const existing = document.getElementById('binaural-toast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.id = 'binaural-toast';
+    toast.className = 'save-toast binaural-toast';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+
+    requestAnimationFrame(() => toast.classList.add('save-toast-visible'));
+    setTimeout(() => {
+        toast.classList.remove('save-toast-visible');
+        toast.classList.add('save-toast-hiding');
+        setTimeout(() => toast.remove(), 400);
+    }, 3000);
+}
+
+/**
  * 모바일 풀스크린 유틸리티
  * - Fullscreen API 지원 시 풀스크린 진입
  * - iOS Safari는 Fullscreen API 미지원이므로 standalone 모드(PWA)로 대체
@@ -123,11 +146,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     bgmSynth.init(game.audio);
 
     // 바이노럴 오디오 감지 (SCENARIO.md 5174-5185)
-    game.audio.detectStereoOutput().then(isStereo => {
-        if (isStereo) {
+    // - 초기 연결 상태 + devicechange 이벤트로 동적 대응
+    // - 최초 활성화 시 "🎧 바이노럴 모드" 토스트 한 번 노출 (i18n 로드 후)
+    let __binauralToastShown = false;
+    const syncBinaural = async () => {
+        const isStereo = await game.audio.detectStereoOutput();
+        const wasActive = game.audio.isBinauralActive?.();
+        if (isStereo && !wasActive) {
             game.audio.enableBinauralMode();
+            if (!__binauralToastShown && game.i18n) {
+                __binauralToastShown = true;
+                const msg = game.i18n.getUI('binauralActivated') || '\uD83C\uDFA7 바이노럴 모드';
+                showBinauralToast(msg);
+            }
+        } else if (!isStereo && wasActive) {
+            game.audio.disableBinauralMode();
         }
-    });
+    };
+    if (navigator.mediaDevices?.addEventListener) {
+        navigator.mediaDevices.addEventListener('devicechange', syncBinaural);
+    }
+    // 최초 동기화는 game.init() 이후(아래)에서 수행
 
     // AI 프리토킹 시스템 초기화
     game.freeTalk = new FreeTalkSystem(game);
@@ -143,6 +182,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 갤러리 이벤트 바인딩 (init 후 — UI locale이 적용된 후)
     game.gallery.bind();
+
+    // 바이노럴 초기 동기화 (i18n 로드 후여야 토스트 메시지 번역 적용됨)
+    syncBinaural();
 
     // 이미지 프리로드 기능을 엔진에 등록
     game._preloadImages = async function(afterScreen) {

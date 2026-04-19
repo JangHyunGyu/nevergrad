@@ -353,6 +353,8 @@ Object.assign(SCENARIO[3], {
         character: "seolhwa_sad",
         typingSpeed: 120,
         unskippable: true,
+        // 바이노럴: 설화 목소리를 왼쪽 귀로 (이어폰 착용자만 효과 인지)
+        glitch: { panSFX: "sfx_whisper_seolhwa", pan: -1 },
         next: "day3_night_seolhwa_6"
     },
     "day3_night_seolhwa_6": {
@@ -368,6 +370,7 @@ Object.assign(SCENARIO[3], {
         character: "seolhwa_normal",
         typingSpeed: 150,
         unskippable: true,
+        glitch: { panSFX: "sfx_whisper_seolhwa", pan: -1 },
         next: "day3_night_seolhwa_7a"
     },
     "day3_night_seolhwa_7a": {
@@ -379,6 +382,7 @@ Object.assign(SCENARIO[3], {
         character: "seolhwa_normal",
         typingSpeed: 150,
         unskippable: true,
+        glitch: { panSFX: "sfx_whisper_seolhwa", pan: -1 },
         next: "day3_night_seolhwa_9"
     },
     "day3_night_seolhwa_9": {
@@ -402,7 +406,13 @@ Object.assign(SCENARIO[3], {
         character: "seolhwa_fading",
         typingSpeed: 200,
         unskippable: true,
-        glitch: { ghostText: true, silence: true },
+        // ghostText + silence + 바이노럴 왼쪽 속삭임 합성
+        glitch: {
+            ghostText: true,
+            silence: true,
+            panSFX: "sfx_whisper_seolhwa",
+            pan: -1
+        },
         next: "day3_night_seolhwa_13"
     },
     // 눈 깜빡 → 사라짐

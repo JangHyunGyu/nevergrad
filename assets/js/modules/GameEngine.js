@@ -900,6 +900,20 @@ class GameEngine {
                 overlayFadeDuration: g.overlayFadeDuration
             });
         }
+
+        // ── 바이노럴 패닝 SFX (SCENARIO.md 5616~5630)
+        // 이어폰/헤드폰 연결 시에만 패닝 적용, 모노 출력이면 중앙 재생
+        // g.panSFX: "sfx_whisper_seolhwa" 같은 SFX 키(또는 파일명)
+        // g.pan: -1(왼쪽) ~ 1(오른쪽), 기본 -1 (설화 속삭임 규약)
+        if (g.panSFX && this.audio) {
+            const pan = (typeof g.pan === 'number') ? g.pan : -1;
+            const effectivePan = this.audio.isBinauralActive?.() ? pan : 0;
+            try {
+                this.audio.playSFXPanned(g.panSFX, effectivePan);
+            } catch (_) {
+                // SFX 누락은 치명적이지 않음
+            }
+        }
     }
 
     // ===== Ending Title =====
@@ -1099,11 +1113,17 @@ class GameEngine {
         const statEl = document.getElementById('stat-display');
         if (!statEl) return;
 
+        // peelStatLabel 애니메이션 진행 중엔 덮어쓰지 않는다
+        // (async 함수가 구성해둔 peel-layer/base 구조를 보호)
+        if (statEl.classList.contains('stat-peeling')) return;
+
         // 최초 표시 시 hidden → stat-hidden으로 전환 (CSS 트랜지션 활성화)
         if (statEl.classList.contains('hidden')) {
             statEl.classList.remove('hidden');
             statEl.classList.add('stat-hidden');
         }
+
+        const isRevealed = statEl.classList.contains('stat-revealed');
 
         // 현재 씬에서 대화 중인 캐릭터 파악
         const charKey = this.currentSceneData?.character;
@@ -1114,8 +1134,10 @@ class GameEngine {
         }
 
         // 캐릭터가 없으면 (나레이션 등) 스탯 숨김
+        // 단, peelStatLabel로 이미 '위험도'가 드러난 상태에서는 라벨을 계속 노출한다
+        // (장르 전환의 시각적 앵커를 뺏기지 않도록)
         if (!charId || !this.state.stats[charId]) {
-            statEl.classList.add('stat-hidden');
+            if (!isRevealed) statEl.classList.add('stat-hidden');
             return;
         }
 

@@ -668,12 +668,25 @@ class AudioManager {
 
         const synthKey = filename.replace(/\.[^.]+$/, '');
         if (this._synthRegistry && this._synthRegistry[synthKey]) {
-            // 합성 SFX에 패닝 적용
+            // 합성 SFX에 패닝 적용:
+            // 각 _synthXxx는 _createSFXGain()을 통해 this.sfxGain에 연결한다.
+            // 호출 직전에 this.sfxGain을 panner 앞단으로 임시 교체하면
+            // 이번 호출에서 만든 노드들만 panner를 타고 출력된다.
+            // (AudioNode.connect 참조는 당시 노드에 고정되므로 이후 복원해도 안전)
             const panner = this.ctx.createStereoPanner();
             panner.pan.value = pan;
+            const sfxWrap = this.ctx.createGain();
+            sfxWrap.gain.value = 1;
+            sfxWrap.connect(panner);
             panner.connect(this.masterGain);
-            // 합성 함수에 destination 전달은 미지원이므로 기본 호출
-            this._synthRegistry[synthKey]({});
+
+            const origSfxGain = this.sfxGain;
+            this.sfxGain = sfxWrap;
+            try {
+                this._synthRegistry[synthKey]({});
+            } finally {
+                this.sfxGain = origSfxGain;
+            }
             return;
         }
 
@@ -807,6 +820,7 @@ class AudioManager {
             'sfx_knock':             (o) => this._synthKnock(o),
             'sfx_static':            (o) => this._synthStatic(o),
             'sfx_whisper':           (o) => this._synthWhisper(o),
+            'sfx_whisper_seolhwa':   (o) => this._synthWhisperSeolhwa(o),
             'sfx_camera_shutter':    (o) => this._synthCameraShutter(o),
             'sfx_scream':            (o) => this._synthScream(o),
             'sfx_notification':      (o) => this._synthNotification(o),
@@ -1412,6 +1426,65 @@ class AudioManager {
             noise.start(now);
             noise.stop(now + duration);
         }
+    }
+
+    /**
+     * 설화 전용 속삭임 — 여성/공허 음역, 느린 리듬, 약한 반향
+     * 바이노럴 모드에서 왼쪽 채널로 재생되어 "귀 안쪽 속삭임" 연출.
+     * @private
+     */
+    _synthWhisperSeolhwa(options = {}) {
+        const vol = options.volume || 0.3;
+        const now = this.ctx.currentTime;
+        const duration = options.duration || 2.4;
+
+        // 레이어 1~3: 여성 음역대(800~2400Hz)에 분포, Q 높게 해 속삭임 특유의 치찰음 강조
+        const layers = [
+            { freq:  850, q: 10, offset: 0.00 },
+            { freq: 1400, q: 12, offset: 0.08 },
+            { freq: 2200, q: 14, offset: 0.16 }
+        ];
+
+        layers.forEach(layer => {
+            const noise = this.ctx.createBufferSource();
+            noise.buffer = this._createNoiseBuffer(duration);
+            const bpf = this.ctx.createBiquadFilter();
+            bpf.type = 'bandpass';
+            bpf.frequency.value = layer.freq;
+            bpf.Q.value = layer.q;
+            const gain = this._createSFXGain(0);
+            noise.connect(bpf);
+            bpf.connect(gain);
+
+            // 5개 음절 근사 — 설화의 낮고 느린 어조
+            const syllables = 5;
+            const syllableDur = duration / syllables;
+            for (let s = 0; s < syllables; s++) {
+                const st = now + s * syllableDur + layer.offset;
+                const peak = vol * (0.5 + Math.random() * 0.4);
+                gain.gain.setValueAtTime(0.001, st);
+                gain.gain.linearRampToValueAtTime(peak, st + syllableDur * 0.2);
+                gain.gain.linearRampToValueAtTime(vol * 0.05, st + syllableDur * 0.85);
+            }
+            gain.gain.linearRampToValueAtTime(0, now + duration);
+
+            noise.start(now);
+            noise.stop(now + duration + 0.05);
+        });
+
+        // 약한 공명(2차 피드백): 속삭임이 살짝 멀리서 울려오는 듯한 텍스처
+        const tail = this.ctx.createBufferSource();
+        tail.buffer = this._createNoiseBuffer(duration);
+        const hpf = this.ctx.createBiquadFilter();
+        hpf.type = 'highpass';
+        hpf.frequency.value = 600;
+        const tailGain = this._createSFXGain(vol * 0.08);
+        tail.connect(hpf);
+        hpf.connect(tailGain);
+        tailGain.gain.setValueAtTime(vol * 0.08, now);
+        tailGain.gain.linearRampToValueAtTime(0, now + duration);
+        tail.start(now);
+        tail.stop(now + duration + 0.05);
     }
 
     /**

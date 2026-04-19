@@ -1453,10 +1453,10 @@ class GlitchSystemAdvanced {
             const src = document.getElementById(id);
             if (!src?.src || src.src.endsWith('/') || src.style.display === 'none') return;
 
-            // 캐릭터 키에서 ID 추출: src URL에서 폴더명이 charId
-            const url = src.src;
-            const m = url.match(/\/([a-z]+)\/[^/]+$/i);
-            const charId = m?.[1];
+            // 스프라이트 URL에서 charId 추출: 파일명 첫 언더스코어 앞 토큰
+            // 예) assets/images/characters/seolhwa_sad.png → 'seolhwa'
+            const filename = src.src.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
+            const charId = filename.split('_')[0];
             if (absentCharId && charId === absentCharId) return;
 
             const clone = document.createElement('img');

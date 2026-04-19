@@ -194,7 +194,8 @@ class I18nManager {
             galleryTitle: "엔딩 갤러리", galleryBack: "돌아가기", galleryProgress: "달성률",
             saveComplete: "저장 완료",
             slotAuto: "AUTO", slotEmpty: "빈 슬롯", slotOldFormat: "이전 저장",
-            slotOverwrite: "덮어쓰시겠습니까?", slotYes: "예", slotNo: "아니오"
+            slotOverwrite: "덮어쓰시겠습니까?", slotYes: "예", slotNo: "아니오",
+            binauralActivated: "🎧 바이노럴 모드 — 이어폰 권장"
         },
         en: {
             title: "The Classroom of No Graduation", subtitle: "5 Days Record",
@@ -209,7 +210,8 @@ class I18nManager {
             galleryTitle: "Ending Gallery", galleryBack: "Back", galleryProgress: "Progress",
             saveComplete: "Saved",
             slotAuto: "AUTO", slotEmpty: "Empty Slot", slotOldFormat: "Legacy Save",
-            slotOverwrite: "Overwrite this slot?", slotYes: "Yes", slotNo: "No"
+            slotOverwrite: "Overwrite this slot?", slotYes: "Yes", slotNo: "No",
+            binauralActivated: "🎧 Binaural Mode — Headphones Recommended"
         },
         ja: {
             title: "卒業できない教室", subtitle: "5日間の記録",
@@ -224,7 +226,8 @@ class I18nManager {
             galleryTitle: "エンディングギャラリー", galleryBack: "戻る", galleryProgress: "達成率",
             saveComplete: "保存完了",
             slotAuto: "AUTO", slotEmpty: "空きスロット", slotOldFormat: "旧セーブ",
-            slotOverwrite: "上書きしますか？", slotYes: "はい", slotNo: "いいえ"
+            slotOverwrite: "上書きしますか？", slotYes: "はい", slotNo: "いいえ",
+            binauralActivated: "🎧 バイノーラルモード — イヤホン推奨"
         },
         es: {
             title: "El Aula Sin Graduación", subtitle: "Registro de 5 Días",
@@ -239,7 +242,8 @@ class I18nManager {
             galleryTitle: "Galería de Finales", galleryBack: "Volver", galleryProgress: "Progreso",
             saveComplete: "Guardado",
             slotAuto: "AUTO", slotEmpty: "Vacío", slotOldFormat: "Guardado anterior",
-            slotOverwrite: "¿Sobrescribir?", slotYes: "Sí", slotNo: "No"
+            slotOverwrite: "¿Sobrescribir?", slotYes: "Sí", slotNo: "No",
+            binauralActivated: "🎧 Modo Binaural — Auriculares Recomendados"
         },
         fr: {
             title: "La Classe Sans Diplôme", subtitle: "Chronique de 5 Jours",
@@ -254,7 +258,8 @@ class I18nManager {
             galleryTitle: "Galerie des Fins", galleryBack: "Retour", galleryProgress: "Progression",
             saveComplete: "Sauvegardé",
             slotAuto: "AUTO", slotEmpty: "Vide", slotOldFormat: "Ancienne sauvegarde",
-            slotOverwrite: "Écraser ?", slotYes: "Oui", slotNo: "Non"
+            slotOverwrite: "Écraser ?", slotYes: "Oui", slotNo: "Non",
+            binauralActivated: "🎧 Mode Binaural — Écouteurs Recommandés"
         },
         de: {
             title: "Das Klassenzimmer ohne Abschluss", subtitle: "Aufzeichnung von 5 Tagen",
@@ -269,7 +274,8 @@ class I18nManager {
             galleryTitle: "Ending-Galerie", galleryBack: "Zurück", galleryProgress: "Fortschritt",
             saveComplete: "Gespeichert",
             slotAuto: "AUTO", slotEmpty: "Leer", slotOldFormat: "Alter Speicherstand",
-            slotOverwrite: "Überschreiben?", slotYes: "Ja", slotNo: "Nein"
+            slotOverwrite: "Überschreiben?", slotYes: "Ja", slotNo: "Nein",
+            binauralActivated: "🎧 Binauraler Modus — Kopfhörer Empfohlen"
         }
     };
 

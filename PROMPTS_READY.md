@@ -1310,3 +1310,47 @@ TV나 라디오 화이트 노이즈 정적, 지지직 전자 잡음, 현실이 �
 책 페이지를 넘기는 소리, 종이가 살랑 넘어가는 부드러운 마찰음, 도서관의 조용한 분위기, 차분한, 1회
 ```
 **태그:** `효과음, 책, 페이지, 종이, 차분한`
+
+---
+
+## 🆕 NG+ 타이틀 일러스트 (SCENARIO.md 5454)
+
+### title_cherry_tree.png — 타이틀 배경 (캐릭터 없음)
+
+**모델:** Imagen 4 Ultra → Imagen 4
+**경로:** `assets/images/backgrounds/title_cherry_tree.png`
+
+**프롬프트:**
+```
+anime visual novel style background plate, a wide schoolyard with a large blooming cherry blossom tree in the center, soft pink petals drifting in warm evening sunlight, pastel sky gradient from peach to lavender, school building silhouette in the far background, empty composition with NO PEOPLE, gentle depth of field, peaceful nostalgic romance slice-of-life mood, rendered as a game background for character sprite overlay (characters will be composited on top in-engine). Horizontal 16:9 aspect, no subject in the foreground. NO TEXT, NO LOGO, NO WATERMARK, NO PEOPLE, NO FIGURES IN FRAME.
+```
+
+### 타이틀 캐릭터 스프라이트 — 기존 에셋 재사용 (생성 불필요)
+
+타이틀 화면의 3명은 기존 게임 캐릭터 스프라이트를 그대로 오버레이:
+
+- 왼쪽 (세아): `assets/images/characters/sea_smile.png`
+- 가운데 (은수): `assets/images/characters/eunsu_smile.png`
+- 오른쪽 (리인): `assets/images/characters/riin_smile.png`
+
+→ `index.html#title-stage`가 배경 img + 3 캐릭터 img를 레이어로 합성. 게임 씬과 동일한 투명 스프라이트 방식.
+
+### sea_stare.png — 2회차 NG+ 세아 정면 응시 스프라이트
+
+**모델:** Gemini 3.1 Flash Image Preview (레퍼런스: `sea_smile.png`)
+**경로:** `assets/images/characters/sea_stare.png`
+
+**편집 프롬프트:**
+```
+Reference image: sea_smile.png (Han Sea character sprite — long brown hair with twin pink ribbons, school uniform blazer with red bow, standing pose, soft smile, transparent background).
+ONLY CHANGE her eyes: now locking directly onto the viewer/camera with unsettling intent — pupils slightly dilated, gaze unwavering, smile mouth unchanged but the eyes betray the smile. Head tilt, pose, outfit, lighting, hair, and transparent background must match the reference exactly. Subtle "something is off" feeling — still pretty at first glance, but her eyes follow you. Full-body sprite, transparent background preserved. NO TEXT, NO LOGO, NO WATERMARK.
+```
+
+### NG+ 모드 합성 동작 (코드에 이미 구현됨)
+
+- NG+ 감지 시 `#title-stage.ng-plus-mode` 클래스 추가 → 배경 채도 하락 (saturate 0.78)
+- `#title-char-sea`의 `data-ngp` 에셋이 로드되면 `src`가 `sea_stare.png`로 교체
+- 로드 실패 시 필터만 적용되고 기본 `sea_smile.png` 유지 — 깨진 이미지 방지
+
+**태그:** `타이틀, NG+, 배경+스프라이트 합성, 세아, 정면 응시, 레퍼런스 편집`
+

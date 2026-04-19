@@ -781,6 +781,86 @@ class GlitchSystemAdvanced {
     }
 
     /**
+     * 엔딩 크레딧용 세이브 파일 UI (SCENARIO.md 5436)
+     * 메타 내러티브 마무리 — 13개 슬롯이 엔딩에 따라 다른 상태로 표시
+     *
+     * TRUE END: 전체 슬롯 '졸업 ✓' (13번째가 12번의 자신도 함께 졸업시킴)
+     * 기타 END: 슬롯 13만 해당 엔딩 결과
+     *
+     * @param {SaveManager} saveManager
+     * @param {string} playerName
+     * @param {string} ending - 'TRUE' | 'ESCAPE' | 'RESIST' | 'CAGE' | 'FORGET' | 'GHOST' | 'COMPLICIT'
+     */
+    async showEndingCreditSaveUI(saveManager, playerName, ending) {
+        const overlay = document.getElementById('save-slot-overlay');
+        const list = document.getElementById('save-slot-list');
+        if (!overlay || !list) return;
+
+        const slots = saveManager.getSubjectSlots(playerName);
+
+        list.innerHTML = '';
+        overlay.classList.remove('hidden');
+        overlay.classList.add('ending-credit-mode');
+
+        await this.showNoise(300);
+
+        for (let i = 0; i < slots.length; i++) {
+            const slot = slots[i];
+            const item = document.createElement('div');
+
+            let status, statusClass;
+            if (ending === 'TRUE') {
+                status = '졸업 ✓';
+                statusClass = 'graduated';
+            } else if (i === 12) {
+                const endingMap = {
+                    ESCAPE: { s: '실종', c: 'missing' },
+                    RESIST: { s: '동행', c: 'escaped' },
+                    CAGE: { s: '잔류', c: 'contained' },
+                    FORGET: { s: '처리 완료', c: 'terminated' },
+                    GHOST: { s: '소실', c: 'missing' },
+                    COMPLICIT: { s: '전환 — 담당자', c: 'converted' }
+                };
+                const m = endingMap[ending] || { s: slot.status, c: slot.statusClass };
+                status = m.s;
+                statusClass = m.c;
+            } else {
+                status = slot.status;
+                statusClass = slot.statusClass;
+            }
+
+            item.className = `save-slot-item ${statusClass} credit-slot`;
+            item.style.animationDelay = `${i * 0.1}s`;
+            item.innerHTML = `
+                <span class="slot-number">[${String(slot.number).padStart(2, '0')}]</span>
+                <div class="slot-info">
+                    <span class="slot-name">${slot.name}</span>
+                    <span class="slot-day">${slot.day} ${slot.time}</span>
+                </div>
+                <span class="slot-status">${status}</span>
+            `;
+            list.appendChild(item);
+
+            await this._sleep(100);
+        }
+
+        return new Promise((resolve) => {
+            const close = () => {
+                overlay.classList.add('hidden');
+                overlay.classList.remove('ending-credit-mode');
+                document.removeEventListener('keydown', close);
+                overlay.removeEventListener('click', close);
+                resolve();
+            };
+            const t = setTimeout(() => {
+                document.addEventListener('keydown', close);
+                overlay.addEventListener('click', close);
+            }, 2500);
+            this._activeTimers.push(t);
+        });
+    }
+
+    /**
      * 슬롯 클릭 시 "로드 불가" 연출
      * @private
      */
@@ -829,6 +909,22 @@ class GlitchSystemAdvanced {
         const titleText = document.querySelector('.title-text');
         if (titleText) {
             titleText.classList.add('ng-plus-cracked');
+        }
+
+        // 1-2. 캐릭터 일러스트 시선 변경 (SCENARIO.md 5454)
+        // 타이틀 스테이지 전반 채도 하락 + 세아(왼쪽)만 정면 응시 스프라이트로 교체
+        const stage = document.getElementById('title-stage');
+        if (stage) stage.classList.add('ng-plus-mode');
+        const seaChar = document.getElementById('title-char-sea');
+        if (seaChar) {
+            seaChar.classList.add('ng-plus-stare');
+            const ngpSrc = seaChar.dataset.ngp;
+            if (ngpSrc) {
+                // NG+ 전용 응시 스프라이트가 로드되면 교체, 실패 시 기본 + 필터만 유지
+                const probe = new Image();
+                probe.onload = () => { seaChar.src = ngpSrc; };
+                probe.src = ngpSrc;
+            }
         }
 
         // 2. [이어하기] 버튼 아래 서브텍스트
@@ -945,6 +1041,51 @@ class GlitchSystemAdvanced {
         // 약간 지연 (BGM 로드 후)
         const t = setTimeout(applyPitchDown, 500);
         this._activeTimers.push(t);
+
+        // SCENARIO.md 5450: 15초마다 불협화음 건반 1타 삽입
+        this._startNGPlusDissonantChord(audio);
+    }
+
+    /**
+     * NG+ 타이틀 — 15초마다 불협화음 1타 (SCENARIO.md 5450)
+     * @param {AudioManager} audio
+     * @private
+     */
+    _startNGPlusDissonantChord(audio) {
+        if (!audio?.ctx) return;
+        if (this._ngPlusDissonanceInterval) return;
+
+        const playChord = () => {
+            if (!audio.ctx || audio.ctx.state !== 'running') return;
+            try {
+                const ctx = audio.ctx;
+                const now = ctx.currentCurrentTime !== undefined ? ctx.currentTime : ctx.currentTime;
+                // 트라이톤 + 반음 긁기 = 강한 불협화음 (F#4 + G4 + C5)
+                const frequencies = [369.99, 392.00, 523.25];
+                const master = ctx.createGain();
+                master.gain.setValueAtTime(0, now);
+                master.gain.linearRampToValueAtTime(0.08, now + 0.02);
+                master.gain.exponentialRampToValueAtTime(0.0001, now + 2.4);
+                master.connect(audio.sfxGain || audio.masterGain || ctx.destination);
+
+                frequencies.forEach((freq, i) => {
+                    const osc = ctx.createOscillator();
+                    osc.type = i === 0 ? 'triangle' : 'sine';
+                    osc.frequency.setValueAtTime(freq, now);
+                    const g = ctx.createGain();
+                    g.gain.value = i === 2 ? 0.35 : 0.55;
+                    osc.connect(g);
+                    g.connect(master);
+                    osc.start(now);
+                    osc.stop(now + 2.5);
+                });
+            } catch (e) {
+                // 무시 — 실패해도 경고 없이 다음 주기로
+            }
+        };
+
+        // 15초마다 (SCENARIO.md 명시)
+        this._ngPlusDissonanceInterval = setInterval(playChord, 15000);
     }
 
     // =========================================================================
@@ -982,11 +1123,12 @@ class GlitchSystemAdvanced {
         const t = setTimeout(() => check.remove(), 300);
         this._activeTimers.push(t);
 
-        // 특정 씬에서 고스트 텍스트 (전체 게임에서 3~5회로 제한)
+        // 특정 씬에서 고스트 텍스트 (SCENARIO.md 5485-5488, 전체 게임 3~5회 제한)
+        // 실제 시나리오 씬 ID로 매핑
         const ghostTexts = {
-            day1_chocomilk: '...\uBB3C\uC5B4\uBD24\uC790 \uAC19\uC740 \uB300\uB2F5\uC774\uC57C.',
-            day3_riin_drink: '\uB108 \uC774\uAC70 \uB9DB \uC54C\uC796\uC544.',
-            day5_final_choice: '\uB610?'
+            'day1_choco_choice': '...물어봤자 같은 대답이야.',
+            'day3_after_riin_choice': '너 이거 맛 알잖아.',
+            'day5_morning_proposal_timer': '또?'
         };
 
         const ghostText = ghostTexts[sceneId];
@@ -996,7 +1138,7 @@ class GlitchSystemAdvanced {
             ghost.textContent = ghostText;
             targetBtn.appendChild(ghost);
 
-            const duration = sceneId === 'day5_final_choice' ? 300 : 500;
+            const duration = sceneId === 'day5_morning_proposal_timer' ? 300 : 500;
             const t2 = setTimeout(() => ghost.remove(), duration);
             this._activeTimers.push(t2);
         }
@@ -1019,11 +1161,11 @@ class GlitchSystemAdvanced {
         if (!saveManager.isNewGamePlus()) return 0;
         if (!textEl) return 0;
 
-        // 씬별 깜빡임 단어 매핑
+        // 씬별 깜빡임 단어 매핑 (SCENARIO.md 5497-5500, 실제 씬 ID)
         const flashWords = {
-            day1_eunsu_greeting: '\uB610',
-            day1_eunsu_greeting_1: '\uB610',
-            day1_sea_chocomilk_1: '\uC774\uBC88\uC5D0\uB3C4'
+            'day1_eunsu_1': '또',
+            'day1_eunsu_2': '또',
+            'day1_choco_1': '이번에도'
         };
 
         const word = flashWords[sceneId];
@@ -1309,15 +1451,21 @@ class GlitchSystemAdvanced {
      * @param {SaveManager} saveManager
      * @returns {boolean} true면 스킵 딜레이 적용
      */
+    _getDejaVuTexts() {
+        // SCENARIO.md 5473-5477 (B. 스킵 시스템 변조)
+        // 씬 ID는 실제 시나리오에 존재해야 매칭됨
+        return {
+            'day1_gate_1': '...이 길을 아는 것 같다. 왜지? 처음 오는 학교인데. ......피곤해서 그런 거겠지.',
+            'day1_hallway_1': '...이 웃음. 어딘가에서 봤다. ...아닌가.',
+            'day2_morning_gate_1': '...세아의 동작이 어쩐지 익숙하다. 기분 탓이겠지.',
+            'day3_after_riin_drink': '...이 맛. 낯설지 않다. 마셔본 적도 없는데.'
+        };
+    }
+
     checkSkipDejaVu(sceneId, saveManager) {
         if (!saveManager.isNewGamePlus()) return false;
 
-        const dejaVuTexts = {
-            day1_gate_1: '...\uC774 \uAE38\uC744 \uC544\uB294 \uAC83 \uAC19\uB2E4. \uC65C\uC9C0? \uCC98\uC74C \uC624\uB294 \uD559\uAD50\uC778\uB370. ......\uD53C\uACE4\uD574\uC11C \uADF8\uB7F0 \uAC70\uACA0\uC9C0.',
-            day1_hallway_1: '...\uC774 \uC6C3\uC74C. \uC5B4\uB518\uAC00\uC5D0\uC11C \uBD24\uB2E4. ...\uC544\uB2CC\uAC00.',
-            day2_sea_arrival_1: '...\uC138\uC544\uC758 \uB3D9\uC791\uC774 \uC5B4\uCAD0\uC9C0 \uC775\uC219\uD558\uB2E4. \uAE30\uBD84 \uD0D3\uC774\uACA0\uC9C0.',
-            day3_riin_drink_1: '...\uC774 \uB9DB. \uB0AF\uC124\uC9C0 \uC54A\uB2E4. \uB9C8\uC154\uBCF8 \uC801\uB3C4 \uC5C6\uB294\uB370.'
-        };
+        const dejaVuTexts = this._getDejaVuTexts();
 
         const text = dejaVuTexts[sceneId];
         if (!text) return false;
@@ -1552,6 +1700,42 @@ class GlitchSystemAdvanced {
 
     hideSignaturePad() {
         document.querySelector('.signature-pad-container')?.remove();
+    }
+
+    /**
+     * Day 3 유나 13장 사진 — NG+ 시 14번째 빈 프레임 0.8초 (SCENARIO.md 5503)
+     */
+    show14thEmptyFrame(duration = 800) {
+        const frame = document.createElement('div');
+        frame.id = 'ng-plus-empty-frame';
+        frame.style.cssText = `
+            position: fixed;
+            bottom: 18%;
+            right: 14%;
+            width: 90px;
+            height: 120px;
+            border: 2px dashed rgba(220, 220, 230, 0.8);
+            background: rgba(15, 15, 20, 0.3);
+            z-index: 180;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 180ms ease-in;
+            backdrop-filter: blur(2px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(220, 220, 230, 0.6);
+            font-family: monospace;
+            font-size: 0.72rem;
+            letter-spacing: 1px;
+        `;
+        frame.textContent = '#14';
+        document.body.appendChild(frame);
+
+        requestAnimationFrame(() => { frame.style.opacity = '1'; });
+        const t1 = setTimeout(() => { frame.style.opacity = '0'; }, duration - 180);
+        const t2 = setTimeout(() => frame.remove(), duration);
+        this._activeTimers.push(t1, t2);
     }
 
     /** scenario의 photoOverlay 키를 기존 showMirror13Faces로 연결 */
@@ -1795,6 +1979,10 @@ class GlitchSystemAdvanced {
         if (this._ngPlusTitleInterval) {
             clearInterval(this._ngPlusTitleInterval);
             this._ngPlusTitleInterval = null;
+        }
+        if (this._ngPlusDissonanceInterval) {
+            clearInterval(this._ngPlusDissonanceInterval);
+            this._ngPlusDissonanceInterval = null;
         }
 
         // 글리치 텍스트 클래스 정리

@@ -160,10 +160,10 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_force"
     },
 
-    // ★ FORCE CHOICE: 두 번째 선택지가 첫 번째와 같은 텍스트로 바뀜
+    // ★ FORCE CHOICE: 두 번째 선택지가 첫 번째와 같은 텍스트로 바뀜 (SCENARIO.md 5435)
     "day4_after_sea_force": {
         character: null,
-        glitch: { forceChoice: 0 },
+        glitch: { forceChoice: 0, duplicateChoice: true },
         choices: [
             {
                 next: "day4_after_sea_accept",

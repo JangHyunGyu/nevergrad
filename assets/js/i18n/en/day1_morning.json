@@ -144,6 +144,47 @@
         "text": "*...You don't meet someone like this on your first day as a transfer student.*"
     },
 
+    "day1_choco_entry": {
+        "name": "",
+        "text": ""
+    },
+    "day1_gate_ngp_choice": {
+        "name": "",
+        "text": "",
+        "choices": ["Walk into the school", "Turn back"]
+    },
+    "day1_gate_ngp_turn_back": {
+        "name": "Me",
+        "text": "*My feet stopped. I tried to turn around. The screen slowly goes white. Sound fades away.*"
+    },
+    "day1_gate_ngp_warp": {
+        "name": "",
+        "text": ""
+    },
+    "day1_gate_ngp_classroom": {
+        "name": "Me",
+        "text": "*I opened my eyes. Classroom. Sitting at my desk. Back row by the window. The date on the blackboard. Today's date.*"
+    },
+    "day1_gate_ngp_teacher": {
+        "name": "Eunsu",
+        "text": "\"All right, let's begin class.\""
+    },
+    "day1_gate_ngp_teacher_2": {
+        "name": "Me",
+        "text": "*My head is empty. I was about to do something. ...What was it?*"
+    },
+    "day1_choco_ngp_1": {
+        "name": "Han Sea",
+        "text": "\"Oh right, here. Grabbed it from the shop. You came empty, yeah?\""
+    },
+    "day1_choco_ngp_2": {
+        "name": "Me",
+        "text": "*She hands me a strawberry milk. No excuse. As if none were needed.*"
+    },
+    "day1_choco_ngp_3": {
+        "name": "Me",
+        "text": "*The carton feels familiar in my hand. ...Why aren't I surprised. I'm getting this for the first time.*"
+    },
     "day1_choco_1": {
         "name": "Me",
         "text": "*On the way to the classroom, Sea pulls something out of her bag.*"

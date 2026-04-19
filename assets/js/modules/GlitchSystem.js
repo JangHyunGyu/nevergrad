@@ -191,6 +191,29 @@ class GlitchSystem {
     }
 
     /**
+     * Day 1~3 거울 상시 김 서림 (SCENARIO.md 5432)
+     * 거울 씬 진입 시 호출, 씬 변경 시 자동 제거
+     */
+    showMirrorFog() {
+        if (this._mirrorFogEl) return;
+        const el = document.createElement('div');
+        el.id = 'mirror-fog-overlay';
+        el.className = 'mirror-fog-overlay';
+        document.getElementById('game-screen')?.appendChild(el);
+        // next tick에 active 추가 (transition 트리거)
+        requestAnimationFrame(() => el.classList.add('active'));
+        this._mirrorFogEl = el;
+    }
+
+    hideMirrorFog() {
+        if (!this._mirrorFogEl) return;
+        const el = this._mirrorFogEl;
+        this._mirrorFogEl = null;
+        el.classList.remove('active');
+        setTimeout(() => el.remove(), 800);
+    }
+
+    /**
      * 선택지가 강제로 하나만 남는 연출
      * 다른 선택지들이 하나씩 사라지거나 같은 텍스트로 바뀜
      */

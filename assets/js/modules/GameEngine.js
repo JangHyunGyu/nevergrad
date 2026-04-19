@@ -166,6 +166,7 @@ class GameEngine {
             this._endingReached = false;
             // Cupid 크로스오버 플래그 설정 (세이브 데이터에 포함되지 않으므로 매번 감지)
             if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
+            if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
             this.glitch.initConsoleEasterEgg(this.state.currentDay);
             if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
 
@@ -193,6 +194,7 @@ class GameEngine {
 
             // Cupid 크로스오버 플래그 설정
             if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
+            if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
 
             this.glitch.initConsoleEasterEgg(1);
 
@@ -252,9 +254,22 @@ class GameEngine {
     // ===== Scene Management =====
 
     _loadScene(sceneId) {
+        // 씬 ID 접두사로 slot 자동 추론 (HUD 시간대 불일치 방지)
+        // 패턴: day{N}_{morning|lunch|afterschool|night}_...
+        const slotMatch = /^day\d_(morning|lunch|afterschool|night)_/.exec(sceneId);
+        if (slotMatch && this.state.currentSlot !== slotMatch[1]) {
+            this.state.currentSlot = slotMatch[1];
+        }
+
         // 자동저장 (슬롯 0) — 씬 전환 시 현재 상태를 저장
         this.state.currentScene = sceneId;
         this.save.save();
+
+        // 거울 fog 상시 연출: 다음 씬이 mirrorFog 포함 안 하면 제거
+        const nextScene = SCENARIO[this.state.currentDay]?.[sceneId];
+        if (this.glitch?._mirrorFogEl && !nextScene?.glitch?.mirrorFog) {
+            this.glitch.hideMirrorFog();
+        }
 
         const day = this.state.currentDay;
         const dayScenario = SCENARIO[day];
@@ -622,6 +637,21 @@ class GameEngine {
             this.glitchAdvanced.applyChoiceStaining(btns, this.state.currentScene, this.save);
         }
 
+        // 씬 글리치에서 예약된 duplicateChoice (SCENARIO.md 5435)
+        // 두 번째 선택지가 첫 번째와 같은 텍스트로 변조됨 — "선택 불가" 절망감
+        if (this._pendingDuplicateChoice) {
+            this._pendingDuplicateChoice = false;
+            const btns = panel.querySelectorAll('.choice-btn');
+            if (btns.length >= 2) {
+                const firstText = btns[0].textContent;
+                setTimeout(() => {
+                    btns[1].textContent = firstText;
+                    btns[1].classList.add('glitch-text');
+                    setTimeout(() => btns[1].classList.remove('glitch-text'), 500);
+                }, 1200);
+            }
+        }
+
         // 씬 글리치에서 예약된 forceChoice 처리
         if (typeof this._pendingForceChoice === 'number') {
             const forcedIdx = this._pendingForceChoice;
@@ -900,6 +930,17 @@ class GameEngine {
         if (g.themeShift) this.glitch.shiftTheme(g.themeShift);
         if (g.heavy || g.heavyGlitch) this.glitch.heavyGlitch(g.heavyDuration);
         if (g.ghostText) this.glitch.ghostText(g.ghostText, g.ghostX || 50, g.ghostY || 30);
+        if (g.ngPlusGhostText && this.save?.isNewGamePlus()) {
+            this.glitch.ghostText(g.ngPlusGhostText, g.ghostX || 50, g.ghostY || 60, g.ghostDuration || 500);
+        }
+        if (g.mirrorFog) {
+            this.glitch.showMirrorFog();
+        }
+        if (g.endingCreditSaveUI && this.glitchAdvanced) {
+            this.glitchAdvanced.showEndingCreditSaveUI(
+                this.save, this.state.playerName || '플레이어', g.endingCreditSaveUI
+            );
+        }
         if (g.expressionFlash) {
             this.glitch.expressionFlash(
                 document.getElementById('char-center'), g.expressionFlash, g.flashDuration
@@ -918,6 +959,24 @@ class GameEngine {
         }
         if (typeof g.forceChoice === 'number') {
             this._pendingForceChoice = g.forceChoice;
+        }
+        if (g.duplicateChoice) {
+            this._pendingDuplicateChoice = true;
+        }
+        if (g.phoneFlash && this.deviceGimmick) {
+            this.deviceGimmick.flashPhoneNotification(
+                g.phoneFlashText,
+                g.phoneFlashDuration || 300
+            );
+        }
+        if (g.appKill && this.deviceGimmick) {
+            this.deviceGimmick.simulateAppKill(g.appKillDuration || 1000);
+        }
+        if (g.ngPlusEmptyFrame && this.glitchAdvanced && this.save?.isNewGamePlus()) {
+            this.glitchAdvanced.show14thEmptyFrame(g.ngPlusEmptyFrameDuration || 800);
+        }
+        if (g.earlyEscape && this.glitchAdvanced) {
+            this.glitchAdvanced.playEarlyEscapeSequence();
         }
         if (typeof g.flickerChoice === 'number') {
             this._pendingFlickerChoice = {
@@ -1554,6 +1613,7 @@ class GameEngine {
                 this._endingReached = false;
                 // Cupid 크로스오버 플래그 재설정
                 if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
+            if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
                 this.glitch.initConsoleEasterEgg(this.state.currentDay);
                 if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
                 this._hideOverlay('sl-overlay');

@@ -342,7 +342,7 @@ for (const [, { scene }] of Object.entries(allScenes)) {
 }
 
 // JS 런타임에서 동적으로 설정되는 플래그 (CrossoverSystem 등)
-const RUNTIME_FLAGS = new Set(['cupid_played']);
+const RUNTIME_FLAGS = new Set(['cupid_played', 'new_game_plus']);
 
 for (const f of flagsChecked) {
     if (!flagsSet.has(f) && !RUNTIME_FLAGS.has(f)) {
@@ -356,7 +356,7 @@ for (const f of flagsChecked) {
 const htmlPath = path.join(ROOT, 'index.html');
 if (fs.existsSync(htmlPath)) {
     const html = fs.readFileSync(htmlPath, 'utf8');
-    const srcRefs = [...html.matchAll(/src="([^"]+)"/g)].map(m => m[1]);
+    const srcRefs = [...html.matchAll(/(?<![-\w])src="([^"]+)"/g)].map(m => m[1]);
     const hrefRefs = [...html.matchAll(/href="([^"]+\.css)"/g)].map(m => m[1]);
 
     for (const ref of [...srcRefs, ...hrefRefs]) {
@@ -493,7 +493,7 @@ if (fs.existsSync(koHtmlPath)) {
             }
         }
         // 다국어 HTML 리소스 참조 파일 존재
-        const langSrcRefs = [...html.matchAll(/src="([^"]+)"/g)].map(m => m[1]);
+        const langSrcRefs = [...html.matchAll(/(?<![-\w])src="([^"]+)"/g)].map(m => m[1]);
         const langHrefRefs = [...html.matchAll(/href="([^"]+\.css)"/g)].map(m => m[1]);
         for (const ref of [...langSrcRefs, ...langHrefRefs]) {
             if (ref.startsWith('http')) continue;

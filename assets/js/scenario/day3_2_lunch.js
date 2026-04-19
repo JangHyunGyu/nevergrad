@@ -152,11 +152,11 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_rooftop_18",
         glitch: { noise: true, noiseDuration: 400 }
     },
-    // ★ 13장. 13명. 한 사람.
+    // ★ 13장. 13명. 한 사람. (+ NG+ 14번째 빈 프레임 0.8초)
     "day3_lunch_rooftop_18": {
         character: "yuna_scared",
         next: "day3_lunch_rooftop_19",
-        glitch: { noise: true, noiseDuration: 500, shake: true, shakeDuration: 500 }
+        glitch: { noise: true, noiseDuration: 500, shake: true, shakeDuration: 500, ngPlusEmptyFrame: true, ngPlusEmptyFrameDuration: 800 }
     },
     // 유나가 아무 말도 하지 않는다. 나를 보고 있을 뿐이다.
     "day3_lunch_rooftop_19": {

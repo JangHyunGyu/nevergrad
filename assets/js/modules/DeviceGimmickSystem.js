@@ -662,6 +662,99 @@ class DeviceGimmickSystem {
     }
 
     /**
+     * Day 3 밤 앱 강제 종료 후 자동 재실행 (SCENARIO.md 5425)
+     * 화면 검은색 페이드아웃 → 1초 대기 → 페이드인 복귀
+     * "도망칠 수 없다" 메타 연출
+     */
+    async simulateAppKill(duration = 1000) {
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: #000;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 250ms ease-in;
+            pointer-events: auto;
+        `;
+        document.body.appendChild(overlay);
+
+        await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+        overlay.style.opacity = '1';
+
+        await new Promise(r => setTimeout(r, 250));
+
+        // "앱이 종료됨" 짧은 표시
+        const killText = document.createElement('div');
+        killText.style.cssText = `
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, 0.35);
+            font-family: monospace;
+            font-size: 0.82rem;
+            letter-spacing: 2px;
+        `;
+        killText.textContent = '[한울 안전 앱 재시작 중...]';
+        overlay.appendChild(killText);
+
+        await new Promise(r => setTimeout(r, duration));
+
+        // 재실행 — 페이드 아웃
+        overlay.style.transition = 'opacity 400ms ease-out';
+        overlay.style.opacity = '0';
+
+        await new Promise(r => setTimeout(r, 400));
+        overlay.remove();
+    }
+
+    /**
+     * Day 2 밤 핸드폰 알림 글리치 (SCENARIO.md 5424)
+     * 0.3초간 내부 시스템 문구가 알림처럼 노출되었다 사라짐
+     */
+    flashPhoneNotification(text = '[한울 안전 앱] 모니터링 활성화 중...', duration = 300) {
+        const el = document.createElement('div');
+        el.className = 'phone-flash-notification';
+        el.style.cssText = `
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-120%);
+            width: 88%;
+            max-width: 380px;
+            background: linear-gradient(135deg, rgba(40, 44, 52, 0.96), rgba(20, 22, 28, 0.96));
+            color: #d8dcea;
+            border: 1px solid rgba(180, 80, 80, 0.5);
+            border-radius: 12px;
+            padding: 10px 14px;
+            z-index: 220;
+            font-family: -apple-system, "Segoe UI", sans-serif;
+            font-size: 0.78rem;
+            box-shadow: 0 2px 18px rgba(80, 0, 0, 0.35);
+            transition: transform 140ms cubic-bezier(0.2, 0.9, 0.3, 1.1);
+            filter: hue-rotate(350deg);
+        `;
+        el.innerHTML = `
+            <div style="display:flex; align-items:center; gap:8px;">
+                <div style="width:16px;height:16px;border-radius:4px;background:#902020;"></div>
+                <span style="font-weight:600;">${text}</span>
+            </div>
+        `;
+        document.body.appendChild(el);
+
+        requestAnimationFrame(() => {
+            el.style.transform = 'translateX(-50%) translateY(0)';
+        });
+
+        setTimeout(() => {
+            el.style.transform = 'translateX(-50%) translateY(-120%)';
+            setTimeout(() => el.remove(), 180);
+        }, duration);
+    }
+
+    /**
      * 화면 균열 효과 표시 + 진동
      * 화면 위에 균열 이미지/CSS를 오버레이
      *

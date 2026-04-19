@@ -146,6 +146,8 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_yuna_3": {
         character: "yuna_shy",
+        // SCENARIO.md 5502: NG+ 시 유나가 "이건 제가 찍은 게 아닌데요?" 0.9초 유령
+        glitch: { ngPlusGhostText: "...이건 제가 찍은 게 아닌데요?", ghostDuration: 900, ghostY: 65 },
         next: "day2_lunch_yuna_4"
     },
     "day2_lunch_yuna_4": {

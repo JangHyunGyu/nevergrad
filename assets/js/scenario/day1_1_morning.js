@@ -91,7 +91,45 @@ Object.assign(SCENARIO[1], {
     // L103: *심호흡 한 번. 들어가자...*
     "day1_gate_5": {
         character: null,
+        // SCENARIO.md 5506-5538: NG+ 조기 탈주 — 교문에서 "돌아선다" 선택 시 교실 원점 복귀
+        branches: [
+            { condition: "new_game_plus", next: "day1_gate_ngp_choice" }
+        ],
         next: "day1_gate_cctv_1"
+    },
+
+    // NG+ 전용: 교문 앞 조기 탈주 선택지
+    "day1_gate_ngp_choice": {
+        character: null,
+        choices: [
+            { next: "day1_gate_cctv_1" },
+            { next: "day1_gate_ngp_turn_back", setFlags: ["ngp_early_escape_attempted"] }
+        ]
+    },
+    "day1_gate_ngp_turn_back": {
+        character: null,
+        next: "day1_gate_ngp_warp"
+    },
+    "day1_gate_ngp_warp": {
+        character: null,
+        // playEarlyEscapeSequence가 2.5초 화이트아웃 + 1.5초 블랙아웃 처리
+        glitch: { earlyEscape: true },
+        unskippable: true,
+        next: "day1_gate_ngp_classroom"
+    },
+    "day1_gate_ngp_classroom": {
+        character: null,
+        background: "classroom",
+        next: "day1_gate_ngp_teacher"
+    },
+    "day1_gate_ngp_teacher": {
+        character: "eunsu_smile",
+        next: "day1_gate_ngp_teacher_2"
+    },
+    "day1_gate_ngp_teacher_2": {
+        character: null,
+        // 주인공은 즉시 자기부정 (SCENARIO.md 5532-5534)
+        next: "day1_classroom_1"
     },
 
     // ── 미세 공포 핀: CCTV (위화감 0%, 주인공은 전혀 의식하지 않음) ──
@@ -249,12 +287,35 @@ Object.assign(SCENARIO[1], {
     // L153: *...좋은 사람이네.*
     "day1_sea_meet_18": {
         character: "sea_smile",
-        next: "day1_choco_1"
+        next: "day1_choco_entry"
     },
 
     // =====================================================================
     // 초코우유 이벤트 (SCENARIO.md lines 155-208)
     // =====================================================================
+    // NG+ 진입 분기: 1회차에서 초코 거부(chose_strawberry)했으면 세아가 핑계 없이 딸기우유를 건넴 (SCENARIO.md 5500)
+    "day1_choco_entry": {
+        character: "sea_smile",
+        branches: [
+            { condition: ["new_game_plus", "chose_strawberry"], next: "day1_choco_ngp_1" }
+        ],
+        next: "day1_choco_1"
+    },
+    // NG+ 딸기우유 대체 연출 (핑계 없는 건네기)
+    "day1_choco_ngp_1": {
+        character: "sea_smile",
+        glitch: { ngPlusGhostText: "...네가 가르쳐 줬잖아. 이전 회차에서.", ghostDuration: 500 },
+        next: "day1_choco_ngp_2"
+    },
+    "day1_choco_ngp_2": {
+        character: "sea_normal",
+        next: "day1_choco_ngp_3"
+    },
+    "day1_choco_ngp_3": {
+        character: "sea_normal",
+        setFlags: ["accepted_choco"],
+        next: "day1_classroom_1"
+    },
     // L157: *교실 가는 길에 세아가 가방에서 뭔가를 꺼낸다.*
     "day1_choco_1": {
         character: "sea_smile",
@@ -297,7 +358,7 @@ Object.assign(SCENARIO[1], {
             {
                 next: "day1_choco_question_1",
                 stats: { sea: { affinity: -1 } },
-                setFlags: ["questioned_sea", "sea_choco_milk"]
+                setFlags: ["questioned_sea", "sea_choco_milk", "chose_strawberry"]
             },
             {
                 next: "day1_choco_joke_1",

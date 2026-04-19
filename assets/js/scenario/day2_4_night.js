@@ -385,6 +385,8 @@ Object.assign(SCENARIO[2], {
     "day2_night_wake_3": {
         character: null,
         night: true,
+        // SCENARIO.md 5424: Day 2 밤 핸드폰 알림 글리치 (0.3초 — 내부 시스템 노출)
+        glitch: { phoneFlash: true, phoneFlashText: "[한울 안전 앱] 피험자 #13 모니터링 — 수면 감지", phoneFlashDuration: 300 },
         next: "day2_night_end"
     },
 

@@ -122,6 +122,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         img.onerror = () => titleBgLayer.classList.add('no-image');
     }
 
+    // 타이틀 스테이지 (배경 + 3 캐릭터) — data-src를 파일 존재 확인 후 주입
+    // 미생성 에셋(title_cherry_tree.png, sea_stare.png)은 skip
+    document.querySelectorAll('#title-stage img[data-src]').forEach(el => {
+        const src = el.dataset.src;
+        if (!src) return;
+        const probe = new Image();
+        probe.onload = () => { el.src = src; };
+        probe.onerror = () => { el.style.display = 'none'; };
+        probe.src = new URL(src, document.baseURI).href;
+    });
+
     const game = new GameEngine();
 
     // 크로스오버 감지 시스템 초기화 (Cupid 플레이 기록 감지)

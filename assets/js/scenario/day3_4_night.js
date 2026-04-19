@@ -513,6 +513,8 @@ Object.assign(SCENARIO[3], {
         bgm: null,
         character: null,
         triggerGenreShift: true,
+        // SCENARIO.md 5425: Day 3 밤 앱 강제 종료 → 자동 재실행 — "도망칠 수 없다"
+        glitch: { appKill: true, appKillDuration: 1200 },
         changeDay: 4,
         changeSlot: "morning",
         next: "day4_morning_start"

@@ -1648,3 +1648,54 @@ body {
         display: flex !important;
     }
 }
+
+/* SCENARIO.md 5454: 타이틀 스테이지 — 배경 + 캐릭터 3 스프라이트 레이어
+   NG+ 시 세아(왼쪽)만 시선/표정 변경 */
+.title-stage {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    overflow: hidden;
+}
+.title-stage-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1200ms ease;
+}
+.title-stage-bg[src]:not([src=""]) { opacity: 0.92; }
+
+.title-char {
+    position: absolute;
+    bottom: 0;
+    max-height: 78%;
+    max-width: 32%;
+    object-fit: contain;
+    object-position: bottom center;
+    opacity: 0;
+    transition: opacity 900ms ease, filter 400ms ease;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+}
+.title-char[src]:not([src=""]) { opacity: 1; }
+
+.title-char-left   { left: 6%;  }
+.title-char-center { left: 50%; transform: translateX(-50%); }
+.title-char-right  { right: 6%; }
+
+@media (max-width: 768px) {
+    .title-char { max-width: 38%; max-height: 70%; }
+    .title-char-left   { left: 2%;  }
+    .title-char-right  { right: 2%; }
+}
+
+/* NG+ 모드: 스테이지 전반 채도 하락 + 세아(왼쪽) 필터 강조 */
+.title-stage.ng-plus-mode .title-stage-bg {
+    filter: saturate(0.78) hue-rotate(-5deg);
+}
+.title-char.ng-plus-stare {
+    filter: saturate(0.85) contrast(1.08) brightness(0.96) drop-shadow(0 4px 10px rgba(120, 20, 20, 0.35));
+}

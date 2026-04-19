@@ -144,6 +144,47 @@
         "text": "*전학 첫날에 이런 사람 만나기 쉽지 않다.*"
     },
 
+    "day1_choco_entry": {
+        "name": "",
+        "text": ""
+    },
+    "day1_gate_ngp_choice": {
+        "name": "",
+        "text": "",
+        "choices": ["학교로 들어간다", "돌아선다"]
+    },
+    "day1_gate_ngp_turn_back": {
+        "name": "나",
+        "text": "*발걸음이 멈춘다. 돌아서려 했다. 화면이 서서히 하얘진다. 소리가 사라진다.*"
+    },
+    "day1_gate_ngp_warp": {
+        "name": "",
+        "text": ""
+    },
+    "day1_gate_ngp_classroom": {
+        "name": "나",
+        "text": "*눈을 떴다. 교실이다. 자기 자리에 앉아있다. 창가 뒷줄. 칠판에 날짜가 써있다. 오늘 날짜다.*"
+    },
+    "day1_gate_ngp_teacher": {
+        "name": "박은수",
+        "text": "\"자, 수업 시작할게요.\""
+    },
+    "day1_gate_ngp_teacher_2": {
+        "name": "나",
+        "text": "*머릿속이 비어있다. 뭔가를 하려고 했던 것 같은데. ...뭐였지?*"
+    },
+    "day1_choco_ngp_1": {
+        "name": "한세아",
+        "text": "\"아 맞다, 이거. 매점에서 사 왔는데. 너 빈속이지?\""
+    },
+    "day1_choco_ngp_2": {
+        "name": "나",
+        "text": "*세아가 딸기우유를 건넨다. 핑계도 없이. 설명이 필요 없다는 듯이.*"
+    },
+    "day1_choco_ngp_3": {
+        "name": "나",
+        "text": "*손에 익은 팩. ...왜 안 놀랍지. 처음 받는 건데.*"
+    },
     "day1_choco_1": {
         "name": "나",
         "text": "*교실 가는 길에 세아가 가방에서 뭔가를 꺼낸다.*"

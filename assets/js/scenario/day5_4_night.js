@@ -292,6 +292,7 @@ Object.assign(SCENARIO[5], {
         endingSubtitle: "day5_ending_true_subtitle",
         unskippable: true,
         metaEffect: "graduationSlots",
+        glitch: { endingCreditSaveUI: "TRUE" },
         next: "day5_xover_server_1"
     },
 
@@ -563,6 +564,7 @@ Object.assign(SCENARIO[5], {
         endingSubtitle: "day5_ending_escape_subtitle",
         unskippable: true,
         metaEffect: "escapeSlot",
+        glitch: { endingCreditSaveUI: "ESCAPE" },
         next: null
     },
 
@@ -689,6 +691,7 @@ Object.assign(SCENARIO[5], {
         endingSubtitle: "day5_ending_resist_subtitle",
         unskippable: true,
         metaEffect: "resistSlot",
+        glitch: { endingCreditSaveUI: "RESIST" },
         next: null
     },
 
@@ -793,6 +796,7 @@ Object.assign(SCENARIO[5], {
         endingTitle: "CAGE END",
         endingSubtitle: "day5_ending_cage_subtitle",
         unskippable: true,
+        glitch: { endingCreditSaveUI: "CAGE" },
         next: "day5_cage_loop"
     },
     "day5_cage_loop": {
@@ -970,6 +974,7 @@ Object.assign(SCENARIO[5], {
         endingSubtitle: "day5_ending_forget_subtitle",
         unskippable: true,
         metaEffect: "forgetSlot",
+        glitch: { endingCreditSaveUI: "FORGET" },
         next: null
     },
 
@@ -1077,6 +1082,7 @@ Object.assign(SCENARIO[5], {
         endingSubtitle: "day5_ending_ghost_subtitle",
         unskippable: true,
         metaEffect: "ghostSlot",
+        glitch: { endingCreditSaveUI: "GHOST" },
         next: null
     },
 
@@ -1184,7 +1190,10 @@ Object.assign(SCENARIO[5], {
         endingTitle: "COMPLICIT END",
         endingSubtitle: "day5_ending_complicit_subtitle",
         unskippable: true,
-        glitch: { textReplace: { from: "졸업하지 못한 교실", to: "졸업시키지 않는 교실" } },
+        glitch: {
+            textReplace: { from: "졸업하지 못한 교실", to: "졸업시키지 않는 교실" },
+            endingCreditSaveUI: "COMPLICIT"
+        },
         metaEffect: "complicitSlot",
         next: null
     }

@@ -1689,26 +1689,28 @@ body {
 }
 .title-char[src]:not([src=""]) { opacity: 1; }
 
-.title-char-left   { left: 4%;  max-width: 28%; }
-/* 가운데(은수)는 뒷줄 원근감 — 축소 + 투명 + 아래로 내려 버튼 영역 침범 금지 */
+/* 좌우에 세아(주인공 러브라인) + 담임 은수만 배치. 중앙 비움. 리인은 숨김.
+   SCENARIO.md 5454: 플레이어와 상호작용하는 2인 구도 */
+.title-char-left   { left: 4%;  max-width: 30%; }
+/* 은수(담임)를 오른쪽으로 이동 — 원래 center 클래스 재활용 */
 .title-char-center {
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 22%;
-    max-height: 62%;
-    bottom: -6%;
-    opacity: 0.55;
-    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2)) blur(0.4px);
-    z-index: 0;
+    left: auto;
+    right: 4%;
+    transform: none;
+    max-width: 30%;
+    bottom: 0;
+    opacity: 1;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+    z-index: 1;
 }
-.title-char-center[src]:not([src=""]) { opacity: 0.55; }
-.title-char-right  { right: 4%; max-width: 28%; }
+.title-char-center[src]:not([src=""]) { opacity: 1; }
+/* 리인은 타이틀에서 제외 */
+.title-char-right  { display: none !important; }
 
 @media (max-width: 768px) {
-    .title-char { max-height: 70%; }
-    .title-char-left   { left: 2%; max-width: 32%; }
-    .title-char-center { max-width: 20%; max-height: 54%; bottom: -8%; }
-    .title-char-right  { right: 2%; max-width: 32%; }
+    .title-char { max-height: 74%; }
+    .title-char-left   { left: 1%; max-width: 36%; }
+    .title-char-center { right: 1%; max-width: 36%; }
 }
 
 /* NG+ 모드: 스테이지 전반 채도 하락 + 세아(왼쪽) 필터 강조 */

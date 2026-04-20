@@ -253,6 +253,53 @@ body {
     .archerlab-link:hover { transform: scale(1.08); }
 }
 
+.lang-switcher {
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    z-index: 50;
+    padding: 6px 28px 6px 14px;
+    border-radius: 20px;
+    background-color: rgba(20, 15, 30, 0.88);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23fdecef' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid rgba(255, 183, 197, 0.3);
+    color: #fdecef;
+    font-family: inherit;
+    font-size: 0.82rem;
+    line-height: 1.2;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.lang-switcher:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 183, 197, 0.6);
+    box-shadow: 0 0 15px rgba(255, 183, 197, 0.25);
+}
+.lang-switcher:focus-visible {
+    border-color: rgba(255, 183, 197, 0.8);
+    box-shadow: 0 0 0 2px rgba(255, 183, 197, 0.35);
+}
+.lang-switcher option {
+    background: #1a1422;
+    color: #fdecef;
+}
+@media (max-width: 768px) {
+    .lang-switcher {
+        top: 14px;
+        right: 12px;
+        font-size: 0.78rem;
+        padding: 5px 24px 5px 11px;
+    }
+}
+
 .title-footer {
     position: absolute;
     bottom: 1.5rem;

@@ -84,6 +84,23 @@
     <!-- ===== Title Screen ===== -->
     <div id="title-screen" class="screen active">
         <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 홈" title="ArcherLab">🏹 ArcherLab</a>
+        <select class="lang-switcher" aria-label="Language" onchange="if(this.value)location.href=this.value">
+            <option value="/">한국어</option>
+            <option value="/en/">English</option>
+            <option value="/ja/">日本語</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
+            <option value="/de/">Deutsch</option>
+        </select>
+        <script>
+            (function(){
+                var s=document.querySelector('.lang-switcher');
+                if(!s)return;
+                var p=location.pathname,c='/';
+                ['/en/','/ja/','/es/','/fr/','/de/'].forEach(function(x){if(p.indexOf(x)===0)c=x;});
+                for(var i=0;i<s.options.length;i++)if(s.options[i].value===c){s.selectedIndex=i;break;}
+            })();
+        </script>
         <div class="title-bg-layer"></div>
         <div class="title-bg-vignette"></div>
         <div class="cherry-blossoms" id="cherry-blossoms"></div>

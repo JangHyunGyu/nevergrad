@@ -2056,7 +2056,18 @@ class AudioManager {
 
     playUIClick() {
         if (!this.ctx) return;
-        this._playSoftUITap({ volume: 0.055, frequency: 340, endFrequency: 220, duration: 0.06 });
+        this._playSoftUITap({
+            volume: 0.062,
+            frequency: 420,
+            endFrequency: 260,
+            duration: 0.085,
+            lowpass: 1050,
+            accentFrequency: 1120,
+            accentVolume: 0.12,
+            textureFrequency: 920,
+            textureVolume: 0.07,
+            tailVolume: 0.01
+        });
         return;
         const now = this.ctx.currentTime;
         const vol = 0.22;
@@ -2126,7 +2137,18 @@ class AudioManager {
      */
     playUIDialogueAdvance() {
         if (!this.ctx) return;
-        this._playSoftUITap({ volume: 0.032, frequency: 300, endFrequency: 210, duration: 0.045, lowpass: 560 });
+        this._playSoftUITap({
+            volume: 0.038,
+            frequency: 330,
+            endFrequency: 220,
+            duration: 0.06,
+            lowpass: 760,
+            accentFrequency: 920,
+            accentVolume: 0.07,
+            textureFrequency: 760,
+            textureVolume: 0.045,
+            tailVolume: 0.006
+        });
         return;
         const now = this.ctx.currentTime;
         const vol = 0.11;
@@ -2176,9 +2198,10 @@ class AudioManager {
     playUIChoiceSelect() {
         if (!this.ctx) return;
         this._playSoftUIChord([
-            { frequency: 440, duration: 0.09, volume: 0.055 },
-            { frequency: 660, delay: 0.045, duration: 0.14, volume: 0.05 }
-        ], { lowpass: 1050 });
+            { frequency: 392, duration: 0.09, volume: 0.052, harmonicVolume: 0.12 },
+            { frequency: 523.25, delay: 0.035, duration: 0.13, volume: 0.045, harmonicVolume: 0.1 },
+            { frequency: 659.25, delay: 0.075, duration: 0.15, volume: 0.036, harmonicVolume: 0.07 }
+        ], { lowpass: 1250, textureFrequency: 700, textureVolume: 0.004, tailVolume: 0.01 });
         return;
         const now = this.ctx.currentTime;
         const vol = 0.2;
@@ -2246,9 +2269,10 @@ class AudioManager {
     playUISaveConfirm() {
         if (!this.ctx) return;
         this._playSoftUIChord([
-            { frequency: 392, duration: 0.12, volume: 0.052 },
-            { frequency: 523.25, delay: 0.085, duration: 0.16, volume: 0.048 }
-        ], { lowpass: 1000 });
+            { frequency: 392, duration: 0.12, volume: 0.052, harmonicVolume: 0.1 },
+            { frequency: 523.25, delay: 0.08, duration: 0.17, volume: 0.046, harmonicVolume: 0.08 },
+            { frequency: 659.25, delay: 0.145, duration: 0.18, volume: 0.03, harmonicVolume: 0.05 }
+        ], { lowpass: 1200, textureFrequency: 780, textureVolume: 0.004, tailVolume: 0.012 });
         return;
         const now = this.ctx.currentTime;
         const vol = 0.18;
@@ -2314,10 +2338,10 @@ class AudioManager {
     playUILoadConfirm() {
         if (!this.ctx) return;
         this._playSoftUIChord([
-            { frequency: 330, duration: 0.09, volume: 0.046 },
-            { frequency: 392, delay: 0.07, duration: 0.11, volume: 0.046 },
-            { frequency: 494, delay: 0.14, duration: 0.16, volume: 0.044 }
-        ], { lowpass: 950 });
+            { frequency: 494, duration: 0.09, volume: 0.043, harmonicVolume: 0.08 },
+            { frequency: 392, delay: 0.065, duration: 0.12, volume: 0.044, harmonicVolume: 0.07 },
+            { frequency: 330, delay: 0.13, duration: 0.16, volume: 0.04, harmonicVolume: 0.04 }
+        ], { lowpass: 1050, textureFrequency: 680, textureVolume: 0.004, tailVolume: 0.01 });
         return;
         const now = this.ctx.currentTime;
         const vol = 0.18;
@@ -2369,7 +2393,16 @@ class AudioManager {
      */
     playUIHover() {
         if (!this.ctx) return;
-        this._playSoftUITap({ volume: 0.018, frequency: 280, endFrequency: 240, duration: 0.025, lowpass: 520 });
+        this._playSoftUITap({
+            volume: 0.018,
+            frequency: 360,
+            endFrequency: 300,
+            duration: 0.035,
+            lowpass: 780,
+            accentVolume: 0.05,
+            texture: false,
+            tailVolume: 0.003
+        });
         return;
         const now = this.ctx.currentTime;
         const vol = 0.08;
@@ -2407,7 +2440,18 @@ class AudioManager {
      */
     playUIMenuOpen() {
         if (!this.ctx) return;
-        this._playSoftUITap({ volume: 0.045, frequency: 300, endFrequency: 460, duration: 0.11, lowpass: 900 });
+        this._playSoftUITap({
+            volume: 0.048,
+            frequency: 300,
+            endFrequency: 560,
+            duration: 0.12,
+            lowpass: 1050,
+            accentFrequency: 980,
+            accentVolume: 0.1,
+            textureFrequency: 720,
+            textureVolume: 0.05,
+            tailVolume: 0.012
+        });
         return;
         const now = this.ctx.currentTime;
         const vol = 0.15;
@@ -2446,7 +2490,18 @@ class AudioManager {
      */
     playUIMenuClose() {
         if (!this.ctx) return;
-        this._playSoftUITap({ volume: 0.04, frequency: 460, endFrequency: 280, duration: 0.09, lowpass: 850 });
+        this._playSoftUITap({
+            volume: 0.042,
+            frequency: 520,
+            endFrequency: 280,
+            duration: 0.1,
+            lowpass: 950,
+            accentFrequency: 860,
+            accentVolume: 0.08,
+            textureFrequency: 650,
+            textureVolume: 0.04,
+            tailVolume: 0.008
+        });
         return;
         const now = this.ctx.currentTime;
         const vol = 0.12;

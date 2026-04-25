@@ -1760,6 +1760,38 @@ body {
     .title-char-center { right: 1%; max-width: 36%; }
 }
 
+.title-character-lineup {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.title-char-lineup {
+    left: var(--title-x, 50%);
+    right: auto;
+    bottom: var(--title-bottom, 0px);
+    height: var(--title-height, 70vh);
+    width: auto;
+    max-width: none;
+    max-height: none;
+    transform: translateX(-50%) scale(var(--title-scale, 0.8));
+    transform-origin: bottom center;
+    transition: opacity 900ms ease var(--title-delay, 0ms), filter 400ms ease, transform 400ms ease, left 400ms ease, bottom 400ms ease, height 400ms ease;
+    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.36));
+    z-index: var(--title-z, 10);
+}
+.title-char-lineup[src]:not([src=""]) { opacity: 0.98; }
+.title-char-seolhwa { opacity: 0.88; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.42)) saturate(0.86); }
+.title-char-sea { filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.44)); }
+
+@media (max-width: 768px) {
+    .title-char-lineup {
+        max-height: none;
+        filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.42));
+    }
+}
+
 /* NG+ 모드: 스테이지 전반 채도 하락 + 세아(왼쪽) 필터 강조 */
 .title-stage.ng-plus-mode .title-stage-bg {
     filter: saturate(0.78) hue-rotate(-5deg);

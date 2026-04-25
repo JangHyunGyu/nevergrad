@@ -70,6 +70,119 @@ window.addEventListener('orientationchange', () => {
  * @param {function(number, number)} onProgress - (loaded, total) 콜백
  * @returns {Promise<void>}
  */
+function getNevergradAssetPath(path) {
+    if (!path) return '';
+    const normalized = String(path).replace(/^\.\//, '');
+    if (/^(?:https?:|data:|blob:|\/)/.test(normalized) || normalized.startsWith('../')) {
+        return normalized;
+    }
+    return (window.__NEVERGRAD_LANG__ ? '../' : '') + normalized;
+}
+
+function resolveNevergradAssetUrl(path) {
+    return new URL(getNevergradAssetPath(path), document.baseURI).href;
+}
+
+function clampNumber(value, min, max) {
+    return Math.min(Math.max(value, min), max);
+}
+
+function initializeTitleLineup() {
+    const stage = document.getElementById('title-stage');
+    if (!stage) return;
+
+    const characters = [
+        { id: 'title-char-seolhwa', name: 'seolhwa', src: 'assets/images/characters/seolhwa_quiet.png' },
+        { id: 'title-char-yuna', name: 'yuna', src: 'assets/images/characters/yuna_normal.png' },
+        { id: 'title-char-sea', name: 'sea', src: 'assets/images/characters/sea_normal.png', ngp: 'assets/images/characters/sea_stare.png' },
+        { id: 'title-char-eunsu', name: 'eunsu', src: 'assets/images/characters/eunsu_normal.png' },
+        { id: 'title-char-riin', name: 'riin', src: 'assets/images/characters/riin_smile.png' }
+    ];
+
+    let lineup = stage.querySelector('.title-character-lineup');
+    if (!lineup) {
+        lineup = document.createElement('div');
+        lineup.className = 'title-character-lineup';
+        stage.appendChild(lineup);
+    }
+
+    characters.forEach((char, index) => {
+        const img = document.getElementById(char.id) || document.createElement('img');
+        img.id = char.id;
+        img.className = `title-char title-char-lineup title-char-${char.name}`;
+        img.alt = '';
+        img.decoding = 'async';
+        img.fetchPriority = index === 2 ? 'high' : 'auto';
+        img.dataset.titleCharacter = char.name;
+        img.dataset.src = getNevergradAssetPath(char.src);
+        img.dataset.default = getNevergradAssetPath(char.src);
+        if (char.ngp) img.dataset.ngp = getNevergradAssetPath(char.ngp);
+        img.style.setProperty('--title-delay', `${index * 90}ms`);
+        lineup.appendChild(img);
+    });
+
+    layoutTitleLineup();
+
+    if (!window.__nevergradTitleLineupResizeBound) {
+        window.__nevergradTitleLineupResizeBound = true;
+        let frame = 0;
+        window.addEventListener('resize', () => {
+            cancelAnimationFrame(frame);
+            frame = requestAnimationFrame(layoutTitleLineup);
+        });
+        window.addEventListener('orientationchange', () => {
+            cancelAnimationFrame(frame);
+            frame = requestAnimationFrame(layoutTitleLineup);
+        });
+    }
+}
+
+function layoutTitleLineup() {
+    const stage = document.getElementById('title-stage');
+    if (!stage) return;
+
+    const sprites = Array.from(stage.querySelectorAll('.title-char-lineup'));
+    if (!sprites.length) return;
+
+    const viewportW = Math.max(window.innerWidth || document.documentElement.clientWidth || 1280, 320);
+    const viewportH = Math.max(window.innerHeight || document.documentElement.clientHeight || 720, 320);
+    const aspect = viewportW / viewportH;
+    let xs;
+    let scales;
+    let bottoms;
+    let height;
+
+    if (aspect >= 1.55) {
+        xs = [13, 31, 50, 69, 87];
+        scales = [0.82, 0.93, 1.04, 0.94, 0.84];
+        bottoms = [-18, -10, -24, -10, -18];
+        height = clampNumber(viewportH * 0.86, 300, 760);
+    } else if (aspect >= 1) {
+        xs = [10, 30, 50, 70, 90];
+        scales = [0.72, 0.83, 0.96, 0.84, 0.73];
+        bottoms = [-10, -4, -18, -4, -10];
+        height = clampNumber(viewportH * 0.78, 300, 640);
+    } else if (viewportW <= 430) {
+        xs = [9, 29, 50, 71, 91];
+        scales = [0.54, 0.63, 0.74, 0.64, 0.55];
+        bottoms = [viewportH * 0.16, viewportH * 0.1, viewportH * 0.04, viewportH * 0.1, viewportH * 0.16];
+        height = clampNumber(viewportH * 0.62, 320, 540);
+    } else {
+        xs = [8, 29, 50, 71, 92];
+        scales = [0.6, 0.7, 0.82, 0.71, 0.61];
+        bottoms = [viewportH * 0.12, viewportH * 0.07, viewportH * 0.02, viewportH * 0.07, viewportH * 0.12];
+        height = clampNumber(viewportH * 0.66, 390, 610);
+    }
+
+    sprites.forEach((sprite, index) => {
+        sprite.style.setProperty('--title-x', `${xs[index] ?? 50}%`);
+        sprite.style.setProperty('--title-scale', String(scales[index] ?? 0.75));
+        sprite.style.setProperty('--title-bottom', `${bottoms[index] ?? 0}px`);
+        sprite.style.setProperty('--title-height', `${height}px`);
+        sprite.style.setProperty('--title-z', String(10 + index));
+    });
+}
+
 function preloadGameImages(onProgress) {
     // 고유 이미지 경로 수집
     const pathSet = new Set();
@@ -118,9 +231,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const titleBgLayer = document.querySelector('.title-bg-layer');
     if (titleBgLayer) {
         const img = new Image();
-        img.src = new URL('assets/images/background/title_bg.png', document.baseURI).href;
+        img.src = resolveNevergradAssetUrl('assets/images/background/title_bg.png');
         img.onerror = () => titleBgLayer.classList.add('no-image');
     }
+
+    initializeTitleLineup();
 
     // 타이틀 스테이지 (배경 + 3 캐릭터) — data-src를 파일 존재 확인 후 주입
     // 미생성 에셋(title_cherry_tree.png, sea_stare.png)은 skip
@@ -130,7 +245,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const probe = new Image();
         probe.onload = () => { el.src = src; };
         probe.onerror = () => { el.style.display = 'none'; };
-        probe.src = new URL(src, document.baseURI).href;
+        probe.src = resolveNevergradAssetUrl(src);
     });
 
     const game = new GameEngine();

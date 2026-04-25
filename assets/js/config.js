@@ -63,7 +63,7 @@ const CONFIG = {
             gentle: "assets/images/characters/eunsu_gentle.png",
             warm: "assets/images/characters/eunsu_warm.png",
             shy: "assets/images/characters/eunsu_shy.png",
-            serious: "assets/images/characters/eunsu_cold.png",         // alias: serious.png 없음 → cold 재사용
+            serious: "assets/images/characters/eunsu_serious.png",
             angry: "assets/images/characters/eunsu_angry.png",
             close: "assets/images/characters/eunsu_close.png",
             cold: "assets/images/characters/eunsu_cold.png",

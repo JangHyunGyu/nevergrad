@@ -40,7 +40,7 @@ for mi in major_idx:
 CHAR_SECTION_ORDER = [
     '## 3. 캐릭터 — 한세아 (반장)',
     '## 1. 캐릭터 — 박은수 (담임교사)',
-    '## 5. 캐릭터 — 이설화 (수수께끼의 소녀)',
+    '## 5. 캐릭터 — 이설화 (수수께끼의 여성)',
     '## 4. 캐릭터 — 최유나 (사진부)',
     '## 2. 캐릭터 — 강리인 (보건교사)',
 ]
@@ -70,7 +70,7 @@ CHAR_IMG_ORDER = {
         'eunsu_close.png',
         'eunsu_angry.png',
     ],
-    '## 5. 캐릭터 — 이설화 (수수께끼의 소녀)': [
+    '## 5. 캐릭터 — 이설화 (수수께끼의 여성)': [
         'seolhwa_normal.png', # Day 1 Morning
         'seolhwa_fade.png',   # Day 2 Afterschool
         'seolhwa_ghost.png',  # Day 2 Night

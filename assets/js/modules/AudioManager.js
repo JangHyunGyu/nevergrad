@@ -1971,35 +1971,44 @@ class AudioManager {
     playUIDialogueAdvance() {
         if (!this.ctx) return;
         const now = this.ctx.currentTime;
-        const vol = 0.12;
+        const vol = 0.11;
 
         const master = this._createSFXGain(1);
 
         // 레이어 1: 소프트 틱 (높은 사인파, 매우 짧음)
-        const osc = this.ctx.createOscillator();
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(3400, now);
-        osc.frequency.exponentialRampToValueAtTime(2600, now + 0.008);
-        const g1 = this.ctx.createGain();
-        g1.gain.setValueAtTime(0, now);
-        g1.gain.linearRampToValueAtTime(vol, now + 0.001);
-        g1.gain.exponentialRampToValueAtTime(vol * 0.1, now + 0.012);
-        g1.gain.exponentialRampToValueAtTime(0.001, now + 0.025);
-        osc.connect(g1); g1.connect(master);
-        osc.start(now); osc.stop(now + 0.03);
+        const toneFilter = this.ctx.createBiquadFilter();
+        toneFilter.type = 'lowpass';
+        toneFilter.frequency.value = 1800;
+        toneFilter.Q.value = 0.7;
+        toneFilter.connect(master);
+
+        // Soft muted tap: low enough to avoid a squeaky "beep".
+        const tap = this.ctx.createOscillator();
+        tap.type = 'triangle';
+        tap.frequency.setValueAtTime(760, now);
+        tap.frequency.exponentialRampToValueAtTime(520, now + 0.035);
+        const tapGain = this.ctx.createGain();
+        tapGain.gain.setValueAtTime(0, now);
+        tapGain.gain.linearRampToValueAtTime(vol, now + 0.004);
+        tapGain.gain.exponentialRampToValueAtTime(0.001, now + 0.07);
+        tap.connect(tapGain);
+        tapGain.connect(toneFilter);
+        tap.start(now);
+        tap.stop(now + 0.075);
 
         // 레이어 2: 종이 러스틀 (밴드패스 노이즈, 짧고 부드러움)
         const noise = this.ctx.createBufferSource();
-        noise.buffer = this._createNoiseBuffer(0.02);
+        noise.buffer = this._createNoiseBuffer(0.055);
         const bpf = this.ctx.createBiquadFilter();
         bpf.type = 'bandpass';
-        bpf.frequency.value = 5500;
-        bpf.Q.value = 3;
+        bpf.frequency.value = 1800;
+        bpf.Q.value = 0.8;
         const nG = this.ctx.createGain();
-        nG.gain.setValueAtTime(vol * 0.15, now);
-        nG.gain.exponentialRampToValueAtTime(0.001, now + 0.015);
+        nG.gain.setValueAtTime(0, now);
+        nG.gain.linearRampToValueAtTime(vol * 0.22, now + 0.006);
+        nG.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
         noise.connect(bpf); bpf.connect(nG); nG.connect(master);
-        noise.start(now); noise.stop(now + 0.02);
+        noise.start(now); noise.stop(now + 0.055);
     }
 
     /**

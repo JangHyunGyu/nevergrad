@@ -105,16 +105,16 @@ const CONFIG = {
             broken_smile: "assets/images/characters/sea_broken_smile.png"
         },
         yuna: {
-            normal: "assets/images/characters/yuna_ref_set/yuna_normal_ref_v1.png",
-            smile: "assets/images/characters/yuna_ref_set/yuna_smile_ref_v1.png",
-            shy: "assets/images/characters/yuna_ref_set/yuna_smile_ref_v1.png",          // alias: 수줍은 미소
-            scared: "assets/images/characters/yuna_ref_set/yuna_scared_ref_v1.png",
-            desperate: "assets/images/characters/yuna_ref_set/yuna_desperate_ref_v1.png",
-            cry: "assets/images/characters/yuna_ref_set/yuna_cry_ref_v1.png",
-            weak: "assets/images/characters/yuna_ref_set/yuna_weak_ref_v1.png",
-            determined: "assets/images/characters/yuna_ref_set/yuna_determined_ref_v1.png",
-            cautious: "assets/images/characters/yuna_ref_set/yuna_scared_ref_v1.png",    // alias: 경계하는 상태
-            worried: "assets/images/characters/yuna_ref_set/yuna_scared_ref_v1.png"      // alias: 걱정하는 상태
+            normal: "assets/images/characters/yuna_normal.png",
+            smile: "assets/images/characters/yuna_smile.png",
+            shy: "assets/images/characters/yuna_smile.png",          // alias: 수줍은 미소
+            scared: "assets/images/characters/yuna_scared.png",
+            desperate: "assets/images/characters/yuna_desperate.png",
+            cry: "assets/images/characters/yuna_cry.png",
+            weak: "assets/images/characters/yuna_weak.png",
+            determined: "assets/images/characters/yuna_determined.png",
+            cautious: "assets/images/characters/yuna_scared.png",    // alias: 경계하는 상태
+            worried: "assets/images/characters/yuna_scared.png"      // alias: 걱정하는 상태
         },
         seolhwa: {
             normal: "assets/images/characters/seolhwa_normal.png",

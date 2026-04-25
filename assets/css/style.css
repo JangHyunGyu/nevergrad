@@ -69,6 +69,8 @@ body {
     background: #0a0008;
     transition: var(--transition-theme);
     overflow: hidden;
+    justify-content: flex-start;
+    padding-top: clamp(5.5rem, 14vh, 8rem);
 }
 
 .title-bg-layer {
@@ -1002,6 +1004,37 @@ body {
 
 /* ===== 모바일 가로모드 최적화 ===== */
 @media (max-height: 500px) and (orientation: landscape) {
+    #title-screen { padding-top: 3.25rem; }
+    .title-text { font-size: clamp(1.8rem, 5vw, 2.35rem); }
+    .title-subtitle { font-size: 0.82rem; }
+    .title-menu {
+        position: absolute;
+        left: 50%;
+        bottom: 0.85rem;
+        transform: translateX(-50%);
+        flex-direction: row;
+        margin-top: 0;
+        gap: 0.45rem;
+        padding: 0.65rem 1.2rem;
+        max-width: calc(100vw - 24px);
+    }
+    .menu-btn {
+        padding: 0.52rem 2rem;
+        font-size: 0.84rem;
+        min-width: clamp(112px, 28vw, 170px);
+    }
+    .archerlab-link {
+        top: 10px;
+        left: 18px;
+        transform: none;
+        font-size: 0.72rem;
+        padding: 5px 12px;
+    }
+    .archerlab-link:hover { transform: scale(1.06); }
+    .lang-switcher {
+        top: 10px;
+        right: 12px;
+    }
     .dialogue-box {
         padding: 0.5rem 1rem 0.8rem;
         min-height: 90px;

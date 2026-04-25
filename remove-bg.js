@@ -1,11 +1,13 @@
 /**
  * 크로마키 배경 제거 스크립트
- * 밝은 초록색 배경 → 투명(알파) 처리
+ * 녹색 또는 마젠타 배경 → 투명(알파) 처리
  *
  * 사용법:
- *   node remove-bg.js                      # characters/ 전체
- *   node remove-bg.js --prefix eunsu       # 은수만
- *   node remove-bg.js --file eunsu_normal.png  # 단일 파일
+ *   node remove-bg.js                                  # characters/ 전체 (자동 감지)
+ *   node remove-bg.js --prefix sea                     # 세아만
+ *   node remove-bg.js --file sea_angry.png             # 단일 파일
+ *   node remove-bg.js --color magenta --prefix sea     # 마젠타 강제
+ *   node remove-bg.js --color green --prefix eunsu     # 그린 강제
  */
 const sharp = require('sharp');
 const fs = require('fs');
@@ -13,7 +15,29 @@ const path = require('path');
 
 const CHAR_DIR = path.join(__dirname, 'assets/images/characters');
 
-async function removeGreenBg(inputPath) {
+function detectColor(data, width, height, channels) {
+    // 코너 4점 평균으로 배경색 추정
+    const samples = [
+        0,
+        (width - 1) * channels,
+        (height - 1) * width * channels,
+        ((height - 1) * width + (width - 1)) * channels,
+    ];
+    let r = 0, g = 0, b = 0;
+    for (const o of samples) {
+        r += data[o];
+        g += data[o + 1];
+        b += data[o + 2];
+    }
+    r /= samples.length;
+    g /= samples.length;
+    b /= samples.length;
+    if (g > 100 && g > r * 1.3 && g > b * 1.3) return 'green';
+    if (r > 150 && b > 150 && Math.min(r, b) - g > 60) return 'magenta';
+    return null;
+}
+
+async function removeChromaBg(inputPath, forceColor = null) {
     const { data, info } = await sharp(inputPath)
         .raw()
         .ensureAlpha()
@@ -21,6 +45,8 @@ async function removeGreenBg(inputPath) {
 
     const { width, height, channels } = info;
     const output = Buffer.from(data);
+    const color = forceColor || detectColor(data, width, height, channels);
+    if (!color) return { skipped: true };
 
     for (let i = 0; i < width * height; i++) {
         const offset = i * channels;
@@ -28,18 +54,34 @@ async function removeGreenBg(inputPath) {
         const g = output[offset + 1];
         const b = output[offset + 2];
 
-        // 초록색 크로마키 감지
-        // 배경색 샘플: R:150 G:210 B:147 범위
-        const gDominance = g - Math.max(r, b);  // G가 얼마나 우세한지
-        const isGreen = g > 120 && gDominance > 20;
-        const isStrongGreen = g > 150 && gDominance > 40;
-
-        if (isStrongGreen) {
-            output[offset + 3] = 0; // 완전 투명
-        } else if (isGreen) {
-            // 엣지 스무딩: gDominance에 비례하여 투명도
-            const alpha = Math.round(Math.max(0, 255 - (gDominance - 20) * 12.75));
-            output[offset + 3] = Math.min(output[offset + 3], alpha);
+        if (color === 'green') {
+            // green chromakey + spill 제거 (3단계)
+            if (g > 100 && g > r * 1.4 && g > b * 1.4) {
+                output[offset + 3] = 0;
+            } else if (g > 80 && g > r * 1.2 && g > b * 1.2) {
+                output[offset + 3] = Math.min(output[offset + 3], 80);
+                output[offset + 1] = Math.round(g * 0.7 + r * 0.3);
+            } else if (g > 60 && g > r * 1.05 && g > b * 1.05) {
+                const ratio = (g - Math.max(r, b)) / g;
+                output[offset + 3] = Math.min(output[offset + 3], Math.round(255 * (1 - ratio * 2)));
+                output[offset + 1] = Math.round(g * 0.85 + ((r + b) / 2) * 0.15);
+            }
+        } else {
+            // magenta chromakey + spill 제거 (3단계)
+            const mDom = Math.min(r, b) - g;
+            if (g < 60 && mDom > 100) {
+                output[offset + 3] = 0;
+            } else if (g < 110 && mDom > 60) {
+                output[offset + 3] = Math.min(output[offset + 3], 80);
+                // magenta spill: r/b 채널을 g 쪽으로 끌어내림
+                output[offset] = Math.round(r * 0.7 + g * 0.3);
+                output[offset + 2] = Math.round(b * 0.7 + g * 0.3);
+            } else if (mDom > 30) {
+                const ratio = mDom / Math.min(r, b);
+                output[offset + 3] = Math.min(output[offset + 3], Math.round(255 * (1 - ratio * 2)));
+                output[offset] = Math.round(r * 0.85 + g * 0.15);
+                output[offset + 2] = Math.round(b * 0.85 + g * 0.15);
+            }
         }
     }
 
@@ -48,12 +90,14 @@ async function removeGreenBg(inputPath) {
         .toFile(inputPath + '.tmp');
 
     fs.renameSync(inputPath + '.tmp', inputPath);
+    return { color };
 }
 
 async function main() {
     const args = process.argv.slice(2);
     const prefix = args.includes('--prefix') ? args[args.indexOf('--prefix') + 1] : null;
     const singleFile = args.includes('--file') ? args[args.indexOf('--file') + 1] : null;
+    const forceColor = args.includes('--color') ? args[args.indexOf('--color') + 1] : null;
 
     let files;
     if (singleFile) {
@@ -63,21 +107,25 @@ async function main() {
         if (prefix) files = files.filter(f => f.startsWith(prefix));
     }
 
-    console.log(`\n🎨 배경 제거: ${files.length}개 파일\n`);
+    console.log(`\n배경 제거: ${files.length}개 파일${forceColor ? ` (강제: ${forceColor})` : ' (자동 감지)'}\n`);
 
     for (const file of files) {
         const fullPath = path.join(CHAR_DIR, file);
         try {
             const before = fs.statSync(fullPath).size;
-            await removeGreenBg(fullPath);
+            const result = await removeChromaBg(fullPath, forceColor);
+            if (result.skipped) {
+                console.log(`  SKIP ${file} (배경색 미감지)`);
+                continue;
+            }
             const after = fs.statSync(fullPath).size;
-            console.log(`  ✅ ${file} (${(before/1024).toFixed(0)}KB → ${(after/1024).toFixed(0)}KB)`);
+            console.log(`  OK ${file} [${result.color}] (${(before/1024).toFixed(0)}KB -> ${(after/1024).toFixed(0)}KB)`);
         } catch (e) {
-            console.log(`  ❌ ${file}: ${e.message}`);
+            console.log(`  FAIL ${file}: ${e.message}`);
         }
     }
 
-    console.log('\n완료!');
+    console.log('\n완료');
 }
 
 main();

@@ -165,12 +165,12 @@ function layoutTitleLineup() {
     } else if (viewportW <= 430) {
         xs = [9, 29, 50, 71, 91];
         scales = [0.54, 0.63, 0.74, 0.64, 0.55];
-        bottoms = [viewportH * 0.16, viewportH * 0.1, viewportH * 0.04, viewportH * 0.1, viewportH * 0.16];
+        bottoms = [viewportH * 0.11, viewportH * 0.05, -viewportH * 0.01, viewportH * 0.05, viewportH * 0.11];
         height = clampNumber(viewportH * 0.62, 320, 540);
     } else {
         xs = [8, 29, 50, 71, 92];
         scales = [0.6, 0.7, 0.82, 0.71, 0.61];
-        bottoms = [viewportH * 0.12, viewportH * 0.07, viewportH * 0.02, viewportH * 0.07, viewportH * 0.12];
+        bottoms = [viewportH * 0.08, viewportH * 0.03, -viewportH * 0.02, viewportH * 0.03, viewportH * 0.08];
         height = clampNumber(viewportH * 0.66, 390, 610);
     }
 

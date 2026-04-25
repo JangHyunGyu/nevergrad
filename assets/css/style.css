@@ -1017,6 +1017,7 @@ body {
         gap: 0.45rem;
         padding: 0.65rem 1.2rem;
         max-width: calc(100vw - 24px);
+        animation: none;
     }
     .menu-btn {
         padding: 0.52rem 2rem;

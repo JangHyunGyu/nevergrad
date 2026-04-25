@@ -70,6 +70,7 @@ window.addEventListener('orientationchange', () => {
  * @param {function(number, number)} onProgress - (loaded, total) 콜백
  * @returns {Promise<void>}
  */
+/* Title screen asset helpers. */
 function getNevergradAssetPath(path) {
     if (!path) return '';
     const normalized = String(path).replace(/^\.\//, '');
@@ -183,6 +184,10 @@ function layoutTitleLineup() {
     });
 }
 
+/**
+ * @param {function(number, number)} onProgress
+ * @returns {Promise<void>}
+ */
 function preloadGameImages(onProgress) {
     // 고유 이미지 경로 수집
     const pathSet = new Set();

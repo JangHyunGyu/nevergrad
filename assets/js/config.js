@@ -78,13 +78,13 @@ const CONFIG = {
         riin: {
             normal: "assets/images/characters/riin_normal.png",
             smile: "assets/images/characters/riin_smile.png",
-            gentle: "assets/images/characters/riin_smile.png",       // alias: 부드러운 미소
+            gentle: "assets/images/characters/riin_gentle.png",
             seductive: "assets/images/characters/riin_seductive.png",
             close: "assets/images/characters/riin_close.png",
             pleased: "assets/images/characters/riin_pleased.png",
             cold: "assets/images/characters/riin_cold.png",
             dark: "assets/images/characters/riin_dark.png",
-            neutral: "assets/images/characters/riin_normal.png",     // alias: 무표정
+            neutral: "assets/images/characters/riin_neutral.png",
             casual: "assets/images/characters/riin_normal.png",      // alias: 평상시
             pain: "assets/images/characters/riin_cold.png",          // alias: 고통/죄책감
             relief: "assets/images/characters/riin_smile.png"        // alias: 안도

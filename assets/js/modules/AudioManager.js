@@ -1900,8 +1900,74 @@ class AudioManager {
      * UI 클릭 — 부드러운 버블 팝 + 미세한 글라스 공명
      * 메뉴 버튼, 일반 UI 인터랙션용
      */
+    _playSoftUITap(options = {}) {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime + (options.delay || 0);
+        const volume = options.volume ?? 0.05;
+        const frequency = options.frequency ?? 340;
+        const endFrequency = options.endFrequency ?? 220;
+        const duration = options.duration ?? 0.055;
+
+        const master = this._createSFXGain(1);
+        const filter = this.ctx.createBiquadFilter();
+        filter.type = 'lowpass';
+        filter.frequency.value = options.lowpass ?? 700;
+        filter.Q.value = 0.45;
+        filter.connect(master);
+
+        const osc = this.ctx.createOscillator();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(frequency, now);
+        osc.frequency.exponentialRampToValueAtTime(endFrequency, now + Math.max(0.01, duration * 0.75));
+
+        const gain = this.ctx.createGain();
+        gain.gain.setValueAtTime(0, now);
+        gain.gain.linearRampToValueAtTime(volume, now + Math.min(0.008, duration * 0.25));
+        gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+
+        osc.connect(gain);
+        gain.connect(filter);
+        osc.start(now);
+        osc.stop(now + duration + 0.01);
+    }
+
+    _playSoftUIChord(notes, options = {}) {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const master = this._createSFXGain(1);
+        const filter = this.ctx.createBiquadFilter();
+        filter.type = 'lowpass';
+        filter.frequency.value = options.lowpass ?? 1100;
+        filter.Q.value = 0.5;
+        filter.connect(master);
+
+        notes.forEach(note => {
+            const start = now + (note.delay || 0);
+            const duration = note.duration ?? 0.14;
+            const volume = note.volume ?? 0.05;
+            const osc = this.ctx.createOscillator();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(note.frequency, start);
+            if (note.endFrequency) {
+                osc.frequency.exponentialRampToValueAtTime(note.endFrequency, start + duration * 0.75);
+            }
+
+            const gain = this.ctx.createGain();
+            gain.gain.setValueAtTime(0, start);
+            gain.gain.linearRampToValueAtTime(volume, start + Math.min(0.012, duration * 0.2));
+            gain.gain.exponentialRampToValueAtTime(0.001, start + duration);
+
+            osc.connect(gain);
+            gain.connect(filter);
+            osc.start(start);
+            osc.stop(start + duration + 0.02);
+        });
+    }
+
     playUIClick() {
         if (!this.ctx) return;
+        this._playSoftUITap({ volume: 0.055, frequency: 340, endFrequency: 220, duration: 0.06 });
+        return;
         const now = this.ctx.currentTime;
         const vol = 0.22;
 
@@ -1970,6 +2036,8 @@ class AudioManager {
      */
     playUIDialogueAdvance() {
         if (!this.ctx) return;
+        this._playSoftUITap({ volume: 0.032, frequency: 300, endFrequency: 210, duration: 0.045, lowpass: 560 });
+        return;
         const now = this.ctx.currentTime;
         const vol = 0.11;
 
@@ -2017,6 +2085,11 @@ class AudioManager {
      */
     playUIChoiceSelect() {
         if (!this.ctx) return;
+        this._playSoftUIChord([
+            { frequency: 440, duration: 0.09, volume: 0.055 },
+            { frequency: 660, delay: 0.045, duration: 0.14, volume: 0.05 }
+        ], { lowpass: 1050 });
+        return;
         const now = this.ctx.currentTime;
         const vol = 0.2;
 
@@ -2082,6 +2155,11 @@ class AudioManager {
      */
     playUISaveConfirm() {
         if (!this.ctx) return;
+        this._playSoftUIChord([
+            { frequency: 392, duration: 0.12, volume: 0.052 },
+            { frequency: 523.25, delay: 0.085, duration: 0.16, volume: 0.048 }
+        ], { lowpass: 1000 });
+        return;
         const now = this.ctx.currentTime;
         const vol = 0.18;
 
@@ -2145,6 +2223,12 @@ class AudioManager {
      */
     playUILoadConfirm() {
         if (!this.ctx) return;
+        this._playSoftUIChord([
+            { frequency: 330, duration: 0.09, volume: 0.046 },
+            { frequency: 392, delay: 0.07, duration: 0.11, volume: 0.046 },
+            { frequency: 494, delay: 0.14, duration: 0.16, volume: 0.044 }
+        ], { lowpass: 950 });
+        return;
         const now = this.ctx.currentTime;
         const vol = 0.18;
 
@@ -2195,6 +2279,8 @@ class AudioManager {
      */
     playUIHover() {
         if (!this.ctx) return;
+        this._playSoftUITap({ volume: 0.018, frequency: 280, endFrequency: 240, duration: 0.025, lowpass: 520 });
+        return;
         const now = this.ctx.currentTime;
         const vol = 0.08;
 
@@ -2231,6 +2317,8 @@ class AudioManager {
      */
     playUIMenuOpen() {
         if (!this.ctx) return;
+        this._playSoftUITap({ volume: 0.045, frequency: 300, endFrequency: 460, duration: 0.11, lowpass: 900 });
+        return;
         const now = this.ctx.currentTime;
         const vol = 0.15;
 
@@ -2268,6 +2356,8 @@ class AudioManager {
      */
     playUIMenuClose() {
         if (!this.ctx) return;
+        this._playSoftUITap({ volume: 0.04, frequency: 460, endFrequency: 280, duration: 0.09, lowpass: 850 });
+        return;
         const now = this.ctx.currentTime;
         const vol = 0.12;
 

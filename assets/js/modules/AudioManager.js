@@ -1903,32 +1903,84 @@ class AudioManager {
     _playSoftUITap(options = {}) {
         if (!this.ctx) return;
         const now = this.ctx.currentTime + (options.delay || 0);
-        const volume = options.volume ?? 0.05;
-        const frequency = options.frequency ?? 340;
-        const endFrequency = options.endFrequency ?? 220;
-        const duration = options.duration ?? 0.055;
+        const volume = options.volume ?? 0.055;
+        const frequency = options.frequency ?? 360;
+        const endFrequency = options.endFrequency ?? 230;
+        const duration = options.duration ?? 0.075;
 
-        const master = this._createSFXGain(1);
-        const filter = this.ctx.createBiquadFilter();
-        filter.type = 'lowpass';
-        filter.frequency.value = options.lowpass ?? 700;
-        filter.Q.value = 0.45;
-        filter.connect(master);
+        const out = this._createSFXGain(1);
+        const bodyFilter = this.ctx.createBiquadFilter();
+        bodyFilter.type = 'lowpass';
+        bodyFilter.frequency.value = options.lowpass ?? 900;
+        bodyFilter.Q.value = 0.55;
+        bodyFilter.connect(out);
 
-        const osc = this.ctx.createOscillator();
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(frequency, now);
-        osc.frequency.exponentialRampToValueAtTime(endFrequency, now + Math.max(0.01, duration * 0.75));
+        const tailDelay = this.ctx.createDelay(0.2);
+        tailDelay.delayTime.value = options.tailDelay ?? 0.045;
+        const tailGain = this._createSFXGain(options.tailVolume ?? volume * 0.18);
+        tailDelay.connect(tailGain);
 
-        const gain = this.ctx.createGain();
-        gain.gain.setValueAtTime(0, now);
-        gain.gain.linearRampToValueAtTime(volume, now + Math.min(0.008, duration * 0.25));
-        gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+        const body = this.ctx.createOscillator();
+        body.type = options.wave || 'triangle';
+        body.frequency.setValueAtTime(frequency, now);
+        body.frequency.exponentialRampToValueAtTime(endFrequency, now + Math.max(0.012, duration * 0.72));
+        const bodyGain = this.ctx.createGain();
+        bodyGain.gain.setValueAtTime(0.001, now);
+        bodyGain.gain.linearRampToValueAtTime(volume, now + Math.min(0.012, duration * 0.22));
+        bodyGain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+        body.connect(bodyGain);
+        bodyGain.connect(bodyFilter);
+        bodyGain.connect(tailDelay);
+        body.start(now);
+        body.stop(now + duration + 0.02);
 
-        osc.connect(gain);
-        gain.connect(filter);
-        osc.start(now);
-        osc.stop(now + duration + 0.01);
+        const felt = this.ctx.createOscillator();
+        felt.type = 'sine';
+        felt.frequency.setValueAtTime((options.feltFrequency || frequency * 0.5), now + 0.004);
+        felt.frequency.exponentialRampToValueAtTime((options.feltEndFrequency || endFrequency * 0.55), now + duration * 0.9);
+        const feltGain = this.ctx.createGain();
+        feltGain.gain.setValueAtTime(0.001, now + 0.004);
+        feltGain.gain.linearRampToValueAtTime(volume * 0.34, now + 0.014);
+        feltGain.gain.exponentialRampToValueAtTime(0.001, now + duration + 0.025);
+        felt.connect(feltGain);
+        feltGain.connect(bodyFilter);
+        felt.start(now + 0.004);
+        felt.stop(now + duration + 0.035);
+
+        const accent = this.ctx.createOscillator();
+        accent.type = 'sine';
+        accent.frequency.setValueAtTime(options.accentFrequency ?? Math.min(1500, frequency * 2.25), now + 0.002);
+        const accentFilter = this.ctx.createBiquadFilter();
+        accentFilter.type = 'lowpass';
+        accentFilter.frequency.value = options.accentLowpass ?? 1450;
+        accentFilter.Q.value = 0.5;
+        const accentGain = this.ctx.createGain();
+        accentGain.gain.setValueAtTime(0.001, now + 0.002);
+        accentGain.gain.linearRampToValueAtTime(volume * (options.accentVolume ?? 0.16), now + 0.008);
+        accentGain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+        accent.connect(accentFilter);
+        accentFilter.connect(accentGain);
+        accentGain.connect(out);
+        accent.start(now + 0.002);
+        accent.stop(now + 0.045);
+
+        if (options.texture !== false) {
+            const texture = this.ctx.createBufferSource();
+            texture.buffer = this._createNoiseBuffer(options.textureDuration ?? 0.055);
+            const texFilter = this.ctx.createBiquadFilter();
+            texFilter.type = 'bandpass';
+            texFilter.frequency.value = options.textureFrequency ?? 1050;
+            texFilter.Q.value = options.textureQ ?? 0.6;
+            const texGain = this.ctx.createGain();
+            texGain.gain.setValueAtTime(0.001, now);
+            texGain.gain.linearRampToValueAtTime(volume * (options.textureVolume ?? 0.08), now + 0.012);
+            texGain.gain.exponentialRampToValueAtTime(0.001, now + (options.textureDuration ?? 0.055));
+            texture.connect(texFilter);
+            texFilter.connect(texGain);
+            texGain.connect(out);
+            texture.start(now);
+            texture.stop(now + (options.textureDuration ?? 0.055));
+        }
     }
 
     _playSoftUIChord(notes, options = {}) {
@@ -1937,16 +1989,21 @@ class AudioManager {
         const master = this._createSFXGain(1);
         const filter = this.ctx.createBiquadFilter();
         filter.type = 'lowpass';
-        filter.frequency.value = options.lowpass ?? 1100;
-        filter.Q.value = 0.5;
+        filter.frequency.value = options.lowpass ?? 1350;
+        filter.Q.value = 0.55;
         filter.connect(master);
+
+        const tailDelay = this.ctx.createDelay(0.3);
+        tailDelay.delayTime.value = options.tailDelay ?? 0.075;
+        const tailGain = this._createSFXGain(options.tailVolume ?? 0.012);
+        tailDelay.connect(tailGain);
 
         notes.forEach(note => {
             const start = now + (note.delay || 0);
             const duration = note.duration ?? 0.14;
             const volume = note.volume ?? 0.05;
             const osc = this.ctx.createOscillator();
-            osc.type = 'sine';
+            osc.type = note.wave || 'sine';
             osc.frequency.setValueAtTime(note.frequency, start);
             if (note.endFrequency) {
                 osc.frequency.exponentialRampToValueAtTime(note.endFrequency, start + duration * 0.75);
@@ -1959,9 +2016,42 @@ class AudioManager {
 
             osc.connect(gain);
             gain.connect(filter);
+            gain.connect(tailDelay);
             osc.start(start);
             osc.stop(start + duration + 0.02);
+
+            if (note.harmonic !== false) {
+                const harmonic = this.ctx.createOscillator();
+                harmonic.type = 'sine';
+                harmonic.frequency.setValueAtTime(note.frequency * (note.harmonicRatio || 1.5), start + 0.004);
+                const hGain = this.ctx.createGain();
+                hGain.gain.setValueAtTime(0.001, start + 0.004);
+                hGain.gain.linearRampToValueAtTime(volume * (note.harmonicVolume ?? 0.18), start + 0.016);
+                hGain.gain.exponentialRampToValueAtTime(0.001, start + duration * 0.72);
+                harmonic.connect(hGain);
+                hGain.connect(filter);
+                harmonic.start(start + 0.004);
+                harmonic.stop(start + duration * 0.78);
+            }
         });
+
+        if (options.texture !== false) {
+            const texture = this.ctx.createBufferSource();
+            texture.buffer = this._createNoiseBuffer(options.textureDuration ?? 0.09);
+            const texFilter = this.ctx.createBiquadFilter();
+            texFilter.type = 'bandpass';
+            texFilter.frequency.value = options.textureFrequency ?? 850;
+            texFilter.Q.value = 0.55;
+            const texGain = this.ctx.createGain();
+            texGain.gain.setValueAtTime(0.001, now);
+            texGain.gain.linearRampToValueAtTime(options.textureVolume ?? 0.006, now + 0.018);
+            texGain.gain.exponentialRampToValueAtTime(0.001, now + (options.textureDuration ?? 0.09));
+            texture.connect(texFilter);
+            texFilter.connect(texGain);
+            texGain.connect(master);
+            texture.start(now);
+            texture.stop(now + (options.textureDuration ?? 0.09));
+        }
     }
 
     playUIClick() {

@@ -107,7 +107,7 @@ const CONFIG = {
         yuna: {
             normal: "assets/images/characters/yuna_normal.png",
             smile: "assets/images/characters/yuna_smile.png",
-            shy: "assets/images/characters/yuna_smile.png",          // alias: 수줍은 미소
+            shy: "assets/images/characters/yuna_shy.png",
             scared: "assets/images/characters/yuna_scared.png",
             desperate: "assets/images/characters/yuna_desperate.png",
             cry: "assets/images/characters/yuna_cry.png",

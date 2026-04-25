@@ -1,103 +1,115 @@
 {
-    "day1_night_start": {
-        "name": "Me",
-        "text": "*I'm home. I cook some instant noodles and think back on the day.*"
-    },
-    "day1_night_home_2": {
-        "name": "Me",
-        "text": "*Sea, Ms. Eunsu, Ms. Riin, Yuna...*"
-    },
-    "day1_night_home_3": {
-        "name": "Me",
-        "text": "*They were all good people.*"
-    },
-
-    "day1_night_phone_1": {
-        "name": "Me",
-        "text": "*I check my phone.*"
-    },
-    "day1_night_phone_2": {
-        "name": "Me",
-        "text": "*The group chat from my old school. The message I sent this morning -- 'I transferred, take care everyone~'*"
-    },
-    "day1_night_phone_3": {
-        "name": "Me",
-        "text": "*...Nobody has read it. Read by 0.*"
-    },
-    "day1_night_phone_4": {
-        "name": "Me",
-        "text": "*I also sent a personal message to my close friend Minsu. 'Hey Minsu, I transferred! This school is huge' -- still no reply.*"
-    },
-    "day1_night_phone_5": {
-        "name": "Me",
-        "text": "*...Well, he'll reply by tomorrow.*"
-    },
-
-    "day1_night_phone_6": {
-        "name": "Me",
-        "text": "*Instead, I have messages from Sea.*"
-    },
-    "day1_night_sea_1": {
-        "name": "Han Sea",
-        "text": "Today was fun!"
-    },
-    "day1_night_sea_2": {
-        "name": "Han Sea",
-        "text": "What do you want in your lunchbox tomorrow?"
-    },
-    "day1_night_sea_3": {
-        "name": "Han Sea",
-        "text": "Taking requests lol"
-    },
-    "day1_night_sea_4": {
-        "name": "",
-        "text": ""
-    },
-
-    "day1_night_sea_reply": {
-        "name": "Me",
-        "text": "*What should I reply?*",
-        "choices": [
-            "'Hmm~ how about chicken katsu?' (specific reply)",
-            "'I'll eat anything lol' (casual reply)",
-            "(Don't reply)"
-        ]
-    },
-    "day1_night_sea_reply_1": {
-        "name": "Han Sea",
-        "text": "Ooh nice! Look forward to it tomorrow <3"
-    },
-    "day1_night_sea_reply_2": {
-        "name": "Han Sea",
-        "text": "Lol okay~ don't be surprised tomorrow!"
-    },
-    "day1_night_sea_reply_3": {
-        "name": "",
-        "text": ""
-    },
-
-    "day1_night_sleep_1": {
-        "name": "Me",
-        "text": "*I lie in bed and stare at the ceiling.*"
-    },
-    "day1_night_sleep_2": {
-        "name": "Me",
-        "text": "*...I think I can get used to this. This school.*"
-    },
-    "day1_night_sleep_3": {
-        "name": "Me",
-        "text": "*I close my eyes. I'm tired.*"
-    },
-    "day1_night_sleep_4": {
-        "name": "Me",
-        "text": "*...Just before falling asleep, a strange sensation washed over me. That stain on the ceiling -- it looks like a familiar shape.*"
-    },
-    "day1_night_sleep_5": {
-        "name": "Me",
-        "text": "*...All apartment ceilings probably look the same. I closed my eyes.*"
-    },
-    "day1_night_end": {
-        "name": "",
-        "text": "*-- End of Day 1 --*"
-    }
+  "day1_night_start": {
+    "name": "Me",
+    "text": "*I'm home. I cook some instant noodles and think back on the day.*"
+  },
+  "day1_night_home_2": {
+    "name": "Me",
+    "text": "*Sea, Ms. Eunsu, Ms. Riin, Yuna...*"
+  },
+  "day1_night_home_3": {
+    "name": "Me",
+    "text": "*They were all good people.*"
+  },
+  "day1_night_phone_1": {
+    "name": "Me",
+    "text": "*I check my phone.*"
+  },
+  "day1_night_phone_2": {
+    "name": "Me",
+    "text": "*The group chat from my old school. The message I sent this morning -- 'I transferred, take care everyone~'*"
+  },
+  "day1_night_phone_3": {
+    "name": "Me",
+    "text": "*...Nobody has read it. Read by 0.*"
+  },
+  "day1_night_phone_4": {
+    "name": "Me",
+    "text": "*I also sent a personal message to my close friend Minsu. 'Hey Minsu, I transferred! This school is huge' -- still no reply.*"
+  },
+  "day1_night_phone_5": {
+    "name": "Me",
+    "text": "*...Well, he'll reply by tomorrow.*"
+  },
+  "day1_night_phone_6": {
+    "name": "Me",
+    "text": "*Instead, I have messages from Sea.*"
+  },
+  "day1_night_sea_1": {
+    "name": "Han Sea",
+    "text": "Today was fun!"
+  },
+  "day1_night_sea_2": {
+    "name": "Han Sea",
+    "text": "What do you want in your lunchbox tomorrow?"
+  },
+  "day1_night_sea_3": {
+    "name": "Han Sea",
+    "text": "Taking requests lol"
+  },
+  "day1_night_sea_4": {
+    "name": "",
+    "text": ""
+  },
+  "day1_night_sea_reply": {
+    "name": "Me",
+    "text": "*What should I reply?*",
+    "choices": [
+      "'Hmm~ how about chicken katsu?' (specific reply)",
+      "'I'll eat anything lol' (casual reply)",
+      "(Don't reply)"
+    ]
+  },
+  "day1_night_sea_reply_1": {
+    "name": "Han Sea",
+    "text": "Ooh nice! Look forward to it tomorrow <3"
+  },
+  "day1_night_sea_reply_2": {
+    "name": "Han Sea",
+    "text": "Lol okay~ don't be surprised tomorrow!"
+  },
+  "day1_night_sea_reply_3": {
+    "name": "",
+    "text": ""
+  },
+  "day1_night_sleep_1": {
+    "name": "Me",
+    "text": "*I lie in bed and stare at the ceiling.*"
+  },
+  "day1_night_sleep_2": {
+    "name": "Me",
+    "text": "*...I think I can get used to this. This school.*"
+  },
+  "day1_night_sleep_3": {
+    "name": "Me",
+    "text": "*I close my eyes. I'm tired.*"
+  },
+  "day1_night_sleep_4": {
+    "name": "Me",
+    "text": "*...Just before falling asleep, a strange sensation washed over me. That stain on the ceiling -- it looks like a familiar shape.*"
+  },
+  "day1_night_sleep_5": {
+    "name": "Me",
+    "text": "*...All apartment ceilings probably look the same. I closed my eyes.*"
+  },
+  "day1_night_end": {
+    "name": "",
+    "text": "*-- End of Day 1 --*"
+  },
+  "day1_night_key_1": {
+    "text": "*...Half-asleep, I heard something from the front door. A faint sound. Like a key turning in the lock.*",
+    "name": "Me"
+  },
+  "day1_night_key_2": {
+    "text": "*...Was it a dream? I half-opened my eyes. Darkness. Couldn't see a thing. The door was still closed.*",
+    "name": "Me"
+  },
+  "day1_night_key_3": {
+    "text": "*Checked the clock. 2:14 AM. ...I live alone, so there's no way I'd hear a key. Must've been the neighbors.*",
+    "name": "Me"
+  },
+  "day1_night_key_4": {
+    "text": "*Closed my eyes again.*",
+    "name": "Me"
+  }
 }

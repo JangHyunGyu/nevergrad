@@ -890,6 +890,10 @@
         "name": "",
         "text": "*화면 우측 하단에 작게: cycle_01*"
     },
+    "day5_xover_preview_heroine": {
+        "name": "",
+        "text": "*기록 메타데이터:*\n*공략 대상: {cupid_heroine}*\n*피험자 순응도: {cupid_compliance}*\n\n*...당신은 그때, 누구를 골랐었지.*"
+    },
     "day5_xover_preview_5": {
         "name": "",
         "text": "*모니터가 꺼졌다.*"
@@ -930,6 +934,14 @@
     "day5_observer_8": {
         "name": "",
         "text": "비고:\n\n관찰자는 피험자 #13의 5일간을 시청하였음.\n관찰자는 피험자의 대화 상대를 선택하였음.\n관찰자는 피험자의 감정적 유대 대상을 결정하였음.\n관찰자는 피험자가 공포를 느끼는 순간을 지켜보았음.\n관찰자는 피험자의 탈출 여부를 결정하였음.\n\n질문:\n은수 박은수는 13번의 주기를 설계하고 관찰하였습니다.\n당신은 {play_time} 동안 {name}의 삶을 관찰하였습니다.\n\n차이가 무엇입니까?"
+    },
+    "day5_observer_cupid_check": {
+        "name": "",
+        "text": ""
+    },
+    "day5_observer_cupid_extra": {
+        "name": "",
+        "text": "추가 기록:\n\n관찰자는 이전 주기 환경 시뮬레이션(PROJECT CUPID)에도 참여한 기록이 있음.\nCUPID 내 순응도 데이터: {cupid_compliance}\n공략 대상: {cupid_heroine}\n\n해석:\n관찰자는 피험자의 \"이상적 환경\"을 직접 체험하였음.\n관찰자가 CUPID에서 선택한 히로인 = 연구소가 피험자에게 주입하려던 감정 패턴.\n관찰자는 실험 설계를 — 즐겼습니다."
     },
     "day5_observer_9": {
         "name": "",

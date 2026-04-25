@@ -165,7 +165,11 @@ class GameEngine {
             this.state.resumeRun();
             this._endingReached = false;
             // Cupid 크로스오버 플래그 설정 (세이브 데이터에 포함되지 않으므로 매번 감지)
-            if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
+            if (this.crossover?.hasPlayedCupid()) {
+                this.state.setFlag('cupid_played');
+                const heroine = this.crossover.getData?.()?.heroine;
+                if (heroine) this.state.setFlag(`cupid_heroine_${heroine}`);
+            }
             if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
             this.glitch.initConsoleEasterEgg(this.state.currentDay);
             if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
@@ -193,7 +197,11 @@ class GameEngine {
             this._endingReached = false;
 
             // Cupid 크로스오버 플래그 설정
-            if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
+            if (this.crossover?.hasPlayedCupid()) {
+                this.state.setFlag('cupid_played');
+                const heroine = this.crossover.getData?.()?.heroine;
+                if (heroine) this.state.setFlag(`cupid_heroine_${heroine}`);
+            }
             if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
 
             this.glitch.initConsoleEasterEgg(1);
@@ -1152,6 +1160,7 @@ class GameEngine {
             this.state.hasFlag('found_yuna_camera') ||
             (Array.isArray(this.state.evidence) && this.state.evidence.length > 0);
 
+        const xover = this.crossover?.getData?.() || {};
         return {
             play_time: this._formatPlayTime(this.state.getTotalPlayMs()),
             route_data: String(analytics.routeSelections?.sea || 0),
@@ -1159,8 +1168,24 @@ class GameEngine {
             riin_visits: String(analytics.riinVisits || analytics.routeSelections?.riin || 0),
             seolhwa_attempts: String(analytics.seolhwaAttempts || 0),
             evidence_data: this._formatEvidenceStatus(hasEvidence),
-            timer_data: this._formatTimedChoice(analytics.lastTimedChoice)
+            timer_data: this._formatTimedChoice(analytics.lastTimedChoice),
+            cupid_heroine: this._formatCupidHeroine(xover.heroine),
+            cupid_compliance: xover.compliance != null ? `${xover.compliance}%` : '—'
         };
+    }
+
+    _formatCupidHeroine(heroineId) {
+        if (!heroineId) return '—';
+        const lang = this.i18n.currentLang || 'ko';
+        const map = {
+            ko: { seoyeon: '서연', dain: '다인', yuna: '유나', jiwoo: '지우', haeun: '하은' },
+            en: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' },
+            ja: { seoyeon: 'ソヨン', dain: 'ダイン', yuna: 'ユナ', jiwoo: 'ジウ', haeun: 'ハウン' },
+            es: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' },
+            fr: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' },
+            de: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' }
+        };
+        return (map[lang] || map.ko)[heroineId] || heroineId;
     }
 
     _formatPlayTime(totalMs) {
@@ -1617,8 +1642,12 @@ class GameEngine {
                 this.state.resumeRun();
                 this._endingReached = false;
                 // Cupid 크로스오버 플래그 재설정
-                if (this.crossover?.hasPlayedCupid()) this.state.setFlag('cupid_played');
-            if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
+                if (this.crossover?.hasPlayedCupid()) {
+                    this.state.setFlag('cupid_played');
+                    const heroine = this.crossover.getData?.()?.heroine;
+                    if (heroine) this.state.setFlag(`cupid_heroine_${heroine}`);
+                }
+                if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
                 this.glitch.initConsoleEasterEgg(this.state.currentDay);
                 if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
                 this._hideOverlay('sl-overlay');

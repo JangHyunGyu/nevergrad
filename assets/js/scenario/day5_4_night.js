@@ -357,6 +357,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_xover_preview_4": {
         character: null,
+        next: "day5_xover_preview_heroine"
+    },
+    // ★ Cupid 공략 히로인 표시 (cupid_heroine별 분기)
+    "day5_xover_preview_heroine": {
+        character: null,
+        dynamicData: true,
+        typingSpeed: 30,
         next: "day5_xover_preview_5"
     },
     // cycle_01 표시 + 페이드아웃
@@ -467,6 +474,22 @@ Object.assign(SCENARIO[5], {
         monospace: true,
         typingSpeed: 25,
         dynamicData: true,
+        next: "day5_observer_cupid_check"
+    },
+    // ★ Cupid 플레이어에게만 추가 행 노출 (CROSSOVER.md 365-376)
+    "day5_observer_cupid_check": {
+        character: null,
+        condition: "cupid_played",
+        fallback: "day5_observer_9",
+        next: "day5_observer_cupid_extra"
+    },
+    "day5_observer_cupid_extra": {
+        character: null,
+        monospace: true,
+        typingSpeed: 25,
+        dynamicData: true,
+        autoAdvance: true,
+        autoAdvanceDelay: 6000,
         next: "day5_observer_9"
     },
     "day5_observer_9": {

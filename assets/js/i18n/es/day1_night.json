@@ -1,103 +1,115 @@
 {
-    "day1_night_start": {
-        "name": "Yo",
-        "text": "*Llegue a casa. Cocino unos fideos instantaneos y repaso el dia.*"
-    },
-    "day1_night_home_2": {
-        "name": "Yo",
-        "text": "*Sea, la profesora Eunsu, la profesora Riin, Yuna...*"
-    },
-    "day1_night_home_3": {
-        "name": "Yo",
-        "text": "*Todos fueron buenas personas.*"
-    },
-
-    "day1_night_phone_1": {
-        "name": "Yo",
-        "text": "*Reviso mi celular.*"
-    },
-    "day1_night_phone_2": {
-        "name": "Yo",
-        "text": "*El chat grupal de mi escuela anterior. El mensaje que envie esta manana -- 'Me transfiero, cuidanse~'*"
-    },
-    "day1_night_phone_3": {
-        "name": "Yo",
-        "text": "*...Nadie lo ha leido. Leido por 0.*"
-    },
-    "day1_night_phone_4": {
-        "name": "Yo",
-        "text": "*Tambien le envie un mensaje privado a mi amigo cercano Minsu. 'Ey Minsu, me transfiero! Esta escuela es enorme' -- todavia sin respuesta.*"
-    },
-    "day1_night_phone_5": {
-        "name": "Yo",
-        "text": "*...Bueno, manana respondera.*"
-    },
-
-    "day1_night_phone_6": {
-        "name": "Yo",
-        "text": "*En cambio, tengo mensajes de Sea.*"
-    },
-    "day1_night_sea_1": {
-        "name": "Han Sea",
-        "text": "Hoy fue divertido!"
-    },
-    "day1_night_sea_2": {
-        "name": "Han Sea",
-        "text": "Que quieres en tu almuerzo de manana?"
-    },
-    "day1_night_sea_3": {
-        "name": "Han Sea",
-        "text": "Acepto pedidos jaja"
-    },
-    "day1_night_sea_4": {
-        "name": "",
-        "text": ""
-    },
-
-    "day1_night_sea_reply": {
-        "name": "Yo",
-        "text": "*Que le contesto?*",
-        "choices": [
-            "'Mmm que tal milanesa de pollo?' (respuesta especifica)",
-            "'Como de todo jaja' (respuesta casual)",
-            "(No responder)"
-        ]
-    },
-    "day1_night_sea_reply_1": {
-        "name": "Han Sea",
-        "text": "Oh genial! Esperalo manana <3"
-    },
-    "day1_night_sea_reply_2": {
-        "name": "Han Sea",
-        "text": "Jaja esta bien~ no te sorprendas manana!"
-    },
-    "day1_night_sea_reply_3": {
-        "name": "",
-        "text": ""
-    },
-
-    "day1_night_sleep_1": {
-        "name": "Yo",
-        "text": "*Me acuesto en la cama y miro el techo.*"
-    },
-    "day1_night_sleep_2": {
-        "name": "Yo",
-        "text": "*...Creo que puedo acostumbrarme. A esta escuela.*"
-    },
-    "day1_night_sleep_3": {
-        "name": "Yo",
-        "text": "*Cierro los ojos. Estoy cansado.*"
-    },
-    "day1_night_sleep_4": {
-        "name": "Yo",
-        "text": "*...Justo antes de quedarme dormido, una sensacion extrana me recorrio. Esa mancha en el techo -- tiene una forma que me resulta familiar.*"
-    },
-    "day1_night_sleep_5": {
-        "name": "Yo",
-        "text": "*...Los techos de los departamentos se parecen todos. Cerre los ojos.*"
-    },
-    "day1_night_end": {
-        "name": "",
-        "text": "*-- Fin del Dia 1 --*"
-    }
+  "day1_night_start": {
+    "name": "Yo",
+    "text": "*Llegue a casa. Cocino unos fideos instantaneos y repaso el dia.*"
+  },
+  "day1_night_home_2": {
+    "name": "Yo",
+    "text": "*Sea, la profesora Eunsu, la profesora Riin, Yuna...*"
+  },
+  "day1_night_home_3": {
+    "name": "Yo",
+    "text": "*Todos fueron buenas personas.*"
+  },
+  "day1_night_phone_1": {
+    "name": "Yo",
+    "text": "*Reviso mi celular.*"
+  },
+  "day1_night_phone_2": {
+    "name": "Yo",
+    "text": "*El chat grupal de mi escuela anterior. El mensaje que envie esta manana -- 'Me transfiero, cuidanse~'*"
+  },
+  "day1_night_phone_3": {
+    "name": "Yo",
+    "text": "*...Nadie lo ha leido. Leido por 0.*"
+  },
+  "day1_night_phone_4": {
+    "name": "Yo",
+    "text": "*Tambien le envie un mensaje privado a mi amigo cercano Minsu. 'Ey Minsu, me transfiero! Esta escuela es enorme' -- todavia sin respuesta.*"
+  },
+  "day1_night_phone_5": {
+    "name": "Yo",
+    "text": "*...Bueno, manana respondera.*"
+  },
+  "day1_night_phone_6": {
+    "name": "Yo",
+    "text": "*En cambio, tengo mensajes de Sea.*"
+  },
+  "day1_night_sea_1": {
+    "name": "Han Sea",
+    "text": "Hoy fue divertido!"
+  },
+  "day1_night_sea_2": {
+    "name": "Han Sea",
+    "text": "Que quieres en tu almuerzo de manana?"
+  },
+  "day1_night_sea_3": {
+    "name": "Han Sea",
+    "text": "Acepto pedidos jaja"
+  },
+  "day1_night_sea_4": {
+    "name": "",
+    "text": ""
+  },
+  "day1_night_sea_reply": {
+    "name": "Yo",
+    "text": "*Que le contesto?*",
+    "choices": [
+      "'Mmm que tal milanesa de pollo?' (respuesta especifica)",
+      "'Como de todo jaja' (respuesta casual)",
+      "(No responder)"
+    ]
+  },
+  "day1_night_sea_reply_1": {
+    "name": "Han Sea",
+    "text": "Oh genial! Esperalo manana <3"
+  },
+  "day1_night_sea_reply_2": {
+    "name": "Han Sea",
+    "text": "Jaja esta bien~ no te sorprendas manana!"
+  },
+  "day1_night_sea_reply_3": {
+    "name": "",
+    "text": ""
+  },
+  "day1_night_sleep_1": {
+    "name": "Yo",
+    "text": "*Me acuesto en la cama y miro el techo.*"
+  },
+  "day1_night_sleep_2": {
+    "name": "Yo",
+    "text": "*...Creo que puedo acostumbrarme. A esta escuela.*"
+  },
+  "day1_night_sleep_3": {
+    "name": "Yo",
+    "text": "*Cierro los ojos. Estoy cansado.*"
+  },
+  "day1_night_sleep_4": {
+    "name": "Yo",
+    "text": "*...Justo antes de quedarme dormido, una sensacion extrana me recorrio. Esa mancha en el techo -- tiene una forma que me resulta familiar.*"
+  },
+  "day1_night_sleep_5": {
+    "name": "Yo",
+    "text": "*...Los techos de los departamentos se parecen todos. Cerre los ojos.*"
+  },
+  "day1_night_end": {
+    "name": "",
+    "text": "*-- Fin del Dia 1 --*"
+  },
+  "day1_night_key_1": {
+    "text": "*...Cuando estaba medio dormido/a, se oyó un ruido desde la entrada. Un ruido pequeño. Como si una llave girara.*",
+    "name": "Yo"
+  },
+  "day1_night_key_2": {
+    "text": "*...¿Será un sueño? Abrí los ojos a medias. Oscuridad. No se ve nada. La puerta está cerrada.*",
+    "name": "Yo"
+  },
+  "day1_night_key_3": {
+    "text": "*Miré el reloj. Las 2:14 de la madrugada. ...Siendo mi apartamento, no debería haber ruido de llave. Debió ser el ruido de la habitación de al lado.*",
+    "name": "Yo"
+  },
+  "day1_night_key_4": {
+    "text": "*Volví a cerrar los ojos.*",
+    "name": "Yo"
+  }
 }

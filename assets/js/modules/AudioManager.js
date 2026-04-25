@@ -171,8 +171,24 @@ class AudioManager {
             return this._bufferCache.get(path);
         }
 
-        // BGM 합성 레지스트리 확인 (파일 fetch 전에 synth 시도)
+        // Prefer real audio files; synth is used as a fallback below.
         const filename = path.split('/').pop().replace(/\.[^.]+$/, '');
+        let fileLoadError = null;
+
+        try {
+            const response = await fetch(path);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            const arrayBuffer = await response.arrayBuffer();
+            const audioBuffer = await this.ctx.decodeAudioData(arrayBuffer);
+            this._bufferCache.set(path, audioBuffer);
+            return audioBuffer;
+        } catch (e) {
+            fileLoadError = e;
+        }
+
+        // File failed or does not exist: fall back to procedural BGM synth.
         if (this._bgmSynthRegistry && this._bgmSynthRegistry[filename]) {
             try {
                 const buffer = await this._bgmSynthRegistry[filename]();
@@ -185,14 +201,8 @@ class AudioManager {
             }
         }
 
-        try {
-            const response = await fetch(path);
-            const arrayBuffer = await response.arrayBuffer();
-            const audioBuffer = await this.ctx.decodeAudioData(arrayBuffer);
-            this._bufferCache.set(path, audioBuffer);
-            return audioBuffer;
-        } catch (e) {
-            console.warn(`[AudioManager] Failed to load: ${path}`, e);
+        if (fileLoadError) {
+            console.warn(`[AudioManager] Failed to load: ${path}`, fileLoadError);
             return null;
         }
     }

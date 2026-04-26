@@ -107,7 +107,7 @@ function playTitleIntro() {
 
     window.__nevergradTitleMenuTimer = window.setTimeout(() => {
         titleScreen?.classList.add('title-intro-complete');
-    }, 1500);
+    }, 2500);
 }
 
 window.playNevergradTitleIntro = playTitleIntro;
@@ -124,8 +124,8 @@ function initializeTitleLineup() {
         { id: 'title-char-riin', name: 'riin', src: 'assets/images/characters/riin_smile.png' }
     ];
     const introOrder = { eunsu: 0, yuna: 1, sea: 2, seolhwa: 3, riin: 4 };
-    const introBaseDelay = 420;
-    const introStepDelay = 140;
+    const introBaseDelay = 520;
+    const introStepDelay = 220;
 
     let lineup = stage.querySelector('.title-character-lineup');
     if (!lineup) {

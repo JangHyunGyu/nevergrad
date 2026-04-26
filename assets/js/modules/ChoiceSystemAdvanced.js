@@ -489,10 +489,11 @@ class ChoiceSystemAdvanced {
         btn.style.transform = 'translateY(10px)';
         btn.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
 
-        // 지연 등장
+        // 지연 등장 — 등장과 동시에 pointer-events 활성화 (choice-ready 누락 시 클릭 불가 버그 방지)
         setTimeout(() => {
             btn.style.opacity = '1';
             btn.style.transform = 'translateY(0)';
+            btn.classList.add('choice-ready');
         }, 100 + index * 80);
 
         btn.addEventListener('click', () => {

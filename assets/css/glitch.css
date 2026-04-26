@@ -2311,6 +2311,79 @@ body.cursor-slowed * {
     }
 }
 
+/* 모바일 가로 모드 — 짧은 세로 높이에서 photo-deck-complete / locker-search-complete
+ * 버튼이 화면 밖으로 밀려 안 보이는 문제 방지 (유나 카메라/사물함 인터랙션) */
+@media (orientation: landscape) and (max-height: 500px) {
+    .photo-deck-shell,
+    .locker-search-shell {
+        width: min(96vw, 760px);
+        max-height: 96vh;
+        padding: 8px 12px;
+        gap: 6px;
+        overflow-y: auto;
+    }
+    .photo-deck-header {
+        gap: 8px;
+    }
+    .photo-deck-title {
+        font-size: 0.74rem;
+    }
+    .photo-deck-counter {
+        font-size: 0.7rem;
+    }
+    .photo-deck-viewport {
+        min-height: 0;
+        height: min(58vh, 220px);
+    }
+    .photo-deck-card {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 3 / 4;
+        padding: 12px 12px 10px;
+    }
+    .photo-deck-meta {
+        margin-top: 6px;
+        gap: 2px;
+    }
+    .photo-deck-name {
+        font-size: 0.86rem;
+    }
+    .photo-deck-tag,
+    .photo-deck-note {
+        font-size: 0.66rem;
+        line-height: 1.25;
+    }
+    .photo-deck-nav {
+        width: 30px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    .photo-deck-strip {
+        gap: 4px;
+    }
+    .photo-deck-dot {
+        width: 7px;
+        height: 7px;
+    }
+    .photo-deck-hint,
+    .locker-search-status {
+        font-size: 0.7rem;
+        min-height: 0;
+        line-height: 1.3;
+    }
+    .photo-deck-complete,
+    .locker-search-complete {
+        flex-shrink: 0;
+        padding: 7px 16px;
+        font-size: 0.78rem;
+    }
+    .locker-search-stage {
+        height: min(58vh, 220px);
+        gap: 6px;
+        padding: 6px;
+    }
+}
+
 /* ============================================================
  * temperatureDrop — 화면 전체 푸른 색조 + 서리
  * ============================================================ */

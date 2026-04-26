@@ -1129,7 +1129,7 @@ class GameEngine {
             this.glitchAdvanced.showMirrorReflection(g.characterAbsentInMirror);
         }
 
-        // ── Day 4 밤: 13장 증명사진 오버레이 + "나는 13번째 껍데기다"
+        // ── Day 4 밤: 13장 증명사진 오버레이 + 관리 시스템 라벨
         if (g.photoOverlay && this.glitchAdvanced) {
             this.glitchAdvanced.showPhotoOverlay({
                 photoSequence: g.photoSequence || [],

@@ -420,7 +420,7 @@ class MetaHorrorSystem {
     /**
      * 스크린샷/포커스 이탈 감지 초기화
      * - keydown: PrintScreen / Win+Shift+S 보조 감지
-     * - blur/focus: 캡처 도구 실행, Alt+Tab, 앱 전환 등 핵심 감지
+     * - blur/focus: 2회차/보너스에서만 반응
      */
     initScreenshotDetection() {
         if (this._screenshotHandler) return;
@@ -443,6 +443,7 @@ class MetaHorrorSystem {
 
         this._windowBlurHandler = () => {
             if (!this._screenshotScene || this._screenshotScene === 'complicit_sign') return;
+            if (!this._shouldReactToFocusExit()) return;
             this._showCaptureBlockOverlay();
         };
 
@@ -460,6 +461,15 @@ class MetaHorrorSystem {
      */
     setScreenshotContext(sceneContext) {
         this._screenshotScene = sceneContext;
+    }
+
+    _shouldReactToFocusExit() {
+        const state = this.engine?.state;
+        if (!state?.hasFlag) return false;
+        return state.hasFlag('new_game_plus')
+            || state.hasFlag('postgame_bonus')
+            || state.hasFlag('observer_graduated')
+            || state.hasFlag('observer_stayed');
     }
 
     /**

@@ -311,7 +311,7 @@ Object.assign(SCENARIO[5], {
     },
 
     // ══════════════════════════════════════
-    // 오른쪽: 리인 — "설탕물이야"
+    // 오른쪽: 리인 — "활성 성분 없음"
     // ══════════════════════════════════════
     "day5_lunch_right_1": {
         background: "old_infirmary",
@@ -383,7 +383,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         next: "day5_lunch_right_16"
     },
-    // ★ "설탕물이야."
+    // ★ "활성 성분 없어."
     "day5_lunch_right_16": {
         character: "riin_pain",
         glitch: { screenShake: true },

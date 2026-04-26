@@ -293,11 +293,12 @@ Object.assign(SCENARIO[5], {
         unskippable: true,
         metaEffect: "graduationSlots",
         glitch: { endingCreditSaveUI: "TRUE" },
-        next: "day5_xover_server_1"
+        next: "day5_postcredit_1"
     },
 
     // ══════════════════════════════════════════
-    // ★ 크로스오버: 연구소 서버 파일 (진엔딩 후)
+    // ★ 보너스/NG+ 전용: 연구소 서버 파일
+    // TRUE END 직후 자동 재생 금지. 감정선은 이사회 포스트크레딧에서 종료한다.
     // Cupid 플레이어: cycle_01.zip [정상] + PREVIEW 선택지
     // 비플레이어: cycle_01.zip [손상됨]
     // ══════════════════════════════════════════
@@ -305,6 +306,7 @@ Object.assign(SCENARIO[5], {
         background: "black",
         bgm: null,
         character: null,
+        setFlags: ["postgame_bonus_server"],
         typingSpeed: 40,
         next: "day5_xover_server_2"
     },
@@ -377,7 +379,7 @@ Object.assign(SCENARIO[5], {
         background: "black",
         bgm: null,
         character: null,
-        next: "day5_postcredit_1"
+        next: "day5_observer_1"
     },
 
     // ── 포스트 크레딧 ──
@@ -422,16 +424,21 @@ Object.assign(SCENARIO[5], {
     },
     "day5_postcredit_end": {
         character: null,
-        next: "day5_observer_1"
+        branches: [
+            { condition: "postgame_bonus_server", next: "day5_xover_server_1" },
+            { condition: "postgame_bonus_log", next: "day5_observer_1" }
+        ],
+        next: null
     },
 
     // ══════════════════════════════════════════
-    // ★ 관찰자 포스트크레딧 (TRUE END only)
+    // ★ 보너스/NG+ 전용 플레이 로그 분석
     // ══════════════════════════════════════════
     "day5_observer_1": {
         background: "black",
         bgm: null,
         character: null,
+        setFlags: ["postgame_bonus_log"],
         typingSpeed: 80,
         next: "day5_observer_2"
     },
@@ -476,10 +483,10 @@ Object.assign(SCENARIO[5], {
         dynamicData: true,
         next: "day5_observer_cupid_check"
     },
-    // ★ Cupid 플레이어에게만 추가 행 노출 (CROSSOVER.md 365-376)
+    // ★ Cupid + NG+ 플레이어에게만 추가 행 노출 (보너스 레이어)
     "day5_observer_cupid_check": {
         character: null,
-        condition: "cupid_played",
+        condition: ["cupid_played", "new_game_plus"],
         fallback: "day5_observer_9",
         next: "day5_observer_cupid_extra"
     },
@@ -833,7 +840,7 @@ Object.assign(SCENARIO[5], {
         //   - 은수 미소 longer duration
         //   - 설화 자리에 빈 교복 (주인 없는)
         // 3rd repeat: 0.5초간 텍스트 플래시
-        //   "관찰 기록: 피험자 순응 확인. 관찰자 체류 중."
+        //   "처리 기록: 피험자 잔류 확인. 내부 체류 지속."
         // 5th repeat: 은수가 카메라/플레이어를 정면으로 본다
         //   "...아직 보고 계시네요." → 화면 꺼짐
         cageRepeatEffects: {
@@ -843,7 +850,7 @@ Object.assign(SCENARIO[5], {
                 seolhwaSeatOverride: "empty_uniform"
             },
             3: {
-                flashText: "관찰 기록: 피험자 순응 확인. 관찰자 체류 중.",
+                flashText: "처리 기록: 피험자 잔류 확인. 내부 체류 지속.",
                 flashDuration: 500
             },
             5: {

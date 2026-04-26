@@ -28,11 +28,11 @@ Object.assign(SCENARIO[4], {
     },
 
     // ═══════════════════════════════════════
-    // ★ 크로스오버: 유나 단독 씬 (Cupid 플레이어 전용)
-    // Cupid 미플레이 → fallback(짧은 버전)으로 분기
+    // ★ 크로스오버: 유나 단독 씬 (Cupid + NG+ 전용)
+    // 1회차에서는 유나의 본편 역할(공식 기록 보조/증거 수집자)만 유지
     // ═══════════════════════════════════════
     "day4_xover_yuna_1": {
-        condition: ["cupid_played", "met_yuna"],
+        condition: ["cupid_played", "new_game_plus", "met_yuna"],
         fallback: "day4_xover_yuna_skip",
         background: "corridor",
         character: "yuna_cautious",
@@ -86,7 +86,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         next: "day4_after_choice"
     },
-    // ── met_yuna는 있지만 cupid_played가 없는 경우 ──
+    // ── met_yuna는 있지만 보너스 조건이 없는 경우 ──
     "day4_xover_yuna_skip_met": {
         background: "corridor",
         character: "yuna_normal",

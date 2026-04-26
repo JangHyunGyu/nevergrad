@@ -917,15 +917,15 @@
     },
     "day5_observer_4": {
         "name": "",
-        "text": "══════════════════════════════════════════\n  NEVERGRAD RESEARCH INSTITUTE\n  외부 관찰자 행동 기록\n══════════════════════════════════════════"
+        "text": "══════════════════════════════════════════\n  NEVERGRAD RESEARCH INSTITUTE\n  플레이 로그 분석 기록\n══════════════════════════════════════════"
     },
     "day5_observer_5": {
         "name": "",
-        "text": "*...외부 관찰자?*"
+        "text": "*...플레이 로그?*"
     },
     "day5_observer_6": {
         "name": "",
-        "text": "관찰 대상: 피험자 #13 ({name})\n관찰 기간: {play_time}\n관찰자 행동 요약:\n\n· 세아 루트 선택 횟수: {route_data}\n· 유나 접촉 여부: {met_yuna}\n· 리인 방문 횟수: {riin_visits}\n· 설화 대화 시도: {seolhwa_attempts}\n· 증거 확보 여부: {evidence_data}\n· 최종 선택까지 소요 시간: {timer_data}"
+        "text": "기록 대상: 피험자 #13 ({name})\n진행 시간: {play_time}\n선택 기록 요약:\n\n· 세아 루트 선택 횟수: {route_data}\n· 유나 접촉 여부: {met_yuna}\n· 리인 방문 횟수: {riin_visits}\n· 설화 대화 시도: {seolhwa_attempts}\n· 증거 확보 여부: {evidence_data}\n· 최종 선택까지 소요 시간: {timer_data}"
     },
     "day5_observer_7": {
         "name": "",
@@ -933,7 +933,7 @@
     },
     "day5_observer_8": {
         "name": "",
-        "text": "비고:\n\n관찰자는 피험자 #13의 5일간을 시청하였음.\n관찰자는 피험자의 대화 상대를 선택하였음.\n관찰자는 피험자의 감정적 유대 대상을 결정하였음.\n관찰자는 피험자가 공포를 느끼는 순간을 지켜보았음.\n관찰자는 피험자의 탈출 여부를 결정하였음.\n\n질문:\n은수 박은수는 13번의 주기를 설계하고 관찰하였습니다.\n당신은 {play_time} 동안 {name}의 삶을 관찰하였습니다.\n\n차이가 무엇입니까?"
+        "text": "비고:\n\n사용자는 피험자 #13의 5일간을 진행하였음.\n사용자는 피험자의 대화 상대를 선택하였음.\n사용자는 피험자의 감정적 유대 대상을 결정하였음.\n사용자는 피험자가 공포를 느끼는 순간에도 진행을 계속하였음.\n사용자는 피험자의 탈출 여부를 결정하였음.\n\n질문:\n박은수는 13번의 주기를 설계하고 관찰하였습니다.\n당신은 {play_time} 동안 {name}의 선택을 진행하였습니다.\n\n차이가 무엇입니까?"
     },
     "day5_observer_cupid_check": {
         "name": "",
@@ -941,7 +941,7 @@
     },
     "day5_observer_cupid_extra": {
         "name": "",
-        "text": "추가 기록:\n\n관찰자는 이전 주기 환경 시뮬레이션(PROJECT CUPID)에도 참여한 기록이 있음.\nCUPID 내 순응도 데이터: {cupid_compliance}\n공략 대상: {cupid_heroine}\n\n해석:\n관찰자는 피험자의 \"이상적 환경\"을 직접 체험하였음.\n관찰자가 CUPID에서 선택한 히로인 = 연구소가 피험자에게 주입하려던 감정 패턴.\n관찰자는 실험 설계를 — 즐겼습니다."
+        "text": "추가 기록:\n\n사용자는 이전 주기 환경 시뮬레이션(PROJECT CUPID)에도 참여한 기록이 있음.\nCUPID 내 순응도 데이터: {cupid_compliance}\n공략 대상: {cupid_heroine}\n\n해석:\n사용자는 피험자의 \"이상적 환경\"을 직접 체험하였음.\nCUPID에서 선택한 히로인 = 연구소가 피험자에게 주입하려던 감정 패턴.\n사용자의 선택도 기록으로 남아 있습니다."
     },
     "day5_observer_9": {
         "name": "",

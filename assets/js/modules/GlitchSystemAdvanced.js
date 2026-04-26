@@ -1340,8 +1340,8 @@ class GlitchSystemAdvanced {
             COMPLICIT: `#14 \uD22C\uC785 \uC2B9\uC778 \u2014 \uB2F4\uB2F9: ${playerName}`
         };
 
-        // TRUE END 추가 깜빡임 — "관찰자가 재시작을 요청하였습니다."
-        const trueEndSecondFlicker = '\uAD00\uCC30\uC790\uAC00 \uC7AC\uC2DC\uC791\uC744 \uC694\uCCAD\uD558\uC600\uC2B5\uB2C8\uB2E4.';
+        // TRUE END 추가 깜빡임 — 본편 감정선 이후의 아주 짧은 잔상
+        const trueEndSecondFlicker = '\uAE30\uB85D\uC774 \uC544\uC9C1 \uB2EB\uD788\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4.';
 
         const flickerText = flickerTexts[lastEnding];
         if (!flickerText) return; // CAGE: no flicker
@@ -1356,7 +1356,7 @@ class GlitchSystemAdvanced {
             btn.classList.add('glitch-text');
 
             if (lastEnding === 'TRUE') {
-                // TRUE END: 0.5초 "...다 끝났는데." 후 0.3초 "관찰자가 재시작을 요청하였습니다."
+                // TRUE END: 0.5초 "...다 끝났는데." 후 0.3초 기록 잔상
                 setTimeout(() => {
                     if (!btn.isConnected) return;
                     btn.textContent = trueEndSecondFlicker;

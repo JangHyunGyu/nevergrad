@@ -533,7 +533,7 @@ Object.assign(SCENARIO[4], {
         glitch: { noise: true, noiseDuration: 400 },
         next: "day4_night_mirror_hit2_8"
     },
-    // 나는 13번째 껍데기다
+    // 나는 이번 이름이다
     "day4_night_mirror_hit2_8": {
         character: null,
         unskippable: true,
@@ -569,7 +569,7 @@ Object.assign(SCENARIO[4], {
                 { slot: 13, name: "{name}", hair: "current" }
             ],
             photoInterval: 400,
-            overlayText: "나는 13번째 껍데기다.",
+            overlayText: "이번 이름: {name}",
             overlayFadeDuration: 3000,
             silence: true
         },
@@ -658,7 +658,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         next: "day4_night_plan_7"
     },
-    // 넷. 유나 = 관찰자, 지하실 감금.
+    // 넷. 유나 = 기록 보조, 지하실 감금.
     "day4_night_plan_7": {
         character: null,
         next: "day4_night_plan_8"

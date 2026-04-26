@@ -280,11 +280,11 @@ Object.assign(SCENARIO[3], {
     },
 
     // ══════════════════════════════════════
-    //  ★ 크로스오버: 글리치 장면 (Cupid 플레이어 전용)
-    //  Cupid 미플레이 → fallback으로 건너뜀
+    //  ★ 크로스오버: 글리치 장면 (Cupid + NG+ 전용)
+    //  1회차 본편에서는 설화의 핵심 진실을 흐리지 않도록 건너뜀
     // ══════════════════════════════════════
     "day3_xover_glitch_1": {
-        condition: "cupid_played",
+        condition: ["cupid_played", "new_game_plus"],
         fallback: "day3_night_seolhwa",
         background: "corridor_dark",
         character: null,

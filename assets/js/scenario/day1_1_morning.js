@@ -163,11 +163,11 @@ Object.assign(SCENARIO[1], {
     },
 
     // =====================================================================
-    // ★ 크로스오버: 설화 특수 대사 (Cupid 플레이어 전용)
-    // Cupid 미플레이 시 condition 불충족 → fallback으로 건너뜀
+    // ★ 크로스오버: 설화 특수 대사 (Cupid + NG+ 전용)
+    // 1회차 본편의 미스터리를 방해하지 않도록 TRUE/COMPLICIT 이후에만 노출
     // =====================================================================
     "day1_xover_seolhwa_1": {
-        condition: "cupid_played",
+        condition: ["cupid_played", "new_game_plus"],
         fallback: "day1_sea_meet_1",
         background: "corridor",
         character: "seolhwa_fade",

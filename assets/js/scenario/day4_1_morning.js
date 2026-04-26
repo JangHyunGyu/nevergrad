@@ -232,12 +232,12 @@ Object.assign(SCENARIO[4], {
         character: null,
         next: "day4_morning_gate_2"
     },
-    // 학생들의 표정이 전부 같다
+        // 정문을 지나는 순간 표정이 정리된다
     "day4_morning_gate_2": {
         character: null,
         next: "day4_morning_gate_3"
     },
-    // 모두 웃고 있다. 똑같은 미소.
+        // 웃음이 반 박자 어긋난다
     "day4_morning_gate_3": {
         character: null,
         glitch: { noise: true, noiseDuration: 150 },
@@ -253,7 +253,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         next: "day4_morning_gate_6"
     },
-    // 전원이다. 예외 없이.
+        // 전부는 아니지만 세 명 연속이라 더 찜찜하다
     "day4_morning_gate_6": {
         character: null,
         glitch: { noise: true, noiseDuration: 200 },

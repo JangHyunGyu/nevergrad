@@ -72,31 +72,6 @@ class AudioManager {
 
         // ── 크로스페이드 시간 (초) ──
         this.CROSSFADE_DURATION = 1.5;
-
-        // Minimal BGM pack aliases. Exact mp3 files still take priority.
-        this._bgmFileAliases = {
-            'morning_peaceful.mp3': 'morning_bright.mp3',
-            'morning_uneasy.mp3': 'tension.mp3',
-            'daily_tense.mp3': 'tension.mp3',
-            'tension_low.mp3': 'tension.mp3',
-            'dread.mp3': 'tension.mp3',
-            'thriller_ambient.mp3': 'tension.mp3',
-            'night_ambient.mp3': 'tension_night.mp3',
-            'wind_ambient.mp3': 'tension_night.mp3',
-            'heartbeat_loop.mp3': 'tension_night.mp3',
-            'silence_tension.mp3': 'tension_night.mp3',
-            'horror_ambient.mp3': 'tension_night.mp3',
-            'nightmare.mp3': 'ending_dark.mp3',
-            'music_box_broken.mp3': 'ending_dark.mp3',
-            'seolhwa_theme_broken.mp3': 'ending_dark.mp3',
-            'ending_melancholy.mp3': 'ending_dark.mp3',
-            'ending_ghost.mp3': 'ending_dark.mp3',
-            'ending_bittersweet.mp3': 'ending_hope.mp3',
-            'sea_obsession.mp3': 'tension.mp3',
-            'eunsu_dark_theme.mp3': 'confrontation.mp3',
-            'chase_intense.mp3': 'chase.mp3',
-            'climax.mp3': 'confrontation.mp3'
-        };
     }
 
     // =========================================================================
@@ -212,24 +187,6 @@ class AudioManager {
             return audioBuffer;
         } catch (e) {
             fileLoadError = e;
-        }
-
-        const aliasFilename = this._bgmFileAliases?.[originalFilename];
-        if (aliasFilename) {
-            const aliasPath = path.replace(/[^/]+$/, aliasFilename);
-            try {
-                const response = await fetch(aliasPath);
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-                const arrayBuffer = await response.arrayBuffer();
-                const audioBuffer = await this.ctx.decodeAudioData(arrayBuffer);
-                this._bufferCache.set(path, audioBuffer);
-                this._bufferCache.set(aliasPath, audioBuffer);
-                return audioBuffer;
-            } catch (e) {
-                console.warn(`[AudioManager] Failed to load alias: ${path} -> ${aliasPath}`, e);
-            }
         }
 
         // File failed or does not exist: fall back to procedural BGM synth.

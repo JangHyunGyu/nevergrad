@@ -141,6 +141,10 @@ class GlitchSystemAdvanced {
             tag.textContent = photo.tag;
             note.textContent = photo.note;
             counter.textContent = `${index + 1} / ${photos.length}`;
+            face.classList.toggle('photo-deck-face-image', !!photo.image);
+            face.style.backgroundImage = photo.image
+                ? `url('${new URL(photo.image, document.baseURI).href}')`
+                : '';
 
             strip.innerHTML = '';
             photos.forEach((_, i) => {
@@ -240,6 +244,11 @@ class GlitchSystemAdvanced {
             stage.appendChild(locker);
         }
 
+        const proof = document.createElement('div');
+        proof.className = 'locker-search-proof';
+        proof.style.backgroundImage = `url('${new URL(CONFIG.EVIDENCE_IMAGES?.locker_camera || 'assets/images/evidence/locker_hidden_camera.png', document.baseURI).href}')`;
+        stage.appendChild(proof);
+
         const status = document.createElement('div');
         status.className = 'locker-search-status';
         status.textContent = copy.lockerHint;
@@ -283,6 +292,7 @@ class GlitchSystemAdvanced {
             if (cameraFound) return;
             cameraFound = true;
             stage.classList.add('locker-camera-found');
+            proof.classList.add('visible');
             complete.classList.remove('hidden');
             this.engine?.glitch?.screenNoise?.(180);
         });
@@ -372,7 +382,7 @@ class GlitchSystemAdvanced {
                 { slot: 10, name: '송예준', tag: '05.18 / 교문', note: '시선이 CCTV로 향해 있다.' },
                 { slot: 11, name: '오태현', tag: '05.23 / 교문', note: '웃고 있지만 손은 굳어 있다.' },
                 { slot: 12, name: '임서율', tag: '05.28 / 교문', note: '교복 깃의 접힌 자국까지 같다.' },
-                { slot: 13, name: '{name}', tag: '어제 아침 / 교문', note: '현재 관찰 중.', current: true }
+                { slot: 13, name: '{name}', tag: '어제 아침 / 교문', note: '현재 관찰 중.', current: true, image: CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png' }
             ]
         };
     }

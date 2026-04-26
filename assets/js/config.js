@@ -172,14 +172,14 @@ const CONFIG = {
         black: "assets/images/background/black.png",
         white: "assets/images/background/black.png",               // alias: white.png 없음 → black 재사용 (CSS 필터로 반전)
         // 학교 내부 (추가)
-        playground: "assets/images/background/outside_school.png",        // alias: playground.png 없음 → outside_school 재사용
+        playground: "assets/images/background/playground.png",
         student_council: "assets/images/background/student_council.png",
-        cafeteria: "assets/images/background/classroom.png",              // alias: cafeteria.png 없음 → classroom 재사용
+        cafeteria: "assets/images/background/cafeteria.png",
         old_building_corridor: "assets/images/background/old_building.png", // 구관 복도 (구관 재사용)
         corridor_old: "assets/images/background/old_building.png",         // 구관 복도 alias
         corridor_main: "assets/images/background/corridor.png",            // 본관 복도 (corridor 재사용)
-        corridor_emergency: "assets/images/background/corridor.png",       // 비상 복도 (corridor 재사용)
-        old_infirmary: "assets/images/background/nurse_office.png",        // 옛 보건실 (nurse_office 재사용)
+        corridor_emergency: "assets/images/background/emergency_corridor.png",
+        old_infirmary: "assets/images/background/old_infirmary.png",
         old_stairway: "assets/images/background/stairway.png",             // 구관 계단 (stairway 재사용)
         old_corridor_dark: "assets/images/background/old_building.png",    // 구관 어두운 복도
         underground_lab: "assets/images/background/basement.png",          // 지하 연구실 (basement 재사용)
@@ -195,10 +195,22 @@ const CONFIG = {
         emergency_exit: "assets/images/background/exit_door.png",          // 비상구 (exit_door 재사용)
         classroom_afternoon: "assets/images/background/classroom.png",     // 오후 교실
         new_classroom: "assets/images/background/classroom.png",           // 새 교실 (에필로그)
-        news_article: "assets/images/background/black.png",                // 뉴스 기사 화면
-        dawn_road: "assets/images/background/street.png",                  // 새벽 도로
-        new_place: "assets/images/background/street.png",                  // 새로운 장소 (에필로그)
+        news_article: "assets/images/background/news_article.png",
+        dawn_road: "assets/images/background/dawn_road.png",
+        new_place: "assets/images/background/new_place.png",
+        lab_documents: "assets/images/evidence/day5_lab_documents.png",
+        ending_true: "assets/images/cg/ending_true_dawn_gate.png",
+        ending_escape: "assets/images/cg/ending_escape_rain.png",
+        ending_cage: "assets/images/cg/ending_cage_classroom.png",
+        ending_ghost: "assets/images/cg/ending_ghost_classroom.png",
+        ending_forget: "assets/images/cg/ending_forget_empty_seat.png",
         office: "assets/images/background/teacher_office.png"              // 사무실 (교무실 재사용)
+    },
+
+    EVIDENCE_IMAGES: {
+        yuna_photo: "assets/images/evidence/yuna_photo_evidence.png",
+        locker_camera: "assets/images/evidence/locker_hidden_camera.png",
+        lab_documents: "assets/images/evidence/day5_lab_documents.png"
     },
 
     // ===== 스탯 시스템 =====

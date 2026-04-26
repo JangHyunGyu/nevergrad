@@ -800,7 +800,7 @@ Object.assign(SCENARIO[5], {
     // 3층 비상구 앞
     "day5_lunch_seolhwa_guide_10": {
         character: null,
-        background: "emergency_exit",
+        background: "corridor_emergency",
         next: "day5_lunch_seolhwa_guide_11"
     },
     // 설화가 흐려지고 있다
@@ -845,7 +845,7 @@ Object.assign(SCENARIO[5], {
     // 최종 대면: 은수
     // ══════════════════════════════════════
     "day5_lunch_eunsu_1": {
-        background: "emergency_exit",
+        background: "corridor_emergency",
         bgm: "confrontation.mp3",
         character: null,
         next: "day5_lunch_eunsu_2"

@@ -267,7 +267,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_28": {
         character: null,
-        background: "new_classroom",
+        background: "ending_true",
         next: "day5_ending_true_29"
     },
     "day5_ending_true_29": {
@@ -569,7 +569,7 @@ Object.assign(SCENARIO[5], {
     // ── 에필로그 ──
     "day5_ending_escape_13": {
         character: null,
-        background: "black",
+        background: "ending_escape",
         fadeIn: true,
         next: "day5_ending_escape_14"
     },
@@ -747,7 +747,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_cage_eunsu_6": {
         character: null,
-        background: "classroom_afternoon",
+        background: "ending_cage",
         next: "day5_ending_cage_eunsu_7"
     },
     "day5_ending_cage_eunsu_7": {
@@ -795,7 +795,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_sea_6"
     },
     "day5_ending_cage_sea_6": {
-        background: "student_council",
+        background: "ending_cage",
         character: null,
         next: "day5_ending_cage_sea_7"
     },
@@ -967,6 +967,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_forget_22": {
         character: null,
+        background: "ending_forget",
         next: "day5_ending_forget_sea_branch"
     },
     // ── 세아 호감도 MAX 분기 ──
@@ -1071,7 +1072,7 @@ Object.assign(SCENARIO[5], {
     // ── 에필로그 ──
     "day5_ending_ghost_16": {
         character: null,
-        background: "new_place",
+        background: "ending_ghost",
         bgm: "ending_melancholy.mp3",
         next: "day5_ending_ghost_17"
     },

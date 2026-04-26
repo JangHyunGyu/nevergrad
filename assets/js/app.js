@@ -203,6 +203,9 @@ function preloadGameImages(onProgress) {
     for (const path of Object.values(CONFIG.BACKGROUNDS)) {
         if (path) pathSet.add(path);
     }
+    for (const path of Object.values(CONFIG.EVIDENCE_IMAGES || {})) {
+        if (path) pathSet.add(path);
+    }
 
     const paths = [...pathSet];
     const total = paths.length;

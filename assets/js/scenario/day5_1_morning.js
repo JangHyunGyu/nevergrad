@@ -295,7 +295,7 @@ Object.assign(SCENARIO[5], {
     // 아침: 봉쇄 (TRUE 루트)
     // ══════════════════════════════════════
     "day5_morning_true_1": {
-        background: "basement",
+        background: "lab_documents",
         character: null,
         unskippable: true,
         vibrate: "underground",

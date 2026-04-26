@@ -349,7 +349,7 @@ class AudioManager {
 
         // 합성 SFX 매핑 확인
         const synthKey = filename.replace(/\.[^.]+$/, ''); // 확장자 제거
-        if (this._synthRegistry && this._synthRegistry[synthKey]) {
+        if (!options.forceFile && this._synthRegistry && this._synthRegistry[synthKey]) {
             this._synthRegistry[synthKey](options);
             return;
         }

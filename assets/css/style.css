@@ -2116,7 +2116,8 @@ body {
     position: absolute;
     left: 50%;
     top: 20%;
-    transform: translateX(-50%);
+    --stat-popup-offset: 0px;
+    transform: translateX(-50%) translateY(var(--stat-popup-offset));
     font-size: 1.2rem;
     font-weight: 700;
     pointer-events: none;
@@ -2136,11 +2137,11 @@ body {
 }
 
 @keyframes stat-popup-rise {
-    0% { opacity: 0; transform: translateX(-50%) translateY(0) scale(0.8); }
-    15% { opacity: 1; transform: translateX(-50%) translateY(-8px) scale(1.1); }
-    30% { opacity: 1; transform: translateX(-50%) translateY(-12px) scale(1); }
-    70% { opacity: 1; transform: translateX(-50%) translateY(-20px); }
-    100% { opacity: 0; transform: translateX(-50%) translateY(-35px); }
+    0% { opacity: 0; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) + 0px)) scale(0.8); }
+    15% { opacity: 1; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - 8px)) scale(1.1); }
+    30% { opacity: 1; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - 12px)) scale(1); }
+    70% { opacity: 1; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - 20px)); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - 35px)); }
 }
 
 /* ===== Heart Effect (Affinity Up) ===== */

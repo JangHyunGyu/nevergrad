@@ -1878,7 +1878,7 @@ class GameEngine {
 
         // 효과음
         if (this.audio?.ctx) {
-            this.audio.playSFX(val > 0 ? 'affinity_up.mp3' : 'affinity_down.mp3');
+            this.audio.playSFX(val > 0 ? 'affinity_up.mp3' : 'affinity_down.mp3', { forceFile: true });
         }
 
         // 시각 이펙트
@@ -1907,6 +1907,12 @@ class GameEngine {
 
         const popup = document.createElement('div');
         popup.className = 'stat-change-popup';
+        this._activeStatPopups = (this._activeStatPopups || []).filter(el => el.isConnected);
+        const occupiedSlots = new Set(this._activeStatPopups.map(el => Number(el.dataset.statPopupSlot)));
+        let slot = 0;
+        while (occupiedSlots.has(slot) && slot < 5) slot++;
+        popup.style.setProperty('--stat-popup-offset', `${slot * 34}px`);
+        popup.dataset.statPopupSlot = String(slot);
 
         if (val > 0) {
             popup.textContent = `${charName} ${icon} +${val}`;
@@ -1917,9 +1923,13 @@ class GameEngine {
         }
 
         gameScreen.appendChild(popup);
+        this._activeStatPopups.push(popup);
 
         // 애니메이션 후 제거 (1.5초)
-        setTimeout(() => popup.remove(), 1500);
+        setTimeout(() => {
+            popup.remove();
+            this._activeStatPopups = (this._activeStatPopups || []).filter(el => el.isConnected);
+        }, 1500);
     }
 
     /**

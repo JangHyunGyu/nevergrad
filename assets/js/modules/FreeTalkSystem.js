@@ -1004,7 +1004,7 @@ ${memories}
 
         // 스탯 변경 FX 재생
         if (this.engine && this.engine._playStatChangeFX) {
-            this.engine._playStatChangeFX('affinity', clamped);
+            this.engine._playStatChangeFX('affinity', clamped, this.currentChar);
         }
     }
 

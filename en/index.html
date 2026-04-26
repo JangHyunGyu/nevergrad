@@ -215,6 +215,40 @@
         </div>
     </div>
 
+    <!-- ===== Settings Overlay ===== -->
+    <div id="settings-overlay" class="screen overlay hidden">
+        <div class="settings-container">
+            <div class="settings-header">
+                <span id="settings-title" class="settings-title">Settings</span>
+                <button id="settings-close" class="settings-close-btn" aria-label="Close">&times;</button>
+            </div>
+            <div class="settings-body">
+                <div class="settings-row">
+                    <label id="settings-bgm-label" class="settings-label" for="settings-bgm">BGM Volume</label>
+                    <input type="range" id="settings-bgm" min="0" max="100" step="1" value="50">
+                    <span id="settings-bgm-value" class="settings-value">50%</span>
+                </div>
+                <div class="settings-row">
+                    <label id="settings-sfx-label" class="settings-label" for="settings-sfx">SFX Volume</label>
+                    <input type="range" id="settings-sfx" min="0" max="100" step="1" value="80">
+                    <span id="settings-sfx-value" class="settings-value">80%</span>
+                </div>
+                <div class="settings-row">
+                    <label id="settings-text-speed-label" class="settings-label" for="settings-text-speed">Text Speed</label>
+                    <input type="range" id="settings-text-speed" min="0" max="100" step="1" value="70">
+                    <span id="settings-text-speed-value" class="settings-value">70%</span>
+                </div>
+                <div class="settings-row">
+                    <span id="settings-fullscreen-label" class="settings-label">Fullscreen</span>
+                    <button id="settings-fullscreen-toggle" class="settings-toggle">OFF</button>
+                </div>
+            </div>
+            <div class="settings-footer">
+                <button id="settings-reset" class="menu-btn settings-reset-btn">Reset</button>
+            </div>
+        </div>
+    </div>
+
     <!-- ===== FreeTalk Screen ===== -->
     <div id="freetalk-screen" class="screen hidden">
         <div id="ft-bg-layer" class="bg-layer"></div>

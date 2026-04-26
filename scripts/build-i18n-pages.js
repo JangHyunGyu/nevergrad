@@ -23,6 +23,8 @@ const LANGS = {
         newGame: 'New Game', continue: 'Continue', gallery: 'Gallery',
         namePrompt: 'What is your name?', namePlaceholder: 'Enter your name', start: 'Start',
         save: 'Save', load: 'Load', settings: 'Settings', toTitle: 'Title', resume: 'Resume',
+        settingsBgm: 'BGM Volume', settingsSfx: 'SFX Volume', settingsTextSpeed: 'Text Speed',
+        settingsFullscreen: 'Fullscreen', settingsReset: 'Reset', settingsOff: 'OFF',
         ftPlaceholder: 'Type a message...', ftSend: 'Send',
         dayDisplay: 'Day 1 - Morning',
         keywords: 'free browser visual novel, no-download visual novel, free school mystery game, choice-based story game, multiple endings game, online interactive novel, anime school game, English visual novel, free narrative game, psychological school thriller, Nevergrad',
@@ -55,6 +57,8 @@ const LANGS = {
         newGame: 'ニューゲーム', continue: 'つづきから', gallery: 'ギャラリー',
         namePrompt: 'あなたの名前は？', namePlaceholder: '名前を入力してください', start: 'スタート',
         save: 'セーブ', load: 'ロード', settings: '設定', toTitle: 'タイトルへ', resume: '戻る',
+        settingsBgm: 'BGM 音量', settingsSfx: '効果音 音量', settingsTextSpeed: 'テキスト速度',
+        settingsFullscreen: 'フルスクリーン', settingsReset: 'リセット', settingsOff: 'OFF',
         ftPlaceholder: 'メッセージを入力...', ftSend: '送信',
         dayDisplay: '1日目 - 朝',
         galleryTitle: 'エンディングギャラリー', galleryProgress: '達成率', galleryBack: '戻る',
@@ -82,6 +86,8 @@ const LANGS = {
         newGame: 'Nueva Partida', continue: 'Continuar', gallery: 'Galería',
         namePrompt: '¿Cuál es tu nombre?', namePlaceholder: 'Ingresa tu nombre', start: 'Iniciar',
         save: 'Guardar', load: 'Cargar', settings: 'Ajustes', toTitle: 'Título', resume: 'Volver',
+        settingsBgm: 'Volumen BGM', settingsSfx: 'Volumen efectos', settingsTextSpeed: 'Velocidad de texto',
+        settingsFullscreen: 'Pantalla completa', settingsReset: 'Restablecer', settingsOff: 'OFF',
         ftPlaceholder: 'Escribe un mensaje...', ftSend: 'Enviar',
         dayDisplay: 'Día 1 - Mañana',
         galleryTitle: 'Galería de finales', galleryProgress: 'Progreso', galleryBack: 'Volver',
@@ -107,6 +113,8 @@ const LANGS = {
         newGame: 'Nouvelle partie', continue: 'Continuer', gallery: 'Galerie',
         namePrompt: 'Quel est votre nom ?', namePlaceholder: 'Entrez votre nom', start: 'Commencer',
         save: 'Sauvegarder', load: 'Charger', settings: 'Paramètres', toTitle: 'Écran titre', resume: 'Reprendre',
+        settingsBgm: 'Volume BGM', settingsSfx: 'Volume effets', settingsTextSpeed: 'Vitesse du texte',
+        settingsFullscreen: 'Plein écran', settingsReset: 'Réinitialiser', settingsOff: 'OFF',
         ftPlaceholder: 'Écrivez un message...', ftSend: 'Envoyer',
         dayDisplay: 'Jour 1 - matin',
         galleryTitle: 'Galerie des fins', galleryProgress: 'Progression', galleryBack: 'Retour',
@@ -129,6 +137,8 @@ const LANGS = {
         newGame: 'Neues Spiel', continue: 'Fortsetzen', gallery: 'Galerie',
         namePrompt: 'Wie heißt du?', namePlaceholder: 'Namen eingeben', start: 'Start',
         save: 'Speichern', load: 'Laden', settings: 'Einstellungen', toTitle: 'Titelbildschirm', resume: 'Zurück',
+        settingsBgm: 'BGM-Lautstärke', settingsSfx: 'Soundeffekte', settingsTextSpeed: 'Textgeschwindigkeit',
+        settingsFullscreen: 'Vollbild', settingsReset: 'Zurücksetzen', settingsOff: 'AUS',
         ftPlaceholder: 'Nachricht eingeben...', ftSend: 'Senden',
         dayDisplay: 'Tag 1 - Morgen',
         keywords: 'kostenlose Visual Novel im Browser, Visual Novel ohne Download, kostenloses Schulmystery-Spiel, Entscheidungsgeschichte online, Spiel mit mehreren Enden, interaktiver Roman online, Anime-Schulspiel, Visual Novel auf Deutsch, kostenloses Erzählspiel, psychologischer Schulthriller, Nevergrad',
@@ -156,6 +166,8 @@ const LANGS = {
         newGame: 'Novo Jogo', continue: 'Continuar', gallery: 'Galeria',
         namePrompt: 'Qual é o seu nome?', namePlaceholder: 'Digite seu nome', start: 'Começar',
         save: 'Salvar', load: 'Carregar', settings: 'Configurações', toTitle: 'Título', resume: 'Voltar',
+        settingsBgm: 'Volume BGM', settingsSfx: 'Volume efeitos', settingsTextSpeed: 'Velocidade do texto',
+        settingsFullscreen: 'Tela cheia', settingsReset: 'Redefinir', settingsOff: 'OFF',
         ftPlaceholder: 'Digite uma mensagem...', ftSend: 'Enviar',
         dayDisplay: 'Dia 1 - Manhã',
         keywords: 'visual novel gratuito no navegador, jogo de mistério escolar, romance visual online, jogo narrativo com escolhas, finais alternativos, jogo grátis sem download, romance visual em português, anime visual novel, história interativa escolar, Nevergrad',
@@ -325,6 +337,49 @@ function buildPage(lang, data) {
         /(<button id="btn-resume" class="menu-btn">)[^<]*(<\/button>)/,
         `$1${data.resume}$2`
     );
+    // ===== Settings Overlay =====
+    if (data.settings) {
+        html = html.replace(
+            /(<span id="settings-title" class="settings-title">)[^<]*(<\/span>)/,
+            `$1${data.settings}$2`
+        );
+    }
+    if (data.settingsBgm) {
+        html = html.replace(
+            /(<label id="settings-bgm-label" class="settings-label" for="settings-bgm">)[^<]*(<\/label>)/,
+            `$1${data.settingsBgm}$2`
+        );
+    }
+    if (data.settingsSfx) {
+        html = html.replace(
+            /(<label id="settings-sfx-label" class="settings-label" for="settings-sfx">)[^<]*(<\/label>)/,
+            `$1${data.settingsSfx}$2`
+        );
+    }
+    if (data.settingsTextSpeed) {
+        html = html.replace(
+            /(<label id="settings-text-speed-label" class="settings-label" for="settings-text-speed">)[^<]*(<\/label>)/,
+            `$1${data.settingsTextSpeed}$2`
+        );
+    }
+    if (data.settingsFullscreen) {
+        html = html.replace(
+            /(<span id="settings-fullscreen-label" class="settings-label">)[^<]*(<\/span>)/,
+            `$1${data.settingsFullscreen}$2`
+        );
+    }
+    if (data.settingsOff) {
+        html = html.replace(
+            /(<button id="settings-fullscreen-toggle" class="settings-toggle">)[^<]*(<\/button>)/,
+            `$1${data.settingsOff}$2`
+        );
+    }
+    if (data.settingsReset) {
+        html = html.replace(
+            /(<button id="settings-reset" class="menu-btn settings-reset-btn">)[^<]*(<\/button>)/,
+            `$1${data.settingsReset}$2`
+        );
+    }
     html = html.replace(
         /(<input type="text" id="ft-input") placeholder="[^"]*"/,
         `$1 placeholder="${data.ftPlaceholder}"`

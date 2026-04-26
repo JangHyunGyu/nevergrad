@@ -153,12 +153,19 @@ class GameEngine {
             'btn-new-game': 'newGame', 'btn-continue': 'continue', 'btn-gallery': 'gallery',
             'btn-start': 'start', 'btn-save': 'save', 'btn-load': 'load',
             'btn-settings': 'settings', 'btn-title': 'toTitle', 'btn-resume': 'resume',
-            'ft-send': 'ftSend'
+            'ft-send': 'ftSend',
+            'settings-title': 'settings',
+            'settings-bgm-label': 'settingsBgm', 'settings-sfx-label': 'settingsSfx',
+            'settings-text-speed-label': 'settingsTextSpeed',
+            'settings-fullscreen-label': 'settingsFullscreen',
+            'settings-reset': 'settingsReset'
         };
         for (const [id, key] of Object.entries(btnMap)) {
             const el = document.getElementById(id);
             if (el) el.textContent = ui(key);
         }
+        // 풀스크린 토글 ON/OFF 라벨은 현재 상태에 따라
+        if (typeof this._refreshFullscreenLabel === 'function') this._refreshFullscreenLabel();
 
         // 이름 입력 화면
         const namePrompt = document.querySelector('.name-prompt');

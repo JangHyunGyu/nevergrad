@@ -1,0 +1,496 @@
+{
+  "scannedFiles": 288,
+  "hitCount": 64,
+  "bySeverity": {
+    "info": 64
+  },
+  "byId": {
+    "unexpected-hangul-in-localized-surface": 64
+  },
+  "files": [
+    {
+      "file": "de/index.html",
+      "count": 20,
+      "entries": [
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 18,
+          "text": "    <meta name=\"keywords\" content=\"무료 노벨 게임 브라우저, 다운로드 없이 플레이 비주얼 노벨, 학교 미스터리 게임 무료, 선택지 스토리 게임 온라인, 엔딩 분기 게임 무료 플레"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 53,
+          "text": "   <meta name=\"twitter:description\" content=\"무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 71,
+          "text": "      \"name\": \"졸업하지 못한 교실 - 5일의 기록\","
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 72,
+          "text": "      \"description\": \"무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 87,
+          "text": "class=\"archerlab-link\" aria-label=\"ArcherLab 홈\" title=\"ArcherLab\">🏹 ArcherLab</a>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 89,
+          "text": "            <option value=\"/\">한국어</option>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 109,
+          "text": "        <!-- SCENARIO.md 5454: 타이틀 배경(벚꽃) + 캐릭터 3 스프라이트 레이어. NG+ 시 세아만 시선 변경."
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 110,
+          "text": "             src는 app.js가 런타임에 파일 존재 확인 후 주입 (미생성 에셋 에러 방지) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 136,
+          "text": "                <span class=\"gallery-title\">엔딩 갤러리</span>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 138,
+          "text": "        <span class=\"gallery-progress-label\">달성률</span>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 144,
+          "text": "  <button id=\"gallery-back\" class=\"menu-btn\">돌아가기</button>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 191,
+          "text": "        <!-- Quick Menu — MENU 하나만. 저장/불러오기는 MENU → pause-menu 안에서 접근 (중복 제거) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 201,
+          "text": "                <span class=\"backlog-title\">대사 기록</span>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 232,
+          "text": "    <!-- ===== Save Slot Glitch UI (Day 4 세이브파일 강제 오픈) ===== -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 240,
+          "text": "                <!-- JS로 13개 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 249,
+          "text": "        <span id=\"sl-title\" class=\"sl-title\">저장</span>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 253,
+          "text": "                <!-- JS로 자동(0) + 수동(1~9) 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 265,
+          "text": " <div id=\"loading-text\" class=\"loading-text\">로딩 중...</div>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 269,
+          "text": "    <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "de/index.html",
+          "line": 272,
+          "text": "        <div class=\"rotate-text\">화면을 가로로 회전해주세요<br>Please rotate your device</div>"
+        }
+      ]
+    },
+    {
+      "file": "en/index.html",
+      "count": 20,
+      "entries": [
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 18,
+          "text": "    <meta name=\"keywords\" content=\"무료 노벨 게임 브라우저, 다운로드 없이 플레이 비주얼 노벨, 학교 미스터리 게임 무료, 선택지 스토리 게임 온라인, 엔딩 분기 게임 무료 플레"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 53,
+          "text": "   <meta name=\"twitter:description\" content=\"무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 71,
+          "text": "      \"name\": \"졸업하지 못한 교실 - 5일의 기록\","
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 72,
+          "text": "      \"description\": \"무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 87,
+          "text": "class=\"archerlab-link\" aria-label=\"ArcherLab 홈\" title=\"ArcherLab\">🏹 ArcherLab</a>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 89,
+          "text": "            <option value=\"/\">한국어</option>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 109,
+          "text": "        <!-- SCENARIO.md 5454: 타이틀 배경(벚꽃) + 캐릭터 3 스프라이트 레이어. NG+ 시 세아만 시선 변경."
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 110,
+          "text": "             src는 app.js가 런타임에 파일 존재 확인 후 주입 (미생성 에셋 에러 방지) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 136,
+          "text": "                <span class=\"gallery-title\">엔딩 갤러리</span>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 138,
+          "text": "        <span class=\"gallery-progress-label\">달성률</span>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 144,
+          "text": "  <button id=\"gallery-back\" class=\"menu-btn\">돌아가기</button>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 191,
+          "text": "        <!-- Quick Menu — MENU 하나만. 저장/불러오기는 MENU → pause-menu 안에서 접근 (중복 제거) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 201,
+          "text": "                <span class=\"backlog-title\">대사 기록</span>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 232,
+          "text": "    <!-- ===== Save Slot Glitch UI (Day 4 세이브파일 강제 오픈) ===== -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 240,
+          "text": "                <!-- JS로 13개 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 249,
+          "text": "        <span id=\"sl-title\" class=\"sl-title\">저장</span>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 253,
+          "text": "                <!-- JS로 자동(0) + 수동(1~9) 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 265,
+          "text": " <div id=\"loading-text\" class=\"loading-text\">로딩 중...</div>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 269,
+          "text": "    <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "en/index.html",
+          "line": 272,
+          "text": "        <div class=\"rotate-text\">화면을 가로로 회전해주세요<br>Please rotate your device</div>"
+        }
+      ]
+    },
+    {
+      "file": "es/index.html",
+      "count": 8,
+      "entries": [
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "es/index.html",
+          "line": 89,
+          "text": "            <option value=\"/\">한국어</option>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "es/index.html",
+          "line": 109,
+          "text": "        <!-- SCENARIO.md 5454: 타이틀 배경(벚꽃) + 캐릭터 3 스프라이트 레이어. NG+ 시 세아만 시선 변경."
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "es/index.html",
+          "line": 110,
+          "text": "             src는 app.js가 런타임에 파일 존재 확인 후 주입 (미생성 에셋 에러 방지) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "es/index.html",
+          "line": 191,
+          "text": "        <!-- Quick Menu — MENU 하나만. 저장/불러오기는 MENU → pause-menu 안에서 접근 (중복 제거) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "es/index.html",
+          "line": 232,
+          "text": "    <!-- ===== Save Slot Glitch UI (Day 4 세이브파일 강제 오픈) ===== -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "es/index.html",
+          "line": 240,
+          "text": "                <!-- JS로 13개 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "es/index.html",
+          "line": 253,
+          "text": "                <!-- JS로 자동(0) + 수동(1~9) 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "es/index.html",
+          "line": 269,
+          "text": "    <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->"
+        }
+      ]
+    },
+    {
+      "file": "fr/index.html",
+      "count": 7,
+      "entries": [
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "fr/index.html",
+          "line": 110,
+          "text": "        <!-- SCENARIO.md 5454: 타이틀 배경(벚꽃) + 캐릭터 3 스프라이트 레이어. NG+ 시 세아만 시선 변경."
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "fr/index.html",
+          "line": 111,
+          "text": "             src는 app.js가 런타임에 파일 존재 확인 후 주입 (미생성 에셋 에러 방지) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "fr/index.html",
+          "line": 192,
+          "text": "        <!-- Quick Menu — MENU 하나만. 저장/불러오기는 MENU → pause-menu 안에서 접근 (중복 제거) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "fr/index.html",
+          "line": 233,
+          "text": "    <!-- ===== Save Slot Glitch UI (Day 4 세이브파일 강제 오픈) ===== -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "fr/index.html",
+          "line": 241,
+          "text": "                <!-- JS로 13개 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "fr/index.html",
+          "line": 254,
+          "text": "                <!-- JS로 자동(0) + 수동(1~9) 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "fr/index.html",
+          "line": 270,
+          "text": "    <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->"
+        }
+      ]
+    },
+    {
+      "file": "ja/index.html",
+      "count": 8,
+      "entries": [
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "ja/index.html",
+          "line": 91,
+          "text": "            <option value=\"/\">한국어</option>"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "ja/index.html",
+          "line": 111,
+          "text": "        <!-- SCENARIO.md 5454: 타이틀 배경(벚꽃) + 캐릭터 3 스프라이트 레이어. NG+ 시 세아만 시선 변경."
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "ja/index.html",
+          "line": 112,
+          "text": "             src는 app.js가 런타임에 파일 존재 확인 후 주입 (미생성 에셋 에러 방지) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "ja/index.html",
+          "line": 193,
+          "text": "        <!-- Quick Menu — MENU 하나만. 저장/불러오기는 MENU → pause-menu 안에서 접근 (중복 제거) -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "ja/index.html",
+          "line": 234,
+          "text": "    <!-- ===== Save Slot Glitch UI (Day 4 세이브파일 강제 오픈) ===== -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "ja/index.html",
+          "line": 242,
+          "text": "                <!-- JS로 13개 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "ja/index.html",
+          "line": 255,
+          "text": "                <!-- JS로 자동(0) + 수동(1~9) 슬롯 동적 생성 -->"
+        },
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "ja/index.html",
+          "line": 271,
+          "text": "    <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->"
+        }
+      ]
+    },
+    {
+      "file": "pt-BR/index.html",
+      "count": 1,
+      "entries": [
+        {
+          "severity": "info",
+          "id": "unexpected-hangul-in-localized-surface",
+          "file": "pt-BR/index.html",
+          "line": 91,
+          "text": "            <option value=\"/\">한국어</option>"
+        }
+      ]
+    }
+  ]
+}

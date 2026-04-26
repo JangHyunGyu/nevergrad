@@ -1,427 +1,427 @@
 {
-  "day4_after_start": {
-    "name": "Eu",
-    "text": "*Depois da escola. A campainha tocou. A sala de aula está vazia. As coisas que aprendi hoje estão girando na minha cabeça.*"
-  },
-  "day4_after_start_2": {
-    "name": "Eu",
-    "text": "*As pistas que vi no almoço estão emaranhadas na minha cabeça. As peças que foram tocadas separadamente apontam na mesma direção, por incrível que pareça.*"
-  },
-  "day4_after_start_3": {
-    "name": "Eu",
-    "text": "*Sea caminha em direção à sala do conselho estudantil. A professora Eunsu estará na sala do professor. A professora Riin está na enfermaria pública...Quem devo procurar primeiro?*"
-  },
-  "day4_after_choice": {
-    "name": "Eu",
-    "text": "*Você tem que decidir.*",
-    "choices": [
-      "Siga Sea",
-      "Procurando por Eunsu",
-      "Rosto Riin"
-    ]
-  },
-  "day4_after_sea_route": {
-    "name": "Eu",
-    "text": "*Eu segui Sea até a sala do conselho estudantil.*"
-  },
-  "day4_after_sea_2": {
-    "name": "Eu",
-    "text": "*Mar tranca a porta. Clique. O som de bloqueio foi particularmente alto. Em um corredor vazio.*"
-  },
-  "day4_after_sea_3": {
-    "name": "Han Sea",
-    "text": "\"Eu quero ficar sozinho hoje.\""
-  },
-  "day4_after_sea_4": {
-    "name": "Eu",
-    "text": "*Mar se senta. Seus olhos estão diferentes do normal. Está injetado de sangue. Vestígios de choro.*"
-  },
-  "day4_after_sea_5": {
-    "name": "Eu",
-    "text": "*Dá para ver o playground pela janela. Já é tarde da escola, então os alunos estão saindo em grupos de dois ou três. O som de risadas chega tarde pela janela. É uma cena comum, mas apenas os cantos da boca de alguns rostos são muito retos.*"
-  },
-  "day4_after_sea_6": {
-    "name": "Han Sea",
-    "text": "\"...{name}.\""
-  },
-  "day4_after_sea_7": {
-    "name": "Eu",
-    "text": "*Mar olha para mim. por muito tempo. Como tentar memorizar meu rosto.*"
-  },
-  "day4_after_sea_8": {
-    "name": "Han Sea",
-    "text": "\"...Quantas vezes?\""
-  },
-  "day4_after_sea_9": {
-    "name": "Eu",
-    "text": "\"...o que?\""
-  },
-  "day4_after_sea_10": {
-    "name": "Eu",
-    "text": "*A boca do mar está tremendo. Começo a falar e depois paro. Tento falar novamente, mas paro. Abra a boca pela terceira vez.*"
-  },
-  "day4_after_sea_11": {
-    "name": "Han Sea",
-    "text": "\"Não é nada... esqueça.\""
-  },
-  "day4_after_sea_force": {
-    "name": "Eu",
-    "text": "*'Esquecer'. Quão cruel é essa palavra nesta situação – só SeAH sabe. As opções aparecerão.*",
-    "choices": [
-      "OK",
-      "Isso é um pouco..."
-    ]
-  },
-  "day4_after_sea_accept": {
-    "name": "Eu",
-    "text": "*...As opções mudaram. Não – foi um desde o início.*"
-  },
-  "day4_after_sea_accept_2": {
-    "name": "Han Sea",
-    "text": "\"...Continue ao meu lado.\""
-  },
-  "day4_after_sea_accept_3": {
-    "name": "Eu",
-    "text": "*O mar olha pela janela. O sol poente está tingindo a sala do conselho estudantil de vermelho.*"
-  },
-  "day4_after_sea_confess_1": {
-    "name": "Han Sea",
-    "text": "\"...Número 12.\""
-  },
-  "day4_after_sea_confess_2": {
-    "name": "Eu",
-    "text": "\"...o que?\""
-  },
-  "day4_after_sea_confess_3": {
-    "name": "Han Sea",
-    "text": "\"Por 12 vezes... toda vez que você sorriu nesta sala do conselho estudantil e disse: \"Eu irei amanhã também\". Você disse \"obrigado\" para mim todas as vezes. Você disse que a lancheira estava deliciosa todas as vezes.\""
-  },
-  "day4_after_sea_confess_4": {
-    "name": "Han Sea",
-    "text": "\"E toda vez… você me esqueceu no quinto dia.\""
-  },
-  "day4_after_sea_confess_5": {
-    "name": "Eu",
-    "text": "*Lágrimas escorrem dos olhos de SeAh. Não limpe*"
-  },
-  "day4_after_sea_confess_6": {
-    "name": "Han Sea",
-    "text": "\"Pela nona vez... você me fez uma pulseira. Aquela com 'Mar' gravado. Eu ainda a tenho.\""
-  },
-  "day4_after_sea_confess_7": {
-    "name": "Eu",
-    "text": "*Mar arregaça as mangas. Uma velha pulseira de linha está enrolada em meu pulso. O fio está desgastado. Como se já se passassem anos.*"
-  },
-  "day4_after_sea_confess_8": {
-    "name": "Han Sea",
-    "text": "\"Pela décima vez, você viu isso e perguntou: ‘É lindo, quem deu para você?’\""
-  },
-  "day4_after_sea_confess_9": {
-    "name": "Han Sea",
-    "text": "\"Você fez isso para mim. Não me lembro.\""
-  },
-  "day4_after_sea_confess_10": {
-    "name": "Eu",
-    "text": "*Mar riu. Enquanto chorava.*"
-  },
-  "day4_after_sea_12loop": {
-    "name": "Eu",
-    "text": "*Mar me abraçou. Minhas mãos apertam minhas costas.*"
-  },
-  "day4_after_sea_12loop_2": {
-    "name": "Eu",
-    "text": "*Mar murmura. Tão perto que seus lábios tocam minha orelha.*"
-  },
-  "day4_after_sea_12loop_3": {
-    "name": "Han Sea",
-    "text": "\"...Seojin.\""
-  },
-  "day4_after_sea_12loop_4": {
-    "name": "Eu",
-    "text": "*...o que?*"
-  },
-  "day4_after_sea_12loop_5": {
-    "name": "Eu",
-    "text": "\"...Quem?\""
-  },
-  "day4_after_sea_12loop_6": {
-    "name": "Eu",
-    "text": "*O corpo de Sea enrijeceu. Ele pareceu perceber o que disse.*"
-  },
-  "day4_after_sea_12loop_7": {
-    "name": "Eu",
-    "text": "*peso carta. O nome escrito no terceiro crachá. Parque Seojin.*"
-  },
-  "day4_after_sea_12loop_8": {
-    "name": "Han Sea",
-    "text": "\"...Não é nada.\""
-  },
-  "day4_after_sea_12loop_9": {
-    "name": "Eu",
-    "text": "*O mar não me deixa ir. Em vez disso, eu o abracei com mais força. Meus ombros estão tremendo.*"
-  },
-  "day4_after_sea_12loop_10": {
-    "name": "Eu",
-    "text": "*Era visível quando as mangas estavam arregaçadas. Uma velha pulseira de linha no meu pulso. O fio está desgastado. Como se já se passassem anos.*"
-  },
-  "day4_after_sea_12loop_11": {
-    "name": "Eu",
-    "text": "*...O nome está gravado nele. 'Mar'. Pulseira feita à mão. — Esta é a minha letra.*"
-  },
-  "day4_after_sea_12loop_12": {
-    "name": "Eu",
-    "text": "*Mar notado. Que estou olhando para a pulseira.*"
-  },
-  "day4_after_sea_12loop_13": {
-    "name": "Han Sea",
-    "text": "\"... não é lindo?\""
-  },
-  "day4_after_sea_12loop_14": {
-    "name": "Eu",
-    "text": "*Rindo. Enquanto chorava.*"
-  },
-  "day4_after_ft_sea_pre": {
-    "name": "Eu",
-    "text": "*Sea agarrou seu braço. Tento me levantar, mas ele não me deixa ir.*"
-  },
-  "day4_after_ft_sea": {
-    "name": "Han Sea",
-    "text": "...Se você tem algo a dizer, diga. Nada muda de qualquer maneira."
-  },
-  "day4_after_ft_sea_post": {
-    "name": "Eu",
-    "text": "*Sea soltou a mão dela. Não importa o que eu disse, os olhos de Sea não mudaram. Nem triste nem zangado - apenas a boa e velha resignação.*"
-  },
-  "day4_after_eunsu_route": {
-    "name": "Eu",
-    "text": "*Ele foi para a sala do professor. Já não pode ser evitado. Você tem que perguntar diretamente.*"
-  },
-  "day4_after_eunsu_2": {
-    "name": "Eu",
-    "text": "*Professor Eunsu olha para mim e suspira. Expressão cansada. Existem olheiras sob os olhos. O professor está sozinho na sala do professor. Todos os outros professores deixaram seus lugares. — Você esvaziou ou esvaziou?*"
-  },
-  "day4_after_eunsu_3": {
-    "name": "Park Eunsu",
-    "text": "\"...Agora você percebeu.\""
-  },
-  "day4_after_eunsu_4": {
-    "name": "Park Eunsu",
-    "text": "\"...Você sabe que é o 13º?\""
-  },
-  "day4_after_eunsu_4a": {
-    "name": "Eu",
-    "text": "*A professora fala enquanto faz o café. Calmamente. A mão que faz o café não treme. Como se eu estivesse me preparando para essa conversa.*"
-  },
-  "day4_after_eunsu_5": {
-    "name": "Eu",
-    "text": "*A professora faz café. Dois copos. Coloquei um na minha frente.*"
-  },
-  "day4_after_eunsu_6": {
-    "name": "Eu",
-    "text": "*...Duas colheres de açúcar, metade de creme. É exatamente igual ao que coloquei ontem na sala do professor.*"
-  },
-  "day4_after_eunsu_7": {
-    "name": "Eu",
-    "text": "*...Eu nunca te contei. Eu só vi uma vez ontem.*"
-  },
-  "day4_after_eunsu_8": {
-    "name": "Park Eunsu",
-    "text": "\"Certo? Sua preferência.\""
-  },
-  "day4_after_eunsu_9": {
-    "name": "Eu",
-    "text": "*A professora ri. Essa risada é o primeiro tipo que já vi. Não o sorriso caloroso do primeiro dia, mas o alívio que uma pessoa que esperou por muito tempo finalmente sente na frente da outra.*"
-  },
-  "day4_after_eunsu_10": {
-    "name": "Eu",
-    "text": "*A gaveta da mesa está entreaberta. Dá para ver um post-it dentro. Dezenas de folhas. Cheio de letras. — É tudo apenas um nome. Nomes diferentes. Alguns estão riscados.*"
-  },
-  "day4_after_eunsu_11": {
-    "name": "Eu",
-    "text": "*Meu nome no post-it na parte inferior. Não há tachado.*"
-  },
-  "day4_after_eunsu_12": {
-    "name": "Eu",
-    "text": "*silêncio.*"
-  },
-  "day4_after_eunsu_13": {
-    "name": "Park Eunsu",
-    "text": "\"Está tudo bem, {name}. O professor cuidará de tudo.\""
-  },
-  "day4_after_eunsu_14": {
-    "name": "Eu",
-    "text": "*A mão do professor acaricia minha cabeça. suavemente.*"
-  },
-  "day4_after_eunsu_15": {
-    "name": "Eu",
-    "text": "*...Esta mão apagou 12 memórias.*"
-  },
-  "day4_after_riin_route": {
-    "name": "Eu",
-    "text": "*Fui para a enfermaria. Eu não preciso de remédio. Há algo que quero verificar.*"
-  },
-  "day4_after_riin_2": {
-    "name": "Eu",
-    "text": "*A professora Riin está sentada à mesa. Estava organizando documentos. Quando entro, sua mão para. Ela vira os papéis. Devagar. Naturalmente. Mas eu vi. O título: 'Registros de Medicação S-13'.*"
-  },
-  "day4_after_riin_3": {
-    "name": "Kang Riin",
-    "text": "\"...O quê? Não me assuste.\""
-  },
-  "day4_after_riin_4": {
-    "name": "Eu",
-    "text": "*A maneira como você olha para mim é diferente do habitual. Olhos atentos...Não, não é uma fronteira. É exploração. Olhos que medem o que eu sei.*"
-  },
-  "day4_after_riin_5": {
-    "name": "Eu",
-    "text": "\"Professor Riin.\""
-  },
-  "day4_after_riin_5a": {
-    "name": "Kang Riin",
-    "text": "\"huh?\""
-  },
-  "day4_after_riin_5b": {
-    "name": "Eu",
-    "text": "\"Você não quer mais esconder isso, não é?\""
-  },
-  "day4_after_riin_6": {
-    "name": "Eu",
-    "text": "*silêncio. 3 segundos. A expressão da professora Riin não muda. Não estou surpreso. Não entrar em pânico.*"
-  },
-  "day4_after_riin_7": {
-    "name": "Kang Riin",
-    "text": "\"...Quanto você percebeu?\""
-  },
-  "day4_after_riin_8": {
-    "name": "Eu",
-    "text": "*Uma palavra. Calmamente. Como se... eu estivesse esperando por esse momento. Professora Riin se levanta. Verifique a porta da enfermaria. Bloqueie.*"
-  },
-  "day4_after_riin_9": {
-    "name": "Kang Riin",
-    "text": "\"O que você viu lá?\""
-  },
-  "day4_after_riin_10": {
-    "name": "Eu",
-    "text": "\"As coisas que esta escola esconde. Drogas, discos, pessoas.\""
-  },
-  "day4_after_riin_11": {
-    "name": "Eu",
-    "text": "*Professor Riin suspira. longo. Um suspiro que parece se livrar de um fardo.*"
-  },
-  "day4_after_riin_12": {
-    "name": "Kang Riin",
-    "text": "\"...mais rápido. Mais rápido que o dia 12.\""
-  },
-  "day4_after_riin_15": {
-    "name": "Eu",
-    "text": "*A professora Riin tira algo do bolso. Uma chave. Uma pequena chave de metal.*"
-  },
-  "day4_after_riin_16": {
-    "name": "Eu",
-    "text": "*Segure-o na minha frente - e então para.*"
-  },
-  "day4_after_riin_17": {
-    "name": "Kang Riin",
-    "text": "\"...Ainda não.\""
-  },
-  "day4_after_riin_18": {
-    "name": "Eu",
-    "text": "*Coloca as chaves de volta no bolso.*"
-  },
-  "day4_after_riin_19": {
-    "name": "Eu",
-    "text": "\"O que é aquilo?\""
-  },
-  "day4_after_riin_20": {
-    "name": "Kang Riin",
-    "text": "\"amanhã.\""
-  },
-  "day4_after_riin_21": {
-    "name": "Eu",
-    "text": "*A professora Riin olha para mim. Pela primeira vez, não com olhos de professora da enfermaria.*"
-  },
-  "day4_after_riin_22": {
-    "name": "Kang Riin",
-    "text": "\"Não faça nada esta noite. Não conte a ninguém sobre isso.\""
-  },
-  "day4_after_riin_23": {
-    "name": "Kang Riin",
-    "text": "\"Nunca para Eunsu.\""
-  },
-  "day4_after_riin_24": {
-    "name": "Eu",
-    "text": "*Voz abaixa*"
-  },
-  "day4_after_riin_25": {
-    "name": "Kang Riin",
-    "text": "\"...Vou ganhar algum tempo para você. Só até amanhã de manhã.\""
-  },
-  "day4_after_riin_26": {
-    "name": "Eu",
-    "text": "*A professora Riin olha pela janela. O sol se põe. A enfermaria se tinge de laranja.*"
-  },
-  "day4_after_riin_27": {
-    "name": "Kang Riin",
-    "text": "\"...eu não posso mais fazer isso. Isso.\""
-  },
-  "day4_after_end": {
-    "name": "Eu",
-    "text": "*O sol se pôs. A escola está mergulhada na escuridão. Amanhã chega. Dia 5.*"
-  },
-  "day4_xover_yuna_1": {
-    "name": "",
-    "text": "*Eu estava saindo da sala de aula — Yuna estava parada no corredor. Acho que estava esperando.*"
-  },
-  "day4_xover_yuna_2": {
-    "name": "Choi Yuna",
-    "text": "\"...Você conhece Junho Lee?\""
-  },
-  "day4_xover_yuna_3": {
-    "name": "Eu",
-    "text": "\"...Quem?\""
-  },
-  "day4_xover_yuna_4": {
-    "name": "Choi Yuna",
-    "text": "\"Eu sabia disso.\""
-  },
-  "day4_xover_yuna_5": {
-    "name": "Choi Yuna",
-    "text": "\"Ele sempre faz isso. Volta com a mesma cara. Diz que não sabe.\""
-  },
-  "day4_xover_yuna_6": {
-    "name": "",
-    "text": "*(tira o álbum de fotos)*"
-  },
-  "day4_xover_yuna_7": {
-    "name": "Choi Yuna",
-    "text": "\"Está aqui. Do número 1 até agora.\""
-  },
-  "day4_xover_yuna_8": {
-    "name": "Choi Yuna",
-    "text": "\"Tudo – você.\""
-  },
-  "day4_xover_yuna_9": {
-    "name": "",
-    "text": "*Olhei o álbum de fotos. Mesmo uniforme escolar. Mesmo corredor. O mesmo rosto – apenas expressões diferentes. Capítulo 12.*"
-  },
-  "day4_xover_yuna_10": {
-    "name": "",
-    "text": "*Yuna fechou o álbum de fotos e caminhou silenciosamente.*"
-  },
-  "day4_xover_yuna_skip": {
-    "name": "",
-    "text": "*Estou prestes a sair da sala de aula — Yuna está parada no corredor.*"
-  },
-  "day4_xover_yuna_skip_met": {
-    "name": "",
-    "text": "*Estou prestes a sair da sala de aula — Yuna está parada no corredor.*"
-  },
-  "day4_xover_yuna_skip_2": {
-    "name": "Choi Yuna",
-    "text": "\"...Não. Não é nada.\""
-  },
-  "day4_xover_yuna_skip_3": {
-    "name": "",
-    "text": "*Yuna balançou a cabeça e foi embora.*"
-  }
+    "day4_after_start": {
+        "name": "Eu",
+        "text": "*Depois da escola. A campainha tocou. A sala de aula está vazia. As coisas que aprendi hoje estão girando na minha cabeça.*"
+    },
+    "day4_after_start_2": {
+        "name": "Eu",
+        "text": "*As pistas que vi no almoço estão emaranhadas na minha cabeça. As peças que foram tocadas separadamente apontam na mesma direção, por incrível que pareça.*"
+    },
+    "day4_after_start_3": {
+        "name": "Eu",
+        "text": "*Sea caminha em direção à sala do conselho estudantil. A professora Eunsu estará na sala do professor. A professora Riin está na enfermaria pública...Quem devo procurar primeiro?*"
+    },
+    "day4_after_choice": {
+        "name": "Eu",
+        "text": "*Você tem que decidir.*",
+        "choices": [
+            "Siga Sea",
+            "Procurando por Eunsu",
+            "Rosto Riin"
+        ]
+    },
+    "day4_after_sea_route": {
+        "name": "Eu",
+        "text": "*Eu segui Sea até a sala do conselho estudantil.*"
+    },
+    "day4_after_sea_2": {
+        "name": "Eu",
+        "text": "*Mar tranca a porta. Clique. O som de bloqueio foi particularmente alto. Em um corredor vazio.*"
+    },
+    "day4_after_sea_3": {
+        "name": "Han Sea",
+        "text": "Eu quero ficar sozinho hoje."
+    },
+    "day4_after_sea_4": {
+        "name": "Eu",
+        "text": "*Mar se senta. Seus olhos estão diferentes do normal. Está injetado de sangue. Vestígios de choro.*"
+    },
+    "day4_after_sea_5": {
+        "name": "Eu",
+        "text": "*Dá para ver o playground pela janela. Já é tarde da escola, então os alunos estão saindo em grupos de dois ou três. O som de risadas chega tarde pela janela. É uma cena comum, mas apenas os cantos da boca de alguns rostos são muito retos.*"
+    },
+    "day4_after_sea_6": {
+        "name": "Han Sea",
+        "text": "...{name}."
+    },
+    "day4_after_sea_7": {
+        "name": "Eu",
+        "text": "*Mar olha para mim. por muito tempo. Como tentar memorizar meu rosto.*"
+    },
+    "day4_after_sea_8": {
+        "name": "Han Sea",
+        "text": "...Quantas vezes?"
+    },
+    "day4_after_sea_9": {
+        "name": "Eu",
+        "text": "...o que?"
+    },
+    "day4_after_sea_10": {
+        "name": "Eu",
+        "text": "*A boca do mar está tremendo. Começo a falar e depois paro. Tento falar novamente, mas paro. Abra a boca pela terceira vez.*"
+    },
+    "day4_after_sea_11": {
+        "name": "Han Sea",
+        "text": "Não é nada... esqueça."
+    },
+    "day4_after_sea_force": {
+        "name": "Eu",
+        "text": "*'Esquecer'. Quão cruel é essa palavra nesta situação – só SeAH sabe. As opções aparecerão.*",
+        "choices": [
+            "OK",
+            "Isso é um pouco..."
+        ]
+    },
+    "day4_after_sea_accept": {
+        "name": "Eu",
+        "text": "*...As opções mudaram. Não – foi um desde o início.*"
+    },
+    "day4_after_sea_accept_2": {
+        "name": "Han Sea",
+        "text": "...Continue ao meu lado."
+    },
+    "day4_after_sea_accept_3": {
+        "name": "Eu",
+        "text": "*O mar olha pela janela. O sol poente está tingindo a sala do conselho estudantil de vermelho.*"
+    },
+    "day4_after_sea_confess_1": {
+        "name": "Han Sea",
+        "text": "...Número 12."
+    },
+    "day4_after_sea_confess_2": {
+        "name": "Eu",
+        "text": "...o que?"
+    },
+    "day4_after_sea_confess_3": {
+        "name": "Han Sea",
+        "text": "Por 12 vezes... toda vez que você sorriu nesta sala do conselho estudantil e disse: \"Eu irei amanhã também\". Você disse \"obrigado\" para mim todas as vezes. Você disse que a lancheira estava deliciosa todas as vezes."
+    },
+    "day4_after_sea_confess_4": {
+        "name": "Han Sea",
+        "text": "E toda vez… você me esqueceu no quinto dia."
+    },
+    "day4_after_sea_confess_5": {
+        "name": "Eu",
+        "text": "*Lágrimas escorrem dos olhos de SeAh. Não limpe*"
+    },
+    "day4_after_sea_confess_6": {
+        "name": "Han Sea",
+        "text": "Pela nona vez... você me fez uma pulseira. Aquela com 'Mar' gravado. Eu ainda a tenho."
+    },
+    "day4_after_sea_confess_7": {
+        "name": "Eu",
+        "text": "*Mar arregaça as mangas. Uma velha pulseira de linha está enrolada em meu pulso. O fio está desgastado. Como se já se passassem anos.*"
+    },
+    "day4_after_sea_confess_8": {
+        "name": "Han Sea",
+        "text": "Pela décima vez, você viu isso e perguntou: ‘É lindo, quem deu para você?’"
+    },
+    "day4_after_sea_confess_9": {
+        "name": "Han Sea",
+        "text": "Você fez isso para mim. Não me lembro."
+    },
+    "day4_after_sea_confess_10": {
+        "name": "Eu",
+        "text": "*Mar riu. Enquanto chorava.*"
+    },
+    "day4_after_sea_12loop": {
+        "name": "Eu",
+        "text": "*Mar me abraçou. Minhas mãos apertam minhas costas.*"
+    },
+    "day4_after_sea_12loop_2": {
+        "name": "Eu",
+        "text": "*Mar murmura. Tão perto que seus lábios tocam minha orelha.*"
+    },
+    "day4_after_sea_12loop_3": {
+        "name": "Han Sea",
+        "text": "...Seojin."
+    },
+    "day4_after_sea_12loop_4": {
+        "name": "Eu",
+        "text": "*...o que?*"
+    },
+    "day4_after_sea_12loop_5": {
+        "name": "Eu",
+        "text": "...Quem?"
+    },
+    "day4_after_sea_12loop_6": {
+        "name": "Eu",
+        "text": "*O corpo de Sea enrijeceu. Ele pareceu perceber o que disse.*"
+    },
+    "day4_after_sea_12loop_7": {
+        "name": "Eu",
+        "text": "*peso carta. O nome escrito no terceiro crachá. Parque Seojin.*"
+    },
+    "day4_after_sea_12loop_8": {
+        "name": "Han Sea",
+        "text": "...Não é nada."
+    },
+    "day4_after_sea_12loop_9": {
+        "name": "Eu",
+        "text": "*O mar não me deixa ir. Em vez disso, eu o abracei com mais força. Meus ombros estão tremendo.*"
+    },
+    "day4_after_sea_12loop_10": {
+        "name": "Eu",
+        "text": "*Era visível quando as mangas estavam arregaçadas. Uma velha pulseira de linha no meu pulso. O fio está desgastado. Como se já se passassem anos.*"
+    },
+    "day4_after_sea_12loop_11": {
+        "name": "Eu",
+        "text": "*...O nome está gravado nele. 'Mar'. Pulseira feita à mão. — Esta é a minha letra.*"
+    },
+    "day4_after_sea_12loop_12": {
+        "name": "Eu",
+        "text": "*Mar notado. Que estou olhando para a pulseira.*"
+    },
+    "day4_after_sea_12loop_13": {
+        "name": "Han Sea",
+        "text": "... não é lindo?"
+    },
+    "day4_after_sea_12loop_14": {
+        "name": "Eu",
+        "text": "*Rindo. Enquanto chorava.*"
+    },
+    "day4_after_ft_sea_pre": {
+        "name": "Eu",
+        "text": "*Sea agarrou seu braço. Tento me levantar, mas ele não me deixa ir.*"
+    },
+    "day4_after_ft_sea": {
+        "name": "Han Sea",
+        "text": "...Se você tem algo a dizer, diga. Nada muda de qualquer maneira."
+    },
+    "day4_after_ft_sea_post": {
+        "name": "Eu",
+        "text": "*Sea soltou a mão dela. Não importa o que eu disse, os olhos de Sea não mudaram. Nem triste nem zangado - apenas a boa e velha resignação.*"
+    },
+    "day4_after_eunsu_route": {
+        "name": "Eu",
+        "text": "*Ele foi para a sala do professor. Já não pode ser evitado. Você tem que perguntar diretamente.*"
+    },
+    "day4_after_eunsu_2": {
+        "name": "Eu",
+        "text": "*Professor Eunsu olha para mim e suspira. Expressão cansada. Existem olheiras sob os olhos. O professor está sozinho na sala do professor. Todos os outros professores deixaram seus lugares. — Você esvaziou ou esvaziou?*"
+    },
+    "day4_after_eunsu_3": {
+        "name": "Park Eunsu",
+        "text": "...Agora você percebeu."
+    },
+    "day4_after_eunsu_4": {
+        "name": "Park Eunsu",
+        "text": "...Você sabe que é o 13º?"
+    },
+    "day4_after_eunsu_4a": {
+        "name": "Eu",
+        "text": "*A professora fala enquanto faz o café. Calmamente. A mão que faz o café não treme. Como se eu estivesse me preparando para essa conversa.*"
+    },
+    "day4_after_eunsu_5": {
+        "name": "Eu",
+        "text": "*A professora faz café. Dois copos. Coloquei um na minha frente.*"
+    },
+    "day4_after_eunsu_6": {
+        "name": "Eu",
+        "text": "*...Duas colheres de açúcar, metade de creme. É exatamente igual ao que coloquei ontem na sala do professor.*"
+    },
+    "day4_after_eunsu_7": {
+        "name": "Eu",
+        "text": "*...Eu nunca te contei. Eu só vi uma vez ontem.*"
+    },
+    "day4_after_eunsu_8": {
+        "name": "Park Eunsu",
+        "text": "Certo? Sua preferência."
+    },
+    "day4_after_eunsu_9": {
+        "name": "Eu",
+        "text": "*A professora ri. Essa risada é o primeiro tipo que já vi. Não o sorriso caloroso do primeiro dia, mas o alívio que uma pessoa que esperou por muito tempo finalmente sente na frente da outra.*"
+    },
+    "day4_after_eunsu_10": {
+        "name": "Eu",
+        "text": "*A gaveta da mesa está entreaberta. Dá para ver um post-it dentro. Dezenas de folhas. Cheio de letras. — É tudo apenas um nome. Nomes diferentes. Alguns estão riscados.*"
+    },
+    "day4_after_eunsu_11": {
+        "name": "Eu",
+        "text": "*Meu nome no post-it na parte inferior. Não há tachado.*"
+    },
+    "day4_after_eunsu_12": {
+        "name": "Eu",
+        "text": "*silêncio.*"
+    },
+    "day4_after_eunsu_13": {
+        "name": "Park Eunsu",
+        "text": "Está tudo bem, {name}. O professor cuidará de tudo."
+    },
+    "day4_after_eunsu_14": {
+        "name": "Eu",
+        "text": "*A mão do professor acaricia minha cabeça. suavemente.*"
+    },
+    "day4_after_eunsu_15": {
+        "name": "Eu",
+        "text": "*...Esta mão apagou 12 memórias.*"
+    },
+    "day4_after_riin_route": {
+        "name": "Eu",
+        "text": "*Fui para a enfermaria. Eu não preciso de remédio. Há algo que quero verificar.*"
+    },
+    "day4_after_riin_2": {
+        "name": "Eu",
+        "text": "*A professora Riin está sentada à mesa. Estava organizando documentos. Quando entro, sua mão para. Ela vira os papéis. Devagar. Naturalmente. Mas eu vi. O título: 'Registros de Medicação S-13'.*"
+    },
+    "day4_after_riin_3": {
+        "name": "Kang Riin",
+        "text": "...O quê? Não me assuste."
+    },
+    "day4_after_riin_4": {
+        "name": "Eu",
+        "text": "*A maneira como você olha para mim é diferente do habitual. Olhos atentos...Não, não é uma fronteira. É exploração. Olhos que medem o que eu sei.*"
+    },
+    "day4_after_riin_5": {
+        "name": "Eu",
+        "text": "Professor Riin."
+    },
+    "day4_after_riin_5a": {
+        "name": "Kang Riin",
+        "text": "huh?"
+    },
+    "day4_after_riin_5b": {
+        "name": "Eu",
+        "text": "Você não quer mais esconder isso, não é?"
+    },
+    "day4_after_riin_6": {
+        "name": "Eu",
+        "text": "*silêncio. 3 segundos. A expressão da professora Riin não muda. Não estou surpreso. Não entrar em pânico.*"
+    },
+    "day4_after_riin_7": {
+        "name": "Kang Riin",
+        "text": "...Quanto você percebeu?"
+    },
+    "day4_after_riin_8": {
+        "name": "Eu",
+        "text": "*Uma palavra. Calmamente. Como se... eu estivesse esperando por esse momento. Professora Riin se levanta. Verifique a porta da enfermaria. Bloqueie.*"
+    },
+    "day4_after_riin_9": {
+        "name": "Kang Riin",
+        "text": "O que você viu lá?"
+    },
+    "day4_after_riin_10": {
+        "name": "Eu",
+        "text": "As coisas que esta escola esconde. Drogas, discos, pessoas."
+    },
+    "day4_after_riin_11": {
+        "name": "Eu",
+        "text": "*Professor Riin suspira. longo. Um suspiro que parece se livrar de um fardo.*"
+    },
+    "day4_after_riin_12": {
+        "name": "Kang Riin",
+        "text": "...mais rápido. Mais rápido que o dia 12."
+    },
+    "day4_after_riin_15": {
+        "name": "Eu",
+        "text": "*A professora Riin tira algo do bolso. Uma chave. Uma pequena chave de metal.*"
+    },
+    "day4_after_riin_16": {
+        "name": "Eu",
+        "text": "*Segure-o na minha frente - e então para.*"
+    },
+    "day4_after_riin_17": {
+        "name": "Kang Riin",
+        "text": "...Ainda não."
+    },
+    "day4_after_riin_18": {
+        "name": "Eu",
+        "text": "*Coloca as chaves de volta no bolso.*"
+    },
+    "day4_after_riin_19": {
+        "name": "Eu",
+        "text": "O que é aquilo?"
+    },
+    "day4_after_riin_20": {
+        "name": "Kang Riin",
+        "text": "amanhã."
+    },
+    "day4_after_riin_21": {
+        "name": "Eu",
+        "text": "*A professora Riin olha para mim. Pela primeira vez, não com olhos de professora da enfermaria.*"
+    },
+    "day4_after_riin_22": {
+        "name": "Kang Riin",
+        "text": "Não faça nada esta noite. Não conte a ninguém sobre isso."
+    },
+    "day4_after_riin_23": {
+        "name": "Kang Riin",
+        "text": "Nunca para Eunsu."
+    },
+    "day4_after_riin_24": {
+        "name": "Eu",
+        "text": "*Voz abaixa*"
+    },
+    "day4_after_riin_25": {
+        "name": "Kang Riin",
+        "text": "...Vou ganhar algum tempo para você. Só até amanhã de manhã."
+    },
+    "day4_after_riin_26": {
+        "name": "Eu",
+        "text": "*A professora Riin olha pela janela. O sol se põe. A enfermaria se tinge de laranja.*"
+    },
+    "day4_after_riin_27": {
+        "name": "Kang Riin",
+        "text": "...eu não posso mais fazer isso. Isso."
+    },
+    "day4_after_end": {
+        "name": "Eu",
+        "text": "*O sol se pôs. A escola está mergulhada na escuridão. Amanhã chega. Dia 5.*"
+    },
+    "day4_xover_yuna_1": {
+        "name": "",
+        "text": "*Eu estava saindo da sala de aula — Yuna estava parada no corredor. Acho que estava esperando.*"
+    },
+    "day4_xover_yuna_2": {
+        "name": "Choi Yuna",
+        "text": "...Você conhece Junho Lee?"
+    },
+    "day4_xover_yuna_3": {
+        "name": "Eu",
+        "text": "...Quem?"
+    },
+    "day4_xover_yuna_4": {
+        "name": "Choi Yuna",
+        "text": "Eu sabia disso."
+    },
+    "day4_xover_yuna_5": {
+        "name": "Choi Yuna",
+        "text": "Ele sempre faz isso. Volta com a mesma cara. Diz que não sabe."
+    },
+    "day4_xover_yuna_6": {
+        "name": "",
+        "text": "*(tira o álbum de fotos)*"
+    },
+    "day4_xover_yuna_7": {
+        "name": "Choi Yuna",
+        "text": "Está aqui. Do número 1 até agora."
+    },
+    "day4_xover_yuna_8": {
+        "name": "Choi Yuna",
+        "text": "Tudo – você."
+    },
+    "day4_xover_yuna_9": {
+        "name": "",
+        "text": "*Olhei o álbum de fotos. Mesmo uniforme escolar. Mesmo corredor. O mesmo rosto – apenas expressões diferentes. Capítulo 12.*"
+    },
+    "day4_xover_yuna_10": {
+        "name": "",
+        "text": "*Yuna fechou o álbum de fotos e caminhou silenciosamente.*"
+    },
+    "day4_xover_yuna_skip": {
+        "name": "",
+        "text": "*Estou prestes a sair da sala de aula — Yuna está parada no corredor.*"
+    },
+    "day4_xover_yuna_skip_met": {
+        "name": "",
+        "text": "*Estou prestes a sair da sala de aula — Yuna está parada no corredor.*"
+    },
+    "day4_xover_yuna_skip_2": {
+        "name": "Choi Yuna",
+        "text": "...Não. Não é nada."
+    },
+    "day4_xover_yuna_skip_3": {
+        "name": "",
+        "text": "*Yuna balançou a cabeça e foi embora.*"
+    }
 }

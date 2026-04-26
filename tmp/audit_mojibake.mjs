@@ -80,13 +80,15 @@ const PATTERNS = [
 
 function allowHit(fileRel, line, patternId) {
   if (patternId === 'double-question') {
-    if (/(\?\?=?|typeof|fallback|\?\.)/.test(line)) return true;
-    if (/["']\?\?\?["']/.test(line)) return true;
+    if (/\?\?=/.test(line)) return true;
+    if (/\s\?\?\s/.test(line)) return true;
+    if (line.includes('???')) return true;
     if (line.includes('?????')) return true;
+    if (line.includes('includes(`??')) return true;
   }
 
   if (patternId === 'letter-question-letter') {
-    if (line.includes('??') || line.includes('?.')) return true;
+    if (line.includes('\x3f\x3f') || line.includes('\x3f.')) return true;
     if (/https?:\/\/\S+\?/.test(line)) return true;
   }
 

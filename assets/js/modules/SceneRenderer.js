@@ -66,8 +66,15 @@ class SceneRenderer {
     // 캐릭터 이름 프리픽스 추출 (eunsu_smile.png → eunsu)
     _getCharPrefix(src) {
         if (!src) return null;
-        const filename = src.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
+        const cleanSrc = String(src).split(/[?#]/)[0];
+        const filename = cleanSrc.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
         return filename.split('_')[0];
+    }
+
+    _withAssetVersion(src) {
+        if (!src || !/^assets\/images\/characters\//.test(src) || /[?#]/.test(src)) return src;
+        const version = (typeof CONFIG !== 'undefined' && CONFIG.VERSION) ? CONFIG.VERSION : '1';
+        return `${src}?v=${encodeURIComponent(version)}`;
     }
 
     /**
@@ -92,13 +99,14 @@ class SceneRenderer {
                   : position === 'right' ? this.charRight
                   : this.charCenter;
         if (!el) return;
+        const resolvedSrc = this._withAssetVersion(src);
 
         // 목표 opacity 문자열 ('0.35' 등). undefined이면 '' (CSS 기본값 = 1)
         const targetOpacity = (opacity != null && opacity < 1) ? String(opacity) : '';
 
         // 같은 이미지 + 같은 opacity면 아무것도 안 함 (깜빡임 방지)
         const prevSrc = el.getAttribute('src');
-        if (prevSrc === src && el.style.opacity === targetOpacity) return;
+        if (prevSrc === resolvedSrc && el.style.opacity === targetOpacity) return;
 
         // 이전 클론이 남아있으면 제거
         this._removePrevClone(el);
@@ -108,11 +116,11 @@ class SceneRenderer {
 
         if (prevSrc && prevSrc !== '') {
             const prevPrefix = this._getCharPrefix(prevSrc);
-            const newPrefix = this._getCharPrefix(src);
+            const newPrefix = this._getCharPrefix(resolvedSrc);
 
             if (prevPrefix === newPrefix) {
                 // 같은 캐릭터 표정 변화 → 즉시 교체 (깜빡임 없음)
-                el.src = src;
+                el.src = resolvedSrc;
                 el.style.opacity = targetOpacity;
             } else {
                 // 다른 캐릭터 → 페이드아웃 후 페이드인
@@ -120,7 +128,7 @@ class SceneRenderer {
                 el.style.opacity = '0';
                 el._charTimer = setTimeout(() => {
                     el.classList.remove('char-fade-out');
-                    el.src = src;
+                    el.src = resolvedSrc;
                     el.classList.add('char-fade-in');
                     el.style.opacity = '0';
                     requestAnimationFrame(() => {
@@ -138,7 +146,7 @@ class SceneRenderer {
             // 새 등장 — 페이드인
             el.classList.add('char-fade-in');
             el.style.opacity = '0';
-            el.src = src;
+            el.src = resolvedSrc;
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => { el.style.opacity = targetOpacity; });
             });
@@ -150,6 +158,10 @@ class SceneRenderer {
         [this.charLeft, this.charCenter, this.charRight].forEach(el => {
             if (!el || el.getAttribute('src') === '') return;
             this._removePrevClone(el);
+            if (el._charTimer) {
+                clearTimeout(el._charTimer);
+                el._charTimer = null;
+            }
             el.classList.add('char-fade-out');
             el.style.opacity = '0';
             setTimeout(() => {

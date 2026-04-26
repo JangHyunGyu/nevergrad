@@ -2145,10 +2145,13 @@ class GlitchSystemAdvanced {
         ['char-left', 'char-center', 'char-right'].forEach(id => {
             const src = document.getElementById(id);
             if (!src?.src || src.src.endsWith('/') || src.style.display === 'none') return;
+            if (src.classList.contains('char-fade-out')) return;
+            const opacity = parseFloat(window.getComputedStyle(src).opacity || '1');
+            if (opacity <= 0.05) return;
 
             // 스프라이트 URL에서 charId 추출: 파일명 첫 언더스코어 앞 토큰
             // 예) assets/images/characters/seolhwa_sad.png → 'seolhwa'
-            const filename = src.src.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
+            const filename = src.src.split(/[?#]/)[0].split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
             const charId = filename.split('_')[0];
             if (absentCharId && charId === absentCharId) return;
 

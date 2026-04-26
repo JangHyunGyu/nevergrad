@@ -95,8 +95,8 @@ function initializeTitleLineup() {
     const characters = [
         { id: 'title-char-seolhwa', name: 'seolhwa', src: 'assets/images/characters/seolhwa_quiet.png' },
         { id: 'title-char-yuna', name: 'yuna', src: 'assets/images/characters/yuna_normal.png' },
-        { id: 'title-char-sea', name: 'sea', src: 'assets/images/characters/sea_normal.png', ngp: 'assets/images/characters/sea_stare.png' },
         { id: 'title-char-eunsu', name: 'eunsu', src: 'assets/images/characters/eunsu_normal.png' },
+        { id: 'title-char-sea', name: 'sea', src: 'assets/images/characters/sea_normal.png', ngp: 'assets/images/characters/sea_stare.png' },
         { id: 'title-char-riin', name: 'riin', src: 'assets/images/characters/riin_smile.png' }
     ];
 
@@ -113,7 +113,7 @@ function initializeTitleLineup() {
         img.className = `title-char title-char-lineup title-char-${char.name}`;
         img.alt = '';
         img.decoding = 'async';
-        img.fetchPriority = index === 2 ? 'high' : 'auto';
+        img.fetchPriority = char.name === 'eunsu' ? 'high' : 'auto';
         img.dataset.titleCharacter = char.name;
         img.dataset.src = getNevergradAssetPath(char.src);
         img.dataset.default = getNevergradAssetPath(char.src);

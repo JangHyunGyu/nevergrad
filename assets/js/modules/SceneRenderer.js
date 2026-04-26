@@ -55,7 +55,7 @@ class SceneRenderer {
 
         const el = document.createElement('div');
         el.id = 'media-overlay';
-        el.className = 'scene-media-overlay hidden';
+        el.className = 'scene-media-layer hidden';
         el.setAttribute('aria-hidden', 'true');
 
         const parent = this.bgOverlay?.parentNode || this.bgLayer?.parentNode || document.getElementById('game-screen');
@@ -75,7 +75,7 @@ class SceneRenderer {
         const el = this.mediaOverlay;
         if (!el) return;
         el.replaceChildren();
-        el.className = 'scene-media-overlay hidden';
+        el.className = 'scene-media-layer hidden';
         el.removeAttribute('data-media-type');
     }
 
@@ -91,7 +91,7 @@ class SceneRenderer {
         const typeClass = `scene-media-${String(data.type || 'default').replace(/[A-Z]/g, m => '-' + m.toLowerCase())}`;
         const variantClass = data.variant ? `scene-media-variant-${String(data.variant).replace(/[^a-z0-9_-]/gi, '').toLowerCase()}` : '';
         el.replaceChildren();
-        el.className = ['scene-media-overlay', typeClass, variantClass].filter(Boolean).join(' ');
+        el.className = ['scene-media-layer', typeClass, variantClass].filter(Boolean).join(' ');
         el.dataset.mediaType = data.type || 'default';
         el.setAttribute('aria-hidden', 'true');
 

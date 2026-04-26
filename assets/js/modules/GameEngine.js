@@ -333,6 +333,10 @@ class GameEngine {
         if (scene.background) {
             const bgPath = CONFIG.BACKGROUNDS[scene.background] || scene.background;
             this.renderer.setBackground(bgPath);
+        } else if (/^day5_ending_true_2[6-7]$/.test(sceneId)) {
+            this.renderer.setBackground(CONFIG.BACKGROUNDS.news_article);
+        } else if (/^day5_morning_true_([2-9]|1[0-9]|2[0-7])$/.test(sceneId)) {
+            this.renderer.setBackground(CONFIG.BACKGROUNDS.lab_documents);
         }
 
         // 오버레이
@@ -596,7 +600,9 @@ class GameEngine {
             return this._buildNewsArticleMedia(extraVars);
         }
 
-        if (scene.background === 'lab_documents' || /^day5_morning_true_[1-5]$/.test(sceneId)) {
+        const labMediaScene = scene.background === 'lab_documents'
+            || /^day5_morning_true_([1-9]|1[0-3]|1[6-9]|2[0-7])$/.test(sceneId);
+        if (labMediaScene && !scene.character) {
             return this._buildLabDocumentMedia(sceneId, resolvedText);
         }
 

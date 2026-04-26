@@ -31,6 +31,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_mirror_1"
     },
     "day3_morning_mirror_1": {
+        background: "bathroom",
         character: null,
         glitch: { mirrorFog: true },
         next: "day3_morning_mirror_2"
@@ -49,6 +50,7 @@ Object.assign(SCENARIO[3], {
 
     // ===== 냉장고: 우유 위치 변경 =====
     "day3_morning_milk_1": {
+        background: "room_morning",
         character: null,
         next: "day3_morning_milk_2"
     },

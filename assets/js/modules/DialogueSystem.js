@@ -17,6 +17,33 @@ class DialogueSystem {
     }
 
     /**
+     * 텍스트가 `*…*` (italic) 또는 `***…***` (bold+italic) 로 감싸진 나레이션인지 판별
+     * - 양 끝의 `*` 개수가 홀수(1 또는 3) 이면 나레이션 — 가장 바깥쪽 `*` 가 italic 마커
+     * - 양 끝이 짝수(2 또는 4) 면 bold 전용이므로 나레이션 아님
+     * - 안쪽에 `**bold**` 가 끼어 있어 끝이 `***` 이 되는 경우(= bold 닫힘 + italic 닫힘) 도 정상 처리됨
+     */
+    _isNarration(text) {
+        if (!text || typeof text !== 'string') return false;
+        const lead = this._countLeadingAsterisks(text);
+        const trail = this._countTrailingAsterisks(text);
+        if (lead === 0 || trail === 0) return false;
+        // 시작과 끝 모두 홀수 개수의 `*` 를 가져야 italic 래퍼가 존재
+        return (lead % 2 === 1) && (trail % 2 === 1);
+    }
+
+    _countLeadingAsterisks(text) {
+        let n = 0;
+        while (n < text.length && text[n] === '*') n++;
+        return n;
+    }
+
+    _countTrailingAsterisks(text) {
+        let n = 0;
+        while (n < text.length && text[text.length - 1 - n] === '*') n++;
+        return n;
+    }
+
+    /**
      * 마크다운 텍스트 서식을 HTML로 변환
      * **bold** → <strong>bold</strong>
      * *italic* → <em>italic</em>
@@ -53,7 +80,8 @@ class DialogueSystem {
         this._unskippable = !!options.unskippable;
 
         // 나레이션 처리 (*로 감싸진 텍스트, **bold**와 충돌 방지)
-        const isNarration = text.startsWith('*') && !text.startsWith('**') && text.endsWith('*') && !text.endsWith('**');
+        // 끝이 `***` 인 경우는 `**bold**` 닫힘 + `*` 나레이션 닫힘으로, 여전히 나레이션임
+        const isNarration = this._isNarration(text);
         const displayText = isNarration ? text.slice(1, -1) : text;
 
         if (this.textEl) {
@@ -129,7 +157,7 @@ class DialogueSystem {
         // unskippable 장면에서는 스킵 차단 (공포 연출용)
         if (this._unskippable) return;
 
-        const isNarration = this._fullText.startsWith('*') && !this._fullText.startsWith('**') && this._fullText.endsWith('*') && !this._fullText.endsWith('**');
+        const isNarration = this._isNarration(this._fullText);
         const displayText = isNarration ? this._fullText.slice(1, -1) : this._fullText;
 
         if (this.textEl) {

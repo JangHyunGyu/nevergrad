@@ -168,6 +168,8 @@ const CONFIG = {
         // 자취방
         home: "assets/images/background/home.png",
         room_night: "assets/images/background/room_night.png",        // 스탠드+폰빛 고유 구도
+        bathroom: "assets/images/background/bathroom_night.png",
+        bathroom_night: "assets/images/background/bathroom_night.png",
         // 특수
         black: "assets/images/background/black.png",
         white: "assets/images/background/black.png",               // alias: white.png 없음 → black 재사용 (CSS 필터로 반전)

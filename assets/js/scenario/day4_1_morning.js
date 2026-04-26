@@ -49,6 +49,7 @@ Object.assign(SCENARIO[4], {
     // ── 거울 회피 시퀀스 ──
     // 김 서린 거울
     "day4_morning_start_7": {
+        background: "bathroom",
         character: null,
         glitch: { noise: true, noiseDuration: 200 },
         next: "day4_morning_start_8"
@@ -84,6 +85,7 @@ Object.assign(SCENARIO[4], {
     },
     // 교복 입는 손이 떨린다
     "day4_morning_start_13": {
+        background: "room_morning",
         character: null,
         next: "day4_morning_start_14"
     },

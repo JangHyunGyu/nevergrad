@@ -285,7 +285,7 @@ Object.assign(SCENARIO[4], {
 
     // 화장실로 이동
     "day4_night_mirror": {
-        background: "home",
+        background: "bathroom_night",
         bgm: null,
         character: null,
         unskippable: true,

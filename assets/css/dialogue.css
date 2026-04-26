@@ -478,6 +478,31 @@
     animation: timer-critical 0.3s ease infinite;
 }
 
+@media (min-width: 1200px) and (min-height: 650px) {
+    .timer-bar-wrapper {
+        height: 7px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+    }
+    .timer-bar-fill {
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 1600px) and (min-height: 820px) {
+    .timer-bar-wrapper {
+        height: 8px;
+        margin-bottom: 18px;
+    }
+}
+
+@media (min-width: 2200px) and (min-height: 1100px) {
+    .timer-bar-wrapper {
+        height: 9px;
+        margin-bottom: 20px;
+    }
+}
+
 @keyframes timer-critical {
     0%, 100% { opacity: 1; }
     50%      { opacity: 0.5; }

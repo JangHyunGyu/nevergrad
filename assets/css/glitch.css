@@ -2036,6 +2036,200 @@ body.cursor-slowed * {
     box-shadow: 0 0 22px rgba(255, 70, 70, 0.42);
 }
 
+@media (min-width: 1200px) and (min-height: 650px) {
+    .choice-timer {
+        height: 5px;
+        margin-bottom: 16px;
+    }
+    .choice-timer-text {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+    .photo-deck-shell,
+    .locker-search-shell {
+        width: min(88vw, 860px);
+        max-height: min(88vh, 760px);
+        gap: 16px;
+        padding: 22px;
+    }
+    .photo-deck-title,
+    .locker-search-title {
+        font-size: 0.92rem;
+    }
+    .photo-deck-counter {
+        font-size: 0.86rem;
+    }
+    .photo-deck-viewport {
+        min-height: 420px;
+    }
+    .photo-deck-card {
+        width: min(56vw, 370px);
+        padding: 26px 22px 22px;
+    }
+    .photo-deck-slot {
+        font-size: 0.78rem;
+    }
+    .photo-deck-name {
+        font-size: 1.18rem;
+    }
+    .photo-deck-tag,
+    .photo-deck-note {
+        font-size: 0.84rem;
+    }
+    .photo-deck-nav {
+        width: 44px;
+        height: 58px;
+        font-size: 2.25rem;
+    }
+    .photo-deck-prev { left: 8px; }
+    .photo-deck-next { right: 8px; }
+    .photo-deck-strip {
+        gap: 8px;
+    }
+    .photo-deck-dot {
+        width: 10px;
+        height: 10px;
+    }
+    .photo-deck-hint,
+    .locker-search-status {
+        font-size: 0.9rem;
+        min-height: 1.45rem;
+    }
+    .photo-deck-complete,
+    .locker-search-complete {
+        padding: 12px 22px;
+        font-size: 0.95rem;
+    }
+    .locker-search-stage {
+        height: min(52vh, 430px);
+        gap: 12px;
+        padding: 14px;
+    }
+    .locker-hotspot-dust {
+        width: 40px;
+        height: 40px;
+    }
+    .locker-hotspot-clean {
+        width: 38px;
+        height: 38px;
+    }
+    .locker-hotspot-seam {
+        width: 50px;
+        height: 34px;
+    }
+    .locker-hotspot-camera {
+        width: 44px;
+        height: 34px;
+    }
+}
+
+@media (min-width: 1600px) and (min-height: 820px) {
+    .choice-timer {
+        height: 6px;
+        margin-bottom: 18px;
+    }
+    .choice-timer-text {
+        font-size: 1rem;
+    }
+    .photo-deck-shell,
+    .locker-search-shell {
+        width: min(86vw, 980px);
+        max-height: min(88vh, 840px);
+        gap: 18px;
+        padding: 26px;
+    }
+    .photo-deck-title,
+    .locker-search-title {
+        font-size: 1rem;
+    }
+    .photo-deck-counter {
+        font-size: 0.92rem;
+    }
+    .photo-deck-viewport {
+        min-height: 500px;
+    }
+    .photo-deck-card {
+        width: min(52vw, 430px);
+        padding: 30px 26px 26px;
+    }
+    .photo-deck-slot {
+        font-size: 0.84rem;
+    }
+    .photo-deck-name {
+        font-size: 1.32rem;
+    }
+    .photo-deck-tag,
+    .photo-deck-note {
+        font-size: 0.92rem;
+    }
+    .photo-deck-nav {
+        width: 50px;
+        height: 66px;
+        font-size: 2.55rem;
+    }
+    .photo-deck-prev { left: 12px; }
+    .photo-deck-next { right: 12px; }
+    .photo-deck-dot {
+        width: 12px;
+        height: 12px;
+    }
+    .photo-deck-hint,
+    .locker-search-status {
+        font-size: 0.98rem;
+    }
+    .photo-deck-complete,
+    .locker-search-complete {
+        padding: 13px 26px;
+        font-size: 1.02rem;
+    }
+    .locker-search-stage {
+        height: min(54vh, 500px);
+        gap: 14px;
+        padding: 16px;
+    }
+}
+
+@media (min-width: 2200px) and (min-height: 1100px) {
+    .choice-timer {
+        height: 7px;
+        margin-bottom: 20px;
+    }
+    .choice-timer-text {
+        font-size: 1.08rem;
+    }
+    .photo-deck-shell,
+    .locker-search-shell {
+        width: min(84vw, 1120px);
+        max-height: min(88vh, 960px);
+        gap: 22px;
+        padding: 32px;
+    }
+    .photo-deck-viewport {
+        min-height: 590px;
+    }
+    .photo-deck-card {
+        width: min(48vw, 500px);
+        padding: 34px 30px 30px;
+    }
+    .photo-deck-name {
+        font-size: 1.5rem;
+    }
+    .photo-deck-tag,
+    .photo-deck-note {
+        font-size: 1rem;
+    }
+    .photo-deck-nav {
+        width: 58px;
+        height: 76px;
+        font-size: 2.9rem;
+    }
+    .locker-search-stage {
+        height: min(56vh, 580px);
+        gap: 16px;
+        padding: 18px;
+    }
+}
+
 @media (max-width: 700px) {
     .photo-deck-shell,
     .locker-search-shell {

@@ -53,6 +53,8 @@ class AudioManager {
         this._activeSlotA = true;
         /** @type {string|null} 현재 재생 중인 BGM 파일명 */
         this._currentBGM = null;
+        this._pendingBGM = null;
+        this._bgmRequestId = 0;
         /** @type {string|null} 현재 재생 중인 환경음 파일명 */
         this._currentAmbient = null;
         /** @type {boolean} AudioContext가 unlock 되었는지 */
@@ -271,13 +273,20 @@ class AudioManager {
         if (!this.ctx) return;
         if (this._currentBGM === filename) return; // 같은 곡이면 무시
 
+        if (this._pendingBGM === filename) return;
         const fadeIn = options.fadeIn ?? this.CROSSFADE_DURATION;
         const fadeOut = options.fadeOut ?? this.CROSSFADE_DURATION;
         const immediate = options.immediate || false;
         const path = `assets/audio/bgm/${filename}`;
+        const requestId = ++this._bgmRequestId;
+        this._pendingBGM = filename;
 
         const buffer = await this.loadBuffer(path);
-        if (!buffer) return;
+        if (requestId !== this._bgmRequestId || this._pendingBGM !== filename) return;
+        if (!buffer) {
+            this._pendingBGM = null;
+            return;
+        }
 
         const now = this.ctx.currentTime;
 
@@ -334,6 +343,7 @@ class AudioManager {
 
         this._activeSlotA = !this._activeSlotA;
         this._currentBGM = filename;
+        this._pendingBGM = null;
     }
 
     /**
@@ -343,6 +353,8 @@ class AudioManager {
     stopBGM(fadeOut = 1.0) {
         if (!this.ctx) return;
         const now = this.ctx.currentTime;
+        this._bgmRequestId++;
+        this._pendingBGM = null;
 
         [this.bgmGainA, this.bgmGainB].forEach(gain => {
             if (gain) {
@@ -882,7 +894,7 @@ class AudioManager {
      * @returns {string|null}
      */
     getCurrentBGM() {
-        return this._currentBGM;
+        return this._currentBGM || this._pendingBGM;
     }
 
     // =========================================================================

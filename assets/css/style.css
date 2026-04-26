@@ -1532,6 +1532,12 @@ body {
     transform: translateX(-50%) translateY(10px);
 }
 
+.evidence-toast {
+    border-color: rgba(125, 210, 185, 0.45);
+    color: rgba(235, 255, 248, 0.95);
+    background: rgba(8, 28, 26, 0.9);
+}
+
 /* ===== Save/Load Slot Selector ===== */
 .sl-container {
     width: 90%;

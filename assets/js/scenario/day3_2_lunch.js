@@ -88,6 +88,7 @@ Object.assign(SCENARIO[3], {
     // 카메라를 받았다. 화면에 사진이 떠 있다.
     "day3_lunch_rooftop_5": {
         character: "yuna_scared",
+        interaction: { type: "photo_deck", deck: "yuna_13" },
         next: "day3_lunch_rooftop_6"
     },
     // 사진: 김도진

@@ -223,7 +223,9 @@ class StateManager {
     addEvidence(evidence) {
         if (!this.evidence.find(e => e.id === evidence.id)) {
             this.evidence.push(evidence);
+            return true;
         }
+        return false;
     }
 
     hasEvidence(evidenceId) {

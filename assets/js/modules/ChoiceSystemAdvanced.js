@@ -84,14 +84,16 @@ class ChoiceSystemAdvanced {
      * @param {string[]} choices - 선택지 텍스트 배열
      * @param {number} timeMs - 제한 시간 (ms)
      * @param {number} timeoutIndex - 시간 초과 시 자동 선택될 인덱스 (-1: 타임아웃 이벤트)
+     * @param {Object} [options] - 표시 옵션
+     * @param {boolean} [options.skipDrugPenalty=false] - 호출자가 이미 약물 패널티를 반영했는지 여부
      * @returns {Promise<number>} 선택된 인덱스 (-1은 타임아웃)
      */
-    async showTimedChoice(choices, timeMs, timeoutIndex = -1) {
+    async showTimedChoice(choices, timeMs, timeoutIndex = -1, options = {}) {
         this._cleanup();
 
         // 약물 패널티: 리인 음료를 마셨으면 타이머 감산
         const state = this.engine?.state;
-        if (state && state.hasFlag('drank_riin_drink') && state.currentDay >= 4) {
+        if (!options.skipDrugPenalty && state && state.hasFlag('drank_riin_drink') && state.currentDay >= 4) {
             timeMs = Math.max(2000, timeMs - 2000);
         }
 

@@ -22,6 +22,361 @@
  */
 
 class GlitchSystemAdvanced {
+    // =========================================================================
+    // Interactive photo deck and investigation scenes
+    // =========================================================================
+
+    showPhotoDeck(opts = {}) {
+        this.hidePhotoDeck();
+
+        const data = this._getPhotoDeckData(opts.deck || 'yuna_13');
+        const photos = data.photos;
+        const copy = this._getInteractionCopy(this._getLang());
+        let index = 0;
+        const viewed = new Set([0]);
+
+        const overlay = document.createElement('div');
+        overlay.className = 'photo-deck-overlay';
+        overlay.id = 'photo-deck-overlay';
+
+        const shell = document.createElement('div');
+        shell.className = 'photo-deck-shell';
+
+        const header = document.createElement('div');
+        header.className = 'photo-deck-header';
+
+        const title = document.createElement('div');
+        title.className = 'photo-deck-title';
+        title.textContent = data.title;
+
+        const counter = document.createElement('div');
+        counter.className = 'photo-deck-counter';
+
+        header.appendChild(title);
+        header.appendChild(counter);
+
+        const viewport = document.createElement('div');
+        viewport.className = 'photo-deck-viewport';
+
+        const card = document.createElement('div');
+        card.className = 'photo-deck-card';
+
+        const scanline = document.createElement('div');
+        scanline.className = 'photo-deck-scanline';
+
+        const face = document.createElement('div');
+        face.className = 'photo-deck-face';
+        face.appendChild(document.createElement('span'));
+        face.appendChild(document.createElement('span'));
+        face.appendChild(document.createElement('span'));
+
+        const meta = document.createElement('div');
+        meta.className = 'photo-deck-meta';
+
+        const slot = document.createElement('div');
+        slot.className = 'photo-deck-slot';
+        const name = document.createElement('div');
+        name.className = 'photo-deck-name';
+        const tag = document.createElement('div');
+        tag.className = 'photo-deck-tag';
+        const note = document.createElement('div');
+        note.className = 'photo-deck-note';
+
+        meta.appendChild(slot);
+        meta.appendChild(name);
+        meta.appendChild(tag);
+        meta.appendChild(note);
+        card.appendChild(scanline);
+        card.appendChild(face);
+        card.appendChild(meta);
+
+        const prev = document.createElement('button');
+        prev.className = 'photo-deck-nav photo-deck-prev';
+        prev.type = 'button';
+        prev.textContent = '\u2039';
+        prev.setAttribute('aria-label', copy.previous);
+
+        const next = document.createElement('button');
+        next.className = 'photo-deck-nav photo-deck-next';
+        next.type = 'button';
+        next.textContent = '\u203a';
+        next.setAttribute('aria-label', copy.next);
+
+        viewport.appendChild(prev);
+        viewport.appendChild(card);
+        viewport.appendChild(next);
+
+        const strip = document.createElement('div');
+        strip.className = 'photo-deck-strip';
+
+        const hint = document.createElement('div');
+        hint.className = 'photo-deck-hint';
+        hint.textContent = copy.photoHint;
+
+        const complete = document.createElement('button');
+        complete.className = 'photo-deck-complete hidden';
+        complete.type = 'button';
+        complete.textContent = copy.photoComplete;
+
+        shell.appendChild(header);
+        shell.appendChild(viewport);
+        shell.appendChild(strip);
+        shell.appendChild(hint);
+        shell.appendChild(complete);
+        overlay.appendChild(shell);
+        document.body.appendChild(overlay);
+
+        const render = (direction = 0) => {
+            const photo = photos[index];
+            viewed.add(index);
+
+            card.classList.remove('photo-deck-card-in', 'photo-deck-card-prev', 'photo-deck-card-next', 'photo-deck-current');
+            void card.offsetWidth;
+            card.classList.add('photo-deck-card-in', direction < 0 ? 'photo-deck-card-prev' : 'photo-deck-card-next');
+            if (photo.current) card.classList.add('photo-deck-current');
+
+            const playerName = this.engine?.state?.playerName || copy.player;
+            slot.textContent = `#${String(photo.slot).padStart(2, '0')}`;
+            name.textContent = String(photo.name).replace('{name}', playerName);
+            tag.textContent = photo.tag;
+            note.textContent = photo.note;
+            counter.textContent = `${index + 1} / ${photos.length}`;
+
+            strip.innerHTML = '';
+            photos.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'photo-deck-dot';
+                if (i === index) dot.classList.add('photo-deck-dot-active');
+                if (viewed.has(i)) dot.classList.add('photo-deck-dot-seen');
+                dot.setAttribute('aria-label', `${copy.photo} ${i + 1}`);
+                dot.addEventListener('click', () => {
+                    const dir = i > index ? 1 : -1;
+                    index = i;
+                    render(dir);
+                });
+                strip.appendChild(dot);
+            });
+
+            complete.classList.toggle('hidden', viewed.size < photos.length);
+            if (viewed.size >= photos.length) hint.textContent = copy.photoDoneHint;
+
+            this.engine?.audio?.playUIClick?.();
+            if (photo.current) {
+                this.engine?.glitch?.screenNoise?.(260);
+                this.engine?.deviceGimmick?.vibrate?.('stat_crack');
+            }
+        };
+
+        const advance = (delta) => {
+            const nextIndex = Math.max(0, Math.min(photos.length - 1, index + delta));
+            if (nextIndex === index) return;
+            index = nextIndex;
+            render(delta);
+        };
+
+        prev.addEventListener('click', () => advance(-1));
+        next.addEventListener('click', () => advance(1));
+        card.addEventListener('click', () => advance(1));
+
+        let dragStartX = null;
+        const startDrag = (x) => { dragStartX = x; };
+        const endDrag = (x) => {
+            if (dragStartX == null) return;
+            const diff = x - dragStartX;
+            dragStartX = null;
+            if (Math.abs(diff) < 36) return;
+            advance(diff < 0 ? 1 : -1);
+        };
+
+        viewport.addEventListener('mousedown', (e) => startDrag(e.clientX));
+        viewport.addEventListener('mouseup', (e) => endDrag(e.clientX));
+        viewport.addEventListener('touchstart', (e) => startDrag(e.touches[0].clientX), { passive: true });
+        viewport.addEventListener('touchend', (e) => {
+            const touch = e.changedTouches[0];
+            if (touch) endDrag(touch.clientX);
+        }, { passive: true });
+
+        complete.addEventListener('click', () => {
+            this.hidePhotoDeck();
+            opts.onComplete?.();
+        });
+
+        requestAnimationFrame(() => overlay.classList.add('visible'));
+        render(1);
+    }
+
+    hidePhotoDeck() {
+        document.getElementById('photo-deck-overlay')?.remove();
+    }
+
+    showLockerSearch(opts = {}) {
+        this.hideLockerSearch();
+
+        const copy = this._getInteractionCopy(this._getLang());
+        let panelOpened = false;
+        let cameraFound = false;
+
+        const overlay = document.createElement('div');
+        overlay.className = 'locker-search-overlay';
+        overlay.id = 'locker-search-overlay';
+
+        const shell = document.createElement('div');
+        shell.className = 'locker-search-shell';
+
+        const title = document.createElement('div');
+        title.className = 'locker-search-title';
+        title.textContent = copy.lockerTitle;
+
+        const stage = document.createElement('div');
+        stage.className = 'locker-search-stage';
+
+        const lockers = [];
+        for (let i = 0; i < 3; i++) {
+            const locker = document.createElement('div');
+            locker.className = 'locker-search-locker';
+            if (i === 1) locker.classList.add('locker-search-target');
+            lockers.push(locker);
+            stage.appendChild(locker);
+        }
+
+        const status = document.createElement('div');
+        status.className = 'locker-search-status';
+        status.textContent = copy.lockerHint;
+
+        const complete = document.createElement('button');
+        complete.className = 'locker-search-complete hidden';
+        complete.type = 'button';
+        complete.textContent = copy.lockerComplete;
+
+        const makeHotspot = (cls, label, text) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = `locker-hotspot ${cls}`;
+            btn.setAttribute('aria-label', label);
+            btn.addEventListener('click', () => {
+                status.textContent = text;
+                btn.classList.add('locker-hotspot-found');
+                this.engine?.audio?.playUIClick?.();
+                this.engine?.deviceGimmick?.vibrate?.('timer_tick');
+            });
+            return btn;
+        };
+
+        lockers[0].appendChild(makeHotspot('locker-hotspot-dust', copy.dust, copy.dustFound));
+        lockers[1].appendChild(makeHotspot('locker-hotspot-clean', copy.clean, copy.cleanFound));
+
+        const seam = makeHotspot('locker-hotspot-seam', copy.seam, copy.seamFound);
+        lockers[1].appendChild(seam);
+
+        const camera = makeHotspot('locker-hotspot-camera hidden', copy.camera, copy.cameraFound);
+        lockers[1].appendChild(camera);
+
+        seam.addEventListener('click', () => {
+            if (panelOpened) return;
+            panelOpened = true;
+            stage.classList.add('locker-panel-open');
+            camera.classList.remove('hidden');
+        });
+
+        camera.addEventListener('click', () => {
+            if (cameraFound) return;
+            cameraFound = true;
+            stage.classList.add('locker-camera-found');
+            complete.classList.remove('hidden');
+            this.engine?.glitch?.screenNoise?.(180);
+        });
+
+        complete.addEventListener('click', () => {
+            this.hideLockerSearch();
+            opts.onComplete?.();
+        });
+
+        shell.appendChild(title);
+        shell.appendChild(stage);
+        shell.appendChild(status);
+        shell.appendChild(complete);
+        overlay.appendChild(shell);
+        document.body.appendChild(overlay);
+
+        requestAnimationFrame(() => overlay.classList.add('visible'));
+    }
+
+    hideLockerSearch() {
+        document.getElementById('locker-search-overlay')?.remove();
+    }
+
+    _getLang() {
+        return (this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko').slice(0, 2);
+    }
+
+    _getInteractionCopy(lang) {
+        const map = {
+            ko: {
+                player: '나',
+                previous: '이전 사진',
+                next: '다음 사진',
+                photo: '사진',
+                photoHint: '사진을 클릭하거나 좌우로 넘기세요. 마지막까지 확인해야 내려놓을 수 있습니다.',
+                photoDoneHint: '모든 사진을 확인했습니다.',
+                photoComplete: '카메라를 내려놓는다',
+                lockerTitle: '유나의 사물함',
+                lockerHint: '이상한 지점을 눌러 조사하세요.',
+                dust: '먼지가 쌓인 사물함',
+                clean: '닦인 사물함',
+                seam: '들뜬 바닥판',
+                camera: '숨겨진 카메라',
+                dustFound: '옆 사물함에는 먼지가 그대로 남아 있다.',
+                cleanFound: '유나의 사물함만 최근에 닦은 흔적이 있다.',
+                seamFound: '바닥 합판이 손톱 하나만큼 떠 있다.',
+                cameraFound: '이중 바닥 안쪽에서 카메라를 꺼냈다.',
+                lockerComplete: '카메라를 켠다'
+            },
+            en: {
+                player: 'Me',
+                previous: 'Previous photo',
+                next: 'Next photo',
+                photo: 'Photo',
+                photoHint: 'Click or swipe through the photos. You cannot put the camera down yet.',
+                photoDoneHint: 'Every photo has been checked.',
+                photoComplete: 'Put the camera down',
+                lockerTitle: "Yuna's locker",
+                lockerHint: 'Tap the suspicious spots to inspect them.',
+                dust: 'Dusty locker',
+                clean: 'Wiped locker',
+                seam: 'Raised floor panel',
+                camera: 'Hidden camera',
+                dustFound: 'The neighboring locker still has dust on it.',
+                cleanFound: "Only Yuna's locker was wiped recently.",
+                seamFound: 'The plywood floor is raised by a fingernail.',
+                cameraFound: 'A camera is hidden under the false bottom.',
+                lockerComplete: 'Turn the camera on'
+            }
+        };
+        return map[lang] || map.en;
+    }
+
+    _getPhotoDeckData(deck) {
+        return {
+            title: deck === 'yuna_13' ? 'YUNA_CAM / TRANSFER_STUDENTS' : 'CAMERA_ROLL',
+            photos: [
+                { slot: 1, name: '김도진', tag: '04.03 / 교문', note: '짧은 검은 머리. 새 교복.' },
+                { slot: 2, name: '이준서', tag: '04.08 / 교문', note: '안경. 같은 자세.' },
+                { slot: 3, name: '박서진', tag: '04.13 / 교문', note: '갈색 머리. 같은 눈.' },
+                { slot: 4, name: '정하율', tag: '04.18 / 교문', note: '머리색만 다르다.' },
+                { slot: 5, name: '강민혁', tag: '04.23 / 교문', note: '입꼬리의 흉터 위치가 같다.' },
+                { slot: 6, name: '윤재원', tag: '04.28 / 교문', note: '이름표만 바뀌었다.' },
+                { slot: 7, name: '김태호', tag: '05.03 / 교문', note: '피곤한 얼굴. 눈 밑이 꺼져 있다.' },
+                { slot: 8, name: '최시우', tag: '05.08 / 교문', note: '뒷주머니에 접힌 메모.' },
+                { slot: 9, name: '한지호', tag: '05.13 / 교문', note: '카메라를 알아본 표정.' },
+                { slot: 10, name: '송예준', tag: '05.18 / 교문', note: '시선이 CCTV로 향해 있다.' },
+                { slot: 11, name: '오태현', tag: '05.23 / 교문', note: '웃고 있지만 손은 굳어 있다.' },
+                { slot: 12, name: '임서율', tag: '05.28 / 교문', note: '교복 깃의 접힌 자국까지 같다.' },
+                { slot: 13, name: '{name}', tag: '어제 아침 / 교문', note: '현재 관찰 중.', current: true }
+            ]
+        };
+    }
+
     /**
      * @param {GameEngine} engine - 메인 게임 엔진 참조
      */
@@ -1994,6 +2349,8 @@ class GlitchSystemAdvanced {
         this._teardownMirrorWipe();
         this.hideMirrorReflection();
         this.hidePhotoOverlay();
+        this.hidePhotoDeck();
+        this.hideLockerSearch();
         this.hideAdminPanel();
         document.getElementById('game-screen')?.classList.remove('temperature-drop');
 

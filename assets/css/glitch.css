@@ -1684,6 +1684,376 @@ body.cursor-slowed * {
 }
 
 /* ============================================================
+ * Interactive photo deck and locker search
+ * ============================================================ */
+.photo-deck-overlay,
+.locker-search-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 4, 8, 0.82);
+    opacity: 0;
+    transition: opacity 180ms ease;
+    backdrop-filter: blur(5px);
+}
+
+.photo-deck-overlay.visible,
+.locker-search-overlay.visible {
+    opacity: 1;
+}
+
+.photo-deck-shell,
+.locker-search-shell {
+    width: min(92vw, 760px);
+    max-height: min(88vh, 680px);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px;
+    border: 1px solid rgba(190, 220, 210, 0.18);
+    border-radius: 8px;
+    background:
+        linear-gradient(180deg, rgba(10, 16, 18, 0.94), rgba(4, 7, 10, 0.96)),
+        repeating-linear-gradient(0deg, transparent 0 4px, rgba(255, 255, 255, 0.015) 4px 5px);
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55), inset 0 0 38px rgba(80, 140, 125, 0.07);
+}
+
+.photo-deck-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-family: "Courier New", monospace;
+    color: rgba(205, 235, 225, 0.82);
+}
+
+.photo-deck-title {
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+}
+
+.photo-deck-counter {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.52);
+}
+
+.photo-deck-viewport {
+    position: relative;
+    min-height: 360px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.photo-deck-card {
+    position: relative;
+    width: min(68vw, 320px);
+    aspect-ratio: 3 / 4;
+    padding: 22px 18px 18px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #e7e2d5, #bfb9aa);
+    color: #151515;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    touch-action: pan-y;
+    overflow: hidden;
+}
+
+.photo-deck-card-in.photo-deck-card-next {
+    animation: photo-card-next 180ms ease;
+}
+
+.photo-deck-card-in.photo-deck-card-prev {
+    animation: photo-card-prev 180ms ease;
+}
+
+@keyframes photo-card-next {
+    from { transform: translateX(28px) rotate(1deg); opacity: 0.35; }
+    to { transform: translateX(0) rotate(0); opacity: 1; }
+}
+
+@keyframes photo-card-prev {
+    from { transform: translateX(-28px) rotate(-1deg); opacity: 0.35; }
+    to { transform: translateX(0) rotate(0); opacity: 1; }
+}
+
+.photo-deck-card.photo-deck-current {
+    animation: photo-card-current 1s ease both;
+}
+
+@keyframes photo-card-current {
+    0%, 100% { filter: none; }
+    18% { filter: contrast(1.6) brightness(0.72) hue-rotate(-18deg); }
+    26% { filter: none; }
+}
+
+.photo-deck-scanline {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20%;
+    height: 38%;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+    mix-blend-mode: screen;
+    animation: photo-scan 3.6s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes photo-scan {
+    to { transform: translateY(380%); }
+}
+
+.photo-deck-face {
+    position: relative;
+    height: 68%;
+    border-radius: 4px;
+    background:
+        radial-gradient(ellipse at 50% 33%, rgba(42, 42, 42, 0.18) 0 16%, transparent 17%),
+        radial-gradient(ellipse at 50% 58%, rgba(42, 42, 42, 0.16) 0 28%, transparent 29%),
+        linear-gradient(180deg, rgba(255,255,255,0.24), rgba(0,0,0,0.08));
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+}
+
+.photo-deck-face span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(20, 20, 20, 0.32);
+}
+
+.photo-deck-face span:nth-child(1) {
+    top: 34%;
+    width: 38%;
+    height: 2px;
+}
+
+.photo-deck-face span:nth-child(2) {
+    top: 51%;
+    width: 10%;
+    height: 22%;
+}
+
+.photo-deck-face span:nth-child(3) {
+    top: 77%;
+    width: 28%;
+    height: 2px;
+}
+
+.photo-deck-meta {
+    display: grid;
+    gap: 4px;
+    margin-top: 12px;
+    font-family: var(--font-main);
+}
+
+.photo-deck-slot {
+    font-family: "Courier New", monospace;
+    font-size: 0.72rem;
+    color: rgba(50, 50, 50, 0.75);
+}
+
+.photo-deck-name {
+    font-size: 1.06rem;
+    font-weight: 700;
+}
+
+.photo-deck-tag,
+.photo-deck-note {
+    font-size: 0.76rem;
+    color: rgba(20, 20, 20, 0.66);
+    line-height: 1.4;
+}
+
+.photo-deck-nav {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 38px;
+    height: 50px;
+    border: 1px solid rgba(220, 240, 235, 0.18);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.34);
+    color: rgba(230, 245, 240, 0.78);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.photo-deck-prev { left: 4px; }
+.photo-deck-next { right: 4px; }
+
+.photo-deck-strip {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.photo-deck-dot {
+    width: 9px;
+    height: 9px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.16);
+    cursor: pointer;
+}
+
+.photo-deck-dot-seen {
+    background: rgba(190, 220, 210, 0.55);
+}
+
+.photo-deck-dot-active {
+    background: #f1f5ec;
+    box-shadow: 0 0 10px rgba(230, 255, 245, 0.45);
+}
+
+.photo-deck-hint,
+.locker-search-status {
+    min-height: 1.3rem;
+    color: rgba(220, 235, 230, 0.62);
+    font-size: 0.82rem;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.photo-deck-complete,
+.locker-search-complete {
+    align-self: center;
+    border: 1px solid rgba(220, 240, 235, 0.26);
+    border-radius: 6px;
+    background: rgba(220, 240, 235, 0.08);
+    color: rgba(240, 250, 248, 0.9);
+    padding: 10px 18px;
+    font-family: var(--font-main);
+    font-size: 0.86rem;
+    cursor: pointer;
+}
+
+.locker-search-title {
+    font-family: "Courier New", monospace;
+    color: rgba(205, 235, 225, 0.82);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+}
+
+.locker-search-stage {
+    position: relative;
+    height: min(48vh, 360px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(36, 44, 48, 0.78), rgba(12, 16, 20, 0.85));
+    overflow: hidden;
+}
+
+.locker-search-locker {
+    position: relative;
+    border-radius: 4px;
+    background:
+        linear-gradient(90deg, rgba(255,255,255,0.05), transparent 22%, rgba(0,0,0,0.15)),
+        linear-gradient(180deg, #6e7475, #373d40);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.25);
+}
+
+.locker-search-target {
+    filter: brightness(1.08);
+}
+
+.locker-hotspot {
+    position: absolute;
+    border: 1px solid rgba(245, 255, 230, 0.55);
+    border-radius: 50%;
+    background: rgba(255, 255, 200, 0.12);
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(255, 255, 180, 0.18);
+    animation: locker-hotspot-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes locker-hotspot-pulse {
+    0%, 100% { opacity: 0.72; box-shadow: 0 0 12px rgba(255, 255, 180, 0.14); }
+    50% { opacity: 1; box-shadow: 0 0 22px rgba(255, 255, 180, 0.34); }
+}
+
+.locker-hotspot-found {
+    border-color: rgba(130, 240, 200, 0.85);
+    background: rgba(120, 240, 190, 0.18);
+    animation: none;
+}
+
+.locker-hotspot-dust {
+    left: 16%;
+    bottom: 18%;
+    width: 34px;
+    height: 34px;
+}
+
+.locker-hotspot-clean {
+    right: 16%;
+    top: 18%;
+    width: 32px;
+    height: 32px;
+}
+
+.locker-hotspot-seam {
+    left: 35%;
+    bottom: 13%;
+    width: 42px;
+    height: 28px;
+    border-radius: 12px;
+}
+
+.locker-hotspot-camera {
+    left: 43%;
+    bottom: 21%;
+    width: 36px;
+    height: 28px;
+    border-radius: 8px;
+}
+
+.locker-panel-open .locker-search-target::after {
+    content: '';
+    position: absolute;
+    left: 28%;
+    right: 18%;
+    bottom: 10%;
+    height: 18%;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.38);
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.locker-camera-found .locker-hotspot-camera {
+    box-shadow: 0 0 22px rgba(255, 70, 70, 0.42);
+}
+
+@media (max-width: 700px) {
+    .photo-deck-shell,
+    .locker-search-shell {
+        width: 94vw;
+        padding: 14px;
+        gap: 10px;
+    }
+    .photo-deck-viewport {
+        min-height: 310px;
+    }
+    .photo-deck-card {
+        width: min(72vw, 260px);
+    }
+    .locker-search-stage {
+        height: min(46vh, 310px);
+        gap: 6px;
+        padding: 8px;
+    }
+}
+
+/* ============================================================
  * temperatureDrop — 화면 전체 푸른 색조 + 서리
  * ============================================================ */
 #game-screen.temperature-drop::before {

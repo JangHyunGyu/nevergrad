@@ -51,6 +51,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_yuna_3": {
         character: null,
         // 유나의 사물함 — 텅 비어있다
+        interaction: { type: "locker_search", search: "yuna_locker" },
         next: "day4_lunch_yuna_4"
     },
     "day4_lunch_yuna_4": {

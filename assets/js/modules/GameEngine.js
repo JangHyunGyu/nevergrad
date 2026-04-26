@@ -20,6 +20,9 @@ class GameEngine {
         this.audio = new AudioManager();
         this.dialogue = new DialogueSystem();
         this.choices = new ChoiceSystem();
+        this.choiceAdvanced = typeof ChoiceSystemAdvanced !== 'undefined'
+            ? new ChoiceSystemAdvanced(this)
+            : null;
         this.glitch = new GlitchSystem();
 
         this.currentSceneData = null;
@@ -513,6 +516,13 @@ class GameEngine {
                 }
             }, typeOpts);
         }
+        // Scene interaction
+        else if (scene.interaction) {
+            typeFn(name, text, () => {
+                stopAutoOnChoices();
+                this._startSceneInteraction(scene.interaction);
+            }, typeOpts);
+        }
         // FreeTalk
         else if (scene.type === "free_talk") {
             typeFn(name, text, () => {
@@ -716,6 +726,18 @@ class GameEngine {
         // 약물 시야 흐림: 타이머 시작 직전 블랙아웃
         const startChoices = () => {
             const startedAt = Date.now();
+            if (this.choiceAdvanced?.showTimedChoice) {
+                this.choiceAdvanced.showTimedChoice(labels, timeMs, -1, { skipDrugPenalty: true })
+                    .then((idx) => this._handleTimedResult(
+                        scene,
+                        idx,
+                        labels,
+                        timeMs,
+                        Date.now() - startedAt
+                    ));
+                return;
+            }
+
             this.choices.showTimedChoices(
                 scene.choices,
                 labels,
@@ -776,6 +798,77 @@ class GameEngine {
         }
         if (choice.setFlags) this.state.setFlags(choice.setFlags);
         if (choice.next) this._loadScene(choice.next);
+    }
+
+    _startSceneInteraction(interaction) {
+        if (!interaction) return;
+
+        this._stopAuto();
+        this._stopSkip();
+        this._clickLocked = true;
+        if (this._clickLockTimer) {
+            clearTimeout(this._clickLockTimer);
+            this._clickLockTimer = null;
+        }
+
+        const finish = () => this._finishSceneInteraction(interaction);
+
+        if (interaction.type === 'photo_deck' && this.glitchAdvanced?.showPhotoDeck) {
+            this.glitchAdvanced.showPhotoDeck({
+                deck: interaction.deck,
+                onComplete: finish
+            });
+            return;
+        }
+
+        if (interaction.type === 'locker_search' && this.glitchAdvanced?.showLockerSearch) {
+            this.glitchAdvanced.showLockerSearch({
+                search: interaction.search,
+                onComplete: finish
+            });
+            return;
+        }
+
+        finish();
+    }
+
+    _finishSceneInteraction(interaction) {
+        this._clickLocked = false;
+
+        if (interaction?.setFlags) this.state.setFlags(interaction.setFlags);
+        if (interaction?.evidence) {
+            const added = this.state.addEvidence(interaction.evidence);
+            if (added) this._showEvidenceToast(interaction.evidence);
+        }
+        if (interaction?.next) this._loadScene(interaction.next);
+    }
+
+    _showEvidenceToast(evidence) {
+        const existing = document.getElementById('evidence-toast');
+        if (existing) existing.remove();
+
+        const toast = document.createElement('div');
+        toast.id = 'evidence-toast';
+        toast.className = 'save-toast evidence-toast';
+        const lang = this.i18n?.currentLang || 'ko';
+        const labels = {
+            ko: '증거 확보',
+            en: 'Evidence secured',
+            ja: '証拠を確保',
+            es: 'Prueba asegurada',
+            fr: 'Preuve sécurisée',
+            de: 'Beweis gesichert'
+        };
+        const name = evidence?.name ? `: ${evidence.name}` : '';
+        toast.textContent = `${labels[lang] || labels.ko}${name}`;
+        document.body.appendChild(toast);
+
+        requestAnimationFrame(() => toast.classList.add('save-toast-visible'));
+        setTimeout(() => {
+            toast.classList.remove('save-toast-visible');
+            toast.classList.add('save-toast-hiding');
+            setTimeout(() => toast.remove(), 400);
+        }, 2200);
     }
 
     _recordChoiceTelemetry(sceneId, choice, label, displayedIndex, options = {}) {

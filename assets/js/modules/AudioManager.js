@@ -225,6 +225,15 @@ class AudioManager {
     _reportLoadFailure(path, fileLoadError, synthError) {
         if (this._reportedAudioFailures.has(path)) return;
         this._reportedAudioFailures.add(path);
+
+        // 합성 fallback(BGM 또는 SFX)이 등록되어 있으면 false-alarm으로 간주하고 보고 생략.
+        // 정상 코드 경로에서는 playSFX/playBGM이 합성을 우선 처리하므로 loadBuffer까지 도달하지
+        // 않지만, 캐시 불일치/이전 버전 등으로 우회 호출이 발생할 때 D1 오염을 막기 위함.
+        const filename = path.split('/').pop().replace(/\.[^.]+$/, '');
+        const hasBgmSynth = this._bgmSynthRegistry && this._bgmSynthRegistry[filename];
+        const hasSfxSynth = this._synthRegistry && this._synthRegistry[filename];
+        if (hasBgmSynth || hasSfxSynth) return;
+
         const reporter = (typeof window !== 'undefined') ? window.__nevergradReportError : null;
         if (typeof reporter !== 'function') return;
         const fileMsg = fileLoadError?.message || String(fileLoadError || 'unknown');

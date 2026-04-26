@@ -781,7 +781,10 @@ ${memories}
             turnsEl.textContent = `${turnsLabel[lang] || turnsLabel.ko}: ${this.maxTurns}/${this.maxTurns}`;
         }
 
-        // 입력 필드 설정
+        // 전송 이벤트 바인딩 먼저 — cloneNode로 노드를 교체하므로 그 후에 설정해야 함
+        this._bindChatEvents();
+
+        // 입력 필드 설정 (바인딩 후의 새 노드에 적용)
         const input = document.getElementById('ft-input');
         if (input) {
             const placeholders = {
@@ -795,16 +798,13 @@ ${memories}
             setTimeout(() => input.focus(), 100);
         }
 
-        // 전송 버튼 설정
+        // 전송 버튼 설정 (바인딩 후의 새 노드에 적용)
         const sendBtn = document.getElementById('ft-send');
         if (sendBtn) {
             sendBtn.disabled = false;
             const sendLabels = { ko: '전송', en: 'Send', ja: '送信', es: 'Enviar', fr: 'Envoyer', de: 'Senden', 'pt-BR': 'Enviar' };
             sendBtn.textContent = sendLabels[lang] || sendLabels.ko;
         }
-
-        // 전송 이벤트 바인딩 (기존 리스너 제거 후 재바인딩)
-        this._bindChatEvents();
 
         // 스킵 버튼 표시 및 바인딩
         const skipBtn = document.getElementById('ft-skip');

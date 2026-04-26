@@ -62,6 +62,10 @@ class AudioManager {
         /** @type {Map<string, AudioBuffer>} */
         this._bufferCache = new Map();
 
+        // ── 로드 실패 보고 dedup (path별 1회만 D1 보고) ──
+        /** @type {Set<string>} */
+        this._reportedAudioFailures = new Set();
+
         // ── 볼륨 설정 ──
         this.volumes = {
             master: 1.0,
@@ -190,6 +194,7 @@ class AudioManager {
         }
 
         // File failed or does not exist: fall back to procedural BGM synth.
+        let synthError = null;
         if (this._bgmSynthRegistry && this._bgmSynthRegistry[filename]) {
             try {
                 const buffer = await this._bgmSynthRegistry[filename]();
@@ -198,14 +203,38 @@ class AudioManager {
                     return buffer;
                 }
             } catch (e) {
+                synthError = e;
                 console.warn(`[AudioManager] BGM synth failed: ${filename}`, e);
             }
         }
 
         if (fileLoadError) {
             console.warn(`[AudioManager] Failed to load: ${path}`, fileLoadError);
+            this._reportLoadFailure(path, fileLoadError, synthError);
             return null;
         }
+    }
+
+    /**
+     * 오디오 로드 실패를 D1 error_logs로 보고 (path별 1회만).
+     * app.js의 글로벌 핸들러가 노출한 window.__nevergradReportError 사용.
+     * @private
+     */
+    _reportLoadFailure(path, fileLoadError, synthError) {
+        if (this._reportedAudioFailures.has(path)) return;
+        this._reportedAudioFailures.add(path);
+        const reporter = (typeof window !== 'undefined') ? window.__nevergradReportError : null;
+        if (typeof reporter !== 'function') return;
+        const fileMsg = fileLoadError?.message || String(fileLoadError || 'unknown');
+        const synthMsg = synthError ? (synthError.message || String(synthError)) : 'no-synth-fallback';
+        try {
+            reporter(
+                'AudioLoadFailed',
+                `audio load failed: ${path} (${fileMsg})`,
+                `file: ${fileMsg}\nsynth: ${synthMsg}`,
+                path
+            );
+        } catch (_) { /* swallow */ }
     }
 
     /**

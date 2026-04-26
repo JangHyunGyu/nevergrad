@@ -42,28 +42,37 @@ function showBinauralToast(message) {
  */
 function requestMobileFullscreen() {
     const elem = document.documentElement;
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+        return false;
+    }
+    if (navigator.userActivation && !navigator.userActivation.isActive) {
+        return false;
+    }
 
     // Fullscreen API (Chrome, Firefox, Edge, Samsung Internet 등)
     if (elem.requestFullscreen) {
         elem.requestFullscreen().catch(() => {});
+        return true;
     } else if (elem.webkitRequestFullscreen) {
         // Safari desktop / older WebKit
-        elem.webkitRequestFullscreen();
+        try {
+            elem.webkitRequestFullscreen();
+            return true;
+        } catch (_) {
+            return false;
+        }
     } else if (elem.msRequestFullscreen) {
         // IE11 / Edge Legacy
-        elem.msRequestFullscreen();
+        try {
+            elem.msRequestFullscreen();
+            return true;
+        } catch (_) {
+            return false;
+        }
     }
     // iOS Safari: Fullscreen API 미지원 — PWA standalone + viewport meta로 대응
+    return false;
 }
-
-// 화면 회전 시 풀스크린 복구
-window.addEventListener('orientationchange', () => {
-    // 이미 게임 화면에 진입한 상태에서만 복구
-    const gameScreen = document.getElementById('game-screen');
-    if (gameScreen && gameScreen.style.display !== 'none' && !document.fullscreenElement) {
-        setTimeout(() => requestMobileFullscreen(), 300);
-    }
-});
 
 /**
  * 이미지 프리로더 — CONFIG.EXPRESSIONS + CONFIG.BACKGROUNDS에서 고유 경로 수집 후 프리로드
@@ -482,6 +491,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         var msg = reason?.message || String(reason || 'Unhandled rejection');
         _sendError('UnhandledRejection', msg, reason?.stack || '', window.location.href);
     });
+
+    // 외부 모듈에서 silently 실패한 케이스(예: 오디오 파일 로드 실패)를 D1으로 보고
+    window.__nevergradReportError = function(type, msg, stack, src) {
+        try { _sendError(type || 'ManualReport', String(msg || ''), String(stack || ''), src || window.location.href); }
+        catch (_) {}
+    };
 })();
 
 // SPA 참여시간 보정: 60초마다 engagement 이벤트 전송

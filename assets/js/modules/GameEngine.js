@@ -139,18 +139,6 @@ class GameEngine {
     // ===== Title Screen =====
 
     _bindTitleScreen() {
-        // 타이틀 화면 첫 터치 시 풀스크린 진입 (주소창 숨김)
-        const titleScreen = document.getElementById('title-screen');
-        if (titleScreen) {
-            const enterFullscreen = () => {
-                if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
-                titleScreen.removeEventListener('click', enterFullscreen);
-                titleScreen.removeEventListener('touchstart', enterFullscreen);
-            };
-            titleScreen.addEventListener('click', enterFullscreen, { once: true });
-            titleScreen.addEventListener('touchstart', enterFullscreen, { once: true });
-        }
-
         // NG+ 타이틀 화면 변조 (SCENARIO.md 5002-5012)
         if (this.glitchAdvanced && this.save.isNewGamePlus()) {
             this.glitchAdvanced.applyNGPlusTitleCorruption(this.save);

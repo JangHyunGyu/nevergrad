@@ -140,6 +140,9 @@ class FreeTalkSystem {
         const delta = fb.danger_delta || 1;
 
         this.state.changeStat(this.currentChar, 'affinity', delta);
+        if (delta !== 0 && this.engine?._playStatChangeFX) {
+            this.engine._playStatChangeFX('affinity', delta, this.currentChar);
+        }
 
         const charName = this.currentChar === 'eunsu' ? '박은수' : '한세아';
         this._displayResponse(charName, text);

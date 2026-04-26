@@ -436,6 +436,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (msg === 'Script error.' && !stack) return 'noise';
         if (/Can't find variable: (gmo|__gCrWeb|ytcfg|__)/.test(msg)) return 'noise';
         if (/ResizeObserver loop/.test(msg)) return 'noise';
+        // 인앱 브라우저(카톡/인스타/페북 등) 또는 보안 키패드가 inject한 코드
+        if (/unSelectAll is not defined/.test(msg)) return 'noise';
+        if (/<anonymous>:1:1/.test(stack || '')) return 'noise';
         // External scripts
         if (src && /googletagmanager|google-analytics|gtag\/js|cloudflare|chrome-extension|moz-extension|safari-extension/.test(src)) return 'external';
         if (src && /^undefined:/.test(src) && !(stack || '').match(/\/(assets|js|modules)\//)) return 'external';
@@ -446,6 +449,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     function _sendError(type, msg, stack, src) {
         var errClass = _classifyError(msg, stack, src);
         if (!msg) return;
+        if (errClass === 'noise') return;
         var key = msg + '|' + src;
         if (key === _lastError) { _errorCount++; if (_errorCount > 5) return; }
         else { _lastError = key; _errorCount = 1; }

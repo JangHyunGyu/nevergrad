@@ -126,7 +126,22 @@ const LANGS = {
         namePrompt: 'Qual é o seu nome?', namePlaceholder: 'Digite seu nome', start: 'Começar',
         save: 'Salvar', load: 'Carregar', settings: 'Configurações', toTitle: 'Título', resume: 'Voltar',
         ftPlaceholder: 'Digite uma mensagem...', ftSend: 'Enviar',
-        dayDisplay: 'Dia 1 - Manhã'
+        dayDisplay: 'Dia 1 - Manhã',
+        keywords: 'visual novel gratuito no navegador, jogo de mistério escolar, romance visual online, jogo narrativo com escolhas, finais alternativos, jogo grátis sem download, romance visual em português, anime visual novel, história interativa escolar, Nevergrad',
+        twitterTitle: 'Nevergrad: A Sala de Aula Sem Formatura',
+        twitterDesc: 'Visual novel gratuito no navegador, sem download. Uma história de cinco dias em uma escola perfeita demais, com 5 heroínas, 7 finais e suporte multilíngue.',
+        schemaName: 'A Sala de Aula Sem Formatura - Registro de 5 Dias',
+        schemaDesc: 'Visual novel gratuito no navegador, sem download. Uma história de cinco dias em uma escola perfeita demais, com 5 heroínas, 7 finais e suporte multilíngue.',
+        galleryTitle: 'Galeria de Finais',
+        galleryProgress: 'Progresso',
+        galleryBack: 'Voltar',
+        backlogTitle: 'Histórico de Diálogos',
+        slotTitle: 'Salvar',
+        loadingText: 'Carregando...',
+        rotateText: 'Gire a tela para o modo paisagem<br>Please rotate your device',
+        archerlabLabel: 'Página inicial da ArcherLab',
+        fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap',
+        fontOverride: ":root{--font-main:'Noto Sans','Noto Sans KR',sans-serif;}"
     }
 };
 

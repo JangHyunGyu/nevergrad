@@ -1,7 +1,7 @@
 {
   "day3_after_start": {
     "name": "Eu",
-    "text": "*O funeral terminou. A sala de aula está esvaziando rapidamente. Do lado de fora da janela, dá para ver os alunos reunidos em grupos de dois ou três no parquinho.*"
+    "text": "*A chamada final terminou. A sala de aula se esvazia depressa. Pela janela, vejo alunos se reunindo em pequenos grupos no pátio.*"
   },
   "day3_after_start_2": {
     "name": "Eu",
@@ -9,25 +9,25 @@
   },
   "day3_after_start_3": {
     "name": "Eu",
-    "text": "*...Eu deveria ir para casa. não. Sinto que preciso fazer alguma coisa. Não posso simplesmente ir embora com essa sensação de desconforto.*"
+    "text": "*...Será que eu vou direto para casa? Não. Sinto que preciso fazer alguma coisa. Não consigo simplesmente ir embora carregando esse incômodo.*"
   },
   "day3_after_choice": {
     "name": "Eu",
     "text": "*Para onde devo ir?*",
     "choices": [
-      "Passe na enfermaria",
-      "Eu vou com Sea",
-      "pare na sala do professor",
-      "Eu estou sozinho"
+      "Passar na enfermaria",
+      "Ir com Sea",
+      "Passar na sala dos professores",
+      "Ficar sozinho"
     ]
   },
   "day3_after_riin": {
     "name": "Eu",
-    "text": "*Ficou em frente à porta da enfermaria. Ouço um pequeno som lá dentro. O som de garrafas de vidro batendo.*"
+    "text": "*Fiquei em frente à porta da enfermaria. Ouço um pequeno som lá dentro. O som de garrafas de vidro batendo.*"
   },
   "day3_after_riin_first": {
     "name": "Eu",
-    "text": "*É uma enfermaria onde nunca estive antes, então não sei por que meus passos estão indo para cá. O corpo se moveu primeiro.*"
+    "text": "*É uma enfermaria onde nunca estive antes, então não sei por que meus passos estão indo para cá. Meu corpo se moveu primeiro.*"
   },
   "day3_after_riin_first_2": {
     "name": "Kang Riin",
@@ -43,7 +43,7 @@
   },
   "day3_after_riin_4": {
     "name": "Eu",
-    "text": "*Abrir a porta. A professora Riin está parado em frente à pia. Parece que algo foi guardado às pressas. Ainda há umidade na bancada.*"
+    "text": "*Abri a porta. A professora Riin está parada em frente à pia. Parece que algo foi guardado às pressas. Ainda há umidade na bancada.*"
   },
   "day3_after_riin_5": {
     "name": "Kang Riin",
@@ -55,27 +55,27 @@
   },
   "day3_after_riin_6a": {
     "name": "Kang Riin",
-    "text": "\"Eu tenho uma bebida saudável. Uma mistura de vitaminas e ervas.\""
+    "text": "\"Tenho uma bebida revigorante aqui. Uma mistura de vitaminas e ervas.\""
   },
   "day3_after_riin_7": {
     "name": "Eu",
-    "text": "*Professora Riin tira uma pequena garrafa do armário e coloca em um copo. Líquido roxo claro. A cor é estranha para uma vitamina.**Liin entrega a xícara. Minhas mãos estão tremendo levemente. Desta vez é mais certo. O dedo anelar e o dedinho tremem levemente.**Olhe nos olhos do professora Riin. Há... algo ali. Por baixo do sorriso, alguma coisa. Desesperado? arrependimento?*"
+    "text": "*A professora Riin tira uma pequena garrafa do armário e despeja o conteúdo em um copo. Um líquido lilás-claro. A cor é estranha demais para vitamina.*\n\n*Riin me entrega o copo. Suas mãos tremem de leve. Desta vez está mais claro. O anelar e o mindinho tremem quase imperceptivelmente.*\n\n*Olho para os olhos da professora Riin. Há... algo ali. Debaixo do sorriso, alguma coisa. Desespero? Arrependimento?*"
   },
   "day3_after_riin_flicker": {
     "name": "",
-    "text": "fugir"
+    "text": "Fuja"
   },
   "day3_after_riin_choice": {
     "name": "Eu",
-    "text": "*Você gostaria de beber?*",
+    "text": "*Devo beber?*",
     "choices": [
-      "bebida",
-      "recusar educadamente"
+      "Beber",
+      "Recusar educadamente"
     ]
   },
   "day3_after_riin_drink": {
     "name": "Eu",
-    "text": "*Tomei um gole....um gosto amargo permanece na ponta da língua. Ligeiro sabor metálico. Não é uma vitamina...*"
+    "text": "*Tomei um gole...um gosto amargo permanece na ponta da língua. Ligeiro sabor metálico. Não é uma vitamina...*"
   },
   "day3_after_riin_drink_2": {
     "name": "Eu",
@@ -83,7 +83,7 @@
   },
   "day3_after_riin_drink_3": {
     "name": "Eu",
-    "text": "*No momento em que o professor Liin se virou, vi sua expressão.**Dor.**Foi breve, mas palpável. Todo o rosto estava distorcido. Como se ele tivesse bebido veneno.**O sorriso volta imediatamente. Muito rápido. Parece que ele mudou sua expressão usando o controle remoto.*"
+    "text": "*No momento em que o professor Riin se virou, vi sua expressão.**Dor.**Foi breve, mas palpável. Todo o rosto estava distorcido. Como se ele tivesse bebido veneno.**O sorriso volta imediatamente. Muito rápido. Parece que ele mudou sua expressão usando o controle remoto.*"
   },
   "day3_after_riin_drink_4": {
     "name": "Kang Riin",
@@ -435,6 +435,6 @@
   },
   "day3_after_end": {
     "name": "Eu",
-    "text": "*Sai da escola. O playground fica vermelho sob o sol poente....Por que é tão desconfortável?*"
+    "text": "*Sai da escola. O playground fica vermelho sob o sol poente...Por que é tão desconfortável?*"
   }
 }

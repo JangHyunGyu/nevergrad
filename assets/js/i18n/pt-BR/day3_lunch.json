@@ -1,45 +1,45 @@
 {
   "day3_lunch_start": {
     "name": "Eu",
-    "text": "*Hora do almoço. Abri a gaveta da mesa e havia um bilhete dentro.*"
+    "text": "*Hora do almoço. Abri a gaveta da carteira e encontrei um bilhete.*"
   },
   "day3_lunch_note_yuna": {
     "name": "Eu",
-    "text": "*'Senhor, por favor, venha ao telhado durante o almoço. Apenas fique sozinho. Há algo importante. -Yuna'*"
+    "text": "*'Senpai, venha ao terraço na hora do almoço. Venha sozinho, por favor. É importante. - Yuna'*"
   },
   "day3_lunch_note_yuna_2": {
     "name": "Eu",
-    "text": "*...Yuna enviou. Um calouro no departamento de fotografia que conheci na biblioteca. Há algo importante... o que é?*"
+    "text": "*...Yuna mandou isso. A caloura do clube de fotografia que conheci na biblioteca. Algo importante... o que será?*"
   },
   "day3_lunch_note_unknown": {
     "name": "Eu",
-    "text": "*'Senhor, por favor, venha ao telhado durante o almoço. Apenas fique sozinho. Há algo importante. -Yuna'*"
+    "text": "*'Senpai, venha ao terraço na hora do almoço. Venha sozinho, por favor. É importante. - Yuna'*"
   },
   "day3_lunch_note_unknown_2": {
     "name": "Eu",
-    "text": "*...Yuna? Eu não sei o nome. Yuna está na mesma classe? Não, eu decorei aproximadamente os nomes das crianças da minha turma, mas Yuna não estava lá.*"
+    "text": "*...Yuna? Não conheço esse nome. Tem alguma Yuna na minha turma? Não, eu já decorei mais ou menos os nomes da classe, e não havia nenhuma Yuna.*"
   },
   "day3_lunch_note_unknown_3": {
     "name": "Eu",
-    "text": "*Isso é uma piada? Ou talvez outra turma tenha colocado isso incorretamente.**Coloquei o bilhete no bolso. Estou preocupado, mas pedir a um estranho para vir sozinho... vamos ignorar.*"
+    "text": "*Será uma brincadeira? Ou alguém de outra turma colocou na carteira errada.*\n\n*Guardei o bilhete no bolso. Fiquei incomodado, mas ir sozinho encontrar alguém que nem conheço... melhor ignorar.*"
   },
   "day3_lunch_choice_no_yuna": {
     "name": "Eu",
-    "text": "*...O que devo fazer?*",
+    "text": "*...O que eu faço?*",
     "choices": [
-      "Almoçando com Sea",
-      "vá para a enfermaria",
-      "Eu fico sozinho na sala de aula"
+      "Almoçar com Sea",
+      "Ir à enfermaria",
+      "Ficar sozinho na sala"
     ]
   },
   "day3_lunch_choice": {
     "name": "Eu",
-    "text": "*...O que devo fazer?*",
+    "text": "*...O que eu faço?*",
     "choices": [
-      "vá para o telhado",
-      "Almoçando com Sea",
-      "vá para a enfermaria",
-      "Eu fico sozinho na sala de aula"
+      "Ir ao terraço",
+      "Almoçar com Sea",
+      "Ir à enfermaria",
+      "Ficar sozinho na sala"
     ]
   },
   "day3_lunch_rooftop_1": {
@@ -48,39 +48,39 @@
   },
   "day3_lunch_rooftop_2": {
     "name": "Eu",
-    "text": "*Yuna entrega a câmera sem dizer uma palavra.*"
+    "text": "*Yuna me entrega a câmera sem dizer nada.*"
   },
   "day3_lunch_rooftop_3": {
     "name": "Eu",
-    "text": "*Minhas mãos estão tremendo. A mão de Yuna. Os nós dos dedos que seguram a câmera são brancos.*"
+    "text": "*Suas mãos tremem. As mãos de Yuna. Os nós dos dedos que seguram a câmera estão brancos.*"
   },
   "day3_lunch_rooftop_4": {
     "name": "Choi Yuna",
-    "text": "\"... passe adiante.\""
+    "text": "\"...Passe para a próxima.\""
   },
   "day3_lunch_rooftop_5": {
     "name": "Eu",
-    "text": "*Recebi uma câmera. Uma foto aparece na tela.*"
+    "text": "*Peguei a câmera. Há uma foto na tela.*"
   },
   "day3_lunch_rooftop_6": {
     "name": "Eu",
-    "text": "*Alunos em frente ao portão da escola. Cabelo preto curto. O uniforme escolar é rígido. Crachá de nome: ‘Kim Do-jin’.*"
+    "text": "*Um aluno parado diante do portão da escola. Cabelo preto curto. Uniforme engomado. Crachá: 'Kim Dojin'.*"
   },
   "day3_lunch_rooftop_7": {
     "name": "Eu",
-    "text": "*Eu passei.*"
+    "text": "*Passei para a próxima.*"
   },
   "day3_lunch_rooftop_8": {
     "name": "Eu",
-    "text": "*Mesmo portão da escola. Outro estudante. Cabelo castanho. Etiqueta de nome: ‘Park Seo-jin’.*"
+    "text": "*O mesmo portão. Outro aluno. Cabelo castanho. Crachá: 'Park Seojin'.*"
   },
   "day3_lunch_rooftop_9": {
     "name": "Eu",
-    "text": "*Eu passei.*"
+    "text": "*Passei para a próxima.*"
   },
   "day3_lunch_rooftop_10": {
     "name": "Eu",
-    "text": "*Um estudante do sexo masculino com cabelo comprido. Um rosto devastado. Crachá de nome: ‘Kim Tae-ho’.*"
+    "text": "*Um garoto de cabelo comprido. Rosto abatido. Crachá: 'Kim Taeho'.*"
   },
   "day3_lunch_rooftop_11": {
     "name": "Eu",
@@ -184,11 +184,11 @@
   },
   "day3_lunch_door_bang": {
     "name": "Eu",
-    "text": "*Bati forte na porta. A porta abre após 5 minutos. Não há ninguém. Também não há bloqueio....Não há vestígios de quem o trancou.*"
+    "text": "*Bati forte na porta. A porta abre após 5 minutos. Não há ninguém. Também não há bloqueio...Não há vestígios de quem o trancou.*"
   },
   "day3_lunch_door_wait": {
     "name": "Eu",
-    "text": "*Segurei o ombro de Yuna e a acalmei. A porta abre após 5 minutos. Não há ninguém. Também não há bloqueio....Não há vestígios de quem o trancou.*"
+    "text": "*Segurei o ombro de Yuna e a acalmei. A porta abre após 5 minutos. Não há ninguém. Também não há bloqueio...Não há vestígios de quem o trancou.*"
   },
   "day3_lunch_door_open": {
     "name": "Eu",
@@ -252,7 +252,7 @@
   },
   "day3_lunch_sea_2": {
     "name": "Eu",
-    "text": "*Mar está sorrindo....Mas esse sorriso é diferente de ontem. Se o sorriso de ontem era ‘feliz’, o sorriso de hoje está mais próximo da ‘confirmação’.*"
+    "text": "*Mar está sorrindo...Mas esse sorriso é diferente de ontem. Se o sorriso de ontem era ‘feliz’, o sorriso de hoje está mais próximo da ‘confirmação’.*"
   },
   "day3_lunch_sea_3": {
     "name": "Eu",
@@ -316,7 +316,7 @@
   },
   "day3_lunch_riin_1": {
     "name": "Eu",
-    "text": "*A porta da enfermaria foi aberta. O cheiro de desinfetante arde em meu nariz. A professora Riin está parado na frente do gabinete. Eu me viro quando a porta se abre.*"
+    "text": "*A porta da enfermaria foi aberta. O cheiro de desinfetante arde em meu nariz. A professora Riin está parada na frente do gabinete. Eu me viro quando a porta se abre.*"
   },
   "day3_lunch_riin_first": {
     "name": "Kang Riin",
@@ -344,11 +344,11 @@
   },
   "day3_lunch_riin_6": {
     "name": "Eu",
-    "text": "*Professora Riin se vira e tira algo do armário. A parte traseira é visível. Meus ombros param por um momento. Uma breve pausa, como se estivesse decidindo algo.*"
+    "text": "*A professora Riin se vira e tira alguma coisa do armário. Vejo suas costas. Seus ombros hesitam por um instante. Uma pausa breve, como se ela estivesse tomando uma decisão.*"
   },
   "day3_lunch_riin_7": {
     "name": "Kang Riin",
-    "text": "\"Hoje é especial… Devo te dar a bebida saudável que você fez?\""
+    "text": "\"Hoje, em especial... quer uma bebida revigorante feita pela professora?\""
   },
   "day3_lunch_riin_8": {
     "name": "Eu",
@@ -368,7 +368,7 @@
   },
   "day3_lunch_riin_drink_1": {
     "name": "Eu",
-    "text": "*Tomei um gole....um gosto amargo permanece debaixo da língua. Minha boca parece um pouco seca.*"
+    "text": "*Tomei um gole...um gosto amargo permanece debaixo da língua. Minha boca parece um pouco seca.*"
   },
   "day3_lunch_riin_drink_2": {
     "name": "Kang Riin",

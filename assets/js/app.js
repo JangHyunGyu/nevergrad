@@ -88,6 +88,30 @@ function clampNumber(value, min, max) {
     return Math.min(Math.max(value, min), max);
 }
 
+function playTitleIntro() {
+    const stage = document.getElementById('title-stage');
+    const titleScreen = document.getElementById('title-screen');
+    if (!stage) return;
+
+    window.clearTimeout(window.__nevergradTitleMenuTimer);
+    titleScreen?.classList.remove('title-intro-complete');
+
+    stage.classList.add('title-intro-reset');
+    stage.classList.remove('title-intro-active');
+    void stage.offsetWidth;
+
+    requestAnimationFrame(() => {
+        stage.classList.remove('title-intro-reset');
+        stage.classList.add('title-intro-active');
+    });
+
+    window.__nevergradTitleMenuTimer = window.setTimeout(() => {
+        titleScreen?.classList.add('title-intro-complete');
+    }, 1500);
+}
+
+window.playNevergradTitleIntro = playTitleIntro;
+
 function initializeTitleLineup() {
     const stage = document.getElementById('title-stage');
     if (!stage) return;
@@ -99,6 +123,9 @@ function initializeTitleLineup() {
         { id: 'title-char-sea', name: 'sea', src: 'assets/images/characters/sea_normal.png', ngp: 'assets/images/characters/sea_stare.png' },
         { id: 'title-char-riin', name: 'riin', src: 'assets/images/characters/riin_smile.png' }
     ];
+    const introOrder = { eunsu: 0, yuna: 1, sea: 2, seolhwa: 3, riin: 4 };
+    const introBaseDelay = 420;
+    const introStepDelay = 140;
 
     let lineup = stage.querySelector('.title-character-lineup');
     if (!lineup) {
@@ -118,11 +145,14 @@ function initializeTitleLineup() {
         img.dataset.src = getNevergradAssetPath(char.src);
         img.dataset.default = getNevergradAssetPath(char.src);
         if (char.ngp) img.dataset.ngp = getNevergradAssetPath(char.ngp);
-        img.style.setProperty('--title-delay', `${index * 90}ms`);
+        const order = introOrder[char.name] ?? index;
+        img.dataset.titleIntroOrder = String(order + 1);
+        img.style.setProperty('--title-intro-delay', `${introBaseDelay + order * introStepDelay}ms`);
         lineup.appendChild(img);
     });
 
     layoutTitleLineup();
+    playTitleIntro();
 
     if (!window.__nevergradTitleLineupResizeBound) {
         window.__nevergradTitleLineupResizeBound = true;
@@ -176,11 +206,13 @@ function layoutTitleLineup() {
     }
 
     sprites.forEach((sprite, index) => {
+        const character = sprite.dataset.titleCharacter;
+        const depth = { seolhwa: 11, riin: 12, yuna: 14, sea: 15, eunsu: 16 };
         sprite.style.setProperty('--title-x', `${xs[index] ?? 50}%`);
         sprite.style.setProperty('--title-scale', String(scales[index] ?? 0.75));
         sprite.style.setProperty('--title-bottom', `${bottoms[index] ?? 0}px`);
         sprite.style.setProperty('--title-height', `${height}px`);
-        sprite.style.setProperty('--title-z', String(10 + index));
+        sprite.style.setProperty('--title-z', String(depth[character] ?? 10 + index));
     });
 }
 

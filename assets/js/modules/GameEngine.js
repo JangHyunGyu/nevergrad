@@ -2258,6 +2258,7 @@ class GameEngine {
         if (id === 'title-screen') {
             const btn = document.getElementById('btn-continue');
             if (btn) btn.disabled = !this.save.hasSaveData();
+            window.playNevergradTitleIntro?.();
         }
     }
 

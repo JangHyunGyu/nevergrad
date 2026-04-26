@@ -173,12 +173,19 @@ body {
     gap: 0.8rem;
     position: relative;
     z-index: 3;
-    animation: title-fade-in 2.5s ease forwards;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 650ms ease;
     padding: 1.2rem 1.8rem;
     /* 메뉴 뒤에 어두운 방사형 그라디언트로 가독성 확보 (캐릭터와 겹쳐도 버튼이 명확히 보이도록) */
     background: radial-gradient(ellipse at center, rgba(10, 6, 14, 0.72) 0%, rgba(10, 6, 14, 0.45) 55%, transparent 85%);
     border-radius: 1rem;
     backdrop-filter: blur(2px);
+}
+
+#title-screen.title-intro-complete .title-menu {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .menu-btn {
@@ -2489,7 +2496,12 @@ body {
     pointer-events: none;
 }
 
+.title-stage.title-intro-reset .title-char-lineup {
+    transition: none;
+}
+
 .title-char-lineup {
+    --title-opacity: 0.98;
     left: var(--title-x, 50%);
     right: auto;
     bottom: var(--title-bottom, 0px);
@@ -2497,20 +2509,38 @@ body {
     width: auto;
     max-width: none;
     max-height: none;
-    transform: translateX(-50%) scale(var(--title-scale, 0.8));
+    opacity: 0;
+    transform: translateX(-50%) translateY(18px) scale(var(--title-scale, 0.8));
     transform-origin: bottom center;
-    transition: opacity 900ms ease var(--title-delay, 0ms), filter 400ms ease, transform 400ms ease, left 400ms ease, bottom 400ms ease, height 400ms ease;
+    transition:
+        opacity 720ms cubic-bezier(0.16, 1, 0.3, 1) var(--title-intro-delay, 0ms),
+        transform 720ms cubic-bezier(0.16, 1, 0.3, 1) var(--title-intro-delay, 0ms),
+        filter 400ms ease,
+        left 400ms ease,
+        bottom 400ms ease,
+        height 400ms ease;
     filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.36));
     z-index: var(--title-z, 10);
 }
-.title-char-lineup[src]:not([src=""]) { opacity: 0.98; }
-.title-char-seolhwa { opacity: 0.88; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.42)) saturate(0.86); }
+.title-char-lineup[src]:not([src=""]) { opacity: 0; }
+.title-stage.title-intro-active .title-char-lineup[src]:not([src=""]) {
+    opacity: var(--title-opacity, 0.98);
+    transform: translateX(-50%) translateY(0) scale(var(--title-scale, 0.8));
+}
+.title-char-seolhwa { --title-opacity: 0.88; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.42)) saturate(0.86); }
 .title-char-sea { filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.44)); }
 
 @media (max-width: 768px) {
     .title-char-lineup {
         max-height: none;
         filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.42));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .title-char-lineup {
+        transform: translateX(-50%) translateY(0) scale(var(--title-scale, 0.8));
+        transition-delay: 0ms;
     }
 }
 

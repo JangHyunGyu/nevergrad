@@ -366,12 +366,19 @@ class GameEngine {
         // BGM
         if (typeof scene.bgm === 'string') {
             this.renderer.playBGM(scene.bgm);
+            this.state.currentBGM = scene.bgm;
         } else if (scene.bgm && typeof scene.bgm === 'object') {
             // { fadeOut: ms } → BGM 정지 with fade
             const fadeOut = (scene.bgm.fadeOut || 1000) / 1000;
             this.audio?.stopBGM(fadeOut);
+            this.state.currentBGM = null;
         } else if (scene.bgm === null) {
             this.audio?.stopBGM(1.0);
+            this.state.currentBGM = null;
+        } else if (this.state.currentBGM && this.audio?.getCurrentBGM?.() !== this.state.currentBGM) {
+            // 세이브에서 mid-scene 로드 시 BGM 복원
+            // (씬에 bgm 필드가 없고, AudioManager에 재생 중인 BGM이 state와 다르면 = 페이지 새로고침/이어하기)
+            this.renderer.playBGM(this.state.currentBGM);
         }
 
         // SFX

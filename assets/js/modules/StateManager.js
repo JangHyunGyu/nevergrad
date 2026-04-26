@@ -17,6 +17,7 @@ class StateManager {
         this.currentDay = 1;
         this.currentSlot = "morning"; // morning, lunch, afterschool, night
         this.currentScene = "";
+        this.currentBGM = null;
 
         // 장르 모드 (romance → thriller)
         this.mode = CONFIG.STAT_MODES.ROMANCE;
@@ -273,6 +274,7 @@ class StateManager {
             currentDay: this.currentDay,
             currentSlot: this.currentSlot,
             currentScene: this.currentScene,
+            currentBGM: this.currentBGM,
             mode: this.mode,
             glitchLevel: this.glitchLevel,
             stats: JSON.parse(JSON.stringify(this.stats)),
@@ -290,6 +292,7 @@ class StateManager {
         this.currentDay = data.currentDay || 1;
         this.currentSlot = data.currentSlot || "morning";
         this.currentScene = data.currentScene || "";
+        this.currentBGM = data.currentBGM || null;
         this.mode = data.mode || CONFIG.STAT_MODES.ROMANCE;
         this.glitchLevel = data.glitchLevel || CONFIG.GLITCH_LEVELS.NONE;
         this.stats = data.stats || {};

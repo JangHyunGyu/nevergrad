@@ -1968,6 +1968,7 @@ body.cursor-slowed * {
 
 .locker-hotspot {
     position: absolute;
+    z-index: 3;
     border: 1px solid rgba(245, 255, 230, 0.55);
     border-radius: 50%;
     background: rgba(255, 255, 200, 0.12);
@@ -2020,6 +2021,7 @@ body.cursor-slowed * {
 .locker-panel-open .locker-search-target::after {
     content: '';
     position: absolute;
+    z-index: 1;
     left: 28%;
     right: 18%;
     bottom: 10%;
@@ -2027,6 +2029,7 @@ body.cursor-slowed * {
     border-radius: 3px;
     background: rgba(0, 0, 0, 0.38);
     box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 
 .locker-camera-found .locker-hotspot-camera {

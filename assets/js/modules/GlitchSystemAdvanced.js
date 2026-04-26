@@ -207,7 +207,7 @@ class GlitchSystemAdvanced {
     }
 
     hidePhotoDeck() {
-        document.getElementById('photo-deck-overlay')?.remove();
+        document.querySelector('#photo-deck-overlay')?.remove();
     }
 
     showLockerSearch(opts = {}) {
@@ -303,7 +303,7 @@ class GlitchSystemAdvanced {
     }
 
     hideLockerSearch() {
-        document.getElementById('locker-search-overlay')?.remove();
+        document.querySelector('#locker-search-overlay')?.remove();
     }
 
     _getLang() {

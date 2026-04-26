@@ -844,7 +844,7 @@ class GameEngine {
     }
 
     _showEvidenceToast(evidence) {
-        const existing = document.getElementById('evidence-toast');
+        const existing = document.querySelector('#evidence-toast');
         if (existing) existing.remove();
 
         const toast = document.createElement('div');

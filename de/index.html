@@ -15,7 +15,7 @@
     <title>Nevergrad - Das Klassenzimmer ohne Abschluss</title>
     <meta name="robots" content="index, follow">
     <meta name="description" content="Der erste Tag nach dem Schulwechsel, alles war perfekt. Zu perfekt, um normal zu sein.">
-    <meta name="keywords" content="무료 노벨 게임 브라우저, 다운로드 없이 플레이 비주얼 노벨, 학교 미스터리 게임 무료, 선택지 스토리 게임 온라인, 엔딩 분기 게임 무료 플레이, 온라인 소설 게임 브라우저, 벚꽃 학원 게임 무료 플레이, 애니 스타일 인터랙티브 소설, 브라우저에서 하는 무료 게임, 6개국어 비주얼 노벨, 비주얼 노벨 추천 무료, 학원물 게임 온라인">
+    <meta name="keywords" content="무료 노벨 게임 브라우저, 다운로드 없이 플레이 비주얼 노벨, 학교 미스터리 게임 무료, 선택지 스토리 게임 온라인, 엔딩 분기 게임 무료 플레이, 온라인 소설 게임 브라우저, 벚꽃 학원 게임 무료 플레이, 애니 스타일 인터랙티브 소설, 브라우저에서 하는 무료 게임, 7개국어 비주얼 노벨, 비주얼 노벨 추천 무료, 학원물 게임 온라인">
     <meta name="author" content="Archerlab">
     <meta name="theme-color" content="#FFB7C5">
 
@@ -35,6 +35,7 @@
     <link rel="alternate" hreflang="es" href="https://nevergrad.archerlab.dev/es/">
     <link rel="alternate" hreflang="fr" href="https://nevergrad.archerlab.dev/fr/">
     <link rel="alternate" hreflang="de" href="https://nevergrad.archerlab.dev/de/">
+    <link rel="alternate" hreflang="pt-BR" href="https://nevergrad.archerlab.dev/pt-BR/">
     <link rel="alternate" hreflang="x-default" href="https://nevergrad.archerlab.dev/">
 
     <!-- OG Tags -->
@@ -49,7 +50,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nevergrad: The Classroom You Never Graduate">
-    <meta name="twitter:description" content="무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 6개 언어 지원.">
+    <meta name="twitter:description" content="무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7개 언어 지원.">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
 
     <!-- Preconnect -->
@@ -68,13 +69,13 @@
       "@context": "https://schema.org",
       "@type": "VideoGame",
       "name": "졸업하지 못한 교실 - 5일의 기록",
-      "description": "무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 6개 언어 지원.",
+      "description": "무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7개 언어 지원.",
       "genre": ["Visual Novel", "Romance", "School Life"],
       "gamePlatform": "Web Browser",
       "applicationCategory": "Game",
       "operatingSystem": "Any",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
-      "inLanguage": ["ko", "en", "ja", "es", "fr", "de"],
+      "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt-BR"],
       "url": "https://nevergrad.archerlab.dev",
       "author": { "@type": "Organization", "name": "Archerlab" }
     }
@@ -91,13 +92,14 @@
             <option value="/es/">Español</option>
             <option value="/fr/">Français</option>
             <option value="/de/">Deutsch</option>
+            <option value="/pt-BR/">Português (Brasil)</option>
         </select>
         <script>
             (function(){
                 var s=document.querySelector('.lang-switcher');
                 if(!s)return;
                 var p=location.pathname,c='/';
-                ['/en/','/ja/','/es/','/fr/','/de/'].forEach(function(x){if(p.indexOf(x)===0)c=x;});
+                ['/en/','/ja/','/es/','/fr/','/de/','/pt-BR/'].forEach(function(x){if(p.indexOf(x)===0)c=x;});
                 for(var i=0;i<s.options.length;i++)if(s.options[i].value===c){s.selectedIndex=i;break;}
             })();
         </script>

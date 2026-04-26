@@ -3,7 +3,7 @@
  * 언어별 정적 HTML 페이지 생성 — SEO 크롤러가 각 언어 콘텐츠를 인식하도록
  *
  * 사용: node scripts/build-i18n-pages.js
- * 결과: /en/index.html, /ja/index.html, /es/index.html, /fr/index.html, /de/index.html
+ * 결과: /en/index.html, /ja/index.html, /es/index.html, /fr/index.html, /de/index.html, /pt-BR/index.html
  */
 
 const fs = require('fs');
@@ -77,6 +77,19 @@ const LANGS = {
         save: 'Speichern', load: 'Laden', settings: 'Einstellungen', toTitle: 'Titelbildschirm', resume: 'Zurück',
         ftPlaceholder: 'Nachricht eingeben...', ftSend: 'Senden',
         dayDisplay: 'Tag 1 - Morgen'
+    },
+    'pt-BR': {
+        locale: 'pt_BR',
+        title: 'A Sala de Aula Sem Formatura',
+        metaTitle: 'Nevergrad - A Sala de Aula Sem Formatura',
+        metaDesc: 'No primeiro dia de transferência, tudo estava perfeito. Perfeito demais para ser normal.',
+        ogTitle: 'A Sala de Aula Sem Formatura | Nevergrad',
+        subtitle: 'Registro de 5 Dias',
+        newGame: 'Novo Jogo', continue: 'Continuar', gallery: 'Galeria',
+        namePrompt: 'Qual é o seu nome?', namePlaceholder: 'Digite seu nome', start: 'Começar',
+        save: 'Salvar', load: 'Carregar', settings: 'Configurações', toTitle: 'Título', resume: 'Voltar',
+        ftPlaceholder: 'Digite uma mensagem...', ftSend: 'Enviar',
+        dayDisplay: 'Dia 1 - Manhã'
     }
 };
 

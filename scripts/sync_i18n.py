@@ -5,7 +5,7 @@ ko JSON을 마스터로 삼아 각 언어 JSON 파일을 동기화한다.
 
 동작:
 1. ko JSON에서 모든 씬 ID 추출
-2. 각 언어(ja/es/fr/de)의 기존 JSON에서 동일 ID 항목 유지
+2. 각 언어(ja/es/fr/de/pt-BR)의 기존 JSON에서 동일 ID 항목 유지
 3. 존재하지 않는 항목은 생략 (I18nManager의 ko fallback이 처리)
 4. en은 이미 수동 번역 완료 → 건드리지 않음
 """
@@ -13,7 +13,7 @@ import sys, io, json, os, re
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 BASE = 'C:/workspace/nevergrad/assets/js/i18n'
-LANGUAGES = ['ja', 'es', 'fr', 'de']   # en은 이미 완성
+LANGUAGES = ['ja', 'es', 'fr', 'de', 'pt-BR']   # en은 이미 완성
 DAYS = range(1, 6)
 SLOTS = ['morning', 'lunch', 'afterschool', 'night']
 
@@ -69,6 +69,34 @@ NAME_MAPS = {
         '옆자리 남학생': 'Junge im Nebensitz',
         '여학생 A': 'Mädchen A',
         '남학생 B': 'Junge B',
+        '???': '???',
+        '': '',
+    },
+    'pt-BR': {
+        '나': 'Eu',
+        '한세아': 'Han Sea',
+        '세아': 'Sea',
+        '박은수': 'Park Eunsu',
+        '은수': 'Eunsu',
+        '강리인': 'Kang Riin',
+        '리인': 'Riin',
+        '최유나': 'Choi Yuna',
+        '유나': 'Yuna',
+        '이설화': 'Lee Seolhwa',
+        '설화': 'Seolhwa',
+        '선생님': 'Professora',
+        '담임교사': 'Professora titular',
+        '옆자리 학생': 'Aluno ao lado',
+        '옆자리 남학생': 'Garoto ao lado',
+        '여학생 A': 'Garota A',
+        '여학생 B': 'Garota B',
+        '여학생': 'Garota',
+        '남학생 B': 'Garoto B',
+        '남학생': 'Garoto',
+        '급우A': 'Colega A',
+        '급우B': 'Colega B',
+        '민수': 'Minsu',
+        '[교내 방송]': '[Transmissão da escola]',
         '???': '???',
         '': '',
     },

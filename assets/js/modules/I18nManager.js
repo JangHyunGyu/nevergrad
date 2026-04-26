@@ -144,7 +144,8 @@ class I18nManager {
 
     static DEFAULT_PLAYER_NAME = {
         ko: "전학생", en: "Transfer Student", ja: "転校生",
-        es: "Estudiante", fr: "Nouvel Élève", de: "Schüler"
+        es: "Estudiante", fr: "Nouvel Élève", de: "Schüler",
+        'pt-BR': "Estudante transferido"
     };
 
     /**
@@ -174,7 +175,8 @@ class I18nManager {
         ja: { label: "日本語", flag: "🇯🇵" },
         es: { label: "Español", flag: "🇪🇸" },
         fr: { label: "Français", flag: "🇫🇷" },
-        de: { label: "Deutsch", flag: "🇩🇪" }
+        de: { label: "Deutsch", flag: "🇩🇪" },
+        'pt-BR': { label: "Português (Brasil)", flag: "🇧🇷" }
     };
 
     /**
@@ -353,6 +355,35 @@ class I18nManager {
                 sunset:      "{time}. Die Sonne geht unter... bleibst du in der Schule?",
                 evening:     "{time}... es wird dunkel. Die Schule wird still um diese Zeit.",
                 night:       "{time}... spät. Hast du keine Angst, allein hier zu sein?"
+            }
+        },
+        'pt-BR': {
+            title: "A Sala de Aula Sem Formatura", subtitle: "Registro de 5 Dias",
+            metaTitle: "Nevergrad - A Sala de Aula Sem Formatura",
+            metaDesc: "No primeiro dia de transferência, tudo estava perfeito. Perfeito demais para ser normal.",
+            newGame: "Novo Jogo", continue: "Continuar", gallery: "Galeria",
+            namePrompt: "Qual é o seu nome?", namePlaceholder: "Digite seu nome", start: "Começar",
+            save: "Salvar", load: "Carregar", settings: "Configurações", toTitle: "Título", resume: "Voltar",
+            ftPlaceholder: "Digite uma mensagem...", ftSend: "Enviar",
+            dayFormat: "Dia {day} - {slot}",
+            slots: { morning: "Manhã", lunch: "Almoço", afterschool: "Depois da Aula", night: "Noite" },
+            galleryTitle: "Galeria de Finais", galleryBack: "Voltar", galleryProgress: "Progresso",
+            saveComplete: "Salvo",
+            slotAuto: "AUTO", slotEmpty: "Slot vazio", slotOldFormat: "Save antigo",
+            slotOverwrite: "Sobrescrever?", slotYes: "Sim", slotNo: "Não",
+            binauralActivated: "🎧 Modo Binaural — Fones Recomendados",
+            latenightAlone: "...será que sou a única pessoa acordada a esta hora.",
+            headphoneHint: "...ficaria mais claro com fones de ouvido.",
+            timeDialogue: {
+                lateNight:   "Já são {time}... você ainda está acordado a esta hora?",
+                dawn:        "{time} da manhã... passou a noite em claro?",
+                morning:     "{time}. Manhã. Uma boa hora para começar a aula.",
+                lateMorning: "{time}... você não deveria estar em aula?",
+                noon:        "{time}. Hora do almoço. Você já comeu?",
+                afternoon:   "{time}... já é de tarde. Falta pouco para as aulas acabarem.",
+                sunset:      "{time}. O sol está se pondo... vai ficar na escola?",
+                evening:     "{time}... está escurecendo. A escola fica silenciosa a esta hora.",
+                night:       "{time}... está tarde. Não tem medo de ficar aqui sozinho?"
             }
         }
     };

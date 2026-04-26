@@ -359,5 +359,42 @@ const CAGE_END_POOL = {
         "*Ich bin heute glücklich. Morgen werde ich glücklich sein. Und übermorgen.*",
         "*Kirschblüten tanzen im Wind. Das Herz ist friedlich.*",
         "*Kirschblüten tanzen im Wind. Das Herz ist friedlich.*"
+    ],
+
+    'pt-BR': [
+        "*As flores de cerejeira dançam ao vento. O coração está em paz.*",
+        "*Mais uma manhã clara. O uniforme brilha sob a luz do sol.*",
+        "*Sea acena no portão da escola. Vamos para a escola juntas de novo.*",
+        "*A brisa da primavera toca minha bochecha. Vai ser um bom dia.*",
+        "*Uma pétala cai no meu ombro. Sea sorri e a tira dali.*",
+        "*O céu está limpo. Nem uma nuvem. Clima perfeito.*",
+        "*Subo as escadas. A luz do sol entra pelas janelas.*",
+        "*Outros alunos me cumprimentam no corredor. Todos sorriem.*",
+        "*Abro a porta da sala. Meu lugar espera por mim, como sempre.*",
+        "*A Sra. Park faz a chamada. Ela sorri ao dizer meu nome.*",
+        "*A aula começa. Letras brancas de giz aparecem no quadro.*",
+        "*Um pássaro passa pela janela. Tudo tão tranquilo.*",
+        "*É hora do almoço. Sea tira sua marmita.*",
+        "*O almoço de hoje está delicioso. Serviram sopa quente.*",
+        "*A Sra. Riin preparou chá doce para mim. Bebo com gratidão.*",
+        "*Sea e eu nos sentamos lado a lado para comer. Silencioso e confortável.*",
+        "*Comprei leite com chocolate. Está doce.*",
+        "*As aulas acabaram. Nada para fazer hoje. Que relaxante.*",
+        "*Caminho pelo jardim da escola com Sea. As flores são bonitas.*",
+        "*Leio um livro na biblioteca. Horas calmas passam.*",
+        "*O pôr do sol pinta a sala de aula. Luz laranja sobre as carteiras.*",
+        "*Sea pergunta se vamos para casa juntas. Eu disse que sim.*",
+        "*Estou em casa. Mais um bom dia.*",
+        "*Amanhã será outro bom dia.*",
+        "*O sono vem chegando. Meus olhos se fecham devagar.*",
+        // Unsettling
+        "*Não lembro que dia é hoje. Mas isso não importa.*",
+        "*As mesmas pétalas caem outra vez. Quando elas param de cair?*",
+        "*O sorriso de Sea é... exatamente igual ao de ontem. Até o ângulo.*",
+        "*Olho para o relógio. Não há relógio. Algum dia houve?*",
+        "*O cardápio do almoço é o mesmo de ontem. Mesmo gosto. Mesma temperatura.*",
+        "*Estou feliz hoje. Amanhã também estarei feliz. E depois de amanhã.*",
+        "*As flores de cerejeira dançam ao vento. O coração está em paz.*",
+        "*As flores de cerejeira dançam ao vento. O coração está em paz.*"
     ]
 };

@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     var p = window.location.pathname;
     var lang = p.includes('/en/') ? 'en' : p.includes('/ja/') ? 'ja'
              : p.includes('/es/') ? 'es' : p.includes('/fr/') ? 'fr'
-             : p.includes('/de/') ? 'de' : 'ko';
+             : p.includes('/de/') ? 'de' : p.includes('/pt-BR/') ? 'pt-BR' : 'ko';
     var APP_ID = lang === 'ko' ? 'nevergrad' : 'nevergrad-' + lang;
     var _lastError = '';
     var _errorCount = 0;

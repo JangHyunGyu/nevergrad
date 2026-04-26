@@ -317,7 +317,8 @@ class GlitchSystemAdvanced {
     }
 
     _getLang() {
-        return (this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko').slice(0, 2);
+        const lang = this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko';
+        return String(lang).toLowerCase().startsWith('pt') ? 'pt-BR' : String(lang).slice(0, 2);
     }
 
     _getInteractionCopy(lang) {
@@ -361,6 +362,26 @@ class GlitchSystemAdvanced {
                 seamFound: 'The plywood floor is raised by a fingernail.',
                 cameraFound: 'A camera is hidden under the false bottom.',
                 lockerComplete: 'Turn the camera on'
+            },
+            'pt-BR': {
+                player: 'Eu',
+                previous: 'Foto anterior',
+                next: 'Próxima foto',
+                photo: 'Foto',
+                photoHint: 'Clique ou deslize pelas fotos. Você ainda não pode abaixar a câmera.',
+                photoDoneHint: 'Todas as fotos foram verificadas.',
+                photoComplete: 'Abaixar a câmera',
+                lockerTitle: 'Armário da Yuna',
+                lockerHint: 'Toque nos pontos suspeitos para investigar.',
+                dust: 'Armário empoeirado',
+                clean: 'Armário limpo',
+                seam: 'Painel do piso levantado',
+                camera: 'Câmera escondida',
+                dustFound: 'O armário ao lado ainda está coberto de poeira.',
+                cleanFound: 'Só o armário da Yuna foi limpo recentemente.',
+                seamFound: 'O compensado do piso está levantado por uma unha.',
+                cameraFound: 'Há uma câmera escondida sob o fundo falso.',
+                lockerComplete: 'Ligar a câmera'
             }
         };
         return map[lang] || map.en;
@@ -1310,7 +1331,8 @@ class GlitchSystemAdvanced {
                 ja: '(死者は上書きできません)',
                 es: '(los muertos no pueden sobrescribirse)',
                 fr: '(les morts ne peuvent pas \u00eatre \u00e9cras\u00e9s)',
-                de: '(die Toten k\u00f6nnen nicht \u00fcberschrieben werden)'
+                de: '(die Toten k\u00f6nnen nicht \u00fcberschrieben werden)',
+                'pt-BR': '(os mortos não podem ser sobrescritos)'
             };
             sub.textContent = loadSubTexts[lang] || loadSubTexts.ko;
         }
@@ -1660,7 +1682,8 @@ class GlitchSystemAdvanced {
                 ja: '\u2191 \u4E0A\u304B\u3089\u4E0B\u3078\u62ED\u3044\u3066\u304F\u3060\u3055\u3044',
                 es: '\u2191 Desliza hacia abajo',
                 fr: '\u2191 Glissez vers le bas',
-                de: '\u2191 Nach unten wischen'
+                de: '\u2191 Nach unten wischen',
+                'pt-BR': '\u2191 Deslize para baixo'
             };
             hint.textContent = hintTexts[lang] || hintTexts.ko;
             container.appendChild(hint);
@@ -1965,7 +1988,8 @@ class GlitchSystemAdvanced {
             ja: '署名',
             es: 'Firma',
             fr: 'Signature',
-            de: 'Unterschrift'
+            de: 'Unterschrift',
+            'pt-BR': 'Assinatura'
         };
         label.textContent = labels[lang] || labels.ko;
 

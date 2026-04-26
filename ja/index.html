@@ -14,8 +14,8 @@
 	<link rel="icon" href="favicon.svg" type="image/svg+xml">
     <title>Nevergrad - 卒業できない教室</title>
     <meta name="robots" content="index, follow">
-    <meta name="description" content="転校初日、すべてが完璧だった。完璧すぎて不思議なほどに。">
-    <meta name="keywords" content="무료 노벨 게임 브라우저, 다운로드 없이 플레이 비주얼 노벨, 학교 미스터리 게임 무료, 선택지 스토리 게임 온라인, 엔딩 분기 게임 무료 플레이, 온라인 소설 게임 브라우저, 벚꽃 학원 게임 무료 플레이, 애니 스타일 인터랙티브 소설, 브라우저에서 하는 무료 게임, 7개국어 비주얼 노벨, 비주얼 노벨 추천 무료, 학원물 게임 온라인">
+    <meta name="description" content="転校初日、すべてが完璧だった。完璧すぎて、不気味なほどに。">
+    <meta name="keywords" content="無料ビジュアルノベル, ブラウザゲーム 無料, ダウンロード不要 ゲーム, 学園ミステリー, 選択肢 ノベルゲーム, マルチエンディング, 桜 学園 ゲーム, アニメ風 インタラクティブ小説, ホラー ビジュアルノベル, 日本語対応 ノベルゲーム, Nevergrad">
     <meta name="author" content="Archerlab">
     <meta name="theme-color" content="#FFB7C5">
 
@@ -41,7 +41,7 @@
     <!-- OG Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="卒業できない教室 | Nevergrad">
-    <meta property="og:description" content="転校初日、すべてが完璧だった。完璧すぎて不思議なほどに。">
+    <meta property="og:description" content="転校初日、すべてが完璧だった。完璧すぎて、不気味なほどに。">
     <meta property="og:url" content="https://nevergrad.archerlab.dev/ja/">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
     <meta property="og:site_name" content="Archerlab Games">
@@ -49,27 +49,29 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nevergrad: The Classroom You Never Graduate">
-    <meta name="twitter:description" content="무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7개 언어 지원.">
+    <meta name="twitter:title" content="Nevergrad: 卒業できない教室">
+    <meta name="twitter:description" content="ダウンロード不要で遊べる無料Webビジュアルノベル。桜の咲く学校で始まる5日間の記録。5人のヒロイン、7つのエンディング、7言語対応。">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/dialogue.css">
     <link rel="stylesheet" href="../assets/css/glitch.css">
 
+    <style>:root{--font-main:'Noto Sans JP','Noto Sans KR',sans-serif;}</style>
+
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "VideoGame",
-      "name": "졸업하지 못한 교실 - 5일의 기록",
-      "description": "무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7개 언어 지원.",
+      "name": "卒業できない教室 - 5日間の記録",
+      "description": "ダウンロード不要で遊べる無料Webビジュアルノベル。桜の咲く学校で始まる5日間の記録。5人のヒロイン、7つのエンディング、7言語対応。",
       "genre": ["Visual Novel", "Romance", "School Life"],
       "gamePlatform": "Web Browser",
       "applicationCategory": "Game",
@@ -84,7 +86,7 @@
 <body>
     <!-- ===== Title Screen ===== -->
     <div id="title-screen" class="screen active">
-        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 홈" title="ArcherLab">🏹 ArcherLab</a>
+        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab ホーム" title="ArcherLab">🏹 ArcherLab</a>
         <select class="lang-switcher" aria-label="Language" onchange="if(this.value)location.href=this.value">
             <option value="/">한국어</option>
             <option value="/en/">English</option>
@@ -133,15 +135,15 @@
     <div id="gallery-screen" class="screen hidden">
         <div class="gallery-container">
             <div class="gallery-header">
-                <span class="gallery-title">엔딩 갤러리</span>
+                <span class="gallery-title">エンディングギャラリー</span>
                 <div class="gallery-progress-area">
-                    <span class="gallery-progress-label">달성률</span>
+                    <span class="gallery-progress-label">達成率</span>
                     <span id="gallery-progress">0 / 7</span>
                 </div>
             </div>
             <div id="gallery-grid"></div>
             <div class="gallery-footer">
-                <button id="gallery-back" class="menu-btn">돌아가기</button>
+                <button id="gallery-back" class="menu-btn">戻る</button>
             </div>
         </div>
     </div>
@@ -198,7 +200,7 @@
     <div id="backlog-panel" class="screen overlay hidden">
         <div class="backlog-container">
             <div class="backlog-header">
-                <span class="backlog-title">대사 기록</span>
+                <span class="backlog-title">会話ログ</span>
                 <button id="backlog-close" class="backlog-close-btn">&times;</button>
             </div>
             <div id="backlog-content" class="backlog-content"></div>
@@ -246,7 +248,7 @@
     <div id="sl-overlay" class="screen overlay hidden">
         <div class="sl-container">
             <div class="sl-header">
-                <span id="sl-title" class="sl-title">저장</span>
+                <span id="sl-title" class="sl-title">セーブ</span>
                 <button id="sl-close" class="sl-close-btn">&times;</button>
             </div>
             <div id="sl-slots" class="sl-slots">
@@ -262,14 +264,14 @@
             <div class="loading-bar-outer">
                 <div id="loading-bar-inner" class="loading-bar-inner"></div>
             </div>
-            <div id="loading-text" class="loading-text">로딩 중...</div>
+            <div id="loading-text" class="loading-text">読み込み中...</div>
         </div>
     </div>
 
     <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->
     <div id="rotate-prompt" class="rotate-prompt">
         <div class="rotate-icon">📱</div>
-        <div class="rotate-text">화면을 가로로 회전해주세요<br>Please rotate your device</div>
+        <div class="rotate-text">端末を横向きにしてください<br>Please rotate your device</div>
     </div>
 
     <!-- ===== Scripts ===== -->

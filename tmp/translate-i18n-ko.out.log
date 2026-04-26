@@ -1,0 +1,17 @@
+model=gemini-2.5-flash
+langs=ko files=20
+[start] ko/day1_afterschool.json
+[done]  ko/day1_afterschool.json 31.5s
+[start] ko/day1_lunch.json
+[done]  ko/day1_lunch.json 47.1s
+[start] ko/day1_morning.json
+[done]  ko/day1_morning.json 53.7s
+[start] ko/day1_night.json
+[done]  ko/day1_night.json 14.8s
+[start] ko/day2_afterschool.json
+[done]  ko/day2_afterschool.json 33.2s
+[start] ko/day2_lunch.json
+[done]  ko/day2_lunch.json 44.7s
+[start] ko/day2_morning.json
+[done]  ko/day2_morning.json 26.5s
+[start] ko/day2_night.json

@@ -1,0 +1,11 @@
+model=gemini-2.5-flash
+langs=ko,ja,es,fr,de,pt-BR files=20
+[start] ko/day1_afterschool.json
+[done]  ko/day1_afterschool.json 30.5s
+[start] ko/day1_lunch.json
+[done]  ko/day1_lunch.json 33.1s
+[start] ko/day1_morning.json
+[done]  ko/day1_morning.json 52.3s
+[start] ko/day1_night.json
+[done]  ko/day1_night.json 14.1s
+[start] ko/day2_afterschool.json

@@ -15,7 +15,7 @@
     <title>Nevergrad - El Aula Sin Graduación</title>
     <meta name="robots" content="index, follow">
     <meta name="description" content="El primer día de transferencia, todo era perfecto. Demasiado perfecto para ser normal.">
-    <meta name="keywords" content="무료 노벨 게임 브라우저, 다운로드 없이 플레이 비주얼 노벨, 학교 미스터리 게임 무료, 선택지 스토리 게임 온라인, 엔딩 분기 게임 무료 플레이, 온라인 소설 게임 브라우저, 벚꽃 학원 게임 무료 플레이, 애니 스타일 인터랙티브 소설, 브라우저에서 하는 무료 게임, 7개국어 비주얼 노벨, 비주얼 노벨 추천 무료, 학원물 게임 온라인">
+    <meta name="keywords" content="juego visual novel gratis en navegador, visual novel escolar sin descarga, juego de misterio escolar gratis, historia interactiva con decisiones, juego de finales múltiples, novela interactiva online, juego anime de instituto, visual novel en español, juego narrativo gratis, juego de terror psicológico escolar">
     <meta name="author" content="Archerlab">
     <meta name="theme-color" content="#FFB7C5">
 
@@ -49,8 +49,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nevergrad: The Classroom You Never Graduate">
-    <meta name="twitter:description" content="무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7개 언어 지원.">
+    <meta name="twitter:title" content="Nevergrad: El Aula Sin Graduación">
+    <meta name="twitter:description" content="Visual novel web gratis, sin descargas. Una historia de cinco días en una escuela cubierta de cerezos, con cinco heroínas, siete finales y siete idiomas.">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
 
     <!-- Preconnect -->
@@ -68,8 +68,8 @@
     {
       "@context": "https://schema.org",
       "@type": "VideoGame",
-      "name": "졸업하지 못한 교실 - 5일의 기록",
-      "description": "무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7개 언어 지원.",
+      "name": "El Aula Sin Graduación - Registro de 5 Días",
+      "description": "Visual novel web gratis, sin descargas. Una historia de cinco días en una escuela cubierta de cerezos, con cinco heroínas, siete finales y siete idiomas.",
       "genre": ["Visual Novel", "Romance", "School Life"],
       "gamePlatform": "Web Browser",
       "applicationCategory": "Game",
@@ -84,7 +84,7 @@
 <body>
     <!-- ===== Title Screen ===== -->
     <div id="title-screen" class="screen active">
-        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 홈" title="ArcherLab">🏹 ArcherLab</a>
+        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="Inicio de ArcherLab" title="ArcherLab">🏹 ArcherLab</a>
         <select class="lang-switcher" aria-label="Language" onchange="if(this.value)location.href=this.value">
             <option value="/">한국어</option>
             <option value="/en/">English</option>
@@ -133,15 +133,15 @@
     <div id="gallery-screen" class="screen hidden">
         <div class="gallery-container">
             <div class="gallery-header">
-                <span class="gallery-title">엔딩 갤러리</span>
+                <span class="gallery-title">Galería de finales</span>
                 <div class="gallery-progress-area">
-                    <span class="gallery-progress-label">달성률</span>
+                    <span class="gallery-progress-label">Progreso</span>
                     <span id="gallery-progress">0 / 7</span>
                 </div>
             </div>
             <div id="gallery-grid"></div>
             <div class="gallery-footer">
-                <button id="gallery-back" class="menu-btn">돌아가기</button>
+                <button id="gallery-back" class="menu-btn">Volver</button>
             </div>
         </div>
     </div>
@@ -198,7 +198,7 @@
     <div id="backlog-panel" class="screen overlay hidden">
         <div class="backlog-container">
             <div class="backlog-header">
-                <span class="backlog-title">대사 기록</span>
+                <span class="backlog-title">Registro de diálogo</span>
                 <button id="backlog-close" class="backlog-close-btn">&times;</button>
             </div>
             <div id="backlog-content" class="backlog-content"></div>
@@ -246,7 +246,7 @@
     <div id="sl-overlay" class="screen overlay hidden">
         <div class="sl-container">
             <div class="sl-header">
-                <span id="sl-title" class="sl-title">저장</span>
+                <span id="sl-title" class="sl-title">Guardar</span>
                 <button id="sl-close" class="sl-close-btn">&times;</button>
             </div>
             <div id="sl-slots" class="sl-slots">
@@ -262,14 +262,14 @@
             <div class="loading-bar-outer">
                 <div id="loading-bar-inner" class="loading-bar-inner"></div>
             </div>
-            <div id="loading-text" class="loading-text">로딩 중...</div>
+            <div id="loading-text" class="loading-text">Cargando...</div>
         </div>
     </div>
 
     <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->
     <div id="rotate-prompt" class="rotate-prompt">
         <div class="rotate-icon">📱</div>
-        <div class="rotate-text">화면을 가로로 회전해주세요<br>Please rotate your device</div>
+        <div class="rotate-text">Gira el dispositivo<br>al modo horizontal</div>
     </div>
 
     <!-- ===== Scripts ===== -->

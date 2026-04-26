@@ -901,15 +901,15 @@
     },
     "day5_observer_4": {
         "name": "",
-        "text": "══════════════════════════════════════════\n  NEVERGRAD RESEARCH INSTITUTE\n  外部観察者行動記録\n══════════════════════════════════════════"
+        "text": "══════════════════════════════════════════\n  NEVERGRAD RESEARCH INSTITUTE\n  プレイログ分析記録\n══════════════════════════════════════════"
     },
     "day5_observer_5": {
         "name": "",
-        "text": "*……外部観察者？*"
+        "text": "*……プレイログ？*"
     },
     "day5_observer_6": {
         "name": "",
-        "text": "観察対象：被験者 #13（{name}）\n観察期間：{play_time}\n観察者行動要約：\n\n・セアルート選択回数：{route_data}\n・ユナ接触有無：{met_yuna}\n・リイン訪問回数：{riin_visits}\n・ソルファ会話試行：{seolhwa_attempts}\n・証拠確保有無：{evidence_data}\n・最終選択までの所要時間：{timer_data}"
+        "text": "記録対象：被験者 #13（{name}）\n進行時間：{play_time}\n選択記録概要：\n\n・セアルート選択回数：{route_data}\n・ユナ接触有無：{met_yuna}\n・リイン訪問回数：{riin_visits}\n・ソルファ会話試行：{seolhwa_attempts}\n・証拠確保有無：{evidence_data}\n・最終選択までの所要時間：{timer_data}"
     },
     "day5_observer_7": {
         "name": "",
@@ -917,7 +917,7 @@
     },
     "day5_observer_8": {
         "name": "",
-        "text": "備考：\n\n観察者は被験者 #13 の5日間を視聴した。\n観察者は被験者の対話相手を選択した。\n観察者は被験者の感情的絆の対象を決定した。\n観察者は被験者が恐怖を感じる瞬間を見守った。\n観察者は被験者の脱出の可否を決定した。\n\n質問：\nパク・ウンスは13回の周期を設計し観察した。\nあなたは{play_time}の間、{name}の人生を観察した。\n\n違いは何ですか？"
+        "text": "備考：\n\nユーザーは被験者 #13の5日間を進めた。\nユーザーは被験者の対話相手を選択した。\nユーザーは被験者の感情的な絆の対象を決定した。\nユーザーは被験者が恐怖を感じる瞬間にも進行を続けた。\nユーザーは被験者の脱出の可否を決定した。\n\n質問：\nパク・ウンスは13回の周期を設計し、観察しました。\nあなたは{play_time}の間、{name}の選択を進めました。\n\n違いは何ですか？"
     },
     "day5_observer_cupid_check": {
         "name": "",
@@ -925,7 +925,7 @@
     },
     "day5_observer_cupid_extra": {
         "name": "",
-        "text": "追加記録：\n\n観察者は前周期の環境シミュレーション（PROJECT CUPID）にも参加した記録がある。\nCUPID内順応度データ: {cupid_compliance}\n攻略対象: {cupid_heroine}\n\n解釈：\n観察者は被験者の「理想的環境」を直接体験した。\n観察者がCUPIDで選択したヒロイン＝研究所が被験者に注入しようとした感情パターン。\n観察者は実験設計を — 楽しんだ。"
+        "text": "追加記録：\n\nユーザーは以前の周期環境シミュレーション（PROJECT CUPID）にも参加した記録あり。\nCUPID内順応度データ：{cupid_compliance}\n攻略対象：{cupid_heroine}\n\n解釈：\nユーザーは被験者の「理想的環境」を直接体験した。\nCUPIDで選択したヒロイン＝研究所が被験者に注入しようとしていた感情パターン。\nユーザーの選択も記録として残っています。"
     },
     "day5_observer_9": {
         "name": "",

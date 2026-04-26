@@ -30,40 +30,77 @@ const LANGS = {
         locale: 'ja_JP',
         title: '卒業できない教室',
         metaTitle: 'Nevergrad - 卒業できない教室',
-        metaDesc: '転校初日、すべてが完璧だった。完璧すぎて不思議なほどに。',
+        metaDesc: '転校初日、すべてが完璧だった。完璧すぎて、不気味なほどに。',
+        keywords: '無料ビジュアルノベル, ブラウザゲーム 無料, ダウンロード不要 ゲーム, 学園ミステリー, 選択肢 ノベルゲーム, マルチエンディング, 桜 学園 ゲーム, アニメ風 インタラクティブ小説, ホラー ビジュアルノベル, 日本語対応 ノベルゲーム, Nevergrad',
         ogTitle: '卒業できない教室 | Nevergrad',
+        twitterTitle: 'Nevergrad: 卒業できない教室',
+        twitterDesc: 'ダウンロード不要で遊べる無料Webビジュアルノベル。桜の咲く学校で始まる5日間の記録。5人のヒロイン、7つのエンディング、7言語対応。',
+        schemaName: '卒業できない教室 - 5日間の記録',
+        schemaDesc: 'ダウンロード不要で遊べる無料Webビジュアルノベル。桜の咲く学校で始まる5日間の記録。5人のヒロイン、7つのエンディング、7言語対応。',
         subtitle: '5日間の記録',
         newGame: 'ニューゲーム', continue: 'つづきから', gallery: 'ギャラリー',
         namePrompt: 'あなたの名前は？', namePlaceholder: '名前を入力してください', start: 'スタート',
         save: 'セーブ', load: 'ロード', settings: '設定', toTitle: 'タイトルへ', resume: '戻る',
         ftPlaceholder: 'メッセージを入力...', ftSend: '送信',
-        dayDisplay: '1日目 - 朝'
+        dayDisplay: '1日目 - 朝',
+        galleryTitle: 'エンディングギャラリー', galleryProgress: '達成率', galleryBack: '戻る',
+        backlogTitle: '会話ログ',
+        slotTitle: 'セーブ',
+        loadingText: '読み込み中...',
+        rotateText: '端末を横向きにしてください<br>Please rotate your device',
+        archerlabLabel: 'ArcherLab ホーム',
+        fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap',
+        fontOverride: ":root{--font-main:'Noto Sans JP','Noto Sans KR',sans-serif;}"
     },
     es: {
         locale: 'es_ES',
         title: 'El Aula Sin Graduación',
         metaTitle: 'Nevergrad - El Aula Sin Graduación',
         metaDesc: 'El primer día de transferencia, todo era perfecto. Demasiado perfecto para ser normal.',
+        keywords: 'juego visual novel gratis en navegador, visual novel escolar sin descarga, juego de misterio escolar gratis, historia interactiva con decisiones, juego de finales múltiples, novela interactiva online, juego anime de instituto, visual novel en español, juego narrativo gratis, juego de terror psicológico escolar',
         ogTitle: 'El Aula Sin Graduación | Nevergrad',
+        twitterTitle: 'Nevergrad: El Aula Sin Graduación',
+        twitterDesc: 'Visual novel web gratis, sin descargas. Una historia de cinco días en una escuela cubierta de cerezos, con cinco heroínas, siete finales y siete idiomas.',
+        schemaName: 'El Aula Sin Graduación - Registro de 5 Días',
+        schemaDesc: 'Visual novel web gratis, sin descargas. Una historia de cinco días en una escuela cubierta de cerezos, con cinco heroínas, siete finales y siete idiomas.',
         subtitle: 'Registro de 5 Días',
         newGame: 'Nueva Partida', continue: 'Continuar', gallery: 'Galería',
         namePrompt: '¿Cuál es tu nombre?', namePlaceholder: 'Ingresa tu nombre', start: 'Iniciar',
         save: 'Guardar', load: 'Cargar', settings: 'Ajustes', toTitle: 'Título', resume: 'Volver',
         ftPlaceholder: 'Escribe un mensaje...', ftSend: 'Enviar',
-        dayDisplay: 'Día 1 - Mañana'
+        dayDisplay: 'Día 1 - Mañana',
+        galleryTitle: 'Galería de finales', galleryProgress: 'Progreso', galleryBack: 'Volver',
+        backlogTitle: 'Registro de diálogo',
+        slotTitle: 'Guardar',
+        loadingText: 'Cargando...',
+        rotateText: 'Gira el dispositivo<br>al modo horizontal',
+        archerlabLabel: 'Inicio de ArcherLab'
     },
     fr: {
         locale: 'fr_FR',
-        title: 'La Classe Sans Diplôme',
-        metaTitle: 'Nevergrad - La Classe Sans Diplôme',
-        metaDesc: 'Le premier jour de transfert, tout était parfait. Trop parfait pour être normal.',
-        ogTitle: 'La Classe Sans Diplôme | Nevergrad',
-        subtitle: 'Chronique de 5 Jours',
-        newGame: 'Nouvelle Partie', continue: 'Continuer', gallery: 'Galerie',
+        title: 'La classe sans diplôme',
+        metaTitle: 'Nevergrad - La classe sans diplôme',
+        metaDesc: 'Le jour de mon transfert, tout était parfait. Trop parfait pour être normal.',
+        keywords: 'visual novel gratuit en ligne, jeu narratif sans téléchargement, visual novel scolaire, mystère au lycée, histoire interactive à choix, jeu à fins multiples, romance scolaire sombre, visual novel en français, jeu web gratuit, thriller psychologique scolaire, Nevergrad',
+        ogTitle: 'La classe sans diplôme | Nevergrad',
+        twitterTitle: 'Nevergrad : La classe sans diplôme',
+        twitterDesc: 'Visual novel web gratuit, sans téléchargement. Cinq jours dans une école en fleurs, cinq héroïnes, sept fins et une histoire où tout semble trop parfait.',
+        schemaName: 'La classe sans diplôme - Journal de cinq jours',
+        schemaDesc: 'Visual novel web gratuit, sans téléchargement. Cinq jours dans une école en fleurs, cinq héroïnes, sept fins et une histoire où tout semble trop parfait.',
+        subtitle: 'Journal de cinq jours',
+        newGame: 'Nouvelle partie', continue: 'Continuer', gallery: 'Galerie',
         namePrompt: 'Quel est votre nom ?', namePlaceholder: 'Entrez votre nom', start: 'Commencer',
-        save: 'Sauvegarder', load: 'Charger', settings: 'Paramètres', toTitle: 'Titre', resume: 'Retour',
+        save: 'Sauvegarder', load: 'Charger', settings: 'Paramètres', toTitle: 'Écran titre', resume: 'Reprendre',
         ftPlaceholder: 'Écrivez un message...', ftSend: 'Envoyer',
-        dayDisplay: 'Jour 1 - Matin'
+        dayDisplay: 'Jour 1 - matin',
+        galleryTitle: 'Galerie des fins', galleryProgress: 'Progression', galleryBack: 'Retour',
+        backlogTitle: 'Historique des dialogues',
+        slotTitle: 'Sauvegarder',
+        loadingText: 'Chargement...',
+        rotateText: 'Tournez votre appareil<br>en mode paysage',
+        archerlabLabel: 'Accueil ArcherLab',
+        fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap',
+        fontOverride: ":root{--font-main:'Noto Sans','Noto Sans KR',sans-serif;}"
     },
     de: {
         locale: 'de_DE',
@@ -71,7 +108,7 @@ const LANGS = {
         metaTitle: 'Nevergrad - Das Klassenzimmer ohne Abschluss',
         metaDesc: 'Der erste Tag nach dem Schulwechsel, alles war perfekt. Zu perfekt, um normal zu sein.',
         ogTitle: 'Das Klassenzimmer ohne Abschluss | Nevergrad',
-        subtitle: 'Aufzeichnung von 5 Tagen',
+        subtitle: 'Fünf-Tage-Protokoll',
         newGame: 'Neues Spiel', continue: 'Fortsetzen', gallery: 'Galerie',
         namePrompt: 'Wie heißt du?', namePlaceholder: 'Namen eingeben', start: 'Start',
         save: 'Speichern', load: 'Laden', settings: 'Einstellungen', toTitle: 'Titelbildschirm', resume: 'Zurück',
@@ -121,6 +158,12 @@ function buildPage(lang, data) {
         /<meta name="description" content="[^"]*">/,
         `<meta name="description" content="${data.metaDesc}">`
     );
+    if (data.keywords) {
+        html = html.replace(
+            /<meta name="keywords" content="[^"]*">/,
+            `<meta name="keywords" content="${data.keywords}">`
+        );
+    }
 
     // canonical
     html = html.replace(
@@ -151,6 +194,36 @@ function buildPage(lang, data) {
         /<meta property="og:locale" content="[^"]*">/,
         `<meta property="og:locale" content="${data.locale}">`
     );
+    if (data.twitterTitle) {
+        html = html.replace(
+            /<meta name="twitter:title" content="[^"]*">/,
+            `<meta name="twitter:title" content="${data.twitterTitle}">`
+        );
+    }
+    if (data.twitterDesc) {
+        html = html.replace(
+            /<meta name="twitter:description" content="[^"]*">/,
+            `<meta name="twitter:description" content="${data.twitterDesc}">`
+        );
+    }
+    if (data.schemaName) {
+        html = html.replace(
+            /"name": "[^"]*"/,
+            `"name": "${data.schemaName}"`
+        );
+    }
+    if (data.schemaDesc) {
+        html = html.replace(
+            /"description": "[^"]*"/,
+            `"description": "${data.schemaDesc}"`
+        );
+    }
+    if (data.fontHref) {
+        html = html.replace(
+            /<link href="https:\/\/fonts\.googleapis\.com\/css2\?family=[^"]+" rel="stylesheet">/,
+            `<link href="${data.fontHref}" rel="stylesheet">`
+        );
+    }
 
     // 정적 HTML 텍스트를 해당 언어로 교체
     html = html.replace(
@@ -217,6 +290,36 @@ function buildPage(lang, data) {
         /(<div id="day-display" class="day-display">)[^<]*(<\/div>)/,
         `$1${data.dayDisplay}$2`
     );
+    if (data.galleryTitle) {
+        html = html.replace(/(<span class="gallery-title">)[^<]*(<\/span>)/, `$1${data.galleryTitle}$2`);
+    }
+    if (data.galleryProgress) {
+        html = html.replace(/(<span class="gallery-progress-label">)[^<]*(<\/span>)/, `$1${data.galleryProgress}$2`);
+    }
+    if (data.galleryBack) {
+        html = html.replace(/(<button id="gallery-back" class="menu-btn">)[^<]*(<\/button>)/, `$1${data.galleryBack}$2`);
+    }
+    if (data.backlogTitle) {
+        html = html.replace(/(<span class="backlog-title">)[^<]*(<\/span>)/, `$1${data.backlogTitle}$2`);
+    }
+    if (data.slotTitle) {
+        html = html.replace(/(<span id="sl-title" class="sl-title">)[^<]*(<\/span>)/, `$1${data.slotTitle}$2`);
+    }
+    if (data.loadingText) {
+        html = html.replace(/(<div id="loading-text" class="loading-text">)[^<]*(<\/div>)/, `$1${data.loadingText}$2`);
+    }
+    if (data.rotateText) {
+        html = html.replace(/(<div class="rotate-text">)[\s\S]*?(<\/div>)/, `$1${data.rotateText}$2`);
+    }
+    if (data.archerlabLabel) {
+        html = html.replace(/aria-label="ArcherLab [^"]*"/, `aria-label="${data.archerlabLabel}"`);
+    }
+    if (data.fontOverride) {
+        html = html.replace(
+            '    <!-- JSON-LD Schema -->',
+            `    <style>${data.fontOverride}</style>\n\n    <!-- JSON-LD Schema -->`
+        );
+    }
 
     // 상대 경로를 한 단계 위로 (assets/ → ../assets/)
     html = html.replace(/href="assets\//g, 'href="../assets/');

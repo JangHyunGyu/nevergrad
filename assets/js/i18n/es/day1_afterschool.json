@@ -5,18 +5,18 @@
     },
     "day1_after_choice": {
         "name": "Yo",
-        "text": "*Despues de clases. Adonde voy?*",
+        "text": "*Después de clases. ¿Adónde debería ir?*",
         "choices": [
-            "Sea me dijo que fuera a la sala del consejo estudiantil",
-            "Voy a ver a Yuna otra vez en la biblioteca",
-            "Me intriga la profesora Riin de la enfermeria",
-            "Paso por la sala de profesores a saludar a la profesora Eunsu",
-            "Por hoy me voy a casa"
+            "Sea me dijo que fuera a pasar el rato en la sala del consejo estudiantil",
+            "Volveré a ver a Yuna en la biblioteca",
+            "Tengo curiosidad por la señorita Riin en la enfermería",
+            "Pasaré por la sala de profesores para saludar a la profesora Eunsu",
+            "Por hoy, solo iré a casa"
         ]
     },
     "day1_after_sea_1": {
         "name": "",
-        "text": "*Una habitacion pequena. Dos escritorios, un casillero, una planta junto a la ventana. Todo ordenado.*"
+        "text": "*Una habitación pequeña. Dos escritorios, un casillero, una planta junto a la ventana. Todo ordenado.*"
     },
     "day1_after_sea_2": {
         "name": "Han Sea",
@@ -24,227 +24,227 @@
     },
     "day1_after_sea_3": {
         "name": "",
-        "text": "*Me pasa una lata de refresco. Con naturalidad.*"
+        "text": "*Me entrega una bebida enlatada. Casual, natural.*"
     },
     "day1_after_sea_4": {
         "name": "Han Sea",
-        "text": "\"Que tal? Te vas adaptando?\""
+        "text": "\"Entonces, ¿cómo te estás adaptando?\""
     },
     "day1_after_sea_5": {
         "name": "Yo",
-        "text": "\"Mejor de lo que esperaba. Tu me has cuidado mucho, Sea.\""
+        "text": "\"Mejor de lo que esperaba. Me has estado cuidando mucho, Sea.\""
     },
     "day1_after_sea_6": {
         "name": "Han Sea",
-        "text": "\"...En serio?\""
+        "text": "\"...¿En serio?\""
     },
     "day1_after_sea_7": {
         "name": "",
-        "text": "*Sea suelta un leve suspiro y sonrie.*"
+        "text": "*Sea exhala suavemente y sonríe.*"
     },
     "day1_after_sea_8": {
         "name": "Han Sea",
-        "text": "\"El primer dia es el mas dificil. No conoces a nadie.\""
+        "text": "\"El primer día siempre es el más difícil. No conoces a nadie.\""
     },
     "day1_after_sea_9": {
         "name": "",
-        "text": "*Sea mira por la ventana. La luz del atardecer entra por ella.*"
+        "text": "*Sea mira por la ventana. La luz del atardecer entra a raudales.*"
     },
     "day1_after_sea_10": {
         "name": "Han Sea",
-        "text": "\"...Me alegra que hayas venido, {name}. Estar sola en la sala del consejo es un poco aburrido.\""
+        "text": "\"...Me alegra que hayas venido, {name}. Se siente un poco solitario estar aquí solo en la sala del consejo estudiantil.\""
     },
     "day1_after_sea_11": {
         "name": "Yo",
-        "text": "\"Y los demas miembros del consejo?\""
+        "text": "\"¿Qué hay de los otros miembros del consejo estudiantil?\""
     },
     "day1_after_sea_12": {
         "name": "Han Sea",
-        "text": "\"Los hay, pero... la unica que viene aqui despues de clases soy yo.\""
+        "text": "\"Hay algunos, pero... soy la única que viene aquí después de clases.\""
     },
     "day1_after_sea_13": {
         "name": "Han Sea",
-        "text": "\"...Vendras manana tambien?\""
+        "text": "\"...¿Vendrás de nuevo mañana?\""
     },
     "day1_after_sea_14": {
         "name": "Yo",
-        "text": "\"Si, si tengo tiempo.\""
+        "text": "\"Claro, si tengo tiempo.\""
     },
     "day1_after_sea_15": {
         "name": "Han Sea",
-        "text": "\"De verdad te estare esperando, eh? Si no vienes, ire a buscarte a tu salon.\""
+        "text": "\"De verdad te estaré esperando, ¿está bien? Si no vienes, irrumpiré en tu salón de clases.\""
     },
     "day1_after_sea_16": {
         "name": "",
-        "text": "*Sea me mira fijo a los ojos para confirmarlo. No puedo negarme.*"
+        "text": "*Sea me mira a los ojos, confirmando. No puedo decir que no.*"
     },
     "day1_after_yuna_1": {
         "name": "",
-        "text": "*Yuna esta organizando fotos en un asiento junto a la ventana.*"
+        "text": "*Yuna está organizando fotos en un asiento junto a la ventana.*"
     },
     "day1_after_yuna_2": {
         "name": "Yuna",
-        "text": "\"Volviste!\""
+        "text": "\"¡Regresaste!\""
     },
     "day1_after_yuna_3": {
         "name": "",
-        "text": "*Yuna pasa fotos en su camara y me las muestra. Paisajes escolares, cerezos, gatos.*"
+        "text": "*Yuna hojea su cámara y me muestra fotos. Paisajes escolares, cerezos en flor, gatos.*"
     },
     "day1_after_yuna_4": {
         "name": "Yuna",
-        "text": "\"Este gato se llama Queso. Yo le puse el nombre.\""
+        "text": "\"Este gato es Queso. Yo le puse el nombre.\""
     },
     "day1_after_yuna_5": {
         "name": "",
-        "text": "*Hablamos un buen rato sobre gatos. Los ojos de Yuna brillan mientras sigue hablando.*"
+        "text": "*Charlamos sobre gatos por un rato. Los ojos de Yuna brillan mientras sigue hablando.*"
     },
     "day1_after_yuna_6": {
         "name": "Yuna",
-        "text": "\"...Vendras a la biblioteca manana tambien?\""
+        "text": "\"...¿Vendrás a la biblioteca de nuevo mañana?\""
     },
     "day1_after_yuna_7": {
         "name": "Yo",
-        "text": "\"Si, si tengo tiempo.\""
+        "text": "\"Claro, si tengo tiempo.\""
     },
     "day1_after_yuna_8": {
         "name": "Yuna",
-        "text": "\"...Por favor, ven.\""
+        "text": "\"...Por favor, hazlo.\""
     },
     "day1_after_yuna_9": {
         "name": "",
-        "text": "*El \"por favor\" sonaba con fuerza. ...Por que tan seria?*"
+        "text": "*Hubo énfasis en el 'por favor'. ...¿Por qué tan seria?*"
     },
     "day1_after_yuna_10": {
         "name": "",
-        "text": "*Estoy saliendo de la biblioteca cuando Yuna me sigue.*"
+        "text": "*Mientras salgo de la biblioteca, Yuna me sigue.*"
     },
     "day1_after_yuna_11": {
         "name": "Choi Yuna",
-        "text": "Senpai, espere un momento!"
+        "text": "¡sunbae, espera!"
     },
     "day1_after_yuna_12": {
         "name": "",
-        "text": "*Yuna me extiende una foto polaroid. Es el paisaje junto a la ventana de la biblioteca de hace un rato.*"
+        "text": "*Yuna me extiende una foto Polaroid. La vista desde la ventana de la biblioteca de antes.*"
     },
     "day1_after_yuna_13": {
         "name": "Choi Yuna",
-        "text": "Esto es... el asiento donde estaba sentado, senpai. La luz era tan bonita que la tome. Se la regalo de recuerdo."
+        "text": "Esto es... donde estabas, sunbae. La luz era tan bonita que tomé una foto. Aquí tienes, como recuerdo."
     },
     "day1_after_yuna_14": {
         "name": "",
-        "text": "*Recibi la foto. Un instante de luz solar cayendo sobre un libro. Sin darme cuenta, sonrei.*"
+        "text": "*Tomé la foto. Un momento de luz solar cayendo sobre un libro. No pude evitar sonreír.*"
     },
     "day1_after_riin_1": {
         "name": "",
-        "text": "*Tome te de hierbas con la profesora Riin. Un momento relajante.*"
+        "text": "*Tomé té de hierbas con la señorita Riin. Un momento relajante.*"
     },
     "day1_after_riin_2": {
         "name": "Riin",
-        "text": "\"Cuando te cambias de escuela, el entorno cambia completamente. Hay bastantes chicos que terminan sin poder dormir o teniendo suenos raros.\""
+        "text": "\"Cuando te transfieres, todo tu entorno cambia. Muchos estudiantes terminan teniendo problemas para dormir o sueños extraños.\""
     },
     "day1_after_riin_3": {
         "name": "Yo",
-        "text": "\"Por ahora estoy bien.\""
+        "text": "\"Estoy bien hasta ahora.\""
     },
     "day1_after_riin_4": {
         "name": "Riin",
-        "text": "\"Si? Me alegro.\""
+        "text": "\"¿Sí? Me alegra escucharlo.\""
     },
     "day1_after_riin_5": {
         "name": "",
-        "text": "*La profesora Riin sonrie y me abre la puerta.*"
+        "text": "*La señorita Riin hace una pausa por un momento, luego abre el gabinete.*"
     },
     "day1_after_riin_6": {
         "name": "Kang Riin",
-        "text": "Espera. Llevate esto."
+        "text": "Espera. Llévate esto."
     },
     "day1_after_riin_7": {
         "name": "",
-        "text": "*Me pasa una bolsita. Unas cuantas bolsitas de te de hierbas.*"
+        "text": "*Me entrega una pequeña bolsa. Unas cuantas bolsitas de té de hierbas.*"
     },
     "day1_after_riin_8": {
         "name": "Kang Riin",
-        "text": "Si no puedes dormir bien, preparate una taza antes de acostarte. Es manzanilla."
+        "text": "Si no puedes dormir bien, prepara una taza antes de acostarte. Es manzanilla."
     },
     "day1_after_riin_9": {
         "name": "Yo",
-        "text": "Muchas gracias."
+        "text": "Gracias."
     },
     "day1_after_riin_10": {
         "name": "",
-        "text": "*La profesora Riin puso una pieza suave de piano en el altavoz. La musica llena la enfermeria.*"
+        "text": "*La señorita Riin reproduce una suave pieza de piano desde el altavoz. La música llena la enfermería.*"
     },
     "day1_after_riin_11": {
         "name": "Kang Riin",
-        "text": "La proxima vez que vengas a esta hora, te dare te. Dejare la enfermeria abierta."
+        "text": "Ven de nuevo a esta hora y te prepararé té. Dejaré la enfermería abierta."
     },
     "day1_after_riin_12": {
         "name": "",
-        "text": "*La profesora Riin sonríe y me abre la puerta. Mientras camino por el pasillo, jugueteo con la bolsita de té. Todavía está tibia.*"
+        "text": "*La señorita Riin sonríe y mantiene la puerta abierta. Caminando por el pasillo, juego con el paquete de bolsitas de té. Todavía está tibio.*"
     },
     "day1_after_eunsu_1": {
         "name": "Eunsu",
-        "text": "\"{name}? Viniste despues de clases? Que amable.\""
+        "text": "\"{name}? ¿Viniste a verme después de clases? Qué amable de tu parte.\""
     },
     "day1_after_eunsu_2": {
         "name": "",
-        "text": "*Prepara cafe y me pregunta varias cosas.*"
+        "text": "*Prepara café y me pregunta sobre varias cosas.*"
     },
     "day1_after_eunsu_3": {
         "name": "Eunsu",
-        "text": "\"...{name}, paso algo en tu escuela anterior? El motivo de tu transferencia es un poco inusual...\""
+        "text": "\"...{name}, ¿pasó algo en tu escuela anterior? Tu papeleo de transferencia fue un poco inusual...\""
     },
     "day1_after_eunsu_4": {
         "name": "Yo",
-        "text": "\"Inusual? Fue solo por la mudanza de mis padres...\""
+        "text": "\"¿Inusual? Solo fue porque mis padres se mudaron...\""
     },
     "day1_after_eunsu_5": {
         "name": "Eunsu",
-        "text": "\"Ah, no, olvidalo. No es nada.\""
+        "text": "\"Oh, no importa. No es nada.\""
     },
     "day1_after_eunsu_6": {
         "name": "",
-        "text": "*La profesora cambio de tema.*"
+        "text": "*La profesora cambió de tema.*"
     },
     "day1_after_eunsu_7": {
         "name": "Park Eunsu",
-        "text": "Ah, cierto. {name}, recibiste todos los libros de texto?"
+        "text": "Ah, claro, {name}, ¿conseguiste todos tus libros de texto?"
     },
     "day1_after_eunsu_8": {
         "name": "Yo",
-        "text": "Si, Sea se encargo de todo."
+        "text": "Sí, Sea se encargó de todo."
     },
     "day1_after_eunsu_9": {
         "name": "Park Eunsu",
-        "text": "Se nota que Sea te esta cuidando bien. ...{name}, si algo se te hace dificil, ven a verme. Soy tu tutora, al fin y al cabo."
+        "text": "Parece que Sea te ha estado cuidando bien. ...{name}, si alguna vez algo es difícil, ven a mí. Soy tu tutora, después de todo."
     },
     "day1_after_eunsu_10": {
         "name": "",
-        "text": "*La profesora Eunsu sonríe y me da una palmadita en la espalda. Mi tutor de la escuela anterior casi ni usaba mi nombre.*"
+        "text": "*La profesora Eunsu sonríe y me da una palmada en la espalda. Mi antigua tutora apenas usaba mi nombre.*"
     },
     "day1_after_home_1": {
         "name": "",
-        "text": "*Salgo por la puerta de la escuela y miro hacia atras.*"
+        "text": "*Saliendo por la puerta de la escuela, miro hacia atrás.*"
     },
     "day1_after_home_2": {
         "name": "Yo",
-        "text": "*Nada mal para un primer dia.*"
+        "text": "*No está mal para un primer día.*"
     },
     "day1_after_home_3": {
         "name": "",
-        "text": "*...Alguien me esta mirando desde la ventana del tercer piso.*"
+        "text": "*...Alguien me mira desde la ventana del tercer piso.*"
     },
     "day1_after_home_4": {
         "name": "",
-        "text": "*A contraluz, no se le ve la cara. Solo la silueta. ...Cerca de la ventana de la fila de atras. Cerca del asiento de Seolhwa.*"
+        "text": "*A contraluz, así que no puedo ver la cara. Solo una silueta. ...Cerca del asiento junto a la ventana en la última fila. Cerca del asiento de Seolhwa.*"
     },
     "day1_after_home_5": {
         "name": "",
-        "text": "*Salude con la mano. Sin respuesta.*"
+        "text": "*Saludé con la mano. No hubo respuesta.*"
     },
     "day1_after_home_6": {
         "name": "",
-        "text": "*Me doy la vuelta y camino. Hora de ir a casa.*"
+        "text": "*Me doy la vuelta y camino. Es hora de ir a casa.*"
     },
     "day1_after_end": {
         "name": "",

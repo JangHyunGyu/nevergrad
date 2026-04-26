@@ -5,31 +5,31 @@
     },
     "day2_after_eunsu_1": {
         "name": "Eunsu",
-        "text": "\"Notre lycée a un bon système de campus numérique. Le Wi-Fi, l'accès à la bibliothèque, la cantine, tout passe par une seule appli.\""
+        "text": "\"Notre école dispose d'un système de campus intelligent plutôt performant. Wi-Fi du campus, accès à la bibliothèque, cafétéria — tout ça via une seule application.\""
     },
     "day2_after_eunsu_2": {
         "name": "Eunsu",
-        "text": "\"En tant que nouvel élève, tu n'es sûrement pas encore inscrit sur l'appli 'Sécurité Étudiante'. Sans ça, tu ne peux même pas aller à la cantine.\""
+        "text": "\"En tant que nouvel élève, tu n'es probablement pas encore inscrit à l'« Application de Sécurité Étudiante ». Tu ne peux même pas utiliser la cafétéria sans elle.\""
     },
     "day2_after_eunsu_3": {
         "name": "Moi",
-        "text": "*Je cherche sur l'App Store. 'Hanul Smart Campus'. 4.8 étoiles. Bonne note.*"
+        "text": "*Je cherche sur l'App Store. « Hanul Smart Campus ». 4,8 étoiles. Très bien notée.*"
     },
     "day2_after_eunsu_4": {
         "name": "Moi",
-        "text": "*Téléchargement. Installation. Saisie du numéro d'étudiant.*"
+        "text": "*Télécharger. Installer. Entrer l'identifiant étudiant.*"
     },
     "day2_after_eunsu_5": {
         "name": "Eunsu",
-        "text": "\"J'ai noté ton numéro d'étudiant ici.\""
+        "text": "\"J'ai noté ton identifiant étudiant ici.\""
     },
     "day2_after_eunsu_6": {
         "name": "Moi",
-        "text": "*La prof me tend un post-it. Écriture soignée.*"
+        "text": "*La professeure me tend un pense-bête. Une écriture soignée.*"
     },
     "day2_after_eunsu_7": {
         "name": "Moi",
-        "text": "*Je lance l'appli et des demandes d'autorisations apparaissent.\n\n[Autorisation de localisation] — 'Nécessaire pour localiser les élèves en cas d'urgence'\n[Autorisation caméra] — 'Nécessaire pour scanner le QR de la carte étudiante'\n[Autorisation micro] — 'Nécessaire pour les appels d'urgence'*"
+        "text": "*Je lance l'application et des demandes d'autorisation apparaissent.\n\n[Autorisation de localisation] — 'Requise pour localiser les élèves en cas d'urgence sur le campus'\n[Autorisation de caméra] — 'Requise pour le scan QR de l'identifiant étudiant'\n[Autorisation de microphone] — 'Requise pour les appels d'urgence'*"
     },
     "day2_after_eunsu_8": {
         "name": "Moi",
@@ -39,13 +39,13 @@
         "name": "",
         "text": "",
         "choices": [
-            "Tout autoriser",
-            "Limiter la localisation à 'Uniquement pendant l'utilisation'"
+            "Autoriser toutes les permissions",
+            "Modifier la localisation en 'Seulement lors de l'utilisation de l'app'"
         ]
     },
     "day2_after_allow_1": {
         "name": "",
-        "text": "*J'ai tout autorisé. C'est plus simple.*"
+        "text": "*J'ai tout autorisé. C'est plus pratique.*"
     },
     "day2_after_allow_2": {
         "name": "",
@@ -53,23 +53,23 @@
     },
     "day2_after_limit_1": {
         "name": "",
-        "text": "*Notification de l'appli : 'L'autorisation de localisation est limitée. Les fonctions de sécurité d'urgence seront désactivées.'*"
+        "text": "*Notification de l'application : 'L'autorisation de localisation est restreinte. Les fonctions de sécurité d'urgence seront désactivées.'*"
     },
     "day2_after_limit_2": {
         "name": "Eunsu",
-        "text": "\"Il vaut mieux mettre la localisation sur 'Toujours autoriser'. Si {name} tombe dans les pommes, on pourra te retrouver tout de suite.\""
+        "text": "\"Il vaut mieux régler la localisation sur 'Toujours autoriser'. Si {name} s'évanouit ou autre, on pourra te retrouver immédiatement.\""
     },
     "day2_after_limit_3": {
         "name": "Moi",
-        "text": "\"...C'est vraiment nécessaire ?\""
+        "text": "\"…Est-ce vraiment nécessaire ?\""
     },
     "day2_after_limit_4": {
         "name": "Eunsu",
-        "text": "\"L'année dernière, un élève s'est évanoui pendant le sport. Depuis, les règles ont été renforcées.\""
+        "text": "\"Un élève s'est effondré pendant le sport l'année dernière. La politique a été renforcée après ça.\""
     },
     "day2_after_limit_5": {
         "name": "",
-        "text": "*Un élève qui s'est évanoui l'année dernière... il s'est passé ce genre de choses. C'est pour la sécurité, après tout.*"
+        "text": "*Un élève qui s'est effondré l'année dernière... donc c'est arrivé. C'est pour la sécurité, après tout.*"
     },
     "day2_after_sea_start": {
         "name": "",
@@ -77,31 +77,31 @@
     },
     "day2_after_sea_1": {
         "name": "Han Sea",
-        "text": "\"T'es venu ? Merci d'être revenu aujourd'hui.\""
+        "text": "\"Tu es venu(e) ? Merci d'être venu(e) encore aujourd'hui.\""
     },
     "day2_after_sea_2": {
         "name": "Moi",
-        "text": "\"J'avais promis.\""
+        "text": "\"J'avais promis, non ?\""
     },
     "day2_after_sea_3": {
         "name": "Han Sea",
-        "text": "\"...Tu t'en souvenais.\""
+        "text": "\"…Tu t'en es souvenu(e).\""
     },
     "day2_after_sea_4": {
         "name": "",
-        "text": "*Sea sourit. Ce sourire... ressemble à du soulagement.*"
+        "text": "*Sea sourit. Ce sourire... ressemble à un soulagement.*"
     },
     "day2_after_sea_5": {
         "name": "",
-        "text": "*Des piles de documents sur le bureau de la salle du conseil. Des papiers pour la fête sportive.*"
+        "text": "*Des piles de documents sur le bureau de la salle du conseil des élèves. Des papiers pour la journée sportive.*"
     },
     "day2_after_sea_6": {
         "name": "Han Sea",
-        "text": "\"La fête sportive c'est la semaine prochaine. Il faut organiser les programmes et trier les inscriptions par classe.\""
+        "text": "\"La journée sportive, c'est la semaine prochaine. Je dois organiser les programmes des événements et les inscriptions des classes.\""
     },
     "day2_after_sea_7": {
         "name": "Moi",
-        "text": "\"Je t'aide ?\""
+        "text": "\"Tu veux que je t'aide ?\""
     },
     "day2_after_sea_8": {
         "name": "Han Sea",
@@ -109,11 +109,11 @@
     },
     "day2_after_sea_9": {
         "name": "",
-        "text": "*Sea s'occupe des programmes et moi je trie les inscriptions. C'est du travail simple, mais c'est pas ennuyeux quand quelqu'un est à côté.*"
+        "text": "*Sea travaille sur les programmes des événements pendant que je trie les inscriptions. Un travail simple, mais ce n'est pas ennuyeux avec quelqu'un à côté de soi.*"
     },
     "day2_after_sea_10": {
         "name": "Han Sea",
-        "text": "\"Regarde, la 2nde B s'est inscrite au tir à la corde et au relais. Ils sont gourmands.\""
+        "text": "\"Regarde, la Classe 2 s'est inscrite à la fois au tir à la corde et au relais. Ambitieux.\""
     },
     "day2_after_sea_11": {
         "name": "Moi",
@@ -121,19 +121,19 @@
     },
     "day2_after_sea_12": {
         "name": "Han Sea",
-        "text": "\"Notre classe... n'a pas encore soumis. Et c'est moi la déléguée, tu te rends compte ?\""
+        "text": "\"Notre classe... n'a pas encore rendu. Je suis la déléguée de classe et ça arrive ?\""
     },
     "day2_after_sea_13": {
         "name": "Moi",
-        "text": "\"Tu peux les récupérer demain.\""
+        "text": "\"Tu peux juste les récupérer demain.\""
     },
     "day2_after_sea_14": {
         "name": "Han Sea",
-        "text": "\"Quand même, pour la forme...\""
+        "text": "\"Mais quand même, ma réputation...\""
     },
     "day2_after_sea_15": {
         "name": "",
-        "text": "*Sea pose l'inscription sur le bureau d'un geste sec.*\n\n*Après un moment de travail, Sea met de la musique. Le même groupe que tout à l'heure au déjeuner.*"
+        "text": "*Sea laisse tomber le formulaire d'inscription sur le bureau avec un bruit sourd.*\n\n*Après avoir travaillé un moment, Sea met de la musique. Le même groupe que ce midi.*"
     },
     "day2_after_sea_16": {
         "name": "Han Sea",
@@ -141,31 +141,31 @@
     },
     "day2_after_sea_17": {
         "name": "",
-        "text": "*Le bruit des papiers et la musique. La lumière du coucher de soleil entre par la fenêtre. Ce moment... est agréable.*"
+        "text": "*Le bruit des papiers et de la musique. La lumière du coucher de soleil traverse la fenêtre. Ce moment... est agréable.*"
     },
     "day2_after_sea_18": {
         "name": "Han Sea",
-        "text": "\"...{name}. Avant que tu arrives, j'étais toujours seule ici.\""
+        "text": "\"...{name}. Avant que tu n'arrives, j'étais toujours seule ici.\""
     },
     "day2_after_sea_19": {
         "name": "Han Sea",
-        "text": "\"Tout le monde garde ses distances parce que je suis la déléguée. Ils sourient mais... gardent de l'écart.\""
+        "text": "\"Tout le monde met une barrière parce que je suis la déléguée de classe. Ils sourient, mais... gardent leurs distances.\""
     },
     "day2_after_sea_20": {
         "name": "",
-        "text": "*Sea regarde par la fenêtre. La lumière du couchant éclaire son visage. La main qui tenait les documents s'est arrêtée.*"
+        "text": "*Sea regarde par la fenêtre. Le coucher de soleil illumine son visage. La main qui tient les documents s'est immobilisée.*"
     },
     "day2_after_sea_21": {
         "name": "Han Sea",
-        "text": "\"Honnêtement... des fois je me sens seule.\""
+        "text": "\"Honnêtement... je me sens seule parfois.\""
     },
     "day2_after_sea_22": {
         "name": "",
-        "text": "*Le bord des yeux de Sea a légèrement rougi.*"
+        "text": "*Les coins des yeux de Sea sont devenus légèrement rouges.*"
     },
     "day2_after_sea_23": {
         "name": "Moi",
-        "text": "\"...Merci d'être honnête avec moi.\""
+        "text": "\"...Merci d'avoir été honnête avec moi.\""
     },
     "day2_after_sea_24": {
         "name": "Han Sea",
@@ -173,11 +173,11 @@
     },
     "day2_after_sea_25": {
         "name": "Moi",
-        "text": "\"J'ai aucune raison de changer.\""
+        "text": "\"Je n'ai aucune raison de changer.\""
     },
     "day2_after_sea_26": {
         "name": "",
-        "text": "*Sea me regarde. Elle semble vouloir dire quelque chose, puis ferme la bouche. Et reprend les documents.*"
+        "text": "*Sea me regarde. Elle semble sur le point de dire quelque chose, mais referme la bouche. Puis reprend les documents.*"
     },
     "day2_after_sea_27": {
         "name": "Han Sea",
@@ -185,51 +185,51 @@
     },
     "day2_after_sea_28": {
         "name": "",
-        "text": "*Après ça, on a travaillé en silence. Seule la musique jouait. Un silence confortable.*"
+        "text": "*Après cela, nous avons travaillé en silence. Seule la musique jouait. C'était un silence confortable.*"
     },
     "day2_after_hallway_1": {
         "name": "",
-        "text": "*En sortant de la salle du conseil, je marche dans le couloir et trouve des camarades de classe rassemblés devant le distributeur.*"
+        "text": "*En quittant la salle du conseil des élèves, je descends le couloir et trouve des camarades de classe rassemblés près du distributeur automatique.*"
     },
     "day2_after_hallway_2": {
-        "name": "Garçon",
-        "text": "\"Oh, {name} ! Qu'est-ce que tu fais là ?\""
+        "name": "Élève",
+        "text": "\"Oh, {name} ! Qu'est-ce que tu fais ici ?\""
     },
     "day2_after_hallway_3": {
         "name": "Moi",
-        "text": "\"J'aidais Sea dans la salle du conseil.\""
+        "text": "\"J'aidais Sea dans la salle du conseil des élèves.\""
     },
     "day2_after_hallway_4": {
-        "name": "Fille",
-        "text": "\"Tu aides déjà Sea ? Ça fait que deux jours que t'es là ?\""
+        "name": "Élève",
+        "text": "\"Aider Sea ? Déjà ? Ça ne fait que deux jours que tu es là.\""
     },
     "day2_after_hallway_5": {
-        "name": "Garçon",
-        "text": "\"Quand la déléguée commence à être sympa avec toi, y'a plus d'échappatoire.\""
+        "name": "Élève",
+        "text": "\"Une fois que la déléguée de classe commence à être sympa avec toi, il n'y a plus d'échappatoire.\""
     },
     "day2_after_hallway_6": {
         "name": "Moi",
-        "text": "\"J'ai juste trié des papiers.\""
+        "text": "\"J'ai juste trié quelques documents.\""
     },
     "day2_after_hallway_7": {
-        "name": "Fille",
-        "text": "\"Eh, tu veux quelque chose du distributeur ? Je t'offre un truc.\""
+        "name": "Élève",
+        "text": "\"Hé, tu veux quelque chose du distributeur ? Je t'en offre un.\""
     },
     "day2_after_hallway_8": {
         "name": "Moi",
-        "text": "\"Oh, c'est bon.\""
+        "text": "\"Oh, ça va, merci.\""
     },
     "day2_after_hallway_9": {
-        "name": "Garçon",
-        "text": "\"Pour le nouveau, faut bien faire ça au moins. En guise de bienvenue.\""
+        "name": "Élève",
+        "text": "\"Allez, on devrait au moins faire ça pour le nouvel élève. Un geste de bienvenue.\""
     },
     "day2_after_hallway_10": {
         "name": "",
-        "text": "*J'ai reçu une canette de lait café. Froide.*\n\n*On a discuté un moment. Les restos du coin, quel nom donner à la classe pour la fête sportive, le fait que la prof principale corrige vite...*"
+        "text": "*J'ai reçu une canette de café au lait. Froide.*\n\n*Nous avons discuté un peu. Les restaurants près de l'école, quel nom donner à notre classe pour la journée sportive, comment la professeure principale note vite...*"
     },
     "day2_after_hallway_11": {
         "name": "",
-        "text": "*Conversation naturelle. Les gens de ce lycée... sont vraiment tous sympas.*"
+        "text": "*Une conversation naturelle. Les gens de cette école... sont tous vraiment gentils.*"
     },
     "day2_after_seolhwa_start": {
         "name": "",
@@ -237,19 +237,19 @@
     },
     "day2_after_seolhwa_1": {
         "name": "",
-        "text": "*Je m'apprête à passer le portail quand je sens un regard dans mon dos.*\n\n*Je m'arrête et me retourne.*"
+        "text": "*Je m'apprête à franchir le portail de l'école quand je sens un regard derrière moi.*\n\n*Je m'arrête et me retourne.*"
     },
     "day2_after_seolhwa_2": {
         "name": "",
-        "text": "*C'est Seolhwa. Debout à l'intérieur du portail, elle me regarde. Sous la lumière du couchant. Ses longs cheveux ondulent dans le vent sur son uniforme.*"
+        "text": "*C'est Seolhwa. Debout à l'intérieur du portail, elle me regarde. Dans la lumière du coucher de soleil. Ses longs cheveux flottent au vent sur son uniforme.*"
     },
     "day2_after_seolhwa_3": {
         "name": "",
-        "text": "*...Cette fois elle ne disparaît pas. Elle est là, elle me regarde. Ses yeux sont humides.*"
+        "text": "*...Cette fois, elle ne disparaît pas. Elle reste là, à me regarder. Ses yeux sont humides.*"
     },
     "day2_after_seolhwa_4": {
         "name": "",
-        "text": "*Ses lèvres bougent. On dirait qu'elle dit quelque chose, mais je n'entends rien. Trop loin ? Non, la distance ne semble pas si grande.*"
+        "text": "*Ses lèvres bougent. Elle semble dire quelque chose, mais je n'entends rien. Trop loin ? Non, la distance ne semble pas si grande.*"
     },
     "day2_after_seolhwa_5": {
         "name": "",
@@ -257,15 +257,15 @@
     },
     "day2_after_seolhwa_6": {
         "name": "",
-        "text": "*Un groupe d'élèves passe. Ma vue est bloquée. Une seconde. Quand je regarde à nouveau, Seolhwa s'est déjà retournée et s'éloigne.*"
+        "text": "*Un groupe d'élèves passe. Ma vue est bloquée. Une seconde. Quand je regarde à nouveau, Seolhwa s'éloigne déjà.*"
     },
     "day2_after_seolhwa_7": {
         "name": "",
-        "text": "*Sa silhouette disparaît dans la cour. Elle se faufile entre les élèves, mais personne ne la salue.*"
+        "text": "*Sa silhouette qui s'éloigne disparaît dans la cour de l'école. Elle se faufile entre les élèves, mais personne ne lui dit bonjour.*"
     },
     "day2_after_seolhwa_8": {
         "name": "",
-        "text": "*...Cette fille. En classe aussi. Elle n'a pas d'amis ? Ou c'est le genre à préférer la solitude ?*\n\n*...Ça me tracasse. Demain, je lui parlerai, c'est sûr.*"
+        "text": "*...Cette fille. En classe aussi. N'a-t-elle pas d'amis ? Ou est-elle du genre à préférer être seule ?*\n\n*...Ça me tracasse. Demain, j'essaierai absolument de lui parler.*"
     },
     "day2_after_end": {
         "name": "",

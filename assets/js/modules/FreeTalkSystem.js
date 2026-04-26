@@ -414,11 +414,14 @@ class FreeTalkSystem {
         const charImg = document.querySelector('#ft-char img');
         if (charImg) charImg.classList.add('thinking');
 
+        let fetchTimeout = null;
         try {
             // API 호출 (Cupid 패턴: messages 배열 전송)
             const lang = this.engine.i18n?.currentLang || 'ko';
             const cacheKey = `nevergrad:${lang}:${this.currentChar}`;
-            const response = await fetch(this.endpoint, {
+            const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+            if (controller) fetchTimeout = setTimeout(() => controller.abort(), this.requestTimeoutMs || 15000);
+            const request = {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -426,7 +429,14 @@ class FreeTalkSystem {
                     'x-cache-key': cacheKey
                 },
                 body: JSON.stringify({ messages: this.conversationHistory })
-            });
+            };
+            if (controller) request.signal = controller.signal;
+
+            const response = await fetch(this.endpoint, request);
+            if (fetchTimeout) {
+                clearTimeout(fetchTimeout);
+                fetchTimeout = null;
+            }
 
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
@@ -480,6 +490,8 @@ class FreeTalkSystem {
             // 오류 시 대화 강제 종료
             this.turnCount = this.maxTurns;
         } finally {
+            if (fetchTimeout) clearTimeout(fetchTimeout);
+
             // 사고중 해제
             if (charImg) charImg.classList.remove('thinking');
 

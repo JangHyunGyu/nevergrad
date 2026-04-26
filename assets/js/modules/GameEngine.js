@@ -33,6 +33,7 @@ class GameEngine {
         this.isAutoMode = false;
         this.isSkipMode = false;
         this._autoTimer = null;
+        this._autoAdvanceTimer = null;
         this._skipTimer = null;
 
         // Backlog
@@ -42,6 +43,8 @@ class GameEngine {
         this._cageMode = false;
         this._cageClickCount = 0;
         this._cagePool = [];
+        this._cageRepeatEffects = {};
+        this._cageSeaVariants = {};
         this._cagePoolIndex = 0;
         this._cageExitBtn = null;
     }
@@ -71,9 +74,8 @@ class GameEngine {
         this._bindQuickMenu();
         this._bindBacklog();
 
-        if (this.save.hasSaveData()) {
-            document.getElementById('btn-continue').disabled = false;
-        }
+        const continueBtn = document.getElementById('btn-continue');
+        if (continueBtn) continueBtn.disabled = !this.save.hasSaveData();
     }
 
     /**
@@ -265,6 +267,8 @@ class GameEngine {
     // ===== Scene Management =====
 
     _loadScene(sceneId) {
+        clearTimeout(this._autoAdvanceTimer);
+
         // 씬 ID 접두사로 slot 자동 추론 (HUD 시간대 불일치 방지)
         const slotMatch = /^day\d_(morning|lunch|afterschool|night)_/.exec(sceneId);
         if (slotMatch && this.state.currentSlot !== slotMatch[1]) {
@@ -319,6 +323,7 @@ class GameEngine {
 
         this.state.currentScene = sceneId;
         this.currentSceneData = scene;
+        this._applySceneDirectives(sceneId, scene);
 
         if (this.deviceGimmick?.setupOrientationHijack) {
             this.deviceGimmick.setupOrientationHijack(this.state.currentDay);
@@ -501,7 +506,7 @@ class GameEngine {
             : (n, t, cb, o) => this.dialogue.type(n, t, cb, o);
 
         // 백로그 기록
-        this._addToBacklog(name, text);
+        if (text) this._addToBacklog(name, text);
 
         // 선택지가 표시되면 Auto/Skip 중지
         const stopAutoOnChoices = () => {
@@ -510,6 +515,11 @@ class GameEngine {
         };
 
         // 선택지
+        if (this._shouldAutoAdvanceSilentScene(scene, text)) {
+            this._queueAutoAdvance(scene);
+            return;
+        }
+
         if (scene.choices) {
             const choiceLabels = (t.choices || []).map(
                 l => this.i18n.resolve(l, this.state.playerName, extraVars)
@@ -539,8 +549,113 @@ class GameEngine {
         }
         // 일반 대사
         else {
-            typeFn(name, text, null, typeOpts);
+            typeFn(name, text, scene.autoAdvance ? () => this._queueAutoAdvance(scene) : null, typeOpts);
         }
+    }
+
+    _applySceneDirectives(sceneId, scene) {
+        if (!scene) return;
+
+        if (scene.setMode) {
+            const mode = CONFIG.STAT_MODES?.[scene.setMode] || String(scene.setMode).toLowerCase();
+            this.state.mode = mode;
+            this.glitch.shiftTheme?.(mode);
+        }
+
+        if (scene.glitchLevel !== undefined) {
+            const rawLevel = scene.glitchLevel;
+            const level = typeof rawLevel === 'string'
+                ? CONFIG.GLITCH_LEVELS?.[rawLevel]
+                : rawLevel;
+            if (level !== undefined) this.state.setGlitchLevel?.(level);
+        }
+
+        if (scene.dejavu) {
+            this.state.setFlag?.(`dejavu_${sceneId}`);
+            this.glitch.screenNoise?.(120);
+        }
+
+        if (scene.bgm_fade?.to) {
+            this.renderer.playBGM(scene.bgm_fade.to);
+            this.state.currentBGM = scene.bgm_fade.to;
+        }
+
+        if (scene.fadeIn) this._playSceneFade('in', scene.fadeDuration || 700);
+        if (scene.fadeOut) this._playSceneFade('out', scene.fadeDuration || 700);
+
+        if (scene.metaEffect && !scene.glitch?.endingCreditSaveUI) {
+            this._handleMetaEffect(scene.metaEffect);
+        }
+    }
+
+    _handleMetaEffect(effect) {
+        const endingMap = {
+            graduationSlots: 'TRUE',
+            escapeSlot: 'ESCAPE',
+            resistSlot: 'RESIST',
+            forgetSlot: 'FORGET',
+            ghostSlot: 'GHOST',
+            complicitSlot: 'COMPLICIT'
+        };
+        const endingKey = endingMap[effect];
+        if (!endingKey || !this.glitchAdvanced) return;
+
+        document.body?.classList.add('ending-credit-mode');
+        this.glitchAdvanced.showEndingCreditSaveUI(
+            this.save,
+            this.state.playerName || 'Player',
+            endingKey
+        );
+    }
+
+    _playSceneFade(direction, duration = 700) {
+        const screen = document.getElementById('game-screen') || document.body;
+        if (!screen) return;
+
+        const overlay = document.createElement('div');
+        overlay.className = `scene-fade-overlay scene-fade-${direction}`;
+        Object.assign(overlay.style, {
+            position: 'fixed',
+            inset: '0',
+            background: '#000',
+            opacity: direction === 'in' ? '1' : '0',
+            pointerEvents: 'none',
+            transition: `opacity ${duration}ms ease`,
+            zIndex: '9998'
+        });
+        screen.appendChild(overlay);
+
+        requestAnimationFrame(() => {
+            overlay.style.opacity = direction === 'in' ? '0' : '1';
+        });
+
+        setTimeout(() => overlay.remove(), duration + 120);
+    }
+
+    _shouldAutoAdvanceSilentScene(scene, text) {
+        if (text) return false;
+        if (scene.choices || scene.interaction || scene.type === 'free_talk') return false;
+        if (scene.endingTitle || scene.cageLoop) return false;
+        return Boolean(
+            scene.autoAdvance ||
+            scene.next ||
+            scene.branches ||
+            scene.affinityBranches ||
+            scene.changeDay ||
+            scene.changeSlot
+        );
+    }
+
+    _queueAutoAdvance(scene, delayOverride) {
+        clearTimeout(this._autoAdvanceTimer);
+        const delay = typeof delayOverride === 'number'
+            ? delayOverride
+            : (typeof scene.autoAdvanceDelay === 'number' ? scene.autoAdvanceDelay : (scene.autoAdvance ? 0 : 120));
+
+        this._autoAdvanceTimer = setTimeout(() => {
+            if (this.currentSceneData !== scene || this._endingReached) return;
+            this._advanceScene();
+        }, Math.max(0, delay));
     }
 
     _advanceScene() {
@@ -1031,7 +1146,18 @@ class GameEngine {
 
     _handleGlitch(g) {
         if (!g) return;
+        if (typeof g === 'string') {
+            this._handleNamedGlitch(g);
+            return;
+        }
+        if (g.type === 'flicker') this.glitch.screenNoise(g.duration || g.flickerDuration || 240);
         if (g.noise) this.glitch.screenNoise(g.noiseDuration);
+        if (g.screenFlash) this._screenFlash(g.flashDuration || 120);
+        if (g.corruptText) this._corruptDialogueText(g);
+        if (g.mirrorReveal) this._showMirrorReveal(g.mirrorReveal);
+        if (g.drugBlur) this.glitch.drugBlur?.(g.drugBlurDuration || 700);
+        if (g.borderPulse) this._pulseDialogueBorder(g.borderPulseDuration || 1200);
+        if (g.textReplace) this._applyTitleTextReplace(g.textReplace);
         if (g.silence) {
             // AudioManager 우선, 폴백: 레거시 HTML5 Audio
             if (this.audio?.ctx) {
@@ -1171,6 +1297,113 @@ class GameEngine {
                 // SFX 누락은 치명적이지 않음
             }
         }
+    }
+
+    _handleNamedGlitch(name) {
+        this.state.setFlag?.(`glitch_${name}`);
+
+        if (name === 'deja_vu_direction' || name === 'deja_vu_desk') {
+            this.glitch.screenNoise?.(160);
+            this.glitch.ghostText?.('...', 50, 28, 450);
+            return;
+        }
+
+        if (name === 'loop_truth') {
+            this.glitch.screenNoise?.(80);
+            if (this.save?.isNewGamePlus?.()) {
+                this.glitch.ghostText?.('...', 50, 72, 350);
+            }
+        }
+    }
+
+    _screenFlash(duration = 120) {
+        const flash = document.createElement('div');
+        flash.className = 'screen-flash-overlay';
+        Object.assign(flash.style, {
+            position: 'fixed',
+            inset: '0',
+            background: '#fff',
+            opacity: '0.85',
+            pointerEvents: 'none',
+            transition: `opacity ${duration}ms ease-out`,
+            zIndex: '9999'
+        });
+        document.body.appendChild(flash);
+        requestAnimationFrame(() => { flash.style.opacity = '0'; });
+        setTimeout(() => flash.remove(), duration + 80);
+    }
+
+    _blackoutScreen(duration = 500) {
+        const blackout = document.createElement('div');
+        blackout.className = 'screen-blackout-overlay';
+        Object.assign(blackout.style, {
+            position: 'fixed',
+            inset: '0',
+            background: '#000',
+            opacity: '0',
+            pointerEvents: 'none',
+            transition: 'opacity 120ms ease',
+            zIndex: '9999'
+        });
+        document.body.appendChild(blackout);
+        requestAnimationFrame(() => { blackout.style.opacity = '1'; });
+        setTimeout(() => { blackout.style.opacity = '0'; }, duration);
+        setTimeout(() => blackout.remove(), duration + 180);
+    }
+
+    _corruptDialogueText(g) {
+        const duration = g.corruptDuration || 360;
+        const indices = Array.isArray(g.corruptIndices) ? new Set(g.corruptIndices) : null;
+        const corruptOnce = () => {
+            const textEl = document.getElementById('dialogue-text');
+            const original = textEl?.textContent || '';
+            if (!textEl || !original) return false;
+
+            const chars = original.split('');
+            const noisy = chars.map((ch, idx) => {
+                if (ch.trim() === '') return ch;
+                if (indices && !indices.has(idx)) return ch;
+                if (!indices && Math.random() > 0.22) return ch;
+                return '█';
+            }).join('');
+
+            textEl.textContent = noisy;
+            setTimeout(() => {
+                if (textEl.textContent === noisy) textEl.textContent = original;
+            }, duration);
+            return true;
+        };
+
+        setTimeout(() => {
+            if (!corruptOnce()) setTimeout(corruptOnce, 300);
+        }, 120);
+    }
+
+    _showMirrorReveal(stage) {
+        const label = `MIRROR #${stage}`;
+        if (this.glitchAdvanced?.showGhostText) {
+            this.glitchAdvanced.showGhostText(label, 50, 36, 900);
+        } else {
+            this.glitch.ghostText?.(label, 50, 36, 900);
+        }
+        this.glitch.screenNoise?.(120);
+    }
+
+    _pulseDialogueBorder(duration = 1200) {
+        const box = document.querySelector('.dialogue-box, #dialogue-box');
+        if (!box) return;
+        box.classList.add('dialogue-border-pulse');
+        setTimeout(() => box.classList.remove('dialogue-border-pulse'), duration);
+    }
+
+    _applyTitleTextReplace(replace) {
+        if (!replace?.to) return;
+        const titleEl = document.querySelector('.title-text');
+        if (titleEl && (!replace.from || titleEl.textContent.includes(replace.from))) {
+            titleEl.textContent = replace.to;
+            titleEl.classList.add('title-text-corrupted');
+        }
+        document.title = replace.to;
     }
 
     // ===== Ending Title =====
@@ -2015,6 +2248,8 @@ class GameEngine {
     _enterCageMode() {
         this._cageMode = true;
         this._cageClickCount = 0;
+        this._cageRepeatEffects = this.currentSceneData?.cageRepeatEffects || {};
+        this._cageSeaVariants = this.currentSceneData?.seaCageVariants || {};
 
         // 문장 풀 셔플
         const lang = this.i18n.currentLang || 'ko';
@@ -2067,6 +2302,7 @@ class GameEngine {
 
         this._cageClickCount++;
         const count = this._cageClickCount;
+        if (this._applyCageRepeatEffects(count)) return;
 
         // 30~50: 가끔 글리치
         if (count > 30 && count <= 50 && Math.random() < 0.25) {
@@ -2098,6 +2334,53 @@ class GameEngine {
         this.dialogue.type('', `*${display}*`, null, {
             typingSpeed: CONFIG.TYPING_SPEED
         });
+    }
+
+    _showMetaFlash(text, duration = 700, x = 50, y = 42) {
+        if (!text) return;
+        if (this.glitchAdvanced?.showGhostText) {
+            this.glitchAdvanced.showGhostText(text, x, y, duration);
+        } else {
+            this.glitch.ghostText?.(text, x, y, duration);
+        }
+    }
+
+    _applyCageRepeatEffects(count) {
+        const effect = this._cageRepeatEffects?.[count];
+        const seaVariant = this._cageSeaVariants?.[count];
+        const degradeSeaLunchbox = this._cageSeaVariants?.lunchboxDegrade && count > 1 && count % 10 === 0;
+
+        if (!effect && !seaVariant && !degradeSeaLunchbox) return false;
+
+        if (degradeSeaLunchbox) {
+            this.glitch.screenNoise?.(120);
+        }
+
+        if (effect?.flashText) {
+            this._showMetaFlash(effect.flashText, effect.flashDuration || 700);
+        }
+
+        if (effect?.screenBlackout || seaVariant?.emptyLunchbox) {
+            this._blackoutScreen(effect?.screenBlackout ? 520 : 260);
+        }
+
+        if (Array.isArray(seaVariant?.seaLines)) {
+            seaVariant.seaLines.slice(0, 2).forEach((line, idx) => {
+                setTimeout(() => this._showMetaFlash(line, 1200, 50, 58 + idx * 8), idx * 450);
+            });
+        }
+
+        if (effect?.eunsuBreaksFourthWall) {
+            const img = CONFIG.EXPRESSIONS.eunsu?.obsessed || CONFIG.EXPRESSIONS.eunsu?.normal;
+            if (img) this.renderer.setCharacter('center', img);
+
+            this.dialogue.type('', `*${effect.eunsuLine || '...'}*`, () => {
+                setTimeout(() => this.renderer.clearCharacters(), 1600);
+            }, { typingSpeed: 70, unskippable: true });
+            return true;
+        }
+
+        return false;
     }
 
     /**
@@ -2174,6 +2457,8 @@ class GameEngine {
     _exitCageMode() {
         this._cageMode = false;
         this._cageClickCount = 0;
+        this._cageRepeatEffects = {};
+        this._cageSeaVariants = {};
         this._cagePool = [];
 
         // 탈출 버튼 제거

@@ -490,7 +490,11 @@
   },
   "day1_gate_ngp_choice": {
     "text": "",
-    "name": ""
+    "name": "",
+    "choices": [
+      "学校に入る",
+      "引き返す"
+    ]
   },
   "day1_gate_ngp_turn_back": {
     "text": "*足が止まる。引き返そうとした。画面が徐々に白くなり、音が消える。*",

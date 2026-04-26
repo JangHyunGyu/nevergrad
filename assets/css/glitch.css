@@ -389,6 +389,27 @@
     50% { box-shadow: 0 0 0 6px rgba(255, 68, 68, 0); }
 }
 
+.dialogue-border-pulse {
+    animation: press-border-pulse 0.8s ease infinite;
+    border-color: #ff4444 !important;
+}
+
+.phone-flash-notification,
+.screen-flash-overlay,
+.screen-blackout-overlay,
+.scene-fade-overlay {
+    pointer-events: none;
+}
+
+.ending-credit-mode .ending-title-overlay {
+    isolation: isolate;
+}
+
+.title-text-corrupted {
+    color: #ff4444;
+    text-shadow: 2px 0 #00ffff, -2px 0 #ff00ff, 0 0 14px rgba(255, 68, 68, 0.8);
+}
+
 /* ===== Cursor Slowdown (PC Day 5) ===== */
 .cursor-slowdown-overlay {
     position: fixed;

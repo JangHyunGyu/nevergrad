@@ -490,7 +490,11 @@
   },
   "day1_gate_ngp_choice": {
     "text": "",
-    "name": ""
+    "name": "",
+    "choices": [
+      "Entrer dans l'école",
+      "Faire demi-tour"
+    ]
   },
   "day1_gate_ngp_turn_back": {
     "text": "*Mes pas s'arrêtent. J'ai voulu faire demi-tour. L'écran blanchit progressivement. Les sons disparaissent.*",

@@ -490,7 +490,11 @@
   },
   "day1_gate_ngp_choice": {
     "text": "",
-    "name": ""
+    "name": "",
+    "choices": [
+      "Entrar en la escuela",
+      "Dar media vuelta"
+    ]
   },
   "day1_gate_ngp_turn_back": {
     "text": "*Mis pasos se detienen. Intenté darme la vuelta. La pantalla se vuelve blanca lentamente. El sonido desaparece.*",

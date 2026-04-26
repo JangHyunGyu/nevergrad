@@ -490,7 +490,11 @@
   },
   "day1_gate_ngp_choice": {
     "text": "",
-    "name": ""
+    "name": "",
+    "choices": [
+      "In die Schule gehen",
+      "Umkehren"
+    ]
   },
   "day1_gate_ngp_turn_back": {
     "text": "*Meine Schritte halten inne. Ich wollte mich umdrehen. Der Bildschirm wird langsam weiß. Die Geräusche verstummen.*",

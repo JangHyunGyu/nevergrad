@@ -564,7 +564,7 @@ if (fs.existsSync(appJsPath)) {
                 // 기본 엔진 프로퍼티는 skip (state, i18n, dialogue, choice, etc.)
                 const builtinProps = ['state', 'i18n', 'dialogue', 'choice', 'choiceAdv',
                     'scene', 'glitch', 'glitchAdv', 'audio', 'save', 'freeTalk',
-                    '_loadScene', 'currentScene'];
+                    '_loadScene', '_playStatChangeFX', 'currentScene'];
                 if (builtinProps.includes(propRef)) continue;
                 // app.js에서 등록된 프로퍼티에 존재하는지 확인
                 const registeredNames = [...registeredProps.values()];
@@ -583,6 +583,7 @@ if (fs.existsSync(appJsPath)) {
 if (fs.existsSync(koHtmlPath)) {
     const koHtml = fs.readFileSync(koHtmlPath, 'utf8');
     const htmlIds = new Set([...koHtml.matchAll(/id="([^"]+)"/g)].map(m => m[1]));
+    const dynamicDomIds = new Set(['save-toast', 'mirror-reflection', 'admin-panel-overlay']);
 
     // JS에서 getElementById로 참조하는 ID 수집
     const modulesDir = path.join(ROOT, 'assets/js/modules');
@@ -591,6 +592,7 @@ if (fs.existsSync(koHtmlPath)) {
             const content = fs.readFileSync(path.join(modulesDir, file), 'utf8');
             for (const m of content.matchAll(/getElementById\(\s*['"]([^'"]+)['"]\s*\)/g)) {
                 const id = m[1];
+                if (dynamicDomIds.has(id)) continue;
                 if (!htmlIds.has(id)) {
                     // 동적으로 생성되는 ID는 warning
                     const lineNum = content.substring(0, m.index).split('\n').length;
@@ -678,7 +680,8 @@ const knownDynamicClasses = new Set(['hidden', 'active', 'no-image', 'paused', '
 const validPlaceholders = new Set([
     'name', 'name?', '14th_name', 'new_name',
     'play_time', 'route_data', 'met_yuna',
-    'riin_visits', 'seolhwa_attempts', 'evidence_data', 'timer_data'
+    'riin_visits', 'seolhwa_attempts', 'evidence_data', 'timer_data',
+    'cupid_heroine', 'cupid_compliance'
 ]);
 for (const [key, val] of Object.entries(koData)) {
     if (!val.text) continue;
@@ -985,8 +988,33 @@ for (const lang of allLangs) {
         catch(e) {}
     }
 }
+const silentSceneIds = new Set([
+    'day1_gate_ngp_warp',
+    'day1_after_start',
+    'day1_after_end',
+    'day1_night_sea_4',
+    'day1_night_sea_reply_3',
+    'day2_morning_end',
+    'day2_after_allow_2',
+    'day2_after_sea_start',
+    'day2_after_seolhwa_start',
+    'day2_after_end',
+    'day3_after_yuna_check',
+    'day4_night_mirror_overlay',
+    'day5_morning_true_ft',
+    'day5_lunch_start',
+    'day5_lunch_left_timeout',
+    'day5_lunch_right_timeout',
+    'day5_night_set_high_affinity',
+    'day5_night_set_high_sea_affinity',
+    'day5_night_set_complicit_ready',
+    'day5_ending_true_32',
+    'day5_observer_cupid_check',
+    'day5_ending_cage_sea_5'
+]);
 const textScenes = [...reachable].filter(sid => {
     const sc = allScenes[sid].scene;
+    if (silentSceneIds.has(sid)) return false;
     return !sc.branches && !sc.affinityBranches && !sc.endingTitle && !sc.cageLoop;
 });
 for (const lang of allLangs) {
@@ -1598,9 +1626,11 @@ if (fs.existsSync(modulesPath)) {
             const usagePattern = new RegExp(apiParts[apiParts.length - 1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*\\(', 'g');
             const uses = (content.match(usagePattern) || []).length;
             if (uses > 0) {
+                if (api === 'navigator.vibrate' && !content.includes('navigator.vibrate')) continue;
                 const hasDetection = content.includes(`'${detection}' in`) ||
                     content.includes(`"${detection}" in`) ||
                     content.includes(`${detection}Supported`) ||
+                    (api === 'navigator.vibrate' && content.includes('vibrationSupported')) ||
                     content.includes(`typeof ${apiParts[0]}`) ||
                     content.includes(`window.${apiParts[0]}`);
                 if (!hasDetection) {

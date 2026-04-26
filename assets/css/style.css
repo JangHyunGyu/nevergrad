@@ -1454,6 +1454,11 @@ body {
 }
 
 /* ===== Ending Title Overlay ===== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .ending-title-overlay {
     position: fixed;
     inset: 0;
@@ -1495,7 +1500,7 @@ body {
     letter-spacing: 0.05em;
     transition: all 0.3s ease;
     opacity: 0;
-    animation: fadeIn 2s ease 3s forwards;
+    animation: fadeIn 0.8s ease 1.2s forwards;
 }
 .ending-return-btn:hover {
     background: rgba(255, 183, 197, 0.25);

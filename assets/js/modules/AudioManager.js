@@ -92,12 +92,8 @@ class AudioManager {
             'ending_melancholy.mp3': 'ending_dark.mp3',
             'ending_ghost.mp3': 'ending_dark.mp3',
             'ending_bittersweet.mp3': 'ending_hope.mp3',
-            'sea_theme.mp3': 'daily_bright.mp3',
             'sea_obsession.mp3': 'tension.mp3',
-            'riin_theme.mp3': 'night_calm.mp3',
-            'eunsu_theme.mp3': 'sunset_warm.mp3',
             'eunsu_dark_theme.mp3': 'confrontation.mp3',
-            'yuna_theme.mp3': 'night_calm.mp3',
             'chase_intense.mp3': 'chase.mp3',
             'climax.mp3': 'confrontation.mp3'
         };

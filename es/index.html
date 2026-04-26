@@ -86,7 +86,7 @@
     <div id="title-screen" class="screen active">
         <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="Inicio de ArcherLab" title="ArcherLab">🏹 ArcherLab</a>
         <select class="lang-switcher" aria-label="Language" onchange="if(this.value)location.href=this.value">
-            <option value="/">한국어</option>
+            <option value="/">Coreano</option>
             <option value="/en/">English</option>
             <option value="/ja/">日本語</option>
             <option value="/es/">Español</option>
@@ -106,8 +106,7 @@
         <div class="title-bg-layer"></div>
         <div class="title-bg-vignette"></div>
         <div class="cherry-blossoms" id="cherry-blossoms"></div>
-        <!-- SCENARIO.md 5454: 타이틀 배경(벚꽃) + 캐릭터 3 스프라이트 레이어. NG+ 시 세아만 시선 변경.
-             src는 app.js가 런타임에 파일 존재 확인 후 주입 (미생성 에셋 에러 방지) -->
+        <!-- Title background and character sprite layers. Optional assets are resolved at runtime. -->
         <div id="title-stage" class="title-stage" aria-hidden="true">
             <img id="title-stage-bg" class="title-stage-bg" alt="" data-src="../assets/images/background/cherry_blossom.png" onerror="this.style.display='none'">
             <img id="title-char-sea" class="title-char title-char-left" alt="" data-default="assets/images/characters/sea_normal.png" data-ngp="assets/images/characters/sea_stare.png" data-src="../assets/images/characters/sea_normal.png" onerror="this.style.display='none'">
@@ -188,7 +187,7 @@
             <div id="stat-display" class="stat-display hidden"></div>
         </div>
 
-        <!-- Quick Menu — MENU 하나만. 저장/불러오기는 MENU → pause-menu 안에서 접근 (중복 제거) -->
+        <!-- Quick menu entry point. Save and load are opened through the pause menu. -->
         <div id="quick-menu" class="quick-menu">
             <button id="qm-menu" class="qm-btn">MENU</button>
         </div>
@@ -229,7 +228,7 @@
         <button id="ft-skip" class="ft-skip-btn hidden">SKIP ▶▶</button>
     </div>
 
-    <!-- ===== Save Slot Glitch UI (Day 4 세이브파일 강제 오픈) ===== -->
+    <!-- ===== Save Slot Glitch UI (Day 4 forced save-file open) ===== -->
     <div id="save-slot-overlay" class="screen overlay hidden">
         <div class="save-slot-container">
             <div class="save-slot-header">
@@ -237,7 +236,7 @@
                 <span class="save-slot-subtitle">— Project Nevergrad —</span>
             </div>
             <div id="save-slot-list" class="save-slot-list">
-                <!-- JS로 13개 슬롯 동적 생성 -->
+                <!-- 13 slots are generated dynamically in JS. -->
             </div>
         </div>
     </div>
@@ -250,7 +249,7 @@
                 <button id="sl-close" class="sl-close-btn">&times;</button>
             </div>
             <div id="sl-slots" class="sl-slots">
-                <!-- JS로 자동(0) + 수동(1~9) 슬롯 동적 생성 -->
+                <!-- Auto slot (0) and manual slots (1-9) are generated dynamically in JS. -->
             </div>
         </div>
     </div>
@@ -266,7 +265,7 @@
         </div>
     </div>
 
-    <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->
+    <!-- ===== Rotate Prompt (mobile and tablet portrait guidance) ===== -->
     <div id="rotate-prompt" class="rotate-prompt">
         <div class="rotate-icon">📱</div>
         <div class="rotate-text">Gira el dispositivo<br>al modo horizontal</div>

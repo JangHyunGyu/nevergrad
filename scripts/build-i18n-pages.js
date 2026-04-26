@@ -24,7 +24,21 @@ const LANGS = {
         namePrompt: 'What is your name?', namePlaceholder: 'Enter your name', start: 'Start',
         save: 'Save', load: 'Load', settings: 'Settings', toTitle: 'Title', resume: 'Resume',
         ftPlaceholder: 'Type a message...', ftSend: 'Send',
-        dayDisplay: 'Day 1 - Morning'
+        dayDisplay: 'Day 1 - Morning',
+        keywords: 'free browser visual novel, no-download visual novel, free school mystery game, choice-based story game, multiple endings game, online interactive novel, anime school game, English visual novel, free narrative game, psychological school thriller, Nevergrad',
+        twitterTitle: 'Nevergrad: The Classroom of No Graduation',
+        twitterDesc: 'A free web visual novel, playable without downloads. Five days in a cherry-blossom school, five heroines, seven endings, and multilingual support.',
+        schemaName: 'The Classroom of No Graduation - 5 Days Record',
+        schemaDesc: 'A free web visual novel, playable without downloads. Five days in a cherry-blossom school, five heroines, seven endings, and multilingual support.',
+        galleryTitle: 'Ending Gallery',
+        galleryProgress: 'Completion',
+        galleryBack: 'Back',
+        backlogTitle: 'Dialogue History',
+        slotTitle: 'Save',
+        loadingText: 'Loading...',
+        rotateText: 'Rotate your device<br>to landscape mode',
+        archerlabLabel: 'ArcherLab Home',
+        koOptionLabel: 'Korean'
     },
     ja: {
         locale: 'ja_JP',
@@ -49,6 +63,7 @@ const LANGS = {
         loadingText: '読み込み中...',
         rotateText: '端末を横向きにしてください<br>Please rotate your device',
         archerlabLabel: 'ArcherLab ホーム',
+        koOptionLabel: '韓国語',
         fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap',
         fontOverride: ":root{--font-main:'Noto Sans JP','Noto Sans KR',sans-serif;}"
     },
@@ -74,7 +89,8 @@ const LANGS = {
         slotTitle: 'Guardar',
         loadingText: 'Cargando...',
         rotateText: 'Gira el dispositivo<br>al modo horizontal',
-        archerlabLabel: 'Inicio de ArcherLab'
+        archerlabLabel: 'Inicio de ArcherLab',
+        koOptionLabel: 'Coreano'
     },
     fr: {
         locale: 'fr_FR',
@@ -99,6 +115,7 @@ const LANGS = {
         loadingText: 'Chargement...',
         rotateText: 'Tournez votre appareil<br>en mode paysage',
         archerlabLabel: 'Accueil ArcherLab',
+        koOptionLabel: 'Coréen',
         fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap',
         fontOverride: ":root{--font-main:'Noto Sans','Noto Sans KR',sans-serif;}"
     },
@@ -113,7 +130,21 @@ const LANGS = {
         namePrompt: 'Wie heißt du?', namePlaceholder: 'Namen eingeben', start: 'Start',
         save: 'Speichern', load: 'Laden', settings: 'Einstellungen', toTitle: 'Titelbildschirm', resume: 'Zurück',
         ftPlaceholder: 'Nachricht eingeben...', ftSend: 'Senden',
-        dayDisplay: 'Tag 1 - Morgen'
+        dayDisplay: 'Tag 1 - Morgen',
+        keywords: 'kostenlose Visual Novel im Browser, Visual Novel ohne Download, kostenloses Schulmystery-Spiel, Entscheidungsgeschichte online, Spiel mit mehreren Enden, interaktiver Roman online, Anime-Schulspiel, Visual Novel auf Deutsch, kostenloses Erzählspiel, psychologischer Schulthriller, Nevergrad',
+        twitterTitle: 'Nevergrad: Das Klassenzimmer ohne Abschluss',
+        twitterDesc: 'Kostenlose Web-Visual-Novel ohne Download. Eine fünftägige Geschichte an einer zu perfekten Schule mit fünf Heldinnen, sieben Enden und mehrsprachiger Unterstützung.',
+        schemaName: 'Das Klassenzimmer ohne Abschluss - Fünf-Tage-Protokoll',
+        schemaDesc: 'Kostenlose Web-Visual-Novel ohne Download. Eine fünftägige Geschichte an einer zu perfekten Schule mit fünf Heldinnen, sieben Enden und mehrsprachiger Unterstützung.',
+        galleryTitle: 'Galerie der Enden',
+        galleryProgress: 'Fortschritt',
+        galleryBack: 'Zurück',
+        backlogTitle: 'Dialogverlauf',
+        slotTitle: 'Speichern',
+        loadingText: 'Lädt...',
+        rotateText: 'Drehe dein Gerät<br>ins Querformat',
+        archerlabLabel: 'ArcherLab-Startseite',
+        koOptionLabel: 'Koreanisch'
     },
     'pt-BR': {
         locale: 'pt_BR',
@@ -140,6 +171,7 @@ const LANGS = {
         loadingText: 'Carregando...',
         rotateText: 'Gire a tela para o modo paisagem<br>Please rotate your device',
         archerlabLabel: 'Página inicial da ArcherLab',
+        koOptionLabel: 'Coreano',
         fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap',
         fontOverride: ":root{--font-main:'Noto Sans','Noto Sans KR',sans-serif;}"
     }
@@ -329,12 +361,40 @@ function buildPage(lang, data) {
     if (data.archerlabLabel) {
         html = html.replace(/aria-label="ArcherLab [^"]*"/, `aria-label="${data.archerlabLabel}"`);
     }
+    if (data.koOptionLabel) {
+        html = html.replace(/(<option value="\/">)[^<]*(<\/option>)/, `$1${data.koOptionLabel}$2`);
+    }
     if (data.fontOverride) {
         html = html.replace(
             '    <!-- JSON-LD Schema -->',
             `    <style>${data.fontOverride}</style>\n\n    <!-- JSON-LD Schema -->`
         );
     }
+
+    html = html.replace(
+        /        <!-- SCENARIO\.md 5454:[\s\S]*?미생성 에셋 에러 방지\) -->/,
+        '        <!-- Title background and character sprite layers. Optional assets are resolved at runtime. -->'
+    );
+    html = html.replace(
+        /        <!-- Quick Menu — MENU 하나만\. 저장\/불러오기는 MENU → pause-menu 안에서 접근 \(중복 제거\) -->/,
+        '        <!-- Quick menu entry point. Save and load are opened through the pause menu. -->'
+    );
+    html = html.replace(
+        /    <!-- ===== Save Slot Glitch UI \(Day 4 세이브파일 강제 오픈\) ===== -->/,
+        '    <!-- ===== Save Slot Glitch UI (Day 4 forced save-file open) ===== -->'
+    );
+    html = html.replace(
+        /                <!-- JS로 13개 슬롯 동적 생성 -->/,
+        '                <!-- 13 slots are generated dynamically in JS. -->'
+    );
+    html = html.replace(
+        /                <!-- JS로 자동\(0\) \+ 수동\(1~9\) 슬롯 동적 생성 -->/,
+        '                <!-- Auto slot (0) and manual slots (1-9) are generated dynamically in JS. -->'
+    );
+    html = html.replace(
+        /    <!-- ===== Rotate Prompt \(모바일\/태블릿 세로모드 안내\) ===== -->/,
+        '    <!-- ===== Rotate Prompt (mobile and tablet portrait guidance) ===== -->'
+    );
 
     // 상대 경로를 한 단계 위로 (assets/ → ../assets/)
     html = html.replace(/href="assets\//g, 'href="../assets/');

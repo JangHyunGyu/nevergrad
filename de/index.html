@@ -15,7 +15,7 @@
     <title>Nevergrad - Das Klassenzimmer ohne Abschluss</title>
     <meta name="robots" content="index, follow">
     <meta name="description" content="Der erste Tag nach dem Schulwechsel, alles war perfekt. Zu perfekt, um normal zu sein.">
-    <meta name="keywords" content="무료 노벨 게임 브라우저, 다운로드 없이 플레이 비주얼 노벨, 학교 미스터리 게임 무료, 선택지 스토리 게임 온라인, 엔딩 분기 게임 무료 플레이, 온라인 소설 게임 브라우저, 벚꽃 학원 게임 무료 플레이, 애니 스타일 인터랙티브 소설, 브라우저에서 하는 무료 게임, 7개국어 비주얼 노벨, 비주얼 노벨 추천 무료, 학원물 게임 온라인">
+    <meta name="keywords" content="kostenlose Visual Novel im Browser, Visual Novel ohne Download, kostenloses Schulmystery-Spiel, Entscheidungsgeschichte online, Spiel mit mehreren Enden, interaktiver Roman online, Anime-Schulspiel, Visual Novel auf Deutsch, kostenloses Erzählspiel, psychologischer Schulthriller, Nevergrad">
     <meta name="author" content="Archerlab">
     <meta name="theme-color" content="#FFB7C5">
 
@@ -49,8 +49,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nevergrad: The Classroom You Never Graduate">
-    <meta name="twitter:description" content="무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7개 언어 지원.">
+    <meta name="twitter:title" content="Nevergrad: Das Klassenzimmer ohne Abschluss">
+    <meta name="twitter:description" content="Kostenlose Web-Visual-Novel ohne Download. Eine fünftägige Geschichte an einer zu perfekten Schule mit fünf Heldinnen, sieben Enden und mehrsprachiger Unterstützung.">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
 
     <!-- Preconnect -->
@@ -68,8 +68,8 @@
     {
       "@context": "https://schema.org",
       "@type": "VideoGame",
-      "name": "졸업하지 못한 교실 - 5일의 기록",
-      "description": "무료 웹 비주얼 노벨 — 다운로드 없이 브라우저에서 바로 플레이. 벚꽃 피는 학교에서 시작되는 5일간의 이야기. 5명의 히로인, 7개 엔딩, 7개 언어 지원.",
+      "name": "Das Klassenzimmer ohne Abschluss - Fünf-Tage-Protokoll",
+      "description": "Kostenlose Web-Visual-Novel ohne Download. Eine fünftägige Geschichte an einer zu perfekten Schule mit fünf Heldinnen, sieben Enden und mehrsprachiger Unterstützung.",
       "genre": ["Visual Novel", "Romance", "School Life"],
       "gamePlatform": "Web Browser",
       "applicationCategory": "Game",
@@ -84,9 +84,9 @@
 <body>
     <!-- ===== Title Screen ===== -->
     <div id="title-screen" class="screen active">
-        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab 홈" title="ArcherLab">🏹 ArcherLab</a>
+        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab-Startseite" title="ArcherLab">🏹 ArcherLab</a>
         <select class="lang-switcher" aria-label="Language" onchange="if(this.value)location.href=this.value">
-            <option value="/">한국어</option>
+            <option value="/">Koreanisch</option>
             <option value="/en/">English</option>
             <option value="/ja/">日本語</option>
             <option value="/es/">Español</option>
@@ -106,8 +106,7 @@
         <div class="title-bg-layer"></div>
         <div class="title-bg-vignette"></div>
         <div class="cherry-blossoms" id="cherry-blossoms"></div>
-        <!-- SCENARIO.md 5454: 타이틀 배경(벚꽃) + 캐릭터 3 스프라이트 레이어. NG+ 시 세아만 시선 변경.
-             src는 app.js가 런타임에 파일 존재 확인 후 주입 (미생성 에셋 에러 방지) -->
+        <!-- Title background and character sprite layers. Optional assets are resolved at runtime. -->
         <div id="title-stage" class="title-stage" aria-hidden="true">
             <img id="title-stage-bg" class="title-stage-bg" alt="" data-src="../assets/images/background/cherry_blossom.png" onerror="this.style.display='none'">
             <img id="title-char-sea" class="title-char title-char-left" alt="" data-default="assets/images/characters/sea_normal.png" data-ngp="assets/images/characters/sea_stare.png" data-src="../assets/images/characters/sea_normal.png" onerror="this.style.display='none'">
@@ -133,15 +132,15 @@
     <div id="gallery-screen" class="screen hidden">
         <div class="gallery-container">
             <div class="gallery-header">
-                <span class="gallery-title">엔딩 갤러리</span>
+                <span class="gallery-title">Galerie der Enden</span>
                 <div class="gallery-progress-area">
-                    <span class="gallery-progress-label">달성률</span>
+                    <span class="gallery-progress-label">Fortschritt</span>
                     <span id="gallery-progress">0 / 7</span>
                 </div>
             </div>
             <div id="gallery-grid"></div>
             <div class="gallery-footer">
-                <button id="gallery-back" class="menu-btn">돌아가기</button>
+                <button id="gallery-back" class="menu-btn">Zurück</button>
             </div>
         </div>
     </div>
@@ -188,7 +187,7 @@
             <div id="stat-display" class="stat-display hidden"></div>
         </div>
 
-        <!-- Quick Menu — MENU 하나만. 저장/불러오기는 MENU → pause-menu 안에서 접근 (중복 제거) -->
+        <!-- Quick menu entry point. Save and load are opened through the pause menu. -->
         <div id="quick-menu" class="quick-menu">
             <button id="qm-menu" class="qm-btn">MENU</button>
         </div>
@@ -198,7 +197,7 @@
     <div id="backlog-panel" class="screen overlay hidden">
         <div class="backlog-container">
             <div class="backlog-header">
-                <span class="backlog-title">대사 기록</span>
+                <span class="backlog-title">Dialogverlauf</span>
                 <button id="backlog-close" class="backlog-close-btn">&times;</button>
             </div>
             <div id="backlog-content" class="backlog-content"></div>
@@ -229,7 +228,7 @@
         <button id="ft-skip" class="ft-skip-btn hidden">SKIP ▶▶</button>
     </div>
 
-    <!-- ===== Save Slot Glitch UI (Day 4 세이브파일 강제 오픈) ===== -->
+    <!-- ===== Save Slot Glitch UI (Day 4 forced save-file open) ===== -->
     <div id="save-slot-overlay" class="screen overlay hidden">
         <div class="save-slot-container">
             <div class="save-slot-header">
@@ -237,7 +236,7 @@
                 <span class="save-slot-subtitle">— Project Nevergrad —</span>
             </div>
             <div id="save-slot-list" class="save-slot-list">
-                <!-- JS로 13개 슬롯 동적 생성 -->
+                <!-- 13 slots are generated dynamically in JS. -->
             </div>
         </div>
     </div>
@@ -246,11 +245,11 @@
     <div id="sl-overlay" class="screen overlay hidden">
         <div class="sl-container">
             <div class="sl-header">
-                <span id="sl-title" class="sl-title">저장</span>
+                <span id="sl-title" class="sl-title">Speichern</span>
                 <button id="sl-close" class="sl-close-btn">&times;</button>
             </div>
             <div id="sl-slots" class="sl-slots">
-                <!-- JS로 자동(0) + 수동(1~9) 슬롯 동적 생성 -->
+                <!-- Auto slot (0) and manual slots (1-9) are generated dynamically in JS. -->
             </div>
         </div>
     </div>
@@ -262,14 +261,14 @@
             <div class="loading-bar-outer">
                 <div id="loading-bar-inner" class="loading-bar-inner"></div>
             </div>
-            <div id="loading-text" class="loading-text">로딩 중...</div>
+            <div id="loading-text" class="loading-text">Lädt...</div>
         </div>
     </div>
 
-    <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->
+    <!-- ===== Rotate Prompt (mobile and tablet portrait guidance) ===== -->
     <div id="rotate-prompt" class="rotate-prompt">
         <div class="rotate-icon">📱</div>
-        <div class="rotate-text">화면을 가로로 회전해주세요<br>Please rotate your device</div>
+        <div class="rotate-text">Drehe dein Gerät<br>ins Querformat</div>
     </div>
 
     <!-- ===== Scripts ===== -->

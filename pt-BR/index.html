@@ -88,7 +88,7 @@
     <div id="title-screen" class="screen active">
         <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="Página inicial da ArcherLab" title="ArcherLab">🏹 ArcherLab</a>
         <select class="lang-switcher" aria-label="Language" onchange="if(this.value)location.href=this.value">
-            <option value="/">한국어</option>
+            <option value="/">Coreano</option>
             <option value="/en/">English</option>
             <option value="/ja/">日本語</option>
             <option value="/es/">Español</option>
@@ -108,8 +108,7 @@
         <div class="title-bg-layer"></div>
         <div class="title-bg-vignette"></div>
         <div class="cherry-blossoms" id="cherry-blossoms"></div>
-        <!-- Title scene: cherry blossom background plus three character sprite layers.
-             app.js injects asset paths after checking file availability. -->
+        <!-- Title background and character sprite layers. Optional assets are resolved at runtime. -->
         <div id="title-stage" class="title-stage" aria-hidden="true">
             <img id="title-stage-bg" class="title-stage-bg" alt="" data-src="../assets/images/background/cherry_blossom.png" onerror="this.style.display='none'">
             <img id="title-char-sea" class="title-char title-char-left" alt="" data-default="assets/images/characters/sea_normal.png" data-ngp="assets/images/characters/sea_stare.png" data-src="../assets/images/characters/sea_normal.png" onerror="this.style.display='none'">
@@ -190,7 +189,7 @@
             <div id="stat-display" class="stat-display hidden"></div>
         </div>
 
-        <!-- Quick Menu: save/load are available from MENU through the pause menu. -->
+        <!-- Quick menu entry point. Save and load are opened through the pause menu. -->
         <div id="quick-menu" class="quick-menu">
             <button id="qm-menu" class="qm-btn">MENU</button>
         </div>
@@ -231,7 +230,7 @@
         <button id="ft-skip" class="ft-skip-btn hidden">SKIP ▶▶</button>
     </div>
 
-    <!-- ===== Save Slot Glitch UI (Day 4 forced save-file reveal) ===== -->
+    <!-- ===== Save Slot Glitch UI (Day 4 forced save-file open) ===== -->
     <div id="save-slot-overlay" class="screen overlay hidden">
         <div class="save-slot-container">
             <div class="save-slot-header">
@@ -239,7 +238,7 @@
                 <span class="save-slot-subtitle">— Project Nevergrad —</span>
             </div>
             <div id="save-slot-list" class="save-slot-list">
-                <!-- Slots are generated dynamically by JS. -->
+                <!-- 13 slots are generated dynamically in JS. -->
             </div>
         </div>
     </div>
@@ -252,7 +251,7 @@
                 <button id="sl-close" class="sl-close-btn">&times;</button>
             </div>
             <div id="sl-slots" class="sl-slots">
-                <!-- Auto slot (0) and manual slots (1-9) are generated dynamically by JS. -->
+                <!-- Auto slot (0) and manual slots (1-9) are generated dynamically in JS. -->
             </div>
         </div>
     </div>
@@ -268,7 +267,7 @@
         </div>
     </div>
 
-    <!-- ===== Rotate Prompt (mobile/tablet portrait notice) ===== -->
+    <!-- ===== Rotate Prompt (mobile and tablet portrait guidance) ===== -->
     <div id="rotate-prompt" class="rotate-prompt">
         <div class="rotate-icon">📱</div>
         <div class="rotate-text">Gire a tela para o modo paisagem<br>Please rotate your device</div>

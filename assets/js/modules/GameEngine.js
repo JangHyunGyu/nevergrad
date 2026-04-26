@@ -11,6 +11,44 @@
  * - scene ID가 양쪽을 연결하는 키
  */
 
+/**
+ * 사용자 설정(BGM/SFX 볼륨, 텍스트 속도)을 localStorage에 영속화.
+ * AudioManager / CONFIG.TYPING_SPEED 와 직접 연결.
+ */
+class SettingsManager {
+    constructor(audio) {
+        this.audio = audio;
+        this.STORAGE_KEY = 'nevergrad:settings:v1';
+        this.defaults = { volBgm: 0.5, volSfx: 0.8, textSpeed: 30 };
+        this.values = { ...this.defaults };
+        try {
+            const raw = localStorage.getItem(this.STORAGE_KEY);
+            if (raw) Object.assign(this.values, JSON.parse(raw));
+        } catch (_) { /* 손상된 데이터는 기본값 사용 */ }
+    }
+    apply() {
+        if (this.audio?.setVolume) {
+            this.audio.setVolume('bgm', this.values.volBgm);
+            this.audio.setVolume('sfx', this.values.volSfx);
+        }
+        if (typeof CONFIG !== 'undefined') {
+            CONFIG.TYPING_SPEED = this.values.textSpeed;
+        }
+    }
+    set(key, value) {
+        this.values[key] = value;
+        try { localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.values)); }
+        catch (_) {}
+        this.apply();
+    }
+    reset() {
+        this.values = { ...this.defaults };
+        try { localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.values)); }
+        catch (_) {}
+        this.apply();
+    }
+}
+
 class GameEngine {
     constructor() {
         this.state = new StateManager();
@@ -54,6 +92,10 @@ class GameEngine {
         this.audio.init();
         this.renderer.audio = this.audio;
 
+        // 사용자 설정 로드 + AudioManager·CONFIG.TYPING_SPEED 적용
+        this.settings = new SettingsManager(this.audio);
+        this.settings.apply();
+
         // 합성 SFX이므로 preload 불필요 — affinity_up / affinity_down은 initSynthSFX에 등록됨
 
         // 언어 감지 (URL 파라미터 또는 브라우저 언어)
@@ -74,6 +116,7 @@ class GameEngine {
         this._bindTitleScreen();
         this._bindGameScreen();
         this._bindPauseMenu();
+        this._bindSettings();
         this._bindQuickMenu();
         this._bindBacklog();
 
@@ -248,11 +291,117 @@ class GameEngine {
             this._openSlotSelector('load');
         });
 
+        document.getElementById('btn-settings')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
+            this._hideOverlay('pause-menu');
+            this._openSettings();
+        });
+
         document.getElementById('btn-title')?.addEventListener('click', () => {
             this.audio?.playUIClick();
             this._hideOverlay('pause-menu');
             this._showScreen('title-screen');
         });
+    }
+
+    // ===== Settings Overlay =====
+
+    /**
+     * 슬라이더 값(0~100) ↔ TYPING_SPEED(ms) 변환.
+     * slider 0 = 100ms(느림), slider 100 = 1ms(즉시), 기본 30ms = slider 70.
+     */
+    _sliderToTypingSpeed(s) {
+        const v = Math.max(0, Math.min(100, Number(s) || 0));
+        return Math.max(1, Math.round(100 - v));
+    }
+    _typingSpeedToSlider(ms) {
+        const v = Math.max(1, Math.min(100, Number(ms) || 30));
+        return 100 - v;
+    }
+
+    _bindSettings() {
+        document.getElementById('settings-close')?.addEventListener('click', () => {
+            this.audio?.playUIMenuClose?.();
+            this._hideOverlay('settings-overlay');
+        });
+
+        const bgm = document.getElementById('settings-bgm');
+        const bgmVal = document.getElementById('settings-bgm-value');
+        bgm?.addEventListener('input', (e) => {
+            const v = parseInt(e.target.value, 10);
+            this.settings.set('volBgm', v / 100);
+            if (bgmVal) bgmVal.textContent = v + '%';
+        });
+
+        const sfx = document.getElementById('settings-sfx');
+        const sfxVal = document.getElementById('settings-sfx-value');
+        sfx?.addEventListener('input', (e) => {
+            const v = parseInt(e.target.value, 10);
+            this.settings.set('volSfx', v / 100);
+            if (sfxVal) sfxVal.textContent = v + '%';
+        });
+
+        const ts = document.getElementById('settings-text-speed');
+        const tsVal = document.getElementById('settings-text-speed-value');
+        ts?.addEventListener('input', (e) => {
+            const v = parseInt(e.target.value, 10);
+            this.settings.set('textSpeed', this._sliderToTypingSpeed(v));
+            if (tsVal) tsVal.textContent = v + '%';
+        });
+
+        document.getElementById('settings-fullscreen-toggle')?.addEventListener('click', () => {
+            this.audio?.playUIClick?.();
+            const inFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+            if (inFs) {
+                (document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen)?.call(document);
+            } else if (typeof requestMobileFullscreen === 'function') {
+                requestMobileFullscreen();
+            }
+            // 비동기 변경이므로 다음 틱에 라벨 갱신
+            setTimeout(() => this._refreshFullscreenLabel(), 50);
+        });
+
+        document.getElementById('settings-reset')?.addEventListener('click', () => {
+            this.audio?.playUIClick?.();
+            this.settings.reset();
+            this._populateSettingsOverlay();
+        });
+
+        // 풀스크린 상태가 외부 변경(ESC 등)으로 바뀔 때 라벨 동기화
+        document.addEventListener('fullscreenchange', () => this._refreshFullscreenLabel());
+        document.addEventListener('webkitfullscreenchange', () => this._refreshFullscreenLabel());
+    }
+
+    _openSettings() {
+        this._populateSettingsOverlay();
+        this._showOverlay('settings-overlay');
+    }
+
+    _populateSettingsOverlay() {
+        const v = this.settings?.values;
+        if (!v) return;
+        const bgmPct = Math.round((v.volBgm ?? 0.5) * 100);
+        const sfxPct = Math.round((v.volSfx ?? 0.8) * 100);
+        const tsSlider = this._typingSpeedToSlider(v.textSpeed ?? 30);
+
+        const set = (id, prop, val) => { const el = document.getElementById(id); if (el) el[prop] = val; };
+        set('settings-bgm', 'value', String(bgmPct));
+        set('settings-bgm-value', 'textContent', bgmPct + '%');
+        set('settings-sfx', 'value', String(sfxPct));
+        set('settings-sfx-value', 'textContent', sfxPct + '%');
+        set('settings-text-speed', 'value', String(tsSlider));
+        set('settings-text-speed-value', 'textContent', tsSlider + '%');
+
+        this._refreshFullscreenLabel();
+    }
+
+    _refreshFullscreenLabel() {
+        const btn = document.getElementById('settings-fullscreen-toggle');
+        if (!btn) return;
+        const inFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+        const ui = (k) => this.i18n?.getUI?.(k) || k;
+        btn.textContent = inFs ? ui('settingsOn') : ui('settingsOff');
+        btn.classList.toggle('is-on', inFs);
     }
 
     // ===== Scene Management =====

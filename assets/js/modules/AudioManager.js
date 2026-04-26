@@ -911,6 +911,7 @@ class AudioManager {
         this._synthRegistry = {
             'sfx_school_bell':       (o) => this._synthSchoolBell(o),
             'sfx_door_open':         (o) => this._synthDoorOpen(o),
+            'sfx_key_turn':          (o) => this._synthKeyTurn(o),
             'sfx_door_slam':         (o) => this._synthDoorSlam(o),
             'sfx_footsteps':         (o) => this._synthFootsteps(o),
             'sfx_footsteps_running': (o) => this._synthFootstepsRunning(o),
@@ -1043,6 +1044,62 @@ class AudioManager {
      * 문 쾅 닫힘 — 강한 충격음 + 금속 잔향
      * @private
      */
+    /**
+     * Small metallic key turn / latch click.
+     * @private
+     */
+    _synthKeyTurn(options = {}) {
+        const vol = options.volume || 0.35;
+        const now = this.ctx.currentTime;
+        const clicks = [
+            { offset: 0.00, freq: 1800, end: 820, dur: 0.035, amp: 0.95 },
+            { offset: 0.08, freq: 1250, end: 560, dur: 0.055, amp: 0.75 },
+            { offset: 0.17, freq: 2200, end: 1040, dur: 0.026, amp: 0.55 }
+        ];
+
+        clicks.forEach(({ offset, freq, end, dur, amp }) => {
+            const t = now + offset;
+            const osc = this.ctx.createOscillator();
+            const filter = this.ctx.createBiquadFilter();
+            const gain = this._createSFXGain(0);
+
+            osc.type = 'square';
+            osc.frequency.setValueAtTime(freq, t);
+            osc.frequency.exponentialRampToValueAtTime(end, t + dur);
+
+            filter.type = 'bandpass';
+            filter.frequency.value = freq;
+            filter.Q.value = 8;
+
+            osc.connect(filter);
+            filter.connect(gain);
+
+            gain.gain.setValueAtTime(0.001, t);
+            gain.gain.linearRampToValueAtTime(vol * amp, t + 0.004);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + dur);
+
+            osc.start(t);
+            osc.stop(t + dur + 0.015);
+        });
+
+        const scrape = this.ctx.createBufferSource();
+        scrape.buffer = this._createNoiseBuffer(0.16);
+        const bpf = this.ctx.createBiquadFilter();
+        const scrapeGain = this._createSFXGain(0);
+        bpf.type = 'bandpass';
+        bpf.frequency.setValueAtTime(1600, now + 0.03);
+        bpf.frequency.linearRampToValueAtTime(2800, now + 0.16);
+        bpf.Q.value = 5;
+
+        scrape.connect(bpf);
+        bpf.connect(scrapeGain);
+        scrapeGain.gain.setValueAtTime(0.001, now + 0.03);
+        scrapeGain.gain.linearRampToValueAtTime(vol * 0.18, now + 0.07);
+        scrapeGain.gain.exponentialRampToValueAtTime(0.001, now + 0.19);
+        scrape.start(now + 0.03);
+        scrape.stop(now + 0.20);
+    }
+
     _synthDoorSlam(options = {}) {
         const vol = options.volume || 0.7;
         const now = this.ctx.currentTime;

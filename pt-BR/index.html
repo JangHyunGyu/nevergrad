@@ -14,8 +14,8 @@
 	<link rel="icon" href="favicon.svg" type="image/svg+xml">
     <title>Nevergrad - A Sala de Aula Sem Formatura</title>
     <meta name="robots" content="index, follow">
-    <meta name="description" content="No primeiro dia de transfer?ncia, tudo estava perfeito. Perfeito demais para ser normal.">
-    <meta name="keywords" content="visual novel gratuito no navegador, jogo de mist?rio escolar, romance visual online, jogo narrativo com escolhas, finais alternativos, jogo gr?tis sem download, romance visual em portugu?s, anime visual novel, hist?ria interativa escolar, Nevergrad">
+    <meta name="description" content="No primeiro dia de transferência, tudo estava perfeito. Perfeito demais para ser normal.">
+    <meta name="keywords" content="visual novel gratuito no navegador, jogo de mistério escolar, romance visual online, jogo narrativo com escolhas, finais alternativos, jogo grátis sem download, romance visual em português, anime visual novel, história interativa escolar, Nevergrad">
     <meta name="author" content="Archerlab">
     <meta name="theme-color" content="#FFB7C5">
 
@@ -41,7 +41,7 @@
     <!-- OG Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="A Sala de Aula Sem Formatura | Nevergrad">
-    <meta property="og:description" content="No primeiro dia de transfer?ncia, tudo estava perfeito. Perfeito demais para ser normal.">
+    <meta property="og:description" content="No primeiro dia de transferência, tudo estava perfeito. Perfeito demais para ser normal.">
     <meta property="og:url" content="https://nevergrad.archerlab.dev/pt-BR/">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
     <meta property="og:site_name" content="Archerlab Games">
@@ -50,7 +50,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nevergrad: A Sala de Aula Sem Formatura">
-    <meta name="twitter:description" content="Visual novel gratuito no navegador, sem download. Uma hist?ria de cinco dias em uma escola perfeita demais, com 5 hero?nas, 7 finais e suporte multil?ngue.">
+    <meta name="twitter:description" content="Visual novel gratuito no navegador, sem download. Uma história de cinco dias em uma escola perfeita demais, com 5 heroínas, 7 finais e suporte multilíngue.">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
 
     <!-- Preconnect -->
@@ -71,7 +71,7 @@
       "@context": "https://schema.org",
       "@type": "VideoGame",
       "name": "A Sala de Aula Sem Formatura - Registro de 5 Dias",
-      "description": "Visual novel gratuito no navegador, sem download. Uma hist?ria de cinco dias em uma escola perfeita demais, com 5 hero?nas, 7 finais e suporte multil?ngue.",
+      "description": "Visual novel gratuito no navegador, sem download. Uma história de cinco dias em uma escola perfeita demais, com 5 heroínas, 7 finais e suporte multilíngue.",
       "genre": ["Visual Novel", "Romance", "School Life"],
       "gamePlatform": "Web Browser",
       "applicationCategory": "Game",
@@ -86,15 +86,15 @@
 <body>
     <!-- ===== Title Screen ===== -->
     <div id="title-screen" class="screen active">
-        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="P?gina inicial da ArcherLab" title="ArcherLab">🏹 ArcherLab</a>
+        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="Página inicial da ArcherLab" title="ArcherLab">🏹 ArcherLab</a>
         <select class="lang-switcher" aria-label="Language" onchange="if(this.value)location.href=this.value">
-            <option value="/">???</option>
+            <option value="/">한국어</option>
             <option value="/en/">English</option>
             <option value="/ja/">日本語</option>
-            <option value="/es/">Espa?ol</option>
-            <option value="/fr/">Fran?ais</option>
+            <option value="/es/">Español</option>
+            <option value="/fr/">Français</option>
             <option value="/de/">Deutsch</option>
-            <option value="/pt-BR/">Portugu?s (Brasil)</option>
+            <option value="/pt-BR/">Português (Brasil)</option>
         </select>
         <script>
             (function(){
@@ -108,8 +108,8 @@
         <div class="title-bg-layer"></div>
         <div class="title-bg-vignette"></div>
         <div class="cherry-blossoms" id="cherry-blossoms"></div>
-        <!-- SCENARIO.md 5454: 타이틀 배경(벚꽃) + 캐릭터 3 스프라이트 레이어. NG+ 시 세아만 시선 변경.
-             src는 app.js가 런타임에 파일 존재 확인 후 주입 (미생성 에셋 에러 방지) -->
+        <!-- Title scene: cherry blossom background plus three character sprite layers.
+             app.js injects asset paths after checking file availability. -->
         <div id="title-stage" class="title-stage" aria-hidden="true">
             <img id="title-stage-bg" class="title-stage-bg" alt="" data-src="../assets/images/background/cherry_blossom.png" onerror="this.style.display='none'">
             <img id="title-char-sea" class="title-char title-char-left" alt="" data-default="assets/images/characters/sea_normal.png" data-ngp="assets/images/characters/sea_stare.png" data-src="../assets/images/characters/sea_normal.png" onerror="this.style.display='none'">
@@ -151,9 +151,9 @@
     <!-- ===== Name Input Screen ===== -->
     <div id="name-screen" class="screen">
         <div class="name-input-container">
-            <p class="name-prompt">Qual ? o seu nome?</p>
+            <p class="name-prompt">Qual é o seu nome?</p>
             <input type="text" id="player-name-input" maxlength="8" placeholder="Digite seu nome">
-            <button id="btn-start" class="menu-btn">Come?ar</button>
+            <button id="btn-start" class="menu-btn">Começar</button>
         </div>
     </div>
 
@@ -186,11 +186,11 @@
 
         <!-- HUD -->
         <div id="hud" class="hud">
-            <div id="day-display" class="day-display">Dia 1 - Manh?</div>
+            <div id="day-display" class="day-display">Dia 1 - Manhã</div>
             <div id="stat-display" class="stat-display hidden"></div>
         </div>
 
-        <!-- Quick Menu — MENU 하나만. 저장/불러오기는 MENU → pause-menu 안에서 접근 (중복 제거) -->
+        <!-- Quick Menu: save/load are available from MENU through the pause menu. -->
         <div id="quick-menu" class="quick-menu">
             <button id="qm-menu" class="qm-btn">MENU</button>
         </div>
@@ -200,7 +200,7 @@
     <div id="backlog-panel" class="screen overlay hidden">
         <div class="backlog-container">
             <div class="backlog-header">
-                <span class="backlog-title">Hist?rico de Di?logos</span>
+                <span class="backlog-title">Histórico de Diálogos</span>
                 <button id="backlog-close" class="backlog-close-btn">&times;</button>
             </div>
             <div id="backlog-content" class="backlog-content"></div>
@@ -212,8 +212,8 @@
         <div class="pause-container">
             <button id="btn-save" class="menu-btn">Salvar</button>
             <button id="btn-load" class="menu-btn">Carregar</button>
-            <button id="btn-settings" class="menu-btn">Configura??es</button>
-            <button id="btn-title" class="menu-btn">T?tulo</button>
+            <button id="btn-settings" class="menu-btn">Configurações</button>
+            <button id="btn-title" class="menu-btn">Título</button>
             <button id="btn-resume" class="menu-btn">Voltar</button>
         </div>
     </div>
@@ -231,7 +231,7 @@
         <button id="ft-skip" class="ft-skip-btn hidden">SKIP ▶▶</button>
     </div>
 
-    <!-- ===== Save Slot Glitch UI (Day 4 세이브파일 강제 오픈) ===== -->
+    <!-- ===== Save Slot Glitch UI (Day 4 forced save-file reveal) ===== -->
     <div id="save-slot-overlay" class="screen overlay hidden">
         <div class="save-slot-container">
             <div class="save-slot-header">
@@ -239,7 +239,7 @@
                 <span class="save-slot-subtitle">— Project Nevergrad —</span>
             </div>
             <div id="save-slot-list" class="save-slot-list">
-                <!-- JS로 13개 슬롯 동적 생성 -->
+                <!-- Slots are generated dynamically by JS. -->
             </div>
         </div>
     </div>
@@ -252,7 +252,7 @@
                 <button id="sl-close" class="sl-close-btn">&times;</button>
             </div>
             <div id="sl-slots" class="sl-slots">
-                <!-- JS로 자동(0) + 수동(1~9) 슬롯 동적 생성 -->
+                <!-- Auto slot (0) and manual slots (1-9) are generated dynamically by JS. -->
             </div>
         </div>
     </div>
@@ -268,7 +268,7 @@
         </div>
     </div>
 
-    <!-- ===== Rotate Prompt (모바일/태블릿 세로모드 안내) ===== -->
+    <!-- ===== Rotate Prompt (mobile/tablet portrait notice) ===== -->
     <div id="rotate-prompt" class="rotate-prompt">
         <div class="rotate-icon">📱</div>
         <div class="rotate-text">Gire a tela para o modo paisagem<br>Please rotate your device</div>

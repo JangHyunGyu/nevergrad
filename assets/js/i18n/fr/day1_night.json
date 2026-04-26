@@ -1,115 +1,115 @@
 {
-  "day1_night_start": {
-    "name": "Moi",
-    "text": "*Je suis rentre chez moi. Je fais cuire des nouilles instantanees en repensant a ma journee.*"
-  },
-  "day1_night_home_2": {
-    "name": "Moi",
-    "text": "*Sea, Mme Eunsu, Mme Riin, Yuna...*"
-  },
-  "day1_night_home_3": {
-    "name": "Moi",
-    "text": "*C'etaient tous des gens bien.*"
-  },
-  "day1_night_phone_1": {
-    "name": "Moi",
-    "text": "*Je regarde mon telephone.*"
-  },
-  "day1_night_phone_2": {
-    "name": "Moi",
-    "text": "*Le groupe de discussion de mon ancienne ecole. Le message que j'ai envoye ce matin -- 'J'ai ete transfere, prenez soin de vous~'*"
-  },
-  "day1_night_phone_3": {
-    "name": "Moi",
-    "text": "*...Personne ne l'a lu. Lu par 0.*"
-  },
-  "day1_night_phone_4": {
-    "name": "Moi",
-    "text": "*J'ai aussi envoye un message personnel a mon ami proche Minsu. 'He Minsu, j'ai change d'ecole ! Elle est enorme ici' -- toujours pas de reponse.*"
-  },
-  "day1_night_phone_5": {
-    "name": "Moi",
-    "text": "*...Bah, demain il repondra.*"
-  },
-  "day1_night_phone_6": {
-    "name": "Moi",
-    "text": "*Par contre, j'ai des messages de Sea.*"
-  },
-  "day1_night_sea_1": {
-    "name": "Han Sea",
-    "text": "C'etait sympa aujourd'hui !"
-  },
-  "day1_night_sea_2": {
-    "name": "Han Sea",
-    "text": "Tu veux quoi dans ton bentou demain ?"
-  },
-  "day1_night_sea_3": {
-    "name": "Han Sea",
-    "text": "Je prends les commandes haha"
-  },
-  "day1_night_sea_4": {
-    "name": "",
-    "text": ""
-  },
-  "day1_night_sea_reply": {
-    "name": "Moi",
-    "text": "*Qu'est-ce que je reponds ?*",
-    "choices": [
-      "'Hmm~ un poulet pane, ca te dit ?' (reponse precise)",
-      "'Je mange de tout haha' (reponse decontractee)",
-      "(Ne pas repondre)"
-    ]
-  },
-  "day1_night_sea_reply_1": {
-    "name": "Han Sea",
-    "text": "Oh super ! T'as interet d'avoir hate demain <3"
-  },
-  "day1_night_sea_reply_2": {
-    "name": "Han Sea",
-    "text": "Haha d'acc~ prepare-toi a etre surpris demain !"
-  },
-  "day1_night_sea_reply_3": {
-    "name": "",
-    "text": ""
-  },
-  "day1_night_sleep_1": {
-    "name": "Moi",
-    "text": "*Je me couche et fixe le plafond.*"
-  },
-  "day1_night_sleep_2": {
-    "name": "Moi",
-    "text": "*...Je crois que je peux m'y faire. Cette ecole.*"
-  },
-  "day1_night_sleep_3": {
-    "name": "Moi",
-    "text": "*Je ferme les yeux. Je suis fatigue.*"
-  },
-  "day1_night_sleep_4": {
-    "name": "Moi",
-    "text": "*...Juste avant de m'endormir, une sensation etrange m'a effleure. Cette tache au plafond -- elle a une forme qui me semble familiere.*"
-  },
-  "day1_night_sleep_5": {
-    "name": "Moi",
-    "text": "*...Les plafonds d'appartement se ressemblent tous. J'ai ferme les yeux.*"
-  },
-  "day1_night_end": {
-    "name": "",
-    "text": "*-- Fin du Jour 1 --*"
-  },
-  "day1_night_key_1": {
-    "text": "*...Alors que j'étais à moitié endormi, un bruit est venu de l'entrée. Un petit bruit. Comme une clé qui tourne.*",
-    "name": "Moi"
-  },
-  "day1_night_key_2": {
-    "text": "*...Un rêve ? J'ai entrouvert les yeux. L'obscurité. Je ne vois rien. La porte est fermée.*",
-    "name": "Moi"
-  },
-  "day1_night_key_3": {
-    "text": "*J'ai regardé l'horloge. 2h14 du matin. ...Puisque c'est mon studio, il n'y a aucune raison d'entendre un bruit de clé. Ce devait être le bruit de la chambre d'à côté.*",
-    "name": "Moi"
-  },
-  "day1_night_key_4": {
-    "text": "*J'ai refermé les yeux.*",
-    "name": "Moi"
-  }
+    "day1_night_start": {
+        "name": "Moi",
+        "text": "*Je suis rentre chez moi. Je fais cuire des nouilles instantanees en repensant a ma journee.*"
+    },
+    "day1_night_home_2": {
+        "name": "Moi",
+        "text": "*Sea, Mme Eunsu, Mme Riin, Yuna...*"
+    },
+    "day1_night_home_3": {
+        "name": "Moi",
+        "text": "*C'etaient tous des gens bien.*"
+    },
+    "day1_night_phone_1": {
+        "name": "Moi",
+        "text": "*Je regarde mon telephone.*"
+    },
+    "day1_night_phone_2": {
+        "name": "Moi",
+        "text": "*Le groupe de discussion de mon ancienne ecole. Le message que j'ai envoye ce matin -- 'J'ai ete transfere, prenez soin de vous~'*"
+    },
+    "day1_night_phone_3": {
+        "name": "Moi",
+        "text": "*...Personne ne l'a lu. Lu par 0.*"
+    },
+    "day1_night_phone_4": {
+        "name": "Moi",
+        "text": "*J'ai aussi envoye un message personnel a mon ami proche Minsu. 'He Minsu, j'ai change d'ecole ! Elle est enorme ici' -- toujours pas de reponse.*"
+    },
+    "day1_night_phone_5": {
+        "name": "Moi",
+        "text": "*...Bah, demain il repondra.*"
+    },
+    "day1_night_phone_6": {
+        "name": "Moi",
+        "text": "*Par contre, j'ai des messages de Sea.*"
+    },
+    "day1_night_sea_1": {
+        "name": "Han Sea",
+        "text": "C'etait sympa aujourd'hui !"
+    },
+    "day1_night_sea_2": {
+        "name": "Han Sea",
+        "text": "Tu veux quoi dans ton bentou demain ?"
+    },
+    "day1_night_sea_3": {
+        "name": "Han Sea",
+        "text": "Je prends les commandes haha"
+    },
+    "day1_night_sea_4": {
+        "name": "",
+        "text": ""
+    },
+    "day1_night_sea_reply": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je reponds ?*",
+        "choices": [
+            "'Hmm~ un poulet pane, ca te dit ?' (reponse precise)",
+            "'Je mange de tout haha' (reponse decontractee)",
+            "(Ne pas repondre)"
+        ]
+    },
+    "day1_night_sea_reply_1": {
+        "name": "Han Sea",
+        "text": "Oh super ! T'as interet d'avoir hate demain <3"
+    },
+    "day1_night_sea_reply_2": {
+        "name": "Han Sea",
+        "text": "Haha d'acc~ prepare-toi a etre surpris demain !"
+    },
+    "day1_night_sea_reply_3": {
+        "name": "",
+        "text": ""
+    },
+    "day1_night_sleep_1": {
+        "name": "Moi",
+        "text": "*Je me couche et fixe le plafond.*"
+    },
+    "day1_night_sleep_2": {
+        "name": "Moi",
+        "text": "*...Je crois que je peux m'y faire. Cette ecole.*"
+    },
+    "day1_night_sleep_3": {
+        "name": "Moi",
+        "text": "*Je ferme les yeux. Je suis fatigue.*"
+    },
+    "day1_night_sleep_4": {
+        "name": "Moi",
+        "text": "*...Juste avant de m'endormir, une sensation etrange m'a effleure. Cette tache au plafond -- elle a une forme qui me semble familiere.*"
+    },
+    "day1_night_sleep_5": {
+        "name": "Moi",
+        "text": "*...Les plafonds d'appartement se ressemblent tous. J'ai ferme les yeux.*"
+    },
+    "day1_night_key_1": {
+        "text": "*...Alors que j'étais à moitié endormi, un bruit est venu de l'entrée. Un petit bruit. Comme une clé qui tourne.*",
+        "name": "Moi"
+    },
+    "day1_night_key_2": {
+        "text": "*...Un rêve ? J'ai entrouvert les yeux. L'obscurité. Je ne vois rien. La porte est fermée.*",
+        "name": "Moi"
+    },
+    "day1_night_key_3": {
+        "text": "*J'ai regardé l'horloge. 2h14 du matin. ...Puisque c'est mon studio, il n'y a aucune raison d'entendre un bruit de clé. Ce devait être le bruit de la chambre d'à côté.*",
+        "name": "Moi"
+    },
+    "day1_night_key_4": {
+        "text": "*J'ai refermé les yeux.*",
+        "name": "Moi"
+    },
+    "day1_night_end": {
+        "name": "",
+        "text": "*-- Fin du Jour 1 --*"
+    }
 }

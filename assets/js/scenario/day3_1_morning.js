@@ -27,6 +27,7 @@ Object.assign(SCENARIO[3], {
 
     // ===== 거울 회피 =====
     "day3_morning_wake_3": {
+        background: "bathroom",
         character: null,
         next: "day3_morning_mirror_1"
     },

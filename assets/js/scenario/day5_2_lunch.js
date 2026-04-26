@@ -627,7 +627,7 @@ Object.assign(SCENARIO[5], {
     },
     // "...미안해." "기억 못 해서."
     "day5_lunch_seolhwa_15": {
-        character: null,
+        character: "seolhwa_normal",
         next: "day5_lunch_seolhwa_16"
     },
     "day5_lunch_seolhwa_16": {

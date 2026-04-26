@@ -31,7 +31,6 @@
         "name": "Me",
         "text": "*Reality is just a sneeze.*"
     },
-
     "day1_gate_1": {
         "name": "Me",
         "text": "*I stood in front of an unfamiliar school gate.*"
@@ -52,12 +51,10 @@
         "name": "Me",
         "text": "*One deep breath. Let's go in. Standing here won't make the school come to me.*"
     },
-
     "day1_gate_cctv_1": {
         "name": "Me",
         "text": "*I pass through the main gate. There's a CCTV camera on the pillar beside it. Another one where the wall turns the corner. One more at the entrance. -- I guess every school is like this nowadays.*"
     },
-
     "day1_hallway_1": {
         "name": "Me",
         "text": "*Walking down the hallway. No idea where I'm supposed to go.*"
@@ -70,7 +67,6 @@
         "name": "Me",
         "text": "*Walking down the hallway. I glanced at the directory and turned right.*"
     },
-
     "day1_sea_meet_1": {
         "name": "Sea",
         "text": "Are you the transfer student? I heard someone was coming today."
@@ -143,7 +139,6 @@
         "name": "Me",
         "text": "*...You don't meet someone like this on your first day as a transfer student.*"
     },
-
     "day1_choco_entry": {
         "name": "",
         "text": ""
@@ -151,7 +146,10 @@
     "day1_gate_ngp_choice": {
         "name": "",
         "text": "",
-        "choices": ["Walk into the school", "Turn back"]
+        "choices": [
+            "Walk into the school",
+            "Turn back"
+        ]
     },
     "day1_gate_ngp_turn_back": {
         "name": "Me",
@@ -218,7 +216,6 @@
             "Actually, I prefer strawberry milk."
         ]
     },
-
     "day1_choco_accept_1": {
         "name": "Me",
         "text": "*I poke in the straw and take a sip. Sweet. Tasty.*"
@@ -235,7 +232,6 @@
         "name": "Me",
         "text": "*Well, most people do like it. They probably had strawberry too if it was buy-one-get-one -- but she picked chocolate.*"
     },
-
     "day1_choco_question_1": {
         "name": "Me",
         "text": "...Wait, how did you know I like chocolate milk?"
@@ -260,7 +256,6 @@
         "name": "Me",
         "text": "*Sea smiles. Well, if it was buy-one-get-one, of course she'd pick the safe option.*"
     },
-
     "day1_choco_joke_1": {
         "name": "Me",
         "text": "I'm actually team strawberry milk."
@@ -273,7 +268,6 @@
         "name": "Sea",
         "text": "Oh really? ...Next time it's strawberry for sure. I'll remember that."
     },
-
     "day1_classroom_1": {
         "name": "Me",
         "text": "*With Sea's guidance, I arrived at the classroom.*"
@@ -294,7 +288,6 @@
         "name": "Me",
         "text": "*After some light chatting, the classroom door opens and the homeroom teacher walks in.*"
     },
-
     "day1_eunsu_1": {
         "name": "Me",
         "text": "*A young female teacher with glasses. She has a gentle appearance.*"
@@ -351,7 +344,6 @@
         "name": "Me",
         "text": "*I head back to my seat. Sea gives me a thumbs up. Ms. Eunsu nods and smiles.*"
     },
-
     "day1_seolhwa_1": {
         "name": "Me",
         "text": "*Before the second class starts. I glanced behind me from my seat.*"
@@ -380,7 +372,6 @@
             "(Let's just focus on class for now)"
         ]
     },
-
     "day1_seolhwa_greet_1": {
         "name": "Me",
         "text": "*I turned around.*"
@@ -437,12 +428,10 @@
         "name": "Me",
         "text": "*I see. Well, every class has one or two of those. My old school had someone like that too.*"
     },
-
     "day1_seolhwa_skip": {
         "name": "Me",
         "text": "*Let's focus on class. No time to worry about the back row.*"
     },
-
     "day1_dejavu2_1": {
         "name": "Me",
         "text": "*During class, I dropped my pencil and looked under the desk.*"
@@ -459,7 +448,6 @@
         "name": "Me",
         "text": "*I picked up the pencil and focused on class.*"
     },
-
     "day1_break_1": {
         "name": "Me",
         "text": "*Break time. A few boys come over.*"
@@ -496,7 +484,6 @@
         "name": "Me",
         "text": "*...A lunchbox?*"
     },
-
     "day1_pe_1": {
         "name": "Me",
         "text": "*P.E. class. Soccer. The ball went high. I trapped it with my left foot.*"
@@ -513,7 +500,6 @@
         "name": "Me",
         "text": "*Yuna is standing at the corner of the sports field, holding a camera.*"
     },
-
     "day1_pe_wall_1": {
         "name": "Me",
         "text": "*Soccer's over. I sat down on a bench. Drinking water, looking out at the field. A red-brick wall runs along the perimeter, topped with green wire fencing. Mountains are visible beyond it. Nice school.*"
@@ -522,12 +508,10 @@
         "name": "Me",
         "text": "*The bell rang, so I headed back to the classroom.*"
     },
-
     "day1_morning_end": {
         "name": "",
         "text": "*The morning is over. It's lunchtime.*"
     },
-
     "day1_xover_seolhwa_1": {
         "name": "",
         "text": "*Walking down the hallway -- someone is standing there. At the end of the corridor. Where the light doesn't reach.*"

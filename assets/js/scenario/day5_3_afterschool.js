@@ -500,7 +500,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_10"
     },
     "day5_after_resist_10": {
-        character: "eunsu_obsessed",
+        character: "seolhwa_fading",
         next: "day5_after_resist_11"
     },
     "day5_after_resist_11": {

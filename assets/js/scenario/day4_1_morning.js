@@ -168,7 +168,7 @@ Object.assign(SCENARIO[4], {
     // ═══════════════════════════════════════════════════
 
     "day4_morning_commute": {
-        background: "corridor",
+        background: "street_morning",
         character: null,
         next: "day4_morning_commute_2"
     },
@@ -218,6 +218,7 @@ Object.assign(SCENARIO[4], {
     },
     // 전부 같은 속도, 같은 보폭, 같은 각도
     "day4_morning_commute_9": {
+        background: "school_gate",
         character: null,
         glitch: { noise: true, noiseDuration: 200 },
         next: "day4_morning_gate"

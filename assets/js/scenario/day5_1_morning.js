@@ -76,6 +76,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_dawn_8"
     },
     "day5_morning_dawn_8": {
+        background: "corridor_dark",
         character: null,
         sfx: "sfx_door_open.mp3",
         next: "day5_morning_dawn_9"
@@ -85,6 +86,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_dawn_10"
     },
     "day5_morning_dawn_10": {
+        background: "dawn_road",
         character: null,
         sfx: "sfx_footsteps.mp3",
         next: "day5_morning_dawn_11"
@@ -98,7 +100,7 @@ Object.assign(SCENARIO[5], {
     // 새벽의 학교 — 정문, 구관, 지하실 하강
     // ══════════════════════════════════════
     "day5_morning_dawn_12": {
-        background: "school_gate_dark",
+        background: "dawn_road",
         bgm: "silence_tension.mp3",
         character: null,
         glitch: { noise: true, noiseDuration: 300 },
@@ -106,6 +108,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_school_1"
     },
     "day5_morning_school_1": {
+        background: "school_gate_dark",
         character: null,
         next: "day5_morning_school_2"
     },
@@ -310,7 +313,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_4"
     },
     "day5_morning_true_4": {
-        character: null,
+        characters: { left: "yuna_weak" },
         next: "day5_morning_true_5"
     },
     "day5_morning_true_5": {
@@ -322,7 +325,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_7"
     },
     "day5_morning_true_7": {
-        character: null,
+        characters: { left: "yuna_weak" },
         next: "day5_morning_true_8"
     },
     "day5_morning_true_8": {

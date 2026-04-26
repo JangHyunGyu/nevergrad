@@ -5875,6 +5875,7 @@ _source: `day3_1_morning.js / day3_morning.json`_
 ### `day3_morning_wake_3`
 
 _source: `day3_1_morning.js / day3_morning.json`_
+_배경: `bathroom`_
 
 **나**
 ```text
@@ -9602,7 +9603,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_commute`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_배경: `corridor`_
+_배경: `street_morning`_
 
 **나**
 ```text
@@ -9684,6 +9685,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_commute_9`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `school_gate`_
 
 **나**
 ```text
@@ -12863,6 +12865,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 ### `day5_morning_dawn_8`
 
 _source: `day5_1_morning.js / day5_morning.json`_
+_배경: `corridor_dark`_
 
 **나**
 ```text
@@ -12881,6 +12884,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 ### `day5_morning_dawn_10`
 
 _source: `day5_1_morning.js / day5_morning.json`_
+_배경: `dawn_road`_
 
 **나**
 ```text
@@ -12901,7 +12905,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 ### `day5_morning_dawn_12`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_배경: `school_gate_dark` / BGM: `silence_tension.mp3`_
+_배경: `dawn_road` / BGM: `silence_tension.mp3`_
 
 **나**
 ```text
@@ -12913,6 +12917,7 @@ _배경: `school_gate_dark` / BGM: `silence_tension.mp3`_
 ### `day5_morning_school_1`
 
 _source: `day5_1_morning.js / day5_morning.json`_
+_배경: `school_gate_dark`_
 
 **나**
 ```text
@@ -15741,6 +15746,7 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 ### `day5_lunch_seolhwa_15`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
+_캐릭터: `seolhwa_normal`_
 
 **설화**
 ```text
@@ -17330,7 +17336,7 @@ _캐릭터: `seolhwa_fading`_
 ### `day5_after_resist_10`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_캐릭터: `eunsu_obsessed`_
+_캐릭터: `seolhwa_fading`_
 
 **설화**
 ```text
@@ -18564,7 +18570,7 @@ _캐릭터: `seolhwa_fading`_
 ### `day5_ending_resist_8`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_shocked`_
+_캐릭터: `seolhwa_fading`_
 
 **설화**
 ```text
@@ -18574,7 +18580,7 @@ _캐릭터: `eunsu_shocked`_
 ### `day5_ending_resist_9`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `seolhwa_fading`_
+_캐릭터: `eunsu_shocked`_
 
 **지문**
 ```text
@@ -18614,7 +18620,7 @@ _캐릭터: `seolhwa_normal`_
 ### `day5_ending_resist_13`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_normal`_
+_캐릭터: `seolhwa_normal`_
 
 **설화**
 ```text
@@ -18780,6 +18786,7 @@ _배경: `classroom` / BGM: `ending_dark.mp3` / 캐릭터: `eunsu_normal`_
 ### `day5_ending_cage_eunsu_2`
 
 _source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `eunsu_normal`_
 
 **박은수**
 ```text

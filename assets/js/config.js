@@ -197,7 +197,7 @@ const CONFIG = {
         emergency_exit: "assets/images/background/exit_door.png",          // 비상구 (exit_door 재사용)
         classroom_afternoon: "assets/images/background/classroom.png",     // 오후 교실
         new_classroom: "assets/images/background/classroom.png",           // 새 교실 (에필로그)
-        news_article: "assets/images/background/news_article.png",
+        news_article: "assets/images/background/black.png",
         dawn_road: "assets/images/background/dawn_road.png",
         new_place: "assets/images/background/new_place.png",
         lab_documents: "assets/images/evidence/day5_lab_documents.png",

@@ -8,6 +8,7 @@ class SceneRenderer {
     constructor() {
         this.bgLayer = document.getElementById('bg-layer');
         this.bgOverlay = document.getElementById('bg-overlay');
+        this.mediaOverlay = document.getElementById('media-overlay');
         this.charLeft = document.getElementById('char-left');
         this.charCenter = document.getElementById('char-center');
         this.charRight = document.getElementById('char-right');
@@ -47,6 +48,155 @@ class SceneRenderer {
         if (this.bgOverlay) {
             this.bgOverlay.classList.add(type);
         }
+    }
+
+    _ensureMediaOverlay() {
+        if (this.mediaOverlay) return this.mediaOverlay;
+
+        const el = document.createElement('div');
+        el.id = 'media-overlay';
+        el.className = 'scene-media-overlay hidden';
+        el.setAttribute('aria-hidden', 'true');
+
+        const parent = this.bgOverlay?.parentNode || this.bgLayer?.parentNode || document.getElementById('game-screen');
+        if (parent) {
+            if (this.bgOverlay?.nextSibling) {
+                parent.insertBefore(el, this.bgOverlay.nextSibling);
+            } else {
+                parent.appendChild(el);
+            }
+        }
+
+        this.mediaOverlay = el;
+        return el;
+    }
+
+    clearMediaOverlay() {
+        const el = this.mediaOverlay;
+        if (!el) return;
+        el.replaceChildren();
+        el.className = 'scene-media-overlay hidden';
+        el.removeAttribute('data-media-type');
+    }
+
+    setMediaOverlay(data) {
+        if (!data) {
+            this.clearMediaOverlay();
+            return;
+        }
+
+        const el = this._ensureMediaOverlay();
+        if (!el) return;
+
+        const typeClass = `scene-media-${String(data.type || 'default').replace(/[A-Z]/g, m => '-' + m.toLowerCase())}`;
+        const variantClass = data.variant ? `scene-media-variant-${String(data.variant).replace(/[^a-z0-9_-]/gi, '').toLowerCase()}` : '';
+        el.replaceChildren();
+        el.className = ['scene-media-overlay', typeClass, variantClass].filter(Boolean).join(' ');
+        el.dataset.mediaType = data.type || 'default';
+        el.setAttribute('aria-hidden', 'true');
+
+        const node = data.type === 'newsArticle'
+            ? this._renderNewsArticle(data)
+            : this._renderLabDossier(data);
+        el.appendChild(node);
+
+        requestAnimationFrame(() => {
+            el.classList.add('visible');
+        });
+    }
+
+    _el(tag, className, text) {
+        const el = document.createElement(tag);
+        if (className) el.className = className;
+        if (text != null) el.textContent = String(text);
+        return el;
+    }
+
+    _append(parent, tag, className, text) {
+        const el = this._el(tag, className, text);
+        parent.appendChild(el);
+        return el;
+    }
+
+    _renderNewsArticle(data) {
+        const frame = this._el('div', 'media-news-frame');
+
+        const browser = this._append(frame, 'div', 'media-news-browser');
+        const dots = this._append(browser, 'div', 'media-news-dots');
+        dots.append(this._el('span'), this._el('span'), this._el('span'));
+        this._append(browser, 'div', 'media-news-address', data.url || 'nevergrad.local/investigation/13');
+        this._append(browser, 'div', 'media-news-live', data.live || 'LIVE');
+
+        const paper = this._append(frame, 'article', 'media-news-paper');
+        const masthead = this._append(paper, 'header', 'media-news-masthead');
+        this._append(masthead, 'div', 'media-news-source', data.source || 'NEVERGRAD TIMES');
+        this._append(masthead, 'div', 'media-news-meta', data.meta || '');
+
+        const hero = this._append(paper, 'section', 'media-news-hero');
+        const story = this._append(hero, 'div', 'media-news-story');
+        this._append(story, 'div', 'media-news-kicker', data.kicker || '');
+        this._append(story, 'h1', 'media-news-headline', data.headline || '');
+        this._append(story, 'p', 'media-news-deck', data.deck || '');
+
+        const badges = this._append(story, 'div', 'media-news-badges');
+        (data.badges || []).slice(0, 3).forEach(label => this._append(badges, 'span', 'media-news-badge', label));
+
+        const card = this._append(hero, 'aside', 'media-news-card');
+        this._append(card, 'div', 'media-news-card-label', data.cardLabel || '');
+        this._append(card, 'div', 'media-news-card-number', data.cardNumber || '#13');
+        this._append(card, 'div', 'media-news-card-caption', data.cardCaption || '');
+
+        const lower = this._append(paper, 'section', 'media-news-lower');
+        const related = this._append(lower, 'div', 'media-news-related');
+        this._append(related, 'div', 'media-news-section-title', data.relatedTitle || '');
+        (data.related || []).slice(0, 3).forEach(item => this._append(related, 'p', 'media-news-related-item', item));
+
+        const chart = this._append(lower, 'div', 'media-news-chart');
+        this._append(chart, 'div', 'media-news-section-title', data.chartTitle || '');
+        const bars = this._append(chart, 'div', 'media-news-bars');
+        (data.chart || [28, 45, 62, 91]).forEach((value, index) => {
+            const bar = this._append(bars, 'div', 'media-news-bar');
+            bar.style.setProperty('--bar-height', `${Math.max(8, Math.min(100, Number(value) || 0))}%`);
+            this._append(bar, 'span', 'media-news-bar-fill');
+            this._append(bar, 'em', '', String(index + 1));
+        });
+
+        return frame;
+    }
+
+    _renderLabDossier(data) {
+        const frame = this._el('div', 'media-dossier-frame');
+        const spread = this._append(frame, 'div', 'media-dossier-spread');
+
+        const main = this._append(spread, 'section', 'media-dossier-sheet media-dossier-main');
+        const top = this._append(main, 'header', 'media-dossier-top');
+        this._append(top, 'div', 'media-dossier-org', data.org || 'EDINA FOUNDATION');
+        this._append(top, 'div', 'media-dossier-stamp', data.stamp || 'CONFIDENTIAL');
+        this._append(main, 'div', 'media-dossier-file-id', data.fileId || 'NVG-13-FINAL');
+        this._append(main, 'h2', 'media-dossier-title', data.title || '');
+        this._append(main, 'p', 'media-dossier-excerpt', data.excerpt || '');
+
+        const table = this._append(main, 'div', 'media-dossier-table');
+        (data.rows || []).forEach(row => {
+            const rowEl = this._append(table, 'div', `media-dossier-row ${row.tone ? `is-${row.tone}` : ''}`);
+            this._append(rowEl, 'span', 'media-dossier-cell cycle', row.cycle || '');
+            this._append(rowEl, 'span', 'media-dossier-cell name', row.name || '');
+            this._append(rowEl, 'span', 'media-dossier-cell status', row.status || '');
+        });
+
+        const side = this._append(spread, 'aside', 'media-dossier-sheet media-dossier-side');
+        this._append(side, 'div', 'media-dossier-side-label', data.sideLabel || '');
+        const portrait = this._append(side, 'div', 'media-dossier-portrait');
+        this._append(portrait, 'div', 'media-dossier-portrait-id', data.subject || '#13');
+        this._append(side, 'div', 'media-dossier-note', data.note || '');
+
+        const redactions = this._append(side, 'div', 'media-dossier-redactions');
+        for (let i = 0; i < 6; i++) this._append(redactions, 'span');
+
+        const footer = this._append(side, 'div', 'media-dossier-footer', data.footer || '');
+        footer.style.setProperty('--scan', `${Math.max(12, Math.min(88, Number(data.scan) || 54))}%`);
+
+        return frame;
     }
 
     // 시간대 설정: bg-layer 필터 + bg-overlay 동시 적용

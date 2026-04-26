@@ -485,6 +485,7 @@ class GameEngine {
         const name = this._resolveName(t.name);
         const extraVars = this._buildSceneVars(sceneId, scene);
         const text = this.i18n.resolve(t.text, this.state.playerName, extraVars);
+        this.renderer.setMediaOverlay?.(this._buildSceneMediaOverlay(sceneId, scene, t, text, extraVars));
 
         this._updateHUD();
 
@@ -586,6 +587,166 @@ class GameEngine {
         if (scene.metaEffect && !scene.glitch?.endingCreditSaveUI) {
             this._handleMetaEffect(scene.metaEffect);
         }
+    }
+
+    _buildSceneMediaOverlay(sceneId, scene, t, resolvedText, extraVars) {
+        if (!sceneId || !this.renderer?.setMediaOverlay) return null;
+
+        if (scene.background === 'news_article' || /^day5_ending_true_2[5-7]$/.test(sceneId)) {
+            return this._buildNewsArticleMedia(extraVars);
+        }
+
+        if (scene.background === 'lab_documents' || /^day5_morning_true_[1-5]$/.test(sceneId)) {
+            return this._buildLabDocumentMedia(sceneId, resolvedText);
+        }
+
+        return null;
+    }
+
+    _mediaLocale() {
+        const lang = this.i18n?.currentLang || 'ko';
+        const copy = {
+            ko: {
+                newsSource: 'NEVERGRAD TIMES', newsMeta: '3개월 후 · 사회', live: '속보',
+                investigation: '탐사보도', related: '관련 보도', chart: '피해 신고 추이',
+                evidence: '확보된 증거', witness: '주요 제보자 기록',
+                newsBadges: ['비인가 시설', '임상시험', '기억장애'],
+                org: 'EDINA FOUNDATION', stamp: '대외비', fileId: 'NVG-13 / FINAL',
+                reportTitle: '프로젝트 네버그라드 최종 보고서', sideLabel: '피험자 신원 패키지',
+                note: '관찰 기록과 투약 기록을 대조 중', footer: '스캔 신뢰도',
+                cycle: '주기', subject1: '김도진', subject7: '김태호', done: '처리 완료',
+                anomaly: '이설화 접촉 / 탈출 공모', active: '진행 중'
+            },
+            en: {
+                newsSource: 'NEVERGRAD TIMES', newsMeta: '3 months later · Society', live: 'LIVE',
+                investigation: 'Investigation', related: 'Related reports', chart: 'Victim reports',
+                evidence: 'Evidence secured', witness: 'Key witness record',
+                newsBadges: ['Unlicensed facility', 'Clinical trials', 'Memory disorders'],
+                org: 'EDINA FOUNDATION', stamp: 'CONFIDENTIAL', fileId: 'NVG-13 / FINAL',
+                reportTitle: 'Project Nevergrad Final Report', sideLabel: 'Subject identity package',
+                note: 'Cross-checking observation logs and dosage records', footer: 'Scan confidence',
+                cycle: 'Cycle', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Processed',
+                anomaly: 'Seolhwa contact / escape conspiracy', active: 'Active'
+            },
+            ja: {
+                newsSource: 'NEVERGRAD TIMES', newsMeta: '3か月後 · 社会', live: '速報',
+                investigation: '調査報道', related: '関連報道', chart: '被害申告の推移',
+                evidence: '確保済み証拠', witness: '主要通報者記録',
+                newsBadges: ['無認可施設', '臨床試験', '記憶障害'],
+                org: 'EDINA FOUNDATION', stamp: '機密', fileId: 'NVG-13 / FINAL',
+                reportTitle: 'プロジェクト・ネバーグラード 最終報告書', sideLabel: '被験者IDパッケージ',
+                note: '観察記録と投薬記録を照合中', footer: 'スキャン信頼度',
+                cycle: '周回', subject1: 'キム・ドジン', subject7: 'キム・テホ', done: '処理完了',
+                anomaly: 'イ・ソルファ接触 / 脱出共謀', active: '進行中'
+            },
+            es: {
+                newsSource: 'NEVERGRAD TIMES', newsMeta: '3 meses después · Sociedad', live: 'DIRECTO',
+                investigation: 'Investigación', related: 'Informes relacionados', chart: 'Reportes de víctimas',
+                evidence: 'Pruebas aseguradas', witness: 'Registro de testigo clave',
+                newsBadges: ['Instalación no autorizada', 'Ensayos clínicos', 'Trastornos de memoria'],
+                org: 'FUNDACIÓN EDINA', stamp: 'CONFIDENCIAL', fileId: 'NVG-13 / FINAL',
+                reportTitle: 'Proyecto Nevergrad — Informe Final', sideLabel: 'Paquete de identidad del sujeto',
+                note: 'Cotejando registros de observación y dosificación', footer: 'Confianza del escaneo',
+                cycle: 'Ciclo', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Procesado',
+                anomaly: 'Contacto con Seolhwa / plan de fuga', active: 'Activo'
+            },
+            fr: {
+                newsSource: 'NEVERGRAD TIMES', newsMeta: '3 mois plus tard · Société', live: 'DIRECT',
+                investigation: 'Enquête', related: 'Articles liés', chart: 'Signalements de victimes',
+                evidence: 'Preuves sécurisées', witness: 'Dossier du témoin clé',
+                newsBadges: ['Site non agréé', 'Essais cliniques', 'Troubles de mémoire'],
+                org: 'FONDATION EDINA', stamp: 'CONFIDENTIEL', fileId: 'NVG-13 / FINAL',
+                reportTitle: 'Projet Nevergrad — Rapport Final', sideLabel: "Paquet d'identité du sujet",
+                note: "Vérification croisée des observations et des dosages", footer: 'Fiabilité du scan',
+                cycle: 'Cycle', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Traité',
+                anomaly: 'Contact avec Seolhwa / complot de fuite', active: 'Actif'
+            },
+            de: {
+                newsSource: 'NEVERGRAD TIMES', newsMeta: '3 Monate später · Gesellschaft', live: 'LIVE',
+                investigation: 'Recherche', related: 'Verwandte Berichte', chart: 'Opfermeldungen',
+                evidence: 'Beweise gesichert', witness: 'Schlüsselzeugenakte',
+                newsBadges: ['Nicht genehmigte Anlage', 'Klinische Versuche', 'Gedächtnisstörungen'],
+                org: 'EDINA-STIFTUNG', stamp: 'VERTRAULICH', fileId: 'NVG-13 / FINAL',
+                reportTitle: 'Projekt Nevergrad — Abschlussbericht', sideLabel: 'Identitätspaket des Subjekts',
+                note: 'Abgleich von Beobachtungs- und Dosierungsprotokollen', footer: 'Scan-Verlässlichkeit',
+                cycle: 'Zyklus', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Abgeschlossen',
+                anomaly: 'Kontakt mit Seolhwa / Fluchtplan', active: 'Aktiv'
+            }
+        };
+        return copy[lang] || copy.en;
+    }
+
+    _stripVNMarkup(text) {
+        return String(text || '')
+            .trim()
+            .replace(/^\*{1,3}/, '')
+            .replace(/\*{1,3}$/, '')
+            .trim();
+    }
+
+    _extractOuterQuote(text) {
+        const s = this._stripVNMarkup(text);
+        const pairs = [['『', '』'], ['「', '」'], ['“', '”'], ['"', '"'], ["'", "'"]];
+        for (const [open, close] of pairs) {
+            const start = s.indexOf(open);
+            const end = s.lastIndexOf(close);
+            if (start >= 0 && end > start) {
+                return s.slice(start + open.length, end).replace(/["'』」]\s+["'『「]/g, ' / ').trim();
+            }
+        }
+        return s;
+    }
+
+    _buildNewsArticleMedia(extraVars) {
+        const copy = this._mediaLocale();
+        const headlineRaw = this.i18n.resolve(this.i18n.get('day5_ending_true_26').text, this.state.playerName, extraVars);
+        const deckRaw = this.i18n.resolve(this.i18n.get('day5_ending_true_27').text, this.state.playerName, extraVars);
+        const deck = this._extractOuterQuote(deckRaw);
+
+        return {
+            type: 'newsArticle',
+            source: copy.newsSource,
+            meta: copy.newsMeta,
+            live: copy.live,
+            kicker: copy.investigation,
+            headline: this._extractOuterQuote(headlineRaw),
+            deck,
+            badges: copy.newsBadges,
+            cardLabel: copy.evidence,
+            cardNumber: '#13',
+            cardCaption: copy.witness,
+            relatedTitle: copy.related,
+            related: deck.split(/\s+\/\s+|'\s+'/).filter(Boolean).slice(0, 2),
+            chartTitle: copy.chart,
+            chart: [18, 31, 58, 94],
+            url: 'nevergrad.local/investigation/facility-13'
+        };
+    }
+
+    _buildLabDocumentMedia(sceneId, resolvedText) {
+        const copy = this._mediaLocale();
+        const playerName = this.state?.playerName || '{name}';
+        const sceneNo = Number((sceneId.match(/_(\d+)$/) || [])[1] || 1);
+
+        return {
+            type: 'labDossier',
+            variant: sceneNo >= 5 ? 'table' : (sceneNo >= 3 ? 'report' : 'intake'),
+            org: copy.org,
+            stamp: copy.stamp,
+            fileId: copy.fileId,
+            title: copy.reportTitle,
+            excerpt: this._stripVNMarkup(resolvedText),
+            sideLabel: copy.sideLabel,
+            subject: '#13',
+            note: copy.note,
+            footer: `${copy.footer} ${Math.min(98, 48 + sceneNo * 9)}%`,
+            scan: 48 + sceneNo * 9,
+            rows: [
+                { cycle: `${copy.cycle} #1`, name: copy.subject1, status: copy.done },
+                { cycle: `${copy.cycle} #7`, name: copy.subject7, status: copy.anomaly, tone: 'warning' },
+                { cycle: `${copy.cycle} #13`, name: playerName, status: copy.active, tone: 'active' }
+            ]
+        };
     }
 
     _handleMetaEffect(effect) {

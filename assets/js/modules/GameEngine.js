@@ -1639,7 +1639,8 @@ class GameEngine {
             this.glitchAdvanced.startMirrorWipe({
                 requireSwipe: g.requireSwipe === true,
                 silenceAll: g.silenceAll === true,
-                threshold: g.swipeThreshold
+                threshold: g.swipeThreshold,
+                verticalSpan: g.swipeVerticalSpan
             });
         }
 

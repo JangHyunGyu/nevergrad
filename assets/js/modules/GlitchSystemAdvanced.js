@@ -1772,6 +1772,7 @@ class GlitchSystemAdvanced {
 
             // 스와이프로 안개 제거
             let isDrawing = false;
+            const stopDrawing = () => { isDrawing = false; };
             const brushSize = Math.max(40, Math.min(canvas.width, canvas.height) * 0.08);
 
             const markCleared = (x, y) => {
@@ -1822,6 +1823,7 @@ class GlitchSystemAdvanced {
                         canvas.style.opacity = '0';
                         setTimeout(() => {
                             window.removeEventListener('resize', resize);
+                            window.removeEventListener('mouseup', stopDrawing);
                             container.remove();
                             if (onComplete) onComplete();
                             resolve();
@@ -1835,8 +1837,9 @@ class GlitchSystemAdvanced {
             // 마우스 이벤트
             canvas.addEventListener('mousedown', (e) => { isDrawing = true; clearFog(e.clientX, e.clientY); });
             canvas.addEventListener('mousemove', (e) => { if (isDrawing) clearFog(e.clientX, e.clientY); });
-            canvas.addEventListener('mouseup', () => { isDrawing = false; });
-            window.addEventListener('mouseup', () => { isDrawing = false; }, { once: true });
+            canvas.addEventListener('mouseup', stopDrawing);
+            canvas.addEventListener('mouseleave', stopDrawing);
+            window.addEventListener('mouseup', stopDrawing);
 
             // 터치 이벤트
             canvas.addEventListener('touchstart', (e) => {
@@ -1851,7 +1854,7 @@ class GlitchSystemAdvanced {
                 const t = e.touches[0];
                 clearFog(t.clientX, t.clientY);
             }, { passive: false });
-            canvas.addEventListener('touchend', () => { isDrawing = false; });
+            canvas.addEventListener('touchend', stopDrawing);
         });
     }
 
@@ -2257,6 +2260,17 @@ class GlitchSystemAdvanced {
 
         const inner = document.createElement('div');
         inner.className = 'mirror-reflection-inner';
+
+        const self = document.createElement('div');
+        self.className = 'mirror-reflection-self';
+        self.innerHTML = `
+            <span class="mirror-reflection-self-hair"></span>
+            <span class="mirror-reflection-self-eye mirror-reflection-self-eye-left"></span>
+            <span class="mirror-reflection-self-eye mirror-reflection-self-eye-right"></span>
+            <span class="mirror-reflection-self-nose"></span>
+            <span class="mirror-reflection-self-mouth"></span>
+        `;
+        inner.appendChild(self);
 
         // 현재 캐릭터 레이어 복제 (transform scaleX(-1)로 거울상)
         ['char-left', 'char-center', 'char-right'].forEach(id => {

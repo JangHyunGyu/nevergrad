@@ -1286,6 +1286,121 @@ body.cursor-slowed * {
     50% { opacity: 0.7; }
 }
 
+.mirror-player-reflection {
+    position: fixed;
+    inset: 0;
+    z-index: 69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    background:
+        radial-gradient(ellipse at center, rgba(210, 220, 230, 0.12) 0%, rgba(25, 30, 42, 0.18) 48%, rgba(0, 0, 0, 0.5) 100%),
+        linear-gradient(115deg, transparent 36%, rgba(255, 255, 255, 0.08) 47%, transparent 58%);
+}
+
+.mirror-player-reflection.visible {
+    opacity: 1;
+}
+
+.mirror-player-glass {
+    position: absolute;
+    width: min(56vw, 560px);
+    height: min(76vh, 760px);
+    border: 2px solid rgba(210, 220, 235, 0.18);
+    border-radius: 8px;
+    box-shadow:
+        inset 0 0 58px rgba(0, 0, 0, 0.72),
+        0 0 34px rgba(0, 0, 0, 0.46);
+}
+
+.mirror-player-face {
+    position: relative;
+    width: clamp(170px, 28vw, 320px);
+    aspect-ratio: 0.72;
+    border-radius: 46% 46% 42% 42% / 38% 38% 52% 52%;
+    background:
+        radial-gradient(ellipse at 50% 42%, rgba(238, 226, 215, 0.58) 0%, rgba(184, 172, 166, 0.4) 46%, rgba(80, 88, 104, 0.28) 74%, rgba(18, 22, 32, 0.16) 100%);
+    box-shadow:
+        inset 0 -34px 44px rgba(38, 30, 34, 0.34),
+        inset 0 22px 32px rgba(255, 255, 255, 0.16),
+        0 0 40px rgba(205, 215, 225, 0.16);
+    overflow: hidden;
+    transform: scaleX(-1);
+    filter: saturate(0.25) contrast(1.18) blur(7px);
+    opacity: 0.28;
+    transition: opacity 420ms ease, filter 420ms ease, clip-path 420ms ease;
+}
+
+.mirror-player-hair,
+.mirror-player-eye,
+.mirror-player-nose,
+.mirror-player-mouth {
+    position: absolute;
+    display: block;
+}
+
+.mirror-player-hair {
+    top: -4%;
+    left: 9%;
+    width: 82%;
+    height: 29%;
+    border-radius: 48% 48% 34% 34%;
+    background: linear-gradient(180deg, rgba(26, 28, 36, 0.76), rgba(48, 50, 62, 0.3));
+}
+
+.mirror-player-eye {
+    top: 42%;
+    width: 17%;
+    height: 2px;
+    background: rgba(16, 20, 28, 0.76);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.mirror-player-eye-left { left: 26%; }
+.mirror-player-eye-right { right: 26%; }
+
+.mirror-player-nose {
+    top: 45%;
+    left: 50%;
+    width: 1px;
+    height: 19%;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, rgba(22, 24, 32, 0), rgba(22, 24, 32, 0.45), rgba(22, 24, 32, 0));
+}
+
+.mirror-player-mouth {
+    left: 38%;
+    bottom: 23%;
+    width: 24%;
+    height: 2px;
+    background: rgba(28, 22, 28, 0.46);
+}
+
+.mirror-player-stage-1 .mirror-player-face {
+    clip-path: inset(0 0 48% 0);
+    filter: saturate(0.2) contrast(1.22) blur(4px);
+    opacity: 0.55;
+}
+
+.mirror-player-stage-2 .mirror-player-face {
+    clip-path: inset(0 0 24% 0);
+    filter: saturate(0.22) contrast(1.28) blur(2px);
+    opacity: 0.72;
+}
+
+.mirror-player-stage-2 .mirror-player-mouth {
+    opacity: 0;
+}
+
+.mirror-player-stage-3 .mirror-player-face {
+    clip-path: inset(0);
+    filter: saturate(0.24) contrast(1.32) blur(0.8px);
+    opacity: 0.84;
+}
+
 /* =========================================================================
    Mirror 13 Faces Overlay
    ========================================================================= */
@@ -1496,6 +1611,66 @@ body.cursor-slowed * {
     inset: 0;
     transform: scaleX(-1);
 }
+
+.mirror-reflection-self {
+    position: absolute;
+    left: 50%;
+    bottom: 13%;
+    width: 31%;
+    aspect-ratio: 0.72;
+    transform: translateX(-50%);
+    border-radius: 46% 46% 42% 42% / 38% 38% 52% 52%;
+    background:
+        radial-gradient(ellipse at 50% 43%, rgba(232, 224, 215, 0.42) 0%, rgba(114, 119, 135, 0.26) 72%, rgba(20, 23, 32, 0.16) 100%);
+    box-shadow: inset 0 -18px 28px rgba(26, 20, 26, 0.34);
+    opacity: 0.64;
+    filter: saturate(0.18) contrast(1.22) blur(0.8px);
+}
+
+.mirror-reflection-self-hair,
+.mirror-reflection-self-eye,
+.mirror-reflection-self-nose,
+.mirror-reflection-self-mouth {
+    position: absolute;
+    display: block;
+}
+
+.mirror-reflection-self-hair {
+    top: -4%;
+    left: 9%;
+    width: 82%;
+    height: 29%;
+    border-radius: 48% 48% 34% 34%;
+    background: linear-gradient(180deg, rgba(18, 20, 28, 0.72), rgba(48, 50, 62, 0.22));
+}
+
+.mirror-reflection-self-eye {
+    top: 42%;
+    width: 17%;
+    height: 2px;
+    background: rgba(15, 18, 26, 0.7);
+}
+
+.mirror-reflection-self-eye-left { left: 26%; }
+.mirror-reflection-self-eye-right { right: 26%; }
+
+.mirror-reflection-self-nose {
+    top: 45%;
+    left: 50%;
+    width: 1px;
+    height: 19%;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, rgba(22, 24, 32, 0), rgba(22, 24, 32, 0.4), rgba(22, 24, 32, 0));
+}
+
+.mirror-reflection-self-mouth {
+    left: 38%;
+    bottom: 23%;
+    width: 24%;
+    height: 2px;
+    background: rgba(28, 22, 28, 0.42);
+}
+
 .mirror-reflection-sprite {
     position: absolute;
     bottom: 0;

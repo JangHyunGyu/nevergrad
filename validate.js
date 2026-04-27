@@ -590,7 +590,7 @@ if (fs.existsSync(appJsPath)) {
 if (fs.existsSync(koHtmlPath)) {
     const koHtml = fs.readFileSync(koHtmlPath, 'utf8');
     const htmlIds = new Set([...koHtml.matchAll(/id="([^"]+)"/g)].map(m => m[1]));
-    const dynamicDomIds = new Set(['save-toast', 'mirror-reflection', 'admin-panel-overlay']);
+    const dynamicDomIds = new Set(['save-toast', 'mirror-reflection', 'mirror-player-reflection', 'admin-panel-overlay']);
 
     // JS에서 getElementById로 참조하는 ID 수집
     const modulesDir = path.join(ROOT, 'assets/js/modules');

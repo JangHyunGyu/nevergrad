@@ -361,6 +361,8 @@ Object.assign(SCENARIO[4], {
         glitch: {
             mirrorWipe: true,
             requireSwipe: true,
+            swipeThreshold: 0.32,
+            swipeVerticalSpan: 0.58,
             silenceAll: true
         },
         next: "day4_night_mirror_swipe_2"

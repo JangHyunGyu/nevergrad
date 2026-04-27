@@ -21,7 +21,7 @@ class GlitchSystem {
 
     _lang() {
         const lang = document.documentElement.lang || 'ko';
-        return String(lang).toLowerCase().startsWith('ko') ? 'ko' : 'en';
+        return String(lang).toLowerCase().startsWith('pt') ? 'pt-BR' : String(lang).slice(0, 2);
     }
 
     _pickLocalized(map) {
@@ -146,7 +146,12 @@ class GlitchSystem {
         // 3단계: 새 라벨로 교체
         statEl.textContent = statEl.dataset.thrillerlabel || this._pickLocalized({
             ko: '위험도',
-            en: 'Danger'
+            en: 'Danger',
+            ja: '危険度',
+            es: 'Peligro',
+            fr: 'Danger',
+            de: 'Gefahr',
+            'pt-BR': 'Perigo'
         });
         statEl.classList.add('stat-revealed');
     }
@@ -348,6 +353,46 @@ class GlitchSystem {
                 allow: 'Always Allow',
                 whileUsing: 'Allow While Using App',
                 deny: "Don't Allow"
+            },
+            ja: {
+                appName: '学生安全',
+                title: '"{appName}"がこの端末の位置情報へアクセスすることを許可しますか？',
+                desc: 'このアプリは使用中でない間も位置情報を使用します。',
+                allow: '常に許可',
+                whileUsing: 'アプリ使用中のみ許可',
+                deny: '許可しない'
+            },
+            es: {
+                appName: 'Seguridad Estudiantil',
+                title: '¿Permitir que "{appName}" acceda a la ubicación de este dispositivo?',
+                desc: 'Esta app usa la ubicación incluso cuando no la estás usando.',
+                allow: 'Permitir siempre',
+                whileUsing: 'Permitir al usar la app',
+                deny: 'No permitir'
+            },
+            fr: {
+                appName: 'Sécurité Étudiante',
+                title: 'Autoriser "{appName}" à accéder à la position de cet appareil ?',
+                desc: "Cette application utilise la position même lorsque vous ne l'utilisez pas.",
+                allow: 'Toujours autoriser',
+                whileUsing: "Autoriser pendant l'utilisation",
+                deny: 'Ne pas autoriser'
+            },
+            de: {
+                appName: 'Schülersicherheit',
+                title: 'Darf "{appName}" auf den Standort dieses Geräts zugreifen?',
+                desc: 'Diese App verwendet den Standort auch dann, wenn du sie nicht benutzt.',
+                allow: 'Immer erlauben',
+                whileUsing: 'Beim Verwenden erlauben',
+                deny: 'Nicht erlauben'
+            },
+            'pt-BR': {
+                appName: 'Segurança Estudantil',
+                title: 'Permitir que "{appName}" acesse a localização deste dispositivo?',
+                desc: 'Este app usa a localização mesmo quando você não está usando.',
+                allow: 'Permitir sempre',
+                whileUsing: 'Permitir ao usar o app',
+                deny: 'Não permitir'
             }
         });
         const displayName = appName || copy.appName;
@@ -393,7 +438,12 @@ class GlitchSystem {
         this._originalTitle = document.title;
         this._tabMessages = this._pickLocalized({
             ko: ['어디 가?', '...보고 있어.', '{name}, 돌아와.', '도망칠 수 없어.', '나를 두고 가지 마.', '왜 자꾸 다른 데 봐?'],
-            en: ['Where are you going?', "...I'm watching.", '{name}, come back.', "You can't run.", "Don't leave me here.", 'Why do you keep looking away?']
+            en: ['Where are you going?', "...I'm watching.", '{name}, come back.', "You can't run.", "Don't leave me here.", 'Why do you keep looking away?'],
+            ja: ['どこへ行くの？', '...見てるよ。', '{name}、戻ってきて。', '逃げられないよ。', '私を置いていかないで。', 'どうして何度もよそを見るの？'],
+            es: ['¿A dónde vas?', '...Te estoy mirando.', '{name}, vuelve.', 'No puedes escapar.', 'No me dejes aquí.', '¿Por qué sigues mirando a otro lado?'],
+            fr: ['Où vas-tu ?', '...Je te regarde.', '{name}, reviens.', 'Tu ne peux pas fuir.', 'Ne me laisse pas ici.', 'Pourquoi regardes-tu ailleurs ?'],
+            de: ['Wohin gehst du?', '...Ich sehe dich.', '{name}, komm zurück.', 'Du kannst nicht weglaufen.', 'Lass mich nicht hier.', 'Warum siehst du immer wieder weg?'],
+            'pt-BR': ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?']
         });
         this._tabMsgIndex = 0;
 
@@ -422,7 +472,12 @@ class GlitchSystem {
         this._tabGimmickActive = false;
         document.title = this._originalTitle || this._pickLocalized({
             ko: '졸업하지 못한 교실',
-            en: 'The Classroom of No Graduation'
+            en: 'The Classroom of No Graduation',
+            ja: '卒業できない教室',
+            es: 'El Aula Sin Graduación',
+            fr: 'La classe sans diplôme',
+            de: 'Das Klassenzimmer ohne Abschluss',
+            'pt-BR': 'A Sala de Aula Sem Formatura'
         });
         if (this._onVisibilityChange) {
             document.removeEventListener('visibilitychange', this._onVisibilityChange);
@@ -477,6 +532,96 @@ class GlitchSystem {
                 date: 'Scheduled processing: Day 5 23:00',
                 exit: '\nOld building, third floor. Emergency exit. ...Take that route.',
                 remember: 'Remember me.'
+            },
+            ja: {
+                title: '卒業できない教室',
+                watched: '\n...誰かがここを見ている。',
+                warningBox: '\n' +
+                    '██████████████████████████████████████\n' +
+                    '█                                    █\n' +
+                    '█   ...逃げて。                       █\n' +
+                    '█   この学校から出て。                 █\n' +
+                    '█   5日間だよ。                       █\n' +
+                    '█                                    █\n' +
+                    '█              - イ・ソルファ          █\n' +
+                    '█                                    █\n' +
+                    '██████████████████████████████████████',
+                protocol: '\n[警告] 被験者 #13 - 記憶再構成プロトコル進行中',
+                date: '処理予定日: Day 5 23:00',
+                exit: '\n旧校舎3階。非常口。...その道で出て。',
+                remember: '私を覚えていて。'
+            },
+            es: {
+                title: 'El Aula Sin Graduación',
+                watched: '\n...Alguien está mirando este lugar.',
+                warningBox: '\n' +
+                    '██████████████████████████████████████\n' +
+                    '█                                    █\n' +
+                    '█   ...Corre.                         █\n' +
+                    '█   Sal de esta escuela.              █\n' +
+                    '█   Cinco días.                       █\n' +
+                    '█                                    █\n' +
+                    '█              - Lee Seolhwa          █\n' +
+                    '█                                    █\n' +
+                    '██████████████████████████████████████',
+                protocol: '\n[ADVERTENCIA] Sujeto #13 - protocolo de reconstrucción de memoria en curso',
+                date: 'Procesamiento programado: Day 5 23:00',
+                exit: '\nEdificio antiguo, tercer piso. Salida de emergencia. ...Toma esa ruta.',
+                remember: 'Recuérdame.'
+            },
+            fr: {
+                title: 'La classe sans diplôme',
+                watched: '\n...Quelqu’un observe cet endroit.',
+                warningBox: '\n' +
+                    '██████████████████████████████████████\n' +
+                    '█                                    █\n' +
+                    '█   ...Fuis.                          █\n' +
+                    '█   Sors de cette école.              █\n' +
+                    '█   Cinq jours.                       █\n' +
+                    '█                                    █\n' +
+                    '█              - Lee Seolhwa          █\n' +
+                    '█                                    █\n' +
+                    '██████████████████████████████████████',
+                protocol: '\n[AVERTISSEMENT] Sujet #13 - protocole de reconstruction mémorielle en cours',
+                date: 'Traitement prévu : Day 5 23:00',
+                exit: '\nAncien bâtiment, troisième étage. Sortie de secours. ...Prends cette voie.',
+                remember: 'Souviens-toi de moi.'
+            },
+            de: {
+                title: 'Das Klassenzimmer ohne Abschluss',
+                watched: '\n...Jemand beobachtet diesen Ort.',
+                warningBox: '\n' +
+                    '██████████████████████████████████████\n' +
+                    '█                                    █\n' +
+                    '█   ...Lauf.                          █\n' +
+                    '█   Verlass diese Schule.             █\n' +
+                    '█   Fünf Tage.                        █\n' +
+                    '█                                    █\n' +
+                    '█              - Lee Seolhwa          █\n' +
+                    '█                                    █\n' +
+                    '██████████████████████████████████████',
+                protocol: '\n[WARNUNG] Subjekt #13 - Speicherrekonstruktionsprotokoll läuft',
+                date: 'Geplante Verarbeitung: Day 5 23:00',
+                exit: '\nAltes Gebäude, dritter Stock. Notausgang. ...Nimm diesen Weg.',
+                remember: 'Erinnere dich an mich.'
+            },
+            'pt-BR': {
+                title: 'A Sala de Aula Sem Formatura',
+                watched: '\n...Alguém está observando este lugar.',
+                warningBox: '\n' +
+                    '██████████████████████████████████████\n' +
+                    '█                                    █\n' +
+                    '█   ...Corra.                         █\n' +
+                    '█   Saia desta escola.                █\n' +
+                    '█   Cinco dias.                       █\n' +
+                    '█                                    █\n' +
+                    '█              - Lee Seolhwa          █\n' +
+                    '█                                    █\n' +
+                    '██████████████████████████████████████',
+                protocol: '\n[AVISO] Sujeito #13 - protocolo de reconstrução de memória em andamento',
+                date: 'Processamento agendado: Day 5 23:00',
+                exit: '\nPrédio antigo, terceiro andar. Saída de emergência. ...Siga por ali.',
+                remember: 'Lembre-se de mim.'
             }
         });
 

@@ -262,6 +262,31 @@ class DeviceGimmickSystem {
                 long: `You hesitated for ${sec} seconds... thinking that hard?`,
                 medium: `${sec} seconds... that was quite a pause.`,
                 short: `You hesitated for a moment, didn't you? I saw it.`
+            },
+            ja: {
+                long: `${sec}秒も迷ったね...そんなに悩んだんだ？`,
+                medium: `${sec}秒...けっこう迷ったね。`,
+                short: `少し迷ったでしょ？ 見てたよ。`
+            },
+            es: {
+                long: `Dudaste ${sec} segundos... ¿tanto lo pensaste?`,
+                medium: `${sec} segundos... fue una pausa larga.`,
+                short: `Dudaste un momento, ¿verdad? Lo vi.`
+            },
+            fr: {
+                long: `Tu as hésité ${sec} secondes... tu y as tant réfléchi ?`,
+                medium: `${sec} secondes... c’était une vraie pause.`,
+                short: `Tu as hésité un instant, non ? Je l’ai vu.`
+            },
+            de: {
+                long: `Du hast ${sec} Sekunden gezögert... musstest du so lange nachdenken?`,
+                medium: `${sec} Sekunden... das war eine deutliche Pause.`,
+                short: `Du hast kurz gezögert, oder? Ich habe es gesehen.`
+            },
+            'pt-BR': {
+                long: `Você hesitou por ${sec} segundos... pensou tanto assim?`,
+                medium: `${sec} segundos... foi uma boa pausa.`,
+                short: `Você hesitou um instante, não foi? Eu vi.`
             }
         });
 
@@ -557,6 +582,51 @@ class DeviceGimmickSystem {
                 full: `Battery ${level}%... you came prepared. Planning to stay a while?`,
                 high: `Battery ${level}%. Plenty left. Take your time.`,
                 default: `Battery ${level}%... I know your phone's condition.`
+            },
+            ja: {
+                critical: `バッテリー ${level}%...もうすぐ切れそう。私も消えるの？`,
+                low: `バッテリーは ${level}% しか残ってない。急いだ方がいいんじゃない？`,
+                uneasy: `バッテリー ${level}%...少し不安にならない？`,
+                mid: `バッテリー ${level}%。まだ時間はある...たぶん。`,
+                full: `バッテリー ${level}%...準備してきたんだね。長くいるつもり？`,
+                high: `バッテリー ${level}%。余裕があるね。ゆっくりでいいよ。`,
+                default: `バッテリー ${level}%...あなたのスマホの状態、知ってるよ。`
+            },
+            es: {
+                critical: `Batería ${level}%... se apagará pronto. ¿Yo también desapareceré?`,
+                low: `Solo queda ${level}% de batería. ¿No deberías darte prisa?`,
+                uneasy: `Batería ${level}%... ¿no te pone un poco nervioso?`,
+                mid: `Batería ${level}%. Todavía hay tiempo... probablemente.`,
+                full: `Batería ${level}%... viniste preparado. ¿Planeas quedarte un rato?`,
+                high: `Batería ${level}%. Queda bastante. Tómate tu tiempo.`,
+                default: `Batería ${level}%... conozco el estado de tu teléfono.`
+            },
+            fr: {
+                critical: `Batterie ${level}%... elle va bientôt s’éteindre. Est-ce que je vais disparaître aussi ?`,
+                low: `Il ne reste que ${level}% de batterie. Tu ne devrais pas te dépêcher ?`,
+                uneasy: `Batterie ${level}%... ça ne te rend pas un peu nerveux ?`,
+                mid: `Batterie ${level}%. Il reste encore du temps... probablement.`,
+                full: `Batterie ${level}%... tu es venu préparé. Tu comptes rester longtemps ?`,
+                high: `Batterie ${level}%. Il en reste beaucoup. Prends ton temps.`,
+                default: `Batterie ${level}%... je connais l’état de ton téléphone.`
+            },
+            de: {
+                critical: `Akku ${level}%... bald schaltet es sich aus. Verschwinde ich dann auch?`,
+                low: `Nur noch ${level}% Akku. Solltest du dich nicht beeilen?`,
+                uneasy: `Akku ${level}%... macht dich das nicht etwas nervös?`,
+                mid: `Akku ${level}%. Es bleibt noch Zeit... wahrscheinlich.`,
+                full: `Akku ${level}%... du bist vorbereitet. Willst du länger bleiben?`,
+                high: `Akku ${level}%. Genug übrig. Lass dir Zeit.`,
+                default: `Akku ${level}%... ich kenne den Zustand deines Handys.`
+            },
+            'pt-BR': {
+                critical: `Bateria ${level}%... vai desligar logo. Eu também vou desaparecer?`,
+                low: `Só resta ${level}% de bateria. Você não deveria se apressar?`,
+                uneasy: `Bateria ${level}%... isso não deixa você um pouco nervoso?`,
+                mid: `Bateria ${level}%. Ainda há tempo... provavelmente.`,
+                full: `Bateria ${level}%... você veio preparado. Pretende ficar um tempo?`,
+                high: `Bateria ${level}%. Tem bastante. Pode ir com calma.`,
+                default: `Bateria ${level}%... eu sei o estado do seu telefone.`
             }
         });
 
@@ -672,7 +742,7 @@ class DeviceGimmickSystem {
             es: { ios: "Alerta de emergencia", android: "Alerta de emergencia", now: "ahora" },
             fr: { ios: "Alerte d'urgence", android: "Alerte d'urgence", now: "maintenant" },
             de: { ios: "Notfallwarnung", android: "Notfallwarnung", now: "jetzt" },
-            'pt-BR': { ios: "Alerta de emergencia", android: "Alerta de emergencia", now: "agora" }
+            'pt-BR': { ios: "Alerta de emergência", android: "Alerta de emergência", now: "agora" }
         });
 
         alert.innerHTML = `

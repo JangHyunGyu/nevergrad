@@ -180,7 +180,7 @@ class MetaHorrorSystem {
 
     _lang() {
         const lang = this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko';
-        return String(lang).toLowerCase().startsWith('ko') ? 'ko' : 'en';
+        return String(lang).toLowerCase().startsWith('pt') ? 'pt-BR' : String(lang).slice(0, 2);
     }
 
     _pickLocalized(map) {
@@ -188,15 +188,15 @@ class MetaHorrorSystem {
     }
 
     _getTabMessages() {
-        if (this._lang() === 'ko') return this.tabMessages;
-        return [
-            'Where are you going?',
-            "...I'm watching.",
-            '{name}, come back.',
-            "You can't run.",
-            "Don't leave me here.",
-            'Why do you keep looking away?'
-        ];
+        return this._pickLocalized({
+            ko: this.tabMessages,
+            en: ['Where are you going?', "...I'm watching.", '{name}, come back.', "You can't run.", "Don't leave me here.", 'Why do you keep looking away?'],
+            ja: ['どこへ行くの？', '...見てるよ。', '{name}、戻ってきて。', '逃げられないよ。', '私を置いていかないで。', 'どうして何度もよそを見るの？'],
+            es: ['¿A dónde vas?', '...Te estoy mirando.', '{name}, vuelve.', 'No puedes escapar.', 'No me dejes aquí.', '¿Por qué sigues mirando a otro lado?'],
+            fr: ['Où vas-tu ?', '...Je te regarde.', '{name}, reviens.', 'Tu ne peux pas fuir.', 'Ne me laisse pas ici.', 'Pourquoi regardes-tu ailleurs ?'],
+            de: ['Wohin gehst du?', '...Ich sehe dich.', '{name}, komm zurück.', 'Du kannst nicht weglaufen.', 'Lass mich nicht hier.', 'Warum siehst du immer wieder weg?'],
+            'pt-BR': ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?']
+        });
     }
 
     _getConsoleMessages(day) {
@@ -205,28 +205,102 @@ class MetaHorrorSystem {
         const dim = 'color: #666; font-size: 11px;';
         const ghost = 'color: #c8a2c8; font-size: 14px; font-style: italic; text-shadow: 0 0 5px #c8a2c8;';
         const warn = 'color: #ff4444; font-size: 12px; font-weight: bold;';
+        const copy = this._pickLocalized({
+            en: {
+                title: 'The Classroom of No Graduation',
+                watched: '\n...Someone is watching this place.',
+                run: '...Run.',
+                leave: 'Get out of this school.',
+                days: 'Five days.',
+                sign: '- Lee Seolhwa',
+                protocol: '\n[WARNING] Subject #13 - memory reconstruction protocol in progress',
+                date: 'Scheduled processing: Day 5 23:00',
+                exit: '\nOld building, third floor. Emergency exit. ...Take that route.',
+                remember: 'Remember me.'
+            },
+            ja: {
+                title: '卒業できない教室',
+                watched: '\n...誰かがここを見ている。',
+                run: '...逃げて。',
+                leave: 'この学校から出て。',
+                days: '5日間だよ。',
+                sign: '- イ・ソルファ',
+                protocol: '\n[警告] 被験者 #13 - 記憶再構成プロトコル進行中',
+                date: '処理予定日: Day 5 23:00',
+                exit: '\n旧校舎3階。非常口。...その道で出て。',
+                remember: '私を覚えていて。'
+            },
+            es: {
+                title: 'El Aula Sin Graduación',
+                watched: '\n...Alguien está mirando este lugar.',
+                run: '...Corre.',
+                leave: 'Sal de esta escuela.',
+                days: 'Cinco días.',
+                sign: '- Lee Seolhwa',
+                protocol: '\n[ADVERTENCIA] Sujeto #13 - protocolo de reconstrucción de memoria en curso',
+                date: 'Procesamiento programado: Day 5 23:00',
+                exit: '\nEdificio antiguo, tercer piso. Salida de emergencia. ...Toma esa ruta.',
+                remember: 'Recuérdame.'
+            },
+            fr: {
+                title: 'La classe sans diplôme',
+                watched: '\n...Quelqu’un observe cet endroit.',
+                run: '...Fuis.',
+                leave: 'Sors de cette école.',
+                days: 'Cinq jours.',
+                sign: '- Lee Seolhwa',
+                protocol: '\n[AVERTISSEMENT] Sujet #13 - protocole de reconstruction mémorielle en cours',
+                date: 'Traitement prévu : Day 5 23:00',
+                exit: '\nAncien bâtiment, troisième étage. Sortie de secours. ...Prends cette voie.',
+                remember: 'Souviens-toi de moi.'
+            },
+            de: {
+                title: 'Das Klassenzimmer ohne Abschluss',
+                watched: '\n...Jemand beobachtet diesen Ort.',
+                run: '...Lauf.',
+                leave: 'Verlass diese Schule.',
+                days: 'Fünf Tage.',
+                sign: '- Lee Seolhwa',
+                protocol: '\n[WARNUNG] Subjekt #13 - Speicherrekonstruktionsprotokoll läuft',
+                date: 'Geplante Verarbeitung: Day 5 23:00',
+                exit: '\nAltes Gebäude, dritter Stock. Notausgang. ...Nimm diesen Weg.',
+                remember: 'Erinnere dich an mich.'
+            },
+            'pt-BR': {
+                title: 'A Sala de Aula Sem Formatura',
+                watched: '\n...Alguém está observando este lugar.',
+                run: '...Corra.',
+                leave: 'Saia desta escola.',
+                days: 'Cinco dias.',
+                sign: '- Lee Seolhwa',
+                protocol: '\n[AVISO] Sujeito #13 - protocolo de reconstrução de memória em andamento',
+                date: 'Processamento agendado: Day 5 23:00',
+                exit: '\nPrédio antigo, terceiro andar. Saída de emergência. ...Siga por ali.',
+                remember: 'Lembre-se de mim.'
+            }
+        });
         const titleStyle = day >= 4
             ? 'color: #8B0000; font-size: 20px; font-weight: bold;'
             : day >= 3
                 ? 'color: #d4547a; font-size: 20px; font-weight: bold;'
                 : 'color: #ff6b9d; font-size: 20px; font-weight: bold;';
         const messages = [
-            { text: 'The Classroom of No Graduation', style: titleStyle },
+            { text: copy.title, style: titleStyle },
             { text: '© Project Nevergrad', style: dim }
         ];
         if (day >= 2) {
-            messages.push({ text: '\n...Someone is watching this place.', style: dim });
+            messages.push({ text: copy.watched, style: dim });
         }
         if (day >= 3) {
             messages.push({
                 text: '\n' +
                     '██████████████████████████████████████\n' +
                     '█                                    █\n' +
-                    '█   ...Run.                           █\n' +
-                    '█   Get out of this school.           █\n' +
-                    '█   Five days.                        █\n' +
+                    `█   ${copy.run.padEnd(31, ' ')}█\n` +
+                    `█   ${copy.leave.padEnd(31, ' ')}█\n` +
+                    `█   ${copy.days.padEnd(31, ' ')}█\n` +
                     '█                                    █\n' +
-                    '█              - Lee Seolhwa          █\n' +
+                    `█              ${copy.sign.padEnd(20, ' ')}█\n` +
                     '█                                    █\n' +
                     '██████████████████████████████████████',
                 style: ghost
@@ -234,14 +308,14 @@ class MetaHorrorSystem {
         }
         if (day >= 4) {
             messages.push(
-                { text: '\n[WARNING] Subject #13 - memory reconstruction protocol in progress', style: warn },
-                { text: 'Scheduled processing: Day 5 23:00', style: warn }
+                { text: copy.protocol, style: warn },
+                { text: copy.date, style: warn }
             );
         }
         if (day >= 5) {
             messages.push(
-                { text: '\nOld building, third floor. Emergency exit. ...Take that route.', style: ghost },
-                { text: 'Remember me.', style: ghost }
+                { text: copy.exit, style: ghost },
+                { text: copy.remember, style: ghost }
             );
         }
         return messages;
@@ -266,19 +340,101 @@ class MetaHorrorSystem {
                 memo1: 'The subject records are in the admin folder.',
                 memo2: 'But... do you really want to see them?',
                 memo3: 'Knowing this does not mean you can leave.'
+            },
+            ja: {
+                found: '...見つけてくれたんだ。',
+                exit: '旧校舎3階の非常口前で待ってる。',
+                thanks: 'ありがとう。...必ず出て。',
+                memoTitle: '=== イ・ソルファのメモ ===',
+                memo1: '被験者記録は管理者フォルダにある。',
+                memo2: 'でも...本当に見たいの？',
+                memo3: 'これを知っても出られるとは限らない。'
+            },
+            es: {
+                found: '...Me encontraste.',
+                exit: 'Esperaré frente a la salida de emergencia del tercer piso del edificio antiguo.',
+                thanks: 'Gracias. ...Por favor, sal.',
+                memoTitle: '=== Nota de Lee Seolhwa ===',
+                memo1: 'Los registros de sujetos están en la carpeta de administración.',
+                memo2: 'Pero... ¿de verdad quieres verlos?',
+                memo3: 'Saber esto no significa que puedas salir.'
+            },
+            fr: {
+                found: '...Tu m’as trouvée.',
+                exit: 'Je t’attendrai devant la sortie de secours au troisième étage de l’ancien bâtiment.',
+                thanks: 'Merci. ...Sors d’ici, surtout.',
+                memoTitle: '=== Mémo de Lee Seolhwa ===',
+                memo1: 'Les dossiers des sujets sont dans le dossier administrateur.',
+                memo2: 'Mais... veux-tu vraiment les voir ?',
+                memo3: 'Le savoir ne veut pas dire que tu peux partir.'
+            },
+            de: {
+                found: '...Du hast mich gefunden.',
+                exit: 'Ich warte am Notausgang im dritten Stock des alten Gebäudes.',
+                thanks: 'Danke. ...Bitte komm raus.',
+                memoTitle: '=== Lee Seolhwas Notiz ===',
+                memo1: 'Die Subjektakten liegen im Administratorordner.',
+                memo2: 'Aber... willst du sie wirklich sehen?',
+                memo3: 'Das zu wissen bedeutet nicht, dass du gehen kannst.'
+            },
+            'pt-BR': {
+                found: '...Você me encontrou.',
+                exit: 'Vou esperar na saída de emergência do terceiro andar do prédio antigo.',
+                thanks: 'Obrigada. ...Por favor, saia.',
+                memoTitle: '=== Memorando de Lee Seolhwa ===',
+                memo1: 'Os registros dos sujeitos estão na pasta do administrador.',
+                memo2: 'Mas... você quer mesmo ver isso?',
+                memo3: 'Saber disso não significa que você pode sair.'
             }
         });
     }
 
     _getPushMessages() {
-        if (this._lang() === 'ko') return this._pushMessages;
-        return [
-            { title: 'Han Sea', body: 'Where are you going? Come back.' },
-            { title: 'Han Sea', body: "...I'm watching." },
-            { title: 'Han Sea', body: "{name}, why aren't you coming back?" },
-            { title: 'Park Eunsu', body: 'Class is still in session. Where did you go?' },
-            { title: 'Hanul Smart Campus', body: 'Abnormal exit detected. Checking location...' }
-        ];
+        return this._pickLocalized({
+            ko: this._pushMessages,
+            en: [
+                { title: 'Han Sea', body: 'Where are you going? Come back.' },
+                { title: 'Han Sea', body: "...I'm watching." },
+                { title: 'Han Sea', body: "{name}, why aren't you coming back?" },
+                { title: 'Park Eunsu', body: 'Class is still in session. Where did you go?' },
+                { title: 'Hanul Smart Campus', body: 'Abnormal exit detected. Checking location...' }
+            ],
+            ja: [
+                { title: 'ハン・セア', body: 'どこへ行くの？ 戻ってきて。' },
+                { title: 'ハン・セア', body: '...見てるよ。' },
+                { title: 'ハン・セア', body: '{name}、どうして戻ってこないの？' },
+                { title: 'パク・ウンス', body: '授業中ですよ。どこへ行ったの？' },
+                { title: 'ハヌルスマートキャンパス', body: '異常離脱を検知。位置を確認中...' }
+            ],
+            es: [
+                { title: 'Han Sea', body: '¿A dónde vas? Vuelve.' },
+                { title: 'Han Sea', body: '...Te estoy mirando.' },
+                { title: 'Han Sea', body: '{name}, ¿por qué no vuelves?' },
+                { title: 'Park Eunsu', body: 'La clase sigue. ¿A dónde fuiste?' },
+                { title: 'Hanul Smart Campus', body: 'Salida anormal detectada. Verificando ubicación...' }
+            ],
+            fr: [
+                { title: 'Han Sea', body: 'Où vas-tu ? Reviens.' },
+                { title: 'Han Sea', body: '...Je te regarde.' },
+                { title: 'Han Sea', body: '{name}, pourquoi ne reviens-tu pas ?' },
+                { title: 'Park Eunsu', body: 'Le cours continue. Où es-tu parti ?' },
+                { title: 'Hanul Smart Campus', body: 'Sortie anormale détectée. Vérification de la position...' }
+            ],
+            de: [
+                { title: 'Han Sea', body: 'Wohin gehst du? Komm zurück.' },
+                { title: 'Han Sea', body: '...Ich sehe dich.' },
+                { title: 'Han Sea', body: '{name}, warum kommst du nicht zurück?' },
+                { title: 'Park Eunsu', body: 'Der Unterricht läuft noch. Wohin bist du gegangen?' },
+                { title: 'Hanul Smart Campus', body: 'Ungewöhnliches Verlassen erkannt. Standort wird geprüft...' }
+            ],
+            'pt-BR': [
+                { title: 'Han Sea', body: 'Para onde você vai? Volte.' },
+                { title: 'Han Sea', body: '...Estou olhando.' },
+                { title: 'Han Sea', body: '{name}, por que você não volta?' },
+                { title: 'Park Eunsu', body: 'A aula ainda está acontecendo. Para onde você foi?' },
+                { title: 'Hanul Smart Campus', body: 'Saída anormal detectada. Verificando localização...' }
+            ]
+        });
     }
 
     _getScreenshotReactions() {
@@ -294,6 +450,36 @@ class MetaHorrorSystem {
                 mirror_13faces: { text: 'A photo will not help you', blackout: true, blackoutDuration: 1000 },
                 day5_docs: { text: '[EXTERNAL EXPORT PROHIBITED]', blackout: false },
                 complicit_sign: null
+            },
+            ja: {
+                save_slot: { text: '[記録試行を検知] ...誰に見せるつもり？', blackout: true, blackoutDuration: 500 },
+                mirror_13faces: { text: '撮っても無駄だよ', blackout: true, blackoutDuration: 1000 },
+                day5_docs: { text: '[外部持ち出し禁止]', blackout: false },
+                complicit_sign: null
+            },
+            es: {
+                save_slot: { text: '[INTENTO DE REGISTRO DETECTADO] ...¿A quién se lo vas a mostrar?', blackout: true, blackoutDuration: 500 },
+                mirror_13faces: { text: 'Una foto no te ayudará', blackout: true, blackoutDuration: 1000 },
+                day5_docs: { text: '[EXPORTACIÓN EXTERNA PROHIBIDA]', blackout: false },
+                complicit_sign: null
+            },
+            fr: {
+                save_slot: { text: '[TENTATIVE D’ENREGISTREMENT DÉTECTÉE] ...À qui vas-tu montrer ça ?', blackout: true, blackoutDuration: 500 },
+                mirror_13faces: { text: 'Une photo ne servira à rien', blackout: true, blackoutDuration: 1000 },
+                day5_docs: { text: '[EXPORT EXTERNE INTERDIT]', blackout: false },
+                complicit_sign: null
+            },
+            de: {
+                save_slot: { text: '[AUFZEICHNUNGSVERSUCH ERKANNT] ...Wem willst du das zeigen?', blackout: true, blackoutDuration: 500 },
+                mirror_13faces: { text: 'Ein Foto wird dir nicht helfen', blackout: true, blackoutDuration: 1000 },
+                day5_docs: { text: '[EXTERNER EXPORT VERBOTEN]', blackout: false },
+                complicit_sign: null
+            },
+            'pt-BR': {
+                save_slot: { text: '[TENTATIVA DE REGISTRO DETECTADA] ...Para quem você vai mostrar?', blackout: true, blackoutDuration: 500 },
+                mirror_13faces: { text: 'Uma foto não vai ajudar', blackout: true, blackoutDuration: 1000 },
+                day5_docs: { text: '[EXPORTAÇÃO EXTERNA PROIBIDA]', blackout: false },
+                complicit_sign: null
             }
         });
     }
@@ -307,6 +493,26 @@ class MetaHorrorSystem {
             en: {
                 label: '[EXTERNAL EXPORT PROHIBITED]',
                 sub: 'The screen will be restored when focus returns.'
+            },
+            ja: {
+                label: '[外部持ち出し禁止]',
+                sub: 'フォーカスが戻ると画面は復元されます。'
+            },
+            es: {
+                label: '[EXPORTACIÓN EXTERNA PROHIBIDA]',
+                sub: 'La pantalla se restaurará cuando vuelva el foco.'
+            },
+            fr: {
+                label: '[EXPORT EXTERNE INTERDIT]',
+                sub: 'L’écran sera restauré au retour du focus.'
+            },
+            de: {
+                label: '[EXTERNER EXPORT VERBOTEN]',
+                sub: 'Der Bildschirm wird wiederhergestellt, sobald der Fokus zurückkehrt.'
+            },
+            'pt-BR': {
+                label: '[EXPORTAÇÃO EXTERNA PROIBIDA]',
+                sub: 'A tela será restaurada quando o foco voltar.'
             }
         });
     }
@@ -330,6 +536,51 @@ class MetaHorrorSystem {
                 appTitle: 'Hanul Safety App',
                 ngBody: 'Subject #13 exit detected. Tracking location.',
                 day5Body: 'Cycle #13 time limit exceeded. Preparing reinsertion.'
+            },
+            ja: {
+                eunsuTitle: 'ウンス先生',
+                eunsuBody: 'どこへ行ったの？ 授業中ですよ :)',
+                seaTitle: 'ハン・セア',
+                seaBody: '...どうして来ないの？',
+                appTitle: 'ハヌル安全アプリ',
+                ngBody: '被験者 #13 の離脱を検知。位置を追跡中。',
+                day5Body: '第13周期の制限時間超過。再投入準備中。'
+            },
+            es: {
+                eunsuTitle: 'Profesora Eunsu',
+                eunsuBody: '¿A dónde fuiste? La clase sigue :)',
+                seaTitle: 'Han Sea',
+                seaBody: '...¿Por qué no vienes?',
+                appTitle: 'App de Seguridad Hanul',
+                ngBody: 'Salida del sujeto #13 detectada. Rastreando ubicación.',
+                day5Body: 'Límite del ciclo #13 superado. Preparando reinserción.'
+            },
+            fr: {
+                eunsuTitle: 'Mme Eunsu',
+                eunsuBody: 'Où es-tu parti ? Le cours continue :)',
+                seaTitle: 'Han Sea',
+                seaBody: '...Pourquoi tu ne viens pas ?',
+                appTitle: 'App Sécurité Hanul',
+                ngBody: 'Sortie du sujet #13 détectée. Localisation en cours.',
+                day5Body: 'Limite du cycle #13 dépassée. Préparation de la réinsertion.'
+            },
+            de: {
+                eunsuTitle: 'Frau Eunsu',
+                eunsuBody: 'Wohin bist du gegangen? Der Unterricht läuft noch :)',
+                seaTitle: 'Han Sea',
+                seaBody: '...Warum kommst du nicht?',
+                appTitle: 'Hanul Sicherheits-App',
+                ngBody: 'Austritt von Subjekt #13 erkannt. Standortverfolgung läuft.',
+                day5Body: 'Zeitlimit von Zyklus #13 überschritten. Wiedereinsetzung wird vorbereitet.'
+            },
+            'pt-BR': {
+                eunsuTitle: 'Professora Eunsu',
+                eunsuBody: 'Para onde você foi? A aula ainda está acontecendo :)',
+                seaTitle: 'Han Sea',
+                seaBody: '...Por que você não vem?',
+                appTitle: 'App de Segurança Hanul',
+                ngBody: 'Saída do sujeito #13 detectada. Rastreando localização.',
+                day5Body: 'Limite do ciclo #13 excedido. Preparando reinserção.'
             }
         });
 

@@ -317,8 +317,7 @@ class GlitchSystemAdvanced {
     }
 
     _getLang() {
-        const lang = this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko';
-        return String(lang).toLowerCase().startsWith('pt') ? 'pt-BR' : String(lang).slice(0, 2);
+        return this._lang();
     }
 
     _getInteractionCopy(lang) {
@@ -363,6 +362,86 @@ class GlitchSystemAdvanced {
                 cameraFound: 'A camera is hidden under the false bottom.',
                 lockerComplete: 'Turn the camera on'
             },
+            ja: {
+                player: '僕',
+                previous: '前の写真',
+                next: '次の写真',
+                photo: '写真',
+                photoHint: '写真をクリックまたはスワイプしてください。最後まで確認するまでカメラを置けません。',
+                photoDoneHint: 'すべての写真を確認しました。',
+                photoComplete: 'カメラを置く',
+                lockerTitle: 'ユナのロッカー',
+                lockerHint: '不自然な場所をタップして調べてください。',
+                dust: 'ほこりをかぶったロッカー',
+                clean: '拭かれたロッカー',
+                seam: '浮いた床板',
+                camera: '隠しカメラ',
+                dustFound: '隣のロッカーにはまだほこりが残っている。',
+                cleanFound: 'ユナのロッカーだけ最近拭かれた跡がある。',
+                seamFound: '合板の床が爪一枚分ほど浮いている。',
+                cameraFound: '二重底の内側からカメラを取り出した。',
+                lockerComplete: 'カメラを起動する'
+            },
+            es: {
+                player: 'Yo',
+                previous: 'Foto anterior',
+                next: 'Foto siguiente',
+                photo: 'Foto',
+                photoHint: 'Haz clic o desliza las fotos. No puedes bajar la cámara todavía.',
+                photoDoneHint: 'Todas las fotos fueron revisadas.',
+                photoComplete: 'Bajar la cámara',
+                lockerTitle: 'Taquilla de Yuna',
+                lockerHint: 'Toca los puntos sospechosos para investigarlos.',
+                dust: 'Taquilla con polvo',
+                clean: 'Taquilla limpiada',
+                seam: 'Panel del suelo levantado',
+                camera: 'Cámara oculta',
+                dustFound: 'La taquilla de al lado aún tiene polvo.',
+                cleanFound: 'Solo la taquilla de Yuna fue limpiada hace poco.',
+                seamFound: 'El contrachapado del suelo está levantado por el grosor de una uña.',
+                cameraFound: 'Sacaste una cámara del falso fondo.',
+                lockerComplete: 'Encender la cámara'
+            },
+            fr: {
+                player: 'Moi',
+                previous: 'Photo précédente',
+                next: 'Photo suivante',
+                photo: 'Photo',
+                photoHint: 'Cliquez ou faites défiler les photos. Impossible de poser l’appareil avant la fin.',
+                photoDoneHint: 'Toutes les photos ont été vérifiées.',
+                photoComplete: 'Poser l’appareil',
+                lockerTitle: 'Casier de Yuna',
+                lockerHint: 'Touchez les zones suspectes pour les examiner.',
+                dust: 'Casier poussiéreux',
+                clean: 'Casier essuyé',
+                seam: 'Panneau de sol soulevé',
+                camera: 'Caméra cachée',
+                dustFound: 'Le casier voisin est encore couvert de poussière.',
+                cleanFound: 'Seul le casier de Yuna a été essuyé récemment.',
+                seamFound: 'Le contreplaqué du sol est soulevé de l’épaisseur d’un ongle.',
+                cameraFound: 'Une caméra était cachée sous le double fond.',
+                lockerComplete: 'Allumer la caméra'
+            },
+            de: {
+                player: 'Ich',
+                previous: 'Vorheriges Foto',
+                next: 'Nächstes Foto',
+                photo: 'Foto',
+                photoHint: 'Klicke oder wische durch die Fotos. Du kannst die Kamera noch nicht weglegen.',
+                photoDoneHint: 'Alle Fotos wurden überprüft.',
+                photoComplete: 'Kamera weglegen',
+                lockerTitle: 'Yunas Spind',
+                lockerHint: 'Tippe auf verdächtige Stellen, um sie zu untersuchen.',
+                dust: 'Verstaubter Spind',
+                clean: 'Abgewischter Spind',
+                seam: 'Angehobene Bodenplatte',
+                camera: 'Versteckte Kamera',
+                dustFound: 'Auf dem Nachbarspind liegt noch Staub.',
+                cleanFound: 'Nur Yunas Spind wurde kürzlich abgewischt.',
+                seamFound: 'Die Sperrholzplatte ist um eine Fingernagelbreite angehoben.',
+                cameraFound: 'Unter dem falschen Boden war eine Kamera versteckt.',
+                lockerComplete: 'Kamera einschalten'
+            },
             'pt-BR': {
                 player: 'Eu',
                 previous: 'Foto anterior',
@@ -389,8 +468,7 @@ class GlitchSystemAdvanced {
 
     _getPhotoDeckData(deck) {
         const lang = this._getLang();
-        const isKo = lang === 'ko';
-        const names = {
+        const romanizedNames = {
             1: 'Kim Dojin',
             2: 'Lee Junseo',
             3: 'Park Seojin',
@@ -404,40 +482,210 @@ class GlitchSystemAdvanced {
             11: 'Oh Taehyun',
             12: 'Lim Seoyul'
         };
-        const datePlace = (date) => isKo ? `${date} / 교문` : `${date} / School gate`;
-        const photosKo = [
-            { slot: 1, name: '김도진', tag: '04.03 / 교문', note: '짧은 검은 머리. 새 교복.' },
-            { slot: 2, name: '이준서', tag: '04.08 / 교문', note: '안경. 같은 자세.' },
-            { slot: 3, name: '박서진', tag: '04.13 / 교문', note: '갈색 머리. 같은 눈.' },
-            { slot: 4, name: '정하율', tag: '04.18 / 교문', note: '머리색만 다르다.' },
-            { slot: 5, name: '강민혁', tag: '04.23 / 교문', note: '입꼬리의 흉터 위치가 같다.' },
-            { slot: 6, name: '윤재원', tag: '04.28 / 교문', note: '이름표만 바뀌었다.' },
-            { slot: 7, name: '김태호', tag: '05.03 / 교문', note: '피곤한 얼굴. 눈 밑이 꺼져 있다.' },
-            { slot: 8, name: '최시우', tag: '05.08 / 교문', note: '뒷주머니에 접힌 메모.' },
-            { slot: 9, name: '한지호', tag: '05.13 / 교문', note: '카메라를 알아본 표정.' },
-            { slot: 10, name: '송예준', tag: '05.18 / 교문', note: '시선이 CCTV로 향해 있다.' },
-            { slot: 11, name: '오태현', tag: '05.23 / 교문', note: '웃고 있지만 손은 굳어 있다.' },
-            { slot: 12, name: '임서율', tag: '05.28 / 교문', note: '교복 깃의 접힌 자국까지 같다.' },
-            { slot: 13, name: '{name}', tag: '어제 아침 / 교문', note: '현재 관찰 중.', current: true, image: CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png' }
-        ];
-        const photosEn = [
-            { slot: 1, name: names[1], tag: datePlace('04.03'), note: 'Short black hair. New uniform.' },
-            { slot: 2, name: names[2], tag: datePlace('04.08'), note: 'Glasses. Same posture.' },
-            { slot: 3, name: names[3], tag: datePlace('04.13'), note: 'Brown hair. Same eyes.' },
-            { slot: 4, name: names[4], tag: datePlace('04.18'), note: 'Only the hair color is different.' },
-            { slot: 5, name: names[5], tag: datePlace('04.23'), note: 'The scar at the mouth corner is in the same place.' },
-            { slot: 6, name: names[6], tag: datePlace('04.28'), note: 'Only the name tag changed.' },
-            { slot: 7, name: names[7], tag: datePlace('05.03'), note: 'Tired face. Hollow shadows under the eyes.' },
-            { slot: 8, name: names[8], tag: datePlace('05.08'), note: 'Folded note in the back pocket.' },
-            { slot: 9, name: names[9], tag: datePlace('05.13'), note: 'Expression suggests he noticed the camera.' },
-            { slot: 10, name: names[10], tag: datePlace('05.18'), note: 'His gaze is turned toward the CCTV.' },
-            { slot: 11, name: names[11], tag: datePlace('05.23'), note: 'Smiling, but the hands are rigid.' },
-            { slot: 12, name: names[12], tag: datePlace('05.28'), note: 'Even the fold in the uniform collar matches.' },
-            { slot: 13, name: '{name}', tag: 'Yesterday morning / School gate', note: 'Currently under observation.', current: true, image: CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png' }
-        ];
+        const namesByLang = {
+            ko: {
+                1: '김도진',
+                2: '이준서',
+                3: '박서진',
+                4: '정하율',
+                5: '강민혁',
+                6: '윤재원',
+                7: '김태호',
+                8: '최시우',
+                9: '한지호',
+                10: '송예준',
+                11: '오태현',
+                12: '임서율'
+            },
+            en: romanizedNames,
+            ja: {
+                1: 'キム・ドジン',
+                2: 'イ・ジュンソ',
+                3: 'パク・ソジン',
+                4: 'チョン・ハユル',
+                5: 'カン・ミンヒョク',
+                6: 'ユン・ジェウォン',
+                7: 'キム・テホ',
+                8: 'チェ・シウ',
+                9: 'ハン・ジホ',
+                10: 'ソン・イェジュン',
+                11: 'オ・テヒョン',
+                12: 'イム・ソユル'
+            },
+            es: romanizedNames,
+            fr: romanizedNames,
+            de: romanizedNames,
+            'pt-BR': romanizedNames
+        };
+        const copyByLang = {
+            ko: {
+                titleYuna: 'YUNA_CAM / 전학생',
+                titleDefault: '카메라 롤',
+                gate: '교문',
+                currentTag: '어제 아침 / 교문',
+                currentNote: '현재 관찰 중.',
+                notes: [
+                    '짧은 검은 머리. 새 교복.',
+                    '안경. 같은 자세.',
+                    '갈색 머리. 같은 눈.',
+                    '머리색만 다르다.',
+                    '입꼬리의 흉터 위치가 같다.',
+                    '이름표만 바뀌었다.',
+                    '피곤한 얼굴. 눈 밑이 꺼져 있다.',
+                    '뒷주머니에 접힌 메모.',
+                    '카메라를 알아본 표정.',
+                    '시선이 CCTV로 향해 있다.',
+                    '웃고 있지만 손은 굳어 있다.',
+                    '교복 깃의 접힌 자국까지 같다.'
+                ]
+            },
+            en: {
+                titleYuna: 'YUNA_CAM / TRANSFER_STUDENTS',
+                titleDefault: 'CAMERA_ROLL',
+                gate: 'School gate',
+                currentTag: 'Yesterday morning / School gate',
+                currentNote: 'Currently under observation.',
+                notes: [
+                    'Short black hair. New uniform.',
+                    'Glasses. Same posture.',
+                    'Brown hair. Same eyes.',
+                    'Only the hair color is different.',
+                    'The scar at the mouth corner is in the same place.',
+                    'Only the name tag changed.',
+                    'Tired face. Hollow shadows under the eyes.',
+                    'Folded note in the back pocket.',
+                    'Expression suggests he noticed the camera.',
+                    'His gaze is turned toward the CCTV.',
+                    'Smiling, but the hands are rigid.',
+                    'Even the fold in the uniform collar matches.'
+                ]
+            },
+            ja: {
+                titleYuna: 'YUNA_CAM / 転入生',
+                titleDefault: 'カメラロール',
+                gate: '校門',
+                currentTag: '昨日の朝 / 校門',
+                currentNote: '現在観察中。',
+                notes: [
+                    '短い黒髪。新しい制服。',
+                    '眼鏡。同じ姿勢。',
+                    '茶色の髪。同じ目。',
+                    '髪色だけが違う。',
+                    '口元の傷跡の位置が同じ。',
+                    '名札だけが変わっている。',
+                    '疲れた顔。目の下が落ちくぼんでいる。',
+                    '後ろポケットに折りたたまれたメモ。',
+                    'カメラに気づいた表情。',
+                    '視線がCCTVへ向いている。',
+                    '笑っているが手は固まっている。',
+                    '制服の襟の折り目まで同じ。'
+                ]
+            },
+            es: {
+                titleYuna: 'YUNA_CAM / ESTUDIANTES_TRASLADADOS',
+                titleDefault: 'Carrete de cámara',
+                gate: 'Puerta escolar',
+                currentTag: 'Ayer por la mañana / Puerta escolar',
+                currentNote: 'Actualmente bajo observación.',
+                notes: [
+                    'Pelo negro corto. Uniforme nuevo.',
+                    'Gafas. Misma postura.',
+                    'Pelo castaño. Mismos ojos.',
+                    'Solo cambia el color del pelo.',
+                    'La cicatriz en la comisura está en el mismo lugar.',
+                    'Solo cambió la etiqueta del nombre.',
+                    'Rostro cansado. Ojeras hundidas.',
+                    'Nota doblada en el bolsillo trasero.',
+                    'Parece haber notado la cámara.',
+                    'La mirada apunta al CCTV.',
+                    'Sonríe, pero las manos están rígidas.',
+                    'Incluso el pliegue del cuello del uniforme coincide.'
+                ]
+            },
+            fr: {
+                titleYuna: 'YUNA_CAM / ELEVES_TRANSFERES',
+                titleDefault: 'Pellicule',
+                gate: "Portail de l'ecole",
+                currentTag: "Hier matin / Portail de l'ecole",
+                currentNote: 'Actuellement sous observation.',
+                notes: [
+                    'Cheveux noirs courts. Nouvel uniforme.',
+                    'Lunettes. Même posture.',
+                    'Cheveux bruns. Même regard.',
+                    'Seule la couleur des cheveux change.',
+                    'La cicatrice au coin de la bouche est au même endroit.',
+                    "Seule l'etiquette du nom a change.",
+                    'Visage fatigué. Cernes creusés.',
+                    'Note pliée dans la poche arrière.',
+                    'Il semble avoir remarqué la caméra.',
+                    'Son regard se tourne vers la CCTV.',
+                    'Il sourit, mais ses mains sont rigides.',
+                    "Même le pli du col de l'uniforme correspond."
+                ]
+            },
+            de: {
+                titleYuna: 'YUNA_CAM / TRANSFERSCHUELER',
+                titleDefault: 'Kamerarolle',
+                gate: 'Schultor',
+                currentTag: 'Gestern Morgen / Schultor',
+                currentNote: 'Derzeit unter Beobachtung.',
+                notes: [
+                    'Kurzes schwarzes Haar. Neue Uniform.',
+                    'Brille. Gleiche Haltung.',
+                    'Braunes Haar. Gleiche Augen.',
+                    'Nur die Haarfarbe ist anders.',
+                    'Die Narbe am Mundwinkel sitzt an derselben Stelle.',
+                    'Nur das Namensschild wurde geändert.',
+                    'Müdes Gesicht. Eingefallene Schatten unter den Augen.',
+                    'Gefaltete Notiz in der Gesäßtasche.',
+                    'Der Ausdruck deutet an, dass er die Kamera bemerkt hat.',
+                    'Sein Blick ist auf die CCTV gerichtet.',
+                    'Er lächelt, aber die Hände sind starr.',
+                    'Sogar die Falte am Uniformkragen stimmt überein.'
+                ]
+            },
+            'pt-BR': {
+                titleYuna: 'YUNA_CAM / ALUNOS_TRANSFERIDOS',
+                titleDefault: 'Rolo da câmera',
+                gate: 'Portão da escola',
+                currentTag: 'Ontem de manhã / Portão da escola',
+                currentNote: 'Atualmente em observação.',
+                notes: [
+                    'Cabelo preto curto. Uniforme novo.',
+                    'Óculos. Mesma postura.',
+                    'Cabelo castanho. Mesmos olhos.',
+                    'Só a cor do cabelo é diferente.',
+                    'A cicatriz no canto da boca está no mesmo lugar.',
+                    'Só a etiqueta de nome mudou.',
+                    'Rosto cansado. Sombras fundas sob os olhos.',
+                    'Bilhete dobrado no bolso de trás.',
+                    'Expressão de quem percebeu a câmera.',
+                    'O olhar está voltado para a CCTV.',
+                    'Sorrindo, mas com as mãos rígidas.',
+                    'Até a dobra da gola do uniforme coincide.'
+                ]
+            }
+        };
+        const names = namesByLang[lang] || namesByLang.en;
+        const copy = copyByLang[lang] || copyByLang.en;
+        const dates = ['04.03', '04.08', '04.13', '04.18', '04.23', '04.28', '05.03', '05.08', '05.13', '05.18', '05.23', '05.28'];
+        const photos = dates.map((date, index) => ({
+            slot: index + 1,
+            name: names[index + 1],
+            tag: `${date} / ${copy.gate}`,
+            note: copy.notes[index]
+        }));
+        photos.push({
+            slot: 13,
+            name: '{name}',
+            tag: copy.currentTag,
+            note: copy.currentNote,
+            current: true,
+            image: CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png'
+        });
         return {
-            title: deck === 'yuna_13' ? 'YUNA_CAM / TRANSFER_STUDENTS' : 'CAMERA_ROLL',
-            photos: isKo ? photosKo : photosEn
+            title: deck === 'yuna_13' ? copy.titleYuna : copy.titleDefault,
+            photos
         };
     }
 
@@ -985,11 +1233,35 @@ class GlitchSystemAdvanced {
                 this.setLevel('UNSETTLING');
 
                 // 유령 텍스트 연속 표시
-                this.showGhostText(this._pickLocalized({ ko: '...도망쳐', en: '...Run' }), 20, 15, 2500);
+                this.showGhostText(this._pickLocalized({
+                    ko: '...도망쳐',
+                    en: '...Run',
+                    ja: '...逃げて',
+                    es: '...Corre',
+                    fr: '...Fuis',
+                    de: '...Lauf',
+                    'pt-BR': '...Corra'
+                }), 20, 15, 2500);
                 await this._sleep(800);
-                this.showGhostText(this._pickLocalized({ ko: '여기서 나가', en: 'Get out of here' }), 75, 25, 2000);
+                this.showGhostText(this._pickLocalized({
+                    ko: '여기서 나가',
+                    en: 'Get out of here',
+                    ja: 'ここから出て',
+                    es: 'Sal de aquí',
+                    fr: "Sors d'ici",
+                    de: 'Raus hier',
+                    'pt-BR': 'Saia daqui'
+                }), 75, 25, 2000);
                 await this._sleep(1200);
-                this.showGhostText(this._pickLocalized({ ko: '마시지 마', en: "Don't drink it" }), 30, 70, 1800);
+                this.showGhostText(this._pickLocalized({
+                    ko: '마시지 마',
+                    en: "Don't drink it",
+                    ja: '飲まないで',
+                    es: 'No lo bebas',
+                    fr: 'Ne bois pas',
+                    de: 'Trink es nicht',
+                    'pt-BR': 'Não beba'
+                }), 30, 70, 1800);
 
                 // 노이즈 플래시
                 await this._sleep(500);
@@ -1060,15 +1332,30 @@ class GlitchSystemAdvanced {
                 this.showRedVignette();
                 this.showGhostText(this._pickLocalized({
                     ko: '졸업하지 못한 교실',
-                    en: 'The Classroom of No Graduation'
+                    en: 'The Classroom of No Graduation',
+                    ja: '卒業できなかった教室',
+                    es: 'El aula sin graduación',
+                    fr: 'La classe sans diplôme',
+                    de: 'Das Klassenzimmer ohne Abschluss',
+                    'pt-BR': 'A sala sem formatura'
                 }), 50, 20, 4000);
                 this.showGhostText(this._pickLocalized({
                     ko: '도망칠 수 없어',
-                    en: "You can't run"
+                    en: "You can't run",
+                    ja: '逃げられない',
+                    es: 'No puedes huir',
+                    fr: 'Tu ne peux pas fuir',
+                    de: 'Du kannst nicht weglaufen',
+                    'pt-BR': 'Você não pode fugir'
                 }), 30, 50, 3000);
                 this.showGhostText(this._pickLocalized({
                     ko: '{name}, 돌아와',
-                    en: '{name}, come back'
+                    en: '{name}, come back',
+                    ja: '{name}、戻って',
+                    es: '{name}, vuelve',
+                    fr: '{name}, reviens',
+                    de: '{name}, komm zurück',
+                    'pt-BR': '{name}, volte'
                 }), 70, 40, 3500);
 
                 await this.showHeavyGlitch(2000);
@@ -1134,7 +1421,9 @@ class GlitchSystemAdvanced {
     // =========================================================================
 
     _lang() {
-        return this.engine?.i18n?.currentLang || 'ko';
+        const lang = this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko';
+        const normalized = String(lang).toLowerCase();
+        return normalized.startsWith('pt') ? 'pt-BR' : normalized.slice(0, 2);
     }
 
     _pickLocalized(map) {
@@ -1145,17 +1434,47 @@ class GlitchSystemAdvanced {
 
     _localizedRomanceLabel() {
         return this.engine?.i18n?.getStatLabel?.(CONFIG.STAT_MODES.ROMANCE, 'sea')?.primary
-            || this._pickLocalized({ ko: '호감도', en: 'Affinity' });
+            || this._pickLocalized({
+                ko: '호감도',
+                en: 'Affinity',
+                ja: '好感度',
+                es: 'Afinidad',
+                fr: 'Affinité',
+                de: 'Zuneigung',
+                'pt-BR': 'Afinidade'
+            });
     }
 
     _localizedDangerLabel() {
         return this.engine?.i18n?.getStatLabel?.(CONFIG.STAT_MODES.THRILLER, 'eunsu')?.label
-            || this._pickLocalized({ ko: '위험도', en: 'Danger' });
+            || this._pickLocalized({
+                ko: '위험도',
+                en: 'Danger',
+                ja: '危険度',
+                es: 'Peligro',
+                fr: 'Danger',
+                de: 'Gefahr',
+                'pt-BR': 'Perigo'
+            });
     }
 
     _localizedSubjectName(slotId, fallback) {
-        if (this._lang() === 'ko' || fallback === '{name}') return fallback;
-        const names = {
+        if (fallback === '{name}') return fallback;
+        const koreanNames = {
+            1: '김도진',
+            2: '이준서',
+            3: '박서진',
+            4: '정하율',
+            5: '강민혁',
+            6: '윤재원',
+            7: '김태호',
+            8: '최시우',
+            9: '한지호',
+            10: '송예준',
+            11: '오태현',
+            12: '임서율'
+        };
+        const romanizedNames = {
             1: 'Kim Dojin',
             2: 'Lee Junseo',
             3: 'Park Seojin',
@@ -1169,28 +1488,134 @@ class GlitchSystemAdvanced {
             11: 'Oh Taehyun',
             12: 'Lim Seoyul'
         };
+        const namesByLang = {
+            ko: koreanNames,
+            en: romanizedNames,
+            ja: {
+                1: 'キム・ドジン',
+                2: 'イ・ジュンソ',
+                3: 'パク・ソジン',
+                4: 'チョン・ハユル',
+                5: 'カン・ミンヒョク',
+                6: 'ユン・ジェウォン',
+                7: 'キム・テホ',
+                8: 'チェ・シウ',
+                9: 'ハン・ジホ',
+                10: 'ソン・イェジュン',
+                11: 'オ・テヒョン',
+                12: 'イム・ソユル'
+            },
+            es: romanizedNames,
+            fr: romanizedNames,
+            de: romanizedNames,
+            'pt-BR': romanizedNames
+        };
+        const names = namesByLang[this._lang()] || namesByLang.en;
         return names[slotId] || fallback;
     }
 
     _localizedSubjectStatus(slot) {
         if (this._lang() === 'ko') return slot.status;
-        if (slot.statusClass === 'graduated') return 'Graduated';
-        if (slot.statusClass === 'active') return 'Active';
-        if (slot.statusClass === 'corrupted') return '██ADVERSE██ external contact, escape attempt';
-        if (slot.statusClass === 'failed') {
+        const rawStatus = String(slot.status || '');
+        const statusClass = slot.statusClass
+            || (rawStatus.includes('진행') ? 'active'
+                : rawStatus.includes('이상') ? 'corrupted'
+                    : rawStatus.includes('종료') || rawStatus.includes('처리') ? 'completed'
+                        : '');
+        const status = {
+            graduated: {
+                en: 'Graduated',
+                ja: '卒業',
+                es: 'Graduado',
+                fr: 'Diplômé',
+                de: 'Abgeschlossen',
+                'pt-BR': 'Formado'
+            },
+            active: {
+                en: 'Active',
+                ja: '進行中',
+                es: 'En curso',
+                fr: 'En cours',
+                de: 'Aktiv',
+                'pt-BR': 'Em andamento'
+            },
+            corrupted: {
+                en: '██ADVERSE██ external contact, escape attempt',
+                ja: '██異常██ 外部接触、脱出試行',
+                es: '██ADVERSO██ contacto externo, intento de fuga',
+                fr: '██ANOMALIE██ contact externe, tentative de fuite',
+                de: '██ABWEICHUNG██ externer Kontakt, Fluchtversuch',
+                'pt-BR': '██ADVERSO██ contato externo, tentativa de fuga'
+            },
+            failed9: {
+                en: 'Early detection, forced processing',
+                ja: '早期発覚、強制処理',
+                es: 'Detección temprana, procesamiento forzado',
+                fr: 'Détection précoce, traitement forcé',
+                de: 'Frühe Entdeckung, Zwangsverarbeitung',
+                'pt-BR': 'Detecção precoce, processamento forçado'
+            },
+            failed: {
+                en: 'Escape attempt, failed',
+                ja: '脱出試行、失敗',
+                es: 'Intento de fuga, fallido',
+                fr: 'Tentative de fuite, échec',
+                de: 'Fluchtversuch, gescheitert',
+                'pt-BR': 'Tentativa de fuga, falhou'
+            },
+            processed: {
+                en: 'Processed',
+                ja: '処理完了',
+                es: 'Procesado',
+                fr: 'Traité',
+                de: 'Verarbeitet',
+                'pt-BR': 'Processado'
+            }
+        };
+        if (statusClass === 'graduated') return this._pickLocalized(status.graduated);
+        if (statusClass === 'active') return this._pickLocalized(status.active);
+        if (statusClass === 'corrupted') return this._pickLocalized(status.corrupted);
+        if (statusClass === 'failed') {
             return Number(slot.number || slot.id) === 9
-                ? 'Early detection, forced processing'
-                : 'Escape attempt, failed';
+                ? this._pickLocalized(status.failed9)
+                : this._pickLocalized(status.failed);
         }
-        return 'Processed';
+        return this._pickLocalized(status.processed);
     }
 
     _localizedSubjectNote(subject) {
         if (this._lang() === 'ko' || !subject.note) return subject.note || '';
         const note = String(subject.note);
-        if (note.includes('Day 4')) return 'Day 4 deviation attempt';
-        if (note.includes('이설화')) return 'External contact: Lee Seolhwa';
-        if (note.includes('Day 3')) return 'Day 3 early detection';
+        if (note.includes('Day 4')) {
+            return this._pickLocalized({
+                en: 'Day 4 deviation attempt',
+                ja: 'Day 4 逸脱試行',
+                es: 'Intento de desviación del Día 4',
+                fr: 'Tentative de déviation du jour 4',
+                de: 'Abweichungsversuch an Tag 4',
+                'pt-BR': 'Tentativa de desvio no Dia 4'
+            });
+        }
+        if (note.includes('이설화')) {
+            return this._pickLocalized({
+                en: 'External contact: Lee Seolhwa',
+                ja: '外部接触: イ・ソルファ',
+                es: 'Contacto externo: Lee Seolhwa',
+                fr: 'Contact externe : Lee Seolhwa',
+                de: 'Externer Kontakt: Lee Seolhwa',
+                'pt-BR': 'Contato externo: Lee Seolhwa'
+            });
+        }
+        if (note.includes('Day 3')) {
+            return this._pickLocalized({
+                en: 'Day 3 early detection',
+                ja: 'Day 3 早期発覚',
+                es: 'Detección temprana del Día 3',
+                fr: 'Détection précoce du jour 3',
+                de: 'Frühe Entdeckung an Tag 3',
+                'pt-BR': 'Detecção precoce no Dia 3'
+            });
+        }
         return note;
     }
 
@@ -1206,13 +1631,13 @@ class GlitchSystemAdvanced {
 
     _localizedEndingCreditStatus(ending, fallbackSlot) {
         const map = {
-            TRUE: { ko: '졸업 ✓', en: 'Graduated ✓', c: 'graduated' },
-            ESCAPE: { ko: '실종', en: 'Missing', c: 'missing' },
-            RESIST: { ko: '동행', en: 'Escaped together', c: 'escaped' },
-            CAGE: { ko: '잔류', en: 'Contained', c: 'contained' },
-            FORGET: { ko: '처리 완료', en: 'Processed', c: 'terminated' },
-            GHOST: { ko: '소실', en: 'Lost', c: 'missing' },
-            COMPLICIT: { ko: '전환 — 담당자', en: 'Converted - handler', c: 'converted' }
+            TRUE: { ko: '졸업 ✓', en: 'Graduated ✓', ja: '卒業 ✓', es: 'Graduado ✓', fr: 'Diplômé ✓', de: 'Abgeschlossen ✓', 'pt-BR': 'Formado ✓', c: 'graduated' },
+            ESCAPE: { ko: '실종', en: 'Missing', ja: '失踪', es: 'Desaparecido', fr: 'Disparu', de: 'Vermisst', 'pt-BR': 'Desaparecido', c: 'missing' },
+            RESIST: { ko: '동행', en: 'Escaped together', ja: '同行', es: 'Escape conjunto', fr: 'Évadés ensemble', de: 'Gemeinsam entkommen', 'pt-BR': 'Fuga conjunta', c: 'escaped' },
+            CAGE: { ko: '잔류', en: 'Contained', ja: '残留', es: 'Contenido', fr: 'Confiné', de: 'Eingeschlossen', 'pt-BR': 'Contido', c: 'contained' },
+            FORGET: { ko: '처리 완료', en: 'Processed', ja: '処理完了', es: 'Procesado', fr: 'Traité', de: 'Verarbeitet', 'pt-BR': 'Processado', c: 'terminated' },
+            GHOST: { ko: '소실', en: 'Lost', ja: '消失', es: 'Perdido', fr: 'Perdu', de: 'Verloren', 'pt-BR': 'Perdido', c: 'missing' },
+            COMPLICIT: { ko: '전환 - 담당자', en: 'Converted - handler', ja: '転換 - 担当者', es: 'Convertido - responsable', fr: 'Converti - responsable', de: 'Umgewandelt - Betreuer', 'pt-BR': 'Convertido - responsável', c: 'converted' }
         };
         const entry = map[ending];
         if (!entry) return { s: fallbackSlot.status, c: fallbackSlot.statusClass };
@@ -1223,37 +1648,41 @@ class GlitchSystemAdvanced {
         if (slot.number === 7) {
             return this._pickLocalized({
                 ko: '해당 데이터는 손상되었습니다.',
-                en: 'This data is corrupted.'
+                en: 'This data is corrupted.',
+                ja: 'このデータは破損しています。',
+                es: 'Estos datos están dañados.',
+                fr: 'Ces données sont corrompues.',
+                de: 'Diese Daten sind beschädigt.',
+                'pt-BR': 'Estes dados estão corrompidos.'
             });
         }
         if (slot.statusClass === 'active') {
             return this._pickLocalized({
                 ko: '진행 중...',
-                en: 'In progress...'
+                en: 'In progress...',
+                ja: '進行中...',
+                es: 'En curso...',
+                fr: 'En cours...',
+                de: 'In Bearbeitung...',
+                'pt-BR': 'Em andamento...'
             });
         }
         return this._pickLocalized({
             ko: '권한이 없습니다.',
-            en: 'Permission denied.'
+            en: 'Permission denied.',
+            ja: '権限がありません。',
+            es: 'Permiso denegado.',
+            fr: 'Autorisation refusée.',
+            de: 'Zugriff verweigert.',
+            'pt-BR': 'Permissão negada.'
         });
     }
 
     _defaultSubjectFaceNames(playerName) {
-        const ko = [
-            '#1 \uAE40\uB3C4\uC9C4', '#2 \uC774\uC900\uC11C', '#3 \uBC15\uC11C\uC9C4',
-            '#4 \uC815\uD558\uC728', '#5 \uAC15\uBBFC\uD601', '#6 \uC724\uC7AC\uC6D0',
-            '#7 \uAE40\uD0DC\uD638', '#8 \uCD5C\uC2DC\uC6B0', '#9 \uD55C\uC9C0\uD638',
-            '#10 \uC1A1\uC608\uC900', '#11 \uC624\uD0DC\uD604', '#12 \uC784\uC11C\uC728',
-            `#13 ${playerName}`
-        ];
-        const en = [
-            '#1 Kim Dojin', '#2 Lee Junseo', '#3 Park Seojin',
-            '#4 Jung Hayul', '#5 Kang Minhyuk', '#6 Yoon Jaewon',
-            '#7 Kim Taeho', '#8 Choi Siwoo', '#9 Han Jiho',
-            '#10 Song Yejun', '#11 Oh Taehyun', '#12 Lim Seoyul',
-            `#13 ${playerName}`
-        ];
-        return this._lang() === 'ko' ? ko : en;
+        return Array.from({ length: 12 }, (_, index) => {
+            const slotId = index + 1;
+            return `#${slotId} ${this._localizedSubjectName(slotId, '')}`;
+        }).concat(`#13 ${playerName}`);
     }
 
     /**
@@ -1544,21 +1973,71 @@ class GlitchSystemAdvanced {
         const playerName = this.engine?.state?.playerName || '{name}';
 
         const flickerTexts = {
-            FORGET: this._pickLocalized({ ko: '#14 \uD22C\uC785 (Load Subject #14)', en: '#14 Intake (Load Subject #14)' }),
-            ESCAPE: this._pickLocalized({ ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.', en: '...Nothing has changed.' }),
-            GHOST: this._pickLocalized({ ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.', en: '...Nothing has changed.' }),
-            RESIST: this._pickLocalized({ ko: '\uC740\uC218\uB294 \uB5A0\uB0AC\uB2E4. \uC774\uC0AC\uD68C\uB294 \uB0A8\uC558\uB2E4.', en: 'Eunsu left. The board remains.' }),
-            TRUE: this._pickLocalized({ ko: '...\uB2E4 \uB05D\uB0AC\uB294\uB370.', en: '...But it was over.' }),
+            FORGET: this._pickLocalized({
+                ko: '#14 \uD22C\uC785 (Load Subject #14)',
+                en: '#14 Intake (Load Subject #14)',
+                ja: '#14 投入 (Load Subject #14)',
+                es: '#14 Ingreso (Load Subject #14)',
+                fr: '#14 Admission (Load Subject #14)',
+                de: '#14 Aufnahme (Load Subject #14)',
+                'pt-BR': '#14 Inserção (Load Subject #14)'
+            }),
+            ESCAPE: this._pickLocalized({
+                ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
+                en: '...Nothing has changed.',
+                ja: '...何も変わっていない。',
+                es: '...Nada ha cambiado.',
+                fr: "...Rien n'a changé.",
+                de: '...Nichts hat sich geändert.',
+                'pt-BR': '...Nada mudou.'
+            }),
+            GHOST: this._pickLocalized({
+                ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
+                en: '...Nothing has changed.',
+                ja: '...何も変わっていない。',
+                es: '...Nada ha cambiado.',
+                fr: "...Rien n'a changé.",
+                de: '...Nichts hat sich geändert.',
+                'pt-BR': '...Nada mudou.'
+            }),
+            RESIST: this._pickLocalized({
+                ko: '\uC740\uC218\uB294 \uB5A0\uB0AC\uB2E4. \uC774\uC0AC\uD68C\uB294 \uB0A8\uC558\uB2E4.',
+                en: 'Eunsu left. The board remains.',
+                ja: 'ウンスは去った。理事会は残った。',
+                es: 'Eunsu se fue. La junta permanece.',
+                fr: 'Eunsu est partie. Le conseil reste.',
+                de: 'Eunsu ist gegangen. Der Vorstand bleibt.',
+                'pt-BR': 'Eunsu foi embora. O conselho permanece.'
+            }),
+            TRUE: this._pickLocalized({
+                ko: '...\uB2E4 \uB05D\uB0AC\uB294\uB370.',
+                en: '...But it was over.',
+                ja: '...でも、終わったはずなのに。',
+                es: '...Pero ya había terminado.',
+                fr: "...Mais c'était terminé.",
+                de: '...Aber es war vorbei.',
+                'pt-BR': '...Mas já tinha acabado.'
+            }),
             COMPLICIT: this._pickLocalized({
                 ko: `#14 \uD22C\uC785 \uC2B9\uC778 \u2014 \uB2F4\uB2F9: ${playerName}`,
-                en: `#14 Intake approved - handler: ${playerName}`
+                en: `#14 Intake approved - handler: ${playerName}`,
+                ja: `#14 投入承認 - 担当: ${playerName}`,
+                es: `#14 Ingreso aprobado - responsable: ${playerName}`,
+                fr: `#14 Admission approuvée - responsable : ${playerName}`,
+                de: `#14 Aufnahme genehmigt - Betreuer: ${playerName}`,
+                'pt-BR': `#14 Inserção aprovada - responsável: ${playerName}`
             })
         };
 
         // TRUE END 추가 깜빡임 — 본편 감정선 이후의 아주 짧은 잔상
         const trueEndSecondFlicker = this._pickLocalized({
             ko: '\uAE30\uB85D\uC774 \uC544\uC9C1 \uB2EB\uD788\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4.',
-            en: 'The record has not closed yet.'
+            en: 'The record has not closed yet.',
+            ja: '記録はまだ閉じていません。',
+            es: 'El registro aún no se ha cerrado.',
+            fr: "Le dossier n'est pas encore clos.",
+            de: 'Der Eintrag ist noch nicht geschlossen.',
+            'pt-BR': 'O registro ainda não foi encerrado.'
         });
 
         const flickerText = flickerTexts[lastEnding];
@@ -1711,15 +2190,30 @@ class GlitchSystemAdvanced {
         const ghostTexts = {
             'day1_choco_choice': this._pickLocalized({
                 ko: '...물어봤자 같은 대답이야.',
-                en: '...You already know the answer.'
+                en: '...You already know the answer.',
+                ja: '...答えはもう知っている。',
+                es: '...Ya sabes la respuesta.',
+                fr: '...Tu connais déjà la réponse.',
+                de: '...Du kennst die Antwort schon.',
+                'pt-BR': '...Você já sabe a resposta.'
             }),
             'day3_after_riin_choice': this._pickLocalized({
                 ko: '너 이거 맛 알잖아.',
-                en: 'You know what this tastes like.'
+                en: 'You know what this tastes like.',
+                ja: 'この味、知ってるでしょ。',
+                es: 'Sabes a qué sabe esto.',
+                fr: 'Tu sais quel goût ça a.',
+                de: 'Du kennst diesen Geschmack.',
+                'pt-BR': 'Você sabe que gosto isso tem.'
             }),
             'day5_morning_proposal_timer': this._pickLocalized({
                 ko: '또?',
-                en: 'Again?'
+                en: 'Again?',
+                ja: 'また?',
+                es: '¿Otra vez?',
+                fr: 'Encore ?',
+                de: 'Schon wieder?',
+                'pt-BR': 'De novo?'
             })
         };
 
@@ -1755,9 +2249,33 @@ class GlitchSystemAdvanced {
 
         // 씬별 깜빡임 단어 매핑 (SCENARIO.md 5497-5500, 실제 씬 ID)
         const flashWords = {
-            'day1_eunsu_1': this._pickLocalized({ ko: '또', en: 'Again' }),
-            'day1_eunsu_2': this._pickLocalized({ ko: '또', en: 'Again' }),
-            'day1_choco_1': this._pickLocalized({ ko: '이번에도', en: 'This time too' })
+            'day1_eunsu_1': this._pickLocalized({
+                ko: '또',
+                en: 'Again',
+                ja: 'また',
+                es: 'Otra vez',
+                fr: 'Encore',
+                de: 'Wieder',
+                'pt-BR': 'De novo'
+            }),
+            'day1_eunsu_2': this._pickLocalized({
+                ko: '또',
+                en: 'Again',
+                ja: 'また',
+                es: 'Otra vez',
+                fr: 'Encore',
+                de: 'Wieder',
+                'pt-BR': 'De novo'
+            }),
+            'day1_choco_1': this._pickLocalized({
+                ko: '이번에도',
+                en: 'This time too',
+                ja: '今回も',
+                es: 'Esta vez también',
+                fr: 'Cette fois aussi',
+                de: 'Auch diesmal',
+                'pt-BR': 'Desta vez também'
+            })
         };
 
         const word = flashWords[sceneId];
@@ -2075,7 +2593,12 @@ class GlitchSystemAdvanced {
         finalEl.className = 'mirror-final-text';
         finalEl.textContent = finalText || this._pickLocalized({
             ko: '\uB098\uB294 13\uBC88\uC9F8 \uAECD\uB370\uAE30\uB2E4.',
-            en: 'I am the 13th shell.'
+            en: 'I am the 13th shell.',
+            ja: '私は13番目の殻だ。',
+            es: 'Soy la decimotercera cáscara.',
+            fr: 'Je suis la treizième coquille.',
+            de: 'Ich bin die dreizehnte Hülle.',
+            'pt-BR': 'Eu sou a décima terceira casca.'
         });
         overlay.appendChild(finalEl);
 
@@ -2106,19 +2629,39 @@ class GlitchSystemAdvanced {
         return {
             'day1_gate_1': this._pickLocalized({
                 ko: '...이 길을 아는 것 같다. 왜지? 처음 오는 학교인데. ......피곤해서 그런 거겠지.',
-                en: '...I feel like I know this path. Why? It is my first time at this school. ...I must be tired.'
+                en: '...I feel like I know this path. Why? It is my first time at this school. ...I must be tired.',
+                ja: '...この道を知っている気がする。なぜ? 初めて来る学校なのに。...疲れているだけだろう。',
+                es: '...Siento que conozco este camino. ¿Por qué? Es mi primera vez en esta escuela. ...Debo estar cansado.',
+                fr: "...J'ai l'impression de connaître ce chemin. Pourquoi ? C'est ma première fois dans cette école. ...Je dois être fatigué.",
+                de: '...Ich habe das Gefühl, diesen Weg zu kennen. Warum? Ich bin zum ersten Mal an dieser Schule. ...Ich muss müde sein.',
+                'pt-BR': '...Sinto que conheço este caminho. Por quê? É minha primeira vez nesta escola. ...Devo estar cansado.'
             }),
             'day1_hallway_1': this._pickLocalized({
                 ko: '...이 웃음. 어딘가에서 봤다. ...아닌가.',
-                en: '...That smile. I have seen it somewhere. ...Or maybe not.'
+                en: '...That smile. I have seen it somewhere. ...Or maybe not.',
+                ja: '...あの笑顔。どこかで見たことがある。...違うかもしれない。',
+                es: '...Esa sonrisa. La he visto en algún lugar. ...O tal vez no.',
+                fr: "...Ce sourire. Je l'ai déjà vu quelque part. ...Ou peut-être pas.",
+                de: '...Dieses Lächeln. Ich habe es irgendwo schon gesehen. ...Oder vielleicht nicht.',
+                'pt-BR': '...Aquele sorriso. Já vi em algum lugar. ...Ou talvez não.'
             }),
             'day2_morning_gate_1': this._pickLocalized({
                 ko: '...세아의 동작이 어쩐지 익숙하다. 기분 탓이겠지.',
-                en: "...Sea's movement feels strangely familiar. It must be my imagination."
+                en: "...Sea's movement feels strangely familiar. It must be my imagination.",
+                ja: '...セアの動きが妙に見覚えある。気のせいだろう。',
+                es: '...El movimiento de Sea se siente extrañamente familiar. Debe ser mi imaginación.',
+                fr: "...Le geste de Sea me semble étrangement familier. C'est sûrement mon imagination.",
+                de: '...Seas Bewegung kommt mir seltsam vertraut vor. Das bilde ich mir sicher nur ein.',
+                'pt-BR': '...O movimento da Sea parece estranhamente familiar. Deve ser coisa da minha cabeça.'
             }),
             'day3_after_riin_drink': this._pickLocalized({
                 ko: '...이 맛. 낯설지 않다. 마셔본 적도 없는데.',
-                en: '...This taste is not unfamiliar, even though I have never drunk it before.'
+                en: '...This taste is not unfamiliar, even though I have never drunk it before.',
+                ja: '...この味。知らない味じゃない。飲んだこともないのに。',
+                es: '...Este sabor no me resulta desconocido, aunque nunca lo había bebido.',
+                fr: "...Ce goût ne m'est pas inconnu, même si je ne l'ai jamais bu.",
+                de: '...Dieser Geschmack ist mir nicht fremd, obwohl ich es noch nie getrunken habe.',
+                'pt-BR': '...Este gosto não é estranho, mesmo eu nunca tendo bebido isto antes.'
             })
         };
     }
@@ -2178,7 +2721,12 @@ class GlitchSystemAdvanced {
             ghost.className = 'sign-ghost';
             ghost.textContent = this._pickLocalized({
                 ko: '\uB450 \uBC88\uC9F8\uC57C.',
-                en: 'It is the second time.'
+                en: 'It is the second time.',
+                ja: '二度目だ。',
+                es: 'Es la segunda vez.',
+                fr: "C'est la deuxième fois.",
+                de: 'Es ist das zweite Mal.',
+                'pt-BR': 'É a segunda vez.'
             });
             signArea.appendChild(ghost);
 
@@ -2519,19 +3067,73 @@ class GlitchSystemAdvanced {
         const copy = this._pickLocalized({
             ko: {
                 title: "NEVERGRAD - \ud53c\ud5d8\uc790 \uad00\ub9ac \uc2dc\uc2a4\ud15c",
+                id: "ID",
                 name: "\uc774\ub984",
                 status: "\uc0c1\ud0dc",
                 note: "\ube44\uace0",
                 tracking: "\uc704\uce58 \ucd94\uc801 \uae30\ub85d",
-                monitoring: "\uc2e4\uc2dc\uac04 \ubaa8\ub2c8\ud130\ub9c1"
+                monitoring: "\uc2e4\uc2dc\uac04 \ubaa8\ub2c8\ud130\ub9c1",
+                live: "LIVE"
             },
             en: {
                 title: "NEVERGRAD - Subject Management System",
+                id: "ID",
                 name: "Name",
                 status: "Status",
                 note: "Notes",
                 tracking: "Location tracking log",
-                monitoring: "Real-time monitoring"
+                monitoring: "Real-time monitoring",
+                live: "LIVE"
+            },
+            ja: {
+                title: "NEVERGRAD - 被験者管理システム",
+                id: "ID",
+                name: "名前",
+                status: "状態",
+                note: "備考",
+                tracking: "位置追跡ログ",
+                monitoring: "リアルタイム監視",
+                live: "LIVE"
+            },
+            es: {
+                title: "NEVERGRAD - Sistema de gestión de sujetos",
+                id: "ID",
+                name: "Nombre",
+                status: "Estado",
+                note: "Notas",
+                tracking: "Registro de seguimiento de ubicación",
+                monitoring: "Monitoreo en tiempo real",
+                live: "EN VIVO"
+            },
+            fr: {
+                title: "NEVERGRAD - Système de gestion des sujets",
+                id: "ID",
+                name: "Nom",
+                status: "Statut",
+                note: "Notes",
+                tracking: "Journal de suivi de position",
+                monitoring: "Surveillance en temps réel",
+                live: "DIRECT"
+            },
+            de: {
+                title: "NEVERGRAD - Subjektverwaltungssystem",
+                id: "ID",
+                name: "Name",
+                status: "Status",
+                note: "Notizen",
+                tracking: "Standortverfolgungsprotokoll",
+                monitoring: "Echtzeitüberwachung",
+                live: "LIVE"
+            },
+            'pt-BR': {
+                title: "NEVERGRAD - Sistema de gerenciamento de sujeitos",
+                id: "ID",
+                name: "Nome",
+                status: "Status",
+                note: "Notas",
+                tracking: "Registro de rastreamento de localização",
+                monitoring: "Monitoramento em tempo real",
+                live: "AO VIVO"
             }
         });
         panel.innerHTML = `
@@ -2540,7 +3142,7 @@ class GlitchSystemAdvanced {
                 <span class="admin-panel-version">v4.7</span>
             </div>
             <div class="admin-panel-columns">
-                <span>ID</span>
+                <span>${copy.id}</span>
                 <span>${copy.name}</span>
                 <span>${copy.status}</span>
                 <span>${copy.note}</span>
@@ -2549,7 +3151,7 @@ class GlitchSystemAdvanced {
             <div class="admin-panel-footer">
                 <span class="admin-panel-tab">▸ ${copy.tracking}</span>
                 <span class="admin-panel-tab">▸ ${copy.monitoring}</span>
-                <span class="admin-panel-live">● LIVE</span>
+                <span class="admin-panel-live">● ${copy.live}</span>
             </div>
         `;
 
@@ -2558,10 +3160,16 @@ class GlitchSystemAdvanced {
             const localized = this._localizedSubjectRow(sub);
             const row = document.createElement('div');
             row.className = 'admin-panel-row';
-            const isActive = sub.status === '진행 중' || sub.status === '이상 반응' ||
-                localized.status === 'Active' || localized.status.includes('ADVERSE');
+            const rawStatus = String(sub.status || '');
+            const isWarning = sub.statusClass === 'corrupted'
+                || rawStatus.includes('이상')
+                || ['ADVERSE', 'ADVERSO', 'ANOMALIE', 'ABWEICHUNG', '異常'].some(token => localized.status.includes(token));
+            const isActive = sub.statusClass === 'active'
+                || rawStatus.includes('진행')
+                || localized.status === this._pickLocalized({ en: 'Active', ja: '進行中', es: 'En curso', fr: 'En cours', de: 'Aktiv', 'pt-BR': 'Em andamento' })
+                || isWarning;
             if (isActive) row.classList.add('admin-row-active');
-            if (sub.status === '이상 반응' || localized.status.includes('ADVERSE')) row.classList.add('admin-row-warning');
+            if (isWarning) row.classList.add('admin-row-warning');
 
             const name = (localized.name === '{name}')
                 ? playerName

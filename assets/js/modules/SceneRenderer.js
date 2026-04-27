@@ -19,24 +19,81 @@ class SceneRenderer {
 
         // 레거시 호환 (GlitchSystem.silenceDrop 등에서 참조)
         this.bgmAudio = null;
+        this._backgroundRequestId = 0;
     }
 
-    setBackground(src) {
-        if (!this.bgLayer) return;
+    _getAssetPath(src) {
+        if (!src) return '';
+        const normalized = String(src).replace(/^\.\//, '');
+        if (/^(?:https?:|data:|blob:|\/)/.test(normalized) || normalized.startsWith('../')) {
+            return normalized;
+        }
+        return (window.__NEVERGRAD_LANG__ ? '../' : '') + normalized;
+    }
 
-        // CSS 변수(--bg-next)는 style.css 기준으로 URL이 해석되므로 절대 경로 사용
-        const absoluteSrc = new URL(src, document.baseURI).href;
+    _getAssetUrl(src) {
+        return new URL(this._getAssetPath(src), document.baseURI).href;
+    }
+
+    _getBackgroundCandidates(src) {
+        if (!src) return [];
+
+        const raw = String(src);
+        const match = raw.match(/^([^?#]+)([?#].*)?$/);
+        const pathPart = match ? match[1] : raw;
+        const suffix = match?.[2] || '';
+
+        if (!/^(?:\.\.\/)?assets\/images\/background\/.+\.png$/i.test(pathPart)) {
+            return [raw];
+        }
+
+        return [
+            `${pathPart.replace(/\.png$/i, '.webp')}${suffix}`,
+            raw
+        ];
+    }
+
+    _loadImage(src) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.onload = () => resolve(src);
+            img.onerror = reject;
+            img.src = this._getAssetUrl(src);
+        });
+    }
+
+    _applyBackground(src) {
+        if (!this.bgLayer || !src) return;
+        const absoluteSrc = this._getAssetUrl(src);
         const newBg = `url('${absoluteSrc}')`;
         const currentBg = this.bgLayer.style.backgroundImage;
 
-        // 첫 배경이거나 같은 배경이면 즉시 적용
         if (!currentBg || currentBg === 'none' || currentBg === newBg) {
             this.bgLayer.style.backgroundImage = newBg;
             return;
         }
 
-        // 즉시 교체
         this.bgLayer.style.backgroundImage = newBg;
+    }
+
+    setBackground(src) {
+        if (!this.bgLayer || !src) return;
+
+        const requestId = ++this._backgroundRequestId;
+        const candidates = this._getBackgroundCandidates(src);
+        const applyIfCurrent = (resolvedSrc) => {
+            if (requestId !== this._backgroundRequestId) return;
+            this._applyBackground(resolvedSrc);
+        };
+
+        if (candidates.length < 2) {
+            applyIfCurrent(candidates[0]);
+            return;
+        }
+
+        this._loadImage(candidates[0])
+            .then(applyIfCurrent)
+            .catch(() => applyIfCurrent(candidates[1]));
     }
 
     clearOverlays() {

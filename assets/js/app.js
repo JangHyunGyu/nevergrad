@@ -93,6 +93,41 @@ function resolveNevergradAssetUrl(path) {
     return new URL(getNevergradAssetPath(path), document.baseURI).href;
 }
 
+function getPreferredBackgroundPath(path) {
+    if (!path) return path;
+
+    const raw = String(path);
+    const match = raw.match(/^([^?#]+)([?#].*)?$/);
+    const pathPart = match ? match[1] : raw;
+    const suffix = match?.[2] || '';
+
+    if (!/^(?:\.\.\/)?assets\/images\/background\/.+\.png$/i.test(pathPart)) {
+        return raw;
+    }
+
+    return `${pathPart.replace(/\.png$/i, '.webp')}${suffix}`;
+}
+
+function loadNevergradImage(path) {
+    const preferred = getPreferredBackgroundPath(path);
+    const fallback = String(path || '');
+
+    return new Promise((resolve, reject) => {
+        const load = (candidate, onFail) => {
+            const img = new Image();
+            img.onload = () => resolve(candidate);
+            img.onerror = onFail;
+            img.src = resolveNevergradAssetUrl(candidate);
+        };
+
+        if (preferred && preferred !== fallback) {
+            load(preferred, () => load(fallback, reject));
+        } else {
+            load(fallback, reject);
+        }
+    });
+}
+
 function clampNumber(value, min, max) {
     return Math.min(Math.max(value, min), max);
 }
@@ -267,10 +302,7 @@ function preloadGameImages(onProgress) {
         };
 
         paths.forEach((src) => {
-            const img = new Image();
-            img.onload = settle;
-            img.onerror = settle; // 실패해도 진행
-            img.src = src;
+            loadNevergradImage(src).then(settle).catch(settle);
         });
     });
 }
@@ -279,9 +311,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 타이틀 배경 이미지 로드 체크 — 이미지 없으면 CSS 그라디언트 폴백
     const titleBgLayer = document.querySelector('.title-bg-layer');
     if (titleBgLayer) {
-        const img = new Image();
-        img.src = resolveNevergradAssetUrl('assets/images/background/title_bg.png');
-        img.onerror = () => titleBgLayer.classList.add('no-image');
+        loadNevergradImage('assets/images/background/title_bg.png')
+            .then((src) => {
+                titleBgLayer.style.backgroundImage = `url('${resolveNevergradAssetUrl(src)}')`;
+                titleBgLayer.classList.remove('no-image');
+            })
+            .catch(() => titleBgLayer.classList.add('no-image'));
     }
 
     initializeTitleLineup();
@@ -291,10 +326,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.querySelectorAll('#title-stage img[data-src]').forEach(el => {
         const src = el.dataset.src;
         if (!src) return;
-        const probe = new Image();
-        probe.onload = () => { el.src = src; };
-        probe.onerror = () => { el.style.display = 'none'; };
-        probe.src = resolveNevergradAssetUrl(src);
+        loadNevergradImage(src)
+            .then((resolvedSrc) => { el.src = resolveNevergradAssetUrl(resolvedSrc); })
+            .catch(() => { el.style.display = 'none'; });
     });
 
     const game = new GameEngine();

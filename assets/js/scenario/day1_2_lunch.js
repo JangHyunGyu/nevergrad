@@ -19,7 +19,7 @@ Object.assign(SCENARIO[1], {
         character: null,
         choices: [
             { next: "day1_lunch_sea_1", setFlags: ["lunch_with_sea"], stats: { sea: { affinity: 4 } } },
-            { next: "day1_lunch_yuna_1", setFlags: ["met_yuna"], stats: { yuna: { affinity: 4 } } },
+            { next: "day1_lunch_yuna_1", setFlags: ["met_yuna", "yuna_route_started"], stats: { yuna: { affinity: 4 } } },
             { next: "day1_lunch_riin_1", setFlags: ["met_riin"], stats: { riin: { affinity: 4 } } },
             { next: "day1_lunch_alone_1", stats: { sea: { affinity: -1 }, eunsu: { affinity: -1 } } }
         ]

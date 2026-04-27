@@ -117,7 +117,10 @@ Object.assign(SCENARIO[3], {
     // ══════════════════════════════════════
     "day3_night_bleed": {
         character: null,
-        next: "day3_night_bleed_2"
+        branches: [
+            { condition: "yuna_memory_card", next: "day3_night_bleed_2" }
+        ],
+        next: "day3_night_bleed_no_yuna_1"
     },
     "day3_night_bleed_2": {
         character: null,
@@ -128,6 +131,18 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_bleed_4"
     },
     "day3_night_bleed_4": {
+        character: null,
+        next: "day3_night_bleed_5"
+    },
+    "day3_night_bleed_no_yuna_1": {
+        character: null,
+        next: "day3_night_bleed_no_yuna_2"
+    },
+    "day3_night_bleed_no_yuna_2": {
+        character: null,
+        next: "day3_night_bleed_no_yuna_3"
+    },
+    "day3_night_bleed_no_yuna_3": {
         character: null,
         next: "day3_night_bleed_5"
     },

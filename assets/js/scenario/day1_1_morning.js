@@ -761,6 +761,19 @@ Object.assign(SCENARIO[1], {
     "day1_pe_4": {
         character: null,
         sfx: "sfx_camera_shutter.mp3",
+        next: "day1_pe_yuna_1"
+    },
+    "day1_pe_yuna_1": {
+        character: "yuna_shy",
+        next: "day1_pe_yuna_2"
+    },
+    "day1_pe_yuna_2": {
+        character: "yuna_shy",
+        setFlags: ["met_yuna"],
+        next: "day1_pe_yuna_3"
+    },
+    "day1_pe_yuna_3": {
+        character: "yuna_shy",
         next: "day1_pe_wall_1"
     },
 

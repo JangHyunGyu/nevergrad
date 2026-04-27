@@ -26,7 +26,7 @@ Object.assign(SCENARIO[1], {
         character: null,
         choices: [
             { next: "day1_after_sea_1", stats: { sea: { affinity: 4 } } },
-            { next: "day1_after_yuna_1", condition: "met_yuna", stats: { yuna: { affinity: 4 } } },
+            { next: "day1_after_yuna_1", condition: "met_yuna", setFlags: ["yuna_route_started"], stats: { yuna: { affinity: 4 } } },
             { next: "day1_after_riin_1", condition: "met_riin", stats: { riin: { affinity: 4 } } },
             { next: "day1_after_eunsu_1", stats: { eunsu: { affinity: 4 } } },
             { next: "day1_after_home_1", stats: { sea: { affinity: -2 }, eunsu: { affinity: -1 } } }

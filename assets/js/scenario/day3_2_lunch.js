@@ -14,7 +14,8 @@ Object.assign(SCENARIO[3], {
         bgm: "daily_tense.mp3",
         character: null,
         branches: [
-            { condition: "met_yuna", next: "day3_lunch_note_yuna" }
+            { condition: "yuna_route_started", next: "day3_lunch_note_yuna" },
+            { condition: "met_yuna", next: "day3_lunch_note_yuna_brief" }
         ],
         next: "day3_lunch_note_unknown"
     },
@@ -24,6 +25,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_note_yuna_2"
     },
     "day3_lunch_note_yuna_2": {
+        character: null,
+        next: "day3_lunch_choice"
+    },
+    "day3_lunch_note_yuna_brief": {
+        character: null,
+        next: "day3_lunch_note_yuna_brief_2"
+    },
+    "day3_lunch_note_yuna_brief_2": {
         character: null,
         next: "day3_lunch_choice"
     },
@@ -52,7 +61,7 @@ Object.assign(SCENARIO[3], {
     "day3_lunch_choice": {
         character: null,
         choices: [
-            { next: "day3_lunch_rooftop_1", condition: "met_yuna", stats: { yuna: { affinity: 8 }, seolhwa: { affinity: 3 } } },
+            { next: "day3_lunch_rooftop_1", condition: "met_yuna", setFlags: ["yuna_route_started"], stats: { yuna: { affinity: 8 }, seolhwa: { affinity: 3 } } },
             { next: "day3_lunch_sea_1", stats: { sea: { affinity: 5 } } },
             { next: "day3_lunch_riin_1", stats: { riin: { affinity: 5 } } },
             { next: "day3_lunch_alone_1", stats: { seolhwa: { affinity: 5 }, sea: { affinity: -3 } } }

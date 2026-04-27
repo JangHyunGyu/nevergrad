@@ -159,6 +159,14 @@ Object.assign(SCENARIO[4], {
         background: "nurse_office",
         bgm: "tension_low.mp3",
         character: null,
+        branches: [
+            { condition: "met_riin", next: "day4_lunch_nurse_2" }
+        ],
+        next: "day4_lunch_nurse_first"
+    },
+    "day4_lunch_nurse_first": {
+        character: null,
+        setFlags: ["met_riin"],
         next: "day4_lunch_nurse_2"
     },
     "day4_lunch_nurse_2": {

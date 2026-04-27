@@ -156,9 +156,24 @@ Object.assign(SCENARIO[2], {
         charOpacity: 0.35,
         night: true,
         messengerDelay: 1200,
-        next: "day2_night_sea_9"
+        next: "day2_night_sea_promise_branch"
+    },
+    "day2_night_sea_promise_branch": {
+        character: null,
+        night: true,
+        branches: [
+            { condition: "day2_lunch_with_sea", next: "day2_night_sea_9" }
+        ],
+        next: "day2_night_sea_9_alt"
     },
     "day2_night_sea_9": {
+        character: "sea_normal",
+        charOpacity: 0.35,
+        night: true,
+        messengerDelay: 1200,
+        next: "day2_night_sea_10"
+    },
+    "day2_night_sea_9_alt": {
         character: "sea_normal",
         charOpacity: 0.35,
         night: true,

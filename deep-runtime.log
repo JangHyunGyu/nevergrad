@@ -1,0 +1,44 @@
+
+========== 다중 자동 플레이 20회 (max 1500 스텝) ==========
+[STUCK_DEEP] day2_night_ft_messenger: {"isTyping":false,"unskippable":false,"keys":["character","night","type","freeTalkMode","freeTalkChar","freeTalkNext"]} @ play1
+  play 1/20: 방문 330, 최대 day2, ending=NONE
+  play 2/20: 방문 377, 최대 day2, ending=NONE
+  play 3/20: 방문 348, 최대 day2, ending=NONE
+  play 4/20: 방문 347, 최대 day2, ending=NONE
+  play 5/20: 방문 330, 최대 day2, ending=NONE
+  play 6/20: 방문 358, 최대 day2, ending=NONE
+  play 7/20: 방문 340, 최대 day2, ending=NONE
+  play 8/20: 방문 335, 최대 day2, ending=NONE
+  play 9/20: 방문 355, 최대 day2, ending=NONE
+  play 10/20: 방문 325, 최대 day2, ending=NONE
+  play 11/20: 방문 336, 최대 day2, ending=NONE
+  play 12/20: 방문 372, 최대 day2, ending=NONE
+  play 13/20: 방문 338, 최대 day2, ending=NONE
+  play 14/20: 방문 343, 최대 day2, ending=NONE
+  play 15/20: 방문 345, 최대 day2, ending=NONE
+  play 16/20: 방문 338, 최대 day2, ending=NONE
+  play 17/20: 방문 362, 최대 day2, ending=NONE
+  play 18/20: 방문 348, 최대 day2, ending=NONE
+  play 19/20: 방문 359, 최대 day2, ending=NONE
+  play 20/20: 방문 336, 최대 day2, ending=NONE
+
+========== 6개 엔딩 후속 흐름 ==========
+  true: 36 씬 진행
+  escape: 16 씬 진행
+  complicit: 11 씬 진행
+  forget: 24 씬 진행
+  ghost: 23 씬 진행
+  resist: 29 씬 진행
+
+========== 도달 일차 분포 ==========
+  day2: 20회
+
+========== 엔딩 도달 분포 ==========
+  NONE: 20회
+
+총 방문 unique 씬: 520
+
+========== ISSUE SUMMARY ==========
+  STUCK_DEEP: 20회 (unique 1)
+
+Unique issues: 1

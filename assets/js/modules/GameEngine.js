@@ -96,8 +96,6 @@ class GameEngine {
         this.settings = new SettingsManager(this.audio);
         this.settings.apply();
 
-        // 합성 SFX이므로 preload 불필요 — affinity_up / affinity_down은 initSynthSFX에 등록됨
-
         // 언어 감지 (URL 파라미터 또는 브라우저 언어)
         const urlLang = new URLSearchParams(location.search).get('lang');
         const requestedLang = window.__NEVERGRAD_LANG__ || urlLang || navigator.language || 'ko';

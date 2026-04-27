@@ -573,6 +573,7 @@ Object.assign(SCENARIO[4], {
             overlayFadeDuration: 3000,
             silence: true
         },
+        autoAdvanceDelay: 9500,
         next: "day4_night_mirror_collapse"
     },
 

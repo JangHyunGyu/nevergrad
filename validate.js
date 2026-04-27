@@ -165,6 +165,13 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
                 errors.push(`[SCENE_REF] ${sceneId} affinityBranches[${i}].next="${b.next}" not found`);
             }
         });
+        const mins = scene.affinityBranches
+            .map(b => typeof b.minAffinity === 'number' ? b.minAffinity : null)
+            .filter(v => v !== null);
+        const statMin = typeof CONFIG.STAT_MIN === 'number' ? CONFIG.STAT_MIN : -100;
+        if (mins.length && Math.min(...mins) > statMin) {
+            errors.push(`[AFFINITY_BRANCH] ${sceneId}: lowest minAffinity=${Math.min(...mins)} leaves stats below ${Math.min(...mins)} without a route`);
+        }
     }
     // timeoutNext
     if (scene.timeoutNext && !sceneExists(scene.timeoutNext)) {

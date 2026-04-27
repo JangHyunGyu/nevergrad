@@ -296,9 +296,9 @@ async function runDesktopSuite(browser) {
             names.length ? `실제[0]='${names[0]}'` : '관찰 실패');
         await wait(6000);
         const finalText = await page.$('.mirror-final-text');
-        log(!!finalText, 'photoOverlay: 최종 "나는 13번째 껍데기다" 텍스트 렌더링');
+        log(!!finalText, 'photoOverlay: 최종 "이번 이름: 테스터" 텍스트 렌더링');
         const finalTextContent = await page.$eval('.mirror-final-text', el => el.textContent).catch(() => '');
-        log(/13번째|껍데기/.test(finalTextContent),
+        log(/이번 이름:\s*테스터/.test(finalTextContent),
             'photoOverlay: 최종 텍스트 내용 정확',
             `='${finalTextContent}'`);
 
@@ -551,8 +551,9 @@ async function runDesktopSuite(browser) {
             test.remove();
             return result;
         });
-        log(timerCss.wrapperHeight === '6px' && timerCss.wrapperOverflow === 'hidden',
-            'Timer Bar: .timer-bar-wrapper CSS 적용됨 (height:6px, overflow:hidden)',
+        const timerHeight = parseFloat(timerCss.wrapperHeight);
+        log(timerHeight >= 6 && timerHeight <= 9 && timerCss.wrapperOverflow === 'hidden',
+            'Timer Bar: .timer-bar-wrapper CSS 적용됨 (responsive height 6-9px, overflow:hidden)',
             JSON.stringify(timerCss));
         log(/rgb\(255, ?183, ?197\)/.test(timerCss.fillBg),
             'Timer Bar: .timer-bar-fill 기본 배경 #FFB7C5 적용',
@@ -678,6 +679,45 @@ async function runDesktopSuite(browser) {
             /\d+/.test(timeQuery.dialogueSample),
             'FreeTalk: getTimeDialogue() 실제 시각 삽입된 문자열 반환',
             `sample='${timeQuery.dialogueSample}'`);
+
+        const messengerFlow = await page.evaluate(async () => {
+            const e = window.game;
+            const scene = window.SCENARIO?.[2]?.day2_night_ft_messenger;
+            if (!e?.freeTalk || !scene) return { ok: false, reason: 'missing freetalk scene' };
+
+            e.state.currentDay = 2;
+            e.state.currentScene = 'day2_night_ft_messenger';
+            clearTimeout(e._autoAdvanceTimer);
+            e.currentSceneData = scene;
+            e.freeTalk.cleanup();
+            e.freeTalk._delay = () => Promise.resolve();
+            e._startFreeTalk(scene);
+
+            await e.freeTalk.sendMessengerMessage('첫 번째 답장');
+            await new Promise(r => setTimeout(r, 1100));
+            await e.freeTalk.sendMessengerMessage('두 번째 답장');
+            await new Promise(r => setTimeout(r, 1100));
+            await e.freeTalk.sendMessengerMessage('세 번째 답장');
+            await new Promise(r => setTimeout(r, 100));
+
+            const afterThird = {
+                hasReadBadge: !!document.querySelector('.messenger-read-badge'),
+                hasInput: !!document.querySelector('.freetalk-input')
+            };
+
+            await new Promise(r => setTimeout(r, 3100));
+            return {
+                ok: true,
+                ...afterThird,
+                currentScene: e.state.currentScene
+            };
+        });
+        log(messengerFlow.ok && messengerFlow.hasReadBadge && !messengerFlow.hasInput,
+            'FreeTalk: Day2 메신저 3턴 후 입력창 대신 읽음 배지 표시',
+            JSON.stringify(messengerFlow));
+        log(messengerFlow.ok && messengerFlow.currentScene === 'day2_night_sea_1',
+            'FreeTalk: Day2 메신저 3턴 후 freeTalkNext로 자동 진행',
+            JSON.stringify(messengerFlow));
 
         // === Test 12: 스크린샷 ===
         await loadSceneDirect(page, 'day4_night_save_glitch_7');

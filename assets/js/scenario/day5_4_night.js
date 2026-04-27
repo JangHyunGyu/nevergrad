@@ -29,7 +29,7 @@ Object.assign(SCENARIO[5], {
         affinityChar: "eunsu",
         affinityBranches: [
             { minAffinity: 50, next: "day5_night_set_high_affinity" },
-            { minAffinity: 0, next: "day5_night_sea_affinity_check" }
+            { minAffinity: -100, next: "day5_night_sea_affinity_check" }
         ]
     },
     "day5_night_set_high_affinity": {
@@ -42,7 +42,7 @@ Object.assign(SCENARIO[5], {
         affinityChar: "sea",
         affinityBranches: [
             { minAffinity: 50, next: "day5_night_set_high_sea_affinity" },
-            { minAffinity: 0, next: "day5_night_complicit_eval" }
+            { minAffinity: -100, next: "day5_night_complicit_eval" }
         ]
     },
     "day5_night_set_high_sea_affinity": {
@@ -983,7 +983,7 @@ Object.assign(SCENARIO[5], {
         affinityChar: "sea",
         affinityBranches: [
             { minAffinity: 50, next: "day5_ending_forget_sea_1" },
-            { minAffinity: 0, next: "day5_ending_forget_title" }
+            { minAffinity: -100, next: "day5_ending_forget_title" }
         ]
     },
     "day5_ending_forget_sea_1": {

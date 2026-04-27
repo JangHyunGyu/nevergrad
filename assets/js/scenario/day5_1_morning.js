@@ -282,7 +282,7 @@ Object.assign(SCENARIO[5], {
         unskippable: true,
         choices: [
             { next: "day5_morning_escape_end", setFlags: ["route_escape"], stats: { yuna: { affinity: -5 }, eunsu: { affinity: -5 } } },
-            { next: "day5_morning_true_1", setFlags: ["route_true", "has_evidence"], stats: { yuna: { affinity: 10 }, seolhwa: { affinity: 8 }, eunsu: { affinity: 8 } } }
+            { next: "day5_morning_true_1", setFlags: ["has_evidence"], stats: { yuna: { affinity: 10 }, seolhwa: { affinity: 8 }, eunsu: { affinity: 8 } } }
         ]
     },
 

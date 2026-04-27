@@ -189,6 +189,18 @@ class FreeTalkSystem {
         this.turnCount++;
         this.isWaiting = false;
 
+        if (this.turnCount >= this.maxTurns) {
+            this._showReadBadge();
+            setTimeout(() => {
+                const nextScene = this.nextSceneId;
+                this.cleanup();
+                if (nextScene && this.engine._loadScene) {
+                    this.engine._loadScene(nextScene);
+                }
+            }, 3000);
+            return;
+        }
+
         setTimeout(() => {
             this._showInputUI('메시지를 입력하세요...');
         }, 1000);

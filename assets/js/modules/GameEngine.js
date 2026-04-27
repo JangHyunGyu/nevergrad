@@ -1766,12 +1766,7 @@ class GameEngine {
     }
 
     _showMirrorReveal(stage) {
-        const label = `MIRROR #${stage}`;
-        if (this.glitchAdvanced?.showGhostText) {
-            this.glitchAdvanced.showGhostText(label, 50, 36, 900);
-        } else {
-            this.glitch.ghostText?.(label, 50, 36, 900);
-        }
+        this.glitchAdvanced?.showMirrorPlayerReveal?.(stage);
         this.glitch.screenNoise?.(120);
     }
 

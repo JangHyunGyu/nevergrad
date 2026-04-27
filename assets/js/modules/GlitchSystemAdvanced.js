@@ -2028,8 +2028,13 @@ class GlitchSystemAdvanced {
             engine._clickLocked = true;
         }
 
+        this.showMirrorPlayerReveal(0);
         this.showMirrorSwipe(null, () => {
+            this.showMirrorPlayerReveal(1);
             if (engine) engine._clickLocked = false;
+        }, {
+            threshold: opts.threshold,
+            verticalSpan: opts.verticalSpan
         });
     }
 
@@ -2232,6 +2237,7 @@ class GlitchSystemAdvanced {
 
     _teardownMirrorWipe() {
         document.querySelector('.mirror-swipe-container')?.remove();
+        document.getElementById('mirror-player-reflection')?.remove();
     }
 
     // =========================================================================

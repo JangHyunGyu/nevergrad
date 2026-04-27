@@ -388,23 +388,56 @@ class GlitchSystemAdvanced {
     }
 
     _getPhotoDeckData(deck) {
+        const lang = this._getLang();
+        const isKo = lang === 'ko';
+        const names = {
+            1: 'Kim Dojin',
+            2: 'Lee Junseo',
+            3: 'Park Seojin',
+            4: 'Jung Hayul',
+            5: 'Kang Minhyuk',
+            6: 'Yoon Jaewon',
+            7: 'Kim Taeho',
+            8: 'Choi Siwoo',
+            9: 'Han Jiho',
+            10: 'Song Yejun',
+            11: 'Oh Taehyun',
+            12: 'Lim Seoyul'
+        };
+        const datePlace = (date) => isKo ? `${date} / 교문` : `${date} / School gate`;
+        const photosKo = [
+            { slot: 1, name: '김도진', tag: '04.03 / 교문', note: '짧은 검은 머리. 새 교복.' },
+            { slot: 2, name: '이준서', tag: '04.08 / 교문', note: '안경. 같은 자세.' },
+            { slot: 3, name: '박서진', tag: '04.13 / 교문', note: '갈색 머리. 같은 눈.' },
+            { slot: 4, name: '정하율', tag: '04.18 / 교문', note: '머리색만 다르다.' },
+            { slot: 5, name: '강민혁', tag: '04.23 / 교문', note: '입꼬리의 흉터 위치가 같다.' },
+            { slot: 6, name: '윤재원', tag: '04.28 / 교문', note: '이름표만 바뀌었다.' },
+            { slot: 7, name: '김태호', tag: '05.03 / 교문', note: '피곤한 얼굴. 눈 밑이 꺼져 있다.' },
+            { slot: 8, name: '최시우', tag: '05.08 / 교문', note: '뒷주머니에 접힌 메모.' },
+            { slot: 9, name: '한지호', tag: '05.13 / 교문', note: '카메라를 알아본 표정.' },
+            { slot: 10, name: '송예준', tag: '05.18 / 교문', note: '시선이 CCTV로 향해 있다.' },
+            { slot: 11, name: '오태현', tag: '05.23 / 교문', note: '웃고 있지만 손은 굳어 있다.' },
+            { slot: 12, name: '임서율', tag: '05.28 / 교문', note: '교복 깃의 접힌 자국까지 같다.' },
+            { slot: 13, name: '{name}', tag: '어제 아침 / 교문', note: '현재 관찰 중.', current: true, image: CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png' }
+        ];
+        const photosEn = [
+            { slot: 1, name: names[1], tag: datePlace('04.03'), note: 'Short black hair. New uniform.' },
+            { slot: 2, name: names[2], tag: datePlace('04.08'), note: 'Glasses. Same posture.' },
+            { slot: 3, name: names[3], tag: datePlace('04.13'), note: 'Brown hair. Same eyes.' },
+            { slot: 4, name: names[4], tag: datePlace('04.18'), note: 'Only the hair color is different.' },
+            { slot: 5, name: names[5], tag: datePlace('04.23'), note: 'The scar at the mouth corner is in the same place.' },
+            { slot: 6, name: names[6], tag: datePlace('04.28'), note: 'Only the name tag changed.' },
+            { slot: 7, name: names[7], tag: datePlace('05.03'), note: 'Tired face. Hollow shadows under the eyes.' },
+            { slot: 8, name: names[8], tag: datePlace('05.08'), note: 'Folded note in the back pocket.' },
+            { slot: 9, name: names[9], tag: datePlace('05.13'), note: 'Expression suggests he noticed the camera.' },
+            { slot: 10, name: names[10], tag: datePlace('05.18'), note: 'His gaze is turned toward the CCTV.' },
+            { slot: 11, name: names[11], tag: datePlace('05.23'), note: 'Smiling, but the hands are rigid.' },
+            { slot: 12, name: names[12], tag: datePlace('05.28'), note: 'Even the fold in the uniform collar matches.' },
+            { slot: 13, name: '{name}', tag: 'Yesterday morning / School gate', note: 'Currently under observation.', current: true, image: CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png' }
+        ];
         return {
             title: deck === 'yuna_13' ? 'YUNA_CAM / TRANSFER_STUDENTS' : 'CAMERA_ROLL',
-            photos: [
-                { slot: 1, name: '김도진', tag: '04.03 / 교문', note: '짧은 검은 머리. 새 교복.' },
-                { slot: 2, name: '이준서', tag: '04.08 / 교문', note: '안경. 같은 자세.' },
-                { slot: 3, name: '박서진', tag: '04.13 / 교문', note: '갈색 머리. 같은 눈.' },
-                { slot: 4, name: '정하율', tag: '04.18 / 교문', note: '머리색만 다르다.' },
-                { slot: 5, name: '강민혁', tag: '04.23 / 교문', note: '입꼬리의 흉터 위치가 같다.' },
-                { slot: 6, name: '윤재원', tag: '04.28 / 교문', note: '이름표만 바뀌었다.' },
-                { slot: 7, name: '김태호', tag: '05.03 / 교문', note: '피곤한 얼굴. 눈 밑이 꺼져 있다.' },
-                { slot: 8, name: '최시우', tag: '05.08 / 교문', note: '뒷주머니에 접힌 메모.' },
-                { slot: 9, name: '한지호', tag: '05.13 / 교문', note: '카메라를 알아본 표정.' },
-                { slot: 10, name: '송예준', tag: '05.18 / 교문', note: '시선이 CCTV로 향해 있다.' },
-                { slot: 11, name: '오태현', tag: '05.23 / 교문', note: '웃고 있지만 손은 굳어 있다.' },
-                { slot: 12, name: '임서율', tag: '05.28 / 교문', note: '교복 깃의 접힌 자국까지 같다.' },
-                { slot: 13, name: '{name}', tag: '어제 아침 / 교문', note: '현재 관찰 중.', current: true, image: CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png' }
-            ]
+            photos: isKo ? photosKo : photosEn
         };
     }
 
@@ -911,7 +944,7 @@ class GlitchSystemAdvanced {
                 const statLabels = document.querySelectorAll('.stat-label, [data-stat-label]');
                 const randomLabel = statLabels[Math.floor(Math.random() * statLabels.length)];
                 if (randomLabel) {
-                    this.flickerStat(randomLabel, '위험도', 150);
+                    this.flickerStat(randomLabel, this._localizedDangerLabel(), 150);
                 }
 
                 // BGM 미세 변조
@@ -952,11 +985,11 @@ class GlitchSystemAdvanced {
                 this.setLevel('UNSETTLING');
 
                 // 유령 텍스트 연속 표시
-                this.showGhostText('...도망쳐', 20, 15, 2500);
+                this.showGhostText(this._pickLocalized({ ko: '...도망쳐', en: '...Run' }), 20, 15, 2500);
                 await this._sleep(800);
-                this.showGhostText('여기서 나가', 75, 25, 2000);
+                this.showGhostText(this._pickLocalized({ ko: '여기서 나가', en: 'Get out of here' }), 75, 25, 2000);
                 await this._sleep(1200);
-                this.showGhostText('마시지 마', 30, 70, 1800);
+                this.showGhostText(this._pickLocalized({ ko: '마시지 마', en: "Don't drink it" }), 30, 70, 1800);
 
                 // 노이즈 플래시
                 await this._sleep(500);
@@ -1025,9 +1058,18 @@ class GlitchSystemAdvanced {
 
                 // 동시 다발 효과
                 this.showRedVignette();
-                this.showGhostText('졸업하지 못한 교실', 50, 20, 4000);
-                this.showGhostText('도망칠 수 없어', 30, 50, 3000);
-                this.showGhostText('{name}, 돌아와', 70, 40, 3500);
+                this.showGhostText(this._pickLocalized({
+                    ko: '졸업하지 못한 교실',
+                    en: 'The Classroom of No Graduation'
+                }), 50, 20, 4000);
+                this.showGhostText(this._pickLocalized({
+                    ko: '도망칠 수 없어',
+                    en: "You can't run"
+                }), 30, 50, 3000);
+                this.showGhostText(this._pickLocalized({
+                    ko: '{name}, 돌아와',
+                    en: '{name}, come back'
+                }), 70, 40, 3500);
 
                 await this.showHeavyGlitch(2000);
 
@@ -1091,6 +1133,129 @@ class GlitchSystemAdvanced {
     // 세이브 슬롯 글리치 UI (Day 4 밤 연출)
     // =========================================================================
 
+    _lang() {
+        return this.engine?.i18n?.currentLang || 'ko';
+    }
+
+    _pickLocalized(map) {
+        if (!map || typeof map !== 'object' || Array.isArray(map)) return map;
+        const lang = this._lang();
+        return map[lang] || map.en || map.ko || '';
+    }
+
+    _localizedRomanceLabel() {
+        return this.engine?.i18n?.getStatLabel?.(CONFIG.STAT_MODES.ROMANCE, 'sea')?.primary
+            || this._pickLocalized({ ko: '호감도', en: 'Affinity' });
+    }
+
+    _localizedDangerLabel() {
+        return this.engine?.i18n?.getStatLabel?.(CONFIG.STAT_MODES.THRILLER, 'eunsu')?.label
+            || this._pickLocalized({ ko: '위험도', en: 'Danger' });
+    }
+
+    _localizedSubjectName(slotId, fallback) {
+        if (this._lang() === 'ko' || fallback === '{name}') return fallback;
+        const names = {
+            1: 'Kim Dojin',
+            2: 'Lee Junseo',
+            3: 'Park Seojin',
+            4: 'Jung Hayul',
+            5: 'Kang Minhyuk',
+            6: 'Yoon Jaewon',
+            7: 'Kim Taeho',
+            8: 'Choi Siwoo',
+            9: 'Han Jiho',
+            10: 'Song Yejun',
+            11: 'Oh Taehyun',
+            12: 'Lim Seoyul'
+        };
+        return names[slotId] || fallback;
+    }
+
+    _localizedSubjectStatus(slot) {
+        if (this._lang() === 'ko') return slot.status;
+        if (slot.statusClass === 'graduated') return 'Graduated';
+        if (slot.statusClass === 'active') return 'Active';
+        if (slot.statusClass === 'corrupted') return '██ADVERSE██ external contact, escape attempt';
+        if (slot.statusClass === 'failed') {
+            return Number(slot.number || slot.id) === 9
+                ? 'Early detection, forced processing'
+                : 'Escape attempt, failed';
+        }
+        return 'Processed';
+    }
+
+    _localizedSubjectNote(subject) {
+        if (this._lang() === 'ko' || !subject.note) return subject.note || '';
+        const note = String(subject.note);
+        if (note.includes('Day 4')) return 'Day 4 deviation attempt';
+        if (note.includes('이설화')) return 'External contact: Lee Seolhwa';
+        if (note.includes('Day 3')) return 'Day 3 early detection';
+        return note;
+    }
+
+    _localizedSubjectRow(subject) {
+        const slotId = subject.number ?? subject.id ?? subject.slot;
+        return {
+            ...subject,
+            name: this._localizedSubjectName(slotId, subject.name),
+            status: this._localizedSubjectStatus(subject),
+            note: this._localizedSubjectNote(subject)
+        };
+    }
+
+    _localizedEndingCreditStatus(ending, fallbackSlot) {
+        const map = {
+            TRUE: { ko: '졸업 ✓', en: 'Graduated ✓', c: 'graduated' },
+            ESCAPE: { ko: '실종', en: 'Missing', c: 'missing' },
+            RESIST: { ko: '동행', en: 'Escaped together', c: 'escaped' },
+            CAGE: { ko: '잔류', en: 'Contained', c: 'contained' },
+            FORGET: { ko: '처리 완료', en: 'Processed', c: 'terminated' },
+            GHOST: { ko: '소실', en: 'Lost', c: 'missing' },
+            COMPLICIT: { ko: '전환 — 담당자', en: 'Converted - handler', c: 'converted' }
+        };
+        const entry = map[ending];
+        if (!entry) return { s: fallbackSlot.status, c: fallbackSlot.statusClass };
+        return { s: this._pickLocalized(entry), c: entry.c };
+    }
+
+    _localizedSlotDeniedMessage(slot) {
+        if (slot.number === 7) {
+            return this._pickLocalized({
+                ko: '해당 데이터는 손상되었습니다.',
+                en: 'This data is corrupted.'
+            });
+        }
+        if (slot.statusClass === 'active') {
+            return this._pickLocalized({
+                ko: '진행 중...',
+                en: 'In progress...'
+            });
+        }
+        return this._pickLocalized({
+            ko: '권한이 없습니다.',
+            en: 'Permission denied.'
+        });
+    }
+
+    _defaultSubjectFaceNames(playerName) {
+        const ko = [
+            '#1 \uAE40\uB3C4\uC9C4', '#2 \uC774\uC900\uC11C', '#3 \uBC15\uC11C\uC9C4',
+            '#4 \uC815\uD558\uC728', '#5 \uAC15\uBBFC\uD601', '#6 \uC724\uC7AC\uC6D0',
+            '#7 \uAE40\uD0DC\uD638', '#8 \uCD5C\uC2DC\uC6B0', '#9 \uD55C\uC9C0\uD638',
+            '#10 \uC1A1\uC608\uC900', '#11 \uC624\uD0DC\uD604', '#12 \uC784\uC11C\uC728',
+            `#13 ${playerName}`
+        ];
+        const en = [
+            '#1 Kim Dojin', '#2 Lee Junseo', '#3 Park Seojin',
+            '#4 Jung Hayul', '#5 Kang Minhyuk', '#6 Yoon Jaewon',
+            '#7 Kim Taeho', '#8 Choi Siwoo', '#9 Han Jiho',
+            '#10 Song Yejun', '#11 Oh Taehyun', '#12 Lim Seoyul',
+            `#13 ${playerName}`
+        ];
+        return this._lang() === 'ko' ? ko : en;
+    }
+
     /**
      * Day 4 밤: 세이브 파일 강제 오픈 연출
      * 핸드폰 화면이 갑자기 켜지며 13개 슬롯이 드러남
@@ -1105,7 +1270,13 @@ class GlitchSystemAdvanced {
         if (!overlay || !list) return;
 
         // 슬롯 데이터 생성
-        const slots = saveManager.getSubjectSlots(playerName);
+        const slots = saveManager.getSubjectSlots(playerName).map(slot => this._localizedSubjectRow(slot));
+        if (slots[12]?.ngPlusFlash && this._lang() !== 'ko') {
+            slots[12].ngPlusFlash = {
+                ...slots[12].ngPlusFlash,
+                status: this._localizedSubjectStatus(slots[12].ngPlusFlash)
+            };
+        }
 
         // 기존 내용 클리어
         list.innerHTML = '';
@@ -1213,7 +1384,7 @@ class GlitchSystemAdvanced {
         const list = document.getElementById('save-slot-list');
         if (!overlay || !list) return;
 
-        const slots = saveManager.getSubjectSlots(playerName);
+        const slots = saveManager.getSubjectSlots(playerName).map(slot => this._localizedSubjectRow(slot));
 
         list.innerHTML = '';
         overlay.classList.remove('hidden');
@@ -1227,18 +1398,11 @@ class GlitchSystemAdvanced {
 
             let status, statusClass;
             if (ending === 'TRUE') {
-                status = '졸업 ✓';
-                statusClass = 'graduated';
+                const m = this._localizedEndingCreditStatus('TRUE', slot);
+                status = m.s;
+                statusClass = m.c;
             } else if (i === 12) {
-                const endingMap = {
-                    ESCAPE: { s: '실종', c: 'missing' },
-                    RESIST: { s: '동행', c: 'escaped' },
-                    CAGE: { s: '잔류', c: 'contained' },
-                    FORGET: { s: '처리 완료', c: 'terminated' },
-                    GHOST: { s: '소실', c: 'missing' },
-                    COMPLICIT: { s: '전환 — 담당자', c: 'converted' }
-                };
-                const m = endingMap[ending] || { s: slot.status, c: slot.statusClass };
+                const m = this._localizedEndingCreditStatus(ending, slot);
                 status = m.s;
                 statusClass = m.c;
             } else {
@@ -1290,12 +1454,7 @@ class GlitchSystemAdvanced {
         setTimeout(() => item.classList.remove('load-denied'), 400);
 
         // 거절 메시지
-        let msg = '권한이 없습니다.';
-        if (slot.number === 7) {
-            msg = '해당 데이터는 손상되었습니다.';
-        } else if (slot.statusClass === 'active') {
-            msg = '진행 중...';
-        }
+        const msg = this._localizedSlotDeniedMessage(slot);
 
         const msgEl = document.createElement('span');
         msgEl.className = 'slot-denied-msg';
@@ -1365,7 +1524,7 @@ class GlitchSystemAdvanced {
                 de: '(die Toten k\u00f6nnen nicht \u00fcberschrieben werden)',
                 'pt-BR': '(os mortos não podem ser sobrescritos)'
             };
-            sub.textContent = loadSubTexts[lang] || loadSubTexts.ko;
+            sub.textContent = loadSubTexts[lang] || loadSubTexts.en;
         }
 
         // 3. [새 게임] 버튼 엔딩별 깜빡임
@@ -1385,16 +1544,22 @@ class GlitchSystemAdvanced {
         const playerName = this.engine?.state?.playerName || '{name}';
 
         const flickerTexts = {
-            FORGET: '#14 \uD22C\uC785 (Load Subject #14)',
-            ESCAPE: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
-            GHOST: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
-            RESIST: '\uC740\uC218\uB294 \uB5A0\uB0AC\uB2E4. \uC774\uC0AC\uD68C\uB294 \uB0A8\uC558\uB2E4.',
-            TRUE: '...\uB2E4 \uB05D\uB0AC\uB294\uB370.',
-            COMPLICIT: `#14 \uD22C\uC785 \uC2B9\uC778 \u2014 \uB2F4\uB2F9: ${playerName}`
+            FORGET: this._pickLocalized({ ko: '#14 \uD22C\uC785 (Load Subject #14)', en: '#14 Intake (Load Subject #14)' }),
+            ESCAPE: this._pickLocalized({ ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.', en: '...Nothing has changed.' }),
+            GHOST: this._pickLocalized({ ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.', en: '...Nothing has changed.' }),
+            RESIST: this._pickLocalized({ ko: '\uC740\uC218\uB294 \uB5A0\uB0AC\uB2E4. \uC774\uC0AC\uD68C\uB294 \uB0A8\uC558\uB2E4.', en: 'Eunsu left. The board remains.' }),
+            TRUE: this._pickLocalized({ ko: '...\uB2E4 \uB05D\uB0AC\uB294\uB370.', en: '...But it was over.' }),
+            COMPLICIT: this._pickLocalized({
+                ko: `#14 \uD22C\uC785 \uC2B9\uC778 \u2014 \uB2F4\uB2F9: ${playerName}`,
+                en: `#14 Intake approved - handler: ${playerName}`
+            })
         };
 
         // TRUE END 추가 깜빡임 — 본편 감정선 이후의 아주 짧은 잔상
-        const trueEndSecondFlicker = '\uAE30\uB85D\uC774 \uC544\uC9C1 \uB2EB\uD788\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4.';
+        const trueEndSecondFlicker = this._pickLocalized({
+            ko: '\uAE30\uB85D\uC774 \uC544\uC9C1 \uB2EB\uD788\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4.',
+            en: 'The record has not closed yet.'
+        });
 
         const flickerText = flickerTexts[lastEnding];
         if (!flickerText) return; // CAGE: no flicker
@@ -1544,9 +1709,18 @@ class GlitchSystemAdvanced {
         // 특정 씬에서 고스트 텍스트 (SCENARIO.md 5485-5488, 전체 게임 3~5회 제한)
         // 실제 시나리오 씬 ID로 매핑
         const ghostTexts = {
-            'day1_choco_choice': '...물어봤자 같은 대답이야.',
-            'day3_after_riin_choice': '너 이거 맛 알잖아.',
-            'day5_morning_proposal_timer': '또?'
+            'day1_choco_choice': this._pickLocalized({
+                ko: '...물어봤자 같은 대답이야.',
+                en: '...You already know the answer.'
+            }),
+            'day3_after_riin_choice': this._pickLocalized({
+                ko: '너 이거 맛 알잖아.',
+                en: 'You know what this tastes like.'
+            }),
+            'day5_morning_proposal_timer': this._pickLocalized({
+                ko: '또?',
+                en: 'Again?'
+            })
         };
 
         const ghostText = ghostTexts[sceneId];
@@ -1581,9 +1755,9 @@ class GlitchSystemAdvanced {
 
         // 씬별 깜빡임 단어 매핑 (SCENARIO.md 5497-5500, 실제 씬 ID)
         const flashWords = {
-            'day1_eunsu_1': '또',
-            'day1_eunsu_2': '또',
-            'day1_choco_1': '이번에도'
+            'day1_eunsu_1': this._pickLocalized({ ko: '또', en: 'Again' }),
+            'day1_eunsu_2': this._pickLocalized({ ko: '또', en: 'Again' }),
+            'day1_choco_1': this._pickLocalized({ ko: '이번에도', en: 'This time too' })
         };
 
         const word = flashWords[sceneId];
@@ -1716,7 +1890,7 @@ class GlitchSystemAdvanced {
                 de: '\u2191 Nach unten wischen',
                 'pt-BR': '\u2191 Deslize para baixo'
             };
-            hint.textContent = hintTexts[lang] || hintTexts.ko;
+            hint.textContent = hintTexts[lang] || hintTexts.en;
             container.appendChild(hint);
 
             document.body.appendChild(container);
@@ -1875,13 +2049,7 @@ class GlitchSystemAdvanced {
         document.body.appendChild(overlay);
 
         // 기본 이름 목록 (이미지가 없으면 텍스트로 대체)
-        const names = faceNames || [
-            '#1 \uAE40\uB3C4\uC9C4', '#2 \uC774\uC900\uC11C', '#3 \uBC15\uC11C\uC9C4',
-            '#4 \uC815\uD558\uC728', '#5 \uAC15\uBBFC\uD601', '#6 \uC724\uC7AC\uC6D0',
-            '#7 \uAE40\uD0DC\uD638', '#8 \uCD5C\uC2DC\uC6B0', '#9 \uD55C\uC9C0\uD638',
-            '#10 \uC1A1\uC608\uC900', '#11 \uC624\uD0DC\uD604', '#12 \uC784\uC11C\uC728',
-            `#13 ${playerName}`
-        ];
+        const names = faceNames || this._defaultSubjectFaceNames(playerName);
 
         // 진동 동기화 (모바일)
         const deviceGimmick = this.engine?.deviceGimmick;
@@ -1905,7 +2073,10 @@ class GlitchSystemAdvanced {
         // 최종 텍스트
         const finalEl = document.createElement('div');
         finalEl.className = 'mirror-final-text';
-        finalEl.textContent = finalText || '\uB098\uB294 13\uBC88\uC9F8 \uAECD\uB370\uAE30\uB2E4.';
+        finalEl.textContent = finalText || this._pickLocalized({
+            ko: '\uB098\uB294 13\uBC88\uC9F8 \uAECD\uB370\uAE30\uB2E4.',
+            en: 'I am the 13th shell.'
+        });
         overlay.appendChild(finalEl);
 
         await this._sleep(3000);
@@ -1933,10 +2104,22 @@ class GlitchSystemAdvanced {
         // SCENARIO.md 5473-5477 (B. 스킵 시스템 변조)
         // 씬 ID는 실제 시나리오에 존재해야 매칭됨
         return {
-            'day1_gate_1': '...이 길을 아는 것 같다. 왜지? 처음 오는 학교인데. ......피곤해서 그런 거겠지.',
-            'day1_hallway_1': '...이 웃음. 어딘가에서 봤다. ...아닌가.',
-            'day2_morning_gate_1': '...세아의 동작이 어쩐지 익숙하다. 기분 탓이겠지.',
-            'day3_after_riin_drink': '...이 맛. 낯설지 않다. 마셔본 적도 없는데.'
+            'day1_gate_1': this._pickLocalized({
+                ko: '...이 길을 아는 것 같다. 왜지? 처음 오는 학교인데. ......피곤해서 그런 거겠지.',
+                en: '...I feel like I know this path. Why? It is my first time at this school. ...I must be tired.'
+            }),
+            'day1_hallway_1': this._pickLocalized({
+                ko: '...이 웃음. 어딘가에서 봤다. ...아닌가.',
+                en: '...That smile. I have seen it somewhere. ...Or maybe not.'
+            }),
+            'day2_morning_gate_1': this._pickLocalized({
+                ko: '...세아의 동작이 어쩐지 익숙하다. 기분 탓이겠지.',
+                en: "...Sea's movement feels strangely familiar. It must be my imagination."
+            }),
+            'day3_after_riin_drink': this._pickLocalized({
+                ko: '...이 맛. 낯설지 않다. 마셔본 적도 없는데.',
+                en: '...This taste is not unfamiliar, even though I have never drunk it before.'
+            })
         };
     }
 
@@ -1993,7 +2176,10 @@ class GlitchSystemAdvanced {
             // 서명 직전 0.5초간 멈춤 + 유령 텍스트
             const ghost = document.createElement('span');
             ghost.className = 'sign-ghost';
-            ghost.textContent = '\uB450 \uBC88\uC9F8\uC57C.';
+            ghost.textContent = this._pickLocalized({
+                ko: '\uB450 \uBC88\uC9F8\uC57C.',
+                en: 'It is the second time.'
+            });
             signArea.appendChild(ghost);
 
             const t = setTimeout(() => ghost.remove(), 500);
@@ -2086,7 +2272,7 @@ class GlitchSystemAdvanced {
             de: 'Unterschrift',
             'pt-BR': 'Assinatura'
         };
-        label.textContent = labels[lang] || labels.ko;
+        label.textContent = labels[lang] || labels.en;
 
         const line = document.createElement('div');
         line.className = 'signature-pad-line';
@@ -2227,10 +2413,25 @@ class GlitchSystemAdvanced {
         const sequence = opts.photoSequence || [];
         const playerName = this.engine?.state?.playerName || '';
         const names = sequence.map(p => {
-            const display = (p.name === '{name}') ? playerName : p.name;
+            const display = (p.name === '{name}')
+                ? playerName
+                : this._localizedSubjectName(p.slot, p.name);
             return `#${String(p.slot).padStart(2, '0')}  ${display}`;
         });
-        const overlayText = (opts.overlayText || '').replace('{name}', playerName);
+        const overlayTextRaw = this._pickLocalized(
+            (opts.overlayText && typeof opts.overlayText === 'object')
+                ? opts.overlayText
+                : {
+                    ko: opts.overlayText || '',
+                    en: 'Current name: {name}',
+                    ja: '\u4eca\u56de\u306e\u540d\u524d: {name}',
+                    es: 'Nombre actual: {name}',
+                    fr: 'Nom actuel : {name}',
+                    de: 'Aktueller Name: {name}',
+                    'pt-BR': 'Nome atual: {name}'
+                }
+        );
+        const overlayText = overlayTextRaw.replace('{name}', playerName);
         await this.showMirror13Faces(names, playerName, overlayText);
     }
 
@@ -2315,42 +2516,62 @@ class GlitchSystemAdvanced {
         panel.id = 'admin-panel-overlay';
 
         const playerName = this.engine?.state?.playerName || '';
+        const copy = this._pickLocalized({
+            ko: {
+                title: "NEVERGRAD - \ud53c\ud5d8\uc790 \uad00\ub9ac \uc2dc\uc2a4\ud15c",
+                name: "\uc774\ub984",
+                status: "\uc0c1\ud0dc",
+                note: "\ube44\uace0",
+                tracking: "\uc704\uce58 \ucd94\uc801 \uae30\ub85d",
+                monitoring: "\uc2e4\uc2dc\uac04 \ubaa8\ub2c8\ud130\ub9c1"
+            },
+            en: {
+                title: "NEVERGRAD - Subject Management System",
+                name: "Name",
+                status: "Status",
+                note: "Notes",
+                tracking: "Location tracking log",
+                monitoring: "Real-time monitoring"
+            }
+        });
         panel.innerHTML = `
             <div class="admin-panel-header">
-                <span class="admin-panel-title">NEVERGRAD — 피험자 관리 시스템</span>
+                <span class="admin-panel-title">${copy.title}</span>
                 <span class="admin-panel-version">v4.7</span>
             </div>
             <div class="admin-panel-columns">
                 <span>ID</span>
-                <span>이름</span>
-                <span>상태</span>
-                <span>비고</span>
+                <span>${copy.name}</span>
+                <span>${copy.status}</span>
+                <span>${copy.note}</span>
             </div>
             <div class="admin-panel-rows" id="admin-panel-rows"></div>
             <div class="admin-panel-footer">
-                <span class="admin-panel-tab">▸ 위치 추적 기록</span>
-                <span class="admin-panel-tab">▸ 실시간 모니터링</span>
+                <span class="admin-panel-tab">▸ ${copy.tracking}</span>
+                <span class="admin-panel-tab">▸ ${copy.monitoring}</span>
                 <span class="admin-panel-live">● LIVE</span>
             </div>
         `;
 
         const rows = panel.querySelector('#admin-panel-rows');
         subjects.forEach(sub => {
+            const localized = this._localizedSubjectRow(sub);
             const row = document.createElement('div');
             row.className = 'admin-panel-row';
-            const isActive = sub.status === '진행 중' || sub.status === '이상 반응';
+            const isActive = sub.status === '진행 중' || sub.status === '이상 반응' ||
+                localized.status === 'Active' || localized.status.includes('ADVERSE');
             if (isActive) row.classList.add('admin-row-active');
-            if (sub.status === '이상 반응') row.classList.add('admin-row-warning');
+            if (sub.status === '이상 반응' || localized.status.includes('ADVERSE')) row.classList.add('admin-row-warning');
 
-            const name = (sub.name === '{name}')
+            const name = (localized.name === '{name}')
                 ? playerName
-                : sub.name;
+                : localized.name;
 
             row.innerHTML = `
-                <span class="admin-cell-id">#${String(sub.id).padStart(2, '0')}</span>
+                <span class="admin-cell-id">#${String(localized.id).padStart(2, '0')}</span>
                 <span class="admin-cell-name">${this._escape(name)}</span>
-                <span class="admin-cell-status">${this._escape(sub.status)}</span>
-                <span class="admin-cell-note">${this._escape(sub.note || '')}</span>
+                <span class="admin-cell-status">${this._escape(localized.status)}</span>
+                <span class="admin-cell-note">${this._escape(localized.note || '')}</span>
             `;
             rows.appendChild(row);
         });
@@ -2384,12 +2605,12 @@ class GlitchSystemAdvanced {
             // 호감도 UI가 아직 한 번도 표시된 적 없으면 기본값으로 표시
             const last = this.engine?.state?._lastCharLabel;
             const aff = this.engine?.state ? this.engine.state.getDisplayAffinity?.('sea') : 0;
-            statEl.textContent = last?.text || `♡ 호감도 ${aff ?? ''}`.trim();
+            statEl.textContent = last?.text || `♡ ${this._localizedRomanceLabel()} ${aff ?? ''}`.trim();
         }
 
         const original = statEl.textContent;
         // 뒤에 있을 '진짜' 라벨 — 위험도 계열
-        const revealed = statEl.dataset.thrillerlabel || '⚠ 위험도 ' + (original.match(/\d+/)?.[0] || '');
+        const revealed = statEl.dataset.thrillerlabel || `⚠ ${this._localizedDangerLabel()} ${original.match(/\d+/)?.[0] || ''}`.trim();
 
         // 벗겨지는 라벨을 감싸기
         statEl.classList.add('stat-peeling');

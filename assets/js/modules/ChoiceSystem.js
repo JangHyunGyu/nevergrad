@@ -11,6 +11,11 @@ class ChoiceSystem {
         this.panel = document.getElementById('choice-panel');
     }
 
+    _fallbackChoiceLabel(index) {
+        const lang = document.documentElement.lang || 'ko';
+        return String(lang).toLowerCase().startsWith('ko') ? `선택 ${index + 1}` : `Choice ${index + 1}`;
+    }
+
     /**
      * 시간 제한 선택지 (Day 4+)
      * 제한 시간 내에 고르지 않으면 기본 선택지가 자동 선택됨
@@ -47,7 +52,7 @@ class ChoiceSystem {
         choices.forEach((choice, i) => {
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
-            btn.textContent = labels?.[i] || `선택 ${i + 1}`;
+            btn.textContent = labels?.[i] || this._fallbackChoiceLabel(i);
 
             // 시차(stagger) 애니메이션
             btn.style.animationDelay = `${i * 80}ms`;

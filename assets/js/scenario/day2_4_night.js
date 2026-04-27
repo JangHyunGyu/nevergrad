@@ -403,7 +403,19 @@ Object.assign(SCENARIO[2], {
         character: null,
         night: true,
         // SCENARIO.md 5424: Day 2 밤 핸드폰 알림 글리치 (0.3초 — 내부 시스템 노출)
-        glitch: { phoneFlash: true, phoneFlashText: "[한울 안전 앱] 피험자 #13 모니터링 — 수면 감지", phoneFlashDuration: 300 },
+        glitch: {
+            phoneFlash: true,
+            phoneFlashText: {
+                ko: "[\ud55c\uc6b8 \uc548\uc804 \uc571] \ud53c\ud5d8\uc790 #13 \ubaa8\ub2c8\ud130\ub9c1 - \uc218\uba74 \uac10\uc9c0",
+                en: "[Hanul Safety App] Subject #13 monitoring - sleep detected",
+                ja: "[\u30cf\u30cc\u30eb\u5b89\u5168\u30a2\u30d7\u30ea] \u88ab\u9a13\u8005 #13 \u30e2\u30cb\u30bf\u30ea\u30f3\u30b0 - \u7761\u7720\u691c\u77e5",
+                es: "[App de Seguridad Hanul] Monitoreo del sujeto #13 - sueno detectado",
+                fr: "[App Securite Hanul] Surveillance du sujet #13 - sommeil detecte",
+                de: "[Hanul Sicherheits-App] Subjekt #13 Uberwachung - Schlaf erkannt",
+                'pt-BR': "[App de Seguranca Hanul] Monitoramento do sujeito #13 - sono detectado"
+            },
+            phoneFlashDuration: 300
+        },
         next: "day2_night_end"
     },
 

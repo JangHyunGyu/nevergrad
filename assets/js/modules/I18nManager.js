@@ -129,7 +129,7 @@ class I18nManager {
      */
     resolve(text, playerName, extraVars) {
         if (!text) return "";
-        const fallback = I18nManager.DEFAULT_PLAYER_NAME[this.currentLang] || "전학생";
+        const fallback = I18nManager.DEFAULT_PLAYER_NAME[this.currentLang] || I18nManager.DEFAULT_PLAYER_NAME.en || "Transfer Student";
         let result = text
             .replace(/\{name\}/g, playerName || fallback)
             .replace(/\{name\?\}/g, playerName || fallback);
@@ -479,10 +479,103 @@ class I18nManager {
             || charId;
     }
 
+    static STAT_LABEL_TEXTS = {
+        ko: {
+            romance: "\ud638\uac10\ub3c4",
+            thriller: {
+                eunsu: "\uc704\ud5d8\ub3c4",
+                sea: "\uc9d1\ucc29\ub3c4",
+                riin: "\uc2e0\ub8b0\ub3c4",
+                yuna: "\ud638\uac10\ub3c4",
+                seolhwa: "\ub3d9\uae30\ud654"
+            }
+        },
+        en: {
+            romance: "Affinity",
+            thriller: {
+                eunsu: "Danger",
+                sea: "Obsession",
+                riin: "Trust",
+                yuna: "Affinity",
+                seolhwa: "Sync"
+            }
+        },
+        ja: {
+            romance: "\u597d\u611f\u5ea6",
+            thriller: {
+                eunsu: "\u5371\u967a\u5ea6",
+                sea: "\u57f7\u7740\u5ea6",
+                riin: "\u4fe1\u983c\u5ea6",
+                yuna: "\u597d\u611f\u5ea6",
+                seolhwa: "\u540c\u671f"
+            }
+        },
+        es: {
+            romance: "Afinidad",
+            thriller: {
+                eunsu: "Peligro",
+                sea: "Obsesion",
+                riin: "Confianza",
+                yuna: "Afinidad",
+                seolhwa: "Sincronia"
+            }
+        },
+        fr: {
+            romance: "Affinite",
+            thriller: {
+                eunsu: "Danger",
+                sea: "Obsession",
+                riin: "Confiance",
+                yuna: "Affinite",
+                seolhwa: "Synchronisation"
+            }
+        },
+        de: {
+            romance: "Zuneigung",
+            thriller: {
+                eunsu: "Gefahr",
+                sea: "Besessenheit",
+                riin: "Vertrauen",
+                yuna: "Zuneigung",
+                seolhwa: "Synchronisation"
+            }
+        },
+        'pt-BR': {
+            romance: "Afinidade",
+            thriller: {
+                eunsu: "Perigo",
+                sea: "Obsessao",
+                riin: "Confianca",
+                yuna: "Afinidade",
+                seolhwa: "Sincronia"
+            }
+        }
+    };
+
+    getStatLabel(mode, charId) {
+        const fallback = mode === CONFIG.STAT_MODES.THRILLER
+            ? CONFIG.STAT_LABELS.thriller[charId]
+            : CONFIG.STAT_LABELS.romance;
+        const langTexts = I18nManager.STAT_LABEL_TEXTS[this.currentLang]
+            || I18nManager.STAT_LABEL_TEXTS.en;
+
+        if (mode === CONFIG.STAT_MODES.THRILLER && fallback) {
+            const label = langTexts.thriller?.[charId]
+                || I18nManager.STAT_LABEL_TEXTS.en.thriller[charId]
+                || fallback.label;
+            return { ...fallback, label };
+        }
+
+        return {
+            ...fallback,
+            primary: langTexts.romance || I18nManager.STAT_LABEL_TEXTS.en.romance
+        };
+    }
+
     /**
      * 현재 언어의 UI 텍스트 반환
      */
     getUI(key) {
-        return I18nManager.UI[this.currentLang]?.[key] || I18nManager.UI['ko'][key] || '';
+        return I18nManager.UI[this.currentLang]?.[key] || I18nManager.UI.en?.[key] || I18nManager.UI.ko?.[key] || '';
     }
 }

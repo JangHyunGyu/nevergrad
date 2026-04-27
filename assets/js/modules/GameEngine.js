@@ -144,7 +144,7 @@ class GameEngine {
 
         // 백로그 타이틀
         const backlogTitle = document.querySelector('.backlog-title');
-        if (backlogTitle) backlogTitle.textContent = ui('backlogTitle') || '대사 기록';
+        if (backlogTitle) backlogTitle.textContent = ui('backlogTitle') || 'Backlog';
 
         // 메뉴 버튼
         const btnMap = {
@@ -1119,7 +1119,7 @@ class GameEngine {
 
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
-            const label = labels?.[choiceIdx] || `선택 ${choiceIdx + 1}`;
+            const label = labels?.[choiceIdx] || (this.i18n?.currentLang === 'ko' ? `선택 ${choiceIdx + 1}` : `Choice ${choiceIdx + 1}`);
             const displayedIndex = visibleChoiceIdx++;
             btn.textContent = label;
 
@@ -1288,7 +1288,7 @@ class GameEngine {
         this._recordChoiceTelemetry(
             this.state.currentScene,
             choice,
-            labels?.[idx] || `선택 ${idx + 1}`,
+            labels?.[idx] || (this.i18n?.currentLang === 'ko' ? `선택 ${idx + 1}` : `Choice ${idx + 1}`),
             idx,
             { timed: true, timeMs, elapsedMs, timedOut: false }
         );
@@ -1368,7 +1368,7 @@ class GameEngine {
             'pt-BR': 'Prova assegurada'
         };
         const name = evidence?.name ? `: ${evidence.name}` : '';
-        toast.textContent = `${labels[lang] || labels.ko}${name}`;
+        toast.textContent = `${labels[lang] || labels.en}${name}`;
         document.body.appendChild(toast);
 
         requestAnimationFrame(() => toast.classList.add('save-toast-visible'));
@@ -1554,16 +1554,23 @@ class GameEngine {
         }
         if (g.themeShift) this.glitch.shiftTheme(g.themeShift);
         if (g.heavy || g.heavyGlitch) this.glitch.heavyGlitch(g.heavyDuration);
-        if (g.ghostText) this.glitch.ghostText(g.ghostText, g.ghostX || 50, g.ghostY || 30);
+        if (g.ghostText) this.glitch.ghostText(this._pickLocalizedValue(g.ghostText), g.ghostX || 50, g.ghostY || 30);
         if (g.ngPlusGhostText && this.save?.isNewGamePlus()) {
-            this.glitch.ghostText(g.ngPlusGhostText, g.ghostX || 50, g.ghostY || 60, g.ghostDuration || 500);
+            this.glitch.ghostText(
+                this._pickLocalizedValue(g.ngPlusGhostText),
+                g.ghostX || 50,
+                g.ghostY || 60,
+                g.ghostDuration || 500
+            );
         }
         if (g.mirrorFog) {
             this.glitch.showMirrorFog();
         }
         if (g.endingCreditSaveUI && this.glitchAdvanced) {
             this.glitchAdvanced.showEndingCreditSaveUI(
-                this.save, this.state.playerName || '플레이어', g.endingCreditSaveUI
+                this.save,
+                this.state.playerName || this.i18n?.getCharacterName?.('me') || 'Player',
+                g.endingCreditSaveUI
             );
         }
         if (g.expressionFlash) {
@@ -1589,8 +1596,9 @@ class GameEngine {
             this._pendingDuplicateChoice = true;
         }
         if (g.phoneFlash && this.deviceGimmick) {
+            const phoneFlashText = this._pickLocalizedValue(g.phoneFlashText);
             this.deviceGimmick.flashPhoneNotification(
-                g.phoneFlashText,
+                phoneFlashText,
                 g.phoneFlashDuration || 300
             );
         }
@@ -1779,6 +1787,7 @@ class GameEngine {
     }
 
     _applyTitleTextReplace(replace) {
+        replace = this._pickLocalizedValue(replace);
         if (!replace?.to) return;
         const titleEl = document.querySelector('.title-text');
         if (titleEl && (!replace.from || titleEl.textContent.includes(replace.from))) {
@@ -1813,7 +1822,7 @@ class GameEngine {
         // 타이틀 복귀 버튼
         const returnBtn = document.createElement('button');
         returnBtn.className = 'ending-return-btn';
-        returnBtn.textContent = this.i18n?.get('returnToTitle')?.text || '타이틀로 돌아가기';
+        returnBtn.textContent = this.i18n?.getUI?.('toTitle') || 'Title';
         returnBtn.addEventListener('click', () => {
             overlay.remove();
             this.glitchAdvanced?.disableDay5NoiseFilter();
@@ -1838,6 +1847,12 @@ class GameEngine {
         return name;
     }
 
+    _pickLocalizedValue(value) {
+        if (!value || typeof value !== 'object' || Array.isArray(value)) return value;
+        const lang = this.i18n?.currentLang || 'ko';
+        return value[lang] || value.en || value.ko || '';
+    }
+
     _buildSceneVars(sceneId, scene) {
         const futureName = this._getFutureSubjectName();
         const vars = {
@@ -1853,15 +1868,21 @@ class GameEngine {
     }
 
     _getFutureSubjectName() {
-        const pool = [
+        const koPool = [
             '강하준', '김시온', '박도윤', '서이안',
             '윤태오', '이현우', '정민재', '최도현'
         ];
+        const enPool = [
+            'Kang Hajun', 'Kim Sion', 'Park Doyun', 'Seo Ian',
+            'Yoon Taeo', 'Lee Hyunwoo', 'Jung Minjae', 'Choi Dohyun'
+        ];
         const seedSource = this.state.playerName || 'NEVERGRAD';
         const seed = [...seedSource].reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
-        const picked = this.state.getGeneratedName('14th_name', () => pool[seed % pool.length]);
+        const picked = this.state.getGeneratedName('14th_name', () => koPool[seed % koPool.length]);
         this.state.getGeneratedName('new_name', () => picked);
-        return picked;
+        if (this.i18n?.currentLang === 'ko') return picked;
+        const idx = koPool.indexOf(picked);
+        return idx >= 0 ? enPool[idx] : picked;
     }
 
     _buildObserverVars() {
@@ -1901,7 +1922,7 @@ class GameEngine {
             de: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' },
             'pt-BR': { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' }
         };
-        return (map[lang] || map.ko)[heroineId] || heroineId;
+        return (map[lang] || map.en)[heroineId] || heroineId;
     }
 
     _formatPlayTime(totalMs) {
@@ -1927,7 +1948,7 @@ class GameEngine {
             de: value ? 'Ja' : 'Nein',
             'pt-BR': value ? 'Sim' : 'Não'
         };
-        return labels[lang] || labels.ko;
+        return labels[lang] || labels.en;
     }
 
     _formatEvidenceStatus(value) {
@@ -1941,7 +1962,7 @@ class GameEngine {
             de: value ? 'Gesichert' : 'Nicht gesichert',
             'pt-BR': value ? 'Assegurada' : 'Ausente'
         };
-        return labels[lang] || labels.ko;
+        return labels[lang] || labels.en;
     }
 
     _formatTimedChoice(record) {
@@ -1956,7 +1977,7 @@ class GameEngine {
                 de: 'Kein Eintrag',
                 'pt-BR': 'Sem registro'
             };
-            return empty[lang] || empty.ko;
+            return empty[lang] || empty.en;
         }
 
         const elapsedSec = ((record.elapsedMs || 0) / 1000).toFixed(1);
@@ -1971,7 +1992,7 @@ class GameEngine {
                 de: `Zeit abgelaufen (${limitSec}s)`,
                 'pt-BR': `Tempo esgotado (${limitSec}s)`
             };
-            return timeout[lang] || timeout.ko;
+            return timeout[lang] || timeout.en;
         }
 
         const values = {
@@ -1983,7 +2004,7 @@ class GameEngine {
             de: `${elapsedSec}s / ${limitSec}s`,
             'pt-BR': `${elapsedSec}s / ${limitSec}s`
         };
-        return values[lang] || values.ko;
+        return values[lang] || values.en;
     }
 
     // ===== HUD =====
@@ -1993,7 +2014,7 @@ class GameEngine {
         if (!dayEl) return;
         const slots = this.i18n.getUI('slots') || {};
         const slotName = slots[this.state.currentSlot] || CONFIG.TIME_SLOT_NAMES[this.state.currentSlot] || "";
-        const fmt = this.i18n.getUI('dayFormat') || "{day}일차 - {slot}";
+        const fmt = this.i18n.getUI('dayFormat') || "Day {day} - {slot}";
         dayEl.textContent = fmt.replace('{day}', this.state.currentDay).replace('{slot}', slotName);
 
         this._updateStatDisplay();
@@ -2039,7 +2060,8 @@ class GameEngine {
         statEl.classList.remove('stat-hidden');
 
         const aff = this.state.getDisplayAffinity(charId);
-        const charLabel = this.state.getCharLabel(charId);
+        const charLabel = this.i18n?.getStatLabel?.(this.state.mode, charId)
+            || this.state.getCharLabel(charId);
 
         let newText;
         if (this.state.mode === CONFIG.STAT_MODES.ROMANCE) {
@@ -2259,8 +2281,8 @@ class GameEngine {
         // 타이틀 설정
         if (title) {
             title.textContent = mode === 'save'
-                ? (this.i18n.getUI('save') || '저장')
-                : (this.i18n.getUI('load') || '불러오기');
+                ? (this.i18n.getUI('save') || 'Save')
+                : (this.i18n.getUI('load') || 'Load');
         }
 
         // 모드 클래스
@@ -2323,7 +2345,7 @@ class GameEngine {
             } else {
                 const emptyEl = document.createElement('div');
                 emptyEl.className = 'sl-slot-empty-label';
-                emptyEl.textContent = ui('slotEmpty') || '빈 슬롯';
+                emptyEl.textContent = ui('slotEmpty') || 'Empty slot';
                 infoEl.appendChild(emptyEl);
             }
 
@@ -2403,11 +2425,11 @@ class GameEngine {
 
         const text = document.createElement('span');
         text.className = 'sl-confirm-text';
-        text.textContent = this.i18n.getUI('slotOverwrite') || '덮어쓰시겠습니까?';
+        text.textContent = this.i18n.getUI('slotOverwrite') || 'Overwrite this slot?';
 
         const yesBtn = document.createElement('button');
         yesBtn.className = 'sl-confirm-btn';
-        yesBtn.textContent = this.i18n.getUI('slotYes') || '예';
+        yesBtn.textContent = this.i18n.getUI('slotYes') || 'Yes';
         yesBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             this.audio?.playUISaveConfirm();
@@ -2416,7 +2438,7 @@ class GameEngine {
 
         const noBtn = document.createElement('button');
         noBtn.className = 'sl-confirm-btn sl-cancel';
-        noBtn.textContent = this.i18n.getUI('slotNo') || '아니오';
+        noBtn.textContent = this.i18n.getUI('slotNo') || 'No';
         noBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             this.audio?.playUIClick();
@@ -2757,7 +2779,7 @@ class GameEngine {
         }
 
         if (effect?.flashText) {
-            this._showMetaFlash(effect.flashText, effect.flashDuration || 700);
+            this._showMetaFlash(this._pickLocalizedValue(effect.flashText), effect.flashDuration || 700);
         }
 
         if (effect?.screenBlackout || seaVariant?.emptyLunchbox) {
@@ -2766,7 +2788,7 @@ class GameEngine {
 
         if (Array.isArray(seaVariant?.seaLines)) {
             seaVariant.seaLines.slice(0, 2).forEach((line, idx) => {
-                setTimeout(() => this._showMetaFlash(line, 1200, 50, 58 + idx * 8), idx * 450);
+                setTimeout(() => this._showMetaFlash(this._pickLocalizedValue(line), 1200, 50, 58 + idx * 8), idx * 450);
             });
         }
 
@@ -2774,7 +2796,8 @@ class GameEngine {
             const img = CONFIG.EXPRESSIONS.eunsu?.obsessed || CONFIG.EXPRESSIONS.eunsu?.normal;
             if (img) this.renderer.setCharacter('center', img);
 
-            this.dialogue.type('', `*${effect.eunsuLine || '...'}*`, () => {
+            const eunsuLine = this._pickLocalizedValue(effect.eunsuLine) || '...';
+            this.dialogue.type('', `*${eunsuLine}*`, () => {
                 setTimeout(() => this.renderer.clearCharacters(), 1600);
             }, { typingSpeed: 70, unskippable: true });
             return true;
@@ -2914,7 +2937,7 @@ class GameEngine {
             es: 'Aula Feliz', fr: 'Classe Heureuse', de: 'Glückliches Klassenzimmer',
             'pt-BR': 'Sala de Aula Feliz'
         };
-        return map[this.i18n.currentLang] || map.ko;
+        return map[this.i18n.currentLang] || map.en;
     }
 
     _getCageTabTitle() {
@@ -2927,7 +2950,7 @@ class GameEngine {
             de: 'Das Klassenzimmer — Glücklich Jeden Tag',
             'pt-BR': 'A Sala de Aula — Feliz Todos os Dias'
         };
-        return map[this.i18n.currentLang] || map.ko;
+        return map[this.i18n.currentLang] || map.en;
     }
 
     _getCageSeolhwaTexts() {
@@ -2940,7 +2963,7 @@ class GameEngine {
             de: ['...Geh hier raus.', 'Das ist nicht echt.', 'Erinnere dich. Du bist der 13.', 'Öffne die Augen.', '...Erinnerst du dich an mich?'],
             'pt-BR': ['...Saia daqui.', 'Isto não é real.', 'Lembre-se. Você é o 13º.', 'Abra os olhos.', '...Você se lembra de mim?']
         };
-        return map[this.i18n.currentLang] || map.ko;
+        return map[this.i18n.currentLang] || map.en;
     }
 
     _getCageSeolhwaFinal() {
@@ -2953,7 +2976,7 @@ class GameEngine {
             de: '...Schau oben rechts. Ich habe einen Weg geöffnet.',
             'pt-BR': '...Olhe no canto superior direito. Eu abri uma saída.'
         };
-        return map[this.i18n.currentLang] || map.ko;
+        return map[this.i18n.currentLang] || map.en;
     }
 
     _getCageExitTooltip() {
@@ -2961,6 +2984,6 @@ class GameEngine {
             ko: '나가기', en: 'Exit', ja: '出る',
             es: 'Salir', fr: 'Sortir', de: 'Raus', 'pt-BR': 'Sair'
         };
-        return map[this.i18n.currentLang] || map.ko;
+        return map[this.i18n.currentLang] || map.en;
     }
 }

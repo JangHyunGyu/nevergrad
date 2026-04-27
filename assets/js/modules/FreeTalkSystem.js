@@ -75,6 +75,196 @@ class FreeTalkSystem {
         this._vvHandler = null;
     }
 
+    _lang() {
+        return this.engine?.i18n?.currentLang || 'ko';
+    }
+
+    _pickLocalized(map) {
+        if (!map || typeof map !== 'object' || Array.isArray(map)) return map || '';
+        const lang = this._lang();
+        return map[lang] || map.en || map.ko || '';
+    }
+
+    _defaultPlayerName() {
+        const lang = this._lang();
+        return I18nManager.DEFAULT_PLAYER_NAME?.[lang] || I18nManager.DEFAULT_PLAYER_NAME?.en || 'Student';
+    }
+
+    _getLegacyCharacterName(charId) {
+        const names = {
+            ko: { eunsu: "\ubc15\uc740\uc218", sea: "\ud55c\uc138\uc544", minsu: "\ubbfc\uc218" },
+            en: { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" },
+            ja: { eunsu: "\u30d1\u30af\u30fb\u30a6\u30f3\u30b9", sea: "\u30cf\u30f3\u30fb\u30bb\u30a2", minsu: "\u30df\u30f3\u30b9" },
+            es: { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" },
+            fr: { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" },
+            de: { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" },
+            'pt-BR': { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" }
+        };
+        const langNames = names[this._lang()] || names.en;
+        return langNames[charId] || charId;
+    }
+
+    _getLegacyPlaceholder(kind, charId = null) {
+        if (kind === 'interrogation') {
+            const placeholders = this._pickLocalized({
+                ko: {
+                    eunsu: "\ubcc0\uba85\ud574 \ubd10... (\uc790\uc720 \uc785\ub825)",
+                    sea: "\ud560 \ub9d0\uc774 \uc788\uc73c\uba74 \ud574 \ubd10... (\uc790\uc720 \uc785\ub825)"
+                },
+                en: {
+                    eunsu: "Try explaining yourself... (free input)",
+                    sea: "Say something, if you have anything... (free input)"
+                },
+                ja: {
+                    eunsu: "\u8a00\u3044\u8a33\u3057\u3066\u307f\u3066... (\u81ea\u7531\u5165\u529b)",
+                    sea: "\u8a00\u3044\u305f\u3044\u3053\u3068\u304c\u3042\u308b\u306a\u3089\u8a00\u3063\u3066... (\u81ea\u7531\u5165\u529b)"
+                },
+                es: { eunsu: "Intenta explicarte... (entrada libre)", sea: "Di algo, si tienes algo que decir... (entrada libre)" },
+                fr: { eunsu: "Essaie de t'expliquer... (saisie libre)", sea: "Dis quelque chose, si tu as quelque chose a dire... (saisie libre)" },
+                de: { eunsu: "Erklar dich... (freie Eingabe)", sea: "Sag etwas, wenn du etwas zu sagen hast... (freie Eingabe)" },
+                'pt-BR': { eunsu: "Tente se explicar... (entrada livre)", sea: "Diga algo, se tiver algo a dizer... (entrada livre)" }
+            });
+            return placeholders[charId] || placeholders.sea;
+        }
+
+        return this._pickLocalized({
+            ko: "\uba54\uc2dc\uc9c0\ub97c \uc785\ub825\ud558\uc138\uc694...",
+            en: "Type a message...",
+            ja: "\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u5165\u529b...",
+            es: "Escribe un mensaje...",
+            fr: "Ecrivez un message...",
+            de: "Nachricht eingeben...",
+            'pt-BR': "Digite uma mensagem..."
+        });
+    }
+
+    _getLegacyFallback(mode, charId, idx) {
+        if (this._lang() === 'ko') return null;
+        const fallbacks = {
+            interrogation: {
+                eunsu: {
+                    en: [
+                        "This is not the time for excuses, {name}. Be honest with your teacher.",
+                        "You know your teacher is disappointed, don't you?"
+                    ],
+                    ja: [
+                        "\u4eca\u306f\u8a00\u3044\u8a33\u3059\u308b\u6642\u9593\u3058\u3083\u306a\u3044\u3067\u3059\u3001{name}\u3055\u3093\u3002\u5148\u751f\u306b\u6b63\u76f4\u306b\u8a71\u3057\u3066\u3002",
+                        "\u5148\u751f\u304c\u5931\u671b\u3057\u3066\u3044\u308b\u306e\u306f\u5206\u304b\u3063\u3066\u3044\u307e\u3059\u3088\u306d?"
+                    ],
+                    es: [
+                        "No es momento de excusas, {name}. Se honesto con tu profesora.",
+                        "Sabes que la profesora esta decepcionada, verdad?"
+                    ],
+                    fr: [
+                        "Ce n'est pas le moment de chercher des excuses, {name}. Sois honnete avec ta professeure.",
+                        "Tu sais que ta professeure est decue, n'est-ce pas ?"
+                    ],
+                    de: [
+                        "Jetzt ist nicht die Zeit fur Ausreden, {name}. Sei ehrlich zu deiner Lehrerin.",
+                        "Du weisst, dass deine Lehrerin enttauscht ist, oder?"
+                    ],
+                    'pt-BR': [
+                        "Agora nao e hora de desculpas, {name}. Seja honesto com a professora.",
+                        "Voce sabe que a professora esta decepcionada, nao sabe?"
+                    ]
+                },
+                sea: {
+                    en: ["{name}, you can't be without me. You know that too."],
+                    ja: ["{name}\u3001\u79c1\u304c\u3044\u306a\u3044\u3068\u30c0\u30e1\u3067\u3057\u3087\u3002\u3042\u306a\u305f\u3082\u5206\u304b\u3063\u3066\u308b\u3088\u306d\u3002"],
+                    es: ["{name}, no puedes estar sin mi. Tu tambien lo sabes."],
+                    fr: ["{name}, tu ne peux pas etre sans moi. Tu le sais aussi."],
+                    de: ["{name}, ohne mich geht es nicht. Das weisst du doch."],
+                    'pt-BR': ["{name}, voce nao consegue ficar sem mim. Voce tambem sabe disso."]
+                }
+            },
+            messenger: {
+                minsu: {
+                    en: [
+                        "Yeah, I'm doing fine. How is it there?",
+                        "I see.",
+                        "Looks like school life is going well."
+                    ],
+                    ja: [
+                        "\u3046\u3093\u3001\u5143\u6c17\u3002\u305d\u3063\u3061\u306f\u3069\u3046?",
+                        "\u305d\u3046\u306a\u3093\u3060\u3002",
+                        "\u5b66\u6821\u751f\u6d3b\u3001\u3046\u307e\u304f\u3044\u3063\u3066\u308b\u307f\u305f\u3044\u3060\u306d\u3002"
+                    ],
+                    es: [
+                        "Si, estoy bien. Como va todo alla?",
+                        "Ya veo.",
+                        "Parece que te va bien en la escuela."
+                    ],
+                    fr: [
+                        "Oui, ca va. Comment c'est la-bas ?",
+                        "Je vois.",
+                        "On dirait que la vie scolaire se passe bien."
+                    ],
+                    de: [
+                        "Ja, mir geht's gut. Wie ist es dort?",
+                        "Verstehe.",
+                        "Scheint, als laufe das Schulleben gut."
+                    ],
+                    'pt-BR': [
+                        "Sim, estou bem. Como estao as coisas ai?",
+                        "Entendi.",
+                        "Parece que a vida escolar esta indo bem."
+                    ]
+                }
+            }
+        };
+
+        const list = fallbacks[mode]?.[charId]?.[this._lang()] || fallbacks[mode]?.[charId]?.en;
+        return list?.[Math.min(idx, list.length - 1)] || null;
+    }
+
+    _getNightmareFallbackLines() {
+        if (this._lang() === 'ko') return FALLBACK_RESPONSES.nightmare.lines;
+        return this._pickLocalized({
+            en: [
+                "*...I am walking down a hallway, but it never ends.*",
+                "*Every classroom door opens into the same classroom, again and again.*",
+                "*My name is written on the blackboard hundreds of times. Thousands.*",
+                "*The clock has stopped. No... the second hand is moving backward.*",
+                "*'...Run.' Seolhwa's voice comes from everywhere, but there is no exit.*"
+            ],
+            ja: [
+                "*...\u5eca\u4e0b\u3092\u6b69\u3044\u3066\u3044\u308b\u3002\u3067\u3082\u5eca\u4e0b\u304c\u7d42\u308f\u3089\u306a\u3044\u3002*",
+                "*\u6559\u5ba4\u306e\u30c9\u30a2\u3092\u958b\u3051\u308b\u3068\u3001\u307e\u305f\u540c\u3058\u6559\u5ba4\u306b\u51fa\u308b\u3002\u4f55\u5ea6\u958b\u3051\u3066\u3082\u3002*",
+                "*\u9ed2\u677f\u306b\u79c1\u306e\u540d\u524d\u304c\u4f55\u5ea6\u3082\u66f8\u304b\u308c\u3066\u3044\u308b\u3002\u6570\u767e\u56de\u3002\u6570\u5343\u56de\u3002*",
+                "*\u6642\u8a08\u304c\u6b62\u307e\u3063\u3066\u3044\u308b\u3002\u3044\u3084...\u79d2\u91dd\u304c\u9006\u306b\u56de\u3063\u3066\u3044\u308b\u3002*",
+                "*'...\u9003\u3052\u3066\u3002'\u30bd\u30eb\u30d5\u30a1\u306e\u58f0\u304c\u56db\u65b9\u304b\u3089\u805e\u3053\u3048\u308b\u3002\u3067\u3082\u51fa\u53e3\u306f\u306a\u3044\u3002*"
+            ],
+            es: [
+                "*...Camino por un pasillo, pero nunca termina.*",
+                "*Cada puerta del aula se abre al mismo aula, una y otra vez.*",
+                "*Mi nombre esta escrito en la pizarra cientos de veces. Miles.*",
+                "*El reloj se ha detenido. No... el segundero va hacia atras.*",
+                "*'...Corre.' La voz de Seolhwa viene de todas partes, pero no hay salida.*"
+            ],
+            fr: [
+                "*...Je marche dans un couloir, mais il ne finit jamais.*",
+                "*Chaque porte de classe s'ouvre sur la meme classe, encore et encore.*",
+                "*Mon nom est ecrit au tableau des centaines de fois. Des milliers.*",
+                "*L'horloge s'est arretee. Non... la trotteuse tourne a l'envers.*",
+                "*'...Cours.' La voix de Seolhwa vient de partout, mais il n'y a aucune sortie.*"
+            ],
+            de: [
+                "*...Ich gehe einen Flur entlang, aber er endet nie.*",
+                "*Jede Klassenzimmertur fuhrt wieder in dasselbe Klassenzimmer.*",
+                "*Mein Name steht hunderte Male an der Tafel. Tausende Male.*",
+                "*Die Uhr steht still. Nein... der Sekundenzeiger lauft ruckwarts.*",
+                "*'...Lauf.' Seolhwas Stimme kommt von uberall, aber es gibt keinen Ausgang.*"
+            ],
+            'pt-BR': [
+                "*...Estou andando por um corredor, mas ele nunca termina.*",
+                "*Cada porta da sala abre para a mesma sala, de novo e de novo.*",
+                "*Meu nome esta escrito no quadro centenas de vezes. Milhares.*",
+                "*O relogio parou. Nao... o ponteiro dos segundos esta girando para tras.*",
+                "*'...Corra.' A voz de Seolhwa vem de todos os lados, mas nao ha saida.*"
+            ]
+        });
+    }
+
     // =========================================================================
     //  모드 1: 자유 입력 가스라이팅 ("변명해 봐")
     // =========================================================================
@@ -88,11 +278,7 @@ class FreeTalkSystem {
         this.sceneContext = sceneContext;
         this.nextSceneId = nextScene;
 
-        const placeholder = charId === 'eunsu'
-            ? '변명해 봐... (자유 입력)'
-            : '할 말이 있으면 해 봐... (자유 입력)';
-
-        this._showInputUI(placeholder);
+        this._showInputUI(this._getLegacyPlaceholder('interrogation', charId));
     }
 
     async sendInterrogation(userInput) {
@@ -102,7 +288,7 @@ class FreeTalkSystem {
         this.isWaiting = true;
         this._hideInputUI();
 
-        const charName = this.currentChar === 'eunsu' ? '박은수' : '한세아';
+        const charName = this._getLegacyCharacterName(this.currentChar);
         this._showTypingIndicator(charName);
 
         await this._delay(1000 + Math.random() * 1000);
@@ -123,10 +309,7 @@ class FreeTalkSystem {
             }, 2000);
         } else {
             setTimeout(() => {
-                const placeholder = this.currentChar === 'eunsu'
-                    ? '변명해 봐... (자유 입력)'
-                    : '할 말이 있으면 해 봐... (자유 입력)';
-                this._showInputUI(placeholder);
+                this._showInputUI(this._getLegacyPlaceholder('interrogation', this.currentChar));
             }, 1500);
         }
     }
@@ -136,7 +319,8 @@ class FreeTalkSystem {
         const idx = Math.min(this.turnCount, fallbacks.length - 1);
         const fb = fallbacks[idx];
 
-        const text = fb.text.replace(/\{name\}/g, this.state.playerName || '학생');
+        const localizedText = this._getLegacyFallback('interrogation', this.currentChar, idx) || fb.text;
+        const text = localizedText.replace(/\{name\}/g, this.state.playerName || this._defaultPlayerName());
         const delta = fb.danger_delta || 1;
 
         this.state.changeStat(this.currentChar, 'affinity', delta);
@@ -144,7 +328,7 @@ class FreeTalkSystem {
             this.engine._playStatChangeFX('affinity', delta, this.currentChar);
         }
 
-        const charName = this.currentChar === 'eunsu' ? '박은수' : '한세아';
+        const charName = this._getLegacyCharacterName(this.currentChar);
         this._displayResponse(charName, text);
     }
 
@@ -159,7 +343,7 @@ class FreeTalkSystem {
         this.maxTurns = 3;
         this.conversationHistory = [];
 
-        this._showInputUI('메시지를 입력하세요...');
+        this._showInputUI(this._getLegacyPlaceholder('messenger'));
     }
 
     async sendMessengerMessage(userInput) {
@@ -182,7 +366,7 @@ class FreeTalkSystem {
             return;
         }
 
-        this._showTypingIndicator('민수');
+        this._showTypingIndicator(this._getLegacyCharacterName('minsu'));
 
         await this._useFallbackMessenger();
 
@@ -202,7 +386,7 @@ class FreeTalkSystem {
         }
 
         setTimeout(() => {
-            this._showInputUI('메시지를 입력하세요...');
+            this._showInputUI(this._getLegacyPlaceholder('messenger'));
         }, 1000);
     }
 
@@ -215,7 +399,8 @@ class FreeTalkSystem {
 
         await this._delay(typingDelay);
         this._hideTypingIndicator();
-        this._displayResponse('민수', fb.text);
+        const localizedText = this._getLegacyFallback('messenger', this.currentChar, idx) || fb.text;
+        this._displayResponse(this._getLegacyCharacterName('minsu'), localizedText);
     }
 
     _showReadBadge() {
@@ -229,7 +414,7 @@ class FreeTalkSystem {
         badge.className = 'messenger-read-badge';
         const readTexts = { ko: '읽음', en: 'Read', ja: '既読', es: 'Leído', fr: 'Lu', de: 'Gelesen', 'pt-BR': 'Lido' };
         const lang = this.engine.i18n?.currentLang || 'ko';
-        badge.textContent = readTexts[lang] || readTexts.ko;
+        badge.textContent = readTexts[lang] || readTexts.en;
         panel.appendChild(badge);
     }
 
@@ -245,13 +430,13 @@ class FreeTalkSystem {
         this.nextSceneId = nextScene;
         this.conversationHistory = [];
 
-        this._showTypingIndicator('민수');
+        this._showTypingIndicator(this._getLegacyCharacterName('minsu'));
         await this._delay(4000);
         this._hideTypingIndicator();
-        this._displayResponse('민수', preemptiveMessage);
+        this._displayResponse(this._getLegacyCharacterName('minsu'), preemptiveMessage);
 
         setTimeout(() => {
-            this._showInputUI('메시지를 입력하세요...');
+            this._showInputUI(this._getLegacyPlaceholder('messenger'));
         }, 1500);
     }
 
@@ -262,7 +447,7 @@ class FreeTalkSystem {
         this.isWaiting = true;
         this._hideInputUI();
 
-        this._showTypingIndicator('민수');
+        this._showTypingIndicator(this._getLegacyCharacterName('minsu'));
 
         await this._delay(8000);
         this._hideTypingIndicator();
@@ -286,6 +471,10 @@ class FreeTalkSystem {
     async generateNightmare() {
         this.currentMode = 'nightmare';
 
+        if (this._lang() !== 'ko') {
+            return this._getNightmareFallbackLines();
+        }
+
         const flagSummary = this._buildFlagSummary();
         const systemPrompt = AI_PROMPTS.nightmare.replace('{flag_summary}', flagSummary);
 
@@ -307,7 +496,7 @@ class FreeTalkSystem {
 
         } catch (err) {
             console.warn('[FreeTalkSystem] 악몽 생성 API 오류, 폴백 사용:', err.message);
-            return FALLBACK_RESPONSES.nightmare.lines;
+            return this._getNightmareFallbackLines();
         }
     }
 
@@ -390,7 +579,7 @@ class FreeTalkSystem {
             const remaining = this.maxTurns - this.turnCount;
             const turnsLabel = { ko: '남은 대화', en: 'Remaining', ja: '残り', es: 'Restante', fr: 'Restant', de: 'Verbleibend', 'pt-BR': 'Restante' };
             const lang = this.engine.i18n?.currentLang || 'ko';
-            turnsEl.textContent = `${turnsLabel[lang] || turnsLabel.ko}: ${remaining}/${this.maxTurns}`;
+            turnsEl.textContent = `${turnsLabel[lang] || turnsLabel.en}: ${remaining}/${this.maxTurns}`;
         }
 
         // 사용자 메시지 표시
@@ -542,7 +731,7 @@ class FreeTalkSystem {
             'pt-BR': '(Conversa encerrada. Clique para continuar.)'
         };
 
-        this._appendChatBubble(endMsg[lang] || endMsg.ko, 'system');
+        this._appendChatBubble(endMsg[lang] || endMsg.en, 'system');
 
         // 입력 비활성화
         const input = document.getElementById('ft-input');
@@ -578,7 +767,7 @@ class FreeTalkSystem {
             'pt-BR': 'Encerrar a conversa e continuar?'
         };
 
-        if (confirm(confirmMsg[lang] || confirmMsg.ko)) {
+        if (confirm(confirmMsg[lang] || confirmMsg.en)) {
             this.turnCount = this.maxTurns;
             this._endAIChat();
         }
@@ -593,9 +782,9 @@ class FreeTalkSystem {
      * @private
      */
     _buildAIChatPrompt(charId, scene, lang) {
-        const playerName = this.state.playerName || '전학생';
+        const playerName = this.state.playerName || this._defaultPlayerName();
         const affinity = this.state.getDisplayAffinity(charId);
-        const context = scene.freeTalkContext || '';
+        const context = this._pickLocalized(scene.freeTalkContext) || '';
         const day = this.state.currentDay;
         const slot = this.state.currentSlot;
 
@@ -609,8 +798,8 @@ class FreeTalkSystem {
         // Phase 판단: Day 3 밤 이후는 Phase 2
         const isPhase2 = this.state.mode === CONFIG.STAT_MODES.THRILLER;
         const personality = isPhase2
-            ? (profile.phase2[lang] || profile.phase2.ko)
-            : (profile.phase1[lang] || profile.phase1.ko);
+            ? (profile.phase2[lang] || profile.phase2.en || profile.phase2.ko)
+            : (profile.phase1[lang] || profile.phase1.en || profile.phase1.ko);
 
         // 사용 가능한 표정 목록
         const expressions = CONFIG.EXPRESSIONS[charId]
@@ -626,9 +815,10 @@ class FreeTalkSystem {
         // 날짜/시간
         const daySlotLabel = `Day ${day} - ${slot}`;
 
-        const responseLanguage = lang === 'ko' ? '한국어' : lang === 'en' ? 'English' : lang === 'ja' ? '日本語' : lang === 'es' ? 'Español' : lang === 'fr' ? 'Français' : lang === 'de' ? 'Deutsch' : '한국어';
+        const responseLanguage = lang === 'ko' ? '한국어' : lang === 'en' ? 'English' : lang === 'ja' ? '日本語' : lang === 'es' ? 'Español' : lang === 'fr' ? 'Français' : lang === 'de' ? 'Deutsch' : lang === 'pt-BR' ? 'Português do Brasil' : 'English';
 
-        const staticPart = `당신은 비주얼노벨 "졸업하지 못한 교실(Nevergrad)"의 캐릭터입니다.
+        const staticPart = lang === 'ko'
+            ? `당신은 비주얼노벨 "졸업하지 못한 교실(Nevergrad)"의 캐릭터입니다.
 
 [캐릭터 설정]
 ${personality}
@@ -642,11 +832,27 @@ ${personality}
 6. 유치하거나 오글거리는 표현 금지
 7. 2020년대 트렌디한 한국 드라마 감성
 8. 응답 언어: ${responseLanguage}
-9. *액션 묘사*는 이탤릭 마크다운으로 (예: *고개를 돌리며*)`;
+9. *액션 묘사*는 이탤릭 마크다운으로 (예: *고개를 돌리며*)`
+            : `You are a character in the visual novel "Nevergrad: The Classroom of No Graduation".
 
-        const dynamicPart = `[현재 상황]
+[Character Profile]
+${personality}
+
+[Response Rules]
+1. Always respond in JSON: {"text": "dialogue", "expression": "expression", "affinity": change}
+2. Available expressions: ${expressions}
+3. affinity change must be an integer from -10 to +10
+4. Dialogue must be short and natural, up to 2-3 sentences
+5. Match the character personality and current affinity
+6. Avoid childish or overly melodramatic phrasing
+7. Keep the tone like a contemporary psychological school thriller
+8. Response language: ${responseLanguage}
+9. Put action descriptions in italic markdown, e.g. *turns away*`;
+
+        const dynamicPart = lang === 'ko'
+            ? `[현재 상황]
 - 날짜/시간: ${daySlotLabel}
-- 장소 상황: ${context || '학교'}
+- 장소 상황: ${context || this._pickLocalized({ ko: '학교', en: 'school', ja: '学校', es: 'escuela', fr: 'ecole', de: 'Schule', 'pt-BR': 'escola' })}
 - 사용자 이름: ${playerName}
 - 현재 호감도: ${affinity}
 
@@ -655,7 +861,19 @@ ${memories}
 
 [중요]
 - 이 대화는 ${this.maxTurns}턴 후 종료됩니다
-- 캐릭터 설정에 충실하되, '기억 조작', '프로젝트 네버그라드' 등 핵심 비밀은 Phase 2 전에 절대 언급 금지`;
+- 캐릭터 설정에 충실하되, '기억 조작', '프로젝트 네버그라드' 등 핵심 비밀은 Phase 2 전에 절대 언급 금지`
+            : `[Current Situation]
+- Date/time: ${daySlotLabel}
+- Location context: ${context || this._pickLocalized({ ko: '학교', en: 'school', ja: '学校', es: 'escuela', fr: 'ecole', de: 'Schule', 'pt-BR': 'escola' })}
+- User name: ${playerName}
+- Current affinity: ${affinity}
+
+${affinityGuide}
+${memories}
+
+[Important]
+- This conversation ends after ${this.maxTurns} turns
+- Stay faithful to the character profile, but do not reveal core secrets such as memory manipulation or Project Nevergrad before Phase 2`;
 
         return `${staticPart}\n===CACHE_BOUNDARY===\n${dynamicPart}`;
     }
@@ -665,6 +883,27 @@ ${memories}
      * @private
      */
     _getAffinityGuide(affinity, lang, charId) {
+        if (lang !== 'ko') {
+            if (charId === 'eunsu') {
+                if (affinity >= 70) {
+                    return `[Affinity guide] Very familiar. Do not make it romantic; respond with kindness learned from repeated observation and a hint of control. Avoid teacher-student seduction.`;
+                } else if (affinity >= 40) {
+                    return `[Affinity guide] Acts familiar but keeps distance. Mix concern with management, as if carefully recording the user's reactions.`;
+                } else if (affinity >= 10) {
+                    return `[Affinity guide] Polite and kind, but cautious like an observer. Interest feels closer to management than protection.`;
+                }
+            }
+
+            if (affinity >= 70) {
+                return `[Affinity guide] Very close. Be relaxed and kind, with subtle special feelings.`;
+            } else if (affinity >= 40) {
+                return `[Affinity guide] Familiar enough for jokes, but not fully informal yet.`;
+            } else if (affinity >= 10) {
+                return `[Affinity guide] Normal. Polite but still distant, interested yet cautious.`;
+            }
+            return `[Affinity guide] Unfamiliar or guarded. Be formal and show discomfort or suspicion.`;
+        }
+
         if (charId === 'eunsu') {
             if (affinity >= 70) {
                 return `[호감도 가이드] 매우 익숙함. 로맨스처럼 표현하지 말고, 반복 관찰로 학습한 다정함과 통제욕이 새어 나오게 반응. 교사-학생의 선을 넘는 유혹 표현 금지.`;
@@ -692,6 +931,7 @@ ${memories}
      */
     _buildFlagMemoriesForChar(charId) {
         if (typeof FLAG_MEMORIES === 'undefined') return '';
+        if (this._lang() !== 'ko') return '';
 
         const memories = FLAG_MEMORIES.filter(m =>
             m.char === charId && this.state.hasFlag(m.flag)
@@ -700,7 +940,7 @@ ${memories}
         if (memories.length === 0) return '';
 
         return '\n[최근 사건 및 기억]\n' +
-            memories.map(m => `- ${m.text.replace(/\{name\}/g, this.state.playerName || '전학생')}`).join('\n');
+            memories.map(m => `- ${m.text.replace(/\{name\}/g, this.state.playerName || this._defaultPlayerName())}`).join('\n');
     }
 
     /**
@@ -721,7 +961,7 @@ ${memories}
         };
 
         // 실명 공개 여부 체크
-        const langNames = names[lang] || names.ko;
+        const langNames = names[lang] || names.en;
         const result = { ...langNames };
 
         // 이름 미공개 상태이면 직함으로 표시
@@ -752,7 +992,7 @@ ${memories}
         };
 
         const charFallbacks = fallbacks[charId] || fallbacks.eunsu;
-        return charFallbacks[lang] || charFallbacks.ko;
+        return charFallbacks[lang] || charFallbacks.en;
     }
 
     // =========================================================================
@@ -807,7 +1047,7 @@ ${memories}
         const turnsEl = document.getElementById('ft-turns');
         if (turnsEl) {
             const turnsLabel = { ko: '남은 대화', en: 'Remaining', ja: '残り', es: 'Restante', fr: 'Restant', de: 'Verbleibend', 'pt-BR': 'Restante' };
-            turnsEl.textContent = `${turnsLabel[lang] || turnsLabel.ko}: ${this.maxTurns}/${this.maxTurns}`;
+            turnsEl.textContent = `${turnsLabel[lang] || turnsLabel.en}: ${this.maxTurns}/${this.maxTurns}`;
         }
 
         // 전송 이벤트 바인딩 먼저 — cloneNode로 노드를 교체하므로 그 후에 설정해야 함
@@ -821,7 +1061,7 @@ ${memories}
                 ja: 'メッセージを入力...', es: 'Escribe un mensaje...',
                 fr: 'Ecrivez un message...', de: 'Nachricht eingeben...', 'pt-BR': 'Digite uma mensagem...'
             };
-            input.placeholder = placeholders[lang] || placeholders.ko;
+            input.placeholder = placeholders[lang] || placeholders.en;
             input.disabled = false;
             input.value = '';
             setTimeout(() => input.focus(), 100);
@@ -832,7 +1072,7 @@ ${memories}
         if (sendBtn) {
             sendBtn.disabled = false;
             const sendLabels = { ko: '전송', en: 'Send', ja: '送信', es: 'Enviar', fr: 'Envoyer', de: 'Senden', 'pt-BR': 'Enviar' };
-            sendBtn.textContent = sendLabels[lang] || sendLabels.ko;
+            sendBtn.textContent = sendLabels[lang] || sendLabels.en;
         }
 
         // 스킵 버튼 표시 및 바인딩
@@ -1146,7 +1386,7 @@ ${memories}
 
         const sendBtn = document.createElement('button');
         sendBtn.className = 'freetalk-send-btn';
-        const sendLabel = this.engine.i18n?.getUI('ftSend') || '전송';
+        const sendLabel = this.engine.i18n?.getUI('ftSend') || 'Send';
         sendBtn.textContent = sendLabel;
 
         const handleSend = () => {
@@ -1208,7 +1448,7 @@ ${memories}
             'pt-BR': 'Pular esta conversa?'
         };
 
-        if (confirm(confirmMsg[lang] || confirmMsg.ko)) {
+        if (confirm(confirmMsg[lang] || confirmMsg.en)) {
             this._hideInputUI();
             const nextScene = this.nextSceneId;
             this.cleanup();

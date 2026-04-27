@@ -496,7 +496,15 @@ Object.assign(SCENARIO[5], {
         freeTalkMode: "ai_chat",
         freeTalkChar: "eunsu",
         freeTalkMax: 2,
-        freeTalkContext: "구관 지하실 출구 앞. {name}와 최유나는 서류와 카메라를 들고 있다. 은수는 실험과 유나 격리에 대한 질문을 받아도 능숙하게 회피하며 시간을 끈다.",
+        freeTalkContext: {
+            ko: "\uad6c\uad00 \uc9c0\ud558\uc2e4 \ucd9c\uad6c \uc55e. {name}\uc640 \ucd5c\uc720\ub098\ub294 \uc11c\ub958\uc640 \uce74\uba54\ub77c\ub97c \ub4e4\uace0 \uc788\ub2e4. \uc740\uc218\ub294 \uc2e4\ud5d8\uacfc \uc720\ub098 \uaca9\ub9ac\uc5d0 \ub300\ud55c \uc9c8\ubb38\uc744 \ubc1b\uc544\ub3c4 \ub2a5\uc219\ud558\uac8c \ud68c\ud53c\ud558\uba70 \uc2dc\uac04\uc744 \ub04c\ub2e4.",
+            en: "In front of the old building basement exit. {name} and Choi Yuna are holding documents and a camera. Eunsu keeps buying time, smoothly deflecting questions about the experiment and Yuna's confinement.",
+            ja: "\u65e7\u6821\u820e\u306e\u5730\u4e0b\u5ba4\u51fa\u53e3\u306e\u524d\u3002{name}\u3068\u30c1\u30a7\u30fb\u30e6\u30ca\u306f\u66f8\u985e\u3068\u30ab\u30e1\u30e9\u3092\u6301\u3063\u3066\u3044\u308b\u3002\u30a6\u30f3\u30b9\u306f\u5b9f\u9a13\u3068\u30e6\u30ca\u306e\u9694\u96e2\u306b\u95a2\u3059\u308b\u8cea\u554f\u3092\u5de7\u307f\u306b\u304b\u308f\u3057\u3001\u6642\u9593\u3092\u7a3c\u3050\u3002",
+            es: "Frente a la salida del sotano del edificio antiguo. {name} y Choi Yuna sostienen documentos y una camara. Eunsu gana tiempo, esquivando con habilidad las preguntas sobre el experimento y el encierro de Yuna.",
+            fr: "Devant la sortie du sous-sol de l'ancien batiment. {name} et Choi Yuna tiennent des documents et un appareil photo. Eunsu gagne du temps, evitant habilement les questions sur l'experience et l'isolement de Yuna.",
+            de: "Vor dem Ausgang des Kellers im alten Gebaude. {name} und Choi Yuna halten Dokumente und eine Kamera. Eunsu schindet Zeit und weicht Fragen zum Experiment und zu Yunas Isolation geschickt aus.",
+            'pt-BR': "Em frente a saida do porao do predio antigo. {name} e Choi Yuna seguram documentos e uma camera. Eunsu ganha tempo, desviando habilmente das perguntas sobre o experimento e o confinamento de Yuna."
+        },
         freeTalkNext: "day5_morning_true_post_ft_1"
     },
     "day5_morning_true_post_ft_1": {

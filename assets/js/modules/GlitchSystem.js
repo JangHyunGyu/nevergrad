@@ -19,6 +19,15 @@ class GlitchSystem {
         this.active = false;
     }
 
+    _lang() {
+        const lang = document.documentElement.lang || 'ko';
+        return String(lang).toLowerCase().startsWith('ko') ? 'ko' : 'en';
+    }
+
+    _pickLocalized(map) {
+        return map[this._lang()] || map.en || map.ko || '';
+    }
+
     // ===== Level 1: 미세한 위화감 =====
 
     /**
@@ -135,7 +144,10 @@ class GlitchSystem {
         await this.screenNoise(200);
 
         // 3단계: 새 라벨로 교체
-        statEl.textContent = statEl.dataset.thrillerlabel || "위험도";
+        statEl.textContent = statEl.dataset.thrillerlabel || this._pickLocalized({
+            ko: '위험도',
+            en: 'Danger'
+        });
         statEl.classList.add('stat-revealed');
     }
 
@@ -319,16 +331,35 @@ class GlitchSystem {
      * 스마트폰 앱 권한 허용 모달을 표시하고 자동으로 '항상 허용' 클릭
      * Day 2 안전 앱 설치 장면에서 사용
      */
-    showFakePermissionModal(appName = '학생 안전') {
+    showFakePermissionModal(appName = null) {
+        const copy = this._pickLocalized({
+            ko: {
+                appName: '학생 안전',
+                title: '"{appName}" 앱이 기기의 위치 정보에 접근하도록 허용하시겠습니까?',
+                desc: '이 앱은 사용하지 않는 동안에도 위치 정보를 사용합니다.',
+                allow: '항상 허용',
+                whileUsing: '앱 사용 중에만 허용',
+                deny: '허용 안 함'
+            },
+            en: {
+                appName: 'Student Safety',
+                title: 'Allow "{appName}" to access this device\'s location?',
+                desc: 'This app uses location even when you are not using it.',
+                allow: 'Always Allow',
+                whileUsing: 'Allow While Using App',
+                deny: "Don't Allow"
+            }
+        });
+        const displayName = appName || copy.appName;
         const modal = document.createElement('div');
         modal.className = 'fake-permission-modal';
         modal.innerHTML = `
-            <div class="modal-title">"${appName}" 앱이 기기의 위치 정보에 접근하도록 허용하시겠습니까?</div>
-            <div class="modal-desc">이 앱은 사용하지 않는 동안에도 위치 정보를 사용합니다.</div>
+            <div class="modal-title">${copy.title.replace('{appName}', displayName)}</div>
+            <div class="modal-desc">${copy.desc}</div>
             <div class="modal-buttons">
-                <button class="modal-btn allow">항상 허용</button>
-                <button class="modal-btn deny">앱 사용 중에만 허용</button>
-                <button class="modal-btn deny">허용 안 함</button>
+                <button class="modal-btn allow">${copy.allow}</button>
+                <button class="modal-btn deny">${copy.whileUsing}</button>
+                <button class="modal-btn deny">${copy.deny}</button>
             </div>
         `;
 
@@ -360,14 +391,10 @@ class GlitchSystem {
         if (this._tabGimmickActive) return;
         this._tabGimmickActive = true;
         this._originalTitle = document.title;
-        this._tabMessages = [
-            '어디 가?',
-            '...보고 있어.',
-            '{name}, 돌아와.',
-            '도망칠 수 없어.',
-            '나를 두고 가지 마.',
-            '왜 자꾸 다른 데 봐?',
-        ];
+        this._tabMessages = this._pickLocalized({
+            ko: ['어디 가?', '...보고 있어.', '{name}, 돌아와.', '도망칠 수 없어.', '나를 두고 가지 마.', '왜 자꾸 다른 데 봐?'],
+            en: ['Where are you going?', "...I'm watching.", '{name}, come back.', "You can't run.", "Don't leave me here.", 'Why do you keep looking away?']
+        });
         this._tabMsgIndex = 0;
 
         document.addEventListener('visibilitychange', this._onVisibilityChange = () => {
@@ -393,7 +420,10 @@ class GlitchSystem {
      */
     stopTabGimmick() {
         this._tabGimmickActive = false;
-        document.title = this._originalTitle || '졸업하지 못한 교실';
+        document.title = this._originalTitle || this._pickLocalized({
+            ko: '졸업하지 못한 교실',
+            en: 'The Classroom of No Graduation'
+        });
         if (this._onVisibilityChange) {
             document.removeEventListener('visibilitychange', this._onVisibilityChange);
         }
@@ -411,38 +441,66 @@ class GlitchSystem {
         const ghostStyle = 'color: #c8a2c8; font-size: 14px; font-style: italic; text-shadow: 0 0 5px #c8a2c8;';
         const warnStyle = 'color: #ff4444; font-size: 12px; font-weight: bold;';
         const dimStyle = 'color: #666; font-size: 11px;';
+        const copy = this._pickLocalized({
+            ko: {
+                title: '졸업하지 못한 교실',
+                watched: '\n...누군가 여기를 보고 있다.',
+                warningBox: '\n' +
+                    '██████████████████████████████████████\n' +
+                    '█                                    █\n' +
+                    '█   ...도망쳐.                        █\n' +
+                    '█   이 학교에서 나가.                   █\n' +
+                    '█   5일이야.                          █\n' +
+                    '█                                    █\n' +
+                    '█               — 이설화              █\n' +
+                    '█                                    █\n' +
+                    '██████████████████████████████████████',
+                protocol: '\n[경고] 피험자 #13 — 기억 재구성 프로토콜 진행 중',
+                date: '처리 예정일: Day 5 23:00',
+                exit: '\n구관 3층. 비상구. ...그 길로 나가.',
+                remember: '나를 기억해줘.'
+            },
+            en: {
+                title: 'The Classroom of No Graduation',
+                watched: '\n...Someone is watching this place.',
+                warningBox: '\n' +
+                    '██████████████████████████████████████\n' +
+                    '█                                    █\n' +
+                    '█   ...Run.                           █\n' +
+                    '█   Get out of this school.           █\n' +
+                    '█   Five days.                        █\n' +
+                    '█                                    █\n' +
+                    '█              - Lee Seolhwa          █\n' +
+                    '█                                    █\n' +
+                    '██████████████████████████████████████',
+                protocol: '\n[WARNING] Subject #13 - memory reconstruction protocol in progress',
+                date: 'Scheduled processing: Day 5 23:00',
+                exit: '\nOld building, third floor. Emergency exit. ...Take that route.',
+                remember: 'Remember me.'
+            }
+        });
 
         // 항상 표시되는 기본 메시지
         console.clear();
-        console.log('%c졸업하지 못한 교실', 'color: #ff6b9d; font-size: 20px; font-weight: bold;');
+        console.log(`%c${copy.title}`, 'color: #ff6b9d; font-size: 20px; font-weight: bold;');
         console.log('%c© Project Nevergrad', dimStyle);
 
         if (day >= 2) {
-            console.log('%c\n...누군가 여기를 보고 있다.', dimStyle);
+            console.log(`%c${copy.watched}`, dimStyle);
         }
 
         if (day >= 3) {
-            console.log('%c\n' +
-                '██████████████████████████████████████\n' +
-                '█                                    █\n' +
-                '█   ...도망쳐.                        █\n' +
-                '█   이 학교에서 나가.                   █\n' +
-                '█   5일이야.                          █\n' +
-                '█                                    █\n' +
-                '█               — 이설화              █\n' +
-                '█                                    █\n' +
-                '██████████████████████████████████████',
-                ghostStyle);
+            console.log(`%c${copy.warningBox}`, ghostStyle);
         }
 
         if (day >= 4) {
-            console.log('%c\n[경고] 피험자 #13 — 기억 재구성 프로토콜 진행 중', warnStyle);
-            console.log('%c처리 예정일: Day 5 23:00', warnStyle);
+            console.log(`%c${copy.protocol}`, warnStyle);
+            console.log(`%c${copy.date}`, warnStyle);
         }
 
         if (day >= 5) {
-            console.log('%c\n구관 3층. 비상구. ...그 길로 나가.', ghostStyle);
-            console.log('%c나를 기억해줘.', ghostStyle);
+            console.log(`%c${copy.exit}`, ghostStyle);
+            console.log(`%c${copy.remember}`, ghostStyle);
         }
     }
 

@@ -184,7 +184,7 @@ class GallerySystem {
             desc.className = 'gallery-card-desc';
             if (isUnlocked) {
                 const descriptions = GallerySystem.ENDING_DESCRIPTIONS[ending];
-                desc.textContent = descriptions?.[lang] || descriptions?.ko || '';
+                desc.textContent = descriptions?.[lang] || descriptions?.en || descriptions?.ko || '';
             } else {
                 desc.textContent = this._getLockedText(lang);
             }
@@ -231,7 +231,7 @@ class GallerySystem {
             de: 'Ein Ende, das noch entdeckt werden muss',
             'pt-BR': 'Um final ainda não alcançado'
         };
-        return map[lang] || map.ko;
+        return map[lang] || map.en;
     }
 
     /**

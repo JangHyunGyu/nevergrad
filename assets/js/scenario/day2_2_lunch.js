@@ -147,7 +147,19 @@ Object.assign(SCENARIO[2], {
     "day2_lunch_yuna_3": {
         character: "yuna_shy",
         // SCENARIO.md 5502: NG+ 시 유나가 "이건 제가 찍은 게 아닌데요?" 0.9초 유령
-        glitch: { ngPlusGhostText: "...이건 제가 찍은 게 아닌데요?", ghostDuration: 900, ghostY: 65 },
+        glitch: {
+            ngPlusGhostText: {
+                ko: "...\uc774\uac74 \uc81c\uac00 \ucc0d\uc740 \uac8c \uc544\ub2cc\ub370\uc694?",
+                en: "...I didn't take this photo, though?",
+                ja: "...\u3053\u308c\u3001\u79c1\u304c\u64ae\u3063\u305f\u3082\u306e\u3058\u3083\u306a\u3044\u3067\u3059\u3051\u3069?",
+                es: "...Pero yo no tome esta foto.",
+                fr: "...Pourtant, ce n'est pas moi qui ai pris cette photo.",
+                de: "...Dieses Foto habe ich aber nicht gemacht.",
+                'pt-BR': "...Mas nao fui eu que tirei esta foto."
+            },
+            ghostDuration: 900,
+            ghostY: 65
+        },
         next: "day2_lunch_yuna_4"
     },
     "day2_lunch_yuna_4": {

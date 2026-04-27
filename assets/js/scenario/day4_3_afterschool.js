@@ -347,7 +347,15 @@ Object.assign(SCENARIO[4], {
         type: "free_talk",
         freeTalkMode: "interrogation",
         freeTalkChar: "sea",
-        freeTalkContext: "12번의 반복 고백 후, 주인공이 떠나려 한다",
+        freeTalkContext: {
+            ko: "12\ubc88\uc758 \ubc18\ubcf5 \uace0\ubc31 \ud6c4, \uc8fc\uc778\uacf5\uc774 \ub5a0\ub098\ub824 \ud55c\ub2e4",
+            en: "After twelve repeated confessions, the protagonist is trying to leave.",
+            ja: "12\u56de\u306e\u7e70\u308a\u8fd4\u3057\u306e\u544a\u767d\u306e\u5f8c\u3001\u4e3b\u4eba\u516c\u306f\u53bb\u308d\u3046\u3068\u3057\u3066\u3044\u308b\u3002",
+            es: "Tras doce confesiones repetidas, el protagonista intenta irse.",
+            fr: "Apres douze confessions repetees, le protagoniste tente de partir.",
+            de: "Nach zwolf wiederholten Gestandnissen versucht der Protagonist zu gehen.",
+            'pt-BR': "Depois de doze confissoes repetidas, o protagonista tenta ir embora."
+        },
         freeTalkNext: "day4_after_ft_sea_post"
     },
     "day4_after_ft_sea_post": {

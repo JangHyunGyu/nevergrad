@@ -859,12 +859,28 @@ Object.assign(SCENARIO[5], {
                 seolhwaSeatOverride: "empty_uniform"
             },
             3: {
-                flashText: "처리 기록: 피험자 잔류 확인. 내부 체류 지속.",
+                flashText: {
+                    ko: "처리 기록: 피험자 잔류 확인. 내부 체류 지속.",
+                    en: "Processing record: subject containment confirmed. Internal stay continuing.",
+                    ja: "処理記録: 被験者の残留を確認。内部滞在を継続。",
+                    es: "Registro de proceso: permanencia del sujeto confirmada. Estancia interna continua.",
+                    fr: "Journal de traitement : maintien du sujet confirme. Sejour interne en cours.",
+                    de: "Verarbeitungsprotokoll: Verbleib des Subjekts bestaetigt. Interner Aufenthalt wird fortgesetzt.",
+                    "pt-BR": "Registro de processamento: permanencia do sujeito confirmada. Estadia interna continua."
+                },
                 flashDuration: 500
             },
             5: {
                 eunsuBreaksFourthWall: true,
-                eunsuLine: "...아직 보고 계시네요.",
+                eunsuLine: {
+                    ko: "...아직 보고 계시네요.",
+                    en: "...You are still watching.",
+                    ja: "...まだ見ているんですね。",
+                    es: "...Todavia estas mirando.",
+                    fr: "...Vous regardez encore.",
+                    de: "...Sie sehen immer noch zu.",
+                    "pt-BR": "...Voce ainda esta assistindo."
+                },
                 screenBlackout: true
             }
         },
@@ -878,8 +894,24 @@ Object.assign(SCENARIO[5], {
             5: {
                 emptyLunchbox: true,
                 seaLines: [
-                    "...이번에도 안 나갔네.",
-                    "당신도 안 보내주는 거예요?"
+                    {
+                        ko: "...이번에도 안 나갔네.",
+                        en: "...You did not leave this time either.",
+                        ja: "...今回も出ていかなかったね。",
+                        es: "...Esta vez tampoco saliste.",
+                        fr: "...Tu n'es pas parti cette fois non plus.",
+                        de: "...Diesmal bist du auch nicht gegangen.",
+                        "pt-BR": "...Voce tambem nao foi embora desta vez."
+                    },
+                    {
+                        ko: "당신도 안 보내주는 거예요?",
+                        en: "Are you not letting them go either?",
+                        ja: "あなたも行かせてくれないの?",
+                        es: "Tu tampoco los vas a dejar ir?",
+                        fr: "Toi non plus, tu ne les laisses pas partir ?",
+                        de: "Laesst du sie auch nicht gehen?",
+                        "pt-BR": "Voce tambem nao vai deixar ir?"
+                    }
                 ]
             }
         }
@@ -1233,7 +1265,15 @@ Object.assign(SCENARIO[5], {
         endingSubtitle: "day5_ending_complicit_subtitle",
         unskippable: true,
         glitch: {
-            textReplace: { from: "졸업하지 못한 교실", to: "졸업시키지 않는 교실" },
+            textReplace: {
+                ko: { from: "졸업하지 못한 교실", to: "졸업시키지 않는 교실" },
+                en: { from: "The Classroom of No Graduation", to: "The Classroom That Refuses Graduation" },
+                ja: { from: "卒業できない教室", to: "卒業させない教室" },
+                es: { from: "El Aula Sin Graduación", to: "El aula que no deja graduarse" },
+                fr: { from: "La classe sans diplôme", to: "La classe qui refuse le diplome" },
+                de: { from: "Das Klassenzimmer ohne Abschluss", to: "Das Klassenzimmer, das keinen Abschluss erlaubt" },
+                "pt-BR": { from: "A Sala de Aula Sem Formatura", to: "A sala que recusa a formatura" }
+            },
             endingCreditSaveUI: "COMPLICIT"
         },
         metaEffect: "complicitSlot",

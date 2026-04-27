@@ -178,6 +178,168 @@ class MetaHorrorSystem {
         this._lastCaptureReactionAt = 0;
     }
 
+    _lang() {
+        const lang = this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko';
+        return String(lang).toLowerCase().startsWith('ko') ? 'ko' : 'en';
+    }
+
+    _pickLocalized(map) {
+        return map[this._lang()] || map.en || map.ko || '';
+    }
+
+    _getTabMessages() {
+        if (this._lang() === 'ko') return this.tabMessages;
+        return [
+            'Where are you going?',
+            "...I'm watching.",
+            '{name}, come back.',
+            "You can't run.",
+            "Don't leave me here.",
+            'Why do you keep looking away?'
+        ];
+    }
+
+    _getConsoleMessages(day) {
+        if (this._lang() === 'ko') return this.consoleMessages[day];
+
+        const dim = 'color: #666; font-size: 11px;';
+        const ghost = 'color: #c8a2c8; font-size: 14px; font-style: italic; text-shadow: 0 0 5px #c8a2c8;';
+        const warn = 'color: #ff4444; font-size: 12px; font-weight: bold;';
+        const titleStyle = day >= 4
+            ? 'color: #8B0000; font-size: 20px; font-weight: bold;'
+            : day >= 3
+                ? 'color: #d4547a; font-size: 20px; font-weight: bold;'
+                : 'color: #ff6b9d; font-size: 20px; font-weight: bold;';
+        const messages = [
+            { text: 'The Classroom of No Graduation', style: titleStyle },
+            { text: '© Project Nevergrad', style: dim }
+        ];
+        if (day >= 2) {
+            messages.push({ text: '\n...Someone is watching this place.', style: dim });
+        }
+        if (day >= 3) {
+            messages.push({
+                text: '\n' +
+                    '██████████████████████████████████████\n' +
+                    '█                                    █\n' +
+                    '█   ...Run.                           █\n' +
+                    '█   Get out of this school.           █\n' +
+                    '█   Five days.                        █\n' +
+                    '█                                    █\n' +
+                    '█              - Lee Seolhwa          █\n' +
+                    '█                                    █\n' +
+                    '██████████████████████████████████████',
+                style: ghost
+            });
+        }
+        if (day >= 4) {
+            messages.push(
+                { text: '\n[WARNING] Subject #13 - memory reconstruction protocol in progress', style: warn },
+                { text: 'Scheduled processing: Day 5 23:00', style: warn }
+            );
+        }
+        if (day >= 5) {
+            messages.push(
+                { text: '\nOld building, third floor. Emergency exit. ...Take that route.', style: ghost },
+                { text: 'Remember me.', style: ghost }
+            );
+        }
+        return messages;
+    }
+
+    _getConsoleTrapCopy() {
+        return this._pickLocalized({
+            ko: {
+                found: '...나를 찾았구나.',
+                exit: '구관 3층, 비상구 앞에서 기다릴게.',
+                thanks: '고마워. ...꼭 나가.',
+                memoTitle: '=== 이설화의 메모 ===',
+                memo1: '피험자 기록은 관리자 폴더에 있어.',
+                memo2: '그런데... 정말 보고 싶은 거야?',
+                memo3: '이걸 안다고 해서 나갈 수 있는 건 아니야.'
+            },
+            en: {
+                found: '...You found me.',
+                exit: 'I will wait by the emergency exit on the third floor of the old building.',
+                thanks: 'Thank you. ...Please get out.',
+                memoTitle: '=== Lee Seolhwa\'s Memo ===',
+                memo1: 'The subject records are in the admin folder.',
+                memo2: 'But... do you really want to see them?',
+                memo3: 'Knowing this does not mean you can leave.'
+            }
+        });
+    }
+
+    _getPushMessages() {
+        if (this._lang() === 'ko') return this._pushMessages;
+        return [
+            { title: 'Han Sea', body: 'Where are you going? Come back.' },
+            { title: 'Han Sea', body: "...I'm watching." },
+            { title: 'Han Sea', body: "{name}, why aren't you coming back?" },
+            { title: 'Park Eunsu', body: 'Class is still in session. Where did you go?' },
+            { title: 'Hanul Smart Campus', body: 'Abnormal exit detected. Checking location...' }
+        ];
+    }
+
+    _getScreenshotReactions() {
+        return this._pickLocalized({
+            ko: {
+                save_slot: { text: '[\uAE30\uB85D \uC2DC\uB3C4 \uAC10\uC9C0] ...\uB204\uAD6C\uD55C\uD14C \uBCF4\uC5EC\uC904 \uAC70\uC57C?', blackout: true, blackoutDuration: 500 },
+                mirror_13faces: { text: '\uCC0D\uC5B4\uB3C4 \uC18C\uC6A9\uC5C6\uC5B4', blackout: true, blackoutDuration: 1000 },
+                day5_docs: { text: '[\uC678\uBD80 \uBC18\uCD9C \uAE08\uC9C0]', blackout: false },
+                complicit_sign: null
+            },
+            en: {
+                save_slot: { text: '[RECORDING ATTEMPT DETECTED] ...Who are you going to show?', blackout: true, blackoutDuration: 500 },
+                mirror_13faces: { text: 'A photo will not help you', blackout: true, blackoutDuration: 1000 },
+                day5_docs: { text: '[EXTERNAL EXPORT PROHIBITED]', blackout: false },
+                complicit_sign: null
+            }
+        });
+    }
+
+    _getCaptureBlockCopy() {
+        return this._pickLocalized({
+            ko: {
+                label: '[외부 반출 금지]',
+                sub: '포커스 복귀 시 화면이 복원됩니다.'
+            },
+            en: {
+                label: '[EXTERNAL EXPORT PROHIBITED]',
+                sub: 'The screen will be restored when focus returns.'
+            }
+        });
+    }
+
+    _getExitNotificationCopy(day, isNGPlus) {
+        const map = this._pickLocalized({
+            ko: {
+                eunsuTitle: '\uC740\uC218 \uC120\uC0DD\uB2D8',
+                eunsuBody: '\uC5B4\uB514 \uAC14\uC5B4\uC694? \uC218\uC5C5 \uC2DC\uAC04\uC774\uC5D0\uC694 :)',
+                seaTitle: '\uD55C\uC138\uC544',
+                seaBody: '...\uC65C \uC548 \uC640?',
+                appTitle: '\uD55C\uC6B8 \uC548\uC804 \uC571',
+                ngBody: '\uD53C\uD5D8\uC790 #13 \uC774\uD0C8 \uAC10\uC9C0. \uC704\uCE58 \uCD94\uC801 \uC911.',
+                day5Body: '\uC81C13\uCC28 \uC8FC\uAE30 \uC2DC\uAC04 \uCD08\uACFC. \uC7AC\uD22C\uC785 \uC900\uBE44.'
+            },
+            en: {
+                eunsuTitle: 'Ms. Eunsu',
+                eunsuBody: 'Where did you go? Class is still in session :)',
+                seaTitle: 'Han Sea',
+                seaBody: "...Why aren't you coming?",
+                appTitle: 'Hanul Safety App',
+                ngBody: 'Subject #13 exit detected. Tracking location.',
+                day5Body: 'Cycle #13 time limit exceeded. Preparing reinsertion.'
+            }
+        });
+
+        if (day <= 3) return { delayMs: 30 * 60 * 1000, title: map.eunsuTitle, body: map.eunsuBody };
+        if (day === 4 && !isNGPlus) return { delayMs: 15 * 60 * 1000, title: map.seaTitle, body: map.seaBody };
+        if (day === 4 && isNGPlus) return { delayMs: 10 * 60 * 1000, title: map.appTitle, body: map.ngBody };
+        if (day === 5) return { delayMs: 24 * 60 * 60 * 1000, title: map.appTitle, body: map.day5Body };
+        return null;
+    }
+
     // =========================================================================
     // 탭 제목 조작
     // =========================================================================
@@ -213,7 +375,8 @@ class MetaHorrorSystem {
 
         if (document.hidden) {
             // 탭 이탈 — 메시지 순환 표시
-            const msg = this.tabMessages[this.tabMessageIndex % this.tabMessages.length];
+            const tabMessages = this._getTabMessages();
+            const msg = tabMessages[this.tabMessageIndex % tabMessages.length];
             document.title = msg.replace('{name}', playerName);
             this.tabMessageIndex++;
 
@@ -244,7 +407,7 @@ class MetaHorrorSystem {
      * @param {number} day - 현재 Day (1~5)
      */
     printConsoleMessage(day) {
-        const messages = this.consoleMessages[day];
+        const messages = this._getConsoleMessages(day);
         if (!messages) return;
 
         console.clear();
@@ -266,20 +429,21 @@ class MetaHorrorSystem {
      */
     _setupConsoleTrap() {
         const ghostStyle = 'color: #c8a2c8; font-size: 14px; font-style: italic;';
+        const copy = this._getConsoleTrapCopy();
 
         // __escape 프로퍼티 정의 — 콘솔에서 __escape = true 입력 시 반응
         if (!Object.getOwnPropertyDescriptor(window, '__escape')) {
             let _escVal = false;
             Object.defineProperty(window, '__escape', {
                 get() {
-                    console.log('%c...나를 찾았구나.', ghostStyle);
-                    console.log('%c구관 3층, 비상구 앞에서 기다릴게.', ghostStyle);
+                    console.log(`%c${copy.found}`, ghostStyle);
+                    console.log(`%c${copy.exit}`, ghostStyle);
                     return _escVal;
                 },
                 set(v) {
                     _escVal = v;
                     if (v === true) {
-                        console.log('%c고마워. ...꼭 나가.', ghostStyle);
+                        console.log(`%c${copy.thanks}`, ghostStyle);
                     }
                 },
                 configurable: true
@@ -290,10 +454,10 @@ class MetaHorrorSystem {
         if (!Object.getOwnPropertyDescriptor(window, '__help')) {
             Object.defineProperty(window, '__help', {
                 get() {
-                    console.log('%c=== 이설화의 메모 ===', ghostStyle);
-                    console.log('%c피험자 기록은 관리자 폴더에 있어.', ghostStyle);
-                    console.log('%c그런데... 정말 보고 싶은 거야?', ghostStyle);
-                    console.log('%c이걸 안다고 해서 나갈 수 있는 건 아니야.', ghostStyle);
+                    console.log(`%c${copy.memoTitle}`, ghostStyle);
+                    console.log(`%c${copy.memo1}`, ghostStyle);
+                    console.log(`%c${copy.memo2}`, ghostStyle);
+                    console.log(`%c${copy.memo3}`, ghostStyle);
                     return undefined;
                 },
                 configurable: true
@@ -408,7 +572,8 @@ class MetaHorrorSystem {
      * @private
      */
     _sendNextPush() {
-        const msg = this._pushMessages[this._pushMsgIndex % this._pushMessages.length];
+        const messages = this._getPushMessages();
+        const msg = messages[this._pushMsgIndex % messages.length];
         this.sendPushNotification(msg.title, msg.body);
         this._pushMsgIndex++;
     }
@@ -482,23 +647,7 @@ class MetaHorrorSystem {
         if (Date.now() - this._lastCaptureReactionAt < 250) return;
         this._lastCaptureReactionAt = Date.now();
 
-        const reactions = {
-            save_slot: {
-                text: '[\uAE30\uB85D \uC2DC\uB3C4 \uAC10\uC9C0] ...\uB204\uAD6C\uD55C\uD14C \uBCF4\uC5EC\uC904 \uAC70\uC57C?',
-                blackout: true,
-                blackoutDuration: 500
-            },
-            mirror_13faces: {
-                text: '\uCC0D\uC5B4\uB3C4 \uC18C\uC6A9\uC5C6\uC5B4',
-                blackout: true,
-                blackoutDuration: 1000
-            },
-            day5_docs: {
-                text: '[\uC678\uBD80 \uBC18\uCD9C \uAE08\uC9C0]',
-                blackout: false
-            },
-            complicit_sign: null // 반응 없음 — 기록을 허용한다
-        };
+        const reactions = this._getScreenshotReactions();
 
         const reaction = reactions[ctx];
         if (!reaction) return;
@@ -535,6 +684,7 @@ class MetaHorrorSystem {
         if (this._captureBlockOverlay) return;
         if (Date.now() - this._lastCaptureReactionAt < 250) return;
         this._lastCaptureReactionAt = Date.now();
+        const copy = this._getCaptureBlockCopy();
 
         const overlay = document.createElement('div');
         overlay.className = 'capture-block-overlay';
@@ -554,7 +704,7 @@ class MetaHorrorSystem {
         `;
 
         const label = document.createElement('div');
-        label.textContent = '[외부 반출 금지]';
+        label.textContent = copy.label;
         label.style.cssText = `
             font-size: 1.2rem;
             font-weight: 700;
@@ -563,7 +713,7 @@ class MetaHorrorSystem {
         `;
 
         const sub = document.createElement('div');
-        sub.textContent = '포커스 복귀 시 화면이 복원됩니다.';
+        sub.textContent = copy.sub;
         sub.style.cssText = `
             font-size: 0.8rem;
             color: rgba(255, 255, 255, 0.72);
@@ -608,27 +758,9 @@ class MetaHorrorSystem {
             }
         } catch (e) { /* ignore */ }
 
-        // Day별 타이밍 및 메시지 결정
-        let delayMs, title, body;
-        if (day <= 3) {
-            delayMs = 30 * 60 * 1000; // 30분
-            title = '\uC740\uC218 \uC120\uC0DD\uB2D8';
-            body = '\uC5B4\uB514 \uAC14\uC5B4\uC694? \uC218\uC5C5 \uC2DC\uAC04\uC774\uC5D0\uC694 :)';
-        } else if (day === 4 && !isNGPlus) {
-            delayMs = 15 * 60 * 1000; // 15분
-            title = '\uD55C\uC138\uC544';
-            body = '...\uC65C \uC548 \uC640?';
-        } else if (day === 4 && isNGPlus) {
-            delayMs = 10 * 60 * 1000; // 10분
-            title = '\uD55C\uC6B8 \uC548\uC804 \uC571';
-            body = '\uD53C\uD5D8\uC790 #13 \uC774\uD0C8 \uAC10\uC9C0. \uC704\uCE58 \uCD94\uC801 \uC911.';
-        } else if (day === 5) {
-            delayMs = 24 * 60 * 60 * 1000; // 24시간
-            title = '\uD55C\uC6B8 \uC548\uC804 \uC571';
-            body = '\uC81C13\uCC28 \uC8FC\uAE30 \uC2DC\uAC04 \uCD08\uACFC. \uC7AC\uD22C\uC785 \uC900\uBE44.';
-        } else {
-            return;
-        }
+        const notificationCopy = this._getExitNotificationCopy(day, isNGPlus);
+        if (!notificationCopy) return;
+        const { delayMs, title, body } = notificationCopy;
 
         this._exitNotifScheduled = true;
 

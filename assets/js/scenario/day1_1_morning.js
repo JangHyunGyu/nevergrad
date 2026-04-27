@@ -304,7 +304,18 @@ Object.assign(SCENARIO[1], {
     // NG+ 딸기우유 대체 연출 (핑계 없는 건네기)
     "day1_choco_ngp_1": {
         character: "sea_smile",
-        glitch: { ngPlusGhostText: "...네가 가르쳐 줬잖아. 이전 회차에서.", ghostDuration: 500 },
+        glitch: {
+            ngPlusGhostText: {
+                ko: "...\ub124\uac00 \uac00\ub974\uccd0 \uc92c\uc796\uc544. \uc774\uc804 \ud68c\ucc28\uc5d0\uc11c.",
+                en: "...You taught me that. In the previous cycle.",
+                ja: "...\u524d\u306e\u5468\u56de\u3067\u3001\u3042\u306a\u305f\u304c\u6559\u3048\u3066\u304f\u308c\u305f\u3067\u3057\u3087\u3002",
+                es: "...Tu me ensenaste eso. En el ciclo anterior.",
+                fr: "...Tu me l'as appris. Dans le cycle precedent.",
+                de: "...Das hast du mir beigebracht. Im vorherigen Durchlauf.",
+                'pt-BR': "...Voce me ensinou isso. No ciclo anterior."
+            },
+            ghostDuration: 500
+        },
         next: "day1_choco_ngp_2"
     },
     "day1_choco_ngp_2": {

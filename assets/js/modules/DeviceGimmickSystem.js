@@ -63,6 +63,16 @@ class DeviceGimmickSystem {
         this._longPressTimer = null;
     }
 
+    _lang() {
+        return this.engine?.i18n?.currentLang || 'ko';
+    }
+
+    _pickLocalized(map) {
+        if (!map || typeof map !== 'object' || Array.isArray(map)) return map || '';
+        const lang = this._lang();
+        return map[lang] || map.en || map.ko || '';
+    }
+
     // =========================================================================
     // 진동 패턴 사전
     // =========================================================================
@@ -242,13 +252,25 @@ class DeviceGimmickSystem {
 
         const sec = Math.round(duration / 1000);
         let message = '';
+        const messages = this._pickLocalized({
+            ko: {
+                long: `${sec}\ucd08\ub098 \ub9dd\uc124\uc600\uc796\uc544... \uadf8\ub9cc\ud07c \uace0\ubbfc\ud588\ub2e4\ub294 \uac70\uc9c0?`,
+                medium: `${sec}\ucd08... \uaf64 \ub9dd\uc124\uc600\ub124.`,
+                short: `\uc7a0\uae50 \ub9dd\uc124\uc600\uc9c0? \ub2e4 \ubd24\uc5b4.`
+            },
+            en: {
+                long: `You hesitated for ${sec} seconds... thinking that hard?`,
+                medium: `${sec} seconds... that was quite a pause.`,
+                short: `You hesitated for a moment, didn't you? I saw it.`
+            }
+        });
 
         if (sec >= 10) {
-            message = `${sec}초나 망설였잖아... 그만큼 고민했다는 거지?`;
+            message = messages.long;
         } else if (sec >= 5) {
-            message = `${sec}초... 꽤 망설였네.`;
+            message = messages.medium;
         } else if (sec >= 3) {
-            message = `잠깐 망설였지? 다 봤어.`;
+            message = messages.short;
         }
 
         return {
@@ -517,27 +539,47 @@ class DeviceGimmickSystem {
         if (this.batteryLevel === null) return null;
 
         const level = this.batteryLevel;
+        const lines = this._pickLocalized({
+            ko: {
+                critical: `\ubc30\ud130\ub9ac ${level}%... \uace7 \uaebc\uc9c0\uaca0\ub124. \uadf8\ub7fc \ub098\ub3c4 \uc0ac\ub77c\uc9c0\ub294 \uac70\uc57c?`,
+                low: `\ubc30\ud130\ub9ac ${level}%\ubc16\uc5d0 \uc548 \ub0a8\uc558\uc5b4. \uc11c\ub458\ub7ec\uc57c \ud558\uc9c0 \uc54a\uc744\uae4c?`,
+                uneasy: `\ubc30\ud130\ub9ac ${level}%... \uc870\uae08 \ubd88\uc548\ud558\uc9c0 \uc54a\uc544?`,
+                mid: `\ubc30\ud130\ub9ac ${level}%. \uc544\uc9c1 \uc2dc\uac04\uc740 \uc788\uc5b4... \uc544\ub9c8.`,
+                full: `\ubc30\ud130\ub9ac ${level}%... \ucda9\uc804\ud574\ub193\uace0 \uc654\uad6c\ub098. \uc624\ub798 \uc788\uc744 \uc0dd\uac01\uc774\uc57c?`,
+                high: `\ubc30\ud130\ub9ac ${level}%. \uc5ec\uc720 \uc788\ub124. \ucc9c\ucc9c\ud788 \ud574\ub3c4 \ub3fc.`,
+                default: `\ubc30\ud130\ub9ac ${level}%... \uc54c\uace0 \uc788\uc5b4, \ub124 \ud3f0 \uc0c1\ud0dc.`
+            },
+            en: {
+                critical: `Battery ${level}%... it will shut off soon. Will I disappear too?`,
+                low: `Only ${level}% battery left. Shouldn't you hurry?`,
+                uneasy: `Battery ${level}%... doesn't that make you a little nervous?`,
+                mid: `Battery ${level}%. There is still time... probably.`,
+                full: `Battery ${level}%... you came prepared. Planning to stay a while?`,
+                high: `Battery ${level}%. Plenty left. Take your time.`,
+                default: `Battery ${level}%... I know your phone's condition.`
+            }
+        });
 
         if (level <= 5) {
-            return `배터리 ${level}%... 곧 꺼지겠네. 그럼 나도 사라지는 거야?`;
+            return lines.critical;
         }
         if (level <= 15) {
-            return `배터리 ${level}%밖에 안 남았어. 서둘러야 하지 않을까?`;
+            return lines.low;
         }
         if (level <= 30) {
-            return `배터리 ${level}%... 조금 불안하지 않아?`;
+            return lines.uneasy;
         }
         if (level <= 50) {
-            return `배터리 ${level}%. 아직 시간은 있어... 아마.`;
+            return lines.mid;
         }
         if (level >= 95) {
-            return `배터리 ${level}%... 충전해놓고 왔구나. 오래 있을 생각이야?`;
+            return lines.full;
         }
         if (level >= 80) {
-            return `배터리 ${level}%. 여유 있네. 천천히 해도 돼.`;
+            return lines.high;
         }
 
-        return `배터리 ${level}%... 알고 있어, 네 폰 상태.`;
+        return lines.default;
     }
 
     // =========================================================================
@@ -623,6 +665,15 @@ class DeviceGimmickSystem {
         `;
 
         const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+        const labels = this._pickLocalized({
+            ko: { ios: "\uae34\uae09 \uc54c\ub9bc", android: "\uae34\uae09\uc7ac\ub09c\ubb38\uc790", now: "\uc9c0\uae08" },
+            en: { ios: "Emergency Alert", android: "Emergency Alert", now: "now" },
+            ja: { ios: "\u7dca\u6025\u901a\u77e5", android: "\u7dca\u6025\u901f\u5831", now: "\u4eca" },
+            es: { ios: "Alerta de emergencia", android: "Alerta de emergencia", now: "ahora" },
+            fr: { ios: "Alerte d'urgence", android: "Alerte d'urgence", now: "maintenant" },
+            de: { ios: "Notfallwarnung", android: "Notfallwarnung", now: "jetzt" },
+            'pt-BR': { ios: "Alerta de emergencia", android: "Alerta de emergencia", now: "agora" }
+        });
 
         alert.innerHTML = `
             <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
@@ -633,9 +684,9 @@ class DeviceGimmickSystem {
                     font-size:16px; font-weight:bold; color:#fff;
                 ">!</div>
                 <div style="font-weight:600; font-size:0.9rem;">
-                    ${isIOS ? '긴급 알림' : '긴급재난문자'}
+                    ${isIOS ? labels.ios : labels.android}
                 </div>
-                <div style="margin-left:auto; font-size:0.75rem; color:#888;">지금</div>
+                <div style="margin-left:auto; font-size:0.75rem; color:#888;">${labels.now}</div>
             </div>
             <div style="font-size:0.85rem; line-height:1.4; color:#ddd;">
                 ${message}
@@ -697,7 +748,15 @@ class DeviceGimmickSystem {
             font-size: 0.82rem;
             letter-spacing: 2px;
         `;
-        killText.textContent = '[한울 안전 앱 재시작 중...]';
+        killText.textContent = this._pickLocalized({
+            ko: "[\ud55c\uc6b8 \uc548\uc804 \uc571 \uc7ac\uc2dc\uc791 \uc911...]",
+            en: "[Restarting Hanul Safety App...]",
+            ja: "[\u30cf\u30cc\u30eb\u5b89\u5168\u30a2\u30d7\u30ea\u3092\u518d\u8d77\u52d5\u4e2d...]",
+            es: "[Reiniciando App de Seguridad Hanul...]",
+            fr: "[Redemarrage de l'app Securite Hanul...]",
+            de: "[Hanul Sicherheits-App wird neu gestartet...]",
+            'pt-BR': "[Reiniciando App de Seguranca Hanul...]"
+        });
         overlay.appendChild(killText);
 
         await new Promise(r => setTimeout(r, duration));
@@ -714,7 +773,16 @@ class DeviceGimmickSystem {
      * Day 2 밤 핸드폰 알림 글리치 (SCENARIO.md 5424)
      * 0.3초간 내부 시스템 문구가 알림처럼 노출되었다 사라짐
      */
-    flashPhoneNotification(text = '[한울 안전 앱] 모니터링 활성화 중...', duration = 300) {
+    flashPhoneNotification(text = null, duration = 300) {
+        const displayText = text || this._pickLocalized({
+            ko: "[\ud55c\uc6b8 \uc548\uc804 \uc571] \ubaa8\ub2c8\ud130\ub9c1 \ud65c\uc131\ud654 \uc911...",
+            en: "[Hanul Safety App] Monitoring active...",
+            ja: "[\u30cf\u30cc\u30eb\u5b89\u5168\u30a2\u30d7\u30ea] \u30e2\u30cb\u30bf\u30ea\u30f3\u30b0\u6709\u52b9\u5316\u4e2d...",
+            es: "[App de Seguridad Hanul] Monitoreo activo...",
+            fr: "[App Securite Hanul] Surveillance active...",
+            de: "[Hanul Sicherheits-App] Uberwachung aktiv...",
+            'pt-BR': "[App de Seguranca Hanul] Monitoramento ativo..."
+        });
         const el = document.createElement('div');
         el.className = 'phone-flash-notification';
         el.style.cssText = `
@@ -739,7 +807,7 @@ class DeviceGimmickSystem {
         el.innerHTML = `
             <div style="display:flex; align-items:center; gap:8px;">
                 <div style="width:16px;height:16px;border-radius:4px;background:#902020;"></div>
-                <span style="font-weight:600;">${text}</span>
+                <span style="font-weight:600;">${displayText}</span>
             </div>
         `;
         document.body.appendChild(el);
@@ -919,6 +987,33 @@ class DeviceGimmickSystem {
             const portrait = isPortrait();
             const gameActive = !!document.getElementById('game-screen')?.classList.contains('active');
             const shouldShow = portrait;
+            const normalText = this._pickLocalized({
+                ko: "\ud654\uba74\uc744 \uac00\ub85c\ub85c \ud68c\uc804\ud574\uc8fc\uc138\uc694",
+                en: "Please rotate your device",
+                ja: "\u753b\u9762\u3092\u6a2a\u5411\u304d\u306b\u3057\u3066\u304f\u3060\u3055\u3044",
+                es: "Gira tu dispositivo",
+                fr: "Tournez votre appareil",
+                de: "Bitte drehe dein Gerat",
+                'pt-BR': "Gire seu dispositivo"
+            });
+            const eunsuText = this._pickLocalized({
+                ko: "\uc5b4\ub51c \ubcf4\ub294 \uac70\uc57c?<br>\ub2e4\uc2dc \ub611\ubc14\ub85c \ub4e4\uc5b4.",
+                en: "Where are you looking?<br>Hold it properly again.",
+                ja: "\u3069\u3053\u3092\u898b\u3066\u3044\u308b\u306e?<br>\u3082\u3046\u4e00\u5ea6\u307e\u3063\u3059\u3050\u6301\u3063\u3066.",
+                es: "A donde miras?<br>Sostenlo bien otra vez.",
+                fr: "Ou regardes-tu ?<br>Tiens-le droit.",
+                de: "Wohin schaust du?<br>Halte es wieder gerade.",
+                'pt-BR': "Para onde voce esta olhando?<br>Segure direito de novo."
+            });
+            const seaText = this._pickLocalized({
+                ko: "\ub3c4\ub9dd\uce58\ub824\uace0?<br>\ub098\ub97c \ub450\uace0?",
+                en: "Trying to run?<br>Leaving me behind?",
+                ja: "\u9003\u3052\u308b\u3064\u3082\u308a?<br>\u79c1\u3092\u7f6e\u3044\u3066?",
+                es: "Intentas huir?<br>Dejandome atras?",
+                fr: "Tu essaies de fuir ?<br>En me laissant ?",
+                de: "Willst du weglaufen?<br>Ohne mich?",
+                'pt-BR': "Tentando fugir?<br>Me deixando para tras?"
+            });
 
             prompt.className = 'rotate-prompt';
             prompt.style.display = shouldShow ? 'flex' : 'none';
@@ -931,19 +1026,19 @@ class DeviceGimmickSystem {
                 prompt.classList.add('orientation-hijack', 'normal');
                 prompt.innerHTML = `
                     <div class="orient-icon"></div>
-                    <div class="orient-text">화면을 가로로 회전해주세요<br>Please rotate your device</div>
+                    <div class="orient-text">${normalText}</div>
                 `;
             } else if (this._orientationHijackDay === 4) {
                 prompt.classList.add('orientation-hijack', 'hijack-eunsu');
                 prompt.innerHTML = `
                     <div class="hijack-face">👁️</div>
-                    <div class="hijack-text">어딜 보는 거야?<br>다시 똑바로 들어.</div>
+                    <div class="hijack-text">${eunsuText}</div>
                 `;
             } else {
                 prompt.classList.add('orientation-hijack', 'hijack-sea');
                 prompt.innerHTML = `
                     <div class="hijack-face">🖤</div>
-                    <div class="hijack-text">도망치려고?<br>나를 두고?</div>
+                    <div class="hijack-text">${seaText}</div>
                 `;
                 if (!this._orientationPromptVisible) {
                     this.vibrate([500]);
@@ -966,7 +1061,7 @@ class DeviceGimmickSystem {
                 prompt.className = 'rotate-prompt';
                 prompt.innerHTML = `
                     <div class="rotate-icon">📱</div>
-                    <div class="rotate-text">화면을 가로로 회전해주세요<br>Please rotate your device</div>
+                    <div class="rotate-text">${normalText}</div>
                 `;
                 this._orientationHijackBound = false;
                 this._orientationHijackHandler = null;

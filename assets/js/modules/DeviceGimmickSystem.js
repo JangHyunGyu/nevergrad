@@ -283,7 +283,7 @@ class DeviceGimmickSystem {
                 medium: `${sec} Sekunden... das war eine deutliche Pause.`,
                 short: `Du hast kurz gezögert, oder? Ich habe es gesehen.`
             },
-            'pt-BR': {
+            pt: {
                 long: `Você hesitou por ${sec} segundos... pensou tanto assim?`,
                 medium: `${sec} segundos... foi uma boa pausa.`,
                 short: `Você hesitou um instante, não foi? Eu vi.`
@@ -619,7 +619,7 @@ class DeviceGimmickSystem {
                 high: `Akku ${level}%. Genug übrig. Lass dir Zeit.`,
                 default: `Akku ${level}%... ich kenne den Zustand deines Handys.`
             },
-            'pt-BR': {
+            pt: {
                 critical: `Bateria ${level}%... vai desligar logo. Eu também vou desaparecer?`,
                 low: `Só resta ${level}% de bateria. Você não deveria se apressar?`,
                 uneasy: `Bateria ${level}%... isso não deixa você um pouco nervoso?`,
@@ -742,7 +742,7 @@ class DeviceGimmickSystem {
             es: { ios: "Alerta de emergencia", android: "Alerta de emergencia", now: "ahora" },
             fr: { ios: "Alerte d'urgence", android: "Alerte d'urgence", now: "maintenant" },
             de: { ios: "Notfallwarnung", android: "Notfallwarnung", now: "jetzt" },
-            'pt-BR': { ios: "Alerta de emergência", android: "Alerta de emergência", now: "agora" }
+            pt: { ios: "Alerta de emergência", android: "Alerta de emergência", now: "agora" }
         });
 
         alert.innerHTML = `
@@ -825,7 +825,7 @@ class DeviceGimmickSystem {
             es: "[Reiniciando App de Seguridad Hanul...]",
             fr: "[Redemarrage de l'app Securite Hanul...]",
             de: "[Hanul Sicherheits-App wird neu gestartet...]",
-            'pt-BR': "[Reiniciando App de Seguranca Hanul...]"
+            pt: "[Reiniciando App de Seguranca Hanul...]"
         });
         overlay.appendChild(killText);
 
@@ -851,7 +851,7 @@ class DeviceGimmickSystem {
             es: "[App de Seguridad Hanul] Monitoreo activo...",
             fr: "[App Securite Hanul] Surveillance active...",
             de: "[Hanul Sicherheits-App] Uberwachung aktiv...",
-            'pt-BR': "[App de Seguranca Hanul] Monitoramento ativo..."
+            pt: "[App de Seguranca Hanul] Monitoramento ativo..."
         });
         const el = document.createElement('div');
         el.className = 'phone-flash-notification';
@@ -1064,7 +1064,7 @@ class DeviceGimmickSystem {
                 es: "Gira tu dispositivo",
                 fr: "Tournez votre appareil",
                 de: "Bitte drehe dein Gerat",
-                'pt-BR': "Gire seu dispositivo"
+                pt: "Gire seu dispositivo"
             });
             const eunsuText = this._pickLocalized({
                 ko: "\uc5b4\ub51c \ubcf4\ub294 \uac70\uc57c?<br>\ub2e4\uc2dc \ub611\ubc14\ub85c \ub4e4\uc5b4.",
@@ -1073,7 +1073,7 @@ class DeviceGimmickSystem {
                 es: "A donde miras?<br>Sostenlo bien otra vez.",
                 fr: "Ou regardes-tu ?<br>Tiens-le droit.",
                 de: "Wohin schaust du?<br>Halte es wieder gerade.",
-                'pt-BR': "Para onde voce esta olhando?<br>Segure direito de novo."
+                pt: "Para onde voce esta olhando?<br>Segure direito de novo."
             });
             const seaText = this._pickLocalized({
                 ko: "\ub3c4\ub9dd\uce58\ub824\uace0?<br>\ub098\ub97c \ub450\uace0?",
@@ -1082,7 +1082,7 @@ class DeviceGimmickSystem {
                 es: "Intentas huir?<br>Dejandome atras?",
                 fr: "Tu essaies de fuir ?<br>En me laissant ?",
                 de: "Willst du weglaufen?<br>Ohne mich?",
-                'pt-BR': "Tentando fugir?<br>Me deixando para tras?"
+                pt: "Tentando fugir?<br>Me deixando para tras?"
             });
 
             prompt.className = 'rotate-prompt';

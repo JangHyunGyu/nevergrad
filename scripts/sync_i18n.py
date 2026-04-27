@@ -5,7 +5,7 @@ ko JSON을 마스터로 삼아 각 언어 JSON 파일을 동기화한다.
 
 동작:
 1. ko JSON에서 모든 씬 ID 추출
-2. 각 언어(ja/es/fr/de/pt-BR)의 기존 JSON에서 동일 ID 항목 유지
+2. 각 언어(ja/es/fr/de/pt)의 기존 JSON에서 동일 ID 항목 유지
 3. 존재하지 않는 항목은 생략 (I18nManager의 ko fallback이 처리)
 4. en은 이미 수동 번역 완료 → 건드리지 않음
 """
@@ -13,7 +13,7 @@ import sys, io, json, os, re
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 BASE = 'C:/workspace/nevergrad/assets/js/i18n'
-LANGUAGES = ['ja', 'es', 'fr', 'de', 'pt-BR']   # en은 이미 완성
+LANGUAGES = ['ja', 'es', 'fr', 'de', 'pt']   # en은 이미 완성
 DAYS = range(1, 6)
 SLOTS = ['morning', 'lunch', 'afterschool', 'night']
 
@@ -72,7 +72,7 @@ NAME_MAPS = {
         '???': '???',
         '': '',
     },
-    'pt-BR': {
+    'pt': {
         '나': 'Eu',
         '한세아': 'Han Sea',
         '세아': 'Sea',

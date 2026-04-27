@@ -180,7 +180,7 @@ class MetaHorrorSystem {
 
     _lang() {
         const lang = this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko';
-        return String(lang).toLowerCase().startsWith('pt') ? 'pt-BR' : String(lang).slice(0, 2);
+        return String(lang).toLowerCase().startsWith('pt') ? 'pt' : String(lang).slice(0, 2);
     }
 
     _pickLocalized(map) {
@@ -195,7 +195,7 @@ class MetaHorrorSystem {
             es: ['¿A dónde vas?', '...Te estoy mirando.', '{name}, vuelve.', 'No puedes escapar.', 'No me dejes aquí.', '¿Por qué sigues mirando a otro lado?'],
             fr: ['Où vas-tu ?', '...Je te regarde.', '{name}, reviens.', 'Tu ne peux pas fuir.', 'Ne me laisse pas ici.', 'Pourquoi regardes-tu ailleurs ?'],
             de: ['Wohin gehst du?', '...Ich sehe dich.', '{name}, komm zurück.', 'Du kannst nicht weglaufen.', 'Lass mich nicht hier.', 'Warum siehst du immer wieder weg?'],
-            'pt-BR': ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?']
+            pt: ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?']
         });
     }
 
@@ -266,7 +266,7 @@ class MetaHorrorSystem {
                 exit: '\nAltes Gebäude, dritter Stock. Notausgang. ...Nimm diesen Weg.',
                 remember: 'Erinnere dich an mich.'
             },
-            'pt-BR': {
+            pt: {
                 title: 'A Sala de Aula Sem Formatura',
                 watched: '\n...Alguém está observando este lugar.',
                 run: '...Corra.',
@@ -377,7 +377,7 @@ class MetaHorrorSystem {
                 memo2: 'Aber... willst du sie wirklich sehen?',
                 memo3: 'Das zu wissen bedeutet nicht, dass du gehen kannst.'
             },
-            'pt-BR': {
+            pt: {
                 found: '...Você me encontrou.',
                 exit: 'Vou esperar na saída de emergência do terceiro andar do prédio antigo.',
                 thanks: 'Obrigada. ...Por favor, saia.',
@@ -427,7 +427,7 @@ class MetaHorrorSystem {
                 { title: 'Park Eunsu', body: 'Der Unterricht läuft noch. Wohin bist du gegangen?' },
                 { title: 'Hanul Smart Campus', body: 'Ungewöhnliches Verlassen erkannt. Standort wird geprüft...' }
             ],
-            'pt-BR': [
+            pt: [
                 { title: 'Han Sea', body: 'Para onde você vai? Volte.' },
                 { title: 'Han Sea', body: '...Estou olhando.' },
                 { title: 'Han Sea', body: '{name}, por que você não volta?' },
@@ -475,7 +475,7 @@ class MetaHorrorSystem {
                 day5_docs: { text: '[EXTERNER EXPORT VERBOTEN]', blackout: false },
                 complicit_sign: null
             },
-            'pt-BR': {
+            pt: {
                 save_slot: { text: '[TENTATIVA DE REGISTRO DETECTADA] ...Para quem você vai mostrar?', blackout: true, blackoutDuration: 500 },
                 mirror_13faces: { text: 'Uma foto não vai ajudar', blackout: true, blackoutDuration: 1000 },
                 day5_docs: { text: '[EXPORTAÇÃO EXTERNA PROIBIDA]', blackout: false },
@@ -510,7 +510,7 @@ class MetaHorrorSystem {
                 label: '[EXTERNER EXPORT VERBOTEN]',
                 sub: 'Der Bildschirm wird wiederhergestellt, sobald der Fokus zurückkehrt.'
             },
-            'pt-BR': {
+            pt: {
                 label: '[EXPORTAÇÃO EXTERNA PROIBIDA]',
                 sub: 'A tela será restaurada quando o foco voltar.'
             }
@@ -573,7 +573,7 @@ class MetaHorrorSystem {
                 ngBody: 'Austritt von Subjekt #13 erkannt. Standortverfolgung läuft.',
                 day5Body: 'Zeitlimit von Zyklus #13 überschritten. Wiedereinsetzung wird vorbereitet.'
             },
-            'pt-BR': {
+            pt: {
                 eunsuTitle: 'Professora Eunsu',
                 eunsuBody: 'Para onde você foi? A aula ainda está acontecendo :)',
                 seaTitle: 'Han Sea',

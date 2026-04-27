@@ -21,7 +21,7 @@ class GlitchSystem {
 
     _lang() {
         const lang = document.documentElement.lang || 'ko';
-        return String(lang).toLowerCase().startsWith('pt') ? 'pt-BR' : String(lang).slice(0, 2);
+        return String(lang).toLowerCase().startsWith('pt') ? 'pt' : String(lang).slice(0, 2);
     }
 
     _pickLocalized(map) {
@@ -151,7 +151,7 @@ class GlitchSystem {
             es: 'Peligro',
             fr: 'Danger',
             de: 'Gefahr',
-            'pt-BR': 'Perigo'
+            pt: 'Perigo'
         });
         statEl.classList.add('stat-revealed');
     }
@@ -386,7 +386,7 @@ class GlitchSystem {
                 whileUsing: 'Beim Verwenden erlauben',
                 deny: 'Nicht erlauben'
             },
-            'pt-BR': {
+            pt: {
                 appName: 'Segurança Estudantil',
                 title: 'Permitir que "{appName}" acesse a localização deste dispositivo?',
                 desc: 'Este app usa a localização mesmo quando você não está usando.',
@@ -443,7 +443,7 @@ class GlitchSystem {
             es: ['¿A dónde vas?', '...Te estoy mirando.', '{name}, vuelve.', 'No puedes escapar.', 'No me dejes aquí.', '¿Por qué sigues mirando a otro lado?'],
             fr: ['Où vas-tu ?', '...Je te regarde.', '{name}, reviens.', 'Tu ne peux pas fuir.', 'Ne me laisse pas ici.', 'Pourquoi regardes-tu ailleurs ?'],
             de: ['Wohin gehst du?', '...Ich sehe dich.', '{name}, komm zurück.', 'Du kannst nicht weglaufen.', 'Lass mich nicht hier.', 'Warum siehst du immer wieder weg?'],
-            'pt-BR': ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?']
+            pt: ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?']
         });
         this._tabMsgIndex = 0;
 
@@ -477,7 +477,7 @@ class GlitchSystem {
             es: 'El Aula Sin Graduación',
             fr: 'La classe sans diplôme',
             de: 'Das Klassenzimmer ohne Abschluss',
-            'pt-BR': 'A Sala de Aula Sem Formatura'
+            pt: 'A Sala de Aula Sem Formatura'
         });
         if (this._onVisibilityChange) {
             document.removeEventListener('visibilitychange', this._onVisibilityChange);
@@ -605,7 +605,7 @@ class GlitchSystem {
                 exit: '\nAltes Gebäude, dritter Stock. Notausgang. ...Nimm diesen Weg.',
                 remember: 'Erinnere dich an mich.'
             },
-            'pt-BR': {
+            pt: {
                 title: 'A Sala de Aula Sem Formatura',
                 watched: '\n...Alguém está observando este lugar.',
                 warningBox: '\n' +

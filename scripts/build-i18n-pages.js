@@ -3,7 +3,7 @@
  * 언어별 정적 HTML 페이지 생성 — SEO 크롤러가 각 언어 콘텐츠를 인식하도록
  *
  * 사용: node scripts/build-i18n-pages.js
- * 결과: /en/index.html, /ja/index.html, /es/index.html, /fr/index.html, /de/index.html, /pt-BR/index.html
+ * 결과: /en/index.html, /ja/index.html, /es/index.html, /fr/index.html, /de/index.html, /pt/index.html
  */
 
 const fs = require('fs');
@@ -156,8 +156,8 @@ const LANGS = {
         archerlabLabel: 'ArcherLab-Startseite',
         koOptionLabel: 'Koreanisch'
     },
-    'pt-BR': {
-        locale: 'pt_BR',
+    pt: {
+        locale: 'pt',
         title: 'A Sala de Aula Sem Formatura',
         metaTitle: 'Nevergrad - A Sala de Aula Sem Formatura',
         metaDesc: 'No primeiro dia de transferência, tudo estava perfeito. Perfeito demais para ser normal.',

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const i18nDir = path.join(__dirname, '..', 'assets', 'js', 'i18n');
-const langs = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt-BR'];
+const langs = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt'];
 
 let totalStripped = 0;
 const fileStats = {};

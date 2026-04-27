@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const ROOT = path.resolve(process.cwd(), 'assets/js/i18n');
 const EN_DIR = path.join(ROOT, 'en');
-const TARGET_LANGS = ['ko', 'ja', 'es', 'fr', 'de', 'pt-BR'];
+const TARGET_LANGS = ['ko', 'ja', 'es', 'fr', 'de', 'pt'];
 const DEFAULT_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 
 const LANG_CONFIG = {
@@ -157,7 +157,7 @@ const LANG_CONFIG = {
     glossary:
       'Keep Sunbae/sunbae as Sunbae. Use Lehrerin/Klassenlehrerin naturally for Eunsu when the English says teacher. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 unchanged or clearly recognizable.',
   },
-  'pt-BR': {
+  pt: {
     label: 'Brazilian Portuguese',
     style:
       'native Brazilian Portuguese for a visual novel. Avoid Portugal phrasing and literal English. Keep the protagonist gender-neutral where possible and make dialogue idiomatic.',

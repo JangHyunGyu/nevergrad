@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * i18n sync checker
- * Compares ko (source) keys against en/ja/es/fr/de/pt-BR translations.
+ * Compares ko (source) keys against en/ja/es/fr/de/pt translations.
  * Reports missing keys, extra keys, and type mismatches.
  *
  * Usage: node scripts/i18n-check.js
@@ -12,7 +12,7 @@ const path = require('path');
 
 const I18N_DIR = path.join(__dirname, '..', 'assets', 'js', 'i18n');
 const SOURCE_LANG = 'ko';
-const TARGET_LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt-BR'];
+const TARGET_LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
 
 function getJsonFiles(langDir) {
     if (!fs.existsSync(langDir)) return [];

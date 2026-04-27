@@ -503,7 +503,7 @@ Object.assign(SCENARIO[5], {
             es: "Frente a la salida del sotano del edificio antiguo. {name} y Choi Yuna sostienen documentos y una camara. Eunsu gana tiempo, esquivando con habilidad las preguntas sobre el experimento y el encierro de Yuna.",
             fr: "Devant la sortie du sous-sol de l'ancien batiment. {name} et Choi Yuna tiennent des documents et un appareil photo. Eunsu gagne du temps, evitant habilement les questions sur l'experience et l'isolement de Yuna.",
             de: "Vor dem Ausgang des Kellers im alten Gebaude. {name} und Choi Yuna halten Dokumente und eine Kamera. Eunsu schindet Zeit und weicht Fragen zum Experiment und zu Yunas Isolation geschickt aus.",
-            'pt-BR': "Em frente a saida do porao do predio antigo. {name} e Choi Yuna seguram documentos e uma camera. Eunsu ganha tempo, desviando habilmente das perguntas sobre o experimento e o confinamento de Yuna."
+            pt: "Em frente a saida do porao do predio antigo. {name} e Choi Yuna seguram documentos e uma camera. Eunsu ganha tempo, desviando habilmente das perguntas sobre o experimento e o confinamento de Yuna."
         },
         freeTalkNext: "day5_morning_true_post_ft_1"
     },

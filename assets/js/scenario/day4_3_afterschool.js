@@ -354,7 +354,7 @@ Object.assign(SCENARIO[4], {
             es: "Tras doce confesiones repetidas, el protagonista intenta irse.",
             fr: "Apres douze confessions repetees, le protagoniste tente de partir.",
             de: "Nach zwolf wiederholten Gestandnissen versucht der Protagonist zu gehen.",
-            'pt-BR': "Depois de doze confissoes repetidas, o protagonista tenta ir embora."
+            pt: "Depois de doze confissoes repetidas, o protagonista tenta ir embora."
         },
         freeTalkNext: "day4_after_ft_sea_post"
     },

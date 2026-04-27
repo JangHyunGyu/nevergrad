@@ -866,7 +866,7 @@ Object.assign(SCENARIO[5], {
                     es: "Registro de proceso: permanencia del sujeto confirmada. Estancia interna continua.",
                     fr: "Journal de traitement : maintien du sujet confirme. Sejour interne en cours.",
                     de: "Verarbeitungsprotokoll: Verbleib des Subjekts bestaetigt. Interner Aufenthalt wird fortgesetzt.",
-                    "pt-BR": "Registro de processamento: permanencia do sujeito confirmada. Estadia interna continua."
+                    pt: "Registro de processamento: permanencia do sujeito confirmada. Estadia interna continua."
                 },
                 flashDuration: 500
             },
@@ -879,7 +879,7 @@ Object.assign(SCENARIO[5], {
                     es: "...Todavia estas mirando.",
                     fr: "...Vous regardez encore.",
                     de: "...Sie sehen immer noch zu.",
-                    "pt-BR": "...Voce ainda esta assistindo."
+                    pt: "...Voce ainda esta assistindo."
                 },
                 screenBlackout: true
             }
@@ -901,7 +901,7 @@ Object.assign(SCENARIO[5], {
                         es: "...Esta vez tampoco saliste.",
                         fr: "...Tu n'es pas parti cette fois non plus.",
                         de: "...Diesmal bist du auch nicht gegangen.",
-                        "pt-BR": "...Voce tambem nao foi embora desta vez."
+                        pt: "...Voce tambem nao foi embora desta vez."
                     },
                     {
                         ko: "당신도 안 보내주는 거예요?",
@@ -910,7 +910,7 @@ Object.assign(SCENARIO[5], {
                         es: "Tu tampoco los vas a dejar ir?",
                         fr: "Toi non plus, tu ne les laisses pas partir ?",
                         de: "Laesst du sie auch nicht gehen?",
-                        "pt-BR": "Voce tambem nao vai deixar ir?"
+                        pt: "Voce tambem nao vai deixar ir?"
                     }
                 ]
             }
@@ -1272,7 +1272,7 @@ Object.assign(SCENARIO[5], {
                 es: { from: "El Aula Sin Graduación", to: "El aula que no deja graduarse" },
                 fr: { from: "La classe sans diplôme", to: "La classe qui refuse le diplome" },
                 de: { from: "Das Klassenzimmer ohne Abschluss", to: "Das Klassenzimmer, das keinen Abschluss erlaubt" },
-                "pt-BR": { from: "A Sala de Aula Sem Formatura", to: "A sala que recusa a formatura" }
+                pt: { from: "A Sala de Aula Sem Formatura", to: "A sala que recusa a formatura" }
             },
             endingCreditSaveUI: "COMPLICIT"
         },

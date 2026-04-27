@@ -412,7 +412,7 @@ Object.assign(SCENARIO[2], {
                 es: "[App de Seguridad Hanul] Monitoreo del sujeto #13 - sueno detectado",
                 fr: "[App Securite Hanul] Surveillance du sujet #13 - sommeil detecte",
                 de: "[Hanul Sicherheits-App] Subjekt #13 Uberwachung - Schlaf erkannt",
-                'pt-BR': "[App de Seguranca Hanul] Monitoramento do sujeito #13 - sono detectado"
+                pt: "[App de Seguranca Hanul] Monitoramento do sujeito #13 - sono detectado"
             },
             phoneFlashDuration: 300
         },

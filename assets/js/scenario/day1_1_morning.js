@@ -312,7 +312,7 @@ Object.assign(SCENARIO[1], {
                 es: "...Tu me ensenaste eso. En el ciclo anterior.",
                 fr: "...Tu me l'as appris. Dans le cycle precedent.",
                 de: "...Das hast du mir beigebracht. Im vorherigen Durchlauf.",
-                'pt-BR': "...Voce me ensinou isso. No ciclo anterior."
+                pt: "...Voce me ensinou isso. No ciclo anterior."
             },
             ghostDuration: 500
         },

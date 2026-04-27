@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const KO_DIR = path.join(ROOT, 'assets', 'js', 'i18n', 'ko');
-const PT_DIR = path.join(ROOT, 'assets', 'js', 'i18n', 'pt-BR');
+const PT_DIR = path.join(ROOT, 'assets', 'js', 'i18n', 'pt');
 
 const NAME_MAP = {
   '나': 'Eu',

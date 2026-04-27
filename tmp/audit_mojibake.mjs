@@ -60,8 +60,8 @@ function isTextFile(file) {
 }
 
 function isLocalizedSurface(fileRel) {
-  return /^(de|en|es|fr|ja|pt-BR)\//.test(fileRel) ||
-    /^assets\/js\/i18n\/(de|en|es|fr|ja|pt-BR)\//.test(fileRel);
+  return /^(de|en|es|fr|ja|pt)\//.test(fileRel) ||
+    /^assets\/js\/i18n\/(de|en|es|fr|ja|pt)\//.test(fileRel);
 }
 
 function context(line, index) {

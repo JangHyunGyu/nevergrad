@@ -397,7 +397,7 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
 // ═══════════════════════════════════════════
 // 13. 다국어 빈 text 덮어쓰기 검사
 // ═══════════════════════════════════════════
-const langs = ['en', 'ja', 'es', 'fr', 'de', 'pt-BR'];
+const langs = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
 for (const lang of langs) {
     const langDir = path.join(I18N_DIR, lang);
     if (!fs.existsSync(langDir)) continue;
@@ -1741,7 +1741,7 @@ if (fs.existsSync(modulesPath)) {
         }
 
         // 7) 다국어 HTML에도 sl-overlay 존재 확인
-        const slLangs = ['en', 'ja', 'es', 'fr', 'de', 'pt-BR'];
+        const slLangs = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
         for (const lang of slLangs) {
             const langHtml = path.join(ROOT, lang, 'index.html');
             if (fs.existsSync(langHtml)) {
@@ -1833,7 +1833,7 @@ if (fs.existsSync(modulesPath)) {
     }
 
     // 조건부 선택지가 있는 씬에서 i18n 라벨 수가 전체 선택지 수와 일치하는지 재확인
-    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt-BR']) {
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt']) {
         const i18nLangDir = path.join(I18N_DIR, lang);
         if (!fs.existsSync(i18nLangDir)) continue;
         for (const {sceneId, scene} of Object.values(allScenes)) {

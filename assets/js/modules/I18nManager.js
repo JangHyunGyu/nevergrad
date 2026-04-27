@@ -145,7 +145,7 @@ class I18nManager {
     static DEFAULT_PLAYER_NAME = {
         ko: "전학생", en: "Transfer Student", ja: "転校生",
         es: "Estudiante", fr: "Nouvel Élève", de: "Schüler",
-        'pt-BR': "Estudante transferido"
+        pt: "Estudante transferido"
     };
 
     /**
@@ -176,7 +176,7 @@ class I18nManager {
         es: { label: "Español", flag: "🇪🇸" },
         fr: { label: "Français", flag: "🇫🇷" },
         de: { label: "Deutsch", flag: "🇩🇪" },
-        'pt-BR': { label: "Português (Brasil)", flag: "🇧🇷" }
+        pt: { label: "Português (Brasil)", flag: "🇧🇷" }
     };
 
     /**
@@ -369,7 +369,7 @@ class I18nManager {
                 night:       "{time}... spät. Hast du keine Angst, allein hier zu sein?"
             }
         },
-        'pt-BR': {
+        pt: {
             title: "A Sala de Aula Sem Formatura", subtitle: "Registro de 5 Dias",
             metaTitle: "Nevergrad - A Sala de Aula Sem Formatura",
             metaDesc: "No primeiro dia de transferência, tudo estava perfeito. Perfeito demais para ser normal.",
@@ -460,7 +460,7 @@ class I18nManager {
             me: "Ich",
             unknown: "???"
         },
-        'pt-BR': {
+        pt: {
             eunsu: "Professora orientadora",
             riin: "Enfermeira escolar",
             sea: "Han Sea",
@@ -540,7 +540,7 @@ class I18nManager {
                 seolhwa: "Synchronisation"
             }
         },
-        'pt-BR': {
+        pt: {
             romance: "Afinidade",
             thriller: {
                 eunsu: "Perigo",

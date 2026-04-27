@@ -442,7 +442,7 @@ class GlitchSystemAdvanced {
                 cameraFound: 'Unter dem falschen Boden war eine Kamera versteckt.',
                 lockerComplete: 'Kamera einschalten'
             },
-            'pt-BR': {
+            pt: {
                 player: 'Eu',
                 previous: 'Foto anterior',
                 next: 'Próxima foto',
@@ -515,7 +515,7 @@ class GlitchSystemAdvanced {
             es: romanizedNames,
             fr: romanizedNames,
             de: romanizedNames,
-            'pt-BR': romanizedNames
+            pt: romanizedNames
         };
         const copyByLang = {
             ko: {
@@ -644,7 +644,7 @@ class GlitchSystemAdvanced {
                     'Sogar die Falte am Uniformkragen stimmt überein.'
                 ]
             },
-            'pt-BR': {
+            pt: {
                 titleYuna: 'YUNA_CAM / ALUNOS_TRANSFERIDOS',
                 titleDefault: 'Rolo da câmera',
                 gate: 'Portão da escola',
@@ -1240,7 +1240,7 @@ class GlitchSystemAdvanced {
                     es: '...Corre',
                     fr: '...Fuis',
                     de: '...Lauf',
-                    'pt-BR': '...Corra'
+                    pt: '...Corra'
                 }), 20, 15, 2500);
                 await this._sleep(800);
                 this.showGhostText(this._pickLocalized({
@@ -1250,7 +1250,7 @@ class GlitchSystemAdvanced {
                     es: 'Sal de aquí',
                     fr: "Sors d'ici",
                     de: 'Raus hier',
-                    'pt-BR': 'Saia daqui'
+                    pt: 'Saia daqui'
                 }), 75, 25, 2000);
                 await this._sleep(1200);
                 this.showGhostText(this._pickLocalized({
@@ -1260,7 +1260,7 @@ class GlitchSystemAdvanced {
                     es: 'No lo bebas',
                     fr: 'Ne bois pas',
                     de: 'Trink es nicht',
-                    'pt-BR': 'Não beba'
+                    pt: 'Não beba'
                 }), 30, 70, 1800);
 
                 // 노이즈 플래시
@@ -1337,7 +1337,7 @@ class GlitchSystemAdvanced {
                     es: 'El aula sin graduación',
                     fr: 'La classe sans diplôme',
                     de: 'Das Klassenzimmer ohne Abschluss',
-                    'pt-BR': 'A sala sem formatura'
+                    pt: 'A sala sem formatura'
                 }), 50, 20, 4000);
                 this.showGhostText(this._pickLocalized({
                     ko: '도망칠 수 없어',
@@ -1346,7 +1346,7 @@ class GlitchSystemAdvanced {
                     es: 'No puedes huir',
                     fr: 'Tu ne peux pas fuir',
                     de: 'Du kannst nicht weglaufen',
-                    'pt-BR': 'Você não pode fugir'
+                    pt: 'Você não pode fugir'
                 }), 30, 50, 3000);
                 this.showGhostText(this._pickLocalized({
                     ko: '{name}, 돌아와',
@@ -1355,7 +1355,7 @@ class GlitchSystemAdvanced {
                     es: '{name}, vuelve',
                     fr: '{name}, reviens',
                     de: '{name}, komm zurück',
-                    'pt-BR': '{name}, volte'
+                    pt: '{name}, volte'
                 }), 70, 40, 3500);
 
                 await this.showHeavyGlitch(2000);
@@ -1423,7 +1423,7 @@ class GlitchSystemAdvanced {
     _lang() {
         const lang = this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko';
         const normalized = String(lang).toLowerCase();
-        return normalized.startsWith('pt') ? 'pt-BR' : normalized.slice(0, 2);
+        return normalized.startsWith('pt') ? 'pt' : normalized.slice(0, 2);
     }
 
     _pickLocalized(map) {
@@ -1441,7 +1441,7 @@ class GlitchSystemAdvanced {
                 es: 'Afinidad',
                 fr: 'Affinité',
                 de: 'Zuneigung',
-                'pt-BR': 'Afinidade'
+                pt: 'Afinidade'
             });
     }
 
@@ -1454,7 +1454,7 @@ class GlitchSystemAdvanced {
                 es: 'Peligro',
                 fr: 'Danger',
                 de: 'Gefahr',
-                'pt-BR': 'Perigo'
+                pt: 'Perigo'
             });
     }
 
@@ -1508,7 +1508,7 @@ class GlitchSystemAdvanced {
             es: romanizedNames,
             fr: romanizedNames,
             de: romanizedNames,
-            'pt-BR': romanizedNames
+            pt: romanizedNames
         };
         const names = namesByLang[this._lang()] || namesByLang.en;
         return names[slotId] || fallback;
@@ -1529,7 +1529,7 @@ class GlitchSystemAdvanced {
                 es: 'Graduado',
                 fr: 'Diplômé',
                 de: 'Abgeschlossen',
-                'pt-BR': 'Formado'
+                pt: 'Formado'
             },
             active: {
                 en: 'Active',
@@ -1537,7 +1537,7 @@ class GlitchSystemAdvanced {
                 es: 'En curso',
                 fr: 'En cours',
                 de: 'Aktiv',
-                'pt-BR': 'Em andamento'
+                pt: 'Em andamento'
             },
             corrupted: {
                 en: '██ADVERSE██ external contact, escape attempt',
@@ -1545,7 +1545,7 @@ class GlitchSystemAdvanced {
                 es: '██ADVERSO██ contacto externo, intento de fuga',
                 fr: '██ANOMALIE██ contact externe, tentative de fuite',
                 de: '██ABWEICHUNG██ externer Kontakt, Fluchtversuch',
-                'pt-BR': '██ADVERSO██ contato externo, tentativa de fuga'
+                pt: '██ADVERSO██ contato externo, tentativa de fuga'
             },
             failed9: {
                 en: 'Early detection, forced processing',
@@ -1553,7 +1553,7 @@ class GlitchSystemAdvanced {
                 es: 'Detección temprana, procesamiento forzado',
                 fr: 'Détection précoce, traitement forcé',
                 de: 'Frühe Entdeckung, Zwangsverarbeitung',
-                'pt-BR': 'Detecção precoce, processamento forçado'
+                pt: 'Detecção precoce, processamento forçado'
             },
             failed: {
                 en: 'Escape attempt, failed',
@@ -1561,7 +1561,7 @@ class GlitchSystemAdvanced {
                 es: 'Intento de fuga, fallido',
                 fr: 'Tentative de fuite, échec',
                 de: 'Fluchtversuch, gescheitert',
-                'pt-BR': 'Tentativa de fuga, falhou'
+                pt: 'Tentativa de fuga, falhou'
             },
             processed: {
                 en: 'Processed',
@@ -1569,7 +1569,7 @@ class GlitchSystemAdvanced {
                 es: 'Procesado',
                 fr: 'Traité',
                 de: 'Verarbeitet',
-                'pt-BR': 'Processado'
+                pt: 'Processado'
             }
         };
         if (statusClass === 'graduated') return this._pickLocalized(status.graduated);
@@ -1593,7 +1593,7 @@ class GlitchSystemAdvanced {
                 es: 'Intento de desviación del Día 4',
                 fr: 'Tentative de déviation du jour 4',
                 de: 'Abweichungsversuch an Tag 4',
-                'pt-BR': 'Tentativa de desvio no Dia 4'
+                pt: 'Tentativa de desvio no Dia 4'
             });
         }
         if (note.includes('이설화')) {
@@ -1603,7 +1603,7 @@ class GlitchSystemAdvanced {
                 es: 'Contacto externo: Lee Seolhwa',
                 fr: 'Contact externe : Lee Seolhwa',
                 de: 'Externer Kontakt: Lee Seolhwa',
-                'pt-BR': 'Contato externo: Lee Seolhwa'
+                pt: 'Contato externo: Lee Seolhwa'
             });
         }
         if (note.includes('Day 3')) {
@@ -1613,7 +1613,7 @@ class GlitchSystemAdvanced {
                 es: 'Detección temprana del Día 3',
                 fr: 'Détection précoce du jour 3',
                 de: 'Frühe Entdeckung an Tag 3',
-                'pt-BR': 'Detecção precoce no Dia 3'
+                pt: 'Detecção precoce no Dia 3'
             });
         }
         return note;
@@ -1631,13 +1631,13 @@ class GlitchSystemAdvanced {
 
     _localizedEndingCreditStatus(ending, fallbackSlot) {
         const map = {
-            TRUE: { ko: '졸업 ✓', en: 'Graduated ✓', ja: '卒業 ✓', es: 'Graduado ✓', fr: 'Diplômé ✓', de: 'Abgeschlossen ✓', 'pt-BR': 'Formado ✓', c: 'graduated' },
-            ESCAPE: { ko: '실종', en: 'Missing', ja: '失踪', es: 'Desaparecido', fr: 'Disparu', de: 'Vermisst', 'pt-BR': 'Desaparecido', c: 'missing' },
-            RESIST: { ko: '동행', en: 'Escaped together', ja: '同行', es: 'Escape conjunto', fr: 'Évadés ensemble', de: 'Gemeinsam entkommen', 'pt-BR': 'Fuga conjunta', c: 'escaped' },
-            CAGE: { ko: '잔류', en: 'Contained', ja: '残留', es: 'Contenido', fr: 'Confiné', de: 'Eingeschlossen', 'pt-BR': 'Contido', c: 'contained' },
-            FORGET: { ko: '처리 완료', en: 'Processed', ja: '処理完了', es: 'Procesado', fr: 'Traité', de: 'Verarbeitet', 'pt-BR': 'Processado', c: 'terminated' },
-            GHOST: { ko: '소실', en: 'Lost', ja: '消失', es: 'Perdido', fr: 'Perdu', de: 'Verloren', 'pt-BR': 'Perdido', c: 'missing' },
-            COMPLICIT: { ko: '전환 - 담당자', en: 'Converted - handler', ja: '転換 - 担当者', es: 'Convertido - responsable', fr: 'Converti - responsable', de: 'Umgewandelt - Betreuer', 'pt-BR': 'Convertido - responsável', c: 'converted' }
+            TRUE: { ko: '졸업 ✓', en: 'Graduated ✓', ja: '卒業 ✓', es: 'Graduado ✓', fr: 'Diplômé ✓', de: 'Abgeschlossen ✓', pt: 'Formado ✓', c: 'graduated' },
+            ESCAPE: { ko: '실종', en: 'Missing', ja: '失踪', es: 'Desaparecido', fr: 'Disparu', de: 'Vermisst', pt: 'Desaparecido', c: 'missing' },
+            RESIST: { ko: '동행', en: 'Escaped together', ja: '同行', es: 'Escape conjunto', fr: 'Évadés ensemble', de: 'Gemeinsam entkommen', pt: 'Fuga conjunta', c: 'escaped' },
+            CAGE: { ko: '잔류', en: 'Contained', ja: '残留', es: 'Contenido', fr: 'Confiné', de: 'Eingeschlossen', pt: 'Contido', c: 'contained' },
+            FORGET: { ko: '처리 완료', en: 'Processed', ja: '処理完了', es: 'Procesado', fr: 'Traité', de: 'Verarbeitet', pt: 'Processado', c: 'terminated' },
+            GHOST: { ko: '소실', en: 'Lost', ja: '消失', es: 'Perdido', fr: 'Perdu', de: 'Verloren', pt: 'Perdido', c: 'missing' },
+            COMPLICIT: { ko: '전환 - 담당자', en: 'Converted - handler', ja: '転換 - 担当者', es: 'Convertido - responsable', fr: 'Converti - responsable', de: 'Umgewandelt - Betreuer', pt: 'Convertido - responsável', c: 'converted' }
         };
         const entry = map[ending];
         if (!entry) return { s: fallbackSlot.status, c: fallbackSlot.statusClass };
@@ -1653,7 +1653,7 @@ class GlitchSystemAdvanced {
                 es: 'Estos datos están dañados.',
                 fr: 'Ces données sont corrompues.',
                 de: 'Diese Daten sind beschädigt.',
-                'pt-BR': 'Estes dados estão corrompidos.'
+                pt: 'Estes dados estão corrompidos.'
             });
         }
         if (slot.statusClass === 'active') {
@@ -1664,7 +1664,7 @@ class GlitchSystemAdvanced {
                 es: 'En curso...',
                 fr: 'En cours...',
                 de: 'In Bearbeitung...',
-                'pt-BR': 'Em andamento...'
+                pt: 'Em andamento...'
             });
         }
         return this._pickLocalized({
@@ -1674,7 +1674,7 @@ class GlitchSystemAdvanced {
             es: 'Permiso denegado.',
             fr: 'Autorisation refusée.',
             de: 'Zugriff verweigert.',
-            'pt-BR': 'Permissão negada.'
+            pt: 'Permissão negada.'
         });
     }
 
@@ -1951,7 +1951,7 @@ class GlitchSystemAdvanced {
                 es: '(los muertos no pueden sobrescribirse)',
                 fr: '(les morts ne peuvent pas \u00eatre \u00e9cras\u00e9s)',
                 de: '(die Toten k\u00f6nnen nicht \u00fcberschrieben werden)',
-                'pt-BR': '(os mortos não podem ser sobrescritos)'
+                pt: '(os mortos não podem ser sobrescritos)'
             };
             sub.textContent = loadSubTexts[lang] || loadSubTexts.en;
         }
@@ -1980,7 +1980,7 @@ class GlitchSystemAdvanced {
                 es: '#14 Ingreso (Load Subject #14)',
                 fr: '#14 Admission (Load Subject #14)',
                 de: '#14 Aufnahme (Load Subject #14)',
-                'pt-BR': '#14 Inserção (Load Subject #14)'
+                pt: '#14 Inserção (Load Subject #14)'
             }),
             ESCAPE: this._pickLocalized({
                 ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
@@ -1989,7 +1989,7 @@ class GlitchSystemAdvanced {
                 es: '...Nada ha cambiado.',
                 fr: "...Rien n'a changé.",
                 de: '...Nichts hat sich geändert.',
-                'pt-BR': '...Nada mudou.'
+                pt: '...Nada mudou.'
             }),
             GHOST: this._pickLocalized({
                 ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
@@ -1998,7 +1998,7 @@ class GlitchSystemAdvanced {
                 es: '...Nada ha cambiado.',
                 fr: "...Rien n'a changé.",
                 de: '...Nichts hat sich geändert.',
-                'pt-BR': '...Nada mudou.'
+                pt: '...Nada mudou.'
             }),
             RESIST: this._pickLocalized({
                 ko: '\uC740\uC218\uB294 \uB5A0\uB0AC\uB2E4. \uC774\uC0AC\uD68C\uB294 \uB0A8\uC558\uB2E4.',
@@ -2007,7 +2007,7 @@ class GlitchSystemAdvanced {
                 es: 'Eunsu se fue. La junta permanece.',
                 fr: 'Eunsu est partie. Le conseil reste.',
                 de: 'Eunsu ist gegangen. Der Vorstand bleibt.',
-                'pt-BR': 'Eunsu foi embora. O conselho permanece.'
+                pt: 'Eunsu foi embora. O conselho permanece.'
             }),
             TRUE: this._pickLocalized({
                 ko: '...\uB2E4 \uB05D\uB0AC\uB294\uB370.',
@@ -2016,7 +2016,7 @@ class GlitchSystemAdvanced {
                 es: '...Pero ya había terminado.',
                 fr: "...Mais c'était terminé.",
                 de: '...Aber es war vorbei.',
-                'pt-BR': '...Mas já tinha acabado.'
+                pt: '...Mas já tinha acabado.'
             }),
             COMPLICIT: this._pickLocalized({
                 ko: `#14 \uD22C\uC785 \uC2B9\uC778 \u2014 \uB2F4\uB2F9: ${playerName}`,
@@ -2025,7 +2025,7 @@ class GlitchSystemAdvanced {
                 es: `#14 Ingreso aprobado - responsable: ${playerName}`,
                 fr: `#14 Admission approuvée - responsable : ${playerName}`,
                 de: `#14 Aufnahme genehmigt - Betreuer: ${playerName}`,
-                'pt-BR': `#14 Inserção aprovada - responsável: ${playerName}`
+                pt: `#14 Inserção aprovada - responsável: ${playerName}`
             })
         };
 
@@ -2037,7 +2037,7 @@ class GlitchSystemAdvanced {
             es: 'El registro aún no se ha cerrado.',
             fr: "Le dossier n'est pas encore clos.",
             de: 'Der Eintrag ist noch nicht geschlossen.',
-            'pt-BR': 'O registro ainda não foi encerrado.'
+            pt: 'O registro ainda não foi encerrado.'
         });
 
         const flickerText = flickerTexts[lastEnding];
@@ -2195,7 +2195,7 @@ class GlitchSystemAdvanced {
                 es: '...Ya sabes la respuesta.',
                 fr: '...Tu connais déjà la réponse.',
                 de: '...Du kennst die Antwort schon.',
-                'pt-BR': '...Você já sabe a resposta.'
+                pt: '...Você já sabe a resposta.'
             }),
             'day3_after_riin_choice': this._pickLocalized({
                 ko: '너 이거 맛 알잖아.',
@@ -2204,7 +2204,7 @@ class GlitchSystemAdvanced {
                 es: 'Sabes a qué sabe esto.',
                 fr: 'Tu sais quel goût ça a.',
                 de: 'Du kennst diesen Geschmack.',
-                'pt-BR': 'Você sabe que gosto isso tem.'
+                pt: 'Você sabe que gosto isso tem.'
             }),
             'day5_morning_proposal_timer': this._pickLocalized({
                 ko: '또?',
@@ -2213,7 +2213,7 @@ class GlitchSystemAdvanced {
                 es: '¿Otra vez?',
                 fr: 'Encore ?',
                 de: 'Schon wieder?',
-                'pt-BR': 'De novo?'
+                pt: 'De novo?'
             })
         };
 
@@ -2256,7 +2256,7 @@ class GlitchSystemAdvanced {
                 es: 'Otra vez',
                 fr: 'Encore',
                 de: 'Wieder',
-                'pt-BR': 'De novo'
+                pt: 'De novo'
             }),
             'day1_eunsu_2': this._pickLocalized({
                 ko: '또',
@@ -2265,7 +2265,7 @@ class GlitchSystemAdvanced {
                 es: 'Otra vez',
                 fr: 'Encore',
                 de: 'Wieder',
-                'pt-BR': 'De novo'
+                pt: 'De novo'
             }),
             'day1_choco_1': this._pickLocalized({
                 ko: '이번에도',
@@ -2274,7 +2274,7 @@ class GlitchSystemAdvanced {
                 es: 'Esta vez también',
                 fr: 'Cette fois aussi',
                 de: 'Auch diesmal',
-                'pt-BR': 'Desta vez também'
+                pt: 'Desta vez também'
             })
         };
 
@@ -2406,7 +2406,7 @@ class GlitchSystemAdvanced {
                 es: '\u2191 Desliza hacia abajo',
                 fr: '\u2191 Glissez vers le bas',
                 de: '\u2191 Nach unten wischen',
-                'pt-BR': '\u2191 Deslize para baixo'
+                pt: '\u2191 Deslize para baixo'
             };
             hint.textContent = hintTexts[lang] || hintTexts.en;
             container.appendChild(hint);
@@ -2598,7 +2598,7 @@ class GlitchSystemAdvanced {
             es: 'Soy la decimotercera cáscara.',
             fr: 'Je suis la treizième coquille.',
             de: 'Ich bin die dreizehnte Hülle.',
-            'pt-BR': 'Eu sou a décima terceira casca.'
+            pt: 'Eu sou a décima terceira casca.'
         });
         overlay.appendChild(finalEl);
 
@@ -2634,7 +2634,7 @@ class GlitchSystemAdvanced {
                 es: '...Siento que conozco este camino. ¿Por qué? Es mi primera vez en esta escuela. ...Debo estar cansado.',
                 fr: "...J'ai l'impression de connaître ce chemin. Pourquoi ? C'est ma première fois dans cette école. ...Je dois être fatigué.",
                 de: '...Ich habe das Gefühl, diesen Weg zu kennen. Warum? Ich bin zum ersten Mal an dieser Schule. ...Ich muss müde sein.',
-                'pt-BR': '...Sinto que conheço este caminho. Por quê? É minha primeira vez nesta escola. ...Devo estar cansado.'
+                pt: '...Sinto que conheço este caminho. Por quê? É minha primeira vez nesta escola. ...Devo estar cansado.'
             }),
             'day1_hallway_1': this._pickLocalized({
                 ko: '...이 웃음. 어딘가에서 봤다. ...아닌가.',
@@ -2643,7 +2643,7 @@ class GlitchSystemAdvanced {
                 es: '...Esa sonrisa. La he visto en algún lugar. ...O tal vez no.',
                 fr: "...Ce sourire. Je l'ai déjà vu quelque part. ...Ou peut-être pas.",
                 de: '...Dieses Lächeln. Ich habe es irgendwo schon gesehen. ...Oder vielleicht nicht.',
-                'pt-BR': '...Aquele sorriso. Já vi em algum lugar. ...Ou talvez não.'
+                pt: '...Aquele sorriso. Já vi em algum lugar. ...Ou talvez não.'
             }),
             'day2_morning_gate_1': this._pickLocalized({
                 ko: '...세아의 동작이 어쩐지 익숙하다. 기분 탓이겠지.',
@@ -2652,7 +2652,7 @@ class GlitchSystemAdvanced {
                 es: '...El movimiento de Sea se siente extrañamente familiar. Debe ser mi imaginación.',
                 fr: "...Le geste de Sea me semble étrangement familier. C'est sûrement mon imagination.",
                 de: '...Seas Bewegung kommt mir seltsam vertraut vor. Das bilde ich mir sicher nur ein.',
-                'pt-BR': '...O movimento da Sea parece estranhamente familiar. Deve ser coisa da minha cabeça.'
+                pt: '...O movimento da Sea parece estranhamente familiar. Deve ser coisa da minha cabeça.'
             }),
             'day3_after_riin_drink': this._pickLocalized({
                 ko: '...이 맛. 낯설지 않다. 마셔본 적도 없는데.',
@@ -2661,7 +2661,7 @@ class GlitchSystemAdvanced {
                 es: '...Este sabor no me resulta desconocido, aunque nunca lo había bebido.',
                 fr: "...Ce goût ne m'est pas inconnu, même si je ne l'ai jamais bu.",
                 de: '...Dieser Geschmack ist mir nicht fremd, obwohl ich es noch nie getrunken habe.',
-                'pt-BR': '...Este gosto não é estranho, mesmo eu nunca tendo bebido isto antes.'
+                pt: '...Este gosto não é estranho, mesmo eu nunca tendo bebido isto antes.'
             })
         };
     }
@@ -2726,7 +2726,7 @@ class GlitchSystemAdvanced {
                 es: 'Es la segunda vez.',
                 fr: "C'est la deuxième fois.",
                 de: 'Es ist das zweite Mal.',
-                'pt-BR': 'É a segunda vez.'
+                pt: 'É a segunda vez.'
             });
             signArea.appendChild(ghost);
 
@@ -2818,7 +2818,7 @@ class GlitchSystemAdvanced {
             es: 'Firma',
             fr: 'Signature',
             de: 'Unterschrift',
-            'pt-BR': 'Assinatura'
+            pt: 'Assinatura'
         };
         label.textContent = labels[lang] || labels.en;
 
@@ -2976,7 +2976,7 @@ class GlitchSystemAdvanced {
                     es: 'Nombre actual: {name}',
                     fr: 'Nom actuel : {name}',
                     de: 'Aktueller Name: {name}',
-                    'pt-BR': 'Nome atual: {name}'
+                    pt: 'Nome atual: {name}'
                 }
         );
         const overlayText = overlayTextRaw.replace('{name}', playerName);
@@ -3125,7 +3125,7 @@ class GlitchSystemAdvanced {
                 monitoring: "Echtzeitüberwachung",
                 live: "LIVE"
             },
-            'pt-BR': {
+            pt: {
                 title: "NEVERGRAD - Sistema de gerenciamento de sujeitos",
                 id: "ID",
                 name: "Nome",
@@ -3166,7 +3166,7 @@ class GlitchSystemAdvanced {
                 || ['ADVERSE', 'ADVERSO', 'ANOMALIE', 'ABWEICHUNG', '異常'].some(token => localized.status.includes(token));
             const isActive = sub.statusClass === 'active'
                 || rawStatus.includes('진행')
-                || localized.status === this._pickLocalized({ en: 'Active', ja: '進行中', es: 'En curso', fr: 'En cours', de: 'Aktiv', 'pt-BR': 'Em andamento' })
+                || localized.status === this._pickLocalized({ en: 'Active', ja: '進行中', es: 'En curso', fr: 'En cours', de: 'Aktiv', pt: 'Em andamento' })
                 || isWarning;
             if (isActive) row.classList.add('admin-row-active');
             if (isWarning) row.classList.add('admin-row-warning');

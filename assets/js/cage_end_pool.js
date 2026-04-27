@@ -361,7 +361,7 @@ const CAGE_END_POOL = {
         "*Kirschblüten tanzen im Wind. Das Herz ist friedlich.*"
     ],
 
-    'pt-BR': [
+    pt: [
         "*As flores de cerejeira dançam ao vento. O coração está em paz.*",
         "*Mais uma manhã clara. O uniforme brilha sob a luz do sol.*",
         "*Sea acena no portão da escola. Vamos para a escola juntas de novo.*",

@@ -32,7 +32,7 @@ class GallerySystem {
             es: 'Enfrentaste la verdad y elegiste graduarte.',
             fr: 'Tu as fait face à la vérité et choisi de partir.',
             de: 'Du hast die Wahrheit erkannt und den Abschluss gewählt.',
-            'pt-BR': 'Você encarou a verdade e escolheu se formar.'
+            pt: 'Você encarou a verdade e escolheu se formar.'
         },
         'RESIST END': {
             ko: '끝까지 저항했지만, 교실은 당신을 놓아주지 않았다.',
@@ -41,7 +41,7 @@ class GallerySystem {
             es: 'Resististe hasta el final, pero el aula nunca te soltó.',
             fr: 'Tu as résisté jusqu\'au bout, mais la classe ne t\'a pas libéré.',
             de: 'Du hast bis zum Ende Widerstand geleistet, aber das Klassenzimmer ließ nicht los.',
-            'pt-BR': 'Você resistiu até o fim, mas a sala nunca soltou você.'
+            pt: 'Você resistiu até o fim, mas a sala nunca soltou você.'
         },
         'FORGET END': {
             ko: '모든 것을 잊고, 평범한 일상으로 돌아갔다.',
@@ -50,7 +50,7 @@ class GallerySystem {
             es: 'Lo olvidaste todo y volviste a la rutina.',
             fr: 'Tu as tout oublié et tu es retourné à ta vie ordinaire.',
             de: 'Du hast alles vergessen und bist in den Alltag zurückgekehrt.',
-            'pt-BR': 'Você esqueceu tudo e voltou aos dias comuns.'
+            pt: 'Você esqueceu tudo e voltou aos dias comuns.'
         },
         'CAGE END': {
             ko: '행복한 교실. 영원히.',
@@ -59,7 +59,7 @@ class GallerySystem {
             es: 'Un aula feliz. Para siempre.',
             fr: 'Une classe heureuse. Pour toujours.',
             de: 'Ein glückliches Klassenzimmer. Für immer.',
-            'pt-BR': 'Uma sala de aula feliz. Para sempre.'
+            pt: 'Uma sala de aula feliz. Para sempre.'
         },
         'GHOST END': {
             ko: '당신은 떠났지만, 무언가가 교실에 남았다.',
@@ -68,7 +68,7 @@ class GallerySystem {
             es: 'Te fuiste, pero algo se quedó en el aula.',
             fr: 'Tu es parti, mais quelque chose est resté dans la classe.',
             de: 'Du bist gegangen, aber etwas blieb im Klassenzimmer zurück.',
-            'pt-BR': 'Você foi embora, mas algo ficou na sala de aula.'
+            pt: 'Você foi embora, mas algo ficou na sala de aula.'
         },
         'ESCAPE END': {
             ko: '탈출에 성공했다. 하지만 대가가 있었다.',
@@ -77,7 +77,7 @@ class GallerySystem {
             es: 'Escapaste. Pero hubo un precio.',
             fr: 'Tu t\'es échappé. Mais il y a eu un prix.',
             de: 'Du bist entkommen. Aber es hatte seinen Preis.',
-            'pt-BR': 'Você escapou. Mas houve um preço.'
+            pt: 'Você escapou. Mas houve um preço.'
         },
         'COMPLICIT END': {
             ko: '당신은 공범이 되었다.',
@@ -86,7 +86,7 @@ class GallerySystem {
             es: 'Te convertiste en cómplice.',
             fr: 'Tu es devenu complice.',
             de: 'Du wurdest zum Komplizen.',
-            'pt-BR': 'Você se tornou cúmplice.'
+            pt: 'Você se tornou cúmplice.'
         }
     };
 
@@ -229,7 +229,7 @@ class GallerySystem {
             es: 'Un final aún por descubrir',
             fr: 'Une fin encore à découvrir',
             de: 'Ein Ende, das noch entdeckt werden muss',
-            'pt-BR': 'Um final ainda não alcançado'
+            pt: 'Um final ainda não alcançado'
         };
         return map[lang] || map.en;
     }

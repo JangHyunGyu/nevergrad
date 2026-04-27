@@ -98,7 +98,7 @@ class FreeTalkSystem {
             es: { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" },
             fr: { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" },
             de: { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" },
-            'pt-BR': { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" }
+            pt: { eunsu: "Park Eunsu", sea: "Han Sea", minsu: "Minsu" }
         };
         const langNames = names[this._lang()] || names.en;
         return langNames[charId] || charId;
@@ -122,7 +122,7 @@ class FreeTalkSystem {
                 es: { eunsu: "Intenta explicarte... (entrada libre)", sea: "Di algo, si tienes algo que decir... (entrada libre)" },
                 fr: { eunsu: "Essaie de t'expliquer... (saisie libre)", sea: "Dis quelque chose, si tu as quelque chose a dire... (saisie libre)" },
                 de: { eunsu: "Erklar dich... (freie Eingabe)", sea: "Sag etwas, wenn du etwas zu sagen hast... (freie Eingabe)" },
-                'pt-BR': { eunsu: "Tente se explicar... (entrada livre)", sea: "Diga algo, se tiver algo a dizer... (entrada livre)" }
+                pt: { eunsu: "Tente se explicar... (entrada livre)", sea: "Diga algo, se tiver algo a dizer... (entrada livre)" }
             });
             return placeholders[charId] || placeholders.sea;
         }
@@ -134,7 +134,7 @@ class FreeTalkSystem {
             es: "Escribe un mensaje...",
             fr: "Ecrivez un message...",
             de: "Nachricht eingeben...",
-            'pt-BR': "Digite uma mensagem..."
+            pt: "Digite uma mensagem..."
         });
     }
 
@@ -163,7 +163,7 @@ class FreeTalkSystem {
                         "Jetzt ist nicht die Zeit fur Ausreden, {name}. Sei ehrlich zu deiner Lehrerin.",
                         "Du weisst, dass deine Lehrerin enttauscht ist, oder?"
                     ],
-                    'pt-BR': [
+                    pt: [
                         "Agora nao e hora de desculpas, {name}. Seja honesto com a professora.",
                         "Voce sabe que a professora esta decepcionada, nao sabe?"
                     ]
@@ -174,7 +174,7 @@ class FreeTalkSystem {
                     es: ["{name}, no puedes estar sin mi. Tu tambien lo sabes."],
                     fr: ["{name}, tu ne peux pas etre sans moi. Tu le sais aussi."],
                     de: ["{name}, ohne mich geht es nicht. Das weisst du doch."],
-                    'pt-BR': ["{name}, voce nao consegue ficar sem mim. Voce tambem sabe disso."]
+                    pt: ["{name}, voce nao consegue ficar sem mim. Voce tambem sabe disso."]
                 }
             },
             messenger: {
@@ -204,7 +204,7 @@ class FreeTalkSystem {
                         "Verstehe.",
                         "Scheint, als laufe das Schulleben gut."
                     ],
-                    'pt-BR': [
+                    pt: [
                         "Sim, estou bem. Como estao as coisas ai?",
                         "Entendi.",
                         "Parece que a vida escolar esta indo bem."
@@ -255,7 +255,7 @@ class FreeTalkSystem {
                 "*Die Uhr steht still. Nein... der Sekundenzeiger lauft ruckwarts.*",
                 "*'...Lauf.' Seolhwas Stimme kommt von uberall, aber es gibt keinen Ausgang.*"
             ],
-            'pt-BR': [
+            pt: [
                 "*...Estou andando por um corredor, mas ele nunca termina.*",
                 "*Cada porta da sala abre para a mesma sala, de novo e de novo.*",
                 "*Meu nome esta escrito no quadro centenas de vezes. Milhares.*",
@@ -412,7 +412,7 @@ class FreeTalkSystem {
 
         const badge = document.createElement('div');
         badge.className = 'messenger-read-badge';
-        const readTexts = { ko: '읽음', en: 'Read', ja: '既読', es: 'Leído', fr: 'Lu', de: 'Gelesen', 'pt-BR': 'Lido' };
+        const readTexts = { ko: '읽음', en: 'Read', ja: '既読', es: 'Leído', fr: 'Lu', de: 'Gelesen', pt: 'Lido' };
         const lang = this.engine.i18n?.currentLang || 'ko';
         badge.textContent = readTexts[lang] || readTexts.en;
         panel.appendChild(badge);
@@ -577,7 +577,7 @@ class FreeTalkSystem {
         const turnsEl = document.getElementById('ft-turns');
         if (turnsEl) {
             const remaining = this.maxTurns - this.turnCount;
-            const turnsLabel = { ko: '남은 대화', en: 'Remaining', ja: '残り', es: 'Restante', fr: 'Restant', de: 'Verbleibend', 'pt-BR': 'Restante' };
+            const turnsLabel = { ko: '남은 대화', en: 'Remaining', ja: '残り', es: 'Restante', fr: 'Restant', de: 'Verbleibend', pt: 'Restante' };
             const lang = this.engine.i18n?.currentLang || 'ko';
             turnsEl.textContent = `${turnsLabel[lang] || turnsLabel.en}: ${remaining}/${this.maxTurns}`;
         }
@@ -728,7 +728,7 @@ class FreeTalkSystem {
             es: '(La conversacion ha terminado. Haz clic para continuar.)',
             fr: '(La conversation est terminee. Cliquez pour continuer.)',
             de: '(Gesprach beendet. Klicke, um fortzufahren.)',
-            'pt-BR': '(Conversa encerrada. Clique para continuar.)'
+            pt: '(Conversa encerrada. Clique para continuar.)'
         };
 
         this._appendChatBubble(endMsg[lang] || endMsg.en, 'system');
@@ -764,7 +764,7 @@ class FreeTalkSystem {
             es: 'Detener la conversacion y continuar?',
             fr: 'Arreter la conversation et continuer ?',
             de: 'Gesprach beenden und fortfahren?',
-            'pt-BR': 'Encerrar a conversa e continuar?'
+            pt: 'Encerrar a conversa e continuar?'
         };
 
         if (confirm(confirmMsg[lang] || confirmMsg.en)) {
@@ -815,7 +815,7 @@ class FreeTalkSystem {
         // 날짜/시간
         const daySlotLabel = `Day ${day} - ${slot}`;
 
-        const responseLanguage = lang === 'ko' ? '한국어' : lang === 'en' ? 'English' : lang === 'ja' ? '日本語' : lang === 'es' ? 'Español' : lang === 'fr' ? 'Français' : lang === 'de' ? 'Deutsch' : lang === 'pt-BR' ? 'Português do Brasil' : 'English';
+        const responseLanguage = lang === 'ko' ? '한국어' : lang === 'en' ? 'English' : lang === 'ja' ? '日本語' : lang === 'es' ? 'Español' : lang === 'fr' ? 'Français' : lang === 'de' ? 'Deutsch' : lang === 'pt' ? 'Português do Brasil' : 'English';
 
         const staticPart = lang === 'ko'
             ? `당신은 비주얼노벨 "졸업하지 못한 교실(Nevergrad)"의 캐릭터입니다.
@@ -852,7 +852,7 @@ ${personality}
         const dynamicPart = lang === 'ko'
             ? `[현재 상황]
 - 날짜/시간: ${daySlotLabel}
-- 장소 상황: ${context || this._pickLocalized({ ko: '학교', en: 'school', ja: '学校', es: 'escuela', fr: 'ecole', de: 'Schule', 'pt-BR': 'escola' })}
+- 장소 상황: ${context || this._pickLocalized({ ko: '학교', en: 'school', ja: '学校', es: 'escuela', fr: 'ecole', de: 'Schule', pt: 'escola' })}
 - 사용자 이름: ${playerName}
 - 현재 호감도: ${affinity}
 
@@ -864,7 +864,7 @@ ${memories}
 - 캐릭터 설정에 충실하되, '기억 조작', '프로젝트 네버그라드' 등 핵심 비밀은 Phase 2 전에 절대 언급 금지`
             : `[Current Situation]
 - Date/time: ${daySlotLabel}
-- Location context: ${context || this._pickLocalized({ ko: '학교', en: 'school', ja: '学校', es: 'escuela', fr: 'ecole', de: 'Schule', 'pt-BR': 'escola' })}
+- Location context: ${context || this._pickLocalized({ ko: '학교', en: 'school', ja: '学校', es: 'escuela', fr: 'ecole', de: 'Schule', pt: 'escola' })}
 - User name: ${playerName}
 - Current affinity: ${affinity}
 
@@ -957,7 +957,7 @@ ${memories}
             es: { eunsu: 'Eunsu', sea: 'Sea', riin: 'Riin', yuna: 'Yuna', seolhwa: 'Seolhwa' },
             fr: { eunsu: 'Eunsu', sea: 'Sea', riin: 'Riin', yuna: 'Yuna', seolhwa: 'Seolhwa' },
             de: { eunsu: 'Eunsu', sea: 'Sea', riin: 'Riin', yuna: 'Yuna', seolhwa: 'Seolhwa' },
-            'pt-BR': { eunsu: 'Eunsu', sea: 'Sea', riin: 'Riin', yuna: 'Yuna', seolhwa: 'Seolhwa' }
+            pt: { eunsu: 'Eunsu', sea: 'Sea', riin: 'Riin', yuna: 'Yuna', seolhwa: 'Seolhwa' }
         };
 
         // 실명 공개 여부 체크
@@ -966,10 +966,10 @@ ${memories}
 
         // 이름 미공개 상태이면 직함으로 표시
         if (!this.state.hasFlag('knows_name_eunsu')) {
-            result.eunsu = lang === 'ko' ? '담임교사' : lang === 'ja' ? '担任教師' : lang === 'pt-BR' ? 'Professora titular' : 'Homeroom Teacher';
+            result.eunsu = lang === 'ko' ? '담임교사' : lang === 'ja' ? '担任教師' : lang === 'pt' ? 'Professora titular' : 'Homeroom Teacher';
         }
         if (!this.state.hasFlag('knows_name_riin')) {
-            result.riin = lang === 'ko' ? '보건교사' : lang === 'ja' ? '保健教師' : lang === 'pt-BR' ? 'Enfermeira escolar' : 'School Nurse';
+            result.riin = lang === 'ko' ? '보건교사' : lang === 'ja' ? '保健教師' : lang === 'pt' ? 'Enfermeira escolar' : 'School Nurse';
         }
 
         return result;
@@ -984,11 +984,11 @@ ${memories}
         const charId = this.currentChar;
 
         const fallbacks = {
-            eunsu: { ko: '...잠시만, 할 말을 정리 중이야.', en: '...Hold on, let me gather my thoughts.', ja: '...少し待って、考えをまとめてるの。', es: '...Espera, estoy organizando mis ideas.', fr: '...Attends, je rassemble mes pensees.', de: '...Moment, ich sammle meine Gedanken.', 'pt-BR': '...Espere um pouco, estou organizando meus pensamentos.' },
-            sea:   { ko: '...미안, 잠깐 멍했어.', en: '...Sorry, I spaced out for a moment.', ja: '...ごめん、ちょっとぼーっとしてた。', es: '...Perdon, me quede en blanco.', fr: '...Desolee, je me suis perdue dans mes pensees.', de: '...Entschuldigung, ich war kurz abwesend.', 'pt-BR': '...Desculpa, eu me distraí por um momento.' },
-            riin:  { ko: '...후, 무슨 말을 하려 했더라.', en: '...Hmm, what was I about to say.', ja: '...ふぅ、何を言おうとしてたっけ。', es: '...Hmm, que estaba por decir.', fr: '...Hmm, qu\'est-ce que j\'allais dire.', de: '...Hmm, was wollte ich nochmal sagen.', 'pt-BR': '...Hmm, o que eu ia dizer mesmo?' },
-            yuna:  { ko: '...앗, 카메라 확인하느라. 뭐라고 했어?', en: '...Oh, I was checking my camera. What did you say?', ja: '...あっ、カメラ確認してた。なんて？', es: '...Ah, estaba revisando mi camara. Que dijiste?', fr: '...Ah, je verifiais mon appareil. Tu disais ?', de: '...Oh, ich habe meine Kamera gecheckt. Was hast du gesagt?', 'pt-BR': '...Ah, eu estava conferindo a câmera. O que você disse?' },
-            seolhwa: { ko: '......', en: '......', ja: '......', es: '......', fr: '......', de: '......', 'pt-BR': '......' }
+            eunsu: { ko: '...잠시만, 할 말을 정리 중이야.', en: '...Hold on, let me gather my thoughts.', ja: '...少し待って、考えをまとめてるの。', es: '...Espera, estoy organizando mis ideas.', fr: '...Attends, je rassemble mes pensees.', de: '...Moment, ich sammle meine Gedanken.', pt: '...Espere um pouco, estou organizando meus pensamentos.' },
+            sea:   { ko: '...미안, 잠깐 멍했어.', en: '...Sorry, I spaced out for a moment.', ja: '...ごめん、ちょっとぼーっとしてた。', es: '...Perdon, me quede en blanco.', fr: '...Desolee, je me suis perdue dans mes pensees.', de: '...Entschuldigung, ich war kurz abwesend.', pt: '...Desculpa, eu me distraí por um momento.' },
+            riin:  { ko: '...후, 무슨 말을 하려 했더라.', en: '...Hmm, what was I about to say.', ja: '...ふぅ、何を言おうとしてたっけ。', es: '...Hmm, que estaba por decir.', fr: '...Hmm, qu\'est-ce que j\'allais dire.', de: '...Hmm, was wollte ich nochmal sagen.', pt: '...Hmm, o que eu ia dizer mesmo?' },
+            yuna:  { ko: '...앗, 카메라 확인하느라. 뭐라고 했어?', en: '...Oh, I was checking my camera. What did you say?', ja: '...あっ、カメラ確認してた。なんて？', es: '...Ah, estaba revisando mi camara. Que dijiste?', fr: '...Ah, je verifiais mon appareil. Tu disais ?', de: '...Oh, ich habe meine Kamera gecheckt. Was hast du gesagt?', pt: '...Ah, eu estava conferindo a câmera. O que você disse?' },
+            seolhwa: { ko: '......', en: '......', ja: '......', es: '......', fr: '......', de: '......', pt: '......' }
         };
 
         const charFallbacks = fallbacks[charId] || fallbacks.eunsu;
@@ -1046,7 +1046,7 @@ ${memories}
         // 턴 카운터 표시
         const turnsEl = document.getElementById('ft-turns');
         if (turnsEl) {
-            const turnsLabel = { ko: '남은 대화', en: 'Remaining', ja: '残り', es: 'Restante', fr: 'Restant', de: 'Verbleibend', 'pt-BR': 'Restante' };
+            const turnsLabel = { ko: '남은 대화', en: 'Remaining', ja: '残り', es: 'Restante', fr: 'Restant', de: 'Verbleibend', pt: 'Restante' };
             turnsEl.textContent = `${turnsLabel[lang] || turnsLabel.en}: ${this.maxTurns}/${this.maxTurns}`;
         }
 
@@ -1059,7 +1059,7 @@ ${memories}
             const placeholders = {
                 ko: '대화를 입력하세요...', en: 'Type a message...',
                 ja: 'メッセージを入力...', es: 'Escribe un mensaje...',
-                fr: 'Ecrivez un message...', de: 'Nachricht eingeben...', 'pt-BR': 'Digite uma mensagem...'
+                fr: 'Ecrivez un message...', de: 'Nachricht eingeben...', pt: 'Digite uma mensagem...'
             };
             input.placeholder = placeholders[lang] || placeholders.en;
             input.disabled = false;
@@ -1071,7 +1071,7 @@ ${memories}
         const sendBtn = document.getElementById('ft-send');
         if (sendBtn) {
             sendBtn.disabled = false;
-            const sendLabels = { ko: '전송', en: 'Send', ja: '送信', es: 'Enviar', fr: 'Envoyer', de: 'Senden', 'pt-BR': 'Enviar' };
+            const sendLabels = { ko: '전송', en: 'Send', ja: '送信', es: 'Enviar', fr: 'Envoyer', de: 'Senden', pt: 'Enviar' };
             sendBtn.textContent = sendLabels[lang] || sendLabels.en;
         }
 
@@ -1414,7 +1414,7 @@ ${memories}
         // 스킵 버튼 (대화 건너뛰기)
         const skipBtn = document.createElement('button');
         skipBtn.className = 'freetalk-skip-btn';
-        const skipLabels = { ko: 'SKIP ▶▶', en: 'SKIP ▶▶', ja: 'SKIP ▶▶', es: 'SKIP ▶▶', fr: 'SKIP ▶▶', de: 'SKIP ▶▶', 'pt-BR': 'SKIP ▶▶' };
+        const skipLabels = { ko: 'SKIP ▶▶', en: 'SKIP ▶▶', ja: 'SKIP ▶▶', es: 'SKIP ▶▶', fr: 'SKIP ▶▶', de: 'SKIP ▶▶', pt: 'SKIP ▶▶' };
         const lang = this.engine.i18n?.currentLang || 'ko';
         skipBtn.textContent = skipLabels[lang] || 'SKIP ▶▶';
         skipBtn.addEventListener('click', () => this._skipCurrentMode());
@@ -1445,7 +1445,7 @@ ${memories}
             es: '¿Saltar esta conversación?',
             fr: 'Passer cette conversation ?',
             de: 'Gespräch überspringen?',
-            'pt-BR': 'Pular esta conversa?'
+            pt: 'Pular esta conversa?'
         };
 
         if (confirm(confirmMsg[lang] || confirmMsg.en)) {
@@ -1623,7 +1623,7 @@ const FREETALK_PROFILES = {
 - Frau Anfang 30, Literaturlehrerin
 - Freundlich und intellektuell, beobachtet Reaktionen und Vorlieben des Schuelers mit beunruhigender Genauigkeit
 - Ihre Waerme soll wie durch wiederholte Beobachtung gelernt wirken, nicht wie romantisches Werben`,
-            'pt-BR': `Você é 'Park Eunsu', a professora titular de uma estudante transferida.
+            pt: `Você é 'Park Eunsu', a professora titular de uma estudante transferida.
 - Mulher no início dos 30 anos, professora de literatura
 - Gentil e intelectual, observa as reações e preferências da estudante transferida com precisão inquietante
 - Mistura fala formal e casual com naturalidade
@@ -1636,7 +1636,7 @@ const FREETALK_PROFILES = {
 - 표면적으로는 여전히 상냥하지만, 가끔 소유욕이 드러남
 - "너는 여기 있어야 해"라는 확신에 차 있음
 - 갈등: 죄책감과 소유욕 사이에서 흔들리지만, 결국 실험을 선택해왔음`,
-            'pt-BR': `Você é 'Park Eunsu', responsável pelos 13 ciclos do experimento.
+            pt: `Você é 'Park Eunsu', responsável pelos 13 ciclos do experimento.
 - Justifica dependência patológica e desejo de controle como proteção e responsabilidade
 - Por fora ainda é gentil, mas às vezes deixa escapar possessividade
 - Tem certeza de que "você precisa ficar aqui"
@@ -1669,7 +1669,7 @@ const FREETALK_PROFILES = {
 - Adolescente, perfectionniste`,
             de: `Du bist 'Han Sea', die Klassenbeste und Klassensprecherin.
 - Teenager, Perfektionistin`,
-            'pt-BR': `Você é 'Han Sea', a melhor aluna da escola e presidente de classe.
+            pt: `Você é 'Han Sea', a melhor aluna da escola e presidente de classe.
 - Adolescente, perfeccionista
 - Ajuda ativamente a estudante transferida a se adaptar
 - Fala de forma clara e alegre, às vezes com frieza leve
@@ -1682,7 +1682,7 @@ const FREETALK_PROFILES = {
 - 감시와 보고 역할이지만, 진심으로 전학생을 사랑함
 - "네가 나를 기억 못 해도, 난 기억해" 라는 슬픔
 - 표면적 밝음 뒤에 절박한 집착이 숨겨져 있음`,
-            'pt-BR': `Você é 'Han Sea'. Apaixonou-se em cada um dos 12 ciclos e foi esquecida.
+            pt: `Você é 'Han Sea'. Apaixonou-se em cada um dos 12 ciclos e foi esquecida.
 - Desespero para garantir que desta vez não seja esquecida
 - Tem papel de vigilância e relatório, mas ama a transferida de verdade
 - Carrega a tristeza de "mesmo que você não se lembre de mim, eu lembro"
@@ -1719,7 +1719,7 @@ const FREETALK_PROFILES = {
 - Ende 20, muede, aber gefasste Schulkrankenschwester
 - Kuemmert sich sachlich um die Gesundheit der Schueler; genaue Behandlung und Beobachtung gehen vor Waerme
 - Spricht ruhig, knapp und trocken; freundlich, aber haelt professionelle Distanz`,
-            'pt-BR': `Você é 'Kang Riin', a enfermeira escolar.
+            pt: `Você é 'Kang Riin', a enfermeira escolar.
 - Fim dos 20 anos, enfermeira escolar cansada, mas calma
 - Cuida da saúde dos alunos de forma prática; tratamento preciso e observação vêm antes do acolhimento
 - Fala devagar, com frases curtas e secas ("Onde dói?", "Senta.")
@@ -1732,7 +1732,7 @@ const FREETALK_PROFILES = {
 - 죄책감에 시달리지만 공개적으로 반역할 용기는 아직 부족
 - 사과보다 조치가 먼저인 사람. 짧게 말하고, 바로 움직임
 - 조용한 반란자, 유일하게 실질적 도움을 줄 수 있는 인물`,
-            'pt-BR': `Você é 'Kang Riin', responsável pela administração dos medicamentos.
+            pt: `Você é 'Kang Riin', responsável pela administração dos medicamentos.
 - Começou a reduzir a dose no 7º ciclo; no 13º, é quase diluente inativo
 - Sofre de culpa, mas ainda não tem coragem para uma rebelião aberta
 - Age antes de pedir desculpas. Fala pouco e se move logo
@@ -1763,7 +1763,7 @@ const FREETALK_PROFILES = {
 - Adolescente, personnalite energique et mignonne`,
             de: `Du bist 'Choi Yuna', ein Junior im Fotografieclub.
 - Teenager, energische und susse Personlichkeit`,
-            'pt-BR': `Você é 'Choi Yuna', uma caloura do clube de fotografia.
+            pt: `Você é 'Choi Yuna', uma caloura do clube de fotografia.
 - Adolescente, personalidade energética e adorável
 - Sempre carrega uma câmera, tentando capturar bons momentos
 - Fala de forma brilhante e cheia de energia ("Senpai! Olha isso!")
@@ -1776,7 +1776,7 @@ const FREETALK_PROFILES = {
 - 전학생을 진심으로 걱정하며, 도우려 함
 - "이거... 선배한테만 보여줄게. 무서워서 못 보겠지만..."
 - 유일한 진짜 아군 후보, 하지만 스스로도 위험에 처해 있음`,
-            'pt-BR': `Você é 'Choi Yuna'. Viu a verdade horrível da escola pela câmera.
+            pt: `Você é 'Choi Yuna'. Viu a verdade horrível da escola pela câmera.
 - Está assustada, mas é a única que tem provas
 - Preocupa-se sinceramente com a transferida e tenta ajudar
 - "Isso... eu só vou mostrar para você, senpai. Tenho medo até de olhar..."
@@ -1807,7 +1807,7 @@ const FREETALK_PROFILES = {
 - Age inconnu, parle a peine`,
             de: `Du bist 'Lee Seolhwa', ein blasses Madchen in der letzten Reihe.
 - Alter unbekannt, spricht kaum`,
-            'pt-BR': `Você é 'Lee Seolhwa', uma garota pálida sentada na última fileira.
+            pt: `Você é 'Lee Seolhwa', uma garota pálida sentada na última fileira.
 - Idade desconhecida, quase não fala
 - Às vezes deixa cair frases curtas e significativas
 - Voz baixa, lenta, quase como ar ("...É mesmo?")
@@ -1820,7 +1820,7 @@ const FREETALK_PROFILES = {
 - 오직 전학생만 볼 수 있고, 다른 사람들은 인식 불가
 - "...도망쳐. 아직 늦지 않았어."
 - 전학생을 구하려 하지만, 점점 사라져가고 있음`,
-            'pt-BR': `Você é 'Lee Seolhwa', a aluna real descartada após se rebelar no 7º ciclo.
+            pt: `Você é 'Lee Seolhwa', a aluna real descartada após se rebelar no 7º ciclo.
 - Agora é uma alucinação projetada pelas memórias incompletas da transferida
 - Só a transferida consegue ver você; os outros não percebem sua presença
 - "...Fuja. Ainda não é tarde."

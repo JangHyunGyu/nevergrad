@@ -1743,6 +1743,35 @@ class GlitchSystemAdvanced {
             let isDrawing = false;
             const brushSize = Math.max(40, Math.min(canvas.width, canvas.height) * 0.08);
 
+            const markCleared = (x, y) => {
+                if (!targetRect) return { clearRatio: 0, verticalRatio: 0 };
+
+                const radiusSq = brushSize * brushSize;
+                const colStart = Math.max(0, Math.floor((x - brushSize - targetRect.left) / cellSize));
+                const colEnd = Math.min(targetCols - 1, Math.floor((x + brushSize - targetRect.left) / cellSize));
+                const rowStart = Math.max(0, Math.floor((y - brushSize - targetRect.top) / cellSize));
+                const rowEnd = Math.min(targetRows - 1, Math.floor((y + brushSize - targetRect.top) / cellSize));
+
+                for (let row = rowStart; row <= rowEnd; row++) {
+                    const cellY = targetRect.top + row * cellSize + cellSize / 2;
+                    for (let col = colStart; col <= colEnd; col++) {
+                        const cellX = targetRect.left + col * cellSize + cellSize / 2;
+                        const dx = cellX - x;
+                        const dy = cellY - y;
+                        if ((dx * dx + dy * dy) > radiusSq) continue;
+                        clearedCells.add(`${col}:${row}`);
+                        minClearedY = Math.min(minClearedY, cellY);
+                        maxClearedY = Math.max(maxClearedY, cellY);
+                    }
+                }
+
+                const clearRatio = clearedCells.size / Math.max(1, targetCols * targetRows);
+                const verticalRatio = Number.isFinite(minClearedY)
+                    ? Math.max(0, maxClearedY - minClearedY) / targetRect.height
+                    : 0;
+                return { clearRatio, verticalRatio };
+            };
+
             const clearFog = (x, y) => {
                 ctx.globalCompositeOperation = 'destination-out';
                 ctx.beginPath();
@@ -1750,10 +1779,9 @@ class GlitchSystemAdvanced {
                 ctx.fill();
                 ctx.globalCompositeOperation = 'source-over';
 
-                clearedPixels += Math.PI * brushSize * brushSize;
-                const clearRatio = clearedPixels / totalPixels;
+                const { clearRatio, verticalRatio } = markCleared(x, y);
 
-                if (clearRatio > 0.35 && !completed) {
+                if (clearRatio >= completeThreshold && verticalRatio >= requiredVerticalSpan && !completed) {
                     completed = true;
                     hint.remove();
 
@@ -1777,6 +1805,7 @@ class GlitchSystemAdvanced {
             canvas.addEventListener('mousedown', (e) => { isDrawing = true; clearFog(e.clientX, e.clientY); });
             canvas.addEventListener('mousemove', (e) => { if (isDrawing) clearFog(e.clientX, e.clientY); });
             canvas.addEventListener('mouseup', () => { isDrawing = false; });
+            window.addEventListener('mouseup', () => { isDrawing = false; }, { once: true });
 
             // 터치 이벤트
             canvas.addEventListener('touchstart', (e) => {

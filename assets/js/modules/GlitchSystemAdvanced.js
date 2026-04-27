@@ -1663,7 +1663,7 @@ class GlitchSystemAdvanced {
      * @param {Function} onComplete - 안개 70% 이상 제거 시 콜백
      * @returns {Promise<void>}
      */
-    async showMirrorSwipe(mirrorBgUrl, onComplete) {
+    async showMirrorSwipe(mirrorBgUrl, onComplete, options = {}) {
         return new Promise((resolve) => {
             const container = document.createElement('div');
             container.className = 'mirror-swipe-container';
@@ -1698,15 +1698,42 @@ class GlitchSystemAdvanced {
             };
 
             const ctx = canvas.getContext('2d');
-            let totalPixels = 0;
-            let clearedPixels = 0;
             let completed = false;
+            let targetRect = null;
+            let cellSize = 18;
+            let targetCols = 1;
+            let targetRows = 1;
+            let clearedCells = new Set();
+            let minClearedY = Infinity;
+            let maxClearedY = -Infinity;
+            const completeThreshold = Math.max(0.2, Math.min(0.6, Number(options.threshold) || 0.32));
+            const requiredVerticalSpan = Math.max(0.45, Math.min(0.75, Number(options.verticalSpan) || 0.58));
+
+            const getTargetRect = () => {
+                const width = Math.min(canvas.width * 0.56, 560);
+                const height = Math.min(canvas.height * 0.76, 760);
+                return {
+                    left: (canvas.width - width) / 2,
+                    top: (canvas.height - height) / 2,
+                    width,
+                    height
+                };
+            };
+
+            const resetProgress = () => {
+                targetRect = getTargetRect();
+                cellSize = Math.max(12, Math.round(Math.min(canvas.width, canvas.height) * 0.024));
+                targetCols = Math.max(1, Math.ceil(targetRect.width / cellSize));
+                targetRows = Math.max(1, Math.ceil(targetRect.height / cellSize));
+                clearedCells = new Set();
+                minClearedY = Infinity;
+                maxClearedY = -Infinity;
+            };
 
             const drawFog = () => {
                 ctx.fillStyle = 'rgba(200, 210, 220, 0.95)';
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
-                totalPixels = canvas.width * canvas.height;
-                clearedPixels = 0;
+                resetProgress();
             };
 
             resize();

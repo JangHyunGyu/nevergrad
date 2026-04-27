@@ -1379,6 +1379,10 @@ body.cursor-slowed * {
     background: rgba(28, 22, 28, 0.46);
 }
 
+.mirror-player-stage-0 .mirror-player-face {
+    clip-path: inset(0);
+}
+
 .mirror-player-stage-1 .mirror-player-face {
     clip-path: inset(0 0 48% 0);
     filter: saturate(0.2) contrast(1.22) blur(4px);

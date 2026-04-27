@@ -434,6 +434,37 @@ class GlitchSystemAdvanced {
         this._dangerStatsRevealed = false;
     }
 
+    showMirrorPlayerReveal(stage = 0) {
+        const gameScreen = document.getElementById('game-screen') || document.body;
+        let mirror = document.getElementById('mirror-player-reflection');
+        if (!mirror) {
+            mirror = document.createElement('div');
+            mirror.id = 'mirror-player-reflection';
+            mirror.className = 'mirror-player-reflection mirror-player-stage-0';
+            mirror.innerHTML = `
+                <div class="mirror-player-glass"></div>
+                <div class="mirror-player-face">
+                    <span class="mirror-player-hair"></span>
+                    <span class="mirror-player-eye mirror-player-eye-left"></span>
+                    <span class="mirror-player-eye mirror-player-eye-right"></span>
+                    <span class="mirror-player-nose"></span>
+                    <span class="mirror-player-mouth"></span>
+                </div>
+            `;
+            gameScreen.appendChild(mirror);
+        }
+
+        mirror.classList.remove(
+            'mirror-player-stage-0',
+            'mirror-player-stage-1',
+            'mirror-player-stage-2',
+            'mirror-player-stage-3'
+        );
+        mirror.classList.add(`mirror-player-stage-${Math.max(0, Math.min(3, Number(stage) || 0))}`);
+        requestAnimationFrame(() => mirror.classList.add('visible'));
+        return mirror;
+    }
+
     // =========================================================================
     // 글리치 레벨 관리
     // =========================================================================

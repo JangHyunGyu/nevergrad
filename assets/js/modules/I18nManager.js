@@ -50,7 +50,7 @@ class I18nManager {
         const key = `day${day}`;
         if (this.loaded[key]) return;
 
-        const slots = ['_morning', '_lunch', '_afterschool', '_night', '_choco'];
+        const slots = ['_morning', '_lunch', '_afterschool', '_night'];
         this.texts[key] = {};
 
         // ko를 베이스로 먼저 로드 (번역 미완료 항목 폴백용)

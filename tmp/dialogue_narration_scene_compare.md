@@ -1,6 +1,6 @@
 # Nevergrad Dialogue/Narration Scene Sync Audit
 
-- Generated: 2026-04-27T03:24:02.876Z
+- Generated: 2026-04-27T06:14:57.073Z
 - SCENARIO.md sync lines: 164-19797
 - Compared scene entries: 2021
 - OK: 2021

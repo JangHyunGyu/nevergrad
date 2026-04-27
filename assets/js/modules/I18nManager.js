@@ -403,6 +403,83 @@ class I18nManager {
     };
 
     /**
+     * Character display names used by language-neutral UI effects.
+     */
+    static CHARACTER_NAMES = {
+        ko: {
+            eunsu: "\ub2f4\uc784\uad50\uc0ac",
+            riin: "\ubcf4\uac74\uad50\uc0ac",
+            sea: "\ud55c\uc138\uc544",
+            yuna: "\ucd5c\uc720\ub098",
+            seolhwa: "\uc774\uc124\ud654",
+            me: "\ub098",
+            unknown: "???"
+        },
+        en: {
+            eunsu: "Homeroom Teacher",
+            riin: "School Nurse",
+            sea: "Han Sea",
+            yuna: "Choi Yuna",
+            seolhwa: "Lee Seolhwa",
+            me: "Me",
+            unknown: "???"
+        },
+        ja: {
+            eunsu: "\u62c5\u4efb\u6559\u5e2b",
+            riin: "\u4fdd\u5065\u6559\u5e2b",
+            sea: "\u30cf\u30f3\u30fb\u30bb\u30a2",
+            yuna: "\u30c1\u30a7\u30fb\u30e6\u30ca",
+            seolhwa: "\u30a4\u30fb\u30bd\u30eb\u30d5\u30a1",
+            me: "\u50d5",
+            unknown: "???"
+        },
+        es: {
+            eunsu: "Profesora tutora",
+            riin: "Enfermera escolar",
+            sea: "Han Sea",
+            yuna: "Choi Yuna",
+            seolhwa: "Lee Seolhwa",
+            me: "Yo",
+            unknown: "???"
+        },
+        fr: {
+            eunsu: "Professeure principale",
+            riin: "Infirmiere scolaire",
+            sea: "Han Sea",
+            yuna: "Choi Yuna",
+            seolhwa: "Lee Seolhwa",
+            me: "Moi",
+            unknown: "???"
+        },
+        de: {
+            eunsu: "Klassenlehrerin",
+            riin: "Schulkrankenschwester",
+            sea: "Han Sea",
+            yuna: "Choi Yuna",
+            seolhwa: "Lee Seolhwa",
+            me: "Ich",
+            unknown: "???"
+        },
+        'pt-BR': {
+            eunsu: "Professora orientadora",
+            riin: "Enfermeira escolar",
+            sea: "Han Sea",
+            yuna: "Choi Yuna",
+            seolhwa: "Lee Seolhwa",
+            me: "Eu",
+            unknown: "???"
+        }
+    };
+
+    getCharacterName(charId) {
+        if (!charId) return '';
+        return I18nManager.CHARACTER_NAMES[this.currentLang]?.[charId]
+            || I18nManager.CHARACTER_NAMES.en?.[charId]
+            || CONFIG.CHAR_NAMES?.[charId]
+            || charId;
+    }
+
+    /**
      * 현재 언어의 UI 텍스트 반환
      */
     getUI(key) {

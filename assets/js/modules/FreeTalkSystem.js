@@ -433,7 +433,9 @@ class FreeTalkSystem {
         try {
             // API 호출 (Cupid 패턴: messages 배열 전송)
             const lang = this.engine.i18n?.currentLang || 'ko';
-            const cacheKey = `nevergrad:${lang}:${this.currentChar}`;
+            const promptVersion = (typeof CONFIG !== 'undefined' && CONFIG.VERSION) ? CONFIG.VERSION : '0';
+            const phaseKey = this.state.mode === CONFIG.STAT_MODES.THRILLER ? 'T' : 'R';
+            const cacheKey = `nevergrad:${promptVersion}:${lang}:${this.currentChar}:${phaseKey}`;
             const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
             if (controller) fetchTimeout = setTimeout(() => controller.abort(), this.requestTimeoutMs || 15000);
             const request = {
@@ -624,19 +626,12 @@ class FreeTalkSystem {
         // 날짜/시간
         const daySlotLabel = `Day ${day} - ${slot}`;
 
-        const prompt = `당신은 비주얼노벨 "졸업하지 못한 교실(Nevergrad)"의 캐릭터입니다.
+        const responseLanguage = lang === 'ko' ? '한국어' : lang === 'en' ? 'English' : lang === 'ja' ? '日本語' : lang === 'es' ? 'Español' : lang === 'fr' ? 'Français' : lang === 'de' ? 'Deutsch' : '한국어';
+
+        const staticPart = `당신은 비주얼노벨 "졸업하지 못한 교실(Nevergrad)"의 캐릭터입니다.
 
 [캐릭터 설정]
 ${personality}
-
-[현재 상황]
-- 날짜/시간: ${daySlotLabel}
-- 장소 상황: ${context || '학교'}
-- 사용자 이름: ${playerName}
-- 현재 호감도: ${affinity}
-
-${affinityGuide}
-${memories}
 
 [응답 규칙]
 1. 반드시 JSON 형식으로 응답: {"text": "대사", "expression": "표정", "affinity": 변화량}
@@ -646,14 +641,23 @@ ${memories}
 5. 캐릭터의 성격과 현재 호감도에 맞는 반응
 6. 유치하거나 오글거리는 표현 금지
 7. 2020년대 트렌디한 한국 드라마 감성
-8. 응답 언어: ${lang === 'ko' ? '한국어' : lang === 'en' ? 'English' : lang === 'ja' ? '日本語' : lang === 'es' ? 'Español' : lang === 'fr' ? 'Français' : lang === 'de' ? 'Deutsch' : '한국어'}
-9. *액션 묘사*는 이탤릭 마크다운으로 (예: *고개를 돌리며*)
+8. 응답 언어: ${responseLanguage}
+9. *액션 묘사*는 이탤릭 마크다운으로 (예: *고개를 돌리며*)`;
+
+        const dynamicPart = `[현재 상황]
+- 날짜/시간: ${daySlotLabel}
+- 장소 상황: ${context || '학교'}
+- 사용자 이름: ${playerName}
+- 현재 호감도: ${affinity}
+
+${affinityGuide}
+${memories}
 
 [중요]
 - 이 대화는 ${this.maxTurns}턴 후 종료됩니다
 - 캐릭터 설정에 충실하되, '기억 조작', '프로젝트 네버그라드' 등 핵심 비밀은 Phase 2 전에 절대 언급 금지`;
 
-        return prompt;
+        return `${staticPart}\n===CACHE_BOUNDARY===\n${dynamicPart}`;
     }
 
     /**

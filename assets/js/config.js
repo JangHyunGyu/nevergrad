@@ -8,7 +8,7 @@ const CONFIG = {
     // ===== 게임 기본 설정 =====
     TITLE: "졸업하지 못한 교실",
     SUBTITLE: "5일의 기록",
-    VERSION: "0.1.0",
+    VERSION: "0.1.1",
 
     // ===== API =====
     API_ENDPOINT: "https://chatbot-api.yama5993.workers.dev/",

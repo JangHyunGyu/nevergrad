@@ -541,7 +541,7 @@ Object.assign(SCENARIO[5], {
         character: "eunsu_crying",
         next: "day5_after_resist_13f"
     },
-    // "그 한마디가... 12번 중에 제일 아팠어."
+    // "그때 알았어. 이건 관계가 아니라 조건화였다는 걸..."
     "day5_after_resist_13f": {
         character: "eunsu_crying",
         next: "day5_after_resist_13g"

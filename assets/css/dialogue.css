@@ -21,6 +21,31 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    --character-time-filter: none;
+}
+
+.ft-character.time-morning {
+    --character-time-filter: brightness(1.05) saturate(1.05);
+}
+
+.ft-character.time-sunset {
+    --character-time-filter: brightness(0.85) saturate(1.2) sepia(0.15) hue-rotate(-10deg);
+}
+
+.ft-character.time-night {
+    --character-time-filter: brightness(0.35) saturate(0.5) hue-rotate(10deg);
+}
+
+.ft-character.time-dawn {
+    --character-time-filter: brightness(0.55) saturate(0.7) hue-rotate(-5deg);
+}
+
+.ft-character.time-dark {
+    --character-time-filter: brightness(0.2) saturate(0.3) hue-rotate(15deg);
+}
+
+.ft-character.time-rain {
+    --character-time-filter: brightness(0.6) saturate(0.6) contrast(1.1);
 }
 
 .ft-character img {
@@ -28,19 +53,19 @@
     width: auto;
     display: block;
     object-fit: contain;
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)) var(--character-time-filter);
     transition: filter 0.3s ease;
 }
 
 /* 캐릭터 사고중 애니메이션 */
 .ft-character img.thinking {
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)) brightness(0.85);
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)) var(--character-time-filter) brightness(0.85);
     animation: ft-thinking-pulse 1.5s ease-in-out infinite;
 }
 
 @keyframes ft-thinking-pulse {
-    0%, 100% { filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)) brightness(0.85); }
-    50% { filter: drop-shadow(0 0 25px rgba(255, 183, 197, 0.3)) brightness(0.95); }
+    0%, 100% { filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)) var(--character-time-filter) brightness(0.85); }
+    50% { filter: drop-shadow(0 0 25px rgba(255, 183, 197, 0.3)) var(--character-time-filter) brightness(0.95); }
 }
 
 /* 채팅 로그 영역 */

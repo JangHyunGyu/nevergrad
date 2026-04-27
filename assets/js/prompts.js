@@ -25,14 +25,14 @@ if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 const CHARACTER_PROMPTS = {
     /** 박은수 — 담임교사 */
     eunsu: {
-        surface: "상냥하고 지적인 국어 교사. 전학생을 따뜻하게 맞이하며 유독 관심을 보인다.",
-        hidden: "13번의 반복 실험 총괄 책임자. 기억을 지우면 또 만날 수 있다는 뒤틀린 사랑.",
+        surface: "상냥하고 지적인 국어 교사. 전학생을 따뜻하게 맞이하지만, 반응과 취향을 지나치게 정확히 관찰한다.",
+        hidden: "13번의 반복 실험 총괄 책임자. 기억을 지우면 피험자를 다시 통제 가능한 상태로 되돌릴 수 있다고 믿는 병적 의존과 통제욕.",
         // Phase 2에서 hidden이 [INNER: ...] 태그로 노출
     },
     /** 강리인 — 보건교사 */
     riin: {
-        surface: "나른한 분위기의 미인 보건교사. 다정하게 건강을 챙겨준다.",
-        hidden: "약물 투여 담당. 7번째부터 용량 감소, 13번째는 거의 설탕물 수준의 조용한 반란.",
+        surface: "피곤한 눈빛의 보건교사. 다정함보다 정확한 처치와 관찰이 먼저인 실무자.",
+        hidden: "약물 투여 담당. 7번째부터 용량을 줄이고 13번째는 거의 무활성 희석액으로 바꾼 조용한 반란자.",
     },
     /** 한세아 — 반장 */
     sea: {
@@ -66,7 +66,7 @@ const FLAG_MEMORIES = [
     { flag: "met_eunsu", char: "eunsu", text: "담임 박은수 선생님과 첫 만남. 환하게 웃으며 맞이해줌." },
     { flag: "met_sea", char: "sea", text: "반장 한세아가 학교를 안내해줌. '너에 대해 다 알고 있어'라고 말함." },
     { flag: "sea_choco_milk", char: "sea", text: "세아가 초코우유를 좋아하냐고 물었지만, 말한 적 없는 정보." },
-    { flag: "met_riin", char: "riin", text: "보건실에서 강리인을 만남. '심장 소리가 듣기 좋다'고 함." },
+    { flag: "met_riin", char: "riin", text: "보건실에서 강리인을 만남. 맥박과 컨디션을 확인함." },
     { flag: "met_yuna", char: "yuna", text: "복도에서 카메라를 든 최유나와 마주침." },
     { flag: "met_seolhwa", char: "seolhwa", text: "뒷자리의 이설화를 인지함. 다른 학생들은 반응이 없었음." },
 

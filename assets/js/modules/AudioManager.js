@@ -920,6 +920,7 @@ class AudioManager {
         this._synthRegistry = {
             'sfx_school_bell':       (o) => this._synthSchoolBell(o),
             'sfx_door_open':         (o) => this._synthDoorOpen(o),
+            'sfx_door_close':        (o) => this._synthDoorClose(o),
             'sfx_key_turn':          (o) => this._synthKeyTurn(o),
             'sfx_door_slam':         (o) => this._synthDoorSlam(o),
             'sfx_footsteps':         (o) => this._synthFootsteps(o),
@@ -1050,9 +1051,81 @@ class AudioManager {
     }
 
     /**
-     * 문 쾅 닫힘 — 강한 충격음 + 금속 잔향
+     * 문 닫힘 — 부드러운 래치 클릭 + 낮은 임팩트 + 짧은 공기 이동
+     * slam보다 약하고 통제된 닫힘. 일상적인 문 닫는 동작용.
      * @private
      */
+    _synthDoorClose(options = {}) {
+        const vol = options.volume || 0.45;
+        const now = this.ctx.currentTime;
+
+        // 1) 낮은 주파수 임팩트 (문짝과 프레임 접촉)
+        const thumpOsc = this.ctx.createOscillator();
+        thumpOsc.type = 'sine';
+        thumpOsc.frequency.setValueAtTime(140, now);
+        thumpOsc.frequency.exponentialRampToValueAtTime(70, now + 0.18);
+
+        const thumpGain = this._createSFXGain(0);
+        thumpOsc.connect(thumpGain);
+        thumpGain.gain.setValueAtTime(0.001, now);
+        thumpGain.gain.linearRampToValueAtTime(vol * 0.7, now + 0.01);
+        thumpGain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+        thumpOsc.start(now);
+        thumpOsc.stop(now + 0.26);
+
+        // 2) 임팩트 노이즈 (나무/금속 표면 충돌)
+        const noise = this.ctx.createBufferSource();
+        noise.buffer = this._createNoiseBuffer(0.15);
+        const noiseFilter = this.ctx.createBiquadFilter();
+        noiseFilter.type = 'bandpass';
+        noiseFilter.frequency.value = 600;
+        noiseFilter.Q.value = 1.2;
+        const noiseGain = this._createSFXGain(0);
+        noise.connect(noiseFilter);
+        noiseFilter.connect(noiseGain);
+        noiseGain.gain.setValueAtTime(0.001, now);
+        noiseGain.gain.linearRampToValueAtTime(vol * 0.5, now + 0.005);
+        noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.13);
+        noise.start(now);
+        noise.stop(now + 0.15);
+
+        // 3) 래치 클릭 (살짝 늦게, 고주파 메탈 클릭)
+        const latchT = now + 0.08;
+        const latchOsc = this.ctx.createOscillator();
+        latchOsc.type = 'square';
+        latchOsc.frequency.setValueAtTime(1600, latchT);
+        latchOsc.frequency.exponentialRampToValueAtTime(900, latchT + 0.025);
+
+        const latchFilter = this.ctx.createBiquadFilter();
+        latchFilter.type = 'bandpass';
+        latchFilter.frequency.value = 1400;
+        latchFilter.Q.value = 6;
+
+        const latchGain = this._createSFXGain(0);
+        latchOsc.connect(latchFilter);
+        latchFilter.connect(latchGain);
+        latchGain.gain.setValueAtTime(0.001, latchT);
+        latchGain.gain.linearRampToValueAtTime(vol * 0.4, latchT + 0.003);
+        latchGain.gain.exponentialRampToValueAtTime(0.001, latchT + 0.04);
+        latchOsc.start(latchT);
+        latchOsc.stop(latchT + 0.05);
+
+        // 4) 공기 이동 (문이 닫히면서 밀리는 공기, 약하게)
+        const airNoise = this.ctx.createBufferSource();
+        airNoise.buffer = this._createNoiseBuffer(0.2);
+        const lpf = this.ctx.createBiquadFilter();
+        lpf.type = 'lowpass';
+        lpf.frequency.value = 400;
+        const airGain = this._createSFXGain(0);
+        airNoise.connect(lpf);
+        lpf.connect(airGain);
+        airGain.gain.setValueAtTime(0, now);
+        airGain.gain.linearRampToValueAtTime(vol * 0.15, now + 0.05);
+        airGain.gain.exponentialRampToValueAtTime(0.001, now + 0.2);
+        airNoise.start(now);
+        airNoise.stop(now + 0.2);
+    }
+
     /**
      * Small metallic key turn / latch click.
      * @private
@@ -1109,6 +1182,10 @@ class AudioManager {
         scrape.stop(now + 0.20);
     }
 
+    /**
+     * 문 쾅 닫힘 — 강한 충격음 + 금속 잔향
+     * @private
+     */
     _synthDoorSlam(options = {}) {
         const vol = options.volume || 0.7;
         const now = this.ctx.currentTime;

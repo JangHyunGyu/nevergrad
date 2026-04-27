@@ -430,7 +430,7 @@ Object.assign(SCENARIO[3], {
     },
 
     // ══════════════════════════════════════
-    //  리인 루트: 보건실 건강 음료
+    //  리인 루트: 보건실 전해질 음료
     // ══════════════════════════════════════
     "day3_lunch_riin_1": {
         background: "nurse_office",
@@ -475,7 +475,7 @@ Object.assign(SCENARIO[3], {
         character: "riin_smile",
         next: "day3_lunch_riin_7"
     },
-    // 리인: 선생님이 만든 건강 음료 줄까?
+    // 리인: 전해질 음료 있어.
     "day3_lunch_riin_7": {
         character: "riin_smile",
         next: "day3_lunch_riin_8"
@@ -485,7 +485,7 @@ Object.assign(SCENARIO[3], {
         character: "riin_smile",
         next: "day3_lunch_riin_9"
     },
-    // 리인: 비타민이랑 허브 블렌딩이야. 몸에 좋아.
+    // 리인: 비타민이랑 전해질 섞은 거야.
     "day3_lunch_riin_9": {
         character: "riin_smile",
         next: "day3_lunch_riin_choice"

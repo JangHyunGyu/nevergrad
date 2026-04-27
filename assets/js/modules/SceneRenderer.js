@@ -9,6 +9,7 @@ class SceneRenderer {
         this.bgLayer = document.getElementById('bg-layer');
         this.bgOverlay = document.getElementById('bg-overlay');
         this.mediaOverlay = document.getElementById('media-overlay');
+        this.charLayer = document.getElementById('char-layer');
         this.charLeft = document.getElementById('char-left');
         this.charCenter = document.getElementById('char-center');
         this.charRight = document.getElementById('char-right');
@@ -202,22 +203,28 @@ class SceneRenderer {
     // 시간대 설정: bg-layer 필터 + bg-overlay 동시 적용
     // type: 'morning' | 'sunset' | 'night' | 'dawn' | 'dark' | 'rain' | null(낮)
     setTimeOfDay(type) {
-        if (!this.bgLayer) return;
-        // 기존 시간대 클래스만 제거하고 bg-layer의 다른 상태 클래스는 보존
-        this.bgLayer.classList.add('bg-layer');
-        this.bgLayer.classList.remove(
+        const timeClasses = [
             'time-morning',
             'time-sunset',
             'time-night',
             'time-dawn',
             'time-dark',
             'time-rain'
-        );
+        ];
+
+        if (this.bgLayer) {
+            this.bgLayer.classList.add('bg-layer');
+            this.bgLayer.classList.remove(...timeClasses);
+        }
+
+        if (this.charLayer) {
+            this.charLayer.classList.remove(...timeClasses);
+        }
+
         this.clearOverlays();
 
-        if (type) {
-            this.bgLayer.classList.add(`time-${type}`);
-            this.addOverlay(type);
+        if (type && this.charLayer) {
+            this.charLayer.classList.add(`time-${type}`);
         }
     }
 

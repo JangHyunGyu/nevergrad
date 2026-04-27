@@ -874,7 +874,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         next: "day5_lunch_eunsu_7"
     },
-    // "거긴 위험해. 이리 와."
+    // "거기서 멈춰. 비상구 쪽은 폐쇄 구역이야."
     "day5_lunch_eunsu_7": {
         character: "eunsu_warm",
         next: "day5_lunch_eunsu_8"
@@ -907,7 +907,7 @@ Object.assign(SCENARIO[5], {
         character: "eunsu_warm",
         next: "day5_lunch_eunsu_14"
     },
-    // "선생님이 잘해주면 남아있을 줄 알았어."
+    // "네 반응을 기록하고..."
     "day5_lunch_eunsu_14": {
         character: "eunsu_warm",
         next: "day5_lunch_eunsu_15"
@@ -935,7 +935,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         next: "day5_lunch_eunsu_20"
     },
-    // "마지막 기회야"
+    // "마지막 선택이야"
     "day5_lunch_eunsu_20": {
         character: "eunsu_obsessed",
         next: "day5_lunch_eunsu_21"
@@ -947,7 +947,7 @@ Object.assign(SCENARIO[5], {
         vibrate: "final_needle",
         next: "day5_lunch_eunsu_22"
     },
-    // "다시 1일차부터."
+    // "다시 1일차부터. 네가 아무것도 모르는 상태로."
     "day5_lunch_eunsu_22": {
         character: "eunsu_obsessed",
         next: "day5_lunch_eunsu_23"
@@ -961,7 +961,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         next: "day5_lunch_eunsu_25"
     },
-    // "...제발."
+    // "...돌아와."
     "day5_lunch_eunsu_25": {
         character: "eunsu_gentle",
         typingSpeed: 150,

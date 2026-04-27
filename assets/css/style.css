@@ -1030,6 +1030,31 @@ body {
     height: 100%;
     z-index: 3;
     pointer-events: none;
+    --character-time-filter: none;
+}
+
+.char-layer.time-morning {
+    --character-time-filter: brightness(1.05) saturate(1.05);
+}
+
+.char-layer.time-sunset {
+    --character-time-filter: brightness(0.85) saturate(1.2) sepia(0.15) hue-rotate(-10deg);
+}
+
+.char-layer.time-night {
+    --character-time-filter: brightness(0.35) saturate(0.5) hue-rotate(10deg);
+}
+
+.char-layer.time-dawn {
+    --character-time-filter: brightness(0.55) saturate(0.7) hue-rotate(-5deg);
+}
+
+.char-layer.time-dark {
+    --character-time-filter: brightness(0.2) saturate(0.3) hue-rotate(15deg);
+}
+
+.char-layer.time-rain {
+    --character-time-filter: brightness(0.6) saturate(0.6) contrast(1.1);
 }
 
 .character-sprite {
@@ -1037,6 +1062,7 @@ body {
     bottom: 0;
     height: 90%;
     object-fit: contain;
+    filter: var(--character-time-filter);
     transition: opacity 0.25s ease-in-out, transform 0.3s ease, filter 0.3s ease;
     will-change: opacity;
 }
@@ -1077,6 +1103,7 @@ body {
     bottom: 0;
     height: 90%;
     object-fit: contain;
+    filter: var(--character-time-filter);
     pointer-events: none;
     transition: opacity 0.25s ease-in-out;
     will-change: opacity;

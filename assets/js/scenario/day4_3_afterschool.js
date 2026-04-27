@@ -431,13 +431,13 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_13"
     },
     "day4_after_eunsu_13": {
-        // "괜찮아, {name}. 선생님이 다 해결해줄게." (MD 3203)
+        // "괜찮아, {name}. 선생님이 다시 정리해줄게." (MD 3203)
         character: "eunsu_gentle",
         unskippable: true,
         next: "day4_after_eunsu_14"
     },
     "day4_after_eunsu_14": {
-        // 선생님의 손이 내 머리를 쓰다듬는다 (MD 3205)
+        // 선생님의 손이 내 머리 위에서 멈춤 (MD 3205)
         character: "eunsu_gentle",
         unskippable: true,
         next: "day4_after_eunsu_15"

@@ -57,6 +57,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_milk_2": {
         character: null,
+        setFlags: ["milk_moved"],
         next: "day3_morning_commute_1"
     },
 
@@ -105,6 +106,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_gate_2": {
         character: null,
+        setFlags: ["sea_not_waiting"],
         next: "day3_morning_gate_3"
     },
     "day3_morning_gate_3": {
@@ -183,6 +185,7 @@ Object.assign(SCENARIO[3], {
     "day3_morning_seolhwa_3": {
         character: "seolhwa_quiet",
         typingSpeed: 120,
+        setFlags: ["seolhwa_sighting"],
         next: "day3_morning_seolhwa_4"
     },
     "day3_morning_seolhwa_4": {

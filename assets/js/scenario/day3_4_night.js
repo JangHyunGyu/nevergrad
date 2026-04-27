@@ -150,6 +150,7 @@ Object.assign(SCENARIO[3], {
         character: null,
         glitch: { themeShift: true },
         vibrate: "danger",
+        setFlags: ["genre_shift"],
         next: "day3_night_bleed_6"
     },
     "day3_night_bleed_6": {
@@ -223,6 +224,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_stat_crack_4": {
         character: null,
         glitch: { peelStatLabel: true, revealDuration: 300 },
+        setFlags: ["stat_reveal"],
         next: "day3_night_stat_crack_4a"
     },
     "day3_night_stat_crack_4a": {

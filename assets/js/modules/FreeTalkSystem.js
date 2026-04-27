@@ -677,7 +677,7 @@ ${memories}
      * @private
      */
     _buildFlagMemoriesForChar(charId) {
-        if (!window.FLAG_MEMORIES) return '';
+        if (typeof FLAG_MEMORIES === 'undefined') return '';
 
         const memories = FLAG_MEMORIES.filter(m =>
             m.char === charId && this.state.hasFlag(m.flag)
@@ -894,17 +894,29 @@ ${memories}
         bubble.className = `ft-message ${type}`;
         if (isTyping) bubble.classList.add('ft-typing');
 
-        // *이탤릭* 마크다운 처리
-        let html = text;
-        if (!isTyping) {
-            html = text.replace(/\*([^*]+)\*/g, '<em class="ft-action">$1</em>');
-        }
-        bubble.innerHTML = html;
+        bubble.innerHTML = this._formatChatBubbleText(text, isTyping);
 
         chatLog.appendChild(bubble);
         chatLog.scrollTop = chatLog.scrollHeight;
 
         return bubble;
+    }
+
+    _formatChatBubbleText(text, isTyping = false) {
+        const escaped = this._escapeHtml(text);
+        if (isTyping) return escaped;
+        // *이탤릭* 액션 마크다운만 허용하고, 그 외 HTML은 텍스트로 표시한다.
+        return escaped.replace(/\*([^*]+)\*/g, '<em class="ft-action">$1</em>');
+    }
+
+    _escapeHtml(value) {
+        return String(value ?? '').replace(/[&<>"']/g, ch => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;'
+        }[ch]));
     }
 
     // =========================================================================
@@ -1077,6 +1089,10 @@ ${memories}
     // =========================================================================
 
     _buildFlagSummary() {
+        if (typeof FLAG_MEMORIES === 'undefined') {
+            return '(기록된 행동 없음)';
+        }
+
         const activeMemories = FLAG_MEMORIES.filter(m => this.state.hasFlag(m.flag));
 
         if (activeMemories.length === 0) {

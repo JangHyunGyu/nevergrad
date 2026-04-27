@@ -359,6 +359,7 @@ Object.assign(SCENARIO[2], {
     "day2_night_dream_6": {
         character: "seolhwa_smile",
         night: true,
+        setFlags: ["dream_seolhwa_day2"],
         next: "day2_night_dream_7"
     },
     "day2_night_dream_7": {

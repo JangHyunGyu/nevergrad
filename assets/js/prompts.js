@@ -71,26 +71,27 @@ const FLAG_MEMORIES = [
     { flag: "met_seolhwa", char: "seolhwa", text: "뒷자리의 이설화를 인지함. 다른 학생들은 반응이 없었음." },
 
     // ===== Day 2 =====
-    { flag: "sea_lunch_together", char: "sea", text: "세아와 점심을 함께 먹음. 도시락을 나눠줌." },
+    { flag: "lunch_with_sea", char: "sea", text: "세아와 첫 점심을 함께 먹음. 도시락을 나눠줌." },
+    { flag: "day2_lunch_with_sea", char: "sea", text: "둘째 날에도 세아와 점심을 함께 먹음." },
     { flag: "sea_student_council", char: "sea", text: "학생회실에서 세아와 함께 작업함." },
     { flag: "drank_riin_drink", char: "riin", text: "리인이 건넨 음료를 마심." },
     { flag: "safety_app_installed", char: null, text: "학교 '안전 앱'을 설치하고 위치 권한을 허용함." },
-    { flag: "notification_allowed", char: null, text: "브라우저 알림 권한을 허용함." },
+    { flag: "app_all_permissions", char: null, text: "학교 '안전 앱'의 모든 권한을 허용함." },
     { flag: "dream_seolhwa_day2", char: "seolhwa", text: "꿈에서 설화를 봤음. '도망쳐'라는 말을 들음." },
 
     // ===== Day 3 =====
     { flag: "milk_moved", char: null, text: "냉장고 우유 위치가 바뀌어 있었음." },
     { flag: "sea_not_waiting", char: "sea", text: "세아가 교문에서 안 기다리고 있었음." },
-    { flag: "locker_scratched", char: null, text: "사물함에 누가 긁은 자국이 있었음." },
+    { flag: "found_scratched_locker", char: null, text: "사물함 이름표가 누군가에게 긁혀 지워져 있었음." },
     { flag: "seolhwa_sighting", char: "seolhwa", text: "복도 끝에서 설화의 뒷모습을 봤음." },
     { flag: "genre_shift", char: null, text: "Day 3 밤, 장르가 로맨스에서 스릴러로 전환됨." },
     { flag: "stat_reveal", char: null, text: "호감도가 사실 위험도의 가중합이었음이 드러남." },
 
     // ===== Day 4~5 (증거 관련) =====
-    { flag: "found_belongings", char: null, text: "지하창고에서 실종 학생들의 소지품 발견." },
-    { flag: "found_photos", char: "eunsu", text: "은수의 집무실에서 주인공을 촬영한 사진이 벽면에 도배된 것을 발견." },
+    { flag: "found_old_building_nametags", char: null, text: "구관에서 지워진 이름표 12개의 흔적을 발견." },
+    { flag: "evidence_subject_ledger", char: "eunsu", text: "은수의 서류에서 피험자 관리 대장을 확인함." },
     { flag: "yuna_memory_card", char: "yuna", text: "유나가 건넨 메모리카드: 이전 전학생들이 사라지는 영상." },
-    { flag: "seolhwa_warning", char: "seolhwa", text: "설화가 '오늘 밤이 마지막 기회'라고 경고함." },
+    { flag: "found_seolhwa_mark", char: "seolhwa", text: "설화가 남긴 탈출 표식과 경고를 발견함." },
 ];
 
 // =============================================================================

@@ -60,12 +60,12 @@ Object.assign(SCENARIO[2], {
             {
                 next: "day2_after_allow_1",
                 stats: { eunsu: { affinity: 5 } },
-                setFlags: ["app_all_permissions"]
+                setFlags: ["safety_app_installed", "app_all_permissions"]
             },
             {
                 next: "day2_after_limit_1",
                 stats: { eunsu: { affinity: -2 } },
-                setFlags: ["app_limited_permissions"]
+                setFlags: ["safety_app_installed", "app_limited_permissions"]
             }
         ]
     },
@@ -106,6 +106,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_sea_start": {
         background: "student_council",
         character: null,
+        setFlags: ["sea_student_council"],
         next: "day2_after_sea_1"
     },
     "day2_after_sea_1": {

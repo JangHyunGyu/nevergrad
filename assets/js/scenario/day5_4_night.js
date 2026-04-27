@@ -70,6 +70,10 @@ Object.assign(SCENARIO[5], {
             { condition: ["route_escape"], next: "day5_ending_escape_1" },
             { condition: ["forced_forget"], next: "day5_ending_forget_forced_1" },
             { condition: ["ghost_guided"], next: "day5_ending_ghost_guided_1" },
+            { condition: ["ending_bridge_true_done"], next: "day5_ending_true_19" },
+            { condition: ["ending_bridge_resist_done"], next: "day5_ending_resist_22" },
+            { condition: ["ending_bridge_forget_done"], next: "day5_ending_forget_14" },
+            { condition: ["ending_bridge_ghost_done"], next: "day5_ending_ghost_17" },
             { condition: ["route_true", "has_evidence"], next: "day5_ending_true_1" },
             { condition: ["route_resist"], next: "day5_ending_resist_1" },
             { condition: ["route_forget"], next: "day5_ending_forget_1" },
@@ -153,6 +157,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_5"
     },
     "day5_ending_true_5": {
+        background: "exit_door",
         character: null,
         next: "day5_ending_true_6"
     },
@@ -221,6 +226,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_19"
     },
     "day5_ending_true_19": {
+        background: "exit_door",
+        bgm: "ending_hope.mp3",
         character: null,
         next: "day5_ending_true_20"
     },
@@ -704,6 +711,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_22"
     },
     "day5_ending_resist_22": {
+        background: "exit_door",
+        bgm: "ending_bittersweet.mp3",
         character: null,
         next: "day5_ending_resist_23"
     },
@@ -1084,6 +1093,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_17"
     },
     "day5_ending_ghost_17": {
+        background: "ending_ghost",
+        bgm: "ending_melancholy.mp3",
         character: null,
         next: "day5_ending_ghost_18"
     },

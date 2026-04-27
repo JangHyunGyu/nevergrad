@@ -203,8 +203,16 @@ class SceneRenderer {
     // type: 'morning' | 'sunset' | 'night' | 'dawn' | 'dark' | 'rain' | null(낮)
     setTimeOfDay(type) {
         if (!this.bgLayer) return;
-        // 기존 시간대 클래스 제거
-        this.bgLayer.className = 'bg-layer';
+        // 기존 시간대 클래스만 제거하고 bg-layer의 다른 상태 클래스는 보존
+        this.bgLayer.classList.add('bg-layer');
+        this.bgLayer.classList.remove(
+            'time-morning',
+            'time-sunset',
+            'time-night',
+            'time-dawn',
+            'time-dark',
+            'time-rain'
+        );
         this.clearOverlays();
 
         if (type) {

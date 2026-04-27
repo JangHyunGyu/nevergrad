@@ -487,10 +487,7 @@ class GameEngine {
         }
 
         // 오버레이
-        this.renderer.clearOverlays();
-        if (scene.sunset) this.renderer.addOverlay('sunset');
-        if (scene.night) this.renderer.addOverlay('night');
-        if (scene.rain) this.renderer.addOverlay('rain');
+        this.renderer.setTimeOfDay(this._resolveSceneTimeOfDay(sceneId, scene));
 
         // 캐릭터 (키 기반: "sea_smile" → CONFIG.EXPRESSIONS에서 경로 조회)
         // character/characters가 명시된 경우만 변경, 없으면 이전 상태 유지
@@ -738,6 +735,71 @@ class GameEngine {
         if (scene.metaEffect && !scene.glitch?.endingCreditSaveUI) {
             this._handleMetaEffect(scene.metaEffect);
         }
+    }
+
+    _resolveSceneTimeOfDay(sceneId, scene) {
+        if (!scene || scene.noTimeFilter || scene.timeOfDay === false || scene.timeOfDay === null) {
+            return null;
+        }
+
+        if (typeof scene.timeOfDay === 'string') {
+            return scene.timeOfDay || null;
+        }
+
+        if (scene.dark) return 'dark';
+        if (scene.dawn) return 'dawn';
+        if (scene.rain) return 'rain';
+        if (scene.night) return 'night';
+        if (scene.sunset) return 'sunset';
+        if (scene.morning) return 'morning';
+
+        const backgroundKey = scene.background ? String(scene.background) : '';
+        const backgroundPath = backgroundKey
+            ? (CONFIG.BACKGROUNDS?.[backgroundKey] || backgroundKey)
+            : '';
+
+        if (this._isTimeFilterExemptBackground(backgroundPath)) {
+            return null;
+        }
+
+        const backgroundTime = this._timeOfDayFromBackground(backgroundKey);
+        if (backgroundTime) return backgroundTime;
+
+        const slot = this._slotFromSceneId(sceneId) || this.state.currentSlot;
+        return this._timeOfDayFromSlot(slot);
+    }
+
+    _slotFromSceneId(sceneId) {
+        return /^day\d_(morning|lunch|afterschool|night)_/.exec(sceneId || '')?.[1] || null;
+    }
+
+    _timeOfDayFromSlot(slot) {
+        const slotMap = {
+            morning: 'morning',
+            lunch: null,
+            afterschool: 'sunset',
+            night: 'night'
+        };
+        return Object.prototype.hasOwnProperty.call(slotMap, slot) ? slotMap[slot] : null;
+    }
+
+    _timeOfDayFromBackground(backgroundKey) {
+        if (!backgroundKey) return null;
+        const key = String(backgroundKey).toLowerCase();
+        if (/(^|_)dark($|_)/.test(key)) return 'dark';
+        if (/(^|_)dawn($|_)/.test(key)) return 'dawn';
+        if (/(^|_)rain($|_)/.test(key)) return 'rain';
+        if (/(^|_)night($|_)/.test(key)) return 'night';
+        if (/(^|_)(sunset|evening|afternoon)($|_)/.test(key)) return 'sunset';
+        if (/(^|_)morning($|_)/.test(key)) return 'morning';
+        return null;
+    }
+
+    _isTimeFilterExemptBackground(backgroundPath) {
+        const path = String(backgroundPath || '').replace(/\\/g, '/').toLowerCase();
+        return path.includes('/images/cg/')
+            || path.includes('/images/evidence/')
+            || path.endsWith('/background/black.png');
     }
 
     _buildSceneMediaOverlay(sceneId, scene, t, resolvedText, extraVars) {

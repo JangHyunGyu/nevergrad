@@ -397,7 +397,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_true_12": {
         character: null,
-        setFlags: ["broke_through_eunsu", "escape_with_yuna", "has_evidence"],
+        setFlags: ["broke_through_eunsu", "escape_with_yuna", "has_evidence", "ending_bridge_true_done"],
         next: "day5_after_end"
     },
 
@@ -455,6 +455,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_forget_12": {
         character: null,
+        setFlags: ["ending_bridge_forget_done"],
         next: "day5_after_end"
     },
 
@@ -556,6 +557,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_resist_15": {
         character: "seolhwa_fading",
+        setFlags: ["ending_bridge_resist_done"],
         next: "day5_after_end"
     },
 
@@ -618,6 +620,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_ghost_13": {
         character: null,
+        setFlags: ["ending_bridge_ghost_done"],
         next: "day5_after_end"
     },
 

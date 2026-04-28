@@ -117,13 +117,13 @@ const CONFIG = {
             worried: "assets/images/characters/yuna_scared.png"      // alias: 걱정하는 상태
         },
         seolhwa: {
-            normal: "assets/images/characters/seolhwa_normal_v2.png",
-            smile: "assets/images/characters/seolhwa_smile_v2.png",
-            sad: "assets/images/characters/seolhwa_sad_v2.png",
-            fade: "assets/images/characters/seolhwa_fade_v2.png",
-            fading: "assets/images/characters/seolhwa_fade_v2.png",     // alias: 사라지는 중
-            ghost: "assets/images/characters/seolhwa_ghost_v2.png",
-            quiet: "assets/images/characters/seolhwa_quiet_v2.png"
+            normal: "assets/images/characters/seolhwa_normal.png",
+            smile: "assets/images/characters/seolhwa_smile.png",
+            sad: "assets/images/characters/seolhwa_sad.png",
+            fade: "assets/images/characters/seolhwa_fade.png",
+            fading: "assets/images/characters/seolhwa_fade.png",     // alias: 사라지는 중
+            ghost: "assets/images/characters/seolhwa_ghost.png",
+            quiet: "assets/images/characters/seolhwa_quiet.png"
         },
         classmate: {
             default: null  // 급우: 전용 이미지 없음, 엔진에서 null 처리

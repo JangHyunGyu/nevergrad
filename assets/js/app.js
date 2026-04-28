@@ -161,7 +161,7 @@ function initializeTitleLineup() {
     if (!stage) return;
 
     const characters = [
-        { id: 'title-char-seolhwa', name: 'seolhwa', src: 'assets/images/characters/seolhwa_quiet_v2.png' },
+        { id: 'title-char-seolhwa', name: 'seolhwa', src: 'assets/images/characters/seolhwa_quiet.png' },
         { id: 'title-char-yuna', name: 'yuna', src: 'assets/images/characters/yuna_normal.png' },
         { id: 'title-char-eunsu', name: 'eunsu', src: 'assets/images/characters/eunsu_normal.png' },
         { id: 'title-char-sea', name: 'sea', src: 'assets/images/characters/sea_normal.png', ngp: 'assets/images/characters/sea_stare.png' },

@@ -953,7 +953,7 @@ class GameEngine {
         const sceneNo = Number((sceneId.match(/_(\d+)$/) || [])[1] || 1);
 
         const raw = String(resolvedText || '').trim();
-        const isDocumentQuote = /^\*{3}\s*['"`「『“]/.test(raw);
+        const isDocumentQuote = /^\*+\s*['"`「『“]/.test(raw);
         const excerpt = isDocumentQuote ? this._stripVNMarkup(raw) : '';
 
         return {

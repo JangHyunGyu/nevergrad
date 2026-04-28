@@ -420,8 +420,29 @@
         "name": "Park Eunsu"
     },
     "day5_morning_true_ft": {
-        "name": "",
-        "text": ""
+        "name": "Moi",
+        "text": "*Son sourire est trop naturel. À côté, Yuna serre fort l'appareil photo. Qu'est-ce que je suis censé répondre.*",
+        "choices": [
+            "Écartez-vous, madame. Je sais tout ce qu'on a vu en bas.",
+            "...Je me suis perdu. Désolé, je sors tout de suite.",
+            "Yuna a eu un vertige tout d'un coup. Je l'emmène à l'infirmerie."
+        ]
+    },
+    "day5_morning_true_ft_confront": {
+        "name": "Park Eunsu",
+        "text": "...{name}, ce que tu dis fait peur. Tu veux qu'on s'asseye avec la professeure et qu'on en parle calmement ? Pose l'appareil un instant."
+    },
+    "day5_morning_true_ft_lost": {
+        "name": "Park Eunsu",
+        "text": "Ce n'est rien. Tu n'es pas blessé ? — Laisse la professeure t'accompagner. Doucement."
+    },
+    "day5_morning_true_ft_yuna": {
+        "name": "Park Eunsu",
+        "text": "...Je vois. Mais l'infirmerie est au deuxième étage du bâtiment principal, {name}. Allons-y ensemble. Je vais te la soutenir."
+    },
+    "day5_morning_true_ft_stall": {
+        "name": "Park Eunsu",
+        "text": "Attends. Doucement. — Écoute la professeure avant de partir, d'accord ?"
     },
     "day5_morning_true_post_ft_1": {
         "text": "*La professeure Eunsu a posé une main sur mon épaule. Une main chaude. Mais que se cache-t-il derrière ce sourire ?*",

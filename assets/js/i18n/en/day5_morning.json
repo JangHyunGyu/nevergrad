@@ -420,8 +420,29 @@
         "name": "Park Eunsu"
     },
     "day5_morning_true_ft": {
-        "name": "",
-        "text": ""
+        "name": "Me",
+        "text": "*Her smile is too natural. Beside me, Yuna is gripping the camera tight. How am I supposed to answer.*",
+        "choices": [
+            "Move aside, ma'am. I know everything we saw downstairs.",
+            "...I got lost. Sorry, I'll head out right now.",
+            "Yuna suddenly got dizzy. I'm taking her to the nurse."
+        ]
+    },
+    "day5_morning_true_ft_confront": {
+        "name": "Park Eunsu",
+        "text": "...{name}, that's a scary thing to say. Want to sit down with the teacher and talk it through? Put the camera down for a second."
+    },
+    "day5_morning_true_ft_lost": {
+        "name": "Park Eunsu",
+        "text": "It's all right. You're not hurt? — Let the teacher walk you out. Take your time."
+    },
+    "day5_morning_true_ft_yuna": {
+        "name": "Park Eunsu",
+        "text": "...I see. The nurse's office is on the second floor of the main building though, {name}. Let's go together. I'll help you carry her."
+    },
+    "day5_morning_true_ft_stall": {
+        "name": "Park Eunsu",
+        "text": "Hold on. Slow down. — Hear the teacher out before you go, hm?"
     },
     "day5_morning_true_post_ft_1": {
         "text": "*Teacher Eunsu placed a hand on my shoulder. It was warm. But what was behind that smile?*",

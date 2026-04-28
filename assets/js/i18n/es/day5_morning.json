@@ -420,8 +420,29 @@
         "name": "Park Eunsu"
     },
     "day5_morning_true_ft": {
-        "name": "",
-        "text": ""
+        "name": "Yo",
+        "text": "*Su sonrisa es demasiado natural. A mi lado, Yuna aprieta la cámara con fuerza. Cómo se supone que respondo.*",
+        "choices": [
+            "Apártese, profesora. Sé todo lo que vimos abajo.",
+            "...Me perdí. Lo siento, ahora mismo me voy.",
+            "A Yuna le dio mareo de repente. La estoy llevando a la enfermería."
+        ]
+    },
+    "day5_morning_true_ft_confront": {
+        "name": "Park Eunsu",
+        "text": "...{name}, eso que dices da miedo. ¿Por qué no te sientas con la profesora y lo hablamos con calma? Baja la cámara un momento."
+    },
+    "day5_morning_true_ft_lost": {
+        "name": "Park Eunsu",
+        "text": "Está bien. ¿No te lastimaste? — Deja que la profesora te acompañe. Ven despacio."
+    },
+    "day5_morning_true_ft_yuna": {
+        "name": "Park Eunsu",
+        "text": "...Ya veo. Pero la enfermería está en el segundo piso del edificio principal, {name}. Vamos juntos. Yo te ayudo a sostenerla."
+    },
+    "day5_morning_true_ft_stall": {
+        "name": "Park Eunsu",
+        "text": "Espera. Despacio. — Escucha a la profesora antes de irte, ¿sí?"
     },
     "day5_morning_true_post_ft_1": {
         "text": "*La profesora Eunsu puso una mano en mi hombro. Una mano cálida. Pero, ¿qué se escondía detrás de esa sonrisa?*",

@@ -93,14 +93,32 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_ft_messenger"
     },
 
-    // ===== 민수에게 답장 (FreeTalk 메신저 모드) =====
+    // ===== 민수에게 답장 (메신저 톤 — 일반 시퀀스로 교체) =====
     "day2_night_ft_messenger": {
         character: null,
         night: true,
-        type: "free_talk",
-        freeTalkMode: "messenger",
-        freeTalkChar: "minsu",
-        freeTalkNext: "day2_night_sea_1"
+        next: "day2_night_ft_messenger_2"
+    },
+    "day2_night_ft_messenger_2": {
+        character: null,
+        night: true,
+        messengerDelay: 5000,
+        next: "day2_night_ft_messenger_3"
+    },
+    "day2_night_ft_messenger_3": {
+        character: null,
+        night: true,
+        next: "day2_night_ft_messenger_4"
+    },
+    "day2_night_ft_messenger_4": {
+        character: null,
+        night: true,
+        next: "day2_night_ft_messenger_5"
+    },
+    "day2_night_ft_messenger_5": {
+        character: null,
+        night: true,
+        next: "day2_night_sea_1"
     },
 
     // ===== 세아와의 카톡 =====

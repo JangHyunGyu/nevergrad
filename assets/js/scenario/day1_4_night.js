@@ -70,25 +70,25 @@ Object.assign(SCENARIO[1], {
     },
     "day1_night_sea_1": {
         character: "sea_smile",
-        charOpacity: 0.35,
+        charOpacity: 0.7,
         night: true,
         next: "day1_night_sea_2"
     },
     "day1_night_sea_2": {
         character: "sea_normal",
-        charOpacity: 0.35,
+        charOpacity: 0.7,
         night: true,
         next: "day1_night_sea_3"
     },
     "day1_night_sea_3": {
         character: "sea_normal",
-        charOpacity: 0.35,
+        charOpacity: 0.7,
         night: true,
         next: "day1_night_sea_4"
     },
     "day1_night_sea_4": {
         character: "sea_normal",
-        charOpacity: 0.35,
+        charOpacity: 0.7,
         night: true,
         next: "day1_night_sea_reply"
     },
@@ -105,14 +105,14 @@ Object.assign(SCENARIO[1], {
     },
     "day1_night_sea_reply_1": {
         character: "sea_smile",
-        charOpacity: 0.35,
+        charOpacity: 0.7,
         night: true,
         messengerDelay: 1200,
         next: "day1_night_sleep_1"
     },
     "day1_night_sea_reply_2": {
         character: "sea_smile",
-        charOpacity: 0.35,
+        charOpacity: 0.7,
         night: true,
         messengerDelay: 1200,
         next: "day1_night_sleep_1"

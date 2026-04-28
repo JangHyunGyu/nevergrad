@@ -358,7 +358,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_broadcast_6": {
         character: "seolhwa_quiet",
-        charOpacity: 0.4,
+        charOpacity: 0.7,
         next: "day2_broadcast_7"
     },
     "day2_broadcast_7": {

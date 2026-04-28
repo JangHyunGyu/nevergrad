@@ -424,6 +424,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         glitch: { heavyGlitch: true },
         typingSpeed: 100,
+        unskippable: true,
         next: "day5_postcredit_8"
     },
     "day5_postcredit_8": {
@@ -971,6 +972,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_forget_12": {
         character: null,
         glitch: { heavyGlitch: true },
+        unskippable: true,
         next: "day5_ending_forget_13"
     },
     // ── 화이트아웃 후 새 아침 ──

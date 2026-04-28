@@ -303,6 +303,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_wall_12": {
         character: null,
+        stopSfx: "sfx_static.mp3",
         next: "day3_xover_glitch_1"
     },
 
@@ -316,6 +317,7 @@ Object.assign(SCENARIO[3], {
         background: "corridor_dark",
         character: null,
         glitch: { heavyGlitch: true },
+        unskippable: true,
         next: "day3_xover_glitch_2"
     },
     "day3_xover_glitch_2": {
@@ -337,6 +339,7 @@ Object.assign(SCENARIO[3], {
     "day3_xover_glitch_5": {
         character: null,
         glitch: { heavyGlitch: true },
+        unskippable: true,
         next: "day3_xover_glitch_6"
     },
     "day3_xover_glitch_6": {

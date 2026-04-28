@@ -482,6 +482,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_alone_11": {
         character: null,
+        stopSfx: "sfx_static.mp3",
         next: "day3_after_yuna_check"
     },
 

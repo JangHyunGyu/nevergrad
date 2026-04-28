@@ -104,6 +104,7 @@ Object.assign(SCENARIO[5], {
         bgm: "confrontation.mp3",
         character: null,
         glitch: { heavyGlitch: true },
+        unskippable: true,
         next: "day5_after_caught_2"
     },
     "day5_after_caught_2": {
@@ -204,6 +205,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_caught_submit_4": {
         character: null,
         glitch: { heavyGlitch: true, drugBlur: true },
+        unskippable: true,
         next: "day5_after_end",
         setFlags: ["forced_forget"]
     },

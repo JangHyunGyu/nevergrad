@@ -393,7 +393,11 @@
     },
     "day5_morning_true_timer_choice": {
         "text": "*どんな選択をしても――時間がない。*",
-        "name": "僕"
+        "name": "僕",
+        "choices": [
+            "ユナを連れて出る",
+            "いったん隠れる"
+        ]
     },
     "day5_morning_true_run_1": {
         "text": "*証拠をバッグに押し込み、ユナの腕を掴んだ。*",

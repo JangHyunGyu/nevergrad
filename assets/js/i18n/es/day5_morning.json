@@ -393,7 +393,11 @@
     },
     "day5_morning_true_timer_choice": {
         "text": "*Elija lo que elija, no hay tiempo.*",
-        "name": "Yo"
+        "name": "Yo",
+        "choices": [
+            "Sacar a Yuna de aquí",
+            "Esconderse por ahora"
+        ]
     },
     "day5_morning_true_run_1": {
         "text": "*Metí la evidencia en la mochila y agarré el brazo de Yuna.*",

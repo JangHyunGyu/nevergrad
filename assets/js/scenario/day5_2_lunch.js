@@ -44,15 +44,18 @@ Object.assign(SCENARIO[5], {
     // PA broadcast - Eunsu
     "day5_lunch_chase_4": {
         character: "eunsu_pa",
+        charOpacity: 0.7,
         stopSfx: "sfx_footsteps_running.mp3",
         next: "day5_lunch_chase_5"
     },
     "day5_lunch_chase_5": {
         character: "eunsu_pa",
+        charOpacity: 0.7,
         next: "day5_lunch_chase_6"
     },
     "day5_lunch_chase_6": {
         character: "eunsu_pa",
+        charOpacity: 0.7,
         next: "day5_lunch_chase_7"
     },
     "day5_lunch_chase_7": {
@@ -74,6 +77,7 @@ Object.assign(SCENARIO[5], {
         glitch: { screenShake: true },
         vibrate: "impact",
         timedChoice: 5000,
+        unskippable: true,
         choices: [
             { next: "day5_lunch_left_1", stats: { sea: { affinity: 10 } } },
             { next: "day5_lunch_right_1", stats: { riin: { affinity: 10 } } }
@@ -214,6 +218,7 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_left_choice": {
         character: null,
         timedChoice: 8000,
+        unskippable: true,
         choices: [
             { next: "day5_lunch_left_c1_1", stats: { sea: { affinity: -8 }, seolhwa: { affinity: 5 } } },
             { next: "day5_lunch_left_c2_1", setFlags: ["sea_companion"], stats: { sea: { affinity: 8 } } },
@@ -317,7 +322,7 @@ Object.assign(SCENARIO[5], {
     // 오른쪽: 리인 — "활성 성분 없음"
     // ══════════════════════════════════════
     "day5_lunch_right_1": {
-        background: "old_infirmary",
+        background: "old_building_corridor",
         character: null,
         next: "day5_lunch_right_2"
     },
@@ -331,6 +336,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_4"
     },
     "day5_lunch_right_4": {
+        background: "old_infirmary",
         character: null,
         next: "day5_lunch_right_5"
     },
@@ -505,6 +511,7 @@ Object.assign(SCENARIO[5], {
         sfx: "sfx_scream.mp3",
         vibrate: "danger",
         timedChoice: 6000,
+        unskippable: true,
         choices: [
             { next: "day5_lunch_right_c1_1", setFlags: ["emergency_key"], stats: { riin: { affinity: 10 } } },
             { next: "day5_lunch_right_c2_1", setFlags: ["emergency_key", "riin_companion"], stats: { riin: { affinity: 10 } } },
@@ -705,6 +712,7 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_seolhwa_30": {
         character: "seolhwa_normal",
         timedChoice: 8000,
+        unskippable: true,
         choices: [
             { next: "day5_lunch_seolhwa_c1_1", stats: { seolhwa: { affinity: 10 } } },
             { next: "day5_lunch_seolhwa_c2_1", stats: { seolhwa: { affinity: 8 } } }

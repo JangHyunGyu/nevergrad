@@ -19,6 +19,7 @@ Object.assign(SCENARIO[5], {
         background: "black",
         bgm: null,
         character: null,
+        stopSfx: true,
         clearFlags: ["high_eunsu_affinity", "high_sea_affinity", "complicit_ready"],
         next: "day5_night_affinity_check"
     },

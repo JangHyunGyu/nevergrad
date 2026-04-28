@@ -393,7 +393,11 @@
     },
     "day5_morning_true_timer_choice": {
         "text": "*No matter what choice I make — there's no time.*",
-        "name": "Me"
+        "name": "Me",
+        "choices": [
+            "Take Yuna and get out",
+            "Hide for now"
+        ]
     },
     "day5_morning_true_run_1": {
         "text": "*I shoved the evidence into my bag and grabbed Yuna's arm.*",

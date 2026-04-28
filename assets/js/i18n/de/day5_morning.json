@@ -393,7 +393,11 @@
     },
     "day5_morning_true_timer_choice": {
         "text": "*Egal, welche Wahl ich treffe — es ist keine Zeit.*",
-        "name": "Ich"
+        "name": "Ich",
+        "choices": [
+            "Yuna mitnehmen und raus",
+            "Erst einmal verstecken"
+        ]
     },
     "day5_morning_true_run_1": {
         "text": "*Ich stopfte die Beweise in die Tasche und packte Yunas Arm.*",

@@ -134,6 +134,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_caught_choice": {
         character: null,
         timedChoice: 5000,
+        unskippable: true,
         vibrate: "danger",
         choices: [
             {
@@ -306,6 +307,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_final_choice": {
         character: null,
         timedChoice: 20000,
+        unskippable: true,
         vibrate: "heartbeat",
         choices: [
             {
@@ -632,6 +634,7 @@ Object.assign(SCENARIO[5], {
     // ══════════════════════════════════════
     "day5_after_end": {
         character: null,
+        stopSfx: true,
         autoAdvance: true,
         autoAdvanceDelay: 300,
         changeSlot: "night",

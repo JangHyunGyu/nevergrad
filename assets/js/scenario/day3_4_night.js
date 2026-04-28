@@ -87,37 +87,45 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_sea_msg_10": {
         character: null,
+        unskippable: true,
         next: "day3_night_sea_msg_11"
     },
     "day3_night_sea_msg_11": {
         character: null,
+        unskippable: true,
         next: "day3_night_sea_msg_12"
     },
     // CRITICAL: 창문 메시지 — 세아가 밖에서 보고 있다
     "day3_night_sea_msg_12": {
         character: null,
         messengerDelay: 300,
+        unskippable: true,
         next: "day3_night_sea_msg_13"
     },
     "day3_night_sea_msg_13": {
         character: null,
         glitch: { noise: true, noiseDuration: 200 },
+        unskippable: true,
         next: "day3_night_sea_msg_14"
     },
     "day3_night_sea_msg_14": {
         character: null,
+        unskippable: true,
         next: "day3_night_sea_msg_15"
     },
     "day3_night_sea_msg_15": {
         character: null,
+        unskippable: true,
         next: "day3_night_sea_msg_16"
     },
     "day3_night_sea_msg_16": {
         character: null,
+        unskippable: true,
         next: "day3_night_sea_msg_17"
     },
     "day3_night_sea_msg_17": {
         character: null,
+        unskippable: true,
         next: "day3_night_bleed"
     },
 

@@ -259,6 +259,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_16"
     },
     "day4_lunch_nurse_16": {
+        background: "hallway",
         character: null,
         // 거절하고 나옴, 중얼거림
         setFlags: ["saw_riin_syringe"],

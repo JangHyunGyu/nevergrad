@@ -393,7 +393,11 @@
     },
     "day5_morning_true_timer_choice": {
         "text": "*Quel que soit le choix — le temps nous manque.*",
-        "name": "Moi"
+        "name": "Moi",
+        "choices": [
+            "Faire sortir Yuna",
+            "Se cacher pour l'instant"
+        ]
     },
     "day5_morning_true_run_1": {
         "text": "*J'ai fourré les preuves dans mon sac et j'ai attrapé le bras de Yuna.*",

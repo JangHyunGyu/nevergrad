@@ -43,7 +43,7 @@ class I18nManager {
     /**
      * 특정 Day의 텍스트 로드 (모든 시간대 파일 병합)
      * day1_morning.json + day1_lunch.json + day1_afterschool.json + day1_night.json → texts["day1"]
-     * 번역 미완료 항목은 ko 원문으로 폴백
+     * 비한국어 페이지의 번역 미완료 항목은 en 원문으로 폴백
      * @param {number} day - 1~5
      */
     async loadDay(day) {
@@ -53,44 +53,24 @@ class I18nManager {
         const slots = ['_morning', '_lunch', '_afterschool', '_night'];
         this.texts[key] = {};
 
-        // ko를 베이스로 먼저 로드 (번역 미완료 항목 폴백용)
-        if (this.currentLang !== 'ko') {
-            const koFetches = slots.map(async (slot) => {
-                const filename = `day${day}${slot}.json`;
-                try {
-                    const res = await fetch(`${I18nManager.BASE}assets/js/i18n/ko/${filename}`);
-                    if (!res.ok) return;
-                    const data = await res.json();
-                    Object.assign(this.texts[key], data);
-                } catch (e) {}
-            });
-            await Promise.all(koFetches);
+        const loadFile = async (langCode, slot) => {
+            const filename = `day${day}${slot}.json`;
+            try {
+                const res = await fetch(`${I18nManager.BASE}assets/js/i18n/${langCode}/${filename}`);
+                if (!res.ok) return;
+                const data = await res.json();
+                Object.assign(this.texts[key], data);
+            } catch (e) {}
+        };
+
+        // 비한국어 페이지에서 한국어 원문이 노출되지 않도록 en을 기본 폴백으로 사용
+        const baseLang = this.currentLang === 'ko' ? 'ko' : 'en';
+        if (baseLang !== this.currentLang) {
+            await Promise.all(slots.map((slot) => loadFile(baseLang, slot)));
         }
 
-        // 대상 언어로 오버레이 (번역된 항목만 덮어씀)
-        if (this.currentLang !== 'ko') {
-            const fetches = slots.map(async (slot) => {
-                const filename = `day${day}${slot}.json`;
-                try {
-                    const res = await fetch(`${I18nManager.BASE}assets/js/i18n/${this.currentLang}/${filename}`);
-                    if (!res.ok) return;
-                    const data = await res.json();
-                    Object.assign(this.texts[key], data);
-                } catch (e) {}
-            });
-            await Promise.all(fetches);
-        } else {
-            const fetches = slots.map(async (slot) => {
-                const filename = `day${day}${slot}.json`;
-                try {
-                    const res = await fetch(`${I18nManager.BASE}assets/js/i18n/ko/${filename}`);
-                    if (!res.ok) return;
-                    const data = await res.json();
-                    Object.assign(this.texts[key], data);
-                } catch (e) {}
-            });
-            await Promise.all(fetches);
-        }
+        // 대상 언어로 오버레이
+        await Promise.all(slots.map((slot) => loadFile(this.currentLang, slot)));
 
         this.loaded[key] = true;
     }

@@ -531,6 +531,18 @@ class GameEngine {
             this.renderer.playBGM(this.state.currentBGM);
         }
 
+        // SFX 정지 (활성 sfx를 페이드아웃) — 캐릭터 등장/씬 전환 시 잔여 발자국 등 차단용
+        // true: 전체 정지 / 문자열: 해당 파일만 정지 / 객체: { file, fadeOut }
+        if (scene.stopSfx) {
+            if (scene.stopSfx === true) {
+                this.audio?.stopSFX(null, 0.5);
+            } else if (typeof scene.stopSfx === 'string') {
+                this.audio?.stopSFX(scene.stopSfx, 0.5);
+            } else if (typeof scene.stopSfx === 'object') {
+                this.audio?.stopSFX(scene.stopSfx.file ?? null, scene.stopSfx.fadeOut ?? 0.5);
+            }
+        }
+
         // SFX
         if (scene.sfx) {
             const sfxList = Array.isArray(scene.sfx) ? scene.sfx : [scene.sfx];

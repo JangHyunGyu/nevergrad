@@ -281,7 +281,9 @@ Object.assign(SCENARIO[2], {
         character: null,
         night: true,
         sfx: "sfx_heartbeat_fast.mp3",
+        stopSfx: "sfx_rain_loop.mp3",
         glitch: { noise: true, noiseDuration: 500 },
+        unskippable: true,
         next: "day2_night_flash_6"
     },
     "day2_night_flash_6": {

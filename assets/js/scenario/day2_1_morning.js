@@ -349,6 +349,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_broadcast_4": {
         character: "eunsu_normal",
+        stopSfx: "sfx_static.mp3",
         next: "day2_broadcast_5"
     },
     "day2_broadcast_5": {

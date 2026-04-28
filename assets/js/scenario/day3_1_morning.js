@@ -102,6 +102,7 @@ Object.assign(SCENARIO[3], {
     "day3_morning_gate_1": {
         background: "school_gate",
         character: null,
+        stopSfx: true,
         next: "day3_morning_gate_2"
     },
     "day3_morning_gate_2": {

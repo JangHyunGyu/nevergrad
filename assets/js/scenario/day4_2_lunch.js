@@ -23,6 +23,7 @@ Object.assign(SCENARIO[4], {
 
     "day4_lunch_choice": {
         character: null,
+        stopSfx: "sfx_school_bell.mp3",
         choices: [
             { next: "day4_lunch_yuna_1", condition: "met_yuna", stats: { yuna: { affinity: 10 }, seolhwa: { affinity: 5 } } },
             { next: "day4_lunch_nurse_1", stats: { riin: { affinity: 8 } } },
@@ -310,6 +311,7 @@ Object.assign(SCENARIO[4], {
         background: "classroom",
         bgm: "tension.mp3",
         character: null,
+        stopSfx: "sfx_wind.mp3",
         changeSlot: "afterschool",
         next: "day4_after_start"
     }

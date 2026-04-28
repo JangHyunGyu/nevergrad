@@ -403,6 +403,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_eunsu_peek_8": {
         character: "eunsu_smile",
+        stopSfx: true,
         next: "day3_after_eunsu_peek_8a"
     },
     "day3_after_eunsu_peek_8a": {
@@ -457,7 +458,9 @@ Object.assign(SCENARIO[3], {
     "day3_after_alone_6": {
         character: null,
         sfx: "sfx_static.mp3",
+        stopSfx: "sfx_footsteps.mp3",
         glitch: { noise: true, noiseDuration: 200 },
+        unskippable: true,
         next: "day3_after_alone_7"
     },
     "day3_after_alone_7": {

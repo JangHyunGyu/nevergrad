@@ -105,6 +105,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         glitch: { noise: true, noiseDuration: 300 },
         unskippable: true,
+        stopSfx: true,
         next: "day5_morning_school_1"
     },
     "day5_morning_school_1": {
@@ -158,6 +159,7 @@ Object.assign(SCENARIO[5], {
         background: "basement",
         character: null,
         unskippable: true,
+        stopSfx: "sfx_thunder.mp3",
         next: "day5_morning_rescue_1"
     },
     "day5_morning_rescue_1": {

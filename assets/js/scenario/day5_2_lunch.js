@@ -43,6 +43,7 @@ Object.assign(SCENARIO[5], {
     // PA broadcast - Eunsu
     "day5_lunch_chase_4": {
         character: "eunsu_pa",
+        stopSfx: "sfx_footsteps_running.mp3",
         next: "day5_lunch_chase_5"
     },
     "day5_lunch_chase_5": {

@@ -64,6 +64,10 @@ class AudioManager {
         /** @type {Map<string, AudioBuffer>} */
         this._bufferCache = new Map();
 
+        // ── 활성 SFX 추적 (페이드아웃 중단용) ──
+        /** @type {Set<{source: AudioBufferSourceNode, gain: GainNode, filename: string}>} */
+        this._activeSFX = new Set();
+
         // ── 로드 실패 보고 dedup (path별 1회만 D1 보고) ──
         /** @type {Set<string>} */
         this._reportedAudioFailures = new Set();
@@ -392,17 +396,45 @@ class AudioManager {
         source.buffer = buffer;
         source.playbackRate.value = options.playbackRate || 1.0;
 
-        // 개별 SFX에 볼륨 조절이 필요하면 중간 gain 추가
-        if (options.volume !== undefined && options.volume !== 1.0) {
-            const tempGain = this.ctx.createGain();
-            tempGain.gain.value = options.volume;
-            source.connect(tempGain);
-            tempGain.connect(this.sfxGain);
-        } else {
-            source.connect(this.sfxGain);
-        }
+        // 모든 SFX에 개별 gain 부여 (stopSFX의 페이드아웃 컨트롤용)
+        const tempGain = this.ctx.createGain();
+        tempGain.gain.value = options.volume ?? 1.0;
+        source.connect(tempGain);
+        tempGain.connect(this.sfxGain);
+
+        const entry = { source, gain: tempGain, filename };
+        this._activeSFX.add(entry);
+        source.onended = () => {
+            this._activeSFX.delete(entry);
+            try { source.disconnect(); } catch {}
+            try { tempGain.disconnect(); } catch {}
+        };
 
         source.start(0);
+    }
+
+    /**
+     * 활성 SFX 페이드아웃 정지
+     * @param {string|null} [filename=null] - 특정 파일만 정지. null이면 전체 정지
+     * @param {number} [fadeOut=0.5] - 페이드아웃 시간 (초)
+     */
+    stopSFX(filename = null, fadeOut = 0.5) {
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const targets = [];
+        for (const entry of this._activeSFX) {
+            if (filename === null || entry.filename === filename) {
+                targets.push(entry);
+            }
+        }
+        targets.forEach(entry => {
+            // 진행 중인 자동 램프 취소 후 즉시 현재 값 고정 → 0으로 램프
+            try { entry.gain.gain.cancelScheduledValues(now); } catch {}
+            entry.gain.gain.setValueAtTime(entry.gain.gain.value, now);
+            entry.gain.gain.linearRampToValueAtTime(0, now + fadeOut);
+            this._activeSFX.delete(entry);
+            setTimeout(() => this._stopSource(entry.source), fadeOut * 1000 + 50);
+        });
     }
 
     // =========================================================================

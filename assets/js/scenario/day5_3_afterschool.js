@@ -229,6 +229,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_confront_4": {
         character: "eunsu_obsessed",
         glitch: { screenShake: true, noise: true },
+        stopSfx: true,
         next: "day5_after_confront_5"
     },
     "day5_after_confront_5": {

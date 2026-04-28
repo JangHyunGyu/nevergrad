@@ -137,6 +137,7 @@ Object.assign(SCENARIO[4], {
     // 문을 열었다. 복도에 아무도 없다
     "day4_morning_start_20": {
         character: null,
+        stopSfx: "sfx_clock_tick.mp3",
         next: "day4_morning_start_21"
     },
 

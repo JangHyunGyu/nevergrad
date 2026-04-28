@@ -172,6 +172,7 @@ Object.assign(SCENARIO[1], {
         background: "corridor",
         character: "seolhwa_fade",
         glitch: { noise: true, noiseDuration: 200 },
+        stopSfx: true,
         next: "day1_xover_seolhwa_2"
     },
     "day1_xover_seolhwa_2": {
@@ -201,6 +202,7 @@ Object.assign(SCENARIO[1], {
     // L119: 한세아 "혹시 전학생?"
     "day1_sea_meet_1": {
         character: "sea_smile",
+        stopSfx: true,
         next: "day1_sea_meet_2",
         setFlags: ["met_sea"]
     },

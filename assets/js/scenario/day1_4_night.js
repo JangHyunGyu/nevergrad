@@ -180,6 +180,7 @@ Object.assign(SCENARIO[1], {
     "day1_night_end": {
         character: null,
         background: "black",
+        stopSfx: true,
         changeDay: 2,
         changeSlot: "morning",
         next: "day2_morning_start"

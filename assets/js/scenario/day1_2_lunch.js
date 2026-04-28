@@ -17,6 +17,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_choice": {
         character: null,
+        stopSfx: "sfx_school_bell.mp3",
         choices: [
             { next: "day1_lunch_sea_1", setFlags: ["lunch_with_sea"], stats: { sea: { affinity: 4 } } },
             { next: "day1_lunch_yuna_1", setFlags: ["met_yuna", "yuna_route_started"], stats: { yuna: { affinity: 4 } } },
@@ -325,6 +326,7 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_end": {
         background: "classroom",
         character: null,
+        stopSfx: "sfx_wind.mp3",
         changeSlot: "afterschool",
         next: "day1_after_start"
     }

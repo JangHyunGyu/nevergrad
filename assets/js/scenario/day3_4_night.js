@@ -370,6 +370,7 @@ Object.assign(SCENARIO[3], {
         character: "seolhwa_sad",
         typingSpeed: 120,
         unskippable: true,
+        stopSfx: "sfx_whisper.mp3",
         // 바이노럴: 설화 목소리를 왼쪽 귀로 (이어폰 착용자만 효과 인지)
         glitch: { panSFX: "sfx_whisper_seolhwa", pan: -1 },
         next: "day3_night_seolhwa_6"

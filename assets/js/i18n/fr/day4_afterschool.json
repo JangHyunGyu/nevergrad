@@ -188,6 +188,31 @@
         "name": "Sea",
         "text": "...Dis ce que tu veux. De toute facon, rien ne changera."
     },
+    "day4_after_ft_sea_choice": {
+        "name": "Moi",
+        "text": "*Qu'est-ce que je suis censé dire. La main de Sea serre encore mon bras.*",
+        "choices": [
+            "...Désolé. Je ne fuis pas. J'ai juste la tête en vrac.",
+            "...Douze fois. Comment t'as tenu ?",
+            "...Je ne t'oublierai pas. Je te le promets."
+        ]
+    },
+    "day4_after_ft_sea_apologize": {
+        "name": "Sea",
+        "text": "...Je l'ai entendu treize fois. Je sais que t'étais sincère à chaque fois."
+    },
+    "day4_after_ft_sea_ask": {
+        "name": "Sea",
+        "text": "...J'ai pas tenu. C'était la première fois à chaque fois. Comme pour toi."
+    },
+    "day4_after_ft_sea_promise": {
+        "name": "Sea",
+        "text": "...Ça aussi je l'ai entendu. Celui qui promettait, c'était toi. Celui qui n'a pas tenu, c'était toi aussi. À chaque fois."
+    },
+    "day4_after_ft_sea_quiet": {
+        "name": "Sea",
+        "text": "...Laisse tomber. Va-t'en."
+    },
     "day4_after_ft_sea_post": {
         "name": "Moi",
         "text": "*Sea a lache prise. Quoi que je dise, ses yeux ne changeaient pas. Ni tristes ni en colere — juste une vieille resignation.*"

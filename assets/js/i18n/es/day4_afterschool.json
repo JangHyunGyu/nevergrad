@@ -188,6 +188,31 @@
         "name": "Han Sea",
         "text": "...Di lo que quieras. De todas formas nada va a cambiar."
     },
+    "day4_after_ft_sea_choice": {
+        "name": "Yo",
+        "text": "*Qué se supone que diga. La mano de Sea sigue aferrada a mi brazo.*",
+        "choices": [
+            "...Perdón. No me estoy escapando. Solo tengo la cabeza hecha un lío.",
+            "...Doce veces. ¿Cómo lo aguantaste?",
+            "...No te voy a olvidar. Te lo prometo."
+        ]
+    },
+    "day4_after_ft_sea_apologize": {
+        "name": "Han Sea",
+        "text": "...Lo escuché trece veces. Sé que cada vez lo decías en serio."
+    },
+    "day4_after_ft_sea_ask": {
+        "name": "Han Sea",
+        "text": "...No lo aguanté. Cada vez era la primera vez. Igual que para ti."
+    },
+    "day4_after_ft_sea_promise": {
+        "name": "Han Sea",
+        "text": "...Eso también lo escuché. El que prometía eras tú. El que no cumplió también eras tú. Cada vez."
+    },
+    "day4_after_ft_sea_quiet": {
+        "name": "Han Sea",
+        "text": "...Déjalo. Vete."
+    },
     "day4_after_ft_sea_post": {
         "name": "Yo",
         "text": "*Sea soltó mi brazo. Dijera lo que dijera, sus ojos no cambiaron. Ni tristes ni enojados — solo una vieja resignación.*"

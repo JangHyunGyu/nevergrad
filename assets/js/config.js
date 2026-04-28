@@ -120,9 +120,9 @@ const CONFIG = {
             normal: "assets/images/characters/seolhwa_normal_v2.png",
             smile: "assets/images/characters/seolhwa_smile_v2.png",
             sad: "assets/images/characters/seolhwa_sad_v2.png",
-            fade: "assets/images/characters/seolhwa_fade.png",
-            fading: "assets/images/characters/seolhwa_fade.png",     // alias: 사라지는 중
-            ghost: "assets/images/characters/seolhwa_ghost.png",
+            fade: "assets/images/characters/seolhwa_fade_v2.png",
+            fading: "assets/images/characters/seolhwa_fade_v2.png",     // alias: 사라지는 중
+            ghost: "assets/images/characters/seolhwa_ghost_v2.png",
             quiet: "assets/images/characters/seolhwa_quiet_v2.png"
         },
         classmate: {

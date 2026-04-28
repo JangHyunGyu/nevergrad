@@ -181,13 +181,13 @@ const CONFIG = {
         corridor_old: "assets/images/background/corridor_old.png",
         corridor_main: "assets/images/background/corridor.png",            // 본관 복도 (corridor 재사용)
         corridor_emergency: "assets/images/background/emergency_corridor.png",
-        locked_corridor_junction: "assets/images/background/locked_corridor_junction.png",
+        locked_corridor_junction: "assets/images/background/locked_corridor_junction.webp",
         old_infirmary: "assets/images/background/old_infirmary.png",
         old_stairway: "assets/images/background/old_stairway.png",
         old_corridor_dark: "assets/images/background/old_corridor_dark.png",
-        hidden_service_passage: "assets/images/background/hidden_service_passage.png",
+        hidden_service_passage: "assets/images/background/hidden_service_passage.webp",
         underground_lab: "assets/images/background/underground_lab.png",
-        basement_records_room: "assets/images/background/basement_records_room.png",
+        basement_records_room: "assets/images/background/basement_records_room.webp",
         // 학교 외부 (추가)
         school_back: "assets/images/background/school_back.png",
         street_morning: "assets/images/background/street_morning.png",
@@ -196,10 +196,10 @@ const CONFIG = {
         school_fence_dawn: "assets/images/background/school_fence_dawn.png",
         // 자취방 (추가)
         room_dark: "assets/images/background/room_dark.png",
-        apartment_entry_morning: "assets/images/background/apartment_entry_morning.png",
+        apartment_entry_morning: "assets/images/background/apartment_entry_morning.webp",
         // 엔딩 전용
         emergency_exit: "assets/images/background/emergency_exit.png",
-        emergency_stair_night: "assets/images/background/emergency_stair_night.png",
+        emergency_stair_night: "assets/images/background/emergency_stair_night.webp",
         classroom_afternoon: "assets/images/background/classroom_afternoon.png",
         new_classroom: "assets/images/background/new_classroom.png",
         news_article: "assets/images/background/news_article.png",

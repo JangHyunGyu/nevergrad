@@ -5425,7 +5425,43 @@ _source: `day2_4_night.js / day2_night.json`_
 
 **나**
 ```text
-*민수에게 메시지를 보냈다.*
+*답장을 보냈다. '야 민수야, 진짜 너 맞아? ㅋㅋ 너답지 않게 무슨 일 있어?'*
+```
+
+### `day2_night_ft_messenger_2`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+*입력 중 표시. 또 한참 깜빡인다. 5초, 10초, 20초.*
+```
+
+### `day2_night_ft_messenger_3`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+*민수: '나 맞아. 그냥 좀 졸려서 그래.'*
+```
+
+### `day2_night_ft_messenger_4`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+*...20초 동안 입력하다가 결국 보낸 게 이거다.*
+```
+
+### `day2_night_ft_messenger_5`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+*뭔가 어색하지만, 졸렸다는데 어쩌겠어. 다음에 또 물어보지. 핸드폰을 내려놨다.*
 ```
 
 ### `day2_night_sea_1`
@@ -9439,6 +9475,56 @@ _배경: `black`_
 **지문**
 ```text
 *...눈을 감았다. 어둠 속에서 이미지가 밀려온다.*
+```
+
+### `day3_night_ft_nightmare_2`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `black` / 글리치: noise_
+
+**지문**
+```text
+*복도를 걷고 있다. 끝이 안 보인다. 한 발 내디딜 때마다 — 복도가 더 길어진다.*
+```
+
+### `day3_night_ft_nightmare_3`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `black`_
+
+**지문**
+```text
+*교실 문을 열었다. 같은 교실. 또 열었다. 같은 교실. 같은 자리에 같은 사람들. 같은 미소. 모두 나를 본다.*
+```
+
+### `day3_night_ft_nightmare_4`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `black` / 글리치: shake + noise_
+
+**지문**
+```text
+*칠판에 이름들이 빼곡하다. 김도진. 박재원. 이세훈. ...열두 줄. 맨 아래 한 줄만 비어있다 — 내 자리.*
+```
+
+### `day3_night_ft_nightmare_5`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `black` / 글리치: noise + temperatureDrop_
+
+**지문**
+```text
+*시계를 봤다. 멈춰 있다. — 아니. 초침이, 거꾸로 돌고 있다.*
+```
+
+### `day3_night_ft_nightmare_6`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `black` / 글리치: ghostText "...도망쳐."_
+
+**지문**
+```text
+*어딘가에서 목소리가 들린다. 가까이서, 멀리서, 사방에서. ...그런데 나갈 문이 없다.*
 ```
 
 ### `day3_night_end`

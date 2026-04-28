@@ -1566,7 +1566,19 @@ class GameEngine {
         }
         if (g.themeShift) this.glitch.shiftTheme(g.themeShift);
         if (g.heavy || g.heavyGlitch) this.glitch.heavyGlitch(g.heavyDuration);
-        if (g.ghostText) this.glitch.ghostText(this._pickLocalizedValue(g.ghostText), g.ghostX || 50, g.ghostY || 30);
+        if (g.ghostText) {
+            const showGhostText = () => this.glitch.ghostText(
+                this._pickLocalizedValue(g.ghostText),
+                g.ghostX || 50,
+                g.ghostY || 30,
+                g.ghostDuration || 2000
+            );
+            if (g.ghostDelay) {
+                setTimeout(showGhostText, g.ghostDelay);
+            } else {
+                showGhostText();
+            }
+        }
         if (g.ngPlusGhostText && this.save?.isNewGamePlus()) {
             this.glitch.ghostText(
                 this._pickLocalizedValue(g.ngPlusGhostText),

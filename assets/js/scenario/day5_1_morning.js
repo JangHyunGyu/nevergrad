@@ -80,6 +80,7 @@ Object.assign(SCENARIO[5], {
         background: "corridor_dark",
         character: null,
         sfx: "sfx_door_open.mp3",
+        unskippable: true,
         next: "day5_morning_dawn_9"
     },
     "day5_morning_dawn_9": {
@@ -90,6 +91,7 @@ Object.assign(SCENARIO[5], {
         background: "dawn_road",
         character: null,
         sfx: "sfx_footsteps.mp3",
+        unskippable: true,
         next: "day5_morning_dawn_11"
     },
     "day5_morning_dawn_11": {
@@ -112,6 +114,7 @@ Object.assign(SCENARIO[5], {
     "day5_morning_school_1": {
         background: "school_gate_dark",
         character: null,
+        unskippable: true,
         next: "day5_morning_school_2"
     },
     "day5_morning_school_2": {
@@ -166,10 +169,12 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_rescue_1": {
         character: null,
+        unskippable: true,
         next: "day5_morning_rescue_2"
     },
     "day5_morning_rescue_2": {
         character: "yuna_weak",
+        unskippable: true,
         branches: [
             { condition: "met_yuna", next: "day5_morning_rescue_3" }
         ],
@@ -178,90 +183,112 @@ Object.assign(SCENARIO[5], {
     // ── met_yuna 미충족: 모르는 여학생 — 한 씬 후 합류 ──
     "day5_morning_rescue_2_unknown": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_3_unknown"
     },
     "day5_morning_rescue_3_unknown": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_4_unknown"
     },
     "day5_morning_rescue_4_unknown": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_5_unknown"
     },
     "day5_morning_rescue_5_unknown": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_5"
     },
     "day5_morning_rescue_3": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_4"
     },
     "day5_morning_rescue_4": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_5"
     },
     "day5_morning_rescue_5": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_5a"
     },
     "day5_morning_rescue_5a": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_6"
     },
     "day5_morning_rescue_6": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_7"
     },
     "day5_morning_rescue_7": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_8"
     },
     "day5_morning_rescue_8": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_9"
     },
     "day5_morning_rescue_9": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_10"
     },
     "day5_morning_rescue_10": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_11"
     },
     "day5_morning_rescue_11": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_12"
     },
     "day5_morning_rescue_12": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_13"
     },
     "day5_morning_rescue_13": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_14"
     },
     "day5_morning_rescue_14": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_15"
     },
     "day5_morning_rescue_15": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_16"
     },
     "day5_morning_rescue_16": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_17"
     },
     "day5_morning_rescue_17": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_18"
     },
     "day5_morning_rescue_18": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_19"
     },
     "day5_morning_rescue_19": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_20"
     },
     "day5_morning_rescue_20": {
@@ -272,11 +299,13 @@ Object.assign(SCENARIO[5], {
     "day5_morning_rescue_21": {
         character: "yuna_weak",
         glitch: { ghostText: "day5_morning_ghost_record", ghostX: 50, ghostY: 50 },
+        unskippable: true,
         setFlags: ["dejavu_pin_9"],
         next: "day5_morning_rescue_22"
     },
     "day5_morning_rescue_22": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_rescue_choice"
     },
 
@@ -310,74 +339,92 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_true_2": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_3"
     },
     "day5_morning_true_3": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_4"
     },
     "day5_morning_true_4": {
         characters: { left: "yuna_weak" },
+        unskippable: true,
         next: "day5_morning_true_5"
     },
     "day5_morning_true_5": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_6"
     },
     "day5_morning_true_6": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_7"
     },
     "day5_morning_true_7": {
         characters: { left: "yuna_weak" },
+        unskippable: true,
         next: "day5_morning_true_8"
     },
     "day5_morning_true_8": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_9"
     },
     "day5_morning_true_9": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_10"
     },
     "day5_morning_true_10": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_11"
     },
     "day5_morning_true_11": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_12"
     },
     "day5_morning_true_12": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_13"
     },
     "day5_morning_true_13": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_14"
     },
     "day5_morning_true_14": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_15"
     },
     "day5_morning_true_15": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_16"
     },
     "day5_morning_true_16": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_17"
     },
     "day5_morning_true_17": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_18"
     },
     "day5_morning_true_18": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_19"
     },
     "day5_morning_true_19": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_20"
     },
     "day5_morning_true_20": {
@@ -392,22 +439,27 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_true_22": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_23"
     },
     "day5_morning_true_23": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_24"
     },
     "day5_morning_true_24": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_25"
     },
     "day5_morning_true_25": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_26"
     },
     "day5_morning_true_26": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_27"
     },
     "day5_morning_true_27": {
@@ -417,50 +469,62 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_true_28": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_29"
     },
     "day5_morning_true_29": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_30"
     },
     "day5_morning_true_30": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_31"
     },
     "day5_morning_true_31": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_32"
     },
     "day5_morning_true_32": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_33"
     },
     "day5_morning_true_33": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_34"
     },
     "day5_morning_true_34": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_35"
     },
     "day5_morning_true_35": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_36"
     },
     "day5_morning_true_36": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_37"
     },
     "day5_morning_true_37": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_38"
     },
     "day5_morning_true_38": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_39"
     },
     "day5_morning_true_39": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_timer_choice"
     },
 
@@ -474,14 +538,17 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_true_run_1": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_exit_1"
     },
     "day5_morning_true_hide_1": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_true_hide_2"
     },
     "day5_morning_true_hide_2": {
         character: null,
+        unskippable: true,
         next: "day5_morning_true_exit_1"
     },
     "day5_morning_true_exit_1": {
@@ -492,6 +559,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_true_exit_2": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_true_ft"
     },
     "day5_morning_true_ft": {
@@ -509,18 +577,22 @@ Object.assign(SCENARIO[5], {
             de: "Vor dem Ausgang des Kellers im alten Gebaude. {name} und Choi Yuna halten Dokumente und eine Kamera. Eunsu schindet Zeit und weicht Fragen zum Experiment und zu Yunas Isolation geschickt aus.",
             pt: "Em frente a saida do porao do predio antigo. {name} e Choi Yuna seguram documentos e uma camera. Eunsu ganha tempo, desviando habilmente das perguntas sobre o experimento e o confinamento de Yuna."
         },
+        unskippable: true,
         freeTalkNext: "day5_morning_true_post_ft_1"
     },
     "day5_morning_true_post_ft_1": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_true_post_ft_2"
     },
     "day5_morning_true_post_ft_2": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_true_post_ft_3"
     },
     "day5_morning_true_post_ft_3": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_blockade_1"
     },
 
@@ -556,14 +628,17 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_broadcast_1": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_broadcast_2"
     },
     "day5_morning_broadcast_2": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_broadcast_3"
     },
     "day5_morning_broadcast_3": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_broadcast_4"
     },
     "day5_morning_broadcast_4": {
@@ -573,34 +648,42 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_broadcast_5": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_broadcast_6"
     },
     "day5_morning_broadcast_6": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_broadcast_7"
     },
     "day5_morning_broadcast_7": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_broadcast_8"
     },
     "day5_morning_broadcast_8": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_broadcast_9"
     },
     "day5_morning_broadcast_9": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_broadcast_10"
     },
     "day5_morning_broadcast_10": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_broadcast_11"
     },
     "day5_morning_broadcast_11": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_broadcast_12"
     },
     "day5_morning_broadcast_12": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_broadcast_13"
     },
     "day5_morning_broadcast_13": {
@@ -611,18 +694,22 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_broadcast_14": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_broadcast_15"
     },
     "day5_morning_broadcast_15": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_broadcast_16"
     },
     "day5_morning_broadcast_16": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_broadcast_17"
     },
     "day5_morning_broadcast_17": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_broadcast_18"
     },
 
@@ -638,22 +725,27 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_grad_1": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_grad_2"
     },
     "day5_morning_grad_2": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_grad_3"
     },
     "day5_morning_grad_3": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_grad_4"
     },
     "day5_morning_grad_4": {
         character: "yuna_weak",
+        unskippable: true,
         next: "day5_morning_grad_5"
     },
     "day5_morning_grad_5": {
         character: null,
+        unskippable: true,
         next: "day5_morning_grad_6"
     },
     "day5_morning_grad_6": {
@@ -663,30 +755,37 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_grad_7": {
         character: null,
+        unskippable: true,
         next: "day5_morning_grad_8"
     },
     "day5_morning_grad_8": {
         character: null,
+        unskippable: true,
         next: "day5_morning_grad_9"
     },
     "day5_morning_grad_9": {
         character: null,
+        unskippable: true,
         next: "day5_morning_grad_10"
     },
     "day5_morning_grad_10": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_11"
     },
     "day5_morning_grad_11": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_12"
     },
     "day5_morning_grad_12": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_13"
     },
     "day5_morning_grad_13": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_14"
     },
 
@@ -698,26 +797,32 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_grad_15": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_16"
     },
     "day5_morning_grad_16": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_17"
     },
     "day5_morning_grad_17": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_18"
     },
     "day5_morning_grad_18": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_19"
     },
     "day5_morning_grad_19": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_20"
     },
     "day5_morning_grad_20": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_21"
     },
     "day5_morning_grad_21": {
@@ -727,10 +832,12 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_grad_21a": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_22"
     },
     "day5_morning_grad_22": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_morning_grad_23"
     },
     "day5_morning_grad_23": {
@@ -741,22 +848,27 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_grad_24": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_grad_25"
     },
     "day5_morning_grad_25": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_grad_26"
     },
     "day5_morning_grad_26": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_grad_27"
     },
     "day5_morning_grad_27": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_grad_28"
     },
     "day5_morning_grad_28": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_grad_29"
     },
     "day5_morning_grad_29": {
@@ -766,6 +878,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_grad_29a": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_grad_30"
     },
     "day5_morning_grad_30": {
@@ -790,34 +903,41 @@ Object.assign(SCENARIO[5], {
     // ── 선택 1: "그건 사랑이 아니에요." ──
     "day5_morning_grad_reply_1": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_grad_reply_1b"
     },
     "day5_morning_grad_reply_1b": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_1"
     },
 
     // ── 선택 2: "왜 이런 짓을 한 거예요?" ──
     "day5_morning_grad_reply_2": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_grad_reply_2b"
     },
     "day5_morning_grad_reply_2b": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_grad_reply_2c"
     },
     "day5_morning_grad_reply_2c": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_1"
     },
 
     // ── 선택 3: (침묵한다) ──
     "day5_morning_grad_reply_3": {
         character: null,
+        unskippable: true,
         next: "day5_morning_grad_reply_3b"
     },
     "day5_morning_grad_reply_3b": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_1"
     },
 
@@ -831,10 +951,12 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_proposal_2": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_3"
     },
     "day5_morning_proposal_3": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_4"
     },
     "day5_morning_proposal_4": {
@@ -844,18 +966,22 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_proposal_5": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_6"
     },
     "day5_morning_proposal_6": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_7"
     },
     "day5_morning_proposal_7": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_8"
     },
     "day5_morning_proposal_8": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_9"
     },
     "day5_morning_proposal_9": {
@@ -865,38 +991,47 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_proposal_10": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_11"
     },
     "day5_morning_proposal_11": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_12"
     },
     "day5_morning_proposal_12": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_13"
     },
     "day5_morning_proposal_13": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_14"
     },
     "day5_morning_proposal_14": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_15"
     },
     "day5_morning_proposal_15": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_16"
     },
     "day5_morning_proposal_16": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_17"
     },
     "day5_morning_proposal_17": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_18"
     },
     "day5_morning_proposal_18": {
         character: "eunsu_dark",
+        unskippable: true,
         next: "day5_morning_proposal_timer"
     },
 

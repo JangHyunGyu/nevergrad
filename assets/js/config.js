@@ -150,7 +150,7 @@ const CONFIG = {
         old_building: "assets/images/background/old_building.png",
         basement: "assets/images/background/basement.png",
         // CSS 시간대 변형 (기본 이미지 재사용 + setTimeOfDay 호출)
-        corridor_dark: "assets/images/background/corridor.png",           // corridor + dark
+        corridor_dark: "assets/images/background/corridor_dark.png",     // 어두운 복도 (고유)
         room_morning: "assets/images/background/home.png",               // home + morning
         school_gate_evening: "assets/images/background/school_gate.png", // school_gate + sunset
         // 학교 외부 (구도가 고유한 것)
@@ -188,11 +188,11 @@ const CONFIG = {
         // 학교 외부 (추가)
         school_back: "assets/images/background/outside_school.png",        // 학교 뒤편
         street_morning: "assets/images/background/street.png",             // 아침 통학로 (street 재사용)
-        school_gate_dark: "assets/images/background/school_gate.png",      // 새벽 교문 (school_gate + dark)
+        school_gate_dark: "assets/images/background/school_gate_dark.png", // 새벽 교문 (고유, 4K 생성 필요)
         school_gate_morning: "assets/images/background/school_gate.png",   // 아침 교문
         school_fence_dawn: "assets/images/background/school_gate.png",     // 새벽 울타리
         // 자취방 (추가)
-        room_dark: "assets/images/background/home.png",                    // 어두운 방 (home + dark)
+        room_dark: "assets/images/background/room_dark.png",              // 어두운 방 (고유, 4K 생성 필요)
         // 엔딩 전용
         emergency_exit: "assets/images/background/exit_door.png",          // 비상구 (exit_door 재사용)
         classroom_afternoon: "assets/images/background/classroom.png",     // 오후 교실

@@ -21,6 +21,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         stopSfx: true,
         clearFlags: ["high_eunsu_affinity", "high_sea_affinity", "complicit_ready"],
+        unskippable: true,
         next: "day5_night_affinity_check"
     },
 
@@ -97,18 +98,22 @@ Object.assign(SCENARIO[5], {
         background: "emergency_exit",
         bgm: null,
         character: null,
+        unskippable: true,
         next: "day5_ending_forget_forced_2"
     },
     "day5_ending_forget_forced_2": {
         character: "eunsu_normal",
+        unskippable: true,
         next: "day5_ending_forget_forced_3"
     },
     "day5_ending_forget_forced_3": {
         character: null,
+        unskippable: true,
         next: "day5_ending_forget_forced_4"
     },
     "day5_ending_forget_forced_4": {
         character: null,
+        unskippable: true,
         next: "day5_ending_forget_10"
     },
 
@@ -117,22 +122,27 @@ Object.assign(SCENARIO[5], {
         background: "emergency_exit",
         bgm: "ending_ghost.mp3",
         character: null,
+        unskippable: true,
         next: "day5_ending_ghost_guided_2"
     },
     "day5_ending_ghost_guided_2": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_guided_3"
     },
     "day5_ending_ghost_guided_3": {
         character: null,
+        unskippable: true,
         next: "day5_ending_ghost_guided_4"
     },
     "day5_ending_ghost_guided_4": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_guided_5"
     },
     "day5_ending_ghost_guided_5": {
         character: null,
+        unskippable: true,
         next: "day5_ending_ghost_17"
     },
 
@@ -143,28 +153,34 @@ Object.assign(SCENARIO[5], {
         background: "corridor_emergency",
         bgm: "ending_hope.mp3",
         character: null,
+        unskippable: true,
         next: "day5_ending_true_2"
     },
     "day5_ending_true_2": {
         character: "eunsu_shaking",
+        unskippable: true,
         next: "day5_ending_true_3"
     },
     "day5_ending_true_3": {
         character: "eunsu_shaking",
+        unskippable: true,
         next: "day5_ending_true_4"
     },
     "day5_ending_true_4": {
         character: null,
+        unskippable: true,
         next: "day5_ending_true_5"
     },
     "day5_ending_true_5": {
         background: "exit_door",
         character: null,
+        unskippable: true,
         next: "day5_ending_true_6"
     },
     "day5_ending_true_6": {
         character: null,
         background: "exit_door",
+        unskippable: true,
         next: "day5_ending_true_7"
     },
     "day5_ending_true_7": {
@@ -173,35 +189,43 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_8": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_true_9"
     },
     "day5_ending_true_9": {
         character: null,
+        unskippable: true,
         next: "day5_ending_true_10"
     },
     "day5_ending_true_10": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day5_ending_true_11"
     },
     "day5_ending_true_11": {
         character: null,
+        unskippable: true,
         next: "day5_ending_true_12"
     },
     "day5_ending_true_12": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day5_ending_true_13"
     },
     "day5_ending_true_13": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day5_ending_true_14"
     },
     "day5_ending_true_14": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_true_14a"
     },
     // 은수의 반응: "결국, 내가 진 거구나. 그 아이한테."
     "day5_ending_true_14a": {
         character: "eunsu_shocked",
+        unskippable: true,
         next: "day5_ending_true_14b"
     },
     // 주사기가 바닥에 떨어져 굴러갔다
@@ -231,6 +255,7 @@ Object.assign(SCENARIO[5], {
         background: "exit_door",
         bgm: "ending_hope.mp3",
         character: null,
+        unskippable: true,
         next: "day5_ending_true_20"
     },
     "day5_ending_true_20": {
@@ -244,6 +269,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_true_21a": {
         character: null,
         glitch: { noise: true, noiseDuration: 300 },
+        unskippable: true,
         next: "day5_ending_true_22"
     },
     "day5_ending_true_22": {
@@ -259,24 +285,29 @@ Object.assign(SCENARIO[5], {
         background: "black",
         character: null,
         fadeOut: true,
+        unskippable: true,
         next: "day5_ending_true_25"
     },
     "day5_ending_true_25": {
         character: "yuna_normal",
         background: "news_article",
+        unskippable: true,
         next: "day5_ending_true_26"
     },
     "day5_ending_true_26": {
         character: null,
+        unskippable: true,
         next: "day5_ending_true_27"
     },
     "day5_ending_true_27": {
         character: null,
+        unskippable: true,
         next: "day5_ending_true_28"
     },
     "day5_ending_true_28": {
         character: null,
         background: "ending_true",
+        unskippable: true,
         next: "day5_ending_true_29"
     },
     "day5_ending_true_29": {
@@ -315,6 +346,7 @@ Object.assign(SCENARIO[5], {
         background: "black",
         bgm: null,
         character: null,
+        unskippable: true,
         setFlags: ["postgame_bonus_server"],
         typingSpeed: 40,
         next: "day5_xover_server_2"
@@ -356,6 +388,7 @@ Object.assign(SCENARIO[5], {
         background: "cherry_blossom",
         bgm: "spring_bright.mp3",
         character: null,
+        unskippable: true,
         next: "day5_xover_preview_2"
     },
     "day5_xover_preview_2": {
@@ -381,6 +414,7 @@ Object.assign(SCENARIO[5], {
     "day5_xover_preview_5": {
         character: null,
         glitch: { noise: true, noiseDuration: 500 },
+        unskippable: true,
         setFlags: ["xover_preview_played"],
         next: "day5_xover_server_end"
     },
@@ -388,6 +422,7 @@ Object.assign(SCENARIO[5], {
         background: "black",
         bgm: null,
         character: null,
+        unskippable: true,
         next: "day5_observer_1"
     },
 
@@ -398,6 +433,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         glitch: { noise: true },
         typingSpeed: 80,
+        unskippable: true,
         next: "day5_postcredit_2"
     },
     "day5_postcredit_2": {
@@ -448,6 +484,7 @@ Object.assign(SCENARIO[5], {
         background: "black",
         bgm: null,
         character: null,
+        unskippable: true,
         setFlags: ["postgame_bonus_log"],
         typingSpeed: 80,
         next: "day5_observer_2"
@@ -535,6 +572,7 @@ Object.assign(SCENARIO[5], {
         background: "school_fence_dawn",
         bgm: "ending_melancholy.mp3",
         character: null,
+        unskippable: true,
         next: "day5_ending_escape_2"
     },
     "day5_ending_escape_2": {
@@ -581,6 +619,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_escape_12": {
         character: null,
         glitch: { noise: true },
+        unskippable: true,
         next: "day5_ending_escape_13"
     },
     // ── 에필로그 ──
@@ -588,6 +627,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         background: "ending_escape",
         fadeIn: true,
+        unskippable: true,
         next: "day5_ending_escape_14"
     },
     "day5_ending_escape_14": {
@@ -615,6 +655,7 @@ Object.assign(SCENARIO[5], {
         background: "exit_door",
         bgm: "ending_bittersweet.mp3",
         character: "eunsu_normal",
+        unskippable: true,
         next: "day5_ending_resist_2"
     },
     "day5_ending_resist_2": {
@@ -639,18 +680,22 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_resist_7": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_resist_8"
     },
     "day5_ending_resist_8": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_resist_9"
     },
     "day5_ending_resist_9": {
         character: "eunsu_shocked",
+        unskippable: true,
         next: "day5_ending_resist_10"
     },
     "day5_ending_resist_10": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_ending_resist_11"
     },
     "day5_ending_resist_11": {
@@ -683,6 +728,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_resist_18": {
         character: "eunsu_crying",
+        unskippable: true,
         next: "day5_ending_resist_18a"
     },
     "day5_ending_resist_18a": {
@@ -717,6 +763,7 @@ Object.assign(SCENARIO[5], {
         background: "exit_door",
         bgm: "ending_bittersweet.mp3",
         character: null,
+        unskippable: true,
         next: "day5_ending_resist_23"
     },
     "day5_ending_resist_23": {
@@ -763,11 +810,13 @@ Object.assign(SCENARIO[5], {
     "day5_ending_cage_eunsu_5": {
         character: null,
         fadeOut: true,
+        unskippable: true,
         next: "day5_ending_cage_eunsu_6"
     },
     "day5_ending_cage_eunsu_6": {
         character: null,
         background: "ending_cage",
+        unskippable: true,
         next: "day5_ending_cage_eunsu_7"
     },
     "day5_ending_cage_eunsu_7": {
@@ -795,6 +844,7 @@ Object.assign(SCENARIO[5], {
         background: "corridor",
         bgm: "ending_dark.mp3",
         character: "sea_normal",
+        unskippable: true,
         next: "day5_ending_cage_sea_2"
     },
     "day5_ending_cage_sea_2": {
@@ -812,11 +862,13 @@ Object.assign(SCENARIO[5], {
     "day5_ending_cage_sea_5": {
         character: null,
         fadeOut: true,
+        unskippable: true,
         next: "day5_ending_cage_sea_6"
     },
     "day5_ending_cage_sea_6": {
         background: "ending_cage",
         character: null,
+        unskippable: true,
         next: "day5_ending_cage_sea_7"
     },
     "day5_ending_cage_sea_7": {
@@ -928,6 +980,7 @@ Object.assign(SCENARIO[5], {
         background: "emergency_exit",
         bgm: null,
         character: null,
+        unskippable: true,
         next: "day5_ending_forget_2"
     },
     "day5_ending_forget_2": {
@@ -981,12 +1034,14 @@ Object.assign(SCENARIO[5], {
         character: null,
         background: "white",
         fadeOut: true,
+        unskippable: true,
         next: "day5_ending_forget_14"
     },
     "day5_ending_forget_14": {
         character: null,
         background: "home",
         bgm: "morning_peaceful.mp3",
+        unskippable: true,
         next: "day5_ending_forget_15"
     },
     "day5_ending_forget_15": {
@@ -1008,6 +1063,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_forget_19": {
         background: "school_gate",
         character: "eunsu_smile",
+        unskippable: true,
         next: "day5_ending_forget_20"
     },
     "day5_ending_forget_20": {
@@ -1021,6 +1077,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_forget_22": {
         character: null,
         background: "ending_forget",
+        unskippable: true,
         next: "day5_ending_forget_sea_branch"
     },
     // ── 세아 호감도 MAX 분기 ──
@@ -1035,6 +1092,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_forget_sea_1": {
         background: "school_gate",
         character: "sea_smile",
+        unskippable: true,
         next: "day5_ending_forget_sea_2"
     },
     "day5_ending_forget_sea_2": {
@@ -1069,58 +1127,72 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_ghost_2": {
         character: null,
+        unskippable: true,
         next: "day5_ending_ghost_3"
     },
     "day5_ending_ghost_3": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_4"
     },
     "day5_ending_ghost_4": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_5"
     },
     "day5_ending_ghost_5": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_6"
     },
     "day5_ending_ghost_6": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_7"
     },
     "day5_ending_ghost_7": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_8"
     },
     "day5_ending_ghost_8": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_9"
     },
     "day5_ending_ghost_9": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_10"
     },
     "day5_ending_ghost_10": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_11"
     },
     "day5_ending_ghost_11": {
         character: null,
+        unskippable: true,
         next: "day5_ending_ghost_12"
     },
     "day5_ending_ghost_12": {
         character: null,
+        unskippable: true,
         next: "day5_ending_ghost_13"
     },
     "day5_ending_ghost_13": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_14"
     },
     "day5_ending_ghost_14": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_ending_ghost_15"
     },
     "day5_ending_ghost_15": {
         character: null,
+        unskippable: true,
         next: "day5_ending_ghost_16"
     },
     // ── 에필로그 ──
@@ -1129,12 +1201,14 @@ Object.assign(SCENARIO[5], {
         background: "ending_ghost",
         bgm: "ending_melancholy.mp3",
         stopSfx: "sfx_whisper.mp3",
+        unskippable: true,
         next: "day5_ending_ghost_17"
     },
     "day5_ending_ghost_17": {
         background: "ending_ghost",
         bgm: "ending_melancholy.mp3",
         character: null,
+        unskippable: true,
         next: "day5_ending_ghost_18"
     },
     "day5_ending_ghost_18": {
@@ -1174,6 +1248,7 @@ Object.assign(SCENARIO[5], {
         background: "office",
         bgm: "ending_dark.mp3",
         character: null,
+        unskippable: true,
         next: "day5_ending_complicit_2"
     },
     "day5_ending_complicit_2": {
@@ -1233,6 +1308,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_complicit_11": {
         character: null,
         fadeOut: true,
+        unskippable: true,
         next: "day5_ending_complicit_12"
     },
     // ── 에필로그 ──
@@ -1240,6 +1316,7 @@ Object.assign(SCENARIO[5], {
         background: "school_gate_morning",
         bgm: null,
         character: null,
+        unskippable: true,
         next: "day5_ending_complicit_13"
     },
     "day5_ending_complicit_13": {

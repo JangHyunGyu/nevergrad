@@ -19,6 +19,7 @@ Object.assign(SCENARIO[4], {
         bgm: "tension.mp3",
         character: null,
         setMode: "THRILLER",
+        unskippable: true,
         next: "day4_morning_start_2"
     },
     // 벽의 글씨 확인
@@ -52,6 +53,7 @@ Object.assign(SCENARIO[4], {
         background: "bathroom",
         character: null,
         glitch: { noise: true, noiseDuration: 200 },
+        unskippable: true,
         next: "day4_morning_start_8"
     },
     // 형체가 비친다 — 내 윤곽인데 낯설다
@@ -63,6 +65,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_start_9": {
         character: null,
         glitch: { noise: true, noiseDuration: 150 },
+        unskippable: true,
         next: "day4_morning_start_10"
     },
     // 닦지 않았다 — 얼굴 보는 게 무섭다
@@ -100,6 +103,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_start_15": {
         character: null,
         glitch: { screenFlash: true, flashDuration: 100 },
+        unskippable: true,
         next: "day4_morning_start_16"
     },
     // met_yuna: 유나의 말 회상 / 아니면 일반 위화감
@@ -151,6 +155,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_start_22": {
         character: null,
         glitch: { noise: true, noiseDuration: 300 },
+        unskippable: true,
         next: "day4_morning_start_23"
     },
     // 관리부? 이 건물에 관리부 같은 건 없다
@@ -177,6 +182,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_commute_2": {
         character: null,
         glitch: { corruptText: true, corruptDuration: 300 },
+        unskippable: true,
         next: "day4_morning_commute_3"
     },
     // 다시 보니 '좋은 아침이에요, {name}!'
@@ -205,6 +211,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_commute_6": {
         character: null,
         glitch: { noise: true, noiseDuration: 150 },
+        unskippable: true,
         next: "day4_morning_commute_7"
     },
     // 나를 관리하는 앱
@@ -222,6 +229,7 @@ Object.assign(SCENARIO[4], {
         background: "school_gate",
         character: null,
         glitch: { noise: true, noiseDuration: 200 },
+        unskippable: true,
         next: "day4_morning_gate"
     },
 
@@ -243,6 +251,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_gate_3": {
         character: null,
         glitch: { noise: true, noiseDuration: 150 },
+        unskippable: true,
         next: "day4_morning_gate_4"
     },
     // 정문을 들어서는 순간 — 표정 전환
@@ -266,6 +275,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_gate_7": {
         character: null,
         glitch: { noise: true, noiseDuration: 250 },
+        unskippable: true,
         next: "day4_morning_gate_8"
     },
     // 인형극 같다
@@ -333,6 +343,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_eunsu_refuse_2": {
         character: "eunsu_cold",
         glitch: { noise: true, noiseDuration: 300 },
+        unskippable: true,
         next: "day4_morning_eunsu_refuse_3"
     },
     // '위험하니까'
@@ -370,6 +381,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_classroom_met": {
         character: null,
         glitch: { silence: true, silenceDuration: 1500 },
+        unskippable: true,
         next: "day4_morning_classroom_met_2"
     },
     // 책상이 너무 깨끗하다
@@ -491,6 +503,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_class_3": {
         character: "eunsu_gentle",
         glitch: { noise: true, noiseDuration: 150 },
+        unskippable: true,
         branches: [
             { condition: "met_yuna", next: "day4_morning_class_3_met" }
         ],
@@ -499,6 +512,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_class_3_met": {
         character: "eunsu_gentle",
         glitch: { noise: true, noiseDuration: 150 },
+        unskippable: true,
         next: "day4_morning_class_4"
     },
     // '소속이란 건... 안전함이야'

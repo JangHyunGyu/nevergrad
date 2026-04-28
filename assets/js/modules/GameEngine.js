@@ -2616,6 +2616,7 @@ class GameEngine {
         const mode = scene.freeTalkMode || 'interrogation';
         const charId = scene.freeTalkChar;
         const nextScene = scene.freeTalkNext || scene.next;
+        this.freeTalk.skipDisabled = !!scene.unskippable || !!scene.freeTalkUnskippable;
 
         if (mode === 'interrogation') {
             const context = scene.freeTalkContext || '';

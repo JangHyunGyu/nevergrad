@@ -56,6 +56,9 @@ class FreeTalkSystem {
         /** @type {string|null} 다음 씬 ID */
         this.nextSceneId = null;
 
+        /** @type {boolean} 현재 FreeTalk 대화 건너뛰기 차단 여부 */
+        this.skipDisabled = false;
+
         /** @type {boolean} AI 자유 대화 진행 중 여부 */
         this.isFreeTalking = false;
 
@@ -1078,10 +1081,14 @@ ${memories}
         // 스킵 버튼 표시 및 바인딩
         const skipBtn = document.getElementById('ft-skip');
         if (skipBtn) {
-            skipBtn.classList.remove('hidden');
             const newSkip = skipBtn.cloneNode(true);
             skipBtn.parentNode.replaceChild(newSkip, skipBtn);
-            newSkip.addEventListener('click', () => this.skipAIChat());
+            if (this.skipDisabled) {
+                newSkip.classList.add('hidden');
+            } else {
+                newSkip.classList.remove('hidden');
+                newSkip.addEventListener('click', () => this.skipAIChat());
+            }
         }
 
         // 모바일: 가상 키보드 회피 (입력창 올리기)
@@ -1411,18 +1418,20 @@ ${memories}
 
         sendBtn.addEventListener('click', handleSend);
 
-        // 스킵 버튼 (대화 건너뛰기)
-        const skipBtn = document.createElement('button');
-        skipBtn.className = 'freetalk-skip-btn';
-        const skipLabels = { ko: 'SKIP ▶▶', en: 'SKIP ▶▶', ja: 'SKIP ▶▶', es: 'SKIP ▶▶', fr: 'SKIP ▶▶', de: 'SKIP ▶▶', pt: 'SKIP ▶▶' };
-        const lang = this.engine.i18n?.currentLang || 'ko';
-        skipBtn.textContent = skipLabels[lang] || 'SKIP ▶▶';
-        skipBtn.addEventListener('click', () => this._skipCurrentMode());
+        if (!this.skipDisabled) {
+            // 스킵 버튼 (대화 건너뛰기)
+            const skipBtn = document.createElement('button');
+            skipBtn.className = 'freetalk-skip-btn';
+            const skipLabels = { ko: 'SKIP ▶▶', en: 'SKIP ▶▶', ja: 'SKIP ▶▶', es: 'SKIP ▶▶', fr: 'SKIP ▶▶', de: 'SKIP ▶▶', pt: 'SKIP ▶▶' };
+            const lang = this.engine.i18n?.currentLang || 'ko';
+            skipBtn.textContent = skipLabels[lang] || 'SKIP ▶▶';
+            skipBtn.addEventListener('click', () => this._skipCurrentMode());
+            panel.appendChild(skipBtn);
+        }
 
         container.appendChild(input);
         container.appendChild(sendBtn);
         panel.appendChild(container);
-        panel.appendChild(skipBtn);
 
         setTimeout(() => input.focus(), 100);
 
@@ -1577,6 +1586,7 @@ ${memories}
         this.isWaiting = false;
         this.sceneContext = null;
         this.nextSceneId = null;
+        this.skipDisabled = false;
         this.isFreeTalking = false;
         this.currentSceneId = null;
 

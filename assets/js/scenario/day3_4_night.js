@@ -167,6 +167,7 @@ Object.assign(SCENARIO[3], {
         character: null,
         glitch: { themeShift: true },
         vibrate: "danger",
+        unskippable: true,
         setFlags: ["genre_shift"],
         next: "day3_night_bleed_6"
     },
@@ -210,6 +211,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_bleed_13": {
         character: null,
         glitch: { screenShake: true, noise: true, noiseDuration: 300 },
+        unskippable: true,
         next: "day3_night_bleed_14"
     },
     "day3_night_bleed_14": {
@@ -241,6 +243,7 @@ Object.assign(SCENARIO[3], {
     "day3_night_stat_crack_4": {
         character: null,
         glitch: { peelStatLabel: true, revealDuration: 300 },
+        unskippable: true,
         setFlags: ["stat_reveal"],
         next: "day3_night_stat_crack_4a"
     },
@@ -331,6 +334,7 @@ Object.assign(SCENARIO[3], {
     "day3_xover_glitch_2": {
         character: "seolhwa_ghost",
         glitch: { noise: true, noiseDuration: 300 },
+        unskippable: true,
         next: "day3_xover_glitch_3"
     },
     "day3_xover_glitch_3": {
@@ -341,6 +345,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_xover_glitch_4": {
         character: "seolhwa_ghost",
+        unskippable: true,
         next: "day3_xover_glitch_5"
     },
     // 설화 사라짐
@@ -542,11 +547,13 @@ Object.assign(SCENARIO[3], {
     "day3_night_deny_3": {
         character: null,
         glitch: { ghostText: "day3_night_ghost_ok", ghostDuration: 1500 },
+        unskippable: true,
         next: "day3_night_deny_4"
     },
     "day3_night_deny_4": {
         character: null,
         glitch: { ghostText: "day3_night_ghost_run", ghostDuration: 1500, ghostDelay: 500 },
+        unskippable: true,
         next: "day3_night_ft_nightmare"
     },
 
@@ -573,6 +580,7 @@ Object.assign(SCENARIO[3], {
         triggerGenreShift: true,
         // SCENARIO.md 5425: Day 3 밤 앱 강제 종료 → 자동 재실행 — "도망칠 수 없다"
         glitch: { appKill: true, appKillDuration: 1200 },
+        unskippable: true,
         changeDay: 4,
         changeSlot: "morning",
         next: "day4_morning_start"

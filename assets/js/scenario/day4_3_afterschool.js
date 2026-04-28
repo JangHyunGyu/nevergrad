@@ -16,6 +16,7 @@ Object.assign(SCENARIO[4], {
         background: "classroom",
         bgm: "tension.mp3",
         character: null,
+        unskippable: true,
         next: "day4_after_start_2"
     },
     "day4_after_start_2": {
@@ -73,6 +74,7 @@ Object.assign(SCENARIO[4], {
     "day4_xover_yuna_10": {
         character: null,
         glitch: { noise: true, noiseDuration: 200 },
+        unskippable: true,
         setFlags: ["xover_yuna_d4"],
         next: "day4_after_choice"
     },
@@ -164,6 +166,7 @@ Object.assign(SCENARIO[4], {
     "day4_after_sea_force": {
         character: null,
         glitch: { forceChoice: 0, duplicateChoice: true },
+        unskippable: true,
         choices: [
             {
                 next: "day4_after_sea_accept",
@@ -340,6 +343,7 @@ Object.assign(SCENARIO[4], {
     // ═══════════════════════════════════════
     "day4_after_ft_sea_pre": {
         character: "sea_cry",
+        unskippable: true,
         next: "day4_after_ft_sea"
     },
     "day4_after_ft_sea": {
@@ -356,6 +360,7 @@ Object.assign(SCENARIO[4], {
             de: "Nach zwolf wiederholten Gestandnissen versucht der Protagonist zu gehen.",
             pt: "Depois de doze confissoes repetidas, o protagonista tenta ir embora."
         },
+        unskippable: true,
         freeTalkNext: "day4_after_ft_sea_post"
     },
     "day4_after_ft_sea_post": {
@@ -525,24 +530,29 @@ Object.assign(SCENARIO[4], {
     "day4_after_riin_11": {
         // 한숨 나레이션 (MD 3247)
         character: "riin_cold",
+        unskippable: true,
         next: "day4_after_riin_12"
     },
     "day4_after_riin_12": {
         // "...빠르다. 12번째보다 빨라." (MD 3249)
         character: "riin_cold",
+        unskippable: true,
         next: "day4_after_riin_15"
     },
     "day4_after_riin_15": {
         character: "riin_cold",
+        unskippable: true,
         next: "day4_after_riin_16"
     },
     "day4_after_riin_16": {
         character: "riin_cold",
         // 열쇠 등장
+        unskippable: true,
         next: "day4_after_riin_17"
     },
     "day4_after_riin_17": {
         character: "riin_cold",
+        unskippable: true,
         next: "day4_after_riin_18"
     },
     "day4_after_riin_18": {
@@ -560,6 +570,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_after_riin_21": {
         character: "riin_cold",
+        unskippable: true,
         next: "day4_after_riin_22"
     },
     "day4_after_riin_22": {
@@ -574,6 +585,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_after_riin_24": {
         character: "riin_cold",
+        unskippable: true,
         next: "day4_after_riin_25"
     },
     "day4_after_riin_25": {
@@ -587,6 +599,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_after_riin_27": {
         character: "riin_cold",
+        unskippable: true,
         next: "day4_after_end",
         setFlags: ["riin_rebel_reveal"]
     },
@@ -596,6 +609,7 @@ Object.assign(SCENARIO[4], {
         background: "school_gate",
         character: null,
         changeSlot: "night",
+        unskippable: true,
         next: "day4_night_start"
     }
 });

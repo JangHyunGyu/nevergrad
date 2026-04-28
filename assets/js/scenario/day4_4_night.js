@@ -19,6 +19,7 @@ Object.assign(SCENARIO[4], {
         background: "home",
         bgm: "tension_night.mp3",
         character: null,
+        unskippable: true,
         next: "day4_night_start_2"
     },
     "day4_night_start_2": {
@@ -636,6 +637,7 @@ Object.assign(SCENARIO[4], {
         background: "home",
         bgm: "tension_night.mp3",
         character: null,
+        unskippable: true,
         next: "day4_night_plan_2"
     },
     "day4_night_plan_2": {
@@ -770,6 +772,7 @@ Object.assign(SCENARIO[4], {
         background: "home",
         bgm: null,
         character: null,
+        unskippable: true,
         changeDay: 5,
         changeSlot: "morning",
         next: "day5_morning_start"

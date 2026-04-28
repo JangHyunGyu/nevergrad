@@ -18,6 +18,7 @@ Object.assign(SCENARIO[4], {
         bgm: "tension.mp3",
         sfx: "sfx_school_bell.mp3",
         character: null,
+        unskippable: true,
         next: "day4_lunch_choice"
     },
 
@@ -40,6 +41,7 @@ Object.assign(SCENARIO[4], {
         background: "corridor",
         bgm: "tension_low.mp3",
         character: null,
+        unskippable: true,
         next: "day4_lunch_yuna_2"
     },
     "day4_lunch_yuna_2": {
@@ -54,6 +56,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         // 유나의 사물함 — 텅 비어있다
         interaction: { type: "locker_search", search: "yuna_locker" },
+        unskippable: true,
         next: "day4_lunch_yuna_4"
     },
     "day4_lunch_yuna_4": {
@@ -85,6 +88,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         // 마지막 사진: 지하 계단 + "여기 아래 — 유"
         glitch: { noise: true },
+        unskippable: true,
         next: "day4_lunch_yuna_9"
     },
     "day4_lunch_yuna_9": {
@@ -98,6 +102,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         // 구관 복도 끝, 녹슨 문, 새 자물쇠
         background: "old_building",
+        unskippable: true,
         next: "day4_lunch_yuna_11"
     },
     "day4_lunch_yuna_11": {
@@ -140,6 +145,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         // 은수가 열쇠를 갖고 있다. 나는 열 수 없다.
         glitch: { noise: true, noiseDuration: 200 },
+        unskippable: true,
         next: "day4_lunch_yuna_19"
     },
     "day4_lunch_yuna_19": {
@@ -161,6 +167,7 @@ Object.assign(SCENARIO[4], {
         background: "nurse_office",
         bgm: "tension_low.mp3",
         character: null,
+        unskippable: true,
         branches: [
             { condition: "met_riin", next: "day4_lunch_nurse_2" }
         ],
@@ -221,11 +228,13 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_nurse_8": {
         // "왜 그렇게 쳐다봐?"
         character: "riin_cold",
+        unskippable: true,
         next: "day4_lunch_nurse_9"
     },
     "day4_lunch_nurse_9": {
         // 목소리 차가웠다가 부드러워짐
         character: "riin_cold",
+        unskippable: true,
         next: "day4_lunch_nurse_10"
     },
     "day4_lunch_nurse_10": {
@@ -274,6 +283,7 @@ Object.assign(SCENARIO[4], {
         bgm: "wind_ambient.mp3",
         sfx: "sfx_wind.mp3",
         character: null,
+        unskippable: true,
         next: "day4_lunch_roof_2"
     },
     "day4_lunch_roof_2": {
@@ -315,6 +325,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         stopSfx: "sfx_wind.mp3",
         changeSlot: "afterschool",
+        unskippable: true,
         next: "day4_after_start"
     }
 });

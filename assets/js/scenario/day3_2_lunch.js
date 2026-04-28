@@ -133,38 +133,45 @@ Object.assign(SCENARIO[3], {
     // ...마지막 사진. 교문 앞. 어제 아침.
     "day3_lunch_rooftop_12": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_13"
     },
     // 내 사진이다.
     "day3_lunch_rooftop_13": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_14"
     },
     // ...
     "day3_lunch_rooftop_14": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_15"
     },
     // 카메라를 내려놓지 못했다. 처음부터 다시 넘겼다.
     "day3_lunch_rooftop_15": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_16"
     },
     // 다른 머리색. 다른 이름표.
     "day3_lunch_rooftop_16": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_17",
         glitch: { shake: true, shakeDuration: 500 }
     },
     // ★ 같은 눈. 같은 코. 같은 입.
     "day3_lunch_rooftop_17": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_18",
         glitch: { noise: true, noiseDuration: 400 }
     },
     // ★ 13장. 13명. 한 사람. (+ NG+ 14번째 빈 프레임 0.8초)
     "day3_lunch_rooftop_18": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_19",
         glitch: { noise: true, noiseDuration: 500, shake: true, shakeDuration: 500, ngPlusEmptyFrame: true, ngPlusEmptyFrameDuration: 800 }
     },
@@ -203,32 +210,38 @@ Object.assign(SCENARIO[3], {
     // 그것뿐이다. 그 한마디뿐이다.
     "day3_lunch_rooftop_25": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_26"
     },
     // ...13번째.
     "day3_lunch_rooftop_26": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_27"
     },
     // 넥타이를 잡아당겼다. 숨을 들이마시는데 공기가 목에서 걸린다.
     "day3_lunch_rooftop_27": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_28"
     },
     // 카메라를 돌려주려는데 — 유나가 고개를 저었다.
     "day3_lunch_rooftop_28": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_29"
     },
     // 유나: "...갖고 계세요."
     "day3_lunch_rooftop_29": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_rooftop_30",
         setFlags: ["yuna_sd_card_copy"]
     },
     // 유나의 눈에서 눈물이 한 줄 흘렀다. 닦지 않았다.
     "day3_lunch_rooftop_30": {
         character: "yuna_scared",
+        unskippable: true,
         next: "day3_lunch_door_1"
     },
 
@@ -553,6 +566,7 @@ Object.assign(SCENARIO[3], {
     // 책상 위에 연필로 쓴 글씨: '여기서 나가'
     "day3_lunch_alone_4": {
         character: null,
+        unskippable: true,
         next: "day3_lunch_alone_5",
         setFlags: ["saw_seolhwa_desk_msg"],
         glitch: { shake: true, shakeDuration: 300 }

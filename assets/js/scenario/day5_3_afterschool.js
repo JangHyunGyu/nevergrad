@@ -54,26 +54,32 @@ Object.assign(SCENARIO[5], {
         background: "classroom",
         bgm: "ending_dark.mp3",
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_cage_2"
     },
     "day5_after_cage_2": {
         character: null,
+        unskippable: true,
         next: "day5_after_cage_3"
     },
     "day5_after_cage_3": {
         character: null,
+        unskippable: true,
         next: "day5_after_cage_4"
     },
     "day5_after_cage_4": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_cage_5"
     },
     "day5_after_cage_5": {
         character: null,
+        unskippable: true,
         next: "day5_after_cage_6"
     },
     "day5_after_cage_6": {
         character: null,
+        unskippable: true,
         next: "day5_after_cage_7"
     },
     "day5_after_cage_7": {
@@ -84,14 +90,17 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_cage_8": {
         character: null,
+        unskippable: true,
         next: "day5_after_cage_9"
     },
     "day5_after_cage_9": {
         character: null,
+        unskippable: true,
         next: "day5_after_cage_10"
     },
     "day5_after_cage_10": {
         character: null,
+        unskippable: true,
         next: "day5_after_end"
     },
 
@@ -109,26 +118,32 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_caught_2": {
         character: null,
+        unskippable: true,
         next: "day5_after_caught_3"
     },
     "day5_after_caught_3": {
         character: null,
+        unskippable: true,
         next: "day5_after_caught_4"
     },
     "day5_after_caught_4": {
         character: "eunsu_obsessed",
+        unskippable: true,
         next: "day5_after_caught_5"
     },
     "day5_after_caught_5": {
         character: "eunsu_obsessed",
+        unskippable: true,
         next: "day5_after_caught_6"
     },
     "day5_after_caught_6": {
         character: "riin_dark",
+        unskippable: true,
         next: "day5_after_caught_7"
     },
     "day5_after_caught_7": {
         character: null,
+        unskippable: true,
         next: "day5_after_caught_choice"
     },
     "day5_after_caught_choice": {
@@ -160,10 +175,12 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_caught_resist_2": {
         character: null,
+        unskippable: true,
         next: "day5_after_caught_resist_3"
     },
     "day5_after_caught_resist_3": {
         character: "riin_pain",
+        unskippable: true,
         next: "day5_after_caught_resist_4"
     },
     "day5_after_caught_resist_4": {
@@ -180,10 +197,12 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_caught_resist_6": {
         character: null,
+        unskippable: true,
         next: "day5_after_caught_resist_7"
     },
     "day5_after_caught_resist_7": {
         character: null,
+        unskippable: true,
         next: "day5_after_end",
         setFlags: ["ghost_guided", "timer_expired"]
     },
@@ -191,10 +210,12 @@ Object.assign(SCENARIO[5], {
     // ── 붙잡힘 → 굴복 → 약물 투여 ──
     "day5_after_caught_submit_1": {
         character: "riin_pain",
+        unskippable: true,
         next: "day5_after_caught_submit_2"
     },
     "day5_after_caught_submit_2": {
         character: null,
+        unskippable: true,
         next: "day5_after_caught_submit_3"
     },
     "day5_after_caught_submit_3": {
@@ -219,85 +240,105 @@ Object.assign(SCENARIO[5], {
         background: "exit_door",
         character: null,
         sfx: "sfx_footsteps.mp3",
+        unskippable: true,
         next: "day5_after_confront_2"
     },
     "day5_after_confront_2": {
         character: null,
+        unskippable: true,
         next: "day5_after_confront_3"
     },
     "day5_after_confront_3": {
         character: null,
+        unskippable: true,
         next: "day5_after_confront_4"
     },
     "day5_after_confront_4": {
         character: "eunsu_obsessed",
         glitch: { screenShake: true, noise: true },
         stopSfx: true,
+        unskippable: true,
         next: "day5_after_confront_5"
     },
     "day5_after_confront_5": {
         character: "eunsu_obsessed",
+        unskippable: true,
         next: "day5_after_confront_6"
     },
     "day5_after_confront_6": {
         character: null,
+        unskippable: true,
         next: "day5_after_confront_7"
     },
     "day5_after_confront_7": {
         character: null,
+        unskippable: true,
         next: "day5_after_confront_8"
     },
     "day5_after_confront_8": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_confront_9"
     },
     "day5_after_confront_9": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_confront_10"
     },
     "day5_after_confront_10": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_confront_11"
     },
     "day5_after_confront_11": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_confront_12"
     },
     "day5_after_confront_12": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_confront_13"
     },
     "day5_after_confront_13": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_confront_14"
     },
     "day5_after_confront_14": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_confront_15"
     },
     "day5_after_confront_15": {
         character: null,
+        unskippable: true,
         next: "day5_after_confront_16"
     },
     "day5_after_confront_16": {
         character: null,
+        unskippable: true,
         next: "day5_after_confront_17"
     },
     "day5_after_confront_17": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_confront_18"
     },
     "day5_after_confront_18": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day5_after_confront_19"
     },
     "day5_after_confront_19": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_after_confront_20"
     },
     "day5_after_confront_20": {
         glitch: { borderPulse: true },
         character: null,
+        unskippable: true,
         next: "day5_after_final_choice"
     },
 
@@ -342,6 +383,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_true_2": {
         character: "eunsu_obsessed",
+        unskippable: true,
         setFlags: ["route_true", "broke_through_eunsu", "escape_with_yuna", "has_evidence"],
         next: "day5_after_true_3"
     },
@@ -349,12 +391,14 @@ Object.assign(SCENARIO[5], {
         character: null,
         // 추격전 시작 — 뒤(왼쪽)에서 점점 오른쪽으로 발소리
         glitch: { chaseFootsteps: { fromPan: -1, toPan: 1, steps: 12, interval: 0.18 } },
+        unskippable: true,
         next: "day5_after_true_4"
     },
     "day5_after_true_4": {
         character: null,
         // 발소리 더 가까이 — 빠르고 강한 스윕
         glitch: { chaseFootsteps: { fromPan: -0.8, toPan: 0.8, steps: 14, interval: 0.14 } },
+        unskippable: true,
         next: "day5_after_true_5"
     },
     "day5_after_true_5": {
@@ -362,14 +406,17 @@ Object.assign(SCENARIO[5], {
         vibrate: "door_resistance",
         // 비상구 앞 — 발소리가 오른쪽 뒤에서 몰아쳐옴
         glitch: { chaseFootsteps: { fromPan: 0.3, toPan: 1, steps: 10, interval: 0.12 } },
+        unskippable: true,
         next: "day5_after_true_6"
     },
     "day5_after_true_6": {
         character: null,
+        unskippable: true,
         next: "day5_after_true_7"
     },
     "day5_after_true_7": {
         character: null,
+        unskippable: true,
         next: "day5_after_true_seolhwa_branch"
     },
 
@@ -381,27 +428,33 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_true_8": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_after_true_9"
     },
     "day5_after_true_9": {
         character: null,
+        unskippable: true,
         next: "day5_after_true_10"
     },
     "day5_after_true_10": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day5_after_true_11"
     },
     "day5_after_true_11": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day5_after_true_11a"
     },
     // "기억할게. 이설화."
     "day5_after_true_11a": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_after_true_12"
     },
     "day5_after_true_12": {
         character: null,
+        unskippable: true,
         setFlags: ["broke_through_eunsu", "escape_with_yuna", "has_evidence", "ending_bridge_true_done"],
         next: "day5_after_end"
     },
@@ -412,27 +465,33 @@ Object.assign(SCENARIO[5], {
     // ══════════════════════════════════════
     "day5_after_forget_1": {
         character: "eunsu_obsessed",
+        unskippable: true,
         next: "day5_after_forget_2"
     },
     "day5_after_forget_2": {
         character: "eunsu_obsessed",
+        unskippable: true,
         setFlags: ["route_forget"],
         next: "day5_after_forget_3"
     },
     "day5_after_forget_3": {
         character: null,
+        unskippable: true,
         next: "day5_after_forget_4"
     },
     "day5_after_forget_4": {
         character: null,
+        unskippable: true,
         next: "day5_after_forget_5"
     },
     "day5_after_forget_5": {
         character: null,
+        unskippable: true,
         next: "day5_after_forget_6"
     },
     "day5_after_forget_6": {
         character: null,
+        unskippable: true,
         next: "day5_after_forget_7"
     },
     "day5_after_forget_7": {
@@ -442,14 +501,17 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_forget_8": {
         character: null,
+        unskippable: true,
         next: "day5_after_forget_9"
     },
     "day5_after_forget_9": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_after_forget_10"
     },
     "day5_after_forget_10": {
         character: null,
+        unskippable: true,
         next: "day5_after_forget_11"
     },
     "day5_after_forget_11": {
@@ -460,6 +522,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_forget_12": {
         character: null,
+        unskippable: true,
         setFlags: ["ending_bridge_forget_done"],
         next: "day5_after_end"
     },
@@ -470,98 +533,120 @@ Object.assign(SCENARIO[5], {
     // ══════════════════════════════════════
     "day5_after_resist_1": {
         character: "eunsu_obsessed",
+        unskippable: true,
         next: "day5_after_resist_2"
     },
     "day5_after_resist_2": {
         character: null,
+        unskippable: true,
         setFlags: ["route_resist", "chose_together"],
         next: "day5_after_resist_3"
     },
     "day5_after_resist_3": {
         character: "eunsu_warm",
+        unskippable: true,
         next: "day5_after_resist_4"
     },
     "day5_after_resist_4": {
         character: "eunsu_warm",
+        unskippable: true,
         next: "day5_after_resist_5"
     },
     "day5_after_resist_5": {
         character: "eunsu_warm",
+        unskippable: true,
         next: "day5_after_resist_6"
     },
     "day5_after_resist_6": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_after_resist_7"
     },
     "day5_after_resist_7": {
         character: "eunsu_obsessed",
+        unskippable: true,
         next: "day5_after_resist_8"
     },
     "day5_after_resist_8": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_after_resist_9"
     },
     "day5_after_resist_9": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_after_resist_10"
     },
     "day5_after_resist_10": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_after_resist_11"
     },
     "day5_after_resist_11": {
         character: null,
+        unskippable: true,
         next: "day5_after_resist_12"
     },
     "day5_after_resist_12": {
         character: "eunsu_warm",
+        unskippable: true,
         next: "day5_after_resist_13"
     },
     "day5_after_resist_13": {
         character: null,
+        unskippable: true,
         next: "day5_after_resist_13a"
     },
     // "감옥에 갈 수도 있어."
     "day5_after_resist_13a": {
         character: "eunsu_shaking",
+        unskippable: true,
         next: "day5_after_resist_13b"
     },
     // "알아요."
     "day5_after_resist_13b": {
         character: null,
+        unskippable: true,
         next: "day5_after_resist_13c"
     },
     // "11번째 오태현은..."
     "day5_after_resist_13c": {
         character: "eunsu_shaking",
+        unskippable: true,
         next: "day5_after_resist_13d"
     },
     // 선생님의 손이 미세하게 떨렸다
     "day5_after_resist_13d": {
         character: null,
+        unskippable: true,
         next: "day5_after_resist_13e"
     },
     // "그날 밤 기억을 지웠어..."
     "day5_after_resist_13e": {
         character: "eunsu_crying",
+        unskippable: true,
         next: "day5_after_resist_13f"
     },
     // "그때 알았어. 이건 관계가 아니라 조건화였다는 걸..."
     "day5_after_resist_13f": {
         character: "eunsu_crying",
+        unskippable: true,
         next: "day5_after_resist_13g"
     },
     // "어떻게 나를 데려가겠다는 거야."
     "day5_after_resist_13g": {
         character: "eunsu_crying",
+        unskippable: true,
         next: "day5_after_resist_14"
     },
     "day5_after_resist_14": {
         character: null,
+        unskippable: true,
         next: "day5_after_resist_15"
     },
     "day5_after_resist_15": {
         character: "seolhwa_fading",
+        unskippable: true,
         setFlags: ["ending_bridge_resist_done"],
         next: "day5_after_end"
     },
@@ -577,6 +662,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_ghost_2": {
         character: "eunsu_obsessed",
+        unskippable: true,
         setFlags: ["route_ghost", "timer_expired"],
         next: "day5_after_ghost_3"
     },
@@ -588,43 +674,53 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_ghost_4": {
         character: null,
+        unskippable: true,
         next: "day5_after_ghost_5"
     },
     "day5_after_ghost_5": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day5_after_ghost_6"
     },
     "day5_after_ghost_6": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day5_after_ghost_7"
     },
     "day5_after_ghost_7": {
         character: null,
+        unskippable: true,
         next: "day5_after_ghost_8"
     },
     "day5_after_ghost_8": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day5_after_ghost_9"
     },
     "day5_after_ghost_9": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day5_after_ghost_10"
     },
     "day5_after_ghost_10": {
         character: null,
+        unskippable: true,
         next: "day5_after_ghost_11"
     },
     "day5_after_ghost_11": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day5_after_ghost_12"
     },
     "day5_after_ghost_12": {
         character: null,
         glitch: { noise: true },
+        unskippable: true,
         next: "day5_after_ghost_13"
     },
     "day5_after_ghost_13": {
         character: null,
+        unskippable: true,
         setFlags: ["ending_bridge_ghost_done"],
         next: "day5_after_end"
     },

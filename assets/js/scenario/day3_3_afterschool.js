@@ -281,14 +281,17 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_sea_truth_7": {
         character: "sea_broken_smile",
+        unskippable: true,
         next: "day3_after_sea_truth_8"
     },
     "day3_after_sea_truth_8": {
         character: "sea_broken_smile",
+        unskippable: true,
         next: "day3_after_sea_truth_9"
     },
     "day3_after_sea_truth_9": {
         character: "sea_broken_smile",
+        unskippable: true,
         next: "day3_after_yuna_check"
     },
 
@@ -299,14 +302,17 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_sea_lie_2": {
         character: "sea_yandere",
+        unskippable: true,
         next: "day3_after_sea_lie_3"
     },
     "day3_after_sea_lie_3": {
         character: "sea_yandere",
+        unskippable: true,
         next: "day3_after_sea_lie_3a"
     },
     "day3_after_sea_lie_3a": {
         character: "sea_yandere",
+        unskippable: true,
         next: "day3_after_sea_lie_4"
     },
     "day3_after_sea_lie_4": {
@@ -324,6 +330,7 @@ Object.assign(SCENARIO[3], {
     "day3_after_sea_lie_5a": {
         character: "sea_smile",
         glitch: { noise: true, noiseDuration: 150 },
+        unskippable: true,
         next: "day3_after_yuna_check"
     },
 
@@ -390,6 +397,7 @@ Object.assign(SCENARIO[3], {
     "day3_after_eunsu_peek_5": {
         character: null,
         sfx: "sfx_page_turn.mp3",
+        unskippable: true,
         next: "day3_after_eunsu_peek_6"
     },
     "day3_after_eunsu_peek_6": {
@@ -399,6 +407,7 @@ Object.assign(SCENARIO[3], {
     "day3_after_eunsu_peek_7": {
         character: null,
         sfx: "sfx_footsteps.mp3",
+        unskippable: true,
         next: "day3_after_eunsu_peek_8"
     },
     "day3_after_eunsu_peek_8": {
@@ -437,6 +446,7 @@ Object.assign(SCENARIO[3], {
         bgm: "tension.mp3",
         sfx: "sfx_footsteps.mp3",
         character: null,
+        unskippable: true,
         next: "day3_after_alone_2"
     },
     "day3_after_alone_2": {
@@ -449,10 +459,12 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_alone_4": {
         character: null,
+        unskippable: true,
         next: "day3_after_alone_5"
     },
     "day3_after_alone_5": {
         character: null,
+        unskippable: true,
         next: "day3_after_alone_6"
     },
     "day3_after_alone_6": {

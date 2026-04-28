@@ -289,34 +289,34 @@ body {
     top: 18px;
     right: 20px;
     z-index: 50;
-    padding: 6px 28px 6px 14px;
-    border-radius: 20px;
-    background-color: rgba(20, 15, 30, 0.88);
+    padding: 6px 28px 6px 12px;
+    border-radius: 4px;
+    background-color: rgba(21, 22, 30, 0.38);
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23fdecef' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 10px center;
-    border: 1px solid rgba(255, 183, 197, 0.3);
-    color: #fdecef;
+    border: 1px solid rgba(255, 247, 235, 0.18);
+    color: rgba(255, 248, 240, 0.86);
     font-family: inherit;
-    font-size: 0.82rem;
+    font-size: 0.76rem;
     line-height: 1.2;
     cursor: pointer;
     outline: none;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 .lang-switcher:hover {
-    transform: scale(1.05);
-    border-color: rgba(255, 183, 197, 0.6);
-    box-shadow: 0 0 15px rgba(255, 183, 197, 0.25);
+    background-color: rgba(255, 245, 232, 0.13);
+    border-color: rgba(255, 247, 235, 0.36);
+    box-shadow: 0 4px 18px rgba(20, 15, 20, 0.22);
 }
 .lang-switcher:focus-visible {
-    border-color: rgba(255, 183, 197, 0.8);
-    box-shadow: 0 0 0 2px rgba(255, 183, 197, 0.35);
+    border-color: rgba(255, 247, 235, 0.55);
+    box-shadow: 0 0 0 2px rgba(255, 247, 235, 0.22);
 }
 .lang-switcher option {
     background: #1a1422;
@@ -1877,7 +1877,25 @@ body {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-    .title-text { font-size: 1.8rem; }
+    #title-screen { padding-top: 4.75rem; }
+    .title-text {
+        font-size: clamp(1.45rem, 7vw, 2.15rem);
+        letter-spacing: 0.04em;
+    }
+    .title-subtitle {
+        font-size: 0.76rem;
+        letter-spacing: 0.16em;
+    }
+    .title-menu {
+        width: min(236px, calc(100vw - 40px));
+        margin-top: clamp(1.6rem, 4vh, 2.3rem);
+        padding: 0.7rem;
+    }
+    .title-menu .menu-btn {
+        width: 100%;
+        min-width: 0;
+        padding: 0.68rem 1rem;
+    }
     .dialogue-box { padding: 0.8rem 1rem 1.2rem; min-height: 120px; }
     .dialogue-text { font-size: 0.9rem; }
     .choice-btn { font-size: 0.85rem; padding: 0.7rem 1.5rem; }
@@ -1888,34 +1906,35 @@ body {
 
 /* ===== 모바일 가로모드 최적화 ===== */
 @media (max-height: 500px) and (orientation: landscape) {
-    #title-screen { padding-top: 3.25rem; }
-    .title-text { font-size: clamp(1.8rem, 5vw, 2.35rem); }
-    .title-subtitle { font-size: 0.82rem; }
+    #title-screen { padding-top: 2.75rem; }
+    .title-text { font-size: clamp(1.5rem, 4.2vw, 2.05rem); }
+    .title-subtitle {
+        font-size: 0.74rem;
+        letter-spacing: 0.14em;
+    }
     .title-menu {
         position: absolute;
         left: 50%;
-        bottom: 0.85rem;
+        bottom: 0.7rem;
         transform: translateX(-50%);
         flex-direction: row;
         margin-top: 0;
         gap: 0.45rem;
-        padding: 0.65rem 1.2rem;
+        padding: 0.55rem;
         max-width: calc(100vw - 24px);
         animation: none;
     }
-    .menu-btn {
-        padding: 0.52rem 2rem;
-        font-size: 0.84rem;
-        min-width: clamp(112px, 28vw, 170px);
+    .title-menu .menu-btn {
+        padding: 0.52rem 1.25rem;
+        font-size: 0.8rem;
+        min-width: clamp(108px, 27vw, 160px);
     }
     .archerlab-link {
         top: 10px;
-        left: 18px;
-        transform: none;
-        font-size: 0.72rem;
-        padding: 5px 12px;
+        left: 12px;
+        font-size: 0.66rem;
+        padding: 5px 9px;
     }
-    .archerlab-link:hover { transform: scale(1.06); }
     .lang-switcher {
         top: 10px;
         right: 12px;

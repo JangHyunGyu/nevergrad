@@ -543,11 +543,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_true_hide_1": {
         background: "basement_records_room",
+        dark: true,
         character: "yuna_weak",
         unskippable: true,
         next: "day5_morning_true_hide_2"
     },
     "day5_morning_true_hide_2": {
+        dark: true,
         character: null,
         unskippable: true,
         next: "day5_morning_true_exit_1"

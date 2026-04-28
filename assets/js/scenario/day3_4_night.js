@@ -558,16 +558,54 @@ Object.assign(SCENARIO[3], {
     },
 
     // ══════════════════════════════════════
-    //  ★ AI 커스텀 악몽 (FreeTalk 나이트메어 모드)
-    //  MD 순서: 최종 선택 후 → 프리토크 악몽 → 3일차 종료
+    //  악몽 시퀀스 (Day 3 종료 직전 — 장르 전환 트리거)
+    //  MD 순서: 최종 선택 후 → 악몽 → 3일차 종료
     // ══════════════════════════════════════
     "day3_night_ft_nightmare": {
         background: "black",
         character: null,
         night: true,
-        type: "free_talk",
-        freeTalkMode: "nightmare",
-        freeTalkNext: "day3_night_end"
+        unskippable: true,
+        next: "day3_night_ft_nightmare_2"
+    },
+    "day3_night_ft_nightmare_2": {
+        background: "black",
+        character: null,
+        night: true,
+        glitch: { noise: true, noiseDuration: 400 },
+        unskippable: true,
+        next: "day3_night_ft_nightmare_3"
+    },
+    "day3_night_ft_nightmare_3": {
+        background: "black",
+        character: null,
+        night: true,
+        unskippable: true,
+        next: "day3_night_ft_nightmare_4"
+    },
+    "day3_night_ft_nightmare_4": {
+        background: "black",
+        character: null,
+        night: true,
+        glitch: { screenShake: true, shakeDuration: 250, noise: true, noiseDuration: 400 },
+        unskippable: true,
+        next: "day3_night_ft_nightmare_5"
+    },
+    "day3_night_ft_nightmare_5": {
+        background: "black",
+        character: null,
+        night: true,
+        glitch: { noise: true, noiseDuration: 300, temperatureDrop: true },
+        unskippable: true,
+        next: "day3_night_ft_nightmare_6"
+    },
+    "day3_night_ft_nightmare_6": {
+        background: "black",
+        character: null,
+        night: true,
+        glitch: { ghostText: "day3_night_ft_nightmare_ghost", ghostDuration: 1800 },
+        unskippable: true,
+        next: "day3_night_end"
     },
 
     // ══════════════════════════════════════

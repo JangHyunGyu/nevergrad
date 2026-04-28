@@ -170,6 +170,50 @@ class GlitchSystem {
         }, duration);
     }
 
+    memoryFlash(flash) {
+        const config = typeof flash === 'string' ? { image: flash } : (flash || {});
+        const image = config.image || config.background;
+        if (!image) return;
+
+        const gameScreen = document.getElementById('game-screen');
+        if (!gameScreen) return;
+
+        const duration = config.duration || 1000;
+        const overlay = document.createElement('div');
+        overlay.className = 'memory-flash-overlay';
+        overlay.style.backgroundImage = `url('${this._assetUrl(image)}')`;
+        if (config.className) overlay.classList.add(config.className);
+
+        if (config.caption) {
+            const caption = document.createElement('div');
+            caption.className = 'memory-flash-caption';
+            caption.textContent = config.caption;
+            overlay.appendChild(caption);
+        }
+
+        gameScreen.appendChild(overlay);
+        requestAnimationFrame(() => overlay.classList.add('visible'));
+
+        setTimeout(() => {
+            overlay.classList.remove('visible');
+            overlay.classList.add('leaving');
+            setTimeout(() => overlay.remove(), 220);
+        }, duration);
+    }
+
+    _assetPath(src) {
+        if (!src) return '';
+        const normalized = String(src).replace(/^\.\//, '');
+        if (/^(?:https?:|data:|blob:|\/)/.test(normalized) || normalized.startsWith('../')) {
+            return normalized;
+        }
+        return (window.__NEVERGRAD_LANG__ ? '../' : '') + normalized;
+    }
+
+    _assetUrl(src) {
+        return new URL(this._assetPath(src), document.baseURI).href;
+    }
+
     // ===== Level 4: 완전 붕괴 =====
 
     /**

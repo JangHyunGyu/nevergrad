@@ -1550,6 +1550,7 @@ class GameEngine {
         if (g.type === 'flicker') this.glitch.screenNoise(g.duration || g.flickerDuration || 240);
         if (g.noise) this.glitch.screenNoise(g.noiseDuration);
         if (g.screenFlash) this._screenFlash(g.flashDuration || 120);
+        if (g.memoryFlash) this.glitch.memoryFlash(this._normalizeMemoryFlash(g.memoryFlash));
         if (g.corruptText) this._corruptDialogueText(g);
         if (g.mirrorReveal) this._showMirrorReveal(g.mirrorReveal);
         if (g.drugBlur) this.glitch.drugBlur?.(g.drugBlurDuration || 700);

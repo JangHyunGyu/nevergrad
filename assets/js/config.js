@@ -117,13 +117,13 @@ const CONFIG = {
             worried: "assets/images/characters/yuna_scared.png"      // alias: 걱정하는 상태
         },
         seolhwa: {
-            normal: "assets/images/characters/seolhwa_normal.png",
-            smile: "assets/images/characters/seolhwa_smile.png",
-            sad: "assets/images/characters/seolhwa_sad.png",
+            normal: "assets/images/characters/seolhwa_normal_v2.png",
+            smile: "assets/images/characters/seolhwa_smile_v2.png",
+            sad: "assets/images/characters/seolhwa_sad_v2.png",
             fade: "assets/images/characters/seolhwa_fade.png",
             fading: "assets/images/characters/seolhwa_fade.png",     // alias: 사라지는 중
             ghost: "assets/images/characters/seolhwa_ghost.png",
-            quiet: "assets/images/characters/seolhwa_quiet.png"
+            quiet: "assets/images/characters/seolhwa_quiet_v2.png"
         },
         classmate: {
             default: null  // 급우: 전용 이미지 없음, 엔진에서 null 처리
@@ -211,27 +211,27 @@ const CONFIG = {
 
     EVIDENCE_IMAGES: {
         yuna_photo: "assets/images/evidence/yuna_photo_evidence.png",
-        player_photo: "assets/images/evidence/player_yuna_camera_photo.png",
-        player_mirror: "assets/images/evidence/player_mirror_reflection.png",
-        player_face: "assets/images/evidence/player_face_portrait.png",
+        player_photo: "assets/images/evidence/player_yuna_camera_photo_anime.png",
+        player_mirror: "assets/images/evidence/player_mirror_reflection_anime.png",
+        player_face: "assets/images/evidence/player_face_portrait_anime.png",
         locker_camera: "assets/images/evidence/locker_hidden_camera.png",
         lab_documents: "assets/images/evidence/day5_lab_documents.png"
     },
 
     SUBJECT_FACE_IMAGES: {
-        1: "assets/images/evidence/subjects/subject_01.png",
-        2: "assets/images/evidence/subjects/subject_02.png",
-        3: "assets/images/evidence/subjects/subject_03.png",
-        4: "assets/images/evidence/subjects/subject_04.png",
-        5: "assets/images/evidence/subjects/subject_05.png",
-        6: "assets/images/evidence/subjects/subject_06.png",
-        7: "assets/images/evidence/subjects/subject_07.png",
-        8: "assets/images/evidence/subjects/subject_08.png",
-        9: "assets/images/evidence/subjects/subject_09.png",
-        10: "assets/images/evidence/subjects/subject_10.png",
-        11: "assets/images/evidence/subjects/subject_11.png",
-        12: "assets/images/evidence/subjects/subject_12.png",
-        13: "assets/images/evidence/subjects/subject_13.png"
+        1: "assets/images/evidence/subjects_anime/subject_01.png",
+        2: "assets/images/evidence/subjects_anime/subject_02.png",
+        3: "assets/images/evidence/subjects_anime/subject_03.png",
+        4: "assets/images/evidence/subjects_anime/subject_04.png",
+        5: "assets/images/evidence/subjects_anime/subject_05.png",
+        6: "assets/images/evidence/subjects_anime/subject_06.png",
+        7: "assets/images/evidence/subjects_anime/subject_07.png",
+        8: "assets/images/evidence/subjects_anime/subject_08.png",
+        9: "assets/images/evidence/subjects_anime/subject_09.png",
+        10: "assets/images/evidence/subjects_anime/subject_10.png",
+        11: "assets/images/evidence/subjects_anime/subject_11.png",
+        12: "assets/images/evidence/subjects_anime/subject_12.png",
+        13: "assets/images/evidence/subjects_anime/subject_13.png"
     },
 
     // ===== 스탯 시스템 =====

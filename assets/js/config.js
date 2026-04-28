@@ -151,10 +151,10 @@ const CONFIG = {
         basement: "assets/images/background/basement.png",
         // CSS 시간대 변형 (기본 이미지 재사용 + setTimeOfDay 호출)
         corridor_dark: "assets/images/background/corridor_dark.png",     // 어두운 복도 (고유)
-        room_morning: "assets/images/background/home.png",               // home + morning
+        room_morning: "assets/images/background/room_morning.png",
         school_gate_evening: "assets/images/background/school_gate.png", // school_gate + sunset
         // 학교 외부 (구도가 고유한 것)
-        garden: "assets/images/background/cherry_blossom.png",        // alias: garden.png 없음 → cherry_blossom 재사용
+        garden: "assets/images/background/garden.png",
         school_gate: "assets/images/background/school_gate.png",
         school_night: "assets/images/background/school_night.png",      // 외부에서 본 밤 학교 (고유)
         school_dark: "assets/images/background/school_dark.png",        // 내부 칠흑 복도 (고유)
@@ -172,32 +172,32 @@ const CONFIG = {
         bathroom_night: "assets/images/background/bathroom_night.png",
         // 특수
         black: "assets/images/background/black.png",
-        white: "assets/images/background/black.png",               // alias: white.png 없음 → black 재사용 (CSS 필터로 반전)
+        white: "assets/images/background/white.png",
         // 학교 내부 (추가)
         playground: "assets/images/background/playground.png",
         student_council: "assets/images/background/student_council.png",
         cafeteria: "assets/images/background/cafeteria.png",
-        old_building_corridor: "assets/images/background/old_building.png", // 구관 복도 (구관 재사용)
-        corridor_old: "assets/images/background/old_building.png",         // 구관 복도 alias
+        old_building_corridor: "assets/images/background/old_building_corridor.png",
+        corridor_old: "assets/images/background/corridor_old.png",
         corridor_main: "assets/images/background/corridor.png",            // 본관 복도 (corridor 재사용)
         corridor_emergency: "assets/images/background/emergency_corridor.png",
         old_infirmary: "assets/images/background/old_infirmary.png",
-        old_stairway: "assets/images/background/stairway.png",             // 구관 계단 (stairway 재사용)
-        old_corridor_dark: "assets/images/background/old_building.png",    // 구관 어두운 복도
-        underground_lab: "assets/images/background/basement.png",          // 지하 연구실 (basement 재사용)
+        old_stairway: "assets/images/background/old_stairway.png",
+        old_corridor_dark: "assets/images/background/old_corridor_dark.png",
+        underground_lab: "assets/images/background/underground_lab.png",
         // 학교 외부 (추가)
-        school_back: "assets/images/background/outside_school.png",        // 학교 뒤편
-        street_morning: "assets/images/background/street.png",             // 아침 통학로 (street 재사용)
-        school_gate_dark: "assets/images/background/school_gate_dark.png", // 새벽 교문 (고유, 4K 생성 필요)
-        school_gate_morning: "assets/images/background/school_gate.png",   // 아침 교문
-        school_fence_dawn: "assets/images/background/school_gate.png",     // 새벽 울타리
+        school_back: "assets/images/background/school_back.png",
+        street_morning: "assets/images/background/street_morning.png",
+        school_gate_dark: "assets/images/background/school_gate_dark.png",
+        school_gate_morning: "assets/images/background/school_gate_morning.png",
+        school_fence_dawn: "assets/images/background/school_fence_dawn.png",
         // 자취방 (추가)
-        room_dark: "assets/images/background/room_dark.png",              // 어두운 방 (고유, 4K 생성 필요)
+        room_dark: "assets/images/background/room_dark.png",
         // 엔딩 전용
-        emergency_exit: "assets/images/background/exit_door.png",          // 비상구 (exit_door 재사용)
-        classroom_afternoon: "assets/images/background/classroom.png",     // 오후 교실
-        new_classroom: "assets/images/background/classroom.png",           // 새 교실 (에필로그)
-        news_article: "assets/images/background/black.png",
+        emergency_exit: "assets/images/background/emergency_exit.png",
+        classroom_afternoon: "assets/images/background/classroom_afternoon.png",
+        new_classroom: "assets/images/background/new_classroom.png",
+        news_article: "assets/images/background/news_article.png",
         dawn_road: "assets/images/background/dawn_road.png",
         new_place: "assets/images/background/new_place.png",
         lab_documents: "assets/images/evidence/day5_lab_documents.png",
@@ -211,8 +211,27 @@ const CONFIG = {
 
     EVIDENCE_IMAGES: {
         yuna_photo: "assets/images/evidence/yuna_photo_evidence.png",
+        player_photo: "assets/images/evidence/player_yuna_camera_photo.png",
+        player_mirror: "assets/images/evidence/player_mirror_reflection.png",
+        player_face: "assets/images/evidence/player_face_portrait.png",
         locker_camera: "assets/images/evidence/locker_hidden_camera.png",
         lab_documents: "assets/images/evidence/day5_lab_documents.png"
+    },
+
+    SUBJECT_FACE_IMAGES: {
+        1: "assets/images/evidence/subjects/subject_01.png",
+        2: "assets/images/evidence/subjects/subject_02.png",
+        3: "assets/images/evidence/subjects/subject_03.png",
+        4: "assets/images/evidence/subjects/subject_04.png",
+        5: "assets/images/evidence/subjects/subject_05.png",
+        6: "assets/images/evidence/subjects/subject_06.png",
+        7: "assets/images/evidence/subjects/subject_07.png",
+        8: "assets/images/evidence/subjects/subject_08.png",
+        9: "assets/images/evidence/subjects/subject_09.png",
+        10: "assets/images/evidence/subjects/subject_10.png",
+        11: "assets/images/evidence/subjects/subject_11.png",
+        12: "assets/images/evidence/subjects/subject_12.png",
+        13: "assets/images/evidence/subjects/subject_13.png"
     },
 
     // ===== 스탯 시스템 =====

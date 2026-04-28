@@ -420,8 +420,29 @@
         "name": "Park Eunsu"
     },
     "day5_morning_true_ft": {
-        "name": "",
-        "text": ""
+        "name": "Ich",
+        "text": "*Ihr Lächeln ist zu natürlich. Neben mir umklammert Yuna die Kamera. Was soll ich nur antworten.*",
+        "choices": [
+            "Gehen Sie zur Seite. Ich weiß alles, was wir unten gesehen haben.",
+            "...Ich hab mich verlaufen. Entschuldigung, ich gehe sofort raus.",
+            "Yuna ist plötzlich schwindlig geworden. Ich bringe sie zur Krankenstation."
+        ]
+    },
+    "day5_morning_true_ft_confront": {
+        "name": "Park Eunsu",
+        "text": "...{name}, das ist wirklich beängstigend, was du sagst. Wollen wir uns mit der Lehrerin in Ruhe hinsetzen und reden? Leg die Kamera kurz weg."
+    },
+    "day5_morning_true_ft_lost": {
+        "name": "Park Eunsu",
+        "text": "Schon gut. Bist du verletzt? — Ich begleite dich raus. Ganz ruhig."
+    },
+    "day5_morning_true_ft_yuna": {
+        "name": "Park Eunsu",
+        "text": "...Verstehe. Aber die Krankenstation ist im zweiten Stock des Hauptgebäudes, {name}. Gehen wir zusammen. Ich helfe dir, sie zu stützen."
+    },
+    "day5_morning_true_ft_stall": {
+        "name": "Park Eunsu",
+        "text": "Moment. Langsam. — Hör erst der Lehrerin zu, bevor du gehst, hm?"
     },
     "day5_morning_true_post_ft_1": {
         "text": "*Park Eunsu legte eine Hand auf meine Schulter. Eine warme Hand. Aber was verbarg sich hinter diesem Lächeln?*",

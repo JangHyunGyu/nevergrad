@@ -207,6 +207,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_true_14b": {
         character: null,
         sfx: "sfx_glass_break.mp3",
+        unskippable: true,
         next: "day5_ending_true_15"
     },
     "day5_ending_true_15": {
@@ -742,6 +743,7 @@ Object.assign(SCENARIO[5], {
         bgm: "ending_dark.mp3",
         sfx: "sfx_door_slam.mp3",
         character: "eunsu_normal",
+        unskippable: true,
         next: "day5_ending_cage_eunsu_2"
     },
     "day5_ending_cage_eunsu_2": {

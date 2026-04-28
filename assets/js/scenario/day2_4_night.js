@@ -336,6 +336,7 @@ Object.assign(SCENARIO[2], {
         sfx: "sfx_heartbeat.mp3",
         character: null,
         night: true,
+        unskippable: true,
         next: "day2_night_dream_2"
     },
     "day2_night_dream_2": {
@@ -426,6 +427,7 @@ Object.assign(SCENARIO[2], {
         background: "black",
         character: null,
         night: true,
+        stopSfx: true,
         changeDay: 3,
         changeSlot: "morning",
         next: "day3_morning_start"

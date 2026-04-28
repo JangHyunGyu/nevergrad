@@ -26,6 +26,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         glitch: { screenShake: true, noise: true },
         vibrate: "chase",
+        unskippable: true,
         next: "day5_lunch_chase_2"
     },
     "day5_lunch_chase_2": {
@@ -151,6 +152,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         sfx: "sfx_door_slam.mp3",
         glitch: { screenShake: true },
+        unskippable: true,
         next: "day5_lunch_left_14"
     },
     // "그건 나한테 웃는 게 아니야."

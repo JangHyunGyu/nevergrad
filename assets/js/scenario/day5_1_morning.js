@@ -141,6 +141,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         background: "old_building",
         sfx: "sfx_thunder.mp3",
+        unskippable: true,
         next: "day5_morning_school_9"
     },
     "day5_morning_school_9": {

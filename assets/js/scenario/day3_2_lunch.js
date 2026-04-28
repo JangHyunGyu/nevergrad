@@ -237,6 +237,7 @@ Object.assign(SCENARIO[3], {
         character: null,
         sfx: "sfx_door_slam.mp3",
         glitch: { noise: true, noiseDuration: 300 },
+        unskippable: true,
         next: "day3_lunch_door_2"
     },
     "day3_lunch_door_2": {

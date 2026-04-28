@@ -261,6 +261,7 @@ Object.assign(SCENARIO[3], {
         character: null,
         sfx: "sfx_static.mp3",
         glitch: { screenShake: true, noise: true, noiseDuration: 500 },
+        unskippable: true,
         next: "day3_night_wall_5"
     },
     "day3_night_wall_5": {

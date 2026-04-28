@@ -384,6 +384,9 @@ class AudioManager {
      * @param {object} [options]
      * @param {number} [options.volume=1.0] - 상대 볼륨 (0~1, sfxGain에 곱해짐)
      * @param {number} [options.playbackRate=1.0] - 재생 속도
+     * @param {boolean} [options.loop=false] - 루프 재생 여부
+     * @param {number} [options.trimStart=0] - 앞부분 트림 시간(초)
+     * @param {number} [options.trimEnd=0] - 끝부분 트림 시간(초)
      */
     async playSFX(filename, options = {}) {
         if (!this.ctx) return;
@@ -395,6 +398,17 @@ class AudioManager {
         const source = this.ctx.createBufferSource();
         source.buffer = buffer;
         source.playbackRate.value = options.playbackRate || 1.0;
+        source.loop = !!options.loop;
+
+        const trimStart = Math.max(0, Number(options.trimStart) || 0);
+        const trimEnd = Math.max(0, Number(options.trimEnd) || 0);
+        const startOffset = Math.min(trimStart, Math.max(0, buffer.duration - 0.01));
+        const endOffset = Math.max(startOffset + 0.01, buffer.duration - trimEnd);
+        const playDuration = Math.max(0.01, endOffset - startOffset);
+        if (source.loop) {
+            source.loopStart = startOffset;
+            source.loopEnd = endOffset;
+        }
 
         // 모든 SFX에 개별 gain 부여 (stopSFX의 페이드아웃 컨트롤용)
         const tempGain = this.ctx.createGain();
@@ -410,7 +424,11 @@ class AudioManager {
             try { tempGain.disconnect(); } catch {}
         };
 
-        source.start(0);
+        if (source.loop) {
+            source.start(0, startOffset);
+        } else {
+            source.start(0, startOffset, playDuration);
+        }
     }
 
     /**

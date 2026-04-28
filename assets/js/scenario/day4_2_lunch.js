@@ -108,11 +108,18 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_yuna_11": {
         character: null,
         // 손잡이를 잡아당겼다. 새 자물쇠.
+        sfx: { file: "sfx_padlock_rattle.mp3", trimStart: 0.03, trimEnd: 0.08 },
+        unskippable: true,
         next: "day4_lunch_yuna_12"
     },
     "day4_lunch_yuna_12": {
         character: null,
         // 문틈에 귀를 댔다. 신음소리.
+        sfx: [
+            { file: "sfx_machine_hum_loop.mp3", loop: true, volume: 0.45, trimStart: 0.08, trimEnd: 0.12 },
+            { file: "sfx_distant_groan.mp3", volume: 0.75, trimStart: 0.04, trimEnd: 0.12 }
+        ],
+        unskippable: true,
         next: "day4_lunch_yuna_13"
     },
     "day4_lunch_yuna_13": {
@@ -123,11 +130,15 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_yuna_14": {
         character: null,
         // 자물쇠를 흔들어봤다. 열 수 없다.
+        sfx: { file: "sfx_padlock_rattle.mp3", trimStart: 0.03, trimEnd: 0.08 },
+        unskippable: true,
         next: "day4_lunch_yuna_15"
     },
     "day4_lunch_yuna_15": {
         character: null,
         // 발소리가 들린다. 누군가 오고 있다.
+        sfx: { file: "sfx_footsteps.mp3", volume: 0.65, trimStart: 0.04, trimEnd: 0.1 },
+        unskippable: true,
         next: "day4_lunch_yuna_16"
     },
     "day4_lunch_yuna_16": {
@@ -138,6 +149,11 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_yuna_17": {
         character: null,
         // 은수 선생님이 열쇠로 문을 열고 들어감
+        sfx: [
+            { file: "sfx_key_turn.mp3", trimStart: 0.02, trimEnd: 0.06 },
+            { file: "sfx_door_close.mp3", volume: 0.75, trimStart: 0.03, trimEnd: 0.08 }
+        ],
+        unskippable: true,
         setFlags: ["saw_eunsu_key"],
         next: "day4_lunch_yuna_18"
     },
@@ -156,6 +172,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_yuna_20": {
         character: null,
         // 내일. 내일 반드시.
+        stopSfx: { file: "sfx_machine_hum_loop.mp3", fadeOut: 0.8 },
         unskippable: true,
         next: "day4_lunch_end"
     },

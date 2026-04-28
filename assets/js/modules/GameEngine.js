@@ -528,15 +528,18 @@ class GameEngine {
         }
 
         // SFX 정지 (활성 sfx를 페이드아웃) — 캐릭터 등장/씬 전환 시 잔여 발자국 등 차단용
-        // true: 전체 정지 / 문자열: 해당 파일만 정지 / 객체: { file, fadeOut }
+        // true: 전체 정지 / 문자열: 해당 파일만 정지 / 객체: { file, fadeOut } / 배열: 여러 정지 지시
         if (scene.stopSfx) {
-            if (scene.stopSfx === true) {
-                this.audio?.stopSFX(null, 0.5);
-            } else if (typeof scene.stopSfx === 'string') {
-                this.audio?.stopSFX(scene.stopSfx, 0.5);
-            } else if (typeof scene.stopSfx === 'object') {
-                this.audio?.stopSFX(scene.stopSfx.file ?? null, scene.stopSfx.fadeOut ?? 0.5);
-            }
+            const stopList = Array.isArray(scene.stopSfx) ? scene.stopSfx : [scene.stopSfx];
+            stopList.forEach(stop => {
+                if (stop === true) {
+                    this.audio?.stopSFX(null, 0.5);
+                } else if (typeof stop === 'string') {
+                    this.audio?.stopSFX(stop, 0.5);
+                } else if (typeof stop === 'object') {
+                    this.audio?.stopSFX(stop.file ?? null, stop.fadeOut ?? 0.5);
+                }
+            });
         }
 
         // SFX
@@ -546,7 +549,13 @@ class GameEngine {
                 if (typeof s === 'string') {
                     this.audio.playSFX(s);
                 } else if (s && s.file) {
-                    this.audio.playSFX(s.file, { volume: s.volume, playbackRate: s.playbackRate });
+                    this.audio.playSFX(s.file, {
+                        volume: s.volume,
+                        playbackRate: s.playbackRate,
+                        loop: s.loop,
+                        trimStart: s.trimStart,
+                        trimEnd: s.trimEnd
+                    });
                 }
             });
         }

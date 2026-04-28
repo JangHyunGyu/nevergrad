@@ -13,6 +13,7 @@ Object.assign(SCENARIO[5], {
     // ══════════════════════════════════════
     "day5_lunch_start": {
         character: null,
+        stopSfx: true,
         next: "day5_lunch_chase_1"
     },
 
@@ -49,6 +50,7 @@ Object.assign(SCENARIO[5], {
         character: "eunsu_pa",
         charOpacity: 0.7,
         stopSfx: "sfx_footsteps_running.mp3",
+        sfx: { file: "sfx_pa_chime_static.mp3", volume: 0.85, trimStart: 0.02, trimEnd: 0.08 },
         unskippable: true,
         next: "day5_lunch_chase_5"
     },
@@ -233,6 +235,7 @@ Object.assign(SCENARIO[5], {
     // 계단 발소리 가까워짐
     "day5_lunch_left_23": {
         character: "sea_vulnerable",
+        sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.7, trimStart: 0.05, trimEnd: 0.1 },
         glitch: { screenShake: true },
         unskippable: true,
         next: "day5_lunch_left_24"
@@ -245,6 +248,7 @@ Object.assign(SCENARIO[5], {
     // "...13번째도 비켜줘야 하는 거야?"
     "day5_lunch_left_25": {
         character: "sea_cry",
+        sfx: { file: "memory_reveal_stinger.mp3", volume: 0.78, trimStart: 0.02, trimEnd: 0.08 },
         unskippable: true,
         next: "day5_lunch_left_choice"
     },
@@ -252,6 +256,7 @@ Object.assign(SCENARIO[5], {
     // 8초 타이머: 3 choices (타임아웃 = 세아에게 붙잡힘)
     "day5_lunch_left_choice": {
         character: null,
+        sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.85, trimStart: 0.05, trimEnd: 0.1 },
         timedChoice: 8000,
         unskippable: true,
         choices: [
@@ -264,6 +269,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_left_timeout": {
         character: null,
+        stopSfx: "sfx_stairs_approaching.mp3",
         setFlags: ["caught_by_sea"],
         next: "day5_lunch_end"
     },
@@ -271,6 +277,7 @@ Object.assign(SCENARIO[5], {
     // ── 선택 1: "...미안해. 하지만 가야 해." ──
     "day5_lunch_left_c1_1": {
         character: null,
+        stopSfx: "sfx_stairs_approaching.mp3",
         unskippable: true,
         next: "day5_lunch_left_c1_2"
     },
@@ -291,6 +298,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_left_c1_5": {
         character: null,
+        stopSfx: "sfx_stairs_approaching.mp3",
         unskippable: true,
         next: "day5_lunch_left_c1_6"
     },
@@ -301,6 +309,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_left_c1_7": {
         character: null,
+        sfx: { file: "sfx_body_collapse_soft.mp3", volume: 0.85, trimStart: 0.04, trimEnd: 0.1 },
         unskippable: true,
         next: "day5_lunch_left_c1_8"
     },
@@ -314,6 +323,7 @@ Object.assign(SCENARIO[5], {
     // ── 선택 2: "같이 가자." ──
     "day5_lunch_left_c2_1": {
         character: "sea_cry",
+        stopSfx: "sfx_stairs_approaching.mp3",
         unskippable: true,
         next: "day5_lunch_left_c2_2"
     },
@@ -367,6 +377,7 @@ Object.assign(SCENARIO[5], {
     // ── 선택 3: "...비키지 마. 여기 있을게." → CAGE 루트 ──
     "day5_lunch_left_c3_1": {
         character: null,
+        stopSfx: "sfx_stairs_approaching.mp3",
         unskippable: true,
         next: "day5_lunch_end",
         setFlags: ["cage_route_sea", "stayed_with_sea"]

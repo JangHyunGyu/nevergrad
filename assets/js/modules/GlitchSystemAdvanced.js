@@ -686,7 +686,8 @@ class GlitchSystemAdvanced {
             slot: index + 1,
             name: names[index + 1],
             tag: `${date} / ${copy.gate}`,
-            note: copy.notes[index]
+            note: copy.notes[index],
+            image: CONFIG.SUBJECT_FACE_IMAGES?.[index + 1] || null
         }));
         photos.push({
             slot: 13,
@@ -694,7 +695,7 @@ class GlitchSystemAdvanced {
             tag: copy.currentTag,
             note: copy.currentNote,
             current: true,
-            image: CONFIG.EVIDENCE_IMAGES?.player_photo || CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png'
+            image: CONFIG.EVIDENCE_IMAGES?.player_photo || CONFIG.SUBJECT_FACE_IMAGES?.[13] || CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png'
         });
         return {
             title: deck === 'yuna_13' ? copy.titleYuna : copy.titleDefault,

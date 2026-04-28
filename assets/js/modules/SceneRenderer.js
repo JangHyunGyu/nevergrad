@@ -36,6 +36,11 @@ class SceneRenderer {
     }
 
     _getBackgroundCandidates(src) {
+        return this._getWebpCandidates(src);
+    }
+
+    // PNG 경로 → [webp 우선, png 폴백]. 매칭 폴더(background/characters) 외엔 원본 그대로.
+    _getWebpCandidates(src) {
         if (!src) return [];
 
         const raw = String(src);
@@ -43,7 +48,7 @@ class SceneRenderer {
         const pathPart = match ? match[1] : raw;
         const suffix = match?.[2] || '';
 
-        if (!/^(?:\.\.\/)?assets\/images\/background\/.+\.png$/i.test(pathPart)) {
+        if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters)\/.+\.png$/i.test(pathPart)) {
             return [raw];
         }
 
@@ -321,14 +326,18 @@ class SceneRenderer {
                   : position === 'right' ? this.charRight
                   : this.charCenter;
         if (!el) return;
-        const resolvedSrc = this._withAssetVersion(src);
+
+        // webp 우선 / png 폴백 — 캐싱 비교는 webp 기준 (정상 케이스에서 webp가 늘 성공)
+        const candidates = this._getWebpCandidates(src);
+        const webpSrc = this._withAssetVersion(candidates[0] || src);
+        const pngSrc = this._withAssetVersion(candidates[1] || candidates[0] || src);
 
         // 목표 opacity 문자열 ('0.35' 등). undefined이면 '' (CSS 기본값 = 1)
         const targetOpacity = (opacity != null && opacity < 1) ? String(opacity) : '';
 
         // 같은 이미지 + 같은 opacity면 아무것도 안 함 (깜빡임 방지)
         const prevSrc = el.getAttribute('src');
-        if (prevSrc === resolvedSrc && el.style.opacity === targetOpacity) return;
+        if ((prevSrc === webpSrc || prevSrc === pngSrc) && el.style.opacity === targetOpacity) return;
 
         // 이전 클론이 남아있으면 제거
         this._removePrevClone(el);
@@ -338,11 +347,11 @@ class SceneRenderer {
 
         if (prevSrc && prevSrc !== '') {
             const prevPrefix = this._getCharPrefix(prevSrc);
-            const newPrefix = this._getCharPrefix(resolvedSrc);
+            const newPrefix = this._getCharPrefix(webpSrc);
 
             if (prevPrefix === newPrefix) {
                 // 같은 캐릭터 표정 변화 → 즉시 교체 (깜빡임 없음)
-                el.src = resolvedSrc;
+                this._applyImgWithFallback(el, webpSrc, pngSrc);
                 el.style.opacity = targetOpacity;
             } else {
                 // 다른 캐릭터 → 페이드아웃 후 페이드인
@@ -350,7 +359,7 @@ class SceneRenderer {
                 el.style.opacity = '0';
                 el._charTimer = setTimeout(() => {
                     el.classList.remove('char-fade-out');
-                    el.src = resolvedSrc;
+                    this._applyImgWithFallback(el, webpSrc, pngSrc);
                     el.classList.add('char-fade-in');
                     el.style.opacity = '0';
                     requestAnimationFrame(() => {
@@ -368,12 +377,26 @@ class SceneRenderer {
             // 새 등장 — 페이드인
             el.classList.add('char-fade-in');
             el.style.opacity = '0';
-            el.src = resolvedSrc;
+            this._applyImgWithFallback(el, webpSrc, pngSrc);
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => { el.style.opacity = targetOpacity; });
             });
             setTimeout(() => { el.classList.remove('char-fade-in'); }, 260);
         }
+    }
+
+    // <img> 요소에 webp 시도 → 실패 시 png 폴백 (배경 webp 정책과 동일한 의도)
+    _applyImgWithFallback(el, webpSrc, pngSrc) {
+        el.onerror = null;
+        if (!webpSrc || webpSrc === pngSrc) {
+            el.src = webpSrc || pngSrc;
+            return;
+        }
+        el.onerror = () => {
+            el.onerror = null;
+            el.src = pngSrc;
+        };
+        el.src = webpSrc;
     }
 
     clearCharacters() {

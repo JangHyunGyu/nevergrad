@@ -101,7 +101,7 @@ function getPreferredBackgroundPath(path) {
     const pathPart = match ? match[1] : raw;
     const suffix = match?.[2] || '';
 
-    if (!/^(?:\.\.\/)?assets\/images\/background\/.+\.png$/i.test(pathPart)) {
+    if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters)\/.+\.png$/i.test(pathPart)) {
         return raw;
     }
 

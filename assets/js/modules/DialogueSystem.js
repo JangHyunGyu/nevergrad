@@ -124,20 +124,24 @@ class DialogueSystem {
 
     /**
      * 마크다운 마커(* **)를 무시하고 순수 글자 count개 만큼의 원본 문자열 잘라내기
-     * 마커가 잘리지 않도록 경계 보정
+     * 마커가 잘리지 않도록 경계 보정 + 아직 닫히지 않은 강조 마커는 임시로 닫아서 반환
+     * (그래야 typing 중간에도 **bold** / *italic*이 강조 형식으로 렌더됨)
      */
     _sliceByPlainLength(source, count) {
         let plain = 0;
         let i = 0;
+        let boldOpen = false;
+        let italicOpen = false;
         while (i < source.length && plain < count) {
             // ** 패턴 감지 (열기/닫기 마커)
             if (source[i] === '*' && i + 1 < source.length && source[i + 1] === '*') {
-                // ** 마커 → 통째로 포함
+                boldOpen = !boldOpen;
                 i += 2;
                 continue;
             }
             // * 패턴 감지 (단일 마커)
             if (source[i] === '*') {
+                italicOpen = !italicOpen;
                 i += 1;
                 continue;
             }
@@ -145,11 +149,21 @@ class DialogueSystem {
             plain++;
             i++;
         }
-        // 남은 마커(*  **)가 있으면 포함시켜 태그가 깨지지 않게 함
+        // 다음 위치가 닫는 마커면 미리 포함시켜 태그가 깨지지 않게 함
         while (i < source.length && source[i] === '*') {
-            i++;
+            if (i + 1 < source.length && source[i + 1] === '*') {
+                boldOpen = !boldOpen;
+                i += 2;
+            } else {
+                italicOpen = !italicOpen;
+                i += 1;
+            }
         }
-        return source.slice(0, i);
+        let result = source.slice(0, i);
+        // 아직 닫히지 않은 강조 마커는 임시로 닫아서 partial render에서도 강조 형식 유지
+        if (boldOpen) result += '**';
+        if (italicOpen) result += '*';
+        return result;
     }
 
     skipTyping() {

@@ -952,6 +952,10 @@ class GameEngine {
         const playerName = this.state?.playerName || '{name}';
         const sceneNo = Number((sceneId.match(/_(\d+)$/) || [])[1] || 1);
 
+        const raw = String(resolvedText || '').trim();
+        const isDocumentQuote = /^\*{3}\s*['"`「『“]/.test(raw);
+        const excerpt = isDocumentQuote ? this._stripVNMarkup(raw) : '';
+
         return {
             type: 'labDossier',
             variant: sceneNo >= 5 ? 'table' : (sceneNo >= 3 ? 'report' : 'intake'),
@@ -959,7 +963,7 @@ class GameEngine {
             stamp: copy.stamp,
             fileId: copy.fileId,
             title: copy.reportTitle,
-            excerpt: this._stripVNMarkup(resolvedText),
+            excerpt,
             sideLabel: copy.sideLabel,
             subject: '#13',
             note: copy.note,

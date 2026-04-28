@@ -237,7 +237,9 @@ class SceneRenderer {
         this._append(top, 'div', 'media-dossier-stamp', data.stamp || 'CONFIDENTIAL');
         this._append(main, 'div', 'media-dossier-file-id', data.fileId || 'NVG-13-FINAL');
         this._append(main, 'h2', 'media-dossier-title', data.title || '');
-        this._append(main, 'p', 'media-dossier-excerpt', data.excerpt || '');
+        if (data.excerpt) {
+            this._append(main, 'p', 'media-dossier-excerpt', data.excerpt);
+        }
 
         const table = this._append(main, 'div', 'media-dossier-table');
         (data.rows || []).forEach(row => {

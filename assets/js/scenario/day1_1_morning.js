@@ -171,7 +171,22 @@ Object.assign(SCENARIO[1], {
         fallback: "day1_sea_meet_1",
         background: "corridor",
         character: "seolhwa_fade",
-        glitch: { noise: true, noiseDuration: 200 },
+        glitch: {
+            noise: true,
+            noiseDuration: 200,
+            ghostText: {
+                ko: "순응도",
+                en: "Compliance",
+                ja: "順応度",
+                es: "Cumplimiento",
+                fr: "Conformité",
+                de: "Konformität",
+                pt: "Conformidade"
+            },
+            ghostX: 84,
+            ghostY: 17,
+            ghostDuration: 450
+        },
         stopSfx: true,
         next: "day1_xover_seolhwa_2"
     },

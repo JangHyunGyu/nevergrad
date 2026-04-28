@@ -11462,6 +11462,61 @@ _캐릭터: `sea_cry`_
 ...할 말이 있으면 해 봐. 어차피 아무것도 안 변하지만.
 ```
 
+### `day4_after_ft_sea_choice`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_cry`_
+
+**나**
+```text
+*무슨 말을 해야 할까. 세아의 손은 여전히 내 팔을 붙잡고 있다.*
+```
+
+**선택지** (분기, 모두 `day4_after_ft_sea_quiet`로 수렴)
+- ① "...미안. 도망치는 거 아니야. 그냥 머리가 너무 복잡해서." → `day4_after_ft_sea_apologize` (sea +5)
+- ② "...12번이나, 너는 어떻게 견뎠어?" → `day4_after_ft_sea_ask` (sea +8)
+- ③ "...나는 너를 잊지 않을게. 약속해." → `day4_after_ft_sea_promise` (sea +10, flag `sea_13th_promise`)
+
+### `day4_after_ft_sea_apologize`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_cry`_
+
+**한세아**
+```text
+...13번 들었어, 그 말. 매번 진심이었던 거 알아.
+```
+
+### `day4_after_ft_sea_ask`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_cry`_
+
+**한세아**
+```text
+...견딘 거 아니야. 매번 처음이었어. 너처럼.
+```
+
+### `day4_after_ft_sea_promise`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_cry`_
+
+**한세아**
+```text
+...그 말도 들어봤어. 약속한 사람도 너고, 못 지킨 사람도 너야. 매번.
+```
+
+### `day4_after_ft_sea_quiet`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_sad`_
+
+**한세아**
+```text
+...됐어. 가.
+```
+
 ### `day4_after_ft_sea_post`
 
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
@@ -13901,6 +13956,61 @@ _캐릭터: `eunsu_gentle`_
 **박은수**
 ```text
 {name}... 여기서 뭐 하고 있는 건지 설명해줄 수 있어요?
+```
+
+### `day5_morning_true_ft`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+*선생님의 미소가 너무 자연스럽다. 옆에서 유나가 카메라를 꼭 쥐고 있다. 어떻게 답해야 하지.*
+```
+
+**선택지** (분기, 모두 `day5_morning_true_ft_stall`로 수렴)
+- ① "선생님, 비키세요. 지하실에서 본 거 다 알고 있어요." → `day5_morning_true_ft_confront` (eunsu -10, flag `confronted_eunsu_d5`)
+- ② "...길을 잃었어요. 죄송해요, 지금 바로 나갈게요." → `day5_morning_true_ft_lost` (eunsu +3)
+- ③ "유나가 갑자기 어지럽대요. 보건실 데려가는 중이에요." → `day5_morning_true_ft_yuna` (eunsu -3)
+
+### `day5_morning_true_ft_confront`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_캐릭터: `eunsu_gentle`_
+
+**박은수**
+```text
+...{name}, 무서운 얘기 하네. 선생님이랑 차분히 앉아서 얘기해 볼래? 카메라 잠깐 내려놓고.
+```
+
+### `day5_morning_true_ft_lost`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_캐릭터: `eunsu_gentle`_
+
+**박은수**
+```text
+괜찮아. 다친 데는 없고? — 선생님이 데려다줄게. 천천히 와.
+```
+
+### `day5_morning_true_ft_yuna`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_캐릭터: `eunsu_gentle`_
+
+**박은수**
+```text
+...그래. 보건실은 본관 2층인데, {name}. 우리 같이 가자. 부축해줄게.
+```
+
+### `day5_morning_true_ft_stall`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_캐릭터: `eunsu_gentle`_
+
+**박은수**
+```text
+잠깐만. 천천히. — 선생님 얘기 듣고 가자, 응?
 ```
 
 ### `day5_morning_true_post_ft_1`

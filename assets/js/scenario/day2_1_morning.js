@@ -333,6 +333,7 @@ Object.assign(SCENARIO[2], {
     "day2_broadcast_1": {
         character: null,
         sfx: "sfx_static.mp3",
+        unskippable: true,
         next: "day2_broadcast_2"
     },
     "day2_broadcast_2": {

@@ -159,6 +159,7 @@ Object.assign(SCENARIO[1], {
         character: null,
         night: true,
         sfx: "sfx_key_turn.mp3",
+        unskippable: true,
         next: "day1_night_key_2"
     },
     "day1_night_key_2": {

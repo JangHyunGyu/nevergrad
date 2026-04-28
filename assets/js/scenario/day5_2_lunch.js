@@ -522,6 +522,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_right_timeout": {
         character: null,
+        stopSfx: "sfx_scream.mp3",
         setFlags: ["caught_by_riin"],
         next: "day5_lunch_end"
     },
@@ -529,6 +530,7 @@ Object.assign(SCENARIO[5], {
     // ── 선택 1: 열쇠를 받는다 ──
     "day5_lunch_right_c1_1": {
         character: null,
+        stopSfx: "sfx_scream.mp3",
         next: "day5_lunch_seolhwa_1",
         setFlags: ["emergency_key"]
     },
@@ -536,6 +538,7 @@ Object.assign(SCENARIO[5], {
     // ── 선택 2: "같이 가요." ──
     "day5_lunch_right_c2_1": {
         character: null,
+        stopSfx: "sfx_scream.mp3",
         next: "day5_lunch_seolhwa_1",
         setFlags: ["emergency_key", "riin_companion"]
     },
@@ -543,6 +546,7 @@ Object.assign(SCENARIO[5], {
     // ── 선택 3: "...이것도 실험인 거 아니에요?" ──
     "day5_lunch_right_c3_1": {
         character: null,
+        stopSfx: "sfx_scream.mp3",
         next: "day5_lunch_right_c3_2"
     },
     // 리인이 자기 팔에 주사기를 꽂음

@@ -877,7 +877,7 @@
     },
     "day5_xover_preview_heroine": {
         "name": "",
-        "text": "*Record metadata:*\n*Target subject: {cupid_heroine}*\n*Subject compliance: {cupid_compliance}*\n\n*...Who did you choose, back then.*"
+        "text": "*[CUPID_ENV_PREVIEW]*\n*Emotional imprint model: {cupid_heroine}*\n*Compliance response rate: {cupid_compliance}*\n*Pre-dose environment response test matches M-13 stabilization index.*"
     },
     "day5_xover_preview_5": {
         "name": "",
@@ -925,7 +925,7 @@
     },
     "day5_observer_cupid_extra": {
         "name": "",
-        "text": "Additional record:\n\nThe observer also has a record of participating in a previous cycle environment simulation (PROJECT CUPID).\nCUPID compliance data: {cupid_compliance}\nTarget subject: {cupid_heroine}\n\nInterpretation:\nThe observer experienced the subject's \"ideal environment\" firsthand.\nThe heroine the observer chose in CUPID = the emotional pattern the institute intended to imprint on the subject.\nThe observer — enjoyed the experimental design."
+        "text": "Cross-reference record:\n\nCUPID_ENV_PREVIEW participation log detected.\nEmotional imprint model: {cupid_heroine}\nCompliance response rate: {cupid_compliance}\nPre-dose M-13 environment response test matches Nevergrad #13 observation log.\n\nNote:\nObserver selection data remains linked to Subject #13 record."
     },
     "day5_observer_9": {
         "name": "",

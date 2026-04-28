@@ -877,7 +877,7 @@
     },
     "day5_xover_preview_heroine": {
         "name": "",
-        "text": "*Metadonnees du dossier :*\n*Cible : {cupid_heroine}*\n*Conformité du sujet : {cupid_compliance}*\n\n*...Qui as-tu choisi, alors.*"
+        "text": "*[CUPID_ENV_PREVIEW]*\n*Modele d?empreinte emotionnelle : {cupid_heroine}*\n*Taux de reponse de conformite : {cupid_compliance}*\n*Le test de reponse environnementale pre-dose correspond a l?indice de stabilisation M-13.*"
     },
     "day5_xover_preview_5": {
         "name": "",
@@ -925,7 +925,7 @@
     },
     "day5_observer_cupid_extra": {
         "name": "",
-        "text": "Dossier supplémentaire :\n\nL'observateur a aussi un dossier de participation a une simulation d'environnement d'un cycle antérieur (PROJECT CUPID).\nDonnées de conformité dans CUPID : {cupid_compliance}\nCible : {cupid_heroine}\n\nInterprétation :\nL'observateur a vecu en personne l'\"environnement idéal\" du sujet.\nL'héroïne que l'observateur a choisie dans CUPID = le schema émotionnel que l'institut comptait imprimer sur le sujet.\nL'observateur a — apprécié le dispositif expérimental."
+        "text": "Enregistrement de reference croisee :\n\nJournal de participation CUPID_ENV_PREVIEW detecte.\nModele d?empreinte emotionnelle : {cupid_heroine}\nTaux de reponse de conformite : {cupid_compliance}\nLe test de reponse environnementale pre-M-13 correspond au journal d?observation Nevergrad #13.\n\nNote :\nLes donnees de selection de l?observateur restent liees au dossier du Sujet #13."
     },
     "day5_observer_9": {
         "name": "",

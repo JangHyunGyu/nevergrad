@@ -380,9 +380,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     // 최초 동기화는 game.init() 이후(아래)에서 수행
 
-    // AI 프리토킹 시스템 초기화
-    game.freeTalk = new FreeTalkSystem(game);
-
     // 갤러리 시스템 초기화
     game.gallery = new GallerySystem(game);
 

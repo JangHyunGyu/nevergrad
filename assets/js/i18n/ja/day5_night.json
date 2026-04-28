@@ -877,7 +877,7 @@
     },
     "day5_xover_preview_heroine": {
         "name": "",
-        "text": "*記録メタデータ:*\n*攻略対象: {cupid_heroine}*\n*被験体順応度: {cupid_compliance}*\n\n*...あの時、君は誰を選んだんだったか。*"
+        "text": "*[CUPID_ENV_PREVIEW]*\n*情動刻印モデル: {cupid_heroine}*\n*順応反応率: {cupid_compliance}*\n*投与前環境反応性検査とM-13安定化指標が一致。*"
     },
     "day5_xover_preview_5": {
         "name": "",
@@ -925,7 +925,7 @@
     },
     "day5_observer_cupid_extra": {
         "name": "",
-        "text": "追加記録：\n\nユーザーは以前の周期環境シミュレーション（PROJECT CUPID）にも参加した記録あり。\nCUPID内順応度データ：{cupid_compliance}\n攻略対象：{cupid_heroine}\n\n解釈：\nユーザーは被験者の「理想的環境」を直接体験した。\nCUPIDで選択したヒロイン＝研究所が被験者に注入しようとしていた感情パターン。\nユーザーの選択も記録として残っています。"
+        "text": "相互参照記録:\n\nCUPID_ENV_PREVIEW参加ログを検出。\n情動刻印モデル: {cupid_heroine}\n順応反応率: {cupid_compliance}\nM-13投与前環境反応性検査とNevergrad #13観察ログが一致。\n\n備考:\n観察者の選択データは被験者 #13の記録に継続して接続されている。"
     },
     "day5_observer_9": {
         "name": "",

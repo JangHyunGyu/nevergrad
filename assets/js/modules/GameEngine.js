@@ -170,10 +170,6 @@ class GameEngine {
         if (namePrompt) namePrompt.textContent = ui('namePrompt');
         if (nameInput) nameInput.placeholder = ui('namePlaceholder');
 
-        // FreeTalk 입력
-        const ftInput = document.getElementById('ft-input');
-        if (ftInput) ftInput.placeholder = ui('ftPlaceholder');
-
         // 갤러리 화면
         const galleryTitle = document.querySelector('.gallery-title');
         const galleryBack = document.getElementById('gallery-back');
@@ -698,13 +694,6 @@ class GameEngine {
                 this._startSceneInteraction(scene.interaction);
             }, typeOpts);
         }
-        // FreeTalk
-        else if (scene.type === "free_talk") {
-            typeFn(name, text, () => {
-                stopAutoOnChoices();
-                this._startFreeTalk(scene);
-            }, typeOpts);
-        }
         // 일반 대사
         else {
             typeFn(name, text, scene.autoAdvance ? () => this._queueAutoAdvance(scene) : null, typeOpts);
@@ -1030,7 +1019,7 @@ class GameEngine {
 
     _shouldAutoAdvanceSilentScene(scene, text) {
         if (text) return false;
-        if (scene.choices || scene.interaction || scene.type === 'free_talk') return false;
+        if (scene.choices || scene.interaction) return false;
         if (scene.endingTitle || scene.cageLoop) return false;
         return Boolean(
             scene.autoAdvance ||
@@ -2630,68 +2619,6 @@ class GameEngine {
         }
 
         container.scrollTop = container.scrollHeight;
-    }
-
-    // ===== FreeTalk =====
-
-    _startFreeTalk(scene) {
-        if (!this.freeTalk) {
-            console.warn('[GameEngine] FreeTalkSystem not registered');
-            return;
-        }
-
-        const mode = scene.freeTalkMode || 'interrogation';
-        const charId = scene.freeTalkChar;
-        const nextScene = scene.freeTalkNext || scene.next;
-        this.freeTalk.skipDisabled = !!scene.unskippable || !!scene.freeTalkUnskippable;
-
-        if (mode === 'interrogation') {
-            const context = scene.freeTalkContext || '';
-            this.freeTalk.startInterrogation(charId, context, nextScene);
-        } else if (mode === 'messenger') {
-            this.freeTalk.startMessenger(charId);
-            // messenger 모드는 자동으로 다음 씬 진행 안 함 — freeTalkNext로 수동 설정
-            if (nextScene) {
-                this.freeTalk.nextSceneId = nextScene;
-            }
-        } else if (mode === 'messenger_preemptive') {
-            const preMsg = scene.freeTalkPreemptive || '';
-            this.freeTalk.startPreemptiveMessenger(charId, preMsg, nextScene);
-        } else if (mode === 'nightmare') {
-            this._startNightmareSequence(nextScene);
-        } else if (mode === 'ai_chat') {
-            this.freeTalk.startAIChat(scene);
-        }
-    }
-
-    /**
-     * 악몽 시퀀스를 생성하고 순차적으로 표시합니다.
-     * @param {string} nextScene - 악몽 종료 후 이동할 씬 ID
-     */
-    async _startNightmareSequence(nextScene) {
-        if (!this.freeTalk) return;
-
-        const lines = await this.freeTalk.generateNightmare();
-
-        // 악몽 문장을 순차적으로 표시
-        for (let i = 0; i < lines.length; i++) {
-            await new Promise(resolve => {
-                const line = lines[i];
-                // 이탤릭 마크다운 제거 후 나레이션으로 표시
-                const cleanLine = line.replace(/^\*/, '').replace(/\*$/, '');
-                this.dialogue.type('', `*${cleanLine}*`, () => {
-                    setTimeout(resolve, 800);
-                }, { typingSpeed: 50, unskippable: true });
-            });
-        }
-
-        // 악몽 종료 후 다음 씬으로
-        if (nextScene) {
-            setTimeout(() => {
-                this.freeTalk.cleanup();
-                this._loadScene(nextScene);
-            }, 1500);
-        }
     }
 
     // ===== CAGE END — 무한 루프 새장 =====

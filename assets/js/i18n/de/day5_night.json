@@ -877,7 +877,7 @@
     },
     "day5_xover_preview_heroine": {
         "name": "",
-        "text": "*Datensatz-Metadaten:*\n*Zielperson: {cupid_heroine}*\n*Probandenkonformitat: {cupid_compliance}*\n\n*...Wen hast du damals gewahlt.*"
+        "text": "*[CUPID_ENV_PREVIEW]*\n*Emotionales Praegungsmodell: {cupid_heroine}*\n*Konformitaetsreaktionsrate: {cupid_compliance}*\n*Umweltreaktionstest vor Dosierung stimmt mit M-13-Stabilisierungsindex ueberein.*"
     },
     "day5_xover_preview_5": {
         "name": "",
@@ -925,7 +925,7 @@
     },
     "day5_observer_cupid_extra": {
         "name": "",
-        "text": "Zusatzeintrag:\n\nDer Beobachter hat zudem an einer Umgebungssimulation eines vorherigen Zyklus (PROJECT CUPID) teilgenommen.\nKonformitätsdaten in CUPID: {cupid_compliance}\nZielperson: {cupid_heroine}\n\nInterpretation:\nDer Beobachter hat die \"ideale Umgebung\" des Probanden selbst erlebt.\nDie Heldin, die der Beobachter in CUPID wählte = das emotionale Muster, das das Institut dem Probanden einprägen wollte.\nDer Beobachter hat das Versuchsdesign — genossen."
+        "text": "Querverweisprotokoll:\n\nCUPID_ENV_PREVIEW-Teilnahmeprotokoll erkannt.\nEmotionales Praegungsmodell: {cupid_heroine}\nKonformitaetsreaktionsrate: {cupid_compliance}\nM-13-Umweltreaktionstest vor Dosierung stimmt mit Nevergrad-#13-Beobachtungsprotokoll ueberein.\n\nHinweis:\nAuswahldaten des Beobachters bleiben mit dem Datensatz von Proband #13 verknuepft."
     },
     "day5_observer_9": {
         "name": "",

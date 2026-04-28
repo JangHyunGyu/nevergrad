@@ -877,7 +877,7 @@
     },
     "day5_xover_preview_heroine": {
         "name": "",
-        "text": "*Registre metadados:**Alvo: {cupid_heroine}**Conformidade do assunto: {cupid_compliance}**...Quem você escolheu naquela época?*"
+        "text": "*[CUPID_ENV_PREVIEW]*\n*Modelo de impressao emocional: {cupid_heroine}*\n*Taxa de resposta de conformidade: {cupid_compliance}*\n*O teste de resposta ambiental pre-dose corresponde ao indice de estabilizacao M-13.*"
     },
     "day5_xover_preview_5": {
         "name": "",
@@ -925,7 +925,7 @@
     },
     "day5_observer_cupid_extra": {
         "name": "",
-        "text": "Registros adicionais:\n\nO usuário também possui registro de participação em simulação de ambiente de ciclo anterior (PROJETO CUPID).\nDados de adesão no CUPID: {cupid_compliance}\nAlvo: {cupid_heroine}\n\nInterpretação:\nO usuário experimentou diretamente o \"ambiente ideal\" do sujeito.\nHeroína selecionada pelo CUPID = Padrão emocional que o laboratório estava tentando incutir na cobaia.\nAs escolhas do usuário também são registradas."
+        "text": "Registro de referencia cruzada:\n\nLog de participacao em CUPID_ENV_PREVIEW detectado.\nModelo de impressao emocional: {cupid_heroine}\nTaxa de resposta de conformidade: {cupid_compliance}\nO teste de resposta ambiental pre-M-13 corresponde ao log de observacao Nevergrad #13.\n\nNota:\nOs dados de escolha do observador permanecem vinculados ao registro do Sujeito #13."
     },
     "day5_observer_9": {
         "name": "",

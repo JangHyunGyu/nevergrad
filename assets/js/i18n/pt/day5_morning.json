@@ -420,8 +420,29 @@
         "text": "{name}… Você pode explicar o que está fazendo aqui?"
     },
     "day5_morning_true_ft": {
-        "name": "",
-        "text": ""
+        "name": "Eu",
+        "text": "*O sorriso dela é natural demais. Do meu lado, Yuna aperta a câmera com força. Como devo responder.*",
+        "choices": [
+            "Sai da frente, professora. Sei tudo que vimos lá embaixo.",
+            "...Me perdi. Desculpa, vou sair agora mesmo.",
+            "A Yuna ficou tonta de repente. Tô levando ela pra enfermaria."
+        ]
+    },
+    "day5_morning_true_ft_confront": {
+        "name": "Park Eunsu",
+        "text": "...{name}, isso que você diz dá medo. Vamos sentar com a professora e conversar com calma? Abaixa a câmera um instante."
+    },
+    "day5_morning_true_ft_lost": {
+        "name": "Park Eunsu",
+        "text": "Tudo bem. Você se machucou? — Deixa a professora te acompanhar. Vem devagar."
+    },
+    "day5_morning_true_ft_yuna": {
+        "name": "Park Eunsu",
+        "text": "...Entendi. Mas a enfermaria fica no segundo andar do prédio principal, {name}. Vamos juntos. Eu te ajudo a apoiar ela."
+    },
+    "day5_morning_true_ft_stall": {
+        "name": "Park Eunsu",
+        "text": "Espera. Devagar. — Escuta a professora antes de ir, tá?"
     },
     "day5_morning_true_post_ft_1": {
         "name": "Eu",

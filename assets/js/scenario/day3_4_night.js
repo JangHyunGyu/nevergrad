@@ -327,7 +327,13 @@ Object.assign(SCENARIO[3], {
         fallback: "day3_night_seolhwa",
         background: "corridor_dark",
         character: null,
-        glitch: { heavyGlitch: true },
+        glitch: {
+            heavyGlitch: true,
+            memoryFlash: {
+                image: "assets/images/crossover/cupid_school_gate.png",
+                duration: 1000
+            }
+        },
         unskippable: true,
         next: "day3_xover_glitch_2"
     },

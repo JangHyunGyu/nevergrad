@@ -73,7 +73,14 @@ Object.assign(SCENARIO[4], {
     },
     "day4_xover_yuna_10": {
         character: null,
-        glitch: { noise: true, noiseDuration: 200 },
+        glitch: {
+            noise: true,
+            noiseDuration: 200,
+            memoryFlash: {
+                image: "assets/images/crossover/cupid_heroine_memory.png",
+                duration: 1000
+            }
+        },
         unskippable: true,
         setFlags: ["xover_yuna_d4"],
         next: "day4_after_choice"
@@ -338,8 +345,7 @@ Object.assign(SCENARIO[4], {
     },
 
     // ═══════════════════════════════════════
-    // ★ 세아 심문 (FreeTalk 감정적 조종)
-    // 12번의 고백 후, 세아가 마지막으로 붙잡으며 자유 입력
+    // ★ 세아 심문 (12번의 고백 후 마지막으로 붙잡힘 — 선택지 분기)
     // ═══════════════════════════════════════
     "day4_after_ft_sea_pre": {
         character: "sea_cry",
@@ -348,20 +354,36 @@ Object.assign(SCENARIO[4], {
     },
     "day4_after_ft_sea": {
         character: "sea_cry",
-        type: "free_talk",
-        freeTalkMode: "interrogation",
-        freeTalkChar: "sea",
-        freeTalkContext: {
-            ko: "12\ubc88\uc758 \ubc18\ubcf5 \uace0\ubc31 \ud6c4, \uc8fc\uc778\uacf5\uc774 \ub5a0\ub098\ub824 \ud55c\ub2e4",
-            en: "After twelve repeated confessions, the protagonist is trying to leave.",
-            ja: "12\u56de\u306e\u7e70\u308a\u8fd4\u3057\u306e\u544a\u767d\u306e\u5f8c\u3001\u4e3b\u4eba\u516c\u306f\u53bb\u308d\u3046\u3068\u3057\u3066\u3044\u308b\u3002",
-            es: "Tras doce confesiones repetidas, el protagonista intenta irse.",
-            fr: "Apres douze confessions repetees, le protagoniste tente de partir.",
-            de: "Nach zwolf wiederholten Gestandnissen versucht der Protagonist zu gehen.",
-            pt: "Depois de doze confissoes repetidas, o protagonista tenta ir embora."
-        },
         unskippable: true,
-        freeTalkNext: "day4_after_ft_sea_post"
+        next: "day4_after_ft_sea_choice"
+    },
+    "day4_after_ft_sea_choice": {
+        character: "sea_cry",
+        choices: [
+            { next: "day4_after_ft_sea_apologize", stats: { sea: { affinity: 5 } } },
+            { next: "day4_after_ft_sea_ask", stats: { sea: { affinity: 8 } } },
+            { next: "day4_after_ft_sea_promise", stats: { sea: { affinity: 10 } }, setFlags: ["sea_13th_promise"] }
+        ]
+    },
+    "day4_after_ft_sea_apologize": {
+        character: "sea_cry",
+        unskippable: true,
+        next: "day4_after_ft_sea_quiet"
+    },
+    "day4_after_ft_sea_ask": {
+        character: "sea_cry",
+        unskippable: true,
+        next: "day4_after_ft_sea_quiet"
+    },
+    "day4_after_ft_sea_promise": {
+        character: "sea_cry",
+        unskippable: true,
+        next: "day4_after_ft_sea_quiet"
+    },
+    "day4_after_ft_sea_quiet": {
+        character: "sea_sad",
+        unskippable: true,
+        next: "day4_after_ft_sea_post"
     },
     "day4_after_ft_sea_post": {
         character: "sea_sad",

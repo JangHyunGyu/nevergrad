@@ -237,7 +237,7 @@ Object.assign(SCENARIO[5], {
     //    (탈출 성공 루트가 여기로 합류)
     // ══════════════════════════════════════
     "day5_after_confront_1": {
-        background: "exit_door",
+        background: "emergency_stair_night",
         character: null,
         sfx: "sfx_footsteps.mp3",
         unskippable: true,

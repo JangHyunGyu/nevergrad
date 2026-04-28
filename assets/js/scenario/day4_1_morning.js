@@ -122,6 +122,7 @@ Object.assign(SCENARIO[4], {
     // ── 현관문 앞 그림자 ──
     // 문 아래 틈으로 그림자
     "day4_morning_start_17": {
+        background: "apartment_entry_morning",
         character: null,
         next: "day4_morning_start_18"
     },

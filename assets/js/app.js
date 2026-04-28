@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 타이틀 스테이지 (배경 + 3 캐릭터) — data-src를 파일 존재 확인 후 주입
     // 미생성 에셋(sea_stare.png)은 skip
-    document.querySelectorAll('#title-stage img[data-src]').forEach(el => {
+    document.querySelectorAll('#title-stage img[data-src]:not(.title-stage-bg)').forEach(el => {
         const src = el.dataset.src;
         if (!src) return;
         loadNevergradImage(src)

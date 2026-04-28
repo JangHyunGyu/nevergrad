@@ -20,7 +20,7 @@ Object.assign(SCENARIO[5], {
     // 추격전 - 교실 탈출, 복도, PA 방송
     // ══════════════════════════════════════
     "day5_lunch_chase_1": {
-        background: "corridor",
+        background: "locked_corridor_junction",
         bgm: "chase.mp3",
         sfx: "sfx_footsteps_running.mp3",
         character: null,
@@ -98,7 +98,7 @@ Object.assign(SCENARIO[5], {
     // 왼쪽: 세아 — "12번 동안 보내줬어"
     // ══════════════════════════════════════
     "day5_lunch_left_1": {
-        background: "corridor_main",
+        background: "locked_corridor_junction",
         character: "sea_cry",
         unskippable: true,
         next: "day5_lunch_left_2"
@@ -949,6 +949,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_seolhwa_guide_8"
     },
     "day5_lunch_seolhwa_guide_8": {
+        background: "hidden_service_passage",
         character: null,
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_9"

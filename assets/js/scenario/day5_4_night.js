@@ -172,7 +172,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_5"
     },
     "day5_ending_true_5": {
-        background: "exit_door",
+        background: "emergency_stair_night",
         character: null,
         unskippable: true,
         next: "day5_ending_true_6"

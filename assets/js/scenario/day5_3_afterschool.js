@@ -395,6 +395,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_4"
     },
     "day5_after_true_4": {
+        background: "emergency_stair_night",
         character: null,
         // 발소리 더 가까이 — 빠르고 강한 스윕
         glitch: { chaseFootsteps: { fromPan: -0.8, toPan: 0.8, steps: 14, interval: 0.14 } },

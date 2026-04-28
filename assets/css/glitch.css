@@ -50,6 +50,59 @@
     100% { transform: translate(1px, 2px); }
 }
 
+/* Cupid memory frame */
+.memory-flash-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 54;
+    pointer-events: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    filter: saturate(1.2) contrast(1.06);
+    transform: scale(1.015);
+    transition: opacity 90ms linear, transform 1000ms ease-out, filter 1000ms ease-out;
+}
+
+.memory-flash-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.06) 50%, rgba(0, 0, 0, 0.08) 50%),
+        radial-gradient(circle at 50% 45%, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+    background-size: 100% 4px, 100% 100%;
+    mix-blend-mode: overlay;
+}
+
+.memory-flash-overlay.visible {
+    opacity: 0.92;
+    transform: scale(1);
+    filter: saturate(1.05) contrast(1.18);
+    animation: memory-flash-jitter 90ms steps(2, end) infinite;
+}
+
+.memory-flash-overlay.leaving {
+    opacity: 0;
+}
+
+.memory-flash-caption {
+    position: absolute;
+    right: clamp(16px, 4vw, 48px);
+    bottom: clamp(170px, 24vh, 240px);
+    color: rgba(255, 240, 245, 0.75);
+    font: 700 0.78rem/1.2 var(--font-main);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+}
+
+@keyframes memory-flash-jitter {
+    0% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(-1px, 1px) scale(1.002); }
+    50% { transform: translate(1px, -1px) scale(1); }
+    75% { transform: translate(-1px, -1px) scale(1.001); }
+    100% { transform: translate(1px, 1px) scale(1); }
+}
+
 /* Screen Shake */
 .screen-shake {
     animation: shake 0.1s infinite;

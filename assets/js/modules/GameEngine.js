@@ -1706,6 +1706,20 @@ class GameEngine {
         }
     }
 
+    _normalizeMemoryFlash(flash) {
+        const config = typeof flash === 'string' ? { image: flash } : { ...(flash || {}) };
+        const resolveImage = (value) => CONFIG.BACKGROUNDS?.[value] || value;
+
+        if (config.background && !config.image) {
+            config.image = resolveImage(config.background);
+        } else if (config.image) {
+            config.image = resolveImage(config.image);
+        }
+
+        if (!config.duration) config.duration = 1000;
+        return config;
+    }
+
     _handleNamedGlitch(name) {
         this.state.setFlag?.(`glitch_${name}`);
 

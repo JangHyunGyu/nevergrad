@@ -331,13 +331,13 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_19"
     },
     "day5_after_confront_19": {
-        character: "seolhwa_fading",
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_after_confront_20"
     },
     "day5_after_confront_20": {
         glitch: { borderPulse: true },
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day5_after_final_choice"
     },

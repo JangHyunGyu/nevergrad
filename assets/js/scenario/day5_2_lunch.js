@@ -256,6 +256,7 @@ Object.assign(SCENARIO[5], {
     // 8초 타이머: 3 choices (타임아웃 = 세아에게 붙잡힘)
     "day5_lunch_left_choice": {
         character: null,
+        stopSfx: "sfx_stairs_approaching.mp3",
         sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.85, trimStart: 0.05, trimEnd: 0.1 },
         timedChoice: 8000,
         unskippable: true,

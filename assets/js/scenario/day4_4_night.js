@@ -491,6 +491,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_mirror_hit1_15": {
         unskippable: true,
         character: "seolhwa_sad",
+        stopSfx: "sfx_whisper_seolhwa.mp3",
         next: "day4_night_mirror_hit2"
     },
 

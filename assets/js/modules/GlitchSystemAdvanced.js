@@ -143,7 +143,7 @@ class GlitchSystemAdvanced {
             counter.textContent = `${index + 1} / ${photos.length}`;
             face.classList.toggle('photo-deck-face-image', !!photo.image);
             face.style.backgroundImage = photo.image
-                ? `url('${new URL(photo.image, document.baseURI).href}')`
+                ? `url('${this._assetUrl(photo.image)}')`
                 : '';
 
             strip.innerHTML = '';
@@ -246,7 +246,7 @@ class GlitchSystemAdvanced {
 
         const proof = document.createElement('div');
         proof.className = 'locker-search-proof';
-        proof.style.backgroundImage = `url('${new URL(CONFIG.EVIDENCE_IMAGES?.locker_camera || 'assets/images/evidence/locker_hidden_camera.png', document.baseURI).href}')`;
+        proof.style.backgroundImage = `url('${this._assetUrl(CONFIG.EVIDENCE_IMAGES?.locker_camera || 'assets/images/evidence/locker_hidden_camera.png')}')`;
         stage.appendChild(proof);
 
         const status = document.createElement('div');
@@ -318,6 +318,19 @@ class GlitchSystemAdvanced {
 
     _getLang() {
         return this._lang();
+    }
+
+    _assetPath(src) {
+        if (!src) return '';
+        const normalized = String(src).replace(/^\.\//, '');
+        if (/^(?:https?:|data:|blob:|\/)/.test(normalized) || normalized.startsWith('../')) {
+            return normalized;
+        }
+        return (window.__NEVERGRAD_LANG__ ? '../' : '') + normalized;
+    }
+
+    _assetUrl(src) {
+        return new URL(this._assetPath(src), document.baseURI).href;
     }
 
     _getInteractionCopy(lang) {
@@ -681,7 +694,7 @@ class GlitchSystemAdvanced {
             tag: copy.currentTag,
             note: copy.currentNote,
             current: true,
-            image: CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png'
+            image: CONFIG.EVIDENCE_IMAGES?.player_photo || CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png'
         });
         return {
             title: deck === 'yuna_13' ? copy.titleYuna : copy.titleDefault,
@@ -733,6 +746,13 @@ class GlitchSystemAdvanced {
                 </div>
             `;
             gameScreen.appendChild(mirror);
+        }
+
+        const face = mirror.querySelector('.mirror-player-face');
+        const playerMirror = CONFIG.EVIDENCE_IMAGES?.player_mirror;
+        if (face && playerMirror) {
+            face.classList.add('mirror-player-face-image');
+            face.style.backgroundImage = `url('${this._assetUrl(playerMirror)}')`;
         }
 
         mirror.classList.remove(
@@ -2556,7 +2576,7 @@ class GlitchSystemAdvanced {
 
     /**
      * 거울 2타: 13장의 증명사진을 빠르게 오버레이
-     * @param {string[]} faceNames - 13명의 이름 배열
+     * @param {Array<string|{label: string, image?: string}>} faceNames - 13명의 이름/이미지 배열
      * @param {string} playerName - 현재 플레이어 이름 (13번째)
      * @param {string} finalText - 최종 표시 텍스트
      * @returns {Promise<void>}
@@ -2567,17 +2587,32 @@ class GlitchSystemAdvanced {
         document.body.appendChild(overlay);
 
         // 기본 이름 목록 (이미지가 없으면 텍스트로 대체)
-        const names = faceNames || this._defaultSubjectFaceNames(playerName);
+        const entries = (faceNames || this._defaultSubjectFaceNames(playerName)).map(entry => {
+            if (entry && typeof entry === 'object') return entry;
+            return { label: entry };
+        });
 
         // 진동 동기화 (모바일)
         const deviceGimmick = this.engine?.deviceGimmick;
 
-        for (let i = 0; i < names.length; i++) {
-            // 이름 텍스트 오버레이
+        for (let i = 0; i < entries.length; i++) {
+            const entry = entries[i];
+            const frame = document.createElement('div');
+            frame.className = 'mirror-face-card';
+
+            if (entry.image) {
+                const img = document.createElement('img');
+                img.className = 'mirror-face-img';
+                img.alt = '';
+                img.src = this._assetUrl(entry.image);
+                frame.appendChild(img);
+            }
+
             const nameEl = document.createElement('div');
             nameEl.className = 'mirror-face-name';
-            nameEl.textContent = names[i];
-            overlay.appendChild(nameEl);
+            nameEl.textContent = entry.label || '';
+            frame.appendChild(nameEl);
+            overlay.appendChild(frame);
 
             // 진동 (0.4초 간격)
             if (deviceGimmick) {
@@ -2585,7 +2620,7 @@ class GlitchSystemAdvanced {
             }
 
             await this._sleep(400);
-            nameEl.remove();
+            frame.remove();
         }
 
         // 최종 텍스트
@@ -2960,11 +2995,14 @@ class GlitchSystemAdvanced {
     async showPhotoOverlay(opts = {}) {
         const sequence = opts.photoSequence || [];
         const playerName = this.engine?.state?.playerName || '';
-        const names = sequence.map(p => {
+        const entries = sequence.map(p => {
             const display = (p.name === '{name}')
                 ? playerName
                 : this._localizedSubjectName(p.slot, p.name);
-            return `#${String(p.slot).padStart(2, '0')}  ${display}`;
+            return {
+                label: `#${String(p.slot).padStart(2, '0')}  ${display}`,
+                image: CONFIG.SUBJECT_FACE_IMAGES?.[p.slot] || null
+            };
         });
         const overlayTextRaw = this._pickLocalized(
             (opts.overlayText && typeof opts.overlayText === 'object')
@@ -2980,7 +3018,7 @@ class GlitchSystemAdvanced {
                 }
         );
         const overlayText = overlayTextRaw.replace('{name}', playerName);
-        await this.showMirror13Faces(names, playerName, overlayText);
+        await this.showMirror13Faces(entries, playerName, overlayText);
     }
 
     hidePhotoOverlay() {
@@ -3019,6 +3057,11 @@ class GlitchSystemAdvanced {
             <span class="mirror-reflection-self-nose"></span>
             <span class="mirror-reflection-self-mouth"></span>
         `;
+        const playerMirror = CONFIG.EVIDENCE_IMAGES?.player_mirror;
+        if (playerMirror) {
+            self.classList.add('mirror-reflection-self-image');
+            self.style.backgroundImage = `url('${this._assetUrl(playerMirror)}')`;
+        }
         inner.appendChild(self);
 
         // 현재 캐릭터 레이어 복제 (transform scaleX(-1)로 거울상)

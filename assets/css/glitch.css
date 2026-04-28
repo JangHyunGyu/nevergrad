@@ -1334,6 +1334,18 @@ body.cursor-slowed * {
     transition: opacity 420ms ease, filter 420ms ease, clip-path 420ms ease;
 }
 
+.mirror-player-face-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.mirror-player-face-image .mirror-player-hair,
+.mirror-player-face-image .mirror-player-eye,
+.mirror-player-face-image .mirror-player-nose,
+.mirror-player-face-image .mirror-player-mouth {
+    display: none;
+}
+
 .mirror-player-hair,
 .mirror-player-eye,
 .mirror-player-nose,
@@ -1423,14 +1435,22 @@ body.cursor-slowed * {
     pointer-events: none;
 }
 
-.mirror-face-img {
+.mirror-face-card {
     position: absolute;
-    width: 200px;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 4px;
+    width: clamp(160px, 22vw, 240px);
+    aspect-ratio: 0.72;
     opacity: 0;
     animation: face-flash-in 0.4s ease forwards;
+}
+
+.mirror-face-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid rgba(225, 232, 240, 0.28);
+    box-shadow: 0 0 32px rgba(255, 255, 255, 0.12);
+    filter: saturate(0.35) contrast(1.15);
 }
 
 @keyframes face-flash-in {
@@ -1449,6 +1469,13 @@ body.cursor-slowed * {
     font-family: 'Courier New', monospace;
     letter-spacing: 2px;
     animation: face-name-flicker 0.4s ease;
+}
+
+.mirror-face-card .mirror-face-name {
+    bottom: -34px;
+    color: rgba(255, 255, 255, 0.68);
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 @keyframes face-name-flicker {
@@ -1629,6 +1656,18 @@ body.cursor-slowed * {
     box-shadow: inset 0 -18px 28px rgba(26, 20, 26, 0.34);
     opacity: 0.64;
     filter: saturate(0.18) contrast(1.22) blur(0.8px);
+}
+
+.mirror-reflection-self-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.mirror-reflection-self-image .mirror-reflection-self-hair,
+.mirror-reflection-self-image .mirror-reflection-self-eye,
+.mirror-reflection-self-image .mirror-reflection-self-nose,
+.mirror-reflection-self-image .mirror-reflection-self-mouth {
+    display: none;
 }
 
 .mirror-reflection-self-hair,

@@ -71,9 +71,9 @@ const CONFIG = {
             obsessed: "assets/images/characters/eunsu_obsessed.png",
             writing: "assets/images/characters/eunsu_normal.png",    // alias: 서류 작성 중
             pa: "assets/images/characters/eunsu_normal.png",         // alias: PA 방송 (음성만)
-            shaking: "assets/images/characters/eunsu_obsessed.png",  // alias: 떨리는 상태
+            shaking: "assets/images/characters/eunsu_shaking.png",   // 떨리는 상태
             shocked: "assets/images/characters/eunsu_cold.png",      // alias: 충격받은 상태
-            crying: "assets/images/characters/eunsu_shy.png"         // alias: 울먹이는 상태
+            crying: "assets/images/characters/eunsu_crying.png"      // 울먹이는 상태
         },
         riin: {
             normal: "assets/images/characters/riin_normal.png",
@@ -86,8 +86,8 @@ const CONFIG = {
             dark: "assets/images/characters/riin_dark.png",
             neutral: "assets/images/characters/riin_neutral.png",
             casual: "assets/images/characters/riin_normal.png",      // alias: 평상시
-            pain: "assets/images/characters/riin_cold.png",          // alias: 고통/죄책감
-            relief: "assets/images/characters/riin_smile.png"        // alias: 안도
+            pain: "assets/images/characters/riin_pain.png",          // 고통/죄책감
+            relief: "assets/images/characters/riin_relief.png"       // 안도
         },
         sea: {
             normal: "assets/images/characters/sea_normal.png",

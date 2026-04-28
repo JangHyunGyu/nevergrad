@@ -37,43 +37,52 @@ Object.assign(SCENARIO[3], {
     "day3_night_sea_msg": {
         character: null,
         sfx: "sfx_notification.mp3",
+        unskippable: true,
         next: "day3_night_sea_msg_2"
     },
     "day3_night_sea_msg_2": {
         character: null,
         messengerDelay: 1200,
+        unskippable: true,
         next: "day3_night_sea_msg_3"
     },
     "day3_night_sea_msg_3": {
         character: null,
         messengerDelay: 800,
+        unskippable: true,
         next: "day3_night_sea_msg_4"
     },
     "day3_night_sea_msg_4": {
         character: null,
         messengerDelay: 600,
+        unskippable: true,
         next: "day3_night_sea_msg_5"
     },
     "day3_night_sea_msg_5": {
         character: null,
         messengerDelay: 500,
+        unskippable: true,
         next: "day3_night_sea_msg_6"
     },
     "day3_night_sea_msg_6": {
         character: null,
         messengerDelay: 400,
+        unskippable: true,
         next: "day3_night_sea_msg_7"
     },
     "day3_night_sea_msg_7": {
         character: null,
+        unskippable: true,
         next: "day3_night_sea_msg_8"
     },
     "day3_night_sea_msg_8": {
         character: null,
+        unskippable: true,
         next: "day3_night_sea_msg_9"
     },
     "day3_night_sea_msg_9": {
         character: null,
+        unskippable: true,
         next: "day3_night_sea_msg_10"
     },
     "day3_night_sea_msg_10": {
@@ -344,26 +353,32 @@ Object.assign(SCENARIO[3], {
         sfx: "sfx_whisper.mp3",
         character: "seolhwa_fading",
         glitch: { noise: true, noiseDuration: 300, temperatureDrop: true },
+        unskippable: true,
         next: "day3_night_seolhwa_2"
     },
     "day3_night_seolhwa_2": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day3_night_seolhwa_3"
     },
     "day3_night_seolhwa_3": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day3_night_seolhwa_4"
     },
     "day3_night_seolhwa_4": {
         character: null,
+        unskippable: true,
         next: "day3_night_seolhwa_4a"
     },
     "day3_night_seolhwa_4a": {
         character: null,
+        unskippable: true,
         next: "day3_night_seolhwa_4b"
     },
     "day3_night_seolhwa_4b": {
         character: null,
+        unskippable: true,
         next: "day3_night_seolhwa_5"
     },
     // "...5일이야."
@@ -378,10 +393,12 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seolhwa_6": {
         character: "seolhwa_sad",
+        unskippable: true,
         next: "day3_night_seolhwa_6a"
     },
     "day3_night_seolhwa_6a": {
         character: "seolhwa_sad",
+        unskippable: true,
         next: "day3_night_seolhwa_7"
     },
     // "5일 안에... 여기서 나가야 해."
@@ -394,6 +411,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seolhwa_7a": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day3_night_seolhwa_8"
     },
     // "나처럼 되기 전에."
@@ -406,18 +424,22 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seolhwa_9": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day3_night_seolhwa_10"
     },
     "day3_night_seolhwa_10": {
         character: "seolhwa_normal",
+        unskippable: true,
         next: "day3_night_seolhwa_11"
     },
     "day3_night_seolhwa_11": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day3_night_seolhwa_11a"
     },
     "day3_night_seolhwa_11a": {
         character: "seolhwa_fading",
+        unskippable: true,
         next: "day3_night_seolhwa_12"
     },
     // "...기억해. 왼손."
@@ -438,26 +460,32 @@ Object.assign(SCENARIO[3], {
     "day3_night_seolhwa_13": {
         character: null,
         glitch: { heavyGlitch: true },
+        unskippable: true,
         next: "day3_night_seolhwa_14"
     },
     "day3_night_seolhwa_14": {
         character: null,
+        unskippable: true,
         next: "day3_night_seolhwa_15"
     },
     "day3_night_seolhwa_15": {
         character: null,
+        unskippable: true,
         next: "day3_night_seolhwa_16"
     },
     "day3_night_seolhwa_16": {
         character: null,
+        unskippable: true,
         next: "day3_night_seolhwa_17"
     },
     "day3_night_seolhwa_17": {
         character: null,
+        unskippable: true,
         next: "day3_night_seolhwa_18"
     },
     "day3_night_seolhwa_18": {
         character: null,
+        unskippable: true,
         next: "day3_night_choice"
     },
 

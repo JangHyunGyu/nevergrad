@@ -739,7 +739,8 @@ class AudioManager {
     async playSFXPanned(filename, pan = -1) {
         if (!this.ctx) return;
 
-        const path = `assets/audio/sfx/${filename}`;
+        const resolvedFilename = /\.[^.]+$/.test(filename) ? filename : `${filename}.mp3`;
+        const path = `assets/audio/sfx/${resolvedFilename}`;
         const buffer = await this.loadBuffer(path);
         if (!buffer) return;
 
@@ -755,6 +756,16 @@ class AudioManager {
         source.connect(gain);
         gain.connect(panner);
         panner.connect(this.masterGain);
+
+        const entry = { source, gain, filename: resolvedFilename };
+        this._activeSFX.add(entry);
+        source.onended = () => {
+            this._activeSFX.delete(entry);
+            try { source.disconnect(); } catch {}
+            try { gain.disconnect(); } catch {}
+            try { panner.disconnect(); } catch {}
+        };
+
         source.start(0);
     }
 

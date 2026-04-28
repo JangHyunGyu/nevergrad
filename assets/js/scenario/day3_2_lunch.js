@@ -235,6 +235,7 @@ Object.assign(SCENARIO[3], {
     // ── 잠긴 문 ──
     "day3_lunch_door_1": {
         character: null,
+        stopSfx: "sfx_wind.mp3",
         sfx: "sfx_door_slam.mp3",
         glitch: { noise: true, noiseDuration: 300 },
         unskippable: true,

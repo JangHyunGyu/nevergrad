@@ -222,9 +222,9 @@ class DialogueSystem {
             if (this.textEl) {
                 this.textEl.classList.remove('messenger-typing');
             }
-            this._unskippable = false;
             this.type(name, text, onComplete, {
-                typingSpeed: options.typingSpeed || CONFIG.TYPING_SPEED
+                typingSpeed: options.typingSpeed || CONFIG.TYPING_SPEED,
+                unskippable: !!options.unskippable
             });
         }, delay);
     }

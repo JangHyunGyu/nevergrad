@@ -508,16 +508,19 @@ Object.assign(SCENARIO[4], {
     // '소속되어 있다는 건 — 누군가가 너를 돌봐주고 있다는 뜻이야'
     "day4_morning_class_5": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day4_morning_class_6"
     },
     // '이 학교를 떠나려는 건... 쉬운 일이 아니야'
     "day4_morning_class_6": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day4_morning_class_7"
     },
     // 선생님의 시선이 나에게 고정, 한 발짝 다가옴
     "day4_morning_class_7": {
         character: "eunsu_gentle",
+        unskippable: true,
         next: "day4_morning_class_8"
     },
     // '떠나려고 한 사람은... 대부분 후회하더라'

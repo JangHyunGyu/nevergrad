@@ -1012,6 +1012,7 @@ Object.assign(SCENARIO[5], {
         glitch: { screenShake: true },
         vibrate: "heartbeat",
         timedChoice: 20000,
+        unskippable: true,
         choices: [
             { next: "day5_lunch_final_true", setFlags: ["chose_remember"], stats: { eunsu: { affinity: -8 }, yuna: { affinity: 10 }, seolhwa: { affinity: 8 } } },
             { next: "day5_lunch_final_forget", setFlags: ["chose_forget"], stats: { eunsu: { affinity: 8 } } },

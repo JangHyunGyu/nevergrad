@@ -16,6 +16,7 @@ Object.assign(SCENARIO[5], {
         bgm: "heartbeat_loop.mp3",
         character: null,
         glitchLevel: 4,
+        unskippable: true,
         next: "day5_morning_plan_branch"
     },
     "day5_morning_plan_branch": {

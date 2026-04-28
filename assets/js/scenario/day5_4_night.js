@@ -1060,6 +1060,7 @@ Object.assign(SCENARIO[5], {
         bgm: "ending_ghost.mp3",
         sfx: "sfx_whisper.mp3",
         character: null,
+        unskippable: true,
         glitch: { heavyGlitch: true },
         next: "day5_ending_ghost_2"
     },
@@ -1124,6 +1125,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         background: "ending_ghost",
         bgm: "ending_melancholy.mp3",
+        stopSfx: "sfx_whisper.mp3",
         next: "day5_ending_ghost_17"
     },
     "day5_ending_ghost_17": {

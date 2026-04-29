@@ -91,8 +91,8 @@ Object.assign(SCENARIO[4], {
         branches: [
             { condition: "met_yuna", next: "day4_xover_yuna_skip_met" }
         ],
-        // met_yuna 미충족 시: 유나를 모르는 상태이므로 스프라이트 없이 스킵
-        character: null,
+        // Show cautious Yuna even before the bonus branch; the narration places her in the corridor.
+        character: "yuna_cautious",
         next: "day4_after_choice"
     },
     // ── met_yuna는 있지만 보너스 조건이 없는 경우 ──
@@ -400,7 +400,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_eunsu_2"
     },
     "day4_after_eunsu_2": {
-        character: null,
+        character: "eunsu_serious",
         next: "day4_after_eunsu_3"
     },
     "day4_after_eunsu_3": {

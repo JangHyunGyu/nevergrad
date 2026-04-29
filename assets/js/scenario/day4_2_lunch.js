@@ -191,7 +191,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_first"
     },
     "day4_lunch_nurse_first": {
-        character: null,
+        character: "riin_neutral",
         setFlags: ["met_riin"],
         next: "day4_lunch_nurse_2"
     },

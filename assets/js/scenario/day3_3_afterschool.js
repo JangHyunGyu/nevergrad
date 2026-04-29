@@ -344,7 +344,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_eunsu_2"
     },
     "day3_after_eunsu_2": {
-        character: null,
+        character: "eunsu_writing",
         next: "day3_after_eunsu_3"
     },
     "day3_after_eunsu_3": {

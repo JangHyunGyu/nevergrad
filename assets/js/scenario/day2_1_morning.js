@@ -59,7 +59,7 @@ Object.assign(SCENARIO[2], {
     // ===== 교문: 세아와 등교 =====
     "day2_morning_wakeup_7": {
         background: "school_gate",
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_gate_1"
     },
     "day2_morning_gate_1": {

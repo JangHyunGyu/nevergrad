@@ -173,14 +173,14 @@ Object.assign(SCENARIO[3], {
         setFlags: ["found_locker_inscription"]
     },
     "day3_morning_inscription_3": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day3_morning_seolhwa_1"
     },
 
     // ===== 설화의 접근 =====
     "day3_morning_seolhwa_1": {
         background: "corridor",
-        character: null,
+        character: "seolhwa_quiet",
         next: "day3_morning_seolhwa_3"
     },
     "day3_morning_seolhwa_3": {

@@ -491,7 +491,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_forget_6"
     },
     "day5_after_forget_6": {
-        character: null,
+        character: "eunsu_warm",
         unskippable: true,
         next: "day5_after_forget_7"
     },
@@ -618,7 +618,7 @@ Object.assign(SCENARIO[5], {
     },
     // 선생님의 손이 미세하게 떨렸다
     "day5_after_resist_13d": {
-        character: null,
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_after_resist_13e"
     },
@@ -704,7 +704,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_10"
     },
     "day5_after_ghost_10": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day5_after_ghost_11"
     },

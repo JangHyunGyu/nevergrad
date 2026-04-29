@@ -313,7 +313,7 @@ Object.assign(SCENARIO[4], {
 
     // 타이머 선택지 8초: 같이 걷는다 / 먼저 가겠다고 한다
     "day4_morning_eunsu_choice": {
-        character: null,
+        character: "eunsu_gentle",
         timedChoice: 8000,
         unskippable: true,
         vibrate: "timer_tick",

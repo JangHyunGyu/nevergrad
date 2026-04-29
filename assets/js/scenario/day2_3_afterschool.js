@@ -17,7 +17,7 @@ Object.assign(SCENARIO[2], {
     // ===== 은수의 학생 안전 앱 =====
     "day2_after_start": {
         background: "classroom",
-        character: null,
+        character: "eunsu_warm",
         next: "day2_after_eunsu_1"
     },
     "day2_after_eunsu_1": {

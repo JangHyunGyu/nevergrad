@@ -449,7 +449,7 @@ Object.assign(SCENARIO[3], {
     // ══════════════════════════════════════
     "day3_lunch_riin_1": {
         background: "nurse_office",
-        character: null,
+        character: "riin_neutral",
         branches: [
             { condition: "met_riin", next: "day3_lunch_riin_2" }
         ],

@@ -499,73 +499,77 @@ Object.assign(SCENARIO[1], {
     },
     // L224: *안경을 쓴 젊은 여자 선생님. 부드러운 인상이다.*
     "day1_eunsu_1": {
-        character: "eunsu_warm",
+        characters: { left: "sea_smile", center: "eunsu_warm" },
         next: "day1_eunsu_2",
         setFlags: ["met_eunsu"]
     },
     // L226: 박은수 "자, 여러분. 오늘 새로 전학 온 학생을 소개할게요."
     "day1_eunsu_2": {
-        character: "eunsu_warm",
+        characters: { left: "sea_smile", center: "eunsu_warm" },
         next: "day1_eunsu_3"
     },
     // L228: *교실이 조용해진다.*
     "day1_eunsu_3": {
-        character: "eunsu_warm",
+        characters: { left: "sea_smile", center: "eunsu_warm" },
         next: "day1_eunsu_4"
     },
     // L230: 박은수 "{name} 학생, 나와서 인사해줄래요?"
     "day1_eunsu_4": {
-        character: "eunsu_warm",
+        characters: { left: "sea_smile", center: "eunsu_warm" },
         next: "day1_eunsu_5"
     },
     // L232: *칠판 앞에 서니 더 긴장된다...*
     "day1_eunsu_5": {
-        character: "eunsu_warm",
+        characters: { left: "sea_smile", center: "eunsu_warm" },
         next: "day1_eunsu_6"
     },
     // L234: 박은수 "어서 와요, 잘 왔어요."
     "day1_eunsu_6": {
-        character: "eunsu_warm",
+        characters: { left: "sea_smile", center: "eunsu_warm" },
         next: "day1_eunsu_7"
     },
     // L236: *선생님이 웃는다. 따뜻하게...*
     "day1_eunsu_7": {
-        character: "eunsu_warm",
+        characters: { left: "sea_smile", center: "eunsu_warm" },
         next: "day1_eunsu_8"
     },
     // L240: 박은수 "자, 자기소개 해볼까요?"
     "day1_eunsu_8": {
-        character: "eunsu_normal",
+        characters: { left: "sea_smile", center: "eunsu_normal" },
         next: "day1_eunsu_9"
     },
     // L242: 나 "안녕하세요. {name}입니다..."
     "day1_eunsu_9": {
-        character: "eunsu_normal",
+        characters: { left: "sea_smile", center: "eunsu_normal" },
         next: "day1_eunsu_10"
     },
     // L244: 박은수 "취미나 좋아하는 거 없어요?"
     "day1_eunsu_10": {
-        character: "eunsu_normal",
-        next: "day1_eunsu_11"
+        characters: { left: "sea_smile", center: "eunsu_normal" },
+        choices: [
+            { next: "day1_eunsu_11", stats: { eunsu: { affinity: 2 }, sea: { affinity: 1 } } },
+            { next: "day1_eunsu_11", stats: { eunsu: { affinity: 1 } } },
+            { next: "day1_eunsu_11", stats: { sea: { affinity: 2 } } }
+        ]
     },
     // L246: 나 "음... 게임이랑 음악 듣는 거 좋아합니다."
     "day1_eunsu_11": {
-        character: "eunsu_normal",
+        characters: { left: "sea_smile", center: "eunsu_normal" },
         next: "day1_eunsu_12"
     },
     // L248: *학생들이 웃는다...*
     "day1_eunsu_12": {
-        character: "eunsu_normal",
+        characters: { left: "sea_smile", center: "eunsu_normal" },
         next: "day1_eunsu_13"
     },
     // L250: 박은수 "좋아요. 다들 잘 챙겨주세요..."
     "day1_eunsu_13": {
-        character: "eunsu_warm",
+        characters: { left: "sea_smile", center: "eunsu_warm" },
         next: "day1_eunsu_14"
     },
     // L252: *자리로 돌아간다. 세아가 엄지를 들어 보여준다...*
     "day1_eunsu_14": {
-        character: null,
+        characters: { left: "sea_smile", center: "eunsu_warm" },
         next: "day1_seolhwa_1"
     },
 

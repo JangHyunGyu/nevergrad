@@ -345,7 +345,12 @@
     },
     "day4_morning_class_9": {
         "name": "ウンス",
-        "text": "「**そうだよね、{name}？**」"
+        "text": "「**そうだよね、{name}？**」",
+        "choices": [
+            "????",
+            "?????",
+            "???????"
+        ]
     },
     "day4_morning_class_10": {
         "name": "僕",

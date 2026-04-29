@@ -470,7 +470,12 @@
     },
     "day5_morning_blockade_4": {
         "name": "Me",
-        "text": "*My eyes met Yuna's. Her face is white. Mine must look the same.*"
+        "text": "*My eyes met Yuna's. Her face is white. Mine must look the same.*",
+        "choices": [
+            "Reassure Yuna",
+            "Check the door again",
+            "Wait for the broadcast"
+        ]
     },
     "day5_morning_blockade_5": {
         "name": "Me",

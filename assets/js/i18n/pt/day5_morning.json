@@ -470,7 +470,12 @@
     },
     "day5_morning_blockade_4": {
         "name": "Eu",
-        "text": "*Yuna fez contato visual. O rosto de Yuna estava branco. Provavelmente tenho a mesma expressão.*"
+        "text": "*Yuna fez contato visual. O rosto de Yuna estava branco. Provavelmente tenho a mesma expressão.*",
+        "choices": [
+            "Tranquilizar Yuna",
+            "Checar a porta de novo",
+            "Esperar o anuncio"
+        ]
     },
     "day5_morning_blockade_5": {
         "name": "Eu",

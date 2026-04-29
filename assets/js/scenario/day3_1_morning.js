@@ -148,7 +148,11 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_locker_5": {
         character: null,
-        next: "day3_morning_photo_1",
+        choices: [
+            { next: "day3_morning_photo_1", stats: { yuna: { affinity: 1 } } },
+            { next: "day3_morning_photo_1", stats: { seolhwa: { affinity: 1 } } },
+            { next: "day3_morning_photo_1", stats: { sea: { affinity: -1 } } }
+        ],
         setFlags: ["found_photo_fragment"]
     },
 
@@ -195,7 +199,11 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_seolhwa_5": {
         character: "seolhwa_quiet",
-        next: "day3_morning_seolhwa_6"
+        choices: [
+            { next: "day3_morning_seolhwa_6", stats: { seolhwa: { affinity: 3 } } },
+            { next: "day3_morning_seolhwa_6", stats: { eunsu: { affinity: -1 } } },
+            { next: "day3_morning_seolhwa_6", stats: { seolhwa: { affinity: -1 }, sea: { affinity: 1 } } }
+        ]
     },
     "day3_morning_seolhwa_6": {
         character: "seolhwa_sad",

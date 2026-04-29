@@ -767,7 +767,12 @@
     },
     "day5_lunch_eunsu_24": {
         "name": "Me",
-        "text": "*Only the sound of wind from the emergency exit. The border between the outside world and this school.*"
+        "text": "*Only the sound of wind from the emergency exit. The border between the outside world and this school.*",
+        "choices": [
+            "Keep watching the syringe",
+            "Listen to Eunsu's voice",
+            "Look for Seolhwa"
+        ]
     },
     "day5_lunch_eunsu_25": {
         "name": "Eunsu",

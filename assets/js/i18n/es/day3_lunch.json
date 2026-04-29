@@ -228,7 +228,12 @@
     },
     "day3_lunch_nametag_2": {
         "name": "Yo",
-        "text": "*— De repente se siente extraño, como una palabra de otro idioma. Lo toqué con los dedos. Solo me devolvió la sensación del plástico.*"
+        "text": "*— De repente se siente extraño, como una palabra de otro idioma. Lo toqué con los dedos. Solo me devolvió la sensación del plástico.*",
+        "choices": [
+            "Tocar la placa otra vez",
+            "Confirmarlo con Yuna",
+            "Respirar y seguir caminando"
+        ]
     },
     "day3_lunch_door_open_7": {
         "name": "Yo",
@@ -276,7 +281,12 @@
     },
     "day3_lunch_sea_6": {
         "name": "Yo",
-        "text": "¿Cómo sabes eso?"
+        "text": "¿Cómo sabes eso?",
+        "choices": [
+            "Preguntar de frente",
+            "Pasarlo como broma",
+            "Observar su expresion"
+        ]
     },
     "day3_lunch_sea_7": {
         "name": "Han Sea",

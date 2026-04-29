@@ -767,7 +767,12 @@
     },
     "day5_lunch_eunsu_24": {
         "name": "Yo",
-        "text": "*Solo el sonido del viento desde la salida de emergencia. La frontera entre el mundo exterior y esta escuela.*"
+        "text": "*Solo el sonido del viento desde la salida de emergencia. La frontera entre el mundo exterior y esta escuela.*",
+        "choices": [
+            "No apartar la vista de la jeringa",
+            "Escuchar la voz de Eunsu",
+            "Buscar a Seolhwa"
+        ]
     },
     "day5_lunch_eunsu_25": {
         "name": "Eunsu",

@@ -568,17 +568,17 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_true_exit_1": {
         background: "corridor_old",
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_morning_true_exit_2"
     },
     "day5_morning_true_exit_2": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_morning_true_ft"
     },
     "day5_morning_true_ft": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         choices: [
             { next: "day5_morning_true_ft_confront", stats: { eunsu: { affinity: -10 } }, setFlags: ["confronted_eunsu_d5"] },
             { next: "day5_morning_true_ft_lost", stats: { eunsu: { affinity: 3 } } },
@@ -586,37 +586,37 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "day5_morning_true_ft_confront": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_morning_true_ft_stall"
     },
     "day5_morning_true_ft_lost": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_morning_true_ft_stall"
     },
     "day5_morning_true_ft_yuna": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_morning_true_ft_stall"
     },
     "day5_morning_true_ft_stall": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_morning_true_post_ft_1"
     },
     "day5_morning_true_post_ft_1": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_morning_true_post_ft_2"
     },
     "day5_morning_true_post_ft_2": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_morning_true_post_ft_3"
     },
     "day5_morning_true_post_ft_3": {
-        character: "yuna_weak",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_morning_blockade_1"
     },
@@ -640,7 +640,11 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_blockade_4": {
         character: null,
-        next: "day5_morning_blockade_5"
+        choices: [
+            { next: "day5_morning_blockade_5", stats: { yuna: { affinity: 4 } } },
+            { next: "day5_morning_blockade_5", stats: { eunsu: { affinity: -3 } } },
+            { next: "day5_morning_blockade_5", stats: { seolhwa: { affinity: 2 } } }
+        ]
     },
 
     // ── 교내 방송 — 은수 ──

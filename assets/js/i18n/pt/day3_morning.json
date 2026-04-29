@@ -105,7 +105,12 @@
     },
     "day3_morning_locker_5": {
         "name": "Eu",
-        "text": "*...esse rosto. Acho que vi isso em algum lugar. Quem é?*"
+        "text": "*...esse rosto. Acho que vi isso em algum lugar. Quem é?*",
+        "choices": [
+            "Guardar o fragmento da foto",
+            "Ver o verso",
+            "Olhar se alguem viu"
+        ]
     },
     "day3_morning_photo_1": {
         "name": "Eu",
@@ -141,7 +146,12 @@
     },
     "day3_morning_seolhwa_5": {
         "name": "Eu",
-        "text": "*A garota não responde. A expressão dela é complicada. Então, em voz baixa:*"
+        "text": "*A garota não responde. A expressão dela é complicada. Então, em voz baixa:*",
+        "choices": [
+            "Responder sobre a mao esquerda",
+            "Perguntar por que ela quer saber",
+            "Fingir que nao ouviu"
+        ]
     },
     "day3_morning_seolhwa_6": {
         "name": "Garota da janela",

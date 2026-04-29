@@ -767,7 +767,12 @@
     },
     "day5_lunch_eunsu_24": {
         "name": "Ich",
-        "text": "*Nur der Wind vom Notausgang ist zu hören. Die Grenze zwischen der Außenwelt und dieser Schule.*"
+        "text": "*Nur der Wind vom Notausgang ist zu hören. Die Grenze zwischen der Außenwelt und dieser Schule.*",
+        "choices": [
+            "Die Spritze im Blick behalten",
+            "Eunsus Stimme zuhoren",
+            "Nach Seolhwa suchen"
+        ]
     },
     "day5_lunch_eunsu_25": {
         "name": "Eunsu",

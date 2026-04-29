@@ -345,7 +345,12 @@
     },
     "day4_morning_class_9": {
         "name": "Eunsu",
-        "text": "**N'est-ce pas, {name} ?**"
+        "text": "**N'est-ce pas, {name} ?**",
+        "choices": [
+            "Hocher la tete",
+            "Dire non",
+            "Regarder vers Sea"
+        ]
     },
     "day4_morning_class_10": {
         "name": "Moi",

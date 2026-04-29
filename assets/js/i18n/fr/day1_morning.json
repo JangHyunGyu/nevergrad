@@ -326,7 +326,12 @@
     },
     "day1_eunsu_10": {
         "name": "Eunsu",
-        "text": "Des hobbies ou des choses que tu aimes ?"
+        "text": "Des hobbies ou des choses que tu aimes ?",
+        "choices": [
+            "Repondre franchement",
+            "Rester bref",
+            "Regarder Sea avant de parler"
+        ]
     },
     "day1_eunsu_11": {
         "name": "Moi",

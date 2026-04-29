@@ -228,7 +228,12 @@
     },
     "day3_lunch_nametag_2": {
         "name": "Me",
-        "text": "*-- Suddenly it feels foreign, like a word from another language. I touched it with my fingers. Only the feel of plastic came back.*"
+        "text": "*-- Suddenly it feels foreign, like a word from another language. I touched it with my fingers. Only the feel of plastic came back.*",
+        "choices": [
+            "Touch the name tag again",
+            "Check with Yuna",
+            "Breathe and keep walking"
+        ]
     },
     "day3_lunch_door_open_7": {
         "name": "Me",
@@ -276,7 +281,12 @@
     },
     "day3_lunch_sea_6": {
         "name": "Me",
-        "text": "How do you know that?"
+        "text": "How do you know that?",
+        "choices": [
+            "Ask her directly",
+            "Pass it off as a joke",
+            "Watch her expression"
+        ]
     },
     "day3_lunch_sea_7": {
         "name": "Sea",

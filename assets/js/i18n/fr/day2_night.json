@@ -55,7 +55,12 @@
     },
     "day2_night_phone_13": {
         "name": "Moi",
-        "text": "*...J'ai envie d'en savoir plus. Je réponds à Minsu.*"
+        "text": "*...J'ai envie d'en savoir plus. Je réponds à Minsu.*",
+        "choices": [
+            "Recrire a Minsu",
+            "Revoir lancien groupe",
+            "Poser le telephone et reflechir"
+        ]
     },
     "day2_night_ft_messenger": {
         "name": "Moi",

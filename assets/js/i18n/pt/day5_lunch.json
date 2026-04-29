@@ -767,7 +767,12 @@
     },
     "day5_lunch_eunsu_24": {
         "name": "Eu",
-        "text": "*Ouve-se apenas o som do vento vindo da saída de emergência. A fronteira entre o mundo exterior e esta escola.*"
+        "text": "*Ouve-se apenas o som do vento vindo da saída de emergência. A fronteira entre o mundo exterior e esta escola.*",
+        "choices": [
+            "Nao tirar os olhos da seringa",
+            "Ouvir a voz de Eunsu",
+            "Procurar Seolhwa"
+        ]
     },
     "day5_lunch_eunsu_25": {
         "name": "Park Eunsu",

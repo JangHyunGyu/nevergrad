@@ -326,7 +326,12 @@
     },
     "day1_eunsu_10": {
         "name": "Eunsu",
-        "text": "¿Algún pasatiempo o algo que te guste?"
+        "text": "¿Algún pasatiempo o algo que te guste?",
+        "choices": [
+            "Responder con sinceridad",
+            "Ser breve",
+            "Mirar a Sea primero"
+        ]
     },
     "day1_eunsu_11": {
         "name": "Yo",

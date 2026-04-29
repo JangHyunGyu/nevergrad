@@ -470,7 +470,12 @@
     },
     "day5_morning_blockade_4": {
         "name": "Ich",
-        "text": "*Mein Blick traf Yunas. Ihr Gesicht ist weiß. Meines sieht wahrscheinlich genauso aus.*"
+        "text": "*Mein Blick traf Yunas. Ihr Gesicht ist weiß. Meines sieht wahrscheinlich genauso aus.*",
+        "choices": [
+            "Yuna beruhigen",
+            "Die Tur noch einmal prufen",
+            "Auf die Durchsage warten"
+        ]
     },
     "day5_morning_blockade_5": {
         "name": "Ich",

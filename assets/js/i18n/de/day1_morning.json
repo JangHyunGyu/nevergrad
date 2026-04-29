@@ -326,7 +326,12 @@
     },
     "day1_eunsu_10": {
         "name": "Eunsu",
-        "text": "Hast du Hobbys oder Dinge, die du magst?"
+        "text": "Hast du Hobbys oder Dinge, die du magst?",
+        "choices": [
+            "Ehrlich antworten",
+            "Kurz bleiben",
+            "Zuerst zu Sea sehen"
+        ]
     },
     "day1_eunsu_11": {
         "name": "Ich",

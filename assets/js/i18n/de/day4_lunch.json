@@ -82,7 +82,12 @@
     },
     "day4_lunch_yuna_18": {
         "name": "Ich",
-        "text": "*...Frau Eunsu hat den Schlüssel. Hinter dieser Tür ist Yuna. Und ich -- kann sie nicht öffnen.*"
+        "text": "*...Frau Eunsu hat den Schlüssel. Hinter dieser Tür ist Yuna. Und ich -- kann sie nicht öffnen.*",
+        "choices": [
+            "Heute Nacht den Schlussel holen",
+            "Riins Wege rekonstruieren",
+            "Seolhwas Hinweis vertrauen"
+        ]
     },
     "day4_lunch_yuna_19": {
         "name": "Ich",
@@ -166,7 +171,12 @@
     },
     "day4_lunch_nurse_15": {
         "name": "Ich",
-        "text": "*Ein lächelndes Gesicht. Eine sanfte Stimme. Eine Spritze in der Hand.*"
+        "text": "*Ein lächelndes Gesicht. Eine sanfte Stimme. Eine Spritze in der Hand.*",
+        "choices": [
+            "Sofort ablehnen",
+            "Nach dem Namen des Mittels fragen",
+            "Yuna erwahnen"
+        ]
     },
     "day4_lunch_nurse_16": {
         "name": "Ich",
@@ -186,7 +196,11 @@
     },
     "day4_lunch_roof_4": {
         "name": "Ich",
-        "text": "*Darunter in kleinerer Schrift: ***'Die Antwort liegt unter der Erde'***"
+        "text": "*Darunter in kleinerer Schrift: ***'Die Antwort liegt unter der Erde'***",
+        "choices": [
+            "Die Worte auswendig lernen",
+            "Die Botschaft fotografieren"
+        ]
     },
     "day4_lunch_roof_5": {
         "name": "Ich",

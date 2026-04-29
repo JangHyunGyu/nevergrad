@@ -105,7 +105,12 @@
     },
     "day3_morning_locker_5": {
         "name": "Me",
-        "text": "*...This face. I feel like I've seen it before. Who is it?*"
+        "text": "*...This face. I feel like I've seen it before. Who is it?*",
+        "choices": [
+            "Take the photo fragment",
+            "Check the back",
+            "Look around for witnesses"
+        ]
     },
     "day3_morning_photo_1": {
         "name": "Me",
@@ -141,7 +146,12 @@
     },
     "day3_morning_seolhwa_5": {
         "name": "Me",
-        "text": "*The girl does not answer. Her expression is complicated. Then, in a small voice:*"
+        "text": "*The girl does not answer. Her expression is complicated. Then, in a small voice:*",
+        "choices": [
+            "Answer the left-hand question",
+            "Ask why she wants to know",
+            "Pretend not to hear"
+        ]
     },
     "day3_morning_seolhwa_6": {
         "name": "Window-Side Girl",

@@ -90,7 +90,11 @@ Object.assign(SCENARIO[2], {
     "day2_night_phone_13": {
         character: null,
         night: true,
-        next: "day2_night_ft_messenger"
+        choices: [
+            { next: "day2_night_ft_messenger", stats: { sea: { affinity: 1 } } },
+            { next: "day2_night_ft_messenger", stats: { eunsu: { affinity: -1 } } },
+            { next: "day2_night_ft_messenger", stats: { seolhwa: { affinity: 1 } } }
+        ]
     },
 
     // ===== 민수에게 답장 (메신저 톤 — 일반 시퀀스로 교체) =====

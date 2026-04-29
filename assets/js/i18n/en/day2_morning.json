@@ -133,7 +133,12 @@
     },
     "day2_morning_deja4_4": {
         "name": "Sea",
-        "text": "Oh, right. There's a vending machine there. ...But {name}, how did you know that?"
+        "text": "Oh, right. There's a vending machine there. ...But {name}, how did you know that?",
+        "choices": [
+            "Laugh it off with Sea",
+            "Check the vending machine again",
+            "Memorize that feeling"
+        ]
     },
     "day2_morning_deja4_5": {
         "name": "Me",

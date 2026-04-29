@@ -321,7 +321,11 @@ Object.assign(SCENARIO[3], {
     },
     "day3_lunch_nametag_2": {
         character: null,
-        next: "day3_lunch_door_open_7"
+        choices: [
+            { next: "day3_lunch_door_open_7", stats: { yuna: { affinity: 2 } } },
+            { next: "day3_lunch_door_open_7", stats: { eunsu: { affinity: -1 } } },
+            { next: "day3_lunch_door_open_7", stats: { seolhwa: { affinity: 1 } } }
+        ]
     },
     // 하지만 부정할 수도 없다. 사진이 있으니까.
     "day3_lunch_door_open_7": {
@@ -386,7 +390,11 @@ Object.assign(SCENARIO[3], {
     // 나: 그걸 어떻게 알아?
     "day3_lunch_sea_6": {
         character: "sea_smile",
-        next: "day3_lunch_sea_7"
+        choices: [
+            { next: "day3_lunch_sea_7", stats: { sea: { affinity: -2 }, seolhwa: { affinity: 1 } } },
+            { next: "day3_lunch_sea_7", stats: { sea: { affinity: 3 } } },
+            { next: "day3_lunch_sea_7", stats: { sea: { affinity: 1 }, eunsu: { affinity: -1 } } }
+        ]
     },
     // 세아: 어제 반찬 고를 때 봤지
     "day3_lunch_sea_7": {

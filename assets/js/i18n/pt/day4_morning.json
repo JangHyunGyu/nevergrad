@@ -345,7 +345,12 @@
     },
     "day4_morning_class_9": {
         "name": "Park Eunsu",
-        "text": "**Certo, {name}?**"
+        "text": "**Certo, {name}?**",
+        "choices": [
+            "Acenar com a cabeca",
+            "Dizer que nao",
+            "Olhar para Sea"
+        ]
     },
     "day4_morning_class_10": {
         "name": "Eu",

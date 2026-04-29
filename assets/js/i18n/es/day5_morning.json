@@ -470,7 +470,12 @@
     },
     "day5_morning_blockade_4": {
         "name": "Yo",
-        "text": "*Mi mirada se cruzó con la de Yuna. Su cara está pálida. La mía debe verse igual.*"
+        "text": "*Mi mirada se cruzó con la de Yuna. Su cara está pálida. La mía debe verse igual.*",
+        "choices": [
+            "Tranquilizar a Yuna",
+            "Revisar la puerta otra vez",
+            "Esperar el anuncio"
+        ]
     },
     "day5_morning_blockade_5": {
         "name": "Yo",

@@ -133,7 +133,12 @@
     },
     "day2_morning_deja4_4": {
         "name": "Sea",
-        "text": "Ach, stimmt. Da ist ein Getränkeautomat. ...Aber {name}, woher wusstest du das?"
+        "text": "Ach, stimmt. Da ist ein Getränkeautomat. ...Aber {name}, woher wusstest du das?",
+        "choices": [
+            "Es mit Sea weglachen",
+            "Den Automaten noch mal prufen",
+            "Dieses Gefuhl merken"
+        ]
     },
     "day2_morning_deja4_5": {
         "name": "Ich",

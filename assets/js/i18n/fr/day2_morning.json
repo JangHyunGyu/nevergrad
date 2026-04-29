@@ -133,7 +133,12 @@
     },
     "day2_morning_deja4_4": {
         "name": "Sea",
-        "text": "Ah, oui. Il y a un distributeur là-bas. ...Mais {name}, comment tu le savais ?"
+        "text": "Ah, oui. Il y a un distributeur là-bas. ...Mais {name}, comment tu le savais ?",
+        "choices": [
+            "En rire avec Sea",
+            "Verifier encore le distributeur",
+            "Memoriser cette sensation"
+        ]
     },
     "day2_morning_deja4_5": {
         "name": "Moi",

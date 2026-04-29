@@ -228,7 +228,12 @@
     },
     "day3_lunch_nametag_2": {
         "name": "Ich",
-        "text": "*— Plötzlich fühlt es sich fremd an, wie ein Wort aus einer anderen Sprache. Ich berührte es mit den Fingern. Nur das Gefühl von Plastik kam zurück.*"
+        "text": "*— Plötzlich fühlt es sich fremd an, wie ein Wort aus einer anderen Sprache. Ich berührte es mit den Fingern. Nur das Gefühl von Plastik kam zurück.*",
+        "choices": [
+            "Das Namensschild noch einmal ber?hren",
+            "Bei Yuna nachfragen",
+            "Atmen und weitergehen"
+        ]
     },
     "day3_lunch_door_open_7": {
         "name": "Ich",
@@ -276,7 +281,12 @@
     },
     "day3_lunch_sea_6": {
         "name": "Ich",
-        "text": "Woher weißt du das?"
+        "text": "Woher weißt du das?",
+        "choices": [
+            "Direkt fragen",
+            "Es als Witz abtun",
+            "Ihren Ausdruck beobachten"
+        ]
     },
     "day3_lunch_sea_7": {
         "name": "Han Sea",

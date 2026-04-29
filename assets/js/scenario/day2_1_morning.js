@@ -169,7 +169,11 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_deja4_4": {
         character: "sea_normal",
-        next: "day2_morning_deja4_5"
+        choices: [
+            { next: "day2_morning_deja4_5", stats: { sea: { affinity: 2 } } },
+            { next: "day2_morning_deja4_5", stats: { seolhwa: { affinity: 2 } } },
+            { next: "day2_morning_deja4_5", stats: { eunsu: { affinity: -1 } } }
+        ]
     },
     "day2_morning_deja4_5": {
         character: "sea_normal",

@@ -105,7 +105,12 @@
     },
     "day3_morning_locker_5": {
         "name": "Ich",
-        "text": "*...Dieses Gesicht. Ich habe das Gefühl, es schon einmal gesehen zu haben. Wer ist das?*"
+        "text": "*...Dieses Gesicht. Ich habe das Gefühl, es schon einmal gesehen zu haben. Wer ist das?*",
+        "choices": [
+            "Das Fotostuck einstecken",
+            "Die Ruckseite prufen",
+            "Nach Zeugen umsehen"
+        ]
     },
     "day3_morning_photo_1": {
         "name": "Ich",
@@ -141,7 +146,12 @@
     },
     "day3_morning_seolhwa_5": {
         "name": "Ich",
-        "text": "*Das Mädchen antwortet nicht. Ihr Ausdruck ist kompliziert. Dann sagt sie leise:*"
+        "text": "*Das Mädchen antwortet nicht. Ihr Ausdruck ist kompliziert. Dann sagt sie leise:*",
+        "choices": [
+            "Die Frage zur linken Hand beantworten",
+            "Fragen, warum sie das wissen will",
+            "So tun, als hatte man nichts gehort"
+        ]
     },
     "day3_morning_seolhwa_6": {
         "name": "Mädchen am Fenster",

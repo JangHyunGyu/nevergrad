@@ -82,7 +82,12 @@
     },
     "day4_lunch_yuna_18": {
         "name": "Yo",
-        "text": "*...La profesora Eunsu tiene la llave. Yuna está detrás de esa puerta. Y yo — no puedo abrirla.*"
+        "text": "*...La profesora Eunsu tiene la llave. Yuna está detrás de esa puerta. Y yo — no puedo abrirla.*",
+        "choices": [
+            "Ir por la llave esta noche",
+            "Recordar los movimientos de Riin",
+            "Confiar en la pista de Seolhwa"
+        ]
     },
     "day4_lunch_yuna_19": {
         "name": "Yo",
@@ -166,7 +171,12 @@
     },
     "day4_lunch_nurse_15": {
         "name": "Yo",
-        "text": "*Un rostro sonriente. Una voz suave. Una jeringa en la mano.*"
+        "text": "*Un rostro sonriente. Una voz suave. Una jeringa en la mano.*",
+        "choices": [
+            "Negarse de inmediato",
+            "Preguntar el nombre del farmaco",
+            "Mencionar a Yuna"
+        ]
     },
     "day4_lunch_nurse_16": {
         "name": "Yo",
@@ -186,7 +196,11 @@
     },
     "day4_lunch_roof_4": {
         "name": "Yo",
-        "text": "*Debajo, en letras más pequeñas: ***'La respuesta está bajo tierra'***"
+        "text": "*Debajo, en letras más pequeñas: ***'La respuesta está bajo tierra'***",
+        "choices": [
+            "Memorizar las palabras",
+            "Fotografiar el mensaje"
+        ]
     },
     "day4_lunch_roof_5": {
         "name": "Yo",

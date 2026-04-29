@@ -326,7 +326,12 @@
     },
     "day1_eunsu_10": {
         "name": "Eunsu",
-        "text": "Any hobbies or things you like?"
+        "text": "Any hobbies or things you like?",
+        "choices": [
+            "Answer honestly",
+            "Keep it brief",
+            "Look toward Sea first"
+        ]
     },
     "day1_eunsu_11": {
         "name": "Me",

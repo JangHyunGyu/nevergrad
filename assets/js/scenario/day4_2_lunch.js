@@ -162,7 +162,11 @@ Object.assign(SCENARIO[4], {
         // 은수가 열쇠를 갖고 있다. 나는 열 수 없다.
         glitch: { noise: true, noiseDuration: 200 },
         unskippable: true,
-        next: "day4_lunch_yuna_19"
+        choices: [
+            { next: "day4_lunch_yuna_19", stats: { yuna: { affinity: 4 }, eunsu: { affinity: -3 } } },
+            { next: "day4_lunch_yuna_19", stats: { riin: { affinity: 2 } } },
+            { next: "day4_lunch_yuna_19", stats: { seolhwa: { affinity: 2 } } }
+        ]
     },
     "day4_lunch_yuna_19": {
         character: null,
@@ -282,7 +286,11 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_nurse_15": {
         // 웃는 얼굴, 부드러운 목소리, 주사기
         character: null,
-        next: "day4_lunch_nurse_16"
+        choices: [
+            { next: "day4_lunch_nurse_16", stats: { riin: { affinity: -3 } } },
+            { next: "day4_lunch_nurse_16", stats: { riin: { affinity: 2 } } },
+            { next: "day4_lunch_nurse_16", stats: { yuna: { affinity: 2 }, seolhwa: { affinity: 1 } } }
+        ]
     },
     "day4_lunch_nurse_16": {
         background: "hallway",
@@ -317,7 +325,10 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_roof_4": {
         character: null,
         // 작은 글씨: "지하에 답이 있어"
-        next: "day4_lunch_roof_5"
+        choices: [
+            { next: "day4_lunch_roof_5", stats: { seolhwa: { affinity: 3 } } },
+            { next: "day4_lunch_roof_5", stats: { yuna: { affinity: 1 }, eunsu: { affinity: -1 } } }
+        ]
     },
     "day4_lunch_roof_5": {
         character: null,

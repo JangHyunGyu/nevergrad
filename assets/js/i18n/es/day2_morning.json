@@ -133,7 +133,12 @@
   },
   "day2_morning_deja4_4": {
     "name": "Sea",
-    "text": "Ah, cierto. Hay una máquina expendedora allí. ...Pero {name}, ¿cómo supiste eso?"
+    "text": "Ah, cierto. Hay una máquina expendedora allí. ...Pero {name}, ¿cómo supiste eso?",
+    "choices": [
+      "Reirlo con Sea",
+      "Revisar otra vez la maquina",
+      "Recordar esa sensacion"
+    ]
   },
   "day2_morning_deja4_5": {
     "name": "Yo",

@@ -101,84 +101,84 @@ Object.assign(SCENARIO[5], {
     // ══════════════════════════════════════
     "day5_lunch_left_1": {
         background: "locked_corridor_junction",
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_2"
     },
     "day5_lunch_left_2": {
-        character: null,
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_3"
     },
     "day5_lunch_left_3": {
-        character: null,
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_4"
     },
     "day5_lunch_left_4": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_5"
     },
     "day5_lunch_left_5": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_5a"
     },
     // "세아, 비켜."
     "day5_lunch_left_5a": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_5b"
     },
     // 세아가 고개를 저었다. 입술을 깨물었다. 피가 맺혔다.
     "day5_lunch_left_5b": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_6"
     },
     // "못 보내. 이번에는 못 보내."
     "day5_lunch_left_6": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_7"
     },
     "day5_lunch_left_7": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_8"
     },
     // "나도 알아... 내가 지금 제정신 아닌 거."
     "day5_lunch_left_8": {
-        character: "sea_vulnerable",
+        characters: { left: "yuna_weak", center: "sea_vulnerable" },
         unskippable: true,
         next: "day5_lunch_left_9"
     },
     "day5_lunch_left_9": {
-        character: "sea_vulnerable",
+        characters: { left: "yuna_weak", center: "sea_vulnerable" },
         unskippable: true,
         next: "day5_lunch_left_10"
     },
     // "기억 지우면 또 만날 수 있어."
     "day5_lunch_left_10": {
-        character: "sea_broken_smile",
+        characters: { left: "yuna_weak", center: "sea_broken_smile" },
         unskippable: true,
         next: "day5_lunch_left_11"
     },
     // "1일차에 '안녕하세요' 했을 때"
     "day5_lunch_left_11": {
-        character: "sea_hurt",
+        characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_12"
     },
     "day5_lunch_left_12": {
-        character: "sea_hurt",
+        characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_13"
     },
     // 본관 1층 철문 소리
     "day5_lunch_left_13": {
-        character: null,
+        characters: { left: "yuna_weak", center: "sea_hurt" },
         sfx: "sfx_door_slam.mp3",
         glitch: { screenShake: true },
         unskippable: true,
@@ -186,68 +186,68 @@ Object.assign(SCENARIO[5], {
     },
     // "그건 나한테 웃는 게 아니야."
     "day5_lunch_left_14": {
-        character: null,
+        characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_15"
     },
     "day5_lunch_left_15": {
-        character: null,
+        characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_16"
     },
     "day5_lunch_left_16": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_17"
     },
     // "...12번."
     "day5_lunch_left_17": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_18"
     },
     "day5_lunch_left_18": {
-        character: null,
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_19"
     },
     "day5_lunch_left_19": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_20"
     },
     "day5_lunch_left_20": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_21"
     },
     "day5_lunch_left_21": {
-        character: null,
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_22"
     },
     // "매번 기억이 지워져서 또 왔어."
     "day5_lunch_left_22": {
-        character: "sea_hurt",
+        characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_23"
     },
     // 계단 발소리 가까워짐
     "day5_lunch_left_23": {
-        character: "sea_vulnerable",
+        characters: { left: "yuna_weak", center: "sea_vulnerable" },
         sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.7, trimStart: 0.05, trimEnd: 0.1 },
         glitch: { screenShake: true },
         unskippable: true,
         next: "day5_lunch_left_24"
     },
     "day5_lunch_left_24": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_25"
     },
     // "...13번째도 비켜줘야 하는 거야?"
     "day5_lunch_left_25": {
-        character: "sea_cry",
+        characters: { left: "yuna_weak", center: "sea_cry" },
         sfx: { file: "memory_reveal_stinger.mp3", volume: 0.78, trimStart: 0.02, trimEnd: 0.08 },
         unskippable: true,
         next: "day5_lunch_left_choice"
@@ -255,7 +255,7 @@ Object.assign(SCENARIO[5], {
 
     // 8초 타이머: 3 choices (타임아웃 = 세아에게 붙잡힘)
     "day5_lunch_left_choice": {
-        character: null,
+        characters: { left: "yuna_weak", center: "sea_cry" },
         stopSfx: "sfx_stairs_approaching.mp3",
         sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.85, trimStart: 0.05, trimEnd: 0.1 },
         timedChoice: 8000,
@@ -686,176 +686,176 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_seolhwa_1": {
         background: "old_stairway",
         bgm: "seolhwa_theme_broken.mp3",
-        character: "seolhwa_ghost",
+        characters: { left: "yuna_weak", center: "seolhwa_ghost" },
         unskippable: true,
         next: "day5_lunch_seolhwa_2"
     },
     "day5_lunch_seolhwa_2": {
-        character: "seolhwa_ghost",
+        characters: { left: "yuna_weak", center: "seolhwa_ghost" },
         unskippable: true,
         next: "day5_lunch_seolhwa_3"
     },
     // 환각이라는 것을 안다
     "day5_lunch_seolhwa_3": {
-        character: "seolhwa_ghost",
+        characters: { left: "yuna_weak", center: "seolhwa_ghost" },
         unskippable: true,
         next: "day5_lunch_seolhwa_4"
     },
     // "...드디어 왔어."
     "day5_lunch_seolhwa_4": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_5"
     },
     "day5_lunch_seolhwa_5": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_6"
     },
     // "...알아버렸구나."
     "day5_lunch_seolhwa_6": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_7"
     },
     // 계단에 앉는 설화
     "day5_lunch_seolhwa_7": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_8"
     },
     // "나는 여기 없어."
     "day5_lunch_seolhwa_8": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_9"
     },
     // 7번째 회상 - 같이 도망치려 했다
     "day5_lunch_seolhwa_9": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_10"
     },
     // 시설 학생이었다
     "day5_lunch_seolhwa_10": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_11"
     },
     // 쪽지를 넘겼다
     "day5_lunch_seolhwa_11": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_12"
     },
     // 같이 뛰었다, 잡혔다
     "day5_lunch_seolhwa_12": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_13"
     },
     "day5_lunch_seolhwa_13": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_14"
     },
     // 환각의 눈물
     "day5_lunch_seolhwa_14": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_15"
     },
     // "...미안해." "기억 못 해서."
     "day5_lunch_seolhwa_15": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_16"
     },
     "day5_lunch_seolhwa_16": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_17"
     },
     // "네 잘못이 아니야."
     "day5_lunch_seolhwa_17": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_18"
     },
     // 리인이 약을 줄여줬으니까
     "day5_lunch_seolhwa_18": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_19"
     },
     // 기억 속에서 살아있었다
     "day5_lunch_seolhwa_19": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_20"
     },
     // 8번째 '뒤를 보지 마'
     "day5_lunch_seolhwa_20": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_21"
     },
     // 10번째 꿈에서 지하실
     "day5_lunch_seolhwa_21": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_22"
     },
     // 기억의 잔상 고백
     "day5_lunch_seolhwa_22": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_23"
     },
     // 진짜가 아니다
     "day5_lunch_seolhwa_23": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_24"
     },
     // "왼손잡이지?"
     "day5_lunch_seolhwa_24": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_25"
     },
     "day5_lunch_seolhwa_25": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_26"
     },
     // "'기억해줘'는—" / "나를 기억해줘."
     "day5_lunch_seolhwa_26": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_27"
     },
     "day5_lunch_seolhwa_27": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_28"
     },
     // 빛이 흐른다
     "day5_lunch_seolhwa_28": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_29"
     },
     // 13번째는 달라
     "day5_lunch_seolhwa_29": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_30"
     },
 
     // 8초 타이머: 2 choices
     "day5_lunch_seolhwa_30": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         timedChoice: 8000,
         unskippable: true,
         choices: [
@@ -867,52 +867,52 @@ Object.assign(SCENARIO[5], {
 
     // ── 선택 1: "같이 나가자." ──
     "day5_lunch_seolhwa_c1_1": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_c1_2"
     },
     "day5_lunch_seolhwa_c1_2": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_c1_3"
     },
     "day5_lunch_seolhwa_c1_3": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_1"
     },
 
     // ── 선택 2: "너는 어떻게 돼?" ──
     "day5_lunch_seolhwa_c2_1": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_c2_2"
     },
     // 손끝이 흐릿하다
     "day5_lunch_seolhwa_c2_2": {
-        character: "seolhwa_fading",
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_c2_3"
     },
     // 서서히 사라질 거야
     "day5_lunch_seolhwa_c2_3": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_c2_4"
     },
     // "하지만 괜찮아."
     "day5_lunch_seolhwa_c2_4": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_c2_5"
     },
     "day5_lunch_seolhwa_c2_5": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_c2_6"
     },
     "day5_lunch_seolhwa_c2_6": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_1"
     },
@@ -921,103 +921,103 @@ Object.assign(SCENARIO[5], {
     // 설화의 길 안내
     // ══════════════════════════════════════
     "day5_lunch_seolhwa_guide_1": {
-        character: "seolhwa_normal",
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         background: "old_corridor_dark",
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_2"
     },
     "day5_lunch_seolhwa_guide_2": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_normal" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_3"
     },
     // 설화 발소리 없음
     "day5_lunch_seolhwa_guide_3": {
-        character: "seolhwa_fading",
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_4"
     },
     // 빛을 투과하는 설화
     "day5_lunch_seolhwa_guide_4": {
-        character: "seolhwa_fading",
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_5"
     },
     // 유나: "선배, 혼자 중얼거리고 있어요."
     "day5_lunch_seolhwa_guide_5": {
-        character: "yuna_worried",
+        characters: { left: "yuna_worried", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_6"
     },
     "day5_lunch_seolhwa_guide_6": {
-        character: null,
+        characters: { left: "yuna_worried", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_7"
     },
     // 왼쪽 창고 통로
     "day5_lunch_seolhwa_guide_7": {
-        character: "seolhwa_ghost",
+        characters: { left: "yuna_weak", center: "seolhwa_ghost" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_8"
     },
     "day5_lunch_seolhwa_guide_8": {
         background: "hidden_service_passage",
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_ghost" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_9"
     },
     // 올라간다. 한 층. 두 층.
     "day5_lunch_seolhwa_guide_9": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_ghost" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_10"
     },
     // 3층 비상구 앞
     "day5_lunch_seolhwa_guide_10": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_ghost" },
         background: "corridor_emergency",
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_11"
     },
     // 설화가 흐려지고 있다
     "day5_lunch_seolhwa_guide_11": {
-        character: "seolhwa_fading",
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_12"
     },
     // 열쇠를 꽂았다 (or 설화가 잠금 풀어줌)
     "day5_lunch_seolhwa_guide_12": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         branches: [
             { condition: "emergency_key", next: "day5_lunch_seolhwa_guide_13a" }
         ],
         next: "day5_lunch_seolhwa_guide_13b"
     },
     "day5_lunch_seolhwa_guide_13a": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_14"
     },
     "day5_lunch_seolhwa_guide_13b": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_14"
     },
     // 문이 열렸다. 밖의 공기.
     "day5_lunch_seolhwa_guide_14": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_15"
     },
     // 설화의 머리카락이 바람에 - 환각
     "day5_lunch_seolhwa_guide_15": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_16"
     },
     // 뒤에서 발소리
     "day5_lunch_seolhwa_guide_16": {
-        character: null,
+        characters: { left: "yuna_weak", center: "seolhwa_fading" },
         glitch: { screenShake: true },
         unskippable: true,
         next: "day5_lunch_eunsu_1"
@@ -1051,100 +1051,100 @@ Object.assign(SCENARIO[5], {
     },
     // 은수 등장
     "day5_lunch_eunsu_5": {
-        character: "eunsu_obsessed",
+        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
         glitch: { noise: true },
         unskippable: true,
         next: "day5_lunch_eunsu_6"
     },
     // 억지 미소, 경련
     "day5_lunch_eunsu_6": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_lunch_eunsu_7"
     },
     // "거기서 멈춰. 비상구 쪽은 폐쇄 구역이야."
     "day5_lunch_eunsu_7": {
-        character: "eunsu_warm",
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_8"
     },
     // 미소가 떨어져 내림
     "day5_lunch_eunsu_8": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_9"
     },
     "day5_lunch_eunsu_9": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_10"
     },
     // "매번 이러더라."
     "day5_lunch_eunsu_10": {
-        character: "eunsu_warm",
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_11"
     },
     // "1번째 때는 화가 났어."
     "day5_lunch_eunsu_11": {
-        character: "eunsu_warm",
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_12"
     },
     // "3번째 때부터 — 무서웠어."
     "day5_lunch_eunsu_12": {
-        character: "eunsu_warm",
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_13"
     },
     "day5_lunch_eunsu_13": {
-        character: "eunsu_warm",
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_14"
     },
     // "네 반응을 기록하고..."
     "day5_lunch_eunsu_14": {
-        character: "eunsu_warm",
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_15"
     },
     // 한 발 다가옴
     "day5_lunch_eunsu_15": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_lunch_eunsu_16"
     },
     // "1일차에 교실에 들어왔을 때. 13번째인데도."
     "day5_lunch_eunsu_16": {
-        character: "eunsu_warm",
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_17"
     },
     "day5_lunch_eunsu_17": {
-        character: "eunsu_warm",
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_18"
     },
     // 주사기 꺼냄
     "day5_lunch_eunsu_18": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_warm" },
         unskippable: true,
         next: "day5_lunch_eunsu_19"
     },
     "day5_lunch_eunsu_19": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
         unskippable: true,
         next: "day5_lunch_eunsu_20"
     },
     // "마지막 선택이야"
     "day5_lunch_eunsu_20": {
-        character: "eunsu_obsessed",
+        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
         unskippable: true,
         next: "day5_lunch_eunsu_21"
     },
     // "이거 한 대면 다 끝나."
     "day5_lunch_eunsu_21": {
-        character: "eunsu_obsessed",
+        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
         typingSpeed: 80,
         vibrate: "final_needle",
         unskippable: true,
@@ -1152,36 +1152,40 @@ Object.assign(SCENARIO[5], {
     },
     // "다시 1일차부터. 네가 아무것도 모르는 상태로."
     "day5_lunch_eunsu_22": {
-        character: "eunsu_obsessed",
+        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
         unskippable: true,
         next: "day5_lunch_eunsu_23"
     },
     // 침묵
     "day5_lunch_eunsu_23": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
         unskippable: true,
         next: "day5_lunch_eunsu_24"
     },
     "day5_lunch_eunsu_24": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
-        next: "day5_lunch_eunsu_25"
+        choices: [
+            { next: "day5_lunch_eunsu_25", stats: { eunsu: { affinity: -3 }, yuna: { affinity: 3 } } },
+            { next: "day5_lunch_eunsu_25", stats: { eunsu: { affinity: 3 } } },
+            { next: "day5_lunch_eunsu_25", stats: { seolhwa: { affinity: 2 } } }
+        ]
     },
     // "...돌아와."
     "day5_lunch_eunsu_25": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         typingSpeed: 150,
         unskippable: true,
         next: "day5_lunch_eunsu_26"
     },
     // 주사기 떨림, 눈물
     "day5_lunch_eunsu_26": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_lunch_eunsu_27"
     },
     "day5_lunch_eunsu_27": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_lunch_eunsu_28"
     },
@@ -1193,32 +1197,32 @@ Object.assign(SCENARIO[5], {
     },
     // 주사기와 비상구. 망각과 기억.
     "day5_lunch_eunsu_29": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_lunch_eunsu_30"
     },
     // 12번의 몸이 기억
     "day5_lunch_eunsu_30": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_lunch_eunsu_31"
     },
     // 한 발 더 다가옴
     "day5_lunch_eunsu_31": {
-        character: "eunsu_gentle",
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_lunch_eunsu_32"
     },
     // 설화가 보인다 — 뒤에
     "day5_lunch_eunsu_32": {
-        characters: { center: "eunsu_gentle", right: "seolhwa_fading" },
+        characters: { left: "yuna_weak", center: "eunsu_gentle", right: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_eunsu_final"
     },
 
     // ★ 최종 선택지: 20초 타이머, 3 choices (GHOST는 타이머 초과로만 진입)
     "day5_lunch_eunsu_final": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_gentle", right: "seolhwa_fading" },
         glitch: { screenShake: true },
         vibrate: "heartbeat",
         timedChoice: 20000,

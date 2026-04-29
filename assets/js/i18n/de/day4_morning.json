@@ -345,7 +345,12 @@
     },
     "day4_morning_class_9": {
         "name": "Eunsu",
-        "text": "**Nicht wahr, {name}?**"
+        "text": "**Nicht wahr, {name}?**",
+        "choices": [
+            "Nicken",
+            "Nein sagen",
+            "Zu Sea sehen"
+        ]
     },
     "day4_morning_class_10": {
         "name": "Ich",

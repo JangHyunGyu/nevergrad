@@ -82,7 +82,12 @@
     },
     "day4_lunch_yuna_18": {
         "name": "Moi",
-        "text": "*...Mme Eunsu à la clé. Yuna est derrière cette porte. Et moi — je ne peux pas l'ouvrir.*"
+        "text": "*...Mme Eunsu à la clé. Yuna est derrière cette porte. Et moi — je ne peux pas l'ouvrir.*",
+        "choices": [
+            "Viser la cle cette nuit",
+            "Repenser aux deplacements de Riin",
+            "Faire confiance a lindice de Seolhwa"
+        ]
     },
     "day4_lunch_yuna_19": {
         "name": "Moi",
@@ -166,7 +171,12 @@
     },
     "day4_lunch_nurse_15": {
         "name": "Moi",
-        "text": "*Un visage souriant. Une voix douce. Une seringue à la main.*"
+        "text": "*Un visage souriant. Une voix douce. Une seringue à la main.*",
+        "choices": [
+            "Refuser tout de suite",
+            "Demander le nom du medicament",
+            "Parler de Yuna"
+        ]
     },
     "day4_lunch_nurse_16": {
         "name": "Moi",
@@ -186,7 +196,11 @@
     },
     "day4_lunch_roof_4": {
         "name": "Moi",
-        "text": "*En dessous, en plus petit : ***'La réponse est sous terre'***"
+        "text": "*En dessous, en plus petit : ***'La réponse est sous terre'***",
+        "choices": [
+            "Memoriser les mots",
+            "Photographier le message"
+        ]
     },
     "day4_lunch_roof_5": {
         "name": "Moi",

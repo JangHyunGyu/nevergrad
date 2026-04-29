@@ -133,7 +133,12 @@
   },
   "day2_morning_deja4_4": {
     "name": "Sea",
-    "text": "Ah, é verdade. Tem uma máquina de vendas lá. ...Mas {name}, como você sabia disso?"
+    "text": "Ah, é verdade. Tem uma máquina de vendas lá. ...Mas {name}, como você sabia disso?",
+    "choices": [
+      "Rir disso com Sea",
+      "Checar a maquina de novo",
+      "Guardar essa sensacao"
+    ]
   },
   "day2_morning_deja4_5": {
     "name": "Eu",

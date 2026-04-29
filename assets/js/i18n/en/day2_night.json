@@ -55,7 +55,12 @@
     },
     "day2_night_phone_13": {
         "name": "Me",
-        "text": "*...I want to ask more. I'll try replying to Minsu.*"
+        "text": "*...I want to ask more. I'll try replying to Minsu.*",
+        "choices": [
+            "Message Minsu once more",
+            "Check the old group chat again",
+            "Put the phone down and think"
+        ]
     },
     "day2_night_ft_messenger": {
         "name": "Me",

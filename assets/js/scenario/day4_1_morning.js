@@ -478,7 +478,7 @@ Object.assign(SCENARIO[4], {
     },
     // 세아: 원래 빈 자리야
     "day4_morning_classroom_notmet_3": {
-        character: "sea_smile",
+        characters: { left: "sea_smile" },
         next: "day4_morning_classroom_notmet_4"
     },
     // 아무도 그 자리 쪽으로 가지 않는다
@@ -492,12 +492,12 @@ Object.assign(SCENARIO[4], {
     // ═══════════════════════════════════════════════════
 
     "day4_morning_class_start": {
-        character: "eunsu_gentle",
+        characters: { left: "sea_smile", center: "eunsu_gentle" },
         next: "day4_morning_class_2"
     },
     // 분필로 '소속' 쓴다
     "day4_morning_class_2": {
-        character: "eunsu_gentle",
+        characters: { left: "sea_smile", center: "eunsu_gentle" },
         next: "day4_morning_class_3"
     },
     // 출석부 — met_yuna에 따라 유나 이름 언급 여부 분기
@@ -550,7 +550,11 @@ Object.assign(SCENARIO[4], {
         character: "eunsu_gentle",
         unskippable: true,
         glitch: { corruptText: true, corruptIndices: [3, 7, 12] },
-        next: "day4_morning_class_10"
+        choices: [
+            { next: "day4_morning_class_10", stats: { eunsu: { affinity: 4 } } },
+            { next: "day4_morning_class_10", stats: { eunsu: { affinity: -3 }, seolhwa: { affinity: 1 } } },
+            { next: "day4_morning_class_10", stats: { sea: { affinity: 2 } } }
+        ]
     },
     // 30쌍의 눈 — 전부 웃고 있다
     "day4_morning_class_10": {

@@ -767,7 +767,12 @@
     },
     "day5_lunch_eunsu_24": {
         "name": "Moi",
-        "text": "*Seul le son du vent depuis la sortie de secours. La frontière entre le monde extérieur et cette école.*"
+        "text": "*Seul le son du vent depuis la sortie de secours. La frontière entre le monde extérieur et cette école.*",
+        "choices": [
+            "Ne pas quitter la seringue des yeux",
+            "Ecouter la voix dEunsu",
+            "Chercher Seolhwa"
+        ]
     },
     "day5_lunch_eunsu_25": {
         "name": "Eunsu",

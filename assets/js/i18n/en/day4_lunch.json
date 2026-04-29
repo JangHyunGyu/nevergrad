@@ -82,7 +82,12 @@
     },
     "day4_lunch_yuna_18": {
         "name": "Me",
-        "text": "*...Ms. Eunsu has the key. Yuna is behind that door. And I -- can't open it.*"
+        "text": "*...Ms. Eunsu has the key. Yuna is behind that door. And I -- can't open it.*",
+        "choices": [
+            "Go for the key tonight",
+            "Recall Riin's movements",
+            "Trust Seolhwa's clue"
+        ]
     },
     "day4_lunch_yuna_19": {
         "name": "Me",
@@ -166,7 +171,12 @@
     },
     "day4_lunch_nurse_15": {
         "name": "Me",
-        "text": "*A smiling face. A soft voice. A syringe in hand.*"
+        "text": "*A smiling face. A soft voice. A syringe in hand.*",
+        "choices": [
+            "Refuse immediately",
+            "Ask the drug name",
+            "Bring up Yuna"
+        ]
     },
     "day4_lunch_nurse_16": {
         "name": "Me",
@@ -186,7 +196,11 @@
     },
     "day4_lunch_roof_4": {
         "name": "Me",
-        "text": "*Below it, in smaller letters: ***'The answer is underground'***"
+        "text": "*Below it, in smaller letters: ***'The answer is underground'***",
+        "choices": [
+            "Memorize the words",
+            "Photograph the message"
+        ]
     },
     "day4_lunch_roof_5": {
         "name": "Me",

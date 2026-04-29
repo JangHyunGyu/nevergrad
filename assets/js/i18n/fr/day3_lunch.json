@@ -228,7 +228,12 @@
     },
     "day3_lunch_nametag_2": {
         "name": "Moi",
-        "text": "*— Soudain, ça semble étranger, comme un mot d'une autre langue. Je l'ai touché du bout des doigts. Seule la sensation du plastique m'est revenue.*"
+        "text": "*— Soudain, ça semble étranger, comme un mot d'une autre langue. Je l'ai touché du bout des doigts. Seule la sensation du plastique m'est revenue.*",
+        "choices": [
+            "Toucher encore le badge",
+            "Verifier avec Yuna",
+            "Respirer puis avancer"
+        ]
     },
     "day3_lunch_door_open_7": {
         "name": "Moi",
@@ -276,7 +281,12 @@
     },
     "day3_lunch_sea_6": {
         "name": "Moi",
-        "text": "Comment tu sais ça ?"
+        "text": "Comment tu sais ça ?",
+        "choices": [
+            "Demander franchement",
+            "Le tourner en plaisanterie",
+            "Observer son expression"
+        ]
     },
     "day3_lunch_sea_7": {
         "name": "Sea",

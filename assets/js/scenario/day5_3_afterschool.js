@@ -346,7 +346,7 @@ Object.assign(SCENARIO[5], {
     // ★ 최종 선택지: 20초 타이머
     // ══════════════════════════════════════
     "day5_after_final_choice": {
-        character: null,
+        characters: { center: "eunsu_crying", right: "seolhwa_fading" },
         timedChoice: 20000,
         unskippable: true,
         vibrate: "heartbeat",
@@ -375,14 +375,14 @@ Object.assign(SCENARIO[5], {
     // → TRUE END
     // ══════════════════════════════════════
     "day5_after_true_1": {
-        character: "eunsu_obsessed",
+        characters: { center: "eunsu_obsessed", right: "seolhwa_fading" },
         sfx: "sfx_glass_break.mp3",
         glitch: { heavyGlitch: true },
         unskippable: true,
         next: "day5_after_true_2"
     },
     "day5_after_true_2": {
-        character: "eunsu_obsessed",
+        characters: { center: "eunsu_obsessed", right: "seolhwa_fading" },
         unskippable: true,
         setFlags: ["route_true", "broke_through_eunsu", "escape_with_yuna", "has_evidence"],
         next: "day5_after_true_3"
@@ -465,12 +465,12 @@ Object.assign(SCENARIO[5], {
     // → FORGET END
     // ══════════════════════════════════════
     "day5_after_forget_1": {
-        character: "eunsu_obsessed",
+        characters: { center: "eunsu_obsessed", right: "seolhwa_fading" },
         unskippable: true,
         next: "day5_after_forget_2"
     },
     "day5_after_forget_2": {
-        character: "eunsu_obsessed",
+        characters: { center: "eunsu_obsessed", right: "seolhwa_fading" },
         unskippable: true,
         setFlags: ["route_forget"],
         next: "day5_after_forget_3"
@@ -533,7 +533,7 @@ Object.assign(SCENARIO[5], {
     // → RESIST END
     // ══════════════════════════════════════
     "day5_after_resist_1": {
-        character: "eunsu_obsessed",
+        characters: { center: "eunsu_obsessed", right: "seolhwa_fading" },
         unskippable: true,
         next: "day5_after_resist_2"
     },

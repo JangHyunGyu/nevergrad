@@ -470,7 +470,12 @@
     },
     "day5_morning_blockade_4": {
         "name": "Moi",
-        "text": "*Mon regard a croisé celui de Yuna. Son visage est livide. Le mien doit être pareil.*"
+        "text": "*Mon regard a croisé celui de Yuna. Son visage est livide. Le mien doit être pareil.*",
+        "choices": [
+            "Rassurer Yuna",
+            "Verifier encore la porte",
+            "Attendre lannonce"
+        ]
     },
     "day5_morning_blockade_5": {
         "name": "Moi",

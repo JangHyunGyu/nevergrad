@@ -105,7 +105,12 @@
     },
     "day3_morning_locker_5": {
         "name": "Moi",
-        "text": "*...Ce visage. J'ai l'impression de l'avoir déjà vu. Qui est-ce ?*"
+        "text": "*...Ce visage. J'ai l'impression de l'avoir déjà vu. Qui est-ce ?*",
+        "choices": [
+            "Prendre le fragment de photo",
+            "Verifier le verso",
+            "Regarder si quelquun a vu"
+        ]
     },
     "day3_morning_photo_1": {
         "name": "Moi",
@@ -141,7 +146,12 @@
     },
     "day3_morning_seolhwa_5": {
         "name": "Moi",
-        "text": "*La fille ne répond pas. Son expression est compliquée. Puis, d'une petite voix :*"
+        "text": "*La fille ne répond pas. Son expression est compliquée. Puis, d'une petite voix :*",
+        "choices": [
+            "Repondre sur la main gauche",
+            "Demander pourquoi elle veut savoir",
+            "Faire semblant de ne pas entendre"
+        ]
     },
     "day3_morning_seolhwa_6": {
         "name": "Fille près de la fenêtre",

@@ -399,7 +399,7 @@ Object.assign(SCENARIO[4], {
     // ── 1타: 초자연적 공포 ──
     // 거울에 설화가 비치지 않는다
     "day4_night_mirror_hit1": {
-        character: null,
+        character: "seolhwa_sad",
         unskippable: true,
         glitch: {
             mirrorReflection: true,

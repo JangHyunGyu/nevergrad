@@ -365,7 +365,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_5"
     },
     "day5_morning_true_5": {
-        character: null,
+        characters: { left: "yuna_weak" },
         unskippable: true,
         next: "day5_morning_true_6"
     },
@@ -568,7 +568,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_true_exit_1": {
         background: "corridor_old",
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_morning_true_exit_2"
     },

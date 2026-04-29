@@ -66,6 +66,7 @@ class GameEngine {
         this.currentSceneData = null;
         this.isTransitioning = false;
         this._clickLocked = false;
+        this._effectClickLockToken = null;
 
         // Quick menu state
         this.isAutoMode = false;
@@ -473,6 +474,7 @@ class GameEngine {
         if (scene.background) {
             const bgPath = CONFIG.BACKGROUNDS[scene.background] || scene.background;
             this.renderer.setBackground(bgPath);
+            this.gallery?.unlockCGByPath?.(bgPath);
         } else if (/^day5_ending_true_2[6-7]$/.test(sceneId)) {
             this.renderer.setBackground(CONFIG.BACKGROUNDS.news_article);
         } else if (/^day5_morning_true_([2-9]|1[0-9]|2[0-7])$/.test(sceneId)) {
@@ -497,11 +499,15 @@ class GameEngine {
                 this.renderer.clearCharacters();
             } else {
                 if (scene.character) {
+                    this.gallery?.unlockCharacterExpression?.(scene.character);
                     this.renderer.setCharacter('center', this._resolveCharImage(scene.character), opacity);
                 }
                 if (scene.characters) {
                     for (const [pos, key] of Object.entries(scene.characters)) {
-                        if (key) this.renderer.setCharacter(pos, this._resolveCharImage(key), opacity);
+                        if (key) {
+                            this.gallery?.unlockCharacterExpression?.(key);
+                            this.renderer.setCharacter(pos, this._resolveCharImage(key), opacity);
+                        }
                     }
                 }
             }
@@ -511,6 +517,7 @@ class GameEngine {
 
         // BGM
         if (typeof scene.bgm === 'string') {
+            this.gallery?.unlockBGM?.(scene.bgm);
             this.renderer.playBGM(scene.bgm);
             this.state.currentBGM = scene.bgm;
         } else if (scene.bgm && typeof scene.bgm === 'object') {
@@ -631,7 +638,7 @@ class GameEngine {
         if (this.metaHorror) {
             if (sceneId.includes('save_slot') || sceneId.includes('day4_night_save')) {
                 this.metaHorror.setScreenshotContext('save_slot');
-            } else if (sceneId.includes('mirror_13') || sceneId.includes('mirror_2nd')) {
+            } else if (sceneId.includes('mirror_13') || sceneId.includes('mirror_2nd') || sceneId.includes('mirror_overlay') || scene?.glitch?.photoOverlay) {
                 this.metaHorror.setScreenshotContext('mirror_13faces');
             } else if (sceneId.includes('day5_docs') || sceneId.includes('day5_basement')) {
                 this.metaHorror.setScreenshotContext('day5_docs');
@@ -732,6 +739,7 @@ class GameEngine {
         }
 
         if (scene.bgm_fade?.to) {
+            this.gallery?.unlockBGM?.(scene.bgm_fade.to);
             this.renderer.playBGM(scene.bgm_fade.to);
             this.state.currentBGM = scene.bgm_fade.to;
         }
@@ -1142,7 +1150,10 @@ class GameEngine {
             // 글리치: 선택지 깜빡임
             if (choice.glitchFlicker) {
                 setTimeout(() => {
-                    this.glitch.flickerChoice(btn, choice.glitchFlicker, btn.textContent);
+                    this.glitch.flickerChoice(btn, choice.glitchFlicker, btn.textContent, {
+                        duration: choice.glitchDuration,
+                        color: choice.glitchColor
+                    });
                 }, choice.glitchDelay || 1500);
             }
 
@@ -1207,14 +1218,14 @@ class GameEngine {
 
         // 씬 글리치에서 예약된 flickerChoice 처리
         if (this._pendingFlickerChoice) {
-            const { index, text, duration } = this._pendingFlickerChoice;
+            const { index, text, duration, color } = this._pendingFlickerChoice;
             this._pendingFlickerChoice = null;
             const buttons = panel.querySelectorAll('.choice-btn');
             const btn = buttons[index];
             if (btn) {
-                const flickerLabel = this.i18n.get(text)?.text || text;
+                const flickerLabel = this._resolveEffectText(text);
                 setTimeout(() => {
-                    this.glitch.flickerChoice(btn, flickerLabel, btn.textContent);
+                    this.glitch.flickerChoice(btn, flickerLabel, btn.textContent, { duration, color });
                 }, 1500);
             }
         }
@@ -1570,7 +1581,7 @@ class GameEngine {
         if (g.heavy || g.heavyGlitch) this.glitch.heavyGlitch(g.heavyDuration);
         if (g.ghostText) {
             const showGhostText = () => this.glitch.ghostText(
-                this._pickLocalizedValue(g.ghostText),
+                this._resolveEffectText(g.ghostText),
                 g.ghostX || 50,
                 g.ghostY || 30,
                 g.ghostDuration || 2000
@@ -1583,7 +1594,7 @@ class GameEngine {
         }
         if (g.ngPlusGhostText && this.save?.isNewGamePlus()) {
             this.glitch.ghostText(
-                this._pickLocalizedValue(g.ngPlusGhostText),
+                this._resolveEffectText(g.ngPlusGhostText),
                 g.ghostX || 50,
                 g.ghostY || 60,
                 g.ghostDuration || 500
@@ -1604,7 +1615,7 @@ class GameEngine {
                 document.getElementById('char-center'), g.expressionFlash, g.flashDuration
             );
         }
-        if (g.screenShake) {
+        if (g.screenShake || g.shake) {
             const gameScreen = document.getElementById('game-screen');
             if (gameScreen) {
                 gameScreen.classList.add('screen-shake');
@@ -1622,7 +1633,7 @@ class GameEngine {
             this._pendingDuplicateChoice = true;
         }
         if (g.phoneFlash && this.deviceGimmick) {
-            const phoneFlashText = this._pickLocalizedValue(g.phoneFlashText);
+            const phoneFlashText = this._resolveEffectText(g.phoneFlashText);
             this.deviceGimmick.flashPhoneNotification(
                 phoneFlashText,
                 g.phoneFlashDuration || 300
@@ -1641,7 +1652,8 @@ class GameEngine {
             this._pendingFlickerChoice = {
                 index: g.flickerChoice,
                 text: g.flickerText,
-                duration: g.flickerDuration || 100
+                duration: g.flickerDuration || 100,
+                color: g.flickerColor
             };
         }
 
@@ -1685,11 +1697,26 @@ class GameEngine {
 
         // ── Day 4 밤: 13장 증명사진 오버레이 + 관리 시스템 라벨
         if (g.photoOverlay && this.glitchAdvanced) {
-            this.glitchAdvanced.showPhotoOverlay({
+            const token = Symbol('photoOverlay');
+            this._effectClickLockToken = token;
+            this._clickLocked = true;
+            if (this._clickLockTimer) {
+                clearTimeout(this._clickLockTimer);
+                this._clickLockTimer = null;
+            }
+            this.metaHorror?.setScreenshotContext?.('mirror_13faces');
+            Promise.resolve(this.glitchAdvanced.showPhotoOverlay({
                 photoSequence: g.photoSequence || [],
                 photoInterval: g.photoInterval,
                 overlayText: g.overlayText,
                 overlayFadeDuration: g.overlayFadeDuration
+            })).catch(err => {
+                console.error('[GameEngine] photoOverlay failed:', err);
+            }).finally(() => {
+                if (this._effectClickLockToken === token) {
+                    this._effectClickLockToken = null;
+                    this._clickLocked = false;
+                }
             });
         }
 
@@ -1891,6 +1918,16 @@ class GameEngine {
         if (!value || typeof value !== 'object' || Array.isArray(value)) return value;
         const lang = this.i18n?.currentLang || 'ko';
         return value[lang] || value.en || value.ko || '';
+    }
+
+    _resolveEffectText(value, extraVars) {
+        const picked = this._pickLocalizedValue(value);
+        if (picked === true || picked == null) return '';
+        const raw = String(picked);
+        const localized = this.i18n?.get?.(raw)?.text || raw;
+        return this.i18n?.resolve
+            ? this.i18n.resolve(localized, this.state.playerName, extraVars)
+            : localized.replace(/\{name\}/g, this.state.playerName || '');
     }
 
     _buildSceneVars(sceneId, scene) {

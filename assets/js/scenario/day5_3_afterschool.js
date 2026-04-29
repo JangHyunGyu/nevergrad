@@ -249,7 +249,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_3"
     },
     "day5_after_confront_3": {
-        character: null,
+        character: "eunsu_obsessed",
         unskippable: true,
         next: "day5_after_confront_4"
     },
@@ -337,7 +337,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_confront_20": {
         glitch: { borderPulse: true },
-        character: "seolhwa_fading",
+        characters: { center: "eunsu_crying", right: "seolhwa_fading" },
         unskippable: true,
         next: "day5_after_final_choice"
     },
@@ -411,12 +411,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_6"
     },
     "day5_after_true_6": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day5_after_true_7"
     },
     "day5_after_true_7": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day5_after_true_seolhwa_branch"
     },

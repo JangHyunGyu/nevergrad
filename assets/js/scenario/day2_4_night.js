@@ -279,6 +279,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_flash_2"
     },
     "day2_night_flash_2": {
+        background: "corridor_dark",
         character: null,
         night: true,
         sfx: "sfx_rain_loop.mp3",
@@ -296,6 +297,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_flash_5"
     },
     "day2_night_flash_5": {
+        background: "room_night",
         character: null,
         night: true,
         sfx: "sfx_heartbeat_fast.mp3",

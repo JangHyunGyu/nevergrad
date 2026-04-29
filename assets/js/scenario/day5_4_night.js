@@ -152,7 +152,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_true_1": {
         background: "corridor_emergency",
         bgm: "ending_hope.mp3",
-        character: null,
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_ending_true_2"
     },
@@ -184,7 +184,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_7"
     },
     "day5_ending_true_7": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_ending_true_8"
     },
     "day5_ending_true_8": {
@@ -236,7 +236,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_15"
     },
     "day5_ending_true_15": {
-        character: null,
+        character: "seolhwa_sad",
         next: "day5_ending_true_16"
     },
     "day5_ending_true_16": {
@@ -736,7 +736,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_18b"
     },
     "day5_ending_resist_18b": {
-        character: null,
+        character: "eunsu_normal",
         next: "day5_ending_resist_18c"
     },
     "day5_ending_resist_18c": {
@@ -856,7 +856,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_sea_4"
     },
     "day5_ending_cage_sea_4": {
-        character: null,
+        character: "sea_cry",
         next: "day5_ending_cage_sea_5"
     },
     "day5_ending_cage_sea_5": {

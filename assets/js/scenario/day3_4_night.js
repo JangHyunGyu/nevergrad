@@ -265,6 +265,7 @@ Object.assign(SCENARIO[3], {
     //  벽의 글씨 — 꿈이 아닌 현실 (새벽 3시 각성)
     // ══════════════════════════════════════
     "day3_night_wall": {
+        background: "room_dark",
         character: null,
         bgm: { fadeOut: 3000 },
         next: "day3_night_wall_2"
@@ -479,7 +480,15 @@ Object.assign(SCENARIO[3], {
         stopSfx: "sfx_whisper_seolhwa.mp3",
         // ghostText + silence + 바이노럴 왼쪽 속삭임 합성
         glitch: {
-            ghostText: true,
+            ghostText: {
+                ko: "\uC544\uC9C1 \uBCF4\uC9C0 \uB9C8",
+                en: "Don't look yet.",
+                ja: "Don't look yet.",
+                es: "No mires todavia.",
+                fr: "Ne regarde pas encore.",
+                de: "Sieh noch nicht hin.",
+                pt: "Nao olhe ainda."
+            },
             silence: true,
             panSFX: "sfx_whisper_seolhwa",
             pan: -1

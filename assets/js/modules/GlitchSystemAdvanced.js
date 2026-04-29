@@ -2582,7 +2582,10 @@ class GlitchSystemAdvanced {
      * @param {string} finalText - 최종 표시 텍스트
      * @returns {Promise<void>}
      */
-    async showMirror13Faces(faceNames, playerName, finalText) {
+    async showMirror13Faces(faceNames, playerName, finalText, options = {}) {
+        const photoInterval = Math.max(60, Number(options.photoInterval) || 400);
+        const finalHold = Math.max(0, Number(options.overlayFadeDuration) || 3000);
+        const exitFade = Math.max(0, Number(options.overlayExitFadeDuration) || 1000);
         const overlay = document.createElement('div');
         overlay.className = 'mirror-face-overlay';
         document.body.appendChild(overlay);
@@ -2620,7 +2623,7 @@ class GlitchSystemAdvanced {
                 deviceGimmick.vibrate([100]);
             }
 
-            await this._sleep(400);
+            await this._sleep(photoInterval);
             frame.remove();
         }
 
@@ -2638,12 +2641,12 @@ class GlitchSystemAdvanced {
         });
         overlay.appendChild(finalEl);
 
-        await this._sleep(3000);
+        await this._sleep(finalHold);
 
         // 페이드아웃
-        overlay.style.transition = 'opacity 1s ease';
+        overlay.style.transition = `opacity ${exitFade}ms ease`;
         overlay.style.opacity = '0';
-        await this._sleep(1000);
+        await this._sleep(exitFade);
         overlay.remove();
     }
 
@@ -3019,7 +3022,11 @@ class GlitchSystemAdvanced {
                 }
         );
         const overlayText = overlayTextRaw.replace('{name}', playerName);
-        await this.showMirror13Faces(entries, playerName, overlayText);
+        await this.showMirror13Faces(entries, playerName, overlayText, {
+            photoInterval: opts.photoInterval,
+            overlayFadeDuration: opts.overlayFadeDuration,
+            overlayExitFadeDuration: opts.overlayExitFadeDuration
+        });
     }
 
     hidePhotoOverlay() {

@@ -36,7 +36,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_chase_3"
     },
     "day5_lunch_chase_3": {
-        character: null,
+        character: "yuna_weak",
         unskippable: true,
         next: "day5_lunch_chase_3a"
     },
@@ -121,7 +121,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_5"
     },
     "day5_lunch_left_5": {
-        character: null,
+        character: "sea_cry",
         unskippable: true,
         next: "day5_lunch_left_5a"
     },
@@ -133,7 +133,7 @@ Object.assign(SCENARIO[5], {
     },
     // 세아가 고개를 저었다. 입술을 깨물었다. 피가 맺혔다.
     "day5_lunch_left_5b": {
-        character: null,
+        character: "sea_cry",
         unskippable: true,
         next: "day5_lunch_left_6"
     },
@@ -144,7 +144,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_7"
     },
     "day5_lunch_left_7": {
-        character: null,
+        character: "sea_cry",
         unskippable: true,
         next: "day5_lunch_left_8"
     },
@@ -691,13 +691,13 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_seolhwa_2"
     },
     "day5_lunch_seolhwa_2": {
-        character: null,
+        character: "seolhwa_ghost",
         unskippable: true,
         next: "day5_lunch_seolhwa_3"
     },
     // 환각이라는 것을 안다
     "day5_lunch_seolhwa_3": {
-        character: null,
+        character: "seolhwa_ghost",
         unskippable: true,
         next: "day5_lunch_seolhwa_4"
     },
@@ -890,7 +890,7 @@ Object.assign(SCENARIO[5], {
     },
     // 손끝이 흐릿하다
     "day5_lunch_seolhwa_c2_2": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day5_lunch_seolhwa_c2_3"
     },
@@ -933,13 +933,13 @@ Object.assign(SCENARIO[5], {
     },
     // 설화 발소리 없음
     "day5_lunch_seolhwa_guide_3": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_4"
     },
     // 빛을 투과하는 설화
     "day5_lunch_seolhwa_guide_4": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_5"
     },
@@ -981,7 +981,7 @@ Object.assign(SCENARIO[5], {
     },
     // 설화가 흐려지고 있다
     "day5_lunch_seolhwa_guide_11": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_12"
     },
@@ -1058,7 +1058,7 @@ Object.assign(SCENARIO[5], {
     },
     // 억지 미소, 경련
     "day5_lunch_eunsu_6": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_lunch_eunsu_7"
     },
@@ -1110,7 +1110,7 @@ Object.assign(SCENARIO[5], {
     },
     // 한 발 다가옴
     "day5_lunch_eunsu_15": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_lunch_eunsu_16"
     },
@@ -1176,7 +1176,7 @@ Object.assign(SCENARIO[5], {
     },
     // 주사기 떨림, 눈물
     "day5_lunch_eunsu_26": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_lunch_eunsu_27"
     },
@@ -1187,7 +1187,7 @@ Object.assign(SCENARIO[5], {
     },
     // 시간이 멈춘 것 같다
     "day5_lunch_eunsu_28": {
-        character: null,
+        characters: { left: "yuna_weak", center: "eunsu_gentle" },
         unskippable: true,
         next: "day5_lunch_eunsu_29"
     },
@@ -1205,13 +1205,13 @@ Object.assign(SCENARIO[5], {
     },
     // 한 발 더 다가옴
     "day5_lunch_eunsu_31": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_lunch_eunsu_32"
     },
     // 설화가 보인다 — 뒤에
     "day5_lunch_eunsu_32": {
-        character: null,
+        characters: { center: "eunsu_gentle", right: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_eunsu_final"
     },

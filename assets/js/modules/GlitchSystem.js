@@ -34,15 +34,19 @@ class GlitchSystem {
      * 선택지가 0.1초간 다른 텍스트로 깜빡이는 연출
      * 예: [고백한다] → 0.1초 → [도망쳐] → [고맙다고 한다]
      */
-    flickerChoice(buttonEl, hiddenText, finalText) {
+    flickerChoice(buttonEl, hiddenText, finalText, options = {}) {
+        const duration = Math.max(0, options.duration ?? 100);
         const original = buttonEl.textContent;
+        const originalColor = buttonEl.style.color;
         buttonEl.textContent = hiddenText;
+        if (options.color) buttonEl.style.color = options.color;
         buttonEl.classList.add('glitch-text');
 
         setTimeout(() => {
             buttonEl.textContent = finalText || original;
+            buttonEl.style.color = originalColor;
             buttonEl.classList.remove('glitch-text');
-        }, 100);
+        }, duration);
     }
 
     /**

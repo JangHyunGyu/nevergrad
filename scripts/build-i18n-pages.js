@@ -16,9 +16,9 @@ const LANGS = {
     en: {
         locale: 'en_US',
         title: 'The Classroom of No Graduation',
-        metaTitle: 'Nevergrad - The Classroom of No Graduation',
-        metaDesc: 'The first day of transfer, everything was perfect. Too perfect to be normal.',
-        ogTitle: 'The Classroom of No Graduation | Nevergrad',
+        metaTitle: 'Nevergrad - Free Browser Visual Novel, No Download',
+        metaDesc: 'Play Nevergrad, a free school mystery visual novel in your browser with no download. Five days of choices, five heroines, seven endings, and multilingual support.',
+        ogTitle: 'Nevergrad | Free Browser Visual Novel',
         subtitle: '5 Days Record',
         newGame: 'New Game', continue: 'Continue', gallery: 'Gallery',
         namePrompt: 'What is your name?', namePlaceholder: 'Enter your name', start: 'Start',
@@ -27,11 +27,11 @@ const LANGS = {
         settingsFullscreen: 'Fullscreen', settingsReset: 'Reset', settingsOff: 'OFF',
         ftPlaceholder: 'Type a message...', ftSend: 'Send',
         dayDisplay: 'Day 1 - Morning',
-        keywords: 'free browser visual novel, no-download visual novel, free school mystery game, choice-based story game, multiple endings game, online interactive novel, anime school game, English visual novel, free narrative game, psychological school thriller, Nevergrad',
-        twitterTitle: 'Nevergrad: The Classroom of No Graduation',
-        twitterDesc: 'A free web visual novel, playable without downloads. Five days in a cherry-blossom school, five heroines, seven endings, and multilingual support.',
-        schemaName: 'The Classroom of No Graduation - 5 Days Record',
-        schemaDesc: 'A free web visual novel, playable without downloads. Five days in a cherry-blossom school, five heroines, seven endings, and multilingual support.',
+        keywords: 'free visual novel, browser visual novel, no download visual novel, free school mystery game, psychological horror visual novel, choice based story game, multiple endings game, online interactive novel, anime school game, Nevergrad',
+        twitterTitle: 'Nevergrad: Free Browser Visual Novel',
+        twitterDesc: 'Play a free school mystery visual novel in your browser with no download. Five days, five heroines, seven endings.',
+        schemaName: 'Nevergrad: The Classroom of No Graduation',
+        schemaDesc: 'Play Nevergrad, a free school mystery visual novel in your browser with no download. Five days of choices, five heroines, seven endings, and multilingual support.',
         galleryTitle: 'Ending Gallery',
         galleryProgress: 'Completion',
         galleryBack: 'Back',
@@ -45,14 +45,14 @@ const LANGS = {
     ja: {
         locale: 'ja_JP',
         title: '卒業できない教室',
-        metaTitle: 'Nevergrad - 卒業できない教室',
-        metaDesc: '転校初日、すべてが完璧だった。完璧すぎて、不気味なほどに。',
-        keywords: '無料ビジュアルノベル, ブラウザゲーム 無料, ダウンロード不要 ゲーム, 学園ミステリー, 選択肢 ノベルゲーム, マルチエンディング, 桜 学園 ゲーム, アニメ風 インタラクティブ小説, ホラー ビジュアルノベル, 日本語対応 ノベルゲーム, Nevergrad',
-        ogTitle: '卒業できない教室 | Nevergrad',
-        twitterTitle: 'Nevergrad: 卒業できない教室',
-        twitterDesc: 'ダウンロード不要で遊べる無料Webビジュアルノベル。桜の咲く学校で始まる5日間の記録。5人のヒロイン、7つのエンディング、7言語対応。',
-        schemaName: '卒業できない教室 - 5日間の記録',
-        schemaDesc: 'ダウンロード不要で遊べる無料Webビジュアルノベル。桜の咲く学校で始まる5日間の記録。5人のヒロイン、7つのエンディング、7言語対応。',
+        metaTitle: 'Nevergrad - 無料ブラウザビジュアルノベル',
+        metaDesc: 'ダウンロード不要でブラウザから遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディングに対応。',
+        keywords: '無料ビジュアルノベル, ブラウザ ビジュアルノベル, ダウンロード不要 ノベルゲーム, 学園ミステリー ゲーム, ホラー ビジュアルノベル 無料, 選択肢 ノベルゲーム, マルチエンディング, Nevergrad',
+        ogTitle: 'Nevergrad | 無料ブラウザビジュアルノベル',
+        twitterTitle: 'Nevergrad: 無料ブラウザビジュアルノベル',
+        twitterDesc: 'ダウンロード不要で遊べる無料の学園ミステリー・ビジュアルノベル。5日間、5人のヒロイン、7つのエンディング。',
+        schemaName: 'Nevergrad: 卒業できない教室',
+        schemaDesc: 'ダウンロード不要でブラウザから遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディングに対応。',
         subtitle: '5日間の記録',
         newGame: 'ニューゲーム', continue: 'つづきから', gallery: 'ギャラリー',
         namePrompt: 'あなたの名前は？', namePlaceholder: '名前を入力してください', start: 'スタート',
@@ -74,14 +74,14 @@ const LANGS = {
     es: {
         locale: 'es_ES',
         title: 'El Aula Sin Graduación',
-        metaTitle: 'Nevergrad - El Aula Sin Graduación',
-        metaDesc: 'El primer día de transferencia, todo era perfecto. Demasiado perfecto para ser normal.',
-        keywords: 'juego visual novel gratis en navegador, visual novel escolar sin descarga, juego de misterio escolar gratis, historia interactiva con decisiones, juego de finales múltiples, novela interactiva online, juego anime de instituto, visual novel en español, juego narrativo gratis, juego de terror psicológico escolar',
-        ogTitle: 'El Aula Sin Graduación | Nevergrad',
-        twitterTitle: 'Nevergrad: El Aula Sin Graduación',
-        twitterDesc: 'Visual novel web gratis, sin descargas. Una historia de cinco días en una escuela cubierta de cerezos, con cinco heroínas, siete finales y siete idiomas.',
-        schemaName: 'El Aula Sin Graduación - Registro de 5 Días',
-        schemaDesc: 'Visual novel web gratis, sin descargas. Una historia de cinco días en una escuela cubierta de cerezos, con cinco heroínas, siete finales y siete idiomas.',
+        metaTitle: 'Nevergrad - Visual Novel Gratis en Navegador',
+        metaDesc: 'Juega Nevergrad, una visual novel escolar de misterio gratis y sin descarga. Cinco días de decisiones, cinco heroínas, siete finales y soporte multilingüe.',
+        keywords: 'visual novel gratis, visual novel en navegador, visual novel sin descarga, juego de misterio escolar gratis, novela visual de terror psicológico, juego narrativo con decisiones, juego con múltiples finales, Nevergrad',
+        ogTitle: 'Nevergrad | Visual Novel Gratis en Navegador',
+        twitterTitle: 'Nevergrad: Visual Novel Gratis en Navegador',
+        twitterDesc: 'Una visual novel escolar de misterio gratis, sin descarga. Cinco días, cinco heroínas y siete finales.',
+        schemaName: 'Nevergrad: El Aula Sin Graduación',
+        schemaDesc: 'Juega Nevergrad, una visual novel escolar de misterio gratis y sin descarga. Cinco días de decisiones, cinco heroínas, siete finales y soporte multilingüe.',
         subtitle: 'Registro de 5 Días',
         newGame: 'Nueva Partida', continue: 'Continuar', gallery: 'Galería',
         namePrompt: '¿Cuál es tu nombre?', namePlaceholder: 'Ingresa tu nombre', start: 'Iniciar',
@@ -101,14 +101,14 @@ const LANGS = {
     fr: {
         locale: 'fr_FR',
         title: 'La classe sans diplôme',
-        metaTitle: 'Nevergrad - La classe sans diplôme',
-        metaDesc: 'Le jour de mon transfert, tout était parfait. Trop parfait pour être normal.',
-        keywords: 'visual novel gratuit en ligne, jeu narratif sans téléchargement, visual novel scolaire, mystère au lycée, histoire interactive à choix, jeu à fins multiples, romance scolaire sombre, visual novel en français, jeu web gratuit, thriller psychologique scolaire, Nevergrad',
-        ogTitle: 'La classe sans diplôme | Nevergrad',
-        twitterTitle: 'Nevergrad : La classe sans diplôme',
-        twitterDesc: 'Visual novel web gratuit, sans téléchargement. Cinq jours dans une école en fleurs, cinq héroïnes, sept fins et une histoire où tout semble trop parfait.',
-        schemaName: 'La classe sans diplôme - Journal de cinq jours',
-        schemaDesc: 'Visual novel web gratuit, sans téléchargement. Cinq jours dans une école en fleurs, cinq héroïnes, sept fins et une histoire où tout semble trop parfait.',
+        metaTitle: 'Nevergrad - Visual Novel Gratuit en Navigateur',
+        metaDesc: 'Jouez à Nevergrad, un visual novel scolaire mystère gratuit sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et prise en charge multilingue.',
+        keywords: 'visual novel gratuit, visual novel navigateur, visual novel sans téléchargement, jeu mystère scolaire gratuit, visual novel horreur psychologique, histoire interactive à choix, jeu à fins multiples, Nevergrad',
+        ogTitle: 'Nevergrad | Visual Novel Gratuit en Navigateur',
+        twitterTitle: 'Nevergrad : Visual Novel Gratuit en Navigateur',
+        twitterDesc: 'Un visual novel scolaire mystère gratuit, sans téléchargement. Cinq jours, cinq héroïnes et sept fins.',
+        schemaName: 'Nevergrad: La classe sans diplôme',
+        schemaDesc: 'Jouez à Nevergrad, un visual novel scolaire mystère gratuit sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et prise en charge multilingue.',
         subtitle: 'Journal de cinq jours',
         newGame: 'Nouvelle partie', continue: 'Continuer', gallery: 'Galerie',
         namePrompt: 'Quel est votre nom ?', namePlaceholder: 'Entrez votre nom', start: 'Commencer',
@@ -130,9 +130,9 @@ const LANGS = {
     de: {
         locale: 'de_DE',
         title: 'Das Klassenzimmer ohne Abschluss',
-        metaTitle: 'Nevergrad - Das Klassenzimmer ohne Abschluss',
-        metaDesc: 'Der erste Tag nach dem Schulwechsel, alles war perfekt. Zu perfekt, um normal zu sein.',
-        ogTitle: 'Das Klassenzimmer ohne Abschluss | Nevergrad',
+        metaTitle: 'Nevergrad - Kostenlose Browser Visual Novel',
+        metaDesc: 'Spiele Nevergrad, eine kostenlose Schulmystery-Visual-Novel ohne Download. Fünf Tage voller Entscheidungen, fünf Heldinnen, sieben Enden und Mehrsprachigkeit.',
+        ogTitle: 'Nevergrad | Kostenlose Browser Visual Novel',
         subtitle: 'Fünf-Tage-Protokoll',
         newGame: 'Neues Spiel', continue: 'Fortsetzen', gallery: 'Galerie',
         namePrompt: 'Wie heißt du?', namePlaceholder: 'Namen eingeben', start: 'Start',
@@ -141,11 +141,11 @@ const LANGS = {
         settingsFullscreen: 'Vollbild', settingsReset: 'Zurücksetzen', settingsOff: 'AUS',
         ftPlaceholder: 'Nachricht eingeben...', ftSend: 'Senden',
         dayDisplay: 'Tag 1 - Morgen',
-        keywords: 'kostenlose Visual Novel im Browser, Visual Novel ohne Download, kostenloses Schulmystery-Spiel, Entscheidungsgeschichte online, Spiel mit mehreren Enden, interaktiver Roman online, Anime-Schulspiel, Visual Novel auf Deutsch, kostenloses Erzählspiel, psychologischer Schulthriller, Nevergrad',
-        twitterTitle: 'Nevergrad: Das Klassenzimmer ohne Abschluss',
-        twitterDesc: 'Kostenlose Web-Visual-Novel ohne Download. Eine fünftägige Geschichte an einer zu perfekten Schule mit fünf Heldinnen, sieben Enden und mehrsprachiger Unterstützung.',
-        schemaName: 'Das Klassenzimmer ohne Abschluss - Fünf-Tage-Protokoll',
-        schemaDesc: 'Kostenlose Web-Visual-Novel ohne Download. Eine fünftägige Geschichte an einer zu perfekten Schule mit fünf Heldinnen, sieben Enden und mehrsprachiger Unterstützung.',
+        keywords: 'kostenlose Visual Novel, Browser Visual Novel, Visual Novel ohne Download, kostenloses Schulmystery-Spiel, psychologische Horror Visual Novel, Entscheidungsgeschichte online, Spiel mit mehreren Enden, Nevergrad',
+        twitterTitle: 'Nevergrad: Kostenlose Browser Visual Novel',
+        twitterDesc: 'Eine kostenlose Schulmystery-Visual-Novel ohne Download. Fünf Tage, fünf Heldinnen und sieben Enden.',
+        schemaName: 'Nevergrad: Das Klassenzimmer ohne Abschluss',
+        schemaDesc: 'Spiele Nevergrad, eine kostenlose Schulmystery-Visual-Novel ohne Download. Fünf Tage voller Entscheidungen, fünf Heldinnen, sieben Enden und Mehrsprachigkeit.',
         galleryTitle: 'Galerie der Enden',
         galleryProgress: 'Fortschritt',
         galleryBack: 'Zurück',
@@ -159,9 +159,9 @@ const LANGS = {
     pt: {
         locale: 'pt',
         title: 'A Sala de Aula Sem Formatura',
-        metaTitle: 'Nevergrad - A Sala de Aula Sem Formatura',
-        metaDesc: 'No primeiro dia de transferência, tudo estava perfeito. Perfeito demais para ser normal.',
-        ogTitle: 'A Sala de Aula Sem Formatura | Nevergrad',
+        metaTitle: 'Nevergrad - Visual Novel Grátis no Navegador',
+        metaDesc: 'Jogue Nevergrad, uma visual novel escolar de mistério grátis e sem download. Cinco dias de escolhas, cinco heroínas, sete finais e suporte multilíngue.',
+        ogTitle: 'Nevergrad | Visual Novel Grátis no Navegador',
         subtitle: 'Registro de 5 Dias',
         newGame: 'Novo Jogo', continue: 'Continuar', gallery: 'Galeria',
         namePrompt: 'Qual é o seu nome?', namePlaceholder: 'Digite seu nome', start: 'Começar',
@@ -170,11 +170,11 @@ const LANGS = {
         settingsFullscreen: 'Tela cheia', settingsReset: 'Redefinir', settingsOff: 'OFF',
         ftPlaceholder: 'Digite uma mensagem...', ftSend: 'Enviar',
         dayDisplay: 'Dia 1 - Manhã',
-        keywords: 'visual novel gratuito no navegador, jogo de mistério escolar, romance visual online, jogo narrativo com escolhas, finais alternativos, jogo grátis sem download, romance visual em português, anime visual novel, história interativa escolar, Nevergrad',
-        twitterTitle: 'Nevergrad: A Sala de Aula Sem Formatura',
-        twitterDesc: 'Visual novel gratuito no navegador, sem download. Uma história de cinco dias em uma escola perfeita demais, com 5 heroínas, 7 finais e suporte multilíngue.',
-        schemaName: 'A Sala de Aula Sem Formatura - Registro de 5 Dias',
-        schemaDesc: 'Visual novel gratuito no navegador, sem download. Uma história de cinco dias em uma escola perfeita demais, com 5 heroínas, 7 finais e suporte multilíngue.',
+        keywords: 'visual novel grátis, visual novel no navegador, visual novel sem download, jogo de mistério escolar grátis, visual novel de terror psicológico, jogo narrativo com escolhas, jogo com múltiplos finais, Nevergrad',
+        twitterTitle: 'Nevergrad: Visual Novel Grátis no Navegador',
+        twitterDesc: 'Uma visual novel escolar de mistério grátis, sem download. Cinco dias, cinco heroínas e sete finais.',
+        schemaName: 'Nevergrad: A Sala de Aula Sem Formatura',
+        schemaDesc: 'Jogue Nevergrad, uma visual novel escolar de mistério grátis e sem download. Cinco dias de escolhas, cinco heroínas, sete finais e suporte multilíngue.',
         galleryTitle: 'Galeria de Finais',
         galleryProgress: 'Progresso',
         galleryBack: 'Voltar',
@@ -198,6 +198,13 @@ function buildHreflangBlock() {
     }
     lines.push(`    <link rel="alternate" hreflang="x-default" href="${BASE_URL}/">`);
     return lines.join('\n');
+}
+
+function readSeoSitemapFragment() {
+    const fragmentPath = path.join(ROOT, 'seo', '_sitemap_fragment.xml');
+    if (!fs.existsSync(fragmentPath)) return '';
+    const fragment = fs.readFileSync(fragmentPath, 'utf-8').trim();
+    return fragment ? `\n${fragment}\n` : '';
 }
 
 function buildPage(lang, data) {
@@ -505,10 +512,13 @@ ${sitemapXdefault}
     </url>`);
 }
 
+const seoSitemapFragment = readSeoSitemapFragment();
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${sitemapUrls.join('\n')}
+${seoSitemapFragment}
 </urlset>
 `;
 

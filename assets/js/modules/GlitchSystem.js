@@ -520,7 +520,7 @@ class GlitchSystem {
         this._tabGimmickActive = false;
         document.title = this._originalTitle || this._pickLocalized({
             ko: '졸업하지 못한 교실',
-            en: 'The Classroom of No Graduation',
+            en: 'The Classroom That Never Graduates',
             ja: '卒業できない教室',
             es: 'El Aula Sin Graduación',
             fr: 'La classe sans diplôme',
@@ -564,7 +564,7 @@ class GlitchSystem {
                 remember: '나를 기억해줘.'
             },
             en: {
-                title: 'The Classroom of No Graduation',
+                title: 'The Classroom That Never Graduates',
                 watched: '\n...Someone is watching this place.',
                 warningBox: '\n' +
                     '██████████████████████████████████████\n' +

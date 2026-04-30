@@ -2950,7 +2950,7 @@ class GameEngine {
     _getCageHudText() {
         const map = {
             ko: '행복한 교실', en: 'Happy Classroom', ja: '幸せな教室',
-            es: 'Aula Feliz', fr: 'Classe Heureuse', de: 'Glückliches Klassenzimmer',
+            es: 'Aula Feliz', fr: 'Classe heureuse', de: 'Glückliches Klassenzimmer',
             pt: 'Sala de Aula Feliz'
         };
         return map[this.i18n.currentLang] || map.en;
@@ -2962,7 +2962,7 @@ class GameEngine {
             en: 'The Classroom — Happy Every Day',
             ja: '卒業できない教室 — 幸せな毎日',
             es: 'El Aula — Feliz Cada Día',
-            fr: 'La Classe — Heureux Chaque Jour',
+            fr: 'La classe — des jours heureux',
             de: 'Das Klassenzimmer — Glücklich Jeden Tag',
             pt: 'A Sala de Aula — Feliz Todos os Dias'
         };

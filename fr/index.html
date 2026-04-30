@@ -12,10 +12,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="icon" href="../favicon.svg" type="image/svg+xml">
-    <title>Nevergrad - Visual Novel Gratuit en Navigateur</title>
+    <title>Nevergrad : visual novel gratuit sur navigateur</title>
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Jouez à Nevergrad, un visual novel scolaire mystère gratuit sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et prise en charge multilingue.">
-    <meta name="keywords" content="visual novel gratuit, visual novel navigateur, visual novel sans téléchargement, jeu mystère scolaire gratuit, visual novel horreur psychologique, histoire interactive à choix, jeu à fins multiples, Nevergrad">
+    <meta name="description" content="Jouez à Nevergrad, un visual novel scolaire mystérieux gratuit, sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et une prise en charge multilingue.">
+    <meta name="keywords" content="visual novel gratuit, visual novel navigateur, visual novel sans téléchargement, jeu de mystère scolaire gratuit, visual novel d'horreur psychologique, histoire interactive à choix, jeu à fins multiples, Nevergrad">
     <meta name="author" content="Archerlab">
     <meta name="theme-color" content="#FFB7C5">
 
@@ -40,8 +40,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Nevergrad | Visual Novel Gratuit en Navigateur">
-    <meta property="og:description" content="Jouez à Nevergrad, un visual novel scolaire mystère gratuit sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et prise en charge multilingue.">
+    <meta property="og:title" content="Nevergrad | visual novel gratuit sur navigateur">
+    <meta property="og:description" content="Jouez à Nevergrad, un visual novel scolaire mystérieux gratuit, sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et une prise en charge multilingue.">
     <meta property="og:url" content="https://nevergrad.archerlab.dev/fr/">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
     <meta property="og:site_name" content="Archerlab Games">
@@ -49,8 +49,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nevergrad : Visual Novel Gratuit en Navigateur">
-    <meta name="twitter:description" content="Un visual novel scolaire mystère gratuit, sans téléchargement. Cinq jours, cinq héroïnes et sept fins.">
+    <meta name="twitter:title" content="Nevergrad : visual novel gratuit sur navigateur">
+    <meta name="twitter:description" content="Un visual novel scolaire mystérieux gratuit, sans téléchargement. Cinq jours, cinq héroïnes et sept fins.">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
 
     <!-- Preconnect -->
@@ -71,8 +71,8 @@
       "@context": "https://schema.org",
       "@type": "VideoGame",
       "name": "Nevergrad: La classe sans diplôme",
-      "alternateName": ["졸업하지 못한 교실", "네버그라드", "The Classroom of No Graduation"],
-      "description": "Jouez à Nevergrad, un visual novel scolaire mystère gratuit sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et prise en charge multilingue.",
+      "alternateName": ["졸업하지 못한 교실", "네버그라드", "The Classroom That Never Graduates"],
+      "description": "Jouez à Nevergrad, un visual novel scolaire mystérieux gratuit, sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et une prise en charge multilingue.",
       "genre": ["Visual Novel", "Psychological Thriller", "School Mystery", "Interactive Fiction"],
       "gamePlatform": "Web Browser",
       "applicationCategory": "Game",
@@ -88,7 +88,7 @@
     <!-- ===== Title Screen ===== -->
     <div id="title-screen" class="screen active">
         <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="Accueil ArcherLab" title="ArcherLab">ArcherLab</a>
-        <select class="lang-switcher" aria-label="Language" onchange="if(this.value)location.href=this.value">
+        <select class="lang-switcher" aria-label="Langue" onchange="if(this.value)location.href=this.value">
             <option value="/">Coréen</option>
             <option value="/en/">English</option>
             <option value="/ja/">日本語</option>
@@ -223,16 +223,16 @@
         <div class="settings-container">
             <div class="settings-header">
                 <span id="settings-title" class="settings-title">Paramètres</span>
-                <button id="settings-close" class="settings-close-btn" aria-label="Close">&times;</button>
+                <button id="settings-close" class="settings-close-btn" aria-label="Fermer">&times;</button>
             </div>
             <div class="settings-body">
                 <div class="settings-row">
-                    <label id="settings-bgm-label" class="settings-label" for="settings-bgm">Volume BGM</label>
+                    <label id="settings-bgm-label" class="settings-label" for="settings-bgm">Volume musique</label>
                     <input type="range" id="settings-bgm" min="0" max="100" step="1" value="50">
                     <span id="settings-bgm-value" class="settings-value">50%</span>
                 </div>
                 <div class="settings-row">
-                    <label id="settings-sfx-label" class="settings-label" for="settings-sfx">Volume effets</label>
+                    <label id="settings-sfx-label" class="settings-label" for="settings-sfx">Volume des effets</label>
                     <input type="range" id="settings-sfx" min="0" max="100" step="1" value="80">
                     <span id="settings-sfx-value" class="settings-value">80%</span>
                 </div>

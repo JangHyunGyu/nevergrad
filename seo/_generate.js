@@ -541,7 +541,7 @@ function structuredData(langData, page) {
       {
         '@type': 'VideoGame',
         name: 'Nevergrad',
-        alternateName: ['The Classroom of No Graduation', '졸업하지 못한 교실', '네버그라드'],
+        alternateName: ['The Classroom That Never Graduates', '졸업하지 못한 교실', '네버그라드'],
         description: page.meta,
         genre: ['Visual Novel', 'School Mystery', 'Psychological Thriller', 'Interactive Fiction'],
         gamePlatform: 'Web Browser',

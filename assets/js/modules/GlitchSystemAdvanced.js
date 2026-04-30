@@ -1353,7 +1353,7 @@ class GlitchSystemAdvanced {
                 this.showRedVignette();
                 this.showGhostText(this._pickLocalized({
                     ko: '졸업하지 못한 교실',
-                    en: 'The Classroom of No Graduation',
+                    en: 'The Classroom That Never Graduates',
                     ja: '卒業できなかった教室',
                     es: 'El aula sin graduación',
                     fr: 'La classe sans diplôme',

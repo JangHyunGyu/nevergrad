@@ -267,12 +267,12 @@ class I18nManager {
             settingsFullscreen: "Pantalla completa", settingsReset: "Restablecer", settingsOn: "ON", settingsOff: "OFF",
             ftPlaceholder: "Escribe un mensaje...", ftSend: "Enviar",
             dayFormat: "Día {day} - {slot}",
-            slots: { morning: "Mañana", lunch: "Almuerzo", afterschool: "Después de Clases", night: "Noche" },
+            slots: { morning: "Mañana", lunch: "Almuerzo", afterschool: "Después de clases", night: "Noche" },
             galleryTitle: "Galería de Finales", galleryBack: "Volver", galleryProgress: "Progreso",
             saveComplete: "Guardado",
             slotAuto: "AUTO", slotEmpty: "Vacío", slotOldFormat: "Guardado anterior",
             slotOverwrite: "¿Sobrescribir?", slotYes: "Sí", slotNo: "No",
-            binauralActivated: "🎧 Modo Binaural — Auriculares Recomendados",
+            binauralActivated: "🎧 Modo binaural — auriculares recomendados",
             latenightAlone: "...¿seré la única despierta a estas horas?",
             headphoneHint: "...se oiría mejor con auriculares.",
             timeDialogue: {
@@ -284,7 +284,7 @@ class I18nManager {
                 afternoon:   "{time}... ya es la tarde. Poco queda hasta el fin de clases.",
                 sunset:      "{time}. Se está poniendo el sol... ¿vas a quedarte en la escuela?",
                 evening:     "{time}... se está haciendo de noche. La escuela se queda en silencio.",
-                night:       "{time}... tarde. ¿No te da miedo estar aquí sola?"
+                night:       "{time}... es tarde. ¿No te da miedo estar aquí a solas?"
             }
         },
         fr: {
@@ -294,7 +294,7 @@ class I18nManager {
             newGame: "Nouvelle partie", continue: "Continuer", gallery: "Galerie",
             namePrompt: "Quel est votre nom ?", namePlaceholder: "Entrez votre nom", start: "Commencer",
             save: "Sauvegarder", load: "Charger", settings: "Paramètres", toTitle: "Écran titre", resume: "Reprendre",
-            settingsBgm: "Volume BGM", settingsSfx: "Volume effets", settingsTextSpeed: "Vitesse du texte",
+            settingsBgm: "Volume musique", settingsSfx: "Volume des effets", settingsTextSpeed: "Vitesse du texte",
             settingsFullscreen: "Plein écran", settingsReset: "Réinitialiser", settingsOn: "ON", settingsOff: "OFF",
             ftPlaceholder: "Écrivez un message...", ftSend: "Envoyer",
             dayFormat: "Jour {day} - {slot}",
@@ -424,7 +424,7 @@ class I18nManager {
         },
         fr: {
             eunsu: "Professeure principale",
-            riin: "Infirmiere scolaire",
+            riin: "Infirmière scolaire",
             sea: "Han Sea",
             yuna: "Choi Yuna",
             seolhwa: "Lee Seolhwa",
@@ -494,19 +494,19 @@ class I18nManager {
             romance: "Afinidad",
             thriller: {
                 eunsu: "Peligro",
-                sea: "Obsesion",
+                sea: "Obsesión",
                 riin: "Confianza",
                 yuna: "Afinidad",
-                seolhwa: "Sincronia"
+                seolhwa: "Sincronía"
             }
         },
         fr: {
-            romance: "Affinite",
+            romance: "Affinité",
             thriller: {
                 eunsu: "Danger",
                 sea: "Obsession",
                 riin: "Confiance",
-                yuna: "Affinite",
+                yuna: "Affinité",
                 seolhwa: "Synchronisation"
             }
         },

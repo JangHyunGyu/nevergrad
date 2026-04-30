@@ -34,7 +34,7 @@ class GallerySystem {
             ko: '끝까지 저항했지만, 교실은 너를 놓아주지 않았다.',
             en: 'You resisted to the end, but the classroom never let go.',
             ja: '最後まで抵抗したが、教室は離してくれなかった。',
-            es: 'Resististe hasta el final, pero el aula nunca te solto.',
+            es: 'Resististe hasta el final, pero el aula nunca te soltó.',
             fr: "Tu as resiste jusqu'au bout, mais la classe ne t'a pas libere.",
             de: 'Du hast bis zum Ende Widerstand geleistet, aber das Klassenzimmer liess nicht los.',
             pt: 'Voce resistiu ate o fim, mas a sala nunca soltou voce.'
@@ -61,7 +61,7 @@ class GallerySystem {
             ko: '너는 사라졌지만, 무언가가 교실에 남았다.',
             en: 'You left, but something stayed behind in the classroom.',
             ja: 'あなたは去ったが、何かが教室に残った。',
-            es: 'Te fuiste, pero algo se quedo en el aula.',
+            es: 'Te fuiste, pero algo se quedó en el aula.',
             fr: 'Tu es parti, mais quelque chose est reste dans la classe.',
             de: 'Du bist gegangen, aber etwas blieb im Klassenzimmer zurueck.',
             pt: 'Voce foi embora, mas algo ficou na sala de aula.'
@@ -79,7 +79,7 @@ class GallerySystem {
             ko: '너는 공범이 되었다.',
             en: 'You became an accomplice.',
             ja: 'あなたは共犯者になった。',
-            es: 'Te convertiste en complice.',
+            es: 'Te convertiste en cómplice.',
             fr: 'Tu es devenu complice.',
             de: 'Du wurdest zum Komplizen.',
             pt: 'Voce se tornou cumplice.'
@@ -120,6 +120,23 @@ class GallerySystem {
             artist: 'Nevergrad OST',
             expressions: 'Expressions',
             close: 'Close'
+        },
+        es: {
+            title: 'Galería',
+            progress: 'Progreso',
+            back: 'Volver',
+            tabs: { endings: 'Finales', cg: 'CG de eventos', music: 'Música', characters: 'Expresiones' },
+            locked: 'Bloqueado',
+            lockedEnding: 'Final aún no alcanzado',
+            lockedCg: 'Se desbloquea al ver este CG de evento en el juego.',
+            lockedMusic: 'Se desbloquea cuando este BGM suena en el juego.',
+            lockedCharacter: 'Se desbloquea al conocer a este personaje en el juego.',
+            lockedExpression: 'Se desbloquea al ver esta expresión en el juego.',
+            play: 'Reproducir',
+            stop: 'Detener',
+            artist: 'Nevergrad OST',
+            expressions: 'Expresiones',
+            close: 'Cerrar'
         }
     };
 

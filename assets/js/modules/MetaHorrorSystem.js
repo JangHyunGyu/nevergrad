@@ -207,7 +207,7 @@ class MetaHorrorSystem {
         const warn = 'color: #ff4444; font-size: 12px; font-weight: bold;';
         const copy = this._pickLocalized({
             en: {
-                title: 'The Classroom of No Graduation',
+                title: 'The Classroom That Never Graduates',
                 watched: '\n...Someone is watching this place.',
                 run: '...Run.',
                 leave: 'Get out of this school.',

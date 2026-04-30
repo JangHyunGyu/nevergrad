@@ -1351,7 +1351,7 @@ Object.assign(SCENARIO[5], {
         glitch: {
             textReplace: {
                 ko: { from: "졸업하지 못한 교실", to: "졸업시키지 않는 교실" },
-                en: { from: "The Classroom of No Graduation", to: "The Classroom That Refuses Graduation" },
+                en: { from: "The Classroom That Never Graduates", to: "The Classroom That Refuses Graduation" },
                 ja: { from: "卒業できない教室", to: "卒業させない教室" },
                 es: { from: "El Aula Sin Graduación", to: "El aula que no deja graduarse" },
                 fr: { from: "La classe sans diplôme", to: "La classe qui refuse le diplome" },

@@ -1070,7 +1070,7 @@ class DeviceGimmickSystem {
                 ko: "\uc5b4\ub51c \ubcf4\ub294 \uac70\uc57c?<br>\ub2e4\uc2dc \ub611\ubc14\ub85c \ub4e4\uc5b4.",
                 en: "Where are you looking?<br>Hold it properly again.",
                 ja: "\u3069\u3053\u3092\u898b\u3066\u3044\u308b\u306e?<br>\u3082\u3046\u4e00\u5ea6\u307e\u3063\u3059\u3050\u6301\u3063\u3066.",
-                es: "A donde miras?<br>Sostenlo bien otra vez.",
+                es: "¿Adónde miras?<br>Sujétalo bien otra vez.",
                 fr: "Ou regardes-tu ?<br>Tiens-le droit.",
                 de: "Wohin schaust du?<br>Halte es wieder gerade.",
                 pt: "Para onde voce esta olhando?<br>Segure direito de novo."
@@ -1079,7 +1079,7 @@ class DeviceGimmickSystem {
                 ko: "\ub3c4\ub9dd\uce58\ub824\uace0?<br>\ub098\ub97c \ub450\uace0?",
                 en: "Trying to run?<br>Leaving me behind?",
                 ja: "\u9003\u3052\u308b\u3064\u3082\u308a?<br>\u79c1\u3092\u7f6e\u3044\u3066?",
-                es: "Intentas huir?<br>Dejandome atras?",
+                es: "¿Intentas huir?<br>¿Dejándome atrás?",
                 fr: "Tu essaies de fuir ?<br>En me laissant ?",
                 de: "Willst du weglaufen?<br>Ohne mich?",
                 pt: "Tentando fugir?<br>Me deixando para tras?"

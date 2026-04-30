@@ -569,8 +569,10 @@ if (fs.existsSync(appJsPath)) {
             for (const m of content.matchAll(/this\.engine\.(\w+)/g)) {
                 const propRef = m[1];
                 // 기본 엔진 프로퍼티는 skip (state, i18n, dialogue, choice, etc.)
-                const builtinProps = ['state', 'i18n', 'dialogue', 'choice', 'choiceAdv',
-                    'scene', 'glitch', 'glitchAdv', 'audio', 'save', 'freeTalk',
+                const builtinProps = ['state', 'i18n', 'dialogue', 'choices', 'choiceAdvanced',
+                    'choice', 'choiceAdv', 'scene', 'renderer', 'glitch', 'glitchAdvanced',
+                    'glitchAdv', 'audio', 'save', 'freeTalk', 'deviceGimmick', 'metaHorror',
+                    'crossover', 'gallery', 'favicon', 'settings',
                     '_loadScene', '_playStatChangeFX', 'currentScene'];
                 if (builtinProps.includes(propRef)) continue;
                 // app.js에서 등록된 프로퍼티에 존재하는지 확인
@@ -1448,9 +1450,12 @@ if (fs.existsSync(modulesPath)) {
     // this.engine.X.method() 패턴에서 method가 X 클래스에 존재하는지
     const engineSubsystems = {
         'glitch': 'GlitchSystem',
+        'glitchAdvanced': 'GlitchSystemAdvanced',
         'glitchAdv': 'GlitchSystemAdvanced',
         'dialogue': 'DialogueSystem',
+        'choices': 'ChoiceSystem',
         'choice': 'ChoiceSystem',
+        'choiceAdvanced': 'ChoiceSystemAdvanced',
         'choiceAdv': 'ChoiceSystemAdvanced',
         'audio': 'AudioManager',
         'save': 'SaveManager',
@@ -1460,10 +1465,13 @@ if (fs.existsSync(modulesPath)) {
         'metaHorror': 'MetaHorrorSystem',
         'renderer': 'SceneRenderer',
         'scene': 'SceneRenderer',
+        'gallery': 'GallerySystem',
+        'favicon': 'FaviconManager',
+        'crossover': 'CrossoverSystem',
     };
 
     for (const [file, content] of Object.entries(allJsContent)) {
-        for (const m of content.matchAll(/this\.engine\.(\w+)\.(\w+)\s*\(/g)) {
+        for (const m of content.matchAll(/this\.engine\.(\w+)(?:\?\.|\.)(\w+)\s*\(/g)) {
             const subsys = m[1];
             const method = m[2];
             const targetClass = engineSubsystems[subsys];
@@ -1474,7 +1482,7 @@ if (fs.existsSync(modulesPath)) {
         }
         // this.glitch.method(), this.audio.method() 등 (GameEngine 내부)
         if (file === 'GameEngine.js') {
-            for (const m of content.matchAll(/this\.(glitch|audio|dialogue|choice|save|i18n|renderer|metaHorror|deviceGimmick)\.(\w+)\s*\(/g)) {
+            for (const m of content.matchAll(/this\.(glitch|glitchAdvanced|glitchAdv|audio|dialogue|choices|choice|choiceAdvanced|choiceAdv|save|i18n|renderer|metaHorror|deviceGimmick|gallery|favicon|crossover)(?:\?\.|\.)(\w+)\s*\(/g)) {
                 const subsys = m[1];
                 const method = m[2];
                 const targetClass = engineSubsystems[subsys];

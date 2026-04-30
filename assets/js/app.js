@@ -465,9 +465,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             parts.push('online:' + navigator.onLine);
             var g = window.__game;
             if (g) {
-                if (g.stateManager?.currentDay) parts.push('day:' + g.stateManager.currentDay);
-                if (g.stateManager?.currentScene) parts.push('scene:' + g.stateManager.currentScene);
-                if (g.dialogueSystem?.isActive) parts.push('dialogue:active');
+                var state = g.state || g.stateManager;
+                var dialogue = g.dialogue || g.dialogueSystem;
+                if (state?.currentDay) parts.push('day:' + state.currentDay);
+                if (state?.currentScene) parts.push('scene:' + state.currentScene);
+                if (dialogue?.isActive) parts.push('dialogue:active');
             }
             parts.push('vw:' + window.innerWidth + 'x' + window.innerHeight);
             return parts.join(' | ');

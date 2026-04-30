@@ -2142,7 +2142,7 @@ class GlitchSystemAdvanced {
             if (!audio.ctx || audio.ctx.state !== 'running') return;
             try {
                 const ctx = audio.ctx;
-                const now = ctx.currentCurrentTime !== undefined ? ctx.currentTime : ctx.currentTime;
+                const now = ctx.currentTime;
                 // 트라이톤 + 반음 긁기 = 강한 불협화음 (F#4 + G4 + C5)
                 const frequencies = [369.99, 392.00, 523.25];
                 const master = ctx.createGain();

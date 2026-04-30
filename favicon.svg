@@ -1,34 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Nevergrad favicon</title>
+  <desc id="desc">A dark school crest with a locked classroom mark, a cherry blossom accent, and the thirteenth cycle.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a1520"/>
-      <stop offset="100%" stop-color="#2d1f3a"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09070d"/>
+      <stop offset="0.56" stop-color="#1b1221"/>
+      <stop offset="1" stop-color="#332033"/>
     </linearGradient>
-    <linearGradient id="sakura" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffc4d6"/>
-      <stop offset="50%" stop-color="#FFB7C5"/>
-      <stop offset="100%" stop-color="#e8899c"/>
+    <linearGradient id="crest" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff2f6"/>
+      <stop offset="0.54" stop-color="#ffbfd0"/>
+      <stop offset="1" stop-color="#c55b77"/>
     </linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
-    <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/></filter>
+    <linearGradient id="door" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2331"/>
+      <stop offset="1" stop-color="#110d17"/>
+    </linearGradient>
+    <radialGradient id="petal" cx="0.35" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#fff8fb"/>
+      <stop offset="0.42" stop-color="#ffb7c5"/>
+      <stop offset="1" stop-color="#ed6f92"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+    <filter id="pinkGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
-  <circle cx="256" cy="256" r="180" fill="#FFB7C5" opacity="0.04"/>
-  <g filter="shadow">
-    <rect x="150" y="130" width="212" height="290" rx="8" fill="#f5e6d0" opacity="0.95"/>
-    <rect x="165" y="145" width="182" height="260" rx="4" fill="#faf3e8"/>
-    <line x1="185" y1="190" x2="330" y2="190" stroke="#d4c4a8" stroke-width="2" opacity="0.5"/>
-    <line x1="185" y1="220" x2="310" y2="220" stroke="#d4c4a8" stroke-width="2" opacity="0.4"/>
-    <line x1="185" y1="250" x2="320" y2="250" stroke="#d4c4a8" stroke-width="2" opacity="0.3"/>
+
+  <rect width="512" height="512" rx="92" fill="url(#bg)"/>
+  <path d="M72 168H440M72 256H440M72 344H440M168 72V440M256 72V440M344 72V440"
+        stroke="#ffffff" stroke-width="4" opacity="0.055"/>
+  <circle cx="392" cy="118" r="92" fill="#ffb7c5" opacity="0.09"/>
+
+  <g filter="url(#softShadow)">
+    <path d="M256 54L390 104V258C390 358 332 421 256 452C180 421 122 358 122 258V104Z"
+          fill="#15101b" stroke="url(#crest)" stroke-width="18" stroke-linejoin="round"/>
+    <path d="M159 129H353V341C353 356 341 368 326 368H186C171 368 159 356 159 341Z"
+          fill="url(#door)" stroke="#ffe2ea" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M181 151H331V199H181ZM181 222H331V270H181Z"
+          fill="#ffd5df" opacity="0.18"/>
+    <path d="M206 342V169H239L300 278V169H335V342H302L241 233V342Z"
+          fill="#fff4f7"/>
+    <path d="M354 170C372 190 383 218 383 251"
+          fill="none" stroke="#ff6f9d" stroke-width="10" stroke-linecap="round" opacity="0.74"/>
+    <path d="M372 178L348 177L358 199Z" fill="#ff6f9d" opacity="0.9"/>
   </g>
-  <g filter="glow">
-    <circle cx="300" cy="320" r="28" fill="url(#sakura)" opacity="0.7"/>
-    <circle cx="330" cy="290" r="18" fill="url(#sakura)" opacity="0.5"/>
-    <circle cx="270" cy="345" r="14" fill="url(#sakura)" opacity="0.4"/>
-    <circle cx="345" cy="325" r="10" fill="url(#sakura)" opacity="0.3"/>
+
+  <g filter="url(#pinkGlow)">
+    <path d="M99 337C126 326 151 343 151 343C151 343 139 370 112 381C89 390 70 375 70 375C70 375 76 346 99 337Z"
+          fill="url(#petal)" transform="rotate(-18 111 356)"/>
+    <path d="M407 354C425 337 454 344 454 344C454 344 457 374 439 391C423 406 397 398 397 398C397 398 391 370 407 354Z"
+          fill="url(#petal)" opacity="0.82" transform="rotate(24 426 371)"/>
   </g>
-  <g fill="#FFB7C5" opacity="0.3">
-    <circle cx="120" cy="150" r="6"/><circle cx="400" cy="180" r="5"/><circle cx="110" cy="360" r="4"/>
-    <circle cx="410" cy="400" r="5"/><circle cx="380" cy="130" r="3"/>
+
+  <g font-family="Georgia, 'Times New Roman', serif" font-weight="700" text-anchor="middle">
+    <text x="256" y="426" font-size="54" fill="#ffb7c5" opacity="0.94">13</text>
   </g>
 </svg>

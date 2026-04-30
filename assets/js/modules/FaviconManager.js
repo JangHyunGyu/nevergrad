@@ -48,7 +48,7 @@ class FaviconManager {
         const link = this._ensureLink();
         let href;
         if (variant === 'default') {
-            href = 'favicon.svg';
+            href = this._defaultHref();
         } else {
             const svg = this._buildSVG(variant);
             href = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
@@ -68,33 +68,36 @@ class FaviconManager {
         return link;
     }
 
+    _defaultHref() {
+        return (typeof window !== 'undefined' && window.__NEVERGRAD_LANG__)
+            ? '../favicon.svg'
+            : 'favicon.svg';
+    }
+
     /**
-     * 변이별 SVG 문자열 생성 — 동일한 방패 실루엣 위에
+     * 변이별 SVG 문자열 생성 — 동일한 학교 배지 실루엣 위에
      * 색/크랙/숫자를 덧그려 "같은 아이콘인데 뭔가 다름" 연출.
      * @private
      */
     _buildSVG(variant) {
-        // 기본 방패 도형 (모든 변이 공통 베이스)
-        // base = {bg, shieldFill, shieldStroke}
         const palette = {
-            cracked:  { bg1: '#1a1520', bg2: '#2d1f3a', shield: '#8fc99a', stroke: '#5a8765', overlay: null },
-            red:      { bg1: '#1a0808', bg2: '#3a0f14', shield: '#8a2a2a', stroke: '#4a1010', overlay: null },
-            thirteen: { bg1: '#0f0f12', bg2: '#1a1a20', shield: '#2a2a33', stroke: '#4a4a55', overlay: '13' }
+            cracked:  { bg1: '#09070d', bg2: '#2d1f3a', crest: '#9ad0a4', stroke: '#5c9f6d', door: '#111719', mark: '#f2fff4', accent: '#ffb7c5', overlay: null },
+            red:      { bg1: '#180606', bg2: '#3a0f14', crest: '#ba3b4a', stroke: '#5c1117', door: '#16090c', mark: '#ffe7e7', accent: '#ff5c74', overlay: null },
+            thirteen: { bg1: '#0a0a0e', bg2: '#1b1b22', crest: '#6e707c', stroke: '#343640', door: '#111117', mark: '#efedf4', accent: '#c53030', overlay: '13' }
         }[variant];
         if (!palette) return '';
 
         const crackPath = variant === 'cracked'
-            ? `<path d="M256 160 L248 220 L262 250 L244 300 L258 340 L250 380"
-                     stroke="#1a1520" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.85"/>
-               <path d="M248 220 L220 240" stroke="#1a1520" stroke-width="4" fill="none" opacity="0.7"/>
-               <path d="M262 250 L290 270" stroke="#1a1520" stroke-width="4" fill="none" opacity="0.7"/>`
+            ? `<path d="M258 150L248 208L265 240L244 292L260 326L249 372"
+                     stroke="#09070d" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.9"/>
+               <path d="M248 208L217 231M265 240L300 263"
+                     stroke="#09070d" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.74"/>`
             : '';
 
         const numberOverlay = palette.overlay === '13'
-            ? `<text x="256" y="310" text-anchor="middle"
-                     font-family="Georgia, serif" font-size="180" font-weight="bold"
-                     fill="#c53030" opacity="0.95"
-                     style="letter-spacing:-8px">13</text>`
+            ? `<text x="256" y="426" text-anchor="middle"
+                     font-family="Georgia, serif" font-size="58" font-weight="bold"
+                     fill="${palette.accent}" opacity="0.98">13</text>`
             : '';
 
         return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -105,9 +108,19 @@ class FaviconManager {
     </linearGradient>
   </defs>
   <rect width="512" height="512" rx="96" fill="url(#bg)"/>
-  <!-- shield silhouette -->
-  <path d="M256 90 L396 140 L396 280 Q396 390 256 430 Q116 390 116 280 L116 140 Z"
-        fill="${palette.shield}" stroke="${palette.stroke}" stroke-width="10" opacity="0.95"/>
+  <path d="M72 168H440M72 256H440M72 344H440M168 72V440M256 72V440M344 72V440"
+        stroke="#ffffff" stroke-width="4" opacity="0.055"/>
+  <path d="M256 54L390 104V258C390 358 332 421 256 452C180 421 122 358 122 258V104Z"
+        fill="#15101b" stroke="${palette.crest}" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M159 129H353V341C353 356 341 368 326 368H186C171 368 159 356 159 341Z"
+        fill="${palette.door}" stroke="${palette.crest}" stroke-width="10" stroke-linejoin="round" opacity="0.96"/>
+  <path d="M181 151H331V199H181ZM181 222H331V270H181Z"
+        fill="${palette.crest}" opacity="0.16"/>
+  <path d="M206 342V169H239L300 278V169H335V342H302L241 233V342Z"
+        fill="${palette.mark}"/>
+  <path d="M354 170C372 190 383 218 383 251"
+        fill="none" stroke="${palette.accent}" stroke-width="10" stroke-linecap="round" opacity="0.78"/>
+  <path d="M372 178L348 177L358 199Z" fill="${palette.accent}" opacity="0.92"/>
   ${crackPath}
   ${numberOverlay}
 </svg>`;

@@ -203,8 +203,7 @@ function buildHreflangBlock() {
 function readSeoSitemapFragment() {
     const fragmentPath = path.join(ROOT, 'seo', '_sitemap_fragment.xml');
     if (!fs.existsSync(fragmentPath)) return '';
-    const fragment = fs.readFileSync(fragmentPath, 'utf-8').trim();
-    return fragment ? `\n${fragment}\n` : '';
+    return fs.readFileSync(fragmentPath, 'utf-8').replace(/\s+$/g, '');
 }
 
 function buildPage(lang, data) {
@@ -458,9 +457,9 @@ function buildPage(lang, data) {
         '    <!-- ===== Rotate Prompt (mobile and tablet portrait guidance) ===== -->'
     );
 
-    // 상대 경로를 한 단계 위로 (assets/ → ../assets/)
-    html = html.replace(/href="assets\//g, 'href="../assets/');
-    html = html.replace(/src="assets\//g, 'src="../assets/');
+    // 상대 경로를 한 단계 위로 (언어별 페이지는 /en/ 같은 하위 경로에 생성됨)
+    html = html.replace(/\b(href|src|data-src|data-default|data-ngp)="assets\//g, '$1="../assets/');
+    html = html.replace(/\bhref="(?:\.\/)?favicon\.svg"/g, 'href="../favicon.svg"');
 
     // 언어 강제 지정 스크립트 삽입 (첫 번째 <script> 앞에)
     html = html.replace(
@@ -517,8 +516,7 @@ const seoSitemapFragment = readSeoSitemapFragment();
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${sitemapUrls.join('\n')}
-${seoSitemapFragment}
+${sitemapUrls.join('\n')}${seoSitemapFragment ? `\n${seoSitemapFragment}` : ''}
 </urlset>
 `;
 

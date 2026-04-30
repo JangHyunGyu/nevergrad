@@ -330,11 +330,11 @@ class I18nManager {
             ftPlaceholder: "Nachricht eingeben...", ftSend: "Senden",
             dayFormat: "Tag {day} - {slot}",
             slots: { morning: "Morgen", lunch: "Mittag", afterschool: "Nach der Schule", night: "Nacht" },
-            galleryTitle: "Ending-Galerie", galleryBack: "Zurück", galleryProgress: "Fortschritt",
+            galleryTitle: "Galerie der Enden", galleryBack: "Zurück", galleryProgress: "Fortschritt",
             saveComplete: "Gespeichert",
             slotAuto: "AUTO", slotEmpty: "Leer", slotOldFormat: "Alter Speicherstand",
             slotOverwrite: "Überschreiben?", slotYes: "Ja", slotNo: "Nein",
-            binauralActivated: "🎧 Binauraler Modus — Kopfhörer Empfohlen",
+            binauralActivated: "🎧 Binauraler Modus — Kopfhörer empfohlen",
             latenightAlone: "...bin ich um diese Zeit als einzige wach.",
             headphoneHint: "...mit Kopfhörern würde es klarer klingen.",
             timeDialogue: {

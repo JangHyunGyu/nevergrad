@@ -123,7 +123,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_school_3": {
         character: null,
-        sfx: { file: "sfx_metal_gate_creak.mp3", volume: 0.8, trimStart: 0.05, trimEnd: 0.1 },
+        sfx: { file: "sfx_metal_gate_creak.mp3", volume: 0.8 },
         unskippable: true,
         next: "day5_morning_school_4"
     },
@@ -147,8 +147,8 @@ Object.assign(SCENARIO[5], {
         character: null,
         background: "old_building",
         sfx: [
-            { file: "sfx_gravel_steps.mp3", volume: 0.8, trimStart: 0.04, trimEnd: 0.12 },
-            { file: "sfx_thunder.mp3", volume: 0.7, trimStart: 0.02, trimEnd: 0.12 }
+            { file: "sfx_gravel_steps.mp3", volume: 0.8 },
+            { file: "sfx_thunder.mp3", volume: 0.7 }
         ],
         unskippable: true,
         next: "day5_morning_school_9"
@@ -159,7 +159,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_school_10": {
         character: null,
-        sfx: { file: "sfx_wall_scratch.mp3", volume: 0.55, trimStart: 0.05, trimEnd: 0.12 },
+        sfx: { file: "sfx_wall_scratch.mp3", volume: 0.55 },
         unskippable: true,
         next: "day5_morning_school_11"
     },
@@ -170,14 +170,14 @@ Object.assign(SCENARIO[5], {
     "day5_morning_school_11": {
         background: "basement",
         character: null,
-        sfx: { file: "sfx_pipe_thump_loop.mp3", loop: true, volume: 0.55, trimStart: 0.08, trimEnd: 0.12 },
+        sfx: { file: "sfx_pipe_thump_loop.mp3", loop: true, volume: 0.55 },
         unskippable: true,
         stopSfx: "sfx_thunder.mp3",
         next: "day5_morning_rescue_1"
     },
     "day5_morning_rescue_1": {
         character: null,
-        sfx: { file: "sfx_machine_hum_loop.mp3", loop: true, volume: 0.38, trimStart: 0.08, trimEnd: 0.12 },
+        sfx: { file: "sfx_machine_hum_loop.mp3", loop: true, volume: 0.38 },
         stopSfx: { file: "sfx_pipe_thump_loop.mp3", fadeOut: 0.8 },
         unskippable: true,
         next: "day5_morning_rescue_2"

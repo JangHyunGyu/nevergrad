@@ -210,7 +210,7 @@ Object.assign(SCENARIO[3], {
     // CRITICAL: "전 학교가 진짜 있긴 했나?"
     "day3_night_bleed_13": {
         character: null,
-        sfx: { file: "memory_reveal_stinger.mp3", volume: 0.72, trimStart: 0.02, trimEnd: 0.08 },
+        sfx: { file: "memory_reveal_stinger.mp3", volume: 0.72 },
         glitch: { screenShake: true, noise: true, noiseDuration: 300 },
         unskippable: true,
         next: "day3_night_bleed_14"
@@ -300,7 +300,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_wall_8": {
         character: null,
-        sfx: { file: "sfx_wall_scratch.mp3", volume: 0.55, trimStart: 0.05, trimEnd: 0.12 },
+        sfx: { file: "sfx_wall_scratch.mp3", volume: 0.55 },
         unskippable: true,
         next: "day3_night_wall_9"
     },
@@ -310,7 +310,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_wall_10": {
         character: null,
-        sfx: { file: "sfx_wall_scratch.mp3", volume: 0.5, trimStart: 0.05, trimEnd: 0.12 },
+        sfx: { file: "sfx_wall_scratch.mp3", volume: 0.5 },
         unskippable: true,
         next: "day3_night_wall_11"
     },

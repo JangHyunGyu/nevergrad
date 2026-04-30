@@ -50,7 +50,7 @@ Object.assign(SCENARIO[5], {
         character: "eunsu_pa",
         charOpacity: 0.7,
         stopSfx: "sfx_footsteps_running.mp3",
-        sfx: { file: "sfx_pa_chime_static.mp3", volume: 0.85, trimStart: 0.02, trimEnd: 0.08 },
+        sfx: { file: "sfx_pa_chime_static.mp3", volume: 0.85 },
         unskippable: true,
         next: "day5_lunch_chase_5"
     },
@@ -235,7 +235,7 @@ Object.assign(SCENARIO[5], {
     // 계단 발소리 가까워짐
     "day5_lunch_left_23": {
         characters: { left: "yuna_weak", center: "sea_vulnerable" },
-        sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.7, trimStart: 0.05, trimEnd: 0.1 },
+        sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.7 },
         glitch: { screenShake: true },
         unskippable: true,
         next: "day5_lunch_left_24"
@@ -248,7 +248,7 @@ Object.assign(SCENARIO[5], {
     // "...13번째도 비켜줘야 하는 거야?"
     "day5_lunch_left_25": {
         characters: { left: "yuna_weak", center: "sea_cry" },
-        sfx: { file: "memory_reveal_stinger.mp3", volume: 0.78, trimStart: 0.02, trimEnd: 0.08 },
+        sfx: { file: "memory_reveal_stinger.mp3", volume: 0.78 },
         unskippable: true,
         next: "day5_lunch_left_choice"
     },
@@ -257,7 +257,7 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_left_choice": {
         characters: { left: "yuna_weak", center: "sea_cry" },
         stopSfx: "sfx_stairs_approaching.mp3",
-        sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.85, trimStart: 0.05, trimEnd: 0.1 },
+        sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.85 },
         timedChoice: 8000,
         unskippable: true,
         choices: [
@@ -310,7 +310,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_left_c1_7": {
         character: null,
-        sfx: { file: "sfx_body_collapse_soft.mp3", volume: 0.85, trimStart: 0.04, trimEnd: 0.1 },
+        sfx: { file: "sfx_body_collapse_soft.mp3", volume: 0.85 },
         unskippable: true,
         next: "day5_lunch_left_c1_8"
     },

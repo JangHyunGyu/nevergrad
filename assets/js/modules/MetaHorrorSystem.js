@@ -770,9 +770,10 @@ class MetaHorrorSystem {
         const resolvedBody = body.replace('{name}', playerName);
 
         try {
+            const iconPath = (window.__NEVERGRAD_LANG__ ? '../' : '') + 'assets/images/icon/notification_icon.png';
             const notification = new Notification(title, {
                 body: resolvedBody,
-                icon: 'assets/images/icon/notification_icon.png',
+                icon: new URL(iconPath, document.baseURI).href,
                 tag: 'nevergrad-meta-' + Date.now(),
                 requireInteraction: false,
                 silent: false

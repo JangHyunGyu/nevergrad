@@ -301,9 +301,16 @@ class SceneRenderer {
     }
 
     _withAssetVersion(src) {
-        if (!src || !/^assets\/images\/characters\//.test(src) || /[?#]/.test(src)) return src;
+        if (!src) return src;
+
+        const normalized = String(src).replace(/^\.\//, '');
+        const pathPart = normalized.split(/[?#]/)[0];
+        if (!/^(?:\.\.\/)?assets\/images\/characters\//.test(pathPart) || /[?#]/.test(normalized)) {
+            return this._getAssetPath(normalized);
+        }
+
         const version = (typeof CONFIG !== 'undefined' && CONFIG.VERSION) ? CONFIG.VERSION : '1';
-        return `${src}?v=${encodeURIComponent(version)}`;
+        return this._getAssetPath(`${normalized}?v=${encodeURIComponent(version)}`);
     }
 
     /**
@@ -438,7 +445,7 @@ class SceneRenderer {
         if (this.bgmAudio) {
             this.bgmAudio.pause();
         }
-        this.bgmAudio = new Audio(`assets/audio/bgm/${src}`);
+        this.bgmAudio = new Audio(this._getAssetUrl(`assets/audio/bgm/${src}`));
         this.bgmAudio.loop = true;
         this.bgmAudio.volume = 0.5;
         this.bgmAudio.play().catch(() => {});

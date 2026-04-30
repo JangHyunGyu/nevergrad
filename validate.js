@@ -771,6 +771,40 @@ for (const lang of langs) {
     }
 }
 
+// ═══════════════════════════════════════════
+// 23A. i18n 물음표 대체문자 깨짐 검사
+// ═══════════════════════════════════════════
+function isQuestionMarkCorruption(value) {
+    if (typeof value !== 'string') return false;
+    const compact = value.replace(/[\s'"`*.,:;!?¿¡()[\]{}<>「」『』…—\-_·。、，！？]/g, '');
+    return /^\?{4,}$/.test(compact);
+}
+
+for (const lang of ['ko', ...langs]) {
+    const langDir = path.join(I18N_DIR, lang);
+    if (!fs.existsSync(langDir)) continue;
+
+    for (const file of fs.readdirSync(langDir).filter(f => f.endsWith('.json'))) {
+        let langFileData;
+        try {
+            langFileData = JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'));
+        } catch (e) { continue; }
+
+        for (const [key, val] of Object.entries(langFileData)) {
+            if (isQuestionMarkCorruption(val.text)) {
+                errors.push(`[I18N_CORRUPT] ${lang}/${file} "${key}": text appears to be mojibake question marks`);
+            }
+            if (Array.isArray(val.choices)) {
+                val.choices.forEach((choice, i) => {
+                    if (isQuestionMarkCorruption(choice)) {
+                        errors.push(`[I18N_CORRUPT] ${lang}/${file} "${key}" choices[${i}]: appears to be mojibake question marks`);
+                    }
+                });
+            }
+        }
+    }
+}
+
 // ═══════════════════════════════════════════════════════════════════
 //
 //  ▼▼▼ 플레이스루 시뮬레이션 + 게임 UI + 메모리 누수 검증 ▼▼▼

@@ -165,6 +165,16 @@ class AudioManager {
     // 오디오 버퍼 로드
     // =========================================================================
 
+    _getAssetPath(path) {
+        if (!path) return '';
+        const normalized = String(path).replace(/^\.\//, '');
+        if (/^(?:https?:|data:|blob:|\/)/.test(normalized) || normalized.startsWith('../')) {
+            return normalized;
+        }
+        const needsParentPrefix = typeof window !== 'undefined' && window.__NEVERGRAD_LANG__;
+        return (needsParentPrefix ? '../' : '') + normalized;
+    }
+
     /**
      * 오디오 파일을 로드하여 AudioBuffer로 변환 (캐시)
      * @param {string} path - 오디오 파일 경로
@@ -172,10 +182,11 @@ class AudioManager {
      */
     async loadBuffer(path) {
         if (!this.ctx) return null;
+        const assetPath = this._getAssetPath(path);
 
         // 캐시 확인
-        if (this._bufferCache.has(path)) {
-            return this._bufferCache.get(path);
+        if (this._bufferCache.has(assetPath)) {
+            return this._bufferCache.get(assetPath);
         }
 
         // Prefer real audio files; synth is used as a fallback below.
@@ -184,13 +195,13 @@ class AudioManager {
         let fileLoadError = null;
 
         try {
-            const response = await fetch(path);
+            const response = await fetch(assetPath);
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}`);
             }
             const arrayBuffer = await response.arrayBuffer();
             const audioBuffer = await this.ctx.decodeAudioData(arrayBuffer);
-            this._bufferCache.set(path, audioBuffer);
+            this._bufferCache.set(assetPath, audioBuffer);
             return audioBuffer;
         } catch (e) {
             fileLoadError = e;
@@ -202,7 +213,7 @@ class AudioManager {
             try {
                 const buffer = await this._bgmSynthRegistry[filename]();
                 if (buffer) {
-                    this._bufferCache.set(path, buffer);
+                    this._bufferCache.set(assetPath, buffer);
                     return buffer;
                 }
             } catch (e) {
@@ -212,8 +223,8 @@ class AudioManager {
         }
 
         if (fileLoadError) {
-            console.warn(`[AudioManager] Failed to load: ${path}`, fileLoadError);
-            this._reportLoadFailure(path, fileLoadError);
+            console.warn(`[AudioManager] Failed to load: ${assetPath}`, fileLoadError);
+            this._reportLoadFailure(assetPath, fileLoadError);
             return null;
         }
     }

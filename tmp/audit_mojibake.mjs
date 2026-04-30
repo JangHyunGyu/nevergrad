@@ -94,6 +94,8 @@ function allowHit(fileRel, line, patternId) {
 
   if (patternId === 'unexpected-hangul-in-localized-surface') {
     if (!isLocalizedSurface(fileRel)) return true;
+    if (line.includes('"alternateName": ["졸업하지 못한 교실", "네버그라드"')) return true;
+    if (line.includes('<option value="/">한국어</option>')) return true;
   }
 
   return false;

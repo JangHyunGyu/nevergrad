@@ -1,196 +1,195 @@
 {
     "day3_after_start": {
         "name": "Eu",
-        "text": "*A chamada final terminou. A sala de aula se esvazia depressa. Pela janela, vejo alunos se reunindo em pequenos grupos no pátio.*"
+        "text": "*A aula acabou. A sala de aula esvazia rapidamente. Pela janela posso ver os alunos reunidos em pequenos grupos no pátio da escola.*"
     },
     "day3_after_start_2": {
         "name": "Eu",
-        "text": "*O dia inteiro foi estranho. Desde a manhã. O déjà-vu no caminho para a escola, o silêncio na sala, os olhos de Sea. Tudo.*"
+        "text": "*Hoje foi estranho. A partir desta manhã. O déjà vu no caminho para a escola, o silêncio na sala de aula, os olhos de Sea. Tudo isso.*"
     },
     "day3_after_start_3": {
         "name": "Eu",
-        "text": "*... Será que eu vou direto para casa? Não. Sinto que preciso fazer alguma coisa. Não consigo simplesmente ir embora carregando esse incômodo.*"
+        "text": "*...Devo ir para casa? Não. Sinto que preciso fazer alguma coisa. Não posso simplesmente carregar esse desconforto comigo.*"
     },
     "day3_after_choice": {
         "name": "Eu",
         "text": "*Para onde devo ir?*",
         "choices": [
-            "Passar na enfermaria",
-            "Ir com Sea",
-            "Passar na sala dos professores",
-            "Ficar sozinho"
+            "Passe na enfermaria",
+            "Vá com Sea",
+            "Passe pela secretaria da faculdade",
+            "Fique sozinho"
         ]
     },
     "day3_after_riin": {
         "name": "Eu",
-        "text": "*Fiquei em frente à porta da enfermaria. Ouço um pequeno som lá dentro. O som de garrafas de vidro batendo.*"
+        "text": "*Fiquei na frente da porta da enfermaria. Posso ouvir pequenos sons vindos de dentro. Garrafas de vidro tilintando.*"
     },
     "day3_after_riin_first": {
         "name": "Eu",
-        "text": "*É uma enfermaria onde nunca estive antes, então não sei por que meus passos estão indo para cá. Meu corpo se moveu primeiro.*"
+        "text": "*Nunca estive na enfermaria antes, mas de alguma forma meus pés me carregaram até aqui. Meu corpo se moveu sozinho.*"
     },
     "day3_after_riin_first_2": {
-        "name": "Kang Riin",
-        "text": "...entre."
+        "name": "Riin",
+        "text": "...Entre."
     },
     "day3_after_riin_2": {
         "name": "Eu",
-        "text": "*Eu bati. O som para. 2 segundos de silêncio.*"
+        "text": "*Eu bati. Os sons param. 2 segundos de silêncio.*"
     },
     "day3_after_riin_3": {
-        "name": "Kang Riin",
-        "text": "...entre."
+        "name": "Riin",
+        "text": "...Entre."
     },
     "day3_after_riin_4": {
         "name": "Eu",
-        "text": "*Abri a porta. A enfermeira Riin está parada em frente à pia. Parece que algo foi guardado às pressas. Ainda há umidade na bancada.*"
+        "text": "*Abri a porta. enfermeira Riin está em frente à pia. Parece que ela guardou algo apressadamente. Ainda há umidade na bancada.*"
     },
     "day3_after_riin_5": {
-        "name": "Kang Riin",
-        "text": "O que você está fazendo depois da escola? Você está ferido?"
+        "name": "Riin",
+        "text": "O que traz você aqui depois da escola? Você está se sentindo mal?"
     },
     "day3_after_riin_6": {
         "name": "Eu",
-        "text": "\"Não, é só... minha cabeça está meio confusa.\"\n\n*A enfermeira Riin me encara. Por um bom tempo. O olhar dela não é o de uma médica vendo um paciente, nem o de uma professora vendo um aluno. É algo mais... complicado.*"
+        "text": "\"Não, só... minha cabeça está uma bagunça.\"\n\n*enfermeira Riin olha para mim. Por um tempo. Esse olhar não é como um médico olha para um paciente, nem como um professor olha para um aluno. É algo mais... complicado.*"
     },
     "day3_after_riin_6a": {
         "name": "Kang Riin",
-        "text": "Tenho uma bebida com eletrólitos. Vitaminas e um pouco de ervas."
+        "text": "Eu tomo uma bebida eletrolítica. Vitaminas e um pouco de mistura de ervas."
     },
     "day3_after_riin_7": {
         "name": "Eu",
-        "text": "*A enfermeira Riin tira uma pequena garrafa do armário e despeja o conteúdo em um copo. Um líquido lilás-claro. A cor é estranha demais para vitamina.*\n\n*Riin me entrega o copo. Suas mãos tremem de leve. Desta vez está mais claro. O anelar e o mindinho tremem quase imperceptivelmente.*\n\n*Olho para os olhos da enfermeira Riin. Há... algo ali. Debaixo do sorriso, alguma coisa. Desespero? Arrependimento?*"
+        "text": "*enfermeira Riin pega uma pequena garrafa do armário e coloca em um copo. Um líquido roxo pálido. Uma cor estranha para algo supostamente à base de vitaminas.*\n\n*Riin oferece o copo. Sua mão está tremendo levemente. Mais obviamente desta vez. Seu dedo anelar e mindinho estão tremendo sutilmente.*\n\n*Eu olho nos olhos de enfermeira Riin. Há... algo ali. Por baixo do sorriso, alguma coisa. Desespero? Arrependimento?*"
     },
     "day3_after_riin_flicker": {
-        "name": "",
-        "text": "Fuja"
+        "text": "Fugir"
     },
     "day3_after_riin_choice": {
         "name": "Eu",
         "text": "*Devo beber?*",
         "choices": [
-            "Beber",
+            "Beba",
             "Recusar educadamente"
         ]
     },
     "day3_after_riin_drink": {
         "name": "Eu",
-        "text": "*Tomei um gole...um gosto amargo permanece na ponta da língua. Ligeiro sabor metálico. Não é uma vitamina...*"
+        "text": "*Tomei um gole. ...Um gosto amargo permanece na ponta da minha língua. Ligeiramente metálico. Não é o que você esperaria de vitaminas...*"
     },
     "day3_after_riin_drink_2": {
         "name": "Eu",
-        "text": "*A visibilidade está ligeiramente turva. 0,5 segundos? 1 segundo? Tontura breve. E passa.*"
+        "text": "*Minha visão oscila ligeiramente. Meio segundo? Um segundo? Uma breve tontura. Então passa.*"
     },
     "day3_after_riin_drink_3": {
         "name": "Eu",
-        "text": "*No instante em que a enfermeira Riin se virou, vi sua expressão. **Dor.** Breve, mas nítida. O rosto inteiro se contorceu. Como se ela mesma tivesse bebido veneno.** O sorriso volta imediatamente. Rápido demais. Como se alguém tivesse trocado sua expressão por controle remoto.*"
+        "text": "*No momento em que enfermeira Riin se virou, percebi a expressão dela. **Angústia.** Breve, mas inconfundível. Todo o seu rosto se contorceu. Como se fosse ela quem tivesse engolido veneno.*\n\n*O sorriso retorna imediatamente. Muito rapidamente. É como mudar de expressão com um controle remoto.*"
     },
     "day3_after_riin_drink_4": {
-        "name": "Kang Riin",
-        "text": "Tem um gosto um pouco, certo? As ervas têm um sabor amargo por natureza."
+        "name": "Riin",
+        "text": "O sabor está um pouco estranho, certo? As ervas são naturalmente amargas."
     },
     "day3_after_riin_drink_5": {
         "name": "Eu",
-        "text": "*A enfermeira Riin despeja o resto da bebida na pia. Vejo suas costas. Seus ombros estão duros.*"
+        "text": "*enfermeira Riin derrama o resto da bebida na pia. Eu posso vê-la de volta. Seus ombros estão rígidos.*"
     },
     "day3_after_riin_refuse": {
-        "name": "Kang Riin",
-        "text": "... Sério? Está tudo bem."
+        "name": "Riin",
+        "text": "...É assim mesmo? Isso é bom."
     },
     "day3_after_riin_refuse_2": {
         "name": "Eu",
-        "text": "*A mão da enfermeira Riin para. A força abandona os dedos que seguram o copo.*\n\n*Ela o leva embora. Despeja o conteúdo na pia. Vejo suas costas. Por trás do sorriso... alívio. Um alívio evidente.*"
+        "text": "*A mão de enfermeira Riin para. A força se esvai da mão que segura o copo.*\n\n*Ela tira isso. Derrama o conteúdo na pia. Eu posso vê-la de volta. Por trás do sorriso... alívio. Alívio inconfundível.*"
     },
     "day3_after_riin_refuse_3": {
         "name": "Eu",
-        "text": "*A enfermeira Riin se vira. Seus olhos estão vermelhos. Ela pisca rápido para esconder.*"
+        "text": "*enfermeira Riin se vira. Seus olhos estão vermelhos. Ela pisca rapidamente para esconder.*"
     },
     "day3_after_riin_refuse_4": {
-        "name": "Kang Riin",
-        "text": "... Vá para casa cedo e descanse. Você parece um pouco cansado hoje."
+        "name": "Riin",
+        "text": "...Vá para casa mais cedo e descanse. Você parece cansado hoje."
     },
     "day3_after_liin_sugar_1": {
         "name": "Eu",
-        "text": "*Ao sair da enfermaria, notei uma lata de lixo ao lado da porta. A tampa está entreaberta.*"
+        "text": "*Saindo da enfermaria, a lixeira ao lado da porta chamou minha atenção. A tampa está entreaberta.*"
     },
     "day3_after_liin_sugar_2": {
         "name": "Eu",
-        "text": "*Dá para ver a ampola dentro. Várias garrafas de vidro quebradas. Está rotulado - 'M-13'. E outra garrafa ao lado. A lista de ingredientes está visível. ‘Solução aquosa de glicose’.*"
+        "text": "*Ampolas no interior. Várias garrafas de vidro quebradas. Etiquetas anexadas - 'M-13.' E ao lado delas, outra garrafa. Posso ver os ingredientes: 'Solução de glicose'.*"
     },
     "day3_after_liin_sugar_3": {
         "name": "Eu",
-        "text": "*...glicose? Não são vitaminas?*"
+        "text": "*...Glicose? Não são vitaminas?*"
     },
     "day3_after_liin_sugar_4": {
         "name": "Eu",
-        "text": "*Enfermeira Riin fechou a porta atrás dele. Não consigo mais ver.*"
+        "text": "*enfermeira Riin fechou a porta atrás de mim. Eu não conseguia ver mais nada.*"
     },
     "day3_after_sea": {
         "name": "Eu",
-        "text": "*Saio da sala e Sea está me esperando. Encostada na parede. Não sei há quanto tempo está ali.**A expressão de Sea... não é o rosto radiante de sempre. Os cantos da boca estão levantados, mas os olhos estão frios. Sob as luzes fluorescentes, seus olhos parecem vidrados.*"
+        "text": "*Saí da sala de aula e Sea está esperando. Encostado na parede. Não sei há quanto tempo ela está lá.*\n\nA expressão de *Sea... não é o rosto brilhante de sempre. Os cantos de sua boca estão levantados, mas seus olhos estão frios. Sob a luz fluorescente, esses olhos parecem vidro.*"
     },
     "day3_after_sea_2": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "...{name}, onde você estava durante o almoço?"
     },
     "day3_after_sea_3": {
         "name": "Eu",
-        "text": "*Pode parecer uma pergunta leve, mas há força na voz. Está mais próximo de ‘Eu sei onde estive’ em vez de ‘Onde você esteve?’*"
+        "text": "*Parece casual, mas há força em sua voz. Não é 'onde você estava?' - é mais próximo de 'Já sei onde você estava'.*"
     },
     "day3_after_sea_noyuna_0": {
         "name": "",
-        "text": "*Os olhos de Sea estão me lendo. Mantendo seu sorriso. Mas o olhar dele é uma confirmação.*"
+        "text": "*Os olhos de Sea estão me lendo. Seu sorriso permanece imóvel. Mas o olhar dela é uma verificação.*"
     },
     "day3_after_sea_noyuna_0a": {
-        "name": "Han Sea",
+        "name": "Sea",
         "text": "Você estava sozinho?"
     },
     "day3_after_sea_noyuna_0b": {
         "name": "Eu",
-        "text": "Sim, descansei um pouco."
+        "text": "Sim, apenas descansando."
     },
     "day3_after_sea_noyuna_0c": {
         "name": "",
-        "text": "*Sea inclina a cabeça. 2 segundos. 3 segundos. Seu olhar nunca sai dos meus.*"
+        "text": "*Sea inclina a cabeça. Dois segundos. Três. Seu olhar não sai dos meus.*"
     },
     "day3_after_sea_noyuna": {
-        "name": "Han Sea",
-        "text": "... Parece um pouco diferente hoje em dia. {name}."
+        "name": "Sea",
+        "text": "...Você parece diferente ultimamente, {name}."
     },
     "day3_after_sea_noyuna_2": {
         "name": "Eu",
-        "text": "o que?"
+        "text": "Como assim?"
     },
     "day3_after_sea_noyuna_3": {
-        "name": "Han Sea",
-        "text": "Eu não sei. Eu apenas sinto... me afastando."
+        "name": "Sea",
+        "text": "Não sei. Apenas... como se você estivesse se afastando."
     },
     "day3_after_sea_noyuna_4": {
-        "name": "Han Sea",
-        "text": "... Se houver algo que você não me contou, diga-me. Estou do lado de {name}."
+        "name": "Sea",
+        "text": "...Se há algo que você não está me contando, é só dizer. Estou do seu lado, {name}."
     },
     "day3_after_sea_noyuna_5": {
         "name": "Eu",
-        "text": "*Sea ri. Os cantos da boca sobem com precisão. Um sorriso sem falhas. — Esfreguei meu antebraço. Por alguma razão, é legal.*"
+        "text": "*Sea sorri. Os cantos de seus lábios se levantam com precisão. Um sorriso impecável. - Esfreguei meu antebraço. Um arrepio percorreu meu corpo por algum motivo.*"
     },
     "day3_after_sea_noyuna_6": {
         "name": "Eu",
-        "text": "*... Já se passaram três dias, mas é 'parcial'. Essas palavras são calorosas, mas de alguma forma pesadas.*"
+        "text": "*...Faz apenas três dias e ela diz que está 'do meu lado'. As palavras são calorosas, mas de alguma forma... pesadas.*"
     },
     "day3_after_sea_4": {
-        "name": "Han Sea",
-        "text": "Ouvi dizer que você estava lá com Yuna."
+        "name": "Sea",
+        "text": "Ouvi dizer que você estava com Yuna."
     },
     "day3_after_sea_4a": {
         "name": "Eu",
-        "text": "*'Ouvi dizer que havia um.' Não é confirmação, mas confirmação. Alguém lhe contou ou você mesmo viu?**Os olhos de Sea estão me lendo. Estou olhando a reação. Como você responde, para onde vira os olhos, onde coloca as mãos.*"
+        "text": "*'Ouvi dizer que você estava.' Não é uma pergunta – uma afirmação. Quer alguém tenha contado a ela ou ela mesma tenha visto.*\n\n*Os olhos de Sea estão me lendo. Observando minha reação. Como respondo, para onde vão meus olhos, onde coloco minhas mãos.*"
     },
     "day3_after_sea_choice": {
         "name": "Eu",
-        "text": "*O que devo responder?*",
+        "text": "*Como posso responder?*",
         "choices": [
-            "fale honestamente",
-            "Eu sou vago"
+            "Seja honesto",
+            "Desviar"
         ]
     },
     "day3_after_sea_truth": {
@@ -199,191 +198,191 @@
     },
     "day3_after_sea_truth_2": {
         "name": "Eu",
-        "text": "*A expressão de Sea muda. Finamente. Minhas pálpebras tremem uma vez.*"
+        "text": "*A expressão de Sea muda. Um pouco. Sua pálpebra se contrai uma vez.*"
     },
     "day3_after_sea_truth_3": {
-        "name": "Han Sea",
-        "text": "Sim, honesto...gosto de ser honesto."
+        "name": "Sea",
+        "text": "Entendo, você é honesto. ...Eu gosto de honestidade."
     },
     "day3_after_sea_truth_4": {
         "name": "Eu",
-        "text": "*Sea olha pela janela. Por um tempo. Não há mais ninguém no corredor, a não ser duas pessoas. A luz do sol ilumina metade do rosto de Sea.*"
+        "text": "*Sea olha pela janela. Por muito tempo. Ninguém mais no corredor além de nós. A luz do sol ilumina metade do rosto de Sea.*"
     },
     "day3_after_sea_truth_5": {
-        "name": "Han Sea",
-        "text": "... O que você me mostrou?"
+        "name": "Sea",
+        "text": "...O que ela te mostrou?"
     },
     "day3_after_sea_truth_6": {
         "name": "Eu",
-        "text": "... Foto. Foto da escola."
+        "text": "...Fotos. Fotos da escola."
     },
     "day3_after_sea_truth_7": {
-        "name": "Han Sea",
-        "text": "\"Fotos da escola...\"*Sea retorna. Não há emoção nessa voz. Vazio.*"
+        "name": "Sea",
+        "text": "\"Fotos da escola...\"\n\n*Sea repete. Não há emoção em sua voz. É oco.*"
     },
     "day3_after_sea_truth_8": {
-        "name": "Han Sea",
-        "text": "\"...às vezes penso: por que estou fazendo isso?\"*Os olhos de Sea são estranhos. Ele está sorrindo... mas sua expressão está estranhamente fora de foco, como se ele estivesse prestes a chorar ou até mesmo gritar.*"
+        "name": "Sea",
+        "text": "\"...às vezes eu também me pergunto. Por que estou fazendo isso.\"\n\nOs olhos de *Sea são estranhos. Ela está sorrindo, mas... parece que ela pode começar a chorar a qualquer momento, ou talvez gritar - uma expressão estranhamente desfocada.*"
     },
     "day3_after_sea_truth_9": {
-        "name": "Han Sea",
-        "text": "\"... Não é nada. Esqueça.\"*Sea se vira. A parte de trás é pequena.*"
+        "name": "Sea",
+        "text": "\"...Não é nada. Esqueça.\"\n\n*Sea se vira. Suas costas parecem pequenas.*"
     },
     "day3_after_sea_lie": {
         "name": "Eu",
-        "text": "Eu estava no refeitório? Por quê?"
+        "text": "Eu estava no refeitório? Por que?"
     },
     "day3_after_sea_lie_2": {
         "name": "Eu",
-        "text": "*Os olhos de Sea se estreitam. Com um sorriso mantido. Os cantos da boca estão levantados, mas apenas os olhos estão frios.*"
+        "text": "*Os olhos de Sea se estreitam. Com o sorriso ainda no lugar. Os cantos da boca levantados, mas apenas os olhos ficando frios.*"
     },
     "day3_after_sea_lie_3": {
-        "name": "Han Sea",
-        "text": "... Você acabou de virar os olhos para a esquerda novamente. Você sempre faz isso toda vez que mente."
+        "name": "Sea",
+        "text": "...Seus olhos simplesmente se deslocaram para a esquerda novamente. Você sempre faz isso quando mente."
     },
     "day3_after_sea_lie_3a": {
         "name": "Eu",
-        "text": "*A voz está baixa. Como sussurrar. Não sei dizer se isso é uma decepção ou um aviso.*"
+        "text": "*Sua voz é baixa. Quase um sussurro. Não sei dizer se é uma dor ou um aviso.*"
     },
     "day3_after_sea_lie_4": {
-        "name": "Han Sea",
-        "text": "...nem pense em esconder isso de mim."
+        "name": "Sea",
+        "text": "...Nem pense em esconder coisas de mim."
     },
     "day3_after_sea_lie_4a": {
         "name": "Eu",
-        "text": "*...certo. O hábito de virar os olhos para a esquerda ao mentir. Mas como Sea sabe disso? Faz apenas três dias.*"
+        "text": "*...Ela está certa. O hábito de olhar para a esquerda quando minto. Mas como o Sea sabe disso? Faz apenas três dias.*"
     },
     "day3_after_sea_lie_5": {
-        "name": "Han Sea",
-        "text": "... Diga-me honestamente da próxima vez. Estou do lado de {name}."
+        "name": "Sea",
+        "text": "... Da próxima vez, seja honesto comigo. Estou do seu lado, {name}."
     },
     "day3_after_sea_lie_5a": {
         "name": "Eu",
-        "text": "*Sea ri. Desta vez, os olhos também sorriem. Mas essa risada é mais assustadora.*"
+        "text": "*Sea sorri. Desta vez, seus olhos também sorriem. Mas esse sorriso é ainda mais assustador.*"
     },
     "day3_after_eunsu": {
         "name": "Eu",
-        "text": "*Parei em frente à porta da sala dos professores. Já é tarde da escola, então a maioria dos professores já saiu do trabalho. A luz está acesa lá dentro.*"
+        "text": "*Hesitei em frente à porta do escritório da faculdade. A maioria dos professores já saiu porque já é tarde da escola. A luz está acesa lá dentro.*"
     },
     "day3_after_eunsu_2": {
         "name": "Eu",
-        "text": "*A porta está entreaberta. A professora Eunsu está sentada à mesa, escrevendo algo. Acho que ela não me viu.*"
+        "text": "*A porta está entreaberta. professora Eunsu está sentada em sua mesa escrevendo algo. Ela não parece ter me notado.*"
     },
     "day3_after_eunsu_3": {
         "name": "Eu",
-        "text": "*Há documentos espalhados sobre a mesa. Dá para vê-los daqui. Papel amarelo. Formato de tabela. Letras grossas no topo. **'Registro de Gerenciamento de Sujeitos'**.*\n\n*Sujeitos?*"
+        "text": "*Os documentos estão espalhados na mesa. Eu posso vê-los daqui. Papel amarelo. Formato de tabela. Texto em negrito na parte superior. **'Registro de Gerenciamento de Sujeitos'**.*\n\n*Sujeito?*"
     },
     "day3_after_eunsu_4": {
         "name": "Eu",
-        "text": "*A professora Eunsu se levanta da cadeira. Parece que recebeu uma ligação. Ela vai para o outro lado do corredor.*"
+        "text": "*professora Eunsu se levanta da cadeira. Parece que ela recebeu um telefonema. Ela caminha até o outro lado do corredor.*"
     },
     "day3_after_eunsu_5": {
         "name": "Eu",
-        "text": "*O documento permanece aberto*"
+        "text": "*Os documentos ficam abertos.*"
     },
     "day3_after_eunsu_choice": {
         "name": "Eu",
-        "text": "*Gostaria de ver os documentos?*",
+        "text": "*Devo olhar os documentos?*",
         "choices": [
-            "eu li brevemente",
-            "desvie o olhar"
+            "Dê uma olhada",
+            "Desvie o olhar"
         ]
     },
     "day3_after_eunsu_peek": {
         "name": "Eu",
-        "text": "*Aproximei-me da mesa, abafado pelos meus passos. As pontas dos meus dedos estão frias. Peguei o documento, mas o papel tremeu ligeiramente — minha mão tremia.** Os documentos são antigos. Os cantos estão dobrados e com manchas de café. Isso não é algo que fiz recentemente.*"
+        "text": "*Aproximei-me da mesa, abafando meus passos. As pontas dos meus dedos estão frias. Peguei o documento – o papel tremeu levemente – minhas mãos estão tremendo.*\n\n*Os documentos são antigos. Os cantos estão dobrados, com manchas de café. Isso não foi feito recentemente.*"
     },
     "day3_after_eunsu_peek_2": {
         "name": "Eu",
-        "text": "*Números e datas estão listados. O campo do nome está... quase vazio. Existe apenas um número.*"
+        "text": "*Números e datas estão listados. A coluna do nome está... quase vazia. Apenas números.*"
     },
     "day3_after_eunsu_peek_3": {
         "name": "Eu",
-        "text": "*#1... Data: 2023.03.02. Campo Nome: Em branco. Status: 'Concluído'**#3... Data: 15/09/2023. Campo Nome: Em branco. Status: 'Concluído'**#7... Data: 20.08.2024. Campo Nome: Em branco. Status: 'Concluído'*"
+        "text": "*#1... Data: 2023.03.02. Coluna de nome: em branco. Status: 'Terminado'*\n\n*#3... Data: 15/09/2023. Coluna de nome: em branco. Status: 'Terminado'*\n\n*#7... Data: 20.08.2024. Coluna de nome: em branco. Status: 'Terminado'*"
     },
     "day3_after_eunsu_peek_4": {
         "name": "Eu",
-        "text": "*Há uma nota em caneta vermelha ao lado do nº 7:**'Falha – Reação residual. Ocorrência de variáveis ​​inesperadas. Processamento pendente.'****...falha? Reação residual? tratamento?*"
+        "text": "*Ao lado do nº 7, há uma anotação em caneta esferográfica vermelha: **'Falha - resposta residual. Ocorreu uma variável inesperada. Processamento adiado.'***\n\n*...Falha? Resposta residual? Processamento?*"
     },
     "day3_after_eunsu_peek_5": {
         "name": "Eu",
-        "text": "*Minhas mãos estão tremendo. Virei a página.**#13 — Tem meu nome nele. Data: esta segunda-feira. O campo de status está vazio. Ainda não gravado.*"
+        "text": "*Minhas mãos estão tremendo. Virei a página.*\n\n*#13 -- meu nome está escrito lá. Data: esta segunda-feira. A coluna de status está vazia. Ainda não gravado.*"
     },
     "day3_after_eunsu_peek_6": {
         "name": "Eu",
-        "text": "*...12 linhas. 12 números. Existem 12 linhas sem nome. E o dia 13 com meu nome.**Sem nome. Todos os nomes das 12 pessoas anteriores foram apagados. Como se a sua própria existência tivesse sido apagada.** O que significa ‘fim’? Transferindo escolas? retirada da escola? Ou... algo mais?*"
+        "text": "*...12 linhas. 12 números. 12 linhas sem nomes. E o dia 13 com meu nome.*\n\n*Os nomes sumiram. Todos os 12 nomes anteriores foram apagados. Como se a própria existência deles tivesse sido excluída.*\n\n*O que significa 'Terminado'? Transferir? Expulsão? Ou... algo pior?*"
     },
     "day3_after_eunsu_peek_7": {
         "name": "Eu",
-        "text": "*Ouço passos. Eu levantei minha cabeça.*"
+        "text": "*Ouço passos. Eu olhei para cima.*"
     },
     "day3_after_eunsu_peek_8": {
-        "name": "Park Eunsu",
-        "text": "— Ah, isso? Compilei registros de aconselhamento para estudantes transferidos. Por que, me pergunto se contém minha própria história?"
+        "name": "Eunsu",
+        "text": "Ah, isso? São registros de aconselhamento para estudantes transferidos que estou organizando. Por que, curioso para saber se o seu nome está aí?"
     },
     "day3_after_eunsu_peek_8a": {
         "name": "Eu",
-        "text": "*Professora Eunsu está parado na frente da porta. Estou sorrindo.**Essa pessoa me deixou ver o que vejo.** O telefonema poderia ter sido uma desculpa.*"
+        "text": "*professora Eunsu está parado na porta. Sorrindo. **Ela me deixou ver isso de propósito.** O telefonema pode ter sido uma desculpa.*"
     },
     "day3_after_eunsu_peek_9": {
         "name": "Eu",
-        "text": "*Professora Eunsu se aproxima lentamente e fecha o documento. Não tenha pressa. Lazer.*"
+        "text": "*professora Eunsu caminha lentamente e fecha os documentos. Sem pressa. Relaxado.*"
     },
     "day3_after_eunsu_peek_10": {
-        "name": "Park Eunsu",
-        "text": "É bom ver você estudando muito. Parece que você está se adaptando bem?"
+        "name": "Eunsu",
+        "text": "Que bom ver você estudando muito. Parece que você está se adaptando bem?"
     },
     "day3_after_eunsu_peek_11": {
         "name": "Eu",
-        "text": "*... Rindo. Essa pessoa está sorrindo desde o início. Eu nunca parei de rir. Isso é assustador agora.*"
+        "text": "*...Ela está sorrindo. Esta pessoa está sorrindo desde o início. Ela nunca parou de sorrir. E é isso que é assustador agora.*"
     },
     "day3_after_eunsu_ignore": {
         "name": "Eu",
-        "text": "*... Isso não é o que você vê aqui. Desviei o olhar. Recuei, abafando meus passos.*"
+        "text": "*...Eu não deveria estar olhando para isso aqui. Desviei meu olhar. Recuou silenciosamente.*"
     },
     "day3_after_alone": {
         "name": "Eu",
-        "text": "*Estou tentando ir para casa, mas meus passos levam em direção ao prédio antigo. Eu não sei por quê. O corpo se move primeiro.*"
+        "text": "*Eu estava indo para casa, mas meus pés me levaram em direção ao prédio antigo. Eu não sei por quê. Meu corpo se move sozinho.*"
     },
     "day3_after_alone_2": {
         "name": "Eu",
-        "text": "*O prédio antigo é um prédio antigo. Existem fileiras de salas de aula não utilizadas. Uma luz fluorescente está piscando no corredor.*"
+        "text": "*O edifício antigo é antigo. Salas de aula não utilizadas alinham-se no corredor. Uma luz fluorescente pisca no corredor.*"
     },
     "day3_after_alone_3": {
         "name": "Eu",
-        "text": "*O som de passos rebate na parede e retorna. O único som são os meus passos. Como as aulas extracurriculares acabaram, todos os alunos devem ter ido embora, mas esse nível de silêncio ainda é anormal.**Ande pelo corredor. Apenas meus passos soam. largamente. largamente. largamente.*"
+        "text": "*Meus passos ricocheteiam nas paredes e voltam. Apenas meus passos. As atividades extracurriculares deveriam ter terminado, então todos os alunos deveriam ter ido embora, mas mesmo assim, esse nível de silêncio é anormal.*\n\n*Eu ando pelo corredor. Apenas meus passos ecoam. Tocar. Tocar. Tocar.*"
     },
     "day3_after_alone_4": {
         "name": "Eu",
-        "text": "*Ao passar pela terceira sala de aula — parou.**Eu ouço um som. Além da porta. Baixo som mecânico. Uma vibração constante soa como ‘weeeeeing’.**Por que há um som de máquina na sala de aula?*"
+        "text": "*Passando pela terceira sala de aula -- eu parei.*\n\n*Eu posso ouvir um som. Do além da porta. Um zumbido baixo de máquina. Uma vibração constante de 'zumbido'.*\n\n*...Por que haveria sons de máquinas em uma sala de aula?*"
     },
     "day3_after_alone_5": {
         "name": "Eu",
-        "text": "*Toquei na porta. Posso sentir uma leve vibração. Bloqueado.**A janela ao lado da porta é pintada de opaca. Não consigo ver o interior.*"
+        "text": "*Coloquei minha mão na porta. Posso sentir uma leve vibração. Está trancado.*\n\n*A janela ao lado da porta foi pintada de opaca. Não consigo ver o interior.*"
     },
     "day3_after_alone_6": {
         "name": "Eu",
-        "text": "*Ajoelhei-me e olhei pela fresta da porta. Uma leve luz verde vem de dentro. Não é uma cor de luz fluorescente.**Coloquei meu ouvido nele. Há algo mais entre os sons mecânicos. 'Beep... Beep... Beep...' Som eletrônico normal. Um som como aquele feito por equipamento médico.*"
+        "text": "*Ajoelhei-me e espiei pela abertura sob a porta. Uma leve luz verde vaza de dentro. Não é a cor das luzes fluorescentes.*\n\n*Eu pressionei meu ouvido contra ele. Entre os sons da máquina, há algo mais. 'Bip... bip... bip...' Um tom eletrônico normal. Do tipo que você ouve em equipamentos médicos.*"
     },
     "day3_after_alone_7": {
         "name": "Eu",
-        "text": "*Tentei me levantar, mas meus joelhos tremiam. — Isto é uma escola?*"
+        "text": "*Tentei me levantar, mas meus joelhos tremiam. --Isso é realmente uma escola?*"
     },
     "day3_after_alone_8": {
         "name": "Eu",
-        "text": "*Levantou-se. Há um quadro de avisos no final do corredor. Existem avisos antigos anexados. Abaixo disso, arranhões na parede.*"
+        "text": "*Eu me levantei. No final do corredor há um quadro de avisos. Avisos antigos fixados nele. Abaixo disso, arranhões na parede.*"
     },
     "day3_after_alone_9": {
         "name": "Eu",
-        "text": "*Vários quadrados do tamanho de crachás estão riscados. Um, dois... doze. Todas essas marcas foram arranhadas e apagadas.**Doze crachás foram pendurados e removidos.**Contado três vezes. Doze.*"
+        "text": "*Retângulos do tamanho de crachás foram riscados na parede. Um, dois... doze. Tudo riscado.*\n\n*Doze crachás que foram pendurados aqui e depois removidos.*\n\n*Contei três vezes. Doze.*"
     },
     "day3_after_alone_10": {
         "name": "Eu",
-        "text": "*Minhas pernas estão tremendo. Eu odeio esse corredor. Eu odeio esse prédio. Mas por que você veio aqui? Por que seu corpo veio aqui sozinho? Isso é ainda mais assustador.*"
+        "text": "*Minhas pernas estão tremendo. Eu odeio esse corredor. Eu odeio esse prédio. Mas por que vim aqui – por que meu corpo me trouxe aqui por conta própria – isso é ainda mais assustador.*"
     },
     "day3_after_alone_11": {
         "name": "Eu",
-        "text": "*... Vamos voltar. Não posso mais ficar aqui.*"
+        "text": "*...Vamos voltar. Eu não deveria mais ficar aqui.*"
     },
     "day3_after_yuna_check": {
         "name": "",
@@ -391,50 +390,50 @@
     },
     "day3_after_yuna": {
         "name": "Eu",
-        "text": "*Depois da escola, eu saio e Yuna está atrás do canteiro de flores. Vestindo um cardigã por cima do uniforme escolar e segurando uma câmera no pescoço.** Olhe ao redor. Não há ninguém.*"
+        "text": "*As atividades depois da escola terminaram e eu estava saindo quando vi Yuna parado atrás do canteiro de flores. Vestindo um cardigã por cima do uniforme, câmera pendurada no pescoço.*\n\n*Eu olho em volta. Ninguém mais aqui.*"
     },
     "day3_after_yuna_2": {
-        "name": "Choi Yuna",
-        "text": "\"sênior\"."
+        "name": "Yuna",
+        "text": "XPTOKEN0X."
     },
     "day3_after_yuna_3": {
         "name": "Eu",
-        "text": "*Yuna se aproxima. Tire algo pequeno do seu bolso. Cartão micro SD.*"
+        "text": "*Yuna se aproxima. Ela tira algo pequeno do bolso. Um cartão micro SD.*"
     },
     "day3_after_yuna_4": {
-        "name": "Choi Yuna",
-        "text": "A foto que mostrei antes... é uma cópia. Por favor, guarde-a."
+        "name": "Yuna",
+        "text": "As fotos que mostrei antes... esta é uma cópia. Por favor, guarde-o."
     },
     "day3_after_yuna_5": {
         "name": "Eu",
-        "text": "... Por que você está fazendo isso comigo?"
+        "text": "...Por que me dar isso?"
     },
     "day3_after_yuna_6": {
-        "name": "Choi Yuna",
-        "text": "É perigoso se eu tiver. Se os professores... perceberem, isso será tirado."
+        "name": "Yuna",
+        "text": "É perigoso para mim mantê-lo. Se os professores... descobrirem, eles confiscarão."
     },
     "day3_after_yuna_6a": {
         "name": "Eu",
-        "text": "*As mãos de Yuna estão frias. Quando entreguei o cartão, ele tocou minha mão.*"
+        "text": "*A mão de Yuna está fria. Tocou o meu quando ela passou o cartão.*"
     },
     "day3_after_yuna_7": {
-        "name": "Choi Yuna",
-        "text": "Tenha cuidado, Senpai. Quanto mais tempo você ficar aqui, mais perigoso será."
+        "name": "Yuna",
+        "text": "Tenha cuidado, senpai. Quanto mais tempo alguém permanece aqui... mais perigoso fica."
     },
     "day3_after_yuna_8": {
         "name": "Eu",
-        "text": "\"O que é perigoso?\"*Yuna abre a boca. Fechar. Sinto como se estivesse tentando dizer algo, mas engoli.*"
+        "text": "\"Perigoso como?\"\n\n*Yuna abre a boca. Fecha. Parece que ela estava prestes a dizer algo e engoliu.*"
     },
     "day3_after_yuna_9": {
-        "name": "Choi Yuna",
+        "name": "Yuna",
         "text": "... Apenas tome cuidado. Especialmente à noite."
     },
     "day3_after_yuna_9a": {
         "name": "Eu",
-        "text": "*Yuna se vira. Em um ritmo acelerado. Ele desaparece no canto do canteiro de flores.** O cartão SD que tenho na mão é pequeno e leve. Existem 13 rostos idênticos nele.**Coloquei no fundo do meu bolso.*"
+        "text": "*Yuna se vira. Andando rápido. Ela desaparece na esquina do canteiro de flores.*\n\n*O cartão SD que tenho na mão é pequeno e leve. Treze rostos idênticos estão armazenados nesta pequena coisa.*\n\n*Coloquei no fundo do meu bolso.*"
     },
     "day3_after_end": {
         "name": "Eu",
-        "text": "*Sai da escola. O playground fica vermelho sob o sol poente... Por que é tão desconfortável?*"
+        "text": "*Eu saio da escola. O campo fica vermelho sob o pôr do sol. ...Por que isso parece tão errado.*"
     }
 }

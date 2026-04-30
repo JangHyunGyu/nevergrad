@@ -1,116 +1,118 @@
 {
     "day2_night_start": {
         "name": "Eu",
-        "text": "*Verifiquei o celular.*"
+        "text": "*Eu verifico meu telefone.*"
     },
     "day2_night_phone_1": {
         "name": "Eu",
-        "text": "*O grupo da antiga escola. 'Lido por 3'. Ninguém respondeu. Já faz dois dias.*"
+        "text": "*O bate-papo em grupo da velha escola. 'Ler por 3'. Ninguém respondeu. Já faz dois dias.*"
     },
     "day2_night_phone_2": {
         "name": "Eu",
-        "text": "*Mandei mensagem para Minsu. 'Ei, Minsu, eu me transferi e você nem fala comigo? kkk'*"
+        "text": "*Enviei uma mensagem para Minsu. 'Ei Minsu, eu transferi e você nem me ligou haha'*"
     },
     "day2_night_phone_3": {
         "name": "Eu",
-        "text": "*Dez minutos depois. O indicador '...' apareceu. Minsu está digitando.*"
+        "text": "*10 minutos depois. O indicador '...' apareceu. Minsu está digitando.*",
+        "messengerDelay": 5000,
+        "messengerTypingName": "Minsu"
     },
     "day2_night_phone_4": {
         "name": "Eu",
-        "text": "*Cinco segundos. O indicador continua piscando. Será que ele está escrevendo uma mensagem longa?*"
+        "text": "*5 segundos. O indicador de digitação continua piscando. Ele está escrevendo uma mensagem longa?*"
     },
     "day2_night_phone_5": {
         "name": "Eu",
-        "text": "*A resposta chegou.*"
+        "text": "*A resposta veio.*"
     },
     "day2_night_phone_6": {
         "name": "Eu",
-        "text": "*Minsu: 'Sim, estou bem. E aí, como estão as coisas por aí?'*"
+        "text": "*Minsu: 'Sim, indo bem. Como está aí?'*"
     },
     "day2_night_phone_7": {
         "name": "Eu",
-        "text": "*... O que é isso? Normalmente ele viria com um 'ei, seu idiota kkkkk' e me xingaria de brincadeira. Por que está tão seco?*"
+        "text": "*...O que é isso. O cara que normalmente começa com 'ei, seu idiota, lmaooo' e uma série de insultos está sendo tão duro assim?"
     },
     "day2_night_phone_8": {
         "name": "Eu",
-        "text": "*'Sim, estou bem.' ... Ele ficou cinco segundos digitando e escolheu justo isso?*"
+        "text": "*'Sim, indo bem.' ... Foi isso que ele escolheu após 5 segundos de digitação?*"
     },
     "day2_night_phone_9": {
         "name": "Eu",
-        "text": "*Respondi: 'Por que está falando desse jeito? kkk Aconteceu alguma coisa?'*"
+        "text": "*Eu respondi. 'Por que tão formal haha, alguma coisa acontecendo?'*"
     },
     "day2_night_phone_10": {
         "name": "Eu",
-        "text": "*Um minuto. Dois minutos. O indicador de digitação apareceu de novo.*"
+        "text": "*1 minuto. 2 minutos. O indicador de digitação aparece novamente.*"
     },
     "day2_night_phone_11": {
         "name": "Eu",
-        "text": "*Minsu: 'Não, nada não kkk Só estava ocupado'*"
+        "text": "*Minsu: 'Nah, nada aconteceu haha, só estive ocupado'*"
     },
     "day2_night_phone_12": {
         "name": "Eu",
-        "text": "*... Não sei por quê, mas o jeito de falar dele parece diferente. Deve ter estado ocupado mesmo.*"
+        "text": "*...Algo em seu tom parece diferente. Deve apenas estar ocupado.*"
     },
     "day2_night_phone_13": {
         "name": "Eu",
-        "text": "*... Quero perguntar mais. Vou responder ao Minsu.*",
+        "text": "*...Eu quero perguntar mais. Tentarei responder a Minsu.*",
         "choices": [
-            "Mandar outra mensagem para Minsu",
-            "Checar o antigo grupo de novo",
-            "Largar o celular e pensar"
+            "Mensagem Minsu mais uma vez",
+            "Verifique o antigo bate-papo em grupo novamente",
+            "Desligue o telefone e pense"
         ]
     },
     "day2_night_ft_messenger": {
         "name": "Eu",
-        "text": "*Respondi. 'Ô Minsu, é você mesmo? kkk Tá esquisito, aconteceu alguma coisa?'*"
+        "text": "*Eu respondi. 'Ei Minsu, é você mesmo? haha Não parece você, o que está acontecendo?'*"
     },
     "day2_night_ft_messenger_2": {
         "name": "Eu",
-        "text": "*Indicador de digitação. Piscando sem parar. Cinco segundos, dez, vinte.*"
+        "text": "*Indicador de digitação. Piscando para sempre. Cinco segundos, dez, vinte.*"
     },
     "day2_night_ft_messenger_3": {
         "name": "Eu",
-        "text": "*Minsu: 'Sou eu mesmo. Só tô com sono.'*"
+        "text": "*Minsu: 'Sim, sou eu. Apenas com sono, só isso.'*"
     },
     "day2_night_ft_messenger_4": {
         "name": "Eu",
-        "text": "*... Vinte segundos digitando, e foi isso que ele acabou mandando.*"
+        "text": "*...Vinte segundos de digitação e foi isso que ele acabou enviando.*"
     },
     "day2_night_ft_messenger_5": {
         "name": "Eu",
-        "text": "*Estranho, mas se ele tá com sono, fazer o quê. Pergunto outra hora. Larguei o celular.*"
+        "text": "*Desligado, de alguma forma. Mas se ele disser que está com sono, o que posso fazer? Perguntarei novamente mais tarde. Desliguei o telefone.*"
     },
     "day2_night_sea_1": {
         "name": "Eu",
-        "text": "*Sea: ‘Obrigado por hoje também. Por vir à sala do conselho estudantil.'*"
+        "text": "*Sea: 'Obrigado por hoje também. Por vir à sala do conselho estudantil.'*"
     },
     "day2_night_sea_2": {
         "name": "Eu",
-        "text": "*Sea: ‘Vamos comer juntos amanhã também!’*"
+        "text": "*Sea: 'Vamos comer juntos de novo amanhã!'*"
     },
     "day2_night_sea_3": {
         "name": "Eu",
-        "text": "*Sea: '... É bom estar com {name}.'*"
+        "text": "*Sea: '...Estar com {name} é legal.'*"
     },
     "day2_night_sea_4": {
         "name": "Eu",
-        "text": "*Envie uma resposta. 'Eu me diverti hoje também. Anime-se para a competição esportiva haha'*"
+        "text": "*Eu respondo. 'Eu me diverti hoje também. Boa sorte com a preparação para o dia esportivo lol'*"
     },
     "day2_night_sea_5": {
         "name": "Eu",
-        "text": "*Sea: ‘Anime-se haha. Você precisa me ajudar.’*"
+        "text": "*Sea: 'Boa sorte? haha Você é quem tem que me ajudar'*"
     },
     "day2_night_sea_6": {
         "name": "Eu",
-        "text": "*Sea: ‘Vou esperar de novo amanhã de manhã’*"
+        "text": "*Sea: 'Estarei esperando novamente amanhã de manhã'*"
     },
     "day2_night_sea_7": {
         "name": "Eu",
-        "text": "*'Espere de novo? Você não está com frio?’*"
+        "text": "*'Esperando de novo? Você não vai sentir frio?'*"
     },
     "day2_night_sea_8": {
         "name": "Eu",
-        "text": "*Sea: ‘Não está frio~’*"
+        "text": "*Sea: 'Não vou sentir frio~'*"
     },
     "day2_night_sea_promise_branch": {
         "name": "",
@@ -118,111 +120,111 @@
     },
     "day2_night_sea_9_alt": {
         "name": "Eu",
-        "text": "*Sea: 'Então vejo você amanhã na escola. Não vai dormir tarde demais.'*"
+        "text": "*Sea: 'Então vejo você na escola amanhã. Não fique acordado até tarde.'*"
     },
     "day2_night_sea_9": {
         "name": "Eu",
-        "text": "*Sea: ‘Mas você se lembra da promessa que fez no almoço hoje?’*"
+        "text": "*Sea: 'Mas você se lembra da promessa do almoço de hoje, certo?'*"
     },
     "day2_night_sea_10": {
         "name": "Eu",
-        "text": "*'Sábado? claro.'*"
+        "text": "*'Sábado? Claro.'*"
     },
     "day2_night_sea_11": {
         "name": "Eu",
-        "text": "*Sea: ‘♡’*"
+        "text": "*Sea: '♡'*"
     },
     "day2_night_sea_12": {
         "name": "Eu",
-        "text": "*Sea: ‘Então durma bem’*"
+        "text": "*Sea: 'Boa noite então'*"
     },
     "day2_night_sea_13": {
         "name": "Eu",
-        "text": "*'boa noite.'*"
+        "text": "*'Boa noite.'*"
     },
     "day2_night_sea_14": {
         "name": "Eu",
-        "text": "*Desligue o telefone. A lua está nascendo do lado de fora da janela. A notificação do KakaoTalk toca novamente.*"
+        "text": "*Desliguei o telefone. A lua está fora da janela. Outra notificação do KakaoTalk vibra.*"
     },
     "day2_night_sea_14a": {
         "name": "Eu",
-        "text": "*Uma mensagem foi enviada para o aplicativo de segurança do aluno.*"
+        "text": "*Uma mensagem chegou através do aplicativo Student Safety.*"
     },
     "day2_night_eunsu_1": {
         "name": "Eu",
-        "text": "*Park Eunsu: '{name}, você foi muito bem na apresentação hoje. Você se adapta rápido.'*"
+        "text": "*Eunsu: '{name}, você se saiu bem na sua apresentação de hoje. Você está se adaptando rapidamente.'*"
     },
     "day2_night_eunsu_2": {
         "name": "Eu",
-        "text": "*Park Eunsu: 'Posso passar pela sala dos professores amanhã? Tenho um documento para conferir.'*"
+        "text": "*Eunsu: 'Você pode passar na sala dos professores amanhã? Há um documento que preciso verificar.'*"
     },
     "day2_night_eunsu_3": {
         "name": "Eu",
-        "text": "*'tudo bem.'*"
+        "text": "*'Sim, entendido.'*"
     },
     "day2_night_eunsu_4": {
         "name": "Eu",
-        "text": "*Park Eunsu: 'Descanse bem.'*"
+        "text": "*Eunsu: '👍 Descanse um pouco.'*"
     },
     "day2_night_eunsu_5": {
         "name": "Eu",
-        "text": "*... Não acredito que a professora me enviou essa mensagem. Eu nem conseguia lembrar o nome do meu ex-professor.*"
+        "text": "*...A professora até manda mensagens assim. Meu antigo professor de sala de aula nem conseguia lembrar meu nome.*"
     },
     "day2_night_flash_1": {
         "name": "Eu",
-        "text": "*Deitei no cobertor e fechei os olhos.*"
+        "text": "*Deito debaixo das cobertas e fecho os olhos.*"
     },
     "day2_night_flash_2": {
         "name": "Eu",
-        "text": "*... Em um instante, uma imagem passou pela minha mente. Andando pelo corredor desta escola. Está chovendo. O uniforme escolar está molhado. Correndo com alguém —*"
+        "text": "*...De repente, uma imagem brilhou. Andando pelo corredor desta escola. Está chovendo. Meu uniforme está molhado. Correndo com alguém —*"
     },
     "day2_night_flash_3": {
         "name": "Eu",
-        "text": "*De mãos dadas. É uma mão de mulher. Mãos frias.*"
+        "text": "*De mãos dadas. A mão de uma menina. Uma mão fria.*"
     },
     "day2_night_flash_4": {
         "name": "Eu",
-        "text": "*\"Por aqui\" - a voz de alguém. Parece algo que já ouvi antes.*"
+        "text": "*\"Por aqui\" - a voz de alguém. Sinto que já ouvi antes.*"
     },
     "day2_night_flash_5": {
         "name": "Eu",
-        "text": "*Abri os olhos. Há suor na minha testa.*"
+        "text": "*Eu abro meus olhos. Há suor na minha testa.*"
     },
     "day2_night_flash_6": {
         "name": "Eu",
-        "text": "*... O que foi? agora mesmo. Não foi nem um sonho, mas uma imagem me veio à mente. Como já andei pelos corredores da escola antes... agarrei a mão de alguém e corri. Mãos frias.*"
+        "text": "*...O que foi isso agora? Não foi um sonho, mas uma imagem surgiu. O corredor desta escola... como se eu já tivesse andado por ele antes. Correr segurando a mão de alguém. Uma mão fria.*"
     },
     "day2_night_flash_7": {
         "name": "Eu",
-        "text": "*... Professora Eunsu? Minha mão estava fria quando bati em seu ombro mais cedo... Não, provavelmente não está relacionado.*"
+        "text": "*...Eunsu? A mão dela estava fria quando ela deu um tapinha no meu ombro mais cedo. ...Não, isso não pode estar relacionado.*"
     },
     "day2_night_flash_8": {
         "name": "Eu",
-        "text": "*... Acho que é porque é o primeiro dia e não estou nervoso. Porque minha mente está cheia de imagens da escola.*"
+        "text": "*...Provavelmente é porque ainda estou tenso desde o primeiro dia. Minha cabeça está cheia de imagens escolares.*"
     },
     "day2_night_search_1": {
         "name": "Eu",
-        "text": "*... Eu chutei o cobertor e me levantei. Eu não consigo dormir. Peguei meu celular. Digite ‘Sunrise High School’ na barra de pesquisa.*"
+        "text": "*...Tirei meu cobertor e me levantei. Não consegui dormir. Peguei meu telefone. Digitei 'Haedoji High School' na barra de pesquisa.*"
     },
     "day2_night_search_2": {
         "name": "Eu",
-        "text": "*Site oficial. Mensagem da diretora. Histórico da escola. Link para o álbum de formatura? — 'Em breve'. Os nomes da professora Eunsu e da enfermeira Riin constavam na lista de funcionários. Não havia fotos.*"
+        "text": "*Site oficial. Mensagem do diretor. História escolar. O link do álbum de formatura? — 'Em construção.' Os nomes de professora Eunsu e enfermeira Riin estavam na lista de funcionários. Mas não há fotos.*"
     },
     "day2_night_search_3": {
         "name": "Eu",
-        "text": "*Pesquisa de notícias. ‘Escola Secundária Nascer do Sol’. Não há resultados. nada. Mesmo nas notícias locais. — Uma escola desse porte não tem novidades?*"
+        "text": "*Pesquisa de notícias. 'Escola Secundária Haedoji.' Sem resultados. Nada. Nem mesmo nas notícias locais. — Uma escola deste tamanho e nenhuma notícia?*"
     },
     "day2_night_search_4": {
         "name": "Eu",
-        "text": "*'Festival do Nascer do Sol', 'Cerimônia de Graduação do Nascer do Sol'. não existe. esquisito. Cada escola tem pelo menos uma foto de um dia esportivo publicada.*"
+        "text": "*'Festival Haedodigo', 'Cerimônia de Graduação Haedodigo'. Nada. Esquisito. Toda escola costuma ter pelo menos uma foto de festival esportivo online, certo?*"
     },
     "day2_night_search_5": {
         "name": "Eu",
-        "text": "*... Estou vendendo demais? É assim que são as escolas pequenas? Desliguei meu telefone e deitei novamente.*"
+        "text": "*...Estou cavando muito fundo? É assim que acontece com as escolas pequenas? Desliguei meu telefone e me deitei.*"
     },
     "day2_night_dream_1": {
         "name": "Eu",
-        "text": "*Feche os olhos novamente. Desta vez adormeci.*"
+        "text": "*Fecho os olhos novamente. Desta vez, adormeço.*"
     },
     "day2_night_dream_2": {
         "name": "Eu",
@@ -230,31 +232,31 @@
     },
     "day2_night_dream_3": {
         "name": "Eu",
-        "text": "*É uma sala de aula. Mas esta não é a sala de aula atual. A disposição da mesa é diferente. A data está escrita no quadro negro, mas não pode ser lida.*"
+        "text": "*Uma sala de aula. Mas não o atual. A disposição da mesa é diferente. Há uma data escrita no quadro-negro, mas não consigo lê-la.*"
     },
     "day2_night_dream_4": {
         "name": "Eu",
-        "text": "*Alguém está sentado no banco da frente. Cabelo comprido. Apenas a parte de trás é visível.*"
+        "text": "*Alguém está sentado no banco da frente. Cabelo comprido. Só consigo ver as costas deles.*"
     },
     "day2_night_dream_5": {
         "name": "Eu",
-        "text": "*\"Você está bem?\"*"
+        "text": "*\"Ei, você está bem?\"*"
     },
     "day2_night_dream_6": {
         "name": "Eu",
-        "text": "*A pessoa se vira. É Seolhwa. Mas a expressão dela está diferente. A Seolhwa de agora está sempre triste, mas a Seolhwa do sonho — está sorrindo.*"
+        "text": "*A pessoa se vira. É XPTOKEN0X. Mas a expressão do Seolhwa é diferente. O Seolhwa agora está sempre triste, mas o Seolhwa do sonho — está sorrindo.*"
     },
     "day2_night_dream_7": {
         "name": "Eu",
-        "text": "*Seolhwa abre a boca. Ela diz alguma coisa, mas não consigo ouvir. Tento ler seus lábios. 'Aju—' Ela está dizendo algo.*"
+        "text": "*Seolhwa abre a boca. Ela está dizendo alguma coisa, mas não consigo ouvir. Tento ler seus lábios. 'Hel-' Ela está dizendo alguma coisa.*"
     },
     "day2_night_dream_7a": {
         "name": "Eu",
-        "text": "*Tentei ler o formato da boca. 'Faça-' está dizendo alguma coisa.*"
+        "text": "*Tentei ler seus lábios. 'Hel-' Ela está dizendo alguma coisa.*"
     },
     "day2_night_dream_8": {
         "name": "Eu",
-        "text": "*A sala de aula escurece. O rosto de Seolhwa fica turvo.*"
+        "text": "*A sala de aula escurece. O rosto de Seolhwa fica embaçado.*"
     },
     "day2_night_dream_9": {
         "name": "Eu",
@@ -266,11 +268,11 @@
     },
     "day2_night_wake_2": {
         "name": "Eu",
-        "text": "*...Um sonho? Seolhwa apareceu. Ela estava sorrindo. Tentava dizer alguma coisa...*"
+        "text": "*...Um sonho? Seolhwa estava nele. Ela estava sorrindo. Ela estava tentando dizer alguma coisa...*"
     },
     "day2_night_wake_3": {
         "name": "Eu",
-        "text": "*Não me lembro. O que você disse?**... É apenas um sonho.*"
+        "text": "*Não consigo me lembrar. O que ela disse. ...Foi apenas um sonho.*"
     },
     "day2_night_end": {
         "name": "",

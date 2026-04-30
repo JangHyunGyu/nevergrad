@@ -651,7 +651,7 @@ class GameEngine {
 
         // ===== i18n에서 텍스트 가져오기 =====
         const t = this.i18n.get(sceneId);
-        const name = this._resolveSpeakerName(t);
+        const name = this._resolveSpeakerName(sceneId);
         const extraVars = this._buildSceneVars(sceneId, scene);
         const text = this.i18n.resolve(t.text, this.state.playerName, extraVars);
         this.renderer.setMediaOverlay?.(this._buildSceneMediaOverlay(sceneId, scene, t, text, extraVars));
@@ -1908,17 +1908,10 @@ class GameEngine {
 
     // ===== Text =====
 
-    _resolveSpeakerName(entry) {
-        if (entry?.speaker) {
-            return this.i18n?.getSpeakerName?.(entry.speaker, this.state.playerName) || entry.speaker;
-        }
-        return this._resolveName(entry?.name);
-    }
-
-    _resolveName(name) {
-        const selfNames = ["나", "Me", "Ich", "私", "僕", "Yo", "Moi", "Eu"];
-        if (selfNames.includes(name)) return this.state.playerName || name;
-        return name || '';
+    _resolveSpeakerName(sceneId) {
+        const speakerId = globalThis.SCENARIO_SPEAKERS?.[sceneId];
+        if (!speakerId) return '';
+        return this.i18n?.getSpeakerName?.(speakerId, this.state.playerName) || speakerId;
     }
 
     _pickLocalizedValue(value) {

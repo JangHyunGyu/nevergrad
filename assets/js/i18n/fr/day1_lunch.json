@@ -3,7 +3,6 @@
         "text": "*La quatrième période est terminée et la sonnerie du déjeuner retentit. Les élèves se lèvent tous en même temps.*"
     },
     "day1_lunch_choice": {
-        "speaker": "me",
         "text": "*C'est l'heure du déjeuner. Où devrais-je aller ?*",
         "choices": [
             "Sea m'a demandé de manger avec elle, alors je vais rester en classe",
@@ -19,40 +18,33 @@
         "text": "*...C'est une boîte à bento à deux étages. Clairement pas une portion individuelle.*"
     },
     "day1_lunch_sea_3": {
-        "speaker": "me",
         "text": "...Tout ça, c'est pour toi ?"
     },
     "day1_lunch_sea_4": {
-        "speaker": "sea_full",
         "text": "Alors ? Assez bon pour être vendu, non ?"
     },
     "day1_lunch_sea_5": {
         "text": "*Elle ouvre le couvercle. Omelette roulée, mini-saucisses, boulettes de riz, brocoli, tomates cerises. Soigneusement arrangés par couleur.*"
     },
     "day1_lunch_sea_6": {
-        "speaker": "me",
         "text": "...Attends, tu as vraiment fait tout ça ?"
     },
     "day1_lunch_sea_7": {
-        "speaker": "sea_full",
         "text": "Goûte. J'avais le pressentiment que ça te conviendrait mieux que du pain acheté en magasin."
     },
     "day1_lunch_sea_8": {
         "text": "*Sea prend un morceau d'omelette roulée avec ses baguettes et me le tend.*"
     },
     "day1_lunch_sea_9": {
-        "speaker": "sea_full",
         "text": "Tiens, goûte d'abord l'omelette. Je l'ai faite un peu sucrée."
     },
     "day1_lunch_sea_10": {
         "text": "*...C'est bon. Vraiment bon.*"
     },
     "day1_lunch_sea_11": {
-        "speaker": "me",
         "text": "C'est meilleur que ce qu'on achète ?"
     },
     "day1_lunch_sea_12": {
-        "speaker": "sea_full",
         "text": "Vraiment ?"
     },
     "day1_lunch_sea_13": {
@@ -62,55 +54,45 @@
         "text": "*Nous avons discuté un bon moment après ça.*"
     },
     "day1_lunch_sea_15": {
-        "speaker": "me",
         "text": "Tu apportes toujours une boîte à bento comme ça, Sea ?"
     },
     "day1_lunch_sea_16": {
-        "speaker": "sea_full",
         "text": "Oui. La cantine de l'école, c'est bien, mais le fait maison, c'est meilleur."
     },
     "day1_lunch_sea_17": {
-        "speaker": "me",
         "text": "Ça fait beaucoup pour une seule personne, quand même."
     },
     "day1_lunch_sea_18": {
-        "speaker": "sea_full",
         "text": "..."
     },
     "day1_lunch_sea_19": {
         "text": "*Sea marque une pause, puis sourit.*"
     },
     "day1_lunch_sea_20": {
-        "speaker": "sea_full",
         "text": "J'ai tendance à en faire beaucoup. Je suis contente que tu manges autant."
     },
     "day1_lunch_sea_21": {
         "text": "*La boîte à bento est presque vide. Il reste un peu de temps.*"
     },
     "day1_lunch_sea_22": {
-        "speaker": "sea_full",
         "text": "Ah oui, écoute ça."
     },
     "day1_lunch_sea_23": {
         "text": "*Sea me tend un de ses écouteurs. Un morceau de guitare doux.*"
     },
     "day1_lunch_sea_24": {
-        "speaker": "me",
         "text": "Oh, qu'est-ce que c'est ?"
     },
     "day1_lunch_sea_25": {
-        "speaker": "sea_full",
         "text": "Je l'écoute beaucoup ces derniers temps. Les paroles sont sympas."
     },
     "day1_lunch_sea_26": {
         "text": "*J'écoute en silence. Pas mal.*"
     },
     "day1_lunch_sea_27": {
-        "speaker": "me",
         "text": "C'est bien. Tu as de bons goûts musicaux."
     },
     "day1_lunch_sea_28": {
-        "speaker": "sea_full",
         "text": "Haha, tu dis ça comme si c'était une évidence."
     },
     "day1_lunch_sea_29": {
@@ -126,34 +108,27 @@
         "text": "*Une fille avec un appareil photo est figée, l'air surprise. Petite silhouette, gros appareil.*"
     },
     "day1_lunch_yuna_4": {
-        "speaker": "me",
         "text": "...Tu viens de me prendre en photo ?"
     },
     "day1_lunch_yuna_5": {
-        "speaker": "yuna",
         "text": "N-non... ! Je suis au club de photographie, je prenais des photos de l'ambiance de la bibliothèque et tu es soudainement entré..."
     },
     "day1_lunch_yuna_6": {
-        "speaker": "yuna",
         "text": "Ah... je suis désolée. Je vais la supprimer tout de suite."
     },
     "day1_lunch_yuna_7": {
-        "speaker": "me",
         "text": "Non, ce n'est rien. Donc tu es au club de photographie."
     },
     "day1_lunch_yuna_8": {
-        "speaker": "yuna",
         "text": "Oui... ! Je suis Yuna Choi, première année. Tu es l'élève transféré, n'est-ce pas ?"
     },
     "day1_lunch_yuna_9": {
-        "speaker": "me",
         "text": "Oui. Je suis {name}. Enchanté."
     },
     "day1_lunch_yuna_10": {
         "text": "*Yuna serré l'appareil photo contre sa poitrine et incline la tête.*"
     },
     "day1_lunch_yuna_11": {
-        "speaker": "yuna",
         "text": "Tu viens souvent à la bibliothèque ? Moi, je suis là tous les jours."
     },
     "day1_lunch_yuna_12": {
@@ -163,11 +138,9 @@
         "text": "*En faisant défiler, j'ai trouvé une série du même cerisier photographié à différents moments de la journée. Matin, midi, coucher de soleil, nuit.*"
     },
     "day1_lunch_yuna_14": {
-        "speaker": "me",
         "text": "...Tu as photographié le même arbre quatre fois ?"
     },
     "day1_lunch_yuna_15": {
-        "speaker": "yuna",
         "text": "J'adore la façon dont les couleurs changent avec la lumière. J'ai pris ces photos sur un mois."
     },
     "day1_lunch_yuna_16": {
@@ -180,36 +153,30 @@
         "text": "*Carré court violet foncé, blouse blanche, lunettes à monture fine. Elle est appuyée sur sa haise, en train de lire quelque chose.*"
     },
     "day1_lunch_riin_3": {
-        "speaker": "riin",
         "text": "Oh, l'infirmerie dès le premier jour ? Tu te sens mal ?"
     },
     "day1_lunch_riin_4": {
-        "speaker": "me",
         "text": "J'ai un peu mal à la tête."
     },
     "day1_lunch_riin_5": {
-        "speaker": "riin",
         "text": "Ah oui ? Assieds-toi."
     },
     "day1_lunch_riin_6": {
         "text": "*Mme Riin me touche le front. Sa main est fraîche.*"
     },
     "day1_lunch_riin_7": {
-        "speaker": "riin",
         "text": "Pas de fièvre. C'est une céphalée de tension. Tout à fait normal pour ton premier jour."
     },
     "day1_lunch_riin_8": {
         "text": "*Elle ouvre un tiroir et sort des médicaments, en souriant.*"
     },
     "day1_lunch_riin_9": {
-        "speaker": "riin",
         "text": "Tu as mangé ? Il ne faut pas prendre de médicaments à jeun."
     },
     "day1_lunch_riin_10": {
         "text": "*Elle me tend une barre énergétique.*"
     },
     "day1_lunch_riin_11": {
-        "speaker": "riin",
         "text": "Si tu as sommeil, n'hésite pas à te reposer ici un moment."
     },
     "day1_lunch_riin_12": {
@@ -222,19 +189,15 @@
         "text": "*...J'ai ouvert les yeux. Une couverture avait été posée sur moi à un moment donné. La lumière chaude du soleil entre par la fenêtre.*"
     },
     "day1_lunch_riin_15": {
-        "speaker": "riin_full",
         "text": "Tu es réveillé. Tu as dormi environ 15 minutes."
     },
     "day1_lunch_riin_16": {
-        "speaker": "me",
         "text": "Ah... désolé, j'ai juste..."
     },
     "day1_lunch_riin_17": {
-        "speaker": "riin_full",
         "text": "Il n'y a pas de quoi s'excuser. C'est à ça que sert l'infirmerie. Ta tête va mieux ?"
     },
     "day1_lunch_riin_18": {
-        "speaker": "me",
         "text": "Oui, beaucoup mieux. L'infirmerie était chaude."
     },
     "day1_lunch_alone_1": {

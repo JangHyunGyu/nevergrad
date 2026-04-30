@@ -11,29 +11,6 @@ const LANG_CONFIG = {
     label: 'Korean',
     style:
       'natural Korean visual-novel prose. Use concise first-person narration, keep the tense close to the English, and make dialogue sound like native Korean students/teachers.',
-    names: {
-      '': '',
-      Me: '나',
-      'Han Sea': '한세아',
-      Sea: '세아',
-      Yuna: '유나',
-      'Choi Yuna': '최유나',
-      Riin: '리인',
-      'Kang Riin': '강리인',
-      Eunsu: '은수',
-      'Park Eunsu': '박은수',
-      Seolhwa: '설화',
-      'Lee Seolhwa': '이설화',
-      'Boy next to me': '옆자리 남학생',
-      'Classmate A': '급우 A',
-      'Classmate B': '급우 B',
-      'Boy student': '남학생',
-      'Girl student': '여학생',
-      'Girl student A': '여학생 A',
-      'Girl student B': '여학생 B',
-      'School Broadcast': '[교내 방송]',
-      '???': '???',
-    },
     glossary:
       'Translate Sunbae/sunbae as 선배. Translate homeroom teacher as 담임 선생님 when it appears in prose. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 as recognizable project terms.',
   },
@@ -41,29 +18,6 @@ const LANG_CONFIG = {
     label: 'Japanese',
     style:
       'native Japanese visual-novel prose. Use 僕 for the protagonist unless the English explicitly requires otherwise, and make dialogue natural for a Japanese localization of a Korean school mystery.',
-    names: {
-      '': '',
-      Me: '僕',
-      'Han Sea': 'ハン・セア',
-      Sea: 'セア',
-      Yuna: 'ユナ',
-      'Choi Yuna': 'チェ・ユナ',
-      Riin: 'リイン',
-      'Kang Riin': 'カン・リイン',
-      Eunsu: 'ウンス',
-      'Park Eunsu': 'パク・ウンス',
-      Seolhwa: 'ソルファ',
-      'Lee Seolhwa': 'イ・ソルファ',
-      'Boy next to me': '隣の席の男子',
-      'Classmate A': 'クラスメイトA',
-      'Classmate B': 'クラスメイトB',
-      'Boy student': '男子生徒',
-      'Girl student': '女子生徒',
-      'Girl student A': '女子生徒A',
-      'Girl student B': '女子生徒B',
-      'School Broadcast': '校内放送',
-      '???': '???',
-    },
     glossary:
       'Translate Sunbae/sunbae as 先輩. Keep Korean names in katakana as provided. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 recognizable.',
   },
@@ -71,29 +25,6 @@ const LANG_CONFIG = {
     label: 'Spanish',
     style:
       'native neutral Latin American Spanish for a visual novel. Avoid Spain-only words such as fiambrera, ordenador, coche, and vale. Keep the protagonist gender-neutral where possible and use natural dialogue.',
-    names: {
-      '': '',
-      Me: 'Yo',
-      'Han Sea': 'Han Sea',
-      Sea: 'Sea',
-      Yuna: 'Yuna',
-      'Choi Yuna': 'Choi Yuna',
-      Riin: 'Riin',
-      'Kang Riin': 'Kang Riin',
-      Eunsu: 'Eunsu',
-      'Park Eunsu': 'Park Eunsu',
-      Seolhwa: 'Seolhwa',
-      'Lee Seolhwa': 'Lee Seolhwa',
-      'Boy next to me': 'Chico de al lado',
-      'Classmate A': 'Compañero A',
-      'Classmate B': 'Compañero B',
-      'Boy student': 'Alumno',
-      'Girl student': 'Alumna',
-      'Girl student A': 'Alumna A',
-      'Girl student B': 'Alumna B',
-      'School Broadcast': '[Aviso escolar]',
-      '???': '???',
-    },
     glossary:
       'Keep Sunbae/sunbae as sunbae. Prefer lonchera, celular, computadora, auto, and está bien when those concepts appear. Use profesora/tutora naturally for Eunsu when the English says teacher. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 unchanged or clearly recognizable.',
   },
@@ -101,29 +32,6 @@ const LANG_CONFIG = {
     label: 'French',
     style:
       'native French visual-novel prose. Avoid stiff literal translation, keep suspenseful rhythm, and avoid gendering the protagonist where a natural neutral phrasing is possible.',
-    names: {
-      '': '',
-      Me: 'Moi',
-      'Han Sea': 'Han Sea',
-      Sea: 'Sea',
-      Yuna: 'Yuna',
-      'Choi Yuna': 'Choi Yuna',
-      Riin: 'Riin',
-      'Kang Riin': 'Kang Riin',
-      Eunsu: 'Eunsu',
-      'Park Eunsu': 'Park Eunsu',
-      Seolhwa: 'Seolhwa',
-      'Lee Seolhwa': 'Lee Seolhwa',
-      'Boy next to me': "Garçon d'à côté",
-      'Classmate A': 'Camarade A',
-      'Classmate B': 'Camarade B',
-      'Boy student': 'Élève',
-      'Girl student': 'Élève',
-      'Girl student A': 'Élève A',
-      'Girl student B': 'Élève B',
-      'School Broadcast': '[Annonce scolaire]',
-      '???': '???',
-    },
     glossary:
       'Keep Sunbae/sunbae as sunbae. Use professeure/principale naturally for Eunsu when the English says teacher. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 unchanged or clearly recognizable.',
   },
@@ -131,29 +39,6 @@ const LANG_CONFIG = {
     label: 'German',
     style:
       'native German visual-novel prose. Use natural, tense suspense prose and avoid calques. Keep the protagonist gender-neutral where practical.',
-    names: {
-      '': '',
-      Me: 'Ich',
-      'Han Sea': 'Han Sea',
-      Sea: 'Sea',
-      Yuna: 'Yuna',
-      'Choi Yuna': 'Choi Yuna',
-      Riin: 'Riin',
-      'Kang Riin': 'Kang Riin',
-      Eunsu: 'Eunsu',
-      'Park Eunsu': 'Park Eunsu',
-      Seolhwa: 'Seolhwa',
-      'Lee Seolhwa': 'Lee Seolhwa',
-      'Boy next to me': 'Junge neben mir',
-      'Classmate A': 'Mitschüler A',
-      'Classmate B': 'Mitschüler B',
-      'Boy student': 'Schüler',
-      'Girl student': 'Schülerin',
-      'Girl student A': 'Schülerin A',
-      'Girl student B': 'Schülerin B',
-      'School Broadcast': '[Schuldurchsage]',
-      '???': '???',
-    },
     glossary:
       'Keep Sunbae/sunbae as Sunbae. Use Lehrerin/Klassenlehrerin naturally for Eunsu when the English says teacher. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 unchanged or clearly recognizable.',
   },
@@ -161,29 +46,6 @@ const LANG_CONFIG = {
     label: 'Brazilian Portuguese',
     style:
       'native Brazilian Portuguese for a visual novel. Avoid Portugal phrasing and literal English. Keep the protagonist gender-neutral where possible and make dialogue idiomatic.',
-    names: {
-      '': '',
-      Me: 'Eu',
-      'Han Sea': 'Han Sea',
-      Sea: 'Sea',
-      Yuna: 'Yuna',
-      'Choi Yuna': 'Choi Yuna',
-      Riin: 'Riin',
-      'Kang Riin': 'Kang Riin',
-      Eunsu: 'Eunsu',
-      'Park Eunsu': 'Park Eunsu',
-      Seolhwa: 'Seolhwa',
-      'Lee Seolhwa': 'Lee Seolhwa',
-      'Boy next to me': 'Garoto ao lado',
-      'Classmate A': 'Colega A',
-      'Classmate B': 'Colega B',
-      'Boy student': 'Aluno',
-      'Girl student': 'Aluna',
-      'Girl student A': 'Aluna A',
-      'Girl student B': 'Aluna B',
-      'School Broadcast': '[Aviso da escola]',
-      '???': '???',
-    },
     glossary:
       'Keep Sunbae/sunbae as sunbae. Use professora/professora titular naturally for Eunsu when the English says teacher. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 unchanged or clearly recognizable.',
   },
@@ -224,9 +86,6 @@ function buildPrompt(lang, file, source) {
   const sourceForModel = {};
   for (const [key, entry] of Object.entries(source)) {
     sourceForModel[key] = {};
-    if (Object.prototype.hasOwnProperty.call(entry, 'speaker')) {
-      sourceForModel[key].speaker = entry.speaker ?? '';
-    }
     sourceForModel[key].text = entry.text ?? '';
     if (Array.isArray(entry.choices)) sourceForModel[key].choices = entry.choices;
   }
@@ -239,8 +98,7 @@ Glossary and constraints: ${config.glossary}
 Rules:
 - Output only a single valid JSON object. No Markdown, no comments.
 - Preserve every top-level key exactly.
-- Preserve every entry shape: "speaker" only when present, "text", and "choices" only when choices exist in the source.
-- Copy "speaker" values exactly from the source; do not translate, rename, remove, or add speaker ids.
+- Preserve every entry shape: "text", and "choices" only when choices exist in the source.
 - Translate "text" and each item in "choices" into ${config.label}.
 - Keep placeholders such as {name}, markdown markers like **...**, surrounding visual-novel italics *...*, escaped quotes, and line breaks.
 - Keep empty strings empty.
@@ -260,7 +118,6 @@ function extractJson(text) {
 }
 
 function normalizeTranslated(lang, source, translated) {
-  const config = LANG_CONFIG[lang];
   const sourceKeys = Object.keys(source);
   const translatedKeys = Object.keys(translated);
   const missing = sourceKeys.filter((key) => !Object.prototype.hasOwnProperty.call(translated, key));
@@ -276,9 +133,6 @@ function normalizeTranslated(lang, source, translated) {
     if (typeof tr !== 'object' || Array.isArray(tr)) throw new Error(`entry ${key} is not an object`);
 
     const out = {};
-    if (Object.prototype.hasOwnProperty.call(src, 'speaker')) {
-      out.speaker = src.speaker ?? '';
-    }
     out.text = src.text === '' ? '' : String(tr.text ?? '');
 
     if (Array.isArray(src.choices)) {

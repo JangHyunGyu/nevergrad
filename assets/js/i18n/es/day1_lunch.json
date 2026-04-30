@@ -3,7 +3,6 @@
         "text": "*Termina la cuarta hora y suena la campana del almuerzo. Los estudiantes se levantan todos a la vez.*"
     },
     "day1_lunch_choice": {
-        "speaker": "me",
         "text": "*Hora del almuerzo. ¿Adónde debería ir?*",
         "choices": [
             "Sea me pidió que comiéramos juntos, así que me quedaré en el salón.",
@@ -19,40 +18,33 @@
         "text": "*...Es una lonchera de dos pisos. Claramente no es una porción individual.*"
     },
     "day1_lunch_sea_3": {
-        "speaker": "me",
         "text": "...¿Todo esto es tuyo?"
     },
     "day1_lunch_sea_4": {
-        "speaker": "sea_full",
         "text": "¿Y bien? Suficientemente bueno para vender, ¿verdad?"
     },
     "day1_lunch_sea_5": {
         "text": "*Abre la tapa. Tortilla enrollada, mini salchichas, bolas de arroz, brócoli, tomates cherry. Cuidadosamente arreglado por color.*"
     },
     "day1_lunch_sea_6": {
-        "speaker": "me",
         "text": "...Espera, ¿realmente hiciste todo esto?"
     },
     "day1_lunch_sea_7": {
-        "speaker": "sea_full",
         "text": "Pruébalo. Tenía la sensación de que esto te gustaría más que el pan comprado en la tienda."
     },
     "day1_lunch_sea_8": {
         "text": "*Sea toma un trozo de tortilla enrollada con sus palillos y me lo ofrece.*"
     },
     "day1_lunch_sea_9": {
-        "speaker": "sea_full",
         "text": "Aquí, prueba la tortilla primero. La hice un poco dulce."
     },
     "day1_lunch_sea_10": {
         "text": "*...Está bueno. Muy bueno.*"
     },
     "day1_lunch_sea_11": {
-        "speaker": "me",
         "text": "¿Esto es mejor que lo comprado en la tienda?"
     },
     "day1_lunch_sea_12": {
-        "speaker": "sea_full",
         "text": "¿En serio?"
     },
     "day1_lunch_sea_13": {
@@ -62,55 +54,45 @@
         "text": "*Charlamos un buen rato después de eso.*"
     },
     "day1_lunch_sea_15": {
-        "speaker": "me",
         "text": "¿Siempre traes una lonchera así, Sea?"
     },
     "day1_lunch_sea_16": {
-        "speaker": "sea_full",
         "text": "Sí. La cafetería de la escuela está bien y todo, pero lo casero sabe mejor."
     },
     "day1_lunch_sea_17": {
-        "speaker": "me",
         "text": "Parece mucho para una sola persona, sin embargo."
     },
     "day1_lunch_sea_18": {
-        "speaker": "sea_full",
         "text": "..."
     },
     "day1_lunch_sea_19": {
         "text": "*Sea hace una pausa por un momento, luego sonríe.*"
     },
     "day1_lunch_sea_20": {
-        "speaker": "sea_full",
         "text": "Suelo hacer mucho. Me alegra que estés comiendo tanto."
     },
     "day1_lunch_sea_21": {
         "text": "*La lonchera está casi vacía. Queda algo de tiempo.*"
     },
     "day1_lunch_sea_22": {
-        "speaker": "sea_full",
         "text": "Ah, claro, escucha esto."
     },
     "day1_lunch_sea_23": {
         "text": "*Sea me da uno de sus auriculares. Una melodía de guitarra suave.*"
     },
     "day1_lunch_sea_24": {
-        "speaker": "me",
         "text": "Oh, ¿qué es esto?"
     },
     "day1_lunch_sea_25": {
-        "speaker": "sea_full",
         "text": "Lo he estado escuchando mucho últimamente. La letra es bonita."
     },
     "day1_lunch_sea_26": {
         "text": "*Escucho en silencio. No está mal.*"
     },
     "day1_lunch_sea_27": {
-        "speaker": "me",
         "text": "Está bueno. Tienes buen gusto musical."
     },
     "day1_lunch_sea_28": {
-        "speaker": "sea_full",
         "text": "Jaja, lo dices como si fuera obvio."
     },
     "day1_lunch_sea_29": {
@@ -126,34 +108,27 @@
         "text": "*Una chica con una cámara se queda inmóvil con una expresión de sobresalto. Pequeña de complexión, cámara grande.*"
     },
     "day1_lunch_yuna_4": {
-        "speaker": "me",
         "text": "...¿Acabas de tomarme una foto?"
     },
     "day1_lunch_yuna_5": {
-        "speaker": "yuna",
         "text": "¡N-no...! Estoy en el club de fotografía, estaba tomando fotos del ambiente de la biblioteca y de repente entraste tú..."
     },
     "day1_lunch_yuna_6": {
-        "speaker": "yuna",
         "text": "Ah... lo siento. La borraré de inmediato."
     },
     "day1_lunch_yuna_7": {
-        "speaker": "me",
         "text": "No, está bien. Así que estás en el club de fotografía."
     },
     "day1_lunch_yuna_8": {
-        "speaker": "yuna",
         "text": "¡Sí...! Soy Choi Yuna, de primero. Eres la persona nueva, ¿verdad?"
     },
     "day1_lunch_yuna_9": {
-        "speaker": "me",
         "text": "Sí. Soy {name}. Mucho gusto."
     },
     "day1_lunch_yuna_10": {
         "text": "*Yuna se aferra a la cámara contra su pecho y baja la cabeza.*"
     },
     "day1_lunch_yuna_11": {
-        "speaker": "yuna",
         "text": "¿Vienes a la biblioteca a menudo? Yo estoy aquí todos los días."
     },
     "day1_lunch_yuna_12": {
@@ -163,11 +138,9 @@
         "text": "*Desplazándome, encontré una serie del mismo cerezo fotografiado en diferentes momentos del día. Mañana, mediodía, atardecer, noche.*"
     },
     "day1_lunch_yuna_14": {
-        "speaker": "me",
         "text": "...¿Fotografiaste el mismo árbol cuatro veces?"
     },
     "day1_lunch_yuna_15": {
-        "speaker": "yuna",
         "text": "Me encanta cómo cambian los colores con la luz. Tomé estas fotos a lo largo de un mes."
     },
     "day1_lunch_yuna_16": {
@@ -180,36 +153,30 @@
         "text": "*Corte bob corto morado oscuro, bata blanca, gafas de montura fina. Está recostada en su silla, leyendo algo.*"
     },
     "day1_lunch_riin_3": {
-        "speaker": "riin",
         "text": "Oh, ¿la enfermería en tu primer día? ¿Te sientes mal?"
     },
     "day1_lunch_riin_4": {
-        "speaker": "me",
         "text": "Me duele un poco la cabeza."
     },
     "day1_lunch_riin_5": {
-        "speaker": "riin",
         "text": "¿Sí? Toma asiento."
     },
     "day1_lunch_riin_6": {
         "text": "*La señorita Riin me toca la frente. Su mano está fresca.*"
     },
     "day1_lunch_riin_7": {
-        "speaker": "riin",
         "text": "No tienes fiebre. Es un dolor de cabeza tensional. Totalmente normal en tu primer día."
     },
     "day1_lunch_riin_8": {
         "text": "*Abre un cajón y saca unas medicinas, sonriendo.*"
     },
     "day1_lunch_riin_9": {
-        "speaker": "riin",
         "text": "¿Has comido? No deberías tomar medicinas con el estómago vacío."
     },
     "day1_lunch_riin_10": {
         "text": "*Me entrega una barra energética.*"
     },
     "day1_lunch_riin_11": {
-        "speaker": "riin",
         "text": "Si tienes sueño, siéntete libre de descansar aquí un rato."
     },
     "day1_lunch_riin_12": {
@@ -222,19 +189,15 @@
         "text": "*...Abrí los ojos. En algún momento me habían cubierto con una manta. La cálida luz del sol entra por la ventana.*"
     },
     "day1_lunch_riin_15": {
-        "speaker": "riin_full",
         "text": "Ya despertaste. Dormiste unos 15 minutos."
     },
     "day1_lunch_riin_16": {
-        "speaker": "me",
         "text": "Ah... lo siento, yo solo..."
     },
     "day1_lunch_riin_17": {
-        "speaker": "riin_full",
         "text": "No hay nada de qué disculparse. Para eso es la enfermería. ¿Te sientes mejor de la cabeza?"
     },
     "day1_lunch_riin_18": {
-        "speaker": "me",
         "text": "Sí, mucho mejor. La enfermería estaba cálida."
     },
     "day1_lunch_alone_1": {

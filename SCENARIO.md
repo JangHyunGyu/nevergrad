@@ -165,7 +165,7 @@
 
 > [!NOTE]
 > 이 구간은 `node scripts/sync-scenario-md-dialogue.js`로 자동 생성된다.
-> 기준 데이터는 `assets/js/i18n/ko/*.json`의 `name`, `text`, `choices`와 `assets/js/scenario/*.js`의 씬 순서다.
+> 기준 데이터는 `assets/js/scenario/speakers.js`의 화자 정보, `assets/js/i18n/ko/*.json`의 `text`, `choices`, `assets/js/scenario/*.js`의 씬 순서다.
 > 플레이어에게 실제로 표시되는 한국어 대사/지문/선택지만 이 구간의 동기화 대상이다.
 
 # DAY 1 — 실제 게임 대사/지문

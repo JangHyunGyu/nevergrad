@@ -590,11 +590,6 @@ for (const file of fs.readdirSync(KO_DIR).filter((name) => name.endsWith('.json'
   for (const [key, koEntry] of Object.entries(ko)) {
     const existing = pt[key] && typeof pt[key] === 'object' ? { ...pt[key] } : {};
     const entry = {};
-    if (Object.prototype.hasOwnProperty.call(koEntry, 'speaker')) {
-      entry.speaker = koEntry.speaker;
-    } else if (Object.prototype.hasOwnProperty.call(existing, 'speaker')) {
-      entry.speaker = existing.speaker;
-    }
     entry.text = existing.text ?? koEntry.text ?? '';
     if (Array.isArray(koEntry.choices)) entry.choices = existing.choices ?? koEntry.choices;
 

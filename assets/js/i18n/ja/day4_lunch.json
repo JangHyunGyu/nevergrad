@@ -1,10 +1,8 @@
 {
     "day4_lunch_start": {
-        "speaker": "me",
         "text": "*昼休みだ。どこに行くか決めなければ。*"
     },
     "day4_lunch_choice": {
-        "speaker": "me",
         "text": "*時間は昼休みしかない。急がないと。*",
         "choices": [
             "ユナを探す",
@@ -13,75 +11,57 @@
         ]
     },
     "day4_lunch_yuna_1": {
-        "speaker": "me",
         "text": "*写真部の教室。ドアに鍵がかかっている。昨日までは開いていたのに。*"
     },
     "day4_lunch_yuna_2": {
-        "speaker": "me",
         "text": "*周りを見回した。廊下に誰もいない。窓の一つが半ロックだった。体をねじ込んだ。*"
     },
     "day4_lunch_yuna_3": {
-        "speaker": "me",
         "text": "*ユナのロッカー。空っぽだ。**あまりにも**きれいだ。*"
     },
     "day4_lunch_yuna_4": {
-        "speaker": "me",
         "text": "*他のロッカーには埃が積もっている。ユナのものだけ拭いたようにきれいだ。誰かが片付けたんだ。*"
     },
     "day4_lunch_yuna_5": {
-        "speaker": "me",
         "text": "*ロッカーの底板がわずかに浮いている。二重底。ユナのカメラが隠されている。*"
     },
     "day4_lunch_yuna_6": {
-        "speaker": "me",
         "text": "*カメラを取り出した。バッテリーがほとんどない。電源を入れた。*"
     },
     "day4_lunch_yuna_7": {
-        "speaker": "me",
         "text": "*写真一覧。200枚以上。ほとんどが学校の風景だ。一見普通に見えるが――隅々に同じ人物が写っている。スーツ姿。保護者ではない人たち。ユナが3年間集めた証拠だ。*"
     },
     "day4_lunch_yuna_8": {
-        "speaker": "me",
         "text": "*最後の写真：地下へ続く階段。隅に手書きの文字：**「ここの下――ユ」***"
     },
     "day4_lunch_yuna_9": {
-        "speaker": "me",
         "text": "*日付は昨夜だ。ユナは失踪する直前にこの写真を撮った。*"
     },
     "day4_lunch_yuna_10": {
-        "speaker": "me",
         "text": "*旧館の廊下の奥。「関係者以外立入禁止」。錆びたドア。*"
     },
     "day4_lunch_yuna_11": {
-        "speaker": "me",
         "text": "*取っ手を引いた。開かない。新しい錠前がかかっている。錆びたドアに新しい錠前。――最近取り替えたんだ。*"
     },
     "day4_lunch_yuna_12": {
-        "speaker": "me",
         "text": "*ドアの隙間に耳を当てた。下から音が聞こえる。低い機械音。そして――うめき声。微かだが確かに人の声。*"
     },
     "day4_lunch_yuna_13": {
-        "speaker": "me",
         "text": "*……ユナ。*"
     },
     "day4_lunch_yuna_14": {
-        "speaker": "me",
         "text": "*錠前を揺すってみた。びくともしない。ポケットを探った。開けられるものは何もない。*"
     },
     "day4_lunch_yuna_15": {
-        "speaker": "me",
         "text": "*足音が聞こえる。廊下の奥から。誰かが来ている。*"
     },
     "day4_lunch_yuna_16": {
-        "speaker": "me",
         "text": "*後ずさった。ドアの前から離れなきゃ。――身を翻して物陰に隠れた。*"
     },
     "day4_lunch_yuna_17": {
-        "speaker": "me",
         "text": "*ウンス先生が通り過ぎた。鍵を取り出してドアを開けた。中に入りながらドアを閉めた。錠前のかかる音。*"
     },
     "day4_lunch_yuna_18": {
-        "speaker": "me",
         "text": "*……ウンス先生が鍵を持っている。このドアの向こうにユナがいる。そして僕は――開けられない。*",
         "choices": [
             "今夜、鍵を取りに行く",
@@ -90,87 +70,66 @@
         ]
     },
     "day4_lunch_yuna_19": {
-        "speaker": "me",
         "text": "*拳を握った。爪が手のひらに食い込む。*"
     },
     "day4_lunch_yuna_20": {
-        "speaker": "me",
         "text": "***明日。明日必ず。***"
     },
     "day4_lunch_nurse_1": {
-        "speaker": "me",
         "text": "*リイン先生が薬品キャビネットの前で何かを注射器に移している。*"
     },
     "day4_lunch_nurse_first": {
-        "speaker": "me",
         "text": "*机の上の名札が先に目に入った。「カン・リイン、養護教諭」。その名前を読んだ瞬間、奥で白衣の人が顔を上げる。*"
     },
     "day4_lunch_nurse_2": {
-        "speaker": "me",
         "text": "*アンプルのラベルが見える。「M-13」。地下室のキャビネットで見たのと同じコードだ。*"
     },
     "day4_lunch_nurse_3": {
-        "speaker": "me",
         "text": "*僕を見て止まる。*"
     },
     "day4_lunch_nurse_4": {
-        "speaker": "riin",
         "text": "「……びっくりした。」"
     },
     "day4_lunch_nurse_5": {
-        "speaker": "me",
         "text": "*注射器を背中の後ろに隠す。自然に。でも僕は見た。*"
     },
     "day4_lunch_nurse_noyuna": {
-        "speaker": "me",
         "text": "「……今、何をされていたんですか？」"
     },
     "day4_lunch_nurse_noyuna_2": {
-        "speaker": "riin",
         "text": "「……ビタミン注射の準備。生徒の健康管理も養護教諭の仕事だから。」"
     },
     "day4_lunch_nurse_noyuna_3": {
-        "speaker": "me",
         "text": "*……ビタミン注射にしては、隠すのが自然すぎた。アンプルのラベルも「M-13」。ビタミンのコードじゃない。*"
     },
     "day4_lunch_nurse_6": {
-        "speaker": "me",
         "text": "「ユナが……急に転校したって聞いたんですけど。」"
     },
     "day4_lunch_nurse_7": {
-        "speaker": "me",
         "text": "*リイン先生の表情がほんの一瞬変わった。0.5秒。目が鋭くなり――また柔らかくなる。*"
     },
     "day4_lunch_nurse_8": {
-        "speaker": "riin",
         "text": "「……なんでそんなに見てるの？{name}、変なこと考えてるんじゃないでしょうね？」"
     },
     "day4_lunch_nurse_9": {
-        "speaker": "me",
         "text": "*声が一瞬冷たくなり、また穏やかに戻る。*"
     },
     "day4_lunch_nurse_10": {
-        "speaker": "riin",
         "text": "「ユナは大丈夫だよ。」"
     },
     "day4_lunch_nurse_11": {
-        "speaker": "me",
         "text": "*「大丈夫だよ」と言った。「大丈夫」ではなく。未来形。*"
     },
     "day4_lunch_nurse_12": {
-        "speaker": "me",
         "text": "*……リイン先生はユナが今は大丈夫じゃないことを知っている。*"
     },
     "day4_lunch_nurse_13": {
-        "speaker": "riin",
         "text": "「……疲れてるみたいだね。最近よく眠れてないみたいだけど。」"
     },
     "day4_lunch_nurse_14": {
-        "speaker": "riin",
         "text": "「薬一つあげようか？よく眠れるやつ。」"
     },
     "day4_lunch_nurse_15": {
-        "speaker": "me",
         "text": "*笑顔。柔らかい声。手に持った注射器。*",
         "choices": [
             "すぐに断る",
@@ -179,23 +138,18 @@
         ]
     },
     "day4_lunch_nurse_16": {
-        "speaker": "me",
         "text": "*……断って出てきた。背後でリイン先生が何かつぶやくのが聞こえた。聞こえないふりをした。*"
     },
     "day4_lunch_roof_1": {
-        "speaker": "me",
         "text": "*風が吹く。*"
     },
     "day4_lunch_roof_2": {
-        "speaker": "me",
         "text": "*手すりの下に刻まれた文字。ナイフで深く彫った跡。*"
     },
     "day4_lunch_roof_3": {
-        "speaker": "me",
         "text": "***「出る方法は一つ。――イ・ソルファ」***"
     },
     "day4_lunch_roof_4": {
-        "speaker": "me",
         "text": "*その下に小さな文字：***「地下に答えがある」***",
         "choices": [
             "言葉を覚える",
@@ -203,19 +157,15 @@
         ]
     },
     "day4_lunch_roof_5": {
-        "speaker": "me",
         "text": "*文字を指で触った。冷たい。金属の手すりに刻まれた文字。古い痕跡だ。*"
     },
     "day4_lunch_roof_6": {
-        "speaker": "me",
         "text": "*……これは幻覚が刻んだ文字じゃない。物理的に存在する痕跡だ。*"
     },
     "day4_lunch_roof_7": {
-        "speaker": "me",
         "text": "*ソルファが――実際にここにいた頃に刻んだものだ。*"
     },
     "day4_lunch_end": {
-        "speaker": "me",
         "text": "*午後の授業が始まる。*"
     }
 }

@@ -3,7 +3,6 @@
         "text": ""
     },
     "day1_after_choice": {
-        "speaker": "me",
         "text": "*放課後。どこに行こうか？*",
         "choices": [
             "セアが、生徒会室に来てって言ってたな",
@@ -17,56 +16,45 @@
         "text": "*小さな部屋。机が二つ、ロッカー、窓際に植物。きちんと整理されている。*"
     },
     "day1_after_sea_2": {
-        "speaker": "sea_full",
         "text": "「来たね。ここが生徒会室だよ」"
     },
     "day1_after_sea_3": {
         "text": "*彼女は僕に缶飲料を差し出す。気取らない、自然な仕草だ。*"
     },
     "day1_after_sea_4": {
-        "speaker": "sea_full",
         "text": "「それで、慣れてきた？」"
     },
     "day1_after_sea_5": {
-        "speaker": "me",
         "text": "「思ったよりはね。セアが色々気にかけてくれたから」"
     },
     "day1_after_sea_6": {
-        "speaker": "sea_full",
         "text": "「……そう？」"
     },
     "day1_after_sea_7": {
         "text": "*セアは小さく息を吐き、微笑んだ。*"
     },
     "day1_after_sea_8": {
-        "speaker": "sea_full",
         "text": "「初日はいつも大変だよね。誰も知らないし」"
     },
     "day1_after_sea_9": {
         "text": "*セアは窓の外を見る。夕焼けの光が差し込む。*"
     },
     "day1_after_sea_10": {
-        "speaker": "sea_full",
         "text": "「……来てくれて嬉しいよ、{name}。生徒会室に一人でいると、ちょっと寂しいんだ」"
     },
     "day1_after_sea_11": {
-        "speaker": "me",
         "text": "「他の生徒会メンバーは？」"
     },
     "day1_after_sea_12": {
-        "speaker": "sea_full",
         "text": "「何人かいるけど……放課後にここに来るのは私だけなんだ」"
     },
     "day1_after_sea_13": {
-        "speaker": "sea_full",
         "text": "「……明日も来てくれる？」"
     },
     "day1_after_sea_14": {
-        "speaker": "me",
         "text": "「ああ、時間があれば」"
     },
     "day1_after_sea_15": {
-        "speaker": "sea_full",
         "text": "「本当に待ってるからね？ 来なかったら、教室に乗り込むから」"
     },
     "day1_after_sea_16": {
@@ -76,29 +64,24 @@
         "text": "*ユナが窓際の席で写真を整理している。*"
     },
     "day1_after_yuna_2": {
-        "speaker": "yuna",
         "text": "「また来てくれた！」"
     },
     "day1_after_yuna_3": {
         "text": "*ユナはカメラを操作し、僕に写真を見せる。校舎の風景、桜、猫。*"
     },
     "day1_after_yuna_4": {
-        "speaker": "yuna",
         "text": "「この猫はチーズ。私が名前をつけたの」"
     },
     "day1_after_yuna_5": {
         "text": "*しばらく猫の話で盛り上がった。ユナは話しながら目を輝かせている。*"
     },
     "day1_after_yuna_6": {
-        "speaker": "yuna",
         "text": "「……明日も、図書館に来てくれる？」"
     },
     "day1_after_yuna_7": {
-        "speaker": "me",
         "text": "「ああ、時間があれば」"
     },
     "day1_after_yuna_8": {
-        "speaker": "yuna",
         "text": "「……ぜひ、来てね」"
     },
     "day1_after_yuna_9": {
@@ -108,14 +91,12 @@
         "text": "*僕が図書館を出ようとすると、ユナもついてくる。*"
     },
     "day1_after_yuna_11": {
-        "speaker": "yuna_full",
         "text": "「先輩、待って！」"
     },
     "day1_after_yuna_12": {
         "text": "*ユナがポラロイド写真を差し出す。先ほどの図書館の窓からの景色だ。*"
     },
     "day1_after_yuna_13": {
-        "speaker": "yuna_full",
         "text": "「これ……先輩が座っていた場所。光がすごく綺麗だったから、撮ってみたの。はい、記念に」"
     },
     "day1_after_yuna_14": {
@@ -125,77 +106,63 @@
         "text": "*リイン先生とハーブティーを飲んだ。穏やかな時間だ。*"
     },
     "day1_after_riin_2": {
-        "speaker": "riin",
         "text": "「転校すると、環境がガラッと変わるからね。眠れなくなったり、変な夢を見たりする生徒も多いのよ」"
     },
     "day1_after_riin_3": {
-        "speaker": "me",
         "text": "「僕は今のところ大丈夫です」"
     },
     "day1_after_riin_4": {
-        "speaker": "riin",
         "text": "「そう？ それはよかった」"
     },
     "day1_after_riin_5": {
         "text": "*リイン先生は少し間を置いて、棚を開ける。*"
     },
     "day1_after_riin_6": {
-        "speaker": "riin_full",
         "text": "「待って。これ、持って帰りなさい」"
     },
     "day1_after_riin_7": {
         "text": "*彼女は小さな袋を僕に手渡す。ハーブティーのティーバッグがいくつか入っている。*"
     },
     "day1_after_riin_8": {
-        "speaker": "riin_full",
         "text": "「よく眠れない時は、寝る前に一杯淹れてみて。カモミールよ」"
     },
     "day1_after_riin_9": {
-        "speaker": "me",
         "text": "「ありがとうございます」"
     },
     "day1_after_riin_10": {
         "text": "*リイン先生はスピーカーから優しいピアノ曲を流す。保健室に音楽が満ちる。*"
     },
     "day1_after_riin_11": {
-        "speaker": "riin_full",
         "text": "「またこの時間に来たら、お茶を淹れてあげるわ。保健室は開けておくから」"
     },
     "day1_after_riin_12": {
         "text": "*リイン先生は微笑んでドアを開けてくれる。廊下を歩きながら、僕はティーバッグの包みをいじる。まだ温かい。*"
     },
     "day1_after_eunsu_1": {
-        "speaker": "eunsu",
         "text": "「{name}？ 放課後に会いに来てくれたの？ 優しいわね」"
     },
     "day1_after_eunsu_2": {
         "text": "*彼女はコーヒーを淹れながら、僕に色々なことを尋ねる。*"
     },
     "day1_after_eunsu_3": {
-        "speaker": "eunsu",
         "text": "「……{name}、前の学校で何かあったの？ 転校の手続きが、ちょっと変わっていて……」"
     },
     "day1_after_eunsu_4": {
-        "speaker": "me",
         "text": "「変わっている？ ただ、親の転勤で……」"
     },
     "day1_after_eunsu_5": {
-        "speaker": "eunsu",
         "text": "「あら、なんでもないわ。気にしないで」"
     },
     "day1_after_eunsu_6": {
         "text": "*先生は話題を変えた。*"
     },
     "day1_after_eunsu_7": {
-        "speaker": "eunsu_full",
         "text": "「そうそう、{name}、教科書は全部揃った？」"
     },
     "day1_after_eunsu_8": {
-        "speaker": "me",
         "text": "「はい、セアが全部手配してくれました」"
     },
     "day1_after_eunsu_9": {
-        "speaker": "eunsu_full",
         "text": "「セアがしっかり面倒を見てくれているようね。……{name}、もし何か困ったことがあったら、私を頼ってちょうだい。私が担任なんだから」"
     },
     "day1_after_eunsu_10": {
@@ -205,7 +172,6 @@
         "text": "*校門を出て、僕は振り返る。*"
     },
     "day1_after_home_2": {
-        "speaker": "me",
         "text": "*初日にしては、悪くない。*"
     },
     "day1_after_home_3": {

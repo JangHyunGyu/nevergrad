@@ -3,35 +3,27 @@
         "text": "*最後の授業が終わり、ウンスが近づいてくる。*"
     },
     "day2_after_eunsu_1": {
-        "speaker": "eunsu",
         "text": "「うちの学校、スマートキャンパスシステムが結構充実してるんだ。学内Wi-Fi、図書館の利用、購買まで、全部一つのアプリでできるの」"
     },
     "day2_after_eunsu_2": {
-        "speaker": "eunsu",
         "text": "「転校生だから、まだ『生徒安全アプリ』に登録してないでしょ？ これがないと購買も使えないんだよ」"
     },
     "day2_after_eunsu_3": {
-        "speaker": "me",
         "text": "*アプリストアで検索する。『ハヌルスマートキャンパス』。星4.8。高評価だ。*"
     },
     "day2_after_eunsu_4": {
-        "speaker": "me",
         "text": "*ダウンロード。インストール。学生証番号を入力する。*"
     },
     "day2_after_eunsu_5": {
-        "speaker": "eunsu",
         "text": "「ここに学生証番号を書いておいたよ」"
     },
     "day2_after_eunsu_6": {
-        "speaker": "me",
         "text": "*先生が僕に付箋を渡す。丁寧な字だ。*"
     },
     "day2_after_eunsu_7": {
-        "speaker": "me",
         "text": "*アプリを起動すると、権限のリクエストが表示される。\n\n[位置情報権限] — 「学内での緊急時に生徒の位置を特定するために必要です」\n[カメラ権限] — 「学生証のQRスキャンに必要です」\n[マイク権限] — 「緊急通報に必要です」*"
     },
     "day2_after_eunsu_8": {
-        "speaker": "me",
         "text": "*……ずいぶんたくさんの権限が必要なんだな。*"
     },
     "day2_after_eunsu_choice": {
@@ -51,15 +43,12 @@
         "text": "*アプリの通知：「位置情報権限が制限されています。緊急安全機能は無効になります」*"
     },
     "day2_after_limit_2": {
-        "speaker": "eunsu",
         "text": "「位置情報は『常に許可』にしておいた方がいいよ。もし{name}が倒れたりしたら、すぐに場所を特定できるから」"
     },
     "day2_after_limit_3": {
-        "speaker": "me",
         "text": "「……そこまで必要なのか？」"
     },
     "day2_after_limit_4": {
-        "speaker": "eunsu",
         "text": "「去年、体育祭で生徒が倒れたことがあったんだ。それから方針が強化されたの」"
     },
     "day2_after_limit_5": {
@@ -69,15 +58,12 @@
         "text": ""
     },
     "day2_after_sea_1": {
-        "speaker": "sea_full",
         "text": "「来てくれたんだね？ 今日も来てくれてありがとう」"
     },
     "day2_after_sea_2": {
-        "speaker": "me",
         "text": "「約束しただろ」"
     },
     "day2_after_sea_3": {
-        "speaker": "sea_full",
         "text": "「……覚えててくれたんだ」"
     },
     "day2_after_sea_4": {
@@ -87,85 +73,69 @@
         "text": "*生徒会室の机には書類の山。体育祭の資料だ。*"
     },
     "day2_after_sea_6": {
-        "speaker": "sea_full",
         "text": "「来週は体育祭だから、イベントのプログラムとクラスの参加申請を整理しないと」"
     },
     "day2_after_sea_7": {
-        "speaker": "me",
         "text": "「手伝おうか？」"
     },
     "day2_after_sea_8": {
-        "speaker": "sea_full",
         "text": "「本当？ じゃあ、申請書を日付順に並べてもらえる？」"
     },
     "day2_after_sea_9": {
         "text": "*セアがイベントプログラムに取り組み、僕は申請書を整理する。単純な作業だけど、隣に誰かいると退屈しない。*"
     },
     "day2_after_sea_10": {
-        "speaker": "sea_full",
         "text": "「見て、2組は綱引きとリレーの両方に申し込んでる。意欲的だね」"
     },
     "day2_after_sea_11": {
-        "speaker": "me",
         "text": "「俺たちのクラスは？」"
     },
     "day2_after_sea_12": {
-        "speaker": "sea_full",
         "text": "「うちのクラスは……まだ提出してない。私がクラス委員長なのに、こんなことってある？」"
     },
     "day2_after_sea_13": {
-        "speaker": "me",
         "text": "「明日集めればいいだろ」"
     },
     "day2_after_sea_14": {
-        "speaker": "sea_full",
         "text": "「でも、私の評判が……」"
     },
     "day2_after_sea_15": {
         "text": "*セアが申請書を机にドンと置く。\n\nしばらく作業した後、セアが音楽をかける。昼食の時と同じバンドだ。*"
     },
     "day2_after_sea_16": {
-        "speaker": "sea_full",
         "text": "「BGMがないと退屈でしょ」"
     },
     "day2_after_sea_17": {
         "text": "*紙をめくる音と音楽。窓からは夕焼けの光が差し込む。この瞬間……心地いい。*"
     },
     "day2_after_sea_18": {
-        "speaker": "sea_full",
         "text": "「……{name}。君が来る前は、いつもここで一人だったんだ」"
     },
     "day2_after_sea_19": {
-        "speaker": "sea_full",
         "text": "「私がクラス委員長だから、みんな一線を引くんだ。笑顔を見せてくれるけど……距離を置かれてる」"
     },
     "day2_after_sea_20": {
         "text": "*セアが窓の外を見る。夕焼けが彼女の顔を染める。書類を持つ手が止まっている。*"
     },
     "day2_after_sea_21": {
-        "speaker": "sea_full",
         "text": "「正直……時々、寂しくなるんだ」"
     },
     "day2_after_sea_22": {
         "text": "*セアの目尻が少し赤くなっている。*"
     },
     "day2_after_sea_23": {
-        "speaker": "me",
         "text": "「……正直に話してくれて、ありがとう」"
     },
     "day2_after_sea_24": {
-        "speaker": "sea_full",
         "text": "「……だから、変わらないで。ずっと私と仲良くしててね」"
     },
     "day2_after_sea_25": {
-        "speaker": "me",
         "text": "「変わる理由なんてない」"
     },
     "day2_after_sea_26": {
         "text": "*セアが僕を見る。何か言いたげだったが、口を閉じる。そして、再び書類を手に取った。*"
     },
     "day2_after_sea_27": {
-        "speaker": "sea_full",
         "text": "「……うん。君の言葉、覚えておくよ」"
     },
     "day2_after_sea_28": {
@@ -175,35 +145,27 @@
         "text": "*生徒会室を出て廊下を歩くと、数人のクラスメイトが自動販売機のそばに集まっていた。*"
     },
     "day2_after_hallway_2": {
-        "speaker": "boy_student",
         "text": "「お、{name}！ 何してんの？」"
     },
     "day2_after_hallway_3": {
-        "speaker": "me",
         "text": "「生徒会室でセアの手伝いをしていたんだ」"
     },
     "day2_after_hallway_4": {
-        "speaker": "girl_student",
         "text": "「セアの手伝い？ もう？ まだ転校して二日目だろ」"
     },
     "day2_after_hallway_5": {
-        "speaker": "boy_student",
         "text": "「委員長に気に入られたら、もう逃げられないぞー」"
     },
     "day2_after_hallway_6": {
-        "speaker": "me",
         "text": "「書類を整理しただけだよ」"
     },
     "day2_after_hallway_7": {
-        "speaker": "girl_student",
         "text": "「なあ、自販機で何か飲む？ おごってやるよ」"
     },
     "day2_after_hallway_8": {
-        "speaker": "me",
         "text": "「ああ、大丈夫だ」"
     },
     "day2_after_hallway_9": {
-        "speaker": "boy_student",
         "text": "「遠慮すんなって。新入りにはこれくらいしてやらないと。歓迎の印だ」"
     },
     "day2_after_hallway_10": {

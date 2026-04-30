@@ -1,421 +1,317 @@
 {
     "day4_night_start": {
-        "speaker": "me",
         "text": "*部屋に戻ってきた。ドアに鍵をかけ、チェーンもかけた。*"
     },
     "day4_night_start_2": {
-        "speaker": "me",
         "text": "*チェーンをかけた後も安心できない。ドアの前に椅子を置いた。それでも安心できない。*"
     },
     "day4_night_start_3": {
-        "speaker": "me",
         "text": "*……この部屋も「あの人たち」が用意したものだ。鍵なんて何の意味がある。*"
     },
     "day4_night_phone": {
-        "speaker": "me",
         "text": "*携帯が鳴る。セアだ。*"
     },
     "day4_night_phone_2": {
-        "speaker": "me",
         "text": "*セア：「{name}、今日急にいなくなったから心配したよ」*"
     },
     "day4_night_phone_3": {
-        "speaker": "me",
         "text": "*セア：「明日も一緒に行こうね」*"
     },
     "day4_night_phone_4": {
-        "speaker": "me",
         "text": "*セア：「約束だよ。」*"
     },
     "day4_night_phone_5": {
-        "speaker": "me",
         "text": "*30秒後。セア：「約束だよ。」*"
     },
     "day4_night_phone_6": {
-        "speaker": "me",
         "text": "*15秒後。セア：「約束だよ？？？？？」*"
     },
     "day4_night_phone_7": {
-        "speaker": "me",
         "text": "*メッセージが止まらない。*"
     },
     "day4_night_phone_8": {
-        "speaker": "me",
         "text": "*10秒後。セア：「寝てるの？」*"
     },
     "day4_night_phone_9": {
-        "speaker": "me",
         "text": "*5秒後。セア：「……寝ないで。もう少しだけ。」*"
     },
     "day4_night_phone_10": {
-        "speaker": "me",
         "text": "*3秒後。セア：「お願い」*"
     },
     "day4_night_phone_11": {
-        "speaker": "me",
         "text": "*……読まなかった。読めなかった。*"
     },
     "day4_night_phone_eunsu": {
-        "speaker": "me",
         "text": "*ウンス先生：「明日、少し早く来てくれないか？話したいことがあるんだ。」*"
     },
     "day4_night_phone_eunsu_2": {
-        "speaker": "me",
         "text": "*ウンス先生：「おやすみ、{name}。」*"
     },
     "day4_night_phone_eunsu_3": {
-        "speaker": "me",
         "text": "*「おやすみ」。今日この学校で起きたすべてを設計した人が――「おやすみ」と言う。*"
     },
     "day4_night_phone_end": {
-        "speaker": "me",
         "text": "*携帯を引き出しに入れた。バイブレーションが鳴り続けた。タオルで包んで音を消した。*"
     },
     "day4_night_save_glitch": {
-        "speaker": "me",
         "text": "*引き出しの中でバイブレーション。携帯だ。さっきしまったのに――勝手に鳴っている。*"
     },
     "day4_night_save_glitch_2": {
-        "speaker": "me",
         "text": "*取り出してみた。学生安全アプリの通知が表示されている。*"
     },
     "day4_night_save_glitch_3": {
-        "speaker": "me",
         "text": "*「被験――」チカッ。通知が変わる。「おやすみなさい、{name}！」*"
     },
     "day4_night_save_glitch_4": {
-        "speaker": "me",
         "text": "*……今、何て出た？*"
     },
     "day4_night_save_glitch_5": {
-        "speaker": "me",
         "text": "*アプリを開いた。いつもの学生メニューじゃない。画面が違う。黒い背景に白い文字。――管理者パネル。*"
     },
     "day4_night_save_glitch_6": {
-        "speaker": "me",
         "text": "***画面上部：「NEVERGRAD――被験者管理システム v4.7」***"
     },
     "day4_night_save_glitch_7": {
-        "speaker": "me",
         "text": "*一覧が表示される。13行。#01 キム・ドジン――終了。#02 イ・ジュンソ――終了。#03 パク・ソジン――終了（Day 4 脱出試行）。#04 チョン・ハユル――終了。#05 カン・ミンヒョク――終了。#06 ユン・ジェウォン――終了。#07 キム・テホ――██異常反応██（外部接触：イ・ソルファ）。#08 チェ・シウ――終了。#09 ハン・ジホ――終了（Day 3 早期発覚）。#10 ソン・イェジュン――終了。#11 オ・テヒョン――終了。#12 イム・ソユル――終了。#13 {name}――進行中。*"
     },
     "day4_night_save_glitch_8": {
-        "speaker": "me",
         "text": "*13行。13の名前。12の「終了」。*"
     },
     "day4_night_save_glitch_9": {
-        "speaker": "me",
         "text": "*日付を見た。間隔が一定じゃない。3ヶ月、4ヶ月、3ヶ月……だが期間は全部同じ。**5日間。***"
     },
     "day4_night_save_glitch_10": {
-        "speaker": "me",
         "text": "*#07だけ違う。「異常反応」。外部接触：イ・ソルファ。――ソルファ。*"
     },
     "day4_night_save_glitch_11": {
-        "speaker": "me",
         "text": "*#09。ハン・ジホ。Day 3 早期発覚。3日目で終わった。最も早く気づいた「僕」。最も早く消された「僕」。*"
     },
     "day4_night_save_glitch_12": {
-        "speaker": "me",
         "text": "*#13。僕の名前。「進行中」。*"
     },
     "day4_night_save_glitch_13": {
-        "speaker": "me",
         "text": "*スクロールした。下にタブがもっとある。*"
     },
     "day4_night_save_glitch_14": {
-        "speaker": "me",
         "text": "*「位置追跡記録」。タブを押した。地図が表示される。学校の平面図。その上で赤い点が動いている。――4日間の僕の動線が余すところなく記録されている。*"
     },
     "day4_night_save_glitch_15": {
-        "speaker": "me",
         "text": "*Day 1：校門→廊下→教室→グラウンド→教室→校門。Day 2：校門→廊下→教室→図書室→生徒会室→校門。Day 3：校門→教室→屋上→廊下→教室→校門。Day 4：校門→教室→旧館廊下→保健室→生徒会室。*"
     },
     "day4_night_save_glitch_16": {
-        "speaker": "me",
         "text": "*……全ての足取りが記録されている。Day 2にウンス先生がインストールさせたこのアプリが――最初からこれだった。*"
     },
     "day4_night_save_glitch_17": {
-        "speaker": "me",
         "text": "*画面下部に小さな文字：「リアルタイムモニタリング有効 / マイク ON / 位置追跡 ON」*"
     },
     "day4_night_save_glitch_18": {
-        "speaker": "me",
         "text": "*Day 2に僕が自分で「全て許可」を押した。この手で。*"
     },
     "day4_night_save_glitch_19": {
-        "speaker": "me",
         "text": "*アプリが閉じた。勝手に。いつもの学生メニューに戻った。「おやすみなさい、{name}！」*"
     },
     "day4_night_save_glitch_20": {
-        "speaker": "me",
         "text": "*……同じアプリだ。さっきも今も。表と裏があっただけだ。*"
     },
     "day4_night_mirror": {
-        "speaker": "me",
         "text": "*制服のシャツのボタンを二つ外した。首が苦しい。洗面所に行った。蛇口をひねった。顔を洗った。*"
     },
     "day4_night_mirror_2": {
-        "speaker": "me",
         "text": "*冷たい水が顔を叩く。意識が戻らない。もう一回。もう一回。*"
     },
     "day4_night_mirror_3": {
-        "speaker": "me",
         "text": "*……鏡。曇っている。*"
     },
     "day4_night_mirror_4": {
-        "speaker": "me",
         "text": "*今まで一度も拭かなかった。拭きたくなかった。なぜか。*"
     },
     "day4_night_mirror_5": {
-        "speaker": "me",
         "text": "*なぜか――今はわかる。無意識がわかっていた。鏡の中で何を見ることになるか。*"
     },
     "day4_night_mirror_6": {
-        "speaker": "me",
         "text": "*……今回は拭かなければならない。*"
     },
     "day4_night_mirror_7": {
-        "speaker": "me",
         "text": "*手を上げた。鏡の表面に触れる直前で止まった。深呼吸。ひとつ。ふたつ。*"
     },
     "day4_night_mirror_8": {
-        "speaker": "me",
         "text": "***背後に気配。振り返った。ソルファが立っている。浴室のドアの前に。蒼白い肌、銀白色の髪、華奢な体つき。***"
     },
     "day4_night_mirror_9": {
-        "speaker": "me",
         "text": "***少女が僕を見ている。悲しい目で。***"
     },
     "day4_night_mirror_10": {
-        "speaker": "seolhwa",
         "text": "……拭かないで。"
     },
     "day4_night_mirror_11": {
-        "speaker": "seolhwa",
         "text": "まだ……見ないで。"
     },
     "day4_night_mirror_12": {
-        "speaker": "me",
         "text": "*……もう一度鏡を見た。*"
     },
     "day4_night_mirror_swipe": {
-        "speaker": "me",
         "text": "*手を上げた。鏡の上に手のひらを当てた。冷たい。*"
     },
     "day4_night_mirror_swipe_2": {
-        "speaker": "me",
         "text": "*ゆっくり拭いた。上から下へ。一回。*"
     },
     "day4_night_mirror_swipe_3": {
-        "speaker": "me",
         "text": "*曇りが晴れる。額が現れる。*"
     },
     "day4_night_mirror_swipe_4": {
-        "speaker": "me",
         "text": "*二回目。目が現れる。*"
     },
     "day4_night_mirror_swipe_5": {
-        "speaker": "me",
         "text": "*三回目。鼻。口。顎。僕の顔が現れる。*"
     },
     "day4_night_mirror_hit1": {
-        "speaker": "me",
         "text": "***鏡の中に――僕の背後が映っている。***"
     },
     "day4_night_mirror_hit1_2": {
-        "speaker": "me",
         "text": "***誰もいない。***"
     },
     "day4_night_mirror_hit1_3": {
-        "speaker": "me",
         "text": "***さっきまで立っていたソルファが――鏡には映っていない。***"
     },
     "day4_night_mirror_hit1_4": {
-        "speaker": "me",
         "text": "*息が詰まった。*"
     },
     "day4_night_mirror_hit1_5": {
-        "speaker": "me",
         "text": "*振り返った。ソルファが立っている。確かに。銀白色の髪が蛍光灯の光に輝いている。目が潤んでいる。*"
     },
     "day4_night_mirror_hit1_6": {
-        "speaker": "me",
         "text": "*もう一度鏡を見た。鏡には――僕だけがいる。僕と空っぽの浴室。*"
     },
     "day4_night_mirror_hit1_7": {
-        "speaker": "me",
         "text": "*後ろを見た。ソルファがいる。鏡を見た。いない。後ろ。いる。鏡。いない。*"
     },
     "day4_night_mirror_hit1_8": {
-        "speaker": "me",
         "text": "***……ソルファは鏡に映らない。***"
     },
     "day4_night_mirror_hit1_9": {
-        "speaker": "me",
         "text": "***ソルファは――物理的に存在しない。***"
     },
     "day4_night_mirror_hit1_10": {
-        "speaker": "me",
         "text": "*地下室、ソルファ、そして僕が見落としてきた手がかりが一度に浮かび上がる。*"
     },
     "day4_night_mirror_hit1_11": {
-        "speaker": "me",
         "text": "*「存在しない他者に依存する防衛機制……幻覚と確定。」*"
     },
     "day4_night_mirror_hit1_12": {
-        "speaker": "me",
         "text": "***今、僕の背後に立って僕を見守っているこの少女は――1年前に死んだ。***"
     },
     "day4_night_mirror_hit1_13": {
-        "speaker": "me",
         "text": "***僕が今まで話しかけ、頼りにし、警告を聞いていた相手は――僕の頭の中で作り出された幻覚だった。***"
     },
     "day4_night_mirror_hit1_14": {
-        "speaker": "seolhwa",
         "text": "……ごめんね。"
     },
     "day4_night_mirror_hit1_15": {
-        "speaker": "me",
         "text": "*声が聞こえる。確かに。鼓膜が振動する。でもこの声は――空気を通して来たものじゃない。僕の頭の中で響いている。*"
     },
     "day4_night_mirror_hit2": {
-        "speaker": "me",
         "text": "*視界が狭くなる。鏡を直視する。僕の顔。僕の顔を見る。*"
     },
     "day4_night_mirror_hit2_2": {
-        "speaker": "me",
         "text": "*4日ぶりに初めてちゃんと見た自分の顔。見慣れない。この顔が僕なのか。*"
     },
     "day4_night_mirror_hit2_3": {
-        "speaker": "me",
         "text": "*さっき見た記録の名前を一つずつ思い出しながら、鏡の中の顔に重ねてみる。*"
     },
     "day4_night_mirror_hit2_4": {
-        "speaker": "me",
         "text": "*1番。キム・ドジン。短い黒髪。顔――同じだ。*"
     },
     "day4_night_mirror_hit2_5": {
-        "speaker": "me",
         "text": "*3番。パク・ソジン。茶色い髪。顔――同じだ。*"
     },
     "day4_night_mirror_hit2_6": {
-        "speaker": "me",
         "text": "*7番。キム・テホ。長い髪。やつれた頬。でも目、鼻、口の配置が――同じだ。*"
     },
     "day4_night_mirror_hit2_7": {
-        "speaker": "me",
         "text": "***違う髪色。違う名前。でも鏡の中の僕の顔と――全部同じだ。***"
     },
     "day4_night_mirror_hit2_8": {
-        "speaker": "me",
         "text": "***僕は、今回の名前だ。***"
     },
     "day4_night_mirror_hit2_9": {
-        "speaker": "me",
         "text": "***優しい言葉、温かいコーヒー、何事もなかったような笑顔。……僕は、僕のために死んだ人の幻覚を背中の後ろに立たせたまま、その人を殺した人たちと笑いながら、それを受け入れていた。***"
     },
     "day4_night_mirror_overlay": {
         "text": ""
     },
     "day4_night_mirror_collapse": {
-        "speaker": "me",
         "text": "*後ずさりした。壁に背中がぶつかった。ずるずると崩れ落ちた。*"
     },
     "day4_night_mirror_collapse_2": {
-        "speaker": "me",
         "text": "***ソルファが「覚えていて」と言った理由。文字通りだった。――僕のために消えた人を忘れるな、と。***"
     },
     "day4_night_mirror_collapse_3": {
-        "speaker": "me",
         "text": "*床にへたり込んだ。膝を抱えた。*"
     },
     "day4_night_mirror_collapse_4": {
-        "speaker": "me",
         "text": "*歯がガチガチ鳴る。体が言うことを聞かない。*"
     },
     "day4_night_mirror_collapse_5": {
-        "speaker": "me",
         "text": "*目が熱くなる。声が出ない。喉が締まって音にならない。*"
     },
     "day4_night_mirror_collapse_6": {
-        "speaker": "me",
         "text": "*……ソルファのための涙なのか。名前が十三回も変わった自分のための涙なのか。十二回も終わりながら、一度も自分自身のために泣いたことのなかった自分のための涙なのか。*"
     },
     "day4_night_mirror_collapse_7": {
-        "speaker": "me",
         "text": "*わからない。ただ――崩れる。浴室の床が冷たい。タイルの冷たさが背中を通して染み込んでくる。どれくらいそうしていたかわからない。*"
     },
     "day4_night_mirror_collapse_8": {
-        "speaker": "me",
         "text": "*……ソルファが隣に座っている。鏡に映らない少女が。幻覚が。死んだ人が。*"
     },
     "day4_night_mirror_collapse_9": {
-        "speaker": "me",
         "text": "*でも――隣に誰かがいる。本物かどうかは関係ない。今はそれだけでいい。*"
     },
     "day4_night_plan": {
-        "speaker": "me",
         "text": "*……どれくらいそうしていたかわからない。涙が枯れてからようやく立ち上がった。*"
     },
     "day4_night_plan_2": {
-        "speaker": "me",
         "text": "*もう一度鏡を見た。泣いた後の顔。腫れた目。赤い鼻。――これが13番目の僕だ。*"
     },
     "day4_night_plan_3": {
-        "speaker": "me",
         "text": "*ノートを開いた。手は震えているけど書く。左手で。左利きだから。……ソルファが知っていた事実を――今は僕も知っている。*"
     },
     "day4_night_plan_4": {
-        "speaker": "me",
         "text": "*ひとつ。この学校は僕を対象に記憶操作実験を行っている。13回目の繰り返し。*"
     },
     "day4_night_plan_5": {
-        "speaker": "me",
         "text": "*ふたつ。ウンス＝総括。リイン＝薬物。セア＝監視。*"
     },
     "day4_night_plan_6": {
-        "speaker": "me",
         "text": "*みっつ。ソルファ＝7回目の時に僕と一緒に反逆して廃棄された人。今僕が見ているソルファは記憶が作り出した幻覚。*"
     },
     "day4_night_plan_7": {
-        "speaker": "me",
         "text": "*四つ。旧館の下に隠された空間がある。Day 3の機械音、Day 4の空席、扉の向こうの気配が、全部同じ場所を指している。*"
     },
     "day4_night_plan_8": {
-        "speaker": "me",
         "text": "*いつつ。明日が5日目。夜11時に「最終処理」。*"
     },
     "day4_night_plan_9": {
-        "speaker": "me",
         "text": "*六つ。旧館の上層部。構造上、いちばん外に近い。地下から出たら上へ向かい、脱出口を探す必要がある。*"
     },
     "day4_night_plan_10": {
-        "speaker": "me",
         "text": "*……書いている途中で止まった。ペンを置いた。*"
     },
     "day4_night_plan_11": {
-        "speaker": "me",
         "text": "*ななつ。リイン先生が鍵を持っている。明日の朝まで時間を稼ぐと言っていた。*"
     },
     "day4_night_plan_12": {
-        "speaker": "me",
         "text": "*やっつ。3番目の僕はDay 4に脱出を試みて失敗した。正門で捕まった。――正門はダメだ。*"
     },
     "day4_night_plan_13": {
-        "speaker": "me",
         "text": "*ここのつ。7番目の僕はソルファと一緒に試みた。22:47に終わった。23:00より13分早い。――何かが違った。*"
     },
     "day4_night_plan_14": {
-        "speaker": "me",
         "text": "*とお。9番目の僕はDay 3で発覚した。早く動きすぎてはいけない。*"
     },
     "day4_night_plan_15": {
-        "speaker": "me",
         "text": "*手が震える。字が歪む。でも止めなかった。*"
     },
     "day4_night_plan_choice": {
-        "speaker": "me",
         "text": "*最終計画を立てる。*",
         "choices": [
             "学校から脱出する",
@@ -424,31 +320,24 @@
         ]
     },
     "day4_night_plan_escape": {
-        "speaker": "me",
         "text": "*脱出。正門は3番目が失敗した道だ。旧館の非常口から行く。*"
     },
     "day4_night_plan_expose": {
-        "speaker": "me",
         "text": "*まず証拠を外に出す。13回分の記録があれば無視できない。*"
     },
     "day4_night_plan_confront": {
-        "speaker": "me",
         "text": "*正面突破。ウンスに直接言う。13回全部知っていると。*"
     },
     "day4_night_plan_final": {
-        "speaker": "me",
         "text": "*鞄をまとめた。メモ、携帯、確保した証拠。最低限の荷物。*"
     },
     "day4_night_plan_final_2": {
-        "speaker": "me",
         "text": "*ノートの最後の行に書いた。*"
     },
     "day4_night_plan_final_3": {
-        "speaker": "me",
         "text": "***「12回失敗した。次はない。ここで忘れてしまったら――僕は永遠に消される。」***"
     },
     "day4_night_plan_final_4": {
-        "speaker": "me",
         "text": "*……明日だ。最後の日。*"
     },
     "day4_night_end": {

@@ -6,6 +6,7 @@ const root = path.join(__dirname, '..');
 const scenarioMdPath = path.join(root, 'SCENARIO.md');
 const scenarioDir = path.join(root, 'assets', 'js', 'scenario');
 const koDir = path.join(root, 'assets', 'js', 'i18n', 'ko');
+const speakersPath = path.join(scenarioDir, 'speakers.js');
 const outJsonPath = path.join(__dirname, 'dialogue_narration_scene_compare.json');
 const outMdPath = path.join(__dirname, 'dialogue_narration_scene_compare.md');
 
@@ -19,34 +20,7 @@ const slotNames = {
   night: '밤',
 };
 
-const koSpeakerNames = {
-  me: '나',
-  unknown: '???',
-  school_broadcast: '[교내 방송]',
-  eunsu_full: '박은수',
-  eunsu: '은수',
-  riin_full: '강리인',
-  riin: '리인',
-  sea_full: '한세아',
-  sea: '세아',
-  yuna_full: '최유나',
-  yuna: '유나',
-  seolhwa_full: '이설화',
-  seolhwa: '설화',
-  classmate_a: '급우 A',
-  classmate_b: '급우 B',
-  student: '학생',
-  student_a: '학생 A',
-  student_b: '학생 B',
-  boy: '남학생',
-  girl: '여학생',
-  boy_student: '남학생',
-  girl_student: '여학생',
-  girl_student_a: '여학생 A',
-  girl_student_b: '여학생 B',
-  boy_next_to_me: '옆자리 남학생',
-  window_girl: '창가의 여학생',
-};
+const { koSpeakerNames, scenarioSpeakers } = loadSpeakerMetadata();
 
 function parseScenarioFile(file) {
   const match = file.match(/^day(\d+)_(\d+)_(morning|lunch|afterschool|night)\.js$/);
@@ -70,10 +44,21 @@ function normalize(value) {
   return String(value ?? '').replace(/\r\n/g, '\n').trimEnd();
 }
 
-function displaySpeaker(entry) {
-  const speaker = normalize(entry?.speaker);
+function loadSpeakerMetadata() {
+  const sandbox = {};
+  vm.createContext(sandbox);
+  vm.runInContext(fs.readFileSync(speakersPath, 'utf8'), sandbox, { filename: speakersPath });
+  const speakerNames = sandbox.NEVERGRAD_SPEAKER_NAMES || {};
+  return {
+    koSpeakerNames: speakerNames.ko || speakerNames.en || {},
+    scenarioSpeakers: sandbox.SCENARIO_SPEAKERS || {},
+  };
+}
+
+function displaySpeaker(sceneId) {
+  const speaker = normalize(scenarioSpeakers[sceneId]);
   if (speaker) return koSpeakerNames[speaker] || speaker;
-  return normalize(entry?.name);
+  return '';
 }
 
 function countLeadingAsterisks(text) {
@@ -272,7 +257,7 @@ function compare() {
 
       const md = mdEntries.get(sceneId);
       const expectedSource = `${scenarioFile} / ${ko.file}`;
-      const expectedSpeaker = displaySpeaker(ko.entry);
+      const expectedSpeaker = displaySpeaker(sceneId);
       const compareSpeaker = Boolean(expectedText && expectedSpeaker);
       const type = expectedText
         ? (isNarration(expectedText) || !expectedSpeaker ? '지문' : '대사')
@@ -339,7 +324,7 @@ function compare() {
     if (!expectedText && expectedChoices.length === 0) continue;
 
     const md = mdEntries.get(sceneId);
-    const expectedSpeaker = displaySpeaker(ko.entry);
+    const expectedSpeaker = displaySpeaker(sceneId);
     const compareSpeaker = Boolean(expectedText && expectedSpeaker);
     const type = expectedText
       ? (isNarration(expectedText) || !expectedSpeaker ? '지문' : '대사')

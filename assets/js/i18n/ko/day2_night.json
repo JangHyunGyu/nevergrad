@@ -1,58 +1,44 @@
 {
     "day2_night_start": {
-        "speaker": "me",
         "text": "*휴대폰을 확인했다.*"
     },
     "day2_night_phone_1": {
-        "speaker": "me",
         "text": "*예전 학교 단체 채팅방. '3명 읽음'. 아무도 답장이 없다. 벌써 이틀째.*"
     },
     "day2_night_phone_2": {
-        "speaker": "me",
         "text": "*민수에게 메시지를 보냈다. '야 민수야 나 전학 왔는데 연락도 없냐 ㅋㅋㅋ'*"
     },
     "day2_night_phone_3": {
-        "speaker": "me",
         "text": "*10분 뒤. '...' 표시가 떴다. 민수가 입력 중이다.*"
     },
     "day2_night_phone_4": {
-        "speaker": "me",
         "text": "*5초. 계속 깜빡이는 입력 중 표시. 긴 메시지를 쓰는 건가?*"
     },
     "day2_night_phone_5": {
-        "speaker": "me",
         "text": "*답장이 왔다.*"
     },
     "day2_night_phone_6": {
-        "speaker": "me",
         "text": "*민수: '응 잘 지내. 거긴 어때?'*"
     },
     "day2_night_phone_7": {
-        "speaker": "me",
         "text": "*...이게 뭐지. 평소 같으면 '야 이 바보 녀석아 ㅋㅋㅋㅋ' 하면서 온갖 욕을 늘어놓을 녀석이 이렇게 딱딱하다고?*"
     },
     "day2_night_phone_8": {
-        "speaker": "me",
         "text": "*'응 잘 지내.' ...5초 동안 입력하더니 고른 말이 고작 이거라고?*"
     },
     "day2_night_phone_9": {
-        "speaker": "me",
         "text": "*답장했다. '왜 이렇게 딱딱해 ㅋㅋㅋ 무슨 일 있어?'*"
     },
     "day2_night_phone_10": {
-        "speaker": "me",
         "text": "*1분. 2분. 다시 입력 중 표시가 떴다.*"
     },
     "day2_night_phone_11": {
-        "speaker": "me",
         "text": "*민수: '아니 아무 일 없어 ㅋㅋㅋ 그냥 바빴어'*"
     },
     "day2_night_phone_12": {
-        "speaker": "me",
         "text": "*...왠지 모르게 말투가 다르다. 그냥 바빴던 거겠지.*"
     },
     "day2_night_phone_13": {
-        "speaker": "me",
         "text": "*...더 물어보고 싶다. 민수에게 답장해 봐야겠다.*",
         "choices": [
             "민수에게 한 번 더 메시지를 보낸다",
@@ -61,214 +47,162 @@
         ]
     },
     "day2_night_ft_messenger": {
-        "speaker": "me",
         "text": "*답장을 보냈다. '야 민수야, 진짜 너 맞아? ㅋㅋ 너답지 않게 무슨 일 있어?'*"
     },
     "day2_night_ft_messenger_2": {
-        "speaker": "me",
         "text": "*입력 중 표시. 또 한참 깜빡인다. 5초, 10초, 20초.*"
     },
     "day2_night_ft_messenger_3": {
-        "speaker": "me",
         "text": "*민수: '나 맞아. 그냥 좀 졸려서 그래.'*"
     },
     "day2_night_ft_messenger_4": {
-        "speaker": "me",
         "text": "*...20초 동안 입력하다가 결국 보낸 게 이거다.*"
     },
     "day2_night_ft_messenger_5": {
-        "speaker": "me",
         "text": "*뭔가 어색하지만, 졸렸다는데 어쩌겠어. 다음에 또 물어보지. 핸드폰을 내려놨다.*"
     },
     "day2_night_sea_1": {
-        "speaker": "me",
         "text": "*세아: '오늘도 고마웠어. 학생회실에 와줘서.'*"
     },
     "day2_night_sea_2": {
-        "speaker": "me",
         "text": "*세아: '내일도 같이 밥 먹자!'*"
     },
     "day2_night_sea_3": {
-        "speaker": "me",
         "text": "*세아: '...{name}이랑 같이 있으면 좋아.'*"
     },
     "day2_night_sea_4": {
-        "speaker": "me",
         "text": "*답장했다. '나도 오늘 재밌었어. 체육대회 준비 파이팅 ㅋㅋㅋ'*"
     },
     "day2_night_sea_5": {
-        "speaker": "me",
         "text": "*세아: '파이팅? ㅋㅋㅋ 네가 나 도와줘야지'*"
     },
     "day2_night_sea_6": {
-        "speaker": "me",
         "text": "*세아: '내일 아침에도 기다릴게'*"
     },
     "day2_night_sea_7": {
-        "speaker": "me",
         "text": "*'또 기다린다고? 춥지 않을까?'*"
     },
     "day2_night_sea_8": {
-        "speaker": "me",
         "text": "*세아: '안 추워~'*"
     },
     "day2_night_sea_promise_branch": {
         "text": ""
     },
     "day2_night_sea_9_alt": {
-        "speaker": "me",
         "text": "*세아: '그럼 내일도 학교에서 보자. 너무 늦게 자지 말고.'*"
     },
     "day2_night_sea_9": {
-        "speaker": "me",
         "text": "*세아: '근데 오늘 점심에 한 약속 기억하지?'*"
     },
     "day2_night_sea_10": {
-        "speaker": "me",
         "text": "*'토요일? 당연하지.'*"
     },
     "day2_night_sea_11": {
-        "speaker": "me",
         "text": "*세아: '♡'*"
     },
     "day2_night_sea_12": {
-        "speaker": "me",
         "text": "*세아: '그럼 잘 자'*"
     },
     "day2_night_sea_13": {
-        "speaker": "me",
         "text": "*'잘 자.'*"
     },
     "day2_night_sea_14": {
-        "speaker": "me",
         "text": "*휴대폰을 내려놓았다. 창밖에는 달이 떠 있다. 또다시 카카오톡 알림이 울렸다.*"
     },
     "day2_night_sea_14a": {
-        "speaker": "me",
         "text": "*학생 안전 앱으로 메시지가 왔다.*"
     },
     "day2_night_eunsu_1": {
-        "speaker": "me",
         "text": "*은수: '{name}, 오늘 발표 잘했어. 적응도 빠르고.'*"
     },
     "day2_night_eunsu_2": {
-        "speaker": "me",
         "text": "*은수: '내일 교무실에 잠깐 들러줄 수 있을까? 확인할 서류가 있어서.'*"
     },
     "day2_night_eunsu_3": {
-        "speaker": "me",
         "text": "*'네, 알겠습니다.'*"
     },
     "day2_night_eunsu_4": {
-        "speaker": "me",
         "text": "*은수: '👍 푹 쉬어.'*"
     },
     "day2_night_eunsu_5": {
-        "speaker": "me",
         "text": "*...선생님이 이런 메시지도 보내주시는구나. 예전 담임 선생님은 내 이름도 제대로 기억 못 하셨는데.*"
     },
     "day2_night_flash_1": {
-        "speaker": "me",
         "text": "*이불을 덮고 눈을 감았다.*"
     },
     "day2_night_flash_2": {
-        "speaker": "me",
         "text": "*...갑자기 어떤 영상이 스쳐 지나갔다. 이 학교 복도를 걷고 있다. 비가 온다. 교복이 젖어 있다. 누군가와 함께 달리고 있다—*"
     },
     "day2_night_flash_3": {
-        "speaker": "me",
         "text": "*손을 잡고 있다. 여자아이의 손. 차가운 손.*"
     },
     "day2_night_flash_4": {
-        "speaker": "me",
         "text": "*\"이쪽이야\" — 누군가의 목소리. 전에 들어본 것 같은 목소리.*"
     },
     "day2_night_flash_5": {
-        "speaker": "me",
         "text": "*눈을 떴다. 이마에 땀이 송골송골 맺혀 있다.*"
     },
     "day2_night_flash_6": {
-        "speaker": "me",
         "text": "*...방금 그건 뭐지? 꿈은 아니지만, 어떤 영상이 떠올랐다. 이 학교 복도... 마치 전에 걸어본 것처럼. 누군가의 손을 잡고 달리는 모습. 차가운 손.*"
     },
     "day2_night_flash_7": {
-        "speaker": "me",
         "text": "*...은수? 아까 어깨를 두드렸을 때 손이 차가웠는데. ...아니, 그럴 리가 없어.*"
     },
     "day2_night_flash_8": {
-        "speaker": "me",
         "text": "*...아마 첫날이라 긴장해서 그런 거겠지. 머릿속이 온통 학교 이미지로 가득하다.*"
     },
     "day2_night_search_1": {
-        "speaker": "me",
         "text": "*...이불을 걷어차고 일어났다. 잠이 오지 않았다. 휴대폰을 들고 검색창에 '해돋이 고등학교'를 입력했다.*"
     },
     "day2_night_search_2": {
-        "speaker": "me",
         "text": "*공식 홈페이지. 교장 선생님 말씀. 학교 연혁. 졸업 앨범 링크? — '준비 중입니다.' 은수 선생님과 리인 선생님의 이름은 교직원 명단에 있었다. 사진은 없었지만.*"
     },
     "day2_night_search_3": {
-        "speaker": "me",
         "text": "*뉴스 검색. '해돋이 고등학교.' 검색 결과 없음. 아무것도 없다. 지역 뉴스에도. — 이 정도 규모의 학교인데, 뉴스 기사가 단 하나도 없다고?*"
     },
     "day2_night_search_4": {
-        "speaker": "me",
         "text": "*'해돋이고 축제', '해돋이고 졸업식'. 아무것도 없다. 이상하다. 보통 학교는 체육대회 사진이라도 하나쯤 온라인에 올라와 있지 않나?*"
     },
     "day2_night_search_5": {
-        "speaker": "me",
         "text": "*...내가 너무 깊게 파고드는 건가? 작은 학교는 원래 이런 건가? 휴대폰을 내려놓고 다시 누웠다.*"
     },
     "day2_night_dream_1": {
-        "speaker": "me",
         "text": "*다시 눈을 감았다. 이번에는 잠이 들었다.*"
     },
     "day2_night_dream_2": {
-        "speaker": "me",
         "text": "*꿈을 꾸고 있다.*"
     },
     "day2_night_dream_3": {
-        "speaker": "me",
         "text": "*교실. 하지만 지금 교실은 아니다. 책상 배열이 다르다. 칠판에 날짜가 쓰여 있지만 읽을 수 없다.*"
     },
     "day2_night_dream_4": {
-        "speaker": "me",
         "text": "*누군가 앞자리에 앉아 있다. 긴 머리. 뒷모습만 보인다.*"
     },
     "day2_night_dream_5": {
-        "speaker": "me",
         "text": "*\"야, 괜찮아?\"*"
     },
     "day2_night_dream_6": {
-        "speaker": "me",
         "text": "*그 사람이 돌아본다. 설화다. 하지만 설화의 표정이 다르다. 지금의 설화는 늘 슬픈 표정이지만, 꿈속의 설화는 — 웃고 있다.*"
     },
     "day2_night_dream_7": {
-        "speaker": "me",
         "text": "*설화가 입을 연다. 무언가 말하고 있지만 들리지 않는다. 입술을 읽으려 노력했다. '도와—' 무언가를 말하고 있다.*"
     },
     "day2_night_dream_7a": {
-        "speaker": "me",
         "text": "*입술을 읽으려 노력했다. '도와—' 무언가를 말하고 있다.*"
     },
     "day2_night_dream_8": {
-        "speaker": "me",
         "text": "*교실이 어두워진다. 설화의 얼굴이 흐려진다.*"
     },
     "day2_night_dream_9": {
-        "speaker": "me",
         "text": "*—*"
     },
     "day2_night_wake_1": {
-        "speaker": "me",
         "text": "*아침이다. 알람이 울리고 있다.*"
     },
     "day2_night_wake_2": {
-        "speaker": "me",
         "text": "*...꿈? 설화가 나왔다. 웃고 있었다. 무언가를 말하려고 했는데...*"
     },
     "day2_night_wake_3": {
-        "speaker": "me",
         "text": "*기억나지 않는다. 그녀가 뭐라고 했는지. ...그냥 꿈이었겠지.*"
     },
     "day2_night_end": {

@@ -3,7 +3,6 @@
         "text": ""
     },
     "day1_after_choice": {
-        "speaker": "me",
         "text": "*Nach der Schule. Wo soll ich hin?*",
         "choices": [
             "Sea hat gesagt, ich soll zum Schülerratszimmer kommen",
@@ -17,56 +16,45 @@
         "text": "*Ein kleiner Raum. Zwei Schreibtische, ein Spind, eine Pflanze am Fenster. Ordentlich aufgeräumt.*"
     },
     "day1_after_sea_2": {
-        "speaker": "sea_full",
         "text": "Du bist gekommen. Das hier ist das Schülerratszimmer."
     },
     "day1_after_sea_3": {
         "text": "*Sie reicht mir eine Dose Getränk. Ganz selbstverständlich.*"
     },
     "day1_after_sea_4": {
-        "speaker": "sea_full",
         "text": "Na, wie läuft's? Kann man aushalten?"
     },
     "day1_after_sea_5": {
-        "speaker": "me",
         "text": "Besser als erwartet. Du hast dich echt gut um mich gekümmert, Sea."
     },
     "day1_after_sea_6": {
-        "speaker": "sea_full",
         "text": "...Echt?"
     },
     "day1_after_sea_7": {
         "text": "*Sea atmet leise aus und lächelt.*"
     },
     "day1_after_sea_8": {
-        "speaker": "sea_full",
         "text": "Der erste Tag ist immer der schwerste. Man kennt niemanden."
     },
     "day1_after_sea_9": {
         "text": "*Sea schaut aus dem Fenster. Das Abendlicht fällt herein.*"
     },
     "day1_after_sea_10": {
-        "speaker": "sea_full",
         "text": "...Ich bin froh, dass du gekommen bist, {name}. Allein im Schülerratszimmer ist es ein bisschen einsam."
     },
     "day1_after_sea_11": {
-        "speaker": "me",
         "text": "Was ist mit den anderen Schülerratsmitgliedern?"
     },
     "day1_after_sea_12": {
-        "speaker": "sea_full",
         "text": "Es gibt welche, aber... nach der Schule kommt nur ich hierher."
     },
     "day1_after_sea_13": {
-        "speaker": "sea_full",
         "text": "...Kommst du morgen wieder?"
     },
     "day1_after_sea_14": {
-        "speaker": "me",
         "text": "Ja, wenn ich Zeit habe."
     },
     "day1_after_sea_15": {
-        "speaker": "sea_full",
         "text": "Ich warte wirklich auf dich, ja? Wenn du nicht kommst, stürm ich dein Klassenzimmer."
     },
     "day1_after_sea_16": {
@@ -76,29 +64,24 @@
         "text": "*Yuna sortiert Fotos an einem Fensterplatz.*"
     },
     "day1_after_yuna_2": {
-        "speaker": "yuna",
         "text": "Sie sind wieder da!"
     },
     "day1_after_yuna_3": {
         "text": "*Yuna blättert durch ihre Kamera und zeigt mir Fotos. Schullandschaften, Kirschblüten, Katzen.*"
     },
     "day1_after_yuna_4": {
-        "speaker": "yuna",
         "text": "Diese Katze heißt Käse. Ich habe ihr den Namen gegeben."
     },
     "day1_after_yuna_5": {
         "text": "*Wir plauderten eine Weile über Katzen. Yunas Augen funkeln, während sie weiterredet.*"
     },
     "day1_after_yuna_6": {
-        "speaker": "yuna",
         "text": "...Kommen Sie morgen auch in die Bibliothek?"
     },
     "day1_after_yuna_7": {
-        "speaker": "me",
         "text": "Ja, wenn ich Zeit habe."
     },
     "day1_after_yuna_8": {
-        "speaker": "yuna",
         "text": "...Kommen Sie auf jeden Fall."
     },
     "day1_after_yuna_9": {
@@ -108,14 +91,12 @@
         "text": "*Als ich die Bibliothek verlasse, kommt Yuna mir hinterher.*"
     },
     "day1_after_yuna_11": {
-        "speaker": "yuna_full",
         "text": "Warten Sie kurz!"
     },
     "day1_after_yuna_12": {
         "text": "*Yuna hält mir ein Polaroidfoto hin. Die Fensteraussicht der Bibliothek von vorhin.*"
     },
     "day1_after_yuna_13": {
-        "speaker": "yuna_full",
         "text": "Das hier... ist der Platz, an dem Sie gesessen haben. Das Licht war so schön, da hab ich es fotografiert. Als Andenken für Sie."
     },
     "day1_after_yuna_14": {
@@ -125,77 +106,63 @@
         "text": "*Ich trank Kräutertee mit Frau Riin. Eine entspannte Zeit.*"
     },
     "day1_after_riin_2": {
-        "speaker": "riin",
         "text": "Bei einem Schulwechsel ändert sich die ganze Umgebung. Nicht wenige Schüler können dann schlecht schlafen oder haben seltsame Träume."
     },
     "day1_after_riin_3": {
-        "speaker": "me",
         "text": "Bis jetzt geht es mir gut."
     },
     "day1_after_riin_4": {
-        "speaker": "riin",
         "text": "Ja? Das freut mich."
     },
     "day1_after_riin_5": {
         "text": "*Frau Riin lächelt und öffnet mir die Tür.*"
     },
     "day1_after_riin_6": {
-        "speaker": "riin_full",
         "text": "Warte kurz. Nimm das hier mit."
     },
     "day1_after_riin_7": {
         "text": "*Sie reicht mir ein Tütchen. Ein paar Kräutertee-Beutel.*"
     },
     "day1_after_riin_8": {
-        "speaker": "riin_full",
         "text": "Wenn du nicht schlafen kannst, koch dir vor dem Schlafengehen eine Tasse. Es ist Kamille."
     },
     "day1_after_riin_9": {
-        "speaker": "me",
         "text": "Vielen Dank."
     },
     "day1_after_riin_10": {
         "text": "*Frau Riin spielte ein sanftes Klavierstück über den Lautsprecher. Musik erfüllte das Krankenzimmer.*"
     },
     "day1_after_riin_11": {
-        "speaker": "riin_full",
         "text": "Wenn du nächstes Mal um diese Zeit kommst, mach ich dir Tee. Ich lass das Krankenzimmer offen."
     },
     "day1_after_riin_12": {
         "text": "*Frau Riin lächelt und öffnet mir die Tür. Auf dem Flur fummel ich an dem Teebeutel-Tütchen herum. Es ist noch warm.*"
     },
     "day1_after_eunsu_1": {
-        "speaker": "eunsu",
         "text": "{name}? Du kommst nach der Schule vorbei? Das ist lieb."
     },
     "day1_after_eunsu_2": {
         "text": "*Sie kocht Kaffee und fragt mich dies und das.*"
     },
     "day1_after_eunsu_3": {
-        "speaker": "eunsu",
         "text": "...{name}, ist an deiner alten Schule etwas vorgefallen? Der Grund für deinen Wechsel ist ein bisschen ungewöhnlich..."
     },
     "day1_after_eunsu_4": {
-        "speaker": "me",
         "text": "Ungewöhnlich? Es war nur wegen dem Umzug meiner Eltern..."
     },
     "day1_after_eunsu_5": {
-        "speaker": "eunsu",
         "text": "Ach, nein. Vergiss es."
     },
     "day1_after_eunsu_6": {
         "text": "*Die Lehrerin wechselte das Thema.*"
     },
     "day1_after_eunsu_7": {
-        "speaker": "eunsu_full",
         "text": "Ach stimmt, {name}, hast du alle Schulbücher bekommen?"
     },
     "day1_after_eunsu_8": {
-        "speaker": "me",
         "text": "Ja, Sea hat sich um alles gekümmert."
     },
     "day1_after_eunsu_9": {
-        "speaker": "eunsu_full",
         "text": "Na, Sea hat's dir leicht gemacht. ...{name}, wenn irgendetwas schwierig ist, komm einfach zu mir. Ich bin deine Klassenlehrerin."
     },
     "day1_after_eunsu_10": {
@@ -205,7 +172,6 @@
         "text": "*Beim Verlassen des Schultors schaue ich zurück.*"
     },
     "day1_after_home_2": {
-        "speaker": "me",
         "text": "*Für den ersten Tag gar nicht schlecht.*"
     },
     "day1_after_home_3": {

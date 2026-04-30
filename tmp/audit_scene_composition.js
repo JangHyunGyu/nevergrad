@@ -8,6 +8,14 @@ const koDir = path.join(root, 'assets/js/i18n/ko');
 
 const cfgSrc = fs.readFileSync(path.join(root, 'assets/js/config.js'), 'utf8');
 const CONFIG = new Function(`${cfgSrc}\nreturn CONFIG;`)();
+const speakerSandbox = {};
+vm.createContext(speakerSandbox);
+vm.runInContext(
+  fs.readFileSync(path.join(scenarioDir, 'speakers.js'), 'utf8'),
+  speakerSandbox,
+  { filename: 'speakers.js' },
+);
+const scenarioSpeakers = speakerSandbox.SCENARIO_SPEAKERS || {};
 
 const scenarioFiles = fs.readdirSync(scenarioDir)
   .filter((file) => /^day\d+_\d+_(morning|lunch|afterschool|night)\.js$/.test(file))
@@ -163,20 +171,13 @@ function textOf(sceneId) {
   return String(ko[sceneId]?.text || '').replace(/\s+/g, ' ').trim();
 }
 
-function speakerExpected(entry) {
-  const speakerId = String(entry?.speaker || '').trim();
+function speakerExpected(sceneId) {
+  const speakerId = String(scenarioSpeakers[sceneId] || '').trim();
   if (/^eunsu(_full)?$/.test(speakerId)) return 'eunsu';
   if (/^riin(_full)?$/.test(speakerId)) return 'riin';
   if (/^sea(_full)?$/.test(speakerId)) return 'sea';
   if (/^yuna(_full)?$/.test(speakerId)) return 'yuna';
   if (/^seolhwa(_full)?$/.test(speakerId)) return 'seolhwa';
-
-  const speaker = String(entry?.name || '').trim();
-  if (/^(박은수|은수|담임교사)$/.test(speaker)) return 'eunsu';
-  if (/^(강리인|리인|보건교사)$/.test(speaker)) return 'riin';
-  if (/^한세아$/.test(speaker)) return 'sea';
-  if (/^최유나$/.test(speaker)) return 'yuna';
-  if (/^(이설화|설화)$/.test(speaker)) return 'seolhwa';
   return null;
 }
 
@@ -272,8 +273,8 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
   const text = textOf(sceneId);
 
   if (entry && states.length) {
-    const speaker = entry.speaker || entry.name || '';
-    const expected = speakerExpected(entry);
+    const speaker = String(scenarioSpeakers[sceneId] || '').trim();
+    const expected = speakerExpected(sceneId);
     if (expected && !isLikelyOffscreen(sceneId, scene, text, speaker)) {
       const okAny = states.some((state) => visiblePrefixes(state).has(expected));
       if (!okAny) {

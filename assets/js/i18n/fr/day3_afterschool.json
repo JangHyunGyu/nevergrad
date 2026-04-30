@@ -1,18 +1,14 @@
 {
     "day3_after_start": {
-        "speaker": "me",
         "text": "*La réunion de fin de journée est terminée. La classe se vide rapidement. Par la fenêtre, je vois les élèves se rassembler par petits groupes dans la cour.*"
     },
     "day3_after_start_2": {
-        "speaker": "me",
         "text": "*Aujourd'hui était étrange. Depuis ce matin. Le déjà vu en chemin vers l'école, le silence dans la classe, les yeux de Sea. Tout.*"
     },
     "day3_after_start_3": {
-        "speaker": "me",
         "text": "*...Est-ce que je devrais simplement rentrer ? Non. J'ai l'impression de devoir faire quelque chose. Je ne peux pas continuer avec ce malaise.*"
     },
     "day3_after_choice": {
-        "speaker": "me",
         "text": "*Où aller ?*",
         "choices": [
             "Passer à l'infirmerie",
@@ -22,50 +18,39 @@
         ]
     },
     "day3_after_riin": {
-        "speaker": "me",
         "text": "*Je me suis arrêté devant la porte de l'infirmerie. De petits bruits viennent de l'intérieur. Des flacons en verre qui s'entrechoquent.*"
     },
     "day3_after_riin_first": {
-        "speaker": "me",
         "text": "*Je ne suis jamais venu à l'infirmerie, mais mes pas m'ont porté ici d'eux-mêmes. Mon corps a bougé tout seul.*"
     },
     "day3_after_riin_first_2": {
-        "speaker": "riin",
         "text": "...Entre."
     },
     "day3_after_riin_2": {
-        "speaker": "me",
         "text": "*J'ai frappé. Les bruits s'arrêtent. 2 secondes de silence.*"
     },
     "day3_after_riin_3": {
-        "speaker": "riin",
         "text": "...Entre."
     },
     "day3_after_riin_4": {
-        "speaker": "me",
         "text": "*J'ai ouvert la porte. L'infirmière Riin se tient devant l'évier. On dirait qu'elle a rangé quelque chose en hâte. De l'humidité reste sur le comptoir.*"
     },
     "day3_after_riin_5": {
-        "speaker": "riin",
         "text": "Qu'est-ce qui t'amène ici après les cours ? Tu ne te sens pas bien ?"
     },
     "day3_after_riin_6": {
-        "speaker": "me",
         "text": "\"Non, juste... j'ai la tête un peu embrouillée.\"\n\n*L'infirmière Riin me regarde. Longuement. Ce regard n'est pas celui d'un médecin face à un patient, ni celui d'une enseignante face à un élève. C'est quelque chose de plus... compliqué.*"
     },
     "day3_after_riin_6a": {
-        "speaker": "riin_full",
         "text": "J'ai une boisson aux électrolytes. Des vitamines, avec un peu d'herbes."
     },
     "day3_after_riin_7": {
-        "speaker": "me",
         "text": "*L'infirmière Riin sort un petit flacon du placard et en verse le contenu dans une tasse. Un liquide violet pâle. Une couleur étrange pour un prétendu complément vitaminé.*\n\n*Riin me tend la asse. Sa main tremble légèrement. Plus visiblement cette fois. Son annulaire et son auriculaire frémissent subtilement.*\n\n*Je lève les yeux vers ceux de l'infirmière Riin. Il y a... quelque chose là. Sous le sourire, quelque chose. De la détresse ? Du regret ?*"
     },
     "day3_after_riin_flicker": {
         "text": "Fuis"
     },
     "day3_after_riin_choice": {
-        "speaker": "me",
         "text": "*Est-ce que je la bois ?*",
         "choices": [
             "La boire",
@@ -73,117 +58,90 @@
         ]
     },
     "day3_after_riin_drink": {
-        "speaker": "me",
         "text": "*J'en ai bu une gorgée. ...Un goût amer persiste sur le bout de ma langue. Légèrement métallique. Pour des vitamines...*"
     },
     "day3_after_riin_drink_2": {
-        "speaker": "me",
         "text": "*Ma vision vacille légèrement. Une demi-seconde ? Une seconde ? Un bref vertige. Puis ça passe.*"
     },
     "day3_after_riin_drink_3": {
-        "speaker": "me",
         "text": "*Au moment où l'infirmière Riin s'est retournée, j'ai aperçu son expression. **De l'angoisse.** Brève mais indéniable. Tout son visage s'est crispé. Comme si c'était elle qui avait avalé du poison.*\n\n*Le sourire revient aussitôt. Trop vite. Comme si elle changeait d'expression avec une télécommande.*"
     },
     "day3_after_riin_drink_4": {
-        "speaker": "riin",
         "text": "Le goût est un peu particulier, non ? Les plantes sont naturellement amères."
     },
     "day3_after_riin_drink_5": {
-        "speaker": "me",
         "text": "*L'infirmière Riin verse le reste de la boisson dans l'évier. Je vois son dos. Ses épaules sont raides.*"
     },
     "day3_after_riin_refuse": {
-        "speaker": "riin",
         "text": "...Ah bon ? D'accord."
     },
     "day3_after_riin_refuse_2": {
-        "speaker": "me",
         "text": "*La main de l'infirmière Riin s'arrête. La force quitte la main qui tient la asse.*\n\n*Elle la reprend. Verse le contenu dans l'évier. Je vois son dos. Derrière le sourire... du soulagement. Un soulagement indéniable.*"
     },
     "day3_after_riin_refuse_3": {
-        "speaker": "me",
         "text": "*L'infirmière Riin se retourne. Ses yeux sont rouges. Elle cligne rapidement des yeux pour le cacher.*"
     },
     "day3_after_riin_refuse_4": {
-        "speaker": "riin",
         "text": "...Rentre tôt et repose-toi. Tu as l'air fatigué aujourd'hui."
     },
     "day3_after_liin_sugar_1": {
-        "speaker": "me",
         "text": "*En sortant de l'infirmerie, la poubelle a ôté de la porte a attire mon regard. Le couvercle est à moitié ouvert.*"
     },
     "day3_after_liin_sugar_2": {
-        "speaker": "me",
         "text": "*Des ampoules à l'intérieur. Plusieurs flacons en verre brisés. Des étiquettes sont collées dessus — 'M-13'. Et a ôté, un autre flacon. La omposition est lisible. 'Solution aqueuse de glucose.'*"
     },
     "day3_after_liin_sugar_3": {
-        "speaker": "me",
         "text": "*...Du glucose ? Pas des vitamines ?*"
     },
     "day3_after_liin_sugar_4": {
-        "speaker": "me",
         "text": "*L'infirmière Riin a fermé la porte derrière moi. Je ne peux plus rien voir.*"
     },
     "day3_after_sea": {
-        "speaker": "me",
         "text": "*Je suis sorti de la classe et Sea attend. Adossée au mur. Je ne sais pas depuis combien de temps elle est là.*\n\n*L'expression de Sea... n'est pas son visage joyeux habituel. Les coins de sa bouche sont relevés, mais ses yeux sont froids. Sous la lumière fluorescente, ces yeux ressemblent à du verre.*"
     },
     "day3_after_sea_2": {
-        "speaker": "sea",
         "text": "...{name}, tu étais où pendant le déjeuner ?"
     },
     "day3_after_sea_3": {
-        "speaker": "me",
         "text": "*Ça semble anodin, mais il y a de la force dans sa voix. Ce n'est pas 'tu étais où ?' — c'est plutôt 'je sais déjà où tu étais.'*"
     },
     "day3_after_sea_noyuna_0": {
         "text": "*Les yeux de Sea me lisent. Son sourire reste en place. Mais ce regard... c'est de la vérification.*"
     },
     "day3_after_sea_noyuna_0a": {
-        "speaker": "sea",
         "text": "Tu étais seul ?"
     },
     "day3_after_sea_noyuna_0b": {
-        "speaker": "me",
         "text": "Ouais, je me reposais un peu."
     },
     "day3_after_sea_noyuna_0c": {
         "text": "*Sea penche la tête. Deux secondes. Trois. Son regard ne quitte pas mes yeux.*"
     },
     "day3_after_sea_noyuna": {
-        "speaker": "sea",
         "text": "...Tu as l'air différent ces derniers temps, {name}."
     },
     "day3_after_sea_noyuna_2": {
-        "speaker": "me",
         "text": "Comment ça ?"
     },
     "day3_after_sea_noyuna_3": {
-        "speaker": "sea",
         "text": "Je sais pas. Juste... comme si tu t'éloignais."
     },
     "day3_after_sea_noyuna_4": {
-        "speaker": "sea",
         "text": "...S'il y a quelque chose que tu ne me dis pas, dis-le. Je suis de ton côté, {name}."
     },
     "day3_after_sea_noyuna_5": {
-        "speaker": "me",
         "text": "*Sea sourit. Ses lèvres se relèvent avec une précision absolue. Un sourire sans la moindre faille. — Je me suis frotté l'avant-bras. J'ai froid, sans savoir pourquoi.*"
     },
     "day3_after_sea_noyuna_6": {
-        "speaker": "me",
         "text": "*...Ça ne fait que trois jours et elle dit qu'elle est 'de mon côté.' Ces mots sont chaleureux, mais quelque part... lourds.*"
     },
     "day3_after_sea_4": {
-        "speaker": "sea",
         "text": "Il paraît que tu étais avec Yuna."
     },
     "day3_after_sea_4a": {
-        "speaker": "me",
         "text": "*'Il paraît.' Ce n'est pas une question — c'est une certitude. Que quelqu'un le lui ait dit ou qu'elle l'ait vu elle-même.*\n\n*Les yeux de Sea me lisent. Observant ma réaction. Comment je réponds, où vont mes yeux, où je mets mes mains.*"
     },
     "day3_after_sea_choice": {
-        "speaker": "me",
         "text": "*Comment je réponds ?*",
         "choices": [
             "Être honnête",
@@ -191,95 +149,72 @@
         ]
     },
     "day3_after_sea_truth": {
-        "speaker": "me",
         "text": "Oui, Yuna a dit qu'elle avait quelque chose à me montrer."
     },
     "day3_after_sea_truth_2": {
-        "speaker": "me",
         "text": "*L'expression de Sea hange. Légèrement. Sa paupière frémit une fois.*"
     },
     "day3_after_sea_truth_3": {
-        "speaker": "sea",
         "text": "Je vois, tu es honnête. ...J'aime l'honnêteté."
     },
     "day3_after_sea_truth_4": {
-        "speaker": "me",
         "text": "*Sea regardé par la fenêtre. Longtemps. Personne d'autre dans le couloir que nous deux. La lumière du soleil éclaire la moitié du visage de Sea.*"
     },
     "day3_after_sea_truth_5": {
-        "speaker": "sea",
         "text": "...Qu'est-ce qu'elle t'a montré ?"
     },
     "day3_after_sea_truth_6": {
-        "speaker": "me",
         "text": "...Des photos. Des photos de l'école."
     },
     "day3_after_sea_truth_7": {
-        "speaker": "sea",
         "text": "\"Des photos de l'école...\"\n\n*Sea répète. Il n'y a aucune émotion dans sa voix. C'est creux.*"
     },
     "day3_after_sea_truth_8": {
-        "speaker": "sea",
         "text": "\"...Moi aussi, je me demande parfois. Pourquoi je fais tout ça.\"\n\n*Le regard de Sea est étrange. Elle sourit, mais... on dirait qu'elle pourrait fondre en larmes d'un moment à l'autre, ou peut-être crier — une expression bizarrement floue.*"
     },
     "day3_after_sea_truth_9": {
-        "speaker": "sea",
         "text": "\"...Ce n'est rien. Oublie.\"\n\n*Sea se retourne. Son dos paraît petit.*"
     },
     "day3_after_sea_lie": {
-        "speaker": "me",
         "text": "J'étais à la cantine. Pourquoi ?"
     },
     "day3_after_sea_lie_2": {
-        "speaker": "me",
         "text": "*Les yeux de Sea se plissent. Le sourire toujours en place. Les coins de sa bouche relevés, mais seuls ses yeux devenant froids.*"
     },
     "day3_after_sea_lie_3": {
-        "speaker": "sea",
         "text": "...Tes yeux viennent encore de dévier vers la gauche. Tu fais toujours ça quand tu mens."
     },
     "day3_after_sea_lie_3a": {
-        "speaker": "me",
         "text": "*Sa voix est basse. Comme un murmure. Je ne sais pas si c'est de la peine ou un avertissement.*"
     },
     "day3_after_sea_lie_4": {
-        "speaker": "sea",
         "text": "...N'essaie même pas de me cacher des choses."
     },
     "day3_after_sea_lie_4a": {
-        "speaker": "me",
         "text": "*...Elle a raison. Cette habitude de regarder à gauche quand je mens. Mais comment Sea le sait-elle ? Ça ne fait que trois jours.*"
     },
     "day3_after_sea_lie_5": {
-        "speaker": "sea",
         "text": "...La prochaine fois, sois honnête avec moi. Je suis de ton côté, {name}."
     },
     "day3_after_sea_lie_5a": {
-        "speaker": "me",
         "text": "*Sea sourit. Cette fois, ses yeux sourient aussi. Mais ce sourire est encore plus effrayant.*"
     },
     "day3_after_eunsu": {
-        "speaker": "me",
         "text": "*J'ai hésité devant la porte de la salle des profs. La plupart des enseignants sont déjà partis puisqu'il est après les cours. La lumière est allumée à l'intérieur.*"
     },
     "day3_after_eunsu_2": {
-        "speaker": "me",
         "text": "*La porte est à moitié ouverte. Mme Eunsu est assise à son bureau en train d'écrire quelque chose. Elle ne semble pas m'avoir remarqué.*"
     },
     "day3_after_eunsu_3": {
-        "speaker": "me",
         "text": "*Des documents sont étalés sur le bureau. Je peux les voir d'ici. Du papier jaune. Format tableau. Du texte en gras en haut. **'Registre de gestion des sujets'**.*\n\n*Des sujets ?*"
     },
     "day3_after_eunsu_4": {
-        "speaker": "me",
         "text": "*Mme Eunsu se lève. Elle semble avoir reçu un appel. Elle se dirige vers l'autre bout du couloir.*"
     },
     "day3_after_eunsu_5": {
-        "speaker": "me",
         "text": "*Les documents restent ouverts.*"
     },
     "day3_after_eunsu_choice": {
-        "speaker": "me",
         "text": "*Est-ce que je regarde les documents ?*",
         "choices": [
             "Jeter un coup d'œil",
@@ -287,150 +222,114 @@
         ]
     },
     "day3_after_eunsu_peek": {
-        "speaker": "me",
         "text": "*Je me suis approché du bureau en étouffant mes pas. Le bout de mes doigts est glacé. J'ai saisi les documents mais le papier a remblé imperceptiblement — ce sont mes mains qui tremblent.*\n\n*Les documents sont anciens. Les coins sont plies, des taches de café dessus. Ce n'est pas recent.*"
     },
     "day3_after_eunsu_peek_2": {
-        "speaker": "me",
         "text": "*Des numéros et des dates sont listés. La olonne des noms est... presque entièrement vide. Seulement des numéros.*"
     },
     "day3_after_eunsu_peek_3": {
-        "speaker": "me",
         "text": "*#1... Date : 2023.03.02. Colonne nom : vide. Statut : 'Terminé'*\n\n*#3... Date : 2023.09.15. Colonne nom : vide. Statut : 'Terminé'*\n\n*#7... Date : 2024.08.20. Colonne nom : vide. Statut : 'Terminé'*"
     },
     "day3_after_eunsu_peek_4": {
-        "speaker": "me",
         "text": "*À côté du #7, une note au stylo rouge : **'Échec — réponse résiduelle. Variable imprévue. Traitement différé.'***\n\n*...Échec ? Réponse résiduelle ? Traitement ?*"
     },
     "day3_after_eunsu_peek_5": {
-        "speaker": "me",
         "text": "*Mes mains tremblent. J'ai tourné la page.*\n\n*#13 — mon nom est écrit là. Date : ce lundi. La olonne statut est vide. Pas encore enregistré.*"
     },
     "day3_after_eunsu_peek_6": {
-        "speaker": "me",
         "text": "*...12 lignes. 12 numéros. 12 lignes sans noms. Et la reizième avec mon nom.*\n\n*Les noms ont disparu. Les 12 noms précédents ont tous été effacés. Comme si leur existence même avait été supprimée.*\n\n*Que signifie 'Terminé' ? Transfert ? Renvoi ? Ou... pire ?*"
     },
     "day3_after_eunsu_peek_7": {
-        "speaker": "me",
         "text": "*J'entends des pas. J'ai levé la tête.*"
     },
     "day3_after_eunsu_peek_8": {
-        "speaker": "eunsu",
         "text": "Ah, ça ? Ce sont des dossiers de suivi d'élèves transférés que j'étais en train de trier. Pourquoi, tu es curieux de savoir si ton nom y figure ?"
     },
     "day3_after_eunsu_peek_8a": {
-        "speaker": "me",
         "text": "*Mme Eunsu se tient dans l'encadrement de la porte. Elle sourit. **Elle m'a laissé voir ça exprès.** L'appel téléphonique était peut-être un prétexte.*"
     },
     "day3_after_eunsu_peek_9": {
-        "speaker": "me",
         "text": "*Mme Eunsu s'approche lentement et referme les documents. Sans se presser. Détendue.*"
     },
     "day3_after_eunsu_peek_10": {
-        "speaker": "eunsu",
         "text": "C'est bien de te voir travailler sérieusement. On dirait que tu t'adaptes bien ?"
     },
     "day3_after_eunsu_peek_11": {
-        "speaker": "me",
         "text": "*...Elle sourit. Cette personne sourit depuis le début. Elle n'a jamais cessé de sourire. Et c'est ça qui fait peur maintenant.*"
     },
     "day3_after_eunsu_ignore": {
-        "speaker": "me",
         "text": "*...Je ne devrais pas regarder ça ici. J'ai détourné le regard. Je me suis retiré silencieusement.*"
     },
     "day3_after_alone": {
-        "speaker": "me",
         "text": "*Je me dirigeais vers la maison, mais mes pas m'emmènent vers le vieux bâtiment. Je ne sais pas pourquoi. Mon corps bouge tout seul.*"
     },
     "day3_after_alone_2": {
-        "speaker": "me",
         "text": "*Le vieux bâtiment est ancien. Des salles de classe inutilisées bordent le couloir. Un néon clignote dans le corridor.*"
     },
     "day3_after_alone_3": {
-        "speaker": "me",
         "text": "*Mes pas rebondissent contre les murs. Il n'y a que mes pas. Les activites périscolaires sont terminées, donc les élèves sont partis, mais quand même, ce niveau de silence est anormal.*\n\n*Je marche dans le corridor. Seuls mes pas résonnent. Toc. Toc. Toc.*"
     },
     "day3_after_alone_4": {
-        "speaker": "me",
         "text": "*En passant devant la roisième salle de classe — je me suis arrêté.*\n\n*J'entends un son. De l'autre côté de la porte. Un bourdonnement mécanique sourd. Une vibration constante, 'vrrrrrr'.*\n\n*...Pourquoi y aurait-il des sons de machines dans une salle de classe ?*"
     },
     "day3_after_alone_5": {
-        "speaker": "me",
         "text": "*J'ai posé ma main sur la porte. Je sens une faible vibration. C'est verrouillé.*\n\n*La vitre a  de la porte a été peinte en opaque. Impossible de voir à l'intérieur.*"
     },
     "day3_after_alone_6": {
-        "speaker": "me",
         "text": "*Je me suis agenouillé et j'ai regardé par l'interstice sous la porte. Une faible lumière verte filtre de l'intérieur. Ce n'est pas la ouleur de néons.*\n\n*J'ai collé mon oreille. Entre les bruits mécaniques, il y a autre chose. 'Bip... bip... bip...' Un signal électronique régulier. Le genre qu'on entend dans les équipements médicaux.*"
     },
     "day3_after_alone_7": {
-        "speaker": "me",
         "text": "*J'ai voulu me relever mais mes genoux tremblaient. — C'est vraiment une école ici ?*"
     },
     "day3_after_alone_8": {
-        "speaker": "me",
         "text": "*Je me suis relevé. Au bout du couloir, il y a un panneau d'affichage. De vieux avis y sont épinglés. En dessous, des éraflures sur le mur.*"
     },
     "day3_after_alone_9": {
-        "speaker": "me",
         "text": "*Des rectangles de la aille de plaques nominatives ont été grattes dans le mur. Un, deux... douze. Tous grattes.*\n\n*Douze plaques nominatives qui étaient accrochees ici, puis retirees.*\n\n*J'ai compte trois fois. Douze.*"
     },
     "day3_after_alone_10": {
-        "speaker": "me",
         "text": "*Mes jambes tremblent. Je déteste ce couloir. Je déteste ce bâtiment. Mais pourquoi je suis venu ici — pourquoi mon corps m'a amené ici tout seul — ça, c'est encore plus effrayant.*"
     },
     "day3_after_alone_11": {
-        "speaker": "me",
         "text": "*...Rentrons. Je ne devrais pas rester ici plus longtemps.*"
     },
     "day3_after_yuna_check": {
         "text": ""
     },
     "day3_after_yuna": {
-        "speaker": "me",
         "text": "*Les activités périscolaires terminées, je sortais quand j'ai aperçu Yuna derrière le parterre de fleurs. Un gilet sur son uniforme, l'appareil photo autour du cou.*\n\n*Je regarde autour. Personne d'autre ici.*"
     },
     "day3_after_yuna_2": {
-        "speaker": "yuna",
         "text": "{name}."
     },
     "day3_after_yuna_3": {
-        "speaker": "me",
         "text": "*Yuna s'approche. Elle sort quelque chose de petit de sa poche. Une carte micro SD.*"
     },
     "day3_after_yuna_4": {
-        "speaker": "yuna",
         "text": "Les photos que je vous ai montrées tout à l'heure... c'est une copie. Gardez-la, s'il vous plaît."
     },
     "day3_after_yuna_5": {
-        "speaker": "me",
         "text": "...Pourquoi me la donner à moi ?"
     },
     "day3_after_yuna_6": {
-        "speaker": "yuna",
         "text": "C'est dangereux pour moi de la garder. Si les profs... s'en aperçoivent, ils la onfisqueront."
     },
     "day3_after_yuna_6a": {
-        "speaker": "me",
         "text": "*La main de Yuna est froide. Elle a touché la mienne en me passant la carte.*"
     },
     "day3_after_yuna_7": {
-        "speaker": "yuna",
         "text": "Faites attention, {name}. Plus quelqu'un a enu longtemps ici... plus c'est dangereux."
     },
     "day3_after_yuna_8": {
-        "speaker": "me",
         "text": "\"Dangereux comment ?\"\n\n*Yuna ouvre la bouche. La refermé. On dirait qu'elle allait dire quelque chose et qu'elle l'a ravalé.*"
     },
     "day3_after_yuna_9": {
-        "speaker": "yuna",
         "text": "...Faites juste attention. Surtout la nuit."
     },
     "day3_after_yuna_9a": {
-        "speaker": "me",
         "text": "*Yuna se retourne. D'un pas rapide. Elle disparaît au coin du parterre de fleurs.*\n\n*La ccarte SD restée dans ma main est petite et légère. Treize visages identiques sont stockés là-dedans.*\n\n*Je l'ai enfouie au fond de ma poche.*"
     },
     "day3_after_end": {
-        "speaker": "me",
         "text": "*Je quitte l'école. Le terrain est rouge sous le coucher de soleil. ...Pourquoi est-ce que ça me met si mal à l'aise.*"
     }
 }

@@ -1,58 +1,44 @@
 {
     "day2_night_start": {
-        "speaker": "me",
         "text": "*Reviso mi celular.*"
     },
     "day2_night_phone_1": {
-        "speaker": "me",
         "text": "*El chat grupal de la antigua escuela. 'Leído por 3'. Nadie respondió. Ya van dos días.*"
     },
     "day2_night_phone_2": {
-        "speaker": "me",
         "text": "*Le envié un mensaje a Minsu. 'Oye Minsu, me transferí y ni siquiera me has escrito jajaja'*"
     },
     "day2_night_phone_3": {
-        "speaker": "me",
         "text": "*10 minutos después. Apareció el indicador '...'. Minsu esta escribiendo.*"
     },
     "day2_night_phone_4": {
-        "speaker": "me",
         "text": "*5 segundos. El indicador de escritura sigue parpadeando. ¿Esta escribiendo un mensaje largo?*"
     },
     "day2_night_phone_5": {
-        "speaker": "me",
         "text": "*Llegó la respuesta.*"
     },
     "day2_night_phone_6": {
-        "speaker": "me",
         "text": "*Minsu: 'Sí, todo bien. ¿Cómo está por allá?'*"
     },
     "day2_night_phone_7": {
-        "speaker": "me",
         "text": "*...¿Qué es esto? ¿El tipo que normalmente empieza con 'oye, idiota jajajajaja' y una serie de insultos está siendo tan formal?*"
     },
     "day2_night_phone_8": {
-        "speaker": "me",
         "text": "*'Sí, todo bien.' ...¿Eso es lo que eligió después de 5 segundos de escribir?*"
     },
     "day2_night_phone_9": {
-        "speaker": "me",
         "text": "*Respondí. '¿Por qué tan formal jajaja, pasa algo?'*"
     },
     "day2_night_phone_10": {
-        "speaker": "me",
         "text": "*1 minuto. 2 minutos. El indicador de escritura aparece de nuevo.*"
     },
     "day2_night_phone_11": {
-        "speaker": "me",
         "text": "*Minsu: 'Nah, no pasa nada jajaja, solo he estado ocupado'*"
     },
     "day2_night_phone_12": {
-        "speaker": "me",
         "text": "*...Algo en su tono se siente diferente. Seguro solo está ocupado.*"
     },
     "day2_night_phone_13": {
-        "speaker": "me",
         "text": "*...Quiero preguntar más. Intentaré responderle a Minsu.*",
         "choices": [
             "Escribirle a Minsu otra vez",
@@ -61,214 +47,162 @@
         ]
     },
     "day2_night_ft_messenger": {
-        "speaker": "me",
         "text": "*Le respondí. 'Oye Minsu, ¿de verdad eres tú? jaja No suenas como tú, ¿qué pasa?'*"
     },
     "day2_night_ft_messenger_2": {
-        "speaker": "me",
         "text": "*Indicador de escritura. Parpadea sin parar. Cinco segundos, diez, veinte.*"
     },
     "day2_night_ft_messenger_3": {
-        "speaker": "me",
         "text": "*Minsu: 'Sí, soy yo. Solo tengo sueño, nada más.'*"
     },
     "day2_night_ft_messenger_4": {
-        "speaker": "me",
         "text": "*...Veinte segundos escribiendo, y eso fue lo que terminó mandando.*"
     },
     "day2_night_ft_messenger_5": {
-        "speaker": "me",
         "text": "*Algo raro, pero si dice que tiene sueño, qué le voy a hacer. Le pregunto otro día. Dejé el teléfono.*"
     },
     "day2_night_sea_1": {
-        "speaker": "me",
         "text": "*Sea: 'Gracias por hoy también. Por venir a la sala del consejo estudiantil.'*"
     },
     "day2_night_sea_2": {
-        "speaker": "me",
         "text": "*Sea: '¡Comamos juntos de nuevo mañana!'*"
     },
     "day2_night_sea_3": {
-        "speaker": "me",
         "text": "*Sea: '...Estar con {name} es agradable.'*"
     },
     "day2_night_sea_4": {
-        "speaker": "me",
         "text": "*Respondí. 'Yo también me divertí hoy. ¡Mucha suerte con los preparativos del día deportivo jajaja!'*"
     },
     "day2_night_sea_5": {
-        "speaker": "me",
         "text": "*Sea: '¿Mucha suerte? jajaja Tú eres quien tiene que ayudarme'*"
     },
     "day2_night_sea_6": {
-        "speaker": "me",
         "text": "*Sea: 'Te estaré esperando de nuevo mañana por la mañana'*"
     },
     "day2_night_sea_7": {
-        "speaker": "me",
         "text": "*'¿Esperando de nuevo? ¿No tendrás frío?'*"
     },
     "day2_night_sea_8": {
-        "speaker": "me",
         "text": "*Sea: 'No tendré frío~'*"
     },
     "day2_night_sea_promise_branch": {
         "text": ""
     },
     "day2_night_sea_9_alt": {
-        "speaker": "me",
         "text": "*Sea: 'Entonces nos vemos mañana en la escuela. No te desveles demasiado.'*"
     },
     "day2_night_sea_9": {
-        "speaker": "me",
         "text": "*Sea: 'Pero recuerdas la promesa del almuerzo de hoy, ¿verdad?'*"
     },
     "day2_night_sea_10": {
-        "speaker": "me",
         "text": "*'¿El sábado? Por supuesto.'*"
     },
     "day2_night_sea_11": {
-        "speaker": "me",
         "text": "*Sea: '♡'*"
     },
     "day2_night_sea_12": {
-        "speaker": "me",
         "text": "*Sea: 'Buenas noches entonces'*"
     },
     "day2_night_sea_13": {
-        "speaker": "me",
         "text": "*'Buenas noches.'*"
     },
     "day2_night_sea_14": {
-        "speaker": "me",
         "text": "*Dejo el celular. La luna está por la ventana. Otra notificación de KakaoTalk vibra.*"
     },
     "day2_night_sea_14a": {
-        "speaker": "me",
         "text": "*Llegó un mensaje a través de la Aplicación de Seguridad Estudiantil.*"
     },
     "day2_night_eunsu_1": {
-        "speaker": "me",
         "text": "*Eunsu: '{name}, lo hiciste bien en tu presentación de hoy. Te estás adaptando rápido.'*"
     },
     "day2_night_eunsu_2": {
-        "speaker": "me",
         "text": "*Eunsu: '¿Puedes pasar por la oficina de profesores mañana? Hay un documento que necesito revisar.'*"
     },
     "day2_night_eunsu_3": {
-        "speaker": "me",
         "text": "*'Sí, entendido.'*"
     },
     "day2_night_eunsu_4": {
-        "speaker": "me",
         "text": "*Eunsu: '👍 Descansa.'*"
     },
     "day2_night_eunsu_5": {
-        "speaker": "me",
         "text": "*...La profesora incluso envía mensajes así. Mi antigua tutora ni siquiera recordaba mi nombre.*"
     },
     "day2_night_flash_1": {
-        "speaker": "me",
         "text": "*Me acuesto bajo las sábanas y cierro los ojos.*"
     },
     "day2_night_flash_2": {
-        "speaker": "me",
         "text": "*...Probablemente es porque todavía sigo con la tensión del primer día. Mi cabeza está llena de imágenes de la escuela.*"
     },
     "day2_night_flash_3": {
-        "speaker": "me",
         "text": "*Tomados de la mano. La mano de una chica. Una mano fría.*"
     },
     "day2_night_flash_4": {
-        "speaker": "me",
         "text": "*\"Por aquí\" — la voz de alguien. Una que siento haber escuchado antes.*"
     },
     "day2_night_flash_5": {
-        "speaker": "me",
         "text": "*Abro los ojos. Tengo sudor en la frente.*"
     },
     "day2_night_flash_6": {
-        "speaker": "me",
         "text": "*...¿Qué fue eso justo ahora? No fue un sueño, sino una imagen que surgió. El pasillo de esta escuela... como si lo hubiera caminado antes. Corriendo mientras sostenía la mano de alguien. Una mano fría.*"
     },
     "day2_night_flash_7": {
-        "speaker": "me",
         "text": "*...¿Eunsu? Su mano estaba fría cuando me dio una palmada en el hombro antes. ...No, eso no puede estar relacionado.*"
     },
     "day2_night_flash_8": {
-        "speaker": "me",
         "text": "*...Probablemente es porque todavía sigo con la tensión por el primer día. Mi cabeza está llena de imágenes de la escuela.*"
     },
     "day2_night_search_1": {
-        "speaker": "me",
         "text": "*...Me quité la manta y me levanté. No podía dormir. Tomé mi celular. Escribí 'Escuela Preparatoria Haedoji' en la barra de búsqueda.*"
     },
     "day2_night_search_2": {
-        "speaker": "me",
         "text": "*Sitio web oficial. Mensaje del director. Historia de la escuela. ¿El enlace del álbum de graduación? — 'En construcción'. Los nombres de la profesora Eunsu y la profesora Riin estaban en la lista del personal. Sin fotos, sin embargo.*"
     },
     "day2_night_search_3": {
-        "speaker": "me",
         "text": "*Búsqueda de noticias. 'Escuela Preparatoria Haedoji'. Sin resultados. Nada. Ni siquiera en las noticias locales. — ¿Una escuela de este tamaño, y ni un solo artículo de noticias?*"
     },
     "day2_night_search_4": {
-        "speaker": "me",
         "text": "*'Festival Haedodigo', 'Ceremonia de Graduación Haedodigo'. Nada. Extraño. Cada escuela suele tener al menos una foto de festival deportivo en línea, ¿verdad?*"
     },
     "day2_night_search_5": {
-        "speaker": "me",
         "text": "*...¿Estoy investigando demasiado? ¿Así es para las escuelas pequeñas? Dejé mi celular y me volví a acostar.*"
     },
     "day2_night_dream_1": {
-        "speaker": "me",
         "text": "*Cierro los ojos de nuevo. Esta vez, me duermo.*"
     },
     "day2_night_dream_2": {
-        "speaker": "me",
         "text": "*Estoy soñando.*"
     },
     "day2_night_dream_3": {
-        "speaker": "me",
         "text": "*Un aula. Pero no la actual. La disposición de los pupitres es diferente. Hay una fecha escrita en la pizarra, pero no puedo leerla.*"
     },
     "day2_night_dream_4": {
-        "speaker": "me",
         "text": "*Alguien ocupa el asiento delantero. Cabello largo. Solo puedo ver su espalda.*"
     },
     "day2_night_dream_5": {
-        "speaker": "me",
         "text": "*\"Oye, ¿estás bien?\"*"
     },
     "day2_night_dream_6": {
-        "speaker": "me",
         "text": "*La persona se da la vuelta. Es Seolhwa. Pero la expresión de Seolhwa es diferente. La Seolhwa de ahora siempre está triste, pero la Seolhwa del sueño — está sonriendo.*"
     },
     "day2_night_dream_7": {
-        "speaker": "me",
         "text": "*Seolhwa abre la boca. Está diciendo algo, pero no puedo oír. Intento leer sus labios. 'Ay—' Está diciendo algo.*"
     },
     "day2_night_dream_7a": {
-        "speaker": "me",
         "text": "*Intenté leer sus labios. 'Ay—' Está diciendo algo.*"
     },
     "day2_night_dream_8": {
-        "speaker": "me",
         "text": "*El aula se oscurece. El rostro de Seolhwa se difumina.*"
     },
     "day2_night_dream_9": {
-        "speaker": "me",
         "text": "*—*"
     },
     "day2_night_wake_1": {
-        "speaker": "me",
         "text": "*Es de mañana. La alarma está sonando.*"
     },
     "day2_night_wake_2": {
-        "speaker": "me",
         "text": "*...¿Un sueño? Seolhwa estaba en él. Estaba sonriendo. Estaba intentando decir algo...*"
     },
     "day2_night_wake_3": {
-        "speaker": "me",
         "text": "*No puedo recordar. Lo que dijo. ...Solo fue un sueño.*"
     },
     "day2_night_end": {

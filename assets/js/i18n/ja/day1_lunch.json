@@ -3,7 +3,6 @@
         "text": "*4時間目が終わり、昼食のチャイムが鳴る。生徒たちが一斉に立ち上がる。*"
     },
     "day1_lunch_choice": {
-        "speaker": "me",
         "text": "*昼休み。どこに行こうか？*",
         "choices": [
             "セアに一緒に食べようと誘われたから、教室に残る",
@@ -19,40 +18,33 @@
         "text": "*……二段重ねの弁当箱だ。どう見ても一人分ではない。*"
     },
     "day1_lunch_sea_3": {
-        "speaker": "me",
         "text": "……これ、全部セアの？"
     },
     "day1_lunch_sea_4": {
-        "speaker": "sea_full",
         "text": "どう？　売れるくらいでしょ？"
     },
     "day1_lunch_sea_5": {
         "text": "*蓋を開ける。卵焼き、ミニソーセージ、おにぎり、ブロッコリー、ミニトマト。彩りよくきれいに並べられている。*"
     },
     "day1_lunch_sea_6": {
-        "speaker": "me",
         "text": "……ってか、これ全部セアが作ったの？"
     },
     "day1_lunch_sea_7": {
-        "speaker": "sea_full",
         "text": "食べてみて。市販のパンより、こっちの方が君に合う気がしたんだ。"
     },
     "day1_lunch_sea_8": {
         "text": "*セアが箸で卵焼きを一切れ掴み、差し出してくる。*"
     },
     "day1_lunch_sea_9": {
-        "speaker": "sea_full",
         "text": "はい、まず卵焼きから。甘めに作ったんだ。"
     },
     "day1_lunch_sea_10": {
         "text": "*……美味しい。すごく美味しい。*"
     },
     "day1_lunch_sea_11": {
-        "speaker": "me",
         "text": "これ、市販品より美味しいよ？"
     },
     "day1_lunch_sea_12": {
-        "speaker": "sea_full",
         "text": "ほんと？"
     },
     "day1_lunch_sea_13": {
@@ -62,55 +54,45 @@
         "text": "*それから、しばらくの間おしゃべりをした。*"
     },
     "day1_lunch_sea_15": {
-        "speaker": "me",
         "text": "セアはいつもこんな弁当を持ってくるの？"
     },
     "day1_lunch_sea_16": {
-        "speaker": "sea_full",
         "text": "うん。学食もいいけど、やっぱり手作りの方が美味しいからね。"
     },
     "day1_lunch_sea_17": {
-        "speaker": "me",
         "text": "でも、一人で食べるには量が多い気がするけど。"
     },
     "day1_lunch_sea_18": {
-        "speaker": "sea_full",
         "text": "……"
     },
     "day1_lunch_sea_19": {
         "text": "*セアは一瞬言葉を詰まらせ、それから微笑んだ。*"
     },
     "day1_lunch_sea_20": {
-        "speaker": "sea_full",
         "text": "つい、たくさん作っちゃうんだ。君がたくさん食べてくれて嬉しいよ。"
     },
     "day1_lunch_sea_21": {
         "text": "*弁当箱はほとんど空になった。まだ少し時間がある。*"
     },
     "day1_lunch_sea_22": {
-        "speaker": "sea_full",
         "text": "あ、そうだ、これ聞いてみて。"
     },
     "day1_lunch_sea_23": {
         "text": "*セアが片方のイヤホンを僕に渡す。穏やかなギターの曲だ。*"
     },
     "day1_lunch_sea_24": {
-        "speaker": "me",
         "text": "へえ、これ何？"
     },
     "day1_lunch_sea_25": {
-        "speaker": "sea_full",
         "text": "最近よく聴いてるんだ。歌詞がいいんだよ。"
     },
     "day1_lunch_sea_26": {
         "text": "*静かに耳を傾ける。悪くない。*"
     },
     "day1_lunch_sea_27": {
-        "speaker": "me",
         "text": "いいね。セアって音楽の趣味いいんだな。"
     },
     "day1_lunch_sea_28": {
-        "speaker": "sea_full",
         "text": "ふふ、当たり前みたいに言うね。"
     },
     "day1_lunch_sea_29": {
@@ -126,34 +108,27 @@
         "text": "*カメラを持った少女が、驚いた表情で固まっている。小柄な体に、大きなカメラ。*"
     },
     "day1_lunch_yuna_4": {
-        "speaker": "me",
         "text": "……今、僕を撮った？"
     },
     "day1_lunch_yuna_5": {
-        "speaker": "yuna",
         "text": "い、いえ……！　私、写真部で、図書室の雰囲気を撮っていたら、急に君が入ってきたから……"
     },
     "day1_lunch_yuna_6": {
-        "speaker": "yuna",
         "text": "あ……ごめんなさい。すぐに消します。"
     },
     "day1_lunch_yuna_7": {
-        "speaker": "me",
         "text": "いや、大丈夫。写真部なんだ。"
     },
     "day1_lunch_yuna_8": {
-        "speaker": "yuna",
         "text": "はい……！　私、チェ・ユナ、一年です。君が転校生さんですよね？"
     },
     "day1_lunch_yuna_9": {
-        "speaker": "me",
         "text": "うん。僕は{name}。よろしく。"
     },
     "day1_lunch_yuna_10": {
         "text": "*ユナはカメラを胸に抱きしめ、頭を下げた。*"
     },
     "day1_lunch_yuna_11": {
-        "speaker": "yuna",
         "text": "図書室にはよく来るんですか？　私は毎日来てます。"
     },
     "day1_lunch_yuna_12": {
@@ -163,11 +138,9 @@
         "text": "*スクロールしていくと、同じ桜の木を時間帯別に撮った連作があった。朝、昼、夕焼け、夜。*"
     },
     "day1_lunch_yuna_14": {
-        "speaker": "me",
         "text": "……同じ木を四回も撮ったの？"
     },
     "day1_lunch_yuna_15": {
-        "speaker": "yuna",
         "text": "光によって色が変わるのが好きなんです。これ、一ヶ月かけて撮ったんですよ。"
     },
     "day1_lunch_yuna_16": {
@@ -180,36 +153,30 @@
         "text": "*短いダークパープルのボブ、白衣、細縁の眼鏡。椅子に深くもたれかかり、何かを読んでいる。*"
     },
     "day1_lunch_riin_3": {
-        "speaker": "riin",
         "text": "あら、初日から保健室？　具合でも悪いの？"
     },
     "day1_lunch_riin_4": {
-        "speaker": "me",
         "text": "少し頭が痛くて。"
     },
     "day1_lunch_riin_5": {
-        "speaker": "riin",
         "text": "そう。座って。"
     },
     "day1_lunch_riin_6": {
         "text": "*リイン先生が僕の額に触れる。ひんやりとした手だ。*"
     },
     "day1_lunch_riin_7": {
-        "speaker": "riin",
         "text": "熱はないわね。緊張性の頭痛よ。初日だから、よくあること。"
     },
     "day1_lunch_riin_8": {
         "text": "*引き出しを開け、薬を取り出しながら微笑む。*"
     },
     "day1_lunch_riin_9": {
-        "speaker": "riin",
         "text": "何か食べた？　空腹で薬を飲んじゃダメよ。"
     },
     "day1_lunch_riin_10": {
         "text": "*エナジーバーを渡される。*"
     },
     "day1_lunch_riin_11": {
-        "speaker": "riin",
         "text": "眠いなら、ここで少し休んでいってもいいわよ。"
     },
     "day1_lunch_riin_12": {
@@ -222,19 +189,15 @@
         "text": "*……目を開ける。いつの間にか毛布がかけられていた。窓から暖かい日差しが差し込んでいる。*"
     },
     "day1_lunch_riin_15": {
-        "speaker": "riin_full",
         "text": "起きた？　15分くらい寝てたわよ。"
     },
     "day1_lunch_riin_16": {
-        "speaker": "me",
         "text": "あ……すみません、つい……"
     },
     "day1_lunch_riin_17": {
-        "speaker": "riin_full",
         "text": "謝ることないわ。保健室はそういう場所よ。頭は楽になった？"
     },
     "day1_lunch_riin_18": {
-        "speaker": "me",
         "text": "はい、だいぶ楽になりました。保健室、暖かかったです。"
     },
     "day1_lunch_alone_1": {

@@ -1,18 +1,14 @@
 {
     "day4_after_start": {
-        "speaker": "me",
         "text": "*Nach der Schule. Die Glocke hat geläutet. Das Klassenzimmer leert sich. Alles, was ich heute erfahren habe, wirbelt in meinem Kopf.*"
     },
     "day4_after_start_2": {
-        "speaker": "me",
         "text": "*Die Geräusche hinter der Kellertür. Yunas Stöhnen. Frau Eunsus Schlüssel. ...Das wahre Gesicht dieser Schule.*"
     },
     "day4_after_start_3": {
-        "speaker": "me",
         "text": "*Sea geht Richtung Schülervertretungsraum. Eunsu dürfte im Lehrerzimmer sein. Riin ist im Krankenzimmer. ...Zu wem gehe ich zuerst?*"
     },
     "day4_after_choice": {
-        "speaker": "me",
         "text": "*Ich muss mich entscheiden.*",
         "choices": [
             "Sea folgen",
@@ -21,51 +17,39 @@
         ]
     },
     "day4_after_sea_route": {
-        "speaker": "me",
         "text": "*Ich folgte Sea zum Schülervertretungsraum.*"
     },
     "day4_after_sea_2": {
-        "speaker": "me",
         "text": "*Sea schließt die Tür ab. Klick. Das Schlossgeräusch hallte besonders laut. Im leeren Flur.*"
     },
     "day4_after_sea_3": {
-        "speaker": "sea_full",
         "text": "Heute wollte ich, dass wir allein sind."
     },
     "day4_after_sea_4": {
-        "speaker": "me",
         "text": "*Sea setzt sich. Ihre Augen sind anders als sonst. Gerötet. Spuren von Tränen.*"
     },
     "day4_after_sea_5": {
-        "speaker": "me",
         "text": "*Durch das Fenster sieht man den Schulhof. Da die Schule aus ist, gehen die Schüler in kleinen Gruppen nach Hause. Alle mit dem gleichen Lächeln.*"
     },
     "day4_after_sea_6": {
-        "speaker": "sea_full",
         "text": "...{name}."
     },
     "day4_after_sea_7": {
-        "speaker": "me",
         "text": "*Sea sieht mich an. Lange. Als wolle sie sich mein Gesicht einprägen.*"
     },
     "day4_after_sea_8": {
-        "speaker": "sea_full",
         "text": "...Wie oft war es jetzt schon?"
     },
     "day4_after_sea_9": {
-        "speaker": "me",
         "text": "...Was meinst du?"
     },
     "day4_after_sea_10": {
-        "speaker": "me",
         "text": "*Seas Lippen zittern. Sie will sprechen, hält inne. Versucht es wieder, hält inne. Beim dritten Mal öffnet sie den Mund.*"
     },
     "day4_after_sea_11": {
-        "speaker": "sea_full",
         "text": "Nichts... vergiss es."
     },
     "day4_after_sea_force": {
-        "speaker": "me",
         "text": "*'Vergiss es.' Wie grausam dieses Wort in dieser Situation ist -- das weiß nur Sea. Ihre Augen warten auf meine Antwort.*",
         "choices": [
             "In Ordnung",
@@ -73,123 +57,93 @@
         ]
     },
     "day4_after_sea_accept": {
-        "speaker": "me",
         "text": "*...Egal, was ich gewählt hätte, es wäre dasselbe gewesen. Von Anfang an gab es nur eine Antwort.*"
     },
     "day4_after_sea_accept_2": {
-        "speaker": "sea_full",
         "text": "...Bleib immer an meiner Seite."
     },
     "day4_after_sea_accept_3": {
-        "speaker": "me",
         "text": "*Sea blickt aus dem Fenster. Der Sonnenuntergang taucht den Raum in Rot.*"
     },
     "day4_after_sea_confess_1": {
-        "speaker": "sea_full",
         "text": "...Zwölfmal."
     },
     "day4_after_sea_confess_2": {
-        "speaker": "me",
         "text": "...Was?"
     },
     "day4_after_sea_confess_3": {
-        "speaker": "sea_full",
         "text": "Zwölfmal schon... hast du hier in diesem Schülerratszimmer jedes Mal gelächelt und gesagt: „Ich komme morgen wieder.“ Jedes Mal hast du mir „Danke“ gesagt. Jedes Mal hast du gesagt, das Mittagessen sei lecker."
     },
     "day4_after_sea_confess_4": {
-        "speaker": "sea_full",
         "text": "Und jedes Mal... am fünften Tag hast du mich vergessen."
     },
     "day4_after_sea_confess_5": {
-        "speaker": "me",
         "text": "*Tränen fließen aus Seas Augen. Sie wischt sie nicht weg.*"
     },
     "day4_after_sea_confess_6": {
-        "speaker": "sea_full",
         "text": "Beim neunten Mal... hast du mir ein Armband gemacht. Mit „Sea“ darauf. Ich habe es immer noch."
     },
     "day4_after_sea_confess_7": {
-        "speaker": "me",
         "text": "*Sea krempelt ihren Ärmel hoch. Um ihr Handgelenk ist ein altes Fadenarmband gewickelt. Der Faden ist ausgefranst. Als wäre es schon mehrere Jahre alt.*"
     },
     "day4_after_sea_confess_8": {
-        "speaker": "sea_full",
         "text": "Beim zehnten Mal hast du das gesehen und gefragt: 'Ist das schön? Wer hat dir das gegeben?'"
     },
     "day4_after_sea_confess_9": {
-        "speaker": "sea_full",
         "text": "Dabei hast du es gemacht. Aber du hast keine Erinnerung daran."
     },
     "day4_after_sea_confess_10": {
-        "speaker": "me",
         "text": "*Sea lachte. Weinend.*"
     },
     "day4_after_sea_12loop": {
-        "speaker": "me",
         "text": "*Sea umarmte mich. Ihre Hände pressen sich fest auf meinen Rücken.*"
     },
     "day4_after_sea_12loop_2": {
-        "speaker": "me",
         "text": "*Sea flüstert. So nah, dass ihre Lippen mein Ohr berühren.*"
     },
     "day4_after_sea_12loop_3": {
-        "speaker": "sea_full",
         "text": "...Seojin."
     },
     "day4_after_sea_12loop_4": {
-        "speaker": "me",
         "text": "*...Was?*"
     },
     "day4_after_sea_12loop_5": {
-        "speaker": "me",
         "text": "...Wer?"
     },
     "day4_after_sea_12loop_6": {
-        "speaker": "me",
         "text": "*Seas Körper erstarrt. Sie hat gemerkt, was sie gesagt hat.*"
     },
     "day4_after_sea_12loop_7": {
-        "speaker": "me",
         "text": "*Seojin. Der Name auf dem 3. Namensschild. Park Seojin.*"
     },
     "day4_after_sea_12loop_8": {
-        "speaker": "sea_full",
         "text": "...Nichts."
     },
     "day4_after_sea_12loop_9": {
-        "speaker": "me",
         "text": "*Sea lässt mich nicht los. Im Gegenteil, sie drückt mich noch fester. Ihre Schultern zittern.*"
     },
     "day4_after_sea_12loop_10": {
-        "speaker": "me",
         "text": "*Als sie den Ärmel hochkrempelte, sah ich es. Ein altes Fadenarmband am Handgelenk. Der Faden ist ausgefranst. Sieht Jahre alt aus.*"
     },
     "day4_after_sea_12loop_11": {
-        "speaker": "me",
         "text": "*...Darauf ist ein Name eingraviert. 'Sea'. Ein handgemachtes Armband. -- In meiner Handschrift.*"
     },
     "day4_after_sea_12loop_12": {
-        "speaker": "me",
         "text": "*Sea hat es bemerkt. Dass ich das Armband betrachte.*"
     },
     "day4_after_sea_12loop_13": {
-        "speaker": "sea_full",
         "text": "...Hübsch, oder?"
     },
     "day4_after_sea_12loop_14": {
-        "speaker": "me",
         "text": "*Sie lächelt. Während sie weint.*"
     },
     "day4_after_ft_sea_pre": {
-        "speaker": "me",
         "text": "*Sea griff nach meinem Arm. Ich versuchte aufzustehen, aber sie lässt nicht los.*"
     },
     "day4_after_ft_sea": {
-        "speaker": "sea_full",
         "text": "...Sag, was du willst. Es wird sich sowieso nichts ändern."
     },
     "day4_after_ft_sea_choice": {
-        "speaker": "me",
         "text": "*Was soll ich denn sagen. Seas Hand hält immer noch meinen Arm fest.*",
         "choices": [
             "...Tut mir leid. Ich laufe nicht weg. Mein Kopf ist nur ein Chaos.",
@@ -198,229 +152,174 @@
         ]
     },
     "day4_after_ft_sea_apologize": {
-        "speaker": "sea_full",
         "text": "...Hab ich dreizehnmal gehört. Ich weiß, du hast es jedes Mal ernst gemeint."
     },
     "day4_after_ft_sea_ask": {
-        "speaker": "sea_full",
         "text": "...Ich hab's nicht ausgehalten. Jedes Mal war das erste Mal. Wie für dich."
     },
     "day4_after_ft_sea_promise": {
-        "speaker": "sea_full",
         "text": "...Das hab ich auch gehört. Versprochen hast du. Nicht gehalten hast du auch. Jedes Mal."
     },
     "day4_after_ft_sea_quiet": {
-        "speaker": "sea_full",
         "text": "...Ist gut. Geh."
     },
     "day4_after_ft_sea_post": {
-        "speaker": "me",
         "text": "*Sea ließ los. Egal was ich sagte, ihre Augen änderten sich nicht. Nicht traurig, nicht wütend — nur alte Resignation.*"
     },
     "day4_after_eunsu_route": {
-        "speaker": "me",
         "text": "*Ich ging zum Lehrerzimmer. Ich kann dem nicht mehr ausweichen. Ich muss direkt fragen.*"
     },
     "day4_after_eunsu_2": {
-        "speaker": "me",
         "text": "*Frau Eunsu sieht mich und seufzt. Ein müder Ausdruck. Dunkle Ringe unter den Augen. Sie ist allein im Lehrerzimmer. Alle anderen Lehrer haben ihre Plätze verlassen. -- Sind sie gegangen, oder wurden sie weggeschickt.*"
     },
     "day4_after_eunsu_3": {
-        "speaker": "eunsu",
         "text": "...Jetzt hast du es also gemerkt."
     },
     "day4_after_eunsu_4": {
-        "speaker": "eunsu",
         "text": "...Weißt du, dass du der Dreizehnte bist?"
     },
     "day4_after_eunsu_4a": {
-        "speaker": "me",
         "text": "*Die Lehrerin spricht, während sie Kaffee aufbrüht. Ganz ruhig. Ihre Hand, die den Kaffee zubereitet, zittert nicht. Als hätte sie sich auf dieses Gespräch vorbereitet.*"
     },
     "day4_after_eunsu_5": {
-        "speaker": "me",
         "text": "*Die Lehrerin kocht Kaffee. Zwei Tassen. Eine stellt sie vor mich hin.*"
     },
     "day4_after_eunsu_6": {
-        "speaker": "me",
         "text": "*...Zwei Löffel Zucker, einen halben Schuss Sahne. Genau wie ich es gestern im Lehrerzimmer genommen habe.*"
     },
     "day4_after_eunsu_7": {
-        "speaker": "me",
         "text": "*...Ich habe es ihr nie gesagt. Sie hat es gestern nur einmal gesehen.*"
     },
     "day4_after_eunsu_8": {
-        "speaker": "eunsu",
         "text": "Stimmt doch, oder? Dein Geschmack."
     },
     "day4_after_eunsu_9": {
-        "speaker": "me",
         "text": "*Die Lehrerin lächelt. Es ist nicht das warme Lächeln von Tag 1, sondern Erleichterung: die eines kontrollierten Parameters, der an seinen Platz zurückkehrt.*"
     },
     "day4_after_eunsu_10": {
-        "speaker": "me",
         "text": "*Die Schreibtischschublade steht halb offen. Darin kleben Post-its. Dutzende. Vollgeschrieben. -- Alles Namen. Verschiedene Namen. Einige sind durchgestrichen.*"
     },
     "day4_after_eunsu_11": {
-        "speaker": "me",
         "text": "*Auf dem untersten Post-it steht mein Name. Nicht durchgestrichen.*"
     },
     "day4_after_eunsu_12": {
-        "speaker": "me",
         "text": "*Schweigen.*"
     },
     "day4_after_eunsu_13": {
-        "speaker": "eunsu",
         "text": "Schon gut, {name}. Die Lehrerin bringt es wieder in Ordnung."
     },
     "day4_after_eunsu_14": {
-        "speaker": "me",
         "text": "*Die Hand der Lehrerin blieb über meinem Kopf stehen, als hätte sie mich streicheln wollen und dann selbst gemerkt, wie seltsam das war.*"
     },
     "day4_after_eunsu_15": {
-        "speaker": "me",
         "text": "*...Diese Hand hat zwölfmal meine Erinnerungen gelöscht.*"
     },
     "day4_after_riin_route": {
-        "speaker": "me",
         "text": "*Ich ging zum Krankenzimmer. Nicht wegen Medizin. Es gibt etwas, das ich bestätigen muss.*"
     },
     "day4_after_riin_2": {
-        "speaker": "me",
         "text": "*Riin sitzt an ihrem Schreibtisch. Sie ordnete Dokumente. Als ich eintrat -- hielt ihre Hand inne. Sie drehte die Papiere um. Langsam. Beiläufig. Aber ich sah es. Den Titel: 'S-13 Dosierungsprotokolle.'*"
     },
     "day4_after_riin_3": {
-        "speaker": "riin",
         "text": "...Was. Erschreck mich nicht so."
     },
     "day4_after_riin_4": {
-        "speaker": "me",
         "text": "*Die Augen, die mich betrachten, sind anders als sonst. Wachsame Augen. ...Nein, nicht wachsam. Abschätzend. Augen, die einschätzen, was ich weiß.*"
     },
     "day4_after_riin_5": {
-        "speaker": "me",
         "text": "Riin. Ich war im Keller."
     },
     "day4_after_riin_5a": {
-        "speaker": "riin_full",
         "text": "Hm?"
     },
     "day4_after_riin_5b": {
-        "speaker": "me",
         "text": "Sie haben doch nicht mehr vor, es zu verbergen, oder?"
     },
     "day4_after_riin_6": {
-        "speaker": "me",
         "text": "*Stille. Drei Sekunden. Riins Ausdruck ändert sich nicht. Keine Überraschung. Keine Panik.*"
     },
     "day4_after_riin_7": {
-        "speaker": "riin",
         "text": "...Du warst also dort."
     },
     "day4_after_riin_8": {
-        "speaker": "me",
         "text": "*Ein Satz. Ruhig. Als hätte sie auf diesen Moment gewartet. Riin steht auf. Prüft die Tür des Krankenzimmers. Schließt ab.*"
     },
     "day4_after_riin_9": {
-        "speaker": "riin",
         "text": "Was hast du dort gesehen?"
     },
     "day4_after_riin_10": {
-        "speaker": "me",
         "text": "Ich habe Yunas Stimme gehört. Hinter der Tür. Und ich habe gesehen, wie Frau Eunsu die Tür mit einem Schlüssel geöffnet hat und hineingegangen ist."
     },
     "day4_after_riin_11": {
-        "speaker": "me",
         "text": "*Riin seufzt. Lang. Wie jemand, der eine Last ablegt, die er getragen hat.*"
     },
     "day4_after_riin_12": {
-        "speaker": "riin",
         "text": "...Schnell. Schneller als der Zwölfte."
     },
     "day4_after_riin_15": {
-        "speaker": "me",
         "text": "*Riin greift in ihre Tasche und zieht etwas heraus. Ein Schlüssel. Ein kleiner Metallschlüssel.*"
     },
     "day4_after_riin_16": {
-        "speaker": "me",
         "text": "*Sie beginnt, ihn mir hinzuhalten -- und hält inne.*"
     },
     "day4_after_riin_17": {
-        "speaker": "riin",
         "text": "...Noch nicht."
     },
     "day4_after_riin_18": {
-        "speaker": "me",
         "text": "*Sie steckt den Schlüssel zurück in die Tasche.*"
     },
     "day4_after_riin_19": {
-        "speaker": "me",
         "text": "Was ist das?"
     },
     "day4_after_riin_20": {
-        "speaker": "riin",
         "text": "Morgen."
     },
     "day4_after_riin_21": {
-        "speaker": "me",
         "text": "*Riin sieht mich an. Zum ersten Mal -- mit Augen, die nicht die einer Schulkrankenschwester sind.*"
     },
     "day4_after_riin_22": {
-        "speaker": "riin",
         "text": "Tu heute Nacht nichts. Erzähl niemandem davon."
     },
     "day4_after_riin_23": {
-        "speaker": "riin",
         "text": "Eunsu auf keinen Fall."
     },
     "day4_after_riin_24": {
-        "speaker": "me",
         "text": "*Ihre Stimme wird leiser.*"
     },
     "day4_after_riin_25": {
-        "speaker": "riin",
         "text": "...Ich verschaffe dir Zeit. Bis morgen früh."
     },
     "day4_after_riin_26": {
-        "speaker": "me",
         "text": "*Riin blickt aus dem Fenster. Die untergehende Sonne. Das Krankenzimmer ist in orangenes Licht getaucht.*"
     },
     "day4_after_riin_27": {
-        "speaker": "riin",
         "text": "...Ich kann auch nicht mehr. Das hier."
     },
     "day4_after_end": {
-        "speaker": "me",
         "text": "*Die Sonne ist untergegangen. Die Schule versinkt in Dunkelheit. Morgen kommt. Der fünfte Tag.*"
     },
     "day4_xover_yuna_1": {
         "text": "*Als ich das Klassenzimmer verlasse — Yuna steht im Flur. Sie hat gewartet.*"
     },
     "day4_xover_yuna_2": {
-        "speaker": "yuna",
         "text": "...Kennst du Junho Lee?"
     },
     "day4_xover_yuna_3": {
-        "speaker": "me",
         "text": "...Wen?"
     },
     "day4_xover_yuna_4": {
-        "speaker": "yuna",
         "text": "Hab ich mir gedacht."
     },
     "day4_xover_yuna_5": {
-        "speaker": "yuna",
         "text": "Jedes Mal. Dasselbe Gesicht kommt rein. Sagt, er weiß von nichts."
     },
     "day4_xover_yuna_6": {
         "text": "*(Sie holt ein Fotoalbum hervor)*"
     },
     "day4_xover_yuna_7": {
-        "speaker": "yuna",
         "text": "Sie sind alle hier. Von Nummer eins bis jetzt."
     },
     "day4_xover_yuna_8": {
-        "speaker": "yuna",
         "text": "Jeder einzelne — bist du."
     },
     "day4_xover_yuna_9": {
@@ -436,7 +335,6 @@
         "text": "*Als ich das Klassenzimmer verlasse — Yuna steht im Flur.*"
     },
     "day4_xover_yuna_skip_2": {
-        "speaker": "yuna",
         "text": "...Nein, nichts. Vergiss es."
     },
     "day4_xover_yuna_skip_3": {

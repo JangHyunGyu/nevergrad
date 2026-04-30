@@ -2,7 +2,8 @@
 /**
  * Synchronize SCENARIO.md's player-visible Korean dialogue/narration block
  * with the actual game source of truth:
- *   - assets/js/i18n/ko/*.json for speaker ids, text, and choices
+ *   - assets/js/i18n/ko/*.json for text and choices
+ *   - assets/js/scenario/speakers.js for scene speaker ids and labels
  *   - assets/js/scenario/*.js for scene ordering and structural metadata
  *
  * Usage:
@@ -18,6 +19,9 @@ const ROOT = path.join(__dirname, '..');
 const SCENARIO_MD = path.join(ROOT, 'SCENARIO.md');
 const SCENARIO_DIR = path.join(ROOT, 'assets', 'js', 'scenario');
 const KO_DIR = path.join(ROOT, 'assets', 'js', 'i18n', 'ko');
+const SPEAKERS_FILE = path.join(SCENARIO_DIR, 'speakers.js');
+const { speakerNames, scenarioSpeakers } = loadSpeakerMetadata();
+const KO_SPEAKER_NAMES = speakerNames.ko || speakerNames.en || {};
 
 const BEGIN_MARKER = '<!-- BEGIN NEVERGRAD KO DISPLAY SYNC -->';
 const END_MARKER = '<!-- END NEVERGRAD KO DISPLAY SYNC -->';
@@ -27,35 +31,6 @@ const SLOT_LABELS = {
     lunch: '점심',
     afterschool: '방과후',
     night: '밤'
-};
-
-const KO_SPEAKER_NAMES = {
-    me: '나',
-    unknown: '???',
-    school_broadcast: '[교내 방송]',
-    eunsu_full: '박은수',
-    eunsu: '은수',
-    riin_full: '강리인',
-    riin: '리인',
-    sea_full: '한세아',
-    sea: '세아',
-    yuna_full: '최유나',
-    yuna: '유나',
-    seolhwa_full: '이설화',
-    seolhwa: '설화',
-    classmate_a: '급우 A',
-    classmate_b: '급우 B',
-    student: '학생',
-    student_a: '학생 A',
-    student_b: '학생 B',
-    boy: '남학생',
-    girl: '여학생',
-    boy_student: '남학생',
-    girl_student: '여학생',
-    girl_student_a: '여학생 A',
-    girl_student_b: '여학생 B',
-    boy_next_to_me: '옆자리 남학생',
-    window_girl: '창가의 여학생'
 };
 
 function parseScenarioFileName(file) {
@@ -102,10 +77,20 @@ function quoteBlock(text) {
     return ['```text', normalizeText(text), '```'].join('\n');
 }
 
-function displaySpeaker(entry) {
-    const speaker = normalizeText(entry.speaker);
+function loadSpeakerMetadata() {
+    const sandbox = {};
+    vm.createContext(sandbox);
+    vm.runInContext(fs.readFileSync(SPEAKERS_FILE, 'utf8'), sandbox, { filename: SPEAKERS_FILE });
+    return {
+        speakerNames: sandbox.NEVERGRAD_SPEAKER_NAMES || {},
+        scenarioSpeakers: sandbox.SCENARIO_SPEAKERS || {}
+    };
+}
+
+function displaySpeaker(sceneId) {
+    const speaker = normalizeText(scenarioSpeakers[sceneId]);
     if (speaker) return KO_SPEAKER_NAMES[speaker] || speaker;
-    return normalizeText(entry.name) || '지문';
+    return '지문';
 }
 
 function formatMeta(scene) {
@@ -132,7 +117,7 @@ function formatEntry(sceneId, scene, entry, sourceLabel) {
     lines.push('');
 
     if (hasText) {
-        const speaker = displaySpeaker(entry);
+        const speaker = displaySpeaker(sceneId);
         lines.push(`**${speaker}**`);
         lines.push(quoteBlock(entry.text));
         lines.push('');
@@ -165,7 +150,7 @@ function collectI18nEntries() {
 
 function generateSection() {
     const scenarioFiles = fs.readdirSync(SCENARIO_DIR)
-        .filter(file => file.endsWith('.js'))
+        .filter(file => parseScenarioFileName(file))
         .sort(sortScenarioFiles);
     const i18nEntries = collectI18nEntries();
     const consumed = new Set();
@@ -183,7 +168,7 @@ function generateSection() {
     lines.push('');
     lines.push('> [!NOTE]');
     lines.push('> 이 구간은 `node scripts/sync-scenario-md-dialogue.js`로 자동 생성된다.');
-    lines.push('> 기준 데이터는 `assets/js/i18n/ko/*.json`의 `speaker`, `text`, `choices`와 `assets/js/scenario/*.js`의 씬 순서다.');
+    lines.push('> 기준 데이터는 `assets/js/scenario/speakers.js`의 화자 정보, `assets/js/i18n/ko/*.json`의 `text`, `choices`, `assets/js/scenario/*.js`의 씬 순서다.');
     lines.push('> 플레이어에게 실제로 표시되는 한국어 대사/지문/선택지만 이 구간의 동기화 대상이다.');
     lines.push('');
 

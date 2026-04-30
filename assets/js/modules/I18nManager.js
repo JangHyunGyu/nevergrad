@@ -195,34 +195,34 @@ class I18nManager {
             }
         },
         en: {
-            title: "The Classroom of No Graduation", subtitle: "5 Days Record",
-            metaTitle: "Nevergrad - The Classroom of No Graduation",
+            title: "The Classroom That Never Graduates", subtitle: "Five-Day Record",
+            metaTitle: "Nevergrad - The Classroom That Never Graduates",
             metaDesc: "The first day of transfer, everything was perfect. Too perfect to be normal.",
             newGame: "New Game", continue: "Continue", gallery: "Gallery",
             namePrompt: "What is your name?", namePlaceholder: "Enter your name", start: "Start",
-            save: "Save", load: "Load", settings: "Settings", toTitle: "Title", resume: "Resume",
+            save: "Save", load: "Load", settings: "Settings", toTitle: "Title Screen", resume: "Resume",
             settingsBgm: "BGM Volume", settingsSfx: "SFX Volume", settingsTextSpeed: "Text Speed",
             settingsFullscreen: "Fullscreen", settingsReset: "Reset", settingsOn: "ON", settingsOff: "OFF",
             ftPlaceholder: "Type a message...", ftSend: "Send",
             dayFormat: "Day {day} - {slot}",
             slots: { morning: "Morning", lunch: "Lunch", afterschool: "After School", night: "Night" },
-            galleryTitle: "Ending Gallery", galleryBack: "Back", galleryProgress: "Progress",
+            galleryTitle: "Ending Gallery", galleryBack: "Back", galleryProgress: "Completion",
             saveComplete: "Saved",
             slotAuto: "AUTO", slotEmpty: "Empty Slot", slotOldFormat: "Legacy Save",
             slotOverwrite: "Overwrite this slot?", slotYes: "Yes", slotNo: "No",
-            binauralActivated: "🎧 Binaural Mode — Headphones Recommended",
-            latenightAlone: "...am I the only one awake at this hour.",
+            binauralActivated: "🎧 Binaural mode — headphones recommended",
+            latenightAlone: "...Am I the only one awake at this hour?",
             headphoneHint: "...it'd be clearer with headphones.",
             timeDialogue: {
                 lateNight:   "It's {time}... you're still awake at this hour?",
-                dawn:        "{time} in the morning... did you pull an all-nighter?",
+                dawn:        "It's {time} in the morning... did you stay up all night?",
                 morning:     "{time}. A fine hour to start class.",
                 lateMorning: "{time}... aren't you supposed to be in class?",
                 noon:        "{time}. Lunch time. Have you eaten?",
                 afternoon:   "{time}... afternoon already. Not long until school ends.",
                 sunset:      "{time}. The sun is setting... you're staying at school?",
                 evening:     "{time}... it's getting dark. The school gets quiet around this time.",
-                night:       "{time}... getting late. Aren't you scared being here alone?"
+                night:       "It's {time}... late, isn't it? Aren't you scared being here alone?"
             }
         },
         ja: {

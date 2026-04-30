@@ -223,10 +223,11 @@ function buildPrompt(lang, file, source) {
   const config = LANG_CONFIG[lang];
   const sourceForModel = {};
   for (const [key, entry] of Object.entries(source)) {
-    sourceForModel[key] = {
-      name: entry.name ?? '',
-      text: entry.text ?? '',
-    };
+    sourceForModel[key] = {};
+    if (Object.prototype.hasOwnProperty.call(entry, 'speaker')) {
+      sourceForModel[key].speaker = entry.speaker ?? '';
+    }
+    sourceForModel[key].text = entry.text ?? '';
     if (Array.isArray(entry.choices)) sourceForModel[key].choices = entry.choices;
   }
 
@@ -238,9 +239,9 @@ Glossary and constraints: ${config.glossary}
 Rules:
 - Output only a single valid JSON object. No Markdown, no comments.
 - Preserve every top-level key exactly.
-- Preserve every entry shape: "name", "text", and "choices" only when choices exist in the source.
+- Preserve every entry shape: "speaker" only when present, "text", and "choices" only when choices exist in the source.
+- Copy "speaker" values exactly from the source; do not translate, rename, remove, or add speaker ids.
 - Translate "text" and each item in "choices" into ${config.label}.
-- Use this exact name mapping for "name" fields: ${JSON.stringify(config.names)}
 - Keep placeholders such as {name}, markdown markers like **...**, surrounding visual-novel italics *...*, escaped quotes, and line breaks.
 - Keep empty strings empty.
 - Do not add, remove, reorder, summarize, censor, soften, or intensify story events.
@@ -274,10 +275,11 @@ function normalizeTranslated(lang, source, translated) {
     const tr = translated[key] ?? {};
     if (typeof tr !== 'object' || Array.isArray(tr)) throw new Error(`entry ${key} is not an object`);
 
-    const out = {
-      name: config.names[src.name ?? ''] ?? src.name ?? '',
-      text: src.text === '' ? '' : String(tr.text ?? ''),
-    };
+    const out = {};
+    if (Object.prototype.hasOwnProperty.call(src, 'speaker')) {
+      out.speaker = src.speaker ?? '';
+    }
+    out.text = src.text === '' ? '' : String(tr.text ?? '');
 
     if (Array.isArray(src.choices)) {
       if (!Array.isArray(tr.choices)) throw new Error(`entry ${key} choices missing`);

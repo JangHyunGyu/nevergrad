@@ -1,42 +1,42 @@
 {
     "day2_broadcast_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*四時間目のチャイムが鳴り響く。昼休みだ。生徒たちが席を立ち始めた、その時――*ガリガリ*。スピーカーからノイズが爆音で鳴り響いた。*"
     },
     "day2_broadcast_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ノイズの合間から、何かの音が漏れてくる。声のようだ。誰かが話している。しかし、マイクから遠いのか、ひどく不明瞭で、何を言っているのか聞き取れない。*"
     },
     "day2_broadcast_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*生徒たちが顔を上げる。スピーカーを見つめている。*"
     },
     "day2_broadcast_3a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……二秒。三秒。それは突然途切れた。そして、ウンス先生の声が、はっきりと聞こえてきた。*"
     },
     "day2_broadcast_4": {
-        "name": "校内放送",
+        "speaker": "school_broadcast",
         "text": "昼休みです。生徒の皆さんは、秩序を保って行動してください。"
     },
     "day2_broadcast_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……今のノイズは何だったんだ？ マイクの故障か？\n\n周りの生徒たちは、何事もなかったかのように鞄を片付けている。誰も気にしていないようだ。僕だけが聞いたのか？*"
     },
     "day2_broadcast_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*振り返ると、ソルファが唇をきつく結んで、僕を見ていた。*"
     },
     "day2_broadcast_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……ソルファも、あの音を聞いたのか？ それとも、僕の気のせいか？*"
     },
     "day2_lunch_start": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*昼食のチャイムが鳴った。*"
     },
     "day2_lunch_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*昼休みだ。どこで食べようか？*",
         "choices": [
             "セアと一緒に食べる",
@@ -46,375 +46,375 @@
         ]
     },
     "day2_lunch_sea_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*今日の弁当。昨日よりもさらに凝っている。チキンカツ、花形のにんじん、ミニキンパ。*"
     },
     "day2_lunch_sea_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……これ全部作るのに、どれだけ早く起きたんだ？」"
     },
     "day2_lunch_sea_3": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「君が美味しそうに食べてくれると、嬉しいから。」"
     },
     "day2_lunch_sea_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「本当に上手だな。料理。」"
     },
     "day2_lunch_sea_5": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「お母さんが教えてくれたの。小学生の頃から一緒に料理してたんだ。」"
     },
     "day2_lunch_sea_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「今も一緒に料理するのか？」"
     },
     "day2_lunch_sea_7": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……ううん。最近は私一人で。」"
     },
     "day2_lunch_sea_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアは言葉を濁し、箸でキンパを一つ摘まんだ。*"
     },
     "day2_lunch_sea_9": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「お母さんも忙しいし、お父さんも。だから、朝にお弁当を作るのが、なんだか……私のルーティンになってるんだ。作らないと、なんだか寂しくて。」"
     },
     "day2_lunch_sea_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……ありがとう。本当に。」"
     },
     "day2_lunch_sea_11": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「いいのいいの～、君が残さず全部食べてくれるから、私も嬉しいし。」"
     },
     "day2_lunch_sea_12": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアはミニキンパを僕の弁当箱に移してくれた。しばらくの間、音楽やゲーム、映画の話をしながら食事をする。*"
     },
     "day2_lunch_sea_13": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「{name}、週末は何してるの？」"
     },
     "day2_lunch_sea_14": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「特に何も……まだこの辺のこともよく知らないし。」"
     },
     "day2_lunch_sea_15": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「じゃあ、土曜日に街に出かけない？ カフェに行こうよ。美味しいクロッフルのお店があるんだ。」"
     },
     "day2_lunch_sea_16": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「いいよ。」"
     },
     "day2_lunch_sea_17": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「え、ほんと？ 早いね。」"
     },
     "day2_lunch_sea_18": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「なんで？」"
     },
     "day2_lunch_sea_19": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「ううん……ただ、嬉しいなって。」"
     },
     "day2_lunch_sea_20": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアは弁当箱に視線を落とし、ごまかすように俯いた。そして、僕に片方のイヤホンを差し出す。穏やかな曲が流れてきた。*"
     },
     "day2_lunch_sea_21": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「これ、さっき話してたバンドの曲。この歌が一番好きなんだ。」"
     },
     "day2_lunch_sea_22": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*歌詞が流れる。「忘れられると知っていても、夜に君の名前を呼ぶ」――セアは歌詞に合わせて口を動かしている。*"
     },
     "day2_lunch_sea_23": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……いいでしょ？」"
     },
     "day2_lunch_sea_24": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「ああ、いい曲だ。」"
     },
     "day2_lunch_sea_25": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアは満足そうに微笑んだ。どこか、安心したような顔に見えた。*"
     },
     "day2_lunch_yuna_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナはカメラをいじっている。図書館の隅の席。隣にはお菓子の袋が置いてある。*"
     },
     "day2_lunch_yuna_2": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「先輩！ 来てくれたんですか？ 今日撮った写真、見てくださいよ。」"
     },
     "day2_lunch_yuna_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*写真をめくる。学校裏の丘、体育館、猫……。*"
     },
     "day2_lunch_yuna_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「本当に写真が上手だな。この猫はどこにいるんだ？」"
     },
     "day2_lunch_yuna_5": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「体育館の裏です。いつも同じ場所にいるんですよ。私が『どんぐり』って名付けました。」"
     },
     "day2_lunch_yuna_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「どんぐり？」"
     },
     "day2_lunch_yuna_7": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「顔がどんぐりみたいに丸いから。ほら、ここ見てください。」"
     },
     "day2_lunch_yuna_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナが画面を拡大する。確かに、顔が丸い。*"
     },
     "day2_lunch_yuna_9": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「先輩も写真撮るんですか？」"
     },
     "day2_lunch_yuna_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「いや、スマホで撮るくらいかな？ あまり写真は撮らないよ。」"
     },
     "day2_lunch_yuna_11": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「でも、先輩は見る目がありますよ。昨日、体育館の写真の構図がいいって言ってましたし。」"
     },
     "day2_lunch_yuna_12": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「あれはただの感覚で……」"
     },
     "day2_lunch_yuna_13": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「その『感覚』が才能なんです。」"
     },
     "day2_lunch_yuna_14": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナは少し微笑む。本気のようだ。写真をめくり続けていると、ユナが不意に尋ねてきた。*"
     },
     "day2_lunch_yuna_15": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「先輩……この学校に、以前来たことありますか？」"
     },
     "day2_lunch_yuna_16": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「いや？ 昨日が初登校だけど。」"
     },
     "day2_lunch_yuna_17": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「……ですよね。当然か。」"
     },
     "day2_lunch_yuna_18": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナは微笑むが、その目は笑っていない。何かを確認しようとしているようだった。*"
     },
     "day2_lunch_yuna_19": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「あ、いえ、何でもないです。なんだか、見覚えがあるような気がして……つい。」"
     },
     "day2_lunch_yuna_20": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……見覚え？ 僕たちは初めて会ったはずだ。写真部だから、誰かと間違えているのかもしれない。*"
     },
     "day2_lunch_yuna_21": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「もし写真部に興味があったら、入部してくださいね。ちょっと部員が少なくて……。」"
     },
     "day2_lunch_yuna_22": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「考えておくよ。」"
     },
     "day2_lunch_yuna_23": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「はい！ 無理にとは言いません。ただ……先輩と一緒に写真撮れたら、楽しいだろうなって。」"
     },
     "day2_lunch_yuna_24": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナはそう言って、カメラを胸に抱きしめた。彼女は、相手を傷つけないように、慎重に言葉を選ぶような話し方をする。*"
     },
     "day2_lunch_riin_1": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「転校生さんの健康記録がまだないので、簡単に検査させてください。」"
     },
     "day2_lunch_riin_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*血圧、視力、体重。基本的な検査だ。*"
     },
     "day2_lunch_riin_3": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「アレルギーはありますか？ 食物アレルギーとか、薬のアレルギーとか。」"
     },
     "day2_lunch_riin_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「特にないです。」"
     },
     "day2_lunch_riin_5": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「はい、これで終わりです。健康ですね。」"
     },
     "day2_lunch_riin_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生は記録簿に何かを書き込んでいる。基本的な検査にしては、ずいぶんたくさん書いているな。*"
     },
     "day2_lunch_riin_7": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……ちょっと待ってください。」"
     },
     "day2_lunch_riin_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生は書く手を止め、僕を見た。何か気になることがあるようだ。*"
     },
     "day2_lunch_riin_9": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「最近、よく夢を見ますか？」"
     },
     "day2_lunch_riin_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……急にですか？」"
     },
     "day2_lunch_riin_11": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「転校のストレスで、睡眠の質が落ちることがあります。よく夢を見るということは、深い眠りに入れていない証拠です。」"
     },
     "day2_lunch_riin_12": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「昨日、変な夢を見ました。あまり覚えてないんですけど。」"
     },
     "day2_lunch_riin_13": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生は一瞬手を止め、それからまた書き始めた。*"
     },
     "day2_lunch_riin_14": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「もし詳しく思い出したら、教えてください。ストレスの指標になることもありますから。」"
     },
     "day2_lunch_riin_15": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「はい……」"
     },
     "day2_lunch_riin_16": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*検査が終わり、帰ろうとすると、リイン先生が棚からお茶を取り出した。*"
     },
     "day2_lunch_riin_17": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「急いでいないなら、お茶でも一杯飲んでいってください。カモミールです。」"
     },
     "day2_lunch_riin_18": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*僕は保健室のソファに座る。陽光が差し込む静かな空間だ。リイン先生は僕の向かいに座った。*"
     },
     "day2_lunch_riin_19": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「学校生活はどうですか？」"
     },
     "day2_lunch_riin_20": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「思ったよりいいです。みんな親切にしてくれますし。」"
     },
     "day2_lunch_riin_21": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「セアさんとか？」"
     },
     "day2_lunch_riin_22": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「ええ。ウンス先生も。」"
     },
     "day2_lunch_riin_23": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「それは良かったです。」"
     },
     "day2_lunch_riin_24": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生は両手でティーカップを包み込み、窓の外を眺めた。*"
     },
     "day2_lunch_riin_25": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……でも、人が優しすぎると、かえって不安になることもありますよね。『私なんかが、こんなに優しくされていいのかな』って。」"
     },
     "day2_lunch_riin_26": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……先生も、そう感じたことがあるんですか？」"
     },
     "day2_lunch_riin_27": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が僕の方を向く。何かを言いかけようとしたが、その時――*"
     },
     "day2_lunch_riin_28": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「お茶を飲み終えたら、教室に戻ってくださいね。午後の授業に遅れてしまいますから。」"
     },
     "day2_lunch_riin_29": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*質問をはぐらかされた。……もしかしたら、個人的なことを聞きすぎたのかもしれない。危うく気まずくなりかけたが、リイン先生は笑顔でその場を収めた。*"
     },
     "day2_lunch_rooftop_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*屋上へと続く階段を上っていると、踊り場から声が聞こえてきた。*"
     },
     "day2_lunch_rooftop_2": {
-        "name": "ウンス",
+        "speaker": "eunsu",
         "text": "「……はい、承認は提出しました。去年と同じように、今回も問題なく終わらせます。……五日以内には。」"
     },
     "day2_lunch_rooftop_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*僕が物音を立てると、先生は電話を切った。*"
     },
     "day2_lunch_rooftop_4": {
-        "name": "ウンス",
+        "speaker": "eunsu",
         "text": "「あら、{name}？ 屋上に行くの？」"
     },
     "day2_lunch_rooftop_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「電話してましたか？」"
     },
     "day2_lunch_rooftop_6": {
-        "name": "ウンス",
+        "speaker": "eunsu",
         "text": "「学期始めだから、書類仕事が多くてね。教育委員会関係の。{name}が心配することじゃないわ。」"
     },
     "day2_lunch_rooftop_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*先生は微笑んで通り過ぎていった。忙しそうだ。学期始めの担任は、こんなものなのだろう。*"
     },
     "day2_lunch_rooftop_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*屋上に出る。風が吹く。弁当はないが、コンビニのおにぎりの包みを開ける。*"
     },
     "day2_lunch_rooftop_9": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……開けている。校舎の向こうには山が見える。どこか、見覚えのある風景だ。*"
     },
     "day2_lunch_rooftop_9a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*手すりに寄りかかり、おにぎりを食べる。他に誰もいない。静かだ。*"
     },
     "day2_lunch_rooftop_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*さっきの先生の電話が気になる。「五日以内に終わらせる」。何を五日以内に終わらせるというんだ？*"
     },
     "day2_lunch_rooftop_10a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……カリキュラムの改訂とか、そういう話なのだろうか？ 先生たちの会議では、よくあることなのか？*"
     },
     "day2_lunch_rooftop_10b": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*考えすぎだ。おにぎりを食べよう。*"
     },
     "day2_lunch_rooftop_11": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*風が髪を揺らす。目を閉じると、もう一つの音が聞こえるような気がした。誰かの笑い声。ここ、この屋上で。……気のせいか？ きっと風の音だ。*"
     },
     "day2_lunch_end": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*午後の授業の時間だ。*"
     }
 }

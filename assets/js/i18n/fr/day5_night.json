@@ -1,858 +1,716 @@
 {
     "day5_night_start": {
-        "name": "",
         "text": "*...*"
     },
     "day5_night_affinity_check": {
-        "name": "",
         "text": ""
     },
     "day5_night_set_high_affinity": {
-        "name": "",
         "text": ""
     },
     "day5_night_sea_affinity_check": {
-        "name": "",
         "text": ""
     },
     "day5_night_set_high_sea_affinity": {
-        "name": "",
         "text": ""
     },
     "day5_night_complicit_eval": {
-        "name": "",
         "text": ""
     },
     "day5_night_set_complicit_ready": {
-        "name": "",
         "text": ""
     },
     "day5_night_routing": {
-        "name": "",
         "text": ""
     },
     "day5_ending_forget_forced_1": {
-        "text": "*Il est déjà trop tard. Seule la marque de l'aiguille reste, froide.*",
-        "name": ""
+        "text": "*Il est déjà trop tard. Seule la marque de l'aiguille reste, froide.*"
     },
     "day5_ending_forget_forced_2": {
-        "text": "...Je suis désolé. Cette fois encore, je suis arrivé trop tard.",
-        "name": "Park Eunsu"
+        "speaker": "eunsu_full",
+        "text": "...Je suis désolé. Cette fois encore, je suis arrivé trop tard."
     },
     "day5_ending_forget_forced_3": {
-        "text": "*Mademoiselle Riin a fermé les yeux. Elle dit quelque chose, mais sa voix est lointaine, comme sous l'eau.*",
-        "name": ""
+        "text": "*Mademoiselle Riin a fermé les yeux. Elle dit quelque chose, mais sa voix est lointaine, comme sous l'eau.*"
     },
     "day5_ending_forget_forced_4": {
-        "text": "*Ma conscience s'enfonce. Regret, colère... tout glisse, sans pouvoir être exprimé.*",
-        "name": ""
+        "text": "*Ma conscience s'enfonce. Regret, colère... tout glisse, sans pouvoir être exprimé.*"
     },
     "day5_ending_ghost_guided_1": {
-        "text": "*Dans le noir, la sonnette d'alarme a retenti une fois. Quelqu'un me pousse violemment dans le dos.*",
-        "name": ""
+        "text": "*Dans le noir, la sonnette d'alarme a retenti une fois. Quelqu'un me pousse violemment dans le dos.*"
     },
     "day5_ending_ghost_guided_2": {
-        "text": "...Ne t'arrête pas. Ton corps se souvient du chemin.",
-        "name": "Seolhwa"
+        "speaker": "seolhwa",
+        "text": "...Ne t'arrête pas. Ton corps se souvient du chemin."
     },
     "day5_ending_ghost_guided_3": {
-        "text": "*Je montais les marches deux par deux. Seolhwa semblait ouvrir la voie, mais en réalité, mes pieds fonçaient d'eux-mêmes vers la sortie de secours.*",
-        "name": ""
+        "text": "*Je montais les marches deux par deux. Seolhwa semblait ouvrir la voie, mais en réalité, mes pieds fonçaient d'eux-mêmes vers la sortie de secours.*"
     },
     "day5_ending_ghost_guided_4": {
-        "text": "Bien. Continue comme ça. Maintenant, pousse la porte.",
-        "name": "Seolhwa"
+        "speaker": "seolhwa",
+        "text": "Bien. Continue comme ça. Maintenant, pousse la porte."
     },
     "day5_ending_ghost_guided_5": {
-        "text": "*La porte s'ouvrit et l'air froid s'engouffra. C'est seulement là que je pus reprendre mon souffle.*",
-        "name": ""
+        "text": "*La porte s'ouvrit et l'air froid s'engouffra. C'est seulement là que je pus reprendre mon souffle.*"
     },
     "day5_ending_true_1": {
-        "name": "",
         "text": "*La main de Mme Eunsu tremble. Ses doigts serrent la seringue au point de blanchir.*"
     },
     "day5_ending_true_2": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "......"
     },
     "day5_ending_true_3": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Alors. Le 13e aussi — s'en va."
     },
     "day5_ending_true_4": {
-        "name": "",
         "text": "*La professeure s'est écartée. Les yeux fermés.*"
     },
     "day5_ending_true_5": {
-        "name": "",
         "text": "*J'ai passé la sortie de secours. Avec Yuna. L'escalier de secours derrière l'ancien bâtiment. L'air de l'aube est froid. Au-delà de la clôture de l'école — la route est visible.*"
     },
     "day5_ending_true_6": {
-        "name": "",
         "text": "*Je me suis retourné.*"
     },
     "day5_ending_true_7": {
-        "name": "",
         "text": "***Seolhwa se tient à l'intérieur de la sortie de secours. Elle ne peut pas franchir la porte.***"
     },
     "day5_ending_true_8": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Va-t'en."
     },
     "day5_ending_true_9": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Seolhwa —"
     },
     "day5_ending_true_10": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "**Je t'ai dit de partir.**"
     },
     "day5_ending_true_11": {
-        "name": "",
         "text": "*Seolhwa a souri. La lumière s'estompe.*"
     },
     "day5_ending_true_12": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "J'ai attendu 6 cycles. Que tu sortes."
     },
     "day5_ending_true_13": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...J'ai pris fin il y a un an. ...Mais si tu sors, ça me suffit."
     },
     "day5_ending_true_14": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Je me souviendrai de toi. Lee Seolhwa. Seolhwa la gauchère."
     },
     "day5_ending_true_14a": {
-        "text": "...Au final, c'est moi qui ai perdu. Contre cette enfant.",
-        "name": "Park Eunsu"
+        "speaker": "eunsu_full",
+        "text": "...Au final, c'est moi qui ai perdu. Contre cette enfant."
     },
     "day5_ending_true_14b": {
-        "text": "*La main de la professeure se relâcha. La seringue tomba au sol et roula.*",
-        "name": ""
+        "text": "*La main de la professeure se relâcha. La seringue tomba au sol et roula.*"
     },
     "day5_ending_true_15": {
-        "name": "",
         "text": "*Seolhwa s'est arrêtée. S'est retournée. — Elle pleurait. Mais elle souriait.*"
     },
     "day5_ending_true_16": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...C'est la première fois qu'on prononce mon nom. Après 13 cycles."
     },
     "day5_ending_true_17": {
-        "name": "",
         "text": "*Le corps de Seolhwa devient translucide. Il se dissipe en particules de lumière.*"
     },
     "day5_ending_true_18": {
-        "name": "",
         "text": "*Cette lumière — afflue vers moi. S'infiltre dans ma poitrine. ...C'est chaud. Ce n'est pas une hallucination — c'est un souvenir.*"
     },
     "day5_ending_true_19": {
-        "name": "",
         "text": "*Soudain, ça se déverse dans ma tête comme une cascade.*"
     },
     "day5_ending_true_20": {
-        "name": "",
         "text": "***Les souvenirs du 7e cycle. La nuit où Seolhwa et moi avons cherché des documents à la bibliothèque. La promesse faite devant la porte verrouillée du sous-sol. L'instant où nous avons tenté d'escalader la clôture ensemble —***"
     },
     "day5_ending_true_21": {
-        "name": "",
         "text": "***Et les souvenirs d'avant. Le 1er, le 2e, le 3e — douze vies affluent d'un seul coup.***"
     },
     "day5_ending_true_21a": {
-        "name": "",
         "text": "*Entre tout cela — le visage de Minsu s'est brisé comme du verre volé en éclats. La salle de classe de l'ancien lycée. La raison du déménagement de mes parents. Deux années de souvenirs qui n'avaient jamais existé se sont fracassés en mille morceaux. À leur place, mon vrai passé est apparu.*"
     },
     "day5_ending_true_22": {
-        "name": "",
         "text": "*Je suis tombé à genoux. J'ai pleuré. Les souvenirs qui n'étaient pas les miens — non, les souvenirs qui avaient toujours été les miens — se sont déversés d'un seul coup. ...Yuna s'est approchée et m'a pris dans ses bras par-derrière. Dans l'air froid de l'aube, la haleur du corps de Yuna était la seule chose qui semblait réelle.*"
     },
     "day5_ending_true_23": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...Ça va aller, {name}."
     },
     "day5_ending_true_24": {
-        "name": "",
         "text": "*Yuna a regardé le ciel qui s'éclaircissait, le monde au-delà de la clôture de l'école, et a murmuré doucement.*"
     },
     "day5_ending_true_25": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...Maintenant, c'est vraiment la remise des diplômes."
     },
     "day5_ending_true_26": {
-        "name": "",
         "text": "*Un article de presse. 'Découverte d'un laboratoire non agree au lycée XX — Allegations d'administration illegale de médicaments et d'essais cliniques sur des humains'*"
     },
     "day5_ending_true_27": {
-        "name": "",
         "text": "*'Nombreuses victimes signalent des troubles de la mémoire... Arrestation du chercheur principal B' 'Le rôle decisif de l'élève C, qui a recueilli des preuves pendant 3 ans en tant qu'inscrite'*"
     },
     "day5_ending_true_28": {
-        "name": "",
         "text": "*J'ai posé mon téléphone. La fenêtre. Une nouvelle école. Une nouvelle classe. Un endroit ou personne ne me connait.*"
     },
     "day5_ending_true_29": {
-        "name": "",
         "text": "*J'ai regardé l'étiquette nominative. Mon nom. ...Pas le 13e nom, mais le premier.*"
     },
     "day5_ending_true_30": {
-        "name": "",
         "text": "*...Je me souviens. De tout. Des 12 versions de moi. De Seolhwa. D'Eunsu. De Riin. De Sea. De Yuna.*"
     },
     "day5_ending_true_31": {
-        "name": "",
         "text": "*J'ai pris le crayon de la main gauche. Une habitude du 7e cycle. L'habitude de Seolhwa. — Mon habitude.*"
     },
     "day5_ending_true_32": {
-        "name": "",
         "text": ""
     },
     "day5_ending_true_subtitle": {
-        "name": "",
         "text": "Diplomation — De la salle de classe qui n'a jamais obtenu son diplôme, enfin."
     },
     "day5_ending_true_title": {
-        "name": "",
         "text": ""
     },
     "day5_postcredit_1": {
-        "name": "",
         "text": "*...Quelque part, un téléphone sonne.*"
     },
     "day5_postcredit_2": {
-        "name": "",
         "text": "*Un vaste bureau. Des piles de documents sur une table. Plusieurs moniteurs. Un plan d'école s'affiche à l'écran.*"
     },
     "day5_postcredit_3": {
-        "name": "???",
+        "speaker": "unknown",
         "text": "Oui. ...Confirme. Le site sera decommissionne. La recuperation des actifs est terminee, le personnel sera reaffecte."
     },
     "day5_postcredit_4": {
-        "name": "???",
+        "speaker": "unknown",
         "text": "Les medias font du bruit à propos du Sujet 13. Conformement au protocole, on imputera l'affaire aux agissements individuels au niveau du responsable sur site. Coupez tous les liens avec la Fondation Edina."
     },
     "day5_postcredit_5": {
-        "name": "???",
+        "speaker": "unknown",
         "text": "...Oui. La sélection du prochain lycée pilote est terminee."
     },
     "day5_postcredit_6": {
-        "name": "???",
+        "speaker": "unknown",
         "text": "La proposition de réaffectation du personnel a-t-elle été soumise ?"
     },
     "day5_postcredit_7": {
-        "name": "",
         "text": "*L'écran change. La photo d'un nouveau lycée. De nouveaux uniformes. De nouveaux noms. Le titre du fichier est visible. 'Fondation Edina — Programme de correction des élèves inadaptes, Plan de mise en oeuvre du 2e site'. En haut du document, le même logo. Un livre ouvert et un cerveau dans un cercle.*"
     },
     "day5_postcredit_8": {
-        "name": "",
         "text": "*...Le profil d'un nouvel élève transféré apparait à l'écran. L'élève sur la photo sourit. Un visage qui ne sait rien.*"
     },
     "day5_postcredit_end": {
-        "name": "",
         "text": ""
     },
     "day5_ending_escape_1": {
-        "name": "",
         "text": "*J'ai couru. Avec Yuna. On a quitte l'école.*"
     },
     "day5_ending_escape_2": {
-        "name": "",
         "text": "*Je me suis retourné. Personne ne nous poursuit.*"
     },
     "day5_ending_escape_3": {
-        "name": "",
         "text": "*...On s'est enfuis. On a réussi.*"
     },
     "day5_ending_escape_4": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...{name}, on n'a pas assez de preuves. On a des photos sur l'appareil, mais les documents..."
     },
     "day5_ending_escape_5": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Au moins, on est dehors."
     },
     "day5_ending_escape_6": {
-        "name": "",
         "text": "*J'ai marche. La route avant l'aube. Sous un lampadaire.*"
     },
     "day5_ending_escape_7": {
-        "name": "",
         "text": "*...Ma tête est silencieuse. Les souvenirs ne reviennent pas. Parce que Seolhwa n'est pas là. Parce que je n'ai jamais fusionné avec Seolhwa.*"
     },
     "day5_ending_escape_8": {
-        "name": "",
         "text": "*Les souvenirs de 12 cycles — restent à l'intérieur de l'école.*"
     },
     "day5_ending_escape_9": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...{name}. Vous etiez gaucher ?"
     },
     "day5_ending_escape_10": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Non ? Je suis droitier."
     },
     "day5_ending_escape_11": {
-        "name": "",
         "text": "*Yuna s'est mordu la lèvre. Elle allait dire quelque chose, puis s'est ravisée.*"
     },
     "day5_ending_escape_12": {
-        "name": "",
         "text": "*...Je tenais la sangle du sac de la main gauche. Inconsciemment.*"
     },
     "day5_ending_escape_13": {
-        "name": "",
         "text": "*Trois mois plus tard.*"
     },
     "day5_ending_escape_14": {
-        "name": "",
         "text": "*Aucun article sur le lycée XX n'est paru aux informations. Les preuves étaient insuffisantes.*"
     },
     "day5_ending_escape_15": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "{name}. Aujourd'hui, dans cette école... il parait qu'un nouvel élève transféré est arrive."
     },
     "day5_ending_escape_subtitle": {
-        "name": "",
         "text": "Fuite — Une évasion sans mémoire."
     },
     "day5_ending_escape_title": {
-        "name": "",
         "text": ""
     },
     "day5_ending_resist_1": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Ensemble ?"
     },
     "day5_ending_resist_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Vous êtes aussi une victime, Madame. Vous avez été utilisee par le conseil."
     },
     "day5_ending_resist_3": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "......"
     },
     "day5_ending_resist_4": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Non. À partir de la 3e fois, c'était mon choix."
     },
     "day5_ending_resist_5": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Je suis là coupable, {name}."
     },
     "day5_ending_resist_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Malgre tout. Si vous restez ici, le 14e cycle commencera. Pour quelqu'un d'autre."
     },
     "day5_ending_resist_7": {
-        "name": "",
         "text": "*Mme Eunsu s'est arrêtée. Seolhwa est apparue. Derrière Mme Eunsu.*"
     },
     "day5_ending_resist_8": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Eunsu."
     },
     "day5_ending_resist_9": {
-        "name": "",
         "text": "*Mme Eunsu s'est retournée. Elle a vu Seolhwa.*"
     },
     "day5_ending_resist_10": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Lee Seolhwa."
     },
     "day5_ending_resist_11": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Pendant 6 ans, j'ai regardé chaque jour. Vous accueillir un nouveau moi à chaque fois."
     },
     "day5_ending_resist_12": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Sourire à chaque fois. — Vous briser un peu plus à chaque fois."
     },
     "day5_ending_resist_13": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Vous aussi, vous devez partir, Madame."
     },
     "day5_ending_resist_14": {
-        "name": "",
         "text": "*Mme Eunsu a posé la seringue au sol. ...Elle est restee debout un long moment.*"
     },
     "day5_ending_resist_15": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Si je sors, tout ce que j'ai fait sera revele."
     },
     "day5_ending_resist_16": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Je sais."
     },
     "day5_ending_resist_17": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Je pourrais aller en prison."
     },
     "day5_ending_resist_18": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Je sais."
     },
     "day5_ending_resist_18a": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Le 11e Oh Taehyun... a dit qu'il me faisait confiance. Que ça allait, puisque j'étais sa professeure."
     },
     "day5_ending_resist_18b": {
-        "name": "",
         "text": "*La professeure s'est arrêtée de parler. Ses mains ont tremblé imperceptiblement.*"
     },
     "day5_ending_resist_18c": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Cette nuit-là, j'ai effacé sa mémoire. Le lendemain matin, il m'a dit 'Vous êtes qui, madame ?'"
     },
     "day5_ending_resist_18d": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "C'est là que j'ai compris. Ce n'était pas une relation, mais un conditionnement. Et pourtant, je ne me suis pas arrêtée."
     },
     "day5_ending_resist_19": {
-        "name": "",
         "text": "*Mme Eunsu — a pleuré. Comme si le poids de 12 cycles s'effondrait d'un coup.*"
     },
     "day5_ending_resist_20": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Comment peux-tu m'emmener avec toi. Après ce que je t'ai fait."
     },
     "day5_ending_resist_21": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Vous devez répondre de vos actes. Mais c'est mieux que de repeter tout ça."
     },
     "day5_ending_resist_22": {
-        "name": "",
         "text": "*J'ai passé la sortie de secours. Avec Mme Eunsu. Seolhwa a souri depuis l'intérieur de la porte. La lumière s'est dispersée.*"
     },
     "day5_ending_resist_23": {
-        "name": "",
         "text": "*...Mme Eunsu est sortie. Mais le 'conseil' est toujours la.*"
     },
     "day5_ending_resist_24": {
-        "name": "",
         "text": "*Une nouvelle professeure principale a dû prendre ses fonctions dans la salle des profs vide. Et au bureau vide — un nouvel élève transféré.*"
     },
     "day5_ending_resist_subtitle": {
-        "name": "",
         "text": "Rebellion — Briser le cycle."
     },
     "day5_ending_resist_title": {
-        "name": "",
         "text": ""
     },
     "day5_ending_cage_eunsu_1": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Vraiment ?"
     },
     "day5_ending_cage_eunsu_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Le rapport d'aujourd'hui s'arrête ici. Repose-toi."
     },
     "day5_ending_cage_eunsu_3": {
-        "name": "",
         "text": "*La professeure a souri. Sincèrement. Pour la première fois en 12 cycles — un sourire qui n'avait plus besoin d'attendre.*"
     },
     "day5_ending_cage_eunsu_4": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "À partir de demain, tu n'auras qu'à refaire comme d'habitude. À la place inscrite sur le registre d'appel."
     },
     "day5_ending_cage_eunsu_5": {
-        "name": "",
         "text": "*La porte de la classe s'est refermée doucement. Même en sachant qu'elle n'était pas verrouillée, je ne me suis pas levé de ma place.*"
     },
     "day5_ending_cage_eunsu_6": {
-        "name": "",
         "text": "*...La salle de classe. Le soleil de l'après-midi. Mme Eunsu fait cours. Je suis assis près de la fenêtre.*"
     },
     "day5_ending_cage_eunsu_7": {
-        "name": "",
         "text": "*Les mêmes cours chaque jour. La même salle de classe chaque jour. Le même sourire chaque jour.*"
     },
     "day5_ending_cage_eunsu_8": {
-        "name": "",
         "text": "***Suis-je heureux ? ...Suis-je censé être heureux ?***"
     },
     "day5_ending_cage_eunsu_9": {
-        "name": "",
         "text": "*J'ai regardé par la fenêtre. La route au-delà de la clôture. Une voiture passe.*"
     },
     "day5_ending_cage_eunsu_10": {
-        "name": "",
         "text": "*...La porte est ouverte. Je peux partir à tout moment.*"
     },
     "day5_ending_cage_eunsu_11": {
-        "name": "",
         "text": "***Je ne pars pas. Ce n'est pas que je ne peux pas — je ne pars pas.***"
     },
     "day5_ending_cage_sea_1": {
-        "name": "",
         "text": "*Sea m'a pris dans ses bras. Dans le couloir.*"
     },
     "day5_ending_cage_sea_2": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Merci."
     },
     "day5_ending_cage_sea_3": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "Cette fois — je n'ai pas besoin de te laisser partir, n'est-ce pas ?"
     },
     "day5_ending_cage_sea_4": {
-        "name": "",
         "text": "*J'ai hoché la tête. Sea a pleuré. Des larmes de soulagement.*"
     },
     "day5_ending_cage_sea_5": {
-        "name": "",
         "text": ""
     },
     "day5_ending_cage_sea_6": {
-        "name": "",
         "text": "*...La salle du conseil des élèves. Sea a ouvert une boite a déjeuner. Elle me regarde et sourit.*"
     },
     "day5_ending_cage_sea_7": {
-        "name": "",
         "text": "*...Le 13e. Non — pour Sea, le premier. La première fois qu'elle n'a pas eu a me laisser partir — le seul cycle.*"
     },
     "day5_ending_cage_sea_8": {
-        "name": "",
         "text": "***Mais Yuna est au sous-sol. Et j'entends toujours la voix d'une Seolhwa qui n'existe pas.***"
     },
     "day5_ending_cage_sea_9": {
-        "name": "",
         "text": "***Et ma mémoire — sera un jour effacee à nouveau.***"
     },
     "day5_ending_cage_subtitle": {
-        "name": "",
         "text": "Cage — Une vie scolaire éternelle."
     },
     "day5_ending_cage_title": {
-        "name": "",
         "text": ""
     },
     "day5_ending_forget_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Effacez-moi."
     },
     "day5_ending_forget_2": {
-        "name": "",
         "text": "*Mme Eunsu s'est arrêtée.*"
     },
     "day5_ending_forget_3": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Tu es sûr ?"
     },
     "day5_ending_forget_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Si tout cela fait partie de mes souvenirs... alors les 12 lignes sans nom abandonnees dans ce sous-sol sont toutes moi."
     },
     "day5_ending_forget_5": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Je ne peux pas... je ne peux pas supporter ça. J'ai l'impression que ma tête va exploser..."
     },
     "day5_ending_forget_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "S'il vous plaît, effacez-moi. Faites-moi tout oublier."
     },
     "day5_ending_forget_7": {
-        "name": "",
         "text": "*Mme Eunsu a levé la seringue. Sa main tremble.*"
     },
     "day5_ending_forget_8": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Pardon."
     },
     "day5_ending_forget_9": {
-        "name": "",
         "text": "*L'aiguille est entrée dans mon bras. Froid. La conscience s'effacé.*"
     },
     "day5_ending_forget_10": {
-        "name": "",
         "text": "*La dernière chose que j'ai vue — Seolhwa. Seolhwa pleure. Ses lèvres bougent. Aucun son.*"
     },
     "day5_ending_forget_11": {
-        "name": "",
         "text": "*...Je peux le lire. Le mouvement de ses lèvres.*"
     },
     "day5_ending_forget_12": {
-        "name": "",
         "text": "***\"N'oublie pas\"***"
     },
     "day5_ending_forget_13": {
-        "name": "",
         "text": "*J'ai oublie.*"
     },
     "day5_ending_forget_14": {
-        "name": "",
         "text": "*...Il fait clair. Un réveil sonne. J'ai regardé mon téléphone.*"
     },
     "day5_ending_forget_15": {
-        "name": "",
         "text": "*'Bonjour, {new_name} !'*"
     },
     "day5_ending_forget_16": {
-        "name": "",
         "text": "*Le nom est différent. J'ai regardé dans le miroir. ...Qui est-ce ? C'est moi. C'est bien moi.*"
     },
     "day5_ending_forget_17": {
-        "name": "",
         "text": "*...Pourquoi est-ce que je pleure ?*"
     },
     "day5_ending_forget_18": {
-        "name": "",
         "text": "*Je dois aller à l'école. Une nouvelle école.*"
     },
     "day5_ending_forget_19": {
-        "name": "",
         "text": "*Un professeur se tient à la porte de l'école.*"
     },
     "day5_ending_forget_20": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Bienvenue. Tu es {new_name}, c'est ça ? L'élève transféré ?"
     },
     "day5_ending_forget_21": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "La professeure s'occupera de ta vie scolaire."
     },
     "day5_ending_forget_22": {
-        "name": "",
         "text": "*La professeure a souri. Chaleureusement. ...Avec un sourire si parfait qu'il semble cassé.*"
     },
     "day5_ending_forget_sea_branch": {
-        "name": "",
         "text": ""
     },
     "day5_ending_forget_sea_1": {
-        "name": "",
         "text": "*Une fille se tient devant la porte de l'école. Un sourire lumineux. Un brassard de déléguée de classe.*"
     },
     "day5_ending_forget_sea_2": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "Salut ! Tu es le nouvel élève transféré, c'est ça ? Je vais te faire visiter."
     },
     "day5_ending_forget_sea_3": {
-        "name": "",
         "text": "*...Cette personne, j'ai l'impression de l'avoir vue quelque part. Où était-ce ? ...Je ne m'en souviens pas.*"
     },
     "day5_ending_forget_subtitle": {
-        "name": "",
         "text": "Oubli — Le 14e commence."
     },
     "day5_ending_forget_title": {
-        "name": "",
         "text": ""
     },
     "day5_ending_ghost_1": {
-        "name": "",
         "text": "*Je ne peux pas bouger. Mon corps est fige.*"
     },
     "day5_ending_ghost_2": {
-        "name": "",
         "text": "*Mme Eunsu s'approche. Seringue à la main.*"
     },
     "day5_ending_ghost_3": {
-        "name": "",
         "text": "*...Seolhwa est apparue. Entre moi et Mme Eunsu.*"
     },
     "day5_ending_ghost_4": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...C'est moi qui vais le faire."
     },
     "day5_ending_ghost_5": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Seolhwa — ?"
     },
     "day5_ending_ghost_6": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "J'ai regardé pendant 6 cycles. Toi, incapable de te décider."
     },
     "day5_ending_ghost_7": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Cette fois aussi. Je sais. C'est une habitude."
     },
     "day5_ending_ghost_8": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Alors — **c'est moi qui vais décider pour toi.**"
     },
     "day5_ending_ghost_9": {
-        "name": "",
         "text": "*Seolhwa m'a regardé droit dans les yeux. Une hallucination — et pourtant jamais aussi nette.*"
     },
     "day5_ending_ghost_10": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "**Cours. Maintenant.**"
     },
     "day5_ending_ghost_11": {
-        "name": "",
         "text": "*Mon corps a bouge. La voix de Seolhwa — la mémoire en moi — met mon corps en mouvement.*"
     },
     "day5_ending_ghost_12": {
-        "name": "",
         "text": "*J'ai saisi la main de Yuna et couru vers la sortie de secours. Mme Eunsu a rié derrière moi mais je ne me suis pas arrété.*"
     },
     "day5_ending_ghost_13": {
-        "name": "",
         "text": "*J'ai franchi la sortie de secours. Je me suis retourné. Seolhwa se tient à l'intérieur de la porte. Elle sourit **tristement**.*"
     },
     "day5_ending_ghost_14": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Madame. Il n'y aura pas de 14e."
     },
     "day5_ending_ghost_15": {
-        "name": "",
         "text": "*Seolhwa a disparu. Comme la lumière. Sans un bruit. Au même moment — une alarme s'est declenchee dans le bâtiment. Le bâtiment s'est animé. Sirenes, pas, cris.*"
     },
     "day5_ending_ghost_16": {
-        "name": "",
         "text": "*...Seolhwa n'est plus là. Dans ma tête non plus — le silence. J'ai quitté l'école. Les sirènes hurlent derrière moi.*"
     },
     "day5_ending_ghost_17": {
-        "name": "",
         "text": "*...Un nouveau lieu. Une nouvelle vie. Les souvenirs ne sont pas revenus. Parce que je n'ai jamais pleinement fait face à la mémoire de Seolhwa.*"
     },
     "day5_ending_ghost_18": {
-        "name": "",
         "text": "*Mais — parfois, la nuit. Quand je me regarde dans le miroir. ...Je crois voir des cheveux d'un blanc argenté. L'espace d'un instant.*"
     },
     "day5_ending_ghost_19": {
-        "name": "",
         "text": "*Quand je prends un crayon de la main gauche. Quand je tourne à gauche dans un couloir. Quand je commence à prononcer le nom de quelqu'un et que je m'arrête.*"
     },
     "day5_ending_ghost_20": {
-        "name": "",
         "text": "*...Les traces laissées par Seolhwa. L'image résiduelle indélébile d'une fille éliminée il y a un an.*"
     },
     "day5_ending_ghost_21": {
-        "name": "",
         "text": "*Mon corps se souvient. Même quand les souvenirs sont effaces — les habitudes formees avec elle demeurent.*"
     },
     "day5_ending_ghost_22": {
-        "name": "",
         "text": "*...Et cette école est toujours la. La sortie de secours a dû être verrouillée à nouveau. Avec une nouvelle clé.*"
     },
     "day5_ending_ghost_subtitle": {
-        "name": "",
         "text": "Image résiduelle — Des traces ineffaçables."
     },
     "day5_ending_ghost_title": {
-        "name": "",
         "text": ""
     },
     "day5_ending_complicit_1": {
-        "name": "",
         "text": "*Mme Eunsu a endu un papier.*"
     },
     "day5_ending_complicit_2": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Si tu deviens le responsable du 14e — on n'effacera plus jamais ta mémoire."
     },
     "day5_ending_complicit_3": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Reste ici. Je t'enregistrerai comme assistant. Gérons ça ensemble."
     },
     "day5_ending_complicit_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "..."
     },
     "day5_ending_complicit_5": {
-        "name": "",
         "text": "*J'ai regardé le papier. 'Projet Nevergrad — Contrat d'assistant chercheur.'*"
     },
     "day5_ending_complicit_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Quand le 14e arrivera, est-ce que moi aussi je lui dirai : \"La professeure s'occupera de ta vie scolaire\" ?"
     },
     "day5_ending_complicit_7": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Oui."
     },
     "day5_ending_complicit_8": {
-        "name": "",
         "text": "*J'ai posé ma main sur le contrat.*"
     },
     "day5_ending_complicit_8a": {
-        "name": "",
         "text": "*...Mes mains ne tremblent pas. Je ne sais pas pourquoi. Elles devraient trembler.*"
     },
     "day5_ending_complicit_8b": {
-        "name": "",
         "text": "*Rester ici est plus facile que fuir. Mes jambes ne bougent pas vers la porte. Voilà la réponse.*"
     },
     "day5_ending_complicit_sign": {
-        "name": "",
         "text": "*J'ai saisi le stylo. Ma main obéit.*"
     },
     "day5_ending_complicit_9": {
-        "name": "",
         "text": "*...J'ai signe.*"
     },
     "day5_ending_complicit_10": {
-        "name": "",
         "text": "*Mme Eunsu a souri. Sea aussi.*"
     },
     "day5_ending_complicit_11": {
-        "name": "",
         "text": "***Moi aussi, j'ai souri.***"
     },
     "day5_ending_complicit_12": {
-        "name": "",
         "text": "*La porte de l'école. Le matin. Un nouvel élève arrive. Le 14e.*"
     },
     "day5_ending_complicit_13": {
-        "name": "",
         "text": "*...Le même visage. Une couleur de cheveux différente. Un nom différent.*"
     },
     "day5_ending_complicit_14": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Bienvenue. Tu es {14th_name}, c'est ça ?"
     },
     "day5_ending_complicit_15": {
-        "name": "",
         "text": "*Le 14e hoche la tête. Une expression nerveuse.*"
     },
     "day5_ending_complicit_16": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Ne t'inquiete pas. Il y a plein de gens bien ici."
     },
     "day5_ending_complicit_17": {
-        "name": "",
         "text": "***Derrière moi, Mme Eunsu observé. ...Seolhwa se tient au bout du couloir, en me regardant. Elle pleure.***"
     },
     "day5_ending_complicit_18": {
-        "name": "",
         "text": "***J'ai souri.***"
     },
     "day5_ending_complicit_subtitle": {
-        "name": "",
         "text": "Complice — La salle de classe qui ne delivre jamais de diplôme."
     },
     "day5_ending_complicit_title": {
-        "name": "",
         "text": ""
     },
     "day5_cage_loop": {
-        "name": "",
         "text": ""
     },
     "day5_xover_server_1": {
-        "name": "",
         "text": "*Connecte au serveur de l'institut. Un répertoire de fichiers s'affiche sur le vieux moniteur.*"
     },
     "day5_xover_server_2": {
-        "name": "",
         "text": "*PROJECT CUPID — Enregistrements des cycles précédents :*"
     },
     "day5_xover_server_3": {
-        "name": "",
         "text": "*> cycle_01.zip  [INTACT]*"
     },
     "day5_xover_server_3_damaged": {
-        "name": "",
         "text": "*> cycle_01.zip  [CORROMPU]*"
     },
     "day5_xover_server_4": {
-        "name": "",
         "text": "*Piece jointe : CUPID_ENV_PREVIEW*"
     },
     "day5_xover_server_preview_choice": {
-        "name": "",
         "text": "*Lancer l'apercu ?*",
         "choices": [
             "LANCER PREVIEW",
@@ -860,83 +718,63 @@
         ]
     },
     "day5_xover_preview_1": {
-        "name": "",
         "text": "*...Des cerisiers en fleurs.*"
     },
     "day5_xover_preview_2": {
-        "name": "",
         "text": "*Brise printaniere. Nouvel uniforme. Premier jour de transfert.*"
     },
     "day5_xover_preview_3": {
-        "name": "",
         "text": "*...Est-ce mon souvenir ? Ou — un environnement concu.*"
     },
     "day5_xover_preview_4": {
-        "name": "",
         "text": "*En bas à droite de l'écran, en petit : cycle_01*"
     },
     "day5_xover_preview_heroine": {
-        "name": "",
         "text": "*[CUPID_ENV_PREVIEW]*\n*Modèle d'empreinte émotionnelle : {cupid_heroine}*\n*Taux de réponse de conformité : {cupid_compliance}*\n*Le test de réponse environnementale pré-dose correspond à l'indice de stabilisation M-13.*"
     },
     "day5_xover_preview_5": {
-        "name": "",
         "text": "*Le moniteur s'est eteint.*"
     },
     "day5_xover_server_end": {
-        "name": "",
         "text": "*...J'ai fermé les fichiers.*"
     },
     "day5_observer_1": {
-        "name": "",
         "text": "*Le générique est termine. L'écran s'assombrit. Noir complet.*"
     },
     "day5_observer_2": {
-        "name": "",
         "text": "*3 secondes.*"
     },
     "day5_observer_3": {
-        "name": "",
         "text": "*...Un texte apparait au centre de l'écran. Lentement.*"
     },
     "day5_observer_4": {
-        "name": "",
         "text": "══════════════════════════════════════════\n  NEVERGRAD RESEARCH INSTITUTE\n  Registre comportemental de l'observateur externe\n══════════════════════════════════════════"
     },
     "day5_observer_5": {
-        "name": "",
         "text": "*...Observateur externe ?*"
     },
     "day5_observer_6": {
-        "name": "",
         "text": "Sujet observé : Sujet #13 ({name})\nDurée d'observation : {play_time}\nRésumé du comportement de l'observateur :\n\n· Nombre de sélections du chemin Sea : {route_data}\n· Contact avec Yuna : {met_yuna}\n· Nombre de visites a Riin : {riin_visits}\n· Tentatives de dialogue avec Seolhwa : {seolhwa_attempts}\n· Preuves sécurisées : {evidence_data}\n· Temps ecoule avant la décision finale : {timer_data}"
     },
     "day5_observer_7": {
-        "name": "",
         "text": "*Le texte défile vers le bas.*"
     },
     "day5_observer_8": {
-        "name": "",
         "text": "Remarques :\n\nL'observateur a visionne les 5 jours du Sujet #13.\nL'observateur a hoisi les interlocuteurs du sujet.\nL'observateur a déterminé les objets d'attachement émotionnel du sujet.\nL'observateur a regardé le sujet ressentir la peur.\nL'observateur a décidé si le sujet s'échapperait ou non.\n\nQuestion :\nPark Eunsu a conçu et observé 13 cycles.\nVous avez observé la vie de {name} pendant {play_time}.\n\nQuelle est là difference ?"
     },
     "day5_observer_cupid_check": {
-        "name": "",
         "text": ""
     },
     "day5_observer_cupid_extra": {
-        "name": "",
         "text": "Enregistrement de référence croisée :\n\nJournal de participation CUPID_ENV_PREVIEW détecté.\nModèle d'empreinte émotionnelle : {cupid_heroine}\nTaux de réponse de conformité : {cupid_compliance}\nLe test de réponse environnementale pré-M-13 correspond au journal d'observation Nevergrad #13.\n\nNote :\nLes données de sélection de l'observateur restent liées au dossier du Sujet #13."
     },
     "day5_observer_9": {
-        "name": "",
         "text": "*L'écran se fige. 5 secondes.*"
     },
     "day5_observer_10": {
-        "name": "",
         "text": "*Puis, tout en bas, en tout petit :*"
     },
     "day5_observer_11": {
-        "name": "",
         "text": "[Souhaitez-vous obtenir votre diplôme ?]",
         "choices": [
             "Oui",

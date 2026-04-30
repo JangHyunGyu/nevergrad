@@ -1,10 +1,9 @@
 {
     "day1_after_start": {
-        "name": "",
         "text": ""
     },
     "day1_after_choice": {
-        "name": "나",
+        "speaker": "me",
         "text": "*방과 후. 어디로 갈까?*",
         "choices": [
             "세아가 학생회실로 오라고 했지",
@@ -15,239 +14,213 @@
         ]
     },
     "day1_after_sea_1": {
-        "name": "",
         "text": "*작은 방. 책상 두 개, 사물함, 창가에 놓인 화분. 깔끔하게 정리되어 있다.*"
     },
     "day1_after_sea_2": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "왔네. 여기가 학생회실이야."
     },
     "day1_after_sea_3": {
-        "name": "",
         "text": "*그녀가 캔 음료를 건넨다. 자연스럽고 편안한 모습.*"
     },
     "day1_after_sea_4": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "어때, 적응은 좀 했어?"
     },
     "day1_after_sea_5": {
-        "name": "나",
+        "speaker": "me",
         "text": "생각보다 괜찮아. 세아가 많이 챙겨줘서 그런가."
     },
     "day1_after_sea_6": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "...정말?"
     },
     "day1_after_sea_7": {
-        "name": "",
         "text": "*세아가 작게 숨을 내쉬며 웃는다.*"
     },
     "day1_after_sea_8": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "첫날은 늘 힘들지. 아는 사람도 없고."
     },
     "day1_after_sea_9": {
-        "name": "",
         "text": "*세아가 창밖을 본다. 노을빛이 쏟아져 들어온다.*"
     },
     "day1_after_sea_10": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "...와줘서 다행이다, {name}. 학생회실에 혼자 있으면 좀 외롭거든."
     },
     "day1_after_sea_11": {
-        "name": "나",
+        "speaker": "me",
         "text": "다른 학생회 멤버들은?"
     },
     "day1_after_sea_12": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "있긴 한데... 방과 후에 여기 오는 건 나뿐이야."
     },
     "day1_after_sea_13": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "...내일도 올 거지?"
     },
     "day1_after_sea_14": {
-        "name": "나",
+        "speaker": "me",
         "text": "응, 시간 되면."
     },
     "day1_after_sea_15": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "진짜 기다릴 거야, 알았지? 안 오면 교실로 쳐들어갈 거야."
     },
     "day1_after_sea_16": {
-        "name": "",
         "text": "*세아가 내 눈을 보며 확인한다. 거절할 수 없다.*"
     },
     "day1_after_yuna_1": {
-        "name": "",
         "text": "*유나가 창가 자리에 앉아 사진을 정리하고 있다.*"
     },
     "day1_after_yuna_2": {
-        "name": "유나",
+        "speaker": "yuna",
         "text": "다시 오셨네요!"
     },
     "day1_after_yuna_3": {
-        "name": "",
         "text": "*유나가 카메라를 넘겨 사진들을 보여준다. 학교 풍경, 벚꽃, 고양이들.*"
     },
     "day1_after_yuna_4": {
-        "name": "유나",
+        "speaker": "yuna",
         "text": "이 고양이는 치즈예요. 제가 이름 지어줬어요."
     },
     "day1_after_yuna_5": {
-        "name": "",
         "text": "*한동안 고양이 이야기를 나눴다. 유나는 계속 말하며 눈을 반짝였다.*"
     },
     "day1_after_yuna_6": {
-        "name": "유나",
+        "speaker": "yuna",
         "text": "...내일도 도서관에 오실 거죠?"
     },
     "day1_after_yuna_7": {
-        "name": "나",
+        "speaker": "me",
         "text": "응, 시간 되면."
     },
     "day1_after_yuna_8": {
-        "name": "유나",
+        "speaker": "yuna",
         "text": "...꼭 오세요."
     },
     "day1_after_yuna_9": {
-        "name": "",
         "text": "*'꼭'에 힘이 들어갔다. ...왜 그렇게 진지한 거지?*"
     },
     "day1_after_yuna_10": {
-        "name": "",
         "text": "*도서관을 나서자, 유나가 나를 따라 나온다.*"
     },
     "day1_after_yuna_11": {
-        "name": "최유나",
+        "speaker": "yuna_full",
         "text": "선배, 잠깐만요!"
     },
     "day1_after_yuna_12": {
-        "name": "",
         "text": "*유나가 폴라로이드 사진 한 장을 내민다. 아까 도서관 창밖 풍경.*"
     },
     "day1_after_yuna_13": {
-        "name": "최유나",
+        "speaker": "yuna_full",
         "text": "이건... 선배가 앉아 계셨던 자리예요. 빛이 너무 예뻐서 찍었어요. 여기, 기념으로 가지세요."
     },
     "day1_after_yuna_14": {
-        "name": "",
         "text": "*사진을 받았다. 책 위로 쏟아지는 햇살의 한순간. 나도 모르게 미소가 지어졌다.*"
     },
     "day1_after_riin_1": {
-        "name": "",
         "text": "*리인 선생님과 허브차를 마셨다. 편안한 시간.*"
     },
     "day1_after_riin_2": {
-        "name": "리인",
+        "speaker": "riin",
         "text": "전학 오면 환경이 통째로 바뀌잖아요. 잠을 잘 못 자거나 이상한 꿈을 꾸는 학생들이 많아요."
     },
     "day1_after_riin_3": {
-        "name": "나",
+        "speaker": "me",
         "text": "저는 아직 괜찮아요."
     },
     "day1_after_riin_4": {
-        "name": "리인",
+        "speaker": "riin",
         "text": "그래요? 다행이네요."
     },
     "day1_after_riin_5": {
-        "name": "",
         "text": "*리인 선생님이 잠시 멈칫하더니, 캐비닛을 연다.*"
     },
     "day1_after_riin_6": {
-        "name": "강리인",
+        "speaker": "riin_full",
         "text": "잠깐. 이거 가져가요."
     },
     "day1_after_riin_7": {
-        "name": "",
         "text": "*작은 봉투를 건넨다. 허브차 티백 몇 개.*"
     },
     "day1_after_riin_8": {
-        "name": "강리인",
+        "speaker": "riin_full",
         "text": "잠이 잘 안 오면 자기 전에 한 잔 타 마셔요. 캐모마일이에요."
     },
     "day1_after_riin_9": {
-        "name": "나",
+        "speaker": "me",
         "text": "감사합니다."
     },
     "day1_after_riin_10": {
-        "name": "",
         "text": "*리인 선생님이 스피커에서 잔잔한 피아노곡을 튼다. 보건실에 음악이 가득 찬다.*"
     },
     "day1_after_riin_11": {
-        "name": "강리인",
+        "speaker": "riin_full",
         "text": "다음에 이 시간에 또 들러요. 차 끓여줄게요. 보건실은 열어둘 테니."
     },
     "day1_after_riin_12": {
-        "name": "",
         "text": "*리인 선생님이 웃으며 문을 잡아준다. 복도를 걸으며 티백 봉투를 만지작거린다. 아직 따뜻하다.*"
     },
     "day1_after_eunsu_1": {
-        "name": "은수",
+        "speaker": "eunsu",
         "text": "{name}? 방과 후에 선생님 보러 왔어? 기특하네."
     },
     "day1_after_eunsu_2": {
-        "name": "",
         "text": "*그녀는 커피를 내리며 내게 이런저런 것들을 묻는다.*"
     },
     "day1_after_eunsu_3": {
-        "name": "은수",
+        "speaker": "eunsu",
         "text": "...{name}, 전 학교에서 무슨 일 있었니? 전학 서류가 좀 특이해서..."
     },
     "day1_after_eunsu_4": {
-        "name": "나",
+        "speaker": "me",
         "text": "특이하다고요? 그냥 부모님 이사 때문에..."
     },
     "day1_after_eunsu_5": {
-        "name": "은수",
+        "speaker": "eunsu",
         "text": "아, 아니다. 아무것도 아니야."
     },
     "day1_after_eunsu_6": {
-        "name": "",
         "text": "*선생님은 화제를 바꿨다.*"
     },
     "day1_after_eunsu_7": {
-        "name": "박은수",
+        "speaker": "eunsu_full",
         "text": "아 맞다, {name}, 교과서는 다 받았니?"
     },
     "day1_after_eunsu_8": {
-        "name": "나",
+        "speaker": "me",
         "text": "네, 세아가 다 챙겨줬어요."
     },
     "day1_after_eunsu_9": {
-        "name": "박은수",
+        "speaker": "eunsu_full",
         "text": "세아가 잘 챙겨줬나 보네. ...{name}, 혹시라도 어려운 일 있으면 선생님한테 와. 내가 네 담임 선생님이잖아."
     },
     "day1_after_eunsu_10": {
-        "name": "",
         "text": "*은수 선생님이 웃으며 내 등을 토닥인다. 예전 담임 선생님은 내 이름조차 잘 부르지 않았는데.*"
     },
     "day1_after_home_1": {
-        "name": "",
         "text": "*교문을 나서며 뒤를 돌아본다.*"
     },
     "day1_after_home_2": {
-        "name": "나",
+        "speaker": "me",
         "text": "*첫날치고는 나쁘지 않았어.*"
     },
     "day1_after_home_3": {
-        "name": "",
         "text": "*...누군가 3층 창문에서 나를 내려다보고 있다.*"
     },
     "day1_after_home_4": {
-        "name": "",
         "text": "*역광이라 얼굴은 보이지 않는다. 그저 실루엣. ...맨 뒷줄 창가 자리 근처. 설화의 자리와 가깝다.*"
     },
     "day1_after_home_5": {
-        "name": "",
         "text": "*손을 흔들었다. 아무런 반응이 없다.*"
     },
     "day1_after_home_6": {
-        "name": "",
         "text": "*몸을 돌려 걷는다. 이제 집으로 갈 시간.*"
     },
     "day1_after_end": {
-        "name": "",
         "text": ""
     }
 }

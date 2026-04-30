@@ -8,35 +8,6 @@ const ROOT = path.resolve(__dirname, '..');
 const KO_DIR = path.join(ROOT, 'assets', 'js', 'i18n', 'ko');
 const PT_DIR = path.join(ROOT, 'assets', 'js', 'i18n', 'pt');
 
-const NAME_MAP = {
-  '나': 'Eu',
-  '세아': 'Sea',
-  '한세아': 'Han Sea',
-  '은수': 'Eunsu',
-  '박은수': 'Park Eunsu',
-  '리인': 'Riin',
-  '강리인': 'Kang Riin',
-  '유나': 'Yuna',
-  '최유나': 'Choi Yuna',
-  '설화': 'Seolhwa',
-  '이설화': 'Lee Seolhwa',
-  '선생님': 'Professora',
-  '담임교사': 'Professora titular',
-  '옆자리 학생': 'Aluno do lado',
-  '옆자리 남학생': 'Garoto do assento ao lado',
-  '여학생A': 'Garota A',
-  '여학생B': 'Garota B',
-  '여학생': 'Garota',
-  '남학생B': 'Garoto B',
-  '남학생': 'Garoto',
-  '급우A': 'Colega A',
-  '급우B': 'Colega B',
-  '민수': 'Minsu',
-  '[교내 방송]': 'Transmissao da escola',
-  '???': '???',
-  '': '',
-};
-
 const OVERRIDES = {
   'day1_morning.json': {
     day1_opening_5: {
@@ -618,10 +589,13 @@ for (const file of fs.readdirSync(KO_DIR).filter((name) => name.endsWith('.json'
 
   for (const [key, koEntry] of Object.entries(ko)) {
     const existing = pt[key] && typeof pt[key] === 'object' ? { ...pt[key] } : {};
-    const entry = {
-      name: NAME_MAP[koEntry.name] ?? existing.name ?? koEntry.name ?? '',
-      text: existing.text ?? koEntry.text ?? '',
-    };
+    const entry = {};
+    if (Object.prototype.hasOwnProperty.call(koEntry, 'speaker')) {
+      entry.speaker = koEntry.speaker;
+    } else if (Object.prototype.hasOwnProperty.call(existing, 'speaker')) {
+      entry.speaker = existing.speaker;
+    }
+    entry.text = existing.text ?? koEntry.text ?? '';
     if (Array.isArray(koEntry.choices)) entry.choices = existing.choices ?? koEntry.choices;
 
     result[key] = normalizeEntry(mergeEntry(entry, fileOverrides[key]));

@@ -1,38 +1,38 @@
 {
     "day3_lunch_start": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*昼休み。机の引き出しを開けたら、メモが入っていた。*"
     },
     "day3_lunch_note_yuna": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*「先輩、お昼に屋上に来てください。必ず一人で。大事なことがあるんです。――ユナ」*"
     },
     "day3_lunch_note_yuna_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……ユナからだ。図書室で会った写真部の後輩。大事なことがあるって……何だろう。*"
     },
     "day3_lunch_note_yuna_brief": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*「先輩、お昼に屋上へ来てください。大事なことがあります。- ユナ」*"
     },
     "day3_lunch_note_yuna_brief_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*グラウンドで少し挨拶した写真部の後輩だ。どうして急にこんなメモを送ってきたんだろう。*"
     },
     "day3_lunch_note_unknown": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*「先輩、お昼に屋上に来てください。必ず一人で。大事なことがあるんです。――ユナ」*"
     },
     "day3_lunch_note_unknown_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……ユナ？知らない名前だ。同じクラスにユナはいるか？いや、クラスメイトの名前はだいたい覚えたけど、ユナはいなかった。*"
     },
     "day3_lunch_note_unknown_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*いたずらか。それとも別のクラスの人が間違えて入れたのか。*\n\n*メモをポケットにしまった。気にはなるけど、知らない人に一人で来いと言われても……無視しよう。*"
     },
     "day3_lunch_choice_no_yuna": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……どうしよう？*",
         "choices": [
             "セアと昼食を食べる",
@@ -41,7 +41,7 @@
         ]
     },
     "day3_lunch_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……どうしよう？*",
         "choices": [
             "屋上へ行く",
@@ -51,139 +51,139 @@
         ]
     },
     "day3_lunch_rooftop_1": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「……来てくれたんですね。」"
     },
     "day3_lunch_rooftop_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナが何も言わずにカメラを差し出した。*"
     },
     "day3_lunch_rooftop_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*手が震えている。ユナの手が。カメラを握る指の関節が白い。*"
     },
     "day3_lunch_rooftop_4": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「……めくってみてください。」"
     },
     "day3_lunch_rooftop_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*カメラを受け取った。画面に写真が映っている。*"
     },
     "day3_lunch_rooftop_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*校門の前に立つ生徒。短い黒髪。パリッとした制服。名札：「キム・ドジン」。*"
     },
     "day3_lunch_rooftop_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*めくった。*"
     },
     "day3_lunch_rooftop_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*同じ校門。違う生徒。茶色い髪。名札：「パク・ソジン」。*"
     },
     "day3_lunch_rooftop_9": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*めくった。*"
     },
     "day3_lunch_rooftop_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*長い髪の男子生徒。やつれた顔。名札：「キム・テホ」。*"
     },
     "day3_lunch_rooftop_11": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*めくった。めくった。めくった。めくった。*"
     },
     "day3_lunch_rooftop_12": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……最後の写真。校門の前。昨日の朝。*"
     },
     "day3_lunch_rooftop_13": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*僕の写真だ。*"
     },
     "day3_lunch_rooftop_14": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……*"
     },
     "day3_lunch_rooftop_15": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*カメラを下ろせなかった。最初からもう一度めくった。ゆっくり。一枚ずつ。*"
     },
     "day3_lunch_rooftop_16": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*違う髪色。違う名札。*"
     },
     "day3_lunch_rooftop_17": {
-        "name": "僕",
+        "speaker": "me",
         "text": "***同じ目。同じ鼻。同じ口。***"
     },
     "day3_lunch_rooftop_18": {
-        "name": "僕",
+        "speaker": "me",
         "text": "***13枚。13人。一人の人間。***"
     },
     "day3_lunch_rooftop_19": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナが何も言わない。僕を見ているだけだ。目が赤い。*"
     },
     "day3_lunch_rooftop_20": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*カメラを持つ手が震える。――僕の手が。*"
     },
     "day3_lunch_rooftop_21": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナを見た。ユナが唇を噛んでいる。3年間一人で抱えていた。この写真を。*"
     },
     "day3_lunch_rooftop_22": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……どんな質問をすればいいのか分からない。質問の形が頭の中でまとまらない。*"
     },
     "day3_lunch_rooftop_23": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナがようやく口を開いた。小さな声。*"
     },
     "day3_lunch_rooftop_24": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「……毎回消えるんです。長くて一週間。」"
     },
     "day3_lunch_rooftop_25": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*それだけだ。その一言だけだ。*"
     },
     "day3_lunch_rooftop_26": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……13番目。*"
     },
     "day3_lunch_rooftop_27": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ネクタイを引っ張った。息を吸い込むのに空気が喉で引っかかる。*"
     },
     "day3_lunch_rooftop_28": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*カメラをユナに返そうとしたが――ユナが首を横に振った。*"
     },
     "day3_lunch_rooftop_29": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「……持っていてください。」"
     },
     "day3_lunch_rooftop_30": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナの目から涙が一筋流れた。拭かなかった。*"
     },
     "day3_lunch_door_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……！ 突然、屋上の扉が「バン」という音とともに閉まった。*"
     },
     "day3_lunch_door_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*扉を押してみる。開かない。外から鍵がかかっている。*"
     },
     "day3_lunch_door_3": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「……！ 先輩、バレました……」"
     },
     "day3_lunch_door_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*どうする？*",
         "choices": [
             "扉を強く叩いて叫ぶ",
@@ -191,43 +191,43 @@
         ]
     },
     "day3_lunch_door_bang": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*扉を強く叩いた。5分後、扉が開く。誰もいない。鍵もない。……誰が閉めたのか痕跡がない。*"
     },
     "day3_lunch_door_wait": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナの肩を押さえて落ち着かせた。5分後、扉が開く。誰もいない。鍵もない。……誰が閉めたのか痕跡がない。*"
     },
     "day3_lunch_door_open": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*階段を下りる。ユナが後ろからついてくる。二人とも無言だ。*"
     },
     "day3_lunch_door_open_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……さっきユナが見せた写真が頭から消えない。13枚の同じ顔。僕の顔。*"
     },
     "day3_lunch_door_open_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ありえない。論理的にありえない。*"
     },
     "day3_lunch_door_open_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*「ありえないだろ……僕は前の学校で……ミンスと……」*"
     },
     "day3_lunch_door_open_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*自分の口から出た自分の記憶なのに、まるで他人の台本を読んでいるように唇がうわすべりする。*"
     },
     "day3_lunch_door_open_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*壁に手をついた。口の中に唾が溜まる――何か込み上げてくる。飲み込んだ。腰を曲げて壁に額を押し当てた。タイルが冷たい。*"
     },
     "day3_lunch_nametag_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……視線が胸元の名札に落ちる。僕の名前。毎朝つけていた三文字。*"
     },
     "day3_lunch_nametag_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*――突然、他人の言葉のように馴染みがない。指で触れてみた。プラスチックの感触だけが返ってくる。*",
         "choices": [
             "名札にもう一度触れる",
@@ -236,51 +236,51 @@
         ]
     },
     "day3_lunch_door_open_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*でも否定もできない。写真があるから。*"
     },
     "day3_lunch_door_open_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*廊下を歩きながらすれ違う生徒たちを見る。この中の誰が知っているんだ？誰が知らないんだ？誰が僕を「ああ、また来たんだ」と思っているんだ？*"
     },
     "day3_lunch_door_open_9": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「先輩、写真……誰にも見せないでください。特に先生たちには。」"
     },
     "day3_lunch_door_open_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……わかった。」"
     },
     "day3_lunch_door_open_11": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナが1階で別れる。振り返る前に一度僕を見る。あの目が……「ごめんなさい」と「お願いします」を同時に言っている。*"
     },
     "day3_lunch_door_open_12": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*一人残された。廊下が長い。*"
     },
     "day3_lunch_sea_1": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「今日は私と食べるよね？」"
     },
     "day3_lunch_sea_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが笑っている。……でもこの笑顔は昨日と違う。昨日の笑顔が「嬉しい」なら、今日の笑顔は「確認する」に近い。*"
     },
     "day3_lunch_sea_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアの向かいに座った。セアが僕のトレーを見る。*"
     },
     "day3_lunch_sea_4": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「今日のメニューいいね。{name}、サバ好きじゃん。」"
     },
     "day3_lunch_sea_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……サバが好きだなんて言った覚えがない。好きだけど。*"
     },
     "day3_lunch_sea_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「それ、どうして知ってるの？」",
         "choices": [
             "直接聞く",
@@ -289,95 +289,95 @@
         ]
     },
     "day3_lunch_sea_7": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「昨日おかずを選ぶとき見たよ。魚を先に取ってたでしょ。」"
     },
     "day3_lunch_sea_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……そうだったっけ？覚えてないんだけど。セアが僕の表情を読む。正確に。*"
     },
     "day3_lunch_sea_9": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……{name}、最近一人で歩き回ってない？」"
     },
     "day3_lunch_sea_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「そう？別にそんなことないけど。」"
     },
     "day3_lunch_sea_11": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……気のせいかな。」"
     },
     "day3_lunch_sea_12": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが箸でおかずをつまみかけて止まる。視線がトレーに固定されている。長い沈黙。*"
     },
     "day3_lunch_sea_13": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*周りはうるさいのに、このテーブルだけ静かだ。空気が重い。*"
     },
     "day3_lunch_sea_14": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……私に何か言ってないことあるよね。」"
     },
     "day3_lunch_sea_15": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*目が笑っていない。声も低い。これがいつものセアなのか？それともこれが本当のセアなのか？一瞬セアと目が合った。そこにあるのは悲しみでも怒りでもない。**恐怖**だ。僕が離れていくのが怖いんだ。*"
     },
     "day3_lunch_sea_16": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……冗談。食べて。」"
     },
     "day3_lunch_sea_17": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが笑う。今度は完璧な笑顔だ。口角の角度、目尻のしわ、頬骨の位置まで――一分の隙もない。人間が笑っているのに、まるで何かを「再生」しているみたいだ。*"
     },
     "day3_lunch_riin_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*保健室のドアを開けた。消毒液の匂いが鼻を刺す。リイン先生がキャビネットの前に立っている。ドアが開くと振り返る。*"
     },
     "day3_lunch_riin_first": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「どうしたの、{name}。顔色悪いよ。」"
     },
     "day3_lunch_riin_first_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……保健室は初めてなのに、先生はすぐに僕の名前を呼んだ。出席簿で見たのか。*"
     },
     "day3_lunch_riin_2": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「どうしたの、{name}。顔色悪いよ。」"
     },
     "day3_lunch_riin_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「ちょっとめまいがして。」"
     },
     "day3_lunch_riin_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生がベッドを指す。座った。リイン先生がおでこに手を当てる。ひんやりした手。*"
     },
     "day3_lunch_riin_5": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「熱はないけど……顔色が良くないね。」"
     },
     "day3_lunch_riin_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が振り返ってキャビネットから何かを取り出す。背中が見える。肩が一瞬止まる。何かを決めるような短い間。*"
     },
     "day3_lunch_riin_7": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "電解質飲料がある。めまいがするなら一口だけ飲んで。"
     },
     "day3_lunch_riin_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*振り返ったリイン先生の手に淡い紫色の液体が入った透明なコップ。微かに薬品のような匂い。そして――コップを差し出す手が震えている。微かな震え。見なければ気づかないほど。でも確かに震えている。*"
     },
     "day3_lunch_riin_9": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "ビタミンと電解質を混ぜたもの。味はあまりよくないかもしれない。"
     },
     "day3_lunch_riin_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が笑っている。穏やかな微笑み。でも目が……何かを堪えている。*",
         "choices": [
             "飲む",
@@ -385,59 +385,59 @@
         ]
     },
     "day3_lunch_riin_drink_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*一口飲んだ。……苦味が舌の裏に残る。口の中が少し乾く。*"
     },
     "day3_lunch_riin_drink_2": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……全部飲まなくていいよ。味がちょっとアレだよね？」"
     },
     "day3_lunch_riin_drink_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生がコップを引き取る。振り返る瞬間。唇を強く噛んでいる。*"
     },
     "day3_lunch_riin_refuse_1": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……そう？いいよ。」"
     },
     "day3_lunch_riin_refuse_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生がコップを引き取る。シンクに中身を流す。背中が見える。肩から力が抜ける。……安堵？*"
     },
     "day3_lunch_alone_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*教室に残って一人で食べる。窓の外にグラウンドが見える。みんなサッカーをしている。*"
     },
     "day3_lunch_alone_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……静かだ。静かすぎる。教室に僕一人。*"
     },
     "day3_lunch_alone_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*後ろの席を見る。ソルファの席。今日も空いている。三日連続で出席していない。でも誰もおかしいと思っていないようだ。担任も出席を取るときソルファの名前を飛ばす。*"
     },
     "day3_lunch_alone_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ソルファの机の上に何かがある。鉛筆で書かれた文字。とても細く。**「ここから逃げろ」***"
     },
     "day3_lunch_alone_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*箸が手から落ちた。弁当の蓋の上を転がり、床に落ちる音が教室全体に響いたような気がした。*"
     },
     "day3_lunch_alone_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*机の上を手で触ってみる。深く彫られている。一度書いたものじゃない。何度も。同じ文字を繰り返し書いた跡。*"
     },
     "day3_lunch_alone_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……筆跡がロッカーのそれと同じだ。僕の字だ。*"
     },
     "day3_lunch_alone_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*食欲がない。弁当を閉じた。*"
     },
     "day3_lunch_end": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*教室に戻ってきた。心臓が止まらない。*"
     }
 }

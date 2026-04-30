@@ -163,8 +163,15 @@ function textOf(sceneId) {
   return String(ko[sceneId]?.text || '').replace(/\s+/g, ' ').trim();
 }
 
-function speakerExpected(name) {
-  const speaker = String(name || '').trim();
+function speakerExpected(entry) {
+  const speakerId = String(entry?.speaker || '').trim();
+  if (/^eunsu(_full)?$/.test(speakerId)) return 'eunsu';
+  if (/^riin(_full)?$/.test(speakerId)) return 'riin';
+  if (/^sea(_full)?$/.test(speakerId)) return 'sea';
+  if (/^yuna(_full)?$/.test(speakerId)) return 'yuna';
+  if (/^seolhwa(_full)?$/.test(speakerId)) return 'seolhwa';
+
+  const speaker = String(entry?.name || '').trim();
   if (/^(박은수|은수|담임교사)$/.test(speaker)) return 'eunsu';
   if (/^(강리인|리인|보건교사)$/.test(speaker)) return 'riin';
   if (/^한세아$/.test(speaker)) return 'sea';
@@ -174,7 +181,7 @@ function speakerExpected(name) {
 }
 
 function isLikelyOffscreen(sceneId, scene, text, speaker) {
-  if (/^\[.*방송.*\]$/.test(speaker)) return true;
+  if (speaker === 'school_broadcast' || /^\[.*방송.*\]$/.test(speaker)) return true;
   if (scene.character && /_pa$/.test(scene.character)) return true;
   if (/방송|스피커|전화|휴대폰|문자|메시지|채팅|노크|문 너머|문밖|멀리서|어디선가|목소리만|소리만|등 뒤|뒤에서|귓가|이어폰/.test(text)) {
     return true;
@@ -265,14 +272,15 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
   const text = textOf(sceneId);
 
   if (entry && states.length) {
-    const expected = speakerExpected(entry.name);
-    if (expected && !isLikelyOffscreen(sceneId, scene, text, entry.name)) {
+    const speaker = entry.speaker || entry.name || '';
+    const expected = speakerExpected(entry);
+    if (expected && !isLikelyOffscreen(sceneId, scene, text, speaker)) {
       const okAny = states.some((state) => visiblePrefixes(state).has(expected));
       if (!okAny) {
         speakerMismatches.push({
           sceneId,
           file: sceneFile.get(sceneId),
-          speaker: entry.name,
+          speaker,
           expected,
           display: sampleStates(sceneId),
           text: text.slice(0, 140),

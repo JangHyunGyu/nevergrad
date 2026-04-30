@@ -1,10 +1,9 @@
 {
     "day1_lunch_start": {
-        "name": "",
         "text": "*4교시가 끝나고 점심 종이 울렸다. 학생들이 일제히 일어선다.*"
     },
     "day1_lunch_choice": {
-        "name": "나",
+        "speaker": "me",
         "text": "*점심시간. 어디로 갈까?*",
         "choices": [
             "세아가 같이 먹자고 했으니 교실에 남는다",
@@ -14,279 +13,246 @@
         ]
     },
     "day1_lunch_sea_1": {
-        "name": "",
         "text": "*세아가 책상 두 개를 붙이고 가방에서 도시락을 꺼낸다.*"
     },
     "day1_lunch_sea_2": {
-        "name": "",
         "text": "*...2단 도시락이다. 혼자 먹을 양은 아니다.*"
     },
     "day1_lunch_sea_3": {
-        "name": "나",
+        "speaker": "me",
         "text": "...이거 다 네 거야?"
     },
     "day1_lunch_sea_4": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "어때? 팔아도 될 정도 아니야?"
     },
     "day1_lunch_sea_5": {
-        "name": "",
         "text": "*뚜껑을 연다. 계란말이, 비엔나소시지, 주먹밥, 브로콜리, 방울토마토. 색깔별로 예쁘게 놓여 있다.*"
     },
     "day1_lunch_sea_6": {
-        "name": "나",
+        "speaker": "me",
         "text": "...잠깐, 이거 다 네가 직접 만든 거야?"
     },
     "day1_lunch_sea_7": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "먹어봐. 왠지 너는 사 먹는 빵보다 이런 게 더 잘 맞을 것 같아서."
     },
     "day1_lunch_sea_8": {
-        "name": "",
         "text": "*세아가 젓가락으로 계란말이 한 조각을 집어 내민다.*"
     },
     "day1_lunch_sea_9": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "자, 계란말이부터 먹어봐. 달콤하게 만들었어."
     },
     "day1_lunch_sea_10": {
-        "name": "",
         "text": "*...맛있다. 정말 맛있다.*"
     },
     "day1_lunch_sea_11": {
-        "name": "나",
+        "speaker": "me",
         "text": "이게 사 먹는 것보다 낫다고?"
     },
     "day1_lunch_sea_12": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "정말?"
     },
     "day1_lunch_sea_13": {
-        "name": "",
         "text": "*세아가 진심으로 기뻐하는 표정을 짓는다.*"
     },
     "day1_lunch_sea_14": {
-        "name": "",
         "text": "*그 후로 한참 동안 이야기를 나눴다.*"
     },
     "day1_lunch_sea_15": {
-        "name": "나",
+        "speaker": "me",
         "text": "세아는 항상 이렇게 도시락 싸 오는 거야?"
     },
     "day1_lunch_sea_16": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "응. 급식도 괜찮지만, 집밥이 더 맛있잖아."
     },
     "day1_lunch_sea_17": {
-        "name": "나",
+        "speaker": "me",
         "text": "혼자 먹기엔 좀 많은 것 같은데."
     },
     "day1_lunch_sea_18": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "..."
     },
     "day1_lunch_sea_19": {
-        "name": "",
         "text": "*세아가 잠시 멈칫하더니 웃는다.*"
     },
     "day1_lunch_sea_20": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "내가 좀 많이 만드는 편이라서. 네가 많이 먹어줘서 다행이다."
     },
     "day1_lunch_sea_21": {
-        "name": "",
         "text": "*도시락은 거의 비어 있다. 시간이 좀 남았다.*"
     },
     "day1_lunch_sea_22": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "아, 맞다. 이거 한번 들어봐."
     },
     "day1_lunch_sea_23": {
-        "name": "",
         "text": "*세아가 이어폰 한쪽을 내게 건넨다. 잔잔한 기타 연주곡.*"
     },
     "day1_lunch_sea_24": {
-        "name": "나",
+        "speaker": "me",
         "text": "어, 이건 뭐야?"
     },
     "day1_lunch_sea_25": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "요즘 자주 듣는 곡이야. 가사가 좋더라."
     },
     "day1_lunch_sea_26": {
-        "name": "",
         "text": "*조용히 듣는다. 나쁘지 않다.*"
     },
     "day1_lunch_sea_27": {
-        "name": "나",
+        "speaker": "me",
         "text": "좋다. 음악 취향 좋네."
     },
     "day1_lunch_sea_28": {
-        "name": "한세아",
+        "speaker": "sea_full",
         "text": "하하, 당연하다는 듯이 말하네."
     },
     "day1_lunch_sea_29": {
-        "name": "",
         "text": "*음악 이야기, 유튜브 이야기, 그러다 보니 시간이 금방 흘렀다. 편안했다. 첫날인데도.*"
     },
     "day1_lunch_yuna_1": {
-        "name": "",
         "text": "*도서관에 들어섰다. 점심시간이라 그런지 한산하다.*"
     },
     "day1_lunch_yuna_2": {
-        "name": "",
         "text": "*구석 자리에 앉으려던 참에 '찰칵' 소리가 들렸다.*"
     },
     "day1_lunch_yuna_3": {
-        "name": "",
         "text": "*카메라를 든 여학생이 놀란 표정으로 굳어 있다. 작은 체구에 커다란 카메라.*"
     },
     "day1_lunch_yuna_4": {
-        "name": "나",
+        "speaker": "me",
         "text": "...방금 나 찍은 거야?"
     },
     "day1_lunch_yuna_5": {
-        "name": "유나",
+        "speaker": "yuna",
         "text": "아, 아뇨...! 저 사진 동아리인데, 도서관 분위기 찍고 있었는데 갑자기 들어오셔서..."
     },
     "day1_lunch_yuna_6": {
-        "name": "유나",
+        "speaker": "yuna",
         "text": "아... 죄송해요. 바로 지울게요."
     },
     "day1_lunch_yuna_7": {
-        "name": "나",
+        "speaker": "me",
         "text": "아니, 괜찮아. 사진 동아리구나."
     },
     "day1_lunch_yuna_8": {
-        "name": "유나",
+        "speaker": "yuna",
         "text": "네...! 1학년 최유나예요. 전학생이시죠?"
     },
     "day1_lunch_yuna_9": {
-        "name": "나",
+        "speaker": "me",
         "text": "응. 나는 {name}이야. 잘 부탁해."
     },
     "day1_lunch_yuna_10": {
-        "name": "",
         "text": "*유나가 카메라를 가슴에 안고 고개를 숙인다.*"
     },
     "day1_lunch_yuna_11": {
-        "name": "유나",
+        "speaker": "yuna",
         "text": "도서관 자주 오세요? 저는 매일 와요."
     },
     "day1_lunch_yuna_12": {
-        "name": "",
         "text": "*유나가 찍은 사진들을 보여준다. 학교 풍경, 벚꽃, 체육관 옆 고양이.*"
     },
     "day1_lunch_yuna_13": {
-        "name": "",
         "text": "*넘겨보다 보니 같은 벚나무를 시간대별로 찍은 사진들이 이어진다. 아침, 점심, 노을, 밤.*"
     },
     "day1_lunch_yuna_14": {
-        "name": "나",
+        "speaker": "me",
         "text": "...같은 나무를 네 번이나 찍은 거야?"
     },
     "day1_lunch_yuna_15": {
-        "name": "유나",
+        "speaker": "yuna",
         "text": "빛에 따라 색이 변하는 게 좋아서요. 한 달 동안 찍었어요."
     },
     "day1_lunch_yuna_16": {
-        "name": "",
         "text": "*완전 사진 덕후다. 이 정도면 프로라고 해도 될 정도.*"
     },
     "day1_lunch_riin_1": {
-        "name": "",
         "text": "*보건실 문을 열었다. 희미한 소독약 냄새.*"
     },
     "day1_lunch_riin_2": {
-        "name": "",
         "text": "*짧은 흑자색 단발머리, 하얀 가운, 얇은테 안경. 의자에 기대어 무언가를 읽고 있다.*"
     },
     "day1_lunch_riin_3": {
-        "name": "리인",
+        "speaker": "riin",
         "text": "어라, 첫날부터 보건실? 어디 아파?"
     },
     "day1_lunch_riin_4": {
-        "name": "나",
+        "speaker": "me",
         "text": "머리가 좀 아파서요."
     },
     "day1_lunch_riin_5": {
-        "name": "리인",
+        "speaker": "riin",
         "text": "그래? 앉아봐."
     },
     "day1_lunch_riin_6": {
-        "name": "",
         "text": "*리인 선생님이 내 이마를 짚는다. 손이 시원하다.*"
     },
     "day1_lunch_riin_7": {
-        "name": "리인",
+        "speaker": "riin",
         "text": "열은 없네. 긴장성 두통이야. 첫날엔 흔한 일이지."
     },
     "day1_lunch_riin_8": {
-        "name": "",
         "text": "*서랍을 열어 약을 꺼내며 웃는다.*"
     },
     "day1_lunch_riin_9": {
-        "name": "리인",
+        "speaker": "riin",
         "text": "밥은 먹었어? 빈속에 약 먹으면 안 돼."
     },
     "day1_lunch_riin_10": {
-        "name": "",
         "text": "*에너지바를 건넨다.*"
     },
     "day1_lunch_riin_11": {
-        "name": "리인",
+        "speaker": "riin",
         "text": "졸리면 여기서 좀 쉬어도 돼."
     },
     "day1_lunch_riin_12": {
-        "name": "",
         "text": "*보건실은 아늑하다.*"
     },
     "day1_lunch_riin_13": {
-        "name": "",
         "text": "*...잠시 눈을 감았다. 약 때문인지 뭔지 잠이 쏟아진다...*"
     },
     "day1_lunch_riin_14": {
-        "name": "",
         "text": "*...눈을 떴다. 어느새 담요가 덮여 있다. 창문으로 따뜻한 햇살이 쏟아진다.*"
     },
     "day1_lunch_riin_15": {
-        "name": "강리인",
+        "speaker": "riin_full",
         "text": "일어났네. 15분 정도 잤어."
     },
     "day1_lunch_riin_16": {
-        "name": "나",
+        "speaker": "me",
         "text": "아... 죄송해요, 그냥..."
     },
     "day1_lunch_riin_17": {
-        "name": "강리인",
+        "speaker": "riin_full",
         "text": "미안해할 거 없어. 보건실은 원래 그런 곳이니까. 머리는 좀 괜찮아?"
     },
     "day1_lunch_riin_18": {
-        "name": "나",
+        "speaker": "me",
         "text": "네, 훨씬 나아요. 보건실이 따뜻해서 좋았어요."
     },
     "day1_lunch_alone_1": {
-        "name": "",
         "text": "*계단을 올라 옥상 문을 열었다. 바람이 정면으로 불어온다.*"
     },
     "day1_lunch_alone_2": {
-        "name": "",
         "text": "*운동장을 내려다보며 주먹밥을 먹는다.*"
     },
     "day1_lunch_alone_3": {
-        "name": "",
         "text": "*...어? 운동장 구석에 누군가 카메라를 이쪽으로 향하고 있는 것 같다...*"
     },
     "day1_lunch_alone_4": {
-        "name": "",
         "text": "*아니, 너무 멀다. 착각이겠지.*"
     },
     "day1_lunch_alone_5": {
-        "name": "",
         "text": "*...난간 아래에 긁힌 자국이 있다. 오래된 흔적. 글씨 같기도 한데... 읽을 수가 없다.*"
     },
     "day1_lunch_end": {
-        "name": "",
         "text": "*점심시간이 끝났다. 오후 수업 시간이다.*"
     }
 }

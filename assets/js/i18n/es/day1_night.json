@@ -1,115 +1,112 @@
 {
-  "day1_night_start": {
-    "name": "Yo",
-    "text": "*Estoy en casa. Cocino unos fideos instantáneos y pienso en el día.*"
-  },
-  "day1_night_home_2": {
-    "name": "Yo",
-    "text": "*Los rostros de la gente que conocí hoy vuelven a mí uno por uno.*"
-  },
-  "day1_night_home_3": {
-    "name": "Yo",
-    "text": "*Todas eran buenas personas.*"
-  },
-  "day1_night_phone_1": {
-    "name": "Yo",
-    "text": "*Reviso mi celular.*"
-  },
-  "day1_night_phone_2": {
-    "name": "Yo",
-    "text": "*El chat grupal de mi antigua escuela. El mensaje que envié esta mañana: 'Me transferí, cuídense todos~'*"
-  },
-  "day1_night_phone_3": {
-    "name": "Yo",
-    "text": "*...Nadie lo ha leído. Leído por 0.*"
-  },
-  "day1_night_phone_4": {
-    "name": "Yo",
-    "text": "*También le envié un mensaje personal a mi amigo cercano Minsu. '¡Hola Minsu, me transferí! Esta escuela es enorme' -- aún sin respuesta.*"
-  },
-  "day1_night_phone_5": {
-    "name": "Yo",
-    "text": "*...Bueno, me responderá mañana.*"
-  },
-  "day1_night_phone_6": {
-    "name": "Yo",
-    "text": "*En cambio, tengo mensajes de Sea.*"
-  },
-  "day1_night_sea_1": {
-    "name": "Han Sea",
-    "text": "¡Hoy fue divertido!"
-  },
-  "day1_night_sea_2": {
-    "name": "Han Sea",
-    "text": "¿Qué quieres en tu lonchera mañana?"
-  },
-  "day1_night_sea_3": {
-    "name": "Han Sea",
-    "text": "Acepto pedidos jajaja"
-  },
-  "day1_night_sea_4": {
-    "name": "",
-    "text": ""
-  },
-  "day1_night_sea_reply": {
-    "name": "Yo",
-    "text": "*¿Qué debería responder?*",
-    "choices": [
-      "'Mmm~ ¿qué tal un katsu de pollo?'",
-      "'Comeré cualquier cosa jajaja'",
-      "(No responder)"
-    ]
-  },
-  "day1_night_sea_reply_1": {
-    "name": "Han Sea",
-    "text": "¡Oh, qué bien! Espéralo con ansias mañana <3"
-  },
-  "day1_night_sea_reply_2": {
-    "name": "Han Sea",
-    "text": "Jajaja, está bien~ ¡no te sorprendas mañana!"
-  },
-  "day1_night_sea_reply_3": {
-    "name": "",
-    "text": ""
-  },
-  "day1_night_sleep_1": {
-    "name": "Yo",
-    "text": "*Me acuesto en la cama y miro el techo.*"
-  },
-  "day1_night_sleep_2": {
-    "name": "Yo",
-    "text": "*...Creo que puedo acostumbrarme a esto. A esta escuela.*"
-  },
-  "day1_night_sleep_3": {
-    "name": "Yo",
-    "text": "*Cierro los ojos. El cansancio me vence.*"
-  },
-  "day1_night_sleep_4": {
-    "name": "Yo",
-    "text": "*...Justo antes de dormirme, una extraña sensación me invade. Esa mancha en el techo parece una forma familiar.*"
-  },
-  "day1_night_sleep_5": {
-    "name": "Yo",
-    "text": "*...Todos los techos de los apartamentos probablemente se ven iguales. Cerré los ojos.*"
-  },
-  "day1_night_key_1": {
-    "name": "Yo",
-    "text": "*...A medio dormir, escuché algo en la puerta principal. Un sonido débil. Como una llave girando en la cerradura.*"
-  },
-  "day1_night_key_2": {
-    "name": "Yo",
-    "text": "*...¿Fue un sueño? Abrí los ojos a medias. Oscuridad. No podía ver nada. La puerta seguía cerrada.*"
-  },
-  "day1_night_key_3": {
-    "name": "Yo",
-    "text": "*Revisé el reloj. 2:14 AM. ...Vivo por mi cuenta, así que no hay forma de que oyera una llave. Deben haber sido los vecinos.*"
-  },
-  "day1_night_key_4": {
-    "name": "Yo",
-    "text": "*Cerré los ojos de nuevo.*"
-  },
-  "day1_night_end": {
-    "name": "",
-    "text": "*-- Fin del Día 1 --*"
-  }
+    "day1_night_start": {
+        "speaker": "me",
+        "text": "*Estoy en casa. Cocino unos fideos instantáneos y pienso en el día.*"
+    },
+    "day1_night_home_2": {
+        "speaker": "me",
+        "text": "*Los rostros de la gente que conocí hoy vuelven a mí uno por uno.*"
+    },
+    "day1_night_home_3": {
+        "speaker": "me",
+        "text": "*Todas eran buenas personas.*"
+    },
+    "day1_night_phone_1": {
+        "speaker": "me",
+        "text": "*Reviso mi celular.*"
+    },
+    "day1_night_phone_2": {
+        "speaker": "me",
+        "text": "*El chat grupal de mi antigua escuela. El mensaje que envié esta mañana: 'Me transferí, cuídense todos~'*"
+    },
+    "day1_night_phone_3": {
+        "speaker": "me",
+        "text": "*...Nadie lo ha leído. Leído por 0.*"
+    },
+    "day1_night_phone_4": {
+        "speaker": "me",
+        "text": "*También le envié un mensaje personal a mi amigo cercano Minsu. '¡Hola Minsu, me transferí! Esta escuela es enorme' -- aún sin respuesta.*"
+    },
+    "day1_night_phone_5": {
+        "speaker": "me",
+        "text": "*...Bueno, me responderá mañana.*"
+    },
+    "day1_night_phone_6": {
+        "speaker": "me",
+        "text": "*En cambio, tengo mensajes de Sea.*"
+    },
+    "day1_night_sea_1": {
+        "speaker": "sea_full",
+        "text": "¡Hoy fue divertido!"
+    },
+    "day1_night_sea_2": {
+        "speaker": "sea_full",
+        "text": "¿Qué quieres en tu lonchera mañana?"
+    },
+    "day1_night_sea_3": {
+        "speaker": "sea_full",
+        "text": "Acepto pedidos jajaja"
+    },
+    "day1_night_sea_4": {
+        "text": ""
+    },
+    "day1_night_sea_reply": {
+        "speaker": "me",
+        "text": "*¿Qué debería responder?*",
+        "choices": [
+            "'Mmm~ ¿qué tal un katsu de pollo?'",
+            "'Comeré cualquier cosa jajaja'",
+            "(No responder)"
+        ]
+    },
+    "day1_night_sea_reply_1": {
+        "speaker": "sea_full",
+        "text": "¡Oh, qué bien! Espéralo con ansias mañana <3"
+    },
+    "day1_night_sea_reply_2": {
+        "speaker": "sea_full",
+        "text": "Jajaja, está bien~ ¡no te sorprendas mañana!"
+    },
+    "day1_night_sea_reply_3": {
+        "text": ""
+    },
+    "day1_night_sleep_1": {
+        "speaker": "me",
+        "text": "*Me acuesto en la cama y miro el techo.*"
+    },
+    "day1_night_sleep_2": {
+        "speaker": "me",
+        "text": "*...Creo que puedo acostumbrarme a esto. A esta escuela.*"
+    },
+    "day1_night_sleep_3": {
+        "speaker": "me",
+        "text": "*Cierro los ojos. El cansancio me vence.*"
+    },
+    "day1_night_sleep_4": {
+        "speaker": "me",
+        "text": "*...Justo antes de dormirme, una extraña sensación me invade. Esa mancha en el techo parece una forma familiar.*"
+    },
+    "day1_night_sleep_5": {
+        "speaker": "me",
+        "text": "*...Todos los techos de los apartamentos probablemente se ven iguales. Cerré los ojos.*"
+    },
+    "day1_night_key_1": {
+        "speaker": "me",
+        "text": "*...A medio dormir, escuché algo en la puerta principal. Un sonido débil. Como una llave girando en la cerradura.*"
+    },
+    "day1_night_key_2": {
+        "speaker": "me",
+        "text": "*...¿Fue un sueño? Abrí los ojos a medias. Oscuridad. No podía ver nada. La puerta seguía cerrada.*"
+    },
+    "day1_night_key_3": {
+        "speaker": "me",
+        "text": "*Revisé el reloj. 2:14 AM. ...Vivo por mi cuenta, así que no hay forma de que oyera una llave. Deben haber sido los vecinos.*"
+    },
+    "day1_night_key_4": {
+        "speaker": "me",
+        "text": "*Cerré los ojos de nuevo.*"
+    },
+    "day1_night_end": {
+        "text": "*-- Fin del Día 1 --*"
+    }
 }

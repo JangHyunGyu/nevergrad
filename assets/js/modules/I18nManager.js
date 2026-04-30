@@ -12,7 +12,7 @@
  *
  * scene ID가 곧 텍스트 키:
  *   시나리오: { "day1_opening": { next: "day1_opening_2" } }
- *   i18n:    { "day1_opening": { name: "나", text: "..." } }
+ *   i18n:    { "day1_opening": { speaker: "me", text: "..." } }
  *
  * 이 구조의 장점:
  *   - 로직 수정 시: scenario 파일만 봄 (텍스트 노이즈 없음)
@@ -27,7 +27,7 @@ class I18nManager {
 
     constructor() {
         this.currentLang = 'ko';
-        this.texts = {};       // { day1: { scene_id: { name, text, choices } }, day2: {...} }
+        this.texts = {};       // { day1: { scene_id: { speaker, text, choices } }, day2: {...} }
         this.loaded = {};      // 로드 완료 추적
     }
 
@@ -85,19 +85,19 @@ class I18nManager {
     /**
      * scene ID로 텍스트 가져오기
      * @param {string} sceneId - 예: "day1_opening"
-     * @returns {{ name: string, text: string, choices?: string[] }}
+     * @returns {{ speaker?: string, name?: string, text: string, choices?: string[] }}
      */
     get(sceneId) {
         // scene ID에서 day 번호 추출: "day1_opening" → "day1"
         const dayMatch = sceneId.match(/^day(\d)/);
-        if (!dayMatch) return { name: "", text: "" };
+        if (!dayMatch) return { text: "" };
 
         const dayKey = `day${dayMatch[1]}`;
         const entry = this.texts[dayKey]?.[sceneId];
 
         if (!entry) {
             console.warn(`[I18n] Missing text: ${this.currentLang}/${dayKey}.json → "${sceneId}"`);
-            return { name: "???", text: `[MISSING: ${sceneId}]` };
+            return { speaker: "unknown", text: `[MISSING: ${sceneId}]` };
         }
 
         return entry;
@@ -381,6 +381,223 @@ class I18nManager {
             }
         }
     };
+
+    /**
+     * Dialogue speaker labels. These are intentionally separate from
+     * CHARACTER_NAMES, which are used by UI systems such as gallery/stat labels.
+     */
+    static SPEAKER_NAMES = {
+        ko: {
+            me: "나",
+            unknown: "???",
+            school_broadcast: "[교내 방송]",
+            eunsu_full: "박은수",
+            eunsu: "은수",
+            riin_full: "강리인",
+            riin: "리인",
+            sea_full: "한세아",
+            sea: "세아",
+            yuna_full: "최유나",
+            yuna: "유나",
+            seolhwa_full: "이설화",
+            seolhwa: "설화",
+            classmate_a: "급우 A",
+            classmate_b: "급우 B",
+            student: "학생",
+            student_a: "학생 A",
+            student_b: "학생 B",
+            boy: "남학생",
+            girl: "여학생",
+            boy_student: "남학생",
+            girl_student: "여학생",
+            girl_student_a: "여학생 A",
+            girl_student_b: "여학생 B",
+            boy_next_to_me: "옆자리 남학생",
+            window_girl: "창가의 여학생"
+        },
+        en: {
+            me: "Me",
+            unknown: "???",
+            school_broadcast: "School Broadcast",
+            eunsu_full: "Park Eunsu",
+            eunsu: "Eunsu",
+            riin_full: "Kang Riin",
+            riin: "Riin",
+            sea_full: "Han Sea",
+            sea: "Sea",
+            yuna_full: "Choi Yuna",
+            yuna: "Yuna",
+            seolhwa_full: "Lee Seolhwa",
+            seolhwa: "Seolhwa",
+            classmate_a: "Classmate A",
+            classmate_b: "Classmate B",
+            student: "Student",
+            student_a: "Student A",
+            student_b: "Student B",
+            boy: "Boy",
+            girl: "Girl",
+            boy_student: "Boy student",
+            girl_student: "Girl student",
+            girl_student_a: "Girl student A",
+            girl_student_b: "Girl student B",
+            boy_next_to_me: "Boy next to me",
+            window_girl: "Window-Side Girl"
+        },
+        ja: {
+            me: "僕",
+            me_watashi: "私",
+            unknown: "???",
+            school_broadcast: "校内放送",
+            eunsu_full: "パク・ウンス",
+            eunsu: "ウンス",
+            riin_full: "カン・リイン",
+            riin: "リイン",
+            sea_full: "ハン・セア",
+            sea: "セア",
+            yuna_full: "チェ・ユナ",
+            yuna: "ユナ",
+            seolhwa_full: "イ・ソルファ",
+            seolhwa: "ソルファ",
+            classmate_a: "クラスメイトA",
+            classmate_b: "クラスメイトB",
+            student: "生徒",
+            student_a: "生徒A",
+            student_b: "生徒B",
+            boy: "男子",
+            girl: "女子",
+            boy_student: "男子生徒",
+            girl_student: "女子生徒",
+            girl_student_a: "女子生徒A",
+            girl_student_b: "女子生徒B",
+            boy_next_to_me: "隣の席の男子",
+            window_girl: "窓際の女子生徒"
+        },
+        es: {
+            me: "Yo",
+            unknown: "???",
+            school_broadcast: "[Aviso escolar]",
+            eunsu_full: "Park Eunsu",
+            eunsu: "Eunsu",
+            riin_full: "Kang Riin",
+            riin: "Riin",
+            sea_full: "Han Sea",
+            sea: "Sea",
+            yuna_full: "Choi Yuna",
+            yuna: "Yuna",
+            seolhwa_full: "Lee Seolhwa",
+            seolhwa: "Seolhwa",
+            classmate_a: "Compañero A",
+            classmate_b: "Compañero B",
+            student: "Alumno",
+            student_a: "Alumno A",
+            student_b: "Alumno B",
+            boy: "Chico",
+            girl: "Chica",
+            boy_student: "Alumno",
+            girl_student: "Alumna",
+            girl_student_a: "Alumna A",
+            girl_student_b: "Alumna B",
+            boy_next_to_me: "Chico de al lado",
+            window_girl: "Chica de la ventana"
+        },
+        fr: {
+            me: "Moi",
+            unknown: "???",
+            school_broadcast: "[Annonce scolaire]",
+            eunsu_full: "Park Eunsu",
+            eunsu: "Eunsu",
+            riin_full: "Kang Riin",
+            riin: "Riin",
+            sea_full: "Han Sea",
+            sea: "Sea",
+            yuna_full: "Choi Yuna",
+            yuna: "Yuna",
+            seolhwa_full: "Lee Seolhwa",
+            seolhwa: "Seolhwa",
+            classmate_a: "Camarade A",
+            classmate_b: "Camarade B",
+            student: "Élève",
+            student_a: "Élève A",
+            student_b: "Élève B",
+            boy: "Garçon",
+            girl: "Fille",
+            boy_student: "Élève",
+            girl_student: "Élève",
+            girl_student_a: "Élève A",
+            girl_student_b: "Élève B",
+            boy_next_to_me: "Garçon a ",
+            window_girl: "Fille près de la fenêtre"
+        },
+        de: {
+            me: "Ich",
+            unknown: "???",
+            school_broadcast: "[Schuldurchsage]",
+            eunsu_full: "Park Eunsu",
+            eunsu: "Eunsu",
+            riin_full: "Kang Riin",
+            riin: "Riin",
+            sea_full: "Han Sea",
+            sea: "Sea",
+            yuna_full: "Choi Yuna",
+            yuna: "Yuna",
+            seolhwa_full: "Lee Seolhwa",
+            seolhwa: "Seolhwa",
+            classmate_a: "Mitschüler A",
+            classmate_b: "Mitschüler B",
+            student: "Schüler",
+            student_a: "Schüler A",
+            student_b: "Schüler B",
+            boy: "Junge",
+            girl: "Mädchen",
+            boy_student: "Schüler",
+            girl_student: "Schülerin",
+            girl_student_a: "Schülerin A",
+            girl_student_b: "Schülerin B",
+            boy_next_to_me: "Junge neben mir",
+            window_girl: "Mädchen am Fenster"
+        },
+        pt: {
+            me: "Eu",
+            unknown: "???",
+            school_broadcast: "School Broadcast",
+            eunsu_full: "Park Eunsu",
+            eunsu: "Eunsu",
+            riin_full: "Kang Riin",
+            riin: "Riin",
+            sea_full: "Han Sea",
+            sea: "Sea",
+            yuna_full: "Choi Yuna",
+            yuna: "Yuna",
+            seolhwa_full: "Lee Seolhwa",
+            seolhwa: "Seolhwa",
+            classmate_a: "Classmate A",
+            classmate_b: "Classmate B",
+            student: "Student",
+            student_a: "Student A",
+            student_b: "Student B",
+            boy: "Boy",
+            girl: "Girl",
+            boy_student: "Boy student",
+            girl_student: "Girl student",
+            girl_student_a: "Girl student A",
+            girl_student_b: "Girl student B",
+            boy_next_to_me: "Boy next to me",
+            window_girl: "Garota da janela"
+        }
+    };
+
+    getSpeakerName(speakerId, playerName) {
+        if (!speakerId) return '';
+        const labels = I18nManager.SPEAKER_NAMES[this.currentLang]
+            || I18nManager.SPEAKER_NAMES.en;
+        const fallbackLabels = I18nManager.SPEAKER_NAMES.en || {};
+        const label = labels?.[speakerId]
+            || fallbackLabels[speakerId]
+            || this.getCharacterName(speakerId);
+
+        if (speakerId === 'me' || speakerId === 'me_watashi') return playerName || label;
+        return label;
+    }
 
     /**
      * Character display names used by language-neutral UI effects.

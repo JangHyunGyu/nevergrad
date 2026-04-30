@@ -1,50 +1,49 @@
 {
     "day5_lunch_start": {
-        "name": "",
         "text": ""
     },
     "day5_lunch_chase_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I ran. Burst through the classroom door. Didn't look back.*"
     },
     "day5_lunch_chase_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The hallway. Fluorescent lights flicker. Footsteps echo. Mine. Yuna's. Two sets.*"
     },
     "day5_lunch_chase_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Yuna follows behind. Running on legs still drugged. Stumbling — but not stopping.*"
     },
     "day5_lunch_chase_3a": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*— If I let go of Yuna, I could run faster. The thought flashed through my mind. I erased it immediately.*"
     },
     "day5_lunch_chase_4": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...You can't run, {name}."
     },
     "day5_lunch_chase_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The broadcast echoes through the hallway. Ms. Eunsu's voice comes from everywhere. From the walls. From the ceiling. From beneath my feet.*"
     },
     "day5_lunch_chase_6": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...All the doors are locked. Come back."
     },
     "day5_lunch_chase_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*A lie. Not all of them. There's the route Seolhwa told me about.*"
     },
     "day5_lunch_chase_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The sealed hallway. A fork. Left — the main building. Right — the old wing.*"
     },
     "day5_lunch_chase_9": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Sunbae, hurry!"
     },
     "day5_lunch_chase_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Footsteps from the left. — No, from the right too. 5 seconds. I have to decide in 5 seconds.*",
         "choices": [
             "Left — main building",
@@ -52,115 +51,115 @@
         ]
     },
     "day5_lunch_left_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*End of the hallway. Sea is standing there.*"
     },
     "day5_lunch_left_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Arms spread, blocking the way. The sleeves of her uniform are trembling. The red glow of the emergency light illuminates only half of Sea's face.*"
     },
     "day5_lunch_left_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I stopped. I could push past her if I ran. — My body won't move.*"
     },
     "day5_lunch_left_4": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...{name}."
     },
     "day5_lunch_left_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea's voice is cracked. She'd been crying. Before I got here. Alone in this hallway.*"
     },
     "day5_lunch_left_5a": {
-        "text": "Sea, move.",
-        "name": "Me"
+        "speaker": "me",
+        "text": "Sea, move."
     },
     "day5_lunch_left_5b": {
-        "text": "*Sea shook her head. She bit her lip. Blood welled up.*",
-        "name": "Me"
+        "speaker": "me",
+        "text": "*Sea shook her head. She bit her lip. Blood welled up.*"
     },
     "day5_lunch_left_6": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "I can't let you go. Not this time."
     },
     "day5_lunch_left_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea's hands are clenched into fists. Trembling. Whether to stop me or to hold herself together, I can't tell.*"
     },
     "day5_lunch_left_8": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "I know... I know I'm not in my right mind. But what am I supposed to do?"
     },
     "day5_lunch_left_9": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "If I let you go like this, we'll never see each other again! You'll leave me alone again!"
     },
     "day5_lunch_left_10": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "If they erase your memory, we can meet again. From the start again. You can smile at me again."
     },
     "day5_lunch_left_11": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...On Day 1, when you said 'hello' to me. Every time that greeting — was like a knife. The greeting of a stranger."
     },
     "day5_lunch_left_12": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "But still — that one greeting kept me going until the next cycle."
     },
     "day5_lunch_left_13": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Clang. The steel door on the 1st floor of the main building rattles. Someone is coming up. Footsteps echo on the stairs.*"
     },
     "day5_lunch_left_14": {
-        "name": "Me",
+        "speaker": "me",
         "text": "That's not smiling at you. It's a stranger who doesn't know you smiling."
     },
     "day5_lunch_left_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea flinched.*"
     },
     "day5_lunch_left_16": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...I know. I know that."
     },
     "day5_lunch_left_17": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "But still—"
     },
     "day5_lunch_left_18": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*A moment of silence.*"
     },
     "day5_lunch_left_19": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...12 times."
     },
     "day5_lunch_left_20": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "For 12 times, I let you pass in this hallway."
     },
     "day5_lunch_left_21": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...What?"
     },
     "day5_lunch_left_22": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Ms. Eunsu doesn't know. The board doesn't know. Every time, on the night of Day 5, when you tried to escape — we met in this hallway. Every time. And every time — **I stepped aside.**"
     },
     "day5_lunch_left_23": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "You knew you couldn't escape without me stepping aside. Every time, crying. Every time — 'this is the last time.' But in the end, at the front gate, in the basement... you were always caught. And the next day, you'd open the classroom door again without even knowing my name!"
     },
     "day5_lunch_left_24": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Every time your memory was erased, you came back. Day 1 again. A stranger's face again."
     },
     "day5_lunch_left_25": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "**...Do I have to step aside for the 13th time too?**"
     },
     "day5_lunch_left_choice": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Bang bang bang. The footsteps on the stairs grow closer. Second floor. They'll be here soon. Sea's lips tremble. She glanced toward the sound. — But still didn't move aside.*",
         "choices": [
             "\"...I'm sorry. But I have to go.\"",
@@ -169,243 +168,242 @@
         ]
     },
     "day5_lunch_left_c1_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea wiped her tears. And — stepped aside.*"
     },
     "day5_lunch_left_c1_2": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...I'll step aside for the 13th time too."
     },
     "day5_lunch_left_c1_3": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "There won't be a next time. The 14th — won't happen. Because I won't step aside."
     },
     "day5_lunch_left_c1_4": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...So this time, really get out. **Now.**"
     },
     "day5_lunch_left_c1_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Footsteps reached the end of the hallway. No time to look back.*"
     },
     "day5_lunch_left_c1_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I passed Sea.*"
     },
     "day5_lunch_left_c1_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Behind me — the sound of someone collapsing. A school uniform brushing the floor. And — muffled sobbing.*"
     },
     "day5_lunch_left_c1_8": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...Goodbye."
     },
     "day5_lunch_left_c2_1": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...Together?"
     },
     "day5_lunch_left_c2_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea's eyes went wide. Like a word she never heard in 12 cycles.*"
     },
     "day5_lunch_left_c2_3": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...If we go outside, will you remember me?"
     },
     "day5_lunch_left_c2_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "I'll remember you."
     },
     "day5_lunch_left_c2_5": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...I don't even know what it's like out there."
     },
     "day5_lunch_left_c2_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea looked down at her own hands. She'd lived inside this school for 3 years. Bound to the role of a watcher. The outside world — was a place that didn't exist for Sea.*"
     },
     "day5_lunch_left_c2_7": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...Are there hallways like this out there?"
     },
     "day5_lunch_left_c2_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "No."
     },
     "day5_lunch_left_c2_9": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...That's a lie. But I'll believe it."
     },
     "day5_lunch_left_c2_10": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "...Even if outside is scary — it's probably better than here. Probably."
     },
     "day5_lunch_left_c3_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...The strength left my legs. I sank down in front of Sea. I can't run anymore.*"
     },
     "day5_lunch_left_timeout": {
-        "name": "",
         "text": ""
     },
     "day5_lunch_right_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Running down the hallway — I stopped. The footsteps disappeared. The ones chasing from behind. The ones echoing on the stairs. All of them.*"
     },
     "day5_lunch_right_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...A thick fire shutter separating the old wing hallway from the main building has come down. Someone lowered it manually. Beyond the shutter, a siren wails faintly, but it doesn't reach here.*"
     },
     "day5_lunch_right_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I squeezed under the shutter. Standing up — it's quiet. The only quiet place in a sealed school.*"
     },
     "day5_lunch_right_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The infirmary door is open. Only one fluorescent light is on. The rest are broken — no, removed. Deliberately darkened.*"
     },
     "day5_lunch_right_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin is standing by the cabinet. She's not wearing her white coat. Casual clothes. — Like she's prepared to leave.*"
     },
     "day5_lunch_right_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Syringes lined up in a row. Label: 'Memory Erasure Protocol #13'. Needles glint beneath the fluorescent light.*"
     },
     "day5_lunch_right_7": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...You're here."
     },
     "day5_lunch_right_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...Are you here to stop me too?"
     },
     "day5_lunch_right_9": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin picked up a syringe.*"
     },
     "day5_lunch_right_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I stepped back. My back hit the doorframe. Nowhere to run. Nurse Riin raised the syringe. A drop of liquid fell from the needle tip. — My legs went weak.*"
     },
     "day5_lunch_right_11": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...Calm down."
     },
     "day5_lunch_right_12": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin — slowly, deliberately slowly — set the syringe down on the sink. Clink. Metal against ceramic.*"
     },
     "day5_lunch_right_13": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "I'm not here to stop you."
     },
     "day5_lunch_right_14": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin opened the cabinet. Vials lined up inside. She took one out and shook it. Clear liquid. Looks identical to what's in the syringes.*"
     },
     "day5_lunch_right_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin opened the cap. Brought it to her nose. Smelled it. — Then took a sip.*"
     },
     "day5_lunch_right_16": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "It's sugar water."
     },
     "day5_lunch_right_17": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...Sugar water?*"
     },
     "day5_lunch_right_18": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Since the 7th. After Lee Seolhwa — after that child was gone. I replaced the drugs from the board with sugar water. For 6 years."
     },
     "day5_lunch_right_19": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...Why?"
     },
     "day5_lunch_right_20": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin smiled. Not a bitter smile — an exhausted one.*"
     },
     "day5_lunch_right_21": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "When the 7th child — when Lee Seolhwa — was caught trying to escape with you. She screamed as they dragged her away."
     },
     "day5_lunch_right_22": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "I could hear it from the infirmary. Two floors down. ...Do you know what she said?"
     },
     "day5_lunch_right_23": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "It wasn't 'save me.' It was 'don't touch him.' ...She meant you. Even as she was being dragged away, she was worried about you."
     },
     "day5_lunch_right_24": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...I can't forget that scream. That child was classified as 'uncorrectable.' You know what that means?"
     },
     "day5_lunch_right_25": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin leaned against the cabinet. Shoulders slumped.*"
     },
     "day5_lunch_right_26": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...I'm supposed to be a doctor. I took an oath to save people... and for 6 years I've been rummaging around in children's heads. I'm so disgusted with myself I could die."
     },
     "day5_lunch_right_27": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...It's laughable. I took an oath to do no harm. And for 6 years I erased memories."
     },
     "day5_lunch_right_28": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "After the 7th, I reduced the drug concentration. From the 8th onward, sugar water. So the memories wouldn't be fully erased."
     },
     "day5_lunch_right_29": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "I almost got caught once. During the 10th, Eunsu said 'the drug seems weaker.' I pretended to increase the dose and got through it."
     },
     "day5_lunch_right_30": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...That's why you feel deja vu. Because your memories weren't fully erased. Because I made it that way."
     },
     "day5_lunch_right_31": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "The emergency exit key."
     },
     "day5_lunch_right_32": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin pulled a key from her pocket. A small silver key. The surface is worn. — Touched over and over again. For 6 years.*"
     },
     "day5_lunch_right_33": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Teacher held out the key. Her hand — isn't shaking. How long has she been waiting for this moment?*"
     },
     "day5_lunch_right_34": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Old wing, 3rd floor. The emergency exit Seolhwa found. This key opens it."
     },
     "day5_lunch_right_35": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...Eunsu doesn't know this key exists. I changed the locks myself after the 7th."
     },
     "day5_lunch_right_36": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...So that's why it was quiet here. Riin disabled the tracking system in this area. Riin lowered the shutter. The only blind spot beyond Eunsu's eyes.*"
     },
     "day5_lunch_right_37": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Bang! The fire shutter shook violently. Someone is pounding from outside. Eunsu, or the 'administration,' has caught up.*"
     },
     "day5_lunch_right_38": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...No time. Take it."
     },
     "day5_lunch_right_39": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Riin is holding out a key. A small silver key. -- Her hand is trembling.*"
     },
     "day5_lunch_right_choice": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The fire shutter rattled again. Metal screaming.*",
         "choices": [
             "Take the key",
@@ -414,155 +412,154 @@
         ]
     },
     "day5_lunch_right_c1_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I took the key. Small, cold, silver. In my hand — it feels heavy.*"
     },
     "day5_lunch_right_c2_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin paused for a moment. Then — shook her head. \"I have to stay. I need to hold the shutter so Eunsu can't follow.\" ...She pressed the key into my hand.*"
     },
     "day5_lunch_right_c3_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...How do I know this isn't another experiment?"
     },
     "day5_lunch_right_c3_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin picked up a syringe and injected it into her own arm. The sugar water.*"
     },
     "day5_lunch_right_c3_3": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...It's really sugar water. Convinced?"
     },
     "day5_lunch_right_c3_4": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "You're right to doubt. You shouldn't trust anyone here. Me included. But the key is real. Go."
     },
     "day5_lunch_right_c3_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Teacher gave a wry smile. I took the key.*"
     },
     "day5_lunch_right_timeout": {
-        "name": "",
         "text": ""
     },
     "day5_lunch_seolhwa_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The staircase up to the 3rd floor of the old wing. Supporting Yuna.*"
     },
     "day5_lunch_seolhwa_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Halfway up the stairs — Seolhwa is standing there.*"
     },
     "day5_lunch_seolhwa_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*This time is different. Since seeing her in the mirror yesterday, I know Seolhwa is a hallucination. But — she's still visible. Clearly. Even knowing she's a hallucination, seeing this girl makes my chest ache. I know why now.*"
     },
     "day5_lunch_seolhwa_4": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...You finally made it."
     },
     "day5_lunch_seolhwa_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...Seolhwa. ...You're a hallucination, right? Something my memory created."
     },
     "day5_lunch_seolhwa_6": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...So you figured it out."
     },
     "day5_lunch_seolhwa_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa smiled. A sad, warm smile. Seolhwa sat on the stairs. Hugged her knees. — That posture. Familiar somehow. The same one I took when I broke down in front of the mirror on the night of Day 4.*"
     },
     "day5_lunch_seolhwa_8": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "That's right. I'm not here. A year ago — I disappeared from this school."
     },
     "day5_lunch_seolhwa_9": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "During the 7th cycle... I tried to escape with you. I found out this school's secret, told you everything, and we ran together."
     },
     "day5_lunch_seolhwa_10": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Back then, I was a 'facility student' at this school. Transferred from an orphanage. ...I wasn't a test subject, but I knew about the experiments."
     },
     "day5_lunch_seolhwa_11": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "I passed you a note. 'You need to get out of this school. This place isn't what you think.' ...The 7th you — believed me. Right away."
     },
     "day5_lunch_seolhwa_12": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "That night, we ran together. To the 3rd floor emergency exit of the old wing. We didn't have a key, but we tried to break the window. — The noise gave us away and we were caught."
     },
     "day5_lunch_seolhwa_13": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...I was caught. And your memory was erased."
     },
     "day5_lunch_seolhwa_14": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa's eyes are wet. — Tears of a hallucination. Tears that don't exist. But the pain in my chest is real.*"
     },
     "day5_lunch_seolhwa_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...I'm sorry. For not remembering. ...We ran together in the 7th cycle. You were caught. And I — forgot."
     },
     "day5_lunch_seolhwa_16": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa shook her head.*"
     },
     "day5_lunch_seolhwa_17": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "It's not your fault. You didn't erase your own memory."
     },
     "day5_lunch_seolhwa_18": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "But your memory — couldn't fully erase me. Because Riin weakened the drugs."
     },
     "day5_lunch_seolhwa_19": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "So I kept living... inside your head like this. Sending warnings whenever you were in danger, showing you escape routes."
     },
     "day5_lunch_seolhwa_20": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "In the 8th cycle, I whispered 'don't look back' in the hallway. Your memory knew where the surveillance cameras were."
     },
     "day5_lunch_seolhwa_21": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "In the 10th, I showed you the basement location in a dream. They say you got up in your sleep and drew something in a notebook. ...You probably had no idea what it was when you woke up."
     },
     "day5_lunch_seolhwa_22": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Everything I know is things you know. Your desperately preserved memories... were just borrowing my shell to speak."
     },
     "day5_lunch_seolhwa_23": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "The words I say, the expressions I show, the tears I shed — they're all echoes of the real Lee Seolhwa. But I myself... am not real."
     },
     "day5_lunch_seolhwa_24": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...So when you asked 'you're left-handed, right?' — that was also—"
     },
     "day5_lunch_seolhwa_25": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Because I was there during the 7th. I knew you were left-handed."
     },
     "day5_lunch_seolhwa_26": {
-        "name": "Me",
+        "speaker": "me",
         "text": "And 'remember me' was—"
     },
     "day5_lunch_seolhwa_27": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "**Remember me.** The name Lee Seolhwa. Just that one thing. **Please.**"
     },
     "day5_lunch_seolhwa_28": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Light streams from Seolhwa's eyes. Not tears. Light.*"
     },
     "day5_lunch_seolhwa_29": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...The 13th time is different. Riin switched the drugs. Your memories remain."
     },
     "day5_lunch_seolhwa_30": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "This time — you can get out.",
         "choices": [
             "\"Let's get out together.\"",
@@ -570,203 +567,203 @@
         ]
     },
     "day5_lunch_seolhwa_c1_1": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Thank you. But that's not possible."
     },
     "day5_lunch_seolhwa_c1_2": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "I'm not real. I'm a residual memory. If you go outside — I'll disappear."
     },
     "day5_lunch_seolhwa_c1_3": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "It's okay. **The real Lee Seolhwa's memory will remain inside you.** Don't forget this time."
     },
     "day5_lunch_seolhwa_c2_1": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...I."
     },
     "day5_lunch_seolhwa_c2_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa looked at her own hands. Her fingertips are blurry.*"
     },
     "day5_lunch_seolhwa_c2_3": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "I'm your memory. If you get out of here... there's no need to send warnings anymore. Then I'll — slowly fade away."
     },
     "day5_lunch_seolhwa_c2_4": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "**But that's okay.**"
     },
     "day5_lunch_seolhwa_c2_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa smiled.*"
     },
     "day5_lunch_seolhwa_c2_6": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Even if the real Lee Seolhwa died long ago... I still saved you this time. That's enough."
     },
     "day5_lunch_seolhwa_guide_1": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "I'll guide you to the emergency exit. I know a way around Eunsu's blockades."
     },
     "day5_lunch_seolhwa_guide_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa leads the way. Through the dark hallways of the old wing.*"
     },
     "day5_lunch_seolhwa_guide_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I can't hear Seolhwa's footsteps. She has no body. Only my footsteps echo in the hallway. The shoulder supporting Yuna is going numb.*"
     },
     "day5_lunch_seolhwa_guide_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The hallway is dark. I shone my phone light ahead. Seolhwa's back is visible — the light passes through her. Sometimes her outline flickers. Like a glitch.*"
     },
     "day5_lunch_seolhwa_guide_5": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...Sunbae, you're muttering to yourself."
     },
     "day5_lunch_seolhwa_guide_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...I know the way. Trust me."
     },
     "day5_lunch_seolhwa_guide_7": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Left. This door isn't sealed. You can reach the 3rd floor through the storage passage."
     },
     "day5_lunch_seolhwa_guide_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*An old storage door. Covered in dust. I opened it. A narrow passage. Stairs visible between pipes and conduits.*"
     },
     "day5_lunch_seolhwa_guide_9": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I climbed up. One floor. Two floors. Water leaking from a pipe. Cold.*"
     },
     "day5_lunch_seolhwa_guide_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*3rd floor. In front of the emergency exit.*"
     },
     "day5_lunch_seolhwa_guide_11": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa is standing at the door. She turned and smiled. — Her outline flickered again. Growing dimmer.*"
     },
     "day5_lunch_seolhwa_guide_12": {
-        "name": "Me",
+        "speaker": "me",
         "text": ""
     },
     "day5_lunch_seolhwa_guide_13a": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I inserted the key. Turned it. Click.*"
     },
     "day5_lunch_seolhwa_guide_13b": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa placed her hand on the door. The lock — released from inside. A hallucination's hand opened a real lock. No — my memory knew the structure of this lock.*"
     },
     "day5_lunch_seolhwa_guide_14": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The door opened. Outside air rushed in. The cold air of dawn. — It feels like the first time I've breathed outside air since entering this school.*"
     },
     "day5_lunch_seolhwa_guide_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa's hair swayed in the wind. — No. A hallucination's hair can't sway in the wind. My memory is showing me that.*"
     },
     "day5_lunch_seolhwa_guide_16": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Footsteps from behind.*"
     },
     "day5_lunch_eunsu_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*From behind — footsteps. Coming up the stairs.*"
     },
     "day5_lunch_eunsu_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*One step. One step. Slow. Not running. — As if she knew I'd be up here.*"
     },
     "day5_lunch_eunsu_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The footsteps grow closer. The sound of dress shoes hitting concrete. Ms. Eunsu's shoes.*"
     },
     "day5_lunch_eunsu_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Stopped. At the top of the stairs.*"
     },
     "day5_lunch_eunsu_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Ms. Eunsu appeared. Out of breath. Hair disheveled. — Not the composed appearance from the classroom.*"
     },
     "day5_lunch_eunsu_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Teacher catches her breath, forcing the corners of her mouth up. The usual gentle smile. But the facial muscles are twitching subtly. Losing control.*"
     },
     "day5_lunch_eunsu_7": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "{name}. Stop there. The emergency exit side is a restricted area."
     },
     "day5_lunch_eunsu_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*As I stepped back, the smile that had been clinging to Ms. Eunsu's face fell away with a snap. The mask shattered.*"
     },
     "day5_lunch_eunsu_9": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sweat beads on her forehead. Dark circles under her eyes. I wasn't the only one who didn't sleep tonight. A cold wind from the emergency exit passed between us.*"
     },
     "day5_lunch_eunsu_10": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "It was like this every cycle. Deviation, pursuit, recovery, reset."
     },
     "day5_lunch_eunsu_11": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "The 1st time, I was angry. The 2nd time, I tried to find the cause."
     },
     "day5_lunch_eunsu_12": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "From the 3rd time, I understood. The problem wasn't the escape. It was your eyes after the reset."
     },
     "day5_lunch_eunsu_13": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "So this time, I tried to stop the deviation itself."
     },
     "day5_lunch_eunsu_14": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "I recorded your reactions and reduced the stimuli you disliked. I thought you'd stabilize. On paper, you did."
     },
     "day5_lunch_eunsu_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Teacher took one step closer.*"
     },
     "day5_lunch_eunsu_16": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Even on the 13th time, my hands shook the moment you entered the classroom. Even though it was the same procedure."
     },
     "day5_lunch_eunsu_17": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "After 12 times, I still don't get used to it. Every time you check me with eyes seeing me for the first time, the records fall apart."
     },
     "day5_lunch_eunsu_18": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Teacher stopped. In front of the emergency exit. Three meters from me.*"
     },
     "day5_lunch_eunsu_19": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Teacher pulled a syringe from her pocket. Slowly. As if to show me. The liquid inside glinted under the fluorescent light. — This is what erased 12 cycles of memories. One vial of clear liquid.*"
     },
     "day5_lunch_eunsu_20": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "This is the final choice, {name}."
     },
     "day5_lunch_eunsu_21": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "One shot and the procedure is over. What you just saw, your fear, even your reactions to me, all of it will be cleared. Just keep your eyes closed."
     },
     "day5_lunch_eunsu_22": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Back to Day 1. To a state where you know nothing."
     },
     "day5_lunch_eunsu_23": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Silence.*"
     },
     "day5_lunch_eunsu_24": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Only the sound of wind from the emergency exit. The border between the outside world and this school.*",
         "choices": [
             "Keep watching the syringe",
@@ -775,39 +772,39 @@
         ]
     },
     "day5_lunch_eunsu_25": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Come back."
     },
     "day5_lunch_eunsu_26": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Teacher's hand is shaking. The syringe trembles. A drop falls to the floor.*"
     },
     "day5_lunch_eunsu_27": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Tears fell from Teacher's eyes. She didn't wipe them. Not because she couldn't — because she knew there was no point.*"
     },
     "day5_lunch_eunsu_28": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The air has frozen. The wind from the emergency exit. Teacher's breathing. My own breathing. Yuna stays still against the wall.*"
     },
     "day5_lunch_eunsu_29": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Syringe and emergency exit. Oblivion and memory. Cage and sky.*"
     },
     "day5_lunch_eunsu_30": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*All I have to do is push past and run. This person doesn't have the strength to stop me. But my legs won't move. My body, after 12 cycles, remembers. If I follow this voice, I won't be scolded. If I return to the place her hand guides me to, I'll be safe. That memory holds my ankles.*"
     },
     "day5_lunch_eunsu_31": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Teacher took one more step closer. Now within arm's reach.*"
     },
     "day5_lunch_eunsu_32": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa — is visible. Behind Teacher. At the bottom of the stairs. A blurry silhouette. Saying nothing. Just — watching me.*"
     },
     "day5_lunch_eunsu_final": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The screen border pulses red. The clock reads 22:58. Two minutes left.*",
         "choices": [
             "\"No. I will remember.\"",
@@ -816,23 +813,23 @@
         ]
     },
     "day5_lunch_final_true": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...*"
     },
     "day5_lunch_final_forget": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...*"
     },
     "day5_lunch_final_resist": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...*"
     },
     "day5_lunch_final_ghost": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "I'll do it."
     },
     "day5_lunch_end": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...*"
     }
 }

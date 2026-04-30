@@ -1,58 +1,57 @@
 {
     "day1_night_start": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Estou em casa. Eu preparo macarrão instantâneo e penso naquele dia.*"
     },
     "day1_night_home_2": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Os rostos das pessoas que conheci hoje voltam para mim um por um.*"
     },
     "day1_night_home_3": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Eles eram todos boas pessoas.*"
     },
     "day1_night_phone_1": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Eu verifico meu telefone.*"
     },
     "day1_night_phone_2": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*O bate-papo em grupo da minha antiga escola. A mensagem que enviei esta manhã - 'Eu transferi, cuidem-se todos ~'*"
     },
     "day1_night_phone_3": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*...Ninguém leu. Leia por 0.*"
     },
     "day1_night_phone_4": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Também enviei uma mensagem pessoal para meu amigo Minsu. 'Ei Minsu, eu transferi! Esta escola é enorme' - ainda sem resposta.*"
     },
     "day1_night_phone_5": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*...Bem, ele responderá amanhã.*"
     },
     "day1_night_phone_6": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Em vez disso, tenho mensagens de Sea.*"
     },
     "day1_night_sea_1": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Hoje foi divertido!"
     },
     "day1_night_sea_2": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "O que você quer na sua marmita amanhã?"
     },
     "day1_night_sea_3": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Atendendo a pedidos haha"
     },
     "day1_night_sea_4": {
-        "name": "",
         "text": ""
     },
     "day1_night_sea_reply": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*O que devo responder?*",
         "choices": [
             "'Hmm ~ que tal katsu de frango?'",
@@ -61,55 +60,53 @@
         ]
     },
     "day1_night_sea_reply_1": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Ah, legal! Aguardo ansiosamente amanhã <3"
     },
     "day1_night_sea_reply_2": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Haha, ok ~ não se surpreenda amanhã!"
     },
     "day1_night_sea_reply_3": {
-        "name": "",
         "text": ""
     },
     "day1_night_sleep_1": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Deito na cama e olho para o teto.*"
     },
     "day1_night_sleep_2": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*...Acho que posso me acostumar com isso. Esta escola.*"
     },
     "day1_night_sleep_3": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Fecho os olhos. Estou cansado.*"
     },
     "day1_night_sleep_4": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*...Pouco antes de adormecer, uma sensação estranha tomou conta de mim. Aquela mancha no teto parece uma forma familiar.*"
     },
     "day1_night_sleep_5": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*...Todos os tetos dos apartamentos provavelmente têm a mesma aparência. Fechei os olhos.*"
     },
     "day1_night_key_1": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*...Meio adormecido, ouvi algo vindo da porta da frente. Um som fraco. Como uma chave girando na fechadura.*"
     },
     "day1_night_key_2": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*...Foi um sonho? Eu entreabri os olhos. Escuridão. Não consegui ver nada. A porta ainda estava fechada.*"
     },
     "day1_night_key_3": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Verifiquei o relógio. 2h14. ...Eu moro sozinho, então não há como ouvir uma chave. Devem ter sido os vizinhos.*"
     },
     "day1_night_key_4": {
-        "name": "Eu",
+        "speaker": "me",
         "text": "*Fechei os olhos novamente.*"
     },
     "day1_night_end": {
-        "name": "",
         "text": "*-- Fim do dia 1 --*"
     }
 }

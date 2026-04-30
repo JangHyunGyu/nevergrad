@@ -1,18 +1,18 @@
 {
     "day3_after_start": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*終礼が終わった。教室があっという間に空いていく。窓の外、グラウンドに三々五々集まる生徒たちが見える。*"
     },
     "day3_after_start_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*今日一日おかしかった。朝から。登校路のデジャヴ、教室の沈黙、セアの目。全部。*"
     },
     "day3_after_start_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……このまま帰ろうか。いや、何かしなきゃいけない気がする。このもやもやを抱えたままではいられない。*"
     },
     "day3_after_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*どこへ行こう。*",
         "choices": [
             "保健室に寄る",
@@ -22,50 +22,50 @@
         ]
     },
     "day3_after_riin": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*保健室のドアの前に立った。中から小さな音が聞こえる。ガラス瓶がぶつかる音。*"
     },
     "day3_after_riin_first": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*一度も来たことのない保健室なのに、なぜここに足が向いたのか分からない。体が勝手に動いた。*"
     },
     "day3_after_riin_first_2": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……入って。」"
     },
     "day3_after_riin_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ノックした。音が止まる。2秒の静寂。*"
     },
     "day3_after_riin_3": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……入って。」"
     },
     "day3_after_riin_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ドアを開けた。リイン先生がシンクの前に立っている。何かを急いで片付けたようだ。カウンターの上に水気が残っている。*"
     },
     "day3_after_riin_5": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「放課後にどうしたの？どこか痛い？」"
     },
     "day3_after_riin_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「いえ、ただ……頭がごちゃごちゃして。」\n\n*リイン先生が僕を見る。しばらく。その視線は医者が患者を見るものでも、先生が生徒を見るものでもない。もっと……複雑なもの。*"
     },
     "day3_after_riin_6a": {
-        "text": "電解質飲料がある。ビタミンとハーブを少し混ぜたもの。",
-        "name": "カン・リイン"
+        "speaker": "riin_full",
+        "text": "電解質飲料がある。ビタミンとハーブを少し混ぜたもの。"
     },
     "day3_after_riin_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生がキャビネットから小さな瓶を取り出してコップに注ぐ。淡い紫色の液体。ビタミンにしては色がおかしい。*\n\n*リインがコップを差し出す。手が微かに震えている。今回はもっとはっきりしている。薬指と小指が微かに揺れている。*\n\n*リイン先生の目を見上げる。そこに……何かがある。微笑みの下に、何か。切実さ？後悔？*"
     },
     "day3_after_riin_flicker": {
         "text": "逃げろ"
     },
     "day3_after_riin_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*飲むべきか？*",
         "choices": [
             "飲む",
@@ -73,119 +73,117 @@
         ]
     },
     "day3_after_riin_drink": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*一口飲んだ。……苦味が舌先に残る。わずかに金属の味。ビタミンにしては……*"
     },
     "day3_after_riin_drink_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*視界が少し揺れる。0.5秒？1秒？短いめまい。そして過ぎる。*"
     },
     "day3_after_riin_drink_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が振り返った瞬間、表情が見えた。**苦悶。**一瞬だけど確かだった。顔全体が歪んだ。まるで自分が毒を飲んだ人のように。*\n\n*すぐに微笑みが戻る。あまりに速く。リモコンで表情を切り替えたみたいだ。*"
     },
     "day3_after_riin_drink_4": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「味がちょっとアレだよね？ハーブは元々苦いから。」"
     },
     "day3_after_riin_drink_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が残りの飲み物をシンクに流す。背中が見える。肩が固まっている。*"
     },
     "day3_after_riin_refuse": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……そう？いいよ。」"
     },
     "day3_after_riin_refuse_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生の手が止まる。コップを持っている手から力が抜ける。*\n\n*引き取る。シンクに中身を流す。背中が見える。微笑みの裏に……安堵。明らかな安堵だ。*"
     },
     "day3_after_riin_refuse_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が振り返る。目が赤くなっている。素早く瞬きして隠す。*"
     },
     "day3_after_riin_refuse_4": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……早く帰って休んで。今日は疲れてるみたいだから。」"
     },
     "day3_after_liin_sugar_1": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*保健室を出る時、ドアの横のゴミ箱が目に入った。蓋が半分開いている。*"
     },
     "day3_after_liin_sugar_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*中にアンプルが見える。割れたガラス瓶がいくつか。ラベルが貼ってある――「M-13」。そしてその横に別の瓶。成分表が見える。「ブドウ糖水溶液」。*"
     },
     "day3_after_liin_sugar_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……ブドウ糖？ビタミンじゃなくて？*"
     },
     "day3_after_liin_sugar_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が後ろからドアを閉めた。それ以上は見えない。*"
     },
     "day3_after_sea": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*教室を出たらセアが待っていた。壁に寄りかかって。いつからいたのかわからない。*\n\n*セアの表情が……いつもの明るい顔じゃない。口角は上がっているのに、目が冷たい。蛍光灯の下でその目がガラスのようだ。*"
     },
     "day3_after_sea_2": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……{name}、昼休みどこにいたの？」"
     },
     "day3_after_sea_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*軽く聞いているようだけど、声に力が入っている。「どこにいたの？」じゃなくて「どこにいたか知ってるよ」に近い。*"
     },
     "day3_after_sea_noyuna_0": {
-        "name": "",
         "text": "*セアの目が僕を読んでいる。微笑みはそのまま。でもその視線は――確認だ。*"
     },
     "day3_after_sea_noyuna_0a": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「一人だったの？」"
     },
     "day3_after_sea_noyuna_0b": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「うん、ちょっと休んでた。」"
     },
     "day3_after_sea_noyuna_0c": {
-        "name": "",
         "text": "*セアが首を傾ける。2秒。3秒。視線が僕の目から離れない。*"
     },
     "day3_after_sea_noyuna": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……最近、ちょっと変わった気がする。{name}。」"
     },
     "day3_after_sea_noyuna_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「何が？」"
     },
     "day3_after_sea_noyuna_3": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「分からない。ただ……遠くなってる感じ。」"
     },
     "day3_after_sea_noyuna_4": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……言ってないことがあるなら、言って。私は{name}の味方だから。」"
     },
     "day3_after_sea_noyuna_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが微笑む。口角が正確に上がる。一分の隙もない笑顔。――腕をさすった。なぜか寒気がする。*"
     },
     "day3_after_sea_noyuna_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……まだ三日しか経っていないのに「味方」だなんて。温かい言葉のはずなのに、どこか重い。*"
     },
     "day3_after_sea_4": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「ユナと二人でいたんでしょ。」"
     },
     "day3_after_sea_4a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*「いたんでしょ。」確認じゃなくて確定だ。誰かに聞いたのか、それとも自分で見たのか。*\n\n*セアの目が僕を読んでいる。反応を見ている。どう答えるか、目をどこに向けるか、手をどこに置くか。*"
     },
     "day3_after_sea_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*なんて答える？*",
         "choices": [
             "正直に言う",
@@ -193,95 +191,95 @@
         ]
     },
     "day3_after_sea_truth": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「うん、ユナが見せたいものがあるって言うから。」"
     },
     "day3_after_sea_truth_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアの表情が変わる。微かに。まぶたが一度震える。*"
     },
     "day3_after_sea_truth_3": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「そう、正直なんだね。……正直なの、好きだよ。」"
     },
     "day3_after_sea_truth_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが窓の外を見る。しばらく。廊下には二人以外誰もいない。日差しがセアの顔の半分を照らしている。*"
     },
     "day3_after_sea_truth_5": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……何を見せてもらったの？」"
     },
     "day3_after_sea_truth_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……写真。学校の写真。」"
     },
     "day3_after_sea_truth_7": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「学校の写真……」\n\n*セアが繰り返す。その声に感情がない。空っぽだ。*"
     },
     "day3_after_sea_truth_8": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……私もたまに考えるよ。なんで自分がこんなことしてるのかって。」\n\n*セアの目つきがおかしい。笑っているのに……今にも泣き出しそうでもあるし、叫びだしそうでもある、妙にピントのずれた表情だ。*"
     },
     "day3_after_sea_truth_9": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……なんでもない。忘れて。」\n\n*セアが振り返る。背中が小さい。*"
     },
     "day3_after_sea_lie": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「給食室にいたけど？なんで？」"
     },
     "day3_after_sea_lie_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアの目が細くなる。笑顔のまま。口角は上がっているのに目だけ冷たくなるあの表情。*"
     },
     "day3_after_sea_lie_3": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……今また目を左に逸らしたでしょ。嘘つくたびにそうするよね。」"
     },
     "day3_after_sea_lie_3a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*声が低い。囁くように。これが悲しみなのか、警告なのか区別がつかない。*"
     },
     "day3_after_sea_lie_4": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……私に隠そうなんて思わないで。」"
     },
     "day3_after_sea_lie_4a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……当たっている。嘘をつくとき目を左に逸らす癖。でも、なんでセアがそれを知っているんだ？まだ三日しか経っていないのに。*"
     },
     "day3_after_sea_lie_5": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……次は正直に言って。私は{name}の味方だから。」"
     },
     "day3_after_sea_lie_5a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが笑う。今度は目も笑っている。でもその笑顔の方がもっと怖い。*"
     },
     "day3_after_eunsu": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*職員室のドアの前でためらった。放課後でほとんどの先生が帰った後だ。中に明かりがついている。*"
     },
     "day3_after_eunsu_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ドアが半分開いている。ウンス先生が机に座って何かを書いている。僕に気づいていないようだ。*"
     },
     "day3_after_eunsu_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*机の上に書類が広げられている。ここからでも見える。黄色い紙。表の形式。上に太い文字。**「被験者管理台帳」**。*\n\n*被験者？*"
     },
     "day3_after_eunsu_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ウンス先生が席を立つ。電話がかかってきたようだ。廊下の反対側に歩いていく。*"
     },
     "day3_after_eunsu_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*書類が開いたまま残されている。*"
     },
     "day3_after_eunsu_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*書類を見るべきか？*",
         "choices": [
             "こっそり読む",
@@ -289,151 +287,150 @@
         ]
     },
     "day3_after_eunsu_peek": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*足音を殺して机に近づいた。指先が冷たい。書類を手に取ったが紙が微かに揺れた――手が震えているんだ。*\n\n*書類は古いものだ。角が折れていて、コーヒーの染みがついている。最近作ったものじゃない。*"
     },
     "day3_after_eunsu_peek_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*番号と日付が並んでいる。名前の欄は……ほとんど空白だ。番号だけ。*"
     },
     "day3_after_eunsu_peek_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*#1……日付：2023.03.02。名前欄：空白。状態：「終了」*\n\n*#3……日付：2023.09.15。名前欄：空白。状態：「終了」*\n\n*#7……日付：2024.08.20。名前欄：空白。状態：「終了」*"
     },
     "day3_after_eunsu_peek_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*#7の横に赤ボールペンでメモが付いている：**「失敗――残存反応。想定外の変数発生。処理保留。」***\n\n*……失敗？残存反応？処理？*"
     },
     "day3_after_eunsu_peek_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*手が震える。ページをめくった。*\n\n*#13――僕の名前が書いてある。日付：今週の月曜日。状態欄は空白。まだ記録されていない。*"
     },
     "day3_after_eunsu_peek_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……12行。12の番号。名前のない行が12。そして僕の名前が書かれた13番目。*\n\n*名前がない。以前の12人の名前が全部消されている。まるで存在そのものが削除されたかのように。*\n\n*「終了」が何を意味するのか。転校？退学？それとも……それ以上？*"
     },
     "day3_after_eunsu_peek_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*足音が聞こえる。顔を上げた。*"
     },
     "day3_after_eunsu_peek_8": {
-        "name": "パク・ウンス",
+        "speaker": "eunsu_full",
         "text": "「ああ、それ？転校生の相談記録を整理してたんだよ。どうした、自分の名前が書いてあるか気になった？」"
     },
     "day3_after_eunsu_peek_8a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ウンス先生がドアの前に立っている。笑っている。**この人は僕が見るのを見せたんだ。**電話は口実だったかもしれない。*"
     },
     "day3_after_eunsu_peek_9": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ウンス先生がゆっくり歩いてきて書類を閉じる。急がずに。余裕を持って。*"
     },
     "day3_after_eunsu_peek_10": {
-        "name": "パク・ウンス",
+        "speaker": "eunsu_full",
         "text": "「真面目に勉強してるみたいで良かったよ。馴染んできたかな？」"
     },
     "day3_after_eunsu_peek_11": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……笑っている。この人は最初からずっと笑っている。一度も笑みを消したことがない。それが今は怖い。*"
     },
     "day3_after_eunsu_ignore": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……ここで見るべきじゃない。目を逸らした。足音を殺して後ずさった。*"
     },
     "day3_after_alone": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*帰ろうとしているのに足が旧館に向かう。なぜかわからない。体が先に動く。*"
     },
     "day3_after_alone_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*旧館は古い建物だ。使われていない教室が並んでいる。廊下で蛍光灯が一つチカチカしている。*"
     },
     "day3_after_alone_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*足音が壁にぶつかって跳ね返ってくる。自分の足音しかない。放課後の活動が終わったから生徒はみんな帰ったはずだけど、それにしてもこの静けさは異常だ。*\n\n*廊下を歩く。自分の足音だけが響く。コツ。コツ。コツ。*"
     },
     "day3_after_alone_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*3番目の教室を通りかかったとき――立ち止まった。*\n\n*音が聞こえる。ドアの向こうから。低い機械音。「ウィーーーン」という一定の振動音。*\n\n*……教室なのに機械の音がなぜする？*"
     },
     "day3_after_alone_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ドアに手を当ててみた。微かな振動を感じる。鍵がかかっている。*\n\n*ドアの横の窓ガラスが不透明に塗られている。中が見えない。*"
     },
     "day3_after_alone_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*膝をついてドアの隙間を覗いた。中から淡い緑色の光が漏れている。蛍光灯の色じゃない。*\n\n*耳を当ててみた。機械音の間に何かもっとある。「ピッ……ピッ……ピッ……」規則的な電子音。医療機器から出るような音。*"
     },
     "day3_after_alone_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*立ち上がろうとして膝が震えた。――ここ本当に学校か？*"
     },
     "day3_after_alone_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*立ち上がった。廊下の奥に掲示板がある。古いお知らせが貼ってある。その下、壁に引っかき跡。*"
     },
     "day3_after_alone_9": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*名札サイズの四角がいくつも刻まれている。一つ、二つ……十二個。全部削り取った跡だ。*\n\n*十二個の名札がかけられていて、取り外されたもの。*\n\n*三回数えた。十二個。*"
     },
     "day3_after_alone_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*足が震える。この廊下が嫌だ。この建物が嫌だ。でもなぜここに来たのか――なぜ体が勝手にここに来たのか――それがもっと怖い。*"
     },
     "day3_after_alone_11": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……戻ろう。ここにこれ以上いたらだめだ。*"
     },
     "day3_after_yuna_check": {
-        "name": "",
         "text": ""
     },
     "day3_after_yuna": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*放課後の活動が終わって出ようとしたら、ユナが花壇の後ろに立っていた。制服の上にカーディガンを羽織って、カメラを首から下げたまま。*\n\n*周りを見回す。誰もいない。*"
     },
     "day3_after_yuna_2": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「先輩。」"
     },
     "day3_after_yuna_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナが近づいてくる。ポケットから小さなものを取り出す。マイクロSDカード。*"
     },
     "day3_after_yuna_4": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「さっき見せた写真……コピーです。持っていてください。」"
     },
     "day3_after_yuna_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……なんで僕に？」"
     },
     "day3_after_yuna_6": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「私が持っていると危険なんです。先生たちが……気づいたら没収されます。」"
     },
     "day3_after_yuna_6a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナの手が冷たい。カードを渡すとき僕の手に触れた。*"
     },
     "day3_after_yuna_7": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「気をつけてください、先輩。ここで長く持ちこたえた人ほど……もっと危険なんです。」"
     },
     "day3_after_yuna_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「何が危険なの？」\n\n*ユナが口を開く。閉じる。何かを言いかけて飲み込んだようだ。*"
     },
     "day3_after_yuna_9": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「……とにかく気をつけてください。特に夜。」"
     },
     "day3_after_yuna_9a": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ユナが振り返る。早足で。花壇の角を曲がって消えた。*\n\n*手に残ったSDカードが小さくて軽い。この中に13人の同じ顔が入っている。*\n\n*ポケットの奥深くにしまった。*"
     },
     "day3_after_end": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*学校を出る。夕陽の下、グラウンドが赤い。……なぜこんなに落ち着かないんだろう。*"
     }
 }

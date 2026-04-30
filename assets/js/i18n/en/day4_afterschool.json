@@ -1,18 +1,18 @@
 {
     "day4_after_start": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*After school. The bell rang. The classroom empties out. Everything I learned today swirls in my head.*"
     },
     "day4_after_start_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The sounds I heard beyond the basement door. Yuna's groan. Ms. Eunsu's key. ...The true face of this school.*"
     },
     "day4_after_start_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea is heading toward the student council room. Eunsu should be in the faculty office. Riin is in the nurse's office. ...Who do I go to first?*"
     },
     "day4_after_choice": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I need to decide.*",
         "choices": [
             "Follow Sea",
@@ -21,51 +21,51 @@
         ]
     },
     "day4_after_sea_route": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I followed Sea to the student council room.*"
     },
     "day4_after_sea_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea locks the door. Click. The sound of the lock echoed especially loud. In the empty hallway.*"
     },
     "day4_after_sea_3": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "I wanted it to be just us today."
     },
     "day4_after_sea_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea sits down. Her eyes are different from usual. Bloodshot. Traces of crying.*"
     },
     "day4_after_sea_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Through the window, I can see the schoolyard. Since school's out, students are leaving in small groups. All with the same smile.*"
     },
     "day4_after_sea_6": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...{name}."
     },
     "day4_after_sea_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea looks at me. For a long time. As if trying to memorize my face.*"
     },
     "day4_after_sea_8": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...How many times has it been?"
     },
     "day4_after_sea_9": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...What do you mean?"
     },
     "day4_after_sea_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea's lips tremble. She starts to speak, stops. Starts again, stops. On the third try, she opens her mouth.*"
     },
     "day4_after_sea_11": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "It's nothing... forget it."
     },
     "day4_after_sea_force": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*'Forget it.' How cruel that word is in this situation -- only Sea knows. Her eyes wait for my answer.*",
         "choices": [
             "Okay",
@@ -73,123 +73,123 @@
         ]
     },
     "day4_after_sea_accept": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...Whichever I picked, it was the same. There was only one answer from the start.*"
     },
     "day4_after_sea_accept_2": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Just stay by my side. Always."
     },
     "day4_after_sea_accept_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea looks out the window. The sunset paints the student council room in red.*"
     },
     "day4_after_sea_confess_1": {
-        "text": "...Twelve times.",
-        "name": "Han Sea"
+        "speaker": "sea_full",
+        "text": "...Twelve times."
     },
     "day4_after_sea_confess_2": {
-        "text": "...What?",
-        "name": "Me"
+        "speaker": "me",
+        "text": "...What?"
     },
     "day4_after_sea_confess_3": {
-        "text": "Twelve times... Each time, in this student council room, you smiled and said, \"I'll come again tomorrow.\" Each time, you told me, \"Thank you.\" Each time, you said my lunchbox was delicious.",
-        "name": "Han Sea"
+        "speaker": "sea_full",
+        "text": "Twelve times... Each time, in this student council room, you smiled and said, \"I'll come again tomorrow.\" Each time, you told me, \"Thank you.\" Each time, you said my lunchbox was delicious."
     },
     "day4_after_sea_confess_4": {
-        "text": "And each time... on the fifth day, you forgot me.",
-        "name": "Han Sea"
+        "speaker": "sea_full",
+        "text": "And each time... on the fifth day, you forgot me."
     },
     "day4_after_sea_confess_5": {
-        "text": "*Tears stream from Sea's eyes. She doesn't wipe them away.*",
-        "name": "Me"
+        "speaker": "me",
+        "text": "*Tears stream from Sea's eyes. She doesn't wipe them away.*"
     },
     "day4_after_sea_confess_6": {
-        "text": "The ninth time... you made me a bracelet. It had 'Sea' engraved on it. I still have it.",
-        "name": "Han Sea"
+        "speaker": "sea_full",
+        "text": "The ninth time... you made me a bracelet. It had 'Sea' engraved on it. I still have it."
     },
     "day4_after_sea_confess_7": {
-        "text": "*Sea rolls up her sleeve. An old string bracelet is wrapped around her wrist. The string is frayed. As if it's years old.*",
-        "name": "Me"
+        "speaker": "me",
+        "text": "*Sea rolls up her sleeve. An old string bracelet is wrapped around her wrist. The string is frayed. As if it's years old.*"
     },
     "day4_after_sea_confess_8": {
-        "text": "The tenth time, you saw this and asked, 'It's pretty, who gave it to you?'",
-        "name": "Han Sea"
+        "speaker": "sea_full",
+        "text": "The tenth time, you saw this and asked, 'It's pretty, who gave it to you?'"
     },
     "day4_after_sea_confess_9": {
-        "text": "You made it for me. You just don't remember.",
-        "name": "Han Sea"
+        "speaker": "sea_full",
+        "text": "You made it for me. You just don't remember."
     },
     "day4_after_sea_confess_10": {
-        "text": "*Sea smiled. Crying.*",
-        "name": "Me"
+        "speaker": "me",
+        "text": "*Sea smiled. Crying.*"
     },
     "day4_after_sea_12loop": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea hugged me. Her hands tighten behind my back.*"
     },
     "day4_after_sea_12loop_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea murmurs. Her lips close enough to brush my ear.*"
     },
     "day4_after_sea_12loop_3": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Seojin."
     },
     "day4_after_sea_12loop_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...What?*"
     },
     "day4_after_sea_12loop_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...Who?"
     },
     "day4_after_sea_12loop_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea's body went rigid. She seems to realize what she just said.*"
     },
     "day4_after_sea_12loop_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seojin. The name on the third name tag. Park Seojin.*"
     },
     "day4_after_sea_12loop_8": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...It's nothing."
     },
     "day4_after_sea_12loop_9": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea doesn't let go. If anything, she holds me tighter. Her shoulders are trembling.*"
     },
     "day4_after_sea_12loop_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*When she rolled up her sleeve, I saw it. An old thread bracelet on her wrist. The threads are frayed. Looks years old.*"
     },
     "day4_after_sea_12loop_11": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...A name is engraved on it. 'Sea.' A handmade bracelet. -- In my handwriting.*"
     },
     "day4_after_sea_12loop_12": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea noticed. That I'm looking at the bracelet.*"
     },
     "day4_after_sea_12loop_13": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Pretty, isn't it?"
     },
     "day4_after_sea_12loop_14": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*She's smiling. While crying.*"
     },
     "day4_after_ft_sea_pre": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea grabbed my arm. I tried to get up, but she won't let go.*"
     },
     "day4_after_ft_sea": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Say whatever you want. Nothing's going to change anyway."
     },
     "day4_after_ft_sea_choice": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*What am I supposed to say. Sea's hand is still gripping my arm.*",
         "choices": [
             "...Sorry. I'm not running away. My head's just a mess.",
@@ -198,255 +198,248 @@
         ]
     },
     "day4_after_ft_sea_apologize": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Heard that thirteen times. I know you meant it every time."
     },
     "day4_after_ft_sea_ask": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...I didn't stand it. Every time was the first time. Like for you."
     },
     "day4_after_ft_sea_promise": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Heard that one too. The one promising was you. The one who didn't keep it was also you. Every time."
     },
     "day4_after_ft_sea_quiet": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Forget it. Go."
     },
     "day4_after_ft_sea_post": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea let go. No matter what I said, her eyes never changed. Not sad, not angry -- just old resignation.*"
     },
     "day4_after_eunsu_route": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I headed to the faculty office. I can't avoid this anymore. I need to ask directly.*"
     },
     "day4_after_eunsu_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Eunsu sees me and sighs. A tired expression. Dark circles under her eyes. She's alone in the faculty office. All the other teachers have left their seats. -- Did they leave, or were they made to leave?*"
     },
     "day4_after_eunsu_3": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...You went to the old building."
     },
     "day4_after_eunsu_4": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "You went all the way to the door?"
     },
     "day4_after_eunsu_4a": {
-        "text": "*The teacher speaks calmly as she pours coffee. Her hand doesn't tremble. As if she'd been preparing for this conversation.*",
-        "name": "Me"
+        "speaker": "me",
+        "text": "*The teacher speaks calmly as she pours coffee. Her hand doesn't tremble. As if she'd been preparing for this conversation.*"
     },
     "day4_after_eunsu_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*She makes coffee. Two cups. She sets one in front of me.*"
     },
     "day4_after_eunsu_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...Two sugars, half cream. Exactly the same as what I put in mine yesterday at the faculty office.*"
     },
     "day4_after_eunsu_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...I never told her. She only watched me do it once yesterday.*"
     },
     "day4_after_eunsu_8": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "That's right, isn't it? Your preference."
     },
     "day4_after_eunsu_9": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Teacher smiles. It is not the warm smile from Day 1, but relief: the kind shown when a controlled variable returns to its place.*"
     },
     "day4_after_eunsu_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The desk drawer is half open. I can see Post-it notes inside. Dozens of them. Dense handwriting. -- All names. Different names. Some with lines crossed through them.*"
     },
     "day4_after_eunsu_11": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*On the bottom Post-it, my name. No line through it.*"
     },
     "day4_after_eunsu_12": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...You saw everything. The basement."
     },
     "day4_after_eunsu_13": {
-        "name": "Me",
+        "speaker": "me",
         "text": "It's okay, {name}. Teacher will sort it out again."
     },
     "day4_after_eunsu_14": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "*Teacher's hand stopped above my head, as if she had been about to pat me, then realized for herself how strange that was.*"
     },
     "day4_after_eunsu_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Her hand strokes my hair. Gently.*"
     },
     "day4_after_riin_route": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I went to the nurse's office. Not for medicine. There's something I need to confirm.*"
     },
     "day4_after_riin_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Riin is sitting at her desk. She was organizing documents. When I walked in -- her hand stopped. She flipped the papers over. Slowly. Casually. But I saw it. The title: 'S-13 Dosage Records.'*"
     },
     "day4_after_riin_3": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...What. Don't startle me."
     },
     "day4_after_riin_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The eyes watching me are different from usual. Guarded eyes. ...No, not guarded. Assessing. Eyes gauging what I know.*"
     },
     "day4_after_riin_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "Riin. I went to the basement door in the old building."
     },
     "day4_after_riin_5a": {
-        "text": "Huh?",
-        "name": "Kang Riin"
+        "speaker": "riin_full",
+        "text": "Huh?"
     },
     "day4_after_riin_5b": {
-        "text": "You're not trying to hide it anymore, right?",
-        "name": "Me"
+        "speaker": "me",
+        "text": "You're not trying to hide it anymore, right?"
     },
     "day4_after_riin_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Silence. Three seconds. Riin's expression doesn't change. No surprise. No panic.*"
     },
     "day4_after_riin_7": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...So you went there."
     },
     "day4_after_riin_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*One sentence. Calmly. As if -- she'd been waiting for this moment. Riin stands up. Checks the nurse's office door. Locks it.*"
     },
     "day4_after_riin_9": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "What did you see there?"
     },
     "day4_after_riin_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "I heard Yuna's voice from inside the door. And I saw Ms. Eunsu unlock the door with a key and go in."
     },
     "day4_after_riin_11": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Riin lets out a sigh. Long. Like setting down a burden she's been carrying.*"
     },
     "day4_after_riin_12": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...That was fast. Faster than the twelfth."
     },
     "day4_after_riin_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Riin reaches into her pocket and pulls something out. A key. A small metal key.*"
     },
     "day4_after_riin_16": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*She starts to hold it out to me -- then stops.*"
     },
     "day4_after_riin_17": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...Not yet."
     },
     "day4_after_riin_18": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*She puts the key back in her pocket.*"
     },
     "day4_after_riin_19": {
-        "name": "Me",
+        "speaker": "me",
         "text": "What is that?"
     },
     "day4_after_riin_20": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Tomorrow."
     },
     "day4_after_riin_21": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Riin looks at me. For the first time -- with eyes that aren't a school nurse's.*"
     },
     "day4_after_riin_22": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Don't do anything tonight. Don't tell anyone about this."
     },
     "day4_after_riin_23": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Especially not Eunsu."
     },
     "day4_after_riin_24": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Her voice drops lower.*"
     },
     "day4_after_riin_25": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...I'll buy you time. Just until tomorrow morning."
     },
     "day4_after_riin_26": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Riin looks out the window. The setting sun. The nurse's office is bathed in orange light.*"
     },
     "day4_after_riin_27": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...I can't do this anymore either. This."
     },
     "day4_after_end": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The sun has set. The school sinks into darkness. Tomorrow is coming. The fifth day.*"
     },
     "day4_xover_yuna_1": {
-        "name": "",
         "text": "*As I leave the classroom -- Yuna is standing in the hallway. She's been waiting.*"
     },
     "day4_xover_yuna_2": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...Do you know Junho Lee?"
     },
     "day4_xover_yuna_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...Who?"
     },
     "day4_xover_yuna_4": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "I figured."
     },
     "day4_xover_yuna_5": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Every time. Same face walks in. Says they don't know."
     },
     "day4_xover_yuna_6": {
-        "name": "",
         "text": "*(She takes out a photo album)*"
     },
     "day4_xover_yuna_7": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "They're all here. From number one to now."
     },
     "day4_xover_yuna_8": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Every single one -- is you."
     },
     "day4_xover_yuna_9": {
-        "name": "",
         "text": "*I looked at the album. Same uniform. Same hallway. Same face -- only the expressions differ. Twelve photos.*"
     },
     "day4_xover_yuna_10": {
-        "name": "",
         "text": "*Yuna closed the album and walked away in silence.*"
     },
     "day4_xover_yuna_skip": {
-        "name": "",
         "text": "*As I leave the classroom -- Yuna is standing in the hallway.*"
     },
     "day4_xover_yuna_skip_met": {
-        "name": "",
         "text": "*As I leave the classroom -- Yuna is standing in the hallway.*"
     },
     "day4_xover_yuna_skip_2": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...Never mind. It's nothing."
     },
     "day4_xover_yuna_skip_3": {
-        "name": "",
         "text": "*Yuna shook her head and walked away.*"
     }
 }

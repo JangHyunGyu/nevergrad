@@ -1,10 +1,9 @@
 {
     "day1_lunch_start": {
-        "name": "",
         "text": "*Die vierte Stunde ist vorbei und die Essensglocke läutet. Die Schüler stehen alle gleichzeitig auf.*"
     },
     "day1_lunch_choice": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "*Mittagspause. Wohin soll ich gehen?*",
         "choices": [
             "Sea hat mich gefragt, ob wir zusammen essen wollen, also bleibe ich im Klassenzimmer.",
@@ -14,279 +13,246 @@
         ]
     },
     "day1_lunch_sea_1": {
-        "name": "",
         "text": "*Sea schiebt zwei Tische zusammen und holt eine Brotdose aus ihrer Tasche.*"
     },
     "day1_lunch_sea_2": {
-        "name": "",
         "text": "*...Es ist eine zweistöckige Brotdose. Eindeutig keine Einzelportion.*"
     },
     "day1_lunch_sea_3": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "...Gehört das alles dir?"
     },
     "day1_lunch_sea_4": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Na? Gut genug, um es zu verkaufen, oder?"
     },
     "day1_lunch_sea_5": {
-        "name": "",
         "text": "*Sie öffnet den Deckel. Gerolltes Omelett, Miniwürstchen, Reisbällchen, Brokkoli, Kirschtomaten. Farblich sauber angeordnet.*"
     },
     "day1_lunch_sea_6": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "...Moment, das hast du wirklich alles selbst gemacht?"
     },
     "day1_lunch_sea_7": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Probier mal. Ich hatte das Gefühl, das würde dir besser schmecken als gekauftes Brot."
     },
     "day1_lunch_sea_8": {
-        "name": "",
         "text": "*Sea nimmt ein Stück gerolltes Omelett mit ihren Essstäbchen auf und hält es mir hin.*"
     },
     "day1_lunch_sea_9": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Hier, probier erst mal das Omelett. Ich habe es eher süß gemacht."
     },
     "day1_lunch_sea_10": {
-        "name": "",
         "text": "*...Es ist gut. Richtig gut.*"
     },
     "day1_lunch_sea_11": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Das ist besser als gekauft?"
     },
     "day1_lunch_sea_12": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Wirklich?"
     },
     "day1_lunch_sea_13": {
-        "name": "",
         "text": "*Sea sieht aufrichtig glücklich aus.*"
     },
     "day1_lunch_sea_14": {
-        "name": "",
         "text": "*Danach haben wir uns noch eine ganze Weile unterhalten.*"
     },
     "day1_lunch_sea_15": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Bringst du immer so eine Brotdose mit, Sea?"
     },
     "day1_lunch_sea_16": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Ja. Die Schulkantine ist ja ganz nett, aber selbstgemacht schmeckt besser."
     },
     "day1_lunch_sea_17": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Scheint aber viel für eine Person zu sein."
     },
     "day1_lunch_sea_18": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "..."
     },
     "day1_lunch_sea_19": {
-        "name": "",
         "text": "*Sea hält einen Moment inne und lächelt dann.*"
     },
     "day1_lunch_sea_20": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Ich mache meistens viel. Es freut mich, dass du so viel isst."
     },
     "day1_lunch_sea_21": {
-        "name": "",
         "text": "*Die Brotdose ist fast leer. Es bleibt noch etwas Zeit.*"
     },
     "day1_lunch_sea_22": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Ach ja, hör mal hier."
     },
     "day1_lunch_sea_23": {
-        "name": "",
         "text": "*Sea reicht mir einen ihrer Ohrhörer. Ein sanfter Gitarrensong.*"
     },
     "day1_lunch_sea_24": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Oh, was ist das?"
     },
     "day1_lunch_sea_25": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Das höre ich in letzter Zeit oft. Die Texte sind schön."
     },
     "day1_lunch_sea_26": {
-        "name": "",
         "text": "*Ich höre still zu. Nicht schlecht.*"
     },
     "day1_lunch_sea_27": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Ist gut. Du hast einen guten Musikgeschmack."
     },
     "day1_lunch_sea_28": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Haha, du sagst das, als wäre es selbstverständlich."
     },
     "day1_lunch_sea_29": {
-        "name": "",
         "text": "*Wir sprachen über Musik, YouTube, und die Zeit verging wie im Flug. Es fühlte sich angenehm an. Obwohl es der erste Tag ist.*"
     },
     "day1_lunch_yuna_1": {
-        "name": "",
         "text": "*Ich betrat die Bibliothek. Sie ist fast leer, da Mittagspause ist.*"
     },
     "day1_lunch_yuna_2": {
-        "name": "",
         "text": "*Ich wollte mich gerade auf einen Eckplatz setzen, als ich ein 'Klick' hörte.*"
     },
     "day1_lunch_yuna_3": {
-        "name": "",
         "text": "*Ein Mädchen mit einer Kamera ist mit erschrockenem Ausdruck erstarrt. Klein gebaut, große Kamera.*"
     },
     "day1_lunch_yuna_4": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "...Hast du gerade ein Foto von mir gemacht?"
     },
     "day1_lunch_yuna_5": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "N-nein...! Ich bin im Fotoclub, ich habe die Atmosphäre der Bibliothek fotografiert und du bist plötzlich hereingekommen..."
     },
     "day1_lunch_yuna_6": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Ah... Es tut mir leid. Ich lösche es sofort."
     },
     "day1_lunch_yuna_7": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Nein, schon gut. Du bist also im Fotoclub."
     },
     "day1_lunch_yuna_8": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Ja...! Ich bin Choi Yuna, erste Klasse. Du bist neu hier, oder?"
     },
     "day1_lunch_yuna_9": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Ja. Ich bin {name}. Freut mich, dich kennenzulernen."
     },
     "day1_lunch_yuna_10": {
-        "name": "",
         "text": "*Yuna drückt die Kamera an ihre Brust und senkt den Kopf.*"
     },
     "day1_lunch_yuna_11": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Kommst du oft in die Bibliothek? Ich bin jeden Tag hier."
     },
     "day1_lunch_yuna_12": {
-        "name": "",
         "text": "*Yuna zeigt mir ihre Fotos. Schullandschaft, Kirschblüten, eine Katze am Gymnasium.*"
     },
     "day1_lunch_yuna_13": {
-        "name": "",
         "text": "*Beim Durchscrollen fand ich eine Serie desselben Kirschbaums, zu verschiedenen Tageszeiten aufgenommen. Morgen, Mittag, Sonnenuntergang, Nacht.*"
     },
     "day1_lunch_yuna_14": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "...Du hast denselben Baum viermal fotografiert?"
     },
     "day1_lunch_yuna_15": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Ich liebe es, wie sich die Farben mit dem Licht ändern. Ich habe diese über einen Monat hinweg aufgenommen."
     },
     "day1_lunch_yuna_16": {
-        "name": "",
         "text": "*Eine absolute Fotografie-Nerdin. Auf diesem Niveau könnte sie auch eine Profi sein.*"
     },
     "day1_lunch_riin_1": {
-        "name": "",
         "text": "*Ich öffnete die Tür zum Krankenzimmer. Ein leichter Geruch nach Desinfektionsmittel.*"
     },
     "day1_lunch_riin_2": {
-        "name": "",
         "text": "*Kurzer, dunkelvioletter Bob, weißer Kittel, dünnrandige Brille. Sie lehnt sich in ihrem Stuhl zurück und liest etwas.*"
     },
     "day1_lunch_riin_3": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Oh, am ersten Tag gleich ins Krankenzimmer? Geht es dir nicht gut?"
     },
     "day1_lunch_riin_4": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Ich habe leichte Kopfschmerzen."
     },
     "day1_lunch_riin_5": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Ach so? Setz dich."
     },
     "day1_lunch_riin_6": {
-        "name": "",
         "text": "*Frau Riin berührt meine Stirn. Ihre Hand ist kühl.*"
     },
     "day1_lunch_riin_7": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Kein Fieber. Das sind Spannungskopfschmerzen. Völlig normal am ersten Tag."
     },
     "day1_lunch_riin_8": {
-        "name": "",
         "text": "*Sie öffnet eine Schublade und nimmt lächelnd etwas Medizin heraus.*"
     },
     "day1_lunch_riin_9": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Hast du schon gegessen? Du solltest keine Medizin auf nüchternen Magen nehmen."
     },
     "day1_lunch_riin_10": {
-        "name": "",
         "text": "*Sie reicht mir einen Energieriegel.*"
     },
     "day1_lunch_riin_11": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Wenn du müde bist, kannst du dich hier ruhig etwas ausruhen."
     },
     "day1_lunch_riin_12": {
-        "name": "",
         "text": "*Das Krankenzimmer ist gemütlich.*"
     },
     "day1_lunch_riin_13": {
-        "name": "",
         "text": "*...Ich schloss für einen Moment die Augen. Ob es die Medizin ist oder nicht, der Schlaf schleicht sich ein...*"
     },
     "day1_lunch_riin_14": {
-        "name": "",
         "text": "*...Ich öffnete die Augen. Irgendwann war eine Decke über mich gelegt worden. Warme Sonnenstrahlen strömen durch das Fenster herein.*"
     },
     "day1_lunch_riin_15": {
-        "name": "Kang Riin",
+        "speaker": "riin_full",
         "text": "Du bist wach. Du hast etwa 15 Minuten geschlafen."
     },
     "day1_lunch_riin_16": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Ah... Entschuldigung, ich habe nur..."
     },
     "day1_lunch_riin_17": {
-        "name": "Kang Riin",
+        "speaker": "riin_full",
         "text": "Nichts zu entschuldigen. Dafür ist das Krankenzimmer da. Geht es deinem Kopf besser?"
     },
     "day1_lunch_riin_18": {
-        "name": "Ich",
+        "speaker": "me",
         "text": "Ja, viel besser. Das Krankenzimmer war warm."
     },
     "day1_lunch_alone_1": {
-        "name": "",
         "text": "*Ich stieg die Treppe hinauf und öffnete die Dachtür. Der Wind schlägt mir voll entgegen.*"
     },
     "day1_lunch_alone_2": {
-        "name": "",
         "text": "*Ich esse einen Reisball, während ich auf den Sportplatz hinunterblicke.*"
     },
     "day1_lunch_alone_3": {
-        "name": "",
         "text": "*...Huch? In der Ecke des Feldes scheint jemand eine Kamera hierher zu richten...*"
     },
     "day1_lunch_alone_4": {
-        "name": "",
         "text": "*Nein, es ist zu weit weg. Muss meine Einbildung sein.*"
     },
     "day1_lunch_alone_5": {
-        "name": "",
         "text": "*...Unter dem Geländer sind Kratzspuren. Alte Rillen. Könnte Schrift sein... aber ich kann es nicht lesen.*"
     },
     "day1_lunch_end": {
-        "name": "",
         "text": "*Das Mittagessen ist vorbei. Zeit für den Nachmittagsunterricht.*"
     }
 }

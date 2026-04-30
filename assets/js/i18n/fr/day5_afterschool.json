@@ -1,82 +1,80 @@
 {
     "day5_after_start": {
-        "name": "",
         "text": "*...*"
     },
     "day5_after_branch": {
-        "name": "",
         "text": ""
     },
     "day5_after_cage_1": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Tu es sûr ?"
     },
     "day5_after_cage_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Oui."
     },
     "day5_after_cage_3": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La professeure a souri. Pour la première fois en 12 cycles, c'était le sourire de quelqu'un qui n'avait plus à attendre le résultat.*"
     },
     "day5_after_cage_4": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Alors ça va."
     },
     "day5_after_cage_5": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La professeure m'a pris par les épaules et m'a remis face à ma place. Ses doigts étaient froids.*"
     },
     "day5_after_cage_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Je suis retourné en classe. Je me suis assis. Sea s'assoit ? cétéôté de moi. L'infirmière Riin me tend du thé. Tout le monde sourit.*"
     },
     "day5_after_cage_7": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...{name} doit seulement rester ici. À la place inscrite sur le registre d'appel."
     },
     "day5_after_cage_8": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*J'ai bu le thé. C'est chaud. C'est agréable. ...Quelque part — il me semble entendre une voix. 'Fuis', dit-elle. Mais de loin, de très loin.*"
     },
     "day5_after_cage_9": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...Ce sourire a-t-il toujours été aussi étranger ? Non. Il est familier. ...Trop familier. ...Pourquoi est-ce si confortable ?*"
     },
     "day5_after_cage_10": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...J'ai l'impression d'oublier quelque chose. Quoi donc ? ...Ce n'est rien. Je peux oublier. Ici, je suis en sécurité.*"
     },
     "day5_after_caught_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...J'ai ouvert les yeux. Les néons clignotent. Plafond en béton. Le sous-sol.*"
     },
     "day5_after_caught_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*J'ai essayé de bouger les mains. Elles ne bougent pas. ...Des sangles en cuir. Attaché à une chaise.*"
     },
     "day5_after_caught_3": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*C'est identique à ce que j'ai vu dans le rêve de Seolhwa. La même chaise. Les mêmes sangles. Les mêmes néons.*"
     },
     "day5_after_caught_4": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Tu t'es réveillé, {name}."
     },
     "day5_after_caught_5": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Tu as tenté un écart ? Tu sais à quel point c'est dangereux ?"
     },
     "day5_after_caught_6": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Je vais preparer le dernier examen. Juste une prise de sang et une perfusion, et c'est termine."
     },
     "day5_after_caught_7": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'infirmière Riin désinfecte l'intérieur de mon coude. Le froid du tampon alcoolisé touche ma peau. ...Je ne peux pas abandonner ici.*"
     },
     "day5_after_caught_choice": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...Qu'est-ce que je fais ?*",
         "choices": [
             "Resister",
@@ -84,131 +82,131 @@
         ]
     },
     "day5_after_caught_resist_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*J'ai bande tous mes muscles. Les sangles en cuir s'enfoncent dans mes poignets. Ça fait mal. Peu importe.*"
     },
     "day5_after_caught_resist_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Enlevez vos mains... ! Arrêtez... !"
     },
     "day5_after_caught_resist_3": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Si tu bouges, c'est dangereux. Reste tranquille —"
     },
     "day5_after_caught_resist_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*À cet instant. Le courant a été coupe.*"
     },
     "day5_after_caught_resist_5": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Dans l'obscurité... je sens une main. Froide et translucide. Elle défait les sangles en cuir. ...Seolhwa.*"
     },
     "day5_after_caught_resist_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Les sangles se sont defaites. Seolhwa prend ma main. Je pensais qu'une main translucide ne pourrait pas être saisie... mais elle tient.*"
     },
     "day5_after_caught_resist_7": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Entraîné dans l'obscurité. En étouffant nos pas. Vers la sortie de secours.*"
     },
     "day5_after_caught_submit_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...La force me quitte. Plus d'énergie pour résister. Ma tête retombe. Mes yeux se ferment.*"
     },
     "day5_after_caught_submit_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La seringue touche mon bras. L'aiguille penetre. Un liquide froid se repand dans mes veines.*"
     },
     "day5_after_caught_submit_3": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...Ça se rechauffe. Comme si mon corps fondait. Les pensées se brouillent.*"
     },
     "day5_after_caught_submit_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*J'oublie... quelque chose. Qu'est-ce que j'oublie ? C'était important... c'était quoi...*"
     },
     "day5_after_confront_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Derrière — des pas. Quelqu'un monte l'escalier. Une marche. Une marche. Lentement. Sans courir.*"
     },
     "day5_after_confront_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Les pas se rapprochent. Le bruit de chaussures à talons sur le béton. Les chaussures de Mme Eunsu.*"
     },
     "day5_after_confront_3": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Elle s'est arrêtée. En haut de l'escalier. Mme Eunsu est apparue. Essoufflée. Les cheveux en désordre.*"
     },
     "day5_after_confront_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La professeure reprend son souffle, forçant les coins de ses lèvres vers le haut. Le sourire doux habituel. Mais les muscles de son visage tressaillent légèrement.*"
     },
     "day5_after_confront_5": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "{name}. Arrête-toi là. Le côté de la sortie de secours est une zone fermée."
     },
     "day5_after_confront_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Quand j'ai reculé, le sourire qui s'accrochait au visage de Mme Eunsu est tombé d'un coup. Le masque s'est brisé.*"
     },
     "day5_after_confront_7": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*De la sueur perle sur son front. Des cernes sous les yeux. Je n'étais pas le seul a ne pas avoir dormi cette nuit. Un vent froid de la sortie de secours est passé entre nous.*"
     },
     "day5_after_confront_8": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "À chaque répétition, c'était pareil. Écart, poursuite, récupération, réinitialisation."
     },
     "day5_after_confront_9": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "La 1re fois, j'étais en colère. La 2e, j'ai essayé d'en trouver la ause."
     },
     "day5_after_confront_10": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "À partir de la 3e, j'ai compris. Le problème n'était pas la fuite, mais tes yeux après la réinitialisation."
     },
     "day5_after_confront_11": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Alors cette fois, j'ai essayé d'empêcher l'écart lui-même."
     },
     "day5_after_confront_12": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "J'ai enregistré tes réactions et réduit les stimuli que tu détestais. Je pensais que tu te stabiliserais. Dans les dossiers, c'était le cas."
     },
     "day5_after_confront_13": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Le Jour 1, quand tu es entré en classe. Même si c'était la 13e fois, mes mains ont tremblé. Même si je ne faisais que rouvrir le même rapport."
     },
     "day5_after_confront_14": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Même après 12 fois, je ne m'y habitue pas. Chaque fois que tu me vérifies avec des yeux qui me voient pour la première fois, les dossiers s'effondrent."
     },
     "day5_after_confront_15": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La professeure s'est arrêtée. Devant la sortie de secours. A trois metres de moi. Elle a sorti une seringue de sa poche. Lentement. Comme pour me la montrer.*"
     },
     "day5_after_confront_16": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Le liquide dans la seringue scintille sous le néon. — C'est ça qui a effacé 12 cycles de souvenirs. Ce simple liquide transparent.*"
     },
     "day5_after_confront_17": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "C'est le choix final, {name}. Une injection et la procédure se termine. Ce que tu viens de voir, ta peur, même tes réactions envers moi, tout sera remis en ordre."
     },
     "day5_after_confront_18": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Retour au Jour 1. Dans un état où tu ne sais rien. ...Reviens."
     },
     "day5_after_confront_19": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La main de la professeure tremble. La seringue oscille. Une goutte tombe au sol. Des larmes coulent de ses yeux. Elle ne les essuie pas. Une expression qui sait que ça n'a plus aucun sens.*"
     },
     "day5_after_confront_20": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La seringue et la sortie de secours. L'oubli et la mémoire. La age et le ciel. Seolhwa — est visible. Derrière la professeure. Au bas de l'escalier. Une silhouette floue. Elle ne dit rien. Elle me regarde — c'est tout.*"
     },
     "day5_after_final_choice": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Il suffit de la repousser et de courir. Cette personne n'a pas la force de m'arrêter. Mais mes jambes ne bougent pas. Mon corps, après 12 cycles, se souvient. Si je suis cette voix, on ne me grondera pas. Si je retourne à la place vers laquelle sa main me guide, je serai en sécurité.*",
         "choices": [
             "Non. Je me souviendrai.",
@@ -217,251 +215,248 @@
         ]
     },
     "day5_after_true_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La main de Mme Eunsu tremble. La seringue est tombée au sol. Le verre s'est fracassé contre le carrelage.*"
     },
     "day5_after_true_2": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Alors. Le 13e aussi — s'en va."
     },
     "day5_after_true_3": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La professeure s'est écartée. Les yeux fermés. Comme si elle n'avait plus la force de barrer le chemin.*"
     },
     "day5_after_true_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*J'ai passé la sortie de secours. Avec Yuna. L'escalier de secours derrière l'ancien bâtiment.*"
     },
     "day5_after_true_5": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'air de l'aube est froid. Au-delà de la clôture de l'école — la route est visible. Je me suis retourné.*"
     },
     "day5_after_true_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Seolhwa se tient à l'intérieur de la sortie de secours. Elle ne peut pas franchir la porte.*"
     },
     "day5_after_true_7": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Seolhwa —"
     },
     "day5_after_true_seolhwa_branch": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Va-t'en."
     },
     "day5_after_true_8": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "**Je t'ai dit de partir.**"
     },
     "day5_after_true_9": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Seolhwa a souri. La lumière s'estompe.*"
     },
     "day5_after_true_10": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "J'ai attendu 6 cycles. Que tu sortes."
     },
     "day5_after_true_11": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...J'ai pris fin il y a un an. ...Mais si tu sors, ça me suffit."
     },
     "day5_after_true_11a": {
-        "text": "Je me souviendrai. Lee Seolhwa. Le nom que tu m'as rendu jusqu'au bout.",
-        "name": "Moi"
+        "speaker": "me",
+        "text": "Je me souviendrai. Lee Seolhwa. Le nom que tu m'as rendu jusqu'au bout."
     },
     "day5_after_true_12": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Le corps de Seolhwa devient translucide. Il se dissipe en particules de lumière. Cette lumière — afflue vers moi. S'infiltre dans ma poitrine. ...C'est chaud. Ce n'est pas une hallucination — c'est un souvenir.*"
     },
     "day5_after_forget_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Effacez-moi."
     },
     "day5_after_forget_2": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Tu es sûr ?"
     },
     "day5_after_forget_3": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Si tout cela fait partie de mes souvenirs... alors les 12 lignes sans nom abandonnees dans ce sous-sol sont toutes moi."
     },
     "day5_after_forget_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Je ne peux pas... je ne peux pas supporter ça. J'ai l'impression que ma tête va exploser..."
     },
     "day5_after_forget_5": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "S'il vous plaît, effacez-moi. Faites-moi tout oublier."
     },
     "day5_after_forget_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Mme Eunsu a levé la seringue. Sa main tremble.*"
     },
     "day5_after_forget_7": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Pardon."
     },
     "day5_after_forget_8": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'aiguille est entrée dans mon bras. Froid. La conscience s'effacé.*"
     },
     "day5_after_forget_9": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La dernière chose que j'ai vue — Seolhwa. Seolhwa pleure. Ses lèvres bougent. Aucun son.*"
     },
     "day5_after_forget_10": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...Je peux le lire. Le mouvement de ses lèvres. — \"N'oublie pas\"*"
     },
     "day5_after_forget_11": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*J'ai oublie.*"
     },
     "day5_after_forget_12": {
-        "name": "",
         "text": "*...*"
     },
     "day5_after_resist_1": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Ensemble ?"
     },
     "day5_after_resist_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Vous êtes aussi une victime, Madame. Vous avez été utilisee par le conseil."
     },
     "day5_after_resist_3": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "......"
     },
     "day5_after_resist_4": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Non. À partir de la 3e fois, c'était mon choix."
     },
     "day5_after_resist_5": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Je suis là coupable, {name}."
     },
     "day5_after_resist_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Malgre tout. Si vous restez ici, le 14e cycle commencera. Pour quelqu'un d'autre."
     },
     "day5_after_resist_7": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Mme Eunsu s'est arrêtée. Seolhwa est apparue. Derrière Mme Eunsu.*"
     },
     "day5_after_resist_8": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Eunsu."
     },
     "day5_after_resist_9": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Pendant 6 ans, j'ai regardé chaque jour. Vous accueillir un nouveau moi à chaque fois. Sourire à chaque fois. — Vous briser un peu plus à chaque fois."
     },
     "day5_after_resist_10": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Vous aussi, vous devez partir, Madame."
     },
     "day5_after_resist_11": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Mme Eunsu a posé la seringue au sol. ...Elle est restee debout un long moment.*"
     },
     "day5_after_resist_12": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "...Si je sors, tout ce que j'ai fait sera revele."
     },
     "day5_after_resist_13": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Je sais."
     },
     "day5_after_resist_13a": {
-        "text": "Tu pourrais aller en prison.",
-        "name": "Park Eunsu"
+        "speaker": "eunsu_full",
+        "text": "Tu pourrais aller en prison."
     },
     "day5_after_resist_13b": {
-        "text": "Je sais.",
-        "name": "Moi"
+        "speaker": "me",
+        "text": "Je sais."
     },
     "day5_after_resist_13c": {
-        "text": "Le 11e Oh Taehyun... a dit qu'il me faisait confiance. Que ça allait, puisque j'étais sa professeure.",
-        "name": "Park Eunsu"
+        "speaker": "eunsu_full",
+        "text": "Le 11e Oh Taehyun... a dit qu'il me faisait confiance. Que ça allait, puisque j'étais sa professeure."
     },
     "day5_after_resist_13d": {
-        "text": "*La professeure s'est tue. Sa main tremblait légèrement.*",
-        "name": ""
+        "text": "*La professeure s'est tue. Sa main tremblait légèrement.*"
     },
     "day5_after_resist_13e": {
-        "text": "...J'ai effacé les souvenirs de cette nuit-là. Le lendemain matin, il m'a demandé : 'Qui êtes-vous, Professeure ?'",
-        "name": "Park Eunsu"
+        "speaker": "eunsu_full",
+        "text": "...J'ai effacé les souvenirs de cette nuit-là. Le lendemain matin, il m'a demandé : 'Qui êtes-vous, Professeure ?'"
     },
     "day5_after_resist_13f": {
-        "text": "C'est là que j'ai compris. Ce n'était pas une relation, mais un conditionnement. Et pourtant, je ne me suis pas arrêtée.",
-        "name": "Park Eunsu"
+        "speaker": "eunsu_full",
+        "text": "C'est là que j'ai compris. Ce n'était pas une relation, mais un conditionnement. Et pourtant, je ne me suis pas arrêtée."
     },
     "day5_after_resist_13g": {
-        "text": "...Comment comptes-tu me prendre avec toi ? Après tout ce que tu m'as fait.",
-        "name": "Park Eunsu"
+        "speaker": "eunsu_full",
+        "text": "...Comment comptes-tu me prendre avec toi ? Après tout ce que tu m'as fait."
     },
     "day5_after_resist_14": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Mme Eunsu — a pleuré. Comme si le poids de 12 cycles s'effondrait d'un coup. \"...Comment peux-tu m'emmener avec toi. Après ce que je t'ai fait.\"*"
     },
     "day5_after_resist_15": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "...Vous devez répondre de vos actes. Mais c'est mieux que de repeter tout ça."
     },
     "day5_after_ghost_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Je ne peux pas bouger. Mon corps est fige.*"
     },
     "day5_after_ghost_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Mme Eunsu s'approche. Seringue à la main.*"
     },
     "day5_after_ghost_3": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...C'est moi qui vais le faire."
     },
     "day5_after_ghost_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Seolhwa — ?"
     },
     "day5_after_ghost_5": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "J'ai regardé pendant 6 cycles. Toi, incapable de te décider. Cette fois aussi. Je sais. C'est une habitude."
     },
     "day5_after_ghost_6": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "Alors — **c'est moi qui vais décider pour toi.**"
     },
     "day5_after_ghost_7": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Seolhwa m'a regardé droit dans les yeux. Une hallucination — et pourtant jamais aussi nette.*"
     },
     "day5_after_ghost_8": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "**Cours. Maintenant.**"
     },
     "day5_after_ghost_9": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Mon corps a bouge. La voix de Seolhwa — la mémoire en moi — met mon corps en mouvement. J'ai saisi la main de Yuna et couru vers la sortie de secours.*"
     },
     "day5_after_ghost_10": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Mme Eunsu a rié derrière moi mais je ne me suis pas arrété. J'ai franchi la sortie de secours. Je me suis retourné. Seolhwa se tient à l'intérieur de la porte. Elle sourit.*"
     },
     "day5_after_ghost_11": {
-        "name": "Seolhwa",
+        "speaker": "seolhwa",
         "text": "...Eunsu. Il n'y aura pas de 14e."
     },
     "day5_after_ghost_12": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Seolhwa a disparu. Comme la lumière. Sans un bruit. Au même moment — une alarme s'est declenchee dans le bâtiment.*"
     },
     "day5_after_ghost_13": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Le bâtiment s'est animé. Sirenes, pas, cris. ...Seolhwa n'est plus là. Dans ma tête non plus — le silence. J'ai quitté l'école.*"
     },
     "day5_after_end": {
-        "name": "",
         "text": "*...*"
     }
 }

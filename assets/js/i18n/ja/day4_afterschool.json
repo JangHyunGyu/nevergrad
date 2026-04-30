@@ -1,18 +1,18 @@
 {
     "day4_after_start": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*放課後。チャイムが鳴った。教室が空いていく。今日知ったことが頭の中で渦を巻いている。*"
     },
     "day4_after_start_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*地下室のドアの向こうから聞こえた音。ユナのうめき声。ウンス先生の鍵。……この学校の本当の姿。*"
     },
     "day4_after_start_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが生徒会室の方へ歩いていく。ウンス先生は職員室にいるはずだ。リイン先生は保健室。……誰のところに先に行こうか。*"
     },
     "day4_after_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*決めなければ。*",
         "choices": [
             "セアについていく",
@@ -21,51 +21,51 @@
         ]
     },
     "day4_after_sea_route": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアについて生徒会室に来た。*"
     },
     "day4_after_sea_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアがドアに鍵をかける。カチャリ。鍵の音がやけに大きく響いた。誰もいない廊下に。*"
     },
     "day4_after_sea_3": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「今日は二人きりでいたくて。」"
     },
     "day4_after_sea_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが座る。目がいつもと違う。充血している。泣いた跡。*"
     },
     "day4_after_sea_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*窓の外にグラウンドが見える。放課後だから、生徒たちが二、三人ずつ帰っていく。笑い声がガラス越しに少し遅れて届く。ありふれた風景なのに、いくつかの顔だけ、口角があまりにもきれいに整っている。*"
     },
     "day4_after_sea_6": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……{name}。」"
     },
     "day4_after_sea_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが僕を見る。長い間。僕の顔を覚えようとするかのように。*"
     },
     "day4_after_sea_8": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……一体何回目なの。」"
     },
     "day4_after_sea_9": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……何が？」"
     },
     "day4_after_sea_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアの唇が震える。言おうとして止まる。また言おうとして止まる。三度目にやっと口を開く。*"
     },
     "day4_after_sea_11": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「何でもない……忘れて。」"
     },
     "day4_after_sea_force": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*「忘れて」。この状況でその言葉がどれほど残酷か――セアだけが知っている。セアの目が僕の返事を待っている。*",
         "choices": [
             "わかった",
@@ -73,123 +73,123 @@
         ]
     },
     "day4_after_sea_accept": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……どちらを選んでも同じだった。答えは最初からひとつしかなかった。*"
     },
     "day4_after_sea_accept_2": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……ずっと私のそばにいて。」"
     },
     "day4_after_sea_accept_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが窓の外を見る。夕焼けが生徒会室を赤く染めている。*"
     },
     "day4_after_sea_confess_1": {
-        "text": "「…12回。」",
-        "name": "ハン・セア"
+        "speaker": "sea_full",
+        "text": "「…12回。」"
     },
     "day4_after_sea_confess_2": {
-        "text": "「…何？」",
-        "name": "僕"
+        "speaker": "me",
+        "text": "「…何？」"
     },
     "day4_after_sea_confess_3": {
-        "text": "12回も…毎回この生徒会室で、あなたが「明日も来るね」って笑ってくれた。毎回私に「ありがとう」って言ってくれた。毎回お弁当を美味しいって言ってくれた。",
-        "name": "ハン・セア"
+        "speaker": "sea_full",
+        "text": "12回も…毎回この生徒会室で、あなたが「明日も来るね」って笑ってくれた。毎回私に「ありがとう」って言ってくれた。毎回お弁当を美味しいって言ってくれた。"
     },
     "day4_after_sea_confess_4": {
-        "text": "そして毎回…5日目に私を忘れた。",
-        "name": "ハン・セア"
+        "speaker": "sea_full",
+        "text": "そして毎回…5日目に私を忘れた。"
     },
     "day4_after_sea_confess_5": {
-        "text": "*セアの目から涙が流れる。拭わない。*",
-        "name": "僕"
+        "speaker": "me",
+        "text": "*セアの目から涙が流れる。拭わない。*"
     },
     "day4_after_sea_confess_6": {
-        "text": "9回目の時…あなたが私にブレスレットを作ってくれた。「セア」って刻んだやつ。私、まだ持ってる。",
-        "name": "ハン・セア"
+        "speaker": "sea_full",
+        "text": "9回目の時…あなたが私にブレスレットを作ってくれた。「セア」って刻んだやつ。私、まだ持ってる。"
     },
     "day4_after_sea_confess_7": {
-        "text": "*セアが袖をまくる。手首には古びたミサンガが巻かれている。糸がほつれている。何年も経ったかのように。*",
-        "name": "僕"
+        "speaker": "me",
+        "text": "*セアが袖をまくる。手首には古びたミサンガが巻かれている。糸がほつれている。何年も経ったかのように。*"
     },
     "day4_after_sea_confess_8": {
-        "text": "10番目の時、あなたはこれを見て「きれいだね、誰がくれたの？」と尋ねたの。",
-        "name": "ハン・セア"
+        "speaker": "sea_full",
+        "text": "10番目の時、あなたはこれを見て「きれいだね、誰がくれたの？」と尋ねたの。"
     },
     "day4_after_sea_confess_9": {
-        "text": "あなたが作ってくれたものなのに。記憶がないから。",
-        "name": "ハン・セア"
+        "speaker": "sea_full",
+        "text": "あなたが作ってくれたものなのに。記憶がないから。"
     },
     "day4_after_sea_confess_10": {
-        "text": "*セアが笑った。泣きながら。*",
-        "name": "僕"
+        "speaker": "me",
+        "text": "*セアが笑った。泣きながら。*"
     },
     "day4_after_sea_12loop": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが僕を抱きしめた。背中に回した手がきつく締まる。*"
     },
     "day4_after_sea_12loop_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアがつぶやく。僕の耳に唇が触れるほど近くで。*"
     },
     "day4_after_sea_12loop_3": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……ソジン。」"
     },
     "day4_after_sea_12loop_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……え？*"
     },
     "day4_after_sea_12loop_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……誰？」"
     },
     "day4_after_sea_12loop_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアの体が固まった。自分が何を言ったか気づいたようだ。*"
     },
     "day4_after_sea_12loop_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ソジン。3番目の名札に書いてあった名前。パク・ソジン。*"
     },
     "day4_after_sea_12loop_8": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……何でもない。」"
     },
     "day4_after_sea_12loop_9": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが僕を離さない。むしろもっと強く抱きしめた。肩が震えている。*"
     },
     "day4_after_sea_12loop_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*袖をまくったとき見えた。手首に古びた糸のブレスレット。糸がほつれている。何年も経ったかのように。*"
     },
     "day4_after_sea_12loop_11": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……そこに名前が刻んである。「セア」。手作りのブレスレット。――僕の筆跡だ。*"
     },
     "day4_after_sea_12loop_12": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが気づいた。僕がブレスレットを見ていることに。*"
     },
     "day4_after_sea_12loop_13": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "「……きれいでしょ？」"
     },
     "day4_after_sea_12loop_14": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*笑っている。泣きながら。*"
     },
     "day4_after_ft_sea_pre": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが腕を掴んだ。立ち上がろうとするのに、離してくれない。*"
     },
     "day4_after_ft_sea": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "……言いたいことがあるなら言って。どうせ何も変わらないけど。"
     },
     "day4_after_ft_sea_choice": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*何を言えばいい。セアの手はまだ僕の腕を掴んでいる。*",
         "choices": [
             "……ごめん。逃げてるんじゃない。ただ頭がぐちゃぐちゃで。",
@@ -198,255 +198,248 @@
         ]
     },
     "day4_after_ft_sea_apologize": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "……13回聞いた、それ。毎回本気だったの、知ってる。"
     },
     "day4_after_ft_sea_ask": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "……耐えてない。毎回、初めてだった。あなたみたいに。"
     },
     "day4_after_ft_sea_promise": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "……それも聞いた。約束したのもあなたで、守れなかったのもあなた。毎回。"
     },
     "day4_after_ft_sea_quiet": {
-        "name": "ハン・セア",
+        "speaker": "sea_full",
         "text": "……いい。行って。"
     },
     "day4_after_ft_sea_post": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*セアが手を離した。何を言ってもセアの目は変わらなかった。悲しくもなく怒りもない――ただ古い諦念だけ。*"
     },
     "day4_after_eunsu_route": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*職員室に向かった。もう逃げられない。直接聞かなければ。*"
     },
     "day4_after_eunsu_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*ウンス先生が僕を見てため息をつく。疲れた表情。目の下に濃いクマ。職員室には先生一人だ。他の教師は全員席を外している。――外したのか、外させたのか。*"
     },
     "day4_after_eunsu_3": {
-        "name": "パク・ウンス",
+        "speaker": "eunsu_full",
         "text": "「……旧館に行ったんだね。」"
     },
     "day4_after_eunsu_4": {
-        "name": "パク・ウンス",
+        "speaker": "eunsu_full",
         "text": "「ドアの前まで行った？」"
     },
     "day4_after_eunsu_4a": {
-        "text": "*先生がコーヒーを淹れながら言った。淡々と。コーヒーを淹れる手は震えない。この会話を準備していたかのように。*",
-        "name": "僕"
+        "speaker": "me",
+        "text": "*先生がコーヒーを淹れながら言った。淡々と。コーヒーを淹れる手は震えない。この会話を準備していたかのように。*"
     },
     "day4_after_eunsu_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*先生がコーヒーを淹れる。カップ二つ。一つを僕の前に置いた。*"
     },
     "day4_after_eunsu_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……砂糖二杯、クリーム半分。昨日職員室で僕が入れたのと正確に同じだ。*"
     },
     "day4_after_eunsu_7": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……教えた覚えがない。昨日一度見ただけなのに。*"
     },
     "day4_after_eunsu_8": {
-        "name": "パク・ウンス",
+        "speaker": "eunsu_full",
         "text": "「合ってるでしょ？あなたの好み。」"
     },
     "day4_after_eunsu_9": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*先生が笑う。その笑みは Day 1 の温かい笑顔ではなく、管理していた変数が元の位置に戻ったときの――安堵だった。*"
     },
     "day4_after_eunsu_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*机の引き出しが半分開いている。中にポストイットが見える。何十枚も。びっしりと書かれた文字。――全部名前だ。違う名前たち。取り消し線が引かれたものもある。*"
     },
     "day4_after_eunsu_11": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*一番下のポストイットに僕の名前。取り消し線はない。*"
     },
     "day4_after_eunsu_12": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*沈黙。*"
     },
     "day4_after_eunsu_13": {
-        "name": "パク・ウンス",
+        "speaker": "eunsu_full",
         "text": "「大丈夫よ、{name}。先生がもう一度、整理してあげる。」"
     },
     "day4_after_eunsu_14": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*先生の手が僕の頭の上で止まった。撫でようとして、自分でもそれがおかしいと気づいたみたいに。*"
     },
     "day4_after_eunsu_15": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*……この手が、12回分の記憶を消した。*"
     },
     "day4_after_riin_route": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*保健室に行った。薬が必要なんじゃない。確認したいことがある。*"
     },
     "day4_after_riin_2": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が机に座っている。書類を整理していた。僕が入ると――手が止まる。書類を裏返した。ゆっくりと。自然に。でも僕は見た。「S-13 投薬記録」というタイトルを。*"
     },
     "day4_after_riin_3": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……なに。驚かさないでよ。」"
     },
     "day4_after_riin_4": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*僕を見る目がいつもと違う。警戒の目。……いや、警戒じゃない。探りだ。僕が何を知っているか見定める目。*"
     },
     "day4_after_riin_5": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「リイン先生。」"
     },
     "day4_after_riin_5a": {
-        "text": "え？",
-        "name": "カン・リイン"
+        "speaker": "riin_full",
+        "text": "え？"
     },
     "day4_after_riin_5b": {
-        "text": "もう隠すつもりはないですよね？",
-        "name": "僕"
+        "speaker": "me",
+        "text": "もう隠すつもりはないですよね？"
     },
     "day4_after_riin_6": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*沈黙。3秒。リイン先生の表情が変わらない。驚かない。慌てない。*"
     },
     "day4_after_riin_7": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……どこまで気づいたの？」"
     },
     "day4_after_riin_8": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*一言。淡々と。まるで――この瞬間を待っていたかのように。リイン先生が立ち上がる。保健室のドアを確認する。鍵をかける。*"
     },
     "day4_after_riin_9": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「何を見た？」"
     },
     "day4_after_riin_10": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「この学校が隠しているものです。薬も、記録も、人も。」"
     },
     "day4_after_riin_11": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生がため息をつく。長い。背負っていた荷物を下ろすようなため息。*"
     },
     "day4_after_riin_12": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……早いね。12回目より早い。」"
     },
     "day4_after_riin_15": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生がポケットから何かを取り出す。鍵。小さな金属の鍵。*"
     },
     "day4_after_riin_16": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*僕に差し出そうとして――止まる。*"
     },
     "day4_after_riin_17": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……まだダメ。」"
     },
     "day4_after_riin_18": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*鍵をポケットに戻す。*"
     },
     "day4_after_riin_19": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「それは何ですか？」"
     },
     "day4_after_riin_20": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「明日。」"
     },
     "day4_after_riin_21": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が僕を見る。初めて――保健の先生ではない目で。*"
     },
     "day4_after_riin_22": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「今夜は何もしないで。誰にもこの話はしないで。」"
     },
     "day4_after_riin_23": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「ウンスには絶対。」"
     },
     "day4_after_riin_24": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*声が低くなる。*"
     },
     "day4_after_riin_25": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……私が時間を稼ぐ。明日の朝まで。」"
     },
     "day4_after_riin_26": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*リイン先生が窓の外を見る。沈む夕日。保健室がオレンジ色に染まる。*"
     },
     "day4_after_riin_27": {
-        "name": "リイン",
+        "speaker": "riin",
         "text": "「……私ももう限界。こんなこと。」"
     },
     "day4_after_end": {
-        "name": "僕",
+        "speaker": "me",
         "text": "*日が沈んだ。学校が闇に包まれる。明日が来る。5日目が。*"
     },
     "day4_xover_yuna_1": {
-        "name": "",
         "text": "*教室を出ようとすると――ユナが廊下に立っている。待っていたようだ。*"
     },
     "day4_xover_yuna_2": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「……イ・ジュンホって知ってる？」"
     },
     "day4_xover_yuna_3": {
-        "name": "僕",
+        "speaker": "me",
         "text": "「……誰？」"
     },
     "day4_xover_yuna_4": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「そう言うと思った。」"
     },
     "day4_xover_yuna_5": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「毎回そう。同じ顔で来て。知らないって言う。」"
     },
     "day4_xover_yuna_6": {
-        "name": "",
         "text": "*(写真帳を取り出す)*"
     },
     "day4_xover_yuna_7": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「ここにある。1番目から今まで。」"
     },
     "day4_xover_yuna_8": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「全部――あなただよ。」"
     },
     "day4_xover_yuna_9": {
-        "name": "",
         "text": "*写真帳を見た。同じ制服。同じ廊下。同じ顔――表情だけが違う。12枚。*"
     },
     "day4_xover_yuna_10": {
-        "name": "",
         "text": "*ユナは写真帳を閉じて、静かに歩いていった。*"
     },
     "day4_xover_yuna_skip": {
-        "name": "",
         "text": "*教室を出ようとすると――ユナが廊下に立っている。*"
     },
     "day4_xover_yuna_skip_met": {
-        "name": "",
         "text": "*教室を出ようとすると――ユナが廊下に立っている。*"
     },
     "day4_xover_yuna_skip_2": {
-        "name": "ユナ",
+        "speaker": "yuna",
         "text": "「……ううん。何でもない。」"
     },
     "day4_xover_yuna_skip_3": {
-        "name": "",
         "text": "*ユナは首を振って歩いていった。*"
     }
 }

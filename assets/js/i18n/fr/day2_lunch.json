@@ -1,42 +1,42 @@
 {
     "day2_broadcast_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La loche de la quatrième période sonna. C'était l'heure du déjeuner. Les élèves commençaient à se lèver — puis, *crépitement*. Des parasites jaillirent des haut-parleurs.*"
     },
     "day2_broadcast_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Un son perça le grésillement. Comme une voix. Quelqu'un parlait. Mais c'était tellement brouillé, comme si là personne était loin du micro, que je ne pouvais pas distinguer un mot.*"
     },
     "day2_broadcast_3": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Les élèves levèrent les yeux. Fixant le haut-parleur.*"
     },
     "day2_broadcast_3a": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...Deux secondes. Trois. Le son fut coupé brusquement. Puis, la voix de la professeure Eunsu retentit, parfaitement claire.*"
     },
     "day2_broadcast_4": {
-        "name": "[Annonce scolaire]",
+        "speaker": "school_broadcast",
         "text": "C'est l'heure du déjeuner. Les élèves, veuillez vous diriger vers la cantine dans le calme."
     },
     "day2_broadcast_5": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...C'était quoi, ce grésillement, tout à l'heure ? Un micro défectueux ?\n\nLes élèves autour de moi rangent leurs affaires sans y prêter attention. Personne ne semble s'en soucier. Étais-je le seul à l'avoir entendu ?*"
     },
     "day2_broadcast_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Je me retournai. Seolhwa me regardait, les lèvres serrées.*"
     },
     "day2_broadcast_7": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...Seolhwa l'a-t-elle entendu aussi ? Ou est-ce que je me fais des idées ?*"
     },
     "day2_lunch_start": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La loche du déjeuner sonna.*"
     },
     "day2_lunch_choice": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*C'est l'heure du déjeuner. Où devrais-je manger ?*",
         "choices": [
             "Manger avec Sea",
@@ -46,375 +46,375 @@
         ]
     },
     "day2_lunch_sea_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La boîte à bento d'aujourd'hui. Encore plus élaborée qu'hier. Escalope de poulet, carottes en forme de fleurs, mini kimbap.*"
     },
     "day2_lunch_sea_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Tu t'es levée à quelle heure pour préparer tout ça ?"
     },
     "day2_lunch_sea_3": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Ça me rend heureuse quand tu manges bien."
     },
     "day2_lunch_sea_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Tu es vraiment douée pour ça. La uisine."
     },
     "day2_lunch_sea_5": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Ma mère m'a appris. On cuisinait ensemble depuis l'école primaire."
     },
     "day2_lunch_sea_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Vous cuisinez toujours ensemble ?"
     },
     "day2_lunch_sea_7": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Non. Ces temps-ci, c'est juste moi."
     },
     "day2_lunch_sea_8": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Sea s'interrompt, attrapant un morceau de kimbap avec ses baguettes.*"
     },
     "day2_lunch_sea_9": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Maman est occupée. Papa aussi. Alors préparer les bentos le matin, c'est un peu... une routine pour moi. Ça me semble vide si je ne le fais pas."
     },
     "day2_lunch_sea_10": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Merci. Vraiment."
     },
     "day2_lunch_sea_11": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "C'est rien~ Tu manges tout sans rien laisser, alors ça me rend heureuse aussi."
     },
     "day2_lunch_sea_12": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Sea dépose un mini kimbap dans ma boîte à bento. Nous mangeons un moment, parlant de musique, de jeux et de films.*"
     },
     "day2_lunch_sea_13": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "{name}, qu'est-ce que tu fais ce week-end ?"
     },
     "day2_lunch_sea_14": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Rien de spécial... Je ne connais même pas encore le coin."
     },
     "day2_lunch_sea_15": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Alors, tu veux aller en ville samedi ? On pourrait aller dans un café. Il y a un super endroit pour les croffles."
     },
     "day2_lunch_sea_16": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "D'accord."
     },
     "day2_lunch_sea_17": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Vraiment ? C'était rapide."
     },
     "day2_lunch_sea_18": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Pourquoi pas ?"
     },
     "day2_lunch_sea_19": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "Non... Je suis juste contente."
     },
     "day2_lunch_sea_20": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Sea baisse la tête, faisant semblant de se concentrer sur sa boîte à bento. Elle me tend un écouteur. Une douce mélodie s'en échappe.*"
     },
     "day2_lunch_sea_21": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "C'est le groupe dont je t'ai parlé tout à l'heure. Cette chanson est ma préférée."
     },
     "day2_lunch_sea_22": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Les paroles résonnent. « Même en sachant que je serai oublié, j'appelle ton nom dans la nuit » — Sea murmuré les mots.*"
     },
     "day2_lunch_sea_23": {
-        "name": "Han Sea",
+        "speaker": "sea_full",
         "text": "C'est bien, non ?"
     },
     "day2_lunch_sea_24": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Oui, c'est bien."
     },
     "day2_lunch_sea_25": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Sea sourit, satisfaite. Elle semble étrangement soulagée.*"
     },
     "day2_lunch_yuna_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Yuna ripote son appareil photo. Assise dans un coin de la bibliothèque. Un sac de snacks est posé a  d'elle.*"
     },
     "day2_lunch_yuna_2": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "{name} ! Tu es venu ? Regarde ce que j'ai pris aujourd'hui."
     },
     "day2_lunch_yuna_3": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Je feuillette les photos. La olline derrière l'école, le gymnase, un chat...*"
     },
     "day2_lunch_yuna_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Tu es vraiment douée en photographie. Il est où ce chat ?"
     },
     "day2_lunch_yuna_5": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Derrière le gymnase. Il est toujours au même endroit. Je l'ai appelé « Gland »."
     },
     "day2_lunch_yuna_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Gland ?"
     },
     "day2_lunch_yuna_7": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Parce qu'il a un visage rond comme un gland. Regarde, ici."
     },
     "day2_lunch_yuna_8": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Yuna zoome sur l'écran. Son visage est effectivement rond.*"
     },
     "day2_lunch_yuna_9": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Tu prends des photos aussi, {name} ?"
     },
     "day2_lunch_yuna_10": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Non, juste avec mon téléphone ? Je ne prends pas vraiment de photos."
     },
     "day2_lunch_yuna_11": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Mais tu as un bon œil. Hier, tu as dit que la omposition de la photo du gymnase était bonne."
     },
     "day2_lunch_yuna_12": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "C'était juste une impression..."
     },
     "day2_lunch_yuna_13": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Cette « impression », c'est du talent."
     },
     "day2_lunch_yuna_14": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Yuna sourit légèrement. Elle semble sincère. Alors que nous continuons à feuilleter les photos, Yuna demande soudainement.*"
     },
     "day2_lunch_yuna_15": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "{name}... tu es déjà venu dans cette école ?"
     },
     "day2_lunch_yuna_16": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Non ? Mon premier jour, c'était hier."
     },
     "day2_lunch_yuna_17": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...Bien sûr."
     },
     "day2_lunch_yuna_18": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Yuna sourit, mais ses yeux ne sourient pas. On aurait dit qu'elle essayait de confirmer quelque chose.*"
     },
     "day2_lunch_yuna_19": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Oh, ce n'est rien. J'ai juste demandé parce que tu me semblais familier(ère) d'une certaine manière..."
     },
     "day2_lunch_yuna_20": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...Familier(ère) ? C'est la première fois que nous nous rencontrons. Peut-être qu'elle me confond avec quelqu'un d'autre, étant donné qu'elle est au club de photographie.*"
     },
     "day2_lunch_yuna_21": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Si tu es intéressé par le club de photographie, rejoins-nous. Nous manquons un peu de membres..."
     },
     "day2_lunch_yuna_22": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "J'y penserai."
     },
     "day2_lunch_yuna_23": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "D'accord ! Pas de pression. J'ai juste pensé... que ce serait amusant de prendre des photos ensemble, {name}."
     },
     "day2_lunch_yuna_24": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Yuna dit cela, serrant l'appareil photo contre sa poitrine. Elle a ette façon de parler prudente. Comme si elle essayait de ne pas blesser l'autre personne.*"
     },
     "day2_lunch_riin_1": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Il n'y a pas encore de dossier médical pour toi en tant qu'élève transféré. Laisse-moi faire un rapide contrôle."
     },
     "day2_lunch_riin_2": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Tension artérielle, vue, poids. Un bilan de santé de base.*"
     },
     "day2_lunch_riin_3": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "As-tu des allergies ? Alimentaires ou médicamenteuses."
     },
     "day2_lunch_riin_4": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Pas vraiment."
     },
     "day2_lunch_riin_5": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "C'est tout. Tu es en bonne santé."
     },
     "day2_lunch_riin_6": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'infirmière Riin écrit quelque chose dans le registre. Elle écrit pas mal. Pour un simple bilan de santé.*"
     },
     "day2_lunch_riin_7": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Attends un instant."
     },
     "day2_lunch_riin_8": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'infirmière Riin arrête d'écrire et me regarde. Quelque chose semble la racasser.*"
     },
     "day2_lunch_riin_9": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Tu as beaucoup rêvé ces derniers temps ?"
     },
     "day2_lunch_riin_10": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Soudainement ?"
     },
     "day2_lunch_riin_11": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Le stress lié au transfert peut réduire la qualité du sommeil. Si tu rêves beaucoup, cela signifie que tu n'as pas un sommeil profond."
     },
     "day2_lunch_riin_12": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "J'ai fait un rêve étrange hier. Je ne m'en souviens pas très bien, cependant."
     },
     "day2_lunch_riin_13": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'infirmière Riin marque une pause, puis continue d'écrire.*"
     },
     "day2_lunch_riin_14": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Si tu te souviens des détails, dis-le-moi. Cela peut être un indicateur de stress."
     },
     "day2_lunch_riin_15": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "D'accord..."
     },
     "day2_lunch_riin_16": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Le bilan est terminé et je m'apprête à partir quand l'infirmière Riin sort du thé d'une armoire.*"
     },
     "day2_lunch_riin_17": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Si tu n'es pas pressé, prends une tasse de thé avant de partir. De la camomille."
     },
     "day2_lunch_riin_18": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Je m'assois sur le canapé de l'infirmerie. Un espace calme où le soleil entre à flots. L'infirmière Riin s'assied en face de moi.*"
     },
     "day2_lunch_riin_19": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Comment se passe l'école pour toi ?"
     },
     "day2_lunch_riin_20": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Mieux que ce à quoi je m'attendais. Tout le monde a été gentil."
     },
     "day2_lunch_riin_21": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Sea ?"
     },
     "day2_lunch_riin_22": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Oui. Et Eunsu aussi."
     },
     "day2_lunch_riin_23": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "C'est bon à entendre."
     },
     "day2_lunch_riin_24": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'infirmière Riin enserre sa asse de thé à deux mains et regarde par la fenêtre.*"
     },
     "day2_lunch_riin_25": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Mais parfois, quand les gens sont trop gentils, ça rend anxieux. Comme, « Est-ce que je mérite ça ? »"
     },
     "day2_lunch_riin_26": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Vous avez ressenti ça aussi, infirmière ?"
     },
     "day2_lunch_riin_27": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'infirmière Riin se tourne vers moi. Elle semble sur le point de dire quelque chose, mais alors —*"
     },
     "day2_lunch_riin_28": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Finis ton thé et va en cours. Tu seras en retard pour l'après-midi."
     },
     "day2_lunch_riin_29": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Elle a esquivé la question. ...Peut-être que j'ai posé une question trop personnelle. C'est presque devenu gênant, mais l'infirmière Riin a désamorcé la situation avec un sourire.*"
     },
     "day2_lunch_rooftop_1": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Je monte les escaliers vers le toit quand j'entends une voix venant du palier.*"
     },
     "day2_lunch_rooftop_2": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Oui, j'ai déposé l'approbation. Je vais boucler ça sans problème, comme l'année dernière. ...Je terminerai dans les cinq jours."
     },
     "day2_lunch_rooftop_3": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Je fais un bruit et la professeure raccroche.*"
     },
     "day2_lunch_rooftop_4": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "Oh, {name} ? Tu vas sur le toit ?"
     },
     "day2_lunch_rooftop_5": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "Vous étiez au téléphone ?"
     },
     "day2_lunch_rooftop_6": {
-        "name": "Eunsu",
+        "speaker": "eunsu",
         "text": "C'est le début du semestre, alors il y a beaucoup de paperasse. Des affaires du ministère de l'Éducation. Rien dont {name} ait à s'inquiéter."
     },
     "day2_lunch_rooftop_7": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*La professeure sourit et passa. Elle a l'air occupée. Être professeure principale en début de semestre doit être comme ça.*"
     },
     "day2_lunch_rooftop_8": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Je suis sur le toit. Le vent souffle. Pas de bento, mais je déballe une boule de riz de supérette.*"
     },
     "day2_lunch_rooftop_9": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...C'est grand ouvert. Des montagnes visibles au-delà des bâtiments de l'école. Un paysage étrangement familier.*"
     },
     "day2_lunch_rooftop_9a": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Je m'appuie contre la rambarde et mange une boule de riz. Personne d'autre n'est là. C'est calme.*"
     },
     "day2_lunch_rooftop_10": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'appel téléphonique de la professeure, tout à l'heure, me tracasse. « Boucler ça dans les cinq jours. » Qu'est-ce qui doit être bouclé en cinq jours ?*"
     },
     "day2_lunch_rooftop_10a": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*...Est-ce que c'est comme ça qu'on parle des révisions de programme ? Est-ce normal pour les réunions de professeurs ?*"
     },
     "day2_lunch_rooftop_10b": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Ne réfléchis pas trop. Mange juste la boule de riz.*"
     },
     "day2_lunch_rooftop_11": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*Le vent ébouriffe mes cheveux. Si je ferme les yeux, je crois entendre un autre son. Quelqu'un qui rit. Ici. Sur ce toit. ...Est-ce que j'hallucine ? Ce doit être le vent.*"
     },
     "day2_lunch_end": {
-        "name": "Moi",
+        "speaker": "me",
         "text": "*L'heure des cours de l'après-midi.*"
     }
 }

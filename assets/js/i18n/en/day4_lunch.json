@@ -1,10 +1,10 @@
 {
     "day4_lunch_start": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*It's lunchtime. I need to decide where to go.*"
     },
     "day4_lunch_choice": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Lunch is the only window I have. I need to move fast.*",
         "choices": [
             "Search for Yuna",
@@ -13,75 +13,75 @@
         ]
     },
     "day4_lunch_yuna_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The photography club room. The door is locked. It was open until yesterday.*"
     },
     "day4_lunch_yuna_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I looked around. Nobody in the hallway. One of the windows isn't fully locked. I squeezed through.*"
     },
     "day4_lunch_yuna_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Yuna's locker. Completely empty. **Too** clean.*"
     },
     "day4_lunch_yuna_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The other lockers have dust buildup. Only Yuna's looks like it was wiped down. Someone cleaned it out.*"
     },
     "day4_lunch_yuna_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The plywood at the bottom of the locker is slightly raised. A false bottom. Yuna's camera is hidden inside.*"
     },
     "day4_lunch_yuna_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I took the camera out. Almost no battery left. I powered it on.*"
     },
     "day4_lunch_yuna_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Photo gallery. Over 200 pictures. Mostly school scenery. They look ordinary, but -- the same people appear in every corner. People in suits. Not parents. Evidence Yuna collected over three years.*"
     },
     "day4_lunch_yuna_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The last photo: stairs leading underground. In the corner, handwritten text: **'Down here -- Yu'***"
     },
     "day4_lunch_yuna_9": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The date is last night. Yuna took this photo just before she disappeared.*"
     },
     "day4_lunch_yuna_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*End of the old building hallway. 'Authorized Personnel Only.' A rusted door.*"
     },
     "day4_lunch_yuna_11": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I pulled the handle. It won't open. A new padlock has been fitted. A new lock on a rusted door. -- It was replaced recently.*"
     },
     "day4_lunch_yuna_12": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I pressed my ear to the gap in the door. I can hear sounds from below. A low machine hum. And -- a groan. Faint but unmistakably human.*"
     },
     "day4_lunch_yuna_13": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...Yuna.*"
     },
     "day4_lunch_yuna_14": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I rattled the padlock. It won't budge. I searched my pockets. Nothing that could open it.*"
     },
     "day4_lunch_yuna_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Footsteps. From the end of the hallway. Someone is coming.*"
     },
     "day4_lunch_yuna_16": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I backed off. I need to get away from the door. -- I spun around and hid in a corner.*"
     },
     "day4_lunch_yuna_17": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Ms. Eunsu walked past. She took out a key and opened the door. Went inside, closing the door behind her. The click of the lock.*"
     },
     "day4_lunch_yuna_18": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...Ms. Eunsu has the key. Yuna is behind that door. And I -- can't open it.*",
         "choices": [
             "Go for the key tonight",
@@ -90,87 +90,87 @@
         ]
     },
     "day4_lunch_yuna_19": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I clenched my fist. My nails dig into my palm.*"
     },
     "day4_lunch_yuna_20": {
-        "name": "Me",
+        "speaker": "me",
         "text": "***Tomorrow. Tomorrow, no matter what.***"
     },
     "day4_lunch_nurse_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Riin is transferring something into a syringe in front of the medicine cabinet.*"
     },
     "day4_lunch_nurse_first": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The nameplate on the desk catches my eye first: 'Kang Riin, school nurse.' As I read it, someone in a white coat looks up from inside.*"
     },
     "day4_lunch_nurse_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I can see the label on the ampoule. 'M-13.' The same code I saw on the cabinet in the basement.*"
     },
     "day4_lunch_nurse_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*She sees me and stops.*"
     },
     "day4_lunch_nurse_4": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...You startled me."
     },
     "day4_lunch_nurse_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*She hides the syringe behind her back. Casually. But I saw it.*"
     },
     "day4_lunch_nurse_noyuna": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...What were you doing just now?"
     },
     "day4_lunch_nurse_noyuna_2": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...Preparing vitamin shots. Student health management is part of the school nurse's duties."
     },
     "day4_lunch_nurse_noyuna_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...For a vitamin shot, she hid it awfully smoothly. The ampoule label read 'M-13'. That's not a vitamin code.*"
     },
     "day4_lunch_nurse_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "I heard Yuna... suddenly transferred."
     },
     "day4_lunch_nurse_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Riin's expression changed for just a moment. Half a second. Her eyes sharpened -- then softened again.*"
     },
     "day4_lunch_nurse_8": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...Why are you staring at me like that? {name}, you're not having any strange thoughts, are you?"
     },
     "day4_lunch_nurse_9": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Her voice went cold for an instant, then turned gentle again.*"
     },
     "day4_lunch_nurse_10": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Yuna will be fine."
     },
     "day4_lunch_nurse_11": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*She said 'will be fine.' Not 'is fine.' Future tense.*"
     },
     "day4_lunch_nurse_12": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...Riin knows that Yuna is not fine right now.*"
     },
     "day4_lunch_nurse_13": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...You look tired. Seems like you haven't been sleeping well lately."
     },
     "day4_lunch_nurse_14": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "Want me to give you something? To help you sleep."
     },
     "day4_lunch_nurse_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*A smiling face. A soft voice. A syringe in hand.*",
         "choices": [
             "Refuse immediately",
@@ -179,23 +179,23 @@
         ]
     },
     "day4_lunch_nurse_16": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...I declined and left. Behind me, I heard Riin muttering something. I pretended not to hear.*"
     },
     "day4_lunch_roof_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The wind blows.*"
     },
     "day4_lunch_roof_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Writing carved beneath the railing. Deeply etched with a knife.*"
     },
     "day4_lunch_roof_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "***'There's only one way out. -- Lee Seolhwa'***"
     },
     "day4_lunch_roof_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Below it, in smaller letters: ***'The answer is underground'***",
         "choices": [
             "Memorize the words",
@@ -203,19 +203,19 @@
         ]
     },
     "day4_lunch_roof_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I touched the letters with my fingers. Cold. Writing carved into a metal railing. Old marks.*"
     },
     "day4_lunch_roof_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...This wasn't carved by a hallucination. This is a physically existing mark.*"
     },
     "day4_lunch_roof_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Seolhwa carved this -- when she was actually here.*"
     },
     "day4_lunch_end": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Afternoon classes are about to start.*"
     }
 }

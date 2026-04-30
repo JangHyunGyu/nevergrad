@@ -1,38 +1,38 @@
 {
     "day3_lunch_start": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Lunchtime. I opened my desk drawer, and there's a note inside.*"
     },
     "day3_lunch_note_yuna": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*'Sunbae, please come to the rooftop during lunch. Make sure you come alone. It's important. - Yuna'*"
     },
     "day3_lunch_note_yuna_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...Yuna sent this. The photography club underclassman from the library. Something important... what could it be?*"
     },
     "day3_lunch_note_yuna_brief": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*'Sunbae, please come to the rooftop at lunch. There's something important. - Yuna'*"
     },
     "day3_lunch_note_yuna_brief_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*She is the photography club junior I briefly met on the field. Why would she send a note like this out of nowhere?*"
     },
     "day3_lunch_note_unknown": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*'Sunbae, please come to the rooftop during lunch. Make sure you come alone. It's important. - Yuna'*"
     },
     "day3_lunch_note_unknown_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...Yuna? I don't know that name. Is there a Yuna in our class? No, I've mostly memorized the class names and there was no Yuna.*"
     },
     "day3_lunch_note_unknown_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*A prank maybe. Or someone from another class put it in the wrong desk.*\n\n*I put the note in my pocket. It nags at me, but going alone to meet a stranger... I'll just ignore it.*"
     },
     "day3_lunch_choice_no_yuna": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...What should I do?*",
         "choices": [
             "Have lunch with Sea",
@@ -41,7 +41,7 @@
         ]
     },
     "day3_lunch_choice": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...What should I do?*",
         "choices": [
             "Go to the rooftop",
@@ -51,139 +51,139 @@
         ]
     },
     "day3_lunch_rooftop_1": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...You came."
     },
     "day3_lunch_rooftop_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Yuna silently hands me a camera.*"
     },
     "day3_lunch_rooftop_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Her hands are trembling. Yuna's hands. The knuckles gripping the camera are white.*"
     },
     "day3_lunch_rooftop_4": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...Swipe through."
     },
     "day3_lunch_rooftop_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I took the camera. A photo is on the screen.*"
     },
     "day3_lunch_rooftop_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*A student standing in front of the school gate. Short black hair. Stiff uniform. Name tag: 'Kim Dojin.'*"
     },
     "day3_lunch_rooftop_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I swiped.*"
     },
     "day3_lunch_rooftop_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Same school gate. Different student. Brown hair. Name tag: 'Park Seojin.'*"
     },
     "day3_lunch_rooftop_9": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I swiped.*"
     },
     "day3_lunch_rooftop_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*A boy with long hair. Haggard face. Name tag: 'Kim Taeho.'*"
     },
     "day3_lunch_rooftop_11": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I swiped. Swiped. Swiped. Swiped.*"
     },
     "day3_lunch_rooftop_12": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...The last photo. In front of the school gate. Yesterday morning.*"
     },
     "day3_lunch_rooftop_13": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*It's my photo.*"
     },
     "day3_lunch_rooftop_14": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...*"
     },
     "day3_lunch_rooftop_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I couldn't put the camera down. I swiped back to the beginning. Slowly. One photo at a time.*"
     },
     "day3_lunch_rooftop_16": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Different hair colors. Different name tags.*"
     },
     "day3_lunch_rooftop_17": {
-        "name": "Me",
+        "speaker": "me",
         "text": "***Same eyes. Same nose. Same mouth.***"
     },
     "day3_lunch_rooftop_18": {
-        "name": "Me",
+        "speaker": "me",
         "text": "***13 photos. 13 people. One person.***"
     },
     "day3_lunch_rooftop_19": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Yuna says nothing. She's just watching me. Her eyes are red.*"
     },
     "day3_lunch_rooftop_20": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The hand holding the camera is trembling. -- My hand.*"
     },
     "day3_lunch_rooftop_21": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I looked at Yuna. She's biting her lip. She'd been carrying these photos alone for three years.*"
     },
     "day3_lunch_rooftop_22": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...I don't know what question to ask. The shape of a question won't form in my head.*"
     },
     "day3_lunch_rooftop_23": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Yuna finally opens her mouth. A small voice.*"
     },
     "day3_lunch_rooftop_24": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...They disappear every time. A week at most."
     },
     "day3_lunch_rooftop_25": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*That's all. Just those words.*"
     },
     "day3_lunch_rooftop_26": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...The thirteenth.*"
     },
     "day3_lunch_rooftop_27": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I tugged at my tie. The air catches in my throat as I try to breathe in.*"
     },
     "day3_lunch_rooftop_28": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I tried to return the camera to Yuna -- but she shook her head.*"
     },
     "day3_lunch_rooftop_29": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...Keep it."
     },
     "day3_lunch_rooftop_30": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*A single tear rolls down Yuna's cheek. She doesn't wipe it.*"
     },
     "day3_lunch_door_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...! Suddenly the rooftop door slammed shut with a BANG.*"
     },
     "day3_lunch_door_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I push the door. It won't open. It's been locked from the outside.*"
     },
     "day3_lunch_door_3": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "...! Sunbae, they found out..."
     },
     "day3_lunch_door_choice": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*What do I do?*",
         "choices": [
             "Bang on the door and shout",
@@ -191,43 +191,43 @@
         ]
     },
     "day3_lunch_door_bang": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I pounded on the door hard. 5 minutes later, the door opens. Nobody there. No lock either. ...No trace of who locked it.*"
     },
     "day3_lunch_door_wait": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I held Yuna's shoulders and calmed her down. 5 minutes later, the door opens. Nobody there. No lock either. ...No trace of who locked it.*"
     },
     "day3_lunch_door_open": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*We go down the stairs. Yuna follows behind me. Neither of us says a word.*"
     },
     "day3_lunch_door_open_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...The photos Yuna showed me earlier won't leave my head. 13 photos of the same face. My face.*"
     },
     "day3_lunch_door_open_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*It doesn't make sense. It logically doesn't make sense.*"
     },
     "day3_lunch_door_open_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*\"That's impossible... I was at my old school... with Minsu...\"*"
     },
     "day3_lunch_door_open_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*These are my own memories coming out of my own mouth, yet my lips feel like they're reading someone else's script.*"
     },
     "day3_lunch_door_open_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I braced myself against the wall. Saliva pooled in my mouth -- something rising. I swallowed it. Bent over, I pressed my forehead to the wall. The tiles are cold.*"
     },
     "day3_lunch_nametag_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...My gaze drops to the name tag on my chest. My name. Three syllables I've pinned on every morning.*"
     },
     "day3_lunch_nametag_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*-- Suddenly it feels foreign, like a word from another language. I touched it with my fingers. Only the feel of plastic came back.*",
         "choices": [
             "Touch the name tag again",
@@ -236,51 +236,51 @@
         ]
     },
     "day3_lunch_door_open_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*But I can't deny it either. Because the photos exist.*"
     },
     "day3_lunch_door_open_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Walking down the hallway, I look at the students passing by. Which of them knows? Which of them doesn't? Which of them is thinking 'Oh, he's back again'?*"
     },
     "day3_lunch_door_open_9": {
-        "name": "Yuna",
+        "speaker": "yuna",
         "text": "Sunbae, the photos... don't show them to anyone. Especially not the teachers."
     },
     "day3_lunch_door_open_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "...Got it."
     },
     "day3_lunch_door_open_11": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Yuna parts ways at the first floor. Before turning away, she looks at me once. Those eyes are saying 'I'm sorry' and 'please' at the same time.*"
     },
     "day3_lunch_door_open_12": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I'm left alone. The hallway is long.*"
     },
     "day3_lunch_sea_1": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "You're eating with me today, right?"
     },
     "day3_lunch_sea_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea is smiling. ...But this smile is different from yesterday's. If yesterday's smile was 'happy,' today's smile is closer to 'confirming.'*"
     },
     "day3_lunch_sea_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I sat down across from Sea. Sea looks at my lunch tray.*"
     },
     "day3_lunch_sea_4": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "Today's menu looks good. {name}, you like mackerel, right."
     },
     "day3_lunch_sea_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...I never said I like mackerel. I do like it, though.*"
     },
     "day3_lunch_sea_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "How do you know that?",
         "choices": [
             "Ask her directly",
@@ -289,95 +289,95 @@
         ]
     },
     "day3_lunch_sea_7": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "I saw you yesterday when you were picking side dishes. You went for the fish first."
     },
     "day3_lunch_sea_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...Did I? I don't remember. Sea reads my expression. Precisely.*"
     },
     "day3_lunch_sea_9": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...{name}, you seem to be wandering around alone a lot lately?"
     },
     "day3_lunch_sea_10": {
-        "name": "Me",
+        "speaker": "me",
         "text": "Really? I don't think so."
     },
     "day3_lunch_sea_11": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Must just be my imagination."
     },
     "day3_lunch_sea_12": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea picks up a side dish with her chopsticks and stops. Her gaze is fixed on her tray. A long silence.*"
     },
     "day3_lunch_sea_13": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*It's noisy all around, but this table is quiet. The air is heavy.*"
     },
     "day3_lunch_sea_14": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...You're hiding something from me, aren't you."
     },
     "day3_lunch_sea_15": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Her eyes aren't smiling. Her voice is low. Is this the usual Sea? Or is this the real Sea? For a moment our eyes meet. What's in there isn't hurt or anger. It's **fear**. She's afraid of me slipping away.*"
     },
     "day3_lunch_sea_16": {
-        "name": "Sea",
+        "speaker": "sea",
         "text": "...Just kidding. Eat."
     },
     "day3_lunch_sea_17": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Sea smiles. This time it's a perfect smile. The angle of her lips, the crinkle around her eyes, the position of her cheekbones -- not a single crack. She's smiling, but it feels more like something being 'played back.'*"
     },
     "day3_lunch_riin_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I opened the nurse's office door. The smell of disinfectant stings my nose. Nurse Riin is standing in front of the cabinet. She turns when the door opens.*"
     },
     "day3_lunch_riin_first": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "What's wrong, {name}? You don't look well."
     },
     "day3_lunch_riin_first_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...This is my first time in the nurse's office, but she called my name right away. Did she see it in the attendance roster?*"
     },
     "day3_lunch_riin_2": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "What's wrong, {name}? You don't look well."
     },
     "day3_lunch_riin_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "I'm a bit dizzy."
     },
     "day3_lunch_riin_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin points to the bed. I sat down. She places her hand on my forehead. A cool hand.*"
     },
     "day3_lunch_riin_5": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "No fever... but your complexion is bad."
     },
     "day3_lunch_riin_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin turns around and takes something from the cabinet. I can see her back. Her shoulders pause for a moment. A brief hesitation, as if she's making a decision.*"
     },
     "day3_lunch_riin_7": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "I have an electrolyte drink. If you're dizzy, take just a sip."
     },
     "day3_lunch_riin_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*When she turns back, there's a clear cup with pale purple liquid in her hands. A faint, chemical-like smell. And -- the hand offering the cup is trembling. A subtle tremor. You wouldn't notice unless you looked. But it's definitely trembling.*"
     },
     "day3_lunch_riin_9": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "It's mixed with vitamins and electrolytes. It may not taste great."
     },
     "day3_lunch_riin_choice": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin is smiling. A gentle smile. But her eyes... are holding something back.*",
         "choices": [
             "Drink it",
@@ -385,59 +385,59 @@
         ]
     },
     "day3_lunch_riin_drink_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I took a sip. ...A bitter taste lingers under my tongue. My mouth feels slightly dry.*"
     },
     "day3_lunch_riin_drink_2": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...You don't have to finish it. The taste is a bit much, right?"
     },
     "day3_lunch_riin_drink_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin takes the cup away. The moment she turns -- she's biting her lip hard.*"
     },
     "day3_lunch_riin_refuse_1": {
-        "name": "Riin",
+        "speaker": "riin",
         "text": "...Is that so? It's okay."
     },
     "day3_lunch_riin_refuse_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*Nurse Riin takes the cup away. She pours the contents down the sink. I see her back. The tension leaves her shoulders. ...Relief?*"
     },
     "day3_lunch_alone_1": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I stayed in the classroom and ate alone. Through the window, I can see the schoolyard. Kids are playing soccer.*"
     },
     "day3_lunch_alone_2": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...It's quiet. Too quiet. I'm the only one in the classroom.*"
     },
     "day3_lunch_alone_3": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I look at the back seat. Seolhwa's seat. Still empty. Three days now without attendance. But nobody seems to think it's strange. Even the homeroom teacher skips her name during roll call.*"
     },
     "day3_lunch_alone_4": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*There's something on Seolhwa's desk. Writing in pencil. Very faint. **'Get out of here'***"
     },
     "day3_lunch_alone_5": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*The chopsticks slipped from my hand. They rolled off the lunchbox lid and clattered to the floor — the sound seemed to echo through the entire classroom.*"
     },
     "day3_lunch_alone_6": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I run my hand over the desk surface. It's been carved deeply. It wasn't written once. Multiple times. Traces of the same words written over and over.*"
     },
     "day3_lunch_alone_7": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*...The handwriting matches the one from the locker. My handwriting.*"
     },
     "day3_lunch_alone_8": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I've lost my appetite. I closed my lunch box.*"
     },
     "day3_lunch_end": {
-        "name": "Me",
+        "speaker": "me",
         "text": "*I came back to the classroom. My heart won't stop racing.*"
     }
 }

@@ -407,7 +407,7 @@ class I18nManager {
             yuna: "\ucd5c\uc720\ub098",
             seolhwa: "\uc774\uc124\ud654",
             me: "\ub098",
-            unknown: "???"
+            unknown: NEVERGRAD_TEXT_MARKERS.unknownName("ko")
         },
         en: {
             eunsu: "Homeroom Teacher",
@@ -416,7 +416,7 @@ class I18nManager {
             yuna: "Choi Yuna",
             seolhwa: "Lee Seolhwa",
             me: "Me",
-            unknown: "???"
+            unknown: NEVERGRAD_TEXT_MARKERS.unknownName("en")
         },
         ja: {
             eunsu: "\u62c5\u4efb\u6559\u5e2b",
@@ -425,7 +425,7 @@ class I18nManager {
             yuna: "\u30c1\u30a7\u30fb\u30e6\u30ca",
             seolhwa: "\u30a4\u30fb\u30bd\u30eb\u30d5\u30a1",
             me: "\u50d5",
-            unknown: "???"
+            unknown: NEVERGRAD_TEXT_MARKERS.unknownName("ja")
         },
         es: {
             eunsu: "Profesora tutora",
@@ -434,7 +434,7 @@ class I18nManager {
             yuna: "Choi Yuna",
             seolhwa: "Lee Seolhwa",
             me: "Yo",
-            unknown: "???"
+            unknown: NEVERGRAD_TEXT_MARKERS.unknownName("es")
         },
         fr: {
             eunsu: "Professeure principale",
@@ -443,7 +443,7 @@ class I18nManager {
             yuna: "Choi Yuna",
             seolhwa: "Lee Seolhwa",
             me: "Moi",
-            unknown: "???"
+            unknown: NEVERGRAD_TEXT_MARKERS.unknownName("fr")
         },
         de: {
             eunsu: "Klassenlehrerin",
@@ -452,7 +452,7 @@ class I18nManager {
             yuna: "Choi Yuna",
             seolhwa: "Lee Seolhwa",
             me: "Ich",
-            unknown: "???"
+            unknown: NEVERGRAD_TEXT_MARKERS.unknownName("de")
         },
         pt: {
             eunsu: "Professora orientadora",
@@ -461,7 +461,7 @@ class I18nManager {
             yuna: "Choi Yuna",
             seolhwa: "Lee Seolhwa",
             me: "Eu",
-            unknown: "???"
+            unknown: NEVERGRAD_TEXT_MARKERS.unknownName("pt")
         }
     };
 

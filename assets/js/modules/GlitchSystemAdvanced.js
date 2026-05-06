@@ -1228,7 +1228,7 @@ class GlitchSystemAdvanced {
             }
 
             // ===== Day 3 점심: 스탯 라벨 잠깐 이동 =====
-            // "호감도" → 글리치 → "???" → 복구
+            // "호감도" → 글리치 → 명시적 손상 마커 → 복구
             case 'day3_lunch_stat_shift': {
                 this.setLevel('UNSETTLING');
 
@@ -1238,7 +1238,7 @@ class GlitchSystemAdvanced {
                     label.textContent = this.corruptText(orig, 0.4);
                     label.classList.add('glitch-text');
                     await this._sleep(200);
-                    label.textContent = '???';
+                    label.textContent = NEVERGRAD_TEXT_MARKERS.corruptedPlaceholder();
                     await this._sleep(300);
                     label.textContent = orig;
                     label.classList.remove('glitch-text');

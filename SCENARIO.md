@@ -12089,7 +12089,7 @@ _source: `day4_4_night.js / day4_night.json`_
 
 **나**
 ```text
-*15초 후. 세아: '약속이야?????'*
+*15초 후. 세아: '약속이야?'*
 ```
 
 ### `day4_night_phone_7`

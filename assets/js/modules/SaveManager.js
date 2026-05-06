@@ -361,7 +361,7 @@ class SaveManager {
             'GHOST':     { status: '탈출 — 환각 개입', statusClass: 'corrupted' },
             'COMPLICIT': { status: '공범 전환',   statusClass: 'corrupted' }
         };
-        return map[ending] || { status: '???', statusClass: 'corrupted' };
+        return map[ending] || { status: NEVERGRAD_TEXT_MARKERS.corruptedRecord('ko'), statusClass: 'corrupted' };
     }
 
     // =========================================================================

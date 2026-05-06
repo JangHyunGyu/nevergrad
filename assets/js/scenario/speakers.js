@@ -8,7 +8,7 @@
 var NEVERGRAD_SPEAKER_NAMES = {
     "ko": {
         "me": "나",
-        "unknown": "???",
+        "unknown": NEVERGRAD_TEXT_MARKERS.unknownName("ko"),
         "school_broadcast": "[교내 방송]",
         "eunsu_full": "박은수",
         "eunsu": "은수",
@@ -36,7 +36,7 @@ var NEVERGRAD_SPEAKER_NAMES = {
     },
     "en": {
         "me": "Me",
-        "unknown": "???",
+        "unknown": NEVERGRAD_TEXT_MARKERS.unknownName("en"),
         "school_broadcast": "School Broadcast",
         "eunsu_full": "Park Eunsu",
         "eunsu": "Eunsu",
@@ -65,7 +65,7 @@ var NEVERGRAD_SPEAKER_NAMES = {
     "ja": {
         "me": "僕",
         "me_watashi": "私",
-        "unknown": "???",
+        "unknown": NEVERGRAD_TEXT_MARKERS.unknownName("ja"),
         "school_broadcast": "校内放送",
         "eunsu_full": "パク・ウンス",
         "eunsu": "ウンス",
@@ -93,7 +93,7 @@ var NEVERGRAD_SPEAKER_NAMES = {
     },
     "es": {
         "me": "Yo",
-        "unknown": "???",
+        "unknown": NEVERGRAD_TEXT_MARKERS.unknownName("es"),
         "school_broadcast": "[Aviso escolar]",
         "eunsu_full": "Park Eunsu",
         "eunsu": "Eunsu",
@@ -121,7 +121,7 @@ var NEVERGRAD_SPEAKER_NAMES = {
     },
     "fr": {
         "me": "Moi",
-        "unknown": "???",
+        "unknown": NEVERGRAD_TEXT_MARKERS.unknownName("fr"),
         "school_broadcast": "[Annonce scolaire]",
         "eunsu_full": "Park Eunsu",
         "eunsu": "Eunsu",
@@ -149,7 +149,7 @@ var NEVERGRAD_SPEAKER_NAMES = {
     },
     "de": {
         "me": "Ich",
-        "unknown": "???",
+        "unknown": NEVERGRAD_TEXT_MARKERS.unknownName("de"),
         "school_broadcast": "[Schuldurchsage]",
         "eunsu_full": "Park Eunsu",
         "eunsu": "Eunsu",
@@ -177,7 +177,7 @@ var NEVERGRAD_SPEAKER_NAMES = {
     },
     "pt": {
         "me": "Eu",
-        "unknown": "???",
+        "unknown": NEVERGRAD_TEXT_MARKERS.unknownName("pt"),
         "school_broadcast": "School Broadcast",
         "eunsu_full": "Park Eunsu",
         "eunsu": "Eunsu",

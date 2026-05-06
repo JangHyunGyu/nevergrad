@@ -373,7 +373,7 @@ class GallerySystem {
             return `
                 <button class="gallery-card ${isUnlocked ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="ending" data-ending="${this._escape(ending)}">
                     <span class="gallery-card-icon">${isUnlocked ? this._getEndingIcon(ending) : ''}</span>
-                    <span class="gallery-card-title">${isUnlocked ? this._escape(ending) : '???'}</span>
+                    <span class="gallery-card-title">${isUnlocked ? this._escape(ending) : this._escape(labels.locked)}</span>
                     <span class="gallery-card-desc">${this._escape(desc)}</span>
                 </button>
             `;
@@ -398,7 +398,7 @@ class GallerySystem {
             return `
                 <button class="gallery-card gallery-media-card ${unlocked ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="cg" data-id="${this._escape(item.id)}">
                     <span class="gallery-thumb">${image}</span>
-                    <span class="gallery-card-title">${unlocked ? this._escape(item.name) : '???'}</span>
+                    <span class="gallery-card-title">${unlocked ? this._escape(item.name) : this._escape(labels.locked)}</span>
                     <span class="gallery-card-desc">${unlocked ? this._escape(item.description) : this._escape(labels.lockedCg)}</span>
                 </button>
             `;
@@ -423,7 +423,7 @@ class GallerySystem {
                         data-kind="music" data-id="${this._escape(item.id)}">
                     <span class="gallery-music-icon">${isPlaying ? 'II' : 'PLAY'}</span>
                     <span class="gallery-music-main">
-                        <span class="gallery-card-title">${unlocked ? this._escape(item.name) : '???'}</span>
+                        <span class="gallery-card-title">${unlocked ? this._escape(item.name) : this._escape(labels.locked)}</span>
                         <span class="gallery-card-desc">${unlocked ? this._escape(labels.artist) : this._escape(labels.lockedMusic)}</span>
                     </span>
                     <span class="gallery-music-action">${unlocked ? this._escape(isPlaying ? labels.stop : labels.play) : '--'}</span>
@@ -455,7 +455,7 @@ class GallerySystem {
             return `
                 <button class="gallery-card gallery-character-card ${met ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="character" data-id="${this._escape(item.id)}">
                     <span class="gallery-thumb gallery-character-thumb">${image}</span>
-                    <span class="gallery-card-title">${met ? this._escape(charName) : '???'}</span>
+                    <span class="gallery-card-title">${met ? this._escape(charName) : this._escape(labels.locked)}</span>
                     <span class="gallery-card-desc">${met ? `${this._escape(labels.expressions)} ${unlocked} / ${item.expressions.length}` : this._escape(labels.lockedCharacter)}</span>
                 </button>
             `;

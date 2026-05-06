@@ -2409,7 +2409,8 @@ class GameEngine {
                 nameEl.className = 'sl-slot-name';
                 const dayText = `Day ${info.currentDay}`;
                 const slotLabel = slotNames[info.currentSlot] || info.currentSlot || '';
-                nameEl.textContent = `${info.playerName || '???'} — ${dayText} ${slotLabel}`;
+                const displayName = info.playerName || NEVERGRAD_TEXT_MARKERS.unknownName(this.i18n.currentLang);
+                nameEl.textContent = `${displayName} — ${dayText} ${slotLabel}`;
 
                 const detailEl = document.createElement('div');
                 detailEl.className = 'sl-slot-detail';

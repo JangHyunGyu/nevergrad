@@ -4,6 +4,55 @@
  * ============================================================================
  */
 
+const NEVERGRAD_TEXT_MARKERS = (typeof globalThis !== 'undefined' && globalThis.NEVERGRAD_TEXT_MARKERS) || Object.freeze({
+    unknownName(lang = 'ko') {
+        const labels = {
+            ko: '미상',
+            en: 'Unknown',
+            ja: '不明',
+            es: 'Desconocido',
+            fr: 'Inconnu',
+            de: 'Unbekannt',
+            pt: 'Desconhecido'
+        };
+        return labels[lang] || labels.en;
+    },
+
+    lockedTitle(lang = 'ko') {
+        const labels = {
+            ko: '미해금',
+            en: 'Locked',
+            ja: '未解放',
+            es: 'Bloqueado',
+            fr: 'Verrouillé',
+            de: 'Gesperrt',
+            pt: 'Bloqueado'
+        };
+        return labels[lang] || labels.en;
+    },
+
+    corruptedRecord(lang = 'ko') {
+        const labels = {
+            ko: '기록 손상',
+            en: 'Record Corrupted',
+            ja: '記録破損',
+            es: 'Registro dañado',
+            fr: 'Dossier corrompu',
+            de: 'Datensatz beschädigt',
+            pt: 'Registro corrompido'
+        };
+        return labels[lang] || labels.en;
+    },
+
+    corruptedPlaceholder(length = 3) {
+        return '?'.repeat(Math.max(1, Number(length) || 3));
+    }
+});
+
+if (typeof globalThis !== 'undefined') {
+    globalThis.NEVERGRAD_TEXT_MARKERS = NEVERGRAD_TEXT_MARKERS;
+}
+
 const CONFIG = {
     // ===== 게임 기본 설정 =====
     TITLE: "졸업하지 못한 교실",
@@ -46,7 +95,7 @@ const CONFIG = {
         yuna: "최유나",
         seolhwa: "이설화",
         me: "나",
-        unknown: "???"
+        unknown: NEVERGRAD_TEXT_MARKERS.unknownName('ko')
     },
 
     // 이름 공개 후 전환되는 실명

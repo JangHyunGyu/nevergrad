@@ -20,6 +20,7 @@ const SCENARIO_MD = path.join(ROOT, 'SCENARIO.md');
 const SCENARIO_DIR = path.join(ROOT, 'assets', 'js', 'scenario');
 const KO_DIR = path.join(ROOT, 'assets', 'js', 'i18n', 'ko');
 const SPEAKERS_FILE = path.join(SCENARIO_DIR, 'speakers.js');
+const CONFIG_FILE = path.join(ROOT, 'assets', 'js', 'config.js');
 const { speakerNames, scenarioSpeakers } = loadSpeakerMetadata();
 const KO_SPEAKER_NAMES = speakerNames.ko || speakerNames.en || {};
 
@@ -80,6 +81,7 @@ function quoteBlock(text) {
 function loadSpeakerMetadata() {
     const sandbox = {};
     vm.createContext(sandbox);
+    vm.runInContext(fs.readFileSync(CONFIG_FILE, 'utf8'), sandbox, { filename: CONFIG_FILE });
     vm.runInContext(fs.readFileSync(SPEAKERS_FILE, 'utf8'), sandbox, { filename: SPEAKERS_FILE });
     return {
         speakerNames: sandbox.NEVERGRAD_SPEAKER_NAMES || {},

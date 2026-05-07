@@ -281,18 +281,22 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_seolhwa_2": {
         character: "seolhwa_sad",
+        charOpacity: 0.72,
         next: "day2_after_seolhwa_3"
     },
     "day2_after_seolhwa_3": {
         character: "seolhwa_sad",
+        charOpacity: 0.72,
         next: "day2_after_seolhwa_4"
     },
     "day2_after_seolhwa_4": {
         character: "seolhwa_sad",
+        charOpacity: 0.72,
         next: "day2_after_seolhwa_5"
     },
     "day2_after_seolhwa_5": {
         character: "seolhwa_sad",
+        charOpacity: 0.72,
         next: "day2_after_seolhwa_6"
     },
     "day2_after_seolhwa_6": {

@@ -387,17 +387,20 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_dream_6": {
         character: "seolhwa_smile",
+        charOpacity: 0.78,
         night: true,
         setFlags: ["dream_seolhwa_day2"],
         next: "day2_night_dream_7"
     },
     "day2_night_dream_7": {
         character: "seolhwa_smile",
+        charOpacity: 0.78,
         night: true,
         next: "day2_night_dream_7a"
     },
     "day2_night_dream_7a": {
         character: "seolhwa_smile",
+        charOpacity: 0.78,
         night: true,
         glitch: { noise: true, noiseDuration: 500 },
         next: "day2_night_dream_8"

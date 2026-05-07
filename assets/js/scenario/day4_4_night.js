@@ -328,10 +328,12 @@ Object.assign(SCENARIO[4], {
     "day4_night_mirror_8": {
         unskippable: true,
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         next: "day4_night_mirror_9"
     },
     "day4_night_mirror_9": {
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         unskippable: true,
         next: "day4_night_mirror_10"
     },
@@ -339,17 +341,20 @@ Object.assign(SCENARIO[4], {
     "day4_night_mirror_10": {
         unskippable: true,
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         next: "day4_night_mirror_11"
     },
     // 설화: "아직... 보지 마."
     "day4_night_mirror_11": {
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         unskippable: true,
         next: "day4_night_mirror_12"
     },
     "day4_night_mirror_12": {
         unskippable: true,
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         next: "day4_night_mirror_swipe"
     },
 
@@ -400,6 +405,7 @@ Object.assign(SCENARIO[4], {
     // 거울에 설화가 비치지 않는다
     "day4_night_mirror_hit1": {
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         unskippable: true,
         glitch: {
             mirrorReflection: true,
@@ -427,6 +433,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_mirror_hit1_5": {
         unskippable: true,
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         next: "day4_night_mirror_hit1_6"
     },
     "day4_night_mirror_hit1_6": {
@@ -435,6 +442,7 @@ Object.assign(SCENARIO[4], {
         // mirrorReflection 연출이 거울 반사상에서만 설화를 제외하면서
         // "실제로는 있는데 거울에는 없다"는 공포를 드러낸다.
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         glitch: { mirrorReflection: true, characterAbsentInMirror: "seolhwa" },
         next: "day4_night_mirror_hit1_7"
     },
@@ -484,6 +492,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_mirror_hit1_14": {
         unskippable: true,
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         // 바이노럴 왼쪽 귀 속삭임 — 거울엔 없지만 귀 옆에 바로 있는 듯한 연출
         glitch: { panSFX: "sfx_whisper_seolhwa", pan: -1 },
         next: "day4_night_mirror_hit1_15"
@@ -491,6 +500,7 @@ Object.assign(SCENARIO[4], {
     "day4_night_mirror_hit1_15": {
         unskippable: true,
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         stopSfx: "sfx_whisper_seolhwa.mp3",
         next: "day4_night_mirror_hit2"
     },
@@ -623,11 +633,13 @@ Object.assign(SCENARIO[4], {
     "day4_night_mirror_collapse_8": {
         unskippable: true,
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         next: "day4_night_mirror_collapse_9"
     },
     "day4_night_mirror_collapse_9": {
         unskippable: true,
         character: "seolhwa_sad",
+        charOpacity: 0.86,
         next: "day4_night_plan"
     },
 

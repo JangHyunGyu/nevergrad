@@ -199,6 +199,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_10": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         unskippable: true,
         next: "day5_ending_true_11"
     },
@@ -209,11 +210,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_12": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         unskippable: true,
         next: "day5_ending_true_13"
     },
     "day5_ending_true_13": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         unskippable: true,
         next: "day5_ending_true_14"
     },
@@ -237,10 +240,12 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_15": {
         character: "seolhwa_sad",
+        charOpacity: 0.9,
         next: "day5_ending_true_16"
     },
     "day5_ending_true_16": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         next: "day5_ending_true_17"
     },
     "day5_ending_true_17": {
@@ -700,14 +705,17 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_resist_11": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         next: "day5_ending_resist_12"
     },
     "day5_ending_resist_12": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         next: "day5_ending_resist_13"
     },
     "day5_ending_resist_13": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         next: "day5_ending_resist_14"
     },
     "day5_ending_resist_14": {

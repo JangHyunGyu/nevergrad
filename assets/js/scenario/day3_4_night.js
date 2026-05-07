@@ -412,6 +412,7 @@ Object.assign(SCENARIO[3], {
     // "...5일이야."
     "day3_night_seolhwa_5": {
         character: "seolhwa_sad",
+        charOpacity: 0.82,
         typingSpeed: 120,
         unskippable: true,
         stopSfx: ["sfx_whisper.mp3", "sfx_whisper_seolhwa.mp3"],
@@ -421,17 +422,20 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seolhwa_6": {
         character: "seolhwa_sad",
+        charOpacity: 0.82,
         unskippable: true,
         next: "day3_night_seolhwa_6a"
     },
     "day3_night_seolhwa_6a": {
         character: "seolhwa_sad",
+        charOpacity: 0.82,
         unskippable: true,
         next: "day3_night_seolhwa_7"
     },
     // "5일 안에... 여기서 나가야 해."
     "day3_night_seolhwa_7": {
         character: "seolhwa_normal",
+        charOpacity: 0.82,
         typingSpeed: 150,
         unskippable: true,
         stopSfx: "sfx_whisper_seolhwa.mp3",
@@ -440,12 +444,14 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seolhwa_7a": {
         character: "seolhwa_normal",
+        charOpacity: 0.82,
         unskippable: true,
         next: "day3_night_seolhwa_8"
     },
     // "나처럼 되기 전에."
     "day3_night_seolhwa_8": {
         character: "seolhwa_normal",
+        charOpacity: 0.82,
         typingSpeed: 150,
         unskippable: true,
         stopSfx: "sfx_whisper_seolhwa.mp3",
@@ -454,11 +460,13 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_seolhwa_9": {
         character: "seolhwa_normal",
+        charOpacity: 0.82,
         unskippable: true,
         next: "day3_night_seolhwa_10"
     },
     "day3_night_seolhwa_10": {
         character: "seolhwa_normal",
+        charOpacity: 0.82,
         unskippable: true,
         next: "day3_night_seolhwa_11"
     },

@@ -439,11 +439,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_true_10": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         unskippable: true,
         next: "day5_after_true_11"
     },
     "day5_after_true_11": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         unskippable: true,
         next: "day5_after_true_11a"
     },
@@ -680,11 +682,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_ghost_5": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         unskippable: true,
         next: "day5_after_ghost_6"
     },
     "day5_after_ghost_6": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         unskippable: true,
         next: "day5_after_ghost_7"
     },
@@ -695,6 +699,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_ghost_8": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         unskippable: true,
         next: "day5_after_ghost_9"
     },
@@ -710,6 +715,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_after_ghost_11": {
         character: "seolhwa_normal",
+        charOpacity: 0.9,
         unskippable: true,
         next: "day5_after_ghost_12"
     },

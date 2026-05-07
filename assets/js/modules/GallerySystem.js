@@ -362,7 +362,7 @@ class GallerySystem {
         if (!grid) return;
         const lang = this._lang();
         const labels = this._labels();
-        const unlocked = new Set(this.getUnlockedEndings());
+        const unlockedCount = GallerySystem.ENDINGS.filter(ending => this.isEndingUnlocked(ending)).length;
 
         grid.className = 'gallery-grid gallery-grid-endings';
         grid.innerHTML = GallerySystem.ENDINGS.map(ending => {
@@ -379,7 +379,7 @@ class GallerySystem {
             `;
         }).join('');
 
-        this._updateProgress(unlocked.size, GallerySystem.ENDINGS.length);
+        this._updateProgress(unlockedCount, GallerySystem.ENDINGS.length);
     }
 
     _renderCG() {
@@ -392,9 +392,10 @@ class GallerySystem {
         grid.className = 'gallery-grid gallery-grid-cg';
         grid.innerHTML = items.map(item => {
             const unlocked = this.isUnlocked('cg', item.id);
-            const image = unlocked
-                ? `<img src="${this._versioned(item.file)}" alt="${this._escape(item.name)}">`
-                : `<div class="gallery-lock-mark">LOCK</div>`;
+            const image = `
+                <img src="${this._versioned(item.file)}" alt="${this._escape(unlocked ? item.name : labels.locked)}">
+                ${unlocked ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
+            `;
             return `
                 <button class="gallery-card gallery-media-card ${unlocked ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="cg" data-id="${this._escape(item.id)}">
                     <span class="gallery-thumb">${image}</span>
@@ -449,9 +450,10 @@ class GallerySystem {
             const met = this.isCharacterMet(item.id);
             const charName = this._characterName(item.id);
             const unlocked = item.expressions.filter(expr => this.isExpressionUnlocked(item.id, expr.id)).length;
-            const image = met
-                ? `<img src="${this._versioned(item.cover)}" alt="${this._escape(charName)}">`
-                : `<div class="gallery-lock-mark">LOCK</div>`;
+            const image = `
+                <img src="${this._versioned(item.cover)}" alt="${this._escape(met ? charName : labels.locked)}">
+                ${met ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
+            `;
             return `
                 <button class="gallery-card gallery-character-card ${met ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="character" data-id="${this._escape(item.id)}">
                     <span class="gallery-thumb gallery-character-thumb">${image}</span>
@@ -537,9 +539,10 @@ class GallerySystem {
                 <div class="gallery-expression-grid">
                     ${character.expressions.map(expr => {
                         const unlocked = this.isExpressionUnlocked(character.id, expr.id);
-                        const image = unlocked
-                            ? `<img src="${this._versioned(expr.file)}" alt="${this._escape(expr.name)}">`
-                            : `<div class="gallery-lock-mark">LOCK</div>`;
+                        const image = `
+                            <img src="${this._versioned(expr.file)}" alt="${this._escape(unlocked ? expr.name : labels.locked)}">
+                            ${unlocked ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
+                        `;
                         return `
                             <div class="gallery-expression-card ${unlocked ? 'gallery-unlocked' : 'gallery-locked'}">
                                 <div class="gallery-expression-thumb">${image}</div>

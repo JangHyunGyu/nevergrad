@@ -487,26 +487,34 @@ class GameEngine {
         // 캐릭터 (키 기반: "sea_smile" → CONFIG.EXPRESSIONS에서 경로 조회)
         // character/characters가 명시된 경우만 변경, 없으면 이전 상태 유지
         // character: null 로 명시하면 캐릭터 퇴장
-        // charOpacity: 0~1 — 메신저/문자 씬에서 캐릭터를 반투명으로 표시
+        // charOpacity: 0~1 — 캐릭터를 반투명으로 표시
+        // charOpacities: { center: 0.9 } — 다중 캐릭터 장면의 위치/표정별 투명도
         // 전환 중 빠른 클릭 방지 (300ms 잠금)
         if ('character' in scene || 'characters' in scene) {
             this._clickLocked = true;
             clearTimeout(this._clickLockTimer);
             this._clickLockTimer = setTimeout(() => { this._clickLocked = false; }, 300);
-            const opacity = scene.charOpacity;
+            const opacityFor = (position, key) => {
+                const opacities = scene.charOpacities;
+                if (opacities && typeof opacities === 'object') {
+                    if (Object.prototype.hasOwnProperty.call(opacities, position)) return opacities[position];
+                    if (key && Object.prototype.hasOwnProperty.call(opacities, key)) return opacities[key];
+                }
+                return scene.charOpacity;
+            };
             if (scene.character === null && !scene.characters) {
                 // 명시적 null — 캐릭터 퇴장
                 this.renderer.clearCharacters();
             } else {
                 if (scene.character) {
                     this.gallery?.unlockCharacterExpression?.(scene.character);
-                    this.renderer.setCharacter('center', this._resolveCharImage(scene.character), opacity);
+                    this.renderer.setCharacter('center', this._resolveCharImage(scene.character), opacityFor('center', scene.character));
                 }
                 if (scene.characters) {
                     for (const [pos, key] of Object.entries(scene.characters)) {
                         if (key) {
                             this.gallery?.unlockCharacterExpression?.(key);
-                            this.renderer.setCharacter(pos, this._resolveCharImage(key), opacity);
+                            this.renderer.setCharacter(pos, this._resolveCharImage(key), opacityFor(pos, key));
                         }
                     }
                 }

@@ -207,15 +207,18 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_seolhwa_6": {
         character: "seolhwa_sad",
+        charOpacity: 0.78,
         typingSpeed: 120,
         next: "day3_morning_seolhwa_7"
     },
     "day3_morning_seolhwa_7": {
         character: "seolhwa_sad",
+        charOpacity: 0.78,
         next: "day3_morning_seolhwa_8"
     },
     "day3_morning_seolhwa_8": {
         character: "seolhwa_sad",
+        charOpacity: 0.78,
         next: "day3_morning_seolhwa_9"
     },
     "day3_morning_seolhwa_9": {

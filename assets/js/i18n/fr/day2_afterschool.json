@@ -3,10 +3,10 @@
         "text": "*Le dernier cours se termine et Eunsu s'approche.*"
     },
     "day2_after_eunsu_1": {
-        "text": "Notre école dispose d'un système de campus intelligent plutôt performant. Wi-Fi du campus, accès à la bibliothèque, ccafétéria — tout ça via une seule application."
+        "text": "Dans notre école, presque tout passe par une seule application. Le Wi-Fi, l'accès à la bibliothèque, même le QR du réfectoire."
     },
     "day2_after_eunsu_2": {
-        "text": "En tant que nouvel élève, tu n'es probablement pas encore inscrit à l'« Application de Sécurité Étudiante ». Tu ne peux même pas utiliser la cafétéria sans elle."
+        "text": "C'est la dernière étape de ton inscription comme élève transféré. Si tu ne l'installes pas, le QR du réfectoire ne passera pas à partir de demain."
     },
     "day2_after_eunsu_3": {
         "text": "*Je cherché sur l'App Store. « Hanul Smart Campus ». 4,8 étoiles. Très bien notée.*"
@@ -15,16 +15,16 @@
         "text": "*Télécharger. Installer. Entrer l'identifiant étudiant.*"
     },
     "day2_after_eunsu_5": {
-        "text": "J'ai noté ton identifiant étudiant ici."
+        "text": "Ton numéro d'élève est ici. Le même numéro était aussi collé à ta place."
     },
     "day2_after_eunsu_6": {
-        "text": "*La professeure me tend un pense-bête. Une écriture soignée.*"
+        "text": "*La professeure me tendit un post-it. Sous les six chiffres, une petite coche était déjà tracée.*"
     },
     "day2_after_eunsu_7": {
         "text": "*Je lance l'application et des demandes d'autorisation apparaissent.\n\n[Autorisation de localisation] — 'Requise pour localiser les élèves en cas d'urgence sur le campus'\n[Autorisation de caméra] — 'Requise pour le scan QR de l'identifiant étudiant'\n[Autorisation de microphone] — 'Requise pour les appels d'urgence'*"
     },
     "day2_after_eunsu_8": {
-        "text": "*...Ça fait beaucoup d'autorisations.*"
+        "text": "*La fenêtre de demande d'autorisations ne tenait pas entièrement sur l'écran. En bas, il restait encore une barre de défilement grise.*"
     },
     "day2_after_eunsu_choice": {
         "text": "",
@@ -43,16 +43,16 @@
         "text": "*Notification de l'application : 'L'autorisation de localisation est restreinte. Les fonctions de sécurité d'urgence seront désactivées.'*"
     },
     "day2_after_limit_2": {
-        "text": "Il vaut mieux régler la localisation sur 'Toujours autoriser'. Si {name} s'évanouit ou autre, on pourra e retrouver immédiatement."
+        "text": "L'autorisation de localisation est réglée par défaut sur « Toujours autoriser ». À l'intérieur de l'école, ça provoque moins d'erreurs."
     },
     "day2_after_limit_3": {
         "text": "…Est-ce vraiment nécessaire ?"
     },
     "day2_after_limit_4": {
-        "text": "Un élève s'est effondré pendant le sport l'année dernière. La politique a été renforcée après ça."
+        "text": "La politique a changé depuis l'année dernière. Le texte des notifications a aussi été ajouté à ce moment-là."
     },
     "day2_after_limit_5": {
-        "text": "*Un élève qui s'est effondré l'année dernière... donc c'est arrivé. C'est pour la sécurité, après tout.*"
+        "text": "*Le bouton gris de l'écran des paramètres passa au bleu. L'indicateur `État de sécurité` en bas de l'application devint aussitôt vert.*"
     },
     "day2_after_sea_start": {
         "text": ""
@@ -64,10 +64,10 @@
         "text": "J'avais promis, non ?"
     },
     "day2_after_sea_3": {
-        "text": "…Tu t'en es souvenu."
+        "text": "...Tu as tenu ta promesse."
     },
     "day2_after_sea_4": {
-        "text": "*Sea sourit. Ce sourire... ressemble à un soulagement.*"
+        "text": "*Sea sourit. Sous le bureau, sa main crispée se détendit un peu.*"
     },
     "day2_after_sea_5": {
         "text": "*Des piles de documents sur le bureau de la salle du conseil des élèves. Des papiers pour la journée sportive.*"
@@ -82,7 +82,7 @@
         "text": "Vraiment ? Tu peux trier les inscriptions par date ?"
     },
     "day2_after_sea_9": {
-        "text": "*Sea ravaille sur les programmes des événements pendant que je trie les inscriptions. Un travail simple, mais ce n'est pas ennuyeux avec quelqu'un a  de soi.*"
+        "text": "*Sea rangeait les programmes de l'événement, et je triais les formulaires d'inscription. Le bruit des pages tournées continuait, régulier, entre nous.*"
     },
     "day2_after_sea_10": {
         "text": "Regarde, la Classe 2 s'est inscrite à la fois au tir à la orde et au relais. Ambitieux."
@@ -106,40 +106,40 @@
         "text": "C'est ennuyeux sans musique de fond."
     },
     "day2_after_sea_17": {
-        "text": "*Le bruit des papiers et de la musique. La lumière du coucher de soleil traverse la fenêtre. Ce moment... est agréable.*"
+        "text": "*Le bruit des papiers et celui de la musique. La lumière du crépuscule se déverse par la fenêtre. La poussière flotte lentement au-dessus du bureau.*"
     },
     "day2_after_sea_18": {
-        "text": "...{name}. Avant que tu n'arrives, j'étais toujours seule ici."
+        "text": "...{name}. Je peux sortir une chaise de plus ici ?"
     },
     "day2_after_sea_19": {
-        "text": "Tout le monde met une barrière parce que je suis la déléguée de classe. Ils sourient, mais... gardent leurs distances."
+        "text": "Il n'y avait pas une chaise en réserve ici ?"
     },
     "day2_after_sea_20": {
-        "text": "*Sea regardé par la fenêtre. Le coucher de soleil illumine son visage. La main qui tient les documents s'est immobilisée.*"
+        "text": "*Sea regarde par la fenêtre. Le couchant teinte son visage. Sur le bord du bureau, seule la marque d'une tasse est restée depuis longtemps.*"
     },
     "day2_after_sea_21": {
-        "text": "Honnêtement... je me sens seule parfois."
+        "text": "Il y en avait une, mais personne ne restait assis longtemps."
     },
     "day2_after_sea_22": {
-        "text": "*Les coins des yeux de Sea sont devenus légèrement rouges.*"
+        "text": "*Sea essaie de sourire, puis froisse le coin de la feuille.*"
     },
     "day2_after_sea_23": {
-        "text": "...Merci d'avoir été honnête avec moi."
+        "text": "...Alors, on le fait ici demain aussi ?"
     },
     "day2_after_sea_24": {
-        "text": "...Alors ne change pas. Tu dois rester proche de moi."
+        "text": "...Oui. Je vais mettre ton nom dessus. Il ne faut pas que les formulaires se mélangent."
     },
     "day2_after_sea_25": {
-        "text": "Je n'ai aucune raison de changer."
+        "text": "D'accord."
     },
     "day2_after_sea_26": {
-        "text": "*Sea me regarde. Elle semble sur le point de dire quelque chose, mais referme la bouche. Puis reprend les documents.*"
+        "text": "*Sea commence à écrire mon nom sur l'étiquette, puis le réécrit en lettres un peu plus petites.*"
     },
     "day2_after_sea_27": {
-        "text": "...Oui. Je me souviendrai de ce que tu as dit."
+        "text": "...Je vais la coller pour qu'elle ne se décolle pas."
     },
     "day2_after_sea_28": {
-        "text": "*Après cela, nous avons travaillé en silence. Seule la musique jouait. C'était un silence confortable.*"
+        "text": "*Après ça, nous avons travaillé sans un mot. Le volume de la musique était un cran plus bas qu'avant.*"
     },
     "day2_after_hallway_1": {
         "text": "*En quittant la salle du conseil des élèves, je descends le couloir et trouve des camarades de classe rassemblés près du distributeur automatique.*"
@@ -172,7 +172,7 @@
         "text": "*J'ai reçu une canette de café au lait. Froide.*\n\n*Nous avons discuté un peu. Les restaurants près de l'école, quel nom donner à notre classe pour la journée sportive, comment la professeure principale note vite...*"
     },
     "day2_after_hallway_11": {
-        "text": "*Une conversation naturelle. Les gens de cette école... sont tous vraiment gentils.*"
+        "text": "*Je fais rouler la canette dans ma main. Du lait au café froid. Le même goût que celui d'hier.*"
     },
     "day2_after_seolhwa_start": {
         "text": ""
@@ -184,13 +184,13 @@
         "text": "*C'est Seolhwa. Debout à l'intérieur du portail, elle me regarde. Dans la lumière du coucher de soleil. Ses longs cheveux flottent au vent sur son uniforme.*"
     },
     "day2_after_seolhwa_3": {
-        "text": "*...Cette fois, elle ne disparaît pas. Elle reste là, à me regarder. Ses yeux sont humides.*"
+        "text": "*...Même après avoir cligné des yeux une fois, elle est toujours là. Elle me regarde. La lumière du couchant s'accroche au bord de ses yeux.*"
     },
     "day2_after_seolhwa_4": {
-        "text": "*Ses lèvres bougent. Elle semble dire quelque chose, mais je n'entends rien. Trop loin ? Non, la distance ne semble pas si grande.*"
+        "text": "*Ses lèvres bougent. Aucun son ne me parvient. Même si le vent souffle dans ma direction.*"
     },
     "day2_after_seolhwa_5": {
-        "text": "*...Pourquoi pleure-t-elle ? Je fais un pas vers elle.*"
+        "text": "*Ma gorge se dessèche. Je fais un pas vers Seolhwa.*"
     },
     "day2_after_seolhwa_6": {
         "text": "*Un groupe d'élèves passe. Ma vue est bloquée. Une seconde. Quand je regarde à nouveau, Seolhwa s'éloigne déjà.*"
@@ -199,7 +199,7 @@
         "text": "*Sa silhouette qui s'éloigne disparaît dans la cour de l'école. Elle se faufile entre les élèves, mais personne ne lui dit bonjour.*"
     },
     "day2_after_seolhwa_8": {
-        "text": "*...Cette fille. En classe aussi. N'a-t-elle pas d'amis ? Ou est-elle du genre à préférer être seule ?*\n\n*...Ça me tracasse. Demain, j'essaierai absolument de lui parler.*"
+        "text": "*Entre les épaules des élèves, l'emplacement du bureau vide de Seolhwa m'est revenu.\n\nDemain, je devrai me retourner avant que la sonnerie retentisse.*"
     },
     "day2_after_end": {
         "text": ""

@@ -3,10 +3,10 @@
         "text": "*Volví a la habitación. Cerré la puerta con llave y puse la cadena.*"
     },
     "day4_night_start_2": {
-        "text": "*Incluso después de poner la cadena, no me siento seguro. Puse una silla frente a la puerta. Aun así, no me siento seguro.*"
+        "text": "*Después de poner la cadena, coloqué una silla frente a la puerta. La pata de la silla roza la puerta y cruje.*"
     },
     "day4_night_start_3": {
-        "text": "*...Esta habitación también fue proporcionada por 'ellos'. ¿De qué sirve un cerrojo?*"
+        "text": "*Debajo de la etiqueta del fabricante del cerrojo electrónico, sobre la entrada, hay pegado un pequeño número de administración. Un número que no vi cuando me mudé.*"
     },
     "day4_night_phone": {
         "text": "*Mi teléfono suena. Es Sea.*"
@@ -48,7 +48,7 @@
         "text": "*Profesora Eunsu: 'Buenas noches, {name}.'*"
     },
     "day4_night_phone_eunsu_3": {
-        "text": "*'Buenas noches.' La persona que diseñó todo lo que pasó en esta escuela hoy — dice 'buenas noches.'*"
+        "text": "*'Duerme bien'. Debajo del globo de texto también flota el ícono de la app de seguridad estudiantil.*"
     },
     "day4_night_phone_end": {
         "text": "*Guardé el teléfono en el cajón. La vibración seguía sonando. Lo envolví en una toalla para amortiguar el sonido.*"
@@ -63,7 +63,7 @@
         "text": "*'Sujet—' Parpadeo. La notificación cambia. '¡Buenas noches, {name}!'*"
     },
     "day4_night_save_glitch_4": {
-        "text": "*...¿Qué ponía hace un momento?*"
+        "text": "*En el historial de notificaciones no hay ninguna entrada de esa misma hora.*"
     },
     "day4_night_save_glitch_5": {
         "text": "*Abrí la app. No es el menú estudiantil de siempre. La pantalla es diferente. Fondo negro con letras blancas. — Un panel de administración.*"
@@ -72,7 +72,7 @@
         "text": "***Parte superior de la pantalla: 'NEVERGRAD — Sistema de Gestión de Sujetos v4.7'***"
     },
     "day4_night_save_glitch_7": {
-        "text": "*Aparece una lista. 13 filas. #01 Kim Dojin — Terminado. #02 Lee Junseo — Terminado. #03 Park Seojin — Terminado (Intento de fuga Día 4). #04 Jeong Hayul — Terminado. #05 Kang Minhyuk — Terminado. #06 Yoon Jaewon — Terminado. #07 Kim Taeho — ██Respuesta anómala██ (Contacto externo: Lee Seolhwa). #08 Choi Siwoo — Terminado. #09 Han Jiho — Terminado (Detección temprana Día 3). #10 Song Yejun — Terminado. #11 Oh Taehyun — Terminado. #12 Im Seoyul — Terminado. #13 {name} — En curso.*"
+        "text": "*Aparece una lista. 13 filas.\n\n#01 Kim Dojin — Terminado\n#03 Park Seojin — Terminado / Intento de salida Día 4\n#07 Kim Taeho — ██ reacción / Contacto externo: Lee Seolhwa\n#09 Han Jiho — Terminado / Detección temprana Día 3\n...\n#13 {name} — En curso\n\nLas demás filas están cerradas en gris dentro de un menú desplegable.*"
     },
     "day4_night_save_glitch_8": {
         "text": "*13 filas. 13 nombres. 12 'Terminados'.*"
@@ -84,7 +84,7 @@
         "text": "*Solo el #07 es diferente. 'Respuesta anómala'. Contacto externo: Lee Seolhwa. — Seolhwa.*"
     },
     "day4_night_save_glitch_11": {
-        "text": "*#09. Han Jiho. Detección temprana Día 3. Terminó el tercer día. El 'yo' que se dio cuenta más rápido. El 'yo' que fue borrado más rápido.*"
+        "text": "*#09. Han Jiho. Detección temprana Día 3. Terminó al tercer día. La hora de procesamiento al final de la fila es dos días anterior a las demás.*"
     },
     "day4_night_save_glitch_12": {
         "text": "*#13. Mi nombre. 'En curso'.*"
@@ -99,22 +99,22 @@
         "text": "*Día 1: Puerta → Pasillo → Aula → Campo deportivo → Aula → Puerta. Día 2: Puerta → Pasillo → Aula → Biblioteca → Sala del consejo → Puerta. Día 3: Puerta → Aula → Azotea → Pasillo → Aula → Puerta. Día 4: Puerta → Aula → Pasillo edificio viejo → Enfermería → Sala del consejo.*"
     },
     "day4_night_save_glitch_16": {
-        "text": "*...Cada paso registrado. La app que la profesora Eunsu me dijo que instalara el Día 2 — era esto desde el principio.*"
+        "text": "*Recuerdo el texto de la solicitud de permisos que acepté en el Día 2. `Necesario para localizar estudiantes en caso de emergencia dentro de la escuela`.*"
     },
     "day4_night_save_glitch_17": {
         "text": "*En la parte inferior de la pantalla, en letra pequeña: 'Monitoreo en tiempo real ACTIVO / Micrófono ON / Rastreo de ubicación ON'*"
     },
     "day4_night_save_glitch_18": {
-        "text": "*El Día 2 yo mismo pulsé 'Permitir todo'. Con mi propia mano.*"
+        "text": "*El permiso que yo mismo acepté en el Día 2 sigue ahí, intacto. Ya fuera que permitiera todo o que resistiera hasta el final, esta app había registrado sin falta dónde estuve.*"
     },
     "day4_night_save_glitch_19": {
         "text": "*La app se cerró. Sola. Volvió al menú estudiantil normal. '¡Buenas noches, {name}!'*"
     },
     "day4_night_save_glitch_20": {
-        "text": "*...Es la misma app. Antes y ahora. Solo tenía un lado visible y uno oculto.*"
+        "text": "*Es el mismo ícono. De día, el QR de la credencial estudiantil. De noche, 13 filas.*"
     },
     "day4_night_mirror": {
-        "text": "*Me desabroché dos botones de la camisa del uniforme. Me aprieta el cuello. Fui al baño. Abrí el grifo del lavabo. Me lavé la cara.*"
+        "text": "*Me desabroché dos botones de la camisa del uniforme. La marca del botón del cuello quedó roja sobre la piel. Fui al baño. Abrí el agua del lavabo. Me lavé la cara.*"
     },
     "day4_night_mirror_2": {
         "text": "*El agua fría golpea mi cara. Mis sentidos no vuelven. Una vez más. Una vez más.*"
@@ -123,10 +123,10 @@
         "text": "*...El espejo. Está empañado.*"
     },
     "day4_night_mirror_4": {
-        "text": "*Nunca lo limpié hasta ahora. No quería limpiarlo. Por alguna razón.*"
+        "text": "*Hasta ahora no lo había limpiado ni una sola vez. El vapor sin huellas cubre el espejo.*"
     },
     "day4_night_mirror_5": {
-        "text": "*Por alguna razón — ahora lo sé. Mi subconsciente lo sabía. Lo que vería en el espejo.*"
+        "text": "*Las gotas de agua resbalan sobre el vaho, abriendo primero solo la parte a la altura de mis ojos.*"
     },
     "day4_night_mirror_6": {
         "text": "*...Esta vez, tengo que limpiarlo.*"
@@ -135,10 +135,10 @@
         "text": "*Levanté la mano. Me detuve justo antes de tocar la superficie del espejo. Respiración profunda. Uno. Dos.*"
     },
     "day4_night_mirror_8": {
-        "text": "***Una presencia detrás de mí. Me di la vuelta. Seolhwa está ahí de pie. Frente a la puerta del baño. Piel pálida, cabello blanco plateado, complexión delgada.***"
+        "text": "***Una presencia a mi espalda. Me di vuelta. Seolhwa está de pie. Frente a la puerta del baño. Cabello blanco plateado y mangas del uniforme empapadas.***"
     },
     "day4_night_mirror_9": {
-        "text": "***La chica me está mirando. Con ojos tristes.***"
+        "text": "***La chica me está mirando. Las sombras bajo sus ojos son profundas.***"
     },
     "day4_night_mirror_10": {
         "text": "...No lo limpies."
@@ -171,10 +171,10 @@
         "text": "***No hay nadie.***"
     },
     "day4_night_mirror_hit1_3": {
-        "text": "***Seolhwa, que estaba ahí hace un momento — no se refleja en el espejo.***"
+        "text": "***Solo está vacío el lugar donde Seolhwa estaba de pie hace un momento.***"
     },
     "day4_night_mirror_hit1_4": {
-        "text": "*No pude respirar.*"
+        "text": "*Se me cerró la garganta.*"
     },
     "day4_night_mirror_hit1_5": {
         "text": "*Me di la vuelta. Seolhwa está ahí. Claramente. Su cabello blanco plateado brilla bajo la luz fluorescente. Sus ojos están húmedos.*"
@@ -186,34 +186,34 @@
         "text": "*Miré detrás de mí. Seolhwa está ahí. Miré el espejo. No está. Detrás. Está. Espejo. No está.*"
     },
     "day4_night_mirror_hit1_8": {
-        "text": "***...Seolhwa no se refleja en el espejo.***"
+        "text": "***Bajo la luz fluorescente dentro del espejo, solo se extienden azulejos vacíos.***"
     },
     "day4_night_mirror_hit1_9": {
-        "text": "***Seolhwa — no existe físicamente.***"
+        "text": "***Solo el toallero del lugar donde estaba Seolhwa se refleja en blanco.***"
     },
     "day4_night_mirror_hit1_10": {
         "text": "*Recuerdo a la profesora Eunsu abriendo la puerta del sótano con su llave.*"
     },
     "day4_night_mirror_hit1_11": {
-        "text": "*'Mecanismo de defensa de depender de otro inexistente... confirmado como alucinación.'*"
+        "text": "*Me viene a la mente la fila #07 de la pantalla de registros. `Contacto externo: Lee Seolhwa`. El recuadro negro a su lado.*"
     },
     "day4_night_mirror_hit1_12": {
-        "text": "***La chica que está de pie detrás de mí, vigilándome ahora mismo — murió hace un año.***"
+        "text": "***En el espejo, un baño vacío. En el borde de mi visión, cabello blanco plateado.***"
     },
     "day4_night_mirror_hit1_13": {
-        "text": "***La persona con la que he estado hablando, en quien me he apoyado, de quien recibí advertencias — era una alucinación creada dentro de mi cabeza.***"
+        "text": "***Las dos pantallas se desfasan por un recuadro.***"
     },
     "day4_night_mirror_hit1_14": {
         "text": "...Lo siento."
     },
     "day4_night_mirror_hit1_15": {
-        "text": "*Escucho una voz. Claramente. Mis tímpanos vibran. Pero esta voz — no vino a través del aire. Resuena desde dentro de mi cabeza.*"
+        "text": "*Escucho una voz. Con claridad. Pero ni la puerta del baño, ni el conducto de ventilación, ni la bocina emiten sonido alguno.*"
     },
     "day4_night_mirror_hit2": {
         "text": "*Mi visión se estrecha. Miro fijamente el espejo. Mi cara. Miro mi cara.*"
     },
     "day4_night_mirror_hit2_2": {
-        "text": "*Por primera vez en 4 días, miro bien mi propia cara. Es extraña. ¿Esta cara soy yo?*"
+        "text": "*Mi cara, vista bien por primera vez en 4 días. Una gota cae de la punta de mi barbilla, y en mi cuello solo quedan las marcas del cordón del gafete.*"
     },
     "day4_night_mirror_hit2_3": {
         "text": "*Saco las 13 fotos que Yuna me dio del lavabo. Una por una, las comparo con mi cara en el espejo.*"
@@ -231,10 +231,10 @@
         "text": "***Diferente color de pelo. Diferentes nombres. Pero comparados con mi cara en el espejo — todos idénticos.***"
     },
     "day4_night_mirror_hit2_8": {
-        "text": "***Soy la decimotercera cáscara.***"
+        "text": "***Este gafete es el recuadro de esta vez.***"
     },
     "day4_night_mirror_hit2_9": {
-        "text": "***Cuál fue el almuerzo de ayer. El filete de pollo que Sea preparó. El café que la Profesora Eunsu hizo. ...Coloqué la alucinación de una persona que murió por mí a mis espaldas, y tragué todo eso sonriendo con las personas que la mataron.***"
+        "text": "***Café caliente, un almuerzo preparado a la medida, un espacio vacío en la lista de asistencia, Seolhwa ausente del espejo. Todo apuntaba al mismo rostro.***"
     },
     "day4_night_mirror_overlay": {
         "text": ""
@@ -243,46 +243,46 @@
         "text": "*Retrocedí tambaleándome. Mi espalda golpeó la pared. Me deslicé hacia abajo.*"
     },
     "day4_night_mirror_collapse_2": {
-        "text": "***La razón por la que Seolhwa dijo 'recuérdame.' Era literal. — No olvides a la persona que desapareció por mi bien.***"
+        "text": "***Antes que la voz de Seolhwa, quedan las marcas de grafito en mi mano izquierda. Las letras en la pared. Los trazos hundidos.***"
     },
     "day4_night_mirror_collapse_3": {
-        "text": "*Me derrumbé en el suelo. Abracé mis rodillas.*"
+        "text": "*Me deslicé hasta sentarme con la espalda contra la pared. El frío de las baldosas tocó mis rodillas.*"
     },
     "day4_night_mirror_collapse_4": {
-        "text": "*Mis dientes castañean. Mi cuerpo no me obedece.*"
+        "text": "*Aunque apreté los dientes, la mandíbula me tembló una vez.*"
     },
     "day4_night_mirror_collapse_5": {
-        "text": "*Me arden los ojos. No sale ningún sonido. Tengo la garganta demasiado cerrada para eso.*"
+        "text": "*Al inhalar, un sonido se atoró en el fondo de mi garganta. No salió.*"
     },
     "day4_night_mirror_collapse_6": {
-        "text": "*...No sé para quién son estas lágrimas. Para Seolhwa, para doce nombres, o para mí — que nunca tuvo nombre.*"
+        "text": "*El grafito en mi mano izquierda se mojó y se corrió.*"
     },
     "day4_night_mirror_collapse_7": {
-        "text": "*No lo sé. Simplemente — me derrumbo. El suelo del baño está frío. El frío de las baldosas se filtra a través de mi espalda. No sé cuánto tiempo estuve así.*"
+        "text": "*El piso del baño está frío. El sonido del segundero del reloj se superpone una y otra vez.*"
     },
     "day4_night_mirror_collapse_8": {
-        "text": "*...Seolhwa está sentada a mi lado. La chica que no se refleja en el espejo. La alucinación. La persona muerta.*"
+        "text": "*Seolhwa está sentada a mi lado. Hacia el espejo no se alarga ninguna sombra.*"
     },
     "day4_night_mirror_collapse_9": {
-        "text": "*Pero — alguien está a mi lado. Real o no. Por ahora, solo eso es suficiente.*"
+        "text": "*Pero solo el aire del asiento de al lado está un poco frío. Por ahora, apoyo la espalda en ese frío.*"
     },
     "day4_night_plan": {
-        "text": "*...No sé cuánto tiempo estuve así. Solo después de que mis lágrimas se secaron me levanté.*"
+        "text": "*...Solo me levanté cuando el frío de las baldosas me subió hasta la parte interna de las rodillas.*"
     },
     "day4_night_plan_2": {
-        "text": "*Miré el espejo de nuevo. La cara después de llorar. Ojos hinchados. Nariz roja. — Este es el decimotercer yo.*"
+        "text": "*Volví a mirarme en el espejo. Párpados hinchados y nariz roja. Una gota de agua baja por debajo de las marcas del cordón del gafete.*"
     },
     "day4_night_plan_3": {
-        "text": "*Abrí mi cuaderno. Mis manos tiemblan pero escribo. Con la mano izquierda. Porque soy zurdo. ...Los hechos que Seolhwa sabía — ahora yo también los sé.*"
+        "text": "*Abrí la libreta. La mano me tiembla, pero escribo. Con la izquierda. Las marcas de grafito mancharon el borde del papel nuevo.*"
     },
     "day4_night_plan_4": {
         "text": "*Uno. Esta escuela está realizando experimentos de manipulación de memoria en mí. Decimotercera iteración.*"
     },
     "day4_night_plan_5": {
-        "text": "*Dos. Eunsu = Director. Riin = Drogas. Sea = Vigilancia.*"
+        "text": "*Dos. Eunsu = coordinación general. Riin = dosificación. Sea = informe.*"
     },
     "day4_night_plan_6": {
-        "text": "*Tres. Seolhwa = Una persona que se rebeló conmigo durante la séptima iteración y fue eliminada. La Seolhwa que veo ahora es una alucinación creada por la memoria.*"
+        "text": "*Tres. Seolhwa = contacto externo de #07. No se refleja en los espejos. Conectado con la pista de la mano izquierda.*"
     },
     "day4_night_plan_7": {
         "text": "*Cuatro. Yuna = La única observadora. Actualmente encerrada en el sótano.*"
@@ -335,7 +335,7 @@
         "text": "*Escribí en la última línea del cuaderno.*"
     },
     "day4_night_plan_final_3": {
-        "text": "***'Fracasé 12 veces. No habrá una próxima. Si aquí me olvido — me borrarán para siempre.'***"
+        "text": "***'Fracasé 12 veces. Puede que no haya una siguiente línea. Me moveré antes de mañana por la noche.'***"
     },
     "day4_night_plan_final_4": {
         "text": "*...Mañana. El último día.*"

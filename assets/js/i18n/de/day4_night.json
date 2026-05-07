@@ -3,10 +3,10 @@
         "text": "*Ich bin zurück im Zimmer. Habe die Tür abgeschlossen und die Kette vorgelegt.*"
     },
     "day4_night_start_2": {
-        "text": "*Selbst nach dem Vorlegen der Kette fühle ich mich nicht sicher. Ich stellte einen Stuhl vor die Tür. Immer noch nicht sicher.*"
+        "text": "*Nachdem ich die Kette vorgelegt hatte, stellte ich einen Stuhl vor die Tür. Das Stuhlbein berührt die Tür und knarrt.*"
     },
     "day4_night_start_3": {
-        "text": "*...Dieses Zimmer wurde auch von 'denen' bereitgestellt. Was bringt ein Schloss.*"
+        "text": "*Unter dem Herstelleraufkleber des Türschlosses über dem Eingang klebt eine kleine Verwaltungsnummer. Eine Zahl, die ich beim Einzug nicht gesehen hatte.*"
     },
     "day4_night_phone": {
         "text": "*Mein Handy klingelt. Es ist Sea.*"
@@ -48,7 +48,7 @@
         "text": "*Lehrerin Eunsu: 'Gute Nacht, {name}.'*"
     },
     "day4_night_phone_eunsu_3": {
-        "text": "*'Gute Nacht.' Die Person, die alles geplant hat, was heute in dieser Schule passiert ist -- sagt 'Gute Nacht.'*"
+        "text": "*'Schlaf gut.' Unter der Sprechblase schwebt auch das Symbol der Schüler-Sicherheits-App.*"
     },
     "day4_night_phone_end": {
         "text": "*Ich legte mein Handy in die Schublade. Die Vibration hörte nicht auf. Ich wickelte es in ein Handtuch, um das Geräusch zu dämpfen.*"
@@ -63,7 +63,7 @@
         "text": "*'Proband--' Flackern. Die Benachrichtigung ändert sich. 'Gute Nacht, {name}!'*"
     },
     "day4_night_save_glitch_4": {
-        "text": "*...Was stand da gerade?*"
+        "text": "*Im Benachrichtigungsverlauf gibt es keinen Eintrag aus derselben Uhrzeit.*"
     },
     "day4_night_save_glitch_5": {
         "text": "*Ich öffnete die App. Das übliche Schüler-Menü ist es nicht. Der Bildschirm ist anders. Schwarzer Hintergrund mit weißer Schrift. -- Ein Admin-Panel.*"
@@ -72,7 +72,7 @@
         "text": "***Oben auf dem Bildschirm: 'NEVERGRAD -- Probandenverwaltungssystem v4.7'***"
     },
     "day4_night_save_glitch_7": {
-        "text": "*Eine Liste erscheint. 13 Zeilen. #01 Kim Dojin -- Beendet. #02 Lee Junseo -- Beendet. #03 Park Seojin -- Beendet (Tag 4 Fluchtversuch). #04 Jeong Hayul -- Beendet. #05 Kang Minhyuk -- Beendet. #06 Yoon Jaewon -- Beendet. #07 Kim Taeho -- ██Anomale Reaktion██ (Externer Kontakt: Lee Seolhwa). #08 Choi Siwoo -- Beendet. #09 Han Jiho -- Beendet (Tag 3 Früherkennung). #10 Song Yejun -- Beendet. #11 Oh Taehyun -- Beendet. #12 Im Seoyul -- Beendet. #13 {name} -- In Bearbeitung.*"
+        "text": "*Eine Liste erscheint. 13 Zeilen.\n\n#01 Kim Dojin — Beendet\n#03 Park Seojin — Beendet / Tag 4 Ausbruchsversuch\n#07 Kim Taeho — ██ Reaktion / Externer Kontakt: Lee Seolhwa\n#09 Han Jiho — Beendet / Tag 3 frühzeitige Entdeckung\n...\n#13 {name} — Laufend\n\nDie übrigen Zeilen sind grau in einem eingeklappten Menü geschlossen.*"
     },
     "day4_night_save_glitch_8": {
         "text": "*13 Zeilen. 13 Namen. 12 Mal 'Beendet'.*"
@@ -84,7 +84,7 @@
         "text": "*Nur #07 ist anders. 'Anomale Reaktion'. Externer Kontakt: Lee Seolhwa. -- Seolhwa.*"
     },
     "day4_night_save_glitch_11": {
-        "text": "*#09. Han Jiho. Tag 3 Früherkennung. Am dritten Tag zu Ende. Das 'Ich', das am schnellsten begriff. Das 'Ich', das am schnellsten gelöscht wurde.*"
+        "text": "*#09. Han Jiho. Tag 3 frühzeitige Entdeckung. Es endete am dritten Tag. Die Bearbeitungszeit am Ende der Zeile liegt zwei Tage vor den anderen.*"
     },
     "day4_night_save_glitch_12": {
         "text": "*#13. Mein Name. 'In Bearbeitung'.*"
@@ -99,22 +99,22 @@
         "text": "*Tag 1: Schultor → Flur → Klassenzimmer → Sportplatz → Klassenzimmer → Schultor. Tag 2: Schultor → Flur → Klassenzimmer → Bibliothek → SV-Raum → Schultor. Tag 3: Schultor → Klassenzimmer → Dach → Flur → Klassenzimmer → Schultor. Tag 4: Schultor → Klassenzimmer → Flur Altbau → Krankenzimmer → SV-Raum.*"
     },
     "day4_night_save_glitch_16": {
-        "text": "*...Jeder einzelne Schritt ist aufgezeichnet. Diese App, die Frau Eunsu mich an Tag 2 installieren ließ -- war von Anfang an dafür gedacht.*"
+        "text": "*Die Berechtigungsanfrage, die ich an Tag 2 gedrückt hatte, fällt mir wieder ein. `Erforderlich, um bei Notfällen auf dem Schulgelände den Standort von Schülern zu ermitteln`.*"
     },
     "day4_night_save_glitch_17": {
         "text": "*Unten auf dem Bildschirm in kleiner Schrift: 'Echtzeit-Überwachung aktiv / Mikrofon EIN / Standortverfolgung EIN'*"
     },
     "day4_night_save_glitch_18": {
-        "text": "*An Tag 2 habe ich selbst auf 'Alle erlauben' gedrückt. Mit meiner eigenen Hand.*"
+        "text": "*Der Berechtigungspunkt, den ich an Tag 2 selbst gedrückt hatte, ist unverändert vorhanden. Ob ich alles erlaubt hatte oder bis zum Ende standhaft geblieben war, diese App hatte lückenlos aufgezeichnet, wo ich gewesen bin.*"
     },
     "day4_night_save_glitch_19": {
         "text": "*Die App schloss sich. Von selbst. Zurück zum normalen Schüler-Menü. 'Gute Nacht, {name}!'*"
     },
     "day4_night_save_glitch_20": {
-        "text": "*...Dieselbe App. Vorhin wie jetzt. Sie hatte nur eine Vorder- und eine Rückseite.*"
+        "text": "*Es ist dasselbe Symbol. Tagsüber der QR des Schülerausweises, nachts 13 Zeilen.*"
     },
     "day4_night_mirror": {
-        "text": "*Ich knöpfte zwei Knöpfe meines Schulhemdes auf. Der Hals ist eng. Ich ging ins Bad. Drehte den Wasserhahn auf. Wusch mir das Gesicht.*"
+        "text": "*Ich knöpfte zwei Knöpfe meines Uniformhemdes auf. Die Stelle des Kragenknopfs zeichnet sich rot auf der Haut ab. Ich ging ins Bad. Drehte das Wasser am Waschbecken auf. Wusch mir das Gesicht.*"
     },
     "day4_night_mirror_2": {
         "text": "*Kaltes Wasser trifft mein Gesicht. Meine Sinne kommen nicht zurück. Noch einmal. Noch einmal.*"
@@ -123,10 +123,10 @@
         "text": "*...Der Spiegel. Er ist beschlagen.*"
     },
     "day4_night_mirror_4": {
-        "text": "*Ich habe ihn bis jetzt nie abgewischt. Ich wollte ihn nicht abwischen. Aus irgendeinem Grund.*"
+        "text": "*Bis jetzt habe ich ihn kein einziges Mal abgewischt. Dampf ohne Handabdrücke bedeckt den Spiegel.*"
     },
     "day4_night_mirror_5": {
-        "text": "*Aus irgendeinem Grund -- jetzt weiß ich es. Mein Unterbewusstsein wusste es. Was ich im Spiegel sehen würde.*"
+        "text": "*Wassertropfen laufen über den Dampf hinab, und zuerst öffnet sich nur der Bereich auf Augenhöhe.*"
     },
     "day4_night_mirror_6": {
         "text": "*...Diesmal muss ich ihn abwischen.*"
@@ -135,10 +135,10 @@
         "text": "*Ich hob die Hand. Hielt kurz vor der Spiegeloberfläche inne. Tiefer Atemzug. Eins. Zwei.*"
     },
     "day4_night_mirror_8": {
-        "text": "***Eine Präsenz hinter mir. Ich drehte mich um. Seolhwa steht dort. Vor der Badezimmertür. Blasse Haut, silberweißes Haar, zierliche Gestalt.***"
+        "text": "***Eine Regung hinter mir. Ich drehte mich um. Seolhwa steht da. Vor der Badezimmertür. Silberweißes Haar und nasse Ärmel der Uniform.***"
     },
     "day4_night_mirror_9": {
-        "text": "***Das Mädchen beobachtet mich. Mit traurigen Augen.***"
+        "text": "***Das Mädchen sieht mich an. Die Schatten unter ihren Augen sind dunkel.***"
     },
     "day4_night_mirror_10": {
         "text": "...Wisch ihn nicht ab."
@@ -171,10 +171,10 @@
         "text": "***Niemand ist dort.***"
     },
     "day4_night_mirror_hit1_3": {
-        "text": "***Seolhwa, die gerade noch dort stand -- spiegelt sich nicht im Spiegel.***"
+        "text": "***Nur die Stelle, an der Seolhwa eben noch stand, ist leer.***"
     },
     "day4_night_mirror_hit1_4": {
-        "text": "*Mir stockte der Atem.*"
+        "text": "*Mir schnürte sich die Kehle zu.*"
     },
     "day4_night_mirror_hit1_5": {
         "text": "*Ich drehte mich um. Seolhwa steht dort. Eindeutig. Ihr silberweißes Haar glänzt unter dem Neonlicht. Ihre Augen sind feucht.*"
@@ -186,34 +186,34 @@
         "text": "*Ich schaute hinter mich. Seolhwa ist da. Schaute in den Spiegel. Nicht da. Hinter mir. Da. Spiegel. Nicht da.*"
     },
     "day4_night_mirror_hit1_8": {
-        "text": "***...Seolhwa spiegelt sich nicht im Spiegel.***"
+        "text": "***Unter der Leuchtstofflampe im Spiegel ziehen sich nur leere Fliesen weiter.***"
     },
     "day4_night_mirror_hit1_9": {
-        "text": "***Seolhwa -- existiert nicht physisch.***"
+        "text": "***Nur der Handtuchhalter an der Stelle, an der Seolhwa stand, spiegelt sich weiß.***"
     },
     "day4_night_mirror_hit1_10": {
         "text": "*Eunsus Beobachtungstagebuch aus dem Keller kommt mir in den Sinn.*"
     },
     "day4_night_mirror_hit1_11": {
-        "text": "*'Abwehrmechanismus des Sich-Stützens auf einen nicht existierenden Anderen... als Halluzination bestätigt.'*"
+        "text": "*Zeile #07 auf dem Protokollbildschirm taucht vor mir auf. `Externer Kontakt: Lee Seolhwa`. Das schwarze Feld daneben.*"
     },
     "day4_night_mirror_hit1_12": {
-        "text": "***Das Mädchen, das gerade hinter mir steht und über mich wacht -- ist vor einem Jahr gestorben.***"
+        "text": "***Im Spiegel ist ein leeres Badezimmer. Am Rand meines Blickfelds silberweißes Haar.***"
     },
     "day4_night_mirror_hit1_13": {
-        "text": "***Die Person, mit der ich geredet habe, auf die ich mich verlassen habe, von der ich Warnungen erhalten habe -- war eine Halluzination, die in meinem Kopf entstanden ist.***"
+        "text": "***Die beiden Bilder verschieben sich um ein Feld.***"
     },
     "day4_night_mirror_hit1_14": {
         "text": "...Es tut mir leid."
     },
     "day4_night_mirror_hit1_15": {
-        "text": "*Ich höre eine Stimme. Deutlich. Meine Trommelfelle vibrieren. Aber diese Stimme -- kam nicht durch die Luft. Sie hallt in meinem Kopf wider.*"
+        "text": "*Ich höre eine Stimme. Eindeutig. Aber weder die Badezimmertür noch der Lüftungsschacht oder der Lautsprecher geben einen Ton von sich.*"
     },
     "day4_night_mirror_hit2": {
         "text": "*Mein Blickfeld verengt sich. Ich starre in den Spiegel. Mein Gesicht. Ich betrachte mein Gesicht.*"
     },
     "day4_night_mirror_hit2_2": {
-        "text": "*Zum ersten Mal seit 4 Tagen betrachte ich richtig mein eigenes Gesicht. Es ist fremd. Ist dieses Gesicht ich.*"
+        "text": "*Mein Gesicht, zum ersten Mal seit 4 Tagen richtig gesehen. Ein Wassertropfen fällt von meinem Kinn, und nur die Spuren der Namensschildkordel bleiben an meinem Hals zurück.*"
     },
     "day4_night_mirror_hit2_3": {
         "text": "*Ich nehme die 13 Fotos, die Yuna mir gegeben hat, vom Waschbecken. Eins nach dem anderen vergleiche ich sie mit meinem Gesicht im Spiegel.*"
@@ -231,10 +231,10 @@
         "text": "***Andere Haarfarbe. Andere Namen. Aber verglichen mit meinem Gesicht im Spiegel -- alle identisch.***"
     },
     "day4_night_mirror_hit2_8": {
-        "text": "***Ich bin die dreizehnte Hülle.***"
+        "text": "***Dieses Namensschild ist das Feld diesmal.***"
     },
     "day4_night_mirror_hit2_9": {
-        "text": "***Was gab es gestern zum Mittagessen. Das Hähnchenschnitzel, das Sea vorbereitet hat. Den Kaffee, den Lehrerin Eunsu gemacht hat. ...Ich habe die Halluzination einer Person, die für mich gestorben ist, hinter meinem Rücken stehen lassen und all das lächelnd mit den Menschen heruntergeschluckt, die sie getötet haben.***"
+        "text": "***Warmer Kaffee, ein genau abgestimmtes Lunchpaket, ein leeres Feld im Anwesenheitsbuch, Seolhwa, die im Spiegel fehlt. Alles war auf dasselbe Gesicht gerichtet.***"
     },
     "day4_night_mirror_overlay": {
         "text": ""
@@ -243,46 +243,46 @@
         "text": "*Ich taumelte rückwärts. Mein Rücken traf die Wand. Ich rutschte herunter.*"
     },
     "day4_night_mirror_collapse_2": {
-        "text": "***Der Grund, warum Seolhwa 'erinnere dich an mich' sagte. Es war wörtlich gemeint. -- Vergiss nicht die Person, die um meinetwillen verschwunden ist.***"
+        "text": "***Vor Seolhwas Stimme bleiben die Graphitspuren an meiner linken Hand. Die Schrift an der Wand. Die eingedrückten Striche.***"
     },
     "day4_night_mirror_collapse_3": {
-        "text": "*Ich brach auf dem Boden zusammen. Ich umklammerte meine Knie.*"
+        "text": "*Mit dem Rücken an der Wand rutschte ich hinunter und blieb sitzen. Die Kälte der Fliesen berührte meine Knie.*"
     },
     "day4_night_mirror_collapse_4": {
-        "text": "*Meine Zähne klappern. Mein Körper gehorcht mir nicht.*"
+        "text": "*Obwohl ich die Zähne zusammenbiss, zitterte mein Kiefer einmal.*"
     },
     "day4_night_mirror_collapse_5": {
-        "text": "*Meine Augen brennen. Kein Laut kommt heraus. Meine Kehle ist zu eng dafür.*"
+        "text": "*Als ich einatmete, blieb tief in meiner Kehle ein Laut hängen. Er kam nicht heraus.*"
     },
     "day4_night_mirror_collapse_6": {
-        "text": "*...Ich weiß nicht, für wen diese Tränen sind. Für Seolhwa, für zwölf Namen, oder für mich — der nie einen Namen hatte.*"
+        "text": "*Der Graphit an meiner linken Hand wurde nass und verschmierte.*"
     },
     "day4_night_mirror_collapse_7": {
-        "text": "*Ich weiß es nicht. Ich breche einfach zusammen. Der Badezimmerboden ist kalt. Die Kälte der Fliesen sickert durch meinen Rücken. Ich weiß nicht, wie lange ich so dalag.*"
+        "text": "*Der Badezimmerboden ist kalt. Das Ticken des Sekundenzeigers überlagert sich wieder und wieder.*"
     },
     "day4_night_mirror_collapse_8": {
-        "text": "*...Seolhwa sitzt neben mir. Das Mädchen, das sich nicht im Spiegel spiegelt. Die Halluzination. Die Tote.*"
+        "text": "*Seolhwa sitzt neben mir. Zum Spiegel hin wird kein Schatten länger.*"
     },
     "day4_night_mirror_collapse_9": {
-        "text": "*Aber -- jemand ist neben mir. Echt oder nicht. Für jetzt reicht das allein.*"
+        "text": "*Aber nur die Luft auf dem Platz neben mir ist ein wenig kalt. Für jetzt lehne ich meinen Rücken an diese Kälte.*"
     },
     "day4_night_plan": {
-        "text": "*...Ich weiß nicht, wie lange ich so dalag. Erst nachdem meine Tränen versiegt waren, stand ich auf.*"
+        "text": "*...Erst als die Kälte der Fliesen bis an die Innenseite meiner Knie hinaufgekrochen war, stand ich auf.*"
     },
     "day4_night_plan_2": {
-        "text": "*Ich schaute wieder in den Spiegel. Das Gesicht nach dem Weinen. Geschwollene Augen. Rote Nase. -- Das ist das dreizehnte Ich.*"
+        "text": "*Ich sah wieder in den Spiegel. Geschwollene Lider und eine rote Nase. Unter den Spuren der Namensschildkordel läuft ein Wassertropfen hinab.*"
     },
     "day4_night_plan_3": {
-        "text": "*Ich öffnete mein Notizbuch. Meine Hände zittern, aber ich schreibe. Mit der linken Hand. Weil ich Linkshänder bin. ...Die Fakten, die Seolhwa kannte -- jetzt kenne ich sie auch.*"
+        "text": "*Ich schlug das Notizbuch auf. Meine Hand zittert, aber ich schreibe. Mit der linken Hand. Graphitspuren färben den Rand des neuen Papiers.*"
     },
     "day4_night_plan_4": {
         "text": "*Eins. Diese Schule führt Gedächtnismanipulationsexperimente an mir durch. Dreizehnte Iteration.*"
     },
     "day4_night_plan_5": {
-        "text": "*Zwei. Eunsu = Leiter. Riin = Drogen. Sea = Überwachung.*"
+        "text": "*Zwei. Eunsu = Gesamtleitung. Riin = Verabreichung. Sea = Bericht.*"
     },
     "day4_night_plan_6": {
-        "text": "*Drei. Seolhwa = Eine Person, die sich mit mir bei der siebten Iteration auflehnte und beseitigt wurde. Die Seolhwa, die ich jetzt sehe, ist eine von der Erinnerung erschaffene Halluzination.*"
+        "text": "*Drei. Seolhwa = externer Kontakt von #07. Spiegelt sich nicht im Spiegel. Verbindung zum Hinweis mit der linken Hand.*"
     },
     "day4_night_plan_7": {
         "text": "*Vier. Yuna = Die einzige Beobachterin. Derzeit im Keller eingesperrt.*"
@@ -335,7 +335,7 @@
         "text": "*Ich schrieb in die letzte Zeile des Notizbuchs.*"
     },
     "day4_night_plan_final_3": {
-        "text": "***'Alle 12 von mir sind gescheitert. Der Dreizehnte -- wird es anders machen.'***"
+        "text": "***'Ich bin 12 Mal gescheitert. Vielleicht gibt es keine nächste Zeile. Ich handle vor morgen Nacht.'***"
     },
     "day4_night_plan_final_4": {
         "text": "*...Morgen. Der letzte Tag.*"

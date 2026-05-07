@@ -24,7 +24,7 @@
         "text": "...Alle Türen sind abgeschlossen. Komm zurück."
     },
     "day5_lunch_chase_7": {
-        "text": "*Eine Lüge. Nicht alle. Es gibt den Weg, den Seolhwa mir gezeigt hat.*"
+        "text": "*...Nein. Ein Ort bleibt noch. Der Ort, auf den Seolhwa immer wieder gezeigt hat.*"
     },
     "day5_lunch_chase_8": {
         "text": "*Der abgeriegelte Flur. Eine Gabelung. Links — das Hauptgebäude. Rechts — der alte Flügel.*"
@@ -52,7 +52,7 @@
         "text": "...{name}."
     },
     "day5_lunch_left_5": {
-        "text": "*Seas Stimme ist rau. Sie hat geweint. Bevor ich herkam. Allein in diesem Flur.*"
+        "text": "*Seas Stimme bricht. Ihre Augen sind schon nass. Schon bevor ich kam, allein in diesem Flur.*"
     },
     "day5_lunch_left_5a": {
         "text": "Sea, geh weg."
@@ -67,13 +67,13 @@
         "text": "*Seas Hände sind zu Fäusten geballt. Sie zittern. Ob um mich aufzuhalten oder sich selbst zusammenzuhalten, weiß ich nicht.*"
     },
     "day5_lunch_left_8": {
-        "text": "Ich weiß auch... dass ich gerade nicht bei Verstand bin. Aber was soll ich tun?"
+        "text": "Ich hasse es auch. Dass ich so bin."
     },
     "day5_lunch_left_9": {
-        "text": "Wenn ich dich jetzt gehen lasse, sehen wir uns nie wieder! Du lässt mich schon wieder allein!"
+        "text": "Aber wenn du durch diese Tür gehst, steht am nächsten Tag ein fremder Mensch vor mir."
     },
     "day5_lunch_left_10": {
-        "text": "Wenn sie deine Erinnerung löschen, können wir uns wieder treffen. Wieder von vorn. Du kannst mich wieder anlächeln."
+        "text": "Das Namensschild ändert sich, die Frisur ändert sich, und wir fangen wieder beim ersten Hallo an."
     },
     "day5_lunch_left_11": {
         "text": "...Am 1. Tag, als du 'Hallo' zu mir gesagt hast. Jedes Mal war diese Begrüßung — wie ein Messer. Die Begrüßung eines Fremden."
@@ -103,33 +103,33 @@
         "text": "...12 Mal."
     },
     "day5_lunch_left_20": {
-        "text": "12 Mal habe ich dich in diesem Flur vorbeigelassen."
+        "text": "An der Ecke da sind Kratzspuren von Fingernägeln. Zwölf Linien."
     },
     "day5_lunch_left_21": {
         "text": "...Was?"
     },
     "day5_lunch_left_22": {
-        "text": "Eunsu weiß es nicht. Der Vorstand weiß es nicht. Jedes Mal, in der Nacht des 5. Tages, wenn du zu fliehen versuchtest — trafen wir uns in diesem Flur. Jedes Mal. Und jedes Mal — **bin ich zur Seite getreten.**"
+        "text": "Niemand zählt sie. Nur ich."
     },
     "day5_lunch_left_23": {
-        "text": "Du wusstest, dass du ohne mein Beiseitegehen nicht fliehen konntest. Jedes Mal weinend. Jedes Mal — 'dies ist das letzte Mal.' Aber am Ende wurdest du am Haupttor, im Keller... immer gefangen. Und am nächsten Tag hast du die Klassenzimmertür geöffnet, ohne auch nur meinen Namen zu kennen!"
+        "text": "Jedes Mal, nachdem du vorbeigegangen bist, habe ich sie mit dem Ärmel weggerieben. Aber die Spuren blieben trotzdem."
     },
     "day5_lunch_left_24": {
-        "text": "Jedes Mal wurde deine Erinnerung gelöscht und du kamst zurück. Wieder Tag 1. Wieder ein fremdes Gesicht."
+        "text": "Und am nächsten Morgen war das Namensschild auf deinem Tisch anders."
     },
     "day5_lunch_left_25": {
         "text": "**...Muss ich auch zum 13. Mal zur Seite treten?**"
     },
     "day5_lunch_left_choice": {
-        "text": "*Wumm wumm wumm. Die Schritte auf der Treppe kommen näher. 2. Stock. Bald sind sie hier. Seas Lippen zittern. Sie blickte in Richtung der Schritte. — Und trat trotzdem nicht zur Seite.*",
+        "text": "*Bumm bumm bumm. Die Schritte auf der Treppe kommen näher. Zweiter Stock. Gleich sind sie hier. Seas Lippen zittern. Sie wirft einen Blick in die Richtung der Schritte. — Trotzdem weicht sie nicht zur Seite.*\n\n*Kurz bevor die Auswahl erscheint, sieht die dritte Zeile für 0.2 Sekunden wie ein anderer Satz aus.*\n\n***`3. [Verbleib genehmigt]`***",
         "choices": [
             "\"...Tut mir leid. Aber ich muss gehen.\"",
             "\"Komm mit mir.\"",
-            "\"...Tritt nicht zur Seite. Ich bleibe.\""
+            "\"...Weich nicht zur Seite. Ich bleibe hier.\""
         ]
     },
     "day5_lunch_left_c1_1": {
-        "text": "*Sea wischte sich die Tränen ab. Und — trat zur Seite.*"
+        "text": "*Sea drückt den Ärmel an ihre Augen. Und — weicht zur Seite.*"
     },
     "day5_lunch_left_c1_2": {
         "text": "...Auch zum 13. Mal trete ich zur Seite."
@@ -147,7 +147,7 @@
         "text": "*Ich ging an Sea vorbei.*"
     },
     "day5_lunch_left_c1_7": {
-        "text": "*Hinter mir — das Geräusch von jemandem, der zusammensackt. Schuluniform, die über den Boden streift. Und — unterdrücktes Schluchzen.*"
+        "text": "*Hinter mir — das Geräusch, wie jemand zu Boden sinkt. Eine Schuluniform streift über den Boden. Und — ein kurzer, erstickter Atemzug.*"
     },
     "day5_lunch_left_c1_8": {
         "text": "...Leb wohl."
@@ -168,7 +168,7 @@
         "text": "...Ich weiß nicht mal, wie es draußen ist."
     },
     "day5_lunch_left_c2_6": {
-        "text": "*Sea schaute auf ihre eigenen Hände hinab. Drei Jahre lang hatte sie nur innerhalb dieser Schule gelebt. Gebunden an die Rolle der Überwacherin. Die Außenwelt — war für Sea ein Ort, der nicht existierte.*"
+        "text": "*Sea blickt auf ihre eigene Hand hinab. An der Innenseite ihres Handgelenks ist eine rote Linie zurückgeblieben, eingedrückt wie die Spur des Schlüsselrings zum Raum der Schülervertretung. Es dauert, bis sie aus dem Fenster sieht.*"
     },
     "day5_lunch_left_c2_7": {
         "text": "...Gibt es dort draußen solche Flure?"
@@ -183,7 +183,7 @@
         "text": "...Selbst wenn draußen Angst auf mich wartet — es ist wahrscheinlich besser als hier. Wahrscheinlich."
     },
     "day5_lunch_left_c3_1": {
-        "text": "*...Die Kraft verließ meine Beine. Ich sackte vor Sea zusammen. Ich kann nicht mehr rennen.*"
+        "text": "*...Meine Knie knicken ein. Ich sinke vor Sea zu Boden. Meine Zehen lösen sich nicht vom Boden.*"
     },
     "day5_lunch_left_timeout": {
         "text": ""
@@ -234,7 +234,7 @@
         "text": "*Riin öffnete den Verschluss. Führte es zur Nase. Roch daran. — Und nahm einen Schluck.*"
     },
     "day5_lunch_right_16": {
-        "text": "Keine aktiven Wirkstoffe."
+        "text": "Nicht aufs Etikett. Sieh dir die Rückseite an."
     },
     "day5_lunch_right_17": {
         "text": "*...Was?*"
@@ -255,10 +255,10 @@
         "text": "Seit dem siebten Mal. Seit Lee Seolhwa — seit dieses Kind verschwunden ist."
     },
     "day5_lunch_right_23": {
-        "text": "Zuerst habe ich um fünf Prozent reduziert. Dann um zehn. Auf den Protokollen stand die normale Dosis, und die Blutwerte habe ich angepasst."
+        "text": "Auf dem Protokoll steht die normale Dosis. Auf der Flasche der Infusionscode. Auf dem Blutabnahmebogen die Zahlen, die ich angepasst habe."
     },
     "day5_lunch_right_24": {
-        "text": "Beim dreizehnten Mal habe ich das Medikament des Vorstands fast vollständig dadurch ersetzt. Wenn es aufgeflogen wäre, wärst du nicht erneut eingesetzt, sondern entsorgt worden. Und ich wäre nicht Komplizin gewesen, sondern Ziel der Beweisvernichtung."
+        "text": "Der S-13-Eintrag ist noch leerer. Fast alle Aktivierungsfelder sind blank. Weil niemand auf die leeren Felder sehen wollte."
     },
     "day5_lunch_right_25": {
         "text": "...Warum?"
@@ -273,10 +273,10 @@
         "text": "'Fassen Sie ihn nicht an.' ...Sie meinte dich. Selbst als sie weggeschleift wurde, machte sie sich Sorgen um dich."
     },
     "day5_lunch_right_29": {
-        "text": "Seit dem siebten Mal habe ich Protokoll und tatsächliche Dosis auseinanderlaufen lassen. Damit die Erinnerungen nicht vollständig gelöscht werden."
+        "text": "Nach dem siebten Mal gab es zwei Tabellen. Eine zur Abgabe. Eine echte."
     },
     "day5_lunch_right_30": {
-        "text": "...Deshalb hast du Déjà-vus. Nicht weil ich das System repariert habe, sondern weil ich es Stück für Stück falsch gemacht habe."
+        "text": "...Darum wusste dein Körper es immer zuerst. Den Flur, die Treppe, sogar den Namen dieses Mädchens."
     },
     "day5_lunch_right_31": {
         "text": "Der Schlüssel zum Notausgang."
@@ -294,7 +294,7 @@
         "text": "...Eunsu weiß nicht, dass dieser Schlüssel existiert. Ich habe nach dem 7. Mal die Schlösser selbst ausgetauscht."
     },
     "day5_lunch_right_36": {
-        "text": "*...Deshalb war es hier so still. Riin hat das Ortungssystem in diesem Bereich deaktiviert. Riin hat den Rollladen heruntergelassen. Der einzige tote Winkel, den Eunsus Blick nicht erreicht.*"
+        "text": "*Auf dem Display des Rollladen-Steuerkastens blinkt `LOCAL OVERRIDE - R.IN`. Auf der Karte der Schülersicherheits-App ist nur der rechte Flur des alten Gebäudes grau und leer.*"
     },
     "day5_lunch_right_37": {
         "text": "*Wumm! Der Brandschutzrollladen wurde heftig erschüttert. Jemand hämmert von außen. Eunsu oder die 'Verwaltung' hat aufgeholt.*"
@@ -326,7 +326,7 @@
         "text": "*Frau Riin nahm eine Spritze und stach sie sich selbst in den Arm. Das inaktive Verdünnungsmittel.*"
     },
     "day5_lunch_right_c3_3": {
-        "text": "...Keine aktiven Wirkstoffe. Überzeugt?"
+        "text": "...Du hast hinter das Etikett gesehen. Hast du es überprüft?"
     },
     "day5_lunch_right_c3_4": {
         "text": "Du hast recht, misstrauisch zu sein. Du solltest hier niemandem vertrauen. Mich eingeschlossen. Aber der Schlüssel ist echt. Geh."
@@ -344,13 +344,13 @@
         "text": "*Auf halber Höhe der Treppe — steht Seolhwa.*"
     },
     "day5_lunch_seolhwa_3": {
-        "text": "*Dieses Mal ist es anders. Seit ich sie gestern im Spiegel gesehen habe, weiß ich, dass Seolhwa eine Halluzination ist. Aber — sie ist immer noch da. Klar und deutlich.*"
+        "text": "*Dieses Mal ist es anders. Auf Yunas Kamerabildschirm ist nur die Treppe zu sehen. Aber vor meinen Augen steht Seolhwa. Ganz deutlich.*"
     },
     "day5_lunch_seolhwa_4": {
         "text": "...Endlich bist du da."
     },
     "day5_lunch_seolhwa_5": {
-        "text": "...Seolhwa. ...Du bist nicht hier, oder?"
+        "text": "...Die Kamera nimmt dich nicht auf."
     },
     "day5_lunch_seolhwa_6": {
         "text": "*Seolhwa antwortete nicht.*"
@@ -371,10 +371,10 @@
         "text": "...Bis hierher sind wir gekommen."
     },
     "day5_lunch_seolhwa_12": {
-        "text": "*Dieser eine Satz reicht. Den Rest habe ich in den Unterlagen gelesen, und mein Körper erinnert sich. Ein verregneter Flur. Eine kalte Hand. Der dritte Stock des alten Flügels. Ein Fenster, das nicht zerbrochen ist.*"
+        "text": "*Dieser eine Satz reichte. Die Zeilen in den Unterlagen und die Kratzer an der Wand führten in dieselbe Richtung. Ein verregneter Flur. Eine kalte Hand. Der dritte Stock des alten Gebäudes. Ein unzerbrochenes Fenster.*"
     },
     "day5_lunch_seolhwa_13": {
-        "text": "*Seolhwa setzte sich auf die Treppe. Sie umschlang ihre Knie. — Diese Haltung. Dieselbe Haltung wie ich in der vierten Nacht, als ich vor dem Spiegel zusammenbrach.*"
+        "text": "*Seolhwa setzte sich auf die Treppe. Sie umschlang ihre Knie. Mir fiel die Kälte wieder ein, die in der Nacht des vierten Tages auf den Badezimmerfliesen zurückgeblieben war.*"
     },
     "day5_lunch_seolhwa_14": {
         "text": "...Tut mir leid."
@@ -383,43 +383,43 @@
         "text": "Wofür?"
     },
     "day5_lunch_seolhwa_16": {
-        "text": "Dafür, dass ich mich nicht erinnere. ...Dass wir beim siebten Mal zusammen gelaufen sind. Dass du gefasst wurdest. Und ich — alles vergessen habe."
+        "text": "Ohne zu merken, dass ich dich allein zurückgelassen hatte, lächelte ich weiter wie ganz am Anfang."
     },
     "day5_lunch_seolhwa_17": {
-        "text": "Es ist nicht deine Schuld. Du hast dir nicht selbst die Erinnerung gelöscht."
+        "text": "Aber die Schrift hast du trotzdem hinterlassen."
     },
     "day5_lunch_seolhwa_18": {
         "text": "Du hast etwas zurückgelassen."
     },
     "day5_lunch_seolhwa_19": {
-        "text": "*Auch an der Treppenwand sind Kerben. Pfeile. Zahlen. Ein verwischter Satz. Immer wenn ich sie sehe, reagiert mein Körper schneller als mein Kopf.*"
+        "text": "*Auch an der Treppenwand sind Kratzer. Pfeile. Zahlen. Herausgekratzte Sätze. Jedes Mal, wenn ich sie sehe, verlagert sich das Gewicht meiner Füße zuerst.*"
     },
     "day5_lunch_seolhwa_20": {
-        "text": "Ich leihe den Worten nur meine Stimme."
+        "text": "Die Sätze, die du hinterlassen hast, höre ich nur mit meiner Stimme."
     },
     "day5_lunch_seolhwa_21": {
-        "text": "*Dieser Satz macht mir noch mehr Angst. Niemand rettet mich. Das Ich, das ich vergessen habe, hat noch nicht aufgegeben und überall Spuren hinterlassen.*"
+        "text": "*Kaum sah ich den Pfeil an der Wand, knickte mein Knöchel zuerst weg. Meine Handfläche stützte sich an der linken Wand ab.*"
     },
     "day5_lunch_seolhwa_22": {
-        "text": "...Dann war auch deine Frage 'Du bist Linkshänder, oder?'—"
+        "text": "...Dass ich damals meine linke Hand gesehen habe, war also auch—"
     },
     "day5_lunch_seolhwa_23": {
-        "text": "Weil ich beim siebten Mal bei dir war. Weil ich wusste, dass du Linkshänder bist."
+        "text": "Weil du dich immer am linken Geländer festgehalten hast."
     },
     "day5_lunch_seolhwa_24": {
-        "text": "Und 'Erinnere dich an mich' war—"
+        "text": "Und das, was du immer wieder gesagt hast—"
     },
     "day5_lunch_seolhwa_25": {
-        "text": "**Erinnere dich an mich.** An den Namen Lee Seolhwa. Nur daran. **Bitte.**"
+        "text": "**Lee Seolhwa.** Nur diesen Namen darfst du nicht falsch sagen."
     },
     "day5_lunch_seolhwa_26": {
         "text": "*Licht fließt aus Seolhwas Augen. Keine Tränen. Licht.*"
     },
     "day5_lunch_seolhwa_27": {
-        "text": "...Das dreizehnte Mal ist anders. Weil Riin die Medikamente ausgetauscht hat. Weil deine Erinnerungen geblieben sind."
+        "text": "...Heute ist es anders. Du hast meinen Namen zuerst gesagt."
     },
     "day5_lunch_seolhwa_28": {
-        "text": "*Aus Seolhwas Augen breitete sich noch einmal Licht aus. Es waren keine Tränen. Es sah aus, als würde Erinnerung wie Licht aus ihr herausfließen.*"
+        "text": "*An Seolhwas Augen breitete sich noch einmal Licht aus. Für einen Augenblick wurden die Kratzer an der Treppenwand scharf.*"
     },
     "day5_lunch_seolhwa_29": {
         "text": "Dieses Mal — kannst du hinaus."
@@ -435,10 +435,10 @@
         "text": "...Danke. Aber das geht nicht."
     },
     "day5_lunch_seolhwa_c1_2": {
-        "text": "Ich bin nicht echt. Ich bin ein Erinnerungsnachbild. Wenn du hinausgehst — verschwinde ich."
+        "text": "Ich kann nicht durch diese Tür hinaus."
     },
     "day5_lunch_seolhwa_c1_3": {
-        "text": "Es ist in Ordnung. **Die Erinnerung an die echte Lee Seolhwa wird in dir bleiben.** Vergiss nicht, dieses Mal."
+        "text": "Schon gut. Auch wenn du durch die Tür gehst, nimm den Namen mit."
     },
     "day5_lunch_seolhwa_c2_1": {
         "text": "...Ich."
@@ -447,7 +447,7 @@
         "text": "*Seolhwa schaute auf ihre eigenen Hände. Ihre Fingerspitzen sind verschwommen.*"
     },
     "day5_lunch_seolhwa_c2_3": {
-        "text": "Ich bin deine Erinnerung. Wenn du hier rauskommst... muss ich keine Warnungen mehr senden. Dann werde ich — langsam verblassen."
+        "text": "Wenn du hier rauskommst, brauchst du auch die Pfeile an den Wänden nicht mehr. Dann werde wohl auch ich nach und nach nicht mehr zu sehen sein."
     },
     "day5_lunch_seolhwa_c2_4": {
         "text": "**Aber das ist in Ordnung.**"
@@ -504,7 +504,7 @@
         "text": "*Die Tür öffnete sich. Luft von draußen strömte herein. Die kalte Luft der Morgendämmerung. — Es fühlt sich an wie das erste Mal, dass ich Außenluft atme, seit ich diese Schule betreten habe.*"
     },
     "day5_lunch_seolhwa_guide_15": {
-        "text": "*Seolhwas Haare wehten im Wind. — Nein. Die Haare einer Halluzination können nicht im Wind wehen. Meine Erinnerung zeigt mir das so.*"
+        "text": "*Seolhwas Haar bewegte sich im Wind. Auf Yunas Kamerabildschirm ist der Notausgang leer. Und doch streicht der Wind durch das silberweiße Haar direkt vor meinen Augen.*"
     },
     "day5_lunch_seolhwa_guide_16": {
         "text": "*Schritte von hinten.*"
@@ -525,31 +525,31 @@
         "text": "*Eunsu erschien. Außer Atem. Haare zerzaust. — Nicht das gepflegte Erscheinungsbild aus dem Klassenzimmer.*"
     },
     "day5_lunch_eunsu_6": {
-        "text": "*Die Lehrerin ringt nach Atem und zwingt ihre Mundwinkel nach oben. Das gewohnte sanfte Lächeln. Aber die Gesichtsmuskeln zucken leicht. Sie verliert die Kontrolle.*"
+        "text": "*Die Lehrerin fängt ihren Atem ab und zwingt ihre Mundwinkel nach oben. Das vertraute sanfte Lächeln. Doch eine Seite ihres Mundes zittert kaum merklich.*"
     },
     "day5_lunch_eunsu_7": {
         "text": "{name}. Halt dort an. Der Bereich am Notausgang ist gesperrt."
     },
     "day5_lunch_eunsu_8": {
-        "text": "*Als ich zurückwich, fiel das Lächeln, das sich krampfhaft an Eunsus Gesicht geklammert hatte, mit einem Ruck ab. Die Maske zerbrach.*"
+        "text": "*Als ich zurückwich, sanken Frau Eunsus Mundwinkel. Die Spritze in ihrer Hand fing das Licht der Notbeleuchtung auf.*"
     },
     "day5_lunch_eunsu_9": {
         "text": "*Schweiß perlt auf ihrer Stirn. Dunkle Ringe unter den Augen. Ich war nicht der Einzige, der heute Nacht nicht geschlafen hat. Ein kalter Wind vom Notausgang zog zwischen uns hindurch.*"
     },
     "day5_lunch_eunsu_10": {
-        "text": "In jeder Wiederholung war es so. Abweichung, Verfolgung, Rückholung, Zurücksetzung."
+        "text": "Die Protokollbögen waren völlig durchnässt."
     },
     "day5_lunch_eunsu_11": {
-        "text": "Beim 1. Mal war ich wütend. Beim 2. Mal versuchte ich, die Ursache zu finden."
+        "text": "Es gab Regentage, und es gab Schneetage."
     },
     "day5_lunch_eunsu_12": {
-        "text": "Ab dem 3. Mal verstand ich es. Das Problem war nicht die Flucht, sondern deine Augen nach der Zurücksetzung."
+        "text": "Aber die letzte Zeile war immer dieselbe. `Rückholung abgeschlossen`."
     },
     "day5_lunch_eunsu_13": {
-        "text": "Also habe ich diesmal versucht, die Abweichung selbst zu verhindern."
+        "text": "Diesmal wollte ich diese Zeile nicht schreiben."
     },
     "day5_lunch_eunsu_14": {
-        "text": "Ich zeichnete deine Reaktionen auf und reduzierte die Reize, die du nicht mochtest. Ich dachte, du würdest dich stabilisieren. Laut Protokoll tatest du das."
+        "text": "Also habe ich eins nach dem anderen gelöscht, was du gehasst hast. Den Speiseplan, den Sitzplatz, den Flur, die Art zu reden. Im Protokoll wurde es ruhig."
     },
     "day5_lunch_eunsu_15": {
         "text": "*Die Lehrerin machte einen Schritt näher.*"
@@ -558,22 +558,22 @@
         "text": "...Selbst beim 13. Mal zitterten meine Hände, als du das Klassenzimmer betratst. Obwohl es derselbe Ablauf war."
     },
     "day5_lunch_eunsu_17": {
-        "text": "Auch nach 12 Mal gewöhne ich mich nicht daran. Jedes Mal, wenn du mich mit Augen prüfst, die mich zum ersten Mal sehen, zerfallen die Aufzeichnungen."
+        "text": "Jedes Mal, wenn du mich mit Augen überprüft hast, die mich zum ersten Mal sahen, erschien ein weiterer Name im Anwesenheitsbuch."
     },
     "day5_lunch_eunsu_18": {
         "text": "*Die Lehrerin blieb stehen. Vor dem Notausgang. Drei Meter von mir entfernt.*"
     },
     "day5_lunch_eunsu_19": {
-        "text": "*Die Lehrerin zog eine Spritze aus ihrer Tasche. Langsam. Wie zur Schau. Die Flüssigkeit darin glänzte im Neonlicht. — Das ist es, was 12 Zyklen von Erinnerungen gelöscht hat. Ein Fläschchen klare Flüssigkeit.*"
+        "text": "*Die Lehrerin zog eine Spritze aus ihrer Tasche. Langsam. Als würde sie sie mir zeigen.*\n\n*Die Flüssigkeit in der Spritze glitzerte im Licht der Leuchtstoffröhren. Auf dem Etikett stand in kleinen Buchstaben: `RESET / S-13`. Ein einzelner Tropfen hing an der Nadelspitze.*"
     },
     "day5_lunch_eunsu_20": {
         "text": "Das ist die letzte Entscheidung, {name}."
     },
     "day5_lunch_eunsu_21": {
-        "text": "Eine Spritze, und der Ablauf ist beendet. Was du gerade gesehen hast, deine Angst, sogar deine Reaktionen auf mich, alles wird geordnet. Du musst nur die Augen geschlossen halten."
+        "text": "Eine Spritze, und der Vorgang ist beendet. Du musst nur die Augen geschlossen halten."
     },
     "day5_lunch_eunsu_22": {
-        "text": "Wieder zurück zu Tag 1. In einen Zustand, in dem du nichts weißt."
+        "text": "Ins nächste Anwesenheitsbuch schreibe ich dich unter einem neuen Namen."
     },
     "day5_lunch_eunsu_23": {
         "text": "*Stille.*"
@@ -593,16 +593,16 @@
         "text": "*Die Hand der Lehrerin zittert. Die Spritze schwankt. Ein Tropfen fällt auf den Boden.*"
     },
     "day5_lunch_eunsu_27": {
-        "text": "*Tränen fielen aus den Augen der Lehrerin. Sie wischte sie nicht ab. Nicht weil sie es nicht konnte — weil sie wusste, dass es keinen Sinn hat.*"
+        "text": "*Feuchtigkeit fiel aus den Augen der Lehrerin bis unter ihr Kinn. Nur die Spritze hielt sie weiter fest.*"
     },
     "day5_lunch_eunsu_28": {
         "text": "*Die Luft ist erstarrt. Der Wind vom Notausgang. Die Atemzüge der Lehrerin. Mein eigener Atem. Yuna bleibt bewegungslos an der Wand.*"
     },
     "day5_lunch_eunsu_29": {
-        "text": "*Spritze und Notausgang. Vergessen und Erinnern. Käfig und Himmel.*"
+        "text": "*Spritze und Notausgang. Geschlossenes Klassenzimmer und offene Nachtluft.*"
     },
     "day5_lunch_eunsu_30": {
-        "text": "*Ich muss sie nur wegstoßen und rennen. Diese Person hat nicht die Kraft, mich aufzuhalten. Aber meine Beine bewegen sich nicht. Mein Körper aus 12 Zyklen erinnert sich. Wenn ich dieser Stimme folge, werde ich nicht ausgeschimpft. Wenn ich an den Ort zurückkehre, zu dem ihre Hand mich führt, bin ich sicher. Diese Erinnerung hält meine Knöchel fest.*"
+        "text": "*Ich muss sie nur wegstoßen und rennen. Diese Person hat nicht die Kraft, mich festzuhalten. — Und doch bewegen sich meine Beine nicht. Meine Fußspitzen sind schon halb zum Klassenzimmer zurückgedreht. Mein Körper gehorcht zuerst.*"
     },
     "day5_lunch_eunsu_31": {
         "text": "*Die Lehrerin machte noch einen Schritt näher. Jetzt in Armreichweite.*"
@@ -611,11 +611,11 @@
         "text": "*Seolhwa — ist sichtbar. Hinter der Lehrerin. Am Fuß der Treppe. Ein verschwommener Umriss. Sagt nichts. Schaut nur — mich an.*"
     },
     "day5_lunch_eunsu_final": {
-        "text": "*Der Bildschirmrand pulsiert rot. Die Uhr zeigt 22:58. Noch zwei Minuten.*",
+        "text": "*Der Bildschirmrand blinkt rot. Die Uhr zeigt 22:58. Noch zwei Minuten.*\n\n*Der Text der Auswahlmöglichkeiten erscheint verspätet, Buchstabe für Buchstabe. Nur die zweite Schaltfläche ist zuerst vollständig.*\n\n***`...Bitte löschen Sie mich.`***\n\n*Die übrigen Schaltflächen folgen mit Verzögerung.*",
         "choices": [
             "\"Nein. Ich werde mich erinnern.\"",
-            "\"...Löschen Sie mich.\"",
-            "\"Kommen Sie mit nach draußen, Lehrerin.\""
+            "\"...Bitte löschen Sie mich.\"",
+            "\"Gehen wir zusammen raus, Lehrerin.\""
         ]
     },
     "day5_lunch_final_true": {

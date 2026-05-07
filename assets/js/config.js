@@ -222,6 +222,16 @@ const CONFIG = {
         // 특수
         black: "assets/images/background/black.png",
         white: "assets/images/background/white.png",
+        // 물증 클로즈업
+        closeup_safety_app: "assets/images/background/closeup_safety_app.png",
+        closeup_white_envelope: "assets/images/background/closeup_white_envelope.png",
+        closeup_fingernails: "assets/images/background/closeup_fingernails.png",
+        closeup_sd_card: "assets/images/background/closeup_sd_card.png",
+        closeup_attendance_book: "assets/images/background/closeup_attendance_book.png",
+        closeup_subject_ledger: "assets/images/background/closeup_subject_ledger.png",
+        closeup_fogged_mirror: "assets/images/background/closeup_fogged_mirror.png",
+        closeup_cctv_led: "assets/images/background/closeup_cctv_led.png",
+        closeup_wall_scratches: "assets/images/background/closeup_wall_scratches.png",
         // 학교 내부 (추가)
         playground: "assets/images/background/playground.png",
         student_council: "assets/images/background/student_council.png",

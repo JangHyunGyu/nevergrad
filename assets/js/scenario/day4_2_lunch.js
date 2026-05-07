@@ -232,7 +232,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_noyuna_3"
     },
     "day4_lunch_nurse_noyuna_3": {
-        character: "riin_smile",
+        character: "riin_cold",
         next: "day4_lunch_nurse_13"
     },
     // ── met_yuna = true: 유나 전학 언급 ──
@@ -254,7 +254,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_nurse_9": {
         // 목소리 차가웠다가 부드러워짐
-        character: "riin_cold",
+        character: "riin_gentle",
         unskippable: true,
         next: "day4_lunch_nurse_10"
     },

@@ -356,7 +356,10 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_eunsu_5"
     },
     "day3_after_eunsu_5": {
+        background: "closeup_subject_ledger",
         character: null,
+        fadeIn: true,
+        fadeDuration: 350,
         next: "day3_after_eunsu_choice"
     },
 
@@ -378,7 +381,9 @@ Object.assign(SCENARIO[3], {
 
     // 슬쩍 읽어보면
     "day3_after_eunsu_peek": {
+        background: "closeup_subject_ledger",
         character: null,
+        sfx: "sfx_page_turn.mp3",
         next: "day3_after_eunsu_peek_2",
         setFlags: ["evidence_subject_ledger"]
     },
@@ -411,6 +416,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_eunsu_peek_8"
     },
     "day3_after_eunsu_peek_8": {
+        background: "teacher_office",
         character: "eunsu_smile",
         stopSfx: true,
         next: "day3_after_eunsu_peek_8a"
@@ -551,7 +557,10 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_yuna_9a"
     },
     "day3_after_yuna_9a": {
-        character: "yuna_normal",
+        background: "closeup_sd_card",
+        character: null,
+        fadeIn: true,
+        fadeDuration: 350,
         next: "day3_after_end"
     },
 

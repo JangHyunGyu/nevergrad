@@ -623,7 +623,7 @@ _캐릭터: `sea_normal`_
 ### `day1_sea_meet_16`
 
 _source: `day1_1_morning.js / day1_morning.json`_
-_캐릭터: `sea_normal`_
+_캐릭터: `sea_smile`_
 
 **나**
 ```text
@@ -803,7 +803,7 @@ _캐릭터: `sea_normal`_
 ### `day1_choco_question_2`
 
 _source: `day1_1_morning.js / day1_morning.json`_
-_캐릭터: `sea_normal`_
+_캐릭터: `sea_smile`_
 
 **나**
 ```text
@@ -1671,7 +1671,7 @@ _캐릭터: `sea_normal`_
 ### `day1_lunch_sea_19`
 
 _source: `day1_2_lunch.js / day1_lunch.json`_
-_캐릭터: `sea_normal`_
+_캐릭터: `sea_smile`_
 
 **지문**
 ```text
@@ -2251,7 +2251,7 @@ _캐릭터: `sea_normal`_
 ### `day1_after_sea_7`
 
 _source: `day1_3_afterschool.js / day1_afterschool.json`_
-_캐릭터: `sea_normal`_
+_캐릭터: `sea_smile`_
 
 **지문**
 ```text
@@ -3376,7 +3376,7 @@ _캐릭터: `sea_normal`_
 ### `day2_morning_class_2`
 
 _source: `day2_1_morning.js / day2_morning.json`_
-_캐릭터: `sea_normal`_
+_캐릭터: `sea_smile`_
 
 **나**
 ```text
@@ -4027,7 +4027,7 @@ _캐릭터: `sea_normal`_
 ### `day2_lunch_sea_25`
 
 _source: `day2_2_lunch.js / day2_lunch.json`_
-_캐릭터: `sea_normal`_
+_캐릭터: `sea_smile`_
 
 **나**
 ```text
@@ -4167,7 +4167,7 @@ _캐릭터: `yuna_normal`_
 ### `day2_lunch_yuna_14`
 
 _source: `day2_2_lunch.js / day2_lunch.json`_
-_캐릭터: `yuna_shy`_
+_캐릭터: `yuna_smile`_
 
 **나**
 ```text
@@ -4207,7 +4207,7 @@ _캐릭터: `yuna_normal`_
 ### `day2_lunch_yuna_18`
 
 _source: `day2_2_lunch.js / day2_lunch.json`_
-_캐릭터: `yuna_normal`_
+_캐릭터: `yuna_smile`_
 
 **나**
 ```text
@@ -5085,7 +5085,7 @@ _캐릭터: `sea_normal`_
 ### `day2_after_sea_22`
 
 _source: `day2_3_afterschool.js / day2_afterschool.json`_
-_캐릭터: `sea_normal`_
+_캐릭터: `sea_vulnerable`_
 
 **지문**
 ```text
@@ -6470,7 +6470,7 @@ _캐릭터: `sea_smile`_
 ### `day3_morning_sea_6`
 
 _source: `day3_1_morning.js / day3_morning.json`_
-_캐릭터: `sea_smile`_
+_캐릭터: `sea_serious`_
 
 **나**
 ```text
@@ -6480,7 +6480,7 @@ _캐릭터: `sea_smile`_
 ### `day3_morning_sea_6b`
 
 _source: `day3_1_morning.js / day3_morning.json`_
-_캐릭터: `sea_smile`_
+_캐릭터: `sea_serious`_
 
 **나**
 ```text
@@ -6490,7 +6490,7 @@ _캐릭터: `sea_smile`_
 ### `day3_morning_sea_7`
 
 _source: `day3_1_morning.js / day3_morning.json`_
-_캐릭터: `sea_smile`_
+_캐릭터: `sea_serious`_
 
 **나**
 ```text
@@ -6500,7 +6500,7 @@ _캐릭터: `sea_smile`_
 ### `day3_morning_sea_6a`
 
 _source: `day3_1_morning.js / day3_morning.json`_
-_캐릭터: `sea_smile`_
+_캐릭터: `sea_serious`_
 
 **나**
 ```text
@@ -6962,7 +6962,7 @@ _캐릭터: `yuna_scared`_
 ### `day3_lunch_rooftop_30`
 
 _source: `day3_2_lunch.js / day3_lunch.json`_
-_캐릭터: `yuna_scared`_
+_캐릭터: `yuna_cry`_
 
 **나**
 ```text
@@ -7483,7 +7483,7 @@ _캐릭터: `riin_smile`_
 ### `day3_lunch_riin_drink_3`
 
 _source: `day3_2_lunch.js / day3_lunch.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_pain`_
 
 **나**
 ```text
@@ -7731,7 +7731,7 @@ _캐릭터: `riin_smile`_
 ### `day3_after_riin_7`
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_pain`_
 
 **나**
 ```text
@@ -7800,7 +7800,7 @@ _캐릭터: `riin_smile`_
 ### `day3_after_riin_drink_5`
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_pain`_
 
 **나**
 ```text
@@ -7820,7 +7820,7 @@ _캐릭터: `riin_smile`_
 ### `day3_after_riin_refuse_2`
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_pain`_
 
 **나**
 ```text
@@ -7930,7 +7930,7 @@ _캐릭터: `sea_smile`_
 ### `day3_after_sea_4a`
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
-_캐릭터: `sea_smile`_
+_캐릭터: `sea_serious`_
 
 **나**
 ```text
@@ -7955,7 +7955,7 @@ _source: `day3_3_afterschool.js / day3_afterschool.json`_
 ### `day3_after_sea_noyuna_0`
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
-_캐릭터: `sea_serious`_
+_캐릭터: `sea_smile`_
 
 **지문**
 ```text
@@ -8269,6 +8269,7 @@ _캐릭터: `eunsu_writing`_
 ### `day3_after_eunsu_5`
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
+_배경: `closeup_subject_ledger`_
 
 **나**
 ```text
@@ -8291,6 +8292,7 @@ _source: `day3_3_afterschool.js / day3_afterschool.json`_
 ### `day3_after_eunsu_peek`
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
+_배경: `closeup_subject_ledger`_
 
 **나**
 ```text
@@ -8368,7 +8370,7 @@ _source: `day3_3_afterschool.js / day3_afterschool.json`_
 ### `day3_after_eunsu_peek_8`
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
-_캐릭터: `eunsu_smile`_
+_배경: `teacher_office` / 캐릭터: `eunsu_smile`_
 
 **박은수**
 ```text
@@ -8643,7 +8645,7 @@ _캐릭터: `yuna_normal`_
 ### `day3_after_yuna_9a`
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
-_캐릭터: `yuna_normal`_
+_배경: `closeup_sd_card`_
 
 **나**
 ```text
@@ -9623,6 +9625,7 @@ _배경: `room_morning` / BGM: `tension.mp3`_
 ### `day4_morning_start_2`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `closeup_wall_scratches`_
 
 **나**
 ```text
@@ -9641,6 +9644,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_start_4`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `closeup_fingernails`_
 
 **나**
 ```text
@@ -9659,6 +9663,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_start_6`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `room_morning`_
 
 **나**
 ```text
@@ -9668,7 +9673,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_start_7`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_배경: `bathroom`_
+_배경: `closeup_fogged_mirror`_
 
 **나**
 ```text
@@ -9714,6 +9719,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_start_12`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `bathroom`_
 
 **나**
 ```text
@@ -9806,6 +9812,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_start_21`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `closeup_white_envelope`_
 
 **나**
 ```text
@@ -9833,6 +9840,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_start_24`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `apartment_entry_morning`_
 
 **나**
 ```text
@@ -9852,6 +9860,7 @@ _배경: `street_morning`_
 ### `day4_morning_commute_2`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `closeup_safety_app`_
 
 **나**
 ```text
@@ -9915,6 +9924,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_commute_8`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `street_morning`_
 
 **나**
 ```text
@@ -9989,6 +9999,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_gate_7`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `closeup_cctv_led`_
 
 **나**
 ```text
@@ -9998,6 +10009,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_gate_8`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `school_gate`_
 
 **나**
 ```text
@@ -10119,7 +10131,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_eunsu_refuse_5`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_캐릭터: `eunsu_gentle`_
+_캐릭터: `eunsu_cold`_
 
 **나**
 ```text
@@ -10226,7 +10238,7 @@ _캐릭터: `sea_smile`_
 ### `day4_morning_sea_4`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_캐릭터: `sea_smile`_
+_배경: `closeup_sd_card`_
 
 **나**
 ```text
@@ -10236,6 +10248,7 @@ _캐릭터: `sea_smile`_
 ### `day4_morning_sea_5`
 
 _source: `day4_1_morning.js / day4_morning.json`_
+_배경: `classroom`_
 
 **나**
 ```text
@@ -10344,7 +10357,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 ### `day4_morning_class_3`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_캐릭터: `eunsu_gentle`_
+_배경: `closeup_attendance_book`_
 
 **나**
 ```text
@@ -10354,7 +10367,7 @@ _캐릭터: `eunsu_gentle`_
 ### `day4_morning_class_3_met`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_캐릭터: `eunsu_gentle`_
+_배경: `closeup_attendance_book`_
 
 **나**
 ```text
@@ -10364,7 +10377,7 @@ _캐릭터: `eunsu_gentle`_
 ### `day4_morning_class_4`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_캐릭터: `eunsu_gentle`_
+_배경: `classroom` / 캐릭터: `eunsu_gentle`_
 
 **박은수**
 ```text
@@ -10394,7 +10407,7 @@ _캐릭터: `eunsu_gentle`_
 ### `day4_morning_class_7`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_캐릭터: `eunsu_gentle`_
+_캐릭터: `eunsu_serious`_
 
 **나**
 ```text
@@ -10404,7 +10417,7 @@ _캐릭터: `eunsu_gentle`_
 ### `day4_morning_class_8`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_캐릭터: `eunsu_gentle`_
+_캐릭터: `eunsu_serious`_
 
 **박은수**
 ```text
@@ -10414,7 +10427,7 @@ _캐릭터: `eunsu_gentle`_
 ### `day4_morning_class_9`
 
 _source: `day4_1_morning.js / day4_morning.json`_
-_캐릭터: `eunsu_gentle`_
+_캐릭터: `eunsu_serious`_
 
 **박은수**
 ```text
@@ -10766,7 +10779,7 @@ _캐릭터: `riin_cold`_
 ### `day4_lunch_nurse_noyuna_3`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_cold`_
 
 **나**
 ```text
@@ -10804,7 +10817,7 @@ _캐릭터: `riin_cold`_
 ### `day4_lunch_nurse_9`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
-_캐릭터: `riin_cold`_
+_캐릭터: `riin_gentle`_
 
 **나**
 ```text
@@ -11187,7 +11200,7 @@ _캐릭터: `sea_vulnerable`_
 ### `day4_after_sea_5`
 
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
-_캐릭터: `sea_smile`_
+_캐릭터: `sea_vulnerable`_
 
 **나**
 ```text
@@ -11389,7 +11402,7 @@ _캐릭터: `sea_cry`_
 ### `day4_after_sea_confess_10`
 
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
-_캐릭터: `sea_cry`_
+_캐릭터: `sea_broken_smile`_
 
 **나**
 ```text
@@ -11525,7 +11538,7 @@ _캐릭터: `sea_cry`_
 ### `day4_after_sea_12loop_14`
 
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
-_캐릭터: `sea_cry`_
+_캐릭터: `sea_broken_smile`_
 
 **나**
 ```text
@@ -12228,6 +12241,7 @@ _source: `day4_4_night.js / day4_night.json`_
 ### `day4_night_save_glitch_2`
 
 _source: `day4_4_night.js / day4_night.json`_
+_배경: `closeup_safety_app`_
 
 **나**
 ```text
@@ -12436,6 +12450,7 @@ _source: `day4_4_night.js / day4_night.json`_
 ### `day4_night_mirror_4`
 
 _source: `day4_4_night.js / day4_night.json`_
+_배경: `closeup_fogged_mirror`_
 
 **나**
 ```text
@@ -12472,7 +12487,7 @@ _source: `day4_4_night.js / day4_night.json`_
 ### `day4_night_mirror_8`
 
 _source: `day4_4_night.js / day4_night.json`_
-_캐릭터: `seolhwa_sad`_
+_배경: `bathroom_night` / 캐릭터: `seolhwa_sad`_
 
 **나**
 ```text

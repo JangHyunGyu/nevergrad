@@ -143,7 +143,10 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_save_glitch_2": {
         // 안전 앱 알림 '피험—'
+        background: "closeup_safety_app",
         character: null,
+        sfx: "sfx_phone_vibrate.mp3",
+        vibrate: "notification",
         unskippable: true,
         next: "day4_night_save_glitch_3"
     },
@@ -304,6 +307,7 @@ Object.assign(SCENARIO[4], {
     },
     // 거울 — 김이 서려있다
     "day4_night_mirror_4": {
+        background: "closeup_fogged_mirror",
         character: null,
         unskippable: true,
         next: "day4_night_mirror_5"
@@ -326,6 +330,7 @@ Object.assign(SCENARIO[4], {
     },
     // 등 뒤에 기척 — 설화
     "day4_night_mirror_8": {
+        background: "bathroom_night",
         unskippable: true,
         character: "seolhwa_sad",
         charOpacity: 0.86,

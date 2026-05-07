@@ -141,7 +141,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_after_sea_5"
     },
     "day4_after_sea_5": {
-        character: "sea_smile",
+        character: "sea_vulnerable",
         next: "day4_after_sea_6"
     },
     "day4_after_sea_6": {
@@ -256,7 +256,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_after_sea_confess_10": {
         // 세아가 웃었다. 울면서.
-        character: "sea_cry",
+        character: "sea_broken_smile",
         unskippable: true,
         next: "day4_after_sea_12loop"
     },
@@ -337,7 +337,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_after_sea_12loop_14": {
         // 웃고 있다. 울면서.
-        character: "sea_cry",
+        character: "sea_broken_smile",
         unskippable: true,
         glitch: { noise: true },
         next: "day4_after_ft_sea_pre",

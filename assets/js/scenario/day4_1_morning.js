@@ -24,7 +24,10 @@ Object.assign(SCENARIO[4], {
     },
     // 벽의 글씨 확인
     "day4_morning_start_2": {
+        background: "closeup_wall_scratches",
         character: null,
+        fadeIn: true,
+        fadeDuration: 450,
         next: "day4_morning_start_3"
     },
     "day4_morning_start_3": {
@@ -33,7 +36,9 @@ Object.assign(SCENARIO[4], {
     },
     // 손톱 밑 상처 발견
     "day4_morning_start_4": {
+        background: "closeup_fingernails",
         character: null,
+        glitch: { noise: true, noiseDuration: 120 },
         next: "day4_morning_start_5"
     },
     // 수면 중 자기가 쓴 건가?
@@ -43,6 +48,7 @@ Object.assign(SCENARIO[4], {
     },
     // 깨어 있으면서 기억 못 하는 건가
     "day4_morning_start_6": {
+        background: "room_morning",
         character: null,
         next: "day4_morning_start_7"
     },
@@ -50,7 +56,7 @@ Object.assign(SCENARIO[4], {
     // ── 거울 회피 시퀀스 ──
     // 김 서린 거울
     "day4_morning_start_7": {
-        background: "bathroom",
+        background: "closeup_fogged_mirror",
         character: null,
         glitch: { noise: true, noiseDuration: 200 },
         unskippable: true,
@@ -83,6 +89,7 @@ Object.assign(SCENARIO[4], {
     // ── 세수, 등교 준비 ──
     // 거울 등지고 세수
     "day4_morning_start_12": {
+        background: "bathroom",
         character: null,
         next: "day4_morning_start_13"
     },
@@ -149,7 +156,10 @@ Object.assign(SCENARIO[4], {
     // ── 하얀 봉투 ──
     // 현관 앞 바닥에 하얀 봉투
     "day4_morning_start_21": {
+        background: "closeup_white_envelope",
         character: null,
+        fadeIn: true,
+        fadeDuration: 350,
         next: "day4_morning_start_22"
     },
     // '금일 일정: 정상 진행. — 관리부'
@@ -166,6 +176,7 @@ Object.assign(SCENARIO[4], {
     },
     // 봉투를 가방에 넣었다. 손이 떨린다
     "day4_morning_start_24": {
+        background: "apartment_entry_morning",
         character: null,
         next: "day4_morning_commute"
     },
@@ -177,10 +188,13 @@ Object.assign(SCENARIO[4], {
     "day4_morning_commute": {
         background: "street_morning",
         character: null,
+        sfx: "sfx_phone_vibrate.mp3",
+        vibrate: "notification",
         next: "day4_morning_commute_2"
     },
     // '환영합니다, 피험자 #1—' 글리치
     "day4_morning_commute_2": {
+        background: "closeup_safety_app",
         character: null,
         glitch: { corruptText: true, corruptDuration: 300 },
         unskippable: true,
@@ -222,6 +236,7 @@ Object.assign(SCENARIO[4], {
     },
     // 횡단보도 — 동기화된 학생들
     "day4_morning_commute_8": {
+        background: "street_morning",
         character: null,
         next: "day4_morning_commute_9"
     },
@@ -274,6 +289,7 @@ Object.assign(SCENARIO[4], {
     },
     // 세 여학생 동시에 고개를 돌려 나를 본다
     "day4_morning_gate_7": {
+        background: "closeup_cctv_led",
         character: null,
         glitch: { noise: true, noiseDuration: 250 },
         unskippable: true,
@@ -281,6 +297,7 @@ Object.assign(SCENARIO[4], {
     },
     // 인형극 같다
     "day4_morning_gate_8": {
+        background: "school_gate",
         character: null,
         next: "day4_morning_gate_9"
     },
@@ -360,7 +377,7 @@ Object.assign(SCENARIO[4], {
     },
     // 은수가 반 걸음 뒤에서 따라온다
     "day4_morning_eunsu_refuse_5": {
-        character: "eunsu_gentle",
+        character: "eunsu_cold",
         next: "day4_morning_classroom"
     },
 
@@ -428,11 +445,14 @@ Object.assign(SCENARIO[4], {
     },
     // 앞자리 남학생에게 질문 (sea_3 → sea_4는 yuna_memory_card=true 전용)
     "day4_morning_sea_4": {
-        character: "sea_smile",
+        background: "closeup_sd_card",
+        character: null,
+        glitch: { noise: true, noiseDuration: 160 },
         next: "day4_morning_sea_5"
     },
     // '그런 애 있었나?'
     "day4_morning_sea_5": {
+        background: "classroom",
         character: null,
         glitch: { noise: true, noiseDuration: 200 },
         next: "day4_morning_sea_6"
@@ -502,7 +522,8 @@ Object.assign(SCENARIO[4], {
     },
     // 출석부 — met_yuna에 따라 유나 이름 언급 여부 분기
     "day4_morning_class_3": {
-        character: "eunsu_gentle",
+        background: "closeup_attendance_book",
+        character: null,
         glitch: { noise: true, noiseDuration: 150 },
         unskippable: true,
         branches: [
@@ -511,13 +532,15 @@ Object.assign(SCENARIO[4], {
         next: "day4_morning_class_4"
     },
     "day4_morning_class_3_met": {
-        character: "eunsu_gentle",
+        background: "closeup_attendance_book",
+        character: null,
         glitch: { noise: true, noiseDuration: 150 },
         unskippable: true,
         next: "day4_morning_class_4"
     },
     // '소속이란 건... 안전함이야'
     "day4_morning_class_4": {
+        background: "classroom",
         character: "eunsu_gentle",
         next: "day4_morning_class_5"
     },
@@ -535,19 +558,19 @@ Object.assign(SCENARIO[4], {
     },
     // 선생님의 시선이 나에게 고정, 한 발짝 다가옴
     "day4_morning_class_7": {
-        character: "eunsu_gentle",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day4_morning_class_8"
     },
     // '떠나려고 한 사람은... 대부분 후회하더라'
     "day4_morning_class_8": {
-        character: "eunsu_gentle",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day4_morning_class_9"
     },
     // '그렇지, {name}?'
     "day4_morning_class_9": {
-        character: "eunsu_gentle",
+        character: "eunsu_serious",
         unskippable: true,
         glitch: { corruptText: true, corruptIndices: [3, 7, 12] },
         choices: [

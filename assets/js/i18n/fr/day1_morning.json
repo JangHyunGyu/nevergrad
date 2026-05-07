@@ -15,7 +15,7 @@
         "text": "*Élève transféré. Avec le travail de mes parents, on ne pouvait rien y faire. Dans la poche de mon uniforme, les documents de transfert accrochent le bout de mes doigts, gardant exactement la forme de leurs plis.*"
     },
     "day1_opening_6": {
-        "text": "*Je peux garder le contact avec mes anciens amis d'école via les réseaux sociaux. J'ai envoyé un message à Minsu ce matin — 'Premier jour aujourd'hui lol' — mais il ne l'a oujours pas lu. Il doit encore dormir, ce type.*"
+        "text": "*Le matin, j’ai envoyé à Minsu : « Premier jour aujourd’hui. » Toujours une seule coche grise. Le groupe de mon ancienne école reste silencieux, lui aussi.*"
     },
     "day1_opening_7": {
         "text": "*Un pétale de cerisier effleure le bout de mon nez. J'ai failli éternuer, alors je tourne la tête.*"
@@ -27,7 +27,7 @@
         "text": "*Je me tenais devant un portail d'école inconnu.*"
     },
     "day1_gate_2": {
-        "text": "*C'est une assez grande école. Les bâtiments sont propres et le terrain de sport est spacieux. Les installations semblent meilleures que celles de mon ancienne école. Un budget plus important ? Ou peut-être moins d'élèves.*"
+        "text": "*L’école est grande et propre. Le terrain est vaste, et la lumière du matin s’aligne nettement sur les vitres des bâtiments.*"
     },
     "day1_gate_3": {
         "text": "*Les élèves franchissent le portail principal par petits groupes. Des rires, des bavardages, le bruit de clés qui tintent dans les poches des survêtements de sport. La manche usée de quelqu'un frôle celle de mon uniforme neuf en passant.*"
@@ -99,7 +99,7 @@
         "text": "*Sea sourit légèrement.*"
     },
     "day1_sea_meet_17": {
-        "text": "Je veux juste aider quand je vois un nouvel élève qui se promène et qui a l'air perdu."
+        "text": "Quand je vois un nouvel élève perdu, j’ai envie de l’aider."
     },
     "day1_sea_meet_18": {
         "text": "*Partout où Sea passe, les élèves s'écartent naturellement. Je la suis.*"
@@ -127,7 +127,7 @@
         "text": "« Très bien, commençons le cours. »"
     },
     "day1_gate_ngp_teacher_2": {
-        "text": "*Ma tête est vide. J'étais sur le point de faire quelque chose. ...Qu'est-ce que c'était ?*"
+        "text": "*Ma tête s’est vidée. J’étais sur le point de faire quelque chose. ...Quoi, déjà ?*"
     },
     "day1_choco_ngp_1": {
         "text": "« Ah oui, tiens. Je l'ai pris au magasin. Tu n'avais rien, n'est-ce pas ? »"
@@ -159,8 +159,8 @@
     "day1_choco_choice": {
         "text": "",
         "choices": [
-            "Merci, je vais le savourer.",
-            "...Comment savais-tu que j'aimais ça ?",
+            "Merci, je vais le boire.",
+            "Comment tu as su que j’aimais ça ?",
             "En fait, je préfère le lait à la fraise."
         ]
     },
@@ -183,13 +183,13 @@
         "text": "*L'expression de Sea se raidit légèrement. Un clignement. Puis elle retrouve son sourire.*"
     },
     "day1_choco_question_3": {
-        "text": "...Je te l'ai dit, c'était deux pour le prix d'un ? Ils avaient aussi du lait à la fraise, mais j'ai pensé que le chocolat était une valeur plus sûre."
+        "text": "...Je te l’ai dit, c’était un acheté, un offert. Il y avait fraise aussi, mais chocolat me semblait plus sûr."
     },
     "day1_choco_question_4": {
         "text": "Non, tu as raison. J'aime ça. Merci."
     },
     "day1_choco_question_5": {
-        "text": "Contente de l'entendre~"
+        "text": "Tant mieux."
     },
     "day1_choco_question_6": {
         "text": "*Sea sourit. Ses doigts, en train de plier le plastique de la paille, s'arrêtent un très bref instant avant de reprendre.*"
@@ -201,7 +201,7 @@
         "text": "*Sea hésite. Juste un instant. Cette fois, je l'ai clairement vu.*"
     },
     "day1_choco_joke_3": {
-        "text": "Ah, vraiment ? ...La prochaine fois, je prendrai fraise. Il y en avait dans le rayon de gauche, à la supérette."
+        "text": "Ah oui ? La prochaine fois, je prendrai fraise. Il y en avait dans le rayon de gauche, à la supérette."
     },
     "day1_classroom_1": {
         "text": "*Avec l'aide de Sea, je suis arrivé à la salle de classe.*"
@@ -272,7 +272,7 @@
         "text": "*Quelqu'un est assis derrière moi.*"
     },
     "day1_seolhwa_3": {
-        "text": "*Des cheveux clairs et en bataille. On dirait qu'elle ne les a pas bien brossés ce matin. Elle regarde par la fenêtre.*"
+        "text": "*Ses cheveux clairs sont en bataille. Elle fixe la fenêtre sans les avoir vraiment coiffés ce matin.*"
     },
     "day1_seolhwa_4": {
         "text": "*La conversation s'est arrêtée seulement autour d'elle. Elle appuie son menton dans sa main et ne regarde que par la fenêtre. Ses paupières sont un peu baissées.*"
@@ -283,8 +283,8 @@
     "day1_seolhwa_choice": {
         "text": "",
         "choices": [
-            "Salut, je suis {name}. On dirait que je suis installé devant toi.",
-            "(Concentrons-nous sur le cours pour l'instant)"
+            "Salut, je suis {name}. On dirait que je vais m’asseoir devant toi.",
+            "Me concentrer sur le cours"
         ]
     },
     "day1_seolhwa_greet_1": {
@@ -360,7 +360,7 @@
         "text": "*La conversation continue naturellement. Jeux préférés, YouTubers. Quelqu'un se trompe deux fois sur mon nom, et Sea le corrige aussitôt à côté de moi.*"
     },
     "day1_break_6": {
-        "text": "Mec, Sea prend vraiment soin de toi."
+        "text": "Dis donc, Sea s’occupe vraiment beaucoup de toi."
     },
     "day1_break_7": {
         "text": "Elle est comme ça quand elle active le mode déléguée."

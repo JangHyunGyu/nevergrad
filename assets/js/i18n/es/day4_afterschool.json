@@ -47,17 +47,17 @@
         "text": "*Los labios de Sea tiemblan. Intenta hablar, se detiene. Lo intenta de nuevo, se detiene. A la tercera, abre la boca.*"
     },
     "day4_after_sea_11": {
-        "text": "No es nada... olvídalo."
+        "text": "No es nada. Olvídalo."
     },
     "day4_after_sea_force": {
         "text": "*'Olvídalo'. Sea dice eso, pero aun así no logra cerrar los labios. Sus dedos tocan el nudo de la pulsera.*",
         "choices": [
             "Está bien",
-            "Eso es un poco..."
+            "No quiero"
         ]
     },
     "day4_after_sea_accept": {
-        "text": "*...Cualquiera que eligiera, daba lo mismo. Desde el principio solo había una respuesta.*"
+        "text": "*Sin importar qué lado presionara, la pantalla se detenía en el mismo lugar.*"
     },
     "day4_after_sea_accept_2": {
         "text": "...Quédate siempre a mi lado."
@@ -117,7 +117,7 @@
         "text": "*Seojin. El nombre que estaba escrito en la tercera placa. Park Seojin.*"
     },
     "day4_after_sea_12loop_8": {
-        "text": "...No es nada."
+        "text": "No es algo que deba decir."
     },
     "day4_after_sea_12loop_9": {
         "text": "*Sea no me suelta. Al contrario, me abraza más fuerte. Le tiemblan los hombros.*"
@@ -146,9 +146,9 @@
     "day4_after_ft_sea_choice": {
         "text": "*Qué se supone que diga. La mano de Sea sigue aferrada a mi brazo.*",
         "choices": [
-            "...Perdón. No me estoy escapando. Solo tengo la cabeza hecha un lío.",
-            "...Doce veces. ¿Cómo lo aguantaste?",
-            "...No te voy a olvidar. Te lo prometo."
+            "Perdón. No estoy huyendo. Tengo la cabeza demasiado enredada.",
+            "Doce veces... ¿cómo lo soportaste?",
+            "No te voy a olvidar. Lo prometo."
         ]
     },
     "day4_after_ft_sea_apologize": {
@@ -236,7 +236,7 @@
         "text": "¿Ya no tiene intención de ocultarlo, verdad?"
     },
     "day4_after_riin_6": {
-        "text": "*Silencio. Tres segundos. La expresión de Riin no cambia. Sin sorpresa. Sin pánico.*"
+        "text": "*Silencio. 3 segundos. La mirada de la profesora Riin no se aparta de mi rostro.*"
     },
     "day4_after_riin_7": {
         "text": "...Así que fuiste."
@@ -248,7 +248,7 @@
         "text": "¿Qué viste allí?"
     },
     "day4_after_riin_10": {
-        "text": "Oí la voz de Yuna. Desde dentro de la puerta. Y vi a la profesora Eunsu abrir con llave y entrar."
+        "text": "La puerta del sótano, M-13, los nombres desaparecidos."
     },
     "day4_after_riin_11": {
         "text": "*La profesora Riin suspira. Largo. Sobre el escritorio, el indicador del termómetro pasa de verde a apagado.*"
@@ -257,7 +257,7 @@
         "text": "...Rápido. Más rápido que el duodécimo."
     },
     "day4_after_riin_15": {
-        "text": "*Riin saca algo de su bolsillo. Una llave. Una pequeña llave de metal.*"
+        "text": "*La profesora Riin saca una llave del bolsillo. Una pequeña llave de metal.*"
     },
     "day4_after_riin_16": {
         "text": "*Empieza a extendérmela... y se detiene.*"
@@ -299,7 +299,7 @@
         "text": "*El sol se ha puesto. La escuela se hunde en la oscuridad. Mañana llega. El quinto día.*"
     },
     "day4_xover_yuna_1": {
-        "text": "*Al salir del aula — Yuna está en el pasillo. Parece que estaba esperando.*"
+        "text": "*Cuando estaba por salir del salón -- Yuna estaba parada en el pasillo. Esperando.*"
     },
     "day4_xover_yuna_2": {
         "text": "...¿Conoces a Lee Junho?"
@@ -314,7 +314,7 @@
         "text": "Siempre igual. Llegan con la misma cara. Dicen que no saben."
     },
     "day4_xover_yuna_6": {
-        "text": "*(Saca un álbum de fotos)*"
+        "text": "*Yuna saca un álbum de fotos.*"
     },
     "day4_xover_yuna_7": {
         "text": "Están todas aquí. Desde el primero hasta ahora."
@@ -335,7 +335,7 @@
         "text": "*Al salir del aula — Yuna está en el pasillo.*"
     },
     "day4_xover_yuna_skip_2": {
-        "text": "...No, nada. No es nada."
+        "text": "No. Ahora no."
     },
     "day4_xover_yuna_skip_3": {
         "text": "*Yuna negó con la cabeza y se fue.*"

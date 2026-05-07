@@ -47,17 +47,17 @@
         "text": "*Les lèvres de Sea remblent. Elle essaie de parler, s'arrête. Essaie encore, s'arrête. À la roisième tentative, elle ouvre la bouche.*"
     },
     "day4_after_sea_11": {
-        "text": "Ce n'est rien... oublie."
+        "text": "Ce n’est rien. Oublie."
     },
     "day4_after_sea_force": {
         "text": "*« Oublie. » Même après avoir dit ça, Sea n'arrive pas à refermer les lèvres. Ses doigts touchent le nœud de son bracelet.*",
         "choices": [
-            "D'accord",
-            "C'est un peu..."
+            "D’accord",
+            "Non"
         ]
     },
     "day4_after_sea_accept": {
-        "text": "*...Quel que soit mon choix, c'était pareil. Il n'y avait qu'une seule réponse depuis le début.*"
+        "text": "*Quel que soit le côté sur lequel j’appuie, l’écran se fige au même endroit.*"
     },
     "day4_after_sea_accept_2": {
         "text": "...Reste toujours à mes côtés."
@@ -117,7 +117,7 @@
         "text": "*Seojin. Le nom inscrit sur le 3e badge. Park Seojin.*"
     },
     "day4_after_sea_12loop_8": {
-        "text": "...Ce n'est rien."
+        "text": "Ce n’est pas quelque chose à dire."
     },
     "day4_after_sea_12loop_9": {
         "text": "*Sea ne me lâche pas. Au contraire, elle m'a serré encore plus fort. Ses épaules tremblent.*"
@@ -146,9 +146,9 @@
     "day4_after_ft_sea_choice": {
         "text": "*Qu'est-ce que je suis censé dire. La main de Sea serré encore mon bras.*",
         "choices": [
-            "...Désolé. Je ne fuis pas. J'ai juste la tête en vrac.",
-            "...Douze fois. Comment t'as tenu ?",
-            "...Je ne t'oublierai pas. Je te le promets."
+            "Pardon. Je ne suis pas en train de fuir. J’ai juste la tête trop embrouillée.",
+            "Douze fois... comment tu as tenu ?",
+            "Je ne t’oublierai pas. Je te le promets."
         ]
     },
     "day4_after_ft_sea_apologize": {
@@ -236,7 +236,7 @@
         "text": "Vous n'avez plus l'intention de le cacher, n'est-ce pas ?"
     },
     "day4_after_riin_6": {
-        "text": "*Silence. Trois secondes. L'expression de Riin ne change pas. Pas de surprise. Pas de panique.*"
+        "text": "*Silence. 3 secondes. Le regard de la professeure Riin ne quitte pas mon visage.*"
     },
     "day4_after_riin_7": {
         "text": "...Alors tu y es alle."
@@ -248,7 +248,7 @@
         "text": "Qu'est-ce que tu as vu là-bas ?"
     },
     "day4_after_riin_10": {
-        "text": "J'ai entendu la voix de Yuna. Derrière la porte. Et j'ai vu Mme Eunsu ouvrir la porte avec une clé et entrer."
+        "text": "La porte du sous-sol, M-13, les noms disparus."
     },
     "day4_after_riin_11": {
         "text": "*Mme Riin pousse un soupir. Long. Sur le bureau, le voyant du thermomètre passe du vert à l'obscurité.*"
@@ -257,7 +257,7 @@
         "text": "...Rapide. Plus rapide que le douzième."
     },
     "day4_after_riin_15": {
-        "text": "*Riin sort quelque chose de sa poche. Une clé. Une petite clé en metal.*"
+        "text": "*La professeure Riin sort une clé de sa poche. Une petite clé en métal.*"
     },
     "day4_after_riin_16": {
         "text": "*Elle commence a me la endre — puis s'arrête.*"
@@ -299,7 +299,7 @@
         "text": "*Le soleil s'est couche. L'école sombre dans l'obscurité. Demain arrive. Le cinquième jour.*"
     },
     "day4_xover_yuna_1": {
-        "text": "*En sortant de la classe — Yuna se tient dans le couloir. Elle attendait.*"
+        "text": "*Au moment de sortir de la classe -- Yuna se tient dans le couloir. Elle attendait.*"
     },
     "day4_xover_yuna_2": {
         "text": "...Tu connais Junho Lee ?"
@@ -314,7 +314,7 @@
         "text": "À chaque fois. Le même visage arrive. Et dit qu'il ne sait pas."
     },
     "day4_xover_yuna_6": {
-        "text": "*(Elle sort un album photo)*"
+        "text": "*Yuna sort son album photo.*"
     },
     "day4_xover_yuna_7": {
         "text": "Ils sont tous la. Du premier jusqu'a maintenant."
@@ -335,7 +335,7 @@
         "text": "*En sortant de la classe — Yuna se tient dans le couloir.*"
     },
     "day4_xover_yuna_skip_2": {
-        "text": "...Non, rien. Ce n'est rien."
+        "text": "Non. Pas maintenant."
     },
     "day4_xover_yuna_skip_3": {
         "text": "*Yuna a secoué la tête et s'en est allée.*"

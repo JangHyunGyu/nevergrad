@@ -45,16 +45,16 @@
         "text": "*I went down the stairs. Muffled my footsteps. The predawn streets. Streetlights glowing orange. No signs of life. No cars. Just the wind.*"
     },
     "day5_morning_dawn_11": {
-        "text": "*I am alone. Completely alone.*\n\n*My phone turns on again. For 0.2 seconds, the name on the lock screen changes.*\n\n*`S-13`*\n\n*Then back to `{name}`.*"
+        "text": "*Only my footsteps were left on the dawn street.*\n\n*My phone turns back on. For 0.2 seconds, the name on the lock screen changes.*\n\n*`S-13`*\n\n*Then `{name}` again.*"
     },
     "day5_morning_dawn_12": {
         "text": "*I walked. 20 minutes to school. The predawn roads are empty, with only my footsteps echoing. I'm heading to school. I need to save Yuna first.*"
     },
     "day5_morning_school_1": {
-        "text": "*The school came into view. Only the building's silhouette visible in the darkness. Normally it was just a school. Now — it's just the husk of something.*"
+        "text": "*The school came into view. In the dark, only the outline of the building showed. The usual windows were all shut black.*"
     },
     "day5_morning_school_2": {
-        "text": "*The front gate is open. No lock. Just — open.*"
+        "text": "*The front gate is open. The lock lies on the ground, its shackle undone and swinging.*"
     },
     "day5_morning_school_3": {
         "text": "*The iron gate sways slightly in the wind, half-open. Creak, creak. The sound amplifies in my ears.*"
@@ -78,7 +78,7 @@
         "text": "*The entrance to the old wing. The door is open. Inside is pitch black. I turned on my phone flashlight. The beam swept across the hallway.*"
     },
     "day5_morning_school_10": {
-        "text": "*Something's written on the wall. — Graffiti? No. These are scratches made by fingernails. Unreadable. Who, when, why. Was it 'me' from a previous cycle?*"
+        "text": "*Letters are scratched into the wall. Graffiti? No. Fingernail marks. Even though I can't read them, my fingertips follow the strokes.*"
     },
     "day5_morning_school_11": {
         "text": "*The stairs leading down to the basement. Step by step, the concrete is cold. Somewhere, a pipe resonates. Thump, thump, thump. Like a heartbeat.*"
@@ -87,10 +87,10 @@
         "text": "*The phone light swept across the basement. Pipes, filing cabinets, old medical equipment. — And a bed in the corner.*"
     },
     "day5_morning_rescue_2": {
-        "text": "*Yuna is strapped to the bed. She's conscious but drugged. Leather restraints are wrapped around her wrists, her skin rubbed raw and red. Signs of struggling.*"
+        "text": "*Yuna is tied to the bed. Her eyes are open, but they won't focus. Leather straps wrap around her wrists, the skin rubbed raw and red.*"
     },
     "day5_morning_rescue_2_unknown": {
-        "text": "*...Who is she? An unfamiliar girl lies collapsed. ...I need to help her regardless.*"
+        "text": "*Someone is tied to the bed. A girl with a face I don't recognize. Her eyes are open, but they won't focus. Leather straps wrap around her wrists, the skin rubbed raw and red.*"
     },
     "day5_morning_rescue_3_unknown": {
         "text": "...You're here?"
@@ -105,7 +105,7 @@
         "text": "...Sunbae. You came."
     },
     "day5_morning_rescue_4": {
-        "text": "*Yuna's voice is hoarse. How long has she been here?*"
+        "text": "*Focus returns to Yuna's eyes. Faintly. Yuna realizes I saw the records. Gasping, she opens her mouth.*"
     },
     "day5_morning_rescue_5": {
         "text": "...You saw the records... down here, right?"
@@ -120,19 +120,19 @@
         "text": "*I undid the leather straps binding Yuna. The knots were tight. My nails scraped raw before I finally got them undone. Yuna's hands are cold. — Mine are too.*"
     },
     "day5_morning_rescue_8": {
-        "text": "...Actually, I... knew too. Since the 8th time."
+        "text": "...It isn't that I never knew. It started with the 8th time."
     },
     "day5_morning_rescue_9": {
         "text": "The 8th you... asked me to take photos. 'Record who I was,' you said."
     },
     "day5_morning_rescue_10": {
-        "text": "...That person's name was 'Choi Siwoo.' Tall, quiet, always sitting alone in the corner of the library."
+        "text": "...Back then the name was 'Choi Siwoo.' Quiet, always sitting in the corner of the library."
     },
     "day5_morning_rescue_11": {
-        "text": "One day he just showed up — eyes bloodshot — and said, 'Yuna, I have one favor. Take my picture. Record who I was.'"
+        "text": "That day, with bloodshot eyes, they clutched my camera. 'Record who I was,' they said."
     },
     "day5_morning_rescue_12": {
-        "text": "...I didn't understand what he meant. Back then. I just thought he was a strange upperclassman."
+        "text": "...I didn't understand then. I only remember the hand holding the camera."
     },
     "day5_morning_rescue_13": {
         "text": "...The next week, that person — transferred in under a different name. Same face, but he didn't recognize me."
@@ -147,19 +147,19 @@
         "text": "The 9th was 'Han Jiho.' He caught on fast. From Day 3, he kept asking me the same questions. And that night, he suddenly disappeared."
     },
     "day5_morning_rescue_17": {
-        "text": "...It was a different name every time, but every time, she made the same request. 'Record it for me.' The way she said it changed, but her hand always went to the camera first."
+        "text": "...The name was different every time. But the request was the same. 'Record me.' The hand always went to the camera first."
     },
     "day5_morning_rescue_18": {
-        "text": "...Three years, sunbae. For three years, I watched the same person come under different names, forget everything, and make the same request again."
+        "text": "...Three years, sunbae. The same face came wearing a different name tag, and made the same request again."
     },
     "day5_morning_rescue_19": {
         "text": "*Moisture gathered at the corners of Yuna's eyes, but it did not spill over.*"
     },
     "day5_morning_rescue_20": {
-        "text": "...I was scared. Every time. But if I ran — there'd be no one left to keep the record."
+        "text": "...My hands shook every time. But if I ran away, there'd be no one left to record it."
     },
     "day5_morning_rescue_21": {
-        "text": "*Deja vu pin #9: \"Record me\" — asking Yuna to take photos wasn't the first time. A behavior repeated every cycle.*"
+        "text": "*\"Record me.\" Yuna already knew those words had not come for the first time.*"
     },
     "day5_morning_rescue_22": {
         "text": "*I helped Yuna to her feet. Her legs gave out and she staggered. I put her arm over my shoulder.*"
@@ -190,7 +190,7 @@
         "text": "...Lee Seolhwa... the girl you talk to in the hallway... she's in here..."
     },
     "day5_morning_true_5": {
-        "text": "*Yuna can't continue. Her breathing is ragged. Because of the drugs.*"
+        "text": "*Yuna can't continue. Her breath keeps breaking short.*"
     },
     "day5_morning_true_6": {
         "text": "*More documents are scattered across the floor. There's no time to read them. I photographed them with my phone. Even one more page matters.*"
@@ -220,7 +220,7 @@
         "text": "***'Observation after Trial #8: Subject talks toward a blank point on camera. Repeated utterance of the same name: \"Lee Seolhwa\". Response from unauthorized companion has a calming effect. Review drug dosage.'***"
     },
     "day5_morning_true_15": {
-        "text": "*...Ms. Eunsu wrote this. The same person who smiled while looking at me. She wrote, 'Drug dosage requires review.'*"
+        "text": "*It's Ms. Eunsu's handwriting. In the same neat strokes she used on the blackboard in class, it says: `Drug dosage needs review`.*"
     },
     "day5_morning_true_16": {
         "text": "***'Trials #9~#12: Same phenomenon persists. No corresponding student in camera/entry/seat records. Subject leaves the same seat empty every cycle.'***"
@@ -235,7 +235,7 @@
         "text": "*The name label in the dialogue window blinked once.*\n\n*`Seolhwa`*\n\n*`Blank`*\n\n*Then `Seolhwa` again.*"
     },
     "day5_morning_true_20": {
-        "text": "***The girl who sat in the back of the classroom. The girl who watched me from the hallway. The girl who said, 'Remember me.'***"
+        "text": "***The back seat, the end of the hall, the closed door. Every place that belonged to Seolhwa was blank in the records.***"
     },
     "day5_morning_true_21": {
         "text": "***In the seat where she had been sitting, the camera had captured nothing from the very beginning.***"
@@ -247,10 +247,10 @@
         "text": "***'Trial #13 Day 2 Observation: Contact with Choi Yuna (external observer) confirmed. Risk of evidence leakage. Immediate isolation recommended.'***"
     },
     "day5_morning_true_24": {
-        "text": "***'Trial #13 Day 3 Addendum: Choi Yuna's isolation complete. Board report withheld — reporting would expose the external observer, resulting in a project security failure and potential subject termination. Internal processing followed by a delayed report is planned.'***"
+        "text": "***'Trial #13 Day 3 Addendum: Choi Yuna isolated. Separate copy storage confirmed. Board report on hold. Handle internally before it is ruled a security failure.'***"
     },
     "day5_morning_true_25": {
-        "text": "*...Two days ago. The very day Yuna showed me the photo. Eunsu knew about it.*"
+        "text": "*Two days ago. The date from the day Yuna showed me the photo is stamped in the observation log too.*"
     },
     "day5_morning_true_26": {
         "text": "*Yuna 'transferred' last night.*"
@@ -259,7 +259,7 @@
         "text": "***In the photo, Lee Seolhwa's last recorded date is one year ago. From the next page on, only my face continues, under different names.***"
     },
     "day5_morning_true_28": {
-        "text": "*I saw Yuna. She read this too. Alone. Tied up.*"
+        "text": "*I looked at Yuna. The red marks on her wrists were level with the corners of the documents.*"
     },
     "day5_morning_true_29": {
         "text": "...I need to... get out of here. They're... coming soon."
@@ -280,7 +280,7 @@
         "text": "*I took Yuna's hand. It was cold.*"
     },
     "day5_morning_true_35": {
-        "text": "*I quickly photographed the scattered documents on the floor. The Edina Foundation logo. Project Nevergrad Final Report. Someone had already compiled this into a business plan.*"
+        "text": "*I photographed the documents scattered across the floor as fast as I could. Edina Foundation logo. Project Nevergrad Final Report. Beneath the cover, a profitability table was attached.*"
     },
     "day5_morning_true_36": {
         "text": "*Identity Package Change Protocol. Parents, hometown, previous school, and friends' names are divided by item. Each box has an application date and inspection mark.*"
@@ -289,10 +289,10 @@
         "text": "*Board approval document. Commercialization proposal. Beside the expected return is a note: `After S-13 stabilization data is secured`.*"
     },
     "day5_morning_true_38": {
-        "text": "*Final page. 'Trial #13 Special Notes: Blank-seat response persists. Repeated use of Lee Seolhwa designation. Residual memory cohesion threshold exceeded. Review required for early processing before Day 5.'*"
+        "text": "*Final page. 'Trial #13 Notes: Blank-seat response persists. Repeated Lee Seolhwa designation. Residual memory threshold exceeded. Review early processing.'*"
     },
     "day5_morning_true_39": {
-        "text": "*The words 'Early Processing Review' burned into my eyes. It meant they might not even give us five days.*"
+        "text": "*`Review early processing`. The words kept shaking inside the camera focus.*"
     },
     "day5_morning_true_timer_choice": {
         "text": "*No matter what choice I make — there's no time.*",
@@ -319,13 +319,13 @@
     "day5_morning_true_ft": {
         "text": "*Her smile is too natural. Beside me, Yuna is gripping the camera tight. How am I supposed to answer.*",
         "choices": [
-            "Move aside, ma'am. I know everything we saw downstairs.",
-            "...I got lost. Sorry, I'll head out right now.",
-            "Yuna suddenly got dizzy. I'm taking her to the nurse."
+            "Teacher, move aside. I know everything I saw in the basement.",
+            "I got lost. I'm sorry, I'll leave right now.",
+            "Yuna suddenly feels dizzy. I'm taking her to the nurse's office."
         ]
     },
     "day5_morning_true_ft_confront": {
-        "text": "...{name}, that's a frightening thing to say. Want to sit down with me and talk this through? Put the camera down for a second."
+        "text": "...{name}, that's not something to discuss in the hallway. Let's sit down calmly with your teacher. Put the camera down."
     },
     "day5_morning_true_ft_lost": {
         "text": "It's all right. You're not hurt? - I'll walk you back. Take your time."
@@ -337,7 +337,7 @@
         "text": "Hold on. Slow down. — Hear the teacher out before you go, hm?"
     },
     "day5_morning_true_post_ft_1": {
-        "text": "*Ms. Eunsu placed a hand on my shoulder. It was warm. But what was behind that smile?*"
+        "text": "*Ms. Eunsu placed a hand on my shoulder. Her hand is warm. Her fingertips slowly tightened inward.*"
     },
     "day5_morning_true_post_ft_2": {
         "text": "*The teacher didn't immediately grab me. Instead, they cast their gaze upwards. At that moment, the sound of a metal door slamming shut echoed from somewhere.*"
@@ -355,7 +355,7 @@
         "text": "***Lockdown.***"
     },
     "day5_morning_blockade_4": {
-        "text": "*My eyes met Yuna's. Her face is white. Mine must look the same.*",
+        "text": "*My eyes met Yuna's. Her face is white. My fingertips had gone cold too.*",
         "choices": [
             "Reassure Yuna",
             "Check the door again",
@@ -363,13 +363,13 @@
         ]
     },
     "day5_morning_blockade_5": {
-        "text": "*Ksshht— Static burst from the speakers. Then — a sound beneath it. A music box. Slow, off-key music box melody. Like a warped version of a graduation hymn.*"
+        "text": "*Ksshht— Static burst from the speakers. Then underneath it, a sound. A music box. A slow, off-key music box melody, like a warped graduation song.*"
     },
     "day5_morning_broadcast_1": {
         "text": "Good morning, everyone."
     },
     "day5_morning_broadcast_2": {
-        "text": "*Ms. Eunsu's voice echoes through the speakers. The same warm tone as always. That warmth — now it makes me sick.*"
+        "text": "*Ms. Eunsu's voice rings through the speakers. Warm as always. Too even. Saliva gathers in my mouth. I swallow. It tastes metallic.*"
     },
     "day5_morning_broadcast_3": {
         "text": "Today is a special day. We have a **graduation ceremony**."
@@ -435,7 +435,7 @@
         "text": "*I stepped into the classroom.*"
     },
     "day5_morning_grad_6": {
-        "text": "***No one is here. 30 empty desks. All chairs facing the blackboard. Not arranged — placed. Someone deliberately turned every chair toward the blackboard.***"
+        "text": "***No one is here. 30 empty desks. Every chair faces the blackboard. Rows and spacing aligned as if measured with a ruler.***"
     },
     "day5_morning_grad_7": {
         "text": "*On each desk, a name tag. Numbers 1 through 12. Cycle numbers and the names assigned then. — Seat 13 is empty. My seat.*"
@@ -444,7 +444,7 @@
         "text": "***Written on the blackboard: 'Congratulations on Your Graduation — 13th'***"
     },
     "day5_morning_grad_9": {
-        "text": "*The chalk writing is clean. Written this morning. The handwriting is familiar — Ms. Eunsu's. The same neat hand she always used in class.*"
+        "text": "*The chalk writing is clean. White powder still lies beneath the blackboard. It's Ms. Eunsu's neat handwriting, the same strokes she used in class.*"
     },
     "day5_morning_grad_10": {
         "text": "*Papers are stacked on the lectern. 13 of them. Each clipped together, with a photo attached. — They're all me. Same face. Different names.*"
@@ -453,7 +453,7 @@
         "text": "You came. Thank you, {name}."
     },
     "day5_morning_grad_12": {
-        "text": "*Ms. Eunsu lifts the papers from the lectern. Her hands don't tremble. — She's used to this.*"
+        "text": "*Ms. Eunsu lifts the paper from the lectern. The edge of the page doesn't tremble.*"
     },
     "day5_morning_grad_13": {
         "text": "It's your diploma. In your name."
@@ -518,9 +518,9 @@
     "day5_morning_grad_timer": {
         "text": "",
         "choices": [
-            "\"That's observation, not protection.\"",
-            "\"...Why did you do this?\"",
-            "(Stay silent)"
+            "\"That's not protection. It's observation.\"",
+            "\"Why did you do this?\"",
+            "Stay silent"
         ]
     },
     "day5_morning_grad_reply_1": {
@@ -603,7 +603,7 @@
         "choices": [
             "\"I'll stay here.\"",
             "\"Please erase my memories.\"",
-            "Run (out of the classroom)"
+            "Run out of the classroom"
         ]
     },
     "day5_morning_end_cage": {

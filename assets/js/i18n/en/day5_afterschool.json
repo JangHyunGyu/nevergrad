@@ -27,13 +27,13 @@
         "text": "...{name} only has to stay here. In the seat written in the attendance book."
     },
     "day5_after_cage_8": {
-        "text": "*I drank the tea. It's warm. It's nice. ...Somewhere — I think I hear a voice. 'Run,' it says. But from far away, very far away.*"
+        "text": "*I drank the tea. It was warm. From inside the cup, a small voice scraped past. 'Run.' Soon it was buried under the sound of water.*"
     },
     "day5_after_cage_9": {
         "text": "*The smiles fall into rhythm, one beat at a time. Strange, but familiar. My hand around the cup relaxes first.*"
     },
     "day5_after_cage_10": {
-        "text": "*...I feel like I'm forgetting something. What was it? ...It's fine. I can forget. It's safe here.*"
+        "text": "*The word I was trying to remember slipped from the tip of my tongue. It's fine. My name is on the attendance roster.*"
     },
     "day5_after_caught_1": {
         "text": "*...I opened my eyes. Fluorescent lights flickering. Concrete ceiling. The basement.*"
@@ -42,7 +42,7 @@
         "text": "*I tried to move my hands. They won't move. ...Leather straps. Strapped to a chair.*"
     },
     "day5_after_caught_3": {
-        "text": "*The same as in Seolhwa's dream. Same chair. Same straps. Same fluorescent light.*"
+        "text": "*The same chair. The same straps. The same fluorescent light. A layout I saw first in the dream.*"
     },
     "day5_after_caught_4": {
         "text": "You're awake, {name}."
@@ -54,7 +54,7 @@
         "text": "I'll prepare the final checkup. Just need to draw blood and hook up the IV."
     },
     "day5_after_caught_7": {
-        "text": "*Nurse Riin swabs the inside of my elbow. The cold of the alcohol pad touches my skin. ...I can't give up here.*"
+        "text": "*Ms. Riin disinfects the inside of my elbow. The cold of the alcohol pad touches my skin. I put strength into my wrists.*"
     },
     "day5_after_caught_choice": {
         "text": "*...What should I do?*",
@@ -85,16 +85,16 @@
         "text": "*I ran through the darkness. It looks as if Seolhwa is leading the way. My fingertips trace the scratches in the wall, and my feet turn toward the emergency exit.*"
     },
     "day5_after_caught_submit_1": {
-        "text": "*...The strength drains away. No energy left to resist. My head drops. My eyes close.*"
+        "text": "*The strength drains out. The leather straps no longer hurt. My head drops and my eyes close.*"
     },
     "day5_after_caught_submit_2": {
         "text": "*The syringe touches my arm. The needle goes in. Cold liquid spreads through my veins.*"
     },
     "day5_after_caught_submit_3": {
-        "text": "*...It grows warm. Like my body is melting. Thoughts blur.*"
+        "text": "*...It grows warm. My body melts. My thoughts blur.*"
     },
     "day5_after_caught_submit_4": {
-        "text": "*I'm... forgetting something. What am I forgetting? It was important... what was it...*"
+        "text": "*I'm forgetting... one name. Who was it? Someone important...*"
     },
     "day5_after_confront_1": {
         "text": "*From behind — footsteps. Coming up the stairs. One step. One step. Slow. Not running.*"
@@ -118,19 +118,19 @@
         "text": "*Sweat beads on her forehead. Dark circles under her eyes. I wasn't the only one who didn't sleep tonight. A cold wind from the emergency exit passed between us.*"
     },
     "day5_after_confront_8": {
-        "text": "It was like this every cycle. Deviation, pursuit, recovery, reset."
+        "text": "Every chart had the same four fields. Deviation. Tracking. Recovery. Reset."
     },
     "day5_after_confront_9": {
         "text": "The 1st time, I was angry. The 2nd time, I tried to find the cause."
     },
     "day5_after_confront_10": {
-        "text": "From the 3rd time, I understood. The problem wasn't the escape. It was your eyes after the reset."
+        "text": "From the third time on, your eyes the morning after stayed with me longer than the day you ran away."
     },
     "day5_after_confront_11": {
-        "text": "So this time, I tried to stop the deviation itself."
+        "text": "So I started by locking the doors. People, the app, even the route to school."
     },
     "day5_after_confront_12": {
-        "text": "I recorded your reactions and reduced the stimuli you disliked. I thought you'd stabilize. On paper, you did."
+        "text": "I removed the sounds you hated first. Changed the side dishes, the seat, the order of conversations. The numbers on the chart improved."
     },
     "day5_after_confront_13": {
         "text": "...On Day 1, when you entered the classroom. Even though it was the 13th time, my hands shook. Even though I was opening the same report again."
@@ -145,10 +145,10 @@
         "text": "*The liquid inside the syringe glittered under the fluorescent light. On the label, in tiny letters, it said `RESET / S-13`.*"
     },
     "day5_after_confront_17": {
-        "text": "This is the final choice, {name}. One shot, and the procedure is over. The things you just saw, your trembling, even your reactions to me, all of it will be sorted out."
+        "text": "This is the last one, {name}. One shot, and the documents you saw today, your trembling, even the way you look at me will go back into the table."
     },
     "day5_after_confront_18": {
-        "text": "Back to Day 1. To a state where you know nothing. ...Come back."
+        "text": "Back to Day 1. With a face that knows nothing. ...Come back."
     },
     "day5_after_confront_19": {
         "text": "*Teacher's hand is shaking. The syringe trembles. A drop falls to the floor. Teacher just keeps holding the syringe.*"
@@ -160,7 +160,7 @@
         "text": "*I just have to shove past and run. This person doesn't have the strength to hold me. — And yet my legs won't move. My toes have turned halfway back toward the classroom. My body is obeying before I can.*",
         "choices": [
             "No. I will remember.",
-            "...Please erase me.",
+            "Please erase it.",
             "Let's leave together, Teacher."
         ]
     },
@@ -198,13 +198,13 @@
         "text": "I waited 6 cycles. For you to get out."
     },
     "day5_after_true_11": {
-        "text": "...I ended a year ago. ...But if you get out, that's enough."
+        "text": "...I ended a year ago. If you get out, that's enough."
     },
     "day5_after_true_11a": {
         "text": "I'll remember. Lee Seolhwa. The name you returned to me, right to the very end."
     },
     "day5_after_true_12": {
-        "text": "*Seolhwa's body turns transparent. It scatters into particles of light. That light — flows toward me. In an instant, the smell of the rainy stairs, the wet sleeve of a school uniform, and the cold hand that held my left hand all rush in at once.*"
+        "text": "*Seolhwa's outline scatters. The smell of rainy stairs, a wet school-uniform sleeve, the cold hand that held my left hand all rush in at once.*"
     },
     "day5_after_forget_1": {
         "text": "...Erase me."
@@ -216,7 +216,7 @@
         "text": "...If all those blank name fields in that basement are coming back to me..."
     },
     "day5_after_forget_4": {
-        "text": "I can't... I don't have the confidence to carry all those names out as mine."
+        "text": "I can't. I don't have the courage to carry all those names out with me."
     },
     "day5_after_forget_5": {
         "text": "Please erase me. Make me forget everything."
@@ -267,7 +267,7 @@
         "text": "...Eunsu."
     },
     "day5_after_resist_9": {
-        "text": "For 6 years, I watched every day. You greeting a new me every time. Smiling every time. — Breaking a little more every time."
+        "text": "After that day, I watched six more times. The way you smiled whenever you greeted a new name tag. The way you crumbled a little more."
     },
     "day5_after_resist_10": {
         "text": "...You need to leave too, Teacher."
@@ -297,7 +297,7 @@
         "text": "...I erased the memories of that night. The next morning, he asked me, 'Who are you, miss?'"
     },
     "day5_after_resist_13f": {
-        "text": "That was when I knew. This wasn't a relationship. It was conditioning. And even then, I didn't stop."
+        "text": "That was when I understood. What I had made wasn't a relationship. It was a response table. And still, I didn't stop."
     },
     "day5_after_resist_13g": {
         "text": "...How are you going to take me away? After doing something like this to you."
@@ -324,7 +324,7 @@
         "text": "I watched for 6 cycles. You not being able to decide. This time too. I know. It's a habit."
     },
     "day5_after_ghost_6": {
-        "text": "So — **I'll decide for you.**"
+        "text": "**This time, I'll push you forward.**"
     },
     "day5_after_ghost_7": {
         "text": "*Seolhwa looked straight at me. Eyes that exist neither on camera nor in the attendance book are clearer than anyone's, if only in this moment.*"
@@ -345,7 +345,7 @@
         "text": "*Seolhwa disappeared. Like light. Without a sound. At the same time — an alarm went off inside the building.*"
     },
     "day5_after_ghost_13": {
-        "text": "*The building erupted in noise. Sirens, footsteps, shouting. ...Seolhwa is gone. Inside my head too — silence. I escaped the school.*"
+        "text": "*The building erupted in noise. Sirens, footsteps, shouting. I could no longer hear Seolhwa's voice. I got out of the school.*"
     },
     "day5_after_end": {
         "text": "*...*"

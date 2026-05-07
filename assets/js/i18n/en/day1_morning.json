@@ -15,7 +15,7 @@
         "text": "*Transfer student. It couldn't be helped, not with my parents' work. Inside my uniform pocket, the transfer papers catch on my fingertips in the same folded shape.*"
     },
     "day1_opening_6": {
-        "text": "*I can keep in touch with my old school friends through social media. I texted Minsu this morning -- 'First day today lol' -- but he still hasn't read it. Probably still sleeping, that guy.*"
+        "text": "*In the morning, I sent Minsu, 'First day today.' Still one gray check. The group chat from my old school is quiet too.*"
     },
     "day1_opening_7": {
         "text": "*A cherry blossom petal brushes the tip of my nose. I turn my head before I can sneeze.*"
@@ -27,7 +27,7 @@
         "text": "*I stood in front of an unfamiliar school gate.*"
     },
     "day1_gate_2": {
-        "text": "*It's a pretty big school. The buildings are clean and the sports field is spacious. Looks like better facilities than my old school. Bigger budget? Or maybe fewer students.*"
+        "text": "*The school is big and clean. The field is wide, and the morning sunlight lies neatly across the glass of the buildings.*"
     },
     "day1_gate_3": {
         "text": "*Students pass through the main gate in twos and threes. Laughter and chatter, keys rattling in gym uniform pockets. Someone's worn sleeve brushes past the sleeve of my new uniform.*"
@@ -99,7 +99,7 @@
         "text": "*Sea smiles slightly.*"
     },
     "day1_sea_meet_17": {
-        "text": "I just want to help when I see a new kid wandering around lost."
+        "text": "When I see a new student wandering around, I just want to help."
     },
     "day1_sea_meet_18": {
         "text": "*Everywhere Sea passes, the students naturally make way. I follow behind her.*"
@@ -127,7 +127,7 @@
         "text": "All right, let's begin class."
     },
     "day1_gate_ngp_teacher_2": {
-        "text": "*My head is empty. I was about to do something. ...What was it?*"
+        "text": "*My mind went blank. There was something I was just about to do. ...What was it?*"
     },
     "day1_choco_ngp_1": {
         "text": "Oh right, here. Grabbed it from the shop. You came empty, yeah?"
@@ -159,9 +159,9 @@
     "day1_choco_choice": {
         "text": "",
         "choices": [
-            "Thanks, I'll enjoy it.",
-            "...How did you know I like this?",
-            "Actually, I prefer strawberry milk."
+            "Thanks. I'll drink it.",
+            "How did you know I liked this?",
+            "Actually, I like strawberry milk better."
         ]
     },
     "day1_choco_accept_1": {
@@ -183,13 +183,13 @@
         "text": "*Sea's expression stiffens ever so slightly. One blink. Then right back to a smile.*"
     },
     "day1_choco_question_3": {
-        "text": "...I told you, it was buy-one-get-one? They had strawberry too, but I thought chocolate was a safer bet."
+        "text": "...I told you, it was buy one, get one free. They had strawberry too, but chocolate seemed safer."
     },
     "day1_choco_question_4": {
         "text": "No, you're right. I do like it. Thanks."
     },
     "day1_choco_question_5": {
-        "text": "Glad to hear it~"
+        "text": "That's a relief."
     },
     "day1_choco_question_6": {
         "text": "*Sea smiles. Her fingertips pause for the briefest moment as she folds the straw wrapper, then move again.*"
@@ -201,7 +201,7 @@
         "text": "*Sea hesitates. Just for an instant. This time I definitely saw it.*"
     },
     "day1_choco_joke_3": {
-        "text": "Oh, really? ...Next time I'll get strawberry. They had it in the left section of the snack shop."
+        "text": "Oh, really? I'll bring strawberry next time. It was in the left slot at the snack shop."
     },
     "day1_classroom_1": {
         "text": "*With Sea's guidance, I arrived at the classroom.*"
@@ -272,7 +272,7 @@
         "text": "*Someone is sitting behind me.*"
     },
     "day1_seolhwa_3": {
-        "text": "*Light-colored, messy hair. Looks like she didn't brush it properly this morning. She's staring out the window.*"
+        "text": "*Her light-colored hair is mussed, as if she never properly brushed it this morning. She stares out the window.*"
     },
     "day1_seolhwa_4": {
         "text": "*Only the seats around her have gone silent. She props her chin in her hand and stares out the window. Her eyelids hang a little low.*"
@@ -283,8 +283,8 @@
     "day1_seolhwa_choice": {
         "text": "",
         "choices": [
-            "Hey, I'm {name}. Looks like I'm sitting in front of you.",
-            "(Let's just focus on class for now)"
+            "Hi, I'm {name}. Looks like I'll be sitting in front of you.",
+            "Focus on class"
         ]
     },
     "day1_seolhwa_greet_1": {
@@ -360,7 +360,7 @@
         "text": "*The conversation flows naturally. Favorite games, YouTubers. Someone gets my name wrong twice, and Sea corrects them from beside me.*"
     },
     "day1_break_6": {
-        "text": "Dude, Sea's really looking after you."
+        "text": "Hey, Sea's really looking out for you."
     },
     "day1_break_7": {
         "text": "She's like that when class president mode switches on."

@@ -293,7 +293,7 @@ Object.assign(SCENARIO[1], {
     },
     // L149: *세아가 살짝 웃는다.*
     "day1_sea_meet_16": {
-        character: "sea_normal",
+        character: "sea_smile",
         next: "day1_sea_meet_17"
     },
     // L151: 한세아 "그냥 새로 온 애가 헤매고 있으면 도와주고 싶잖아."
@@ -426,7 +426,7 @@ Object.assign(SCENARIO[1], {
     },
     // L190: *세아의 표정이 아주 미세하게 경직됐다...*
     "day1_choco_question_2": {
-        character: "sea_normal",
+        character: "sea_smile",
         next: "day1_choco_question_3"
     },
     // L192: 한세아 "...1+1이었다니까?..."

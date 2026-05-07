@@ -191,7 +191,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_class_2"
     },
     "day2_morning_class_2": {
-        character: "sea_normal",
+        character: "sea_smile",
         next: "day2_morning_class_3"
     },
 

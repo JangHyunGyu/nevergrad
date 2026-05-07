@@ -82,7 +82,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_7"
     },
     "day3_after_riin_7": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day3_after_riin_choice"
     },
 
@@ -123,7 +123,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_drink_5"
     },
     "day3_after_riin_drink_5": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day3_after_yuna_check"
     },
 
@@ -133,7 +133,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_refuse_2"
     },
     "day3_after_riin_refuse_2": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day3_after_riin_refuse_3"
     },
     "day3_after_riin_refuse_3": {
@@ -192,7 +192,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_sea_4a"
     },
     "day3_after_sea_4a": {
-        character: "sea_smile",
+        character: "sea_serious",
         next: "day3_after_sea_choice"
     },
 
@@ -213,7 +213,7 @@ Object.assign(SCENARIO[3], {
 
     // ── 유나 루트 안 탄 경우: 세아가 일반적으로 걱정/감시 ──
     "day3_after_sea_noyuna_0": {
-        character: "sea_serious",
+        character: "sea_smile",
         next: "day3_after_sea_noyuna_0a"
     },
     "day3_after_sea_noyuna_0a": {

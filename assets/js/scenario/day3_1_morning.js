@@ -275,19 +275,19 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_6"
     },
     "day3_morning_sea_6": {
-        character: "sea_smile",
+        character: "sea_serious",
         next: "day3_morning_sea_6b"
     },
     "day3_morning_sea_6b": {
-        character: "sea_smile",
+        character: "sea_serious",
         next: "day3_morning_sea_7"
     },
     "day3_morning_sea_7": {
-        character: "sea_smile",
+        character: "sea_serious",
         next: "day3_morning_sea_6a"
     },
     "day3_morning_sea_6a": {
-        character: "sea_smile",
+        character: "sea_serious",
         next: "day3_morning_sea_8"
     },
     "day3_morning_sea_8": {

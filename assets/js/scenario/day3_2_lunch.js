@@ -240,7 +240,7 @@ Object.assign(SCENARIO[3], {
     },
     // 유나의 눈에서 눈물이 한 줄 흘렀다. 닦지 않았다.
     "day3_lunch_rooftop_30": {
-        character: "yuna_scared",
+        character: "yuna_cry",
         unskippable: true,
         next: "day3_lunch_door_1"
     },
@@ -539,7 +539,7 @@ Object.assign(SCENARIO[3], {
     },
     // 리인이 컵을 가져간다. 입술을 세게 깨물고 있다.
     "day3_lunch_riin_drink_3": {
-        character: "riin_smile",
+        character: "riin_pain",
         next: "day3_lunch_end"
     },
     // 거절: 리인 "...그래? 괜찮아."

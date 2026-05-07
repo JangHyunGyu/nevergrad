@@ -103,7 +103,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_sea_19"
     },
     "day1_lunch_sea_19": {
-        character: "sea_normal",
+        character: "sea_smile",
         next: "day1_lunch_sea_20"
     },
     "day1_lunch_sea_20": {

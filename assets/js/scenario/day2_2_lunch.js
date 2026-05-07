@@ -130,7 +130,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_sea_25"
     },
     "day2_lunch_sea_25": {
-        character: "sea_normal",
+        character: "sea_smile",
         next: "day2_lunch_end"
     },
 
@@ -203,7 +203,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_yuna_14"
     },
     "day2_lunch_yuna_14": {
-        character: "yuna_shy",
+        character: "yuna_smile",
         next: "day2_lunch_yuna_15"
     },
     "day2_lunch_yuna_15": {
@@ -219,7 +219,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_yuna_18"
     },
     "day2_lunch_yuna_18": {
-        character: "yuna_normal",
+        character: "yuna_smile",
         next: "day2_lunch_yuna_19"
     },
     "day2_lunch_yuna_19": {

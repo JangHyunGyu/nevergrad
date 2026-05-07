@@ -232,6 +232,7 @@ const CONFIG = {
         closeup_fogged_mirror: "assets/images/background/closeup_fogged_mirror.png",
         closeup_cctv_led: "assets/images/background/closeup_cctv_led.png",
         closeup_wall_scratches: "assets/images/background/closeup_wall_scratches.png",
+        closeup_desk_underside_scratches: "assets/images/background/closeup_desk_underside_scratches.png",
         // 학교 내부 (추가)
         playground: "assets/images/background/playground.png",
         student_council: "assets/images/background/student_council.png",

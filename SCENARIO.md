@@ -1255,6 +1255,7 @@ _source: `day1_1_morning.js / day1_morning.json`_
 ### `day1_dejavu2_1`
 
 _source: `day1_1_morning.js / day1_morning.json`_
+_배경: `closeup_desk_underside_scratches`_
 
 **나**
 ```text
@@ -1291,6 +1292,7 @@ _source: `day1_1_morning.js / day1_morning.json`_
 ### `day1_break_1`
 
 _source: `day1_1_morning.js / day1_morning.json`_
+_배경: `classroom`_
 
 **나**
 ```text

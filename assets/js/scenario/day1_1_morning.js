@@ -700,7 +700,10 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L306: *수업 중 연필을 떨어뜨려서 책상 밑을 봤다.*
     "day1_dejavu2_1": {
+        background: "closeup_desk_underside_scratches",
         character: null,
+        fadeIn: true,
+        fadeDuration: 350,
         glitch: "deja_vu_desk",
         next: "day1_dejavu2_2"
     },
@@ -725,6 +728,7 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L318: *쉬는 시간. 남학생 몇 명이 다가온다.*
     "day1_break_1": {
+        background: "classroom",
         character: null,
         next: "day1_break_2"
     },

@@ -48,8 +48,15 @@ class SceneRenderer {
         const pathPart = match ? match[1] : raw;
         const suffix = match?.[2] || '';
 
-        if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters)\/.+\.png$/i.test(pathPart)) {
+        if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters)\/.+\.(?:png|webp)$/i.test(pathPart)) {
             return [raw];
+        }
+
+        if (/\.webp$/i.test(pathPart)) {
+            return [
+                `${pathPart}${suffix}`,
+                `${pathPart.replace(/\.webp$/i, '.png')}${suffix}`
+            ];
         }
 
         return [

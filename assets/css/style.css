@@ -3205,7 +3205,10 @@ body {
     z-index: -1;
     background:
         linear-gradient(90deg, rgba(8, 0, 8, 0.08), rgba(8, 0, 8, 0.62) 62%, rgba(8, 0, 8, 0.9)),
-        url('../images/characters/seolhwa_ghost.webp') right -1vw bottom -7vh / auto min(82vh, 720px) no-repeat;
+        image-set(
+            url('../images/characters/seolhwa_ghost.webp') type('image/webp'),
+            url('../images/characters/seolhwa_ghost.png') type('image/png')
+        ) right -1vw bottom -7vh / auto min(82vh, 720px) no-repeat;
     opacity: 0.42;
     mix-blend-mode: screen;
 }

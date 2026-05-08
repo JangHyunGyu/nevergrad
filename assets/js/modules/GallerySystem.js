@@ -393,7 +393,7 @@ class GallerySystem {
         grid.innerHTML = items.map(item => {
             const unlocked = this.isUnlocked('cg', item.id);
             const image = `
-                <img src="${this._versioned(item.file)}" alt="${this._escape(unlocked ? item.name : labels.locked)}">
+                ${this._imageTag(item.file, unlocked ? item.name : labels.locked)}
                 ${unlocked ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
             `;
             return `
@@ -451,7 +451,7 @@ class GallerySystem {
             const charName = this._characterName(item.id);
             const unlocked = item.expressions.filter(expr => this.isExpressionUnlocked(item.id, expr.id)).length;
             const image = `
-                <img src="${this._versioned(item.cover)}" alt="${this._escape(met ? charName : labels.locked)}">
+                ${this._imageTag(item.cover, met ? charName : labels.locked)}
                 ${met ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
             `;
             return `
@@ -534,13 +534,13 @@ class GallerySystem {
         const body = `
             <div class="gallery-character-modal-body">
                 <div class="gallery-character-modal-cover">
-                    <img src="${this._versioned(character.cover)}" alt="${this._escape(charName)}">
+                    ${this._imageTag(character.cover, charName)}
                 </div>
                 <div class="gallery-expression-grid">
                     ${character.expressions.map(expr => {
                         const unlocked = this.isExpressionUnlocked(character.id, expr.id);
                         const image = `
-                            <img src="${this._versioned(expr.file)}" alt="${this._escape(unlocked ? expr.name : labels.locked)}">
+                            ${this._imageTag(expr.file, unlocked ? expr.name : labels.locked)}
                             ${unlocked ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
                         `;
                         return `
@@ -559,7 +559,7 @@ class GallerySystem {
     _showImageModal(title, description, imagePath) {
         this._showModal(title, `
             <div class="gallery-image-modal">
-                <img src="${this._versioned(imagePath)}" alt="${this._escape(title)}">
+                ${this._imageTag(imagePath, title)}
                 <p>${this._escape(description || '')}</p>
             </div>
         `);
@@ -931,6 +931,29 @@ class GallerySystem {
         if (!asset || /[?#]/.test(asset) || /^(?:data:|blob:)/.test(asset)) return asset;
         const version = CONFIG.VERSION || '1';
         return `${asset}?v=${encodeURIComponent(version)}`;
+    }
+
+    _fallbackImage(src) {
+        if (!src || typeof src !== 'string') return '';
+        const normalized = src.replace(/\\/g, '/');
+        const match = normalized.match(/^([^?#]+)([?#].*)?$/);
+        const pathPart = match ? match[1] : normalized;
+        const suffix = match?.[2] || '';
+
+        if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters|cg|evidence)\/.+\.webp$/i.test(pathPart)) {
+            return '';
+        }
+
+        return `${pathPart.replace(/\.webp$/i, '.png')}${suffix}`;
+    }
+
+    _imageTag(src, alt) {
+        const primary = this._versioned(src);
+        const fallback = this._versioned(this._fallbackImage(src));
+        const fallbackAttr = fallback && fallback !== primary
+            ? ` onerror="this.onerror=null;this.src='${this._escape(fallback)}'"`
+            : '';
+        return `<img src="${this._escape(primary)}"${fallbackAttr} alt="${this._escape(alt)}">`;
     }
 
     _escape(value) {

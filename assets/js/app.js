@@ -93,38 +93,48 @@ function resolveNevergradAssetUrl(path) {
     return new URL(getNevergradAssetPath(path), document.baseURI).href;
 }
 
-function getPreferredBackgroundPath(path) {
-    if (!path) return path;
+function getPreferredImageCandidates(path) {
+    if (!path) return [];
 
     const raw = String(path);
     const match = raw.match(/^([^?#]+)([?#].*)?$/);
     const pathPart = match ? match[1] : raw;
     const suffix = match?.[2] || '';
 
-    if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters)\/.+\.png$/i.test(pathPart)) {
-        return raw;
+    if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters)\/.+\.(?:png|webp)$/i.test(pathPart)) {
+        return [raw];
     }
 
-    return `${pathPart.replace(/\.png$/i, '.webp')}${suffix}`;
+    if (/\.webp$/i.test(pathPart)) {
+        return [
+            `${pathPart}${suffix}`,
+            `${pathPart.replace(/\.webp$/i, '.png')}${suffix}`
+        ];
+    }
+
+    return [
+        `${pathPart.replace(/\.png$/i, '.webp')}${suffix}`,
+        raw
+    ];
 }
 
 function loadNevergradImage(path) {
-    const preferred = getPreferredBackgroundPath(path);
-    const fallback = String(path || '');
+    const candidates = getPreferredImageCandidates(path).filter(Boolean);
 
     return new Promise((resolve, reject) => {
-        const load = (candidate, onFail) => {
+        const loadAt = (index) => {
+            const candidate = candidates[index];
+            if (!candidate) {
+                reject();
+                return;
+            }
             const img = new Image();
             img.onload = () => resolve(candidate);
-            img.onerror = onFail;
+            img.onerror = () => loadAt(index + 1);
             img.src = resolveNevergradAssetUrl(candidate);
         };
 
-        if (preferred && preferred !== fallback) {
-            load(preferred, () => load(fallback, reject));
-        } else {
-            load(fallback, reject);
-        }
+        loadAt(0);
     });
 }
 
@@ -161,11 +171,11 @@ function initializeTitleLineup() {
     if (!stage) return;
 
     const characters = [
-        { id: 'title-char-seolhwa', name: 'seolhwa', src: 'assets/images/characters/seolhwa_quiet.png' },
-        { id: 'title-char-yuna', name: 'yuna', src: 'assets/images/characters/yuna_normal.png' },
-        { id: 'title-char-eunsu', name: 'eunsu', src: 'assets/images/characters/eunsu_normal.png' },
-        { id: 'title-char-sea', name: 'sea', src: 'assets/images/characters/sea_normal.png', ngp: 'assets/images/characters/sea_stare.png' },
-        { id: 'title-char-riin', name: 'riin', src: 'assets/images/characters/riin_smile.png' }
+        { id: 'title-char-seolhwa', name: 'seolhwa', src: 'assets/images/characters/seolhwa_quiet.webp' },
+        { id: 'title-char-yuna', name: 'yuna', src: 'assets/images/characters/yuna_normal.webp' },
+        { id: 'title-char-eunsu', name: 'eunsu', src: 'assets/images/characters/eunsu_normal.webp' },
+        { id: 'title-char-sea', name: 'sea', src: 'assets/images/characters/sea_normal.webp', ngp: 'assets/images/characters/sea_stare.webp' },
+        { id: 'title-char-riin', name: 'riin', src: 'assets/images/characters/riin_smile.webp' }
     ];
     const introOrder = { eunsu: 0, yuna: 1, sea: 2, seolhwa: 3, riin: 4 };
     const introBaseDelay = 520;

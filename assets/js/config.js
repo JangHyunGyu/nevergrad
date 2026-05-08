@@ -107,62 +107,62 @@ const CONFIG = {
     // ===== 캐릭터 표정 매핑 =====
     EXPRESSIONS: {
         eunsu: {
-            normal: "assets/images/characters/eunsu_normal.png",
-            smile: "assets/images/characters/eunsu_smile.png",
-            gentle: "assets/images/characters/eunsu_gentle.png",
-            warm: "assets/images/characters/eunsu_warm.png",
-            serious: "assets/images/characters/eunsu_serious.png",
-            cold: "assets/images/characters/eunsu_cold.png",
-            dark: "assets/images/characters/eunsu_dark.png",
-            obsessed: "assets/images/characters/eunsu_obsessed.png",
-            writing: "assets/images/characters/eunsu_normal.png",    // alias: 서류 작성 중
-            pa: "assets/images/characters/eunsu_normal.png",         // alias: PA 방송 (음성만)
-            shaking: "assets/images/characters/eunsu_shaking.png",   // 떨리는 상태
-            shocked: "assets/images/characters/eunsu_cold.png",      // alias: 충격받은 상태
-            crying: "assets/images/characters/eunsu_crying.png"      // 울먹이는 상태
+            normal: "assets/images/characters/eunsu_normal.webp",
+            smile: "assets/images/characters/eunsu_smile.webp",
+            gentle: "assets/images/characters/eunsu_gentle.webp",
+            warm: "assets/images/characters/eunsu_warm.webp",
+            serious: "assets/images/characters/eunsu_serious.webp",
+            cold: "assets/images/characters/eunsu_cold.webp",
+            dark: "assets/images/characters/eunsu_dark.webp",
+            obsessed: "assets/images/characters/eunsu_obsessed.webp",
+            writing: "assets/images/characters/eunsu_normal.webp",    // alias: 서류 작성 중
+            pa: "assets/images/characters/eunsu_normal.webp",         // alias: PA 방송 (음성만)
+            shaking: "assets/images/characters/eunsu_shaking.webp",   // 떨리는 상태
+            shocked: "assets/images/characters/eunsu_cold.webp",      // alias: 충격받은 상태
+            crying: "assets/images/characters/eunsu_crying.webp"      // 울먹이는 상태
         },
         riin: {
-            normal: "assets/images/characters/riin_normal.png",
-            smile: "assets/images/characters/riin_smile.png",
-            gentle: "assets/images/characters/riin_gentle.png",
-            cold: "assets/images/characters/riin_cold.png",
-            dark: "assets/images/characters/riin_dark.png",
-            neutral: "assets/images/characters/riin_neutral.png",
-            casual: "assets/images/characters/riin_normal.png",      // alias: 평상시
-            pain: "assets/images/characters/riin_pain.png",          // 고통/죄책감
-            relief: "assets/images/characters/riin_relief.png"       // 안도
+            normal: "assets/images/characters/riin_normal.webp",
+            smile: "assets/images/characters/riin_smile.webp",
+            gentle: "assets/images/characters/riin_gentle.webp",
+            cold: "assets/images/characters/riin_cold.webp",
+            dark: "assets/images/characters/riin_dark.webp",
+            neutral: "assets/images/characters/riin_neutral.webp",
+            casual: "assets/images/characters/riin_normal.webp",      // alias: 평상시
+            pain: "assets/images/characters/riin_pain.webp",          // 고통/죄책감
+            relief: "assets/images/characters/riin_relief.webp"       // 안도
         },
         sea: {
-            normal: "assets/images/characters/sea_normal.png",
-            smile: "assets/images/characters/sea_smile.png",
-            serious: "assets/images/characters/sea_serious.png",
-            sad: "assets/images/characters/sea_sad.png",
-            hurt: "assets/images/characters/sea_hurt.png",
-            cry: "assets/images/characters/sea_cry.png",
-            yandere: "assets/images/characters/sea_yandere.png",
-            cold: "assets/images/characters/sea_serious.png",        // alias: 차가운 표정
-            vulnerable: "assets/images/characters/sea_vulnerable.png",
-            broken_smile: "assets/images/characters/sea_broken_smile.png"
+            normal: "assets/images/characters/sea_normal.webp",
+            smile: "assets/images/characters/sea_smile.webp",
+            serious: "assets/images/characters/sea_serious.webp",
+            sad: "assets/images/characters/sea_sad.webp",
+            hurt: "assets/images/characters/sea_hurt.webp",
+            cry: "assets/images/characters/sea_cry.webp",
+            yandere: "assets/images/characters/sea_yandere.webp",
+            cold: "assets/images/characters/sea_serious.webp",        // alias: 차가운 표정
+            vulnerable: "assets/images/characters/sea_vulnerable.webp",
+            broken_smile: "assets/images/characters/sea_broken_smile.webp"
         },
         yuna: {
-            normal: "assets/images/characters/yuna_normal.png",
-            smile: "assets/images/characters/yuna_smile.png",
-            shy: "assets/images/characters/yuna_shy.png",
-            scared: "assets/images/characters/yuna_scared.png",
-            cry: "assets/images/characters/yuna_cry.png",
-            weak: "assets/images/characters/yuna_weak.png",
-            determined: "assets/images/characters/yuna_determined.png",
-            cautious: "assets/images/characters/yuna_scared.png",    // alias: 경계하는 상태
-            worried: "assets/images/characters/yuna_scared.png"      // alias: 걱정하는 상태
+            normal: "assets/images/characters/yuna_normal.webp",
+            smile: "assets/images/characters/yuna_smile.webp",
+            shy: "assets/images/characters/yuna_shy.webp",
+            scared: "assets/images/characters/yuna_scared.webp",
+            cry: "assets/images/characters/yuna_cry.webp",
+            weak: "assets/images/characters/yuna_weak.webp",
+            determined: "assets/images/characters/yuna_determined.webp",
+            cautious: "assets/images/characters/yuna_scared.webp",    // alias: 경계하는 상태
+            worried: "assets/images/characters/yuna_scared.webp"      // alias: 걱정하는 상태
         },
         seolhwa: {
-            normal: "assets/images/characters/seolhwa_normal.png",
-            smile: "assets/images/characters/seolhwa_smile.png",
-            sad: "assets/images/characters/seolhwa_sad.png",
-            fade: "assets/images/characters/seolhwa_fade.png",
-            fading: "assets/images/characters/seolhwa_fade.png",     // alias: 사라지는 중
-            ghost: "assets/images/characters/seolhwa_ghost.png",
-            quiet: "assets/images/characters/seolhwa_quiet.png"
+            normal: "assets/images/characters/seolhwa_normal.webp",
+            smile: "assets/images/characters/seolhwa_smile.webp",
+            sad: "assets/images/characters/seolhwa_sad.webp",
+            fade: "assets/images/characters/seolhwa_fade.webp",
+            fading: "assets/images/characters/seolhwa_fade.webp",     // alias: 사라지는 중
+            ghost: "assets/images/characters/seolhwa_ghost.webp",
+            quiet: "assets/images/characters/seolhwa_quiet.webp"
         },
         classmate: {
             default: null  // 급우: 전용 이미지 없음, 엔진에서 null 처리

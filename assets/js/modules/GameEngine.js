@@ -2167,6 +2167,85 @@ class GameEngine {
 
     // ===== Stat Change Effects =====
 
+    _charIdFromExpressionKey(key) {
+        if (!key || typeof key !== 'string') return null;
+        const idx = key.indexOf('_');
+        return idx > 0 ? key.slice(0, idx) : key;
+    }
+
+    _findCharacterPosition(charId) {
+        if (!charId || !this.currentSceneData) return null;
+        const targetId = String(charId);
+        const scene = this.currentSceneData;
+
+        if (this._charIdFromExpressionKey(scene.character) === targetId) return 'center';
+
+        if (scene.characters && typeof scene.characters === 'object') {
+            for (const [position, key] of Object.entries(scene.characters)) {
+                if (this._charIdFromExpressionKey(key) === targetId) return position;
+            }
+        }
+
+        return null;
+    }
+
+    _getCharacterSpriteForStatFX(charId) {
+        if (!charId) return null;
+        const targetId = String(charId);
+        const sprites = Array.from(document.querySelectorAll('#char-layer .character-sprite'));
+        const visibleMatches = sprites
+            .filter((el) => {
+                if (!el?.getAttribute('src')) return false;
+                if (el.dataset.characterId !== targetId) return false;
+                const style = window.getComputedStyle(el);
+                if (style.display === 'none' || style.visibility === 'hidden') return false;
+                const opacity = Number.parseFloat(style.opacity || '1');
+                if (Number.isFinite(opacity) && opacity <= 0.05) return false;
+                const rect = el.getBoundingClientRect();
+                return rect.width > 0 && rect.height > 0;
+            })
+            .sort((a, b) => {
+                const aStyle = window.getComputedStyle(a);
+                const bStyle = window.getComputedStyle(b);
+                const aRect = a.getBoundingClientRect();
+                const bRect = b.getBoundingClientRect();
+                const aScore = (Number.parseFloat(aStyle.opacity || '1') || 1) * aRect.width * aRect.height;
+                const bScore = (Number.parseFloat(bStyle.opacity || '1') || 1) * bRect.width * bRect.height;
+                return bScore - aScore;
+            });
+
+        if (visibleMatches[0]) return visibleMatches[0];
+
+        const fallbackPosition = this._findCharacterPosition(targetId);
+        if (!fallbackPosition) return null;
+
+        return document.getElementById(`char-${fallbackPosition}`);
+    }
+
+    _captureStatFXAnchor(charId) {
+        const gameScreen = document.getElementById('game-screen');
+        const sprite = this._getCharacterSpriteForStatFX(charId);
+        if (!gameScreen || !sprite) return null;
+
+        const gameRect = gameScreen.getBoundingClientRect();
+        const spriteRect = sprite.getBoundingClientRect();
+        if (!gameRect.width || !gameRect.height || !spriteRect.width || !spriteRect.height) return null;
+
+        const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+        const x = clamp(
+            spriteRect.left + (spriteRect.width / 2) - gameRect.left,
+            32,
+            gameRect.width - 32
+        );
+        const y = clamp(
+            spriteRect.top + (spriteRect.height * 0.18) - gameRect.top,
+            52,
+            Math.max(52, gameRect.height - 190)
+        );
+
+        return { x, y, width: spriteRect.width, charId };
+    }
+
     /**
      * 호감도 변화 시 효과음 + 시각 이펙트 (Cupid 스타일)
      * @param {string} stat - 스탯 종류 ('affinity')
@@ -2175,13 +2254,13 @@ class GameEngine {
     _playStatChangeFX(stat, val, charId) {
         // 큐에 추가하여 순차 재생 (겹침 방지)
         if (!this._statFXQueue) this._statFXQueue = [];
-        this._statFXQueue.push({ val, charId });
+        this._statFXQueue.push({ val, charId, anchor: this._captureStatFXAnchor(charId) });
         if (this._statFXQueue.length === 1) this._processStatFXQueue();
     }
 
     _processStatFXQueue() {
         if (!this._statFXQueue?.length) return;
-        const { val, charId } = this._statFXQueue[0];
+        const { val, charId, anchor } = this._statFXQueue[0];
 
         // 효과음
         if (this.audio?.ctx) {
@@ -2189,8 +2268,8 @@ class GameEngine {
         }
 
         // 시각 이펙트
-        this._showStatChangePopup(val, charId);
-        if (val > 0) this._showHeartEffect();
+        this._showStatChangePopup(val, charId, anchor);
+        if (val > 0) this._showHeartEffect(anchor);
 
         this._statFXQueue.shift();
         if (this._statFXQueue.length > 0) {
@@ -2203,7 +2282,7 @@ class GameEngine {
      * stat-display 옆에 짧게 표시되었다 사라짐
      * @param {number} val - 변화량
      */
-    _showStatChangePopup(val, charId) {
+    _showStatChangePopup(val, charId, anchor) {
         const gameScreen = document.getElementById('game-screen');
         if (!gameScreen) return;
 
@@ -2216,11 +2295,21 @@ class GameEngine {
         const popup = document.createElement('div');
         popup.className = 'stat-change-popup';
         this._activeStatPopups = (this._activeStatPopups || []).filter(el => el.isConnected);
-        const occupiedSlots = new Set(this._activeStatPopups.map(el => Number(el.dataset.statPopupSlot)));
+        const anchorX = anchor ? anchor.x : null;
+        const occupiedSlots = new Set(this._activeStatPopups
+            .filter(el => anchorX == null || Math.abs(Number(el.dataset.statPopupX || -9999) - anchorX) < 150)
+            .map(el => Number(el.dataset.statPopupSlot)));
         let slot = 0;
         while (occupiedSlots.has(slot) && slot < 5) slot++;
         popup.style.setProperty('--stat-popup-offset', `${slot * 34}px`);
         popup.dataset.statPopupSlot = String(slot);
+        if (anchor) {
+            popup.classList.add('stat-change-anchored');
+            popup.style.left = `${anchor.x}px`;
+            popup.style.top = `${anchor.y}px`;
+            popup.dataset.statPopupX = String(anchor.x);
+            popup.dataset.statPopupChar = charId || '';
+        }
 
         if (val > 0) {
             popup.textContent = `${charName} ${icon} +${val}`;
@@ -2243,12 +2332,17 @@ class GameEngine {
     /**
      * 하트 이펙트 — 호감도 증가 시 화면에 하트 파티클
      */
-    _showHeartEffect() {
+    _showHeartEffect(anchor) {
         const gameScreen = document.getElementById('game-screen');
         if (!gameScreen) return;
 
         const container = document.createElement('div');
         container.className = 'heart-effect-container';
+        if (anchor) {
+            container.classList.add('heart-effect-anchored');
+            container.style.setProperty('--heart-anchor-x', `${anchor.x}px`);
+            container.style.setProperty('--heart-anchor-y', `${anchor.y}px`);
+        }
         gameScreen.appendChild(container);
 
         // 5개 하트 파티클 생성
@@ -2256,7 +2350,13 @@ class GameEngine {
             const heart = document.createElement('div');
             heart.className = 'heart-particle';
             heart.textContent = '\u2665'; // ♥
-            heart.style.left = `${40 + Math.random() * 20}%`;
+            if (anchor) {
+                const spread = Math.max(34, Math.min(86, (anchor.width || 120) * 0.16));
+                heart.style.left = `${(Math.random() - 0.5) * spread}px`;
+                heart.style.top = `${(Math.random() - 0.5) * 24}px`;
+            } else {
+                heart.style.left = `${40 + Math.random() * 20}%`;
+            }
             heart.style.animationDelay = `${i * 0.1}s`;
             heart.style.fontSize = `${0.8 + Math.random() * 0.8}rem`;
             container.appendChild(heart);

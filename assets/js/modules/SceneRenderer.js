@@ -343,10 +343,23 @@ class SceneRenderer {
 
         // 목표 opacity 문자열 ('0.35' 등). undefined이면 '' (CSS 기본값 = 1)
         const targetOpacity = (opacity != null && opacity < 1) ? String(opacity) : '';
+        const applyCharacterData = () => {
+            const charId = this._getCharPrefix(src);
+            if (charId) {
+                el.dataset.characterId = charId;
+                el.dataset.characterPosition = position;
+            } else {
+                delete el.dataset.characterId;
+                delete el.dataset.characterPosition;
+            }
+        };
 
         // 같은 이미지 + 같은 opacity면 아무것도 안 함 (깜빡임 방지)
         const prevSrc = el.getAttribute('src');
-        if ((prevSrc === webpSrc || prevSrc === pngSrc) && el.style.opacity === targetOpacity) return;
+        if ((prevSrc === webpSrc || prevSrc === pngSrc) && el.style.opacity === targetOpacity) {
+            applyCharacterData();
+            return;
+        }
 
         // 이전 클론이 남아있으면 제거
         this._removePrevClone(el);
@@ -360,6 +373,7 @@ class SceneRenderer {
 
             if (prevPrefix === newPrefix) {
                 // 같은 캐릭터 표정 변화 → 즉시 교체 (깜빡임 없음)
+                applyCharacterData();
                 this._applyImgWithFallback(el, webpSrc, pngSrc);
                 el.style.opacity = targetOpacity;
             } else {
@@ -368,6 +382,7 @@ class SceneRenderer {
                 el.style.opacity = '0';
                 el._charTimer = setTimeout(() => {
                     el.classList.remove('char-fade-out');
+                    applyCharacterData();
                     this._applyImgWithFallback(el, webpSrc, pngSrc);
                     el.classList.add('char-fade-in');
                     el.style.opacity = '0';
@@ -386,6 +401,7 @@ class SceneRenderer {
             // 새 등장 — 페이드인
             el.classList.add('char-fade-in');
             el.style.opacity = '0';
+            applyCharacterData();
             this._applyImgWithFallback(el, webpSrc, pngSrc);
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => { el.style.opacity = targetOpacity; });
@@ -421,6 +437,8 @@ class SceneRenderer {
             setTimeout(() => {
                 el.src = '';
                 el.style.opacity = '';
+                delete el.dataset.characterId;
+                delete el.dataset.characterPosition;
                 el.classList.remove('char-fade-out');
             }, 260);
         });

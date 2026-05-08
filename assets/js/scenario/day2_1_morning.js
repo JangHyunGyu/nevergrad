@@ -354,7 +354,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_broadcast_4": {
         character: "eunsu_pa",
-        charOpacity: 0.7,
+        charOpacity: 0.35,
         stopSfx: "sfx_static.mp3",
         next: "day2_broadcast_5"
     },

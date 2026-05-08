@@ -48,7 +48,7 @@ Object.assign(SCENARIO[5], {
     // PA broadcast - Eunsu
     "day5_lunch_chase_4": {
         character: "eunsu_pa",
-        charOpacity: 0.7,
+        charOpacity: 0.35,
         stopSfx: "sfx_footsteps_running.mp3",
         sfx: { file: "sfx_pa_chime_static.mp3", volume: 0.85 },
         unskippable: true,
@@ -56,13 +56,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_chase_5": {
         character: "eunsu_pa",
-        charOpacity: 0.7,
+        charOpacity: 0.35,
         unskippable: true,
         next: "day5_lunch_chase_6"
     },
     "day5_lunch_chase_6": {
         character: "eunsu_pa",
-        charOpacity: 0.7,
+        charOpacity: 0.35,
         unskippable: true,
         next: "day5_lunch_chase_7"
     },

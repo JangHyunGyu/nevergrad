@@ -2668,14 +2668,19 @@ body {
     left: 50%;
     top: 20%;
     --stat-popup-offset: 0px;
+    --stat-font-size: 1.2rem;
+    --stat-rise-small: 8px;
+    --stat-rise-medium: 12px;
+    --stat-rise-large: 20px;
+    --stat-rise-end: 35px;
     transform: translateX(-50%) translateY(var(--stat-popup-offset));
-    font-size: 1.2rem;
+    font-size: var(--stat-font-size);
     font-weight: 700;
     pointer-events: none;
     animation: stat-popup-rise 1.5s ease forwards;
     text-shadow: 0 0 4px rgba(0, 0, 0, 1), 0 0 8px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.9);
     z-index: 50;
-    letter-spacing: 0.05em;
+    letter-spacing: 0;
     white-space: nowrap;
 }
 
@@ -2693,10 +2698,10 @@ body {
 
 @keyframes stat-popup-rise {
     0% { opacity: 0; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) + 0px)) scale(0.8); }
-    15% { opacity: 1; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - 8px)) scale(1.1); }
-    30% { opacity: 1; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - 12px)) scale(1); }
-    70% { opacity: 1; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - 20px)); }
-    100% { opacity: 0; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - 35px)); }
+    15% { opacity: 1; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - var(--stat-rise-small, 8px))) scale(1.1); }
+    30% { opacity: 1; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - var(--stat-rise-medium, 12px))) scale(1); }
+    70% { opacity: 1; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - var(--stat-rise-large, 20px))); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(calc(var(--stat-popup-offset, 0px) - var(--stat-rise-end, 35px))); }
 }
 
 /* ===== Heart Effect (Affinity Up) ===== */
@@ -2706,6 +2711,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    --heart-rise-small: -10px;
+    --heart-rise-medium: -40px;
+    --heart-rise-end: -80px;
     pointer-events: none;
     z-index: 25;
 }
@@ -2725,6 +2733,7 @@ body {
     pointer-events: none;
     text-shadow: 0 0 6px rgba(255, 107, 157, 0.5);
     animation: heart-float 1.8s ease forwards;
+    font-size: var(--heart-size, 1rem);
 }
 
 .heart-effect-anchored .heart-particle {
@@ -2733,9 +2742,9 @@ body {
 
 @keyframes heart-float {
     0% { opacity: 0; transform: translateY(0) scale(0.5); }
-    15% { opacity: 0.9; transform: translateY(-10px) scale(1); }
-    50% { opacity: 0.7; transform: translateY(-40px) scale(1.1); }
-    100% { opacity: 0; transform: translateY(-80px) scale(0.6); }
+    15% { opacity: 0.9; transform: translateY(var(--heart-rise-small, -10px)) scale(1); }
+    50% { opacity: 0.7; transform: translateY(var(--heart-rise-medium, -40px)) scale(1.1); }
+    100% { opacity: 0; transform: translateY(var(--heart-rise-end, -80px)) scale(0.6); }
 }
 
 /* ===== Save Toast ===== */

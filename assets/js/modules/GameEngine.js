@@ -2222,6 +2222,15 @@ class GameEngine {
         return document.getElementById(`char-${fallbackPosition}`);
     }
 
+    _getStatFXScale() {
+        const gameScreen = document.getElementById('game-screen');
+        const rect = gameScreen?.getBoundingClientRect?.();
+        const width = rect?.width || window.innerWidth || document.documentElement?.clientWidth || 1280;
+        const height = rect?.height || window.innerHeight || document.documentElement?.clientHeight || 720;
+        const longEdge = Math.max(width, height);
+        return Math.min(Math.max(longEdge / 900, 0.95), 1.85);
+    }
+
     _captureStatFXAnchor(charId) {
         const gameScreen = document.getElementById('game-screen');
         const sprite = this._getCharacterSpriteForStatFX(charId);
@@ -2294,14 +2303,22 @@ class GameEngine {
 
         const popup = document.createElement('div');
         popup.className = 'stat-change-popup';
+        const fxScale = this._getStatFXScale();
+        popup.style.setProperty('--stat-font-size', `${Math.round(19.2 * fxScale)}px`);
+        popup.style.setProperty('--stat-rise-small', `${Math.round(8 * fxScale)}px`);
+        popup.style.setProperty('--stat-rise-medium', `${Math.round(12 * fxScale)}px`);
+        popup.style.setProperty('--stat-rise-large', `${Math.round(20 * fxScale)}px`);
+        popup.style.setProperty('--stat-rise-end', `${Math.round(35 * fxScale)}px`);
         this._activeStatPopups = (this._activeStatPopups || []).filter(el => el.isConnected);
         const anchorX = anchor ? anchor.x : null;
+        const stackGap = Math.round(34 * fxScale);
+        const anchorCollisionWidth = Math.round(150 * fxScale);
         const occupiedSlots = new Set(this._activeStatPopups
-            .filter(el => anchorX == null || Math.abs(Number(el.dataset.statPopupX || -9999) - anchorX) < 150)
+            .filter(el => anchorX == null || Math.abs(Number(el.dataset.statPopupX || -9999) - anchorX) < anchorCollisionWidth)
             .map(el => Number(el.dataset.statPopupSlot)));
         let slot = 0;
         while (occupiedSlots.has(slot) && slot < 5) slot++;
-        popup.style.setProperty('--stat-popup-offset', `${slot * 34}px`);
+        popup.style.setProperty('--stat-popup-offset', `${slot * stackGap}px`);
         popup.dataset.statPopupSlot = String(slot);
         if (anchor) {
             popup.classList.add('stat-change-anchored');
@@ -2338,6 +2355,10 @@ class GameEngine {
 
         const container = document.createElement('div');
         container.className = 'heart-effect-container';
+        const fxScale = this._getStatFXScale();
+        container.style.setProperty('--heart-rise-small', `${-Math.round(10 * fxScale)}px`);
+        container.style.setProperty('--heart-rise-medium', `${-Math.round(40 * fxScale)}px`);
+        container.style.setProperty('--heart-rise-end', `${-Math.round(80 * fxScale)}px`);
         if (anchor) {
             container.classList.add('heart-effect-anchored');
             container.style.setProperty('--heart-anchor-x', `${anchor.x}px`);
@@ -2351,14 +2372,14 @@ class GameEngine {
             heart.className = 'heart-particle';
             heart.textContent = '\u2665'; // ♥
             if (anchor) {
-                const spread = Math.max(34, Math.min(86, (anchor.width || 120) * 0.16));
+                const spread = Math.max(34 * fxScale, Math.min(86 * fxScale, (anchor.width || 120) * 0.16));
                 heart.style.left = `${(Math.random() - 0.5) * spread}px`;
-                heart.style.top = `${(Math.random() - 0.5) * 24}px`;
+                heart.style.top = `${(Math.random() - 0.5) * 24 * fxScale}px`;
             } else {
                 heart.style.left = `${40 + Math.random() * 20}%`;
             }
             heart.style.animationDelay = `${i * 0.1}s`;
-            heart.style.fontSize = `${0.8 + Math.random() * 0.8}rem`;
+            heart.style.setProperty('--heart-size', `${(0.8 + Math.random() * 0.8) * fxScale}rem`);
             container.appendChild(heart);
         }
 

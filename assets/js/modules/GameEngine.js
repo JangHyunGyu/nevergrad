@@ -2296,7 +2296,8 @@ class GameEngine {
         if (!gameScreen) return;
 
         // 캐릭터 이름 가져오기
-        const charName = this.i18n?.getCharacterName?.(charId)
+        const charName = this.i18n?.getSpeakerName?.(charId, this.state.playerName)
+            || this.i18n?.getCharacterName?.(charId)
             || (charId ? (CONFIG.CHAR_NAMES[charId] || charId) : '');
         const label = this.state.getCharLabel(charId);
         const icon = label?.icon || '♡';

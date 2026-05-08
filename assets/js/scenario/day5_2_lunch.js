@@ -101,22 +101,22 @@ Object.assign(SCENARIO[5], {
     // ══════════════════════════════════════
     "day5_lunch_left_1": {
         background: "locked_corridor_junction",
-        characters: { left: "yuna_weak", center: "sea_cry" },
+        characters: { left: "yuna_weak", center: "sea_sad" },
         unskippable: true,
         next: "day5_lunch_left_2"
     },
     "day5_lunch_left_2": {
-        characters: { left: "yuna_weak", center: "sea_cry" },
+        characters: { left: "yuna_weak", center: "sea_vulnerable" },
         unskippable: true,
         next: "day5_lunch_left_3"
     },
     "day5_lunch_left_3": {
-        characters: { left: "yuna_weak", center: "sea_cry" },
+        characters: { left: "yuna_weak", center: "sea_vulnerable" },
         unskippable: true,
         next: "day5_lunch_left_4"
     },
     "day5_lunch_left_4": {
-        characters: { left: "yuna_weak", center: "sea_cry" },
+        characters: { left: "yuna_weak", center: "sea_vulnerable" },
         unskippable: true,
         next: "day5_lunch_left_5"
     },
@@ -133,18 +133,18 @@ Object.assign(SCENARIO[5], {
     },
     // 세아가 고개를 저었다. 입술을 깨물었다. 피가 맺혔다.
     "day5_lunch_left_5b": {
-        characters: { left: "yuna_weak", center: "sea_cry" },
+        characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_6"
     },
     // "못 보내. 이번에는 못 보내."
     "day5_lunch_left_6": {
-        characters: { left: "yuna_weak", center: "sea_cry" },
+        characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_7"
     },
     "day5_lunch_left_7": {
-        characters: { left: "yuna_weak", center: "sea_cry" },
+        characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_8"
     },
@@ -605,14 +605,14 @@ Object.assign(SCENARIO[5], {
     },
     // "...시간 없어. 받아."
     "day5_lunch_right_39": {
-        character: null,
+        character: "riin_pain",
         unskippable: true,
         next: "day5_lunch_right_choice"
     },
 
     // 6초 타이머: 3 choices (타임아웃 = 리인에게 붙잡힘)
     "day5_lunch_right_choice": {
-        character: null,
+        character: "riin_pain",
         sfx: "sfx_scream.mp3",
         vibrate: "danger",
         timedChoice: 6000,
@@ -643,7 +643,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 선택 2: "같이 가요." ──
     "day5_lunch_right_c2_1": {
-        character: null,
+        character: "riin_pain",
         stopSfx: "sfx_scream.mp3",
         unskippable: true,
         next: "day5_lunch_seolhwa_1",
@@ -659,7 +659,7 @@ Object.assign(SCENARIO[5], {
     },
     // 리인이 자기 팔에 주사기를 꽂음
     "day5_lunch_right_c3_2": {
-        character: null,
+        character: "riin_pain",
         unskippable: true,
         next: "day5_lunch_right_c3_3"
     },
@@ -1217,49 +1217,49 @@ Object.assign(SCENARIO[5], {
     },
     // 주사기 떨림, 눈물
     "day5_lunch_eunsu_26": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
+        characters: { left: "yuna_weak", center: "eunsu_shaking" },
         unskippable: true,
         next: "day5_lunch_eunsu_27"
     },
     "day5_lunch_eunsu_27": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
+        characters: { left: "yuna_weak", center: "eunsu_crying" },
         unskippable: true,
         next: "day5_lunch_eunsu_28"
     },
     // 시간이 멈춘 것 같다
     "day5_lunch_eunsu_28": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
+        characters: { left: "yuna_weak", center: "eunsu_crying" },
         unskippable: true,
         next: "day5_lunch_eunsu_29"
     },
     // 주사기와 비상구. 망각과 기억.
     "day5_lunch_eunsu_29": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
+        characters: { left: "yuna_weak", center: "eunsu_crying" },
         unskippable: true,
         next: "day5_lunch_eunsu_30"
     },
     // 12번의 몸이 기억
     "day5_lunch_eunsu_30": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
+        characters: { left: "yuna_weak", center: "eunsu_crying" },
         unskippable: true,
         next: "day5_lunch_eunsu_31"
     },
     // 한 발 더 다가옴
     "day5_lunch_eunsu_31": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
+        characters: { left: "yuna_weak", center: "eunsu_crying" },
         unskippable: true,
         next: "day5_lunch_eunsu_32"
     },
     // 설화가 보인다 — 뒤에
     "day5_lunch_eunsu_32": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle", right: "seolhwa_fading" },
+        characters: { left: "yuna_weak", center: "eunsu_crying", right: "seolhwa_fading" },
         unskippable: true,
         next: "day5_lunch_eunsu_final"
     },
 
     // ★ 최종 선택지: 20초 타이머, 3 choices (GHOST는 타이머 초과로만 진입)
     "day5_lunch_eunsu_final": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle", right: "seolhwa_fading" },
+        characters: { left: "yuna_weak", center: "eunsu_crying", right: "seolhwa_fading" },
         glitch: { screenShake: true },
         vibrate: "heartbeat",
         timedChoice: 20000,

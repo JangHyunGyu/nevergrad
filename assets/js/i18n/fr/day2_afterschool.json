@@ -123,6 +123,14 @@
     "day2_after_sea_22": {
         "text": "*Sea essaie de sourire, puis froisse le coin de la feuille.*"
     },
+    "day2_after_sea_choice": {
+        "text": "*Que dire ?*",
+        "choices": [
+            "\"On le fera ici demain aussi.\"",
+            "\"Ça irait plus vite si on appelait les autres, non ?\"",
+            "Sortir la chaise sans rien dire"
+        ]
+    },
     "day2_after_sea_23": {
         "text": "...Alors, on le fait ici demain aussi ?"
     },
@@ -140,6 +148,27 @@
     },
     "day2_after_sea_28": {
         "text": "*Après ça, nous avons travaillé sans un mot. Le volume de la musique était un cran plus bas qu'avant.*"
+    },
+    "day2_after_sea_invite_1": {
+        "text": "Ça irait plus vite si les autres membres du conseil aidaient aussi, non ?"
+    },
+    "day2_after_sea_invite_2": {
+        "text": "*Sea ne répond pas tout de suite. Son regard s'arrête entre les deux chaises vides.*"
+    },
+    "day2_after_sea_invite_3": {
+        "text": "...Aujourd'hui, on peut le faire à deux. Je mettrai tes formulaires à part."
+    },
+    "day2_after_sea_invite_4": {
+        "text": "*Son ton ressemblait plus à une demande qu'à une réponse. Je n'ai pas insisté et j'ai sorti la chaise.*"
+    },
+    "day2_after_sea_silent_1": {
+        "text": "*Au lieu de répondre, j'ai tiré une chaise du mur. Ses pieds ont raclé doucement le sol.*"
+    },
+    "day2_after_sea_silent_2": {
+        "text": "Merci. ...C'est plus simple quand quelqu'un comprend sans que j'aie à le dire."
+    },
+    "day2_after_sea_silent_3": {
+        "text": "*Sea sort une feuille d'étiquettes.*"
     },
     "day2_after_hallway_1": {
         "text": "*En quittant la salle du conseil des élèves, je descends le couloir et trouve des camarades de classe rassemblés près du distributeur automatique.*"

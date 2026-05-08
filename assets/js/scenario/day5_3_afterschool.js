@@ -321,12 +321,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_17"
     },
     "day5_after_confront_17": {
-        character: "eunsu_gentle",
+        character: "eunsu_obsessed",
         unskippable: true,
         next: "day5_after_confront_18"
     },
     "day5_after_confront_18": {
-        character: "eunsu_gentle",
+        character: "eunsu_obsessed",
         unskippable: true,
         next: "day5_after_confront_19"
     },
@@ -493,12 +493,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_forget_6"
     },
     "day5_after_forget_6": {
-        character: "eunsu_warm",
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_after_forget_7"
     },
     "day5_after_forget_7": {
-        character: "eunsu_warm",
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_after_forget_8"
     },
@@ -591,7 +591,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_12"
     },
     "day5_after_resist_12": {
-        character: "eunsu_warm",
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_after_resist_13"
     },

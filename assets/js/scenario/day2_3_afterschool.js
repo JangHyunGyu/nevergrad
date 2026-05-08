@@ -195,7 +195,24 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_sea_22": {
         character: "sea_sad",
-        next: "day2_after_sea_23"
+        next: "day2_after_sea_choice"
+    },
+    "day2_after_sea_choice": {
+        character: null,
+        choices: [
+            {
+                next: "day2_after_sea_23",
+                stats: { sea: { affinity: 4 } }
+            },
+            {
+                next: "day2_after_sea_invite_1",
+                stats: { sea: { affinity: -2 } }
+            },
+            {
+                next: "day2_after_sea_silent_1",
+                stats: { sea: { affinity: 2 } }
+            }
+        ]
     },
     "day2_after_sea_23": {
         character: "sea_normal",
@@ -220,6 +237,34 @@ Object.assign(SCENARIO[2], {
     "day2_after_sea_28": {
         character: "sea_smile",
         next: "day2_after_hallway_1"
+    },
+    "day2_after_sea_invite_1": {
+        character: "sea_sad",
+        next: "day2_after_sea_invite_2"
+    },
+    "day2_after_sea_invite_2": {
+        character: "sea_stare",
+        next: "day2_after_sea_invite_3"
+    },
+    "day2_after_sea_invite_3": {
+        character: "sea_stare",
+        next: "day2_after_sea_invite_4"
+    },
+    "day2_after_sea_invite_4": {
+        character: "sea_sad",
+        next: "day2_after_sea_26"
+    },
+    "day2_after_sea_silent_1": {
+        character: "sea_sad",
+        next: "day2_after_sea_silent_2"
+    },
+    "day2_after_sea_silent_2": {
+        character: "sea_sad",
+        next: "day2_after_sea_silent_3"
+    },
+    "day2_after_sea_silent_3": {
+        character: "sea_smile",
+        next: "day2_after_sea_26"
     },
 
     // ===== 복도 — 급우들과 짧은 수다 =====

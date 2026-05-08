@@ -72,11 +72,11 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_sea_10"
     },
     "day1_after_sea_10": {
-        character: "sea_vulnerable",
+        character: "sea_sad",
         next: "day1_after_sea_11"
     },
     "day1_after_sea_11": {
-        character: "sea_vulnerable",
+        character: "sea_sad",
         next: "day1_after_sea_12"
     },
     "day1_after_sea_12": {

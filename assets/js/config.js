@@ -136,6 +136,7 @@ const CONFIG = {
             normal: "assets/images/characters/sea_normal.webp",
             smile: "assets/images/characters/sea_smile.webp",
             serious: "assets/images/characters/sea_serious.webp",
+            stare: "assets/images/characters/sea_stare.webp",
             sad: "assets/images/characters/sea_sad.webp",
             hurt: "assets/images/characters/sea_hurt.webp",
             cry: "assets/images/characters/sea_cry.webp",

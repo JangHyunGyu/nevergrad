@@ -984,42 +984,42 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_proposal_3"
     },
     "day5_morning_proposal_3": {
-        character: "eunsu_dark",
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_morning_proposal_4"
     },
     "day5_morning_proposal_4": {
-        character: "eunsu_dark",
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_morning_proposal_5"
     },
     "day5_morning_proposal_5": {
-        character: "eunsu_dark",
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_morning_proposal_6"
     },
     "day5_morning_proposal_6": {
-        character: "eunsu_dark",
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_morning_proposal_7"
     },
     "day5_morning_proposal_7": {
-        character: "eunsu_dark",
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_morning_proposal_8"
     },
     "day5_morning_proposal_8": {
-        character: "eunsu_dark",
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_morning_proposal_9"
     },
     "day5_morning_proposal_9": {
-        character: "eunsu_dark",
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_morning_proposal_10"
     },
     "day5_morning_proposal_10": {
-        character: "eunsu_dark",
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_morning_proposal_11"
     },

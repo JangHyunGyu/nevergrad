@@ -102,12 +102,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_forced_2"
     },
     "day5_ending_forget_forced_2": {
-        character: "eunsu_normal",
+        character: "riin_pain",
         unskippable: true,
         next: "day5_ending_forget_forced_3"
     },
     "day5_ending_forget_forced_3": {
-        character: null,
+        character: "riin_pain",
         unskippable: true,
         next: "day5_ending_forget_forced_4"
     },
@@ -723,7 +723,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_15"
     },
     "day5_ending_resist_15": {
-        character: "eunsu_normal",
+        character: "eunsu_shaking",
         next: "day5_ending_resist_16"
     },
     "day5_ending_resist_16": {
@@ -731,7 +731,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_17"
     },
     "day5_ending_resist_17": {
-        character: "eunsu_gentle",
+        character: "eunsu_shaking",
         next: "day5_ending_resist_18"
     },
     "day5_ending_resist_18": {
@@ -740,19 +740,19 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_18a"
     },
     "day5_ending_resist_18a": {
-        character: "eunsu_normal",
+        character: "eunsu_shaking",
         next: "day5_ending_resist_18b"
     },
     "day5_ending_resist_18b": {
-        character: "eunsu_normal",
+        character: "eunsu_shaking",
         next: "day5_ending_resist_18c"
     },
     "day5_ending_resist_18c": {
-        character: "eunsu_normal",
+        character: "eunsu_crying",
         next: "day5_ending_resist_18d"
     },
     "day5_ending_resist_18d": {
-        character: "eunsu_normal",
+        character: "eunsu_crying",
         next: "day5_ending_resist_19"
     },
     "day5_ending_resist_19": {
@@ -760,7 +760,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_20"
     },
     "day5_ending_resist_20": {
-        character: "eunsu_gentle",
+        character: "eunsu_crying",
         next: "day5_ending_resist_21"
     },
     "day5_ending_resist_21": {
@@ -1012,11 +1012,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_7"
     },
     "day5_ending_forget_7": {
-        character: "eunsu_normal",
+        character: "eunsu_shaking",
         next: "day5_ending_forget_8"
     },
     "day5_ending_forget_8": {
-        character: "eunsu_normal",
+        character: "eunsu_crying",
         next: "day5_ending_forget_9"
     },
     "day5_ending_forget_9": {

@@ -2,58 +2,60 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const ROOT = path.resolve(process.cwd(), 'assets/js/i18n');
-const EN_DIR = path.join(ROOT, 'en');
-const TARGET_LANGS = ['ko', 'ja', 'es', 'fr', 'de', 'pt'];
+const SOURCE_LANG = 'ko';
+const SOURCE_DIR = path.join(ROOT, SOURCE_LANG);
+const TARGET_LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
 const DEFAULT_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 
 const LANG_CONFIG = {
-  ko: {
-    label: 'Korean',
+  en: {
+    label: 'English',
     style:
-      'natural Korean visual-novel prose. Use concise first-person narration, keep the tense close to the English, and make dialogue sound like native Korean students/teachers.',
+      'native English visual-novel prose. Keep the Korean source tone: concise, tense, and not overexplained. Dialogue should sound natural in an English localization of a Korean school mystery.',
     glossary:
-      'Translate Sunbae/sunbae as 선배. Translate homeroom teacher as 담임 선생님 when it appears in prose. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 as recognizable project terms.',
+      'Use Sea, Eunsu, Riin, Yuna, Seolhwa, and Minsu for names. Translate 선배 as sunbae when Yuna directly addresses the protagonist, and as senior only for a generic upperclassman. Use Ms. Eunsu/Ms. Riin naturally for teachers. Keep Nevergrad, Project Nevergrad, S-13, M-13, Trial #13, and Cycle #13 recognizable.',
   },
   ja: {
     label: 'Japanese',
     style:
-      'native Japanese visual-novel prose. Use 僕 for the protagonist unless the English explicitly requires otherwise, and make dialogue natural for a Japanese localization of a Korean school mystery.',
+      'native Japanese visual-novel prose. Keep the Korean source tone: concise, tense, and not overexplained. Dialogue should sound natural for a Japanese localization of a Korean school mystery.',
     glossary:
-      'Translate Sunbae/sunbae as 先輩. Keep Korean names in katakana as provided. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 recognizable.',
+      'Use セア, ウンス, リイン, ユナ, ソルファ, and ミンス for names unless a full Korean name is required. Translate 선배 as 先輩. Use 先生 naturally for teachers. Keep Nevergrad, Project Nevergrad, S-13, M-13, Trial #13, and Cycle #13 recognizable.',
   },
   es: {
     label: 'Spanish',
     style:
-      'native neutral Latin American Spanish for a visual novel. Avoid Spain-only words such as fiambrera, ordenador, coche, and vale. Keep the protagonist gender-neutral where possible and use natural dialogue.',
+      'native neutral Latin American Spanish for a visual novel. Avoid Spain-only words such as fiambrera, ordenador, coche, and vale. Keep the Korean source tone concise and avoid overexplaining.',
     glossary:
-      'Keep Sunbae/sunbae as sunbae. Prefer lonchera, celular, computadora, auto, and está bien when those concepts appear. Use profesora/tutora naturally for Eunsu when the English says teacher. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 unchanged or clearly recognizable.',
+      'Use Sea, Eunsu, Riin, Yuna, Seolhwa, and Minsu for names. Keep 선배 as sunbae. Prefer lonchera, celular, computadora, auto, and está bien when those concepts appear. Use profesora/tutora naturally for Eunsu. Keep Nevergrad, Project Nevergrad, S-13, M-13, Trial #13, and Cycle #13 unchanged or clearly recognizable.',
   },
   fr: {
     label: 'French',
     style:
-      'native French visual-novel prose. Avoid stiff literal translation, keep suspenseful rhythm, and avoid gendering the protagonist where a natural neutral phrasing is possible.',
+      'native French visual-novel prose. Avoid stiff literal translation, keep suspenseful rhythm, and avoid gendering the protagonist where a natural neutral phrasing is possible. Keep the Korean source tone concise.',
     glossary:
-      'Keep Sunbae/sunbae as sunbae. Use professeure/principale naturally for Eunsu when the English says teacher. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 unchanged or clearly recognizable.',
+      'Use Sea, Eunsu, Riin, Yuna, Seolhwa, and Minsu for names. Keep 선배 as sunbae. Use professeure/principale naturally for Eunsu. Keep Nevergrad, Project Nevergrad, S-13, M-13, Trial #13, and Cycle #13 unchanged or clearly recognizable.',
   },
   de: {
     label: 'German',
     style:
-      'native German visual-novel prose. Use natural, tense suspense prose and avoid calques. Keep the protagonist gender-neutral where practical.',
+      'native German visual-novel prose. Use natural, tense suspense prose and avoid calques. Keep the protagonist gender-neutral where practical. Keep the Korean source tone concise.',
     glossary:
-      'Keep Sunbae/sunbae as Sunbae. Use Lehrerin/Klassenlehrerin naturally for Eunsu when the English says teacher. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 unchanged or clearly recognizable.',
+      'Use Sea, Eunsu, Riin, Yuna, Seolhwa, and Minsu for names. Keep 선배 as Sunbae. Use Lehrerin/Klassenlehrerin naturally for Eunsu. Keep Nevergrad, Project Nevergrad, S-13, M-13, Trial #13, and Cycle #13 unchanged or clearly recognizable.',
   },
   pt: {
     label: 'Brazilian Portuguese',
     style:
-      'native Brazilian Portuguese for a visual novel. Avoid Portugal phrasing and literal English. Keep the protagonist gender-neutral where possible and make dialogue idiomatic.',
+      'native Brazilian Portuguese for a visual novel. Avoid Portugal phrasing and literal translation. Keep the protagonist gender-neutral where possible, and keep the Korean source tone concise.',
     glossary:
-      'Keep Sunbae/sunbae as sunbae. Use professora/professora titular naturally for Eunsu when the English says teacher. Keep Nevergrad, Project Nevergrad, S-13, and Cycle #13 unchanged or clearly recognizable.',
+      'Use Sea, Eunsu, Riin, Yuna, Seolhwa, and Minsu for names. Keep 선배 as sunbae. Use professora/professora titular naturally for Eunsu. Keep Nevergrad, Project Nevergrad, S-13, M-13, Trial #13, and Cycle #13 unchanged or clearly recognizable.',
   },
 };
 
 function parseArgs() {
   const args = process.argv.slice(2);
   const parsed = { langs: TARGET_LANGS, files: null, force: false, retries: 3 };
+
   for (let i = 0; i < args.length; i += 1) {
     const arg = args[i];
     if (arg === '--langs') parsed.langs = args[++i].split(',').map((x) => x.trim()).filter(Boolean);
@@ -63,6 +65,11 @@ function parseArgs() {
     else if (arg === '--model') process.env.GEMINI_MODEL = args[++i];
     else throw new Error(`Unknown argument: ${arg}`);
   }
+
+  if (!Number.isInteger(parsed.retries) || parsed.retries < 1) {
+    throw new Error('--retries must be a positive integer');
+  }
+
   return parsed;
 }
 
@@ -72,12 +79,12 @@ async function readApiKey() {
   const envText = await fs.readFile(envPath, 'utf8').catch(() => '');
   const match = envText.match(/^GEMINI_API_KEY=(.+)$/m);
   if (!match) throw new Error('GEMINI_API_KEY is missing from environment and .env');
-  return match[1].trim();
+  return match[1].trim().replace(/^["']|["']$/g, '');
 }
 
-async function listEnglishFiles(filesArg) {
+async function listSourceFiles(filesArg) {
   if (filesArg) return filesArg.map((file) => (file.endsWith('.json') ? file : `${file}.json`));
-  const entries = await fs.readdir(EN_DIR);
+  const entries = await fs.readdir(SOURCE_DIR);
   return entries.filter((file) => /^day\d+_(morning|lunch|afterschool|night)\.json$/.test(file)).sort();
 }
 
@@ -90,7 +97,9 @@ function buildPrompt(lang, file, source) {
     if (Array.isArray(entry.choices)) sourceForModel[key].choices = entry.choices;
   }
 
-  return `You are localizing a Korean school mystery visual novel from English into ${config.label}.
+  return `You are localizing a Korean school mystery visual novel from Korean into ${config.label}.
+
+The Korean source JSON is canonical. Ignore any existing target translation.
 
 Target style: ${config.style}
 Glossary and constraints: ${config.glossary}
@@ -102,8 +111,8 @@ Rules:
 - Translate "text" and each item in "choices" into ${config.label}.
 - Keep placeholders such as {name}, markdown markers like **...**, surrounding visual-novel italics *...*, escaped quotes, and line breaks.
 - Keep empty strings empty.
-- Do not add, remove, reorder, summarize, censor, soften, or intensify story events.
-- Make it read as native ${config.label}, not literal English.
+- Do not add, remove, reorder, summarize, censor, soften, intensify, or explain story events.
+- Make it read as native ${config.label}, not literal Korean.
 
 File: ${file}
 Source JSON:
@@ -117,7 +126,35 @@ function extractJson(text) {
   return JSON.parse(cleaned);
 }
 
-function normalizeTranslated(lang, source, translated) {
+function placeholders(text) {
+  return text.match(/\{[A-Za-z0-9_]+\}/g) ?? [];
+}
+
+function assertStringPreserved(sourceText, translatedText, label) {
+  if (sourceText === '' && translatedText !== '') throw new Error(`${label} should stay empty`);
+
+  for (const placeholder of placeholders(sourceText)) {
+    if (!translatedText.includes(placeholder)) {
+      throw new Error(`${label} missing placeholder ${placeholder}`);
+    }
+  }
+
+  const sourceBackticks = (sourceText.match(/`/g) ?? []).length;
+  const translatedBackticks = (translatedText.match(/`/g) ?? []).length;
+  if (sourceBackticks !== translatedBackticks) {
+    throw new Error(`${label} backtick count mismatch`);
+  }
+
+  const wrapper = sourceText.match(/^(\*{1,3})[\s\S]*(\*{1,3})$/);
+  if (wrapper && wrapper[1] === wrapper[2]) {
+    const marker = wrapper[1];
+    if (!translatedText.startsWith(marker) || !translatedText.endsWith(marker)) {
+      throw new Error(`${label} markdown wrapper mismatch`);
+    }
+  }
+}
+
+function normalizeTranslated(lang, source, translated, file) {
   const sourceKeys = Object.keys(source);
   const translatedKeys = Object.keys(translated);
   const missing = sourceKeys.filter((key) => !Object.prototype.hasOwnProperty.call(translated, key));
@@ -132,13 +169,19 @@ function normalizeTranslated(lang, source, translated) {
     const tr = translated[key] ?? {};
     if (typeof tr !== 'object' || Array.isArray(tr)) throw new Error(`entry ${key} is not an object`);
 
-    const out = {};
-    out.text = src.text === '' ? '' : String(tr.text ?? '');
+    const sourceText = String(src.text ?? '');
+    const out = { text: sourceText === '' ? '' : String(tr.text ?? '') };
+    assertStringPreserved(sourceText, out.text, `${lang}/${file}:${key}.text`);
 
     if (Array.isArray(src.choices)) {
       if (!Array.isArray(tr.choices)) throw new Error(`entry ${key} choices missing`);
       if (tr.choices.length !== src.choices.length) throw new Error(`entry ${key} choices length mismatch`);
-      out.choices = src.choices.map((choice, index) => (choice === '' ? '' : String(tr.choices[index] ?? '')));
+      out.choices = src.choices.map((choice, index) => {
+        const sourceChoice = String(choice ?? '');
+        const translatedChoice = sourceChoice === '' ? '' : String(tr.choices[index] ?? '');
+        assertStringPreserved(sourceChoice, translatedChoice, `${lang}/${file}:${key}.choices[${index}]`);
+        return translatedChoice;
+      });
     }
 
     result[key] = out;
@@ -179,7 +222,7 @@ async function callGemini(apiKey, prompt) {
 }
 
 async function translateFile(apiKey, lang, file, retries) {
-  const sourcePath = path.join(EN_DIR, file);
+  const sourcePath = path.join(SOURCE_DIR, file);
   const targetPath = path.join(ROOT, lang, file);
   const source = JSON.parse(await fs.readFile(sourcePath, 'utf8'));
   const prompt = buildPrompt(lang, file, source);
@@ -189,13 +232,13 @@ async function translateFile(apiKey, lang, file, retries) {
     try {
       const raw = await callGemini(apiKey, prompt);
       const translated = extractJson(raw);
-      const normalized = normalizeTranslated(lang, source, translated);
+      const normalized = normalizeTranslated(lang, source, translated, file);
       await fs.mkdir(path.dirname(targetPath), { recursive: true });
       await fs.writeFile(targetPath, `${JSON.stringify(normalized, null, 4)}\n`, 'utf8');
       return;
     } catch (error) {
       lastError = error;
-      console.error(`[retry ${attempt}/${retries}] ${lang}/${file}: ${error.message}`);
+      console.error(`[retry ${attempt}/${retries}] ${SOURCE_LANG}->${lang}/${file}: ${error.message}`);
       await new Promise((resolve) => setTimeout(resolve, 1200 * attempt));
     }
   }
@@ -206,19 +249,20 @@ async function main() {
   const args = parseArgs();
   const badLang = args.langs.find((lang) => !LANG_CONFIG[lang]);
   if (badLang) throw new Error(`Unsupported language: ${badLang}`);
+  if (args.langs.includes(SOURCE_LANG)) throw new Error(`Target languages must not include source language: ${SOURCE_LANG}`);
 
   const apiKey = await readApiKey();
-  const files = await listEnglishFiles(args.files);
+  const files = await listSourceFiles(args.files);
   console.log(`model=${process.env.GEMINI_MODEL || DEFAULT_MODEL}`);
-  console.log(`langs=${args.langs.join(',')} files=${files.length}`);
+  console.log(`source=${SOURCE_LANG} langs=${args.langs.join(',')} files=${files.length}`);
 
   for (const lang of args.langs) {
     for (const file of files) {
       const started = Date.now();
-      process.stdout.write(`[start] ${lang}/${file}\n`);
+      process.stdout.write(`[start] ${SOURCE_LANG}->${lang}/${file}\n`);
       await translateFile(apiKey, lang, file, args.retries);
       const seconds = ((Date.now() - started) / 1000).toFixed(1);
-      process.stdout.write(`[done]  ${lang}/${file} ${seconds}s\n`);
+      process.stdout.write(`[done]  ${SOURCE_LANG}->${lang}/${file} ${seconds}s\n`);
     }
   }
 }

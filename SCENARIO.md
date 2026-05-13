@@ -587,7 +587,7 @@ _캐릭터: `sea_normal`_
 
 **세아**
 ```text
-여기는 과학실이고, 저 끝이 음악실이야. 2층은 3학년 교실이라 올라갈 일 없을 거야.
+여기는 과학실, 저 끝은 음악실. 2층은 3학년 쪽이라 갈 일은 별로 없을 거야.
 ```
 
 ### `day1_sea_meet_13`
@@ -597,7 +597,7 @@ _캐릭터: `sea_normal`_
 
 **세아**
 ```text
-아, 매점은 1층 끝에 있어. 점심시간엔 줄이 길어지니까 미리 알아두면 좋아.
+매점은 1층 끝. 점심엔 줄 길어.
 ```
 
 ### `day1_sea_meet_14`
@@ -697,7 +697,7 @@ _캐릭터: `sea_normal`_
 
 **세아**
 ```text
-아, 맞다. 이거. 초코우유 마실래? 매점에서 1+1이라서 두 개는 못 마시겠더라고.
+아, 맞다. 초코우유 마실래? 1+1이라 하나 남았어.
 ```
 
 ### `day1_choco_3`
@@ -748,7 +748,7 @@ _캐릭터: `sea_normal`_
 **선택지**
 1. 고마워, 잘 마실게.
 2. 이걸 좋아하는 건 어떻게 알았어?
-3. 사실, 나는 딸기우유를 더 좋아해.
+3. 사실은 딸기우유 쪽이 더 맞아.
 
 ### `day1_choco_accept_1`
 
@@ -827,7 +827,7 @@ _캐릭터: `sea_normal`_
 
 **나**
 ```text
-아니, 맞아. 나 좋아해. 고마워.
+아니야. 괜찮아. 고마워.
 ```
 
 ### `day1_choco_question_5`
@@ -1004,7 +1004,7 @@ _source: `day1_1_morning.js / day1_morning.json`_
 
 **나**
 ```text
-안녕하세요. {name}입니다. XX고등학교에서 전학 왔습니다. 잘 부탁드립니다.
+안녕하세요. {name}입니다. 전학 왔습니다. 잘 부탁드립니다.
 ```
 
 ### `day1_eunsu_10`
@@ -1027,7 +1027,7 @@ _source: `day1_1_morning.js / day1_morning.json`_
 
 **나**
 ```text
-음... 게임하고 음악 듣는 걸 좋아합니다.
+음... 음악 듣는 걸 좋아합니다.
 ```
 
 ### `day1_eunsu_12`
@@ -1231,7 +1231,7 @@ _source: `day1_1_morning.js / day1_morning.json`_
 
 **옆자리 남학생**
 ```text
-말 걸면 대답은 가끔 하는데, 먼저 말 거는 건 한 번도 못 봤어. 나도 이름은 몰라.
+말 걸면 가끔 대답은 해. 먼저 말 거는 건 본 적 없고. 이름은 나도 몰라.
 ```
 
 ### `day1_seolhwa_greet_14`
@@ -1323,7 +1323,7 @@ _source: `day1_1_morning.js / day1_morning.json`_
 
 **급우 A**
 ```text
-무슨 게임 해?
+요즘 뭐 해?
 ```
 
 ### `day1_break_5`
@@ -1332,7 +1332,7 @@ _source: `day1_1_morning.js / day1_morning.json`_
 
 **나**
 ```text
-*대화는 자연스럽게 이어진다. 좋아하는 게임, 유튜버. 누군가 내 이름을 두 번 틀리고, 세아가 옆에서 바로잡아준다.*
+*대화는 자연스럽게 이어진다. 학교 근처 얘기, 좋아하는 음악. 누군가 내 이름을 두 번 틀리고, 세아가 옆에서 바로잡아준다.*
 ```
 
 ### `day1_break_6`
@@ -1435,7 +1435,7 @@ _캐릭터: `yuna_shy`_
 
 **최유나**
 ```text
-방과 후엔 보통 도서관에서 사진을 정리해요. 사진이 신경 쓰이면... 그때 말씀해 주세요.
+방과 후엔 도서관에서 사진 정리해요. 사진이 신경 쓰이면 그때 말해주세요.
 ```
 
 ### `day1_pe_wall_1`
@@ -1824,7 +1824,7 @@ _캐릭터: `yuna_shy`_
 
 **유나**
 ```text
-아, 아니요. 저 사진 동아리인데, 창가 빛을 찍고 있었는데 갑자기 들어오셔서...
+아, 아니요. 사진부예요. 창가 빛을 찍고 있었는데 선배가 들어오셔서...
 ```
 
 ### `day1_lunch_yuna_6`
@@ -2184,11 +2184,11 @@ _source: `day1_3_afterschool.js / day1_afterschool.json`_
 ```
 
 **선택지**
-1. 세아가 학생회실로 오라고 했지
-2. 도서관에 유나를 다시 보러 갈까
-3. 보건실의 리인 선생님이 궁금해
-4. 은수 선생님께 인사드리러 교무실에 들러야지
-5. 오늘은 집으로 간다
+1. 세아가 학생회실로 오라고 했다
+2. 도서관에 유나를 보러 간다
+3. 보건실로 간다
+4. 은수 선생님께 인사하러 간다
+5. 집으로 간다
 
 ### `day1_after_sea_1`
 
@@ -2267,7 +2267,7 @@ _캐릭터: `sea_normal`_
 
 **한세아**
 ```text
-첫날은 늘 힘들지. 어디에 앉아야 하는지도, 누구한테 인사해야 하는지도 계속 확인하게 되고.
+첫날은 늘 그래. 어디 앉을지, 누구한테 인사할지 계속 확인하게 되잖아.
 ```
 
 ### `day1_after_sea_9`
@@ -2283,17 +2283,17 @@ _캐릭터: `sea_normal`_
 ### `day1_after_sea_10`
 
 _source: `day1_3_afterschool.js / day1_afterschool.json`_
-_캐릭터: `sea_vulnerable`_
+_캐릭터: `sea_sad`_
 
 **한세아**
 ```text
-...와줘서 다행이다, {name}. 이 시간엔 형광등 소리가 좀 크게 들리거든.
+...와줘서 다행이다. 이 시간엔 형광등 소리가 크게 들려.
 ```
 
 ### `day1_after_sea_11`
 
 _source: `day1_3_afterschool.js / day1_afterschool.json`_
-_캐릭터: `sea_vulnerable`_
+_캐릭터: `sea_sad`_
 
 **나**
 ```text
@@ -2477,7 +2477,7 @@ _캐릭터: `yuna_normal`_
 
 **최유나**
 ```text
-이건... 선배가 앉아 계셨던 자리예요. 빛이 좋아서요. 여기, 기념으로 가지세요.
+이건... 선배가 앉았던 자리예요. 빛이 좋아서. 가져가세요.
 ```
 
 ### `day1_after_yuna_14`
@@ -2507,7 +2507,7 @@ _캐릭터: `riin_gentle`_
 
 **리인**
 ```text
-전학 오면 첫날 밤에 잠 설칠 수 있어요. 몸이 먼저 낯선 곳을 알아차리거든.
+전학 첫날엔 잠이 얕을 수 있어요. 몸이 낯선 곳을 먼저 알거든.
 ```
 
 ### `day1_after_riin_3`
@@ -2597,7 +2597,7 @@ _캐릭터: `riin_gentle`_
 
 **강리인**
 ```text
-다음에 이 시간에 또 들러요. 차 끓여줄게요. 보건실은 열어둘 테니.
+다음에 이 시간에 또 들러요. 차 끓여둘게요.
 ```
 
 ### `day1_after_riin_12`
@@ -2617,7 +2617,7 @@ _배경: `teacher_office` / 캐릭터: `eunsu_warm`_
 
 **은수**
 ```text
-{name}? 방과 후에 선생님 보러 왔어? 기특하네.
+{name}? 방과 후에 선생님 보러 왔어? 무슨 일 있어?
 ```
 
 ### `day1_after_eunsu_2`
@@ -2637,7 +2637,7 @@ _캐릭터: `eunsu_normal`_
 
 **은수**
 ```text
-...{name}, 전 학교에서 무슨 일 있었니? 전학 서류가 좀 특이해서...
+...전 학교 서류가 늦게 넘어왔더라. 무슨 일 있었니?
 ```
 
 ### `day1_after_eunsu_4`
@@ -2697,7 +2697,7 @@ _캐릭터: `eunsu_warm`_
 
 **박은수**
 ```text
-세아가 잘 챙겨줬나 보네. ...{name}, 혹시라도 어려운 일 있으면 선생님한테 와. 내가 네 담임 선생님이잖아.
+세아가 챙겨줬구나. 어려운 일 있으면 선생님한테 와. 담임이니까.
 ```
 
 ### `day1_after_eunsu_10`
@@ -3531,7 +3531,7 @@ _캐릭터: `sea_smile`_
 
 **세아**
 ```text
-완벽해.
+좋아.
 ```
 
 ### `day2_morning_pres_11`
@@ -3630,7 +3630,7 @@ _캐릭터: `eunsu_warm`_
 
 **은수**
 ```text
-혹시 불편한 거 있으면 말해 줘. 내가 담임 선생님이잖아.
+불편한 거 있으면 바로 말해 줘. 담임이니까.
 ```
 
 ### `day2_morning_deja5_11`
@@ -4103,7 +4103,7 @@ _캐릭터: `yuna_normal`_
 
 **유나**
 ```text
-네. 같은 자리에 있으면 사진도 시간표처럼 쌓이거든요. 여기 보세요.
+네. 같은 자리에 있으면 시간이 쌓이거든요. 여기 보세요.
 ```
 
 ### `day2_lunch_yuna_8`
@@ -4163,7 +4163,7 @@ _캐릭터: `yuna_normal`_
 
 **유나**
 ```text
-그런 걸 놓치지 않는 게 중요하거든요.
+놓치면 다시 못 찍으니까요.
 ```
 
 ### `day2_lunch_yuna_14`
@@ -4223,7 +4223,7 @@ _캐릭터: `yuna_normal`_
 
 **유나**
 ```text
-아, 아무것도 아니에요. 사진 정리하다가 비슷한 뒷모습을 봐서요.
+아, 아니에요. 비슷한 사진을 본 것 같아서요.
 ```
 
 ### `day2_lunch_yuna_20`
@@ -4383,7 +4383,7 @@ _캐릭터: `riin_smile`_
 
 **리인**
 ```text
-전학 첫 주에는 수면 기록도 같이 봐요. 낮에 멍해지는 학생들이 있어서.
+전학 첫 주엔 수면도 같이 봐요. 낮에 멍해지는 경우가 있어서.
 ```
 
 ### `day2_lunch_riin_12`
@@ -4583,7 +4583,7 @@ _캐릭터: `eunsu_normal`_
 
 **은수**
 ```text
-…네, 결재 올렸습니다. 작년처럼 이번에도 문제없이 마무리하겠습니다. …5일 안에 끝내겠습니다.
+…네, 결재 올렸습니다. 이번에도 5일입니다.
 ```
 
 ### `day2_lunch_rooftop_3`
@@ -4623,7 +4623,7 @@ _캐릭터: `eunsu_gentle`_
 
 **은수**
 ```text
-학기 초라 서류 작업이 많네. 교육청 관련 업무야. 학생용 문서는 아니고.
+학기 초라 서류가 많네. 교육청 쪽 일이야.
 ```
 
 ### `day2_lunch_rooftop_7`
@@ -4729,7 +4729,7 @@ _캐릭터: `eunsu_warm`_
 
 **은수**
 ```text
-우리 학교는 앱 하나로 거의 다 처리해. 와이파이, 도서관 출입, 급식실 QR까지.
+와이파이, 도서관, 급식실 QR까지 앱으로 처리해.
 ```
 
 ### `day2_after_eunsu_2`
@@ -4739,7 +4739,7 @@ _캐릭터: `eunsu_warm`_
 
 **은수**
 ```text
-전학생 등록 마지막 단계야. 이거 안 깔면 내일부터 급식실 QR이 안 찍힐 거야.
+전학생 등록 마지막 단계야. 안 깔면 내일부터 QR이 안 찍혀.
 ```
 
 ### `day2_after_eunsu_3`
@@ -4839,7 +4839,7 @@ _캐릭터: `eunsu_normal`_
 
 **은수**
 ```text
-위치 권한은 '항상 허용'이 기본값이야. 학교 안에서는 그쪽이 오류가 적어.
+위치는 '항상 허용'으로 둬. 교내에서는 그쪽이 덜 꼬여.
 ```
 
 ### `day2_after_limit_3`
@@ -4859,7 +4859,7 @@ _캐릭터: `eunsu_gentle`_
 
 **은수**
 ```text
-작년 이후로 정책이 바뀌었어. 알림 문구도 그때 새로 들어간 거고.
+작년 이후로 바뀌었어. 알림 문구도 그때 들어갔고.
 ```
 
 ### `day2_after_limit_5`
@@ -4889,7 +4889,7 @@ _캐릭터: `sea_smile`_
 
 **나**
 ```text
-약속했잖아.
+온다고 했잖아.
 ```
 
 ### `day2_after_sea_3`
@@ -4899,7 +4899,7 @@ _캐릭터: `sea_smile`_
 
 **한세아**
 ```text
-...약속, 지켰네.
+...진짜 왔네.
 ```
 
 ### `day2_after_sea_4`
@@ -5047,7 +5047,7 @@ _캐릭터: `sea_normal`_
 ### `day2_after_sea_18`
 
 _source: `day2_3_afterschool.js / day2_afterschool.json`_
-_캐릭터: `sea_vulnerable`_
+_캐릭터: `sea_sad`_
 
 **한세아**
 ```text
@@ -5057,7 +5057,7 @@ _캐릭터: `sea_vulnerable`_
 ### `day2_after_sea_19`
 
 _source: `day2_3_afterschool.js / day2_afterschool.json`_
-_캐릭터: `sea_vulnerable`_
+_캐릭터: `sea_sad`_
 
 **한세아**
 ```text
@@ -5067,7 +5067,7 @@ _캐릭터: `sea_vulnerable`_
 ### `day2_after_sea_20`
 
 _source: `day2_3_afterschool.js / day2_afterschool.json`_
-_캐릭터: `sea_vulnerable`_
+_캐릭터: `sea_sad`_
 
 **지문**
 ```text
@@ -5077,7 +5077,7 @@ _캐릭터: `sea_vulnerable`_
 ### `day2_after_sea_21`
 
 _source: `day2_3_afterschool.js / day2_afterschool.json`_
-_캐릭터: `sea_normal`_
+_캐릭터: `sea_sad`_
 
 **한세아**
 ```text
@@ -5087,12 +5087,26 @@ _캐릭터: `sea_normal`_
 ### `day2_after_sea_22`
 
 _source: `day2_3_afterschool.js / day2_afterschool.json`_
-_캐릭터: `sea_vulnerable`_
+_캐릭터: `sea_sad`_
 
 **지문**
 ```text
 *세아가 웃으려다 종이 모서리를 구겼다.*
 ```
+
+### `day2_after_sea_choice`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+
+**나**
+```text
+*뭐라고 할까?*
+```
+
+**선택지**
+1. "내일도 여기서 하자."
+2. "다른 애들도 부르면 빨리 끝나지 않을까?"
+3. 말없이 의자를 꺼낸다
 
 ### `day2_after_sea_23`
 
@@ -5152,6 +5166,76 @@ _캐릭터: `sea_smile`_
 **지문**
 ```text
 *그 후 우리는 말없이 작업했다. 음악 볼륨은 아까보다 한 칸 낮아져 있었다.*
+```
+
+### `day2_after_sea_invite_1`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_sad`_
+
+**나**
+```text
+다른 학생회 애들도 같이 하면 빨리 끝나지 않을까?
+```
+
+### `day2_after_sea_invite_2`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+*세아가 바로 대답하지 않았다. 빈 의자 둘 사이에 시선이 멈췄다.*
+```
+
+### `day2_after_sea_invite_3`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_stare`_
+
+**한세아**
+```text
+...오늘은 둘이서 해도 돼. 네 신청서는 따로 둘게.
+```
+
+### `day2_after_sea_invite_4`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_sad`_
+
+**나**
+```text
+*그 말투는 부탁에 가까웠다. 나는 더 묻지 않고 의자를 꺼냈다.*
+```
+
+### `day2_after_sea_silent_1`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_sad`_
+
+**나**
+```text
+*대답 대신 벽 쪽 의자를 끌어왔다. 다리 끝이 바닥을 낮게 긁었다.*
+```
+
+### `day2_after_sea_silent_2`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_sad`_
+
+**한세아**
+```text
+고마워. ...말 안 해도 알아주는 거, 편하네.
+```
+
+### `day2_after_sea_silent_3`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+*세아가 라벨지를 꺼냈다.*
 ```
 
 ### `day2_after_hallway_1`
@@ -5233,7 +5317,7 @@ _source: `day2_3_afterschool.js / day2_afterschool.json`_
 
 **남학생**
 ```text
-에이, 전학생한테 이 정도는 해줘야지. 환영의 의미로.
+에이, 첫 주잖아. 받아.
 ```
 
 ### `day2_after_hallway_10`
@@ -7715,7 +7799,7 @@ _캐릭터: `riin_smile`_
 
 **나**
 ```text
-"아니요. 머리가 좀 복잡해서요."
+아니요. 머리가 좀 복잡해서요.
 
 *리인 선생님이 나를 본다. 한참을. 책상 위 초침이 세 번 움직일 때까지 대답이 없다.*
 ```
@@ -8120,7 +8204,7 @@ _캐릭터: `sea_broken_smile`_
 
 **한세아**
 ```text
-"학교 사진..."
+학교 사진...
 
 *세아가 되뇐다. 끝음이 바닥에 닿기도 전에 사라졌다.*
 ```
@@ -8132,7 +8216,7 @@ _캐릭터: `sea_broken_smile`_
 
 **한세아**
 ```text
-"...나도 가끔 생각해. 문을 열면 다른 데로 갈 수 있었을까."
+...나도 가끔 그래. 문밖을 생각해.
 
 *세아가 웃는다. 열쇠고리는 손바닥 안쪽으로 깊게 말려 들어가 있다.*
 ```
@@ -8144,7 +8228,7 @@ _캐릭터: `sea_broken_smile`_
 
 **한세아**
 ```text
-"...아무것도 아니야. 잊어."
+...아무것도 아니야. 잊어.
 
 *세아가 돌아선다. 등이 작다.*
 ```
@@ -8376,7 +8460,7 @@ _배경: `teacher_office` / 캐릭터: `eunsu_smile`_
 
 **박은수**
 ```text
-아, 그거? 전학생들 상담 기록 정리해둔 건데. 왜, 본인 얘기 적혀 있을까 봐 궁금해?
+아, 그거? 전학생 상담 기록이야. 궁금했어?
 ```
 
 ### `day3_after_eunsu_peek_8a`
@@ -8629,7 +8713,7 @@ _캐릭터: `yuna_normal`_
 
 **나**
 ```text
-"뭐가 위험한데?"
+뭐가 위험한데?
 
 *유나가 입을 연다. 혀끝이 윗니 뒤에 닿았다가 내려갔다. 다시 입을 다문다.*
 ```
@@ -10108,7 +10192,7 @@ _캐릭터: `eunsu_cold`_
 
 **박은수**
 ```text
-이 학교에서는 혼자 돌아다니지 않는 게 좋아.
+혼자 다니지 마.
 ```
 
 ### `day4_morning_eunsu_refuse_3`
@@ -10118,7 +10202,7 @@ _캐릭터: `eunsu_cold`_
 
 **박은수**
 ```text
-...**위험하니까.**
+...**위험해.**
 ```
 
 ### `day4_morning_eunsu_refuse_4`
@@ -10383,7 +10467,7 @@ _배경: `classroom` / 캐릭터: `eunsu_gentle`_
 
 **박은수**
 ```text
-소속은 출석부에 이름이 남는다는 뜻이야. 이름이 있으면 누군가는 확인하거든.
+출석부에 이름이 있으면, 선생님들은 그 학생을 놓치지 않아.
 ```
 
 ### `day4_morning_class_5`
@@ -10393,7 +10477,7 @@ _캐릭터: `eunsu_gentle`_
 
 **박은수**
 ```text
-결석하면 전화가 가고, 길을 잃으면 데리러 오고, 위험하면 막아줘.
+결석하면 전화하고, 길을 잃으면 데리러 가고.
 ```
 
 ### `day4_morning_class_6`
@@ -10403,7 +10487,7 @@ _캐릭터: `eunsu_gentle`_
 
 **박은수**
 ```text
-대신 명단 밖으로 나가려면 절차가 필요해.
+명단 밖으로 나가는 건... 곤란하지.
 ```
 
 ### `day4_morning_class_7`
@@ -10423,7 +10507,7 @@ _캐릭터: `eunsu_serious`_
 
 **박은수**
 ```text
-절차 없이 나간 사람들은, 대개 오래 못 버텼고.
+대개 좋게 끝나지 않았어.
 ```
 
 ### `day4_morning_class_9`
@@ -10698,7 +10782,7 @@ _source: `day4_2_lunch.js / day4_lunch.json`_
 
 **나**
 ```text
-***내일. 내일 반드시.***
+***내일. 꼭.***
 ```
 
 ### `day4_lunch_nurse_1`
@@ -10775,7 +10859,7 @@ _캐릭터: `riin_cold`_
 
 **강리인**
 ```text
-...비타민 주사야. 오늘 단체검진 빠졌잖아.
+...비타민 주사. 오늘 단체검진 빠졌잖아.
 ```
 
 ### `day4_lunch_nurse_noyuna_3`
@@ -10862,7 +10946,7 @@ _캐릭터: `riin_smile`_
 
 **강리인**
 ```text
-...피곤해 보여. 요즘 잠을 잘 못 자는 거 같은데.
+...피곤해 보여. 잠도 못 잔 것 같고.
 ```
 
 ### `day4_lunch_nurse_14`
@@ -10872,7 +10956,7 @@ _캐릭터: `riin_smile`_
 
 **강리인**
 ```text
-약 하나 줄까? 잘 자게 해주는 거.
+도움 되는 약 줄까?
 ```
 
 ### `day4_lunch_nurse_15`
@@ -11084,7 +11168,7 @@ _캐릭터: `yuna_determined`_
 
 **최유나**
 ```text
-전부 다 — 너야.
+다 선배예요.
 ```
 
 ### `day4_xover_yuna_9`
@@ -11192,7 +11276,7 @@ _캐릭터: `sea_smile`_
 ### `day4_after_sea_4`
 
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
-_캐릭터: `sea_vulnerable`_
+_캐릭터: `sea_sad`_
 
 **나**
 ```text
@@ -11202,7 +11286,7 @@ _캐릭터: `sea_vulnerable`_
 ### `day4_after_sea_5`
 
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
-_캐릭터: `sea_vulnerable`_
+_캐릭터: `sea_sad`_
 
 **나**
 ```text
@@ -11338,7 +11422,7 @@ _캐릭터: `sea_sad`_
 
 **한세아**
 ```text
-이 책상에 네 이름표를 열두 번 붙였어. "내일도 올게"라는 말도 열두 번 들었고.
+이 책상에 네 이름표를 열두 번 붙였어. "내일도 올게"도 열두 번 들었고.
 ```
 
 ### `day4_after_sea_confess_4`
@@ -11564,7 +11648,7 @@ _캐릭터: `sea_cry`_
 
 **한세아**
 ```text
-...할 말이 있으면 해 봐. 어차피 아무것도 안 변하지만.
+...할 말 있으면 해. 달라지는 건 없겠지만.
 ```
 
 ### `day4_after_ft_sea_choice`
@@ -11580,7 +11664,7 @@ _캐릭터: `sea_cry`_
 **선택지**
 1. 미안. 도망치는 거 아니야. 머리가 너무 복잡해서.
 2. 12번이나, 너는 어떻게 견뎠어?
-3. 나는 너를 잊지 않을게. 약속해.
+3. 네 이름은 내가 기억할게.
 
 ### `day4_after_ft_sea_apologize`
 
@@ -11609,7 +11693,7 @@ _캐릭터: `sea_cry`_
 
 **한세아**
 ```text
-...그 말도 들어봤어. 약속한 사람도 너고, 못 지킨 사람도 너야. 매번.
+...그 말도 들어봤어. 네가 했고, 네가 못 지켰어. 매번.
 ```
 
 ### `day4_after_ft_sea_quiet`
@@ -11764,7 +11848,7 @@ _캐릭터: `eunsu_gentle`_
 
 **박은수**
 ```text
-괜찮아, {name}. 선생님이 다시 정리해줄게.
+괜찮아, {name}. 내가 다시 맞춰줄게.
 ```
 
 ### `day4_after_eunsu_14`
@@ -11903,7 +11987,7 @@ _캐릭터: `riin_cold`_
 
 **나**
 ```text
-지하실 문, M-13, 사라진 이름들요.
+지하실 문이랑 M-13. 사라진 이름들요.
 ```
 
 ### `day4_after_riin_11`
@@ -12003,7 +12087,7 @@ _캐릭터: `riin_cold`_
 
 **강리인**
 ```text
-오늘 밤은 아무것도 하지 마. 누구한테도 이 얘기 하지 마.
+오늘 밤은 움직이지 마. 이 얘기는 누구한테도 하지 말고.
 ```
 
 ### `day4_after_riin_23`
@@ -12013,7 +12097,7 @@ _캐릭터: `riin_cold`_
 
 **강리인**
 ```text
-은수한테는 절대.
+은수한테는 특히.
 ```
 
 ### `day4_after_riin_24`
@@ -12364,7 +12448,7 @@ _source: `day4_4_night.js / day4_night.json`_
 
 **나**
 ```text
-*'위치 추적 기록'. 탭을 눌렀다. 지도가 떴다. 학교 평면도. 그 위에 빨간 점이 움직인다. — 4일간의 내 동선이 빠짐없이 기록되어 있다.*
+*'위치 추적 기록'. 탭을 눌렀다. 학교 평면도 위에서 빨간 점이 움직인다. — 지난 나흘의 동선이다.*
 ```
 
 ### `day4_night_save_glitch_15`
@@ -12373,7 +12457,7 @@ _source: `day4_4_night.js / day4_night.json`_
 
 **나**
 ```text
-*Day 1부터 Day 4까지 빨간 선이 이어진다. 교문에서 들어와 어디서 멈췄는지, 어느 층에서 오래 머물렀는지까지 숫자로 찍혀 있다. 내가 지나간 나흘이 지도 위에 다시 그려진다.*
+*교문, 계단, 오래 멈춘 층까지 숫자로 찍혀 있다. 내가 지나간 시간이 지도 위에서 다시 움직인다.*
 ```
 
 ### `day4_night_save_glitch_16`
@@ -12391,7 +12475,7 @@ _source: `day4_4_night.js / day4_night.json`_
 
 **나**
 ```text
-*화면 하단에 권한 목록이 뜬다. 허용한 항목은 ON, 막아둔 항목은 회색 잠금. 적어도 위치 추적만은 살아 있다.*
+*화면 하단의 권한 목록. 허용은 ON, 막은 항목은 회색 잠금. 위치만은 켜져 있다.*
 ```
 
 ### `day4_night_save_glitch_18`
@@ -12919,7 +13003,7 @@ _source: `day4_4_night.js / day4_night.json`_
 
 **나**
 ```text
-*하나. 같은 얼굴, 열세 번째 이름. 앞의 열두 칸은 모두 '종료'.*
+*하나. 같은 얼굴, 열세 번째 이름. 앞의 열두 칸은 '종료'.*
 ```
 
 ### `day4_night_plan_5`
@@ -12928,7 +13012,7 @@ _source: `day4_4_night.js / day4_night.json`_
 
 **나**
 ```text
-*둘. 은수는 문을 열고, 리인은 컵을 내밀고, 세아는 내가 어디 보는지 안다.*
+*둘. 은수는 문을 열고, 리인은 컵을 내밀고, 세아는 내 시선까지 안다.*
 ```
 
 ### `day4_night_plan_6`
@@ -12946,7 +13030,7 @@ _source: `day4_4_night.js / day4_night.json`_
 
 **나**
 ```text
-*넷. 기계음, 빈 자리, 문 너머의 숨. 전부 구관 아래로 이어진다.*
+*넷. 기계음, 빈 자리, 문 너머의 숨. 모두 구관 아래로 이어진다.*
 ```
 
 ### `day4_night_plan_8`
@@ -13086,7 +13170,7 @@ _source: `day4_4_night.js / day4_night.json`_
 
 **나**
 ```text
-***'12번이나 실패했다. 다음 줄은 없을지도 모른다. 내일 밤 전에 움직인다.'***
+***'12번 실패했다. 다음 줄은 없어야 한다. 내일 밤 전에 움직인다.'***
 ```
 
 ### `day4_night_plan_final_4`
@@ -13278,9 +13362,9 @@ _배경: `dawn_road` / BGM: `silence_tension.mp3`_
 
 **나**
 ```text
-*걸었다. 학교까지 20분. 새벽의 도로는 텅 비어있고, 내 발소리만 울린다.*
+*학교까지 20분. 새벽 도로에는 내 발소리만 울린다.*
 
-*학교로 간다. 어제까지 모은 단서들이 전부 구관 아래쪽을 가리킨다. 지하부터 확인해야 한다.*
+*단서는 모두 구관 아래쪽에서 만난다. 지하부터 확인해야 한다.*
 ```
 
 ### `day5_morning_school_1`
@@ -13521,7 +13605,7 @@ _캐릭터: `yuna_weak`_
 
 **최유나**
 ```text
-8번째 선배가... 저한테 사진을 찍어달라고 했어요. '내가 누구였는지 기록해줘'라고.
+8번째 선배가... 사진을 찍어달라고 했어요. '내가 누구였는지 남겨줘'라고.
 ```
 
 ### `day5_morning_rescue_10`
@@ -13541,7 +13625,7 @@ _캐릭터: `yuna_weak`_
 
 **최유나**
 ```text
-그날은 제 카메라 스트랩을 놓지 않았어요. 눈 흰자위가 붉게 번져 있었고요.
+그날은 카메라 스트랩을 놓지 않았어요. 눈은 붉게 번져 있었고요.
 ```
 
 ### `day5_morning_rescue_12`
@@ -13561,7 +13645,7 @@ _캐릭터: `yuna_weak`_
 
 **최유나**
 ```text
-...몇 달 뒤에 그 사람이 — 다른 이름으로 전학을 왔어요. 같은 얼굴인데 저를 못 알아봤어요.
+...몇 달 뒤, 같은 얼굴이 다른 이름표를 달고 왔어요. 저를 못 알아봤고요.
 ```
 
 ### `day5_morning_rescue_14`
@@ -13601,7 +13685,7 @@ _캐릭터: `yuna_weak`_
 
 **최유나**
 ```text
-...이름은 매번 달랐어요. 그런데 부탁은 같았어요. '기록해줘'. 손은 늘 카메라 쪽으로 먼저 갔고요.
+...이름은 바뀌는데 부탁은 같았어요. '기록해줘.' 손은 늘 카메라로 갔고요.
 ```
 
 ### `day5_morning_rescue_18`
@@ -13802,7 +13886,7 @@ _캐릭터: `yuna_weak`_
 
 **나**
 ```text
-***'시행 #8 이후 관찰: 피험자가 카메라상 공백 지점을 향해 대화. 동일 명칭 반복 발화: "이설화". 비인가 동반자 반응은 진정 효과 있음. 약물 용량 재검토.'***
+***'시행 #8 이후: 피험자, 공백 지점과 대화. "이설화" 반복. 동반자 반응은 진정 효과. 용량 재검토.'***
 ```
 
 ### `day5_morning_true_15`
@@ -13821,7 +13905,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-***'시행 #9~#12: 동일 현상 지속. 카메라/출입/좌석 기록상 해당 학생 없음. 피험자는 매 주기 동일 좌석을 비워둠.'***
+***'시행 #9~#12: 동일 현상. 카메라/출입/좌석 기록에 해당 학생 없음. 피험자는 같은 좌석을 비워둠.'***
 ```
 
 ### `day5_morning_true_17`
@@ -13830,7 +13914,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-***'부기: 공백 좌석 제거 시 피험자 급성 불안. 현 단계에서는 방치가 합리적. 안정에 기여하는 한 개입 불필요.'***
+***'부기: 공백 좌석 제거 시 급성 불안. 현 단계 방치.'***
 ```
 
 ### `day5_morning_true_18`
@@ -13890,7 +13974,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-***'시행 #13 Day 2 관찰: 최유나(캠퍼스 기록 보조)와 비인가 접촉 확인. 사본 유출 위험. 즉시 격리 조치 권고.'***
+***'시행 #13 Day 2: 최유나와 비인가 접촉. 사본 유출 위험. 격리 권고.'***
 ```
 
 ### `day5_morning_true_24`
@@ -13899,7 +13983,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-***'시행 #13 Day 3 추가: 최유나 격리 완료. 별도 사본 보관 확인. 이사회 보고 보류. 보안 실패 판정 전 자체 처리.'***
+***'시행 #13 Day 3: 최유나 격리 완료. 별도 사본 확인. 보고 보류.'***
 ```
 
 ### `day5_morning_true_25`
@@ -13976,7 +14060,7 @@ _캐릭터: `yuna_weak`_
 
 **최유나**
 ```text
-...선배. 이 카메라 안에 전부 있어요. 3년 치... 선배가 누구였는지.
+...선배. 이 카메라 안에 있어요. 3년 치... 선배가 누구였는지.
 ```
 
 ### `day5_morning_true_33`
@@ -14005,7 +14089,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-*바닥에 더 흩어진 서류들을 닥치는 대로 찍었다. 에디나 재단 로고. 프로젝트 네버그라드 최종 보고서. 표지 아래에는 수익률 표가 붙어 있었다.*
+*바닥의 서류를 닥치는 대로 찍었다. 에디나 재단 로고. 네버그라드 최종 보고서. 표지 밑에는 수익률 표.*
 ```
 
 ### `day5_morning_true_36`
@@ -14014,7 +14098,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-*정체성 패키지 변경 프로토콜. 부모, 고향, 이전 학교, 친구 이름이 항목별로 나뉘어 있다. 각 칸마다 적용 날짜와 검수 표시가 붙어 있다.*
+*정체성 패키지 변경 프로토콜. 부모, 고향, 이전 학교, 친구 이름. 각 칸마다 적용 날짜와 검수 표시.*
 ```
 
 ### `day5_morning_true_37`
@@ -14023,7 +14107,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-*이사회 승인 문서. 상용화 제안. 예상 수익률 옆에 `S-13 안정화 데이터 확보 후`라는 주석이 붙어 있다.*
+*이사회 승인 문서. 상용화 제안. 예상 수익률 옆 주석: `S-13 안정화 데이터 확보 후`.*
 ```
 
 ### `day5_morning_true_38`
@@ -14032,7 +14116,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-*마지막 장. '시행 #13 특이사항: 공백 좌석 반응 지속. 이설화 명칭 반복. 잔류 기억 임계치 초과. 조기 처리 검토.'*
+*마지막 장. '시행 #13: 공백 좌석 반응 지속. 이설화 명칭 반복. 잔류 기억 임계치 초과. 조기 처리 검토.'*
 ```
 
 ### `day5_morning_true_39`
@@ -14125,7 +14209,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **박은수**
 ```text
-...{name}, 그런 말은 복도에서 할 얘기가 아니야. 선생님이랑 차분히 앉자. 카메라는 내려놓고.
+...{name}, 그런 말은 복도에서 할 얘기가 아니야. 카메라 내려놓고, 선생님이랑 가자.
 ```
 
 ### `day5_morning_true_ft_lost`
@@ -14143,7 +14227,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **박은수**
 ```text
-...그래. 보건실은 본관 2층인데, {name}. 우리 같이 가자. 부축해줄게.
+...그래. 보건실은 본관 2층이야. 같이 가자. 부축해줄게.
 ```
 
 ### `day5_morning_true_ft_stall`
@@ -14735,7 +14819,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **선택지**
 1. "그건 보호가 아니라 관찰이에요."
-2. "왜 이런 짓을 한 거예요?"
+2. "언제부터였어요?"
 3. 침묵한다
 
 ### `day5_morning_grad_reply_1`
@@ -14755,7 +14839,7 @@ _캐릭터: `eunsu_dark`_
 
 **박은수**
 ```text
-그래. 첫 장엔 관찰이라고 적혀 있어. 나도 한동안 그 단어 뒤에 숨었고.
+그래. 첫 장엔 그렇게 적혀 있어. 나도 한동안 그 뒤에 숨었고.
 ```
 
 ### `day5_morning_grad_reply_2`
@@ -14830,7 +14914,7 @@ _캐릭터: `eunsu_dark`_
 ### `day5_morning_proposal_3`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `eunsu_dark`_
+_캐릭터: `eunsu_shaking`_
 
 **나**
 ```text
@@ -14840,7 +14924,7 @@ _캐릭터: `eunsu_dark`_
 ### `day5_morning_proposal_4`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `eunsu_dark`_
+_캐릭터: `eunsu_crying`_
 
 **박은수**
 ```text
@@ -14850,7 +14934,7 @@ _캐릭터: `eunsu_dark`_
 ### `day5_morning_proposal_5`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `eunsu_dark`_
+_캐릭터: `eunsu_crying`_
 
 **나**
 ```text
@@ -14860,7 +14944,7 @@ _캐릭터: `eunsu_dark`_
 ### `day5_morning_proposal_6`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `eunsu_dark`_
+_캐릭터: `eunsu_crying`_
 
 **박은수**
 ```text
@@ -14870,7 +14954,7 @@ _캐릭터: `eunsu_dark`_
 ### `day5_morning_proposal_7`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `eunsu_dark`_
+_캐릭터: `eunsu_crying`_
 
 **나**
 ```text
@@ -14880,7 +14964,7 @@ _캐릭터: `eunsu_dark`_
 ### `day5_morning_proposal_8`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `eunsu_dark`_
+_캐릭터: `eunsu_crying`_
 
 **나**
 ```text
@@ -14890,17 +14974,17 @@ _캐릭터: `eunsu_dark`_
 ### `day5_morning_proposal_9`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `eunsu_dark`_
+_캐릭터: `eunsu_crying`_
 
 **박은수**
 ```text
-그래도... 네가 여기 있으면 수치가 안정돼. 아니, 내가 안정돼.
+그래도... 네가 여기 있으면 수치가 안정돼. 아니, 내가.
 ```
 
 ### `day5_morning_proposal_10`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `eunsu_dark`_
+_캐릭터: `eunsu_crying`_
 
 **나**
 ```text
@@ -14924,7 +15008,7 @@ _캐릭터: `eunsu_dark`_
 
 **박은수**
 ```text
-선택해.
+골라.
 ```
 
 ### `day5_morning_proposal_13`
@@ -14944,7 +15028,7 @@ _캐릭터: `eunsu_dark`_
 
 **박은수**
 ```text
-둘. 지워. 통증도, 도망치려는 몸도 가라앉아. 다음 월요일에 다시 시작하면 돼.
+둘. 지워. 통증도, 도망치려는 몸도 잠잠해져. 다음 월요일에 다시 시작하면 돼.
 ```
 
 ### `day5_morning_proposal_15`
@@ -15090,7 +15174,7 @@ _캐릭터: `eunsu_pa`_
 
 **박은수**
 ```text
-...문은 전부 잠겼어. 돌아와.
+...문은 다 잠겼어. 돌아와.
 ```
 
 ### `day5_lunch_chase_7`
@@ -15249,7 +15333,7 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 **한세아**
 ```text
-...1일차에 네가 나한테 '안녕하세요' 했을 때. 매번 그 인사가 제일 오래 남았어.
+첫날 네가 '안녕하세요' 했던 거. 매번 그게 제일 오래 남았어.
 ```
 
 ### `day5_lunch_left_12`
@@ -15357,7 +15441,7 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 **한세아**
 ```text
-매번 네가 지나간 뒤에, 내가 소매로 문질러서 지웠어. 그래도 자국이 남더라.
+네가 지나간 뒤엔 내가 소매로 문질렀어. 지워도 자국이 남더라.
 ```
 
 ### `day5_lunch_left_24`
@@ -15794,7 +15878,7 @@ _캐릭터: `riin_pain`_
 
 **강리인**
 ```text
-기록지에는 정상 용량. 병에는 수액 코드. 채혈표에는 내가 맞춘 숫자.
+기록지엔 정상 용량. 병에는 수액 코드. 채혈표 숫자는 내가 맞췄어.
 ```
 
 ### `day5_lunch_right_24`
@@ -15804,7 +15888,7 @@ _캐릭터: `riin_pain`_
 
 **강리인**
 ```text
-S-13 기록은 활성 칸이 거의 비어 있어. 공란은 검토 대상에서 빠졌고.
+S-13 기록은 활성 칸이 거의 비어 있어. 공란은 검토에서 빠져.
 ```
 
 ### `day5_lunch_right_25`
@@ -15823,7 +15907,7 @@ _캐릭터: `riin_pain`_
 
 **강리인**
 ```text
-7번째. 이설화가 끌려갈 때, 끝까지 한 말이 있었어.
+7번째 때. 이설화가 끌려가면서 끝까지 한 말이 있었어.
 ```
 
 ### `day5_lunch_right_27`
@@ -15853,7 +15937,7 @@ _캐릭터: `riin_pain`_
 
 **강리인**
 ```text
-그 뒤로 기록표를 둘로 나눴어. 제출용과 실제 투약용.
+그 뒤로 기록표를 둘로 나눴어. 제출용, 실제용.
 ```
 
 ### `day5_lunch_right_30`
@@ -15945,6 +16029,7 @@ _캐릭터: `riin_neutral`_
 ### `day5_lunch_right_39`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
+_캐릭터: `riin_pain`_
 
 **나**
 ```text
@@ -15954,6 +16039,7 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 ### `day5_lunch_right_choice`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
+_캐릭터: `riin_pain`_
 
 **나**
 ```text
@@ -15977,6 +16063,7 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 ### `day5_lunch_right_c2_1`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
+_캐릭터: `riin_pain`_
 
 **나**
 ```text
@@ -15995,6 +16082,7 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 ### `day5_lunch_right_c3_2`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
+_캐릭터: `riin_pain`_
 
 **나**
 ```text
@@ -16659,7 +16747,7 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 **박은수**
 ```text
-식단표, 자리, 지나가는 복도. 네가 싫어하던 칸을 하나씩 지웠어. 보고서에는 조용해졌다고 썼고.
+식단표, 자리, 복도. 네가 싫어하던 칸을 하나씩 지웠어. 보고서에는 조용해졌다고 썼고.
 ```
 
 ### `day5_lunch_eunsu_15`
@@ -16724,7 +16812,7 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 **박은수**
 ```text
-이거 한 대면 절차는 끝나. 눈 감고 있으면 돼.
+이거 한 대면 끝나. 눈만 감고 있으면 돼.
 ```
 
 ### `day5_lunch_eunsu_22`
@@ -16733,7 +16821,7 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 **박은수**
 ```text
-다음 출석부에는 새 이름으로 적을게.
+다음 출석부엔 새 이름으로 적을게.
 ```
 
 ### `day5_lunch_eunsu_23`
@@ -17298,7 +17386,7 @@ _캐릭터: `eunsu_gentle`_
 
 **박은수**
 ```text
-싫어하던 소리부터 뺐어. 반찬도, 자리도, 대화 순서도 바꿨어. 기록표 숫자는 좋아졌고.
+싫어하던 소리부터 뺐어. 반찬도, 자리도, 대화 순서도 바꿨어. 숫자는 좋아졌고.
 ```
 
 ### `day5_after_confront_13`
@@ -17342,17 +17430,17 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 ### `day5_after_confront_17`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_캐릭터: `eunsu_gentle`_
+_캐릭터: `eunsu_obsessed`_
 
 **박은수**
 ```text
-마지막이야, {name}. 이거 한 대면 오늘 본 문서도, 네 떨림도, 나를 보는 눈빛도 표 안으로 돌아가.
+마지막이야, {name}. 이거 한 대면 오늘 본 문서도, 떨림도, 네 눈빛도 표 안으로 돌아가.
 ```
 
 ### `day5_after_confront_18`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_캐릭터: `eunsu_gentle`_
+_캐릭터: `eunsu_obsessed`_
 
 **박은수**
 ```text
@@ -17550,7 +17638,7 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
 **나**
 ```text
-...저 지하실의 빈 이름 칸들이 전부 나한테 돌아오는 거라면...
+...저 빈 이름 칸들이 전부 제 몫이라면...
 ```
 
 ### `day5_after_forget_4`
@@ -17559,7 +17647,7 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
 **나**
 ```text
-못 해요. 저 이름들을 전부 들고 나갈 자신이 없어요.
+못 해요. 그 이름들을 들고 나갈 자신이 없어요.
 ```
 
 ### `day5_after_forget_5`
@@ -17574,7 +17662,7 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 ### `day5_after_forget_6`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_캐릭터: `eunsu_warm`_
+_캐릭터: `eunsu_shaking`_
 
 **나**
 ```text
@@ -17584,7 +17672,7 @@ _캐릭터: `eunsu_warm`_
 ### `day5_after_forget_7`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_캐릭터: `eunsu_warm`_
+_캐릭터: `eunsu_crying`_
 
 **박은수**
 ```text
@@ -17682,7 +17770,7 @@ _캐릭터: `eunsu_warm`_
 
 **박은수**
 ```text
-그 뒤의 서명은 전부 내 글씨야, {name}.
+그 뒤의 서명은 다 내 글씨야, {name}.
 ```
 
 ### `day5_after_resist_6`
@@ -17747,11 +17835,11 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 ### `day5_after_resist_12`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_캐릭터: `eunsu_warm`_
+_캐릭터: `eunsu_shaking`_
 
 **박은수**
 ```text
-...밖에 나가면 서류가 전부 내 이름을 가리킬 거야.
+...밖에 나가면 서류마다 내 이름이 있을 거야.
 ```
 
 ### `day5_after_resist_13`
@@ -17809,7 +17897,7 @@ _캐릭터: `eunsu_crying`_
 
 **박은수**
 ```text
-...그날 밤, 내가 지웠어. 다음 날 아침에 걔가 '선생님 누구세요?' 하고 물었고.
+...그날 밤, 내가 지웠어. 다음 아침에 걔가 '선생님 누구세요?' 했고.
 ```
 
 ### `day5_after_resist_13f`
@@ -18010,9 +18098,9 @@ _배경: `emergency_exit`_
 ### `day5_ending_forget_forced_2`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_normal`_
+_캐릭터: `riin_pain`_
 
-**박은수**
+**강리인**
 ```text
 ...미안해. 이번에도 늦었어.
 ```
@@ -18020,6 +18108,7 @@ _캐릭터: `eunsu_normal`_
 ### `day5_ending_forget_forced_3`
 
 _source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `riin_pain`_
 
 **지문**
 ```text
@@ -18311,7 +18400,7 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **지문**
 ```text
-*민수의 프로필 사진이 회색 기본 이미지로 바뀐다. 전 학교 교실의 벽은 하얗게 비고, 부모님의 이사 이유는 문장 중간에서 끊긴다. 그 빈칸 사이로 다른 장면들이 들어왔다.*
+*민수의 프로필 사진이 회색으로 비었다. 전 학교 교실도, 부모님의 이사 이유도 문장 중간에서 끊긴다. 빈칸 사이로 다른 장면들이 들어왔다.*
 ```
 
 ### `day5_ending_true_22`
@@ -18561,7 +18650,7 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **미상**
 ```text
-네. ...확인했습니다. 해당 거점은 폐쇄 처리하겠습니다. 자산 회수는 완료됐고, 인력은 재배치합니다.
+네. 확인했습니다. 거점은 폐쇄합니다. 자산 회수 완료, 인력은 재배치합니다.
 ```
 
 ### `day5_postcredit_4`
@@ -18570,7 +18659,7 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **미상**
 ```text
-13번 건은 현장 책임자 선에서 접습니다. 재단 이름은 어디에도 남기지 마세요.
+13번 건은 현장 책임자로 끝냅니다. 재단 이름은 남기지 마세요.
 ```
 
 ### `day5_postcredit_5`
@@ -18664,16 +18753,12 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **지문**
 ```text
-기록 대상: 피험자 #13 ({name})
+기록 대상: #13 ({name})
 진행 시간: {play_time}
-응답 기록 요약:
 
-· 세아 접촉 횟수: {route_data}
-· 유나 접촉 여부: {met_yuna}
-· 리인 방문 횟수: {riin_visits}
-· 설화 대화 시도: {seolhwa_attempts}
-· 증거 확보 여부: {evidence_data}
-· 최종 응답까지 소요 시간: {timer_data}
+접촉: 세아 {route_data} / 유나 {met_yuna} / 리인 {riin_visits} / 설화 {seolhwa_attempts}
+증거: {evidence_data}
+최종 응답: {timer_data}
 ```
 
 ### `day5_observer_7`
@@ -18693,9 +18778,8 @@ _source: `day5_4_night.js / day5_night.json`_
 ```text
 비고:
 
-#13의 5일 기록 열람 완료.
-대화, 유대, 이탈 시도, 최종 응답까지 모두 보존됨.
-경고 후에도 로그는 계속 진행됨.
+#13 기록 열람 완료.
+경고 후에도 로그 지속.
 
 대조:
 박은수 — 13회 관찰.
@@ -18712,10 +18796,10 @@ _source: `day5_4_night.js / day5_night.json`_
 ```text
 교차 참조:
 
-CUPID_ENV_PREVIEW 로그 감지.
+CUPID_ENV_PREVIEW 감지.
 정서 각인: {cupid_heroine}
 순응률: {cupid_compliance}
-M-13 투여 전 지표와 #13 기록 일부 일치.
+M-13 안정화 지표와 일부 일치.
 
 비고:
 관찰자 데이터는 아직 #13 파일에 묶여 있음.
@@ -18939,7 +19023,7 @@ _캐릭터: `eunsu_normal`_
 
 **박은수**
 ```text
-그 뒤의 서명은 전부 내 글씨야, {name}.
+그 뒤의 서명은 다 내 글씨야, {name}.
 ```
 
 ### `day5_ending_resist_6`
@@ -19035,11 +19119,11 @@ _source: `day5_4_night.js / day5_night.json`_
 ### `day5_ending_resist_15`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_normal`_
+_캐릭터: `eunsu_shaking`_
 
 **박은수**
 ```text
-...밖에 나가면 서류가 전부 내 이름을 가리킬 거야.
+...밖에 나가면 서류마다 내 이름이 있을 거야.
 ```
 
 ### `day5_ending_resist_16`
@@ -19054,7 +19138,7 @@ _source: `day5_4_night.js / day5_night.json`_
 ### `day5_ending_resist_17`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_gentle`_
+_캐릭터: `eunsu_shaking`_
 
 **박은수**
 ```text
@@ -19074,7 +19158,7 @@ _캐릭터: `eunsu_crying`_
 ### `day5_ending_resist_18a`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_normal`_
+_캐릭터: `eunsu_shaking`_
 
 **박은수**
 ```text
@@ -19084,7 +19168,7 @@ _캐릭터: `eunsu_normal`_
 ### `day5_ending_resist_18b`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_normal`_
+_캐릭터: `eunsu_shaking`_
 
 **지문**
 ```text
@@ -19094,17 +19178,17 @@ _캐릭터: `eunsu_normal`_
 ### `day5_ending_resist_18c`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_normal`_
+_캐릭터: `eunsu_crying`_
 
 **박은수**
 ```text
-...그날 밤, 내가 지웠어. 다음 날 아침에 걔가 '선생님 누구세요?' 하고 물었고.
+...그날 밤, 내가 지웠어. 다음 아침에 걔가 '선생님 누구세요?' 했고.
 ```
 
 ### `day5_ending_resist_18d`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_normal`_
+_캐릭터: `eunsu_crying`_
 
 **박은수**
 ```text
@@ -19123,7 +19207,7 @@ _source: `day5_4_night.js / day5_night.json`_
 ### `day5_ending_resist_20`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_gentle`_
+_캐릭터: `eunsu_crying`_
 
 **박은수**
 ```text
@@ -19385,7 +19469,7 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **나**
 ```text
-...저 지하실의 빈 이름 칸들이 전부 나한테 돌아오는 거라면...
+...저 빈 이름 칸들이 전부 제 몫이라면...
 ```
 
 ### `day5_ending_forget_5`
@@ -19394,7 +19478,7 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **나**
 ```text
-못 해요. 저 이름들을 전부 들고 나갈 자신이 없어요.
+못 해요. 그 이름들을 들고 나갈 자신이 없어요.
 ```
 
 ### `day5_ending_forget_6`
@@ -19409,7 +19493,7 @@ _source: `day5_4_night.js / day5_night.json`_
 ### `day5_ending_forget_7`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_normal`_
+_캐릭터: `eunsu_shaking`_
 
 **지문**
 ```text
@@ -19419,7 +19503,7 @@ _캐릭터: `eunsu_normal`_
 ### `day5_ending_forget_8`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_normal`_
+_캐릭터: `eunsu_crying`_
 
 **박은수**
 ```text
@@ -20106,7 +20190,7 @@ _source: `day5_night.json`_
 ```
 
 <!--
-sync-stats: {"sceneFiles":20,"scenarioScenes":2069,"i18nEntries":2081,"displayedText":2034,"choices":137,"i18nOnly":12}
+sync-stats: {"sceneFiles":20,"scenarioScenes":2077,"i18nEntries":2089,"displayedText":2042,"choices":140,"i18nOnly":12}
 -->
 
 <!-- END NEVERGRAD KO DISPLAY SYNC -->

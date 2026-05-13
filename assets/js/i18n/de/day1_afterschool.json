@@ -3,13 +3,13 @@
         "text": ""
     },
     "day1_after_choice": {
-        "text": "*Nach der Schule. Wo soll ich hin?*",
+        "text": "*Nach der Schule. Wohin soll ich gehen?*",
         "choices": [
-            "Sea hat gesagt, ich soll in den Schülerratsraum kommen",
-            "Vielleicht gehe ich noch einmal in die Bibliothek zu Yuna",
-            "Ich bin neugierig auf Frau Riin im Krankenzimmer",
-            "Ich sollte im Lehrerzimmer vorbeischauen und Frau Eunsu begrüßen",
-            "Für heute nach Hause gehen"
+            "Sea sagte mir, ich solle in den Raum der Studentenvertretung kommen",
+            "Gehen Sie in die Bibliothek, um Yuna zu sehen.",
+            "Gehen Sie zum Büro der Krankenschwester",
+            "Kommen Sie vorbei, um Frau Eunsu zu begrüßen.",
+            "Nach Hause gehen"
         ]
     },
     "day1_after_sea_1": {
@@ -34,13 +34,13 @@
         "text": "*Sea atmet leise aus und lächelt.*"
     },
     "day1_after_sea_8": {
-        "text": "Der erste Tag ist immer anstrengend. Man prüft ständig, wo man sitzen soll und wen man grüßen muss."
+        "text": "Der erste Tag ist immer so. Sie prüfen ständig, wo Sie sitzen und wem Sie Hallo sagen sollen."
     },
     "day1_after_sea_9": {
         "text": "*Sea schaut aus dem Fenster. Das Abendlicht fällt herein.*"
     },
     "day1_after_sea_10": {
-        "text": "...Ich bin froh, dass du gekommen bist, {name}. Um diese Zeit klingt das Summen der Leuchtstoffröhren etwas laut."
+        "text": "...Ich bin froh, dass Sie gekommen sind. Zu dieser Zeit klingen die Leuchtstofflampen lauter."
     },
     "day1_after_sea_11": {
         "text": "Was ist mit den anderen Schülerratsmitgliedern?"
@@ -97,7 +97,7 @@
         "text": "*Yuna hält mir ein Polaroidfoto hin. Die Fensteraussicht der Bibliothek von vorhin.*"
     },
     "day1_after_yuna_13": {
-        "text": "Das ist... der Platz, auf dem Sie gesessen haben, Sunbae. Das Licht war schön. Hier, behalten Sie es als Andenken."
+        "text": "Das ist... der Platz, auf dem Sie gesessen haben, sunbae. The light is nice there. Nimm es."
     },
     "day1_after_yuna_14": {
         "text": "*Ich nahm das Foto entgegen. Der Moment, in dem das Sonnenlicht auf die Bücher fiel. Unwillkürlich musste ich lächeln.*"
@@ -106,7 +106,7 @@
         "text": "*Ich trank Kräutertee mit Frau Riin. Am Rand des Pappbechers stieg schwacher Dampf auf.*"
     },
     "day1_after_riin_2": {
-        "text": "Wenn man die Schule wechselt, kann man in der ersten Nacht schlecht schlafen. Der Körper merkt noch vor einem selbst, dass der Ort fremd ist."
+        "text": "Am ersten Tag nach dem Transfer kann es zu Schlafstörungen kommen. Ihr Körper bemerkt zuerst einen unbekannten Ort."
     },
     "day1_after_riin_3": {
         "text": "Bis jetzt geht es mir gut."
@@ -133,19 +133,19 @@
         "text": "*Frau Riin lässt ein ruhiges Klavierstück aus dem Lautsprecher spielen. Es ist so leise, dass ich zuerst nur den Takt spüre, nicht die Melodie.*"
     },
     "day1_after_riin_11": {
-        "text": "Wenn du nächstes Mal um diese Zeit kommst, mach ich dir Tee. Ich lass das Krankenzimmer offen."
+        "text": "Kommen Sie um diese Zeit wieder vorbei. I'll make tea."
     },
     "day1_after_riin_12": {
         "text": "*Frau Riin lächelt und öffnet mir die Tür. Auf dem Flur fummel ich an dem Teebeutel-Tütchen herum. Es ist noch warm.*"
     },
     "day1_after_eunsu_1": {
-        "text": "{name}? Du kommst nach der Schule vorbei? Das ist lieb."
+        "text": "{name}? Du bist nach der Schule zu mir gekommen? Stimmt etwas nicht?"
     },
     "day1_after_eunsu_2": {
         "text": "*Während sie Kaffee aufbrüht, fragt sie mich ein paar Dinge. Meine frühere Schule, mein Schulweg, was ich morgens gegessen habe.*"
     },
     "day1_after_eunsu_3": {
-        "text": "...{name}, ist an deiner alten Schule etwas vorgefallen? Der Grund für deinen Wechsel ist ein bisschen ungewöhnlich..."
+        "text": "...Die Unterlagen Ihrer vorherigen Schule sind zu spät eingegangen. Ist etwas passiert?"
     },
     "day1_after_eunsu_4": {
         "text": "Ungewöhnlich? Ich bin nur wegen des Umzugs meiner Eltern hergekommen."
@@ -163,7 +163,7 @@
         "text": "Ja, Sea hat sich um alles gekümmert."
     },
     "day1_after_eunsu_9": {
-        "text": "Na, Sea hat's dir leicht gemacht. ...{name}, wenn irgendetwas schwierig ist, komm einfach zu mir. Ich bin deine Klassenlehrerin."
+        "text": "Sea hat sich um dich gekümmert. Wenn etwas schwierig ist, kommen Sie zu mir. Ich bin dein Klassenlehrer."
     },
     "day1_after_eunsu_10": {
         "text": "*Frau Eunsu lächelt und klopft mir auf den Rücken. An der eingedrückten Stelle im Uniformstoff bleibt für einen Moment nur die Wärme ihrer Handfläche zurück.*"

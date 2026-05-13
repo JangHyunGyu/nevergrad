@@ -84,10 +84,10 @@
         "text": "*Sea marche devant. Chaque fois que mon pas ralentit, elle s'accorde à moi sans même se retourner.*"
     },
     "day1_sea_meet_12": {
-        "text": "C'est le laboratoire de sciences, et la salle de musique est tout au bout. Le deuxième étage est pour les troisièmes années, donc tu n'auras pas besoin d'y monter."
+        "text": "C'est le laboratoire scientifique. La salle de musique est là-bas. Le deuxième étage est principalement destiné aux troisièmes années, vous n'en aurez donc pas beaucoup besoin."
     },
     "day1_sea_meet_13": {
-        "text": "Oh, le magasin de l'école est au bout du premier étage. La file d'attente devient longue à l'heure du déjeuner, c'est bon à savoir à l'avance."
+        "text": "Le magasin de l'école se trouve au bout du premier étage. La file d'attente est longue au déjeuner."
     },
     "day1_sea_meet_14": {
         "text": "Waouh, on dirait que tu connais le trajet par coeur. C'est parce que tu es déléguée ?"
@@ -142,7 +142,7 @@
         "text": "*En chemin vers la salle de classe, Sea sort quelque chose de son sac.*"
     },
     "day1_choco_2": {
-        "text": "Ah oui, ça. Tu veux un lait chocolaté ? C'était deux pour le prix d'un au magasin et je ne peux pas boire les deux."
+        "text": "Oh, c'est vrai. Envie d'un lait chocolaté ? C'était acheter un, obtenir un gratuit, donc il m'en reste un."
     },
     "day1_choco_3": {
         "text": "*Elle me tend un petit carton de lait chocolaté.*"
@@ -159,9 +159,9 @@
     "day1_choco_choice": {
         "text": "",
         "choices": [
-            "Merci, je vais le boire.",
-            "Comment tu as su que j’aimais ça ?",
-            "En fait, je préfère le lait à la fraise."
+            "Merci. Je vais le boire.",
+            "Comment saviez-vous que j'aimais ça ?",
+            "En fait, le lait à la fraise, c'est plus mon truc."
         ]
     },
     "day1_choco_accept_1": {
@@ -186,7 +186,7 @@
         "text": "...Je te l’ai dit, c’était un acheté, un offert. Il y avait fraise aussi, mais chocolat me semblait plus sûr."
     },
     "day1_choco_question_4": {
-        "text": "Non, tu as raison. J'aime ça. Merci."
+        "text": "Non, ça va. Merci."
     },
     "day1_choco_question_5": {
         "text": "Tant mieux."
@@ -243,7 +243,7 @@
         "text": "Vas-y, présente-toi."
     },
     "day1_eunsu_9": {
-        "text": "Bonjour. Je suis {name}. Je viens du lycée XX. Ravi de vous rencontrer tous."
+        "text": "Bonjour. Je suis {name}. J'ai été transféré ici. J'ai hâte d'être dans votre classe."
     },
     "day1_eunsu_10": {
         "text": "Des hobbies ou des choses que tu aimes ?",
@@ -254,7 +254,7 @@
         ]
     },
     "day1_eunsu_11": {
-        "text": "Euh... j'aime les jeux vidéo et écouter de la musique."
+        "text": "Euh... J'aime écouter de la musique."
     },
     "day1_eunsu_12": {
         "text": "*Les élèves rient doucement. Quelqu'un, au fond, murmure : « Moi aussi. »*"
@@ -324,7 +324,7 @@
         "text": "Je vois. Le genre silencieux, hein."
     },
     "day1_seolhwa_greet_13": {
-        "text": "Elle répond parfois si tu lui parles, mais elle n'a jamais commencé une conversation. Je ne connais même pas son nom."
+        "text": "Elle répond parfois si vous lui parlez. Je ne l'ai jamais vue parler en premier. Je ne connais pas non plus son nom."
     },
     "day1_seolhwa_greet_14": {
         "text": "*Sur la fenêtre du fond, son profil se superpose un instant à mon visage reflété.*"
@@ -354,10 +354,10 @@
         "text": "De la ville de XX."
     },
     "day1_break_4": {
-        "text": "À quels jeux tu joues ?"
+        "text": "Qu’as-tu fait ces derniers temps ?"
     },
     "day1_break_5": {
-        "text": "*La conversation continue naturellement. Jeux préférés, YouTubers. Quelqu'un se trompe deux fois sur mon nom, et Sea le corrige aussitôt à côté de moi.*"
+        "text": "*La conversation continue naturellement. Lieux proches de l'école, musique préférée. Quelqu'un se trompe de nom deux fois et Sea le corrige à côté de moi.*"
     },
     "day1_break_6": {
         "text": "Dis donc, Sea s’occupe vraiment beaucoup de toi."
@@ -390,7 +390,7 @@
         "text": "Je suis Choi Yuna, en première année. J'aide avec les photos officielles des événements."
     },
     "day1_pe_yuna_3": {
-        "text": "Après les cours, je trie souvent les photos à la bibliothèque. Si la photo te tracasse... viens me le dire."
+        "text": "Après l'école, je trie les photos dans la bibliothèque. Si la photo vous dérange, dites-le-moi alors."
     },
     "day1_pe_wall_1": {
         "text": "*Le foot est terminé. Je m'assois sur un banc et je bois de l'eau. Un grillage vert court au-dessus du mur de briques rouges, et au-delà, on voit les montagnes. Une maille du grillage est légèrement pliée vers l'intérieur.*"

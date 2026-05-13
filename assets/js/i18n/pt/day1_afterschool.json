@@ -5,11 +5,11 @@
     "day1_after_choice": {
         "text": "*Depois da escola. Para onde devo ir?*",
         "choices": [
-            "Sea disse para eu ir à sala do conselho estudantil",
-            "Talvez eu volte à biblioteca para ver Yuna",
-            "Estou curioso sobre a professora Riin, da enfermaria",
-            "Devo passar na sala dos professores para cumprimentar a professora Eunsu",
-            "Ir para casa hoje"
+            "Sea me disse para ir à sala do conselho estudantil",
+            "Vá para a biblioteca para ver Yuna",
+            "Vá para a enfermaria",
+            "Passe para dizer olá para a Sra. Eunsu",
+            "Ir para casa"
         ]
     },
     "day1_after_sea_1": {
@@ -34,13 +34,13 @@
         "text": "*Sea solta um pequeno suspiro e sorri.*"
     },
     "day1_after_sea_8": {
-        "text": "O primeiro dia é sempre difícil. A gente fica conferindo onde deve sentar, quem deve cumprimentar."
+        "text": "O primeiro dia é sempre assim. Você fica verificando onde sentar e para quem dizer oi."
     },
     "day1_after_sea_9": {
         "text": "*Sea olha pela janela. A luz do pôr do sol entra.*"
     },
     "day1_after_sea_10": {
-        "text": "...Que bom que você veio, {name}. A esta hora, o som das lâmpadas fluorescentes parece um pouco alto."
+        "text": "...Estou feliz que você veio. Nessa época, as luzes fluorescentes soam mais altas."
     },
     "day1_after_sea_11": {
         "text": "E os outros membros do conselho estudantil?"
@@ -97,7 +97,7 @@
         "text": "*Yuna mostra uma foto Polaroid. A visualização anterior da janela da biblioteca.*"
     },
     "day1_after_yuna_13": {
-        "text": "Este é... o lugar onde você estava sentado, sunbae. A luz estava boa. Tome, guarde como lembrança."
+        "text": "Este é... o assento em que você se sentou, sunbae. A luz é boa lá. Pegue."
     },
     "day1_after_yuna_14": {
         "text": "*Tirei a foto. Um momento de luz solar caindo sobre um livro. Eu não pude deixar de sorrir.*"
@@ -106,7 +106,7 @@
         "text": "*Tomei chá de ervas com a professora Riin. Uma fumaça fraca subia da borda do copo de papel.*"
     },
     "day1_after_riin_2": {
-        "text": "Quando a gente se transfere, pode perder o sono na primeira noite. O corpo percebe antes que está em um lugar estranho."
+        "text": "O sono pode ser superficial no primeiro dia após a transferência. Seu corpo percebe primeiro um lugar desconhecido."
     },
     "day1_after_riin_3": {
         "text": "Estou bem até agora."
@@ -133,19 +133,19 @@
         "text": "*A professora Riin coloca uma música calma de piano no alto-falante. O volume está tão baixo que eu sinto o ritmo antes da melodia.*"
     },
     "day1_after_riin_11": {
-        "text": "Venha a esta hora novamente e farei um chá para você. Vou deixar a enfermaria aberta."
+        "text": "Passe por aqui novamente desta vez. Vou fazer chá."
     },
     "day1_after_riin_12": {
         "text": "*EM. Riin sorri e mantém a porta aberta. Caminhando pelo corredor, mexo no pacote de saquinhos de chá. Ainda está quente.*"
     },
     "day1_after_eunsu_1": {
-        "text": "{name}? Você veio me ver depois da escola? Isso é fofo."
+        "text": "{name}? Você veio me ver depois da escola? Há algo errado?"
     },
     "day1_after_eunsu_2": {
         "text": "*Enquanto passa café, ela me pergunta algumas coisas. A escola anterior, o tempo de trajeto, o que comi de manhã.*"
     },
     "day1_after_eunsu_3": {
-        "text": "...{name}, aconteceu alguma coisa na sua escola anterior? Sua papelada de transferência foi um pouco incomum..."
+        "text": "...A papelada da sua escola anterior chegou atrasada. Aconteceu alguma coisa?"
     },
     "day1_after_eunsu_4": {
         "text": "Incomum? Eu vim por causa da mudança dos meus pais, só isso."
@@ -163,7 +163,7 @@
         "text": "Sim, Sea cuidou de tudo."
     },
     "day1_after_eunsu_9": {
-        "text": "Parece que Sea está cuidando bem de você. ...{name}, se alguma coisa estiver difícil, venha até mim. Afinal, sou seu professor de sala de aula."
+        "text": "Sea está cuidando de você. Se alguma coisa estiver difícil, venha até mim. Eu sou seu professor de sala de aula."
     },
     "day1_after_eunsu_10": {
         "text": "*A professora Eunsu sorri e dá tapinhas nas minhas costas. No ponto em que o tecido do uniforme afundou, só o calor da palma dela fica por um instante.*"

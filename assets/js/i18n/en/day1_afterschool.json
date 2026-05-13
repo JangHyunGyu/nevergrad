@@ -6,10 +6,10 @@
         "text": "*After school. Where should I go?*",
         "choices": [
             "Sea told me to come to the student council room",
-            "Maybe I should go see Yuna in the library again",
-            "I'm curious about Ms. Riin in the nurse's office",
-            "I should stop by the faculty room and say hello to Ms. Eunsu",
-            "Go home for today"
+            "Go to the library to see Yuna",
+            "Go to the nurse's office",
+            "Stop by to say hello to Ms. Eunsu",
+            "Go home"
         ]
     },
     "day1_after_sea_1": {
@@ -34,13 +34,13 @@
         "text": "*Sea lets out a small breath and smiles.*"
     },
     "day1_after_sea_8": {
-        "text": "The first day is always hard. You keep checking where you’re supposed to sit, who you’re supposed to greet."
+        "text": "The first day is always like that. You keep checking where to sit and who to say hi to."
     },
     "day1_after_sea_9": {
         "text": "*Sea looks out the window. The sunset light streams in.*"
     },
     "day1_after_sea_10": {
-        "text": "...I’m glad you came, {name}. The fluorescent lights sound a little loud around this time."
+        "text": "...I'm glad you came. Around this time, the fluorescent lights sound louder."
     },
     "day1_after_sea_11": {
         "text": "What about the other student council members?"
@@ -97,7 +97,7 @@
         "text": "*Yuna holds out a Polaroid photo. The view from the library window earlier.*"
     },
     "day1_after_yuna_13": {
-        "text": "This is... the seat where you were sitting, Sunbae. The light was nice. Here, keep it as a memento."
+        "text": "This is... the seat you sat in, sunbae. The light is nice there. Take it."
     },
     "day1_after_yuna_14": {
         "text": "*I took the photo. A moment of sunlight falling on a book. I couldn't help but smile.*"
@@ -106,7 +106,7 @@
         "text": "*I had herbal tea with Ms. Riin. A faint steam rose from the rim of the paper cup.*"
     },
     "day1_after_riin_2": {
-        "text": "When you transfer, you might have trouble sleeping on the first night. Your body notices an unfamiliar place before you do."
+        "text": "Sleep can be shallow on your first day after transferring. Your body notices an unfamiliar place first."
     },
     "day1_after_riin_3": {
         "text": "I'm fine so far."
@@ -133,19 +133,19 @@
         "text": "*Ms. Riin plays a calm piano piece from the speaker. The volume is so low that I feel the rhythm before the melody.*"
     },
     "day1_after_riin_11": {
-        "text": "Come by at this time again and I'll make you tea. I'll leave the nurse's office open."
+        "text": "Come by around this time again. I'll make tea."
     },
     "day1_after_riin_12": {
         "text": "*Ms. Riin smiles and holds the door open. Walking down the hall, I fiddle with the tea bag packet. It's still warm.*"
     },
     "day1_after_eunsu_1": {
-        "text": "{name}? You came to see me after school? That's sweet."
+        "text": "{name}? You came to see me after school? Is something wrong?"
     },
     "day1_after_eunsu_2": {
         "text": "*As she makes coffee, she asks me a few things. My previous school, my commute, what I ate this morning.*"
     },
     "day1_after_eunsu_3": {
-        "text": "...{name}, did something happen at your previous school? Your transfer paperwork was a bit unusual..."
+        "text": "...Your previous school's paperwork came in late. Did something happen?"
     },
     "day1_after_eunsu_4": {
         "text": "Unusual? I only transferred because my parents moved."
@@ -163,7 +163,7 @@
         "text": "Yes, Sea took care of everything."
     },
     "day1_after_eunsu_9": {
-        "text": "Looks like Sea's been taking good care of you. ...{name}, if anything's ever difficult, come to me. I'm your homeroom teacher, after all."
+        "text": "Sea's been looking after you. If anything is difficult, come to me. I'm your homeroom teacher."
     },
     "day1_after_eunsu_10": {
         "text": "*Ms. Eunsu smiles and pats my back. For a moment, only the warmth of her palm remains where the uniform cloth was pressed down.*"

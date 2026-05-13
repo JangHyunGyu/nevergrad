@@ -48,7 +48,7 @@
         "text": "*Na rua de madrugada, só restaram meus passos.*\n\n*O celular liga de novo. O nome na tela de bloqueio muda por 0,2 segundo.*\n\n*`S-13`*\n\n*De volta a `{name}`.*"
     },
     "day5_morning_dawn_12": {
-        "text": "*Eu andei. 20 minutos para a escola. As estradas antes do amanhecer estão vazias, apenas meus passos ecoam. Estou indo para a escola. Preciso salvar Yuna primeiro.*"
+        "text": "*Vinte minutos para a escola. Apenas meus passos ecoam na estrada antes do amanhecer.*\n\n*Todas as pistas se encontram embaixo do antigo prédio. Tenho que verificar o porão primeiro.*"
     },
     "day5_morning_school_1": {
         "text": "*A escola apareceu. No escuro, só o contorno do prédio se revelava. As janelas de sempre estavam todas fechadas em preto.*"
@@ -123,19 +123,19 @@
         "text": "...Eu também não soube desde o começo. Foi a partir da oitava vez."
     },
     "day5_morning_rescue_9": {
-        "text": "Dia 8 você... me pediu para tirar fotos. 'Registre quem eu era', você disse."
+        "text": "O oitavo sunbae... me pediu para tirar uma foto. 'Deixe uma prova de quem eu era.'"
     },
     "day5_morning_rescue_10": {
         "text": "...Naquela época o nome era 'Choi Siwoo'. Calado, sempre sentado num canto da biblioteca."
     },
     "day5_morning_rescue_11": {
-        "text": "Naquele dia, com os olhos vermelhos, ele agarrou minha câmera. 'Registre quem eu era', disse."
+        "text": "Naquele dia, não consegui largar a alça da câmera. Seus olhos estavam vermelhos e turvos."
     },
     "day5_morning_rescue_12": {
         "text": "...Na hora eu não entendi. Só lembro da mão segurando a câmera."
     },
     "day5_morning_rescue_13": {
-        "text": "...Na semana seguinte, essa pessoa foi transferida com um nome diferente. O mesmo rosto, mas ele não me reconheceu."
+        "text": "...Alguns meses depois, o mesmo rosto chegou com um crachá diferente. Eles não me reconheceram."
     },
     "day5_morning_rescue_14": {
         "text": "*Os lábios de Yuna tremeram.*"
@@ -147,7 +147,7 @@
         "text": "O nono arquivo é desconectado na terceira noite. O crachá era ‘Han Ji-ho’."
     },
     "day5_morning_rescue_17": {
-        "text": "...O nome era diferente toda vez. Mas o pedido era o mesmo. 'Me registre'. E a mão sempre ia primeiro para a câmera."
+        "text": "...O nome mudou, mas o pedido foi o mesmo. 'Registre-me.' A mão deles sempre ia para a câmera."
     },
     "day5_morning_rescue_18": {
         "text": "...Três anos, sunbae. O mesmo rosto veio com crachás diferentes e fez o mesmo pedido de novo."
@@ -217,16 +217,16 @@
         "text": "*A câmera do celular foca automaticamente. Uma foto de Lee Seolhwa. O espaço vazio ao lado. Só o lugar que eu sempre via está branco, vazio.*"
     },
     "day5_morning_true_14": {
-        "text": "***'Observação após o Teste #8: a pessoa em teste conversa com um ponto vazio na câmera. Repetição do mesmo nome: \"Lee Seolhwa\". A resposta da acompanhante não autorizada tem efeito calmante. Revisar a dose do medicamento.'***"
+        "text": "***'Após o teste #8: Sujeito conversa com ponto em branco. Repete \"Lee Seolhwa\". A resposta do companheiro tem efeito calmante. Reavaliar a dosagem.'***"
     },
     "day5_morning_true_15": {
         "text": "*É a letra da professora Eunsu. Com os mesmos traços certinhos que ela usava no quadro durante a aula, está escrito `necessário revisar dosagem do medicamento`.*"
     },
     "day5_morning_true_16": {
-        "text": "***'Testes #9~#12: o mesmo fenômeno persiste. Não há estudante correspondente nos registros de câmera/entrada/assentos. A pessoa em teste deixa o mesmo assento vazio a cada ciclo.'***"
+        "text": "***'Ensaios #9-#12: mesmo fenômeno. Nenhum aluno correspondente nos registros de câmera/entrada/assento. O sujeito deixa o mesmo assento vazio.'***"
     },
     "day5_morning_true_17": {
-        "text": "***'Adendo: ao remover o assento vazio, a pessoa em teste apresenta ansiedade aguda. Nesta etapa, deixar como está é racional. Intervenção desnecessária enquanto contribuir para a estabilidade.'***"
+        "text": "***'Adendo: Ansiedade aguda quando o assento vazio é removido. Manter sem intervenção nesta fase.'***"
     },
     "day5_morning_true_18": {
         "text": "*Antes que eu terminasse de ler a frase, minha mão parou sobre o papel. `Assento vazio`. `Deixar como está`. `Contribui para a estabilidade`. O foco da câmera tremeu sobre essas palavras.*"
@@ -244,10 +244,10 @@
         "text": "*A última página do diário de observação. A data foi há dois dias.*"
     },
     "day5_morning_true_23": {
-        "text": "***'Ensaio #13 Dia 2 Observação: Contato com Choi Yuna (observador externo) confirmado. Risco de vazamento de evidências. Isolamento imediato recomendado.'***"
+        "text": "***'Teste #13 Dia 2: Contato não autorizado com Choi Yuna. Risco de vazamento de cópia. Recomenda-se isolamento.'***"
     },
     "day5_morning_true_24": {
-        "text": "***'Ensaio #13 Day 3, adendo: isolamento de Choi Yuna concluído. Armazenamento de cópia separada confirmado. Relatório ao conselho em espera. Tratamento interno antes de classificação como falha de segurança.'***"
+        "text": "***'Teste #13 Dia 3: isolamento de Choi Yuna concluído. Cópia separada confirmada. Relatório em espera.'***"
     },
     "day5_morning_true_25": {
         "text": "*Dois dias atrás. A data do dia em que Yuna me mostrou as fotos também está marcada no diário de observação.*"
@@ -271,7 +271,7 @@
         "text": "*Yuna agarra em mim. Seu aperto é fraco.*"
     },
     "day5_morning_true_32": {
-        "text": "...Senpai. Está tudo nesta câmera. Três anos valem... quem você realmente era."
+        "text": "...sunbae. Está tudo nesta câmera. Três anos de... quem você era."
     },
     "day5_morning_true_33": {
         "text": "Se sairmos daqui... você terá que levar isso com você..."
@@ -280,16 +280,16 @@
         "text": "*Peguei a mão de Yuna. Estava frio.*"
     },
     "day5_morning_true_35": {
-        "text": "*Fotografei sem escolher os documentos espalhados pelo chão. Logo da Fundação Edina. Relatório final do Projeto Nevergrad. Sob a capa, havia uma tabela de rendimento anexada.*"
+        "text": "*Fotografei todos os documentos que pude no chão. Edina Logotipo da Fundação. Nevergrad Relatório Final. Abaixo da capa, uma tabela de retorno do investimento.*"
     },
     "day5_morning_true_36": {
-        "text": "*Protocolo de alteração do pacote de identidade. Pais, cidade natal, escola anterior, nomes de amigos, tudo dividido por item. Cada campo tem uma data de aplicação e uma marca de verificação.*"
+        "text": "*Protocolo de alteração de pacote de identidade. Pais, cidade natal, escola anterior, nomes de amigos. Cada campo tem uma data de inscrição e uma marca de revisão.*"
     },
     "day5_morning_true_37": {
-        "text": "*Documento de aprovação do conselho. Proposta de comercialização. Ao lado da rentabilidade prevista há uma nota: `após garantir os dados de estabilização do S-13`.*"
+        "text": "*Documento de aprovação do conselho. Proposta de comercialização. Nota ao lado do retorno esperado: `Após garantir os dados de estabilização de S-13`.*"
     },
     "day5_morning_true_38": {
-        "text": "*Última página. 'Ensaio #13, notas especiais: resposta ao assento vazio persiste. Designação Lee Seolhwa repetida. Limite de memória residual excedido. Revisão de processamento antecipado.'*"
+        "text": "*Última página. 'Teste #13: a resposta ao assento vazio persiste. Repetição da designação Lee Seolhwa. Limite de memória residual excedido. Revisar processamento antecipado.'*"
     },
     "day5_morning_true_39": {
         "text": "*`Revisão de processamento antecipado`. As palavras continuavam tremendo dentro do foco da câmera.*"
@@ -325,13 +325,13 @@
         ]
     },
     "day5_morning_true_ft_confront": {
-        "text": "...{name}, esse tipo de coisa não se fala no corredor. Sente com calma comigo. Abaixe a câmera."
+        "text": "...{name}, isso não é algo para discutir no corredor. Abaixe a câmera e venha comigo."
     },
     "day5_morning_true_ft_lost": {
         "text": "Está tudo bem. Você não está ferido? - Eu te acompanho de volta. Sem pressa."
     },
     "day5_morning_true_ft_yuna": {
-        "text": "...Eu vejo. A enfermaria fica no segundo andar do prédio principal, {name}. Vamos juntos. Eu vou ajudá-lo a carregá-la."
+        "text": "...Tudo bem. A enfermaria fica no segundo andar do prédio principal. Vamos juntos. Eu vou ajudar você a apoiá-la."
     },
     "day5_morning_true_ft_stall": {
         "text": "Aguentar. Desacelerar. — Ouça o professor antes de ir, hein?"
@@ -519,15 +519,15 @@
         "text": "",
         "choices": [
             "\"Isso é observação, não proteção.\"",
-            "\"Por que fez uma coisa dessas?\"",
-            "Ficar em silêncio"
+            "\"Desde quando?\"",
+            "Fique em silêncio"
         ]
     },
     "day5_morning_grad_reply_1": {
         "text": "...Observação."
     },
     "day5_morning_grad_reply_1b": {
-        "text": "OK. A primeira página diz observação. Eu também me escondi atrás dessa palavra por um tempo."
+        "text": "Certo. É o que diz a primeira página. Eu me escondi atrás dele por um tempo também."
     },
     "day5_morning_grad_reply_2": {
         "text": "...A primeira aprovação só teve o selo da diretoria. Meu nome não estava lá."
@@ -569,7 +569,7 @@
         "text": "*O professor levantou a cabeça. Os cantos dos olhos dele estavam vermelhos.*"
     },
     "day5_morning_proposal_9": {
-        "text": "Mesmo assim... quando você está aqui, os números se estabilizam. Não, eu estabilizo."
+        "text": "Mesmo assim... quando você está aqui, os números se estabilizam. Não, eu quero."
     },
     "day5_morning_proposal_10": {
         "text": "*A professora se levantou. Sem enxugar a umidade ao redor dos olhos.*"
@@ -584,7 +584,7 @@
         "text": "Um. Fique aqui. Vou deixar sua casa como está. Não vou apagar suas memórias."
     },
     "day5_morning_proposal_14": {
-        "text": "Dois. Apagar as memórias. A reação à dor e a reação de esquiva ficam resolvidas. É só passar para o próximo ciclo."
+        "text": "Dois. Apague. A dor, o corpo tentando correr, tudo isso se acalma. Podemos recomeçar na próxima segunda-feira."
     },
     "day5_morning_proposal_15": {
         "text": "Três. ..."

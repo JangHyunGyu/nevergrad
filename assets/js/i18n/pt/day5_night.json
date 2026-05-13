@@ -120,7 +120,7 @@
         "text": "***E crachás. Doze cartas são viradas de uma vez.***"
     },
     "day5_ending_true_21a": {
-        "text": "*A foto de perfil de Minsu vira a imagem cinza padrão. A parede da sala da minha escola antiga fica branca e vazia, e o motivo da mudança dos meus pais se corta no meio da frase. Outras cenas entram por esses espaços.*"
+        "text": "*Minsu a foto do perfil fica cinza e vazia. Minha antiga sala de aula e o motivo da mudança de meus pais foram interrompidos no meio da frase. Outras cenas entram pelos espaços em branco.*"
     },
     "day5_ending_true_22": {
         "text": "*Meus joelhos tocaram o chão. Minha respiração falhou duas vezes. Yuna se aproximou e me abraçou pelas costas. No ar frio da noite, só as mãos de Yuna estavam quentes.*"
@@ -168,10 +168,10 @@
         "text": "*Um escritório espaçoso. Pilhas de documentos sobre uma mesa. Vários monitores. Uma planta da escola na tela.*"
     },
     "day5_postcredit_3": {
-        "text": "Sim. ...Confirmado. O site será desativado. A recuperação de ativos foi concluída e o pessoal será realocado."
+        "text": "Sim. Confirmado. O site estará fechado. A recuperação de ativos foi concluída e o pessoal será realocado."
     },
     "day5_postcredit_4": {
-        "text": "O caso 13 está encerrado ao nível do gestor do local. Por favor, não deixe o nome da fundação em lugar nenhum."
+        "text": "Encerre o Caso 13 no nível do gerente do site. Não deixe o nome da fundação para trás."
     },
     "day5_postcredit_5": {
         "text": "...Sim. A seleção da próxima escola piloto está concluída."
@@ -252,7 +252,7 @@
         "text": "Não. A partir da 3ª vez a escolha foi minha."
     },
     "day5_ending_resist_5": {
-        "text": "A assinatura depois disso é toda minha, {name}."
+        "text": "Cada assinatura depois disso está com minha caligrafia, {name}."
     },
     "day5_ending_resist_6": {
         "text": "Se o professor ficar, a carteira fica vazia novamente."
@@ -282,7 +282,7 @@
         "text": "*professora Eunsu coloque a seringa no chão. ...Ela ficou lá por um longo tempo.*"
     },
     "day5_ending_resist_15": {
-        "text": "...Quando eu sair, todos os papéis terão meu nome."
+        "text": "...Quando eu sair, todos os documentos terão meu nome."
     },
     "day5_ending_resist_16": {
         "text": "Eu sei."
@@ -300,7 +300,7 @@
         "text": "*Professor parou de falar. Suas mãos tremiam levemente.*"
     },
     "day5_ending_resist_18c": {
-        "text": "...Eu apaguei naquela noite. Na manhã seguinte ele perguntou: 'Quem é você, professor?' Perguntei."
+        "text": "...Eu apaguei naquela noite. Na manhã seguinte, aquele aluno perguntou: 'Quem é você, professor?'"
     },
     "day5_ending_resist_18d": {
         "text": "Foi aí que eu entendi. O que eu tinha criado não era uma relação, era uma tabela de respostas. Mesmo assim, não parei."
@@ -405,10 +405,10 @@
         "text": "...Tem certeza?"
     },
     "day5_ending_forget_4": {
-        "text": "...Se todos aqueles espaços vazios para nomes naquele porão vão voltar para mim..."
+        "text": "...Se todos esses campos de nome em branco forem meus para carregar..."
     },
     "day5_ending_forget_5": {
-        "text": "Não consigo. Não tenho confiança para sair carregando todos aqueles nomes."
+        "text": "Não posso. Acho que não posso sair carregando todos esses nomes."
     },
     "day5_ending_forget_6": {
         "text": "...Por favor, apague. Não aguento mais."
@@ -682,19 +682,19 @@
         "text": "*...meu recorde?*"
     },
     "day5_observer_6": {
-        "text": "Registrado por: Assunto #13 ({name})\nTempo de progresso: {play_time}\nResumo do histórico de respostas:\n\n· Número de contatos marítimos: {route_data}\n· Contato Yuna: {met_yuna}\n· Visitas de Riin: {riin_visits}\n· Tentativa de falar com Seolhwa: {seolhwa_attempts}\n· Se as evidências estão protegidas: {evidence_data}\n· Tempo para resposta final: {timer_data}"
+        "text": "Assunto do registro: #13 ({name})\nTempo de progresso: {play_time}\n\nContato: Sea {route_data} / Yuna {met_yuna} / Riin {riin_visits} / Seolhwa {seolhwa_attempts}\nEvidência: {evidence_data}\nResposta final: {timer_data}"
     },
     "day5_observer_7": {
         "text": "*A tela rola para baixo.*"
     },
     "day5_observer_8": {
-        "text": "Notas:\n\nO usuário percorreu os cinco dias do Sujeito #13.\nEscolheu interlocutores, alvo de vínculo e se haveria fuga.\nNão interrompeu o progresso mesmo depois da exibição de sinais de perigo.\n\nPergunta:\nPark Eunsu projetou e observou 13 ciclos.\nVocê conduziu as escolhas de {name} por {play_time}.\n\nQual é a diferença?"
+        "text": "Notas:\n\nRevisão do registro #13 concluída.\nOs logs persistiram após aviso.\n\nComparação:\nPark Eunsu - 13 observações.\nObservador de {name} - {play_time}.\n\nSentença retida."
     },
     "day5_observer_cupid_check": {
         "text": ""
     },
     "day5_observer_cupid_extra": {
-        "text": "Referência cruzada:\n\nLog de participação CUPID_ENV_PREVIEW detectado.\nModelo de marca emocional: {cupid_heroine}\nTaxa de resposta de conformidade: {cupid_compliance}\nTeste de reatividade pré-dose M-13 corresponde ao log de observação Nevergrad #13.\n\nNota:\nOs dados de escolha do observador permanecem vinculados ao registro do Sujeito #13."
+        "text": "Referência cruzada:\n\nCUPID_ENV_PREVIEW detectado.\nImpressão emocional: {cupid_heroine}\nTaxa de conformidade: {cupid_compliance}\nCorresponde parcialmente aos indicadores de estabilização M-13.\n\nNotas:\nOs dados do observador ainda estão vinculados ao arquivo #13."
     },
     "day5_observer_9": {
         "text": "*A tela segura. 5 segundos.*"

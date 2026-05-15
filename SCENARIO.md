@@ -575,9 +575,9 @@ _캐릭터: `sea_normal`_
 _source: `day1_1_morning.js / day1_morning.json`_
 _캐릭터: `sea_normal`_
 
-**나**
+**세아**
 ```text
-*세아가 앞장서서 걷는다. 내 걸음이 느려질 때마다, 뒤돌아보지 않고 속도를 맞춘다.*
+*앞장서서 걷는다. {name}의 걸음이 느려질 때마다, 뒤돌아보지 않고 속도를 맞춘다.*
 ```
 
 ### `day1_sea_meet_12`
@@ -625,9 +625,9 @@ _캐릭터: `sea_normal`_
 _source: `day1_1_morning.js / day1_morning.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 살짝 미소 짓는다.*
+*살짝 미소 짓는다.*
 ```
 
 ### `day1_sea_meet_17`
@@ -645,9 +645,9 @@ _캐릭터: `sea_smile`_
 _source: `day1_1_morning.js / day1_morning.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 지나간 자리마다 학생들이 자연스럽게 길을 비킨다. 나는 그 뒤를 따라갔다.*
+*지나간 자리마다 학생들이 자연스럽게 길을 비킨다. {name}은 그 뒤를 따라갔다.*
 ```
 
 ### `day1_choco_ngp_1`
@@ -805,9 +805,9 @@ _캐릭터: `sea_normal`_
 _source: `day1_1_morning.js / day1_morning.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아의 표정이 아주 미세하게 굳는다. 한 번 깜빡. 그리고 다시 미소로 돌아온다.*
+*표정이 아주 미세하게 굳는다. 한 번 깜빡. 그리고 다시 미소로 돌아온다.*
 ```
 
 ### `day1_choco_question_3`
@@ -845,9 +845,9 @@ _캐릭터: `sea_smile`_
 _source: `day1_1_morning.js / day1_morning.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 웃는다. 빨대 비닐을 접는 손끝이 아주 잠깐 멈췄다가 다시 움직였다.*
+*웃는다. 빨대 비닐을 접는 손끝이 아주 잠깐 멈췄다가 다시 움직였다.*
 ```
 
 ### `day1_choco_joke_1`
@@ -865,9 +865,9 @@ _캐릭터: `sea_normal`_
 _source: `day1_1_morning.js / day1_morning.json`_
 _캐릭터: `sea_normal`_
 
-**나**
+**세아**
 ```text
-*세아의 손이 빨대 비닐 위에서 멈췄다. 아주 잠깐.*
+*손이 빨대 비닐 위에서 멈췄다. 아주 잠깐.*
 ```
 
 ### `day1_choco_joke_3`
@@ -1135,9 +1135,9 @@ _source: `day1_1_morning.js / day1_morning.json`_
 _source: `day1_1_morning.js / day1_morning.json`_
 _캐릭터: `seolhwa_quiet`_
 
-**나**
+**창가의 여학생**
 ```text
-*그 여학생이 나를 봤다. 눈이 마주쳤다.*
+*{name}을 봤다. 눈이 마주쳤다.*
 ```
 
 ### `day1_seolhwa_greet_4`
@@ -3188,9 +3188,9 @@ _캐릭터: `sea_normal`_
 _source: `day2_1_morning.js / day2_morning.json`_
 _캐릭터: `sea_normal`_
 
-**나**
+**세아**
 ```text
-*세아가 이마를 짚으려다 말고, 내 손에 들린 빈 물병을 본다.*
+*이마를 짚으려다 말고, {name}의 손에 들린 빈 물병을 본다.*
 ```
 
 ### `day2_morning_walk_7`
@@ -3228,9 +3228,9 @@ _캐릭터: `sea_normal`_
 _source: `day2_1_morning.js / day2_morning.json`_
 _캐릭터: `sea_normal`_
 
-**나**
+**세아**
 ```text
-*세아가 뒤돌아보지 않고 앞서 걷는다. 말끝만 밝게 튄다.*
+*뒤돌아보지 않고 앞서 걷는다. 말끝만 밝게 튄다.*
 ```
 
 ### `day2_morning_walk_11`
@@ -3268,9 +3268,9 @@ _캐릭터: `sea_normal`_
 _source: `day2_1_morning.js / day2_morning.json`_
 _캐릭터: `sea_normal`_
 
-**나**
+**세아**
 ```text
-*세아가 휴대폰을 보여준다. 인디 밴드 채널이다.*
+*휴대폰을 보여준다. 인디 밴드 채널이다.*
 ```
 
 ### `day2_morning_walk_15`
@@ -3298,9 +3298,9 @@ _캐릭터: `sea_smile`_
 _source: `day2_1_morning.js / day2_morning.json`_
 _배경: `hallway`_
 
-**나**
+**세아**
 ```text
-*세아의 엄지가 화면 위에서 멈춘다. 방금 전까지 재생목록을 넘기던 속도가 느려졌다.*
+*엄지가 화면 위에서 멈춘다. 방금 전까지 재생목록을 넘기던 속도가 느려졌다.*
 ```
 
 ### `day2_morning_deja4_1`
@@ -3380,9 +3380,9 @@ _캐릭터: `sea_normal`_
 _source: `day2_1_morning.js / day2_morning.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 웃는다. 엄지로 휴대폰 모서리를 한 번 세게 누른 뒤 주머니에 넣었다.*
+*웃는다. 엄지로 휴대폰 모서리를 한 번 세게 누른 뒤 주머니에 넣었다.*
 ```
 
 ### `day2_morning_class_3`
@@ -3390,9 +3390,9 @@ _캐릭터: `sea_smile`_
 _source: `day2_1_morning.js / day2_morning.json`_
 _배경: `classroom`_
 
-**나**
+**은수**
 ```text
-*은수가 출석을 부른다. 한 명씩 이름이 불린다.*
+*출석을 부른다. 한 명씩 이름이 불린다.*
 ```
 
 ### `day2_morning_class_4`
@@ -3539,9 +3539,9 @@ _캐릭터: `sea_smile`_
 _source: `day2_1_morning.js / day2_morning.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 엄지를 치켜세운다. 세아의 노트에는 이미 `도서관 발표_{name}`이라고 적힌 제목이 있다.*
+*엄지를 치켜세운다. 노트에는 이미 `도서관 발표_{name}`이라고 적힌 제목이 있다.*
 ```
 
 ### `day2_morning_pres_12`
@@ -3618,9 +3618,9 @@ _캐릭터: `eunsu_warm`_
 _source: `day2_1_morning.js / day2_morning.json`_
 _캐릭터: `eunsu_warm`_
 
-**나**
+**은수**
 ```text
-*은수의 손이 닿은 어깨가 잠깐 차가웠다. 교무실 복사기 냄새 같은 금속성 냄새가 남았다.*
+*손이 닿은 어깨가 잠깐 차가웠다. 교무실 복사기 냄새 같은 금속성 냄새가 남았다.*
 ```
 
 ### `day2_morning_deja5_10`
@@ -3668,9 +3668,9 @@ _캐릭터: `seolhwa_quiet`_
 _source: `day2_1_morning.js / day2_morning.json`_
 _캐릭터: `seolhwa_quiet`_
 
-**나**
+**창가의 여학생**
 ```text
-*그 여학생의 입술이 아주 조금 움직였다. 첫 음절이 나오기 직전, 복도 쪽에서 의자 끄는 소리가 겹쳤다.*
+*입술이 아주 조금 움직였다. 첫 음절이 나오기 직전, 복도 쪽에서 의자 끄는 소리가 겹쳤다.*
 ```
 
 ### `day2_morning_seolhwa_5`
@@ -3754,9 +3754,9 @@ _캐릭터: `seolhwa_quiet`_
 
 _source: `day2_1_morning.js / day2_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화의 손가락이 책상 모서리를 세 번 두드렸다. 방송이 끊긴 박자와 같았다.*
+*손가락이 책상 모서리를 세 번 두드렸다. 방송이 끊긴 박자와 같았다.*
 ```
 
 ## Day 2 - 점심 (`day2_2_lunch.js`)
@@ -3861,9 +3861,9 @@ _캐릭터: `sea_normal`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `sea_normal`_
 
-**나**
+**세아**
 ```text
-*세아가 말을 흐리며 젓가락으로 꼬마김밥을 집었다.*
+*말을 흐리며 젓가락으로 꼬마김밥을 집었다.*
 ```
 
 ### `day2_lunch_sea_9`
@@ -3901,9 +3901,9 @@ _캐릭터: `sea_smile`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 내 도시락에 꼬마김밥을 옮겨줬다. 뚜껑 안쪽에는 작은 포크가 하나 더 붙어 있었다.*
+*{name}의 도시락에 꼬마김밥을 옮겨줬다. 뚜껑 안쪽에는 작은 포크가 하나 더 붙어 있었다.*
 ```
 
 ### `day2_lunch_sea_13`
@@ -3981,9 +3981,9 @@ _캐릭터: `sea_smile`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 도시락에 집중하는 척 고개를 숙였다. 내게 이어폰 한쪽을 건넸다. 재생 위치는 이미 후렴 직전이었다.*
+*도시락에 집중하는 척 고개를 숙였다. {name}에게 이어폰 한쪽을 건넸다. 재생 위치는 이미 후렴 직전이었다.*
 ```
 
 ### `day2_lunch_sea_21`
@@ -4031,9 +4031,9 @@ _캐릭터: `sea_normal`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 웃었다. 이어폰 줄을 감는 손끝이 조금 느려졌다.*
+*웃었다. 이어폰 줄을 감는 손끝이 조금 느려졌다.*
 ```
 
 ### `day2_lunch_yuna_1`
@@ -4041,9 +4041,9 @@ _캐릭터: `sea_smile`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _배경: `library` / 캐릭터: `yuna_shy`_
 
-**나**
+**유나**
 ```text
-*유나가 카메라를 만지작거리고 있다. 도서관 구석 자리. 옆에는 과자 봉지가 놓여 있다.*
+*카메라를 만지작거리고 있다. 도서관 구석 자리. 옆에는 과자 봉지가 놓여 있다.*
 ```
 
 ### `day2_lunch_yuna_2`
@@ -4111,9 +4111,9 @@ _캐릭터: `yuna_normal`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `yuna_normal`_
 
-**나**
+**유나**
 ```text
-*유나가 화면을 확대했다. 확실히 얼굴이 동그랗다.*
+*화면을 확대했다. 확실히 얼굴이 동그랗다.*
 ```
 
 ### `day2_lunch_yuna_9`
@@ -4171,9 +4171,9 @@ _캐릭터: `yuna_normal`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `yuna_smile`_
 
-**나**
+**유나**
 ```text
-*유나가 살짝 웃었다. 장난처럼 말하지는 않았다. 계속해서 사진을 넘겨보다가 유나가 불쑥 물었다.*
+*살짝 웃었다. 장난처럼 말하지는 않았다. 계속해서 사진을 넘겨보다가 불쑥 물었다.*
 ```
 
 ### `day2_lunch_yuna_15`
@@ -4211,9 +4211,9 @@ _캐릭터: `yuna_normal`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `yuna_smile`_
 
-**나**
+**유나**
 ```text
-*유나가 웃으며 카메라를 내려다봤다. 엄지는 방금 사진이 아니라 어제 찍은 체육관 사진 위에 멈춰 있었다.*
+*웃으며 카메라를 내려다봤다. 엄지는 방금 사진이 아니라 어제 찍은 체육관 사진 위에 멈춰 있었다.*
 ```
 
 ### `day2_lunch_yuna_19`
@@ -4271,9 +4271,9 @@ _캐릭터: `yuna_normal`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `yuna_normal`_
 
-**나**
+**유나**
 ```text
-*유나가 카메라를 가슴에 안고 말했다. 카메라 스트랩이 엄지 아래에서 천천히 접혔다 펴졌다.*
+*카메라를 가슴에 안고 말했다. 카메라 스트랩이 엄지 아래에서 천천히 접혔다 펴졌다.*
 ```
 
 ### `day2_lunch_riin_1`
@@ -4331,9 +4331,9 @@ _캐릭터: `riin_normal`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `riin_normal`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 기록지 두 번째 장을 넘겼다. 혈압 숫자 아래 빈 칸들이 차례로 채워졌다.*
+*기록지 두 번째 장을 넘겼다. 혈압 숫자 아래 빈 칸들이 차례로 채워졌다.*
 ```
 
 ### `day2_lunch_riin_7`
@@ -4351,9 +4351,9 @@ _캐릭터: `riin_smile`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `riin_smile`_
 
-**나**
+**리인**
 ```text
-*리인 선생님의 펜 끝이 날짜 칸 위에서 멈췄다. 오늘 날짜를 적기 전, 아주 짧게 나를 봤다.*
+*펜 끝이 날짜 칸 위에서 멈췄다. 오늘 날짜를 적기 전, 아주 짧게 {name}을 봤다.*
 ```
 
 ### `day2_lunch_riin_9`
@@ -4401,9 +4401,9 @@ _캐릭터: `riin_smile`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `riin_smile`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 잠시 멈칫하더니 다시 글을 이어나갔다.*
+*잠시 멈칫하더니 다시 글을 이어나갔다.*
 ```
 
 ### `day2_lunch_riin_14`
@@ -4511,9 +4511,9 @@ _캐릭터: `riin_smile`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `riin_normal`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 찻잔을 두 손으로 감싸 쥐고 창밖을 응시했다.*
+*찻잔을 두 손으로 감싸 쥐고 창밖을 응시했다.*
 ```
 
 ### `day2_lunch_riin_25`
@@ -4541,9 +4541,9 @@ _캐릭터: `riin_normal`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `riin_normal`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 나를 돌아봤다. 무언가 말하려는 듯했지만, 이내—*
+*{name}을 돌아봤다. 무언가 말하려는 듯했지만, 이내—*
 ```
 
 ### `day2_lunch_riin_28`
@@ -4631,9 +4631,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day2_2_lunch.js / day2_lunch.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*선생님이 웃으며 지나갔다. 전화 화면이 꺼지기 직전, 통화 시간 `00:00`만 보였다.*
+*웃으며 지나갔다. 전화 화면이 꺼지기 직전, 통화 시간 `00:00`만 보였다.*
 ```
 
 ### `day2_lunch_rooftop_8`
@@ -4777,9 +4777,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day2_3_afterschool.js / day2_afterschool.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*선생님이 포스트잇을 건넸다. 숫자 여섯 자리 아래에 작은 체크 표시가 이미 그어져 있다.*
+*포스트잇을 건넸다. 숫자 여섯 자리 아래에 작은 체크 표시가 이미 그어져 있다.*
 ```
 
 ### `day2_after_eunsu_7`
@@ -5183,9 +5183,9 @@ _캐릭터: `sea_sad`_
 _source: `day2_3_afterschool.js / day2_afterschool.json`_
 _캐릭터: `sea_stare`_
 
-**나**
+**세아**
 ```text
-*세아가 바로 대답하지 않았다. 빈 의자 둘 사이에 시선이 멈췄다.*
+*바로 대답하지 않았다. 빈 의자 둘 사이에 시선이 멈췄다.*
 ```
 
 ### `day2_after_sea_invite_3`
@@ -5233,9 +5233,9 @@ _캐릭터: `sea_sad`_
 _source: `day2_3_afterschool.js / day2_afterschool.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 라벨지를 꺼냈다.*
+*라벨지를 꺼냈다.*
 ```
 
 ### `day2_after_hallway_1`
@@ -5988,9 +5988,9 @@ _캐릭터: `seolhwa_smile`_
 _source: `day2_4_night.js / day2_night.json`_
 _캐릭터: `seolhwa_smile`_
 
-**나**
+**설화**
 ```text
-*설화가 입을 연다. 소리는 칠판 지우개 먼지처럼 흩어진다. 입술 모양만 남았다. '도와—'*
+*입을 연다. 소리는 칠판 지우개 먼지처럼 흩어진다. 입술 모양만 남았다. '도와—'*
 ```
 
 ### `day2_night_dream_7a`
@@ -6036,9 +6036,9 @@ _배경: `home`_
 
 _source: `day2_4_night.js / day2_night.json`_
 
-**나**
+**설화**
 ```text
-*설화가 웃고 있던 얼굴만 남아 있다. 말소리는 알람음 뒤로 눌려 입술 모양만 남았다.*
+*웃고 있던 얼굴만 남아 있다. 말소리는 알람음 뒤로 눌려 입술 모양만 남았다.*
 ```
 
 ### `day2_night_wake_3`
@@ -6400,9 +6400,9 @@ _캐릭터: `seolhwa_quiet`_
 _source: `day3_1_morning.js / day3_morning.json`_
 _캐릭터: `seolhwa_quiet`_
 
-**나**
+**창가의 여학생**
 ```text
-*그 여학생은 대답하지 않는다. 시선이 내 왼손과 얼굴 사이를 한 번 오간다. 그리고 작은 목소리로:*
+*대답하지 않는다. 시선이 {name}의 왼손과 얼굴 사이를 한 번 오간다. 그리고 작은 목소리로:*
 ```
 
 **선택지**
@@ -6435,9 +6435,9 @@ _캐릭터: `seolhwa_sad`_
 _source: `day3_1_morning.js / day3_morning.json`_
 _캐릭터: `seolhwa_sad`_
 
-**나**
+**창가의 여학생**
 ```text
-*그 여학생은 돌아서 걸어간다. 대답해주지 않는다.*
+*돌아서 걸어간다. 대답해주지 않는다.*
 ```
 
 ### `day3_morning_seolhwa_9`
@@ -6508,9 +6508,9 @@ _source: `day3_1_morning.js / day3_morning.json`_
 
 _source: `day3_1_morning.js / day3_morning.json`_
 
-**나**
+**세아**
 ```text
-*세아가 자기 자리에 앉아 있다. 웃고 있지만... 입꼬리만 올라가 있다.*
+*자기 자리에 앉아 있다. 웃고 있지만... 입꼬리만 올라가 있다.*
 ```
 
 ### `day3_morning_sea_2`
@@ -6558,9 +6558,9 @@ _캐릭터: `sea_smile`_
 _source: `day3_1_morning.js / day3_morning.json`_
 _캐릭터: `sea_serious`_
 
-**나**
+**세아**
 ```text
-*세아의 시선이 내 얼굴, 목덜미, 왼손 순서로 내려갔다가 다시 올라온다. 빈칸을 차례로 확인하듯이.*
+*시선이 {name}의 얼굴, 목덜미, 왼손 순서로 내려갔다가 다시 올라온다. 빈칸을 차례로 확인하듯이.*
 ```
 
 ### `day3_morning_sea_6b`
@@ -6588,9 +6588,9 @@ _캐릭터: `sea_serious`_
 _source: `day3_1_morning.js / day3_morning.json`_
 _캐릭터: `sea_serious`_
 
-**나**
+**세아**
 ```text
-*세아가 고개를 살짝 기울이고 나를 지켜본다. 2초. 3초. 4초.*
+*고개를 살짝 기울이고 {name}을 지켜본다. 2초. 3초. 4초.*
 ```
 
 ### `day3_morning_sea_8`
@@ -6608,9 +6608,9 @@ _캐릭터: `sea_cold`_
 _source: `day3_1_morning.js / day3_morning.json`_
 _캐릭터: `sea_cold`_
 
-**나**
+**세아**
 ```text
-*세아가 다시 자기 자리로 돌아앉는다. 목덜미 근육이 팽팽하다. 방금 그린 빈 네모 중 하나에 체크가 들어간다.*
+*다시 자기 자리로 돌아앉는다. 목덜미 근육이 팽팽하다. 방금 그린 빈 네모 중 하나에 체크가 들어간다.*
 ```
 
 ### `day3_morning_pencil_1`
@@ -6770,9 +6770,9 @@ _배경: `rooftop` / 캐릭터: `yuna_scared`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `yuna_scared`_
 
-**나**
+**유나**
 ```text
-*유나가 아무 말 없이 카메라를 건넨다.*
+*아무 말 없이 카메라를 건넨다.*
 ```
 
 ### `day3_lunch_rooftop_3`
@@ -6940,9 +6940,9 @@ _캐릭터: `yuna_scared`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `yuna_scared`_
 
-**나**
+**유나**
 ```text
-*유나가 아무 말도 하지 않는다. 나를 보고 있을 뿐이다. 눈이 빨갛다.*
+*아무 말도 하지 않는다. {name}을 보고 있을 뿐이다. 눈이 빨갛다.*
 ```
 
 ### `day3_lunch_rooftop_20`
@@ -6980,9 +6980,9 @@ _캐릭터: `yuna_scared`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `yuna_scared`_
 
-**나**
+**유나**
 ```text
-*유나가 마침내 입을 연다. 작은 목소리.*
+*마침내 입을 연다. 작은 목소리.*
 ```
 
 ### `day3_lunch_rooftop_24`
@@ -7050,9 +7050,9 @@ _캐릭터: `yuna_scared`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `yuna_cry`_
 
-**나**
+**유나**
 ```text
-*유나의 속눈썹 끝에 물기가 맺혔다. 닦지 않았다.*
+*속눈썹 끝에 물기가 맺혔다. 닦지 않았다.*
 ```
 
 ### `day3_lunch_door_1`
@@ -7234,9 +7234,9 @@ _캐릭터: `yuna_scared`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `yuna_scared`_
 
-**나**
+**유나**
 ```text
-*유나가 1층에서 갈라진다. 돌아서기 전에 한 번 나를 본다. 카메라를 쥔 손이 허공에서 짧게 멈췄다.*
+*1층에서 갈라진다. 돌아서기 전에 한 번 {name}을 본다. 카메라를 쥔 손이 허공에서 짧게 멈췄다.*
 ```
 
 ### `day3_lunch_door_open_12`
@@ -7263,9 +7263,9 @@ _배경: `classroom` / 캐릭터: `sea_smile`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 웃고 있다. 식판 맞은편 자리는 이미 비워져 있고, 물컵도 하나 더 놓여 있다.*
+*웃고 있다. 식판 맞은편 자리는 이미 비워져 있고, 물컵도 하나 더 놓여 있다.*
 ```
 
 ### `day3_lunch_sea_3`
@@ -7328,9 +7328,9 @@ _캐릭터: `sea_smile`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아의 젓가락 끝이 고등어 조각 위에서 멈췄다. 내 대답을 기다리는 동안에도 웃음은 그대로다.*
+*젓가락 끝이 고등어 조각 위에서 멈췄다. {name}의 대답을 기다리는 동안에도 웃음은 그대로다.*
 ```
 
 ### `day3_lunch_sea_9`
@@ -7368,9 +7368,9 @@ _캐릭터: `sea_serious`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `sea_serious`_
 
-**나**
+**세아**
 ```text
-*세아가 젓가락으로 반찬을 집다가 멈춘다. 시선이 식판에 고정되어 있다. 긴 침묵.*
+*젓가락으로 반찬을 집다가 멈춘다. 시선이 식판에 고정되어 있다. 긴 침묵.*
 ```
 
 ### `day3_lunch_sea_13`
@@ -7398,9 +7398,9 @@ _캐릭터: `sea_serious`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `sea_serious`_
 
-**나**
+**세아**
 ```text
-*세아의 목소리가 낮아졌다. 젓가락을 쥔 손이 식판 가장자리를 누른다. 고등어 조각이 반으로 갈라졌다.*
+*목소리가 낮아졌다. 젓가락을 쥔 손이 식판 가장자리를 누른다. 고등어 조각이 반으로 갈라졌다.*
 ```
 
 ### `day3_lunch_sea_16`
@@ -7418,9 +7418,9 @@ _캐릭터: `sea_smile`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 웃는다. 입꼬리가 먼저 올라가고, 한 박자 늦게 눈가가 따라온다.*
+*웃는다. 입꼬리가 먼저 올라가고, 한 박자 늦게 눈가가 따라온다.*
 ```
 
 ### `day3_lunch_riin_1`
@@ -7478,9 +7478,9 @@ _캐릭터: `riin_smile`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `riin_smile`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 침대를 가리킨다. 앉았다. 리인 선생님이 이마에 손을 얹는다. 서늘한 손.*
+*침대를 가리킨다. {name}이 앉자, 이마에 손을 얹는다. 서늘한 손.*
 ```
 
 ### `day3_lunch_riin_5`
@@ -7498,9 +7498,9 @@ _캐릭터: `riin_smile`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `riin_smile`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 뒤돌아서 캐비닛을 연다. 등이 보인다. 병 하나를 들었다가 내려놓고, 옆 병을 집는다.*
+*뒤돌아서 캐비닛을 연다. 등이 보인다. 병 하나를 들었다가 내려놓고, 옆 병을 집는다.*
 ```
 
 ### `day3_lunch_riin_7`
@@ -7537,9 +7537,9 @@ _캐릭터: `riin_smile`_
 
 _source: `day3_2_lunch.js / day3_lunch.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 웃고 있다. 컵은 내 쪽으로 와 있지만, 다른 손은 싱크대 수도꼭지에 가까이 놓여 있다.*
+*웃고 있다. 컵은 {name} 쪽으로 와 있지만, 다른 손은 싱크대 수도꼭지에 가까이 놓여 있다.*
 ```
 
 **선택지**
@@ -7571,9 +7571,9 @@ _캐릭터: `riin_smile`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `riin_pain`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 컵을 가져간다. 돌아서는 순간. 입술을 세게 깨물고 있다.*
+*컵을 가져간다. 돌아서는 순간. 입술을 세게 깨물고 있다.*
 ```
 
 ### `day3_lunch_riin_refuse_1`
@@ -7591,9 +7591,9 @@ _캐릭터: `riin_smile`_
 _source: `day3_2_lunch.js / day3_lunch.json`_
 _캐릭터: `riin_smile`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 컵을 가져간다. 싱크대에 내용물을 버린다. 보라색 액체가 물에 닿자 곧바로 색을 잃었다.*
+*컵을 가져간다. 싱크대에 내용물을 버린다. 보라색 액체가 물에 닿자 곧바로 색을 잃었다.*
 ```
 
 ### `day3_lunch_alone_1`
@@ -7819,9 +7819,9 @@ _캐릭터: `riin_smile`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `riin_pain`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 캐비닛에서 작은 병을 꺼냈다. 연보라색 액체가 컵 안쪽을 타고 내려왔다.*
+*캐비닛에서 작은 병을 꺼냈다. 연보라색 액체가 컵 안쪽을 타고 내려왔다.*
 
 *컵을 건네는 손에서 약지와 소지만 미세하게 흔들렸다.*
 
@@ -7866,9 +7866,9 @@ _캐릭터: `riin_smile`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `riin_pain`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 돌아서는 순간, 입술 안쪽을 세게 깨물었다. 컵을 내려놓는 소리가 조금 컸다.*
+*돌아서는 순간, 입술 안쪽을 세게 깨물었다. 컵을 내려놓는 소리가 조금 컸다.*
 
 *다시 돌아본 얼굴에는 미소가 붙어 있다.*
 ```
@@ -7888,9 +7888,9 @@ _캐릭터: `riin_smile`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `riin_pain`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 남은 음료를 싱크대에 버린다. 등이 보인다. 어깨가 굳어있다.*
+*남은 음료를 싱크대에 버린다. 등이 보인다. 어깨가 굳어있다.*
 ```
 
 ### `day3_after_riin_refuse`
@@ -7908,9 +7908,9 @@ _캐릭터: `riin_smile`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `riin_pain`_
 
-**나**
+**리인**
 ```text
-*리인 선생님의 손이 멈춘다. 컵을 잡고 있는 손에서 힘이 빠진다.*
+*손이 멈춘다. 컵을 잡고 있는 손에서 힘이 빠진다.*
 
 *가져간다. 싱크대에 내용물을 버린다. 물을 오래 틀어둔다.*
 ```
@@ -7920,9 +7920,9 @@ _캐릭터: `riin_pain`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `riin_relief`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 돌아선다. 눈이 빨개져 있다. 빠르게 눈을 깜빡이며 숨긴다.*
+*돌아선다. 눈이 빨개져 있다. 빠르게 눈을 깜빡이며 숨긴다.*
 ```
 
 ### `day3_after_riin_refuse_4`
@@ -7966,9 +7966,9 @@ _source: `day3_3_afterschool.js / day3_afterschool.json`_
 
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 뒤에서 문을 닫았다. 더 이상 볼 수 없다.*
+*뒤에서 문을 닫았다. {name}에게서는 더 이상 보이지 않는다.*
 ```
 
 ### `day3_after_sea`
@@ -8123,9 +8123,9 @@ _캐릭터: `sea_smile`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 웃는다. 입꼬리가 올라간 뒤, 열쇠고리가 한 번 늦게 흔들렸다.*
+*웃는다. 입꼬리가 올라간 뒤, 열쇠고리가 한 번 늦게 흔들렸다.*
 ```
 
 ### `day3_after_sea_noyuna_6`
@@ -8152,9 +8152,9 @@ _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아의 눈꺼풀이 한 번 떨렸다. 열쇠고리가 손바닥 안에서 소리를 멈췄다.*
+*눈꺼풀이 한 번 떨렸다. 열쇠고리가 손바닥 안에서 소리를 멈췄다.*
 ```
 
 ### `day3_after_sea_truth_3`
@@ -8172,9 +8172,9 @@ _캐릭터: `sea_smile`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 창밖을 본다. 한참을. 복도에 두 사람 말고 아무도 없다. 햇빛이 세아의 얼굴 절반을 비추고 있다.*
+*창밖을 본다. 한참을. 복도에 두 사람 말고 아무도 없다. 햇빛이 얼굴 절반을 비추고 있다.*
 ```
 
 ### `day3_after_sea_truth_5`
@@ -8206,7 +8206,7 @@ _캐릭터: `sea_broken_smile`_
 ```text
 학교 사진...
 
-*세아가 되뇐다. 끝음이 바닥에 닿기도 전에 사라졌다.*
+*되뇐다. 끝음이 바닥에 닿기도 전에 사라졌다.*
 ```
 
 ### `day3_after_sea_truth_8`
@@ -8218,7 +8218,7 @@ _캐릭터: `sea_broken_smile`_
 ```text
 ...나도 가끔 그래. 문밖을 생각해.
 
-*세아가 웃는다. 열쇠고리는 손바닥 안쪽으로 깊게 말려 들어가 있다.*
+*웃는다. 열쇠고리는 손바닥 안쪽으로 깊게 말려 들어가 있다.*
 ```
 
 ### `day3_after_sea_truth_9`
@@ -8230,7 +8230,7 @@ _캐릭터: `sea_broken_smile`_
 ```text
 ...아무것도 아니야. 잊어.
 
-*세아가 돌아선다. 등이 작다.*
+*돌아선다. 등이 작다.*
 ```
 
 ### `day3_after_sea_lie`
@@ -8247,9 +8247,9 @@ _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `sea_yandere`_
 
-**나**
+**세아**
 ```text
-*세아의 입꼬리는 그대로다. 대신 열쇠고리 소리가 멈췄다.*
+*입꼬리는 그대로다. 대신 열쇠고리 소리가 멈췄다.*
 ```
 
 ### `day3_after_sea_lie_3`
@@ -8307,9 +8307,9 @@ _캐릭터: `sea_smile`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `sea_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 웃는다. 열쇠고리가 다시 흔들리기 시작했다.*
+*웃는다. 열쇠고리가 다시 흔들리기 시작했다.*
 ```
 
 ### `day3_after_eunsu`
@@ -8347,9 +8347,9 @@ _캐릭터: `eunsu_writing`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `eunsu_writing`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 자리에서 일어난다. 전화가 온 모양이다. 복도 반대쪽으로 걸어간다.*
+*자리에서 일어난다. 전화가 온 모양이다. 복도 반대쪽으로 걸어간다.*
 ```
 
 ### `day3_after_eunsu_5`
@@ -8468,9 +8468,9 @@ _배경: `teacher_office` / 캐릭터: `eunsu_smile`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `eunsu_smile`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 문 앞에 서 있다. 웃고 있다. 손에 든 휴대폰 화면은 꺼져 있다.*
+*문 앞에 서 있다. 웃고 있다. 손에 든 휴대폰 화면은 꺼져 있다.*
 ```
 
 ### `day3_after_eunsu_peek_9`
@@ -8478,9 +8478,9 @@ _캐릭터: `eunsu_smile`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `eunsu_smile`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 천천히 걸어와서 서류를 덮는다. 발끝 소리가 일정한 간격으로 다가왔다.*
+*천천히 걸어와서 서류를 덮는다. 발끝 소리가 일정한 간격으로 다가왔다.*
 ```
 
 ### `day3_after_eunsu_peek_10`
@@ -8498,9 +8498,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*은수는 처음과 같은 얼굴로 웃고 있다. 서류 모서리를 맞추는 손놀림도 흐트러지지 않는다.*
+*처음과 같은 얼굴로 웃고 있다. 서류 모서리를 맞추는 손놀림도 흐트러지지 않는다.*
 ```
 
 ### `day3_after_eunsu_ignore`
@@ -8651,9 +8651,9 @@ _캐릭터: `yuna_cautious`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `yuna_cautious`_
 
-**나**
+**유나**
 ```text
-*유나가 다가온다. 주머니에서 작은 것을 꺼낸다. 마이크로 SD카드.*
+*다가온다. 주머니에서 작은 것을 꺼낸다. 마이크로 SD카드.*
 ```
 
 ### `day3_after_yuna_4`
@@ -8691,9 +8691,9 @@ _캐릭터: `yuna_normal`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _캐릭터: `yuna_normal`_
 
-**나**
+**유나**
 ```text
-*유나의 손이 차갑다. 카드를 건네면서 내 손에 닿았다.*
+*손이 차갑다. 카드를 건네면서 {name}의 손에 닿았다.*
 ```
 
 ### `day3_after_yuna_7`
@@ -8733,13 +8733,13 @@ _캐릭터: `yuna_normal`_
 _source: `day3_3_afterschool.js / day3_afterschool.json`_
 _배경: `closeup_sd_card`_
 
-**나**
+**유나**
 ```text
-*유나가 돌아선다. 빠른 걸음으로. 화단 모퉁이를 돌아 사라진다.*
+*돌아선다. 빠른 걸음으로. 화단 모퉁이를 돌아 사라진다.*
 
-*손에 남은 SD카드가 작고 가볍다. 이 안에 13장의 사진이 들어 있다.*
+*{name}의 손에 남은 SD카드가 작고 가볍다. 이 안에 13장의 사진이 들어 있다.*
 
-*주머니 깊숙이 넣었다.*
+*{name}은 주머니 깊숙이 넣었다.*
 ```
 
 ### `day3_after_end`
@@ -8939,9 +8939,9 @@ _source: `day3_4_night.js / day3_night.json`_
 
 _source: `day3_4_night.js / day3_night.json`_
 
-**나**
+**유나**
 ```text
-*유나가 보여준 사진. 다른 이름표들이 눈꺼풀 안쪽에 차례로 붙는다.*
+*보여준 사진. 다른 이름표들이 눈꺼풀 안쪽에 차례로 붙는다.*
 ```
 
 ### `day3_night_bleed_3`
@@ -9038,9 +9038,9 @@ _source: `day3_4_night.js / day3_night.json`_
 
 _source: `day3_4_night.js / day3_night.json`_
 
-**나**
+**설화**
 ```text
-*설화의 시선은 늘 오른손이 아니라 왼손에 먼저 닿았다.*
+*시선은 늘 오른손이 아니라 왼손에 먼저 닿았다.*
 ```
 
 ### `day3_night_bleed_10`
@@ -9388,9 +9388,9 @@ _source: `day3_4_night.js / day3_night.json`_
 
 _source: `day3_4_night.js / day3_night.json`_
 
-**나**
+**창가의 여학생**
 ```text
-*그 여학생이 나를 보고 있다. 눈가에 맺힌 물기가 가로등 빛을 작게 붙잡고 있다.*
+*{name}을 보고 있다. 눈가에 맺힌 물기가 가로등 빛을 작게 붙잡고 있다.*
 ```
 
 ### `day3_night_seolhwa_5`
@@ -9468,9 +9468,9 @@ _캐릭터: `seolhwa_normal`_
 _source: `day3_4_night.js / day3_night.json`_
 _캐릭터: `seolhwa_normal`_
 
-**나**
+**창가의 여학생**
 ```text
-*그 여학생이 손을 뻗는다. 내 얼굴을 향해. 닿기 직전에 - 멈춘다.*
+*손을 뻗는다. {name}의 얼굴을 향해. 닿기 직전에 - 멈춘다.*
 ```
 
 ### `day3_night_seolhwa_11`
@@ -9488,9 +9488,9 @@ _캐릭터: `seolhwa_fading`_
 _source: `day3_4_night.js / day3_night.json`_
 _캐릭터: `seolhwa_fading`_
 
-**나**
+**창가의 여학생**
 ```text
-*그 여학생의 눈가에서 가는 선 하나가 내려오다 빛에 묻혔다.*
+*눈가에서 가는 선 하나가 내려오다 빛에 묻혔다.*
 ```
 
 ### `day3_night_seolhwa_12`
@@ -10157,9 +10157,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day4_1_morning.js / day4_morning.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 기다리고 있다.*
+*기다리고 있다.*
 ```
 
 **선택지**
@@ -10219,9 +10219,9 @@ _source: `day4_1_morning.js / day4_morning.json`_
 _source: `day4_1_morning.js / day4_morning.json`_
 _캐릭터: `eunsu_cold`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 내 뒤를 따라온다. 반 걸음 뒤에서. 내 그림자 끝에 선생님의 구두 앞코가 계속 걸린다.*
+*{name} 뒤를 따라온다. 반 걸음 뒤에서. {name}의 그림자 끝에 구두 앞코가 계속 걸린다.*
 ```
 
 ### `day4_morning_classroom`
@@ -10417,9 +10417,9 @@ _source: `day4_1_morning.js / day4_morning.json`_
 
 _source: `day4_1_morning.js / day4_morning.json`_
 
-**나**
+**세아**
 ```text
-*세아가 별 것 아니라는 듯 말한다. 빈 자리 옆 통로만 유난히 넓다. 아무도 그쪽으로 가방을 내려놓지 않는다.*
+*별 것 아니라는 듯 말한다. 빈 자리 옆 통로만 유난히 넓다. 아무도 그쪽으로 가방을 내려놓지 않는다.*
 ```
 
 ### `day4_morning_class_start`
@@ -10435,9 +10435,9 @@ _source: `day4_1_morning.js / day4_morning.json`_
 
 _source: `day4_1_morning.js / day4_morning.json`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 교탁에 선다. 분필을 집는다. 칠판에 '소속'이라고 쓴다.*
+*교탁에 선다. 분필을 집는다. 칠판에 '소속'이라고 쓴다.*
 ```
 
 ### `day4_morning_class_3`
@@ -10495,9 +10495,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day4_1_morning.js / day4_morning.json`_
 _캐릭터: `eunsu_serious`_
 
-**나**
+**은수**
 ```text
-*선생님의 시선이 나에게 고정된다. 교탁에서 한 발짝 다가온다.*
+*시선이 {name}에게 고정된다. 교탁에서 한 발짝 다가온다.*
 ```
 
 ### `day4_morning_class_8`
@@ -10748,18 +10748,18 @@ _source: `day4_2_lunch.js / day4_lunch.json`_
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 지나갔다. 열쇠를 꺼내 문을 열었다. 안으로 들어가며 문을 닫았다. 자물쇠 잠기는 소리.*
+*지나갔다. 열쇠를 꺼내 문을 열었다. 안으로 들어가며 문을 닫았다. 자물쇠 잠기는 소리.*
 ```
 
 ### `day4_lunch_yuna_18`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
 
-**나**
+**은수**
 ```text
-*은수의 열쇠가 잠금쇠 안으로 들어가는 소리가 아직 귓속에 남아 있다. 문 안쪽에서는 낮은 기계음이 계속 이어진다.*
+*열쇠가 잠금쇠 안으로 들어가는 소리가 아직 귓속에 남아 있다. 문 안쪽에서는 낮은 기계음이 계속 이어진다.*
 ```
 
 **선택지**
@@ -10790,9 +10790,9 @@ _source: `day4_2_lunch.js / day4_lunch.json`_
 _source: `day4_2_lunch.js / day4_lunch.json`_
 _배경: `nurse_office` / BGM: `tension_low.mp3`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 약품 캐비넷 앞에서 투명한 약액을 주사기에 옮기고 있다.*
+*약품 캐비넷 앞에서 투명한 약액을 주사기에 옮기고 있다.*
 ```
 
 ### `day4_lunch_nurse_first`
@@ -10867,9 +10867,9 @@ _캐릭터: `riin_cold`_
 _source: `day4_2_lunch.js / day4_lunch.json`_
 _캐릭터: `riin_cold`_
 
-**나**
+**리인**
 ```text
-*리인의 손가락은 주사기를 숨긴 채로도 눈금선을 가리고 있다. 앰플 라벨 `M-13`은 손등 뒤에 반쯤 보인다.*
+*손가락은 주사기를 숨긴 채로도 눈금선을 가리고 있다. 앰플 라벨 `M-13`은 손등 뒤에 반쯤 보인다.*
 ```
 
 ### `day4_lunch_nurse_6`
@@ -10885,9 +10885,9 @@ _source: `day4_2_lunch.js / day4_lunch.json`_
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님의 손이 주사기 뚜껑을 한 번 더 눌렀다. 딸깍. 그다음에야 대답이 돌아왔다.*
+*손이 주사기 뚜껑을 한 번 더 눌렀다. 딸깍. 그다음에야 대답이 돌아왔다.*
 ```
 
 ### `day4_lunch_nurse_8`
@@ -10934,9 +10934,9 @@ _캐릭터: `riin_smile`_
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
 
-**나**
+**리인**
 ```text
-*리인은 곧바로 컵을 씻기 시작했다. 물소리가 대답 사이를 메웠다.*
+*곧바로 컵을 씻기 시작했다. 물소리가 대답 사이를 메웠다.*
 ```
 
 ### `day4_lunch_nurse_13`
@@ -11258,9 +11258,9 @@ _배경: `student_council` / BGM: `sea_obsession.mp3`_
 
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 
-**나**
+**세아**
 ```text
-*세아가 문을 잠근다. 찰칵. 잠금 소리가 유독 크게 울렸다. 텅 빈 복도에.*
+*문을 잠근다. 찰칵. 잠금 소리가 유독 크게 울렸다. 텅 빈 복도에.*
 ```
 
 ### `day4_after_sea_3`
@@ -11278,9 +11278,9 @@ _캐릭터: `sea_smile`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_sad`_
 
-**나**
+**세아**
 ```text
-*세아가 앉는다. 책상 위 티슈가 한 장 구겨져 있고, 눈가가 붉다.*
+*앉는다. 책상 위 티슈가 한 장 구겨져 있고, 눈가가 붉다.*
 ```
 
 ### `day4_after_sea_5`
@@ -11308,9 +11308,9 @@ _캐릭터: `sea_serious`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_serious`_
 
-**나**
+**세아**
 ```text
-*세아가 나를 본다. 오랫동안. 내 얼굴을 외우려는 것처럼.*
+*{name}을 본다. 오랫동안. {name}의 얼굴을 외우려는 것처럼.*
 ```
 
 ### `day4_after_sea_8`
@@ -11338,9 +11338,9 @@ _캐릭터: `sea_serious`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_serious`_
 
-**나**
+**세아**
 ```text
-*세아의 입이 떨린다. 말하려다 멈춘다. 또 말하려다 멈춘다. 세 번째에 입을 연다.*
+*입이 떨린다. 말하려다 멈춘다. 또 말하려다 멈춘다. 세 번째에 입을 연다.*
 ```
 
 ### `day4_after_sea_11`
@@ -11390,9 +11390,9 @@ _캐릭터: `sea_serious`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_serious`_
 
-**나**
+**세아**
 ```text
-*세아가 창밖을 본다. 석양이 학생회실을 붉게 물들이고 있다.*
+*창밖을 본다. 석양이 학생회실을 붉게 물들이고 있다.*
 ```
 
 ### `day4_after_sea_confess_1`
@@ -11440,9 +11440,9 @@ _캐릭터: `sea_cry`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_cry`_
 
-**나**
+**세아**
 ```text
-*세아가 소매 끝으로 눈가를 문지르려다 멈췄다.*
+*소매 끝으로 눈가를 문지르려다 멈췄다.*
 ```
 
 ### `day4_after_sea_confess_6`
@@ -11460,9 +11460,9 @@ _캐릭터: `sea_cry`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_cry`_
 
-**나**
+**세아**
 ```text
-*세아가 소매를 걷는다. 손목에 낡은 실팔찌가 감겨있다. 실이 헤졌다. 몇 년은 된 것처럼.*
+*소매를 걷는다. 손목에 낡은 실팔찌가 감겨있다. 실이 헤졌다. 몇 년은 된 것처럼.*
 ```
 
 ### `day4_after_sea_confess_8`
@@ -11490,9 +11490,9 @@ _캐릭터: `sea_cry`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_broken_smile`_
 
-**나**
+**세아**
 ```text
-*세아가 웃었다. 속눈썹 아래 물기가 고였다.*
+*웃었다. 속눈썹 아래 물기가 고였다.*
 ```
 
 ### `day4_after_sea_12loop`
@@ -11500,9 +11500,9 @@ _캐릭터: `sea_broken_smile`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_sad`_
 
-**나**
+**세아**
 ```text
-*세아가 나를 안았다. 등 뒤로 손이 꽉 조여온다.*
+*{name}을 안았다. 등 뒤로 손이 꽉 조여온다.*
 ```
 
 ### `day4_after_sea_12loop_2`
@@ -11510,9 +11510,9 @@ _캐릭터: `sea_sad`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_sad`_
 
-**나**
+**세아**
 ```text
-*세아가 중얼거린다. 내 귀에 입술이 닿을 만큼 가까이서.*
+*중얼거린다. {name}의 귀에 입술이 닿을 만큼 가까이서.*
 ```
 
 ### `day4_after_sea_12loop_3`
@@ -11548,9 +11548,9 @@ _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_cry`_
 
-**나**
+**세아**
 ```text
-*세아의 팔에 힘이 들어갔다. 내 어깨에 닿은 숨이 한 번 끊겼다.*
+*팔에 힘이 들어갔다. {name}의 어깨에 닿은 숨이 한 번 끊겼다.*
 ```
 
 ### `day4_after_sea_12loop_7`
@@ -11577,9 +11577,9 @@ _캐릭터: `sea_cry`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_cry`_
 
-**나**
+**세아**
 ```text
-*세아가 나를 놓지 않는다. 오히려 더 세게 안았다. 어깨가 떨린다.*
+*{name}을 놓지 않는다. 오히려 더 세게 안았다. 어깨가 떨린다.*
 ```
 
 ### `day4_after_sea_12loop_10`
@@ -11606,9 +11606,9 @@ _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_cry`_
 
-**나**
+**세아**
 ```text
-*세아가 눈치챘다. 내가 팔찌를 보고 있다는 걸.*
+*눈치챘다. {name}이 팔찌를 보고 있다는 걸.*
 ```
 
 ### `day4_after_sea_12loop_13`
@@ -11636,9 +11636,9 @@ _캐릭터: `sea_broken_smile`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_cry`_
 
-**나**
+**세아**
 ```text
-*세아가 팔을 잡았다. 일어나려는데 놓아주질 않는다.*
+*팔을 잡았다. 일어나려는데 놓아주질 않는다.*
 ```
 
 ### `day4_after_ft_sea`
@@ -11711,9 +11711,9 @@ _캐릭터: `sea_sad`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `sea_sad`_
 
-**나**
+**세아**
 ```text
-*세아가 손을 놓았다. 팔에 손가락 자국이 남았다. 세아는 팔찌 매듭을 다시 소매 안으로 숨겼다.*
+*손을 놓았다. 팔에 손가락 자국이 남았다. 팔찌 매듭을 다시 소매 안으로 숨겼다.*
 ```
 
 ### `day4_after_eunsu_route`
@@ -11731,9 +11731,9 @@ _배경: `teacher_office` / BGM: `eunsu_theme.mp3`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `eunsu_serious`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 나를 보고 한숨을 쉰다. 피곤한 표정. 교무실에는 선생님 혼자다. 다른 책상 위 의자들은 모두 책상 밑으로 반듯하게 밀려 들어가 있다.*
+*{name}을 보고 한숨을 쉰다. 피곤한 표정. 교무실에는 혼자다. 다른 책상 위 의자들은 모두 책상 밑으로 반듯하게 밀려 들어가 있다.*
 ```
 
 ### `day4_after_eunsu_3`
@@ -11761,9 +11761,9 @@ _캐릭터: `eunsu_serious`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `eunsu_serious`_
 
-**나**
+**은수**
 ```text
-*선생님이 커피를 내리며 말한다. 담담하게. 커피 내리는 손이 흔들리지 않는다. 이 대화를 준비하고 있었던 것처럼.*
+*커피를 내리며 말한다. 담담하게. 커피 내리는 손이 흔들리지 않는다. 이 대화를 준비하고 있었던 것처럼.*
 ```
 
 ### `day4_after_eunsu_5`
@@ -11771,9 +11771,9 @@ _캐릭터: `eunsu_serious`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `eunsu_serious`_
 
-**나**
+**은수**
 ```text
-*선생님이 커피를 내린다. 잔 두 개. 하나를 내 앞에 놓았다.*
+*커피를 내린다. 잔 두 개. 하나를 {name} 앞에 놓았다.*
 ```
 
 ### `day4_after_eunsu_6`
@@ -11809,9 +11809,9 @@ _캐릭터: `eunsu_serious`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*선생님이 웃는다. 커피잔 손잡이는 내 왼손 쪽을 향해 있다.*
+*웃는다. 커피잔 손잡이는 {name}의 왼손 쪽을 향해 있다.*
 ```
 
 ### `day4_after_eunsu_10`
@@ -11856,9 +11856,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*선생님의 손이 내 머리 위에서 멈췄다. 쓰다듬으려다, 손가락을 천천히 접었다.*
+*손이 {name}의 머리 위에서 멈췄다. 쓰다듬으려다, 손가락을 천천히 접었다.*
 ```
 
 ### `day4_after_eunsu_15`
@@ -11885,9 +11885,9 @@ _배경: `nurse_office` / BGM: `riin_theme.mp3`_
 
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 책상에 앉아있다. 서류를 정리하고 있었다. 내가 들어서자 — 손이 멈춘다. 서류를 뒤집었다. 천천히. 자연스럽게. 하지만 나는 봤다. 'S-13 투약 기록'이라는 제목을.*
+*책상에 앉아있다. 서류를 정리하고 있었다. {name}이 들어서자 — 손이 멈춘다. 서류를 뒤집었다. 천천히. 자연스럽게. 하지만 {name}은 봤다. 'S-13 투약 기록'이라는 제목을.*
 ```
 
 ### `day4_after_riin_3`
@@ -11905,9 +11905,9 @@ _캐릭터: `riin_neutral`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `riin_neutral`_
 
-**나**
+**리인**
 ```text
-*리인의 손이 뒤집은 서류 위에 그대로 놓여 있다. 손바닥 아래 제목 일부가 아직 보인다. `S-13`.*
+*손이 뒤집은 서류 위에 그대로 놓여 있다. 손바닥 아래 제목 일부가 아직 보인다. `S-13`.*
 ```
 
 ### `day4_after_riin_5`
@@ -11995,9 +11995,9 @@ _캐릭터: `riin_cold`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `riin_cold`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 한숨을 쉰다. 길게. 책상 위 체온계 표시등이 초록색에서 꺼졌다.*
+*한숨을 쉰다. 길게. 책상 위 체온계 표시등이 초록색에서 꺼졌다.*
 ```
 
 ### `day4_after_riin_12`
@@ -12015,9 +12015,9 @@ _캐릭터: `riin_cold`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `riin_cold`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 주머니에서 열쇠를 꺼낸다. 작은 금속 열쇠.*
+*주머니에서 열쇠를 꺼낸다. 작은 금속 열쇠.*
 ```
 
 ### `day4_after_riin_16`
@@ -12075,9 +12075,9 @@ _캐릭터: `riin_cold`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `riin_cold`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 나를 본다. 명찰 끈이 비뚤어진 채로 흔들리지 않는다.*
+*{name}을 본다. 명찰 끈이 비뚤어진 채로 흔들리지 않는다.*
 ```
 
 ### `day4_after_riin_22`
@@ -12125,9 +12125,9 @@ _캐릭터: `riin_cold`_
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
 _캐릭터: `riin_cold`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 창밖을 본다. 지는 해. 보건실이 주황빛으로 물든다.*
+*창밖을 본다. 지는 해. 보건실이 주황빛으로 물든다.*
 ```
 
 ### `day4_after_riin_27`
@@ -12954,9 +12954,9 @@ _source: `day4_4_night.js / day4_night.json`_
 _source: `day4_4_night.js / day4_night.json`_
 _캐릭터: `seolhwa_sad`_
 
-**나**
+**설화**
 ```text
-*설화가 옆에 앉아있다. 거울 쪽에는 아무 그림자도 늘어나지 않는다.*
+*옆에 앉아있다. 거울 쪽에는 아무 그림자도 늘어나지 않는다.*
 ```
 
 ### `day4_night_mirror_collapse_9`
@@ -13483,9 +13483,9 @@ _source: `day5_1_morning.js / day5_morning.json`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나가 침대에 묶여있다. 눈은 떠 있지만 초점이 흔들린다. 팔목에는 가죽 끈이 감겨 있고, 피부가 빨갛게 쓸려 있다.*
+*침대에 묶여있다. 눈은 떠 있지만 초점이 흔들린다. 팔목에는 가죽 끈이 감겨 있고, 피부가 빨갛게 쓸려 있다.*
 ```
 
 ### `day5_morning_rescue_2_unknown`
@@ -13543,9 +13543,9 @@ _캐릭터: `yuna_weak`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나의 눈에 초점이 돌아온다. 미약하지만. 유나는 내가 기록을 봤다는 걸 눈치챘다. 헐떡이면서 입을 연다.*
+*눈에 초점이 돌아온다. 미약하지만. {name}이 기록을 봤다는 걸 눈치챘다. 헐떡이면서 입을 연다.*
 ```
 
 ### `day5_morning_rescue_5`
@@ -13563,9 +13563,9 @@ _캐릭터: `yuna_weak`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나의 손가락이 바닥에 흩어진 서류 더미를 가리킨다. 떨리는 손. 방향은 확실하다.*
+*손가락이 바닥에 흩어진 서류 더미를 가리킨다. 떨리는 손. 방향은 확실하다.*
 ```
 
 ### `day5_morning_rescue_6`
@@ -13653,9 +13653,9 @@ _캐릭터: `yuna_weak`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나의 입술이 떨렸다.*
+*입술이 떨렸다.*
 ```
 
 ### `day5_morning_rescue_15`
@@ -13703,9 +13703,9 @@ _캐릭터: `yuna_weak`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나의 눈가에 물기가 고였지만, 흘러내리지는 않았다.*
+*눈가에 물기가 고였지만, 흘러내리지는 않았다.*
 ```
 
 ### `day5_morning_rescue_20`
@@ -13802,9 +13802,9 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 _source: `day5_1_morning.js / day5_morning.json`_
 
-**나**
+**유나**
 ```text
-*유나가 말을 잇지 못한다. 숨이 짧게 끊긴다.*
+*말을 잇지 못한다. 숨이 짧게 끊긴다.*
 ```
 
 ### `day5_morning_true_6`
@@ -13829,9 +13829,9 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 _source: `day5_1_morning.js / day5_morning.json`_
 
-**나**
+**유나**
 ```text
-*유나가 침대에 기대앉은 채 가리킨다. 다른 서류 뭉치. 깔끔한 글씨. 단정한 문장. 사람을 물건처럼 기술하는 문장들. — 은수 선생님의 관찰 일지.*
+*침대에 기대앉은 채 가리킨다. 다른 서류 뭉치. 깔끔한 글씨. 단정한 문장. 사람을 물건처럼 기술하는 문장들. — 은수 선생님의 관찰 일지.*
 ```
 
 ### `day5_morning_true_9`
@@ -14048,9 +14048,9 @@ _캐릭터: `yuna_weak`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나가 나를 붙잡는다. 손에 힘이 없다.*
+*{name}을 붙잡는다. 손에 힘이 없다.*
 ```
 
 ### `day5_morning_true_32`
@@ -14243,18 +14243,18 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 _source: `day5_1_morning.js / day5_morning.json`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 어깨에 손을 올렸다. 따뜻한 손이다. 손가락 끝이 천천히 안쪽으로 조여 왔다.*
+*어깨에 손을 올렸다. 따뜻한 손이다. 손가락 끝이 천천히 안쪽으로 조여 왔다.*
 ```
 
 ### `day5_morning_true_post_ft_2`
 
 _source: `day5_1_morning.js / day5_morning.json`_
 
-**나**
+**은수**
 ```text
-*선생님은 바로 붙잡지 않았다. 대신 시선을 위로 던졌다. 그 순간 어딘가에서 철문 닫히는 소리가 울렸다.*
+*바로 붙잡지 않았다. 대신 시선을 위로 던졌다. 그 순간 어딘가에서 철문 닫히는 소리가 울렸다.*
 ```
 
 ### `day5_morning_true_post_ft_3`
@@ -14333,9 +14333,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*은수 선생님의 목소리가 스피커를 통해 울린다. 평소처럼 따뜻하다. 너무 고르다. — 입 안에 침이 고인다. 삼켰다. 금속 맛이 난다.*
+*목소리가 스피커를 통해 울린다. 평소처럼 따뜻하다. 너무 고르다. — 입 안에 침이 고인다. 삼켰다. 금속 맛이 난다.*
 ```
 
 ### `day5_morning_broadcast_3`
@@ -14403,9 +14403,9 @@ _캐릭터: `yuna_weak`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나의 목소리가 떨린다. 소매를 잡은 손가락에 힘이 들어간다.*
+*목소리가 떨린다. 소매를 잡은 손가락에 힘이 들어간다.*
 ```
 
 ### `day5_morning_broadcast_10`
@@ -14443,9 +14443,9 @@ _캐릭터: `yuna_weak`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나가 말을 멈췄다. 둘 다 위를 올려다봤다. 쿵. 또 하나. 3층도 봉쇄됐다.*
+*말을 멈췄다. 둘 다 위를 올려다봤다. 쿵. 또 하나. 3층도 봉쇄됐다.*
 ```
 
 ### `day5_morning_broadcast_14`
@@ -14463,9 +14463,9 @@ _캐릭터: `yuna_weak`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나가 내 소매를 잡았다. 손가락에 힘이 들어가있다.*
+*{name}의 소매를 잡았다. 손가락에 힘이 들어가있다.*
 ```
 
 ### `day5_morning_broadcast_16`
@@ -14533,9 +14533,9 @@ _캐릭터: `yuna_weak`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나가 복도 구석에 몸을 숨겼다. 핸드폰의 녹음 버튼을 눌렀다.*
+*복도 구석에 몸을 숨겼다. 핸드폰의 녹음 버튼을 눌렀다.*
 ```
 
 ### `day5_morning_grad_5`
@@ -14608,9 +14608,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 교탁 위의 종이를 들어올린다. 종이 끝이 흔들리지 않는다.*
+*교탁 위의 종이를 들어올린다. 종이 끝이 흔들리지 않는다.*
 ```
 
 ### `day5_morning_grad_13`
@@ -14638,9 +14638,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 첫 장을 넘긴다. 김도진. 사진 옆에 빨간 펜으로 적힌 문장.*
+*첫 장을 넘긴다. 김도진. 사진 옆에 빨간 펜으로 적힌 문장.*
 ```
 
 ### `day5_morning_grad_16`
@@ -14698,9 +14698,9 @@ _캐릭터: `eunsu_gentle`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_gentle`_
 
-**나**
+**은수**
 ```text
-*은수 선생님은 그 장을 넘기지 못했다.*
+*그 장을 넘기지 못했다.*
 ```
 
 ### `day5_morning_grad_21a`
@@ -14758,9 +14758,9 @@ _캐릭터: `eunsu_dark`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_dark`_
 
-**나**
+**은수**
 ```text
-*선생님이 웃으려다 실패했다.*
+*웃으려다 실패했다.*
 ```
 
 ### `day5_morning_grad_27`
@@ -14788,9 +14788,9 @@ _캐릭터: `eunsu_dark`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_dark`_
 
-**나**
+**은수**
 ```text
-*선생님이 내 이름을 부르다 말고, 다시 체크리스트를 본다.*
+*{name}의 이름을 부르다 말고, 다시 체크리스트를 본다.*
 ```
 
 ### `day5_morning_grad_29a`
@@ -14857,9 +14857,9 @@ _캐릭터: `eunsu_dark`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_dark`_
 
-**나**
+**은수**
 ```text
-*선생님이 3번째 장 위에 손가락을 올렸다. '연장 승인 요청' 도장이 찍혀 있다. 신청자: 박은수.*
+*3번째 장 위에 손가락을 올렸다. '연장 승인 요청' 도장이 찍혀 있다. 신청자: 박은수.*
 ```
 
 ### `day5_morning_grad_reply_2c`
@@ -14876,9 +14876,9 @@ _캐릭터: `eunsu_dark`_
 
 _source: `day5_1_morning.js / day5_morning.json`_
 
-**나**
+**은수**
 ```text
-*은수 선생님의 입꼬리가 올라갔다. 눈 밑 근육은 굳어 있었다.*
+*입꼬리가 올라갔다. 눈 밑 근육은 굳어 있었다.*
 ```
 
 ### `day5_morning_grad_reply_3b`
@@ -14906,9 +14906,9 @@ _캐릭터: `eunsu_dark`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_dark`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 교탁에서 벗어났다. 한 발, 두 발. 내 쪽으로 걸어온다. 멈췄다. — 2미터 거리.*
+*교탁에서 벗어났다. 한 발, 두 발. {name} 쪽으로 걸어온다. 멈췄다. — 2미터 거리.*
 ```
 
 ### `day5_morning_proposal_3`
@@ -14916,9 +14916,9 @@ _캐릭터: `eunsu_dark`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_shaking`_
 
-**나**
+**은수**
 ```text
-*선생님의 입술이 움직였다. 소리가 안 나왔다. 다시.*
+*입술이 움직였다. 소리가 안 나왔다. 다시.*
 ```
 
 ### `day5_morning_proposal_4`
@@ -14956,9 +14956,9 @@ _캐릭터: `eunsu_crying`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_crying`_
 
-**나**
+**은수**
 ```text
-*선생님은 자기 이름이 적힌 승인서들을 보지 않았다. 이미 외운 사람처럼.*
+*자기 이름이 적힌 승인서들을 보지 않았다. 이미 외운 사람처럼.*
 ```
 
 ### `day5_morning_proposal_8`
@@ -14966,9 +14966,9 @@ _캐릭터: `eunsu_crying`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_crying`_
 
-**나**
+**은수**
 ```text
-*선생님이 고개를 들었다. 눈가가 붉게 번져 있었다.*
+*고개를 들었다. 눈가가 붉게 번져 있었다.*
 ```
 
 ### `day5_morning_proposal_9`
@@ -14986,9 +14986,9 @@ _캐릭터: `eunsu_crying`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_crying`_
 
-**나**
+**은수**
 ```text
-*선생님이 일어섰다. 눈가의 물기를 닦지 않은 채로.*
+*일어섰다. 눈가의 물기를 닦지 않은 채로.*
 ```
 
 ### `day5_morning_proposal_11`
@@ -15046,9 +15046,9 @@ _캐릭터: `eunsu_dark`_
 _source: `day5_1_morning.js / day5_morning.json`_
 _캐릭터: `eunsu_dark`_
 
-**나**
+**은수**
 ```text
-*선생님이 입을 다물었다.*
+*입을 다물었다.*
 ```
 
 ### `day5_morning_proposal_17`
@@ -15133,9 +15133,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 _source: `day5_2_lunch.js / day5_lunch.json`_
 _캐릭터: `yuna_weak`_
 
-**나**
+**유나**
 ```text
-*유나의 숨소리가 거칠다. 다리가 자꾸 접힌다. 내 어깨에 기댄 체중이 점점 무거워진다.*
+*숨소리가 거칠다. 다리가 자꾸 접힌다. {name}의 어깨에 기댄 체중이 점점 무거워진다.*
 ```
 
 ### `day5_lunch_chase_3a`
@@ -15259,9 +15259,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**세아**
 ```text
-*세아의 목소리가 갈라져 있다. 소매 끝은 이미 젖어 있다.*
+*목소리가 갈라져 있다. 소매 끝은 이미 젖어 있다.*
 ```
 
 ### `day5_lunch_left_5a`
@@ -15277,9 +15277,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**세아**
 ```text
-*세아가 고개를 저었다. 입술을 깨물었다. 피가 맺혔다.*
+*고개를 저었다. 입술을 깨물었다. 피가 맺혔다.*
 ```
 
 ### `day5_lunch_left_6`
@@ -15295,9 +15295,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**세아**
 ```text
-*세아의 두 손이 주먹을 쥐었다. 떨린다. 나를 막으려는 건지, 자기 자신을 붙잡으려는 건지.*
+*두 손이 주먹을 쥐었다. 떨린다. {name}을 막으려는 건지, 자기 자신을 붙잡으려는 건지.*
 ```
 
 ### `day5_lunch_left_8`
@@ -15367,9 +15367,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**세아**
 ```text
-*세아의 숨이 한 번 걸렸다.*
+*숨이 한 번 걸렸다.*
 ```
 
 ### `day5_lunch_left_16`
@@ -15484,9 +15484,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**세아**
 ```text
-*세아가 소매로 눈가를 눌렀다. 그리고 — 비켜섰다.*
+*소매로 눈가를 눌렀다. 그리고 — 비켜섰다.*
 ```
 
 ### `day5_lunch_left_c1_2`
@@ -15570,9 +15570,9 @@ _캐릭터: `sea_cry`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**세아**
 ```text
-*세아의 눈이 커졌다. 열쇠고리가 손바닥 안에서 딱 멈췄다.*
+*눈이 커졌다. 열쇠고리가 손바닥 안에서 딱 멈췄다.*
 ```
 
 ### `day5_lunch_left_c2_3`
@@ -15608,9 +15608,9 @@ _캐릭터: `sea_vulnerable`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**세아**
 ```text
-*세아가 자기 손을 내려다봤다. 손목 안쪽에는 학생회실 열쇠고리 자국처럼 눌린 붉은 선이 남아 있다. 창밖을 보는 데 시간이 걸렸다.*
+*자기 손을 내려다봤다. 손목 안쪽에는 학생회실 열쇠고리 자국처럼 눌린 붉은 선이 남아 있다. 창밖을 보는 데 시간이 걸렸다.*
 ```
 
 ### `day5_lunch_left_c2_7`
@@ -15704,9 +15704,9 @@ _배경: `old_infirmary`_
 _source: `day5_2_lunch.js / day5_lunch.json`_
 _캐릭터: `riin_casual`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 캐비넷 앞에 서 있다. 백의를 입고 있지 않다. 사복. — 떠날 준비를 한 것처럼 보인다.*
+*캐비넷 앞에 서 있다. 백의를 입고 있지 않다. 사복. — 떠날 준비를 한 것처럼 보인다.*
 ```
 
 ### `day5_lunch_right_6`
@@ -15741,9 +15741,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 주사기를 하나 집어들었다.*
+*주사기를 하나 집어들었다.*
 ```
 
 ### `day5_lunch_right_10`
@@ -15771,9 +15771,9 @@ _캐릭터: `riin_neutral`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 주사기를 — 천천히, 일부러 천천히 — 싱크대에 내려놓았다. 탁. 금속이 세라믹에 부딪히는 소리.*
+*주사기를 — 천천히, 일부러 천천히 — 싱크대에 내려놓았다. 탁. 금속이 세라믹에 부딪히는 소리.*
 ```
 
 ### `day5_lunch_right_13`
@@ -15790,18 +15790,18 @@ _캐릭터: `riin_neutral`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 캐비넷을 열었다. 약병이 줄지어 있다.*
+*캐비넷을 열었다. 약병이 줄지어 있다.*
 ```
 
 ### `day5_lunch_right_15`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 약병의 뚜껑을 열었다. 코에 가져갔다. 냄새를 맡았다. — 그리고 한 모금 마셨다.*
+*약병의 뚜껑을 열었다. 코에 가져갔다. 냄새를 맡았다. — 그리고 한 모금 마셨다.*
 ```
 
 ### `day5_lunch_right_16`
@@ -15846,9 +15846,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 약병 라벨을 엄지로 문질렀다. 덧붙인 라벨 아래로 병원에서 쓰는 평범한 수액 코드가 비쳤다.*
+*약병 라벨을 엄지로 문질렀다. 덧붙인 라벨 아래로 병원에서 쓰는 평범한 수액 코드가 비쳤다.*
 ```
 
 ### `day5_lunch_right_21`
@@ -15964,18 +15964,18 @@ _캐릭터: `riin_pain`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 주머니에서 열쇠를 꺼냈다. 작은 은색 열쇠. 표면의 홈이 손때로 반질하다.*
+*주머니에서 열쇠를 꺼냈다. 작은 은색 열쇠. 표면의 홈이 손때로 반질하다.*
 ```
 
 ### `day5_lunch_right_33`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**리인**
 ```text
-*선생님이 열쇠를 내밀었다. 손은 떨리지 않았다.*
+*열쇠를 내밀었다. 손은 떨리지 않았다.*
 ```
 
 ### `day5_lunch_right_34`
@@ -16031,9 +16031,9 @@ _캐릭터: `riin_neutral`_
 _source: `day5_2_lunch.js / day5_lunch.json`_
 _캐릭터: `riin_pain`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 열쇠를 내밀고 있다. 작은 은색 열쇠. — 손이 떨리고 있다.*
+*열쇠를 내밀고 있다. 작은 은색 열쇠. — 손이 떨리고 있다.*
 ```
 
 ### `day5_lunch_right_choice`
@@ -16065,9 +16065,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 _source: `day5_2_lunch.js / day5_lunch.json`_
 _캐릭터: `riin_pain`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 잠깐 멈췄다. 열쇠를 내 손에 쥐어줬다. 그리고 — 캐비넷 위의 가방을 집어들었다. 떠날 준비는 이미 되어 있었다.*
+*잠깐 멈췄다. 열쇠를 {name}의 손에 쥐어줬다. 그리고 — 캐비넷 위의 가방을 집어들었다. 떠날 준비는 이미 되어 있었다.*
 ```
 
 ### `day5_lunch_right_c3_1`
@@ -16084,9 +16084,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 _source: `day5_2_lunch.js / day5_lunch.json`_
 _캐릭터: `riin_pain`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 주사기를 집어 자기 팔에 꽂았다. 무활성 희석액을.*
+*주사기를 집어 자기 팔에 꽂았다. 무활성 희석액을.*
 ```
 
 ### `day5_lunch_right_c3_3`
@@ -16113,9 +16113,9 @@ _캐릭터: `riin_pain`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**리인**
 ```text
-*선생님이 쓴웃음을 지었다. 열쇠를 받았다.*
+*쓴웃음을 지었다. 열쇠를 {name}에게 넘겼다.*
 ```
 
 ### `day5_lunch_seolhwa_1`
@@ -16168,9 +16168,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화가 대답하지 않았다.*
+*대답하지 않았다.*
 ```
 
 ### `day5_lunch_seolhwa_7`
@@ -16231,9 +16231,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화가 계단에 앉았다. 무릎을 감싸안았다. 4일차 밤, 욕실 타일 위에 남았던 냉기가 떠올랐다.*
+*계단에 앉았다. 무릎을 감싸안았다. 4일차 밤, 욕실 타일 위에 남았던 냉기가 떠올랐다.*
 ```
 
 ### `day5_lunch_seolhwa_14`
@@ -16348,9 +16348,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화의 눈가가 형광등에 잠깐 번졌다. 젖어 있는지, 빛이 흔들린 건지 구분되지 않는다.*
+*눈가가 형광등에 잠깐 번졌다. 젖어 있는지, 빛이 흔들린 건지 구분되지 않는다.*
 ```
 
 ### `day5_lunch_seolhwa_27`
@@ -16366,9 +16366,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화가 눈을 깜빡였다. 계단 벽의 흠집들이 잠깐 선명해졌다.*
+*눈을 깜빡였다. 계단 벽의 흠집들이 잠깐 선명해졌다.*
 ```
 
 ### `day5_lunch_seolhwa_29`
@@ -16433,9 +16433,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화가 자기 손을 들어다봤다. 손끝이 흐릿하다.*
+*자기 손을 들어다봤다. 손끝이 흐릿하다.*
 ```
 
 ### `day5_lunch_seolhwa_c2_3`
@@ -16460,9 +16460,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화가 웃었다.*
+*웃었다.*
 ```
 
 ### `day5_lunch_seolhwa_c2_6`
@@ -16571,9 +16571,9 @@ _배경: `corridor_emergency`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화가 문 앞에서 돌아봤다. 웃는 얼굴의 가장자리가 계단 빛에 조금씩 풀린다.*
+*문 앞에서 돌아봤다. 웃는 얼굴의 가장자리가 계단 빛에 조금씩 풀린다.*
 ```
 
 ### `day5_lunch_seolhwa_guide_13a`
@@ -16589,9 +16589,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화가 서 있던 벽면을 더듬었다. 페인트 밑 패널 가장자리가 손끝에 걸렸다. 뜯어 올리자 녹슨 회로가 드러났고, 레버를 내리자 스파크와 함께 경보가 터졌다.*
+*서 있던 벽면을 더듬었다. 페인트 밑 패널 가장자리가 손끝에 걸렸다. 뜯어 올리자 녹슨 회로가 드러났고, 레버를 내리자 스파크와 함께 경보가 터졌다.*
 ```
 
 ### `day5_lunch_seolhwa_guide_14`
@@ -16607,9 +16607,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화의 머리카락이 바람에 흔들렸다. 유나의 카메라 화면 속 비상구는 텅 비어 있다. 그런데 바람은, 내 눈앞의 은백색 머리카락을 지나간다.*
+*머리카락이 바람에 흔들렸다. 유나의 카메라 화면 속 비상구는 텅 비어 있다. 그런데 바람은, {name}의 눈앞의 은백색 머리카락을 지나간다.*
 ```
 
 ### `day5_lunch_seolhwa_guide_16`
@@ -16662,18 +16662,18 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 모습을 드러냈다. 숨이 차있다. 머리카락이 흐트러져있다. — 교실에서 봤을 때의 정돈된 모습이 아니다.*
+*모습을 드러냈다. 숨이 차있다. 머리카락이 흐트러져있다. — 교실에서 봤을 때의 정돈된 모습이 아니다.*
 ```
 
 ### `day5_lunch_eunsu_6`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**은수**
 ```text
-*선생님이 숨을 고르며 억지로 입꼬리를 올린다. 평소의 다정한 미소. 그런데 입가 한쪽이 가늘게 떨린다.*
+*숨을 고르며 억지로 입꼬리를 올린다. 평소의 다정한 미소. 그런데 입가 한쪽이 가늘게 떨린다.*
 ```
 
 ### `day5_lunch_eunsu_7`
@@ -16698,9 +16698,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**은수**
 ```text
-*은수 선생님의 이마에 땀이 맺혀 있고 눈 밑은 어둡다.*
+*이마에 땀이 맺혀 있고 눈 밑은 어둡다.*
 
 *비상구의 찬 바람이 둘 사이를 지나갔다.*
 ```
@@ -16754,9 +16754,9 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**은수**
 ```text
-*선생님이 한 발 다가왔다.*
+*한 발 다가왔다.*
 ```
 
 ### `day5_lunch_eunsu_16`
@@ -16781,18 +16781,18 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**은수**
 ```text
-*선생님이 멈췄다. 비상구 앞. 나와 3미터 거리.*
+*멈췄다. 비상구 앞. {name}과 3미터 거리.*
 ```
 
 ### `day5_lunch_eunsu_19`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**은수**
 ```text
-*선생님이 주머니에서 주사기를 꺼냈다. 천천히. 보여주듯이.*
+*주머니에서 주사기를 꺼냈다. 천천히. 보여주듯이.*
 
 *주사기 안의 액체가 형광등 빛을 받아 반짝였다. 라벨에는 작은 글씨로 적혀 있다. `RESET / S-13`. 방울 하나가 바늘 끝에 매달렸다.*
 ```
@@ -16860,18 +16860,18 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**은수**
 ```text
-*선생님의 손이 떨리고 있다. 주사기가 흔들린다. 한 방울이 바닥에 떨어졌다.*
+*손이 떨리고 있다. 주사기가 흔들린다. 한 방울이 바닥에 떨어졌다.*
 ```
 
 ### `day5_lunch_eunsu_27`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**은수**
 ```text
-*선생님의 눈가에서 물기가 턱 아래로 떨어졌다. 주사기만 계속 들고 있었다.*
+*눈가에서 물기가 턱 아래로 떨어졌다. 주사기만 계속 들고 있었다.*
 ```
 
 ### `day5_lunch_eunsu_28`
@@ -16905,18 +16905,18 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**은수**
 ```text
-*선생님이 한 발 더 다가왔다. 이제 팔을 뻗으면 닿는 거리다.*
+*한 발 더 다가왔다. 이제 팔을 뻗으면 닿는 거리다.*
 ```
 
 ### `day5_lunch_eunsu_32`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
 
-**나**
+**설화**
 ```text
-*설화가 — 보인다. 선생님의 뒤에. 계단 아래에. 흐릿한 윤곽으로. 아무 말도 하지 않는다. 그저 — 나를 보고 있다.*
+*— 보인다. 선생님의 뒤에. 계단 아래에. 흐릿한 윤곽으로. 아무 말도 하지 않는다. 그저 — {name}을 보고 있다.*
 ```
 
 ### `day5_lunch_eunsu_final`
@@ -17020,9 +17020,9 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**은수**
 ```text
-*선생님이 웃었다. 출석부 맨 아래 칸이 닫힌 뒤의 얼굴이었다.*
+*웃었다. 출석부 맨 아래 칸이 닫힌 뒤의 얼굴이었다.*
 ```
 
 ### `day5_after_cage_4`
@@ -17039,9 +17039,9 @@ _캐릭터: `eunsu_gentle`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**은수**
 ```text
-*선생님이 내 어깨를 잡고 자리로 돌려세웠다. 손끝이 차가웠다.*
+*{name}의 어깨를 잡고 자리로 돌려세웠다. 손끝이 차가웠다.*
 ```
 
 ### `day5_after_cage_6`
@@ -17152,9 +17152,9 @@ _캐릭터: `riin_dark`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**리인**
 ```text
-*리인 선생님이 팔꿈치 안쪽을 소독한다. 알코올 솜의 차가움이 피부에 닿는다. 손목에 힘을 줬다.*
+*팔꿈치 안쪽을 소독한다. 알코올 솜의 차가움이 {name}의 피부에 닿는다. {name}이 손목에 힘을 줬다.*
 ```
 
 ### `day5_after_caught_choice`
@@ -17306,9 +17306,9 @@ _캐릭터: `eunsu_obsessed`_
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _캐릭터: `eunsu_obsessed`_
 
-**나**
+**은수**
 ```text
-*선생님이 숨을 고르며 억지로 입꼬리를 올린다. 평소의 다정한 미소. 하지만 안면 근육이 미세하게 경련하고 있다.*
+*숨을 고르며 억지로 입꼬리를 올린다. 평소의 다정한 미소. 하지만 안면 근육이 미세하게 경련하고 있다.*
 ```
 
 ### `day5_after_confront_5`
@@ -17413,9 +17413,9 @@ _캐릭터: `eunsu_gentle`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**은수**
 ```text
-*선생님이 멈췄다. 비상구 앞. 나와 3미터 거리. 선생님이 주머니에서 주사기를 꺼냈다. 천천히. 보여주듯이.*
+*멈췄다. 비상구 앞. {name}과 3미터 거리. 주머니에서 주사기를 꺼냈다. 천천히. 보여주듯이.*
 ```
 
 ### `day5_after_confront_16`
@@ -17452,9 +17452,9 @@ _캐릭터: `eunsu_obsessed`_
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _캐릭터: `eunsu_crying`_
 
-**나**
+**은수**
 ```text
-*선생님의 손이 떨리고 있다. 주사기가 흔들린다. 한 방울이 바닥에 떨어졌다. 선생님은 주사기만 계속 들고 있었다.*
+*손이 떨리고 있다. 주사기가 흔들린다. 한 방울이 바닥에 떨어졌다. 주사기만 계속 들고 있었다.*
 ```
 
 ### `day5_after_confront_20`
@@ -17484,9 +17484,9 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**은수**
 ```text
-*은수 선생님의 손이 떨린다. 주사기가 바닥에 떨어졌다. 유리가 타일에 부딪히며 산산조각 났다.*
+*손이 떨린다. 주사기가 바닥에 떨어졌다. 유리가 타일에 부딪히며 산산조각 났다.*
 ```
 
 ### `day5_after_true_2`
@@ -17502,9 +17502,9 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**은수**
 ```text
-*선생님이 비켜섰다. 눈을 감고. 주사기를 쥔 손이 아래로 떨어졌다.*
+*비켜섰다. 눈을 감고. 주사기를 쥔 손이 아래로 떨어졌다.*
 ```
 
 ### `day5_after_true_4`
@@ -17531,9 +17531,9 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _캐릭터: `seolhwa_fading`_
 
-**나**
+**설화**
 ```text
-*설화가 비상구 안쪽에 서 있다. 문 밖으로 나오지 못한다.*
+*비상구 안쪽에 서 있다. 문 밖으로 나오지 못한다.*
 ```
 
 ### `day5_after_true_7`
@@ -17570,9 +17570,9 @@ _캐릭터: `seolhwa_fading`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**설화**
 ```text
-*설화가 웃었다. 윤곽이 비상등 아래에서 흐려졌다.*
+*웃었다. 윤곽이 비상등 아래에서 흐려졌다.*
 ```
 
 ### `day5_after_true_10`
@@ -17609,9 +17609,9 @@ _캐릭터: `seolhwa_fading`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**설화**
 ```text
-*설화의 윤곽이 흩어진다. 비 오는 계단의 냄새, 젖은 교복 소매, 왼손을 잡던 차가운 손이 한꺼번에 밀려든다.*
+*윤곽이 흩어진다. 비 오는 계단의 냄새, 젖은 교복 소매, 왼손을 잡던 차가운 손이 한꺼번에 밀려든다.*
 ```
 
 ### `day5_after_forget_1`
@@ -17664,9 +17664,9 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _캐릭터: `eunsu_shaking`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 주사기를 들었다. 손이 떨린다.*
+*주사기를 들었다. 손이 떨린다.*
 ```
 
 ### `day5_after_forget_7`
@@ -17788,9 +17788,9 @@ _캐릭터: `seolhwa_fading`_
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _캐릭터: `eunsu_obsessed`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 멈췄다. 설화가 보였다. 선생님 뒤에 서 있는 게 아니라 — 내 시야 위로 겹쳐진 잔상처럼.*
+*멈췄다. {name}의 시야에 설화가 보였다. 그 뒤에 서 있는 게 아니라 — {name}의 시야 위로 겹쳐진 잔상처럼.*
 ```
 
 ### `day5_after_resist_8`
@@ -17827,9 +17827,9 @@ _캐릭터: `seolhwa_fading`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 주사기를 바닥에 놓았다. ...한참을 서있었다.*
+*주사기를 바닥에 놓았다. ...한참을 서있었다.*
 ```
 
 ### `day5_after_resist_12`
@@ -17924,9 +17924,9 @@ _캐릭터: `eunsu_crying`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 입을 가렸다. 숨이 두 번 끊겼다.*
+*입을 가렸다. 숨이 두 번 끊겼다.*
 ```
 
 ### `day5_after_resist_15`
@@ -17953,9 +17953,9 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _캐릭터: `eunsu_obsessed`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 다가온다. 주사기를 들고.*
+*다가온다. 주사기를 들고.*
 ```
 
 ### `day5_after_ghost_3`
@@ -18001,9 +18001,9 @@ _캐릭터: `seolhwa_normal`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**설화**
 ```text
-*설화가 나를 똑바로 봤다. 카메라에도, 출석부에도 없는 눈동자가 이 순간만은 누구보다 또렷하다.*
+*{name}을 똑바로 봤다. 카메라에도, 출석부에도 없는 눈동자가 이 순간만은 누구보다 또렷하다.*
 ```
 
 ### `day5_after_ghost_8`
@@ -18031,9 +18031,9 @@ _캐릭터: `seolhwa_fading`_
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 _캐릭터: `seolhwa_fading`_
 
-**나**
+**은수**
 ```text
-*은수 선생님이 뒤에서 외쳤지만 멈추지 않았다. 비상구를 나섰다. 뒤를 돌아봤다. 설화가 문 안쪽에 서 있다. 웃고 있다.*
+*뒤에서 외쳤다. 하지만 {name}은 멈추지 않았다. 유나와 비상구를 나섰고, 뒤를 돌아봤다. 설화가 문 안쪽에 서 있다. 웃고 있다.*
 ```
 
 ### `day5_after_ghost_11`
@@ -18050,9 +18050,9 @@ _캐릭터: `seolhwa_normal`_
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
-**나**
+**설화**
 ```text
-*설화가 사라졌다. 빛처럼. 소리 없이. 동시에 — 건물 안에서 경보가 울렸다.*
+*사라졌다. 빛처럼. 소리 없이. 동시에 — 건물 안에서 경보가 울렸다.*
 ```
 
 ### `day5_after_ghost_13`

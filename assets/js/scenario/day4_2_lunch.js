@@ -147,7 +147,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_yuna_17"
     },
     "day4_lunch_yuna_17": {
-        character: null,
+        character: "eunsu_cold",
         // 은수 선생님이 열쇠로 문을 열고 들어감
         sfx: [
             { file: "sfx_key_turn.mp3" },
@@ -158,7 +158,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_yuna_18"
     },
     "day4_lunch_yuna_18": {
-        character: null,
+        character: "eunsu_cold",
         // 은수가 열쇠를 갖고 있다. 나는 열 수 없다.
         glitch: { noise: true, noiseDuration: 200 },
         unskippable: true,
@@ -187,7 +187,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_nurse_1": {
         background: "nurse_office",
         bgm: "tension_low.mp3",
-        character: null,
+        character: "riin_neutral",
         unskippable: true,
         branches: [
             { condition: "met_riin", next: "day4_lunch_nurse_2" }
@@ -242,7 +242,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_7"
     },
     "day4_lunch_nurse_7": {
-        character: null,
+        character: "riin_cold",
         // 리인 표정 변화 0.5초
         next: "day4_lunch_nurse_8"
     },
@@ -269,7 +269,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_12"
     },
     "day4_lunch_nurse_12": {
-        character: null,
+        character: "riin_smile",
         // 리인은 유나가 지금 괜찮지 않다는 걸 알고 있다
         next: "day4_lunch_nurse_13"
     },

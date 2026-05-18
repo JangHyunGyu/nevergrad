@@ -514,7 +514,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_lunch_riin_choice"
     },
     "day3_lunch_riin_choice": {
-        character: null,
+        character: "riin_smile",
         choices: [
             {
                 next: "day3_lunch_riin_drink_1",

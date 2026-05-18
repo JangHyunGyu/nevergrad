@@ -255,7 +255,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_1a"
     },
     "day3_morning_sea_1a": {
-        character: null,
+        character: "sea_smile",
         next: "day3_morning_sea_2"
     },
     "day3_morning_sea_2": {

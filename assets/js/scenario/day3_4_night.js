@@ -140,7 +140,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_bleed_no_yuna_1"
     },
     "day3_night_bleed_2": {
-        character: null,
+        character: "yuna_scared",
         next: "day3_night_bleed_3"
     },
     "day3_night_bleed_3": {
@@ -188,7 +188,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_bleed_9"
     },
     "day3_night_bleed_9": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day3_night_bleed_10"
     },
     "day3_night_bleed_10": {
@@ -405,7 +405,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_4b"
     },
     "day3_night_seolhwa_4b": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_5"
     },

@@ -503,7 +503,7 @@ Object.assign(SCENARIO[4], {
     },
     // 아무도 그 자리 쪽으로 가지 않는다
     "day4_morning_classroom_notmet_4": {
-        character: null,
+        characters: { left: "sea_smile" },
         next: "day4_morning_class_start"
     },
 

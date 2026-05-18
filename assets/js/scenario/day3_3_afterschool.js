@@ -160,7 +160,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_liin_sugar_4"
     },
     "day3_after_liin_sugar_4": {
-        character: null,
+        character: "riin_relief",
         sfx: "sfx_door_close.mp3",
         next: "day3_after_yuna_check"
     },
@@ -558,7 +558,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_yuna_9a": {
         background: "closeup_sd_card",
-        character: null,
+        character: "yuna_normal",
         fadeIn: true,
         fadeDuration: 350,
         next: "day3_after_end"

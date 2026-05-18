@@ -380,7 +380,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_8"
     },
     "day5_morning_true_8": {
-        character: null,
+        character: "yuna_weak",
         unskippable: true,
         next: "day5_morning_true_9"
     },
@@ -960,7 +960,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 선택 3: (침묵한다) ──
     "day5_morning_grad_reply_3": {
-        character: null,
+        character: "eunsu_dark",
         unskippable: true,
         next: "day5_morning_grad_reply_3b"
     },

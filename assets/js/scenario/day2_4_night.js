@@ -426,7 +426,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_wake_2"
     },
     "day2_night_wake_2": {
-        character: null,
+        character: "seolhwa_smile",
         night: true,
         next: "day2_night_wake_3"
     },

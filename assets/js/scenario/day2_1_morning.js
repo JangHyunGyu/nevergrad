@@ -152,7 +152,7 @@ Object.assign(SCENARIO[2], {
     // ===== 데자뷔 핀 #4 — 자판기 =====
     "day2_morning_walk_17": {
         background: "hallway",
-        character: null,
+        character: "sea_smile",
         next: "day2_morning_deja4_1"
     },
     "day2_morning_deja4_1": {
@@ -197,7 +197,7 @@ Object.assign(SCENARIO[2], {
 
     // ===== 교실 — 출석 & 설화 =====
     "day2_morning_class_3": {
-        character: null,
+        character: "eunsu_normal",
         background: "classroom",
         next: "day2_morning_class_4"
     },
@@ -367,7 +367,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_broadcast_7"
     },
     "day2_broadcast_7": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day2_lunch_start"
     }
 });

@@ -277,7 +277,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 선택 1: "...미안해. 하지만 가야 해." ──
     "day5_lunch_left_c1_1": {
-        character: null,
+        character: "sea_cry",
         stopSfx: "sfx_stairs_approaching.mp3",
         unskippable: true,
         next: "day5_lunch_left_c1_2"
@@ -329,7 +329,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_2"
     },
     "day5_lunch_left_c2_2": {
-        character: null,
+        character: "sea_cry",
         unskippable: true,
         next: "day5_lunch_left_c2_3"
     },
@@ -349,7 +349,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_6"
     },
     "day5_lunch_left_c2_6": {
-        character: null,
+        character: "sea_vulnerable",
         unskippable: true,
         next: "day5_lunch_left_c2_7"
     },
@@ -435,7 +435,7 @@ Object.assign(SCENARIO[5], {
     },
     // 리인이 주사기를 집어듦 - 공포
     "day5_lunch_right_9": {
-        character: null,
+        character: "riin_pain",
         unskippable: true,
         next: "day5_lunch_right_10"
     },
@@ -452,7 +452,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_12"
     },
     "day5_lunch_right_12": {
-        character: null,
+        character: "riin_neutral",
         unskippable: true,
         next: "day5_lunch_right_13"
     },
@@ -463,13 +463,13 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_14"
     },
     "day5_lunch_right_14": {
-        character: null,
+        character: "riin_neutral",
         unskippable: true,
         next: "day5_lunch_right_15"
     },
     // 뚜껑 열고, 냄새 맡고, 한 모금 마심
     "day5_lunch_right_15": {
-        character: null,
+        character: "riin_neutral",
         unskippable: true,
         next: "day5_lunch_right_16"
     },
@@ -498,7 +498,7 @@ Object.assign(SCENARIO[5], {
     },
     // "...왜요?"
     "day5_lunch_right_20": {
-        character: null,
+        character: "riin_pain",
         unskippable: true,
         next: "day5_lunch_right_21"
     },
@@ -565,12 +565,12 @@ Object.assign(SCENARIO[5], {
     },
     // 비상구 열쇠 꺼냄
     "day5_lunch_right_32": {
-        character: null,
+        character: "riin_pain",
         unskippable: true,
         next: "day5_lunch_right_33"
     },
     "day5_lunch_right_33": {
-        character: null,
+        character: "riin_pain",
         unskippable: true,
         next: "day5_lunch_right_34"
     },
@@ -674,7 +674,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_c3_5"
     },
     "day5_lunch_right_c3_5": {
-        character: null,
+        character: "riin_pain",
         unskippable: true,
         next: "day5_lunch_seolhwa_1",
         setFlags: ["emergency_key"]

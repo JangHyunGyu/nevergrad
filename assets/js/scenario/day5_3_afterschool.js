@@ -63,7 +63,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_cage_3"
     },
     "day5_after_cage_3": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_after_cage_4"
     },
@@ -73,7 +73,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_cage_5"
     },
     "day5_after_cage_5": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_after_cage_6"
     },
@@ -142,7 +142,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_7"
     },
     "day5_after_caught_7": {
-        character: null,
+        character: "riin_dark",
         unskippable: true,
         next: "day5_after_caught_choice"
     },
@@ -311,7 +311,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_15"
     },
     "day5_after_confront_15": {
-        character: null,
+        character: "eunsu_gentle",
         unskippable: true,
         next: "day5_after_confront_16"
     },
@@ -388,7 +388,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_3"
     },
     "day5_after_true_3": {
-        character: null,
+        character: "eunsu_obsessed",
         // 추격전 시작 — 뒤(왼쪽)에서 점점 오른쪽으로 발소리
         glitch: { chaseFootsteps: { fromPan: -1, toPan: 1, steps: 12, interval: 0.18 } },
         unskippable: true,
@@ -433,7 +433,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_9"
     },
     "day5_after_true_9": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day5_after_true_10"
     },
@@ -456,7 +456,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_12"
     },
     "day5_after_true_12": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         setFlags: ["broke_through_eunsu", "escape_with_yuna", "has_evidence", "ending_bridge_true_done"],
         next: "day5_after_end"
@@ -586,7 +586,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_11"
     },
     "day5_after_resist_11": {
-        character: null,
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_after_resist_12"
     },
@@ -643,7 +643,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_14"
     },
     "day5_after_resist_14": {
-        character: null,
+        character: "eunsu_crying",
         unskippable: true,
         next: "day5_after_resist_15"
     },
@@ -693,7 +693,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_7"
     },
     "day5_after_ghost_7": {
-        character: null,
+        character: "seolhwa_normal",
         unskippable: true,
         next: "day5_after_ghost_8"
     },
@@ -720,7 +720,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_12"
     },
     "day5_after_ghost_12": {
-        character: null,
+        character: "seolhwa_fading",
         glitch: { noise: true },
         unskippable: true,
         next: "day5_after_ghost_13"

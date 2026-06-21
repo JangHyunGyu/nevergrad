@@ -102,7 +102,7 @@
             const chars = Array.from(stage.querySelectorAll('.title-char-lineup[src]:not([src=""])'))
                 .sort((a, b) => Number(a.dataset.titleIntroOrder || 0) - Number(b.dataset.titleIntroOrder || 0));
 
-            gsap.killTweensOf([stage, bg, ...chars, '.title-content', '.title-menu .menu-btn']);
+            gsap.killTweensOf([stage, bg, ...chars, '.title-content', '.title-menu .menu-btn'].filter(Boolean));
             if (bg) {
                 gsap.fromTo(bg, { autoAlpha: 0, scale: 1.045 }, { autoAlpha: 0.92, scale: 1, duration: 1.25, ease: 'power2.out' });
             }
@@ -168,7 +168,7 @@
             if (!gsap || !el) return false;
             el.classList.add('visible');
             const child = el.firstElementChild;
-            gsap.killTweensOf([el, child]);
+            gsap.killTweensOf([el, child].filter(Boolean));
             gsap.fromTo(el, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.28, ease: 'power2.out' });
             if (child) {
                 gsap.fromTo(child, { y: 24, scale: 0.985, rotate: -0.4 }, { y: 0, scale: 1, rotate: 0, duration: 0.45, ease: 'power3.out' });

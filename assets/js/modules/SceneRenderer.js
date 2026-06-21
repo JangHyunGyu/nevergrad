@@ -85,6 +85,10 @@ class SceneRenderer {
             return;
         }
 
+        if (window.NevergradMotion?.background?.(this.bgLayer, absoluteSrc)) {
+            return;
+        }
+
         this.bgLayer.style.backgroundImage = newBg;
     }
 
@@ -169,6 +173,10 @@ class SceneRenderer {
             ? this._renderNewsArticle(data)
             : this._renderLabDossier(data);
         el.appendChild(node);
+
+        if (window.NevergradMotion?.mediaEnter?.(el)) {
+            return;
+        }
 
         requestAnimationFrame(() => {
             el.classList.add('visible');
@@ -374,6 +382,30 @@ class SceneRenderer {
         // 이전 전환 타이머가 남아있으면 정리
         if (el._charTimer) { clearTimeout(el._charTimer); el._charTimer = null; }
 
+        if (window.NevergradMotion?.enabled?.()) {
+            if (prevSrc && prevSrc !== '') {
+                const prevPrefix = this._getCharPrefix(prevSrc);
+                const newPrefix = this._getCharPrefix(webpSrc);
+
+                if (prevPrefix === newPrefix) {
+                    applyCharacterData();
+                    this._applyImgWithFallback(el, webpSrc, pngSrc);
+                    window.NevergradMotion.characterPulse(el, targetOpacity);
+                } else {
+                    window.NevergradMotion.characterOut(el, () => {
+                        applyCharacterData();
+                        this._applyImgWithFallback(el, webpSrc, pngSrc);
+                        window.NevergradMotion.characterIn(el, targetOpacity);
+                    });
+                }
+            } else {
+                applyCharacterData();
+                this._applyImgWithFallback(el, webpSrc, pngSrc);
+                window.NevergradMotion.characterIn(el, targetOpacity);
+            }
+            return;
+        }
+
         if (prevSrc && prevSrc !== '') {
             const prevPrefix = this._getCharPrefix(prevSrc);
             const newPrefix = this._getCharPrefix(webpSrc);
@@ -438,6 +470,16 @@ class SceneRenderer {
             if (el._charTimer) {
                 clearTimeout(el._charTimer);
                 el._charTimer = null;
+            }
+            if (window.NevergradMotion?.enabled?.()) {
+                window.NevergradMotion.characterOut(el, () => {
+                    el.src = '';
+                    el.style.opacity = '';
+                    delete el.dataset.characterId;
+                    delete el.dataset.characterPosition;
+                    el.classList.remove('char-fade-out');
+                });
+                return;
             }
             el.classList.add('char-fade-out');
             el.style.opacity = '0';

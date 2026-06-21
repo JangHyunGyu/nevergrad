@@ -61,14 +61,25 @@ class ChoiceSystem {
                 if (selected) return;
                 selected = true;
                 clearInterval(timer);
-                this.panel.classList.add('hidden');
-                onSelect(i);
+                const finish = () => {
+                    this.panel.classList.add('hidden');
+                    onSelect(i);
+                };
+                if (window.NevergradMotion?.choiceSelect?.(btn, this.panel, finish)) {
+                    return;
+                }
+                finish();
             });
 
             this.panel.appendChild(btn);
         });
 
         // 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
+        const motionButtons = Array.from(this.panel.querySelectorAll('.choice-btn'));
+        if (window.NevergradMotion?.choicesIn?.(this.panel, motionButtons)) {
+            return;
+        }
+
         const totalDelay = (choices.length - 1) * 80 + 1500;
         setTimeout(() => {
             const buttons = this.panel.querySelectorAll('.choice-btn');

@@ -146,6 +146,7 @@ function playTitleIntro() {
     const stage = document.getElementById('title-stage');
     const titleScreen = document.getElementById('title-screen');
     if (!stage) return;
+    if (window.NevergradMotion?.titleIntro?.(stage, titleScreen)) return;
 
     window.clearTimeout(window.__nevergradTitleMenuTimer);
     titleScreen?.classList.remove('title-intro-complete');

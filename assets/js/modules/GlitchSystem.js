@@ -101,6 +101,9 @@ class GlitchSystem {
      */
     screenNoise(duration = 300) {
         if (!this.overlay) return;
+        const animated = window.NevergradMotion?.screenNoise?.(this.overlay, duration, false);
+        if (animated) return animated;
+
         this.overlay.classList.remove('hidden');
         this.overlay.classList.add('noise');
 
@@ -196,6 +199,9 @@ class GlitchSystem {
         }
 
         gameScreen.appendChild(overlay);
+        if (window.NevergradMotion?.memoryFlash?.(overlay, duration)) {
+            return;
+        }
         requestAnimationFrame(() => overlay.classList.add('visible'));
 
         setTimeout(() => {
@@ -225,6 +231,9 @@ class GlitchSystem {
      */
     async heavyGlitch(duration = 1000) {
         if (!this.overlay) return;
+        const gameScreen = document.getElementById('game-screen');
+        const animated = window.NevergradMotion?.screenNoise?.(this.overlay, duration, true, gameScreen);
+        if (animated) return animated;
         this.overlay.classList.remove('hidden');
         this.overlay.classList.add('heavy-glitch');
 

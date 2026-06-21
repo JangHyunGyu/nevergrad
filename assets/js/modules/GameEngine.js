@@ -1175,19 +1175,25 @@ class GameEngine {
                     label,
                     displayedIndex
                 );
-                panel.classList.add('hidden');
-                if (choice.stats) {
-                    for (const [charId, changes] of Object.entries(choice.stats)) {
-                        for (const [stat, val] of Object.entries(changes)) {
-                            this.state.changeStat(charId, stat, val);
-                            if (stat === 'affinity' && val !== 0) {
-                                this._playStatChangeFX(stat, val, charId);
+                const completeChoice = () => {
+                    panel.classList.add('hidden');
+                    if (choice.stats) {
+                        for (const [charId, changes] of Object.entries(choice.stats)) {
+                            for (const [stat, val] of Object.entries(changes)) {
+                                this.state.changeStat(charId, stat, val);
+                                if (stat === 'affinity' && val !== 0) {
+                                    this._playStatChangeFX(stat, val, charId);
+                                }
                             }
                         }
                     }
+                    if (choice.setFlags) this.state.setFlags(choice.setFlags);
+                    if (choice.next) this._loadScene(choice.next);
+                };
+                if (window.NevergradMotion?.choiceSelect?.(btn, panel, completeChoice)) {
+                    return;
                 }
-                if (choice.setFlags) this.state.setFlags(choice.setFlags);
-                if (choice.next) this._loadScene(choice.next);
+                completeChoice();
             });
 
             panel.appendChild(btn);
@@ -1240,6 +1246,9 @@ class GameEngine {
 
         // 📌 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
         const allBtns = panel.querySelectorAll('.choice-btn');
+        if (window.NevergradMotion?.choicesIn?.(panel, Array.from(allBtns))) {
+            return;
+        }
         const totalDelay = (allBtns.length - 1) * 80 + 1500;
         setTimeout(() => {
             const buttons = panel.querySelectorAll('.choice-btn');
@@ -1402,6 +1411,10 @@ class GameEngine {
         const name = evidence?.name ? `: ${evidence.name}` : '';
         toast.textContent = `${labels[lang] || labels.en}${name}`;
         document.body.appendChild(toast);
+
+        if (window.NevergradMotion?.toast?.(toast, 2200, () => toast.remove())) {
+            return;
+        }
 
         requestAnimationFrame(() => toast.classList.add('save-toast-visible'));
         setTimeout(() => {
@@ -2452,6 +2465,10 @@ class GameEngine {
 
         document.body.appendChild(toast);
 
+        if (window.NevergradMotion?.toast?.(toast, 1500, () => toast.remove())) {
+            return;
+        }
+
         // 강제 리플로우 후 visible 추가 (페이드인)
         requestAnimationFrame(() => {
             toast.classList.add('save-toast-visible');
@@ -2679,6 +2696,7 @@ class GameEngine {
         });
         const el = document.getElementById(id);
         if (el) { el.classList.remove('hidden'); el.classList.add('active'); }
+        window.NevergradMotion?.screenEnter?.(el);
 
         if (id === 'game-screen') {
             this.state.resumeRun();
@@ -2727,12 +2745,25 @@ class GameEngine {
 
     _showOverlay(id) {
         const el = document.getElementById(id);
-        if (el) { el.classList.remove('hidden'); el.classList.add('active'); }
+        if (el) {
+            el.classList.remove('hidden');
+            el.classList.add('active');
+            window.NevergradMotion?.overlayEnter?.(el);
+        }
     }
 
     _hideOverlay(id) {
         const el = document.getElementById(id);
-        if (el) { el.classList.add('hidden'); el.classList.remove('active'); }
+        if (el) {
+            if (window.NevergradMotion?.overlayExit?.(el, () => {
+                el.classList.add('hidden');
+                el.classList.remove('active');
+            })) {
+                return;
+            }
+            el.classList.add('hidden');
+            el.classList.remove('active');
+        }
     }
 
     // ===== Quick Menu =====
@@ -3013,6 +3044,10 @@ class GameEngine {
         gameScreen.appendChild(btn);
         this._cageExitBtn = btn;
 
+        if (window.NevergradMotion?.cageExit?.(btn)) {
+            return;
+        }
+
         // 서서히 나타남 (CSS transition)
         requestAnimationFrame(() => {
             requestAnimationFrame(() => {
@@ -3033,6 +3068,7 @@ class GameEngine {
 
         // 탈출 버튼 제거
         if (this._cageExitBtn) {
+            window.NevergradMotion?.kill?.(this._cageExitBtn);
             this._cageExitBtn.remove();
             this._cageExitBtn = null;
         }

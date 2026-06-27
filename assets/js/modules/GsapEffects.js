@@ -21,6 +21,18 @@
         return Number.isFinite(n) ? Math.max(0, Math.min(1, n)) : 1;
     }
 
+    function characterAnchor(el) {
+        return el?.classList?.contains('pos-center')
+            ? { xPercent: -50, x: 0 }
+            : { xPercent: 0, x: 0 };
+    }
+
+    function titleCharacterScale(el, multiplier = 1) {
+        const value = Number.parseFloat(el?.style?.getPropertyValue('--title-scale') || '');
+        const scale = Number.isFinite(value) ? value : 0.8;
+        return scale * multiplier;
+    }
+
     function animatePanel(el, fromY, fromScale) {
         const gsap = gsapInstance();
         if (!gsap || !el) return false;
@@ -99,7 +111,7 @@
             stage.classList.remove('title-intro-reset', 'title-intro-active');
 
             const bg = stage.querySelector('.title-stage-bg');
-            const chars = Array.from(stage.querySelectorAll('.title-char-lineup[src]:not([src=""])'))
+            const chars = Array.from(stage.querySelectorAll('.title-char-lineup'))
                 .sort((a, b) => Number(a.dataset.titleIntroOrder || 0) - Number(b.dataset.titleIntroOrder || 0));
 
             gsap.killTweensOf([stage, bg, ...chars, '.title-content', '.title-menu .menu-btn'].filter(Boolean));
@@ -107,8 +119,8 @@
                 gsap.fromTo(bg, { autoAlpha: 0, scale: 1.045 }, { autoAlpha: 0.92, scale: 1, duration: 1.25, ease: 'power2.out' });
             }
             gsap.fromTo(chars,
-                { autoAlpha: 0, y: 28, scale: 0.985 },
-                { autoAlpha: (i, el) => Number(el.style.getPropertyValue('--title-opacity')) || 1, y: 0, scale: 1, duration: 0.8, stagger: 0.16, delay: 0.42, ease: 'power3.out' }
+                { autoAlpha: 0, xPercent: -50, y: 28, scale: (i, el) => titleCharacterScale(el, 0.985), transformOrigin: 'bottom center' },
+                { autoAlpha: (i, el) => Number(el.style.getPropertyValue('--title-opacity')) || 1, xPercent: -50, y: 0, scale: (i, el) => titleCharacterScale(el), transformOrigin: 'bottom center', duration: 0.8, stagger: 0.16, delay: 0.42, ease: 'power3.out' }
             );
             gsap.fromTo('.title-content',
                 { autoAlpha: 0, y: 18 },
@@ -179,11 +191,12 @@
         characterIn(el, opacity) {
             const gsap = gsapInstance();
             if (!gsap || !el) return false;
+            const anchor = characterAnchor(el);
             gsap.killTweensOf(el);
             el.style.opacity = '0';
             gsap.fromTo(el,
-                { autoAlpha: 0, y: 18, scale: 0.99 },
-                { autoAlpha: targetOpacity(opacity), y: 0, scale: 1, duration: 0.34, ease: 'power3.out' }
+                { autoAlpha: 0, y: 18, scale: 0.99, ...anchor },
+                { autoAlpha: targetOpacity(opacity), y: 0, scale: 1, ...anchor, duration: 0.34, ease: 'power3.out' }
             );
             return true;
         },
@@ -191,9 +204,11 @@
         characterOut(el, onComplete) {
             const gsap = gsapInstance();
             if (!gsap || !el) return false;
+            const anchor = characterAnchor(el);
             gsap.killTweensOf(el);
             gsap.to(el, {
                 autoAlpha: 0,
+                ...anchor,
                 y: 10,
                 duration: 0.22,
                 ease: 'power2.in',
@@ -207,10 +222,11 @@
         characterPulse(el, opacity) {
             const gsap = gsapInstance();
             if (!gsap || !el) return false;
+            const anchor = characterAnchor(el);
             gsap.killTweensOf(el);
             gsap.fromTo(el,
-                { autoAlpha: Math.min(targetOpacity(opacity), 0.72), scale: 0.996 },
-                { autoAlpha: targetOpacity(opacity), scale: 1, duration: 0.22, ease: 'power2.out' }
+                { autoAlpha: Math.min(targetOpacity(opacity), 0.72), scale: 0.996, ...anchor },
+                { autoAlpha: targetOpacity(opacity), scale: 1, ...anchor, duration: 0.22, ease: 'power2.out' }
             );
             return true;
         },

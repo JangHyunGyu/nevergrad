@@ -330,7 +330,7 @@ class MetaHorrorSystem {
                 memoTitle: '=== 이설화의 메모 ===',
                 memo1: '피험자 기록은 관리자 폴더에 있어.',
                 memo2: '그런데... 정말 보고 싶은 거야?',
-                memo3: '이걸 안다고 해서 나갈 수 있는 건 아니야.'
+                memo3: '이걸 알아도 여기서 나가지는 못해.'
             },
             en: {
                 found: '...You found me.',

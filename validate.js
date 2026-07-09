@@ -74,6 +74,14 @@ const AUDIO_DIRS = [
 const errors = [];
 const warnings = [];
 
+function stripUrlSuffix(ref) {
+    return ref.split(/[?#]/, 1)[0];
+}
+
+function basenameNoQuery(ref) {
+    return path.basename(stripUrlSuffix(ref));
+}
+
 // ═══════════════════════════════════════════
 // Load config.js
 // ═══════════════════════════════════════════
@@ -364,11 +372,11 @@ const htmlPath = path.join(ROOT, 'index.html');
 if (fs.existsSync(htmlPath)) {
     const html = fs.readFileSync(htmlPath, 'utf8');
     const srcRefs = [...html.matchAll(/(?<![-\w])src="([^"]+)"/g)].map(m => m[1]);
-    const hrefRefs = [...html.matchAll(/href="([^"]+\.css)"/g)].map(m => m[1]);
+    const hrefRefs = [...html.matchAll(/href="([^"]+\.css(?:[?#][^"]*)?)"/g)].map(m => m[1]);
 
     for (const ref of [...srcRefs, ...hrefRefs]) {
         if (ref.startsWith('http')) continue;
-        const full = path.join(ROOT, ref);
+        const full = path.join(ROOT, stripUrlSuffix(ref));
         if (!fs.existsSync(full)) {
             errors.push(`[HTML_REF] "${ref}" referenced in index.html but file not found`);
         }
@@ -460,8 +468,8 @@ const koHtmlPath = path.join(ROOT, 'index.html');
 if (fs.existsSync(koHtmlPath)) {
     const koHtml = fs.readFileSync(koHtmlPath, 'utf8');
     // ko HTML에서 스크립트/CSS 참조 추출 (파일명만)
-    const koScripts = [...koHtml.matchAll(/src="([^"]+\.js)"/g)].map(m => path.basename(m[1]));
-    const koStyles = [...koHtml.matchAll(/href="([^"]+\.css)"/g)].map(m => path.basename(m[1]));
+    const koScripts = [...koHtml.matchAll(/src="([^"]+\.js(?:[?#][^"]*)?)"/g)].map(m => basenameNoQuery(m[1]));
+    const koStyles = [...koHtml.matchAll(/href="([^"]+\.css(?:[?#][^"]*)?)"/g)].map(m => basenameNoQuery(m[1]));
     // ko HTML에서 DOM ID 추출
     const koIds = [...koHtml.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
 
@@ -472,8 +480,8 @@ if (fs.existsSync(koHtmlPath)) {
             continue;
         }
         const html = fs.readFileSync(langHtml, 'utf8');
-        const langScripts = [...html.matchAll(/src="([^"]+\.js)"/g)].map(m => path.basename(m[1]));
-        const langStyles = [...html.matchAll(/href="([^"]+\.css)"/g)].map(m => path.basename(m[1]));
+        const langScripts = [...html.matchAll(/src="([^"]+\.js(?:[?#][^"]*)?)"/g)].map(m => basenameNoQuery(m[1]));
+        const langStyles = [...html.matchAll(/href="([^"]+\.css(?:[?#][^"]*)?)"/g)].map(m => basenameNoQuery(m[1]));
         const langIds = [...html.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
 
         // 스크립트 파일 비교
@@ -501,10 +509,10 @@ if (fs.existsSync(koHtmlPath)) {
         }
         // 다국어 HTML 리소스 참조 파일 존재
         const langSrcRefs = [...html.matchAll(/(?<![-\w])src="([^"]+)"/g)].map(m => m[1]);
-        const langHrefRefs = [...html.matchAll(/href="([^"]+\.css)"/g)].map(m => m[1]);
+        const langHrefRefs = [...html.matchAll(/href="([^"]+\.css(?:[?#][^"]*)?)"/g)].map(m => m[1]);
         for (const ref of [...langSrcRefs, ...langHrefRefs]) {
             if (ref.startsWith('http')) continue;
-            const full = path.join(ROOT, lang, ref);
+            const full = path.join(ROOT, lang, stripUrlSuffix(ref));
             if (!fs.existsSync(full)) {
                 errors.push(`[HTML_REF] ${lang}/index.html: "${ref}" file not found`);
             }

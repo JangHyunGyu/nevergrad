@@ -12,7 +12,7 @@
         "text": "*Was ich gestern Abend beschlossen hatte, war die Enthüllung. Ich wollte beides nicht verpassen: lebend entkommen und einen Bericht hinterlassen.*"
     },
     "day5_morning_plan_confront": {
-        "text": "*Was ich gestern Abend beschlossen hatte, war die Konfrontation. Ich schrieb es mit zitternden Händen auf: Ich würde nicht fliehen und es zu Ende bringen.*"
+        "text": "*Gestern Abend habe ich mich für die Konfrontation entschieden. Ich werde Eunsu die Unterlagen vorlegen.*"
     },
     "day5_morning_dawn_1": {
         "text": "*4 Uhr morgens. Ich konnte nicht schlafen. Nein — ich durfte nicht schlafen.*"
@@ -96,7 +96,7 @@
         "text": "...Sind Sie da?"
     },
     "day5_morning_rescue_4_unknown": {
-        "text": "*Ein fremdes Gesicht, doch der Atem am Ende der Stimme bleibt mir im Ohr hängen. Keine Zeit zum Nachdenken. Erst muss ich sie losmachen.*"
+        "text": "*Das Gesicht ist fremd, doch den Atem am Ende ihrer Worte erkenne ich. Ich beginne mit den Lederriemen.*"
     },
     "day5_morning_rescue_5_unknown": {
         "text": "...Ich bin Choi Yuna. Fotoclub. Die Kamera... ist in meiner Tasche."
@@ -308,7 +308,7 @@
         "text": "*Ich versteckte mich im Schatten hinter dem Aktenschrank. Ich legte einen Finger auf Yunas Lippen, damit ihr zitternder Atem uns nicht verriet. Schritte huschten über die Treppe.*"
     },
     "day5_morning_true_hide_2": {
-        "text": "*...Aber wir können hier nicht länger bleiben. Irgendwann müssen wir uns bewegen.*"
+        "text": "*Noch leiser zu atmen wird nichts ändern. Wir müssen jetzt los.*"
     },
     "day5_morning_true_exit_1": {
         "text": "*Als ich die Treppe hinaufstieg — stand Park Eunsu da. Sie versperrte den Flur zum Ausgang des alten Gebäudes.*"
@@ -343,7 +343,7 @@
         "text": "*Die Lehrerin hielt mich nicht sofort fest. Stattdessen warf sie einen Blick nach oben. In diesem Moment hallte irgendwo das Geräusch einer sich schließenden Eisentür wider.*"
     },
     "day5_morning_true_post_ft_3": {
-        "text": "*...Eine Falle. Ihr Gesicht sagt, dass sie bis zum Ende sehen will, wie weit ich komme, was ich mitnehme und wohin ich laufe. Ich packte Yunas Handgelenk und huschte an der Lehrerin vorbei.*"
+        "text": "*Eunsus Blick wandert von der Kamera zur Tasche und dann zur Treppe des alten Flügels. Ich packe Yuna am Handgelenk und schlüpfe an ihr vorbei.*"
     },
     "day5_morning_blockade_1": {
         "text": "*Ich kam die Treppe herauf. Ende des Flurs — die Tür ist geschlossen. Die Tür, die noch gestern offen war. Ein Stahlriegel ist vorgeschoben. Der war gestern nicht da.*"
@@ -411,7 +411,7 @@
         "text": "*Yuna griff nach meinem Ärmel. Ihre Finger klammerten sich fest.*"
     },
     "day5_morning_broadcast_16": {
-        "text": "...Es ist in Ordnung. Es gibt einen Weg."
+        "text": "Nach oben. Eine Tür haben wir noch nicht überprüft."
     },
     "day5_morning_broadcast_17": {
         "text": "*Vielleicht gibt es keine. Yunas Hand packte meinen Ärmel noch fester.*"
@@ -426,7 +426,7 @@
         "text": "...Tut mir leid."
     },
     "day5_morning_grad_3": {
-        "text": "Sag nicht, dass es dir leidtut. Mir geht es gut. — Wenn du rauskommst, rennen wir zusammen."
+        "text": "Sobald du herauskommst, renn."
     },
     "day5_morning_grad_4": {
         "text": "*Yuna versteckte sich in der Ecke des Flurs. Ich drückte die Aufnahmetaste meines Handys.*"
@@ -501,7 +501,7 @@
         "text": "*Die Lehrerin versucht zu lächeln und scheitert.*"
     },
     "day5_morning_grad_27": {
-        "text": "*Das Schweigen zieht sich. Was ich gesehen habe, war kein Geständnis, sondern ein altes Beobachtungsblatt.*"
+        "text": "*Das Gespräch bricht ab. Die Punkte auf der Checkliste fallen mir Zeile für Zeile ins Auge.*"
     },
     "day5_morning_grad_28": {
         "text": "{name}."
@@ -510,7 +510,7 @@
         "text": "*Die Lehrerin setzt an, meinen Namen zu sagen, und sieht dann wieder auf die Checkliste.*"
     },
     "day5_morning_grad_29a": {
-        "text": "*Dieser Ausdruck ist mir am fremdesten. Keine Zärtlichkeit, sondern das Gesicht eines Menschen, der überprüft, was er auswendig gelernt hat.*"
+        "text": "*Ihr Ausdruck ist ein anderer als im Unterricht. Nur beim Prüfen der Checkliste hält ihr Blick inne.*"
     },
     "day5_morning_grad_30": {
         "text": "...Wenn du etwas fragen willst, frag jetzt."
@@ -518,7 +518,7 @@
     "day5_morning_grad_timer": {
         "text": "",
         "choices": [
-            "„Das ist Beobachtung, kein Schutz.“",
+            "„Sie haben das alles aufgeschrieben und mich weiter beobachtet?“",
             "„Seit wann?“",
             "Bleib still"
         ]
@@ -587,7 +587,7 @@
         "text": "Zwei. Löschen Sie es. Der Schmerz, der Körper, der versucht zu rennen, alles beruhigt sich. Wir können nächsten Montag von vorne beginnen."
     },
     "day5_morning_proposal_15": {
-        "text": "Drei. ..."
+        "text": "Drei."
     },
     "day5_morning_proposal_16": {
         "text": "*Die Lehrerin schloss den Mund.*"
@@ -613,6 +613,6 @@
         "text": "*...Ich schloss die Augen. Eunsus Hand berührt meine Stirn. Sie ist kalt.*"
     },
     "day5_morning_end_run": {
-        "text": "*Mein Körper bewegte sich zuerst. Meine Beine fanden den Winkel zur Treppe, bevor ich es tat. — Ich rannte.*"
+        "text": "*Ich drehe mich um und renne zur Treppe.*"
     }
 }

@@ -9,7 +9,7 @@
         "text": "*Sea geht Richtung Schülervertretungsraum. Eunsu dürfte im Lehrerzimmer sein. Riin ist im Krankenzimmer. ...Zu wem gehe ich zuerst?*"
     },
     "day4_after_choice": {
-        "text": "*Ich muss mich entscheiden.*",
+        "text": "*Wen soll ich suchen?*",
         "choices": [
             "Sea folgen",
             "Eunsu aufsuchen",
@@ -23,7 +23,7 @@
         "text": "*Sea schließt die Tür ab. Klick. Das Schlossgeräusch hallte besonders laut. Im leeren Flur.*"
     },
     "day4_after_sea_3": {
-        "text": "Heute wollte ich, dass wir allein sind."
+        "text": "Lass uns heute bei geschlossener Tür reden."
     },
     "day4_after_sea_4": {
         "text": "*Sea setzt sich. Auf dem Tisch liegt ein zerknülltes Taschentuch, und ihre Augenränder sind rot.*"
@@ -35,7 +35,7 @@
         "text": "...{name}."
     },
     "day4_after_sea_7": {
-        "text": "*Sea sieht mich an. Lange. Als wolle sie sich mein Gesicht einprägen.*"
+        "text": "*Sie sieht {name} lange an, ohne wegzusehen.*"
     },
     "day4_after_sea_8": {
         "text": "...Wie oft war es jetzt schon?"
@@ -60,7 +60,7 @@
         "text": "*Egal, welche Seite ich drückte, der Bildschirm blieb an derselben Stelle stehen.*"
     },
     "day4_after_sea_accept_2": {
-        "text": "...Bleib immer an meiner Seite."
+        "text": "Geh heute nicht von hier weg."
     },
     "day4_after_sea_accept_3": {
         "text": "*Sea blickt aus dem Fenster. Der Sonnenuntergang taucht den Raum in Rot.*"
@@ -96,10 +96,10 @@
         "text": "*Sea lächelte. Feuchtigkeit sammelte sich unter ihren Wimpern.*"
     },
     "day4_after_sea_12loop": {
-        "text": "*Sea umarmte mich. Ihre Hände pressen sich fest auf meinen Rücken.*"
+        "text": "*Sie packt {name} am Arm und drückt fester zu.*"
     },
     "day4_after_sea_12loop_2": {
-        "text": "*Sea flüstert. So nah, dass ihre Lippen mein Ohr berühren.*"
+        "text": "*Sie murmelt so leise, dass man es kaum hört.*"
     },
     "day4_after_sea_12loop_3": {
         "text": "...Seojin."
@@ -111,7 +111,7 @@
         "text": "...Wer?"
     },
     "day4_after_sea_12loop_6": {
-        "text": "*Seas Arme spannten sich an. Der Atem an meiner Schulter stockte einmal.*"
+        "text": "*Ihre Hand spannt sich an und zerknittert den Ärmel von {name}s Uniform.*"
     },
     "day4_after_sea_12loop_7": {
         "text": "*Briefgewicht. Das dritte Namensschild, das auf dem leeren Schreibtisch zu sehen ist.*"
@@ -120,7 +120,7 @@
         "text": "Das kann man nicht sagen."
     },
     "day4_after_sea_12loop_9": {
-        "text": "*Sea lässt mich nicht los. Im Gegenteil, sie drückt mich noch fester. Ihre Schultern zittern.*"
+        "text": "*Sie lässt den Arm nicht los. Ihr Handgelenk zittert.*"
     },
     "day4_after_sea_12loop_10": {
         "text": "*Als sie den Ärmel hochkrempelte, sah ich es. Ein altes Fadenarmband am Handgelenk. Der Faden ist ausgefranst. Sieht Jahre alt aus.*"
@@ -155,10 +155,10 @@
         "text": "...Hab ich dreizehnmal gehört. Ich weiß, du hast es jedes Mal ernst gemeint."
     },
     "day4_after_ft_sea_ask": {
-        "text": "...Ich hab's nicht ausgehalten. Jedes Mal war das erste Mal. Wie für dich."
+        "text": "Ich habe mich nicht erinnert. Ich habe es jedes Mal neu aufgeschrieben."
     },
     "day4_after_ft_sea_promise": {
-        "text": "...das habe ich auch gehört. Du hast es gesagt und konntest es nicht behalten. Jedes Mal."
+        "text": "Das habe ich auch gehört. Du hast es gesagt und am nächsten Tag vergessen."
     },
     "day4_after_ft_sea_quiet": {
         "text": "...Ist gut. Geh."
@@ -218,7 +218,7 @@
         "text": "*Ich ging zum Krankenzimmer. Aus dem Spalt unter der Tür dringt der Geruch von Desinfektionsmittel.*"
     },
     "day4_after_riin_2": {
-        "text": "*Riin sitzt an ihrem Schreibtisch. Sie ordnete Dokumente. Als ich eintrat -- hielt ihre Hand inne. Sie drehte die Papiere um. Langsam. Beiläufig. Aber ich sah es. Den Titel: 'S-13 Dosierungsprotokolle.'*"
+        "text": "*Riin sortiert Papiere an ihrem Schreibtisch. Als sie {name} sieht, hält ihre Hand inne. Sie dreht die Blätter beiläufig um, doch {name} hat den Titel bereits gelesen: ‚S-13-Medikationsprotokoll‘.*"
     },
     "day4_after_riin_3": {
         "text": "...Was. Erschreck mich nicht so."
@@ -233,7 +233,7 @@
         "text": "Hm?"
     },
     "day4_after_riin_5b": {
-        "text": "Sie haben doch nicht mehr vor, es zu verbergen, oder?"
+        "text": "Jetzt müssen Sie es mir sagen, oder?"
     },
     "day4_after_riin_6": {
         "text": "*Stille. 3 Sekunden. Frau Riins Blick weicht nicht von meinem Gesicht.*"
@@ -287,13 +287,13 @@
         "text": "*Ihre Stimme wird leiser.*"
     },
     "day4_after_riin_25": {
-        "text": "...Ich verschaffe dir Zeit. Bis morgen früh."
+        "text": "Ich halte sie bis morgen früh auf."
     },
     "day4_after_riin_26": {
         "text": "*Riin blickt aus dem Fenster. Die untergehende Sonne. Das Krankenzimmer ist in orangenes Licht getaucht.*"
     },
     "day4_after_riin_27": {
-        "text": "...Ich kann auch nicht mehr. Das hier."
+        "text": "Ich kann das nicht mehr."
     },
     "day4_after_end": {
         "text": "*Die Sonne ist untergegangen. Die Schule versinkt in Dunkelheit. Morgen kommt. Der fünfte Tag.*"
@@ -320,7 +320,7 @@
         "text": "Sie sind alle hier. Von Nummer eins bis jetzt."
     },
     "day4_xover_yuna_8": {
-        "text": "Das bist alles du, sunbae."
+        "text": "Das bist alles du."
     },
     "day4_xover_yuna_9": {
         "text": "*Ich schaute ins Album. Gleiche Uniform. Gleicher Flur. Gleiches Gesicht — nur die Ausdrücke unterscheiden sich. Zwölf Fotos.*"

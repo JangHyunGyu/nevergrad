@@ -9,7 +9,7 @@
         "text": "*Sea está indo em direção à sala do conselho estudantil. Eunsu deve estar na sala do corpo docente. Riin está na enfermaria. ...Quem devo procurar primeiro?*"
     },
     "day4_after_choice": {
-        "text": "*Eu preciso decidir.*",
+        "text": "*Quem devo procurar?*",
         "choices": [
             "Siga Sea",
             "Vá encontrar Eunsu",
@@ -23,7 +23,7 @@
         "text": "*Sea tranca a porta. Clique. O som da fechadura ecoou especialmente alto. No corredor vazio.*"
     },
     "day4_after_sea_3": {
-        "text": "Eu queria que fôssemos só nós hoje."
+        "text": "Hoje vamos conversar com a porta fechada."
     },
     "day4_after_sea_4": {
         "text": "*Sea se senta. Há um lenço amassado em cima da carteira, e o canto dos olhos dela está vermelho.*"
@@ -35,7 +35,7 @@
         "text": "...{name}."
     },
     "day4_after_sea_7": {
-        "text": "*Sea olha para mim. Por muito tempo. Como se estivesse tentando memorizar meu rosto.*"
+        "text": "*Ela olha para {name} por um longo tempo, sem desviar os olhos.*"
     },
     "day4_after_sea_8": {
         "text": "...Quantas vezes já foi?"
@@ -60,7 +60,7 @@
         "text": "*Não importa qual lado eu apertasse, a tela parava no mesmo lugar.*"
     },
     "day4_after_sea_accept_2": {
-        "text": "... Apenas fique ao meu lado. Sempre."
+        "text": "Hoje, não saia daqui."
     },
     "day4_after_sea_accept_3": {
         "text": "*Sea olha pela janela. O pôr do sol pinta a sala do conselho estudantil de vermelho.*"
@@ -96,10 +96,10 @@
         "text": "*Sea sorriu. A umidade se acumulou sob os cílios dela.*"
     },
     "day4_after_sea_12loop": {
-        "text": "*Sea me abraçou. Suas mãos apertam minhas costas.*"
+        "text": "*Ela segura o braço de {name} e aperta a mão.*"
     },
     "day4_after_sea_12loop_2": {
-        "text": "*Sea murmura. Seus lábios estão próximos o suficiente para roçar minha orelha.*"
+        "text": "*Ela murmura tão baixo que quase não dá para ouvir.*"
     },
     "day4_after_sea_12loop_3": {
         "text": "...Seojin."
@@ -111,7 +111,7 @@
         "text": "...Quem?"
     },
     "day4_after_sea_12loop_6": {
-        "text": "*Os braços de Sea se tensionaram. A respiração encostada no meu ombro falhou por um instante.*"
+        "text": "*Sua mão se aperta e amassa a manga do uniforme de {name}.*"
     },
     "day4_after_sea_12loop_7": {
         "text": "*peso carta. O terceiro crachá visto na mesa vazia.*"
@@ -120,7 +120,7 @@
         "text": "Não é algo para dizer."
     },
     "day4_after_sea_12loop_9": {
-        "text": "*Sea não desiste. Na verdade, ela me abraça com mais força. Seus ombros estão tremendo.*"
+        "text": "*Ela não solta o braço. Seu pulso treme.*"
     },
     "day4_after_sea_12loop_10": {
         "text": "*Quando ela arregaçou a manga, eu vi. Uma velha pulseira de linha no pulso. Os fios estão desgastados. Parece ter anos.*"
@@ -155,7 +155,7 @@
         "text": "...Ouvi isso treze vezes. Eu sei que você quis dizer isso todas as vezes."
     },
     "day4_after_ft_sea_ask": {
-        "text": "...eu não aguentei. Toda vez foi a primeira vez. Como para você."
+        "text": "Eu não lembrava. Anotava tudo de novo a cada vez."
     },
     "day4_after_ft_sea_promise": {
         "text": "...Eu também ouvi isso. Você disse isso e não conseguiu mantê-lo. Toda vez."
@@ -233,7 +233,7 @@
         "text": "Huh?"
     },
     "day4_after_riin_5b": {
-        "text": "Você não está mais tentando esconder isso, certo?"
+        "text": "Agora você precisa me contar, não precisa?"
     },
     "day4_after_riin_6": {
         "text": "*Silêncio. 3 segundos. O olhar da professora Riin não sai do meu rosto.*"
@@ -287,13 +287,13 @@
         "text": "*A voz dela fica mais baixa.*"
     },
     "day4_after_riin_25": {
-        "text": "...Vou ganhar tempo para você. Só até amanhã de manhã."
+        "text": "Vou segurá-los até amanhã de manhã."
     },
     "day4_after_riin_26": {
         "text": "*Riin olha pela janela. O sol poente. A enfermaria é banhada por uma luz laranja.*"
     },
     "day4_after_riin_27": {
-        "text": "...Eu também não posso mais fazer isso. Esse."
+        "text": "Não consigo mais fazer isso."
     },
     "day4_after_end": {
         "text": "*O sol se pôs. A escola afunda na escuridão. Amanhã está chegando. O quinto dia.*"
@@ -320,7 +320,7 @@
         "text": "Eles estão todos aqui. Do número um até agora."
     },
     "day4_xover_yuna_8": {
-        "text": "Eles são todos vocês, sunbae."
+        "text": "Todos são você."
     },
     "day4_xover_yuna_9": {
         "text": "*Eu olhei para o álbum. Mesmo uniforme. Mesmo corredor. O mesmo rosto – apenas as expressões diferem. Doze fotos.*"

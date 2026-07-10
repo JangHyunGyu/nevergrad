@@ -12,7 +12,7 @@
         "text": "*La respiration de Yuna est rauque. Ses jambes flanchent sans cesse. Le poids appuyé sur mon épaule devient de plus en plus lourd.*"
     },
     "day5_lunch_chase_3a": {
-        "text": "*— Si je lâche Yuna, je peux courir plus vite. Cette pensée m'a raversé l'esprit. Je l'ai chassée aussitôt.*"
+        "text": "*Si je lâche Yuna, je courrai plus vite. Cette pensée me traverse. Je resserre ma prise.*"
     },
     "day5_lunch_chase_4": {
         "text": "...Tu ne peux pas fuir, {name}."
@@ -61,10 +61,10 @@
         "text": "*Sea secoua la tête. Elle se mordit les lèvres. Du sang apparut.*"
     },
     "day5_lunch_left_6": {
-        "text": "Je ne peux pas te laisser partir. Pas cette fois."
+        "text": "Je ne peux pas m'écarter. Pas cette fois."
     },
     "day5_lunch_left_7": {
-        "text": "*Les mains de Sea sont serrées en poings. Tremblantes. Pour m'arrêter ou pour se retenir elle-même, impossible de savoir.*"
+        "text": "*Elle serre les poings. Ses jointures blanchissent.*"
     },
     "day5_lunch_left_8": {
         "text": "Moi aussi, je déteste ça. Être comme ça."
@@ -76,7 +76,7 @@
         "text": "Le badge change, la coiffure change, et tout recommence depuis le premier bonjour."
     },
     "day5_lunch_left_11": {
-        "text": "La façon dont tu as dit « bonjour » le premier jour. À chaque fois, c’est cela qui m’est resté le plus longtemps."
+        "text": "L'heure à laquelle tu as dit « bonjour » le premier jour. C'était toujours 8 h 12."
     },
     "day5_lunch_left_12": {
         "text": "Au fond, c'est aussi ce salut qui me faisait tenir jusqu'au cycle suivant."
@@ -159,10 +159,10 @@
         "text": "*Les yeux de Sea se sont agrandis. Le porte-clés s'est figé dans sa paume.*"
     },
     "day5_lunch_left_c2_3": {
-        "text": "...Si on sort, tu te souviendras de moi ?"
+        "text": "Une fois dehors, tu connaîtras encore mon nom ?"
     },
     "day5_lunch_left_c2_4": {
-        "text": "Je me souviendrai de toi."
+        "text": "Oui, je le connaîtrai."
     },
     "day5_lunch_left_c2_5": {
         "text": "...Je ne sais même pas à quoi ça ressemble dehors."
@@ -177,7 +177,7 @@
         "text": "Non."
     },
     "day5_lunch_left_c2_9": {
-        "text": "...C'est un mensonge. Mais j'y croirai."
+        "text": "Impossible de le vérifier. Mais j'irai quand même."
     },
     "day5_lunch_left_c2_10": {
         "text": "...Même si dehors fait peur, ce sera mieux qu'ici."
@@ -201,7 +201,7 @@
         "text": "*La porte de l'infirmerie est ouverte. Un seul néon est allumé ; les autres douilles sont vides.*"
     },
     "day5_lunch_right_5": {
-        "text": "*Mme Riin se tient près de l'armoire. Elle ne porte pas sa blouse blanche. Des vêtements de ville. — Comme si elle s'était préparée à partir.*"
+        "text": "*Elle se tient près de l'armoire, en tenue de ville plutôt qu'en blouse blanche. Un sac est posé sur l'armoire.*"
     },
     "day5_lunch_right_6": {
         "text": "*Des seringues alignées. Étiquette : 'Protocole d'Effacement de Mémoire #13'. Les aiguilles brillent sous la lumière.*"
@@ -332,7 +332,7 @@
         "text": "Doute de tout. De moi aussi. Mais la clé est vraie. Va-t'en."
     },
     "day5_lunch_right_c3_5": {
-        "text": "*La professeure a eu un sourire amer. J'ai pris la lé.*"
+        "text": "*Les coins de ses lèvres se soulèvent à peine. Elle remet la clé à {name}.*"
     },
     "day5_lunch_right_timeout": {
         "text": ""
@@ -395,7 +395,7 @@
         "text": "*Il y a aussi des entailles sur le mur de l'escalier. Des flèches. Des chiffres. Des phrases grattées. Chaque fois que je les vois, le poids sous mes pieds se déplace le premier.*"
     },
     "day5_lunch_seolhwa_20": {
-        "text": "Les quatre phrases sur le mur ont emprunté ma voix."
+        "text": "Tes mains trouveront le chemin avant toi."
     },
     "day5_lunch_seolhwa_21": {
         "text": "*Dès que j'ai vu la flèche sur le mur, ma cheville a cédé la première. Ma paume s'est appuyée contre le mur de gauche.*"
@@ -432,13 +432,13 @@
         ]
     },
     "day5_lunch_seolhwa_c1_1": {
-        "text": "...Merci. Mais ce n'est pas possible."
+        "text": "...Non."
     },
     "day5_lunch_seolhwa_c1_2": {
         "text": "Je ne peux pas sortir par cette porte."
     },
     "day5_lunch_seolhwa_c1_3": {
-        "text": "Ça va. Même si tu franchis la porte, emporte le nom avec toi."
+        "text": "Une fois la porte franchie, ne laisse que le nom."
     },
     "day5_lunch_seolhwa_c2_1": {
         "text": "...Moi."
@@ -450,7 +450,7 @@
         "text": "Si tu sors d'ici, les flèches laissées sur les murs ne serviront plus à rien. Alors moi aussi, j'imagine que je disparaîtrai peu à peu de ta vue."
     },
     "day5_lunch_seolhwa_c2_4": {
-        "text": "êtes-vous d'accord."
+        "text": "Ça suffit."
     },
     "day5_lunch_seolhwa_c2_5": {
         "text": "*Seolhwa a souri.*"
@@ -474,7 +474,7 @@
         "text": "...{name}, tu parles tout seul."
     },
     "day5_lunch_seolhwa_guide_6": {
-        "text": "...Je connais le chemin. Fais-moi confiance."
+        "text": "Je connais le chemin. Suis-moi."
     },
     "day5_lunch_seolhwa_guide_7": {
         "text": "À gauche. Cette porte n'est pas scellée. Tu peux atteindre le 3e étage par le passage du débarras."
@@ -576,7 +576,7 @@
         "text": "Je vous inscrirai dans le prochain livre de présence sous un nouveau nom."
     },
     "day5_lunch_eunsu_23": {
-        "text": "*Silence.*"
+        "text": "*Les mots s'interrompent.*"
     },
     "day5_lunch_eunsu_24": {
         "text": "*Le vent entre par l’espace de sortie de secours. L’odeur de la poussière de la classe s’envole brièvement.*",

@@ -72,7 +72,7 @@
         "text": "***Top of screen: 'NEVERGRAD -- Subject Management System v4.7'***"
     },
     "day4_night_save_glitch_7": {
-        "text": "*A list appears. 13 rows.\n\n#01 Kim Dojin — Terminated\n#03 Park Seojin — Terminated / Day 4 escape attempt\n#07 Kim Taeho — ██ response / External contact: Lee Seolhwa\n#09 Han Jiho — Terminated / Day 3 early detection\n...\n#13 {name} — In Progress\n\nThe remaining rows are closed in gray inside a collapsed menu.*"
+        "text": "*A list appears. Thirteen rows.\n\n#01 Kim Dojin — Terminated\n#03 Park Seojin — Terminated / Day 4 escape attempt\n#07 Kim Taeho — ██ response / External contact: Lee Seolhwa\n#09 Han Jiho — Terminated / Day 3 early detection\n...\n#13 {name} — In Progress\n\nThe remaining rows are grayed out inside a collapsed menu.*"
     },
     "day4_night_save_glitch_8": {
         "text": "*13 rows. 13 names. 12 instances of 'Terminated.'*"
@@ -96,7 +96,7 @@
         "text": "*'Location tracking history.' I tapped it. A red dot moves across the school floor plan. It is my route from the last four days.*"
     },
     "day4_night_save_glitch_15": {
-        "text": "*The gate, stairs, even the floors where I stopped for too long are marked with numbers. The time I passed through moves again on the map.*"
+        "text": "*The gate, the stairs, even the floors where I lingered are numbered. My movements over the last four days replay at a steady pace.*"
     },
     "day4_night_save_glitch_16": {
         "text": "*The permission request I tapped on Day 2 comes back to me. `Required to locate students during campus emergencies`.*"
@@ -120,7 +120,7 @@
         "text": "*Cold water hits my face. My senses don't come back. One more time. One more time.*"
     },
     "day4_night_mirror_3": {
-        "text": "*...The mirror. It's fogged up.*"
+        "text": "*The mirror is fogged over.*"
     },
     "day4_night_mirror_4": {
         "text": "*I have not wiped it once until now. Untouched steam covers the mirror.*"
@@ -141,7 +141,7 @@
         "text": "***The girl is looking at me. The shadows under her eyes are dark.***"
     },
     "day4_night_mirror_10": {
-        "text": "...Don't wipe it."
+        "text": "Don't wipe it."
     },
     "day4_night_mirror_11": {
         "text": "Not yet... don't look."
@@ -165,7 +165,7 @@
         "text": "*Third time. Nose. Mouth. Chin. My face is revealed.*"
     },
     "day4_night_mirror_hit1": {
-        "text": "***In the mirror -- the space behind me is reflected.***"
+        "text": "***The mirror shows the space behind me.***"
     },
     "day4_night_mirror_hit1_2": {
         "text": "***No one is there.***"
@@ -192,7 +192,7 @@
         "text": "***Only the towel rack where Seolhwa stood is reflected in white.***"
     },
     "day4_night_mirror_hit1_10": {
-        "text": "*The scene of Ms. Eunsu unlocking the basement door with her key flashes through my mind.*"
+        "text": "*The basement door, Seolhwa, and the record for #07 fall into the same line.*"
     },
     "day4_night_mirror_hit1_11": {
         "text": "*Row #07 on the log screen comes to mind. `External contact: Lee Seolhwa`. The black cell beside it.*"
@@ -204,7 +204,7 @@
         "text": "***The two screens slip one cell out of alignment.***"
     },
     "day4_night_mirror_hit1_14": {
-        "text": "...I'm sorry."
+        "text": "I'm sorry."
     },
     "day4_night_mirror_hit1_15": {
         "text": "*I hear a voice. Clearly. But the bathroom door, the vent, and the speaker make no sound.*"
@@ -216,7 +216,7 @@
         "text": "*My face, seen properly for the first time in 4 days. Water drops from the tip of my chin, and only the name tag cord marks remain on my neck.*"
     },
     "day4_night_mirror_hit2_3": {
-        "text": "*I take out the 13 photos Yuna gave me from the sink. One by one, I compare them to my face in the mirror.*"
+        "text": "*I recall the names from the records one by one and lay them over the face in the mirror.*"
     },
     "day4_night_mirror_hit2_4": {
         "text": "*#1. Kim Dojin. Short black hair. The face -- identical.*"
@@ -243,7 +243,7 @@
         "text": "*I stumbled backward. My back hit the wall. I slid down.*"
     },
     "day4_night_mirror_collapse_2": {
-        "text": "***Before Seolhwa's voice, the graphite marks on my left hand remain. The writing on the wall. The pressed strokes.***"
+        "text": "***Graphite on my left hand. The writing on the wall. Indented strokes.***"
     },
     "day4_night_mirror_collapse_3": {
         "text": "*I slid down with my back against the wall and sat there. The chill of the tiles touched my knees.*"
@@ -264,7 +264,7 @@
         "text": "*Seolhwa is sitting beside me. No shadow stretches toward the mirror.*"
     },
     "day4_night_mirror_collapse_9": {
-        "text": "*But the air beside me is just a little cold. For now, I lean my back against that cold.*"
+        "text": "*But the air beside me is slightly colder.*"
     },
     "day4_night_plan": {
         "text": "*...Only after the chill of the tiles climbed up to the inside of my knees did I stand.*"
@@ -282,7 +282,7 @@
         "text": "*Two. Eunsu opens the door, Riin offers the cup, and Sea even knows where I will look.*"
     },
     "day4_night_plan_6": {
-        "text": "*Three. Seolhwa = #07's outside contact. Not reflected in mirrors. Linked to the left-hand clue.*"
+        "text": "*Three. Seolhwa's trace appears beside #07. The mirror is empty, and only my left hand remembers first.*"
     },
     "day4_night_plan_7": {
         "text": "*Four. Machine noise, empty seats, breathing beyond the door. All of it leads under the old building.*"
@@ -323,10 +323,10 @@
         "text": "*The front door is a closed answer. Go to the emergency exit of the old building.*"
     },
     "day4_night_plan_expose": {
-        "text": "*Documents are a burden if you have them in your hands, and if they are outside, they are a knife.*"
+        "text": "*I need to get the documents outside. If they stay in my bag, this ends here.*"
     },
     "day4_night_plan_confront": {
-        "text": "*Bring out the names in front of Eunsu. Not the thirteenth, but the twelve blank spaces.*"
+        "text": "*Confront Eunsu with the record for #13 and the twelve cases before it.*"
     },
     "day4_night_plan_final": {
         "text": "*I packed my bag. Evidence. Phone. Yuna's camera. The bare minimum.*"

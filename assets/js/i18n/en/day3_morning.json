@@ -3,7 +3,7 @@
         "text": "*Day 3. The alarm goes off.*"
     },
     "day3_morning_wake_2": {
-        "text": "*...My body feels heavy. The hand that turned off the alarm drops onto the blanket a beat late.*"
+        "text": "*My body feels heavy. The hand that silenced the alarm drops onto the blanket a beat late.*"
     },
     "day3_morning_wake_3": {
         "text": "*I stood in front of the sink to wash my face. The mirror is fogged up. I reached out to wipe it... and stopped.*"
@@ -27,7 +27,7 @@
         "text": "*I leave the house and head to school. The morning air is cold.*"
     },
     "day3_morning_commute_2": {
-        "text": "*Walking through the alley, two students are walking ahead of me. One of them says:*"
+        "text": "*As I walk through an alley, I spot two students ahead. One of them says:*"
     },
     "day3_morning_commute_3": {
         "text": "Hey, did you do the math homework? Number 2 was kind of hard."
@@ -57,7 +57,7 @@
         "text": "*I pass through the school gate between the other students. A short voice behind me makes me turn around.*"
     },
     "day3_morning_gate_4": {
-        "text": "*Nobody was looking. Everyone was walking forward.*"
+        "text": "*No one looks. Everyone keeps walking straight ahead.*"
     },
     "day3_morning_gate_5": {
         "text": "*The boy who just passed meets my eyes. His lips move very slightly. No sound. It is close to 'again.'*"
@@ -72,13 +72,13 @@
         "text": "*A locker. The name has been scratched off. Marks of being scraped repeatedly with a key or knife.*"
     },
     "day3_morning_locker_3": {
-        "text": "*Curious, I opened the locker. It wasn't locked. Completely empty. Just dust.*"
+        "text": "*Curious, I open the unlocked locker. It is completely empty except for dust.*"
     },
     "day3_morning_locker_4": {
         "text": "*In the corner, a torn photo. A passport-sized photo cut in half. Only half a face remains.*"
     },
     "day3_morning_locker_5": {
-        "text": "*...This face. It looks familiar. Who is it?*",
+        "text": "*This face looks familiar. Who is it?*",
         "choices": [
             "Take the photo fragment",
             "Check the back",
@@ -101,7 +101,7 @@
         "text": "*I closed the locker and turned the corner. Seolhwa is standing there. Close this time.*"
     },
     "day3_morning_seolhwa_1": {
-        "text": "*...Surprisingly, she speaks to me first.*"
+        "text": "*Seolhwa speaks to me first.*"
     },
     "day3_morning_seolhwa_3": {
         "text": "...You're left-handed, aren't you?"
@@ -110,7 +110,7 @@
         "text": "...Huh? Yeah, I am. How did you know?"
     },
     "day3_morning_seolhwa_5": {
-        "text": "*The girl does not answer. Her gaze moves once between my left hand and my face. Then, in a small voice:*",
+        "text": "*She doesn't answer. Her gaze moves once between {name}'s left hand and face. Then she speaks quietly.*",
         "choices": [
             "Answer the question about my left hand",
             "Ask why she wants to know",
@@ -124,7 +124,7 @@
         "text": "What?"
     },
     "day3_morning_seolhwa_8": {
-        "text": "*The girl turns and walks away. She does not answer me.*"
+        "text": "*She turns and walks away without answering.*"
     },
     "day3_morning_seolhwa_9": {
         "text": "*The fingers of my left hand curl and uncurl on their own. The hand I held out when we greeted each other yesterday was my right.*"
@@ -136,7 +136,7 @@
         "text": "*I opened the door.*"
     },
     "day3_morning_classroom_3": {
-        "text": "*The conversations stopped. All at once. Like a knife cutting through them.*"
+        "text": "*Every conversation stops at once.*"
     },
     "day3_morning_classroom_4": {
         "text": "*Chalk dust falls slowly below the blackboard. The laughter does not return.*"
@@ -145,10 +145,10 @@
         "text": "*Two boys in the front row glance at each other. A girl in the back row turns her eyes toward the window. Under a desk, someone stops a chair leg with the tip of their foot.*"
     },
     "day3_morning_goosebumps": {
-        "text": "*I rub my forearm. All that remains beneath my fingertips is the feeling of tiny hairs standing on end. Only the classroom clock's second hand sounds far too loud.*"
+        "text": "*I rub my forearm. The hairs are standing on end. The ticking second hand is the only sound that catches in my ears.*"
     },
     "day3_morning_sea_1a": {
-        "text": "*Sea is sitting in her seat. She's smiling, but... only her mouth is smiling.*"
+        "text": "*Sea is sitting at her desk. She's smiling, but only the corners of her mouth have moved.*"
     },
     "day3_morning_sea_2": {
         "text": "Morning, {name}. You're a bit late today?"
@@ -163,7 +163,7 @@
         "text": "*I look at Sea. The corners of her mouth are raised. Her voice is bright. Her fingers on the desk stop twice, at an even rhythm.*"
     },
     "day3_morning_sea_6": {
-        "text": "*Sea's gaze moves down my face, my nape, my left hand, then back up again. Like she's checking each blank in order.*"
+        "text": "*Sea's gaze moves from {name}'s face to the back of the neck, then the left hand, before rising again.*"
     },
     "day3_morning_sea_6b": {
         "text": "*In the margin of Sea's notebook, beside today's date, three small empty squares have been drawn.*"
@@ -187,7 +187,7 @@
         "text": "*I definitely put it on the left, but it's on the right.*"
     },
     "day3_morning_pencil_3": {
-        "text": "*...Again. The milk, the pencil case.*"
+        "text": "*Again. The milk. The pencil case.*"
     },
     "day3_morning_end": {
         "text": "*Class begins. I read the first line of the textbook three times, but my eyes keep returning to the same spot.*"

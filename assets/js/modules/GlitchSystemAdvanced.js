@@ -2667,7 +2667,7 @@ class GlitchSystemAdvanced {
         // 씬 ID는 실제 시나리오에 존재해야 매칭됨
         return {
             'day1_gate_1': this._pickLocalized({
-                ko: '...이 길을 아는 것 같다. 왜지? 처음 오는 학교인데. ......피곤해서 그런 거겠지.',
+                ko: '이 길, 왜 낯익지? 처음 오는 학교인데. ...피곤해서겠지.',
                 en: '...I feel like I know this path. Why? It is my first time at this school. ...I must be tired.',
                 ja: '...この道を知っている気がする。なぜ? 初めて来る学校なのに。...疲れているだけだろう。',
                 es: '...Siento que conozco este camino. ¿Por qué? Es mi primera vez en esta escuela. ...Debo estar cansado.',
@@ -2676,7 +2676,7 @@ class GlitchSystemAdvanced {
                 pt: '...Sinto que conheço este caminho. Por quê? É minha primeira vez nesta escola. ...Devo estar cansado.'
             }),
             'day1_hallway_1': this._pickLocalized({
-                ko: '...이 웃음. 어딘가에서 봤다. ...아닌가.',
+                ko: '저 웃음, 어디서 봤다. 아닌가.',
                 en: '...That smile. I have seen it somewhere. ...Or maybe not.',
                 ja: '...あの笑顔。どこかで見たことがある。...違うかもしれない。',
                 es: '...Esa sonrisa. La he visto en algún lugar. ...O tal vez no.',
@@ -2685,7 +2685,7 @@ class GlitchSystemAdvanced {
                 pt: '...Aquele sorriso. Já vi em algum lugar. ...Ou talvez não.'
             }),
             'day2_morning_gate_1': this._pickLocalized({
-                ko: '...세아의 동작이 어쩐지 익숙하다. 기분 탓이겠지.',
+                ko: '세아의 움직임이 낯익다. 기분 탓이겠지.',
                 en: "...Sea's movement feels strangely familiar. It must be my imagination.",
                 ja: '...セアの動きが妙に見覚えある。気のせいだろう。',
                 es: '...El movimiento de Sea se siente extrañamente familiar. Debe ser mi imaginación.',
@@ -2694,7 +2694,7 @@ class GlitchSystemAdvanced {
                 pt: '...O movimento da Sea parece estranhamente familiar. Deve ser coisa da minha cabeça.'
             }),
             'day3_after_riin_drink': this._pickLocalized({
-                ko: '...이 맛. 낯설지 않다. 마셔본 적도 없는데.',
+                ko: '이 맛을 안다. 마셔본 적도 없는데.',
                 en: '...This taste is not unfamiliar, even though I have never drunk it before.',
                 ja: '...この味。知らない味じゃない。飲んだこともないのに。',
                 es: '...Este sabor no me resulta desconocido, aunque nunca lo había bebido.',

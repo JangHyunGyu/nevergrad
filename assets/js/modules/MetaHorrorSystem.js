@@ -161,7 +161,7 @@ class MetaHorrorSystem {
             { title: '한세아', body: '어디 가? 돌아와.' },
             { title: '한세아', body: '...보고 있어.' },
             { title: '한세아', body: '{name}, 왜 안 돌아와?' },
-            { title: '박은수', body: '수업 중인데 어디 갔어요?' },
+            { title: '박은수', body: '수업 중인데 어디 갔어?' },
             { title: '한울 스마트캠퍼스', body: '비정상 이탈 감지. 위치 확인 중...' }
         ];
 

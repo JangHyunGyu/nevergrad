@@ -3,7 +3,7 @@
         "text": "*Abril.*"
     },
     "day1_opening_2": {
-        "text": "*Pétalos de cerezo revolotean en el aire. Una cálida brisa primaveral se cuela por mi nuevo uniforme.*"
+        "text": "*Los pétalos de cerezo revolotean. El viento se cuela por las mangas de mi uniforme nuevo.*"
     },
     "day1_opening_3": {
         "text": "*El uniforme todavía está rígido. Huele apenas a almidón. Los pliegues que marqué ayer con la plancha vuelven a levantarse cada vez que doblo las rodillas.*"
@@ -99,7 +99,7 @@
         "text": "*Sea sonríe ligeramente.*"
     },
     "day1_sea_meet_17": {
-        "text": "Cuando veo a alguien nuevo perdido, me dan ganas de ayudar."
+        "text": "Si el estudiante nuevo se pierde, la delegada de clase tiene que orientarlo."
     },
     "day1_sea_meet_18": {
         "text": "*Por donde pasa Sea, los estudiantes se apartan con naturalidad. Yo la sigo desde atrás.*"
@@ -154,12 +154,12 @@
         "text": "¿Oh? Gracias, pero... ¿a qué se debe?"
     },
     "day1_choco_6": {
-        "text": "Tienes las manos frías. El primer día, si vienes con el estómago vacío, tiemblas más. Tómate esto aunque sea."
+        "text": "Tienes las manos heladas. Las clases de la mañana son duras con el estómago vacío. Al menos tómate esto."
     },
     "day1_choco_choice": {
         "text": "",
         "choices": [
-            "Gracias. Lo beberé.",
+            "Gracias. Me la tomo.",
             "¿Cómo supiste que me gustaba esto?",
             "En realidad, la leche de fresa es más lo mío."
         ]
@@ -168,7 +168,7 @@
         "text": "*Introduzco la pajita y doy un sorbo. Dulce. Sabroso.*"
     },
     "day1_choco_accept_2": {
-        "text": "Delicioso. Gracias, Sea."
+        "text": "Gracias. Me la tomaré."
     },
     "day1_choco_accept_3": {
         "text": "¿Verdad? El chocolate es una opción segura."
@@ -186,7 +186,7 @@
         "text": "...Te dije que estaba al 2x1. También había de fresa, pero pensé que chocolate era una apuesta más segura."
     },
     "day1_choco_question_4": {
-        "text": "No, está bien. Gracias."
+        "text": "Ya. Entiendo."
     },
     "day1_choco_question_5": {
         "text": "Qué alivio."
@@ -294,13 +294,13 @@
         "text": "Hola, soy {name}. Un gusto conocerte."
     },
     "day1_seolhwa_greet_3": {
-        "text": "*La chica me mira. Nuestras miradas se cruzan.*"
+        "text": "*Mira a {name}. Nuestras miradas se cruzan.*"
     },
     "day1_seolhwa_greet_4": {
         "text": "*Las comisuras de sus labios suben un poco y enseguida vuelven a bajar. Tiene las orejas rojas.*"
     },
     "day1_seolhwa_greet_5": {
-        "text": "*Después de un breve silencio, con una voz muy pequeña:*"
+        "text": "*Tras una breve pausa, habla con un hilo de voz.*"
     },
     "day1_seolhwa_greet_6": {
         "text": "...Hola."
@@ -342,7 +342,7 @@
         "text": "*Se alcanzan a ver algunos trazos de letras. Una línea que se curva hacia la izquierda, una marca que parece un número. Al rascarla con la uña, me queda polvo pegado.*"
     },
     "day1_dejavu2_4": {
-        "text": "*Recogí el lápiz y me concentré en la clase.*"
+        "text": "*Recojo el lápiz y vuelvo la vista al pizarrón.*"
     },
     "day1_break_1": {
         "text": "*Hora del recreo. Algunos chicos se acercan.*"
@@ -357,7 +357,7 @@
         "text": "¿En qué has estado últimamente?"
     },
     "day1_break_5": {
-        "text": "*La conversación continúa con naturalidad. Lugares cerca de la escuela, música favorita. Alguien se equivoca con mi nombre dos veces y Sea lo corrige a mi lado.*"
+        "text": "*Pasamos de hablar de los alrededores de la escuela a la música que escuchamos últimamente. Cuando alguien se equivoca dos veces con mi nombre, Sea lo corrige a mi lado.*"
     },
     "day1_break_6": {
         "text": "Oye, Sea te está cuidando bastante."
@@ -414,6 +414,6 @@
         "text": "*Parpadee. No habia nadie. El pasillo vacio. Por un segundo, el olor a cerezo fue reemplazado por antiseptico.*"
     },
     "day1_xover_seolhwa_5": {
-        "text": "*...¿Qué fue eso justo ahora? ...Debe ser el cansancio.*"
+        "text": "*¿Qué fue eso? El olor a desinfectante sigue aquí.*"
     }
 }

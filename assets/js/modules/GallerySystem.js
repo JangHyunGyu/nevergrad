@@ -31,7 +31,7 @@ class GallerySystem {
             pt: 'Voce encarou a verdade e escolheu se formar.'
         },
         'RESIST END': {
-            ko: '끝까지 저항했지만 교실은 너를 놓아주지 않았다.',
+            ko: '은수와 함께 교실을 나와 순환을 끊었다.',
             en: 'You resisted to the end, but the classroom never let go.',
             ja: '最後まで抵抗したが、教室は離してくれなかった。',
             es: 'Resististe hasta el final, pero el aula nunca te soltó.',
@@ -40,7 +40,7 @@ class GallerySystem {
             pt: 'Voce resistiu ate o fim, mas a sala nunca soltou voce.'
         },
         'FORGET END': {
-            ko: '모든 것을 잊고 평범한 일상으로 돌아갔다.',
+            ko: '모든 것을 잊고 14번째 등교를 시작했다.',
             en: 'You forgot everything and returned to ordinary days.',
             ja: 'すべてを忘れ、普通の日々へ戻った。',
             es: 'Lo olvidaste todo y volviste a la rutina.',
@@ -58,7 +58,7 @@ class GallerySystem {
             pt: 'Uma sala de aula feliz. Para sempre.'
         },
         'GHOST END': {
-            ko: '너는 사라졌지만 무언가가 교실에 남았다.',
+            ko: '너는 학교를 빠져나왔지만 교실에는 무언가 남았다.',
             en: 'You left, but something stayed behind in the classroom.',
             ja: 'あなたは去ったが、何かが教室に残った。',
             es: 'Te fuiste, pero algo se quedó en el aula.',
@@ -67,7 +67,7 @@ class GallerySystem {
             pt: 'Voce foi embora, mas algo ficou na sala de aula.'
         },
         'ESCAPE END': {
-            ko: '탈출에 성공했다. 하지만 대가가 있었다.',
+            ko: '탈출했지만 증거는 충분하지 않았다.',
             en: 'You escaped. But there was a price.',
             ja: '脱出した。けれど代償があった。',
             es: 'Escapaste. Pero hubo un precio.',

@@ -167,7 +167,7 @@ class I18nManager {
         ko: {
             title: "졸업하지 못한 교실", subtitle: "5일의 기록",
             metaTitle: "졸업하지 못한 교실 - 5일의 기록",
-            metaDesc: "전학 첫날, 모든 것이 완벽했다. 너무 완벽해서 이상할 정도로.",
+            metaDesc: "전학 첫날, 모든 것이 지나치게 완벽했다.",
             newGame: "새 게임", continue: "이어하기", gallery: "갤러리",
             namePrompt: "당신의 이름은?", namePlaceholder: "이름을 입력하세요", start: "시작",
             save: "저장", load: "불러오기", settings: "설정", toTitle: "타이틀로", resume: "돌아가기",
@@ -185,14 +185,14 @@ class I18nManager {
             headphoneHint: "...이어폰을 끼면 더 잘 들릴 텐데.",
             timeDialogue: {
                 lateNight:   "지금 {time}이야... 이 시간까지 깨어있는 거야?",
-                dawn:        "새벽 {time}... 밤새 한 거야? 그렇게까지...",
+                dawn:        "새벽 {time}. 밤새 한 거야? 그렇게까지 해야 했어?",
                 morning:     "{time}. 아침이네. 수업 시작하기 딱 좋은 시간이야.",
                 lateMorning: "{time}... 수업 시간 아니야? 여기 있어도 되는 거야?",
                 noon:        "{time}. 점심시간이네. 밥은 먹었어?",
                 afternoon:   "{time}... 오후네. 방과후까지 얼마 안 남았어.",
                 sunset:      "{time}. 해가 지고 있어... 학교에 남아있을 거야?",
                 evening:     "{time}... 밤이 되고 있어. 학교가 조용해지는 시간이야.",
-                night:       "{time}... 늦은 시간이네. 여기 혼자 있는 거 무섭지 않아?"
+                night:       "{time}. 늦었네. 여기 혼자 남아 있을 거야?"
             }
         },
         en: {

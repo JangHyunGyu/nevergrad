@@ -254,7 +254,7 @@ class DeviceGimmickSystem {
         let message = '';
         const messages = this._pickLocalized({
             ko: {
-                long: `${sec}\ucd08\ub098 \ub9dd\uc124\uc600\uc796\uc544... \uadf8\ub9cc\ud07c \uace0\ubbfc\ud588\ub2e4\ub294 \uac70\uc9c0?`,
+                long: `${sec}\ucd08\ub098 \ub9dd\uc124\uc600\ub124. \uc774\uc720\uac00 \ubb50\uc57c?`,
                 medium: `${sec}\ucd08... \uaf64 \ub9dd\uc124\uc600\ub124.`,
                 short: `\uc7a0\uae50 \ub9dd\uc124\uc600\uc9c0? \ub2e4 \ubd24\uc5b4.`
             },
@@ -568,7 +568,7 @@ class DeviceGimmickSystem {
             ko: {
                 critical: `\ubc30\ud130\ub9ac ${level}%... \uace7 \uaebc\uc9c0\uaca0\ub124. \uadf8\ub7fc \ub098\ub3c4 \uc0ac\ub77c\uc9c0\ub294 \uac70\uc57c?`,
                 low: `\ubc30\ud130\ub9ac ${level}%\ubc16\uc5d0 \uc548 \ub0a8\uc558\uc5b4. \uc11c\ub458\ub7ec\uc57c \ud558\uc9c0 \uc54a\uc744\uae4c?`,
-                uneasy: `\ubc30\ud130\ub9ac ${level}%... \uc870\uae08 \ubd88\uc548\ud558\uc9c0 \uc54a\uc544?`,
+                uneasy: `\ubc30\ud130\ub9ac ${level}%. \uc5bc\ub9c8 \uc548 \ub0a8\uc558\uc5b4.`,
                 mid: `\ubc30\ud130\ub9ac ${level}%. \uc544\uc9c1 \uc2dc\uac04\uc740 \uc788\uc5b4... \uc544\ub9c8.`,
                 full: `\ubc30\ud130\ub9ac ${level}%... \ucda9\uc804\ud574\ub193\uace0 \uc654\uad6c\ub098. \uc624\ub798 \uc788\uc744 \uc0dd\uac01\uc774\uc57c?`,
                 high: `\ubc30\ud130\ub9ac ${level}%. \uc5ec\uc720 \uc788\ub124. \ucc9c\ucc9c\ud788 \ud574\ub3c4 \ub3fc.`,

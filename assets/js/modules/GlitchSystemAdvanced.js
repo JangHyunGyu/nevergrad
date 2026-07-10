@@ -2667,7 +2667,7 @@ class GlitchSystemAdvanced {
         // 씬 ID는 실제 시나리오에 존재해야 매칭됨
         return {
             'day1_gate_1': this._pickLocalized({
-                ko: '이 길, 왜 낯익지? 처음 오는 학교인데. ...피곤해서겠지.',
+                ko: '이 길이 왜 낯익지? 처음 온 학교인데. 피곤한가.',
                 en: '...I feel like I know this path. Why? It is my first time at this school. ...I must be tired.',
                 ja: '...この道を知っている気がする。なぜ? 初めて来る学校なのに。...疲れているだけだろう。',
                 es: '...Siento que conozco este camino. ¿Por qué? Es mi primera vez en esta escuela. ...Debo estar cansado.',

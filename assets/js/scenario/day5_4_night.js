@@ -937,7 +937,7 @@ Object.assign(SCENARIO[5], {
             5: {
                 eunsuBreaksFourthWall: true,
                 eunsuLine: {
-                    ko: "...아직 보고 계시네요.",
+                    ko: "아직 보고 계시네요.",
                     en: "...You are still watching.",
                     ja: "...まだ見ているんですね。",
                     es: "...Todavia estas mirando.",
@@ -968,7 +968,7 @@ Object.assign(SCENARIO[5], {
                         pt: "...Voce tambem nao foi embora desta vez."
                     },
                     {
-                        ko: "당신도 안 보내주는 거예요?",
+                        ko: "이번에도 못 나가게 할 거예요?",
                         en: "Are you not letting them go either?",
                         ja: "あなたも行かせてくれないの?",
                         es: "Tu tampoco los vas a dejar ir?",

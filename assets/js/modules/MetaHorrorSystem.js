@@ -329,7 +329,7 @@ class MetaHorrorSystem {
                 thanks: '고마워. ...꼭 나가.',
                 memoTitle: '=== 이설화의 메모 ===',
                 memo1: '피험자 기록은 관리자 폴더에 있어.',
-                memo2: '그런데... 정말 보고 싶은 거야?',
+                memo2: '정말 보고 싶은 거야?',
                 memo3: '이걸 알아도 여기서 나가지는 못해.'
             },
             en: {
@@ -440,7 +440,7 @@ class MetaHorrorSystem {
     _getScreenshotReactions() {
         return this._pickLocalized({
             ko: {
-                save_slot: { text: '[\uAE30\uB85D \uC2DC\uB3C4 \uAC10\uC9C0] ...\uB204\uAD6C\uD55C\uD14C \uBCF4\uC5EC\uC904 \uAC70\uC57C?', blackout: true, blackoutDuration: 500 },
+                save_slot: { text: '[\uAE30\uB85D \uC2DC\uB3C4 \uAC10\uC9C0] \uB204\uAD6C\uD55C\uD14C \uBCF4\uC5EC\uC904 \uAC70\uC57C?', blackout: true, blackoutDuration: 500 },
                 mirror_13faces: { text: '\uCC0D\uC5B4\uB3C4 \uC18C\uC6A9\uC5C6\uC5B4', blackout: true, blackoutDuration: 1000 },
                 day5_docs: { text: '[\uC678\uBD80 \uBC18\uCD9C \uAE08\uC9C0]', blackout: false },
                 complicit_sign: null
@@ -521,7 +521,7 @@ class MetaHorrorSystem {
         const map = this._pickLocalized({
             ko: {
                 eunsuTitle: '\uC740\uC218 \uC120\uC0DD\uB2D8',
-                eunsuBody: '\uC5B4\uB514 \uAC14\uC5B4\uC694? \uC218\uC5C5 \uC2DC\uAC04\uC774\uC5D0\uC694 :)',
+                eunsuBody: '\uC5B4\uB514 \uAC14\uC5B4? \uC544\uC9C1 \uC218\uC5C5 \uC911\uC774\uC57C. :)',
                 seaTitle: '\uD55C\uC138\uC544',
                 seaBody: '...\uC65C \uC548 \uC640?',
                 appTitle: '\uD55C\uC6B8 \uC548\uC804 \uC571',

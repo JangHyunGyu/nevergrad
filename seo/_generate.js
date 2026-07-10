@@ -573,6 +573,7 @@ function renderPage(cluster, lang, page) {
   return `<!DOCTYPE html>
 <html lang="${langData.htmlLang}">
 <head>
+  <script src="../assets/js/error-reporter.js?v=20260710-durable"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHtml(page.title)}</title>
@@ -619,6 +620,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #f1d4df;text-align:
 @media(max-width:680px){h1{font-size:27px}.grid{grid-template-columns:1fr}.wrap{padding-left:18px;padding-right:18px}.cta{font-size:16px;padding:12px 24px}}
   </style>
   <script type="application/ld+json">${structuredData(langData, page)}</script>
+<script src="../assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
 </head>
 <body>
   <main class="wrap">

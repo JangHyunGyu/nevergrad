@@ -459,6 +459,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // ============================================================================
 
 (function() {
+    if (window.__nevergradErrorReporterInstalled) return;
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var p = window.location.pathname;
     var lang = p.includes('/en/') ? 'en' : p.includes('/ja/') ? 'ja'

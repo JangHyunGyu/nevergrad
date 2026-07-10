@@ -231,7 +231,7 @@ class AudioManager {
 
     /**
      * 오디오 로드 실패를 D1 error_logs로 보고 (path별 1회만).
-     * app.js의 글로벌 핸들러가 노출한 window.__nevergradReportError 사용.
+     * error-reporter.js의 글로벌 핸들러가 노출한 window.__nevergradReportError 사용.
      * @private
      */
     _reportLoadFailure(path, fileLoadError) {

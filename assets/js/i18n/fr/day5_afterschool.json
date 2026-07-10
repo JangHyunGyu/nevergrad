@@ -18,7 +18,7 @@
         "text": "...Alors ça va."
     },
     "day5_after_cage_5": {
-        "text": "*La professeure m'a pris par les épaules et m'a remis face à ma place. Ses doigts étaient froids.*"
+        "text": "*La professeure saisit {name} par les épaules et le remet face à sa place. Ses doigts sont froids.*"
     },
     "day5_after_cage_6": {
         "text": "*Je suis retourné en classe. Je me suis assis. Sea s'assoit ? cétéôté de moi. L'infirmière Riin me tend du thé. Tout le monde sourit.*"
@@ -54,7 +54,7 @@
         "text": "Je vais preparer le dernier examen. Juste une prise de sang et une perfusion, et c'est termine."
     },
     "day5_after_caught_7": {
-        "text": "*Mme Riin désinfecte l'intérieur de mon coude. Le froid du coton imbibé d'alcool touche ma peau. Je tends les poignets.*"
+        "text": "*Mme Riin désinfecte le pli du coude de {name}. Le coton imbibé d’alcool touche la peau de {name}, qui raidit les poignets.*"
     },
     "day5_after_caught_choice": {
         "text": "*...Qu'est-ce que je fais ?*",
@@ -139,7 +139,7 @@
         "text": "Même après 12 fois, je ne m'y habitue pas. Chaque fois que tu me reconnaissais avec des yeux qui me voyaient pour la première fois, mes phrases dans le rapport se coupaient net."
     },
     "day5_after_confront_15": {
-        "text": "*La professeure s'est arrêtée. Devant la sortie de secours. A trois metres de moi. Elle a sorti une seringue de sa poche. Lentement. Comme pour me la montrer.*"
+        "text": "*Mme Eunsu s’arrête près de la sortie de secours, à environ trois mètres de {name}, puis sort une seringue de sa poche.*"
     },
     "day5_after_confront_16": {
         "text": "*Le liquide dans la seringue scintillait sous la lumière du néon. Sur l'étiquette, en petites lettres, il était écrit `RESET / S-13`.*"
@@ -327,7 +327,7 @@
         "text": "**Cette fois, c’est moi qui te pousserai vers l’avant.**"
     },
     "day5_after_ghost_7": {
-        "text": "*Seolhwa m'a regardé droit dans les yeux. Des yeux qui n'existent ni sur la caméra, ni dans le registre d'appel, sont plus nets que ceux de n'importe qui en cet instant.*"
+        "text": "*Seolhwa regarde {name} droit dans les yeux. Des yeux qui n’existent ni sur la caméra ni dans le registre d’appel.*"
     },
     "day5_after_ghost_8": {
         "text": "Courir. maintenant."
@@ -336,7 +336,7 @@
         "text": "*Mon corps a bougé. Mes pieds ont obliqué vers la sortie de secours. J'ai pris la main de Yuna et j'ai couru.*"
     },
     "day5_after_ghost_10": {
-        "text": "*Mme Eunsu a rié derrière moi mais je ne me suis pas arrété. J'ai franchi la sortie de secours. Je me suis retourné. Seolhwa se tient à l'intérieur de la porte. Elle sourit.*"
+        "text": "*Mme Eunsu crie derrière, mais {name} ne s’arrête pas. La sortie de secours franchie avec Yuna, un regard en arrière : Seolhwa se tient derrière la porte et sourit.*"
     },
     "day5_after_ghost_11": {
         "text": "...professeur. Ensuite, il n’y a pas d’étiquette de nom."

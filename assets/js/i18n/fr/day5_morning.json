@@ -102,7 +102,7 @@
         "text": "...Je suis Choi Yuna. Du club photo. L'appareil... est dans mon sac."
     },
     "day5_morning_rescue_3": {
-        "text": "...{name}. Tu es venu."
+        "text": "Je t’ai trouvé. Te voilà."
     },
     "day5_morning_rescue_4": {
         "text": "*Le regard de Yuna se stabilise. Faiblement, mais il revient. Yuna comprend que j’ai vu les dossiers. Haletante, elle ouvre la bouche.*"
@@ -268,7 +268,7 @@
         "text": "Senior... dans un instant, Mme Riin va descendre. Elle vient toujours pour les médicaments."
     },
     "day5_morning_true_31": {
-        "text": "*Yuna me retient. Sa main est sans force.*"
+        "text": "*Yuna s’agrippe à {name}, mais ses mains sont sans force.*"
     },
     "day5_morning_true_32": {
         "text": "...sunbae. Tout est dans cette caméra. Trois ans de... qui tu étais."
@@ -405,10 +405,10 @@
         "text": "*Yuna s'est arrêtée en pleine phrase. On a ous les deux regardé en haut. Boum. Encore une. Le 3e étage est aussi verrouillé.*"
     },
     "day5_morning_broadcast_14": {
-        "text": "...{name}."
+        "text": "...Sunbae."
     },
     "day5_morning_broadcast_15": {
-        "text": "*Yuna a attrapé ma manche. Ses doigts serrent fort.*"
+        "text": "*Yuna saisit la manche de {name}. Ses doigts se crispent.*"
     },
     "day5_morning_broadcast_16": {
         "text": "Montons. Il reste une porte que nous n'avons pas vérifiée."
@@ -462,28 +462,28 @@
         "text": "*13 noms sur papier. De « Kim Do-jin » à « {name} ». Le titre n’est pas « Diplôme » mais « Confirmation de fin de traitement ». Le sceau a été tamponné douze fois et seul le dernier espace est sec.*"
     },
     "day5_morning_grad_15": {
-        "text": "Le premier, Dojin, s'est enfui en pleurant au bout de 3 jours. Bon, il ne savait probablement même pas ce qui se passait."
+        "text": "*Elle tourne la première page. Kim Dojin. À côté de la photo, une phrase écrite au stylo rouge.*"
     },
     "day5_morning_grad_16": {
         "text": "Le 2e, Yoon Jaehyeon, était un garçon calme. Il n'a jamais rien soupçonné. La nuit du Jour 5 — il a reçu l'injection en souriant. Sans rien savoir."
     },
     "day5_morning_grad_17": {
-        "text": "Le 5e, Kang Minhyeok, aimait vraiment sa professeure. Sincèrement. ...C'était dommage d'effacer ses souvenirs."
+        "text": "*Deuxième page. Lee Junseo. Une petite tache marque un coin du papier ; impossible de dire si c’est du café ou de l’eau.*"
     },
     "day5_morning_grad_18": {
-        "text": "Le 6e, Jeong Haryul... était intelligent. Le Jour 4, il a rouvé un flacon dans l'infirmerie de Riin. Cette nuit-là, j'ai effacé sa mémoire. — Alors qu'il n'avait encore que des soupçons."
+        "text": "*Cinquième page. Kang Minhyeok. Une note indique : « Temps passé en salle des professeurs en hausse. Réaction de dépendance satisfaisante. »*"
     },
     "day5_morning_grad_19": {
-        "text": "Le 7e, Kim Taeho... il y a eu un problème. Il a ontacté une étudiante de l'établissement et a enté de s'enfuir."
+        "text": "*Sixième page. Jeong Haryul. Un trombone noir sur la photo. À côté, la photographie d’un flacon de médicament.*"
     },
     "day5_morning_grad_20": {
-        "text": "...Cette fille a été éliminée. Mais même après avoir effacé ta mémoire, tu continuais à la voir. Comme une hallucination."
+        "text": "*La main de Mme Eunsu s’arrête à la septième page. Kim Taeho. Une autre photo dépasse à moitié derrière la sienne : une lycéenne aux cheveux blancs, le visage volontairement découpé.*"
     },
     "day5_morning_grad_21": {
-        "text": "Le 9e, Han Jiho, a été découvert le Jour 3. Traité discrètement."
+        "text": "*Elle ne parvient pas à tourner cette page.*"
     },
     "day5_morning_grad_21a": {
-        "text": "Le 10e, Lee Yejun... la nuit du dernier jour, il m'a écrit une lettre. À moi. 'Grâce à vous, madame, j'ai passé une bonne vie scolaire.' ...Il l'a écrite avant que j'effacé sa mémoire. Elle est encore dans le tiroir."
+        "text": "*Le tiroir du bureau est entrouvert. Une lettre apparaît à l’intérieur : « Grâce à vous, madame, j’ai passé une bonne scolarité. » Elle est signée Song Yejun et datée de la nuit du cinquième jour du dixième cycle.*"
     },
     "day5_morning_grad_22": {
         "text": "*La voix de la professeure devient de plus en plus faible.*"
@@ -492,22 +492,22 @@
         "text": "*La voix de la professeure faiblit. Elle s'agrippe au pupitre. Ses doigts sont blancs. Serrés.*"
     },
     "day5_morning_grad_24": {
-        "text": "...Après 12 répétitions, on apprend. Effacer les souvenirs, c'est facile. Mais—"
+        "text": "*Mes habitudes sont classées comme sur une fiche d’observation en cours.*"
     },
     "day5_morning_grad_25": {
         "text": "**Même en effaçant les souvenirs, on ne peut pas effacer le cœur.**"
     },
     "day5_morning_grad_26": {
-        "text": "À chaque fois, tu prenais les baguettes de la main gauche d'abord. À chaque fois, tu tournais à gauche dans le couloir. À chaque fois — tu t'asseyais à la même place."
+        "text": "*Elle essaie de sourire, sans y parvenir.*"
     },
     "day5_morning_grad_27": {
         "text": "*La conversation s'interrompt. Les points de la liste attirent mon regard, ligne après ligne.*"
     },
     "day5_morning_grad_28": {
-        "text": "...Quand on observé quelqu'un 12 fois, on ne peut pas s'empêcher de mémoriser. Les habitudes d'une personne sans souvenirs. Les choses qui ne changent pas même quand les souvenirs changent."
+        "text": "{name}."
     },
     "day5_morning_grad_29": {
-        "text": "Même quand les souvenirs étaient effaces, **toi** tu étais le même. C'est pour ça—"
+        "text": "*Elle commence à prononcer le nom de {name}, puis reporte les yeux sur la liste.*"
     },
     "day5_morning_grad_29a": {
         "text": "*Son expression n'est pas celle qu'elle affiche en cours. Ses yeux ne s'arrêtent que lorsqu'elle vérifie la liste.*"
@@ -533,7 +533,7 @@
         "text": "...La première approbation ne portait que le sceau du conseil d'administration. Mon nom n'y était pas."
     },
     "day5_morning_grad_reply_2b": {
-        "text": "**À partir de la 3e fois, c'était mon choix.** Si je rapportais au conseil que 'le sujet est encore viable,' je pouvais obtenir l'approbation du cycle suivant."
+        "text": "*Elle pose un doigt sur la troisième page. Un tampon indique « Demande de prolongation ». Demandeuse : Park Eunsu.*"
     },
     "day5_morning_grad_reply_2c": {
         "text": "...Parce que tu revenais. Parce que tu n'avais plus de souvenirs, alors depuis le début — tu me souriais de nouveau."
@@ -548,7 +548,7 @@
         "text": "*Le silence s'est installé. Juste nous deux dans la salle de classe.*"
     },
     "day5_morning_proposal_2": {
-        "text": "*Mme Eunsu s'est éloignée du pupitre. Un pas, deux pas. Marchant vers moi. Elle s'est arrêtée. — À deux mètres.*"
+        "text": "*Mme Eunsu quitte l’estrade et avance vers {name}, un pas, puis un autre. Elle s’arrête à deux mètres.*"
     },
     "day5_morning_proposal_3": {
         "text": "*Les lèvres de la professeure ont bougé. Aucun son. Encore.*"
@@ -563,7 +563,7 @@
         "text": "Je sais que ce n'est pas quelque chose qui peut être effacé par des excuses."
     },
     "day5_morning_proposal_7": {
-        "text": "Effacer 12 cycles de souvenirs, c'est moi. Éliminer Seolhwa, c'était ma décision. ...Et ce que je te fais maintenant, c'est au fond mon égoïsme."
+        "text": "*Elle ne regarde pas les autorisations qui portent son propre nom.*"
     },
     "day5_morning_proposal_8": {
         "text": "*Le professeur leva la tête. Les coins de ses yeux étaient rouges.*"

@@ -9,7 +9,7 @@
         "text": "*The hallway. Fluorescent lights flicker. Footsteps echo. Mine. Yuna's. Two sets.*"
     },
     "day5_lunch_chase_3": {
-        "text": "*Yuna's breathing is rough. Her legs keep buckling. The weight leaning on my shoulder grows heavier and heavier.*"
+        "text": "*Yuna's breathing is ragged. Her knees keep buckling, and the weight against {name}'s shoulder grows heavier.*"
     },
     "day5_lunch_chase_3a": {
         "text": "*If I let go of Yuna, I can run faster. The thought flashes through my mind. I tighten my grip instead.*"
@@ -317,7 +317,7 @@
         "text": "*I took the key. Small, cold, silver. In my hand — it feels heavy.*"
     },
     "day5_lunch_right_c2_1": {
-        "text": "*Nurse Riin paused for a moment. Then — shook her head. \"I have to stay. I need to hold the shutter so Eunsu can't follow.\" ...She pressed the key into my hand.*"
+        "text": "*Nurse Riin pauses, then presses the key into {name}'s hand. She takes the bag from the top of the cabinet. She was ready to leave all along.*"
     },
     "day5_lunch_right_c3_1": {
         "text": "...is this also a procedure?"
@@ -353,7 +353,7 @@
         "text": "...The camera can't capture you."
     },
     "day5_lunch_seolhwa_6": {
-        "text": "...So you figured it out."
+        "text": "*She doesn't answer.*"
     },
     "day5_lunch_seolhwa_7": {
         "text": "*Seolhwa smiled. A sad, warm smile. Seolhwa sat on the stairs. Hugged her knees. — That posture. Familiar somehow. The same one I took when I broke down in front of the mirror on the night of Day 4.*"
@@ -362,7 +362,7 @@
         "text": "That's right. I'm not here. A year ago — I disappeared from this school."
     },
     "day5_lunch_seolhwa_9": {
-        "text": "During the 7th cycle... I tried to escape with you. I found out this school's secret, told you everything, and we ran together."
+        "text": "*It's my handwriting. No—my handwriting from the seventh cycle. There's a tiny star at the end of the note, and another hand beside it.*"
     },
     "day5_lunch_seolhwa_10": {
         "text": "Back then, I was a 'facility student' at this school. Transferred from an orphanage. ...I wasn't a test subject, but I knew about the experiments."
@@ -425,7 +425,7 @@
         "text": "This time, the door is open."
     },
     "day5_lunch_seolhwa_30": {
-        "text": "This time — you can get out.",
+        "text": "*Seolhwa reaches out. A hand I can't touch.*",
         "choices": [
             "\"Let's get out together.\"",
             "\"What happens to you?\""
@@ -504,7 +504,7 @@
         "text": "*The door opened. Outside air rushed in. Cold, dry late-night air. The smell of medicine in my throat washed away a little.*"
     },
     "day5_lunch_seolhwa_guide_15": {
-        "text": "*Seolhwa's hair swayed in the wind. On Yuna's camera screen, the emergency exit is empty. And yet the wind passes through the silver-white hair before my eyes.*"
+        "text": "*Seolhwa's hair sways in the wind. The emergency exit is empty on Yuna's camera, yet the breeze passes through the silver-white hair right before {name}'s eyes.*"
     },
     "day5_lunch_seolhwa_guide_16": {
         "text": "*Footsteps from behind.*"
@@ -561,7 +561,7 @@
         "text": "Every time you checked me with eyes seeing me for the first time, another name appeared on the attendance sheet."
     },
     "day5_lunch_eunsu_18": {
-        "text": "*Teacher stopped. In front of the emergency exit. Three meters from me.*"
+        "text": "*She stops in front of the emergency exit, three meters from {name}.*"
     },
     "day5_lunch_eunsu_19": {
         "text": "*Teacher took a syringe from her pocket. Slowly. As if showing it to me.*\n\n*The liquid inside the syringe glinted under the fluorescent light. On the label, small letters read: `RESET / S-13`. A single drop hung from the tip of the needle.*"
@@ -608,7 +608,7 @@
         "text": "*Teacher took one more step closer. Now within arm's reach.*"
     },
     "day5_lunch_eunsu_32": {
-        "text": "*Seolhwa — is visible. Behind Teacher. At the bottom of the stairs. A blurry silhouette. Saying nothing. Just — watching me.*"
+        "text": "*Behind the teacher, at the bottom of the stairs, stands Seolhwa—a hazy silhouette saying nothing, merely watching {name}.*"
     },
     "day5_lunch_eunsu_final": {
         "text": "*The screen border flashes red. The clock reads 22:58. Two minutes left.*\n\n*The choice text appears late, one character at a time. Only the second button completes first.*\n\n***`...Please erase me.`***\n\n*The other buttons follow after a delay.*",

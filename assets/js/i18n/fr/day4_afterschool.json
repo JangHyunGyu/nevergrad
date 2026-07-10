@@ -129,7 +129,7 @@
         "text": "*...Un nom y est gravé. 'Sea'. Un bracelet fait main. — C'est mon écriture.*"
     },
     "day4_after_sea_12loop_12": {
-        "text": "*Sea a remarque. Que je regarde le bracelet.*"
+        "text": "*Sea a compris que {name} regardait le bracelet.*"
     },
     "day4_after_sea_12loop_13": {
         "text": "...Il est joli, non ?"
@@ -170,7 +170,7 @@
         "text": "*Je me suis dirigé vers la salle des professeurs. Dans mon sac, l'enveloppe me cogne le flanc à chaque pas.*"
     },
     "day4_after_eunsu_2": {
-        "text": "*Mme Eunsu me voit et soupire. Un air fatigué. Elle est seule dans la salle des professeurs. Les chaises des autres bureaux sont toutes soigneusement repoussées dessous.*"
+        "text": "*Mme Eunsu voit {name} et soupire. Elle a l’air épuisée. Elle est seule dans la salle des professeurs ; toutes les autres chaises sont soigneusement rangées sous les bureaux.*"
     },
     "day4_after_eunsu_3": {
         "text": "...Tu es alle dans l'ancien bâtiment."
@@ -182,7 +182,7 @@
         "text": "*La professeure parle en faisant couler le café. D'une voix calme. Sa main ne tremble pas en versant le café. Comme s'il avait préparé cette conversation.*"
     },
     "day4_after_eunsu_5": {
-        "text": "*La professeure prépare du café. Deux tasses. Elle en pose une devant moi.*"
+        "text": "*Elle prépare deux cafés et en pose un devant {name}.*"
     },
     "day4_after_eunsu_6": {
         "text": "*...Deux cuillères de sucre, une demi-dose de crème. Exactement la quantité que j'ai mise hier dans la salle des professeurs.*"
@@ -194,7 +194,7 @@
         "text": "C'est ça, non ? Tes gouts."
     },
     "day4_after_eunsu_9": {
-        "text": "*La professeure sourit. L'anse de la tasse de café est tournée vers ma main gauche.*"
+        "text": "*La professeure sourit. L’anse de la tasse est tournée vers la main gauche de {name}.*"
     },
     "day4_after_eunsu_10": {
         "text": "*Le tiroir du bureau est à moitié ouvert. Des post-it à l'intérieur. Des dizaines. Couverts d'écriture serree. — Ce sont tous des noms. Differents noms. Certains barres.*"
@@ -203,13 +203,13 @@
         "text": "*Sur le dernier post-it en bas, mon nom. Pas barre.*"
     },
     "day4_after_eunsu_12": {
-        "text": "...Tu as tout vu. Le sous-sol."
+        "text": "*Silence.*"
     },
     "day4_after_eunsu_13": {
         "text": "C'est bon, {name}. Je vais le remettre en ordre."
     },
     "day4_after_eunsu_14": {
-        "text": "*La main de la professeure s'est arrêtée au-dessus de ma tête. Elle allait me caresser les cheveux, puis elle a lentement replié les doigts.*"
+        "text": "*La main de la professeure s’arrête au-dessus de la tête de {name}. Ses doigts, prêts à la caresser, se replient lentement.*"
     },
     "day4_after_eunsu_15": {
         "text": "*Le bout de ces doigts est taché d'encre rouge. La même couleur que les coches dans le registre de contrôle.*"
@@ -275,7 +275,7 @@
         "text": "Demain."
     },
     "day4_after_riin_21": {
-        "text": "*Mme Riin me regarde. Le cordon de son badge reste de travers, immobile.*"
+        "text": "*Mme Riin regarde {name}. Le cordon de son badge reste de travers, parfaitement immobile.*"
     },
     "day4_after_riin_22": {
         "text": "Ne bouge pas ce soir. Et n’en parle à personne."

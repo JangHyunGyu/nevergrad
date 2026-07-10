@@ -129,7 +129,7 @@
         "text": "*...Um nome está gravado nele. 'Sea.' Uma pulseira feita à mão. -- Com minha caligrafia.*"
     },
     "day4_after_sea_12loop_12": {
-        "text": "*Sea notado. Que estou olhando para a pulseira.*"
+        "text": "*Sea percebeu que {name} está olhando para a pulseira.*"
     },
     "day4_after_sea_12loop_13": {
         "text": "...Lindo, não é?"
@@ -170,7 +170,7 @@
         "text": "*Fui para a sala dos professores. O envelope dentro da mochila bate na minha lateral a cada passo.*"
     },
     "day4_after_eunsu_2": {
-        "text": "*A professora Eunsu me vê e suspira. Uma expressão cansada. Ela está sozinha na sala dos professores. As cadeiras nas outras mesas estão todas empurradas certinho para baixo delas.*"
+        "text": "*A professora Eunsu vê {name} e suspira. Ela parece exausta. Está sozinha na sala dos professores; todas as outras cadeiras estão bem guardadas sob as mesas.*"
     },
     "day4_after_eunsu_3": {
         "text": "...Você foi para o prédio antigo."
@@ -182,7 +182,7 @@
         "text": "*A professora fala calmamente enquanto serve o café. Sua mão não treme. Como se ela estivesse se preparando para essa conversa.*"
     },
     "day4_after_eunsu_5": {
-        "text": "*Ela faz café. Duas xícaras. Ela coloca um na minha frente.*"
+        "text": "*Ela prepara duas xícaras de café e coloca uma diante de {name}.*"
     },
     "day4_after_eunsu_6": {
         "text": "*...Duas colheres de açúcar, meio de creme. Exatamente a quantidade que eu coloquei ontem na sala dos professores.*"
@@ -194,7 +194,7 @@
         "text": "Isso mesmo, não é? Sua preferência."
     },
     "day4_after_eunsu_9": {
-        "text": "*A professora sorri. A alça da xícara de café está virada para a minha mão esquerda.*"
+        "text": "*A professora sorri. A alça da xícara está virada para a mão esquerda de {name}.*"
     },
     "day4_after_eunsu_10": {
         "text": "*A gaveta da mesa está entreaberta. Posso ver post-its lá dentro. Dezenas deles. Caligrafia densa. - Todos os nomes. Nomes diferentes. Alguns com linhas cruzadas.*"
@@ -203,13 +203,13 @@
         "text": "*No Post-it inferior, meu nome. Nenhuma linha através dele.*"
     },
     "day4_after_eunsu_12": {
-        "text": "...Você viu tudo. O porão."
+        "text": "*Silêncio.*"
     },
     "day4_after_eunsu_13": {
         "text": "Está tudo bem, {name}. Vou colocar tudo em ordem."
     },
     "day4_after_eunsu_14": {
-        "text": "*A mão da professora parou acima da minha cabeça. Ela ia me acariciar, mas dobrou os dedos devagar.*"
+        "text": "*A mão da professora para acima da cabeça de {name}. Os dedos que iam acariciar o cabelo se recolhem devagar.*"
     },
     "day4_after_eunsu_15": {
         "text": "*Há tinta vermelha de caneta naquelas pontas dos dedos. A mesma cor das marcas de verificação no registro de controle.*"
@@ -218,7 +218,7 @@
         "text": "*Fui até a enfermaria. O cheiro de desinfetante escapa pela fresta embaixo da porta.*"
     },
     "day4_after_riin_2": {
-        "text": "*Riin está sentado em sua mesa. Ela estava organizando documentos. Quando entrei - a mão dela parou. Ela virou os papéis. Devagar. Casualmente. Mas eu vi. O título: 'Registros de dosagem de S-13.'*"
+        "text": "*Riin está à mesa, organizando alguns documentos. Assim que vê {name}, ela para. Vira os papéis com naturalidade, mas {name} já leu o título: ‘Registros de dosagem de S-13’.*"
     },
     "day4_after_riin_3": {
         "text": "...O que. Não me assuste."
@@ -275,7 +275,7 @@
         "text": "Amanhã."
     },
     "day4_after_riin_21": {
-        "text": "*A professora Riin olha para mim. O cordão do crachá fica torto, sem se mexer.*"
+        "text": "*A professora Riin olha para {name}. O cordão torto do crachá permanece imóvel.*"
     },
     "day4_after_riin_22": {
         "text": "Não se mova esta noite. E não conte a ninguém sobre isso."

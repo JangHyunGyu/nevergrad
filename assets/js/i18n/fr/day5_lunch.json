@@ -9,7 +9,7 @@
         "text": "*Le couloir. Les néons clignotent. Des pas résonnent. Les miens. Ceux de Yuna. Deux paires.*"
     },
     "day5_lunch_chase_3": {
-        "text": "*La respiration de Yuna est rauque. Ses jambes flanchent sans cesse. Le poids appuyé sur mon épaule devient de plus en plus lourd.*"
+        "text": "*Yuna respire difficilement. Ses jambes flanchent sans cesse et son poids pèse de plus en plus sur l’épaule de {name}.*"
     },
     "day5_lunch_chase_3a": {
         "text": "*Si je lâche Yuna, je courrai plus vite. Cette pensée me traverse. Je resserre ma prise.*"
@@ -30,7 +30,7 @@
         "text": "*Le couloir scellé. Un embranchement. À gauche — le bâtiment principal. À droite — l'ancienne aile.*"
     },
     "day5_lunch_chase_9": {
-        "text": "{name}, vite !"
+        "text": "Sunbae, vite !"
     },
     "day5_lunch_chase_10": {
         "text": "*Des pas venant de la gauche. — Non, de la droite aussi. 5 secondes. Je dois décider en 5 secondes.*",
@@ -317,7 +317,7 @@
         "text": "*J'ai pris la lé. Petite, froide, argentée. Dans ma main — elle pèse lourd.*"
     },
     "day5_lunch_right_c2_1": {
-        "text": "*Mme Riin s'est arrêtée un instant. Puis — a secoué la tête. « Je dois rester. Je dois tenir le rideau pour qu'Eunsu ne puisse pas suivre. » ...Elle m'a mis la clé dans la main.*"
+        "text": "*Mme Riin hésite un instant, puis glisse la clé dans la main de {name}. Elle prend le sac posé sur l’armoire. Elle était prête à partir depuis le début.*"
     },
     "day5_lunch_right_c3_1": {
         "text": "...est-ce aussi une procédure?"
@@ -353,7 +353,7 @@
         "text": "...La caméra ne te filme pas."
     },
     "day5_lunch_seolhwa_6": {
-        "text": "...Alors tu as compris."
+        "text": "*Elle ne répond pas.*"
     },
     "day5_lunch_seolhwa_7": {
         "text": "*Seolhwa a souri. Un sourire triste et chaleureux. Seolhwa s'est assise sur les marches. A serré ses genoux. — Cette posture. Familière. La même que j'ai prise quand je me suis effondré devant le miroir la nuit du Jour 4.*"
@@ -362,7 +362,7 @@
         "text": "C'est vrai. Je ne suis pas là. Il y a un an — j'ai disparu de cette école."
     },
     "day5_lunch_seolhwa_9": {
-        "text": "Pendant le 7e cycle... j'ai essayé de m'enfuir avec toi. J'ai découvert le secret de cette école, je t'ai tout dit, et on a ouru ensemble."
+        "text": "*C’est mon écriture. Non, celle du septième cycle. Une petite étoile figure à la fin du mot et, juste à côté, une autre écriture.*"
     },
     "day5_lunch_seolhwa_10": {
         "text": "À l'époque, j'étais une 'élève de l'établissement' ici. Transférée d'un orphelinat. ...Je n'étais pas un sujet d'expérience, mais je connaissais les expériences."
@@ -425,7 +425,7 @@
         "text": "Cette fois, la porte est ouverte."
     },
     "day5_lunch_seolhwa_30": {
-        "text": "Cette fois — tu peux sortir.",
+        "text": "*Seolhwa tend la main. Une main que je ne peux pas toucher.*",
         "choices": [
             "\"Sortons ensemble.\"",
             "\"Et toi, qu'est-ce qui t'arrive ?\""
@@ -471,7 +471,7 @@
         "text": "*Le couloir est sombre. Chaque fois que la lumière du téléphone portable s'allume, le contour de Seolhwa tremble un battement plus tard.*"
     },
     "day5_lunch_seolhwa_guide_5": {
-        "text": "...{name}, tu parles tout seul."
+        "text": "Sunbae, tu parles tout seul."
     },
     "day5_lunch_seolhwa_guide_6": {
         "text": "Je connais le chemin. Suis-moi."
@@ -504,7 +504,7 @@
         "text": "*La porte s'est ouverte. L'air extérieur s'est engouffré. L'air froid et sec de la nuit avancée. L'odeur de médicament dans ma gorge s'est un peu dissipée.*"
     },
     "day5_lunch_seolhwa_guide_15": {
-        "text": "*Les cheveux de Seolhwa ont remué dans le vent. Sur l'écran de la caméra de Yuna, la sortie de secours est vide. Et pourtant, le vent passe dans les cheveux blanc argenté devant mes yeux.*"
+        "text": "*Les cheveux de Seolhwa ondulent dans le vent. Sur la caméra de Yuna, la sortie de secours est vide ; pourtant, la brise traverse la chevelure argentée sous les yeux de {name}.*"
     },
     "day5_lunch_seolhwa_guide_16": {
         "text": "*Des pas derrière.*"
@@ -561,7 +561,7 @@
         "text": "Chaque fois que tu me vérifiais avec des yeux qui me voyaient pour la première fois, un nom de plus apparaissait sur la feuille de présence."
     },
     "day5_lunch_eunsu_18": {
-        "text": "*La professeure s'est arrêtée. Devant la sortie de secours. À trois mètres de moi.*"
+        "text": "*Elle s’arrête devant la sortie de secours, à trois mètres de {name}.*"
     },
     "day5_lunch_eunsu_19": {
         "text": "*La professeure a sorti une seringue de sa poche. Lentement. Comme pour me la montrer.*\n\n*Le liquide dans la seringue a scintillé sous la lumière fluorescente. Sur l'étiquette, de petites lettres indiquaient : `RESET / S-13`. Une goutte pendait au bout de l'aiguille.*"
@@ -608,7 +608,7 @@
         "text": "*La professeure a fait un pas de plus. Maintenant à portée de bras.*"
     },
     "day5_lunch_eunsu_32": {
-        "text": "*Seolhwa — est visible. Derrière la professeure. Au bas des escaliers. Une silhouette floue. Ne disant rien. Juste — me regardant.*"
+        "text": "*Derrière la professeure, au pied de l’escalier, se tient la silhouette floue de Seolhwa. Elle ne dit rien. Elle regarde simplement {name}.*"
     },
     "day5_lunch_eunsu_final": {
         "text": "*Le bord de l'écran clignote en rouge. L'horloge indique 22:58. Il reste deux minutes.*\n\n*Le texte des choix apparaît en retard, caractère par caractère. Seul le deuxième bouton se complète d'abord.*\n\n***`...Effacez-moi, je vous en prie.`***\n\n*Les autres boutons le rattrapent avec du retard.*",

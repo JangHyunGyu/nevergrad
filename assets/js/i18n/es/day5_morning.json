@@ -268,7 +268,7 @@
         "text": "En un momento, la profesora Riin bajará. Siempre viene a poner el medicamento."
     },
     "day5_morning_true_31": {
-        "text": "*Yuna me agarra. No tiene fuerza en las manos.*"
+        "text": "*Yuna se aferra a {name}, pero no tiene fuerza en las manos.*"
     },
     "day5_morning_true_32": {
         "text": "...sunbae. Está todo en esta cámara. Tres años de... quién eras."
@@ -408,7 +408,7 @@
         "text": "...Sunbae."
     },
     "day5_morning_broadcast_15": {
-        "text": "*Yuna agarró mi manga. Sus dedos apretando fuerte.*"
+        "text": "*Yuna agarra la manga de {name}. Aprieta con fuerza.*"
     },
     "day5_morning_broadcast_16": {
         "text": "Subamos. Todavía queda una puerta por revisar."
@@ -462,28 +462,28 @@
         "text": "*13 nombres en papel. De 'Kim Do-jin' a '{name}'. El título no es \"Diploma\" sino \"Confirmación de finalización del procesamiento\". El sello ha sido estampado doce veces y sólo el último espacio está seco.*"
     },
     "day5_morning_grad_15": {
-        "text": "El primero, Dojin, huyó llorando después de 3 días. Bueno, probablemente ni sabía qué estaba pasando."
+        "text": "*Pasa la primera página. Kim Dojin. Junto a la foto hay una frase escrita con tinta roja.*"
     },
     "day5_morning_grad_16": {
         "text": "El 2.°, Yoon Jaehyeon, era un chico tranquilo. Nunca sospechó nada. La noche del Día 5 — recibió la inyección sonriendo. Sin saber nada."
     },
     "day5_morning_grad_17": {
-        "text": "El 5.°, Kang Minhyeok, genuinamente quería a su profesora. De corazón. ...Daba pena borrar sus memorias."
+        "text": "*Segunda página. Lee Junseo. En una esquina del papel hay una pequeña mancha; no se distingue si es de café o de agua.*"
     },
     "day5_morning_grad_18": {
-        "text": "El 6.°, Jeong Haryul... era listo. El Día 4, encontró un frasco de droga en la enfermería de Riin. Esa noche, borré su memoria. — Mientras aún solo sospechaba."
+        "text": "*Quinta página. Kang Minhyeok. En una nota adherida se lee: ‘Mayor permanencia en la sala de profesores. Respuesta de dependencia favorable’.*"
     },
     "day5_morning_grad_19": {
-        "text": "El 7.°, Kim Taeho... hubo un problema. Contactó con una estudiante de la institución e intentó escapar."
+        "text": "*Sexta página. Jeong Haryul. Un clip negro sobre la foto. Al lado, una fotografía de un frasco de medicamento.*"
     },
     "day5_morning_grad_20": {
-        "text": "...Esa chica fue eliminada. Pero incluso después de borrar tu memoria, seguías viéndola. Como una alucinación."
+        "text": "*La mano de la profesora Eunsu se detiene en la séptima página. Kim Taeho. Detrás de la foto asoma otra: una estudiante de cabello blanco, con el rostro recortado a propósito.*"
     },
     "day5_morning_grad_21": {
-        "text": "El 9.°, Han Jiho, fue descubierto el Día 3. Procesado en silencio."
+        "text": "*No consigue pasar esa página.*"
     },
     "day5_morning_grad_21a": {
-        "text": "El 10.°, Lee Yejun... la última noche me escribió una carta. 'Gracias a usted, tuve una buena vida escolar.' ...La escribió antes de que le borrara la memoria. Todavía está en mi cajón."
+        "text": "*El cajón del escritorio está entreabierto. Dentro hay una carta: ‘Gracias a usted, profesora, tuve una buena vida escolar’. La firma es de Song Yejun. La fecha: la noche del quinto día del décimo ciclo.*"
     },
     "day5_morning_grad_22": {
         "text": "*La voz de la profesora se hace cada vez más baja.*"
@@ -492,22 +492,22 @@
         "text": "*La voz de la profesora se hace más suave. Se agarra al podio. Sus dedos están blancos. Apretados con fuerza.*"
     },
     "day5_morning_grad_24": {
-        "text": "...Después de 12 repeticiones, aprendes. Borrar memorias es fácil. Pero—"
+        "text": "*Mis hábitos están ordenados como si fueran una ficha de observación de clase.*"
     },
     "day5_morning_grad_25": {
         "text": "**Aunque borres las memorias, no puedes borrar el corazón.**"
     },
     "day5_morning_grad_26": {
-        "text": "Cada vez, tomabas los palillos con la mano izquierda primero. Cada vez, girabas a la izquierda en el pasillo. Cada vez — te sentabas en el mismo asiento."
+        "text": "*Intenta sonreír, pero no puede.*"
     },
     "day5_morning_grad_27": {
         "text": "*La conversación se corta. Los puntos de la lista llaman mi atención uno a uno.*"
     },
     "day5_morning_grad_28": {
-        "text": "...Observa a alguien 12 veces, y no puedes evitar memorizarlo. Los hábitos de una persona sin memorias. Las cosas que no cambian incluso cuando las memorias cambian."
+        "text": "{name}."
     },
     "day5_morning_grad_29": {
-        "text": "Aunque las memorias se borraran, **tu** eras el mismo. Por eso—"
+        "text": "*La profesora empieza a decir el nombre de {name}, pero vuelve a mirar la lista.*"
     },
     "day5_morning_grad_29a": {
         "text": "*Su expresión es distinta de la que usa en clase. Sus ojos solo se detienen al revisar la lista.*"
@@ -533,7 +533,7 @@
         "text": "...La primera aprobación sólo tenía el sello de la junta. Mi nombre no estaba allí."
     },
     "day5_morning_grad_reply_2b": {
-        "text": "**Desde la 3.ª vez, fue mi elección.** Si reportaba a la junta que 'el sujeto sigue siendo viable,' podía conseguir la aprobación del siguiente ciclo."
+        "text": "*Pone un dedo sobre la tercera página. Lleva un sello que dice ‘Solicitud de prórroga’. Solicitante: Park Eunsu.*"
     },
     "day5_morning_grad_reply_2c": {
         "text": "...Porque volvías. Porque no tenías memoria, así que desde el principio de nuevo — me sonreías de nuevo."
@@ -548,7 +548,7 @@
         "text": "*El silencio se asentó. Solo nosotros dos en el aula.*"
     },
     "day5_morning_proposal_2": {
-        "text": "*La profesora Eunsu se alejó del podio. Un paso, dos pasos. Caminando hacia mí. Se detuvo. — A dos metros.*"
+        "text": "*La profesora Eunsu deja el estrado y camina hacia {name}, un paso y luego otro. Se detiene a dos metros.*"
     },
     "day5_morning_proposal_3": {
         "text": "*Los labios de la profesora se movieron. No salió sonido. De nuevo.*"
@@ -563,7 +563,7 @@
         "text": "Sé que no es algo que se pueda borrar con una disculpa."
     },
     "day5_morning_proposal_7": {
-        "text": "Borrar 12 ciclos de memorias fue cosa mía. Eliminar a Seolhwa fue mi decisión. ...Y lo que te estoy haciendo ahora es, al final, mi egoísmo."
+        "text": "*No mira las autorizaciones que llevan su propio nombre.*"
     },
     "day5_morning_proposal_8": {
         "text": "*El maestro levantó la cabeza. Las comisuras de sus ojos estaban rojas.*"

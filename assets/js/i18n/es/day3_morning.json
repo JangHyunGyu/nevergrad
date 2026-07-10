@@ -110,7 +110,7 @@
         "text": "¿...Eh? Sí, lo soy. ¿Cómo lo supiste?"
     },
     "day3_morning_seolhwa_5": {
-        "text": "*La chica no responde. Su mirada va una vez de mi mano izquierda a mi rostro. Luego, en voz baja:*",
+        "text": "*La chica no responde. Su mirada va una vez de la mano izquierda de {name} a su rostro. Luego habla en voz baja:*",
         "choices": [
             "Responder la pregunta sobre la mano izquierda",
             "Preguntar por qué quiere saberlo",
@@ -163,7 +163,7 @@
         "text": "*Miro a Sea. Tiene las comisuras levantadas. Su voz es alegre. Sus dedos sobre el pupitre se detienen dos veces, a un ritmo constante.*"
     },
     "day3_morning_sea_6": {
-        "text": "*La mirada de Sea baja por mi cara, mi nuca y mi mano izquierda, y luego vuelve a subir. Como si revisara espacios en blanco, uno por uno.*"
+        "text": "*La mirada de Sea recorre el rostro, la nuca y la mano izquierda de {name}, y luego vuelve a subir.*"
     },
     "day3_morning_sea_6b": {
         "text": "*En el margen del cuaderno de Sea, junto a la fecha de hoy, hay tres pequeños cuadrados vacíos dibujados.*"
@@ -172,7 +172,7 @@
         "text": "Sí, di vueltas un poco."
     },
     "day3_morning_sea_6a": {
-        "text": "*Sea inclina ligeramente la cabeza y me observa. 2 segundos. 3 segundos. 4 segundos.*"
+        "text": "*Sea inclina un poco la cabeza y observa a {name}. Dos segundos. Tres. Cuatro.*"
     },
     "day3_morning_sea_8": {
         "text": "Ya veo. No te esfuerces demasiado."

@@ -110,7 +110,7 @@
         "text": "Äh? Ja, bin ich. Woher wusstest du das?"
     },
     "day3_morning_seolhwa_5": {
-        "text": "*Das Mädchen antwortet nicht. Ihr Blick wandert einmal zwischen meiner linken Hand und meinem Gesicht hin und her. Dann sagt sie leise:*",
+        "text": "*Das Mädchen antwortet nicht. Ihr Blick wandert einmal zwischen {name}s linker Hand und Gesicht hin und her. Dann sagt sie leise:*",
         "choices": [
             "Die Frage zur linken Hand beantworten",
             "Fragen, warum sie das wissen will",
@@ -163,7 +163,7 @@
         "text": "*Ich sehe Sea an. Ihre Mundwinkel sind angehoben. Ihre Stimme ist hell. Ihre Finger auf dem Pult halten zweimal in gleichmäßigem Takt inne.*"
     },
     "day3_morning_sea_6": {
-        "text": "*Seas Blick wandert über mein Gesicht, meinen Nacken, meine linke Hand hinunter und dann wieder nach oben. Als würde sie leere Felder der Reihe nach abhaken.*"
+        "text": "*Seas Blick wandert von {name}s Gesicht über den Nacken zur linken Hand und anschließend wieder nach oben.*"
     },
     "day3_morning_sea_6b": {
         "text": "*Am Rand von Seas Notizbuch sind neben dem heutigen Datum drei kleine leere Kästchen gezeichnet.*"
@@ -172,7 +172,7 @@
         "text": "Ja, ich habe mich ein bisschen hin- und hergewälzt."
     },
     "day3_morning_sea_6a": {
-        "text": "*Sea neigt ihren Kopf leicht und beobachtet mich. 2 Sekunden. 3 Sekunden. 4 Sekunden.*"
+        "text": "*Sea legt den Kopf leicht schief und beobachtet {name}. Zwei Sekunden. Drei. Vier.*"
     },
     "day3_morning_sea_8": {
         "text": "...Ich verstehe. Überanstreng dich nicht."

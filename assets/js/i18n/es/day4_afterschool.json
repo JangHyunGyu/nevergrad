@@ -129,7 +129,7 @@
         "text": "*...Tiene un nombre grabado. 'Sea'. Una pulsera hecha a mano. — Es mi letra.*"
     },
     "day4_after_sea_12loop_12": {
-        "text": "*Sea se dio cuenta. De que estoy mirando la pulsera.*"
+        "text": "*Sea se dio cuenta de que {name} está mirando la pulsera.*"
     },
     "day4_after_sea_12loop_13": {
         "text": "...¿Bonita?"
@@ -170,7 +170,7 @@
         "text": "*Me dirigí a la sala de profesores. El sobre dentro de mi mochila me golpea el costado con cada paso.*"
     },
     "day4_after_eunsu_2": {
-        "text": "*La profesora Eunsu me ve y suspira. Una expresión cansada. Está sola en la sala de profesores. Las sillas sobre los otros escritorios están todas metidas prolijamente debajo.*"
+        "text": "*La profesora Eunsu ve a {name} y suspira. Parece agotada. Está sola en la sala de profesores; las demás sillas están guardadas prolijamente bajo los escritorios.*"
     },
     "day4_after_eunsu_3": {
         "text": "...Fuiste al edificio viejo."
@@ -182,7 +182,7 @@
         "text": "*Habla mientras prepara café. No le tiembla la mano.*"
     },
     "day4_after_eunsu_5": {
-        "text": "*La profesora prepara café. Dos tazas. Pone una frente a mí.*"
+        "text": "*Prepara dos tazas de café y deja una frente a {name}.*"
     },
     "day4_after_eunsu_6": {
         "text": "*...Dos cucharadas de azúcar, media de crema. Exactamente la misma cantidad que puse ayer en la sala de profesores.*"
@@ -194,7 +194,7 @@
         "text": "¿Verdad? Tu gusto."
     },
     "day4_after_eunsu_9": {
-        "text": "*La profesora sonríe. El asa de la taza de café apunta hacia mi mano izquierda.*"
+        "text": "*La profesora sonríe. El asa de la taza apunta hacia la mano izquierda de {name}.*"
     },
     "day4_after_eunsu_10": {
         "text": "*El cajón del escritorio está medio abierto. Dentro se ven post-its. Decenas. Escritos con letra apretada. — Todos son nombres. Nombres distintos. Algunos tachados.*"
@@ -203,7 +203,7 @@
         "text": "*En el post-it de hasta abajo, mi nombre. Sin tachar.*"
     },
     "day4_after_eunsu_12": {
-        "text": "...Lo viste todo. El sótano."
+        "text": "*Silencio.*"
     },
     "day4_after_eunsu_13": {
         "text": "Está bien, {name}. Lo pondré nuevamente en orden."
@@ -275,7 +275,7 @@
         "text": "Mañana."
     },
     "day4_after_riin_21": {
-        "text": "*La profesora Riin me mira. La cinta de su credencial queda torcida, inmóvil.*"
+        "text": "*La profesora Riin mira a {name}. El cordón torcido de su credencial permanece inmóvil.*"
     },
     "day4_after_riin_22": {
         "text": "No te muevas esta noche. Y no le cuentes a nadie sobre esto."

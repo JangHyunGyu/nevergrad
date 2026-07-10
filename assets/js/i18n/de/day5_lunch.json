@@ -52,7 +52,7 @@
         "text": "...{name}."
     },
     "day5_lunch_left_5": {
-        "text": "*Seas Stimme bricht. Ihre Augen sind schon nass. Schon bevor ich kam, allein in diesem Flur.*"
+        "text": "*Ihre Stimme bricht. Die Ärmelenden sind bereits nass.*"
     },
     "day5_lunch_left_5a": {
         "text": "Sea, geh weg."
@@ -67,7 +67,7 @@
         "text": "*Sie ballt beide Hände zu Fäusten. Ihre Knöchel werden weiß.*"
     },
     "day5_lunch_left_8": {
-        "text": "Ich hasse es auch. Dass ich so bin."
+        "text": "Ich weiß, was ich hier tue."
     },
     "day5_lunch_left_9": {
         "text": "Aber wenn du durch diese Tür gehst, steht am nächsten Tag ein fremder Mensch vor mir."
@@ -79,7 +79,7 @@
         "text": "So wie du am ersten Tag „Hallo“ gesagt hast. Das blieb mir jedes Mal am längsten im Gedächtnis."
     },
     "day5_lunch_left_12": {
-        "text": "Am Ende war es genau diese Begrüßung, die mich bis zum nächsten Zyklus durchhalten ließ."
+        "text": "Darum war ich jedes Mal am Schultor."
     },
     "day5_lunch_left_13": {
         "text": "*Wumm. Die Stahltür im 1. Stock des Hauptgebäudes rattert. Jemand kommt herauf. Schritte hallen im Treppenhaus.*"
@@ -88,10 +88,10 @@
         "text": "Das ist kein Lächeln für dich. Es ist ein Fremder, der dich nicht kennt, der lächelt."
     },
     "day5_lunch_left_15": {
-        "text": "*Das Meer holt Luft.*"
+        "text": "*Ihr stockt der Atem.*"
     },
     "day5_lunch_left_16": {
-        "text": "...wissen."
+        "text": "...Ich weiß."
     },
     "day5_lunch_left_17": {
         "text": "Aber trotzdem—"
@@ -121,7 +121,7 @@
         "text": "...Muss ich dieses Mal auch aus dem Weg gehen?"
     },
     "day5_lunch_left_choice": {
-        "text": "*Bumm, bumm, bumm. Die Schritte auf der Treppe kommen näher. Sea wirft einen Blick in Richtung des Geräuschs, aber sie weicht nicht aus.*\n\n*Kurz bevor die Auswahl erscheint, sah die dritte Zeile für 0,2 Sekunden wie ein anderer Satz aus.*\n\n***`3. [Verbleib genehmigt]`***",
+        "text": "*Bumm, bumm, bumm. Die Schritte auf der Treppe kommen näher. Sea sieht in ihre Richtung, weicht aber nicht zurück.*\n\n*Noch bevor die Auswahl erscheint, schiebt sich eine unbekannte Option zwischen die Zeilen.*\n\n***`[VERBLEIB GENEHMIGT]`***",
         "choices": [
             "„Tut mir leid. Aber ich muss gehen.“",
             "„Komm mit mir.“",
@@ -135,10 +135,10 @@
         "text": "...Ich werde auch dieses Mal aus dem Weg gehen."
     },
     "day5_lunch_left_c1_3": {
-        "text": "Gehen Sie der nächsten Tür nicht aus dem Weg. Dann werde ich damit aufhören."
+        "text": "An der nächsten Tür gehe ich nicht zur Seite. Dann halte ich dich auf."
     },
     "day5_lunch_left_c1_4": {
-        "text": "...Diesmal komm raus. **Schnell.**"
+        "text": "...Geh. Schnell."
     },
     "day5_lunch_left_c1_5": {
         "text": "*Die Schritte erreichten das Ende des Flurs. Keine Zeit, zurückzuschauen.*"
@@ -171,7 +171,7 @@
         "text": "*Sea blickt auf ihre eigene Hand hinab. An der Innenseite ihres Handgelenks ist eine rote Linie zurückgeblieben, eingedrückt wie die Spur des Schlüsselrings zum Raum der Schülervertretung. Es dauert, bis sie aus dem Fenster sieht.*"
     },
     "day5_lunch_left_c2_7": {
-        "text": "...Gibt es dort draußen solche Flure?"
+        "text": "Draußen gibt es keine Flure wie diesen, oder?"
     },
     "day5_lunch_left_c2_8": {
         "text": "Nein."
@@ -180,7 +180,7 @@
         "text": "Wir können es nicht überprüfen. Trotzdem komme ich mit."
     },
     "day5_lunch_left_c2_10": {
-        "text": "...Auch wenn es draußen Angst macht, besser als hier wird es sein."
+        "text": "Die Tür wird offen sein, oder?"
     },
     "day5_lunch_left_c3_1": {
         "text": "*...Meine Knie knicken ein. Ich sinke vor Sea zu Boden. Meine Zehen lösen sich nicht vom Boden.*"
@@ -344,7 +344,7 @@
         "text": "*Auf halber Höhe der Treppe — steht Seolhwa.*"
     },
     "day5_lunch_seolhwa_3": {
-        "text": "*Dieses Mal ist es anders. Auf Yunas Kamerabildschirm ist nur die Treppe zu sehen. Aber vor meinen Augen steht Seolhwa. Ganz deutlich.*"
+        "text": "*Yunas Kamera zeigt nur die Treppe. Außerhalb des Bildes steht Seolhwa direkt vor mir.*"
     },
     "day5_lunch_seolhwa_4": {
         "text": "...Wir sind so weit gekommen."
@@ -356,19 +356,19 @@
         "text": "*Seolhwa antwortete nicht.*"
     },
     "day5_lunch_seolhwa_7": {
-        "text": "*Stattdessen griff meine linke Hand nach dem Geländer. Unter meiner Handfläche, an einer Stelle, an der die Farbe abgeblättert ist, spürte ich eine flache Kerbe.*"
+        "text": "*Stattdessen greift meine linke Hand nach dem Geländer. Unter der Handfläche spüre ich eine flache Kerbe, wo die Farbe abgeblättert ist.*"
     },
     "day5_lunch_seolhwa_8": {
-        "text": "***'Nicht rennen. Auf der zweiten Stufe rutscht man aus.'***"
+        "text": "***„Nicht rennen. Auf der zweiten Stufe rutschst du aus.“***"
     },
     "day5_lunch_seolhwa_9": {
         "text": "*Das ist meine Handschrift. Nein, die Handschrift meines siebten Ichs. Am Ende der Schrift steht ein kleines Sternchen. Daneben eine andere Schrift.*"
     },
     "day5_lunch_seolhwa_10": {
-        "text": "***'Ich halte dich fest. — Seolhwa'***"
+        "text": "***„Ich fange dich auf. — Seolhwa“***"
     },
     "day5_lunch_seolhwa_11": {
-        "text": "...Bis hierher sind wir gekommen."
+        "text": "So weit sind wir schon einmal gekommen."
     },
     "day5_lunch_seolhwa_12": {
         "text": "*Dieser eine Satz reichte. Die Zeilen in den Unterlagen und die Kratzer an der Wand führten in dieselbe Richtung. Ein verregneter Flur. Eine kalte Hand. Der dritte Stock des alten Gebäudes. Ein unzerbrochenes Fenster.*"
@@ -383,13 +383,13 @@
         "text": "Wofür?"
     },
     "day5_lunch_seolhwa_16": {
-        "text": "Ohne zu merken, dass ich dich allein zurückgelassen hatte, lächelte ich weiter wie ganz am Anfang."
+        "text": "Jedes Mal habe ich dich begrüßt, als wäre es das erste Mal. Dabei blieb dein Platz die ganze Zeit leer."
     },
     "day5_lunch_seolhwa_17": {
         "text": "Aber die Schrift hast du trotzdem hinterlassen."
     },
     "day5_lunch_seolhwa_18": {
-        "text": "Du hast etwas zurückgelassen."
+        "text": "Du hast sie hinterlassen."
     },
     "day5_lunch_seolhwa_19": {
         "text": "*Auch an der Treppenwand sind Kratzer. Pfeile. Zahlen. Herausgekratzte Sätze. Jedes Mal, wenn ich sie sehe, verlagert sich das Gewicht meiner Füße zuerst.*"
@@ -447,7 +447,7 @@
         "text": "*Seolhwa schaute auf ihre eigenen Hände. Ihre Fingerspitzen sind verschwommen.*"
     },
     "day5_lunch_seolhwa_c2_3": {
-        "text": "Wenn du hier rauskommst, brauchst du auch die Pfeile an den Wänden nicht mehr. Dann werde wohl auch ich nach und nach nicht mehr zu sehen sein."
+        "text": "Wenn du draußen bist, brauchen wir die Pfeile an den Wänden nicht mehr."
     },
     "day5_lunch_seolhwa_c2_4": {
         "text": "Schon gut."
@@ -456,7 +456,7 @@
         "text": "*Seolhwa lächelte.*"
     },
     "day5_lunch_seolhwa_c2_6": {
-        "text": "Ich bin hier zu Ende gegangen. Aber diesmal habe ich dich nach draußen geschickt. Das reicht."
+        "text": "Für mich ist hier Schluss. Du öffnest die Tür."
     },
     "day5_lunch_seolhwa_guide_1": {
         "text": "Leg die linke Hand an die Wand."
@@ -495,10 +495,10 @@
         "text": ""
     },
     "day5_lunch_seolhwa_guide_13a": {
-        "text": "*Ich steckte den Schlüssel hinein. Drehte ihn. Klick.*"
+        "text": "*Ich stecke den Schlüssel hinein. Das Metall hakt einmal; im nächsten Moment springt das Schloss auf.*"
     },
     "day5_lunch_seolhwa_guide_13b": {
-        "text": "*Ich tastete die Wand ab, an der Seolhwa gestanden hatte. Die Stelle, an der der siebte Versuch gescheitert war. Ich riss die rostige Abdeckung ab und zog den Notentriegelungskreis herunter; Funken sprangen, der Alarm brach los. Die Tür öffnete sich einen Schlag zu spät.*"
+        "text": "*Ich taste die Wand ab, an der sie stand. Unter der Farbe stoßen meine Fingerspitzen auf den Rand einer Abdeckung. Ich heble sie auf und lege verrostete Schaltkreise frei. Als ich den Hebel umlege, sprühen Funken und der Alarm heult los.*"
     },
     "day5_lunch_seolhwa_guide_14": {
         "text": "*Die Tür öffnete sich. Außenluft schlug herein. Kalte, trockene Luft spät in der Nacht. Der Medikamentengeruch in meiner Kehle wurde ein wenig fortgespült.*"

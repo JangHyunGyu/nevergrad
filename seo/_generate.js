@@ -6,7 +6,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const OUT = __dirname;
 const SITE = 'https://nevergrad.archerlab.dev';
-const LASTMOD = '2026-04-29';
+const LASTMOD = '2026-07-10';
 
 const HOME = {
   ko: '/',
@@ -501,7 +501,7 @@ function escapeHtml(value) {
 }
 
 function urlFor(page) {
-  return `${SITE}/seo/${page.slug}.html`;
+  return `${SITE}/seo/${page.slug}`;
 }
 
 function buildAlternates(cluster, currentLang) {
@@ -530,7 +530,7 @@ function faqDetails(faqs) {
 function languageLinks(cluster, currentLang, label) {
   const links = Object.entries(cluster.pages)
     .filter(([lang]) => lang !== currentLang)
-    .map(([lang, page]) => `<a href="/seo/${page.slug}.html" hreflang="${lang}">${lang.toUpperCase()}</a>`);
+    .map(([lang, page]) => `<a href="/seo/${page.slug}" hreflang="${lang}">${lang.toUpperCase()}</a>`);
   return `<span>${escapeHtml(label)}:</span> ${links.join(' · ')}`;
 }
 
@@ -591,6 +591,8 @@ ${buildAlternates(cluster, lang)}
   <meta name="twitter:description" content="${escapeHtml(page.meta)}">
   <meta name="twitter:image" content="${SITE}/nevergrad_link.png">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT92D5P8E7"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PT92D5P8E7');</script>
   <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}

@@ -273,31 +273,59 @@ function layoutTitleLineup() {
 
 /**
  * @param {function(number, number)} onProgress
+ * @param {string} sceneId - scene to preload from
+ * @param {Set<string>} alreadyLoaded - cache of attempted asset paths
  * @returns {Promise<void>}
  */
-function preloadGameImages(onProgress) {
+function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
     // 고유 이미지 경로 수집
     const pathSet = new Set();
 
-    // 캐릭터 표정 이미지
-    for (const charExps of Object.values(CONFIG.EXPRESSIONS)) {
-        for (const path of Object.values(charExps)) {
-            if (path) pathSet.add(path);
+    const addCharacter = (key) => {
+        if (!key || typeof key !== 'string') return;
+        if (key.includes('/')) {
+            pathSet.add(key);
+            return;
+        }
+        const splitAt = key.indexOf('_');
+        if (splitAt < 0) return;
+        const charId = key.slice(0, splitAt);
+        const expression = key.slice(splitAt + 1);
+        const path = CONFIG.EXPRESSIONS?.[charId]?.[expression];
+        if (path) pathSet.add(path);
+    };
+
+    const queue = sceneId ? [sceneId] : [];
+    const visited = new Set();
+    while (queue.length && visited.size < 18) {
+        const id = queue.shift();
+        if (!id || visited.has(id)) continue;
+        visited.add(id);
+        const day = Number((String(id).match(/^day(\d)/) || [])[1]);
+        const scene = SCENARIO?.[day]?.[id];
+        if (!scene) continue;
+
+        if (scene.background) pathSet.add(CONFIG.BACKGROUNDS?.[scene.background] || scene.background);
+        addCharacter(scene.character);
+        Object.values(scene.characters || {}).forEach(addCharacter);
+
+        [scene.next, scene.timeoutNext, scene.fallback].forEach(next => {
+            if (next && !visited.has(next)) queue.push(next);
+        });
+        for (const group of [scene.choices, scene.branches, scene.affinityBranches]) {
+            for (const item of group || []) {
+                if (item?.next && !visited.has(item.next)) queue.push(item.next);
+            }
         }
     }
 
-    // 배경 이미지
-    for (const path of Object.values(CONFIG.BACKGROUNDS)) {
-        if (path) pathSet.add(path);
-    }
-    for (const path of Object.values(CONFIG.EVIDENCE_IMAGES || {})) {
-        if (path) pathSet.add(path);
-    }
-    for (const path of Object.values(CONFIG.SUBJECT_FACE_IMAGES || {})) {
-        if (path) pathSet.add(path);
+    // Keep a deterministic fallback for silent scenes without image directives.
+    if (pathSet.size === 0 && CONFIG.BACKGROUNDS?.classroom) {
+        pathSet.add(CONFIG.BACKGROUNDS.classroom);
     }
 
-    const paths = [...pathSet];
+    // Avoid replaying the loading screen for paths already attempted this session.
+    const paths = [...pathSet].filter(path => !alreadyLoaded.has(path));
     const total = paths.length;
     let loaded = 0;
 
@@ -307,17 +335,17 @@ function preloadGameImages(onProgress) {
     }
 
     return new Promise((resolve) => {
-        let settled = 0;
-        const settle = () => {
-            settled++;
-            loaded++;
-            onProgress?.(loaded, total);
-            if (settled >= total) resolve();
+        let cursor = 0;
+        const worker = async () => {
+            while (cursor < paths.length) {
+                const src = paths[cursor++];
+                try { await loadNevergradImage(src); } catch (_) { /* renderer retries on demand */ }
+                alreadyLoaded.add(src);
+                loaded++;
+                onProgress?.(loaded, total);
+            }
         };
-
-        paths.forEach((src) => {
-            loadNevergradImage(src).then(settle).catch(settle);
-        });
+        Promise.all(Array.from({ length: Math.min(6, total) }, worker)).then(resolve);
     });
 }
 
@@ -415,13 +443,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     // 이미지 프리로드 기능을 엔진에 등록
-    game._preloadImages = async function(afterScreen) {
-        // 이미 프리로드 완료된 경우 스킵
-        if (game._imagesPreloaded) {
-            game._showScreen(afterScreen);
-            return;
-        }
-
+    game._preloadImages = async function(afterScreen, sceneId) {
+        game._preloadedImagePaths ||= new Set();
+        // Reuse per-session asset attempts across new game and continue flows.
         const loadingScreen = document.getElementById('loading-screen');
         const bar = document.getElementById('loading-bar-inner');
         const text = document.getElementById('loading-text');
@@ -437,11 +461,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         await preloadGameImages((loaded, total) => {
-            if (bar) bar.style.width = `${Math.round((loaded / total) * 100)}%`;
+            if (bar) bar.style.width = `${total ? Math.round((loaded / total) * 100) : 100}%`;
             if (text) text.textContent = `${loaded} / ${total}`;
-        });
-
-        game._imagesPreloaded = true;
+        }, sceneId, game._preloadedImagePaths);
 
         // 잠시 대기 (100% 표시 유지)
         await new Promise(r => setTimeout(r, 300));

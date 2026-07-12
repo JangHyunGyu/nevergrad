@@ -19,3 +19,7 @@ node_modules/
 # Build
 dist/
 build/
+
+# Generated review and audit artifacts
+tmp/
+*.log

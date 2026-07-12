@@ -32,6 +32,32 @@ class SaveManager {
         this.MAX_SLOTS = 9;
     }
 
+    _slotKey(slotIndex) {
+        return slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
+    }
+
+    _isValidGameState(gameState) {
+        if (!gameState || typeof gameState !== 'object' || Array.isArray(gameState)) return false;
+        if (!Number.isInteger(gameState.currentDay) || gameState.currentDay < 1 || gameState.currentDay > 5) return false;
+        if (typeof gameState.currentScene !== 'string' || !gameState.currentScene.trim()) return false;
+        if (!gameState.currentScene.startsWith(`day${gameState.currentDay}_`)) return false;
+        if (typeof SCENARIO !== 'undefined' && !SCENARIO[gameState.currentDay]?.[gameState.currentScene]) return false;
+        return true;
+    }
+
+    _readSlot(slotIndex) {
+        try {
+            const raw = localStorage.getItem(this._slotKey(slotIndex));
+            if (!raw) return null;
+            const slotData = JSON.parse(raw);
+            const gameState = slotData?.gameState || slotData;
+            if (!this._isValidGameState(gameState)) return null;
+            return { slotData, gameState };
+        } catch (_) {
+            return null;
+        }
+    }
+
     // =========================================================================
     // 멀티슬롯 저장/불러오기
     // =========================================================================
@@ -52,7 +78,7 @@ class SaveManager {
                 currentSlot: gameData.currentSlot,
                 currentScene: gameData.currentScene
             };
-            const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
+            const key = this._slotKey(slotIndex);
             localStorage.setItem(key, JSON.stringify(slotData));
             return true;
         } catch (e) {
@@ -68,13 +94,10 @@ class SaveManager {
      */
     loadFromSlot(slotIndex) {
         try {
-            const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
-            const raw = localStorage.getItem(key);
-            if (!raw) return false;
-            const slotData = JSON.parse(raw);
+            const parsed = this._readSlot(slotIndex);
+            if (!parsed) return false;
             // 하위호환: 이전 형식(gameState 래핑 없음)도 지원
-            const gameState = slotData.gameState || slotData;
-            this.state.deserialize(gameState);
+            this.state.deserialize(parsed.gameState);
             return true;
         } catch (e) {
             console.error('[SaveManager] Load from slot', slotIndex, 'failed:', e);
@@ -89,10 +112,9 @@ class SaveManager {
      */
     getSlotInfo(slotIndex) {
         try {
-            const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
-            const raw = localStorage.getItem(key);
-            if (!raw) return null;
-            const data = JSON.parse(raw);
+            const parsed = this._readSlot(slotIndex);
+            if (!parsed) return null;
+            const data = parsed.slotData;
             // 하위호환
             if (data.gameState) {
                 return {
@@ -131,8 +153,7 @@ class SaveManager {
      * @param {number} slotIndex
      */
     deleteSlot(slotIndex) {
-        const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
-        localStorage.removeItem(key);
+        localStorage.removeItem(this._slotKey(slotIndex));
     }
 
     /**
@@ -141,8 +162,7 @@ class SaveManager {
      * @returns {boolean}
      */
     hasSlotData(slotIndex) {
-        const key = slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
-        return !!localStorage.getItem(key);
+        return !!this._readSlot(slotIndex);
     }
 
     // =========================================================================

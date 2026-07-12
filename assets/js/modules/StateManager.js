@@ -13,6 +13,11 @@
 
 class StateManager {
     constructor() {
+        this.resetForNewRun();
+    }
+
+    /** Reset every value that belongs to a single playthrough. */
+    resetForNewRun() {
         this.playerName = "";
         this.currentDay = 1;
         this.currentSlot = "morning"; // morning, lunch, afterschool, night
@@ -96,7 +101,7 @@ class StateManager {
     }
 
     startNewRun() {
-        this.analytics = this._defaultAnalytics();
+        this.resetForNewRun();
     }
 
     resumeRun() {
@@ -295,8 +300,22 @@ class StateManager {
         this.currentBGM = data.currentBGM || null;
         this.mode = data.mode || CONFIG.STAT_MODES.ROMANCE;
         this.glitchLevel = data.glitchLevel || CONFIG.GLITCH_LEVELS.NONE;
-        this.stats = data.stats || {};
         this.flags = data.flags || {};
+        // Merge saved stats over current defaults. Older saves may not contain
+        // characters introduced in a later release.
+        const savedStats = data.stats && typeof data.stats === 'object' ? data.stats : {};
+        this.stats = {};
+        for (const [id, initial] of Object.entries(INITIAL_STATS)) {
+            const saved = savedStats[id] && typeof savedStats[id] === 'object'
+                ? savedStats[id]
+                : {};
+            this.stats[id] = { ...initial, ...saved };
+        }
+        for (const [id, saved] of Object.entries(savedStats)) {
+            if (!this.stats[id] && saved && typeof saved === 'object') {
+                this.stats[id] = { ...saved };
+            }
+        }
         this.evidence = data.evidence || [];
         this.chatMemories = data.chatMemories || {};
         this.currentTheme = data.currentTheme || "romance";

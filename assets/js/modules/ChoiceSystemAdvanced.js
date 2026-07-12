@@ -562,6 +562,12 @@ class ChoiceSystemAdvanced {
 
         this.timerBar = null;
     }
+
+    reset() {
+        this._selected = true;
+        this.currentResolve = null;
+        this._cleanup();
+    }
 }
 
 window.ChoiceSystemAdvanced = ChoiceSystemAdvanced;

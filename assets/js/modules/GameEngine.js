@@ -201,7 +201,12 @@ class GameEngine {
             this.audio?.playUIClick();
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
-            this.save.load();
+            if (!this.save.load()) {
+                const continueBtn = document.getElementById('btn-continue');
+                if (continueBtn) continueBtn.disabled = true;
+                this.showSaveToast(this.i18n.getUI('loadFailed') || 'Unable to load save data');
+                return;
+            }
             this.state.resumeRun();
             this._endingReached = false;
             // Cupid 크로스오버 플래그 설정 (세이브 데이터에 포함되지 않으므로 매번 감지)
@@ -216,7 +221,7 @@ class GameEngine {
 
             // 이미지 프리로드 후 게임 화면 표시
             if (this._preloadImages) {
-                await this._preloadImages('game-screen');
+                await this._preloadImages('game-screen', this.state.currentScene);
             } else {
                 this._showScreen('game-screen');
             }
@@ -229,6 +234,7 @@ class GameEngine {
             const name = document.getElementById('player-name-input')?.value.trim();
             if (!name) return;
 
+            this._prepareNewRun();
             this.state.startNewRun();
             this.state.playerName = this._sanitizeName(name);
             this.state.currentDay = 1;
@@ -248,12 +254,51 @@ class GameEngine {
 
             // 이미지 프리로드 후 게임 화면 표시
             if (this._preloadImages) {
-                await this._preloadImages('game-screen');
+                await this._preloadImages('game-screen', 'day1_opening_1');
             } else {
                 this._showScreen('game-screen');
             }
             this._loadScene("day1_opening_1");
         });
+    }
+
+    _prepareNewRun() {
+        this._stopAuto();
+        this._stopSkip();
+        clearTimeout(this._autoAdvanceTimer);
+        clearTimeout(this._clickLockTimer);
+        this._autoAdvanceTimer = null;
+        this._clickLockTimer = null;
+        this._clickLocked = false;
+        this._effectClickLockToken = null;
+
+        this.choices?.hide?.();
+        this.choiceAdvanced?.reset?.();
+        this.glitch?.stopTabGimmick?.();
+        this.glitchAdvanced?.clearAll?.();
+        this.renderer?.clearOverlays?.();
+        this.renderer?.clearMediaOverlay?.();
+        this.renderer?.clearCharacters?.();
+        this.renderer?.setSilhouette?.(false);
+        this.audio?.stopBGM?.(0);
+        this.audio?.stopSFX?.(null, 0);
+        this.audio?.stopAmbient?.(0);
+
+        this.currentSceneData = null;
+        this.backlog = [];
+        this._endingReached = false;
+        this._cageMode = false;
+        this._cageClickCount = 0;
+        this._cagePool = [];
+        this._cageRepeatEffects = {};
+        this._cageSeaVariants = {};
+        this._cagePoolIndex = 0;
+        this._cageExitBtn?.remove?.();
+        this._cageExitBtn = null;
+
+        document.body?.classList.remove('ending-credit-mode');
+        const statEl = document.getElementById('stat-display');
+        statEl?.classList.remove('stat-revealed', 'stat-peeling');
     }
 
     // ===== Game Screen =====
@@ -2453,7 +2498,7 @@ class GameEngine {
     /**
      * 저장 완료 토스트 메시지 표시 (1.5초 후 사라짐)
      */
-    showSaveToast() {
+    showSaveToast(message = null) {
         // 기존 토스트 제거
         const existing = document.getElementById('save-toast');
         if (existing) existing.remove();
@@ -2461,7 +2506,7 @@ class GameEngine {
         const toast = document.createElement('div');
         toast.id = 'save-toast';
         toast.className = 'save-toast';
-        toast.textContent = this.i18n.getUI('saveComplete') || '\uC800\uC7A5 \uC644\uB8CC';
+        toast.textContent = message || this.i18n.getUI('saveComplete') || '\uC800\uC7A5 \uC644\uB8CC';
 
         document.body.appendChild(toast);
 

@@ -1,10 +1,10 @@
 const fs = require('fs');
 require('dotenv').config({ path: '../.env.txt' });
 
-const API_KEY = process.env.GEMINI_API_KEY;
+const API_KEY = process.env.DEEPSEEK_API_KEY;
 if (!API_KEY || API_KEY === 'YOUR_API_KEY_HERE') {
-  console.error('.env 파일에 GEMINI_API_KEY를 입력하세요.');
-  console.error('발급: https://aistudio.google.com/apikey');
+  console.error('.env 파일에 DEEPSEEK_API_KEY를 입력하세요.');
+  console.error('발급: https://platform.deepseek.com/api_keys');
   process.exit(1);
 }
 
@@ -52,28 +52,31 @@ ${scenario}
 ${crossover}
 `;
 
-console.log('Gemini 3.1 Pro Preview에 전송 중... (파일 크기: ' + Math.round(scenario.length / 1024) + 'KB)');
+console.log('공식 DeepSeek V4 Flash에 전송 중... (파일 크기: ' + Math.round(scenario.length / 1024) + 'KB)');
 console.log('예상 소요시간: 30초~2분\n');
 
-fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro-preview:generateContent?key=' + API_KEY, {
+fetch('https://api.deepseek.com/chat/completions', {
   method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
+  headers: {
+    Authorization: `Bearer ${API_KEY}`,
+    'Content-Type': 'application/json',
+  },
   body: JSON.stringify({
-    contents: [{ parts: [{ text: prompt }] }],
-    generationConfig: {
-      temperature: 0.7,
-      maxOutputTokens: 16384
-    }
+    model: 'deepseek-v4-flash',
+    messages: [{ role: 'user', content: prompt }],
+    thinking: { type: 'disabled' },
+    temperature: 0.7,
+    max_tokens: 16384
   })
 }).then(r => r.json()).then(data => {
   if (data.error) {
     console.error('API 에러:', data.error.message);
     return;
   }
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+  const text = data.choices?.[0]?.message?.content;
   if (text) {
     console.log('='.repeat(60));
-    console.log('  Gemini 3.1 Pro 평가 결과');
+    console.log('  공식 DeepSeek 평가 결과');
     console.log('='.repeat(60));
     console.log(text);
     fs.writeFileSync('./GEMINI_REVIEW.md', text, 'utf-8');

@@ -5,7 +5,7 @@ const ROOT = path.resolve(process.cwd(), 'assets/js/i18n');
 const SOURCE_LANG = 'ko';
 const SOURCE_DIR = path.join(ROOT, SOURCE_LANG);
 const TARGET_LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
-const DEFAULT_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const DEFAULT_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-v4-flash';
 
 const LANG_CONFIG = {
   en: {
@@ -62,7 +62,7 @@ function parseArgs() {
     else if (arg === '--files') parsed.files = args[++i].split(',').map((x) => x.trim()).filter(Boolean);
     else if (arg === '--force') parsed.force = true;
     else if (arg === '--retries') parsed.retries = Number(args[++i]);
-    else if (arg === '--model') process.env.GEMINI_MODEL = args[++i];
+    else if (arg === '--model') process.env.DEEPSEEK_MODEL = args[++i];
     else throw new Error(`Unknown argument: ${arg}`);
   }
 
@@ -74,11 +74,11 @@ function parseArgs() {
 }
 
 async function readApiKey() {
-  if (process.env.GEMINI_API_KEY) return process.env.GEMINI_API_KEY;
+  if (process.env.DEEPSEEK_API_KEY) return process.env.DEEPSEEK_API_KEY;
   const envPath = path.resolve(process.cwd(), '.env');
   const envText = await fs.readFile(envPath, 'utf8').catch(() => '');
-  const match = envText.match(/^GEMINI_API_KEY=(.+)$/m);
-  if (!match) throw new Error('GEMINI_API_KEY is missing from environment and .env');
+  const match = envText.match(/^DEEPSEEK_API_KEY=(.+)$/m);
+  if (!match) throw new Error('DEEPSEEK_API_KEY is missing from environment and .env');
   return match[1].trim().replace(/^["']|["']$/g, '');
 }
 
@@ -189,35 +189,37 @@ function normalizeTranslated(lang, source, translated, file) {
   return result;
 }
 
-async function callGemini(apiKey, prompt) {
-  const model = process.env.GEMINI_MODEL || DEFAULT_MODEL;
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+async function callDeepSeek(apiKey, prompt) {
+  const model = process.env.DEEPSEEK_MODEL || DEFAULT_MODEL;
+  const url = 'https://api.deepseek.com/chat/completions';
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 180000);
   const response = await fetch(url, {
     method: 'POST',
-    headers: { 'content-type': 'application/json' },
+    headers: {
+      authorization: `Bearer ${apiKey}`,
+      'content-type': 'application/json',
+    },
     signal: controller.signal,
     body: JSON.stringify({
-      contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.25,
-        topP: 0.9,
-        responseMimeType: 'application/json',
-        maxOutputTokens: 65536,
-      },
+      model,
+      messages: [{ role: 'user', content: prompt }],
+      thinking: { type: 'disabled' },
+      temperature: 0.25,
+      top_p: 0.9,
+      response_format: { type: 'json_object' },
+      max_tokens: 32768,
     }),
   }).finally(() => clearTimeout(timeout));
 
   if (!response.ok) {
     const body = await response.text();
-    throw new Error(`Gemini HTTP ${response.status}: ${body.slice(0, 500)}`);
+    throw new Error(`DeepSeek HTTP ${response.status}: ${body.slice(0, 500)}`);
   }
 
   const json = await response.json();
-  const parts = json.candidates?.[0]?.content?.parts ?? [];
-  const text = parts.map((part) => part.text ?? '').join('');
-  if (!text.trim()) throw new Error(`Gemini returned no text: ${JSON.stringify(json).slice(0, 500)}`);
+  const text = json.choices?.[0]?.message?.content || '';
+  if (!text.trim()) throw new Error(`DeepSeek returned no text: ${JSON.stringify(json).slice(0, 500)}`);
   return text;
 }
 
@@ -230,7 +232,7 @@ async function translateFile(apiKey, lang, file, retries) {
   let lastError = null;
   for (let attempt = 1; attempt <= retries; attempt += 1) {
     try {
-      const raw = await callGemini(apiKey, prompt);
+      const raw = await callDeepSeek(apiKey, prompt);
       const translated = extractJson(raw);
       const normalized = normalizeTranslated(lang, source, translated, file);
       await fs.mkdir(path.dirname(targetPath), { recursive: true });
@@ -253,7 +255,7 @@ async function main() {
 
   const apiKey = await readApiKey();
   const files = await listSourceFiles(args.files);
-  console.log(`model=${process.env.GEMINI_MODEL || DEFAULT_MODEL}`);
+  console.log(`model=${process.env.DEEPSEEK_MODEL || DEFAULT_MODEL}`);
   console.log(`source=${SOURCE_LANG} langs=${args.langs.join(',')} files=${files.length}`);
 
   for (const lang of args.langs) {

@@ -14,9 +14,16 @@
  */
 
 class GlitchSystem {
-    constructor() {
+    constructor(lifecycle = null) {
+        this.lifecycle = lifecycle || new LifecycleManager('glitch');
+        this.effectLifecycle = this.lifecycle.createScope('effects');
+        this.tabLifecycle = this.lifecycle.createScope('tab');
         this.overlay = document.getElementById('glitch-overlay');
         this.active = false;
+    }
+
+    _later(callback, delay) {
+        return this.effectLifecycle.timeout(callback, delay);
     }
 
     _lang() {
@@ -42,7 +49,7 @@ class GlitchSystem {
         if (options.color) buttonEl.style.color = options.color;
         buttonEl.classList.add('glitch-text');
 
-        setTimeout(() => {
+        this._later(() => {
             buttonEl.textContent = finalText || original;
             buttonEl.style.color = originalColor;
             buttonEl.classList.remove('glitch-text');
@@ -57,7 +64,7 @@ class GlitchSystem {
         const original = audioEl.playbackRate;
         audioEl.playbackRate = 0.97;
 
-        setTimeout(() => {
+        this._later(() => {
             audioEl.playbackRate = original;
         }, duration);
     }
@@ -73,7 +80,7 @@ class GlitchSystem {
         audioEl.volume = 0;
 
         return new Promise(resolve => {
-            setTimeout(() => {
+            this._later(() => {
                 audioEl.volume = vol;
                 resolve();
             }, duration);
@@ -108,7 +115,7 @@ class GlitchSystem {
         this.overlay.classList.add('noise');
 
         return new Promise(resolve => {
-            setTimeout(() => {
+            this._later(() => {
                 this.overlay.classList.add('hidden');
                 this.overlay.classList.remove('noise');
                 resolve();
@@ -172,7 +179,7 @@ class GlitchSystem {
         const original = charImgEl.src;
         charImgEl.src = flashSrc;
 
-        setTimeout(() => {
+        this._later(() => {
             charImgEl.src = original;
         }, duration);
     }
@@ -204,10 +211,10 @@ class GlitchSystem {
         }
         requestAnimationFrame(() => overlay.classList.add('visible'));
 
-        setTimeout(() => {
+        this._later(() => {
             overlay.classList.remove('visible');
             overlay.classList.add('leaving');
-            setTimeout(() => overlay.remove(), 220);
+            this._later(() => overlay.remove(), 220);
         }, duration);
     }
 
@@ -240,7 +247,7 @@ class GlitchSystem {
         document.getElementById('game-screen')?.classList.add('screen-shake');
 
         return new Promise(resolve => {
-            setTimeout(() => {
+            this._later(() => {
                 this.overlay.classList.add('hidden');
                 this.overlay.classList.remove('heavy-glitch');
                 document.getElementById('game-screen')?.classList.remove('screen-shake');
@@ -261,7 +268,7 @@ class GlitchSystem {
 
         document.getElementById('game-screen')?.appendChild(ghost);
 
-        setTimeout(() => ghost.remove(), duration);
+        this._later(() => ghost.remove(), duration);
     }
 
     /**
@@ -284,7 +291,7 @@ class GlitchSystem {
         const el = this._mirrorFogEl;
         this._mirrorFogEl = null;
         el.classList.remove('active');
-        setTimeout(() => el.remove(), 800);
+        this._later(() => el.remove(), 800);
     }
 
     /**
@@ -318,7 +325,7 @@ class GlitchSystem {
         this.overlay.classList.add('drug-blur');
 
         return new Promise(resolve => {
-            setTimeout(() => {
+            this._later(() => {
                 this.overlay.classList.add('hidden');
                 this.overlay.classList.remove('drug-blur');
                 resolve();
@@ -353,7 +360,7 @@ class GlitchSystem {
         textEl.classList.add('drug-text-corrupt');
 
         // 0.5초 후 원래 텍스트로 복구
-        setTimeout(() => {
+        this._later(() => {
             textEl.textContent = original;
             textEl.classList.remove('drug-text-corrupt');
         }, 500);
@@ -381,7 +388,7 @@ class GlitchSystem {
         buttons[targetIdx].textContent = buttons[otherIdx].textContent;
         buttons[targetIdx].classList.add('choice-disguise');
 
-        setTimeout(() => {
+        this._later(() => {
             buttons[targetIdx].textContent = original;
             buttons[targetIdx].classList.remove('choice-disguise');
         }, 1000);
@@ -468,13 +475,13 @@ class GlitchSystem {
         document.body.appendChild(modal);
 
         // 1.5초 후 자동으로 '항상 허용' 클릭
-        setTimeout(() => {
+        this._later(() => {
             const allowBtn = modal.querySelector('.modal-btn.allow');
             if (allowBtn) {
                 allowBtn.classList.add('auto-click');
-                setTimeout(() => {
+                this._later(() => {
                     modal.style.animation = 'modal-appear 0.2s ease reverse forwards';
-                    setTimeout(() => modal.remove(), 200);
+                    this._later(() => modal.remove(), 200);
                 }, 400);
             }
         }, 1500);
@@ -504,7 +511,7 @@ class GlitchSystem {
         });
         this._tabMsgIndex = 0;
 
-        document.addEventListener('visibilitychange', this._onVisibilityChange = () => {
+        this._onVisibilityChange = () => {
             if (!this._tabGimmickActive) return;
 
             if (document.hidden) {
@@ -515,11 +522,12 @@ class GlitchSystem {
                 this._tabMsgIndex++;
             } else {
                 // 탭으로 돌아올 때 — 잠깐 유지 후 복구
-                setTimeout(() => {
+                this._later(() => {
                     document.title = this._originalTitle;
                 }, 1500);
             }
-        });
+        };
+        this.tabLifecycle.listen(document, 'visibilitychange', this._onVisibilityChange);
     }
 
     /**
@@ -536,9 +544,25 @@ class GlitchSystem {
             de: 'Das Klassenzimmer ohne Abschluss',
             pt: 'A Sala de Aula Sem Formatura'
         });
-        if (this._onVisibilityChange) {
-            document.removeEventListener('visibilitychange', this._onVisibilityChange);
-        }
+        this.tabLifecycle?.dispose?.();
+        this.tabLifecycle = this.lifecycle.createScope('tab');
+        this._onVisibilityChange = null;
+    }
+
+    resetSession() {
+        this.effectLifecycle?.dispose?.();
+        this.effectLifecycle = this.lifecycle.createScope('effects');
+        this.stopTabGimmick();
+        this.overlay?.classList.add('hidden');
+        this.overlay?.classList.remove('noise');
+        document.querySelectorAll('.glitch-ghost, .fake-permission-modal, .screen-noise-overlay')
+            .forEach(element => element.remove());
+        this.active = false;
+    }
+
+    dispose() {
+        this.resetSession();
+        this.lifecycle?.dispose?.();
     }
 
     /**
@@ -709,6 +733,6 @@ class GlitchSystem {
     // ===== 유틸 =====
 
     _sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
+        return new Promise(resolve => this._later(resolve, ms));
     }
 }

@@ -20,7 +20,9 @@
  */
 
 class AudioManager {
-    constructor() {
+    constructor(lifecycle = null) {
+        this.lifecycle = lifecycle || new LifecycleManager('audio');
+        this.effectLifecycle = this.lifecycle.createScope('effects');
         /** @type {AudioContext|null} */
         this.ctx = null;
 
@@ -154,11 +156,16 @@ class AudioManager {
 
         // 다양한 이벤트에 바인딩 (모바일 대응)
         const events = ['click', 'touchstart', 'keydown'];
+        const unlockLifecycle = this.lifecycle.createScope('autoplay-unlock');
         const handler = () => {
             unlock();
-            events.forEach(e => document.removeEventListener(e, handler));
+            unlockLifecycle.dispose();
         };
-        events.forEach(e => document.addEventListener(e, handler, { once: false }));
+        events.forEach(e => unlockLifecycle.listen(document, e, handler, { once: false }));
+    }
+
+    _later(callback, delay) {
+        return this.effectLifecycle.timeout(callback, delay);
     }
 
     // =========================================================================
@@ -323,7 +330,7 @@ class AudioManager {
             this.bgmSourceB.start(0);
 
             // 페이드아웃 완료 후 A 소스 정리
-            setTimeout(() => {
+            this._later(() => {
                 this._stopSource(this.bgmSourceA);
                 this.bgmSourceA = null;
             }, (immediate ? 0 : fadeOut) * 1000 + 100);
@@ -347,7 +354,7 @@ class AudioManager {
 
             this.bgmSourceA.start(0);
 
-            setTimeout(() => {
+            this._later(() => {
                 this._stopSource(this.bgmSourceB);
                 this.bgmSourceB = null;
             }, (immediate ? 0 : fadeOut) * 1000 + 100);
@@ -375,12 +382,14 @@ class AudioManager {
             }
         });
 
-        setTimeout(() => {
+        const stopSources = () => {
             this._stopSource(this.bgmSourceA);
             this._stopSource(this.bgmSourceB);
             this.bgmSourceA = null;
             this.bgmSourceB = null;
-        }, fadeOut * 1000 + 100);
+        };
+        if (fadeOut <= 0) stopSources();
+        else this._later(stopSources, fadeOut * 1000 + 100);
 
         this._currentBGM = null;
     }
@@ -462,7 +471,8 @@ class AudioManager {
             entry.gain.gain.setValueAtTime(entry.gain.gain.value, now);
             entry.gain.gain.linearRampToValueAtTime(0, now + fadeOut);
             this._activeSFX.delete(entry);
-            setTimeout(() => this._stopSource(entry.source), fadeOut * 1000 + 50);
+            if (fadeOut <= 0) this._stopSource(entry.source);
+            else this._later(() => this._stopSource(entry.source), fadeOut * 1000 + 50);
         });
     }
 
@@ -490,7 +500,7 @@ class AudioManager {
             this.ambGain.gain.setValueAtTime(this.ambGain.gain.value, now);
             this.ambGain.gain.linearRampToValueAtTime(0, now + 1.0);
             const oldSource = this.ambSource;
-            setTimeout(() => this._stopSource(oldSource), 1100);
+            this._later(() => this._stopSource(oldSource), 1100);
         }
 
         this.ambSource = this._createLoopSource(buffer, this.ambGain);
@@ -513,7 +523,8 @@ class AudioManager {
         this.ambGain.gain.linearRampToValueAtTime(0, now + fadeOut);
 
         const oldSource = this.ambSource;
-        setTimeout(() => this._stopSource(oldSource), fadeOut * 1000 + 100);
+        if (fadeOut <= 0) this._stopSource(oldSource);
+        else this._later(() => this._stopSource(oldSource), fadeOut * 1000 + 100);
         this.ambSource = null;
         this._currentAmbient = null;
     }
@@ -536,7 +547,7 @@ class AudioManager {
         const original = source.playbackRate.value;
         source.playbackRate.setValueAtTime(rate, this.ctx.currentTime);
 
-        setTimeout(() => {
+        this._later(() => {
             if (source.playbackRate) {
                 source.playbackRate.setValueAtTime(original, this.ctx.currentTime);
             }
@@ -561,7 +572,7 @@ class AudioManager {
         });
 
         return new Promise(resolve => {
-            setTimeout(() => {
+            this._later(() => {
                 const restoreTime = this.ctx.currentTime;
                 gains.forEach((g, i) => {
                     g.gain.setValueAtTime(0, restoreTime);
@@ -590,7 +601,7 @@ class AudioManager {
         const now = this.ctx.currentTime;
         this._glitchFilter.frequency.setValueAtTime(frequency, now);
 
-        setTimeout(() => {
+        this._later(() => {
             this._glitchFilter.frequency.setValueAtTime(20000, this.ctx.currentTime);
             activeGain.disconnect();
             activeGain.connect(this.masterGain);
@@ -654,7 +665,7 @@ class AudioManager {
             activeGain.gain.linearRampToValueAtTime(baseVol, now + beatSec * 0.7);
 
             beatCount++;
-            setTimeout(pulse, interval);
+            this._later(pulse, interval);
         };
 
         pulse();
@@ -889,7 +900,7 @@ class AudioManager {
         }
 
         // 페이드 완료 후 마스터 볼륨 복구
-        setTimeout(() => {
+        this._later(() => {
             if (this.masterGain) {
                 this.masterGain.gain.setValueAtTime(this.volumes.master, this.ctx.currentTime);
             }
@@ -1606,13 +1617,23 @@ class AudioManager {
     /**
      * 전체 오디오 정리 (페이지 이탈 시)
      */
-    dispose() {
+    resetSession() {
+        this.effectLifecycle?.dispose?.();
+        this.effectLifecycle = this.lifecycle.createScope('effects');
+        this._bgmRequestId += 1;
+        this._pendingBGM = null;
         this.stopBGM(0);
+        this.stopSFX(null, 0);
         this.stopAmbient(0);
+    }
+
+    dispose() {
+        this.resetSession();
         this._bufferCache.clear();
         if (this.ctx) {
             this.ctx.close().catch(() => {});
             this.ctx = null;
         }
+        this.lifecycle?.dispose?.();
     }
 }

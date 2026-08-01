@@ -82,6 +82,33 @@ function basenameNoQuery(ref) {
     return path.basename(stripUrlSuffix(ref));
 }
 
+function collectHtmlPaths(dir) {
+    const results = [];
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === '.wrangler') continue;
+        const full = path.join(dir, entry.name);
+        if (entry.isDirectory()) results.push(...collectHtmlPaths(full));
+        else if (entry.isFile() && entry.name.endsWith('.html')) results.push(full);
+    }
+    return results;
+}
+
+{
+    const reporter = fs.readFileSync(path.join(ROOT, 'assets/js/error-reporter.js'), 'utf8');
+    const reporterVersion = '20260801-optional-analytics-filter';
+    if (!reporter.includes(`var VERSION = '${reporterVersion}'`)
+        || !reporter.includes('isIgnorableResourceFailure')
+        || !reporter.includes('www\\.googletagmanager\\.com\\/gtag\\/js')) {
+        errors.push('[ERROR_REPORTER] optional Google Analytics resource filter or reporter version is missing');
+    }
+    for (const htmlFile of collectHtmlPaths(ROOT)) {
+        const html = fs.readFileSync(htmlFile, 'utf8');
+        if (html.includes('error-reporter.js') && !html.includes(`error-reporter.js?v=${reporterVersion}`)) {
+            errors.push(`[ERROR_REPORTER] stale reporter cache version: ${path.relative(ROOT, htmlFile)}`);
+        }
+    }
+}
+
 // ═══════════════════════════════════════════
 // Load config.js
 // ═══════════════════════════════════════════

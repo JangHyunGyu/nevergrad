@@ -3,7 +3,7 @@
 
     if (window.__nevergradErrorReporterInstalled) return;
 
-    var VERSION = '20260710-durable';
+    var VERSION = '20260801-optional-analytics-filter';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'nevergrad-error-queue-v2';
     var SESSION_KEY = 'nevergrad-error-session-v2';
@@ -119,6 +119,11 @@
         return window.location.href;
     }
 
+    function isIgnorableResourceFailure(tagName, resource) {
+        return tagName === 'SCRIPT'
+            && /^https:\/\/www\.googletagmanager\.com\/gtag\/js(?:[?#]|$)/i.test(String(resource || ''));
+    }
+
     function enqueue(payload) {
         var id = randomId();
         payload.extra = payload.extra || {};
@@ -222,6 +227,7 @@
             var tagName = String(target.tagName || '').toUpperCase();
             if (tagName !== 'SCRIPT' && tagName !== 'LINK') return;
             var resource = target.src || target.href || '';
+            if (isIgnorableResourceFailure(tagName, resource)) return;
             report(
                 'ResourceError',
                 'Failed to load resource: ' + (tagName || 'UNKNOWN'),

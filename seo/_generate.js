@@ -573,7 +573,7 @@ function renderPage(cluster, lang, page) {
   return `<!DOCTYPE html>
 <html lang="${langData.htmlLang}">
 <head>
-  <script src="../assets/js/error-reporter.js?v=20260710-durable"></script>
+  <script src="../assets/js/error-reporter.js?v=20260801-optional-analytics-filter"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHtml(page.title)}</title>

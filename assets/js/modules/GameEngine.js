@@ -50,18 +50,21 @@ class SettingsManager {
 }
 
 class GameEngine {
-    constructor() {
+    constructor(lifecycle = null) {
+        this.lifecycle = lifecycle || new LifecycleManager('game');
+        this.runLifecycle = this.lifecycle.createScope('run');
+        this.sceneLifecycle = this.runLifecycle.createScope('scene');
         this.state = new StateManager();
         this.save = new SaveManager(this.state);
         this.i18n = new I18nManager();
         this.renderer = new SceneRenderer();
-        this.audio = new AudioManager();
+        this.audio = new AudioManager(this.lifecycle.createScope('audio'));
         this.dialogue = new DialogueSystem();
         this.choices = new ChoiceSystem();
         this.choiceAdvanced = typeof ChoiceSystemAdvanced !== 'undefined'
             ? new ChoiceSystemAdvanced(this)
             : null;
-        this.glitch = new GlitchSystem();
+        this.glitch = new GlitchSystem(this.lifecycle.createScope('glitch'));
 
         this.currentSceneData = null;
         this.isTransitioning = false;
@@ -201,6 +204,7 @@ class GameEngine {
             this.audio?.playUIClick();
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
+            this._prepareNewRun();
             if (!this.save.load()) {
                 const continueBtn = document.getElementById('btn-continue');
                 if (continueBtn) continueBtn.disabled = true;
@@ -263,6 +267,12 @@ class GameEngine {
     }
 
     _prepareNewRun() {
+        this.sceneLifecycle?.dispose?.();
+        this.runLifecycle?.dispose?.();
+        this.runLifecycle = this.lifecycle.createScope('run');
+        this.sceneLifecycle = this.runLifecycle.createScope('scene');
+        this.audio?.resetSession?.();
+        this.glitch?.resetSession?.();
         this._stopAuto();
         this._stopSkip();
         clearTimeout(this._autoAdvanceTimer);
@@ -414,8 +424,8 @@ class GameEngine {
         });
 
         // 풀스크린 상태가 외부 변경(ESC 등)으로 바뀔 때 라벨 동기화
-        document.addEventListener('fullscreenchange', () => this._refreshFullscreenLabel());
-        document.addEventListener('webkitfullscreenchange', () => this._refreshFullscreenLabel());
+        this.lifecycle.listen(document, 'fullscreenchange', () => this._refreshFullscreenLabel());
+        this.lifecycle.listen(document, 'webkitfullscreenchange', () => this._refreshFullscreenLabel());
     }
 
     _openSettings() {
@@ -453,6 +463,8 @@ class GameEngine {
     // ===== Scene Management =====
 
     _loadScene(sceneId) {
+        this.sceneLifecycle?.dispose?.();
+        this.sceneLifecycle = this.runLifecycle.createScope(`scene:${sceneId}`);
         clearTimeout(this._autoAdvanceTimer);
 
         // 씬 ID 접두사로 slot 자동 추론 (HUD 시간대 불일치 방지)
@@ -1111,7 +1123,7 @@ class GameEngine {
             ? delayOverride
             : (typeof scene.autoAdvanceDelay === 'number' ? scene.autoAdvanceDelay : (scene.autoAdvance ? 0 : 120));
 
-        this._autoAdvanceTimer = setTimeout(() => {
+        this._autoAdvanceTimer = this.sceneLifecycle.timeout(() => {
             if (this.currentSceneData !== scene || this._endingReached) return;
             this._advanceScene();
         }, Math.max(0, delay));
@@ -1933,6 +1945,8 @@ class GameEngine {
     // ===== Ending Title =====
 
     _showEndingTitle(title, subtitleKey) {
+        this.sceneLifecycle?.clear?.();
+        this._autoAdvanceTimer = null;
         const overlay = document.createElement('div');
         overlay.className = 'ending-title-overlay';
 
@@ -1970,6 +1984,17 @@ class GameEngine {
 
         // 엔딩 도달 — 대화창 클릭 무효화
         this._endingReached = true;
+    }
+
+    dispose() {
+        this._stopAuto();
+        this._stopSkip();
+        this.audio?.dispose?.();
+        this.glitch?.dispose?.();
+        this.glitchAdvanced?.clearAll?.();
+        this.deviceGimmick?.dispose?.();
+        this.metaHorror?.dispose?.();
+        this.lifecycle?.dispose?.();
     }
 
     // ===== Text =====
@@ -2661,6 +2686,7 @@ class GameEngine {
         } else {
             // load 모드
             if (!info) return; // 빈 슬롯은 무시
+            this._prepareNewRun();
             if (this.save.loadFromSlot(slotIndex)) {
                 this.audio?.playUILoadConfirm();
                 this.state.resumeRun();

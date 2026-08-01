@@ -415,7 +415,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     };
     if (navigator.mediaDevices?.addEventListener) {
-        navigator.mediaDevices.addEventListener('devicechange', syncBinaural);
+        game.lifecycle.listen(navigator.mediaDevices, 'devicechange', syncBinaural);
     }
     // 최초 동기화는 game.init() 이후(아래)에서 수행
 
@@ -427,6 +427,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 전역 노출 — 개발자 도구/테스트 접근용
     window.game = game;
+    game.lifecycle.listen(window, 'pagehide', (event) => {
+        if (!event.persisted) game.dispose();
+    }, { once: true });
 
     // 갤러리 이벤트 바인딩 (init 후 — UI locale이 적용된 후)
     game.gallery.bind();

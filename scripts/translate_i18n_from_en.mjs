@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import deepSeekApi from '../deepseek_api.cjs';
 
-const { callDeepSeek, OPENROUTER_MODEL } = deepSeekApi;
+const { callDeepSeek, DEFAULT_TEXT_MODEL_ROUTES, OPENROUTER_DEEPSEEK_MODEL } = deepSeekApi;
 
 const ROOT = path.resolve(process.cwd(), 'assets/js/i18n');
 const SOURCE_LANG = 'ko';
@@ -64,7 +64,8 @@ function parseArgs() {
     else if (arg === '--files') parsed.files = args[++i].split(',').map((x) => x.trim()).filter(Boolean);
     else if (arg === '--force') parsed.force = true;
     else if (arg === '--retries') parsed.retries = Number(args[++i]);
-    else if (arg === '--model') process.env.DEEPSEEK_MODEL = args[++i];
+    else if (arg === '--model') process.env.TEXT_MODEL_ROUTES = `openrouter:${args[++i]},openrouter:${OPENROUTER_DEEPSEEK_MODEL}`;
+    else if (arg === '--routes') process.env.TEXT_MODEL_ROUTES = args[++i];
     else throw new Error(`Unknown argument: ${arg}`);
   }
 
@@ -218,7 +219,7 @@ async function main() {
   if (args.langs.includes(SOURCE_LANG)) throw new Error(`Target languages must not include source language: ${SOURCE_LANG}`);
 
   const files = await listSourceFiles(args.files);
-  console.log(`route=openrouter/deepinfra model=${process.env.OPENROUTER_MODEL || OPENROUTER_MODEL} fallback=official/${process.env.DEEPSEEK_MODEL || 'deepseek-v4-flash'}`);
+  console.log(`textModelRoutes=${process.env.TEXT_MODEL_ROUTES || DEFAULT_TEXT_MODEL_ROUTES}`);
   console.log(`source=${SOURCE_LANG} langs=${args.langs.join(',')} files=${files.length}`);
 
   for (const lang of args.langs) {

@@ -3,8 +3,8 @@ require('dotenv').config({ path: '../.env.txt' });
 const { callDeepSeek, readOptionalApiKey } = require('./deepseek_api.cjs');
 
 const hasOpenRouterKey = Boolean(readOptionalApiKey('OPENROUTER_API_KEY'));
-const hasOfficialKey = Boolean(readOptionalApiKey('DEEPSEEK_API_KEY'));
-if (!hasOpenRouterKey && !hasOfficialKey) {
+const hasOfficialDeepSeekKey = Boolean(readOptionalApiKey('DEEPSEEK_API_KEY'));
+if (!hasOpenRouterKey && !hasOfficialDeepSeekKey) {
   console.error('.env 파일에 OPENROUTER_API_KEY 또는 DEEPSEEK_API_KEY를 입력하세요.');
   process.exit(1);
 }
@@ -53,7 +53,7 @@ ${scenario}
 ${crossover}
 `;
 
-console.log('OpenRouter DeepInfra 우선 경로로 DeepSeek V4 Flash에 전송 중... (파일 크기: ' + Math.round(scenario.length / 1024) + 'KB)');
+console.log('OpenRouter 무료 Nemotron 3 Ultra → DeepSeek V4 0731 폴백 체인에 전송 중... (파일 크기: ' + Math.round(scenario.length / 1024) + 'KB)');
 console.log('예상 소요시간: 30초~2분\n');
 
 callDeepSeek(prompt, {
@@ -67,7 +67,7 @@ callDeepSeek(prompt, {
   const text = data.choices?.[0]?.message?.content;
   if (text) {
     console.log('='.repeat(60));
-    console.log('  DeepSeek 평가 결과');
+    console.log('  Nemotron 평가 결과');
     console.log('='.repeat(60));
     console.log(text);
     fs.writeFileSync('./GEMINI_REVIEW.md', text, 'utf-8');

@@ -2,13 +2,16 @@
 
 const fs = require('fs');
 const path = require('path');
+const {
+  JSON_TOOL_NAME,
+  OPENROUTER_DEEPSEEK_MODEL,
+  OPENROUTER_MODEL,
+  resolveTextModelAdapter,
+} = require('./model_adapters/index.cjs');
 
 const OPENROUTER_ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
 const OFFICIAL_DEEPSEEK_ENDPOINT = 'https://api.deepseek.com/chat/completions';
-const OPENROUTER_MODEL = 'nvidia/nemotron-3-ultra-550b-a55b:free';
-const OPENROUTER_DEEPSEEK_MODEL = 'deepseek/deepseek-v4-flash-0731';
 const DEFAULT_TEXT_MODEL_ROUTES = `openrouter:${OPENROUTER_MODEL},openrouter:${OPENROUTER_DEEPSEEK_MODEL}`;
-const JSON_TOOL_NAME = 'submit_json';
 const ENV_FILES = [
   path.join(__dirname, '.env'),
   path.join(__dirname, '..', '.env.txt'),
@@ -64,56 +67,17 @@ function resolveTextModelRoutes(options = {}) {
   })).filter(route => route.apiKey);
 }
 
-function buildJsonTool() {
-  return {
-    type: 'function',
-    function: {
-      name: JSON_TOOL_NAME,
-      description: 'Return the complete requested JSON value encoded as a JSON string.',
-      strict: true,
-      parameters: {
-        type: 'object',
-        properties: {
-          json: {
-            type: 'string',
-            description: 'The complete requested JSON value, serialized as valid JSON.',
-          },
-        },
-        required: ['json'],
-        additionalProperties: false,
-      },
-    },
-  };
-}
-
 async function requestRoute(route, prompt, options) {
   const wantsJson = options.json === true;
-  const isNemotron = route.provider === 'openrouter' && route.model === OPENROUTER_MODEL;
-  const isOpenRouterDeepSeek = route.provider === 'openrouter' && route.model === OPENROUTER_DEEPSEEK_MODEL;
-  const useStrictJsonTool = wantsJson && isNemotron;
+  const adapter = resolveTextModelAdapter(route);
   const payload = {
     model: route.model,
     messages: [{ role: 'user', content: prompt }],
     temperature: Number.isFinite(options.temperature) ? options.temperature : 0.25,
     top_p: Number.isFinite(options.topP) ? options.topP : 0.9,
     max_tokens: Number.isFinite(options.maxTokens) ? options.maxTokens : 32768,
-    ...(isNemotron ? {
-      reasoning: { effort: 'none', exclude: true },
-      include_reasoning: false,
-    } : { thinking: { type: 'disabled' } }),
-    ...(route.provider === 'openrouter' ? {
-      provider: isOpenRouterDeepSeek ? {
-        order: ['deepinfra'],
-        only: ['deepinfra'],
-        allow_fallbacks: false,
-      } : { allow_fallbacks: true },
-    } : {}),
-    ...(wantsJson && !useStrictJsonTool ? { response_format: { type: 'json_object' } } : {}),
-    ...(useStrictJsonTool ? {
-      tools: [buildJsonTool()],
-      tool_choice: { type: 'function', function: { name: JSON_TOOL_NAME } },
-    } : {}),
   };
+  adapter.applyPayload(payload, { wantsJson });
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), options.timeoutMs || 180000);
@@ -148,22 +112,7 @@ async function requestRoute(route, prompt, options) {
     throw new Error(`${route.provider} API error (${response.status}): ${detail}`);
   }
   const message = data?.choices?.[0]?.message || {};
-  if (useStrictJsonTool) {
-    const toolCall = Array.isArray(message.tool_calls)
-      ? message.tool_calls.find(call => call?.function?.name === JSON_TOOL_NAME)
-      : null;
-    if (toolCall) {
-      try {
-        const args = typeof toolCall.function.arguments === 'string'
-          ? JSON.parse(toolCall.function.arguments)
-          : toolCall.function.arguments;
-        if (typeof args?.json === 'string' && args.json.trim()) return args.json;
-      } catch (_) {
-        // Fall through to content so callers can apply their existing JSON repair path.
-      }
-    }
-  }
-  const text = message.content || '';
+  const text = adapter.extractText(message, { wantsJson });
   if (!text.trim()) throw new Error(`${route.provider} returned an empty response`);
   return text;
 }

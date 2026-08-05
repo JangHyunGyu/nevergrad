@@ -2,8 +2,8 @@
 
 const OPENROUTER_QWEN_MODEL = 'qwen/qwen3.7-flash';
 const OPENROUTER_NEMOTRON_MODEL = 'nvidia/nemotron-3-ultra-550b-a55b:free';
-const OPENROUTER_MODEL = OPENROUTER_QWEN_MODEL;
 const OPENROUTER_DEEPSEEK_MODEL = 'deepseek/deepseek-v4-flash-0731';
+const OPENROUTER_MODEL = OPENROUTER_DEEPSEEK_MODEL;
 const JSON_TOOL_NAME = 'submit_json';
 
 function buildJsonTool() {

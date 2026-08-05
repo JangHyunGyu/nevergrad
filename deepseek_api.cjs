@@ -13,7 +13,7 @@ const {
 
 const OPENROUTER_ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
 const OFFICIAL_DEEPSEEK_ENDPOINT = 'https://api.deepseek.com/chat/completions';
-const DEFAULT_TEXT_MODEL_ROUTES = `openrouter:${OPENROUTER_MODEL},openrouter:${OPENROUTER_DEEPSEEK_MODEL}`;
+const DEFAULT_TEXT_MODEL_ROUTES = `openrouter:${OPENROUTER_MODEL},openrouter:${OPENROUTER_QWEN_MODEL}`;
 const ENV_FILES = [
   path.join(__dirname, '.env'),
   path.join(__dirname, '..', '.env.txt'),

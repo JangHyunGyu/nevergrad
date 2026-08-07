@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import deepSeekApi from '../deepseek_api.cjs';
 
-const { callDeepSeek, DEFAULT_TEXT_MODEL_ROUTES, OPENROUTER_DEEPSEEK_MODEL } = deepSeekApi;
+const { callDeepSeek, DEFAULT_TEXT_MODEL_ROUTES } = deepSeekApi;
 
 const ROOT = path.resolve(process.cwd(), 'assets/js/i18n');
 const SOURCE_LANG = 'ko';
@@ -64,7 +64,7 @@ function parseArgs() {
     else if (arg === '--files') parsed.files = args[++i].split(',').map((x) => x.trim()).filter(Boolean);
     else if (arg === '--force') parsed.force = true;
     else if (arg === '--retries') parsed.retries = Number(args[++i]);
-    else if (arg === '--model') process.env.TEXT_MODEL_ROUTES = `openrouter:${args[++i]},openrouter:${OPENROUTER_DEEPSEEK_MODEL}`;
+    else if (arg === '--model') process.env.TEXT_MODEL_ROUTES = `openrouter:${args[++i]}`;
     else if (arg === '--routes') process.env.TEXT_MODEL_ROUTES = args[++i];
     else throw new Error(`Unknown argument: ${arg}`);
   }

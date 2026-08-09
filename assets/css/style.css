@@ -1970,6 +1970,7 @@ body {
         position: absolute;
         left: 50%;
         bottom: 0.7rem;
+        width: min(536px, calc(100vw - 24px));
         transform: translateX(-50%);
         flex-direction: row;
         margin-top: 0;
@@ -1982,6 +1983,9 @@ body {
         padding: 0.52rem 1.25rem;
         font-size: 0.8rem;
         min-width: clamp(108px, 27vw, 160px);
+    }
+    .title-footer {
+        display: none;
     }
     .archerlab-link {
         top: 10px;

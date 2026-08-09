@@ -42,6 +42,12 @@ class ChoiceSystemAdvanced {
 
         /** @type {boolean} 선택 완료 여부 */
         this._selected = false;
+
+        /** @type {Set<number>} 현재 선택 연출이 소유한 timeout */
+        this._timeouts = new Set();
+
+        /** @type {Set<number>} 현재 선택 연출이 소유한 interval */
+        this._intervals = new Set();
     }
 
     // =========================================================================
@@ -127,9 +133,9 @@ class ChoiceSystemAdvanced {
             const startTime = Date.now();
             const barFill = this.timerBar.querySelector('.timer-bar-fill');
 
-            this._timerInterval = setInterval(() => {
+            this._timerInterval = this._setInterval(() => {
                 if (this._selected) {
-                    clearInterval(this._timerInterval);
+                    this._clearInterval(this._timerInterval);
                     this._timerInterval = null;
                     return;
                 }
@@ -157,7 +163,7 @@ class ChoiceSystemAdvanced {
 
                 // 타임아웃
                 if (remaining <= 0) {
-                    clearInterval(this._timerInterval);
+                    this._clearInterval(this._timerInterval);
                     this._timerInterval = null;
 
                     if (!this._selected) {
@@ -202,7 +208,7 @@ class ChoiceSystemAdvanced {
             });
 
             // 1.5초 후부터 나머지 선택지를 forcedText로 변형 시작
-            setTimeout(() => {
+            this._setTimeout(() => {
                 this._morphChoices(buttons, forcedText, 0);
             }, 1500);
         });
@@ -235,9 +241,9 @@ class ChoiceSystemAdvanced {
 
         // 단계 1: 텍스트 깨짐 (300ms × 3회)
         let glitchStep = 0;
-        const glitchInterval = setInterval(() => {
+        const glitchInterval = this._setInterval(() => {
             if (this._selected) {
-                clearInterval(glitchInterval);
+                this._clearInterval(glitchInterval);
                 return;
             }
 
@@ -255,17 +261,17 @@ class ChoiceSystemAdvanced {
             glitchStep++;
 
             if (glitchStep >= 3) {
-                clearInterval(glitchInterval);
+                this._clearInterval(glitchInterval);
 
                 // 단계 2: forcedText로 변환
-                setTimeout(() => {
+                this._setTimeout(() => {
                     if (this._selected) return;
                     btn.textContent = forcedText;
                     btn.classList.remove('glitch-text');
                     btn.classList.add('forced-choice');
 
                     // 다음 버튼 변형 시작
-                    setTimeout(() => {
+                    this._setTimeout(() => {
                         this._morphChoices(buttons, forcedText, currentIndex + 1);
                     }, 500);
                 }, 200);
@@ -365,14 +371,14 @@ class ChoiceSystemAdvanced {
             // 1.5초 후 깜빡임 발동
             const targetBtn = buttons[flickerIndex];
             if (targetBtn) {
-                setTimeout(() => {
+                this._setTimeout(() => {
                     if (this._selected) return;
 
                     const original = targetBtn.textContent;
                     targetBtn.textContent = flickerText;
                     targetBtn.classList.add('glitch-text');
 
-                    setTimeout(() => {
+                    this._setTimeout(() => {
                         if (this._selected) return;
                         targetBtn.textContent = original;
                         targetBtn.classList.remove('glitch-text');
@@ -446,7 +452,7 @@ class ChoiceSystemAdvanced {
 
         if (hasDanger40 && choiceEls.length >= 2) {
             // 2초 후 랜덤 선택지 텍스트를 다른 선택지 텍스트로 순간 교체
-            setTimeout(() => {
+            this._setTimeout(() => {
                 if (this._selected) return;
 
                 const targetIdx = Math.floor(Math.random() * choiceEls.length);
@@ -457,7 +463,7 @@ class ChoiceSystemAdvanced {
                 choiceEls[targetIdx].classList.add('choice-disguise');
 
                 // 1초 후 원래 텍스트로 복구
-                setTimeout(() => {
+                this._setTimeout(() => {
                     if (this._selected) return;
                     choiceEls[targetIdx].textContent = original;
                     choiceEls[targetIdx].classList.remove('choice-disguise');
@@ -490,7 +496,7 @@ class ChoiceSystemAdvanced {
         btn.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
 
         // 지연 등장 — 등장과 동시에 pointer-events 활성화 (choice-ready 누락 시 클릭 불가 버그 방지)
-        setTimeout(() => {
+        this._setTimeout(() => {
             btn.style.opacity = '1';
             btn.style.transform = 'translateY(0)';
             btn.classList.add('choice-ready');
@@ -505,7 +511,7 @@ class ChoiceSystemAdvanced {
             btn.style.opacity = '0.7';
 
             // 약간의 딜레이 후 resolve
-            setTimeout(() => {
+            this._setTimeout(() => {
                 const resolvedIndex = parseInt(btn.dataset.index, 10);
                 this._cleanup();
                 if (this.currentResolve) {
@@ -543,15 +549,41 @@ class ChoiceSystemAdvanced {
     // 정리
     // =========================================================================
 
+    _setTimeout(callback, delay) {
+        const id = setTimeout(() => {
+            this._timeouts.delete(id);
+            callback();
+        }, delay);
+        this._timeouts.add(id);
+        return id;
+    }
+
+    _setInterval(callback, delay) {
+        const id = setInterval(callback, delay);
+        this._intervals.add(id);
+        return id;
+    }
+
+    _clearInterval(id) {
+        if (id === null || id === undefined) return;
+        clearInterval(id);
+        this._intervals.delete(id);
+    }
+
+    _clearAsyncWork() {
+        for (const id of this._timeouts) clearTimeout(id);
+        for (const id of this._intervals) clearInterval(id);
+        this._timeouts.clear();
+        this._intervals.clear();
+    }
+
     /**
      * 선택지 UI 정리 — 컨테이너 비우기, 타이머 정지
      * @private
      */
     _cleanup() {
-        if (this._timerInterval) {
-            clearInterval(this._timerInterval);
-            this._timerInterval = null;
-        }
+        this._clearAsyncWork();
+        this._timerInterval = null;
 
         if (this.choiceContainer) {
             this.choiceContainer.innerHTML = '';

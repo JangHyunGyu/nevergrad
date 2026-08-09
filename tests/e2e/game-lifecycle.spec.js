@@ -74,6 +74,9 @@ test('long play scope churn and device listeners leave no pending run work', asy
             scope.listen(window, 'nevergrad-stress', () => {});
             scope.dispose();
         }
+        game.choiceAdvanced.showFlickerChoice(['Stay', 'Leave'], 1, 'RUN', 100);
+        const choiceTimersBeforeReset = game.choiceAdvanced._timeouts.size;
+        game.choiceAdvanced.reset();
         game._prepareNewRun();
         return {
             initialRoot,
@@ -82,6 +85,9 @@ test('long play scope churn and device listeners leave no pending run work', asy
             scene: game.sceneLifecycle.snapshot(),
             audio: game.audio.effectLifecycle.snapshot(),
             glitch: game.glitch.effectLifecycle.snapshot(),
+            choiceTimersBeforeReset,
+            choiceTimersAfterReset: game.choiceAdvanced._timeouts.size,
+            choiceIntervalsAfterReset: game.choiceAdvanced._intervals.size,
             deviceReady: !!game.deviceGimmick,
             mediaDeviceTracked: !!navigator.mediaDevices?.addEventListener
         };
@@ -93,4 +99,7 @@ test('long play scope churn and device listeners leave no pending run work', asy
     expect(result.scene.timeouts).toBe(0);
     expect(result.audio.timeouts).toBe(0);
     expect(result.glitch.timeouts).toBe(0);
+    expect(result.choiceTimersBeforeReset).toBeGreaterThan(0);
+    expect(result.choiceTimersAfterReset).toBe(0);
+    expect(result.choiceIntervalsAfterReset).toBe(0);
 });

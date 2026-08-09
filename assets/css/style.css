@@ -34,6 +34,13 @@ body {
     -webkit-user-select: none;
 }
 
+/* Screenshot URLs are already exposed through the page metadata. Keeping the
+   duplicate SEO gallery in layout made its 1280px source images widen mobile
+   documents and exposed non-interactive content to assistive technology. */
+.seo-screenshots {
+    display: none;
+}
+
 /* ===== Screen System ===== */
 .screen {
     position: fixed;
@@ -200,6 +207,15 @@ body {
 #title-screen.title-intro-complete .title-menu {
     opacity: 1;
     pointer-events: auto;
+}
+
+/* GSAP uses inline autoAlpha styles. If animation frames are suspended while
+   the tab is backgrounded, the completion timer must still leave navigation
+   usable instead of preserving visibility:hidden on the buttons. */
+#title-screen.title-intro-complete .title-menu .menu-btn {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
 }
 
 .menu-btn {
@@ -1406,6 +1422,15 @@ body {
     90% { transform: translateY(-1px); }
 }
 
+.ng-gsap-bg-fade {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-size: cover;
+    background-position: center;
+    will-change: opacity, transform;
+}
+
 /* ===== Quick Menu ===== */
 .quick-menu {
     position: absolute;
@@ -1451,6 +1476,35 @@ body {
     background: rgba(255, 105, 180, 0.3);
     color: #fff;
     border-color: rgba(255, 105, 180, 0.5);
+}
+
+@media (any-pointer: coarse) {
+    .title-menu .menu-btn,
+    .name-input-container .menu-btn,
+    .choice-btn,
+    .qm-btn,
+    .pause-container .menu-btn,
+    .gallery-footer .menu-btn,
+    .gallery-tab,
+    .gallery-modal-close,
+    .ending-return-btn,
+    .settings-close-btn,
+    .settings-toggle,
+    .backlog-close-btn,
+    .sl-close-btn,
+    .sl-delete,
+    .sl-confirm-btn {
+        min-height: 44px;
+    }
+
+    .qm-btn,
+    .settings-close-btn,
+    .backlog-close-btn,
+    .sl-close-btn,
+    .sl-delete,
+    .gallery-modal-close {
+        min-width: 44px;
+    }
 }
 
 /* ===== Pause Menu ===== */

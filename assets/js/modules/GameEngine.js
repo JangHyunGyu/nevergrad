@@ -2647,6 +2647,12 @@ class GameEngine {
             el.appendChild(numEl);
             el.appendChild(infoEl);
 
+            // Slots are custom cards rather than native buttons because saved
+            // entries can also contain a delete button. Expose equivalent
+            // keyboard semantics so save/load is not pointer-only.
+            el.setAttribute('role', 'button');
+            el.tabIndex = 0;
+
             // 삭제 버튼 (수동 슬롯 + 데이터 있을 때 + save 모드)
             if (i > 0 && info && mode === 'save') {
                 const delBtn = document.createElement('button');
@@ -2662,7 +2668,14 @@ class GameEngine {
             }
 
             // 클릭 핸들러
-            el.addEventListener('click', () => this._onSlotClick(i, info, mode, container));
+            const selectSlot = () => this._onSlotClick(i, info, mode, container);
+            el.addEventListener('click', selectSlot);
+            el.addEventListener('keydown', (event) => {
+                if (event.target !== el) return;
+                if (event.key !== 'Enter' && event.key !== ' ') return;
+                event.preventDefault();
+                selectSlot();
+            });
 
             container.appendChild(el);
         }

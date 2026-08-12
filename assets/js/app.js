@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 타이틀 배경 이미지 로드 체크 — 이미지 없으면 CSS 그라디언트 폴백
     const titleBgLayer = document.querySelector('.title-bg-layer');
     if (titleBgLayer) {
-        loadNevergradImage('assets/images/background/title_bg.png')
+        loadNevergradImage('assets/images/background/title_bg.webp')
             .then((src) => {
                 titleBgLayer.style.backgroundImage = `url('${resolveNevergradAssetUrl(src)}')`;
                 titleBgLayer.classList.remove('no-image');

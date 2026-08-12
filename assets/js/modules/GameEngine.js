@@ -100,9 +100,14 @@ class GameEngine {
         this.settings = new SettingsManager(this.audio);
         this.settings.apply();
 
-        // 언어 감지 (URL 파라미터 또는 브라우저 언어)
+        // 언어 감지: 명시적 쿼리 → 언어별 셸 → 문서 언어 → 브라우저 언어.
+        // 루트 문서는 한국어 셸이므로 브라우저 locale이 UI를 임의로 바꾸면 안 된다.
         const urlLang = new URLSearchParams(location.search).get('lang');
-        const requestedLang = window.__NEVERGRAD_LANG__ || urlLang || navigator.language || 'ko';
+        const requestedLang = urlLang
+            || window.__NEVERGRAD_LANG__
+            || document.documentElement.lang
+            || navigator.language
+            || 'ko';
         const lang = String(requestedLang).toLowerCase().startsWith('pt')
             ? 'pt' : String(requestedLang).slice(0, 2);
         const supported = Object.keys(I18nManager.LANGUAGES);

@@ -42,14 +42,44 @@ async function expectInsideViewportWidth(locator, page) {
     expect(box.x + box.width).toBeLessThanOrEqual(viewport.width + 1);
 }
 
-for (const path of ['/', '/en/', '/ja/', '/es/', '/fr/', '/de/', '/pt/']) {
+const localizedShells = [
+    { path: '/', galleryTitle: '갤러리', endingTab: '엔딩' },
+    { path: '/en/', galleryTitle: 'Gallery', endingTab: 'Endings' },
+    { path: '/ja/', galleryTitle: 'ギャラリー', endingTab: 'エンディング' },
+    { path: '/es/', galleryTitle: 'Galería', endingTab: 'Finales' },
+    { path: '/fr/', galleryTitle: 'Galerie', endingTab: 'Fins' },
+    { path: '/de/', galleryTitle: 'Galerie', endingTab: 'Enden' },
+    { path: '/pt/', galleryTitle: 'Galeria', endingTab: 'Finais' }
+];
+
+for (const { path, galleryTitle, endingTab } of localizedShells) {
     test(`${path} localized shell boots without overflow`, async ({ page }) => {
         await loadGameShell(page, path);
         await expect(page.locator('#btn-new-game')).toBeVisible();
         await expect(page.locator('#btn-gallery')).toBeVisible();
         await expectNoDocumentOverflow(page);
+
+        await page.locator('#btn-gallery').click();
+        await expect(page.locator('.gallery-title')).toHaveText(galleryTitle);
+        await expect(page.locator('.gallery-tab').first()).toHaveText(endingTab);
     });
 }
+
+test('runtime backgrounds prefer compressed WebP assets', async ({ page }) => {
+    await loadGameShell(page);
+    const uncompressedBackgrounds = await page.evaluate(() => (
+        Object.entries(CONFIG.BACKGROUNDS)
+            .filter(([, src]) => src.includes('/background/') && !src.endsWith('.webp'))
+    ));
+    expect(uncompressedBackgrounds).toEqual([]);
+    await expect(page.locator('.title-bg-layer')).toHaveCSS('background-image', /title_bg\.webp/);
+
+    await page.locator('#btn-new-game').click();
+    await page.locator('#player-name-input').fill('Asset Audit');
+    await page.locator('#btn-start').click();
+    await expect(page.locator('#game-screen')).toHaveClass(/active/, { timeout: 30000 });
+    await expect(page.locator('#bg-layer')).toHaveCSS('background-image', /\.webp/);
+});
 
 test('title navigation survives an interrupted motion sequence', async ({ page }) => {
     await loadGameShell(page);

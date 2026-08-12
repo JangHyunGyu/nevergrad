@@ -121,6 +121,23 @@ class GallerySystem {
             expressions: 'Expressions',
             close: 'Close'
         },
+        ja: {
+            title: 'ギャラリー',
+            progress: '解放率',
+            back: '戻る',
+            tabs: { endings: 'エンディング', cg: 'イベントCG', music: '音楽', characters: '表情' },
+            locked: '未解放',
+            lockedEnding: 'まだ到達していないエンディング',
+            lockedCg: 'ゲーム内でこのイベントCGを見ると解放されます。',
+            lockedMusic: 'ゲーム内でこのBGMが再生されると解放されます。',
+            lockedCharacter: 'ゲーム内でこのキャラクターに出会うと解放されます。',
+            lockedExpression: 'ゲーム内でこの表情を見ると解放されます。',
+            play: '再生',
+            stop: '停止',
+            artist: 'Nevergrad OST',
+            expressions: '表情',
+            close: '閉じる'
+        },
         es: {
             title: 'Galería',
             progress: 'Progreso',
@@ -137,6 +154,57 @@ class GallerySystem {
             artist: 'Nevergrad OST',
             expressions: 'Expresiones',
             close: 'Cerrar'
+        },
+        fr: {
+            title: 'Galerie',
+            progress: 'Progression',
+            back: 'Retour',
+            tabs: { endings: 'Fins', cg: "CG d’événement", music: 'Musique', characters: 'Expressions' },
+            locked: 'Verrouillé',
+            lockedEnding: 'Une fin qui reste à atteindre',
+            lockedCg: "Se déverrouille après avoir vu ce CG d’événement dans le jeu.",
+            lockedMusic: 'Se déverrouille lorsque cette musique est jouée dans le jeu.',
+            lockedCharacter: 'Se déverrouille après avoir rencontré ce personnage dans le jeu.',
+            lockedExpression: 'Se déverrouille après avoir vu cette expression dans le jeu.',
+            play: 'Lire',
+            stop: 'Arrêter',
+            artist: 'Nevergrad OST',
+            expressions: 'Expressions',
+            close: 'Fermer'
+        },
+        de: {
+            title: 'Galerie',
+            progress: 'Fortschritt',
+            back: 'Zurück',
+            tabs: { endings: 'Enden', cg: 'Event-CG', music: 'Musik', characters: 'Ausdrücke' },
+            locked: 'Gesperrt',
+            lockedEnding: 'Ein noch nicht erreichtes Ende',
+            lockedCg: 'Wird freigeschaltet, sobald dieses Event-CG im Spiel erscheint.',
+            lockedMusic: 'Wird freigeschaltet, sobald diese Musik im Spiel abgespielt wird.',
+            lockedCharacter: 'Wird freigeschaltet, nachdem du dieser Figur im Spiel begegnet bist.',
+            lockedExpression: 'Wird freigeschaltet, nachdem du diesen Ausdruck im Spiel gesehen hast.',
+            play: 'Abspielen',
+            stop: 'Stoppen',
+            artist: 'Nevergrad OST',
+            expressions: 'Ausdrücke',
+            close: 'Schließen'
+        },
+        pt: {
+            title: 'Galeria',
+            progress: 'Progresso',
+            back: 'Voltar',
+            tabs: { endings: 'Finais', cg: 'CG de eventos', music: 'Música', characters: 'Expressões' },
+            locked: 'Bloqueado',
+            lockedEnding: 'Um final ainda não alcançado',
+            lockedCg: 'Desbloqueia após este CG de evento aparecer no jogo.',
+            lockedMusic: 'Desbloqueia quando esta música tocar no jogo.',
+            lockedCharacter: 'Desbloqueia após encontrar este personagem no jogo.',
+            lockedExpression: 'Desbloqueia após ver esta expressão no jogo.',
+            play: 'Reproduzir',
+            stop: 'Parar',
+            artist: 'Nevergrad OST',
+            expressions: 'Expressões',
+            close: 'Fechar'
         }
     };
 

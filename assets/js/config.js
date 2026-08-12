@@ -176,93 +176,93 @@ const CONFIG = {
     // 구도/장소 자체가 다른 것만 별도 이미지
     BACKGROUNDS: {
         // 학교 내부
-        classroom: "assets/images/background/classroom.png",
-        classroom_empty: "assets/images/background/classroom_empty.png",  // 구조 다름
-        hallway: "assets/images/background/hallway.png",
-        corridor: "assets/images/background/corridor.png",
-        stairway: "assets/images/background/stairway.png",
-        rooftop: "assets/images/background/rooftop.png",
-        nurse_office: "assets/images/background/nurse_office.png",
-        teacher_office: "assets/images/background/teacher_office.png",
-        faculty_office: "assets/images/background/faculty_office.png",
-        gym: "assets/images/background/gym.png",
-        library: "assets/images/background/library.png",
-        old_building: "assets/images/background/old_building.png",
-        basement: "assets/images/background/basement.png",
+        classroom: "assets/images/background/classroom.webp",
+        classroom_empty: "assets/images/background/classroom_empty.webp",  // 구조 다름
+        hallway: "assets/images/background/hallway.webp",
+        corridor: "assets/images/background/corridor.webp",
+        stairway: "assets/images/background/stairway.webp",
+        rooftop: "assets/images/background/rooftop.webp",
+        nurse_office: "assets/images/background/nurse_office.webp",
+        teacher_office: "assets/images/background/teacher_office.webp",
+        faculty_office: "assets/images/background/faculty_office.webp",
+        gym: "assets/images/background/gym.webp",
+        library: "assets/images/background/library.webp",
+        old_building: "assets/images/background/old_building.webp",
+        basement: "assets/images/background/basement.webp",
         // CSS 시간대 변형 (기본 이미지 재사용 + setTimeOfDay 호출)
-        corridor_dark: "assets/images/background/corridor_dark.png",     // 어두운 복도 (고유)
-        room_morning: "assets/images/background/room_morning.png",
-        school_gate_evening: "assets/images/background/school_gate.png", // school_gate + sunset
+        corridor_dark: "assets/images/background/corridor_dark.webp",     // 어두운 복도 (고유)
+        room_morning: "assets/images/background/room_morning.webp",
+        school_gate_evening: "assets/images/background/school_gate.webp", // school_gate + sunset
         // 학교 외부 (구도가 고유한 것)
-        garden: "assets/images/background/garden.png",
-        school_gate: "assets/images/background/school_gate.png",
-        school_night: "assets/images/background/school_night.png",      // 외부에서 본 밤 학교 (고유)
-        school_dark: "assets/images/background/school_dark.png",        // 내부 칠흑 복도 (고유)
-        school_dawn: "assets/images/background/school_dawn.png",        // 새벽 안개 속 학교 (고유)
-        sunset_outside: "assets/images/background/sunset_outside.png",  // 언덕 파노라마 (고유)
-        street: "assets/images/background/street.png",
-        outside_school: "assets/images/background/outside_school.png",
-        exit_door: "assets/images/background/exit_door.png",
-        cherry_blossom: "assets/images/background/cherry_blossom.png",
-        night_rain: "assets/images/background/night_rain.png",          // 도시 거리 비 (고유)
+        garden: "assets/images/background/garden.webp",
+        school_gate: "assets/images/background/school_gate.webp",
+        school_night: "assets/images/background/school_night.webp",      // 외부에서 본 밤 학교 (고유)
+        school_dark: "assets/images/background/school_dark.webp",        // 내부 칠흑 복도 (고유)
+        school_dawn: "assets/images/background/school_dawn.webp",        // 새벽 안개 속 학교 (고유)
+        sunset_outside: "assets/images/background/sunset_outside.webp",  // 언덕 파노라마 (고유)
+        street: "assets/images/background/street.webp",
+        outside_school: "assets/images/background/outside_school.webp",
+        exit_door: "assets/images/background/exit_door.webp",
+        cherry_blossom: "assets/images/background/cherry_blossom.webp",
+        night_rain: "assets/images/background/night_rain.webp",          // 도시 거리 비 (고유)
         // 자취방
-        home: "assets/images/background/home.png",
-        room_night: "assets/images/background/room_night.png",        // 스탠드+폰빛 고유 구도
-        bathroom: "assets/images/background/bathroom_night.png",
-        bathroom_night: "assets/images/background/bathroom_night.png",
+        home: "assets/images/background/home.webp",
+        room_night: "assets/images/background/room_night.webp",        // 스탠드+폰빛 고유 구도
+        bathroom: "assets/images/background/bathroom_night.webp",
+        bathroom_night: "assets/images/background/bathroom_night.webp",
         // 특수
-        black: "assets/images/background/black.png",
-        white: "assets/images/background/white.png",
+        black: "assets/images/background/black.webp",
+        white: "assets/images/background/white.webp",
         // 물증 클로즈업
-        closeup_safety_app: "assets/images/background/closeup_safety_app.png",
-        closeup_white_envelope: "assets/images/background/closeup_white_envelope.png",
-        closeup_fingernails: "assets/images/background/closeup_fingernails.png",
-        closeup_sd_card: "assets/images/background/closeup_sd_card.png",
-        closeup_attendance_book: "assets/images/background/closeup_attendance_book.png",
-        closeup_subject_ledger: "assets/images/background/closeup_subject_ledger.png",
-        closeup_fogged_mirror: "assets/images/background/closeup_fogged_mirror.png",
-        closeup_cctv_led: "assets/images/background/closeup_cctv_led.png",
-        closeup_wall_scratches: "assets/images/background/closeup_wall_scratches.png",
-        closeup_desk_underside_scratches: "assets/images/background/closeup_desk_underside_scratches.png",
+        closeup_safety_app: "assets/images/background/closeup_safety_app.webp",
+        closeup_white_envelope: "assets/images/background/closeup_white_envelope.webp",
+        closeup_fingernails: "assets/images/background/closeup_fingernails.webp",
+        closeup_sd_card: "assets/images/background/closeup_sd_card.webp",
+        closeup_attendance_book: "assets/images/background/closeup_attendance_book.webp",
+        closeup_subject_ledger: "assets/images/background/closeup_subject_ledger.webp",
+        closeup_fogged_mirror: "assets/images/background/closeup_fogged_mirror.webp",
+        closeup_cctv_led: "assets/images/background/closeup_cctv_led.webp",
+        closeup_wall_scratches: "assets/images/background/closeup_wall_scratches.webp",
+        closeup_desk_underside_scratches: "assets/images/background/closeup_desk_underside_scratches.webp",
         // 학교 내부 (추가)
-        playground: "assets/images/background/playground.png",
-        student_council: "assets/images/background/student_council.png",
-        cafeteria: "assets/images/background/cafeteria.png",
-        old_building_corridor: "assets/images/background/old_building_corridor.png",
-        corridor_old: "assets/images/background/corridor_old.png",
-        corridor_main: "assets/images/background/corridor.png",            // 본관 복도 (corridor 재사용)
-        corridor_emergency: "assets/images/background/emergency_corridor.png",
+        playground: "assets/images/background/playground.webp",
+        student_council: "assets/images/background/student_council.webp",
+        cafeteria: "assets/images/background/cafeteria.webp",
+        old_building_corridor: "assets/images/background/old_building_corridor.webp",
+        corridor_old: "assets/images/background/corridor_old.webp",
+        corridor_main: "assets/images/background/corridor.webp",            // 본관 복도 (corridor 재사용)
+        corridor_emergency: "assets/images/background/emergency_corridor.webp",
         locked_corridor_junction: "assets/images/background/locked_corridor_junction.webp",
-        old_infirmary: "assets/images/background/old_infirmary.png",
-        old_stairway: "assets/images/background/old_stairway.png",
-        old_corridor_dark: "assets/images/background/old_corridor_dark.png",
+        old_infirmary: "assets/images/background/old_infirmary.webp",
+        old_stairway: "assets/images/background/old_stairway.webp",
+        old_corridor_dark: "assets/images/background/old_corridor_dark.webp",
         hidden_service_passage: "assets/images/background/hidden_service_passage.webp",
-        underground_lab: "assets/images/background/underground_lab.png",
+        underground_lab: "assets/images/background/underground_lab.webp",
         basement_records_room: "assets/images/background/basement_records_room.webp",
         // 학교 외부 (추가)
-        school_back: "assets/images/background/school_back.png",
-        street_morning: "assets/images/background/street_morning.png",
-        school_gate_dark: "assets/images/background/school_gate_dark.png",
-        school_gate_morning: "assets/images/background/school_gate_morning.png",
-        school_fence_dawn: "assets/images/background/school_fence_dawn.png",
+        school_back: "assets/images/background/school_back.webp",
+        street_morning: "assets/images/background/street_morning.webp",
+        school_gate_dark: "assets/images/background/school_gate_dark.webp",
+        school_gate_morning: "assets/images/background/school_gate_morning.webp",
+        school_fence_dawn: "assets/images/background/school_fence_dawn.webp",
         // 자취방 (추가)
-        room_dark: "assets/images/background/room_dark.png",
+        room_dark: "assets/images/background/room_dark.webp",
         apartment_entry_morning: "assets/images/background/apartment_entry_morning.webp",
         // 엔딩 전용
-        emergency_exit: "assets/images/background/emergency_exit.png",
+        emergency_exit: "assets/images/background/emergency_exit.webp",
         emergency_stair_night: "assets/images/background/emergency_stair_night.webp",
-        classroom_afternoon: "assets/images/background/classroom_afternoon.png",
-        new_classroom: "assets/images/background/new_classroom.png",
-        news_article: "assets/images/background/news_article.png",
-        dawn_road: "assets/images/background/dawn_road.png",
-        new_place: "assets/images/background/new_place.png",
+        classroom_afternoon: "assets/images/background/classroom_afternoon.webp",
+        new_classroom: "assets/images/background/new_classroom.webp",
+        news_article: "assets/images/background/news_article.webp",
+        dawn_road: "assets/images/background/dawn_road.webp",
+        new_place: "assets/images/background/new_place.webp",
         lab_documents: "assets/images/evidence/day5_lab_documents.png",
         ending_true: "assets/images/cg/ending_true_dawn_gate.png",
         ending_escape: "assets/images/cg/ending_escape_rain.png",
         ending_cage: "assets/images/cg/ending_cage_classroom.png",
         ending_ghost: "assets/images/cg/ending_ghost_classroom.png",
         ending_forget: "assets/images/cg/ending_forget_empty_seat.png",
-        office: "assets/images/background/teacher_office.png"              // 사무실 (교무실 재사용)
+        office: "assets/images/background/teacher_office.webp"              // 사무실 (교무실 재사용)
     },
 
     EVIDENCE_IMAGES: {

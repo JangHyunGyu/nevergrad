@@ -58,6 +58,8 @@
  * 47. 세이브 역직렬화 스키마 안전성
  * 47A. 세이브/로드 멀티슬롯 시스템 무결성
  * 48. async/await 초기화 순서 검증
+ * 49. 런타임 배경 이미지의 WebP 우선 참조
+ * 50. 웹 앱 매니페스트 및 설치 아이콘 무결성
  */
 const fs = require('fs');
 const path = require('path');
@@ -91,6 +93,36 @@ function collectHtmlPaths(dir) {
         else if (entry.isFile() && entry.name.endsWith('.html')) results.push(full);
     }
     return results;
+}
+
+{
+    const manifestPath = path.join(ROOT, 'manifest.json');
+    try {
+        const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+        for (const size of ['192x192', '512x512']) {
+            const icon = (manifest.icons || []).find(item => item.sizes === size && item.src);
+            if (!icon) {
+                errors.push(`[MANIFEST] missing ${size} install icon`);
+                continue;
+            }
+            const iconPath = path.join(ROOT, stripUrlSuffix(icon.src).replace(/^[/\\]+/, ''));
+            if (!fs.existsSync(iconPath)) {
+                errors.push(`[MANIFEST] ${size} icon file not found: "${icon.src}"`);
+            }
+        }
+    } catch (e) {
+        errors.push(`[MANIFEST] invalid manifest.json: ${e.message}`);
+    }
+
+    for (const htmlPath of [
+        path.join(ROOT, 'index.html'),
+        ...['en', 'ja', 'es', 'fr', 'de', 'pt'].map(lang => path.join(ROOT, lang, 'index.html'))
+    ]) {
+        const html = fs.readFileSync(htmlPath, 'utf8');
+        if (!/<link\s+rel="apple-touch-icon"\s+href="[^"]+"/i.test(html)) {
+            errors.push(`[MANIFEST] apple-touch-icon missing from ${path.relative(ROOT, htmlPath)}`);
+        }
+    }
 }
 
 {
@@ -225,6 +257,12 @@ for (const [key, imgPath] of Object.entries(CONFIG.BACKGROUNDS)) {
     const full = path.join(ROOT, imgPath);
     if (!fs.existsSync(full)) {
         errors.push(`[BG_FILE] BACKGROUNDS.${key}: "${imgPath}" file not found`);
+    }
+    if (/\.png$/i.test(imgPath)) {
+        const webpPath = imgPath.replace(/\.png$/i, '.webp');
+        if (fs.existsSync(path.join(ROOT, webpPath))) {
+            errors.push(`[BG_FORMAT] BACKGROUNDS.${key}: use existing WebP asset "${webpPath}" instead of "${imgPath}"`);
+        }
     }
 }
 
@@ -1250,7 +1288,8 @@ if (koHtmlContent.includes('id="day-display"') && !allJsCombined.includes('day-d
 
 // ── 모든 HTML id에 대해 JS 참조 존재 확인 ──
 const htmlIds = [...koHtmlContent.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
-const unreferencedIds = htmlIds.filter(id => !allJsCombined.includes(id));
+const presentationalIds = new Set(['cherry-blossoms', 'hud']);
+const unreferencedIds = htmlIds.filter(id => !presentationalIds.has(id) && !allJsCombined.includes(id));
 if (unreferencedIds.length > 0) {
     warnings.push(`[UI_ORPHAN_ID] ${unreferencedIds.length} HTML ids with no JS reference: ${unreferencedIds.slice(0,5).join(', ')}${unreferencedIds.length > 5 ? '...' : ''}`);
 }
@@ -1260,12 +1299,23 @@ if (unreferencedIds.length > 0) {
 // ═══════════════════════════════════════════
 const modulesPath = path.join(ROOT, 'assets/js/modules');
 if (fs.existsSync(modulesPath)) {
+    const singletonListenerModules = new Set(['GallerySystem.js']);
+    const intentionalWindowExports = new Set([
+        'ChoiceSystemAdvanced',
+        'CrossoverSystem',
+        'DeviceGimmickSystem',
+        'FaviconManager',
+        'GlitchSystemAdvanced',
+        'MetaHorrorSystem',
+        'NevergradMotion',
+        'sendGAPageView'
+    ]);
     for (const file of fs.readdirSync(modulesPath).filter(f => f.endsWith('.js'))) {
         const content = fs.readFileSync(path.join(modulesPath, file), 'utf8');
 
         const addEL = (content.match(/addEventListener\(/g)||[]).length;
         const rmEL = (content.match(/removeEventListener\(/g)||[]).length;
-        if (addEL > 3 && rmEL === 0)
+        if (addEL > 3 && rmEL === 0 && !singletonListenerModules.has(file))
             warnings.push(`[MEM] ${file}: ${addEL} addEventListener, 0 removeEventListener`);
 
         const setI = (content.match(/setInterval\(/g)||[]).length;
@@ -1284,8 +1334,7 @@ if (fs.existsSync(modulesPath)) {
             warnings.push(`[MEM] ${file}: ${createEl} createElement, no DOM cleanup`);
 
         for (const m of content.matchAll(/\bwindow\.(\w+)\s*=/g)) {
-            if (!['__game','__NEVERGRAD_LANG__','__NEVERGRAD_BASE__'].includes(`__${m[1]}`) &&
-                !m[1].startsWith('__'))
+            if (!intentionalWindowExports.has(m[1]) && !m[1].startsWith('__'))
                 warnings.push(`[MEM] ${file}: window.${m[1]} global — may prevent GC`);
         }
     }

@@ -379,6 +379,12 @@ for (const [sceneId, { scene }] of Object.entries(allScenes)) {
         errors.push(`[AUX_KEY] ${sceneId}: endingSubtitle="${scene.endingSubtitle}" not in ko i18n`);
     }
     if (scene.glitch) {
+        if (scene.glitch.themeShift && typeof scene.glitch.themeShift !== 'string') {
+            errors.push(`[GLITCH] ${sceneId}: themeShift must name a CONFIG.THEMES key`);
+        }
+        if (typeof scene.glitch.themeShift === 'string' && !CONFIG.THEMES[scene.glitch.themeShift]) {
+            errors.push(`[GLITCH] ${sceneId}: unknown themeShift="${scene.glitch.themeShift}"`);
+        }
         if (scene.glitch.flickerText && !koKeys.has(scene.glitch.flickerText)) {
             errors.push(`[AUX_KEY] ${sceneId}: flickerText="${scene.glitch.flickerText}" not in ko i18n`);
         }

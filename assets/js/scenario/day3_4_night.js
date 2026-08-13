@@ -165,7 +165,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_bleed_5": {
         character: null,
-        glitch: { themeShift: true },
+        glitch: { themeShift: "thriller" },
         vibrate: "danger",
         unskippable: true,
         setFlags: ["genre_shift"],

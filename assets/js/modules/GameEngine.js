@@ -248,11 +248,34 @@ class GameEngine {
             this._loadScene(this.state.currentScene);
         });
 
-        document.getElementById('btn-start')?.addEventListener('click', async () => {
+        const nameInput = document.getElementById('player-name-input');
+        const startButton = document.getElementById('btn-start');
+
+        if (nameInput) {
+            nameInput.required = true;
+            nameInput.autocomplete = 'nickname';
+            nameInput.enterKeyHint = 'go';
+            nameInput.setAttribute('aria-required', 'true');
+            nameInput.addEventListener('input', () => {
+                nameInput.removeAttribute('aria-invalid');
+            });
+            nameInput.addEventListener('keydown', event => {
+                if (event.key !== 'Enter' || event.repeat || event.isComposing) return;
+                event.preventDefault();
+                startButton?.click();
+            });
+        }
+
+        startButton?.addEventListener('click', async () => {
             this.audio?.playUIClick();
+            const name = nameInput?.value.trim();
+            if (!name) {
+                nameInput?.setAttribute('aria-invalid', 'true');
+                nameInput?.focus();
+                nameInput?.reportValidity();
+                return;
+            }
             this._detachNameScreenKBAvoidance();
-            const name = document.getElementById('player-name-input')?.value.trim();
-            if (!name) return;
 
             this._prepareNewRun();
             this.state.startNewRun();

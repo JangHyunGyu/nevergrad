@@ -465,7 +465,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         await preloadGameImages((loaded, total) => {
             if (bar) bar.style.width = `${total ? Math.round((loaded / total) * 100) : 100}%`;
-            if (text) text.textContent = `${loaded} / ${total}`;
+            if (text) text.textContent = total ? `${loaded} / ${total}` : '100%';
         }, sceneId, game._preloadedImagePaths);
 
         // 잠시 대기 (100% 표시 유지)

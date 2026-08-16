@@ -116,6 +116,37 @@ test('mobile game entry asks fullscreen to hide browser navigation', async ({ pa
     ]);
 });
 
+test('name entry validates empty submissions and supports the Enter key', async ({ page }) => {
+    await loadGameShell(page);
+    await page.locator('#btn-new-game').click();
+
+    const nameInput = page.locator('#player-name-input');
+    await expect(nameInput).toHaveAttribute('required', '');
+    await expect(nameInput).toHaveAttribute('aria-required', 'true');
+    await expect(nameInput).toHaveAttribute('enterkeyhint', 'go');
+
+    await page.locator('#btn-start').click();
+    await expect(page.locator('#name-screen')).toHaveClass(/active/);
+    await expect(nameInput).toHaveAttribute('aria-invalid', 'true');
+    await expect(nameInput).toBeFocused();
+
+    await nameInput.fill('Keyboard');
+    await expect(nameInput).not.toHaveAttribute('aria-invalid', 'true');
+    await nameInput.press('Enter');
+    await expect(page.locator('#game-screen')).toHaveClass(/active/, { timeout: 30000 });
+});
+
+test('cached scenes show a complete loading state instead of zero of zero', async ({ page }) => {
+    await loadGameShell(page);
+    await page.locator('#btn-new-game').click();
+    await page.locator('#player-name-input').fill('Cache');
+    await page.locator('#btn-start').click();
+    await expect(page.locator('#game-screen')).toHaveClass(/active/, { timeout: 30000 });
+
+    await page.evaluate(() => game._preloadImages('game-screen', 'day1_opening_1'));
+    await expect(page.locator('#loading-text')).toHaveText('100%');
+});
+
 test('dialogue history and keyboard controls remain reachable', async ({ page }) => {
     await loadGameShell(page);
     await page.locator('#btn-new-game').click();

@@ -174,7 +174,7 @@ class I18nManager {
             menu: "메뉴", close: "닫기", advanceDialogue: "대사 진행", backlogTitle: "대사 기록",
             settingsBgm: "BGM 볼륨", settingsSfx: "효과음 볼륨", settingsTextSpeed: "텍스트 속도",
             settingsFullscreen: "전체 화면", settingsReset: "초기화", settingsOn: "ON", settingsOff: "OFF",
-            ftPlaceholder: "대화를 입력하세요...", ftSend: "전송",
+            ftPlaceholder: "대화를 입력하세요…", ftSend: "전송",
             dayFormat: "{day}일차 - {slot}",
             slots: { morning: "아침", lunch: "점심", afterschool: "방과 후", night: "밤" },
             galleryTitle: "엔딩 갤러리", galleryBack: "돌아가기", galleryProgress: "달성률",

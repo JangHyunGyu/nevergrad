@@ -39,6 +39,7 @@ const LANGS = {
         slotTitle: 'Save',
         loadingText: 'Loading...',
         rotateText: 'Rotate your device<br>to landscape mode',
+        languageLabel: 'Language', menuLabel: 'Menu', closeLabel: 'Close', advanceDialogue: 'Advance dialogue',
         archerlabLabel: 'ArcherLab Home',
         koOptionLabel: '한국어'
     },
@@ -66,6 +67,7 @@ const LANGS = {
         slotTitle: 'セーブ',
         loadingText: '読み込み中...',
         rotateText: '端末を横向きにしてください',
+        languageLabel: '言語', menuLabel: 'メニュー', closeLabel: '閉じる', advanceDialogue: '台詞を進める',
         archerlabLabel: 'ArcherLab ホーム',
         koOptionLabel: '韓国語',
         fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap',
@@ -95,25 +97,26 @@ const LANGS = {
         slotTitle: 'Guardar',
         loadingText: 'Cargando...',
         rotateText: 'Gira el dispositivo<br>al modo horizontal',
+        languageLabel: 'Idioma', menuLabel: 'Menú', closeLabel: 'Cerrar', advanceDialogue: 'Avanzar diálogo',
         archerlabLabel: 'Inicio de ArcherLab',
         koOptionLabel: 'Coreano'
     },
     fr: {
         locale: 'fr_FR',
         title: 'La classe sans diplôme',
-        metaTitle: 'Nevergrad - Visual Novel Gratuit en Navigateur',
-        metaDesc: 'Jouez à Nevergrad, un visual novel scolaire mystère gratuit sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et prise en charge multilingue.',
-        keywords: 'visual novel gratuit, visual novel navigateur, visual novel sans téléchargement, jeu mystère scolaire gratuit, visual novel horreur psychologique, histoire interactive à choix, jeu à fins multiples, Nevergrad',
-        ogTitle: 'Nevergrad | Visual Novel Gratuit en Navigateur',
-        twitterTitle: 'Nevergrad : Visual Novel Gratuit en Navigateur',
-        twitterDesc: 'Un visual novel scolaire mystère gratuit, sans téléchargement. Cinq jours, cinq héroïnes et sept fins.',
+        metaTitle: 'Nevergrad : visual novel gratuit sur navigateur',
+        metaDesc: 'Jouez à Nevergrad, un visual novel scolaire mystérieux gratuit, sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et une prise en charge multilingue.',
+        keywords: "visual novel gratuit, visual novel navigateur, visual novel sans téléchargement, jeu de mystère scolaire gratuit, visual novel d'horreur psychologique, histoire interactive à choix, jeu à fins multiples, Nevergrad",
+        ogTitle: 'Nevergrad | visual novel gratuit sur navigateur',
+        twitterTitle: 'Nevergrad : visual novel gratuit sur navigateur',
+        twitterDesc: 'Un visual novel scolaire mystérieux gratuit, sans téléchargement. Cinq jours, cinq héroïnes et sept fins.',
         schemaName: 'Nevergrad: La classe sans diplôme',
-        schemaDesc: 'Jouez à Nevergrad, un visual novel scolaire mystère gratuit sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et prise en charge multilingue.',
+        schemaDesc: 'Jouez à Nevergrad, un visual novel scolaire mystérieux gratuit, sans téléchargement. Cinq jours de choix, cinq héroïnes, sept fins et une prise en charge multilingue.',
         subtitle: 'Journal de cinq jours',
         newGame: 'Nouvelle partie', continue: 'Continuer', gallery: 'Galerie',
         namePrompt: 'Quel est votre nom ?', namePlaceholder: 'Entrez votre nom', start: 'Commencer',
         save: 'Sauvegarder', load: 'Charger', settings: 'Paramètres', toTitle: 'Écran titre', resume: 'Reprendre',
-        settingsBgm: 'Volume BGM', settingsSfx: 'Volume effets', settingsTextSpeed: 'Vitesse du texte',
+        settingsBgm: 'Volume musique', settingsSfx: 'Volume des effets', settingsTextSpeed: 'Vitesse du texte',
         settingsFullscreen: 'Plein écran', settingsReset: 'Réinitialiser', settingsOff: 'OFF',
         ftPlaceholder: 'Écrivez un message...', ftSend: 'Envoyer',
         dayDisplay: 'Jour 1 - matin',
@@ -122,6 +125,7 @@ const LANGS = {
         slotTitle: 'Sauvegarder',
         loadingText: 'Chargement...',
         rotateText: 'Tournez votre appareil<br>en mode paysage',
+        languageLabel: 'Langue', menuLabel: 'Menu', closeLabel: 'Fermer', advanceDialogue: 'Continuer le dialogue',
         archerlabLabel: 'Accueil ArcherLab',
         koOptionLabel: 'Coréen',
         fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap',
@@ -153,6 +157,7 @@ const LANGS = {
         slotTitle: 'Speichern',
         loadingText: 'Lädt...',
         rotateText: 'Drehe dein Gerät<br>ins Querformat',
+        languageLabel: 'Sprache', menuLabel: 'Menü', closeLabel: 'Schließen', advanceDialogue: 'Dialog fortsetzen',
         archerlabLabel: 'ArcherLab-Startseite',
         koOptionLabel: 'Koreanisch'
     },
@@ -182,6 +187,7 @@ const LANGS = {
         slotTitle: 'Salvar',
         loadingText: 'Carregando...',
         rotateText: 'Gire a tela para o modo paisagem<br>Please rotate your device',
+        languageLabel: 'Idioma', menuLabel: 'Menu', closeLabel: 'Fechar', advanceDialogue: 'Avançar diálogo',
         archerlabLabel: 'Página inicial da ArcherLab',
         koOptionLabel: 'Coreano',
         fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap',
@@ -214,6 +220,10 @@ function buildPage(lang, data) {
 
     // <html lang>
     html = html.replace(/<html lang="[^"]*">/, `<html lang="${lang}">`);
+    html = html.replace(
+        /(<select class="lang-switcher" aria-label=")[^"]*(")/,
+        `$1${data.languageLabel}$2`
+    );
 
     // <title>
     html = html.replace(/<title>[^<]*<\/title>/, `<title>${data.metaTitle}</title>`);
@@ -332,6 +342,22 @@ function buildPage(lang, data) {
         `$1${data.load}$2`
     );
     html = html.replace(
+        /(<button id="btn-backlog" class="menu-btn">)[^<]*(<\/button>)/,
+        `$1${data.backlogTitle}$2`
+    );
+    html = html.replace(
+        /(<div id="dialogue-box" class="dialogue-box" role="button" tabindex="0" aria-label=")[^"]*(")/,
+        `$1${data.advanceDialogue}$2`
+    );
+    html = html.replace(
+        /(<div id="pause-menu" class="screen overlay hidden" role="dialog" aria-modal="true" aria-label=")[^"]*(")/,
+        `$1${data.menuLabel}$2`
+    );
+    html = html.replace(
+        /(<button id="(?:settings-close|backlog-close|sl-close)" class="[^"]+" aria-label=")[^"]*(")/g,
+        `$1${data.closeLabel}$2`
+    );
+    html = html.replace(
         /(<button id="btn-settings" class="menu-btn">)[^<]*(<\/button>)/,
         `$1${data.settings}$2`
     );
@@ -408,7 +434,7 @@ function buildPage(lang, data) {
         html = html.replace(/(<button id="gallery-back" class="menu-btn">)[^<]*(<\/button>)/, `$1${data.galleryBack}$2`);
     }
     if (data.backlogTitle) {
-        html = html.replace(/(<span class="backlog-title">)[^<]*(<\/span>)/, `$1${data.backlogTitle}$2`);
+        html = html.replace(/(<span id="backlog-title" class="backlog-title">)[^<]*(<\/span>)/, `$1${data.backlogTitle}$2`);
     }
     if (data.slotTitle) {
         html = html.replace(/(<span id="sl-title" class="sl-title">)[^<]*(<\/span>)/, `$1${data.slotTitle}$2`);

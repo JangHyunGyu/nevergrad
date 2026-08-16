@@ -11,7 +11,7 @@
       gtag('config', 'G-PT92D5P8E7');
     </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/images/icon/nevergrad-180.png">
     <title>Nevergrad : visual novel gratuit sur navigateur</title>
@@ -195,7 +195,7 @@
         <div id="glitch-overlay" class="glitch-overlay hidden"></div>
 
         <!-- Dialogue Box -->
-        <div id="dialogue-box" class="dialogue-box">
+        <div id="dialogue-box" class="dialogue-box" role="button" tabindex="0" aria-label="Continuer le dialogue">
             <div id="speaker-name" class="speaker-name"></div>
             <div id="dialogue-text" class="dialogue-text"></div>
             <div id="click-indicator" class="click-indicator">▼</div>
@@ -217,21 +217,22 @@
     </div>
 
     <!-- ===== Backlog Panel ===== -->
-    <div id="backlog-panel" class="screen overlay hidden">
+    <div id="backlog-panel" class="screen overlay hidden" role="dialog" aria-modal="true" aria-labelledby="backlog-title">
         <div class="backlog-container">
             <div class="backlog-header">
-                <span class="backlog-title">Historique des dialogues</span>
-                <button id="backlog-close" class="backlog-close-btn">&times;</button>
+                <span id="backlog-title" class="backlog-title">Historique des dialogues</span>
+                <button id="backlog-close" class="backlog-close-btn" aria-label="Fermer">&times;</button>
             </div>
             <div id="backlog-content" class="backlog-content"></div>
         </div>
     </div>
 
     <!-- ===== Pause Menu ===== -->
-    <div id="pause-menu" class="screen overlay hidden">
+    <div id="pause-menu" class="screen overlay hidden" role="dialog" aria-modal="true" aria-label="Menu">
         <div class="pause-container">
             <button id="btn-save" class="menu-btn">Sauvegarder</button>
             <button id="btn-load" class="menu-btn">Charger</button>
+            <button id="btn-backlog" class="menu-btn">Historique des dialogues</button>
             <button id="btn-settings" class="menu-btn">Paramètres</button>
             <button id="btn-title" class="menu-btn">Écran titre</button>
             <button id="btn-resume" class="menu-btn">Reprendre</button>
@@ -239,7 +240,7 @@
     </div>
 
     <!-- ===== Settings Overlay ===== -->
-    <div id="settings-overlay" class="screen overlay hidden">
+    <div id="settings-overlay" class="screen overlay hidden" role="dialog" aria-modal="true" aria-labelledby="settings-title">
         <div class="settings-container">
             <div class="settings-header">
                 <span id="settings-title" class="settings-title">Paramètres</span>
@@ -286,11 +287,11 @@
     </div>
 
     <!-- ===== Save/Load Slot Selector ===== -->
-    <div id="sl-overlay" class="screen overlay hidden">
+    <div id="sl-overlay" class="screen overlay hidden" role="dialog" aria-modal="true" aria-labelledby="sl-title">
         <div class="sl-container">
             <div class="sl-header">
                 <span id="sl-title" class="sl-title">Sauvegarder</span>
-                <button id="sl-close" class="sl-close-btn">&times;</button>
+                <button id="sl-close" class="sl-close-btn" aria-label="Fermer">&times;</button>
             </div>
             <div id="sl-slots" class="sl-slots">
                 <!-- Auto slot (0) and manual slots (1-9) are generated dynamically in JS. -->

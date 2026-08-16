@@ -244,6 +244,16 @@ body {
     color: #fffaf4;
 }
 
+:where(button, a, select, input, [role="button"]):focus-visible {
+    outline: 2px solid rgba(255, 214, 224, 0.95);
+    outline-offset: 3px;
+}
+
+.dialogue-box[role="button"]:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 183, 197, 0.42),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
 .menu-btn:disabled {
     opacity: 0.25;
     cursor: not-allowed;
@@ -1593,6 +1603,11 @@ body {
     border-radius: 2px;
     outline: none;
     cursor: pointer;
+}
+
+.settings-row input[type="range"]:focus-visible {
+    outline: 2px solid rgba(255, 214, 224, 0.95);
+    outline-offset: 6px;
 }
 
 .settings-row input[type="range"]::-webkit-slider-thumb {

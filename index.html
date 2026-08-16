@@ -11,7 +11,7 @@
       gtag('config', 'G-PT92D5P8E7');
     </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/images/icon/nevergrad-180.png">
     <title>Nevergrad: 졸업하지 못한 교실 | 무료 웹 비주얼 노벨</title>
@@ -194,7 +194,7 @@
         <div id="glitch-overlay" class="glitch-overlay hidden"></div>
 
         <!-- Dialogue Box -->
-        <div id="dialogue-box" class="dialogue-box">
+        <div id="dialogue-box" class="dialogue-box" role="button" tabindex="0" aria-label="대사 진행">
             <div id="speaker-name" class="speaker-name"></div>
             <div id="dialogue-text" class="dialogue-text"></div>
             <div id="click-indicator" class="click-indicator">▼</div>
@@ -216,21 +216,22 @@
     </div>
 
     <!-- ===== Backlog Panel ===== -->
-    <div id="backlog-panel" class="screen overlay hidden">
+    <div id="backlog-panel" class="screen overlay hidden" role="dialog" aria-modal="true" aria-labelledby="backlog-title">
         <div class="backlog-container">
             <div class="backlog-header">
-                <span class="backlog-title">대사 기록</span>
-                <button id="backlog-close" class="backlog-close-btn">&times;</button>
+                <span id="backlog-title" class="backlog-title">대사 기록</span>
+                <button id="backlog-close" class="backlog-close-btn" aria-label="닫기">&times;</button>
             </div>
             <div id="backlog-content" class="backlog-content"></div>
         </div>
     </div>
 
     <!-- ===== Pause Menu ===== -->
-    <div id="pause-menu" class="screen overlay hidden">
+    <div id="pause-menu" class="screen overlay hidden" role="dialog" aria-modal="true" aria-label="메뉴">
         <div class="pause-container">
             <button id="btn-save" class="menu-btn">저장</button>
             <button id="btn-load" class="menu-btn">불러오기</button>
+            <button id="btn-backlog" class="menu-btn">대사 기록</button>
             <button id="btn-settings" class="menu-btn">설정</button>
             <button id="btn-title" class="menu-btn">타이틀로</button>
             <button id="btn-resume" class="menu-btn">돌아가기</button>
@@ -238,11 +239,11 @@
     </div>
 
     <!-- ===== Settings Overlay ===== -->
-    <div id="settings-overlay" class="screen overlay hidden">
+    <div id="settings-overlay" class="screen overlay hidden" role="dialog" aria-modal="true" aria-labelledby="settings-title">
         <div class="settings-container">
             <div class="settings-header">
                 <span id="settings-title" class="settings-title">설정</span>
-                <button id="settings-close" class="settings-close-btn" aria-label="Close">&times;</button>
+                <button id="settings-close" class="settings-close-btn" aria-label="닫기">&times;</button>
             </div>
             <div class="settings-body">
                 <div class="settings-row">
@@ -285,11 +286,11 @@
     </div>
 
     <!-- ===== Save/Load Slot Selector ===== -->
-    <div id="sl-overlay" class="screen overlay hidden">
+    <div id="sl-overlay" class="screen overlay hidden" role="dialog" aria-modal="true" aria-labelledby="sl-title">
         <div class="sl-container">
             <div class="sl-header">
                 <span id="sl-title" class="sl-title">저장</span>
-                <button id="sl-close" class="sl-close-btn">&times;</button>
+                <button id="sl-close" class="sl-close-btn" aria-label="닫기">&times;</button>
             </div>
             <div id="sl-slots" class="sl-slots">
                 <!-- JS로 자동(0) + 수동(1~9) 슬롯 동적 생성 -->

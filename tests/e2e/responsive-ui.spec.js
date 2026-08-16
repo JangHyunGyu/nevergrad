@@ -96,6 +96,33 @@ test('title navigation survives an interrupted motion sequence', async ({ page }
     await expect(page.locator('#btn-gallery')).toBeVisible();
 });
 
+test('dialogue history and keyboard controls remain reachable', async ({ page }) => {
+    await loadGameShell(page);
+    await page.locator('#btn-new-game').click();
+    await page.locator('#player-name-input').fill('Keyboard');
+    await page.locator('#btn-start').click();
+    await expect(page.locator('#game-screen')).toHaveClass(/active/, { timeout: 30000 });
+
+    const dialogueBox = page.locator('#dialogue-box');
+    await expect(dialogueBox).toHaveAttribute('role', 'button');
+    await expect(dialogueBox).toHaveAttribute('tabindex', '0');
+    await dialogueBox.focus();
+    await dialogueBox.press('Enter');
+    await expect.poll(() => page.evaluate(() => game.dialogue.isTyping)).toBe(false);
+
+    await page.locator('#qm-menu').click();
+    await expect(page.locator('#pause-menu')).toHaveAttribute('role', 'dialog');
+    await expect(page.locator('#btn-backlog')).toBeVisible();
+    await page.locator('#btn-backlog').click();
+    await expect(page.locator('#backlog-panel')).toHaveClass(/active/);
+    await expect(page.locator('#backlog-content .backlog-entry')).not.toHaveCount(0);
+    await expect(page.locator('#backlog-close')).toBeFocused();
+
+    await page.keyboard.press('Escape');
+    await expect(page.locator('#backlog-panel')).toHaveClass(/hidden/);
+    await expect(page.locator('#qm-menu')).toBeFocused();
+});
+
 const touchDevices = [
     { name: 'phone landscape', viewport: { width: 667, height: 375 } },
     { name: 'tablet landscape', viewport: { width: 1024, height: 768 } }

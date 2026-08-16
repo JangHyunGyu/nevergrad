@@ -80,6 +80,7 @@ class GameEngine {
 
         // Backlog
         this.backlog = [];
+        this._overlayReturnFocus = new Map();
 
         // CAGE END 상태
         this._cageMode = false;
@@ -125,6 +126,7 @@ class GameEngine {
         this._bindSettings();
         this._bindQuickMenu();
         this._bindBacklog();
+        this._bindOverlayKeyboard();
 
         const continueBtn = document.getElementById('btn-continue');
         if (continueBtn) continueBtn.disabled = !this.save.hasSaveData();
@@ -158,6 +160,7 @@ class GameEngine {
         const btnMap = {
             'btn-new-game': 'newGame', 'btn-continue': 'continue', 'btn-gallery': 'gallery',
             'btn-start': 'start', 'btn-save': 'save', 'btn-load': 'load',
+            'btn-backlog': 'backlogTitle',
             'btn-settings': 'settings', 'btn-title': 'toTitle', 'btn-resume': 'resume',
             'ft-send': 'ftSend',
             'settings-title': 'settings',
@@ -169,6 +172,14 @@ class GameEngine {
         for (const [id, key] of Object.entries(btnMap)) {
             const el = document.getElementById(id);
             if (el) el.textContent = ui(key);
+        }
+
+        const dialogueBox = document.getElementById('dialogue-box');
+        if (dialogueBox) dialogueBox.setAttribute('aria-label', ui('advanceDialogue'));
+        const pauseMenu = document.getElementById('pause-menu');
+        if (pauseMenu) pauseMenu.setAttribute('aria-label', ui('menu'));
+        for (const id of ['settings-close', 'backlog-close', 'sl-close']) {
+            document.getElementById(id)?.setAttribute('aria-label', ui('close'));
         }
         // 풀스크린 토글 ON/OFF 라벨은 현재 상태에 따라
         if (typeof this._refreshFullscreenLabel === 'function') this._refreshFullscreenLabel();
@@ -319,7 +330,8 @@ class GameEngine {
     // ===== Game Screen =====
 
     _bindGameScreen() {
-        document.getElementById('dialogue-box')?.addEventListener('click', () => {
+        const dialogueBox = document.getElementById('dialogue-box');
+        const advanceDialogue = () => {
             if (this._clickLocked) return;
             this.audio?.playUIDialogueAdvance();
 
@@ -329,6 +341,13 @@ class GameEngine {
             }
 
             this._advanceScene();
+        };
+
+        dialogueBox?.addEventListener('click', advanceDialogue);
+        dialogueBox?.addEventListener('keydown', (event) => {
+            if (event.repeat || (event.key !== 'Enter' && event.key !== ' ')) return;
+            event.preventDefault();
+            advanceDialogue();
         });
 
         // btn-menu removed — replaced by quick menu
@@ -342,25 +361,32 @@ class GameEngine {
 
         document.getElementById('btn-save')?.addEventListener('click', () => {
             this.audio?.playUIClick();
-            this._hideOverlay('pause-menu');
+            this._hideOverlay('pause-menu', false);
             this._openSlotSelector('save');
         });
 
         document.getElementById('btn-load')?.addEventListener('click', () => {
             this.audio?.playUIClick();
-            this._hideOverlay('pause-menu');
+            this._hideOverlay('pause-menu', false);
             this._openSlotSelector('load');
+        });
+
+        document.getElementById('btn-backlog')?.addEventListener('click', () => {
+            this.audio?.playUIClick();
+            this._hideOverlay('pause-menu', false);
+            this._renderBacklog();
+            this._showOverlay('backlog-panel', 'qm-menu');
         });
 
         document.getElementById('btn-settings')?.addEventListener('click', () => {
             this.audio?.playUIClick();
-            this._hideOverlay('pause-menu');
+            this._hideOverlay('pause-menu', false);
             this._openSettings();
         });
 
         document.getElementById('btn-title')?.addEventListener('click', () => {
             this.audio?.playUIClick();
-            this._hideOverlay('pause-menu');
+            this._hideOverlay('pause-menu', false);
             this._showScreen('title-screen');
         });
     }
@@ -435,7 +461,7 @@ class GameEngine {
 
     _openSettings() {
         this._populateSettingsOverlay();
-        this._showOverlay('settings-overlay');
+        this._showOverlay('settings-overlay', 'qm-menu');
     }
 
     _populateSettingsOverlay() {
@@ -2602,7 +2628,7 @@ class GameEngine {
             closeBtn.addEventListener('click', handler);
         }
 
-        this._showOverlay('sl-overlay');
+        this._showOverlay('sl-overlay', 'qm-menu');
     }
 
     /**
@@ -2832,34 +2858,61 @@ class GameEngine {
         if (ns) { ns.style.height = ''; ns.style.top = ''; }
     }
 
-    _showOverlay(id) {
+    _showOverlay(id, returnFocusId = null) {
         const el = document.getElementById(id);
         if (el) {
+            const activeElement = returnFocusId
+                ? document.getElementById(returnFocusId)
+                : document.activeElement;
+            if (activeElement instanceof HTMLElement && !el.contains(activeElement)) {
+                this._overlayReturnFocus.set(id, activeElement);
+            }
             el.classList.remove('hidden');
             el.classList.add('active');
             window.NevergradMotion?.overlayEnter?.(el);
+            requestAnimationFrame(() => {
+                el.querySelector('button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), [tabindex="0"]')
+                    ?.focus({ preventScroll: true });
+            });
         }
     }
 
-    _hideOverlay(id) {
+    _hideOverlay(id, restoreFocus = true) {
         const el = document.getElementById(id);
         if (el) {
-            if (window.NevergradMotion?.overlayExit?.(el, () => {
+            const finish = () => {
                 el.classList.add('hidden');
                 el.classList.remove('active');
-            })) {
+                const returnFocus = this._overlayReturnFocus.get(id);
+                this._overlayReturnFocus.delete(id);
+                if (restoreFocus && returnFocus?.isConnected) returnFocus.focus({ preventScroll: true });
+            };
+            if (window.NevergradMotion?.overlayExit?.(el, finish)) {
                 return;
             }
-            el.classList.add('hidden');
-            el.classList.remove('active');
+            finish();
         }
+    }
+
+    _bindOverlayKeyboard() {
+        this.lifecycle.listen(document, 'keydown', (event) => {
+            if (event.key !== 'Escape') return;
+            const activeOverlay = [
+                ['settings-overlay', 'settings-close'],
+                ['sl-overlay', 'sl-close'],
+                ['backlog-panel', 'backlog-close'],
+                ['pause-menu', 'btn-resume']
+            ].find(([overlayId]) => document.getElementById(overlayId)?.classList.contains('active'));
+            if (!activeOverlay) return;
+            event.preventDefault();
+            document.getElementById(activeOverlay[1])?.click();
+        });
     }
 
     // ===== Quick Menu =====
 
     _bindQuickMenu() {
-        // AUTO / SKIP / LOG / SAVE / LOAD 전부 UI에서 제거됨.
-        // 대사는 클릭/탭으로 진행. 저장·불러오기는 MENU → pause-menu 안에서 접근.
+        // AUTO / SKIP은 제거됨. 대사 기록과 저장·불러오기는 MENU에서 접근.
         // NG+ 기시감 텍스트는 _loadScene 진입 시 자동 표시.
         document.getElementById('qm-menu')?.addEventListener('click', () => {
             this.audio?.playUIMenuOpen();

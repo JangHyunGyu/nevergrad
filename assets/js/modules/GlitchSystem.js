@@ -501,7 +501,7 @@ class GlitchSystem {
         this._tabGimmickActive = true;
         this._originalTitle = document.title;
         this._tabMessages = this._pickLocalized({
-            ko: ['어디 가?', '...보고 있어.', '{name}, 돌아와.', '도망칠 수 없어.', '나를 두고 가지 마.', '왜 자꾸 다른 데 봐?'],
+            ko: ['어디 가?', '보고 있어.', '{name}, 돌아와.', '도망칠 수 없어.', '나를 두고 가지 마.', '왜 자꾸 다른 데 봐?'],
             en: ['Where are you going?', "...I'm watching.", '{name}, come back.', "You can't run.", "Don't leave me here.", 'Why do you keep looking away?'],
             ja: ['どこへ行くの？', '...見てるよ。', '{name}、戻ってきて。', '逃げられないよ。', '私を置いていかないで。', 'どうして何度もよそを見るの？'],
             es: ['¿A dónde vas?', '...Te estoy mirando.', '{name}, vuelve.', 'No puedes escapar.', 'No me dejes aquí.', '¿Por qué sigues mirando a otro lado?'],
@@ -580,21 +580,21 @@ class GlitchSystem {
         const copy = this._pickLocalized({
             ko: {
                 title: '졸업하지 못한 교실',
-                watched: '\n...누군가 여기를 보고 있다.',
+                watched: '\n누군가 이쪽을 보고 있다.',
                 warningBox: '\n' +
                     '██████████████████████████████████████\n' +
                     '█                                    █\n' +
-                    '█   ...도망쳐.                        █\n' +
+                    '█   도망쳐.                           █\n' +
                     '█   이 학교에서 나가.                   █\n' +
-                    '█   5일이야.                          █\n' +
+                    '█   닷새뿐이야.                        █\n' +
                     '█                                    █\n' +
                     '█               — 이설화              █\n' +
                     '█                                    █\n' +
                     '██████████████████████████████████████',
                 protocol: '\n[경고] 피험자 #13 — 기억 재구성 프로토콜 진행 중',
-                date: '처리 예정일: Day 5 23:00',
-                exit: '\n구관 3층. 비상구. ...그 길로 나가.',
-                remember: '나를 기억해줘.'
+                date: '처리 예정 시각: 5일차 23:00',
+                exit: '\n구관 3층. 비상구. 그 길로 나가.',
+                remember: '나를 기억해 줘.'
             },
             en: {
                 title: 'The Classroom That Never Graduates',

@@ -340,7 +340,7 @@ class GlitchSystemAdvanced {
                 previous: '이전 사진',
                 next: '다음 사진',
                 photo: '사진',
-                photoHint: '사진을 클릭하거나 좌우로 넘기세요. 마지막까지 확인해야 내려놓을 수 있습니다.',
+                photoHint: '사진을 클릭하거나 좌우로 넘겨 모두 확인하세요. 마지막 사진을 보기 전에는 카메라를 내려놓을 수 없습니다.',
                 photoDoneHint: '모든 사진을 확인했습니다.',
                 photoComplete: '카메라를 내려놓는다',
                 lockerTitle: '유나의 사물함',
@@ -351,7 +351,7 @@ class GlitchSystemAdvanced {
                 camera: '숨겨진 카메라',
                 dustFound: '옆 사물함에는 먼지가 그대로 남아 있다.',
                 cleanFound: '유나의 사물함만 최근에 닦은 흔적이 있다.',
-                seamFound: '바닥 합판이 손톱 하나만큼 떠 있다.',
+                seamFound: '바닥 합판이 손톱 두께만큼 떠 있다.',
                 cameraFound: '이중 바닥 안쪽에서 카메라를 꺼냈다.',
                 lockerComplete: '카메라를 켠다'
             },
@@ -1255,7 +1255,7 @@ class GlitchSystemAdvanced {
 
                 // 유령 텍스트 연속 표시
                 this.showGhostText(this._pickLocalized({
-                    ko: '...도망쳐',
+                    ko: '도망쳐.',
                     en: '...Run',
                     ja: '...逃げて',
                     es: '...Corre',
@@ -1658,7 +1658,7 @@ class GlitchSystemAdvanced {
             CAGE: { ko: '잔류', en: 'Contained', ja: '残留', es: 'Contenido', fr: 'Confiné', de: 'Eingeschlossen', pt: 'Contido', c: 'contained' },
             FORGET: { ko: '처리 완료', en: 'Processed', ja: '処理完了', es: 'Procesado', fr: 'Traité', de: 'Verarbeitet', pt: 'Processado', c: 'terminated' },
             GHOST: { ko: '소실', en: 'Lost', ja: '消失', es: 'Perdido', fr: 'Perdu', de: 'Verloren', pt: 'Perdido', c: 'missing' },
-            COMPLICIT: { ko: '전환 - 담당자', en: 'Converted - handler', ja: '転換 - 担当者', es: 'Convertido - responsable', fr: 'Converti - responsable', de: 'Umgewandelt - Betreuer', pt: 'Convertido - responsável', c: 'converted' }
+            COMPLICIT: { ko: '담당자로 전환', en: 'Converted - handler', ja: '転換 - 担当者', es: 'Convertido - responsable', fr: 'Converti - responsable', de: 'Umgewandelt - Betreuer', pt: 'Convertido - responsável', c: 'converted' }
         };
         const entry = map[ending];
         if (!entry) return { s: fallbackSlot.status, c: fallbackSlot.statusClass };
@@ -1679,7 +1679,7 @@ class GlitchSystemAdvanced {
         }
         if (slot.statusClass === 'active') {
             return this._pickLocalized({
-                ko: '진행 중...',
+                ko: '진행 중…',
                 en: 'In progress...',
                 ja: '進行中...',
                 es: 'En curso...',
@@ -1995,7 +1995,7 @@ class GlitchSystemAdvanced {
 
         const flickerTexts = {
             FORGET: this._pickLocalized({
-                ko: '#14 \uD22C\uC785 (Load Subject #14)',
+                ko: '#14 \uD53C\uD5D8\uC790 \uD22C\uC785',
                 en: '#14 Intake (Load Subject #14)',
                 ja: '#14 投入 (Load Subject #14)',
                 es: '#14 Ingreso (Load Subject #14)',
@@ -2004,7 +2004,7 @@ class GlitchSystemAdvanced {
                 pt: '#14 Inserção (Load Subject #14)'
             }),
             ESCAPE: this._pickLocalized({
-                ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
+                ko: '\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
                 en: '...Nothing has changed.',
                 ja: '...何も変わっていない。',
                 es: '...Nada ha cambiado.',
@@ -2013,7 +2013,7 @@ class GlitchSystemAdvanced {
                 pt: '...Nada mudou.'
             }),
             GHOST: this._pickLocalized({
-                ko: '...\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
+                ko: '\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
                 en: '...Nothing has changed.',
                 ja: '...何も変わっていない。',
                 es: '...Nada ha cambiado.',
@@ -2031,7 +2031,7 @@ class GlitchSystemAdvanced {
                 pt: 'Eunsu foi embora. O conselho permanece.'
             }),
             TRUE: this._pickLocalized({
-                ko: '...\uB2E4 \uB05D\uB0AC\uB294\uB370.',
+                ko: '\uB2E4 \uB05D\uB0AC\uB294\uB370.',
                 en: '...But it was over.',
                 ja: '...でも、終わったはずなのに。',
                 es: '...Pero ya había terminado.',
@@ -2052,7 +2052,7 @@ class GlitchSystemAdvanced {
 
         // TRUE END 추가 깜빡임 — 본편 감정선 이후의 아주 짧은 잔상
         const trueEndSecondFlicker = this._pickLocalized({
-            ko: '\uAE30\uB85D\uC774 \uC544\uC9C1 \uB2EB\uD788\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4.',
+            ko: '\uAE30\uB85D\uC774 \uC544\uC9C1 \uB05D\uB098\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4.',
             en: 'The record has not closed yet.',
             ja: '記録はまだ閉じていません。',
             es: 'El registro aún no se ha cerrado.',
@@ -2210,7 +2210,7 @@ class GlitchSystemAdvanced {
         // 실제 시나리오 씬 ID로 매핑
         const ghostTexts = {
             'day1_choco_choice': this._pickLocalized({
-                ko: '...물어봤자 같은 대답이야.',
+                ko: '물어봐도 같은 대답이야.',
                 en: '...You already know the answer.',
                 ja: '...答えはもう知っている。',
                 es: '...Ya sabes la respuesta.',
@@ -2219,7 +2219,7 @@ class GlitchSystemAdvanced {
                 pt: '...Você já sabe a resposta.'
             }),
             'day3_after_riin_choice': this._pickLocalized({
-                ko: '너 이거 맛 알잖아.',
+                ko: '이거 무슨 맛인지 알잖아.',
                 en: 'You know what this tastes like.',
                 ja: 'この味、知ってるでしょ。',
                 es: 'Sabes a qué sabe esto.',
@@ -2631,7 +2631,7 @@ class GlitchSystemAdvanced {
         const finalEl = document.createElement('div');
         finalEl.className = 'mirror-final-text';
         finalEl.textContent = finalText || this._pickLocalized({
-            ko: '\uB098\uB294 13\uBC88\uC9F8 \uAECD\uB370\uAE30\uB2E4.',
+            ko: '\uB098\uB294 \uC5F4\uC138 \uBC88\uC9F8 \uAECD\uB370\uAE30\uB2E4.',
             en: 'I am the 13th shell.',
             ja: '私は13番目の殻だ。',
             es: 'Soy la decimotercera cáscara.',
@@ -2667,7 +2667,7 @@ class GlitchSystemAdvanced {
         // 씬 ID는 실제 시나리오에 존재해야 매칭됨
         return {
             'day1_gate_1': this._pickLocalized({
-                ko: '이 길이 왜 낯익지? 처음 온 학교인데. 피곤한가.',
+                ko: '처음 온 학교인데 왜 이 길이 낯익지? 피곤해서 그런가.',
                 en: '...I feel like I know this path. Why? It is my first time at this school. ...I must be tired.',
                 ja: '...この道を知っている気がする。なぜ? 初めて来る学校なのに。...疲れているだけだろう。',
                 es: '...Siento que conozco este camino. ¿Por qué? Es mi primera vez en esta escuela. ...Debo estar cansado.',
@@ -2676,7 +2676,7 @@ class GlitchSystemAdvanced {
                 pt: '...Sinto que conheço este caminho. Por quê? É minha primeira vez nesta escola. ...Devo estar cansado.'
             }),
             'day1_hallway_1': this._pickLocalized({
-                ko: '저 웃음, 어디서 봤다. 아닌가.',
+                ko: '저 웃음, 어디서 본 것 같은데. 아닌가.',
                 en: '...That smile. I have seen it somewhere. ...Or maybe not.',
                 ja: '...あの笑顔。どこかで見たことがある。...違うかもしれない。',
                 es: '...Esa sonrisa. La he visto en algún lugar. ...O tal vez no.',
@@ -2694,7 +2694,7 @@ class GlitchSystemAdvanced {
                 pt: '...O movimento da Sea parece estranhamente familiar. Deve ser coisa da minha cabeça.'
             }),
             'day3_after_riin_drink': this._pickLocalized({
-                ko: '이 맛을 안다. 마셔본 적도 없는데.',
+                ko: '이 맛이 익숙하다. 마셔 본 적도 없는데.',
                 en: '...This taste is not unfamiliar, even though I have never drunk it before.',
                 ja: '...この味。知らない味じゃない。飲んだこともないのに。',
                 es: '...Este sabor no me resulta desconocido, aunque nunca lo había bebido.',

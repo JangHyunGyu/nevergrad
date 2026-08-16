@@ -938,8 +938,8 @@ class GameEngine {
                 evidence: '확보된 증거', witness: '주요 제보자 기록',
                 newsBadges: ['비인가 시설', '임상시험', '기억장애'],
                 org: 'EDINA FOUNDATION', stamp: '대외비', fileId: 'NVG-13 / FINAL',
-                reportTitle: '프로젝트 네버그라드 최종 보고서', sideLabel: '피험자 신원 패키지',
-                note: '관찰 기록과 투약 기록을 대조 중', footer: '스캔 신뢰도',
+                reportTitle: '프로젝트 네버그라드 최종 보고서', sideLabel: '피험자 신원 자료',
+                note: '관찰 기록과 투약 기록을 대조 중', footer: '스캔 판독 신뢰도',
                 cycle: '주기', subject1: '김도진', subject7: '김태호', done: '처리 완료',
                 anomaly: '이설화 접촉 / 탈출 공모', active: '진행 중'
             },
@@ -1615,14 +1615,14 @@ class GameEngine {
 
         this.state.setFlag('latenight_shown');
         const text = this.i18n?.getUI('latenightAlone') ||
-            '...\uC774 \uC2DC\uAC04\uC5D0 \uAE68\uC5B4\uC788\uB294 \uAC74 \uB098\ubfd0\uC77C\uAE4C.';
+            '\uC774 \uC2DC\uAC04\uC5D0 \uAE68\uC5B4 \uC788\uB294 \uAC74 \uB098\ubfd0\uC77C\uAE4C.';
         // 화면 중앙 위쪽에 2.8초간 팬텀 텍스트
         this.glitchAdvanced.showGhostText(text, 50, 22, 2800);
     }
 
     /**
      * SCENARIO.md 5623: 이어폰 미감지 시 거울 씬 직전 팬텀 힌트
-     * "...이어폰을 끼면 더 잘 들릴 텐데." 0.5초 노출.
+     * "이어폰을 끼면 더 잘 들릴 텐데." 0.5초 노출.
      * day4_night_save_glitch_20 (거울 진입 직전 씬)에서 단 1회.
      * @private
      */
@@ -1635,7 +1635,7 @@ class GameEngine {
 
         this.state.setFlag('headphone_hint_shown');
         const text = this.i18n?.getUI('headphoneHint') ||
-            '...\uC774\uC5B4\uD3F0\uC744 \uB07C\uBA74 \uB354 \uC798 \uB4E4\uB9B4 \uD150\uB370.';
+            '\uC774\uC5B4\uD3F0\uC744 \uB07C\uBA74 \uB354 \uC798 \uB4E4\uB9B4 \uD150\uB370.';
         this.glitchAdvanced.showGhostText(text, 50, 78, 500);
     }
 
@@ -3280,7 +3280,7 @@ class GameEngine {
 
     _getCageSeolhwaTexts() {
         const map = {
-            ko: ['...여기서 나가.', '이건 진짜가 아니야.', '기억해. 너는 13번째야.', '눈을 떠.', '...나를 기억해?'],
+            ko: ['여기서 나가.', '이건 진짜가 아니야.', '기억해. 너는 열세 번째야.', '눈을 떠.', '나 기억나?'],
             en: ['...Get out of here.', 'This isn\'t real.', 'Remember. You are the 13th.', 'Open your eyes.', '...Do you remember me?'],
             ja: ['...ここから出て.', 'これは本物じゃない.', '思い出して。あなたは13番目.', '目を覚まして.', '...私を覚えてる？'],
             es: ['...Sal de aquí.', 'Esto no es real.', 'Recuerda. Eres el 13°.', 'Abre los ojos.', '...¿Me recuerdas?'],
@@ -3293,7 +3293,7 @@ class GameEngine {
 
     _getCageSeolhwaFinal() {
         const map = {
-            ko: '...화면 오른쪽 위를 봐. 내가 길을 열어놨어.',
+            ko: '화면 오른쪽 위를 봐. 내가 길을 열어 뒀어.',
             en: '...Look at the top right of the screen. I opened a way out.',
             ja: '...画面の右上を見て。道を開けておいたから。',
             es: '...Mira la esquina superior derecha. Abrí una salida.',

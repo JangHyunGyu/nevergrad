@@ -959,7 +959,7 @@ Object.assign(SCENARIO[5], {
                 emptyLunchbox: true,
                 seaLines: [
                     {
-                        ko: "...이번에도 안 나갔네.",
+                        ko: "이번에도 안 나갔네.",
                         en: "...You did not leave this time either.",
                         ja: "...今回も出ていかなかったね。",
                         es: "...Esta vez tampoco saliste.",

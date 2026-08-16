@@ -37,7 +37,7 @@ class MetaHorrorSystem {
         /** @type {string[]} 탭 이탈 시 순환 표시할 메시지 목록 */
         this.tabMessages = [
             '어디 가?',
-            '...보고 있어.',
+            '보고 있어.',
             '{name}, 돌아와.',
             '도망칠 수 없어.',
             '나를 두고 가지 마.',
@@ -56,19 +56,19 @@ class MetaHorrorSystem {
             2: [
                 { text: '졸업하지 못한 교실', style: 'color: #ff6b9d; font-size: 20px; font-weight: bold;' },
                 { text: '© Project Nevergrad', style: 'color: #666; font-size: 11px;' },
-                { text: '\n...누군가 여기를 보고 있다.', style: 'color: #666; font-size: 11px;' }
+                { text: '\n누군가 이쪽을 보고 있다.', style: 'color: #666; font-size: 11px;' }
             ],
             3: [
                 { text: '졸업하지 못한 교실', style: 'color: #d4547a; font-size: 20px; font-weight: bold;' },
                 { text: '© Project Nevergrad', style: 'color: #666; font-size: 11px;' },
-                { text: '\n...누군가 여기를 보고 있다.', style: 'color: #666; font-size: 11px;' },
+                { text: '\n누군가 이쪽을 보고 있다.', style: 'color: #666; font-size: 11px;' },
                 {
                     text: '\n' +
                         '██████████████████████████████████████\n' +
                         '█                                    █\n' +
-                        '█   ...도망쳐.                        █\n' +
+                        '█   도망쳐.                           █\n' +
                         '█   이 학교에서 나가.                   █\n' +
-                        '█   5일이야.                          █\n' +
+                        '█   닷새뿐이야.                        █\n' +
                         '█                                    █\n' +
                         '█               — 이설화              █\n' +
                         '█                                    █\n' +
@@ -79,14 +79,14 @@ class MetaHorrorSystem {
             4: [
                 { text: '졸업하지 못한 교실', style: 'color: #8B0000; font-size: 20px; font-weight: bold;' },
                 { text: '© Project Nevergrad', style: 'color: #666; font-size: 11px;' },
-                { text: '\n...누군가 여기를 보고 있다.', style: 'color: #666; font-size: 11px;' },
+                { text: '\n누군가 이쪽을 보고 있다.', style: 'color: #666; font-size: 11px;' },
                 {
                     text: '\n' +
                         '██████████████████████████████████████\n' +
                         '█                                    █\n' +
-                        '█   ...도망쳐.                        █\n' +
+                        '█   도망쳐.                           █\n' +
                         '█   이 학교에서 나가.                   █\n' +
-                        '█   5일이야.                          █\n' +
+                        '█   닷새뿐이야.                        █\n' +
                         '█                                    █\n' +
                         '█               — 이설화              █\n' +
                         '█                                    █\n' +
@@ -98,21 +98,21 @@ class MetaHorrorSystem {
                     style: 'color: #ff4444; font-size: 12px; font-weight: bold;'
                 },
                 {
-                    text: '처리 예정일: Day 5 23:00',
+                    text: '처리 예정 시각: 5일차 23:00',
                     style: 'color: #ff4444; font-size: 12px; font-weight: bold;'
                 }
             ],
             5: [
                 { text: '졸업하지 못한 교실', style: 'color: #8B0000; font-size: 20px; font-weight: bold;' },
                 { text: '© Project Nevergrad', style: 'color: #666; font-size: 11px;' },
-                { text: '\n...누군가 여기를 보고 있다.', style: 'color: #666; font-size: 11px;' },
+                { text: '\n누군가 이쪽을 보고 있다.', style: 'color: #666; font-size: 11px;' },
                 {
                     text: '\n' +
                         '██████████████████████████████████████\n' +
                         '█                                    █\n' +
-                        '█   ...도망쳐.                        █\n' +
+                        '█   도망쳐.                           █\n' +
                         '█   이 학교에서 나가.                   █\n' +
-                        '█   5일이야.                          █\n' +
+                        '█   닷새뿐이야.                        █\n' +
                         '█                                    █\n' +
                         '█               — 이설화              █\n' +
                         '█                                    █\n' +
@@ -124,15 +124,15 @@ class MetaHorrorSystem {
                     style: 'color: #ff4444; font-size: 12px; font-weight: bold;'
                 },
                 {
-                    text: '처리 예정일: Day 5 23:00',
+                    text: '처리 예정 시각: 5일차 23:00',
                     style: 'color: #ff4444; font-size: 12px; font-weight: bold;'
                 },
                 {
-                    text: '\n구관 3층. 비상구. ...그 길로 나가.',
+                    text: '\n구관 3층. 비상구. 그 길로 나가.',
                     style: 'color: #c8a2c8; font-size: 14px; font-style: italic; text-shadow: 0 0 5px #c8a2c8;'
                 },
                 {
-                    text: '나를 기억해줘.',
+                    text: '나를 기억해 줘.',
                     style: 'color: #c8a2c8; font-size: 14px; font-style: italic; text-shadow: 0 0 5px #c8a2c8;'
                 }
             ]
@@ -159,10 +159,10 @@ class MetaHorrorSystem {
         /** @type {Object[]} 탭 이탈 시 전송할 푸시 메시지 큐 */
         this._pushMessages = [
             { title: '한세아', body: '어디 가? 돌아와.' },
-            { title: '한세아', body: '...보고 있어.' },
+            { title: '한세아', body: '보고 있어.' },
             { title: '한세아', body: '{name}, 왜 안 돌아와?' },
             { title: '박은수', body: '수업 중인데 어디 갔어?' },
-            { title: '한울 스마트캠퍼스', body: '비정상 이탈 감지. 위치 확인 중...' }
+            { title: '한울 스마트캠퍼스', body: '비정상 이탈 감지. 위치 확인 중…' }
         ];
 
         /** @type {Function|null} blur 기반 안티캡처 핸들러 */
@@ -324,13 +324,13 @@ class MetaHorrorSystem {
     _getConsoleTrapCopy() {
         return this._pickLocalized({
             ko: {
-                found: '...나를 찾았구나.',
+                found: '나를 찾았구나.',
                 exit: '구관 3층, 비상구 앞에서 기다릴게.',
-                thanks: '고마워. ...꼭 나가.',
+                thanks: '고마워. 꼭 나가.',
                 memoTitle: '=== 이설화의 메모 ===',
                 memo1: '피험자 기록은 관리자 폴더에 있어.',
                 memo2: '정말 보고 싶은 거야?',
-                memo3: '이걸 알아도 여기서 나가지는 못해.'
+                memo3: '이걸 알아도 여기서 나가진 못해.'
             },
             en: {
                 found: '...You found me.',
@@ -488,7 +488,7 @@ class MetaHorrorSystem {
         return this._pickLocalized({
             ko: {
                 label: '[외부 반출 금지]',
-                sub: '포커스 복귀 시 화면이 복원됩니다.'
+                sub: '화면으로 돌아오면 내용이 다시 표시됩니다.'
             },
             en: {
                 label: '[EXTERNAL EXPORT PROHIBITED]',
@@ -523,7 +523,7 @@ class MetaHorrorSystem {
                 eunsuTitle: '\uC740\uC218 \uC120\uC0DD\uB2D8',
                 eunsuBody: '\uC5B4\uB514 \uAC14\uC5B4? \uC544\uC9C1 \uC218\uC5C5 \uC911\uC774\uC57C. :)',
                 seaTitle: '\uD55C\uC138\uC544',
-                seaBody: '...\uC65C \uC548 \uC640?',
+                seaBody: '\uC65C \uC548 \uC640?',
                 appTitle: '\uD55C\uC6B8 \uC548\uC804 \uC571',
                 ngBody: '\uD53C\uD5D8\uC790 #13 \uC774\uD0C8 \uAC10\uC9C0. \uC704\uCE58 \uCD94\uC801 \uC911.',
                 day5Body: '\uC81C13\uCC28 \uC8FC\uAE30 \uC2DC\uAC04 \uCD08\uACFC. \uC7AC\uD22C\uC785 \uC900\uBE44.'

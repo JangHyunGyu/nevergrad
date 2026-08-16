@@ -73,7 +73,7 @@ const CONFIG = {
     TIME_SLOT_NAMES: {
         morning: "아침",
         lunch: "점심",
-        afterschool: "방과후",
+        afterschool: "방과 후",
         night: "밤"
     },
 

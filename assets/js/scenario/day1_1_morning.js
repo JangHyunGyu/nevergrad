@@ -323,7 +323,7 @@ Object.assign(SCENARIO[1], {
         character: "sea_smile",
         glitch: {
             ngPlusGhostText: {
-                ko: "...\ub124\uac00 \uac00\ub974\uccd0 \uc92c\uc796\uc544. \uc774\uc804 \ud68c\ucc28\uc5d0\uc11c.",
+                ko: "\uc9c0\ub09c \ud68c\ucc28\uc5d0\uc11c \ub124\uac00 \uac00\ub974\uccd0 \uc92c\uc796\uc544.",
                 en: "...You taught me that. In the previous cycle.",
                 ja: "...\u524d\u306e\u5468\u56de\u3067\u3001\u3042\u306a\u305f\u304c\u6559\u3048\u3066\u304f\u308c\u305f\u3067\u3057\u3087\u3002",
                 es: "...Tu me ensenaste eso. En el ciclo anterior.",

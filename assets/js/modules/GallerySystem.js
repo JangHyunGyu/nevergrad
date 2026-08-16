@@ -22,7 +22,7 @@ class GallerySystem {
 
     static ENDING_DESCRIPTIONS = {
         'TRUE END': {
-            ko: '진실을 마주하고 졸업을 선택했다.',
+            ko: '진실을 마주한 끝에 졸업했다.',
             en: 'Faced the truth, and chose to graduate.',
             ja: '真実と向き合い、卒業を選んだ。',
             es: 'Enfrentaste la verdad y elegiste graduarte.',
@@ -40,7 +40,7 @@ class GallerySystem {
             pt: 'Voce resistiu ate o fim, mas a sala nunca soltou voce.'
         },
         'FORGET END': {
-            ko: '모든 것을 잊고 14번째 등교를 시작했다.',
+            ko: '모든 것을 잊고 열네 번째 등교를 시작했다.',
             en: 'You forgot everything and returned to ordinary days.',
             ja: 'すべてを忘れ、普通の日々へ戻った。',
             es: 'Lo olvidaste todo y volviste a la rutina.',
@@ -58,7 +58,7 @@ class GallerySystem {
             pt: 'Uma sala de aula feliz. Para sempre.'
         },
         'GHOST END': {
-            ko: '너는 학교를 빠져나왔지만 교실에는 무언가 남았다.',
+            ko: '학교를 빠져나왔지만 교실에는 무언가 남았다.',
             en: 'You left, but something stayed behind in the classroom.',
             ja: 'あなたは去ったが、何かが教室に残った。',
             es: 'Te fuiste, pero algo se quedó en el aula.',
@@ -76,7 +76,7 @@ class GallerySystem {
             pt: 'Voce escapou. Mas houve um preco.'
         },
         'COMPLICIT END': {
-            ko: '너는 공범이 되었다.',
+            ko: '공범이 되었다.',
             en: 'You became an accomplice.',
             ja: 'あなたは共犯者になった。',
             es: 'Te convertiste en cómplice.',
@@ -91,12 +91,12 @@ class GallerySystem {
             title: '갤러리',
             progress: '해금률',
             back: '돌아가기',
-            tabs: { endings: '엔딩', cg: '이벤트 CG', music: '음악', characters: '표정 사진' },
+            tabs: { endings: '엔딩', cg: '이벤트 CG', music: '음악', characters: '캐릭터' },
             locked: '미해금',
             lockedEnding: '아직 도달하지 못한 결말',
-            lockedCg: '게임에서 해당 이벤트 CG를 확인하면 해금됩니다.',
+            lockedCg: '게임에서 해당 이벤트 CG를 보면 해금됩니다.',
             lockedMusic: '게임에서 해당 BGM이 재생되면 해금됩니다.',
-            lockedCharacter: '게임에서 이 인물을 만나면 열립니다.',
+            lockedCharacter: '게임에서 이 인물을 만나면 해금됩니다.',
             lockedExpression: '게임에서 이 표정을 보면 해금됩니다.',
             play: '재생',
             stop: '정지',

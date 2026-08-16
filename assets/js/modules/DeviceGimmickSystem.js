@@ -255,7 +255,7 @@ class DeviceGimmickSystem {
         const messages = this._pickLocalized({
             ko: {
                 long: `${sec}\ucd08\ub098 \ub9dd\uc124\uc600\ub124. \uc774\uc720\uac00 \ubb50\uc57c?`,
-                medium: `${sec}\ucd08... \uaf64 \ub9dd\uc124\uc600\ub124.`,
+                medium: `${sec}\ucd08. \uaf64 \ub9dd\uc124\uc600\ub124.`,
                 short: `\uc7a0\uae50 \ub9dd\uc124\uc600\uc9c0? \ub2e4 \ubd24\uc5b4.`
             },
             en: {
@@ -566,13 +566,13 @@ class DeviceGimmickSystem {
         const level = this.batteryLevel;
         const lines = this._pickLocalized({
             ko: {
-                critical: `\ubc30\ud130\ub9ac ${level}%... \uace7 \uaebc\uc9c0\uaca0\ub124. \uadf8\ub7fc \ub098\ub3c4 \uc0ac\ub77c\uc9c0\ub294 \uac70\uc57c?`,
+                critical: `\ubc30\ud130\ub9ac ${level}%. \uace7 \uaebc\uc9c0\uaca0\ub124. \uadf8\ub7fc \ub098\ub3c4 \uc0ac\ub77c\uc9c0\ub294 \uac70\uc57c?`,
                 low: `\ubc30\ud130\ub9ac ${level}%\ubc16\uc5d0 \uc548 \ub0a8\uc558\uc5b4. \uc11c\ub458\ub7ec\uc57c \ud558\uc9c0 \uc54a\uc744\uae4c?`,
                 uneasy: `\ubc30\ud130\ub9ac ${level}%. \uc5bc\ub9c8 \uc548 \ub0a8\uc558\uc5b4.`,
-                mid: `\ubc30\ud130\ub9ac ${level}%. \uc544\uc9c1 \uc2dc\uac04\uc740 \uc788\uc5b4... \uc544\ub9c8.`,
-                full: `\ubc30\ud130\ub9ac ${level}%... \ucda9\uc804\ud574\ub193\uace0 \uc654\uad6c\ub098. \uc624\ub798 \uc788\uc744 \uc0dd\uac01\uc774\uc57c?`,
+                mid: `\ubc30\ud130\ub9ac ${level}%. \uc544\uc9c1 \uc2dc\uac04\uc740 \uc788\uc5b4. \uc544\ub9c8\ub3c4.`,
+                full: `\ubc30\ud130\ub9ac ${level}%. \ucda9\uc804\ud574 \ub193\uace0 \uc654\uad6c\ub098. \uc624\ub798 \uc788\uc744 \uc0dd\uac01\uc774\uc57c?`,
                 high: `\ubc30\ud130\ub9ac ${level}%. \uc5ec\uc720 \uc788\ub124. \ucc9c\ucc9c\ud788 \ud574\ub3c4 \ub3fc.`,
-                default: `\ubc30\ud130\ub9ac ${level}%... \uc54c\uace0 \uc788\uc5b4, \ub124 \ud3f0 \uc0c1\ud0dc.`
+                default: `\ubc30\ud130\ub9ac ${level}%. \ub124 \ud734\ub300\ud3f0 \uc0c1\ud0dc\ub294 \uc54c\uace0 \uc788\uc5b4.`
             },
             en: {
                 critical: `Battery ${level}%... it will shut off soon. Will I disappear too?`,
@@ -819,7 +819,7 @@ class DeviceGimmickSystem {
             letter-spacing: 2px;
         `;
         killText.textContent = this._pickLocalized({
-            ko: "[\ud55c\uc6b8 \uc548\uc804 \uc571 \uc7ac\uc2dc\uc791 \uc911...]",
+            ko: "[\ud55c\uc6b8 \uc548\uc804 \uc571 \uc7ac\uc2dc\uc791 \uc911\u2026]",
             en: "[Restarting Hanul Safety App...]",
             ja: "[\u30cf\u30cc\u30eb\u5b89\u5168\u30a2\u30d7\u30ea\u3092\u518d\u8d77\u52d5\u4e2d...]",
             es: "[Reiniciando App de Seguridad Hanul...]",
@@ -845,7 +845,7 @@ class DeviceGimmickSystem {
      */
     flashPhoneNotification(text = null, duration = 300) {
         const displayText = text || this._pickLocalized({
-            ko: "[\ud55c\uc6b8 \uc548\uc804 \uc571] \ubaa8\ub2c8\ud130\ub9c1 \ud65c\uc131\ud654 \uc911...",
+            ko: "[\ud55c\uc6b8 \uc548\uc804 \uc571] \ubaa8\ub2c8\ud130\ub9c1 \ud65c\uc131\ud654 \uc911\u2026",
             en: "[Hanul Safety App] Monitoring active...",
             ja: "[\u30cf\u30cc\u30eb\u5b89\u5168\u30a2\u30d7\u30ea] \u30e2\u30cb\u30bf\u30ea\u30f3\u30b0\u6709\u52b9\u5316\u4e2d...",
             es: "[App de Seguridad Hanul] Monitoreo activo...",
@@ -1058,7 +1058,7 @@ class DeviceGimmickSystem {
             const gameActive = !!document.getElementById('game-screen')?.classList.contains('active');
             const shouldShow = portrait;
             const normalText = this._pickLocalized({
-                ko: "\ud654\uba74\uc744 \uac00\ub85c\ub85c \ud68c\uc804\ud574\uc8fc\uc138\uc694",
+                ko: "\ud654\uba74\uc744 \uac00\ub85c\ub85c \ub3cc\ub824 \uc8fc\uc138\uc694",
                 en: "Please rotate your device",
                 ja: "\u753b\u9762\u3092\u6a2a\u5411\u304d\u306b\u3057\u3066\u304f\u3060\u3055\u3044",
                 es: "Gira tu dispositivo",

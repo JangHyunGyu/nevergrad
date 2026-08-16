@@ -149,7 +149,7 @@ Object.assign(SCENARIO[2], {
         // SCENARIO.md 5502: NG+ 시 유나가 "이건 제가 찍은 게 아닌데요?" 0.9초 유령
         glitch: {
             ngPlusGhostText: {
-                ko: "...\uc774\uac74 \uc81c\uac00 \ucc0d\uc740 \uac8c \uc544\ub2cc\ub370\uc694?",
+                ko: "\uc774\uac74 \uc81c\uac00 \ucc0d\uc740 \uac8c \uc544\ub2cc\ub370\uc694?",
                 en: "...I didn't take this photo, though?",
                 ja: "...\u3053\u308c\u3001\u79c1\u304c\u64ae\u3063\u305f\u3082\u306e\u3058\u3083\u306a\u3044\u3067\u3059\u3051\u3069?",
                 es: "...Pero yo no tome esta foto.",

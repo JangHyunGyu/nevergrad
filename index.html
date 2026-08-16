@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" href="/assets/images/icon/nevergrad-180.png">
     <title>Nevergrad: 졸업하지 못한 교실 | 무료 웹 비주얼 노벨</title>
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="description" content="다운로드 없이 브라우저에서 바로 플레이하는 무료 학원 미스터리 비주얼 노벨. 5일의 선택, 5명의 히로인, 7개 엔딩, 7개 언어를 지원합니다.">
+    <meta name="description" content="별도 다운로드 없이 브라우저에서 바로 즐기는 무료 학원 미스터리 비주얼 노벨입니다. 5일 동안 내린 선택에 따라 다섯 히로인과 일곱 가지 결말이 달라집니다. 7개 언어를 지원합니다.">
     <meta name="keywords" content="무료 비주얼 노벨, 브라우저 미연시, 다운로드 없이 비주얼 노벨, 학원 미스터리 게임 무료, 호러 비주얼 노벨 무료, 선택지 스토리 게임 온라인, 엔딩 분기 게임, 무료 노벨 게임, 웹 비주얼 노벨, Nevergrad, 네버그라드">
     <meta name="author" content="Archerlab">
     <meta name="theme-color" content="#FFB7C5">
@@ -43,7 +43,7 @@
     <!-- OG Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nevergrad: 졸업하지 못한 교실 | 무료 웹 비주얼 노벨">
-    <meta property="og:description" content="다운로드 없이 브라우저에서 바로 플레이하는 무료 학원 미스터리 비주얼 노벨. 5일의 선택, 5명의 히로인, 7개 엔딩, 7개 언어를 지원합니다.">
+    <meta property="og:description" content="별도 다운로드 없이 브라우저에서 바로 즐기는 무료 학원 미스터리 비주얼 노벨입니다. 5일 동안 내린 선택에 따라 다섯 히로인과 일곱 가지 결말이 달라집니다. 7개 언어를 지원합니다.">
     <meta property="og:url" content="https://nevergrad.archerlab.dev/">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-title.jpg">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-dialogue.jpg">
@@ -59,7 +59,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nevergrad: 졸업하지 못한 교실">
-    <meta name="twitter:description" content="다운로드 없이 브라우저에서 바로 플레이하는 무료 학원 미스터리 비주얼 노벨. 5일의 선택, 5명의 히로인, 7개 엔딩, 7개 언어를 지원합니다.">
+    <meta name="twitter:description" content="별도 다운로드 없이 브라우저에서 바로 즐기는 무료 학원 미스터리 비주얼 노벨입니다. 5일 동안 내린 선택에 따라 다섯 히로인과 일곱 가지 결말이 달라집니다. 7개 언어를 지원합니다.">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
 
     <!-- Preconnect -->
@@ -79,7 +79,7 @@
       "@type": "VideoGame",
       "name": "Nevergrad: 졸업하지 못한 교실",
       "alternateName": ["졸업하지 못한 교실", "네버그라드", "The Classroom That Never Graduates"],
-      "description": "다운로드 없이 브라우저에서 바로 플레이하는 무료 학원 미스터리 비주얼 노벨. 5일의 선택, 5명의 히로인, 7개 엔딩, 7개 언어를 지원합니다.",
+      "description": "별도 다운로드 없이 브라우저에서 바로 즐기는 무료 학원 미스터리 비주얼 노벨입니다. 5일 동안 내린 선택에 따라 다섯 히로인과 일곱 가지 결말이 달라집니다. 7개 언어를 지원합니다.",
       "genre": ["Visual Novel", "Psychological Thriller", "School Mystery", "Interactive Fiction"],
       "gamePlatform": "Web Browser",
       "applicationCategory": "Game",
@@ -170,7 +170,7 @@
     <!-- ===== Name Input Screen ===== -->
     <div id="name-screen" class="screen">
         <div class="name-input-container">
-            <p class="name-prompt">당신의 이름은?</p>
+            <p class="name-prompt">이름은?</p>
             <input type="text" id="player-name-input" maxlength="8" placeholder="이름을 입력하세요">
             <button id="btn-start" class="menu-btn">시작</button>
         </div>
@@ -233,8 +233,8 @@
             <button id="btn-load" class="menu-btn">불러오기</button>
             <button id="btn-backlog" class="menu-btn">대사 기록</button>
             <button id="btn-settings" class="menu-btn">설정</button>
-            <button id="btn-title" class="menu-btn">타이틀로</button>
-            <button id="btn-resume" class="menu-btn">돌아가기</button>
+            <button id="btn-title" class="menu-btn">타이틀 화면</button>
+            <button id="btn-resume" class="menu-btn">게임으로 돌아가기</button>
         </div>
     </div>
 
@@ -262,7 +262,7 @@
                     <span id="settings-text-speed-value" class="settings-value">70%</span>
                 </div>
                 <div class="settings-row">
-                    <span id="settings-fullscreen-label" class="settings-label">풀스크린</span>
+                    <span id="settings-fullscreen-label" class="settings-label">전체 화면</span>
                     <button id="settings-fullscreen-toggle" class="settings-toggle">OFF</button>
                 </div>
             </div>

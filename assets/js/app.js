@@ -51,7 +51,7 @@ function requestMobileFullscreen() {
 
     // Fullscreen API (Chrome, Firefox, Edge, Samsung Internet 등)
     if (elem.requestFullscreen) {
-        elem.requestFullscreen().catch(() => {});
+        elem.requestFullscreen({ navigationUI: 'hide' }).catch(() => {});
         return true;
     } else if (elem.webkitRequestFullscreen) {
         // Safari desktop / older WebKit

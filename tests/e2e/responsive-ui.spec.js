@@ -96,6 +96,26 @@ test('title navigation survives an interrupted motion sequence', async ({ page }
     await expect(page.locator('#btn-gallery')).toBeVisible();
 });
 
+test('mobile game entry asks fullscreen to hide browser navigation', async ({ page }) => {
+    await page.addInitScript(() => {
+        window.__fullscreenRequests = [];
+        Object.defineProperty(Element.prototype, 'requestFullscreen', {
+            configurable: true,
+            value(options) {
+                window.__fullscreenRequests.push(options);
+                return Promise.resolve();
+            }
+        });
+    });
+
+    await loadGameShell(page);
+    await page.locator('#btn-new-game').click();
+
+    await expect.poll(() => page.evaluate(() => window.__fullscreenRequests)).toEqual([
+        { navigationUI: 'hide' }
+    ]);
+});
+
 test('dialogue history and keyboard controls remain reachable', async ({ page }) => {
     await loadGameShell(page);
     await page.locator('#btn-new-game').click();

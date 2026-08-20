@@ -201,17 +201,25 @@ class AudioManager {
         const filename = originalFilename.replace(/\.[^.]+$/, '');
         let fileLoadError = null;
 
-        try {
-            const response = await fetch(assetPath);
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
+        for (let attempt = 0; attempt < 2; attempt += 1) {
+            try {
+                const response = attempt === 0
+                    ? await fetch(assetPath)
+                    : await fetch(assetPath, { cache: 'reload' });
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                const arrayBuffer = await response.arrayBuffer();
+                const audioBuffer = await this.ctx.decodeAudioData(arrayBuffer);
+                this._bufferCache.set(assetPath, audioBuffer);
+                return audioBuffer;
+            } catch (e) {
+                fileLoadError = e;
+                const canRetry = attempt === 0
+                    && (typeof navigator === 'undefined' || navigator.onLine !== false);
+                if (!canRetry) break;
+                await new Promise(resolve => this._later(resolve, 250));
             }
-            const arrayBuffer = await response.arrayBuffer();
-            const audioBuffer = await this.ctx.decodeAudioData(arrayBuffer);
-            this._bufferCache.set(assetPath, audioBuffer);
-            return audioBuffer;
-        } catch (e) {
-            fileLoadError = e;
         }
 
         // File failed or does not exist: fall back to procedural BGM synth.
@@ -242,11 +250,12 @@ class AudioManager {
      * @private
      */
     _reportLoadFailure(path, fileLoadError) {
+        if (typeof navigator !== 'undefined' && navigator.onLine === false) return;
         if (this._reportedAudioFailures.has(path)) return;
-        this._reportedAudioFailures.add(path);
 
         const reporter = (typeof window !== 'undefined') ? window.__nevergradReportError : null;
         if (typeof reporter !== 'function') return;
+        this._reportedAudioFailures.add(path);
         const fileMsg = fileLoadError?.message || String(fileLoadError || 'unknown');
         try {
             reporter(

@@ -112,7 +112,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_school_1"
     },
     "day5_morning_school_1": {
-        background: "school_gate_dark",
+        background: "school_dawn",
         character: null,
         unskippable: true,
         next: "day5_morning_school_2"
@@ -222,12 +222,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_5"
     },
     "day5_morning_rescue_5": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_rescue_5a"
     },
     "day5_morning_rescue_5a": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_rescue_6"
     },
@@ -272,37 +272,37 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_14"
     },
     "day5_morning_rescue_14": {
-        character: "yuna_weak",
+        character: "yuna_desperate",
         unskippable: true,
         next: "day5_morning_rescue_15"
     },
     "day5_morning_rescue_15": {
-        character: "yuna_weak",
+        character: "yuna_desperate",
         unskippable: true,
         next: "day5_morning_rescue_16"
     },
     "day5_morning_rescue_16": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_rescue_17"
     },
     "day5_morning_rescue_17": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_rescue_18"
     },
     "day5_morning_rescue_18": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_rescue_19"
     },
     "day5_morning_rescue_19": {
-        character: "yuna_weak",
+        character: "yuna_desperate",
         unskippable: true,
         next: "day5_morning_rescue_20"
     },
     "day5_morning_rescue_20": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_rescue_21"
     },
@@ -360,12 +360,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_4"
     },
     "day5_morning_true_4": {
-        characters: { left: "yuna_weak" },
+        characters: { left: "yuna_injured_determined" },
         unskippable: true,
         next: "day5_morning_true_5"
     },
     "day5_morning_true_5": {
-        characters: { left: "yuna_weak" },
+        characters: { left: "yuna_injured_determined" },
         unskippable: true,
         next: "day5_morning_true_6"
     },
@@ -375,12 +375,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_7"
     },
     "day5_morning_true_7": {
-        characters: { left: "yuna_weak" },
+        characters: { left: "yuna_injured_determined" },
         unskippable: true,
         next: "day5_morning_true_8"
     },
     "day5_morning_true_8": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_true_9"
     },
@@ -480,37 +480,38 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_28"
     },
     "day5_morning_true_28": {
-        character: "yuna_weak",
+        background: "underground_lab",
+        character: "yuna_desperate",
         unskippable: true,
         next: "day5_morning_true_29"
     },
     "day5_morning_true_29": {
-        character: "yuna_weak",
+        character: "yuna_desperate",
         unskippable: true,
         next: "day5_morning_true_30"
     },
     "day5_morning_true_30": {
-        character: "yuna_weak",
+        character: "yuna_desperate",
         unskippable: true,
         next: "day5_morning_true_31"
     },
     "day5_morning_true_31": {
-        character: "yuna_weak",
+        character: "yuna_desperate",
         unskippable: true,
         next: "day5_morning_true_32"
     },
     "day5_morning_true_32": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_true_33"
     },
     "day5_morning_true_33": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_true_34"
     },
     "day5_morning_true_34": {
-        character: "yuna_weak",
+        character: "yuna_injured_determined",
         unskippable: true,
         next: "day5_morning_true_35"
     },

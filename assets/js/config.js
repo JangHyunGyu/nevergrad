@@ -115,6 +115,9 @@ const CONFIG = {
             cold: "assets/images/characters/eunsu_cold.webp",
             dark: "assets/images/characters/eunsu_dark.webp",
             obsessed: "assets/images/characters/eunsu_obsessed.webp",
+            angry: "assets/images/characters/eunsu_angry.webp",
+            shy: "assets/images/characters/eunsu_shy.webp",
+            close: "assets/images/characters/eunsu_close.webp",
             writing: "assets/images/characters/eunsu_normal.webp",    // alias: 서류 작성 중
             pa: "assets/images/characters/eunsu_normal.webp",         // alias: PA 방송 (음성만)
             shaking: "assets/images/characters/eunsu_shaking.webp",   // 떨리는 상태
@@ -128,6 +131,11 @@ const CONFIG = {
             cold: "assets/images/characters/riin_cold.webp",
             dark: "assets/images/characters/riin_dark.webp",
             neutral: "assets/images/characters/riin_neutral.webp",
+            startled: "assets/images/characters/riin_startled.webp",
+            strained_smile: "assets/images/characters/riin_strained_smile.webp",
+            close: "assets/images/characters/riin_close.webp",
+            pleased: "assets/images/characters/riin_pleased.webp",
+            seductive: "assets/images/characters/riin_seductive.webp",
             casual: "assets/images/characters/riin_normal.webp",      // alias: 평상시
             pain: "assets/images/characters/riin_pain.webp",          // 고통/죄책감
             relief: "assets/images/characters/riin_relief.webp"       // 안도
@@ -141,6 +149,9 @@ const CONFIG = {
             hurt: "assets/images/characters/sea_hurt.webp",
             cry: "assets/images/characters/sea_cry.webp",
             yandere: "assets/images/characters/sea_yandere.webp",
+            angry: "assets/images/characters/sea_angry.webp",
+            dark: "assets/images/characters/sea_dark.webp",
+            shy: "assets/images/characters/sea_shy.webp",
             cold: "assets/images/characters/sea_serious.webp",        // alias: 차가운 표정
             vulnerable: "assets/images/characters/sea_vulnerable.webp",
             broken_smile: "assets/images/characters/sea_broken_smile.webp"
@@ -153,6 +164,8 @@ const CONFIG = {
             cry: "assets/images/characters/yuna_cry.webp",
             weak: "assets/images/characters/yuna_weak.webp",
             determined: "assets/images/characters/yuna_determined.webp",
+            desperate: "assets/images/characters/yuna_desperate.webp",
+            injured_determined: "assets/images/characters/yuna_injured_determined.webp",
             cautious: "assets/images/characters/yuna_scared.webp",    // alias: 경계하는 상태
             worried: "assets/images/characters/yuna_scared.webp"      // alias: 걱정하는 상태
         },
@@ -163,7 +176,8 @@ const CONFIG = {
             fade: "assets/images/characters/seolhwa_fade.webp",
             fading: "assets/images/characters/seolhwa_fade.webp",     // alias: 사라지는 중
             ghost: "assets/images/characters/seolhwa_ghost.webp",
-            quiet: "assets/images/characters/seolhwa_quiet.webp"
+            quiet: "assets/images/characters/seolhwa_quiet.webp",
+            warning: "assets/images/characters/seolhwa_warning.webp"
         },
         classmate: {
             default: null  // 급우: 전용 이미지 없음, 엔진에서 null 처리
@@ -177,6 +191,7 @@ const CONFIG = {
     BACKGROUNDS: {
         // 학교 내부
         classroom: "assets/images/background/classroom.webp",
+        photo_club_room: "assets/images/background/photo_club_room.webp",
         classroom_empty: "assets/images/background/classroom_empty.webp",  // 구조 다름
         hallway: "assets/images/background/hallway.webp",
         corridor: "assets/images/background/corridor.webp",
@@ -229,6 +244,7 @@ const CONFIG = {
         student_council: "assets/images/background/student_council.webp",
         cafeteria: "assets/images/background/cafeteria.webp",
         old_building_corridor: "assets/images/background/old_building_corridor.webp",
+        old_basement_door: "assets/images/background/old_basement_door.webp",
         corridor_old: "assets/images/background/corridor_old.webp",
         corridor_main: "assets/images/background/corridor.webp",            // 본관 복도 (corridor 재사용)
         corridor_emergency: "assets/images/background/emergency_corridor.webp",

@@ -411,7 +411,7 @@ Object.assign(SCENARIO[3], {
     },
     // "...5일이야."
     "day3_night_seolhwa_5": {
-        character: "seolhwa_sad",
+        character: "seolhwa_warning",
         charOpacity: 0.82,
         typingSpeed: 120,
         unskippable: true,
@@ -434,7 +434,7 @@ Object.assign(SCENARIO[3], {
     },
     // "5일 안에... 여기서 나가야 해."
     "day3_night_seolhwa_7": {
-        character: "seolhwa_normal",
+        character: "seolhwa_warning",
         charOpacity: 0.82,
         typingSpeed: 150,
         unskippable: true,
@@ -443,14 +443,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_7a"
     },
     "day3_night_seolhwa_7a": {
-        character: "seolhwa_normal",
+        character: "seolhwa_warning",
         charOpacity: 0.82,
         unskippable: true,
         next: "day3_night_seolhwa_8"
     },
     // "나처럼 되기 전에."
     "day3_night_seolhwa_8": {
-        character: "seolhwa_normal",
+        character: "seolhwa_warning",
         charOpacity: 0.82,
         typingSpeed: 150,
         unskippable: true,

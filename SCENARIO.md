@@ -9404,7 +9404,7 @@ _캐릭터: `seolhwa_fading`_
 ### `day3_night_seolhwa_5`
 
 _source: `day3_4_night.js / day3_night.json`_
-_캐릭터: `seolhwa_sad`_
+_캐릭터: `seolhwa_warning`_
 
 **창가의 여학생**
 ```text
@@ -9434,7 +9434,7 @@ _캐릭터: `seolhwa_sad`_
 ### `day3_night_seolhwa_7`
 
 _source: `day3_4_night.js / day3_night.json`_
-_캐릭터: `seolhwa_normal`_
+_캐릭터: `seolhwa_warning`_
 
 **창가의 여학생**
 ```text
@@ -9444,7 +9444,7 @@ _캐릭터: `seolhwa_normal`_
 ### `day3_night_seolhwa_7a`
 
 _source: `day3_4_night.js / day3_night.json`_
-_캐릭터: `seolhwa_normal`_
+_캐릭터: `seolhwa_warning`_
 
 **나**
 ```text
@@ -9454,7 +9454,7 @@ _캐릭터: `seolhwa_normal`_
 ### `day3_night_seolhwa_8`
 
 _source: `day3_4_night.js / day3_night.json`_
-_캐릭터: `seolhwa_normal`_
+_캐릭터: `seolhwa_warning`_
 
 **창가의 여학생**
 ```text
@@ -10627,7 +10627,7 @@ _source: `day4_2_lunch.js / day4_lunch.json`_
 ### `day4_lunch_yuna_3`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
-_배경: `classroom_empty`_
+_배경: `photo_club_room`_
 
 **나**
 ```text
@@ -10691,7 +10691,7 @@ _source: `day4_2_lunch.js / day4_lunch.json`_
 ### `day4_lunch_yuna_10`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
-_배경: `old_building`_
+_배경: `old_basement_door`_
 
 **나**
 ```text
@@ -10827,6 +10827,7 @@ _source: `day4_2_lunch.js / day4_lunch.json`_
 ### `day4_lunch_nurse_3`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_startled`_
 
 **나**
 ```text
@@ -10836,7 +10837,7 @@ _source: `day4_2_lunch.js / day4_lunch.json`_
 ### `day4_lunch_nurse_4`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_startled`_
 
 **강리인**
 ```text
@@ -10846,7 +10847,7 @@ _캐릭터: `riin_smile`_
 ### `day4_lunch_nurse_5`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_strained_smile`_
 
 **나**
 ```text
@@ -10924,7 +10925,7 @@ _캐릭터: `riin_gentle`_
 ### `day4_lunch_nurse_10`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_strained_smile`_
 
 **강리인**
 ```text
@@ -10934,7 +10935,7 @@ _캐릭터: `riin_smile`_
 ### `day4_lunch_nurse_11`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_strained_smile`_
 
 **나**
 ```text
@@ -10944,7 +10945,7 @@ _캐릭터: `riin_smile`_
 ### `day4_lunch_nurse_12`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
-_캐릭터: `riin_smile`_
+_캐릭터: `riin_strained_smile`_
 
 **리인**
 ```text
@@ -10974,6 +10975,7 @@ _캐릭터: `riin_smile`_
 ### `day4_lunch_nurse_15`
 
 _source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_strained_smile`_
 
 **나**
 ```text
@@ -13384,7 +13386,7 @@ _배경: `dawn_road` / BGM: `silence_tension.mp3`_
 ### `day5_morning_school_1`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_배경: `school_gate_dark`_
+_배경: `school_dawn`_
 
 **나**
 ```text
@@ -13565,7 +13567,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_rescue_5`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **최유나**
 ```text
@@ -13575,7 +13577,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_rescue_5a`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **유나**
 ```text
@@ -13665,7 +13667,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_rescue_14`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_desperate`_
 
 **유나**
 ```text
@@ -13675,7 +13677,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_rescue_15`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_desperate`_
 
 **최유나**
 ```text
@@ -13685,7 +13687,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_rescue_16`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **최유나**
 ```text
@@ -13695,7 +13697,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_rescue_17`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **최유나**
 ```text
@@ -13705,7 +13707,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_rescue_18`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **최유나**
 ```text
@@ -13715,7 +13717,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_rescue_19`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_desperate`_
 
 **유나**
 ```text
@@ -13725,7 +13727,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_rescue_20`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **최유나**
 ```text
@@ -13842,7 +13844,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 ### `day5_morning_true_8`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **유나**
 ```text
@@ -14031,7 +14033,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 ### `day5_morning_true_28`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_배경: `underground_lab` / 캐릭터: `yuna_desperate`_
 
 **나**
 ```text
@@ -14041,7 +14043,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_true_29`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_desperate`_
 
 **최유나**
 ```text
@@ -14051,7 +14053,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_true_30`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_desperate`_
 
 **최유나**
 ```text
@@ -14061,7 +14063,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_true_31`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_desperate`_
 
 **유나**
 ```text
@@ -14071,7 +14073,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_true_32`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **최유나**
 ```text
@@ -14081,7 +14083,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_true_33`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **최유나**
 ```text
@@ -14091,7 +14093,7 @@ _캐릭터: `yuna_weak`_
 ### `day5_morning_true_34`
 
 _source: `day5_1_morning.js / day5_morning.json`_
-_캐릭터: `yuna_weak`_
+_캐릭터: `yuna_injured_determined`_
 
 **나**
 ```text
@@ -17027,7 +17029,7 @@ _배경: `black` / BGM: `confrontation.mp3`_
 ### `day5_after_cage_1`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_배경: `classroom` / BGM: `ending_dark.mp3` / 캐릭터: `eunsu_gentle`_
+_배경: `classroom_afternoon` / BGM: `ending_dark.mp3` / 캐릭터: `eunsu_gentle`_
 
 **박은수**
 ```text

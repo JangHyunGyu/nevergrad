@@ -52,7 +52,7 @@ Object.assign(SCENARIO[4], {
 
     // ── 사물함 조사 ──
     "day4_lunch_yuna_3": {
-        background: "classroom_empty",
+        background: "photo_club_room",
         character: null,
         // 유나의 사물함 — 텅 비어있다
         interaction: { type: "locker_search", search: "yuna_locker" },
@@ -101,7 +101,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_yuna_10": {
         character: null,
         // 구관 복도 끝, 녹슨 문, 새 자물쇠
-        background: "old_building",
+        background: "old_basement_door",
         unskippable: true,
         next: "day4_lunch_yuna_11"
     },
@@ -205,18 +205,18 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_3"
     },
     "day4_lunch_nurse_3": {
-        character: null,
+        character: "riin_startled",
         // 나를 보고 멈춘다
         next: "day4_lunch_nurse_4"
     },
     "day4_lunch_nurse_4": {
         // "놀랐잖아"
-        character: "riin_smile",
+        character: "riin_startled",
         next: "day4_lunch_nurse_5"
     },
     "day4_lunch_nurse_5": {
         // 주사기를 뒤로 숨긴다 — met_yuna에 따라 유나 질문 or 주사기 질문
-        character: "riin_smile",
+        character: "riin_strained_smile",
         branches: [
             { condition: "met_yuna", next: "day4_lunch_nurse_6" }
         ],
@@ -260,16 +260,16 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_nurse_10": {
         // "유나는 괜찮을 거야"
-        character: "riin_smile",
+        character: "riin_strained_smile",
         next: "day4_lunch_nurse_11"
     },
     "day4_lunch_nurse_11": {
         // '괜찮을 거야' — 미래형
-        character: "riin_smile",
+        character: "riin_strained_smile",
         next: "day4_lunch_nurse_12"
     },
     "day4_lunch_nurse_12": {
-        character: "riin_smile",
+        character: "riin_strained_smile",
         // 리인은 유나가 지금 괜찮지 않다는 걸 알고 있다
         next: "day4_lunch_nurse_13"
     },
@@ -285,7 +285,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_nurse_15": {
         // 웃는 얼굴, 부드러운 목소리, 주사기
-        character: null,
+        character: "riin_strained_smile",
         choices: [
             { next: "day4_lunch_nurse_16", stats: { riin: { affinity: -3 } } },
             { next: "day4_lunch_nurse_16", stats: { riin: { affinity: 2 } } },

@@ -51,7 +51,7 @@ Object.assign(SCENARIO[5], {
     // A) CAGE 루트 — "여기 남는다" 선택 후
     // ══════════════════════════════════════
     "day5_after_cage_1": {
-        background: "classroom",
+        background: "classroom_afternoon",
         bgm: "ending_dark.mp3",
         character: "eunsu_gentle",
         unskippable: true,

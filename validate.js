@@ -122,6 +122,9 @@ function collectHtmlPaths(dir) {
         if (!/<link\s+rel="apple-touch-icon"\s+href="[^"]+"/i.test(html)) {
             errors.push(`[MANIFEST] apple-touch-icon missing from ${path.relative(ROOT, htmlPath)}`);
         }
+        if (/fonts\.(?:googleapis|gstatic)\.com/i.test(html)) {
+            errors.push(`[RESOURCE] external Google font found in ${path.relative(ROOT, htmlPath)}`);
+        }
     }
 }
 

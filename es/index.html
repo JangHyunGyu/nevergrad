@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon" href="/assets/images/icon/nevergrad-180.png">
     <title>Nevergrad - Visual Novel Gratis en Navegador</title>
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="description" content="Juega Nevergrad, una visual novel escolar de misterio gratis y sin descarga. Cinco días de decisiones, cinco heroínas, siete finales y soporte multilingüe.">
     <meta name="keywords" content="visual novel gratis, visual novel en navegador, visual novel sin descarga, juego de misterio escolar gratis, novela visual de terror psicológico, juego narrativo con decisiones, juego con múltiples finales, Nevergrad">
     <meta name="author" content="Archerlab">
@@ -47,6 +48,11 @@
     <meta property="og:description" content="Juega Nevergrad, una visual novel escolar de misterio gratis y sin descarga. Cinco días de decisiones, cinco heroínas, siete finales y soporte multilingüe.">
     <meta property="og:url" content="https://nevergrad.archerlab.dev/es/">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-title.jpg">
+    <meta property="og:image:secure_url" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-title.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:image:alt" content="Nevergrad title screen">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-dialogue.jpg">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-classroom.jpg">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-character-sea.jpg">
@@ -62,6 +68,7 @@
     <meta name="twitter:title" content="Nevergrad: Visual Novel Gratis en Navegador">
     <meta name="twitter:description" content="Una visual novel escolar de misterio gratis, sin descarga. Cinco días, cinco heroínas y siete finales.">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
+    <meta name="twitter:image:alt" content="Nevergrad social preview">
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -73,6 +80,7 @@
     {
       "@context": "https://schema.org",
       "@type": "VideoGame",
+      "@id": "https://nevergrad.archerlab.dev/#videogame",
       "name": "Nevergrad: El Aula Sin Graduación",
       "alternateName": ["졸업하지 못한 교실", "네버그라드", "The Classroom That Never Graduates"],
       "description": "Juega Nevergrad, una visual novel escolar de misterio gratis y sin descarga. Cinco días de decisiones, cinco heroínas, siete finales y soporte multilingüe.",
@@ -94,6 +102,36 @@
         "https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-cg-rain.jpg"
       ],
       "author": { "@type": "Organization", "name": "Archerlab" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://archerlab.dev/#organization",
+          "name": "Archerlab",
+          "url": "https://archerlab.dev/"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://nevergrad.archerlab.dev/#website",
+          "url": "https://nevergrad.archerlab.dev/",
+          "name": "Nevergrad",
+          "publisher": { "@id": "https://archerlab.dev/#organization" },
+          "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt"]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://nevergrad.archerlab.dev/es/#webpage",
+          "url": "https://nevergrad.archerlab.dev/es/",
+          "name": "Nevergrad",
+          "isPartOf": { "@id": "https://nevergrad.archerlab.dev/#website" },
+          "mainEntity": { "@id": "https://nevergrad.archerlab.dev/#videogame" },
+          "inLanguage": "es"
+        }
+      ]
     }
     </script>
 <script src="../assets/js/ga-engagement.js?v=20260618-engagement" defer></script>

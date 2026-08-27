@@ -1,0 +1,58 @@
+# Keep Cloudflare preview and default hosts out of search results.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex, follow
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex, follow
+
+# Keep repository source, logs, tests, and configuration out of search results.
+/.github/*
+  X-Robots-Tag: noindex, nofollow
+
+/.wrangler/*
+  X-Robots-Tag: noindex, nofollow
+
+/classified/*
+  X-Robots-Tag: noindex, nofollow
+
+/cycle_logs/*
+  X-Robots-Tag: noindex, nofollow
+
+/model_adapters/*
+  X-Robots-Tag: noindex, nofollow
+
+/project-cupid/*
+  X-Robots-Tag: noindex, nofollow
+
+/scripts/*
+  X-Robots-Tag: noindex, nofollow
+
+/subject_records/*
+  X-Robots-Tag: noindex, nofollow
+
+/test-results/*
+  X-Robots-Tag: noindex, nofollow
+
+/tests/*
+  X-Robots-Tag: noindex, nofollow
+
+/tmp/*
+  X-Robots-Tag: noindex, nofollow
+
+/*.cjs
+  X-Robots-Tag: noindex, nofollow
+
+/*.js
+  X-Robots-Tag: noindex, nofollow
+
+/*.json
+  X-Robots-Tag: noindex, nofollow
+
+/*.log
+  X-Robots-Tag: noindex, nofollow
+
+/*.md
+  X-Robots-Tag: noindex, nofollow
+
+/*.py
+  X-Robots-Tag: noindex, nofollow

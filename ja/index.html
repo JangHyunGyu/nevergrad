@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon" href="/assets/images/icon/nevergrad-180.png">
     <title>Nevergrad - 無料ブラウザビジュアルノベル</title>
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="description" content="ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、7言語に対応。">
     <meta name="keywords" content="無料ビジュアルノベル, ブラウザ ビジュアルノベル, ダウンロード不要 ノベルゲーム, 学園ミステリー ゲーム, ホラー ビジュアルノベル 無料, 選択肢 ノベルゲーム, マルチエンディング, Nevergrad">
     <meta name="author" content="Archerlab">
@@ -47,6 +48,11 @@
     <meta property="og:description" content="ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、7言語に対応。">
     <meta property="og:url" content="https://nevergrad.archerlab.dev/ja/">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-title.jpg">
+    <meta property="og:image:secure_url" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-title.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:image:alt" content="Nevergrad title screen">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-dialogue.jpg">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-classroom.jpg">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-character-sea.jpg">
@@ -62,6 +68,7 @@
     <meta name="twitter:title" content="Nevergrad: 無料ブラウザビジュアルノベル">
     <meta name="twitter:description" content="ダウンロード不要で遊べる無料の学園ミステリー・ビジュアルノベル。5日間、5人のヒロイン、7つのエンディング。7言語対応。">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
+    <meta name="twitter:image:alt" content="Nevergrad social preview">
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -75,6 +82,7 @@
     {
       "@context": "https://schema.org",
       "@type": "VideoGame",
+      "@id": "https://nevergrad.archerlab.dev/#videogame",
       "name": "Nevergrad: 卒業できない教室",
       "alternateName": ["졸업하지 못한 교실", "네버그라드", "The Classroom That Never Graduates"],
       "description": "ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、7言語に対応。",
@@ -96,6 +104,36 @@
         "https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-cg-rain.jpg"
       ],
       "author": { "@type": "Organization", "name": "Archerlab" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://archerlab.dev/#organization",
+          "name": "Archerlab",
+          "url": "https://archerlab.dev/"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://nevergrad.archerlab.dev/#website",
+          "url": "https://nevergrad.archerlab.dev/",
+          "name": "Nevergrad",
+          "publisher": { "@id": "https://archerlab.dev/#organization" },
+          "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt"]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://nevergrad.archerlab.dev/ja/#webpage",
+          "url": "https://nevergrad.archerlab.dev/ja/",
+          "name": "Nevergrad",
+          "isPartOf": { "@id": "https://nevergrad.archerlab.dev/#website" },
+          "mainEntity": { "@id": "https://nevergrad.archerlab.dev/#videogame" },
+          "inLanguage": "ja"
+        }
+      ]
     }
     </script>
 <script src="../assets/js/ga-engagement.js?v=20260618-engagement" defer></script>

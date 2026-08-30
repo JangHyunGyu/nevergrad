@@ -7,6 +7,7 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT = __dirname;
 const SITE = 'https://nevergrad.archerlab.dev';
 const LASTMOD = '2026-07-10';
+const ORIGIN_TRIAL_TOKEN = 'Agn9opFYdjvT/UqEIvt4RnCkmN8Kt+8/lzvg731pKSz7MpNoJkLvra/pLOIFgR9GZb39JbBGeJ+CDO++Tus3FggAAABmeyJvcmlnaW4iOiJodHRwczovL2FyY2hlcmxhYi5kZXY6NDQzIiwiZmVhdHVyZSI6IkhUTUxJbkNhbnZhcyIsImV4cGlyeSI6MTc5MjQ1NDQwMCwiaXNTdWJkb21haW4iOnRydWV9';
 
 const HOME = {
   ko: '/',
@@ -228,7 +229,7 @@ const CLUSTERS = [
         meta: '무료 비주얼 노벨을 브라우저에서 바로 즐겨보세요. Nevergrad는 별도 다운로드 없이 플레이하는 학원 미스터리 선택형 게임입니다.',
         intro: '무료 비주얼 노벨을 찾고 있다면 설치 없이 링크만 열어 시작할 수 있습니다. Nevergrad는 5일 동안 내린 선택이 일곱 가지 결말로 이어지는 학원 미스터리 비주얼 노벨입니다.',
         angleTitle: '브라우저에서 바로 즐길 수 있는 이유',
-        angle: ['결제 없이 첫 장면부터 바로 플레이할 수 있습니다.', '학원물과 미스터리, 선택형 스토리의 재미를 한 게임에서 만날 수 있습니다.', '모바일에서도 링크만 열면 같은 게임을 시작할 수 있습니다.']
+        angle: ['결제 없이 첫 장면부터 플레이할 수 있습니다.', '학원물, 미스터리, 선택형 스토리를 한 게임에 담았습니다.', '모바일에서도 링크만 열면 같은 게임을 시작할 수 있습니다.']
       },
       en: {
         slug: 'free-browser-visual-novel',
@@ -362,9 +363,9 @@ const CLUSTERS = [
         h1: '무료 학교 미스터리 게임 - Nevergrad',
         title: '무료 학교 미스터리 게임 | Nevergrad 비주얼 노벨',
         meta: '무료 학교 미스터리 게임을 브라우저에서 즐겨보세요. Nevergrad는 선택에 따라 관계와 결말이 달라지는 학원 스릴러 비주얼 노벨입니다.',
-        intro: '익숙한 교실에 낯선 규칙이 스며들 때 학교 미스터리의 긴장감이 살아납니다. Nevergrad는 평범한 전학 첫날부터 5일 동안 학교의 비밀을 추적하는 무료 비주얼 노벨입니다.',
-        angleTitle: '학원 미스터리로서의 매력',
-        angle: ['교실과 복도, 옥상, 기록실 등 익숙한 학교 공간이 이야기의 핵심 무대입니다.', '선택에 따라 히로인과의 관계도, 진실에 다가가는 방식도 달라집니다.', '잔잔한 로맨스가 서서히 미스터리로 바뀌며 긴장감을 쌓습니다.']
+        intro: '익숙한 교실에서 낯선 규칙이 하나씩 드러납니다. Nevergrad는 평범한 전학 첫날부터 5일 동안 학교의 비밀을 추적하는 무료 비주얼 노벨입니다.',
+        angleTitle: '학원 미스터리의 매력',
+        angle: ['교실과 복도, 옥상, 기록실 같은 익숙한 학교 공간이 주요 무대입니다.', '선택에 따라 히로인과의 관계도, 진실에 다가가는 방식도 달라집니다.', '잔잔한 로맨스가 서서히 미스터리로 바뀌며 긴장감을 쌓습니다.']
       },
       en: {
         slug: 'school-mystery-visual-novel',
@@ -430,9 +431,9 @@ const CLUSTERS = [
         h1: '무료 호러 비주얼 노벨 - Nevergrad 심리 스릴러',
         title: '무료 호러 비주얼 노벨 | Nevergrad 심리 스릴러',
         meta: '무료 호러 비주얼 노벨을 브라우저에서 즐겨보세요. Nevergrad는 학원 로맨스로 시작해 심리 스릴러로 바뀌는 미스터리 게임입니다.',
-        intro: '호러 비주얼 노벨은 큰 놀래키기보다 익숙한 장면이 조금씩 어긋날 때 더 섬뜩합니다. Nevergrad는 평온한 학원 로맨스로 시작해 심리 스릴러로 바뀌는 무료 웹 게임입니다.',
-        angleTitle: '심리 호러로서의 매력',
-        angle: ['초반에는 평범한 학원 로맨스처럼 보이지만 점차 위화감이 짙어집니다.', '기억과 반복, 관찰이 공포를 이끄는 핵심 소재입니다.', '선택과 기록이 쌓일수록 공포도 함께 짙어집니다.']
+        intro: '호러 비주얼 노벨은 갑자기 튀어나오는 연출보다 익숙한 장면이 조금씩 어긋날 때 더 섬뜩합니다. Nevergrad는 평온한 학원 로맨스로 시작해 심리 스릴러로 바뀌는 무료 웹 게임입니다.',
+        angleTitle: '심리 호러의 매력',
+        angle: ['초반에는 평범한 학원 로맨스처럼 보이지만 점차 위화감이 짙어집니다.', '기억과 반복, 관찰이 공포를 키웁니다.', '선택과 기록이 쌓일수록 공포도 커집니다.']
       },
       en: {
         slug: 'psychological-horror-visual-novel',
@@ -575,6 +576,7 @@ function renderPage(cluster, lang, page) {
 <head>
   <script src="../assets/js/error-reporter.js?v=20260801-optional-analytics-filter"></script>
   <meta charset="UTF-8">
+  <meta http-equiv="origin-trial" content="${ORIGIN_TRIAL_TOKEN}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHtml(page.title)}</title>
   <meta name="description" content="${escapeHtml(page.meta)}">
@@ -676,8 +678,11 @@ function updateRootSitemap(fragment) {
   if (!fs.existsSync(sitemapPath)) return;
 
   let sitemap = fs.readFileSync(sitemapPath, 'utf-8');
+  const trafficBlock = sitemap.match(/<!-- traffic-pages:start -->[\s\S]*?<!-- traffic-pages:end -->/)?.[0] || '';
+  if (trafficBlock) sitemap = sitemap.replace(trafficBlock, '');
   sitemap = sitemap.replace(/\s*<url>\s*<loc>https:\/\/nevergrad\.archerlab\.dev\/seo\/[\s\S]*?<\/url>/g, '');
-  sitemap = sitemap.replace(/\s*<\/urlset>\s*$/m, `\n${fragment}\n</urlset>\n`);
+  const additions = trafficBlock ? `${fragment}\n${trafficBlock}` : fragment;
+  sitemap = sitemap.replace(/\s*<\/urlset>\s*$/m, `\n${additions}\n</urlset>\n`);
   fs.writeFileSync(sitemapPath, sitemap, 'utf-8');
 }
 

@@ -192,7 +192,7 @@ class I18nManager {
                 noon:        "{time}. 점심시간이네. 밥은 먹었어?",
                 afternoon:   "{time}. 오후네. 방과 후까지 얼마 안 남았어.",
                 sunset:      "{time}. 해가 지고 있어. 학교에 남아 있을 거야?",
-                evening:     "{time}. 밤이 되고 있어. 학교가 조용해지는 시간이야.",
+                evening:     "{time}. 밤이 됐네. 학교가 조용해질 시간이야.",
                 night:       "{time}. 늦었네. 여기 혼자 남아 있을 거야?"
             }
         },

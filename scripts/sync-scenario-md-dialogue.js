@@ -74,6 +74,14 @@ function normalizeText(value) {
     return String(value ?? '').replace(/\r\n/g, '\n').trimEnd();
 }
 
+function normalizeLineEndings(value) {
+    return String(value ?? '').replace(/\r\n?/g, '\n');
+}
+
+function hasContentDifference(current, next) {
+    return normalizeLineEndings(current) !== normalizeLineEndings(next);
+}
+
 function quoteBlock(text) {
     return ['```text', normalizeText(text), '```'].join('\n');
 }
@@ -263,7 +271,7 @@ function main() {
     const next = replaceOrInsertSection(current, section);
 
     if (checkOnly) {
-        if (current !== next) {
+        if (hasContentDifference(current, next)) {
             console.error('SCENARIO.md dialogue/narration block is out of sync.');
             console.error('Run: node scripts/sync-scenario-md-dialogue.js');
             process.exit(1);
@@ -272,7 +280,7 @@ function main() {
         return;
     }
 
-    if (current !== next) {
+    if (hasContentDifference(current, next)) {
         fs.writeFileSync(SCENARIO_MD, next, 'utf8');
         console.log(`SCENARIO.md synchronized (${stats.displayedText} text entries, ${stats.choices} choices).`);
     } else {
@@ -280,4 +288,11 @@ function main() {
     }
 }
 
-main();
+if (require.main === module) {
+    main();
+}
+
+module.exports = {
+    hasContentDifference,
+    normalizeLineEndings
+};

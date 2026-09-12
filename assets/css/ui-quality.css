@@ -72,3 +72,7 @@ body:has(#title-screen.active) .binaural-toast { bottom: max(112px,calc(env(safe
   .name-prompt { margin-bottom: 12px; }
 }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+@media (orientation:landscape) and (max-height:500px) {
+  .title-menu { max-width: min(600px,calc(100% - max(24px,env(safe-area-inset-left)) - max(24px,env(safe-area-inset-right)))); }
+  .dialogue-box { padding-left: max(18px,env(safe-area-inset-left)); padding-right: max(18px,env(safe-area-inset-right)); }
+}

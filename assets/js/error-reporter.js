@@ -3,7 +3,7 @@
 
     if (window.__nevergradErrorReporterInstalled) return;
 
-    var VERSION = '20260801-optional-analytics-filter';
+    var VERSION = '20260912-lifecycle-recovery';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'nevergrad-error-queue-v2';
     var SESSION_KEY = 'nevergrad-error-session-v2';
@@ -119,9 +119,13 @@
         return window.location.href;
     }
 
-    function isIgnorableResourceFailure(tagName, resource) {
-        return tagName === 'SCRIPT'
-            && /^https:\/\/www\.googletagmanager\.com\/gtag\/js(?:[?#]|$)/i.test(String(resource || ''));
+    function isIgnorableResourceFailure(tagName, resource, target) {
+        if (tagName !== 'SCRIPT') return false;
+        if (/^https:\/\/www\.googletagmanager\.com\/gtag\/js(?:[?#]|$)/i.test(String(resource || ''))) {
+            return true;
+        }
+        return target && typeof target.getAttribute === 'function'
+            && target.getAttribute('data-nevergrad-recoverable-dependency') === 'LifecycleManager';
     }
 
     function enqueue(payload) {
@@ -227,7 +231,7 @@
             var tagName = String(target.tagName || '').toUpperCase();
             if (tagName !== 'SCRIPT' && tagName !== 'LINK') return;
             var resource = target.src || target.href || '';
-            if (isIgnorableResourceFailure(tagName, resource)) return;
+            if (isIgnorableResourceFailure(tagName, resource, target)) return;
             report(
                 'ResourceError',
                 'Failed to load resource: ' + (tagName || 'UNKNOWN'),

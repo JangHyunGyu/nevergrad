@@ -29,7 +29,12 @@ test('all seven localized shells load LifecycleManager before GameEngine', () =>
     for (const html of ['index.html', 'en/index.html', 'ja/index.html', 'es/index.html', 'fr/index.html', 'de/index.html', 'pt/index.html']) {
         const source = read(html);
         const lifecycleIndex = source.indexOf('LifecycleManager.js');
+        const recoveryIndex = source.indexOf("typeof window.LifecycleManager !== 'function'");
+        const stateIndex = source.indexOf('StateManager.js');
         const engineIndex = source.indexOf('GameEngine.js');
-        assert.ok(lifecycleIndex >= 0 && engineIndex > lifecycleIndex, html);
+        assert.match(source, /data-nevergrad-recoverable-dependency="LifecycleManager"/);
+        assert.match(source, /LifecycleManager\.js\?v=20260912-lifecycle-retry/);
+        assert.ok(lifecycleIndex >= 0 && recoveryIndex > lifecycleIndex, html);
+        assert.ok(stateIndex > recoveryIndex && engineIndex > stateIndex, html);
     }
 });

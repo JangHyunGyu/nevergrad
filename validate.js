@@ -87,7 +87,7 @@ function basenameNoQuery(ref) {
 function collectHtmlPaths(dir) {
     const results = [];
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-        if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === '.wrangler') continue;
+        if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === '.wrangler' || entry.name === 'tmp') continue;
         const full = path.join(dir, entry.name);
         if (entry.isDirectory()) results.push(...collectHtmlPaths(full));
         else if (entry.isFile() && entry.name.endsWith('.html')) results.push(full);
@@ -130,11 +130,12 @@ function collectHtmlPaths(dir) {
 
 {
     const reporter = fs.readFileSync(path.join(ROOT, 'assets/js/error-reporter.js'), 'utf8');
-    const reporterVersion = '20260801-optional-analytics-filter';
+    const reporterVersion = '20260912-lifecycle-recovery';
     if (!reporter.includes(`var VERSION = '${reporterVersion}'`)
         || !reporter.includes('isIgnorableResourceFailure')
-        || !reporter.includes('www\\.googletagmanager\\.com\\/gtag\\/js')) {
-        errors.push('[ERROR_REPORTER] optional Google Analytics resource filter or reporter version is missing');
+        || !reporter.includes('www\\.googletagmanager\\.com\\/gtag\\/js')
+        || !reporter.includes('data-nevergrad-recoverable-dependency')) {
+        errors.push('[ERROR_REPORTER] resource recovery filter or reporter version is missing');
     }
     for (const htmlFile of collectHtmlPaths(ROOT)) {
         const html = fs.readFileSync(htmlFile, 'utf8');

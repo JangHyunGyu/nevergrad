@@ -4,7 +4,7 @@
     "description": "별도 다운로드 없이 브라우저에서 바로 즐기는 무료 학원 미스터리 비주얼 노벨입니다.",
     "start_url": "/",
     "display": "fullscreen",
-    "orientation": "landscape",
+    "orientation": "any",
     "background_color": "#000000",
     "theme_color": "#FFB7C5",
     "icons": [
@@ -20,5 +20,11 @@
             "type": "image/png",
             "purpose": "any"
         }
+    ],
+    "id": "/",
+    "scope": "/",
+    "display_override": [
+        "fullscreen",
+        "standalone"
     ]
 }

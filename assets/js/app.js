@@ -41,37 +41,7 @@ function showBinauralToast(message) {
  * - iOS Safari는 Fullscreen API 미지원이므로 standalone 모드(PWA)로 대체
  */
 function requestMobileFullscreen() {
-    const elem = document.documentElement;
-    if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
-        return false;
-    }
-    if (navigator.userActivation && !navigator.userActivation.isActive) {
-        return false;
-    }
-
-    // Fullscreen API (Chrome, Firefox, Edge, Samsung Internet 등)
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen({ navigationUI: 'hide' }).catch(() => {});
-        return true;
-    } else if (elem.webkitRequestFullscreen) {
-        // Safari desktop / older WebKit
-        try {
-            elem.webkitRequestFullscreen();
-            return true;
-        } catch (_) {
-            return false;
-        }
-    } else if (elem.msRequestFullscreen) {
-        // IE11 / Edge Legacy
-        try {
-            elem.msRequestFullscreen();
-            return true;
-        } catch (_) {
-            return false;
-        }
-    }
-    // iOS Safari: Fullscreen API 미지원 — PWA standalone + viewport meta로 대응
-    return false;
+    return window.ArcherImmersive?.autoEnter();
 }
 
 /**

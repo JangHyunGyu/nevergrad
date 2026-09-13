@@ -12,7 +12,7 @@
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="origin-trial" content="Agn9opFYdjvT/UqEIvt4RnCkmN8Kt+8/lzvg731pKSz7MpNoJkLvra/pLOIFgR9GZb39JbBGeJ+CDO++Tus3FggAAABmeyJvcmlnaW4iOiJodHRwczovL2FyY2hlcmxhYi5kZXY6NDQzIiwiZmVhdHVyZSI6IkhUTUxJbkNhbnZhcyIsImV4cGlyeSI6MTc5MjQ1NDQwMCwiaXNTdWJkb21haW4iOnRydWV9">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/images/icon/nevergrad-180.png">
     <title>Nevergrad - Kostenlose Visual Novel im Browser</title>
@@ -135,12 +135,13 @@
     }
     </script>
 <script src="../assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
-    <link rel="stylesheet" href="../assets/css/buttons.css?v=1.0.0">
+    <link rel="stylesheet" href="../assets/css/buttons.css?v=20260913-immersive-v1">
+    <script src="../assets/js/immersive.js?v=20260913-immersive-v1" defer></script>
 </head>
 <body>
     <!-- ===== Title Screen ===== -->
     <div id="title-screen" class="screen active">
-        <a href="https://archerlab.dev" target="_blank" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab-Startseite" title="ArcherLab">ArcherLab</a>
+        <a href="https://archerlab.dev" rel="noopener noreferrer" class="archerlab-link" aria-label="ArcherLab-Startseite" title="ArcherLab">ArcherLab</a>
         <select class="lang-switcher" aria-label="Sprache" onchange="if(this.value)location.href=this.value">
             <option value="/">Koreanisch</option>
             <option value="/en/">English</option>
@@ -175,8 +176,8 @@
             <p class="title-subtitle">Fünf-Tage-Protokoll</p>
         </div>
         <div class="title-menu">
-            <button id="btn-new-game" class="menu-btn">Neues Spiel</button>
-            <button id="btn-continue" class="menu-btn" disabled>Fortsetzen</button>
+            <button id="btn-new-game" data-fullscreen-start class="menu-btn">Neues Spiel</button>
+            <button id="btn-continue" data-fullscreen-start class="menu-btn" disabled>Fortsetzen</button>
             <button id="btn-gallery" class="menu-btn">Galerie</button>
         </div>
         <div class="title-footer">
@@ -206,7 +207,7 @@
         <div class="name-input-container">
             <p class="name-prompt">Wie heißt du?</p>
             <input type="text" id="player-name-input" maxlength="8" placeholder="Namen eingeben">
-            <button id="btn-start" class="menu-btn">Start</button>
+            <button id="btn-start" data-fullscreen-start class="menu-btn">Start</button>
         </div>
     </div>
 
@@ -228,7 +229,7 @@
         <div id="glitch-overlay" class="glitch-overlay hidden"></div>
 
         <!-- Dialogue Box -->
-        <div id="dialogue-box" class="dialogue-box" role="button" tabindex="0" aria-label="Dialog fortsetzen">
+        <div id="dialogue-box" data-fullscreen-play class="dialogue-box" role="button" tabindex="0" aria-label="Dialog fortsetzen">
             <div id="speaker-name" class="speaker-name"></div>
             <div id="dialogue-text" class="dialogue-text"></div>
             <div id="click-indicator" class="click-indicator">▼</div>
@@ -444,9 +445,9 @@
     <script src="../assets/js/modules/MetaHorrorSystem.js"></script>
     <script src="../assets/js/modules/FaviconManager.js"></script>
     <script src="../assets/js/modules/GallerySystem.js"></script>
-    <script src="../assets/js/modules/GameEngine.js"></script>
+    <script src="../assets/js/modules/GameEngine.js?v=20260913-immersive-v1"></script>
 
     <!-- App Entry -->
-    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/app.js?v=20260913-immersive-v1"></script>
 </body>
 </html>

@@ -461,14 +461,7 @@ class GameEngine {
 
         document.getElementById('settings-fullscreen-toggle')?.addEventListener('click', () => {
             this.audio?.playUIClick?.();
-            const inFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
-            if (inFs) {
-                (document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen)?.call(document);
-            } else if (typeof requestMobileFullscreen === 'function') {
-                requestMobileFullscreen();
-            }
-            // 비동기 변경이므로 다음 틱에 라벨 갱신
-            setTimeout(() => this._refreshFullscreenLabel(), 50);
+            window.ArcherImmersive?.toggle().then(() => this._refreshFullscreenLabel());
         });
 
         document.getElementById('settings-reset')?.addEventListener('click', () => {
@@ -508,7 +501,10 @@ class GameEngine {
     _refreshFullscreenLabel() {
         const btn = document.getElementById('settings-fullscreen-toggle');
         if (!btn) return;
-        const inFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+        const immersive = window.ArcherImmersive;
+        const inFs = Boolean(immersive?.isFullscreen() || immersive?.isStandalone());
+        btn.disabled = Boolean(immersive?.isStandalone() && !immersive?.isFullscreen()) || !immersive?.supported();
+        btn.setAttribute('aria-pressed', String(inFs));
         const ui = (k) => this.i18n?.getUI?.(k) || k;
         btn.textContent = inFs ? ui('settingsOn') : ui('settingsOff');
         btn.classList.toggle('is-on', inFs);

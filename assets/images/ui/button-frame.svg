@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76" fill="none">
+  <defs><linearGradient id="metal" x1="0" y1="0" x2="16" y2="76" gradientUnits="userSpaceOnUse"><stop stop-color="#f5e4ce"/><stop offset=".43" stop-color="#bba087"/><stop offset=".72" stop-color="#5c4240"/><stop offset="1" stop-color="#bba087"/></linearGradient></defs>
+  <rect x="1" y="1" width="74" height="74" rx="7" stroke="url(#metal)" stroke-width="2"/>
+  <rect x="4" y="4" width="68" height="68" rx="4" stroke="#f5e4ce" stroke-opacity=".25"/>
+  <g stroke="#f5e4ce" stroke-width="1" stroke-opacity=".7" stroke-linejoin="round"><path d="M8 21V8h13M12 17v-5h5"/><path d="M6 25v5M25 6h5"/><g transform="translate(76 0) scale(-1 1)"><path d="M8 21V8h13M12 17v-5h5"/><path d="M6 25v5M25 6h5"/></g><g transform="translate(0 76) scale(1 -1)"><path d="M8 21V8h13M12 17v-5h5"/><path d="M6 25v5M25 6h5"/></g><g transform="translate(76 76) scale(-1 -1)"><path d="M8 21V8h13M12 17v-5h5"/><path d="M6 25v5M25 6h5"/></g></g>
+</svg>

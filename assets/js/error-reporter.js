@@ -3,7 +3,7 @@
 
     if (window.__nevergradErrorReporterInstalled) return;
 
-    var VERSION = '20260912-lifecycle-recovery';
+    var VERSION = '20260913-stylesheet-recovery';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'nevergrad-error-queue-v2';
     var SESSION_KEY = 'nevergrad-error-session-v2';
@@ -119,13 +119,50 @@
         return window.location.href;
     }
 
+    function isSameOriginGameStylesheet(resource, target) {
+        if (!target || typeof target.getAttribute !== 'function'
+            || !/\bstylesheet\b/i.test(String(target.rel || target.getAttribute('rel') || ''))) return false;
+        try {
+            var parsed = new URL(resource, window.location.href);
+            return parsed.origin === window.location.origin
+                && /^\/assets\/css\/.+\.css$/i.test(parsed.pathname);
+        } catch (_) {
+            return false;
+        }
+    }
+
     function isIgnorableResourceFailure(tagName, resource, target) {
+        if (tagName === 'LINK' && isSameOriginGameStylesheet(resource, target)
+            && (navigator.onLine === false || document.visibilityState === 'hidden')) {
+            return true;
+        }
         if (tagName !== 'SCRIPT') return false;
         if (/^https:\/\/www\.googletagmanager\.com\/gtag\/js(?:[?#]|$)/i.test(String(resource || ''))) {
             return true;
         }
         return target && typeof target.getAttribute === 'function'
             && target.getAttribute('data-nevergrad-recoverable-dependency') === 'LifecycleManager';
+    }
+
+    function tryRecoverStylesheetResource(resource, target) {
+        if (!isSameOriginGameStylesheet(resource, target)
+            || navigator.onLine === false || document.visibilityState === 'hidden'
+            || typeof target.setAttribute !== 'function') return false;
+
+        var attempt = Number(target.getAttribute('data-nevergrad-stylesheet-retry')) || 0;
+        if (attempt >= 2) return false;
+        target.setAttribute('data-nevergrad-stylesheet-retry', String(attempt + 1));
+
+        try {
+            var retryUrl = new URL(resource, window.location.href);
+            retryUrl.searchParams.set('_resource_retry', String(Date.now()));
+            window.setTimeout(function () {
+                if (target && target.isConnected !== false) target.href = retryUrl.href;
+            }, attempt === 0 ? 500 : 1000);
+            return true;
+        } catch (_) {
+            return false;
+        }
     }
 
     function enqueue(payload) {
@@ -232,12 +269,17 @@
             if (tagName !== 'SCRIPT' && tagName !== 'LINK') return;
             var resource = target.src || target.href || '';
             if (isIgnorableResourceFailure(tagName, resource, target)) return;
+            if (tagName === 'LINK' && tryRecoverStylesheetResource(resource, target)) return;
             report(
                 'ResourceError',
                 'Failed to load resource: ' + (tagName || 'UNKNOWN'),
                 '',
                 resource || window.location.href,
-                { tagName: tagName, rel: target.rel || '' }
+                {
+                    tagName: tagName,
+                    rel: target.rel || '',
+                    retryAttempts: Number(target.getAttribute && target.getAttribute('data-nevergrad-stylesheet-retry')) || 0
+                }
             );
             return;
         }

@@ -130,9 +130,11 @@ function collectHtmlPaths(dir) {
 
 {
     const reporter = fs.readFileSync(path.join(ROOT, 'assets/js/error-reporter.js'), 'utf8');
-    const reporterVersion = '20260912-lifecycle-recovery';
+    const reporterVersion = '20260913-stylesheet-recovery';
     if (!reporter.includes(`var VERSION = '${reporterVersion}'`)
         || !reporter.includes('isIgnorableResourceFailure')
+        || !reporter.includes('tryRecoverStylesheetResource')
+        || !reporter.includes('data-nevergrad-stylesheet-retry')
         || !reporter.includes('www\\.googletagmanager\\.com\\/gtag\\/js')
         || !reporter.includes('data-nevergrad-recoverable-dependency')) {
         errors.push('[ERROR_REPORTER] resource recovery filter or reporter version is missing');

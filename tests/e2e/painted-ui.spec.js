@@ -94,6 +94,11 @@ test('painted frame loads and keyboard activation reaches a real control',async(
   await expect(button).toBeFocused();
   await button.press('Enter');
   await expect(page.locator('#gallery-screen')).toBeVisible();
+  await expect(page.locator('.gallery-tab')).toHaveCount(4);
+  for (const tab of await page.locator('.gallery-tab').all()) {
+    await tab.click();
+    await expectPaintedControls(page);
+  }
 });
 
 // Audit native and custom controls, including hidden dialogs whose buttons are

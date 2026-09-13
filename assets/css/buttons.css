@@ -1,5 +1,26 @@
-/* Lightweight painted glass and metal accents, with readable opaque labels. */
+/* Shared image skin for native, custom and dynamically created controls. */
 :root { --button-frame: url('../images/ui/glass-frame.webp'); --button-ink: #fff4e9; --button-edge: #e6cfb85c; }
+/* Nine-slice painting keeps the metal corners intact at every control size.
+   Independent border properties survive inline backgrounds and leave icons,
+   select arrows and content pseudo-elements available to their components. */
+body :is(button, input[type='button'], input[type='submit'], input[type='reset'], [role='button'], .archerlab-link, .lang-switcher) {
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-image-source: var(--button-frame) !important;
+  border-image-slice: 64 112 !important;
+  border-image-width: 10px 16px !important;
+  border-image-repeat: stretch !important;
+  border-image-outset: 0 !important;
+  min-width: 44px;
+  min-height: 44px;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+body :is(button, input[type='button'], input[type='submit'], input[type='reset'], [role='button'], .archerlab-link, .lang-switcher):focus-visible {
+  outline: 2px solid #f8dfc8;
+  outline-offset: 3px;
+}
 :is(.menu-btn, .qm-btn, .gallery-tab, .settings-toggle, .settings-close-btn, .backlog-close-btn, .sl-close-btn, .gallery-modal-close, .choice-btn) {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
@@ -18,14 +39,6 @@
   background: linear-gradient(110deg, #78535680, #4f3b4859);
   border-color: transparent;
   font-weight: 600;
-}
-:is(#btn-new-game, #btn-start, #btn-resume)::after {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  background: var(--button-frame) center / 100% 100% no-repeat;
-  opacity: .85;
-  pointer-events: none;
 }
 .menu-btn { min-height: 44px; padding: 9px 20px; }
 .qm-btn { min-width: 52px; min-height: 44px; font-size: max(12px, .75rem); }
@@ -51,6 +64,17 @@
 .settings-header, .settings-footer { flex-shrink: 0; }
 .settings-body { min-height: 0; overflow-y: auto; }
 .pause-container { overflow-y: auto; }
+/* Larger touch targets must also fit investigation overlays and photo paging. */
+.photo-deck-shell, .locker-search-shell {
+  max-height: calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-sizing: border-box;
+}
+.photo-deck-strip { flex-shrink: 0; }
+.photo-deck-dot { flex: 0 0 44px; padding: 0; border-radius: 3px; background: radial-gradient(circle, #77717c 3px, transparent 4px), #18151bd9; }
+.photo-deck-dot-seen { background: radial-gradient(circle, #c2ad98 3px, transparent 4px), #18151bd9; }
+.photo-deck-dot-active { background: radial-gradient(circle, #fff4e9 4px, transparent 5px), #78535680; box-shadow: none; }
 
 #title-screen { height: 100svh; height: 100dvh; padding-top: max(72px, calc(env(safe-area-inset-top) + 60px)); transition: background-color 300ms ease; }
 #title-screen::after { background: linear-gradient(180deg, #16121a40, #16121a05 32%, transparent 60%, #0a090d33); }

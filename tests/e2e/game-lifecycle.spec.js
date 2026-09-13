@@ -48,6 +48,7 @@ test('new game, save recovery and seven endings stay isolated in a real browser'
             game._loadScene(sceneId);
         }, { sceneId });
         await expect(page.locator('.ending-title-overlay')).toContainText(title);
+        await expect(page.locator('.ending-return-btn')).toHaveCSS('border-image-source', /glass-frame\.webp/);
         const state = await page.evaluate(() => ({
             endingReached: game._endingReached,
             sceneTimers: game.sceneLifecycle.snapshot().timeouts,

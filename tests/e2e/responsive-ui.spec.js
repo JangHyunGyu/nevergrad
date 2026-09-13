@@ -272,7 +272,7 @@ for (const device of touchDevices) {
     });
 }
 
-test('phone portrait shows a bounded rotate prompt without horizontal scroll', async ({ browser }) => {
+test('phone portrait allows title navigation before the gameplay rotate prompt', async ({ browser }) => {
     const context = await browser.newContext({
         viewport: { width: 390, height: 844 },
         isMobile: true,
@@ -281,8 +281,15 @@ test('phone portrait shows a bounded rotate prompt without horizontal scroll', a
     });
     const page = await context.newPage();
     await loadGameShell(page);
-    await expect(page.locator('#rotate-prompt')).toBeVisible();
-    await expectInsideViewport(page.locator('#rotate-prompt'), page);
+    await expect(page.locator('#rotate-prompt')).toBeHidden();
+    await expectInsideViewport(page.locator('.title-menu'), page);
+    await page.locator('#btn-gallery').click();
+    await expect(page.locator('#gallery-screen')).toHaveClass(/active/);
+    await expect(page.locator('#rotate-prompt')).toBeHidden();
+    await page.locator('#gallery-back').click();
+    await page.locator('#btn-new-game').click();
+    await expect(page.locator('#name-screen')).toHaveClass(/active/);
+    await expect(page.locator('#rotate-prompt')).toBeHidden();
     await expectNoDocumentOverflow(page);
     await context.close();
 });

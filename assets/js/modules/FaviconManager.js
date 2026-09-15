@@ -2,20 +2,6 @@
  * ============================================================================
  * FaviconManager.js - 앱 아이콘 동적 변이 (SCENARIO.md 5420-5423)
  * ============================================================================
- *
- * 웹 브라우저 환경에서 가능한 "앱 아이콘 변이" — favicon을 게임 진행에
- * 따라 다르게 노출해, 브라우저 탭/북마크/홈 스크린 아이콘이 조용히 변한다.
- *
- * 우선순위 (높은 것이 이김):
- *   1. COMPLICIT 엔딩 본 적 있음   → 'thirteen' (숫자 13)
- *   2. 아무 엔딩이든 1회차 클리어   → 'red'       (어두운 붉은 방패)
- *   3. 현재 세션이 스릴러 모드     → 'cracked'   (금 간 방패)
- *   4. 그 외                      → 'default'   (기본 파일: favicon.svg)
- *
- * 적용 트리거:
- *   - 앱 부팅 직후 (app.js에서 init 이후)
- *   - 장르 전환 직후 (StateManager.triggerGenreShift → engine이 호출)
- *   - 엔딩 기록 직후 (SaveManager.recordEnding → engine이 호출)
  */
 
 class FaviconManager {
@@ -127,6 +113,7 @@ if (typeof window !== 'undefined') {
         '/assets/js/scenario/day2_4_night_b.js',
         '/assets/js/scenario/speakers_overlays.js',
         '/assets/js/scenario/causality_overlays.js',
+        '/assets/js/scenario/causality_i18n_overlays.js',
         '/assets/js/modules/GlitchSystemAdvanced.fxfix-mirror.js',
         '/assets/js/modules/GlitchSystemAdvanced.fxfix-sign.js'
     ].forEach(syncEval);

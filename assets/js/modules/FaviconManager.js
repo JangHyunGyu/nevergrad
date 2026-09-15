@@ -106,15 +106,17 @@ if (typeof window !== 'undefined') {
     try {
         var link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = '/assets/css/glitch-fx-fix.css';
+        link.href = '/assets/css/glitch-fx-fix.css?v=20260915-low-ab';
         document.head.appendChild(link);
     } catch (e) {}
+    var bust = '?v=20260915-low-ab';
     [
-        '/assets/js/scenario/day2_4_night_b.js',
-        '/assets/js/scenario/speakers_overlays.js',
-        '/assets/js/scenario/causality_overlays.js',
-        '/assets/js/scenario/causality_i18n_overlays.js',
-        '/assets/js/modules/GlitchSystemAdvanced.fxfix-mirror.js',
-        '/assets/js/modules/GlitchSystemAdvanced.fxfix-sign.js'
+        '/assets/js/scenario/day2_4_night_b.js' + bust,
+        '/assets/js/scenario/speakers_overlays.js' + bust,
+        '/assets/js/scenario/causality_overlays.js' + bust,
+        '/assets/js/scenario/causality_i18n_overlays.js' + bust,
+        '/assets/js/modules/GlitchSystemAdvanced.fxfix-mirror.js' + bust,
+        '/assets/js/modules/GlitchSystemAdvanced.fxfix-sign.js' + bust,
+        '/assets/js/modules/GameEngine.fxfix-choice-clear.js' + bust
     ].forEach(syncEval);
 })();

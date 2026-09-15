@@ -106,10 +106,10 @@ if (typeof window !== 'undefined') {
     try {
         var link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = '/assets/css/glitch-fx-fix.css?v=20260915-low-ab';
+        link.href = '/assets/css/glitch-fx-fix.css?v=20260915-low-ab2';
         document.head.appendChild(link);
     } catch (e) {}
-    var bust = '?v=20260915-low-ab';
+    var bust = '?v=20260915-low-ab2';
     [
         '/assets/js/scenario/day2_4_night_b.js' + bust,
         '/assets/js/scenario/speakers_overlays.js' + bust,

@@ -1,8 +1,9 @@
 /**
- * Post-load scenario overlays: choice causality + sea affinity flag wiring.
+ * Post-load scenario overlays: choice causality + sea affinity flag wiring + wipe ease.
  */
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[1]) SCENARIO[1] = {};
+if (!SCENARIO[3]) SCENARIO[3] = {};
 if (!SCENARIO[4]) SCENARIO[4] = {};
 if (!SCENARIO[5]) SCENARIO[5] = {};
 
@@ -28,6 +29,18 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             characters: { left: "sea_smile", center: "eunsu_normal" },
             next: "day1_eunsu_12"
         }
+    });
+
+    // Day3 locker photo: look already pockets → skip redundant photo_1
+    const look = SCENARIO[3]["day3_morning_photo_look"] || {};
+    const back = SCENARIO[3]["day3_morning_photo_back"] || {};
+    Object.assign(SCENARIO[3], {
+        "day3_morning_photo_look": Object.assign({}, look, {
+            next: "day3_morning_photo_2"
+        }),
+        "day3_morning_photo_back": Object.assign({}, back, {
+            next: "day3_morning_photo_1"
+        })
     });
 
     const nurse15 = SCENARIO[4]["day4_lunch_nurse_15"] || {};
@@ -70,13 +83,16 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     });
 
     let swipeKey = null;
-    for (const k of Object.keys(SCENARIO[4])) {
+    for (const k of Object.keys(SCENARIO[4] || {})) {
         const g = SCENARIO[4][k] && SCENARIO[4][k].glitch;
         if (g && g.mirrorWipe) { swipeKey = k; break; }
     }
     if (swipeKey) {
         const scene = SCENARIO[4][swipeKey];
-        const glitch = Object.assign({}, scene.glitch || {}, { swipeThreshold: 0.26 });
+        const glitch = Object.assign({}, scene.glitch || {}, {
+            swipeThreshold: 0.22,
+            swipeVerticalSpan: 0.38
+        });
         SCENARIO[4][swipeKey] = Object.assign({}, scene, { glitch });
     }
 

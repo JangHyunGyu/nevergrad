@@ -1,14 +1,41 @@
-/* FX/UX: signature pad draw hint */
+/* FX/UX: signature pad draw hint + progress */
 .signature-pad-hint {
     position: absolute;
     left: 50%;
-    top: 18%;
+    top: 14%;
     transform: translateX(-50%);
     width: min(90%, 28rem);
     text-align: center;
     font-size: clamp(0.75rem, 2.4vw, 0.95rem);
     line-height: 1.35;
-    color: rgba(40, 40, 40, 0.72);
+    color: rgba(40, 40, 40, 0.78);
     pointer-events: none;
     z-index: 2;
+}
+
+.signature-pad-progress {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 18px;
+    height: 3px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.signature-pad-progress::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: calc(var(--sig-progress, 0) * 100%);
+    background: rgba(30, 30, 30, 0.7);
+    transition: width 80ms linear;
+}
+
+/* Mirror wipe: keep hint readable while progress text updates */
+.mirror-swipe-hint {
+    white-space: normal;
 }

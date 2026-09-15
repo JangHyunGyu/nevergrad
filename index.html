@@ -2,15 +2,33 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>Nevergrad restore in progress</title>
-<meta http-equiv="refresh" content="0; url=https://raw.githubusercontent.com/JangHyunGyu/nevergrad/daddfc35fc1a5f9a900c3abe8ce346db2767a407/index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Nevergrad</title>
 <script>
-// Emergency: load previous good index tree assets via absolute paths until full restore
-location.replace('/en/');
+(function () {
+  var SRC = 'https://raw.githubusercontent.com/JangHyunGyu/nevergrad/daddfc35fc1a5f9a900c3abe8ce346db2767a407/index.html';
+  fetch(SRC, { cache: 'no-store' })
+    .then(function (r) {
+      if (!r.ok) throw new Error('fetch ' + r.status);
+      return r.text();
+    })
+    .then(function (html) {
+      html = html.replace(
+        'assets/js/modules/FaviconManager.js"',
+        'assets/js/modules/FaviconManager.js?v=20260915-low-ab2"'
+      );
+      document.open();
+      document.write(html);
+      document.close();
+    })
+    .catch(function (err) {
+      console.error(err);
+      location.replace('/en/');
+    });
+})();
 </script>
 </head>
 <body>
-<p>Temporarily redirecting to English build while index.html is restored.</p>
-<p><a href="/en/">Continue</a></p>
+<p>Restoring Korean build… <a href="/en/">English</a></p>
 </body>
 </html>

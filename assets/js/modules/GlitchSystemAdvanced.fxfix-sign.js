@@ -1,10 +1,12 @@
 /**
  * FX soft-lock fix: signature pad hint, progress feedback, lower threshold, window pointer-up.
+ * Low B: after pad completes, advance once into the next beat (do not leave player stuck needing an extra click).
+ * Marker: __nevergradFxPatchedV3
  */
 (function () {
     if (typeof GlitchSystemAdvanced === 'undefined') return;
     if (GlitchSystemAdvanced.prototype._showSignaturePad &&
-        GlitchSystemAdvanced.prototype._showSignaturePad.__nevergradFxPatchedV2) return;
+        GlitchSystemAdvanced.prototype._showSignaturePad.__nevergradFxPatchedV3) return;
 
     GlitchSystemAdvanced.prototype._showSignaturePad = function (onComplete) {
         const container = document.createElement('div');
@@ -63,7 +65,6 @@
         const resize = () => {
             const rect = canvas.getBoundingClientRect();
             if (rect.width < 2 || rect.height < 2) return;
-            // Preserve ink across resize when possible
             try {
                 strokeSnapshot = canvas.width ? canvas.toDataURL() : strokeSnapshot;
             } catch (_) {}
@@ -95,7 +96,6 @@
         let drawnPixels = 0;
         let completed = false;
         let lastBucket = -1;
-        // Lower threshold so short signatures still complete
         const threshold = Math.max(90, canvas.width * 0.18);
 
         const toLocal = (clientX, clientY) => {
@@ -180,5 +180,38 @@
         canvas.addEventListener('touchend', endStroke);
         window.addEventListener('touchend', endStroke);
     };
-    GlitchSystemAdvanced.prototype._showSignaturePad.__nevergradFxPatchedV2 = true;
+    GlitchSystemAdvanced.prototype._showSignaturePad.__nevergradFxPatchedV3 = true;
+
+    // Low B: completing the pad must proceed into the intended next beat.
+    // Keep requireSignature click-lock until done; then advance once and briefly
+    // re-lock so a trailing pointer-up/ghost click cannot double-advance.
+    GlitchSystemAdvanced.prototype.startSignaturePad = function (opts = {}) {
+        if (document.querySelector('.signature-pad-container')) return;
+        const engine = this.engine;
+        if (opts.requireSignature && engine) {
+            if (engine._clickLockTimer) {
+                clearTimeout(engine._clickLockTimer);
+                engine._clickLockTimer = null;
+            }
+            engine._clickLocked = true;
+        }
+        engine?.metaHorror?.setScreenshotContext?.('complicit_sign');
+        this._showSignaturePad(() => {
+            engine?.deviceGimmick?.vibrate?.('complicit_sign');
+            engine?._vibrateVisual?.('complicit_sign');
+            if (!engine) return;
+            if (engine._clickLockTimer) {
+                clearTimeout(engine._clickLockTimer);
+                engine._clickLockTimer = null;
+            }
+            engine._clickLocked = true;
+            try {
+                engine._advanceScene?.();
+            } catch (_) { /* non-fatal */ }
+            engine._clickLockTimer = setTimeout(() => {
+                engine._clickLocked = false;
+            }, 450);
+        });
+    };
+    GlitchSystemAdvanced.prototype.startSignaturePad.__nevergradFxPatchedV3 = true;
 })();

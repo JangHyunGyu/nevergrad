@@ -46,7 +46,8 @@
   function onGesture(event) {
     const target = event.target;
     if (!event.isTrusted || !target?.closest || target.closest('a, input, textarea, select, [contenteditable], [data-ranking-scroll], [data-no-fullscreen]')) return;
-    if (target.closest('[data-fullscreen-start], canvas, [data-fullscreen-play]')) autoEnter();
+    // Phone, tablet, and desktop: any trusted play gesture forces immersive entry.
+    if (target.closest('[data-fullscreen-start], canvas, [data-fullscreen-play], [data-fullscreen-force], button, [role="button"]')) autoEnter();
   }
 
   // Click retains activation for touch, mouse and native keyboard buttons.
@@ -55,11 +56,17 @@
   // Canvas engines can cancel compatibility clicks after a touch. Pointer-up
   // still carries touch activation; Enter covers their keyboard-only menus.
   doc.addEventListener('pointerup', event => {
-    if (event.target?.closest?.('canvas')) onGesture(event);
+    if (event.target?.closest?.('canvas, [data-fullscreen-start], [data-fullscreen-play], button, [role="button"]')) onGesture(event);
   }, true);
   doc.addEventListener('keydown', event => {
     if (event.isTrusted && event.key === 'Enter' && !event.repeat &&
-        ['BODY', 'CANVAS'].includes(event.target?.tagName) && doc.querySelector('canvas')) autoEnter();
+        ['BODY', 'CANVAS', 'BUTTON'].includes(event.target?.tagName)) autoEnter();
+  }, true);
+  // First trusted interaction anywhere that is not an excluded control.
+  doc.addEventListener('pointerdown', event => {
+    const target = event.target;
+    if (!event.isTrusted || !target?.closest || target.closest('a, input, textarea, select, [contenteditable], [data-ranking-scroll], [data-no-fullscreen]')) return;
+    autoEnter();
   }, true);
   root.addEventListener('pageshow', event => {
     if (event.persisted) attempted = false;

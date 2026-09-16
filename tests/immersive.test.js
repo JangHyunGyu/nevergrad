@@ -124,15 +124,13 @@ test('back-forward cache restoration allows a fresh start gesture', async () => 
   await s.api.autoEnter();
   assert.equal(s.calls.length, 2);
 });
-test('lifts the layout briefly after fullscreen so the browser exit hint does not cover controls', async () => {
+test('keeps the layout lifted in fullscreen so the browser exit hint does not cover controls', async () => {
   const s = setup();
   await s.api.enter();
   s.document.fullscreenElement = s.document.documentElement;
   s.listeners.fullscreenchange();
   assert.match(s.style.transform, /translate3d\(0,-80px,0\)/);
-  assert.equal(s.timeouts[0].ms, 2000);
-  s.timeouts[0].fn();
-  assert.equal(s.style.transform, '');
+  assert.equal(s.style['--immersive-bottom-inset'], '80px');
 });
 test('lifts by virtual keyboard height when fullscreen overlays the composer', () => {
   const s = setup({ keyboard: 320, activeElement: { matches: sel => sel.includes('textarea'), closest: () => null } });

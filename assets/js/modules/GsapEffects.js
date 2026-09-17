@@ -68,8 +68,8 @@
             if (!gsap || !el) return false;
             gsap.killTweensOf(el);
             gsap.fromTo(el,
-                { autoAlpha: 0, scale: 0.988 },
-                { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'power2.out' }
+                { autoAlpha: 0 },
+                { autoAlpha: 1, duration: 0.32, ease: 'power2.out', clearProps: 'opacity,visibility,transform' }
             );
             return true;
         },

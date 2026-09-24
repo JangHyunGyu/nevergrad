@@ -109,7 +109,7 @@ if (typeof window !== 'undefined') {
         link.href = '/assets/css/glitch-fx-form.css?v=20260924-timed-hook';
         document.head.appendChild(link);
     } catch (e) {}
-    var bust = '?v=20260924-peel-drama-v2';
+    var bust = '?v=20260924-peel-drama-v3';
     try {
         ['/assets/css/name-affinity.css' + bust, '/assets/css/stat-genre-flip.css' + bust].forEach(function (href) {
             var link = document.createElement('link');
@@ -136,8 +136,7 @@ if (typeof window !== 'undefined') {
         '/assets/js/modules/ChoiceSystemAdvanced.timed-hook.js' + bust,
         '/assets/js/modules/SceneRenderer.character-sync.js' + bust,
         '/assets/js/modules/GameEngine.fx.character-scene-sync.js' + bust,
-        '/assets/js/modules/GlitchSystemAdvanced.fx.peel-drama.js' + bust,
-        '/assets/js/modules/GameEngine.fx.peel-duration.js' + bust
+        '/assets/js/modules/GlitchSystemAdvanced.fx.peel-drama.js' + bust
     ].forEach(syncEval);
     // Move affinity HUD next to speaker name (Cupid-style)
     try {

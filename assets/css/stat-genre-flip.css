@@ -1,0 +1,90 @@
+/* Dramatic peelStatLabel — shake + noise + darken */
+.stat-display.stat-peeling {
+    position: relative;
+    z-index: 5;
+    overflow: visible;
+    border-color: rgba(255, 80, 80, 0.65) !important;
+    background: rgba(20, 0, 0, 0.55) !important;
+    animation: stat-peel-jitter 90ms steps(2, end) infinite;
+}
+.stat-display .stat-peel-base {
+    position: relative;
+    display: inline-block;
+    color: #ff3b3b;
+    text-shadow: -1px 0 #00e5ff, 1px 0 #ff2a6d, 0 0 10px rgba(255, 40, 40, 0.7);
+    animation: stat-peel-rgb 120ms steps(2, end) infinite;
+}
+.stat-display .stat-peel-layer {
+    position: absolute;
+    inset: 0;
+    display: inline-block;
+    background: inherit;
+    color: inherit;
+    transform-origin: top center;
+    transition: transform 0.55s cubic-bezier(0.55, 0.05, 0.9, 0.4), opacity 0.55s ease, filter 0.55s ease;
+    pointer-events: none;
+}
+.stat-display .stat-peel-layer.peeling {
+    transform: rotateX(95deg) translateY(-80%) scaleY(0.2);
+    opacity: 0;
+    filter: blur(2px) saturate(2);
+}
+@keyframes stat-peel-jitter {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-1px, 1px); }
+    50% { transform: translate(1px, -1px); }
+    75% { transform: translate(1px, 1px); }
+    100% { transform: translate(0, 0); }
+}
+@keyframes stat-peel-rgb {
+    0% { text-shadow: -2px 0 #00e5ff, 2px 0 #ff2a6d, 0 0 12px rgba(255,40,40,0.8); }
+    50% { text-shadow: 2px 0 #00e5ff, -2px 0 #ff2a6d, 0 0 8px rgba(255,40,40,0.5); }
+    100% { text-shadow: -1px 0 #00e5ff, 1px 0 #ff2a6d, 0 0 14px rgba(255,40,40,0.9); }
+}
+#game-screen.stat-genre-flip {
+    animation: stat-genre-shake 160ms linear infinite;
+}
+#game-screen.stat-genre-flip::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 70;
+    pointer-events: none;
+    background:
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 2px, transparent 4px),
+        radial-gradient(ellipse at center, transparent 35%, rgba(0,0,0,0.72) 100%);
+    mix-blend-mode: overlay;
+    animation: stat-genre-noise 100ms steps(2, end) infinite;
+}
+#game-screen.stat-genre-flip::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 71;
+    pointer-events: none;
+    background: rgba(8, 0, 12, 0.42);
+    box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.85);
+    animation: stat-genre-darken 1.4s ease forwards;
+}
+#game-screen.stat-genre-flip .dialogue-box {
+    filter: saturate(0.55) brightness(0.82) contrast(1.15);
+    transition: filter 0.6s ease;
+}
+@keyframes stat-genre-shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-4px, 2px); }
+    40% { transform: translate(5px, -3px); }
+    60% { transform: translate(-3px, -2px); }
+    80% { transform: translate(3px, 3px); }
+    100% { transform: translate(0, 0); }
+}
+@keyframes stat-genre-noise {
+    0% { opacity: 0.35; transform: translateY(0); }
+    50% { opacity: 0.85; transform: translateY(-3px); }
+    100% { opacity: 0.45; transform: translateY(2px); }
+}
+@keyframes stat-genre-darken {
+    0% { opacity: 0.15; background: rgba(8, 0, 12, 0.15); }
+    40% { opacity: 1; background: rgba(8, 0, 12, 0.55); }
+    100% { opacity: 0.55; background: rgba(8, 0, 12, 0.38); }
+}

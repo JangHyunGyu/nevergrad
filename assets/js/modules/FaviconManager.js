@@ -106,7 +106,7 @@ if (typeof window !== 'undefined') {
     try {
         var link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = '/assets/css/glitch-fx-fix.css?v=20260924-timed-hook';
+        link.href = '/assets/css/glitch-fx-form.css?v=20260924-timed-hook';
         document.head.appendChild(link);
     } catch (e) {}
     var bust = '?v=20260924-peel-drama-v2';
@@ -118,7 +118,7 @@ if (typeof window !== 'undefined') {
             document.head.appendChild(link);
         });
     } catch (e) {}
-    // Restore SceneRenderer if the main file was stubbed
+    // Restore SceneRenderer if the main file was stubbed / loader failed
     if (typeof SceneRenderer === 'undefined') {
         syncEval('/assets/js/modules/SceneRenderer.js' + bust);
         if (typeof SceneRenderer === 'undefined') {
@@ -136,7 +136,8 @@ if (typeof window !== 'undefined') {
         '/assets/js/modules/ChoiceSystemAdvanced.timed-hook.js' + bust,
         '/assets/js/modules/SceneRenderer.character-sync.js' + bust,
         '/assets/js/modules/GameEngine.fx.character-scene-sync.js' + bust,
-        '/assets/js/modules/GlitchSystemAdvanced.fx.peel-drama.js' + bust
+        '/assets/js/modules/GlitchSystemAdvanced.fx.peel-drama.js' + bust,
+        '/assets/js/modules/GameEngine.fx.peel-duration.js' + bust
     ].forEach(syncEval);
     // Move affinity HUD next to speaker name (Cupid-style)
     try {

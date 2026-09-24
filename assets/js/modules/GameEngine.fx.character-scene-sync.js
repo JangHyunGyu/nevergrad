@@ -68,7 +68,8 @@
     patch(1, 'day1_lunch_riin_1', { character: 'riin_gentle' });
     patch(1, 'day1_lunch_riin_2', { character: 'riin_gentle' });
     patch(1, 'day1_after_riin_1', { character: 'riin_gentle' });
-    patch(1, 'day1_after_riin_12', { character: null, background: 'hallway' });
+    // MD: riin_gentle on hallway exit — do not null (was undoing day1 bake)
+    patch(1, 'day1_after_riin_12', { character: 'riin_gentle', background: 'hallway' });
     patch(1, 'day1_after_yuna_1', { character: 'yuna_shy' });
     patch(3, 'day3_lunch_sea_3', { character: 'sea_smile' });
     patch(4, 'day4_after_sea_route', { character: 'sea_smile' });

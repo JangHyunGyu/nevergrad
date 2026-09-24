@@ -1,7 +1,8 @@
 /**
- * ============================================================================
+ * ==============================================================================
  * ChoiceSystem.js - 선택지 관리
- * ============================================================================
+ * ==============================================================================
+ *
  * GameEngine에서 직접 처리하는 구조이므로 이 모듈은 확장용.
  * 복잡한 선택지 연출 (타이머, 강제 선택 등)을 여기서 관리.
  */
@@ -74,24 +75,26 @@ class ChoiceSystem {
             this.panel.appendChild(btn);
         });
 
-        // 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
+        // Timed choices: enable clicks early (5s Day5 timers). Do not wait ~1.5s.
+        this.panel.classList.add('timed-choice');
         const motionButtons = Array.from(this.panel.querySelectorAll('.choice-btn'));
         if (window.NevergradMotion?.choicesIn?.(this.panel, motionButtons)) {
+            motionButtons.forEach((b, i) => {
+                setTimeout(() => b.classList.add('choice-ready'), 100 + i * 80);
+            });
             return;
         }
 
-        const totalDelay = (choices.length - 1) * 80 + 1500;
-        setTimeout(() => {
-            const buttons = this.panel.querySelectorAll('.choice-btn');
-            if (buttons) {
-                buttons.forEach(b => b.classList.add('choice-ready'));
-            }
-        }, totalDelay);
+        const buttons = this.panel.querySelectorAll('.choice-btn');
+        buttons.forEach((b, i) => {
+            setTimeout(() => b.classList.add('choice-ready'), 100 + i * 80);
+        });
     }
 
     hide() {
         if (this.panel) {
             this.panel.classList.add('hidden');
+            this.panel.classList.remove('timed-choice');
             this.panel.innerHTML = '';
         }
     }

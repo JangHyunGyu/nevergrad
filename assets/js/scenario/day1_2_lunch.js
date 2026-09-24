@@ -222,12 +222,12 @@ Object.assign(SCENARIO[1], {
     // ===== 루트 C: 보건실 — 리인 첫 만남 (riin_1 ~ riin_12) =====
     "day1_lunch_riin_1": {
         background: "nurse_office",
-        character: null,
+        character: "riin_gentle",
         sfx: "sfx_door_open.mp3",
         next: "day1_lunch_riin_2"
     },
     "day1_lunch_riin_2": {
-        character: null,
+        character: "riin_gentle",
         next: "day1_lunch_riin_3"
     },
     "day1_lunch_riin_3": {

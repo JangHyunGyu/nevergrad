@@ -1,14 +1,14 @@
 /**
- * ============================================================================
+ * =========================================================================
  * Day 1-3: Afterschool - 방과후 선택의 시간
- * ============================================================================
+ * =========================================================================
  * 각 캐릭터와 1:1 시간.
  * - 세아: 학생회실, 캔 음료, "내일도 올래?"
  * - 유나: 도서관, 카메라 사진, 고양이 치즈, "꼭 오세요"
  * - 리인: 보건실, 허브차, "이상한 꿈 꾸는 애들"
  * - 은수: 교무실, 커피, "전학 사유가 좀 특이해서"
  * - 귀가: 교문, 3층 창가 실루엣 (설화)
- * ============================================================================
+ * =========================================================================
  */
 
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
@@ -103,7 +103,7 @@ Object.assign(SCENARIO[1], {
     // ===== 유나 — 도서관 (lines 565-587) =====
     "day1_after_yuna_1": {
         background: "library",
-        character: null,
+        character: "yuna_shy",
         next: "day1_after_yuna_2"
     },
     "day1_after_yuna_2": {
@@ -163,7 +163,7 @@ Object.assign(SCENARIO[1], {
     // ===== 리인 — 보건실 (lines 589-603) =====
     "day1_after_riin_1": {
         background: "nurse_office",
-        character: null,
+        character: "riin_gentle",
         next: "day1_after_riin_2"
     },
     "day1_after_riin_2": {
@@ -208,7 +208,8 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_riin_12"
     },
     "day1_after_riin_12": {
-        character: "riin_gentle",
+        character: null,
+        background: "hallway",
         next: "day1_after_home_1"
     },
 

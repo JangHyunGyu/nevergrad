@@ -1,0 +1,32 @@
+/* Name-adjacent affinity (moved from HUD #stat-display) */
+.speaker-row {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 0.4rem;
+    min-height: 1.5rem;
+    flex-wrap: wrap;
+}
+.speaker-row .speaker-name {
+    margin-bottom: 0;
+}
+.dialogue-box > .stat-display,
+.speaker-row > .stat-display {
+    font-size: 0.78rem;
+    color: var(--color-primary);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    padding: 0.12rem 0.55rem;
+    background: rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 183, 197, 0.22);
+    border-radius: 999px;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    line-height: 1.2;
+    transition: color 0.3s ease, opacity 0.4s ease, transform 0.4s ease, background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+.stat-display.stat-revealed {
+    color: #ff6b6b;
+    border-color: rgba(197, 48, 48, 0.55);
+    background: rgba(40, 0, 0, 0.45);
+    box-shadow: 0 0 10px rgba(197, 48, 48, 0.35);
+}

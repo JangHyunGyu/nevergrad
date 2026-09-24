@@ -130,6 +130,7 @@ if (typeof window !== 'undefined') {
         '/assets/js/scenario/speakers_overlays.js' + bust,
         '/assets/js/scenario/causality_overlays.js' + bust,
         '/assets/js/scenario/causality_i18n_overlays.js' + bust,
+        '/assets/js/scenario/cast_md_sync_overlays.js' + bust,
         '/assets/js/modules/GlitchSystemAdvanced.fx.form-mirror.js' + bust,
         '/assets/js/modules/GlitchSystemAdvanced.fx.form-sign.js' + bust,
         '/assets/js/modules/GameEngine.fx.form-choice-clear.js' + bust,

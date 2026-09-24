@@ -208,7 +208,7 @@ Object.assign(SCENARIO[1], {
         next: "day1_after_riin_12"
     },
     "day1_after_riin_12": {
-        character: null,
+        character: "riin_gentle",
         background: "hallway",
         next: "day1_after_home_1"
     },

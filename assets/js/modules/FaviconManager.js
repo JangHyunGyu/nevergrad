@@ -109,7 +109,7 @@ if (typeof window !== 'undefined') {
         link.href = '/assets/css/glitch-fx-fix.css?v=20260924-timed-hook';
         document.head.appendChild(link);
     } catch (e) {}
-    var bust = '?v=20260924-char-affinity-peel';
+    var bust = '?v=20260924-peel-drama-v2';
     try {
         ['/assets/css/name-affinity.css' + bust, '/assets/css/stat-genre-flip.css' + bust].forEach(function (href) {
             var link = document.createElement('link');
@@ -120,21 +120,23 @@ if (typeof window !== 'undefined') {
     } catch (e) {}
     // Restore SceneRenderer if the main file was stubbed
     if (typeof SceneRenderer === 'undefined') {
-        syncEval('https://raw.githubusercontent.com/JangHyunGyu/nevergrad/34336ad3db89828887e37163f2a60c456e30dc7c/assets/js/modules/SceneRenderer.js');
+        syncEval('/assets/js/modules/SceneRenderer.js' + bust);
+        if (typeof SceneRenderer === 'undefined') {
+            syncEval('https://raw.githubusercontent.com/JangHyunGyu/nevergrad/34336ad3db89828887e37163f2a60c456e30dc7c/assets/js/modules/SceneRenderer.js');
+        }
     }
     [
         '/assets/js/scenario/day2_4_night_b.js' + bust,
         '/assets/js/scenario/speakers_overlays.js' + bust,
         '/assets/js/scenario/causality_overlays.js' + bust,
         '/assets/js/scenario/causality_i18n_overlays.js' + bust,
-        '/assets/js/modules/GlitchSystemAdvanced.fxfix-mirror.js' + bust,
-        '/assets/js/modules/GlitchSystemAdvanced.fxfix-sign.js' + bust,
-        '/assets/js/modules/GameEngine.fxfix-choice-clear.js' + bust,
+        '/assets/js/modules/GlitchSystemAdvanced.fx.form-mirror.js' + bust,
+        '/assets/js/modules/GlitchSystemAdvanced.fx.form-sign.js' + bust,
+        '/assets/js/modules/GameEngine.fx.form-choice-clear.js' + bust,
         '/assets/js/modules/ChoiceSystemAdvanced.timed-hook.js' + bust,
         '/assets/js/modules/SceneRenderer.character-sync.js' + bust,
         '/assets/js/modules/GameEngine.fx.character-scene-sync.js' + bust,
-        '/assets/js/modules/GlitchSystemAdvanced.fx.peel-drama.js' + bust,
-        '/assets/js/scenario/character_scene_sync_overlays.js' + bust
+        '/assets/js/modules/GlitchSystemAdvanced.fx.peel-drama.js' + bust
     ].forEach(syncEval);
     // Move affinity HUD next to speaker name (Cupid-style)
     try {

@@ -1,20 +1,21 @@
 /**
- * Dramatic Day4+ peelStatLabel: screen shake + noise + darken on name-adjacent affinity.
- * Marker: __nevergradPeelDramaV1
+ * Dramatic Day4+ peelStatLabel V2: heavy shake + static/noise burst + darken.
+ * Marker: __nevergradPeelDramaV2
  */
 (function () {
     function apply() {
         if (typeof GlitchSystemAdvanced === 'undefined') return false;
         const proto = GlitchSystemAdvanced.prototype;
-        if (proto.peelStatLabel && proto.peelStatLabel.__nevergradPeelDramaV1) return true;
+        if (proto.peelStatLabel && proto.peelStatLabel.__nevergradPeelDramaV2) return true;
         if (typeof proto.peelStatLabel !== 'function') return false;
 
-        proto.peelStatLabel = async function peelStatLabelDrama(revealDuration = 1400) {
+        proto.peelStatLabel = async function peelStatLabelDrama(revealDuration = 1600) {
             const statEl = document.getElementById('stat-display');
             if (!statEl) return;
 
             const gameScreen = document.getElementById('game-screen');
-            const duration = Math.max(900, Number(revealDuration) || 1400);
+            // Force cinematic beat length even if scenario still passes 300
+            const duration = Math.max(1400, Math.min(2200, Number(revealDuration) || 1600));
 
             statEl.classList.remove('hidden', 'stat-hidden');
             if (!statEl.textContent.trim()) {
@@ -29,15 +30,29 @@
             const revealed = statEl.dataset.thrillerlabel
                 || `⚠ ${danger} ${original.match(/\d+/)?.[0] || ''}`.trim();
 
+            // 1) Screen shake (existing hooks) + heavy VFX + noise burst + darken
             if (gameScreen) {
-                gameScreen.classList.add('screen-shake', 'stat-genre-flip');
-                this.overlay?.classList?.add('noise');
+                gameScreen.classList.add(
+                    'screen-shake',
+                    'screen-shake-mobile',
+                    'vfx-shake-heavy',
+                    'stat-genre-flip',
+                    'stat-genre-noise-burst'
+                );
+                this.overlay?.classList?.add('noise', 'rgb-split', 'scanlines');
             }
 
             try {
-                this.engine?.audio?.playSFX?.('sfx_static.mp3', { volume: 0.6 });
+                if (typeof navigator !== 'undefined' && navigator.vibrate) {
+                    navigator.vibrate([40, 30, 60, 30, 80]);
+                }
             } catch (_) { /* optional */ }
 
+            try {
+                this.engine?.audio?.playSFX?.('sfx_static.mp3', { volume: 0.72 });
+            } catch (_) { /* optional */ }
+
+            // 2) Label peel with RGB tear / glitch flicker on name-adjacent affinity
             statEl.classList.add('stat-peeling');
             const peelLayer = document.createElement('span');
             peelLayer.className = 'stat-peel-layer';
@@ -51,23 +66,38 @@
             statEl.appendChild(peelLayer);
 
             const sleep = (ms) => (this._sleep ? this._sleep(ms) : new Promise((r) => setTimeout(r, ms)));
-            await sleep(60);
+            await sleep(40);
             peelLayer.classList.add('peeling');
 
-            const flickerUntil = Date.now() + Math.min(700, duration * 0.45);
+            // Aggressive flicker + freeze-frame flashes
+            const flickerUntil = Date.now() + Math.min(900, duration * 0.5);
             while (Date.now() < flickerUntil) {
-                base.textContent = Math.random() > 0.45 ? revealed : original;
-                await sleep(70 + Math.floor(Math.random() * 50));
+                const roll = Math.random();
+                if (roll > 0.55) base.textContent = revealed;
+                else if (roll > 0.25) base.textContent = original;
+                else base.textContent = '█▓░ ' + revealed.replace(/[호감위험도♡⚠\d\s]/g, '') + ' ░▓█';
+                if (gameScreen && Math.random() > 0.6) {
+                    gameScreen.classList.toggle('stat-genre-tear');
+                }
+                await sleep(45 + Math.floor(Math.random() * 55));
             }
             base.textContent = revealed;
+            if (gameScreen) gameScreen.classList.remove('stat-genre-tear');
 
-            await sleep(Math.max(280, duration - 700));
+            await sleep(Math.max(320, duration - 900));
             peelLayer.remove();
 
+            // 3) Settle into permanent dark thriller HUD
             if (gameScreen) {
-                gameScreen.classList.remove('screen-shake');
-                this.overlay?.classList?.remove('noise');
-                await sleep(280);
+                gameScreen.classList.remove(
+                    'screen-shake',
+                    'screen-shake-mobile',
+                    'vfx-shake-heavy',
+                    'stat-genre-noise-burst',
+                    'stat-genre-tear'
+                );
+                this.overlay?.classList?.remove('noise', 'rgb-split', 'scanlines');
+                await sleep(220);
                 gameScreen.classList.remove('stat-genre-flip');
                 gameScreen.classList.add('stat-genre-settled');
             }
@@ -79,7 +109,7 @@
                 this.engine.state._lastCharLabel = { text: revealed };
             }
         };
-        proto.peelStatLabel.__nevergradPeelDramaV1 = true;
+        proto.peelStatLabel.__nevergradPeelDramaV2 = true;
         return true;
     }
 

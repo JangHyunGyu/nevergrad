@@ -1,1 +1,15 @@
-@/workspace/nevergrad-fix/style.css
+/**
+ * Nevergrad styles — emergency restore (path placeholder broke live)
+ * Full sheet from last known-good commit; local Day5 overrides below.
+ */
+@import url("https://cdn.jsdelivr.net/gh/JangHyunGyu/nevergrad@8385506c09e99fb5f47f000d8dc7d59259c26c95/assets/css/style.css");
+
+/* Above .dialogue-box (z-index: 50) so timed choices stay visible/clickable */
+.choice-panel {
+    z-index: 60 !important;
+}
+
+/* Timed choices: shorter fade so 5s timers stay usable */
+.choice-panel.timed-choice .choice-btn {
+    animation-duration: 0.35s;
+}

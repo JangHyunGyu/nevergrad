@@ -208,6 +208,32 @@ function layoutTitleLineup() {
     let bottoms;
     let height;
 
+    const portraitMobile = aspect < 1 && viewportW <= 900;
+    const fromRiin = /(?:^|[?&])from=riin(?:&|$)/.test(location.search);
+    if (portraitMobile) {
+        const order = fromRiin ? ['seolhwa', 'riin', 'eunsu'] : ['seolhwa', 'eunsu', 'riin'];
+        const slotX = [16, 50, 84];
+        const slotScale = [0.86, 1, 0.86];
+        const slotBottom = [viewportH * 0.04, 0, viewportH * 0.04];
+        height = clampNumber(viewportH * 0.58, 300, 640);
+        sprites.forEach((sprite) => {
+            const slot = order.indexOf(sprite.dataset.titleCharacter);
+            if (slot < 0) {
+                sprite.style.display = 'none';
+                return;
+            }
+            sprite.style.display = '';
+            const character = sprite.dataset.titleCharacter;
+            const depth = { seolhwa: 11, riin: 12, yuna: 14, sea: 15, eunsu: 16 };
+            sprite.style.setProperty('--title-x', `${slotX[slot]}%`);
+            sprite.style.setProperty('--title-scale', String(slotScale[slot]));
+            sprite.style.setProperty('--title-bottom', `${slotBottom[slot]}px`);
+            sprite.style.setProperty('--title-height', `${height}px`);
+            sprite.style.setProperty('--title-z', String(character === order[1] ? 20 : (depth[character] ?? 12)));
+        });
+        return;
+    }
+
     if (aspect >= 1.55) {
         xs = [13, 31, 50, 69, 87];
         scales = [0.82, 0.93, 1.04, 0.94, 0.84];
@@ -231,6 +257,7 @@ function layoutTitleLineup() {
     }
 
     sprites.forEach((sprite, index) => {
+        sprite.style.display = '';
         const character = sprite.dataset.titleCharacter;
         const depth = { seolhwa: 11, riin: 12, yuna: 14, sea: 15, eunsu: 16 };
         sprite.style.setProperty('--title-x', `${xs[index] ?? 50}%`);

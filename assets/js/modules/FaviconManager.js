@@ -103,12 +103,6 @@ if (typeof window !== 'undefined') {
             }
         } catch (e) { /* non-fatal */ }
     }
-    try {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = '/assets/css/glitch-fx-form.css?v=20260924-timed-hook';
-        document.head.appendChild(link);
-    } catch (e) {}
     var bust = '?v=20260924-peel-drama-v3';
     try {
         ['/assets/css/name-affinity.css' + bust, '/assets/css/stat-genre-flip.css' + bust].forEach(function (href) {
@@ -121,9 +115,6 @@ if (typeof window !== 'undefined') {
     // Restore SceneRenderer if the main file was stubbed / loader failed
     if (typeof SceneRenderer === 'undefined') {
         syncEval('/assets/js/modules/SceneRenderer.js' + bust);
-        if (typeof SceneRenderer === 'undefined') {
-            syncEval('https://raw.githubusercontent.com/JangHyunGyu/nevergrad/34336ad3db89828887e37163f2a60c456e30dc7c/assets/js/modules/SceneRenderer.js');
-        }
     }
     [
         '/assets/js/scenario/day2_4_night_b.js' + bust,

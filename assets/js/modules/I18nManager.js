@@ -57,7 +57,7 @@ class I18nManager {
         const loadFile = async (langCode, slot) => {
             const filename = `day${day}${slot}.json`;
             try {
-                const res = await fetch(`${I18nManager.BASE}assets/js/i18n/${langCode}/${filename}`);
+                const res = await fetch(`${I18nManager.BASE}assets/js/i18n/${langCode}/${filename}?v=20260926-sole`);
                 if (!res.ok) return;
                 const data = await res.json();
                 Object.assign(this.texts[key], data);

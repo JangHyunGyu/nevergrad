@@ -202,6 +202,7 @@ class GameEngine {
     // ===== Title Screen =====
 
     _bindTitleScreen() {
+        this._rememberNevergradIfPlayed();
         // NG+ 타이틀 화면 변조 (SCENARIO.md 5002-5012)
         if (this.glitchAdvanced && this.save.isNewGamePlus()) {
             this.glitchAdvanced.applyNGPlusTitleCorruption(this.save);
@@ -295,6 +296,22 @@ class GameEngine {
         });
 
         this._bindArchiveButton();
+    }
+
+    _markNevergradPlayed() {
+        try {
+            const host = location.hostname || '';
+            const domain = (host === 'archerlab.dev' || host.endsWith('.archerlab.dev')) ? '; Domain=.archerlab.dev' : '';
+            const secure = location.protocol === 'https:' ? '; Secure' : '';
+            document.cookie = `nevergrad_played=1; Path=/; Max-Age=31536000; SameSite=Lax${domain}${secure}`;
+        } catch (_) {}
+    }
+
+    _rememberNevergradIfPlayed() {
+        const meta = this.save?.getMeta?.();
+        if (this.save?.hasSaveData?.() || (meta && meta.playCount > 0)) {
+            this._markNevergradPlayed();
+        }
     }
 
     _applyCrossoverFlags() {
@@ -553,6 +570,7 @@ class GameEngine {
     // ===== Scene Management =====
 
     _loadScene(sceneId) {
+        this._markNevergradPlayed();
         this.sceneLifecycle?.dispose?.();
         this.sceneLifecycle = this.runLifecycle.createScope(`scene:${sceneId}`);
         clearTimeout(this._autoAdvanceTimer);

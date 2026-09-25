@@ -326,6 +326,12 @@ class GameEngine {
         if (!hit) return;
         void screen.offsetWidth;
         screen.classList.add('cross-glitch');
+        this._crackleAndBuzz();
+    }
+
+    _crackleAndBuzz() {
+        try { this.audio?.playStaticCrackle?.(); } catch (_) {}
+        this.deviceGimmick?.vibrate?.([45, 35, 40, 30, 110, 140, 45, 35, 40, 30, 110]);
     }
 
     _markNevergradPlayed() {

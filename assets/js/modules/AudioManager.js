@@ -403,6 +403,34 @@ class AudioManager {
         this._currentBGM = null;
     }
 
+    playStaticCrackle() {
+        if (!this.ctx) return;
+        if (this.ctx.state === 'suspended') this.ctx.resume().catch(() => {});
+        const duration = 0.72;
+        const rate = this.ctx.sampleRate;
+        const buffer = this.ctx.createBuffer(1, Math.floor(rate * duration), rate);
+        const data = buffer.getChannelData(0);
+        [[0.00, 0.045], [0.08, 0.12], [0.15, 0.26], [0.40, 0.445], [0.48, 0.52], [0.55, 0.66]].forEach(([from, to]) => {
+            const start = Math.floor(from * rate);
+            const end = Math.min(data.length, Math.floor(to * rate));
+            for (let i = start; i < end; i++) {
+                const env = Math.sin(Math.PI * (i - start) / Math.max(1, end - start));
+                data[i] = (Math.random() * 2 - 1) * env;
+            }
+        });
+        const source = this.ctx.createBufferSource();
+        source.buffer = buffer;
+        const filter = this.ctx.createBiquadFilter();
+        filter.type = 'highpass';
+        filter.frequency.value = 1200;
+        const gain = this.ctx.createGain();
+        gain.gain.value = (this.volumes?.sfx ?? 0.5) * 0.45;
+        source.connect(filter);
+        filter.connect(gain);
+        gain.connect(this.sfxGain || this.ctx.destination);
+        try { source.start(); } catch (_) {}
+    }
+
     // =========================================================================
     // SFX 재생 (원샷)
     // =========================================================================

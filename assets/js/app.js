@@ -137,6 +137,51 @@ function playTitleIntro() {
 
 window.playNevergradTitleIntro = playTitleIntro;
 
+function playArrivalCrackle() {
+    const AudioContextCtor = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContextCtor) return;
+    const ctx = playArrivalCrackle.ctx || new AudioContextCtor();
+    playArrivalCrackle.ctx = ctx;
+    const fire = () => {
+        if (ctx.state === 'suspended') return;
+        const duration = 0.72;
+        const rate = ctx.sampleRate;
+        const buffer = ctx.createBuffer(1, Math.floor(rate * duration), rate);
+        const data = buffer.getChannelData(0);
+        [[0.00, 0.045], [0.08, 0.12], [0.15, 0.26], [0.40, 0.445], [0.48, 0.52], [0.55, 0.66]].forEach(([from, to]) => {
+            const start = Math.floor(from * rate);
+            const end = Math.min(data.length, Math.floor(to * rate));
+            for (let i = start; i < end; i++) {
+                const env = Math.sin(Math.PI * (i - start) / Math.max(1, end - start));
+                data[i] = (Math.random() * 2 - 1) * env;
+            }
+        });
+        const source = ctx.createBufferSource();
+        source.buffer = buffer;
+        const filter = ctx.createBiquadFilter();
+        filter.type = 'highpass';
+        filter.frequency.value = 1200;
+        const gain = ctx.createGain();
+        gain.gain.value = 0.22;
+        source.connect(filter);
+        filter.connect(gain);
+        gain.connect(ctx.destination);
+        source.start();
+        if (navigator.vibrate && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window)) {
+            navigator.vibrate([45, 35, 40, 30, 110, 140, 45, 35, 40, 30, 110]);
+        }
+    };
+    if (ctx.state === 'suspended') {
+        const once = () => {
+            ctx.resume().then(fire).catch(() => {});
+            window.removeEventListener('pointerdown', once);
+        };
+        window.addEventListener('pointerdown', once);
+        return;
+    }
+    fire();
+}
+
 function playRiinArrival() {
     if (!/(?:^|[?&])from=riin(?:&|$)/.test(location.search)) return;
     if (sessionStorage.getItem('ng-riin-arrival')) return;
@@ -166,6 +211,7 @@ function playRiinArrival() {
     overlay.appendChild(img);
     overlay.appendChild(caption);
     document.body.appendChild(overlay);
+    playArrivalCrackle();
     window.setTimeout(() => overlay.classList.add('tear'), 1100);
     window.setTimeout(() => overlay.remove(), 1650);
 }

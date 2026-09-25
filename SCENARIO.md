@@ -15809,6 +15809,68 @@ _캐릭터: `riin_neutral`_
 막으러 온 거 아니야.
 ```
 
+### `day5_lunch_pills_1`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `cg_riin_two_pills`_
+
+**나**
+```text
+*리인 선생님이 양손을 내민다. 한 손에는 검은 알약, 다른 손에는 분홍 알약.*
+```
+
+### `day5_lunch_pills_2`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `cg_riin_two_pills`_
+
+**강리인**
+```text
+하나만.
+```
+
+**선택지**
+1. 분홍 알약
+2. 검은 알약
+
+### `day5_lunch_pills_pink_1`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+
+**나**
+```text
+*분홍 알약을 삼킨다. 혀가 단 뒤 목이 뜨거워진다.*
+```
+
+### `day5_lunch_pills_pink_2`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `cg_gate_bloom`_
+
+**나**
+```text
+*보건실 천장이 멀어진다. 발밑에 밟힌 꽃잎이 붙어 있다.*
+```
+
+### `day5_lunch_pills_pink_3`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `cg_gate_bloom`_
+
+**나**
+```text
+*교문이다.*
+```
+
+### `day5_lunch_pills_black_1`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+
+**나**
+```text
+*검은 알약 쪽으로 손이 간다. 리인 선생님이 두 손을 거두고 캐비닛 쪽으로 돌아선다.*
+```
+
 ### `day5_lunch_right_14`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_

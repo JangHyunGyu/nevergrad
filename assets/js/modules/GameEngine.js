@@ -298,6 +298,20 @@ class GameEngine {
         this._bindArchiveButton();
     }
 
+    _redirectToCupidGate() {
+        const lang = this.i18n?.currentLang || 'ko';
+        const page = {
+            ko: '/',
+            en: '/index-en',
+            ja: '/index-ja',
+            es: '/index-es',
+            fr: '/index-fr',
+            de: '/index-de',
+            pt: '/index-pt'
+        }[lang] || '/';
+        location.assign(`https://cupid.archerlab.dev${page}?gate=1`);
+    }
+
     _markNevergradPlayed() {
         try {
             const host = location.hostname || '';
@@ -1247,6 +1261,11 @@ class GameEngine {
         if (!this.currentSceneData) return;
         if (this._endingReached) return;
         const scene = this.currentSceneData;
+
+        if (scene.redirect === 'cupid-gate') {
+            this._redirectToCupidGate();
+            return;
+        }
 
         if (scene.branches) {
             const next = this._resolveBranch(scene.branches);

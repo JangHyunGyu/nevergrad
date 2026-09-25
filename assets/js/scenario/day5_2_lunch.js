@@ -460,6 +460,49 @@ Object.assign(SCENARIO[5], {
     "day5_lunch_right_13": {
         character: "riin_neutral",
         unskippable: true,
+        next: "day5_lunch_pills_1"
+    },
+    "day5_lunch_pills_1": {
+        condition: "met_riin",
+        fallback: "day5_lunch_right_14",
+        background: "cg_riin_two_pills",
+        character: null,
+        unskippable: true,
+        next: "day5_lunch_pills_2"
+    },
+    "day5_lunch_pills_2": {
+        background: "cg_riin_two_pills",
+        character: null,
+        unskippable: true,
+        choices: [
+            { next: "day5_lunch_pills_pink_1" },
+            { next: "day5_lunch_pills_black_1" }
+        ]
+    },
+    "day5_lunch_pills_pink_1": {
+        background: "cg_riin_two_pills",
+        character: null,
+        unskippable: true,
+        next: "day5_lunch_pills_pink_2"
+    },
+    "day5_lunch_pills_pink_2": {
+        background: "cg_gate_bloom",
+        character: null,
+        unskippable: true,
+        next: "day5_lunch_pills_pink_3"
+    },
+    "day5_lunch_pills_pink_3": {
+        background: "cg_gate_bloom",
+        character: null,
+        unskippable: true,
+        autoAdvance: true,
+        autoAdvanceDelay: 1400,
+        redirect: "cupid-gate"
+    },
+    "day5_lunch_pills_black_1": {
+        background: "old_infirmary",
+        character: "riin_neutral",
+        unskippable: true,
         next: "day5_lunch_right_14"
     },
     "day5_lunch_right_14": {

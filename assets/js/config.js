@@ -250,6 +250,8 @@ const CONFIG = {
         corridor_emergency: "assets/images/background/emergency_corridor.webp",
         locked_corridor_junction: "assets/images/background/locked_corridor_junction.webp",
         old_infirmary: "assets/images/background/old_infirmary.webp",
+        cg_riin_two_pills: "assets/images/background/cg_riin_two_pills.jpg",
+        cg_gate_bloom: "assets/images/background/cg_gate_bloom.jpg",
         old_stairway: "assets/images/background/old_stairway.webp",
         old_corridor_dark: "assets/images/background/old_corridor_dark.webp",
         hidden_service_passage: "assets/images/background/hidden_service_passage.webp",

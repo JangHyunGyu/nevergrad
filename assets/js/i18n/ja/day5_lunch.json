@@ -228,17 +228,23 @@
         "text": "「止めに来たんじゃない。」"
     },
     "day5_lunch_pills_0": {
-        "text": "手。"
+        "text": "手を出して。選ぶものがある。"
     },
     "day5_lunch_pills_1": {
         "text": "*リイン先生が両手を出す。片方に黒い錠剤、もう片方にピンクの錠剤。*"
     },
+    "day5_lunch_pills_ask": {
+        "text": "これ、何？"
+    },
     "day5_lunch_pills_2": {
-        "text": "一つでいい。",
+        "text": "飲んだあとで分かる。",
         "choices": ["ピンクの薬", "黒い薬"]
     },
     "day5_lunch_pills_pink_1": {
         "text": "*ピンクの錠剤を飲み込む。舌に甘さが残って、喉が熱くなる。*"
+    },
+    "day5_lunch_pills_pink_ask": {
+        "text": "甘い。ここは..."
     },
     "day5_lunch_pills_pink_2": {
         "text": "*保健室の天井が遠ざかる。足元に踏まれた花びらがついている。*"
@@ -248,6 +254,9 @@
     },
     "day5_lunch_pills_black_1": {
         "text": "*手が黒い薬のほうへ伸びる。リイン先生は両手を引いて、戸棚のほうを向く。*"
+    },
+    "day5_lunch_pills_black_ask": {
+        "text": "黒いのは飲まない。じゃあ戸棚の中は何？"
     },
     "day5_lunch_right_14": {
         "text": "*キャビネットを開ける。薬瓶がずらりと並んでいる。*"

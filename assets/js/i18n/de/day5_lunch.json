@@ -228,17 +228,23 @@
         "text": "Ich bin nicht hier, um dich aufzuhalten."
     },
     "day5_lunch_pills_0": {
-        "text": "Die Hand."
+        "text": "Streck die Hand aus. Es gibt eine Wahl."
     },
     "day5_lunch_pills_1": {
         "text": "*Riin hält beide Hände hin. Auf der einen eine schwarze Tablette, auf der anderen eine rosa.*"
     },
+    "day5_lunch_pills_ask": {
+        "text": "Was ist das?"
+    },
     "day5_lunch_pills_2": {
-        "text": "Nur eine.",
+        "text": "Du weißt es, nachdem du sie schluckst.",
         "choices": ["Rosa Tablette", "Schwarze Tablette"]
     },
     "day5_lunch_pills_pink_1": {
         "text": "*Ich schlucke die rosa Tablette. Süß auf der Zunge, dann heiß in der Kehle.*"
+    },
+    "day5_lunch_pills_pink_ask": {
+        "text": "Süß. Dieser Ort..."
     },
     "day5_lunch_pills_pink_2": {
         "text": "*Die Decke des Krankenraums rückt weg. Zertretene Blütenblätter kleben unter meinen Füßen.*"
@@ -248,6 +254,9 @@
     },
     "day5_lunch_pills_black_1": {
         "text": "*Die Hand geht zur schwarzen Tablette. Riin schließt beide Hände und dreht sich zum Schrank.*"
+    },
+    "day5_lunch_pills_black_ask": {
+        "text": "Die schwarze nehme ich nicht. Was ist dann im Schrank?"
     },
     "day5_lunch_right_14": {
         "text": "*Sie öffnet den Schrank. Darin stehen Reihen von Arzneifläschchen.*"

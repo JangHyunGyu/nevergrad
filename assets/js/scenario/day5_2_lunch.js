@@ -473,6 +473,12 @@ Object.assign(SCENARIO[5], {
         background: "cg_riin_two_pills",
         character: null,
         unskippable: true,
+        next: "day5_lunch_pills_ask"
+    },
+    "day5_lunch_pills_ask": {
+        background: "cg_riin_two_pills",
+        character: null,
+        unskippable: true,
         next: "day5_lunch_pills_2"
     },
     "day5_lunch_pills_2": {
@@ -485,6 +491,12 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "day5_lunch_pills_pink_1": {
+        background: "cg_riin_two_pills",
+        character: null,
+        unskippable: true,
+        next: "day5_lunch_pills_pink_ask"
+    },
+    "day5_lunch_pills_pink_ask": {
         background: "cg_riin_two_pills",
         character: null,
         unskippable: true,
@@ -506,6 +518,12 @@ Object.assign(SCENARIO[5], {
         redirect: "cupid-gate"
     },
     "day5_lunch_pills_black_1": {
+        background: "old_infirmary",
+        character: "riin_neutral",
+        unskippable: true,
+        next: "day5_lunch_pills_black_ask"
+    },
+    "day5_lunch_pills_black_ask": {
         background: "old_infirmary",
         character: "riin_neutral",
         unskippable: true,

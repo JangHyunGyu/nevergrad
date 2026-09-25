@@ -228,17 +228,23 @@
         "text": "No vine a detenerte."
     },
     "day5_lunch_pills_0": {
-        "text": "La mano."
+        "text": "Saca la mano. Hay algo que elegir."
     },
     "day5_lunch_pills_1": {
         "text": "*Riin extiende las dos manos. En una, una pastilla negra. En la otra, una rosa.*"
     },
+    "day5_lunch_pills_ask": {
+        "text": "¿Qué es esto?"
+    },
     "day5_lunch_pills_2": {
-        "text": "Solo una.",
+        "text": "Lo sabrás después de tragarlo.",
         "choices": ["Pastilla rosa", "Pastilla negra"]
     },
     "day5_lunch_pills_pink_1": {
         "text": "*Trago la pastilla rosa. Dulce en la lengua, y luego la garganta quema.*"
+    },
+    "day5_lunch_pills_pink_ask": {
+        "text": "Está dulce. Este lugar..."
     },
     "day5_lunch_pills_pink_2": {
         "text": "*El techo de la enfermería se aleja. Pétalos pisados se pegan bajo mis pies.*"
@@ -248,6 +254,9 @@
     },
     "day5_lunch_pills_black_1": {
         "text": "*La mano va hacia la pastilla negra. Riin cierra las dos manos y se vuelve hacia el armario.*"
+    },
+    "day5_lunch_pills_black_ask": {
+        "text": "No me tomo la negra. Entonces, ¿qué hay en el armario?"
     },
     "day5_lunch_right_14": {
         "text": "*Abre el gabinete. Dentro hay filas de frascos.*"

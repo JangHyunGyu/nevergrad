@@ -228,17 +228,23 @@
         "text": "I'm not here to stop you."
     },
     "day5_lunch_pills_0": {
-        "text": "Hand."
+        "text": "Hold out your hand. There's a choice."
     },
     "day5_lunch_pills_1": {
         "text": "*Riin holds out both hands. One palm has a black pill. The other has a pink pill.*"
     },
+    "day5_lunch_pills_ask": {
+        "text": "What is this?"
+    },
     "day5_lunch_pills_2": {
-        "text": "Just one.",
+        "text": "You'll know after you swallow it.",
         "choices": ["Pink pill", "Black pill"]
     },
     "day5_lunch_pills_pink_1": {
         "text": "*The pink pill goes down. Sweet on the tongue, then hot in the throat.*"
+    },
+    "day5_lunch_pills_pink_ask": {
+        "text": "It's sweet. This place..."
     },
     "day5_lunch_pills_pink_2": {
         "text": "*The infirmary ceiling pulls away. Crushed petals stick to the ground under my feet.*"
@@ -248,6 +254,9 @@
     },
     "day5_lunch_pills_black_1": {
         "text": "*My hand moves toward the black pill. Riin closes both hands and turns to the cabinet.*"
+    },
+    "day5_lunch_pills_black_ask": {
+        "text": "I won't take the black one. Then what's in the cabinet?"
     },
     "day5_lunch_right_14": {
         "text": "*She opens the cabinet. Rows of vials line the shelves.*"

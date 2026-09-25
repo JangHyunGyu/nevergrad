@@ -452,6 +452,7 @@ class GameEngine {
             this.audio?.playUIDialogueAdvance();
 
             if (this.dialogue.isTyping) {
+                if (this._isEndingScene(this.state.currentScene)) return;
                 this.dialogue.skipTyping();
                 return;
             }
@@ -673,10 +674,14 @@ class GameEngine {
         }
 
         // 배경
+        const handoffFade = sceneId === 'day5_lunch_pills_1' || sceneId === 'day5_lunch_pills_pink_2';
+        this.renderer._crossfadeMs = handoffFade ? 1800 : 0;
         if (scene.background) {
             const bgPath = CONFIG.BACKGROUNDS[scene.background] || scene.background;
             this.renderer.setBackground(bgPath);
-            this.gallery?.unlockCGByPath?.(bgPath);
+            if (scene.background !== 'cg_riin_two_pills' && scene.background !== 'cg_gate_bloom') {
+                this.gallery?.unlockCGByPath?.(bgPath);
+            }
         } else if (/^day5_ending_true_2[6-7]$/.test(sceneId)) {
             this.renderer.setBackground(CONFIG.BACKGROUNDS.news_article);
         } else if (/^day5_morning_true_([2-9]|1[0-9]|2[0-7])$/.test(sceneId)) {
@@ -877,7 +882,7 @@ class GameEngine {
         // 타이핑 옵션 (공포 연출: 느린 텍스트, 스킵 불가)
         const typeOpts = {};
         if (scene.typingSpeed) typeOpts.typingSpeed = scene.typingSpeed;
-        if (scene.unskippable) typeOpts.unskippable = true;
+        if (scene.unskippable || this._isEndingScene(sceneId)) typeOpts.unskippable = true;
         if (scene.messengerDelay) typeOpts.messengerDelay = scene.messengerDelay;
 
         // 타이핑 메서드 선택: 메신저 모드("..." 인디케이터 후 메시지) vs 일반
@@ -3152,11 +3157,17 @@ class GameEngine {
      * CAGE END 모드에서 클릭 시 다음 문장 출력.
      * 클릭 수에 따라 글리치, 설화 목소리, 탈출 버튼 등장.
      */
+    _isEndingScene(sceneId) {
+        if (!sceneId) return false;
+        return sceneId.startsWith('day5_ending_')
+            || sceneId.startsWith('day5_postcredit')
+            || sceneId.startsWith('day5_xover_')
+            || sceneId.startsWith('day5_observer_')
+            || sceneId.startsWith('day5_lunch_pills_');
+    }
+
     _cageAdvance() {
-        if (this.dialogue.isTyping) {
-            this.dialogue.skipTyping();
-            return;
-        }
+        if (this.dialogue.isTyping) return;
 
         this._cageClickCount++;
         const count = this._cageClickCount;

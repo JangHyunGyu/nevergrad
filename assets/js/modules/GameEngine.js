@@ -2169,16 +2169,16 @@ class GameEngine {
     }
 
     _formatCupidHeroine(heroineId) {
-        if (!heroineId) return '—';
+        if (!heroineId || heroineId === 'haeun') return '—';
         const lang = this.i18n.currentLang || 'ko';
         const map = {
-            ko: { seoyeon: '서연', dain: '다인', yuna: '유나', teacher: '담임선생님', nurse: '보건선생님', haeun: '하은', jiwoo: '지우' },
-            en: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Homeroom Teacher', nurse: 'School Nurse', haeun: 'Haeun', jiwoo: 'Jiwoo' },
-            ja: { seoyeon: 'ソヨン', dain: 'ダイン', yuna: 'ユナ', teacher: '担任の先生', nurse: '保健室の先生', haeun: 'ハウン', jiwoo: 'ジウ' },
-            es: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Profesora', nurse: 'Enfermera escolar', haeun: 'Haeun', jiwoo: 'Jiwoo' },
-            fr: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Professeure', nurse: 'Infirmière scolaire', haeun: 'Haeun', jiwoo: 'Jiwoo' },
-            de: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Klassenlehrerin', nurse: 'Schulkrankenschwester', haeun: 'Haeun', jiwoo: 'Jiwoo' },
-            pt: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Professora', nurse: 'Enfermeira escolar', haeun: 'Haeun', jiwoo: 'Jiwoo' }
+            ko: { seoyeon: '서연', dain: '다인', yuna: '유나', teacher: '담임선생님', nurse: '보건선생님', jiwoo: '지우' },
+            en: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Homeroom Teacher', nurse: 'School Nurse', jiwoo: 'Jiwoo' },
+            ja: { seoyeon: 'ソヨン', dain: 'ダイン', yuna: 'ユナ', teacher: '担任の先生', nurse: '保健室の先生', jiwoo: 'ジウ' },
+            es: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Profesora', nurse: 'Enfermera escolar', jiwoo: 'Jiwoo' },
+            fr: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Professeure', nurse: 'Infirmière scolaire', jiwoo: 'Jiwoo' },
+            de: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Klassenlehrerin', nurse: 'Schulkrankenschwester', jiwoo: 'Jiwoo' },
+            pt: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Professora', nurse: 'Enfermeira escolar', jiwoo: 'Jiwoo' }
         };
         return (map[lang] || map.en)[heroineId] || heroineId;
     }

@@ -312,6 +312,22 @@ class GameEngine {
         location.assign(`https://cupid.archerlab.dev${page}?gate=1`);
     }
 
+    _pulseCrossGlitch(sceneId) {
+        const screen = document.getElementById('game-screen');
+        if (!screen) return;
+        if (!document.getElementById('ng-cross-glitch-style')) {
+            const style = document.createElement('style');
+            style.id = 'ng-cross-glitch-style';
+            style.textContent = '#game-screen.cross-glitch{animation:ng-cross-glitch .55s steps(2) 1}@keyframes ng-cross-glitch{0%{filter:none}25%{filter:brightness(.2) contrast(1.7) hue-rotate(70deg)}55%{filter:brightness(1.3) saturate(.2)}100%{filter:none}}';
+            document.head.appendChild(style);
+        }
+        const hit = sceneId === 'day5_lunch_pills_pink_2' || sceneId === 'day5_lunch_pills_pink_3';
+        screen.classList.remove('cross-glitch');
+        if (!hit) return;
+        void screen.offsetWidth;
+        screen.classList.add('cross-glitch');
+    }
+
     _markNevergradPlayed() {
         try {
             const host = location.hostname || '';
@@ -607,6 +623,7 @@ class GameEngine {
 
         // 거울 fog 상시 연출: 다음 씬이 mirrorFog 포함 안 하면 제거
         const nextScene = SCENARIO[this.state.currentDay]?.[sceneId];
+        this._pulseCrossGlitch(sceneId);
         if (this.glitch?._mirrorFogEl && !nextScene?.glitch?.mirrorFog) {
             this.glitch.hideMirrorFog();
         }

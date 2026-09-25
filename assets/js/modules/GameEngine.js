@@ -229,12 +229,7 @@ class GameEngine {
             }
             this.state.resumeRun();
             this._endingReached = false;
-            // Cupid 크로스오버 플래그 설정 (세이브 데이터에 포함되지 않으므로 매번 감지)
-            if (this.crossover?.hasPlayedCupid()) {
-                this.state.setFlag('cupid_played');
-                const heroine = this.crossover.getData?.()?.heroine;
-                if (heroine) this.state.setFlag(`cupid_heroine_${heroine}`);
-            }
+            this._applyCrossoverFlags();
             if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
             this.glitch.initConsoleEasterEgg(this.state.currentDay);
             if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
@@ -285,12 +280,7 @@ class GameEngine {
             this.state.currentScene = "day1_opening_1";
             this._endingReached = false;
 
-            // Cupid 크로스오버 플래그 설정
-            if (this.crossover?.hasPlayedCupid()) {
-                this.state.setFlag('cupid_played');
-                const heroine = this.crossover.getData?.()?.heroine;
-                if (heroine) this.state.setFlag(`cupid_heroine_${heroine}`);
-            }
+            this._applyCrossoverFlags();
             if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
 
             this.glitch.initConsoleEasterEgg(1);
@@ -303,6 +293,56 @@ class GameEngine {
             }
             this._loadScene("day1_opening_1");
         });
+
+        this._bindArchiveButton();
+    }
+
+    _applyCrossoverFlags() {
+        if (!this.crossover?.hasPlayedCupid?.()) return;
+        this.state.setFlag('cupid_played');
+        const heroine = this.crossover.getData?.()?.heroine;
+        if (heroine) this.state.setFlag(`cupid_heroine_${heroine}`);
+    }
+
+    _bindArchiveButton() {
+        if (!this.save?.hasSeenEnding?.('TRUE')) return;
+        const menu = document.querySelector('#title-screen .title-menu');
+        if (!menu) return;
+        let btn = document.getElementById('btn-archive');
+        const label = this.i18n?.getUI?.('archiveServer') || 'Institute Server';
+        if (!btn) {
+            btn = document.createElement('button');
+            btn.id = 'btn-archive';
+            btn.type = 'button';
+            btn.className = 'menu-btn';
+            const gallery = document.getElementById('btn-gallery');
+            if (gallery && gallery.parentElement === menu) gallery.insertAdjacentElement('afterend', btn);
+            else menu.appendChild(btn);
+            btn.addEventListener('click', () => {
+                this._startArchive();
+            });
+        }
+        btn.textContent = label;
+    }
+
+    async _startArchive() {
+        this.audio?.playUIClick();
+        if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
+        this._prepareNewRun();
+        this._archiveMode = true;
+        if (!this.save.load()) this.state.startNewRun();
+        this.state.currentDay = 5;
+        this.state.currentSlot = 'night';
+        this._endingReached = false;
+        this._applyCrossoverFlags();
+        this.state.setFlag('new_game_plus');
+        this.glitch?.initConsoleEasterEgg?.(5);
+        if (this._preloadImages) {
+            await this._preloadImages('game-screen', 'day5_xover_server_1');
+        } else {
+            this._showScreen('game-screen');
+        }
+        this._loadScene('day5_xover_server_1');
     }
 
     _prepareNewRun() {
@@ -531,7 +571,7 @@ class GameEngine {
 
         // 자동저장 (슬롯 0) — 씬 전환 시 현재 상태를 저장
         this.state.currentScene = sceneId;
-        this.save.save();
+        if (!this._archiveMode) this.save.save();
 
         // 거울 fog 상시 연출: 다음 씬이 mirrorFog 포함 안 하면 제거
         const nextScene = SCENARIO[this.state.currentDay]?.[sceneId];
@@ -2132,13 +2172,13 @@ class GameEngine {
         if (!heroineId) return '—';
         const lang = this.i18n.currentLang || 'ko';
         const map = {
-            ko: { seoyeon: '서연', dain: '다인', yuna: '유나', jiwoo: '지우', haeun: '하은' },
-            en: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' },
-            ja: { seoyeon: 'ソヨン', dain: 'ダイン', yuna: 'ユナ', jiwoo: 'ジウ', haeun: 'ハウン' },
-            es: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' },
-            fr: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' },
-            de: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' },
-            pt: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', jiwoo: 'Jiwoo', haeun: 'Haeun' }
+            ko: { seoyeon: '서연', dain: '다인', yuna: '유나', teacher: '담임선생님', nurse: '보건선생님', haeun: '하은', jiwoo: '지우' },
+            en: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Homeroom Teacher', nurse: 'School Nurse', haeun: 'Haeun', jiwoo: 'Jiwoo' },
+            ja: { seoyeon: 'ソヨン', dain: 'ダイン', yuna: 'ユナ', teacher: '担任の先生', nurse: '保健室の先生', haeun: 'ハウン', jiwoo: 'ジウ' },
+            es: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Profesora', nurse: 'Enfermera escolar', haeun: 'Haeun', jiwoo: 'Jiwoo' },
+            fr: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Professeure', nurse: 'Infirmière scolaire', haeun: 'Haeun', jiwoo: 'Jiwoo' },
+            de: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Klassenlehrerin', nurse: 'Schulkrankenschwester', haeun: 'Haeun', jiwoo: 'Jiwoo' },
+            pt: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Professora', nurse: 'Enfermeira escolar', haeun: 'Haeun', jiwoo: 'Jiwoo' }
         };
         return (map[lang] || map.en)[heroineId] || heroineId;
     }
@@ -2754,12 +2794,7 @@ class GameEngine {
                 this.audio?.playUILoadConfirm();
                 this.state.resumeRun();
                 this._endingReached = false;
-                // Cupid 크로스오버 플래그 재설정
-                if (this.crossover?.hasPlayedCupid()) {
-                    this.state.setFlag('cupid_played');
-                    const heroine = this.crossover.getData?.()?.heroine;
-                    if (heroine) this.state.setFlag(`cupid_heroine_${heroine}`);
-                }
+                this._applyCrossoverFlags();
                 if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
                 this.glitch.initConsoleEasterEgg(this.state.currentDay);
                 if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
@@ -2849,8 +2884,10 @@ class GameEngine {
 
         // 타이틀 복귀 시 이어하기 버튼 상태 갱신
         if (id === 'title-screen') {
+            this._archiveMode = false;
             const btn = document.getElementById('btn-continue');
             if (btn) btn.disabled = !this.save.hasSaveData();
+            this._bindArchiveButton?.();
             window.playNevergradTitleIntro?.();
         }
     }

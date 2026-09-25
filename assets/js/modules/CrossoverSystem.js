@@ -51,18 +51,16 @@ class CrossoverSystem {
         this._detected = true;
 
         try {
-            // cycle_01 클리어 여부
-            const cycle01 = localStorage.getItem('cupid_cycle_01');
+            // 같은 출처의 localStorage를 먼저 보고, 없으면 .archerlab.dev 공유 쿠키를 본다.
+            const cycle01 = this._readShared('cupid_cycle_01');
             this.cupidCompleted = (cycle01 === 'complete');
 
-            // 공략 히로인
-            const heroine = localStorage.getItem('cupid_heroine');
+            const heroine = this._readShared('cupid_heroine');
             if (heroine && typeof heroine === 'string' && heroine.length > 0) {
                 this.cupidHeroine = heroine;
             }
 
-            // 순응도 점수
-            const compliance = localStorage.getItem('cupid_subject_compliance');
+            const compliance = this._readShared('cupid_subject_compliance');
             if (compliance !== null) {
                 const parsed = parseInt(compliance, 10);
                 if (!isNaN(parsed) && parsed >= 0 && parsed <= 100) {
@@ -81,6 +79,23 @@ class CrossoverSystem {
      * Cupid 플레이 여부 반환
      * @returns {boolean}
      */
+    _readShared(key) {
+        try {
+            const local = localStorage.getItem(key);
+            if (local) return local;
+        } catch (_) {}
+        try {
+            const prefix = `${key}=`;
+            const parts = String(document.cookie || '').split(';');
+            for (const part of parts) {
+                const trimmed = part.trim();
+                if (!trimmed.startsWith(prefix)) continue;
+                return decodeURIComponent(trimmed.slice(prefix.length));
+            }
+        } catch (_) {}
+        return null;
+    }
+
     hasPlayedCupid() {
         return this.cupidCompleted;
     }

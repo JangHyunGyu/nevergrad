@@ -179,9 +179,22 @@
         </ul>
 
         <div class="footer">
-            총 13개 주기 | 복구 가능: 1개 | 진행 중: 1개<br>
+            총 13개 주기 | 복구 가능: <span id="cycle-recoverable">1</span>개 | 진행 중: 1개<br>
             <span class="cursor-blink"></span>
         </div>
     </div>
+    <script>
+        (function () {
+            var played = /(?:^|; )cupid_cycle_01=complete(?:;|$)/.test(document.cookie);
+            if (!played) return;
+            var status = document.querySelector('.log-list li .log-status');
+            if (!status) return;
+            status.textContent = '[정상]';
+            status.classList.remove('corrupted');
+            status.classList.add('normal');
+            var count = document.getElementById('cycle-recoverable');
+            if (count) count.textContent = '2';
+        })();
+    </script>
 </body>
 </html>

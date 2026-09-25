@@ -501,6 +501,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 엔진 초기화 (i18n 로드, UI 바인딩)
     await game.init();
+    if (/(?:^|[?&])from=riin(?:&|$)/.test(location.search)) {
+        game.renderer.playBGM('riin_theme.mp3');
+    }
 
     // 전역 노출 — 개발자 도구/테스트 접근용
     window.game = game;

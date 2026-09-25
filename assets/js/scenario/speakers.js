@@ -1598,6 +1598,7 @@ var SCENARIO_SPEAKERS = {
     "day5_lunch_right_11": "riin_full",
     "day5_lunch_right_12": "riin",
     "day5_lunch_right_13": "riin_full",
+    "day5_lunch_pills_0": "riin_full",
     "day5_lunch_pills_1": "me",
     "day5_lunch_pills_2": "riin_full",
     "day5_lunch_pills_pink_1": "me",

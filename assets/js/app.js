@@ -198,7 +198,7 @@ function playRiinArrival() {
         overlay.id = 'riin-arrival';
         document.body.appendChild(overlay);
     }
-    overlay.style.backgroundImage = `url('${resolveNevergradAssetUrl(getNevergradAssetPath('assets/images/background/riin_lab_wake.jpg'))}')`;
+    overlay.style.backgroundImage = `url('${resolveNevergradAssetUrl(getNevergradAssetPath('assets/images/background/riin_lab_wake.jpg?v=20260926-pills'))}')`;
     document.documentElement.classList.remove('riin-wake');
     playArrivalCrackle();
     window.setTimeout(() => overlay.classList.add('tear'), 1400);

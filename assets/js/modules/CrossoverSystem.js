@@ -56,14 +56,14 @@ class CrossoverSystem {
             this.cupidCompleted = (cycle01 === 'complete');
 
             const heroine = this._readShared('cupid_heroine');
-            if (heroine && typeof heroine === 'string' && heroine.length > 0) {
+            if (['seoyeon', 'yuna', 'dain', 'teacher', 'nurse', 'haeun', 'jiwoo', 'none'].includes(heroine)) {
                 this.cupidHeroine = heroine;
             }
 
             const compliance = this._readShared('cupid_subject_compliance');
             if (compliance !== null) {
-                const parsed = parseInt(compliance, 10);
-                if (!isNaN(parsed) && parsed >= 0 && parsed <= 100) {
+                const parsed = Number(compliance);
+                if (compliance.trim() !== '' && Number.isInteger(parsed) && parsed >= 0 && parsed <= 100) {
                     this.cupidCompliance = parsed;
                 }
             }
@@ -81,10 +81,6 @@ class CrossoverSystem {
      */
     _readShared(key) {
         try {
-            const local = localStorage.getItem(key);
-            if (local) return local;
-        } catch (_) {}
-        try {
             const prefix = `${key}=`;
             const parts = String(document.cookie || '').split(';');
             for (const part of parts) {
@@ -92,6 +88,10 @@ class CrossoverSystem {
                 if (!trimmed.startsWith(prefix)) continue;
                 return decodeURIComponent(trimmed.slice(prefix.length));
             }
+        } catch (_) {}
+        try {
+            const local = localStorage.getItem(key);
+            if (local) return local;
         } catch (_) {}
         return null;
     }

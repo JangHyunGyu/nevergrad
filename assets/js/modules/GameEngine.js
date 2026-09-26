@@ -309,7 +309,17 @@ class GameEngine {
             de: '/index-de',
             pt: '/index-pt'
         }[lang] || '/';
-        location.assign(`https://cupid.archerlab.dev${page}?gate=1`);
+        this._stopAuto();
+        this._stopSkip();
+        window.CrossWorld.show({
+            departure: true, world: 'cupid', lang,
+            image: resolveNevergradAssetUrl('assets/images/background/cg_gate_bloom.jpg'),
+            name: this.state.playerName,
+            url: `https://cupid.archerlab.dev${page}?gate=1`,
+            save: () => { this._markNevergradPlayed(); return this.save.save(); },
+            onLeave: () => this.audio?.stopBGM?.(),
+            onBack: () => document.getElementById('dialogue-box')?.focus()
+        });
     }
 
     _pulseCrossGlitch(sceneId) {
@@ -323,13 +333,14 @@ class GameEngine {
         }
         const hit = sceneId === 'day5_lunch_pills_pink_2' || sceneId === 'day5_lunch_pills_pink_3';
         screen.classList.remove('cross-glitch');
-        if (!hit) return;
+        if (!hit || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
         void screen.offsetWidth;
         screen.classList.add('cross-glitch');
         this._crackleAndBuzz();
     }
 
     _crackleAndBuzz() {
+        if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
         try { this.audio?.playStaticCrackle?.(); } catch (_) {}
         this.deviceGimmick?.vibrate?.([45, 35, 40, 30, 110, 140, 45, 35, 40, 30, 110]);
     }

@@ -1940,7 +1940,7 @@ _캐릭터: `yuna_normal`_
 ### `day1_lunch_riin_1`
 
 _source: `day1_2_lunch.js / day1_lunch.json`_
-_배경: `nurse_office`_
+_배경: `nurse_office` / 캐릭터: `riin_gentle`_
 
 **지문**
 ```text
@@ -1950,6 +1950,7 @@ _배경: `nurse_office`_
 ### `day1_lunch_riin_2`
 
 _source: `day1_2_lunch.js / day1_lunch.json`_
+_캐릭터: `riin_gentle`_
 
 **지문**
 ```text
@@ -2353,7 +2354,7 @@ _캐릭터: `sea_smile`_
 ### `day1_after_yuna_1`
 
 _source: `day1_3_afterschool.js / day1_afterschool.json`_
-_배경: `library`_
+_배경: `library` / 캐릭터: `yuna_shy`_
 
 **지문**
 ```text
@@ -2493,7 +2494,7 @@ _캐릭터: `yuna_normal`_
 ### `day1_after_riin_1`
 
 _source: `day1_3_afterschool.js / day1_afterschool.json`_
-_배경: `nurse_office`_
+_배경: `nurse_office` / 캐릭터: `riin_gentle`_
 
 **지문**
 ```text
@@ -2603,7 +2604,7 @@ _캐릭터: `riin_gentle`_
 ### `day1_after_riin_12`
 
 _source: `day1_3_afterschool.js / day1_afterschool.json`_
-_캐릭터: `riin_gentle`_
+_배경: `hallway` / 캐릭터: `riin_gentle`_
 
 **지문**
 ```text
@@ -5564,6 +5565,42 @@ _source: `day2_4_night.js / day2_night.json`_
 *답장을 보냈다. '야 민수야, 너 맞아? 말투가 왜 그래. 무슨 일 있어?'*
 ```
 
+### `day2_night_ft_groupchat`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**지문**
+```text
+*예전 단톡방을 열었다. 마지막 메시지 옆의 읽음 수는 그대로다.*
+```
+
+### `day2_night_ft_groupchat_2`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**지문**
+```text
+*대화 목록으로 돌아와 민수의 이름을 눌렀다.*
+```
+
+### `day2_night_ft_putdown`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**지문**
+```text
+*휴대폰을 엎어 놓았다. 민수가 보낸 세 문장을 다시 생각해 봤다.*
+```
+
+### `day2_night_ft_putdown_2`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**지문**
+```text
+*책상 위에서 진동이 울려 휴대폰을 뒤집었다.*
+```
+
 ### `day2_night_ft_messenger_2`
 
 _source: `day2_4_night.js / day2_night.json`_
@@ -5688,378 +5725,6 @@ _캐릭터: `sea_normal`_
 **나**
 ```text
 *세아: '근데 토요일 약속, 아직 그대로지?'*
-```
-
-### `day2_night_sea_9_alt`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `sea_normal`_
-
-**나**
-```text
-*세아: '그럼 내일도 학교에서 보자. 너무 늦게 자지 말고.'*
-```
-
-### `day2_night_sea_10`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `sea_normal`_
-
-**나**
-```text
-*'토요일? 당연하지.'*
-```
-
-### `day2_night_sea_11`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `sea_smile`_
-
-**나**
-```text
-*세아: '응. 그럼 약속한 거야.'*
-```
-
-### `day2_night_sea_12`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `sea_normal`_
-
-**나**
-```text
-*세아: '그럼 잘 자'*
-```
-
-### `day2_night_sea_13`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `sea_smile`_
-
-**나**
-```text
-*'잘 자.'*
-```
-
-### `day2_night_sea_14`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*휴대폰을 내려놓았다. 창밖에는 달이 떠 있다. 카카오톡 알림과 다른 소리가 울렸다.*
-```
-
-### `day2_night_sea_14a`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*학생 안전 앱으로 메시지가 왔다.*
-```
-
-### `day2_night_eunsu_1`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `eunsu_warm`_
-
-**나**
-```text
-*은수: '{name}, 오늘 발표 잘했어. 적응도 빠르고.'*
-```
-
-### `day2_night_eunsu_2`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `eunsu_warm`_
-
-**나**
-```text
-*은수: '내일 교무실에 잠깐 들러줄 수 있을까? 확인할 서류가 있어서.'*
-```
-
-### `day2_night_eunsu_3`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `eunsu_warm`_
-
-**나**
-```text
-*'네, 알겠습니다.'*
-```
-
-### `day2_night_eunsu_4`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `eunsu_warm`_
-
-**나**
-```text
-*은수: '👍 푹 쉬어.'*
-```
-
-### `day2_night_eunsu_5`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `eunsu_warm`_
-
-**나**
-```text
-*학생 안전 앱의 프로필 사진은 비어 있었다. 발신자 이름 아래에는 전화번호 대신 `담임`이라는 회색 라벨만 붙어 있다.*
-```
-
-### `day2_night_flash_1`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*이불을 덮고 눈을 감았다.*
-```
-
-### `day2_night_flash_2`
-
-_source: `day2_4_night.js / day2_night.json`_
-_배경: `corridor_dark`_
-
-**나**
-```text
-*비 내리는 이 학교 복도가 영상처럼 스쳤다. 젖은 교복 차림으로 누군가와 함께 달리고 있다—*
-```
-
-### `day2_night_flash_3`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*여자아이의 차가운 손을 잡고 있다.*
-```
-
-### `day2_night_flash_4`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*"이쪽이야" — 누군가의 목소리. 낯익은 목소리.*
-```
-
-### `day2_night_flash_5`
-
-_source: `day2_4_night.js / day2_night.json`_
-_배경: `room_night`_
-
-**나**
-```text
-*눈을 떴다. 이마에 땀이 맺혀 있다.*
-```
-
-### `day2_night_flash_6`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*방 안은 조용하다. 발바닥에는 젖은 복도를 밟던 감촉이 남아 있다.*
-```
-
-### `day2_night_flash_7`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*어깨를 만졌다. 낮에 은수가 두드린 자리와 방금 잡고 있던 손의 차가움이 같은 위치에서 겹쳤다.*
-```
-
-### `day2_night_flash_8`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*스탠드 아래 전학 서류가 보인다. 종이 모서리는 아침과 같은 각도로 접혀 있다.*
-```
-
-### `day2_night_search_1`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*이불을 걷어차고 일어났다. 잠이 오지 않았다. 휴대폰을 들고 검색창에 '해돋이 학교'를 입력했다.*
-```
-
-### `day2_night_search_2`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*공식 홈페이지. 교장 선생님 말씀. 학교 연혁. 졸업 앨범 링크는 '준비 중입니다.' 은수 선생님과 리인 선생님의 이름은 교직원 명단에 있었지만 사진은 없었다.*
-```
-
-### `day2_night_search_3`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*뉴스 검색. '해돋이 학교.' 결과 없음. 지역 뉴스 탭도 비어 있다. 화면 가운데 `검색어와 일치하는 문서가 없습니다`만 남았다.*
-```
-
-### `day2_night_search_4`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*'해돋이고 축제', '해돋이고 졸업식'. 자동완성은 뜨는데 결과는 없다. 썸네일 자리에는 회색 사각형만 반복된다.*
-```
-
-### `day2_night_search_5`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*화면 밝기가 자동으로 낮아졌다. 검색창에는 아직 학교 이름이 남아 있다. 지우지 않고 휴대폰을 내려놓았다.*
-```
-
-### `day2_night_dream_1`
-
-_source: `day2_4_night.js / day2_night.json`_
-_배경: `black`_
-
-**나**
-```text
-*다시 눈을 감았다. 이번에는 잠이 들었다.*
-```
-
-### `day2_night_dream_2`
-
-_source: `day2_4_night.js / day2_night.json`_
-_배경: `classroom`_
-
-**나**
-```text
-*꿈을 꾼다.*
-```
-
-### `day2_night_dream_3`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*교실. 하지만 지금 교실은 아니다. 책상 배열이 다르다. 칠판에 날짜가 쓰여 있지만 읽을 수 없다.*
-```
-
-### `day2_night_dream_4`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*누군가 앞자리에 앉아 있다. 긴 머리. 뒷모습만 보인다.*
-```
-
-### `day2_night_dream_5`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*"야, 괜찮아?"*
-```
-
-### `day2_night_dream_6`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `seolhwa_smile`_
-
-**나**
-```text
-*그 사람이 돌아본다. 설화다. 꿈속의 설화는 눈가에 물기 없이 입을 다문 채 웃고 있다.*
-```
-
-### `day2_night_dream_7`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `seolhwa_smile`_
-
-**설화**
-```text
-*입을 열지만 소리는 나오지 않는다. 입술은 '도와—'에서 멈춘다.*
-```
-
-### `day2_night_dream_7a`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `seolhwa_smile`_
-
-**나**
-```text
-*다음 음절이 나오기 전에 칠판의 날짜가 번진다.*
-```
-
-### `day2_night_dream_8`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*교실이 어두워진다. 설화의 얼굴이 흐려진다.*
-```
-
-### `day2_night_dream_9`
-
-_source: `day2_4_night.js / day2_night.json`_
-_배경: `black`_
-
-**나**
-```text
-*—*
-```
-
-### `day2_night_wake_1`
-
-_source: `day2_4_night.js / day2_night.json`_
-_배경: `home`_
-
-**나**
-```text
-*아침이다. 알람이 울리고 있다.*
-```
-
-### `day2_night_wake_2`
-
-_source: `day2_4_night.js / day2_night.json`_
-_캐릭터: `seolhwa_smile`_
-
-**설화**
-```text
-*웃던 얼굴만 남아 있다. 말소리는 알람에 눌리고 입술 모양만 또렷하다.*
-```
-
-### `day2_night_wake_3`
-
-_source: `day2_4_night.js / day2_night.json`_
-
-**나**
-```text
-*베개 옆 휴대폰 화면이 켜져 있다. 검색창에는 아직 '해돋이 학교'가 남아 있다.*
-```
-
-### `day2_night_end`
-
-_source: `day2_4_night.js / day2_night.json`_
-_배경: `black`_
-
-**지문**
-```text
-*— 2일차 종료 —*
 ```
 
 # DAY 3 — 실제 게임 대사/지문
@@ -6328,6 +5993,24 @@ _source: `day3_1_morning.js / day3_morning.json`_
 **나**
 ```text
 *사진을 주머니에 넣었다.*
+```
+
+### `day3_morning_photo_back`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**지문**
+```text
+*사진 조각을 뒤집었다. 찢어진 가장자리부터 손가락으로 훑어 봤다.*
+```
+
+### `day3_morning_photo_look`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**지문**
+```text
+*고개를 돌려 복도를 살폈다. 사진 조각은 손안에 가려 뒀다.*
 ```
 
 ### `day3_morning_photo_2`
@@ -7274,7 +6957,7 @@ _캐릭터: `sea_smile`_
 ### `day3_lunch_sea_3`
 
 _source: `day3_2_lunch.js / day3_lunch.json`_
-_배경: `cafeteria`_
+_배경: `cafeteria` / 캐릭터: `sea_smile`_
 
 **나**
 ```text
@@ -11261,7 +10944,7 @@ _source: `day4_3_afterschool.js / day4_afterschool.json`_
 ### `day4_after_sea_route`
 
 _source: `day4_3_afterschool.js / day4_afterschool.json`_
-_배경: `student_council` / BGM: `sea_obsession.mp3`_
+_배경: `student_council` / BGM: `sea_obsession.mp3` / 캐릭터: `sea_smile`_
 
 **나**
 ```text
@@ -15809,6 +15492,16 @@ _캐릭터: `riin_neutral`_
 막으러 온 거 아니야.
 ```
 
+### `day5_lunch_pills_0`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+_캐릭터: `riin_neutral`_
+
+**강리인**
+```text
+손 봐. 하나만 골라.
+```
+
 ### `day5_lunch_pills_1`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
@@ -15817,6 +15510,16 @@ _배경: `cg_riin_two_pills`_
 **나**
 ```text
 *리인 선생님이 양손을 내민다. 한 손에는 검은 알약, 다른 손에는 분홍 알약.*
+```
+
+### `day5_lunch_pills_ask`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `cg_riin_two_pills`_
+
+**나**
+```text
+이게 뭐야?
 ```
 
 ### `day5_lunch_pills_2`
@@ -15836,22 +15539,31 @@ _배경: `cg_riin_two_pills`_
 ### `day5_lunch_pills_pink_1`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `cg_riin_two_pills`_
 
 **나**
 ```text
-*분홍 알약을 삼킨다. 혀가 단 뒤 목이 뜨거워진다.*
+*분홍 알약을 삼킨다. 혀에 단맛이 남고 목이 뜨거워진다.*
+```
+
+### `day5_lunch_pills_pink_ask`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `cg_riin_two_pills`_
+
+**나**
+```text
+달다.
 ```
 
 ### `day5_lunch_pills_pink_2`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
-_배경: `cg_gate_bloom`_
+_배경: `cg_gate_bloom` / BGM: `spring_bright.mp3`_
 
 **나**
 ```text
-*보건실 천장이 멀어진다. 발바닥에 밟힌 꽃잎이 붙어 있다.*
-
-여기 어디야?
+*보건실 천장이 흐려진다. 바닥을 짚으려던 손에 차가운 교문이 닿는다. 신발 밑에는 밟힌 꽃잎이 붙어 있다.*
 ```
 
 ### `day5_lunch_pills_pink_3`
@@ -15861,16 +15573,27 @@ _배경: `cg_gate_bloom`_
 
 **나**
 ```text
-*교문이다. 4월이고 벚꽃이다.*
+*교문 너머에서 등교 종이 울린다. 교복 소매를 내려다본다. 4월, 전학 첫날에 입었던 옷이다.*
 ```
 
 ### `day5_lunch_pills_black_1`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `old_infirmary` / 캐릭터: `riin_neutral`_
 
 **나**
 ```text
 *검은 알약에는 손이 안 간다. 리인 선생님이 두 손을 거두고 캐비닛 쪽으로 돌아선다.*
+```
+
+### `day5_lunch_pills_black_ask`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `old_infirmary` / 캐릭터: `riin_neutral`_
+
+**나**
+```text
+검은 건 안 먹을게. 그럼 캐비닛 안은 뭐야?
 ```
 
 ### `day5_lunch_right_14`
@@ -20185,6 +19908,357 @@ _source: `day5_4_night.js / day5_night.json`_
 
 아래 항목은 시나리오 JS 노드는 아니지만 한국어 i18n에 존재하는 보조 표시 텍스트다.
 
+### `day2_night_dream_1`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*다시 눈을 감았다. 이번에는 잠이 들었다.*
+```
+
+### `day2_night_dream_2`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*꿈을 꾼다.*
+```
+
+### `day2_night_dream_3`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*교실. 하지만 지금 교실은 아니다. 책상 배열이 다르다. 칠판에 날짜가 쓰여 있지만 읽을 수 없다.*
+```
+
+### `day2_night_dream_4`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*누군가 앞자리에 앉아 있다. 긴 머리. 뒷모습만 보인다.*
+```
+
+### `day2_night_dream_5`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*"야, 괜찮아?"*
+```
+
+### `day2_night_dream_6`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*그 사람이 돌아본다. 설화다. 꿈속의 설화는 눈가에 물기 없이 입을 다문 채 웃고 있다.*
+```
+
+### `day2_night_dream_7`
+
+_source: `day2_night.json`_
+
+**설화**
+```text
+*입을 열지만 소리는 나오지 않는다. 입술은 '도와—'에서 멈춘다.*
+```
+
+### `day2_night_dream_7a`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*다음 음절이 나오기 전에 칠판의 날짜가 번진다.*
+```
+
+### `day2_night_dream_8`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*교실이 어두워진다. 설화의 얼굴이 흐려진다.*
+```
+
+### `day2_night_dream_9`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*—*
+```
+
+### `day2_night_end`
+
+_source: `day2_night.json`_
+
+**지문**
+```text
+*— 2일차 종료 —*
+```
+
+### `day2_night_eunsu_1`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*은수: '{name}, 오늘 발표 잘했어. 적응도 빠르고.'*
+```
+
+### `day2_night_eunsu_2`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*은수: '내일 교무실에 잠깐 들러줄 수 있을까? 확인할 서류가 있어서.'*
+```
+
+### `day2_night_eunsu_3`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*'네, 알겠습니다.'*
+```
+
+### `day2_night_eunsu_4`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*은수: '👍 푹 쉬어.'*
+```
+
+### `day2_night_eunsu_5`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*학생 안전 앱의 프로필 사진은 비어 있었다. 발신자 이름 아래에는 전화번호 대신 `담임`이라는 회색 라벨만 붙어 있다.*
+```
+
+### `day2_night_flash_1`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*이불을 덮고 눈을 감았다.*
+```
+
+### `day2_night_flash_2`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*비 내리는 이 학교 복도가 영상처럼 스쳤다. 젖은 교복 차림으로 누군가와 함께 달리고 있다—*
+```
+
+### `day2_night_flash_3`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*여자아이의 차가운 손을 잡고 있다.*
+```
+
+### `day2_night_flash_4`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*"이쪽이야" — 누군가의 목소리. 낯익은 목소리.*
+```
+
+### `day2_night_flash_5`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*눈을 떴다. 이마에 땀이 맺혀 있다.*
+```
+
+### `day2_night_flash_6`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*방 안은 조용하다. 발바닥에는 젖은 복도를 밟던 감촉이 남아 있다.*
+```
+
+### `day2_night_flash_7`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*어깨를 만졌다. 낮에 은수가 두드린 자리와 방금 잡고 있던 손의 차가움이 같은 위치에서 겹쳤다.*
+```
+
+### `day2_night_flash_8`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*스탠드 아래 전학 서류가 보인다. 종이 모서리는 아침과 같은 각도로 접혀 있다.*
+```
+
+### `day2_night_sea_10`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*'토요일? 당연하지.'*
+```
+
+### `day2_night_sea_11`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*세아: '응. 그럼 약속한 거야.'*
+```
+
+### `day2_night_sea_12`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*세아: '그럼 잘 자'*
+```
+
+### `day2_night_sea_13`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*'잘 자.'*
+```
+
+### `day2_night_sea_14`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*휴대폰을 내려놓았다. 창밖에는 달이 떠 있다. 카카오톡 알림과 다른 소리가 울렸다.*
+```
+
+### `day2_night_sea_14a`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*학생 안전 앱으로 메시지가 왔다.*
+```
+
+### `day2_night_sea_9_alt`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*세아: '그럼 내일도 학교에서 보자. 너무 늦게 자지 말고.'*
+```
+
+### `day2_night_search_1`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*이불을 걷어차고 일어났다. 잠이 오지 않았다. 휴대폰을 들고 검색창에 '해돋이 학교'를 입력했다.*
+```
+
+### `day2_night_search_2`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*공식 홈페이지. 교장 선생님 말씀. 학교 연혁. 졸업 앨범 링크는 '준비 중입니다.' 은수 선생님과 리인 선생님의 이름은 교직원 명단에 있었지만 사진은 없었다.*
+```
+
+### `day2_night_search_3`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*뉴스 검색. '해돋이 학교.' 결과 없음. 지역 뉴스 탭도 비어 있다. 화면 가운데 `검색어와 일치하는 문서가 없습니다`만 남았다.*
+```
+
+### `day2_night_search_4`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*'해돋이고 축제', '해돋이고 졸업식'. 자동완성은 뜨는데 결과는 없다. 썸네일 자리에는 회색 사각형만 반복된다.*
+```
+
+### `day2_night_search_5`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*화면 밝기가 자동으로 낮아졌다. 검색창에는 아직 학교 이름이 남아 있다. 지우지 않고 휴대폰을 내려놓았다.*
+```
+
+### `day2_night_wake_1`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*아침이다. 알람이 울리고 있다.*
+```
+
+### `day2_night_wake_2`
+
+_source: `day2_night.json`_
+
+**설화**
+```text
+*웃던 얼굴만 남아 있다. 말소리는 알람에 눌리고 입술 모양만 또렷하다.*
+```
+
+### `day2_night_wake_3`
+
+_source: `day2_night.json`_
+
+**나**
+```text
+*베개 옆 휴대폰 화면이 켜져 있다. 검색창에는 아직 '해돋이 학교'가 남아 있다.*
+```
+
 ### `day3_after_riin_flicker`
 
 _source: `day3_afterschool.json`_
@@ -20219,6 +20293,60 @@ _source: `day3_night.json`_
 **지문**
 ```text
 도망쳐
+```
+
+### `day4_lunch_nurse_ask_name`
+
+_source: `day4_lunch.json`_
+
+**지문**
+```text
+그거… 이름이 뭐예요?
+```
+
+### `day4_lunch_nurse_ask_name_2`
+
+_source: `day4_lunch.json`_
+
+**지문**
+```text
+영양제. 라벨 읽을 필요 없어. 그냥 누워.
+```
+
+### `day4_lunch_nurse_ask_yuna`
+
+_source: `day4_lunch.json`_
+
+**지문**
+```text
+유나한테도 그거 주셨어요?
+```
+
+### `day4_lunch_nurse_ask_yuna_2`
+
+_source: `day4_lunch.json`_
+
+**지문**
+```text
+…유나 얘기는 내일. 지금은 너 약부터.
+```
+
+### `day4_lunch_nurse_leave_ask`
+
+_source: `day4_lunch.json`_
+
+**지문**
+```text
+*대답을 듣지 않고 나왔다. 등 뒤에서 앰플이 트레이에 닿는 소리가 짧게 났다.*
+```
+
+### `day4_lunch_nurse_leave_yuna`
+
+_source: `day4_lunch.json`_
+
+**지문**
+```text
+*유나 이름을 꺼낸 뒤로는 더 묻지 못했다. 복도로 나오자 문틈으로 낮은 한숨이 새어 나온다.*
 ```
 
 ### `day5_morning_ghost_record`
@@ -20294,7 +20422,7 @@ _source: `day5_night.json`_
 ```
 
 <!--
-sync-stats: {"sceneFiles":20,"scenarioScenes":2077,"i18nEntries":2089,"displayedText":2042,"choices":140,"i18nOnly":12}
+sync-stats: {"sceneFiles":20,"scenarioScenes":2054,"i18nEntries":2111,"displayedText":2064,"choices":142,"i18nOnly":57}
 -->
 
 <!-- END NEVERGRAD KO DISPLAY SYNC -->

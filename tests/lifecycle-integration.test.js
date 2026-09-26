@@ -4,7 +4,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
-const read = relative => fs.readFileSync(path.join(root, relative), 'utf8');
+const read = relative => relative.endsWith('.html')
+    ? require('../scripts/read-html')(path.join(root, relative))
+    : fs.readFileSync(path.join(root, relative), 'utf8');
 
 test('audio and base glitch timers are lifecycle owned', () => {
     const audio = read('assets/js/modules/AudioManager.js');

@@ -182,27 +182,24 @@ function playArrivalCrackle() {
     fire();
 }
 
-function playRiinArrival() {
-    if (!/(?:^|[?&])from=riin(?:&|$)/.test(location.search)) return;
-    if (sessionStorage.getItem('ng-riin-arrival')) return;
-    sessionStorage.setItem('ng-riin-arrival', '1');
-    if (!document.getElementById('riin-arrival-style')) {
-        const style = document.createElement('style');
-        style.id = 'riin-arrival-style';
-        style.textContent = '#riin-arrival{position:fixed;inset:0;z-index:10000;background:#05060a center/cover no-repeat;pointer-events:none;animation:riin-flicker .14s steps(2) 8}#riin-arrival.tear{animation:riin-tear .7s ease forwards}@keyframes riin-flicker{0%{opacity:1}35%{opacity:.28;filter:hue-rotate(75deg)}100%{opacity:1}}@keyframes riin-tear{to{opacity:0;transform:scale(1.045)}}';
-        document.head.appendChild(style);
-    }
-    let overlay = document.getElementById('riin-arrival');
-    if (!overlay) {
-        overlay = document.createElement('div');
-        overlay.id = 'riin-arrival';
-        document.body.appendChild(overlay);
-    }
-    overlay.style.backgroundImage = `url('${resolveNevergradAssetUrl(getNevergradAssetPath('assets/images/background/riin_lab_wake.jpg?v=20260926-pills'))}')`;
+function playRiinArrival(game) {
+    const arrival = window.CrossWorld.takeArrival('nevergrad');
+    if (!arrival) return;
     document.documentElement.classList.remove('riin-wake');
-    playArrivalCrackle();
-    window.setTimeout(() => overlay.classList.add('tear'), 1400);
-    window.setTimeout(() => overlay.remove(), 2150);
+    document.body.style.background = '';
+    window.CrossWorld.show({
+        world: 'nevergrad', lang: game.i18n.currentLang,
+        image: resolveNevergradAssetUrl('assets/images/background/riin_lab_wake.jpg'),
+        hasSave: game.save.hasSaveData(),
+        onContinue: () => document.getElementById('btn-continue')?.click(),
+        onNew: () => {
+            document.getElementById('btn-new-game')?.click();
+            const input = document.getElementById('player-name-input');
+            if (input && arrival.name) input.value = arrival.name;
+            input?.focus();
+        },
+        onTitle: () => document.getElementById('btn-new-game')?.focus()
+    });
 }
 
 function initializeTitleLineup() {
@@ -415,7 +412,6 @@ function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    playRiinArrival();
     // 타이틀 배경 이미지 로드 체크 — 이미지 없으면 CSS 그라디언트 폴백
     const titleBgLayer = document.querySelector('.title-bg-layer');
     if (titleBgLayer) {
@@ -490,9 +486,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 엔진 초기화 (i18n 로드, UI 바인딩)
     await game.init();
-    if (/(?:^|[?&])from=riin(?:&|$)/.test(location.search)) {
-        game.renderer.playBGM('riin_theme.mp3');
-    }
+    playRiinArrival(game);
 
     // 전역 노출 — 개발자 도구/테스트 접근용
     window.game = game;

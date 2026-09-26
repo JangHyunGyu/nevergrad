@@ -63,6 +63,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const readHtml = require('./scripts/read-html');
 
 const ROOT = __dirname;
 const SCENARIO_DIR = path.join(ROOT, 'assets/js/scenario');
@@ -118,7 +119,7 @@ function collectHtmlPaths(dir) {
         path.join(ROOT, 'index.html'),
         ...['en', 'ja', 'es', 'fr', 'de', 'pt'].map(lang => path.join(ROOT, lang, 'index.html'))
     ]) {
-        const html = fs.readFileSync(htmlPath, 'utf8');
+        const html = readHtml(htmlPath);
         if (!/<link\s+rel="apple-touch-icon"\s+href="[^"]+"/i.test(html)) {
             errors.push(`[MANIFEST] apple-touch-icon missing from ${path.relative(ROOT, htmlPath)}`);
         }
@@ -140,7 +141,7 @@ function collectHtmlPaths(dir) {
         errors.push('[ERROR_REPORTER] resource recovery filter or reporter version is missing');
     }
     for (const htmlFile of collectHtmlPaths(ROOT)) {
-        const html = fs.readFileSync(htmlFile, 'utf8');
+        const html = readHtml(htmlFile);
         if (html.includes('error-reporter.js') && !html.includes(`error-reporter.js?v=${reporterVersion}`)) {
             errors.push(`[ERROR_REPORTER] stale reporter cache version: ${path.relative(ROOT, htmlFile)}`);
         }
@@ -447,7 +448,7 @@ for (const f of flagsChecked) {
 // ═══════════════════════════════════════════
 const htmlPath = path.join(ROOT, 'index.html');
 if (fs.existsSync(htmlPath)) {
-    const html = fs.readFileSync(htmlPath, 'utf8');
+    const html = readHtml(htmlPath);
     const srcRefs = [...html.matchAll(/(?<![-\w])src="([^"]+)"/g)].map(m => m[1]);
     const hrefRefs = [...html.matchAll(/href="([^"]+\.css(?:[?#][^"]*)?)"/g)].map(m => m[1]);
 
@@ -543,7 +544,7 @@ for (const cssFile of cssFiles) {
 // ═══════════════════════════════════════════
 const koHtmlPath = path.join(ROOT, 'index.html');
 if (fs.existsSync(koHtmlPath)) {
-    const koHtml = fs.readFileSync(koHtmlPath, 'utf8');
+    const koHtml = readHtml(koHtmlPath);
     // ko HTML에서 스크립트/CSS 참조 추출 (파일명만)
     const koScripts = [...koHtml.matchAll(/src="([^"]+\.js(?:[?#][^"]*)?)"/g)].map(m => basenameNoQuery(m[1]));
     const koStyles = [...koHtml.matchAll(/href="([^"]+\.css(?:[?#][^"]*)?)"/g)].map(m => basenameNoQuery(m[1]));
@@ -556,7 +557,7 @@ if (fs.existsSync(koHtmlPath)) {
             errors.push(`[HTML_SYNC] ${lang}/index.html not found`);
             continue;
         }
-        const html = fs.readFileSync(langHtml, 'utf8');
+        const html = readHtml(langHtml);
         const langScripts = [...html.matchAll(/src="([^"]+\.js(?:[?#][^"]*)?)"/g)].map(m => basenameNoQuery(m[1]));
         const langStyles = [...html.matchAll(/href="([^"]+\.css(?:[?#][^"]*)?)"/g)].map(m => basenameNoQuery(m[1]));
         const langIds = [...html.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
@@ -675,7 +676,7 @@ if (fs.existsSync(appJsPath)) {
 // 18. HTML DOM ID ↔ JS getElementById 참조 일치
 // ═══════════════════════════════════════════
 if (fs.existsSync(koHtmlPath)) {
-    const koHtml = fs.readFileSync(koHtmlPath, 'utf8');
+    const koHtml = readHtml(koHtmlPath);
     const htmlIds = new Set([...koHtml.matchAll(/id="([^"]+)"/g)].map(m => m[1]));
     const dynamicDomIds = new Set(['save-toast', 'mirror-reflection', 'mirror-player-reflection', 'admin-panel-overlay', 'btn-archive']);
 
@@ -732,7 +733,7 @@ for (const cssFile of cssFiles) {
 }
 // HTML에서 정의된 클래스도 추가 (인라인)
 if (fs.existsSync(koHtmlPath)) {
-    const koHtml = fs.readFileSync(koHtmlPath, 'utf8');
+    const koHtml = readHtml(koHtmlPath);
     for (const m of koHtml.matchAll(/class="([^"]+)"/g)) {
         m[1].split(/\s+/).forEach(c => allCssClasses.add(c));
     }
@@ -981,7 +982,7 @@ playInfo.push(`Reachable: ${reachable.size} / ${Object.keys(allScenes).length} (
 for (const sid of reachable) {
     const sc = allScenes[sid].scene;
     const hasExit = sc.next || sc.choices || sc.branches || sc.affinityBranches ||
-                    sc.endingTitle || sc.cageLoop || sc.type === 'free_talk' ||
+                    sc.endingTitle || sc.cageLoop || sc.redirect === 'cupid-gate' || sc.type === 'free_talk' ||
                     sid.includes('postcredit') || sid.includes('credit_end');
     if (!hasExit) errors.push(`[DEAD_END] "${sid}" has no exit`);
 }
@@ -1222,7 +1223,7 @@ for (const sid of reachable) {
 // 33. 게임 UI / UX 기능 완결성 검사
 // ═══════════════════════════════════════════
 const koHtmlContent = fs.existsSync(path.join(ROOT, 'index.html'))
-    ? fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8') : '';
+    ? readHtml(path.join(ROOT, 'index.html')) : '';
 const geContent = fs.existsSync(path.join(ROOT, 'assets/js/modules/GameEngine.js'))
     ? fs.readFileSync(path.join(ROOT, 'assets/js/modules/GameEngine.js'), 'utf8') : '';
 const allJsContent = {};
@@ -1492,7 +1493,7 @@ if (fs.existsSync(modulesPath)) {
         for (const lang of langs) {
             const langHtmlPath = path.join(ROOT, lang, 'index.html');
             if (!fs.existsSync(langHtmlPath)) continue;
-            const langHtml = fs.readFileSync(langHtmlPath, 'utf8');
+            const langHtml = readHtml(langHtmlPath);
             const langInput = langHtml.match(new RegExp(`<input[^>]+id="${inputId}"[^>]*>`));
             if (!langInput) {
                 errors.push(`[HTML_INPUT] ${lang}: input#${inputId} missing`);
@@ -1733,7 +1734,7 @@ if (fs.existsSync(modulesPath)) {
         }
 
         // 6) Save/Load Slot UI HTML 존재 확인
-        const koHtmlContent2 = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+        const koHtmlContent2 = readHtml(path.join(ROOT, 'index.html'));
         if (!koHtmlContent2.includes('sl-overlay')) {
             errors.push(`[SAVE_SLOT] index.html missing save/load slot overlay (id="sl-overlay")`);
         }
@@ -1746,7 +1747,7 @@ if (fs.existsSync(modulesPath)) {
         for (const lang of slLangs) {
             const langHtml = path.join(ROOT, lang, 'index.html');
             if (fs.existsSync(langHtml)) {
-                const content = fs.readFileSync(langHtml, 'utf8');
+                const content = readHtml(langHtml);
                 if (!content.includes('sl-overlay')) {
                     errors.push(`[SAVE_SLOT] ${lang}/index.html missing save/load slot overlay (id="sl-overlay")`);
                 }

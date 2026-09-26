@@ -336,8 +336,8 @@ Object.assign(SCENARIO[3], {
         glitch: {
             heavyGlitch: true,
             memoryFlash: {
-                image: "assets/images/crossover/cupid_school_gate.png",
-                duration: 1000
+                image: "assets/images/background/cg_gate_bloom.jpg",
+                duration: 1700
             }
         },
         unskippable: true,

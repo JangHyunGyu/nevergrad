@@ -228,7 +228,7 @@
         "text": "Je ne suis pas là pour t'arrêter."
     },
     "day5_lunch_pills_0": {
-        "text": "Tends la main. Choisis-en un des deux."
+        "text": "Regarde. Choisis-en un."
     },
     "day5_lunch_pills_1": {
         "text": "*Riin tend les deux mains. Dans l'une, un comprimé noir. Dans l'autre, un comprimé rose.*"
@@ -238,22 +238,22 @@
     },
     "day5_lunch_pills_2": {
         "text": "Pas d'explication. N'en avale qu'un.",
-        "choices": ["Comprimé rose", "Comprimé noir"]
+        "choices": ["Comprimé rose", "Pas le noir"]
     },
     "day5_lunch_pills_pink_1": {
         "text": "*J'avale le comprimé rose. Sucré sur la langue, puis la gorge chauffe.*"
     },
     "day5_lunch_pills_pink_ask": {
-        "text": "C'est sucré. On est où ?"
+        "text": "C'est sucré."
     },
     "day5_lunch_pills_pink_2": {
-        "text": "*Le plafond de l'infirmerie s'éloigne. Des pétales écrasés collent sous mes pieds.*"
+        "text": "*Le plafond de l'infirmerie s'éloigne. Des pétales écrasés collent sous mes pieds.*\n\nOn est où ?"
     },
     "day5_lunch_pills_pink_3": {
-        "text": "*Le portail.*"
+        "text": "*Le portail. Avril. Des cerisiers.*"
     },
     "day5_lunch_pills_black_1": {
-        "text": "*Ma main va vers le comprimé noir. Riin referme les deux mains et se tourne vers l'armoire.*"
+        "text": "*Ma main ne va pas vers le comprimé noir. Riin referme les deux mains et se tourne vers l'armoire.*"
     },
     "day5_lunch_pills_black_ask": {
         "text": "Je ne prends pas le noir. Alors, qu'est-ce qu'il y a dans l'armoire ?"

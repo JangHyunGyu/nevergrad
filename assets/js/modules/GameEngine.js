@@ -728,6 +728,12 @@ class GameEngine {
             }
         }
 
+        if (handoffFade) {
+            this._clickLocked = true;
+            clearTimeout(this._clickLockTimer);
+            this._clickLockTimer = setTimeout(() => { this._clickLocked = false; }, 1800);
+        }
+
         if (scene.silhouette) this.renderer.setSilhouette(true);
 
         // BGM
@@ -1796,7 +1802,14 @@ class GameEngine {
         if (g.type === 'flicker') this.glitch.screenNoise(g.duration || g.flickerDuration || 240);
         if (g.noise) this.glitch.screenNoise(g.noiseDuration);
         if (g.screenFlash) this._screenFlash(g.flashDuration || 120);
-        if (g.memoryFlash) this.glitch.memoryFlash(this._normalizeMemoryFlash(g.memoryFlash));
+        if (g.memoryFlash) {
+            const flash = this._normalizeMemoryFlash(g.memoryFlash);
+            this.glitch.memoryFlash(flash);
+            const flashed = String(flash.image || '');
+            if (flashed.includes('cg_gate_bloom') || flashed.includes('cupid_heroine_memory') || flashed.includes('/crossover/')) {
+                this._crackleAndBuzz();
+            }
+        }
         if (g.corruptText) this._corruptDialogueText(g);
         if (g.mirrorReveal) this._showMirrorReveal(g.mirrorReveal);
         if (g.drugBlur) this.glitch.drugBlur?.(g.drugBlurDuration || 700);
@@ -1813,6 +1826,7 @@ class GameEngine {
         if (g.themeShift) this.glitch.shiftTheme(g.themeShift);
         if (g.heavy || g.heavyGlitch) this.glitch.heavyGlitch(g.heavyDuration);
         if (g.ghostText) {
+            if (this.state?.currentScene === 'day1_xover_seolhwa_1') this._crackleAndBuzz();
             const showGhostText = () => this.glitch.ghostText(
                 this._resolveEffectText(g.ghostText),
                 g.ghostX || 50,
@@ -1990,6 +2004,9 @@ class GameEngine {
             config.image = resolveImage(config.image);
         }
 
+        if (this.state?.currentScene === 'day4_xover_yuna_10' && this.crossover?.getData?.()?.heroine === 'seoyeon') {
+            config.image = 'assets/images/crossover/cupid_heroine_memory.png';
+        }
         if (!config.duration) config.duration = 1000;
         return config;
     }

@@ -85,11 +85,10 @@ class SceneRenderer {
             return;
         }
 
-        if (window.NevergradMotion?.background?.(this.bgLayer, absoluteSrc)) {
+        const fadeMs = this._crossfadeMs || 0;
+        if (!(fadeMs > 0) && window.NevergradMotion?.background?.(this.bgLayer, absoluteSrc)) {
             return;
         }
-
-        const fadeMs = this._crossfadeMs || 0;
         if (fadeMs > 0 && currentBg && currentBg !== 'none' && currentBg !== newBg) {
             if (!document.getElementById('ng-long-fade')) {
                 const style = document.createElement('style');

@@ -185,7 +185,7 @@ Object.assign(SCENARIO[1], {
             },
             ghostX: 84,
             ghostY: 17,
-            ghostDuration: 450
+            ghostDuration: 1200
         },
         stopSfx: true,
         next: "day1_xover_seolhwa_2"

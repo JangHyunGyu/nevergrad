@@ -186,34 +186,23 @@ function playRiinArrival() {
     if (!/(?:^|[?&])from=riin(?:&|$)/.test(location.search)) return;
     if (sessionStorage.getItem('ng-riin-arrival')) return;
     sessionStorage.setItem('ng-riin-arrival', '1');
-    if (document.getElementById('riin-arrival-style')) return;
-    const style = document.createElement('style');
-    style.id = 'riin-arrival-style';
-    style.textContent = '#riin-arrival{position:fixed;inset:0;z-index:10000;background:#05060a;display:flex;align-items:flex-end;justify-content:center;pointer-events:none;animation:riin-flicker .16s steps(2) 7}#riin-arrival img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.65) brightness(.62)}#riin-arrival p{position:relative;z-index:1;margin:0 0 14vh;color:#d7ffe8;font:15px/1.4 ui-monospace,Consolas,monospace;letter-spacing:.14em}#riin-arrival.tear{animation:riin-tear .5s ease forwards}@keyframes riin-flicker{0%{opacity:1}40%{opacity:.2;filter:hue-rotate(90deg)}100%{opacity:1}}@keyframes riin-tear{to{opacity:0;transform:scale(1.05)}}';
-    document.head.appendChild(style);
-    const lang = document.documentElement.lang || 'ko';
-    const line = {
-        ko: '여기야.',
-        en: 'Here.',
-        ja: 'ここだよ。',
-        es: 'Aquí.',
-        fr: 'Ici.',
-        de: 'Hier.',
-        pt: 'Aqui.'
-    }[lang] || 'Here.';
-    const overlay = document.createElement('div');
-    overlay.id = 'riin-arrival';
-    const img = document.createElement('img');
-    img.alt = '';
-    img.src = resolveNevergradAssetUrl(getNevergradAssetPath('assets/images/background/cg_riin_two_pills.jpg'));
-    const caption = document.createElement('p');
-    caption.textContent = line;
-    overlay.appendChild(img);
-    overlay.appendChild(caption);
-    document.body.appendChild(overlay);
+    if (!document.getElementById('riin-arrival-style')) {
+        const style = document.createElement('style');
+        style.id = 'riin-arrival-style';
+        style.textContent = '#riin-arrival{position:fixed;inset:0;z-index:10000;background:#05060a center/cover no-repeat;pointer-events:none;animation:riin-flicker .14s steps(2) 8}#riin-arrival.tear{animation:riin-tear .7s ease forwards}@keyframes riin-flicker{0%{opacity:1}35%{opacity:.28;filter:hue-rotate(75deg)}100%{opacity:1}}@keyframes riin-tear{to{opacity:0;transform:scale(1.045)}}';
+        document.head.appendChild(style);
+    }
+    let overlay = document.getElementById('riin-arrival');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'riin-arrival';
+        document.body.appendChild(overlay);
+    }
+    overlay.style.backgroundImage = `url('${resolveNevergradAssetUrl(getNevergradAssetPath('assets/images/background/riin_lab_wake.jpg'))}')`;
+    document.documentElement.classList.remove('riin-wake');
     playArrivalCrackle();
-    window.setTimeout(() => overlay.classList.add('tear'), 1100);
-    window.setTimeout(() => overlay.remove(), 1650);
+    window.setTimeout(() => overlay.classList.add('tear'), 1400);
+    window.setTimeout(() => overlay.remove(), 2150);
 }
 
 function initializeTitleLineup() {
@@ -257,7 +246,6 @@ function initializeTitleLineup() {
 
     layoutTitleLineup();
     playTitleIntro();
-    playRiinArrival();
 
     if (!window.__nevergradTitleLineupResizeBound) {
         window.__nevergradTitleLineupResizeBound = true;
@@ -427,6 +415,7 @@ function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+    playRiinArrival();
     // 타이틀 배경 이미지 로드 체크 — 이미지 없으면 CSS 그라디언트 폴백
     const titleBgLayer = document.querySelector('.title-bg-layer');
     if (titleBgLayer) {

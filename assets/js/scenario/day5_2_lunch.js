@@ -514,7 +514,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         unskippable: true,
         autoAdvance: true,
-        autoAdvanceDelay: 1400,
+        autoAdvanceDelay: 2600,
         redirect: "cupid-gate"
     },
     "day5_lunch_pills_black_1": {

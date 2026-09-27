@@ -31,18 +31,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         }
     });
 
-    // Day3 locker photo: look already pockets → skip redundant photo_1
-    const look = SCENARIO[3]["day3_morning_photo_look"] || {};
-    const back = SCENARIO[3]["day3_morning_photo_back"] || {};
-    Object.assign(SCENARIO[3], {
-        "day3_morning_photo_look": Object.assign({}, look, {
-            next: "day3_morning_photo_2"
-        }),
-        "day3_morning_photo_back": Object.assign({}, back, {
-            next: "day3_morning_photo_1"
-        })
-    });
-
     const nurse15 = SCENARIO[4]["day4_lunch_nurse_15"] || {};
     Object.assign(SCENARIO[4], {
         "day4_lunch_nurse_15": Object.assign({}, nurse15, {

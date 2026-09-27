@@ -180,7 +180,7 @@ for (const pill of ['분홍 알약','검은 알약']) test(`pill choice follows 
   await page.locator('#dialogue-box').click();
   await page.waitForFunction(()=>!game.dialogue.isTyping&&!game._clickLocked);
   if(black) {
-    await expect(page.locator('#dialogue-box')).toContainText('캐비닛 안에는 뭐가 있어?');
+    await expect(page.locator('#dialogue-box')).toContainText('캐비닛 안에는 뭐가 있어요?');
     await page.locator('#dialogue-box').click();
     await page.waitForFunction(()=>game.state.currentScene==='day5_lunch_right_14');
     await expect(page.locator('#cross-world')).toHaveCount(0);

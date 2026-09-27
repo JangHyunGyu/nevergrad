@@ -77,3 +77,86 @@ for (const lang of languages) test(`saved arrival remains reachable through rota
   }
   await page.screenshot({path:info.outputPath('saved-arrival.png')});
 });
+
+test('async save settles before departure and reports rejection with usable controls', async ({page}) => {
+  await boot(page); await page.keyboard.press('Escape');
+  await page.evaluate(cupid => {
+    window.crossingSaves = 0;
+    window.CrossWorld.show({world: cupid ? 'nevergrad' : 'cupid', lang:'ko', departure:true,
+      image: cupid ? 'assets/images/background/riin_lab_pills.jpg' : 'assets/images/background/cg_gate_bloom.jpg',
+      url:'http://[', save:() => { window.crossingSaves++; return new Promise((resolve,reject) => { window.rejectCrossingSave = reject; }); }});
+    const button = document.querySelector('#cross-world .cw-primary');
+    button.click(); button.click();
+  }, cupid);
+  await expect(page.locator('#cross-world')).toHaveAttribute('aria-busy','true');
+  await page.keyboard.press('Tab'); await expect(page.locator('#cross-world')).toBeFocused();
+  expect(await page.evaluate(() => window.crossingSaves)).toBe(1);
+  await page.evaluate(() => window.rejectCrossingSave(new Error('storage unavailable')));
+  await expect(page.locator('.cw-note')).toContainText('저장하지 못했습니다');
+  await expect(page.locator('#cross-world .cw-primary')).toBeEnabled();
+  await expect(page.locator('#cross-world .cw-primary')).toBeFocused();
+});
+
+test('failed navigation restores sound and focus without exposing the old screen', async ({page}) => {
+  await boot(page); await page.keyboard.press('Escape');
+  await page.evaluate(cupid => {
+    window.crossingReturnCount = 0;
+    window.CrossWorld.show({world:cupid ? 'nevergrad' : 'cupid', lang:'ko', departure:true,
+      image:cupid ? 'assets/images/background/riin_lab_pills.jpg' : 'assets/images/background/cg_gate_bloom.jpg',
+      url:'http://[', save:() => true, onReturn:() => window.crossingReturnCount++});
+  },cupid);
+  await page.locator('#cross-world .cw-primary').click();
+  await expect(page.locator('#cross-world')).toHaveClass(/cw-out/);
+  expect(await page.locator('#cross-world').evaluate(el => getComputedStyle(el).opacity)).toBe('1');
+  await expect(page.locator('.cw-note')).toContainText('다시 눌러');
+  await expect(page.locator('#cross-world .cw-primary')).toBeFocused();
+  expect(await page.evaluate(() => window.crossingReturnCount)).toBe(1);
+});
+
+test('closing a pending departure prevents later save completion from navigating', async ({page}) => {
+  await boot(page); await page.keyboard.press('Escape');
+  await page.evaluate(cupid => {
+    window.crossingLeft = false;
+    window.CrossWorld.show({world:cupid ? 'nevergrad' : 'cupid', lang:'ko', departure:true,
+      image:cupid ? 'assets/images/background/riin_lab_pills.jpg' : 'assets/images/background/cg_gate_bloom.jpg',
+      url:'https://example.invalid/', save:() => new Promise(resolve => window.finishCrossingSave = resolve),
+      onLeave:() => window.crossingLeft = true});
+  },cupid);
+  await page.locator('#cross-world .cw-primary').click();
+  await page.evaluate(async () => { window.CrossWorld.show({}).close(); window.finishCrossingSave(true); await Promise.resolve(); });
+  await expect(page.locator('#cross-world')).toHaveCount(0);
+  expect(await page.evaluate(() => window.crossingLeft)).toBe(false);
+});
+
+test('unavailable crossing artwork leaves readable choices and no broken-image icon', async ({page}) => {
+  await boot(page); await page.keyboard.press('Escape');
+  await page.evaluate(() => window.CrossWorld.show({world:'nevergrad',lang:'ko',image:'/missing-crossing-art.jpg'}));
+  await expect(page.locator('#cross-world')).toHaveClass(/cw-image-error/);
+  await expect(page.locator('#cross-world img')).toBeHidden();
+  await expect(page.locator('#cross-world .cw-primary')).toBeEnabled();
+  await page.keyboard.press('Escape'); await expect(page.locator('#cross-world')).toHaveCount(0);
+});
+
+test('arrival name survives a title detour without replacing edited input', async ({page,context}) => {
+  await context.addCookies([{name:'archer_crossing_v1',value:encodeURIComponent(JSON.stringify({target:'nevergrad',name:'지민',at:Date.now()})),domain:'127.0.0.1',path:'/'}]);
+  await boot(page);
+  await page.getByRole('button',{name:'타이틀로',exact:true}).click();
+  await page.locator('#btn-new-game').click();
+  await expect(page.locator('#player-name-input')).toHaveValue('지민');
+  await expect(page.locator('#player-name-input')).toBeFocused();
+  await page.locator('#player-name-input').fill('민아');
+  await page.evaluate(() => { game._showScreen('title-screen'); document.getElementById('btn-new-game').click(); });
+  await expect(page.locator('#player-name-input')).toHaveValue('민아');
+});
+
+test('crossing shock affects the background once and leaves dialogue steady', async ({page}) => {
+  await boot(page); await page.keyboard.press('Escape');
+  const effect = await page.evaluate(() => {
+    let cracks = 0; game._crackleAndBuzz = () => cracks++;
+    game._pulseCrossGlitch('day5_lunch_pills_pink_2');
+    const first = {background:document.getElementById('bg-layer').classList.contains('cross-glitch'),screen:document.getElementById('game-screen').classList.contains('cross-glitch')};
+    game._pulseCrossGlitch('day5_lunch_pills_pink_3');
+    return {...first,cracks};
+  });
+  expect(effect).toEqual({background:true,screen:false,cracks:1});
+});

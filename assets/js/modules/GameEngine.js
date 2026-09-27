@@ -214,6 +214,9 @@ class GameEngine {
             // 모바일 풀스크린 진입 (유저 제스처 필요)
             if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
             this._showScreen('name-screen');
+            const input = document.getElementById('player-name-input');
+            if (input && !input.value && this._crossingName) input.value = this._crossingName;
+            input?.focus();
             this._attachNameScreenKBAvoidance();
         });
 
@@ -311,6 +314,7 @@ class GameEngine {
         }[lang] || '/';
         this._stopAuto();
         this._stopSkip();
+        const crossingBGM = this.audio?.getCurrentBGM?.();
         window.CrossWorld.show({
             departure: true, world: 'cupid', lang,
             image: resolveNevergradAssetUrl('assets/images/background/cg_gate_bloom.jpg'),
@@ -318,20 +322,21 @@ class GameEngine {
             url: `https://cupid.archerlab.dev${page}?gate=1`,
             save: () => { this._markNevergradPlayed(); return this.save.save(); },
             onLeave: () => this.audio?.stopBGM?.(),
+            onReturn: () => crossingBGM ? this.audio?.playBGM?.(crossingBGM) : undefined,
             onBack: () => document.getElementById('dialogue-box')?.focus()
         });
     }
 
     _pulseCrossGlitch(sceneId) {
-        const screen = document.getElementById('game-screen');
+        const screen = document.getElementById('bg-layer');
         if (!screen) return;
         if (!document.getElementById('ng-cross-glitch-style')) {
             const style = document.createElement('style');
             style.id = 'ng-cross-glitch-style';
-            style.textContent = '#game-screen.cross-glitch{animation:ng-cross-glitch .55s steps(2) 1}@keyframes ng-cross-glitch{0%{filter:none}25%{filter:brightness(.2) contrast(1.7) hue-rotate(70deg)}55%{filter:brightness(1.3) saturate(.2)}100%{filter:none}}';
+            style.textContent = '#bg-layer.cross-glitch{animation:ng-cross-glitch .55s steps(2) 1}@keyframes ng-cross-glitch{0%{filter:none}25%{filter:brightness(.3) saturate(.3)}55%{filter:brightness(.8) saturate(.6)}100%{filter:none}}';
             document.head.appendChild(style);
         }
-        const hit = sceneId === 'day5_lunch_pills_pink_2' || sceneId === 'day5_lunch_pills_pink_3';
+        const hit = sceneId === 'day5_lunch_pills_pink_2';
         screen.classList.remove('cross-glitch');
         if (!hit || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
         void screen.offsetWidth;
@@ -342,7 +347,7 @@ class GameEngine {
     _crackleAndBuzz() {
         if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
         try { this.audio?.playStaticCrackle?.(); } catch (_) {}
-        this.deviceGimmick?.vibrate?.([45, 35, 40, 30, 110, 140, 45, 35, 40, 30, 110]);
+        this.deviceGimmick?.vibrate?.([35, 40, 65]);
     }
 
     _markNevergradPlayed() {

@@ -185,6 +185,8 @@ function playArrivalCrackle() {
 function playRiinArrival(game) {
     const arrival = window.CrossWorld.takeArrival('nevergrad');
     if (!arrival) return;
+    game._crossingName = arrival.name;
+    document.documentElement.dataset.crossingArrival = 'riin';
     document.documentElement.classList.remove('riin-wake');
     document.body.style.background = '';
     window.CrossWorld.show({
@@ -274,7 +276,7 @@ function layoutTitleLineup() {
     let height;
 
     const portraitMobile = aspect < 1 && viewportW <= 900;
-    const fromRiin = /(?:^|[?&])from=riin(?:&|$)/.test(location.search);
+    const fromRiin = document.documentElement.dataset.crossingArrival === 'riin' || /(?:^|[?&])from=riin(?:&|$)/.test(location.search);
     if (portraitMobile) {
         const order = fromRiin ? ['seolhwa', 'riin', 'eunsu'] : ['seolhwa', 'eunsu', 'riin'];
         const slotX = [16, 50, 84];

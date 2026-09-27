@@ -30,3 +30,11 @@ Gate exit 0; change rate 0%; grade B; self-check 6/6. The single-chunk heavy-rou
 ## Scope and assets
 
 The review does not claim a new full-game content or extended E2E audit. Earlier unrelated extended-suite failures remain documented in the preceding release record. Existing project CGs were recomposed; no new generated assets were added because the repository-required Higgsfield MCP was unavailable.
+
+## Subsequent pill-choice correction requested by the user
+
+The preceding 42-entry naturalness review missed a gameplay expectation: both options must select one of the two pills, as in Cupid. The old black option explicitly refused the pill. Accepting that internally consistent refusal did not satisfy the intended two-pill choice.
+
+The choice is now `분홍 알약 / 검은 알약`. Selecting black explicitly swallows it, produces a cold sensation and leaves the player in Nevergrad before the cabinet question. Pink still crosses to Cupid. Three fields were updated in all seven languages; labels exactly match Cupid, route targets and gameplay values are unchanged, and SCENARIO.md was regenerated. The new authored Korean received a fresh diagnosis/contextual rewrite/independent review, recorded separately in `D:/workspace/_workspace/crossing-pill-choice-review`; the previous unchanged-text map is historical rather than the acceptance record for these three revised fields.
+
+A regression checks the two named pill choices and their route targets in all languages. Browser tests click both real choices and verify swallowing followed by the intended local continuation or crossing dialog. The I18nManager script and JSON request versions use `20260927-pill-choice` to replace cached refusal text.

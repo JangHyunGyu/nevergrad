@@ -160,3 +160,36 @@ test('crossing shock affects the background once and leaves dialogue steady', as
   });
   expect(effect).toEqual({background:true,screen:false,cracks:1});
 });
+
+for (const pill of ['분홍 알약','검은 알약']) test(`pill choice follows the selected action: ${pill}`, async ({page}) => {
+  await page.setViewportSize({width:390,height:844});
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await boot(page); await page.keyboard.press('Escape');
+  await page.evaluate(() => {
+    game._prepareNewRun(); game.state.startNewRun();
+    game.state.playerName='지민'; game.state.currentDay=5; game.state.currentSlot='lunch';
+    game.settings.set('textSpeed',0); game._showScreen('game-screen');
+    game._loadScene('day5_lunch_pills_2');
+  });
+  await expect(page.locator('#choice-panel')).toBeVisible();
+  await expect(page.locator('#choice-panel .choice-btn')).toHaveText(['분홍 알약','검은 알약']);
+  await page.getByRole('button',{name:pill,exact:true}).click();
+  const black=pill==='검은 알약';
+  await page.waitForFunction(black=>game.state.currentScene===(black?'day5_lunch_pills_black_1':'day5_lunch_pills_pink_1')&&!game.dialogue.isTyping&&!game._clickLocked,black);
+  await expect(page.locator('#dialogue-box')).toContainText(black?'검은 알약을 삼키자':'분홍 알약을 삼키자');
+  await page.locator('#dialogue-box').click();
+  await page.waitForFunction(()=>!game.dialogue.isTyping&&!game._clickLocked);
+  if(black) {
+    await expect(page.locator('#dialogue-box')).toContainText('캐비닛 안에는 뭐가 있어?');
+    await page.locator('#dialogue-box').click();
+    await page.waitForFunction(()=>game.state.currentScene==='day5_lunch_right_14');
+    await expect(page.locator('#cross-world')).toHaveCount(0);
+  } else {
+    await page.locator('#dialogue-box').click();
+    await page.waitForFunction(()=>game.state.currentScene==='day5_lunch_pills_pink_2'&&!game.dialogue.isTyping&&!game._clickLocked);
+    await page.locator('#dialogue-box').click();
+    await page.waitForFunction(()=>game.state.currentScene==='day5_lunch_pills_pink_3'&&!game.dialogue.isTyping&&!game._clickLocked);
+    await page.locator('#dialogue-box').click();
+    await expect(page.locator('#cross-world')).toBeVisible();
+  }
+});

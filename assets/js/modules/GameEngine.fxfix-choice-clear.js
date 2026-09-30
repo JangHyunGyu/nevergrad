@@ -20,6 +20,10 @@
                     panel.innerHTML = '';
                     panel.style.position = '';
                     panel.style.minHeight = '';
+                    // choiceSelect()의 autoAlpha:0 잔존 방지 (타이머 선택지 invisible 버그)
+                    try { if (window.gsap) { window.gsap.killTweensOf(panel); window.gsap.set(panel, { clearProps: 'opacity,visibility' }); } } catch (_) { /* non-fatal */ }
+                    panel.style.removeProperty('opacity');
+                    panel.style.removeProperty('visibility');
                 }
             } catch (_) { /* non-fatal */ }
             return orig.call(this, sceneId);

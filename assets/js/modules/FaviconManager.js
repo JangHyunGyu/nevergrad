@@ -103,7 +103,7 @@ if (typeof window !== 'undefined') {
             }
         } catch (e) { /* non-fatal */ }
     }
-    var bust = '?v=20260924-peel-drama-v3';
+    var bust = '?v=20260930-fix9';
     try {
         ['/assets/css/name-affinity.css' + bust, '/assets/css/stat-genre-flip.css' + bust].forEach(function (href) {
             var link = document.createElement('link');

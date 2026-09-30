@@ -1123,6 +1123,11 @@ class MetaHorrorSystem {
         this._pushMsgIndex = 0;
         this.pushPermission = false;
     }
+
+    /** GameEngine.dispose()가 호출하는 이름 — destroy()의 별칭 */
+    dispose() {
+        this.destroy();
+    }
 }
 
 window.MetaHorrorSystem = MetaHorrorSystem;

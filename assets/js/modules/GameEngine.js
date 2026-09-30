@@ -642,7 +642,8 @@ class GameEngine {
 
         // 자동저장 (슬롯 0) — 씬 전환 시 현재 상태를 저장
         this.state.currentScene = sceneId;
-        if (!this._archiveMode) this.save.save();
+        // 존재하지 않는 씬 id는 자동저장하지 않는다 (무효 세이브로 진행이 사라지는 것 방지)
+        if (!this._archiveMode && SCENARIO[this.state.currentDay]?.[sceneId]) this.save.save();
 
         // 거울 fog 상시 연출: 다음 씬이 mirrorFog 포함 안 하면 제거
         const nextScene = SCENARIO[this.state.currentDay]?.[sceneId];
@@ -847,9 +848,13 @@ class GameEngine {
             if (this.gallery) this.gallery.unlockEnding(scene.endingTitle);
             // 세이브 메타: playCount / endingsSeen / lastEnding 기록
             //   "TRUE END" → "TRUE" 로 정규화 (SaveManager.recordEnding 규약)
-            if (this.save) {
+            //   엔딩 씬 자동저장 → 이어하기로 같은 씬에 재진입해도 playCount가 반복 증가하지 않도록
+            //   런당 1회만 기록한다 (플래그는 세이브에 함께 저장됨).
+            if (this.save && !this.state.hasFlag('ending_recorded')) {
                 const endingKey = scene.endingTitle.replace(/\s*END\s*$/i, '').trim().toUpperCase();
                 this.save.recordEnding(endingKey);
+                this.state.setFlag('ending_recorded');
+                if (!this._archiveMode) this.save.save();
             }
             // 앱 아이콘 변이 재평가 (COMPLICIT → thirteen, 1회차 후 → red 등)
             if (this.favicon) {
@@ -1423,6 +1428,7 @@ class GameEngine {
                     }
                     if (choice.setFlags) this.state.setFlags(choice.setFlags);
                     if (choice.next) this._loadScene(choice.next);
+                    else if (choice.returnToTitle) this._showEndingTitle('', null);
                 };
                 if (window.NevergradMotion?.choiceSelect?.(btn, panel, completeChoice)) {
                     return;
@@ -2138,11 +2144,12 @@ class GameEngine {
         const overlay = document.createElement('div');
         overlay.className = 'ending-title-overlay';
 
-        const titleEl = document.createElement('div');
-        titleEl.className = 'ending-title';
-        titleEl.textContent = title;
-
-        overlay.appendChild(titleEl);
+        if (title) {
+            const titleEl = document.createElement('div');
+            titleEl.className = 'ending-title';
+            titleEl.textContent = title;
+            overlay.appendChild(titleEl);
+        }
 
         if (subtitleKey) {
             const subtitleText = this.i18n.get(subtitleKey)?.text || '';
@@ -2744,7 +2751,13 @@ class GameEngine {
      * 플레이어 이름 입력값 살균 (XSS 방지)
      */
     _sanitizeName(name) {
-        return name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        // 원문 그대로 저장한다 (제어문자·연속 공백만 정리).
+        // HTML 이스케이프는 innerHTML 싱크(DialogueSystem._formatText, 세이브 슬롯 글리치 UI 등)에서만 수행하고,
+        // textContent 싱크(화자명, 저장 슬롯 라벨, 탭 제목, 백로그)에는 원문이 그대로 표시된다.
+        return String(name == null ? '' : name)
+            .replace(/[\u0000-\u001f\u007f\u200b-\u200f\u2028\u2029\ufeff]/g, '')
+            .replace(/\s+/g, ' ')
+            .trim();
     }
 
     // ===== Save/Load Slot Selector =====

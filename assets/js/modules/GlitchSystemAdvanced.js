@@ -1753,10 +1753,10 @@ class GlitchSystemAdvanced {
             item.innerHTML = `
                 <span class="slot-number">[${String(slot.number).padStart(2, '0')}]</span>
                 <div class="slot-info">
-                    <span class="slot-name">${slot.name}</span>
-                    <span class="slot-day">${slot.day} ${slot.time}</span>
+                    <span class="slot-name">${this._escape(slot.name)}</span>
+                    <span class="slot-day">${this._escape(slot.day)} ${this._escape(slot.time)}</span>
                 </div>
-                <span class="slot-status">${slot.status}</span>
+                <span class="slot-status">${this._escape(slot.status)}</span>
             `;
 
             // 클릭 시 "로드 거절" 연출
@@ -1865,10 +1865,10 @@ class GlitchSystemAdvanced {
             item.innerHTML = `
                 <span class="slot-number">[${String(slot.number).padStart(2, '0')}]</span>
                 <div class="slot-info">
-                    <span class="slot-name">${slot.name}</span>
-                    <span class="slot-day">${slot.day} ${slot.time}</span>
+                    <span class="slot-name">${this._escape(slot.name)}</span>
+                    <span class="slot-day">${this._escape(slot.day)} ${this._escape(slot.time)}</span>
                 </div>
-                <span class="slot-status">${status}</span>
+                <span class="slot-status">${this._escape(status)}</span>
             `;
             list.appendChild(item);
 

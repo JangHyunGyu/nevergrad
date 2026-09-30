@@ -71,6 +71,7 @@ class ChoiceSystemAdvanced {
 
             this.choiceContainer.innerHTML = '';
             this.choiceContainer.classList.remove('hidden');
+            this._resetPanelMotion();
 
             choices.forEach((text, index) => {
                 const btn = this._createChoiceButton(text, index);
@@ -111,6 +112,7 @@ class ChoiceSystemAdvanced {
 
             this.choiceContainer.innerHTML = '';
             this.choiceContainer.classList.remove('hidden');
+            this._resetPanelMotion();
             this.choiceContainer.classList.add('timed-choice');
 
             // 타이머 바 생성
@@ -200,6 +202,7 @@ class ChoiceSystemAdvanced {
 
             this.choiceContainer.innerHTML = '';
             this.choiceContainer.classList.remove('hidden');
+            this._resetPanelMotion();
 
             const buttons = [];
             choices.forEach((text, index) => {
@@ -309,6 +312,7 @@ class ChoiceSystemAdvanced {
 
             this.choiceContainer.innerHTML = '';
             this.choiceContainer.classList.remove('hidden');
+            this._resetPanelMotion();
 
             // 컨테이너를 relative로 설정 (도지 버튼 absolute 위치용)
             this.choiceContainer.style.position = 'relative';
@@ -361,6 +365,7 @@ class ChoiceSystemAdvanced {
 
             this.choiceContainer.innerHTML = '';
             this.choiceContainer.classList.remove('hidden');
+            this._resetPanelMotion();
 
             const buttons = [];
             choices.forEach((text, index) => {
@@ -579,6 +584,25 @@ class ChoiceSystemAdvanced {
     }
 
     /**
+     * NevergradMotion.choiceSelect()가 패널에 남긴 inline opacity/visibility(autoAlpha:0)를 제거한다.
+     * 일반 선택지는 choicesIn()이 복구하지만 show* 경로는 hidden 클래스만 풀기 때문에 필요하다.
+     * @private
+     */
+    _resetPanelMotion() {
+        const panel = this.choiceContainer;
+        if (!panel) return;
+        try {
+            const gsap = window.gsap;
+            if (gsap) {
+                gsap.killTweensOf(panel);
+                gsap.set(panel, { clearProps: 'opacity,visibility' });
+            }
+        } catch (_) { /* non-fatal */ }
+        panel.style.removeProperty('opacity');
+        panel.style.removeProperty('visibility');
+    }
+
+    /**
      * 선택지 UI 정리 — 컨테이너 비우기, 타이머 정지
      * @private
      */
@@ -592,6 +616,7 @@ class ChoiceSystemAdvanced {
             this.choiceContainer.classList.remove('timed-choice');
             this.choiceContainer.style.position = '';
             this.choiceContainer.style.minHeight = '';
+            this._resetPanelMotion();
         }
 
         this.timerBar = null;

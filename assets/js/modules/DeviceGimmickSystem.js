@@ -1053,19 +1053,21 @@ class DeviceGimmickSystem {
             window.innerHeight > window.innerWidth
         );
 
+        const getNormalText = () => this._pickLocalized({
+            ko: "\ud654\uba74\uc744 \uac00\ub85c\ub85c \ub3cc\ub824 \uc8fc\uc138\uc694",
+            en: "Please rotate your device",
+            ja: "\u753b\u9762\u3092\u6a2a\u5411\u304d\u306b\u3057\u3066\u304f\u3060\u3055\u3044",
+            es: "Gira tu dispositivo",
+            fr: "Tournez votre appareil",
+            de: "Bitte drehe dein Gerat",
+            pt: "Gire seu dispositivo"
+        });
+
         const renderPrompt = () => {
             const portrait = isPortrait();
             const gameActive = !!document.getElementById('game-screen')?.classList.contains('active');
             const shouldShow = portrait;
-            const normalText = this._pickLocalized({
-                ko: "\ud654\uba74\uc744 \uac00\ub85c\ub85c \ub3cc\ub824 \uc8fc\uc138\uc694",
-                en: "Please rotate your device",
-                ja: "\u753b\u9762\u3092\u6a2a\u5411\u304d\u306b\u3057\u3066\u304f\u3060\u3055\u3044",
-                es: "Gira tu dispositivo",
-                fr: "Tournez votre appareil",
-                de: "Bitte drehe dein Gerat",
-                pt: "Gire seu dispositivo"
-            });
+            const normalText = getNormalText();
             const eunsuText = this._pickLocalized({
                 ko: "\uc5b4\ub51c \ubcf4\ub294 \uac70\uc57c?<br>\ub2e4\uc2dc \ub611\ubc14\ub85c \ub4e4\uc5b4.",
                 en: "Where are you looking?<br>Hold it properly again.",
@@ -1131,7 +1133,7 @@ class DeviceGimmickSystem {
                 prompt.className = 'rotate-prompt';
                 prompt.innerHTML = `
                     <div class="rotate-icon">📱</div>
-                    <div class="rotate-text">${normalText}</div>
+                    <div class="rotate-text">${getNormalText()}</div>
                 `;
                 this._orientationHijackBound = false;
                 this._orientationHijackHandler = null;
@@ -1532,7 +1534,10 @@ class DeviceGimmickSystem {
      * 모든 리스너 및 효과 정리
      */
     destroy() {
-        this._cleanupFns.forEach(fn => fn());
+        // cleanup 콜백 하나가 실패해도 나머지 정리(진동 정지 등)는 계속 진행
+        this._cleanupFns.forEach((fn) => {
+            try { fn(); } catch (e) { console.warn('[DeviceGimmick] cleanup failed', e); }
+        });
         this._cleanupFns = [];
 
         this.disableCursorSlowdown();
@@ -1554,6 +1559,11 @@ class DeviceGimmickSystem {
         if (this.vibrationSupported) {
             navigator.vibrate(0);
         }
+    }
+
+    /** GameEngine.dispose()가 호출하는 이름 — destroy()의 별칭 */
+    dispose() {
+        this.destroy();
     }
 }
 

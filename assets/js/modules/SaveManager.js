@@ -116,9 +116,11 @@ class SaveManager {
             if (!parsed) return null;
             const data = parsed.slotData;
             // 하위호환
+            const legacyDecode = (n) => (typeof StateManager !== 'undefined' && StateManager.decodeLegacyName)
+                ? StateManager.decodeLegacyName(n) : n;
             if (data.gameState) {
                 return {
-                    playerName: data.playerName,
+                    playerName: data.gameState.nameRaw ? data.playerName : legacyDecode(data.playerName),
                     currentDay: data.currentDay,
                     currentSlot: data.currentSlot,
                     timestamp: data.timestamp
@@ -126,7 +128,7 @@ class SaveManager {
             }
             // 이전 형식 (자동저장 하위호환)
             return {
-                playerName: data.playerName,
+                playerName: legacyDecode(data.playerName),
                 currentDay: data.currentDay,
                 currentSlot: data.currentSlot,
                 timestamp: null

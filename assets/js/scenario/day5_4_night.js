@@ -565,8 +565,9 @@ Object.assign(SCENARIO[5], {
     "day5_observer_11": {
         character: null,
         choices: [
-            { next: null, setFlags: ["observer_graduated"] },
-            { next: null, setFlags: ["observer_stayed"] }
+            // 종료 씬: next가 없으므로 returnToTitle로 타이틀 복귀 오버레이를 띄운다 (검은 화면 데드엔드 방지)
+            { next: null, returnToTitle: true, setFlags: ["observer_graduated"] },
+            { next: null, returnToTitle: true, setFlags: ["observer_stayed"] }
         ]
     },
 

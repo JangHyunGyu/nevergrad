@@ -50,11 +50,18 @@ class DialogueSystem {
      * 반드시 ** 를 먼저 처리해야 * 와 충돌하지 않음
      */
     _formatText(text) {
-        // 1) **bold** → <strong>
-        let result = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-        // 2) *italic* → <em>  (이미 <strong>으로 변환된 부분은 건드리지 않음)
-        result = result.replace(/\*(.+?)\*/g, '<em>$1</em>');
-        return result;
+        // 문단(줄) 단위로 처리한다. `*…*\n\n*…*`처럼 여러 문단에 걸친 나레이션도
+        // 각 문단 안에서 짝을 맞추고, 짝이 없는 `*`(바깥 마커를 벗기고 남은 것)는 제거한다.
+        return String(text).split('\n').map((line) => {
+            // 0) 플레이어 이름 등 원문이 그대로 들어오므로 HTML 특수문자는 여기서 이스케이프 (XSS 방지)
+            line = line.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+            // 1) **bold** → <strong>
+            let result = line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+            // 2) *italic* → <em>  (이미 <strong>으로 변환된 부분은 건드리지 않음)
+            result = result.replace(/\*(.+?)\*/g, '<em>$1</em>');
+            // 3) 짝이 안 맞아 남은 `*`는 화면에 노출하지 않음
+            return result.replace(/\*/g, '');
+        }).join('\n');
     }
 
     /**
@@ -96,7 +103,7 @@ class DialogueSystem {
         }
 
         // 마크다운 마커(* **)를 제거한 순수 텍스트 + 서식 완성 HTML
-        const plainText = displayText.replace(/\*\*(.+?)\*\*/g, '$1').replace(/\*(.+?)\*/g, '$1');
+        const plainText = displayText.replace(/\*/g, '');
         const formattedFull = this._formatText(displayText);
 
         let idx = 0;

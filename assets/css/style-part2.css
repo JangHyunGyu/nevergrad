@@ -143,6 +143,7 @@
 }
 
 .dialogue-text {
+    white-space: pre-line; /* \n\n 문단 나눔 유지 */
     font-size: 0.95rem;
     line-height: 1.7;
     color: rgba(255, 240, 245, 0.95);

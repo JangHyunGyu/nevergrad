@@ -264,6 +264,16 @@ class StateManager {
         this.currentTheme = theme;
     }
 
+    /**
+     * 이전 버전은 이름을 HTML 엔티티로 이스케이프해 저장했다. 원문으로 되돌린다.
+     * (nameRaw 표식이 있는 세이브에는 적용하지 않는다.)
+     */
+    static decodeLegacyName(name) {
+        if (!name) return "";
+        return String(name)
+            .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+    }
+
     // ===== 직렬화 (저장/불러오기) =====
 
     serialize() {
@@ -276,6 +286,7 @@ class StateManager {
 
         return {
             playerName: this.playerName,
+            nameRaw: true, // 원문 저장 표식 (이전 세이브는 HTML 엔티티로 저장돼 있어 불러올 때 복원)
             currentDay: this.currentDay,
             currentSlot: this.currentSlot,
             currentScene: this.currentScene,
@@ -293,7 +304,7 @@ class StateManager {
 
     deserialize(data) {
         if (!data) return;
-        this.playerName = data.playerName || "";
+        this.playerName = data.nameRaw ? (data.playerName || "") : StateManager.decodeLegacyName(data.playerName);
         this.currentDay = data.currentDay || 1;
         this.currentSlot = data.currentSlot || "morning";
         this.currentScene = data.currentScene || "";

@@ -49,38 +49,119 @@ class I18nManager {
      */
     async loadDay(day) {
         const key = `day${day}`;
-        if (this.loaded[key]) return;
+        if (this.loaded[key]) return true;
+        // 같은 Day를 동시에 두 번 로드하지 않도록 진행 중인 Promise 공유
+        this._pending = this._pending || {};
+        if (this._pending[key]) return this._pending[key];
 
-        const slots = ['_morning', '_lunch', '_afterschool', '_night'];
-        this.texts[key] = {};
+        const run = async () => {
+            const slots = ['_morning', '_lunch', '_afterschool', '_night'];
+            const merged = {};
+            const failed = [];
 
-        const loadFile = async (langCode, slot) => {
-            const filename = `day${day}${slot}.json`;
-            try {
-                const res = await fetch(`${I18nManager.BASE}assets/js/i18n/${langCode}/${filename}?v=20260927-context-review`);
-                if (!res.ok) return;
-                const data = await res.json();
-                Object.assign(this.texts[key], data);
-            } catch (e) {}
+            // 일시적 네트워크 오류는 지수 백오프로 재시도. res.ok + JSON 파싱 성공일 때만 성공으로 본다.
+            // (없는 경로가 200+HTML로 오는 SPA 폴백은 JSON 파싱 단계에서 실패로 잡힌다.)
+            const loadFile = async (langCode, slot) => {
+                const filename = `day${day}${slot}.json`;
+                const url = `${I18nManager.BASE}assets/js/i18n/${langCode}/${filename}?v=20260930-i18n-retry`;
+                const maxAttempts = 3;
+                for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+                    try {
+                        const res = await fetch(url);
+                        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                        const data = await res.json();
+                        if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Error('invalid JSON shape');
+                        return data;
+                    } catch (e) {
+                        if (attempt === maxAttempts) {
+                            console.warn(`[I18n] Failed to load ${langCode}/${filename}:`, e && e.message);
+                            failed.push(`${langCode}/${filename}`);
+                            return null;
+                        }
+                        await new Promise((r) => setTimeout(r, 300 * Math.pow(2, attempt - 1)));
+                    }
+                }
+                return null;
+            };
+
+            // 비한국어 페이지에서 한국어 원문이 노출되지 않도록 en을 기본 폴백으로 사용
+            const baseLang = this.currentLang === 'ko' ? 'ko' : 'en';
+            if (baseLang !== this.currentLang) {
+                const baseData = await Promise.all(slots.map((slot) => loadFile(baseLang, slot)));
+                baseData.forEach((d) => { if (d) Object.assign(merged, d); });
+            }
+
+            // 대상 언어로 오버레이
+            const langData = await Promise.all(slots.map((slot) => loadFile(this.currentLang, slot)));
+            langData.forEach((d) => { if (d) Object.assign(merged, d); });
+
+            // 받은 것까지는 즉시 사용하되, 실패가 있으면 loaded로 표시하지 않아 다음 호출에서 다시 시도한다.
+            this.texts[key] = merged;
+            if (failed.length === 0) {
+                this.loaded[key] = true;
+                return true;
+            }
+            this.failedFiles = Array.from(new Set([...(this.failedFiles || []), ...failed]));
+            return false;
         };
 
-        // 비한국어 페이지에서 한국어 원문이 노출되지 않도록 en을 기본 폴백으로 사용
-        const baseLang = this.currentLang === 'ko' ? 'ko' : 'en';
-        if (baseLang !== this.currentLang) {
-            await Promise.all(slots.map((slot) => loadFile(baseLang, slot)));
-        }
-
-        // 대상 언어로 오버레이
-        await Promise.all(slots.map((slot) => loadFile(this.currentLang, slot)));
-
-        this.loaded[key] = true;
+        this._pending[key] = run().finally(() => { delete this._pending[key]; });
+        return this._pending[key];
     }
 
     /**
      * 모든 Day 텍스트 로드 (게임 시작 시)
+     * 일부 파일이 끝내 실패하면 "다시 시도" 배너를 띄우고 false를 반환한다.
+     * @returns {Promise<boolean>} 전부 성공했는지 여부
      */
     async loadAll() {
-        await Promise.all([1, 2, 3, 4, 5].map(d => this.loadDay(d)));
+        this.failedFiles = [];
+        const results = await Promise.all([1, 2, 3, 4, 5].map(d => this.loadDay(d)));
+        const ok = results.every(Boolean);
+        if (ok) this._hideRetryBanner();
+        else this._showRetryBanner();
+        return ok;
+    }
+
+    _retryMessages() {
+        return {
+            ko: { msg: '일부 대사를 불러오지 못했어요. 네트워크를 확인해 주세요.', btn: '다시 시도' },
+            en: { msg: 'Some text failed to load. Please check your connection.', btn: 'Retry' },
+            ja: { msg: '一部のテキストを読み込めませんでした。通信環境を確認してください。', btn: '再試行' },
+            es: { msg: 'No se pudo cargar parte del texto. Revisa tu conexión.', btn: 'Reintentar' },
+            fr: { msg: 'Une partie du texte n’a pas pu être chargée. Vérifiez votre connexion.', btn: 'Réessayer' },
+            de: { msg: 'Einige Texte konnten nicht geladen werden. Prüfe deine Verbindung.', btn: 'Erneut versuchen' },
+            pt: { msg: 'Não foi possível carregar parte do texto. Verifique sua conexão.', btn: 'Tentar novamente' }
+        }[this.currentLang] || { msg: 'Some text failed to load.', btn: 'Retry' };
+    }
+
+    _showRetryBanner() {
+        if (typeof document === 'undefined' || !document.body) return;
+        if (document.getElementById('i18n-retry-banner')) return;
+        const t = this._retryMessages();
+        const banner = document.createElement('div');
+        banner.id = 'i18n-retry-banner';
+        banner.setAttribute('role', 'alert');
+        banner.style.cssText = 'position:fixed;left:50%;bottom:1rem;transform:translateX(-50%);z-index:10000;'
+            + 'display:flex;gap:.75rem;align-items:center;max-width:92vw;padding:.6rem .9rem;border-radius:.5rem;'
+            + 'background:rgba(20,10,20,.94);color:#fff;font-size:.85rem;border:1px solid rgba(255,255,255,.35);';
+        const span = document.createElement('span');
+        span.textContent = t.msg;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = t.btn;
+        btn.style.cssText = 'padding:.3rem .8rem;border-radius:.3rem;border:1px solid #fff;background:transparent;color:#fff;cursor:pointer;';
+        btn.addEventListener('click', () => {
+            btn.disabled = true;
+            this.loadAll().finally(() => { btn.disabled = false; });
+        });
+        banner.append(span, btn);
+        document.body.appendChild(banner);
+    }
+
+    _hideRetryBanner() {
+        if (typeof document === 'undefined') return;
+        document.getElementById('i18n-retry-banner')?.remove();
     }
 
     /**
@@ -112,12 +193,12 @@ class I18nManager {
         if (!text) return "";
         const fallback = I18nManager.DEFAULT_PLAYER_NAME[this.currentLang] || I18nManager.DEFAULT_PLAYER_NAME.en || "Transfer Student";
         let result = text
-            .replace(/\{name\}/g, playerName || fallback)
-            .replace(/\{name\?\}/g, playerName || fallback);
+            .replace(/\{name\}/g, () => playerName || fallback)
+            .replace(/\{name\?\}/g, () => playerName || fallback);
         // 추가 플레이스홀더 치환 ({14th_name}, {new_name} 등)
         if (extraVars) {
             for (const [key, val] of Object.entries(extraVars)) {
-                result = result.replace(new RegExp(`\\{${key}\\}`, 'g'), val);
+                result = result.replace(new RegExp(`\\{${key}\\}`, 'g'), () => val);
             }
         }
         return result;

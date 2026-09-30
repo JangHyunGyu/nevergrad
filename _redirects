@@ -1,0 +1,24 @@
+# Repository-only files that must not be served to players.
+# Cloudflare Pages deploys the whole repository root, so dev/docs/tooling files
+# are sent back to the title page instead of being downloadable.
+/*.md / 302
+/*.cjs / 302
+/*.py / 302
+/*.log / 302
+/*.bak / 302
+/validate.js / 302
+/evaluate-scenario.js / 302
+/generate-images.js / 302
+/remove-bg.js / 302
+/package.json / 302
+/package-lock.json / 302
+/playwright.config.cjs / 302
+/.github/* / 302
+/.wrangler/* / 302
+/model_adapters/* / 302
+/scripts/* / 302
+/tests/* / 302
+/docs/* / 302
+/tmp/* / 302
+/seo/_generate.js / 302
+/seo/_sitemap_fragment.xml / 302

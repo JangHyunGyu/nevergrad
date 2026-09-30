@@ -26,3 +26,9 @@ build/
 tmp/
 _workspace/
 *.log
+
+# Local tool caches / machine-specific state (never deploy: account id lives in .wrangler)
+.wrangler/
+__pycache__/
+*.pyc
+*.bak

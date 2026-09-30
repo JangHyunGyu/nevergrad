@@ -56,3 +56,23 @@ https://:version.:project.pages.dev/*
 
 /*.py
   X-Robots-Tag: noindex, nofollow
+
+# Basic hardening for every response. frame-ancestors keeps the game embeddable
+# only by itself and Archerlab hosts (X-Frame-Options cannot express that).
+/*
+  Content-Security-Policy: frame-ancestors 'self' https://*.archerlab.dev https://archerlab.dev
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+
+# Art and audio are large and rarely change. Give returning players a one-day
+# cache and let the browser refresh stale copies in the background. JS, CSS and
+# i18n JSON are intentionally left on the default revalidate policy because they
+# rely on ?v= query busting, which _headers cannot match.
+/assets/images/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/assets/audio/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/favicon.svg
+  Cache-Control: public, max-age=86400
+

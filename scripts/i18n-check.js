@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * i18n sync checker
- * Compares ko (source) keys against en/ja/es/fr/de/pt translations.
+ * Compares ko (source) keys against en/ja/es/fr/de/pt/zh translations.
  * Reports missing keys, extra keys, and type mismatches.
  *
  * Usage: node scripts/i18n-check.js
@@ -13,7 +13,7 @@ const vm = require('vm');
 
 const I18N_DIR = path.join(__dirname, '..', 'assets', 'js', 'i18n');
 const SOURCE_LANG = 'ko';
-const TARGET_LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
+const TARGET_LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 
 function getJsonFiles(langDir) {
     if (!fs.existsSync(langDir)) return [];
@@ -73,6 +73,10 @@ function mojibakeProblems(lang, text) {
     if (/\?{3,}/.test(text)) out.push('run of "?" (lost non-ASCII text)');
     // a "?" glued between letters ("Wie? hei?t", "C?mo") is a lost accent, not punctuation
     if (/[A-Za-z\u00C0-\u024F]\?[A-Za-z\u00C0-\u024F]/.test(text)) out.push('"?" inside a word (lost accent)');
+    if (lang === 'zh') {
+        if (/[\uAC00-\uD7A3\u3130-\u318F\u3040-\u30FF]/.test(text)) out.push('zh text contains Hangul/kana');
+        if (/(^|[^\w`])\.\.\.($|[^\w`])/.test(text)) out.push('zh text contains ASCII ellipsis');
+    }
     if (lang === 'ja' && /\?/.test(text) && !/[\u3040-\u30FF\u4E00-\u9FFF]/.test(text)) {
         out.push('ja text with "?" and no Japanese characters');
     }

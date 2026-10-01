@@ -1,0 +1,346 @@
+{
+    "day4_night_start": {
+        "text": "*回到房间。我锁上门，还挂上了防盗链。*"
+    },
+    "day4_night_start_2": {
+        "text": "*挂好链子后，我在门前放了一把椅子。椅子腿抵着门，吱呀作响。*"
+    },
+    "day4_night_start_3": {
+        "text": "*玄关上方，门锁厂商贴纸的下面贴着一个小小的管理编号。入住的时候我没见过这串数字。*"
+    },
+    "day4_night_phone": {
+        "text": "*手机响了。是世雅。*"
+    },
+    "day4_night_phone_2": {
+        "text": "*世雅：“{name}，你今天突然不见了，我好担心。”*"
+    },
+    "day4_night_phone_3": {
+        "text": "*世雅：“明天也一起去吧。”*"
+    },
+    "day4_night_phone_4": {
+        "text": "*世雅：“说好了哦。”*"
+    },
+    "day4_night_phone_5": {
+        "text": "*30秒后。世雅：“说好了哦。”*"
+    },
+    "day4_night_phone_6": {
+        "text": "*15秒后。世雅：“说好了吗？”*"
+    },
+    "day4_night_phone_7": {
+        "text": "*震动还没结束，下一个对话框就接了上来。*"
+    },
+    "day4_night_phone_8": {
+        "text": "*10秒后。世雅：“你睡了吗？”*"
+    },
+    "day4_night_phone_9": {
+        "text": "*5秒后。世雅：“……别睡。再等一会儿。”*"
+    },
+    "day4_night_phone_10": {
+        "text": "*3秒后。世雅：“拜托了”*"
+    },
+    "day4_night_phone_11": {
+        "text": "*没有出现已读标记。我锁上了屏幕。*"
+    },
+    "day4_night_phone_eunsu": {
+        "text": "*恩秀老师：“明天能早一点来吗？我有话要跟你说。”*"
+    },
+    "day4_night_phone_eunsu_2": {
+        "text": "*恩秀老师：“晚安，{name}。”*"
+    },
+    "day4_night_phone_eunsu_3": {
+        "text": "*“晚安”。对话框下面，学生安全App的图标也一起浮在那里。*"
+    },
+    "day4_night_phone_end": {
+        "text": "*我把手机放进抽屉。震动还在继续。我用毛巾裹住它，把声音压下去。*"
+    },
+    "day4_night_save_glitch": {
+        "text": "*用毛巾裹着的手机在抽屉里自己又震了起来。*"
+    },
+    "day4_night_save_glitch_2": {
+        "text": "*我把它拿出来。屏幕上是学生安全App的通知。*"
+    },
+    "day4_night_save_glitch_3": {
+        "text": "*“受试——”闪了一下。通知变了。“晚上好，{name}！”*"
+    },
+    "day4_night_save_glitch_4": {
+        "text": "*通知记录里没有同一时间的条目。*"
+    },
+    "day4_night_save_glitch_5": {
+        "text": "*我打开App，出来的不是平时的学生菜单，而是黑底白字的管理员面板。*"
+    },
+    "day4_night_save_glitch_6": {
+        "text": "***屏幕顶端：“NEVERGRAD — 受试者管理系统 v4.7”***"
+    },
+    "day4_night_save_glitch_7": {
+        "text": "*列表出现了。13行。\n\n#01 金道镇 — 终止\n#03 朴瑞镇 — 终止 / 第4天尝试脱逃\n#07 金泰浩 — ██ 反应 / 外部接触：李雪花\n#09 韩志浩 — 终止 / 第3天提前被发现\n……\n#13 {name} — 进行中\n\n其余的行被灰色遮住，收在折叠菜单里。*"
+    },
+    "day4_night_save_glitch_8": {
+        "text": "*我用手指从第一行点到最后一行，13行。13个名字里，“终止”重复了12次。*"
+    },
+    "day4_night_save_glitch_9": {
+        "text": "*日期的间隔并不一致，3个月、4个月、3个月……但时长全都一样。**5天。***"
+    },
+    "day4_night_save_glitch_10": {
+        "text": "*只有 #07 不一样。“异常反应”。外部接触：李雪花。——雪花。*"
+    },
+    "day4_night_save_glitch_11": {
+        "text": "*#09。韩志浩。第3天提前被发现。到第三天就结束了。行尾的处理时间比其他行早了两天。*"
+    },
+    "day4_night_save_glitch_12": {
+        "text": "*#13。我的名字。“进行中”。*"
+    },
+    "day4_night_save_glitch_13": {
+        "text": "*我往下滑。下面还有更多标签页。*"
+    },
+    "day4_night_save_glitch_14": {
+        "text": "*“位置追踪记录”。我点了进去。学校平面图上，一个红点在移动。那是我过去四天的行动轨迹。*"
+    },
+    "day4_night_save_glitch_15": {
+        "text": "*校门、楼梯，连我停留过久的楼层都用数字标了出来。过去四天的移动记录以同样的速度重放着。*"
+    },
+    "day4_night_save_glitch_16": {
+        "text": "*第2天我点下去的权限请求提示，还留在眼前。`校内发生紧急情况时，用于确认学生位置所必需`。*"
+    },
+    "day4_night_save_glitch_17": {
+        "text": "*屏幕下方的权限列表。允许的是 ON，被我拦下的是灰色锁定。只有位置还开着。*"
+    },
+    "day4_night_save_glitch_18": {
+        "text": "*第2天我点过的权限项还原样留着。无论我怎么选，位置日志都记录在同一行里。*"
+    },
+    "day4_night_save_glitch_19": {
+        "text": "*App自己关掉了，回到平时的学生菜单。“晚上好，{name}！”*"
+    },
+    "day4_night_save_glitch_20": {
+        "text": "*还是同一个图标。白天是学生证二维码（QR），夜里是13行。*"
+    },
+    "day4_night_mirror": {
+        "text": "*我解开校服衬衫的两颗扣子，原本扣着领扣的地方在皮肤上泛红。我走进洗手间，打开水龙头，洗了把脸。*"
+    },
+    "day4_night_mirror_2": {
+        "text": "*又往脸上泼了两次冷水，手还是松不开洗手台的边缘。*"
+    },
+    "day4_night_mirror_3": {
+        "text": "*镜子。蒙着一层雾气。*"
+    },
+    "day4_night_mirror_4": {
+        "text": "*到现在我一次也没擦过。没有一丝手印的雾气覆在镜面上。*"
+    },
+    "day4_night_mirror_5": {
+        "text": "*水珠顺着雾气滑落，最先露出来的是与视线齐平的那一块。*"
+    },
+    "day4_night_mirror_6": {
+        "text": "*……这一次，我必须擦。*"
+    },
+    "day4_night_mirror_7": {
+        "text": "*我把手掌举到镜子前，数到二的时候，一动也不能动。*"
+    },
+    "day4_night_mirror_8": {
+        "text": "*身后有动静。回头一看，雪花站在浴室门口。湿透的校服袖口往下滴着水。*"
+    },
+    "day4_night_mirror_9": {
+        "text": "*雪花默默地看着我。她的眼下深深凹陷。*"
+    },
+    "day4_night_mirror_10": {
+        "text": "别擦。"
+    },
+    "day4_night_mirror_11": {
+        "text": "现在还别看。"
+    },
+    "day4_night_mirror_12": {
+        "text": "*我又看向镜子。*"
+    },
+    "day4_night_mirror_swipe": {
+        "text": "*我抬起手，把手掌贴在镜面上。很凉。*"
+    },
+    "day4_night_mirror_swipe_2": {
+        "text": "*从上往下，擦了一下。*"
+    },
+    "day4_night_mirror_swipe_3": {
+        "text": "*雾气散开，额头露了出来。*"
+    },
+    "day4_night_mirror_swipe_4": {
+        "text": "*第二下。眼睛露了出来。*"
+    },
+    "day4_night_mirror_swipe_5": {
+        "text": "*第三下擦过，鼻子、嘴、下巴，我的整张脸都露了出来。*"
+    },
+    "day4_night_mirror_hit1": {
+        "text": "*镜子里映出我的身后。*"
+    },
+    "day4_night_mirror_hit1_2": {
+        "text": "*没有人。*"
+    },
+    "day4_night_mirror_hit1_3": {
+        "text": "*只有雪花刚才站过的位置空着。*"
+    },
+    "day4_night_mirror_hit1_4": {
+        "text": "*我张开嘴，却发不出声音。*"
+    },
+    "day4_night_mirror_hit1_5": {
+        "text": "*回头看，雪花就在那里。湿发的发梢滴着水，眼角也是湿的。*"
+    },
+    "day4_night_mirror_hit1_6": {
+        "text": "*再看镜子，只映出我自己和空荡荡的浴室。*"
+    },
+    "day4_night_mirror_hit1_7": {
+        "text": "*看身后，雪花在。看镜子，她不在。再看身后，在；镜子里，不在。*"
+    },
+    "day4_night_mirror_hit1_8": {
+        "text": "*镜中的荧光灯下，只有一片空空的瓷砖延伸开去。*"
+    },
+    "day4_night_mirror_hit1_9": {
+        "text": "*只有雪花站过的位置旁的毛巾架，白白地映在镜中。*"
+    },
+    "day4_night_mirror_hit1_10": {
+        "text": "*地下室门口看到的雪花，和应用里 #07 的记录，连成了同一条线。*"
+    },
+    "day4_night_mirror_hit1_11": {
+        "text": "*我想起应用里看到的 #07 那一行。`外部接触：李雪花`。旁边被涂黑了。*"
+    },
+    "day4_night_mirror_hit1_12": {
+        "text": "*镜子里只有空荡荡的浴室，视野右侧却能看到雪花湿漉漉的头发。*"
+    },
+    "day4_night_mirror_hit1_13": {
+        "text": "*镜子和视野的边缘错开了一格。*"
+    },
+    "day4_night_mirror_hit1_14": {
+        "text": "对不起。"
+    },
+    "day4_night_mirror_hit1_15": {
+        "text": "*我听见了声音。但浴室门、通风口、扬声器，都没有响。*"
+    },
+    "day4_night_mirror_hit2": {
+        "text": "*我的视线没有从镜子上移开。*"
+    },
+    "day4_night_mirror_hit2_2": {
+        "text": "*四天来第一次好好看清自己的脸。水珠从下巴尖滴落，脖子上只留着名牌挂绳的印痕。*"
+    },
+    "day4_night_mirror_hit2_3": {
+        "text": "*我把刚才看到的记录里的名字一个个想起来，和镜中的脸重叠。*"
+    },
+    "day4_night_mirror_hit2_4": {
+        "text": "*1号，金道镇。黑色短发。脸，一模一样。*"
+    },
+    "day4_night_mirror_hit2_5": {
+        "text": "*3号，朴瑞镇。棕色头发。脸，一模一样。*"
+    },
+    "day4_night_mirror_hit2_6": {
+        "text": "*7号，金泰浩。长发，两颊凹陷。但眼睛、鼻子、嘴的位置，一模一样。*"
+    },
+    "day4_night_mirror_hit2_7": {
+        "text": "*发色不同，名字不同，但眼睛、鼻子、嘴的位置全都一样。*"
+    },
+    "day4_night_mirror_hit2_8": {
+        "text": "*我的名牌就挂在最后一行。*"
+    },
+    "day4_night_mirror_hit2_9": {
+        "text": "*咖啡口味、便当里的菜、点名册上的空格、雪花的记录，全都整理在我的名字之下。*"
+    },
+    "day4_night_mirror_overlay": {
+        "text": ""
+    },
+    "day4_night_mirror_collapse": {
+        "text": "*我踉跄后退，后背撞上了墙。*"
+    },
+    "day4_night_mirror_collapse_2": {
+        "text": "*左手上的石墨痕迹，和墙上留下的字迹笔画一样。*"
+    },
+    "day4_night_mirror_collapse_3": {
+        "text": "*我顺着墙滑坐下去。瓷砖的寒气渗进膝盖。*"
+    },
+    "day4_night_mirror_collapse_4": {
+        "text": "*牙咬得太紧，下颌关节发疼。*"
+    },
+    "day4_night_mirror_collapse_5": {
+        "text": "*很久都没能开口。*"
+    },
+    "day4_night_mirror_collapse_6": {
+        "text": "*左手上的石墨被水浸湿，晕开了。*"
+    },
+    "day4_night_mirror_collapse_7": {
+        "text": "*浴室外挂钟秒针的声音，隔着门也听得见。*"
+    },
+    "day4_night_mirror_collapse_8": {
+        "text": "*雪花就坐在旁边，镜子里却只映出我一个人。*"
+    },
+    "day4_night_mirror_collapse_9": {
+        "text": "*我摸了摸雪花那一侧的地砖，比别处更凉。*"
+    },
+    "day4_night_plan": {
+        "text": "*我坐到膝盖发麻，才站了起来。*"
+    },
+    "day4_night_plan_2": {
+        "text": "*镜中的脸，眼睛肿着，鼻头发红。脖子上留着名牌挂绳的痕迹。*"
+    },
+    "day4_night_plan_3": {
+        "text": "*我翻开笔记本，用左手写字。字迹歪歪扭扭，每一笔都蹭上浓重的石墨。*"
+    },
+    "day4_night_plan_4": {
+        "text": "*一。同一张脸，第十三个名字。前面的十二栏都写着“终止”。*"
+    },
+    "day4_night_plan_5": {
+        "text": "*二。恩秀开门，莉仁递来杯子，世雅连我的视线都知道。*"
+    },
+    "day4_night_plan_6": {
+        "text": "*三。#07旁边有雪花的记录。镜子里照不出她，左手上还留着之前写字蹭下的石墨痕。*"
+    },
+    "day4_night_plan_7": {
+        "text": "*四。我在旧馆下面听到了机器声和呼吸声。那些空位也和那边的记录连在一起。*"
+    },
+    "day4_night_plan_8": {
+        "text": "*五。处理时间是明晚11点。*"
+    },
+    "day4_night_plan_9": {
+        "text": "*六。从下面出来，就往上走。不是正门，是旧馆外侧。*"
+    },
+    "day4_night_plan_10": {
+        "text": "*写字的笔尖停在了纸上。我把笔放下。*"
+    },
+    "day4_night_plan_11": {
+        "text": "*七。莉仁知道情况，但会不会帮到最后，不得而知。*"
+    },
+    "day4_night_plan_12": {
+        "text": "*八。#03是在正门被终止的。不能走同一条路。*"
+    },
+    "day4_night_plan_13": {
+        "text": "*九。#07和雪花一起，在22:47停住了。离警报只差13分钟。*"
+    },
+    "day4_night_plan_14": {
+        "text": "*十。#09行动得太早，第三天就被发现了。*"
+    },
+    "day4_night_plan_15": {
+        "text": "*字写得歪歪扭扭，但我还是写到了第十条。*"
+    },
+    "day4_night_plan_choice": {
+        "text": "*我在笔记本末尾写下了三条路。*",
+        "choices": [
+            "离开学校",
+            "把记录送出去",
+            "正面面对恩秀"
+        ]
+    },
+    "day4_night_plan_escape": {
+        "text": "*正门早就被监视了。我走旧馆的安全出口。*"
+    },
+    "day4_night_plan_expose": {
+        "text": "*包里的文件可能会被夺走。我把副本送到外面去。*"
+    },
+    "day4_night_plan_confront": {
+        "text": "*在恩秀面前，拿出13号的记录和之前的12件。*"
+    },
+    "day4_night_plan_final": {
+        "text": "*包里只放了备忘录、手机和已经拿到的证据。*"
+    },
+    "day4_night_plan_final_2": {
+        "text": "*我在笔记本的最后一行写道。*"
+    },
+    "day4_night_plan_final_3": {
+        "text": "***“失败了十二次。下一行不该再有。明晚之前行动。”***"
+    },
+    "day4_night_plan_final_4": {
+        "text": "*定好了闹钟。明天是第五天。*"
+    },
+    "day4_night_end": {
+        "text": "*——第4天结束——*"
+    }
+}

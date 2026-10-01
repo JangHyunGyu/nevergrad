@@ -1,0 +1,618 @@
+{
+    "day5_morning_start": {
+        "text": "*——第五天。日程表的最后一格。——*"
+    },
+    "day5_morning_plan_branch": {
+        "text": ""
+    },
+    "day5_morning_plan_escape": {
+        "text": "*昨晚定下的是逃出去。先活着出去。证据是之后的事。*"
+    },
+    "day5_morning_plan_expose": {
+        "text": "*昨晚决定的是揭露。活着出去，和留下记录，两样都不能丢。*"
+    },
+    "day5_morning_plan_confront": {
+        "text": "*昨晚决定的是正面对质。我打算在恩秀老师面前把记录拿出来。*"
+    },
+    "day5_morning_dawn_1": {
+        "text": "*凌晨四点。我没睡着，也不打算再躺下去了。*"
+    },
+    "day5_morning_dawn_2": {
+        "text": "*黑暗里，我把时钟凑到眼前。数字一直在抖，读不出来。*"
+    },
+    "day5_morning_dawn_3": {
+        "text": "*包里：笔记、手机、拿到手的文件。电量68%。*\n\n*学生安全App的通知浮在锁屏上方。*\n\n*`预计到校 08:10`*\n\n*闪了一下。*\n\n*`预计回收 23:00`*\n\n*我关掉了屏幕。*"
+    },
+    "day5_morning_dawn_4": {
+        "text": "*我拿出笔记本。昨晚写下的计划，字迹抖得厉害，有一半读不出来。最下面有一句话，不像是我写的。*\n\n*`第二段楼梯。别跑。`*\n\n*笔痕深得几乎划破纸面。*"
+    },
+    "day5_morning_dawn_5": {
+        "text": "*我把运动鞋带系得很紧。说不定得跑。*"
+    },
+    "day5_morning_dawn_6": {
+        "text": "*我在门前停了一口气的时间。*"
+    },
+    "day5_morning_dawn_7": {
+        "text": "*门外是凌晨四点的走廊。没有日光灯的嗡鸣，也没有隔壁冰箱的声音。*"
+    },
+    "day5_morning_dawn_8": {
+        "text": "*我屏住呼吸，打开了门。空荡荡的走廊里，只铺着应急灯的绿光。*"
+    },
+    "day5_morning_dawn_9": {
+        "text": "*没有人。可应急灯下，只有监控镜头在慢慢朝这边转过来。*"
+    },
+    "day5_morning_dawn_10": {
+        "text": "*我压低脚步声走下楼梯。橙色路灯下的凌晨街道，没有人，也没有车，只有风在吹。*"
+    },
+    "day5_morning_dawn_11": {
+        "text": "*凌晨的街上，只剩我的脚步声。*\n\n*手机重新亮起。锁屏上的名字，有0.2秒变了。*\n\n*`S-13`*\n\n*又变回`{name}`。*"
+    },
+    "day5_morning_dawn_12": {
+        "text": "*到学校还有二十分钟。凌晨的马路上，只回荡着我的脚步声。*\n\n*所有线索都指向旧馆下面。先从地下室查起。*"
+    },
+    "day5_morning_school_1": {
+        "text": "*学校出现在眼前。建筑一片昏暗，平时看得见的窗户也全都黑黑地关着。*"
+    },
+    "day5_morning_school_2": {
+        "text": "*正门开着。锁掉在地上，锁环松开，还在晃。*"
+    },
+    "day5_morning_school_3": {
+        "text": "*铁门半开着，在风里摇晃。吱呀。停了，又吱呀。在耳朵里响得更大了。*"
+    },
+    "day5_morning_school_4": {
+        "text": "*正门旁的出入终端亮着。没有人碰过它，绿灯却亮了。*"
+    },
+    "day5_morning_school_5": {
+        "text": "***[到校处理完成：S-13]***"
+    },
+    "day5_morning_school_6": {
+        "text": "*终端屏幕熄灭。玻璃上映出我的脸。名牌上的字，比脸先映入眼里。*"
+    },
+    "day5_morning_school_7": {
+        "text": "*学生安全App震了一下。没有通知，只有三下震动。短，长，短。*"
+    },
+    "day5_morning_school_8": {
+        "text": "*穿过正门，横穿操场。沙子在脚下沙沙作响。在本馆前我放慢了脚步，可脚尖已经转向了旧馆。*"
+    },
+    "day5_morning_school_9": {
+        "text": "*旧馆入口的门开着，里面一盏灯也没亮。我用手机手电筒扫过走廊。*"
+    },
+    "day5_morning_school_10": {
+        "text": "*墙上刻着字。每一笔都抠出指甲宽的凹痕。明明读不出来，我的指尖还是顺着那些痕迹划了过去。*"
+    },
+    "day5_morning_school_11": {
+        "text": "*通往地下室的楼梯。每下一步，混凝土都是冰凉的。不知哪里的管道在响。咚，咚，咚。间隔均匀。*"
+    },
+    "day5_morning_rescue_1": {
+        "text": "*手机的光扫过地下室。管道、文件柜、陈旧的医疗器械。角落里有一张床。*"
+    },
+    "day5_morning_rescue_2": {
+        "text": "*由娜被绑在床上。眼睛睁着，目光却在晃。手腕上缠着皮带，皮肤被磨得通红。*"
+    },
+    "day5_morning_rescue_2_unknown": {
+        "text": "*床上绑着一个人。一个我认不出的女生。眼睛睁着，目光却在晃。手腕上缠着皮带，皮肤被磨得通红。*"
+    },
+    "day5_morning_rescue_3_unknown": {
+        "text": "你来了？"
+    },
+    "day5_morning_rescue_4_unknown": {
+        "text": "*脸很陌生，可话尾的那口气息我很熟悉。我先去解皮带。*"
+    },
+    "day5_morning_rescue_5_unknown": {
+        "text": "我是崔由娜。摄影社的。相机在包里。"
+    },
+    "day5_morning_rescue_3": {
+        "text": "……学长。你来了。"
+    },
+    "day5_morning_rescue_4": {
+        "text": "*由娜的眼睛重新有了焦点。她喘着气开口。*"
+    },
+    "day5_morning_rescue_5": {
+        "text": "学长。去看7号的记录。"
+    },
+    "day5_morning_rescue_5a": {
+        "text": "*她的手指指向散落在地上的那堆文件。手在发抖，方向却很明确。*"
+    },
+    "day5_morning_rescue_6": {
+        "text": "我知道了。我先帮你解开。"
+    },
+    "day5_morning_rescue_7": {
+        "text": "*我解开了由娜的皮带。绳结很紧。拉得指甲都快磨破，才总算解开。由娜的手很凉。我的手也很凉。*"
+    },
+    "day5_morning_rescue_8": {
+        "text": "我拍下的第一个人是第八位。当时我还以为他只是个不认识的学长。"
+    },
+    "day5_morning_rescue_9": {
+        "text": "第八位学长让我给他拍张照。他说：‘把我曾经是谁留下来。’"
+    },
+    "day5_morning_rescue_10": {
+        "text": "那时名牌上写的是‘崔时雨’。总是坐在图书馆最里面的位置。"
+    },
+    "day5_morning_rescue_11": {
+        "text": "那天他一直攥着相机背带，不肯松手。一整夜没睡的脸色。"
+    },
+    "day5_morning_rescue_12": {
+        "text": "我当时不明白是什么意思。只记得那只握着相机的手。"
+    },
+    "day5_morning_rescue_13": {
+        "text": "几个月后，同一张脸戴着另一个名牌来了。他不认得我。"
+    },
+    "day5_morning_rescue_14": {
+        "text": "*嘴唇在发抖。*"
+    },
+    "day5_morning_rescue_15": {
+        "text": "从那以后，我开始按快门。每次名牌换掉的时候。"
+    },
+    "day5_morning_rescue_16": {
+        "text": "第九个文件，在第三天夜里就断了。名牌上写的是“韩志浩”。"
+    },
+    "day5_morning_rescue_17": {
+        "text": "名字在变，拜托的话却一样。“记录下来。”手总是伸向相机。"
+    },
+    "day5_morning_rescue_18": {
+        "text": "文件夹里是三年的东西。同一张脸旁边，只是名牌越来越多。"
+    },
+    "day5_morning_rescue_19": {
+        "text": "*眼角积着水光，却没有流下来。*"
+    },
+    "day5_morning_rescue_20": {
+        "text": "照片总是歪的。可我还是没有停下拍摄。"
+    },
+    "day5_morning_rescue_21": {
+        "text": "*由娜的相机背带在手腕上勒出了红印。*"
+    },
+    "day5_morning_rescue_22": {
+        "text": "*我扶着由娜站起来。她腿一软，踉跄了一下。我把她的手臂架在肩上。*"
+    },
+    "day5_morning_ghost_record": {
+        "text": "记录下来"
+    },
+    "day5_morning_rescue_choice": {
+        "text": "",
+        "choices": [
+            "立刻逃走",
+            "再多收集一些证据"
+        ]
+    },
+    "day5_morning_escape_end": {
+        "text": "*我拉着由娜的手臂走上楼梯。现在，先逃出去要紧。*"
+    },
+    "day5_morning_true_1": {
+        "text": "*我翻起文件。在由娜指的地方找到了。*"
+    },
+    "day5_morning_true_2": {
+        "text": "*#7——照片：长发的男生。姓名：金泰浩。脸颊凹陷，颧骨突出。连眼角的角度都——那是我的脸。*"
+    },
+    "day5_morning_true_3": {
+        "text": "*#7的备注栏很长。红色印章层层叠叠。*\n\n*`S-07 / 外部接触 / 同行者：李雪花 / 结果：已确保对象`*\n\n*下面有一行，被黑笔划了两道。*\n\n*`S-07 -> S-08`*"
+    },
+    "day5_morning_true_4": {
+        "text": "李雪花。学长在走廊里搭话的那个女孩，就在这里面。"
+    },
+    "day5_morning_true_5": {
+        "text": "*她张了张嘴，什么也没说，又举起了相机。*"
+    },
+    "day5_morning_true_6": {
+        "text": "*地上还散落着更多文件。没有时间细读，我用手机能拍多少拍多少。*"
+    },
+    "day5_morning_true_7": {
+        "text": "学长，那边那个，好像是恩秀老师的日志。"
+    },
+    "day5_morning_true_8": {
+        "text": "*她靠着床坐着，指向另一叠文件。字迹工整，是恩秀老师的观察日志。*"
+    },
+    "day5_morning_true_9": {
+        "text": "***“试验 #7 备注：药物抵抗反应。确认与设施内学生李雪花（女，17岁）有外部接触。结果：已确保对象。李雪花——不可修改。S-07——重新登记为S-08。”***"
+    },
+    "day5_morning_true_10": {
+        "text": "*李雪花。名字旁贴着一张小照片。是教室后排的那张脸。照片下面画着一个箭头，看起来是我的笔迹。*"
+    },
+    "day5_morning_true_11": {
+        "text": "*处理时间23:02。S-07重新登记时间23:11。两个时间写在同一行。*"
+    },
+    "day5_morning_true_12": {
+        "text": "*文件的边角盖着一个章。`废弃`。墨水晕开了，渗进桌面的木纹里。*"
+    },
+    "day5_morning_true_13": {
+        "text": "*手机相机自动对焦。李雪花的照片。旁边的空白处。只有我一直看见的那个位置，白白地空着。*"
+    },
+    "day5_morning_true_14": {
+        "text": "***“试验 #8 之后：受试者与空白处交谈。反复提及‘李雪花’。同伴反应具有镇静效果。需重新审议剂量。”***"
+    },
+    "day5_morning_true_15": {
+        "text": "*是恩秀老师的字。和她上课时写在黑板上一样工整的笔画，写着：`需重新审议药物剂量`。*"
+    },
+    "day5_morning_true_16": {
+        "text": "***“试验 #9～#12：同样现象。摄像头/出入/座位记录中均无该学生。受试者始终空着同一个座位。”***"
+    },
+    "day5_morning_true_17": {
+        "text": "***“附记：移除空白座位时出现急性不安。现阶段不予处理。”***"
+    },
+    "day5_morning_true_18": {
+        "text": "*`空白座位`。`不予处理`。`有助于稳定`。我想把这三个词拍下来，相机的焦点却一直对不准。*"
+    },
+    "day5_morning_true_19": {
+        "text": "*名字标签闪了一下。*\n\n*`雪花`*\n\n*`空白`*\n\n*又变回`雪花`。*"
+    },
+    "day5_morning_true_20": {
+        "text": "*后排座位，走廊尽头，紧闭的门前。我看见雪花的每一个位置，记录里都是空白。*"
+    },
+    "day5_morning_true_21": {
+        "text": "*她坐过的座位，在所有照片里都是空的。*"
+    },
+    "day5_morning_true_22": {
+        "text": "*观察日志的最后一页。日期是两天前。*"
+    },
+    "day5_morning_true_23": {
+        "text": "***“试验 #13 第2天：与崔由娜发生未经许可的接触。存在副本泄露风险。建议隔离。”***"
+    },
+    "day5_morning_true_24": {
+        "text": "***“试验 #13 第3天：崔由娜已隔离完毕。确认存在另一份副本。报告暂缓。”***"
+    },
+    "day5_morning_true_25": {
+        "text": "*两天前。由娜给我看照片那天的日期，也印在观察日志里。*"
+    },
+    "day5_morning_true_26": {
+        "text": "*而由娜昨晚“转学”走了。*"
+    },
+    "day5_morning_true_27": {
+        "text": "*照片里，李雪花最后的记录日期是一年前。从下一页开始，只有我的脸一直延续下去，名字却不断更换。*"
+    },
+    "day5_morning_true_28": {
+        "text": "*我看向由娜。她手腕上留下的红印，正对着文件的边角。*"
+    },
+    "day5_morning_true_29": {
+        "text": "得从这里出去。那些人马上就来了。"
+    },
+    "day5_morning_true_30": {
+        "text": "莉仁老师马上就要下来了。她总是来打药。"
+    },
+    "day5_morning_true_31": {
+        "text": "*由娜抓住我，手指却很快滑落了。*"
+    },
+    "day5_morning_true_32": {
+        "text": "学长，这台相机里有三年的记录，能证明学长以前是谁。"
+    },
+    "day5_morning_true_33": {
+        "text": "从这里出去的话，这个一定要带出去。"
+    },
+    "day5_morning_true_34": {
+        "text": "*我握住了由娜的手。冰凉。*"
+    },
+    "day5_morning_true_35": {
+        "text": "*我把地上的文件能拍的全拍了下来。埃迪娜基金会的标志。Nevergrad 最终报告。封面下面是一张收益率表。*"
+    },
+    "day5_morning_true_36": {
+        "text": "*身份包变更协议。父母、家乡、原来的学校、朋友的名字。每一栏都有适用日期和审核标记。*"
+    },
+    "day5_morning_true_37": {
+        "text": "*理事会批准文件。商用化提案。预期收益率旁边的批注：`S-13 稳定化数据确保后`。*"
+    },
+    "day5_morning_true_38": {
+        "text": "*最后一页。“试验 #13：空座位反应持续。重复‘李雪花’名称。残留记忆超出临界值。建议审查提前处理。”*"
+    },
+    "day5_morning_true_39": {
+        "text": "*`建议审查提前处理`。相机的焦点在那一行上颤抖。*"
+    },
+    "day5_morning_true_timer_choice": {
+        "text": "*没有时间了。必须现在决定。*",
+        "choices": [
+            "带上由娜出去",
+            "先躲起来"
+        ]
+    },
+    "day5_morning_true_run_1": {
+        "text": "*我把证据塞进包里，抓住了由娜的胳膊。*"
+    },
+    "day5_morning_true_hide_1": {
+        "text": "*我躲进文件柜后面的阴影里。为了不让人听见由娜颤抖的呼吸，我把手指按在唇上。脚步声从楼梯上方掠过。*"
+    },
+    "day5_morning_true_hide_2": {
+        "text": "*再怎么屏住呼吸也改变不了什么。现在必须行动了。*"
+    },
+    "day5_morning_true_exit_1": {
+        "text": "*刚走上楼梯，恩秀老师就站在那里，堵住了通往旧馆出口的走廊。*"
+    },
+    "day5_morning_true_exit_2": {
+        "text": "{name}，那台相机，你从哪儿弄来的？"
+    },
+    "day5_morning_true_ft": {
+        "text": "*老师笑得一拍都没有迟疑。由娜把相机藏在掌心里攥着。*",
+        "choices": [
+            "请让开。地下室里的东西我都看到了。",
+            "我们迷路了。现在就走。",
+            "由娜说头晕，我正带她去保健室。"
+        ]
+    },
+    "day5_morning_true_ft_confront": {
+        "text": "{name}，这不是该在走廊上说的话。把相机放下，跟老师走吧。"
+    },
+    "day5_morning_true_ft_lost": {
+        "text": "没事的。没有哪里受伤吧？老师送你们出去。来，这边。"
+    },
+    "day5_morning_true_ft_yuna": {
+        "text": "好。保健室在本馆二楼。一起去吧，我来扶着她。"
+    },
+    "day5_morning_true_ft_stall": {
+        "text": "等一下。别着急，先听老师说，好吗？"
+    },
+    "day5_morning_true_post_ft_1": {
+        "text": "*一只手搭上了我的肩膀。很暖。指尖一点一点向里扣紧。*"
+    },
+    "day5_morning_true_post_ft_2": {
+        "text": "*她没有立刻抓住我。视线却猛地往上一跳。就在这时，不知哪里传来铁门关上的声音。*"
+    },
+    "day5_morning_true_post_ft_3": {
+        "text": "*恩秀的视线越过相机和背包，投向旧馆楼梯那边。我抓住由娜的手腕，擦着老师身边走了过去。*"
+    },
+    "day5_morning_blockade_1": {
+        "text": "*直到昨天还开着的走廊尽头的门，现在挂上了一道铁制锁杠。昨天还没有这东西。*"
+    },
+    "day5_morning_blockade_2": {
+        "text": "*我朝另一头跑去。走廊另一边的门也关着。锁住了。*"
+    },
+    "day5_morning_blockade_3": {
+        "text": "*[封锁]*"
+    },
+    "day5_morning_blockade_4": {
+        "text": "*我和由娜四目相对。由娜把相机抱向胸口，我重新握紧了背包带。*",
+        "choices": [
+            "安抚由娜",
+            "再确认一遍门",
+            "等广播"
+        ]
+    },
+    "day5_morning_blockade_5": {
+        "text": "*刺啦——扬声器里爆出一阵杂音。接着铺开了八音盒的声音。缓慢、音准错乱的毕业典礼颂歌。*"
+    },
+    "day5_morning_broadcast_1": {
+        "text": "早上好，同学们。"
+    },
+    "day5_morning_broadcast_2": {
+        "text": "*和平时一样的声音，以固定的间隔从扬声器里流淌出来。舌尖扫过上齿，嘴里泛起金属的味道。*"
+    },
+    "day5_morning_broadcast_3": {
+        "text": "今天是特别的日子。因为要举行**毕业典礼**。"
+    },
+    "day5_morning_broadcast_4": {
+        "text": "*广播宣布了毕业典礼之后就断了。走廊的扬声器里只剩杂音。*"
+    },
+    "day5_morning_broadcast_5": {
+        "text": "{name}，可以来一下教室吗？"
+    },
+    "day5_morning_broadcast_6": {
+        "text": "因为这是最后一堂课。"
+    },
+    "day5_morning_broadcast_7": {
+        "text": "*八音盒又响了一拍，随即断掉。广播关了。寂静。*"
+    },
+    "day5_morning_broadcast_8": {
+        "text": "不去不行吗？"
+    },
+    "day5_morning_broadcast_9": {
+        "text": "*声音在发抖。抓着袖子的手指用上了力。*"
+    },
+    "day5_morning_broadcast_10": {
+        "text": "不去。往上走。去旧馆上层。先去找离外面最近的地方。"
+    },
+    "day5_morning_broadcast_11": {
+        "text": "旧馆三楼有安全出口。只要能走到那里——"
+    },
+    "day5_morning_broadcast_12": {
+        "text": "*咚。楼上传来关门声。沉重的铁门关上的声音。*"
+    },
+    "day5_morning_broadcast_13": {
+        "text": "*话说到一半停住了。我们俩同时抬头望向上方。咚。又一声。三楼也被封锁了。*"
+    },
+    "day5_morning_broadcast_14": {
+        "text": "学长。"
+    },
+    "day5_morning_broadcast_15": {
+        "text": "*由娜攥紧了我的袖子。指节发白。*"
+    },
+    "day5_morning_broadcast_16": {
+        "text": "往上走。还有一扇门没确认过。"
+    },
+    "day5_morning_broadcast_17": {
+        "text": "*由娜的手把我的袖子抓得更紧了。*"
+    },
+    "day5_morning_broadcast_18": {
+        "text": "*只有教室的门开着。其他所有的门都锁上了。能去的地方只剩一个。*"
+    },
+    "day5_morning_grad_1": {
+        "text": "我在外面等着。进去的话，连我也会被抓住。"
+    },
+    "day5_morning_grad_2": {
+        "text": "对不起。"
+    },
+    "day5_morning_grad_3": {
+        "text": "一出来就马上跑。"
+    },
+    "day5_morning_grad_4": {
+        "text": "*我躲进了走廊的角落。按下了手机的录音键。*"
+    },
+    "day5_morning_grad_5": {
+        "text": "*我走进了教室。*"
+    },
+    "day5_morning_grad_6": {
+        "text": "*教室里一个人也没有。三十张空桌子，以同样的间隔朝向黑板。*"
+    },
+    "day5_morning_grad_7": {
+        "text": "*每张桌上都放着一个名牌。从1号到12号。试验编号，和当时被赋予的名字。13号的位置是空的。我的位置。*"
+    },
+    "day5_morning_grad_8": {
+        "text": "*黑板上写着“恭喜毕业——第十三位”。*"
+    },
+    "day5_morning_grad_9": {
+        "text": "*粉笔字很干净。黑板下面还落着白色的粉末。是恩秀老师每节课都在写的、一笔一画的字迹。*"
+    },
+    "day5_morning_grad_10": {
+        "text": "*讲台上放着用回形针夹好的十三份文件。每份上贴的照片都是我的脸，名字却各不相同。*"
+    },
+    "day5_morning_grad_11": {
+        "text": "你来了，{name}。"
+    },
+    "day5_morning_grad_12": {
+        "text": "*她拿起讲台上的纸。纸的边缘一动不动。*"
+    },
+    "day5_morning_grad_13": {
+        "text": "这是毕业证书。写的是你的名字。"
+    },
+    "day5_morning_grad_14": {
+        "text": "*纸上有十三个名字。从“金道镇”到“{name}”。标题不是毕业证书，而是“处理完毕确认书”。印章盖了十二次，最后一栏没有沾上印泥。*"
+    },
+    "day5_morning_grad_15": {
+        "text": "*她翻开第一页。金道镇。照片旁边用红笔写着一句话。*"
+    },
+    "day5_morning_grad_16": {
+        "text": "***“第3天22:14。试图离开正门。已回收。”***"
+    },
+    "day5_morning_grad_17": {
+        "text": "*第二页。李俊瑞。纸角上有一小块污渍。分不清是咖啡渍还是水渍。*"
+    },
+    "day5_morning_grad_18": {
+        "text": "*第五页。姜敏赫。附着的便条上写着：“在教师办公室的停留时间增加。依赖反应良好。”*"
+    },
+    "day5_morning_grad_19": {
+        "text": "*第六页。郑夏律。照片上夹着黑色回形针。旁边还贴着一张药瓶的照片。*"
+    },
+    "day5_morning_grad_20": {
+        "text": "*翻到第七页时，恩秀老师的手停住了。金泰浩。照片后面还半夹着另一张照片。白发的女生。脸被刻意剪掉了。*"
+    },
+    "day5_morning_grad_21": {
+        "text": "*恩秀老师没能翻过那一页。*"
+    },
+    "day5_morning_grad_21a": {
+        "text": "*讲台抽屉半开着。里面露出一封信。“多亏了老师，我度过了美好的校园生活。”署名是宋艺俊。日期是第十次试验第5天的夜晚。*"
+    },
+    "day5_morning_grad_22": {
+        "text": "*还有一张小小的检查清单。*"
+    },
+    "day5_morning_grad_23": {
+        "text": "*用左手拿筷子。上楼梯时跳过第三级台阶。看窗外时右手托着右脸颊。把巧克力牛奶摇两下。*"
+    },
+    "day5_morning_grad_24": {
+        "text": "*我的习惯，被整理得像一份课堂观察表。*"
+    },
+    "day5_morning_grad_25": {
+        "text": "就算记忆被抹掉，习惯还是会留下来。"
+    },
+    "day5_morning_grad_26": {
+        "text": "*恩秀勉强笑了一下，随即收起了表情。*"
+    },
+    "day5_morning_grad_27": {
+        "text": "*话断了。清单上的条目一行一行映入眼里。*"
+    },
+    "day5_morning_grad_28": {
+        "text": "{name}。"
+    },
+    "day5_morning_grad_29": {
+        "text": "*恩秀老师叫了我的名字，话没说完，又低头看向清单。*"
+    },
+    "day5_morning_grad_29a": {
+        "text": "*和上课时的表情不一样。只有看着清单的时候，她的目光才是定住的。*"
+    },
+    "day5_morning_grad_30": {
+        "text": "如果有想问的，现在问吧。"
+    },
+    "day5_morning_grad_timer": {
+        "text": "",
+        "choices": [
+            "您写下这些，一直在看着我吗？",
+            "是从什么时候开始的？",
+            "保持沉默"
+        ]
+    },
+    "day5_morning_grad_reply_1": {
+        "text": "起初只是观察。"
+    },
+    "day5_morning_grad_reply_1b": {
+        "text": "对。第一页上就是这么写的。我也在那后面躲了一阵子。"
+    },
+    "day5_morning_grad_reply_2": {
+        "text": "最初的批准书上只有理事会的公章。没有我的名字。"
+    },
+    "day5_morning_grad_reply_2b": {
+        "text": "*她把手指按在第三页上。盖着“延长批准申请”的章。申请人：朴恩秀。*"
+    },
+    "day5_morning_grad_reply_2c": {
+        "text": "从这里开始，就是我的签名了。"
+    },
+    "day5_morning_grad_reply_3": {
+        "text": "*恩秀露出笑容，眼睛却盯在清单上。*"
+    },
+    "day5_morning_grad_reply_3b": {
+        "text": "……嗯。没什么可说的了。"
+    },
+    "day5_morning_proposal_1": {
+        "text": "*话说完了。教室里只剩我们两个人。*"
+    },
+    "day5_morning_proposal_2": {
+        "text": "*恩秀老师绕过讲台朝我走来，在两米远的地方停住了。*"
+    },
+    "day5_morning_proposal_3": {
+        "text": "*嘴唇动了动，却没有声音。她第二次开口。*"
+    },
+    "day5_morning_proposal_4": {
+        "text": "对不起。"
+    },
+    "day5_morning_proposal_5": {
+        "text": "*老师在讲台前跪了下来。*"
+    },
+    "day5_morning_proposal_6": {
+        "text": "我知道，道歉并不能让记录消失。"
+    },
+    "day5_morning_proposal_7": {
+        "text": "*她没有去看那些印着自己名字的批准书。*"
+    },
+    "day5_morning_proposal_8": {
+        "text": "*她抬起头。眼眶红了一圈。*"
+    },
+    "day5_morning_proposal_9": {
+        "text": "你在这里的时候，数值就会稳定。我就拿这个当借口，一直把你留着。"
+    },
+    "day5_morning_proposal_10": {
+        "text": "*她站了起来，没有擦眼角的泪。*"
+    },
+    "day5_morning_proposal_11": {
+        "text": "{name}。"
+    },
+    "day5_morning_proposal_12": {
+        "text": "选吧。"
+    },
+    "day5_morning_proposal_13": {
+        "text": "一。留在这里。你的位置我原样留着，也不会消除你的记忆。"
+    },
+    "day5_morning_proposal_14": {
+        "text": "二。我来消除记忆。疼痛会消失，身体也不会再抗拒。下周一，重新开始就好。"
+    },
+    "day5_morning_proposal_15": {
+        "text": "三。"
+    },
+    "day5_morning_proposal_16": {
+        "text": "*她闭上了嘴。*"
+    },
+    "day5_morning_proposal_17": {
+        "text": "我真希望，没有第三个选项。"
+    },
+    "day5_morning_proposal_18": {
+        "text": "*教室的门开了。*"
+    },
+    "day5_morning_proposal_timer": {
+        "text": "",
+        "choices": [
+            "我留在这里。",
+            "请消除我的记忆。",
+            "冲出教室"
+        ]
+    },
+    "day5_morning_end_cage": {
+        "text": "*脚停住了。我坐到椅子上。恩秀老师笑了。*"
+    },
+    "day5_morning_end_forget": {
+        "text": "*我闭上眼睛。恩秀老师的手触到额头。好凉。*"
+    },
+    "day5_morning_end_run": {
+        "text": "*我转过身，朝楼梯跑去。*"
+    }
+}

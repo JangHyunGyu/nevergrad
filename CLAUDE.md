@@ -21,7 +21,7 @@
 
 ## 프로젝트 구조
 - `assets/js/scenario/` — 시나리오 로직 (분기, 배경, 스탯만, 텍스트 없음)
-- `assets/js/i18n/{ko,en,ja,es,fr,de}/` — 다국어 텍스트 JSON (scene ID = 텍스트 키)
+- `assets/js/i18n/{ko,en,ja,es,fr,de,pt,zh}/` — 다국어 텍스트 JSON (scene ID = 텍스트 키)
 - `assets/js/modules/` — 엔진 모듈 (GameEngine, DialogueSystem, I18nManager 등)
 - `assets/js/config.js` — 전역 설정 (배경, 캐릭터 표정, BGM 등)
 - `assets/js/app.js` — 앱 진입점

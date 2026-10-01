@@ -6,7 +6,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const OUT = __dirname;
 const SITE = 'https://nevergrad.archerlab.dev';
-const LASTMOD = '2026-07-10';
+const LASTMOD = '2026-10-01';
 const ORIGIN_TRIAL_TOKEN = 'Agn9opFYdjvT/UqEIvt4RnCkmN8Kt+8/lzvg731pKSz7MpNoJkLvra/pLOIFgR9GZb39JbBGeJ+CDO++Tus3FggAAABmeyJvcmlnaW4iOiJodHRwczovL2FyY2hlcmxhYi5kZXY6NDQzIiwiZmVhdHVyZSI6IkhUTUxJbkNhbnZhcyIsImV4cGlyeSI6MTc5MjQ1NDQwMCwiaXNTdWJkb21haW4iOnRydWV9';
 
 const HOME = {
@@ -16,8 +16,14 @@ const HOME = {
   es: '/es/',
   fr: '/fr/',
   de: '/de/',
-  pt: '/pt/'
+  pt: '/pt/',
+  zh: '/zh/'
 };
+
+// Internal language code -> BCP 47 tag used for hreflang / <html lang> / JSON-LD inLanguage.
+const LANG_TAGS = { zh: 'zh-CN' };
+const OG_LOCALES = { ko: 'ko_KR', en: 'en_US', ja: 'ja_JP', es: 'es_ES', fr: 'fr_FR', de: 'de_DE', pt: 'pt_BR', zh: 'zh_CN' };
+const tagOf = lang => LANG_TAGS[lang] || lang;
 
 const LANG = {
   ko: {
@@ -215,6 +221,34 @@ const LANG = {
     ],
     otherLangs: 'Outros idiomas',
     footer: 'Nevergrad - visual novel grátis no navegador'
+  },
+  zh: {
+    htmlLang: 'zh-CN',
+    cta: '立即免费游玩',
+    whyTitle: '为什么推荐 Nevergrad',
+    why: [
+      '无需安装，也不用注册，打开浏览器就能直接开始。',
+      '五天里的每个选择，都会改变你与五位女主角的关系，以及最终的七种结局。',
+      '从平静的校园恋爱起步，渐渐滑向悬疑与心理惊悚。',
+      '同一款网页游戏，电脑和手机浏览器都能玩。'
+    ],
+    featureTitle: '游戏特色',
+    features: [
+      ['免费游玩', '不用付费，也不用订阅，打开就能玩完整主线。'],
+      ['无需下载', '只要打开网址就能开始，存档保存在浏览器里。'],
+      ['多结局', '你的选择和人物关系，会把故事带向不同的结局。']
+    ],
+    howTitle: '30 秒开始游戏',
+    how: ['点击下方的“立即免费游玩”按钮。', '输入名字，开始新游戏。', '用五天时间做出选择，看看你会走到哪个结局。'],
+    faqTitle: '常见问题',
+    faqs: [
+      ['真的免费吗？', '是的。无需付费、订阅或注册，直接在浏览器里就能玩。'],
+      ['手机能玩吗？', '可以。支持 Chrome、Safari、Edge 等较新的手机浏览器。'],
+      ['这是什么类型的游戏？', '以校园恋爱开场，逐步转向悬疑与心理惊悚的选择分支类剧情游戏。'],
+      ['进度会保存吗？', '会。游戏进度和存档保存在同一个浏览器里。']
+    ],
+    otherLangs: '其他语言',
+    footer: 'Nevergrad - 免费网页视觉小说'
   }
 };
 
@@ -284,6 +318,15 @@ const CLUSTERS = [
         intro: 'Se você procura uma visual novel grátis no navegador, o melhor é começar por um link. Nevergrad roda no navegador e transforma cinco dias de escolhas em um mistério escolar com sete finais.',
         angleTitle: 'Por que combina com a busca',
         angle: ['Não há pagamento antes do começo da história.', 'Atende buscas por visual novel, escola, mistério e jogo de escolhas.', 'A mesma URL funciona no computador e no celular.']
+      },
+      zh: {
+        slug: 'mianfei-wangye-shijue-xiaoshuo',
+        h1: '免费网页视觉小说 - 在线畅玩 Nevergrad',
+        title: '免费网页视觉小说 | 在线玩 Nevergrad（简体中文）',
+        meta: '在浏览器里免费玩视觉小说，无需下载。Nevergrad 是一款校园悬疑选择类游戏：五天、五位女主角、七种结局，支持简体中文。',
+        intro: '想找一款免费的网页视觉小说？最省事的办法，就是挑一个点开链接就能玩的。Nevergrad 直接在浏览器里运行，把五天里的选择织成一个校园悬疑故事。',
+        angleTitle: '为什么适合想玩免费网页视觉小说的你',
+        angle: ['故事开始前没有任何付费门槛。', '校园、悬疑、选择分支，一次满足。', '电脑与手机浏览器都能顺畅游玩，并提供简体中文界面和剧情。']
       }
     }
   },
@@ -352,6 +395,15 @@ const CLUSTERS = [
         intro: 'Uma visual novel sem download não deve exigir instalador, loja de apps ou conta antes da história. Nevergrad começa por um link do navegador e mantém tudo leve.',
         angleTitle: 'Por que atende a busca sem download',
         angle: ['Não precisa de app ou cliente de desktop.', 'O progresso fica salvo no mesmo navegador.', 'Oferece estrutura completa de cinco dias e finais ramificados.']
+      },
+      zh: {
+        slug: 'wuxu-xiazai-galgame',
+        h1: '无需下载的 Galgame - 直接在线玩 Nevergrad',
+        title: '无需下载的 Galgame / 视觉小说 | Nevergrad 在线玩',
+        meta: '想玩无需下载的视觉小说？Nevergrad 是浏览器里直接开玩的免费校园悬疑游戏，有选项分支和多个结局，支持简体中文。',
+        intro: '无需下载的视觉小说，不该在开始之前就逼你装安装包、进应用商店或注册账号。Nevergrad 只要一个浏览器链接就能开始，体验轻巧。',
+        angleTitle: '为什么说它真的“无需下载”',
+        angle: ['不用装应用，也不用桌面客户端。', '进度保存在同一个浏览器里。', '完整的五天剧情和分支结局都在里面。']
       }
     }
   },
@@ -420,6 +472,15 @@ const CLUSTERS = [
         intro: 'Um mistério escolar ganha força quando salas familiares parecem seguir regras escondidas. Nevergrad começa em um dia de transferência e segue cinco dias de escolhas até o segredo da escola.',
         angleTitle: 'Por que combina com mistério escolar',
         angle: ['Salas, corredores, terraço e arquivos sustentam a história.', 'As escolhas mudam relações e o acesso à verdade.', 'A rota passa de romance para mistério ao longo da semana.']
+      },
+      zh: {
+        slug: 'xiaoyuan-xuanyi-youxi-mianfei',
+        h1: '免费校园悬疑游戏 - Nevergrad',
+        title: '免费校园悬疑游戏 | Nevergrad 视觉小说',
+        meta: '在浏览器里免费玩校园悬疑游戏。Nevergrad 把选择、女主角、隐藏的记录和七种结局融为一体，是一款校园悬疑视觉小说。',
+        intro: '熟悉的教室里，一条条陌生的规则慢慢浮出水面，校园悬疑才真正有味道。Nevergrad 从转学第一天开始，用五天的选择带你追查学校深处的秘密。',
+        angleTitle: '校园悬疑的魅力',
+        angle: ['教室、走廊、天台和档案室，都是故事的舞台。', '你的选择会改变人物关系，也决定你离真相有多近。', '随着一周推进，故事从恋爱慢慢转入悬疑。']
       }
     }
   },
@@ -488,6 +549,15 @@ const CLUSTERS = [
         intro: 'As melhores visual novels de terror psicológico não dependem só de sustos. Nevergrad começa como romance escolar tranquilo e deixa memória, repetição e observação tornarem o mundo estranho.',
         angleTitle: 'Por que combina com terror psicológico',
         angle: ['A história inicial parece segura antes do desconforto crescer.', 'Memória, repetição e observação sustentam a premissa de horror.', 'O medo acumula por escolhas, registros e rotinas escolares.']
+      },
+      zh: {
+        slug: 'xinli-kongbu-shijue-xiaoshuo',
+        h1: '心理恐怖视觉小说 - Nevergrad 免费在线玩',
+        title: '心理恐怖视觉小说 | 免费玩 Nevergrad',
+        meta: '在浏览器里免费玩心理恐怖视觉小说。Nevergrad 以校园恋爱开场，逐渐转为悬疑惊悚，支持简体中文。',
+        intro: '好的心理恐怖视觉小说，靠的不只是突然吓你一跳。Nevergrad 从安静的校园恋爱开始，让重复、记忆和被注视的感觉一点点把世界变得不对劲。',
+        angleTitle: '为什么它算得上心理恐怖',
+        angle: ['开头像一段安全的校园恋爱，不安却在悄悄变浓。', '记忆、重复与观察，构成恐怖的核心。', '恐惧随着选择、记录和校园日常层层累积。']
       }
     }
   }
@@ -507,7 +577,7 @@ function urlFor(page) {
 
 function buildAlternates(cluster, currentLang) {
   const links = Object.entries(cluster.pages)
-    .map(([lang, page]) => `  <link rel="alternate" hreflang="${lang}" href="${urlFor(page)}">`);
+    .map(([lang, page]) => `  <link rel="alternate" hreflang="${tagOf(lang)}" href="${urlFor(page)}">`);
   links.push(`  <link rel="alternate" hreflang="x-default" href="${urlFor(cluster.pages.en || cluster.pages[currentLang])}">`);
   return links.join('\n');
 }
@@ -531,11 +601,11 @@ function faqDetails(faqs) {
 function languageLinks(cluster, currentLang, label) {
   const links = Object.entries(cluster.pages)
     .filter(([lang]) => lang !== currentLang)
-    .map(([lang, page]) => `<a href="/seo/${page.slug}" hreflang="${lang}">${lang.toUpperCase()}</a>`);
+    .map(([lang, page]) => `<a href="/seo/${page.slug}" hreflang="${tagOf(lang)}" lang="${tagOf(lang)}">${lang.toUpperCase()}</a>`);
   return `<span>${escapeHtml(label)}:</span> ${links.join(' · ')}`;
 }
 
-function structuredData(langData, page) {
+function structuredData(langData, page, lang) {
   const faq = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -550,11 +620,13 @@ function structuredData(langData, page) {
         operatingSystem: 'Any',
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
         url: SITE,
+        inLanguage: tagOf(lang),
         image: `${SITE}/nevergrad_link.png`,
         author: { '@type': 'Organization', name: 'Archerlab' }
       },
       {
         '@type': 'FAQPage',
+        inLanguage: tagOf(lang),
         mainEntity: langData.faqs.map(([q, a]) => ({
           '@type': 'Question',
           name: q,
@@ -574,7 +646,7 @@ function renderPage(cluster, lang, page) {
   return `<!DOCTYPE html>
 <html lang="${langData.htmlLang}">
 <head>
-  <script src="../assets/js/error-reporter.js?v=20260801-optional-analytics-filter"></script>
+  <script src="../assets/js/error-reporter.js?v=20260913-stylesheet-recovery"></script>
   <meta charset="UTF-8">
   <meta http-equiv="origin-trial" content="${ORIGIN_TRIAL_TOKEN}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -588,6 +660,7 @@ ${buildAlternates(cluster, lang)}
   <meta property="og:type" content="website">
   <meta property="og:image" content="${SITE}/nevergrad_link.png">
   <meta property="og:site_name" content="Nevergrad">
+  <meta property="og:locale" content="${OG_LOCALES[lang]}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(page.title)}">
   <meta name="twitter:description" content="${escapeHtml(page.meta)}">
@@ -599,6 +672,7 @@ ${buildAlternates(cluster, lang)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans KR","Noto Sans JP","Noto Sans",sans-serif;line-height:1.65;color:#201e2b;background:#fff7fa;min-height:100vh}
+html[lang="zh-CN"] body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif}
 .wrap{max-width:800px;margin:0 auto;padding:34px 20px 84px}
 header{padding:26px 0 12px;text-align:center}
 .eyebrow{font-size:13px;font-weight:700;letter-spacing:0;text-transform:uppercase;color:#8d1b43;margin-bottom:10px}
@@ -623,7 +697,7 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #f1d4df;text-align:
 .langs a{color:#8d1b43;text-decoration:none;margin:0 4px;font-weight:700}
 @media(max-width:680px){h1{font-size:27px}.grid{grid-template-columns:1fr}.wrap{padding-left:18px;padding-right:18px}.cta{font-size:16px;padding:12px 24px}}
   </style>
-  <script type="application/ld+json">${structuredData(langData, page)}</script>
+  <script type="application/ld+json">${structuredData(langData, page, lang)}</script>
 <script src="../assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
 </head>
 <body>

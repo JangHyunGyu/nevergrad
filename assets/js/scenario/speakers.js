@@ -202,6 +202,34 @@ var NEVERGRAD_SPEAKER_NAMES = {
         "girl_student_b": "Girl student B",
         "boy_next_to_me": "Boy next to me",
         "window_girl": "Garota da janela"
+    },
+    "zh": {
+        "me": "我",
+        "unknown": NEVERGRAD_TEXT_MARKERS.unknownName("zh"),
+        "school_broadcast": "[校内广播]",
+        "eunsu_full": "朴恩秀",
+        "eunsu": "恩秀",
+        "riin_full": "姜莉仁",
+        "riin": "莉仁",
+        "sea_full": "韩世雅",
+        "sea": "世雅",
+        "yuna_full": "崔由娜",
+        "yuna": "由娜",
+        "seolhwa_full": "李雪花",
+        "seolhwa": "雪花",
+        "classmate_a": "同学A",
+        "classmate_b": "同学B",
+        "student": "学生",
+        "student_a": "学生A",
+        "student_b": "学生B",
+        "boy": "男生",
+        "girl": "女生",
+        "boy_student": "男生",
+        "girl_student": "女生",
+        "girl_student_a": "女生A",
+        "girl_student_b": "女生B",
+        "boy_next_to_me": "邻座的男生",
+        "window_girl": "窗边的女生"
     }
 };
 

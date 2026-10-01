@@ -131,7 +131,8 @@ class I18nManager {
             es: { msg: 'No se pudo cargar parte del texto. Revisa tu conexión.', btn: 'Reintentar' },
             fr: { msg: 'Une partie du texte n’a pas pu être chargée. Vérifiez votre connexion.', btn: 'Réessayer' },
             de: { msg: 'Einige Texte konnten nicht geladen werden. Prüfe deine Verbindung.', btn: 'Erneut versuchen' },
-            pt: { msg: 'Não foi possível carregar parte do texto. Verifique sua conexão.', btn: 'Tentar novamente' }
+            pt: { msg: 'Não foi possível carregar parte do texto. Verifique sua conexão.', btn: 'Tentar novamente' },
+            zh: { msg: '部分台词加载失败。请检查网络连接。', btn: '重试' }
         }[this.currentLang] || { msg: 'Some text failed to load.', btn: 'Retry' };
     }
 
@@ -207,7 +208,8 @@ class I18nManager {
     static DEFAULT_PLAYER_NAME = {
         ko: "전학생", en: "Transfer Student", ja: "転校生",
         es: "Estudiante", fr: "Nouvel Élève", de: "Schüler",
-        pt: "Estudante transferido"
+        pt: "Estudante transferido",
+        zh: "转学生"
     };
 
     /**
@@ -238,7 +240,8 @@ class I18nManager {
         es: { label: "Español", flag: "🇪🇸" },
         fr: { label: "Français", flag: "🇫🇷" },
         de: { label: "Deutsch", flag: "🇩🇪" },
-        pt: { label: "Português (Brasil)", flag: "🇧🇷" }
+        pt: { label: "Português (Brasil)", flag: "🇧🇷" },
+        zh: { label: "简体中文", flag: "🇨🇳" }
     };
 
     /**
@@ -468,6 +471,38 @@ class I18nManager {
                 evening:     "{time}... está escurecendo. A escola fica silenciosa a esta hora.",
                 night:       "{time}... está tarde. Não tem medo de ficar aqui sozinho?"
             }
+        },
+        zh: {
+            title: "无法毕业的教室", subtitle: "五天的记录",
+            metaTitle: "Nevergrad - 无法毕业的教室",
+            metaDesc: "转学第一天，一切都完美得过了头。",
+            newGame: "新游戏", continue: "继续", gallery: "图鉴", archiveServer: "研究所服务器",
+            namePrompt: "你的名字是？", namePlaceholder: "请输入名字", start: "开始",
+            save: "保存", load: "读取", settings: "设置", toTitle: "返回标题", resume: "返回游戏",
+            menu: "菜单", close: "关闭", advanceDialogue: "推进对话", backlogTitle: "对话记录",
+            settingsBgm: "BGM 音量", settingsSfx: "音效音量", settingsTextSpeed: "文字速度",
+            settingsFullscreen: "全屏", settingsReset: "重置", settingsOn: "ON", settingsOff: "OFF",
+            ftPlaceholder: "请输入对话……", ftSend: "发送",
+            dayFormat: "第{day}天 - {slot}",
+            slots: { morning: "早上", lunch: "午休", afterschool: "放学后", night: "夜晚" },
+            galleryTitle: "结局图鉴", galleryBack: "返回", galleryProgress: "达成率",
+            saveComplete: "保存完成", loadFailed: "无法读取存档数据。",
+            slotAuto: "AUTO", slotEmpty: "空存档位", slotOldFormat: "旧存档",
+            slotOverwrite: "要覆盖吗？", slotYes: "是", slotNo: "否",
+            binauralActivated: "🎧 双耳模式 —— 建议佩戴耳机",
+            latenightAlone: "这个时间还醒着的，只有我吗。",
+            headphoneHint: "戴上耳机的话，应该能听得更清楚。",
+            timeDialogue: {
+                lateNight:   "现在是{time}。你到这个时间还醒着？",
+                dawn:        "凌晨{time}。你在这里待了一整夜？何必做到这一步？",
+                morning:     "{time}。早上了呢。正好是该上课的时间。",
+                lateMorning: "{time}。不是上课时间吗？你在这里没关系吗？",
+                noon:        "{time}。午休时间了。吃过饭了吗？",
+                afternoon:   "{time}。下午了呢。离放学没多久了。",
+                sunset:      "{time}。太阳快下山了。你要留在学校吗？",
+                evening:     "{time}。天黑了呢。学校快要安静下来了。",
+                night:       "{time}。很晚了呢。你要一个人留在这里吗？"
+            }
         }
     };
 
@@ -550,6 +585,15 @@ class I18nManager {
             seolhwa: "Lee Seolhwa",
             me: "Eu",
             unknown: NEVERGRAD_TEXT_MARKERS.unknownName("pt")
+        },
+        zh: {
+            eunsu: "\u73ed\u4e3b\u4efb",
+            riin: "\u4fdd\u5065\u8001\u5e08",
+            sea: "\u97e9\u4e16\u96c5",
+            yuna: "\u5d14\u7531\u5a1c",
+            seolhwa: "\u674e\u96ea\u82b1",
+            me: "\u6211",
+            unknown: NEVERGRAD_TEXT_MARKERS.unknownName("zh")
         }
     };
 
@@ -630,6 +674,16 @@ class I18nManager {
                 riin: "Confianca",
                 yuna: "Afinidade",
                 seolhwa: "Sincronia"
+            }
+        },
+        zh: {
+            romance: "\u597d\u611f\u5ea6",
+            thriller: {
+                eunsu: "\u5371\u9669\u5ea6",
+                sea: "\u6267\u7740\u5ea6",
+                riin: "\u4fe1\u8d56\u5ea6",
+                yuna: "\u597d\u611f\u5ea6",
+                seolhwa: "\u540c\u6b65\u7387"
             }
         }
     };

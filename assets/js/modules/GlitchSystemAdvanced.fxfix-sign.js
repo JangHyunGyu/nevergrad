@@ -25,7 +25,8 @@
             es: 'Firma',
             fr: 'Signature',
             de: 'Unterschrift',
-            pt: 'Assinatura'
+            pt: 'Assinatura',
+            zh: '签名'
         };
         label.textContent = labels[lang] || labels.en;
 
@@ -38,7 +39,8 @@
             es: 'Firma sobre la línea con el dedo o el ratón',
             fr: 'Signez sur la ligne avec le doigt ou la souris',
             de: 'Unterschreiben Sie auf der Linie mit Finger oder Maus',
-            pt: 'Assine sobre a linha com o dedo ou o mouse'
+            pt: 'Assine sobre a linha com o dedo ou o mouse',
+            zh: '请用手指或鼠标在下方的线上签名'
         };
         const baseHint = hintTexts[lang] || hintTexts.en;
         hint.textContent = baseHint;

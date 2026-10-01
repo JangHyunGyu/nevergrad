@@ -474,6 +474,26 @@ class GlitchSystemAdvanced {
                 seamFound: 'O compensado do piso está levantado por uma unha.',
                 cameraFound: 'Há uma câmera escondida sob o fundo falso.',
                 lockerComplete: 'Ligar a câmera'
+            },
+            zh: {
+                player: '我',
+                previous: '上一张照片',
+                next: '下一张照片',
+                photo: '照片',
+                photoHint: '点击照片，或左右滑动，全部看一遍。没看到最后一张之前，放不下相机。',
+                photoDoneHint: '所有照片都看完了。',
+                photoComplete: '放下相机',
+                lockerTitle: '由娜的储物柜',
+                lockerHint: '点按可疑的地方进行调查。',
+                dust: '积满灰尘的储物柜',
+                clean: '擦过的储物柜',
+                seam: '翘起的底板',
+                camera: '隐藏的相机',
+                dustFound: '旁边的储物柜上，灰尘原封不动。',
+                cleanFound: '只有由娜的储物柜，留着最近擦拭的痕迹。',
+                seamFound: '地板的胶合板翘起了一片指甲的厚度。',
+                cameraFound: '从双层底板里面取出了相机。',
+                lockerComplete: '打开相机'
             }
         };
         return map[lang] || map.en;
@@ -528,7 +548,21 @@ class GlitchSystemAdvanced {
             es: romanizedNames,
             fr: romanizedNames,
             de: romanizedNames,
-            pt: romanizedNames
+            pt: romanizedNames,
+            zh: {
+                1: '金道镇',
+                2: '李俊瑞',
+                3: '朴瑞镇',
+                4: '郑夏律',
+                5: '姜敏赫',
+                6: '尹宰源',
+                7: '金泰浩',
+                8: '崔时雨',
+                9: '韩志浩',
+                10: '宋艺俊',
+                11: '吴泰贤',
+                12: '林瑞律'
+            }
         };
         const copyByLang = {
             ko: {
@@ -676,6 +710,27 @@ class GlitchSystemAdvanced {
                     'O olhar está voltado para a CCTV.',
                     'Sorrindo, mas com as mãos rígidas.',
                     'Até a dobra da gola do uniforme coincide.'
+                ]
+            },
+            zh: {
+                titleYuna: 'YUNA_CAM / 转学生',
+                titleDefault: '相机胶卷',
+                gate: '校门',
+                currentTag: '昨天早上 / 校门',
+                currentNote: '正在观察中。',
+                notes: [
+                    '黑色短发。新校服。',
+                    '眼镜。同样的姿势。',
+                    '棕色头发。同样的眼睛。',
+                    '只有发色不一样。',
+                    '嘴角伤疤的位置一模一样。',
+                    '只有名牌换了。',
+                    '疲惫的脸。眼睑下方凹陷。',
+                    '后口袋里折起来的便条。',
+                    '认出了相机的表情。',
+                    '视线朝向CCTV。',
+                    '在笑，手却僵着。',
+                    '连校服领子的折痕都一样。'
                 ]
             }
         };
@@ -1261,7 +1316,8 @@ class GlitchSystemAdvanced {
                     es: '...Corre',
                     fr: '...Fuis',
                     de: '...Lauf',
-                    pt: '...Corra'
+                    pt: '...Corra',
+                    zh: '快逃。'
                 }), 20, 15, 2500);
                 await this._sleep(800);
                 this.showGhostText(this._pickLocalized({
@@ -1271,7 +1327,8 @@ class GlitchSystemAdvanced {
                     es: 'Sal de aquí',
                     fr: "Sors d'ici",
                     de: 'Raus hier',
-                    pt: 'Saia daqui'
+                    pt: 'Saia daqui',
+                    zh: '离开这里'
                 }), 75, 25, 2000);
                 await this._sleep(1200);
                 this.showGhostText(this._pickLocalized({
@@ -1281,7 +1338,8 @@ class GlitchSystemAdvanced {
                     es: 'No lo bebas',
                     fr: 'Ne bois pas',
                     de: 'Trink es nicht',
-                    pt: 'Não beba'
+                    pt: 'Não beba',
+                    zh: '别喝'
                 }), 30, 70, 1800);
 
                 // 노이즈 플래시
@@ -1358,7 +1416,8 @@ class GlitchSystemAdvanced {
                     es: 'El aula sin graduación',
                     fr: 'La classe sans diplôme',
                     de: 'Das Klassenzimmer ohne Abschluss',
-                    pt: 'A sala sem formatura'
+                    pt: 'A sala sem formatura',
+                    zh: '无法毕业的教室'
                 }), 50, 20, 4000);
                 this.showGhostText(this._pickLocalized({
                     ko: '도망칠 수 없어',
@@ -1367,7 +1426,8 @@ class GlitchSystemAdvanced {
                     es: 'No puedes huir',
                     fr: 'Tu ne peux pas fuir',
                     de: 'Du kannst nicht weglaufen',
-                    pt: 'Você não pode fugir'
+                    pt: 'Você não pode fugir',
+                    zh: '你逃不掉的'
                 }), 30, 50, 3000);
                 this.showGhostText(this._pickLocalized({
                     ko: '{name}, 돌아와',
@@ -1376,7 +1436,8 @@ class GlitchSystemAdvanced {
                     es: '{name}, vuelve',
                     fr: '{name}, reviens',
                     de: '{name}, komm zurück',
-                    pt: '{name}, volte'
+                    pt: '{name}, volte',
+                    zh: '{name}，回来'
                 }), 70, 40, 3500);
 
                 await this.showHeavyGlitch(2000);
@@ -1462,7 +1523,8 @@ class GlitchSystemAdvanced {
                 es: 'Afinidad',
                 fr: 'Affinité',
                 de: 'Zuneigung',
-                pt: 'Afinidade'
+                pt: 'Afinidade',
+                zh: '好感度'
             });
     }
 
@@ -1475,7 +1537,8 @@ class GlitchSystemAdvanced {
                 es: 'Peligro',
                 fr: 'Danger',
                 de: 'Gefahr',
-                pt: 'Perigo'
+                pt: 'Perigo',
+                zh: '危险度'
             });
     }
 
@@ -1529,7 +1592,21 @@ class GlitchSystemAdvanced {
             es: romanizedNames,
             fr: romanizedNames,
             de: romanizedNames,
-            pt: romanizedNames
+            pt: romanizedNames,
+            zh: {
+                1: '金道镇',
+                2: '李俊瑞',
+                3: '朴瑞镇',
+                4: '郑夏律',
+                5: '姜敏赫',
+                6: '尹宰源',
+                7: '金泰浩',
+                8: '崔时雨',
+                9: '韩志浩',
+                10: '宋艺俊',
+                11: '吴泰贤',
+                12: '林瑞律'
+            }
         };
         const names = namesByLang[this._lang()] || namesByLang.en;
         return names[slotId] || fallback;
@@ -1550,7 +1627,8 @@ class GlitchSystemAdvanced {
                 es: 'Graduado',
                 fr: 'Diplômé',
                 de: 'Abgeschlossen',
-                pt: 'Formado'
+                pt: 'Formado',
+                zh: '已毕业'
             },
             active: {
                 en: 'Active',
@@ -1558,7 +1636,8 @@ class GlitchSystemAdvanced {
                 es: 'En curso',
                 fr: 'En cours',
                 de: 'Aktiv',
-                pt: 'Em andamento'
+                pt: 'Em andamento',
+                zh: '进行中'
             },
             corrupted: {
                 en: '██ADVERSE██ external contact, escape attempt',
@@ -1566,7 +1645,8 @@ class GlitchSystemAdvanced {
                 es: '██ADVERSO██ contacto externo, intento de fuga',
                 fr: '██ANOMALIE██ contact externe, tentative de fuite',
                 de: '██ABWEICHUNG██ externer Kontakt, Fluchtversuch',
-                pt: '██ADVERSO██ contato externo, tentativa de fuga'
+                pt: '██ADVERSO██ contato externo, tentativa de fuga',
+                zh: '██异常██ 外部接触，尝试逃脱'
             },
             failed9: {
                 en: 'Early detection, forced processing',
@@ -1574,7 +1654,8 @@ class GlitchSystemAdvanced {
                 es: 'Detección temprana, procesamiento forzado',
                 fr: 'Détection précoce, traitement forcé',
                 de: 'Frühe Entdeckung, Zwangsverarbeitung',
-                pt: 'Detecção precoce, processamento forçado'
+                pt: 'Detecção precoce, processamento forçado',
+                zh: '过早暴露，强制处理'
             },
             failed: {
                 en: 'Escape attempt, failed',
@@ -1582,7 +1663,8 @@ class GlitchSystemAdvanced {
                 es: 'Intento de fuga, fallido',
                 fr: 'Tentative de fuite, échec',
                 de: 'Fluchtversuch, gescheitert',
-                pt: 'Tentativa de fuga, falhou'
+                pt: 'Tentativa de fuga, falhou',
+                zh: '尝试逃脱，失败'
             },
             processed: {
                 en: 'Processed',
@@ -1590,7 +1672,8 @@ class GlitchSystemAdvanced {
                 es: 'Procesado',
                 fr: 'Traité',
                 de: 'Verarbeitet',
-                pt: 'Processado'
+                pt: 'Processado',
+                zh: '处理完毕'
             }
         };
         if (statusClass === 'graduated') return this._pickLocalized(status.graduated);
@@ -1614,7 +1697,8 @@ class GlitchSystemAdvanced {
                 es: 'Intento de desviación del Día 4',
                 fr: 'Tentative de déviation du jour 4',
                 de: 'Abweichungsversuch an Tag 4',
-                pt: 'Tentativa de desvio no Dia 4'
+                pt: 'Tentativa de desvio no Dia 4',
+                zh: 'Day 4 偏离尝试'
             });
         }
         if (note.includes('이설화')) {
@@ -1624,7 +1708,8 @@ class GlitchSystemAdvanced {
                 es: 'Contacto externo: Lee Seolhwa',
                 fr: 'Contact externe : Lee Seolhwa',
                 de: 'Externer Kontakt: Lee Seolhwa',
-                pt: 'Contato externo: Lee Seolhwa'
+                pt: 'Contato externo: Lee Seolhwa',
+                zh: '外部接触：李雪花'
             });
         }
         if (note.includes('Day 3')) {
@@ -1634,7 +1719,8 @@ class GlitchSystemAdvanced {
                 es: 'Detección temprana del Día 3',
                 fr: 'Détection précoce du jour 3',
                 de: 'Frühe Entdeckung an Tag 3',
-                pt: 'Detecção precoce no Dia 3'
+                pt: 'Detecção precoce no Dia 3',
+                zh: 'Day 3 过早暴露'
             });
         }
         return note;
@@ -1652,13 +1738,13 @@ class GlitchSystemAdvanced {
 
     _localizedEndingCreditStatus(ending, fallbackSlot) {
         const map = {
-            TRUE: { ko: '졸업 ✓', en: 'Graduated ✓', ja: '卒業 ✓', es: 'Graduado ✓', fr: 'Diplômé ✓', de: 'Abgeschlossen ✓', pt: 'Formado ✓', c: 'graduated' },
-            ESCAPE: { ko: '실종', en: 'Missing', ja: '失踪', es: 'Desaparecido', fr: 'Disparu', de: 'Vermisst', pt: 'Desaparecido', c: 'missing' },
-            RESIST: { ko: '동행', en: 'Escaped together', ja: '同行', es: 'Escape conjunto', fr: 'Évadés ensemble', de: 'Gemeinsam entkommen', pt: 'Fuga conjunta', c: 'escaped' },
-            CAGE: { ko: '잔류', en: 'Contained', ja: '残留', es: 'Contenido', fr: 'Confiné', de: 'Eingeschlossen', pt: 'Contido', c: 'contained' },
-            FORGET: { ko: '처리 완료', en: 'Processed', ja: '処理完了', es: 'Procesado', fr: 'Traité', de: 'Verarbeitet', pt: 'Processado', c: 'terminated' },
-            GHOST: { ko: '소실', en: 'Lost', ja: '消失', es: 'Perdido', fr: 'Perdu', de: 'Verloren', pt: 'Perdido', c: 'missing' },
-            COMPLICIT: { ko: '담당자로 전환', en: 'Converted - handler', ja: '転換 - 担当者', es: 'Convertido - responsable', fr: 'Converti - responsable', de: 'Umgewandelt - Betreuer', pt: 'Convertido - responsável', c: 'converted' }
+            TRUE: { ko: '졸업 ✓', en: 'Graduated ✓', ja: '卒業 ✓', es: 'Graduado ✓', fr: 'Diplômé ✓', de: 'Abgeschlossen ✓', pt: 'Formado ✓', zh: '毕业 ✓', c: 'graduated' },
+            ESCAPE: { ko: '실종', en: 'Missing', ja: '失踪', es: 'Desaparecido', fr: 'Disparu', de: 'Vermisst', pt: 'Desaparecido', zh: '失踪', c: 'missing' },
+            RESIST: { ko: '동행', en: 'Escaped together', ja: '同行', es: 'Escape conjunto', fr: 'Évadés ensemble', de: 'Gemeinsam entkommen', pt: 'Fuga conjunta', zh: '同行', c: 'escaped' },
+            CAGE: { ko: '잔류', en: 'Contained', ja: '残留', es: 'Contenido', fr: 'Confiné', de: 'Eingeschlossen', pt: 'Contido', zh: '滞留', c: 'contained' },
+            FORGET: { ko: '처리 완료', en: 'Processed', ja: '処理完了', es: 'Procesado', fr: 'Traité', de: 'Verarbeitet', pt: 'Processado', zh: '处理完毕', c: 'terminated' },
+            GHOST: { ko: '소실', en: 'Lost', ja: '消失', es: 'Perdido', fr: 'Perdu', de: 'Verloren', pt: 'Perdido', zh: '消失', c: 'missing' },
+            COMPLICIT: { ko: '담당자로 전환', en: 'Converted - handler', ja: '転換 - 担当者', es: 'Convertido - responsable', fr: 'Converti - responsable', de: 'Umgewandelt - Betreuer', pt: 'Convertido - responsável', zh: '转为负责人', c: 'converted' }
         };
         const entry = map[ending];
         if (!entry) return { s: fallbackSlot.status, c: fallbackSlot.statusClass };
@@ -1674,7 +1760,8 @@ class GlitchSystemAdvanced {
                 es: 'Estos datos están dañados.',
                 fr: 'Ces données sont corrompues.',
                 de: 'Diese Daten sind beschädigt.',
-                pt: 'Estes dados estão corrompidos.'
+                pt: 'Estes dados estão corrompidos.',
+                zh: '该数据已损坏。'
             });
         }
         if (slot.statusClass === 'active') {
@@ -1685,7 +1772,8 @@ class GlitchSystemAdvanced {
                 es: 'En curso...',
                 fr: 'En cours...',
                 de: 'In Bearbeitung...',
-                pt: 'Em andamento...'
+                pt: 'Em andamento...',
+                zh: '进行中……'
             });
         }
         return this._pickLocalized({
@@ -1695,7 +1783,8 @@ class GlitchSystemAdvanced {
             es: 'Permiso denegado.',
             fr: 'Autorisation refusée.',
             de: 'Zugriff verweigert.',
-            pt: 'Permissão negada.'
+            pt: 'Permissão negada.',
+            zh: '没有权限。'
         });
     }
 
@@ -1972,7 +2061,8 @@ class GlitchSystemAdvanced {
                 es: '(los muertos no pueden sobrescribirse)',
                 fr: '(les morts ne peuvent pas \u00eatre \u00e9cras\u00e9s)',
                 de: '(die Toten k\u00f6nnen nicht \u00fcberschrieben werden)',
-                pt: '(os mortos não podem ser sobrescritos)'
+                pt: '(os mortos não podem ser sobrescritos)',
+                zh: '（死者无法被覆盖）'
             };
             sub.textContent = loadSubTexts[lang] || loadSubTexts.en;
         }
@@ -2001,7 +2091,8 @@ class GlitchSystemAdvanced {
                 es: '#14 Ingreso (Load Subject #14)',
                 fr: '#14 Admission (Load Subject #14)',
                 de: '#14 Aufnahme (Load Subject #14)',
-                pt: '#14 Inserção (Load Subject #14)'
+                pt: '#14 Inserção (Load Subject #14)',
+                zh: '#14 受试者投入'
             }),
             ESCAPE: this._pickLocalized({
                 ko: '\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
@@ -2010,7 +2101,8 @@ class GlitchSystemAdvanced {
                 es: '...Nada ha cambiado.',
                 fr: "...Rien n'a changé.",
                 de: '...Nichts hat sich geändert.',
-                pt: '...Nada mudou.'
+                pt: '...Nada mudou.',
+                zh: '……什么都没有改变。'
             }),
             GHOST: this._pickLocalized({
                 ko: '\uC544\uBB34\uAC83\uB3C4 \uBC14\uB00C\uC9C0 \uC54A\uC558\uB2E4.',
@@ -2019,7 +2111,8 @@ class GlitchSystemAdvanced {
                 es: '...Nada ha cambiado.',
                 fr: "...Rien n'a changé.",
                 de: '...Nichts hat sich geändert.',
-                pt: '...Nada mudou.'
+                pt: '...Nada mudou.',
+                zh: '……什么都没有改变。'
             }),
             RESIST: this._pickLocalized({
                 ko: '\uC740\uC218\uB294 \uB5A0\uB0AC\uB2E4. \uC774\uC0AC\uD68C\uB294 \uB0A8\uC558\uB2E4.',
@@ -2028,7 +2121,8 @@ class GlitchSystemAdvanced {
                 es: 'Eunsu se fue. La junta permanece.',
                 fr: 'Eunsu est partie. Le conseil reste.',
                 de: 'Eunsu ist gegangen. Der Vorstand bleibt.',
-                pt: 'Eunsu foi embora. O conselho permanece.'
+                pt: 'Eunsu foi embora. O conselho permanece.',
+                zh: '恩秀老师离开了。理事会还在。'
             }),
             TRUE: this._pickLocalized({
                 ko: '\uB2E4 \uB05D\uB0AC\uB294\uB370.',
@@ -2037,7 +2131,8 @@ class GlitchSystemAdvanced {
                 es: '...Pero ya había terminado.',
                 fr: "...Mais c'était terminé.",
                 de: '...Aber es war vorbei.',
-                pt: '...Mas já tinha acabado.'
+                pt: '...Mas já tinha acabado.',
+                zh: '明明已经结束了。'
             }),
             COMPLICIT: this._pickLocalized({
                 ko: `#14 \uD22C\uC785 \uC2B9\uC778 \u2014 \uB2F4\uB2F9: ${playerName}`,
@@ -2046,7 +2141,8 @@ class GlitchSystemAdvanced {
                 es: `#14 Ingreso aprobado - responsable: ${playerName}`,
                 fr: `#14 Admission approuvée - responsable : ${playerName}`,
                 de: `#14 Aufnahme genehmigt - Betreuer: ${playerName}`,
-                pt: `#14 Inserção aprovada - responsável: ${playerName}`
+                pt: `#14 Inserção aprovada - responsável: ${playerName}`,
+                zh: `#14 投入批准 — 负责人：${playerName}`
             })
         };
 
@@ -2058,7 +2154,8 @@ class GlitchSystemAdvanced {
             es: 'El registro aún no se ha cerrado.',
             fr: "Le dossier n'est pas encore clos.",
             de: 'Der Eintrag ist noch nicht geschlossen.',
-            pt: 'O registro ainda não foi encerrado.'
+            pt: 'O registro ainda não foi encerrado.',
+            zh: '记录还没有结束。'
         });
 
         const flickerText = flickerTexts[lastEnding];
@@ -2216,7 +2313,8 @@ class GlitchSystemAdvanced {
                 es: '...Ya sabes la respuesta.',
                 fr: '...Tu connais déjà la réponse.',
                 de: '...Du kennst die Antwort schon.',
-                pt: '...Você já sabe a resposta.'
+                pt: '...Você já sabe a resposta.',
+                zh: '问多少遍，答案都一样。'
             }),
             'day3_after_riin_choice': this._pickLocalized({
                 ko: '이거 무슨 맛인지 알잖아.',
@@ -2225,7 +2323,8 @@ class GlitchSystemAdvanced {
                 es: 'Sabes a qué sabe esto.',
                 fr: 'Tu sais quel goût ça a.',
                 de: 'Du kennst diesen Geschmack.',
-                pt: 'Você sabe que gosto isso tem.'
+                pt: 'Você sabe que gosto isso tem.',
+                zh: '你知道这是什么味道。'
             }),
             'day5_morning_proposal_timer': this._pickLocalized({
                 ko: '또?',
@@ -2234,7 +2333,8 @@ class GlitchSystemAdvanced {
                 es: '¿Otra vez?',
                 fr: 'Encore ?',
                 de: 'Schon wieder?',
-                pt: 'De novo?'
+                pt: 'De novo?',
+                zh: '又来？'
             })
         };
 
@@ -2277,7 +2377,8 @@ class GlitchSystemAdvanced {
                 es: 'Otra vez',
                 fr: 'Encore',
                 de: 'Wieder',
-                pt: 'De novo'
+                pt: 'De novo',
+                zh: '又'
             }),
             'day1_eunsu_2': this._pickLocalized({
                 ko: '또',
@@ -2286,7 +2387,8 @@ class GlitchSystemAdvanced {
                 es: 'Otra vez',
                 fr: 'Encore',
                 de: 'Wieder',
-                pt: 'De novo'
+                pt: 'De novo',
+                zh: '又'
             }),
             'day1_choco_1': this._pickLocalized({
                 ko: '이번에도',
@@ -2295,7 +2397,8 @@ class GlitchSystemAdvanced {
                 es: 'Esta vez también',
                 fr: 'Cette fois aussi',
                 de: 'Auch diesmal',
-                pt: 'Desta vez também'
+                pt: 'Desta vez também',
+                zh: '这次也是'
             })
         };
 
@@ -2427,7 +2530,8 @@ class GlitchSystemAdvanced {
                 es: '\u2191 Desliza hacia abajo',
                 fr: '\u2191 Glissez vers le bas',
                 de: '\u2191 Nach unten wischen',
-                pt: '\u2191 Deslize para baixo'
+                pt: '\u2191 Deslize para baixo',
+                zh: '\u2191 请从上往下擦拭'
             };
             hint.textContent = hintTexts[lang] || hintTexts.en;
             container.appendChild(hint);
@@ -2637,7 +2741,8 @@ class GlitchSystemAdvanced {
             es: 'Soy la decimotercera cáscara.',
             fr: 'Je suis la treizième coquille.',
             de: 'Ich bin die dreizehnte Hülle.',
-            pt: 'Eu sou a décima terceira casca.'
+            pt: 'Eu sou a décima terceira casca.',
+            zh: '我是第十三个空壳。'
         });
         overlay.appendChild(finalEl);
 
@@ -2673,7 +2778,8 @@ class GlitchSystemAdvanced {
                 es: '...Siento que conozco este camino. ¿Por qué? Es mi primera vez en esta escuela. ...Debo estar cansado.',
                 fr: "...J'ai l'impression de connaître ce chemin. Pourquoi ? C'est ma première fois dans cette école. ...Je dois être fatigué.",
                 de: '...Ich habe das Gefühl, diesen Weg zu kennen. Warum? Ich bin zum ersten Mal an dieser Schule. ...Ich muss müde sein.',
-                pt: '...Sinto que conheço este caminho. Por quê? É minha primeira vez nesta escola. ...Devo estar cansado.'
+                pt: '...Sinto que conheço este caminho. Por quê? É minha primeira vez nesta escola. ...Devo estar cansado.',
+                zh: '明明是第一次来这所学校，这条路怎么会这么眼熟？大概是累了吧。'
             }),
             'day1_hallway_1': this._pickLocalized({
                 ko: '저 웃음, 어디서 본 것 같은데. 아닌가.',
@@ -2682,7 +2788,8 @@ class GlitchSystemAdvanced {
                 es: '...Esa sonrisa. La he visto en algún lugar. ...O tal vez no.',
                 fr: "...Ce sourire. Je l'ai déjà vu quelque part. ...Ou peut-être pas.",
                 de: '...Dieses Lächeln. Ich habe es irgendwo schon gesehen. ...Oder vielleicht nicht.',
-                pt: '...Aquele sorriso. Já vi em algum lugar. ...Ou talvez não.'
+                pt: '...Aquele sorriso. Já vi em algum lugar. ...Ou talvez não.',
+                zh: '那个笑容，好像在哪里见过。又好像没有。'
             }),
             'day2_morning_gate_1': this._pickLocalized({
                 ko: '세아의 움직임이 낯익다. 기분 탓이겠지.',
@@ -2691,7 +2798,8 @@ class GlitchSystemAdvanced {
                 es: '...El movimiento de Sea se siente extrañamente familiar. Debe ser mi imaginación.',
                 fr: "...Le geste de Sea me semble étrangement familier. C'est sûrement mon imagination.",
                 de: '...Seas Bewegung kommt mir seltsam vertraut vor. Das bilde ich mir sicher nur ein.',
-                pt: '...O movimento da Sea parece estranhamente familiar. Deve ser coisa da minha cabeça.'
+                pt: '...O movimento da Sea parece estranhamente familiar. Deve ser coisa da minha cabeça.',
+                zh: '世雅的动作看着眼熟。应该是错觉吧。'
             }),
             'day3_after_riin_drink': this._pickLocalized({
                 ko: '이 맛이 익숙하다. 마셔 본 적도 없는데.',
@@ -2700,7 +2808,8 @@ class GlitchSystemAdvanced {
                 es: '...Este sabor no me resulta desconocido, aunque nunca lo había bebido.',
                 fr: "...Ce goût ne m'est pas inconnu, même si je ne l'ai jamais bu.",
                 de: '...Dieser Geschmack ist mir nicht fremd, obwohl ich es noch nie getrunken habe.',
-                pt: '...Este gosto não é estranho, mesmo eu nunca tendo bebido isto antes.'
+                pt: '...Este gosto não é estranho, mesmo eu nunca tendo bebido isto antes.',
+                zh: '……这个味道很熟悉。明明我从来没喝过。'
             })
         };
     }
@@ -2765,7 +2874,8 @@ class GlitchSystemAdvanced {
                 es: 'Es la segunda vez.',
                 fr: "C'est la deuxième fois.",
                 de: 'Es ist das zweite Mal.',
-                pt: 'É a segunda vez.'
+                pt: 'É a segunda vez.',
+                zh: '\u7b2c\u4e8c\u6b21\u4e86\u3002'
             });
             signArea.appendChild(ghost);
 
@@ -2857,7 +2967,8 @@ class GlitchSystemAdvanced {
             es: 'Firma',
             fr: 'Signature',
             de: 'Unterschrift',
-            pt: 'Assinatura'
+            pt: 'Assinatura',
+            zh: '签名'
         };
         label.textContent = labels[lang] || labels.en;
 
@@ -3018,7 +3129,8 @@ class GlitchSystemAdvanced {
                     es: 'Nombre actual: {name}',
                     fr: 'Nom actuel : {name}',
                     de: 'Aktueller Name: {name}',
-                    pt: 'Nome atual: {name}'
+                    pt: 'Nome atual: {name}',
+                    zh: '\u5f53\u524d\u540d\u5b57\uff1a{name}'
                 }
         );
         const overlayText = overlayTextRaw.replace('{name}', playerName);
@@ -3185,6 +3297,16 @@ class GlitchSystemAdvanced {
                 tracking: "Registro de rastreamento de localização",
                 monitoring: "Monitoramento em tempo real",
                 live: "AO VIVO"
+            },
+            zh: {
+                title: "NEVERGRAD - 受试者管理系统",
+                id: "ID",
+                name: "姓名",
+                status: "状态",
+                note: "备注",
+                tracking: "位置追踪记录",
+                monitoring: "实时监控",
+                live: "LIVE"
             }
         });
         panel.innerHTML = `
@@ -3217,7 +3339,7 @@ class GlitchSystemAdvanced {
                 || ['ADVERSE', 'ADVERSO', 'ANOMALIE', 'ABWEICHUNG', '異常'].some(token => localized.status.includes(token));
             const isActive = sub.statusClass === 'active'
                 || rawStatus.includes('진행')
-                || localized.status === this._pickLocalized({ en: 'Active', ja: '進行中', es: 'En curso', fr: 'En cours', de: 'Aktiv', pt: 'Em andamento' })
+                || localized.status === this._pickLocalized({ en: 'Active', ja: '進行中', es: 'En curso', fr: 'En cours', de: 'Aktiv', pt: 'Em andamento', zh: '进行中' })
                 || isWarning;
             if (isActive) row.classList.add('admin-row-active');
             if (isWarning) row.classList.add('admin-row-warning');

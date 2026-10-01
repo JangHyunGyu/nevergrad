@@ -28,7 +28,8 @@ class GallerySystem {
             es: 'Enfrentaste la verdad y elegiste graduarte.',
             fr: 'Tu as fait face a la verite et choisi de partir.',
             de: 'Du hast die Wahrheit erkannt und den Abschluss gewaehlt.',
-            pt: 'Voce encarou a verdade e escolheu se formar.'
+            pt: 'Voce encarou a verdade e escolheu se formar.',
+            zh: '直面真相之后，毕业了。'
         },
         'RESIST END': {
             ko: '은수와 함께 교실을 나와 순환을 끊었다.',
@@ -37,7 +38,8 @@ class GallerySystem {
             es: 'Resististe hasta el final, pero el aula nunca te soltó.',
             fr: "Tu as resiste jusqu'au bout, mais la classe ne t'a pas libere.",
             de: 'Du hast bis zum Ende Widerstand geleistet, aber das Klassenzimmer liess nicht los.',
-            pt: 'Voce resistiu ate o fim, mas a sala nunca soltou voce.'
+            pt: 'Voce resistiu ate o fim, mas a sala nunca soltou voce.',
+            zh: '和恩秀一起走出教室，切断了循环。'
         },
         'FORGET END': {
             ko: '모든 것을 잊고 열네 번째 등교를 시작했다.',
@@ -46,7 +48,8 @@ class GallerySystem {
             es: 'Lo olvidaste todo y volviste a la rutina.',
             fr: 'Tu as tout oublie et tu es retourne a ta vie ordinaire.',
             de: 'Du hast alles vergessen und bist in den Alltag zurueckgekehrt.',
-            pt: 'Voce esqueceu tudo e voltou aos dias comuns.'
+            pt: 'Voce esqueceu tudo e voltou aos dias comuns.',
+            zh: '忘记了一切，开始了第十四次上学。'
         },
         'CAGE END': {
             ko: '행복한 교실. 영원히.',
@@ -55,7 +58,8 @@ class GallerySystem {
             es: 'Un aula feliz. Para siempre.',
             fr: 'Une classe heureuse. Pour toujours.',
             de: 'Ein glueckliches Klassenzimmer. Fuer immer.',
-            pt: 'Uma sala de aula feliz. Para sempre.'
+            pt: 'Uma sala de aula feliz. Para sempre.',
+            zh: '幸福的教室。永远。'
         },
         'GHOST END': {
             ko: '학교를 빠져나왔지만 교실에는 무언가 남았다.',
@@ -64,7 +68,8 @@ class GallerySystem {
             es: 'Te fuiste, pero algo se quedó en el aula.',
             fr: 'Tu es parti, mais quelque chose est reste dans la classe.',
             de: 'Du bist gegangen, aber etwas blieb im Klassenzimmer zurueck.',
-            pt: 'Voce foi embora, mas algo ficou na sala de aula.'
+            pt: 'Voce foi embora, mas algo ficou na sala de aula.',
+            zh: '你离开了学校，但教室里留下了什么。'
         },
         'ESCAPE END': {
             ko: '탈출했지만 증거는 충분하지 않았다.',
@@ -73,7 +78,8 @@ class GallerySystem {
             es: 'Escapaste. Pero hubo un precio.',
             fr: "Tu t'es echappe. Mais il y a eu un prix.",
             de: 'Du bist entkommen. Aber es hatte seinen Preis.',
-            pt: 'Voce escapou. Mas houve um preco.'
+            pt: 'Voce escapou. Mas houve um preco.',
+            zh: '逃出来了，但证据并不充分。'
         },
         'COMPLICIT END': {
             ko: '공범이 되었다.',
@@ -82,7 +88,8 @@ class GallerySystem {
             es: 'Te convertiste en cómplice.',
             fr: 'Tu es devenu complice.',
             de: 'Du wurdest zum Komplizen.',
-            pt: 'Voce se tornou cumplice.'
+            pt: 'Voce se tornou cumplice.',
+            zh: '你成了共犯。'
         }
     };
 
@@ -205,6 +212,23 @@ class GallerySystem {
             artist: 'Nevergrad OST',
             expressions: 'Expressões',
             close: 'Fechar'
+        },
+        zh: {
+            title: '图鉴',
+            progress: '解锁率',
+            back: '返回',
+            tabs: { endings: '结局', cg: '事件CG', music: '音乐', characters: '表情' },
+            locked: '未解锁',
+            lockedEnding: '尚未抵达的结局',
+            lockedCg: '在游戏中看到该事件CG后解锁。',
+            lockedMusic: '在游戏中播放该BGM后解锁。',
+            lockedCharacter: '在游戏中遇到该人物后解锁。',
+            lockedExpression: '在游戏中看到该表情后解锁。',
+            play: '播放',
+            stop: '停止',
+            artist: 'Nevergrad OST',
+            expressions: '表情',
+            close: '关闭'
         }
     };
 

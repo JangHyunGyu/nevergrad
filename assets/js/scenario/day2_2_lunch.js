@@ -155,7 +155,8 @@ Object.assign(SCENARIO[2], {
                 es: "...Pero yo no tome esta foto.",
                 fr: "...Pourtant, ce n'est pas moi qui ai pris cette photo.",
                 de: "...Dieses Foto habe ich aber nicht gemacht.",
-                pt: "...Mas nao fui eu que tirei esta foto."
+                pt: "...Mas nao fui eu que tirei esta foto.",
+                zh: "这不是我拍的吧？"
             },
             ghostDuration: 900,
             ghostY: 65

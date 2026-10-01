@@ -495,7 +495,8 @@ Object.assign(SCENARIO[3], {
                 es: "No mires todavia.",
                 fr: "Ne regarde pas encore.",
                 de: "Sieh noch nicht hin.",
-                pt: "Nao olhe ainda."
+                pt: "Nao olhe ainda.",
+                zh: "现在还不要看。"
             },
             silence: true,
             panSFX: "sfx_whisper_seolhwa",

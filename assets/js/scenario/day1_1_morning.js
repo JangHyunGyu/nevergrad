@@ -181,7 +181,8 @@ Object.assign(SCENARIO[1], {
                 es: "Cumplimiento",
                 fr: "Conformité",
                 de: "Konformität",
-                pt: "Conformidade"
+                pt: "Conformidade",
+                zh: "顺应度"
             },
             ghostX: 84,
             ghostY: 17,
@@ -329,7 +330,8 @@ Object.assign(SCENARIO[1], {
                 es: "...Tu me ensenaste eso. En el ciclo anterior.",
                 fr: "...Tu me l'as appris. Dans le cycle precedent.",
                 de: "...Das hast du mir beigebracht. Im vorherigen Durchlauf.",
-                pt: "...Voce me ensinou isso. No ciclo anterior."
+                pt: "...Voce me ensinou isso. No ciclo anterior.",
+                zh: "上一个周期里，是你教我的呀。"
             },
             ghostDuration: 500
         },

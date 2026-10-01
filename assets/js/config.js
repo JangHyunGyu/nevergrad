@@ -13,7 +13,8 @@ const NEVERGRAD_TEXT_MARKERS = (typeof globalThis !== 'undefined' && globalThis.
             es: 'Desconocido',
             fr: 'Inconnu',
             de: 'Unbekannt',
-            pt: 'Desconhecido'
+            pt: 'Desconhecido',
+            zh: '未知'
         };
         return labels[lang] || labels.en;
     },
@@ -26,7 +27,8 @@ const NEVERGRAD_TEXT_MARKERS = (typeof globalThis !== 'undefined' && globalThis.
             es: 'Bloqueado',
             fr: 'Verrouillé',
             de: 'Gesperrt',
-            pt: 'Bloqueado'
+            pt: 'Bloqueado',
+            zh: '未解锁'
         };
         return labels[lang] || labels.en;
     },
@@ -39,7 +41,8 @@ const NEVERGRAD_TEXT_MARKERS = (typeof globalThis !== 'undefined' && globalThis.
             es: 'Registro dañado',
             fr: 'Dossier corrompu',
             de: 'Datensatz beschädigt',
-            pt: 'Registro corrompido'
+            pt: 'Registro corrompido',
+            zh: '记录损坏'
         };
         return labels[lang] || labels.en;
     },

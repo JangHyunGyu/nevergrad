@@ -287,6 +287,11 @@ class DeviceGimmickSystem {
                 long: `Você hesitou por ${sec} segundos... pensou tanto assim?`,
                 medium: `${sec} segundos... foi uma boa pausa.`,
                 short: `Você hesitou um instante, não foi? Eu vi.`
+            },
+            zh: {
+                long: `你发了${sec}秒的呆呢。在想什么？`,
+                medium: `${sec}秒。发呆挺久的嘛。`,
+                short: `刚才愣了一下吧？我都看见了。`
             }
         });
 
@@ -627,6 +632,15 @@ class DeviceGimmickSystem {
                 full: `Bateria ${level}%... você veio preparado. Pretende ficar um tempo?`,
                 high: `Bateria ${level}%. Tem bastante. Pode ir com calma.`,
                 default: `Bateria ${level}%... eu sei o estado do seu telefone.`
+            },
+            zh: {
+                critical: `电量${level}%。马上就要关机了。那我也会消失吗？`,
+                low: `电量只剩${level}%了。不用赶紧吗？`,
+                uneasy: `电量${level}%。没剩多少了。`,
+                mid: `电量${level}%。还有时间。大概吧。`,
+                full: `电量${level}%。你是充好电才来的啊。打算待很久吗？`,
+                high: `电量${level}%。还很充裕。慢慢来也没关系。`,
+                default: `电量${level}%。你手机是什么状态，我都知道。`
             }
         });
 
@@ -673,7 +687,9 @@ class DeviceGimmickSystem {
             ? `${hour}시 ${minute}분`
             : (lang === 'ja')
                 ? `${hour}時${minute}分`
-                : `${hour}:${pad2(minute)}`;
+                : (lang === 'zh')
+                    ? `${hour}点${pad2(minute)}分`
+                    : `${hour}:${pad2(minute)}`;
 
         const bucket =
             (hour >= 0 && hour < 4) ? 'lateNight' :
@@ -742,7 +758,8 @@ class DeviceGimmickSystem {
             es: { ios: "Alerta de emergencia", android: "Alerta de emergencia", now: "ahora" },
             fr: { ios: "Alerte d'urgence", android: "Alerte d'urgence", now: "maintenant" },
             de: { ios: "Notfallwarnung", android: "Notfallwarnung", now: "jetzt" },
-            pt: { ios: "Alerta de emergência", android: "Alerta de emergência", now: "agora" }
+            pt: { ios: "Alerta de emergência", android: "Alerta de emergência", now: "agora" },
+            zh: { ios: "紧急通知", android: "紧急警报", now: "现在" }
         });
 
         alert.innerHTML = `
@@ -825,7 +842,8 @@ class DeviceGimmickSystem {
             es: "[Reiniciando App de Seguridad Hanul...]",
             fr: "[Redemarrage de l'app Securite Hanul...]",
             de: "[Hanul Sicherheits-App wird neu gestartet...]",
-            pt: "[Reiniciando App de Seguranca Hanul...]"
+            pt: "[Reiniciando App de Seguranca Hanul...]",
+            zh: "[学生安全App 重新启动中……]"
         });
         overlay.appendChild(killText);
 
@@ -851,7 +869,8 @@ class DeviceGimmickSystem {
             es: "[App de Seguridad Hanul] Monitoreo activo...",
             fr: "[App Securite Hanul] Surveillance active...",
             de: "[Hanul Sicherheits-App] Uberwachung aktiv...",
-            pt: "[App de Seguranca Hanul] Monitoramento ativo..."
+            pt: "[App de Seguranca Hanul] Monitoramento ativo...",
+            zh: "[学生安全App] 监测已启动……"
         });
         const el = document.createElement('div');
         el.className = 'phone-flash-notification';
@@ -1060,7 +1079,8 @@ class DeviceGimmickSystem {
             es: "Gira tu dispositivo",
             fr: "Tournez votre appareil",
             de: "Bitte drehe dein Gerat",
-            pt: "Gire seu dispositivo"
+            pt: "Gire seu dispositivo",
+            zh: "请将屏幕横过来"
         });
 
         const renderPrompt = () => {
@@ -1075,7 +1095,8 @@ class DeviceGimmickSystem {
                 es: "¿Adónde miras?<br>Sujétalo bien otra vez.",
                 fr: "Ou regardes-tu ?<br>Tiens-le droit.",
                 de: "Wohin schaust du?<br>Halte es wieder gerade.",
-                pt: "Para onde voce esta olhando?<br>Segure direito de novo."
+                pt: "Para onde voce esta olhando?<br>Segure direito de novo.",
+                zh: "你在看哪儿？<br>重新拿稳。"
             });
             const seaText = this._pickLocalized({
                 ko: "\ub3c4\ub9dd\uce58\ub824\uace0?<br>\ub098\ub97c \ub450\uace0?",
@@ -1084,7 +1105,8 @@ class DeviceGimmickSystem {
                 es: "¿Intentas huir?<br>¿Dejándome atrás?",
                 fr: "Tu essaies de fuir ?<br>En me laissant ?",
                 de: "Willst du weglaufen?<br>Ohne mich?",
-                pt: "Tentando fugir?<br>Me deixando para tras?"
+                pt: "Tentando fugir?<br>Me deixando para tras?",
+                zh: "想逃？<br>丢下我吗？"
             });
 
             prompt.className = 'rotate-prompt';

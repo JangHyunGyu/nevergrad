@@ -26,7 +26,8 @@
                 es: 'Limpia el vapor con el dedo o el ratón (cualquier dirección)',
                 fr: 'Essuyez la buée avec le doigt ou la souris (toute direction)',
                 de: 'Wischen Sie den Beschlag mit Finger oder Maus (jede Richtung)',
-                pt: 'Limpe o embaçado com o dedo ou o mouse (qualquer direção)'
+                pt: 'Limpe o embaçado com o dedo ou o mouse (qualquer direção)',
+                zh: '请用手指或鼠标擦拭镜子（任意方向）'
             };
             const baseHint = hintTexts[lang] || hintTexts.en;
             hint.textContent = baseHint;

@@ -165,7 +165,8 @@ class GlitchSystem {
             es: 'Peligro',
             fr: 'Danger',
             de: 'Gefahr',
-            pt: 'Perigo'
+            pt: 'Perigo',
+            zh: '危险度'
         });
         statEl.classList.add('stat-revealed');
     }
@@ -457,6 +458,14 @@ class GlitchSystem {
                 allow: 'Permitir sempre',
                 whileUsing: 'Permitir ao usar o app',
                 deny: 'Não permitir'
+            },
+            zh: {
+                appName: '学生安全',
+                title: '是否允许“{appName}”App访问此设备的位置信息？',
+                desc: '此App在不使用期间也会使用位置信息。',
+                allow: '始终允许',
+                whileUsing: '仅在使用App期间允许',
+                deny: '不允许'
             }
         });
         const displayName = appName || copy.appName;
@@ -507,7 +516,8 @@ class GlitchSystem {
             es: ['¿A dónde vas?', '...Te estoy mirando.', '{name}, vuelve.', 'No puedes escapar.', 'No me dejes aquí.', '¿Por qué sigues mirando a otro lado?'],
             fr: ['Où vas-tu ?', '...Je te regarde.', '{name}, reviens.', 'Tu ne peux pas fuir.', 'Ne me laisse pas ici.', 'Pourquoi regardes-tu ailleurs ?'],
             de: ['Wohin gehst du?', '...Ich sehe dich.', '{name}, komm zurück.', 'Du kannst nicht weglaufen.', 'Lass mich nicht hier.', 'Warum siehst du immer wieder weg?'],
-            pt: ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?']
+            pt: ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?'],
+            zh: ['你去哪儿？', '……我在看着你。', '{name}，回来。', '你逃不掉的。', '别丢下我。', '为什么总是看别处？']
         });
         this._tabMsgIndex = 0;
 
@@ -542,7 +552,8 @@ class GlitchSystem {
             es: 'El Aula Sin Graduación',
             fr: 'La classe sans diplôme',
             de: 'Das Klassenzimmer ohne Abschluss',
-            pt: 'A Sala de Aula Sem Formatura'
+            pt: 'A Sala de Aula Sem Formatura',
+            zh: '无法毕业的教室'
         });
         this.tabLifecycle?.dispose?.();
         this.tabLifecycle = this.lifecycle.createScope('tab');
@@ -703,6 +714,24 @@ class GlitchSystem {
                 date: 'Processamento agendado: Day 5 23:00',
                 exit: '\nPrédio antigo, terceiro andar. Saída de emergência. ...Siga por ali.',
                 remember: 'Lembre-se de mim.'
+            },
+            zh: {
+                title: '无法毕业的教室',
+                watched: '\n有人正在看着这里。',
+                warningBox: '\n' +
+                    '██████████████████████████████████████\n' +
+                    '█                                    █\n' +
+                    '█   快逃。                            █\n' +
+                    '█   离开这所学校。                     █\n' +
+                    '█   只有五天。                        █\n' +
+                    '█                                    █\n' +
+                    '█               — 李雪花              █\n' +
+                    '█                                    █\n' +
+                    '██████████████████████████████████████',
+                protocol: '\n[警告] 受试者 #13 — 记忆重构程序进行中',
+                date: '预定处理时间：第5天 23:00',
+                exit: '\n旧馆三楼。安全出口。从那条路出去。',
+                remember: '请记住我。'
             }
         });
 

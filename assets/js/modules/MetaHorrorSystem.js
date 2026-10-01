@@ -195,7 +195,8 @@ class MetaHorrorSystem {
             es: ['¿A dónde vas?', '...Te estoy mirando.', '{name}, vuelve.', 'No puedes escapar.', 'No me dejes aquí.', '¿Por qué sigues mirando a otro lado?'],
             fr: ['Où vas-tu ?', '...Je te regarde.', '{name}, reviens.', 'Tu ne peux pas fuir.', 'Ne me laisse pas ici.', 'Pourquoi regardes-tu ailleurs ?'],
             de: ['Wohin gehst du?', '...Ich sehe dich.', '{name}, komm zurück.', 'Du kannst nicht weglaufen.', 'Lass mich nicht hier.', 'Warum siehst du immer wieder weg?'],
-            pt: ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?']
+            pt: ['Para onde você vai?', '...Estou olhando.', '{name}, volte.', 'Você não pode fugir.', 'Não me deixe aqui.', 'Por que continua olhando para outro lugar?'],
+            zh: ['你要去哪儿？', '……我在看着你。', '{name}，回来。', '你跑不掉的。', '别把我一个人丢在这里。', '为什么总是把视线移开？']
         });
     }
 
@@ -277,6 +278,18 @@ class MetaHorrorSystem {
                 date: 'Processamento agendado: Day 5 23:00',
                 exit: '\nPrédio antigo, terceiro andar. Saída de emergência. ...Siga por ali.',
                 remember: 'Lembre-se de mim.'
+            },
+            zh: {
+                title: '无法毕业的教室',
+                watched: '\n……有人正在看着这里。',
+                run: '……快逃。',
+                leave: '离开这所学校。',
+                days: '五天。',
+                sign: '- 李雪花',
+                protocol: '\n[警告] 受试者 #13 - 记忆重建程序进行中',
+                date: '预定处理日：Day 5 23:00',
+                exit: '\n旧馆三楼。安全出口。……走那条路出去。',
+                remember: '请记住我。'
             }
         });
         const titleStyle = day >= 4
@@ -385,6 +398,15 @@ class MetaHorrorSystem {
                 memo1: 'Os registros dos sujeitos estão na pasta do administrador.',
                 memo2: 'Mas... você quer mesmo ver isso?',
                 memo3: 'Saber disso não significa que você pode sair.'
+            },
+            zh: {
+                found: '你找到我了。',
+                exit: '我在旧馆三楼，安全出口前等你。',
+                thanks: '谢谢你。一定要出去。',
+                memoTitle: '=== 李雪花的备忘 ===',
+                memo1: '受试者记录在管理员文件夹里。',
+                memo2: '你真的想看吗？',
+                memo3: '就算知道了这些，也不一定出得去。'
             }
         });
     }
@@ -433,6 +455,13 @@ class MetaHorrorSystem {
                 { title: 'Han Sea', body: '{name}, por que você não volta?' },
                 { title: 'Park Eunsu', body: 'A aula ainda está acontecendo. Para onde você foi?' },
                 { title: 'Hanul Smart Campus', body: 'Saída anormal detectada. Verificando localização...' }
+            ],
+            zh: [
+                { title: '世雅', body: '你要去哪儿？回来。' },
+                { title: '世雅', body: '……我在看着你。' },
+                { title: '世雅', body: '{name}，为什么不回来？' },
+                { title: '恩秀老师', body: '还在上课呢。你去哪儿了？' },
+                { title: '哈努尔智慧校园', body: '检测到异常离开。正在确认位置……' }
             ]
         });
     }
@@ -480,6 +509,12 @@ class MetaHorrorSystem {
                 mirror_13faces: { text: 'Uma foto não vai ajudar', blackout: true, blackoutDuration: 1000 },
                 day5_docs: { text: '[EXPORTAÇÃO EXTERNA PROIBIDA]', blackout: false },
                 complicit_sign: null
+            },
+            zh: {
+                save_slot: { text: '[检测到记录尝试] ……你打算给谁看？', blackout: true, blackoutDuration: 500 },
+                mirror_13faces: { text: '拍了也没用', blackout: true, blackoutDuration: 1000 },
+                day5_docs: { text: '[禁止外部带出]', blackout: false },
+                complicit_sign: null
             }
         });
     }
@@ -513,6 +548,10 @@ class MetaHorrorSystem {
             pt: {
                 label: '[EXPORTAÇÃO EXTERNA PROIBIDA]',
                 sub: 'A tela será restaurada quando o foco voltar.'
+            },
+            zh: {
+                label: '[禁止外部带出]',
+                sub: '回到画面后，内容会重新显示。'
             }
         });
     }
@@ -581,6 +620,15 @@ class MetaHorrorSystem {
                 appTitle: 'App de Segurança Hanul',
                 ngBody: 'Saída do sujeito #13 detectada. Rastreando localização.',
                 day5Body: 'Limite do ciclo #13 excedido. Preparando reinserção.'
+            },
+            zh: {
+                eunsuTitle: '恩秀老师',
+                eunsuBody: '你去哪儿了？还在上课呢 :)',
+                seaTitle: '世雅',
+                seaBody: '……为什么不来？',
+                appTitle: '学生安全App',
+                ngBody: '检测到受试者 #13 离开。正在追踪位置。',
+                day5Body: '第13周期时间超限。准备重新投入。'
             }
         });
 

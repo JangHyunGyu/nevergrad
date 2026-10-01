@@ -310,7 +310,8 @@ class GameEngine {
             es: '/index-es',
             fr: '/index-fr',
             de: '/index-de',
-            pt: '/index-pt'
+            pt: '/index-pt',
+            zh: '/index-zh'
         }[lang] || '/';
         this._stopAuto();
         this._stopSkip();
@@ -1154,6 +1155,17 @@ class GameEngine {
                 note: 'Cruzando registros de observação e dosagem', footer: 'Confiança da varredura',
                 cycle: 'Ciclo', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Processado',
                 anomaly: 'Contato com Seolhwa / plano de fuga', active: 'Ativo'
+            },
+            zh: {
+                newsSource: 'NEVERGRAD TIMES', newsMeta: '三个月后 · 社会', live: '快讯',
+                investigation: '深度调查', related: '相关报道', chart: '受害申报趋势',
+                evidence: '已获取的证据', witness: '主要举报人记录',
+                newsBadges: ['无证设施', '临床试验', '记忆障碍'],
+                org: 'EDINA FOUNDATION', stamp: '机密', fileId: 'NVG-13 / FINAL',
+                reportTitle: 'Nevergrad 项目最终报告', sideLabel: '受试者身份资料',
+                note: '正在比对观察记录与用药记录', footer: '扫描识别可信度',
+                cycle: '周期', subject1: '金道镇', subject7: '金泰浩', done: '处理完毕',
+                anomaly: '李雪花接触 / 共谋逃脱', active: '进行中'
             }
         };
         return copy[lang] || copy.en;
@@ -1646,7 +1658,8 @@ class GameEngine {
             es: 'Prueba asegurada',
             fr: 'Preuve sécurisée',
             de: 'Beweis gesichert',
-            pt: 'Prova assegurada'
+            pt: 'Prova assegurada',
+            zh: '获得证据'
         };
         const name = evidence?.name ? `: ${evidence.name}` : '';
         toast.textContent = `${labels[lang] || labels.en}${name}`;
@@ -2283,7 +2296,8 @@ class GameEngine {
             es: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Profesora', nurse: 'Enfermera escolar', haeun: 'Haeun', jiwoo: 'Jiwoo' },
             fr: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Professeure', nurse: 'Infirmière scolaire', haeun: 'Haeun', jiwoo: 'Jiwoo' },
             de: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Klassenlehrerin', nurse: 'Schulkrankenschwester', haeun: 'Haeun', jiwoo: 'Jiwoo' },
-            pt: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Professora', nurse: 'Enfermeira escolar', haeun: 'Haeun', jiwoo: 'Jiwoo' }
+            pt: { seoyeon: 'Seoyeon', dain: 'Dain', yuna: 'Yuna', teacher: 'Professora', nurse: 'Enfermeira escolar', haeun: 'Haeun', jiwoo: 'Jiwoo' },
+            zh: { seoyeon: '书妍', dain: '多因', yuna: '由娜', teacher: '班主任', nurse: '保健老师', haeun: '夏恩', jiwoo: '智雨' }
         };
         return (map[lang] || map.en)[heroineId] || heroineId;
     }
@@ -2309,7 +2323,8 @@ class GameEngine {
             es: value ? 'Sí' : 'No',
             fr: value ? 'Oui' : 'Non',
             de: value ? 'Ja' : 'Nein',
-            pt: value ? 'Sim' : 'Não'
+            pt: value ? 'Sim' : 'Não',
+            zh: value ? '是' : '否'
         };
         return labels[lang] || labels.en;
     }
@@ -2323,7 +2338,8 @@ class GameEngine {
             es: value ? 'Asegurada' : 'No asegurada',
             fr: value ? 'Sécurisées' : 'Aucune',
             de: value ? 'Gesichert' : 'Nicht gesichert',
-            pt: value ? 'Assegurada' : 'Ausente'
+            pt: value ? 'Assegurada' : 'Ausente',
+            zh: value ? '已确保' : '未确保'
         };
         return labels[lang] || labels.en;
     }
@@ -2338,7 +2354,8 @@ class GameEngine {
                 es: 'Sin registro',
                 fr: 'Aucune donnée',
                 de: 'Kein Eintrag',
-                pt: 'Sem registro'
+                pt: 'Sem registro',
+                zh: '无记录'
             };
             return empty[lang] || empty.en;
         }
@@ -2353,7 +2370,8 @@ class GameEngine {
                 es: `Tiempo agotado (${limitSec}s)`,
                 fr: `Temps écoulé (${limitSec}s)`,
                 de: `Zeit abgelaufen (${limitSec}s)`,
-                pt: `Tempo esgotado (${limitSec}s)`
+                pt: `Tempo esgotado (${limitSec}s)`,
+                zh: `超时（限时${limitSec}秒）`
             };
             return timeout[lang] || timeout.en;
         }
@@ -2365,7 +2383,8 @@ class GameEngine {
             es: `${elapsedSec}s / ${limitSec}s`,
             fr: `${elapsedSec}s / ${limitSec}s`,
             de: `${elapsedSec}s / ${limitSec}s`,
-            pt: `${elapsedSec}s / ${limitSec}s`
+            pt: `${elapsedSec}s / ${limitSec}s`,
+            zh: `${elapsedSec}秒 / ${limitSec}秒`
         };
         return values[lang] || values.en;
     }
@@ -3433,7 +3452,8 @@ class GameEngine {
         const map = {
             ko: '행복한 교실', en: 'Happy Classroom', ja: '幸せな教室',
             es: 'Aula Feliz', fr: 'Classe heureuse', de: 'Glückliches Klassenzimmer',
-            pt: 'Sala de Aula Feliz'
+            pt: 'Sala de Aula Feliz',
+            zh: '幸福的教室'
         };
         return map[this.i18n.currentLang] || map.en;
     }
@@ -3446,7 +3466,8 @@ class GameEngine {
             es: 'El Aula — Feliz Cada Día',
             fr: 'La classe — des jours heureux',
             de: 'Das Klassenzimmer — Glücklich Jeden Tag',
-            pt: 'A Sala de Aula — Feliz Todos os Dias'
+            pt: 'A Sala de Aula — Feliz Todos os Dias',
+            zh: '无法毕业的教室 — 幸福的每一天'
         };
         return map[this.i18n.currentLang] || map.en;
     }
@@ -3459,7 +3480,8 @@ class GameEngine {
             es: ['...Sal de aquí.', 'Esto no es real.', 'Recuerda. Eres el 13°.', 'Abre los ojos.', '...¿Me recuerdas?'],
             fr: ['...Sors d\'ici.', 'Ce n\'est pas réel.', 'Souviens-toi. Tu es le 13e.', 'Ouvre les yeux.', '...Tu te souviens de moi ?'],
             de: ['...Geh hier raus.', 'Das ist nicht echt.', 'Erinnere dich. Du bist der 13.', 'Öffne die Augen.', '...Erinnerst du dich an mich?'],
-            pt: ['...Saia daqui.', 'Isto não é real.', 'Lembre-se. Você é o 13º.', 'Abra os olhos.', '...Você se lembra de mim?']
+            pt: ['...Saia daqui.', 'Isto não é real.', 'Lembre-se. Você é o 13º.', 'Abra os olhos.', '...Você se lembra de mim?'],
+            zh: ['离开这里。', '这不是真的。', '想起来。你是第十三个。', '睁开眼睛。', '你还记得我吗？']
         };
         return map[this.i18n.currentLang] || map.en;
     }
@@ -3472,7 +3494,8 @@ class GameEngine {
             es: '...Mira la esquina superior derecha. Abrí una salida.',
             fr: '...Regarde en haut à droite. J\'ai ouvert un passage.',
             de: '...Schau oben rechts. Ich habe einen Weg geöffnet.',
-            pt: '...Olhe no canto superior direito. Eu abri uma saída.'
+            pt: '...Olhe no canto superior direito. Eu abri uma saída.',
+            zh: '看屏幕右上角。我给你留了一条路。'
         };
         return map[this.i18n.currentLang] || map.en;
     }
@@ -3480,7 +3503,7 @@ class GameEngine {
     _getCageExitTooltip() {
         const map = {
             ko: '나가기', en: 'Exit', ja: '出る',
-            es: 'Salir', fr: 'Sortir', de: 'Raus', pt: 'Sair'
+            es: 'Salir', fr: 'Sortir', de: 'Raus', pt: 'Sair', zh: '离开'
         };
         return map[this.i18n.currentLang] || map.en;
     }

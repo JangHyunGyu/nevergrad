@@ -41,6 +41,7 @@
     <link rel="alternate" hreflang="fr" href="https://nevergrad.archerlab.dev/fr/">
     <link rel="alternate" hreflang="de" href="https://nevergrad.archerlab.dev/de/">
     <link rel="alternate" hreflang="pt" href="https://nevergrad.archerlab.dev/pt/">
+    <link rel="alternate" hreflang="zh-CN" href="https://nevergrad.archerlab.dev/zh/">
     <link rel="alternate" hreflang="x-default" href="https://nevergrad.archerlab.dev/">
 
     <!-- OG Tags -->
@@ -90,7 +91,7 @@
       "applicationCategory": "Game",
       "operatingSystem": "Any",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
-      "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt"],
+      "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt", "zh-CN"],
       "url": "https://nevergrad.archerlab.dev",
       "image": [
         "https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-title.jpg",
@@ -121,7 +122,7 @@
           "url": "https://nevergrad.archerlab.dev/",
           "name": "Nevergrad",
           "publisher": { "@id": "https://archerlab.dev/#organization" },
-          "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt"]
+          "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt", "zh-CN"]
         },
         {
           "@type": "WebPage",
@@ -151,13 +152,14 @@
             <option value="/fr/">Français</option>
             <option value="/de/">Deutsch</option>
             <option value="/pt/">Português (Brasil)</option>
+            <option value="/zh/">简体中文</option>
         </select>
         <script>
             (function(){
                 var s=document.querySelector('.lang-switcher');
                 if(!s)return;
                 var p=location.pathname,c='/';
-                ['/en/','/ja/','/es/','/fr/','/de/','/pt/'].forEach(function(x){if(p.indexOf(x)===0)c=x;});
+                ['/en/','/ja/','/es/','/fr/','/de/','/pt/','/zh/'].forEach(function(x){if(p.indexOf(x)===0)c=x;});
                 for(var i=0;i<s.options.length;i++)if(s.options[i].value===c){s.selectedIndex=i;break;}
             })();
         </script>

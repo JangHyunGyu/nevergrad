@@ -49,7 +49,8 @@ const localizedShells = [
     { path: '/es/', galleryTitle: 'Galería', endingTab: 'Finales' },
     { path: '/fr/', galleryTitle: 'Galerie', endingTab: 'Fins' },
     { path: '/de/', galleryTitle: 'Galerie', endingTab: 'Enden' },
-    { path: '/pt/', galleryTitle: 'Galeria', endingTab: 'Finais' }
+    { path: '/pt/', galleryTitle: 'Galeria', endingTab: 'Finais' },
+    { path: '/zh/', galleryTitle: '图鉴', endingTab: '结局' }
 ];
 
 for (const { path, galleryTitle, endingTab } of localizedShells) {

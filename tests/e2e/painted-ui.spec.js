@@ -2,7 +2,7 @@
 const { test, expect } = require('playwright/test');
 const project = 'nevergrad';
 const sizes = [[320,568],[360,640],[390,844],[430,932],[568,320],[844,390],[768,1024],[1024,768],[1280,800],[1920,1080],[2560,1440]];
-const languages = ['ko','en','ja','es','fr','de','pt'];
+const languages = ['ko','en','ja','es','fr','de','pt','zh'];
 const pathFor = lang => lang === 'ko' ? '/' : '/' + lang + '/';
 const menuSelector = '.title-menu';
 const controlSelector = '.title-menu .menu-btn, #title-screen .archerlab-link, #title-screen .lang-switcher';

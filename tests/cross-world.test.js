@@ -60,7 +60,7 @@ test('both pill choices select a pill: pink crosses worlds, black continues the 
   assert.equal(scenes.day5_lunch_pills_pink_3.redirect,'cupid-gate');
   assert.equal(scenes.day5_lunch_pills_black_1.next,'day5_lunch_pills_black_ask');
   assert.equal(scenes.day5_lunch_pills_black_ask.next,'day5_lunch_right_14');
-  for(const [lang,black] of Object.entries({ko:'검은 알약',en:'Black pill',ja:'黒い薬',es:'Pastilla negra',fr:'Comprimé noir',de:'Schwarze Tablette',pt:'Comprimido preto'})) {
+  for(const [lang,black] of Object.entries({ko:'검은 알약',en:'Black pill',ja:'黒い薬',es:'Pastilla negra',fr:'Comprimé noir',de:'Schwarze Tablette',pt:'Comprimido preto',zh:'黑色药片'})) {
     const text=JSON.parse(fs.readFileSync(path.join(__dirname,`../assets/js/i18n/${lang}/day5_lunch.json`),'utf8'));
     assert.equal(text.day5_lunch_pills_2.choices[1],black,lang);
   }

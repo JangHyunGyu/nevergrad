@@ -3,7 +3,11 @@
  * 언어별 정적 HTML 페이지 생성 — SEO 크롤러가 각 언어 콘텐츠를 인식하도록
  *
  * 사용: node scripts/build-i18n-pages.js
- * 결과: /en/index.html, /ja/index.html, /es/index.html, /fr/index.html, /de/index.html, /pt/index.html
+ * 결과: /en/, /ja/, /es/, /fr/, /de/, /pt/, /zh/ 의 index.html (+ sitemap.xml, 루트 index.html 갱신)
+ *
+ * 루트 index.html 은 gzip+base64 로더이므로, 템플릿은 디코드한 게임 문서를 사용하고
+ * 루트 갱신은 디코드 → 수정 → 재인코딩(updateRootDocument)으로 처리한다.
+ * `--pages-only` 로 실행하면 언어 페이지만 생성한다.
  */
 
 const fs = require('fs');
@@ -47,13 +51,13 @@ const LANGS = {
         locale: 'ja_JP',
         title: '卒業できない教室',
         metaTitle: 'Nevergrad - 無料ブラウザビジュアルノベル',
-        metaDesc: 'ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、7言語に対応。',
+        metaDesc: 'ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、8言語に対応。',
         keywords: '無料ビジュアルノベル, ブラウザ ビジュアルノベル, ダウンロード不要 ノベルゲーム, 学園ミステリー ゲーム, ホラー ビジュアルノベル 無料, 選択肢 ノベルゲーム, マルチエンディング, Nevergrad',
         ogTitle: 'Nevergrad | 無料ブラウザビジュアルノベル',
         twitterTitle: 'Nevergrad: 無料ブラウザビジュアルノベル',
-        twitterDesc: 'ダウンロード不要で遊べる無料の学園ミステリー・ビジュアルノベル。5日間、5人のヒロイン、7つのエンディング。7言語対応。',
+        twitterDesc: 'ダウンロード不要で遊べる無料の学園ミステリー・ビジュアルノベル。5日間、5人のヒロイン、7つのエンディング。8言語対応。',
         schemaName: 'Nevergrad: 卒業できない教室',
-        schemaDesc: 'ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、7言語に対応。',
+        schemaDesc: 'ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、8言語に対応。',
         subtitle: '5日間の記録',
         newGame: 'ニューゲーム', continue: 'つづきから', gallery: 'ギャラリー',
         namePrompt: 'あなたの名前は？', namePlaceholder: '名前を入力してください', start: 'スタート',
@@ -70,6 +74,7 @@ const LANGS = {
         languageLabel: '言語', menuLabel: 'メニュー', closeLabel: '閉じる', advanceDialogue: '台詞を進める',
         archerlabLabel: 'ArcherLab ホーム',
         koOptionLabel: '韓国語',
+        qmMenu: 'メニュー', saveSlotTitle: 'セーブデータ',
         fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap',
         fontOverride: ":root{--font-main:'Noto Sans JP','Noto Sans KR',sans-serif;}"
     },
@@ -192,15 +197,54 @@ const LANGS = {
         koOptionLabel: 'Coreano',
         fontHref: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap',
         fontOverride: ":root{--font-main:'Noto Sans','Noto Sans KR',sans-serif;}"
+    },
+    zh: {
+        locale: 'zh_CN',
+        htmlLang: 'zh-CN',
+        title: '无法毕业的教室',
+        metaTitle: 'Nevergrad - 免费网页视觉小说，无需下载',
+        metaDesc: '免费学园悬疑视觉小说《Nevergrad：无法毕业的教室》，打开浏览器即可游玩，无需下载。五天的选择，五位女主角，七种结局，支持简体中文等八种语言。',
+        ogTitle: 'Nevergrad | 免费网页视觉小说',
+        subtitle: '五天的记录',
+        newGame: '新游戏', continue: '继续', gallery: '图鉴',
+        namePrompt: '你的名字是？', namePlaceholder: '请输入名字', start: '开始',
+        save: '保存', load: '读取', settings: '设置', toTitle: '返回标题', resume: '返回游戏',
+        settingsBgm: 'BGM 音量', settingsSfx: '音效音量', settingsTextSpeed: '文字速度',
+        settingsFullscreen: '全屏', settingsReset: '重置', settingsOff: 'OFF',
+        ftPlaceholder: '请输入对话……', ftSend: '发送',
+        dayDisplay: '第1天 - 早上',
+        keywords: '免费视觉小说, 网页视觉小说, 无需下载的视觉小说, 免费学园悬疑游戏, 心理恐怖视觉小说, 选择分支剧情游戏, 多结局游戏, 在线互动小说, 恋爱养成悬疑, Nevergrad, 无法毕业的教室',
+        twitterTitle: 'Nevergrad：免费网页视觉小说',
+        twitterDesc: '无需下载、浏览器即点即玩的免费学园悬疑视觉小说。五天、五位女主角、七种结局，支持简体中文。',
+        schemaName: 'Nevergrad：无法毕业的教室',
+        schemaDesc: '免费学园悬疑视觉小说《Nevergrad：无法毕业的教室》，打开浏览器即可游玩，无需下载。五天的选择，五位女主角，七种结局，支持简体中文等八种语言。',
+        galleryTitle: '结局图鉴',
+        galleryProgress: '达成率',
+        galleryBack: '返回',
+        backlogTitle: '对话记录',
+        slotTitle: '存档',
+        loadingText: '加载中……',
+        rotateText: '请将屏幕横过来',
+        languageLabel: '语言', menuLabel: '菜单', closeLabel: '关闭', advanceDialogue: '推进对话',
+        archerlabLabel: 'ArcherLab 首页',
+        koOptionLabel: '한국어',
+        qmMenu: '菜单', saveSlotTitle: '存档',
+        alternateName: ['无法毕业的教室', 'Nevergrad', '졸업하지 못한 교실', '네버그라드', 'The Classroom That Never Graduates'],
+        fontOverride: ":root{--font-main:'PingFang SC','Microsoft YaHei','Noto Sans SC','Noto Sans KR',sans-serif;}"
     }
 };
 
 // hreflang 블록 생성 (경로 기반)
+// hreflang tag for each internal language code (zh pages are Simplified Chinese: zh-CN)
+function hreflangOf(lang) {
+    return (LANGS[lang] && LANGS[lang].htmlLang) || lang;
+}
+
 function buildHreflangBlock() {
     const lines = [];
     lines.push(`    <link rel="alternate" hreflang="ko" href="${BASE_URL}/">`);
     for (const lang of Object.keys(LANGS)) {
-        lines.push(`    <link rel="alternate" hreflang="${lang}" href="${BASE_URL}/${lang}/">`);
+        lines.push(`    <link rel="alternate" hreflang="${hreflangOf(lang)}" href="${BASE_URL}/${lang}/">`);
     }
     lines.push(`    <link rel="alternate" hreflang="x-default" href="${BASE_URL}/">`);
     return lines.join('\n');
@@ -212,14 +256,24 @@ function readSeoSitemapFragment() {
     return fs.readFileSync(fragmentPath, 'utf-8').replace(/\s+$/g, '');
 }
 
+// The root index.html is a gzip+base64 loader (see scripts/add-static-seo-head.js).
+// Language pages are built from the DECODED game document, not from the loader.
+function loadTemplate() {
+    const loader = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf-8');
+    const m = loader.match(/var b64 = "([A-Za-z0-9+/=]+)"/);
+    if (!m) return loader; // plain HTML template
+    return require('zlib').gunzipSync(Buffer.from(m[1], 'base64')).toString('utf-8');
+}
+
 function buildPage(lang, data) {
-    const template = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf-8');
+    const template = loadTemplate();
     const hreflangBlock = buildHreflangBlock();
 
     let html = template;
 
     // <html lang>
-    html = html.replace(/<html lang="[^"]*">/, `<html lang="${lang}">`);
+    const htmlLang = data.htmlLang || lang;
+    html = html.replace(/<html lang="[^"]*">/, `<html lang="${htmlLang}">`);
     html = html.replace(
         /(<select class="lang-switcher" aria-label=")[^"]*(")/,
         `$1${data.languageLabel}$2`
@@ -293,6 +347,9 @@ function buildPage(lang, data) {
             `"description": "${data.schemaDesc}"`
         );
     }
+    if (data.alternateName) {
+        html = html.replace(/"alternateName": \[[^\]]*\]/, `"alternateName": ${JSON.stringify(data.alternateName)}`);
+    }
     if (data.fontHref) {
         html = html.replace(
             /<link href="https:\/\/fonts\.googleapis\.com\/css2\?family=[^"]+" rel="stylesheet">/,
@@ -310,11 +367,11 @@ function buildPage(lang, data) {
         `<p class="title-subtitle">${data.subtitle}</p>`
     );
     html = html.replace(
-        /(<button id="btn-new-game" class="menu-btn">)[^<]*(<\/button>)/,
+        /(<button id="btn-new-game"[^>]*class="menu-btn"[^>]*>)[^<]*(<\/button>)/,
         `$1${data.newGame}$2`
     );
     html = html.replace(
-        /(<button id="btn-continue" class="menu-btn"[^>]*>)[^<]*(<\/button>)/,
+        /(<button id="btn-continue"[^>]*class="menu-btn"[^>]*>)[^<]*(<\/button>)/,
         `$1${data.continue}$2`
     );
     html = html.replace(
@@ -330,7 +387,7 @@ function buildPage(lang, data) {
         `$1 placeholder="${data.namePlaceholder}"`
     );
     html = html.replace(
-        /(<button id="btn-start" class="menu-btn">)[^<]*(<\/button>)/,
+        /(<button id="btn-start"[^>]*class="menu-btn"[^>]*>)[^<]*(<\/button>)/,
         `$1${data.start}$2`
     );
     html = html.replace(
@@ -346,7 +403,7 @@ function buildPage(lang, data) {
         `$1${data.backlogTitle}$2`
     );
     html = html.replace(
-        /(<div id="dialogue-box" class="dialogue-box" role="button" tabindex="0" aria-label=")[^"]*(")/,
+        /(<div id="dialogue-box"[^>]*class="dialogue-box" role="button" tabindex="0" aria-label=")[^"]*(")/,
         `$1${data.advanceDialogue}$2`
     );
     html = html.replace(
@@ -483,6 +540,20 @@ function buildPage(lang, data) {
         '    <!-- ===== Rotate Prompt (mobile and tablet portrait guidance) ===== -->'
     );
 
+    // JSON-LD WebPage node: point at the language URL and language
+    html = html.replace(
+        /("@id": ")https:\/\/nevergrad\.archerlab\.dev\/#webpage(",\s*"url": ")https:\/\/nevergrad\.archerlab\.dev\/(")/,
+        `$1${BASE_URL}/${lang}/#webpage$2${BASE_URL}/${lang}/$3`
+    );
+    html = html.replace(/("@id": "[^"]*#webpage"[\s\S]*?"inLanguage": ")[^"]*(")/, `$1${htmlLang}$2`);
+    if (data.qmMenu) {
+        html = html.replace(/(<button id="qm-menu" class="qm-btn">)[^<]*(<\/button>)/, `$1${data.qmMenu}$2`);
+    }
+    if (data.saveSlotTitle) {
+        html = html.replace(/(<span class="save-slot-title">)[^<]*(<\/span>)/, `$1${data.saveSlotTitle}$2`);
+    }
+    html = html.replace(/(<script id="riin-wake-boot">[\s\S]*?url\(")assets\//, '$1../assets/');
+
     // 상대 경로를 한 단계 위로 (언어별 페이지는 /en/ 같은 하위 경로에 생성됨)
     html = html.replace(/\b(href|src|data-src|data-default|data-ngp)="assets\//g, '$1="../assets/');
     html = html.replace(/\bhref="(?:\.\/)?favicon\.svg"/g, 'href="../favicon.svg"');
@@ -496,8 +567,62 @@ function buildPage(lang, data) {
     return html;
 }
 
+// ----- 루트 문서(gzip+base64 로더) 갱신 -----
+const NATIVE_LABEL = {
+    ko: '한국어', en: 'English', ja: '日本語', es: 'Español', fr: 'Français',
+    de: 'Deutsch', pt: 'Português (Brasil)', zh: '简体中文'
+};
+
+function transformRootDocument(html) {
+    const codes = Object.keys(LANGS);
+    // hreflang block
+    html = html.replace(
+        /    <link rel="alternate" hreflang="ko"[\s\S]*?<link rel="alternate" hreflang="x-default"[^>]*>/,
+        buildHreflangBlock()
+    );
+    // language <select>
+    const opts = ['ko'].concat(codes).map(l => {
+        const v = l === 'ko' ? '/' : `/${l}/`;
+        return `            <option value="${v}">${NATIVE_LABEL[l]}</option>`;
+    }).join('\n');
+    html = html.replace(
+        /(<select class="lang-switcher"[^>]*>\n)[\s\S]*?(\n        <\/select>)/,
+        `$1${opts}$2`
+    );
+    // selected-option script
+    html = html.replace(
+        /\[('\/[a-z]{2}\/',?)+\]\.forEach/,
+        `[${codes.map(l => `'/${l}/'`).join(',')}].forEach`
+    );
+    // JSON-LD inLanguage arrays
+    const tags = ['ko'].concat(codes.map(hreflangOf));
+    html = html.replace(/"inLanguage": \[[^\]]*\]/g, `"inLanguage": [${tags.map(t => `"${t}"`).join(', ')}]`);
+    // ko description: language count
+    html = html.replace(/7개 언어를 지원합니다/g, `${tags.length}개 언어를 지원합니다`);
+    return html;
+}
+
+function updateRootDocument() {
+    const file = path.join(ROOT, 'index.html');
+    const loader = fs.readFileSync(file, 'utf-8');
+    const m = loader.match(/var b64 = "([A-Za-z0-9+/=]+)"/);
+    if (!m) throw new Error('index.html: gzip loader not found');
+    const zlib = require('zlib');
+    const doc = zlib.gunzipSync(Buffer.from(m[1], 'base64')).toString('utf-8');
+    const next = transformRootDocument(doc);
+    if (next === doc) { console.log('  = index.html (decoded document) already up to date'); return; }
+    const b64 = zlib.gzipSync(Buffer.from(next, 'utf-8'), { level: 9 }).toString('base64');
+    fs.writeFileSync(file, loader.replace(m[0], () => `var b64 = "${b64}"`), 'utf-8');
+    console.log('  ✓ index.html decoded document updated (re-encoded)');
+    console.log('    run: node scripts/add-static-seo-head.js   # sync the outer static SEO head');
+}
+
 // 실행
+const pagesOnly = process.argv.includes('--pages-only');
 console.log('Building i18n pages...');
+
+// 루트를 먼저 갱신해 언어 페이지가 최신 템플릿을 쓰도록 한다.
+if (!pagesOnly) updateRootDocument();
 
 for (const [lang, data] of Object.entries(LANGS)) {
     const dir = path.join(ROOT, lang);
@@ -508,11 +633,16 @@ for (const [lang, data] of Object.entries(LANGS)) {
     console.log(`  ✓ /${lang}/index.html`);
 }
 
+if (pagesOnly) {
+    console.log('\nDone (--pages-only).');
+    process.exit(0);
+}
+
 // sitemap.xml 업데이트
 const sitemapLangs = ['ko', ...Object.keys(LANGS)];
 const sitemapLinks = sitemapLangs.map(l => {
     const href = l === 'ko' ? `${BASE_URL}/` : `${BASE_URL}/${l}/`;
-    return `        <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`;
+    return `        <xhtml:link rel="alternate" hreflang="${l === 'ko' ? 'ko' : hreflangOf(l)}" href="${href}"/>`;
 }).join('\n');
 const sitemapXdefault = `        <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/"/>`;
 
@@ -539,24 +669,23 @@ ${sitemapXdefault}
 
 const seoSitemapFragment = readSeoSitemapFragment();
 
+// 수작업 가이드 URL 블록(traffic-pages)은 기존 sitemap.xml 에서 보존한다.
+let trafficBlock = '';
+const sitemapPath = path.join(ROOT, 'sitemap.xml');
+if (fs.existsSync(sitemapPath)) {
+    const old = fs.readFileSync(sitemapPath, 'utf-8');
+    const tm = old.match(/[ \t]*<!-- traffic-pages:start -->[\s\S]*?<!-- traffic-pages:end -->/);
+    if (tm) trafficBlock = tm[0];
+}
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${sitemapUrls.join('\n')}${seoSitemapFragment ? `\n${seoSitemapFragment}` : ''}
+${sitemapUrls.join('\n')}${seoSitemapFragment ? `\n${seoSitemapFragment}` : ''}${trafficBlock ? `\n${trafficBlock}` : ''}
 </urlset>
 `;
 
-fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap, 'utf-8');
+fs.writeFileSync(sitemapPath, sitemap, 'utf-8');
 console.log('  ✓ sitemap.xml updated');
-
-// 메인 index.html의 hreflang도 경로 기반으로 업데이트
-let mainHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf-8');
-const mainHreflang = buildHreflangBlock();
-mainHtml = mainHtml.replace(
-    /    <link rel="alternate" hreflang="ko"[\s\S]*?<link rel="alternate" hreflang="x-default"[^>]*>/,
-    mainHreflang
-);
-fs.writeFileSync(path.join(ROOT, 'index.html'), mainHtml, 'utf-8');
-console.log('  ✓ index.html hreflang updated');
 
 console.log('\nDone! All language pages generated.');

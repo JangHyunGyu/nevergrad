@@ -28,7 +28,7 @@ test('new, continue, manual load and ending paths isolate session state', () => 
 });
 
 test('all seven localized shells load LifecycleManager before GameEngine', () => {
-    for (const html of ['index.html', 'en/index.html', 'ja/index.html', 'es/index.html', 'fr/index.html', 'de/index.html', 'pt/index.html']) {
+    for (const html of ['index.html', 'en/index.html', 'ja/index.html', 'es/index.html', 'fr/index.html', 'de/index.html', 'pt/index.html', 'zh/index.html']) {
         const source = read(html);
         const lifecycleIndex = source.indexOf('LifecycleManager.js');
         const recoveryIndex = source.indexOf("typeof window.LifecycleManager !== 'function'");

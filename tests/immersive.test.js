@@ -241,7 +241,7 @@ test('every localized game shell has a local immersive helper and an unrestricte
   } else if (fs.existsSync(path.join(repo, 'game.html'))) {
     entries = fs.readdirSync(repo).filter(name => /^(?:index|game|gallery)(?:-[a-z]+)?\.html$/.test(name));
   } else {
-    entries = ['index.html', ...['en','ja','es','fr','de','pt'].map(lang => `${lang}/index.html`)];
+    entries = ['index.html', ...['en','ja','es','fr','de','pt','zh'].map(lang => `${lang}/index.html`)];
   }
   for (const entry of entries) {
     let html = fs.readFileSync(path.join(repo, entry), 'utf8');

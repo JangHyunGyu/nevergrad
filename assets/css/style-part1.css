@@ -17,6 +17,11 @@
     --font-main: 'Noto Sans KR', sans-serif;
 }
 
+/* Simplified Chinese: prefer system CJK SC fonts (no webfont download) */
+html[lang^="zh"] {
+    --font-main: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Noto Sans KR', sans-serif;
+}
+
 /* ===== Reset ===== */
 * {
     margin: 0;

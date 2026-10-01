@@ -23,7 +23,7 @@ test('repo-only files are blocked, including percent-encoded variants', () => {
 
 test('game, SEO and static pages stay reachable', () => {
     for (const p of [
-        '/', '/ja/', '/en/index.html', '/seo/free-browser-visual-novel', '/llms.txt', '/robots.txt',
+        '/', '/ja/', '/zh/', '/zh/index.html', '/en/index.html', '/seo/free-browser-visual-novel', '/llms.txt', '/robots.txt',
         '/classified/', '/project-cupid/', '/assets/js/app.js', '/.well-known/security.txt', '/sitemap.xml',
     ]) assert.strictEqual(isBlocked(p), false, p);
 });

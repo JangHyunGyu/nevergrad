@@ -5,7 +5,7 @@ const path = require('node:path');
 
 // Exercise the real bootloader and its loadDay/loadAll wrappers: reading JSON
 // alone missed a legacy overlay that silently restored obsolete narration.
-for (const lang of ['ko','en','ja','es','fr','de','pt']) {
+for (const lang of ['ko','en','ja','es','fr','de','pt','zh']) {
   test(`reviewed scenario copy survives runtime overlays: ${lang}`, async ({page}, info) => {
     await page.setViewportSize({width:320,height:568});
     await page.emulateMedia({reducedMotion:'reduce'});

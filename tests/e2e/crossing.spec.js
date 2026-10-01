@@ -1,7 +1,7 @@
 'use strict';
 const { test, expect } = require('playwright/test');
 const cupid = false;
-const languages = ['ko','en','ja','es','fr','de','pt'];
+const languages = ['ko','en','ja','es','fr','de','pt','zh'];
 const sizes = [[320,568],[390,844],[430,932],[568,320],[844,390],[768,1024],[1024,768],[1440,900]];
 const pathFor = lang => cupid ? (lang === 'ko' ? '/index.html?gate=1' : `/index-${lang}.html?gate=1`) : (lang === 'ko' ? '/?from=riin' : `/${lang}/?from=riin`);
 async function boot(page, lang = 'ko') {

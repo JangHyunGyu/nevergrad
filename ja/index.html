@@ -19,7 +19,7 @@
     <title>Nevergrad - 無料ブラウザビジュアルノベル</title>
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="description" content="ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、7言語に対応。">
+    <meta name="description" content="ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、8言語に対応。">
     <meta name="keywords" content="無料ビジュアルノベル, ブラウザ ビジュアルノベル, ダウンロード不要 ノベルゲーム, 学園ミステリー ゲーム, ホラー ビジュアルノベル 無料, 選択肢 ノベルゲーム, マルチエンディング, Nevergrad">
     <meta name="author" content="Archerlab">
     <meta name="theme-color" content="#FFB7C5">
@@ -41,12 +41,13 @@
     <link rel="alternate" hreflang="fr" href="https://nevergrad.archerlab.dev/fr/">
     <link rel="alternate" hreflang="de" href="https://nevergrad.archerlab.dev/de/">
     <link rel="alternate" hreflang="pt" href="https://nevergrad.archerlab.dev/pt/">
+    <link rel="alternate" hreflang="zh-CN" href="https://nevergrad.archerlab.dev/zh/">
     <link rel="alternate" hreflang="x-default" href="https://nevergrad.archerlab.dev/">
 
     <!-- OG Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nevergrad | 無料ブラウザビジュアルノベル">
-    <meta property="og:description" content="ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、7言語に対応。">
+    <meta property="og:description" content="ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、8言語に対応。">
     <meta property="og:url" content="https://nevergrad.archerlab.dev/ja/">
     <meta property="og:image" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-title.jpg">
     <meta property="og:image:secure_url" content="https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-title.jpg">
@@ -67,7 +68,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nevergrad: 無料ブラウザビジュアルノベル">
-    <meta name="twitter:description" content="ダウンロード不要で遊べる無料の学園ミステリー・ビジュアルノベル。5日間、5人のヒロイン、7つのエンディング。7言語対応。">
+    <meta name="twitter:description" content="ダウンロード不要で遊べる無料の学園ミステリー・ビジュアルノベル。5日間、5人のヒロイン、7つのエンディング。8言語対応。">
     <meta name="twitter:image" content="https://nevergrad.archerlab.dev/nevergrad_link.png">
     <meta name="twitter:image:alt" content="Nevergrad social preview">
 
@@ -86,13 +87,13 @@
       "@id": "https://nevergrad.archerlab.dev/#videogame",
       "name": "Nevergrad: 卒業できない教室",
       "alternateName": ["졸업하지 못한 교실", "네버그라드", "The Classroom That Never Graduates"],
-      "description": "ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、7言語に対応。",
+      "description": "ダウンロード不要でブラウザからすぐ遊べる無料の学園ミステリー・ビジュアルノベル。5日間の選択、5人のヒロイン、7つのエンディング、8言語に対応。",
       "genre": ["Visual Novel", "Psychological Thriller", "School Mystery", "Interactive Fiction"],
       "gamePlatform": "Web Browser",
       "applicationCategory": "Game",
       "operatingSystem": "Any",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
-      "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt"],
+      "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt", "zh-CN"],
       "url": "https://nevergrad.archerlab.dev",
       "image": [
         "https://nevergrad.archerlab.dev/assets/images/screenshots/nevergrad-title.jpg",
@@ -123,7 +124,7 @@
           "url": "https://nevergrad.archerlab.dev/",
           "name": "Nevergrad",
           "publisher": { "@id": "https://archerlab.dev/#organization" },
-          "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt"]
+          "inLanguage": ["ko", "en", "ja", "es", "fr", "de", "pt", "zh-CN"]
         },
         {
           "@type": "WebPage",
@@ -153,13 +154,14 @@
             <option value="/fr/">Français</option>
             <option value="/de/">Deutsch</option>
             <option value="/pt/">Português (Brasil)</option>
+            <option value="/zh/">简体中文</option>
         </select>
         <script>
             (function(){
                 var s=document.querySelector('.lang-switcher');
                 if(!s)return;
                 var p=location.pathname,c='/';
-                ['/en/','/ja/','/es/','/fr/','/de/','/pt/'].forEach(function(x){if(p.indexOf(x)===0)c=x;});
+                ['/en/','/ja/','/es/','/fr/','/de/','/pt/','/zh/'].forEach(function(x){if(p.indexOf(x)===0)c=x;});
                 for(var i=0;i<s.options.length;i++)if(s.options[i].value===c){s.selectedIndex=i;break;}
             })();
         </script>

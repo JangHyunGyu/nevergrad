@@ -157,6 +157,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_yuna_14": {
         character: "yuna_normal",
+        setFlags: ["received_yuna_photo"],
         next: "day1_after_home_1"
     },
 
@@ -189,6 +190,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_riin_7": {
         character: "riin_gentle",
+        setFlags: ["received_riin_tea"],
         next: "day1_after_riin_8"
     },
     "day1_after_riin_8": {

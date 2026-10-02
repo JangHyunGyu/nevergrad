@@ -1,0 +1,44 @@
+{
+    "date": "2026-10-02",
+    "scope": "Corrected demonstrated translation defects and related narration against the current Korean source. This is not an exhaustive native-speaker review of all 2,111 entries in each language.",
+    "changedFields": 734,
+    "storyScenesWithChanges": 400,
+    "changesByLanguage": {
+        "en": 67,
+        "ja": 333,
+        "es": 66,
+        "fr": 67,
+        "de": 66,
+        "pt": 134,
+        "zh": 1
+    },
+    "corrections": [
+        "Preserve Seojin as a character name and Park as a surname",
+        "Restore first-person narration in the 47 affected scenes in each of six languages",
+        "Keep the unidentified visitor unidentified and restore the original clue details",
+        "Remove unsupported lighting, breathing, sleep and memory-replacement descriptions in reviewed scenes",
+        "Restore the uninked stamp field and the light passing through Seolhwa's hand",
+        "Correct repeated Portuguese professoraa spelling and restore stat-label accents",
+        "Unify protagonist narration in Japanese and remove 249 inconsistent display-only outer dialogue quote pairs while retaining nested quotations",
+        "Correct the ambiguous Chinese description of Eunsu's fingers"
+    ],
+    "integrity": {
+        "missingTranslationKeys": 0,
+        "choiceCountMismatches": 0,
+        "placeholderWarningsBefore": 282,
+        "placeholderWarningsAfter": 0,
+        "koreanSourceScenarioAndCss": "SHA-256 verified unchanged, including SCENARIO.md",
+        "decodedHtmlChanges": "Only the I18nManager cache query changed in all eight documents",
+        "cacheVersion": "20261002-localization-review"
+    },
+    "verification": {
+        "npmRunCheck": "Passed: validator errors 0, content checks passed, 55 unit tests passed",
+        "localizationRuntimeBrowserTests": "Final 16 cases passed: all eight languages at 1440x900 and 390x844; initial load, reload through overlays and representative rendered dialogue",
+        "existingScenarioCopyBrowserTests": "All eight language cases passed",
+        "visualComparison": "All eight title screens compared before and after at desktop and mobile. Desktop and five mobile languages are pixel-identical. Three mobile comparisons differ by 18 border pixels at most 2 RGB levels; direct inspection found no visible layout, typography, asset or style change.",
+        "storyVisualReview": "Representative changed narration screenshots inspected, including long English, Japanese, German and Portuguese text on mobile",
+        "gitDiffCheck": "Passed"
+    },
+    "detailedReviewRecord": "D:/workspace/_workspace/nevergrad-i18n-review-20261002/review.json",
+    "publishing": "Local workspace changes; not committed, pushed or deployed"
+}

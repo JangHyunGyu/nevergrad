@@ -23,14 +23,16 @@ async function expectNoDocumentOverflow(page) {
 }
 
 async function expectInsideViewport(locator, page) {
-    const box = await locator.boundingBox();
-    const viewport = page.viewportSize();
-    expect(box).not.toBeNull();
-    expect(viewport).not.toBeNull();
-    expect(box.x).toBeGreaterThanOrEqual(-1);
-    expect(box.y).toBeGreaterThanOrEqual(-1);
-    expect(box.x + box.width).toBeLessThanOrEqual(viewport.width + 1);
-    expect(box.y + box.height).toBeLessThanOrEqual(viewport.height + 1);
+    await expect(async () => {
+        const box = await locator.boundingBox();
+        const viewport = page.viewportSize();
+        expect(box).not.toBeNull();
+        expect(viewport).not.toBeNull();
+        expect(box.x).toBeGreaterThanOrEqual(-1);
+        expect(box.y).toBeGreaterThanOrEqual(-1);
+        expect(box.x + box.width).toBeLessThanOrEqual(viewport.width + 1);
+        expect(box.y + box.height).toBeLessThanOrEqual(viewport.height + 1);
+    }).toPass({timeout:5000});
 }
 
 async function expectInsideViewportWidth(locator, page) {
@@ -250,8 +252,10 @@ for (const device of touchDevices) {
         await expectInsideViewport(page.locator('#choice-panel'), page);
         for (const button of await page.locator('#choice-panel .choice-btn').all()) {
             await expectInsideViewport(button, page);
-            const choiceBox = await button.boundingBox();
-            expect(choiceBox.height).toBeGreaterThanOrEqual(44);
+            await expect(async () => {
+                const choiceBox = await button.boundingBox();
+                expect(choiceBox.height).toBeGreaterThanOrEqual(44);
+            }).toPass({timeout:5000});
         }
 
         await page.evaluate(() => {

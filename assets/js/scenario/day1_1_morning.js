@@ -311,7 +311,7 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // 초코우유 이벤트 (SCENARIO.md lines 155-208)
     // =====================================================================
-    // NG+ 진입 분기: 1회차에서 초코 거부(chose_strawberry)했으면 세아가 핑계 없이 딸기우유를 건넴 (SCENARIO.md 5500)
+    // NG+ remembers the strawberry preference from the previous run
     "day1_choco_entry": {
         character: "sea_smile",
         branches: [
@@ -339,6 +339,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_choco_ngp_2": {
         character: "sea_normal",
+        setFlags: ["received_sea_milk"],
         next: "day1_choco_ngp_3"
     },
     "day1_choco_ngp_3": {
@@ -364,6 +365,7 @@ Object.assign(SCENARIO[1], {
     // L163: *1+1이면 공짜니까 안 받을 이유가 없지.*
     "day1_choco_4": {
         character: "sea_normal",
+        setFlags: ["received_sea_milk"],
         next: "day1_choco_5"
     },
     // L167: 나 "어? 고마운데... 이거 왜?"
@@ -388,12 +390,12 @@ Object.assign(SCENARIO[1], {
             {
                 next: "day1_choco_question_1",
                 stats: { sea: { affinity: -1 } },
-                setFlags: ["questioned_sea", "sea_choco_milk", "chose_strawberry"]
+                setFlags: ["questioned_sea", "sea_choco_milk"]
             },
             {
                 next: "day1_choco_joke_1",
                 stats: { sea: { affinity: 5 } },
-                setFlags: ["joked_choco"]
+                setFlags: ["joked_choco", "chose_strawberry"]
             }
         ]
     },

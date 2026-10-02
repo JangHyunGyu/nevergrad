@@ -63,13 +63,13 @@
             if (gsap && target) gsap.killTweensOf(target);
         },
 
-        screenEnter(el) {
+        screenEnter(el, onComplete) {
             const gsap = gsapInstance();
             if (!gsap || !el) return false;
             gsap.killTweensOf(el);
             gsap.fromTo(el,
                 { autoAlpha: 0 },
-                { autoAlpha: 1, duration: 0.32, ease: 'power2.out', clearProps: 'opacity,visibility,transform' }
+                { autoAlpha: 1, duration: 0.32, ease: 'power2.out', clearProps: 'opacity,visibility,transform', onComplete }
             );
             return true;
         },

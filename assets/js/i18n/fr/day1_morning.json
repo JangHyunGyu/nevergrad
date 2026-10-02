@@ -81,7 +81,7 @@
         "text": "Tu cherches la salle de classe ? Suis-moi, je vais te faire visiter."
     },
     "day1_sea_meet_11": {
-        "text": "*Sea marche devant. Chaque fois que {name} ralentit, elle adapte son allure sans se retourner.*"
+        "text": "*Sea marche devant et adapte son allure chaque fois que je ralentis, sans se retourner.*"
     },
     "day1_sea_meet_12": {
         "text": "C'est le laboratoire scientifique. La salle de musique est là-bas. Le deuxième étage est principalement destiné aux troisièmes années, vous n'en aurez donc pas beaucoup besoin."
@@ -102,7 +102,7 @@
         "text": "Quand un nouvel élève se perd, c'est à la déléguée de le guider."
     },
     "day1_sea_meet_18": {
-        "text": "*Les élèves s'écartent naturellement sur son passage. {name} la suit.*"
+        "text": "*Les élèves s’écartent naturellement au passage de Sea. Je la suis.*"
     },
     "day1_choco_entry": {
         "text": ""
@@ -294,7 +294,7 @@
         "text": "Salut, je suis {name}. Ravi de te rencontrer."
     },
     "day1_seolhwa_greet_3": {
-        "text": "*Elle regarde {name}. Nos regards se croisent.*"
+        "text": "*Seolhwa me regarde. Nos regards se croisent.*"
     },
     "day1_seolhwa_greet_4": {
         "text": "*Les coins de sa bouche se soulèvent un peu, puis retombent aussitôt. Ses oreilles sont rouges.*"
@@ -415,5 +415,14 @@
     },
     "day1_xover_seolhwa_5": {
         "text": "*Qu'est-ce que c'était ? L'odeur de désinfectant est toujours là.*"
+    },
+    "day1_eunsu_11_honest": {
+        "text": "Euh… les jeux vidéo et la musique. Je fais un peu des deux."
+    },
+    "day1_eunsu_11_brief": {
+        "text": "La musique."
+    },
+    "day1_eunsu_11_sea": {
+        "text": "*Je regarde d'abord Sea. D'un petit mouvement du menton, elle désigne la professeure. Ce n'est qu'alors que je parle.*\n\n…La musique."
     }
 }

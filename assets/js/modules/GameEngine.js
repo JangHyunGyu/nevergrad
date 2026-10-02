@@ -212,11 +212,17 @@ class GameEngine {
         document.getElementById('btn-new-game')?.addEventListener('click', () => {
             this.audio?.playUIClick();
             // 모바일 풀스크린 진입 (유저 제스처 필요)
-            if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
-            this._showScreen('name-screen');
+            const fullscreen = typeof requestMobileFullscreen === 'function' ? requestMobileFullscreen() : null;
             const input = document.getElementById('player-name-input');
+            const focusName = () => {
+                if (!document.getElementById('name-screen')?.classList.contains('active')) return;
+                const active = document.activeElement;
+                if (active === document.body || active === input || active?.id === 'btn-new-game') input?.focus({ preventScroll: true });
+            };
+            this._showScreen('name-screen', focusName);
             if (input && !input.value && this._crossingName) input.value = this._crossingName;
-            input?.focus();
+            focusName();
+            Promise.resolve(fullscreen).then(focusName, () => {});
             this._attachNameScreenKBAvoidance();
         });
 
@@ -2988,14 +2994,15 @@ class GameEngine {
 
     // ===== Screen =====
 
-    _showScreen(id) {
+    _showScreen(id, onShown) {
         document.querySelectorAll('.screen').forEach(s => {
             s.classList.remove('active');
             s.classList.add('hidden');
         });
         const el = document.getElementById(id);
         if (el) { el.classList.remove('hidden'); el.classList.add('active'); }
-        window.NevergradMotion?.screenEnter?.(el);
+        const shown = () => { if (el?.classList.contains('active')) onShown?.(); };
+        if (!window.NevergradMotion?.screenEnter?.(el, shown)) shown();
 
         if (id === 'game-screen') {
             this.state.resumeRun();

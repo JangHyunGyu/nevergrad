@@ -133,6 +133,33 @@ Object.assign(SCENARIO[1], {
     "day1_night_sleep_2": {
         character: null,
         night: true,
+        branches: [
+            { condition: "received_sea_milk", next: "day1_night_sleep_milk" }
+        ],
+        next: "day1_night_sleep_gift"
+    },
+    "day1_night_sleep_milk": {
+        character: null,
+        night: true,
+        next: "day1_night_sleep_gift"
+    },
+    "day1_night_sleep_gift": {
+        character: null,
+        night: true,
+        branches: [
+            { condition: "received_yuna_photo", next: "day1_night_sleep_photo" },
+            { condition: "received_riin_tea", next: "day1_night_sleep_tea" }
+        ],
+        next: "day1_night_sleep_3"
+    },
+    "day1_night_sleep_photo": {
+        character: null,
+        night: true,
+        next: "day1_night_sleep_3"
+    },
+    "day1_night_sleep_tea": {
+        character: null,
+        night: true,
         next: "day1_night_sleep_3"
     },
     "day1_night_sleep_3": {

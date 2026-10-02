@@ -63,7 +63,7 @@ class I18nManager {
             // (없는 경로가 200+HTML로 오는 SPA 폴백은 JSON 파싱 단계에서 실패로 잡힌다.)
             const loadFile = async (langCode, slot) => {
                 const filename = `day${day}${slot}.json`;
-                const url = `${I18nManager.BASE}assets/js/i18n/${langCode}/${filename}?v=20261002-localization-review`;
+                const url = `${I18nManager.BASE}assets/js/i18n/${langCode}/${filename}?v=20261002-full-story-review`;
                 const maxAttempts = 3;
                 for (let attempt = 1; attempt <= maxAttempts; attempt++) {
                     try {

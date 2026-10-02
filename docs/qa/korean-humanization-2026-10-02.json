@@ -1,0 +1,695 @@
+{
+  "date": "2026-10-02",
+  "skill": "D:/workspace/im-not-ai/codex/skills/humanize-korean/SKILL.md",
+  "quickRules": "D:/workspace/im-not-ai/skills/humanize-korean/references/quick-rules.md",
+  "route": "heavy",
+  "sourceFields": 2253,
+  "sourceSceneEntries": 2111,
+  "styleFieldsChanged": 86,
+  "diagnosis": "Low initial risk; local repetitive endings and mechanical short sentences. Preserve mystery clues, observable actions, speaker register and intentional repetition.",
+  "gate": {
+    "genre": "essay",
+    "change_rate": {
+      "rate": 0.002,
+      "scope": "전문",
+      "verdict": "OK"
+    },
+    "s1_targets": [],
+    "antithesis": {
+      "before": 6,
+      "after": 6,
+      "verdict": "OK"
+    },
+    "golden": [],
+    "sentence_touch": {
+      "rate": 0.0243,
+      "touched": 153,
+      "total": 6304
+    },
+    "numbers_dropped": [],
+    "modality": {
+      "lost_pairs": [],
+      "uncertain_pairs": [],
+      "counts": {
+        "deontic": {
+          "before": 22,
+          "after": 22
+        },
+        "hedge": {
+          "before": 11,
+          "after": 11
+        }
+      },
+      "verdict": "OK"
+    },
+    "gate": {
+      "verdict": "OK — 수렴",
+      "exit_code": 0
+    }
+  },
+  "grade": "B",
+  "selfChecks": [
+    {
+      "item": "의미·내용 앵커·인용·수치·고유명사 보존",
+      "pass": true,
+      "evidence": "변경 전 90개 필드를 모두 직접 대조하고 6개 보정문 재검토; 전체 필드의 수치·인용·플레이스홀더 자동 대조"
+    },
+    {
+      "item": "변경률 30% 이하",
+      "pass": true,
+      "evidence": "최종 공통 게이트 P0 통과"
+    },
+    {
+      "item": "장르 보존",
+      "pass": true,
+      "evidence": "분기형 비주얼 노벨의 화면 호흡·불확실한 관찰·발화 단절 보존"
+    },
+    {
+      "item": "인물·상대별 register 보존",
+      "pass": true,
+      "evidence": "대사에 새 존댓말·반말·격식 상향 없음"
+    },
+    {
+      "item": "확정 S1·D-14 잔존 및 C-11 증가 없음",
+      "pass": true,
+      "evidence": "변경 구간과 진단 사례에서 확정 위반 없음; 원문의 직접 인용과 고립된 대조 쉼표는 문학적 기능으로 보존; C-11 지표 감소"
+    },
+    {
+      "item": "새 비유·행동·동기·상투구 주입 없음",
+      "pass": true,
+      "evidence": "서로·넣어도/울려서·상태의 동작화·적혀 있다를 복구하고 변경 구간 전수 재대조"
+    }
+  ],
+  "finalizerCorrections": [
+    {
+      "anchor": "day4_after_eunsu_10::text",
+      "kind": "fidelity",
+      "reason": "서로 추가로 이름들이 각각 모두 다르다는 해석이 강해짐; 원문의 다른 이름들 보존",
+      "original": "*책상 서랍이 반쯤 열려 있다. 안쪽 포스트잇 수십 장마다 글씨가 빼곡하다. 전부 이름이다. 다른 이름들. 취소선이 그어진 것도 있다.*",
+      "before_finalize": "*책상 서랍이 반쯤 열려 있다. 안쪽 포스트잇 수십 장마다 글씨가 빼곡하다. 전부 서로 다른 이름이고 취소선이 그어진 것도 있다.*",
+      "final": "*책상 서랍이 반쯤 열려 있다. 안쪽 포스트잇 수십 장마다 글씨가 빼곡하다. 전부 이름이다. 다른 이름들. 취소선이 그어진 것도 있다.*",
+      "fully_rolled_back": true,
+      "resolved": true
+    },
+    {
+      "anchor": "day4_night_phone_end::text",
+      "kind": "fidelity",
+      "reason": "넣어도·울려서로 양보 관계와 인과를 명시함; 원문의 행동 순서와 사실 서술 복구",
+      "original": "*휴대폰을 서랍에 넣었다. 진동이 계속 울렸다. 수건으로 감싸서 소리를 죽였다.*",
+      "before_finalize": "*휴대폰을 서랍에 넣어도 진동이 계속 울려서 수건으로 감싸 소리를 죽였다.*",
+      "final": "*휴대폰을 서랍에 넣었다. 진동이 계속 울렸다. 수건으로 감싸서 소리를 죽였다.*",
+      "fully_rolled_back": true,
+      "resolved": true
+    },
+    {
+      "anchor": "day4_night_plan_2::text",
+      "kind": "fidelity",
+      "reason": "눈이 부어 있고 상태가 눈이 붓고 동작으로 바뀜; 관찰된 상태 복구",
+      "original": "*거울 속 얼굴은 눈이 부어 있고 코는 붉어져 있었다. 목에는 이름표 끈 자국이 남아 있다.*",
+      "before_finalize": "*거울 속 얼굴은 눈이 붓고 코가 붉어져 있었다. 목에는 이름표 끈 자국이 남아 있다.*",
+      "final": "*거울 속 얼굴은 눈이 부어 있고 코는 붉어져 있었다. 목에는 이름표 끈 자국이 남아 있다.*",
+      "fully_rolled_back": true,
+      "resolved": true
+    },
+    {
+      "anchor": "day5_morning_grad_7::text",
+      "kind": "fidelity",
+      "reason": "적혀 있다를 새로 명시함; 이름표 발견 연결만 유지하고 원문의 정보 조각 복구",
+      "original": "*책상 위에 하나씩 놓여 있다. 이름표. 1번부터 12번까지. 시행 번호와 그때 부여된 이름. 13번 자리가 비어 있다. 내 자리.*",
+      "before_finalize": "*책상 위에 이름표가 하나씩 놓여 있다. 1번부터 12번까지 시행 번호와 그때 부여된 이름이 적혀 있다. 13번 자리가 비어 있다. 내 자리.*",
+      "final": "*책상 위에 이름표가 하나씩 놓여 있다. 1번부터 12번까지. 시행 번호와 그때 부여된 이름. 13번 자리가 비어 있다. 내 자리.*",
+      "fully_rolled_back": false,
+      "resolved": true
+    },
+    {
+      "anchor": "day1_xover_seolhwa_1::text",
+      "kind": "naturalness",
+      "reason": "복도를 걷는데 끝에에서 위치 표현이 어색해짐; 복도 끝을 명시한 최소 연결",
+      "original": "*복도를 걷는데 누군가 서 있다. 복도 끝. 빛이 닿지 않는 곳에.*",
+      "before_finalize": "*복도를 걷는데 끝에 누군가 서 있다. 빛이 닿지 않는 곳이다.*",
+      "final": "*복도를 걷는데 복도 끝에 누군가 서 있다. 빛이 닿지 않는 곳이다.*",
+      "fully_rolled_back": false,
+      "resolved": true
+    },
+    {
+      "anchor": "day2_night_flash_4::text",
+      "kind": "naturalness",
+      "reason": "인용 뒤 독립 마침표가 어색함; 원문의 직접 인용과 목소리 구분 대시 복구",
+      "original": "*\"이쪽이야\" — 누군가의 목소리. 낯익은 목소리.*",
+      "before_finalize": "*\"이쪽이야\". 누군가의 목소리가 낯익다.*",
+      "final": "*\"이쪽이야\" — 누군가의 목소리. 낯익은 목소리.*",
+      "fully_rolled_back": true,
+      "resolved": true
+    }
+  ],
+  "changes": [
+    {
+      "id": "day1_after_yuna_10",
+      "field": "text",
+      "before": "*도서관을 나서자, 유나가 나를 따라 나온다.*",
+      "after": "*도서관을 나서자 유나가 나를 따라 나온다.*"
+    },
+    {
+      "id": "day1_after_riin_10",
+      "field": "text",
+      "before": "*리인 선생님이 스피커에서 잔잔한 피아노곡을 튼다. 아주 낮은 볼륨이라, 멜로디보다 박자만 먼저 들린다.*",
+      "after": "*리인 선생님이 스피커에서 잔잔한 피아노곡을 튼다. 아주 낮은 볼륨이라 멜로디보다 박자만 먼저 들린다.*"
+    },
+    {
+      "id": "day1_after_home_3",
+      "field": "text",
+      "before": "*3층 창문에 누군가 서 있다. 나를 내려다보고 있다.*",
+      "after": "*3층 창문에 누군가 서서 나를 내려다보고 있다.*"
+    },
+    {
+      "id": "day1_lunch_sea_19",
+      "field": "text",
+      "before": "*세아가 잠깐 멈칫한 뒤 웃었다.*",
+      "after": "*세아가 잠깐 멈칫했다가 웃었다.*"
+    },
+    {
+      "id": "day1_lunch_riin_14",
+      "field": "text",
+      "before": "*눈을 떴다. 어느새 담요가 덮여 있다. 창문으로 햇살이 들어온다. 손목 안쪽에는 체온계가 눌린 듯한 옅은 자국이 남아 있다.*",
+      "after": "*눈을 떴다. 어느새 담요가 덮여 있고 창문으로 햇살이 들어온다. 손목 안쪽에는 체온계가 눌린 듯한 옅은 자국이 남아 있다.*"
+    },
+    {
+      "id": "day1_lunch_alone_5",
+      "field": "text",
+      "before": "*난간 아래에 긁힌 자국이 있다. 오래된 흔적. 손끝으로 더듬자 짧은 선 세 개가 걸렸다.*",
+      "after": "*난간 아래 긁힌 자국은 오래된 흔적이다. 손끝으로 더듬자 짧은 선 세 개가 걸렸다.*"
+    },
+    {
+      "id": "day1_gate_cctv_1",
+      "field": "text",
+      "before": "*정문을 통과한다. 기둥 옆에 씨씨티브이(CCTV) 카메라가 있다. 벽이 꺾이는 모퉁이에도 하나. 입구에도 하나 더. 빨간 작동등이 일정한 간격으로 깜빡인다.*",
+      "after": "*정문을 통과한다. 기둥 옆에 씨씨티브이(CCTV) 카메라가 있다. 벽이 꺾이는 모퉁이에도 하나, 입구에도 하나 더 있다. 빨간 작동등이 일정한 간격으로 깜빡인다.*"
+    },
+    {
+      "id": "day1_classroom_4",
+      "field": "text",
+      "before": "*가방을 내려놓고 자리에 앉았다. 창가 자리. 밖으로 벚꽃이 보인다.*",
+      "after": "*가방을 내려놓고 창가 자리에 앉았다. 밖으로 벚꽃이 보인다.*"
+    },
+    {
+      "id": "day1_eunsu_7",
+      "field": "text",
+      "before": "*은수 선생님의 말이 끝나자, 쥐고 있던 손가락에 힘이 풀렸다.*",
+      "after": "*은수 선생님의 말이 끝나자 쥐고 있던 손가락에 힘이 풀렸다.*"
+    },
+    {
+      "id": "day1_pe_1",
+      "field": "text",
+      "before": "*체육 시간. 축구. 공이 높이 떴다. 왼발로 트래핑했다.*",
+      "after": "*체육 시간에 축구를 했다. 높이 뜬 공을 왼발로 트래핑했다.*"
+    },
+    {
+      "id": "day1_xover_seolhwa_1",
+      "field": "text",
+      "before": "*복도를 걷는데 누군가 서 있다. 복도 끝. 빛이 닿지 않는 곳에.*",
+      "after": "*복도를 걷는데 복도 끝에 누군가 서 있다. 빛이 닿지 않는 곳이다.*"
+    },
+    {
+      "id": "day1_xover_seolhwa_4",
+      "field": "text",
+      "before": "*눈을 깜빡였다. 아무도 없다. 텅 빈 복도. 아주 잠깐, 벚꽃 냄새 대신 소독약 냄새가 났다.*",
+      "after": "*눈을 깜빡였다. 복도는 텅 비어 있고 아무도 없다. 아주 잠깐, 벚꽃 냄새 대신 소독약 냄새가 났다.*"
+    },
+    {
+      "id": "day2_after_sea_26",
+      "field": "text",
+      "before": "*세아가 라벨지에 내 이름을 적다가, 글자를 조금 작게 다시 쓴다.*",
+      "after": "*세아가 라벨지에 내 이름을 적다가 글자를 조금 작게 다시 쓴다.*"
+    },
+    {
+      "id": "day2_after_hallway_1",
+      "field": "text",
+      "before": "*학생회실을 나와 복도를 걷는데, 자판기 앞에 급우 몇 명이 모여 있었다.*",
+      "after": "*학생회실을 나와 복도를 걷는데 자판기 앞에 급우 몇 명이 모여 있었다.*"
+    },
+    {
+      "id": "day2_after_seolhwa_2",
+      "field": "text",
+      "before": "*설화였다. 교문 안쪽에 서서 나를 보고 있었다. 노을빛 속에서. 긴 머리카락이 교복 위로 바람에 흩날렸다.*",
+      "after": "*설화였다. 노을빛 속 교문 안쪽에 서서 나를 보고 있었다. 긴 머리카락이 교복 위로 바람에 흩날렸다.*"
+    },
+    {
+      "id": "day2_broadcast_3",
+      "field": "text",
+      "before": "*학생들이 고개를 들었다. 스피커를 응시했다.*",
+      "after": "*학생들이 고개를 들어 스피커를 응시했다.*"
+    },
+    {
+      "id": "day2_lunch_sea_1",
+      "field": "text",
+      "before": "*오늘 도시락. 어제보다 더 정성스럽다. 치킨까스, 꽃 모양 당근, 꼬마김밥.*",
+      "after": "*오늘 도시락은 어제보다 더 정성스럽다. 치킨까스, 꽃 모양 당근, 꼬마김밥.*"
+    },
+    {
+      "id": "day2_lunch_rooftop_1",
+      "field": "text",
+      "before": "*옥상으로 향하는 계단을 오르는데, 층계참에서 목소리가 들려왔다.*",
+      "after": "*옥상으로 향하는 계단을 오르는데 층계참에서 목소리가 들려왔다.*"
+    },
+    {
+      "id": "day2_morning_gate_5",
+      "field": "text",
+      "before": "*정문에서 교실까지. 세아가 옆에서 걷는다.*",
+      "after": "*정문에서 교실까지 세아가 옆에서 걷는다.*"
+    },
+    {
+      "id": "day2_morning_deja5_3",
+      "field": "text",
+      "before": "*전 학교 교실을 떠올리자 창문과 책상은 있는데, 칠판 앞의 내 자리만 하얗게 남았다. 그래도 손바닥은 땀이 나지 않았다.*",
+      "after": "*전 학교 교실을 떠올리자 창문과 책상은 있는데 칠판 앞의 내 자리만 하얗게 남았다. 그래도 손바닥은 땀이 나지 않았다.*"
+    },
+    {
+      "id": "day2_night_phone_7",
+      "field": "text",
+      "before": "*평소라면 물음표 뒤에 이모티콘 하나쯤 붙였을 텐데, 아무것도 없다.*",
+      "after": "*평소라면 물음표 뒤에 이모티콘 하나쯤 붙였을 텐데 아무것도 없다.*"
+    },
+    {
+      "id": "day2_night_search_3",
+      "field": "text",
+      "before": "*뉴스 검색. '해돋이 학교.' 결과 없음. 지역 뉴스 탭도 비어 있다. 화면 가운데 `검색어와 일치하는 문서가 없습니다`만 남았다.*",
+      "after": "*뉴스 검색. '해돋이 학교.' 결과는 없고 지역 뉴스 탭도 비어 있다. 화면 가운데 `검색어와 일치하는 문서가 없습니다`만 남았다.*"
+    },
+    {
+      "id": "day2_night_dream_4",
+      "field": "text",
+      "before": "*누군가 앞자리에 앉아 있다. 긴 머리. 뒷모습만 보인다.*",
+      "after": "*누군가 앞자리에 앉아 있다. 긴 머리의 뒷모습만 보인다.*"
+    },
+    {
+      "id": "day3_after_riin",
+      "field": "text",
+      "before": "*보건실 문 앞에 섰다. 안에서 작은 소리가 들린다. 유리병 부딪히는 소리.*",
+      "after": "*보건실 문 앞에 섰다. 안에서 유리병 부딪히는 작은 소리가 들린다.*"
+    },
+    {
+      "id": "day3_after_sea",
+      "field": "text",
+      "before": "*교실에서 나오는데 세아가 기다리고 있다. 벽에 기대서. 언제부터 있었는지 모르겠다.*\n\n*형광등 아래, 세아의 그림자가 복도 바닥에 길게 누워 있다. 손에는 학생회실 열쇠가 걸려 있다.*",
+      "after": "*교실에서 나오는데 세아가 벽에 기대서 기다리고 있다. 언제부터 있었는지 모르겠다.*\n\n*형광등 아래, 세아의 그림자가 복도 바닥에 길게 누워 있다. 손에는 학생회실 열쇠가 걸려 있다.*"
+    },
+    {
+      "id": "day3_after_eunsu_peek_2",
+      "field": "text",
+      "before": "*번호와 날짜가 나열되어 있다. 이름 칸은 대부분 비어 있다. 번호만 있다.*",
+      "after": "*번호와 날짜가 나열되어 있다. 이름 칸은 대부분 비어 있고 번호만 있다.*"
+    },
+    {
+      "id": "day3_after_eunsu_peek_8a",
+      "field": "text",
+      "before": "*문 앞에 서 있다. 웃고 있다. 손에 든 휴대폰 화면은 꺼져 있다.*",
+      "after": "*문 앞에 서서 웃고 있다. 손에 든 휴대폰 화면은 꺼져 있다.*"
+    },
+    {
+      "id": "day3_after_alone_8",
+      "field": "text",
+      "before": "*일어섰다. 복도 끝에 게시판이 있다. 오래된 공지들이 붙어 있다. 그 아래, 벽에 긁힌 자국.*",
+      "after": "*일어섰다. 복도 끝 게시판에는 오래된 공지들이 붙어 있다. 그 아래, 벽에 긁힌 자국.*"
+    },
+    {
+      "id": "day3_after_yuna_3",
+      "field": "text",
+      "before": "*다가온다. 주머니에서 작은 것을 꺼낸다. 마이크로 SD카드.*",
+      "after": "*다가와 주머니에서 작은 것을 꺼낸다. 마이크로 SD카드다.*"
+    },
+    {
+      "id": "day3_lunch_door_open_5",
+      "field": "text",
+      "before": "*내 입에서 나온 말인데, 발음이 낯설었다.*",
+      "after": "*내 입에서 나온 말인데 발음이 낯설었다.*"
+    },
+    {
+      "id": "day3_lunch_door_open_6",
+      "field": "text",
+      "before": "*벽에 손을 짚었다. 입 안에 침이 고인다. 속이 올라온다. 삼켰다. 허리를 구부린 채 벽에 이마를 댔다. 타일이 차갑다.*",
+      "after": "*벽에 손을 짚었다. 입 안에 침이 고이고 속이 올라온다. 침을 삼켰다. 허리를 구부린 채 벽에 이마를 댔다. 타일이 차갑다.*"
+    },
+    {
+      "id": "day3_lunch_door_open_8",
+      "field": "text",
+      "before": "*복도를 걸으면서 스쳐가는 학생들을 본다. 몇몇은 인사하려다 입을 다문다. 몇몇은 처음 보는 얼굴처럼 지나친다.*",
+      "after": "*복도를 걸으면서 스쳐가는 학생들을 본다. 몇몇은 인사하려다 입을 다물고 몇몇은 처음 보는 얼굴처럼 지나친다.*"
+    },
+    {
+      "id": "day3_lunch_riin_first_2",
+      "field": "text",
+      "before": "*보건실은 처음인데, 선생님이 바로 내 이름을 부른다. 출석부에서 봤나.*",
+      "after": "*보건실은 처음인데 선생님이 바로 내 이름을 부른다. 출석부에서 봤나.*"
+    },
+    {
+      "id": "day3_lunch_riin_choice",
+      "field": "text",
+      "before": "*리인 선생님은 웃으며 컵을 내 쪽으로 내밀지만, 다른 손은 싱크대 수도꼭지 가까이에 놓여 있다.*",
+      "after": "*리인 선생님은 웃으며 컵을 내 쪽으로 내밀지만 다른 손은 싱크대 수도꼭지 가까이에 놓여 있다.*"
+    },
+    {
+      "id": "day3_lunch_riin_refuse_2",
+      "field": "text",
+      "before": "*컵을 가져간다. 싱크대에 내용물을 버린다. 보라색 액체가 물에 닿자 곧바로 색을 잃었다.*",
+      "after": "*컵을 가져가 싱크대에 내용물을 버린다. 보라색 액체가 물에 닿자 곧바로 색을 잃었다.*"
+    },
+    {
+      "id": "day3_lunch_alone_3",
+      "field": "text",
+      "before": "*뒷자리를 본다. 설화의 자리. 출석부에서 그 줄은 오늘도 비어 있었다. 칠판 위 날짜만 3일째 바뀌었다.*",
+      "after": "*뒷자리인 설화의 자리를 본다. 출석부에서 그 줄은 오늘도 비어 있었다. 칠판 위 날짜만 3일째 바뀌었다.*"
+    },
+    {
+      "id": "day3_morning_locker_2",
+      "field": "text",
+      "before": "*사물함. 이름이 긁혀 지워져 있다. 열쇠나 칼로 여러 번 긁어낸 흔적.*",
+      "after": "*사물함의 이름이 긁혀 지워져 있다. 열쇠나 칼로 여러 번 긁어낸 흔적.*"
+    },
+    {
+      "id": "day3_morning_locker_5",
+      "field": "text",
+      "before": "*이 얼굴. 낯이 익다. 누구지?*",
+      "after": "*이 얼굴은 낯이 익다. 누구지?*"
+    },
+    {
+      "id": "day3_morning_classroom_3",
+      "field": "text",
+      "before": "*대화가 멈췄다. 일제히.*",
+      "after": "*대화가 일제히 멈췄다.*"
+    },
+    {
+      "id": "day3_morning_pencil_2",
+      "field": "text",
+      "before": "*분명 왼쪽에 두었는데, 오른쪽에 있다.*",
+      "after": "*분명 왼쪽에 두었는데 오른쪽에 있다.*"
+    },
+    {
+      "id": "day3_night_bleed",
+      "field": "text",
+      "before": "*이불에 누웠다. 불을 끈 방. 천장에 가로등 빛이 네모나게 들어온다.*",
+      "after": "*이불에 누웠다. 불을 끈 방 천장에 가로등 빛이 네모나게 들어온다.*"
+    },
+    {
+      "id": "day3_night_stat_crack",
+      "field": "text",
+      "before": "*다시 누웠다. 눈을 감았다.*",
+      "after": "*다시 누워 눈을 감았다.*"
+    },
+    {
+      "id": "day3_night_wall_4",
+      "field": "text",
+      "before": "*벽에 글씨가 적혀 있다. 가로등 빛에 희미하게 보인다. 연필로. 내 필체로.*",
+      "after": "*벽에 연필로 적힌 글씨가 가로등 빛에 희미하게 보인다. 내 필체다.*"
+    },
+    {
+      "id": "day3_night_wall_11",
+      "field": "text",
+      "before": "*방을 둘러봤다. 책상 위에 연필이 놓여 있다. 아까 거기 두지 않았다. 서랍에 넣어 뒀다. 서랍 손잡이에도 흑연이 조금 묻어 있다.*",
+      "after": "*방을 둘러봤다. 아까 서랍에 넣어 뒀던 연필이 책상 위에 놓여 있다. 서랍 손잡이에도 흑연이 조금 묻어 있다.*"
+    },
+    {
+      "id": "day3_night_seolhwa_4b",
+      "field": "text",
+      "before": "*설화는 나를 보고 있다. 눈가가 젖어 있다.*",
+      "after": "*설화는 눈가가 젖은 채 나를 보고 있다.*"
+    },
+    {
+      "id": "day3_night_seolhwa_13",
+      "field": "text",
+      "before": "*눈을 깜빡였다. 설화는 사라져 있다. 서 있던 자리에 아무것도 없다. 바닥에 발자국도 없다.*",
+      "after": "*눈을 깜빡였다. 설화는 사라져 있다. 서 있던 자리는 비었고 바닥에는 발자국도 없다.*"
+    },
+    {
+      "id": "day3_night_deny_2",
+      "field": "text",
+      "before": "*이불을 덮었다. 눈을 감았다. 벽의 글씨가 눈 뒤에 남아 있다.*",
+      "after": "*이불을 덮고 눈을 감았다. 벽의 글씨가 눈 뒤에 남아 있다.*"
+    },
+    {
+      "id": "day3_xover_glitch_6",
+      "field": "text",
+      "before": "*눈을 떴다. 방이다. 꿈이었나.*",
+      "after": "*눈을 뜨니 방이다. 꿈이었나.*"
+    },
+    {
+      "id": "day4_after_sea_confess_7",
+      "field": "text",
+      "before": "*소매를 걷는다. 손목에 낡은 실팔찌가 감겨 있다. 실이 군데군데 풀려 있다.*",
+      "after": "*소매를 걷는다. 손목에 감긴 낡은 실팔찌는 실이 군데군데 풀려 있다.*"
+    },
+    {
+      "id": "day4_after_sea_12loop_10",
+      "field": "text",
+      "before": "*소매를 걷었을 때 보였다. 손목의 낡은 실팔찌. 실이 군데군데 풀려 있다.*",
+      "after": "*소매를 걷었을 때 손목의 낡은 실팔찌가 보였다. 실이 군데군데 풀려 있다.*"
+    },
+    {
+      "id": "day4_after_riin_15",
+      "field": "text",
+      "before": "*주머니에서 열쇠를 꺼낸다. 작은 금속 열쇠.*",
+      "after": "*주머니에서 작은 금속 열쇠를 꺼낸다.*"
+    },
+    {
+      "id": "day4_xover_yuna_5",
+      "field": "text",
+      "before": "매번 그러더라. 같은 얼굴로 와서. 모른다고 하고.",
+      "after": "매번 그러더라. 같은 얼굴로 와서는 모른다고 하고."
+    },
+    {
+      "id": "day4_lunch_yuna_3",
+      "field": "text",
+      "before": "*유나의 사물함. 텅 비어 있다. 바닥 먼지까지 네모나게 닦여 있다.*",
+      "after": "*유나의 사물함은 텅 비어 있고 바닥 먼지까지 네모나게 닦여 있다.*"
+    },
+    {
+      "id": "day4_lunch_yuna_7",
+      "field": "text",
+      "before": "*사진 목록. 200장이 넘는다. 대부분 학교 풍경이다. 구석마다 같은 양복 차림이 반복된다. 얼굴은 다르지만 서 있는 위치가 같다.*",
+      "after": "*사진 목록. 200장이 넘고 대부분 학교 풍경이다. 구석마다 같은 양복 차림이 반복된다. 얼굴은 다르지만 서 있는 위치가 같다.*"
+    },
+    {
+      "id": "day4_morning_start_9",
+      "field": "text",
+      "before": "*김 사이로 눈동자 두 쌍이 겹쳤다가, 다시 하나로 붙는다.*",
+      "after": "*김 사이로 눈동자 두 쌍이 겹쳤다가 다시 하나로 붙는다.*"
+    },
+    {
+      "id": "day4_morning_start_12",
+      "field": "text",
+      "before": "*세수는 대충 끝냈다. 거울을 등지고 이를 닦았다. 칫솔질 소리만 욕실 타일에 부딪혔다.*",
+      "after": "*세수는 대충 끝내고 거울을 등진 채 이를 닦았다. 칫솔질 소리만 욕실 타일에 부딪혔다.*"
+    },
+    {
+      "id": "day4_morning_start_14",
+      "field": "text",
+      "before": "*커튼 사이로 아침 햇살이 들어온다. 밝은 날씨다. 그런데 창문 아래 인도에 사람이 서 있다. 양복. 선글라스. 팔짱을 끼고 이쪽을 올려다보고 있다.*",
+      "after": "*커튼 사이로 아침 햇살이 들어온다. 밝은 날씨다. 그런데 창문 아래 인도에 양복 차림에 선글라스를 쓴 사람이 서 있다. 팔짱을 끼고 이쪽을 올려다보고 있다.*"
+    },
+    {
+      "id": "day4_morning_gate_9",
+      "field": "text",
+      "before": "*정문 앞에 은수 선생님이 서 있다. 교문에 기대어. 웃고 있다. 스피커 작동등 바로 아래에서.*",
+      "after": "*정문 앞에 은수 선생님이 교문에 기대어 서 있다. 스피커 작동등 바로 아래에서 웃고 있다.*"
+    },
+    {
+      "id": "day4_morning_classroom_met_3",
+      "field": "text",
+      "before": "*어제까지 스티커가 붙어 있었다. 사진부 스티커. 그 스티커도 없다.*",
+      "after": "*어제까지 붙어 있던 사진부 스티커도 없다.*"
+    },
+    {
+      "id": "day4_morning_classroom_notmet",
+      "field": "text",
+      "before": "*교실 한쪽에 빈 자리가 보인다. 다른 책상에는 낙서나 스티커가 붙어 있는데, 저 자리만 흠집이 없다.*",
+      "after": "*교실 한쪽에 빈 자리가 보인다. 다른 책상에는 낙서나 스티커가 붙어 있는데 저 자리만 흠집이 없다.*"
+    },
+    {
+      "id": "day4_morning_sea_10",
+      "field": "text",
+      "before": "*스티커만 떼어냈는데, 먼지 자국까지 같이 사라져 있다.*",
+      "after": "*스티커만 떼어냈는데 먼지 자국까지 같이 사라져 있다.*"
+    },
+    {
+      "id": "day4_morning_class_2",
+      "field": "text",
+      "before": "*교탁에 선다. 분필을 집는다. 칠판에 '소속'이라고 쓴다.*",
+      "after": "*교탁에 서서 분필을 집어 칠판에 '소속'이라고 쓴다.*"
+    },
+    {
+      "id": "day4_night_mirror_swipe",
+      "field": "text",
+      "before": "*손을 올렸다. 거울 위에 손바닥을 댔다. 차갑다.*",
+      "after": "*손을 올려 거울 위에 손바닥을 댔다. 차갑다.*"
+    },
+    {
+      "id": "day5_after_caught_resist_4",
+      "field": "text",
+      "before": "*전기가 끊겼다. 형광등이 꺼졌다.*",
+      "after": "*전기가 끊기자 형광등이 꺼졌다.*"
+    },
+    {
+      "id": "day5_after_caught_resist_6",
+      "field": "text",
+      "before": "*왼손이 먼저 버클을 찾았다. 보이지 않는데도. 손가락이 예전에 풀어봤던 경로를 더듬는다.*",
+      "after": "*보이지 않는데도 왼손이 먼저 버클을 찾았다. 손가락이 예전에 풀어봤던 경로를 더듬는다.*"
+    },
+    {
+      "id": "day5_after_caught_submit_2",
+      "field": "text",
+      "before": "*주사기가 팔에 닿는다. 바늘이 들어간다. 차가운 액체가 혈관을 타고 퍼진다.*",
+      "after": "*주사기가 팔에 닿아 바늘이 들어간다. 차가운 액체가 혈관을 타고 퍼진다.*"
+    },
+    {
+      "id": "day5_after_confront_11",
+      "field": "text",
+      "before": "그래서 문부터 잠갔어. 사람을 붙이고, 앱을 깔게 하고, 등굣길도 막았어.",
+      "after": "그래서 문부터 잠갔어. 사람을 붙이고 앱을 깔게 하고 등굣길도 막았어."
+    },
+    {
+      "id": "day5_after_ghost_9",
+      "field": "text",
+      "before": "*몸이 움직였다. 발끝이 비상구 쪽으로 꺾였다. 유나의 손을 잡고 뛰었다.*",
+      "after": "*몸이 움직이고 발끝이 비상구 쪽으로 꺾였다. 유나의 손을 잡고 뛰었다.*"
+    },
+    {
+      "id": "day5_lunch_chase_3",
+      "field": "text",
+      "before": "*유나의 숨소리가 거칠다. 다리가 자꾸 접힌다. 내 어깨에 기댄 체중이 점점 무거워진다.*",
+      "after": "*유나의 숨소리가 거칠고 다리가 자꾸 접힌다. 내 어깨에 기댄 체중이 점점 무거워진다.*"
+    },
+    {
+      "id": "day5_lunch_left_9",
+      "field": "text",
+      "before": "근데 네가 저 문을 지나가면, 다음 날 내 앞에는 모르는 사람이 서 있어.",
+      "after": "근데 네가 저 문을 지나가면 다음 날 내 앞에는 모르는 사람이 서 있어."
+    },
+    {
+      "id": "day5_lunch_right_15",
+      "field": "text",
+      "before": "*약병 뚜껑을 열고 코끝에 댔다. 잠깐 냄새를 확인하더니, 그대로 한 모금 삼켰다.*",
+      "after": "*약병 뚜껑을 열고 코끝에 댔다. 잠깐 냄새를 확인하더니 그대로 한 모금 삼켰다.*"
+    },
+    {
+      "id": "day5_lunch_right_32",
+      "field": "text",
+      "before": "*주머니에서 열쇠를 꺼냈다. 작은 은색 열쇠. 표면의 홈이 손때로 반질하다.*",
+      "after": "*주머니에서 작은 은색 열쇠를 꺼냈다. 표면의 홈이 손때로 반질하다.*"
+    },
+    {
+      "id": "day5_lunch_seolhwa_13",
+      "field": "text",
+      "before": "*계단에 앉았다. 무릎을 감싸안았다. 4일차 밤, 욕실 타일 위에 남았던 냉기가 떠올랐다.*",
+      "after": "*계단에 앉아 무릎을 감싸안았다. 4일차 밤, 욕실 타일 위에 남았던 냉기가 떠올랐다.*"
+    },
+    {
+      "id": "day5_lunch_seolhwa_c2_3",
+      "field": "text",
+      "before": "네가 나가면, 벽에 남긴 화살표도 더는 필요 없어.",
+      "after": "네가 나가면 벽에 남긴 화살표도 더는 필요 없어."
+    },
+    {
+      "id": "day5_lunch_seolhwa_guide_2",
+      "field": "text",
+      "before": "*말이 끝나기도 전에 손이 움직였다. 벽을 짚었다. 페인트 밑으로 아주 얕은 홈이 이어져 있다. 손끝으로만 알 수 있는 길.*",
+      "after": "*말이 끝나기도 전에 손이 움직여 벽을 짚었다. 페인트 밑으로 아주 얕은 홈이 이어져 있다. 손끝으로만 알 수 있는 길.*"
+    },
+    {
+      "id": "day5_lunch_seolhwa_guide_14",
+      "field": "text",
+      "before": "*문이 열렸다. 늦은 밤의 차갑고 마른 공기가 들이쳤다. 목구멍에 밴 약 냄새가 옅어졌다.*",
+      "after": "*문이 열리고 늦은 밤의 차갑고 마른 공기가 들이쳤다. 목구멍에 밴 약 냄새가 옅어졌다.*"
+    },
+    {
+      "id": "day5_lunch_eunsu_3",
+      "field": "text",
+      "before": "*발소리가 점점 가까워진다. 콘크리트에 부딪히는 구두 소리. 은수 선생님의 구두.*",
+      "after": "*발소리가 점점 가까워진다. 콘크리트에 부딪히는 은수 선생님의 구두 소리.*"
+    },
+    {
+      "id": "day5_morning_school_6",
+      "field": "text",
+      "before": "*단말의 화면이 꺼진다. 유리에 내 얼굴이 비친다. 이름표 글자가 얼굴보다 먼저 보였다.*",
+      "after": "*단말의 화면이 꺼지고 유리에 내 얼굴이 비친다. 이름표 글자가 얼굴보다 먼저 보였다.*"
+    },
+    {
+      "id": "day5_morning_rescue_4_unknown",
+      "field": "text",
+      "before": "*낯선 얼굴인데, 목소리 끝의 숨소리가 익숙하다. 가죽 끈부터 풀었다.*",
+      "after": "*낯선 얼굴인데 목소리 끝의 숨소리가 익숙하다. 가죽 끈부터 풀었다.*"
+    },
+    {
+      "id": "day5_morning_rescue_7",
+      "field": "text",
+      "before": "*유나의 가죽 끈을 풀었다. 매듭이 단단하다. 손톱 끝이 까지도록 잡아당긴 끝에 겨우 풀었다. 유나의 손이 차갑다. 내 손도 차갑다.*",
+      "after": "*유나의 가죽 끈을 풀었다. 매듭이 단단해 손톱 끝이 까지도록 잡아당긴 끝에 겨우 풀었다. 유나의 손이 차갑다. 내 손도 차갑다.*"
+    },
+    {
+      "id": "day5_morning_true_12",
+      "field": "text",
+      "before": "*서류 모서리에 스탬프가 찍혀 있다. `폐기`. 잉크가 번져서, 책상 나뭇결 사이로 스며들어 있다.*",
+      "after": "*서류 모서리에 스탬프가 찍혀 있다. `폐기`. 잉크가 번져서 책상 나뭇결 사이로 스며들어 있다.*"
+    },
+    {
+      "id": "day5_morning_broadcast_12",
+      "field": "text",
+      "before": "*쿵. 위에서 문 닫히는 소리. 무거운 철제 문이 닫히는 소리.*",
+      "after": "*쿵. 위에서 무거운 철제 문이 닫히는 소리.*"
+    },
+    {
+      "id": "day5_morning_grad_7",
+      "field": "text",
+      "before": "*책상 위에 하나씩 놓여 있다. 이름표. 1번부터 12번까지. 시행 번호와 그때 부여된 이름. 13번 자리가 비어 있다. 내 자리.*",
+      "after": "*책상 위에 이름표가 하나씩 놓여 있다. 1번부터 12번까지. 시행 번호와 그때 부여된 이름. 13번 자리가 비어 있다. 내 자리.*"
+    },
+    {
+      "id": "day5_ending_escape_8",
+      "field": "text",
+      "before": "*학교 쪽을 돌아보자, 구관 3층 창문 하나만 어둡게 비어 있다.*",
+      "after": "*학교 쪽을 돌아보자 구관 3층 창문 하나만 어둡게 비어 있다.*"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_5",
+      "field": "text",
+      "before": "*교실 문이 부드럽게 닫혔다. 잠그지 않았다는 걸 알면서도, 나는 자리에서 일어나지 않았다.*",
+      "after": "*교실 문이 부드럽게 닫혔다. 잠그지 않았다는 걸 알면서도 나는 자리에서 일어나지 않았다.*"
+    },
+    {
+      "id": "day5_ending_forget_16",
+      "field": "text",
+      "before": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데, 부를 말이 떠오르지 않는다.*",
+      "after": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데 부를 말이 떠오르지 않는다.*"
+    }
+  ],
+  "supplementaryRuns": [
+    {
+      "run": "002-dbc4",
+      "scope": "Three gift lines and visible Eunsu visitor",
+      "route": "light",
+      "rate": 0,
+      "checks": "6/6"
+    },
+    {
+      "run": "003-dbc4",
+      "scope": "Three canonical prologue lines and safety app narration",
+      "route": "light",
+      "rate": 0,
+      "checks": "6/6"
+    },
+    {
+      "run": "004-dbc4",
+      "scope": "All 65 Korean CAGE lines",
+      "route": "light",
+      "rate": 0,
+      "checks": "6/6",
+      "result": "Intentional programmed repetition retained"
+    },
+    {
+      "run": "005-dbc4",
+      "scope": "Selected lunch-route clue summary",
+      "route": "light",
+      "rate": 0,
+      "checks": "6/6"
+    }
+  ],
+  "limits": "Full anchored-dump gate rate is a preservation metric, not a translation quality score. Finalizer directly reviewed all changed fields and diagnosed examples; it does not claim a native-speaker sentence-by-sentence review of every unchanged line."
+}

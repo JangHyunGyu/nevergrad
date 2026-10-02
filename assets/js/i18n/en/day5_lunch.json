@@ -33,7 +33,7 @@
         "text": "Sunbae, hurry!"
     },
     "day5_lunch_chase_10": {
-        "text": "*Footsteps from the left. — No, from the right too. 5 seconds. I have to decide in 5 seconds.*",
+        "text": "*Footsteps come from the left, then from the right as well. Five seconds. Both sides are getting closer.*",
         "choices": [
             "Left — main building",
             "Right — old wing"
@@ -58,7 +58,7 @@
         "text": "Sea, move."
     },
     "day5_lunch_left_5b": {
-        "text": "*Sea shook her head. She bit her lip. Blood welled up.*"
+        "text": "*Sea shakes her head and stays in front of the door.*"
     },
     "day5_lunch_left_6": {
         "text": "I can't move aside. Not this time."
@@ -121,7 +121,7 @@
         "text": "...Do I have to get out of the way this time too?"
     },
     "day5_lunch_left_choice": {
-        "text": "*Bang, bang, bang. Footsteps on the stairs draw closer. Sea looks toward the sound but still refuses to move.*\n\n*Before the choices appear, an unfamiliar option slips in among the lines.*\n\n***`[RETENTION APPROVED]`***",
+        "text": "*Bang, bang, bang. Footsteps on the stairs draw closer. Sea looks toward the sound but doesn’t move aside.*\n\n*An unfamiliar sentence appears in the middle of my thoughts.*\n\n***`[RETENTION APPROVED]`***",
         "choices": [
             "\"I'm sorry. But I have to go.\"",
             "\"Come with me.\"",
@@ -310,7 +310,7 @@
         "text": "After that, I split the chart in two. One for submission, one for the truth."
     },
     "day5_lunch_right_30": {
-        "text": "...That's why your body knew first. The hallway, the stairs, even her name."
+        "text": "That’s why your hand found the way first. The hallway, the stairs, even her name."
     },
     "day5_lunch_right_31": {
         "text": "The emergency exit key."
@@ -337,7 +337,7 @@
         "text": "...No time. Take it."
     },
     "day5_lunch_right_39": {
-        "text": "*Riin is holding out a key. A small silver key. -- Her hand is trembling.*"
+        "text": "*Nurse Riin holds out a small silver key. It clicks lightly between her fingers.*"
     },
     "day5_lunch_right_choice": {
         "text": "*The fire shutter rattled again. Metal screaming.*",
@@ -523,7 +523,7 @@
         "text": "*3rd floor. In front of the emergency exit.*"
     },
     "day5_lunch_seolhwa_guide_11": {
-        "text": "*She looks back from the doorway. Seolhwa's outline begins to unravel in the stairwell light.*"
+        "text": "*I look back from the doorway. Seolhwa fades from the face down until I can’t see her at all.*"
     },
     "day5_lunch_seolhwa_guide_12": {
         "text": ""
@@ -547,7 +547,7 @@
         "text": "*From behind — footsteps. Coming up the stairs.*"
     },
     "day5_lunch_eunsu_2": {
-        "text": "*square. square. It's slow. don't run There is no sound of taking a breath.*"
+        "text": "*Footsteps climb the stairs one at a time. No running. No sound of anyone catching their breath.*"
     },
     "day5_lunch_eunsu_3": {
         "text": "*The footsteps grow closer. The sound of dress shoes hitting concrete. Ms. Eunsu's shoes.*"
@@ -559,7 +559,7 @@
         "text": "*Ms. Eunsu appeared. Out of breath. Hair disheveled. — Not the composed appearance from the classroom.*"
     },
     "day5_lunch_eunsu_6": {
-        "text": "*Ms. Eunsu steadies her breathing and forces the corners of her mouth upward. Her usual gentle smile—except one side trembles faintly.*"
+        "text": "*She opens and closes her mouth, then speaks in her usual voice.*"
     },
     "day5_lunch_eunsu_7": {
         "text": "{name}. Stop there. The emergency exit side is a restricted area."
@@ -601,7 +601,7 @@
         "text": "*Ms. Eunsu slowly draws a syringe from her pocket, as though displaying it to me.*\n\n*The liquid inside glints under the fluorescent light. Small letters on the label read `RESET / S-13`. A single drop hangs from the needle.*"
     },
     "day5_lunch_eunsu_20": {
-        "text": "This is the final choice, {name}."
+        "text": "Decide now, {name}."
     },
     "day5_lunch_eunsu_21": {
         "text": "One shot and it's over. You just have to keep your eyes closed."
@@ -624,7 +624,7 @@
         "text": "...Come back."
     },
     "day5_lunch_eunsu_26": {
-        "text": "*Ms. Eunsu's hand shakes. The syringe trembles, and a drop falls to the floor.*"
+        "text": "*A drop falls from the syringe tip onto the floor. Eunsu doesn’t lower her hand.*"
     },
     "day5_lunch_eunsu_27": {
         "text": "*A tear slips from Ms. Eunsu's eye and falls from her chin. She still refuses to let go of the syringe.*"
@@ -633,7 +633,7 @@
         "text": "*Emergency exit wind entered the shirt. Only the teacher's breathing and my own breathing remained. Yuna leans against the wall and does not move.*"
     },
     "day5_lunch_eunsu_29": {
-        "text": "*Syringe and emergency exit. Closed classroom and open night air.*"
+        "text": "*I look back and forth between the needle tip and the door handle.*"
     },
     "day5_lunch_eunsu_30": {
         "text": "*I just need to push her away and run. That hand has no strength to hold me. But my feet have already turned toward the classroom.*"
@@ -653,18 +653,18 @@
         ]
     },
     "day5_lunch_final_true": {
-        "text": "*...*"
+        "text": "*I decide not to erase my memories.*"
     },
     "day5_lunch_final_forget": {
-        "text": "*...*"
+        "text": "*I decide to erase my memories.*"
     },
     "day5_lunch_final_resist": {
-        "text": "*...*"
+        "text": "*I decide to leave together.*"
     },
     "day5_lunch_final_ghost": {
         "text": "I'll do it."
     },
     "day5_lunch_end": {
-        "text": "*...*"
+        "text": "*Lunch break ends.*"
     }
 }

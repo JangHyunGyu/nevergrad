@@ -33,7 +33,7 @@
         "text": "Sunbae, vite !"
     },
     "day5_lunch_chase_10": {
-        "text": "*Des pas venant de la gauche. — Non, de la droite aussi. 5 secondes. Je dois décider en 5 secondes.*",
+        "text": "*Des pas arrivent de la gauche, puis bientôt de la droite. Cinq secondes. Les deux côtés se rapprochent.*",
         "choices": [
             "Gauche — bâtiment principal",
             "Droite — ancienne aile"
@@ -58,7 +58,7 @@
         "text": "Sea, écarte-toi."
     },
     "day5_lunch_left_5b": {
-        "text": "*Sea secoua la tête. Elle se mordit les lèvres. Du sang apparut.*"
+        "text": "*Sea secoue la tête et garde sa place devant la porte.*"
     },
     "day5_lunch_left_6": {
         "text": "Je ne peux pas m'écarter. Pas cette fois."
@@ -121,7 +121,7 @@
         "text": "... Dois-je aussi m'écarter cette fois-ci?"
     },
     "day5_lunch_left_choice": {
-        "text": "*Boum, boum, boum. Les pas dans l’escalier se rapprochent. Sea regarde dans leur direction, mais refuse toujours de s’écarter.*\n\n*Avant même que les choix apparaissent, une option inconnue se glisse entre les lignes.*\n\n***`[MAINTIEN APPROUVÉ]`***",
+        "text": "*Boum, boum, boum. Les pas dans l’escalier se rapprochent. Sea regarde vers le bruit mais ne s’écarte pas.*\n\n*Une phrase inconnue apparaît au centre de mes pensées.*\n\n***`[RETENTION APPROVED]`***",
         "choices": [
             "« Désolé. Mais je dois y aller. »",
             "« Viens avec moi. »",
@@ -310,7 +310,7 @@
         "text": "Après cela, j'ai divisé le graphique en deux. Un pour la soumission, un pour la vérité."
     },
     "day5_lunch_right_30": {
-        "text": "...C'est pour ça que ton corps l'a su avant toi. Le couloir, l'escalier, jusqu'à son nom."
+        "text": "C’est pourquoi ta main a trouvé le chemin en premier : le couloir, les escaliers, même son nom."
     },
     "day5_lunch_right_31": {
         "text": "La clé de la sortie de secours."
@@ -337,7 +337,7 @@
         "text": "...Pas le temps. Prends-la."
     },
     "day5_lunch_right_39": {
-        "text": "*Riin tend une clé. Une petite clé argentée. — Sa main tremble.*"
+        "text": "*Riin tend une petite clé argentée. Elle cliquette légèrement entre ses doigts.*"
     },
     "day5_lunch_right_choice": {
         "text": "*Le rideau coupe-feu tremble de nouveau. Le métal résonne bruyamment.*",
@@ -523,7 +523,7 @@
         "text": "*3e étage. Devant la sortie de secours.*"
     },
     "day5_lunch_seolhwa_guide_11": {
-        "text": "*Seolhwa se retourna vers la porte. Les bords du visage souriant se desserrent légèrement à la lumière des escaliers.*"
+        "text": "*Je regarde en arrière depuis la porte. Seolhwa s’estompe, d’abord le visage, puis elle disparaît complètement.*"
     },
     "day5_lunch_seolhwa_guide_12": {
         "text": ""
@@ -547,7 +547,7 @@
         "text": "*Derrière — des pas. Montant les escaliers.*"
     },
     "day5_lunch_eunsu_2": {
-        "text": "*Une marche. Puis une autre. Lentement. Elle ne court pas. On ne l’entend même pas reprendre son souffle.*"
+        "text": "*Les pas montent l’escalier, une marche à la fois. Personne ne court. Aucun bruit de respiration pour reprendre son souffle.*"
     },
     "day5_lunch_eunsu_3": {
         "text": "*Les pas se rapprochent. Le son de chaussures habillées sur le béton. Les chaussures de Mme Eunsu.*"
@@ -559,7 +559,7 @@
         "text": "*Mme Eunsu est apparu. Essoufflée. Les cheveux en désordre. — Pas l'apparence composée de la salle de classe.*"
     },
     "day5_lunch_eunsu_6": {
-        "text": "*La professeure reprend son souffle et force les coins de sa bouche à se relever. Le sourire doux de d'habitude. Mais un côté de ses lèvres tremble finement.*"
+        "text": "*Elle ouvre la bouche, la referme, puis parle d’une voix habituelle.*"
     },
     "day5_lunch_eunsu_7": {
         "text": "{name}. Arrête-toi là. Le côté de la sortie de secours est une zone fermée."
@@ -601,7 +601,7 @@
         "text": "*La professeure a sorti une seringue de sa poche. Lentement. Comme pour me la montrer.*\n\n*Le liquide dans la seringue a scintillé sous la lumière fluorescente. Sur l'étiquette, de petites lettres indiquaient : `RESET / S-13`. Une goutte pendait au bout de l'aiguille.*"
     },
     "day5_lunch_eunsu_20": {
-        "text": "C'est le choix final, {name}."
+        "text": "Décide maintenant, {name}."
     },
     "day5_lunch_eunsu_21": {
         "text": "Un coup et c'est fini. Il suffit de garder les yeux fermés."
@@ -624,7 +624,7 @@
         "text": "...Reviens."
     },
     "day5_lunch_eunsu_26": {
-        "text": "*La main de la professeure tremble. La seringue vacille. Une goutte tombe au sol.*"
+        "text": "*Une goutte tombe du bout de la seringue sur le sol. Eunsu ne baisse pas la main.*"
     },
     "day5_lunch_eunsu_27": {
         "text": "*L'humidité au coin des yeux de la professeure est tombée sous son menton. Elle continuait seulement à tenir la seringue.*"
@@ -633,7 +633,7 @@
         "text": "*Le vent de la sortie de secours s’engouffre sous ma chemise. Il ne reste que le souffle de la professeure et le mien. Yuna demeure immobile contre le mur.*"
     },
     "day5_lunch_eunsu_29": {
-        "text": "*La seringue et la sortie de secours. La salle de classe fermée et l'air nocturne ouvert.*"
+        "text": "*Je regarde alternativement la pointe de l’aiguille et la poignée de porte.*"
     },
     "day5_lunch_eunsu_30": {
         "text": "*Il suffit de la pousser et de courir. Cette main n’a pas la force de me retenir. Pourtant, mes pieds sont déjà tournés vers la salle de classe.*"
@@ -653,18 +653,18 @@
         ]
     },
     "day5_lunch_final_true": {
-        "text": "*...*"
+        "text": "*Je décide de ne pas effacer mes souvenirs.*"
     },
     "day5_lunch_final_forget": {
-        "text": "*...*"
+        "text": "*Je décide d’effacer mes souvenirs.*"
     },
     "day5_lunch_final_resist": {
-        "text": "*...*"
+        "text": "*Je décide de partir ensemble.*"
     },
     "day5_lunch_final_ghost": {
         "text": "C'est moi qui le ferai."
     },
     "day5_lunch_end": {
-        "text": "*...*"
+        "text": "*La pause déjeuner se termine.*"
     }
 }

@@ -10794,7 +10794,7 @@ _source: `day4_3_afterschool.js / day4_afterschool.json`_
 
 **나**
 ```text
-*점심에 본 단서들을 노트에 적었다. 새 자물쇠, `M-13`, 난간의 글씨.*
+*점심에 본 단서들을 노트에 적었다.*
 ```
 
 ### `day4_after_start_3`

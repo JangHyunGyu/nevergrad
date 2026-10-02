@@ -1,0 +1,277 @@
+{
+  "date": "2026-10-02",
+  "scope": "Five-day story graph, all eight languages, 2,114 effective initial entries per language, choices, runtime overlays, UI/name glossary and all CAGE pools. Broad automated review plus directly curated critical changes; no claim of perfect native-speaker prose in every language.",
+  "baseline": "b894a07",
+  "intermediateCommit": "844bf89",
+  "changes": {
+    "textFields": 1970,
+    "changedChoiceArrays": 2,
+    "newLocalizedSceneEntries": 56,
+    "byLanguage": {
+      "ko": {
+        "changedText": 91,
+        "changedChoiceArrays": 0,
+        "addedSceneEntries": 7
+      },
+      "en": {
+        "changedText": 256,
+        "changedChoiceArrays": 0,
+        "addedSceneEntries": 7
+      },
+      "ja": {
+        "changedText": 512,
+        "changedChoiceArrays": 0,
+        "addedSceneEntries": 7
+      },
+      "es": {
+        "changedText": 252,
+        "changedChoiceArrays": 0,
+        "addedSceneEntries": 7
+      },
+      "fr": {
+        "changedText": 258,
+        "changedChoiceArrays": 0,
+        "addedSceneEntries": 7
+      },
+      "de": {
+        "changedText": 253,
+        "changedChoiceArrays": 0,
+        "addedSceneEntries": 7
+      },
+      "pt": {
+        "changedText": 306,
+        "changedChoiceArrays": 2,
+        "addedSceneEntries": 7
+      },
+      "zh": {
+        "changedText": 42,
+        "changedChoiceArrays": 0,
+        "addedSceneEntries": 7
+      }
+    },
+    "koreanStyleFields": 86,
+    "curatedCriticalEnglishScenes": 160,
+    "cagePoolLength": 65,
+    "missingCagePositionsRestored": {
+      "es": 32,
+      "de": 32,
+      "pt": 32
+    }
+  },
+  "confirmedStoryFixes": [
+    {
+      "id": "first-night-gifts",
+      "evidence": "Yuna photo and Riin tea are mutually exclusive afternoon rewards. Previously the night listed both unconditionally.",
+      "result": "Milk/photo/tea receipt flags select only acquired gift narration; early NG+ and no-gift paths skip unreceived items."
+    },
+    {
+      "id": "strawberry-preference",
+      "evidence": "Question about chocolate incorrectly set chose_strawberry.",
+      "result": "Flag moved to the actual strawberry answer."
+    },
+    {
+      "id": "day4_lunch_yuna_17",
+      "evidence": "Scene renders eunsu_cold and sets saw_eunsu_key.",
+      "result": "All languages identify the visible visitor as Eunsu. Supersedes the earlier anonymous-visitor interpretation in the narrow review."
+    },
+    {
+      "id": "day4_morning_commute_5",
+      "evidence": "Next scene has a delete menu and permission-denied response.",
+      "result": "Removed the unsupported claim that no delete menu exists."
+    },
+    {
+      "id": "day4_after_start_2",
+      "evidence": "Three lunch routes expose different clues.",
+      "result": "Notebook summary refers only to clues seen on the chosen route."
+    },
+    {
+      "id": "canonical-runtime-text",
+      "evidence": "Legacy PACK could overwrite the current JSON and used different Yuna transfer/isolation narration.",
+      "result": "Effective runtime wording moved into all eight JSON sets; JSON wins over stale overlays on loadAll and reload."
+    }
+  ],
+  "translationCorrections": [
+    "Seojin identity and Park surname, first-person narration, Japanese speaker register and Portuguese spelling",
+    "Restore missing page/hand/camera/clock actions and clues; remove unsupported physical reactions",
+    "Distinguish an injection from a gunshot/photo and preserve the syringe holder/recipient",
+    "Correct who first called Seolhwa by name; keep light and walls visible through the ghost",
+    "Restore route and ending decisions, all three retention-message paragraphs, late-night time and ending subtitles",
+    "Restore narration/dialogue emphasis and complete 65-position CAGE coverage"
+  ],
+  "intentionalMysteriesPreserved": [
+    "00:00 call and false safety-app permissions",
+    "M-13 misleading label later explained by Riin",
+    "S-07 to S-08 re-registration of the same person",
+    "Mirror and camera behavior, repeated attendance/identity records",
+    "Alternate key/lever routes, forced forgetting, psychological captivity despite unlocked door"
+  ],
+  "koreanReview": "korean-humanization-2026-10-02.json",
+  "integrity": {
+    "runtimeScenes": 2106,
+    "baseValidatedScenes": 2097,
+    "localizedEntriesPerLanguage": 2118,
+    "missingKeys": 0,
+    "choiceCountMismatches": 0,
+    "placeholderMismatches": 0,
+    "scenarioMd": "Synchronized with canonical Korean JSON",
+    "cacheVersion": "20261002-full-story-review",
+    "design": "CSS, images, fonts, dimensions and animation values retained; authorized copy and conditional narration changed.",
+    "decodedHtml": "All eight received documents compared with b894a07: only script cache queries differ"
+  },
+  "visual": {
+    "results": [
+      {
+        "lang": "ko",
+        "width": 1440,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "ko",
+        "width": 390,
+        "pixels": 18,
+        "maxDifference": 2,
+        "bounds": [
+          12,
+          50,
+          377,
+          51
+        ]
+      },
+      {
+        "lang": "en",
+        "width": 1440,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "en",
+        "width": 390,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "ja",
+        "width": 1440,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "ja",
+        "width": 390,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "es",
+        "width": 1440,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "es",
+        "width": 390,
+        "pixels": 18,
+        "maxDifference": 2,
+        "bounds": [
+          12,
+          50,
+          377,
+          51
+        ]
+      },
+      {
+        "lang": "fr",
+        "width": 1440,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "fr",
+        "width": 390,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "de",
+        "width": 1440,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "de",
+        "width": 390,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "pt",
+        "width": 1440,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "pt",
+        "width": 390,
+        "pixels": 18,
+        "maxDifference": 2,
+        "bounds": [
+          12,
+          50,
+          377,
+          51
+        ]
+      },
+      {
+        "lang": "zh",
+        "width": 1440,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      },
+      {
+        "lang": "zh",
+        "width": 390,
+        "pixels": 0,
+        "maxDifference": 0,
+        "bounds": null
+      }
+    ],
+    "immutableVisualAssets": 12,
+    "alteredVisualAssets": [],
+    "interpretation": "All eight desktop and five mobile title screens are pixel-identical. Three mobile pairs differ in 18 edge pixels, maximum 2 RGB levels; direct inspection finds no visible design difference.",
+    "story": "24 critical mobile scenes checked for runtime/source equality and dialogue viewport bounds; representative screenshots directly inspected."
+  },
+  "tests": {
+    "unit": "npm run check passed: 0 validator errors, synchronized content, 63/63 unit tests",
+    "browser": "npm run test:e2e passed: 113/113 cases (5.8 minutes)",
+    "regressions": "Gift ownership in all 8 languages; canonical JSON survives load/reload; injection meaning and ghost name attribution; narration emphasis; complete CAGE positions; screen focus and responsive controls",
+    "postUpstreamSync": "63 unit tests plus 16 desktop/mobile localization runtime cases passed after fast-forward to cff4af4"
+  },
+  "publishing": {
+    "branch": "main",
+    "method": "Commit and push main after checks; require clean worktree and HEAD equal origin/main before production deployment.",
+    "authorization": "Explicitly requested by the user",
+    "production": "https://nevergrad.archerlab.dev",
+    "verification": "Actual commit and production payload checks recorded at handoff."
+  },
+  "supersedes": "docs/qa/localization-review-2026-10-02.json remains the earlier, narrower historical review; its anonymity and unchanged-Korean statements do not describe this later full review.",
+  "integratedUpstream": "cff4af4: preserve separately published SEO/service-guide additions and loader noscript fallback",
+  "automatedReview": {
+    "primaryBatches": 350,
+    "independentVerificationBatches": 350,
+    "failedBatches": 0,
+    "acceptance": "Proposals staged only; root curated confirmed factual defects and preserved accurate native phrasing."
+  }
+}

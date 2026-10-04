@@ -131,7 +131,7 @@ function collectHtmlPaths(dir) {
 
 {
     const reporter = fs.readFileSync(path.join(ROOT, 'assets/js/error-reporter.js'), 'utf8');
-    const reporterVersion = '20260913-stylesheet-recovery';
+    const reporterVersion = '20261005-env-guard';
     if (!reporter.includes(`var VERSION = '${reporterVersion}'`)
         || !reporter.includes('isIgnorableResourceFailure')
         || !reporter.includes('tryRecoverStylesheetResource')

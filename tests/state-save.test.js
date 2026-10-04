@@ -101,3 +101,35 @@ test('SaveManager rejects malformed slots and accepts valid legacy saves', () =>
     assert.equal(manager.load(), true);
     assert.equal(loaded.currentScene, 'day3_legacy_scene');
 });
+
+test('SaveManager keeps working when localStorage is null, throws or rejects writes', () => {
+    const throwing = {};
+    for (const name of ['getItem', 'setItem', 'removeItem']) {
+        throwing[name] = () => { throw new Error('SecurityError: The operation is insecure.'); };
+    }
+    const scenarios = [
+        { label: 'missing', extra: {} },
+        { label: 'null', extra: { localStorage: null } },
+        { label: 'throwing', extra: { localStorage: throwing } }
+    ];
+    for (const { label, extra } of scenarios) {
+        const { context, run } = loadRuntime(extra);
+        run('assets/js/modules/SaveManager.js', 'globalThis.SaveManager = SaveManager;');
+        let loaded = null;
+        const manager = new context.SaveManager({
+            serialize() { return { playerName: 'Memory', currentDay: 2, currentSlot: 'night', currentScene: 'day2_memory' }; },
+            deserialize(data) { loaded = data; }
+        });
+        assert.doesNotThrow(() => manager.save(), `${label}: save must not throw`);
+        assert.equal(manager.saveToSlot(3), true, `${label}: slot save falls back to memory`);
+        assert.equal(manager.load(), true, `${label}: autosave readable from memory`);
+        assert.equal(loaded.currentScene, 'day2_memory');
+        assert.doesNotThrow(() => manager.recordEnding('TRUE'), `${label}: recordEnding`);
+        assert.equal(manager.hasSeenEnding('TRUE'), true);
+        assert.doesNotThrow(() => manager.recordChoice('day1_scene', 1, 'text'));
+        assert.equal(manager.getPreviousChoice('day1_scene').index, 1);
+        assert.doesNotThrow(() => manager.deleteSlot(3));
+        assert.doesNotThrow(() => manager.deleteAll());
+        assert.equal(manager.hasSaveData(), false, `${label}: deleteAll clears the memory fallback`);
+    }
+});

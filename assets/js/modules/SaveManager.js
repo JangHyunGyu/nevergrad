@@ -32,6 +32,62 @@ class SaveManager {
         this.MAX_SLOTS = 9;
     }
 
+    // =========================================================================
+    // 안전한 스토리지 접근 (삼성 WebView / iOS 인앱 브라우저에서 localStorage가
+    // null이거나 접근 시 throw 하는 경우 메모리 폴백으로 계속 동작)
+    // =========================================================================
+
+    /** @private 영속 스토리지를 얻는다. 사용할 수 없으면 null. */
+    _persistentStorage() {
+        try {
+            const store = typeof localStorage !== 'undefined' ? localStorage : null;
+            return store && typeof store.getItem === 'function' && typeof store.setItem === 'function' ? store : null;
+        } catch (_) {
+            return null;
+        }
+    }
+
+    /** @private 이번 세션 한정 메모리 폴백 (모든 SaveManager 인스턴스가 공유) */
+    _memoryStore() {
+        if (!SaveManager._memory) SaveManager._memory = new Map();
+        return SaveManager._memory;
+    }
+
+    /** @private */
+    _getItem(key) {
+        const memory = this._memoryStore();
+        if (memory.has(key)) return memory.get(key);
+        try {
+            const store = this._persistentStorage();
+            return store ? store.getItem(key) : null;
+        } catch (_) {
+            return null;
+        }
+    }
+
+    /** @private 영속 저장이 실패하면 메모리에 보관한다. 던지지 않는다. */
+    _setItem(key, value) {
+        try {
+            const store = this._persistentStorage();
+            if (store) {
+                store.setItem(key, value);
+                this._memoryStore().delete(key);
+                return true;
+            }
+        } catch (_) { /* 메모리 폴백 */ }
+        this._memoryStore().set(key, value);
+        return false;
+    }
+
+    /** @private */
+    _removeItem(key) {
+        this._memoryStore().delete(key);
+        try {
+            const store = this._persistentStorage();
+            if (store && typeof store.removeItem === 'function') store.removeItem(key);
+        } catch (_) { /* 무시 */ }
+    }
+
     _slotKey(slotIndex) {
         return slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
     }
@@ -47,7 +103,7 @@ class SaveManager {
 
     _readSlot(slotIndex) {
         try {
-            const raw = localStorage.getItem(this._slotKey(slotIndex));
+            const raw = this._getItem(this._slotKey(slotIndex));
             if (!raw) return null;
             const slotData = JSON.parse(raw);
             const gameState = slotData?.gameState || slotData;
@@ -79,7 +135,7 @@ class SaveManager {
                 currentScene: gameData.currentScene
             };
             const key = this._slotKey(slotIndex);
-            localStorage.setItem(key, JSON.stringify(slotData));
+            this._setItem(key, JSON.stringify(slotData));
             return true;
         } catch (e) {
             console.error('[SaveManager] Save to slot', slotIndex, 'failed:', e);
@@ -155,7 +211,7 @@ class SaveManager {
      * @param {number} slotIndex
      */
     deleteSlot(slotIndex) {
-        localStorage.removeItem(this._slotKey(slotIndex));
+        this._removeItem(this._slotKey(slotIndex));
     }
 
     /**
@@ -203,7 +259,7 @@ class SaveManager {
      */
     getMeta() {
         try {
-            const raw = localStorage.getItem(this.META_KEY);
+            const raw = this._getItem(this.META_KEY);
             if (!raw) return this._defaultMeta();
             return { ...this._defaultMeta(), ...JSON.parse(raw) };
         } catch {
@@ -226,7 +282,7 @@ class SaveManager {
         }
 
         try {
-            localStorage.setItem(this.META_KEY, JSON.stringify(meta));
+            this._setItem(this.META_KEY, JSON.stringify(meta));
         } catch (e) {
             console.error('[SaveManager] Meta save failed:', e);
         }
@@ -274,7 +330,7 @@ class SaveManager {
         history[sceneId] = { index: choiceIndex, text: choiceText, time: Date.now() };
 
         try {
-            localStorage.setItem(this.CHOICES_KEY, JSON.stringify(history));
+            this._setItem(this.CHOICES_KEY, JSON.stringify(history));
         } catch (e) {
             console.error('[SaveManager] Choice record failed:', e);
         }
@@ -286,7 +342,7 @@ class SaveManager {
      */
     getChoiceHistory() {
         try {
-            const raw = localStorage.getItem(this.CHOICES_KEY);
+            const raw = this._getItem(this.CHOICES_KEY);
             return raw ? JSON.parse(raw) : {};
         } catch {
             return {};
@@ -394,11 +450,11 @@ class SaveManager {
      * 모든 저장 데이터 삭제 (게임 + 메타 + 선택 이력 + 모든 슬롯)
      */
     deleteAll() {
-        localStorage.removeItem(this.SAVE_KEY);
+        this._removeItem(this.SAVE_KEY);
         for (let i = 1; i <= this.MAX_SLOTS; i++) {
-            localStorage.removeItem(`${this.SLOT_PREFIX}${i}`);
+            this._removeItem(`${this.SLOT_PREFIX}${i}`);
         }
-        localStorage.removeItem(this.META_KEY);
-        localStorage.removeItem(this.CHOICES_KEY);
+        this._removeItem(this.META_KEY);
+        this._removeItem(this.CHOICES_KEY);
     }
 }

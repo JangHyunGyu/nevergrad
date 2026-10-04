@@ -6,31 +6,31 @@
         "text": "*Tomei um banho e saí. A tela do meu telefone está iluminada. Notificações.*"
     },
     "day3_night_sea_msg": {
-        "text": "*Sea: '{name}, hoje foi divertido. Amanhã vamos juntos de novo.' -- 22:02*"
+        "text": "*Sea -- 22:02*\n\n{name}, hoje foi divertido. Amanhã vamos juntos de novo."
     },
     "day3_night_sea_msg_2": {
         "text": "*Eu não li. Desliguei o telefone enquanto escovo os dentes.*"
     },
     "day3_night_sea_msg_3": {
-        "text": "*1 minuto depois. Zumbido. Sea: 'Responda antes de dormir' — 22h03*"
+        "text": "*1 minuto depois. Vibração. Sea — 22h03*\n\nResponde antes de dormir"
     },
     "day3_night_sea_msg_4": {
-        "text": "*3 minutos depois. Zumbido. Sea: '...' — 22h06*"
+        "text": "*3 minutos depois. Vibração. Sea — 22h06*\n\n..."
     },
     "day3_night_sea_msg_5": {
         "text": "*Um balão com apenas três pontos fica grudado no fim da janela da conversa.*"
     },
     "day3_night_sea_msg_6": {
-        "text": "*2 minutos depois. Zumbido. Sea: '{name}?' - 22h08 *"
+        "text": "*2 minutos depois. Vibração. Sea — 22h08*\n\n{name}?"
     },
     "day3_night_sea_msg_7": {
-        "text": "*Zumbido. Sea: 'Por que você não está lendo?' - 22h11 *"
+        "text": "*Vibração. Sea — 22h11*\n\nPor que você não lê minhas mensagens?"
     },
     "day3_night_sea_msg_8": {
-        "text": "*Zumbido. Sea: 'Você está dormindo... certo?' - 22h15*"
+        "text": "*Vibração. Sea — 22h15*\n\nVocê está dormindo... né?"
     },
     "day3_night_sea_msg_9": {
-        "text": "*Seis mensagens em 13 minutos. Os balões não lidos preencheram uma tela inteira. O horário do último balão continuava chamando minha atenção.*"
+        "text": "*6 mensagens em 13 minutos. Os balões não lidos ocupam uma tela inteira. O horário do último balão continua chamando minha atenção.*"
     },
     "day3_night_sea_msg_10": {
         "text": "*Virei o telefone para baixo. Ainda vibra.*"
@@ -39,7 +39,7 @@
         "text": "*Zumbido. De novo. Disse a mim mesmo que não iria verificar a tela, mas minha mão a alcança.*"
     },
     "day3_night_sea_msg_12": {
-        "text": "*Sea: 'Você deixou a janela aberta, certo? Areje antes de dormir '- 22h19 *"
+        "text": "*Sea — 22h19*\n\nDeixou a janela aberta, né? Deixa o quarto ventilar antes de dormir"
     },
     "day3_night_sea_msg_13": {
         "text": "*A janela? Meu polegar parou em cima do botão de responder.*"
@@ -66,7 +66,7 @@
         "text": "*As etiquetas mudam, mas a pequena pinta perto do olho continua no mesmo lugar.*"
     },
     "day3_night_bleed_4": {
-        "text": "*Fecho os olhos. Mas as fotos se acendem por dentro das minhas pálpebras. 13 fotos de identificação em fila. Cores de cabelo diferentes. Etiquetas de nome diferentes. Os mesmos olhos.*"
+        "text": "*Mesmo de olhos fechados, as 13 fotos de identificação me vêm à cabeça. As cores de cabelo e os crachás são diferentes, mas os olhos são iguais em todas.*"
     },
     "day3_night_bleed_no_yuna_1": {
         "text": "*Eu não vi as fotos. Mesmo assim, o bilhete, a escrita na parede e as mensagens de Sea se sobrepõem como papéis espalhados na mesa.*"
@@ -105,7 +105,7 @@
         "text": "*Quando tento imaginar o portão da minha antiga escola, o que aparece primeiro são paredes brancas. Depois disso, não há nada.*"
     },
     "day3_night_bleed_12": {
-        "text": "*A sala de aula da minha antiga escola. Paredes brancas. Um quadro branco. Um professor sem rosto. No lugar ao meu lado, só existe a sombra de uma carteira.*"
+        "text": "*Na sala de aula da minha antiga escola, um professor sem rosto está de pé diante da parede branca e do quadro. No lugar ao meu lado, só resta a sombra de uma carteira.*"
     },
     "day3_night_bleed_13": {
         "text": "*Inspirei. O desenho do teto parecia se aproximar, um quadrado por vez.*"
@@ -207,10 +207,10 @@
         "text": "*É a estudante junto à janela. Cabelo branco prateado. Uniforme escolar. Meu quarto no meio da noite. A porta está trancada, e a luz com sensor da entrada não acendeu.*"
     },
     "day3_night_seolhwa_4a": {
-        "text": "*Eu não ouvi a porta da frente. Nenhum passo também.*"
+        "text": "Não ouvi a porta de entrada nem passos. Como você entrou? Eu tranquei a porta."
     },
     "day3_night_seolhwa_4b": {
-        "text": "*Seolhwa olha para mim. Os cantos dos olhos dela estão úmidos.*"
+        "text": "*Seolhwa me olha com os olhos úmidos.*\n\nNão é hora de perguntar isso. Primeiro me escuta."
     },
     "day3_night_seolhwa_5": {
         "text": "...Cinco dias."
@@ -219,28 +219,28 @@
         "text": "...Cinco dias até o quê?"
     },
     "day3_night_seolhwa_6a": {
-        "text": "*Minha voz não sai. Meus lábios estão secos.*"
+        "text": "*Não consigo falar. Meus lábios ficam secos.*"
     },
     "day3_night_seolhwa_7": {
         "text": "Dentro de cinco dias... você tem que sair daqui."
     },
     "day3_night_seolhwa_7a": {
-        "text": "*A voz não parece vir deste quarto. Ela chega com um compasso de atraso.*"
+        "text": "*A voz não parece vir deste quarto. Ela chega um instante depois.*\n\nSua voz… Estou ouvindo com um pequeno atraso."
     },
     "day3_night_seolhwa_8": {
         "text": "Antes que você acabe como eu."
     },
     "day3_night_seolhwa_9": {
-        "text": "...Como você? O que aconteceu com você..."
+        "text": "Como você? O que aconteceu com você?"
     },
     "day3_night_seolhwa_10": {
-        "text": "*Seolhwa estende a mão em direção ao meu rosto. As pontas dos dedos param antes de tocar minha bochecha.*"
+        "text": "*Seolhwa estende a mão em direção ao meu rosto. As pontas dos dedos param pouco antes de tocar minha bochecha.*\n\nEspera, sua mão…"
     },
     "day3_night_seolhwa_11": {
-        "text": "*As pontas dos dedos dela ficam borradas diante da minha bochecha. A luz do poste do lado de fora atravessa o dorso da mão dela.*"
+        "text": "*As pontas dos dedos dela ficam borradas diante da minha bochecha. A luz do poste do lado de fora atravessa o dorso da mão dela.*\n\nSua mão… Está sumindo."
     },
     "day3_night_seolhwa_11a": {
-        "text": "*Uma linha fina desceu do canto do olho da estudante e foi engolida pela luz.*"
+        "text": "*Uma marca molhada na bochecha some quando pisco.*\n\nEstava chorando? Espera. Não desaparece."
     },
     "day3_night_seolhwa_12": {
         "text": "...Lembrar. A mão esquerda."

@@ -20,7 +20,7 @@
         "text": "*Yuna's locker. Empty. Even the dust on the floor has been wiped away in a neat square.*"
     },
     "day4_lunch_yuna_4": {
-        "text": "*Dust has built up in the other lockers. Only Yuna's shows wipe marks. In the inner corner, I can see the streaks where a wet cloth passed over it.*"
+        "text": "*The other lockers are dusty. Only Yuna's is clean, with wet cloth strokes left in an inside corner.*"
     },
     "day4_lunch_yuna_5": {
         "text": "*The plywood at the bottom of the locker is slightly raised. A false bottom. Yuna's camera is hidden inside.*"
@@ -29,7 +29,7 @@
         "text": "*I took the camera out. Almost no battery left. I powered it on.*"
     },
     "day4_lunch_yuna_7": {
-        "text": "*Photo list. More than 200 pictures. Most are school scenery. The same suits repeat in every corner. The faces are different, but they stand in the same spots.*"
+        "text": "*The photo list contains over 200 images, mostly of the school. Suited figures keep appearing in the corners. Their faces differ, but they stand in the same spots.*"
     },
     "day4_lunch_yuna_8": {
         "text": "*The last photo: stairs leading underground. In the corner, handwritten text: **'Down here -- Yu'***"
@@ -62,7 +62,7 @@
         "text": "*Ms. Eunsu passes by and opens the door with a key. She goes inside and closes the door behind her. The lock clicks shut.*"
     },
     "day4_lunch_yuna_18": {
-        "text": "*The sound of Eunsu's key sliding into the lock is still stuck in my ears. Behind the door, the low mechanical hum keeps going.*",
+        "text": "*The sound of the key sliding into the lock still rings in my ears. A low mechanical hum continues behind the door.*",
         "choices": [
             "Go looking for the key tonight",
             "Recall Riin's movements",
@@ -79,19 +79,19 @@
         "text": "*Nurse Riin is standing in front of the medicine cabinet, transferring a clear liquid into a syringe.*"
     },
     "day4_lunch_nurse_first": {
-        "text": "*The nameplate on the desk catches my eye first: 'Kang Riin, school nurse.' As I read it, someone in a white coat looks up from inside.*"
+        "text": "*The nameplate on the desk catches my eye first: 'Kang Riin, school nurse.' As I read it, someone in a white coat looks up from inside.*\n\nCould I speak to you for a moment? I'll wait if you're giving an injection. I don't want to just leave."
     },
     "day4_lunch_nurse_2": {
         "text": "*I can see the label on the ampoule. 'M-13'. The font is different from the cold medicine label in the next slot.*"
     },
     "day4_lunch_nurse_3": {
-        "text": "*Our eyes meet, and her hand holding the syringe stops.*"
+        "text": "*Our eyes meet, and her hand holding the syringe stops.*\n\nDid you stop because you saw me? I came in through the door; why such a fright? I only looked at what you're holding."
     },
     "day4_lunch_nurse_4": {
         "text": "You startled me."
     },
     "day4_lunch_nurse_5": {
-        "text": "*She hides the syringe behind her back. Casually. But I saw it.*"
+        "text": "*She hides the syringe behind her back. The movement looks natural, but I have already seen it.*\n\nI already saw it. Hiding it won't undo that."
     },
     "day4_lunch_nurse_noyuna": {
         "text": "What were you doing just now?"
@@ -100,28 +100,28 @@
         "text": "...A vitamin shot. You missed the group checkup today."
     },
     "day4_lunch_nurse_noyuna_3": {
-        "text": "*Even while hiding the syringe, Riin's fingers are covering the measuring lines. The ampoule label `M-13` is half visible behind the back of her hand.*"
+        "text": "*Even while hiding the syringe, Riin's fingers are covering the measuring lines. The ampoule label `M-13` is half visible behind the back of her hand.*\n\nIf it's a vitamin, why cover the markings? It's scarier when I can't even see how much you're giving me. Move your hand, please."
     },
     "day4_lunch_nurse_6": {
-        "text": "I heard Yuna... suddenly transferred."
+        "text": "I heard Yuna suddenly transferred. I still don't understand. Is that something you can talk about as if it were nothing?"
     },
     "day4_lunch_nurse_7": {
-        "text": "*Nurse Riin's hand pressed the syringe cap once more. Click. Only then did the answer come back.*"
+        "text": "A transfer means somewhere to go. Do you know where Yuna went?\n\n*Nurse Riin presses the syringe cap down once more. Click. Only then does she answer.*"
     },
     "day4_lunch_nurse_8": {
         "text": "...Why are you staring like that? {name}, where did you go during lunch today?"
     },
     "day4_lunch_nurse_9": {
-        "text": "*Her voice went cold for an instant, then turned gentle again.*"
+        "text": "*Her voice went cold for an instant, then turned gentle again.*\n\nNot my lunch. We're talking about Yuna."
     },
     "day4_lunch_nurse_10": {
         "text": "Yuna will be fine."
     },
     "day4_lunch_nurse_11": {
-        "text": "*Riin immediately starts washing the cup.*"
+        "text": "*After finishing her answer, Riin picks up the cup and carries it over to the tap.*\n\n'She'll be okay'—does that mean she isn't now?"
     },
     "day4_lunch_nurse_12": {
-        "text": "*Riin immediately began washing the cup. The sound of water filled the spaces between her answers.*"
+        "text": "*Riin turns the tap all the way on and washes the cup. The running water fills the gaps between her answers.*\n\nLet's look at you first. We can talk in a moment."
     },
     "day4_lunch_nurse_13": {
         "text": "...You look tired. Like you haven't slept."
@@ -130,7 +130,7 @@
         "text": "Do you want something that will help?"
     },
     "day4_lunch_nurse_15": {
-        "text": "*A smiling face. A soft voice. A syringe in hand.*",
+        "text": "*She smiles and speaks gently, but she is still holding the syringe.*\n\nWait. Please put the syringe down before we talk.",
         "choices": [
             "Refuse immediately",
             "Ask the drug name",

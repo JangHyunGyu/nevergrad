@@ -39,7 +39,7 @@
         "text": "*J’ai boutonné mon uniforme de travers trois fois. Je l’ai défait et recommencé depuis le début.*"
     },
     "day4_morning_start_14": {
-        "text": "*La lumière du matin filtre à travers les rideaux. Une journée lumineuse. Mais — quelqu'un se tient sur le trottoir sous la fenêtre. Un costume. Des lunettes de soleil. Les bras croisés, regardant vers ici.*"
+        "text": "*Le soleil du matin passe entre les rideaux. Il fait beau. Pourtant, sur le trottoir sous la fenêtre, quelqu’un en costume et lunettes de soleil se tient les bras croisés et regarde dans ma direction.*"
     },
     "day4_morning_start_15": {
         "text": "*Deux secondes. J'ai cligné des yeux. Il ne reste que deux empreintes mouillées sur le trottoir.*"
@@ -114,7 +114,7 @@
         "text": "*La lycéenne à côté d’elle sourit aussi. Elle parlait d’autre chose, mais les commissures de ses lèvres se soulèvent les premières. Ses yeux restent fixés sur son interlocutrice.*"
     },
     "day4_morning_gate_4": {
-        "text": "*J'en ai observé un. Au moment où il a franchi le portail — son expression a changé. De neutre à souriant. Comme si un interrupteur s'était enclenché.*"
+        "text": "*De l’autre côté du mur, un élève regarde son téléphone en fronçant les sourcils. À peine a-t-il fait un pas à l’intérieur du portail que son visage s’éclaire d’un sourire.*"
     },
     "day4_morning_gate_5": {
         "text": "*C’est le troisième. Dès qu’ils posent le pied dans l’ombre à l’intérieur du portail, leur expression change, l’angle de leurs coins de lèvres étant identique.*"
@@ -129,7 +129,7 @@
         "text": "*Dès que mes yeux se posent sur le voyant du haut-parleur, un regard glisse vers moi, puis disparaît.*"
     },
     "day4_morning_gate_9": {
-        "text": "*Madame Eunsu se tient devant le portail principal. Appuyée contre la grille. Elle sourit. Juste sous le voyant du haut-parleur.*"
+        "text": "*Madame Eunsu se tient devant le portail principal. Appuyée contre la grille. Elle sourit. Juste sous le voyant du haut-parleur.*\n\nVous attendiez là, madame. Je peux aller en classe, hein ? Il reste quelque chose à vérifier au portail ?"
     },
     "day4_morning_gate_10": {
         "text": "*La trotteuse de la montre d'Eunsu avance au même rythme que les parasites du haut-parleur du portail.*"
@@ -141,7 +141,7 @@
         "text": "Allons en classe ensemble aujourd'hui."
     },
     "day4_morning_eunsu_3": {
-        "text": "*Elle croise les bras et se tient à côté de moi.*"
+        "text": "*Mme Eunsu se tient à côté de moi, les bras croisés.*\n\nPourquoi aujourd'hui ? Je sais aller en classe maintenant."
     },
     "day4_morning_eunsu_choice": {
         "text": "*Eunsu attend.*",
@@ -151,10 +151,10 @@
         ]
     },
     "day4_morning_eunsu_comply": {
-        "text": "*J'ai marché aux côtés d'Eunsu jusqu'à la salle de classe. ...Une escorte — ou un convoi. Impossible de dire lequel.*"
+        "text": "*J’ai marché aux côtés de Mme Eunsu jusqu’à la salle de classe. La pointe de sa chaussure empiétait sur le bord de mon ombre.*\n\nVous m'avez accompagné, ça suffit maintenant, hein ? En classe, je vais à ma place. Je veux pas être en retard."
     },
     "day4_morning_eunsu_refuse": {
-        "text": "C'est bon. J'y vais en premier."
+        "text": "Ça va, je vais passer devant. Je connais le chemin de la classe. J'ai pas besoin que vous m'y emmeniez pour y arriver."
     },
     "day4_morning_eunsu_refuse_2": {
         "text": "Ne vous promenez pas seul."
@@ -163,10 +163,10 @@
         "text": "**C’est dangereux.**"
     },
     "day4_morning_eunsu_refuse_4": {
-        "text": "*Danger. À la fin du mot, le sourire d'Eunsu s'est figé pendant une fraction de seconde.*"
+        "text": "*Dangereux. À la fin du mot, le sourire de Mme Eunsu se fige un très bref instant.*\n\nOn est dans l'école. Quel danger ? Je dois me méfier de qui ?"
     },
     "day4_morning_eunsu_refuse_5": {
-        "text": "*Mme Eunsu me suit à un demi-pas. Le bout de ses chaussures reste sur le bord de mon ombre.*"
+        "text": "*Mme Eunsu me suit à un demi-pas. Le bout de ses chaussures reste sur le bord de mon ombre.*\n\nSi vous me suivez d'aussi près, je vais pas vraiment seul. Je peux aller en classe. Vous pouvez m'attendre devant."
     },
     "day4_morning_classroom": {
         "text": "*Je suis entré dans la salle de classe.*"
@@ -208,7 +208,7 @@
         "text": "Ça a été publié hier soir dans la discussion de groupe. Tu ne l’as pas vu ?"
     },
     "day4_morning_sea_3a_react": {
-        "text": "*J'ouvre le chat de groupe. Aucune annonce d'hier soir. Le dernier message est une photo du menu de la cantine.*"
+        "text": "*J’ouvre le groupe de discussion. Aucune annonce datant d’hier soir. Le dernier message est une photo du menu de la cantine.*\n\nAucun avis. Il est où ? Je regarde pas le bon groupe ?"
     },
     "day4_morning_sea_4": {
         "text": "*Dans mon sac, le boîtier de la carte SD effleure mes doigts. Exactement comme Yuna me l'a remis hier.*"
@@ -223,7 +223,7 @@
         "text": "Yuna... ? Ah, celle qui a été transférée l'année dernière ?"
     },
     "day4_morning_sea_8": {
-        "text": "*L'année dernière à Yuna était là jusqu'à hier.*"
+        "text": "L'an dernier ? Yuna était là hier. Vous pensez pas à quelqu'un d'autre ?"
     },
     "day4_morning_sea_9": {
         "text": "*Le coin du bureau où se trouvait l'autocollant du club photo est un peu moins décoloré.*"
@@ -253,7 +253,7 @@
         "text": "Quitter la liste... serait un problème."
     },
     "day4_morning_class_7": {
-        "text": "*Le regard de Mme Eunsu se fixe sur moi. Elle fait un pas vers moi depuis le pupitre.*"
+        "text": "*Mme Eunsu me fixe et fait un pas vers moi depuis le bureau.*\n\nVous cherchez pas ceux qui sont pas sur la liste ? Ce sont aussi des élèves."
     },
     "day4_morning_class_8": {
         "text": "Cela ne se terminait généralement pas bien."

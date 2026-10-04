@@ -69,7 +69,7 @@
         "text": "*Je me suis retourné.*"
     },
     "day5_ending_true_7": {
-        "text": "*Seolhwa se tient à l'intérieur de la sortie de secours. Elle ne peut pas franchir la porte.*"
+        "text": "*Seolhwa se tient à l'intérieur de la sortie de secours. Elle ne peut pas franchir la porte.*\n\nReste pas dans la porte, viens avec nous. Tu peux sortir si je te tiens la main ? Reste pas là toute seule."
     },
     "day5_ending_true_8": {
         "text": "...Va-t'en."
@@ -120,16 +120,16 @@
         "text": "*Les douze badges dans mes souvenirs sont tous retournés.*"
     },
     "day5_ending_true_21a": {
-        "text": "*La photo de profil de Minsu est devenue un carré gris vide. Je ne me souviens ni de mon ancienne classe ni de la raison du déménagement de mes parents. Il ne reste que des scènes à l’intérieur de l’école.*"
+        "text": "*La photo de profil de Minsu est vide, grise. Ni mon ancienne classe ni la raison du déménagement de mes parents ne me reviennent. Il ne reste que des scènes de cette école.*"
     },
     "day5_ending_true_22": {
-        "text": "*Mes genoux ont touché le sol. Mon souffle s'est brisé deux fois. Yuna s'est approchée et m'a entouré le dos de ses bras. Dans l'air froid de la nuit, seules les mains de Yuna étaient chaudes.*"
+        "text": "*Quand je tombe à genoux, Yuna s’assied à côté de moi et soutient mon dos.*\n\nAttends. Tiens-moi. Je vois la route, mais j'arrive pas à me lever."
     },
     "day5_ending_true_23": {
         "text": "Ça va aller, Sunbae."
     },
     "day5_ending_true_24": {
-        "text": "*Yuna parle en regardant, au-delà de la cour sombre, la route de l’autre côté de la clôture de l’école.*"
+        "text": "On y va. On continuera dehors. Je veux plus rester ici.\n\n*Yuna regarde au-delà du terrain de sport sombre, vers la route de l’autre côté du grillage de l’école, et parle.*"
     },
     "day5_ending_true_25": {
         "text": "C'est fini. Ici, du moins."
@@ -219,7 +219,7 @@
         "text": "...Non ? Je suis droitier."
     },
     "day5_ending_escape_11": {
-        "text": "*Yuna ouvre la bouche, puis, sans dire un mot, ajuste la sangle de son sac.*"
+        "text": "*Yuna ouvre la bouche, puis reprend sa prise sur la sangle de son sac sans rien dire.*\n\nQuoi ? Ma réponse était bizarre ? Tu demandais pas juste comme ça ?"
     },
     "day5_ending_escape_12": {
         "text": "*...Je tenais la sangle du sac de la main gauche. Inconsciemment.*"
@@ -279,7 +279,7 @@
         "text": "...Vous aussi, vous devez partir, Madame."
     },
     "day5_ending_resist_14": {
-        "text": "*Mme Eunsu pose la seringue au sol.*\n\n*Elle reste longtemps debout, sans bouger.*"
+        "text": "*Mme Eunsu pose la seringue au sol et reste longtemps debout.*\n\nLa reprenez pas. La porte est ouverte. Sortons ensemble."
     },
     "day5_ending_resist_15": {
         "text": "…Une fois que je serai dehors, chaque document portera mon nom."
@@ -297,7 +297,7 @@
         "text": "Le 11e Oh Taehyun... a dit qu'il me faisait confiance. Que ça allait, puisque j'étais sa professeure."
     },
     "day5_ending_resist_18b": {
-        "text": "*Mme Eunsu n’arrive pas à terminer sa phrase et ferme la bouche.*"
+        "text": "*Mme Eunsu n’arrive pas à terminer sa phrase et ferme la bouche.*\n\nIl vous faisait confiance. Vous avez fait quoi ? Vous arrêter là, ça veut pas dire que je sais pas la suite."
     },
     "day5_ending_resist_18c": {
         "text": "...Cette nuit-là, c’est moi qui ai effacé sa mémoire. Le lendemain matin, cet élève m’a demandé : « Vous êtes qui, madame ? »"
@@ -306,7 +306,7 @@
         "text": "Malgré tout, j’ai signé. Sur la ligne suivante, puis sur celle d’après."
     },
     "day5_ending_resist_19": {
-        "text": "*Mme Eunsu, la bouche couverte, ne peut relever la tête pendant un moment.*"
+        "text": "*Mme Eunsu couvre sa bouche et reste un moment incapable de relever la tête.*\n\nRegardez-moi. Je sais. Sortir fera pas disparaître les papiers."
     },
     "day5_ending_resist_20": {
         "text": "...Je t'ai effacé de mes propres mains. Et pourtant?"
@@ -330,7 +330,7 @@
         "text": ""
     },
     "day5_ending_cage_eunsu_1": {
-        "text": "*La nuit tombe, mais les lumières de la salle restent allumées. Mme Eunsu range le registre d’appel comme si rien ne s’était passé.*"
+        "text": "*La nuit est tombée, mais les lumières de la salle restent allumées. Mme Eunsu range le registre d’appel comme d’habitude.*\n\nVous regardez encore le registre ? Le cours est fini. On peut pas éteindre ? Rester assis dans toute cette lumière, c'est un peu…"
     },
     "day5_ending_cage_eunsu_2": {
         "text": "...Le rapport d'aujourd'hui s'arrête ici. Repose-toi."
@@ -372,7 +372,7 @@
         "text": "Je peux rester ici aujourd'hui, n'est-ce pas ?"
     },
     "day5_ending_cage_sea_4": {
-        "text": "*J'ai hoché la tête. Sea a enfoui son front contre mon épaule. Son souffle s'est échappé longuement.*"
+        "text": "*Je me contente de hocher la tête. Sea pose son front sur mon épaule et laisse échapper un long souffle.*\n\nOui. Je reste aujourd'hui. Serre un peu moins."
     },
     "day5_ending_cage_sea_5": {
         "text": ""
@@ -414,7 +414,7 @@
         "text": "Effacez-le, je vous en prie. Je vois les noms sans arrêt."
     },
     "day5_ending_forget_7": {
-        "text": "*Mme Eunsu lève la seringue et la rapproche de mon bras.*"
+        "text": "*Mme Eunsu lève la seringue et la rapproche de mon bras.*\n\nJe veux pas regarder. Je peux fermer les yeux ? Je peux plus voir votre visage ni la seringue."
     },
     "day5_ending_forget_8": {
         "text": "...Pardon."
@@ -504,7 +504,7 @@
         "text": "Cette fois, c’est moi qui te pousserai vers l’avant."
     },
     "day5_ending_ghost_9": {
-        "text": "*Seolhwa me regarde droit dans les yeux. Ce regard n’apparaît dans aucune des photos que j’ai vues jusqu’ici.*"
+        "text": "*Seolhwa me regarde droit dans les yeux. Ce regard n’apparaît dans aucune des photos que j’ai vues jusqu’ici.*\n\nRegarde dehors, pas moi. Si tu sors d'abord, je te suis. Tu me regardes comme ça parce que tu veux envoyer que moi dehors ?"
     },
     "day5_ending_ghost_10": {
         "text": "Courir. maintenant."
@@ -540,7 +540,7 @@
         "text": "*Seul le trait qui tourne à gauche et la rayure de la deuxième marche restent nets.*"
     },
     "day5_ending_ghost_21": {
-        "text": "*Ma main gauche cherche d'abord la rampe. Dans les couloirs, je finis par longer le mur de gauche.*"
+        "text": "*Ma main gauche cherche d'abord la rampe ; je longe le mur gauche dans les couloirs.*"
     },
     "day5_ending_ghost_22": {
         "text": "*Cette école est toujours là. Une nouvelle serrure pend à la sortie de secours, et la clé est dans une autre main.*"

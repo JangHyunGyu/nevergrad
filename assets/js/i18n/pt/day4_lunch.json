@@ -20,7 +20,7 @@
         "text": "*O armário de Yuna. Vazio. Até a poeira do chão foi limpa em um quadrado perfeito.*"
     },
     "day4_lunch_yuna_4": {
-        "text": "*Os outros armários estão cobertos de poeira. Só o de Yuna tem marcas de limpeza. No canto interno, dá para ver os rastros de um pano molhado.*"
+        "text": "*Os outros armários têm poeira. Só o de Yuna está limpo, com marcas de pano molhado num canto interno.*"
     },
     "day4_lunch_yuna_5": {
         "text": "*O compensado na parte inferior do armário está ligeiramente levantado. Um fundo falso. A câmera do Yuna está escondida dentro.*"
@@ -29,7 +29,7 @@
         "text": "*Tirei a câmera. Quase não sobrou bateria. Eu liguei.*"
     },
     "day4_lunch_yuna_7": {
-        "text": "*Lista de fotos. Mais de 200. A maioria é de paisagens da escola. Em cada canto, os mesmos ternos se repetem. Os rostos são diferentes, mas o lugar onde estão parados é o mesmo.*"
+        "text": "*A lista tem mais de 200 fotos, a maioria da escola. Pessoas de terno aparecem repetidamente nos cantos. Os rostos mudam, mas elas ficam nos mesmos lugares.*"
     },
     "day4_lunch_yuna_8": {
         "text": "*A última foto: escadas que levam ao subsolo. No canto, texto manuscrito: **'Aqui embaixo -- Yu'***"
@@ -62,7 +62,7 @@
         "text": "*A professora Eunsu passa e abre a porta com uma chave. Entra e fecha a porta atrás de si. Ouço a fechadura trancar.*"
     },
     "day4_lunch_yuna_18": {
-        "text": "*O som da chave de Eunsu entrando na fechadura ainda está preso nos meus ouvidos. Do outro lado da porta, o ruído baixo de máquina continua.*",
+        "text": "*O som da chave entrando na fechadura ainda ecoa nos meus ouvidos. Um ruído mecânico baixo continua atrás da porta.*",
         "choices": [
             "Procurar a chave esta noite",
             "Relembrar o trajeto de Riin",
@@ -79,19 +79,19 @@
         "text": "*A professora Riin está diante do armário de remédios, passando um líquido transparente para uma seringa.*"
     },
     "day4_lunch_nurse_first": {
-        "text": "*A placa de identificação na mesa chama minha atenção primeiro: 'Kang Riin, enfermeira da escola.' Enquanto eu leio, alguém de jaleco branco olha de dentro.*"
+        "text": "*A placa de identificação na mesa chama minha atenção primeiro: 'Kang Riin, enfermeira da escola.' Enquanto eu leio, alguém de jaleco branco olha de dentro.*\n\nProfessora, podemos conversar um pouco? Se estiver preparando uma injeção, eu espero. Não quero ir embora sem falar."
     },
     "day4_lunch_nurse_2": {
         "text": "*Dá para ver o rótulo da ampola. 'M-13'. A fonte é diferente da etiqueta do remédio para gripe no compartimento ao lado.*"
     },
     "day4_lunch_nurse_3": {
-        "text": "*Quando nossos olhos se cruzam, a mão dela segurando a seringa para.*"
+        "text": "*Quando nossos olhos se cruzam, a mão dela segurando a seringa para.*\n\nParou quando me viu? Entrei pela porta, por que esse susto? Só olhei o que está na sua mão."
     },
     "day4_lunch_nurse_4": {
         "text": "...Você me assustou."
     },
     "day4_lunch_nurse_5": {
-        "text": "*Ela esconde a seringa nas costas. Casualmente. Mas eu vi.*"
+        "text": "*Ela esconde a seringa atrás das costas. O gesto parece natural, mas eu já vi.*\n\nEu já vi. Esconder não vai desfazer isso."
     },
     "day4_lunch_nurse_noyuna": {
         "text": "...O que você estava fazendo agora?"
@@ -100,28 +100,28 @@
         "text": "...Uma dose de vitamina. Você perdeu o check-up do grupo hoje."
     },
     "day4_lunch_nurse_noyuna_3": {
-        "text": "*Os dedos de Riin continuam cobrindo as marcas de medição, mesmo enquanto escondem a seringa. O rótulo `M-13` da ampola aparece pela metade atrás do dorso da mão dela.*"
+        "text": "*Os dedos de Riin continuam cobrindo as marcas de medição, mesmo enquanto escondem a seringa. O rótulo `M-13` da ampola aparece pela metade atrás do dorso da mão dela.*\n\nSe é vitamina, por que esconde a marcação? Dá mais medo quando nem vejo quanto vai aplicar. Tire a mão, por favor."
     },
     "day4_lunch_nurse_6": {
-        "text": "Ouvi Yuna... transferido repentinamente."
+        "text": "Ouvi que Yuna se transferiu de repente. Ainda não entendo. A senhora também consegue falar disso como se não fosse nada?"
     },
     "day4_lunch_nurse_7": {
-        "text": "*A mão da professora Riin apertou a tampa da seringa mais uma vez. Clique. Só então veio a resposta.*"
+        "text": "Se ela mudou de escola, foi pra algum lugar. Sabe onde a Yuna está?\n\n*A enfermeira Riin pressiona mais uma vez a tampa da seringa. Clique. Só então responde.*"
     },
     "day4_lunch_nurse_8": {
         "text": "...Por que está me olhando desse jeito? {name}, onde você foi na hora do almoço hoje?"
     },
     "day4_lunch_nurse_9": {
-        "text": "*Sua voz ficou fria por um instante, depois tornou-se gentil novamente.*"
+        "text": "*Sua voz ficou fria por um instante, depois tornou-se gentil novamente.*\n\nNão é sobre meu almoço. Estamos falando da Yuna."
     },
     "day4_lunch_nurse_10": {
         "text": "Yuna ficará bem."
     },
     "day4_lunch_nurse_11": {
-        "text": "*'Vai ficar tudo bem.' Só depois de dizer isso Riin começou a lavar o copo.*"
+        "text": "*Depois de terminar a resposta, Riin pega o copo e o leva para debaixo da torneira.*\n\n'Vai ficar bem' quer dizer que agora não está bem?"
     },
     "day4_lunch_nurse_12": {
-        "text": "*Riin começou imediatamente a lavar o copo. O som da água preencheu os espaços entre as respostas.*"
+        "text": "*Riin abre a torneira ao máximo e lava o copo. O barulho da água preenche as pausas entre as respostas.*\n\nPrimeiro vamos ver como você está. Conversamos daqui a pouco."
     },
     "day4_lunch_nurse_13": {
         "text": "...Você parece cansado. Como se você não tivesse dormido."
@@ -130,7 +130,7 @@
         "text": "Você quer algo que vai ajudar?"
     },
     "day4_lunch_nurse_15": {
-        "text": "*Um rosto sorridente. Uma voz suave. Uma seringa na mão.*",
+        "text": "*Ela sorri e fala com suavidade, mas ainda segura a seringa.*\n\nSó um instante. Ponha a seringa de lado, por favor, para a gente conversar.",
         "choices": [
             "Recuse imediatamente",
             "Pergunte o nome do remédio",

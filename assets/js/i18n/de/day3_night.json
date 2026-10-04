@@ -6,31 +6,31 @@
         "text": "*Ich habe geduscht und bin rausgekommen. Das Handydisplay leuchtet. Benachrichtigungen.*"
     },
     "day3_night_sea_msg": {
-        "text": "*Sea: '{name}, heute hat Spaß gemacht. Morgen gehen wir wieder zusammen.' -- 22:02 Uhr*"
+        "text": "*Sea -- 22:02 Uhr*\n\n{name}, heute hat Spaß gemacht. Morgen gehen wir wieder zusammen."
     },
     "day3_night_sea_msg_2": {
         "text": "*Ich habe es nicht gelesen. Legte das Handy hin, während ich mir die Zähne putzte.*"
     },
     "day3_night_sea_msg_3": {
-        "text": "*1 Minute später. Vibration. Sea: 'Antworte bevor du einschläfst' — 22:03*"
+        "text": "*1 Minute später. Vibration. Sea — 22:03*\n\nAntworte, bevor du einschläfst"
     },
     "day3_night_sea_msg_4": {
-        "text": "*3 Minuten später. Vibration. Sea: '...' — 22:06*"
+        "text": "*3 Minuten später. Vibration. Sea — 22:06*\n\n..."
     },
     "day3_night_sea_msg_5": {
         "text": "*Eine Sprechblase mit nur drei Punkten klebt ganz unten im Chatfenster.*"
     },
     "day3_night_sea_msg_6": {
-        "text": "*2 Minuten später. Vibration. Sea: '{name}?' — 22:08*"
+        "text": "*2 Minuten später. Vibration. Sea — 22:08*\n\n{name}?"
     },
     "day3_night_sea_msg_7": {
-        "text": "*Vibration. Sea: 'Warum liest du nicht?' — 22:11*"
+        "text": "*Vibration. Sea — 22:11*\n\nWarum liest du meine Nachrichten nicht?"
     },
     "day3_night_sea_msg_8": {
-        "text": "*Vibration. Sea: 'Du schläfst... oder?' — 22:15*"
+        "text": "*Vibration. Sea — 22:15*\n\nDu schläfst... oder?"
     },
     "day3_night_sea_msg_9": {
-        "text": "*Sechs Nachrichten in 13 Minuten. Die ungelesenen Sprechblasen füllten einen ganzen Bildschirm. Die Eingabezeit der letzten Blase blieb mir im Blick hängen.*"
+        "text": "*6 Nachrichten in 13 Minuten. Die ungelesenen Sprechblasen füllen einen ganzen Bildschirm. Die Eingabezeit der letzten Nachricht fällt mir immer wieder ins Auge.*"
     },
     "day3_night_sea_msg_10": {
         "text": "*Ich legte das Handy mit dem Display nach unten. Es vibriert trotzdem.*"
@@ -39,7 +39,7 @@
         "text": "*Vibration. Schon wieder. Ich hatte mir vorgenommen, nicht auf den Bildschirm zu schauen, aber meine Hand greift danach.*"
     },
     "day3_night_sea_msg_12": {
-        "text": "*Sea: 'Du hast das Fenster offen, oder? Lüfte vor dem Schlafen' — 22:19*"
+        "text": "*Sea — 22:19*\n\nDu hast das Fenster offen, oder? Lüfte vor dem Schlafen"
     },
     "day3_night_sea_msg_13": {
         "text": "*Das Fenster? Mein Daumen bleibt über dem Antwort-Button stehen.*"
@@ -66,7 +66,7 @@
         "text": "*Die Namensschilder ändern sich, aber der kleine Punkt neben dem Auge bleibt an derselben Stelle.*"
     },
     "day3_night_bleed_4": {
-        "text": "*Ich schließe die Augen. Aber auf der Innenseite meiner Lider leuchten die Fotos auf. 13 Passbilder in einer Reihe. Andere Haarfarben. Andere Namensschilder. Dieselben Augen.*"
+        "text": "*Auch mit geschlossenen Augen sehe ich die 13 Passbilder vor mir. Haarfarben und Namensschilder sind verschieden, die Augen auf allen Bildern gleich.*"
     },
     "day3_night_bleed_no_yuna_1": {
         "text": "*Ich habe die Fotos nicht gesehen. Trotzdem legen sich der Zettel, die Schrift an der Wand und Seas Nachrichten übereinander wie verstreute Blätter auf dem Schreibtisch.*"
@@ -105,7 +105,7 @@
         "text": "*Wenn ich mir das Tor meiner alten Schule vorstellen will, kommen zuerst weiße Wände. Danach kommt nichts mehr.*"
     },
     "day3_night_bleed_12": {
-        "text": "*Das Klassenzimmer meiner alten Schule. Weiße Wände. Eine weiße Tafel. Ein Lehrer ohne Gesicht. Auf dem Platz neben mir ist nur der Schatten eines Schreibtischs.*"
+        "text": "*Im Klassenzimmer meiner alten Schule steht eine Lehrkraft ohne Gesicht vor der weißen Wand und der Tafel. Auf dem Platz neben mir bleibt nur der Schatten eines Tisches.*"
     },
     "day3_night_bleed_13": {
         "text": "*Ich atmete ein. Das Muster an der Decke schien Feld für Feld näher zu rücken.*"
@@ -207,10 +207,10 @@
         "text": "*Es ist die Schülerin am Fenster. Silberweißes Haar. Schuluniform. Mein Zimmer mitten in der Nacht. Die Tür ist abgeschlossen, und das Sensorlicht im Eingangsbereich ist nicht angegangen.*"
     },
     "day3_night_seolhwa_4a": {
-        "text": "*Ich habe die Haustür nicht gehört. Auch keine Schritte.*"
+        "text": "Ich habe weder die Haustür noch Schritte gehört. Wie bist du reingekommen? Ich hatte doch abgeschlossen."
     },
     "day3_night_seolhwa_4b": {
-        "text": "*Seolhwa sieht mich an. Ihre Augenwinkel sind feucht.*"
+        "text": "*Seolhwa sieht mich an. Ihre Augenwinkel sind feucht.*\n\nDafür ist jetzt keine Zeit. Hör erst zu."
     },
     "day3_night_seolhwa_5": {
         "text": "...Fünf Tage."
@@ -225,22 +225,22 @@
         "text": "Innerhalb von fünf Tagen... musst du hier raus."
     },
     "day3_night_seolhwa_7a": {
-        "text": "*Ihre Stimme scheint nicht aus diesem Zimmer zu kommen. Sie folgt einen Takt zu spät.*"
+        "text": "*Ihre Stimme scheint nicht aus diesem Zimmer zu kommen. Sie folgt einen Augenblick später.*\n\nDeine Stimme … Ich höre sie einen Moment zu spät."
     },
     "day3_night_seolhwa_8": {
         "text": "Bevor du so wirst wie ich."
     },
     "day3_night_seolhwa_9": {
-        "text": "...Wie du? Was ist dir passiert..."
+        "text": "Wie du? Was ist mit dir passiert?"
     },
     "day3_night_seolhwa_10": {
-        "text": "*Seolhwa streckt die Hand nach meinem Gesicht aus. Ihre Fingerspitzen halten kurz vor meiner Wange inne.*"
+        "text": "*Seolhwa streckt die Hand nach meinem Gesicht aus. Ihre Fingerspitzen halten direkt vor meiner Wange inne, ohne sie zu berühren.*\n\nWarte, deine Hand …"
     },
     "day3_night_seolhwa_11": {
-        "text": "*Ihre Fingerspitzen verschwimmen vor meiner Wange. Das Licht der Straßenlaterne vor dem Fenster fällt ungehindert durch ihren Handrücken.*"
+        "text": "*Ihre Fingerspitzen verschwimmen vor meiner Wange. Das Licht der Straßenlaterne vor dem Fenster fällt ungehindert durch ihren Handrücken.*\n\nDeine Hand … Sie verblasst."
     },
     "day3_night_seolhwa_11a": {
-        "text": "*Eine feine Linie lief aus dem Augenwinkel der Schülerin hinab und wurde vom Licht verschluckt.*"
+        "text": "*Eine feuchte Spur auf ihrer Wange verschwindet beim Blinzeln.*\n\nHast du geweint? Warte. Verschwinde nicht."
     },
     "day3_night_seolhwa_12": {
         "text": "...Erinnere dich. Die linke Hand."

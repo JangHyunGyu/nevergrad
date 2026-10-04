@@ -6,7 +6,7 @@
         "text": "*Suena la alarma. Abro los ojos. Día 2.*"
     },
     "day2_morning_wakeup_2": {
-        "text": "*Los documentos de transferencia que había doblado el día anterior estaban bien alineados en la esquina del escritorio. La mochila pesa menos que ayer.*"
+        "text": "*Los papeles del traslado que doblé ayer están ordenados al borde de la mesa. La mochila pesa menos que ayer.*"
     },
     "day2_morning_wakeup_3": {
         "text": "*Reviso mi celular.*"
@@ -33,7 +33,7 @@
         "text": "Acabo de llegar. Vivo cerca. Se te pegaron muchos pétalos de cerezo en el camino."
     },
     "day2_morning_gate_4": {
-        "text": "*En las puntas de los tenis de Sea hay tierra húmeda ya seca. Para alguien que acaba de llegar, el color es demasiado oscuro.*"
+        "text": "*En las puntas de las zapatillas de Sea hay tierra que se ha mojado y luego se ha secado. Para alguien que acaba de llegar, el color es demasiado oscuro.*\n\nLlevas barro. ¿No acababas de llegar? ¿Has pasado por algún sitio?"
     },
     "day2_morning_gate_5": {
         "text": "*Desde la entrada hasta el aula. Sea camina a mi lado.*"
@@ -60,13 +60,13 @@
         "text": "Mañana traeré un poco más de almuerzo. Si sobra, comamos juntos."
     },
     "day2_morning_walk_8": {
-        "text": "...¿Está bien que me cuides tanto?"
+        "text": "¿Puedes estar tan pendiente de mí? Lo agradezco, pero con ir juntos al colegio basta. No hace falta preocuparte por lo que como."
     },
     "day2_morning_walk_9": {
         "text": "Justo siempre me termina sobrando. Sería una pena tirarlo."
     },
     "day2_morning_walk_10": {
-        "text": "*Sea camina adelante sin mirar atrás. Solo el final de sus palabras suena alegre.*"
+        "text": "*Sea camina adelante sin mirar atrás. Solo el final de sus palabras suena alegre.*\n\nYa has dicho que sobra. Pero puedo darte las gracias igual, ¿no?"
     },
     "day2_morning_walk_11": {
         "text": "Ah, cierto, {name}, ¿qué tipo de música escuchas?"
@@ -78,7 +78,7 @@
         "text": "Yo también. Pero últimamente escucho mucho a este cantante. Tiene la voz grave."
     },
     "day2_morning_walk_14": {
-        "text": "*Sea me muestra su celular. Un canal de una banda indie.*"
+        "text": "*Me muestra el canal de un grupo indie.*\n\nEsta. A lo mejor te suena el título."
     },
     "day2_morning_walk_15": {
         "text": "Oh, conozco esta canción. Una vez apareció en mi algoritmo."
@@ -87,7 +87,7 @@
         "text": "Le pusiste corazón a esta canción."
     },
     "day2_morning_walk_17": {
-        "text": "*El pulgar de Sea se detiene sobre la pantalla. La velocidad con la que pasaba la lista de reproducción hace un momento se volvió más lenta.*"
+        "text": "*El pulgar con el que Sea pasaba la lista de reproducción se detiene sobre la pantalla.*\n\n¿Cómo lo sabes? ¿Te dije que le había dado a favorito? Estás mirando tu propia lista."
     },
     "day2_morning_deja4_1": {
         "text": "*Caminando a clase con Sea, siento sed.*"
@@ -122,7 +122,7 @@
         "text": "*Eunsu pasa lista. Los nombres son llamados uno por uno.*"
     },
     "day2_morning_class_4": {
-        "text": "*...Una hoja del registro de asistencia pasa de página. Detrás de mí, las patas de una silla se arrastran brevemente. Seolhwa está sentada. Pero entre los nombres que acaban de llamar, no estaba el nombre de ese asiento.*"
+        "text": "*Pasa una página del registro de asistencia. La pata de una silla roza brevemente el suelo en el asiento detrás de mí. Seolhwa está sentada allí.*\n\n¿No falta un nombre al fondo? Creo que no lo ha llamado."
     },
     "day2_morning_class_5": {
         "text": "*El altavoz sobre el pizarrón emite un breve zumbido, y Eunsu abre la siguiente página. Nadie mira atrás.*"
@@ -143,7 +143,7 @@
         "text": "Hoy tenemos presentaciones grupales. El tema es 'Mi lugar favorito'."
     },
     "day2_morning_pres_4": {
-        "text": "*Mirando las asignaciones de grupo, estoy con Sea y un chico que no conozco realmente.*"
+        "text": "*En la lista de grupos veo que me ha tocado con Sea y un chico al que apenas conozco.*\n\nPues los tres. Primero elegimos el tema."
     },
     "day2_morning_pres_5": {
         "text": "¡Estamos en el mismo grupo! ¿Qué deberíamos hacer? Necesitamos elegir un tema."
@@ -152,7 +152,7 @@
         "text": "¿Un café o algo así? Honestamente, cualquier cosa está bien, ¿verdad?"
     },
     "day2_morning_pres_7": {
-        "text": "Mmm... ¿qué tal la biblioteca? Es tranquila."
+        "text": "¿Qué tal la biblioteca? Es tranquila. Será más fácil buscar información de un sitio que hemos visto. ¿Prefieres otro?"
     },
     "day2_morning_pres_8": {
         "text": "Genial. ¿Hago las diapositivas?"
@@ -164,7 +164,7 @@
         "text": "De acuerdo."
     },
     "day2_morning_pres_11": {
-        "text": "*Sea levanta el pulgar. En el cuaderno de Sea ya está escrito el título `Presentación de la biblioteca_{name}`.*"
+        "text": "*Sea levanta el pulgar. Ya ha escrito `Presentación biblioteca_{name}`.*\n\n¿Ya tienes el título? Decides rápido."
     },
     "day2_morning_pres_12": {
         "text": "*Era el turno de presentar de nuestro grupo. Apenas pasé al frente, las palabras siguieron saliendo sin trabarse. Sea asentía antes de que yo tuviera que buscar la siguiente frase.*"

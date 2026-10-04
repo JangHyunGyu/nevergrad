@@ -256,8 +256,8 @@ function readSeoSitemapFragment() {
     return fs.readFileSync(fragmentPath, 'utf-8').replace(/\s+$/g, '');
 }
 
-// The root index.html is a gzip+base64 loader (see scripts/add-static-seo-head.js).
-// Language pages are built from the DECODED game document, not from the loader.
+// The root serves the game as static HTML so styles block the first paint.
+// Accept legacy packed documents as well when updating an older checkout.
 function loadTemplate() {
     const loader = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf-8');
     const m = loader.match(/var b64 = "([A-Za-z0-9+/=]+)"/);
@@ -606,7 +606,13 @@ function updateRootDocument() {
     const file = path.join(ROOT, 'index.html');
     const loader = fs.readFileSync(file, 'utf-8');
     const m = loader.match(/var b64 = "([A-Za-z0-9+/=]+)"/);
-    if (!m) throw new Error('index.html: gzip loader not found');
+    if (!m) {
+        const next = transformRootDocument(loader);
+        if (next === loader) { console.log('  = index.html already up to date'); return; }
+        fs.writeFileSync(file, next, 'utf-8');
+        console.log('  ✓ index.html updated');
+        return;
+    }
     const zlib = require('zlib');
     const doc = zlib.gunzipSync(Buffer.from(m[1], 'base64')).toString('utf-8');
     const next = transformRootDocument(doc);

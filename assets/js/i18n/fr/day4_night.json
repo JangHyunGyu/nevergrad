@@ -12,40 +12,40 @@
         "text": "*Mon téléphone sonne. C'est Sea.*"
     },
     "day4_night_phone_2": {
-        "text": "*Sea : '{name}, je me suis inquietee parce que tu as soudainement disparu aujourd'hui'*"
+        "text": "*Sea*\n\n{name}, je me suis inquiétée parce que tu as soudainement disparu aujourd'hui"
     },
     "day4_night_phone_3": {
-        "text": "*Sea : 'Allons-y ensemble demain aussi'*"
+        "text": "*Sea*\n\nAllons-y ensemble demain aussi"
     },
     "day4_night_phone_4": {
-        "text": "*Sea : 'C'est une promesse.'*"
+        "text": "*Sea*\n\nC'est une promesse."
     },
     "day4_night_phone_5": {
-        "text": "*30 secondes plus tard. Sea : 'C'est une promesse.'*"
+        "text": "*30 secondes plus tard. Sea*\n\nC'est une promesse."
     },
     "day4_night_phone_6": {
-        "text": "*15 secondes plus tard. Sea : 'C'est une promesse ?'*"
+        "text": "*15 secondes plus tard. Sea*\n\nPromis ?"
     },
     "day4_night_phone_7": {
         "text": "*Le prochain message apparaît avant que la vibration ne se termine.*"
     },
     "day4_night_phone_8": {
-        "text": "*10 secondes plus tard. Sea : 'Tu dors ?'*"
+        "text": "*10 secondes plus tard. Sea*\n\nTu dors ?"
     },
     "day4_night_phone_9": {
-        "text": "*5 secondes plus tard. Sea : '...Ne t'endors pas. Encore un peu.'*"
+        "text": "*5 secondes plus tard. Sea*\n\n...Ne t'endors pas. Encore un peu."
     },
     "day4_night_phone_10": {
-        "text": "*3 secondes plus tard. Sea : 'S'il te plaît'*"
+        "text": "*3 secondes plus tard. Sea*\n\nS'il te plaît"
     },
     "day4_night_phone_11": {
         "text": "*Aucun indicateur de lecture n’apparaît. J’ai verrouillé l’écran.*"
     },
     "day4_night_phone_eunsu": {
-        "text": "*Mme Eunsu : « Tu pourrais venir un peu plus tôt demain ? J’ai quelque chose à te dire. »*"
+        "text": "*Mme Eunsu*\n\nTu pourrais venir un peu plus tôt demain ? J’ai quelque chose à te dire."
     },
     "day4_night_phone_eunsu_2": {
-        "text": "*Mme Eunsu : 'Bonne nuit, {name}.'*"
+        "text": "*Mme Eunsu*\n\nBonne nuit, {name}."
     },
     "day4_night_phone_eunsu_3": {
         "text": "*'Dors bien.' Sous la bulle, l'icône de l'application de sécurité des élèves flotte elle aussi.*"
@@ -96,7 +96,7 @@
         "text": "*« Historique de suivi de localisation ». Je touche l’onglet. Un point rouge se déplace sur le plan de l’école. C’est mon parcours des quatre derniers jours.*"
     },
     "day4_night_save_glitch_15": {
-        "text": "*Le portail, les escaliers, même les étages où je me suis attardé portent un numéro. Mes déplacements des quatre derniers jours se rejouent au même rythme.*"
+        "text": "*Les trajets des quatre derniers jours défilent à la même vitesse. Le portail, les escaliers, même les étages où je me suis attardé sont notés en chiffres.*"
     },
     "day4_night_save_glitch_16": {
         "text": "*La demande d'autorisation que j'avais validée au Jour 2 me revient en tête. `Nécessaire pour localiser les élèves en cas d'urgence dans l'établissement`.*"
@@ -111,7 +111,7 @@
         "text": "*L'application s'est fermée. Toute seule. Le menu habituel pour élèves est revenu. 'Bonne nuit, {name} !'*"
     },
     "day4_night_save_glitch_20": {
-        "text": "*C'est la même icône. Le jour, un QR de carte d'élève. La nuit, 13 lignes.*"
+        "text": "*C'est la même icône. Le jour, c'était le QR de la carte d'élève ; la nuit, elle affiche 13 lignes.*"
     },
     "day4_night_mirror": {
         "text": "*J'ai défait deux boutons de ma chemise d'uniforme. La marque du bouton du col reste rouge sur ma peau. Je suis allé dans la salle de bain. J'ai ouvert l'eau du lavabo. Je me suis lavé le visage.*"
@@ -135,10 +135,10 @@
         "text": "*La paume devant le miroir, je compte jusqu’à deux sans pouvoir bouger.*"
     },
     "day4_night_mirror_8": {
-        "text": "*J’entends un bruit derrière moi. En me retournant, je vois Seolhwa à la porte de la salle de bain ; de l’eau coule sous les manches mouillées de son uniforme.*"
+        "text": "*J’entends une présence derrière moi et me retourne. Seolhwa se tient devant la porte de la salle de bains. De l’eau goutte des manches mouillées de son uniforme.*\n\nSeolhwa, regarde. J'ai encore pas pu essuyer. C'est pas juste ce que tu as dit. Moi aussi, j'ai peur."
     },
     "day4_night_mirror_9": {
-        "text": "*Seolhwa me regarde sans dire un mot ; les creux sous ses yeux sont profondément sombres.*"
+        "text": "*Seolhwa me regarde sans un mot. Le dessous de ses yeux est très creusé.*\n\nJ'allais regarder. Tu viens encore m'arrêter ? Pourquoi je dois toujours m'arrêter là ?"
     },
     "day4_night_mirror_10": {
         "text": "...Ne l'essuie pas."
@@ -174,16 +174,16 @@
         "text": "*Seul l'endroit où Seolhwa se tenait encore à l'instant est vide.*"
     },
     "day4_night_mirror_hit1_4": {
-        "text": "*J’ouvre la bouche, mais aucun son ne sort.*"
+        "text": "Tu es pas dans le miroir. Tu es juste derrière moi. Pourquoi…?\n\n*J’ouvre la bouche, mais aucun son ne sort.*"
     },
     "day4_night_mirror_hit1_5": {
-        "text": "*En me retournant, Seolhwa est là ; de l’eau perle aux extrémités de ses cheveux mouillés, et les coins de ses yeux sont également humides.*"
+        "text": "*Je me retourne et Seolhwa est là. L’eau goutte des pointes de ses cheveux mouillés. Le contour de ses yeux est humide, lui aussi.*\n\nTu es bien là. Pourtant, je te voyais pas dans le miroir."
     },
     "day4_night_mirror_hit1_6": {
         "text": "*J'ai regardé le miroir à nouveau. Dans le miroir — seulement moi. Moi et une salle de bain vide.*"
     },
     "day4_night_mirror_hit1_7": {
-        "text": "*J'ai regardé derrière moi. Seolhwa est là. J'ai regardé le miroir. Elle n'y est pas. Derrière. Là. Miroir. Pas là.*"
+        "text": "*Je regarde derrière moi : Seolhwa est là. Dans le miroir, elle n’apparaît pas. Je me retourne à nouveau : elle est là. Toujours absente du miroir.*\n\nBouge pas. Je regarde encore. Je l'invente pas."
     },
     "day4_night_mirror_hit1_8": {
         "text": "*Sous le néon reflété dans le miroir, il n'y a qu'une suite de carreaux vides.*"
@@ -195,10 +195,10 @@
         "text": "*La porte du sous-sol, Seolhwa et le dossier du sujet 07 s'alignent sur la même ligne.*"
     },
     "day4_night_mirror_hit1_11": {
-        "text": "*La ligne #07 de l'écran des dossiers me revient. `Contact extérieur : Lee Seolhwa`. La case noire à côté.*"
+        "text": "*Je repense à la ligne #07 dans l’application : `Contact extérieur : Lee Seolhwa`. La partie à côté était noircie.*\n\nSeolhwa. Il y avait une partie cachée près de ton nom. Il y avait quoi ?"
     },
     "day4_night_mirror_hit1_12": {
-        "text": "*Le miroir reflète une salle de bain vide, mais sur le bord droit de ma vision, je vois les cheveux mouillés de Seolhwa.*"
+        "text": "*Le miroir ne montre qu’une salle de bains vide. Pourtant, à droite de mon champ de vision, je vois les cheveux mouillés de Seolhwa.*\n\nArrête. Me cherche pas dans le miroir. Regarde ici."
     },
     "day4_night_mirror_hit1_13": {
         "text": "*Le miroir et le bord de ma vision sont décalés d’un cran.*"
@@ -207,13 +207,13 @@
         "text": "...Pardon."
     },
     "day4_night_mirror_hit1_15": {
-        "text": "*J'entends une voix. Nettement. Mais ni la porte de la salle de bain, ni l'aération, ni le haut-parleur ne résonnent.*"
+        "text": "*J’ai entendu la voix. Mais ni la porte de la salle de bains, ni l’aération, ni le haut-parleur ne résonnent.*\n\nJe t'ai entendue dire pardon. Je sais pas d'où vient la voix, mais je l'ai entendue. Seolhwa, c'était bien à moi ?"
     },
     "day4_night_mirror_hit2": {
         "text": "*Ma vision se rétrécit. Je fixe le miroir. Mon visage. Je regarde mon visage.*"
     },
     "day4_night_mirror_hit2_2": {
-        "text": "*Mon visage, vu correctement pour la première fois en 4 jours. Une goutte tombe du bout de mon menton, et seules les marques du cordon du badge restent sur mon cou.*"
+        "text": "*Pour la première fois en 4 jours, je regarde vraiment mon visage. L’eau goutte de la pointe de mon menton. Seules les marques du cordon du badge restent sur mon cou.*"
     },
     "day4_night_mirror_hit2_3": {
         "text": "*Je sors les 13 photos que Yuna m'a données sur le lavabo. Une par une, je les compare à mon visage dans le miroir.*"
@@ -261,10 +261,10 @@
         "text": "*Le sol de la salle de bain est froid. Le bruit de la trotteuse se superpose encore et encore.*"
     },
     "day4_night_mirror_collapse_8": {
-        "text": "*Seolhwa est assise à côté de moi. Du côté du miroir, aucune ombre ne s'étire.*"
+        "text": "*Elle s'assied près de moi. Je suis seul dans le miroir.*\n\nReste là. Pas besoin de répondre. J'arrive pas à regarder ça seul."
     },
     "day4_night_mirror_collapse_9": {
-        "text": "*Mais l’air près de la place voisine est légèrement plus froid.*"
+        "text": "*Je touche le carrelage du côté de Seolhwa. Il est plus froid qu’ailleurs.*\n\nLe sol est plus froid de ce côté. Je sais que tu es là. Mais je peux toujours pas te tenir ?"
     },
     "day4_night_plan": {
         "text": "*...Je ne me suis relevé qu'une fois le froid du carrelage remonté jusqu'à l'intérieur de mes genoux.*"

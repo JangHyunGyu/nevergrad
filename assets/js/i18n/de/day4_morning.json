@@ -39,7 +39,7 @@
         "text": "*Ich habe die Knöpfe meiner Schuluniform dreimal falsch geschlossen, löste sie wieder und begann von vorne.*"
     },
     "day4_morning_start_14": {
-        "text": "*Morgenlicht fällt durch die Vorhänge. Ein heller Tag. Aber -- jemand steht auf dem Gehweg unter dem Fenster. Anzug. Sonnenbrille. Verschränkte Arme, blickt herauf.*"
+        "text": "*Morgensonne fällt zwischen den Vorhängen hindurch. Es ist ein heller Tag. Doch auf dem Gehweg unter dem Fenster steht jemand im Anzug und mit Sonnenbrille, die Arme verschränkt, und blickt zu mir herauf.*"
     },
     "day4_morning_start_15": {
         "text": "*Zwei Sekunden. Ich blinzelte. Auf dem Gehweg bleiben nur zwei nasse Fußspuren zurück.*"
@@ -114,7 +114,7 @@
         "text": "*Auch das Mädchen neben ihm lächelte. Sie war noch mitten im Gespräch, aber ihre Mundwinkel gingen schon nach oben. Ihre Augen waren noch auf ihre Gesprächspartnerin gerichtet.*"
     },
     "day4_morning_gate_4": {
-        "text": "*Noch einer. Draußen an der Mauer hatte er mit gerunzelter Stirn auf sein Handy gesehen. Kaum setzte er einen Fuß auf die Innenseite des Tors, ordnete sich sein Gesicht. Als hätte jemand es vor einem Spiegel zurechtgerückt.*"
+        "text": "*Ein Schüler schaut draußen vor der Mauer mit finsterem Blick aufs Handy. Sobald er einen Schritt durch das Schultor macht, verwandelt sich sein Gesichtsausdruck in ein Lächeln.*"
     },
     "day4_morning_gate_5": {
         "text": "*Das ist das dritte Mal. Sobald sie den Schatten hinter dem Tor betreten, ändert sich ihr Gesichtsausdruck, und die Winkel ihrer hochgezogenen Mundwinkel sind identisch.*"
@@ -129,7 +129,7 @@
         "text": "*Als mein Blick die Kontrollleuchte des Lautsprechers streift, gleitet ein Blick zu mir herüber und verschwindet wieder.*"
     },
     "day4_morning_gate_9": {
-        "text": "*Frau Eunsu steht vor dem Haupttor. An das Tor gelehnt. Sie lächelt. Direkt unter der Betriebsanzeige des Lautsprechers.*"
+        "text": "*Frau Eunsu steht vor dem Haupttor. An das Tor gelehnt. Sie lächelt. Direkt unter der Betriebsanzeige des Lautsprechers.*\n\nSie haben dort gewartet. Darf ich ins Klassenzimmer? Muss am Tor noch etwas überprüft werden?"
     },
     "day4_morning_gate_10": {
         "text": "*Der Sekundenzeiger an Eunsus Armbanduhr bewegt sich im selben Takt wie das Rauschen aus dem Lautsprecher am Haupttor.*"
@@ -141,7 +141,7 @@
         "text": "Lass uns heute zusammen zum Klassenraum gehen."
     },
     "day4_morning_eunsu_3": {
-        "text": "*Sie verschränkt die Arme und stellt sich neben mich.*"
+        "text": "*Frau Eunsu steht mit verschränkten Armen neben mir.*\n\nWarum heute? Den Weg kenne ich inzwischen."
     },
     "day4_morning_eunsu_choice": {
         "text": "*Eunsu wartet.*",
@@ -151,10 +151,10 @@
         ]
     },
     "day4_morning_eunsu_comply": {
-        "text": "*Ich ging Seite an Seite mit Eunsu zum Klassenraum. ...Eine Eskorte -- oder ein Gefangenentransport. Ich konnte es nicht unterscheiden.*"
+        "text": "*Ich ging Seite an Seite mit Frau Eunsu zum Klassenzimmer. Ihre Schuhspitze ragte in den Rand meines Schattens.*\n\nSie sind mitgekommen, dann reicht das jetzt, oder? Im Klassenzimmer gehe ich auf meinen Platz. Ich möchte den Unterricht nicht verpassen."
     },
     "day4_morning_eunsu_refuse": {
-        "text": "Schon gut. Ich gehe vor."
+        "text": "Es geht mir gut. Ich gehe vor. Den Weg zum Klassenzimmer kenne ich. Ich komme da auch hin, ohne dass Sie mich begleiten."
     },
     "day4_morning_eunsu_refuse_2": {
         "text": "Gehen Sie nicht alleine herum."
@@ -163,10 +163,10 @@
         "text": "**Es ist gefährlich.**"
     },
     "day4_morning_eunsu_refuse_4": {
-        "text": "*Gefahr. Am Ende des Wortes stockte Eunsus Lächeln für einen winzigen Augenblick.*"
+        "text": "*Gefährlich. Am Ende des Wortes stockt Frau Eunsus Lächeln für einen winzigen Moment.*\n\nWir sind in der Schule. Was ist gefährlich? Vor wem soll ich mich hüten?"
     },
     "day4_morning_eunsu_refuse_5": {
-        "text": "*Frau Eunsu folgt mir mit einem halben Schritt Abstand. Ihre Schuhspitzen ragen immer wieder in den Rand meines Schattens.*"
+        "text": "*Frau Eunsu folgt mir mit einem halben Schritt Abstand. Ihre Schuhspitzen ragen immer wieder in den Rand meines Schattens.*\n\nWenn Sie direkt hinter mir laufen, gehe ich nicht allein. Ich finde zum Klassenzimmer. Sie können vorne warten."
     },
     "day4_morning_classroom": {
         "text": "*Ich betrat den Klassenraum.*"
@@ -208,7 +208,7 @@
         "text": "Gestern Abend stand es im Gruppenchat. Hast du es nicht gesehen?"
     },
     "day4_morning_sea_3a_react": {
-        "text": "*Ich öffne den Gruppenchat. Von gestern Abend gibt es keine Ankündigung. Die letzte Nachricht ist ein Foto vom Mensa-Menü.*"
+        "text": "*Ich öffne den Gruppenchat. Keine Mitteilung von gestern Abend. Die letzte Nachricht ist ein Foto des Speiseplans der Mensa.*\n\nKeine Mitteilung. Wo steht sie? Bin ich im falschen Chat?"
     },
     "day4_morning_sea_4": {
         "text": "*In meiner Tasche berührt das Etui der SD-Karte meine Fingerspitzen. Genau so, wie Yuna es mir gestern gegeben hat.*"
@@ -223,7 +223,7 @@
         "text": "Yuna...? Ach, die, die letztes Jahr versetzt wurde?"
     },
     "day4_morning_sea_8": {
-        "text": "*Letztes Jahr? Yuna war bis gestern hier.*"
+        "text": "Letztes Jahr? Yuna war gestern noch hier. Meint ihr nicht jemand anderen?"
     },
     "day4_morning_sea_9": {
         "text": "*Die Ecke des Tisches, an der der Foto-Club-Aufkleber klebte, ist etwas weniger verblasst.*"
@@ -253,7 +253,7 @@
         "text": "Den Kader zu verlassen... wäre ein Problem."
     },
     "day4_morning_class_7": {
-        "text": "*Frau Eunsus Blick bleibt auf mir ruhen. Sie tritt einen Schritt vom Pult auf mich zu.*"
+        "text": "*Frau Eunsu richtet ihren Blick fest auf mich und tritt vom Lehrerpult einen Schritt auf mich zu.*\n\nSuchen Sie die nicht, wenn sie nicht auf der Liste stehen? Es sind doch auch Schüler."
     },
     "day4_morning_class_8": {
         "text": "Normalerweise endete es nicht gut."

@@ -6,7 +6,7 @@
         "text": "*Les pétales de cerisier voltigent. Le vent s'engouffre par les manches de mon nouvel uniforme.*"
     },
     "day1_opening_3": {
-        "text": "*L'uniforme est encore raide. Il sent vaguement l'amidon. Les plis marqués au fer hier se redressent chaque fois que je plie les genoux.*"
+        "text": "*Mon uniforme est raide et sent l'amidon. Les plis repassés hier se redressent dès que je plie les genoux.*"
     },
     "day1_opening_4": {
         "text": "*À partir d'aujourd'hui, je suis élève dans cette école.*"
@@ -30,7 +30,7 @@
         "text": "*L’école est grande et propre. Le terrain est vaste, et la lumière du matin s’aligne nettement sur les vitres des bâtiments.*"
     },
     "day1_gate_3": {
-        "text": "*Les élèves franchissent le portail principal par petits groupes. Des rires, des bavardages, le bruit de clés qui tintent dans les poches des survêtements de sport. La manche usée de quelqu'un frôle celle de mon uniforme neuf en passant.*"
+        "text": "*Parmi les rires et les conversations, des clés tintent dans une poche de survêtement. Une manche usée frôle la mienne, neuve, au passage.*"
     },
     "day1_gate_4": {
         "text": "*Personne ne me voit. Seules les manches de mon nouvel uniforme effleurent maladroitement mes poignets.*"
@@ -54,13 +54,13 @@
         "text": "Tu es l'élève transféré ? J'ai entendu dire que quelqu'un arrivait aujourd'hui."
     },
     "day1_sea_meet_2": {
-        "text": "*Je me suis retourné pour voir une fille soignée se tenir là.*"
+        "text": "Ah, je cherchais la salle. C'est de quel côté ?"
     },
     "day1_sea_meet_3": {
         "text": "*Deux couettes brunes. Le ruban de son uniforme et son badge sont parfaitement en place.*"
     },
     "day1_sea_meet_4": {
-        "text": "*Dès que nos regards se croisent, elle sourit.*"
+        "text": "*Dès que nos regards se croisent, elle sourit.*\n\nC'est facile de se perdre, hein ? Au début, ça arrive à tout le monde."
     },
     "day1_sea_meet_5": {
         "text": "Je suis Sea. La déléguée de classe. Tu es {name}, n'est-ce pas ?"
@@ -72,7 +72,7 @@
         "text": "Notre professeure principale me l'a dit. Elle m'a informée qu'un élève transféré arrivait."
     },
     "day1_sea_meet_8": {
-        "text": "Oh... logique."
+        "text": "Ah, d'accord. Tu m'as appelé par mon nom avant que je me présente, ça m'a surpris. Si la prof t'a prévenue, t'es mieux préparée que moi."
     },
     "day1_sea_meet_9": {
         "text": "*Comme elle est déléguée de classe, elle a dû être prévenue.*"
@@ -81,7 +81,7 @@
         "text": "Tu cherches la salle de classe ? Suis-moi, je vais te faire visiter."
     },
     "day1_sea_meet_11": {
-        "text": "*Sea marche devant et adapte son allure chaque fois que je ralentis, sans se retourner.*"
+        "text": "*Sea marche devant et adapte son allure chaque fois que je ralentis, sans se retourner.*\n\nIl y a beaucoup de bâtiments. Un par un, je devrais mieux m'y retrouver."
     },
     "day1_sea_meet_12": {
         "text": "C'est le laboratoire scientifique. La salle de musique est là-bas. Le deuxième étage est principalement destiné aux troisièmes années, vous n'en aurez donc pas beaucoup besoin."
@@ -102,7 +102,7 @@
         "text": "Quand un nouvel élève se perd, c'est à la déléguée de le guider."
     },
     "day1_sea_meet_18": {
-        "text": "*Les élèves s’écartent naturellement au passage de Sea. Je la suis.*"
+        "text": "*Les élèves s’écartent naturellement au passage de Sea. Je la suis.*\n\nRegarde pas que par terre en me suivant. Si tu te perds ici, appelle-moi. Ça ira plus vite que de tourner seul à chaque coin."
     },
     "day1_choco_entry": {
         "text": ""
@@ -133,7 +133,7 @@
         "text": "« Ah oui, tiens. Je l'ai pris au magasin. Tu n'avais rien, n'est-ce pas ? »"
     },
     "day1_choco_ngp_2": {
-        "text": "*Elle m'a tendu du lait à la fraise. L'humidité du sac s'est transférée directement dans ma paume.*"
+        "text": "*Sea me tend une brique de lait à la fraise. L'humidité sur le carton mouille aussitôt ma paume.*\n\nMerci. La brique est toute mouillée. T'as dû te mouiller la main aussi. Je la prends, la mets pas dans ton sac."
     },
     "day1_choco_ngp_3": {
         "text": "*Mes doigts ont d'abord trouvé le bout de l'emballage en paille. C'est mon premier paquet, et même les bords pliés me semblent familiers.*"
@@ -145,13 +145,13 @@
         "text": "Oh, c'est vrai. Envie d'un lait chocolaté ? C'était acheter un, obtenir un gratuit, donc il m'en reste un."
     },
     "day1_choco_3": {
-        "text": "*Elle me tend un petit carton de lait chocolaté.*"
+        "text": "*Elle me tend la brique froide.*\n\nTiens. J'ai pas envie de traîner la deuxième toute la journée."
     },
     "day1_choco_4": {
-        "text": "*J'ai pris la compresse froide.*"
+        "text": "*Je prends la brique.*\n\nElle est vraiment froide."
     },
     "day1_choco_5": {
-        "text": "Oh ? Merci, mais... quelle est l'occasion ?"
+        "text": "Hein ? Merci, mais qu'est-ce qui se passe ? Ça me fait un peu drôle que tu t'occupes autant de moi dès le premier jour."
     },
     "day1_choco_6": {
         "text": "Tes mains sont froides. Le premier jour, le ventre vide, on tremble encore plus. Bois au moins ça."
@@ -174,7 +174,7 @@
         "text": "N'est-ce pas ? Le chocolat est un choix sûr."
     },
     "day1_choco_accept_4": {
-        "text": "*La brique est encore froide. Sea plie le plastique de la paille en petit carré et le glisse dans sa poche.*"
+        "text": "*La brique est encore froide. Sea plie le plastique de la paille en petit carré et le glisse dans sa poche.*\n\nJ'aurais pu jeter l'emballage de la paille. Tu m'offres le lait et tu prends même le déchet. Pardon."
     },
     "day1_choco_question_1": {
         "text": "...Attends, comment savais-tu que j'aimais le lait chocolaté ?"
@@ -186,19 +186,19 @@
         "text": "...Je te l’ai dit, c’était un acheté, un offert. Il y avait fraise aussi, mais chocolat me semblait plus sûr."
     },
     "day1_choco_question_4": {
-        "text": "D'accord. Je vois."
+        "text": "D'accord, je comprends. Je pensais que tu l'avais choisi parce que tu connaissais mes goûts. Mais on vient de se rencontrer, ça se peut pas. Je me faisais des idées."
     },
     "day1_choco_question_5": {
         "text": "Tant mieux."
     },
     "day1_choco_question_6": {
-        "text": "*Sea sourit. Ses doigts, en train de plier le plastique de la paille, s'arrêtent un très bref instant avant de reprendre.*"
+        "text": "*Sea sourit. Ses doigts, en train de plier le plastique de la paille, s'arrêtent un très bref instant avant de reprendre.*\n\nDésolé si ça faisait interrogatoire. J'étais juste curieux. Je suis pas encore habitué à ce qu'on m'offre à boire comme ça."
     },
     "day1_choco_joke_1": {
         "text": "En fait, je suis plutôt team lait à la fraise."
     },
     "day1_choco_joke_2": {
-        "text": "*La main de Sea s'est arrêtée sur la paille en plastique. pipi.*"
+        "text": "*Sa main s'arrête un bref instant sur l'emballage de la paille.*\n\nJe dis pas que je vais pas le boire. Le chocolat, ça me va aussi. Qu'est-ce qu'il y a ?"
     },
     "day1_choco_joke_3": {
         "text": "Ah oui ? La prochaine fois, je prendrai fraise. Il y en avait dans le rayon de gauche, à la supérette."
@@ -210,7 +210,7 @@
         "text": "*J'ouvre la porte et entre, le bavardage dans la classe s'éteint d'un coup.*"
     },
     "day1_classroom_3": {
-        "text": "*Des murmures me parviennent. « C'est l'élève transféré, paraît-il. » « Ça vient d'où ? » Le bruit d'une chaise qu'on tire paraît étrangement fort.*"
+        "text": "*Une chaise racle bruyamment le sol.*\n\nC'est lui, le nouveau. Il vient d'où ?"
     },
     "day1_classroom_4": {
         "text": "*J'ai posé mon sac et me suis installé. Place près de la fenêtre. Des cerisiers en fleurs visibles à l'extérieur. Pas mal.*"
@@ -237,7 +237,7 @@
         "text": "Bienvenue. Nous sommes ravis de t'avoir parmi nous."
     },
     "day1_eunsu_7": {
-        "text": "*Quand la professeure Eunsu termine de parler, mes doigts crispés se détendent lentement.*"
+        "text": "*Je desserre la main.*\n\nOui, madame. Merci de m'accueillir."
     },
     "day1_eunsu_8": {
         "text": "Vas-y, présente-toi."
@@ -257,13 +257,13 @@
         "text": "Euh... J'aime écouter de la musique."
     },
     "day1_eunsu_12": {
-        "text": "*Les élèves rient doucement. Quelqu'un, au fond, murmure : « Moi aussi. »*"
+        "text": "*Un petit rire vient du fond.*\n\nMoi aussi, j'aime la musique."
     },
     "day1_eunsu_13": {
         "text": "Très bien. Tout le monde, veuillez bien accueillir {name}. Ta place est là-bas, près de la fenêtre, au dernier rang."
     },
     "day1_eunsu_14": {
-        "text": "*Je retourne à ma place. Sea me fait un pouce levé. Madame Eunsu hoche la tête et sourit.*"
+        "text": "*Sea lève le pouce quand je reviens. Eunsu hoche la tête.*\n\nVoilà. Assieds-toi."
     },
     "day1_seolhwa_1": {
         "text": "*Avant le début du deuxième cours. J'ai jeté un coup d'œil derrière moi, depuis ma place.*"
@@ -336,7 +336,7 @@
         "text": "*Pendant le cours, j'ai laissé tomber mon crayon et j'ai regardé sous le bureau.*"
     },
     "day1_dejavu2_2": {
-        "text": "*Il y a des marques de griffures sous le bureau. Quelque chose gravé avec un crayon ou un compas. Vieux et estompé.*"
+        "text": "*De vieilles rayures se trouvent sous la table, des traces pâles creusées au crayon ou au compas.*"
     },
     "day1_dejavu2_3": {
         "text": "*J'aperçois quelques traits de lettres. Une ligne qui se courbe vers la gauche, une marque qui ressemble à un chiffre. En la grattant avec l'ongle, je récupère de la poussière.*"
@@ -357,7 +357,7 @@
         "text": "Qu’as-tu fait ces derniers temps ?"
     },
     "day1_break_5": {
-        "text": "*Nous parlons des environs de l'école, puis de la musique que nous écoutons en ce moment. Quand quelqu'un écorche deux fois mon nom, Sea le reprend aussitôt.*"
+        "text": "*On passe des environs du lycée à la musique qu'on écoute en ce moment. Quelqu'un écorche deux fois mon prénom et Sea le corrige aussitôt, à côté de moi.*\n\nSi tu sais plus, tu peux lui redemander. Mais écorche pas son prénom."
     },
     "day1_break_6": {
         "text": "Dis donc, Sea s’occupe vraiment beaucoup de toi."
@@ -369,7 +369,7 @@
         "text": "Mais elle n'a jamais apporté de boîte à lunch avant, si ?"
     },
     "day1_break_9": {
-        "text": "*...Une boîte à lunch ?*"
+        "text": "C'est si rare que Sea apporte son déjeuner ?"
     },
     "day1_pe_1": {
         "text": "*Cours de sport. Football. Le ballon est monté haut. Je l'ai contrôlé avec mon pied gauche.*"
@@ -378,7 +378,7 @@
         "text": "Oh, jolis mouvements !"
     },
     "day1_pe_3b": {
-        "text": "J'ai juste eu de la chance."
+        "text": "C'est juste de la chance. J'ai couru vers le ballon, c'est tout. On joue ensemble pour la première fois, me complimente pas trop, sinon je vais stresser la prochaine fois."
     },
     "day1_pe_4": {
         "text": "*Un déclic d'appareil photo vient d'un coin du terrain. Une petite élève qui tient un appareil sursaute.*"
@@ -393,7 +393,7 @@
         "text": "Après l'école, je trierai les photos à la bibliothèque. Si la photo que je viens de prendre vous préoccupe, dites-le moi à ce moment-là."
     },
     "day1_pe_wall_1": {
-        "text": "*Le foot est terminé. Je m'assois sur un banc et je bois de l'eau. Un grillage vert court au-dessus du mur de briques rouges, et au-delà, on voit les montagnes. Une maille du grillage est légèrement pliée vers l'intérieur.*"
+        "text": "*Je bois de l'eau sur un banc après le foot. Une maille du grillage vert au-dessus du mur de briques rouges est légèrement pliée vers l'intérieur. On voit les montagnes derrière.*"
     },
     "day1_pe_wall_3": {
         "text": "*La loche a sonné, alors je suis retourné à la salle de classe.*"

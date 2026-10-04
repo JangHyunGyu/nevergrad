@@ -1,0 +1,1176 @@
+{
+  "date": "2026-10-04",
+  "base_commit": "5938833e2123ba1ab54635025a44dc314e22bd4e",
+  "reference": {
+    "repository": "epoko77-ai/im-not-ai",
+    "commit": "2f3d943d08056b612a92e12bfb72ea94dd2acd18",
+    "skill": "humanize-korean v2.3-codex",
+    "route": "heavy"
+  },
+  "reviewed_korean_records": 2211,
+  "korean_fields_changed": 10,
+  "translated_fields_changed": 41,
+  "invariants": {
+    "scene_ids": "preserved",
+    "speakers": "preserved",
+    "choices": "preserved",
+    "gameplay_values": "preserved",
+    "placeholders": "preserved",
+    "korean_numeric_tokens": "preserved",
+    "narration_markup": "preserved"
+  },
+  "gates": {
+    "scope": "all manifest body chunks; original official verify_gates.py on each complete chunk",
+    "chunks": 36,
+    "warning_chunks": [],
+    "change_rate_range": [
+      0.0,
+      0.0009
+    ],
+    "note": "Official verify_gates.py applied to all complete body chunks before and after independent finalization; no whole-corpus character rate claimed."
+  },
+  "finalizer": {
+    "run_id": "2026-10-04-003-3adc",
+    "assessment": "accept",
+    "body_changed_during_finalization": false,
+    "correction_count": 0,
+    "summary_updated": true,
+    "backup": "final_pre_finalize.md",
+    "review_scope": "All 10 Korean changed records were compared directly against the original, reassembled final body, diagnosis and language companions. Record markers and the complete change inventory were also checked across the corpus.",
+    "fidelity": {
+      "verdict": "full_pass",
+      "violations": [],
+      "original_record_count": 2211,
+      "final_record_count": 2211,
+      "record_order_and_markers_preserved": true,
+      "actual_body_changes_match_changes_json": true,
+      "names_numbers_placeholders_negation_conditions_preserved": true,
+      "character_voice_and_honorifics_preserved": true
+    },
+    "naturalness": {
+      "verdict": "accept",
+      "over_polish_findings": [],
+      "residual_findings_requiring_correction": [],
+      "note": "Intentional horror repetition, short sentences, ellipses and contrasting mirror observations remain intact. The 10 changes repair local syntax or word choice without changing the events or register."
+    },
+    "body_character_counts": {
+      "original": 219275,
+      "final_before_summary": 219298,
+      "includes_record_markers": true
+    },
+    "gate_evidence": {
+      "source": "08_gates.json",
+      "scope": "Official verify_gates.py on every complete body chunk in the manifest",
+      "chunks": 36,
+      "passed_chunks": 36,
+      "all_exit_codes_zero": true,
+      "maximum_chunk_change_rate": 0.0009,
+      "character_weighted_mean_of_reported_chunk_rates": 0.00010148945388211149,
+      "full_corpus_sequence_matcher_completed": false,
+      "note": "Whole-corpus quadratic SequenceMatcher evaluation was stopped after a prolonged run. The bounded full-corpus review uses all 36 official chunk gates and direct record provenance checks; it does not claim a completed whole-corpus SequenceMatcher result."
+    },
+    "quality_grade": "B",
+    "grade_note": "All six self-checks pass and the official gates report no S1 targets. Grade A's 10-25 percent change-rate range is not met because only supported local changes were made.",
+    "self_check": {
+      "passed": 6,
+      "total": 6,
+      "preservation": "pass",
+      "change_rate": "pass",
+      "genre": "pass",
+      "register": "pass",
+      "residual_targets_in_reviewed_changes": "pass",
+      "no_new_artificial_expressions": "pass"
+    },
+    "category_counts": {
+      "scope": "10 edited Korean records; not a count of every stylistic device in the original horror corpus",
+      "C-11_connector_comma": {
+        "before": 2,
+        "after": 0
+      },
+      "local_lexical_particle_and_parallel_predicate_awkwardness": {
+        "before": 8,
+        "after": 0
+      }
+    },
+    "policy_scope_note": "No repository source files were edited. Unrelated source passages, including any student sexual content, were outside the changed-record review and remained unchanged."
+  },
+  "translation_review": {
+    "application_status": "applied",
+    "proposals_applied": 22,
+    "independent_review": {
+      "run_id": "2026-10-04-003-3adc",
+      "assessment": "accept_existing_fixes_with_additional_companion_corrections",
+      "scope": {
+        "changed_korean_records_reviewed": 10,
+        "language_companions_reviewed": 70,
+        "existing_translation_fixes_reviewed": 19,
+        "existing_translation_fixes_accepted": 19,
+        "additional_proposed_changes": 22,
+        "repository_source_edited": false
+      },
+      "record_reviews": [
+        {
+          "file": "assets/js/i18n/ko/day2_afterschool.json",
+          "id": "day2_after_sea_silent_1",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "corrections_proposed",
+          "proposal_count": 2,
+          "note": "All seven versions preserve the chair movement. Japanese and Portuguese need the low sound relation clarified; the other five are acceptable."
+        },
+        {
+          "file": "assets/js/i18n/ko/day2_night.json",
+          "id": "day2_night_phone_1",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "corrections_proposed",
+          "proposal_count": 1,
+          "note": "The no-reply state, three readers and two-day interval match in all seven versions. Portuguese needs a grammatical read-status label."
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_lunch.json",
+          "id": "day3_lunch_door_bang",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "corrections_proposed",
+          "proposal_count": 3,
+          "note": "The five-minute interval, empty exterior and missing lock are retained. Japanese and Spanish omit locking in the final clause, and Portuguese mistranslates the physical lock and door pronoun."
+        },
+        {
+          "file": "assets/js/i18n/ko/day3_lunch.json",
+          "id": "day3_lunch_door_wait",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "corrections_proposed",
+          "proposal_count": 4,
+          "note": "The seven versions preserve calming Yuna before the same locked-door aftermath. The same Japanese, Spanish and Portuguese issues apply; French also has a missing letter in calmer."
+        },
+        {
+          "file": "assets/js/i18n/ko/day4_morning.json",
+          "id": "day4_morning_gate_8",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "accept",
+          "proposal_count": 0,
+          "note": "All seven versions preserve the speaker indicator, the gaze sliding toward the narrator and its disappearance. No change is necessary."
+        },
+        {
+          "file": "assets/js/i18n/ko/day4_morning.json",
+          "id": "day4_morning_classroom_met_2",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "accept",
+          "proposal_count": 0,
+          "note": "All seven versions preserve wipe marks, no graffiti and a surface one shade lighter. No change is necessary."
+        },
+        {
+          "file": "assets/js/i18n/ko/day4_night.json",
+          "id": "day4_night_mirror_hit1_7",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "corrections_proposed",
+          "proposal_count": 2,
+          "note": "All seven versions preserve the alternating observation behind the narrator and in the mirror. Correct French location accents and Portuguese absence grammar while retaining the clipped sequence."
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_afterschool.json",
+          "id": "day5_after_caught_6",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "corrections_proposed",
+          "proposal_count": 2,
+          "note": "Six versions distinguish blood collection from connecting the IV. Japanese repeats the faulty shared connection predicate. French only needs accent corrections."
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_lunch.json",
+          "id": "day5_lunch_right_1",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "corrections_proposed",
+          "proposal_count": 6,
+          "note": "All seven versions retain stopping and the complete disappearance of both pursuit and stair sounds. Chinese retains the old-building location; the other six omit it."
+        },
+        {
+          "file": "assets/js/i18n/ko/day5_morning.json",
+          "id": "day5_morning_true_hide_1",
+          "field": "text",
+          "languages_reviewed": [
+            "en",
+            "ja",
+            "es",
+            "fr",
+            "de",
+            "pt",
+            "zh"
+          ],
+          "korean_verdict": "accept",
+          "companion_verdict": "corrections_proposed",
+          "proposal_count": 2,
+          "note": "All seven versions retain hiding, trembling breathing and the finger-to-lips gesture. Spanish and French omit the footsteps passing by. The Korean leaves the owner of the lips implicit, so the German specification is recorded as an ambiguity without an automatic correction."
+        }
+      ],
+      "existing_fix_reviews": [
+        {
+          "file": "assets/js/i18n/en/day2_night.json",
+          "id": "day2_night_phone_7",
+          "field": "text",
+          "lang": "en",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day2_night.json",
+          "source_text": "*평소라면 물음표 뒤에 이모티콘 하나쯤 붙였을 텐데 아무것도 없다.*",
+          "note": "The proposed text restores the expected emoticon after the question mark and removes invented insults and blank-space imagery."
+        },
+        {
+          "file": "assets/js/i18n/ja/day2_night.json",
+          "id": "day2_night_phone_7",
+          "field": "text",
+          "lang": "ja",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day2_night.json",
+          "source_text": "*평소라면 물음표 뒤에 이모티콘 하나쯤 붙였을 텐데 아무것도 없다.*",
+          "note": "The proposed text restores the expected emoticon after the question mark and removes invented insults and blank-space imagery."
+        },
+        {
+          "file": "assets/js/i18n/es/day2_night.json",
+          "id": "day2_night_phone_7",
+          "field": "text",
+          "lang": "es",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day2_night.json",
+          "source_text": "*평소라면 물음표 뒤에 이모티콘 하나쯤 붙였을 텐데 아무것도 없다.*",
+          "note": "The proposed text restores the expected emoticon after the question mark and removes invented insults and blank-space imagery."
+        },
+        {
+          "file": "assets/js/i18n/fr/day2_night.json",
+          "id": "day2_night_phone_7",
+          "field": "text",
+          "lang": "fr",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day2_night.json",
+          "source_text": "*평소라면 물음표 뒤에 이모티콘 하나쯤 붙였을 텐데 아무것도 없다.*",
+          "note": "The proposed text restores the expected emoticon after the question mark and removes invented insults and blank-space imagery."
+        },
+        {
+          "file": "assets/js/i18n/de/day2_night.json",
+          "id": "day2_night_phone_7",
+          "field": "text",
+          "lang": "de",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day2_night.json",
+          "source_text": "*평소라면 물음표 뒤에 이모티콘 하나쯤 붙였을 텐데 아무것도 없다.*",
+          "note": "The proposed text restores the expected emoticon after the question mark and removes invented insults and blank-space imagery."
+        },
+        {
+          "file": "assets/js/i18n/pt/day2_night.json",
+          "id": "day2_night_phone_7",
+          "field": "text",
+          "lang": "pt",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day2_night.json",
+          "source_text": "*평소라면 물음표 뒤에 이모티콘 하나쯤 붙였을 텐데 아무것도 없다.*",
+          "note": "The proposed text restores the expected emoticon after the question mark and removes invented insults and blank-space imagery."
+        },
+        {
+          "file": "assets/js/i18n/en/day5_afterschool.json",
+          "id": "day5_after_caught_resist_4",
+          "field": "text",
+          "lang": "en",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_afterschool.json",
+          "source_text": "*전기가 끊기자 형광등이 꺼졌다.*",
+          "note": "The proposed text includes both the power loss and the fluorescent lights going out."
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_afterschool.json",
+          "id": "day5_after_caught_resist_4",
+          "field": "text",
+          "lang": "ja",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_afterschool.json",
+          "source_text": "*전기가 끊기자 형광등이 꺼졌다.*",
+          "note": "The proposed text includes both the power loss and the fluorescent lights going out."
+        },
+        {
+          "file": "assets/js/i18n/es/day5_afterschool.json",
+          "id": "day5_after_caught_resist_4",
+          "field": "text",
+          "lang": "es",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_afterschool.json",
+          "source_text": "*전기가 끊기자 형광등이 꺼졌다.*",
+          "note": "The proposed text includes both the power loss and the fluorescent lights going out."
+        },
+        {
+          "file": "assets/js/i18n/fr/day5_afterschool.json",
+          "id": "day5_after_caught_resist_4",
+          "field": "text",
+          "lang": "fr",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_afterschool.json",
+          "source_text": "*전기가 끊기자 형광등이 꺼졌다.*",
+          "note": "The proposed text includes both the power loss and the fluorescent lights going out."
+        },
+        {
+          "file": "assets/js/i18n/de/day5_afterschool.json",
+          "id": "day5_after_caught_resist_4",
+          "field": "text",
+          "lang": "de",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_afterschool.json",
+          "source_text": "*전기가 끊기자 형광등이 꺼졌다.*",
+          "note": "The proposed text includes both the power loss and the fluorescent lights going out."
+        },
+        {
+          "file": "assets/js/i18n/pt/day5_afterschool.json",
+          "id": "day5_after_caught_resist_4",
+          "field": "text",
+          "lang": "pt",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_afterschool.json",
+          "source_text": "*전기가 끊기자 형광등이 꺼졌다.*",
+          "note": "The proposed text includes both the power loss and the fluorescent lights going out."
+        },
+        {
+          "file": "assets/js/i18n/en/day5_night.json",
+          "id": "day5_ending_forget_16",
+          "field": "text",
+          "lang": "en",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_night.json",
+          "source_text": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데 부를 말이 떠오르지 않는다.*",
+          "note": "The proposed text restores the different name and the inability to recall what to call the familiar face, rather than having nothing to say."
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_night.json",
+          "id": "day5_ending_forget_16",
+          "field": "text",
+          "lang": "ja",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_night.json",
+          "source_text": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데 부를 말이 떠오르지 않는다.*",
+          "note": "The proposed text restores the different name and the inability to recall what to call the familiar face, rather than having nothing to say."
+        },
+        {
+          "file": "assets/js/i18n/es/day5_night.json",
+          "id": "day5_ending_forget_16",
+          "field": "text",
+          "lang": "es",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_night.json",
+          "source_text": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데 부를 말이 떠오르지 않는다.*",
+          "note": "The proposed text restores the different name and the inability to recall what to call the familiar face, rather than having nothing to say."
+        },
+        {
+          "file": "assets/js/i18n/fr/day5_night.json",
+          "id": "day5_ending_forget_16",
+          "field": "text",
+          "lang": "fr",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_night.json",
+          "source_text": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데 부를 말이 떠오르지 않는다.*",
+          "note": "The proposed text restores the different name and the inability to recall what to call the familiar face, rather than having nothing to say."
+        },
+        {
+          "file": "assets/js/i18n/de/day5_night.json",
+          "id": "day5_ending_forget_16",
+          "field": "text",
+          "lang": "de",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_night.json",
+          "source_text": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데 부를 말이 떠오르지 않는다.*",
+          "note": "The proposed text restores the different name and the inability to recall what to call the familiar face, rather than having nothing to say."
+        },
+        {
+          "file": "assets/js/i18n/pt/day5_night.json",
+          "id": "day5_ending_forget_16",
+          "field": "text",
+          "lang": "pt",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_night.json",
+          "source_text": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데 부를 말이 떠오르지 않는다.*",
+          "note": "The proposed text restores the different name and the inability to recall what to call the familiar face, rather than having nothing to say."
+        },
+        {
+          "file": "assets/js/i18n/zh/day5_afterschool.json",
+          "id": "day5_after_caught_resist_4",
+          "field": "text",
+          "lang": "zh",
+          "verdict": "accept",
+          "source_file": "assets/js/i18n/ko/day5_afterschool.json",
+          "source_text": "*전기가 끊기자 형광등이 꺼졌다.*",
+          "note": "The proposed text includes both the power loss and the fluorescent lights going out."
+        }
+      ],
+      "proposed_changes": [
+        {
+          "file": "assets/js/i18n/ja/day2_afterschool.json",
+          "id": "day2_after_sea_silent_1",
+          "field": "text",
+          "lang": "ja",
+          "before": "*返事の代わりに、壁際の椅子を引き寄せた。脚の先が床を低くこすった。*",
+          "after": "*返事の代わりに、壁際の椅子を引き寄せた。脚の先が床をこすり、低い音を立てた。*",
+          "reason": "The Korean describes a low scraping sound. The current Japanese attaches low to rubbing the floor and leaves the sound relation unclear.",
+          "finding_type": "unnatural_predicate_relation",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/pt/day2_afterschool.json",
+          "id": "day2_after_sea_silent_1",
+          "field": "text",
+          "lang": "pt",
+          "before": "*Em vez de responder, puxei uma cadeira da parede. As pernas rasparam baixo no chão.*",
+          "after": "*Em vez de responder, puxei uma cadeira da parede. As pernas rasparam o chão, produzindo um som baixo.*",
+          "reason": "Attach low to the scraping sound, rather than to an unclear low position on the floor.",
+          "finding_type": "unnatural_predicate_relation",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/pt/day2_night.json",
+          "id": "day2_night_phone_1",
+          "field": "text",
+          "lang": "pt",
+          "before": "*O bate-papo em grupo da velha escola. 'Ler por 3'. Ninguém respondeu. Já faz dois dias.*",
+          "after": "*O bate-papo em grupo da velha escola. 'Lido por 3'. Ninguém respondeu. Já faz dois dias.*",
+          "reason": "The chat status is read by 3, not the infinitive or instruction to read. Preserve the numeral.",
+          "finding_type": "incorrect_ui_status",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/ja/day3_lunch.json",
+          "id": "day3_lunch_door_bang",
+          "field": "text",
+          "lang": "ja",
+          "before": "*扉を強く叩いた。5分後、扉が開く。誰もいない。鍵もない。……誰が閉めたのか痕跡がない。*",
+          "after": "*扉を強く叩いた。5分後、扉が開く。誰もいない。鍵もない。……誰が鍵をかけたのか分かる痕跡がない。*",
+          "reason": "The unresolved action is locking the door; closing alone omits the locked-room fact.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/es/day3_lunch.json",
+          "id": "day3_lunch_door_bang",
+          "field": "text",
+          "lang": "es",
+          "before": "*Golpeé la puerta con fuerza. 5 minutos después, la puerta se abre. No hay nadie. Tampoco hay cerradura. ...No hay rastro de quién la cerró.*",
+          "after": "*Golpeé la puerta con fuerza. 5 minutos después, la puerta se abre. No hay nadie. Tampoco hay cerradura. ...No hay rastro de quién la cerró con llave.*",
+          "reason": "Specify locking rather than merely closing the door.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/pt/day3_lunch.json",
+          "id": "day3_lunch_door_bang",
+          "field": "text",
+          "lang": "pt",
+          "before": "*Eu bati na porta com força. 5 minutos depois, a porta se abre. Ninguém lá. Sem bloqueio também. ...Nenhum vestígio de quem o trancou.*",
+          "after": "*Eu bati na porta com força. 5 minutos depois, a porta se abre. Ninguém lá. Também não há cadeado. ...Nenhum vestígio de quem a trancou.*",
+          "reason": "The absent object is a physical lock. The final pronoun must refer to the feminine door, not an unrelated masculine object.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/ja/day3_lunch.json",
+          "id": "day3_lunch_door_wait",
+          "field": "text",
+          "lang": "ja",
+          "before": "*ユナの肩を押さえて落ち着かせた。5分後、扉が開く。誰もいない。鍵もない。……誰が閉めたのか痕跡がない。*",
+          "after": "*ユナの肩を押さえて落ち着かせた。5分後、扉が開く。誰もいない。鍵もない。……誰が鍵をかけたのか分かる痕跡がない。*",
+          "reason": "The unresolved action is locking the door; closing alone omits the locked-room fact.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/es/day3_lunch.json",
+          "id": "day3_lunch_door_wait",
+          "field": "text",
+          "lang": "es",
+          "before": "*Sujeté los hombros de Yuna y la calmé. 5 minutos después, la puerta se abre. No hay nadie. Tampoco hay cerradura. ...No hay rastro de quién la cerró.*",
+          "after": "*Sujeté los hombros de Yuna y la calmé. 5 minutos después, la puerta se abre. No hay nadie. Tampoco hay cerradura. ...No hay rastro de quién la cerró con llave.*",
+          "reason": "Specify locking rather than merely closing the door.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/pt/day3_lunch.json",
+          "id": "day3_lunch_door_wait",
+          "field": "text",
+          "lang": "pt",
+          "before": "*Segurei os ombros de Yuna e a acalmei. 5 minutos depois, a porta se abre. Ninguém lá. Sem bloqueio também. ...Nenhum vestígio de quem o trancou.*",
+          "after": "*Segurei os ombros de Yuna e a acalmei. 5 minutos depois, a porta se abre. Ninguém lá. Também não há cadeado. ...Nenhum vestígio de quem a trancou.*",
+          "reason": "The absent object is a physical lock. The final pronoun must refer to the feminine door, not an unrelated masculine object.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/fr/day3_lunch.json",
+          "id": "day3_lunch_door_wait",
+          "field": "text",
+          "lang": "fr",
+          "before": "*J'ai tenu les épaules de Yuna pour la almer. 5 minutes plus tard, la porte s'ouvre. Personne. Pas de serrure non plus. ...Aucune trace de qui l'a verrouillée.*",
+          "after": "*J'ai tenu les épaules de Yuna pour la calmer. 5 minutes plus tard, la porte s'ouvre. Personne. Pas de serrure non plus. ...Aucune trace de qui l'a verrouillée.*",
+          "reason": "Restore the missing letter in calmer so the action of calming Yuna is readable.",
+          "finding_type": "typographical_error",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/fr/day4_night.json",
+          "id": "day4_night_mirror_hit1_7",
+          "field": "text",
+          "lang": "fr",
+          "before": "*J'ai regardé derrière moi. Seolhwa est là. J'ai regardé le miroir. Elle n'y est pas. Derrière. La. Miroir. Pas la.*",
+          "after": "*J'ai regardé derrière moi. Seolhwa est là. J'ai regardé le miroir. Elle n'y est pas. Derrière. Là. Miroir. Pas là.*",
+          "reason": "The fragments mean there and not there. Keep the clipped horror rhythm while restoring the location adverb accents.",
+          "finding_type": "typographical_error",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/pt/day4_night.json",
+          "id": "day4_night_mirror_hit1_7",
+          "field": "text",
+          "lang": "pt",
+          "before": "*Olhei para trás. Seolhwa está lá. Olhei no espelho. Ela não é. Atrás. Lá. Espelho. Lá não.*",
+          "after": "*Olhei para trás. Seolhwa está lá. Olhei no espelho. Ela não está. Atrás. Está. Espelho. Não está.*",
+          "reason": "The mirror shows Seolhwa absent; this is a temporary location statement, not a statement about what she is. Preserve the alternating short fragments.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_afterschool.json",
+          "id": "day5_after_caught_6",
+          "field": "text",
+          "lang": "ja",
+          "before": "最後の検診の準備をするわ。採血と点滴をつなげば終わり。",
+          "after": "最後の検診の準備をするわ。採血をして点滴をつなげば終わり。",
+          "reason": "Blood must be drawn and the IV connected. The existing coordination incorrectly treats blood collection as something to connect.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/fr/day5_afterschool.json",
+          "id": "day5_after_caught_6",
+          "field": "text",
+          "lang": "fr",
+          "before": "Je vais preparer le dernier examen. Juste une prise de sang et une perfusion, et c'est termine.",
+          "after": "Je vais préparer le dernier examen. Juste une prise de sang et une perfusion, et c'est terminé.",
+          "reason": "Restore the verb accents without changing the speaker, meaning or register.",
+          "finding_type": "typographical_error",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/en/day5_lunch.json",
+          "id": "day5_lunch_right_1",
+          "field": "text",
+          "lang": "en",
+          "before": "*Running down the hallway — I stopped. The footsteps disappeared. The ones chasing from behind. The ones echoing on the stairs. All of them.*",
+          "after": "*Running down the old building's hallway — I stopped. The footsteps disappeared. The ones chasing from behind. The ones echoing on the stairs. All of them.*",
+          "reason": "Restore the explicitly named old school building location. The subsequent stopped-footsteps sequence remains unchanged.",
+          "finding_type": "omitted_location",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/ja/day5_lunch.json",
+          "id": "day5_lunch_right_1",
+          "field": "text",
+          "lang": "ja",
+          "before": "*廊下を走っていて——止まった。足音が消えた。後ろから追ってきていた音が。階段に響いていた足音が。全部。*",
+          "after": "*旧校舎の廊下を走っていて——止まった。足音が消えた。後ろから追ってきていた音が。階段に響いていた足音が。全部。*",
+          "reason": "Restore the explicitly named old school building location. The subsequent stopped-footsteps sequence remains unchanged.",
+          "finding_type": "omitted_location",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/es/day5_lunch.json",
+          "id": "day5_lunch_right_1",
+          "field": "text",
+          "lang": "es",
+          "before": "*Corriendo por el pasillo — me detuve. Los pasos desaparecieron. Los que perseguían desde atrás. Los que resonaban en las escaleras. Todos.*",
+          "after": "*Corriendo por el pasillo del edificio antiguo — me detuve. Los pasos desaparecieron. Los que perseguían desde atrás. Los que resonaban en las escaleras. Todos.*",
+          "reason": "Restore the explicitly named old school building location. The subsequent stopped-footsteps sequence remains unchanged.",
+          "finding_type": "omitted_location",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/fr/day5_lunch.json",
+          "id": "day5_lunch_right_1",
+          "field": "text",
+          "lang": "fr",
+          "before": "*En courant dans le couloir — je me suis arrêté. Les pas ont disparu. Ceux qui poursuivaient derrière. Ceux qui résonnaient dans les escaliers. Tous.*",
+          "after": "*En courant dans le couloir de l'ancien bâtiment — je me suis arrêté. Les pas ont disparu. Ceux qui poursuivaient derrière. Ceux qui résonnaient dans les escaliers. Tous.*",
+          "reason": "Restore the explicitly named old school building location. The subsequent stopped-footsteps sequence remains unchanged.",
+          "finding_type": "omitted_location",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/de/day5_lunch.json",
+          "id": "day5_lunch_right_1",
+          "field": "text",
+          "lang": "de",
+          "before": "*Ich rannte den Flur entlang — und blieb stehen. Die Schritte verschwanden. Die von hinten. Die auf der Treppe. Alle.*",
+          "after": "*Ich rannte den Flur des alten Schulgebäudes entlang — und blieb stehen. Die Schritte verschwanden. Die von hinten. Die auf der Treppe. Alle.*",
+          "reason": "Restore the explicitly named old school building location. The subsequent stopped-footsteps sequence remains unchanged.",
+          "finding_type": "omitted_location",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/pt/day5_lunch.json",
+          "id": "day5_lunch_right_1",
+          "field": "text",
+          "lang": "pt",
+          "before": "*Correndo pelo corredor - parei. Os passos desapareceram. Aqueles que perseguem por trás. Aqueles ecoando nas escadas. Todos eles.*",
+          "after": "*Correndo pelo corredor do prédio antigo - parei. Os passos desapareceram. Aqueles que perseguem por trás. Aqueles ecoando nas escadas. Todos eles.*",
+          "reason": "Restore the explicitly named old school building location. The subsequent stopped-footsteps sequence remains unchanged.",
+          "finding_type": "omitted_location",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/es/day5_morning.json",
+          "id": "day5_morning_true_hide_1",
+          "field": "text",
+          "lang": "es",
+          "before": "*Nos escondimos en la sombra tras el archivador. Puse un dedo en mis labios para que no se oyera la respiración temblorosa de Yuna. Unos pasos resonaron escaleras arriba.*",
+          "after": "*Nos escondimos en la sombra tras el archivador. Puse un dedo en mis labios para que no se oyera la respiración temblorosa de Yuna. Unos pasos pasaron por la escalera de arriba.*",
+          "reason": "The footsteps pass by on the stairs above. Echoing upstairs omits the movement past the hiding place.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        },
+        {
+          "file": "assets/js/i18n/fr/day5_morning.json",
+          "id": "day5_morning_true_hide_1",
+          "field": "text",
+          "lang": "fr",
+          "before": "*Je me suis caché dans l'ombre derrière le classeur. J'ai posé un doigt sur mes lèvres pour ne pas que le souffle tremblant de Yuna nous trahisse. Des pas résonnent dans l'escalier.*",
+          "after": "*Je me suis caché dans l'ombre derrière le classeur. J'ai posé un doigt sur mes lèvres pour ne pas que le souffle tremblant de Yuna nous trahisse. Des pas passent dans l'escalier au-dessus.*",
+          "reason": "Restore the footsteps passing by above; the existing line mentions only resonance in the staircase.",
+          "finding_type": "semantic_mismatch",
+          "introduced_by_korean_review": false
+        }
+      ],
+      "ambiguities_without_proposed_change": [
+        {
+          "file": "assets/js/i18n/de/day5_morning.json",
+          "id": "day5_morning_true_hide_1",
+          "field": "text",
+          "lang": "de",
+          "issue": "German explicitly names Yuna as the owner of the lips; English, Spanish and French explicitly name the narrator. Korean, Japanese, Portuguese and Chinese leave that possessive implicit.",
+          "decision": "Preserve the German text because the Korean source does not establish the owner unambiguously. Spanish collective hiding is also plausible in the shared hiding context and is preserved."
+        }
+      ],
+      "notes": [
+        "None of the proposed companion corrections is required by a new Korean meaning change: the ten Korean edits preserve their original semantics.",
+        "Only clear mistranslations, omitted scene facts, malformed predicates and visible typos are proposed. Tense choices, adapted horror fragments and other stylistic differences are left intact.",
+        "All existing 19 proposed fixes are accepted against the original Korean records; no replacement or rollback of those fixes is proposed.",
+        "No unrelated source passage was reviewed for rewriting or edited, and no student sexual content was modified."
+      ]
+    }
+  },
+  "changes": [
+    {
+      "file": "assets/js/i18n/de/day2_night.json",
+      "id": "day2_night_phone_7",
+      "field": "text",
+      "before": "*Unter Minsus Sprechblase blieb eine kleine Lücke. Keine seiner üblichen Beleidigungen, keine Emoticons, die er sonst immer dranhängte.*",
+      "after": "*Sonst steht nach dem Fragezeichen noch ein Emoticon. Diesmal fehlt es.*"
+    },
+    {
+      "file": "assets/js/i18n/de/day5_afterschool.json",
+      "id": "day5_after_caught_resist_4",
+      "field": "text",
+      "before": "*In diesem Moment. Der Strom fiel aus.*",
+      "after": "*Der Strom fiel aus und die Leuchtstofflampen gingen aus.*"
+    },
+    {
+      "file": "assets/js/i18n/de/day5_lunch.json",
+      "id": "day5_lunch_right_1",
+      "field": "text",
+      "before": "*Ich rannte den Flur entlang — und blieb stehen. Die Schritte verschwanden. Die von hinten. Die auf der Treppe. Alle.*",
+      "after": "*Ich rannte den Flur des alten Schulgebäudes entlang — und blieb stehen. Die Schritte verschwanden. Die von hinten. Die auf der Treppe. Alle.*"
+    },
+    {
+      "file": "assets/js/i18n/de/day5_night.json",
+      "id": "day5_ending_forget_16",
+      "field": "text",
+      "before": "*Die Namen sind unterschiedlich. Das Gesicht im Spiegel kommt mir bekannt vor, aber mir fällt nichts ein, was ich sagen könnte.*",
+      "after": "*Der Name ist anders. Das Gesicht im Spiegel kommt mir bekannt vor, aber ich weiß nicht mehr, wie ich es nennen soll.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day2_night.json",
+      "id": "day2_night_phone_7",
+      "field": "text",
+      "before": "*A small blank space lingered beneath Minsu's chat bubble. None of his usual insults, none of the emoticons he always tacked on.*",
+      "after": "*Usually, an emoticon would follow the question mark. This time, there’s nothing.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day5_afterschool.json",
+      "id": "day5_after_caught_resist_4",
+      "field": "text",
+      "before": "*At that moment. The power went out.*",
+      "after": "*The power went out, and the fluorescent lights went dark.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day5_lunch.json",
+      "id": "day5_lunch_right_1",
+      "field": "text",
+      "before": "*Running down the hallway — I stopped. The footsteps disappeared. The ones chasing from behind. The ones echoing on the stairs. All of them.*",
+      "after": "*Running down the old building's hallway — I stopped. The footsteps disappeared. The ones chasing from behind. The ones echoing on the stairs. All of them.*"
+    },
+    {
+      "file": "assets/js/i18n/en/day5_night.json",
+      "id": "day5_ending_forget_16",
+      "field": "text",
+      "before": "*The names are different. The face in the mirror looks familiar, but I can’t think of anything to say.*",
+      "after": "*The name is different. The face in the mirror looks familiar, but I can’t remember what to call it.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day2_night.json",
+      "id": "day2_night_phone_7",
+      "field": "text",
+      "before": "*Debajo del globo de Minsu quedó un pequeño espacio en blanco. No estaban los insultos de siempre ni los emoticones que solía pegar al final.*",
+      "after": "*Normalmente pondría algún emoticono después del signo de interrogación. Esta vez no hay ninguno.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day3_lunch.json",
+      "id": "day3_lunch_door_bang",
+      "field": "text",
+      "before": "*Golpeé la puerta con fuerza. 5 minutos después, la puerta se abre. No hay nadie. Tampoco hay cerradura. ...No hay rastro de quién la cerró.*",
+      "after": "*Golpeé la puerta con fuerza. 5 minutos después, la puerta se abre. No hay nadie. Tampoco hay cerradura. ...No hay rastro de quién la cerró con llave.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day3_lunch.json",
+      "id": "day3_lunch_door_wait",
+      "field": "text",
+      "before": "*Sujeté los hombros de Yuna y la calmé. 5 minutos después, la puerta se abre. No hay nadie. Tampoco hay cerradura. ...No hay rastro de quién la cerró.*",
+      "after": "*Sujeté los hombros de Yuna y la calmé. 5 minutos después, la puerta se abre. No hay nadie. Tampoco hay cerradura. ...No hay rastro de quién la cerró con llave.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day5_afterschool.json",
+      "id": "day5_after_caught_resist_4",
+      "field": "text",
+      "before": "*En ese momento. Se fue la luz.*",
+      "after": "*Se fue la luz y se apagaron los fluorescentes.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day5_lunch.json",
+      "id": "day5_lunch_right_1",
+      "field": "text",
+      "before": "*Corriendo por el pasillo — me detuve. Los pasos desaparecieron. Los que perseguían desde atrás. Los que resonaban en las escaleras. Todos.*",
+      "after": "*Corriendo por el pasillo del edificio antiguo — me detuve. Los pasos desaparecieron. Los que perseguían desde atrás. Los que resonaban en las escaleras. Todos.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day5_morning.json",
+      "id": "day5_morning_true_hide_1",
+      "field": "text",
+      "before": "*Nos escondimos en la sombra tras el archivador. Puse un dedo en mis labios para que no se oyera la respiración temblorosa de Yuna. Unos pasos resonaron escaleras arriba.*",
+      "after": "*Nos escondimos en la sombra tras el archivador. Puse un dedo en mis labios para que no se oyera la respiración temblorosa de Yuna. Unos pasos pasaron por la escalera de arriba.*"
+    },
+    {
+      "file": "assets/js/i18n/es/day5_night.json",
+      "id": "day5_ending_forget_16",
+      "field": "text",
+      "before": "*Los nombres son diferentes. La cara en el espejo me resulta familiar, pero no se me ocurre nada que decir.*",
+      "after": "*El nombre es distinto. La cara del espejo me resulta familiar, pero no recuerdo cómo llamarla.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day2_night.json",
+      "id": "day2_night_phone_7",
+      "field": "text",
+      "before": "*Sous la bulle de Minsu, un petit espace vide est resté. Pas ses insultes habituelles, pas les émoticônes qu'il collait toujours à la fin.*",
+      "after": "*D’habitude, il ajoute une émoticône après le point d’interrogation. Cette fois, il n’y a rien.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day3_lunch.json",
+      "id": "day3_lunch_door_wait",
+      "field": "text",
+      "before": "*J'ai tenu les épaules de Yuna pour la almer. 5 minutes plus tard, la porte s'ouvre. Personne. Pas de serrure non plus. ...Aucune trace de qui l'a verrouillée.*",
+      "after": "*J'ai tenu les épaules de Yuna pour la calmer. 5 minutes plus tard, la porte s'ouvre. Personne. Pas de serrure non plus. ...Aucune trace de qui l'a verrouillée.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day4_night.json",
+      "id": "day4_night_mirror_hit1_7",
+      "field": "text",
+      "before": "*J'ai regardé derrière moi. Seolhwa est là. J'ai regardé le miroir. Elle n'y est pas. Derrière. La. Miroir. Pas la.*",
+      "after": "*J'ai regardé derrière moi. Seolhwa est là. J'ai regardé le miroir. Elle n'y est pas. Derrière. Là. Miroir. Pas là.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day5_afterschool.json",
+      "id": "day5_after_caught_6",
+      "field": "text",
+      "before": "Je vais preparer le dernier examen. Juste une prise de sang et une perfusion, et c'est termine.",
+      "after": "Je vais préparer le dernier examen. Juste une prise de sang et une perfusion, et c'est terminé."
+    },
+    {
+      "file": "assets/js/i18n/fr/day5_afterschool.json",
+      "id": "day5_after_caught_resist_4",
+      "field": "text",
+      "before": "*À cet instant, le courant est coupé.*",
+      "after": "*Le courant a été coupé et les néons se sont éteints.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day5_lunch.json",
+      "id": "day5_lunch_right_1",
+      "field": "text",
+      "before": "*En courant dans le couloir — je me suis arrêté. Les pas ont disparu. Ceux qui poursuivaient derrière. Ceux qui résonnaient dans les escaliers. Tous.*",
+      "after": "*En courant dans le couloir de l'ancien bâtiment — je me suis arrêté. Les pas ont disparu. Ceux qui poursuivaient derrière. Ceux qui résonnaient dans les escaliers. Tous.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day5_morning.json",
+      "id": "day5_morning_true_hide_1",
+      "field": "text",
+      "before": "*Je me suis caché dans l'ombre derrière le classeur. J'ai posé un doigt sur mes lèvres pour ne pas que le souffle tremblant de Yuna nous trahisse. Des pas résonnent dans l'escalier.*",
+      "after": "*Je me suis caché dans l'ombre derrière le classeur. J'ai posé un doigt sur mes lèvres pour ne pas que le souffle tremblant de Yuna nous trahisse. Des pas passent dans l'escalier au-dessus.*"
+    },
+    {
+      "file": "assets/js/i18n/fr/day5_night.json",
+      "id": "day5_ending_forget_16",
+      "field": "text",
+      "before": "*Les noms sont différents. Le visage dans le miroir me semble familier, mais je ne trouve rien à dire.*",
+      "after": "*Le nom est différent. Le visage dans le miroir m’est familier, mais je ne me rappelle pas comment l’appeler.*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day2_afterschool.json",
+      "id": "day2_after_sea_silent_1",
+      "field": "text",
+      "before": "*返事の代わりに、壁際の椅子を引き寄せた。脚の先が床を低くこすった。*",
+      "after": "*返事の代わりに、壁際の椅子を引き寄せた。脚の先が床をこすり、低い音を立てた。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day2_night.json",
+      "id": "day2_night_phone_7",
+      "field": "text",
+      "before": "*ミンスの吹き出しの下に、小さな空白が残った。いつもの悪口も、語尾につけていた絵文字もない。*",
+      "after": "*いつもなら疑問符の後に絵文字が一つくらい付いているのに、何もない。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day3_lunch.json",
+      "id": "day3_lunch_door_bang",
+      "field": "text",
+      "before": "*扉を強く叩いた。5分後、扉が開く。誰もいない。鍵もない。……誰が閉めたのか痕跡がない。*",
+      "after": "*扉を強く叩いた。5分後、扉が開く。誰もいない。鍵もない。……誰が鍵をかけたのか分かる痕跡がない。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day3_lunch.json",
+      "id": "day3_lunch_door_wait",
+      "field": "text",
+      "before": "*ユナの肩を押さえて落ち着かせた。5分後、扉が開く。誰もいない。鍵もない。……誰が閉めたのか痕跡がない。*",
+      "after": "*ユナの肩を押さえて落ち着かせた。5分後、扉が開く。誰もいない。鍵もない。……誰が鍵をかけたのか分かる痕跡がない。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_afterschool.json",
+      "id": "day5_after_caught_6",
+      "field": "text",
+      "before": "最後の検診の準備をするわ。採血と点滴をつなげば終わり。",
+      "after": "最後の検診の準備をするわ。採血をして点滴をつなげば終わり。"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_afterschool.json",
+      "id": "day5_after_caught_resist_4",
+      "field": "text",
+      "before": "*その瞬間。停電した。*",
+      "after": "*停電して、蛍光灯が消えた。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_lunch.json",
+      "id": "day5_lunch_right_1",
+      "field": "text",
+      "before": "*廊下を走っていて——止まった。足音が消えた。後ろから追ってきていた音が。階段に響いていた足音が。全部。*",
+      "after": "*旧校舎の廊下を走っていて——止まった。足音が消えた。後ろから追ってきていた音が。階段に響いていた足音が。全部。*"
+    },
+    {
+      "file": "assets/js/i18n/ja/day5_night.json",
+      "id": "day5_ending_forget_16",
+      "field": "text",
+      "before": "*名前が違う。鏡の中の顔は見覚えがあるのに、それを呼ぶ言葉が思い出せない。*",
+      "after": "*名前が違う。鏡の中の顔は見覚えがあるのに、何と呼べばいいのか思い出せない。*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_afterschool.json",
+      "id": "day2_after_sea_silent_1",
+      "field": "text",
+      "before": "*대답 대신 벽 쪽 의자를 끌어왔다. 다리 끝이 바닥을 낮게 긁었다.*",
+      "after": "*대답 대신 벽 쪽 의자를 끌어왔다. 다리 끝이 바닥을 긁으며 낮은 소리를 냈다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day2_night.json",
+      "id": "day2_night_phone_1",
+      "field": "text",
+      "before": "*예전 학교 단체 채팅방. '3명 읽음'. 아무도 답장이 없다. 벌써 이틀째.*",
+      "after": "*예전 학교 단체 채팅방. '3명 읽음'. 아무에게서도 답장이 없다. 벌써 이틀째.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_lunch.json",
+      "id": "day3_lunch_door_bang",
+      "field": "text",
+      "before": "*문을 세게 두드렸다. 5분 후 문이 열린다. 밖은 비어 있고 자물쇠도 없다. 누가 잠갔는지 흔적이 없다.*",
+      "after": "*문을 세게 두드렸다. 5분 후 문이 열린다. 밖은 비어 있고 자물쇠도 없다. 누가 잠갔는지 알 만한 흔적이 없다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day3_lunch.json",
+      "id": "day3_lunch_door_wait",
+      "field": "text",
+      "before": "*유나의 어깨를 잡고 진정시켰다. 5분 후 문이 열린다. 밖은 비어 있고 자물쇠도 없다. 누가 잠갔는지 흔적이 없다.*",
+      "after": "*유나의 어깨를 잡고 진정시켰다. 5분 후 문이 열린다. 밖은 비어 있고 자물쇠도 없다. 누가 잠갔는지 알 만한 흔적이 없다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day4_morning.json",
+      "id": "day4_morning_gate_8",
+      "field": "text",
+      "before": "*눈이 스피커 작동등에 닿자, 시선 하나가 내 쪽으로 미끄러졌다가 사라졌다.*",
+      "after": "*눈이 스피커 작동등에 닿자 시선 하나가 내 쪽으로 미끄러졌다가 사라졌다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day4_morning.json",
+      "id": "day4_morning_classroom_met_2",
+      "field": "text",
+      "before": "*책상은 닦인 자국만 남아 있다. 낙서 하나 없다. 다른 책상들보다 표면 색이 한 톤 밝다.*",
+      "after": "*책상에는 닦인 자국만 남아 있다. 낙서 하나 없다. 다른 책상들보다 표면 색이 한 톤 밝다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day4_night.json",
+      "id": "day4_night_mirror_hit1_7",
+      "field": "text",
+      "before": "*뒤를 보면 설화가 있다. 거울을 보면 없다. 다시 뒤를 보면 있고, 거울에는 없다.*",
+      "after": "*뒤를 보면 설화가 있다. 거울을 보면 없다. 다시 뒤를 보면 있고 거울에는 없다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_afterschool.json",
+      "id": "day5_after_caught_6",
+      "field": "text",
+      "before": "마지막 검진 준비할게. 채혈이랑 수액만 연결하면 끝나.",
+      "after": "마지막 검진 준비할게. 채혈하고 수액만 연결하면 끝나."
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_lunch.json",
+      "id": "day5_lunch_right_1",
+      "field": "text",
+      "before": "*구관 복도를 뛰다 발을 세웠다. 추격 소리와 계단을 울리던 발소리가 전부 끊겼다.*",
+      "after": "*구관 복도를 뛰다 발걸음을 멈췄다. 추격 소리와 계단을 울리던 발소리가 전부 끊겼다.*"
+    },
+    {
+      "file": "assets/js/i18n/ko/day5_morning.json",
+      "id": "day5_morning_true_hide_1",
+      "field": "text",
+      "before": "*서류함 뒤 그늘에 몸을 숨겼다. 유나의 떨리는 숨을 들키지 않으려 입술에 손가락을 댔다. 발소리가 계단 위를 스쳐 지나간다.*",
+      "after": "*서류함 뒤 그늘에 몸을 숨겼다. 유나의 떨리는 숨소리를 들키지 않으려 입술에 손가락을 댔다. 발소리가 계단 위를 스쳐 지나간다.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day2_afterschool.json",
+      "id": "day2_after_sea_silent_1",
+      "field": "text",
+      "before": "*Em vez de responder, puxei uma cadeira da parede. As pernas rasparam baixo no chão.*",
+      "after": "*Em vez de responder, puxei uma cadeira da parede. As pernas rasparam o chão, produzindo um som baixo.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day2_night.json",
+      "id": "day2_night_phone_1",
+      "field": "text",
+      "before": "*O bate-papo em grupo da velha escola. 'Ler por 3'. Ninguém respondeu. Já faz dois dias.*",
+      "after": "*O bate-papo em grupo da velha escola. 'Lido por 3'. Ninguém respondeu. Já faz dois dias.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day2_night.json",
+      "id": "day2_night_phone_7",
+      "field": "text",
+      "before": "*Sob o balão de Minsu, ficou um pequeno espaço em branco. Nada dos xingamentos de sempre, nem dos emoticons que ele costumava grudar no fim.*",
+      "after": "*Normalmente ele colocaria um emoticon depois do ponto de interrogação. Desta vez, não há nada.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day3_lunch.json",
+      "id": "day3_lunch_door_bang",
+      "field": "text",
+      "before": "*Eu bati na porta com força. 5 minutos depois, a porta se abre. Ninguém lá. Sem bloqueio também. ...Nenhum vestígio de quem o trancou.*",
+      "after": "*Eu bati na porta com força. 5 minutos depois, a porta se abre. Ninguém lá. Também não há cadeado. ...Nenhum vestígio de quem a trancou.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day3_lunch.json",
+      "id": "day3_lunch_door_wait",
+      "field": "text",
+      "before": "*Segurei os ombros de Yuna e a acalmei. 5 minutos depois, a porta se abre. Ninguém lá. Sem bloqueio também. ...Nenhum vestígio de quem o trancou.*",
+      "after": "*Segurei os ombros de Yuna e a acalmei. 5 minutos depois, a porta se abre. Ninguém lá. Também não há cadeado. ...Nenhum vestígio de quem a trancou.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day4_night.json",
+      "id": "day4_night_mirror_hit1_7",
+      "field": "text",
+      "before": "*Olhei para trás. Seolhwa está lá. Olhei no espelho. Ela não é. Atrás. Lá. Espelho. Lá não.*",
+      "after": "*Olhei para trás. Seolhwa está lá. Olhei no espelho. Ela não está. Atrás. Está. Espelho. Não está.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day5_afterschool.json",
+      "id": "day5_after_caught_resist_4",
+      "field": "text",
+      "before": "*Naquele momento. A energia acabou.*",
+      "after": "*A energia caiu e as lâmpadas fluorescentes se apagaram.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day5_lunch.json",
+      "id": "day5_lunch_right_1",
+      "field": "text",
+      "before": "*Correndo pelo corredor - parei. Os passos desapareceram. Aqueles que perseguem por trás. Aqueles ecoando nas escadas. Todos eles.*",
+      "after": "*Correndo pelo corredor do prédio antigo - parei. Os passos desapareceram. Aqueles que perseguem por trás. Aqueles ecoando nas escadas. Todos eles.*"
+    },
+    {
+      "file": "assets/js/i18n/pt/day5_night.json",
+      "id": "day5_ending_forget_16",
+      "field": "text",
+      "before": "*Os nomes são diferentes. O rosto no espelho parece familiar, mas não consigo pensar em nada para dizer.*",
+      "after": "*O nome é diferente. O rosto no espelho parece familiar, mas não lembro como chamá-lo.*"
+    },
+    {
+      "file": "assets/js/i18n/zh/day5_afterschool.json",
+      "id": "day5_after_caught_resist_4",
+      "field": "text",
+      "before": "*电断了。日光灯熄灭了。*",
+      "after": "*停电后，荧光灯熄灭了。*"
+    }
+  ],
+  "validation": {
+    "project_checks": {
+      "npm run check": "pass",
+      "validation": "pass",
+      "content synchronization": "pass",
+      "unit_tests": {
+        "passed": 66,
+        "failed": 0
+      }
+    },
+    "targeted_browser_scenarios": {
+      "passed": 16,
+      "failed": 0,
+      "browser": "system Chrome; bundled headless Chromium had an ICU startup error"
+    },
+    "runtime_copy_check": "all eight languages match source before and after reload"
+  },
+  "runtime_copy_check": {
+    "project": "nevergrad",
+    "results": [
+      {
+        "language": "ko",
+        "reviewed_fields": 10,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "en",
+        "reviewed_fields": 13,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "ja",
+        "reviewed_fields": 13,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "es",
+        "reviewed_fields": 13,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "fr",
+        "reviewed_fields": 13,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "de",
+        "reviewed_fields": 13,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "pt",
+        "reviewed_fields": 13,
+        "initial_load": "pass",
+        "reload": "pass"
+      },
+      {
+        "language": "zh",
+        "reviewed_fields": 11,
+        "initial_load": "pass",
+        "reload": "pass"
+      }
+    ]
+  }
+}

@@ -598,7 +598,8 @@ function transformRootDocument(html) {
     const tags = ['ko'].concat(codes.map(hreflangOf));
     html = html.replace(/"inLanguage": \[[^\]]*\]/g, `"inLanguage": [${tags.map(t => `"${t}"`).join(', ')}]`);
     // ko description: language count
-    html = html.replace(/7개 언어를 지원합니다/g, `${tags.length}개 언어를 지원합니다`);
+    html = html.replace(/7개 언어를 지원합니다/g, `${tags.length}개 언어로 할 수 있습니다`);
+    html = html.replace(/\d+개 언어로 할 수 있습니다/g, `${tags.length}개 언어로 할 수 있습니다`);
     return html;
 }
 

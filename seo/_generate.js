@@ -29,27 +29,27 @@ const LANG = {
   ko: {
     htmlLang: 'ko',
     cta: '지금 무료로 플레이',
-    whyTitle: 'Nevergrad를 추천하는 이유',
+    whyTitle: 'Nevergrad가 편한 이유',
     why: [
       '설치나 회원가입 없이 브라우저에서 바로 시작할 수 있습니다.',
-      '5일 동안 내린 선택에 따라 다섯 히로인의 관계와 일곱 가지 결말이 달라집니다.',
+      '5일 동안의 선택에 따라 다섯 히로인과의 관계와 일곱 가지 결말이 갈립니다.',
       '잔잔한 학원 로맨스로 시작해 미스터리와 심리 스릴러로 서서히 바뀝니다.',
-      'PC와 모바일 브라우저를 모두 지원합니다.'
+      'PC와 휴대폰 브라우저에서 모두 할 수 있습니다.'
     ],
     featureTitle: '게임 특징',
     features: [
-      ['무료 플레이', '결제나 구독 없이 본편을 바로 즐길 수 있습니다.'],
-      ['다운로드 없음', 'URL만 열면 바로 시작할 수 있고, 저장 데이터는 브라우저에 남습니다.'],
+      ['무료 플레이', '결제나 구독 없이 본편을 바로 할 수 있습니다.'],
+      ['다운로드 없음', 'URL만 열면 바로 시작할 수 있습니다. 저장은 브라우저에 남습니다.'],
       ['멀티 엔딩', '선택과 인물 관계에 따라 결말이 달라집니다.']
     ],
     howTitle: '30초 만에 시작하기',
-    how: ['아래 플레이 버튼을 누르세요.', '이름을 입력하고 새 게임을 시작하세요.', '5일 동안 선택지를 골라 결말을 확인하세요.'],
+    how: ['아래 플레이 버튼을 누르세요.', '이름을 입력하고 새 게임을 시작하세요.', '5일 동안 선택지를 골라 결말까지 가 보세요.'],
     faqTitle: '자주 묻는 질문',
     faqs: [
       ['정말 무료인가요?', '네. 결제나 구독, 회원가입 없이 브라우저에서 바로 플레이할 수 있습니다.'],
-      ['모바일에서도 되나요?', '네. Chrome, Safari, Edge 등 최신 모바일 브라우저를 지원합니다.'],
-      ['어떤 장르인가요?', '학원 로맨스로 시작해 미스터리와 심리 스릴러로 이어지는 선택형 스토리 게임입니다.'],
-      ['진행 상황은 저장되나요?', '네. 진행 상황과 저장 데이터는 같은 브라우저에 보관됩니다.']
+      ['모바일에서도 되나요?', '네. Chrome, Safari, Edge 같은 최신 휴대폰 브라우저에서 할 수 있습니다.'],
+      ['어떤 장르인가요?', '학원 로맨스로 시작해 미스터리와 심리 스릴러로 이어집니다. 선택에 따라 이야기가 갈립니다.'],
+      ['진행 상황은 저장되나요?', '네. 진행 상황과 저장은 같은 브라우저에 남습니다.']
     ],
     otherLangs: '다른 언어',
     footer: 'Nevergrad - 무료 브라우저 비주얼 노벨'
@@ -260,10 +260,10 @@ const CLUSTERS = [
         slug: 'muryo-visual-novel-browser',
         h1: '브라우저로 즐기는 무료 비주얼 노벨 - Nevergrad',
         title: '브라우저로 즐기는 무료 비주얼 노벨 | Nevergrad',
-        meta: '무료 비주얼 노벨을 브라우저에서 바로 즐겨보세요. Nevergrad는 별도 다운로드 없이 플레이하는 학원 미스터리 선택형 게임입니다.',
-        intro: '무료 비주얼 노벨을 찾고 있다면 설치 없이 링크만 열어 시작할 수 있습니다. Nevergrad는 5일 동안 내린 선택이 일곱 가지 결말로 이어지는 학원 미스터리 비주얼 노벨입니다.',
-        angleTitle: '브라우저에서 바로 즐길 수 있는 이유',
-        angle: ['결제 없이 첫 장면부터 플레이할 수 있습니다.', '학원물, 미스터리, 선택형 스토리를 한 게임에 담았습니다.', '모바일에서도 링크만 열면 같은 게임을 시작할 수 있습니다.']
+        meta: '무료 비주얼 노벨을 브라우저에서 바로 해 보세요. Nevergrad는 다운로드 없이 하는 학원 미스터리 게임입니다.',
+        intro: '무료 비주얼 노벨을 찾고 있다면 설치 없이 링크만 열어 시작할 수 있습니다. Nevergrad는 5일 동안의 선택이 일곱 가지 결말로 이어지는 학원 미스터리 비주얼 노벨입니다.',
+        angleTitle: '브라우저에서 바로 시작하는 점',
+        angle: ['결제 없이 첫 장면부터 플레이할 수 있습니다.', '학원물과 미스터리, 선택으로 갈리는 이야기가 한 게임에 있습니다.', '휴대폰에서도 링크만 열면 같은 게임을 시작할 수 있습니다.']
       },
       en: {
         slug: 'free-browser-visual-novel',
@@ -337,10 +337,10 @@ const CLUSTERS = [
         slug: 'download-eopsi-visual-novel',
         h1: '다운로드 없이 즐기는 비주얼 노벨 - Nevergrad',
         title: '다운로드 없이 즐기는 비주얼 노벨 | Nevergrad',
-        meta: '별도 다운로드나 설치 없이 즐기는 무료 웹 비주얼 노벨입니다. Nevergrad는 브라우저에서 바로 시작하는 학원 미스터리 게임입니다.',
-        intro: 'Nevergrad는 실행 파일이나 앱을 설치하지 않아도 됩니다. 링크를 열면 바로 시작할 수 있는 무료 웹 비주얼 노벨입니다.',
+        meta: '다운로드나 설치 없이 하는 무료 웹 비주얼 노벨입니다. Nevergrad는 브라우저에서 바로 시작하는 학원 미스터리 게임입니다.',
+        intro: '실행 파일이나 앱을 깔지 않아도 Nevergrad를 시작할 수 있습니다. 링크를 열면 바로 하는 무료 웹 비주얼 노벨입니다.',
         angleTitle: '설치 없이 바로 즐기는 방법',
-        angle: ['최신 브라우저만 있으면 앱을 설치하지 않아도 플레이할 수 있습니다.', '저장 데이터와 진행 상황은 같은 브라우저에 남습니다.', '짧은 체험판이 아닌 5일 분량의 이야기와 여러 결말을 즐길 수 있습니다.']
+        angle: ['최신 브라우저만 있으면 앱을 설치하지 않아도 플레이할 수 있습니다.', '저장과 진행 상황은 같은 브라우저에 남습니다.', '짧은 체험판이 아니라 5일 분량의 이야기와 여러 결말을 볼 수 있습니다.']
       },
       en: {
         slug: 'visual-novel-no-download',
@@ -414,10 +414,10 @@ const CLUSTERS = [
         slug: 'hakgyo-mystery-game-muryo',
         h1: '무료 학교 미스터리 게임 - Nevergrad',
         title: '무료 학교 미스터리 게임 | Nevergrad 비주얼 노벨',
-        meta: '무료 학교 미스터리 게임을 브라우저에서 즐겨보세요. Nevergrad는 선택에 따라 관계와 결말이 달라지는 학원 스릴러 비주얼 노벨입니다.',
+        meta: '무료 학교 미스터리 게임을 브라우저에서 해 보세요. Nevergrad는 선택에 따라 관계와 결말이 갈리는 학원 스릴러 비주얼 노벨입니다.',
         intro: '익숙한 교실에서 낯선 규칙이 하나씩 드러납니다. Nevergrad는 평범한 전학 첫날부터 5일 동안 학교의 비밀을 추적하는 무료 비주얼 노벨입니다.',
         angleTitle: '학원 미스터리의 매력',
-        angle: ['교실과 복도, 옥상, 기록실 같은 익숙한 학교 공간이 주요 무대입니다.', '선택에 따라 히로인과의 관계도, 진실에 다가가는 방식도 달라집니다.', '잔잔한 로맨스가 서서히 미스터리로 바뀌며 긴장감을 쌓습니다.']
+        angle: ['교실과 복도, 옥상, 기록실 같은 익숙한 학교 공간이 주요 무대입니다.', '선택에 따라 히로인과의 관계도, 진실에 다가가는 방식도 달라집니다.', '잔잔한 로맨스가 미스터리로 바뀌면서 긴장이 커집니다.']
       },
       en: {
         slug: 'school-mystery-visual-novel',
@@ -491,7 +491,7 @@ const CLUSTERS = [
         slug: 'horror-visual-novel-muryo',
         h1: '무료 호러 비주얼 노벨 - Nevergrad 심리 스릴러',
         title: '무료 호러 비주얼 노벨 | Nevergrad 심리 스릴러',
-        meta: '무료 호러 비주얼 노벨을 브라우저에서 즐겨보세요. Nevergrad는 학원 로맨스로 시작해 심리 스릴러로 바뀌는 미스터리 게임입니다.',
+        meta: '무료 호러 비주얼 노벨을 브라우저에서 해 보세요. Nevergrad는 학원 로맨스로 시작해 심리 스릴러로 바뀌는 미스터리 게임입니다.',
         intro: '호러 비주얼 노벨은 갑자기 튀어나오는 연출보다 익숙한 장면이 조금씩 어긋날 때 더 섬뜩합니다. Nevergrad는 평온한 학원 로맨스로 시작해 심리 스릴러로 바뀌는 무료 웹 게임입니다.',
         angleTitle: '심리 호러의 매력',
         angle: ['초반에는 평범한 학원 로맨스처럼 보이지만 점차 위화감이 짙어집니다.', '기억과 반복, 관찰이 공포를 키웁니다.', '선택과 기록이 쌓일수록 공포도 커집니다.']
@@ -647,6 +647,7 @@ function renderPage(cluster, lang, page) {
 <html lang="${langData.htmlLang}">
 <head>
   <script src="../assets/js/error-reporter.js?v=20261005-env-guard"></script>
+  <script src="../assets/js/browser-check.js?v=1.1.0" defer></script>
   <meta charset="UTF-8">
   <meta http-equiv="origin-trial" content="${ORIGIN_TRIAL_TOKEN}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -753,9 +754,11 @@ function updateRootSitemap(fragment) {
 
   let sitemap = fs.readFileSync(sitemapPath, 'utf-8');
   const trafficBlock = sitemap.match(/<!-- traffic-pages:start -->[\s\S]*?<!-- traffic-pages:end -->/)?.[0] || '';
+  const aboutBlock = sitemap.match(/<!-- about-pages:start -->[\s\S]*?<!-- about-pages:end -->/)?.[0] || '';
   if (trafficBlock) sitemap = sitemap.replace(trafficBlock, '');
+  if (aboutBlock) sitemap = sitemap.replace(aboutBlock, '');
   sitemap = sitemap.replace(/\s*<url>\s*<loc>https:\/\/nevergrad\.archerlab\.dev\/seo\/[\s\S]*?<\/url>/g, '');
-  const additions = trafficBlock ? `${fragment}\n${trafficBlock}` : fragment;
+  const additions = [fragment, trafficBlock, aboutBlock].filter(Boolean).join('\n');
   sitemap = sitemap.replace(/\s*<\/urlset>\s*$/m, `\n${additions}\n</urlset>\n`);
   fs.writeFileSync(sitemapPath, sitemap, 'utf-8');
 }

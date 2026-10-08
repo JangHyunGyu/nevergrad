@@ -144,5 +144,7 @@ body :is(button, input[type='button'], input[type='submit'], input[type='reset']
   #title-screen :is(.archerlab-link, .lang-switcher) { top: max(4px, env(safe-area-inset-top)); }
 }
 @media (prefers-reduced-motion: reduce) {
-  :is(.menu-btn, .qm-btn, .gallery-tab, .settings-toggle, .settings-close-btn, .backlog-close-btn, .sl-close-btn, .gallery-modal-close, .choice-btn, .title-content, .title-char-lineup) { animation: none; transition: none; }
+  :is(.menu-btn, .qm-btn, .gallery-tab, .settings-toggle, .settings-close-btn, .backlog-close-btn, .sl-close-btn, .gallery-modal-close, .choice-btn, .title-content, .title-char-lineup, .title-menu) { animation: none; transition: none; }
+  /* choiceFadeIn is the only rule that raises choice buttons from opacity 0. */
+  .choice-btn { opacity: 1; transform: none; pointer-events: auto; }
 }

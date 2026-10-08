@@ -130,9 +130,10 @@ function playTitleIntro() {
         stage.classList.add('title-intro-active');
     });
 
+    const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     window.__nevergradTitleMenuTimer = window.setTimeout(() => {
         titleScreen?.classList.add('title-intro-complete');
-    }, 2500);
+    }, reducedMotion ? 0 : 2500);
 }
 
 window.playNevergradTitleIntro = playTitleIntro;

@@ -1532,10 +1532,11 @@ class GameEngine {
 
         // 📌 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
         const allBtns = panel.querySelectorAll('.choice-btn');
-        if (window.NevergradMotion?.choicesIn?.(panel, Array.from(allBtns))) {
+        const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+        if (!reducedMotion && window.NevergradMotion?.choicesIn?.(panel, Array.from(allBtns))) {
             return;
         }
-        const totalDelay = (allBtns.length - 1) * 80 + 1500;
+        const totalDelay = reducedMotion ? 0 : (allBtns.length - 1) * 80 + 1500;
         setTimeout(() => {
             const buttons = panel.querySelectorAll('.choice-btn');
             if (buttons) {

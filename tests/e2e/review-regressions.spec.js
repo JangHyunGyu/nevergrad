@@ -155,3 +155,31 @@ test('retrying missing story text refreshes the current dialogue without skippin
     expect(await page.evaluate(() => game._waitingForText)).toBe(false);
     expect(await page.evaluate(() => game.state.currentScene)).toBe('day1_gate_2');
 });
+
+test('reduced motion shows choices immediately', async ({ page }) => {
+    await boot(page);
+    await page.evaluate(() => {
+        game._showScreen('game-screen');
+        game.state.currentScene = 'day1_eunsu_10';
+        game.currentSceneData = SCENARIO[1].day1_eunsu_10;
+        game._showChoices(game.currentSceneData.choices, ['하나', '둘', '셋']);
+    });
+    const button = page.locator('#choice-panel .choice-btn').first();
+    await expect(button).toBeVisible();
+    expect(Number(await button.evaluate(el => getComputedStyle(el).opacity))).toBeGreaterThan(0.9);
+    await button.click();
+    await expect.poll(() => page.evaluate(() => game.state.currentScene)).not.toBe('day1_eunsu_10');
+});
+
+test('reduced motion opens the title menu without the intro wait', async ({ page }) => {
+    await page.route(/^https?:\/\/(?!127\.0\.0\.1:4178)/, route => route.abort());
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => document.getElementById('title-screen')?.classList.contains('title-intro-complete'), null, { timeout: 1200 });
+    const menu = await page.locator('.title-menu').evaluate(el => {
+        const style = getComputedStyle(el);
+        return { opacity: Number(style.opacity), pointer: style.pointerEvents };
+    });
+    expect(menu.opacity).toBeGreaterThan(0.9);
+    expect(menu.pointer).not.toBe('none');
+});

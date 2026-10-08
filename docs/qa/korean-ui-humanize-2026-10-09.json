@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-09",
+  "skill": "D:/workspace/im-not-ai/skills/humanize-korean/SKILL.md",
+  "quickRules": "D:/workspace/im-not-ai/skills/humanize-korean/references/quick-rules.md",
+  "run_id": "2026-10-09-001-d8a1",
+  "route": "light",
+  "route_source": "route_hint",
+  "scope": "Player-facing UI and guide sentences only. Scenario dialogue commas kept as accepted literary pauses from the 2026-10-04 review.",
+  "changes": [
+    "gallery lock: 해당 이벤트 CG / 해당 BGM → 이 이벤트 CG / 이 BGM",
+    "damaged archive slot: 해당 데이터는 손상되었습니다 → 이 데이터는 손상되었습니다",
+    "in-app browser guide: 해당 메뉴 → 그 메뉴",
+    "language FAQ and llms: 지원합니다 → 로 할 수 있습니다"
+  ],
+  "gate": {
+    "change_rate": "6.4%",
+    "exit_code": 0,
+    "verdict": "OK — 수렴",
+    "grade": "B",
+    "self_check": "6/6",
+    "note": "Grade A의 10~25% 변경률 구간에 들지 않는다. 탐지된 문장만 고쳤다."
+  }
+}

@@ -1754,7 +1754,7 @@ class GlitchSystemAdvanced {
     _localizedSlotDeniedMessage(slot) {
         if (slot.number === 7) {
             return this._pickLocalized({
-                ko: '해당 데이터는 손상되었습니다.',
+                ko: '이 데이터는 손상되었습니다.',
                 en: 'This data is corrupted.',
                 ja: 'このデータは破損しています。',
                 es: 'Estos datos están dañados.',

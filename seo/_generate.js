@@ -647,7 +647,7 @@ function renderPage(cluster, lang, page) {
 <html lang="${langData.htmlLang}">
 <head>
   <script src="../assets/js/error-reporter.js?v=20261005-env-guard"></script>
-  <script src="../assets/js/browser-check.js?v=1.1.0" defer></script>
+  <script src="../assets/js/browser-check.js?v=20261009-ko" defer></script>
   <meta charset="UTF-8">
   <meta http-equiv="origin-trial" content="${ORIGIN_TRIAL_TOKEN}">
   <meta name="viewport" content="width=device-width,initial-scale=1">

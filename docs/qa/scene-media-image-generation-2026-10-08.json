@@ -1,0 +1,107 @@
+{
+  "tool": "built-in image_gen",
+  "quality": "Maximum supported quality and native resolution requested; model and quality controls not exposed",
+  "originalFilesPreserved": true,
+  "images": [
+    {
+      "key": "riin_casual",
+      "prompt": "Edit this canonical adult woman Riin sprite for a visual-novel wardrobe continuity fix. Keep the identical face, golden eyes, silver glasses, blue-violet bob haircut, body proportions and crisp anime style. She has explicitly TAKEN OFF her white laboratory coat: remove the entire white coat and all pens, remove the clipboard. Underneath she wears the same fully opaque BLACK LONG-SLEEVED TURTLENECK and black trousers with the same single fine silver necklace. Both arms now hang naturally at her sides, hands relaxed and empty. Keep the reserved neutral expression. Exactly one fully clothed adult character, nonsexual head-to-mid-thigh portrait, centered, true transparent alpha background, no shadow, border or text. No lab coat draped anywhere. Highest supported quality and maximum native resolution; preserve 1024x1536 native canvas for this replacement of the former casual alias. Preserve all canonical features and clean alpha.",
+      "references": [
+        "assets/images/characters/riin_normal.png"
+      ],
+      "master": "assets/images/characters/riin_casual.png",
+      "png": "assets/images/characters/riin_casual.png",
+      "webp": "assets/images/characters/riin_casual.webp",
+      "native": [
+        1024,
+        1536
+      ],
+      "delivery": [
+        1024,
+        1536
+      ],
+      "alpha": true,
+      "masterSHA256": "5494464eb6ef5d10f2721c0511e2c74224edc13c573fb6815da1a57ff2cbc56e"
+    },
+    {
+      "key": "riin_casual_pain",
+      "prompt": "Edit this existing Riin pain sprite only for wardrobe and props. Preserve her exact canonical face, strained tearful expression, golden eyes, thin silver glasses, blue-violet bob, body proportions, framing, and crisp anime rendering. Remove the white lab coat completely. Remove the clipboard. She wears only the same fully opaque black LONG-SLEEVED turtleneck top, single fine silver necklace and black trousers. The hand that clutched the clipboard now rests over her opposite forearm; no props, no injuries, no exposed torso. Exactly one fully clothed adult woman, nonsexual game sprite, head-to-mid-thigh, centered. True transparent alpha background, clean edges, no colored matte, no checkerboard, no text, no shadow. Highest supported quality and maximum supported native resolution. Keep the existing 1086x1448 canvas and expression.",
+      "references": [
+        "assets/images/characters/riin_pain_v2.png"
+      ],
+      "master": "assets/images/characters/riin_casual_pain.png",
+      "png": "assets/images/characters/riin_casual_pain.png",
+      "webp": "assets/images/characters/riin_casual_pain.webp",
+      "native": [
+        1086,
+        1448
+      ],
+      "delivery": [
+        1086,
+        1448
+      ],
+      "alpha": true,
+      "masterSHA256": "440810217e22efc693efb280a87f1e19048a5730d21fdd2098f46805085c5e08"
+    },
+    {
+      "key": "riin_casual_relief",
+      "prompt": "Edit this existing adult Riin relief sprite only by removing the white lab coat and pens. Preserve exact face, relieved gentle smile, gold eyes, silver glasses, blue-violet asymmetrical bob, single fine silver necklace, body proportions, hand-in-pocket pose and anime shading. Her underlying clothing is a fully opaque BLACK LONG-SLEEVED TURTLENECK and black trousers, covering torso and arms normally. No lab coat, no white garment, no extra jewelry or props. Neutral nonsexual visual novel sprite, head to mid-thigh, centered on genuine transparent alpha. Keep 1086x1448 canvas, clean fine edges, no background, shadow, text, border or checkerboard. Highest supported quality and maximum supported native resolution.",
+      "references": [
+        "assets/images/characters/riin_relief_v2.png"
+      ],
+      "master": "assets/images/characters/riin_casual_relief.png",
+      "png": "assets/images/characters/riin_casual_relief.png",
+      "webp": "assets/images/characters/riin_casual_relief.webp",
+      "native": [
+        1086,
+        1448
+      ],
+      "delivery": [
+        1086,
+        1448
+      ],
+      "alpha": true,
+      "masterSHA256": "765bb19aaa0a40c80f9e4986bdff3d8e52d7120eb19f9cd76fb24dc587a6b43c"
+    },
+    {
+      "key": "cg_riin_two_pills_casual",
+      "prompt": "Precise wardrobe-only edit of this visual novel CG. The dialogue says Riin has removed her white lab coat. Remove the white coat and its pens entirely, replacing the covered areas with the same fitted but fully opaque BLACK LONG-SLEEVED TURTLENECK already visible underneath. Preserve exactly the face, silver glasses, gold eyes, blue-violet hair, black trousers, silver necklace, pose, two natural hands with one black capsule and one pink capsule, composition, lighting, nurse-office background and anime art style. No extra changes, no exposed torso, no new objects or text. Adult medical teacher in ordinary fully clothed nonsexual presentation. Maintain 1280x720 landscape canvas, highest supported quality and native resolution, no watermark or border.",
+      "references": [
+        "assets/images/background/cg_riin_two_pills.jpg"
+      ],
+      "master": "assets/images/background/cg_riin_two_pills_casual_master.png",
+      "png": "assets/images/background/cg_riin_two_pills_casual.png",
+      "webp": "assets/images/background/cg_riin_two_pills_casual.webp",
+      "native": [
+        1672,
+        941
+      ],
+      "delivery": [
+        1280,
+        720
+      ],
+      "alpha": false,
+      "masterSHA256": "a552fb1604de42d1d745f3c19c588c1870da2dfb17c44241ca86789a088a5b72"
+    },
+    {
+      "key": "subject_07_long_hair",
+      "prompt": "Precise character-record portrait edit for a psychological mystery visual novel. This is subject 07, the SAME MALE PERSON as the reference. Preserve the identical spacing, shapes and angles of his eyes, nose and mouth, black/very dark brown hair color, navy school blazer and white shirt, sober anime shading, plain dark wall, head-and-shoulders crop and photo-card borders. The story explicitly describes this version with LONG HAIR and HOLLOW CHEEKS: extend the hair naturally to shoulder length, with untidy long side locks and bangs, and make the cheeks visibly gaunt with mild under-eye exhaustion. Keep a neutral closed mouth, no smile, no gore, no bruises, no sexual content, no age change. This is a recognizably identical face after fatigue, not a new character. Keep the 480x640 portrait canvas and all original border layout. Highest supported quality and native resolution. No text or watermark.",
+      "references": [
+        "assets/images/evidence/subjects_anime/subject_07.png"
+      ],
+      "master": "assets/images/evidence/subjects_anime/subject_07_long_hair_master.png",
+      "png": "assets/images/evidence/subjects_anime/subject_07_long_hair.png",
+      "webp": "assets/images/evidence/subjects_anime/subject_07_long_hair.webp",
+      "native": [
+        1086,
+        1448
+      ],
+      "delivery": [
+        480,
+        640
+      ],
+      "alpha": false,
+      "masterSHA256": "5e5086e87c2b6417a61dc5a1c0487141260d7927473d7f817c52c57b4474f42c"
+    }
+  ]
+}

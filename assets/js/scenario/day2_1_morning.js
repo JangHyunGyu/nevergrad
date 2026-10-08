@@ -232,7 +232,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_morning_pres_4"
     },
     "day2_morning_pres_4": {
-        character: "eunsu_warm",
+        character: "sea_smile",
         next: "day2_morning_pres_5"
     },
     "day2_morning_pres_5": {
@@ -353,7 +353,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_broadcast_4"
     },
     "day2_broadcast_4": {
-        character: "eunsu_pa",
+        character: null,
         charOpacity: 0.35,
         stopSfx: "sfx_static.mp3",
         next: "day2_broadcast_5"

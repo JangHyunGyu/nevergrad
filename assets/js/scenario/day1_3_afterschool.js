@@ -140,6 +140,7 @@ Object.assign(SCENARIO[1], {
     },
     // 폴라로이드 선물
     "day1_after_yuna_10": {
+        background: "corridor",
         character: "yuna_shy",
         next: "day1_after_yuna_11"
     },
@@ -211,7 +212,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_riin_12": {
         character: "riin_gentle",
-        background: "hallway",
+        background: "corridor",
         next: "day1_after_home_1"
     },
 

@@ -179,7 +179,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_6": {
         character: null,
-        background: "exit_door",
+        background: "emergency_stair_night",
         unskippable: true,
         next: "day5_ending_true_7"
     },
@@ -204,7 +204,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_11"
     },
     "day5_ending_true_11": {
-        character: null,
+        charOpacity: 0.45,
+        character: "seolhwa_smile",
         unskippable: true,
         next: "day5_ending_true_12"
     },
@@ -227,7 +228,7 @@ Object.assign(SCENARIO[5], {
     },
     // 은수의 반응: "결국, 내가 진 거구나. 그 아이한테."
     "day5_ending_true_14a": {
-        character: "eunsu_shocked",
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_ending_true_14b"
     },
@@ -257,7 +258,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_19"
     },
     "day5_ending_true_19": {
-        background: "exit_door",
+        background: "emergency_stair_night",
         bgm: "ending_hope.mp3",
         character: null,
         unskippable: true,
@@ -287,19 +288,20 @@ Object.assign(SCENARIO[5], {
     },
     // ── 에필로그 / 3개월 후 ──
     "day5_ending_true_24": {
-        background: "black",
+        background: "emergency_stair_night",
         character: null,
-        fadeOut: true,
+        fadeOut: false,
         unskippable: true,
         next: "day5_ending_true_25"
     },
     "day5_ending_true_25": {
         character: "yuna_normal",
-        background: "news_article",
+        background: "emergency_stair_night",
         unskippable: true,
         next: "day5_ending_true_26"
     },
     "day5_ending_true_26": {
+        background: "news_article",
         character: null,
         unskippable: true,
         next: "day5_ending_true_27"
@@ -658,7 +660,7 @@ Object.assign(SCENARIO[5], {
     // C. RESIST END — "반항"
     // ══════════════════════════════════════════
     "day5_ending_resist_1": {
-        background: "exit_door",
+        background: "corridor_emergency",
         bgm: "ending_bittersweet.mp3",
         character: "eunsu_normal",
         unskippable: true,
@@ -685,7 +687,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_7"
     },
     "day5_ending_resist_7": {
-        character: "seolhwa_fading",
+        characters: { center: "eunsu_shaking", right: "seolhwa_fading" },
+        character: null,
         unskippable: true,
         next: "day5_ending_resist_8"
     },
@@ -695,7 +698,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_9"
     },
     "day5_ending_resist_9": {
-        character: "eunsu_shocked",
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_ending_resist_10"
     },
@@ -720,7 +723,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_14"
     },
     "day5_ending_resist_14": {
-        character: null,
+        character: "eunsu_shaking",
         next: "day5_ending_resist_15"
     },
     "day5_ending_resist_15": {
@@ -757,7 +760,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_19"
     },
     "day5_ending_resist_19": {
-        character: null,
+        character: "eunsu_crying",
         next: "day5_ending_resist_20"
     },
     "day5_ending_resist_20": {
@@ -825,7 +828,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_cage_eunsu_6": {
         character: null,
-        background: "ending_cage",
+        background: "classroom_afternoon",
         unskippable: true,
         next: "day5_ending_cage_eunsu_7"
     },
@@ -897,6 +900,7 @@ Object.assign(SCENARIO[5], {
     // 게임이 끝나지 않는다. 엔딩 크레딧이 뜨지 않는다.
     // 화면이 어두워졌다 밝아지며 "Day 1"이 반복된다.
     "day5_ending_cage_title": {
+        background: "ending_cage",
         character: null,
         endingTitle: "CAGE END",
         endingSubtitle: "day5_ending_cage_subtitle",
@@ -998,7 +1002,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_2"
     },
     "day5_ending_forget_2": {
-        character: null,
+        character: "eunsu_normal",
         next: "day5_ending_forget_3"
     },
     "day5_ending_forget_3": {
@@ -1030,15 +1034,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_10"
     },
     "day5_ending_forget_10": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_ending_forget_11"
     },
     "day5_ending_forget_11": {
-        character: null,
+        character: "seolhwa_fading",
         next: "day5_ending_forget_12"
     },
     "day5_ending_forget_12": {
-        character: null,
+        character: "seolhwa_fading",
         glitch: { heavyGlitch: true },
         unskippable: true,
         next: "day5_ending_forget_13"
@@ -1053,7 +1057,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_forget_14": {
         character: null,
-        background: "home",
+        background: "room_morning",
         bgm: "morning_peaceful.mp3",
         unskippable: true,
         next: "day5_ending_forget_15"
@@ -1089,8 +1093,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_22"
     },
     "day5_ending_forget_22": {
-        character: null,
-        background: "ending_forget",
+        character: "eunsu_smile",
+        background: "school_gate",
         unskippable: true,
         next: "day5_ending_forget_sea_branch"
     },
@@ -1118,6 +1122,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_title"
     },
     "day5_ending_forget_title": {
+        background: "ending_forget",
         character: null,
         endingTitle: "FORGET END",
         endingSubtitle: "day5_ending_forget_subtitle",
@@ -1140,7 +1145,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_2"
     },
     "day5_ending_ghost_2": {
-        character: null,
+        character: "eunsu_obsessed",
         unskippable: true,
         next: "day5_ending_ghost_3"
     },
@@ -1195,7 +1200,9 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_13"
     },
     "day5_ending_ghost_13": {
-        character: "seolhwa_fading",
+        charOpacity: 0.45,
+        background: "emergency_stair_night",
+        character: "seolhwa_smile",
         unskippable: true,
         next: "day5_ending_ghost_14"
     },
@@ -1212,7 +1219,7 @@ Object.assign(SCENARIO[5], {
     // ── 에필로그 ──
     "day5_ending_ghost_16": {
         character: null,
-        background: "ending_ghost",
+        background: "school_night",
         bgm: "ending_melancholy.mp3",
         stopSfx: "sfx_whisper.mp3",
         unskippable: true,
@@ -1351,6 +1358,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_17"
     },
     "day5_ending_complicit_17": {
+        characters: { left: "eunsu_normal", right: "seolhwa_quiet" },
+        background: "corridor",
         character: null,
         next: "day5_ending_complicit_18"
     },

@@ -133,6 +133,7 @@ Object.assign(SCENARIO[3], {
     //  ★ 기억 블리드 — 장르 전환의 시작
     // ══════════════════════════════════════
     "day3_night_bleed": {
+        background: "room_dark",
         character: null,
         branches: [
             { condition: "yuna_memory_card", next: "day3_night_bleed_2" }
@@ -291,6 +292,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_wall_6"
     },
     "day3_night_wall_6": {
+        background: "home",
         character: null,
         next: "day3_night_wall_7"
     },
@@ -368,6 +370,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_xover_glitch_6"
     },
     "day3_xover_glitch_6": {
+        background: "home",
         character: null,
         setFlags: ["xover_glitch_d3"],
         next: "day3_night_seolhwa"
@@ -377,6 +380,7 @@ Object.assign(SCENARIO[3], {
     //  설화의 경고 — 현실 (각성 상태, 환각/잔상)
     // ══════════════════════════════════════
     "day3_night_seolhwa": {
+        background: "home",
         bgm: null,
         sfx: "sfx_whisper.mp3",
         character: "seolhwa_fading",
@@ -395,12 +399,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_4"
     },
     "day3_night_seolhwa_4": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_4a"
     },
     "day3_night_seolhwa_4a": {
-        character: null,
+        character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_4b"
     },

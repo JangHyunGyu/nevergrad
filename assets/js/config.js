@@ -139,7 +139,9 @@ const CONFIG = {
             close: "assets/images/characters/riin_close.webp",
             pleased: "assets/images/characters/riin_pleased.webp",
             seductive: "assets/images/characters/riin_seductive.webp",
-            casual: "assets/images/characters/riin_normal.webp",      // alias: 평상시
+            casual: "assets/images/characters/riin_casual.webp",
+            casual_pain: "assets/images/characters/riin_casual_pain.webp",
+            casual_relief: "assets/images/characters/riin_casual_relief.webp",
             pain: "assets/images/characters/riin_pain_v2.webp",          // 고통/죄책감
             relief: "assets/images/characters/riin_relief_v2.webp"       // 안도
         },
@@ -253,7 +255,7 @@ const CONFIG = {
         corridor_emergency: "assets/images/background/emergency_corridor.webp",
         locked_corridor_junction: "assets/images/background/locked_corridor_junction.webp",
         old_infirmary: "assets/images/background/old_infirmary.webp",
-        cg_riin_two_pills: "assets/images/background/cg_riin_two_pills.webp",
+        cg_riin_two_pills: "assets/images/background/cg_riin_two_pills_casual.webp",
         cg_gate_bloom: "assets/images/background/cg_gate_bloom.webp",
         old_stairway: "assets/images/background/old_stairway.webp",
         old_corridor_dark: "assets/images/background/old_corridor_dark.webp",
@@ -305,7 +307,7 @@ const CONFIG = {
         4: "assets/images/evidence/subjects_anime/subject_04.png",
         5: "assets/images/evidence/subjects_anime/subject_05.png",
         6: "assets/images/evidence/subjects_anime/subject_06.png",
-        7: "assets/images/evidence/subjects_anime/subject_07.png",
+        7: "assets/images/evidence/subjects_anime/subject_07_long_hair.png",
         8: "assets/images/evidence/subjects_anime/subject_08.png",
         9: "assets/images/evidence/subjects_anime/subject_09.png",
         10: "assets/images/evidence/subjects_anime/subject_10.png",

@@ -158,7 +158,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_yuna_18"
     },
     "day4_lunch_yuna_18": {
-        character: "eunsu_cold",
+        character: null,
         // 은수가 열쇠를 갖고 있다. 나는 열 수 없다.
         glitch: { noise: true, noiseDuration: 200 },
         unskippable: true,
@@ -293,7 +293,7 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "day4_lunch_nurse_16": {
-        background: "hallway",
+        background: "corridor",
         character: null,
         // 거절하고 나옴, 중얼거림
         setFlags: ["saw_riin_syringe"],

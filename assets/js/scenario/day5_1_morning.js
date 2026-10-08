@@ -168,7 +168,7 @@ Object.assign(SCENARIO[5], {
     // 유나 구출 — 지하실
     // ══════════════════════════════════════
     "day5_morning_school_11": {
-        background: "basement",
+        background: "old_stairway",
         character: null,
         sfx: { file: "sfx_pipe_thump_loop.mp3", loop: true, volume: 0.55 },
         unskippable: true,
@@ -176,6 +176,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_1"
     },
     "day5_morning_rescue_1": {
+        background: "basement",
         character: null,
         sfx: { file: "sfx_machine_hum_loop.mp3", loop: true, volume: 0.38 },
         stopSfx: { file: "sfx_pipe_thump_loop.mp3", fadeOut: 0.8 },
@@ -332,6 +333,7 @@ Object.assign(SCENARIO[5], {
 
     // ── ESCAPE 루트 종료 → 추격 스킵, 방과후로 직행 ──
     "day5_morning_escape_end": {
+        background: "old_stairway",
         character: null,
         stopSfx: true,
         setFlags: ["route_escape", "escape_with_yuna"],
@@ -640,7 +642,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_blockade_4"
     },
     "day5_morning_blockade_4": {
-        character: null,
+        character: "yuna_weak",
         choices: [
             { next: "day5_morning_blockade_5", stats: { yuna: { affinity: 4 } } },
             { next: "day5_morning_blockade_5", stats: { eunsu: { affinity: -3 } } },
@@ -657,37 +659,37 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_broadcast_1"
     },
     "day5_morning_broadcast_1": {
-        character: "eunsu_gentle",
+        character: null,
         unskippable: true,
         next: "day5_morning_broadcast_2"
     },
     "day5_morning_broadcast_2": {
-        character: "eunsu_gentle",
+        character: null,
         unskippable: true,
         next: "day5_morning_broadcast_3"
     },
     "day5_morning_broadcast_3": {
-        character: "eunsu_gentle",
+        character: null,
         unskippable: true,
         next: "day5_morning_broadcast_4"
     },
     "day5_morning_broadcast_4": {
-        character: "eunsu_gentle",
+        character: null,
         unskippable: true,
         next: "day5_morning_broadcast_5"
     },
     "day5_morning_broadcast_5": {
-        character: "eunsu_gentle",
+        character: null,
         unskippable: true,
         next: "day5_morning_broadcast_6"
     },
     "day5_morning_broadcast_6": {
-        character: "eunsu_gentle",
+        character: null,
         unskippable: true,
         next: "day5_morning_broadcast_7"
     },
     "day5_morning_broadcast_7": {
-        character: "eunsu_gentle",
+        character: null,
         unskippable: true,
         next: "day5_morning_broadcast_8"
     },
@@ -747,7 +749,7 @@ Object.assign(SCENARIO[5], {
     // 졸업식 — 교실
     // ══════════════════════════════════════
     "day5_morning_broadcast_18": {
-        background: "classroom",
+        background: "corridor_old",
         bgm: "music_box_broken.mp3",
         character: null,
         unskippable: true,
@@ -769,11 +771,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_4"
     },
     "day5_morning_grad_4": {
-        character: "yuna_weak",
+        character: null,
         unskippable: true,
         next: "day5_morning_grad_5"
     },
     "day5_morning_grad_5": {
+        background: "classroom",
         character: null,
         unskippable: true,
         next: "day5_morning_grad_6"
@@ -1081,7 +1084,7 @@ Object.assign(SCENARIO[5], {
 
     // ── CAGE 루트 종료 ──
     "day5_morning_end_cage": {
-        character: null,
+        character: "eunsu_smile",
         setFlags: ["route_cage", "stayed_with_eunsu"],
         changeSlot: "afterschool",
         next: "day5_after_start"

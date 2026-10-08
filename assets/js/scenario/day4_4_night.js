@@ -481,6 +481,8 @@ Object.assign(SCENARIO[4], {
     },
     // 1년 전에 죽었다
     "day4_night_mirror_hit1_12": {
+        charOpacity: 0.86,
+        characters: { right: "seolhwa_sad" },
         character: null,
         unskippable: true,
         glitch: { heavyGlitch: true },
@@ -652,7 +654,7 @@ Object.assign(SCENARIO[4], {
     // 작전 수립
     // ══════════════════════════════════════════
     "day4_night_plan": {
-        background: "home",
+        background: "bathroom_night",
         bgm: "tension_night.mp3",
         character: null,
         unskippable: true,
@@ -663,6 +665,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_plan_3"
     },
     "day4_night_plan_3": {
+        background: "home",
         character: null,
         next: "day4_night_plan_4"
     },

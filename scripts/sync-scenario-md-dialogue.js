@@ -108,6 +108,10 @@ function formatMeta(scene) {
     if (scene.background) meta.push(`배경: \`${scene.background}\``);
     if (scene.bgm) meta.push(`BGM: \`${scene.bgm}\``);
     if (scene.character !== undefined && scene.character !== null) meta.push(`캐릭터: \`${scene.character}\``);
+    if (scene.characters) {
+        const cast = Object.entries(scene.characters).filter(([, value]) => value).map(([position, value]) => `\`${position}: ${value}\``);
+        if (cast.length) meta.push(`캐릭터: ${cast.join(', ')}`);
+    }
     return meta.length ? `_${meta.join(' / ')}_` : '';
 }
 

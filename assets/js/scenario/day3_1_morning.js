@@ -44,6 +44,7 @@ Object.assign(SCENARIO[3], {
         setFlags: ["mirror_avoidance_1"]
     },
     "day3_morning_mirror_3": {
+        background: "room_morning",
         character: null,
         glitch: { mirrorFog: true },
         next: "day3_morning_milk_1"

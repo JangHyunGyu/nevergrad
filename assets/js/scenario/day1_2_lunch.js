@@ -29,15 +29,15 @@ Object.assign(SCENARIO[1], {
     // ===== 루트 A: 세아와 점심 (sea_1 ~ sea_29) =====
     // 도시락 씬
     "day1_lunch_sea_1": {
-        character: null,
+        character: "sea_normal",
         next: "day1_lunch_sea_2"
     },
     "day1_lunch_sea_2": {
-        character: null,
+        character: "sea_normal",
         next: "day1_lunch_sea_3"
     },
     "day1_lunch_sea_3": {
-        character: null,
+        character: "sea_normal",
         next: "day1_lunch_sea_4"
     },
     "day1_lunch_sea_4": {
@@ -161,11 +161,11 @@ Object.assign(SCENARIO[1], {
         next: "day1_lunch_yuna_3"
     },
     "day1_lunch_yuna_3": {
-        character: null,
+        character: "yuna_scared",
         next: "day1_lunch_yuna_4"
     },
     "day1_lunch_yuna_4": {
-        character: null,
+        character: "yuna_scared",
         next: "day1_lunch_yuna_5"
     },
     "day1_lunch_yuna_5": {

@@ -21,6 +21,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_start_3"
     },
     "day3_after_start_3": {
+        background: "hallway",
         character: null,
         next: "day3_after_choice"
     },
@@ -115,7 +116,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_drink_3"
     },
     "day3_after_riin_drink_3": {
-        character: "riin_pain",
+        character: "riin_strained_smile",
         next: "day3_after_riin_drink_4"
     },
     "day3_after_riin_drink_4": {
@@ -160,7 +161,8 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_liin_sugar_4"
     },
     "day3_after_liin_sugar_4": {
-        character: "riin_relief",
+        background: "corridor",
+        character: null,
         sfx: "sfx_door_close.mp3",
         next: "day3_after_yuna_check"
     },
@@ -301,17 +303,17 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_sea_lie_2"
     },
     "day3_after_sea_lie_2": {
-        character: "sea_yandere",
+        character: "sea_stare",
         unskippable: true,
         next: "day3_after_sea_lie_3"
     },
     "day3_after_sea_lie_3": {
-        character: "sea_yandere",
+        character: "sea_stare",
         unskippable: true,
         next: "day3_after_sea_lie_3a"
     },
     "day3_after_sea_lie_3a": {
-        character: "sea_yandere",
+        character: "sea_stare",
         unskippable: true,
         next: "day3_after_sea_lie_4"
     },
@@ -440,6 +442,7 @@ Object.assign(SCENARIO[3], {
 
     // 시선을 돌리면
     "day3_after_eunsu_ignore": {
+        background: "teacher_office",
         character: null,
         next: "day3_after_yuna_check"
     },
@@ -558,7 +561,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_after_yuna_9a": {
         background: "closeup_sd_card",
-        character: "yuna_normal",
+        character: null,
         fadeIn: true,
         fadeDuration: 350,
         next: "day3_after_end"

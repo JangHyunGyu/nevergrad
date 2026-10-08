@@ -55,6 +55,14 @@ test('the visible visitor and translated clue refer to the same teacher', () => 
     for (const lang of languages) assert.match(translations[lang].day4_lunch_yuna_17.text, names, lang);
 });
 
+test('Seolhwa hair descriptions match her dark brown character art in every language', () => {
+    const ids = ['day1_seolhwa_3', 'day3_night_seolhwa_4', 'day5_morning_grad_20', 'day5_lunch_seolhwa_guide_15', 'day5_ending_ghost_18'];
+    const colors = { ko: /흑갈색/, en: /dark[ -]brown/i, ja: /黒褐色/, es: /castaño oscuro/i, fr: /brun foncé/i, de: /dunkelbraun/i, pt: /castanho-escuro/i, zh: /黑褐色/ };
+    for (const [lang, color] of Object.entries(colors)) {
+        for (const id of ids) assert.match((lang === 'ko' ? source : translations[lang])[id].text, color, `${lang}:${id}`);
+    }
+});
+
 test('Portuguese spelling and Korean surnames survive localization', () => {
     for (const [id, entry] of Object.entries(translations.pt)) {
         for (const text of [entry.text, ...(entry.choices || [])]) {

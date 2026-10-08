@@ -230,7 +230,7 @@ Object.assign(SCENARIO[2], {
 
     // ===== 기상 =====
     "day2_night_wake_1": {
-        background: "home",
+        background: "room_morning",
         character: null,
         night: true,
         next: "day2_night_wake_2"

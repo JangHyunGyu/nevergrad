@@ -57,13 +57,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             next: "day4_lunch_nurse_leave_yuna"
         },
         "day4_lunch_nurse_leave_ask": {
-            background: "hallway",
+            background: "corridor",
             character: null,
             setFlags: ["saw_riin_syringe"],
             next: "day4_lunch_end"
         },
         "day4_lunch_nurse_leave_yuna": {
-            background: "hallway",
+            background: "corridor",
             character: null,
             setFlags: ["saw_riin_syringe"],
             next: "day4_lunch_end"

@@ -558,6 +558,7 @@ Object.assign(SCENARIO[1], {
     },
     // L246: 나 "음... 게임이랑 음악 듣는 거 좋아합니다."
     "day1_eunsu_11": {
+        background: "classroom",
         characters: { left: "sea_smile", center: "eunsu_normal" },
         next: "day1_eunsu_12"
     },
@@ -639,7 +640,7 @@ Object.assign(SCENARIO[1], {
     },
     // L280: *...어색하게 웃는다...*
     "day1_seolhwa_greet_4": {
-        character: "seolhwa_quiet",
+        character: "seolhwa_smile",
         next: "day1_seolhwa_greet_5"
     },
     // L282: *짧은 침묵 후, 아주 작은 목소리로:*
@@ -753,7 +754,7 @@ Object.assign(SCENARIO[1], {
     },
     // L326: *자연스럽게 대화가 이어진다...*
     "day1_break_5": {
-        character: null,
+        character: "sea_serious",
         next: "day1_break_6"
     },
     // L328: 급우B "야 근데 세아가 엄청 챙겨주더라."

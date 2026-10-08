@@ -20,6 +20,7 @@
       clearTimeout(el._charTimer);
       el._charTimer = null;
     }
+    el.onerror = null;
     el.src = '';
     el.style.opacity = '';
     delete el.dataset.characterId;

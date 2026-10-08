@@ -1091,7 +1091,7 @@ class GameEngine {
     _buildSceneMediaOverlay(sceneId, scene, t, resolvedText, extraVars) {
         if (!sceneId || !this.renderer?.setMediaOverlay) return null;
 
-        if (scene.background === 'news_article' || /^day5_ending_true_2[5-7]$/.test(sceneId)) {
+        if (scene.background === 'news_article' || /^day5_ending_true_2[6-7]$/.test(sceneId)) {
             return this._buildNewsArticleMedia(extraVars);
         }
 

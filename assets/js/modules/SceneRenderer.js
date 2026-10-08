@@ -495,6 +495,7 @@ class SceneRenderer {
             }
             if (window.NevergradMotion?.enabled?.()) {
                 window.NevergradMotion.characterOut(el, () => {
+                    el.onerror = null;
                     el.src = '';
                     el.style.opacity = '';
                     delete el.dataset.characterId;
@@ -506,6 +507,7 @@ class SceneRenderer {
             el.classList.add('char-fade-out');
             el.style.opacity = '0';
             setTimeout(() => {
+                el.onerror = null;
                 el.src = '';
                 el.style.opacity = '';
                 delete el.dataset.characterId;

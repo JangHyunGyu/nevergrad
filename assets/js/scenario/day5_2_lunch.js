@@ -47,7 +47,7 @@ Object.assign(SCENARIO[5], {
     },
     // PA broadcast - Eunsu
     "day5_lunch_chase_4": {
-        character: "eunsu_pa",
+        character: null,
         charOpacity: 0.35,
         stopSfx: "sfx_footsteps_running.mp3",
         sfx: { file: "sfx_pa_chime_static.mp3", volume: 0.85 },
@@ -55,13 +55,13 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_chase_5"
     },
     "day5_lunch_chase_5": {
-        character: "eunsu_pa",
+        character: null,
         charOpacity: 0.35,
         unskippable: true,
         next: "day5_lunch_chase_6"
     },
     "day5_lunch_chase_6": {
-        character: "eunsu_pa",
+        character: null,
         charOpacity: 0.35,
         unskippable: true,
         next: "day5_lunch_chase_7"
@@ -424,7 +424,7 @@ Object.assign(SCENARIO[5], {
     },
     // "...왔어."
     "day5_lunch_right_7": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_8"
     },
@@ -435,7 +435,7 @@ Object.assign(SCENARIO[5], {
     },
     // 리인이 주사기를 집어듦 - 공포
     "day5_lunch_right_9": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_10"
     },
@@ -447,25 +447,25 @@ Object.assign(SCENARIO[5], {
     },
     // "...진정해." - 주사기를 싱크대에 내려놓음
     "day5_lunch_right_11": {
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_12"
     },
     "day5_lunch_right_12": {
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_13"
     },
     // 캐비넷에서 약병 꺼냄
     "day5_lunch_right_13": {
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_pills_0"
     },
     "day5_lunch_pills_0": {
         condition: "met_riin",
         fallback: "day5_lunch_right_14",
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_pills_1"
     },
@@ -517,30 +517,30 @@ Object.assign(SCENARIO[5], {
     },
     "day5_lunch_pills_black_1": {
         background: "old_infirmary",
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_pills_black_ask"
     },
     "day5_lunch_pills_black_ask": {
         background: "old_infirmary",
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_14"
     },
     "day5_lunch_right_14": {
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_15"
     },
     // 뚜껑 열고, 냄새 맡고, 한 모금 마심
     "day5_lunch_right_15": {
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_16"
     },
     // ★ "활성 성분 없어."
     "day5_lunch_right_16": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         glitch: { screenShake: true },
         unskippable: true,
         next: "day5_lunch_right_17"
@@ -552,7 +552,7 @@ Object.assign(SCENARIO[5], {
     },
     // "7번째부터."
     "day5_lunch_right_18": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_19"
     },
@@ -563,28 +563,28 @@ Object.assign(SCENARIO[5], {
     },
     // "...왜요?"
     "day5_lunch_right_20": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_21"
     },
     // 이설화 비명 회상
     "day5_lunch_right_21": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_22"
     },
     "day5_lunch_right_22": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_23"
     },
     "day5_lunch_right_23": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_24"
     },
     "day5_lunch_right_24": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_25"
     },
@@ -595,58 +595,58 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_26"
     },
     "day5_lunch_right_26": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_27"
     },
     // 리인 자기 혐오 독백
     "day5_lunch_right_27": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_28"
     },
     "day5_lunch_right_28": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_29"
     },
     // 약 농도 줄임 -> 8번째부터 설탕물
     "day5_lunch_right_29": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_30"
     },
     // 10번째 때 은수가 의심
     "day5_lunch_right_30": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_31"
     },
     // 데자뷔의 이유
     "day5_lunch_right_31": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_32"
     },
     // 비상구 열쇠 꺼냄
     "day5_lunch_right_32": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_33"
     },
     "day5_lunch_right_33": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_34"
     },
     // 구관 3층 비상구 설명
     "day5_lunch_right_34": {
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_35"
     },
     "day5_lunch_right_35": {
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_36"
     },
@@ -664,20 +664,20 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_38"
     },
     "day5_lunch_right_38": {
-        character: "riin_neutral",
+        character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_39"
     },
     // "...시간 없어. 받아."
     "day5_lunch_right_39": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_choice"
     },
 
     // 6초 타이머: 3 choices (타임아웃 = 리인에게 붙잡힘)
     "day5_lunch_right_choice": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         sfx: "sfx_scream.mp3",
         vibrate: "danger",
         timedChoice: 6000,
@@ -708,7 +708,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 선택 2: "같이 가요." ──
     "day5_lunch_right_c2_1": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         stopSfx: "sfx_scream.mp3",
         unskippable: true,
         next: "day5_lunch_seolhwa_1",
@@ -724,22 +724,22 @@ Object.assign(SCENARIO[5], {
     },
     // 리인이 자기 팔에 주사기를 꽂음
     "day5_lunch_right_c3_2": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_c3_3"
     },
     "day5_lunch_right_c3_3": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_c3_4"
     },
     "day5_lunch_right_c3_4": {
-        character: "riin_pain",
+        character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_c3_5"
     },
     "day5_lunch_right_c3_5": {
-        character: "riin_pain",
+        character: "riin_casual_relief",
         unskippable: true,
         next: "day5_lunch_seolhwa_1",
         setFlags: ["emergency_key"]
@@ -1005,7 +1005,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_seolhwa_c2_5"
     },
     "day5_lunch_seolhwa_c2_5": {
-        characters: { left: "yuna_weak", center: "seolhwa_normal" },
+        characters: { left: "yuna_weak", center: "seolhwa_smile" },
         charOpacities: { center: 0.9 },
         unskippable: true,
         next: "day5_lunch_seolhwa_c2_6"
@@ -1083,31 +1083,31 @@ Object.assign(SCENARIO[5], {
     },
     // 설화가 흐려지고 있다
     "day5_lunch_seolhwa_guide_11": {
-        characters: { left: "yuna_weak", center: "seolhwa_fading" },
+        characters: { left: "yuna_weak" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_12"
     },
     // 열쇠를 꽂았다 (or 설화가 잠금 풀어줌)
     "day5_lunch_seolhwa_guide_12": {
-        characters: { left: "yuna_weak", center: "seolhwa_fading" },
+        characters: { left: "yuna_weak" },
         branches: [
             { condition: "emergency_key", next: "day5_lunch_seolhwa_guide_13a" }
         ],
         next: "day5_lunch_seolhwa_guide_13b"
     },
     "day5_lunch_seolhwa_guide_13a": {
-        characters: { left: "yuna_weak", center: "seolhwa_fading" },
+        characters: { left: "yuna_weak" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_14"
     },
     "day5_lunch_seolhwa_guide_13b": {
-        characters: { left: "yuna_weak", center: "seolhwa_fading" },
+        characters: { left: "yuna_weak" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_14"
     },
     // 문이 열렸다. 밖의 공기.
     "day5_lunch_seolhwa_guide_14": {
-        characters: { left: "yuna_weak", center: "seolhwa_fading" },
+        characters: { left: "yuna_weak" },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_15"
     },

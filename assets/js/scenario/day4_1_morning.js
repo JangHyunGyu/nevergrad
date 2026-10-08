@@ -349,6 +349,7 @@ Object.assign(SCENARIO[4], {
 
     // 선택1: 같이 걷는다
     "day4_morning_eunsu_comply": {
+        background: "corridor",
         character: "eunsu_smile",
         next: "day4_morning_classroom"
     },
@@ -377,6 +378,7 @@ Object.assign(SCENARIO[4], {
     },
     // 은수가 반 걸음 뒤에서 따라온다
     "day4_morning_eunsu_refuse_5": {
+        background: "corridor",
         character: "eunsu_cold",
         next: "day4_morning_classroom"
     },

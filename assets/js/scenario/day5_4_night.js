@@ -769,7 +769,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_22"
     },
     "day5_ending_resist_22": {
-        background: "exit_door",
+        background: "ending_resist",
         bgm: "ending_bittersweet.mp3",
         character: null,
         unskippable: true,
@@ -780,6 +780,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_24"
     },
     "day5_ending_resist_24": {
+        background: "faculty_office",
         character: null,
         next: "day5_ending_resist_title"
     },
@@ -875,7 +876,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_sea_6"
     },
     "day5_ending_cage_sea_6": {
-        background: "ending_cage",
+        background: "ending_cage_sea",
         character: null,
         unskippable: true,
         next: "day5_ending_cage_sea_7"
@@ -1311,6 +1312,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_9"
     },
     "day5_ending_complicit_9": {
+        background: "ending_complicit",
         character: null,
         next: "day5_ending_complicit_10"
     },

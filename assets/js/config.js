@@ -123,9 +123,9 @@ const CONFIG = {
             close: "assets/images/characters/eunsu_close.webp",
             writing: "assets/images/characters/eunsu_normal.webp",    // alias: 서류 작성 중
             pa: "assets/images/characters/eunsu_normal.webp",         // alias: PA 방송 (음성만)
-            shaking: "assets/images/characters/eunsu_shaking.webp",   // 떨리는 상태
+            shaking: "assets/images/characters/eunsu_shaking_v2.webp",   // 떨리는 상태
             shocked: "assets/images/characters/eunsu_cold.webp",      // alias: 충격받은 상태
-            crying: "assets/images/characters/eunsu_crying.webp"      // 울먹이는 상태
+            crying: "assets/images/characters/eunsu_crying_v2.webp"      // 울먹이는 상태
         },
         riin: {
             normal: "assets/images/characters/riin_normal.webp",
@@ -140,8 +140,8 @@ const CONFIG = {
             pleased: "assets/images/characters/riin_pleased.webp",
             seductive: "assets/images/characters/riin_seductive.webp",
             casual: "assets/images/characters/riin_normal.webp",      // alias: 평상시
-            pain: "assets/images/characters/riin_pain.webp",          // 고통/죄책감
-            relief: "assets/images/characters/riin_relief.webp"       // 안도
+            pain: "assets/images/characters/riin_pain_v2.webp",          // 고통/죄책감
+            relief: "assets/images/characters/riin_relief_v2.webp"       // 안도
         },
         sea: {
             normal: "assets/images/characters/sea_normal.webp",
@@ -278,11 +278,14 @@ const CONFIG = {
         dawn_road: "assets/images/background/dawn_road.webp",
         new_place: "assets/images/background/new_place.webp",
         lab_documents: "assets/images/evidence/day5_lab_documents.png",
-        ending_true: "assets/images/cg/ending_true_dawn_gate.png",
+        ending_true: "assets/images/cg/ending_true_new_classroom.webp",
         ending_escape: "assets/images/cg/ending_escape_rain.png",
         ending_cage: "assets/images/cg/ending_cage_classroom.png",
         ending_ghost: "assets/images/cg/ending_ghost_classroom.png",
         ending_forget: "assets/images/cg/ending_forget_empty_seat.png",
+        ending_resist: "assets/images/cg/ending_resist_records.webp",
+        ending_complicit: "assets/images/cg/ending_complicit_signature.webp",
+        ending_cage_sea: "assets/images/cg/ending_cage_sea_lunch.webp",
         office: "assets/images/background/teacher_office.webp"              // 사무실 (교무실 재사용)
     },
 

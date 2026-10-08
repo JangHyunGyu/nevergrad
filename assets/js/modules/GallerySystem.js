@@ -843,7 +843,7 @@ class GallerySystem {
             ending_true: {
                 id: 'ending_true',
                 name: 'True Ending CG',
-                description: 'The dawn gate beyond Project Nevergrad.'
+                description: 'A new classroom and a pencil held in the left hand.'
             },
             ending_escape: {
                 id: 'ending_escape',
@@ -864,6 +864,21 @@ class GallerySystem {
                 id: 'ending_forget',
                 name: 'Forget Ending CG',
                 description: 'An empty seat in ordinary days.'
+            },
+            ending_resist: {
+                id: 'ending_resist',
+                name: 'Resist Ending CG',
+                description: 'Leaving through the emergency exit with Eunsu and the records.'
+            },
+            ending_complicit: {
+                id: 'ending_complicit',
+                name: 'Complicit Ending CG',
+                description: 'The signed page that makes you part of the system.'
+            },
+            ending_cage_sea: {
+                id: 'ending_cage_sea',
+                name: 'Cage Ending: Sea',
+                description: 'The same lunchbox, the same student council room.'
             }
         };
 

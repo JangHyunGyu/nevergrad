@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-08",
+  "tool": "built-in image_gen",
+  "qualityControl": "Not exposed; maximum supported quality and native resolution requested in each prompt",
+  "entries": [
+    {
+      "key": "eunsu_shaking",
+      "prompt": "Use case: identity-preserve. Production visual-novel character sprite, exactly one adult woman, isolated with a genuinely transparent alpha background. Image 1 is the canonical character identity, outfit, body proportions, face, hairstyle, glasses, pearl earrings and crisp anime rendering style: preserve these. Image 2 is ONLY the frightened trembling emotion and hands-clasped-at-chest pose reference; do NOT inherit its different face, shirt collar, cardigan design or slim proportions. Create Eunsu's 'shaking' sprite in the canonical Image 1 style: long black hair with the same side fringe, amber-brown eyes, same thin silver glasses, ivory blouse and navy fitted jacket/skirt. Her brows draw together, mouth slightly parted, shoulders tense, hands lightly clasped near her chest. Restrained fear, not an exaggerated horror face. Fully clothed, neutral visual-novel presentation. Head to mid-thigh framing, centered, head and hands completely inside frame with clean breathing room; no environment, no props, no ground shadow, no text, no border, no checkerboard. Highest supported quality and maximum supported native resolution, portrait 3:4 canvas, suitable for a 1086x1448 delivery derivative. Preserve fine clean alpha around hair and clothing.",
+      "master": "assets/images/characters/eunsu_shaking_v2.png",
+      "delivery": "assets/images/characters/eunsu_shaking_v2.webp",
+      "width": 1086,
+      "height": 1448,
+      "alpha": true,
+      "masterSHA256": "d509115c6871845a544e7dff5ea6a5a19da8b33632d12643099dba7f24ff410d",
+      "masterPreservedByteForByte": true,
+      "webpLossless": true,
+      "references": [
+        "assets/images/characters/eunsu_normal.png",
+        "assets/images/characters/eunsu_shaking.png"
+      ]
+    },
+    {
+      "key": "eunsu_crying",
+      "prompt": "Use case: identity-preserve. Exactly one adult woman visual-novel sprite on a genuinely transparent alpha background. Image 1 is the canonical Eunsu identity and crisp anime painting style: preserve the exact face, amber-brown eyes, long black hair and side fringe, thin silver glasses, pearl earrings, ivory blouse, navy fitted jacket and skirt, and canonical body proportions. Image 2 supplies ONLY the crying expression and one-hand-near-collarbone gesture, not its altered face, shirt collar or cardigan. Change the canonical woman to quietly crying with a few visible tear trails, trembling small mouth and sorrowful brows; one hand rests near her collarbone, the other arm hangs naturally. Keep her fully clothed, outfit neckline unchanged, restrained and nonsexual. Head to mid-thigh, centered on portrait 3:4 canvas, no clipped hair or hands. Clean high quality alpha hair edges. No backdrop, shadow, border, text, watermark or checkerboard. Highest supported quality and maximum supported native resolution. Game delivery is 1086x1448; preserve all original character design details.",
+      "master": "assets/images/characters/eunsu_crying_v2.png",
+      "delivery": "assets/images/characters/eunsu_crying_v2.webp",
+      "width": 1086,
+      "height": 1448,
+      "alpha": true,
+      "masterSHA256": "3f207d714b6279881e47a3687a9630f561d9f6fe918ef6daddc4d3a3d071ce2b",
+      "masterPreservedByteForByte": true,
+      "webpLossless": true,
+      "references": [
+        "assets/images/characters/eunsu_normal.png",
+        "assets/images/characters/eunsu_crying.png"
+      ]
+    },
+    {
+      "key": "riin_pain",
+      "prompt": "Use case: identity-preserve. Exactly one adult woman medical teacher Riin, isolated visual-novel sprite with real transparent alpha. Image 1 is the definitive face, angular thin silver glasses, golden eyes, blue-violet asymmetrical bob with long side bangs, black turtleneck, SINGLE delicate silver chain necklace, white lab coat with pens, black trousers and crisp polished anime shading. Preserve that canonical face, hair hue, outfit and body proportions. Image 2 is ONLY a pose/emotion reference: held-in pain and guilt, clutching a medical clipboard against her torso. Do not copy its magenta hair, different face or extra gold necklaces. Riin looks slightly down, strained brows and a tense small mouth, one small tear at the lower eyelid, shoulders drawn inward; one hand grips the clipboard, the other arm rests at her side. No injury or gore. Fully clothed, neutral nonsexual framing from head to mid-thigh. Portrait 3:4, all hair and hands inside frame, centered with modest transparent margins. No scene, ground shadow, text, logo, checkerboard or border. Highest supported quality and maximum supported native resolution, suitable for 1086x1448 game delivery.",
+      "master": "assets/images/characters/riin_pain_v2.png",
+      "delivery": "assets/images/characters/riin_pain_v2.webp",
+      "width": 1086,
+      "height": 1448,
+      "alpha": true,
+      "masterSHA256": "53616cad05eb21c07f1fc77b89416219d48bf875ce0819a6bb86cfc76a1eaa9e",
+      "masterPreservedByteForByte": true,
+      "webpLossless": true,
+      "references": [
+        "assets/images/characters/riin_normal.png",
+        "assets/images/characters/riin_pain.png"
+      ]
+    },
+    {
+      "key": "riin_relief",
+      "prompt": "Use case: identity-preserve. Exactly one adult woman Riin as an isolated game character sprite on genuine transparent alpha. Image 1 is the canonical identity and rendering style: same golden eyes, angular thin silver glasses, blue-violet asymmetrical bob with side bangs, black turtleneck, SINGLE delicate silver chain necklace, white lab coat with pens and black trousers, unchanged face and body proportions. Image 2 supplies ONLY the relieved expression and relaxed pose with one hand in a trouser pocket; do not copy the different face, magenta hair or extra necklace. Draw the canonical woman after tension eases: shoulders lowered, gentle small relieved smile, a trace of moisture at the eyes, other hand hanging naturally. No clipboard for this expression. Preserve the clean crisp anime linework and shading of image 1. Fully clothed, nonsexual head-to-mid-thigh presentation; portrait 3:4 with modest transparent margins, no clipped hands/hair. No background, shadow, text, watermark, checkerboard or decorative border. Highest supported quality and maximum supported native resolution; final game derivative 1086x1448.",
+      "master": "assets/images/characters/riin_relief_v2.png",
+      "delivery": "assets/images/characters/riin_relief_v2.webp",
+      "width": 1086,
+      "height": 1448,
+      "alpha": true,
+      "masterSHA256": "8897746219094e2a92c390d590a069e42e345a3986c0dc2b75b23e45b7d2ad6a",
+      "masterPreservedByteForByte": true,
+      "webpLossless": true,
+      "references": [
+        "assets/images/characters/riin_normal.png",
+        "assets/images/characters/riin_relief.png"
+      ]
+    },
+    {
+      "key": "ending_resist_records",
+      "prompt": "Use case: illustration-story / compositing. Create one finished cinematic anime visual-novel ending CG by transforming Image 1 into the escape scene. Image 1 establishes the Korean school's exterior emergency stairway, green metal railing and open fire door at night. Image 2 is the exact design reference for adult teacher Eunsu: black hair, amber eyes, silver glasses, pearl earrings, ivory blouse, navy jacket and skirt. Image 3 is the exact face/hair/navy sailor-uniform reference for Seolhwa. Story beat: Eunsu and the first-person protagonist have just passed the emergency exit; Eunsu stands beside the stair railing, carrying an ordinary paper records folder close to her side, glancing back with a tired but determined expression. Seolhwa is small inside the open doorway behind them, smiling quietly and only slightly fading like a recalled memory, not a supernatural glowing monster. Show the protagonist only as one hand in a navy uniform sleeve holding the remaining records in the foreground. Fully clothed, nonsexual, no violence or gore. Faithful to the canonical faces and clothes, high-end clean anime characters integrated with the detailed painted environment. Landscape near 16:9. Keep Eunsu's face, the folder and doorway within the central 55% of the composition so a phone crop remains readable; bottom 20% relatively quiet for dialogue overlay. No text, UI, captions, logos or watermarks. Highest supported quality and maximum supported native resolution, preferably 3840x2160 if supported; game delivery will be 1672x941. One image, not a collage.",
+      "master": "assets/images/cg/ending_resist_records.png",
+      "delivery": "assets/images/cg/ending_resist_records.webp",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "masterSHA256": "2d930fb3d2d8e689e92e9c42102005a7dac16bc2f9ce70b10664a8e358ec7b74",
+      "masterPreservedByteForByte": true,
+      "webpLossless": true,
+      "references": [
+        "assets/images/background/emergency_stair_night.png",
+        "assets/images/characters/eunsu_normal.png",
+        "assets/images/characters/seolhwa_normal.png"
+      ]
+    },
+    {
+      "key": "ending_complicit_signature",
+      "prompt": "Use case: illustration-story / compositing. One polished anime visual-novel ending CG, landscape near 16:9. Image 1 is the teacher office architecture and painted atmosphere reference; change its light to quiet evening lamplight. Image 2 is adult teacher Eunsu's exact face, silver glasses, pearl earrings, long black hair, ivory blouse, navy jacket/skirt identity reference. Image 3 is schoolgirl Sea's face, brown twin ponytails with pink ribbons/star hair clip, green eyes, and ordinary navy school blazer/white shirt/red tie reference. Make a nonsexual psychological-mystery scene: first-person viewpoint across the desk immediately after signing a document. A single natural left hand in a navy uniform sleeve has just set down a pen beside an indistinct signature line on an otherwise unreadable administrative sheet. Eunsu sits beyond the desk with a small restrained approving smile; Sea stands beside the desk in a modest waist-up presentation, smiling faintly. No seductive poses, no exposed legs or body emphasis; all characters fully clothed. Keep both faces and the signature paper clustered in the central 55% for phone cropping. Maintain canonical character design and matching crisp anime rendering, detailed wooden desk and restrained shadows. Do not place readable names, dates, seals, UI or generated lettering in the image; personalized signing remains a separate game interaction. Bottom 20% quiet enough for text overlay. Highest supported quality and maximum supported native resolution, preferably 3840x2160 if supported. Delivery derivative 1672x941. No collage, frame, watermark or graphic horror.",
+      "master": "assets/images/cg/ending_complicit_signature.png",
+      "delivery": "assets/images/cg/ending_complicit_signature.webp",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "masterSHA256": "269deeb4ebe559a470959063d40ce03c501cf1b77e57488310564da97b945e55",
+      "masterPreservedByteForByte": true,
+      "webpLossless": true,
+      "references": [
+        "assets/images/background/teacher_office.png",
+        "assets/images/characters/eunsu_normal.png",
+        "assets/images/characters/sea_normal.png"
+      ]
+    },
+    {
+      "key": "ending_true_new_classroom",
+      "prompt": "Use case: illustration-story. Transform the classroom reference into a distinct peaceful NEW SCHOOL classroom epilogue for an anime visual novel, preserving the project's detailed painterly school-art style but not copying the old school's exact layout. Landscape near 16:9, one single image. First-person seated viewpoint at a clean light wooden desk near an open window. In the central area a natural LEFT hand in a navy uniform sleeve holds a graphite pencil above a sheet of paper, with faint unidentifiable pencil strokes rather than legible names. A plain empty name tag rests next to the page; no readable text. Other clean desks and a green board are softly visible beyond, brighter new surroundings, gentle afternoon daylight, quiet recovery and an ordinary future. No recognizable classmates, no extra people, no ghosts, no cage imagery, no old school gate. Anatomy must clearly show a left hand writing naturally, exactly five fingers, believable pencil grip. Put the hand, pencil, paper and name tag in the middle 50% and middle vertical band so desktop and phone crops retain the meaning; bottom 20% is uncluttered desk for the dialogue UI. Highest supported quality and maximum supported native resolution, preferably 3840x2160 if supported; game delivery is 1672x941. No text, symbols, captions, border or watermark.",
+      "master": "assets/images/cg/ending_true_new_classroom.png",
+      "delivery": "assets/images/cg/ending_true_new_classroom.webp",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "masterSHA256": "0c63fa0e6669d47a8702ab95f9cab817fc7eecc6aa3cc872457f7c0ad036a81b",
+      "masterPreservedByteForByte": true,
+      "webpLossless": true,
+      "references": [
+        "assets/images/background/classroom.png"
+      ]
+    },
+    {
+      "key": "ending_cage_sea_lunch",
+      "prompt": "Use case: illustration-story / compositing. Create one finished nonsexual anime visual-novel CG set in the student council room from Image 1. Image 2 is ONLY Sea's character identity reference: brown twin ponytails, pink hair ribbons and star clip, green eyes, navy school blazer, white shirt, red tie. Present her in a modest standard school uniform with natural proportions, seated across an ordinary wooden meeting table in a waist-up composition; no exposed legs, no body emphasis, no suggestive pose. She has just opened a lunchbox and looks toward the first-person viewer with a small familiar smile. One open lunchbox with rice and side dishes sits between her hands, with an empty place set for the viewer, subtle sense that this routine repeats every day. Warm afternoon light through the same council-room windows, folders and whiteboard in background. The mood appears normal and quietly too perfect, not a dark abandoned classroom. Faithful face and hair design, clean anime linework integrated into detailed painted environment. Landscape near 16:9. Keep Sea's face, both natural hands and the lunchbox in the central 50% of the canvas to survive a portrait center crop; place essential objects above the bottom dialogue-safe 20%. No readable labels, no captions, UI, border, collage, watermark, violence or horror-face. Highest supported quality and maximum supported native resolution, preferably 3840x2160 if supported; final game derivative 1672x941.",
+      "master": "assets/images/cg/ending_cage_sea_lunch.png",
+      "delivery": "assets/images/cg/ending_cage_sea_lunch.webp",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "masterSHA256": "3a774c9bed17f50349c7965b460794a46d412e1ec345f6610bb9a2830e443e16",
+      "masterPreservedByteForByte": true,
+      "webpLossless": true,
+      "references": [
+        "assets/images/background/student_council.png",
+        "assets/images/characters/sea_normal.png"
+      ]
+    }
+  ],
+  "oldAssetsPreserved": true,
+  "model": "Not exposed by built-in tool",
+  "visualReview": {
+    "storyAndGalleryViewports": [
+      "1280x800",
+      "844x390"
+    ],
+    "unrelatedUIViewports": [
+      "390x844",
+      "1280x800"
+    ],
+    "unrelatedUIResult": "Five captures pixel-identical; mobile title border rasterization differs at 18 pixels by at most 2/255 per channel. No visible layout or style changes.",
+    "oldGalleryUnlockIdsPreserved": true,
+    "oldAssetsUnmodified": true,
+    "cgGalleryCount": 8,
+    "notes": [
+      "TRUE CG now depicts the new classroom epilogue; the original dawn-gate PNG remains untouched.",
+      "CAGE Sea route uses the student council lunchbox CG; the original classroom CG remains on the Eunsu route.",
+      "RESIST cast overlay skips the full CG to avoid a duplicate Eunsu sprite.",
+      "Korean dialogue and narration are unchanged; SCENARIO.md background metadata was synchronized."
+    ]
+  },
+  "validation": {
+    "syntaxFiles": 120,
+    "unitTestsPassed": 71,
+    "browserTestsPassed": 134,
+    "browserTestsFailed": 0,
+    "browserCommand": "npm run test:e2e -- --trace off --workers=2",
+    "scenarioSync": {
+      "textEntries": 2069,
+      "choices": 142
+    },
+    "targetedArtTestsPassed": 3
+  }
+}

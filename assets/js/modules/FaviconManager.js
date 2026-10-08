@@ -121,7 +121,7 @@ if (typeof window !== 'undefined') {
         '/assets/js/scenario/speakers_overlays.js' + bust,
         '/assets/js/scenario/causality_overlays.js?v=20260927-context-review',
         '/assets/js/scenario/causality_i18n_overlays.js?v=20261002-full-story-review',
-        '/assets/js/modules/cast_md_sync_overlays.js' + bust,
+        '/assets/js/modules/cast_md_sync_overlays.js?v=20261008-ending-art',
         '/assets/js/modules/GlitchSystemAdvanced.fxfix-mirror.js' + bust,
         '/assets/js/modules/GlitchSystemAdvanced.fxfix-sign.js' + bust,
         '/assets/js/modules/GameEngine.fxfix-choice-clear.js' + bust,

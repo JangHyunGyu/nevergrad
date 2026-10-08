@@ -19763,7 +19763,7 @@ _source: `day5_4_night.js / day5_night.json`_
 ### `day5_ending_resist_22`
 
 _source: `day5_4_night.js / day5_night.json`_
-_배경: `exit_door` / BGM: `ending_bittersweet.mp3`_
+_배경: `ending_resist` / BGM: `ending_bittersweet.mp3`_
 
 **지문**
 ```text
@@ -19784,6 +19784,7 @@ _source: `day5_4_night.js / day5_night.json`_
 ### `day5_ending_resist_24`
 
 _source: `day5_4_night.js / day5_night.json`_
+_배경: `faculty_office`_
 
 **지문**
 ```text
@@ -19941,7 +19942,7 @@ _캐릭터: `sea_cry`_
 ### `day5_ending_cage_sea_6`
 
 _source: `day5_4_night.js / day5_night.json`_
-_배경: `ending_cage`_
+_배경: `ending_cage_sea`_
 
 **지문**
 ```text
@@ -20534,6 +20535,7 @@ _source: `day5_4_night.js / day5_night.json`_
 ### `day5_ending_complicit_9`
 
 _source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit`_
 
 **지문**
 ```text

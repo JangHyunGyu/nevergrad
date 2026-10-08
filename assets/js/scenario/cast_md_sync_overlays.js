@@ -17,7 +17,7 @@
     if (S.day5_ending_escape_1 && S.day5_ending_escape_1.character == null) {
       S.day5_ending_escape_1.character = 'yuna_normal';
     }
-    if (S.day5_ending_resist_22 && S.day5_ending_resist_22.character == null) {
+    if (S.day5_ending_resist_22 && S.day5_ending_resist_22.background !== 'ending_resist' && S.day5_ending_resist_22.character == null) {
       S.day5_ending_resist_22.character = 'eunsu_normal';
     }
     if (S.day5_ending_complicit_1 && S.day5_ending_complicit_1.character == null) {

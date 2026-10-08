@@ -8,7 +8,8 @@
  */
 
 class ChoiceSystem {
-    constructor() {
+    constructor(engine = null) {
+        this.engine = engine;
         this.panel = document.getElementById('choice-panel');
     }
 
@@ -22,6 +23,7 @@ class ChoiceSystem {
      * 제한 시간 내에 고르지 않으면 기본 선택지가 자동 선택됨
      */
     showTimedChoices(choices, labels, timeLimit, defaultIndex, onSelect) {
+        this.hide();
         if (!this.panel) return;
 
         this.panel.innerHTML = '';
@@ -33,12 +35,16 @@ class ChoiceSystem {
         timerEl.textContent = `${timeLimit}`;
         this.panel.appendChild(timerEl);
 
-        let remaining = timeLimit;
+        let remaining = timeLimit * 1000;
+        let lastTick = Date.now();
         let selected = false;
 
-        const timer = setInterval(() => {
-            remaining--;
-            timerEl.textContent = `${remaining}`;
+        const timer = this._timer = setInterval(() => {
+            const now = Date.now(), delta = now - lastTick;
+            lastTick = now;
+            if (this.engine?._isGameplayPaused?.()) return;
+            remaining -= delta;
+            timerEl.textContent = `${Math.max(0, Math.ceil(remaining / 1000))}`;
 
             if (remaining <= 0) {
                 clearInterval(timer);
@@ -48,7 +54,7 @@ class ChoiceSystem {
                     onSelect(defaultIndex);
                 }
             }
-        }, 1000);
+        }, 50);
 
         choices.forEach((choice, i) => {
             const btn = document.createElement('button');
@@ -92,6 +98,8 @@ class ChoiceSystem {
     }
 
     hide() {
+        clearInterval(this._timer);
+        this._timer = null;
         if (this.panel) {
             this.panel.classList.add('hidden');
             this.panel.classList.remove('timed-choice');

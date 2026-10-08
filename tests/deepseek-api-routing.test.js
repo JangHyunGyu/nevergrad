@@ -27,6 +27,22 @@ function jsonResponse(status, body) {
   };
 }
 
+test('request deadline covers stalled headers and stalled response bodies', async () => {
+    for (const phase of ['headers', 'body']) {
+        let signal;
+        const pending = callDeepSeek('review', {
+            openRouterApiKey: 'or-test', timeoutMs: 25,
+            fetchImpl: async (_url, init) => {
+                signal = init.signal;
+                if (phase === 'headers') return new Promise(() => {});
+                return { ok: true, text: () => new Promise(() => {}) };
+            }
+        });
+        await assert.rejects(pending, /timed out/);
+        assert.equal(signal.aborted, true);
+    }
+});
+
 test('Nevergrad tools use Gemma 4 31B through Venice without fallback', async () => {
   const calls = [];
   const text = await callDeepSeek('translate', {

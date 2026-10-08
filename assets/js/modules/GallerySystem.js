@@ -32,14 +32,14 @@ class GallerySystem {
             zh: '直面真相之后，毕业了。'
         },
         'RESIST END': {
-            ko: '은수와 함께 교실을 나와 순환을 끊었다.',
-            en: 'You resisted to the end, but the classroom never let go.',
-            ja: '最後まで抵抗したが、教室は離してくれなかった。',
-            es: 'Resististe hasta el final, pero el aula nunca te soltó.',
-            fr: "Tu as resiste jusqu'au bout, mais la classe ne t'a pas libere.",
-            de: 'Du hast bis zum Ende Widerstand geleistet, aber das Klassenzimmer liess nicht los.',
-            pt: 'Voce resistiu ate o fim, mas a sala nunca soltou voce.',
-            zh: '和恩秀一起走出教室，切断了循环。'
+            ko: '은수와 함께 교실을 나와 기록을 넘겼다.',
+            en: 'You left the classroom with Ms. Eunsu and handed over the records.',
+            ja: 'ウンス先生と教室を出て、記録を引き渡した。',
+            es: 'Saliste del aula con la profesora Eunsu y entregaste los registros.',
+            fr: 'Tu as quitté la classe avec Mme Eunsu et remis les dossiers.',
+            de: 'Du hast mit Frau Eunsu das Klassenzimmer verlassen und die Unterlagen übergeben.',
+            pt: 'Você saiu da sala com a professora Eunsu e entregou os registros.',
+            zh: '和恩秀老师一起走出教室，交出了记录。'
         },
         'FORGET END': {
             ko: '모든 것을 잊고 열네 번째 등교를 시작했다.',
@@ -736,7 +736,7 @@ class GallerySystem {
         let parsed = null;
 
         try {
-            const raw = localStorage.getItem(GallerySystem.STORAGE_KEY);
+            const raw = this.game.save._getItem(GallerySystem.STORAGE_KEY);
             if (raw) parsed = JSON.parse(raw);
         } catch (e) {
             console.warn('[Gallery] Failed to load gallery data:', e);
@@ -758,7 +758,7 @@ class GallerySystem {
 
     _save() {
         try {
-            localStorage.setItem(GallerySystem.STORAGE_KEY, JSON.stringify(this.data));
+            this.game.save._setItem(GallerySystem.STORAGE_KEY, JSON.stringify(this.data));
         } catch (e) {
             console.warn('[Gallery] Failed to save gallery data:', e);
         }
@@ -766,13 +766,13 @@ class GallerySystem {
 
     _saveLegacyEndings() {
         try {
-            localStorage.setItem(GallerySystem.LEGACY_ENDING_STORAGE_KEY, JSON.stringify(this.data.endings || []));
+            this.game.save._setItem(GallerySystem.LEGACY_ENDING_STORAGE_KEY, JSON.stringify(this.data.endings || []));
         } catch (_) {}
     }
 
     _loadLegacyEndings() {
         try {
-            const raw = localStorage.getItem(GallerySystem.LEGACY_ENDING_STORAGE_KEY);
+            const raw = this.game.save._getItem(GallerySystem.LEGACY_ENDING_STORAGE_KEY);
             const parsed = raw ? JSON.parse(raw) : [];
             return Array.isArray(parsed) ? parsed : [];
         } catch {

@@ -525,7 +525,7 @@ for (const lang of ['ko', ...langs]) {
 // ═══════════════════════════════════════════
 // CSS 이미지 참조 검증
 // ═══════════════════════════════════════════
-const cssFiles = ['assets/css/style.css', 'assets/css/dialogue.css', 'assets/css/glitch.css'];
+const cssFiles = fs.readdirSync(path.join(ROOT, 'assets/css')).filter(file => file.endsWith('.css')).map(file => `assets/css/${file}`);
 for (const cssFile of cssFiles) {
     const cssPath = path.join(ROOT, cssFile);
     if (!fs.existsSync(cssPath)) continue;
@@ -679,6 +679,10 @@ if (fs.existsSync(koHtmlPath)) {
     const koHtml = readHtml(koHtmlPath);
     const htmlIds = new Set([...koHtml.matchAll(/id="([^"]+)"/g)].map(m => m[1]));
     const dynamicDomIds = new Set(['save-toast', 'mirror-reflection', 'mirror-player-reflection', 'admin-panel-overlay', 'btn-archive']);
+    for (const file of fs.readdirSync(path.join(ROOT, 'assets/js/modules')).filter(file => file.endsWith('.js'))) {
+        const source = fs.readFileSync(path.join(ROOT, 'assets/js/modules', file), 'utf8');
+        for (const match of source.matchAll(/\.id\s*=\s*['"]([^'"]+)['"]/g)) dynamicDomIds.add(match[1]);
+    }
 
     // JS에서 getElementById로 참조하는 ID 수집
     const modulesDir = path.join(ROOT, 'assets/js/modules');
@@ -902,25 +906,10 @@ for (const lang of ['ko', ...langs]) {
 const playInfo = [];
 
 // ── State Simulator (mirrors StateManager) ──
-class StateSim {
-    constructor() { this.reset(); }
-    reset() {
-        this.currentDay = 1; this.currentSlot = 'morning'; this.mode = 'romance';
-        this.flags = {}; this.stats = {};
-        for (const [id, init] of Object.entries(INITIAL_STATS)) this.stats[id] = { ...init };
-    }
-    hasFlag(f) { return !!this.flags[f]; }
-    setFlag(f) { this.flags[f] = true; }
-    setFlags(arr) { if (Array.isArray(arr)) arr.forEach(f => this.setFlag(f)); }
-    clearFlag(f) { delete this.flags[f]; }
-    changeStat(cid, stat, d) {
-        if (!this.stats[cid]) return;
-        this.stats[cid][stat] = Math.max(-100, Math.min(100, (this.stats[cid][stat]||0) + d));
-    }
-    getDisplayAffinity(cid) {
-        const s = this.stats[cid]; if (!s) return 0;
-        return this.mode === 'romance' ? Math.round(s.affinity*0.6 + s.danger*0.4) : s.affinity;
-    }
+const RuntimeStateManager = new Function('CONFIG', 'INITIAL_STATS',
+    fs.readFileSync(path.join(ROOT, 'assets/js/modules/StateManager.js'), 'utf8') + '\nreturn StateManager;')(CONFIG, INITIAL_STATS);
+class StateSim extends RuntimeStateManager {
+    reset() { this.startNewRun(); }
     checkCondition(c) {
         if (!c) return true;
         return Array.isArray(c) ? c.every(f => this.hasFlag(f)) : this.hasFlag(c);
@@ -929,10 +918,7 @@ class StateSim {
         if (scene.setFlag) this.setFlag(scene.setFlag);
         if (scene.setFlags) this.setFlags(scene.setFlags);
         if (scene.clearFlags) scene.clearFlags.forEach(f => this.clearFlag(f));
-        if (scene.stats) {
-            for (const [cid, ch] of Object.entries(scene.stats))
-                for (const [st, v] of Object.entries(ch)) this.changeStat(cid, st, v);
-        }
+        if (scene.setMode) this.mode = CONFIG.STAT_MODES[scene.setMode] || String(scene.setMode).toLowerCase();
         if (scene.changeDay) this.currentDay = scene.changeDay;
         if (scene.changeSlot) this.currentSlot = scene.changeSlot;
         if (scene.triggerGenreShift) this.mode = 'thriller';
@@ -1182,16 +1168,26 @@ for (const sid of reachable) {
 // ═══════════════════════════════════════════
 {
     const endingDist = {};
+    const stops = {};
+    let randomState = 0x6e657665;
+    const random = () => { randomState = (Math.imul(randomState, 1664525) + 1013904223) >>> 0; return randomState / 0x100000000; };
     for (let i = 0; i < 100; i++) {
         const st = new StateSim();
-        let cur = START_SCENE; const vis = new Set(); let steps = 0;
+        let cur = START_SCENE; const vis = new Set(); let steps = 0; let completed = false;
+        const route = [];
         while (cur && steps < 3000 && !vis.has(cur)) {
             vis.add(cur);
             const entry = allScenes[cur]; if (!entry) break;
             const sc = entry.scene; st.applyScene(sc);
+            route.push(cur);
+            if (sc.redirect || sc.returnToTitle) {
+                const reason = sc.redirect || 'title';
+                stops[reason] = (stops[reason] || 0) + 1;
+                completed = true; break;
+            }
             if (sc.endingTitle || sc.cageLoop) {
                 const tag = sc.endingTitle || 'CAGE LOOP';
-                endingDist[tag] = (endingDist[tag]||0) + 1; break;
+                endingDist[tag] = (endingDist[tag]||0) + 1; completed = true; break;
             }
             let nx = null;
             if (sc.branches) nx = resolveBranch(sc.branches, st);
@@ -1203,20 +1199,26 @@ for (const sid of reachable) {
                     return true;
                 });
                 if (avail.length) {
-                    const c = avail[Math.floor(Math.random()*avail.length)];
+                    const c = avail[Math.floor(random()*avail.length)];
                     if (c.stats) for (const [cid,ch] of Object.entries(c.stats))
                         for (const [s,v] of Object.entries(ch)) st.changeStat(cid,s,v);
                     if (c.setFlags) st.setFlags(c.setFlags);
+                    if (c.returnToTitle) { stops.title = (stops.title || 0) + 1; completed = true; break; }
                     nx = c.next;
                 }
             }
             if (!nx && sc.next) nx = sc.next;
             if (!nx && sc.freeTalkNext) nx = sc.freeTalkNext;
+            if (!nx && sc.interaction?.next) {
+                st.setFlags(sc.interaction.setFlags);
+                nx = sc.interaction.next;
+            }
             cur = nx; steps++;
         }
+        if (!completed) errors.push(`[RANDOM_STOP] seed=0x6e657665 run=${i} scene=${cur} steps=${steps} tail=${route.slice(-8).join(' -> ')}`);
     }
     const dist = Object.entries(endingDist).sort((a,b)=>b[1]-a[1]).map(([e,c])=>`${e}:${c}`).join(' ');
-    playInfo.push(`Random 100 runs: ${dist || 'none reached'}`);
+    playInfo.push(`Seeded 100 runs (0x6e657665): ${dist || 'none reached'}; other exits: ${JSON.stringify(stops)}`);
 }
 
 // ═══════════════════════════════════════════

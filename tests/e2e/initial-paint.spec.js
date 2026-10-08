@@ -17,7 +17,7 @@ for (const { lang, width, height } of cases) {
         const stylesHeld = new Promise(resolve => { releaseStyles = resolve; });
         let requestedStyles = false;
         await page.route(/^https:\/\//, route => route.abort());
-        await page.route('**/assets/css/style.css', async route => {
+        await page.route('**/assets/css/style.css*', async route => {
             requestedStyles = true;
             await stylesHeld;
             await route.continue();

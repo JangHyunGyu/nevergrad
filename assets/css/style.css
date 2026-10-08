@@ -2,7 +2,7 @@
  * style.css — Nevergrad (local parts; no CDN)
  */
 @import url("./style-part1.css");
-@import url("./style-part2.css");
+@import url("./style-part2.css?v=20261008-runtime-recovery");
 @import url("./style-part3.css");
 @import url("./style-part4.css");
 

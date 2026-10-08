@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-08",
+  "baselineCommit": "d6652846dec901c626a8f79051df4d19945e5a9e",
+  "scope": [
+    "Restore inherited backgrounds and themes, including legacy slots",
+    "Reset archive mode on normal loads and cancel run work on title exit",
+    "Pause timed choices and dialogue while game menus are open",
+    "Connect TRUE END postcredits and CAGE END loop through the existing ending control",
+    "Distinguish persistent saves from temporary memory storage and retain gallery fallback",
+    "Normalize malformed save and meta fields",
+    "Cancel stale audio loads and stop only the captured fading sources",
+    "Refresh recovered translations without advancing past missing text",
+    "Align RESIST END gallery descriptions with the story in eight languages",
+    "Keep text-tool deadlines active through response body reads",
+    "Reuse runtime state in validation, seed random paths and report unexpected stops"
+  ],
+  "koreanCopyReview": {
+    "skill": "humanize-korean v2.3-codex",
+    "run": "_workspace/2026-10-08-001-ea31",
+    "route": "light",
+    "review": "Independent monolith review followed by verify_gates.py",
+    "selfChecksPassed": 6,
+    "gateExitCode": 0,
+    "rewriteChangePercent": 0,
+    "result": "Reviewed each message for meaning, anchors, register, translationese and artificial expressions; no stylistic edits needed",
+    "entries": [
+      {
+        "key": "saveTemporary",
+        "original": null,
+        "draft": "이 탭에만 저장했어요. 새로고침하거나 탭을 닫으면 사라져요.",
+        "final": "이 탭에만 저장했어요. 새로고침하거나 탭을 닫으면 사라져요."
+      },
+      {
+        "key": "saveFailed",
+        "original": null,
+        "draft": "저장하지 못했어요. 다시 시도해 주세요.",
+        "final": "저장하지 못했어요. 다시 시도해 주세요."
+      },
+      {
+        "key": "GallerySystem.ENDING_DESCRIPTIONS.RESIST END.ko",
+        "original": "은수와 함께 교실을 나와 순환을 끊었다.",
+        "factualCorrection": "Match the escape and records in day5_ending_resist_21 through day5_ending_resist_subtitle; remove the unsupported claim that the entire cycle ended",
+        "draft": "은수와 함께 교실을 나와 기록을 넘겼다.",
+        "final": "은수와 함께 교실을 나와 기록을 넘겼다."
+      }
+    ],
+    "scenarioSourceChanged": false,
+    "scenarioSync": "2069 text entries and 142 choices remain synchronized"
+  },
+  "visualVerification": {
+    "viewports": ["390x844", "1280x800"],
+    "screens": ["title", "story", "pause menu"],
+    "baseline": "Original HEAD assets served through browser route overrides, with CSS animations disabled during capture",
+    "result": "No visible design change: five captures pixel-identical; mobile title differs at 18 border pixels by at most 2/255 per channel (rasterization noise)",
+    "intentionalBehaviorCorrections": ["Restored saved backgrounds and correct run theme", "Ending continue action", "Temporary-save failure messages", "Corrected RESIST END descriptions"],
+    "artifacts": "D:/workspace/_workspace/nevergrad-fixes-20261008/visual-result.json"
+  },
+  "tests": {
+    "syntaxFiles": 119,
+    "unitTests": 71,
+    "browserTestsPassed": 131,
+    "browserTestsFailed": 0,
+    "browserCommand": "npm run test:e2e -- --trace off --workers=2",
+    "regressionScenarios": 8,
+    "seededPlaythroughs": 100,
+    "seed": "0x6e657665",
+    "unexpectedSimulationStops": 0,
+    "staticWarnings": 12,
+    "notes": "Remaining warnings concern pre-existing extra i18n keys, dynamically inserted CSS and static DOM references"
+  }
+}

@@ -115,6 +115,7 @@ class SceneRenderer {
 
     setBackground(src) {
         if (!this.bgLayer || !src) return;
+        this.onBackgroundChange?.(src);
 
         const requestId = ++this._backgroundRequestId;
         const candidates = this._getBackgroundCandidates(src);

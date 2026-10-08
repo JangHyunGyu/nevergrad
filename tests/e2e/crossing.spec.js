@@ -11,6 +11,7 @@ async function boot(page, lang = 'ko') {
   await page.waitForFunction(() => document.querySelector('#cross-world img')?.complete);
 }
 async function audit(page) {
+  await page.waitForFunction(() => document.querySelector('#cross-world img')?.complete);
   const result = await page.evaluate(() => {
     const root = document.querySelector('#cross-world');
     return {width:innerWidth,height:innerHeight,scroll:document.documentElement.scrollWidth,

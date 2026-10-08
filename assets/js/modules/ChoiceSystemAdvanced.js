@@ -133,7 +133,8 @@ class ChoiceSystemAdvanced {
             }
 
             // 타이머 시작
-            const startTime = Date.now();
+            let lastTick = Date.now();
+            this.elapsedMs = 0;
             const barFill = this.timerBar.querySelector('.timer-bar-fill');
 
             this._timerInterval = this._setInterval(() => {
@@ -143,7 +144,11 @@ class ChoiceSystemAdvanced {
                     return;
                 }
 
-                const elapsed = Date.now() - startTime;
+                const now = Date.now();
+                const delta = now - lastTick;
+                lastTick = now;
+                if (this.engine?._isGameplayPaused?.()) return;
+                const elapsed = this.elapsedMs += delta;
                 const remaining = Math.max(0, timeMs - elapsed);
                 const progress = remaining / timeMs;
 

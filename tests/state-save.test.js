@@ -78,6 +78,22 @@ test('deserialize merges old saves over current stat defaults', () => {
     assert.equal(state.stats.riin.affinity, 15);
 });
 
+test('malformed optional save fields normalize before gameplay uses them', () => {
+    const { context, run } = loadRuntime({ localStorage: createStorage() });
+    run('assets/js/modules/SaveManager.js', 'globalThis.SaveManager = SaveManager;');
+    const state = new context.StateManager();
+    state.deserialize({ currentDay: 4, currentScene: 'day4_test', evidence: {}, flags: [],
+        stats: { sea: { affinity: 'broken' } }, mode: 'thriller', currentTheme: 'romance' });
+    assert.equal(state.addEvidence({ id: 'proof' }), true);
+    assert.equal(state.stats.sea.affinity, 15);
+    assert.equal(state.currentTheme, 'thriller');
+    const save = new context.SaveManager(state);
+    save._setItem(save.META_KEY, JSON.stringify({ endingsSeen: null, playCount: 'broken' }));
+    assert.doesNotThrow(() => save.recordEnding('TRUE'));
+    assert.equal(save.getMeta().playCount, 1);
+    assert.equal(save.hasSeenEnding('TRUE'), true);
+});
+
 test('SaveManager rejects malformed slots and accepts valid legacy saves', () => {
     const localStorage = createStorage();
     const { context, run } = loadRuntime({ localStorage });
@@ -121,7 +137,8 @@ test('SaveManager keeps working when localStorage is null, throws or rejects wri
             deserialize(data) { loaded = data; }
         });
         assert.doesNotThrow(() => manager.save(), `${label}: save must not throw`);
-        assert.equal(manager.saveToSlot(3), true, `${label}: slot save falls back to memory`);
+        assert.equal(manager.saveToSlot(3), false, `${label}: temporary saves must not report persistence`);
+        assert.equal(manager.lastSaveStatus, 'memory');
         assert.equal(manager.load(), true, `${label}: autosave readable from memory`);
         assert.equal(loaded.currentScene, 'day2_memory');
         assert.doesNotThrow(() => manager.recordEnding('TRUE'), `${label}: recordEnding`);

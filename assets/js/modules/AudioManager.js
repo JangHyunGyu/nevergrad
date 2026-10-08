@@ -57,6 +57,9 @@ class AudioManager {
         this._currentBGM = null;
         this._pendingBGM = null;
         this._bgmRequestId = 0;
+        this._sfxGeneration = 0;
+        this._sfxStops = new Map();
+        this._ambientRequestId = 0;
         /** @type {string|null} 현재 재생 중인 환경음 파일명 */
         this._currentAmbient = null;
         /** @type {boolean} AudioContext가 unlock 되었는지 */
@@ -319,6 +322,7 @@ class AudioManager {
         const now = this.ctx.currentTime;
 
         // 현재 활성 슬롯의 반대 슬롯에 새 BGM 로드
+        [this.bgmGainA, this.bgmGainB].forEach(gain => gain.gain.cancelScheduledValues(now));
         if (this._activeSlotA) {
             // A가 현재 재생 중 → B에 새 곡 로드
             this._stopSource(this.bgmSourceB);
@@ -339,9 +343,10 @@ class AudioManager {
             this.bgmSourceB.start(0);
 
             // 페이드아웃 완료 후 A 소스 정리
+            const oldSource = this.bgmSourceA;
             this._later(() => {
-                this._stopSource(this.bgmSourceA);
-                this.bgmSourceA = null;
+                this._stopSource(oldSource);
+                if (this.bgmSourceA === oldSource) this.bgmSourceA = null;
             }, (immediate ? 0 : fadeOut) * 1000 + 100);
 
         } else {
@@ -363,9 +368,10 @@ class AudioManager {
 
             this.bgmSourceA.start(0);
 
+            const oldSource = this.bgmSourceB;
             this._later(() => {
-                this._stopSource(this.bgmSourceB);
-                this.bgmSourceB = null;
+                this._stopSource(oldSource);
+                if (this.bgmSourceB === oldSource) this.bgmSourceB = null;
             }, (immediate ? 0 : fadeOut) * 1000 + 100);
         }
 
@@ -386,16 +392,18 @@ class AudioManager {
 
         [this.bgmGainA, this.bgmGainB].forEach(gain => {
             if (gain) {
+                gain.gain.cancelScheduledValues(now);
                 gain.gain.setValueAtTime(gain.gain.value, now);
                 gain.gain.linearRampToValueAtTime(0, now + fadeOut);
             }
         });
 
+        const sourceA = this.bgmSourceA, sourceB = this.bgmSourceB;
         const stopSources = () => {
-            this._stopSource(this.bgmSourceA);
-            this._stopSource(this.bgmSourceB);
-            this.bgmSourceA = null;
-            this.bgmSourceB = null;
+            this._stopSource(sourceA);
+            this._stopSource(sourceB);
+            if (this.bgmSourceA === sourceA) this.bgmSourceA = null;
+            if (this.bgmSourceB === sourceB) this.bgmSourceB = null;
         };
         if (fadeOut <= 0) stopSources();
         else this._later(stopSources, fadeOut * 1000 + 100);
@@ -448,9 +456,10 @@ class AudioManager {
     async playSFX(filename, options = {}) {
         if (!this.ctx) return;
 
+        const generation = this._sfxGeneration, stop = this._sfxStops.get(filename);
         const path = `assets/audio/sfx/${filename}`;
         const buffer = await this.loadBuffer(path);
-        if (!buffer) return;
+        if (!buffer || !this.ctx || generation !== this._sfxGeneration || stop !== this._sfxStops.get(filename)) return;
 
         const source = this.ctx.createBufferSource();
         source.buffer = buffer;
@@ -494,6 +503,8 @@ class AudioManager {
      * @param {number} [fadeOut=0.5] - 페이드아웃 시간 (초)
      */
     stopSFX(filename = null, fadeOut = 0.5) {
+        if (filename === null) { this._sfxGeneration++; this._sfxStops.clear(); }
+        else this._sfxStops.set(filename, (this._sfxStops.get(filename) || 0) + 1);
         if (!this.ctx) return;
         const now = this.ctx.currentTime;
         const targets = [];
@@ -526,9 +537,10 @@ class AudioManager {
         if (!this.ctx) return;
         if (this._currentAmbient === filename) return;
 
+        const requestId = ++this._ambientRequestId;
         const path = `assets/audio/bgm/${filename}`; // ambient도 bgm 폴더 내
         const buffer = await this.loadBuffer(path);
-        if (!buffer) return;
+        if (!buffer || !this.ctx || requestId !== this._ambientRequestId) return;
 
         const now = this.ctx.currentTime;
 
@@ -553,6 +565,7 @@ class AudioManager {
      * @param {number} [fadeOut=1.0]
      */
     stopAmbient(fadeOut = 1.0) {
+        this._ambientRequestId++;
         if (!this.ctx || !this.ambSource) return;
         const now = this.ctx.currentTime;
 
@@ -817,9 +830,10 @@ class AudioManager {
         if (!this.ctx) return;
 
         const resolvedFilename = /\.[^.]+$/.test(filename) ? filename : `${filename}.mp3`;
+        const generation = this._sfxGeneration, stop = this._sfxStops.get(resolvedFilename);
         const path = `assets/audio/sfx/${resolvedFilename}`;
         const buffer = await this.loadBuffer(path);
-        if (!buffer) return;
+        if (!buffer || !this.ctx || generation !== this._sfxGeneration || stop !== this._sfxStops.get(resolvedFilename)) return;
 
         const source = this.ctx.createBufferSource();
         source.buffer = buffer;

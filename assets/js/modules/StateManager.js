@@ -23,6 +23,7 @@ class StateManager {
         this.currentSlot = "morning"; // morning, lunch, afterschool, night
         this.currentScene = "";
         this.currentBGM = null;
+        this.currentBackground = null;
 
         // 장르 모드 (romance → thriller)
         this.mode = CONFIG.STAT_MODES.ROMANCE;
@@ -291,6 +292,7 @@ class StateManager {
             currentSlot: this.currentSlot,
             currentScene: this.currentScene,
             currentBGM: this.currentBGM,
+            currentBackground: this.currentBackground,
             mode: this.mode,
             glitchLevel: this.glitchLevel,
             stats: JSON.parse(JSON.stringify(this.stats)),
@@ -304,11 +306,26 @@ class StateManager {
 
     deserialize(data) {
         if (!data) return;
+        const record = value => value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+        data = { ...record(data) };
+        data.playerName = typeof data.playerName === 'string' ? data.playerName : '';
+        data.flags = Object.fromEntries(Object.entries(record(data.flags)).filter(([, value]) => value === true));
+        data.evidence = Array.isArray(data.evidence)
+            ? data.evidence.filter(item => item && typeof item.id === 'string').map(item => ({ ...item })) : [];
+        data.chatMemories = record(data.chatMemories);
+        data.stats = Object.fromEntries(Object.entries(record(data.stats)).map(([id, stats]) => [id,
+            Object.fromEntries(Object.entries(record(stats)).filter(([, value]) => Number.isFinite(value)))]));
+        data.analytics = record(data.analytics);
+        data.mode = Object.values(CONFIG.STAT_MODES).includes(data.mode) ? data.mode : CONFIG.STAT_MODES.ROMANCE;
+        data.currentTheme = data.mode === CONFIG.STAT_MODES.THRILLER && data.currentTheme === 'romance'
+            ? 'thriller' : (CONFIG.THEMES[data.currentTheme] ? data.currentTheme : data.mode);
+        data.currentSlot = ['morning', 'lunch', 'afterschool', 'night'].includes(data.currentSlot) ? data.currentSlot : 'morning';
         this.playerName = data.nameRaw ? (data.playerName || "") : StateManager.decodeLegacyName(data.playerName);
         this.currentDay = data.currentDay || 1;
         this.currentSlot = data.currentSlot || "morning";
         this.currentScene = data.currentScene || "";
         this.currentBGM = data.currentBGM || null;
+        this.currentBackground = typeof data.currentBackground === 'string' ? data.currentBackground : null;
         this.mode = data.mode || CONFIG.STAT_MODES.ROMANCE;
         this.glitchLevel = data.glitchLevel || CONFIG.GLITCH_LEVELS.NONE;
         this.flags = data.flags || {};

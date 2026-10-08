@@ -110,6 +110,7 @@ class DialogueSystem {
         const speed = options.typingSpeed || CONFIG.TYPING_SPEED;
 
         this._typeTimer = setInterval(() => {
+            if (this.isPaused?.()) return;
             if (idx < plainText.length) {
                 if (this.textEl) {
                     // 순수 텍스트 idx 글자까지 잘라서 보여줘야 하지만,
@@ -216,6 +217,7 @@ class DialogueSystem {
      * @param {number} [options.messengerDelay] - 인디케이터 표시 시간 ms (기본: 1200)
      */
     typeMessenger(name, text, onComplete = null, options = {}) {
+        this.cancel();
         const delay = options.messengerDelay || 1200;
 
         if (this.nameEl) this.nameEl.textContent = name;
@@ -248,5 +250,15 @@ class DialogueSystem {
                 unskippable: !!options.unskippable
             });
         }, delay);
+    }
+
+    cancel() {
+        clearInterval(this._typeTimer);
+        clearTimeout(this._messengerTimer);
+        this._typeTimer = null;
+        this._messengerTimer = null;
+        this._onComplete = null;
+        this.isTyping = false;
+        this.textEl?.classList.remove('messenger-typing');
     }
 }

@@ -87,27 +87,36 @@ async function requestRoute(route, prompt, options) {
   adapter.applyPayload(payload, { wantsJson });
 
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), options.timeoutMs || 180000);
+  let timeout;
+  const deadline = new Promise((_, reject) => {
+    timeout = setTimeout(() => {
+      controller.abort();
+      reject(new Error('Text model request timed out'));
+    }, options.timeoutMs || 180000);
+  });
   let response;
+  let responseText;
   try {
-    response = await options.fetchImpl(route.endpoint, {
-      method: 'POST',
-      headers: {
-        authorization: `Bearer ${route.apiKey}`,
-        'content-type': 'application/json',
-        ...(route.provider === 'openrouter' ? {
-          'HTTP-Referer': 'https://nevergrad.archerlab.dev',
-          'X-Title': 'Nevergrad Text Model Tools',
-        } : {}),
-      },
-      signal: controller.signal,
-      body: JSON.stringify(payload),
-    });
+    responseText = await Promise.race([deadline, (async () => {
+      response = await options.fetchImpl(route.endpoint, {
+        method: 'POST',
+        headers: {
+          authorization: `Bearer ${route.apiKey}`,
+          'content-type': 'application/json',
+          ...(route.provider === 'openrouter' ? {
+            'HTTP-Referer': 'https://nevergrad.archerlab.dev',
+            'X-Title': 'Nevergrad Text Model Tools',
+          } : {}),
+        },
+        signal: controller.signal,
+        body: JSON.stringify(payload),
+      });
+      return await response.text();
+    })()]);
   } finally {
     clearTimeout(timeout);
   }
 
-  const responseText = await response.text();
   let data;
   try {
     data = responseText ? JSON.parse(responseText) : {};

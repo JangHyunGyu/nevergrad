@@ -30,6 +30,7 @@ class SaveManager {
         this.META_KEY = 'nevergrad_meta';
         this.CHOICES_KEY = 'nevergrad_choices';
         this.MAX_SLOTS = 9;
+        this.lastSaveStatus = null;
     }
 
     // =========================================================================
@@ -81,10 +82,13 @@ class SaveManager {
 
     /** @private */
     _removeItem(key) {
-        this._memoryStore().delete(key);
+        this._memoryStore().set(key, null);
         try {
             const store = this._persistentStorage();
-            if (store && typeof store.removeItem === 'function') store.removeItem(key);
+            if (store && typeof store.removeItem === 'function') {
+                store.removeItem(key);
+                this._memoryStore().delete(key);
+            }
         } catch (_) { /* 무시 */ }
     }
 
@@ -135,9 +139,11 @@ class SaveManager {
                 currentScene: gameData.currentScene
             };
             const key = this._slotKey(slotIndex);
-            this._setItem(key, JSON.stringify(slotData));
-            return true;
+            const persisted = this._setItem(key, JSON.stringify(slotData));
+            this.lastSaveStatus = persisted ? 'persistent' : 'memory';
+            return persisted;
         } catch (e) {
+            this.lastSaveStatus = 'failed';
             console.error('[SaveManager] Save to slot', slotIndex, 'failed:', e);
             return false;
         }
@@ -261,7 +267,15 @@ class SaveManager {
         try {
             const raw = this._getItem(this.META_KEY);
             if (!raw) return this._defaultMeta();
-            return { ...this._defaultMeta(), ...JSON.parse(raw) };
+            const data = JSON.parse(raw);
+            if (!data || typeof data !== 'object') return this._defaultMeta();
+            const endings = ['TRUE', 'ESCAPE', 'RESIST', 'CAGE', 'FORGET', 'GHOST', 'COMPLICIT'];
+            return {
+                playCount: Number.isInteger(data.playCount) && data.playCount >= 0 ? data.playCount : 0,
+                endingsSeen: Array.isArray(data.endingsSeen) ? [...new Set(data.endingsSeen.filter(value => endings.includes(value)))] : [],
+                lastEnding: endings.includes(data.lastEnding) ? data.lastEnding : null,
+                lastClearTime: Number.isFinite(data.lastClearTime) ? data.lastClearTime : 0
+            };
         } catch {
             return this._defaultMeta();
         }
@@ -343,7 +357,8 @@ class SaveManager {
     getChoiceHistory() {
         try {
             const raw = this._getItem(this.CHOICES_KEY);
-            return raw ? JSON.parse(raw) : {};
+            const parsed = raw ? JSON.parse(raw) : {};
+            return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
         } catch {
             return {};
         }

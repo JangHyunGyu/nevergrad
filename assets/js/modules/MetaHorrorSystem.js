@@ -523,7 +523,7 @@ class MetaHorrorSystem {
         return this._pickLocalized({
             ko: {
                 label: '[외부 반출 금지]',
-                sub: '화면으로 돌아오면 내용이 다시 표시됩니다.'
+                sub: '이 화면으로 돌아오면 내용이 다시 보입니다.'
             },
             en: {
                 label: '[EXTERNAL EXPORT PROHIBITED]',

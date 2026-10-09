@@ -63,7 +63,7 @@ class I18nManager {
             // (없는 경로가 200+HTML로 오는 SPA 폴백은 JSON 파싱 단계에서 실패로 잡힌다.)
             const loadFile = async (langCode, slot) => {
                 const filename = `day${day}${slot}.json`;
-                const url = `${I18nManager.BASE}assets/js/i18n/${langCode}/${filename}?v=20261008-scene-media`;
+                const url = `${I18nManager.BASE}assets/js/i18n/${langCode}/${filename}?v=20261009-ko-voice`;
                 const maxAttempts = 3;
                 for (let attempt = 1; attempt <= maxAttempts; attempt++) {
                     try {
@@ -264,7 +264,7 @@ class I18nManager {
             dayFormat: "{day}일차 - {slot}",
             slots: { morning: "아침", lunch: "점심", afterschool: "방과 후", night: "밤" },
             galleryTitle: "엔딩 갤러리", galleryBack: "돌아가기", galleryProgress: "달성률",
-            saveComplete: "저장 완료", loadFailed: "저장 데이터를 불러올 수 없습니다.",
+            saveComplete: "저장 완료", loadFailed: "저장 데이터를 불러오지 못했어요.",
             slotAuto: "AUTO", slotEmpty: "빈 슬롯", slotOldFormat: "이전 저장",
             slotOverwrite: "덮어쓰시겠습니까?", slotYes: "예", slotNo: "아니오",
             binauralActivated: "🎧 바이노럴 모드 — 이어폰 권장",

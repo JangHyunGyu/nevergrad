@@ -2792,17 +2792,17 @@ class GlitchSystemAdvanced {
                 zh: '那个笑容，好像在哪里见过。又好像没有。'
             }),
             'day2_morning_gate_1': this._pickLocalized({
-                ko: '세아의 움직임이 낯익다. 기분 탓이겠지.',
-                en: "...Sea's movement feels strangely familiar. It must be my imagination.",
-                ja: '...セアの動きが妙に見覚えある。気のせいだろう。',
-                es: '...El movimiento de Sea se siente extrañamente familiar. Debe ser mi imaginación.',
-                fr: "...Le geste de Sea me semble étrangement familier. C'est sûrement mon imagination.",
-                de: '...Seas Bewegung kommt mir seltsam vertraut vor. Das bilde ich mir sicher nur ein.',
-                pt: '...O movimento da Sea parece estranhamente familiar. Deve ser coisa da minha cabeça.',
-                zh: '世雅的动作看着眼熟。应该是错觉吧。'
+                ko: '세아 걷는 게 낯익어. 기분 탓이겠지.',
+                en: "...The way Sea walks feels familiar. Must be my imagination.",
+                ja: '……セアの歩き方が見覚えある。気のせいだろう。',
+                es: '...La forma de caminar de Sea me resulta familiar. Será cosa mía.',
+                fr: '...La façon de marcher de Sea me dit quelque chose. Je dois me faire des idées.',
+                de: '...Wie Sea geht, kommt mir bekannt vor. Ich bilde mir das sicher ein.',
+                pt: '...O jeito da Sea andar parece familiar. Deve ser coisa da minha cabeça.',
+                zh: '世雅走路的样子看着眼熟。大概是错觉吧。'
             }),
             'day3_after_riin_drink': this._pickLocalized({
-                ko: '이 맛이 익숙하다. 마셔 본 적도 없는데.',
+                ko: '이 맛, 익숙한데. 마셔 본 적도 없는데.',
                 en: '...This taste is not unfamiliar, even though I have never drunk it before.',
                 ja: '...この味。知らない味じゃない。飲んだこともないのに。',
                 es: '...Este sabor no me resulta desconocido, aunque nunca lo había bebido.',

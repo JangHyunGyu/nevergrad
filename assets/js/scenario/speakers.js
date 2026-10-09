@@ -2170,7 +2170,7 @@ Object.assign(SCENARIO_SPEAKERS, {
     "day5_morning_rescue_22": "me",
     "day5_morning_true_2": "me",
     "day5_morning_true_5": "me",
-    "day5_morning_true_6": "yuna",
+    "day5_morning_true_6": "me",
     "day5_morning_true_8": "me",
     "day5_morning_true_20": "me",
     "day5_morning_true_21": "yuna",

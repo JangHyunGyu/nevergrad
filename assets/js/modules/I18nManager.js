@@ -253,7 +253,7 @@ class I18nManager {
             saveFailed: '저장하지 못했어요. 다시 시도해 주세요.',
             title: "졸업하지 못한 교실", subtitle: "5일의 기록",
             metaTitle: "졸업하지 못한 교실 - 5일의 기록",
-            metaDesc: "전학 첫날, 모든 것이 지나치게 완벽했다.",
+            metaDesc: "전학 첫날, 너무 완벽했다.",
             newGame: "새 게임", continue: "이어하기", gallery: "갤러리", archiveServer: "연구소 서버",
             namePrompt: "이름은?", namePlaceholder: "이름을 입력하세요", start: "시작",
             save: "저장", load: "불러오기", settings: "설정", toTitle: "타이틀 화면", resume: "게임으로 돌아가기",
@@ -273,12 +273,12 @@ class I18nManager {
             timeDialogue: {
                 lateNight:   "지금 {time}이야. 이 시간까지 깨어 있는 거야?",
                 dawn:        "새벽 {time}. 밤새 여기 있었던 거야? 그렇게까지 해야 했어?",
-                morning:     "{time}. 아침이네. 수업 시작하기 딱 좋은 시간이야.",
+                morning:     "{time}. 아침이네. 수업 시작할 시간이야.",
                 lateMorning: "{time}. 수업 시간 아니야? 여기 있어도 되는 거야?",
                 noon:        "{time}. 점심시간이네. 밥은 먹었어?",
                 afternoon:   "{time}. 오후네. 방과 후까지 얼마 안 남았어.",
                 sunset:      "{time}. 해가 지고 있어. 학교에 남아 있을 거야?",
-                evening:     "{time}. 밤이 됐네. 학교가 조용해질 시간이야.",
+                evening:     "{time}. 밤이 됐네. 학교가 조용해지겠네.",
                 night:       "{time}. 늦었네. 여기 혼자 남아 있을 거야?"
             }
         },

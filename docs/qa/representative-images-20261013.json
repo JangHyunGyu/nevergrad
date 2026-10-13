@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-13",
+  "scope": "Search and social preview metadata only; existing visible page bodies, styles and executable scripts preserved.",
+  "representativeImage": "https://nevergrad.archerlab.dev/assets/images/social/nevergrad-representative.png",
+  "dimensions": [
+    2048,
+    2048
+  ],
+  "indexablePagesUpdated": 46,
+  "source": "nevergrad_link.png",
+  "originalAssetsPreserved": true,
+  "visualVerification": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "result": "No visible UI change; zero pixel difference in final comparisons.",
+    "method": "Before/after browser screenshots; animations frozen. Nevergrad rechecked using software rendering."
+  },
+  "publishing": "main branch; GitHub Pages/Cloudflare Pages Git integration, or existing news Worker"
+}

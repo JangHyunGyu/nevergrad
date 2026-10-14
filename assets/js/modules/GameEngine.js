@@ -502,6 +502,14 @@ class GameEngine {
         };
 
         dialogueBox?.addEventListener('click', advanceDialogue);
+        // 대사창 밖(배경·캐릭터 영역)을 눌러도 대사가 넘어가게 한다. 버튼·선택지·기믹 오버레이는 제외.
+        const tapLayers = '#bg-layer, #bg-overlay, #media-overlay, #char-layer, #glitch-overlay';
+        document.getElementById('game-screen')?.addEventListener('click', (event) => {
+            const target = event.target;
+            if (!(target instanceof Element)) return;
+            if (target.id !== 'game-screen' && !target.closest(tapLayers)) return;
+            advanceDialogue();
+        });
         dialogueBox?.addEventListener('keydown', (event) => {
             if (event.repeat || (event.key !== 'Enter' && event.key !== ' ')) return;
             event.preventDefault();

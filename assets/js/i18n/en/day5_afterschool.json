@@ -112,7 +112,7 @@
         "text": "{name}. Stop there. The emergency exit side is a restricted area."
     },
     "day5_after_confront_6": {
-        "text": "*As I back away, Ms. Eunsu moves the syringe in front of her body. The needle flashes briefly beneath the emergency light.*\n\nThe exit isn't blocking us. You are. Put that down and talk."
+        "text": "*Eunsu moves the syringe to her right hand. The needle glints under the emergency light.*\n\nPut that down."
     },
     "day5_after_confront_7": {
         "text": "*Eunsu’s forehead is wet, and the skin beneath her eyes is dark. A cold wind comes through the emergency exit.*"
@@ -139,7 +139,7 @@
         "text": "I thought I’d get used to it. But every time you failed to recognize me, I couldn’t finish the sentences in my report."
     },
     "day5_after_confront_15": {
-        "text": "*Ms. Eunsu steps away from the emergency exit and stops about 3 meters from me. She takes a syringe from her pocket.*\n\nI knew you'd bring that out. Do you want me to become a stranger again?"
+        "text": "*Ms. Eunsu approaches, syringe in hand. Three steps to the exit.*\n\nYou’re going to erase me again?"
     },
     "day5_after_confront_16": {
         "text": "*The liquid inside the syringe glittered under the fluorescent light. On the label, in tiny letters, it said `RESET / S-13`.*"
@@ -151,17 +151,17 @@
         "text": "Once your memories are wiped, you can start again on Monday morning. Day 1. Come back to the classroom."
     },
     "day5_after_confront_19": {
-        "text": "*A drop of liquid falls from the syringe’s tip onto the floor. Ms. Eunsu does not lower her hand.*\n\nStop telling me to return. I want to leave through that door."
+        "text": "*A drop falls from the needle. Ms. Eunsu keeps her hand raised.*\n\nI’m going through that door."
     },
     "day5_after_confront_20": {
         "text": "*A drop trembles on the tip of the syringe. Wind enters from the emergency exit. Below the stairs, Seolhwa stands in silence.*"
     },
     "day5_after_final_choice": {
-        "text": "*I could push past her. But my body is already leaning toward the classroom.*",
+        "text": "*The screen border flashes red. The clock reads 22:58. Two minutes left.*\n\n*The choice text appears late, one character at a time. Only the second button completes first.*\n\n***`...Please erase me.`***\n\n*The other buttons follow after a delay.*",
         "choices": [
-            "No. I will remember.",
-            "Please erase it.",
-            "Let's leave together, Ms. Eunsu."
+            "\"No. I will remember.\"",
+            "\"Please erase it.\"",
+            "\"Let's leave together, Ms. Eunsu.\""
         ]
     },
     "day5_after_true_1": {
@@ -267,10 +267,10 @@
         "text": "...Eunsu."
     },
     "day5_after_resist_9": {
-        "text": "Every time a new name tag appeared, you smiled the same way. A little less each time."
+        "text": "*I repeat the words aloud.*\n\nYou smiled every time a new name tag went up. But you couldn’t keep smiling as long."
     },
     "day5_after_resist_10": {
-        "text": "...You need to leave too, Ms. Eunsu."
+        "text": "You need to leave too, ma’am."
     },
     "day5_after_resist_11": {
         "text": "*She sets the syringe on the floor and stands there for a long time.*\n\nLeave it there. Now use that hand to open the door."
@@ -349,5 +349,13 @@
     },
     "day5_after_end": {
         "text": "*...*"
+    },
+    "day5_after_confront_observe": {
+        "text": "*Wind comes in through the emergency exit gap. The smell of classroom dust briefly wafts away.*",
+        "choices": [
+            "Keep watching the syringe",
+            "Listen to Eunsu's voice",
+            "Look for Seolhwa"
+        ]
     }
 }

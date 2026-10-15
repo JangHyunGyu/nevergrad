@@ -614,5 +614,21 @@
     },
     "day5_morning_end_run": {
         "text": "*体を翻し、階段へ向かって走った。*"
+    },
+    "day5_morning_complicit_check": {
+        "text": ""
+    },
+    "day5_morning_complicit_call": {
+        "text": "*携帯が鳴る。画面にはウンス先生の名前が出ている。*"
+    },
+    "day5_morning_complicit_offer": {
+        "text": "今日は職員室に来て。次の子を任せたいの。あなたの記録は私が移しておく。",
+        "choices": [
+            "手伝います。",
+            "断ります。"
+        ]
+    },
+    "day5_morning_complicit_accept": {
+        "text": "*鞄を下ろした。職員室へは正門から行けばいい。*"
     }
 }

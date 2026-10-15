@@ -112,7 +112,7 @@
         "text": "{name}. Pare aí. O lado da saída de emergência é uma área restrita."
     },
     "day5_after_confront_6": {
-        "text": "*Quando recuo, a professora Eunsu põe a seringa diante do corpo. A agulha brilha por um instante sob a luz de emergência.*\n\nNão é a saída que bloqueia. É a senhora. Largue isso e fale."
+        "text": "*Eunsu passa a seringa para a mão direita. A agulha brilha sob a luz de emergência.*\n\nPonha isso no chão."
     },
     "day5_after_confront_7": {
         "text": "*A testa de Eunsu está úmida, e há sombras escuras sob os olhos. Um vento frio entra pela saída de emergência.*"
@@ -139,7 +139,7 @@
         "text": "Pensei que me acostumaria. Mas toda vez que você não me reconhece, não consigo terminar as frases do relatório."
     },
     "day5_after_confront_15": {
-        "text": "*A professora Eunsu se afasta da saída de emergência e para a cerca de 3 metros de mim. Tira uma seringa do bolso.*\n\nSabia que ia tirar isso. Quer que eu vire um desconhecido de novo?"
+        "text": "*A professora Eunsu se aproxima com a seringa na mão. Três passos até a saída.*\n\nVai me apagar de novo?"
     },
     "day5_after_confront_16": {
         "text": "*O líquido dentro da seringa reluziu sob a luz fluorescente. No rótulo, em letras pequenas, estava escrito `RESET / S-13`.*"
@@ -151,17 +151,17 @@
         "text": "Se suas memórias forem apagadas, você poderá recomeçar na manhã de segunda, no Dia 1. Volte para a sala de aula."
     },
     "day5_after_confront_19": {
-        "text": "*Uma gota de líquido cai da ponta da seringa no chão. A professora Eunsu não baixa a mão.*\n\nPare de mandar voltar. Quero sair por aquela porta."
+        "text": "*Uma gota cai da agulha. A professora Eunsu não abaixa a mão.*\n\nVou sair por aquela porta."
     },
     "day5_after_confront_20": {
         "text": "*A seringa e a saída de emergência. A sala fechada e o ar aberto da noite. Seolhwa... dá para ver. Atrás da professora. No pé da escada. Como um contorno borrado. Ela não diz nada. Só... olha para mim.*"
     },
     "day5_after_final_choice": {
-        "text": "*Eu poderia empurrá‑la e passar. Mas meu corpo já está inclinado para a sala.*",
+        "text": "*A borda da tela pisca em vermelho. O relógio marca 22:58. Faltam dois minutos.*\n\n*O texto das escolhas aparece atrasado, uma letra por vez. Só o segundo botão se completa primeiro.*\n\n***`...Por favor, me apague.`***\n\n*Os outros botões vêm depois, atrasados.*",
         "choices": [
-            "Não. Eu vou lembrar.",
-            "Por favor, apague.",
-            "Vamos sair, professora."
+            "\"Não. Eu vou lembrar.\"",
+            "\"Por favor, apague.\"",
+            "\"Vamos sair, professora.\""
         ]
     },
     "day5_after_true_1": {
@@ -267,10 +267,10 @@
         "text": "...Eunsu."
     },
     "day5_after_resist_9": {
-        "text": "A cada crachá novo, a senhora sorria do mesmo jeito. Um pouco menos a cada vez."
+        "text": "*Repito aquelas palavras em voz alta.*\n\nA senhora sorria a cada nova etiqueta. Mas o sorriso durava cada vez menos."
     },
     "day5_after_resist_10": {
-        "text": "...Você também precisa ir embora, professora."
+        "text": "A senhora também precisa sair daqui."
     },
     "day5_after_resist_11": {
         "text": "*Ela põe a seringa no chão e fica de pé por um longo tempo.*\n\nDeixe aí. Agora use essa mão pra abrir a porta."
@@ -349,5 +349,13 @@
     },
     "day5_after_end": {
         "text": "*...*"
+    },
+    "day5_after_confront_observe": {
+        "text": "*O vento entra pela abertura da saída de emergência. O cheiro de poeira da sala de aula desaparece brevemente.*",
+        "choices": [
+            "Continue observando a seringa",
+            "Ouça a voz de Eunsu",
+            "Procure por Seolhwa"
+        ]
     }
 }

@@ -614,5 +614,21 @@
     },
     "day5_morning_end_run": {
         "text": "*Me doy vuelta y corro hacia las escaleras.*"
+    },
+    "day5_morning_complicit_check": {
+        "text": ""
+    },
+    "day5_morning_complicit_call": {
+        "text": "*Suena mi teléfono. En la pantalla aparece el nombre de la profesora Eunsu.*"
+    },
+    "day5_morning_complicit_offer": {
+        "text": "Ven hoy a la sala de profesores. Encárgate del próximo alumno. Yo trasladaré tu expediente.",
+        "choices": [
+            "La ayudaré.",
+            "No."
+        ]
+    },
+    "day5_morning_complicit_accept": {
+        "text": "*Dejo la mochila. Para ir a la sala de profesores basta con entrar por la puerta principal.*"
     }
 }

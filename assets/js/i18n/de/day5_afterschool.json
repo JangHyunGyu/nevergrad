@@ -112,7 +112,7 @@
         "text": "{name}. Halt dort an. Der Bereich am Notausgang ist gesperrt."
     },
     "day5_after_confront_6": {
-        "text": "*Als ich zurückweiche, hält Frau Eunsu die Spritze vor ihren Körper. Die Nadel blitzt kurz unter der Notbeleuchtung auf.*\n\nNicht der Ausgang versperrt uns den Weg, sondern Sie. Legen Sie das weg."
+        "text": "*Eunsu nimmt die Spritze in die rechte Hand. Die Nadel blitzt im Notlicht auf.*\n\nLegen Sie das hin."
     },
     "day5_after_confront_7": {
         "text": "*Eunsus Stirn ist feucht, unter ihren Augen liegen dunkle Schatten. Kalter Wind kommt durch den Notausgang herein.*"
@@ -139,7 +139,7 @@
         "text": "Ich dachte, ich würde mich daran gewöhnen. Doch jedes Mal, wenn du mich nicht erkennst, kann ich die Sätze im Bericht nicht beenden."
     },
     "day5_after_confront_15": {
-        "text": "*Frau Eunsu tritt vom Notausgang weg und bleibt etwa 3 Meter von mir entfernt stehen. Sie zieht eine Spritze aus der Tasche.*\n\nIch wusste, dass die kommt. Soll ich wieder ein Fremder werden?"
+        "text": "*Frau Eunsu kommt mit der Spritze näher. Drei Schritte bis zum Ausgang.*\n\nWollen Sie mich wieder auslöschen?"
     },
     "day5_after_confront_16": {
         "text": "*Die Flüssigkeit in der Spritze funkelte im Licht der Neonröhre. Auf dem Etikett stand in kleinen Buchstaben `RESET / S-13`.*"
@@ -151,17 +151,17 @@
         "text": "Wenn deine Erinnerungen gelöscht sind, kannst du am Montagmorgen wieder bei Tag 1 anfangen. Komm zurück ins Klassenzimmer."
     },
     "day5_after_confront_19": {
-        "text": "*Ein Tropfen Flüssigkeit fällt von der Spritzenspitze auf den Boden. Frau Eunsu senkt die Hand nicht.*\n\nSagen Sie nicht ständig, ich soll zurück. Ich will durch die Tür gehen."
+        "text": "*Ein Tropfen fällt von der Nadel. Frau Eunsu senkt die Hand nicht.*\n\nIch gehe durch diese Tür."
     },
     "day5_after_confront_20": {
         "text": "*Die Spritze und der Notausgang. Das geschlossene Klassenzimmer und die offene Nachtluft. Seolhwa ist — zu sehen. Hinter der Lehrerin. Unten an der Treppe. Als verschwommener Umriss. Sie sagt nichts. Sie sieht mich nur — an.*"
     },
     "day5_after_final_choice": {
-        "text": "*Ich könnte sie wegstoßen und vorbeigehen, aber mein Körper lehnt sich bereits zum Klassenzimmer.*",
+        "text": "*Der Bildschirmrand blinkt rot. Die Uhr zeigt 22:58. Noch zwei Minuten.*\n\n*Der Text der Auswahlmöglichkeiten erscheint verspätet, Buchstabe für Buchstabe. Nur die zweite Schaltfläche ist zuerst vollständig.*\n\n***`...Bitte löschen Sie mich.`***\n\n*Die übrigen Schaltflächen folgen mit Verzögerung.*",
         "choices": [
-            "Nein. Ich werde mich erinnern.",
-            "Bitte löschen Sie es.",
-            "Gehen wir zusammen raus, Frau Lehrerin."
+            "„Nein. Ich werde mich erinnern.“",
+            "„Bitte löschen Sie es.“",
+            "„Gehen wir zusammen raus, Frau Lehrerin.“"
         ]
     },
     "day5_after_true_1": {
@@ -267,10 +267,10 @@
         "text": "...Eunsu."
     },
     "day5_after_resist_9": {
-        "text": "Bei jedem neuen Namensschild haben Sie auf dieselbe Weise gelächelt. Jedes Mal ein bisschen weniger."
+        "text": "*Ich spreche die Worte laut aus.*\n\nSie haben bei jedem neuen Namensschild gelächelt. Aber jedes Mal konnten Sie es weniger lange."
     },
     "day5_after_resist_10": {
-        "text": "...Auch Sie müssen gehen, Frau Park."
+        "text": "Sie müssen auch gehen, Frau Eunsu."
     },
     "day5_after_resist_11": {
         "text": "*Sie legt die Spritze auf den Boden und bleibt lange stehen.*\n\nLassen Sie sie liegen. Öffnen Sie mit der Hand jetzt die Tür."
@@ -349,5 +349,13 @@
     },
     "day5_after_end": {
         "text": "*...*"
+    },
+    "day5_after_confront_observe": {
+        "text": "*Durch den Notausgangsspalt kommt Wind herein. Der Geruch von Klassenzimmerstaub verzieht sich kurz.*",
+        "choices": [
+            "Die Spritze im Blick behalten",
+            "Eunsus Stimme zuhören",
+            "Nach Seolhwa suchen"
+        ]
     }
 }

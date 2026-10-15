@@ -112,7 +112,7 @@
         "text": "{name}. Arrête-toi là. Le côté de la sortie de secours est une zone fermée."
     },
     "day5_after_confront_6": {
-        "text": "*Quand je recule, Mme Eunsu place la seringue devant elle. L’aiguille brille brièvement sous la lumière de secours.*\n\nC'est pas la sortie qui bloque. C'est vous. Posez ça pour parler."
+        "text": "*Eunsu passe la seringue dans sa main droite. L’aiguille brille sous l’éclairage de secours.*\n\nPosez ça."
     },
     "day5_after_confront_7": {
         "text": "*Le front d’Eunsu est humide et le dessous de ses yeux est sombre. Un vent froid entre par la sortie de secours.*"
@@ -139,7 +139,7 @@
         "text": "Je pensais m'y habituer. Mais chaque fois que tu ne me reconnais pas, je n'arrive pas à terminer les phrases de mon rapport."
     },
     "day5_after_confront_15": {
-        "text": "*Mme Eunsu s’éloigne de la sortie de secours et s’arrête à environ 3 mètres de moi. Elle sort une seringue de sa poche.*\n\nJe savais que vous la sortiriez. Vous voulez encore que je sois un inconnu ?"
+        "text": "*Mme Eunsu s’approche, la seringue à la main. Trois pas jusqu’à la sortie.*\n\nVous allez encore m’effacer ?"
     },
     "day5_after_confront_16": {
         "text": "*Le liquide dans la seringue scintillait sous la lumière du néon. Sur l'étiquette, en petites lettres, il était écrit `RESET / S-13`.*"
@@ -151,17 +151,17 @@
         "text": "Une fois tes souvenirs effacés, tu pourras recommencer lundi matin, dès le jour 1. Retourne dans la classe."
     },
     "day5_after_confront_19": {
-        "text": "*Une goutte de liquide tombe de la pointe de la seringue sur le sol. Mme Eunsu ne baisse pas la main.*\n\nArrêtez de me dire de revenir. Je veux sortir par cette porte."
+        "text": "*Une goutte tombe de l’aiguille. Mme Eunsu ne baisse pas la main.*\n\nJe vais passer cette porte."
     },
     "day5_after_confront_20": {
         "text": "*La seringue et la sortie de secours. La salle de classe fermée et l'air libre de la nuit. Seolhwa... je la vois. Derrière la professeure. Au bas des escaliers. Un contour flou. Elle ne dit rien. Elle se contente de... me regarder.*"
     },
     "day5_after_final_choice": {
-        "text": "*Je pourrais la pousser et passer. Mais mon corps est déjà incliné vers la salle de classe.*",
+        "text": "*Le bord de l'écran clignote en rouge. L'horloge indique 22:58. Il reste deux minutes.*\n\n*Le texte des choix apparaît en retard, caractère par caractère. Seul le deuxième bouton se complète d'abord.*\n\n***`...Effacez-moi, je vous en prie.`***\n\n*Les autres boutons le rattrapent avec du retard.*",
         "choices": [
-            "Non. Je me souviendrai.",
-            "Effacez-le, s'il vous plaît.",
-            "Sortons ensemble, madame."
+            "« Non. Je me souviendrai. »",
+            "« Effacez-le, s'il vous plaît. »",
+            "« Sortons ensemble, madame. »"
         ]
     },
     "day5_after_true_1": {
@@ -267,10 +267,10 @@
         "text": "...Eunsu."
     },
     "day5_after_resist_9": {
-        "text": "À chaque nouvelle étiquette, vous souriiez de la même façon. Un peu moins à chaque fois."
+        "text": "*Je répète ces mots à voix haute.*\n\nVous souriiez à chaque nouvelle étiquette. Mais votre sourire durait de moins en moins longtemps."
     },
     "day5_after_resist_10": {
-        "text": "...Vous aussi, vous devez partir, Madame."
+        "text": "Vous aussi, vous devez sortir, madame."
     },
     "day5_after_resist_11": {
         "text": "*Elle pose la seringue au sol et reste longtemps debout.*\n\nLaissez-la. Ouvrez la porte avec cette main, maintenant."
@@ -349,5 +349,13 @@
     },
     "day5_after_end": {
         "text": "*...*"
+    },
+    "day5_after_confront_observe": {
+        "text": "*Le vent entre par l’espace de sortie de secours. L’odeur de la poussière de la classe s’envole brièvement.*",
+        "choices": [
+            "Ne pas quitter la seringue des yeux",
+            "Écouter la voix d'Eunsu",
+            "Chercher Seolhwa"
+        ]
     }
 }

@@ -1005,7 +1005,7 @@ const PRESETS = [
     { name: 'CAGE(S)', flags: ['stayed_with_sea'], target: 'ending_cage' },
     { name: 'FORGET', flags: ['chose_forget'], target: 'ending_forget' },
     { name: 'GHOST', flags: ['timer_expired'], target: 'ending_ghost' },
-    { name: 'COMPLICIT', flags: ['complicit_route','high_eunsu_affinity'], target: 'ending_complicit',
+    { name: 'COMPLICIT', flags: ['complicit_route','route_complicit','high_eunsu_affinity'], target: 'ending_complicit',
       stats: { eunsu: { affinity: 70, danger: 60 } } },
 ];
 

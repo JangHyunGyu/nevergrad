@@ -23,29 +23,73 @@ Object.assign(SCENARIO[5], {
     // 진입점
     // ══════════════════════════════════════
     "day5_after_start": {
-        skipTextFlags: ["route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
-        background: "black",
-        bgm: "confrontation.mp3",
+        skipTextFlags: ["final_confrontation_pending","route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
         character: null,
         next: "day5_after_branch"
     },
 
     // ── 메인 분기: 이전 선택에 따른 라우팅 ──
     "day5_after_branch": {
-        character: null,
-        branches: [
-            { condition: "stayed_with_eunsu", next: "day5_after_cage_1" },
-            { condition: "stayed_with_sea", next: "day5_after_end" },
-            { condition: "caught_by_sea", next: "day5_after_caught_1" },
-            { condition: "caught_by_riin", next: "day5_after_caught_1" },
-            { condition: "route_escape", next: "day5_after_end" },
-            { condition: "route_true", next: "day5_after_end" },
-            { condition: "route_forget", next: "day5_after_end" },
-            { condition: "route_resist", next: "day5_after_end" },
-            { condition: "route_ghost", next: "day5_after_end" },
-            { condition: "broke_through_eunsu", next: "day5_after_confront_1" }
+        "character": null,
+        "branches": [
+            {
+                "condition": "stayed_with_sea",
+                "next": "day5_after_end"
+            },
+            {
+                "condition": "route_complicit",
+                "next": "day5_after_end"
+            },
+            {
+                "condition": "stayed_with_eunsu",
+                "next": "day5_after_cage_1"
+            },
+            {
+                "condition": "caught_by_sea",
+                "next": "day5_after_caught_1"
+            },
+            {
+                "condition": "caught_by_riin",
+                "next": "day5_after_caught_1"
+            },
+            {
+                "condition": "ending_bridge_true_done",
+                "next": "day5_after_end"
+            },
+            {
+                "condition": "ending_bridge_forget_done",
+                "next": "day5_after_end"
+            },
+            {
+                "condition": "ending_bridge_resist_done",
+                "next": "day5_after_end"
+            },
+            {
+                "condition": "ending_bridge_ghost_done",
+                "next": "day5_after_end"
+            },
+            {
+                "condition": "route_escape",
+                "next": "day5_after_end"
+            },
+            {
+                "condition": "route_true",
+                "next": "day5_after_true_1"
+            },
+            {
+                "condition": "route_forget",
+                "next": "day5_after_forget_1"
+            },
+            {
+                "condition": "route_resist",
+                "next": "day5_after_resist_1"
+            },
+            {
+                "condition": "route_ghost",
+                "next": "day5_after_ghost_1"
+            }
         ],
-        next: "day5_after_confront_1"
+        "next": "day5_after_confront_1"
     },
 
     // ══════════════════════════════════════
@@ -240,11 +284,15 @@ Object.assign(SCENARIO[5], {
     //    (탈출 성공 루트가 여기로 합류)
     // ══════════════════════════════════════
     "day5_after_confront_1": {
-        background: "corridor_emergency",
-        character: null,
-        sfx: "sfx_footsteps.mp3",
-        unskippable: true,
-        next: "day5_after_confront_2"
+        "background": "corridor_emergency",
+        "character": null,
+        "sfx": "sfx_footsteps.mp3",
+        "unskippable": true,
+        "next": "day5_after_confront_2",
+        "characters": {
+            "left": "yuna_weak"
+        },
+        "bgm": "confrontation.mp3"
     },
     "day5_after_confront_2": {
         character: null,
@@ -311,7 +359,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_confront_14": {
         character: "eunsu_gentle",
         unskippable: true,
-        next: "day5_after_confront_15"
+        next: "day5_after_confront_observe"
     },
     "day5_after_confront_15": {
         character: "eunsu_gentle",
@@ -349,28 +397,58 @@ Object.assign(SCENARIO[5], {
     // ★ 최종 선택지: 20초 타이머
     // ══════════════════════════════════════
     "day5_after_final_choice": {
-        characters: { center: "eunsu_crying", right: "seolhwa_fading" },
-        timedChoice: 20000,
-        unskippable: true,
-        vibrate: "heartbeat",
-        choices: [
+        "characters": {
+            "center": "eunsu_crying",
+            "right": "seolhwa_fading"
+        },
+        "timedChoice": 20000,
+        "unskippable": true,
+        "vibrate": "heartbeat",
+        "choices": [
             {
-                next: "day5_after_true_1",
-                stats: { eunsu: { affinity: -8 }, yuna: { affinity: 10 }, seolhwa: { affinity: 8 } }
+                "next": "day5_after_true_1",
+                "stats": {
+                    "eunsu": {
+                        "affinity": -8
+                    },
+                    "yuna": {
+                        "affinity": 10
+                    },
+                    "seolhwa": {
+                        "affinity": 8
+                    }
+                },
+                "setFlags": [
+                    "chose_remember"
+                ]
             },
             {
-                next: "day5_after_forget_1",
-                setFlags: ["chose_forget"],
-                stats: { eunsu: { affinity: 8 } }
+                "next": "day5_after_forget_1",
+                "setFlags": [
+                    "chose_forget"
+                ],
+                "stats": {
+                    "eunsu": {
+                        "affinity": 8
+                    }
+                }
             },
             {
-                next: "day5_after_resist_1",
-                setFlags: ["chose_together"],
-                stats: { seolhwa: { affinity: 10 } }
+                "next": "day5_after_resist_1",
+                "setFlags": [
+                    "chose_together"
+                ],
+                "stats": {
+                    "seolhwa": {
+                        "affinity": 10
+                    }
+                }
             }
         ],
-        timeoutNext: "day5_after_ghost_1",
-        timeoutFlags: ["timer_expired"]
+        "timeoutNext": "day5_after_ghost_1",
+        "timeoutFlags": [
+            "timer_expired"
+        ]
     },
 
     // ══════════════════════════════════════
@@ -583,14 +661,14 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_9"
     },
     "day5_after_resist_9": {
-        character: "seolhwa_fading",
-        unskippable: true,
-        next: "day5_after_resist_10"
+        "character": "eunsu_shaking",
+        "unskippable": true,
+        "next": "day5_after_resist_10"
     },
     "day5_after_resist_10": {
-        character: "seolhwa_fading",
-        unskippable: true,
-        next: "day5_after_resist_11"
+        "character": "eunsu_shaking",
+        "unskippable": true,
+        "next": "day5_after_resist_11"
     },
     "day5_after_resist_11": {
         character: "eunsu_shaking",
@@ -746,12 +824,50 @@ Object.assign(SCENARIO[5], {
     // 공통 종단: Night 파일로 전환
     // ══════════════════════════════════════
     "day5_after_end": {
-        skipTextFlags: ["route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
+        skipTextFlags: ["final_confrontation_pending","route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
         character: null,
         stopSfx: true,
         autoAdvance: true,
         autoAdvanceDelay: 300,
         changeSlot: "night",
         next: "day5_night_start"
+    },
+
+    "day5_after_confront_observe": {
+        "characters": {
+            "left": "yuna_weak",
+            "center": "eunsu_gentle"
+        },
+        "unskippable": true,
+        "choices": [
+            {
+                "next": "day5_after_confront_15",
+                "stats": {
+                    "eunsu": {
+                        "affinity": -3
+                    },
+                    "yuna": {
+                        "affinity": 3
+                    }
+                }
+            },
+            {
+                "next": "day5_after_confront_15",
+                "stats": {
+                    "eunsu": {
+                        "affinity": 3
+                    }
+                }
+            },
+            {
+                "next": "day5_after_confront_15",
+                "stats": {
+                    "seolhwa": {
+                        "affinity": 2
+                    }
+                }
+            }
+        ],
+        "character": "eunsu_gentle"
     }
 });

@@ -112,7 +112,7 @@
         "text": "{name}. Detente ahí. La zona de la salida de emergencia está restringida."
     },
     "day5_after_confront_6": {
-        "text": "*Cuando retrocedo, la profesora Eunsu pone la jeringa delante de su cuerpo. La aguja brilla un instante bajo la luz de emergencia.*\n\nLa salida no nos bloquea. Usted sí. Deje eso y hable."
+        "text": "*Eunsu se pasa la jeringa a la mano derecha. La aguja brilla bajo la luz de emergencia.*\n\nDeje eso en el suelo."
     },
     "day5_after_confront_7": {
         "text": "*Eunsu tiene la frente húmeda y la piel oscura bajo los ojos. Entra aire frío por la salida de emergencia.*"
@@ -139,7 +139,7 @@
         "text": "Pensé que me acostumbraría. Pero cada vez que no me reconoces, no puedo terminar las frases del informe."
     },
     "day5_after_confront_15": {
-        "text": "*La profesora Eunsu se aparta de la salida de emergencia y se detiene a unos 3 metros de mí. Saca una jeringa del bolsillo.*\n\nSabía que la sacaría. ¿Quiere que vuelva a ser un desconocido?"
+        "text": "*La profesora Eunsu se acerca con la jeringa en la mano. Tres pasos hasta la salida.*\n\n¿Va a borrarme otra vez?"
     },
     "day5_after_confront_16": {
         "text": "*El líquido dentro de la jeringa relució bajo la luz fluorescente. En la etiqueta, con letras pequeñas, decía `RESET / S-13`.*"
@@ -151,17 +151,17 @@
         "text": "Si borras tu memoria, podrás volver a empezar el lunes por la mañana, desde el día 1. Regresa al aula."
     },
     "day5_after_confront_19": {
-        "text": "*De la punta de la jeringa cae una gota de líquido al suelo. La profesora Eunsu no baja la mano.*\n\nDeje de decirme que vuelva. Quiero salir por esa puerta."
+        "text": "*Una gota cae de la aguja. La profesora Eunsu no baja la mano.*\n\nVoy a salir por esa puerta."
     },
     "day5_after_confront_20": {
         "text": "*La jeringa y la salida de emergencia. El aula cerrada y el aire abierto de la noche. Seolhwa... se ve. Detrás de la profesora. Al pie de las escaleras. Como un contorno borroso. No dice nada. Solo... me mira.*"
     },
     "day5_after_final_choice": {
-        "text": "*Podría empujarla y pasar. Pero mi cuerpo ya está inclinado hacia el aula.*",
+        "text": "*El borde de la pantalla parpadea en rojo. El reloj marca las 22:58. Quedan dos minutos.*\n\n*El texto de las opciones aparece con retraso, letra por letra. Solo el segundo botón se completa primero.*\n\n***`...Por favor, bórreme.`***\n\n*Los demás botones aparecen detrás, tarde.*",
         "choices": [
-            "No. Voy a recordar.",
-            "Bórrelo, por favor.",
-            "Salgamos, profesora."
+            "«No. Voy a recordar.»",
+            "«Bórrelo, por favor.»",
+            "«Salgamos, profesora.»"
         ]
     },
     "day5_after_true_1": {
@@ -267,10 +267,10 @@
         "text": "...Eunsu."
     },
     "day5_after_resist_9": {
-        "text": "Cada vez que aparecía una placa nueva, usted sonreía igual. Un poco menos cada vez."
+        "text": "*Repito esas palabras en voz alta.*\n\nSonreía cada vez que ponían una placa nueva. Pero cada vez le duraba menos."
     },
     "day5_after_resist_10": {
-        "text": "...Usted también necesita irse, profesora."
+        "text": "Usted también tiene que salir, profesora."
     },
     "day5_after_resist_11": {
         "text": "*Deja la jeringa en el suelo y se queda de pie un largo rato.*\n\nDéjela ahí. Ahora abra la puerta con esa mano."
@@ -349,5 +349,13 @@
     },
     "day5_after_end": {
         "text": "*...*"
+    },
+    "day5_after_confront_observe": {
+        "text": "*El viento entra por el hueco de la salida de emergencia. El olor a polvo del aula se disipa brevemente.*",
+        "choices": [
+            "No apartar la vista de la jeringa",
+            "Escuchar la voz de Eunsu",
+            "Buscar a Seolhwa"
+        ]
     }
 }

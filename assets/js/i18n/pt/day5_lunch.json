@@ -372,10 +372,10 @@
         "text": ""
     },
     "day5_lunch_seolhwa_1": {
-        "text": "*A escada de acesso ao 3º andar da ala antiga. Compatível com Yuna.*"
+        "text": "*Entro numa passagem estreita de manutenção, apoiando Yuna. Atrás de nós, as pancadas na porta metálica continuam.*"
     },
     "day5_lunch_seolhwa_2": {
-        "text": "*No meio da escada — Seolhwa está parada ali.*"
+        "text": "*Seolhwa está no fim da passagem. Não diminuo o passo.*"
     },
     "day5_lunch_seolhwa_3": {
         "text": "*A câmera de Yuna mostra apenas a escada. Fora da lente, Seolhwa está bem diante dos meus olhos.*"
@@ -390,7 +390,7 @@
         "text": "*Ela não responde.*"
     },
     "day5_lunch_seolhwa_7": {
-        "text": "*Em vez disso, minha mão esquerda segura o corrimão. Sob a palma, sinto um risco raso onde a tinta descascou.*"
+        "text": "*Minha mão esquerda encontra um cano. Riscos rasos seguem sob a tinta descascada.*"
     },
     "day5_lunch_seolhwa_8": {
         "text": "***“Não corra. Você vai escorregar no segundo degrau.”***"
@@ -405,10 +405,10 @@
         "text": "Antes, a gente chegou até aqui."
     },
     "day5_lunch_seolhwa_12": {
-        "text": "*Aquela frase bastou. As linhas do documento e os arranhões na parede seguiam na mesma direção. O corredor sob a chuva. Uma mão fria. O terceiro andar do prédio antigo. Uma janela intacta.*"
+        "text": "*Seguindo os riscos, lembro do corredor chuvoso, da mão fria e da janela intacta no terceiro andar do prédio antigo.*"
     },
     "day5_lunch_seolhwa_13": {
-        "text": "*Sento na escada e abraço os joelhos. Lembro do frio que ficou nas lajotas do banheiro na noite do dia 4.*\n\nNaquele dia também estava ao meu lado. Eu só ficava conferindo se você estava lá."
+        "text": "*Ajeito o braço de Yuna no meu ombro. Água fria pinga da ponta do cano.*\n\nVocê estava ao meu lado no banheiro também, não estava?"
     },
     "day5_lunch_seolhwa_14": {
         "text": "Desculpa."
@@ -543,128 +543,13 @@
     "day5_lunch_seolhwa_guide_16": {
         "text": "*Passos atrás.*"
     },
-    "day5_lunch_eunsu_1": {
-        "text": "*Por trás – passos. Subindo as escadas.*"
-    },
-    "day5_lunch_eunsu_2": {
-        "text": "*Os passos sobem a escada um degrau de cada vez. Não há corrida. Não há som de respiração.*"
-    },
-    "day5_lunch_eunsu_3": {
-        "text": "*Os passos se aproximam. O som de sapatos sociais batendo no concreto. Sapatos da professora Eunsu.*"
-    },
-    "day5_lunch_eunsu_4": {
-        "text": "*Parou. No topo da escada.*"
-    },
-    "day5_lunch_eunsu_5": {
-        "text": "*A professora Eunsu apareceu. Sem fôlego. Cabelo desgrenhado. — Não a aparência composta da sala de aula.*"
-    },
-    "day5_lunch_eunsu_6": {
-        "text": "*Eunsu abre e fecha a boca, e fala com sua voz de sempre.*"
-    },
-    "day5_lunch_eunsu_7": {
-        "text": "{name}. Pare aí. O lado da saída de emergência é uma área restrita."
-    },
-    "day5_lunch_eunsu_8": {
-        "text": "*Quando recuo, a professora Eunsu põe a seringa diante do corpo. A agulha reflete a luz de emergência.*\n\nVai me levar com isso de novo? Largue antes de mandar eu parar."
-    },
-    "day5_lunch_eunsu_9": {
-        "text": "*O suor brota na testa da professora Eunsu, e há olheiras escuras sob seus olhos.*\n\n*O ar frio da saída de emergência passa entre nós.*"
-    },
-    "day5_lunch_eunsu_10": {
-        "text": "As fichas de registro estavam todas encharcadas."
-    },
-    "day5_lunch_eunsu_11": {
-        "text": "Teve dia de chuva, teve dia de neve."
-    },
-    "day5_lunch_eunsu_12": {
-        "text": "Mas a última linha era sempre a mesma. `Recuperação concluída`."
-    },
-    "day5_lunch_eunsu_13": {
-        "text": "Desta vez, eu não queria escrever essa linha."
-    },
-    "day5_lunch_eunsu_14": {
-        "text": "O menu, o assento, o corredor. Apaguei as caixas que você odiava, uma por uma. No relatório, escrevi que você se acalmou."
-    },
-    "day5_lunch_eunsu_15": {
-        "text": "*Eunsu se aproxima.*\n\nNão chegue perto. Se não quer escrever essa linha, não escreva."
-    },
-    "day5_lunch_eunsu_16": {
-        "text": "... Desta vez também, minhas mãos tremiam no momento em que você entrou na sala de aula. O procedimento foi o mesmo."
-    },
-    "day5_lunch_eunsu_17": {
-        "text": "Toda vez que você me conferia com olhos que me viam pela primeira vez, surgia mais um nome na chamada."
-    },
-    "day5_lunch_eunsu_18": {
-        "text": "*A professora Eunsu se afasta da saída de emergência e para a cerca de 3 metros de mim.*\n\nOdiava quando não reconhecia a senhora. Se apagar de novo, acontece outra vez."
-    },
-    "day5_lunch_eunsu_19": {
-        "text": "*A professora tirou uma seringa do bolso. Devagar. Como se estivesse mostrando.*\n\n*O líquido dentro da seringa brilhou sob a luz fluorescente. No rótulo, estava escrito em letras pequenas: `RESET / S-13`. Uma gota ficou pendurada na ponta da agulha.*"
-    },
-    "day5_lunch_eunsu_20": {
-        "text": "Decida agora, {name}."
-    },
-    "day5_lunch_eunsu_21": {
-        "text": "Um tiro e acabou. Você apenas tem que manter os olhos fechados."
-    },
-    "day5_lunch_eunsu_22": {
-        "text": "Vou colocá-lo no próximo livro de presenças com um novo nome."
-    },
-    "day5_lunch_eunsu_23": {
-        "text": "*As palavras se interrompem.*"
-    },
-    "day5_lunch_eunsu_24": {
-        "text": "*O vento entra pela abertura da saída de emergência. O cheiro de poeira da sala de aula desaparece brevemente.*",
-        "choices": [
-            "Continue observando a seringa",
-            "Ouça a voz de Eunsu",
-            "Procure por Seolhwa"
-        ]
-    },
-    "day5_lunch_eunsu_25": {
-        "text": "...Voltar."
-    },
-    "day5_lunch_eunsu_26": {
-        "text": "*Uma gota de líquido cai da ponta da seringa no chão. A professora Eunsu não baixa a mão.*\n\nSe voltar, vai largar? Não me chame segurando isso."
-    },
-    "day5_lunch_eunsu_27": {
-        "text": "*As lágrimas escorrem até o queixo e caem. A professora Eunsu continua segurando a seringa.*\n\nChora, mas não mexe a mão. Em que quer que eu acredite?"
-    },
-    "day5_lunch_eunsu_28": {
-        "text": "*O vento da saída entra na minha camisa. Só ouço nossa respiração; Yuna não se move, encostada na parede.*"
-    },
-    "day5_lunch_eunsu_29": {
-        "text": "*Olho alternadamente para a ponta da agulha e para a maçaneta da porta.*"
-    },
-    "day5_lunch_eunsu_30": {
-        "text": "*É só empurrá-la e correr. Aquela mão não tem força para me segurar. Mas meus pés já estão virados para a sala de aula.*"
-    },
-    "day5_lunch_eunsu_31": {
-        "text": "*A professora deu mais um passo à frente. Agora ao alcance do braço.*"
-    },
-    "day5_lunch_eunsu_32": {
-        "text": "*Seolhwa está no pé da escada, atrás da professora. Seu olhar está fixo em mim.*"
-    },
-    "day5_lunch_eunsu_final": {
-        "text": "*A borda da tela pisca em vermelho. O relógio marca 22:58. Faltam dois minutos.*\n\n*O texto das escolhas aparece atrasado, uma letra por vez. Só o segundo botão se completa primeiro.*\n\n***`...Por favor, me apague.`***\n\n*Os outros botões vêm depois, atrasados.*",
-        "choices": [
-            "\"Não. Eu vou lembrar.\"",
-            "\"Por favor, apague.\"",
-            "\"Vamos sair, professora.\""
-        ]
-    },
-    "day5_lunch_final_true": {
-        "text": "*Decido não apagar minhas memórias.*"
-    },
-    "day5_lunch_final_forget": {
-        "text": "*Decido apagar minhas memórias.*"
-    },
-    "day5_lunch_final_resist": {
-        "text": "*Decido sair juntos.*"
-    },
-    "day5_lunch_final_ghost": {
-        "text": "Eu farei isso."
-    },
     "day5_lunch_end": {
         "text": "*O intervalo de almoço terminou.*"
+    },
+    "day5_lunch_complicit_1": {
+        "text": "A lista de alunos fica embaixo. Você escreve neste campo."
+    },
+    "day5_lunch_complicit_2": {
+        "text": "*Ao lado do nome de Yuna ainda está escrito “isolamento”. Fecho o registro.*"
     }
 }

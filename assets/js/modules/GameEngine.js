@@ -658,6 +658,8 @@ class GameEngine {
     // ===== Scene Management =====
 
     _loadScene(sceneId) {
+        // Retired duplicate scenes remain valid save locations, but resume the canonical scene.
+        sceneId = CONFIG.SCENE_ALIASES?.[sceneId] || sceneId;
         this.dialogue.cancel?.();
         this._waitingForText = false;
         this._markNevergradPlayed();
@@ -666,9 +668,9 @@ class GameEngine {
         clearTimeout(this._autoAdvanceTimer);
 
         // 씬 ID 접두사로 slot 자동 추론 (HUD 시간대 불일치 방지)
-        const slotMatch = /^day\d_(morning|lunch|afterschool|night)_/.exec(sceneId);
-        if (slotMatch && this.state.currentSlot !== slotMatch[1]) {
-            this.state.currentSlot = slotMatch[1];
+        const slotMatch = /^day\d_(morning|lunch|after|afterschool|night)_/.exec(sceneId);
+        if (slotMatch) {
+            this.state.currentSlot = slotMatch[1] === 'after' ? 'afterschool' : slotMatch[1];
         }
 
         // NG+ 기시감 텍스트: SKIP 버튼 제거됨 → 씬 진입 시 자동 표시

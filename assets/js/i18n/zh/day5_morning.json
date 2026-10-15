@@ -614,5 +614,21 @@
     },
     "day5_morning_end_run": {
         "text": "*我转过身，朝楼梯跑去。*"
+    },
+    "day5_morning_complicit_check": {
+        "text": ""
+    },
+    "day5_morning_complicit_call": {
+        "text": "*手机响了。屏幕上显示着恩秀老师的名字。*"
+    },
+    "day5_morning_complicit_offer": {
+        "text": "今天来教务室吧。下一个学生交给你。你的档案，我来转过去。",
+        "choices": [
+            "我来帮您。",
+            "不。"
+        ]
+    },
+    "day5_morning_complicit_accept": {
+        "text": "*我放下书包。去教务室的话，走正门就行。*"
     }
 }

@@ -1,6 +1,6 @@
 /**
- * Day 5-2: Lunch - 추격전, 세아/리인 조우, 설화의 개입, 은수 최종 대면.
- * BGM: chase.mp3 -> seolhwa_theme_broken.mp3 -> confrontation.mp3
+ * Day 5-2: Lunch - 추격전, 세아/리인 조우, 설화의 길 안내. 최종 대면은 방과후로 연결.
+ * BGM: chase.mp3 during escape; ending_dark.mp3 on the explicit COMPLICIT route.
  * 타이머 선택지 다수. SCENARIO.md lines 3648-4157 기반 완전 재작성.
  */
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
@@ -439,11 +439,23 @@ Object.assign(SCENARIO[5], {
 
     // ── 선택 3: "...비키지 마. 여기 있을게." → CAGE 루트 ──
     "day5_lunch_left_c3_1": {
-        character: null,
-        stopSfx: "sfx_stairs_approaching.mp3",
-        unskippable: true,
-        next: "day5_lunch_end",
-        setFlags: ["cage_route_sea", "stayed_with_sea"]
+        "character": null,
+        "stopSfx": "sfx_stairs_approaching.mp3",
+        "unskippable": true,
+        "next": "day5_lunch_end",
+        "setFlags": [
+            "cage_route_sea",
+            "stayed_with_sea"
+        ],
+        "clearFlags": [
+            "route_complicit",
+            "complicit_ready",
+            "stayed_with_eunsu",
+            "route_true",
+            "route_forget",
+            "route_resist",
+            "route_ghost"
+        ]
     },
 
     // ══════════════════════════════════════
@@ -838,11 +850,14 @@ Object.assign(SCENARIO[5], {
     // 설화의 개입
     // ══════════════════════════════════════
     "day5_lunch_seolhwa_1": {
-        background: "old_stairway",
-        bgm: "seolhwa_theme_broken.mp3",
-        characters: { left: "yuna_weak", center: "seolhwa_ghost" },
-        unskippable: true,
-        next: "day5_lunch_seolhwa_2"
+        "background": "hidden_service_passage",
+        "bgm": "chase.mp3",
+        "characters": {
+            "left": "yuna_weak",
+            "center": "seolhwa_ghost"
+        },
+        "unskippable": true,
+        "next": "day5_lunch_seolhwa_2"
     },
     "day5_lunch_seolhwa_2": {
         characters: { left: "yuna_weak", center: "seolhwa_ghost" },
@@ -959,10 +974,16 @@ Object.assign(SCENARIO[5], {
     },
     // 기억 속에서 살아있었다
     "day5_lunch_seolhwa_19": {
-        characters: { left: "yuna_weak", center: "seolhwa_normal" },
-        charOpacities: { center: 0.9 },
-        unskippable: true,
-        next: "day5_lunch_seolhwa_20"
+        "characters": {
+            "left": "yuna_weak",
+            "center": "seolhwa_normal"
+        },
+        "charOpacities": {
+            "center": 0.9
+        },
+        "unskippable": true,
+        "next": "day5_lunch_seolhwa_20",
+        "background": "old_stairway"
     },
     // 8번째 '뒤를 보지 마'
     "day5_lunch_seolhwa_20": {
@@ -1208,251 +1229,39 @@ Object.assign(SCENARIO[5], {
     },
     // 뒤에서 발소리
     "day5_lunch_seolhwa_guide_16": {
-        characters: { left: "yuna_weak", center: "seolhwa_fading" },
-        glitch: { screenShake: true },
-        unskippable: true,
-        next: "day5_lunch_eunsu_1"
+        "characters": {
+            "left": "yuna_weak",
+            "center": "seolhwa_fading"
+        },
+        "glitch": {
+            "screenShake": true
+        },
+        "unskippable": true,
+        "setFlags": ["final_confrontation_pending"],
+        "next": "day5_lunch_end"
     },
 
     // ══════════════════════════════════════
-    // 최종 대면: 은수
+    // 최종 대면은 방과후 파일에서 한 번만 진행한다.
     // ══════════════════════════════════════
-    "day5_lunch_eunsu_1": {
-        background: "corridor_emergency",
-        bgm: "confrontation.mp3",
-        character: null,
-        unskippable: true,
-        next: "day5_lunch_eunsu_2"
-    },
-    // 발소리 - 느린 구두 소리
-    "day5_lunch_eunsu_2": {
-        character: null,
-        unskippable: true,
-        next: "day5_lunch_eunsu_3"
-    },
-    "day5_lunch_eunsu_3": {
-        character: null,
-        unskippable: true,
-        next: "day5_lunch_eunsu_4"
-    },
-    "day5_lunch_eunsu_4": {
-        character: null,
-        unskippable: true,
-        next: "day5_lunch_eunsu_5"
-    },
-    // 은수 등장
-    "day5_lunch_eunsu_5": {
-        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
-        glitch: { noise: true },
-        unskippable: true,
-        next: "day5_lunch_eunsu_6"
-    },
-    // 억지 미소, 경련
-    "day5_lunch_eunsu_6": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_7"
-    },
-    // "거기서 멈춰. 비상구 쪽은 폐쇄 구역이야."
-    "day5_lunch_eunsu_7": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_8"
-    },
-    // 미소가 떨어져 내림
-    "day5_lunch_eunsu_8": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_9"
-    },
-    "day5_lunch_eunsu_9": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_10"
-    },
-    // "매번 이러더라."
-    "day5_lunch_eunsu_10": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_11"
-    },
-    // "1번째 때는 화가 났어."
-    "day5_lunch_eunsu_11": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_12"
-    },
-    // "3번째 때부터 — 무서웠어."
-    "day5_lunch_eunsu_12": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_13"
-    },
-    "day5_lunch_eunsu_13": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_14"
-    },
-    // "네 반응을 기록하고..."
-    "day5_lunch_eunsu_14": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_15"
-    },
-    // 한 발 다가옴
-    "day5_lunch_eunsu_15": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_16"
-    },
-    // "1일차에 교실에 들어왔을 때. 13번째인데도."
-    "day5_lunch_eunsu_16": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_17"
-    },
-    "day5_lunch_eunsu_17": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_18"
-    },
-    // 주사기 꺼냄
-    "day5_lunch_eunsu_18": {
-        characters: { left: "yuna_weak", center: "eunsu_warm" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_19"
-    },
-    "day5_lunch_eunsu_19": {
-        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_20"
-    },
-    // "마지막 선택이야"
-    "day5_lunch_eunsu_20": {
-        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_21"
-    },
-    // "이거 한 대면 다 끝나."
-    "day5_lunch_eunsu_21": {
-        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
-        typingSpeed: 80,
-        vibrate: "final_needle",
-        unskippable: true,
-        next: "day5_lunch_eunsu_22"
-    },
-    // "다시 1일차부터. 네가 아무것도 모르는 상태로."
-    "day5_lunch_eunsu_22": {
-        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_23"
-    },
-    // 침묵
-    "day5_lunch_eunsu_23": {
-        characters: { left: "yuna_weak", center: "eunsu_obsessed" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_24"
-    },
-    "day5_lunch_eunsu_24": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
-        unskippable: true,
-        choices: [
-            { next: "day5_lunch_eunsu_25", stats: { eunsu: { affinity: -3 }, yuna: { affinity: 3 } } },
-            { next: "day5_lunch_eunsu_25", stats: { eunsu: { affinity: 3 } } },
-            { next: "day5_lunch_eunsu_25", stats: { seolhwa: { affinity: 2 } } }
-        ]
-    },
-    // "...돌아와."
-    "day5_lunch_eunsu_25": {
-        characters: { left: "yuna_weak", center: "eunsu_gentle" },
-        typingSpeed: 150,
-        unskippable: true,
-        next: "day5_lunch_eunsu_26"
-    },
-    // 주사기 떨림, 눈물
-    "day5_lunch_eunsu_26": {
-        characters: { left: "yuna_weak", center: "eunsu_shaking" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_27"
-    },
-    "day5_lunch_eunsu_27": {
-        characters: { left: "yuna_weak", center: "eunsu_crying" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_28"
-    },
-    // 시간이 멈춘 것 같다
-    "day5_lunch_eunsu_28": {
-        characters: { left: "yuna_weak", center: "eunsu_crying" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_29"
-    },
-    // 주사기와 비상구. 망각과 기억.
-    "day5_lunch_eunsu_29": {
-        characters: { left: "yuna_weak", center: "eunsu_crying" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_30"
-    },
-    // 12번의 몸이 기억
-    "day5_lunch_eunsu_30": {
-        characters: { left: "yuna_weak", center: "eunsu_crying" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_31"
-    },
-    // 한 발 더 다가옴
-    "day5_lunch_eunsu_31": {
-        characters: { left: "yuna_weak", center: "eunsu_crying" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_32"
-    },
-    // 설화가 보인다 — 뒤에
-    "day5_lunch_eunsu_32": {
-        characters: { left: "yuna_weak", center: "eunsu_crying", right: "seolhwa_fading" },
-        unskippable: true,
-        next: "day5_lunch_eunsu_final"
-    },
-
-    // ★ 최종 선택지: 20초 타이머, 3 choices (GHOST는 타이머 초과로만 진입)
-    "day5_lunch_eunsu_final": {
-        characters: { left: "yuna_weak", center: "eunsu_crying", right: "seolhwa_fading" },
-        glitch: { screenShake: true },
-        vibrate: "heartbeat",
-        timedChoice: 20000,
-        unskippable: true,
-        choices: [
-            { next: "day5_lunch_final_true", setFlags: ["chose_remember"], stats: { eunsu: { affinity: -8 }, yuna: { affinity: 10 }, seolhwa: { affinity: 8 } } },
-            { next: "day5_lunch_final_forget", setFlags: ["chose_forget"], stats: { eunsu: { affinity: 8 } } },
-            { next: "day5_lunch_final_resist", setFlags: ["chose_together"], stats: { seolhwa: { affinity: 10 } } }
-        ],
-        timeoutNext: "day5_lunch_final_ghost"
-    },
-
-    // ── Route stubs (lead to endings in other files) ──
-    "day5_lunch_final_true": {
-        character: null,
-        next: "day5_lunch_end",
-        setFlags: ["route_true", "has_evidence"]
-    },
-    "day5_lunch_final_forget": {
-        character: null,
-        next: "day5_lunch_end",
-        setFlags: ["route_forget"]
-    },
-    "day5_lunch_final_resist": {
-        character: null,
-        next: "day5_lunch_end",
-        setFlags: ["route_resist"]
-    },
-    "day5_lunch_final_ghost": {
-        character: "seolhwa_normal",
-        charOpacity: 0.9,
-        next: "day5_lunch_end",
-        setFlags: ["route_ghost"]
-    },
-
     "day5_lunch_end": {
-        skipTextFlags: ["route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
+        skipTextFlags: ["final_confrontation_pending","route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
         character: null,
         changeSlot: "afterschool",
         next: "day5_after_start"
+    },
+
+    "day5_lunch_complicit_1": {
+        "background": "faculty_office",
+        "bgm": "ending_dark.mp3",
+        "character": "eunsu_normal",
+        "unskippable": true,
+        "next": "day5_lunch_complicit_2"
+    },
+
+    "day5_lunch_complicit_2": {
+        "character": null,
+        "unskippable": true,
+        "next": "day5_lunch_end"
     }
 });

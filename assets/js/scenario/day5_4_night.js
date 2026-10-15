@@ -8,7 +8,7 @@
  * D. CAGE END     - "새장" — "여기 남을게요" 선택 (은수/세아 변형)
  * E. FORGET END   - "망각" — "기억을 지워주세요" 선택
  * F. GHOST END    - "잔상" — 타이머 초과 → 설화 개입
- * G. COMPLICIT END - "공범" — 숨겨진 엔딩 (모른 척 계열 + 은수 호감도 최대)
+ * G. COMPLICIT END - "공범" — 순응 기록 + 은수 호감도 50 이상 + Day 5의 명시적 동의
  */
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[5]) SCENARIO[5] = {};
@@ -54,11 +54,14 @@ Object.assign(SCENARIO[5], {
         next: "day5_night_seolhwa_affinity_check"
     },
     "day5_night_complicit_eval": {
-        character: null,
-        branches: [
-            { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_night_set_complicit_ready" }
+        "character": null,
+        "branches": [
+            {
+                "condition": "route_complicit",
+                "next": "day5_night_set_complicit_ready"
+            }
         ],
-        next: "day5_night_routing"
+        "next": "day5_night_routing"
     },
     "day5_night_set_complicit_ready": {
         character: null,
@@ -68,29 +71,130 @@ Object.assign(SCENARIO[5], {
 
     // ── 엔딩 라우터 ──
     "day5_night_routing": {
-        character: null,
-        branches: [
-            { condition: ["route_escape"], next: "day5_ending_escape_1" },
-            { condition: ["forced_forget"], next: "day5_ending_forget_forced_1" },
-            { condition: ["ghost_guided"], next: "day5_ending_ghost_guided_1" },
-            { condition: ["ending_bridge_true_done"], next: "day5_ending_true_19" },
-            { condition: ["ending_bridge_resist_done"], next: "day5_ending_resist_22" },
-            { condition: ["ending_bridge_forget_done"], next: "day5_ending_forget_14" },
-            { condition: ["ending_bridge_ghost_done"], next: "day5_ending_ghost_17" },
-            { condition: ["route_true", "has_evidence"], next: "day5_ending_true_1" },
-            { condition: ["route_resist"], next: "day5_ending_resist_1" },
-            { condition: ["route_forget"], next: "day5_ending_forget_1" },
-            { condition: ["route_ghost"], next: "day5_ending_ghost_1" },
-            { condition: ["broke_through_eunsu", "escape_with_yuna", "has_evidence"], next: "day5_ending_true_1" },
-            { condition: ["broke_through_eunsu", "escape_with_yuna"], next: "day5_ending_escape_1" },
-            { condition: ["chose_together"], next: "day5_ending_resist_1" },
-            { condition: ["complicit_route", "high_eunsu_affinity"], next: "day5_ending_complicit_1" },
-            { condition: ["complicit_ready"], next: "day5_ending_complicit_1" },
-            { condition: ["stayed_with_eunsu"], next: "day5_ending_cage_eunsu_1" },
-            { condition: ["stayed_with_sea"], next: "day5_ending_cage_sea_1" },
-            { condition: ["chose_forget"], next: "day5_ending_forget_1" },
-            { condition: ["timer_expired"], next: "day5_ending_ghost_1" },
-            { condition: [], next: "day5_ending_forget_1" }
+        "character": null,
+        "branches": [
+            {
+                "condition": [
+                    "stayed_with_sea"
+                ],
+                "next": "day5_ending_cage_sea_1"
+            },
+            {
+                "condition": [
+                    "stayed_with_eunsu"
+                ],
+                "next": "day5_ending_cage_eunsu_1"
+            },
+            {
+                "condition": [
+                    "route_complicit"
+                ],
+                "next": "day5_ending_complicit_1"
+            },
+            {
+                "condition": [
+                    "route_escape"
+                ],
+                "next": "day5_ending_escape_1"
+            },
+            {
+                "condition": [
+                    "forced_forget"
+                ],
+                "next": "day5_ending_forget_forced_1"
+            },
+            {
+                "condition": [
+                    "ghost_guided"
+                ],
+                "next": "day5_ending_ghost_guided_1"
+            },
+            {
+                "condition": [
+                    "ending_bridge_true_done"
+                ],
+                "next": "day5_ending_true_19"
+            },
+            {
+                "condition": [
+                    "ending_bridge_resist_done"
+                ],
+                "next": "day5_ending_resist_22"
+            },
+            {
+                "condition": [
+                    "ending_bridge_forget_done"
+                ],
+                "next": "day5_ending_forget_14"
+            },
+            {
+                "condition": [
+                    "ending_bridge_ghost_done"
+                ],
+                "next": "day5_ending_ghost_17"
+            },
+            {
+                "condition": [
+                    "route_true",
+                    "has_evidence"
+                ],
+                "next": "day5_ending_true_1"
+            },
+            {
+                "condition": [
+                    "route_resist"
+                ],
+                "next": "day5_ending_resist_1"
+            },
+            {
+                "condition": [
+                    "route_forget"
+                ],
+                "next": "day5_ending_forget_1"
+            },
+            {
+                "condition": [
+                    "route_ghost"
+                ],
+                "next": "day5_ending_ghost_1"
+            },
+            {
+                "condition": [
+                    "broke_through_eunsu",
+                    "escape_with_yuna",
+                    "has_evidence"
+                ],
+                "next": "day5_ending_true_1"
+            },
+            {
+                "condition": [
+                    "broke_through_eunsu",
+                    "escape_with_yuna"
+                ],
+                "next": "day5_ending_escape_1"
+            },
+            {
+                "condition": [
+                    "chose_together"
+                ],
+                "next": "day5_ending_resist_1"
+            },
+            {
+                "condition": [
+                    "chose_forget"
+                ],
+                "next": "day5_ending_forget_1"
+            },
+            {
+                "condition": [
+                    "timer_expired"
+                ],
+                "next": "day5_ending_ghost_1"
+            },
+            {
+                "condition": [],
+                "next": "day5_ending_forget_1"
+            }
         ]
     },
 
@@ -227,18 +331,17 @@ Object.assign(SCENARIO[5], {
         unskippable: true,
         next: "day5_ending_true_14a"
     },
-    // 은수의 반응: "결국, 내가 진 거구나. 그 아이한테."
+    // 문 안쪽의 은수와 문 밖의 주인공·유나를 분리한다.
     "day5_ending_true_14a": {
-        character: "eunsu_shaking",
-        unskippable: true,
-        next: "day5_ending_true_14b"
+        "character": null,
+        "unskippable": true,
+        "next": "day5_ending_true_14b"
     },
-    // 주사기가 바닥에 떨어져 굴러갔다
+    // 설화는 주인공에게만 보인다.
     "day5_ending_true_14b": {
-        character: null,
-        sfx: "sfx_glass_break.mp3",
-        unskippable: true,
-        next: "day5_ending_true_15"
+        "character": null,
+        "unskippable": true,
+        "next": "day5_ending_true_15"
     },
     "day5_ending_true_15": {
         character: "seolhwa_sad",
@@ -715,19 +818,19 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_11"
     },
     "day5_ending_resist_11": {
-        character: "seolhwa_normal",
-        charOpacity: 0.9,
-        next: "day5_ending_resist_12"
+        "character": "eunsu_shaking",
+        "charOpacity": 0.9,
+        "next": "day5_ending_resist_12"
     },
     "day5_ending_resist_12": {
-        character: "seolhwa_normal",
-        charOpacity: 0.9,
-        next: "day5_ending_resist_13"
+        "character": "eunsu_shaking",
+        "charOpacity": 0.9,
+        "next": "day5_ending_resist_13"
     },
     "day5_ending_resist_13": {
-        character: "seolhwa_normal",
-        charOpacity: 0.9,
-        next: "day5_ending_resist_14"
+        "character": "eunsu_shaking",
+        "charOpacity": 0.9,
+        "next": "day5_ending_resist_14"
     },
     "day5_ending_resist_14": {
         character: "eunsu_shaking",

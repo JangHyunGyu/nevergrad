@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-15",
+  "baselineCommit": "ef13bb41e8186c6dba1b18d833a25a5b7863f4a9",
+  "retiredSceneAliases": {
+    "day5_lunch_eunsu_1": "day5_after_confront_1",
+    "day5_lunch_eunsu_2": "day5_after_confront_2",
+    "day5_lunch_eunsu_3": "day5_after_confront_2",
+    "day5_lunch_eunsu_4": "day5_after_confront_2",
+    "day5_lunch_eunsu_5": "day5_after_confront_3",
+    "day5_lunch_eunsu_6": "day5_after_confront_4",
+    "day5_lunch_eunsu_7": "day5_after_confront_5",
+    "day5_lunch_eunsu_8": "day5_after_confront_6",
+    "day5_lunch_eunsu_9": "day5_after_confront_8",
+    "day5_lunch_eunsu_10": "day5_after_confront_8",
+    "day5_lunch_eunsu_11": "day5_after_confront_9",
+    "day5_lunch_eunsu_12": "day5_after_confront_10",
+    "day5_lunch_eunsu_13": "day5_after_confront_11",
+    "day5_lunch_eunsu_14": "day5_after_confront_12",
+    "day5_lunch_eunsu_15": "day5_after_confront_13",
+    "day5_lunch_eunsu_16": "day5_after_confront_13",
+    "day5_lunch_eunsu_17": "day5_after_confront_14",
+    "day5_lunch_eunsu_18": "day5_after_confront_15",
+    "day5_lunch_eunsu_19": "day5_after_confront_16",
+    "day5_lunch_eunsu_20": "day5_after_confront_17",
+    "day5_lunch_eunsu_21": "day5_after_confront_18",
+    "day5_lunch_eunsu_22": "day5_after_confront_18",
+    "day5_lunch_eunsu_23": "day5_after_confront_19",
+    "day5_lunch_eunsu_24": "day5_after_confront_observe",
+    "day5_lunch_eunsu_25": "day5_after_confront_19",
+    "day5_lunch_eunsu_26": "day5_after_confront_19",
+    "day5_lunch_eunsu_27": "day5_after_confront_19",
+    "day5_lunch_eunsu_28": "day5_after_confront_19",
+    "day5_lunch_eunsu_29": "day5_after_confront_19",
+    "day5_lunch_eunsu_30": "day5_after_confront_19",
+    "day5_lunch_eunsu_31": "day5_after_confront_19",
+    "day5_lunch_eunsu_32": "day5_after_confront_20",
+    "day5_lunch_eunsu_final": "day5_after_final_choice",
+    "day5_lunch_final_true": "day5_after_true_1",
+    "day5_lunch_final_forget": "day5_after_forget_1",
+    "day5_lunch_final_resist": "day5_after_resist_1",
+    "day5_lunch_final_ghost": "day5_after_ghost_1"
+  },
+  "addedScenes": [
+    "day5_morning_complicit_check",
+    "day5_morning_complicit_call",
+    "day5_morning_complicit_offer",
+    "day5_morning_complicit_accept",
+    "day5_lunch_complicit_1",
+    "day5_lunch_complicit_2",
+    "day5_after_confront_observe"
+  ],
+  "sceneContracts": {
+    "day5_lunch_seolhwa_1": {
+      "background": "hidden_service_passage",
+      "bgm": "chase.mp3",
+      "characters": {
+        "left": "yuna_weak",
+        "center": "seolhwa_ghost"
+      }
+    },
+    "day5_lunch_seolhwa_19": {
+      "characters": {
+        "left": "yuna_weak",
+        "center": "seolhwa_normal"
+      },
+      "background": "old_stairway"
+    },
+    "day5_after_confront_1": {
+      "background": "corridor_emergency",
+      "character": null,
+      "characters": {
+        "left": "yuna_weak"
+      },
+      "bgm": "confrontation.mp3"
+    },
+    "day5_after_resist_9": {
+      "character": "eunsu_shaking"
+    },
+    "day5_after_resist_10": {
+      "character": "eunsu_shaking"
+    },
+    "day5_ending_true_14a": {
+      "character": null
+    },
+    "day5_ending_true_14b": {
+      "character": null
+    },
+    "day5_ending_resist_11": {
+      "character": "eunsu_shaking"
+    },
+    "day5_ending_resist_12": {
+      "character": "eunsu_shaking"
+    },
+    "day5_ending_resist_13": {
+      "character": "eunsu_shaking"
+    },
+    "day5_morning_complicit_check": {
+      "character": null
+    },
+    "day5_morning_complicit_call": {
+      "background": "room_dark",
+      "character": null
+    },
+    "day5_morning_complicit_offer": {
+      "character": null
+    },
+    "day5_morning_complicit_accept": {
+      "character": null
+    },
+    "day5_lunch_complicit_1": {
+      "background": "faculty_office",
+      "bgm": "ending_dark.mp3",
+      "character": "eunsu_normal"
+    },
+    "day5_lunch_complicit_2": {
+      "character": null
+    },
+    "day5_after_confront_observe": {
+      "character": "eunsu_gentle"
+    }
+  }
+}

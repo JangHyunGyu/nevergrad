@@ -12,12 +12,12 @@ Object.assign(SCENARIO[5], {
     // Day 5 아침 진입점 (day4_night_end에서 연결)
     // ══════════════════════════════════════
     "day5_morning_start": {
-        background: "room_dark",
-        bgm: "heartbeat_loop.mp3",
-        character: null,
-        glitchLevel: 4,
-        unskippable: true,
-        next: "day5_morning_plan_branch"
+        "background": "room_dark",
+        "bgm": "heartbeat_loop.mp3",
+        "character": null,
+        "glitchLevel": 4,
+        "unskippable": true,
+        "next": "day5_morning_complicit_check"
     },
     "day5_morning_plan_branch": {
         character: null,
@@ -1102,10 +1102,18 @@ Object.assign(SCENARIO[5], {
 
     // ── CAGE 루트 종료 ──
     "day5_morning_end_cage": {
-        character: "eunsu_smile",
-        setFlags: ["route_cage", "stayed_with_eunsu"],
-        changeSlot: "afterschool",
-        next: "day5_after_start"
+        "character": "eunsu_smile",
+        "setFlags": [
+            "route_cage",
+            "stayed_with_eunsu"
+        ],
+        "changeSlot": "afterschool",
+        "next": "day5_after_start",
+        "clearFlags": [
+            "route_complicit",
+            "complicit_ready",
+            "stayed_with_sea"
+        ]
     },
 
     // ── FORGET 루트 종료 ──
@@ -1120,5 +1128,56 @@ Object.assign(SCENARIO[5], {
         character: null,
         changeSlot: "lunch",
         next: "day5_lunch_start"
+    },
+
+    "day5_morning_complicit_check": {
+        "character": null,
+        "condition": "complicit_route",
+        "fallback": "day5_morning_plan_branch",
+        "affinityChar": "eunsu",
+        "affinityBranches": [
+            {
+                "minAffinity": 50,
+                "next": "day5_morning_complicit_call"
+            },
+            {
+                "minAffinity": -100,
+                "next": "day5_morning_plan_branch"
+            }
+        ]
+    },
+
+    "day5_morning_complicit_call": {
+        "background": "room_dark",
+        "character": null,
+        "unskippable": true,
+        "next": "day5_morning_complicit_offer"
+    },
+
+    "day5_morning_complicit_offer": {
+        "character": null,
+        "choices": [
+            {
+                "next": "day5_morning_complicit_accept"
+            },
+            {
+                "next": "day5_morning_plan_branch"
+            }
+        ]
+    },
+
+    "day5_morning_complicit_accept": {
+        "character": null,
+        "setFlags": [
+            "route_complicit"
+        ],
+        "clearFlags": [
+            "stayed_with_eunsu",
+            "stayed_with_sea",
+            "route_cage",
+            "cage_route_sea"
+        ],
+        "changeSlot": "lunch",
+        "next": "day5_lunch_complicit_1"
     }
 });

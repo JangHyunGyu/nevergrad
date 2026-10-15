@@ -614,5 +614,21 @@
     },
     "day5_morning_end_run": {
         "text": "*몸을 돌려 계단 쪽으로 뛰었다.*"
+    },
+    "day5_morning_complicit_check": {
+        "text": ""
+    },
+    "day5_morning_complicit_call": {
+        "text": "*휴대폰이 울린다. 화면에 은수 선생님의 이름이 떠 있다.*"
+    },
+    "day5_morning_complicit_offer": {
+        "text": "오늘은 교무실로 와. 다음 아이를 맡아줘. 네 기록은 내가 옮길게.",
+        "choices": [
+            "도울게요.",
+            "아니요."
+        ]
+    },
+    "day5_morning_complicit_accept": {
+        "text": "*가방을 내려놓았다. 교무실로 가려면 정문으로 가면 된다.*"
     }
 }

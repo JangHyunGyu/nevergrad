@@ -614,5 +614,21 @@
     },
     "day5_morning_end_run": {
         "text": "*I turn and run toward the stairs.*"
+    },
+    "day5_morning_complicit_check": {
+        "text": ""
+    },
+    "day5_morning_complicit_call": {
+        "text": "*My phone rings. Ms. Eunsu’s name is on the screen.*"
+    },
+    "day5_morning_complicit_offer": {
+        "text": "Come to the faculty office today. Take care of the next student. I’ll move your record.",
+        "choices": [
+            "I’ll help.",
+            "No."
+        ]
+    },
+    "day5_morning_complicit_accept": {
+        "text": "*I put my bag down. The main gate will take me to the faculty office.*"
     }
 }

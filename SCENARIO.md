@@ -12036,7 +12036,7 @@ _캐릭터: `sea_cry`_
 ```text
 *팔을 놓지 않는다. 손끝이 내 교복 소매를 계속 구긴다.*
 
-말할 게 아니라면서 놓지도 않네. 내가 여기서 뭘 해야 하는지라도 말해. 듣고는 있잖아.
+그럼 놓아줘.
 ```
 
 ### `day4_after_sea_12loop_10`
@@ -12069,7 +12069,7 @@ _캐릭터: `sea_cry`_
 ```text
 *내가 팔찌를 보고 있다는 걸 세아가 알아챈다.*
 
-제대로 보려는 거야. 빼앗으려는 게 아니고. 내 글씨인 건 알겠는데 만든 건 기억 안 나.
+내 글씨인데. 만든 건 기억이 안 나.
 ```
 
 ### `day4_after_sea_12loop_13`
@@ -12425,7 +12425,7 @@ _캐릭터: `riin_neutral`_
 
 **나**
 ```text
-이제 말해주셔야죠? 제가 먼저 꺼냈으니까 못 들은 척은 하지 마세요. 겁주려고 온 게 아니라 답을 들으러 왔어요.
+이제 말씀해 주세요.
 ```
 
 ### `day4_after_riin_6`
@@ -13403,9 +13403,7 @@ _캐릭터: `seolhwa_sad`_
 
 **나**
 ```text
-*목소리는 들렸다. 하지만 욕실 문도, 환풍구도, 스피커도 울리지 않는다.*
-
-미안하다는 말은 들었어. 어디서 들리는지는 모르겠는데, 들었어. 설화야, 나한테 하는 말 맞지?
+설화야. 나한테 하는 말이지?
 ```
 
 ### `day4_night_mirror_hit2`
@@ -15836,6 +15834,38 @@ _source: `day5_1_morning.js / day5_morning.json`_
 *몸을 돌려 계단 쪽으로 뛰었다.*
 ```
 
+### `day5_morning_complicit_call`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_배경: `room_dark`_
+
+**나**
+```text
+*휴대폰이 울린다. 화면에 은수 선생님의 이름이 떠 있다.*
+```
+
+### `day5_morning_complicit_offer`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+
+**은수**
+```text
+오늘은 교무실로 와. 다음 아이를 맡아줘. 네 기록은 내가 옮길게.
+```
+
+**선택지**
+1. 도울게요.
+2. 아니요.
+
+### `day5_morning_complicit_accept`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+
+**나**
+```text
+*가방을 내려놓았다. 교무실로 가려면 정문으로 가면 된다.*
+```
+
 ## Day 5 - 점심 (`day5_2_lunch.js`)
 
 ### `day5_lunch_chase_1`
@@ -17029,11 +17059,11 @@ _캐릭터: `riin_casual_relief`_
 ### `day5_lunch_seolhwa_1`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
-_배경: `old_stairway` / BGM: `seolhwa_theme_broken.mp3` / 캐릭터: `left: yuna_weak`, `center: seolhwa_ghost`_
+_배경: `hidden_service_passage` / BGM: `chase.mp3` / 캐릭터: `left: yuna_weak`, `center: seolhwa_ghost`_
 
 **나**
 ```text
-*구관 3층으로 올라가는 계단. 유나를 부축하고 있다.*
+*유나를 부축해 좁은 배관 통로로 들어섰다. 뒤에서 셔터를 두드리는 소리가 이어진다.*
 ```
 
 ### `day5_lunch_seolhwa_2`
@@ -17043,7 +17073,7 @@ _캐릭터: `left: yuna_weak`, `center: seolhwa_ghost`_
 
 **나**
 ```text
-*계단 중간에 설화가 서 있다.*
+*통로 끝에 설화가 서 있다. 나는 걸음을 늦추지 않았다.*
 ```
 
 ### `day5_lunch_seolhwa_3`
@@ -17093,7 +17123,7 @@ _캐릭터: `left: yuna_weak`, `center: seolhwa_normal`_
 
 **나**
 ```text
-*대신 내 왼손이 난간을 잡았다. 손바닥 아래, 페인트가 벗겨진 자리에 얕은 흠집이 만져졌다.*
+*왼손으로 배관을 짚었다. 벗겨진 페인트 밑으로 얕은 흠집이 이어져 있다.*
 ```
 
 ### `day5_lunch_seolhwa_8`
@@ -17143,7 +17173,7 @@ _캐릭터: `left: yuna_weak`, `center: seolhwa_normal`_
 
 **나**
 ```text
-*말이 끝나자 계단의 흠집을 따라 비 오던 복도와 차가운 손, 구관 3층의 깨지지 않은 창문이 떠오른다.*
+*흠집을 따라가자 비 오던 복도와 차가운 손, 구관 3층의 깨지지 않은 창문이 떠올랐다.*
 ```
 
 ### `day5_lunch_seolhwa_13`
@@ -17153,9 +17183,9 @@ _캐릭터: `left: yuna_weak`, `center: seolhwa_normal`_
 
 **나**
 ```text
-*계단에 앉아 무릎을 감싸안았다. 4일차 밤, 욕실 타일에 남았던 냉기가 떠올랐다.*
+*유나의 팔을 어깨에 고쳐 걸쳤다. 배관 끝에서 찬물이 떨어진다.*
 
-그날도 옆에 있었지. 난 자꾸 네가 있는지만 확인했고.
+욕실에서도 옆에 있었지?
 ```
 
 ### `day5_lunch_seolhwa_14`
@@ -17211,7 +17241,7 @@ _캐릭터: `left: yuna_weak`, `center: seolhwa_normal`_
 ### `day5_lunch_seolhwa_19`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: seolhwa_normal`_
+_배경: `old_stairway` / 캐릭터: `left: yuna_weak`, `center: seolhwa_normal`_
 
 **나**
 ```text
@@ -17586,400 +17616,6 @@ _캐릭터: `left: yuna_weak`, `center: seolhwa_fading`_
 *등 뒤에서 발소리가 울렸다.*
 ```
 
-### `day5_lunch_eunsu_1`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_배경: `corridor_emergency` / BGM: `confrontation.mp3`_
-
-**나**
-```text
-*뒤에서 발소리가 난다. 계단을 올라오는 소리.*
-```
-
-### `day5_lunch_eunsu_2`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-
-**나**
-```text
-*발소리가 계단을 한 칸씩 오른다. 뛰지 않는다. 숨을 고르는 소리도 없다.*
-```
-
-### `day5_lunch_eunsu_3`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-
-**나**
-```text
-*발소리가 점점 가까워진다. 콘크리트에 부딪히는 은수 선생님의 구두 소리.*
-```
-
-### `day5_lunch_eunsu_4`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-
-**나**
-```text
-*구두 소리가 계단 끝에서 끊겼다.*
-```
-
-### `day5_lunch_eunsu_5`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_obsessed`_
-
-**은수**
-```text
-*모습을 드러낸 사람은 숨이 차 있고 머리카락도 흐트러져 있다. 교실에서 보던 정돈된 모습과 다르다.*
-```
-
-### `day5_lunch_eunsu_6`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_gentle`_
-
-**은수**
-```text
-*입을 열었다 닫고 평소 목소리로 말한다.*
-```
-
-### `day5_lunch_eunsu_7`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**박은수**
-```text
-{name}. 거기서 멈춰. 비상구 쪽은 폐쇄 구역이야.
-```
-
-### `day5_lunch_eunsu_8`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**나**
-```text
-*내가 뒷걸음질치자 은수 선생님이 주사기를 몸 앞으로 옮긴다. 바늘이 비상등 빛을 받았다.*
-
-그걸로 또 데려가시게요? 멈추라고 하시기 전에 내려놓으세요.
-```
-
-### `day5_lunch_eunsu_9`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**은수**
-```text
-*이마가 젖어 있고 눈 밑은 어둡다.*
-
-*비상구에서 찬 바람이 들어왔다.*
-```
-
-### `day5_lunch_eunsu_10`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**박은수**
-```text
-기록표가 전부 젖어 있었어.
-```
-
-### `day5_lunch_eunsu_11`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**박은수**
-```text
-비가 오든 눈이 오든.
-```
-
-### `day5_lunch_eunsu_12`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**박은수**
-```text
-그런데 마지막 줄은 항상 같았어. `회수 완료`.
-```
-
-### `day5_lunch_eunsu_13`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**박은수**
-```text
-이번에는 그 줄을 쓰기 싫었어.
-```
-
-### `day5_lunch_eunsu_14`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**박은수**
-```text
-식단표, 자리, 복도. 네가 싫어하던 칸을 하나씩 지웠어. 보고서에는 조용해졌다고 썼고.
-```
-
-### `day5_lunch_eunsu_15`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_gentle`_
-
-**나**
-```text
-*은수가 한 걸음 다가온다.*
-
-가까이 오지 마세요. 그 줄 쓰기 싫으면 안 쓰면 돼요.
-```
-
-### `day5_lunch_eunsu_16`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**박은수**
-```text
-이번에도 절차는 같았어. 그런데 네가 교실에 들어오자 펜촉이 종이에 두 번 걸렸어.
-```
-
-### `day5_lunch_eunsu_17`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**박은수**
-```text
-네가 나를 못 알아볼 때마다 출석부에 새 줄이 생겼어.
-```
-
-### `day5_lunch_eunsu_18`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_warm`_
-
-**나**
-```text
-*은수 선생님이 비상구 앞에서 나온다. 나와 3미터쯤 거리를 두고 선다.*
-
-제가 못 알아본 게 싫었다면서요. 또 지우면 다시 그렇게 되잖아요.
-```
-
-### `day5_lunch_eunsu_19`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_obsessed`_
-
-**은수**
-```text
-*은수 선생님이 주머니에서 주사기를 꺼냈다.*
-
-*형광등 아래 액체가 반짝였다. 라벨에는 작은 글씨로 `RESET / S-13`. 바늘 끝에 방울 하나가 매달렸다.*
-```
-
-### `day5_lunch_eunsu_20`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_obsessed`_
-
-**박은수**
-```text
-지금 정해, {name}.
-```
-
-### `day5_lunch_eunsu_21`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_obsessed`_
-
-**박은수**
-```text
-이거 한 대면 끝나. 눈만 감고 있으면 돼.
-```
-
-### `day5_lunch_eunsu_22`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_obsessed`_
-
-**박은수**
-```text
-다음 출석부엔 새 이름으로 적을게.
-```
-
-### `day5_lunch_eunsu_23`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_obsessed`_
-
-**나**
-```text
-*은수는 입을 다물었다.*
-```
-
-### `day5_lunch_eunsu_24`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_gentle`_
-
-**나**
-```text
-*비상구 틈으로 바람이 들어온다. 교실 먼지 냄새가 잠깐 밀려난다.*
-```
-
-**선택지**
-1. 주사기를 계속 지켜본다
-2. 은수의 목소리에 귀 기울인다
-3. 설화를 찾는다
-
-### `day5_lunch_eunsu_25`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_gentle`_
-
-**박은수**
-```text
-돌아와.
-```
-
-### `day5_lunch_eunsu_26`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_shaking`_
-
-**나**
-```text
-*주사기 끝에서 액체 한 방울이 바닥에 떨어졌다. 은수 선생님은 손을 내리지 않는다.*
-
-돌아가면 저걸 놓으실 건가요? 손에 든 채로 돌아오라고 하지 마세요.
-```
-
-### `day5_lunch_eunsu_27`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_crying`_
-
-**나**
-```text
-*눈가의 물기가 턱 아래로 떨어졌다. 은수 선생님은 주사기만 계속 들고 있다.*
-
-울면서도 손은 그대로네요. 저한테 뭘 믿으라는 거예요?
-```
-
-### `day5_lunch_eunsu_28`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_crying`_
-
-**나**
-```text
-*비상구 바람이 셔츠를 파고든다. 둘의 숨소리만 들리고 유나는 벽에 기대 움직이지 않는다.*
-```
-
-### `day5_lunch_eunsu_29`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_crying`_
-
-**나**
-```text
-*바늘 끝과 문손잡이를 번갈아 봤다.*
-```
-
-### `day5_lunch_eunsu_30`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_crying`_
-
-**나**
-```text
-*밀치고 뛰면 된다. 저 손은 나를 붙들 힘이 없다. 그런데 발끝이 벌써 교실 쪽으로 돌아가 있다.*
-```
-
-### `day5_lunch_eunsu_31`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_crying`_
-
-**은수**
-```text
-*한 발 더 다가왔다. 이제 팔을 뻗으면 닿는 거리다.*
-```
-
-### `day5_lunch_eunsu_32`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_crying`, `right: seolhwa_fading`_
-
-**설화**
-```text
-*선생님 뒤 계단 아래에 설화가 서 있다. 시선은 내게 고정돼 있다.*
-```
-
-### `day5_lunch_eunsu_final`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `left: yuna_weak`, `center: eunsu_crying`, `right: seolhwa_fading`_
-
-**나**
-```text
-*시야 가장자리가 붉게 번진다. 22:58. 2분.*
-
-*시야가 흐려져 한 문장만 또렷하다.*
-
-***`...지워주세요.`***
-
-*나머지 두 문장은 읽을 수 없다.*
-```
-
-**선택지**
-1. 안 돼요. 기억할 거예요.
-2. 지워주세요.
-3. 같이 나가요, 선생님.
-
-### `day5_lunch_final_true`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-
-**나**
-```text
-*기억을 지우지 않기로 했다.*
-```
-
-### `day5_lunch_final_forget`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-
-**나**
-```text
-*기억을 지우기로 했다.*
-```
-
-### `day5_lunch_final_resist`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-
-**나**
-```text
-*함께 나가기로 했다.*
-```
-
-### `day5_lunch_final_ghost`
-
-_source: `day5_2_lunch.js / day5_lunch.json`_
-_캐릭터: `seolhwa_normal`_
-
-**설화**
-```text
-내가 할게.
-```
-
 ### `day5_lunch_end`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
@@ -17989,12 +17625,30 @@ _source: `day5_2_lunch.js / day5_lunch.json`_
 *점심시간이 끝났다.*
 ```
 
+### `day5_lunch_complicit_1`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+_배경: `faculty_office` / BGM: `ending_dark.mp3` / 캐릭터: `eunsu_normal`_
+
+**은수**
+```text
+학생 명단은 아래쪽이야. 너는 이 칸에 써.
+```
+
+### `day5_lunch_complicit_2`
+
+_source: `day5_2_lunch.js / day5_lunch.json`_
+
+**나**
+```text
+*유나의 이름 앞에는 아직 ‘격리’라고 적혀 있다. 나는 출석부를 덮었다.*
+```
+
 ## Day 5 - 방과후 (`day5_3_afterschool.js`)
 
 ### `day5_after_start`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_배경: `black` / BGM: `confrontation.mp3`_
 
 **지문**
 ```text
@@ -18292,7 +17946,7 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 ### `day5_after_confront_1`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_배경: `corridor_emergency`_
+_배경: `corridor_emergency` / BGM: `confrontation.mp3` / 캐릭터: `left: yuna_weak`_
 
 **나**
 ```text
@@ -18348,9 +18002,9 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 
 **나**
 ```text
-*내가 뒷걸음질치자 은수 선생님이 주사기를 몸 앞으로 옮긴다. 바늘이 비상등 아래에서 짧게 빛난다.*
+*은수가 주사기를 오른손으로 옮긴다. 바늘이 비상등 아래에서 짧게 빛난다.*
 
-비상구가 막힌 게 아니라 선생님이 막고 계시잖아요. 그걸 내려놓고 말하세요.
+그거 내려놓으세요.
 ```
 
 ### `day5_after_confront_7`
@@ -18440,9 +18094,9 @@ _캐릭터: `eunsu_gentle`_
 
 **나**
 ```text
-*은수 선생님이 비상구 앞에서 나와 3미터쯤 거리를 두고 선다. 주머니에서 주사기를 꺼낸다.*
+*은수 선생님이 주사기를 쥔 채 다가왔다. 비상구까지 세 걸음.*
 
-그걸 꺼내실 줄 알았어요. 이번에도 제가 모르는 사람이 되길 바라세요?
+또 지우시게요?
 ```
 
 ### `day5_after_confront_16`
@@ -18483,7 +18137,7 @@ _캐릭터: `eunsu_crying`_
 ```text
 *주사기 끝에서 액체 한 방울이 바닥에 떨어졌다. 은수 선생님은 손을 내리지 않았다.*
 
-돌아가라는 말부터 그만하세요. 저는 저 문으로 나가고 싶어요.
+저 문으로 나갈 거예요.
 ```
 
 ### `day5_after_confront_20`
@@ -18503,7 +18157,13 @@ _캐릭터: `center: eunsu_crying`, `right: seolhwa_fading`_
 
 **나**
 ```text
-*밀치면 지나갈 수 있다. 그런데 몸은 이미 교실 쪽으로 기울어 있다.*
+*시야 가장자리가 붉게 번진다. 22:58. 2분.*
+
+*시야가 흐려져 한 문장만 또렷하다.*
+
+***`...지워주세요.`***
+
+*나머지 두 문장은 읽을 수 없다.*
 ```
 
 **선택지**
@@ -18849,21 +18509,23 @@ _캐릭터: `seolhwa_fading`_
 ### `day5_after_resist_9`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_캐릭터: `seolhwa_fading`_
+_캐릭터: `eunsu_shaking`_
 
-**설화**
+**나**
 ```text
-새 이름표가 붙을 때마다 웃었어. 그런데 갈수록 오래 못 웃더라.
+*그 말을 입 밖으로 옮겼다.*
+
+새 이름표가 붙을 때마다 웃으셨죠. 갈수록 오래 못 웃으셨고요.
 ```
 
 ### `day5_after_resist_10`
 
 _source: `day5_3_afterschool.js / day5_afterschool.json`_
-_캐릭터: `seolhwa_fading`_
+_캐릭터: `eunsu_shaking`_
 
-**설화**
+**나**
 ```text
-선생님도 나가야 해.
+선생님도 나가셔야 해요.
 ```
 
 ### `day5_after_resist_11`
@@ -19129,6 +18791,21 @@ _source: `day5_3_afterschool.js / day5_afterschool.json`_
 *해가 졌다.*
 ```
 
+### `day5_after_confront_observe`
+
+_source: `day5_3_afterschool.js / day5_afterschool.json`_
+_캐릭터: `eunsu_gentle` / 캐릭터: `left: yuna_weak`, `center: eunsu_gentle`_
+
+**나**
+```text
+*비상구 틈으로 바람이 들어온다. 교실 먼지 냄새가 잠깐 밀려난다.*
+```
+
+**선택지**
+1. 주사기를 계속 지켜본다
+2. 은수의 목소리에 귀 기울인다
+3. 설화를 찾는다
+
 ## Day 5 - 밤 (`day5_4_night.js`)
 
 ### `day5_night_start`
@@ -19264,7 +18941,7 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **지문**
 ```text
-*선생님은 눈을 감고 비상구 앞에서 비켜섰다.*
+*은수 선생님이 주사기를 내려놓고 비상구 앞에서 비켜섰다.*
 ```
 
 ### `day5_ending_true_5`
@@ -19371,20 +19048,19 @@ _캐릭터: `seolhwa_fading`_
 ### `day5_ending_true_14a`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `eunsu_shaking`_
 
-**박은수**
+**나**
 ```text
-결국 그 아이가 나를 막았네.
+*문 안쪽에서 은수 선생님의 발소리가 멀어진다.*
 ```
 
 ### `day5_ending_true_14b`
 
 _source: `day5_4_night.js / day5_night.json`_
 
-**지문**
+**나**
 ```text
-*선생님의 손에서 힘이 빠졌다. 주사기가 바닥에 떨어져 굴러갔다.*
+*유나가 내 소매를 잡았다. 설화는 문 안쪽에 그대로 서 있다.*
 ```
 
 ### `day5_ending_true_15`
@@ -20148,31 +19824,33 @@ _캐릭터: `eunsu_gentle`_
 ### `day5_ending_resist_11`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `seolhwa_normal`_
+_캐릭터: `eunsu_shaking`_
 
-**설화**
+**나**
 ```text
-새 이름표가 붙을 때마다 선생님은 웃었어.
+*설화의 말을 따라 입을 열었다.*
+
+새 이름표가 붙을 때마다 웃으셨죠.
 ```
 
 ### `day5_ending_resist_12`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `seolhwa_normal`_
+_캐릭터: `eunsu_shaking`_
 
-**설화**
+**나**
 ```text
-횟수가 늘수록 짧아졌고.
+횟수가 늘수록 짧아졌고요.
 ```
 
 ### `day5_ending_resist_13`
 
 _source: `day5_4_night.js / day5_night.json`_
-_캐릭터: `seolhwa_normal`_
+_캐릭터: `eunsu_shaking`_
 
-**설화**
+**나**
 ```text
-선생님도 나가야 해.
+선생님도 나가셔야 해요.
 ```
 
 ### `day5_ending_resist_14`
@@ -21810,7 +21488,7 @@ _source: `day5_night.json`_
 ```
 
 <!--
-sync-stats: {"sceneFiles":20,"scenarioScenes":2112,"i18nEntries":2172,"displayedText":2115,"choices":146,"i18nOnly":60}
+sync-stats: {"sceneFiles":20,"scenarioScenes":2082,"i18nEntries":2142,"displayedText":2084,"choices":145,"i18nOnly":60}
 -->
 
 <!-- END NEVERGRAD KO DISPLAY SYNC -->

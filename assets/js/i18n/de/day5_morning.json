@@ -614,5 +614,21 @@
     },
     "day5_morning_end_run": {
         "text": "*Ich drehe mich um und renne zur Treppe.*"
+    },
+    "day5_morning_complicit_check": {
+        "text": ""
+    },
+    "day5_morning_complicit_call": {
+        "text": "*Mein Handy klingelt. Frau Eunsus Name steht auf dem Display.*"
+    },
+    "day5_morning_complicit_offer": {
+        "text": "Komm heute ins Lehrerzimmer. Kümmere dich um den nächsten Schüler. Ich versetze deinen Eintrag.",
+        "choices": [
+            "Ich helfe Ihnen.",
+            "Nein."
+        ]
+    },
+    "day5_morning_complicit_accept": {
+        "text": "*Ich stelle meine Tasche ab. Zum Lehrerzimmer komme ich durch das Haupttor.*"
     }
 }

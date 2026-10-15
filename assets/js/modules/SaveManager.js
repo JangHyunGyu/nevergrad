@@ -101,7 +101,8 @@ class SaveManager {
         if (!Number.isInteger(gameState.currentDay) || gameState.currentDay < 1 || gameState.currentDay > 5) return false;
         if (typeof gameState.currentScene !== 'string' || !gameState.currentScene.trim()) return false;
         if (!gameState.currentScene.startsWith(`day${gameState.currentDay}_`)) return false;
-        if (typeof SCENARIO !== 'undefined' && !SCENARIO[gameState.currentDay]?.[gameState.currentScene]) return false;
+        const sceneId = (typeof CONFIG !== 'undefined' && CONFIG.SCENE_ALIASES?.[gameState.currentScene]) || gameState.currentScene;
+        if (typeof SCENARIO !== 'undefined' && !SCENARIO[gameState.currentDay]?.[sceneId]) return false;
         return true;
     }
 
@@ -112,6 +113,12 @@ class SaveManager {
             const slotData = JSON.parse(raw);
             const gameState = slotData?.gameState || slotData;
             if (!this._isValidGameState(gameState)) return null;
+            const migratedScene = typeof CONFIG !== 'undefined' && CONFIG.SCENE_ALIASES?.[gameState.currentScene];
+            if (migratedScene) {
+                gameState.currentScene = migratedScene;
+                gameState.currentSlot = 'afterschool';
+                slotData.currentScene = migratedScene;
+            }
             return { slotData, gameState };
         } catch (_) {
             return null;
@@ -370,7 +377,11 @@ class SaveManager {
      * @returns {{index: number, text: string, time: number}|null}
      */
     getPreviousChoice(sceneId) {
-        return this.getChoiceHistory()[sceneId] || null;
+        const history = this.getChoiceHistory();
+        if (history[sceneId]) return history[sceneId];
+        const aliases = typeof CONFIG !== 'undefined' ? CONFIG.SCENE_ALIASES || {} : {};
+        const legacyId = Object.keys(aliases).find(id => aliases[id] === sceneId && history[id]);
+        return legacyId ? history[legacyId] : null;
     }
 
     /**

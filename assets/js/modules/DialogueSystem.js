@@ -14,6 +14,7 @@ class DialogueSystem {
         this._typeTimer = null;
         this._fullText = "";
         this._onComplete = null;
+        this._advanceBlockedUntil = 0;
     }
 
     /**
@@ -74,6 +75,7 @@ class DialogueSystem {
      * @param {boolean} [options.unskippable] - true면 클릭으로 스킵 불가
      */
     type(name, text, onComplete = null, options = {}) {
+        this.resetAdvanceCooldown();
         // 이전 타이머 정리 (재진입 방지)
         clearInterval(this._typeTimer);
         clearTimeout(this._messengerTimer);
@@ -189,7 +191,22 @@ class DialogueSystem {
                 if (this.nameEl) this.nameEl.classList.add('hidden');
             }
         }
+        this.armAdvanceCooldown();
         this._finishTyping();
+    }
+
+    armAdvanceCooldown() {
+        const now = typeof performance === 'undefined' ? Date.now() : performance.now();
+        this._advanceBlockedUntil = now + 250;
+    }
+
+    isAdvanceCoolingDown() {
+        const now = typeof performance === 'undefined' ? Date.now() : performance.now();
+        return now < this._advanceBlockedUntil;
+    }
+
+    resetAdvanceCooldown() {
+        this._advanceBlockedUntil = 0;
     }
 
     _finishTyping() {
@@ -253,6 +270,7 @@ class DialogueSystem {
     }
 
     cancel() {
+        this.resetAdvanceCooldown();
         clearInterval(this._typeTimer);
         clearTimeout(this._messengerTimer);
         this._typeTimer = null;

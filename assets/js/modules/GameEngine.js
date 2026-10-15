@@ -490,6 +490,7 @@ class GameEngine {
         const dialogueBox = document.getElementById('dialogue-box');
         const advanceDialogue = () => {
             if (this._clickLocked) return;
+            if (this.dialogue.isAdvanceCoolingDown?.()) return;
             this.audio?.playUIDialogueAdvance();
 
             if (this.dialogue.isTyping) {

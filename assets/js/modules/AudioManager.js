@@ -1025,6 +1025,7 @@ class AudioManager {
             riin: { frequency: 470, wave: 'sine', cutoff: 1300, duration: 0.034, pan: 0, rhythm: 'steady' },
             yuna: { frequency: 810, wave: 'sine', cutoff: 2200, duration: 0.028, pan: 0, rhythm: 'light' },
             seolhwa: { frequency: 350, wave: 'sine', cutoff: 680, duration: 0.095, pan: -0.45, rhythm: 'echo' },
+            seolhwa_clear: { frequency: 700, wave: 'sine', cutoff: 20000, duration: 0.028, pan: 0, rhythm: 'steady' },
             system: { frequency: 1420, wave: 'square', cutoff: 2600, duration: 0.018, pan: 0, rhythm: 'document' }
         };
         return textures[charId] || null;

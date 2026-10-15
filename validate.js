@@ -1122,6 +1122,7 @@ const silentSceneIds = new Set([
     'day5_lunch_right_timeout',
     'day5_night_set_high_affinity',
     'day5_night_set_high_sea_affinity',
+    'day5_night_set_high_seolhwa_affinity',
     'day5_night_set_complicit_ready',
     'day5_ending_true_32',
     'day5_observer_cupid_check',

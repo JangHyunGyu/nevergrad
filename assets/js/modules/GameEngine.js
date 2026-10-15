@@ -932,7 +932,8 @@ class GameEngine {
         this._waitingForText = !this.i18n.has(sceneId) || !!(scene.choices && !Array.isArray(t.choices));
         const name = this._resolveSpeakerName(sceneId);
         const extraVars = this._buildSceneVars(sceneId, scene);
-        const text = this.i18n.resolve(t.text, this.state.playerName, extraVars);
+        const skipSlotText = scene.skipTextFlags?.some(flag => this.state.hasFlag(flag));
+        const text = skipSlotText ? '' : this.i18n.resolve(t.text, this.state.playerName, extraVars);
         this.renderer.setMediaOverlay?.(this._buildSceneMediaOverlay(sceneId, scene, t, text, extraVars));
 
         this._updateHUD();
@@ -952,6 +953,7 @@ class GameEngine {
         typeOpts.day = this.state.currentDay;
         typeOpts.silentTyping = !!(scene.glitch?.silence || scene.glitch?.silenceAll);
         if (scene.typingSpeed !== undefined) typeOpts.typingSpeed = scene.typingSpeed;
+        if (scene.voicePreset) typeOpts.voicePreset = scene.voicePreset;
         if (scene.textPace) typeOpts.textPace = scene.textPace;
         if (scene.typingPause) typeOpts.typingPause = scene.typingPause;
         if (scene.unskippable || this._isEndingScene(sceneId)) typeOpts.unskippable = true;
@@ -973,7 +975,7 @@ class GameEngine {
 
         // 선택지
         if (this._shouldAutoAdvanceSilentScene(scene, text)) {
-            this._queueAutoAdvance(scene);
+            this._queueAutoAdvance(scene, skipSlotText ? 0 : undefined);
             return;
         }
 

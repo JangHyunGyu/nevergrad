@@ -570,17 +570,17 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_pills_pink_2"
     },
     "day5_lunch_pills_pink_2": {
-        background: "cg_gate_bloom",
+        background: "old_infirmary",
         character: null,
-        bgm: "spring_bright.mp3",
         unskippable: true,
         next: "day5_lunch_pills_pink_3"
     },
     "day5_lunch_pills_pink_3": {
-        background: "cg_gate_bloom",
+        background: "old_infirmary",
         character: null,
         unskippable: true,
-        redirect: "cupid-gate"
+        setFlags: ["caught_by_riin"],
+        next: "day5_lunch_end"
     },
     "day5_lunch_pills_black_1": {
         background: "old_infirmary",
@@ -1450,6 +1450,7 @@ Object.assign(SCENARIO[5], {
     },
 
     "day5_lunch_end": {
+        skipTextFlags: ["route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
         character: null,
         changeSlot: "afterschool",
         next: "day5_after_start"

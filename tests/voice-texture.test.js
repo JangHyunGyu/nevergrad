@@ -43,6 +43,17 @@ test('voice texture comes from the speaker and later genre state', () => {
     assert.ok(audio.getVoiceTexture('seolhwa').cutoff < audio.getVoiceTexture('sea').cutoff);
 });
 
+test('farewell voice override clears Seolhwa filtering for one line only', () => {
+    const h = harness();
+    h.dialogue.type('Seolhwa', 'Remember me', null, { charId: 'seolhwa', voicePreset: 'seolhwa_clear' });
+    assert.equal(h.dialogue._voiceTexture.cutoff, 20000);
+    assert.equal(h.dialogue._voiceTexture.pan, 0);
+    assert.equal(h.dialogue._voiceTexture.rhythm, 'steady');
+    h.dialogue.type('Seolhwa', 'Another line', null, { charId: 'seolhwa' });
+    assert.equal(h.dialogue._voiceTexture.cutoff, 680);
+    assert.equal(h.dialogue._voiceTexture.pan, -0.45);
+});
+
 test('shutter hold reveals nothing for 399ms and then reveals the complete line once', () => {
     const h = harness(); let completions = 0;
     h.dialogue.type('', 'Shutter impact', () => completions++, { typingPause: 400, typingSpeed: 0 });

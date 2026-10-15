@@ -1636,9 +1636,9 @@ var SCENARIO_SPEAKERS = {
     "day5_lunch_pills_pink_ask": "me",
     "day5_lunch_pills_black_ask": "me",
     "day5_lunch_pills_2": "riin_full",
-    "day5_lunch_pills_pink_1": "me",
-    "day5_lunch_pills_pink_2": "me",
-    "day5_lunch_pills_pink_3": "me",
+    "day5_lunch_pills_pink_1": "",
+    "day5_lunch_pills_pink_2": "",
+    "day5_lunch_pills_pink_3": "",
     "day5_lunch_pills_black_1": "me",
     "day5_lunch_right_14": "riin",
     "day5_lunch_right_15": "riin",
@@ -2030,7 +2030,24 @@ var SCENARIO_SPEAKERS = {
     "day5_ending_complicit_6": "me",
     "day5_ending_complicit_7": "eunsu_full",
     "day5_ending_complicit_14": "me",
-    "day5_ending_complicit_16": "me"
+    "day5_ending_complicit_16": "me",
+    "day5_night_seolhwa_affinity_check": "",
+    "day5_night_set_high_seolhwa_affinity": "",
+    "day5_ending_true_voice_check": "",
+    "day5_ending_true_16_clear_intro": "",
+    "day5_ending_true_16_clear": "seolhwa",
+    "day5_ending_true_riin_check": "",
+    "day5_ending_true_27_riin": "",
+    "day5_ending_true_27_riin_2": "",
+    "day5_ending_true_sea_check": "",
+    "day5_ending_true_27_sea": "",
+    "day5_ending_true_27_sea_2": "sea",
+    "day5_ending_true_memory_check": "",
+    "day5_ending_true_30_memory": "",
+    "day5_ending_escape_riin_check": "",
+    "day5_ending_escape_riin": "",
+    "day5_ending_escape_sea_check": "",
+    "day5_ending_escape_sea": ""
 };
 
 /* Dialogue balance speaker assignments: 2026-10-04. */

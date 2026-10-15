@@ -16617,9 +16617,9 @@ _배경: `cg_riin_two_pills`_
 _source: `day5_2_lunch.js / day5_lunch.json`_
 _배경: `cg_riin_two_pills`_
 
-**나**
+**지문**
 ```text
-*분홍 알약을 삼키자 목 안이 뜨거워진다. 혀에는 단맛이 남는다.*
+*분홍 알약을 삼키자 혀에 단맛이 남는다. 리인은 포도당 위약에 진정 성분만 조금 넣었다며 빈 약 포장을 펼쳐 보였다.*
 ```
 
 ### `day5_lunch_pills_pink_ask`
@@ -16629,27 +16629,27 @@ _배경: `cg_riin_two_pills`_
 
 **나**
 ```text
-달다.
+기억 지우는 약은 아닌 거죠?
 ```
 
 ### `day5_lunch_pills_pink_2`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
-_배경: `cg_gate_bloom` / BGM: `spring_bright.mp3`_
+_배경: `old_infirmary`_
 
-**나**
+**지문**
 ```text
-*보건실 천장이 흐릿해진다. 바닥을 짚으려 손을 뻗었는데 어느새 차가운 교문을 붙잡고 있다. 발밑에는 짓밟힌 꽃잎이 흩어져 있다.*
+*리인이 고개를 끄덕였다. 약기운에 누적된 M-13 금단 어지럼증이 겹쳐 캐비닛을 짚었다. 리인이 비상구 열쇠를 꺼내기도 전에 추격조가 방화 셔터를 강제로 열었다.*
 ```
 
 ### `day5_lunch_pills_pink_3`
 
 _source: `day5_2_lunch.js / day5_lunch.json`_
-_배경: `cg_gate_bloom`_
+_배경: `old_infirmary`_
 
-**나**
+**지문**
 ```text
-*교문 너머에서 등교 종이 울린다. 교복 소매를 내려다본다.*
+*추격조가 내 팔을 등 뒤로 꺾었다. 리인이 소매 끝에 ‘비상구’라고 적으려다 손목을 붙잡혔다. 두 사람 사이로 셔터가 내려왔고 나는 복도 반대편으로 끌려갔다.*
 ```
 
 ### `day5_lunch_pills_black_1`
@@ -21169,6 +21169,88 @@ _source: `day5_4_night.js / day5_night.json`_
 *내가 먼저 웃었다.*
 ```
 
+### `day5_ending_true_16_clear_intro`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**지문**
+```text
+*설화가 입을 열자 목소리에 섞이던 낮은 잡음이 걷혔다. 7번째 주기, 구관 계단 뒤편에서 듣던 목소리가 들렸다.*
+```
+
+### `day5_ending_true_16_clear`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `seolhwa_normal`_
+
+**설화**
+```text
+그렇게 불러준 건 처음이야.
+```
+
+### `day5_ending_true_27_riin`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**지문**
+```text
+*기사 아래에 추가 제출 자료가 실렸다. 함께 빠져나온 리인 선생님이 빼돌린 6주기 분량의 실제 투약 대조표와 원본 차트였다.*
+```
+
+### `day5_ending_true_27_riin_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**지문**
+```text
+*투약 날짜 옆마다 재단의 승인 번호가 남아 있었다. 공익제보에 첨부된 그 기록 때문에 재단은 연구 책임자 한 사람에게 책임을 떠넘길 수 없었다.*
+```
+
+### `day5_ending_true_27_sea`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**지문**
+```text
+*시설에서 함께 빠져나온 세아는 보호 조치를 받았다. 며칠 뒤, 세아와 학교 밖 골목을 걸었다. 세아는 출석부 대신 골목 지도를 들고 있었다.*
+```
+
+### `day5_ending_true_27_sea_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**세아**
+```text
+완장도 안 차고 이렇게 걸어본 건 처음이네. 다음 골목도 가볼까?
+```
+
+### `day5_ending_true_30_memory`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**지문**
+```text
+*7번째 주기에 구관 계단 뒤편에서 나눴던 약속이 문장 끝까지 떠올랐다. 설화의 이름 옆에 적었다. ‘다음에는 여기 말고 밖에서 만나.’*
+```
+
+### `day5_ending_escape_riin`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**지문**
+```text
+*함께 나온 리인 선생님은 시설 내부 조사의 참고인이 됐다. 조사에 가기 전, 선생님은 보관해 둔 차트의 위치를 적어 건넸다.*
+```
+
+### `day5_ending_escape_sea`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**지문**
+```text
+*같이 빠져나온 세아는 학교와 떨어진 외부 보호 시설로 옮겨 갔다. 도착했다는 연락 끝에 골목에서 산 빵 사진이 붙어 있었다.*
+```
+
 # 추가 i18n 표시 텍스트
 
 아래 항목은 시나리오 JS 노드는 아니지만 한국어 i18n에 존재하는 보조 표시 텍스트다.
@@ -21728,7 +21810,7 @@ _source: `day5_night.json`_
 ```
 
 <!--
-sync-stats: {"sceneFiles":20,"scenarioScenes":2095,"i18nEntries":2155,"displayedText":2106,"choices":146,"i18nOnly":60}
+sync-stats: {"sceneFiles":20,"scenarioScenes":2112,"i18nEntries":2172,"displayedText":2115,"choices":146,"i18nOnly":60}
 -->
 
 <!-- END NEVERGRAD KO DISPLAY SYNC -->

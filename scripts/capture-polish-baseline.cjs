@@ -26,7 +26,7 @@ const { execFileSync } = require('child_process');
         });
         await page.goto('http://127.0.0.1:4178/');
         await page.waitForFunction(() => window.game?.i18n?.loaded?.day1);
-        await page.addStyleTag({ content: '*, *::before, *::after { animation: none !important; transition: none !important; }' });
+        await page.addStyleTag({ content: '*, *::before, *::after { animation: none !important; transition: none !important; } .save-toast { visibility: hidden !important; }' });
         await page.evaluate(() => {
             document.querySelectorAll('.save-toast').forEach(el => el.remove());
             document.getElementById('title-screen').classList.add('title-intro-complete');

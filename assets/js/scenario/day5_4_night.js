@@ -16,11 +16,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
 Object.assign(SCENARIO[5], {
 
     "day5_night_start": {
+        skipTextFlags: ["route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
         background: "black",
         bgm: null,
         character: null,
         stopSfx: true,
-        clearFlags: ["high_eunsu_affinity", "high_sea_affinity", "complicit_ready"],
+        clearFlags: ["high_eunsu_affinity", "high_sea_affinity", "high_seolhwa_affinity", "complicit_ready"],
         unskippable: true,
         next: "day5_night_affinity_check"
     },
@@ -44,13 +45,13 @@ Object.assign(SCENARIO[5], {
         affinityChar: "sea",
         affinityBranches: [
             { minAffinity: 50, next: "day5_night_set_high_sea_affinity" },
-            { minAffinity: -100, next: "day5_night_complicit_eval" }
+            { minAffinity: -100, next: "day5_night_seolhwa_affinity_check" }
         ]
     },
     "day5_night_set_high_sea_affinity": {
         character: null,
         setFlags: ["high_sea_affinity"],
-        next: "day5_night_complicit_eval"
+        next: "day5_night_seolhwa_affinity_check"
     },
     "day5_night_complicit_eval": {
         character: null,
@@ -242,7 +243,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_true_15": {
         character: "seolhwa_sad",
         charOpacity: 0.9,
-        next: "day5_ending_true_16"
+        next: "day5_ending_true_voice_check"
     },
     "day5_ending_true_16": {
         character: "seolhwa_normal",
@@ -251,6 +252,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_17": {
         character: null,
+        branches: [{ condition: "ending_bridge_true_farewell", next: "day5_after_true_12" }],
         next: "day5_ending_true_18"
     },
     "day5_ending_true_18": {
@@ -309,7 +311,7 @@ Object.assign(SCENARIO[5], {
     "day5_ending_true_27": {
         character: null,
         unskippable: true,
-        next: "day5_ending_true_28"
+        next: "day5_ending_true_riin_check"
     },
     "day5_ending_true_28": {
         character: null,
@@ -323,7 +325,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_true_30": {
         character: null,
-        next: "day5_ending_true_31"
+        next: "day5_ending_true_memory_check"
     },
     "day5_ending_true_31": {
         character: null,
@@ -641,7 +643,7 @@ Object.assign(SCENARIO[5], {
         background: "ending_escape",
         fadeIn: true,
         unskippable: true,
-        next: "day5_ending_escape_14"
+        next: "day5_ending_escape_riin_check"
     },
     "day5_ending_escape_14": {
         character: null,
@@ -1392,5 +1394,129 @@ Object.assign(SCENARIO[5], {
         },
         metaEffect: "complicitSlot",
         next: null
+    },
+    "day5_night_seolhwa_affinity_check": {
+        "affinityChar": "seolhwa",
+        "affinityBranches": [
+            {
+                "minAffinity": 25,
+                "next": "day5_night_set_high_seolhwa_affinity"
+            },
+            {
+                "minAffinity": -100,
+                "next": "day5_night_complicit_eval"
+            }
+        ]
+    },
+    "day5_night_set_high_seolhwa_affinity": {
+        "autoAdvance": true,
+        "next": "day5_night_complicit_eval",
+        "setFlags": [
+            "high_seolhwa_affinity"
+        ]
+    },
+    "day5_ending_true_voice_check": {
+        "affinityChar": "seolhwa",
+        "affinityBranches": [
+            {
+                "minAffinity": 25,
+                "next": "day5_ending_true_16_clear_intro"
+            },
+            {
+                "minAffinity": -100,
+                "next": "day5_ending_true_16"
+            }
+        ]
+    },
+    "day5_ending_true_16_clear_intro": {
+        "character": null,
+        "next": "day5_ending_true_16_clear",
+        "setFlags": [
+            "high_seolhwa_affinity"
+        ]
+    },
+    "day5_ending_true_16_clear": {
+        "character": "seolhwa_normal",
+        "next": "day5_ending_true_17",
+        "charOpacity": 0.9,
+        "voicePreset": "seolhwa_clear"
+    },
+    "day5_ending_true_riin_check": {
+        "autoAdvance": true,
+        "next": "day5_ending_true_sea_check",
+        "branches": [
+            {
+                "condition": "riin_companion",
+                "next": "day5_ending_true_27_riin"
+            }
+        ]
+    },
+    "day5_ending_true_27_riin": {
+        "character": null,
+        "next": "day5_ending_true_27_riin_2"
+    },
+    "day5_ending_true_27_riin_2": {
+        "character": null,
+        "next": "day5_ending_true_sea_check"
+    },
+    "day5_ending_true_sea_check": {
+        "autoAdvance": true,
+        "next": "day5_ending_true_28",
+        "branches": [
+            {
+                "condition": "sea_companion",
+                "next": "day5_ending_true_27_sea"
+            }
+        ]
+    },
+    "day5_ending_true_27_sea": {
+        "character": null,
+        "next": "day5_ending_true_27_sea_2"
+    },
+    "day5_ending_true_27_sea_2": {
+        "character": null,
+        "next": "day5_ending_true_28"
+    },
+    "day5_ending_true_memory_check": {
+        "autoAdvance": true,
+        "next": "day5_ending_true_31",
+        "branches": [
+            {
+                "condition": "high_seolhwa_affinity",
+                "next": "day5_ending_true_30_memory"
+            }
+        ]
+    },
+    "day5_ending_true_30_memory": {
+        "character": null,
+        "next": "day5_ending_true_31"
+    },
+    "day5_ending_escape_riin_check": {
+        "autoAdvance": true,
+        "next": "day5_ending_escape_sea_check",
+        "branches": [
+            {
+                "condition": "riin_companion",
+                "next": "day5_ending_escape_riin"
+            }
+        ]
+    },
+    "day5_ending_escape_riin": {
+        "character": null,
+        "next": "day5_ending_escape_sea_check"
+    },
+    "day5_ending_escape_sea_check": {
+        "autoAdvance": true,
+        "next": "day5_ending_escape_14",
+        "branches": [
+            {
+                "condition": "sea_companion",
+                "next": "day5_ending_escape_sea"
+            }
+        ]
+    },
+    "day5_ending_escape_sea": {
+        "character": null,
+        "next": "day5_ending_escape_14"
     }
 });

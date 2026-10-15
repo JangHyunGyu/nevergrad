@@ -191,6 +191,12 @@ for (const pill of ['분홍 알약','검은 알약']) test(`pill choice follows 
     await page.locator('#dialogue-box').click();
     await page.waitForFunction(()=>game.state.currentScene==='day5_lunch_pills_pink_3'&&!game.dialogue.isTyping&&!game._clickLocked);
     await page.locator('#dialogue-box').click();
-    await expect(page.locator('#cross-world')).toBeVisible();
+    await page.waitForFunction(()=>game.state.currentScene==='day5_lunch_end'&&!game.dialogue.isTyping&&!game._clickLocked);
+    await page.locator('#dialogue-box').click();
+    await page.waitForFunction(()=>game.state.currentScene==='day5_after_start'&&!game.dialogue.isTyping&&!game._clickLocked);
+    await page.locator('#dialogue-box').click();
+    await page.waitForFunction(()=>game.state.currentScene==='day5_after_caught_1'&&!game.dialogue.isTyping);
+    expect(await page.evaluate(()=>game.state.hasFlag('caught_by_riin'))).toBe(true);
+    await expect(page.locator('#cross-world')).toHaveCount(0);
   }
 });

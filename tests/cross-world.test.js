@@ -50,14 +50,16 @@ test('fresh shared completion supersedes old local records, with strict values a
   assert.equal(detect('',null).completed,false);
 });
 
-test('both pill choices select a pill: pink crosses worlds, black continues the cabinet scene',()=>{
+test('both pill choices select a pill: pink reaches capture, black continues the cabinet scene',()=>{
   const env={};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/js/scenario/day5_2_lunch.js'),'utf8'),env);
   const scenes=env.SCENARIO[5];
   const choices=scenes.day5_lunch_pills_2.choices;
   assert.equal(choices[0].next,'day5_lunch_pills_pink_1');
   assert.equal(choices[1].next,'day5_lunch_pills_black_1');
-  assert.equal(scenes.day5_lunch_pills_pink_3.redirect,'cupid-gate');
+  assert.equal(scenes.day5_lunch_pills_pink_3.next,'day5_lunch_end');
+  assert.ok(scenes.day5_lunch_pills_pink_3.setFlags.includes('caught_by_riin'));
+  assert.equal(scenes.day5_lunch_pills_pink_3.redirect,undefined);
   assert.equal(scenes.day5_lunch_pills_black_1.next,'day5_lunch_pills_black_ask');
   assert.equal(scenes.day5_lunch_pills_black_ask.next,'day5_lunch_right_14');
   for(const [lang,black] of Object.entries({ko:'검은 알약',en:'Black pill',ja:'黒い薬',es:'Pastilla negra',fr:'Comprimé noir',de:'Schwarze Tablette',pt:'Comprimido preto',zh:'黑色药片'})) {

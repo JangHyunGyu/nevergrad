@@ -2,9 +2,9 @@
   "date": "2026-10-08",
   "baselineCommit": "57f9891db9bd07d48955274a5499cb3c39350d50",
   "scope": "All runtime scenes, including post-load overlays, canonical Korean text, incoming background paths, character identity, expression, wardrobe and media effects",
-  "sceneCount": 2143,
-  "textSceneCount": 2094,
-  "structuralSceneCount": 49,
+  "sceneCount": 2160,
+  "textSceneCount": 2103,
+  "structuralSceneCount": 57,
   "reviewedGroups": [
     "day1_1_morning",
     "day1_2_lunch",
@@ -37486,10 +37486,10 @@
       "id": "day5_lunch_pills_pink_1",
       "reviewed": true,
       "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "575c88ba29371470f12963d54797a1600dc42c1a433c735595a5249386665491",
+      "speaker": "",
+      "textSHA256": "ed7ea91aeebb44251f15193735b6b7c640fb6e4c3397af77d4486c01fa59e7cd",
       "mediaChanged": true,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "reason": "S+ requested capture continuation: Riin placebo, M-13 withdrawal, pursuers force shutter; no Cupid departure",
       "effects": [],
       "backgroundKey": "cg_riin_two_pills",
       "possibleBackgrounds": [
@@ -37515,9 +37515,9 @@
       "reviewed": true,
       "kind": "dialogue-or-narration",
       "speaker": "me",
-      "textSHA256": "457f2f13cd143d29268236598cbab327d859264ef56de50997828c1e690cdb79",
+      "textSHA256": "d1c03f1dd20ca2e8c32eff06a63c4510018e3da6da60241ff7b33152664c49d6",
       "mediaChanged": true,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "reason": "S+ requested capture continuation: Riin placebo, M-13 withdrawal, pursuers force shutter; no Cupid departure",
       "effects": [],
       "backgroundKey": "cg_riin_two_pills",
       "possibleBackgrounds": [
@@ -37542,16 +37542,16 @@
       "id": "day5_lunch_pills_pink_2",
       "reviewed": true,
       "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "b5b7db14ad071e7d72827191862427886c3993463aa1d350bbb324246d547184",
-      "mediaChanged": false,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "speaker": "",
+      "textSHA256": "3f644369d99ced220882bbf36589d20846a01f79cf14d68fbde6cef42248f7c7",
+      "mediaChanged": true,
+      "reason": "S+ requested capture continuation: Riin placebo, M-13 withdrawal, pursuers force shutter; no Cupid departure",
       "effects": [],
-      "backgroundKey": "cg_gate_bloom",
+      "backgroundKey": "old_infirmary",
       "possibleBackgrounds": [
         {
-          "key": "cg_gate_bloom",
-          "path": "assets/images/background/cg_gate_bloom.webp"
+          "key": "old_infirmary",
+          "path": "assets/images/background/old_infirmary.webp"
         }
       ],
       "cast": {}
@@ -37560,16 +37560,16 @@
       "id": "day5_lunch_pills_pink_3",
       "reviewed": true,
       "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "b6cbb767744a91e24980e76fde377dcbccd63001c8cb4418a473efb144a8dd3b",
-      "mediaChanged": false,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "speaker": "",
+      "textSHA256": "dcfc9f1c59bd6a32ccbab0bb720c38b615e8fa7e33b1e2b99d137c0241bb0b0c",
+      "mediaChanged": true,
+      "reason": "S+ requested capture continuation: Riin placebo, M-13 withdrawal, pursuers force shutter; no Cupid departure",
       "effects": [],
-      "backgroundKey": "cg_gate_bloom",
+      "backgroundKey": "old_infirmary",
       "possibleBackgrounds": [
         {
-          "key": "cg_gate_bloom",
-          "path": "assets/images/background/cg_gate_bloom.webp"
+          "key": "old_infirmary",
+          "path": "assets/images/background/old_infirmary.webp"
         }
       ],
       "cast": {}
@@ -51512,6 +51512,319 @@
         ],
         "cast": {}
       }
+    },
+    {
+      "id": "day5_night_seolhwa_affinity_check",
+      "reviewed": true,
+      "kind": "structural",
+      "speaker": "",
+      "textSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "black",
+          "path": "assets/images/background/black.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_night_set_high_seolhwa_affinity",
+      "reviewed": true,
+      "kind": "structural",
+      "speaker": "",
+      "textSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "black",
+          "path": "assets/images/background/black.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_voice_check",
+      "reviewed": true,
+      "kind": "structural",
+      "speaker": "",
+      "textSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "emergency_stair_night",
+          "path": "assets/images/background/emergency_stair_night.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_16_clear_intro",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "",
+      "textSHA256": "b5b72b597b7b0d4b728451a70e05838cfc4d9ba937fb3d6d24b99450aa8d07b5",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "emergency_stair_night",
+          "path": "assets/images/background/emergency_stair_night.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_16_clear",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "seolhwa",
+      "textSHA256": "3efec44556c1661a69ef953db5bc936636a904b7fdc37bd44dcc0ba4cc56b61e",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [
+        "seolhwa_clear"
+      ],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "emergency_stair_night",
+          "path": "assets/images/background/emergency_stair_night.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "seolhwa_normal",
+          "path": "assets/images/characters/seolhwa_normal.webp"
+        }
+      }
+    },
+    {
+      "id": "day5_ending_true_riin_check",
+      "reviewed": true,
+      "kind": "structural",
+      "speaker": "",
+      "textSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "news_article",
+          "path": "assets/images/background/news_article.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_27_riin",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "",
+      "textSHA256": "58dca32e54016db3a8af56e746cfee0a7f3840d1f9d0a2ed44284b26a1365fdf",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "news_article",
+          "path": "assets/images/background/news_article.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_27_riin_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "",
+      "textSHA256": "c7698c06dd1c0f975fe32b5b3bc483e5d8e496ae6ddb2fc17342c467fd22d275",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "news_article",
+          "path": "assets/images/background/news_article.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_sea_check",
+      "reviewed": true,
+      "kind": "structural",
+      "speaker": "",
+      "textSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "news_article",
+          "path": "assets/images/background/news_article.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_27_sea",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "",
+      "textSHA256": "325c36c949ffb29cec929c57a11eafb6ca20323b7986e7a171a78e344c51d947",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "news_article",
+          "path": "assets/images/background/news_article.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_27_sea_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "sea",
+      "textSHA256": "2a9aba30675d2bbc77dba7562b71742189594cd7e81f5489d16f36ce8380b3d0",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "news_article",
+          "path": "assets/images/background/news_article.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_memory_check",
+      "reviewed": true,
+      "kind": "structural",
+      "speaker": "",
+      "textSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "ending_true",
+          "path": "assets/images/cg/ending_true_new_classroom.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_true_30_memory",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "",
+      "textSHA256": "5db3d73301f3c308f4609f5c908182712a75ab388732d894222328916209d56a",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "ending_true",
+          "path": "assets/images/cg/ending_true_new_classroom.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_escape_riin_check",
+      "reviewed": true,
+      "kind": "structural",
+      "speaker": "",
+      "textSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "ending_escape",
+          "path": "assets/images/cg/ending_escape_rain.png"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_escape_riin",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "",
+      "textSHA256": "b8043cbc980612e2c77e803d4887bc64012e4e9f0bd7f64a066f75f1a872c76f",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "ending_escape",
+          "path": "assets/images/cg/ending_escape_rain.png"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_escape_sea_check",
+      "reviewed": true,
+      "kind": "structural",
+      "speaker": "",
+      "textSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "ending_escape",
+          "path": "assets/images/cg/ending_escape_rain.png"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day5_ending_escape_sea",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "",
+      "textSHA256": "842d4cd8184ecbcf317ec03c3f3fe633c3dba635472e6d6c53461594f1d81691",
+      "mediaChanged": false,
+      "reason": "S+ ending payoff reviewed against story routes and localized mobile rendering; inherited shot retained",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "ending_escape",
+          "path": "assets/images/cg/ending_escape_rain.png"
+        }
+      ],
+      "cast": {}
     }
   ],
   "runtimeFixes": [
@@ -51602,5 +51915,10 @@
     "review": "docs/qa/sgrade-korean-review-20261015.json",
     "note": "Historical source hashes retained for original ledger entries; new scene contracts appended",
     "overlayNote": "Includes nine runtime nodes from causality_overlays.js; validate.js counts the base scenario files separately"
+  },
+  "extensionSplus20261015": {
+    "addedScenes": 17,
+    "review": "docs/qa/splus-completion-20261015.md",
+    "note": "Adds nine display nodes and eight silent routing nodes; pink capture shot replaces prior Cupid gate shot"
   }
 }

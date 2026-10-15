@@ -114,7 +114,7 @@ class DialogueSystem {
 
         let idx = 0;
         const speed = options.typingSpeed ?? CONFIG.TYPING_SPEED;
-        const texture = this.audio?.getVoiceTexture?.(options.charId, options.genreShift, options.day);
+        const texture = this.audio?.getVoiceTexture?.(options.voicePreset || options.charId, options.genreShift, options.day);
         const paced = !!(texture || options.textPace || options.typingPause);
         this._voiceTexture = texture;
         this._typeOptions = options;

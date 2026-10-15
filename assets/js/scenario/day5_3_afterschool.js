@@ -23,6 +23,7 @@ Object.assign(SCENARIO[5], {
     // 진입점
     // ══════════════════════════════════════
     "day5_after_start": {
+        skipTextFlags: ["route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
         background: "black",
         bgm: "confrontation.mp3",
         character: null,
@@ -456,7 +457,8 @@ Object.assign(SCENARIO[5], {
     "day5_after_true_11a": {
         character: "seolhwa_fading",
         unskippable: true,
-        next: "day5_after_true_12"
+        setFlags: ["ending_bridge_true_farewell"],
+        next: "day5_ending_true_14a"
     },
     "day5_after_true_12": {
         character: null,
@@ -744,6 +746,7 @@ Object.assign(SCENARIO[5], {
     // 공통 종단: Night 파일로 전환
     // ══════════════════════════════════════
     "day5_after_end": {
+        skipTextFlags: ["route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
         character: null,
         stopSfx: true,
         autoAdvance: true,

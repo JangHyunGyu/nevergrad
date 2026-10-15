@@ -1,0 +1,68 @@
+{
+  "baseline": "c3758e1",
+  "viewports": [
+    [
+      1280,
+      800
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      375,
+      812
+    ],
+    [
+      667,
+      375
+    ]
+  ],
+  "comparisons": [
+    {
+      "file": "reference-dialogue-1024.png",
+      "changedChannels": 0
+    },
+    {
+      "file": "reference-dialogue-1280.png",
+      "changedChannels": 0
+    },
+    {
+      "file": "reference-dialogue-375.png",
+      "changedChannels": 0
+    },
+    {
+      "file": "reference-dialogue-667.png",
+      "changedChannels": 0
+    },
+    {
+      "file": "reference-dialogue-768.png",
+      "changedChannels": 0
+    },
+    {
+      "file": "reference-title-1024.png",
+      "changedChannels": 0
+    },
+    {
+      "file": "reference-title-1280.png",
+      "changedChannels": 0
+    },
+    {
+      "file": "reference-title-375.png",
+      "changedChannels": 0
+    },
+    {
+      "file": "reference-title-667.png",
+      "changedChannels": 0
+    },
+    {
+      "file": "reference-title-768.png",
+      "changedChannels": 0
+    }
+  ],
+  "geometryEqual": true
+}

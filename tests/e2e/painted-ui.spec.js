@@ -113,14 +113,17 @@ async function expectReachablePaintedButton(button, page) {
   await expect(button).toBeVisible();
   await button.scrollIntoViewIfNeeded();
   await expect(button).toHaveCSS('border-image-source', /glass-frame\.webp/);
-  const box = await button.boundingBox();
-  const viewport = page.viewportSize();
-  expect(box.width).toBeGreaterThanOrEqual(44);
-  expect(box.height).toBeGreaterThanOrEqual(44);
-  expect(box.x).toBeGreaterThanOrEqual(-1);
-  expect(box.y).toBeGreaterThanOrEqual(-1);
-  expect(box.x + box.width).toBeLessThanOrEqual(viewport.width + 1);
-  expect(box.y + box.height).toBeLessThanOrEqual(viewport.height + 1);
+  // Overlay entrance animations briefly scale a 44px button below its final size.
+  await expect(async () => {
+    const box = await button.boundingBox();
+    const viewport = page.viewportSize();
+    expect(box.width).toBeGreaterThanOrEqual(44);
+    expect(box.height).toBeGreaterThanOrEqual(44);
+    expect(box.x).toBeGreaterThanOrEqual(-1);
+    expect(box.y).toBeGreaterThanOrEqual(-1);
+    expect(box.x + box.width).toBeLessThanOrEqual(viewport.width + 1);
+    expect(box.y + box.height).toBeLessThanOrEqual(viewport.height + 1);
+  }).toPass({ timeout: 5000 });
 }
 
 for (const [width, height] of [[568,320], [844,390], [1024,768]]) {

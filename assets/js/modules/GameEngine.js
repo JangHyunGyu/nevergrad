@@ -858,7 +858,7 @@ class GameEngine {
         if (scene.glitch) this._handleGlitch(scene.glitch);
 
         // 실시간 시계 연동 (SCENARIO.md 5652-5658)
-        // 자정~새벽 3시 Day 4~5 밤 씬 진입 시 단 1회 팬텀 지문
+        // 자정~새벽 3시 Day 4~5 복도 진입 시 단 1회 팬텀 지문
         this._checkLatenightGimmick(sceneId);
 
         // 이어폰 미감지 — 거울 씬 직전 팬텀 힌트 (SCENARIO.md 5623)
@@ -1820,7 +1820,7 @@ class GameEngine {
      */
     /**
      * SCENARIO.md 5652-5658: 실시간 시계 연동 — 단 하나의 시간 기믹
-     * 자정~새벽 3시(로컬 시간) 사이에 Day 4~5 밤 씬에 진입하면
+     * 자정~새벽 3시(로컬 시간) 사이에 Day 4~5 복도 씬에 진입하면
      * 1회만 팬텀 지문을 띄운다. 세션당 1회, 재진입 재표시 없음.
      * @private
      */
@@ -1828,9 +1828,10 @@ class GameEngine {
         if (!this.glitchAdvanced) return;
         // 이미 표시됨 → 스킵
         if (this.state.hasFlag('latenight_shown')) return;
-        // 대상: Day 4~5 + 밤 씬 (sceneId에 "_night" 포함)
-        if (this.state.currentDay < 4) return;
-        if (!/_night/.test(sceneId)) return;
+        // Inherited backgrounds count too; scene IDs describe story time, not location.
+        if (![4, 5].includes(this.state.currentDay) || this._isEndingScene(sceneId)) return;
+        const background = this.state.currentBackground || '';
+        if (!/(?:^|\/)[^/]*(?:corridor|hallway)[^/]*\.(?:webp|png|jpe?g)(?:[?#]|$)/i.test(background)) return;
         // 로컬 시간 체크
         const hour = new Date().getHours();
         if (hour < 0 || hour >= 3) return;

@@ -429,7 +429,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeTitleLineup();
 
     // 타이틀 스테이지 (배경 + 3 캐릭터) — data-src를 파일 존재 확인 후 주입
-    // 미생성 에셋(sea_stare.png)은 skip
+    // 로드에 실패한 이미지는 숨긴다.
     document.querySelectorAll('#title-stage img[data-src]:not(.title-stage-bg)').forEach(el => {
         const src = el.dataset.src;
         if (!src) return;

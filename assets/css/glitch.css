@@ -1835,6 +1835,15 @@ body.cursor-slowed * {
     overflow: hidden;
 }
 .admin-panel-overlay.visible { opacity: 0.96; }
+
+/* The subject list is also narrated; keep that transcript below the panel. */
+#game-screen:has(.admin-panel-overlay) .dialogue-text {
+    min-height: 0;
+    max-height: clamp(3rem, 16vh, 8rem);
+    overflow-y: auto;
+    touch-action: pan-y;
+    scrollbar-width: thin;
+}
 .admin-panel-header {
     display: flex;
     justify-content: space-between;
@@ -2815,4 +2824,11 @@ body.cursor-slowed * {
     .admin-panel-columns,
     .admin-panel-row { grid-template-columns: 30px minmax(48px, 1fr) minmax(46px, 0.8fr) minmax(64px, 1.25fr); font-size: 0.5rem; line-height: 1.1; gap: 3px; padding: 1px 2px; }
     .admin-panel-footer { display: none; }
+}
+
+/* Reserve room for the compact dialogue box on short landscape screens. */
+@media (orientation: landscape) and (max-height: 500px) {
+    .admin-panel-overlay {
+        bottom: calc(clamp(110px, 32vh, 160px) + env(safe-area-inset-bottom));
+    }
 }

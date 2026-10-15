@@ -106,14 +106,20 @@ test('typing synth respects SFX mute and rate limit, then releases active source
         const first = audio.playTypingTick(texture);
         const rateLimited = audio.playTypingTick(texture);
         const active = audio._typingVoices.size;
-        await new Promise(resolve => setTimeout(resolve, 150));
-        const afterEnd = audio._typingVoices.size;
+        return { first, rateLimited, active };
+    });
+    expect(result).toEqual({ first: true, rateLimited: false, active: 1 });
+    // Native audio completion follows the audio clock, not a 150ms wall timer.
+    await expect.poll(() => page.evaluate(() => game.audio._typingVoices.size)).toBe(0);
+    const cleanup = await page.evaluate(() => {
+        const audio = game.audio;
+        const texture = audio.getVoiceTexture('seolhwa');
         audio.setVolume('sfx', 0);
         const muted = audio.playTypingTick(texture);
         audio.setVolume('sfx', 0.8);
         audio.playTypingTick(texture);
         audio.stopSFX(null, 0);
-        return { first, rateLimited, active, afterEnd, muted, afterStop: audio._typingVoices.size };
+        return { muted, afterStop: audio._typingVoices.size };
     });
-    expect(result).toEqual({ first: true, rateLimited: false, active: 1, afterEnd: 0, muted: false, afterStop: 0 });
+    expect(cleanup).toEqual({ muted: false, afterStop: 0 });
 });

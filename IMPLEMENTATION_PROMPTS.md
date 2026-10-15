@@ -1,4 +1,26 @@
-# Nevergrad — 잔여 미구현 항목 구현 프롬프트
+# Nevergrad — 기믹 구현 현황과 이전 프롬프트
+
+## 출시 전 점검 (2026-10-15)
+
+아래 프롬프트는 과거의 제안이다. 현재 구현 상태는 이 표와 [점검 기록](docs/qa/release-gimmicks-2026-10-15.md)을 기준으로 확인한다. 장면 설계는 `SCENARIO.md`를 따른다.
+
+| 항목 | 현재 상태 | 확인 위치 |
+|---|---|---|
+| 1. 바이노럴 오디오 | 구현됨. 초기 감지와 `devicechange`를 처리하고, 설화 속삭임은 `glitch.panSFX`에서 재생한다. 스테레오 미감지 시 중앙으로 재생한다. | `app.js`, `AudioManager.js`, `GameEngine._handleGlitch()` |
+| 2. 실시간 연출 | 현재 설계 구현됨. 로컬 00:00 이상 03:00 미만에 Day 4~5 복도에서 지문을 한 번 표시한다. 이번 점검에서 장면 ID 대신 실제 배경을 검사하도록 수정했다. | `GameEngine._checkLatenightGimmick()` |
+| 2의 3시 ±15분·시계 HUD·CAGE 자정 대사 | 미적용 제안. 현재 `SCENARIO.md`의 “실세계 시간 연동은 단 1개만” 원칙과 다르므로 출시 필수 항목에서 제외한다. | `SCENARIO.md`의 “E. 실시간 시계 연동” |
+| 3. 시간 대사·FreeTalk | `getTimeDialogue()`는 8개 언어 템플릿이 있지만 호출처가 없다. 현재 `FreeTalkSystem`도 없어 연결 대상이 없다. 향후 제안으로 남긴다. `playSFXPanned()`는 실제 장면에서 사용 중이다. | `DeviceGimmickSystem.js`, `I18nManager.js` |
+| 4. 타이머 바 | 구현됨. 경고·위험 상태와 모바일 스타일이 있다. | `dialogue.css`, `ChoiceSystemAdvanced.js` |
+| 5. 스탯 라벨 공개 | 구현됨. 애니메이션 중 HUD 덮어쓰기를 막고, 공개된 라벨은 나레이션에서도 유지한다. 실제 opacity를 브라우저에서 검사한다. | `GameEngine._updateStatDisplay()` |
+| 6. 거울 반사 | 구현됨. 실파일로 세아가 반사되고 설화만 제외되는지 검사한다. | `GlitchSystemAdvanced.showMirrorReflection()` |
+| 7. 모바일 터치·관리 패널 | 터치 경로 구현됨. 실제 브라우저 터치 입력으로 거울을 닦고 진행 잠금이 풀리는지 검사한다. 이번 점검에서 모바일 가로 패널 높이와 긴 지문의 겹침도 수정했다. | `GlitchSystemAdvanced.showMirrorSwipe()`, `glitch.css` |
+| 8. 진동 | 구현됨. 모든 장면의 패턴 이름이 정의되어 있다. 장면에서 `navigator.vibrate()`까지 도달하며 PC에는 시각 효과가 있다. | `DeviceGimmickSystem.VIBRATION_PATTERNS`, `GameEngine._vibrateVisual()` |
+
+자동 검증은 `npm run check`, `npm run test:e2e`, `npm run audit:assets`로 실행한다. 물리 이어폰의 좌우 청취와 실제 휴대폰 진동은 별도의 기기 점검이 필요하다.
+
+---
+
+## 이전 프롬프트 원문
 
 > 앞선 세션에서 6종 인터랙티브 글리치(`mirrorWipe`, `mirrorReflection`, `photoOverlay`, `adminPanel`, `peelStatLabel`, `temperatureDrop`)를 구현하고 Playwright로 31/31 테스트 통과했음. 아래는 그 세션에서 **시간 관계상 미룬 나머지 dead-data 항목들**의 구현 프롬프트.
 >

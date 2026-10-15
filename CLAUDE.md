@@ -95,12 +95,15 @@
 - 모든 이미지에 텍스트 금지 지시 필수 포함
 - API 키는 `.env` 파일에서 로드 (하드코딩 금지, `.gitignore`에 등록됨)
 
-## 이미지 에셋 현황 (2026-03-18)
-- 배경 이미지: 24/28 생성 완료 (Imagen 4), 4개 미완 (school_night, school_dark, school_dawn, sunset_outside)
-- 캐릭터 이미지: 미생성
+## 이미지 에셋 현황 (2026-10-15 점검)
+- `config.js` 이미지 레지스트리의 고유 파일 157개가 모두 존재하며 픽셀 디코딩을 통과했다. 누락·손상은 0개다.
+- 배경: 85개 키가 고유 파일 81개를 참조한다. 이전 미완 목록의 `school_night`, `school_dark`, `school_dawn`, `sunset_outside`도 모두 존재한다.
+- 캐릭터 표정: 이미지가 있는 65개 키가 고유 파일 58개를 참조한다. `classmate.default: null`은 의도된 이미지 없음 처리다.
+- 증거 이미지 6개, 피험자 얼굴 13개도 확인했다. 레지스트리 간 중복이 있어 항목별 파일 수의 합과 전체 고유 파일 수는 다르다.
+- 재검증: `npm run audit:assets`. 상세 결과는 `docs/qa/release-assets-2026-10-15.json`을 참조한다.
 - 생성용 프롬프트: `PROMPTS_READY.md` 참조 (캐릭터 43장 + 배경 28장 + BGM/SFX)
 - 생성 순서: 캐릭터는 시나리오 등장순(은수→세아→리인→유나→설화), 배경은 Day 1→5 순
-- config.js의 EXPRESSIONS/BACKGROUNDS alias는 이미지 미존재 시 실제 파일로 fallback
+- `EXPRESSIONS`/`BACKGROUNDS` alias는 여러 장면이 같은 실파일을 사용하는 매핑이다. 모든 표정에 별도 이미지가 있다는 뜻은 아니다.
 
 ## 사운드(SFX) 규칙
 - Web Audio API로 합성 — 외부 파일 불필요

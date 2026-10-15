@@ -44,6 +44,7 @@ test('both TRUE entry points show the goodbye once and unlock both rewards at 25
             assert.equal(visited.includes('day5_ending_true_16_clear'), affinity >= 25);
             assert.equal(visited.includes('day5_ending_true_30_memory'), affinity >= 25);
             assert.equal(visited.filter(id => id === 'day5_ending_true_17').length, 1);
+            assert.equal(visited.includes('day5_ending_true_14b'), start === 'day5_night_start');
         }
     }
 });

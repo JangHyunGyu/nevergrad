@@ -24,7 +24,7 @@ for (const lang of ['ko', 'en', 'ja', 'zh', 'es', 'fr', 'de', 'pt']) {
             }
             async function walk(start, stop) {
                 game._loadScene(start);
-                for (let n = 0; n < 150; n++) {
+                for (let n = 0; n < 250; n++) {
                     if (game.state.currentScene === stop) return shown.slice();
                     if (game.dialogue.isTyping || game._shouldAutoAdvanceSilentScene(game.currentSceneData, game.i18n.get(game.state.currentScene).text) || game.currentSceneData.skipTextFlags?.some(f => game.state.hasFlag(f))) {
                         await sleep(10); continue;

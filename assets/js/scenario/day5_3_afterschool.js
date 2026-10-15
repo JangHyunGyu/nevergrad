@@ -458,7 +458,7 @@ Object.assign(SCENARIO[5], {
         character: "seolhwa_fading",
         unskippable: true,
         setFlags: ["ending_bridge_true_farewell"],
-        next: "day5_ending_true_14a"
+        next: "day5_ending_true_15"
     },
     "day5_after_true_12": {
         character: null,

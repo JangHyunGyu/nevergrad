@@ -676,19 +676,19 @@
         "text": "*...Un texte apparaît au centre de l'écran. Lentement.*"
     },
     "day5_observer_4": {
-        "text": "═════════════════════ ═════════════════════\n  INSTITUT DE RECHERCHE NEVERGRAD\n  Enregistrement de contrôle du journal d'observation\n═════════════════════ ═════════════════════"
+        "text": "FONDATION EDINA / INSTITUT NEVERGRAD\nAudit de sécurité : session de consultation externe\nDossier de référence : observations de #13"
     },
     "day5_observer_5": {
-        "text": "*...mon dossier?*"
+        "text": "Droits : audit / surveillance\nÉtat de session : connectée\nAutorisation de contact avec les sujets : aucune"
     },
     "day5_observer_6": {
-        "text": "Sujet de l'enregistrement : #13 ({name})\nTemps de progression : {play_time}\n\nContact : Sea {route_data} / Yuna {met_yuna} / Riin {riin_visits} / Seolhwa {seolhwa_attempts}\nPreuve : {evidence_data}\nRéponse finale : {timer_data}"
+        "text": "Sujet : #13 ({name})\nDurée de connexion : {play_time}\n\nBilan des contacts et interventions\nContacts avec Sea : {route_data}\nContact avec Yuna confirmé : {met_yuna}\nVisites à Riin : {riin_visits}\nTentatives de contact avec Seolhwa : {seolhwa_attempts}\nPreuves obtenues : {evidence_data}\nRéponse finale enregistrée : {timer_data}"
     },
     "day5_observer_7": {
-        "text": "*Le texte défile vers le bas.*"
+        "text": "Comparaison des contacts terminée\nComparaison des comportements en cours"
     },
     "day5_observer_8": {
-        "text": "Remarques :\n\nExamen du dossier #13 terminé.\nLes journaux ont persisté après l'avertissement.\n\nComparaison :\nPark Eunsu - 13 observations.\nObservateur de {name} - {play_time}.\n\nJugement refusé."
+        "text": "Référence : directrice Park Eunsu / 13 observations\nSession de consultation externe : #13 ({name}) / {play_time}\n\nPoints communs : accès après avertissement ; interventions cumulées\nSimilarité : concordance du schéma d’observation persistante\n\nDécision automatique : en attente\nDemande de fermeture : non reçue"
     },
     "day5_observer_cupid_check": {
         "text": ""

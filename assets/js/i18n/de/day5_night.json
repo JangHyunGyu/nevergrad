@@ -676,19 +676,19 @@
         "text": "*...In der Mitte des Bildschirms erscheint Text. Langsam.*"
     },
     "day5_observer_4": {
-        "text": "═════════════════════ ═════════════════════\n  NEVERGRAD FORSCHUNGSINSTITUT\n  Beobachtungsprotokoll-Kontrolldatensatz\n═════════════════════ ═════════════════════"
+        "text": "EDINA-STIFTUNG / NEVERGRAD-FORSCHUNGSINSTITUT\nSicherheitsprüfung: externe Einsichtssitzung\nReferenzakte: Beobachtungsprotokoll #13"
     },
     "day5_observer_5": {
-        "text": "*...meine Akte?*"
+        "text": "Zugriffsrechte: Prüfung / Überwachung\nSitzungsstatus: verbunden\nKontaktberechtigung für Versuchspersonen: keine"
     },
     "day5_observer_6": {
-        "text": "Betreff der Aufzeichnung: #13 ({name})\nFortschrittszeit: {play_time}\n\nKontakt: Sea {route_data} / Yuna {met_yuna} / Riin {riin_visits} / Seolhwa {seolhwa_attempts}\nBeweis: {evidence_data}\nEndgültige Antwort: {timer_data}"
+        "text": "Versuchsperson: #13 ({name})\nVerbindungsdauer: {play_time}\n\nKontakt- und Eingriffsbilanz\nKontakte mit Sea: {route_data}\nKontakt mit Yuna bestätigt: {met_yuna}\nBesuche bei Riin: {riin_visits}\nKontaktversuche mit Seolhwa: {seolhwa_attempts}\nGesicherte Beweise: {evidence_data}\nLetzte protokollierte Antwort: {timer_data}"
     },
     "day5_observer_7": {
-        "text": "*Der Text scrollt nach unten.*"
+        "text": "Kontaktabgleich abgeschlossen\nVerhaltensmuster werden abgeglichen"
     },
     "day5_observer_8": {
-        "text": "Hinweise:\n\n#13 Datensatzüberprüfung abgeschlossen.\nDie Protokolle blieben nach der Warnung bestehen.\n\nVergleich:\nPark Eunsu – 13 Beobachtungen.\nBeobachter von {name} – {play_time}.\n\nUrteil zurückgehalten."
+        "text": "Referenz: Forschungsleiterin Park Eunsu / 13 Beobachtungen\nExterne Einsichtssitzung: #13 ({name}) / {play_time}\n\nGemeinsamkeiten: Zugriff nach Warnung; angesammelte Eingriffe\nÄhnlichkeit: fortgesetztes Beobachtungsmuster stimmt überein\n\nAutomatische Entscheidung: ausstehend\nSitzungsende angefordert: nein"
     },
     "day5_observer_cupid_check": {
         "text": ""

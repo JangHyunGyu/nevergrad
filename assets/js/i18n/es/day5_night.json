@@ -676,19 +676,19 @@
         "text": "*...Aparece texto en el centro de la pantalla. Lentamente.*"
     },
     "day5_observer_4": {
-        "text": "═════════════════════ ═════════════════════\n  INSTITUTO DE INVESTIGACIÓN NEVERGRAD\n  Registro de control del registro de observación.\n═════════════════════ ═════════════════════"
+        "text": "FUNDACIÓN EDINA / INSTITUTO NEVERGRAD\nAuditoría de seguridad: sesión de consulta externa\nArchivo de referencia: observaciones de #13"
     },
     "day5_observer_5": {
-        "text": "*...¿mi récord?*"
+        "text": "Permisos: auditoría / supervisión\nEstado de sesión: conectada\nAutorización de contacto con sujetos: ninguna"
     },
     "day5_observer_6": {
-        "text": "Asunto del registro: #13 ({name})\nTiempo de progreso: {play_time}\n\nContacto: Sea {route_data} / Yuna {met_yuna} / Riin {riin_visits} / Seolhwa {seolhwa_attempts}\nEvidencia: {evidence_data}\nRespuesta final: {timer_data}"
+        "text": "Sujeto: #13 ({name})\nTiempo de conexión: {play_time}\n\nResumen de contactos e intervenciones\nContactos con Sea: {route_data}\nContacto con Yuna confirmado: {met_yuna}\nVisitas a Riin: {riin_visits}\nIntentos de contacto con Seolhwa: {seolhwa_attempts}\nPruebas obtenidas: {evidence_data}\nRespuesta final registrada: {timer_data}"
     },
     "day5_observer_7": {
-        "text": "*La pantalla se desplaza hacia abajo.*"
+        "text": "Comparación de contactos completada\nCotejando patrones de conducta"
     },
     "day5_observer_8": {
-        "text": "Notas:\n\n#13 revisión del registro completada.\nLos registros persistieron después de la advertencia.\n\nComparación:\nPark Eunsu - 13 observaciones.\nObservador de {name} - {play_time}.\n\nSentencia retenida."
+        "text": "Referencia: directora Park Eunsu / 13 observaciones\nSesión de consulta externa: #13 ({name}) / {play_time}\n\nCoincidencias: acceso tras la advertencia; intervenciones acumuladas\nSimilitud: coincide el patrón de observación persistente\n\nDictamen automático: pendiente\nSolicitud de cierre: no recibida"
     },
     "day5_observer_cupid_check": {
         "text": ""

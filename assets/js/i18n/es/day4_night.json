@@ -342,5 +342,31 @@
     },
     "day4_night_end": {
         "text": "*— Fin del Día 4 —*"
+    },
+    "day4_night_deduction_hand": {
+        "text": "*Froté el grafito del índice izquierdo y tracé los trazos torcidos de la taquilla y de la pared de esta mañana.*",
+        "choices": [
+            "Trazar con la mano izquierda",
+            "Recordar la tipografía de la etiqueta"
+        ]
+    },
+    "day4_night_deduction_hand_match": {
+        "text": "*Con la mano izquierda, los trazos se torcieron igual. Cambiaron los nombres, pero no la mano que escribía.*"
+    },
+    "day4_night_deduction_hand_hint": {
+        "text": "*La etiqueta no tiene trazos de lápiz. Abrí la mano izquierda; el índice tenía grafito. Seguí la escritura sobre la pared.*"
+    },
+    "day4_night_deduction_seolhwa": {
+        "text": "*Volví a abrir la fila #07: `Contacto externo: Lee Seolhwa`. Ella estaba delante de mí, pero el espejo solo reflejaba el toallero.*",
+        "choices": [
+            "Cotejar el contacto de #07 con el reflejo ausente",
+            "Comprobar si se apagó la luz"
+        ]
+    },
+    "day4_night_deduction_record_match": {
+        "text": "*Señalé el nombre junto a #07. Ya me conocía entonces. Verla ahora no demostraba que estuviera físicamente aquí.*"
+    },
+    "day4_night_deduction_record_hint": {
+        "text": "*La luz y el toallero sí se reflejaban. Solo faltaba ella. Miré el nombre junto a #07 y luego su cara.*"
     }
 }

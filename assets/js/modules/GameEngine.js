@@ -60,6 +60,7 @@ class GameEngine {
         this.renderer = new SceneRenderer();
         this.audio = new AudioManager(this.lifecycle.createScope('audio'));
         this.dialogue = new DialogueSystem();
+        this.dialogue.audio = this.audio;
         this.dialogue.isPaused = () => this._isGameplayPaused();
         this.renderer.onBackgroundChange = src => { this.state.currentBackground = src; };
         this.choices = new ChoiceSystem(this);
@@ -944,7 +945,15 @@ class GameEngine {
 
         // 타이핑 옵션 (공포 연출: 느린 텍스트, 스킵 불가)
         const typeOpts = {};
-        if (scene.typingSpeed) typeOpts.typingSpeed = scene.typingSpeed;
+        const speakerId = globalThis.SCENARIO_SPEAKERS?.[sceneId] || '';
+        typeOpts.charId = scene.textPace === 'document' || scene.monospace
+            ? 'system' : speakerId.replace(/_full$/, '');
+        typeOpts.genreShift = this.state.hasFlag('genre_shift');
+        typeOpts.day = this.state.currentDay;
+        typeOpts.silentTyping = !!(scene.glitch?.silence || scene.glitch?.silenceAll);
+        if (scene.typingSpeed !== undefined) typeOpts.typingSpeed = scene.typingSpeed;
+        if (scene.textPace) typeOpts.textPace = scene.textPace;
+        if (scene.typingPause) typeOpts.typingPause = scene.typingPause;
         if (scene.unskippable || this._isEndingScene(sceneId)) typeOpts.unskippable = true;
         if (scene.messengerDelay) typeOpts.messengerDelay = scene.messengerDelay;
 
@@ -1857,7 +1866,7 @@ class GameEngine {
         if (!inSaveGlitch && !g.adminPanel) {
             this.glitchAdvanced.hideAdminPanel();
         }
-        const inMirrorHit1 = /day4_night_mirror_hit1/.test(sceneId);
+        const inMirrorHit1 = /day4_night_(mirror_hit1|deduction_)/.test(sceneId);
         if (!inMirrorHit1 && !g.mirrorReflection) {
             this.glitchAdvanced.hideMirrorReflection();
         }

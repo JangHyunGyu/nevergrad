@@ -74,7 +74,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_sea_12": {
         character: "sea_smile",
-        next: "day1_lunch_sea_13"
+        next: "day1_lunch_sea_share_1"
     },
     "day1_lunch_sea_13": {
         character: "sea_smile",
@@ -289,7 +289,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_riin_17": {
         character: "riin_gentle",
-        next: "day1_lunch_riin_18"
+        next: "day1_lunch_riin_rest_1"
     },
     "day1_lunch_riin_18": {
         character: "riin_gentle",
@@ -329,5 +329,33 @@ Object.assign(SCENARIO[1], {
         stopSfx: "sfx_wind.mp3",
         changeSlot: "afterschool",
         next: "day1_after_start"
+    },
+    "day1_lunch_sea_share_1": {
+        character: "sea_smile",
+        next: "day1_lunch_sea_share_2"
+    },
+    "day1_lunch_sea_share_2": {
+        character: "sea_smile",
+        next: "day1_lunch_sea_share_3"
+    },
+    "day1_lunch_sea_share_3": {
+        character: "sea_smile",
+        next: "day1_lunch_sea_share_4"
+    },
+    "day1_lunch_sea_share_4": {
+        character: "sea_smile",
+        next: "day1_lunch_sea_13"
+    },
+    "day1_lunch_riin_rest_1": {
+        character: "riin_gentle",
+        next: "day1_lunch_riin_rest_2"
+    },
+    "day1_lunch_riin_rest_2": {
+        character: "riin_gentle",
+        next: "day1_lunch_riin_rest_3"
+    },
+    "day1_lunch_riin_rest_3": {
+        character: "riin_gentle",
+        next: "day1_lunch_riin_18"
     }
 });

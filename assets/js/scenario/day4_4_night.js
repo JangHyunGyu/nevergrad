@@ -454,6 +454,38 @@ Object.assign(SCENARIO[4], {
     "day4_night_mirror_hit1_7": {
         character: null,
         unskippable: true,
+        next: "day4_night_deduction_hand"
+    },
+    "day4_night_deduction_hand": {
+        character: null,
+        glitch: { mirrorReflection: true, characterAbsentInMirror: "seolhwa" },
+        choices: [
+            { next: "day4_night_deduction_hand_match", stats: { seolhwa: { affinity: 2 } }, setFlags: ["deduced_left_hand"] },
+            { next: "day4_night_deduction_hand_hint" }
+        ]
+    },
+    "day4_night_deduction_hand_match": {
+        character: null,
+        next: "day4_night_deduction_seolhwa"
+    },
+    "day4_night_deduction_hand_hint": {
+        character: null,
+        next: "day4_night_deduction_seolhwa"
+    },
+    "day4_night_deduction_seolhwa": {
+        character: null,
+        glitch: { mirrorReflection: true, characterAbsentInMirror: "seolhwa" },
+        choices: [
+            { next: "day4_night_deduction_record_match", stats: { seolhwa: { affinity: 2 } }, setFlags: ["deduced_seolhwa_record"] },
+            { next: "day4_night_deduction_record_hint" }
+        ]
+    },
+    "day4_night_deduction_record_match": {
+        character: null,
+        next: "day4_night_mirror_hit1_8"
+    },
+    "day4_night_deduction_record_hint": {
+        character: null,
         next: "day4_night_mirror_hit1_8"
     },
     "day4_night_mirror_hit1_8": {

@@ -97,7 +97,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_sea_16": {
         character: "sea_smile",
-        next: "day1_after_home_1"
+        next: "day1_after_sea_walk_1"
     },
 
     // ===== 유나 — 도서관 (lines 565-587) =====
@@ -116,7 +116,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_yuna_4": {
         character: "yuna_shy",
-        next: "day1_after_yuna_5"
+        next: "day1_after_yuna_cat_1"
     },
     "day1_after_yuna_5": {
         character: "yuna_shy",
@@ -249,7 +249,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_eunsu_8": {
         character: "eunsu_warm",
-        next: "day1_after_eunsu_9"
+        next: "day1_after_eunsu_counsel_1"
     },
     "day1_after_eunsu_9": {
         character: "eunsu_warm",
@@ -293,5 +293,46 @@ Object.assign(SCENARIO[1], {
         character: null,
         changeSlot: "night",
         next: "day1_night_start"
+    },
+    "day1_after_sea_walk_1": {
+        background: "corridor",
+        character: "sea_smile",
+        next: "day1_after_sea_walk_2"
+    },
+    "day1_after_sea_walk_2": {
+        character: "sea_smile",
+        next: "day1_after_sea_walk_3"
+    },
+    "day1_after_sea_walk_3": {
+        character: "sea_smile",
+        next: "day1_after_sea_walk_4"
+    },
+    "day1_after_sea_walk_4": {
+        character: "sea_smile",
+        next: "day1_after_home_1"
+    },
+    "day1_after_eunsu_counsel_1": {
+        character: "eunsu_warm",
+        next: "day1_after_eunsu_counsel_2"
+    },
+    "day1_after_eunsu_counsel_2": {
+        character: "eunsu_warm",
+        next: "day1_after_eunsu_counsel_3"
+    },
+    "day1_after_eunsu_counsel_3": {
+        character: "eunsu_warm",
+        next: "day1_after_eunsu_9"
+    },
+    "day1_after_yuna_cat_1": {
+        character: "yuna_shy",
+        next: "day1_after_yuna_cat_2"
+    },
+    "day1_after_yuna_cat_2": {
+        character: "yuna_shy",
+        next: "day1_after_yuna_cat_3"
+    },
+    "day1_after_yuna_cat_3": {
+        character: "yuna_shy",
+        next: "day1_after_yuna_5"
     }
 });

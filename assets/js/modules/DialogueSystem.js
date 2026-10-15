@@ -15,6 +15,7 @@ class DialogueSystem {
         this._fullText = "";
         this._onComplete = null;
         this._advanceBlockedUntil = 0;
+        this._typeGeneration = 0;
     }
 
     /**
@@ -78,7 +79,10 @@ class DialogueSystem {
         this.resetAdvanceCooldown();
         // 이전 타이머 정리 (재진입 방지)
         clearInterval(this._typeTimer);
+        clearTimeout(this._typeTimer);
         clearTimeout(this._messengerTimer);
+        this.audio?.stopTypingTicks?.();
+        const generation = ++this._typeGeneration;
 
         if (this.nameEl) this.nameEl.textContent = name;
         if (this.indicatorEl) this.indicatorEl.style.display = 'none';
@@ -109,18 +113,35 @@ class DialogueSystem {
         const formattedFull = this._formatText(displayText);
 
         let idx = 0;
-        const speed = options.typingSpeed || CONFIG.TYPING_SPEED;
-
-        this._typeTimer = setInterval(() => {
-            if (this.isPaused?.()) return;
+        const speed = options.typingSpeed ?? CONFIG.TYPING_SPEED;
+        const texture = this.audio?.getVoiceTexture?.(options.charId, options.genreShift, options.day);
+        const paced = !!(texture || options.textPace || options.typingPause);
+        this._voiceTexture = texture;
+        this._typeOptions = options;
+        this._typeSpeed = speed;
+        this._pauseRemaining = Math.max(0, options.typingPause || 0);
+        const tick = () => {
+            if (generation !== this._typeGeneration || !this.isTyping) return;
+            if (this.isPaused?.()) {
+                if (paced) this._typeTimer = setTimeout(tick, 30);
+                return;
+            }
+            this._pauseRemaining = 0;
+            if (speed === 0) {
+                if (this.textEl) this.textEl.innerHTML = formattedFull;
+                this._finishTyping();
+                return;
+            }
             if (idx < plainText.length) {
                 if (this.textEl) {
                     // 순수 텍스트 idx 글자까지 잘라서 보여줘야 하지만,
                     // 서식을 유지하려면 원본 마크다운 기준으로 자르고 변환해야 함
-                    const partialPlain = plainText.slice(0, idx + 1);
                     // 원본 displayText에서 plainText idx+1 글자에 해당하는 위치 찾기
                     const partialSource = this._sliceByPlainLength(displayText, idx + 1);
                     this.textEl.innerHTML = this._formatText(partialSource);
+                }
+                if ((!isNarration || options.charId === 'system') && !options.silentTyping && /\S/u.test(plainText[idx])) {
+                    this.audio?.playTypingTick?.(texture);
                 }
                 idx++;
             } else {
@@ -128,8 +149,30 @@ class DialogueSystem {
                     this.textEl.innerHTML = formattedFull;
                 }
                 this._finishTyping();
+                return;
             }
-        }, speed);
+            if (paced && generation === this._typeGeneration) {
+                this._typeTimer = setTimeout(tick, this._typingDelay(idx, plainText[idx - 1]));
+            }
+        };
+        if (paced) {
+            const initial = this._pauseRemaining + (texture?.rhythm === 'echo' ? 90 : 0);
+            this._typeTimer = setTimeout(tick, initial || Math.max(0, speed));
+        } else this._typeTimer = setInterval(tick, Math.max(0, speed));
+    }
+
+    _typingDelay(index, previousCharacter) {
+        const speed = this._typeSpeed;
+        const pace = this._typeOptions?.textPace || this._voiceTexture?.rhythm;
+        if (pace === 'document') {
+            return Math.max(20, Math.min(120, [20, 80, 35, 120, 50, 25, 95, 40][index % 8] * speed / 40));
+        }
+        if (pace === 'fractured') {
+            if (/[.!?。！？\n]/u.test(previousCharacter)) return Math.max(speed, 180);
+            return Math.max(8, speed * [1, 0.86, 1.22, 0.94, 1.12, 0.9][index % 6]);
+        }
+        if (pace === 'echo') return speed * 1.18;
+        return speed;
     }
 
     /**
@@ -179,7 +222,7 @@ class DialogueSystem {
     skipTyping() {
         if (!this.isTyping) return;
         // unskippable 장면에서는 스킵 차단 (공포 연출용)
-        if (this._unskippable) return;
+        if (this._unskippable || this._pauseRemaining > 0) return;
 
         const isNarration = this._isNarration(this._fullText);
         const displayText = isNarration ? this._fullText.slice(1, -1) : this._fullText;
@@ -211,16 +254,18 @@ class DialogueSystem {
 
     _finishTyping() {
         clearInterval(this._typeTimer);
+        clearTimeout(this._typeTimer);
+        this.audio?.stopTypingTicks?.();
+        this._pauseRemaining = 0;
         this.isTyping = false;
 
         if (this.indicatorEl) {
             this.indicatorEl.style.display = 'block';
         }
 
-        if (this._onComplete) {
-            this._onComplete();
-            this._onComplete = null;
-        }
+        const onComplete = this._onComplete;
+        this._onComplete = null;
+        onComplete?.();
     }
 
     /**
@@ -263,16 +308,21 @@ class DialogueSystem {
                 this.textEl.classList.remove('messenger-typing');
             }
             this.type(name, text, onComplete, {
-                typingSpeed: options.typingSpeed || CONFIG.TYPING_SPEED,
+                ...options,
+                typingSpeed: options.typingSpeed ?? CONFIG.TYPING_SPEED,
                 unskippable: !!options.unskippable
             });
         }, delay);
     }
 
     cancel() {
+        this._typeGeneration++;
         this.resetAdvanceCooldown();
         clearInterval(this._typeTimer);
+        clearTimeout(this._typeTimer);
         clearTimeout(this._messengerTimer);
+        this.audio?.stopTypingTicks?.();
+        this._pauseRemaining = 0;
         this._typeTimer = null;
         this._messengerTimer = null;
         this._onComplete = null;

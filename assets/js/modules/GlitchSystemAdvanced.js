@@ -90,6 +90,27 @@ class GlitchSystemAdvanced {
         card.appendChild(face);
         card.appendChild(meta);
 
+        const comparisonCopy = this._getPhotoComparisonCopy();
+        const comparison = document.createElement('div');
+        comparison.className = 'photo-deck-comparison hidden';
+        const compare = document.createElement('button');
+        compare.type = 'button';
+        compare.className = 'photo-deck-compare';
+        compare.textContent = comparisonCopy.compare;
+        compare.setAttribute('aria-pressed', 'false');
+        face.appendChild(comparison);
+        face.appendChild(compare);
+        compare.addEventListener('click', event => {
+            event.stopPropagation();
+            const open = compare.getAttribute('aria-pressed') !== 'true';
+            compare.setAttribute('aria-pressed', String(open));
+            comparison.classList.toggle('hidden', !open);
+            face.classList.toggle('photo-deck-comparing', open);
+            note.textContent = open ? comparisonCopy.observation : photos[index].note;
+            if (open) this.engine?.state?.setFlag?.('compared_subject_photos');
+        });
+        comparison.addEventListener('click', event => event.stopPropagation());
+
         const prev = document.createElement('button');
         prev.className = 'photo-deck-nav photo-deck-prev';
         prev.type = 'button';
@@ -145,6 +166,29 @@ class GlitchSystemAdvanced {
             face.style.backgroundImage = photo.image
                 ? `url('${this._assetUrl(photo.image)}')`
                 : '';
+            const canCompare = photo.slot === 7 || photo.slot === 13;
+            compare.classList.toggle('hidden', !canCompare);
+            compare.setAttribute('aria-pressed', 'false');
+            comparison.classList.add('hidden');
+            face.classList.remove('photo-deck-comparing');
+            face.classList.toggle('photo-deck-focus', canCompare);
+            comparison.replaceChildren();
+            if (canCompare) {
+                for (const slotNumber of [7, 13]) {
+                    const subject = photos.find(item => item.slot === slotNumber);
+                    const panel = document.createElement('div');
+                    panel.className = 'photo-deck-comparison-panel';
+                    const portrait = document.createElement('img');
+                    portrait.src = this._assetUrl(subject.image);
+                    portrait.alt = `#${String(slotNumber).padStart(2, '0')} ${String(subject.name).replace('{name}', playerName)}`;
+                    const label = document.createElement('div');
+                    label.className = 'photo-deck-comparison-label';
+                    label.textContent = portrait.alt;
+                    panel.append(portrait, label);
+                    comparison.appendChild(panel);
+                }
+                compare.title = comparisonCopy.observation;
+            }
 
             strip.innerHTML = '';
             photos.forEach((_, i) => {
@@ -208,6 +252,21 @@ class GlitchSystemAdvanced {
 
         requestAnimationFrame(() => overlay.classList.add('visible'));
         render(1);
+    }
+
+    _getPhotoComparisonCopy() {
+        const copy = {
+            ko: ['#07 / #13 대조', '눈꼬리와 코의 위치가 겹친다. 머리와 이름표만 다르다.'],
+            en: ['Compare #07 / #13', 'The eye corners and nose align. Only the hair and name tag differ.'],
+            ja: ['#07 / #13を比較', '目尻と鼻の位置が重なる。髪と名札だけが違う。'],
+            es: ['Comparar #07 / #13', 'Coinciden las comisuras de los ojos y la nariz. Solo cambian el pelo y la etiqueta.'],
+            fr: ['Comparer #07 / #13', 'Le coin des yeux et le nez s’alignent. Seuls les cheveux et le nom changent.'],
+            de: ['#07 / #13 vergleichen', 'Augenwinkel und Nase liegen gleich. Nur Haare und Namensschild unterscheiden sich.'],
+            pt: ['Comparar #07 / #13', 'Os cantos dos olhos e o nariz se alinham. Só mudam o cabelo e a identificação.'],
+            zh: ['对照 #07 / #13', '眼角和鼻子的位置重合。只有头发和名牌不同。']
+        };
+        const [compare, observation] = copy[this._getLang()] || copy.en;
+        return { compare, observation };
     }
 
     hidePhotoDeck() {

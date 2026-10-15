@@ -676,19 +676,19 @@
         "text": "*画面中央，文字一个字一个字浮现出来。*"
     },
     "day5_observer_4": {
-        "text": "══════════════════════════════════════════\n  Nevergrad 研究所（NEVERGRAD RESEARCH INSTITUTE）\n  观察日志对照记录\n══════════════════════════════════════════"
+        "text": "埃迪纳基金会 / NEVERGRAD 研究所\n安全审计：外部查阅会话\n对照档案：#13 观察记录"
     },
     "day5_observer_5": {
-        "text": "*我的记录？*"
+        "text": "访问权限：审计／监控\n会话状态：保持连接\n受试者接触权限：无"
     },
     "day5_observer_6": {
-        "text": "记录对象：#13（{name}）\n进行时间：{play_time}\n\n接触：世雅 {route_data} / 由娜 {met_yuna} / 莉仁 {riin_visits} / 雪花 {seolhwa_attempts}\n证据：{evidence_data}\n最终回应：{timer_data}"
+        "text": "受试者：#13 ({name})\n会话连接时长：{play_time}\n\n接触及介入汇总\n世雅接触次数：{route_data}\n是否接触由娜：{met_yuna}\n梨仁探访次数：{riin_visits}\n雪花接触尝试：{seolhwa_attempts}\n证据获取状态：{evidence_data}\n最终应答记录：{timer_data}"
     },
     "day5_observer_7": {
-        "text": "*画面向下滚动。*"
+        "text": "接触记录对照完成\n正在对照行为模式"
     },
     "day5_observer_8": {
-        "text": "备注：\n\n#13 记录查阅完毕。\n警告之后日志仍在持续。\n\n对照：\n朴恩秀——观察13次。\n{name}的观察者——{play_time}。\n\n判定保留。"
+        "text": "对照基准：研究负责人朴恩秀／13 次观察\n外部查阅会话：#13 ({name})／{play_time}\n\n共同项目：警告后继续查阅、介入记录累积\n相似度：持续观察模式吻合\n\n自动判定：待定\n会话终止请求：未收到"
     },
     "day5_observer_cupid_check": {
         "text": ""

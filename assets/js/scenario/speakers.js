@@ -2469,3 +2469,30 @@ NEVERGRAD_SPEAKER_NAMES["fr"]["minsu"] = "Minsu";
 NEVERGRAD_SPEAKER_NAMES["de"]["minsu"] = "Minsu";
 NEVERGRAD_SPEAKER_NAMES["pt"]["minsu"] = "Minsu";
 NEVERGRAD_SPEAKER_NAMES["zh"]["minsu"] = "敏秀";
+
+Object.assign(SCENARIO_SPEAKERS, {
+    "day1_lunch_sea_share_1": "sea",
+    "day1_lunch_sea_share_2": "me",
+    "day1_lunch_sea_share_3": "sea",
+    "day1_after_sea_walk_2": "me",
+    "day1_after_sea_walk_3": "sea",
+    "day1_after_eunsu_counsel_1": "eunsu",
+    "day1_after_eunsu_counsel_2": "me",
+    "day1_after_eunsu_counsel_3": "eunsu",
+    "day1_lunch_riin_rest_1": "me",
+    "day1_lunch_riin_rest_2": "riin",
+    "day2_lunch_sea_carrot_1": "me",
+    "day2_lunch_sea_carrot_2": "sea",
+    "day2_lunch_sea_carrot_3": "me",
+    "day2_lunch_sea_carrot_4": "sea",
+    "day2_after_sea_paper_2": "me",
+    "day2_after_sea_paper_3": "sea",
+    "day2_after_eunsu_checkin_1": "eunsu",
+    "day2_after_eunsu_checkin_2": "me",
+    "day2_after_eunsu_checkin_3": "eunsu",
+    "day2_lunch_riin_cup_1": "riin",
+    "day2_lunch_riin_cup_2": "me",
+    "day2_lunch_riin_cup_3": "riin",
+    "day1_after_yuna_cat_1": "me",
+    "day1_after_yuna_cat_2": "yuna"
+});

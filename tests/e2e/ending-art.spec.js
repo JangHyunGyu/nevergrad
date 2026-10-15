@@ -39,7 +39,7 @@ for (const viewport of [{ width:1280,height:800 },{ width:844,height:390 }]) {
         for (const [,galleryId] of scenes) {
             await page.locator(`.gallery-card[data-id="${galleryId}"]`).click();
             await expect(page.locator('.gallery-image-modal img')).toBeVisible();
-            expect(await page.locator('.gallery-image-modal img').evaluate(image => image.complete && image.naturalWidth === 1672 && image.naturalHeight === 941)).toBe(true);
+            await expect.poll(() => page.locator('.gallery-image-modal img').evaluate(image => image.complete && image.naturalWidth === 1672 && image.naturalHeight === 941)).toBe(true);
             await page.screenshot({path:info.outputPath(`${galleryId}-gallery.png`),animations:'disabled'});
             await page.locator('.gallery-modal-close').click();
         }

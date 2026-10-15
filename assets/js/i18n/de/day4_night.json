@@ -342,5 +342,31 @@
     },
     "day4_night_end": {
         "text": "*-- Ende von Tag 4 --*"
+    },
+    "day4_night_deduction_hand": {
+        "text": "*Ich rieb den Grafit an meinem linken Zeigefinger und zeichnete die abgeknickten Striche vom Spind und der Wand heute Morgen nach.*",
+        "choices": [
+            "Die Striche mit links nachzeichnen",
+            "An die Schrift auf dem Namensschild denken"
+        ]
+    },
+    "day4_night_deduction_hand_match": {
+        "text": "*Mit der linken Hand knickten die Striche gleich ab. Die Namen wechselten, die Schreibhand blieb.*"
+    },
+    "day4_night_deduction_hand_hint": {
+        "text": "*Auf dem Namensschild waren keine Bleistiftstriche. Ich öffnete die linke Hand. Grafit am Zeigefinger. An der Wand fuhr ich die Schrift nach.*"
+    },
+    "day4_night_deduction_seolhwa": {
+        "text": "*Ich öffnete Zeile #07 erneut: `Externer Kontakt: Lee Seolhwa`. Sie stand vor mir. Im Spiegel war nur der Handtuchhalter.*",
+        "choices": [
+            "Den Kontakt von #07 mit dem fehlenden Spiegelbild abgleichen",
+            "Prüfen, ob das Licht ausgegangen ist"
+        ]
+    },
+    "day4_night_deduction_record_match": {
+        "text": "*Ich tippte auf den Namen neben #07. Sie kannte mich schon damals. Dass ich sie sah, bewies nicht, dass sie körperlich hier war.*"
+    },
+    "day4_night_deduction_record_hint": {
+        "text": "*Lampe und Handtuchhalter spiegelten sich. Nur ihr Platz blieb leer. Mein Blick ging vom Namen neben #07 zu ihrem Gesicht.*"
     }
 }

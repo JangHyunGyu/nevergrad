@@ -676,19 +676,19 @@
         "text": "*...O texto aparece no centro da tela. Devagar.*"
     },
     "day5_observer_4": {
-        "text": "═════════════════════ ═════════════════════\n  INSTITUTO DE PESQUISA NEVERGRAD\n  Registro de controle de registro de observação\n═════════════════════ ═════════════════════"
+        "text": "FUNDAÇÃO EDINA / INSTITUTO NEVERGRAD\nAuditoria de segurança: sessão de consulta externa\nArquivo de referência: observações de #13"
     },
     "day5_observer_5": {
-        "text": "*...meu recorde?*"
+        "text": "Permissões: auditoria / monitoramento\nEstado da sessão: conectada\nAutorização de contato com sujeitos: nenhuma"
     },
     "day5_observer_6": {
-        "text": "Assunto do registro: #13 ({name})\nTempo de progresso: {play_time}\n\nContato: Sea {route_data} / Yuna {met_yuna} / Riin {riin_visits} / Seolhwa {seolhwa_attempts}\nEvidência: {evidence_data}\nResposta final: {timer_data}"
+        "text": "Sujeito: #13 ({name})\nTempo de conexão: {play_time}\n\nResumo de contatos e intervenções\nContatos com Sea: {route_data}\nContato com Yuna confirmado: {met_yuna}\nVisitas a Riin: {riin_visits}\nTentativas de contato com Seolhwa: {seolhwa_attempts}\nProvas obtidas: {evidence_data}\nÚltima resposta registrada: {timer_data}"
     },
     "day5_observer_7": {
-        "text": "*A tela rola para baixo.*"
+        "text": "Comparação de contatos concluída\nComparando padrões de comportamento"
     },
     "day5_observer_8": {
-        "text": "Notas:\n\nRevisão do registro #13 concluída.\nOs logs persistiram após aviso.\n\nComparação:\nPark Eunsu - 13 observações.\nObservador de {name} - {play_time}.\n\nSentença retida."
+        "text": "Referência: diretora Park Eunsu / 13 observações\nSessão de consulta externa: #13 ({name}) / {play_time}\n\nPontos comuns: acesso após aviso; intervenções acumuladas\nSemelhança: padrão de observação persistente coincide\n\nDecisão automática: pendente\nSolicitação de encerramento: não recebida"
     },
     "day5_observer_cupid_check": {
         "text": ""

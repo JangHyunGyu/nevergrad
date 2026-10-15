@@ -357,6 +357,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_3"
     },
     "day5_morning_true_3": {
+        typingSpeed: 40,
+        textPace: "document",
         character: null,
         unskippable: true,
         next: "day5_morning_true_4"
@@ -387,6 +389,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_9"
     },
     "day5_morning_true_9": {
+        typingSpeed: 40,
+        textPace: "document",
         character: null,
         unskippable: true,
         next: "day5_morning_true_10"
@@ -412,6 +416,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_14"
     },
     "day5_morning_true_14": {
+        typingSpeed: 40,
+        textPace: "document",
         character: "yuna_weak",
         unskippable: true,
         next: "day5_morning_true_15"
@@ -422,11 +428,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_16"
     },
     "day5_morning_true_16": {
+        typingSpeed: 40,
+        textPace: "document",
         character: null,
         unskippable: true,
         next: "day5_morning_true_17"
     },
     "day5_morning_true_17": {
+        typingSpeed: 40,
+        textPace: "document",
         character: null,
         unskippable: true,
         next: "day5_morning_true_18"
@@ -457,11 +467,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_23"
     },
     "day5_morning_true_23": {
+        typingSpeed: 40,
+        textPace: "document",
         character: null,
         unskippable: true,
         next: "day5_morning_true_24"
     },
     "day5_morning_true_24": {
+        typingSpeed: 40,
+        textPace: "document",
         character: null,
         unskippable: true,
         next: "day5_morning_true_25"
@@ -528,11 +542,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_true_37"
     },
     "day5_morning_true_37": {
+        typingSpeed: 40,
+        textPace: "document",
         character: null,
         unskippable: true,
         next: "day5_morning_true_38"
     },
     "day5_morning_true_38": {
+        typingSpeed: 40,
+        textPace: "document",
         character: null,
         unskippable: true,
         next: "day5_morning_true_39"

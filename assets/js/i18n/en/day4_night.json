@@ -342,5 +342,31 @@
     },
     "day4_night_end": {
         "text": "*-- End of Day 4 --*"
+    },
+    "day4_night_deduction_hand": {
+        "text": "*I rubbed the graphite on my left index finger, tracing the bent strokes from the locker and this morning’s wall.*",
+        "choices": [
+            "Trace the strokes with my left hand",
+            "Recall the name tag’s typeface"
+        ]
+    },
+    "day4_night_deduction_hand_match": {
+        "text": "*With my left hand, the strokes bent the same way. The names changed. The writing hand didn’t.*"
+    },
+    "day4_night_deduction_hand_hint": {
+        "text": "*A name tag has no pen strokes. I opened my left hand; graphite marked the index finger. I traced the writing against the wall.*"
+    },
+    "day4_night_deduction_seolhwa": {
+        "text": "*I reopened row #07 in the app: `External contact: Lee Seolhwa`. She stood before me, but the mirror showed only the towel rail.*",
+        "choices": [
+            "Compare #07’s contact record with her missing reflection",
+            "Check whether the bathroom light went out"
+        ]
+    },
+    "day4_night_deduction_record_match": {
+        "text": "*I touched the name beside #07. She had known me then. Seeing her now wasn’t proof that she was physically here.*"
+    },
+    "day4_night_deduction_record_hint": {
+        "text": "*The light and towel rail both had reflections. Only her place was empty. I looked from the name beside #07 to her face.*"
     }
 }

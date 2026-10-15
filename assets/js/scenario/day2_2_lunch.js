@@ -75,7 +75,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_sea_11": {
         character: "sea_smile",
-        next: "day2_lunch_sea_12"
+        next: "day2_lunch_sea_carrot_1"
     },
     "day2_lunch_sea_12": {
         character: "sea_smile",
@@ -320,7 +320,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_riin_18": {
         character: "riin_gentle",
-        next: "day2_lunch_riin_19"
+        next: "day2_lunch_riin_cup_1"
     },
     "day2_lunch_riin_19": {
         character: "riin_smile",
@@ -433,5 +433,33 @@ Object.assign(SCENARIO[2], {
         character: null,
         changeSlot: "afterschool",
         next: "day2_after_start"
+    },
+    "day2_lunch_sea_carrot_1": {
+        character: "sea_smile",
+        next: "day2_lunch_sea_carrot_2"
+    },
+    "day2_lunch_sea_carrot_2": {
+        character: "sea_smile",
+        next: "day2_lunch_sea_carrot_3"
+    },
+    "day2_lunch_sea_carrot_3": {
+        character: "sea_smile",
+        next: "day2_lunch_sea_carrot_4"
+    },
+    "day2_lunch_sea_carrot_4": {
+        character: "sea_smile",
+        next: "day2_lunch_sea_12"
+    },
+    "day2_lunch_riin_cup_1": {
+        character: "riin_gentle",
+        next: "day2_lunch_riin_cup_2"
+    },
+    "day2_lunch_riin_cup_2": {
+        character: "riin_gentle",
+        next: "day2_lunch_riin_cup_3"
+    },
+    "day2_lunch_riin_cup_3": {
+        character: "riin_gentle",
+        next: "day2_lunch_riin_19"
     }
 });

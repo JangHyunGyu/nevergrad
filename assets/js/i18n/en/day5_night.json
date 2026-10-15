@@ -676,19 +676,19 @@
         "text": "*Text appears one character at a time in the center of the screen.*"
     },
     "day5_observer_4": {
-        "text": "═════════════════════ ═════════════════════\n  NEVERGRAD RESEARCH INSTITUTE\n  Observation log control record\n═════════════════════ ═════════════════════"
+        "text": "EDINA FOUNDATION / NEVERGRAD RESEARCH INSTITUTE\nSecurity audit: external review session\nReference file: #13 observation record"
     },
     "day5_observer_5": {
-        "text": "*...my record?*"
+        "text": "Access scope: audit / monitoring\nSession status: connected\nSubject contact authorization: none"
     },
     "day5_observer_6": {
-        "text": "Record subject: #13 ({name})\nProgress time: {play_time}\n\nContact: Sea {route_data} / Yuna {met_yuna} / Riin {riin_visits} / Seolhwa {seolhwa_attempts}\nEvidence: {evidence_data}\nFinal response: {timer_data}"
+        "text": "Subject: #13 ({name})\nSession connection time: {play_time}\n\nContact / intervention summary\nSea contacts: {route_data}\nYuna contact confirmed: {met_yuna}\nRiin visits: {riin_visits}\nSeolhwa contact attempts: {seolhwa_attempts}\nEvidence secured: {evidence_data}\nFinal response record: {timer_data}"
     },
     "day5_observer_7": {
-        "text": "*The screen scrolls down.*"
+        "text": "Contact record comparison complete\nComparing behavioral patterns"
     },
     "day5_observer_8": {
-        "text": "Notes:\n\n#13 record review complete.\nLogs persisted after warning.\n\nComparison:\nPark Eunsu - 13 observations.\nObserver of {name} - {play_time}.\n\nJudgment withheld."
+        "text": "Reference: research director Park Eunsu / 13 observations\nExternal review session: #13 ({name}) / {play_time}\n\nShared fields: continued access after warning; accumulated interventions\nSimilarity: persistent observation pattern matches\n\nAutomated decision: pending\nSession termination request: not received"
     },
     "day5_observer_cupid_check": {
         "text": ""

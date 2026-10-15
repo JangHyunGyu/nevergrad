@@ -1,0 +1,744 @@
+{
+  "date": "2026-10-15",
+  "skill": "humanize-korean",
+  "method": "Codex monolith: A–J scan, targeted rewrite, six-item self-check; authorized scene additions are reviewed against their first draft",
+  "entries": [
+    {
+      "id": "day1_lunch_sea_share_1",
+      "before": null,
+      "draft": "소시지 하나만 바꿔 먹자. 내가 만든 건데 네 쪽 게 더 맛있어 보여.",
+      "final": "소시지 하나만 바꿔 먹자. 내가 만든 건데 네 쪽 게 더 맛있어 보여.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_lunch_sea_share_2",
+      "before": null,
+      "draft": "반장도 남의 반찬 탐내는구나.",
+      "final": "반장도 남의 반찬 탐내는구나.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_lunch_sea_share_3",
+      "before": null,
+      "draft": "반장 점심시간이잖아. 이때는 그냥 한세아야.",
+      "final": "반장 점심시간이잖아. 이때는 그냥 한세아야.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_lunch_sea_share_4",
+      "before": null,
+      "draft": "*소시지를 바꿔 담자 세아가 내 뚜껑 아래로 냅킨을 밀어줬다. 묻은 소스를 닦고 나서야 내 앞에 냅킨이 없었다는 걸 알았다.*",
+      "final": "*소시지를 바꿔 담자 세아가 내 뚜껑 아래로 냅킨을 밀어줬다. 묻은 소스를 닦고 나서야 내 앞에 냅킨이 없었다는 걸 알았다.*",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_sea_walk_1",
+      "before": null,
+      "draft": "*교문까지 같이 가겠다며 세아가 빈 캔 두 개를 챙겼다. 복도에서 나란히 걷자 소매가 한 번 스쳤다.*",
+      "final": "*교문까지 같이 가겠다며 세아가 빈 캔 두 개를 챙겼다. 복도에서 나란히 걷자 소매가 한 번 스쳤다.*",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_sea_walk_2",
+      "before": null,
+      "draft": "교문도 안내해 주게? 그건 혼자 찾을 수 있는데.",
+      "final": "교문도 안내해 주게? 그건 혼자 찾을 수 있는데.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_sea_walk_3",
+      "before": null,
+      "draft": "나도 집에 가거든. 반장 퇴근 좀 시켜줄래?",
+      "final": "나도 집에 가거든. 반장 퇴근 좀 시켜줄래?",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_sea_walk_4",
+      "before": null,
+      "draft": "*계단 앞에서 세아가 안쪽으로 비켜줬다. 내가 가방을 고쳐 메는 동안 난간에 기대 기다렸다.*",
+      "final": "*계단 앞에서 세아가 안쪽으로 비켜줬다. 내가 가방을 고쳐 멜 때까지 난간에 기대 기다렸다.*",
+      "findings": [
+        {
+          "rule": "A-18",
+          "severity": "S2",
+          "before": "*계단 앞에서 세아가 안쪽으로 비켜줬다. 내가 가방을 고쳐 메는 동안 난간에 기대 기다렸다.*",
+          "after": "*계단 앞에서 세아가 안쪽으로 비켜줬다. 내가 가방을 고쳐 멜 때까지 난간에 기대 기다렸다.*",
+          "reason": "Condensed an extended modifier without changing the action or timing"
+        }
+      ],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_eunsu_counsel_1",
+      "before": null,
+      "draft": "진로 희망 칸은 비워도 돼. 오늘 네가 정할 건 집에 가는 버스 정도지.",
+      "final": "진로 희망 칸은 비워도 돼. 오늘 네가 정할 건 집에 가는 버스 정도지.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_eunsu_counsel_2",
+      "before": null,
+      "draft": "그건 아침에 잘못 타서 외웠어요.",
+      "final": "그건 아침에 잘못 타서 외웠어요.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_eunsu_counsel_3",
+      "before": null,
+      "draft": "그럼 하나 끝났네. 수업 따라가다 막히는 건 표시만 해 와. 같이 보자.",
+      "final": "그럼 하나 끝났네. 수업 따라가다 막히는 건 표시만 해 와. 같이 보자.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_lunch_riin_rest_1",
+      "before": null,
+      "draft": "네. 그런데 시계가 안 보여서요. 또 잠들면 어떡하죠?",
+      "final": "네. 그런데 시계가 안 보여서요. 또 잠들면 어떡하죠?",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_lunch_riin_rest_2",
+      "before": null,
+      "draft": "내가 깨워요. 자는 사람한테 시계까지 보라고 하면 쉬는 게 아니죠.",
+      "final": "내가 깨워요. 자는 사람한테 시계까지 보라고 하면 쉬는 게 아니죠.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_lunch_riin_rest_3",
+      "before": null,
+      "draft": "*선생님이 침대 머리맡으로 물컵을 옮겼다. 창가 쪽 커튼만 조금 더 쳐주자 눈꺼풀 위의 햇빛이 가려졌다.*",
+      "final": "*선생님이 침대 머리맡으로 물컵을 옮겼다. 창가 쪽 커튼만 조금 더 쳐주자 눈꺼풀 위의 햇빛이 가려졌다.*",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_lunch_sea_carrot_1",
+      "before": null,
+      "draft": "당근은 왜 꽃 모양이야? 소시지보다 손 많이 갔겠다.",
+      "final": "당근은 왜 꽃 모양이야? 소시지보다 손 많이 갔겠다.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_lunch_sea_carrot_2",
+      "before": null,
+      "draft": "틀로 찍으면 돼. 반장이라고 칼질까지 잘할 필요는 없잖아.",
+      "final": "틀로 찍으면 돼. 반장이라고 칼질까지 잘할 필요는 없잖아.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_lunch_sea_carrot_3",
+      "before": null,
+      "draft": "그럼 이 못생긴 꽃은 내가 먹을게.",
+      "final": "그럼 이 못생긴 꽃은 내가 먹을게.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_lunch_sea_carrot_4",
+      "before": null,
+      "draft": "그거 내가 먹으려고 숨겨둔 건데. 잘도 찾네.",
+      "final": "그거 내가 먹으려고 숨겨둔 건데. 잘도 찾네.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_after_sea_paper_1",
+      "before": null,
+      "draft": "*세아가 서류 모서리에 손가락을 대고 기다렸다. 내가 종이를 맞추자 그제야 집게를 끼웠다. 손등이 잠깐 닿았다.*",
+      "final": "*세아가 서류 모서리를 손가락으로 누른 채 기다렸다. 내가 종이를 맞추자 집게를 끼웠다. 손등이 잠깐 닿았다.*",
+      "findings": [
+        {
+          "rule": "A-18",
+          "severity": "S2",
+          "before": "*세아가 서류 모서리에 손가락을 대고 기다렸다. 내가 종이를 맞추자 그제야 집게를 끼웠다. 손등이 잠깐 닿았다.*",
+          "after": "*세아가 서류 모서리를 손가락으로 누른 채 기다렸다. 내가 종이를 맞추자 집게를 끼웠다. 손등이 잠깐 닿았다.*",
+          "reason": "Simplified the action chain while retaining the waiting, alignment, clip and touch"
+        }
+      ],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_after_sea_paper_2",
+      "before": null,
+      "draft": "나 없을 땐 이거 어떻게 했어?",
+      "final": "나 없을 땐 이거 어떻게 했어?",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_after_sea_paper_3",
+      "before": null,
+      "draft": "집게를 입에 물었지. 오늘은 말도 하면서 하니까 낫네.",
+      "final": "집게를 입에 물었지. 오늘은 말도 하면서 하니까 낫네.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_after_sea_paper_4",
+      "before": null,
+      "draft": "*세아가 다음 집게를 내 손바닥에 놓았다. 나는 의자를 조금 당겼다. 이번엔 두 사람 사이로 종이가 떨어지지 않았다.*",
+      "final": "*세아가 다음 집게를 내 손바닥에 놓았다. 나는 의자를 조금 당겼다. 이번엔 두 사람 사이로 종이가 떨어지지 않았다.*",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_after_eunsu_checkin_1",
+      "before": null,
+      "draft": "어제 버스는 잘 탔어? 오늘은 서류 말고 그거부터 물으려고 했는데.",
+      "final": "어제 버스는 잘 탔어? 오늘은 서류 말고 그거부터 물으려고 했는데.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_after_eunsu_checkin_2",
+      "before": null,
+      "draft": "네. 집에 가는 쪽은 이제 알아요.",
+      "final": "네. 집에 가는 쪽은 이제 알아요.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_after_eunsu_checkin_3",
+      "before": null,
+      "draft": "잘했네. 앱은 여기서 같이 깔자. 모르는 칸은 그냥 넘기지 말고 물어봐.",
+      "final": "잘했네. 앱은 여기서 같이 깔자. 모르는 칸은 그냥 넘기지 말고 물어봐.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_lunch_riin_cup_1",
+      "before": null,
+      "draft": "그 컵 손잡이가 뜨거워요. 받침째 들어요.",
+      "final": "그 컵 손잡이가 뜨거워요. 받침째 들어요.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_lunch_riin_cup_2",
+      "before": null,
+      "draft": "아, 네. 검사보다 차 마시는 게 어렵네요.",
+      "final": "아, 네. 검사보다 차 마시는 게 어렵네요.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day2_lunch_riin_cup_3",
+      "before": null,
+      "draft": "검사는 내가 했잖아요. 차도 불어줘야 하나?",
+      "final": "검사는 내가 했잖아요. 차도 불어줘야 하나?",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_yuna_cat_1",
+      "before": null,
+      "draft": "치즈는 네가 부르면 와?",
+      "final": "치즈는 네가 부르면 와?",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_yuna_cat_2",
+      "before": null,
+      "draft": "봉지 소리 나면요. 이름은 아직 협의 중이에요.",
+      "final": "봉지 소리 나면요. 이름은 아직 협의 중이에요.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_yuna_cat_3",
+      "before": null,
+      "draft": "*사진 속 치즈는 렌즈를 등지고 있었다. 유나가 옆 사진을 보여줬다. 이번엔 코가 너무 가까워 화면이 온통 분홍색이었다.*",
+      "final": "*사진 속 치즈는 렌즈를 등지고 있었다. 유나가 옆 사진을 보여줬다. 이번엔 코가 너무 가까워 화면이 온통 분홍색이었다.*",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day4_night_deduction_hand",
+      "before": null,
+      "draft": "*왼손 검지의 흑연을 문질렀다. 사물함 글씨의 꺾인 획과 아침 벽에 남은 획을 손가락으로 그려본다.*",
+      "final": "*왼손 검지의 흑연을 문질렀다. 사물함 글씨의 꺾인 획과 아침 벽에 남은 획을 손가락으로 그려본다.*",
+      "choices": [
+        "왼손으로 획을 그려본다",
+        "이름표의 글꼴을 떠올린다"
+      ],
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day4_night_deduction_hand_match",
+      "before": null,
+      "draft": "*왼손으로 그리자 획 끝이 같은 방향으로 꺾였다. 이름이 바뀌어도 쓰는 손은 그대로다.*",
+      "final": "*왼손으로 그리자 획 끝이 같은 방향으로 꺾였다. 이름이 바뀌어도 쓰는 손은 그대로다.*",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day4_night_deduction_hand_hint",
+      "before": null,
+      "draft": "*이름표에는 획이 없다. 왼손을 펴자 검지의 흑연이 다시 보였다. 벽에 손을 대고 글씨를 따라갔다.*",
+      "final": "*이름표에는 획이 없다. 왼손을 펴자 검지의 흑연이 다시 보였다. 벽에 손을 대고 글씨를 따라갔다.*",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day4_night_deduction_seolhwa",
+      "before": null,
+      "draft": "*앱의 #07 행을 다시 열었다. `외부 접촉: 이설화`. 고개를 들면 설화가 있고 거울에는 수건걸이만 비친다.*",
+      "final": "*앱의 #07 행을 다시 열었다. `외부 접촉: 이설화`. 고개를 들면 설화가 있고 거울에는 수건걸이만 비친다.*",
+      "choices": [
+        "#07의 설화 기록과 빈 반사상을 대조한다",
+        "욕실 조명이 꺼졌는지 확인한다"
+      ],
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day4_night_deduction_record_match",
+      "before": null,
+      "draft": "*#07 옆의 이름을 짚었다. 설화는 그때부터 나와 접촉했다. 지금 내 눈에 보인다는 사실만으로 여기 있다는 증거가 되지는 않는다.*",
+      "final": "*#07 옆의 이름을 짚었다. 설화는 그때부터 나와 접촉했다. 지금 내 눈에 보인다고 여기 있다는 증거가 되지는 않는다.*",
+      "findings": [
+        {
+          "rule": "I-2",
+          "severity": "S2",
+          "before": "*#07 옆의 이름을 짚었다. 설화는 그때부터 나와 접촉했다. 지금 내 눈에 보인다는 사실만으로 여기 있다는 증거가 되지는 않는다.*",
+          "after": "*#07 옆의 이름을 짚었다. 설화는 그때부터 나와 접촉했다. 지금 내 눈에 보인다고 여기 있다는 증거가 되지는 않는다.*",
+          "reason": "Removed a formal nominal wrapper; preserved the qualified inference"
+        }
+      ],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day4_night_deduction_record_hint",
+      "before": null,
+      "draft": "*형광등도 수건걸이도 거울에 비친다. 빈 곳은 설화 자리뿐이다. #07 옆의 이름과 눈앞의 얼굴을 번갈아 봤다.*",
+      "final": "*형광등도 수건걸이도 거울에 비친다. 빈 곳은 설화 자리뿐이다. #07 옆의 이름과 눈앞의 얼굴을 번갈아 봤다.*",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day5_observer_4",
+      "before": "══════════════════════════════════════════\n  네버그라드 연구소(NEVERGRAD RESEARCH INSTITUTE)\n  관찰 로그 대조 기록\n══════════════════════════════════════════",
+      "draft": "에디나 재단 / 네버그라드 연구소(NEVERGRAD RESEARCH INSTITUTE)\n보안 감사: 외부 열람 세션\n대조 대상: #13 관찰 기록",
+      "final": "에디나 재단 / 네버그라드 연구소(NEVERGRAD RESEARCH INSTITUTE)\n보안 감사: 외부 열람 세션\n대조 대상: #13 관찰 기록",
+      "authorization": "Requested in-world security audit rewrite; style review compares the new draft with its final wording",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day5_observer_5",
+      "before": "*내 기록?*",
+      "draft": "접속 권한: 감사·모니터링\n세션 상태: 접속 유지\n피험자 접촉 권한: 없음",
+      "final": "접속 권한: 감사·모니터링\n세션 상태: 접속 유지\n피험자 접촉 권한: 없음",
+      "authorization": "Requested in-world security audit rewrite; style review compares the new draft with its final wording",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day5_observer_6",
+      "before": "기록 대상: #13 ({name})\n진행 시간: {play_time}\n\n접촉: 세아 {route_data} / 유나 {met_yuna} / 리인 {riin_visits} / 설화 {seolhwa_attempts}\n증거: {evidence_data}\n최종 응답: {timer_data}",
+      "draft": "피험자: #13 ({name})\n세션 접속 시간: {play_time}\n\n접촉·개입 집계\n세아 접촉: {route_data}\n유나 접촉 여부: {met_yuna}\n리인 방문: {riin_visits}\n설화 접촉 시도: {seolhwa_attempts}\n증거 확보: {evidence_data}\n최종 응답 기록: {timer_data}",
+      "final": "피험자: #13 ({name})\n세션 접속 시간: {play_time}\n\n접촉·개입 집계\n세아 접촉: {route_data}\n유나 접촉 여부: {met_yuna}\n리인 방문: {riin_visits}\n설화 접촉 시도: {seolhwa_attempts}\n증거 확보: {evidence_data}\n최종 응답 기록: {timer_data}",
+      "authorization": "Requested in-world security audit rewrite; style review compares the new draft with its final wording",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day5_observer_7",
+      "before": "*스크롤이 내려간다.*",
+      "draft": "접촉 기록 대조 완료\n행동 패턴 대조 중",
+      "final": "접촉 기록 대조 완료\n행동 패턴 대조 중",
+      "authorization": "Requested in-world security audit rewrite; style review compares the new draft with its final wording",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day5_observer_8",
+      "before": "비고:\n\n#13 기록 열람 완료.\n경고 후에도 로그 지속.\n\n대조:\n박은수 — 13회 관찰.\n{name}의 관찰자 — {play_time}.\n\n판정 보류.",
+      "draft": "대조 기준: 연구 책임자 박은수 / 13회 관찰\n외부 열람 세션: #13 ({name}) / {play_time}\n\n공통 항목: 경고 후 열람 지속, 개입 기록 누적\n유사도: 관찰 지속 패턴 일치\n\n자동 판정: 보류\n세션 종료 요청: 미수신",
+      "final": "대조 기준: 연구 책임자 박은수 / 13회 관찰\n외부 열람 세션: #13 ({name}) / {play_time}\n\n공통 항목: 경고 후 열람 지속, 개입 기록 누적\n유사도: 관찰 지속 패턴 일치\n\n자동 판정: 보류\n세션 종료 요청: 미수신",
+      "authorization": "Requested in-world security audit rewrite; style review compares the new draft with its final wording",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "day1_after_sea_16",
+      "before": "*세아는 웃는 얼굴로 대답을 기다린다. 눈은 한 번도 깜빡이지 않는다.*\n\n남겨두면 내일 볼게.",
+      "draft": "*세아가 내 대답을 기다리며 빈 캔을 두 손으로 굴렸다.*\n\n남겨두면 내일 볼게.",
+      "final": "*세아가 내 대답을 기다리며 빈 캔을 두 손으로 굴렸다.*\n\n남겨두면 내일 볼게.",
+      "authorization": "Day 1 romance direction: replace the unblinking stare with ordinary waiting; reply preserved",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "photo-comparison-copy",
+      "before": null,
+      "draft": "눈꼬리와 코의 위치가 겹친다. 머리와 이름표만 다르다.",
+      "final": "눈꼬리와 코의 위치가 겹친다. 머리와 이름표만 다르다.",
+      "findings": [],
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "evidence": "Both original portraits inspected: no hands visible; compare visible facial geometry rather than inventing image details"
+    }
+  ],
+  "scope": "43 entries: 37 new scenes, 5 redesigned audit logs, 1 revised Day 1 scene; plus one photo comparison caption",
+  "grade": "B",
+  "gradeReason": "S1 zero, all six checks pass; minimal style edits below the 10% lower bound for grade A",
+  "categories": {
+    "A-18": {
+      "before": 2,
+      "after": 0
+    },
+    "I-2": {
+      "before": 1,
+      "after": 0
+    },
+    "C-11": {
+      "before": 0,
+      "after": 0
+    },
+    "D-14": {
+      "before": 0,
+      "after": 0
+    },
+    "E-7": {
+      "before": 0,
+      "after": 0
+    },
+    "J-3": {
+      "before": 0,
+      "after": 0
+    }
+  },
+  "selfChecks": [
+    "Names, numbers, placeholders and draft content anchors preserved",
+    "Style-only changes under 30%; separate authorized rewrites retain their source snapshots",
+    "VN dialogue, narration and audit-log genres preserved",
+    "Each character’s register preserved",
+    "No applicable S1 pattern remains; audit field labels are in-world fields",
+    "No invented metaphors or heightened emotion added during style edits"
+  ],
+  "precisionNote": "Codex monolith review. For an independent strict five-person review, use Claude Code strict mode."
+}

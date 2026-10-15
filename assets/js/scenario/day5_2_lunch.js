@@ -111,16 +111,28 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_3"
     },
     "day5_lunch_left_3": {
+        typingSpeed: 34,
+        textPace: "fractured",
+        autoAdvance: true,
+        autoAdvanceDelay: 2200,
         characters: { left: "yuna_weak", center: "sea_vulnerable" },
         unskippable: true,
         next: "day5_lunch_left_4"
     },
     "day5_lunch_left_4": {
+        typingSpeed: 34,
+        textPace: "fractured",
+        autoAdvance: true,
+        autoAdvanceDelay: 1500,
         characters: { left: "yuna_weak", center: "sea_vulnerable" },
         unskippable: true,
         next: "day5_lunch_left_5"
     },
     "day5_lunch_left_5": {
+        typingSpeed: 34,
+        textPace: "fractured",
+        autoAdvance: true,
+        autoAdvanceDelay: 1500,
         characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_5a"
@@ -133,12 +145,16 @@ Object.assign(SCENARIO[5], {
     },
     // 세아가 고개를 저었다. 입술을 깨물었다. 피가 맺혔다.
     "day5_lunch_left_5b": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_6"
     },
     // "못 보내. 이번에는 못 보내."
     "day5_lunch_left_6": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_7"
@@ -150,28 +166,38 @@ Object.assign(SCENARIO[5], {
     },
     // "나도 알아... 내가 지금 제정신 아닌 거."
     "day5_lunch_left_8": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_vulnerable" },
         unskippable: true,
         next: "day5_lunch_left_9"
     },
     "day5_lunch_left_9": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_vulnerable" },
         unskippable: true,
         next: "day5_lunch_left_10"
     },
     // "기억 지우면 또 만날 수 있어."
     "day5_lunch_left_10": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_broken_smile" },
         unskippable: true,
         next: "day5_lunch_left_11"
     },
     // "1일차에 '안녕하세요' 했을 때"
     "day5_lunch_left_11": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_12"
     },
     "day5_lunch_left_12": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_13"
@@ -196,12 +222,16 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_16"
     },
     "day5_lunch_left_16": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_17"
     },
     // "...12번."
     "day5_lunch_left_17": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_18"
@@ -212,11 +242,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_19"
     },
     "day5_lunch_left_19": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_20"
     },
     "day5_lunch_left_20": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_21"
@@ -228,12 +262,16 @@ Object.assign(SCENARIO[5], {
     },
     // "매번 기억이 지워져서 또 왔어."
     "day5_lunch_left_22": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_hurt" },
         unskippable: true,
         next: "day5_lunch_left_23"
     },
     // 계단 발소리 가까워짐
     "day5_lunch_left_23": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_vulnerable" },
         sfx: { file: "sfx_stairs_approaching.mp3", volume: 0.7 },
         glitch: { screenShake: true },
@@ -241,12 +279,16 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_24"
     },
     "day5_lunch_left_24": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_cry" },
         unskippable: true,
         next: "day5_lunch_left_25"
     },
     // "...13번째도 비켜줘야 하는 거야?"
     "day5_lunch_left_25": {
+        typingSpeed: 34,
+        textPace: "fractured",
         characters: { left: "yuna_weak", center: "sea_cry" },
         sfx: { file: "memory_reveal_stinger.mp3", volume: 0.78 },
         unskippable: true,
@@ -283,16 +325,22 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c1_2"
     },
     "day5_lunch_left_c1_2": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_cry",
         unskippable: true,
         next: "day5_lunch_left_c1_3"
     },
     "day5_lunch_left_c1_3": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_cry",
         unskippable: true,
         next: "day5_lunch_left_c1_4"
     },
     "day5_lunch_left_c1_4": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_cry",
         unskippable: true,
         next: "day5_lunch_left_c1_5"
@@ -315,6 +363,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c1_8"
     },
     "day5_lunch_left_c1_8": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_broken_smile",
         unskippable: true,
         next: "day5_lunch_seolhwa_1",
@@ -323,6 +373,8 @@ Object.assign(SCENARIO[5], {
 
     // ── 선택 2: "같이 가자." ──
     "day5_lunch_left_c2_1": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_cry",
         stopSfx: "sfx_stairs_approaching.mp3",
         unskippable: true,
@@ -334,6 +386,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_3"
     },
     "day5_lunch_left_c2_3": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_vulnerable",
         unskippable: true,
         next: "day5_lunch_left_c2_4"
@@ -344,6 +398,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_5"
     },
     "day5_lunch_left_c2_5": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_vulnerable",
         unskippable: true,
         next: "day5_lunch_left_c2_6"
@@ -354,6 +410,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_7"
     },
     "day5_lunch_left_c2_7": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_vulnerable",
         unskippable: true,
         next: "day5_lunch_left_c2_8"
@@ -364,11 +422,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_left_c2_9"
     },
     "day5_lunch_left_c2_9": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_broken_smile",
         unskippable: true,
         next: "day5_lunch_left_c2_10"
     },
     "day5_lunch_left_c2_10": {
+        typingSpeed: 34,
+        textPace: "fractured",
         character: "sea_broken_smile",
         unskippable: true,
         next: "day5_lunch_seolhwa_1",
@@ -424,6 +486,7 @@ Object.assign(SCENARIO[5], {
     },
     // "...왔어."
     "day5_lunch_right_7": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_8"
@@ -447,6 +510,7 @@ Object.assign(SCENARIO[5], {
     },
     // "...진정해." - 주사기를 싱크대에 내려놓음
     "day5_lunch_right_11": {
+        typingSpeed: 0,
         character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_12"
@@ -458,11 +522,13 @@ Object.assign(SCENARIO[5], {
     },
     // 캐비넷에서 약병 꺼냄
     "day5_lunch_right_13": {
+        typingSpeed: 0,
         character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_pills_0"
     },
     "day5_lunch_pills_0": {
+        typingSpeed: 0,
         condition: "met_riin",
         fallback: "day5_lunch_right_14",
         character: "riin_casual",
@@ -482,6 +548,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_pills_2"
     },
     "day5_lunch_pills_2": {
+        typingSpeed: 0,
         background: "cg_riin_two_pills",
         character: null,
         unskippable: true,
@@ -540,6 +607,7 @@ Object.assign(SCENARIO[5], {
     },
     // ★ "활성 성분 없어."
     "day5_lunch_right_16": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         glitch: { screenShake: true },
         unskippable: true,
@@ -552,6 +620,7 @@ Object.assign(SCENARIO[5], {
     },
     // "7번째부터."
     "day5_lunch_right_18": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_19"
@@ -569,21 +638,25 @@ Object.assign(SCENARIO[5], {
     },
     // 이설화 비명 회상
     "day5_lunch_right_21": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_22"
     },
     "day5_lunch_right_22": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_23"
     },
     "day5_lunch_right_23": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_24"
     },
     "day5_lunch_right_24": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_25"
@@ -595,41 +668,48 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_26"
     },
     "day5_lunch_right_26": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_27"
     },
     // 리인 자기 혐오 독백
     "day5_lunch_right_27": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_28"
     },
     "day5_lunch_right_28": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_29"
     },
     // 약 농도 줄임 -> 8번째부터 설탕물
     "day5_lunch_right_29": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_30"
     },
     // 10번째 때 은수가 의심
     "day5_lunch_right_30": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_31"
     },
     // 데자뷔의 이유
     "day5_lunch_right_31": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_32"
     },
     // 비상구 열쇠 꺼냄
     "day5_lunch_right_32": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_33"
@@ -641,11 +721,13 @@ Object.assign(SCENARIO[5], {
     },
     // 구관 3층 비상구 설명
     "day5_lunch_right_34": {
+        typingSpeed: 0,
         character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_35"
     },
     "day5_lunch_right_35": {
+        typingSpeed: 0,
         character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_36"
@@ -658,12 +740,15 @@ Object.assign(SCENARIO[5], {
     },
     // 쿵! 방화 셔터 흔들림
     "day5_lunch_right_37": {
+        typingSpeed: 0,
+        typingPause: 400,
         character: null,
         glitch: { screenShake: true },
         unskippable: true,
         next: "day5_lunch_right_38"
     },
     "day5_lunch_right_38": {
+        typingSpeed: 0,
         character: "riin_casual",
         unskippable: true,
         next: "day5_lunch_right_39"
@@ -677,6 +762,8 @@ Object.assign(SCENARIO[5], {
 
     // 6초 타이머: 3 choices (타임아웃 = 리인에게 붙잡힘)
     "day5_lunch_right_choice": {
+        typingSpeed: 0,
+        typingPause: 400,
         character: "riin_casual_pain",
         sfx: "sfx_scream.mp3",
         vibrate: "danger",
@@ -729,11 +816,13 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_c3_3"
     },
     "day5_lunch_right_c3_3": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_c3_4"
     },
     "day5_lunch_right_c3_4": {
+        typingSpeed: 0,
         character: "riin_casual_pain",
         unskippable: true,
         next: "day5_lunch_right_c3_5"

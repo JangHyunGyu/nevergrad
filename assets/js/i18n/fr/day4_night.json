@@ -342,5 +342,31 @@
     },
     "day4_night_end": {
         "text": "*— Fin du Jour 4 —*"
+    },
+    "day4_night_deduction_hand": {
+        "text": "*J’ai frotté le graphite sur mon index gauche et retracé les traits coudés du casier et du mur de ce matin.*",
+        "choices": [
+            "Tracer de la main gauche",
+            "Repenser à la police du nom"
+        ]
+    },
+    "day4_night_deduction_hand_match": {
+        "text": "*De la main gauche, les traits tournaient dans le même sens. Les noms avaient changé, mais pas la main.*"
+    },
+    "day4_night_deduction_hand_hint": {
+        "text": "*Le nom imprimé n’avait pas ces traits. J’ai ouvert ma main gauche, l’index taché de graphite, et retracé l’écriture contre le mur.*"
+    },
+    "day4_night_deduction_seolhwa": {
+        "text": "*J’ai rouvert la ligne #07 : `Contact extérieur : Lee Seolhwa`. Elle était là, mais le miroir ne reflétait que le porte-serviettes.*",
+        "choices": [
+            "Comparer le contact de #07 au reflet absent",
+            "Vérifier si la lumière s’est éteinte"
+        ]
+    },
+    "day4_night_deduction_record_match": {
+        "text": "*J’ai touché le nom à côté de #07. Elle me connaissait déjà. La voir maintenant ne prouvait pas sa présence physique.*"
+    },
+    "day4_night_deduction_record_hint": {
+        "text": "*La lampe et le porte-serviettes se reflétaient. Seule sa place était vide. J’ai regardé le nom près de #07, puis son visage.*"
     }
 }

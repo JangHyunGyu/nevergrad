@@ -676,19 +676,19 @@
         "text": "*화면 중앙에 텍스트가 한 글자씩 떠오른다.*"
     },
     "day5_observer_4": {
-        "text": "══════════════════════════════════════════\n  네버그라드 연구소(NEVERGRAD RESEARCH INSTITUTE)\n  관찰 로그 대조 기록\n══════════════════════════════════════════"
+        "text": "에디나 재단 / 네버그라드 연구소(NEVERGRAD RESEARCH INSTITUTE)\n보안 감사: 외부 열람 세션\n대조 대상: #13 관찰 기록"
     },
     "day5_observer_5": {
-        "text": "*내 기록?*"
+        "text": "접속 권한: 감사·모니터링\n세션 상태: 접속 유지\n피험자 접촉 권한: 없음"
     },
     "day5_observer_6": {
-        "text": "기록 대상: #13 ({name})\n진행 시간: {play_time}\n\n접촉: 세아 {route_data} / 유나 {met_yuna} / 리인 {riin_visits} / 설화 {seolhwa_attempts}\n증거: {evidence_data}\n최종 응답: {timer_data}"
+        "text": "피험자: #13 ({name})\n세션 접속 시간: {play_time}\n\n접촉·개입 집계\n세아 접촉: {route_data}\n유나 접촉 여부: {met_yuna}\n리인 방문: {riin_visits}\n설화 접촉 시도: {seolhwa_attempts}\n증거 확보: {evidence_data}\n최종 응답 기록: {timer_data}"
     },
     "day5_observer_7": {
-        "text": "*스크롤이 내려간다.*"
+        "text": "접촉 기록 대조 완료\n행동 패턴 대조 중"
     },
     "day5_observer_8": {
-        "text": "비고:\n\n#13 기록 열람 완료.\n경고 후에도 로그 지속.\n\n대조:\n박은수 — 13회 관찰.\n{name}의 관찰자 — {play_time}.\n\n판정 보류."
+        "text": "대조 기준: 연구 책임자 박은수 / 13회 관찰\n외부 열람 세션: #13 ({name}) / {play_time}\n\n공통 항목: 경고 후 열람 지속, 개입 기록 누적\n유사도: 관찰 지속 패턴 일치\n\n자동 판정: 보류\n세션 종료 요청: 미수신"
     },
     "day5_observer_cupid_check": {
         "text": ""

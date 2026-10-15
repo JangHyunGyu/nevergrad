@@ -2249,6 +2249,76 @@ _배경: `classroom`_
 *점심시간이 끝났다. 오후 수업 시간이다.*
 ```
 
+### `day1_lunch_sea_share_1`
+
+_source: `day1_2_lunch.js / day1_lunch.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+소시지 하나만 바꿔 먹자. 내가 만든 건데 네 쪽 게 더 맛있어 보여.
+```
+
+### `day1_lunch_sea_share_2`
+
+_source: `day1_2_lunch.js / day1_lunch.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+반장도 남의 반찬 탐내는구나.
+```
+
+### `day1_lunch_sea_share_3`
+
+_source: `day1_2_lunch.js / day1_lunch.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+반장 점심시간이잖아. 이때는 그냥 한세아야.
+```
+
+### `day1_lunch_sea_share_4`
+
+_source: `day1_2_lunch.js / day1_lunch.json`_
+_캐릭터: `sea_smile`_
+
+**지문**
+```text
+*소시지를 바꿔 담자 세아가 내 뚜껑 아래로 냅킨을 밀어줬다. 묻은 소스를 닦고 나서야 내 앞에 냅킨이 없었다는 걸 알았다.*
+```
+
+### `day1_lunch_riin_rest_1`
+
+_source: `day1_2_lunch.js / day1_lunch.json`_
+_캐릭터: `riin_gentle`_
+
+**나**
+```text
+네. 그런데 시계가 안 보여서요. 또 잠들면 어떡하죠?
+```
+
+### `day1_lunch_riin_rest_2`
+
+_source: `day1_2_lunch.js / day1_lunch.json`_
+_캐릭터: `riin_gentle`_
+
+**리인**
+```text
+내가 깨워요. 자는 사람한테 시계까지 보라고 하면 쉬는 게 아니죠.
+```
+
+### `day1_lunch_riin_rest_3`
+
+_source: `day1_2_lunch.js / day1_lunch.json`_
+_캐릭터: `riin_gentle`_
+
+**지문**
+```text
+*선생님이 침대 머리맡으로 물컵을 옮겼다. 창가 쪽 커튼만 조금 더 쳐주자 눈꺼풀 위의 햇빛이 가려졌다.*
+```
+
 ## Day 1 - 방과후 (`day1_3_afterschool.js`)
 
 ### `day1_after_choice`
@@ -2428,7 +2498,7 @@ _캐릭터: `sea_smile`_
 
 **나**
 ```text
-*세아는 웃는 얼굴로 대답을 기다린다. 눈은 한 번도 깜빡이지 않는다.*
+*세아가 내 대답을 기다리며 빈 캔을 두 손으로 굴렸다.*
 
 남겨두면 내일 볼게.
 ```
@@ -2872,6 +2942,106 @@ _source: `day1_3_afterschool.js / day1_afterschool.json`_
 **지문**
 ```text
 *더 기다리지 않고 몸을 돌려 집으로 향했다.*
+```
+
+### `day1_after_sea_walk_1`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_배경: `corridor` / 캐릭터: `sea_smile`_
+
+**지문**
+```text
+*교문까지 같이 가겠다며 세아가 빈 캔 두 개를 챙겼다. 복도에서 나란히 걷자 소매가 한 번 스쳤다.*
+```
+
+### `day1_after_sea_walk_2`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+교문도 안내해 주게? 그건 혼자 찾을 수 있는데.
+```
+
+### `day1_after_sea_walk_3`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+나도 집에 가거든. 반장 퇴근 좀 시켜줄래?
+```
+
+### `day1_after_sea_walk_4`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_캐릭터: `sea_smile`_
+
+**지문**
+```text
+*계단 앞에서 세아가 안쪽으로 비켜줬다. 내가 가방을 고쳐 멜 때까지 난간에 기대 기다렸다.*
+```
+
+### `day1_after_eunsu_counsel_1`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_캐릭터: `eunsu_warm`_
+
+**은수**
+```text
+진로 희망 칸은 비워도 돼. 오늘 네가 정할 건 집에 가는 버스 정도지.
+```
+
+### `day1_after_eunsu_counsel_2`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_캐릭터: `eunsu_warm`_
+
+**나**
+```text
+그건 아침에 잘못 타서 외웠어요.
+```
+
+### `day1_after_eunsu_counsel_3`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_캐릭터: `eunsu_warm`_
+
+**은수**
+```text
+그럼 하나 끝났네. 수업 따라가다 막히는 건 표시만 해 와. 같이 보자.
+```
+
+### `day1_after_yuna_cat_1`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_캐릭터: `yuna_shy`_
+
+**나**
+```text
+치즈는 네가 부르면 와?
+```
+
+### `day1_after_yuna_cat_2`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_캐릭터: `yuna_shy`_
+
+**유나**
+```text
+봉지 소리 나면요. 이름은 아직 협의 중이에요.
+```
+
+### `day1_after_yuna_cat_3`
+
+_source: `day1_3_afterschool.js / day1_afterschool.json`_
+_캐릭터: `yuna_shy`_
+
+**지문**
+```text
+*사진 속 치즈는 렌즈를 등지고 있었다. 유나가 옆 사진을 보여줬다. 이번엔 코가 너무 가까워 화면이 온통 분홍색이었다.*
 ```
 
 ## Day 1 - 밤 (`day1_4_night.js`)
@@ -4881,6 +5051,76 @@ _배경: `classroom`_
 *오후 수업 시간이다.*
 ```
 
+### `day2_lunch_sea_carrot_1`
+
+_source: `day2_2_lunch.js / day2_lunch.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+당근은 왜 꽃 모양이야? 소시지보다 손 많이 갔겠다.
+```
+
+### `day2_lunch_sea_carrot_2`
+
+_source: `day2_2_lunch.js / day2_lunch.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+틀로 찍으면 돼. 반장이라고 칼질까지 잘할 필요는 없잖아.
+```
+
+### `day2_lunch_sea_carrot_3`
+
+_source: `day2_2_lunch.js / day2_lunch.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+그럼 이 못생긴 꽃은 내가 먹을게.
+```
+
+### `day2_lunch_sea_carrot_4`
+
+_source: `day2_2_lunch.js / day2_lunch.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+그거 내가 먹으려고 숨겨둔 건데. 잘도 찾네.
+```
+
+### `day2_lunch_riin_cup_1`
+
+_source: `day2_2_lunch.js / day2_lunch.json`_
+_캐릭터: `riin_gentle`_
+
+**리인**
+```text
+그 컵 손잡이가 뜨거워요. 받침째 들어요.
+```
+
+### `day2_lunch_riin_cup_2`
+
+_source: `day2_2_lunch.js / day2_lunch.json`_
+_캐릭터: `riin_gentle`_
+
+**나**
+```text
+아, 네. 검사보다 차 마시는 게 어렵네요.
+```
+
+### `day2_lunch_riin_cup_3`
+
+_source: `day2_2_lunch.js / day2_lunch.json`_
+_캐릭터: `riin_gentle`_
+
+**리인**
+```text
+검사는 내가 했잖아요. 차도 불어줘야 하나?
+```
+
 ## Day 2 - 방과후 (`day2_3_afterschool.js`)
 
 ### `day2_after_start`
@@ -5623,6 +5863,76 @@ _source: `day2_3_afterschool.js / day2_afterschool.json`_
 *학생들 어깨 사이로 설화의 빈 책상 위치가 떠올랐다.*
 
 *내일은 종이 울리기 전에 뒤를 돌아봐야겠다.*
+```
+
+### `day2_after_sea_paper_1`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_smile`_
+
+**지문**
+```text
+*세아가 서류 모서리를 손가락으로 누른 채 기다렸다. 내가 종이를 맞추자 집게를 끼웠다. 손등이 잠깐 닿았다.*
+```
+
+### `day2_after_sea_paper_2`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+나 없을 땐 이거 어떻게 했어?
+```
+
+### `day2_after_sea_paper_3`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+집게를 입에 물었지. 오늘은 말도 하면서 하니까 낫네.
+```
+
+### `day2_after_sea_paper_4`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `sea_smile`_
+
+**지문**
+```text
+*세아가 다음 집게를 내 손바닥에 놓았다. 나는 의자를 조금 당겼다. 이번엔 두 사람 사이로 종이가 떨어지지 않았다.*
+```
+
+### `day2_after_eunsu_checkin_1`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `eunsu_warm`_
+
+**은수**
+```text
+어제 버스는 잘 탔어? 오늘은 서류 말고 그거부터 물으려고 했는데.
+```
+
+### `day2_after_eunsu_checkin_2`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `eunsu_warm`_
+
+**나**
+```text
+네. 집에 가는 쪽은 이제 알아요.
+```
+
+### `day2_after_eunsu_checkin_3`
+
+_source: `day2_3_afterschool.js / day2_afterschool.json`_
+_캐릭터: `eunsu_warm`_
+
+**은수**
+```text
+잘했네. 앱은 여기서 같이 깔자. 모르는 칸은 그냥 넘기지 말고 물어봐.
 ```
 
 ## Day 2 - 밤 (`day2_4_night.js`)
@@ -12955,6 +13265,68 @@ _source: `day4_4_night.js / day4_night.json`_
 가만히 있어줘. 다시 볼게. 내가 잘못 보는 게 아니잖아.
 ```
 
+### `day4_night_deduction_hand`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**지문**
+```text
+*왼손 검지의 흑연을 문질렀다. 사물함 글씨의 꺾인 획과 아침 벽에 남은 획을 손가락으로 그려본다.*
+```
+
+**선택지**
+1. 왼손으로 획을 그려본다
+2. 이름표의 글꼴을 떠올린다
+
+### `day4_night_deduction_hand_match`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**지문**
+```text
+*왼손으로 그리자 획 끝이 같은 방향으로 꺾였다. 이름이 바뀌어도 쓰는 손은 그대로다.*
+```
+
+### `day4_night_deduction_hand_hint`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**지문**
+```text
+*이름표에는 획이 없다. 왼손을 펴자 검지의 흑연이 다시 보였다. 벽에 손을 대고 글씨를 따라갔다.*
+```
+
+### `day4_night_deduction_seolhwa`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**지문**
+```text
+*앱의 #07 행을 다시 열었다. `외부 접촉: 이설화`. 고개를 들면 설화가 있고 거울에는 수건걸이만 비친다.*
+```
+
+**선택지**
+1. #07의 설화 기록과 빈 반사상을 대조한다
+2. 욕실 조명이 꺼졌는지 확인한다
+
+### `day4_night_deduction_record_match`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**지문**
+```text
+*#07 옆의 이름을 짚었다. 설화는 그때부터 나와 접촉했다. 지금 내 눈에 보인다고 여기 있다는 증거가 되지는 않는다.*
+```
+
+### `day4_night_deduction_record_hint`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**지문**
+```text
+*형광등도 수건걸이도 거울에 비친다. 빈 곳은 설화 자리뿐이다. #07 옆의 이름과 눈앞의 얼굴을 번갈아 봤다.*
+```
+
 ### `day4_night_mirror_hit1_8`
 
 _source: `day4_4_night.js / day4_night.json`_
@@ -19424,10 +19796,9 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **지문**
 ```text
-══════════════════════════════════════════
-  네버그라드 연구소(NEVERGRAD RESEARCH INSTITUTE)
-  관찰 로그 대조 기록
-══════════════════════════════════════════
+에디나 재단 / 네버그라드 연구소(NEVERGRAD RESEARCH INSTITUTE)
+보안 감사: 외부 열람 세션
+대조 대상: #13 관찰 기록
 ```
 
 ### `day5_observer_5`
@@ -19436,7 +19807,9 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **지문**
 ```text
-*내 기록?*
+접속 권한: 감사·모니터링
+세션 상태: 접속 유지
+피험자 접촉 권한: 없음
 ```
 
 ### `day5_observer_6`
@@ -19445,12 +19818,16 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **지문**
 ```text
-기록 대상: #13 ({name})
-진행 시간: {play_time}
+피험자: #13 ({name})
+세션 접속 시간: {play_time}
 
-접촉: 세아 {route_data} / 유나 {met_yuna} / 리인 {riin_visits} / 설화 {seolhwa_attempts}
-증거: {evidence_data}
-최종 응답: {timer_data}
+접촉·개입 집계
+세아 접촉: {route_data}
+유나 접촉 여부: {met_yuna}
+리인 방문: {riin_visits}
+설화 접촉 시도: {seolhwa_attempts}
+증거 확보: {evidence_data}
+최종 응답 기록: {timer_data}
 ```
 
 ### `day5_observer_7`
@@ -19459,7 +19836,8 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **지문**
 ```text
-*스크롤이 내려간다.*
+접촉 기록 대조 완료
+행동 패턴 대조 중
 ```
 
 ### `day5_observer_8`
@@ -19468,16 +19846,14 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **지문**
 ```text
-비고:
+대조 기준: 연구 책임자 박은수 / 13회 관찰
+외부 열람 세션: #13 ({name}) / {play_time}
 
-#13 기록 열람 완료.
-경고 후에도 로그 지속.
+공통 항목: 경고 후 열람 지속, 개입 기록 누적
+유사도: 관찰 지속 패턴 일치
 
-대조:
-박은수 — 13회 관찰.
-{name}의 관찰자 — {play_time}.
-
-판정 보류.
+자동 판정: 보류
+세션 종료 요청: 미수신
 ```
 
 ### `day5_observer_cupid_extra`
@@ -21352,7 +21728,7 @@ _source: `day5_night.json`_
 ```
 
 <!--
-sync-stats: {"sceneFiles":20,"scenarioScenes":2058,"i18nEntries":2118,"displayedText":2069,"choices":142,"i18nOnly":60}
+sync-stats: {"sceneFiles":20,"scenarioScenes":2095,"i18nEntries":2155,"displayedText":2106,"choices":146,"i18nOnly":60}
 -->
 
 <!-- END NEVERGRAD KO DISPLAY SYNC -->

@@ -26,7 +26,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_eunsu_2": {
         character: "eunsu_warm",
-        next: "day2_after_eunsu_3"
+        next: "day2_after_eunsu_checkin_1"
     },
     "day2_after_eunsu_3": {
         character: "eunsu_warm",
@@ -143,7 +143,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_sea_9": {
         character: "sea_smile",
-        next: "day2_after_sea_10"
+        next: "day2_after_sea_paper_1"
     },
     "day2_after_sea_10": {
         character: "sea_normal",
@@ -363,5 +363,33 @@ Object.assign(SCENARIO[2], {
         character: null,
         changeSlot: "night",
         next: "day2_night_start"
+    },
+    "day2_after_sea_paper_1": {
+        character: "sea_smile",
+        next: "day2_after_sea_paper_2"
+    },
+    "day2_after_sea_paper_2": {
+        character: "sea_smile",
+        next: "day2_after_sea_paper_3"
+    },
+    "day2_after_sea_paper_3": {
+        character: "sea_smile",
+        next: "day2_after_sea_paper_4"
+    },
+    "day2_after_sea_paper_4": {
+        character: "sea_smile",
+        next: "day2_after_sea_10"
+    },
+    "day2_after_eunsu_checkin_1": {
+        character: "eunsu_warm",
+        next: "day2_after_eunsu_checkin_2"
+    },
+    "day2_after_eunsu_checkin_2": {
+        character: "eunsu_warm",
+        next: "day2_after_eunsu_checkin_3"
+    },
+    "day2_after_eunsu_checkin_3": {
+        character: "eunsu_warm",
+        next: "day2_after_eunsu_3"
     }
 });

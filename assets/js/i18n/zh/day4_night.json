@@ -342,5 +342,31 @@
     },
     "day4_night_end": {
         "text": "*——第4天结束——*"
+    },
+    "day4_night_deduction_hand": {
+        "text": "*我搓了搓左手食指上的石墨，用手指比画储物柜的字和早上墙上弯折的笔画。*",
+        "choices": [
+            "用左手比画笔画",
+            "回想名牌的字体"
+        ]
+    },
+    "day4_night_deduction_hand_match": {
+        "text": "*换左手比画，收笔就朝同一边弯了。名字换了，写字的手却没变。*"
+    },
+    "day4_night_deduction_hand_hint": {
+        "text": "*名牌上没有这样的笔画。我摊开左手，食指上仍沾着石墨。我贴着墙比画那几个字。*"
+    },
+    "day4_night_deduction_seolhwa": {
+        "text": "*我重新打开应用里的 #07 那一行。`外部接触：李雪花`。抬头能看见雪花，镜子里却只有毛巾架。*",
+        "choices": [
+            "对照 #07 的接触记录和消失的倒影",
+            "确认浴室灯是否熄灭"
+        ]
+    },
+    "day4_night_deduction_record_match": {
+        "text": "*我点住 #07 旁边的名字。雪花从那时就接触过我。现在能看见她，也不能证明她真的站在这里。*"
+    },
+    "day4_night_deduction_record_hint": {
+        "text": "*灯管和毛巾架都映在镜子里。只有雪花的位置是空的。我在 #07 旁的名字与眼前的脸之间来回看。*"
     }
 }

@@ -2,8 +2,8 @@
   "date": "2026-10-08",
   "baselineCommit": "57f9891db9bd07d48955274a5499cb3c39350d50",
   "scope": "All runtime scenes, including post-load overlays, canonical Korean text, incoming background paths, character identity, expression, wardrobe and media effects",
-  "sceneCount": 2106,
-  "textSceneCount": 2057,
+  "sceneCount": 2143,
+  "textSceneCount": 2094,
   "structuralSceneCount": 49,
   "reviewedGroups": [
     "day1_1_morning",
@@ -7831,87 +7831,6 @@
         }
       ],
       "cast": {}
-    },
-    {
-      "id": "day1_eunsu_11_honest",
-      "reviewed": true,
-      "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "5daeb61b0abfb861d0899f1887eb581bca104818346212552571d084a8a76472",
-      "mediaChanged": false,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
-      "effects": [],
-      "backgroundKey": null,
-      "possibleBackgrounds": [
-        {
-          "key": "classroom",
-          "path": "assets/images/background/classroom.webp"
-        }
-      ],
-      "cast": {
-        "left": {
-          "key": "sea_smile",
-          "path": "assets/images/characters/sea_smile.webp"
-        },
-        "center": {
-          "key": "eunsu_normal",
-          "path": "assets/images/characters/eunsu_normal.webp"
-        }
-      }
-    },
-    {
-      "id": "day1_eunsu_11_brief",
-      "reviewed": true,
-      "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "06b635efc70612e9b21010c25de4ad2878b08c6075c81fe19f9ebde5a9952beb",
-      "mediaChanged": false,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
-      "effects": [],
-      "backgroundKey": null,
-      "possibleBackgrounds": [
-        {
-          "key": "classroom",
-          "path": "assets/images/background/classroom.webp"
-        }
-      ],
-      "cast": {
-        "left": {
-          "key": "sea_smile",
-          "path": "assets/images/characters/sea_smile.webp"
-        },
-        "center": {
-          "key": "eunsu_normal",
-          "path": "assets/images/characters/eunsu_normal.webp"
-        }
-      }
-    },
-    {
-      "id": "day1_eunsu_11_sea",
-      "reviewed": true,
-      "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "30ddc94eeb959c6772520d2d34d0442ac96c28b121493cf8ce18b13be7bfb16c",
-      "mediaChanged": false,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
-      "effects": [],
-      "backgroundKey": null,
-      "possibleBackgrounds": [
-        {
-          "key": "classroom",
-          "path": "assets/images/background/classroom.webp"
-        }
-      ],
-      "cast": {
-        "left": {
-          "key": "sea_smile",
-          "path": "assets/images/characters/sea_smile.webp"
-        },
-        "center": {
-          "key": "eunsu_normal",
-          "path": "assets/images/characters/eunsu_normal.webp"
-        }
-      }
     },
     {
       "id": "day2_morning_start",
@@ -31246,154 +31165,6 @@
       "cast": {}
     },
     {
-      "id": "day4_lunch_nurse_ask_name",
-      "reviewed": true,
-      "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "e669b0ea20f56f0679f7feab3d45e38e415adecac04f0a0d4c98950693ca541b",
-      "mediaChanged": false,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
-      "effects": [],
-      "backgroundKey": null,
-      "possibleBackgrounds": [
-        {
-          "key": "nurse_office",
-          "path": "assets/images/background/nurse_office.webp"
-        }
-      ],
-      "cast": {
-        "center": {
-          "key": "riin_cold",
-          "path": "assets/images/characters/riin_cold.webp"
-        }
-      }
-    },
-    {
-      "id": "day4_lunch_nurse_ask_name_2",
-      "reviewed": true,
-      "kind": "dialogue-or-narration",
-      "speaker": "riin",
-      "textSHA256": "9a6d6a5f470928d91acb0a49c276156db74f43343e059fa0db6baab4867d63a9",
-      "mediaChanged": false,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
-      "effects": [],
-      "backgroundKey": null,
-      "possibleBackgrounds": [
-        {
-          "key": "nurse_office",
-          "path": "assets/images/background/nurse_office.webp"
-        }
-      ],
-      "cast": {
-        "center": {
-          "key": "riin_strained_smile",
-          "path": "assets/images/characters/riin_strained_smile.webp"
-        }
-      }
-    },
-    {
-      "id": "day4_lunch_nurse_ask_yuna",
-      "reviewed": true,
-      "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "540fc650839a1078d95064a17416e580072e14652d5302a1d490a93d4b73107f",
-      "mediaChanged": false,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
-      "effects": [],
-      "backgroundKey": null,
-      "possibleBackgrounds": [
-        {
-          "key": "nurse_office",
-          "path": "assets/images/background/nurse_office.webp"
-        }
-      ],
-      "cast": {
-        "center": {
-          "key": "riin_cold",
-          "path": "assets/images/characters/riin_cold.webp"
-        }
-      }
-    },
-    {
-      "id": "day4_lunch_nurse_ask_yuna_2",
-      "reviewed": true,
-      "kind": "dialogue-or-narration",
-      "speaker": "riin",
-      "textSHA256": "04c4dc99189c56adc1f8e8f5dc1fa86508217fdb14ce9e11db95640113a2e18d",
-      "mediaChanged": false,
-      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
-      "effects": [],
-      "backgroundKey": null,
-      "possibleBackgrounds": [
-        {
-          "key": "nurse_office",
-          "path": "assets/images/background/nurse_office.webp"
-        }
-      ],
-      "cast": {
-        "center": {
-          "key": "riin_strained_smile",
-          "path": "assets/images/characters/riin_strained_smile.webp"
-        }
-      }
-    },
-    {
-      "id": "day4_lunch_nurse_leave_ask",
-      "reviewed": true,
-      "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "70f2a441d5fa6847149099d33f1bafcb439fab09ac3e052e9f024a365539a290",
-      "mediaChanged": true,
-      "reason": "Exit from the nurse office into the classroom corridor, not the entrance foyer",
-      "effects": [],
-      "backgroundKey": "corridor",
-      "possibleBackgrounds": [
-        {
-          "key": "corridor",
-          "path": "assets/images/background/corridor.webp"
-        }
-      ],
-      "cast": {},
-      "previousMedia": {
-        "backgroundKey": "hallway",
-        "possibleBackgrounds": [
-          {
-            "key": "hallway",
-            "path": "assets/images/background/hallway.webp"
-          }
-        ],
-        "cast": {}
-      }
-    },
-    {
-      "id": "day4_lunch_nurse_leave_yuna",
-      "reviewed": true,
-      "kind": "dialogue-or-narration",
-      "speaker": "me",
-      "textSHA256": "db4f4c2179dcf4f1b26fbe5ee636b8970835fd134fc66a3d9d8334cd50e7a294",
-      "mediaChanged": true,
-      "reason": "Exit from the nurse office into the classroom corridor, not the entrance foyer",
-      "effects": [],
-      "backgroundKey": "corridor",
-      "possibleBackgrounds": [
-        {
-          "key": "corridor",
-          "path": "assets/images/background/corridor.webp"
-        }
-      ],
-      "cast": {},
-      "previousMedia": {
-        "backgroundKey": "hallway",
-        "possibleBackgrounds": [
-          {
-            "key": "hallway",
-            "path": "assets/images/background/hallway.webp"
-          }
-        ],
-        "cast": {}
-      }
-    },
-    {
       "id": "day5_morning_start",
       "reviewed": true,
       "kind": "dialogue-or-narration",
@@ -50691,6 +50462,1056 @@
         ],
         "cast": {}
       }
+    },
+    {
+      "id": "day1_lunch_sea_share_1",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "sea",
+      "textSHA256": "2eeece2b637b1df943707437376b6863f721c46fa51f511c6313577fd59d262a",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_lunch_sea_share_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "a3c9d0bb6a4bbccd34ea242651ebc73a03473c5cf8168c727349212b35a4c0e1",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_lunch_sea_share_3",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "sea",
+      "textSHA256": "bd601108e031ce720c7ef3a375f46d5c0f189c22fcdcf93231292513717f644c",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_lunch_sea_share_4",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "b52e3f39bc262572ae0729d839507a9c20c60443b936fccdea8cde8396b6027f",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_lunch_riin_rest_1",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "fae7bdd868f00938c12004b2bd2f9d461a3bfe14d5e0ed17f69101838657cbcd",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_gentle",
+          "path": "assets/images/characters/riin_gentle.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_lunch_riin_rest_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "riin",
+      "textSHA256": "f3e8a878258c7e55a6b9ec88bb8dce46bc4fa143ab5e7a0471b0e5039ba2fb4c",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_gentle",
+          "path": "assets/images/characters/riin_gentle.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_lunch_riin_rest_3",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "043bfe0d5fba6444974449bd6b67d21bcb5df1fde972cc55c8bbe51698b9fc18",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_gentle",
+          "path": "assets/images/characters/riin_gentle.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_sea_walk_1",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "f26c65593ea936a0e37332f8da964e50836ec2645c9d95ecf3722c149981cf68",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": "corridor",
+      "possibleBackgrounds": [
+        {
+          "key": "corridor",
+          "path": "assets/images/background/corridor.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_sea_walk_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "3e50b10a04758ef82383525393d124bb3f291a9bf2f69259cce15256d50348cb",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "corridor",
+          "path": "assets/images/background/corridor.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_sea_walk_3",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "sea",
+      "textSHA256": "0debf513e394dbbc4feb33fdbb0b222136eb8a9ce4cda08b0b7a24c2ae2ef551",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "corridor",
+          "path": "assets/images/background/corridor.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_sea_walk_4",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "2bf527681e277189318a013ac0c51e56ca6726459e04623a10d8ddb6fd519107",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "corridor",
+          "path": "assets/images/background/corridor.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_eunsu_counsel_1",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "eunsu",
+      "textSHA256": "760da3cd947035ca61873697412f29868bb7bb46fd344e48759fef87be84c6f4",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "teacher_office",
+          "path": "assets/images/background/teacher_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "eunsu_warm",
+          "path": "assets/images/characters/eunsu_warm.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_eunsu_counsel_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "4785fb5f1bee139ad58df39d568b4b64fb7e3b4de526e54a23d4758c19714f16",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "teacher_office",
+          "path": "assets/images/background/teacher_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "eunsu_warm",
+          "path": "assets/images/characters/eunsu_warm.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_eunsu_counsel_3",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "eunsu",
+      "textSHA256": "727538c042ceab929ce729eb919da5fc109188a90283911a203924ca6a770aa9",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "teacher_office",
+          "path": "assets/images/background/teacher_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "eunsu_warm",
+          "path": "assets/images/characters/eunsu_warm.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_yuna_cat_1",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "593e281d577f0fa36a0beb9d620c6d378b0cba919a4d64b27533b4276a858e4f",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "library",
+          "path": "assets/images/background/library.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "yuna_shy",
+          "path": "assets/images/characters/yuna_shy.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_yuna_cat_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "yuna",
+      "textSHA256": "d255651900699d40a95cbda01ee35eece278bcd6b73550ff3db6b864c20f5170",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "library",
+          "path": "assets/images/background/library.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "yuna_shy",
+          "path": "assets/images/characters/yuna_shy.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_after_yuna_cat_3",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "2c403a98b84fe7c87e251cb021a13f0330c53c2b49920b66429bcc3e43d66e23",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "library",
+          "path": "assets/images/background/library.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "yuna_shy",
+          "path": "assets/images/characters/yuna_shy.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_lunch_sea_carrot_1",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "c6aed1717359dcda9042c976cd1c5332dade344bd0da3855a260f0b19746e801",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_lunch_sea_carrot_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "sea",
+      "textSHA256": "fc2b3ff87f2843aced73300f53fc3c53f24ee8aa466a6b8ac650f5ac3db66fb6",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_lunch_sea_carrot_3",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "51e7f176e75df18beb8dd4ee0896301295593974d647aed561636eead1eef7d1",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_lunch_sea_carrot_4",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "sea",
+      "textSHA256": "3abe72cab552c489743733a0d7433a40e9ecde0ad9ac3625c5a155b4ef1c5dff",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_lunch_riin_cup_1",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "riin",
+      "textSHA256": "dfed3f758c66c15acfdba7315c8d30ce3c3923e2f60aebdf589afe2822138a67",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_gentle",
+          "path": "assets/images/characters/riin_gentle.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_lunch_riin_cup_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "832baece4859094cc99473d800e18dc6620d793b01a78762d9ce14f5581385f4",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_gentle",
+          "path": "assets/images/characters/riin_gentle.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_lunch_riin_cup_3",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "riin",
+      "textSHA256": "2ea8523d2d1ed956aaa586790271907196272a401769162edc7d5c693fe1a318",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_gentle",
+          "path": "assets/images/characters/riin_gentle.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_after_sea_paper_1",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "4a05cb282809957e709c236dd8b8e02498e89da16fc872ad7eeebbd832c479e4",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "student_council",
+          "path": "assets/images/background/student_council.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_after_sea_paper_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "b530718e2c6b086a964ada848e1dbaa2465466ddb4e0b17334a738d56562ba50",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "student_council",
+          "path": "assets/images/background/student_council.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_after_sea_paper_3",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "sea",
+      "textSHA256": "f8f325aa5c4d395bcea23ab5106bb036bd75e485e55230126172dcc435c44e0b",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "student_council",
+          "path": "assets/images/background/student_council.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_after_sea_paper_4",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "c581298d555b5fcc7c6673f26a394adb5a5f5641045746e45b527db013d050f4",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "student_council",
+          "path": "assets/images/background/student_council.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_after_eunsu_checkin_1",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "eunsu",
+      "textSHA256": "c9c2b1a26c13f93202b66f8bfdcf74cf4469058b970ad863f317cd1589e26615",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "eunsu_warm",
+          "path": "assets/images/characters/eunsu_warm.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_after_eunsu_checkin_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "4ad1b4079647efbdbff23408786727ecb5a85478a8d56a4cf57ded79ebbef397",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "eunsu_warm",
+          "path": "assets/images/characters/eunsu_warm.webp"
+        }
+      }
+    },
+    {
+      "id": "day2_after_eunsu_checkin_3",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "eunsu",
+      "textSHA256": "3a81251433490b95dc94ddd84db56c6bb81201edb27ea65e3aac83bba82a1406",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "eunsu_warm",
+          "path": "assets/images/characters/eunsu_warm.webp"
+        }
+      }
+    },
+    {
+      "id": "day4_night_deduction_hand",
+      "reviewed": true,
+      "kind": "choice",
+      "speaker": null,
+      "textSHA256": "c0dd96fdf2dd23eda5430d3e776a3890db4e15e50d6029e4c00b299692952e2a",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "bathroom_night",
+          "path": "assets/images/background/bathroom_night.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day4_night_deduction_hand_match",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "3684b7b057b66eb4c4f92e3598d30f207a97dd97bfd0ecfb2a9f806426e6fb65",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "bathroom_night",
+          "path": "assets/images/background/bathroom_night.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day4_night_deduction_hand_hint",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "cbcf1bd4588081dc76fc6b262cbf177c33d45bde8fb59f80c59a65f30f29f96f",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "bathroom_night",
+          "path": "assets/images/background/bathroom_night.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day4_night_deduction_seolhwa",
+      "reviewed": true,
+      "kind": "choice",
+      "speaker": null,
+      "textSHA256": "2d88720f2147eed1426769a47da5b60e1984265637e8df40cca5520d7bf5b61e",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "bathroom_night",
+          "path": "assets/images/background/bathroom_night.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day4_night_deduction_record_match",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "f603f30b92fafc5b8787ec94028eac8169f903c2e6553242c749d05951995e35",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "bathroom_night",
+          "path": "assets/images/background/bathroom_night.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day4_night_deduction_record_hint",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": null,
+      "textSHA256": "ee8ec4fa06b5f927900c8c05a32d0897eb874fbbdce106e56dbc4e7761fd158f",
+      "mediaChanged": false,
+      "reason": "2026-10-15 addition: retain conversation portrait and location; approved photo comparison is confined to its modal",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "bathroom_night",
+          "path": "assets/images/background/bathroom_night.webp"
+        }
+      ],
+      "cast": {}
+    },
+    {
+      "id": "day1_eunsu_11_honest",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "5daeb61b0abfb861d0899f1887eb581bca104818346212552571d084a8a76472",
+      "mediaChanged": false,
+      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "left": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        },
+        "center": {
+          "key": "eunsu_normal",
+          "path": "assets/images/characters/eunsu_normal.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_eunsu_11_brief",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "06b635efc70612e9b21010c25de4ad2878b08c6075c81fe19f9ebde5a9952beb",
+      "mediaChanged": false,
+      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "left": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        },
+        "center": {
+          "key": "eunsu_normal",
+          "path": "assets/images/characters/eunsu_normal.webp"
+        }
+      }
+    },
+    {
+      "id": "day1_eunsu_11_sea",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "30ddc94eeb959c6772520d2d34d0442ac96c28b121493cf8ce18b13be7bfb16c",
+      "mediaChanged": false,
+      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "classroom",
+          "path": "assets/images/background/classroom.webp"
+        }
+      ],
+      "cast": {
+        "left": {
+          "key": "sea_smile",
+          "path": "assets/images/characters/sea_smile.webp"
+        },
+        "center": {
+          "key": "eunsu_normal",
+          "path": "assets/images/characters/eunsu_normal.webp"
+        }
+      }
+    },
+    {
+      "id": "day4_lunch_nurse_ask_name",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "e669b0ea20f56f0679f7feab3d45e38e415adecac04f0a0d4c98950693ca541b",
+      "mediaChanged": false,
+      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_cold",
+          "path": "assets/images/characters/riin_cold.webp"
+        }
+      }
+    },
+    {
+      "id": "day4_lunch_nurse_ask_name_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "riin",
+      "textSHA256": "9a6d6a5f470928d91acb0a49c276156db74f43343e059fa0db6baab4867d63a9",
+      "mediaChanged": false,
+      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_strained_smile",
+          "path": "assets/images/characters/riin_strained_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day4_lunch_nurse_ask_yuna",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "540fc650839a1078d95064a17416e580072e14652d5302a1d490a93d4b73107f",
+      "mediaChanged": false,
+      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_cold",
+          "path": "assets/images/characters/riin_cold.webp"
+        }
+      }
+    },
+    {
+      "id": "day4_lunch_nurse_ask_yuna_2",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "riin",
+      "textSHA256": "04c4dc99189c56adc1f8e8f5dc1fa86508217fdb14ce9e11db95640113a2e18d",
+      "mediaChanged": false,
+      "reason": "Scene context reviewed; retain intentional shot, conversation portrait, memory or structural transition",
+      "effects": [],
+      "backgroundKey": null,
+      "possibleBackgrounds": [
+        {
+          "key": "nurse_office",
+          "path": "assets/images/background/nurse_office.webp"
+        }
+      ],
+      "cast": {
+        "center": {
+          "key": "riin_strained_smile",
+          "path": "assets/images/characters/riin_strained_smile.webp"
+        }
+      }
+    },
+    {
+      "id": "day4_lunch_nurse_leave_ask",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "70f2a441d5fa6847149099d33f1bafcb439fab09ac3e052e9f024a365539a290",
+      "mediaChanged": true,
+      "reason": "Exit from the nurse office into the classroom corridor, not the entrance foyer",
+      "effects": [],
+      "backgroundKey": "corridor",
+      "possibleBackgrounds": [
+        {
+          "key": "corridor",
+          "path": "assets/images/background/corridor.webp"
+        }
+      ],
+      "cast": {},
+      "previousMedia": {
+        "backgroundKey": "hallway",
+        "possibleBackgrounds": [
+          {
+            "key": "hallway",
+            "path": "assets/images/background/hallway.webp"
+          }
+        ],
+        "cast": {}
+      }
+    },
+    {
+      "id": "day4_lunch_nurse_leave_yuna",
+      "reviewed": true,
+      "kind": "dialogue-or-narration",
+      "speaker": "me",
+      "textSHA256": "db4f4c2179dcf4f1b26fbe5ee636b8970835fd134fc66a3d9d8334cd50e7a294",
+      "mediaChanged": true,
+      "reason": "Exit from the nurse office into the classroom corridor, not the entrance foyer",
+      "effects": [],
+      "backgroundKey": "corridor",
+      "possibleBackgrounds": [
+        {
+          "key": "corridor",
+          "path": "assets/images/background/corridor.webp"
+        }
+      ],
+      "cast": {},
+      "previousMedia": {
+        "backgroundKey": "hallway",
+        "possibleBackgrounds": [
+          {
+            "key": "hallway",
+            "path": "assets/images/background/hallway.webp"
+          }
+        ],
+        "cast": {}
+      }
     }
   ],
   "runtimeFixes": [
@@ -50775,5 +51596,11 @@
       "artifacts": "D:/workspace/_workspace/nevergrad-scene-audit-20261008"
     },
     "imageGenerationReport": "scene-media-image-generation-2026-10-08.json"
+  },
+  "extension20261015": {
+    "addedScenes": 37,
+    "review": "docs/qa/sgrade-korean-review-20261015.json",
+    "note": "Historical source hashes retained for original ledger entries; new scene contracts appended",
+    "overlayNote": "Includes nine runtime nodes from causality_overlays.js; validate.js counts the base scenario files separately"
   }
 }

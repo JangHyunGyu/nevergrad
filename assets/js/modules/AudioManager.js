@@ -72,6 +72,8 @@ class AudioManager {
         // ── 활성 SFX 추적 (페이드아웃 중단용) ──
         /** @type {Set<{source: AudioBufferSourceNode, gain: GainNode, filename: string}>} */
         this._activeSFX = new Set();
+        this._typingVoices = new Set();
+        this._lastTypingTick = -Infinity;
 
         // ── 로드 실패 보고 dedup (path별 1회만 D1 보고) ──
         /** @type {Set<string>} */
@@ -503,6 +505,7 @@ class AudioManager {
      * @param {number} [fadeOut=0.5] - 페이드아웃 시간 (초)
      */
     stopSFX(filename = null, fadeOut = 0.5) {
+        if (filename === null) this.stopTypingTicks();
         if (filename === null) { this._sfxGeneration++; this._sfxStops.clear(); }
         else this._sfxStops.set(filename, (this._sfxStops.get(filename) || 0) + 1);
         if (!this.ctx) return;
@@ -762,6 +765,7 @@ class AudioManager {
      * @param {boolean} muted
      */
     setMute(muted) {
+        this._muted = !!muted;
         if (!this.ctx) return;
         this.masterGain.gain.setValueAtTime(muted ? 0 : this.volumes.master, this.ctx.currentTime);
     }
@@ -1011,6 +1015,78 @@ class AudioManager {
         gain.gain.value = volume;
         gain.connect(this.sfxGain);
         return gain;
+    }
+
+    getVoiceTexture(charId, genreShift = false, day = 1) {
+        const controlled = genreShift && day >= 4;
+        const textures = {
+            eunsu: { frequency: controlled ? 540 : 620, wave: controlled ? 'triangle' : 'sine', cutoff: 1800, duration: 0.032, pan: 0, rhythm: 'steady' },
+            sea: { frequency: 1060, wave: 'sine', cutoff: 3600, duration: 0.026, pan: 0, rhythm: controlled ? 'fractured' : 'light' },
+            riin: { frequency: 470, wave: 'sine', cutoff: 1300, duration: 0.034, pan: 0, rhythm: 'steady' },
+            yuna: { frequency: 810, wave: 'sine', cutoff: 2200, duration: 0.028, pan: 0, rhythm: 'light' },
+            seolhwa: { frequency: 350, wave: 'sine', cutoff: 680, duration: 0.095, pan: -0.45, rhythm: 'echo' },
+            system: { frequency: 1420, wave: 'square', cutoff: 2600, duration: 0.018, pan: 0, rhythm: 'document' }
+        };
+        return textures[charId] || null;
+    }
+
+    playTypingTick(texture) {
+        if (!texture || !this.ctx || this.ctx.state !== 'running' || !this.sfxGain) return false;
+        if (this._muted || this.volumes.sfx <= 0 || this.volumes.master <= 0) return false;
+        const now = this.ctx.currentTime;
+        if (now - this._lastTypingTick < 0.07) return false;
+        if (this.sfxGain.gain.value <= 0 || this.masterGain?.gain.value <= 0) return false;
+        this._lastTypingTick = now;
+        const filter = this.ctx.createBiquadFilter();
+        filter.type = 'lowpass';
+        filter.frequency.value = texture.cutoff;
+        const envelope = this.ctx.createGain();
+        envelope.gain.setValueAtTime(0, now);
+        envelope.gain.linearRampToValueAtTime(0.018, now + 0.003);
+        envelope.gain.exponentialRampToValueAtTime(0.0001, now + texture.duration);
+        const panner = this.ctx.createStereoPanner?.();
+        if (panner) {
+            panner.pan.value = texture.pan;
+            filter.connect(panner);
+            panner.connect(envelope);
+        } else filter.connect(envelope);
+        envelope.connect(this.sfxGain);
+        const sources = [];
+        const nodes = [filter, envelope, ...(panner ? [panner] : [])];
+        for (const [ratio, level] of [[1, 1], [2.01, 0.12]]) {
+            const oscillator = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            oscillator.type = ratio === 1 ? texture.wave : 'sine';
+            oscillator.frequency.setValueAtTime(texture.frequency * ratio, now);
+            gain.gain.value = level;
+            oscillator.connect(gain);
+            gain.connect(filter);
+            sources.push(oscillator);
+            nodes.push(oscillator, gain);
+        }
+        const voice = { sources, nodes };
+        this._typingVoices.add(voice);
+        let remaining = sources.length;
+        sources.forEach(source => {
+            source.onended = () => {
+                if (--remaining === 0) {
+                    nodes.forEach(node => { try { node.disconnect(); } catch (_) {} });
+                    this._typingVoices.delete(voice);
+                }
+            };
+            source.start(now);
+            source.stop(now + texture.duration + 0.008);
+        });
+        return true;
+    }
+
+    stopTypingTicks() {
+        for (const voice of this._typingVoices) {
+            voice.sources.forEach(source => { try { source.stop(); } catch (_) {} });
+            voice.nodes.forEach(node => { try { node.disconnect(); } catch (_) {} });
+        }
+        this._typingVoices.clear();
+        this._lastTypingTick = -Infinity;
     }
 
     /**

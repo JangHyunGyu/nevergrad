@@ -508,16 +508,19 @@ Object.assign(SCENARIO[5], {
         next: "day5_observer_4"
     },
     "day5_observer_4": {
+        textPace: "document",
         character: null,
         monospace: true,
         typingSpeed: 30,
         next: "day5_observer_5"
     },
     "day5_observer_5": {
+        textPace: "document",
         character: null,
         next: "day5_observer_6"
     },
     "day5_observer_6": {
+        textPace: "document",
         character: null,
         monospace: true,
         typingSpeed: 20,
@@ -525,12 +528,14 @@ Object.assign(SCENARIO[5], {
         next: "day5_observer_7"
     },
     "day5_observer_7": {
+        textPace: "document",
         character: null,
         autoAdvance: true,
         autoAdvanceDelay: 2000,
         next: "day5_observer_8"
     },
     "day5_observer_8": {
+        textPace: "document",
         character: null,
         monospace: true,
         typingSpeed: 25,

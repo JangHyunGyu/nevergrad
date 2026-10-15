@@ -676,19 +676,19 @@
         "text": "*画面中央に、文字が一字ずつ浮かび上がる。*"
     },
     "day5_observer_4": {
-        "text": "═════════════════════ ═════════════════════\n  NEVERGRAD RESEARCH INSTITUTE\n  観測ログ対照記録\n═════════════════════ ═════════════════════"
+        "text": "エディナ財団 / ネバーグラード研究所\nセキュリティ監査：外部閲覧セッション\n照合対象：#13観察記録"
     },
     "day5_observer_5": {
-        "text": "*僕の記録？*"
+        "text": "閲覧権限：監査・モニタリング\nセッション状態：接続継続\n被験者への接触権限：なし"
     },
     "day5_observer_6": {
-        "text": "記録の件名: #13 ({name})\n進行時間: {play_time}\n\n連絡先: セア {route_data} / ユナ {met_yuna} / リイン {riin_visits} / ソルファ {seolhwa_attempts}\n証拠: {evidence_data}\n最終応答: {timer_data}"
+        "text": "被験者：#13 ({name})\nセッション接続時間：{play_time}\n\n接触・介入集計\nセアへの接触：{route_data}\nユナとの接触有無：{met_yuna}\nリイン訪問：{riin_visits}\nソルファへの接触試行：{seolhwa_attempts}\n証拠確保：{evidence_data}\n最終応答記録：{timer_data}"
     },
     "day5_observer_7": {
-        "text": "*スクロールが下に進む。*"
+        "text": "接触記録の照合完了\n行動パターンを照合中"
     },
     "day5_observer_8": {
-        "text": "注:\n\n#13 レコードのレビューが完了しました。\n警告後もログが残りました。\n\n比較:\nパク・ウンス - 13 件の観察。\n{name} - {play_time} の観察者。\n\n判決は保留された。"
+        "text": "照合基準：研究責任者パク・ウンス / 観察13回\n外部閲覧セッション：#13 ({name}) / {play_time}\n\n共通項目：警告後も閲覧継続、介入記録の累積\n類似性：観察継続パターン一致\n\n自動判定：保留\nセッション終了要求：未受信"
     },
     "day5_observer_cupid_check": {
         "text": ""

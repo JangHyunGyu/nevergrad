@@ -65,5 +65,25 @@ export async function onRequest(context) {
       },
     });
   }
-  return context.next();
+  // Pages falls back to the home document for missing paths. Keep its body
+  // unchanged, but prevent these duplicate URLs from becoming indexable pages.
+  const isHead = context.request.method === 'HEAD';
+  const response = isHead
+    ? await context.next(new Request(context.request, { method: 'GET' }))
+    : await context.next();
+  const isHome = ['/', '/index', '/index.html'].includes(url.pathname);
+  if (!isHome && response.status === 200
+      && response.headers.get('content-type')?.includes('text/html')) {
+    const html = await response.clone().text();
+    const homeCanonical = /<link\b(?=[^>]*\brel=["']canonical["'])(?=[^>]*\bhref=["']https:\/\/nevergrad\.archerlab\.dev\/?["'])[^>]*>/i;
+    if (homeCanonical.test(html)) {
+      const headers = new Headers(response.headers);
+      headers.set('x-robots-tag', 'noindex, nofollow');
+      headers.set('cache-control', 'no-store');
+      return new Response(isHead ? null : response.body, {
+        status: 404, statusText: 'Not Found', headers,
+      });
+    }
+  }
+  return isHead ? new Response(null, response) : response;
 }

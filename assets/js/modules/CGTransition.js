@@ -81,9 +81,9 @@
                 await this._fade(state, state.picture, 1000);
                 if (this.active !== state) return;
                 state.picture.remove();
-                await this._fade(state, state.overlay, 2000);
+                await this._fade(state, state.overlay, 1500);
             } else {
-                await this._fade(state, state.overlay, state.incoming ? 2000 : 1000);
+                await this._fade(state, state.overlay, state.incoming ? 1500 : 1000);
             }
             if (this.active === state) this.cancel();
         }

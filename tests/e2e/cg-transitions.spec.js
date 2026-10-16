@@ -24,7 +24,7 @@ for(const [width,height]of [[1280,800],[1024,768],[768,1024],[375,812],[667,375]
     test(`CG fades and click protection at ${width}x${height}`,async({page},info)=>{
         await page.setViewportSize({width,height});await setup(page);
         await page.locator('#dialogue-box').dispatchEvent('click');
-        await expect(page.locator('[data-cg-transition]')).toHaveAttribute('data-duration','2000');
+        await expect(page.locator('[data-cg-transition]')).toHaveAttribute('data-duration','1500');
         await page.waitForTimeout(450);
         const middle=await page.locator('[data-cg-transition]').evaluate(el=>Number(getComputedStyle(el).opacity));
         expect(middle).toBeGreaterThan(0);expect(middle).toBeLessThan(1);
@@ -54,7 +54,7 @@ test('CG replacement, interruption and explicit hard cuts clean up all transitio
     await page.waitForFunction(()=>!game._waitingForCG&&!game.dialogue.isTyping);
     await page.evaluate(()=>game._loadScene('day1_qa_second'));
     await expect(page.locator('[data-cg-transition]')).toHaveAttribute('data-duration','1000');
-    await expect(page.locator('[data-cg-transition]')).toHaveAttribute('data-duration','2000');
+    await expect(page.locator('[data-cg-transition]')).toHaveAttribute('data-duration','1500');
     await page.waitForFunction(()=>!game._waitingForCG&&!game.dialogue.isTyping);
     await page.evaluate(()=>{game._loadScene('day1_qa_cg');game._loadScene('day1_qa_after');});
     await page.waitForFunction(()=>!game._waitingForCG&&!game.dialogue.isTyping);

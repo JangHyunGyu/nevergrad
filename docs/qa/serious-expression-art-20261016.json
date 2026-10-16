@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-16",
+  "baselineCommit": "dca66f600347152bb3387ffc6d6232e409237956",
+  "scope": "Add dedicated Yuna and Riin serious-expression artwork for the six Phase 2 scenes that previously reused determined/neutral sprites.",
+  "generation": {
+    "tool": "Built-in image_gen",
+    "cliFallback": false,
+    "qualityOrSizeControlsExposed": false,
+    "requested": "Highest supported quality and maximum supported native resolution, preserving original composition and portrait aspect ratio",
+    "prompts": "PROMPTS_READY.md#dedicated-serious-expressions--2026-10-16",
+    "rawMastersPreserved": true,
+    "downscaled": false
+  },
+  "assets": [
+    {
+      "id": "yuna_serious",
+      "reference": "yuna_normal.png",
+      "width": 1086,
+      "height": 1448,
+      "resized": false,
+      "generatedMaster": "assets/images/characters/masters/yuna_serious_generated.png",
+      "masterMatchesGenerated": true,
+      "masterSha256": "0ff0ecea3aa493a22db3d250c1f16b912bd78bf6ab184f8f7ca426527a212ae2",
+      "png": "assets/images/characters/yuna_serious.png",
+      "webp": "assets/images/characters/yuna_serious.webp",
+      "pngSha256": "93718963dfc1f367c59a77446a2d06ef198b495f275ddc68ab49fc1e1fb2221c",
+      "webpSha256": "298f7b8129d871b3d22e93637f29f7e2c969f91ea471c48a9d02e8a1b0b0c01d",
+      "pngBytes": 1906897,
+      "webpBytes": 904460,
+      "alpha": {
+        "sourceSilhouetteRestored": true,
+        "transparent": 710102,
+        "opaque": 855329,
+        "partial": 7097
+      },
+      "generationSourceFile": "exec-ea2fce0c-c962-4291-84b3-c0fb64e3dd76.png",
+      "losslessVisiblePixelsMatch": true,
+      "alphaMatchesSourceSprite": true
+    },
+    {
+      "id": "riin_serious",
+      "reference": "riin_neutral.png",
+      "width": 1024,
+      "height": 1536,
+      "resized": false,
+      "generatedMaster": "assets/images/characters/masters/riin_serious_generated.png",
+      "masterMatchesGenerated": true,
+      "masterSha256": "6670aa9e1868a8ffa493109bf8cc9478c29c4aafbd3298a91470efc696e5ab12",
+      "png": "assets/images/characters/riin_serious.png",
+      "webp": "assets/images/characters/riin_serious.webp",
+      "pngSha256": "1e3ca33afd5a1a4cb032959697d1e562ed2ee4b711d462aabb3e1fc5e87efee0",
+      "webpSha256": "c0354927ecc9cf525f1f6195ab76d0529afaf2cc5a9132ba174d4e217e4e613a",
+      "pngBytes": 1734669,
+      "webpBytes": 796522,
+      "alpha": {
+        "sourceSilhouetteRestored": true,
+        "transparent": 598682,
+        "opaque": 967003,
+        "partial": 7179
+      },
+      "generationSourceFile": "exec-b4f6095c-564b-4c85-a629-81a2360488a7.png",
+      "losslessVisiblePixelsMatch": true,
+      "alphaMatchesSourceSprite": true
+    }
+  ],
+  "storyScenes": [
+    "day1_after_yuna_back_12",
+    "day2_lunch_yuna_map_11",
+    "day2_after_detour_lib_12",
+    "day2_after_detour_lib_13",
+    "day2_lunch_riin_pls_9",
+    "day2_lunch_riin_pls_10"
+  ],
+  "textChanges": 0,
+  "scenarioStructureChanges": 0,
+  "cg": 14,
+  "music": 30,
+  "validation": {
+    "errors": 0,
+    "warnings": 0,
+    "scenes": 3338,
+    "reachable": 3338,
+    "endings": 7,
+    "unitTests": 115,
+    "assetFilesDecoded": 165
+  },
+  "browser": {
+    "passed": 16,
+    "failed": 0,
+    "languages": [
+      "ko",
+      "en",
+      "ja",
+      "es",
+      "fr",
+      "de",
+      "pt",
+      "zh"
+    ],
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "width": 375,
+        "height": 812
+      }
+    ],
+    "coverage": [
+      "Six story scene bindings",
+      "Native decoded dimensions",
+      "Visible sprite after character transition",
+      "Dedicated serious unlock IDs independent of prior aliases",
+      "Localized serious labels",
+      "Gallery preview rendering",
+      "No browser page errors"
+    ]
+  },
+  "visual": {
+    "baseline": "dca66f6",
+    "representativeUnchangedScreens": 4,
+    "changedChannels": 0,
+    "comparisons": [
+      {
+        "screen": "title",
+        "width": 1280,
+        "height": 800,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      },
+      {
+        "screen": "dialogue",
+        "width": 1280,
+        "height": 800,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      },
+      {
+        "screen": "title",
+        "width": 375,
+        "height": 812,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      },
+      {
+        "screen": "dialogue",
+        "width": 375,
+        "height": 812,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      }
+    ]
+  },
+  "publishing": "Commit and push main; require a clean main checkout with HEAD equal to origin/main immediately before production deployment.",
+  "galleryExpressionsBefore": 58,
+  "galleryExpressionsAfter": 60
+}

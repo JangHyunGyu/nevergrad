@@ -1646,3 +1646,43 @@ pad. Used for the administrator-panel deduction and COMPLICIT control room.
 Both new scores render before any missing-file request, cache the AudioBuffer,
 and apply a short loop-edge envelope. No external audio file is required.
 
+## Dedicated serious expressions — 2026-10-16
+
+Mode: built-in `image_gen`; no CLI/API fallback. Quality and size controls were
+not exposed. Every request explicitly asked for the highest supported quality
+and maximum supported native resolution. Actual selected outputs:
+
+| Sprite | Native dimensions | Aspect ratio |
+| --- | --- | --- |
+| `yuna_serious` | 1086×1448 | 3:4 |
+| `riin_serious` | 1024×1536 | 2:3 |
+
+Untouched generated PNGs are retained in
+`assets/images/characters/masters/{character}_serious_generated.png`. Engine-ready
+PNG and lossless WebP files are saved as
+`assets/images/characters/{character}_serious.{png,webp}`. No image was resized.
+Delivery packaging restores the corresponding original sprite's alpha channel
+to preserve the established silhouette and remove generated matte residue.
+The generated RGB artwork is retained at native dimensions. PNG and WebP have
+identical alpha and identical RGB for every pixel with nonzero alpha; WebP may
+optimize invisible RGB beneath fully transparent pixels.
+
+### yuna_serious — selected expression prompt
+
+Edit target: `yuna_normal.png`.
+
+```text
+Use case: identity-preserve. Asset type: a new expression sprite for the existing Nevergrad visual novel. Image 1 is the edit target and strict identity, clothing, pose, framing and art-style reference. Create the same Yuna sprite with ONLY her facial expression changed to quiet seriousness: lips gently closed without a smile, brows subtly lowered and drawn together, eyes focused attentively at the viewer, as if carefully choosing her words about a photograph. She is composed and thoughtful, not angry, frightened, crying, blushing or fiercely determined. Preserve the exact existing face identity, eye size and color, brown bob and braid, cream cardigan, white collared shirt, red necktie, plaid skirt, camera, straps, both hands and their pose. Keep the same body silhouette and anatomical proportions, camera angle, character position, amount of headroom, thigh crop, soft lighting, clean anime linework and cel shading. Fully clothed nonsexual visual novel character illustration. Do not add or change props. Preserve a genuinely transparent background with clean alpha around individual hair strands, no opaque black/white/checkerboard background, halo, colored fringe, cast shadow, scenery, decorative particles, new text, logo or watermark. Preserve the source 3:4 portrait aspect ratio and normalized composition. Render at the highest supported quality and maximum supported native resolution for this portrait aspect ratio; do not downscale or make a draft. Existing camera detail should remain consistent with the reference.
+```
+
+### riin_serious — selected expression prompt
+
+Image 1: `riin_neutral.png`, the original sprite and alpha reference.
+Image 2: the first generated serious-expression Riin candidate, used only for
+the focused facial expression. A preceding background-extraction attempt retained
+matte residue; final delivery uses the original sprite alpha as documented above.
+
+```text
+Edit IMAGE 1 ONLY. Image 1 is the original clean transparent character sprite and is the exact base. Image 2 is ONLY a reference for the serious facial expression, not for its background or rendering. Copy Image 1 unchanged, including its original alpha channel and every pixel of its clothing, clipboard, hands, body, hair silhouette and transparent empty space. Restrict the edit to a small facial region inside the glasses, eyebrows and lips: give Image 1 the focused, serious amber eyes and gently firm closed lips of Image 2. The result is the same fully clothed adult nurse with the same face identity, purple bob, glasses and beauty mark. The composition and source 2:3 portrait crop must be identical to Image 1. Preserve Image 1's original transparency exactly: empty space has alpha zero, and the hair/coat outline is a narrow clean antialiased edge. Do not bring over the gray glow, gradient, haze, vignette or backdrop from Image 2. There must be NOTHING painted behind or around the character, not even a soft gray halo. Highest supported quality and maximum supported native portrait resolution; no downscaling, no artistic restyling, no additional objects, no text.
+```
+

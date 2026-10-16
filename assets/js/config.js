@@ -175,7 +175,7 @@ const CONFIG = {
             cold: "assets/images/characters/riin_cold.webp",
             dark: "assets/images/characters/riin_dark.webp",
             neutral: "assets/images/characters/riin_neutral.webp",
-            serious: "assets/images/characters/riin_neutral.webp",
+            serious: "assets/images/characters/riin_serious.webp",
             startled: "assets/images/characters/riin_startled.webp",
             strained_smile: "assets/images/characters/riin_strained_smile.webp",
             close: "assets/images/characters/riin_close.webp",
@@ -211,7 +211,7 @@ const CONFIG = {
             cry: "assets/images/characters/yuna_cry.webp",
             weak: "assets/images/characters/yuna_weak.webp",
             determined: "assets/images/characters/yuna_determined.webp",
-            serious: "assets/images/characters/yuna_determined.webp",
+            serious: "assets/images/characters/yuna_serious.webp",
             desperate: "assets/images/characters/yuna_desperate.webp",
             injured_determined: "assets/images/characters/yuna_injured_determined.webp",
             cautious: "assets/images/characters/yuna_scared.webp",    // alias: 경계하는 상태

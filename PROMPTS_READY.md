@@ -1522,3 +1522,127 @@ ONLY CHANGE her eyes: now locking directly onto the viewer/camera with unsettlin
 
 **태그:** `타이틀, NG+, 배경+스프라이트 합성, 세아, 정면 응시, 레퍼런스 편집`
 
+## Expansion assets — 2026-10-16
+
+The work order's Imagen 4 endpoints are retired. The user approved a replacement
+model at maximum quality. These six assets were generated with the built-in
+`image_gen` tool. The tool exposes no numeric quality or size control; every prompt
+requests maximum supported quality and native resolution in a 16:9 composition.
+Actual output: **1672 × 941 pixels** per asset. Original PNG masters and lossless
+WebP delivery files share the same dimensions; neither was resized.
+
+Shared negative instructions: **no text, lettering, captions, numbers, watermark,
+logo, user interface, or borders**. The rooftop image permits physical tally cuts
+and a scratched arrow, not printed writing. Character references establish face,
+costume and the existing cel-shaded art style.
+
+### cg_seolhwa_cycle07_rain.png / .webp
+
+Registry: `cg_cycle07_seolhwa`; gallery: `cg_cycle07_seolhwa`.
+
+```text
+Finished anime visual novel event CG, widescreen 16:9, maximum supported quality
+and native resolution. Rain lashes an old school emergency exit at night.
+Seolhwa, a pale schoolgirl with long wet silver-gray hair and a navy sailor
+uniform, clasps the first-person viewer's left hand in both hands. One fingernail
+presses a short mark into the open palm without a visible wound. Show her
+resolute, tearful face, both hands and the viewer's left palm clearly. Red
+emergency light and distant faceless security silhouettes fill the corridor.
+Use seolhwa_normal.webp as the facial and art-style reference. No text, lettering,
+watermark, logo, captions or user interface.
+```
+
+The final gesture edit makes the viewer's left palm explicit: forearm from the
+bottom edge, palm facing the viewer, thumb on the image's right, five relaxed
+digits, and Seolhwa's index fingernail pressing the center without a wound.
+
+### cg_yuna_darkroom_film.png / .webp
+
+Registry: `cg_cycle12_yuna`; gallery: `cg_cycle12_yuna`.
+
+```text
+Finished anime visual novel event CG, widescreen 16:9, maximum supported quality
+and native resolution. A photography club darkroom lit only by a red safelight.
+Yuna, matching yuna_normal.webp in face, short bob, cream cardigan, red necktie
+and plaid uniform, holds an unbranded vintage film camera against her chest and
+looks up at the first-person viewer with wet eyes and quiet determination.
+Contact sheets and negatives hang between the viewer and Yuna. Saturated red
+highlights contrast with cool shadows. No text, lettering, watermark, logo,
+captions or user interface.
+```
+
+### ending_cage_eunsu_desk.png / .webp
+
+Registry: `ending_cage_eunsu`; gallery: `ending_cage_eunsu`.
+
+```text
+Finished anime visual novel ending CG, widescreen 16:9, maximum supported quality
+and native resolution. An empty classroom in deep red late-afternoon sunlight.
+Adult teacher Eunsu matches eunsu_normal.webp in face, long black hair, cream
+blouse, navy cardigan and pencil skirt. Sitting at the teacher's desk, she gently
+fits a plain silver identification band around the first-person viewer's wrist.
+Her glasses have been removed and rest beside an unmarked attendance book.
+A possessive, soft smile, cherry petals outside and long empty-desk shadows.
+Nonsexual psychological mystery. No text, lettering, watermark, logo or UI.
+```
+
+The final edit removes the glasses from her face while preserving the pair on
+the desk, the wrist gesture, identity, costume, framing and sunset lighting.
+
+### ending_complicit_monitors.png / .webp
+
+Registry: `ending_complicit_monitors`; gallery: `ending_complicit_monitors`.
+
+```text
+Finished anime visual novel ending CG, widescreen 16:9, maximum supported quality
+and native resolution. An underground surveillance control room. Adult Eunsu
+matches the existing reference face and black hairstyle, now in a white lab coat
+and silver-rimmed glasses. One hand rests on the first-person viewer's shoulder;
+the other indicates blue CCTV monitors showing a classroom, hallway, basement
+door and nurse office. Elegant cold smile, cyan monitor light and deep shadows.
+No violence, text, lettering, watermark, logo or interface symbols.
+```
+
+### closeup_m13_ampoule_tray.png / .webp
+
+Registry: `closeup_m13_ampoule`.
+
+```text
+Anime visual novel evidence close-up, widescreen 16:9, maximum supported quality
+and native resolution. A school nurse office stainless medical tray holds exactly
+three clear glass ampoules and one capped syringe. Cold fluorescent light,
+precise brushed-steel reflections, half-shredded blank research chart sheets
+protruding from a partly open drawer. No people, text, lettering, numbers,
+watermark, logo, captions or user interface.
+```
+
+### closeup_rooftop_etching.png / .webp
+
+Registry: `closeup_rooftop_etching`.
+
+```text
+Anime visual novel evidence close-up, widescreen 16:9, maximum supported quality
+and native resolution. Weathered concrete beneath a rusty green school rooftop
+chain-link fence at sunset. Seven deep vertical tally scratches, grouped four
+and three, and a rough arrow scratched to the left. These are physical marks,
+not typeset writing. Rust-red crevices, grit and low sunset shadows. No people,
+alphabetic or Korean text, printed numbers, watermark, logo or user interface.
+```
+
+### cycle07_elegy.mp3 — procedural score
+
+`BGMSynth._registry['cycle07_elegy']`: D minor, 68 BPM, 32 beats, 48 kHz stereo.
+Low-pass piano arpeggios, D1 sub-bass drone, slow wow and fast flutter modulation,
+filtered tape hiss and stereo reverb. Used in Cycle 07 and the GHOST epilogue.
+The existing `seolhwa_theme_broken` recording closes the Cycle 07 termination log;
+this brings the encounter-based music gallery to 30 tracks without a third new
+composition.
+
+### complicit_cold_pulse.mp3 — procedural score
+
+`BGMSynth._registry['complicit_cold_pulse']`: 90 BPM, 32 beats, 48 kHz stereo.
+Filtered square-wave bass pulses, alternating clock ticks and a dissonant high
+pad. Used for the administrator-panel deduction and COMPLICIT control room.
+Both new scores render before any missing-file request, cache the AudioBuffer,
+and apply a short loop-edge envelope. No external audio file is required.
+

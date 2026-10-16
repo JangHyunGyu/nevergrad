@@ -163,12 +163,12 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_photo_2"
     },
     "day3_morning_photo_back": {
-        character: null,
-        next: "day3_morning_photo_1"
+        "character": null,
+        "next": "day3_morning_photo_back_detail_1"
     },
     "day3_morning_photo_look": {
-        character: null,
-        next: "day3_morning_photo_1"
+        "character": null,
+        "next": "day3_morning_photo_look_detail_1"
     },
     "day3_morning_photo_2": {
         character: null,
@@ -246,8 +246,8 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_classroom_3"
     },
     "day3_morning_classroom_3": {
-        character: null,
-        next: "day3_morning_classroom_4"
+        "character": null,
+        "next": "day3_morning_class_silence_1"
     },
     "day3_morning_classroom_4": {
         character: null,
@@ -327,5 +327,396 @@ Object.assign(SCENARIO[3], {
         character: null,
         changeSlot: "lunch",
         next: "day3_lunch_start"
+    }
+});
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[3], {
+    "day3_morning_photo_back_detail_1": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_2"
+    },
+    "day3_morning_photo_back_detail_2": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_3"
+    },
+    "day3_morning_photo_back_detail_3": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_4",
+        "branches": [
+            {
+                "condition": "found_washed_note",
+                "next": "day3_history_callback_10"
+            }
+        ]
+    },
+    "day3_morning_photo_back_detail_4": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_5"
+    },
+    "day3_morning_photo_back_detail_5": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_6"
+    },
+    "day3_morning_photo_back_detail_6": {
+        "character": null,
+        "choices": [
+            {
+                "next": "day3_expansion_action_4_a"
+            },
+            {
+                "next": "day3_expansion_action_4_b"
+            },
+            {
+                "next": "day3_morning_photo_back_detail_7"
+            }
+        ]
+    },
+    "day3_morning_photo_back_detail_7": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_8"
+    },
+    "day3_morning_photo_back_detail_8": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_9"
+    },
+    "day3_morning_photo_back_detail_9": {
+        "character": null,
+        "next": "day3_morning_photo_1",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle07_seolhwa",
+                "duration": 450
+            }
+        }
+    },
+    "day3_morning_photo_look_detail_1": {
+        "background": "closeup_cctv_led",
+        "character": null,
+        "sfx": "sfx_camera_shutter.mp3",
+        "next": "day3_morning_photo_look_detail_2"
+    },
+    "day3_morning_photo_look_detail_2": {
+        "background": "closeup_cctv_led",
+        "character": null,
+        "next": "day3_morning_photo_look_detail_3"
+    },
+    "day3_morning_photo_look_detail_3": {
+        "background": "closeup_cctv_led",
+        "character": null,
+        "next": "day3_morning_photo_look_detail_4"
+    },
+    "day3_morning_photo_look_detail_4": {
+        "background": "closeup_cctv_led",
+        "character": null,
+        "next": "day3_morning_photo_look_detail_5",
+        "branches": [
+            {
+                "condition": "received_yuna_photo",
+                "next": "day3_history_callback_11"
+            }
+        ]
+    },
+    "day3_morning_photo_look_detail_5": {
+        "background": "closeup_cctv_led",
+        "character": null,
+        "next": "day3_morning_photo_look_detail_6"
+    },
+    "day3_morning_photo_look_detail_6": {
+        "background": "closeup_cctv_led",
+        "character": null,
+        "choices": [
+            {
+                "next": "day3_expansion_action_5_a"
+            },
+            {
+                "next": "day3_expansion_action_5_b"
+            },
+            {
+                "next": "day3_morning_photo_look_detail_7"
+            }
+        ]
+    },
+    "day3_morning_photo_look_detail_7": {
+        "background": "closeup_cctv_led",
+        "character": null,
+        "next": "day3_morning_photo_look_detail_8"
+    },
+    "day3_morning_photo_look_detail_8": {
+        "background": "closeup_cctv_led",
+        "character": null,
+        "next": "day3_morning_photo_look_detail_9",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle12_yuna",
+                "duration": 450
+            }
+        }
+    },
+    "day3_morning_photo_look_detail_9": {
+        "background": "closeup_cctv_led",
+        "character": null,
+        "next": "day3_morning_photo_1"
+    },
+    "day3_morning_class_silence_1": {
+        "background": "classroom",
+        "character": "sea_stare",
+        "next": "day3_morning_class_silence_2",
+        "glitch": {
+            "silence": true,
+            "silenceDuration": 2000
+        }
+    },
+    "day3_morning_class_silence_2": {
+        "background": "classroom",
+        "character": "sea_stare",
+        "next": "day3_morning_class_silence_3"
+    },
+    "day3_morning_class_silence_3": {
+        "background": "classroom",
+        "character": "sea_stare",
+        "next": "day3_morning_class_silence_4"
+    },
+    "day3_morning_class_silence_4": {
+        "background": "classroom",
+        "character": "sea_stare",
+        "next": "day3_morning_class_silence_5"
+    },
+    "day3_morning_class_silence_5": {
+        "background": "classroom",
+        "character": "sea_stare",
+        "next": "day3_morning_class_silence_6"
+    },
+    "day3_morning_class_silence_6": {
+        "background": "classroom",
+        "character": "sea_stare",
+        "next": "day3_morning_class_silence_7"
+    },
+    "day3_morning_class_silence_7": {
+        "background": "classroom",
+        "character": "sea_stare",
+        "next": "day3_morning_class_silence_8"
+    },
+    "day3_morning_class_silence_8": {
+        "background": "classroom",
+        "character": "sea_stare",
+        "next": "day3_morning_class_silence_choice"
+    },
+    "day3_morning_class_silence_choice": {
+        "choices": [
+            {
+                "next": "day3_morning_class_ask_1",
+                "stats": {
+                    "eunsu": {
+                        "affinity": -2
+                    },
+                    "seolhwa": {
+                        "affinity": 2
+                    }
+                }
+            },
+            {
+                "next": "day3_morning_class_sea_1",
+                "stats": {
+                    "sea": {
+                        "affinity": 3
+                    }
+                }
+            },
+            {
+                "next": "day3_morning_class_book_1",
+                "stats": {
+                    "eunsu": {
+                        "affinity": 2
+                    }
+                }
+            }
+        ]
+    },
+    "day3_morning_class_ask_1": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_ask_2"
+    },
+    "day3_morning_class_ask_2": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_ask_3"
+    },
+    "day3_morning_class_ask_3": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_ask_4"
+    },
+    "day3_morning_class_ask_4": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_ask_5"
+    },
+    "day3_morning_class_ask_5": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_ask_6"
+    },
+    "day3_morning_class_ask_6": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_ask_7",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle07_seolhwa",
+                "duration": 450
+            }
+        }
+    },
+    "day3_morning_class_ask_7": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_ask_8"
+    },
+    "day3_morning_class_ask_8": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_ask_9",
+        "branches": [
+            {
+                "condition": "questioned_sea",
+                "next": "day3_history_callback_12"
+            }
+        ]
+    },
+    "day3_morning_class_ask_9": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_resume_1"
+    },
+    "day3_morning_class_sea_1": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_sea_2",
+        "glitch": {
+            "expressionFlash": "assets/images/characters/sea_yandere.webp",
+            "flashDuration": 150
+        }
+    },
+    "day3_morning_class_sea_2": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_sea_3"
+    },
+    "day3_morning_class_sea_3": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_sea_4"
+    },
+    "day3_morning_class_sea_4": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_sea_5"
+    },
+    "day3_morning_class_sea_5": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_sea_6"
+    },
+    "day3_morning_class_sea_6": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_sea_7",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle12_yuna",
+                "duration": 450
+            }
+        }
+    },
+    "day3_morning_class_sea_7": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_sea_8"
+    },
+    "day3_morning_class_sea_8": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_sea_9",
+        "branches": [
+            {
+                "condition": "tested_left_grip",
+                "next": "day3_history_callback_13"
+            }
+        ]
+    },
+    "day3_morning_class_sea_9": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_resume_1"
+    },
+    "day3_morning_class_book_1": {
+        "character": "sea_normal",
+        "next": "day3_morning_class_book_2"
+    },
+    "day3_morning_class_book_2": {
+        "character": "sea_normal",
+        "next": "day3_morning_class_book_3"
+    },
+    "day3_morning_class_book_3": {
+        "character": "sea_normal",
+        "next": "day3_morning_class_book_4"
+    },
+    "day3_morning_class_book_4": {
+        "character": "sea_normal",
+        "next": "day3_morning_class_book_5"
+    },
+    "day3_morning_class_book_5": {
+        "character": "sea_normal",
+        "next": "day3_morning_class_book_6",
+        "branches": [
+            {
+                "condition": "found_washed_note",
+                "next": "day3_history_callback_14"
+            }
+        ]
+    },
+    "day3_morning_class_book_6": {
+        "character": "sea_normal",
+        "next": "day3_morning_class_book_7"
+    },
+    "day3_morning_class_book_7": {
+        "character": "sea_normal",
+        "next": "day3_morning_class_resume_1"
+    },
+    "day3_morning_class_resume_1": {
+        "character": "eunsu_normal",
+        "next": "day3_morning_class_resume_2"
+    },
+    "day3_morning_class_resume_2": {
+        "character": "eunsu_normal",
+        "next": "day3_morning_class_resume_3"
+    },
+    "day3_morning_class_resume_3": {
+        "character": "eunsu_normal",
+        "next": "day3_morning_class_resume_4"
+    },
+    "day3_morning_class_resume_4": {
+        "character": "eunsu_normal",
+        "next": "day3_morning_classroom_4"
+    },
+    "day3_history_callback_10": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_4"
+    },
+    "day3_history_callback_11": {
+        "character": null,
+        "next": "day3_morning_photo_look_detail_5"
+    },
+    "day3_history_callback_12": {
+        "character": "sea_stare",
+        "next": "day3_morning_class_ask_9"
+    },
+    "day3_history_callback_13": {
+        "character": "sea_smile",
+        "next": "day3_morning_class_sea_9"
+    },
+    "day3_history_callback_14": {
+        "character": "sea_normal",
+        "next": "day3_morning_class_book_6"
+    },
+    "day3_expansion_action_4_a": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_7"
+    },
+    "day3_expansion_action_4_b": {
+        "character": null,
+        "next": "day3_morning_photo_back_detail_7"
+    },
+    "day3_expansion_action_5_a": {
+        "character": null,
+        "next": "day3_morning_photo_look_detail_7"
+    },
+    "day3_expansion_action_5_b": {
+        "character": null,
+        "next": "day3_morning_photo_look_detail_7"
     }
 });

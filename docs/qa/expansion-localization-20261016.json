@@ -1,0 +1,2616 @@
+{
+  "date": "2026-10-16",
+  "reviewedDialogueRows": 242,
+  "englishCorrectionCount": 156,
+  "scope": "Speaker, addressee, tense, left-hand clues, medicine versus tea, identity versus seniority, imperatives and proper names",
+  "review": [
+    {
+      "id": "day1_night_riin_msg_2",
+      "file": "day1_night.json",
+      "speaker": "riin",
+      "ko": "오늘 차 향은 괜찮았어? 처음 마시는 거면 조금 낯설 수도 있어서.",
+      "en": "Did the tea smell good today? If it's your first time drinking it, it might be a little unfamiliar.",
+      "reviewedEnglish": "Was the tea's scent all right today? It can seem a little strange the first time.",
+      "finalEnglish": "Was the tea's scent all right today? It can seem a little strange the first time.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day1_night_riin_msg_4",
+      "file": "day1_night.json",
+      "speaker": "riin",
+      "ko": "첫날에 이름 외우랴 교실 찾으랴 바빴지. 지금은 좀 누워 있어?",
+      "en": "On the first day, I was busy trying to remember my name and find my classroom. Are you lying down now?",
+      "reviewedEnglish": "You had a busy first day, learning names and finding classrooms. Have you had a chance to lie down?",
+      "finalEnglish": "You had a busy first day, learning names and finding classrooms. Have you had a chance to lie down?",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day1_night_riin_msg_6",
+      "file": "day1_night.json",
+      "speaker": "riin",
+      "ko": "잠 안 오면 내일 점심에 또 들러. 이번엔 네가 마실 것 골라도 돼.",
+      "en": "If you can't sleep, stop by again tomorrow for lunch. You can choose what to drink this time.",
+      "reviewedEnglish": "If you have trouble sleeping, drop by again at lunch tomorrow. You can pick your drink this time.",
+      "finalEnglish": "If you have trouble sleeping, drop by again at lunch tomorrow. You can pick your drink this time.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day1_night_riin_msg_thanks_1",
+      "file": "day1_night.json",
+      "speaker": "riin",
+      "ko": "그럼 컵은 내일 천천히 가져와. 잘 자.",
+      "en": "Then, bring the cup slowly tomorrow. good night.",
+      "reviewedEnglish": "You can bring the cup back tomorrow. No hurry. Good night.",
+      "finalEnglish": "You can bring the cup back tomorrow. No hurry. Good night.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day1_night_riin_msg_pick_1",
+      "file": "day1_night.json",
+      "speaker": "riin",
+      "ko": "좋아. 진한 건 네가 골라도 내가 한 번 확인할 거야.",
+      "en": "good. Even if you choose the dark one, I will check it.",
+      "reviewedEnglish": "All right. I'll still check anything strong, even if you pick it yourself.",
+      "finalEnglish": "All right. I'll still check anything strong, even if you pick it yourself.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day1_night_yuna_msg_2",
+      "file": "day1_night.json",
+      "speaker": "yuna",
+      "ko": "오늘 구관 쪽은 가지 마. 밤에는 순찰 돌아.",
+      "en": "Don’t go to the old building today. Patrolling at night.",
+      "reviewedEnglish": "Don't go near the old building tonight. There are patrols after dark.",
+      "finalEnglish": "Don't go near the old building tonight. There are patrols after dark.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day1_night_yuna_msg_4",
+      "file": "day1_night.json",
+      "speaker": "yuna",
+      "ko": "그리고 사진, 잃어버리지 마. 접어서 주머니에 넣지는 말고.",
+      "en": "And the photos, don't lose them. Do not fold it and put it in your pocket.",
+      "reviewedEnglish": "And don't lose that photo. Don't fold it up and shove it in your pocket, either.",
+      "finalEnglish": "And don't lose that photo. Don't fold it up and shove it in your pocket, either.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day1_night_yuna_msg_6",
+      "file": "day1_night.json",
+      "speaker": "yuna",
+      "ko": "거기 가는 길 물어보면 애들이 장난으로 다른 데 알려 줘. 낮에 나한테 물어봐.",
+      "en": "If you ask the way to get there, the kids jokingly tell you somewhere else. Ask me during the day.",
+      "reviewedEnglish": "Ask the others for directions and they'll send you the wrong way for a laugh. Ask me during the day.",
+      "finalEnglish": "Ask the others for directions and they'll send you the wrong way for a laugh. Ask me during the day.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day1_night_yuna_msg_ask_1",
+      "file": "day1_night.json",
+      "speaker": "yuna",
+      "ko": "응. 점심 먹고 사진부에 있으면 돼.",
+      "en": "huh. After lunch, you can stay in the photography club.",
+      "reviewedEnglish": "Yeah. Just come to the photography club after lunch.",
+      "finalEnglish": "Yeah. Just come to the photography club after lunch.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day1_night_yuna_msg_time_1",
+      "file": "day1_night.json",
+      "speaker": "yuna",
+      "ko": "몰라. 오늘은 그냥 자. 나도 이제 끌 거야.",
+      "en": "I don't know. Just sleep today. I'm going to turn it off now too.",
+      "reviewedEnglish": "No idea. Just get some sleep tonight. I'm switching mine off too.",
+      "finalEnglish": "No idea. Just get some sleep tonight. I'm switching mine off too.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day1_night_eunsu_msg_2",
+      "file": "day1_night.json",
+      "speaker": "eunsu",
+      "ko": "첫날 어땠어요? 교실 찾느라 많이 걸었죠.",
+      "en": "How was your first day? I walked a lot to find the classroom.",
+      "reviewedEnglish": "How was your first day? You did a lot of walking, finding your classroom.",
+      "finalEnglish": "How was your first day? You did a lot of walking, finding your classroom.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day1_night_eunsu_msg_4",
+      "file": "day1_night.json",
+      "speaker": "eunsu",
+      "ko": "내일은 벚꽃이 더 많이 필 거예요. 등교할 때 입구 왼쪽도 한번 봐요.",
+      "en": "More cherry blossoms will bloom tomorrow. When you go to school, look to the left of the entrance.",
+      "reviewedEnglish": "More cherry blossoms will bloom tomorrow. When you go to school, look to the left of the entrance.",
+      "finalEnglish": "More cherry blossoms will bloom tomorrow. When you go to school, look to the left of the entrance.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day1_night_eunsu_msg_6",
+      "file": "day1_night.json",
+      "speaker": "eunsu",
+      "ko": "앱 공지는 내일 읽어도 괜찮아요. 첫날부터 전부 외울 필요 없어요.",
+      "en": "It’s okay to read app notices tomorrow. You don’t have to memorize everything from day one.",
+      "reviewedEnglish": "It’s okay to read app notices tomorrow. You don’t have to memorize everything from day one.",
+      "finalEnglish": "It’s okay to read app notices tomorrow. You don’t have to memorize everything from day one.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day1_night_eunsu_msg_kind_1",
+      "file": "day1_night.json",
+      "speaker": "eunsu",
+      "ko": "네. 내일은 복도에서 만나도 길부터 묻지 않아도 되겠네요. 잘 자요, {name}.",
+      "en": "yes. Even if we meet in the hallway tomorrow, I don’t have to ask for directions first. Sleep well, {name}.",
+      "reviewedEnglish": "Yes. If we meet in the hall tomorrow, you won't have to start by asking the way. Good night, {name}.",
+      "finalEnglish": "Yes. If we meet in the hall tomorrow, you won't have to start by asking the way. Good night, {name}.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day1_night_eunsu_msg_app_1",
+      "file": "day1_night.json",
+      "speaker": "eunsu",
+      "ko": "그럼요. 안내문 같이 보면서 설명할게요. 지금은 충전만 해 둬요.",
+      "en": "sure. I will explain by looking at the instructions together. Just leave it charging for now.",
+      "reviewedEnglish": "Of course. We'll go through the instructions together. Just keep your phone charged for now.",
+      "finalEnglish": "Of course. We'll go through the instructions together. Just keep your phone charged for now.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day2_morning_pen_2",
+      "file": "day2_morning.json",
+      "speaker": "sea",
+      "ko": "어제 필통 안 가져왔다며. 오늘도 빌리면 내 볼펜이 다 네 자리로 갈 것 같아서.",
+      "en": "He said he didn't bring his pencil case yesterday. If I borrow it again today, I think all my pens will end up in your place.",
+      "reviewedEnglish": "You said you forgot your pencil case yesterday. Keep borrowing mine and all my pens will end up at your desk.",
+      "finalEnglish": "You said you forgot your pencil case yesterday. Keep borrowing mine and all my pens will end up at your desk.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day2_morning_pen_6",
+      "file": "day2_morning.json",
+      "speaker": "sea",
+      "ko": "안 나오면 다른 걸 써. 그건 매장에서 시험해 본 거야.",
+      "en": "If it doesn't come out, use something else. That was tested in the store.",
+      "reviewedEnglish": "Use another one if the ink won't flow. I tried that one out in the shop.",
+      "finalEnglish": "Use another one if the ink won't flow. I tried that one out in the shop.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day2_morning_pen_left_3",
+      "file": "day2_morning.json",
+      "speaker": "sea",
+      "ko": "왼손으로도 써? 몰랐네.",
+      "en": "Do you use your left hand too? I didn't know.",
+      "reviewedEnglish": "You can write with your left hand too? I didn't know.",
+      "finalEnglish": "You can write with your left hand too? I didn't know.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day2_morning_pen_tease_2",
+      "file": "day2_morning.json",
+      "speaker": "sea",
+      "ko": "응. 어제 문구점에서 제일 좋은 걸로 골랐어. 영수증도 보여 줘?",
+      "en": "huh. I picked the best one at the stationery store yesterday. Can you show me the receipt too?",
+      "reviewedEnglish": "Yeah. I picked the best set in the stationery shop yesterday. Want to see the receipt?",
+      "finalEnglish": "Yeah. I picked the best set in the stationery shop yesterday. Want to see the receipt?",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day2_morning_pen_right_2",
+      "file": "day2_morning.json",
+      "speaker": "sea",
+      "ko": "그렇게 잡으면 편해? 불편하면 문구점 같이 가서 바꾸자.",
+      "en": "Is it comfortable to hold it like that? If it's inconvenient, let's go to a stationery store and change it.",
+      "reviewedEnglish": "Is that grip comfortable? If it isn't, we can go to the shop and exchange it.",
+      "finalEnglish": "Is that grip comfortable? If it isn't, we can go to the shop and exchange it.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day2_morning_pen_yuna_2",
+      "file": "day2_morning.json",
+      "speaker": "yuna",
+      "ko": "새 필통이네. 세아가 줬어?",
+      "en": "It's a new pencil case. Sea gave it to you?",
+      "reviewedEnglish": "New pencil case. Did Sea give you that?",
+      "finalEnglish": "New pencil case. Did Sea give you that?",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day2_morning_pen_yuna_5",
+      "file": "day2_morning.json",
+      "speaker": "yuna",
+      "ko": "미안. 오래된 거라. 저쪽 고리는 잘 빠져.",
+      "en": "sorry. It's old. The hook over there comes off easily.",
+      "reviewedEnglish": "Sorry. It's old. That clasp comes loose easily.",
+      "finalEnglish": "Sorry. It's old. That clasp comes loose easily.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day2_morning_pen_yuna_8",
+      "file": "day2_morning.json",
+      "speaker": "yuna",
+      "ko": "수업 끝나고 보자. 펜은 잃어버리지 말고.",
+      "en": "See you after class. Don't lose your pen.",
+      "reviewedEnglish": "See you after class. Don't lose your pen.",
+      "finalEnglish": "See you after class. Don't lose your pen.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day2_morning_pen_eunsu_2",
+      "file": "day2_morning.json",
+      "speaker": "eunsu",
+      "ko": "벌써 책상 정리 끝났어요? 어제는 종 치고도 가방을 붙잡고 있더니.",
+      "en": "Have you finished organizing your desk already? Yesterday, I held on to my bag even after the bell rang.",
+      "reviewedEnglish": "Your desk is tidy already? Yesterday you were still digging through your bag after the bell.",
+      "finalEnglish": "Your desk is tidy already? Yesterday you were still digging through your bag after the bell.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day2_morning_pen_eunsu_4",
+      "file": "day2_morning.json",
+      "speaker": "eunsu",
+      "ko": "고마워요. 왼손도 잘 쓰네요.",
+      "en": "thank you. I also use my left hand well.",
+      "reviewedEnglish": "Thank you. You're good with your left hand too.",
+      "finalEnglish": "Thank you. You're good with your left hand too.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day2_morning_pen_eunsu_6",
+      "file": "day2_morning.json",
+      "speaker": "eunsu",
+      "ko": "새 펜이면 이름 붙여 둬요. 같은 걸 쓰는 학생이 많아서 헷갈려요.",
+      "en": "If it's a new pen, give it a name. It's confusing because there are many students using the same thing.",
+      "reviewedEnglish": "Put your name on the new pen. Lots of students have the same one, and they get mixed up.",
+      "finalEnglish": "Put your name on the new pen. Lots of students have the same one, and they get mixed up.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_after_riin_closeness_high_2",
+      "file": "day3_afterschool.json",
+      "speaker": "riin",
+      "ko": "오늘 건 조금만 마셔. 남겨도 돼.",
+      "en": "Drink just a little bit today. You can leave it.",
+      "reviewedEnglish": "Only drink a little of today's tea. You can leave the rest.",
+      "finalEnglish": "Only drink a little of today's tea. You can leave the rest.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_after_riin_closeness_high_4",
+      "file": "day3_afterschool.json",
+      "speaker": "me",
+      "ko": "남기면 기록에 적는 거 아니에요?",
+      "en": "If you leave it, isn’t it written down in your records?",
+      "reviewedEnglish": "Won't you put it in my record if I leave some?",
+      "finalEnglish": "Won't you put it in my record if I leave some?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_after_riin_closeness_high_5",
+      "file": "day3_afterschool.json",
+      "speaker": "riin",
+      "ko": "적는 건 내 일이야. 네가 거기까지 걱정할 필요 없어.",
+      "en": "Writing it down is my job. You don't have to worry about that.",
+      "reviewedEnglish": "Writing it down is my job. You don't have to worry about that.",
+      "finalEnglish": "Writing it down is my job. You don't have to worry about that.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_after_riin_closeness_high_7",
+      "file": "day3_afterschool.json",
+      "speaker": "riin",
+      "ko": "낮에 손 떠는 건 어때. 아침보다 나아졌어?",
+      "en": "How about shaking your hands during the day? Is it better than in the morning?",
+      "reviewedEnglish": "How's that shaking in your hands? Better than this morning?",
+      "finalEnglish": "How's that shaking in your hands? Better than this morning?",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_after_riin_closeness_high_9",
+      "file": "day3_afterschool.json",
+      "speaker": "riin",
+      "ko": "봐도 돼? 싫으면 말로만 해도 되고.",
+      "en": "Can I see it? If you don't like it, you can just say it.",
+      "reviewedEnglish": "Can I take a look? If you'd rather not, just tell me about it.",
+      "finalEnglish": "Can I take a look? If you'd rather not, just tell me about it.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_after_riin_closeness_high_11",
+      "file": "day3_afterschool.json",
+      "speaker": "riin",
+      "ko": "오늘 점심은 먹었지. 밥 먹은 사람한테 차를 너무 진하게 줘도 안 돼.",
+      "en": "I ate lunch today. You should not give tea that is too strong to someone who has just eaten.",
+      "reviewedEnglish": "You had lunch today, didn't you? I shouldn't make the tea too strong after you've eaten.",
+      "finalEnglish": "You had lunch today, didn't you? I shouldn't make the tea too strong after you've eaten.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_after_riin_closeness_high_14",
+      "file": "day3_afterschool.json",
+      "speaker": "riin",
+      "ko": "여기 와서 차 마셨다는 말은 해도 돼. 내가 남기라고 했다는 말은 하지 말고.",
+      "en": "You can say that you came here and had tea. Don't say that I told you to stay.",
+      "reviewedEnglish": "You can say you came here for tea. Just don't say I told you to leave some.",
+      "finalEnglish": "You can say you came here for tea. Just don't say I told you to leave some.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_after_riin_closeness_low_2",
+      "file": "day3_afterschool.json",
+      "speaker": "riin",
+      "ko": "불편한 데 있으면 담임 선생님한테 먼저 말해. 전달받고 볼게.",
+      "en": "If you are in an uncomfortable place, tell your homeroom teacher first. I will receive it and see.",
+      "reviewedEnglish": "If anything's bothering you, tell your homeroom teacher first. I'll see you once it's been passed on.",
+      "finalEnglish": "If anything's bothering you, tell your homeroom teacher first. I'll see you once it's been passed on.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_after_riin_closeness_low_5",
+      "file": "day3_afterschool.json",
+      "speaker": "riin",
+      "ko": "오늘은 간단히 확인만 할게. 늦게까지 있으면 수업 빠진 걸로 돼.",
+      "en": "I'll just check it briefly today. If you stay up late, you are considered to have missed class.",
+      "reviewedEnglish": "Just a quick check today. Stay too long and they'll count you absent from class.",
+      "finalEnglish": "Just a quick check today. Stay too long and they'll count you absent from class.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_after_sea_closeness_high_2",
+      "file": "day3_afterschool.json",
+      "speaker": "sea",
+      "ko": "내가 너한테 너무 많이 물어봤어?",
+      "en": "Have I asked you too much?",
+      "reviewedEnglish": "Have I asked you too much?",
+      "finalEnglish": "Have I asked you too much?",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_after_sea_closeness_high_4",
+      "file": "day3_afterschool.json",
+      "speaker": "me",
+      "ko": "안 물어봐도 아는 것처럼 말할 때가 있어.",
+      "en": "There are times when I act like I know something without being asked.",
+      "reviewedEnglish": "Sometimes you talk like you already know, without asking me.",
+      "finalEnglish": "Sometimes you talk like you already know, without asking me.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_after_sea_closeness_high_6",
+      "file": "day3_afterschool.json",
+      "speaker": "sea",
+      "ko": "틀리는 건 싫어서. 네가 싫어하는 걸 또 주기는 싫잖아.",
+      "en": "Because I don’t like being wrong. I don't want to give you something you don't like again.",
+      "reviewedEnglish": "I hate getting it wrong. I don't want to give you something you dislike again.",
+      "finalEnglish": "I hate getting it wrong. I don't want to give you something you dislike again.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_after_sea_closeness_high_7",
+      "file": "day3_afterschool.json",
+      "speaker": "me",
+      "ko": "또?",
+      "en": "also?",
+      "reviewedEnglish": "Again?",
+      "finalEnglish": "Again?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_after_sea_closeness_high_8",
+      "file": "day3_afterschool.json",
+      "speaker": "sea",
+      "ko": "다른 애들한테도 그렇다고. 네가 처음은 아니니까.",
+      "en": "The same goes for other kids. Because you are not the first.",
+      "reviewedEnglish": "I do it for other people too. You're not the first.",
+      "finalEnglish": "I do it for other people too. You're not the first.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_after_sea_closeness_high_10",
+      "file": "day3_afterschool.json",
+      "speaker": "sea",
+      "ko": "네가 뭘 잊어버려도 내가 적어 두면 되잖아. 그건 잘하니까.",
+      "en": "Even if you forget something, I can write it down. Because he's good at it.",
+      "reviewedEnglish": "If you forget something, I can write it down for you. I'm good at that.",
+      "finalEnglish": "If you forget something, I can write it down for you. I'm good at that.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_after_sea_closeness_high_11",
+      "file": "day3_afterschool.json",
+      "speaker": "me",
+      "ko": "내가 적으면 되지.",
+      "en": "I just need to write it down.",
+      "reviewedEnglish": "I can write it down myself.",
+      "finalEnglish": "I can write it down myself.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_after_sea_closeness_high_13",
+      "file": "day3_afterschool.json",
+      "speaker": "sea",
+      "ko": "그럼 나한테도 보여 줘. 혼자 적고 혼자 없어지지 말고.",
+      "en": "Then show it to me too. Write it down alone and don’t disappear alone.",
+      "reviewedEnglish": "Then show me too. Don't write everything down alone and then disappear on your own.",
+      "finalEnglish": "Then show me too. Don't write everything down alone and then disappear on your own.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_after_sea_closeness_high_15",
+      "file": "day3_afterschool.json",
+      "speaker": "sea",
+      "ko": "오늘은 네가 고르면 돼. 내가 맞히려고 안 할게.",
+      "en": "You can choose today. I won't try to guess.",
+      "reviewedEnglish": "You can choose today. I won't try to guess.",
+      "finalEnglish": "You can choose today. I won't try to guess.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_after_sea_closeness_low_2",
+      "file": "day3_afterschool.json",
+      "speaker": "sea",
+      "ko": "어디 갈 건지만 말해. 선생님이 물어보면 나도 대답해야 해.",
+      "en": "Just tell me where you're going. When the teacher asks, I have to answer too.",
+      "reviewedEnglish": "Just tell me where you're going. When the teacher asks, I have to answer too.",
+      "finalEnglish": "Just tell me where you're going. When the teacher asks, I have to answer too.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_after_sea_closeness_low_3",
+      "file": "day3_afterschool.json",
+      "speaker": "me",
+      "ko": "내가 직접 말씀드릴게.",
+      "en": "I'll tell you directly.",
+      "reviewedEnglish": "I'll tell the teacher myself.",
+      "finalEnglish": "I'll tell the teacher myself.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_after_sea_closeness_low_4",
+      "file": "day3_afterschool.json",
+      "speaker": "sea",
+      "ko": "응. 그러면 내가 모른다고 해도 섭섭해하지 마.",
+      "en": "huh. Then don’t be upset if I say I don’t know.",
+      "reviewedEnglish": "Okay. Then don't be upset if I say I don't know.",
+      "finalEnglish": "Okay. Then don't be upset if I say I don't know.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_high_2",
+      "file": "day3_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "복도에서 기다렸어요? 문 열려 있으면 그냥 들어와도 되는데.",
+      "en": "Did you wait in the hallway? If the door is open, you can just come in.",
+      "reviewedEnglish": "Did you wait in the hallway? If the door is open, you can just come in.",
+      "finalEnglish": "Did you wait in the hallway? If the door is open, you can just come in.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_high_3",
+      "file": "day3_afterschool.json",
+      "speaker": "me",
+      "ko": "계속 쓰고 계셔서요.",
+      "en": "You keep writing.",
+      "reviewedEnglish": "You were still writing.",
+      "finalEnglish": "You were still writing.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_high_5",
+      "file": "day3_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "잠깐 앉아요. 어디 아픈 데는 없죠?",
+      "en": "Sit down for a moment. There's no pain anywhere, right?",
+      "reviewedEnglish": "Have a seat for a moment. You're not feeling ill, are you?",
+      "finalEnglish": "Have a seat for a moment. You're not feeling ill, are you?",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_high_7",
+      "file": "day3_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "이번에는 학기 끝날 때까지 내 반에 있었으면 좋겠어요.",
+      "en": "This time, I want you to stay in my class until the end of the semester.",
+      "reviewedEnglish": "This time, I want you to stay in my class until the end of the semester.",
+      "finalEnglish": "This time, I want you to stay in my class until the end of the semester.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_high_9",
+      "file": "day3_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "학교 옮기는 학생들을 많이 봐서 그래요. 보내는 쪽은 늘 준비가 안 돼요.",
+      "en": "That's because I see a lot of students changing schools. The sender is always unprepared.",
+      "reviewedEnglish": "I've seen so many students transfer away. The person saying goodbye is never ready.",
+      "finalEnglish": "I've seen so many students transfer away. The person saying goodbye is never ready.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_high_10",
+      "file": "day3_afterschool.json",
+      "speaker": "me",
+      "ko": "아프면 다른 반으로 가요?",
+      "en": "If I get sick, do I go to another class?",
+      "reviewedEnglish": "If I get sick, do I go to another class?",
+      "finalEnglish": "If I get sick, do I go to another class?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_high_11",
+      "file": "day3_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "그런 말은 누가 했어요?",
+      "en": "Who said that?",
+      "reviewedEnglish": "Who said that?",
+      "finalEnglish": "Who said that?",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_high_13",
+      "file": "day3_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "아니에요. 아프면 보건실에 가고 돌아오면 여기에 앉으면 돼요.",
+      "en": "no. If you get sick, you can go to the health room and sit here when you come back.",
+      "reviewedEnglish": "No. If you're ill, you go to the nurse's office. When you come back, you sit right here.",
+      "finalEnglish": "No. If you're ill, you go to the nurse's office. When you come back, you sit right here.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_high_15",
+      "file": "day3_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "끝까지 있어 달라는 말은 부담스럽겠네요. 오늘 하교할 때 인사만 하고 가요.",
+      "en": "It must be burdensome to ask you to stay till the end. When I leave school today, I just say hello.",
+      "reviewedEnglish": "Asking you to stay until the end must sound like a lot. Just come and say goodbye before you leave today.",
+      "finalEnglish": "Asking you to stay until the end must sound like a lot. Just come and say goodbye before you leave today.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_low_2",
+      "file": "day3_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "용건부터 말해 줄래요? 다음 상담이 있어서요.",
+      "en": "Could you tell me the business first? I have a next consultation.",
+      "reviewedEnglish": "Could you tell me what you need first? I have another appointment.",
+      "finalEnglish": "Could you tell me what you need first? I have another appointment.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_after_eunsu_closeness_low_5",
+      "file": "day3_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "확인했어요. 교실에 돌아가 있어요. 필요하면 제가 부를게요.",
+      "en": "Confirmed. I'm back in class. I'll call you if necessary.",
+      "reviewedEnglish": "All right. Go back to class. I'll call you if I need you.",
+      "finalEnglish": "All right. Go back to class. I'll call you if I need you.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_morning_class_silence_5",
+      "file": "day3_morning.json",
+      "speaker": "sea",
+      "ko": "왔네. 네 책은 내가 꺼내 놨어.",
+      "en": "You came. I took out your book.",
+      "reviewedEnglish": "There you are. I got your books out for you.",
+      "finalEnglish": "There you are. I got your books out for you.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_morning_class_ask_2",
+      "file": "day3_morning.json",
+      "speaker": "unknown",
+      "ko": "아무 얘기도 안 했어. 수업 준비 중이었어.",
+      "en": "I didn't say anything. I was preparing for class.",
+      "reviewedEnglish": "I didn't say anything. I was preparing for class.",
+      "finalEnglish": "I didn't say anything. I was preparing for class.",
+      "finalSpeaker": "unknown"
+    },
+    {
+      "id": "day3_morning_class_ask_4",
+      "file": "day3_morning.json",
+      "speaker": "unknown",
+      "ko": "아무 얘기도 안 했어. 수업 준비 중이었어.",
+      "en": "I didn't say anything. I was preparing for class.",
+      "reviewedEnglish": "I didn't say anything. I was preparing for class.",
+      "finalEnglish": "I didn't say anything. I was preparing for class.",
+      "finalSpeaker": "unknown"
+    },
+    {
+      "id": "day3_morning_class_ask_6",
+      "file": "day3_morning.json",
+      "speaker": "unknown",
+      "ko": "이름은 출석 부를 때 말하면 돼.",
+      "en": "You can say your name when taking attendance.",
+      "reviewedEnglish": "You can say your name when they take attendance.",
+      "finalEnglish": "You can say your name when they take attendance.",
+      "finalSpeaker": "unknown"
+    },
+    {
+      "id": "day3_morning_class_ask_8",
+      "file": "day3_morning.json",
+      "speaker": "sea",
+      "ko": "쟤 아침에 원래 말 없어. 너부터 책 펴. 오늘 검사한대.",
+      "en": "He usually doesn't say anything in the morning. Open your book first. They said they were inspecting today.",
+      "reviewedEnglish": "He's always quiet in the morning. Open your book. They're checking them today.",
+      "finalEnglish": "He's always quiet in the morning. Open your book. They're checking them today.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_morning_class_sea_2",
+      "file": "day3_morning.json",
+      "speaker": "sea",
+      "ko": "왜. 얼굴에 뭐 묻었어?",
+      "en": "why. What's on your face?",
+      "reviewedEnglish": "What? Is there something on my face?",
+      "finalEnglish": "What? Is there something on my face?",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_morning_class_sea_5",
+      "file": "day3_morning.json",
+      "speaker": "sea",
+      "ko": "여기 두면 팔 안 걸려. 너 어제도 떨어뜨릴 뻔했잖아.",
+      "en": "If you leave it here, your arm won't get caught. You almost dropped it yesterday too.",
+      "reviewedEnglish": "Your arm won't catch it here. You nearly knocked it off yesterday too.",
+      "finalEnglish": "Your arm won't catch it here. You nearly knocked it off yesterday too.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_morning_class_sea_7",
+      "file": "day3_morning.json",
+      "speaker": "sea",
+      "ko": "빌려 준 펜 얘기야. 기억 안 나?",
+      "en": "It's about the pen I lent you. Don't you remember?",
+      "reviewedEnglish": "I mean the pen I lent you. Don't you remember?",
+      "finalEnglish": "I mean the pen I lent you. Don't you remember?",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_morning_class_book_3",
+      "file": "day3_morning.json",
+      "speaker": "sea",
+      "ko": "페이지 틀렸어. 다음 단원이야.",
+      "en": "Wrong page. This is the next section.",
+      "reviewedEnglish": "Wrong page. We're on the next chapter.",
+      "finalEnglish": "Wrong page. We're on the next chapter.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_morning_class_resume_3",
+      "file": "day3_morning.json",
+      "speaker": "eunsu",
+      "ko": "수업 시작할게요. 오늘은 적어 둔 걸 지우지 말고 그대로 두세요.",
+      "en": "Let's start class. Today, don't erase what you wrote down, just leave it as is.",
+      "reviewedEnglish": "Let's start class. Today, don't erase what you wrote down, just leave it as is.",
+      "finalEnglish": "Let's start class. Today, don't erase what you wrote down, just leave it as is.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_night_pressure_seolhwa_3",
+      "file": "day3_night.json",
+      "speaker": "seolhwa",
+      "ko": "오늘 들은 건 적어 둬. 아침에 같은 말을 들어도 이번 게 먼저야.",
+      "en": "Write down what you heard today. Even if I hear the same thing in the morning, this comes first.",
+      "reviewedEnglish": "Write down what you heard today. If you hear it again in the morning, this came first.",
+      "finalEnglish": "Write down what you heard today. If you hear it again in the morning, this came first.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day3_night_pressure_seolhwa_5",
+      "file": "day3_night.json",
+      "speaker": "seolhwa",
+      "ko": "누가 먼저 전화했는지도. 목소리 비슷하다고 같은 사람은 아니야.",
+      "en": "Who called first? Just because the voices are similar does not mean they are the same person.",
+      "reviewedEnglish": "And who called first. Similar voices don't mean it's the same person.",
+      "finalEnglish": "And who called first. Similar voices don't mean it's the same person.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day3_night_pressure_sea_2",
+      "file": "day3_night.json",
+      "speaker": "sea",
+      "ko": "안 자지. 불 켜져 있어.",
+      "en": "I'm not sleeping. The light is on.",
+      "reviewedEnglish": "You're still awake. Your light's on.",
+      "finalEnglish": "You're still awake. Your light's on.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_night_pressure_sea_4",
+      "file": "day3_night.json",
+      "speaker": "sea",
+      "ko": "문은 안 열어도 돼. 그냥 목소리만 들으려고.",
+      "en": "You don't have to open the door. Just to hear your voice.",
+      "reviewedEnglish": "You don't have to open the door. I only wanted to hear your voice.",
+      "finalEnglish": "You don't have to open the door. I only wanted to hear your voice.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_night_pressure_sea_6",
+      "file": "day3_night.json",
+      "speaker": "sea",
+      "ko": "아침에 먹어. 계란은 완전히 익혔어. 너 덜 익은 거 안 먹잖아.",
+      "en": "Eat it for breakfast. The eggs are fully cooked. You don't eat undercooked food.",
+      "reviewedEnglish": "Eat it for breakfast. The eggs are fully cooked. You don't eat undercooked food.",
+      "finalEnglish": "Eat it for breakfast. The eggs are fully cooked. You don't eat undercooked food.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_night_pressure_sea_8",
+      "file": "day3_night.json",
+      "speaker": "sea",
+      "ko": "이제 창문 닫아. 바람 들어가.",
+      "en": "Now close the window. The wind gets in.",
+      "reviewedEnglish": "Now close the window. The wind gets in.",
+      "finalEnglish": "Now close the window. The wind gets in.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day3_night_pressure_sea_10",
+      "file": "day3_night.json",
+      "speaker": "me",
+      "ko": "지금은 돌아가.",
+      "en": "Go back now.",
+      "reviewedEnglish": "Go back now.",
+      "finalEnglish": "Go back now.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_night_pressure_eunsu_2",
+      "file": "day3_night.json",
+      "speaker": "eunsu",
+      "ko": "문 잠갔어요? 오늘은 누가 와도 열지 마요.",
+      "en": "Did you lock the door? No matter who comes today, don’t open it.",
+      "reviewedEnglish": "Did you lock the door? No matter who comes today, don’t open it.",
+      "finalEnglish": "Did you lock the door? No matter who comes today, don’t open it.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_night_pressure_eunsu_3",
+      "file": "day3_night.json",
+      "speaker": "me",
+      "ko": "누가 오는데요?",
+      "en": "Who is coming?",
+      "reviewedEnglish": "Who is coming?",
+      "finalEnglish": "Who is coming?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_night_pressure_eunsu_5",
+      "file": "day3_night.json",
+      "speaker": "eunsu",
+      "ko": "내가 이름을 말하기 전에는 안 열면 돼요. 목소리만 듣고 열지 말고요.",
+      "en": "Don’t open it until I say my name. Don't just listen to the voice and open it.",
+      "reviewedEnglish": "Don't open it until I've said my name. Recognizing a voice isn't enough.",
+      "finalEnglish": "Don't open it until I've said my name. Recognizing a voice isn't enough.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_night_pressure_eunsu_7",
+      "file": "day3_night.json",
+      "speaker": "me",
+      "ko": "지금 밖에 선생님 계세요?",
+      "en": "Is there a teacher outside now?",
+      "reviewedEnglish": "Are you outside my door right now, Ms. Eunsu?",
+      "finalEnglish": "Are you outside my door right now, Ms. Eunsu?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_night_pressure_eunsu_8",
+      "file": "day3_night.json",
+      "speaker": "eunsu",
+      "ko": "화면 보지 말아요. 앱도 닫고요.",
+      "en": "Don't look at the screen. I also close the app.",
+      "reviewedEnglish": "Don't look at the screen. Close the app too.",
+      "finalEnglish": "Don't look at the screen. Close the app too.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_night_pressure_eunsu_11",
+      "file": "day3_night.json",
+      "speaker": "eunsu",
+      "ko": "아침에 교실에서 봐요. 그때 내가 다시 물어볼게요.",
+      "en": "See you in class in the morning. Then I'll ask again.",
+      "reviewedEnglish": "See you in class in the morning. Then I'll ask again.",
+      "finalEnglish": "See you in class in the morning. Then I'll ask again.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day3_night_pressure_riin_3",
+      "file": "day3_night.json",
+      "speaker": "riin",
+      "ko": "지금 답장하지 마. 내가 먼저 보낸 건 지워.",
+      "en": "Don't reply now. Delete what I sent first.",
+      "reviewedEnglish": "Don't reply now. Delete what I sent first.",
+      "finalEnglish": "Don't reply now. Delete what I sent first.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_night_pressure_riin_5",
+      "file": "day3_night.json",
+      "speaker": "me",
+      "ko": "선생님이 보내신 거 아니에요?",
+      "en": "Didn't the teacher send it to you?",
+      "reviewedEnglish": "Didn't you send that, Ms. Riin?",
+      "finalEnglish": "Didn't you send that, Ms. Riin?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day3_night_pressure_riin_7",
+      "file": "day3_night.json",
+      "speaker": "riin",
+      "ko": "목소리가 커지면 옆방에도 들려. 질문은 내가 할게.",
+      "en": "If your voice gets louder, it can be heard in the next room. I'll ask the question.",
+      "reviewedEnglish": "Raise your voice and they'll hear you next door. I'll ask the questions.",
+      "finalEnglish": "Raise your voice and they'll hear you next door. I'll ask the questions.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_night_pressure_riin_10",
+      "file": "day3_night.json",
+      "speaker": "riin",
+      "ko": "내일은 내가 준 것만 마셔. 누가 같은 거라고 해도 나한테 직접 받아.",
+      "en": "Tomorrow, drink only what I gave you. Even if someone says it's the same, take it directly from me.",
+      "reviewedEnglish": "Tomorrow, drink only what I gave you. Even if someone says it's the same, take it directly from me.",
+      "finalEnglish": "Tomorrow, drink only what I gave you. Even if someone says it's the same, take it directly from me.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day3_night_pressure_yuna_2",
+      "file": "day3_night.json",
+      "speaker": "yuna",
+      "ko": "사진만 받아. 오늘은 전화 안 해.",
+      "en": "Just take the photo. I'm not calling today.",
+      "reviewedEnglish": "Just take the photo. I'm not calling today.",
+      "finalEnglish": "Just take the photo. I'm not calling today.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day3_night_pressure_yuna_4",
+      "file": "day3_night.json",
+      "speaker": "yuna",
+      "ko": "이름 바꾸지 마. 내일 설명할게.",
+      "en": "Don't change your name. I'll explain tomorrow.",
+      "reviewedEnglish": "Don't rename the file. I'll explain tomorrow.",
+      "finalEnglish": "Don't rename the file. I'll explain tomorrow.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_0_2",
+      "file": "day4_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "그거 어디서 났어요?",
+      "en": "Where did you get that from?",
+      "reviewedEnglish": "Where did you get that from?",
+      "finalEnglish": "Where did you get that from?",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_0_3",
+      "file": "day4_afterschool.json",
+      "speaker": "me",
+      "ko": "누가 찍혔는지부터 말씀해 주세요.",
+      "en": "Please tell me who was filmed first.",
+      "reviewedEnglish": "Tell me who's in the photo first.",
+      "finalEnglish": "Tell me who's in the photo first.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_0_5",
+      "file": "day4_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "원본이면 접지 말아요. 나중에 날짜 확인할 때 필요하니까.",
+      "en": "If it's original, don't fold it. You will need it to check the date later.",
+      "reviewedEnglish": "Don't fold it if it's an original. We'll need it to check the date later.",
+      "finalEnglish": "Don't fold it if it's an original. We'll need it to check the date later.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_1_1",
+      "file": "day4_afterschool.json",
+      "speaker": "me",
+      "ko": "그 열쇠로 지하 문도 열리죠?",
+      "en": "The basement door opens with that key, right?",
+      "reviewedEnglish": "The basement door opens with that key, right?",
+      "finalEnglish": "The basement door opens with that key, right?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_1_3",
+      "file": "day4_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "어느 문을 말하는 건지 먼저 말해 줘요.",
+      "en": "Please tell me first which door you are talking about.",
+      "reviewedEnglish": "Please tell me first which door you are talking about.",
+      "finalEnglish": "Please tell me first which door you are talking about.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_1_4",
+      "file": "day4_afterschool.json",
+      "speaker": "me",
+      "ko": "제가 말하면 잠금을 바꾸실 거잖아요.",
+      "en": "If I tell you, you're going to change the lock.",
+      "reviewedEnglish": "If I tell you, you're going to change the lock.",
+      "finalEnglish": "If I tell you, you're going to change the lock.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_1_6",
+      "file": "day4_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "그 문은 안쪽에서 열려요. 그건 바꿀 수 없어요.",
+      "en": "The door opens from the inside. You can't change that.",
+      "reviewedEnglish": "That door opens from the inside. I can't change that.",
+      "finalEnglish": "That door opens from the inside. I can't change that.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_2_1",
+      "file": "day4_afterschool.json",
+      "speaker": "me",
+      "ko": "보건실 약에는 왜 이름이 없어요?",
+      "en": "Why don't the medicines in the public health center have names?",
+      "reviewedEnglish": "Why aren't the medicines in the nurse's office labeled?",
+      "finalEnglish": "Why aren't the medicines in the nurse's office labeled?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_2_3",
+      "file": "day4_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "약 얘기는 리인 선생님한테 물어봐요.",
+      "en": "Ask Dr. Riin about medicine.",
+      "reviewedEnglish": "Ask Ms. Riin about the medicine.",
+      "finalEnglish": "Ask Ms. Riin about the medicine.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_2_4",
+      "file": "day4_afterschool.json",
+      "speaker": "me",
+      "ko": "보내신 사람이 선생님이면 여기서 물어야죠.",
+      "en": "If the person who sent it is a teacher, you should ask here.",
+      "reviewedEnglish": "If you're the one who sent it, I should ask you.",
+      "finalEnglish": "If you're the one who sent it, I should ask you.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_after_eunsu_evidence_2_6",
+      "file": "day4_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "네가 먹은 건 내가 확인할게요. 확인하기 전까지 누가 주는 것도 받지 말아요.",
+      "en": "I'll check what you ate. Don't accept anything anyone gives you until you check it.",
+      "reviewedEnglish": "I'll check what you've taken. Don't accept anything from anyone until I've checked.",
+      "finalEnglish": "I'll check what you've taken. Don't accept anything from anyone until I've checked.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_after_eunsu_followup_0_press_1",
+      "file": "day4_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "여기서 말하는 것과 보고서에 쓰는 건 달라요. 어느 쪽을 원하는지 먼저 정해요.",
+      "en": "What I say here and what I write in the report are different. First decide which one you want.",
+      "reviewedEnglish": "What I say here and what I write in the report are different. First decide which one you want.",
+      "finalEnglish": "What I say here and what I write in the report are different. First decide which one you want.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_after_eunsu_followup_1_press_1",
+      "file": "day4_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "여기서 말하는 것과 보고서에 쓰는 건 달라요. 어느 쪽을 원하는지 먼저 정해요.",
+      "en": "What I say here and what I write in the report are different. First decide which one you want.",
+      "reviewedEnglish": "What I say here and what I write in the report are different. First decide which one you want.",
+      "finalEnglish": "What I say here and what I write in the report are different. First decide which one you want.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_after_eunsu_followup_2_press_1",
+      "file": "day4_afterschool.json",
+      "speaker": "eunsu",
+      "ko": "여기서 말하는 것과 보고서에 쓰는 건 달라요. 어느 쪽을 원하는지 먼저 정해요.",
+      "en": "What I say here and what I write in the report are different. First decide which one you want.",
+      "reviewedEnglish": "What I say here and what I write in the report are different. First decide which one you want.",
+      "finalEnglish": "What I say here and what I write in the report are different. First decide which one you want.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_after_sea_evidence_0_2",
+      "file": "day4_afterschool.json",
+      "speaker": "sea",
+      "ko": "옥상까지 갔어? 거기 난간 손대지 말랬잖아.",
+      "en": "Did you go to the rooftop? I told you not to touch the railing there.",
+      "reviewedEnglish": "Did you go to the rooftop? I told you not to touch the railing there.",
+      "finalEnglish": "Did you go to the rooftop? I told you not to touch the railing there.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_after_sea_evidence_0_3",
+      "file": "day4_afterschool.json",
+      "speaker": "me",
+      "ko": "누가 새긴 건지 알아?",
+      "en": "Do you know who engraved it?",
+      "reviewedEnglish": "Do you know who engraved it?",
+      "finalEnglish": "Do you know who engraved it?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_after_sea_evidence_0_5",
+      "file": "day4_afterschool.json",
+      "speaker": "sea",
+      "ko": "그 이름을 어디서 봤는데. 사진에는 이름 안 나왔잖아.",
+      "en": "Where did you see that name? Your name isn't in the photo.",
+      "reviewedEnglish": "Where did you see that name? There wasn't a name in the photo.",
+      "finalEnglish": "Where did you see that name? There wasn't a name in the photo.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_after_sea_evidence_1_1",
+      "file": "day4_afterschool.json",
+      "speaker": "me",
+      "ko": "첫날 앱 껐던 것도 너한테 알림이 왔어?",
+      "en": "Did you get a notification when you turned off the app on the first day?",
+      "reviewedEnglish": "Did you get an alert when I shut down the app on the first day too?",
+      "finalEnglish": "Did you get an alert when I shut down the app on the first day too?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_after_sea_evidence_1_3",
+      "file": "day4_afterschool.json",
+      "speaker": "sea",
+      "ko": "배터리 꺼진 줄 알았어. 그래서 확인했어.",
+      "en": "I thought the battery was dead. So I checked.",
+      "reviewedEnglish": "I thought the battery was dead. So I checked.",
+      "finalEnglish": "I thought the battery was dead. So I checked.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_after_sea_evidence_1_4",
+      "file": "day4_afterschool.json",
+      "speaker": "me",
+      "ko": "앱만 껐는데 배터리가 왜 나와.",
+      "en": "I just turned off the app, but why does my battery drain?",
+      "reviewedEnglish": "I only closed the app. What's that got to do with the battery?",
+      "finalEnglish": "I only closed the app. What's that got to do with the battery?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_after_sea_evidence_1_6",
+      "file": "day4_afterschool.json",
+      "speaker": "sea",
+      "ko": "네가 끄면 나한테도 물어봐. 왜 못 막았냐고. 나도 답을 해야 하니까.",
+      "en": "If you turn it off, ask me too. Why couldn't I stop it? Because I have to answer too.",
+      "reviewedEnglish": "When you turn it off, they question me too. They ask why I didn't stop you. I have to answer them.",
+      "finalEnglish": "When you turn it off, they question me too. They ask why I didn't stop you. I have to answer them.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_after_sea_followup_0_press_1",
+      "file": "day4_afterschool.json",
+      "speaker": "sea",
+      "ko": "그때는 그렇게 말할 수밖에 없었어. 네가 들은 사람이 나 하나는 아니잖아.",
+      "en": "I had no choice but to say that at that time. I'm not the only one you heard about.",
+      "reviewedEnglish": "That's all I could say then. I'm not the only person you've heard things from.",
+      "finalEnglish": "That's all I could say then. I'm not the only person you've heard things from.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_after_sea_followup_1_press_1",
+      "file": "day4_afterschool.json",
+      "speaker": "sea",
+      "ko": "그때는 그렇게 말할 수밖에 없었어. 네가 들은 사람이 나 하나는 아니잖아.",
+      "en": "I had no choice but to say that at that time. I'm not the only one you heard about.",
+      "reviewedEnglish": "That's all I could say then. I'm not the only person you've heard things from.",
+      "finalEnglish": "That's all I could say then. I'm not the only person you've heard things from.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_lunch_nurse_ask_name",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "그거… 이름이 뭐예요?",
+      "en": "That… what's it called?",
+      "reviewedEnglish": "That… what's it called?",
+      "finalEnglish": "That… what's it called?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_lunch_nurse_ask_name_2",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "영양제. 라벨 읽을 필요 없어. 그냥 누워.",
+      "en": "A supplement. You don't need the label. Just lie down.",
+      "reviewedEnglish": "A supplement. You don't need the label. Just lie down.",
+      "finalEnglish": "A supplement. You don't need the label. Just lie down.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day4_lunch_nurse_ask_yuna",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "유나한테도 그거 주셨어요?",
+      "en": "Did you give Yuna that too?",
+      "reviewedEnglish": "Did you give Yuna that too?",
+      "finalEnglish": "Did you give Yuna that too?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_lunch_nurse_ask_yuna_2",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "…유나 얘기는 내일. 지금은 너 약부터.",
+      "en": "…Yuna can wait until tomorrow. Your dose first.",
+      "reviewedEnglish": "…Yuna can wait until tomorrow. Your dose first.",
+      "finalEnglish": "…Yuna can wait until tomorrow. Your dose first.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day4_lunch_yuna_breath_safe_2",
+      "file": "day4_lunch.json",
+      "speaker": "eunsu",
+      "ko": "문은 닫아 뒀죠? 사람이 있든 없든 확인은 해요.",
+      "en": "You closed the door, right? I check whether there is someone there or not.",
+      "reviewedEnglish": "You shut the door, didn't you? Check it whether anyone's inside or not.",
+      "finalEnglish": "You shut the door, didn't you? Check it whether anyone's inside or not.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_lunch_yuna_breath_fail_2",
+      "file": "day4_lunch.json",
+      "speaker": "eunsu",
+      "ko": "길을 잃으면 사람을 불러야죠. 이 안은 학생이 들어오는 데가 아니에요.",
+      "en": "If you get lost, call someone. This is not a place for students.",
+      "reviewedEnglish": "If you're lost, call for someone. Students aren't allowed in here.",
+      "finalEnglish": "If you're lost, call for someone. Students aren't allowed in here.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_lunch_yuna_breath_fail_4",
+      "file": "day4_lunch.json",
+      "speaker": "eunsu",
+      "ko": "교실로 가요. 점심시간 끝나고 다시 얘기해요.",
+      "en": "Let's go to the classroom. Let's talk again after lunch.",
+      "reviewedEnglish": "Go back to class. We'll talk again after lunch.",
+      "finalEnglish": "Go back to class. We'll talk again after lunch.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day4_lunch_nurse_tray_3",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "손 씻고 와. 밖에서 들어왔잖아.",
+      "en": "Wash your hands and come back. You came in from outside.",
+      "reviewedEnglish": "Wash your hands and come back. You came in from outside.",
+      "finalEnglish": "Wash your hands and come back. You came in from outside.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day4_lunch_nurse_tray_6",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "아침에 먹은 건 있어? 약부터 주지는 않을 거야.",
+      "en": "Have you eaten anything for breakfast? I won't give you medicine first.",
+      "reviewedEnglish": "Have you had anything for breakfast? I'm not giving you medicine before food.",
+      "finalEnglish": "Have you had anything for breakfast? I'm not giving you medicine before food.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day4_lunch_nurse_key_1",
+      "file": "day4_lunch.json",
+      "speaker": "me",
+      "ko": "선생님도 여기서 못 나가는 거죠?",
+      "en": "Teacher, you can’t get out of here too, right?",
+      "reviewedEnglish": "You can't leave this place either, can you?",
+      "finalEnglish": "You can't leave this place either, can you?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_lunch_nurse_key_3",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "그 말, 복도에서는 하지 마.",
+      "en": "Don't say that in the hallway.",
+      "reviewedEnglish": "Don't say that in the hallway.",
+      "finalEnglish": "Don't say that in the hallway.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day4_lunch_nurse_key_6",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "잃어버린 물건은 찾은 사람이 바로 돌려줘야 하는 건 아니야.",
+      "en": "A lost item does not have to be returned immediately to the person who found it.",
+      "reviewedEnglish": "Finding a lost thing doesn't mean you have to hand it back straight away.",
+      "finalEnglish": "Finding a lost thing doesn't mean you have to hand it back straight away.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day4_lunch_nurse_yuna_2",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "나간 시간은 적혀 있지 않아. 내가 안 적었어.",
+      "en": "The time I left is not written down. I didn't write it down.",
+      "reviewedEnglish": "There's no departure time in her record. I didn't write one down.",
+      "finalEnglish": "There's no departure time in her record. I didn't write one down.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day4_lunch_nurse_yuna_4",
+      "file": "day4_lunch.json",
+      "speaker": "riin",
+      "ko": "들어온 기록만 있으면 아직 안 나간 걸로 돼. 그건 알아 둬.",
+      "en": "As long as there is a record of it coming in, it means it hasn't gone out yet. Just know that.",
+      "reviewedEnglish": "If there's only a record of her coming in, officially she hasn't left. Remember that.",
+      "finalEnglish": "If there's only a record of her coming in, officially she hasn't left. Remember that.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day4_lunch_roof_etch_7",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "여기까지 오면 밖이 보이잖아. 그래서 처음엔 다 여기로 와.",
+      "en": "If you come this far, you can see outside. So everyone comes here first.",
+      "reviewedEnglish": "If you come this far, you can see outside. So everyone comes here first.",
+      "finalEnglish": "If you come this far, you can see outside. So everyone comes here first.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_lunch_roof_etch_9",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "나도 그랬어. 담장 너머로 버스만 보면 거기까지 갈 수 있을 줄 알았어.",
+      "en": "So did I. I thought I could get there just by looking at the bus over the fence.",
+      "reviewedEnglish": "I did the same. Seeing the buses beyond the fence made me think I could reach them.",
+      "finalEnglish": "I did the same. Seeing the buses beyond the fence made me think I could reach them.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_lunch_roof_fence_1",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "아래를 봐. 담장 밖에도 길이 하나뿐이야. 버스가 오기 전에 잡혀.",
+      "en": "Look below. There is only one road outside the fence. Caught before the bus arrived.",
+      "reviewedEnglish": "Look down. There's only one road beyond the fence. You'd be caught before a bus arrived.",
+      "finalEnglish": "Look down. There's only one road beyond the fence. You'd be caught before a bus arrived.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_lunch_roof_fence_3",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "낮에 보이는 문이랑 밤에 열리는 문은 달라. 일곱 번째에는 그걸 너무 늦게 알았어.",
+      "en": "The door that appears during the day is different from the door that opens at night. By the seventh time, I realized it too late.",
+      "reviewedEnglish": "The doors you see by day aren't the ones that open at night. I learned that too late in the seventh cycle.",
+      "finalEnglish": "The doors you see by day aren't the ones that open at night. I learned that too late in the seventh cycle.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_lunch_roof_fence_5",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "구관 비상구는 손으로 열 수 있어. 밖에서 잠가도 안쪽 손잡이는 남아 있어.",
+      "en": "The emergency exit in the old building can be opened by hand. Even if it is locked from the outside, the inside handle remains.",
+      "reviewedEnglish": "You can open the old building's emergency exit by hand. Locking it outside doesn't remove the inside handle.",
+      "finalEnglish": "You can open the old building's emergency exit by hand. Locking it outside doesn't remove the inside handle.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_lunch_roof_exit_1",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "처음엔 내가 열었어. 네 손은 서류를 들고 있었고.",
+      "en": "I opened it at first. Your hands were holding documents.",
+      "reviewedEnglish": "I opened it first. Your hands were full of documents.",
+      "finalEnglish": "I opened it first. Your hands were full of documents.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_lunch_roof_exit_3",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "문 앞에 사람이 왔어. 종이 가져온 걸 알고 있었어.",
+      "en": "A person came to the door. I knew you brought the paper.",
+      "reviewedEnglish": "Someone came to the door. They knew we'd brought the papers.",
+      "finalEnglish": "Someone came to the door. They knew we'd brought the papers.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_lunch_roof_exit_5",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "자세한 건 거기 기록에 있어. 내 말만 듣고 다 기억난다고 하지 마.",
+      "en": "Details are in the records there. Don’t tell me you remember everything just by listening to me.",
+      "reviewedEnglish": "Details are in the records there. Don’t tell me you remember everything just by listening to me.",
+      "finalEnglish": "Details are in the records there. Don’t tell me you remember everything just by listening to me.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_lunch_roof_record_1",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "그래. 기억났다고 맞춰 주지 않아도 돼. 종이는 네가 직접 봐.",
+      "en": "okay. You don’t have to guess just because you remember. You look at the paper yourself.",
+      "reviewedEnglish": "Good. You don't have to pretend you remember just to agree with me. Read the papers yourself.",
+      "finalEnglish": "Good. You don't have to pretend you remember just to agree with me. Read the papers yourself.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_lunch_roof_left_1",
+      "file": "day4_lunch.json",
+      "speaker": "seolhwa",
+      "ko": "지하에서 왼쪽. 계단은 세지 말고 손잡이가 안으로 열리는 쪽을 찾아.",
+      "en": "Left in the basement. Don't count the stairs, but look for the side where the handle opens inward.",
+      "reviewedEnglish": "Left, in the basement. Don't count the stairs. Find the door with the handle that opens inward.",
+      "finalEnglish": "Left, in the basement. Don't count the stairs. Find the door with the handle that opens inward.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day4_morning_sea_watch_high_2",
+      "file": "day4_morning.json",
+      "speaker": "sea",
+      "ko": "어젯밤에 잠 못 잤지? 그래프가 계속 흔들렸어.",
+      "en": "You couldn’t sleep last night, right? The graph kept shaking.",
+      "reviewedEnglish": "You couldn’t sleep last night, right? The graph kept shaking.",
+      "finalEnglish": "You couldn’t sleep last night, right? The graph kept shaking.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_morning_sea_watch_high_4",
+      "file": "day4_morning.json",
+      "speaker": "me",
+      "ko": "무슨 그래프.",
+      "en": "What a graph.",
+      "reviewedEnglish": "What graph?",
+      "finalEnglish": "What graph?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_morning_sea_watch_high_6",
+      "file": "day4_morning.json",
+      "speaker": "sea",
+      "ko": "안전 앱. 내가 보호자 연락처로 등록돼 있잖아.",
+      "en": "Safety app. I am registered as the guardian's contact information.",
+      "reviewedEnglish": "The safety app. I'm listed as your guardian contact.",
+      "finalEnglish": "The safety app. I'm listed as your guardian contact.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_morning_sea_watch_high_8",
+      "file": "day4_morning.json",
+      "speaker": "sea",
+      "ko": "처음 왔을 때 네가 모르는 게 많았으니까. 나중에 바꾸면 돼.",
+      "en": "Because there were a lot of things you didn’t know when you first came. You can change it later.",
+      "reviewedEnglish": "Because there were a lot of things you didn’t know when you first came. You can change it later.",
+      "finalEnglish": "Because there were a lot of things you didn’t know when you first came. You can change it later.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_morning_sea_watch_high_11",
+      "file": "day4_morning.json",
+      "speaker": "sea",
+      "ko": "여기서 그러지 말고. 애들 다 보잖아.",
+      "en": "Don't do that here. You see all the kids.",
+      "reviewedEnglish": "Not here. Everyone's watching.",
+      "finalEnglish": "Not here. Everyone's watching.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_morning_sea_watch_low_2",
+      "file": "day4_morning.json",
+      "speaker": "sea",
+      "ko": "기기 연결 끊겼대. 쉬는 시간에 선생님이 보자셔.",
+      "en": "They said the device was disconnected. The teacher said to see you during recess.",
+      "reviewedEnglish": "They say your device disconnected. The teacher wants to see you at break.",
+      "finalEnglish": "They say your device disconnected. The teacher wants to see you at break.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_morning_sea_watch_low_3",
+      "file": "day4_morning.json",
+      "speaker": "me",
+      "ko": "내 휴대폰을 왜 네가 확인해?",
+      "en": "Why are you checking my phone?",
+      "reviewedEnglish": "Why are you checking my phone?",
+      "finalEnglish": "Why are you checking my phone?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day4_morning_sea_watch_low_4",
+      "file": "day4_morning.json",
+      "speaker": "sea",
+      "ko": "내가 확인한 거 아니야. 알림이 나한테도 와.",
+      "en": "I didn't check it. A notification comes to me too.",
+      "reviewedEnglish": "I didn't check it. A notification comes to me too.",
+      "finalEnglish": "I didn't check it. A notification comes to me too.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_morning_sea_watch_remove_1",
+      "file": "day4_morning.json",
+      "speaker": "sea",
+      "ko": "내가 지우면 다른 사람이 들어와. 누구인지 네가 고를 수는 없어.",
+      "en": "If I delete it, someone else comes in. You can't choose who it is.",
+      "reviewedEnglish": "If I remove myself, someone else takes my place. You don't get to choose who.",
+      "finalEnglish": "If I remove myself, someone else takes my place. You don't get to choose who.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_morning_sea_watch_when_1",
+      "file": "day4_morning.json",
+      "speaker": "sea",
+      "ko": "입학 전날. 아니, 서류 넘어온 날. 날짜는 나도 다시 봐야 해.",
+      "en": "The day before admission. No, the day the documents were handed over. I have to look at the date again.",
+      "reviewedEnglish": "The day before admission. No, the day the documents were handed over. I have to look at the date again.",
+      "finalEnglish": "The day before admission. No, the day the documents were handed over. I have to look at the date again.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day4_morning_sea_watch_when_3",
+      "file": "day4_morning.json",
+      "speaker": "me",
+      "ko": "다시 확인하고 말해. 나한테 맞춰서 대답하지 말고.",
+      "en": "Check again and tell me. Don't tailor your answer to me.",
+      "reviewedEnglish": "Check again and tell me. Don't tailor your answer to me.",
+      "finalEnglish": "Check again and tell me. Don't tailor your answer to me.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day5_ending_cage_sea_epilogue_2",
+      "file": "day5_night.json",
+      "speaker": "sea",
+      "ko": "달력은 신경 쓰지 마. 밖에 걸린 것도 틀렸어.",
+      "en": "Don't worry about the calendar. It was also wrong to hang it outside.",
+      "reviewedEnglish": "Don't worry about the calendar. The one outside is wrong too.",
+      "finalEnglish": "Don't worry about the calendar. The one outside is wrong too.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day5_ending_cage_sea_epilogue_5",
+      "file": "day5_night.json",
+      "speaker": "sea",
+      "ko": "내가 닦을게. 너는 손 다치잖아.",
+      "en": "I'll clean it. You hurt your hand.",
+      "reviewedEnglish": "I'll clean it. You might hurt your hand.",
+      "finalEnglish": "I'll clean it. You might hurt your hand.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day5_ending_cage_sea_epilogue_8",
+      "file": "day5_night.json",
+      "speaker": "sea",
+      "ko": "한 조각만 먹어. 그다음에는 안 물어볼게.",
+      "en": "Just eat one piece. I won't ask after that.",
+      "reviewedEnglish": "Just eat one piece. I won't ask after that.",
+      "finalEnglish": "Just eat one piece. I won't ask after that.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day5_ending_cage_sea_window_3",
+      "file": "day5_night.json",
+      "speaker": "sea",
+      "ko": "네 자리는 여기야. 저쪽에는 이름도 안 올렸어.",
+      "en": "Your seat is here. I didn't even post my name over there.",
+      "reviewedEnglish": "Your place is here. I didn't even put your name on their list.",
+      "finalEnglish": "Your place is here. I didn't even put your name on their list.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day5_ending_cage_sea_hand_2",
+      "file": "day5_night.json",
+      "speaker": "sea",
+      "ko": "닫아도 돼?",
+      "en": "Can I close it?",
+      "reviewedEnglish": "Can I close it?",
+      "finalEnglish": "Can I close it?",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day5_ending_cage_sea_close_1",
+      "file": "day5_night.json",
+      "speaker": "sea",
+      "ko": "내일도 늦잠 자도 돼. 내가 먼저 와 있을게.",
+      "en": "You can sleep in late tomorrow too. I'll be there first.",
+      "reviewedEnglish": "You can sleep in late tomorrow too. I'll be there first.",
+      "finalEnglish": "You can sleep in late tomorrow too. I'll be there first.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_3",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "이건 이사회로 안 보내요. 여기 보관하는 장부예요.",
+      "en": "This is not sent to the board of directors. This is the ledger I keep here.",
+      "reviewedEnglish": "This is not sent to the board of directors. This is the ledger I keep here.",
+      "finalEnglish": "This is not sent to the board of directors. This is the ledger I keep here.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_6",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "밖에는 폐기했다고 보고했어요. 찾으러 오는 사람은 없을 거예요.",
+      "en": "They reported that it was disposed of outside. No one will come looking for it.",
+      "reviewedEnglish": "I reported you as disposed of. No one will come looking for you.",
+      "finalEnglish": "I reported you as disposed of. No one will come looking for you.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_7",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "제 이름도요?",
+      "en": "My name too?",
+      "reviewedEnglish": "My name too?",
+      "finalEnglish": "My name too?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_8",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "이름은 남겨 뒀어요. 제가 부를 이름까지 지울 필요는 없잖아요.",
+      "en": "I left the name. There is no need to erase the name I will call you.",
+      "reviewedEnglish": "I kept your name. I don't need to erase the name I'll call you by.",
+      "finalEnglish": "I kept your name. I don't need to erase the name I'll call you by.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_11",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "앉아요. 서서 기다리면 다리 아파요.",
+      "en": "Sit down. My legs hurt when I stand and wait.",
+      "reviewedEnglish": "Sit down. Your legs will ache if you stand there waiting.",
+      "finalEnglish": "Sit down. Your legs will ache if you stand there waiting.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_14",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "너무 조이면 말해요. 그건 내가 풀 수 있어요.",
+      "en": "Let me know if it's too tight. I can solve that.",
+      "reviewedEnglish": "Tell me if it's too tight. I can loosen that.",
+      "finalEnglish": "Tell me if it's too tight. I can loosen that.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_18",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "내일도 여기서 출석 부를 거예요. 대답만 해 줘요.",
+      "en": "We'll be calling roll here tomorrow too. Just answer me.",
+      "reviewedEnglish": "We'll be calling roll here tomorrow too. Just answer me.",
+      "finalEnglish": "We'll be calling roll here tomorrow too. Just answer me.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_19",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "다른 학생은요?",
+      "en": "What about other students?",
+      "reviewedEnglish": "What about other students?",
+      "finalEnglish": "What about other students?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_20",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "다른 교실에 있어요. 이 교실에는 안 들어와요.",
+      "en": "It's in another classroom. Don't come into this classroom.",
+      "reviewedEnglish": "They're in other classrooms. They won't be coming into this one.",
+      "finalEnglish": "They're in other classrooms. They won't be coming into this one.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_cage_eunsu_epilogue_23",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "자리 바꾸고 싶으면 말해요. 창가도 괜찮고, 교탁 바로 앞도 괜찮아요.",
+      "en": "If you want to change seats, let me know. The window is okay, and the one right in front of the lectern is also okay.",
+      "reviewedEnglish": "If you want to change seats, let me know. The window is okay, and the one right in front of the lectern is also okay.",
+      "finalEnglish": "If you want to change seats, let me know. The window is okay, and the one right in front of the lectern is also okay.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_escape_epilogue_5",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "앱은 열지 마. 끄는 것도 지금은 하지 마.",
+      "en": "Don't open the app. Don't even turn it off now.",
+      "reviewedEnglish": "Don't open the app. Don't even turn it off now.",
+      "finalEnglish": "Don't open the app. Don't even turn it off now.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_ending_escape_epilogue_11",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "그냥 나가자. 여기 말고 다른 데 가면 돼.",
+      "en": "Let's just go out. You can go somewhere other than here.",
+      "reviewedEnglish": "Let's just leave. We'll find somewhere else.",
+      "finalEnglish": "Let's just leave. We'll find somewhere else.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_ending_escape_epilogue_17",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "오늘은 밥부터 먹자. 내일 설명해도 되는 건 내일 하고.",
+      "en": "Let’s eat first today. I can explain things tomorrow.",
+      "reviewedEnglish": "Let's eat first. Anything that can wait until tomorrow can wait.",
+      "finalEnglish": "Let's eat first. Anything that can wait until tomorrow can wait.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_ending_escape_epilogue_22",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "학교 말고 다른 데서 찍은 사진은 한 장도 없더라.",
+      "en": "There wasn't a single photo taken anywhere other than school.",
+      "reviewedEnglish": "There wasn't a single photo taken anywhere other than school.",
+      "finalEnglish": "There wasn't a single photo taken anywhere other than school.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_ending_escape_epilogue_25",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "그대로 있어. 다 나온다.",
+      "en": "Stay where you are. Everything comes out.",
+      "reviewedEnglish": "Stay just like that. You're all in the frame.",
+      "finalEnglish": "Stay just like that. You're all in the frame.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day5_ending_escape_sea_after_2",
+      "file": "day5_night.json",
+      "speaker": "sea",
+      "ko": "봤어요. 계단 위로 올라갔어요. 제가 따라갈게요.",
+      "en": "I saw it. I went up the stairs. I'll follow you.",
+      "reviewedEnglish": "I saw them. They went upstairs. I'll follow them.",
+      "finalEnglish": "I saw them. They went upstairs. I'll follow them.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day5_ending_resist_epilogue_3",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "어느 게 원본인지 바뀌면 안 돼요. 내 서명 있는 쪽을 앞에 두고요.",
+      "en": "It cannot be changed which is the original. Put the page with my signature in front.",
+      "reviewedEnglish": "Don't mix up the originals and the copies. Keep the pages with my signature at the front.",
+      "finalEnglish": "Don't mix up the originals and the copies. Keep the pages with my signature at the front.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_resist_epilogue_5",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "울고 계세요?",
+      "en": "Are you crying?",
+      "reviewedEnglish": "Are you crying?",
+      "finalEnglish": "Are you crying?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day5_ending_resist_epilogue_7",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "세 번째였어요. 그때 네가 나한테 밥 먹었냐고 물었어요.",
+      "en": "It was the third time. Then you asked me if I had eaten.",
+      "reviewedEnglish": "It was the third cycle. You asked me if I'd eaten.",
+      "finalEnglish": "It was the third cycle. You asked me if I'd eaten.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_resist_epilogue_9",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "알아요. 너는 기억 안 나죠. 그 말을 나만 갖고 있었어요.",
+      "en": "i know. You don't remember. I was the only one who kept those words.",
+      "reviewedEnglish": "I know. You don't remember. I was the only one who kept those words.",
+      "finalEnglish": "I know. You don't remember. I was the only one who kept those words.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_resist_epilogue_11",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "그래서 다음날도 보고 싶었어요. 다음 학기도, 다음에도.",
+      "en": "So I wanted to see you the next day too. Next semester and the next too.",
+      "reviewedEnglish": "So I wanted to see you the next day too. Next semester and the next too.",
+      "finalEnglish": "So I wanted to see you the next day too. Next semester and the next too.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_resist_epilogue_12",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "그래서 계속하셨어요?",
+      "en": "So did you continue?",
+      "reviewedEnglish": "Is that why you kept it going?",
+      "finalEnglish": "Is that why you kept it going?",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day5_ending_resist_epilogue_14",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "그게 이유가 되면 안 됐어요. 내가 쓰는 보고서에는 넣을 수 없는 말이었어요.",
+      "en": "That shouldn't have been the reason. Those were words I couldn't include in the report I was writing.",
+      "reviewedEnglish": "That shouldn't have been the reason. Those were words I couldn't include in the report I was writing.",
+      "finalEnglish": "That shouldn't have been the reason. Those were words I couldn't include in the report I was writing.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_resist_epilogue_16",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "이번에는 내가 한 걸 전부 쓸게요. 네가 나를 위해 덜 말할 필요 없어요.",
+      "en": "This time I will write everything I did. You don't need to say less for me.",
+      "reviewedEnglish": "This time I'll write down everything I did. You don't have to leave anything out for my sake.",
+      "finalEnglish": "This time I'll write down everything I did. You don't have to leave anything out for my sake.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_forget_epilogue_4",
+      "file": "day5_night.json",
+      "speaker": "sea",
+      "ko": "처음이지? 교실 같이 가자. 나도 그쪽이야.",
+      "en": "Is this your first time? Let's go to class together. I'm there too.",
+      "reviewedEnglish": "Your first day? Let's walk to class together. I'm going that way too.",
+      "finalEnglish": "Your first day? Let's walk to class together. I'm going that way too.",
+      "finalSpeaker": "sea"
+    },
+    {
+      "id": "day5_ending_forget_epilogue_8",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "사진은 나중에 찍어도 돼요. 지금 안 찍어도.",
+      "en": "You can take pictures later. Even if you don’t take a picture now.",
+      "reviewedEnglish": "You can take pictures later. Even if you don’t take a picture now.",
+      "finalEnglish": "You can take pictures later. Even if you don’t take a picture now.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_ending_forget_epilogue_11",
+      "file": "day5_night.json",
+      "speaker": "riin",
+      "ko": "아침은 먹었어? 안 먹었으면 차 말고 물부터.",
+      "en": "Have you eaten breakfast? If you haven't eaten, start with water, not tea.",
+      "reviewedEnglish": "Have you eaten breakfast? If you haven't eaten, start with water, not tea.",
+      "finalEnglish": "Have you eaten breakfast? If you haven't eaten, start with water, not tea.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day5_ending_forget_epilogue_14",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "창가 세 번째예요. 가방은 책상 안에 넣으면 돼요.",
+      "en": "It's the third window. You can put your bag inside the desk.",
+      "reviewedEnglish": "Third desk by the window. You can put your bag inside it.",
+      "finalEnglish": "Third desk by the window. You can put your bag inside it.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_forget_epilogue_17",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "누가 장난쳐 놨네.",
+      "en": "Someone was playing a joke.",
+      "reviewedEnglish": "Someone was playing a joke.",
+      "finalEnglish": "Someone was playing a joke.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day5_ending_ghost_epilogue_2",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "내려가. 발밑부터 봐. 여기 마지막 칸이 짧아.",
+      "en": "Go down. Look at your feet first. The last space here is short.",
+      "reviewedEnglish": "Go down. Watch your feet. That last step is narrow.",
+      "finalEnglish": "Go down. Watch your feet. That last step is narrow.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_ending_ghost_epilogue_4",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "같이 내려오면 되잖아.",
+      "en": "We can come down together.",
+      "reviewedEnglish": "Just come down with me.",
+      "finalEnglish": "Just come down with me.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day5_ending_ghost_epilogue_6",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "나 여기서부터는 못 가. 네가 문 열었을 때 알았어.",
+      "en": "I can't go from here. I knew it when you opened the door.",
+      "reviewedEnglish": "I can't go any farther. I knew when you opened the door.",
+      "finalEnglish": "I can't go any farther. I knew when you opened the door.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_ending_ghost_epilogue_8",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "괜찮다는 말은 하지 마. 네가 괜찮을 일이 아니니까.",
+      "en": "Don't say it's okay. Because it's not something you'll be okay with.",
+      "reviewedEnglish": "Don't tell me it's all right. It's not something you should have to be all right with.",
+      "finalEnglish": "Don't tell me it's all right. It's not something you should have to be all right with.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_ending_ghost_epilogue_10",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "이번에는 내가 밀었어. 밖에 나가서는 네 다리로 걸어.",
+      "en": "This time I pushed. When you go outside, walk on all fours.",
+      "reviewedEnglish": "This time I gave you the push. Out there, walk on your own feet.",
+      "finalEnglish": "This time I gave you the push. Out there, walk on your own feet.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_ending_ghost_epilogue_12",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "이름은 기억할게.",
+      "en": "I'll remember your name.",
+      "reviewedEnglish": "I'll remember your name.",
+      "finalEnglish": "I'll remember your name.",
+      "finalSpeaker": "me"
+    },
+    {
+      "id": "day5_ending_ghost_epilogue_13",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "적어. 기억하는 건 네가 너무 많이 해 봤잖아.",
+      "en": "Write it down. You've done too much to remember.",
+      "reviewedEnglish": "Write it down. You've tried remembering enough times already.",
+      "finalEnglish": "Write it down. You've tried remembering enough times already.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_ending_complicit_epilogue_2",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "계단에서는 목에 걸어요. 문이 카드 위치를 읽어야 열려요.",
+      "en": "Wear it around your neck on the stairs. The door opens only after reading the card location.",
+      "reviewedEnglish": "Wear it around your neck on the stairs. The doors need to read where the card is before they'll open.",
+      "finalEnglish": "Wear it around your neck on the stairs. The doors need to read where the card is before they'll open.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_complicit_epilogue_8",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "여기서는 소리도 들을 수 있어요. 켜려면 이 버튼이고요.",
+      "en": "You can also hear sounds here. Use this button to turn it on.",
+      "reviewedEnglish": "You can also hear sounds here. Use this button to turn it on.",
+      "finalEnglish": "You can also hear sounds here. Use this button to turn it on.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_complicit_epilogue_11",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "다음 일정은 같이 확인해요. 승인 칸은 네 쪽에도 생겼어요.",
+      "en": "Let’s check the next schedule together. An approval box has also been created on the fourth page.",
+      "reviewedEnglish": "We'll check the next schedule together. You have an approval field on your side now too.",
+      "finalEnglish": "We'll check the next schedule together. You have an approval field on your side now too.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_complicit_low_2",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "줄인 이유도 적어요. 다음 사람이 다시 늘리지 않게.",
+      "en": "There are few reasons for reducing it. Don't let the next person increase it again.",
+      "reviewedEnglish": "Write down why you reduced it too. So the next person doesn't increase it again.",
+      "finalEnglish": "Write down why you reduced it too. So the next person doesn't increase it again.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_complicit_same_2",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "유지가 제일 간단하죠. 바꾸면 설명할 항목이 늘어나니까.",
+      "en": "Maintenance is the simplest. If you change it, the number of items to explain increases.",
+      "reviewedEnglish": "Keeping it the same is simplest. Change it and there's more to explain.",
+      "finalEnglish": "Keeping it the same is simplest. Change it and there's more to explain.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_ending_complicit_close_2",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "수고했어요. 다음 보고는 네가 먼저 읽어 봐요.",
+      "en": "great job. You read the next report first.",
+      "reviewedEnglish": "Good work. You can read the next report first.",
+      "finalEnglish": "Good work. You can read the next report first.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_archive_cycle07_4",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "태호야. 문 닫히기 전에 들어와. 여기 경첩 소리 커.",
+      "en": "Taeho. Come in before the door closes. The hinges here are loud.",
+      "reviewedEnglish": "Taeho. Come in before the door closes. The hinges here are loud.",
+      "finalEnglish": "Taeho. Come in before the door closes. The hinges here are loud.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_8",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "기록함은 왼쪽부터. 오른쪽은 이번 학기 출석부야.",
+      "en": "Records are from the left. On the right is the attendance list for this semester.",
+      "reviewedEnglish": "Start with the record drawers on the left. The right side has this semester's attendance books.",
+      "finalEnglish": "Start with the record drawers on the left. The right side has this semester's attendance books.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_9",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "어떻게 알아?",
+      "en": "How do you know?",
+      "reviewedEnglish": "How do you know?",
+      "finalEnglish": "How do you know?",
+      "finalSpeaker": "archive07"
+    },
+    {
+      "id": "day5_archive_cycle07_10",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "어제 청소할 때 봤어. 읽은 건 오늘이 처음이고.",
+      "en": "I saw it yesterday when I was cleaning. Today is the first time I read it.",
+      "reviewedEnglish": "I saw them while cleaning yesterday. Today's the first time I've read them.",
+      "finalEnglish": "I saw them while cleaning yesterday. Today's the first time I've read them.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_17",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "장난으로 만든 거면 좋겠다. 그런데 종이가 너무 많아.",
+      "en": "I hope it was made as a joke. But there is too much paper.",
+      "reviewedEnglish": "I hope it was made as a joke. But there is too much paper.",
+      "finalEnglish": "I hope it was made as a joke. But there is too much paper.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_19",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "내가 일곱 번째야?",
+      "en": "Am I the seventh?",
+      "reviewedEnglish": "Am I the seventh?",
+      "finalEnglish": "Am I the seventh?",
+      "finalSpeaker": "archive07"
+    },
+    {
+      "id": "day5_archive_cycle07_24",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "지금 답 만들지 마. 기억나는 것만 말해.",
+      "en": "Don't answer now. Just tell me what you remember.",
+      "reviewedEnglish": "Don't make up answers now. Only tell me what you remember.",
+      "finalEnglish": "Don't make up answers now. Only tell me what you remember.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_27",
+      "file": "day5_night.json",
+      "speaker": "school_broadcast",
+      "ko": "구관 정기 점검입니다. 남아 있는 학생은 본관으로 이동하세요.",
+      "en": "This is a regular inspection of the old building. Remaining students should go to the main building.",
+      "reviewedEnglish": "This is a regular inspection of the old building. Remaining students should go to the main building.",
+      "finalEnglish": "This is a regular inspection of the old building. Remaining students should go to the main building.",
+      "finalSpeaker": "school_broadcast"
+    },
+    {
+      "id": "day5_archive_cycle07_30",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "밖에 나가서 켜. 지금은 그거 빛나면 보여.",
+      "en": "Go outside and turn it on. Now I can see it when it shines.",
+      "reviewedEnglish": "Turn it on once we're outside. They'll see the light if you use it here.",
+      "finalEnglish": "Turn it on once we're outside. They'll see the light if you use it here.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_36",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "여기서 나가면 담장 밖이야?",
+      "en": "If I leave here, am I outside the fence?",
+      "reviewedEnglish": "If I leave here, am I outside the fence?",
+      "finalEnglish": "If I leave here, am I outside the fence?",
+      "finalSpeaker": "archive07"
+    },
+    {
+      "id": "day5_archive_cycle07_37",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "주차장 뒤. 담장 사이에 사람 지나갈 데 있어. 내가 낮에 봤어.",
+      "en": "Behind the parking lot. People can pass between the fences. I saw it during the day.",
+      "reviewedEnglish": "Behind the parking lot. People can pass between the fences. I saw it during the day.",
+      "finalEnglish": "Behind the parking lot. People can pass between the fences. I saw it during the day.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_41",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "태호야. 선생님 쪽으로 와요.",
+      "en": "Taeho. Come towards the teacher.",
+      "reviewedEnglish": "Taeho. Come over to me.",
+      "finalEnglish": "Taeho. Come over to me.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_archive_cycle07_44",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "자료실 문은 제가 열었어요. 얘는 저 따라온 거예요.",
+      "en": "I opened the data room door. He followed me.",
+      "reviewedEnglish": "I'm the one who opened the records room. He only followed me.",
+      "finalEnglish": "I'm the one who opened the records room. He only followed me.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_45",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "가방부터 내려놔요. 두 사람 다 다칠 필요 없어요.",
+      "en": "Put down your bag first. There is no need for either of you to get hurt.",
+      "reviewedEnglish": "Put down your bag first. There is no need for either of you to get hurt.",
+      "finalEnglish": "Put down your bag first. There is no need for either of you to get hurt.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_archive_cycle07_48",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "너도 나와. 같이 나가면 돼.",
+      "en": "You too, come out. We can go out together.",
+      "reviewedEnglish": "You too, come out. We can go out together.",
+      "finalEnglish": "You too, come out. We can go out together.",
+      "finalSpeaker": "archive07"
+    },
+    {
+      "id": "day5_archive_cycle07_50",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "왼손 펴 봐. 빨리.",
+      "en": "Open your left hand. hurry.",
+      "reviewedEnglish": "Open your left hand. Hurry.",
+      "finalEnglish": "Open your left hand. Hurry.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_52",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "오른손은 저 사람들이 시키는 대로 움직여도, 왼손은 기억하게 해.",
+      "en": "Even if you move your right hand as they tell you, make sure your left hand remembers.",
+      "reviewedEnglish": "Even if you move your right hand as they tell you, make sure your left hand remembers.",
+      "finalEnglish": "Even if you move your right hand as they tell you, make sure your left hand remembers.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_54",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "아프게 하면 기억이 남아?",
+      "en": "If it hurts, will you still remember it?",
+      "reviewedEnglish": "Will it stay in my memory if it hurts?",
+      "finalEnglish": "Will it stay in my memory if it hurts?",
+      "finalSpeaker": "archive07"
+    },
+    {
+      "id": "day5_archive_cycle07_55",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "모르겠어. 그래도 네 손이니까. 저 종이보다 오래 갖고 있잖아.",
+      "en": "I don't know. Still, it's your hand. You've had it longer than that piece of paper.",
+      "reviewedEnglish": "I don't know. But it's your hand. You'll have it longer than that paper.",
+      "finalEnglish": "I don't know. But it's your hand. You'll have it longer than that paper.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_57",
+      "file": "day5_night.json",
+      "speaker": "seolhwa",
+      "ko": "다음번에는 꼭 나가. 이름 바뀌어도 이쪽 손부터 봐.",
+      "en": "Be sure to go out next time. Even if the name changes, look at this hand first.",
+      "reviewedEnglish": "Get out next time. Even if your name changes, look at this hand first.",
+      "finalEnglish": "Get out next time. Even if your name changes, look at this hand first.",
+      "finalSpeaker": "seolhwa"
+    },
+    {
+      "id": "day5_archive_cycle07_65",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "설화는요. 같이 가는 거죠?",
+      "en": "What about Seolhwa? Are we going together?",
+      "reviewedEnglish": "What about Seolhwa? She's coming with us, isn't she?",
+      "finalEnglish": "What about Seolhwa? She's coming with us, isn't she?",
+      "finalSpeaker": "archive07"
+    },
+    {
+      "id": "day5_archive_cycle12_3",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "선배. 오늘은 운동장 말고 다른 데 찍어요. 맨날 같은 자리예요.",
+      "en": "senior. Today, I will take pictures somewhere other than the playground. It's the same place every day.",
+      "reviewedEnglish": "Sunbae. Let's photograph somewhere besides the schoolyard today. We always go to the same spot.",
+      "finalEnglish": "Sunbae. Let's photograph somewhere besides the schoolyard today. We always go to the same spot.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_4",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "같은 데서 찍으면 바뀐 게 보이잖아.",
+      "en": "If you take a picture from the same place, you can see the changes.",
+      "reviewedEnglish": "If you take a picture from the same place, you can see the changes.",
+      "finalEnglish": "If you take a picture from the same place, you can see the changes.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_7",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "이건 어제잖아요. 선배 또 하루 밀렸네.",
+      "en": "This was yesterday. Senpai, I'm behind by another day.",
+      "reviewedEnglish": "That's yesterday's date. You're a day behind again, sunbae.",
+      "finalEnglish": "That's yesterday's date. You're a day behind again, sunbae.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_11",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "이제 안 흔들린다. 선배 이런 건 잘하네요.",
+      "en": "It doesn't shake anymore. Senpai, you are good at this kind of thing.",
+      "reviewedEnglish": "It's steady now. You're good at this sort of thing, sunbae.",
+      "finalEnglish": "It's steady now. You're good at this sort of thing, sunbae.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_16",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "이 사람 선배예요?",
+      "en": "Is this person your senior?",
+      "reviewedEnglish": "Is that you in the photo, sunbae?",
+      "finalEnglish": "Is that you in the photo, sunbae?",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_23",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "답이 안 나오는 것도 남겨요. 지우지 말고.",
+      "en": "I also leave some questions for which there is no answer. Don't erase it.",
+      "reviewedEnglish": "Keep the questions we can't answer too. Don't erase them.",
+      "finalEnglish": "Keep the questions we can't answer too. Don't erase them.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_27",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "십 분 지났는데 안 나오면 들어갈게요.",
+      "en": "If ten minutes pass and you don't come out, I'll go in.",
+      "reviewedEnglish": "If ten minutes pass and you don't come out, I'll go in.",
+      "finalEnglish": "If ten minutes pass and you don't come out, I'll go in.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_28",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "문 앞에서 기다리지는 마. 사진부에서 기다려.",
+      "en": "Don't wait at the door. Wait in the photo department.",
+      "reviewedEnglish": "Don't wait at the door. Wait in the photography club room.",
+      "finalEnglish": "Don't wait at the door. Wait in the photography club room.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_30",
+      "file": "day5_night.json",
+      "speaker": "riin",
+      "ko": "오늘 물은 마셨어? 밥은 먹었고?",
+      "en": "Did you drink water today? Did you eat?",
+      "reviewedEnglish": "Did you drink water today? Did you eat?",
+      "finalEnglish": "Did you drink water today? Did you eat?",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day5_archive_cycle12_33",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "약 맞으면 기억이 없어져요?",
+      "en": "If you take medicine, will you lose your memory?",
+      "reviewedEnglish": "Will that injection erase my memory?",
+      "finalEnglish": "Will that injection erase my memory?",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_35",
+      "file": "day5_night.json",
+      "speaker": "riin",
+      "ko": "누가 그런 말을 했어.",
+      "en": "Who said that?",
+      "reviewedEnglish": "Who said that?",
+      "finalEnglish": "Who said that?",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day5_archive_cycle12_36",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "종이에 적혀 있어요. 선생님 서명도요.",
+      "en": "It's written on paper. Teacher's signature too.",
+      "reviewedEnglish": "It's written in the papers. Your signature's there too.",
+      "finalEnglish": "It's written in the papers. Your signature's there too.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_38",
+      "file": "day5_night.json",
+      "speaker": "riin",
+      "ko": "이따가 걷게 되면 벽 짚고 가. 뛰지 말고.",
+      "en": "Next time you walk, hold on to the wall. Don't run.",
+      "reviewedEnglish": "If you walk later, keep a hand on the wall. Don't run.",
+      "finalEnglish": "If you walk later, keep a hand on the wall. Don't run.",
+      "finalSpeaker": "riin"
+    },
+    {
+      "id": "day5_archive_cycle12_42",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "십 분 지났어요. 사진부까지는 같이 가요.",
+      "en": "Ten minutes have passed. Let’s go to the photography club together.",
+      "reviewedEnglish": "Ten minutes have passed. Let’s go to the photography club together.",
+      "finalEnglish": "Ten minutes have passed. Let’s go to the photography club together.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_45",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "여기서 계속 기다리면 안 돼.",
+      "en": "You can't keep waiting here.",
+      "reviewedEnglish": "You can't keep waiting here.",
+      "finalEnglish": "You can't keep waiting here.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_46",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "지금 혼자 못 걸으면서 그런 말 하지 마요.",
+      "en": "Don’t say things like that when you can’t walk alone right now.",
+      "reviewedEnglish": "Don’t say things like that when you can’t walk alone right now.",
+      "finalEnglish": "Don’t say things like that when you can’t walk alone right now.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_50",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "이건 이미 현상한 거예요. 지금 빛 안 줘도 돼요.",
+      "en": "This has already been developed. You don’t have to turn on the light now.",
+      "reviewedEnglish": "It's already developed. You don't need to hold it up to the light now.",
+      "finalEnglish": "It's already developed. You don't need to hold it up to the light now.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_51",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "사물함 바닥 기억하지. 우리가 종이 끼운 데.",
+      "en": "Remember the bottom of the locker? Where we put the paper.",
+      "reviewedEnglish": "Remember the bottom of the locker? Where we put the paper.",
+      "finalEnglish": "Remember the bottom of the locker? Where we put the paper.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_54",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "그 밑에 넣어. 내가 내일 달라고 해도 바로 주지 말고.",
+      "en": "Put it under it. If I ask for it tomorrow, don’t give it to me right away.",
+      "reviewedEnglish": "Put it under it. If I ask for it tomorrow, don’t give it to me right away.",
+      "finalEnglish": "Put it under it. If I ask for it tomorrow, don’t give it to me right away.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_55",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "선배가 달라고 하는데 왜 안 줘요.",
+      "en": "My senior asked for it, but why didn’t I give it to him?",
+      "reviewedEnglish": "But if you ask for it, why shouldn't I give it to you?",
+      "finalEnglish": "But if you ask for it, why shouldn't I give it to you?",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_57",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "내일 교문으로 들어오는 사람이 이 이름을 모를 수도 있어.",
+      "en": "The person who comes through the school gates tomorrow may not know this name.",
+      "reviewedEnglish": "The person who comes through the school gates tomorrow may not know this name.",
+      "finalEnglish": "The person who comes through the school gates tomorrow may not know this name.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_59",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "그럼 제가 물어볼게요. 선배가 맞는지.",
+      "en": "Then let me ask you. Is it true that you are a senior?",
+      "reviewedEnglish": "Then I'll ask you. To make sure you're really my sunbae.",
+      "finalEnglish": "Then I'll ask you. To make sure you're really my sunbae.",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_60",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "틀렸다고 버리지는 마. 열세 번째에도 남겨 줘.",
+      "en": "Don't throw it away because you're wrong. Leave it for the thirteenth time too.",
+      "reviewedEnglish": "Don't throw it away if I get the answer wrong. Keep it for the thirteenth one too.",
+      "finalEnglish": "Don't throw it away if I get the answer wrong. Keep it for the thirteenth one too.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_64",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "그래도 열세 번째의 나를 포기하지 말아 줘. 모르면 다시 알려 줘.",
+      "en": "Still, please don’t give up on the thirteenth me. If you don't know, please tell me again.",
+      "reviewedEnglish": "Please don't give up on the thirteenth me. If I don't know, tell me again.",
+      "finalEnglish": "Please don't give up on the thirteenth me. If I don't know, tell me again.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_67",
+      "file": "day5_night.json",
+      "speaker": "yuna",
+      "ko": "선배. 제 이름은요? 지금 말할 수 있죠?",
+      "en": "senior. What is my name? Can you tell me now?",
+      "reviewedEnglish": "Sunbae. What's my name? You can still tell me, can't you?",
+      "finalEnglish": "Sunbae. What's my name? You can still tell me, can't you?",
+      "finalSpeaker": "yuna"
+    },
+    {
+      "id": "day5_archive_cycle12_68",
+      "file": "day5_night.json",
+      "speaker": "me",
+      "ko": "최유나. 사진 잃어버리는 거 제일 싫어해.",
+      "en": "Choi Yuna. You hate losing photos more than anything.",
+      "reviewedEnglish": "Choi Yuna. You hate losing photos more than anything.",
+      "finalEnglish": "Choi Yuna. You hate losing photos more than anything.",
+      "finalSpeaker": "archive12"
+    },
+    {
+      "id": "day5_archive_cycle12_71",
+      "file": "day5_night.json",
+      "speaker": "eunsu",
+      "ko": "보건실에서 나왔으면 교실로 와야죠. 혼자 걷지 말고요.",
+      "en": "If you leave the health room, you have to come to the classroom. Don't walk alone.",
+      "reviewedEnglish": "Once you leave the nurse's office, you should come back to class. Don't walk on your own.",
+      "finalEnglish": "Once you leave the nurse's office, you should come back to class. Don't walk on your own.",
+      "finalSpeaker": "eunsu"
+    },
+    {
+      "id": "day5_archive_cycle12_62",
+      "file": "day5_night.json",
+      "speaker": "archive12",
+      "ko": "내일 아침에 내가 교문으로 다시 들어와도 네가 아는 이준호가 아닐 거야.",
+      "en": "Even if I come back through the school gates tomorrow morning, I won't be the Lee Junho you know.",
+      "finalEnglish": "Even if I come through the school gates again tomorrow morning, I won't be the Lee Junho you know.",
+      "finalSpeaker": "archive12"
+    }
+  ],
+  "manualLocaleCorrections": {
+    "fr": {
+      "day5_archive_cycle12_62": "Même si je repasse le portail demain matin, je ne serai plus le Lee Junho que tu connais.",
+      "day1_night_eunsu_msg_2": "Comment s'est passée votre première journée ? Vous avez beaucoup marché pour trouver votre classe.",
+      "day2_morning_pen_eunsu_2": "Votre bureau est déjà rangé ? Hier, vous fouilliez encore dans votre sac après la sonnerie.",
+      "day3_after_riin_closeness_high_11": "Tu as déjeuné aujourd'hui, non ? Je ne devrais pas te faire un thé trop fort après le repas.",
+      "day3_after_riin_closeness_high_14": "Tu peux dire que tu es venu prendre le thé. Mais ne dis pas que je t'ai dit d'en laisser.",
+      "day3_after_sea_closeness_high_8": "Je le fais aussi pour les autres. Tu n'es pas le premier.",
+      "day3_after_eunsu_closeness_high_13": "Non. Si vous êtes malade, allez à l'infirmerie. À votre retour, vous retrouverez votre place ici.",
+      "day3_morning_class_silence_5": "Te voilà. J'ai sorti tes livres pour toi.",
+      "day3_morning_class_sea_5": "Ton bras ne le heurtera pas ici. Tu as déjà failli le faire tomber hier.",
+      "day3_night_pressure_sea_2": "Tu ne dors pas. Ta lumière est allumée.",
+      "day3_night_pressure_sea_4": "Pas besoin d'ouvrir. Je voulais juste entendre ta voix.",
+      "day4_after_sea_evidence_0_2": "Tu es allé sur le toit ? Je t'avais dit de ne pas toucher à la rambarde.",
+      "day4_after_sea_evidence_1_6": "Quand tu coupes l'application, ils m'interrogent aussi. Ils demandent pourquoi je ne t'ai pas arrêté. Je dois leur répondre.",
+      "day4_lunch_nurse_tray_6": "Tu as pris quelque chose ce matin ? Je ne te donnerai pas de médicament avant que tu aies mangé.",
+      "day4_lunch_roof_record_1": "Bien. Pas besoin de faire semblant de te souvenir pour me faire plaisir. Lis les documents toi-même.",
+      "day4_morning_sea_watch_low_2": "Ils disent que ton appareil s'est déconnecté. La prof veut te voir à la pause.",
+      "day5_ending_cage_sea_window_3": "Ta place est ici. Je n'ai même pas inscrit ton nom sur leur liste.",
+      "day5_ending_escape_epilogue_25": "Ne bouge plus. Je te vois en entier dans le cadre.",
+      "day5_archive_cycle07_55": "Je ne sais pas. Mais c'est ta main. Tu l'auras plus longtemps que ce papier.",
+      "day5_archive_cycle12_30": "Tu as bu de l'eau aujourd'hui ? Et mangé ?",
+      "day5_archive_cycle12_59": "Alors je te poserai la question. Pour vérifier que c'est bien toi, sunbae.",
+      "day5_ending_ghost_epilogue_10": "Cette fois, c'est moi qui t'ai poussé. Dehors, marche sur tes propres jambes."
+    },
+    "de": {
+      "day5_archive_cycle12_62": "Selbst wenn ich morgen früh wieder durchs Schultor komme, bin ich nicht mehr der Lee Junho, den du kennst.",
+      "day2_morning_pen_eunsu_2": "Dein Tisch ist schon aufgeräumt? Gestern hast du nach dem Klingeln noch in deiner Tasche gewühlt.",
+      "day3_after_riin_closeness_high_2": "Trink heute nur ein bisschen davon. Den Rest kannst du stehen lassen.",
+      "day3_after_riin_closeness_high_14": "Du kannst sagen, dass du hier Tee getrunken hast. Sag nur nicht, ich hätte dir erlaubt, etwas übrig zu lassen.",
+      "day3_after_eunsu_closeness_high_2": "Hast du auf dem Flur gewartet? Wenn die Tür offen ist, kannst du einfach hereinkommen.",
+      "day3_after_eunsu_closeness_high_5": "Setz dich kurz. Dir geht es doch nicht schlecht, oder?",
+      "day3_after_eunsu_closeness_high_13": "Nein. Wenn du krank bist, gehst du ins Krankenzimmer. Danach setzt du dich wieder hierhin.",
+      "day3_night_pressure_sea_4": "Du musst nicht aufmachen. Ich wollte nur deine Stimme hören.",
+      "day3_night_pressure_eunsu_2": "Hast du abgeschlossen? Mach heute niemandem auf, egal wer kommt.",
+      "day3_night_pressure_riin_10": "Trink morgen nur, was ich dir selbst gebe. Auch wenn jemand behauptet, es sei dasselbe: Hol es direkt bei mir ab.",
+      "day4_lunch_nurse_ask_name_2": "Ein Nahrungsergänzungsmittel. Du brauchst das Etikett nicht zu lesen. Leg dich hin.",
+      "day4_lunch_yuna_breath_safe_2": "Du hast die Tür geschlossen, oder? Prüf sie trotzdem, ob jemand drin ist oder nicht.",
+      "day4_lunch_nurse_tray_3": "Wasch dir erst die Hände. Du kommst von draußen.",
+      "day4_lunch_roof_exit_5": "Die Einzelheiten stehen in den Unterlagen. Behaupte nicht, du würdest dich an alles erinnern, nur weil ich es dir erzähle.",
+      "day4_morning_sea_watch_low_2": "Dein Gerät hat wohl die Verbindung verloren. Die Lehrerin will dich in der Pause sehen.",
+      "day5_ending_cage_sea_window_3": "Dein Platz ist hier. Ich habe deinen Namen nicht einmal auf ihre Liste gesetzt.",
+      "day5_ending_cage_eunsu_epilogue_6": "Ich habe gemeldet, dass du entsorgt wurdest. Niemand wird nach dir suchen.",
+      "day5_ending_forget_epilogue_11": "Hast du gefrühstückt? Wenn nicht, trink erst Wasser statt Tee.",
+      "day5_ending_ghost_epilogue_10": "Diesmal habe ich dich angeschoben. Draußen gehst du auf deinen eigenen Beinen.",
+      "day5_ending_ghost_epilogue_13": "Schreib es auf. Du hast schon oft genug versucht, dich zu erinnern.",
+      "day5_archive_cycle07_24": "Denk dir jetzt keine Antworten aus. Sag mir nur, woran du dich erinnerst."
+    },
+    "ja": {
+      "day5_archive_cycle12_62": "明日の朝、また校門をくぐっても、その時の僕は君の知ってるイ・ジュノじゃない。",
+      "day5_ending_ghost_epilogue_10": "今度は私が背中を押したんだ。外では自分の足で歩いて。"
+    },
+    "es": {
+      "day5_archive_cycle12_62": "Aunque mañana vuelva a cruzar la puerta de la escuela, ya no seré el Lee Junho que conoces.",
+      "day5_ending_ghost_epilogue_10": "Esta vez fui yo quien te empujó. Afuera, camina con tus propias piernas."
+    },
+    "pt": {
+      "day5_archive_cycle12_62": "Mesmo que eu entre pelo portão de novo amanhã de manhã, não serei mais o Lee Junho que você conhece.",
+      "day5_ending_ghost_epilogue_10": "Desta vez fui eu que te empurrei. Lá fora, ande com as próprias pernas."
+    },
+    "zh": {
+      "day5_archive_cycle12_62": "明天早上，即使我再次走进校门，也不会再是你认识的那个李俊浩了。",
+      "day5_ending_ghost_epilogue_10": "这次是我推了你一把。到了外面，要靠自己的双腿走。"
+    },
+    "en": {
+      "day5_archive_cycle12_62": "Even if I come through the school gates again tomorrow morning, I won't be the Lee Junho you know."
+    }
+  },
+  "archiveMenu": {
+    "ko": [
+      "cycle_01.zip — 제1차 주기: 이상 환경 설계도 (PROJECT CUPID)",
+      "cycle_07.log — 제7차 주기: 이설화 및 비상구 사건 기록",
+      "cycle_12.log — 제12차 주기: 사진부 암실 및 #12 폐기 기록",
+      "아카이브 서버 접속 종료"
+    ],
+    "en": [
+      "cycle_01.zip — Cycle 1: Ideal Environment Plans (PROJECT CUPID)",
+      "cycle_07.log — Cycle 7: Lee Seolhwa and the Emergency Exit",
+      "cycle_12.log — Cycle 12: Darkroom and Subject #12 Disposal Log",
+      "Disconnect from the archive server"
+    ],
+    "ja": [
+      "cycle_01.zip — 第1周期：理想環境設計図（PROJECT CUPID）",
+      "cycle_07.log — 第7周期：イ・ソルファと非常口事件の記録",
+      "cycle_12.log — 第12周期：写真部暗室と被験者#12の廃棄記録",
+      "アーカイブサーバーへの接続を終了"
+    ],
+    "es": [
+      "cycle_01.zip — Ciclo 1: Planos del entorno ideal (PROJECT CUPID)",
+      "cycle_07.log — Ciclo 7: Lee Seolhwa y la salida de emergencia",
+      "cycle_12.log — Ciclo 12: Cuarto oscuro y eliminación del sujeto #12",
+      "Desconectarse del servidor del archivo"
+    ],
+    "fr": [
+      "cycle_01.zip — Cycle 1 : Plans de l'environnement idéal (PROJECT CUPID)",
+      "cycle_07.log — Cycle 7 : Lee Seolhwa et la sortie de secours",
+      "cycle_12.log — Cycle 12 : Chambre noire et élimination du sujet #12",
+      "Se déconnecter du serveur d'archives"
+    ],
+    "de": [
+      "cycle_01.zip — Zyklus 1: Ideale Umgebung (PROJECT CUPID)",
+      "cycle_07.log — Zyklus 7: Lee Seolhwa und der Notausgang",
+      "cycle_12.log — Zyklus 12: Dunkelkammer und Entsorgung von #12",
+      "Verbindung zum Archivserver trennen"
+    ],
+    "pt": [
+      "cycle_01.zip — Ciclo 1: Planta do ambiente ideal (PROJECT CUPID)",
+      "cycle_07.log — Ciclo 7: Lee Seolhwa e a saída de emergência",
+      "cycle_12.log — Ciclo 12: Sala escura e descarte do indivíduo #12",
+      "Desconectar do servidor do arquivo"
+    ],
+    "zh": [
+      "cycle_01.zip — 第1周期：理想环境设计图（PROJECT CUPID）",
+      "cycle_07.log — 第7周期：李雪花与紧急出口事件记录",
+      "cycle_12.log — 第12周期：摄影部暗室与#12废弃记录",
+      "断开档案服务器连接"
+    ]
+  },
+  "properNameReview": {
+    "ids": [
+      "day1_night_yuna_msg_1",
+      "day5_ending_ghost_epilogue_19",
+      "day5_archive_cycle07_68",
+      "day5_archive_cycle12_1",
+      "day5_archive_cycle12_68",
+      "day5_archive_cycle12_76"
+    ],
+    "en": [
+      "A new contact appeared in the school messenger. A short message followed the name Choi Yuna from the photography club.",
+      "Lee Seolhwa. The pen stopped twice as I wrote the three Korean characters.",
+      "The next page listed Lee Seolhwa as an additional person. The outcome was permanent disposal.",
+      "The next folder bore the name Lee Junho. Choi Yuna had also signed the photography club application.",
+      "Choi Yuna. You hate losing photos more than anything.",
+      "Lee Junho, Choi Yuna, the thirteenth. I kept the names separate and closed the record with the blanks still there."
+    ],
+    "ja": [
+      "校内メッセンジャーに新しい連絡先が追加された。写真部のチェ・ユナという名前の下に、短いメッセージが届いた。",
+      "イ・ソルファ。ハングル三文字を書く間に、ペン先が二度止まった。",
+      "次のページには付随人員イ・ソルファと記されていた。処理結果は永久廃棄だった。",
+      "次の束にはイ・ジュノという名前があった。写真部の入部届にはチェ・ユナの署名もあった。",
+      "チェ・ユナ。写真をなくすのが、何より嫌いなんだよね。",
+      "イ・ジュノ、チェ・ユナ、十三番目。名前を互いの代わりにせず、空欄を残したまま記録を閉じた。"
+    ],
+    "es": [
+      "Apareció un contacto nuevo en el chat de la escuela. Bajo el nombre de Choi Yuna, del club de fotografía, llegó un mensaje breve.",
+      "Lee Seolhwa. La punta del bolígrafo se detuvo dos veces mientras escribía los tres caracteres coreanos.",
+      "La página siguiente registraba a Lee Seolhwa como persona adicional. El resultado era eliminación permanente.",
+      "La siguiente carpeta llevaba el nombre de Lee Junho. Choi Yuna también había firmado la solicitud de ingreso al club de fotografía.",
+      "Choi Yuna. Lo que más odias es perder fotos.",
+      "Lee Junho, Choi Yuna, el decimotercero. Mantuve separados los nombres y cerré el registro sin llenar los espacios en blanco."
+    ],
+    "fr": [
+      "Un nouveau contact est apparu dans la messagerie scolaire. Un bref message suivait le nom de Choi Yuna, du club photo.",
+      "Lee Seolhwa. La pointe du stylo s'est arrêtée deux fois pendant que j'écrivais les trois caractères coréens.",
+      "La page suivante indiquait Lee Seolhwa comme personne supplémentaire. Le résultat était une élimination définitive.",
+      "Le dossier suivant portait le nom de Lee Junho. Choi Yuna avait également signé la demande d'inscription au club photo.",
+      "Choi Yuna. Tu détestes perdre des photos plus que tout.",
+      "Lee Junho, Choi Yuna, le treizième. J'ai gardé les noms distincts et refermé le dossier en laissant les cases vides."
+    ],
+    "de": [
+      "Im Schulchat erschien ein neuer Kontakt. Unter dem Namen Choi Yuna vom Fotoclub kam eine kurze Nachricht an.",
+      "Lee Seolhwa. Zweimal stockte die Stiftspitze, während ich die drei koreanischen Schriftzeichen schrieb.",
+      "Auf der nächsten Seite stand Lee Seolhwa als zusätzliche Person. Das Ergebnis lautete endgültige Entsorgung.",
+      "Die nächste Mappe trug den Namen Lee Junho. Auf dem Aufnahmeantrag für den Fotoclub stand auch Choi Yunas Unterschrift.",
+      "Choi Yuna. Nichts hasst du mehr, als Fotos zu verlieren.",
+      "Lee Junho, Choi Yuna, der Dreizehnte. Ich hielt die Namen auseinander und schloss die Akte, ohne die Lücken auszufüllen."
+    ],
+    "pt": [
+      "Um contato novo apareceu no chat da escola. Logo abaixo do nome de Choi Yuna, do clube de fotografia, chegou uma mensagem curta.",
+      "Lee Seolhwa. A ponta da caneta parou duas vezes enquanto eu escrevia os três caracteres coreanos.",
+      "A página seguinte listava Lee Seolhwa como pessoa adicional. O resultado era descarte permanente.",
+      "A pasta seguinte trazia o nome de Lee Junho. A ficha de inscrição no clube de fotografia também tinha a assinatura de Choi Yuna.",
+      "Choi Yuna. Você odeia perder fotos mais do que qualquer coisa.",
+      "Lee Junho, Choi Yuna, o décimo terceiro. Mantive os nomes separados e fechei o registro sem preencher os espaços em branco."
+    ],
+    "zh": [
+      "校内通讯软件里新增了一个联系人。摄影部崔由娜的名字下，收到了一条简短的消息。",
+      "李雪花。写下这三个字时，笔尖停了两次。",
+      "下一页写着附属人员李雪花，处理结果是永久废弃。",
+      "下一份记录写着李俊浩的名字。摄影部入部申请上，也有崔由娜的签名。",
+      "崔由娜。你最讨厌弄丢照片。",
+      "李俊浩、崔由娜、第十三个。我没有拿一个名字代替另一个，而是留着空白，关上了记录。"
+    ]
+  },
+  "historicalProtagonists": {
+    "cycle07": "Kim Taeho",
+    "cycle12": "Lee Junho",
+    "spokenAliasNodes": 18
+  }
+}

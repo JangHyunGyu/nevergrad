@@ -846,6 +846,7 @@ class GameEngine {
         if (scene.setFlag) this.state.setFlag(scene.setFlag);
         if (scene.setFlags) this.state.setFlags(scene.setFlags);
         if (scene.clearFlags) scene.clearFlags.forEach(f => this.state.clearFlag(f));
+        if (scene.reward) this.state.applySceneReward(scene.reward);
 
         // 스탯: 일반 씬의 stats는 무시 (선택지 결과에서만 변경)
         // scene.stats는 기존 호환용으로 남겨두되 적용하지 않음
@@ -1772,6 +1773,7 @@ class GameEngine {
 
     _resolveBranch(branches) {
         for (const b of branches) {
+            if (b.affinityLeader && this.state.getAffinityLeader() !== b.affinityLeader) continue;
             if (b.condition && !this._checkCondition(b.condition)) continue;
             if (b.excludeCondition && this.state.hasFlag(b.excludeCondition)) continue;
             return b.next;

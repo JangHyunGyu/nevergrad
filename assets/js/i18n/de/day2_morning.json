@@ -1,214 +1,350 @@
 {
-    "day2_morning_start": {
-        "text": "*-- Tag 2 --*"
-    },
-    "day2_morning_wakeup_1": {
-        "text": "*Der Wecker klingelt. Ich öffne die Augen. Tag 2.*"
-    },
-    "day2_morning_wakeup_2": {
-        "text": "*Die gestern gefalteten Unterlagen für den Schulwechsel liegen ordentlich am Tischrand. Meine Tasche ist leichter als gestern.*"
-    },
-    "day2_morning_wakeup_3": {
-        "text": "*Ich überprüfe mein Handy.*"
-    },
-    "day2_morning_wakeup_4": {
-        "text": "*Der Gruppenchat meiner alten Schule ... unter „Von 3 gelesen“ ist eine weitere graue Zeitzeile dazugekommen. Keine Antwort.*"
-    },
-    "day2_morning_wakeup_5": {
-        "text": "*Immer noch keine Antwort von Minsu.*"
-    },
-    "day2_morning_wakeup_6": {
-        "text": "*Eine Nachricht von Sea ist da. 01:03. Die Benachrichtigung „Schlaf gut“ stand direkt über der Warnung wegen niedrigem Akkustand.*"
-    },
-    "day2_morning_wakeup_7": {
-        "text": "*Ich komme am Schultor an ... und Sea steht da.*"
-    },
-    "day2_morning_gate_1": {
-        "text": "Hey! Ich habe gewartet, damit wir zusammen gehen können."
-    },
-    "day2_morning_gate_2": {
-        "text": "...Du hast gewartet? Wann bist du hierhergekommen?"
-    },
-    "day2_morning_gate_3": {
-        "text": "Ich bin gerade erst gekommen. Ich wohne nah dran. Auf dem Weg haben sich viele Kirschblütenblätter an dir verfangen."
-    },
-    "day2_morning_gate_4": {
-        "text": "*An den Spitzen von Seas Turnschuhen klebt Erde, die nass geworden und wieder getrocknet ist. Dafür, dass sie gerade erst gekommen ist, ist die Farbe zu dunkel.*\n\nErde an den Schuhen. Du bist doch eben gekommen? Warst du noch woanders?"
-    },
-    "day2_morning_gate_5": {
-        "text": "*Vom Tor zum Klassenzimmer. Sea geht neben mir.*"
-    },
-    "day2_morning_walk_1": {
-        "text": "Was hast du gestern gemacht? Zuhause."
-    },
-    "day2_morning_walk_2": {
-        "text": "Instantnudeln gemacht, auf meinem Handy gescrollt, dann schlafen gegangen. Nichts Besonderes."
-    },
-    "day2_morning_walk_3": {
-        "text": "...Isst du jeden Tag Instantnudeln, wenn du alleine wohnst?"
-    },
-    "day2_morning_walk_4": {
-        "text": "Nein, manchmal hole ich mir auch Fertiggerichte aus dem Supermarkt."
-    },
-    "day2_morning_walk_5": {
-        "text": "Das ist ja noch schlimmer."
-    },
-    "day2_morning_walk_6": {
-        "text": "*Sea will mir an die Stirn fassen, hält aber inne und sieht auf die leere Wasserflasche in meiner Hand.*"
-    },
-    "day2_morning_walk_7": {
-        "text": "Morgen bringe ich etwas mehr Mittagessen mit. Wenn etwas übrig bleibt, essen wir zusammen."
-    },
-    "day2_morning_walk_8": {
-        "text": "Ist es für dich okay, dich so sehr um mich zu kümmern? Ich freue mich, aber zusammen zur Schule zu gehen reicht schon. Du musst nicht auch auf mein Essen achten."
-    },
-    "day2_morning_walk_9": {
-        "text": "Es bleibt sowieso ständig etwas übrig. Wegwerfen wäre doch schade."
-    },
-    "day2_morning_walk_10": {
-        "text": "*Sea geht voran, ohne sich umzudrehen. Nur das Ende ihres Satzes klingt hell und leicht.*\n\nDu hast schon gesagt, dass es übrig ist. Bedanken darf ich mich trotzdem, oder?"
-    },
-    "day2_morning_walk_11": {
-        "text": "Ach ja, {name}, was für Musik hörst du so?"
-    },
-    "day2_morning_walk_12": {
-        "text": "Ich bin nicht wählerisch. Ich höre, was gut klingt."
-    },
-    "day2_morning_walk_13": {
-        "text": "Ich auch. Aber in letzter Zeit höre ich diese Sängerin oft. Ihre Stimme ist tief."
-    },
-    "day2_morning_walk_14": {
-        "text": "*Sie zeigt mir den Kanal einer Indieband.*\n\nHier. Vielleicht sagt dir der Titel was."
-    },
-    "day2_morning_walk_15": {
-        "text": "Oh, das Lied kenne ich. Es ist mal in meinem Algorithmus aufgetaucht."
-    },
-    "day2_morning_walk_16": {
-        "text": "Du hast dieses Lied mit einem Herz markiert."
-    },
-    "day2_morning_walk_17": {
-        "text": "*Seas Daumen hält beim Durchblättern der Playlist über dem Bildschirm inne.*\n\nWoher weißt du das? Habe ich gesagt, dass ich ein Herz gesetzt habe? Du schaust doch auf deine eigene Playlist."
-    },
-    "day2_morning_deja4_1": {
-        "text": "*Als ich mit Sea zum Unterricht gehe, bekomme ich Durst.*"
-    },
-    "day2_morning_deja4_2": {
-        "text": "Moment mal, wo ist der Getränkeautomat?"
-    },
-    "day2_morning_deja4_3": {
-        "text": "*Noch bevor ich etwas sagen kann, sind meine Füße schon zur Treppe in den zweiten Stock abgebogen.*"
-    },
-    "day2_morning_deja4_4": {
-        "text": "Ach, stimmt. Da ist ein Getränkeautomat. ...Aber {name}, woher wusstest du das?",
-        "choices": [
-            "Es mit Sea weglachen",
-            "Den Automaten noch mal prufen",
-            "Dieses Gefuhl merken"
-        ]
-    },
-    "day2_morning_deja4_5": {
-        "text": "*Das Schild im Flur hängt an der gegenüberliegenden Wand. Noch bevor ich dort hinsehe, hole ich meine Geldbörse heraus.*"
-    },
-    "day2_morning_deja4_6": {
-        "text": "Ach, den habe ich wohl im Vorbeigehen gesehen."
-    },
-    "day2_morning_class_1": {
-        "text": "Verstehe."
-    },
-    "day2_morning_class_2": {
-        "text": "*Sea lächelt und steckt ihr Handy in die Tasche. Die Daumenspitze, die die Ecke des Handys hält, ist weiß.*"
-    },
-    "day2_morning_class_3": {
-        "text": "*Eunsu macht die Anwesenheitskontrolle. Namen werden einzeln aufgerufen.*"
-    },
-    "day2_morning_class_4": {
-        "text": "*Eine Seite im Anwesenheitsbuch wird umgeblättert. Am Platz hinter mir scharrt kurz ein Stuhlbein über den Boden. Seolhwa sitzt dort.*\n\nFehlt nicht ein Name hinten? Ich glaube, den haben Sie nicht aufgerufen."
-    },
-    "day2_morning_class_5": {
-        "text": "*Der Lautsprecher über der Tafel summt kurz auf, und Eunsu schlägt die nächste Seite auf. Niemand dreht sich um.*"
-    },
-    "day2_morning_class_6": {
-        "text": "Übrigens, {name}, hast du etwas von deiner früheren Schule gehört?"
-    },
-    "day2_morning_class_7": {
-        "text": "...Nein, noch nichts."
-    },
-    "day2_morning_pres_1": {
-        "text": "Ein Schulwechsel dauert eine Weile, bis die Unterlagen durch sind. Sag mir Bescheid, wenn sie dich kontaktieren."
-    },
-    "day2_morning_pres_2": {
-        "text": "*Erste Stunde, Koreanisch. Eunsu unterrichtet die Klasse.*"
-    },
-    "day2_morning_pres_3": {
-        "text": "Heute haben wir Gruppenpräsentationen. Das Thema ist 'Mein Lieblingsort'."
-    },
-    "day2_morning_pres_4": {
-        "text": "*Laut Gruppeneinteilung bin ich mit Sea und einem Jungen zusammen, den ich kaum kenne.*\n\nWir drei also. Erst mal ein Thema."
-    },
-    "day2_morning_pres_5": {
-        "text": "Wir sind in der gleichen Gruppe! Was sollen wir machen? Wir müssen ein Thema auswählen."
-    },
-    "day2_morning_pres_6": {
-        "text": "Ein Café oder so? Ehrlich gesagt, ist doch alles in Ordnung, oder?"
-    },
-    "day2_morning_pres_7": {
-        "text": "Wie wäre die Bibliothek? Sie ist ruhig. Für einen Ort, den wir gesehen haben, finden wir wohl leichter Material. Magst du lieber etwas anderes?"
-    },
-    "day2_morning_pres_8": {
-        "text": "Gut. Soll ich die Folien machen?"
-    },
-    "day2_morning_pres_9": {
-        "text": "Ich präsentiere, und wie wäre es, wenn du die Materialien heraussuchst?"
-    },
-    "day2_morning_pres_10": {
-        "text": "Klar."
-    },
-    "day2_morning_pres_11": {
-        "text": "*Sea hebt den Daumen. Im Heft steht schon `Bibliotheksvortrag_{name}`.*\n\nDer Titel steht schon? Du entscheidest schnell."
-    },
-    "day2_morning_pres_12": {
-        "text": "*Unsere Gruppe war mit der Präsentation dran. Kaum stand ich vorne, flossen die Worte weiter, ohne zu stocken. Sea nickte, noch bevor ich nach dem nächsten Satz suchen musste.*"
-    },
-    "day2_morning_deja5_1": {
-        "text": "{name}, tolle Präsentation. Du musst an deiner früheren Schule viel präsentiert haben."
-    },
-    "day2_morning_deja5_2": {
-        "text": "Oh, ja. Ich habe das an meiner alten Schule auch ein paar Mal gemacht."
-    },
-    "day2_morning_deja5_3": {
-        "text": "*Als ich an das Klassenzimmer meiner alten Schule dachte, waren die Fenster und Tische da, nur mein Platz vor der Tafel blieb weiß. Trotzdem wurden meine Handflächen nicht feucht.*"
-    },
-    "day2_morning_deja5_4": {
-        "text": "*Pause. Eunsu kommt zu meinem Pult.*"
-    },
-    "day2_morning_deja5_5": {
-        "text": "Lebst du dich gut ein? Du gehst schneller als gestern."
-    },
-    "day2_morning_deja5_6": {
-        "text": "*Sie tätschelt leicht meine Schulter.*"
-    },
-    "day2_morning_deja5_7": {
-        "text": "*Die Schulter, die Eunsus Hand berührt hatte, wurde für einen Moment kalt. Ein metallischer Geruch blieb zurück, wie vom Kopierer im Lehrerzimmer.*"
-    },
-    "day2_morning_deja5_10": {
-        "text": "Sagen Sie es mir sofort, wenn Sie etwas stört. Ich bin dein Klassenlehrer."
-    },
-    "day2_morning_deja5_11": {
-        "text": "*Sie lächelt und geht weg.*"
-    },
-    "day2_morning_seolhwa_2": {
-        "text": "*Pause. Ich werfe einen Blick nach hinten. Meine Augen treffen die des Mädchens am Fenster.*"
-    },
-    "day2_morning_seolhwa_3": {
-        "text": "*...Dieses Mal schaut sie nicht weg. Sie beobachtet mich. Still.*"
-    },
-    "day2_morning_seolhwa_4": {
-        "text": "*Die Lippen der Schülerin bewegten sich ganz leicht. Kurz bevor die erste Silbe herauskam, legte sich vom Flur her das Geräusch eines geschobenen Stuhls darüber.*"
-    },
-    "day2_morning_seolhwa_5": {
-        "text": "*Die Person neben mir plapperte und warf einen Blick nach hinten, doch der Blick glitt ein Stück rechts an Seolhwa vorbei. Als die Lehrkraft \"Konzentriert euch!\" sagte, sah ich wieder nach vorn.*"
-    },
-    "day2_morning_end": {
-        "text": ""
-    }
+  "day2_morning_start": {
+    "text": "*-- Tag 2 --*"
+  },
+  "day2_morning_wakeup_1": {
+    "text": "*Der Wecker klingelt. Ich öffne die Augen. Tag 2.*"
+  },
+  "day2_morning_wakeup_2": {
+    "text": "*Die gestern gefalteten Unterlagen für den Schulwechsel liegen ordentlich am Tischrand. Meine Tasche ist leichter als gestern.*"
+  },
+  "day2_morning_wakeup_3": {
+    "text": "*Ich überprüfe mein Handy.*"
+  },
+  "day2_morning_wakeup_4": {
+    "text": "*Der Gruppenchat meiner alten Schule ... unter „Von 3 gelesen“ ist eine weitere graue Zeitzeile dazugekommen. Keine Antwort.*"
+  },
+  "day2_morning_wakeup_5": {
+    "text": "*Immer noch keine Antwort von Minsu.*"
+  },
+  "day2_morning_wakeup_6": {
+    "text": "*Eine Nachricht von Sea ist da. 01:03. Die Benachrichtigung „Schlaf gut“ stand direkt über der Warnung wegen niedrigem Akkustand.*"
+  },
+  "day2_morning_wakeup_7": {
+    "text": "*Ich komme am Schultor an ... und Sea steht da.*"
+  },
+  "day2_morning_gate_1": {
+    "text": "Hey! Ich habe gewartet, damit wir zusammen gehen können."
+  },
+  "day2_morning_gate_2": {
+    "text": "...Du hast gewartet? Wann bist du hierhergekommen?"
+  },
+  "day2_morning_gate_3": {
+    "text": "Ich bin gerade erst gekommen. Ich wohne nah dran. Auf dem Weg haben sich viele Kirschblütenblätter an dir verfangen."
+  },
+  "day2_morning_gate_4": {
+    "text": "*An den Spitzen von Seas Turnschuhen klebt Erde, die nass geworden und wieder getrocknet ist. Dafür, dass sie gerade erst gekommen ist, ist die Farbe zu dunkel.*\n\nErde an den Schuhen. Du bist doch eben gekommen? Warst du noch woanders?"
+  },
+  "day2_morning_gate_5": {
+    "text": "*Vom Tor zum Klassenzimmer. Sea geht neben mir.*"
+  },
+  "day2_morning_walk_1": {
+    "text": "Was hast du gestern gemacht? Zuhause."
+  },
+  "day2_morning_walk_2": {
+    "text": "Instantnudeln gemacht, auf meinem Handy gescrollt, dann schlafen gegangen. Nichts Besonderes."
+  },
+  "day2_morning_walk_3": {
+    "text": "...Isst du jeden Tag Instantnudeln, wenn du alleine wohnst?"
+  },
+  "day2_morning_walk_4": {
+    "text": "Nein, manchmal hole ich mir auch Fertiggerichte aus dem Supermarkt."
+  },
+  "day2_morning_walk_5": {
+    "text": "Das ist ja noch schlimmer."
+  },
+  "day2_morning_walk_6": {
+    "text": "*Sea will mir an die Stirn fassen, hält aber inne und sieht auf die leere Wasserflasche in meiner Hand.*"
+  },
+  "day2_morning_walk_7": {
+    "text": "Morgen bringe ich etwas mehr Mittagessen mit. Wenn etwas übrig bleibt, essen wir zusammen."
+  },
+  "day2_morning_walk_8": {
+    "text": "Ist es für dich okay, dich so sehr um mich zu kümmern? Ich freue mich, aber zusammen zur Schule zu gehen reicht schon. Du musst nicht auch auf mein Essen achten."
+  },
+  "day2_morning_walk_9": {
+    "text": "Es bleibt sowieso ständig etwas übrig. Wegwerfen wäre doch schade."
+  },
+  "day2_morning_walk_10": {
+    "text": "*Sea geht voran, ohne sich umzudrehen. Nur das Ende ihres Satzes klingt hell und leicht.*\n\nDu hast schon gesagt, dass es übrig ist. Bedanken darf ich mich trotzdem, oder?"
+  },
+  "day2_morning_walk_11": {
+    "text": "Ach ja, {name}, was für Musik hörst du so?"
+  },
+  "day2_morning_walk_12": {
+    "text": "Ich bin nicht wählerisch. Ich höre, was gut klingt."
+  },
+  "day2_morning_walk_13": {
+    "text": "Ich auch. Aber in letzter Zeit höre ich diese Sängerin oft. Ihre Stimme ist tief."
+  },
+  "day2_morning_walk_14": {
+    "text": "*Sie zeigt mir den Kanal einer Indieband.*\n\nHier. Vielleicht sagt dir der Titel was."
+  },
+  "day2_morning_walk_15": {
+    "text": "Oh, das Lied kenne ich. Es ist mal in meinem Algorithmus aufgetaucht."
+  },
+  "day2_morning_walk_16": {
+    "text": "Du hast dieses Lied mit einem Herz markiert."
+  },
+  "day2_morning_walk_17": {
+    "text": "*Seas Daumen hält beim Durchblättern der Playlist über dem Bildschirm inne.*\n\nWoher weißt du das? Habe ich gesagt, dass ich ein Herz gesetzt habe? Du schaust doch auf deine eigene Playlist."
+  },
+  "day2_morning_deja4_1": {
+    "text": "*Als ich mit Sea zum Unterricht gehe, bekomme ich Durst.*"
+  },
+  "day2_morning_deja4_2": {
+    "text": "Moment mal, wo ist der Getränkeautomat?"
+  },
+  "day2_morning_deja4_3": {
+    "text": "*Noch bevor ich etwas sagen kann, sind meine Füße schon zur Treppe in den zweiten Stock abgebogen.*"
+  },
+  "day2_morning_deja4_4": {
+    "text": "Ach, stimmt. Da ist ein Getränkeautomat. ...Aber {name}, woher wusstest du das?",
+    "choices": [
+      "Es mit Sea weglachen",
+      "Den Automaten noch mal prufen",
+      "Dieses Gefuhl merken"
+    ]
+  },
+  "day2_morning_deja4_5": {
+    "text": "*Das Schild im Flur hängt an der gegenüberliegenden Wand. Noch bevor ich dort hinsehe, hole ich meine Geldbörse heraus.*"
+  },
+  "day2_morning_deja4_6": {
+    "text": "Ach, den habe ich wohl im Vorbeigehen gesehen."
+  },
+  "day2_morning_class_1": {
+    "text": "Verstehe."
+  },
+  "day2_morning_class_2": {
+    "text": "*Sea lächelt und steckt ihr Handy in die Tasche. Die Daumenspitze, die die Ecke des Handys hält, ist weiß.*"
+  },
+  "day2_morning_class_3": {
+    "text": "*Eunsu macht die Anwesenheitskontrolle. Namen werden einzeln aufgerufen.*"
+  },
+  "day2_morning_class_4": {
+    "text": "*Eine Seite im Anwesenheitsbuch wird umgeblättert. Am Platz hinter mir scharrt kurz ein Stuhlbein über den Boden. Seolhwa sitzt dort.*\n\nFehlt nicht ein Name hinten? Ich glaube, den haben Sie nicht aufgerufen."
+  },
+  "day2_morning_class_5": {
+    "text": "*Der Lautsprecher über der Tafel summt kurz auf, und Eunsu schlägt die nächste Seite auf. Niemand dreht sich um.*"
+  },
+  "day2_morning_class_6": {
+    "text": "Übrigens, {name}, hast du etwas von deiner früheren Schule gehört?"
+  },
+  "day2_morning_class_7": {
+    "text": "...Nein, noch nichts."
+  },
+  "day2_morning_pres_1": {
+    "text": "Ein Schulwechsel dauert eine Weile, bis die Unterlagen durch sind. Sag mir Bescheid, wenn sie dich kontaktieren."
+  },
+  "day2_morning_pres_2": {
+    "text": "*Erste Stunde, Koreanisch. Eunsu unterrichtet die Klasse.*"
+  },
+  "day2_morning_pres_3": {
+    "text": "Heute haben wir Gruppenpräsentationen. Das Thema ist 'Mein Lieblingsort'."
+  },
+  "day2_morning_pres_4": {
+    "text": "*Laut Gruppeneinteilung bin ich mit Sea und einem Jungen zusammen, den ich kaum kenne.*\n\nWir drei also. Erst mal ein Thema."
+  },
+  "day2_morning_pres_5": {
+    "text": "Wir sind in der gleichen Gruppe! Was sollen wir machen? Wir müssen ein Thema auswählen."
+  },
+  "day2_morning_pres_6": {
+    "text": "Ein Café oder so? Ehrlich gesagt, ist doch alles in Ordnung, oder?"
+  },
+  "day2_morning_pres_7": {
+    "text": "Wie wäre die Bibliothek? Sie ist ruhig. Für einen Ort, den wir gesehen haben, finden wir wohl leichter Material. Magst du lieber etwas anderes?"
+  },
+  "day2_morning_pres_8": {
+    "text": "Gut. Soll ich die Folien machen?"
+  },
+  "day2_morning_pres_9": {
+    "text": "Ich präsentiere, und wie wäre es, wenn du die Materialien heraussuchst?"
+  },
+  "day2_morning_pres_10": {
+    "text": "Klar."
+  },
+  "day2_morning_pres_11": {
+    "text": "*Sea hebt den Daumen. Im Heft steht schon `Bibliotheksvortrag_{name}`.*\n\nDer Titel steht schon? Du entscheidest schnell."
+  },
+  "day2_morning_pres_12": {
+    "text": "*Unsere Gruppe war mit der Präsentation dran. Kaum stand ich vorne, flossen die Worte weiter, ohne zu stocken. Sea nickte, noch bevor ich nach dem nächsten Satz suchen musste.*"
+  },
+  "day2_morning_deja5_1": {
+    "text": "{name}, tolle Präsentation. Du musst an deiner früheren Schule viel präsentiert haben."
+  },
+  "day2_morning_deja5_2": {
+    "text": "Oh, ja. Ich habe das an meiner alten Schule auch ein paar Mal gemacht."
+  },
+  "day2_morning_deja5_3": {
+    "text": "*Als ich an das Klassenzimmer meiner alten Schule dachte, waren die Fenster und Tische da, nur mein Platz vor der Tafel blieb weiß. Trotzdem wurden meine Handflächen nicht feucht.*"
+  },
+  "day2_morning_deja5_4": {
+    "text": "*Pause. Eunsu kommt zu meinem Pult.*"
+  },
+  "day2_morning_deja5_5": {
+    "text": "Lebst du dich gut ein? Du gehst schneller als gestern."
+  },
+  "day2_morning_deja5_6": {
+    "text": "*Sie tätschelt leicht meine Schulter.*"
+  },
+  "day2_morning_deja5_7": {
+    "text": "*Die Schulter, die Eunsus Hand berührt hatte, wurde für einen Moment kalt. Ein metallischer Geruch blieb zurück, wie vom Kopierer im Lehrerzimmer.*"
+  },
+  "day2_morning_deja5_10": {
+    "text": "Sagen Sie es mir sofort, wenn Sie etwas stört. Ich bin dein Klassenlehrer."
+  },
+  "day2_morning_deja5_11": {
+    "text": "*Sie lächelt und geht weg.*"
+  },
+  "day2_morning_seolhwa_2": {
+    "text": "*Pause. Ich werfe einen Blick nach hinten. Meine Augen treffen die des Mädchens am Fenster.*"
+  },
+  "day2_morning_seolhwa_3": {
+    "text": "*...Dieses Mal schaut sie nicht weg. Sie beobachtet mich. Still.*"
+  },
+  "day2_morning_seolhwa_4": {
+    "text": "*Die Lippen der Schülerin bewegten sich ganz leicht. Kurz bevor die erste Silbe herauskam, legte sich vom Flur her das Geräusch eines geschobenen Stuhls darüber.*"
+  },
+  "day2_morning_seolhwa_5": {
+    "text": "*Die Person neben mir plapperte und warf einen Blick nach hinten, doch der Blick glitt ein Stück rechts an Seolhwa vorbei. Als die Lehrkraft \"Konzentriert euch!\" sagte, sah ich wieder nach vorn.*"
+  },
+  "day2_morning_end": {
+    "text": ""
+  },
+  "day2_morning_pen_1": {
+    "text": "Die Papierverpackung des Schreibgeräts auf dem Schreibtisch war noch am Reißverschlussgriff befestigt."
+  },
+  "day2_morning_pen_2": {
+    "text": "Sie sagten, Sie hätten gestern Ihr Federmäppchen vergessen. Leihen Sie sich weiterhin meine aus und alle meine Stifte landen auf Ihrem Schreibtisch."
+  },
+  "day2_morning_pen_3": {
+    "text": "Sea drehte mir den Deckel des Federmäppchens zu.",
+    "choices": [
+      "Wählen Sie einen schwarzen Kugelschreiber",
+      "Nehmen Sie zuerst die Spitze heraus",
+      "Sea nimmt, was er gibt"
+    ]
+  },
+  "day2_morning_pen_4": {
+    "text": "Ich nahm einen Sack und zeichnete eine Linie auf das Papier. Der Gummiteil, an dem der Daumen aufliegt, wurde dünn nach innen gedrückt."
+  },
+  "day2_morning_pen_5": {
+    "text": "Haben Sie verwechselt, was Sea verwendet hat? Die Papierverpackung war neu und hatte daher keine Faltspuren."
+  },
+  "day2_morning_pen_6": {
+    "text": "Wenn die Tinte nicht fließt, verwenden Sie ein anderes. Das habe ich im Laden ausprobiert."
+  },
+  "day2_morning_pen_7": {
+    "text": "Als ich den Kugelschreiber drehte, traf die gedrückte Stelle die Daumenseite meiner linken Hand. Normalerweise schreibe ich mit der rechten Hand."
+  },
+  "day2_morning_pen_8": {
+    "text": "Ich schätze, meine Hände sind stumpf, weil ich nicht gut geschlafen habe. Ich steckte die Stiftspitze hinein, nahm sie wieder heraus und schrieb meinen Namen auf das Papier."
+  },
+  "day2_morning_pen_choice": {
+    "text": "Sea legte sein Kinn auf den Schreibtisch und blickte auf den Stift, den ich in der Hand hielt.",
+    "choices": [
+      "Ich halte es mit meiner linken Hand.",
+      "Ist das wirklich neu?",
+      "Halten Sie es mit der rechten Hand"
+    ]
+  },
+  "day2_morning_pen_left_1": {
+    "text": "Als ich dazu überging, es mit der linken Hand zu halten, klebte die eingedrückte Rille an meinem Daumen. Der Stift drehte sich nicht, selbst wenn ich Kraft ausübte."
+  },
+  "day2_morning_pen_left_2": {
+    "text": "Die Enden kurzer horizontaler Linien, die auf Papier gezeichnet wurden, zitterten weniger als die, die mit der rechten Hand gezeichnet wurden."
+  },
+  "day2_morning_pen_left_3": {
+    "text": "Du kannst auch mit der linken Hand schreiben? Ich wusste es nicht."
+  },
+  "day2_morning_pen_left_4": {
+    "text": "Anstatt zu antworten, bewegte er den Stift in die andere Hand. Als Sie jung waren, haben Sie vielleicht mit beiden Händen gekritzelt."
+  },
+  "day2_morning_pen_tease_1": {
+    "text": "Sea berührte das Papieretikett am Griff und blieb stehen. Einmal stießen die Spitzen meiner Turnschuhe unter dem Schreibtisch zusammen."
+  },
+  "day2_morning_pen_tease_2": {
+    "text": "Ja. Ich habe mir gestern im Schreibwarenladen das beste Set ausgesucht. Möchten Sie die Quittung sehen?"
+  },
+  "day2_morning_pen_tease_3": {
+    "text": "Als ich sagte, es sei ein Witz, zeigte Sea mit einem Kugelschreiber auf den Einband meines Lehrbuchs und forderte mich auf, zuerst meinen Namen zu schreiben."
+  },
+  "day2_morning_pen_tease_4": {
+    "text": "Während Sea meinen Namen schrieb, nahm er das Etikett ab und warf es in den Papierkorb. Das Papier war gerade in zwei Teile gefaltet."
+  },
+  "day2_morning_pen_right_1": {
+    "text": "Ich korrigierte es mit meiner rechten Hand und drehte den Griff eine halbe Umdrehung, und dieses Mal rutschten meine Finger weniger ab."
+  },
+  "day2_morning_pen_right_2": {
+    "text": "Ist dieser Griff bequem? Wenn nicht, können wir in den Laden gehen und es umtauschen."
+  },
+  "day2_morning_pen_right_3": {
+    "text": "Der Stift kam gut heraus, also sagte ich, dass es sich nicht lohnt, ihn auszutauschen, und schloss den Reißverschluss."
+  },
+  "day2_morning_pen_corridor_branch": {
+    "text": ""
+  },
+  "day2_morning_pen_yuna_1": {
+    "text": "Als ich in den Flur ging, bevor es klingelte, stand Yuna am Fenster und rieb den Objektivdeckel mit einem Brillenputztuch ab."
+  },
+  "day2_morning_pen_yuna_2": {
+    "text": "Neues Federmäppchen. Hat Sea dir das gegeben?"
+  },
+  "day2_morning_pen_yuna_3": {
+    "text": "Auf die Frage, woher er das wisse, zeigte Yuna auf den gelben Aufkleber am Ende des Pakets und sagte, es sei die Marke eines örtlichen Schreibwarenladens."
+  },
+  "day2_morning_pen_yuna_4": {
+    "text": "Der Kameragurt blieb an der Ecke des Fensterrahmens hängen. Als ich meine Hand ausstreckte, um sie herauszunehmen, war Yuna der Erste, der die Kamera verdeckte."
+  },
+  "day2_morning_pen_yuna_5": {
+    "text": "Entschuldigung. Es ist alt. Dieser Verschluss löst sich leicht."
+  },
+  "day2_morning_pen_yuna_6": {
+    "text": "Als ich meine Hand senkte und den Weg frei machte, wickelte Yuna den Riemen kurz um und hängte ihn mir um das Handgelenk."
+  },
+  "day2_morning_pen_yuna_7": {
+    "text": "Aus dem Klassenzimmer hörte man, wie Stühle auf einmal geschoben wurden. Yuna faltete auch das Tuch und steckte es in seine Tasche."
+  },
+  "day2_morning_pen_yuna_8": {
+    "text": "Wir sehen uns nach dem Unterricht. Verlieren Sie nicht Ihren Stift."
+  },
+  "day2_morning_pen_eunsu_1": {
+    "text": "Ich traf den Lehrer am Flurfenster. Er stellte eine Schachtel Kreide auf die Anwesenheitsliste und hielt sie mit einer Hand fest."
+  },
+  "day2_morning_pen_eunsu_2": {
+    "text": "Dein Tisch ist schon aufgeräumt? Gestern hast du nach dem Klingeln noch in deiner Tasche gewühlt."
+  },
+  "day2_morning_pen_eunsu_3": {
+    "text": "Als sich der Kreidekasten neigte und er ihn mit der Hand festhielt, hielt der Lehrer den Kasten erneut und hielt dabei die Anwesenheitsliste an seiner Seite."
+  },
+  "day2_morning_pen_eunsu_4": {
+    "text": "Danke schön. Du bist auch gut mit der linken Hand."
+  },
+  "day2_morning_pen_eunsu_5": {
+    "text": "Ich schaute auf die Hand, die die Schachtel hielt. Zufälligerweise ging die Hand, die mir am nächsten war, zuerst aus."
+  },
+  "day2_morning_pen_eunsu_6": {
+    "text": "Schreiben Sie Ihren Namen auf den neuen Stift. Viele Studenten haben das Gleiche und geraten durcheinander."
+  },
+  "day2_morning_pen_eunsu_7": {
+    "text": "Nachdem ich Papier auf die Spitze eines Kugelschreibers geklebt und meinen Namen aufgeschrieben hatte, reichte mir der Lehrer sogar eine Schere."
+  },
+  "day2_morning_pen_eunsu_8": {
+    "text": "Ich ging zurück ins Klassenzimmer und gab Sea die Schere zurück. Die Übertragung begann und beide hoben den Kopf."
+  },
+  "day2_history_callback_5": {
+    "text": "Ich habe das Minsu-Chatfenster, das ich gestern Abend überprüft habe, erneut geöffnet. Die Nummer 1 war immer noch dieselbe, also habe ich den Bildschirm sofort ausgeschaltet."
+  },
+  "day2_history_callback_6": {
+    "text": "Er sagte, das Foto, das er in das Notizbuch gelegt hatte, sei nicht gefaltet. Als Yuna diese Worte hörte, hielt er den Kameragurt etwas locker."
+  },
+  "day2_history_callback_7": {
+    "text": "Als ich erwähnte, dass die App wieder aktiviert wurde, forderte mich der Lehrer auf, die Installationsanleitung mitzubringen. Ich habe es nicht auf morgen verschoben."
+  },
+  "day2_expansion_action_2_a": {
+    "text": "Ich habe testweise mit einem schwarzen Kugelschreiber eine Linie gezeichnet. Als die Tinte nicht ausging, versuchte Sea, seinen Namen in das leere Feld zu schreiben."
+  },
+  "day2_expansion_action_2_b": {
+    "text": "Ich drückte zweimal auf die Mine des Druckbleistifts. Sea legte ein leeres Blatt Papier auf den Schreibtisch und sagte, es würde zerbrechen, wenn man es zu lange herausziehe."
+  }
 }

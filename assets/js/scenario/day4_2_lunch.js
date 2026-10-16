@@ -72,10 +72,11 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_yuna_6"
     },
     "day4_lunch_yuna_6": {
-        character: null,
-        // 카메라 꺼냄, 배터리 거의 없음
-        setFlags: ["found_yuna_camera"],
-        next: "day4_lunch_yuna_7"
+        "character": null,
+        "setFlags": [
+            "found_yuna_camera"
+        ],
+        "next": "day4_lunch_darkroom_1"
     },
 
     // ── 카메라 사진 확인 ──
@@ -135,11 +136,13 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_yuna_15"
     },
     "day4_lunch_yuna_15": {
-        character: null,
-        // 발소리가 들린다. 누군가 오고 있다.
-        sfx: { file: "sfx_footsteps.mp3", volume: 0.65 },
-        unskippable: true,
-        next: "day4_lunch_yuna_16"
+        "character": null,
+        "sfx": {
+            "file": "sfx_footsteps.mp3",
+            "volume": 0.65
+        },
+        "unskippable": true,
+        "next": "day4_lunch_yuna_hide_1"
     },
     "day4_lunch_yuna_16": {
         character: null,
@@ -200,9 +203,8 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_2"
     },
     "day4_lunch_nurse_2": {
-        character: null,
-        // 앰플 라벨 'M-13'
-        next: "day4_lunch_nurse_3"
+        "character": null,
+        "next": "day4_lunch_nurse_tray_1"
     },
     "day4_lunch_nurse_3": {
         character: "riin_startled",
@@ -284,12 +286,35 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_15"
     },
     "day4_lunch_nurse_15": {
-        // 웃는 얼굴, 부드러운 목소리, 주사기
-        character: "riin_strained_smile",
-        choices: [
-            { next: "day4_lunch_nurse_16", stats: { riin: { affinity: -3 } } },
-            { next: "day4_lunch_nurse_16", stats: { riin: { affinity: 2 } } },
-            { next: "day4_lunch_nurse_16", stats: { yuna: { affinity: 2 }, seolhwa: { affinity: 1 } } }
+        "character": "riin_strained_smile",
+        "choices": [
+            {
+                "next": "day4_lunch_nurse_16",
+                "stats": {
+                    "riin": {
+                        "affinity": -3
+                    }
+                }
+            },
+            {
+                "next": "day4_lunch_nurse_ask_name",
+                "stats": {
+                    "riin": {
+                        "affinity": 2
+                    }
+                }
+            },
+            {
+                "next": "day4_lunch_nurse_ask_yuna",
+                "stats": {
+                    "yuna": {
+                        "affinity": 2
+                    },
+                    "seolhwa": {
+                        "affinity": 1
+                    }
+                }
+            }
         ]
     },
     "day4_lunch_nurse_16": {
@@ -312,9 +337,8 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_roof_2"
     },
     "day4_lunch_roof_2": {
-        character: null,
-        // 난간 밑 글씨, 칼로 깊게 판 흔적
-        next: "day4_lunch_roof_3"
+        "character": null,
+        "next": "day4_lunch_roof_etch_1"
     },
     "day4_lunch_roof_3": {
         character: null,
@@ -355,5 +379,567 @@ Object.assign(SCENARIO[4], {
         changeSlot: "afterschool",
         unskippable: true,
         next: "day4_after_start"
+    }
+});
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[4], {
+    "day4_lunch_nurse_ask_name": {
+        "character": "riin_cold",
+        "next": "day4_lunch_nurse_ask_name_2"
+    },
+    "day4_lunch_nurse_ask_name_2": {
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_key_1"
+    },
+    "day4_lunch_nurse_ask_yuna": {
+        "character": "riin_cold",
+        "next": "day4_lunch_nurse_ask_yuna_2"
+    },
+    "day4_lunch_nurse_ask_yuna_2": {
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_yuna_1"
+    },
+    "day4_lunch_nurse_leave_ask": {
+        "background": "corridor",
+        "character": null,
+        "setFlags": [
+            "saw_riin_syringe"
+        ],
+        "next": "day4_lunch_end"
+    },
+    "day4_lunch_nurse_leave_yuna": {
+        "background": "corridor",
+        "character": null,
+        "setFlags": [
+            "saw_riin_syringe"
+        ],
+        "next": "day4_lunch_end"
+    },
+    "day4_lunch_darkroom_1": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_2"
+    },
+    "day4_lunch_darkroom_2": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_3"
+    },
+    "day4_lunch_darkroom_3": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_4"
+    },
+    "day4_lunch_darkroom_4": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_5"
+    },
+    "day4_lunch_darkroom_5": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_6",
+        "branches": [
+            {
+                "condition": "received_yuna_photo",
+                "next": "day4_history_callback_28"
+            }
+        ]
+    },
+    "day4_lunch_darkroom_6": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_7",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle12_yuna",
+                "duration": 450
+            }
+        }
+    },
+    "day4_lunch_darkroom_7": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_8"
+    },
+    "day4_lunch_darkroom_8": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_9"
+    },
+    "day4_lunch_darkroom_9": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "choices": [
+            {
+                "next": "day4_expansion_action_6_a"
+            },
+            {
+                "next": "day4_expansion_action_6_b"
+            },
+            {
+                "next": "day4_lunch_darkroom_10"
+            }
+        ]
+    },
+    "day4_lunch_darkroom_10": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_11",
+        "branches": [
+            {
+                "condition": "found_yuna_camera",
+                "next": "day4_history_callback_29"
+            }
+        ]
+    },
+    "day4_lunch_darkroom_11": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_darkroom_12"
+    },
+    "day4_lunch_darkroom_12": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "next": "day4_lunch_yuna_7"
+    },
+    "day4_lunch_yuna_hide_1": {
+        "character": null,
+        "next": "day4_lunch_yuna_hide_2"
+    },
+    "day4_lunch_yuna_hide_2": {
+        "character": null,
+        "next": "day4_lunch_yuna_hide_3"
+    },
+    "day4_lunch_yuna_hide_3": {
+        "character": null,
+        "next": "day4_lunch_yuna_hide_4"
+    },
+    "day4_lunch_yuna_hide_4": {
+        "character": null,
+        "next": "day4_lunch_yuna_breath_choice"
+    },
+    "day4_lunch_yuna_breath_choice": {
+        "timedChoice": 6500,
+        "timeoutNext": "day4_lunch_yuna_breath_fail_1",
+        "glitch": {
+            "chaseFootsteps": {
+                "fromPan": -0.9,
+                "toPan": 0.9,
+                "steps": 8,
+                "interval": 220
+            }
+        },
+        "choices": [
+            {
+                "next": "day4_lunch_yuna_breath_safe_1",
+                "setFlags": [
+                    "hid_from_eunsu_lunch"
+                ]
+            },
+            {
+                "next": "day4_lunch_yuna_breath_fail_1",
+                "stats": {
+                    "eunsu": {
+                        "affinity": 3
+                    }
+                }
+            }
+        ]
+    },
+    "day4_lunch_yuna_breath_safe_1": {
+        "character": null,
+        "next": "day4_lunch_yuna_breath_safe_2"
+    },
+    "day4_lunch_yuna_breath_safe_2": {
+        "character": null,
+        "next": "day4_lunch_yuna_breath_safe_3"
+    },
+    "day4_lunch_yuna_breath_safe_3": {
+        "character": null,
+        "next": "day4_lunch_yuna_breath_safe_4"
+    },
+    "day4_lunch_yuna_breath_safe_4": {
+        "character": null,
+        "next": "day4_lunch_yuna_breath_safe_5"
+    },
+    "day4_lunch_yuna_breath_safe_5": {
+        "character": null,
+        "next": "day4_lunch_yuna_16"
+    },
+    "day4_lunch_yuna_breath_fail_1": {
+        "character": "eunsu_cold",
+        "next": "day4_lunch_yuna_breath_fail_2"
+    },
+    "day4_lunch_yuna_breath_fail_2": {
+        "character": "eunsu_cold",
+        "next": "day4_lunch_yuna_breath_fail_3"
+    },
+    "day4_lunch_yuna_breath_fail_3": {
+        "character": "eunsu_cold",
+        "next": "day4_lunch_yuna_breath_fail_4"
+    },
+    "day4_lunch_yuna_breath_fail_4": {
+        "character": "eunsu_cold",
+        "next": "day4_lunch_yuna_breath_fail_5"
+    },
+    "day4_lunch_yuna_breath_fail_5": {
+        "character": "eunsu_cold",
+        "next": "day4_lunch_end"
+    },
+    "day4_lunch_nurse_tray_1": {
+        "background": "closeup_m13_ampoule",
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_tray_2"
+    },
+    "day4_lunch_nurse_tray_2": {
+        "background": "closeup_m13_ampoule",
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_tray_3"
+    },
+    "day4_lunch_nurse_tray_3": {
+        "background": "closeup_m13_ampoule",
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_tray_4"
+    },
+    "day4_lunch_nurse_tray_4": {
+        "background": "closeup_m13_ampoule",
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_tray_5"
+    },
+    "day4_lunch_nurse_tray_5": {
+        "background": "closeup_m13_ampoule",
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_tray_6"
+    },
+    "day4_lunch_nurse_tray_6": {
+        "background": "closeup_m13_ampoule",
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_tray_7",
+        "branches": [
+            {
+                "condition": "saw_m13_ampoule",
+                "next": "day4_history_callback_30"
+            }
+        ]
+    },
+    "day4_lunch_nurse_tray_7": {
+        "background": "closeup_m13_ampoule",
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_tray_8",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle07_seolhwa",
+                "duration": 450
+            }
+        }
+    },
+    "day4_lunch_nurse_tray_8": {
+        "background": "closeup_m13_ampoule",
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_3"
+    },
+    "day4_lunch_nurse_key_1": {
+        "character": "riin_pain",
+        "setFlags": [
+            "riin_hinted_key"
+        ],
+        "next": "day4_lunch_nurse_key_2"
+    },
+    "day4_lunch_nurse_key_2": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_key_3"
+    },
+    "day4_lunch_nurse_key_3": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_key_4"
+    },
+    "day4_lunch_nurse_key_4": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_key_5"
+    },
+    "day4_lunch_nurse_key_5": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_key_6",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle12_yuna",
+                "duration": 450
+            }
+        }
+    },
+    "day4_lunch_nurse_key_6": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_key_7"
+    },
+    "day4_lunch_nurse_key_7": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_key_8",
+        "branches": [
+            {
+                "condition": "tried_kill_safety_app",
+                "next": "day4_history_callback_31"
+            }
+        ]
+    },
+    "day4_lunch_nurse_key_8": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_leave_ask"
+    },
+    "day4_lunch_nurse_yuna_1": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_yuna_2"
+    },
+    "day4_lunch_nurse_yuna_2": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_yuna_3"
+    },
+    "day4_lunch_nurse_yuna_3": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_yuna_4"
+    },
+    "day4_lunch_nurse_yuna_4": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_yuna_5"
+    },
+    "day4_lunch_nurse_yuna_5": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_yuna_6"
+    },
+    "day4_lunch_nurse_yuna_6": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_leave_yuna"
+    },
+    "day4_lunch_roof_etch_1": {
+        "background": "closeup_rooftop_etching",
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_2"
+    },
+    "day4_lunch_roof_etch_2": {
+        "background": "closeup_rooftop_etching",
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_3"
+    },
+    "day4_lunch_roof_etch_3": {
+        "background": "closeup_rooftop_etching",
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_4"
+    },
+    "day4_lunch_roof_etch_4": {
+        "background": "closeup_rooftop_etching",
+        "character": "seolhwa_warning",
+        "choices": [
+            {
+                "next": "day4_expansion_action_7_a"
+            },
+            {
+                "next": "day4_expansion_action_7_b"
+            },
+            {
+                "next": "day4_lunch_roof_etch_5"
+            }
+        ]
+    },
+    "day4_lunch_roof_etch_5": {
+        "background": "closeup_rooftop_etching",
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_6",
+        "branches": [
+            {
+                "condition": "tested_left_grip",
+                "next": "day4_history_callback_32"
+            }
+        ]
+    },
+    "day4_lunch_roof_etch_6": {
+        "background": "closeup_rooftop_etching",
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_7"
+    },
+    "day4_lunch_roof_etch_7": {
+        "background": "closeup_rooftop_etching",
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_8",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle07_seolhwa",
+                "duration": 450
+            }
+        }
+    },
+    "day4_lunch_roof_etch_8": {
+        "background": "closeup_rooftop_etching",
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_9"
+    },
+    "day4_lunch_roof_etch_9": {
+        "background": "closeup_rooftop_etching",
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_memory_choice"
+    },
+    "day4_lunch_roof_memory_choice": {
+        "choices": [
+            {
+                "next": "day4_lunch_roof_fence_1",
+                "stats": {
+                    "seolhwa": {
+                        "affinity": 2
+                    }
+                }
+            },
+            {
+                "next": "day4_lunch_roof_exit_1",
+                "stats": {
+                    "seolhwa": {
+                        "affinity": 2
+                    }
+                }
+            }
+        ]
+    },
+    "day4_lunch_roof_fence_1": {
+        "character": "seolhwa_sad",
+        "glitch": {
+            "panSFX": "sfx_whisper_seolhwa",
+            "pan": -0.85
+        },
+        "next": "day4_lunch_roof_fence_2"
+    },
+    "day4_lunch_roof_fence_2": {
+        "character": "seolhwa_sad",
+        "next": "day4_lunch_roof_fence_3"
+    },
+    "day4_lunch_roof_fence_3": {
+        "character": "seolhwa_sad",
+        "next": "day4_lunch_roof_fence_4"
+    },
+    "day4_lunch_roof_fence_4": {
+        "character": "seolhwa_sad",
+        "next": "day4_lunch_roof_fence_5"
+    },
+    "day4_lunch_roof_fence_5": {
+        "character": "seolhwa_sad",
+        "next": "day4_lunch_roof_second_choice"
+    },
+    "day4_lunch_roof_exit_1": {
+        "character": "seolhwa_sad",
+        "glitch": {
+            "panSFX": "sfx_whisper_seolhwa",
+            "pan": -0.85
+        },
+        "next": "day4_lunch_roof_exit_2"
+    },
+    "day4_lunch_roof_exit_2": {
+        "character": "seolhwa_sad",
+        "next": "day4_lunch_roof_exit_3"
+    },
+    "day4_lunch_roof_exit_3": {
+        "character": "seolhwa_sad",
+        "next": "day4_lunch_roof_exit_4"
+    },
+    "day4_lunch_roof_exit_4": {
+        "character": "seolhwa_sad",
+        "next": "day4_lunch_roof_exit_5",
+        "branches": [
+            {
+                "condition": "found_washed_note",
+                "next": "day4_history_callback_33"
+            }
+        ]
+    },
+    "day4_lunch_roof_exit_5": {
+        "character": "seolhwa_sad",
+        "next": "day4_lunch_roof_second_choice"
+    },
+    "day4_lunch_roof_second_choice": {
+        "choices": [
+            {
+                "next": "day4_lunch_roof_record_1",
+                "setFlags": [
+                    "promised_check_cycle07"
+                ],
+                "stats": {
+                    "seolhwa": {
+                        "affinity": 2
+                    }
+                }
+            },
+            {
+                "next": "day4_lunch_roof_left_1",
+                "setFlags": [
+                    "mapped_left_exit"
+                ],
+                "stats": {
+                    "yuna": {
+                        "affinity": 1
+                    }
+                }
+            }
+        ]
+    },
+    "day4_lunch_roof_record_1": {
+        "character": null,
+        "next": "day4_lunch_roof_record_2"
+    },
+    "day4_lunch_roof_record_2": {
+        "character": null,
+        "next": "day4_lunch_roof_record_3"
+    },
+    "day4_lunch_roof_record_3": {
+        "character": null,
+        "next": "day4_lunch_roof_3"
+    },
+    "day4_lunch_roof_left_1": {
+        "character": null,
+        "next": "day4_lunch_roof_left_2"
+    },
+    "day4_lunch_roof_left_2": {
+        "character": null,
+        "next": "day4_lunch_roof_left_3"
+    },
+    "day4_lunch_roof_left_3": {
+        "character": null,
+        "next": "day4_lunch_roof_3"
+    },
+    "day4_history_callback_28": {
+        "character": null,
+        "next": "day4_lunch_darkroom_6"
+    },
+    "day4_history_callback_29": {
+        "character": null,
+        "next": "day4_lunch_darkroom_11"
+    },
+    "day4_history_callback_30": {
+        "character": "riin_strained_smile",
+        "next": "day4_lunch_nurse_tray_7"
+    },
+    "day4_history_callback_31": {
+        "character": "riin_pain",
+        "next": "day4_lunch_nurse_key_8"
+    },
+    "day4_history_callback_32": {
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_6"
+    },
+    "day4_history_callback_33": {
+        "character": "seolhwa_sad",
+        "next": "day4_lunch_roof_exit_5"
+    },
+    "day4_expansion_action_6_a": {
+        "character": null,
+        "next": "day4_lunch_darkroom_10"
+    },
+    "day4_expansion_action_6_b": {
+        "character": null,
+        "next": "day4_lunch_darkroom_10"
+    },
+    "day4_expansion_action_7_a": {
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_5"
+    },
+    "day4_expansion_action_7_b": {
+        "character": "seolhwa_warning",
+        "next": "day4_lunch_roof_etch_5"
     }
 });

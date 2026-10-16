@@ -1,318 +1,492 @@
 {
-    "day3_night_start": {
-        "text": "*I'm home.*"
-    },
-    "day3_night_start_2": {
-        "text": "*I took a shower and came out. My phone screen is lit up. Notifications.*"
-    },
-    "day3_night_sea_msg": {
-        "text": "*Sea -- 10:02 PM*\n\n{name}, today was fun. Let's go together tomorrow."
-    },
-    "day3_night_sea_msg_2": {
-        "text": "*I didn't read it. I put the phone down while brushing my teeth.*"
-    },
-    "day3_night_sea_msg_3": {
-        "text": "*1 minute later. Buzz. Sea — 10:03 PM*\n\nReply before you go to sleep"
-    },
-    "day3_night_sea_msg_4": {
-        "text": "*3 minutes later. Buzz. Sea — 10:06 PM*\n\n..."
-    },
-    "day3_night_sea_msg_5": {
-        "text": "*A speech bubble with only three dots clings to the bottom of the chat window.*"
-    },
-    "day3_night_sea_msg_6": {
-        "text": "*2 minutes later. Buzz. Sea — 10:08 PM*\n\n{name}?"
-    },
-    "day3_night_sea_msg_7": {
-        "text": "*Buzz. Sea — 10:11 PM*\n\nWhy aren't you reading my messages?"
-    },
-    "day3_night_sea_msg_8": {
-        "text": "*Buzz. Sea — 10:15 PM*\n\nYou're sleeping... right?"
-    },
-    "day3_night_sea_msg_9": {
-        "text": "*6 messages in 13 minutes. The unread bubbles fill an entire screen. The timestamp on the last bubble keeps catching my eye.*"
-    },
-    "day3_night_sea_msg_10": {
-        "text": "*I flipped the phone face down. It still buzzes.*"
-    },
-    "day3_night_sea_msg_11": {
-        "text": "*Buzz. Again. I told myself I wouldn't check the screen, but my hand reaches for it.*"
-    },
-    "day3_night_sea_msg_12": {
-        "text": "*Sea — 10:19 PM*\n\nYou left the window open, right? Air it out before bed"
-    },
-    "day3_night_sea_msg_13": {
-        "text": "*The window? My thumb stops over the reply button.*"
-    },
-    "day3_night_sea_msg_14": {
-        "text": "*I look at the window. The curtain is open. It's dark outside. I can't see anything.*"
-    },
-    "day3_night_sea_msg_15": {
-        "text": "*In the glass window of the building across from me, the small rectangle of my room is reflected.*"
-    },
-    "day3_night_sea_msg_16": {
-        "text": "*I closed the curtain. Put the phone in the drawer. Closed the drawer.*"
-    },
-    "day3_night_sea_msg_17": {
-        "text": "*...It buzzes again from inside the drawer.*"
-    },
-    "day3_night_bleed": {
-        "text": "*I lie under the covers in the dark. A rectangle of streetlight falls across the ceiling.*"
-    },
-    "day3_night_bleed_2": {
-        "text": "*The photos Yuna showed me. Other name tags line up against the inside of my eyelids.*"
-    },
-    "day3_night_bleed_3": {
-        "text": "*The name tags change, but the small spot near the eye stays in the same place.*"
-    },
-    "day3_night_bleed_4": {
-        "text": "*Even with my eyes shut, the 13 ID photos come to mind. The hair colors and name tags differ, but the eyes are the same in every one.*"
-    },
-    "day3_night_bleed_no_yuna_1": {
-        "text": "*I never saw the photos. The note, the writing on the wall, and Sea's messages all overlap.*"
-    },
-    "day3_night_bleed_no_yuna_2": {
-        "text": "*I memorized the direction of the school staircases before my classmates' names.*"
-    },
-    "day3_night_bleed_no_yuna_3": {
-        "text": "*The harder I try to trace it, the more gaps appear.*"
-    },
-    "day3_night_bleed_5": {
-        "text": "*When I close my eyes, the scenes connect in sequence.*"
-    },
-    "day3_night_bleed_6": {
-        "text": "*The hallway on the first day. My feet turned toward the vending machine before the sign could tell me where to go.*"
-    },
-    "day3_night_bleed_7": {
-        "text": "*Before I saw the nameplate for the faculty office, my hand was already pointing down the right hallway.*"
-    },
-    "day3_night_bleed_7a": {
-        "text": "*The yellow anti-slip tape on the second-floor landing. That color felt familiar from the very first day I saw it.*"
-    },
-    "day3_night_bleed_8": {
-        "text": "*The stroke bending left inside the locker. It's the same angle as the final stroke in my notebook.*"
-    },
-    "day3_night_bleed_9": {
-        "text": "*Seolhwa's gaze always reached my left hand before my right.*"
-    },
-    "day3_night_bleed_10": {
-        "text": "*Sea never once packed a side dish I hated in her lunchbox.*"
-    },
-    "day3_night_bleed_10a": {
-        "text": "*Minsu's speech bubble was spelled far too neatly. His profile picture was still the gray default image.*"
-    },
-    "day3_night_bleed_11": {
-        "text": "*When I try to picture the gate of my old school, white walls appear first. Nothing comes after.*"
-    },
-    "day3_night_bleed_12": {
-        "text": "*In my old classroom, a faceless teacher stands in front of the white wall and the blackboard. In the seat beside me, only a desk's shadow remains.*"
-    },
-    "day3_night_bleed_13": {
-        "text": "*I breathed in. The ceiling pattern looked one square closer at a time.*"
-    },
-    "day3_night_bleed_14": {
-        "text": "***There is only the phrase 'old school,' and no place attached to it.***"
-    },
-    "day3_night_bleed_15": {
-        "text": "*I sat up. Sweat beads on my forehead. My hands are shaking. The plastic feel of the name tag still clings to my fingertips.*"
-    },
-    "day3_night_stat_crack": {
-        "text": "*I lay back down. Closed my eyes.*"
-    },
-    "day3_night_stat_crack_2": {
-        "text": "*The compartments of Sea's lunchbox. The warmth of Ms. Eunsu's palm. The rim of the teacup Riin handed me.*"
-    },
-    "day3_night_stat_crack_3": {
-        "text": "*Everything faces the same direction: toward where I sit.*"
-    },
-    "day3_night_stat_crack_4": {
-        "text": "*The space between the bed and the desk looks narrower than usual. It isn't as if the room has shrunk.*"
-    },
-    "day3_night_stat_crack_4a": {
-        "text": "*I drew a deep breath, but it stopped halfway in.*"
-    },
-    "day3_night_stat_crack_5": {
-        "text": "*...Something just crossed the screen.*"
-    },
-    "day3_night_stat_crack_6": {
-        "text": "*No. Nothing's there. My eyes are just tired.*"
-    },
-    "day3_night_ft_nightmare": {
-        "text": "*I close my eyes. Images flood through the darkness.*"
-    },
-    "day3_night_ft_nightmare_2": {
-        "text": "*I'm walking down a hallway. No end in sight. Each step I take — the hallway stretches longer.*"
-    },
-    "day3_night_ft_nightmare_3": {
-        "text": "*I opened a classroom door. Same classroom. Opened another. Same classroom. Same seats, same people. Same smiles. All looking at me.*"
-    },
-    "day3_night_ft_nightmare_4": {
-        "text": "*Twelve rows of names crowd the blackboard, including Kim Dojin, Park Jaewon, and Lee Sehun. Only the bottom row is empty. That is my place.*"
-    },
-    "day3_night_ft_nightmare_5": {
-        "text": "*I look at the clock. It has stopped. No—the second hand is moving backward.*"
-    },
-    "day3_night_ft_nightmare_6": {
-        "text": "*A voice from somewhere. Close, far, all around. ...But there's no door out.*"
-    },
-    "day3_night_ft_nightmare_ghost": {
-        "text": "Run."
-    },
-    "day3_night_wall": {
-        "text": "*I can't fall asleep. After tossing and turning for a long time, I finally drifted off.*"
-    },
-    "day3_night_wall_2": {
-        "text": "*3 AM. I got up to use the bathroom. My head feels heavy.*"
-    },
-    "day3_night_wall_3": {
-        "text": "*I walk down the hallway without turning on the light. The floor is cold under my feet. ...I stopped.*"
-    },
-    "day3_night_wall_4": {
-        "text": "*There is writing on the wall. Faintly visible in the streetlight. In pencil. In my handwriting.*"
-    },
-    "day3_night_wall_5": {
-        "text": "***'Get out of here'***"
-    },
-    "day3_night_wall_6": {
-        "text": "*I stopped breathing. I turned on the light. The fluorescent flickers on. The writing becomes clearly visible.*"
-    },
-    "day3_night_wall_7": {
-        "text": "*When I move closer to the wall, I smell graphite. The smell of a pencil just sharpened.*"
-    },
-    "day3_night_wall_8": {
-        "text": "*I touched the writing with my hand. Pencil graphite smudges onto my fingertips. This was written recently. It's not a dried mark.*"
-    },
-    "day3_night_wall_9": {
-        "text": "*I looked at my hands. Right index finger. Clean. ...Left hand. Pencil marks on my left index and middle finger. The first joint of my index finger is blackened.*"
-    },
-    "day3_night_wall_10": {
-        "text": "*The strokes are left-handed. The letters press down a little more as they move from left to right.*"
-    },
-    "day3_night_wall_11": {
-        "text": "*I looked around the room. A pencil is lying on the desk. I didn't leave it there earlier. I put it in the drawer. There is a little graphite on the drawer handle, too.*"
-    },
-    "day3_night_wall_12": {
-        "text": "*The pencil is on the desk and graphite marks the drawer handle. I remember nothing between those two moments.*"
-    },
-    "day3_night_seolhwa": {
-        "text": "*I am looking at the writing on the wall. The air changes. The temperature drops. The fluorescent light flickers once.*"
-    },
-    "day3_night_seolhwa_2": {
-        "text": "*Someone is standing in the corner of the room.*"
-    },
-    "day3_night_seolhwa_3": {
-        "text": "*Cold creeps up from my toes. The room temperature just changed.*"
-    },
-    "day3_night_seolhwa_4": {
-        "text": "*It is the girl by the window. Dark brown hair. A school uniform. My room in the dead of night. The door is locked, and the entryway sensor light never came on.*"
-    },
-    "day3_night_seolhwa_4a": {
-        "text": "I didn't hear the front door or any footsteps. How did you get in? I locked the door."
-    },
-    "day3_night_seolhwa_4b": {
-        "text": "*Seolhwa looks at me, the corners of her eyes wet.*\n\nThere's no time for that. Listen first."
-    },
-    "day3_night_seolhwa_5": {
-        "text": "Five days."
-    },
-    "day3_night_seolhwa_6": {
-        "text": "Until what?"
-    },
-    "day3_night_seolhwa_6a": {
-        "text": "*I can't get a word out. My lips are dry.*"
-    },
-    "day3_night_seolhwa_7": {
-        "text": "Within five days... you have to get out of here."
-    },
-    "day3_night_seolhwa_7a": {
-        "text": "*Her voice doesn't seem to come from the room. It follows a beat late.*\n\nYour voice… I hear it a beat late."
-    },
-    "day3_night_seolhwa_8": {
-        "text": "Before you end up like me."
-    },
-    "day3_night_seolhwa_9": {
-        "text": "Like you? What happened to you?"
-    },
-    "day3_night_seolhwa_10": {
-        "text": "*Seolhwa reaches toward my face. Her fingertips stop just before touching my cheek.*\n\nWait, your hand…"
-    },
-    "day3_night_seolhwa_11": {
-        "text": "*Her fingertips blur in front of my cheek. The streetlight outside the window passes straight through the back of her hand.*\n\nYour hand… It's fading."
-    },
-    "day3_night_seolhwa_11a": {
-        "text": "*A wet line on her cheek vanishes when I blink.*\n\nWere you crying? Wait. Don't disappear."
-    },
-    "day3_night_seolhwa_12": {
-        "text": "Remember. Your left hand."
-    },
-    "day3_night_seolhwa_13": {
-        "text": "*I blink. The girl is gone. There is nothing where she stood. No footprints on the floor.*"
-    },
-    "day3_night_seolhwa_14": {
-        "text": "*Only the air where I was standing is cold. The fluorescent light still hums, very low.*"
-    },
-    "day3_night_seolhwa_15": {
-        "text": "*I went to where she had been standing. Touched the floor. It's cold. Definitely colder than the surrounding area. ...That's all.*"
-    },
-    "day3_night_seolhwa_16": {
-        "text": "*The writing on the wall is still there. 'Get out of here.' I look at my left hand. My pencil-stained fingers slowly curl, then straighten.*"
-    },
-    "day3_night_seolhwa_17": {
-        "text": "*The wall clock's second hand sounds unnaturally clear. With every tick, my eyes return to the writing on the wall.*"
-    },
-    "day3_night_seolhwa_18": {
-        "text": "*Between the ticking of the clock, scenes from today cut in out of order.*"
-    },
-    "day3_night_choice": {
-        "text": "*...*",
-        "choices": [
-            "Check",
-            "Leave it covered"
-        ]
-    },
-    "day3_night_investigate": {
-        "text": "*As soon as I close my eyes, the old building's doorknob and thirteen photographs line up in sequence. My phone still displays the writing from the wall.*"
-    },
-    "day3_night_investigate_2": {
-        "text": "*I took a photo of the writing on the wall. After the shutter sound, my left hand appeared small at the bottom of the screen.*"
-    },
-    "day3_night_deny": {
-        "text": "*It's my first week after transferring. When you're tired, even stains on a wall can look like writing.*"
-    },
-    "day3_night_deny_2": {
-        "text": "*I pulled the covers over myself. Closed my eyes. The writing on the wall lingers behind my eyelids.*"
-    },
-    "day3_night_deny_3": {
-        "text": "*...*"
-    },
-    "day3_night_deny_4": {
-        "text": "*...*"
-    },
-    "day3_night_ghost_ok": {
-        "text": "Will I see it again if I turn off the lights?"
-    },
-    "day3_night_ghost_run": {
-        "text": "Run away"
-    },
-    "day3_night_end": {
-        "text": "*Day 3 ends.*"
-    },
-    "day3_xover_glitch_1": {
-        "text": "*A flash fills my vision, and the school gate appears in place of my room. It is April, with the cherry trees in bloom.*"
-    },
-    "day3_xover_glitch_2": {
-        "text": "*Someone is standing there. At the end of the corridor. A pale silhouette.*"
-    },
-    "day3_xover_glitch_3": {
-        "text": "You smiled. You believed me."
-    },
-    "day3_xover_glitch_4": {
-        "text": "That time too. And before that. Every time."
-    },
-    "day3_xover_glitch_5": {
-        "text": "What are you talking about—"
-    },
-    "day3_xover_glitch_6": {
-        "text": "*I opened my eyes. My room. ...Was it a dream.*"
-    }
+  "day3_night_start": {
+    "text": "*I'm home.*"
+  },
+  "day3_night_start_2": {
+    "text": "*I took a shower and came out. My phone screen is lit up. Notifications.*"
+  },
+  "day3_night_sea_msg": {
+    "text": "*Sea -- 10:02 PM*\n\n{name}, today was fun. Let's go together tomorrow."
+  },
+  "day3_night_sea_msg_2": {
+    "text": "*I didn't read it. I put the phone down while brushing my teeth.*"
+  },
+  "day3_night_sea_msg_3": {
+    "text": "*1 minute later. Buzz. Sea — 10:03 PM*\n\nReply before you go to sleep"
+  },
+  "day3_night_sea_msg_4": {
+    "text": "*3 minutes later. Buzz. Sea — 10:06 PM*\n\n..."
+  },
+  "day3_night_sea_msg_5": {
+    "text": "*A speech bubble with only three dots clings to the bottom of the chat window.*"
+  },
+  "day3_night_sea_msg_6": {
+    "text": "*2 minutes later. Buzz. Sea — 10:08 PM*\n\n{name}?"
+  },
+  "day3_night_sea_msg_7": {
+    "text": "*Buzz. Sea — 10:11 PM*\n\nWhy aren't you reading my messages?"
+  },
+  "day3_night_sea_msg_8": {
+    "text": "*Buzz. Sea — 10:15 PM*\n\nYou're sleeping... right?"
+  },
+  "day3_night_sea_msg_9": {
+    "text": "*6 messages in 13 minutes. The unread bubbles fill an entire screen. The timestamp on the last bubble keeps catching my eye.*"
+  },
+  "day3_night_sea_msg_10": {
+    "text": "*I flipped the phone face down. It still buzzes.*"
+  },
+  "day3_night_sea_msg_11": {
+    "text": "*Buzz. Again. I told myself I wouldn't check the screen, but my hand reaches for it.*"
+  },
+  "day3_night_sea_msg_12": {
+    "text": "*Sea — 10:19 PM*\n\nYou left the window open, right? Air it out before bed"
+  },
+  "day3_night_sea_msg_13": {
+    "text": "*The window? My thumb stops over the reply button.*"
+  },
+  "day3_night_sea_msg_14": {
+    "text": "*I look at the window. The curtain is open. It's dark outside. I can't see anything.*"
+  },
+  "day3_night_sea_msg_15": {
+    "text": "*In the glass window of the building across from me, the small rectangle of my room is reflected.*"
+  },
+  "day3_night_sea_msg_16": {
+    "text": "*I closed the curtain. Put the phone in the drawer. Closed the drawer.*"
+  },
+  "day3_night_sea_msg_17": {
+    "text": "*...It buzzes again from inside the drawer.*"
+  },
+  "day3_night_bleed": {
+    "text": "*I lie under the covers in the dark. A rectangle of streetlight falls across the ceiling.*"
+  },
+  "day3_night_bleed_2": {
+    "text": "*The photos Yuna showed me. Other name tags line up against the inside of my eyelids.*"
+  },
+  "day3_night_bleed_3": {
+    "text": "*The name tags change, but the small spot near the eye stays in the same place.*"
+  },
+  "day3_night_bleed_4": {
+    "text": "*Even with my eyes shut, the 13 ID photos come to mind. The hair colors and name tags differ, but the eyes are the same in every one.*"
+  },
+  "day3_night_bleed_no_yuna_1": {
+    "text": "*I never saw the photos. The note, the writing on the wall, and Sea's messages all overlap.*"
+  },
+  "day3_night_bleed_no_yuna_2": {
+    "text": "*I memorized the direction of the school staircases before my classmates' names.*"
+  },
+  "day3_night_bleed_no_yuna_3": {
+    "text": "*The harder I try to trace it, the more gaps appear.*"
+  },
+  "day3_night_bleed_5": {
+    "text": "*When I close my eyes, the scenes connect in sequence.*"
+  },
+  "day3_night_bleed_6": {
+    "text": "*The hallway on the first day. My feet turned toward the vending machine before the sign could tell me where to go.*"
+  },
+  "day3_night_bleed_7": {
+    "text": "*Before I saw the nameplate for the faculty office, my hand was already pointing down the right hallway.*"
+  },
+  "day3_night_bleed_7a": {
+    "text": "*The yellow anti-slip tape on the second-floor landing. That color felt familiar from the very first day I saw it.*"
+  },
+  "day3_night_bleed_8": {
+    "text": "*The stroke bending left inside the locker. It's the same angle as the final stroke in my notebook.*"
+  },
+  "day3_night_bleed_9": {
+    "text": "*Seolhwa's gaze always reached my left hand before my right.*"
+  },
+  "day3_night_bleed_10": {
+    "text": "*Sea never once packed a side dish I hated in her lunchbox.*"
+  },
+  "day3_night_bleed_10a": {
+    "text": "*Minsu's speech bubble was spelled far too neatly. His profile picture was still the gray default image.*"
+  },
+  "day3_night_bleed_11": {
+    "text": "*When I try to picture the gate of my old school, white walls appear first. Nothing comes after.*"
+  },
+  "day3_night_bleed_12": {
+    "text": "*In my old classroom, a faceless teacher stands in front of the white wall and the blackboard. In the seat beside me, only a desk's shadow remains.*"
+  },
+  "day3_night_bleed_13": {
+    "text": "*I breathed in. The ceiling pattern looked one square closer at a time.*"
+  },
+  "day3_night_bleed_14": {
+    "text": "***There is only the phrase 'old school,' and no place attached to it.***"
+  },
+  "day3_night_bleed_15": {
+    "text": "*I sat up. Sweat beads on my forehead. My hands are shaking. The plastic feel of the name tag still clings to my fingertips.*"
+  },
+  "day3_night_stat_crack": {
+    "text": "*I lay back down. Closed my eyes.*"
+  },
+  "day3_night_stat_crack_2": {
+    "text": "*The compartments of Sea's lunchbox. The warmth of Ms. Eunsu's palm. The rim of the teacup Riin handed me.*"
+  },
+  "day3_night_stat_crack_3": {
+    "text": "*Everything faces the same direction: toward where I sit.*"
+  },
+  "day3_night_stat_crack_4": {
+    "text": "*The space between the bed and the desk looks narrower than usual. It isn't as if the room has shrunk.*"
+  },
+  "day3_night_stat_crack_4a": {
+    "text": "*I drew a deep breath, but it stopped halfway in.*"
+  },
+  "day3_night_stat_crack_5": {
+    "text": "*...Something just crossed the screen.*"
+  },
+  "day3_night_stat_crack_6": {
+    "text": "*No. Nothing's there. My eyes are just tired.*"
+  },
+  "day3_night_ft_nightmare": {
+    "text": "*I close my eyes. Images flood through the darkness.*"
+  },
+  "day3_night_ft_nightmare_2": {
+    "text": "*I'm walking down a hallway. No end in sight. Each step I take — the hallway stretches longer.*"
+  },
+  "day3_night_ft_nightmare_3": {
+    "text": "*I opened a classroom door. Same classroom. Opened another. Same classroom. Same seats, same people. Same smiles. All looking at me.*"
+  },
+  "day3_night_ft_nightmare_4": {
+    "text": "*Twelve rows of names crowd the blackboard, including Kim Dojin, Park Jaewon, and Lee Sehun. Only the bottom row is empty. That is my place.*"
+  },
+  "day3_night_ft_nightmare_5": {
+    "text": "*I look at the clock. It has stopped. No—the second hand is moving backward.*"
+  },
+  "day3_night_ft_nightmare_6": {
+    "text": "*A voice from somewhere. Close, far, all around. ...But there's no door out.*"
+  },
+  "day3_night_ft_nightmare_ghost": {
+    "text": "Run."
+  },
+  "day3_night_wall": {
+    "text": "*I can't fall asleep. After tossing and turning for a long time, I finally drifted off.*"
+  },
+  "day3_night_wall_2": {
+    "text": "*3 AM. I got up to use the bathroom. My head feels heavy.*"
+  },
+  "day3_night_wall_3": {
+    "text": "*I walk down the hallway without turning on the light. The floor is cold under my feet. ...I stopped.*"
+  },
+  "day3_night_wall_4": {
+    "text": "*There is writing on the wall. Faintly visible in the streetlight. In pencil. In my handwriting.*"
+  },
+  "day3_night_wall_5": {
+    "text": "***'Get out of here'***"
+  },
+  "day3_night_wall_6": {
+    "text": "*I stopped breathing. I turned on the light. The fluorescent flickers on. The writing becomes clearly visible.*"
+  },
+  "day3_night_wall_7": {
+    "text": "*When I move closer to the wall, I smell graphite. The smell of a pencil just sharpened.*"
+  },
+  "day3_night_wall_8": {
+    "text": "*I touched the writing with my hand. Pencil graphite smudges onto my fingertips. This was written recently. It's not a dried mark.*"
+  },
+  "day3_night_wall_9": {
+    "text": "*I looked at my hands. Right index finger. Clean. ...Left hand. Pencil marks on my left index and middle finger. The first joint of my index finger is blackened.*"
+  },
+  "day3_night_wall_10": {
+    "text": "*The strokes are left-handed. The letters press down a little more as they move from left to right.*"
+  },
+  "day3_night_wall_11": {
+    "text": "*I looked around the room. A pencil is lying on the desk. I didn't leave it there earlier. I put it in the drawer. There is a little graphite on the drawer handle, too.*"
+  },
+  "day3_night_wall_12": {
+    "text": "*The pencil is on the desk and graphite marks the drawer handle. I remember nothing between those two moments.*"
+  },
+  "day3_night_seolhwa": {
+    "text": "*I am looking at the writing on the wall. The air changes. The temperature drops. The fluorescent light flickers once.*"
+  },
+  "day3_night_seolhwa_2": {
+    "text": "*Someone is standing in the corner of the room.*"
+  },
+  "day3_night_seolhwa_3": {
+    "text": "*Cold creeps up from my toes. The room temperature just changed.*"
+  },
+  "day3_night_seolhwa_4": {
+    "text": "*It is the girl by the window. Dark brown hair. A school uniform. My room in the dead of night. The door is locked, and the entryway sensor light never came on.*"
+  },
+  "day3_night_seolhwa_4a": {
+    "text": "I didn't hear the front door or any footsteps. How did you get in? I locked the door."
+  },
+  "day3_night_seolhwa_4b": {
+    "text": "*Seolhwa looks at me, the corners of her eyes wet.*\n\nThere's no time for that. Listen first."
+  },
+  "day3_night_seolhwa_5": {
+    "text": "Five days."
+  },
+  "day3_night_seolhwa_6": {
+    "text": "Until what?"
+  },
+  "day3_night_seolhwa_6a": {
+    "text": "*I can't get a word out. My lips are dry.*"
+  },
+  "day3_night_seolhwa_7": {
+    "text": "Within five days... you have to get out of here."
+  },
+  "day3_night_seolhwa_7a": {
+    "text": "*Her voice doesn't seem to come from the room. It follows a beat late.*\n\nYour voice… I hear it a beat late."
+  },
+  "day3_night_seolhwa_8": {
+    "text": "Before you end up like me."
+  },
+  "day3_night_seolhwa_9": {
+    "text": "Like you? What happened to you?"
+  },
+  "day3_night_seolhwa_10": {
+    "text": "*Seolhwa reaches toward my face. Her fingertips stop just before touching my cheek.*\n\nWait, your hand…"
+  },
+  "day3_night_seolhwa_11": {
+    "text": "*Her fingertips blur in front of my cheek. The streetlight outside the window passes straight through the back of her hand.*\n\nYour hand… It's fading."
+  },
+  "day3_night_seolhwa_11a": {
+    "text": "*A wet line on her cheek vanishes when I blink.*\n\nWere you crying? Wait. Don't disappear."
+  },
+  "day3_night_seolhwa_12": {
+    "text": "Remember. Your left hand."
+  },
+  "day3_night_seolhwa_13": {
+    "text": "*I blink. The girl is gone. There is nothing where she stood. No footprints on the floor.*"
+  },
+  "day3_night_seolhwa_14": {
+    "text": "*Only the air where I was standing is cold. The fluorescent light still hums, very low.*"
+  },
+  "day3_night_seolhwa_15": {
+    "text": "*I went to where she had been standing. Touched the floor. It's cold. Definitely colder than the surrounding area. ...That's all.*"
+  },
+  "day3_night_seolhwa_16": {
+    "text": "*The writing on the wall is still there. 'Get out of here.' I look at my left hand. My pencil-stained fingers slowly curl, then straighten.*"
+  },
+  "day3_night_seolhwa_17": {
+    "text": "*The wall clock's second hand sounds unnaturally clear. With every tick, my eyes return to the writing on the wall.*"
+  },
+  "day3_night_seolhwa_18": {
+    "text": "*Between the ticking of the clock, scenes from today cut in out of order.*"
+  },
+  "day3_night_choice": {
+    "text": "*...*",
+    "choices": [
+      "Check",
+      "Leave it covered"
+    ]
+  },
+  "day3_night_investigate": {
+    "text": "*As soon as I close my eyes, the old building's doorknob and thirteen photographs line up in sequence. My phone still displays the writing from the wall.*"
+  },
+  "day3_night_investigate_2": {
+    "text": "*I took a photo of the writing on the wall. After the shutter sound, my left hand appeared small at the bottom of the screen.*"
+  },
+  "day3_night_deny": {
+    "text": "*It's my first week after transferring. When you're tired, even stains on a wall can look like writing.*"
+  },
+  "day3_night_deny_2": {
+    "text": "*I pulled the covers over myself. Closed my eyes. The writing on the wall lingers behind my eyelids.*"
+  },
+  "day3_night_deny_3": {
+    "text": "*...*"
+  },
+  "day3_night_deny_4": {
+    "text": "*...*"
+  },
+  "day3_night_ghost_ok": {
+    "text": "Will I see it again if I turn off the lights?"
+  },
+  "day3_night_ghost_run": {
+    "text": "Run away"
+  },
+  "day3_night_end": {
+    "text": "*Day 3 ends.*"
+  },
+  "day3_xover_glitch_1": {
+    "text": "*A flash fills my vision, and the school gate appears in place of my room. It is April, with the cherry trees in bloom.*"
+  },
+  "day3_xover_glitch_2": {
+    "text": "*Someone is standing there. At the end of the corridor. A pale silhouette.*"
+  },
+  "day3_xover_glitch_3": {
+    "text": "You smiled. You believed me."
+  },
+  "day3_xover_glitch_4": {
+    "text": "That time too. And before that. Every time."
+  },
+  "day3_xover_glitch_5": {
+    "text": "What are you talking about—"
+  },
+  "day3_xover_glitch_6": {
+    "text": "*I opened my eyes. My room. ...Was it a dream.*"
+  },
+  "day3_night_pressure_branch": {
+    "text": ""
+  },
+  "day3_night_pressure_seolhwa_1": {
+    "text": "The notification sound on my phone cut off. Only the time on the screen remained the same."
+  },
+  "day3_night_pressure_seolhwa_2": {
+    "text": "Seolhwa's voice came from near my left ear. I turned my head, but there was only my shadow on the wall."
+  },
+  "day3_night_pressure_seolhwa_3": {
+    "text": "Write down what you heard today. If you hear it again in the morning, this came first."
+  },
+  "day3_night_pressure_seolhwa_4": {
+    "text": "I opened the notebook and wrote the date. My left hand grabbed the paper first, causing the page to crumple."
+  },
+  "day3_night_pressure_seolhwa_5": {
+    "text": "And who called first. Similar voices don't mean it's the same person."
+  },
+  "day3_night_pressure_seolhwa_6": {
+    "text": "I counted the sound of footsteps outside the front door, stopped, wrote down the time from when the sound occurred, and left a line below it blank."
+  },
+  "day3_night_pressure_sea_1": {
+    "text": "The sound of footsteps stopped in the hallway before my phone rang. The name Sea appeared on the screen."
+  },
+  "day3_night_pressure_sea_2": {
+    "text": "You're still awake. Your light's on."
+  },
+  "day3_night_pressure_sea_3": {
+    "text": "Without answering, I looked out the window and saw that a streetlight was on on the opposite wall."
+  },
+  "day3_night_pressure_sea_4": {
+    "text": "You don't have to open the door. I only wanted to hear your voice."
+  },
+  "day3_night_pressure_sea_5": {
+    "text": "The door handle did not move. Instead, the corner of a white plastic bag was pushed under the door."
+  },
+  "day3_night_pressure_sea_6": {
+    "text": "Eat it for breakfast. The eggs are fully cooked. You don't eat undercooked food."
+  },
+  "day3_night_pressure_sea_7": {
+    "text": "I remembered if I had ever said that. While the call time number went up, there was no answer."
+  },
+  "day3_night_pressure_sea_8": {
+    "text": "Now close the window. The wind gets in."
+  },
+  "day3_night_pressure_sea_9": {
+    "text": "When I pressed the end call button, the vibrations stopped in the hallway. The person at the door was looking at the screen."
+  },
+  "day3_night_pressure_sea_10": {
+    "text": "Go back now."
+  },
+  "day3_night_pressure_sea_11": {
+    "text": "A moment later, the vinyl scratched the threshold. The bag remained, and only the sound of footsteps moved toward the stairs."
+  },
+  "day3_night_pressure_sea_12": {
+    "text": "I took my hand out of the gap in the curtain and moved the chair to the front door without turning off the lights in the room."
+  },
+  "day3_night_pressure_eunsu_1": {
+    "text": "When I saw my homeroom teacher's number on the screen and pressed the call button, a piece of paper moved on the other side of the receiver."
+  },
+  "day3_night_pressure_eunsu_2": {
+    "text": "Did you lock the door? No matter who comes today, don’t open it."
+  },
+  "day3_night_pressure_eunsu_3": {
+    "text": "Who is coming?"
+  },
+  "day3_night_pressure_eunsu_4": {
+    "text": "The teacher did not answer right away, and the sound of a pen tapping the desk twice was heard."
+  },
+  "day3_night_pressure_eunsu_5": {
+    "text": "Don't open it until I've said my name. Recognizing a voice isn't enough."
+  },
+  "day3_night_pressure_eunsu_6": {
+    "text": "When the entrance intercom was turned on, the screen showed a light on the hallway ceiling instead of a human face."
+  },
+  "day3_night_pressure_eunsu_7": {
+    "text": "Are you outside my door right now, Ms. Eunsu?"
+  },
+  "day3_night_pressure_eunsu_8": {
+    "text": "Don't look at the screen. Close the app too."
+  },
+  "day3_night_pressure_eunsu_9": {
+    "text": "When I took my phone away from my ear, the safety app notification overlapped below the busy sign. The location has been confirmed."
+  },
+  "day3_night_pressure_eunsu_10": {
+    "text": "The teacher did not tell me to open the door or hang up the phone."
+  },
+  "day3_night_pressure_eunsu_11": {
+    "text": "See you in class in the morning. Then I'll ask again."
+  },
+  "day3_night_pressure_eunsu_12": {
+    "text": "Even after the call was hung up, the intercom was on, so I pressed and held the power button to turn off the screen."
+  },
+  "day3_night_pressure_riin_1": {
+    "text": "A message came from the health room number asking me to write down what I ate and drank today."
+  },
+  "day3_night_pressure_riin_2": {
+    "text": "I stopped while trying to write the car name. I took out the medicine bag from under the coaster and turned it over."
+  },
+  "day3_night_pressure_riin_3": {
+    "text": "Don't reply now. Delete what I sent first."
+  },
+  "day3_night_pressure_riin_4": {
+    "text": "The sentence immediately above disappears, and only the message “cancelled” remains in the chat window."
+  },
+  "day3_night_pressure_riin_5": {
+    "text": "Didn't you send that, Ms. Riin?"
+  },
+  "day3_night_pressure_riin_6": {
+    "text": "Riin called. When connected, I first asked if I had closed the window."
+  },
+  "day3_night_pressure_riin_7": {
+    "text": "Raise your voice and they'll hear you next door. I'll ask the questions."
+  },
+  "day3_night_pressure_riin_8": {
+    "text": "The teacher asked each person in turn where the cup was and if there was any leftover tea. The name of the drug was not mentioned."
+  },
+  "day3_night_pressure_riin_9": {
+    "text": "Every time Riin was silent, someone else's footsteps could be heard beyond the receiver."
+  },
+  "day3_night_pressure_riin_10": {
+    "text": "Tomorrow, drink only what I gave you. Even if someone says it's the same, take it directly from me."
+  },
+  "day3_night_pressure_riin_11": {
+    "text": "Before hanging up the phone, the teacher called my name. I answered, but the next words never came."
+  },
+  "day3_night_pressure_riin_12": {
+    "text": "I emptied the water in the cup into the sink, but there were no tea leaves left on the drain net."
+  },
+  "day3_night_pressure_yuna_1": {
+    "text": "A file came under the camera-shaped icon. Yuna told me not to open it but to save it first."
+  },
+  "day3_night_pressure_yuna_2": {
+    "text": "Just take the photo. I'm not calling today."
+  },
+  "day3_night_pressure_yuna_3": {
+    "text": "When I clicked Save, the transmission indicator stopped for a moment. The number twelfth was added to the end of the file name."
+  },
+  "day3_night_pressure_yuna_4": {
+    "text": "Don't rename the file. I'll explain tomorrow."
+  },
+  "day3_night_pressure_yuna_5": {
+    "text": "My phone vibrated once outside the door. My phone was in my hand and the sound was off."
+  },
+  "day3_night_pressure_yuna_6": {
+    "text": "While I was heading towards the door, another message came from Yuna. I didn't open the front door."
+  },
+  "day3_night_pressure_yuna_7": {
+    "text": "I wrote who it was and then deleted it. A shadow appeared under the porch and then disappeared."
+  },
+  "day3_night_pressure_yuna_8": {
+    "text": "Even if I turned the phone upside down, the saving sign remained visible. I only confirmed that the file reached the end."
+  },
+  "day3_history_callback_18": {
+    "text": "There was also a read mark under the unanswered message on the first day. Sea did not bring up the story that day first."
+  },
+  "day3_history_callback_19": {
+    "text": "I moved my finger to close the app. I remembered the screen turning on again the first day, so I didn't turn it off this time."
+  },
+  "day3_history_callback_20": {
+    "text": "I remembered the folder tab I saw during the day and tried to say the number in front of my name, but I wrote down the call time first."
+  },
+  "day3_history_callback_21": {
+    "text": "When I spread out the name tags I had seen in the old building on the notebook, the teacher heard the sound of paper and asked what I was looking at."
+  },
+  "day3_history_callback_22": {
+    "text": "When I tried to mention the ampoule I saw in the health room, Riin interrupted me and told me not to mention that name on the phone."
+  },
+  "day3_history_callback_23": {
+    "text": "I measured the amount I drank during the day in a cup, but Riin asked me the time I last drank rather than the amount."
+  },
+  "day3_history_callback_24": {
+    "text": "I touched the pocket where I had kept the copy that Yuna handed me. I wrote down the name of this file first so that it can be placed in the same place."
+  }
 }

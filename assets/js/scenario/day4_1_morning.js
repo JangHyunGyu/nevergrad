@@ -388,13 +388,15 @@ Object.assign(SCENARIO[4], {
     // ═══════════════════════════════════════════════════
 
     "day4_morning_classroom": {
-        background: "classroom",
-        character: null,
-        // 유나를 만난 적 있으면 빈 자리에 충격, 없으면 미묘한 위화감
-        branches: [
-            { condition: "met_yuna", next: "day4_morning_classroom_met" }
+        "background": "classroom",
+        "character": null,
+        "branches": [
+            {
+                "condition": "met_yuna",
+                "next": "day4_morning_classroom_met"
+            }
         ],
-        next: "day4_morning_classroom_notmet"
+        "next": "day4_morning_sea_watch_branch"
     },
 
     // ── met_yuna = true: 유나를 알고 있는 경우 ──
@@ -611,5 +613,176 @@ Object.assign(SCENARIO[4], {
         character: null,
         changeSlot: "lunch",
         next: "day4_lunch_start"
+    }
+});
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[4], {
+    "day4_morning_sea_watch_branch": {
+        "affinityChar": "sea",
+        "affinityBranches": [
+            {
+                "minAffinity": 35,
+                "next": "day4_morning_sea_watch_high_1"
+            },
+            {
+                "minAffinity": -100,
+                "next": "day4_morning_sea_watch_low_1"
+            }
+        ]
+    },
+    "day4_morning_sea_watch_high_1": {
+        "character": "sea_stare",
+        "glitch": {
+            "temperatureDrop": true
+        },
+        "next": "day4_morning_sea_watch_high_2"
+    },
+    "day4_morning_sea_watch_high_2": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_3"
+    },
+    "day4_morning_sea_watch_high_3": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_4"
+    },
+    "day4_morning_sea_watch_high_4": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_5"
+    },
+    "day4_morning_sea_watch_high_5": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_6"
+    },
+    "day4_morning_sea_watch_high_6": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_7",
+        "branches": [
+            {
+                "condition": "tried_kill_safety_app",
+                "next": "day4_history_callback_25"
+            }
+        ]
+    },
+    "day4_morning_sea_watch_high_7": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_8"
+    },
+    "day4_morning_sea_watch_high_8": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_9"
+    },
+    "day4_morning_sea_watch_high_9": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_10",
+        "branches": [
+            {
+                "condition": "app_limited_permissions",
+                "next": "day4_history_callback_26"
+            }
+        ]
+    },
+    "day4_morning_sea_watch_high_10": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_11",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle07_seolhwa",
+                "duration": 450
+            }
+        }
+    },
+    "day4_morning_sea_watch_high_11": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_12"
+    },
+    "day4_morning_sea_watch_high_12": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_choice"
+    },
+    "day4_morning_sea_watch_low_1": {
+        "character": "sea_serious",
+        "next": "day4_morning_sea_watch_low_2"
+    },
+    "day4_morning_sea_watch_low_2": {
+        "character": "sea_serious",
+        "next": "day4_morning_sea_watch_low_3"
+    },
+    "day4_morning_sea_watch_low_3": {
+        "character": "sea_serious",
+        "next": "day4_morning_sea_watch_low_4"
+    },
+    "day4_morning_sea_watch_low_4": {
+        "character": "sea_serious",
+        "next": "day4_morning_sea_watch_low_5",
+        "branches": [
+            {
+                "condition": "milk_moved",
+                "next": "day4_history_callback_27"
+            }
+        ]
+    },
+    "day4_morning_sea_watch_low_5": {
+        "character": "sea_serious",
+        "next": "day4_morning_classroom_notmet"
+    },
+    "day4_morning_sea_watch_choice": {
+        "choices": [
+            {
+                "next": "day4_morning_sea_watch_remove_1",
+                "stats": {
+                    "sea": {
+                        "affinity": -2
+                    },
+                    "seolhwa": {
+                        "affinity": 1
+                    }
+                }
+            },
+            {
+                "next": "day4_morning_sea_watch_when_1",
+                "stats": {
+                    "sea": {
+                        "affinity": 1
+                    }
+                }
+            }
+        ]
+    },
+    "day4_morning_sea_watch_remove_1": {
+        "character": "sea_broken_smile",
+        "next": "day4_morning_sea_watch_remove_2"
+    },
+    "day4_morning_sea_watch_remove_2": {
+        "character": "sea_broken_smile",
+        "next": "day4_morning_sea_watch_remove_3"
+    },
+    "day4_morning_sea_watch_remove_3": {
+        "character": "sea_broken_smile",
+        "next": "day4_morning_classroom_notmet"
+    },
+    "day4_morning_sea_watch_when_1": {
+        "character": "sea_broken_smile",
+        "next": "day4_morning_sea_watch_when_2"
+    },
+    "day4_morning_sea_watch_when_2": {
+        "character": "sea_broken_smile",
+        "next": "day4_morning_sea_watch_when_3"
+    },
+    "day4_morning_sea_watch_when_3": {
+        "character": "sea_broken_smile",
+        "next": "day4_morning_classroom_notmet"
+    },
+    "day4_history_callback_25": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_7"
+    },
+    "day4_history_callback_26": {
+        "character": "sea_stare",
+        "next": "day4_morning_sea_watch_high_10"
+    },
+    "day4_history_callback_27": {
+        "character": "sea_serious",
+        "next": "day4_morning_sea_watch_low_5"
     }
 });

@@ -757,8 +757,8 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_plan_15"
     },
     "day4_night_plan_15": {
-        character: null,
-        next: "day4_night_plan_choice"
+        "character": null,
+        "next": "day4_night_truth_sea_1"
     },
 
     // ── 최종 계획 선택지 ──
@@ -829,5 +829,289 @@ Object.assign(SCENARIO[4], {
         changeDay: 5,
         changeSlot: "morning",
         next: "day5_morning_start"
+    }
+});
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[4], {
+    "day4_night_truth_sea_1": {
+        "background": "closeup_safety_app",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day4_night_truth_sea_2"
+    },
+    "day4_night_truth_sea_2": {
+        "background": "closeup_safety_app",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "choices": [
+            {
+                "next": "day4_expansion_action_8_a"
+            },
+            {
+                "next": "day4_expansion_action_8_b"
+            },
+            {
+                "next": "day4_night_truth_sea_3"
+            }
+        ]
+    },
+    "day4_night_truth_sea_3": {
+        "background": "closeup_safety_app",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day4_night_truth_sea_4",
+        "branches": [
+            {
+                "condition": "noted_tried_kill_safety_app",
+                "next": "day4_history_callback_34"
+            }
+        ]
+    },
+    "day4_night_truth_sea_4": {
+        "background": "closeup_safety_app",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day4_night_truth_sea_choice"
+    },
+    "day4_night_truth_sea_choice": {
+        "choices": [
+            {
+                "next": "day4_night_truth_sea_right_1",
+                "setFlags": [
+                    "deduced_sea_notebook"
+                ]
+            },
+            {
+                "next": "day4_night_truth_sea_wrong_1"
+            },
+            {
+                "next": "day4_night_truth_sea_wrong_1"
+            }
+        ]
+    },
+    "day4_night_truth_sea_right_1": {
+        "character": null,
+        "next": "day4_night_truth_sea_right_2"
+    },
+    "day4_night_truth_sea_right_2": {
+        "character": null,
+        "next": "day4_night_truth_sea_right_3"
+    },
+    "day4_night_truth_sea_right_3": {
+        "character": null,
+        "next": "day4_night_truth_riin_1"
+    },
+    "day4_night_truth_sea_wrong_1": {
+        "character": null,
+        "next": "day4_night_truth_sea_wrong_2"
+    },
+    "day4_night_truth_sea_wrong_2": {
+        "character": null,
+        "next": "day4_night_truth_riin_1"
+    },
+    "day4_night_truth_riin_1": {
+        "character": null,
+        "next": "day4_night_truth_riin_2"
+    },
+    "day4_night_truth_riin_2": {
+        "character": null,
+        "next": "day4_night_truth_riin_3",
+        "branches": [
+            {
+                "condition": "riin_hinted_key",
+                "next": "day4_history_callback_35"
+            }
+        ]
+    },
+    "day4_night_truth_riin_3": {
+        "character": null,
+        "choices": [
+            {
+                "next": "day4_expansion_action_9_a"
+            },
+            {
+                "next": "day4_expansion_action_9_b"
+            },
+            {
+                "next": "day4_night_truth_riin_4"
+            }
+        ],
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle12_yuna",
+                "duration": 450
+            }
+        }
+    },
+    "day4_night_truth_riin_4": {
+        "character": null,
+        "next": "day4_night_truth_riin_choice"
+    },
+    "day4_night_truth_riin_choice": {
+        "choices": [
+            {
+                "next": "day4_night_truth_riin_right_1",
+                "setFlags": [
+                    "deduced_riin_reduction"
+                ]
+            },
+            {
+                "next": "day4_night_truth_riin_wrong_1"
+            },
+            {
+                "next": "day4_night_truth_riin_wrong_1"
+            }
+        ]
+    },
+    "day4_night_truth_riin_right_1": {
+        "character": null,
+        "next": "day4_night_truth_riin_right_2"
+    },
+    "day4_night_truth_riin_right_2": {
+        "character": null,
+        "next": "day4_night_truth_riin_right_3"
+    },
+    "day4_night_truth_riin_right_3": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_1"
+    },
+    "day4_night_truth_riin_wrong_1": {
+        "character": null,
+        "next": "day4_night_truth_riin_wrong_2"
+    },
+    "day4_night_truth_riin_wrong_2": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_1"
+    },
+    "day4_night_truth_eunsu_1": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_2"
+    },
+    "day4_night_truth_eunsu_2": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_3"
+    },
+    "day4_night_truth_eunsu_3": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_4",
+        "branches": [
+            {
+                "condition": "noted_saw_eunsu_key",
+                "next": "day4_history_callback_36"
+            }
+        ]
+    },
+    "day4_night_truth_eunsu_4": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_choice"
+    },
+    "day4_night_truth_eunsu_choice": {
+        "choices": [
+            {
+                "next": "day4_night_truth_eunsu_right_1",
+                "setFlags": [
+                    "deduced_eunsu_reports"
+                ]
+            },
+            {
+                "next": "day4_night_truth_eunsu_wrong_1"
+            },
+            {
+                "next": "day4_night_truth_eunsu_wrong_1"
+            }
+        ]
+    },
+    "day4_night_truth_eunsu_right_1": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_right_2"
+    },
+    "day4_night_truth_eunsu_right_2": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_right_3"
+    },
+    "day4_night_truth_eunsu_right_3": {
+        "character": null,
+        "next": "day4_night_truth_result"
+    },
+    "day4_night_truth_eunsu_wrong_1": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_wrong_2"
+    },
+    "day4_night_truth_eunsu_wrong_2": {
+        "character": null,
+        "next": "day4_night_truth_result"
+    },
+    "day4_night_truth_result": {
+        "branches": [
+            {
+                "condition": [
+                    "deduced_sea_notebook",
+                    "deduced_riin_reduction",
+                    "deduced_eunsu_reports"
+                ],
+                "next": "day4_night_truth_complete_1"
+            }
+        ],
+        "next": "day4_night_truth_partial_1"
+    },
+    "day4_night_truth_complete_1": {
+        "character": "seolhwa_sad",
+        "setFlags": [
+            "deduced_full_truth"
+        ],
+        "reward": {
+            "flag": "deduced_full_truth_rewarded",
+            "stats": {
+                "seolhwa": {
+                    "affinity": 5
+                }
+            }
+        },
+        "next": "day4_night_truth_complete_2"
+    },
+    "day4_night_truth_complete_2": {
+        "character": "seolhwa_sad",
+        "next": "day4_night_truth_complete_3"
+    },
+    "day4_night_truth_complete_3": {
+        "character": "seolhwa_sad",
+        "next": "day4_night_plan_choice"
+    },
+    "day4_night_truth_partial_1": {
+        "character": null,
+        "next": "day4_night_truth_partial_2"
+    },
+    "day4_night_truth_partial_2": {
+        "character": null,
+        "next": "day4_night_plan_choice"
+    },
+    "day4_history_callback_34": {
+        "character": null,
+        "next": "day4_night_truth_sea_4"
+    },
+    "day4_history_callback_35": {
+        "character": null,
+        "next": "day4_night_truth_riin_3"
+    },
+    "day4_history_callback_36": {
+        "character": null,
+        "next": "day4_night_truth_eunsu_4"
+    },
+    "day4_expansion_action_8_a": {
+        "character": null,
+        "next": "day4_night_truth_sea_3"
+    },
+    "day4_expansion_action_8_b": {
+        "character": null,
+        "next": "day4_night_truth_sea_3"
+    },
+    "day4_expansion_action_9_a": {
+        "character": null,
+        "next": "day4_night_truth_riin_4"
+    },
+    "day4_expansion_action_9_b": {
+        "character": null,
+        "next": "day4_night_truth_riin_4"
     }
 });

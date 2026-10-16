@@ -1,0 +1,32 @@
+{
+  "scenes": 3050,
+  "choices": 242,
+  "branches": 85,
+  "koreanCharacters": 118265,
+  "cg": 12,
+  "music": 30,
+  "byDay": {
+    "1": 388,
+    "2": 412,
+    "3": 560,
+    "4": 589,
+    "5": 1101
+  },
+  "archives": {
+    "cycle07": 75,
+    "cycle12": 76
+  },
+  "fx": 42,
+  "fxAndSfx": 45,
+  "validationErrors": 0,
+  "i18nExtraWarnings": 0,
+  "unitTests": 113,
+  "browserUniqueTests": 215,
+  "browserRunDetails": {
+    "fullSuitePassed": 207,
+    "fullSuiteOriginalPhotoStubExpectationsFailed": 8,
+    "focusedFinalPassed": 20
+  },
+  "visualComparisons": 10,
+  "visualChangedChannels": 0
+}

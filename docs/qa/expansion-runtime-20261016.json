@@ -1,0 +1,245 @@
+{
+  "base": "http://127.0.0.1:4178",
+  "results": [
+    {
+      "lang": "ko",
+      "scenes": 3050,
+      "cg": 12,
+      "music": 30,
+      "speakers": [
+        {
+          "name": "김태호",
+          "expected": "김태호",
+          "player": "CurrentPlayer"
+        },
+        {
+          "name": "이준호",
+          "expected": "이준호",
+          "player": "CurrentPlayer"
+        }
+      ],
+      "returned": {
+        "background": "black",
+        "bgm": null,
+        "character": null
+      },
+      "hitTargets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "scenes": 3050,
+      "cg": 12,
+      "music": 30,
+      "speakers": [
+        {
+          "name": "Kim Taeho",
+          "expected": "Kim Taeho",
+          "player": "CurrentPlayer"
+        },
+        {
+          "name": "Lee Junho",
+          "expected": "Lee Junho",
+          "player": "CurrentPlayer"
+        }
+      ],
+      "returned": {
+        "background": "black",
+        "bgm": null,
+        "character": null
+      },
+      "hitTargets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "errors": []
+    },
+    {
+      "lang": "ja",
+      "scenes": 3050,
+      "cg": 12,
+      "music": 30,
+      "speakers": [
+        {
+          "name": "キム・テホ",
+          "expected": "キム・テホ",
+          "player": "CurrentPlayer"
+        },
+        {
+          "name": "イ・ジュノ",
+          "expected": "イ・ジュノ",
+          "player": "CurrentPlayer"
+        }
+      ],
+      "returned": {
+        "background": "black",
+        "bgm": null,
+        "character": null
+      },
+      "hitTargets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "errors": []
+    },
+    {
+      "lang": "es",
+      "scenes": 3050,
+      "cg": 12,
+      "music": 30,
+      "speakers": [
+        {
+          "name": "Kim Taeho",
+          "expected": "Kim Taeho",
+          "player": "CurrentPlayer"
+        },
+        {
+          "name": "Lee Junho",
+          "expected": "Lee Junho",
+          "player": "CurrentPlayer"
+        }
+      ],
+      "returned": {
+        "background": "black",
+        "bgm": null,
+        "character": null
+      },
+      "hitTargets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "errors": []
+    },
+    {
+      "lang": "fr",
+      "scenes": 3050,
+      "cg": 12,
+      "music": 30,
+      "speakers": [
+        {
+          "name": "Kim Taeho",
+          "expected": "Kim Taeho",
+          "player": "CurrentPlayer"
+        },
+        {
+          "name": "Lee Junho",
+          "expected": "Lee Junho",
+          "player": "CurrentPlayer"
+        }
+      ],
+      "returned": {
+        "background": "black",
+        "bgm": null,
+        "character": null
+      },
+      "hitTargets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "errors": []
+    },
+    {
+      "lang": "de",
+      "scenes": 3050,
+      "cg": 12,
+      "music": 30,
+      "speakers": [
+        {
+          "name": "Kim Taeho",
+          "expected": "Kim Taeho",
+          "player": "CurrentPlayer"
+        },
+        {
+          "name": "Lee Junho",
+          "expected": "Lee Junho",
+          "player": "CurrentPlayer"
+        }
+      ],
+      "returned": {
+        "background": "black",
+        "bgm": null,
+        "character": null
+      },
+      "hitTargets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "errors": []
+    },
+    {
+      "lang": "pt",
+      "scenes": 3050,
+      "cg": 12,
+      "music": 30,
+      "speakers": [
+        {
+          "name": "Kim Taeho",
+          "expected": "Kim Taeho",
+          "player": "CurrentPlayer"
+        },
+        {
+          "name": "Lee Junho",
+          "expected": "Lee Junho",
+          "player": "CurrentPlayer"
+        }
+      ],
+      "returned": {
+        "background": "black",
+        "bgm": null,
+        "character": null
+      },
+      "hitTargets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "errors": []
+    },
+    {
+      "lang": "zh",
+      "scenes": 3050,
+      "cg": 12,
+      "music": 30,
+      "speakers": [
+        {
+          "name": "金泰浩",
+          "expected": "金泰浩",
+          "player": "CurrentPlayer"
+        },
+        {
+          "name": "李俊浩",
+          "expected": "李俊浩",
+          "player": "CurrentPlayer"
+        }
+      ],
+      "returned": {
+        "background": "black",
+        "bgm": null,
+        "character": null
+      },
+      "hitTargets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "errors": []
+    }
+  ]
+}

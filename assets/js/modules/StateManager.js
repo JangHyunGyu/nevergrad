@@ -206,6 +206,28 @@ class StateManager {
         return this.stats[charId] || { affinity: 0 };
     }
 
+    getAffinityLeader(candidates = ['sea', 'eunsu', 'riin', 'yuna', 'seolhwa']) {
+        let leader = null;
+        let highest = -Infinity;
+        for (const id of candidates) {
+            const value = this.getRealStats(id).affinity;
+            if (Number.isFinite(value) && value > highest) {
+                leader = id;
+                highest = value;
+            }
+        }
+        return leader;
+    }
+
+    applySceneReward(reward) {
+        if (!reward?.flag || this.hasFlag(reward.flag)) return false;
+        for (const [id, values] of Object.entries(reward.stats || {})) {
+            if (Number.isFinite(values.affinity)) this.changeStat(id, 'affinity', values.affinity);
+        }
+        this.setFlag(reward.flag);
+        return true;
+    }
+
     // ===== 플래그 관리 =====
 
     setFlag(flag) {

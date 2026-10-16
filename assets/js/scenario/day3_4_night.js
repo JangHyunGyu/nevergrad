@@ -649,15 +649,375 @@ Object.assign(SCENARIO[3], {
     //  Day 3 종료 — ★ GENRE SHIFT 트리거 ★
     // ══════════════════════════════════════
     "day3_night_end": {
-        background: "black",
-        bgm: null,
-        character: null,
-        triggerGenreShift: true,
-        // SCENARIO.md 5425: Day 3 밤 앱 강제 종료 → 자동 재실행 — "도망칠 수 없다"
-        glitch: { appKill: true, appKillDuration: 1200 },
-        unskippable: true,
-        changeDay: 4,
-        changeSlot: "morning",
-        next: "day4_morning_start"
+        "background": "black",
+        "bgm": null,
+        "character": null,
+        "triggerGenreShift": true,
+        "glitch": {
+            "appKill": true,
+            "appKillDuration": 1200
+        },
+        "unskippable": true,
+        "changeDay": 4,
+        "changeSlot": "morning",
+        "next": "day3_night_pressure_branch"
+    }
+});
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[3], {
+    "day3_night_pressure_branch": {
+        "branches": [
+            {
+                "affinityLeader": "sea",
+                "next": "day3_night_pressure_sea_1"
+            },
+            {
+                "affinityLeader": "eunsu",
+                "next": "day3_night_pressure_eunsu_1"
+            },
+            {
+                "affinityLeader": "riin",
+                "next": "day3_night_pressure_riin_1"
+            },
+            {
+                "affinityLeader": "yuna",
+                "next": "day3_night_pressure_yuna_1"
+            }
+        ],
+        "next": "day3_night_pressure_seolhwa_1"
+    },
+    "day3_night_pressure_seolhwa_1": {
+        "background": "room_night",
+        "character": "seolhwa_warning",
+        "glitch": {
+            "panSFX": "sfx_whisper_seolhwa",
+            "pan": -0.85
+        },
+        "next": "day3_night_pressure_seolhwa_2"
+    },
+    "day3_night_pressure_seolhwa_2": {
+        "background": "room_night",
+        "character": "seolhwa_warning",
+        "next": "day3_night_pressure_seolhwa_3"
+    },
+    "day3_night_pressure_seolhwa_3": {
+        "background": "room_night",
+        "character": "seolhwa_warning",
+        "next": "day3_night_pressure_seolhwa_4"
+    },
+    "day3_night_pressure_seolhwa_4": {
+        "background": "room_night",
+        "character": "seolhwa_warning",
+        "next": "day3_night_pressure_seolhwa_5"
+    },
+    "day3_night_pressure_seolhwa_5": {
+        "background": "room_night",
+        "character": "seolhwa_warning",
+        "next": "day3_night_pressure_seolhwa_6"
+    },
+    "day3_night_pressure_seolhwa_6": {
+        "background": "room_night",
+        "character": "seolhwa_warning",
+        "next": "day4_morning_start"
+    },
+    "day3_night_pressure_sea_1": {
+        "background": "room_night",
+        "character": null,
+        "glitch": {
+            "silence": true,
+            "silenceDuration": 1800
+        },
+        "next": "day3_night_pressure_sea_2"
+    },
+    "day3_night_pressure_sea_2": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_3"
+    },
+    "day3_night_pressure_sea_3": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_4"
+    },
+    "day3_night_pressure_sea_4": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_5"
+    },
+    "day3_night_pressure_sea_5": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_6"
+    },
+    "day3_night_pressure_sea_6": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_7",
+        "branches": [
+            {
+                "condition": "ignored_sea_msg",
+                "next": "day3_history_callback_18"
+            }
+        ]
+    },
+    "day3_night_pressure_sea_7": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_8"
+    },
+    "day3_night_pressure_sea_8": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_9"
+    },
+    "day3_night_pressure_sea_9": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_10",
+        "branches": [
+            {
+                "condition": "tried_kill_safety_app",
+                "next": "day3_history_callback_19"
+            }
+        ]
+    },
+    "day3_night_pressure_sea_10": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_11"
+    },
+    "day3_night_pressure_sea_11": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_sea_12"
+    },
+    "day3_night_pressure_sea_12": {
+        "background": "room_night",
+        "character": null,
+        "next": "day4_morning_start"
+    },
+    "day3_night_pressure_eunsu_1": {
+        "background": "room_night",
+        "character": null,
+        "sfx": "sfx_notification.mp3",
+        "next": "day3_night_pressure_eunsu_2"
+    },
+    "day3_night_pressure_eunsu_2": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_3"
+    },
+    "day3_night_pressure_eunsu_3": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_4"
+    },
+    "day3_night_pressure_eunsu_4": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_5"
+    },
+    "day3_night_pressure_eunsu_5": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_6"
+    },
+    "day3_night_pressure_eunsu_6": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_7",
+        "branches": [
+            {
+                "condition": "saw_eunsu_documents",
+                "next": "day3_history_callback_20"
+            }
+        ]
+    },
+    "day3_night_pressure_eunsu_7": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_8"
+    },
+    "day3_night_pressure_eunsu_8": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_9"
+    },
+    "day3_night_pressure_eunsu_9": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_10",
+        "branches": [
+            {
+                "condition": "found_old_building_nametags",
+                "next": "day3_history_callback_21"
+            }
+        ]
+    },
+    "day3_night_pressure_eunsu_10": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_11"
+    },
+    "day3_night_pressure_eunsu_11": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_eunsu_12"
+    },
+    "day3_night_pressure_eunsu_12": {
+        "background": "room_night",
+        "character": null,
+        "next": "day4_morning_start"
+    },
+    "day3_night_pressure_riin_1": {
+        "background": "room_night",
+        "character": null,
+        "glitch": {
+            "drugBlur": true,
+            "drugBlurDuration": 800
+        },
+        "next": "day3_night_pressure_riin_2"
+    },
+    "day3_night_pressure_riin_2": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_3"
+    },
+    "day3_night_pressure_riin_3": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_4"
+    },
+    "day3_night_pressure_riin_4": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_5",
+        "branches": [
+            {
+                "condition": "saw_m13_ampoule",
+                "next": "day3_history_callback_22"
+            }
+        ]
+    },
+    "day3_night_pressure_riin_5": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_6"
+    },
+    "day3_night_pressure_riin_6": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_7"
+    },
+    "day3_night_pressure_riin_7": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_8"
+    },
+    "day3_night_pressure_riin_8": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_9"
+    },
+    "day3_night_pressure_riin_9": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_10",
+        "branches": [
+            {
+                "condition": "drank_riin_drink",
+                "next": "day3_history_callback_23"
+            }
+        ]
+    },
+    "day3_night_pressure_riin_10": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_11"
+    },
+    "day3_night_pressure_riin_11": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_riin_12"
+    },
+    "day3_night_pressure_riin_12": {
+        "background": "room_night",
+        "character": null,
+        "next": "day4_morning_start"
+    },
+    "day3_night_pressure_yuna_1": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_yuna_2"
+    },
+    "day3_night_pressure_yuna_2": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_yuna_3"
+    },
+    "day3_night_pressure_yuna_3": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_yuna_4",
+        "branches": [
+            {
+                "condition": "yuna_sd_card_copy",
+                "next": "day3_history_callback_24"
+            }
+        ]
+    },
+    "day3_night_pressure_yuna_4": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_yuna_5"
+    },
+    "day3_night_pressure_yuna_5": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_yuna_6"
+    },
+    "day3_night_pressure_yuna_6": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_yuna_7"
+    },
+    "day3_night_pressure_yuna_7": {
+        "background": "room_night",
+        "character": null,
+        "next": "day3_night_pressure_yuna_8"
+    },
+    "day3_night_pressure_yuna_8": {
+        "background": "room_night",
+        "character": null,
+        "next": "day4_morning_start"
+    },
+    "day3_history_callback_18": {
+        "character": null,
+        "next": "day3_night_pressure_sea_7"
+    },
+    "day3_history_callback_19": {
+        "character": null,
+        "next": "day3_night_pressure_sea_10"
+    },
+    "day3_history_callback_20": {
+        "character": null,
+        "next": "day3_night_pressure_eunsu_7"
+    },
+    "day3_history_callback_21": {
+        "character": null,
+        "next": "day3_night_pressure_eunsu_10"
+    },
+    "day3_history_callback_22": {
+        "character": null,
+        "next": "day3_night_pressure_riin_5"
+    },
+    "day3_history_callback_23": {
+        "character": null,
+        "next": "day3_night_pressure_riin_10"
+    },
+    "day3_history_callback_24": {
+        "character": null,
+        "next": "day3_night_pressure_yuna_4"
     }
 });

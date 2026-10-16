@@ -233,6 +233,9 @@ class GallerySystem {
     };
 
     static BGM_TITLES = {
+        cycle07_elegy: 'Cycle 07: Elegy',
+        complicit_cold_pulse: 'Complicit: Cold Pulse',
+        yuna_theme: 'Yuna Theme',
         spring_bright: 'Spring Bright',
         daily_bright: 'Daily Bright',
         sunset_warm: 'Sunset Warm',
@@ -260,6 +263,57 @@ class GallerySystem {
         ending_bittersweet: 'Ending: Bittersweet',
         morning_peaceful: 'Morning Peaceful',
         chase: 'Chase'
+    };
+
+    static EXPANSION_CG_LABELS = {
+        ko: {
+            cg_cycle07_seolhwa: ['제7차 주기: 왼손', '빗속의 비상구에서 손을 붙잡은 설화'],
+            cg_cycle12_yuna: ['제12차 주기: 암실', '다음 등교를 위해 필름을 남긴 유나'],
+            ending_cage_eunsu: ['CAGE END: 은수의 교실', '은색 밴드와 영구 졸업 유예'],
+            ending_complicit_monitors: ['COMPLICIT END: 관제실', '다음 승인 문서에 남은 내 서명']
+        },
+        en: {
+            cg_cycle07_seolhwa: ['Cycle 07: The Left Hand', 'Seolhwa holds your hand at the rain-soaked emergency exit.'],
+            cg_cycle12_yuna: ['Cycle 12: The Darkroom', 'Yuna keeps the film for the next arrival.'],
+            ending_cage_eunsu: ['Cage Ending: Eunsu', 'A silver band and a permanently deferred graduation.'],
+            ending_complicit_monitors: ['Complicit: Control Room', 'The next approval carries your signature.']
+        },
+        ja: {
+            cg_cycle07_seolhwa: ['第7周期：左手', '雨の非常口で手を握るソルファ'],
+            cg_cycle12_yuna: ['第12周期：暗室', '次の登校のためにフィルムを残すユナ'],
+            ending_cage_eunsu: ['CAGE END：ウンスの教室', '銀のバンドと永久の卒業延期'],
+            ending_complicit_monitors: ['COMPLICIT END：監視室', '次の承認書に残る自分の署名']
+        },
+        es: {
+            cg_cycle07_seolhwa: ['Ciclo 07: La mano izquierda', 'Seolhwa te toma la mano en la salida bajo la lluvia.'],
+            cg_cycle12_yuna: ['Ciclo 12: El cuarto oscuro', 'Yuna guarda el rollo para tu próxima llegada.'],
+            ending_cage_eunsu: ['Final Jaula: Eunsu', 'Una pulsera de plata y una graduación aplazada para siempre.'],
+            ending_complicit_monitors: ['Cómplice: Sala de control', 'La siguiente autorización lleva tu firma.']
+        },
+        fr: {
+            cg_cycle07_seolhwa: ['Cycle 07 : La main gauche', 'Seolhwa te tient la main à la sortie sous la pluie.'],
+            cg_cycle12_yuna: ['Cycle 12 : La chambre noire', 'Yuna garde la pellicule pour ta prochaine arrivée.'],
+            ending_cage_eunsu: ['Fin Cage : Eunsu', 'Un bracelet argenté et un diplôme repoussé à jamais.'],
+            ending_complicit_monitors: ['Complice : Salle de contrôle', 'La prochaine autorisation porte ta signature.']
+        },
+        de: {
+            cg_cycle07_seolhwa: ['Zyklus 07: Die linke Hand', 'Seolhwa hält deine Hand am Notausgang im Regen.'],
+            cg_cycle12_yuna: ['Zyklus 12: Die Dunkelkammer', 'Yuna bewahrt den Film für deine nächste Ankunft auf.'],
+            ending_cage_eunsu: ['Käfig-Ende: Eunsu', 'Ein silbernes Band und ein auf ewig vertagter Abschluss.'],
+            ending_complicit_monitors: ['Komplize: Kontrollraum', 'Die nächste Genehmigung trägt deine Unterschrift.']
+        },
+        pt: {
+            cg_cycle07_seolhwa: ['Ciclo 07: A mão esquerda', 'Seolhwa segura sua mão na saída de emergência sob a chuva.'],
+            cg_cycle12_yuna: ['Ciclo 12: A sala escura', 'Yuna guarda o filme para a sua próxima chegada.'],
+            ending_cage_eunsu: ['Final Gaiola: Eunsu', 'Uma pulseira prateada e uma formatura adiada para sempre.'],
+            ending_complicit_monitors: ['Cúmplice: Sala de controle', 'A próxima autorização leva a sua assinatura.']
+        },
+        zh: {
+            cg_cycle07_seolhwa: ['第7周期：左手', '雪花在雨中的紧急出口握住了你的手'],
+            cg_cycle12_yuna: ['第12周期：暗室', '由娜为下一次入学留下底片'],
+            ending_cage_eunsu: ['囚笼结局：恩秀的教室', '银色手环与永久延期的毕业'],
+            ending_complicit_monitors: ['共犯结局：监控室', '下一份批准文件上留下了你的签名']
+        }
     };
 
     static EXPRESSION_TITLES = {
@@ -837,9 +891,28 @@ class GallerySystem {
     }
 
     _getCGItems() {
-        if (this._cgItems) return this._cgItems;
+        if (this._cgItems && this._cgLang === this._lang()) return this._cgItems;
+        this._cgLang = this._lang();
+        const localized = GallerySystem.EXPANSION_CG_LABELS[this._cgLang]
+            || GallerySystem.EXPANSION_CG_LABELS.en;
 
         const map = {
+            cg_cycle07_seolhwa: {
+                id: 'cg_cycle07_seolhwa', name: 'Cycle 07: The Left Hand',
+                description: 'Seolhwa holds the emergency door in the rain.'
+            },
+            cg_cycle12_yuna: {
+                id: 'cg_cycle12_yuna', name: 'Cycle 12: The Darkroom',
+                description: 'Yuna keeps the film for the next arrival.'
+            },
+            ending_cage_eunsu: {
+                id: 'ending_cage_eunsu', name: 'Cage Ending: Eunsu',
+                description: 'A silver band and a permanently deferred graduation.'
+            },
+            ending_complicit_monitors: {
+                id: 'ending_complicit_monitors', name: 'Complicit: Control Room',
+                description: 'The next approval carries your signature.'
+            },
             ending_true: {
                 id: 'ending_true',
                 name: 'True Ending CG',
@@ -888,8 +961,8 @@ class GallerySystem {
                 id: map[backgroundKey]?.id || backgroundKey,
                 backgroundKey,
                 file,
-                name: map[backgroundKey]?.name || this._titleFromId(backgroundKey),
-                description: map[backgroundKey]?.description || ''
+                name: localized[backgroundKey]?.[0] || map[backgroundKey]?.name || this._titleFromId(backgroundKey),
+                description: localized[backgroundKey]?.[1] || map[backgroundKey]?.description || ''
             }));
 
         return this._cgItems;

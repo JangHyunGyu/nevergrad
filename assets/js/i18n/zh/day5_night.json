@@ -1,763 +1,1877 @@
 {
-    "day5_night_start": {
-        "text": "*夜晚。*"
-    },
-    "day5_night_affinity_check": {
-        "text": ""
-    },
-    "day5_night_set_high_affinity": {
-        "text": ""
-    },
-    "day5_night_sea_affinity_check": {
-        "text": ""
-    },
-    "day5_night_set_high_sea_affinity": {
-        "text": ""
-    },
-    "day5_night_complicit_eval": {
-        "text": ""
-    },
-    "day5_night_set_complicit_ready": {
-        "text": ""
-    },
-    "day5_night_routing": {
-        "text": ""
-    },
-    "day5_ending_forget_forced_1": {
-        "text": "*已经晚了。针头拔出的地方，只剩一片冰凉。*"
-    },
-    "day5_ending_forget_forced_2": {
-        "text": "对不起。这次也晚了。"
-    },
-    "day5_ending_forget_forced_3": {
-        "text": "*莉仁老师闭着眼睛说了句什么。只看得见口型，听不清声音。*"
-    },
-    "day5_ending_forget_forced_4": {
-        "text": "*视野模糊了。我张开嘴，却发不出声音。*"
-    },
-    "day5_ending_ghost_guided_1": {
-        "text": "*停电的黑暗中，应急铃响了一声。有人用力推了我的后背。*"
-    },
-    "day5_ending_ghost_guided_2": {
-        "text": "别停。你的身体记得路。"
-    },
-    "day5_ending_ghost_guided_3": {
-        "text": "*我两级两级地跃上楼梯。脚已经朝着安全出口去了。*"
-    },
-    "day5_ending_ghost_guided_4": {
-        "text": "就这样。现在，只要推开门。"
-    },
-    "day5_ending_ghost_guided_5": {
-        "text": "*门一开，外面的冷空气一下子灌进胸口。*"
-    },
-    "day5_ending_true_1": {
-        "text": "*恩秀老师紧紧攥着注射器，指关节发白。*"
-    },
-    "day5_ending_true_2": {
-        "text": "*没有回答。*"
-    },
-    "day5_ending_true_3": {
-        "text": "是啊。这次也是朝门的方向。"
-    },
-    "day5_ending_true_4": {
-        "text": "*恩秀老师放下针筒，让开了紧急出口。*"
-    },
-    "day5_ending_true_5": {
-        "text": "*我和由娜穿过安全出口，从旧馆后面的紧急楼梯走了出来。深夜的空气很冷。沿着校围栏外的马路，路灯一盏接一盏地亮着。*"
-    },
-    "day5_ending_true_6": {
-        "text": "*我回头看了一眼。*"
-    },
-    "day5_ending_true_7": {
-        "text": "*雪花站在安全出口里面。她走不出门外。*\n\n一起来。我拉着你，就能出来吗？"
-    },
-    "day5_ending_true_8": {
-        "text": "走。"
-    },
-    "day5_ending_true_9": {
-        "text": "雪花——"
-    },
-    "day5_ending_true_10": {
-        "text": "走。现在。"
-    },
-    "day5_ending_true_11": {
-        "text": "*雪花笑了。应急灯的光穿过她的脸，一直照到后面的瓷砖。*"
-    },
-    "day5_ending_true_12": {
-        "text": "我试了六次，每次都停在这里。今天，就这样走出去。"
-    },
-    "day5_ending_true_13": {
-        "text": "我的记录到此为止。你，跨过这扇门。"
-    },
-    "day5_ending_true_14": {
-        "text": "李雪花。这个名字，我会记住。"
-    },
-    "day5_ending_true_14a": {
-        "text": "*门内，恩秀老师的脚步声渐渐远去。*"
-    },
-    "day5_ending_true_14b": {
-        "text": "*尤娜拉住我的袖子。雪华仍站在门内。*"
-    },
-    "day5_ending_true_15": {
-        "text": "*雪花回过头来。楼梯的灯光遮住了她的脸。*"
-    },
-    "day5_ending_true_16": {
-        "text": "这样叫我，还是第一次。"
-    },
-    "day5_ending_true_17": {
-        "text": "*雪花不见了。只剩应急灯还亮着。*"
-    },
-    "day5_ending_true_18": {
-        "text": "*雨中的楼梯，湿透的校服袖子，还有握着我左手的那只冰凉的手，一一浮现。*"
-    },
-    "day5_ending_true_19": {
-        "text": "*记忆的前后对不上。*"
-    },
-    "day5_ending_true_20": {
-        "text": "*图书馆里下的雨，上锁的地下室门，翻越围栏时抓住我的那只手，接连浮了上来。*"
-    },
-    "day5_ending_true_21": {
-        "text": "*记忆里的十二张名牌，全都翻到了背面。*"
-    },
-    "day5_ending_true_21a": {
-        "text": "*敏秀的头像变成了灰色空白。想不起以前的教室和父母搬家的理由，只剩这所学校里的画面。*"
-    },
-    "day5_ending_true_22": {
-        "text": "*我跪下，由娜在旁边坐下，托住我的后背。*\n\n等一下，扶住我。路都看到了，可我站不起来。"
-    },
-    "day5_ending_true_23": {
-        "text": "没事的，学长。"
-    },
-    "day5_ending_true_24": {
-        "text": "走吧。这里的话到外面再说。我不想再留下了。\n\n*由娜望着昏暗操场另一边、学校围栏外的道路，开口说。*"
-    },
-    "day5_ending_true_25": {
-        "text": "学校里要做的事，已经结束了。"
-    },
-    "day5_ending_true_26": {
-        "text": "*新闻报道。“○○学校非法研究设施被查获——涉嫌违规投药及人体临床试验”*"
-    },
-    "day5_ending_true_27": {
-        "text": "*“多名受害者称有记忆障碍”“研究负责人B某被拘留”“在校三年并收集证据的学生C某的举报起到决定性作用”*"
-    },
-    "day5_ending_true_28": {
-        "text": "*我放下了手机。新的学校，新的教室。这里没有熟悉的面孔。*"
-    },
-    "day5_ending_true_29": {
-        "text": "*名牌上写的不是第十三个名字，而是最初的名字。*"
-    },
-    "day5_ending_true_30": {
-        "text": "*我把那些名字抄在纸上。雪花的名字，还有剩下的那些面孔，都写在了同一行。*"
-    },
-    "day5_ending_true_31": {
-        "text": "*我用左手握住铅笔。食指旁留下了一道铅笔印。*"
-    },
-    "day5_ending_true_32": {
-        "text": ""
-    },
-    "day5_ending_true_subtitle": {
-        "text": "毕业——走出教室。"
-    },
-    "day5_ending_true_title": {
-        "text": ""
-    },
-    "day5_postcredit_1": {
-        "text": "*不知哪里，电话铃响了。*"
-    },
-    "day5_postcredit_2": {
-        "text": "*宽敞的办公室。书桌上摆着文件和好几台显示器。屏幕上是学校的平面图。*"
-    },
-    "day5_postcredit_3": {
-        "text": "是。已确认。据点关闭。资产回收完毕，人员重新调配。"
-    },
-    "day5_postcredit_4": {
-        "text": "13号案件在现场负责人这一级结束。不要留下基金会的名字。"
-    },
-    "day5_postcredit_5": {
-        "text": "是。下一所试点学校已选定。"
-    },
-    "day5_postcredit_6": {
-        "text": "教职员重新调配的草案提交了吗？"
-    },
-    "day5_postcredit_7": {
-        "text": "*显示器画面上出现了新的学校、校服和名字。文件标题是“埃迪娜基金会——不适应学生矫正项目第二据点实施计划书”，文件顶端的标志依旧。*"
-    },
-    "day5_postcredit_8": {
-        "text": "*新转学生的档案出现在屏幕上。照片里的学生正对着镜头微笑。*"
-    },
-    "day5_postcredit_end": {
-        "text": ""
-    },
-    "day5_ending_escape_1": {
-        "text": "*我和由娜一起跑出了学校。*"
-    },
-    "day5_ending_escape_2": {
-        "text": "*我回头看了一眼。没有人追来。*"
-    },
-    "day5_ending_escape_3": {
-        "text": "*出了校门之后，我也好一阵子停不下脚步。*"
-    },
-    "day5_ending_escape_4": {
-        "text": "学长，文件已经没了，只剩相机里拍下的照片。"
-    },
-    "day5_ending_escape_5": {
-        "text": "可我们还是出来了啊。"
-    },
-    "day5_ending_escape_6": {
-        "text": "*我顺着路灯，走在黎明前的马路上。*"
-    },
-    "day5_ending_escape_7": {
-        "text": "*只有雪花站过的那个位置，我怎么也想不起来。*"
-    },
-    "day5_ending_escape_8": {
-        "text": "*回头望向学校，只有旧馆三楼的一扇窗户，黑漆漆地空着。*"
-    },
-    "day5_ending_escape_9": {
-        "text": "学长。你是左撇子吗？"
-    },
-    "day5_ending_escape_10": {
-        "text": "不是啊？我是右撇子。"
-    },
-    "day5_ending_escape_11": {
-        "text": "*由娜张开嘴，却没说什么，重新握了握包带。*\n\n怎么了？回答很奇怪吗？不是随口问的吗？"
-    },
-    "day5_ending_escape_12": {
-        "text": "*我正用左手攥着书包带。我自己都没发觉。*"
-    },
-    "day5_ending_escape_13": {
-        "text": "*三个月后。*"
-    },
-    "day5_ending_escape_14": {
-        "text": "*我在新闻搜索栏里输入了○○学校。没有新的报道。*"
-    },
-    "day5_ending_escape_15": {
-        "text": "学长，听说今天那所学校来了新的转学生。"
-    },
-    "day5_ending_escape_subtitle": {
-        "text": "逃离——没有记忆的逃脱。"
-    },
-    "day5_ending_escape_title": {
-        "text": ""
-    },
-    "day5_ending_resist_1": {
-        "text": "一起？"
-    },
-    "day5_ending_resist_2": {
-        "text": "这恐怕不是老师第一次签字。但是，不能再签了。"
-    },
-    "day5_ending_resist_3": {
-        "text": "*她沉默了一会儿。*"
-    },
-    "day5_ending_resist_4": {
-        "text": "不是的。从第三次开始，就是我自己的选择了。"
-    },
-    "day5_ending_resist_5": {
-        "text": "那之后的签名，全是我的笔迹，{name}。"
-    },
-    "day5_ending_resist_6": {
-        "text": "老师要是留下来，又会有别的学生坐到那个位置上。"
-    },
-    "day5_ending_resist_7": {
-        "text": "*雪花时而出现在恩秀老师的肩后，时而出现在安全出口标志下。*"
-    },
-    "day5_ending_resist_8": {
-        "text": "恩秀。"
-    },
-    "day5_ending_resist_9": {
-        "text": "*我不由自主地念出了那个名字，恩秀老师握着注射器的手垂了下来。*"
-    },
-    "day5_ending_resist_10": {
-        "text": "李雪花。"
-    },
-    "day5_ending_resist_11": {
-        "text": "*我跟着雪华的话开了口。*\n\n每贴上一个新的名牌，您都会笑。"
-    },
-    "day5_ending_resist_12": {
-        "text": "可次数越多，您笑的时间就越短。"
-    },
-    "day5_ending_resist_13": {
-        "text": "老师，您也该出去了。"
-    },
-    "day5_ending_resist_14": {
-        "text": "*恩秀老师把注射器放在地上，站了很久。*\n\n别再捡起来了。门开着呢。一起出去吧。"
-    },
-    "day5_ending_resist_15": {
-        "text": "一旦出去，每一份文件上都会有我的名字。"
-    },
-    "day5_ending_resist_16": {
-        "text": "我知道。"
-    },
-    "day5_ending_resist_17": {
-        "text": "我可能会进监狱。"
-    },
-    "day5_ending_resist_18": {
-        "text": "我知道。"
-    },
-    "day5_ending_resist_18a": {
-        "text": "第十一个吴泰贤说，他信任我。说因为我是老师，所以没关系。"
-    },
-    "day5_ending_resist_18b": {
-        "text": "*恩秀老师没能把话说完，闭上了嘴。*\n\n那个孩子相信您，可您做了什么？"
-    },
-    "day5_ending_resist_18c": {
-        "text": "那天夜里，是我抹掉的。第二天早上，他问：“老师，您是哪位？”"
-    },
-    "day5_ending_resist_18d": {
-        "text": "即便如此，我还是签了字。下一行，再下一行。"
-    },
-    "day5_ending_resist_19": {
-        "text": "*恩秀老师捂着嘴，好一会儿抬不起头。*\n\n看着我。我知道。出去也不会让那些文件消失。"
-    },
-    "day5_ending_resist_20": {
-        "text": "我亲手把你抹掉了。可你还……？"
-    },
-    "day5_ending_resist_21": {
-        "text": "这些文件一旦送到外面，您会被追究责任。可就算这样，也比在这里写下一行要好。"
-    },
-    "day5_ending_resist_22": {
-        "text": "*我和恩秀老师一起走过安全出口。*\n\n*雪花在门里笑着。走下楼梯的时候，已经看不见她了。*"
-    },
-    "day5_ending_resist_23": {
-        "text": "*恩秀老师出来了。但文件顶端的印章，仍然留在那里。*"
-    },
-    "day5_ending_resist_24": {
-        "text": "*空荡荡的教师办公室里，放上了新班主任的名牌，空着的座位上，坐进了另一个转学生。*"
-    },
-    "day5_ending_resist_subtitle": {
-        "text": "反抗 ─ 送出去的记录。"
-    },
-    "day5_ending_resist_title": {
-        "text": ""
-    },
-    "day5_ending_cage_eunsu_1": {
-        "text": "*傍晚过去了，教室的灯依旧没有熄。恩秀老师像往常一样整理着点名册。*\n\n还在看点名册？课都上完了。不能关灯了吗？这么亮，还要一直坐着，实在有点……"
-    },
-    "day5_ending_cage_eunsu_2": {
-        "text": "今天的记录到这里。休息吧。"
-    },
-    "day5_ending_cage_eunsu_3": {
-        "text": "*我张了张嘴，最后只是点了点头。*"
-    },
-    "day5_ending_cage_eunsu_4": {
-        "text": "从明天起，一切照常就好。点名册上是哪个座位，就坐哪个座位。"
-    },
-    "day5_ending_cage_eunsu_5": {
-        "text": "*教室门轻轻关上了。明知道没有锁，我还是没从座位上站起来。*"
-    },
-    "day5_ending_cage_eunsu_6": {
-        "text": "*第二天下午。同一间教室，同一个靠窗的座位。恩秀老师的声音从教室后方嗡嗡地传来。*"
-    },
-    "day5_ending_cage_eunsu_7": {
-        "text": "*课和教室，每天都一样，那张笑脸也从不改变。*"
-    },
-    "day5_ending_cage_eunsu_8": {
-        "text": "*窗外有一辆车驶过，我依旧坐在座位上。*"
-    },
-    "day5_ending_cage_eunsu_9": {
-        "text": "*我望着窗外，直到车消失在围栏的另一边。*"
-    },
-    "day5_ending_cage_eunsu_10": {
-        "text": "*教室的门没有锁。*"
-    },
-    "day5_ending_cage_eunsu_11": {
-        "text": "*明明可以出去，我却没有从椅子上站起来。*"
-    },
-    "day5_ending_cage_sea_1": {
-        "text": "*世雅抱住了我。在走廊上。*"
-    },
-    "day5_ending_cage_sea_2": {
-        "text": "嗯。"
-    },
-    "day5_ending_cage_sea_3": {
-        "text": "今天可以留在这里，对吧？"
-    },
-    "day5_ending_cage_sea_4": {
-        "text": "*我只点了点头。世雅把额头埋到我的肩上，长长地呼出一口气。*\n\n嗯。今天我留在这里。手稍微松一点吧。"
-    },
-    "day5_ending_cage_sea_5": {
-        "text": ""
-    },
-    "day5_ending_cage_sea_6": {
-        "text": "*学生会办公室里，世雅打开便当，看着我笑。*"
-    },
-    "day5_ending_cage_sea_7": {
-        "text": "*第十三个。世雅没有合上便当盒盖。对面的座位依然留着。*"
-    },
-    "day5_ending_cage_sea_8": {
-        "text": "*图书馆的窗边没有由娜的相机。只剩下每晚摸着左边墙壁的习惯。*"
-    },
-    "day5_ending_cage_sea_9": {
-        "text": "*书桌抽屉的深处，还留着一块空白的名牌。*"
-    },
-    "day5_ending_cage_subtitle": {
-        "text": "鸟笼 ─ 选择留下的座位。"
-    },
-    "day5_ending_cage_title": {
-        "text": ""
-    },
-    "day5_ending_forget_1": {
-        "text": "请把我抹掉。"
-    },
-    "day5_ending_forget_2": {
-        "text": "*恩秀老师握着注射器，看着我。*"
-    },
-    "day5_ending_forget_3": {
-        "text": "你确定吗？"
-    },
-    "day5_ending_forget_4": {
-        "text": "那些空白，全都是我的记录，对吧？"
-    },
-    "day5_ending_forget_5": {
-        "text": "这个事实，我承受不了。"
-    },
-    "day5_ending_forget_6": {
-        "text": "请帮我消除吧。那些名字一直在我眼前晃。"
-    },
-    "day5_ending_forget_7": {
-        "text": "*恩秀老师举起注射器，凑近我的手臂。*\n\n可以闭上眼睛吧？"
-    },
-    "day5_ending_forget_8": {
-        "text": "对不起。"
-    },
-    "day5_ending_forget_9": {
-        "text": "*针扎进去的地方，整条手臂开始发麻。*"
-    },
-    "day5_ending_forget_10": {
-        "text": "*最后看到的雪花动了动嘴唇，却听不到声音。*"
-    },
-    "day5_ending_forget_11": {
-        "text": "*我读出了她的唇语。*"
-    },
-    "day5_ending_forget_12": {
-        "text": "*“别忘了”*"
-    },
-    "day5_ending_forget_13": {
-        "text": "*我忘了。*"
-    },
-    "day5_ending_forget_14": {
-        "text": "*眼皮外面亮了起来，闹钟在响。我看了看手机。*"
-    },
-    "day5_ending_forget_15": {
-        "text": "*“早上好，{new_name}！”*"
-    },
-    "day5_ending_forget_16": {
-        "text": "*名字不一样。镜子里的脸并不陌生，却想不出该叫它什么。*"
-    },
-    "day5_ending_forget_17": {
-        "text": "*下巴尖湿了。想到要擦，已经慢了一拍。*"
-    },
-    "day5_ending_forget_18": {
-        "text": "*从今天起，我要去一所新学校。*"
-    },
-    "day5_ending_forget_19": {
-        "text": "*校门口站着一位老师。*"
-    },
-    "day5_ending_forget_20": {
-        "text": "欢迎。你是{new_name}吧？新来的转学生？"
-    },
-    "day5_ending_forget_21": {
-        "text": "学校里的事，老师会照顾你的。"
-    },
-    "day5_ending_forget_22": {
-        "text": "*老师的嘴角和眼角同时牵动，笑了。*"
-    },
-    "day5_ending_forget_sea_branch": {
-        "text": ""
-    },
-    "day5_ending_forget_sea_1": {
-        "text": "*一个笑容明亮的女生，戴着班长袖章，站在校门口。*"
-    },
-    "day5_ending_forget_sea_2": {
-        "text": "你好！你是今天来的转学生吧？我带你熟悉一下。"
-    },
-    "day5_ending_forget_sea_3": {
-        "text": "*看着眼熟。刚要想起来，铃声先响了。*"
-    },
-    "day5_ending_forget_subtitle": {
-        "text": "遗忘——第十四个名牌。"
-    },
-    "day5_ending_forget_title": {
-        "text": ""
-    },
-    "day5_ending_ghost_1": {
-        "text": "*想转身，脚却动不了。*"
-    },
-    "day5_ending_ghost_2": {
-        "text": "*恩秀老师握着注射器走了过来。*"
-    },
-    "day5_ending_ghost_3": {
-        "text": "*雪花站在我和恩秀老师之间。*"
-    },
-    "day5_ending_ghost_4": {
-        "text": "我来。"
-    },
-    "day5_ending_ghost_5": {
-        "text": "雪花——？"
-    },
-    "day5_ending_ghost_6": {
-        "text": "六次了，没有人越过这扇门。"
-    },
-    "day5_ending_ghost_7": {
-        "text": "这次你又停住了。所以我挡在了恩秀前面。"
-    },
-    "day5_ending_ghost_8": {
-        "text": "门一开，我就推你出去。"
-    },
-    "day5_ending_ghost_9": {
-        "text": "*雪花直视着我。到现在为止，我在任何一张照片里都没有见过她这样的表情。*\n\n别看我，看门外。这样看着我，是打算只送我出去吗？"
-    },
-    "day5_ending_ghost_10": {
-        "text": "跑。现在。"
-    },
-    "day5_ending_ghost_11": {
-        "text": "*身体动了。脚尖转向安全出口。*"
-    },
-    "day5_ending_ghost_12": {
-        "text": "*我拉着由娜的手冲向安全出口。恩秀老师在身后喊，我没有停。*"
-    },
-    "day5_ending_ghost_13": {
-        "text": "*冲出安全出口回头一看，门里的雪花在笑，笑容后面的墙壁透了出来。*"
-    },
-    "day5_ending_ghost_14": {
-        "text": "老师。下一个名牌，不会有了。"
-    },
-    "day5_ending_ghost_15": {
-        "text": "*雪花在应急灯下消失的瞬间，警报响了。警笛、脚步声和喊叫声搅成一团。*"
-    },
-    "day5_ending_ghost_16": {
-        "text": "*再也听不到雪花的声音。我把身后的警笛抛在脑后，逃出了学校。*"
-    },
-    "day5_ending_ghost_17": {
-        "text": "*转学之后，我仍然会避开空位，仍然习惯用左手扶墙。*"
-    },
-    "day5_ending_ghost_18": {
-        "text": "*偶尔夜里照镜子，黑褐色的头发会慢一拍地掠过。*"
-    },
-    "day5_ending_ghost_19": {
-        "text": "*每当拿起铅笔，每当在走廊向左拐，总有谁的名字浮上来，又消失。*"
-    },
-    "day5_ending_ghost_20": {
-        "text": "*只有向左偏的笔画，和第二级台阶上的那道痕迹，依然清晰。*"
-    },
-    "day5_ending_ghost_21": {
-        "text": "*左手先去找扶手，在走廊总沿着左墙走。*"
-    },
-    "day5_ending_ghost_22": {
-        "text": "*那所学校还在那里。安全出口挂上了新锁，钥匙在别人手里。*"
-    },
-    "day5_ending_ghost_subtitle": {
-        "text": "残影 ─ 留下来的习惯。"
-    },
-    "day5_ending_ghost_title": {
-        "text": ""
-    },
-    "day5_ending_complicit_1": {
-        "text": "*恩秀老师递来一张纸。*"
-    },
-    "day5_ending_complicit_2": {
-        "text": "下一个孩子，你来负责。这样你就能留下来。"
-    },
-    "day5_ending_complicit_3": {
-        "text": "留在这里。名字我会帮你挪到上面。"
-    },
-    "day5_ending_complicit_4": {
-        "text": "*我很久没有回答。*"
-    },
-    "day5_ending_complicit_5": {
-        "text": "*我看着那张纸。“Nevergrad 项目——助理研究员合同”。*"
-    },
-    "day5_ending_complicit_6": {
-        "text": "下一个孩子来的时候，我也可以在校门口笑着迎接吗？"
-    },
-    "day5_ending_complicit_7": {
-        "text": "可以。"
-    },
-    "day5_ending_complicit_8": {
-        "text": "*我把手按在了合同上。*"
-    },
-    "day5_ending_complicit_8a": {
-        "text": "*纸的边角抵住了掌心。*"
-    },
-    "day5_ending_complicit_8b": {
-        "text": "*门把手看得见。可视线却黏在签名栏上。*"
-    },
-    "day5_ending_complicit_sign": {
-        "text": "*笔尖落在了签名栏上。*"
-    },
-    "day5_ending_complicit_9": {
-        "text": "*我签了字。*"
-    },
-    "day5_ending_complicit_10": {
-        "text": "*恩秀老师笑了。世雅也笑了。*"
-    },
-    "day5_ending_complicit_11": {
-        "text": "*我也跟着笑了。*"
-    },
-    "day5_ending_complicit_12": {
-        "text": "*早晨的校门口，走来一个名牌还空着的新学生。*"
-    },
-    "day5_ending_complicit_13": {
-        "text": "*只有发色不一样。攥着书包带的习惯，却一模一样。*"
-    },
-    "day5_ending_complicit_14": {
-        "text": "欢迎。你就是{14th_name}吧？"
-    },
-    "day5_ending_complicit_15": {
-        "text": "*新学生一言不发地点了点头。攥着书包带的手指蜷了三下。*"
-    },
-    "day5_ending_complicit_16": {
-        "text": "别担心。大家都会好好照顾你的。"
-    },
-    "day5_ending_complicit_17": {
-        "text": "*恩秀老师在身后看着。走廊尽头，雪花默默站着。*"
-    },
-    "day5_ending_complicit_18": {
-        "text": "*我先笑了。*"
-    },
-    "day5_ending_complicit_subtitle": {
-        "text": "同谋 ─ 下一本点名册。"
-    },
-    "day5_ending_complicit_title": {
-        "text": ""
-    },
-    "day5_cage_loop": {
-        "text": ""
-    },
-    "day5_xover_server_1": {
-        "text": "*我连上了研究所的服务器。旧显示器上弹出文件列表。*"
-    },
-    "day5_xover_server_2": {
-        "text": "*丘比特项目（PROJECT CUPID）——上一周期记录：*"
-    },
-    "day5_xover_server_3": {
-        "text": "*> cycle_01.zip  [完好]*"
-    },
-    "day5_xover_server_3_damaged": {
-        "text": "*> cycle_01.zip  [已损坏]*"
-    },
-    "day5_xover_server_4": {
-        "text": "*附件：CUPID_ENV_PREVIEW*"
-    },
-    "day5_xover_server_preview_choice": {
-        "text": "*要运行预览吗？*",
-        "choices": [
-            "运行 PREVIEW",
-            "关闭"
-        ]
-    },
-    "day5_xover_preview_1": {
-        "text": "*樱花。*"
-    },
-    "day5_xover_preview_2": {
-        "text": "*春风吹拂的转学第一天，我穿着新校服站在校门前。*"
-    },
-    "day5_xover_preview_3": {
-        "text": "*樱花瓣从同一个位置反复飘落。只有风向不同。*"
-    },
-    "day5_xover_preview_4": {
-        "text": "*画面右下角有一行小字：cycle_01*"
-    },
-    "day5_xover_preview_heroine": {
-        "text": "*[CUPID_ENV_PREVIEW]*\n*情感烙印模型：{cupid_heroine}*\n*顺应反应率：{cupid_compliance}*\n*给药前环境反应性检查与 M-13 稳定化指标一致。*"
-    },
-    "day5_xover_preview_5": {
-        "text": "*显示器熄灭了。*"
-    },
-    "day5_xover_server_end": {
-        "text": "*我关掉了文件。*"
-    },
-    "day5_observer_1": {
-        "text": "*制作人员名单结束，画面彻底暗了下去。*"
-    },
-    "day5_observer_2": {
-        "text": "*三秒。*"
-    },
-    "day5_observer_3": {
-        "text": "*画面中央，文字一个字一个字浮现出来。*"
-    },
-    "day5_observer_4": {
-        "text": "埃迪纳基金会 / NEVERGRAD 研究所\n安全审计：外部查阅会话\n对照档案：#13 观察记录"
-    },
-    "day5_observer_5": {
-        "text": "访问权限：审计／监控\n会话状态：保持连接\n受试者接触权限：无"
-    },
-    "day5_observer_6": {
-        "text": "受试者：#13 ({name})\n会话连接时长：{play_time}\n\n接触及介入汇总\n世雅接触次数：{route_data}\n是否接触由娜：{met_yuna}\n梨仁探访次数：{riin_visits}\n雪花接触尝试：{seolhwa_attempts}\n证据获取状态：{evidence_data}\n最终应答记录：{timer_data}"
-    },
-    "day5_observer_7": {
-        "text": "接触记录对照完成\n正在对照行为模式"
-    },
-    "day5_observer_8": {
-        "text": "对照基准：研究负责人朴恩秀／13 次观察\n外部查阅会话：#13 ({name})／{play_time}\n\n共同项目：警告后继续查阅、介入记录累积\n相似度：持续观察模式吻合\n\n自动判定：待定\n会话终止请求：未收到"
-    },
-    "day5_observer_cupid_check": {
-        "text": ""
-    },
-    "day5_observer_cupid_extra": {
-        "text": "交叉参照：\n\n检测到 CUPID_ENV_PREVIEW。\n情感烙印：{cupid_heroine}\n顺应率：{cupid_compliance}\n与 M-13 稳定化指标部分吻合。\n\n备注：\n观察者数据仍与 #13 文件绑定。"
-    },
-    "day5_observer_9": {
-        "text": "*画面停住了。五秒。*"
-    },
-    "day5_observer_10": {
-        "text": "*屏幕底部，用极小的字写着：*"
-    },
-    "day5_observer_11": {
-        "text": "[您要毕业吗？]",
-        "choices": [
-            "是",
-            "否"
-        ]
-    },
-    "day5_night_seolhwa_affinity_check": {
-        "text": ""
-    },
-    "day5_night_set_high_seolhwa_affinity": {
-        "text": ""
-    },
-    "day5_ending_true_voice_check": {
-        "text": ""
-    },
-    "day5_ending_true_16_clear_intro": {
-        "text": "*雪华开口时，沉闷的杂音散去了。第七次在楼梯背后呼唤过的声音清晰地传了过来。*"
-    },
-    "day5_ending_true_16_clear": {
-        "text": "这样叫我，还是第一次。"
-    },
-    "day5_ending_true_riin_check": {
-        "text": ""
-    },
-    "day5_ending_true_27_riin": {
-        "text": "*报道下方还刊出了补充材料。和我们一起逃出来的理仁老师提交了六个周期的实际用药对照表与原始病历。*"
-    },
-    "day5_ending_true_27_riin_2": {
-        "text": "*每个用药日期旁都留着总部的批准编号。企图把事件掩盖成现场负责人个人失职的初期澄清报道，只过了半天就撤下了。*"
-    },
-    "day5_ending_true_sea_check": {
-        "text": ""
-    },
-    "day5_ending_true_27_sea": {
-        "text": "*和我们一起离开设施的世雅接受了外部保护措施。几天后，我们在远离学校的白天商业街上并肩走着。世雅手里既没有点名册，也没有学生会室的钥匙。*"
-    },
-    "day5_ending_true_27_sea_2": {
-        "text": "不用戴袖章，也不用跟在谁后面了呢。那边那条路也去走走看吧？"
-    },
-    "day5_ending_true_memory_check": {
-        "text": ""
-    },
-    "day5_ending_true_30_memory": {
-        "text": "*在旧校舍楼梯背后说过的话也完整地浮现出来。我在名字旁又添了一行：“下次别在这里，我们去外面见。”*"
-    },
-    "day5_ending_escape_riin_check": {
-        "text": ""
-    },
-    "day5_ending_escape_riin": {
-        "text": "*和我们一起出来的理仁老师为了躲避基金会的追查而转移了住处。离开前她发来简短消息，说藏在保健室地板下的原始病历已经被收回了。*"
-    },
-    "day5_ending_escape_sea_check": {
-        "text": ""
-    },
-    "day5_ending_escape_sea": {
-        "text": "*和我们一起逃出来的世雅搬到了远离学校的外部保护设施。报平安的简短消息下面，附着一张街区面包店纸袋的照片。*"
-    }
+  "day5_night_start": {
+    "text": "*夜晚。*"
+  },
+  "day5_night_affinity_check": {
+    "text": ""
+  },
+  "day5_night_set_high_affinity": {
+    "text": ""
+  },
+  "day5_night_sea_affinity_check": {
+    "text": ""
+  },
+  "day5_night_set_high_sea_affinity": {
+    "text": ""
+  },
+  "day5_night_complicit_eval": {
+    "text": ""
+  },
+  "day5_night_set_complicit_ready": {
+    "text": ""
+  },
+  "day5_night_routing": {
+    "text": ""
+  },
+  "day5_ending_forget_forced_1": {
+    "text": "*已经晚了。针头拔出的地方，只剩一片冰凉。*"
+  },
+  "day5_ending_forget_forced_2": {
+    "text": "对不起。这次也晚了。"
+  },
+  "day5_ending_forget_forced_3": {
+    "text": "*莉仁老师闭着眼睛说了句什么。只看得见口型，听不清声音。*"
+  },
+  "day5_ending_forget_forced_4": {
+    "text": "*视野模糊了。我张开嘴，却发不出声音。*"
+  },
+  "day5_ending_ghost_guided_1": {
+    "text": "*停电的黑暗中，应急铃响了一声。有人用力推了我的后背。*"
+  },
+  "day5_ending_ghost_guided_2": {
+    "text": "别停。你的身体记得路。"
+  },
+  "day5_ending_ghost_guided_3": {
+    "text": "*我两级两级地跃上楼梯。脚已经朝着安全出口去了。*"
+  },
+  "day5_ending_ghost_guided_4": {
+    "text": "就这样。现在，只要推开门。"
+  },
+  "day5_ending_ghost_guided_5": {
+    "text": "*门一开，外面的冷空气一下子灌进胸口。*"
+  },
+  "day5_ending_true_1": {
+    "text": "*恩秀老师紧紧攥着注射器，指关节发白。*"
+  },
+  "day5_ending_true_2": {
+    "text": "*没有回答。*"
+  },
+  "day5_ending_true_3": {
+    "text": "是啊。这次也是朝门的方向。"
+  },
+  "day5_ending_true_4": {
+    "text": "*恩秀老师放下针筒，让开了紧急出口。*"
+  },
+  "day5_ending_true_5": {
+    "text": "*我和由娜穿过安全出口，从旧馆后面的紧急楼梯走了出来。深夜的空气很冷。沿着校围栏外的马路，路灯一盏接一盏地亮着。*"
+  },
+  "day5_ending_true_6": {
+    "text": "*我回头看了一眼。*"
+  },
+  "day5_ending_true_7": {
+    "text": "*雪花站在安全出口里面。她走不出门外。*\n\n一起来。我拉着你，就能出来吗？"
+  },
+  "day5_ending_true_8": {
+    "text": "走。"
+  },
+  "day5_ending_true_9": {
+    "text": "雪花——"
+  },
+  "day5_ending_true_10": {
+    "text": "走。现在。"
+  },
+  "day5_ending_true_11": {
+    "text": "*雪花笑了。应急灯的光穿过她的脸，一直照到后面的瓷砖。*"
+  },
+  "day5_ending_true_12": {
+    "text": "我试了六次，每次都停在这里。今天，就这样走出去。"
+  },
+  "day5_ending_true_13": {
+    "text": "我的记录到此为止。你，跨过这扇门。"
+  },
+  "day5_ending_true_14": {
+    "text": "李雪花。这个名字，我会记住。"
+  },
+  "day5_ending_true_14a": {
+    "text": "*门内，恩秀老师的脚步声渐渐远去。*"
+  },
+  "day5_ending_true_14b": {
+    "text": "*尤娜拉住我的袖子。雪华仍站在门内。*"
+  },
+  "day5_ending_true_15": {
+    "text": "*雪花回过头来。楼梯的灯光遮住了她的脸。*"
+  },
+  "day5_ending_true_16": {
+    "text": "这样叫我，还是第一次。"
+  },
+  "day5_ending_true_17": {
+    "text": "*雪花不见了。只剩应急灯还亮着。*"
+  },
+  "day5_ending_true_18": {
+    "text": "*雨中的楼梯，湿透的校服袖子，还有握着我左手的那只冰凉的手，一一浮现。*"
+  },
+  "day5_ending_true_19": {
+    "text": "*记忆的前后对不上。*"
+  },
+  "day5_ending_true_20": {
+    "text": "*图书馆里下的雨，上锁的地下室门，翻越围栏时抓住我的那只手，接连浮了上来。*"
+  },
+  "day5_ending_true_21": {
+    "text": "*记忆里的十二张名牌，全都翻到了背面。*"
+  },
+  "day5_ending_true_21a": {
+    "text": "*敏秀的头像变成了灰色空白。想不起以前的教室和父母搬家的理由，只剩这所学校里的画面。*"
+  },
+  "day5_ending_true_22": {
+    "text": "*我跪下，由娜在旁边坐下，托住我的后背。*\n\n等一下，扶住我。路都看到了，可我站不起来。"
+  },
+  "day5_ending_true_23": {
+    "text": "没事的，学长。"
+  },
+  "day5_ending_true_24": {
+    "text": "走吧。这里的话到外面再说。我不想再留下了。\n\n*由娜望着昏暗操场另一边、学校围栏外的道路，开口说。*"
+  },
+  "day5_ending_true_25": {
+    "text": "学校里要做的事，已经结束了。"
+  },
+  "day5_ending_true_26": {
+    "text": "*新闻报道。“○○学校非法研究设施被查获——涉嫌违规投药及人体临床试验”*"
+  },
+  "day5_ending_true_27": {
+    "text": "*“多名受害者称有记忆障碍”“研究负责人B某被拘留”“在校三年并收集证据的学生C某的举报起到决定性作用”*"
+  },
+  "day5_ending_true_28": {
+    "text": "*我放下了手机。新的学校，新的教室。这里没有熟悉的面孔。*"
+  },
+  "day5_ending_true_29": {
+    "text": "*名牌上写的不是第十三个名字，而是最初的名字。*"
+  },
+  "day5_ending_true_30": {
+    "text": "*我把那些名字抄在纸上。雪花的名字，还有剩下的那些面孔，都写在了同一行。*"
+  },
+  "day5_ending_true_31": {
+    "text": "*我用左手握住铅笔。食指旁留下了一道铅笔印。*"
+  },
+  "day5_ending_true_32": {
+    "text": ""
+  },
+  "day5_ending_true_subtitle": {
+    "text": "毕业——走出教室。"
+  },
+  "day5_ending_true_title": {
+    "text": ""
+  },
+  "day5_postcredit_1": {
+    "text": "*不知哪里，电话铃响了。*"
+  },
+  "day5_postcredit_2": {
+    "text": "*宽敞的办公室。书桌上摆着文件和好几台显示器。屏幕上是学校的平面图。*"
+  },
+  "day5_postcredit_3": {
+    "text": "是。已确认。据点关闭。资产回收完毕，人员重新调配。"
+  },
+  "day5_postcredit_4": {
+    "text": "13号案件在现场负责人这一级结束。不要留下基金会的名字。"
+  },
+  "day5_postcredit_5": {
+    "text": "是。下一所试点学校已选定。"
+  },
+  "day5_postcredit_6": {
+    "text": "教职员重新调配的草案提交了吗？"
+  },
+  "day5_postcredit_7": {
+    "text": "*显示器画面上出现了新的学校、校服和名字。文件标题是“埃迪娜基金会——不适应学生矫正项目第二据点实施计划书”，文件顶端的标志依旧。*"
+  },
+  "day5_postcredit_8": {
+    "text": "*新转学生的档案出现在屏幕上。照片里的学生正对着镜头微笑。*"
+  },
+  "day5_postcredit_end": {
+    "text": ""
+  },
+  "day5_ending_escape_1": {
+    "text": "*我和由娜一起跑出了学校。*"
+  },
+  "day5_ending_escape_2": {
+    "text": "*我回头看了一眼。没有人追来。*"
+  },
+  "day5_ending_escape_3": {
+    "text": "*出了校门之后，我也好一阵子停不下脚步。*"
+  },
+  "day5_ending_escape_4": {
+    "text": "学长，文件已经没了，只剩相机里拍下的照片。"
+  },
+  "day5_ending_escape_5": {
+    "text": "可我们还是出来了啊。"
+  },
+  "day5_ending_escape_6": {
+    "text": "*我顺着路灯，走在黎明前的马路上。*"
+  },
+  "day5_ending_escape_7": {
+    "text": "*只有雪花站过的那个位置，我怎么也想不起来。*"
+  },
+  "day5_ending_escape_8": {
+    "text": "*回头望向学校，只有旧馆三楼的一扇窗户，黑漆漆地空着。*"
+  },
+  "day5_ending_escape_9": {
+    "text": "学长。你是左撇子吗？"
+  },
+  "day5_ending_escape_10": {
+    "text": "不是啊？我是右撇子。"
+  },
+  "day5_ending_escape_11": {
+    "text": "*由娜张开嘴，却没说什么，重新握了握包带。*\n\n怎么了？回答很奇怪吗？不是随口问的吗？"
+  },
+  "day5_ending_escape_12": {
+    "text": "*我正用左手攥着书包带。我自己都没发觉。*"
+  },
+  "day5_ending_escape_13": {
+    "text": "*三个月后。*"
+  },
+  "day5_ending_escape_14": {
+    "text": "*我在新闻搜索栏里输入了○○学校。没有新的报道。*"
+  },
+  "day5_ending_escape_15": {
+    "text": "学长，听说今天那所学校来了新的转学生。"
+  },
+  "day5_ending_escape_subtitle": {
+    "text": "逃离——没有记忆的逃脱。"
+  },
+  "day5_ending_escape_title": {
+    "text": ""
+  },
+  "day5_ending_resist_1": {
+    "text": "一起？"
+  },
+  "day5_ending_resist_2": {
+    "text": "这恐怕不是老师第一次签字。但是，不能再签了。"
+  },
+  "day5_ending_resist_3": {
+    "text": "*她沉默了一会儿。*"
+  },
+  "day5_ending_resist_4": {
+    "text": "不是的。从第三次开始，就是我自己的选择了。"
+  },
+  "day5_ending_resist_5": {
+    "text": "那之后的签名，全是我的笔迹，{name}。"
+  },
+  "day5_ending_resist_6": {
+    "text": "老师要是留下来，又会有别的学生坐到那个位置上。"
+  },
+  "day5_ending_resist_7": {
+    "text": "*雪花时而出现在恩秀老师的肩后，时而出现在安全出口标志下。*"
+  },
+  "day5_ending_resist_8": {
+    "text": "恩秀。"
+  },
+  "day5_ending_resist_9": {
+    "text": "*我不由自主地念出了那个名字，恩秀老师握着注射器的手垂了下来。*"
+  },
+  "day5_ending_resist_10": {
+    "text": "李雪花。"
+  },
+  "day5_ending_resist_11": {
+    "text": "*我跟着雪华的话开了口。*\n\n每贴上一个新的名牌，您都会笑。"
+  },
+  "day5_ending_resist_12": {
+    "text": "可次数越多，您笑的时间就越短。"
+  },
+  "day5_ending_resist_13": {
+    "text": "老师，您也该出去了。"
+  },
+  "day5_ending_resist_14": {
+    "text": "*恩秀老师把注射器放在地上，站了很久。*\n\n别再捡起来了。门开着呢。一起出去吧。"
+  },
+  "day5_ending_resist_15": {
+    "text": "一旦出去，每一份文件上都会有我的名字。"
+  },
+  "day5_ending_resist_16": {
+    "text": "我知道。"
+  },
+  "day5_ending_resist_17": {
+    "text": "我可能会进监狱。"
+  },
+  "day5_ending_resist_18": {
+    "text": "我知道。"
+  },
+  "day5_ending_resist_18a": {
+    "text": "第十一个吴泰贤说，他信任我。说因为我是老师，所以没关系。"
+  },
+  "day5_ending_resist_18b": {
+    "text": "*恩秀老师没能把话说完，闭上了嘴。*\n\n那个孩子相信您，可您做了什么？"
+  },
+  "day5_ending_resist_18c": {
+    "text": "那天夜里，是我抹掉的。第二天早上，他问：“老师，您是哪位？”"
+  },
+  "day5_ending_resist_18d": {
+    "text": "即便如此，我还是签了字。下一行，再下一行。"
+  },
+  "day5_ending_resist_19": {
+    "text": "*恩秀老师捂着嘴，好一会儿抬不起头。*\n\n看着我。我知道。出去也不会让那些文件消失。"
+  },
+  "day5_ending_resist_20": {
+    "text": "我亲手把你抹掉了。可你还……？"
+  },
+  "day5_ending_resist_21": {
+    "text": "这些文件一旦送到外面，您会被追究责任。可就算这样，也比在这里写下一行要好。"
+  },
+  "day5_ending_resist_22": {
+    "text": "*我和恩秀老师一起走过安全出口。*\n\n*雪花在门里笑着。走下楼梯的时候，已经看不见她了。*"
+  },
+  "day5_ending_resist_23": {
+    "text": "*恩秀老师出来了。但文件顶端的印章，仍然留在那里。*"
+  },
+  "day5_ending_resist_24": {
+    "text": "*空荡荡的教师办公室里，放上了新班主任的名牌，空着的座位上，坐进了另一个转学生。*"
+  },
+  "day5_ending_resist_subtitle": {
+    "text": "反抗 ─ 送出去的记录。"
+  },
+  "day5_ending_resist_title": {
+    "text": ""
+  },
+  "day5_ending_cage_eunsu_1": {
+    "text": "*傍晚过去了，教室的灯依旧没有熄。恩秀老师像往常一样整理着点名册。*\n\n还在看点名册？课都上完了。不能关灯了吗？这么亮，还要一直坐着，实在有点……"
+  },
+  "day5_ending_cage_eunsu_2": {
+    "text": "今天的记录到这里。休息吧。"
+  },
+  "day5_ending_cage_eunsu_3": {
+    "text": "*我张了张嘴，最后只是点了点头。*"
+  },
+  "day5_ending_cage_eunsu_4": {
+    "text": "从明天起，一切照常就好。点名册上是哪个座位，就坐哪个座位。"
+  },
+  "day5_ending_cage_eunsu_5": {
+    "text": "*教室门轻轻关上了。明知道没有锁，我还是没从座位上站起来。*"
+  },
+  "day5_ending_cage_eunsu_6": {
+    "text": "*第二天下午。同一间教室，同一个靠窗的座位。恩秀老师的声音从教室后方嗡嗡地传来。*"
+  },
+  "day5_ending_cage_eunsu_7": {
+    "text": "*课和教室，每天都一样，那张笑脸也从不改变。*"
+  },
+  "day5_ending_cage_eunsu_8": {
+    "text": "*窗外有一辆车驶过，我依旧坐在座位上。*"
+  },
+  "day5_ending_cage_eunsu_9": {
+    "text": "*我望着窗外，直到车消失在围栏的另一边。*"
+  },
+  "day5_ending_cage_eunsu_10": {
+    "text": "*教室的门没有锁。*"
+  },
+  "day5_ending_cage_eunsu_11": {
+    "text": "*明明可以出去，我却没有从椅子上站起来。*"
+  },
+  "day5_ending_cage_sea_1": {
+    "text": "*世雅抱住了我。在走廊上。*"
+  },
+  "day5_ending_cage_sea_2": {
+    "text": "嗯。"
+  },
+  "day5_ending_cage_sea_3": {
+    "text": "今天可以留在这里，对吧？"
+  },
+  "day5_ending_cage_sea_4": {
+    "text": "*我只点了点头。世雅把额头埋到我的肩上，长长地呼出一口气。*\n\n嗯。今天我留在这里。手稍微松一点吧。"
+  },
+  "day5_ending_cage_sea_5": {
+    "text": ""
+  },
+  "day5_ending_cage_sea_6": {
+    "text": "*学生会办公室里，世雅打开便当，看着我笑。*"
+  },
+  "day5_ending_cage_sea_7": {
+    "text": "*第十三个。世雅没有合上便当盒盖。对面的座位依然留着。*"
+  },
+  "day5_ending_cage_sea_8": {
+    "text": "*图书馆的窗边没有由娜的相机。只剩下每晚摸着左边墙壁的习惯。*"
+  },
+  "day5_ending_cage_sea_9": {
+    "text": "*书桌抽屉的深处，还留着一块空白的名牌。*"
+  },
+  "day5_ending_cage_subtitle": {
+    "text": "鸟笼 ─ 选择留下的座位。"
+  },
+  "day5_ending_cage_title": {
+    "text": ""
+  },
+  "day5_ending_forget_1": {
+    "text": "请把我抹掉。"
+  },
+  "day5_ending_forget_2": {
+    "text": "*恩秀老师握着注射器，看着我。*"
+  },
+  "day5_ending_forget_3": {
+    "text": "你确定吗？"
+  },
+  "day5_ending_forget_4": {
+    "text": "那些空白，全都是我的记录，对吧？"
+  },
+  "day5_ending_forget_5": {
+    "text": "这个事实，我承受不了。"
+  },
+  "day5_ending_forget_6": {
+    "text": "请帮我消除吧。那些名字一直在我眼前晃。"
+  },
+  "day5_ending_forget_7": {
+    "text": "*恩秀老师举起注射器，凑近我的手臂。*\n\n可以闭上眼睛吧？"
+  },
+  "day5_ending_forget_8": {
+    "text": "对不起。"
+  },
+  "day5_ending_forget_9": {
+    "text": "*针扎进去的地方，整条手臂开始发麻。*"
+  },
+  "day5_ending_forget_10": {
+    "text": "*最后看到的雪花动了动嘴唇，却听不到声音。*"
+  },
+  "day5_ending_forget_11": {
+    "text": "*我读出了她的唇语。*"
+  },
+  "day5_ending_forget_12": {
+    "text": "*“别忘了”*"
+  },
+  "day5_ending_forget_13": {
+    "text": "*我忘了。*"
+  },
+  "day5_ending_forget_14": {
+    "text": "*眼皮外面亮了起来，闹钟在响。我看了看手机。*"
+  },
+  "day5_ending_forget_15": {
+    "text": "*“早上好，{new_name}！”*"
+  },
+  "day5_ending_forget_16": {
+    "text": "*名字不一样。镜子里的脸并不陌生，却想不出该叫它什么。*"
+  },
+  "day5_ending_forget_17": {
+    "text": "*下巴尖湿了。想到要擦，已经慢了一拍。*"
+  },
+  "day5_ending_forget_18": {
+    "text": "*从今天起，我要去一所新学校。*"
+  },
+  "day5_ending_forget_19": {
+    "text": "*校门口站着一位老师。*"
+  },
+  "day5_ending_forget_20": {
+    "text": "欢迎。你是{new_name}吧？新来的转学生？"
+  },
+  "day5_ending_forget_21": {
+    "text": "学校里的事，老师会照顾你的。"
+  },
+  "day5_ending_forget_22": {
+    "text": "*老师的嘴角和眼角同时牵动，笑了。*"
+  },
+  "day5_ending_forget_sea_branch": {
+    "text": ""
+  },
+  "day5_ending_forget_sea_1": {
+    "text": "*一个笑容明亮的女生，戴着班长袖章，站在校门口。*"
+  },
+  "day5_ending_forget_sea_2": {
+    "text": "你好！你是今天来的转学生吧？我带你熟悉一下。"
+  },
+  "day5_ending_forget_sea_3": {
+    "text": "*看着眼熟。刚要想起来，铃声先响了。*"
+  },
+  "day5_ending_forget_subtitle": {
+    "text": "遗忘——第十四个名牌。"
+  },
+  "day5_ending_forget_title": {
+    "text": ""
+  },
+  "day5_ending_ghost_1": {
+    "text": "*想转身，脚却动不了。*"
+  },
+  "day5_ending_ghost_2": {
+    "text": "*恩秀老师握着注射器走了过来。*"
+  },
+  "day5_ending_ghost_3": {
+    "text": "*雪花站在我和恩秀老师之间。*"
+  },
+  "day5_ending_ghost_4": {
+    "text": "我来。"
+  },
+  "day5_ending_ghost_5": {
+    "text": "雪花——？"
+  },
+  "day5_ending_ghost_6": {
+    "text": "六次了，没有人越过这扇门。"
+  },
+  "day5_ending_ghost_7": {
+    "text": "这次你又停住了。所以我挡在了恩秀前面。"
+  },
+  "day5_ending_ghost_8": {
+    "text": "门一开，我就推你出去。"
+  },
+  "day5_ending_ghost_9": {
+    "text": "*雪花直视着我。到现在为止，我在任何一张照片里都没有见过她这样的表情。*\n\n别看我，看门外。这样看着我，是打算只送我出去吗？"
+  },
+  "day5_ending_ghost_10": {
+    "text": "跑。现在。"
+  },
+  "day5_ending_ghost_11": {
+    "text": "*身体动了。脚尖转向安全出口。*"
+  },
+  "day5_ending_ghost_12": {
+    "text": "*我拉着由娜的手冲向安全出口。恩秀老师在身后喊，我没有停。*"
+  },
+  "day5_ending_ghost_13": {
+    "text": "*冲出安全出口回头一看，门里的雪花在笑，笑容后面的墙壁透了出来。*"
+  },
+  "day5_ending_ghost_14": {
+    "text": "老师。下一个名牌，不会有了。"
+  },
+  "day5_ending_ghost_15": {
+    "text": "*雪花在应急灯下消失的瞬间，警报响了。警笛、脚步声和喊叫声搅成一团。*"
+  },
+  "day5_ending_ghost_16": {
+    "text": "*再也听不到雪花的声音。我把身后的警笛抛在脑后，逃出了学校。*"
+  },
+  "day5_ending_ghost_17": {
+    "text": "*转学之后，我仍然会避开空位，仍然习惯用左手扶墙。*"
+  },
+  "day5_ending_ghost_18": {
+    "text": "*偶尔夜里照镜子，黑褐色的头发会慢一拍地掠过。*"
+  },
+  "day5_ending_ghost_19": {
+    "text": "*每当拿起铅笔，每当在走廊向左拐，总有谁的名字浮上来，又消失。*"
+  },
+  "day5_ending_ghost_20": {
+    "text": "*只有向左偏的笔画，和第二级台阶上的那道痕迹，依然清晰。*"
+  },
+  "day5_ending_ghost_21": {
+    "text": "*左手先去找扶手，在走廊总沿着左墙走。*"
+  },
+  "day5_ending_ghost_22": {
+    "text": "*那所学校还在那里。安全出口挂上了新锁，钥匙在别人手里。*"
+  },
+  "day5_ending_ghost_subtitle": {
+    "text": "残影 ─ 留下来的习惯。"
+  },
+  "day5_ending_ghost_title": {
+    "text": ""
+  },
+  "day5_ending_complicit_1": {
+    "text": "*恩秀老师递来一张纸。*"
+  },
+  "day5_ending_complicit_2": {
+    "text": "下一个孩子，你来负责。这样你就能留下来。"
+  },
+  "day5_ending_complicit_3": {
+    "text": "留在这里。名字我会帮你挪到上面。"
+  },
+  "day5_ending_complicit_4": {
+    "text": "*我很久没有回答。*"
+  },
+  "day5_ending_complicit_5": {
+    "text": "*我看着那张纸。“Nevergrad 项目——助理研究员合同”。*"
+  },
+  "day5_ending_complicit_6": {
+    "text": "下一个孩子来的时候，我也可以在校门口笑着迎接吗？"
+  },
+  "day5_ending_complicit_7": {
+    "text": "可以。"
+  },
+  "day5_ending_complicit_8": {
+    "text": "*我把手按在了合同上。*"
+  },
+  "day5_ending_complicit_8a": {
+    "text": "*纸的边角抵住了掌心。*"
+  },
+  "day5_ending_complicit_8b": {
+    "text": "*门把手看得见。可视线却黏在签名栏上。*"
+  },
+  "day5_ending_complicit_sign": {
+    "text": "*笔尖落在了签名栏上。*"
+  },
+  "day5_ending_complicit_9": {
+    "text": "*我签了字。*"
+  },
+  "day5_ending_complicit_10": {
+    "text": "*恩秀老师笑了。世雅也笑了。*"
+  },
+  "day5_ending_complicit_11": {
+    "text": "*我也跟着笑了。*"
+  },
+  "day5_ending_complicit_12": {
+    "text": "*早晨的校门口，走来一个名牌还空着的新学生。*"
+  },
+  "day5_ending_complicit_13": {
+    "text": "*只有发色不一样。攥着书包带的习惯，却一模一样。*"
+  },
+  "day5_ending_complicit_14": {
+    "text": "欢迎。你就是{14th_name}吧？"
+  },
+  "day5_ending_complicit_15": {
+    "text": "*新学生一言不发地点了点头。攥着书包带的手指蜷了三下。*"
+  },
+  "day5_ending_complicit_16": {
+    "text": "别担心。大家都会好好照顾你的。"
+  },
+  "day5_ending_complicit_17": {
+    "text": "*恩秀老师在身后看着。走廊尽头，雪花默默站着。*"
+  },
+  "day5_ending_complicit_18": {
+    "text": "*我先笑了。*"
+  },
+  "day5_ending_complicit_subtitle": {
+    "text": "同谋 ─ 下一本点名册。"
+  },
+  "day5_ending_complicit_title": {
+    "text": ""
+  },
+  "day5_cage_loop": {
+    "text": ""
+  },
+  "day5_xover_server_1": {
+    "text": "*我连上了研究所的服务器。旧显示器上弹出文件列表。*"
+  },
+  "day5_xover_server_2": {
+    "text": "*丘比特项目（PROJECT CUPID）——上一周期记录：*"
+  },
+  "day5_xover_server_3": {
+    "text": "*> cycle_01.zip  [完好]*"
+  },
+  "day5_xover_server_3_damaged": {
+    "text": "*> cycle_01.zip  [已损坏]*"
+  },
+  "day5_xover_server_4": {
+    "text": "*附件：CUPID_ENV_PREVIEW*"
+  },
+  "day5_xover_server_preview_choice": {
+    "text": "服务器上留下了三组不同日期的记录。",
+    "choices": [
+      "cycle_01.zip — 第1周期：理想环境设计图（PROJECT CUPID）",
+      "cycle_07.log — 第7周期：李雪花与紧急出口事件记录",
+      "cycle_12.log — 第12周期：摄影部暗室与#12废弃记录",
+      "断开档案服务器连接"
+    ]
+  },
+  "day5_xover_preview_1": {
+    "text": "*樱花。*"
+  },
+  "day5_xover_preview_2": {
+    "text": "*春风吹拂的转学第一天，我穿着新校服站在校门前。*"
+  },
+  "day5_xover_preview_3": {
+    "text": "*樱花瓣从同一个位置反复飘落。只有风向不同。*"
+  },
+  "day5_xover_preview_4": {
+    "text": "*画面右下角有一行小字：cycle_01*"
+  },
+  "day5_xover_preview_heroine": {
+    "text": "*[CUPID_ENV_PREVIEW]*\n*情感烙印模型：{cupid_heroine}*\n*顺应反应率：{cupid_compliance}*\n*给药前环境反应性检查与 M-13 稳定化指标一致。*"
+  },
+  "day5_xover_preview_5": {
+    "text": "*显示器熄灭了。*"
+  },
+  "day5_xover_server_end": {
+    "text": "*我关掉了文件。*"
+  },
+  "day5_observer_1": {
+    "text": "*制作人员名单结束，画面彻底暗了下去。*"
+  },
+  "day5_observer_2": {
+    "text": "*三秒。*"
+  },
+  "day5_observer_3": {
+    "text": "*画面中央，文字一个字一个字浮现出来。*"
+  },
+  "day5_observer_4": {
+    "text": "埃迪纳基金会 / NEVERGRAD 研究所\n安全审计：外部查阅会话\n对照档案：#13 观察记录"
+  },
+  "day5_observer_5": {
+    "text": "访问权限：审计／监控\n会话状态：保持连接\n受试者接触权限：无"
+  },
+  "day5_observer_6": {
+    "text": "受试者：#13 ({name})\n会话连接时长：{play_time}\n\n接触及介入汇总\n世雅接触次数：{route_data}\n是否接触由娜：{met_yuna}\n梨仁探访次数：{riin_visits}\n雪花接触尝试：{seolhwa_attempts}\n证据获取状态：{evidence_data}\n最终应答记录：{timer_data}"
+  },
+  "day5_observer_7": {
+    "text": "接触记录对照完成\n正在对照行为模式"
+  },
+  "day5_observer_8": {
+    "text": "对照基准：研究负责人朴恩秀／13 次观察\n外部查阅会话：#13 ({name})／{play_time}\n\n共同项目：警告后继续查阅、介入记录累积\n相似度：持续观察模式吻合\n\n自动判定：待定\n会话终止请求：未收到"
+  },
+  "day5_observer_cupid_check": {
+    "text": ""
+  },
+  "day5_observer_cupid_extra": {
+    "text": "交叉参照：\n\n检测到 CUPID_ENV_PREVIEW。\n情感烙印：{cupid_heroine}\n顺应率：{cupid_compliance}\n与 M-13 稳定化指标部分吻合。\n\n备注：\n观察者数据仍与 #13 文件绑定。"
+  },
+  "day5_observer_9": {
+    "text": "*画面停住了。五秒。*"
+  },
+  "day5_observer_10": {
+    "text": "*屏幕底部，用极小的字写着：*"
+  },
+  "day5_observer_11": {
+    "text": "[您要毕业吗？]",
+    "choices": [
+      "是",
+      "否"
+    ]
+  },
+  "day5_night_seolhwa_affinity_check": {
+    "text": ""
+  },
+  "day5_night_set_high_seolhwa_affinity": {
+    "text": ""
+  },
+  "day5_ending_true_voice_check": {
+    "text": ""
+  },
+  "day5_ending_true_16_clear_intro": {
+    "text": "*雪华开口时，沉闷的杂音散去了。第七次在楼梯背后呼唤过的声音清晰地传了过来。*"
+  },
+  "day5_ending_true_16_clear": {
+    "text": "这样叫我，还是第一次。"
+  },
+  "day5_ending_true_riin_check": {
+    "text": ""
+  },
+  "day5_ending_true_27_riin": {
+    "text": "*报道下方还刊出了补充材料。和我们一起逃出来的理仁老师提交了六个周期的实际用药对照表与原始病历。*"
+  },
+  "day5_ending_true_27_riin_2": {
+    "text": "*每个用药日期旁都留着总部的批准编号。企图把事件掩盖成现场负责人个人失职的初期澄清报道，只过了半天就撤下了。*"
+  },
+  "day5_ending_true_sea_check": {
+    "text": ""
+  },
+  "day5_ending_true_27_sea": {
+    "text": "*和我们一起离开设施的世雅接受了外部保护措施。几天后，我们在远离学校的白天商业街上并肩走着。世雅手里既没有点名册，也没有学生会室的钥匙。*"
+  },
+  "day5_ending_true_27_sea_2": {
+    "text": "不用戴袖章，也不用跟在谁后面了呢。那边那条路也去走走看吧？"
+  },
+  "day5_ending_true_memory_check": {
+    "text": ""
+  },
+  "day5_ending_true_30_memory": {
+    "text": "*在旧校舍楼梯背后说过的话也完整地浮现出来。我在名字旁又添了一行：“下次别在这里，我们去外面见。”*"
+  },
+  "day5_ending_escape_riin_check": {
+    "text": ""
+  },
+  "day5_ending_escape_riin": {
+    "text": "*和我们一起出来的理仁老师为了躲避基金会的追查而转移了住处。离开前她发来简短消息，说藏在保健室地板下的原始病历已经被收回了。*"
+  },
+  "day5_ending_escape_sea_check": {
+    "text": ""
+  },
+  "day5_ending_escape_sea": {
+    "text": "*和我们一起逃出来的世雅搬到了远离学校的外部保护设施。报平安的简短消息下面，附着一张街区面包店纸袋的照片。*"
+  },
+  "day5_ending_cage_sea_epilogue_1": {
+    "text": "第一周后，我不得不撕掉课堂日历。 世雅只剪掉一角，没有翻开新的一页。"
+  },
+  "day5_ending_cage_sea_epilogue_2": {
+    "text": "不用担心日历。外面的也错了。"
+  },
+  "day5_ending_cage_sea_epilogue_3": {
+    "text": "窗外的树上长出了叶子。教室的窗户上继续挂着用铁丝绑着的樱花。"
+  },
+  "day5_ending_cage_sea_epilogue_4": {
+    "text": "纸花瓣的尖端积满了灰尘。当我伸出手时，世雅先递给我一条湿毛巾。"
+  },
+  "day5_ending_cage_sea_epilogue_5": {
+    "text": "我会清理它。你可能会伤到你的手。"
+  },
+  "day5_ending_cage_sea_epilogue_6": {
+    "text": "打开饭盒盖，里面有一个蛋卷，和昨天一样煮熟，切厚。"
+  },
+  "day5_ending_cage_sea_epilogue_7": {
+    "text": "不拿起筷子的日子里，我什么也没吃，所以两个饭盒一直关到晚上。"
+  },
+  "day5_ending_cage_sea_epilogue_8": {
+    "text": "只吃一块。以后我就不会问了"
+  },
+  "day5_ending_cage_sea_epilogue_9": {
+    "text": "吃完一块后，世雅举起了筷子。第二天又收到了同样的请求。"
+  },
+  "day5_ending_cage_sea_epilogue_10": {
+    "text": "我的笔记本堆放在教室后面的抽屉里。我在每一页的第一页上都写了日期，但从某一天开始，我开始只写天气。"
+  },
+  "day5_ending_cage_sea_epilogue_11": {
+    "text": "即使是下雨天，窗边的花也没有被淋湿。只是世雅喷出的香味变得更浓了一些。"
+  },
+  "day5_ending_cage_sea_epilogue_12": {
+    "text": "当外面操场上传来毕业典礼练习广播时，世正起身关上了窗户。"
+  },
+  "day5_ending_cage_sea_inside_choice": {
+    "text": "世雅把手放在窗把手上。我的领带还没系上。",
+    "choices": [
+      "看看窗外",
+      "握住世雅的手"
+    ]
+  },
+  "day5_ending_cage_sea_window_1": {
+    "text": "新同学们在操场上排队。走向校门口的队伍末尾有一个空座位。"
+  },
+  "day5_ending_cage_sea_window_2": {
+    "text": "站在我旁边的人看着窗外映出的自己的脸，但没有看外面。"
+  },
+  "day5_ending_cage_sea_window_3": {
+    "text": "你的位置就在这里。我什至没有把你的名字放在他们的名单上。"
+  },
+  "day5_ending_cage_sea_window_4": {
+    "text": "公交车门在玻璃后面关上了。我把手掌放在车窗上，看着公交车掉头。"
+  },
+  "day5_ending_cage_sea_window_5": {
+    "text": "他接过我的领带，绕在他的手上，等我转身才打结。"
+  },
+  "day5_ending_cage_sea_hand_1": {
+    "text": "世雅 我的手比窗把手还冷。我一接住它，手指就伸到了我的双手之间。"
+  },
+  "day5_ending_cage_sea_hand_2": {
+    "text": "我可以关闭它吗？"
+  },
+  "day5_ending_cage_sea_hand_3": {
+    "text": "我点点头，没有看窗外。外面的广播在一块玻璃后面消失了。"
+  },
+  "day5_ending_cage_sea_hand_4": {
+    "text": "世雅 把我的手放进他的口袋里。要放手，你首先必须把手指一根一根伸直。"
+  },
+  "day5_ending_cage_sea_hand_5": {
+    "text": "当他拿出领带时，一只手仍然插在口袋里。 世雅 用另一只手打了一个结。"
+  },
+  "day5_ending_cage_sea_close_1": {
+    "text": "明天你也可以睡个懒觉。我会先到的。"
+  },
+  "day5_ending_cage_sea_close_2": {
+    "text": "从日历上剪下来的数字堆在垃圾桶里。 世雅 合上饭盒盖，抖掉花瓣上的灰尘。"
+  },
+  "day5_ending_cage_sea_close_3": {
+    "text": "教室的灯灭了。走廊里的门把手没有动，只有里面的椅子刮伤了地板。"
+  },
+  "day5_ending_cage_eunsu_epilogue_1": {
+    "text": "老师从讲台抽屉里拿出一张邮票，打开盖子，按进了考勤簿的第十三格。"
+  },
+  "day5_ending_cage_eunsu_epilogue_2": {
+    "text": "我读的文字被压得很紧，纸都被烧焦了。上面写着延期毕业，下面的小括号里写着永久毕业。"
+  },
+  "day5_ending_cage_eunsu_epilogue_3": {
+    "text": "这不会发送给董事会。这是我放在这里的账本。"
+  },
+  "day5_ending_cage_eunsu_epilogue_4": {
+    "text": "老师关上道场，摘下眼镜放在道场旁边。"
+  },
+  "day5_ending_cage_eunsu_epilogue_5": {
+    "text": "走廊里一辆清洁车驶过。老师检查完门内侧的锁才回来。"
+  },
+  "day5_ending_cage_eunsu_epilogue_6": {
+    "text": "我已报告您已被处置。没有人会来找你。"
+  },
+  "day5_ending_cage_eunsu_epilogue_7": {
+    "text": "我的名字也是吗？"
+  },
+  "day5_ending_cage_eunsu_epilogue_8": {
+    "text": "我保留了你的名字。我不需要抹掉我称呼你的名字。"
+  },
+  "day5_ending_cage_eunsu_epilogue_9": {
+    "text": "桌子上放着一根银色的带子。老师张开手掌，要了他的手腕。"
+  },
+  "day5_ending_cage_eunsu_epilogue_10": {
+    "text": "我没有把手从口袋里拿出来。老师拉了一张空椅子而不是我的手。"
+  },
+  "day5_ending_cage_eunsu_epilogue_11": {
+    "text": "坐下。如果你站在那里等待，你的腿会酸痛。"
+  },
+  "day5_ending_cage_eunsu_epilogue_12": {
+    "text": "当我坐在椅子上时，我的手腕与讲台处于同一高度。带子内侧附有一层薄薄的缓冲材料。"
+  },
+  "day5_ending_cage_eunsu_epilogue_13": {
+    "text": "老师用布擦了擦我的手腕。带扣闭合时发出轻微的金属声。"
+  },
+  "day5_ending_cage_eunsu_epilogue_14": {
+    "text": "告诉我是否太紧了。我可以放松一下。"
+  },
+  "day5_ending_cage_eunsu_epilogue_15": {
+    "text": "一根手指滑进带扣下面。老师注意到了这个缺口，放下了我的袖子。"
+  },
+  "day5_ending_cage_eunsu_epilogue_16": {
+    "text": "夕阳透过窗户照射得很长。考勤簿上的其他空白处已经被黑线抹掉了。"
+  },
+  "day5_ending_cage_eunsu_epilogue_17": {
+    "text": "我的包厢旁边写着我老师的名字。印刷体上的“负责人”一词用尺子划了两遍下划线。"
+  },
+  "day5_ending_cage_eunsu_epilogue_18": {
+    "text": "明天我们也会在这里点名。就回答我吧。"
+  },
+  "day5_ending_cage_eunsu_epilogue_19": {
+    "text": "其他学生呢？"
+  },
+  "day5_ending_cage_eunsu_epilogue_20": {
+    "text": "他们在其他教室。他们不会参加这一活动。"
+  },
+  "day5_ending_cage_eunsu_epilogue_21": {
+    "text": "透过老师桌子上的玻璃，我可以看到空荡荡的课桌。老师把其中两个放在窗户上。"
+  },
+  "day5_ending_cage_eunsu_epilogue_22": {
+    "text": "我的书和你的书面向同一面。我坐下来，门在我身后。"
+  },
+  "day5_ending_cage_eunsu_epilogue_23": {
+    "text": "如果您想换座位，请告诉我。窗户还好，讲台前面的那个也还好。"
+  },
+  "day5_ending_cage_eunsu_epilogue_24": {
+    "text": "腕带每次碰到桌子都会发出声音。老师在那儿折了一块小布。"
+  },
+  "day5_ending_cage_eunsu_epilogue_25": {
+    "text": "当外面的下课铃声响起时，老师打开考勤表，把笔放在了第十三排。"
+  },
+  "day5_ending_cage_eunsu_epilogue_26": {
+    "text": "我的名字被叫到了。他没有回答，笔尖却停留在纸上。"
+  },
+  "day5_ending_cage_eunsu_epilogue_27": {
+    "text": "老师没有催促。我用指尖笔直地转动了桌上的密封盖。"
+  },
+  "day5_ending_escape_epilogue_1": {
+    "text": "第一班巴士从航站楼后面出发。 由娜买票时将相机放在球场内。"
+  },
+  "day5_ending_escape_epilogue_2": {
+    "text": "当我坐下时，水从我的湿鞋子上滴下来。两人的脚都没有放在地板上，呆了一会儿。"
+  },
+  "day5_ending_escape_epilogue_3": {
+    "text": "司机拿票时没有问学校的名字，也没有问我们的名字。"
+  },
+  "day5_ending_escape_epilogue_4": {
+    "text": "当公交车下山路时，手机信号又回来了。 由娜用手掌遮住了转动的屏幕。"
+  },
+  "day5_ending_escape_epilogue_5": {
+    "text": "不要打开应用程序。现在甚至不要将其关闭。"
+  },
+  "day5_ending_escape_epilogue_6": {
+    "text": "我没有在第一个航站楼下车。我们一直待在车里，直到人员更换并且有更多空座位为止。"
+  },
+  "day5_ending_escape_epilogue_7": {
+    "text": "第二站旁边有一家小旅馆。我朝标志灯熄灭的方向走去。"
+  },
+  "day5_ending_escape_epilogue_8": {
+    "text": "柜台工作人员要求我出示身份证。查我号码的手停了两次。"
+  },
+  "day5_ending_escape_epilogue_9": {
+    "text": "他们说没有注册信息。 由娜的学生证出来时已经过期。"
+  },
+  "day5_ending_escape_epilogue_10": {
+    "text": "工作人员递给我一张纸让我重新进入。当我写下同样的数字时，由娜 抓住了我的手臂。"
+  },
+  "day5_ending_escape_epilogue_11": {
+    "text": "我们离开吧。我们会找别的地方。"
+  },
+  "day5_ending_escape_epilogue_12": {
+    "text": "我把门外的纸撕下来，把写着我名字的部分折小，放进口袋里。"
+  },
+  "day5_ending_escape_epilogue_13": {
+    "text": "我们在车站后面租了一间屋顶房间。房东只告诉我房间的价格和如何开锅炉。"
+  },
+  "day5_ending_escape_epilogue_14": {
+    "text": "当我把校服挂在晾衣绳上时，水滴落进了水桶里。 由娜 将我的袖子挂在他的衣服上。"
+  },
+  "day5_ending_escape_epilogue_15": {
+    "text": "学校的证据不足。你不能只看照片上的日期来找人。"
+  },
+  "day5_ending_escape_epilogue_16": {
+    "text": "我写下了我想拨打的号码，然后又把它擦掉了。不管我向谁解释，他们都会先查我的名字。"
+  },
+  "day5_ending_escape_epilogue_17": {
+    "text": "我们先吃饭吧。凡是能等到明天的事情都可以等。"
+  },
+  "day5_ending_escape_epilogue_18": {
+    "text": "从便利店的袋子里拿出了两块三角形紫菜包饭。米是冷的，因为我站在那里摘了很长时间。"
+  },
+  "day5_ending_escape_epilogue_19": {
+    "text": "由娜 打开信封，直到我选择了第一个。我并没有说无论如何都可以。"
+  },
+  "day5_ending_escape_epilogue_20": {
+    "text": "我把空包装纸折起来扔掉，然后打开窗户。街对面的房子里没有听到学校的通知，而是传来了菜肴的声音。"
+  },
+  "day5_ending_escape_epilogue_21": {
+    "text": "当由娜检查相机中剩余的胶卷数量时，他仍然可以拍两张照片。"
+  },
+  "day5_ending_escape_epilogue_22": {
+    "text": "除了学校以外，没有在任何地方拍过一张照片。"
+  },
+  "day5_ending_escape_epilogue_23": {
+    "text": "我站在窗边，没等他告诉我该往哪里看，就看着镜头。"
+  },
+  "day5_ending_escape_epilogue_24": {
+    "text": "由娜举着相机等待我的回答。",
+    "choices": [
+      "站着看镜头",
+      "告诉由娜先拍照",
+      "站在窗户旁边"
+    ]
+  },
+  "day5_ending_escape_epilogue_25": {
+    "text": "就这样呆着吧。你们都在框架里。"
+  },
+  "day5_ending_escape_epilogue_26": {
+    "text": "第二声快门声在房间里短暂响起。 由娜看着镜头第一次笑了。"
+  },
+  "day5_ending_escape_epilogue_27": {
+    "text": "我决定在照片背面写上一个名字。我写了我的，由娜选择了由娜。"
+  },
+  "day5_ending_escape_epilogue_28": {
+    "text": "我对这个新名字感到尴尬，所以我叫了两次。 由娜第一次听不到，第二次回头一看。"
+  },
+  "day5_ending_escape_epilogue_29": {
+    "text": "这是一张没有居民登记或学校记录的空白的纸。只有两个人的名字和今天的日期并排放置。"
+  },
+  "day5_ending_escape_epilogue_30": {
+    "text": "我下楼去找地方放电影。 由娜锁上门，把钥匙递到我手里。"
+  },
+  "day5_ending_escape_riin_after_1": {
+    "text": "包的底部卡着一个装有现金的信封。当我拿出卫生室给我的毛巾时，里面拿出了一个信封。"
+  },
+  "day5_ending_escape_riin_after_2": {
+    "text": "里面是折叠好的钞票和一份处方副本。药物名称旁边有一个牌子，上面写着“停止服用”。"
+  },
+  "day5_ending_escape_riin_after_3": {
+    "text": "没有莉仁的签名。相反，纸的末尾写着附近急诊室的地址。"
+  },
+  "day5_ending_escape_riin_after_4": {
+    "text": "有十三行包含用药日期。最后一行，以分钟为单位写入今天的时间。"
+  },
+  "day5_ending_escape_riin_after_5": {
+    "text": "由娜 读完报纸，看着我的手臂。我放下袖子遮住注射痕迹。"
+  },
+  "day5_ending_escape_riin_after_6": {
+    "text": "信封内，还有一张简短的纸条，告诉人们不要扔掉药信封。"
+  },
+  "day5_ending_escape_riin_after_7": {
+    "text": "我先把纸先到医院去展示。我把现金和由娜分成两半，分别放在不同的口袋里。"
+  },
+  "day5_ending_escape_riin_after_8": {
+    "text": "他没有联系莉仁，而是关上了袋子，只在纸角上留下了一个手印。"
+  },
+  "day5_ending_escape_riin_after_9": {
+    "text": "我们被告知在等待时使用的毛巾放在巴士座位上。水不再从湿衣服上滴下来。"
+  },
+  "day5_ending_escape_sea_after_1": {
+    "text": "收音机里传来世雅的声音。我拨通了我们脚步声传来的对面走廊的号码。"
+  },
+  "day5_ending_escape_sea_after_2": {
+    "text": "我看到他们了。他们上楼了。我会跟着他们。"
+  },
+  "day5_ending_escape_sea_after_3": {
+    "text": "他拉着我的手臂，把收音机塞进包里，没有关掉声音。"
+  },
+  "day5_ending_escape_sea_after_4": {
+    "text": "奔跑的脚步声渐渐远去。 世雅打开了另一边的门，继续叫我跟着他。"
+  },
+  "day5_ending_escape_sea_after_5": {
+    "text": "我没有停下脚步。当我转身时，我感觉在门关上之前我会和世雅进行眼神交流。"
+  },
+  "day5_ending_escape_sea_after_6": {
+    "text": "最后一台收音机上没有名字。我唯一听到的是一条简短的信息，告诉我快点，因为门是开着的。"
+  },
+  "day5_ending_escape_sea_after_7": {
+    "text": "我们面前的紧急出口把手已经放下了。门上的小橡胶楔子一直坚持到最后。"
+  },
+  "day5_ending_escape_sea_after_8": {
+    "text": "出去后，我取下了楔子。 世雅在饭盒盖上使用的粉色橡皮筋缠绕在其上。"
+  },
+  "day5_ending_escape_sea_after_9": {
+    "text": "我把楔子放进口袋，把收音机放在雨坑外面，然后跟着他。"
+  },
+  "day5_ending_resist_epilogue_1": {
+    "text": "第一辆卡车沿国道行驶。老师说他还没准备好，就把公文包放到了他的腿上。"
+  },
+  "day5_ending_resist_epilogue_2": {
+    "text": "当纸的角被弄湿并粘在一起时，老师用指甲将每张纸撕下来，然后将它们放入一个空袋子中。"
+  },
+  "day5_ending_resist_epilogue_3": {
+    "text": "不要混淆原件和复印件。将带有我签名的页面保留在前面。"
+  },
+  "day5_ending_resist_epilogue_4": {
+    "text": "我搬到了公交车站屋顶下的座位上。当老师摘下眼镜时，雨水在他的眼睛周围积聚起来。"
+  },
+  "day5_ending_resist_epilogue_5": {
+    "text": "你在哭吗？"
+  },
+  "day5_ending_resist_epilogue_6": {
+    "text": "老师用袖子擦了擦手，然后放下了手。我把脸转开，以免水滴到湿纸上。"
+  },
+  "day5_ending_resist_epilogue_7": {
+    "text": "这是第三个周期。你问我吃饭了吗？"
+  },
+  "day5_ending_resist_epilogue_8": {
+    "text": "这是我不记得的事情了。老师看到我，摇摇头说不知道。"
+  },
+  "day5_ending_resist_epilogue_9": {
+    "text": "我知道。你不记得了。我是唯一保留这句话的人。"
+  },
+  "day5_ending_resist_epilogue_10": {
+    "text": "老师放在书包上的手在颤抖。我抓起文件，坐下来，手掌放在地板上。"
+  },
+  "day5_ending_resist_epilogue_11": {
+    "text": "所以我也想第二天见到你。下个学期，下个学期也是如此。"
+  },
+  "day5_ending_resist_epilogue_12": {
+    "text": "这就是你坚持下去的原因吗？"
+  },
+  "day5_ending_resist_epilogue_13": {
+    "text": "老师无法回答，只是低下头，折叠又展开了眼镜的镜腿。"
+  },
+  "day5_ending_resist_epilogue_14": {
+    "text": "这不应该是原因。这些话我无法包含在我正在写的报告中。"
+  },
+  "day5_ending_resist_epilogue_15": {
+    "text": "这句话不是我为你写的。他指着老师名字旁边的空白处签名。"
+  },
+  "day5_ending_resist_epilogue_16": {
+    "text": "这次我要把我所做的一切都写下来。你不必为了我而遗漏任何东西。"
+  },
+  "day5_ending_resist_epilogue_17": {
+    "text": "老师把纸放在冰冷的公交车站椅子上，在第一行写下了自己的名字。"
+  },
+  "day5_ending_resist_epilogue_18": {
+    "text": "他把纸翻过来，把它拿出来，这样我就可以在不覆盖擦除痕迹的情况下阅读它。"
+  },
+  "day5_ending_resist_epilogue_19": {
+    "text": "一辆公交车从远处驶来。老师这时候才醒过来，但还是让我先上车。"
+  },
+  "day5_ending_resist_epilogue_20": {
+    "text": "我拎着公文包爬上了楼梯。老师和司机确认了目的地后就跟了上去。"
+  },
+  "day5_ending_resist_epilogue_21": {
+    "text": "我们没有坐在一起。我在走廊另一边听到了同样的停止广播。"
+  },
+  "day5_ending_resist_epilogue_22": {
+    "text": "老师从包里掏出手机，关掉打进学校的电话，直接拨打了举报号码。"
+  },
+  "day5_ending_resist_epilogue_23": {
+    "text": "电话接通后，他说自己是研究主管。最后加上了班主任这个词。"
+  },
+  "day5_ending_resist_epilogue_24": {
+    "text": "我看着窗外，张开左手。纸袋把手的印记留在了我的手掌上。"
+  },
+  "day5_ending_resist_epilogue_25": {
+    "text": "车离开山后，老师也没有挂断电话，还在报着地址。"
+  },
+  "day5_ending_resist_epilogue_26": {
+    "text": "下一站的名字是我以前从未听说过的名字。我一直听着公告直到最后。"
+  },
+  "day5_ending_forget_epilogue_1": {
+    "text": "我不知道什么时候把车票放进了新校服的口袋里，我看了看日期。"
+  },
+  "day5_ending_forget_epilogue_2": {
+    "text": "这是今天的约会。我打开皱巴巴的车票，走进了校门。"
+  },
+  "day5_ending_forget_epilogue_3": {
+    "text": "一个学生在樱花下挥手，径直向我走来。我还是第一次看到这张脸。"
+  },
+  "day5_ending_forget_epilogue_4": {
+    "text": "你的第一天？我们一起步行去上课吧。我也要去那条路"
+  },
+  "day5_ending_forget_epilogue_5": {
+    "text": "学生的手向左伸出，手掌插在口袋里。指甲痕迹很快就被抹掉了。"
+  },
+  "day5_ending_forget_epilogue_6": {
+    "text": "他抱怨说他的鞋带松了，停了下来。 世雅 等在我面前，看着同侧的绳子。"
+  },
+  "day5_ending_forget_epilogue_7": {
+    "text": "走廊的窗户上有一个拿着相机的学生。当我经过时，他合上了镜头盖。"
+  },
+  "day5_ending_forget_epilogue_8": {
+    "text": "稍后可以拍照。即使你现在不拍照。"
+  },
+  "day5_ending_forget_epilogue_9": {
+    "text": "我笑着说我从来没有要求过。学生放下相机，先转过头。"
+  },
+  "day5_ending_forget_epilogue_10": {
+    "text": "一名老师从保健室前走了出来。他手里拿着一个杯子，但当他看到我的脸时，他放下了手。"
+  },
+  "day5_ending_forget_epilogue_11": {
+    "text": "你吃早餐了吗？如果您还没有吃饭，请从水开始，而不是茶。"
+  },
+  "day5_ending_forget_epilogue_12": {
+    "text": "我回答说好，然后就走了。一瞬间，我嘴里有了还没喝过的茶的味道。"
+  },
+  "day5_ending_forget_epilogue_13": {
+    "text": "门口的班主任打开考勤表，指着我的座位，问我的名字。"
+  },
+  "day5_ending_forget_epilogue_14": {
+    "text": "第三张桌子靠窗。你可以把包放进去。"
+  },
+  "day5_ending_forget_epilogue_15": {
+    "text": "当我在桌子内部摸索时，我的指尖挂住了一条细线。我又用左手摸了一下，找到了形状。"
+  },
+  "day5_ending_forget_epilogue_16": {
+    "text": "逃跑。我的手指沿着这三个字母移动。我伸出手，拍掉身上的灰尘。"
+  },
+  "day5_ending_forget_epilogue_17": {
+    "text": "有人在开玩笑。"
+  },
+  "day5_ending_forget_epilogue_18": {
+    "text": "我身后有人拉了一把椅子。当我转身时，墙边有一张空桌子。"
+  },
+  "day5_ending_forget_epilogue_19": {
+    "text": "世雅 递上一支新圆珠笔。在我打开包装之前，我的拇指就伸进了橡胶握把的凹槽里。"
+  },
+  "day5_ending_forget_epilogue_20": {
+    "text": "我换了手，在笔记本上写下了我的名字。还剩下一些橡皮粉，我用手掌把它扫掉。"
+  },
+  "day5_ending_forget_epilogue_21": {
+    "text": "教室的钟移动了一步。当老师点名时，我在第一页上写下了日期。"
+  },
+  "day5_ending_forget_epilogue_22": {
+    "text": "数字末端向上反弹。老师的笔尖也停在了原地。"
+  },
+  "day5_ending_forget_epilogue_23": {
+    "text": "花瓣从窗外的树上飘落下来。它没有到达我的办公桌，但我用手合上了书。"
+  },
+  "day5_ending_forget_epilogue_24": {
+    "text": "我被自己的动作逗笑了。世雅也跟着笑，替我翻开课本。"
+  },
+  "day5_ending_forget_epilogue_25": {
+    "text": "桌子下面的凹槽里还有灰尘。只有左手的指甲尖直到折断才被拔掉。"
+  },
+  "day5_ending_ghost_epilogue_1": {
+    "text": "紧急楼梯栏杆上留下了两个手印。 雪花抓到的一侧没有水分。"
+  },
+  "day5_ending_ghost_epilogue_2": {
+    "text": "下去。小心你的脚。最后一步很窄。"
+  },
+  "day5_ending_ghost_epilogue_3": {
+    "text": "当我放下脚转身时，我看到雪花的鞋尖轻轻地搭在了楼梯的边缘。"
+  },
+  "day5_ending_ghost_epilogue_4": {
+    "text": "跟我一起下来吧。"
+  },
+  "day5_ending_ghost_epilogue_5": {
+    "text": "当雪花走下一段楼梯时，背景中的油漆颜色从她扶着栏杆的指尖反射出来。"
+  },
+  "day5_ending_ghost_epilogue_6": {
+    "text": "我不能再走得更远了。我知道你什么时候开门的。"
+  },
+  "day5_ending_ghost_epilogue_7": {
+    "text": "当我伸出手时，雪花并没有躲避。我试图将手指并拢，但我所能做的就是栏杆冰冷的金属。"
+  },
+  "day5_ending_ghost_epilogue_8": {
+    "text": "别告诉我一切都好。这不是你应该接受的事情。"
+  },
+  "day5_ending_ghost_epilogue_9": {
+    "text": "我闭上嘴，张开左手，雪花低头看着自己手掌上的纹路。"
+  },
+  "day5_ending_ghost_epilogue_10": {
+    "text": "这次是我推了你一把。到了外面，要靠自己的双腿走。"
+  },
+  "day5_ending_ghost_epilogue_11": {
+    "text": "一阵风从楼梯下吹来。 雪花的发梢变亮，然后消失在栏杆后面。"
+  },
+  "day5_ending_ghost_epilogue_12": {
+    "text": "我会记住你的名字。"
+  },
+  "day5_ending_ghost_epilogue_13": {
+    "text": "把它写下来。你已经尝试记住足够多次了。"
+  },
+  "day5_ending_ghost_epilogue_14": {
+    "text": "雪花笑了。我开始看到眼前门边的白墙。"
+  },
+  "day5_ending_ghost_epilogue_15": {
+    "text": "我没有低下头，因为我想如果我闭上眼睛，我会再次错误地记住我最后的表情。"
+  },
+  "day5_ending_ghost_epilogue_16": {
+    "text": "当我从紧急出口出来时，凌晨的地板是湿的。我的影子一直延伸到楼梯底部。"
+  },
+  "day5_ending_ghost_epilogue_17": {
+    "text": "我一直走到第一家商店开门。主人给了我一把椅子，但我先买了一个笔记本。"
+  },
+  "day5_ending_ghost_epilogue_18": {
+    "text": "当我用左手翻动封面时，新纸粘在了我的手掌上，所以我又撕下了一页。"
+  },
+  "day5_ending_ghost_epilogue_19": {
+    "text": "李雪花。写下这三个字时，笔尖停了两次。"
+  },
+  "day5_ending_ghost_epilogue_20": {
+    "text": "下一行我写了数字七，下面我分享了我的所见所闻。"
+  },
+  "day5_ending_ghost_epilogue_21": {
+    "text": "我没有把笔移到右手。尽管我的手腕僵硬，字迹倾斜，但我还是保持了原样。"
+  },
+  "day5_ending_ghost_epilogue_22": {
+    "text": "当公共汽车停在商店外面并听到开门声时，我合上了笔记本。"
+  },
+  "day5_ending_ghost_epilogue_23": {
+    "text": "我问司机目的地。我不明白，买票前又问了一遍。"
+  },
+  "day5_ending_ghost_epilogue_24": {
+    "text": "当我坐下来，将窗户打开一点时，风声进入了我的左耳。"
+  },
+  "day5_ending_ghost_epilogue_25": {
+    "text": "这次没有其他声音混入。我把手伸进装着纸条的口袋里。"
+  },
+  "day5_ending_complicit_epilogue_1": {
+    "text": "当我从签名板上拿起笔时，一张新卡片出现了。照片下方写着“副主任”和“13号”字样。"
+  },
+  "day5_ending_complicit_epilogue_2": {
+    "text": "在楼梯上佩戴它在脖子上。门需要先读取卡的位置才能打开。"
+  },
+  "day5_ending_complicit_epilogue_3": {
+    "text": "老师调整了线的长度。与腕带不同，我可以自己将卡取下。"
+  },
+  "day5_ending_complicit_epilogue_4": {
+    "text": "当控制室的门打开时，墙上的显示器立刻亮起，照亮了教室、走廊和卫生室。"
+  },
+  "day5_ending_complicit_epilogue_5": {
+    "text": "八木从地下室的屏幕上抬起头来。眼睛转向我，寻找相机。"
+  },
+  "day5_ending_complicit_epilogue_6": {
+    "text": "教室里，世雅正在合上饭盒的盖子。我用手盖住了装有剩余配菜的隔间。"
+  },
+  "day5_ending_complicit_epilogue_7": {
+    "text": "当镜头转动时，坐在卫生室空托盘前的莉仁把手从礼服口袋里抽出来。"
+  },
+  "day5_ending_complicit_epilogue_8": {
+    "text": "您还可以在这里听到声音。使用此按钮将其打开。"
+  },
+  "day5_ending_complicit_epilogue_9": {
+    "text": "当我按下按钮时，扬声器中发出椅子腿的声音。 由娜移出了屏幕。"
+  },
+  "day5_ending_complicit_epilogue_10": {
+    "text": "老师把手放在我的肩膀上。我的脸在显示器边缘的角度与新卡片照片的角度相同。"
+  },
+  "day5_ending_complicit_epilogue_11": {
+    "text": "我们会一起检查下一个时间表。现在你这边也有一个批准字段了。"
+  },
+  "day5_ending_complicit_epilogue_12": {
+    "text": "用药时间表被打开。最后一位审批人的姓名仍然是空白。"
+  },
+  "day5_ending_complicit_control_choice": {
+    "text": "浓度调整栏下方有一个确定按钮。我的卡已插入读卡器。",
+    "choices": [
+      "降低剂量浓度并批准",
+      "维持和批准现有的集中",
+      "提高集中度并批准"
+    ]
+  },
+  "day5_ending_complicit_low_1": {
+    "text": "将栏移至左侧。虽然剂量减少了，但预定给药的人数没有变化。"
+  },
+  "day5_ending_complicit_low_2": {
+    "text": "写下你为什么也减少了它。所以下一个人就不会再增加了。"
+  },
+  "day5_ending_complicit_low_3": {
+    "text": "当我在原因栏中写下是为了减少伤害时，老师读了这句话并按下了保存。"
+  },
+  "day5_ending_complicit_low_4": {
+    "text": "保健室的屏幕上出现了新的指示。看完报纸，张茵看向镜头。"
+  },
+  "day5_ending_complicit_low_5": {
+    "text": "我关掉了声音。我的名字还在审批记录的第一行。"
+  },
+  "day5_ending_complicit_same_1": {
+    "text": "它在没有改变数字的情况下获得了批准。昨天使用的金额今天也用完了。"
+  },
+  "day5_ending_complicit_same_2": {
+    "text": "保持不变是最简单的。改变它，还有更多需要解释的地方。"
+  },
+  "day5_ending_complicit_same_3": {
+    "text": "老师在我旁边的显示器上显示了今天的日程安排。空白处输入了另一个学生的名字。"
+  },
+  "day5_ending_complicit_same_4": {
+    "text": "保健室的张寅挑选了三瓶安瓿。我刚刚检查了数字是否正确。"
+  },
+  "day5_ending_complicit_same_5": {
+    "text": "当我试图翻纸时，我的手停了下来。您刚刚批准的页面已更改为只读。"
+  },
+  "day5_ending_complicit_high_1": {
+    "text": "将条向右移动会增加预计恢复时间并添加警告标志。"
+  },
+  "day5_ending_complicit_high_2": {
+    "text": "老师没有阻止我的手。它只是说，如果原因框留空，则无法保存。"
+  },
+  "day5_ending_complicit_high_3": {
+    "text": "据记载，它会降低记忆力。这是我在上一份报告中读到的表述。"
+  },
+  "day5_ending_complicit_high_4": {
+    "text": "保健室的屏幕上，陆隐摇了摇头。当我打开声音时，“不”这个词短暂地出现了。"
+  },
+  "day5_ending_complicit_high_5": {
+    "text": "当我按下“确定”按钮时，莉仁的声音戛然而止，屏幕上覆盖着下一个时间表。"
+  },
+  "day5_ending_complicit_close_1": {
+    "text": "印发了批准文件。老师检查了我的签名空间，并把一张空椅子拉到一边。"
+  },
+  "day5_ending_complicit_close_2": {
+    "text": "干得好。您可以先阅读下一篇报道。"
+  },
+  "day5_ending_complicit_close_3": {
+    "text": "挂钟的秒针和屏幕上的时钟一起移动一步。我只看到两个时钟不同步。"
+  },
+  "day5_ending_complicit_close_4": {
+    "text": "当我把新卡挂在脖子上时，显示器上显示的线与我的领带平行。"
+  },
+  "day5_ending_complicit_close_5": {
+    "text": "比娜在屏幕下方张开了嘴。我没有调大音量就按了下一个摄像头。"
+  },
+  "day5_archive_cycle07_1": {
+    "text": "唱片第一页的名字是金泰浩。脸部照片中的左边眉毛和我现在的一样。"
+  },
+  "day5_archive_cycle07_2": {
+    "text": "恢复后的录音画面下方，出现了第七轮的标志。在里面，我用左手握住包带。"
+  },
+  "day5_archive_cycle07_3": {
+    "text": "雪花还活着。每次经过走廊，银色的头发都会在肩上飘动。"
+  },
+  "day5_archive_cycle07_4": {
+    "text": "泰浩。在门关上之前进来。这里的铰链声音很大。"
+  },
+  "day5_archive_cycle07_5": {
+    "text": "当我推开资料室的门时，雪花先走了进去。我脱掉鞋子，让脚步声安静下来。"
+  },
+  "day5_archive_cycle07_6": {
+    "text": "高处有一扇窗户。雨水打在屏幕上，纸闻起来湿漉漉的。"
+  },
+  "day5_archive_cycle07_7": {
+    "text": "我把一条折叠好的毛巾放在门把手上。雪花从口袋里掏出一个小手电筒。"
+  },
+  "day5_archive_cycle07_8": {
+    "text": "从左边的唱片抽屉开始。右侧是本学期的考勤簿。"
+  },
+  "day5_archive_cycle07_9": {
+    "text": "你怎么知道？"
+  },
+  "day5_archive_cycle07_10": {
+    "text": "我昨天打扫卫生时看到了他们。今天是我第一次读到它们。"
+  },
+  "day5_archive_cycle07_11": {
+    "text": "我从书架底部拉出金属抽屉，但一团纸被卡住了，抽屉打不开。"
+  },
+  "day5_archive_cycle07_12": {
+    "text": "雪花将手电筒放进嘴里，压住了纸条。我用双手轻轻抬起抽屉。"
+  },
+  "day5_archive_cycle07_13": {
+    "text": "最上面的信封上印有输入字样。它不适合在学校文件中使用。"
+  },
+  "day5_archive_cycle07_14": {
+    "text": "当我拿出照片时，我的脸出现了。名字不是金泰浩，入学日期也不同。"
+  },
+  "day5_archive_cycle07_15": {
+    "text": "下一个信封也有同样的面孔。这次他的头发很短，车牌搭在肩上。"
+  },
+  "day5_archive_cycle07_16": {
+    "text": "当雪花放下手电筒时，光线照向天花板，两人长长的影子贴在墙上。"
+  },
+  "day5_archive_cycle07_17": {
+    "text": "我希望这是一个笑话。但是纸太多了。"
+  },
+  "day5_archive_cycle07_18": {
+    "text": "六张照片并排放置。只有最后一个空间是空的。旁边写着我现在的名字。"
+  },
+  "day5_archive_cycle07_19": {
+    "text": "我是第七个吗？"
+  },
+  "day5_archive_cycle07_20": {
+    "text": "雪花没有回答，而是把信封翻了过来。本周的日期写在背面。"
+  },
+  "day5_archive_cycle07_21": {
+    "text": "记忆检查、适应观察、重新插入。每件物品均不间断地签名并注明日期。"
+  },
+  "day5_archive_cycle07_22": {
+    "text": "我闭上嘴，试图讲述我转学的记忆。我不记得我在哪里上了公共汽车。"
+  },
+  "day5_archive_cycle07_23": {
+    "text": "雪花拿出笔记本，打开首页，在我写下的地址旁边画了一个小问号。"
+  },
+  "day5_archive_cycle07_24": {
+    "text": "现在不要编造答案。只告诉我你记得什么。"
+  },
+  "day5_archive_cycle07_25": {
+    "text": "我没看完地址。雪花把笔记本还了回去，问号也没有擦掉。"
+  },
+  "day5_archive_cycle07_26": {
+    "text": "走廊的扬声器打开了。数据室门前的毛巾被微风吹动。"
+  },
+  "day5_archive_cycle07_27": {
+    "text": "这是对旧建筑的定期检查。剩下的学生应该去主楼。"
+  },
+  "day5_archive_cycle07_28": {
+    "text": "雪花看了看时钟。比原定的检查时间早了二十分钟。"
+  },
+  "day5_archive_cycle07_29": {
+    "text": "我在包里放了两个信封。我试着用手机看剩下的内容，但调低了屏幕亮度。"
+  },
+  "day5_archive_cycle07_30": {
+    "text": "我们一出去就打开它。如果你在这里使用它，他们就会看到光。"
+  },
+  "day5_archive_cycle07_31": {
+    "text": "雪花在校服的内袋里放了一张照片。它在我包的另一边。"
+  },
+  "day5_archive_cycle07_32": {
+    "text": "当我把门稍微打开时，我看到走廊尽头有一盏红灯。那是一盏白天不亮的灯。"
+  },
+  "day5_archive_cycle07_33": {
+    "text": "我们手里拿着鞋子下了楼梯。墙上没有学校指南，而是管道号码。"
+  },
+  "day5_archive_cycle07_34": {
+    "text": "楼下的门上有一个紧急出口标志。雪花关掉手电筒，把手放在把手上。"
+  },
+  "day5_archive_cycle07_35": {
+    "text": "门没锁。外面的雨水溢出门槛，流进里面。"
+  },
+  "day5_archive_cycle07_36": {
+    "text": "如果我离开这里，我就在栅栏外面了吗？"
+  },
+  "day5_archive_cycle07_37": {
+    "text": "停车场后面。人们可以从栅栏之间穿过。我白天看到的。"
+  },
+  "day5_archive_cycle07_38": {
+    "text": "我再次抓住包带，盖住制服的前部，以免纸张被弄湿。"
+  },
+  "day5_archive_cycle07_39": {
+    "text": "雪花先把脚伸出来，等雨水沾到袜子上时，才抬起脚尖。"
+  },
+  "day5_archive_cycle07_40": {
+    "text": "门在我们身后关上，雪花在门撞到墙上之前抓住了门把手。"
+  },
+  "day5_archive_cycle07_41": {
+    "text": "泰浩。到我这里来吧。"
+  },
+  "day5_archive_cycle07_42": {
+    "text": "老师站在楼梯上。后面的两个人拿着手电筒与脸齐平。"
+  },
+  "day5_archive_cycle07_43": {
+    "text": "雪花挡住了我的去路。提着包的手慢慢落了下来。"
+  },
+  "day5_archive_cycle07_44": {
+    "text": "我是打开档案室的人。他只跟着我。"
+  },
+  "day5_archive_cycle07_45": {
+    "text": "先把包放下。你们都没有必要受伤。"
+  },
+  "day5_archive_cycle07_46": {
+    "text": "老师身后的那个人下台阶时踩到了一个水坑，黑色的裤子都湿了。"
+  },
+  "day5_archive_cycle07_47": {
+    "text": "雪花再次打开门，用身体将门推开，将我身后的通道拓宽。"
+  },
+  "day5_archive_cycle07_48": {
+    "text": "你也出来吧我们可以一起出去。"
+  },
+  "day5_archive_cycle07_49": {
+    "text": "雪花抓住了我的左手。拿着照片信封的右手没有被碰触。"
+  },
+  "day5_archive_cycle07_50": {
+    "text": "张开你的左手。匆忙。"
+  },
+  "day5_archive_cycle07_51": {
+    "text": "当我张开手掌时，雪花用指甲尖轻轻划了一下。我合上双手，又张开。"
+  },
+  "day5_archive_cycle07_52": {
+    "text": "即使您按照他们告诉您的方式移动右手，也要确保您的左手记住了。"
+  },
+  "day5_archive_cycle07_53": {
+    "text": "雨水从我的指间流过。雪花的指甲再次按在了同一个地方。"
+  },
+  "day5_archive_cycle07_54": {
+    "text": "如果疼痛的话，它会留在我的记忆中吗？"
+  },
+  "day5_archive_cycle07_55": {
+    "text": "我不知道。但这是你的手。你会拥有比那张纸更长的时间。"
+  },
+  "day5_archive_cycle07_56": {
+    "text": "楼梯上的脚步声越来越快。雪花推着我出了门，却没有松开我的手。"
+  },
+  "day5_archive_cycle07_57": {
+    "text": "下次出去吧。即使你的名字变了，也要先看看这手牌。"
+  },
+  "day5_archive_cycle07_58": {
+    "text": "老师的手从门缝里伸了进来。雪花双手握住门把手。"
+  },
+  "day5_archive_cycle07_59": {
+    "text": "我把包落在门外了。雪花的一只鞋子被门槛绊住了。"
+  },
+  "day5_archive_cycle07_60": {
+    "text": "门没有完全关上。那人走到一旁，抓住了我的手臂。"
+  },
+  "day5_archive_cycle07_61": {
+    "text": "包带从我的肩上滑落。湿袋子掉到地板上并吸收了水。"
+  },
+  "day5_archive_cycle07_62": {
+    "text": "雪花呼唤着我的名字。一次是泰浩，下一次是马尾被门卡住了。"
+  },
+  "day5_archive_cycle07_63": {
+    "text": "老师拿起了书包。我试图从他手中夺走文件，然后将左手放在墙上。"
+  },
+  "day5_archive_cycle07_64": {
+    "text": "当手掌触碰混凝土的时候，手指就朝着雪花划出的方向折叠起来。"
+  },
+  "day5_archive_cycle07_65": {
+    "text": "雪花呢？她要和我们一起去，不是吗？"
+  },
+  "day5_archive_cycle07_66": {
+    "text": "没有人回答。雪花的鞋子消失在门内，我的手臂被拉到了另一边。"
+  },
+  "day5_archive_cycle07_67": {
+    "text": "录音画面上的声音被切断了。在应急灯下关门的动作重复了两次。"
+  },
+  "day5_archive_cycle07_68": {
+    "text": "下一页写着附属人员李雪花，处理结果是永久废弃。"
+  },
+  "day5_archive_cycle07_69": {
+    "text": "对象所在的舱室被标记为第 8 次重返大气层。金泰海的名字上方贴上了新的名牌。"
+  },
+  "day5_archive_cycle07_70": {
+    "text": "我放开了恢复屏幕。我的左手实际上握住了服务器办公桌的边缘。"
+  },
+  "day5_archive_cycle07_71": {
+    "text": "在关闭记录之前，我单独保存了一张雪花的照片。表示处置的印记已移至与名称不同的行。"
+  },
+  "day5_archive_cycle07_72": {
+    "text": "照片中，雪花还拿着手电筒。这不是一张要求人们闭上眼睛或微笑的照片。"
+  },
+  "day5_archive_cycle07_73": {
+    "text": "留在门口的话语留在了录音的最后。说完最后一句话后，雨声持续了很长时间。"
+  },
+  "day5_archive_cycle07_74": {
+    "text": "我伸出左手，按了一下中风的地方。我在转动屏幕之前擦了擦手。"
+  },
+  "day5_archive_cycle07_75": {
+    "text": "即使我回到服务器上的原始列表，第七条记录旁边的容量编号也与我读取之前相同。"
+  },
+  "day5_archive_cycle12_1": {
+    "text": "下一份记录写着李俊浩的名字。摄影部入部申请上，也有崔由娜的签名。"
+  },
+  "day5_archive_cycle12_2": {
+    "text": "在恢复屏幕上，我正在调整相机带。 比娜在他旁边挥舞着一个空胶卷筒。"
+  },
+  "day5_archive_cycle12_3": {
+    "text": "学长。今天我们在校园以外的地方拍照吧。我们总是去同一个地方。"
+  },
+  "day5_archive_cycle12_4": {
+    "text": "如果您从同一个地方拍照，您可以看到变化。"
+  },
+  "day5_archive_cycle12_5": {
+    "text": "他指着我的相机说日期功能坏了，我得自己写下来。"
+  },
+  "day5_archive_cycle12_6": {
+    "text": "我们将日期写在冲洗后的照片背面。这是同一天，但我写的一个数字不同。"
+  },
+  "day5_archive_cycle12_7": {
+    "text": "那是昨天的日期。学长，你又落后一天了。"
+  },
+  "day5_archive_cycle12_8": {
+    "text": "我笑了，把它擦掉了。橡皮擦在铅笔痕迹上已经磨黑了。"
+  },
+  "day5_archive_cycle12_9": {
+    "text": "摄影部的储物柜很旧，下面的胶合板也裂了。每次他把相机放进去时，相机都会发出嘎嘎声。"
+  },
+  "day5_archive_cycle12_10": {
+    "text": "我把纸折到胶合板下面，地板一固定好，他就点了点头。"
+  },
+  "day5_archive_cycle12_11": {
+    "text": "现在已经稳定了学长，你很擅长这种事。"
+  },
+  "day5_archive_cycle12_12": {
+    "text": "我尝试在里面放一个空胶卷筒。当地板被盖上的时候，里面就没有任何声音了。"
+  },
+  "day5_archive_cycle12_13": {
+    "text": "几天后拍摄的一张照片显示了一名陌生的学生。我把它翻过来，发现了一个旧日期和我的笔迹。"
+  },
+  "day5_archive_cycle12_14": {
+    "text": "起初我以为这是前部门成员留下的照片。第二张照片中显示了相同的手腕。"
+  },
+  "day5_archive_cycle12_15": {
+    "text": "比娜用手指着我的手腕。表扣标记仍保留在照片中的同一位置。"
+  },
+  "day5_archive_cycle12_16": {
+    "text": "照片里的是你吗，学长？"
+  },
+  "day5_archive_cycle12_17": {
+    "text": "我把照片放在桌子上。我知道如果我拒绝，游戏就会拿出下一张照片。"
+  },
+  "day5_archive_cycle12_18": {
+    "text": "我在抽屉里发现了从一号到十一号的信封。名字各不相同，但签名却很相似。"
+  },
+  "day5_archive_cycle12_19": {
+    "text": "最后一个信封里没有照片。用药确认书上只写着我的名字，李相夏。"
+  },
+  "day5_archive_cycle12_20": {
+    "text": "他锁上门，打开暗室灯，在红光下一一读着日期。"
+  },
+  "day5_archive_cycle12_21": {
+    "text": "我们把记住的内容写在不同的纸上，然后折叠并改变纸片，然后互相交谈。"
+  },
+  "day5_archive_cycle12_22": {
+    "text": "我记得我以前的学校的名字没有在地图上。 由娜还拍摄了地图搜索屏幕的照片。"
+  },
+  "day5_archive_cycle12_23": {
+    "text": "也保留我们无法回答的问题。不要删除它们。"
+  },
+  "day5_archive_cycle12_24": {
+    "text": "教室里发布了通知，要求学生到卫生室。直到最后才提到这名学生的名字。"
+  },
+  "day5_archive_cycle12_25": {
+    "text": "我的手机上也弹出了同样的通知。附上一句话说今天的日程不能改变。"
+  },
+  "day5_archive_cycle12_26": {
+    "text": "在卫生室门口，我把包交给了何先生，把包挂在他的肩上，带子也没有松开。"
+  },
+  "day5_archive_cycle12_27": {
+    "text": "如果十分钟过去了你还不出来，我就进去了。"
+  },
+  "day5_archive_cycle12_28": {
+    "text": "不要在门口等。在摄影俱乐部房间等候。"
+  },
+  "day5_archive_cycle12_29": {
+    "text": "我进来的时候莉仁拉上了窗帘。门的一侧被遮住了，床的一侧没有被遮住。"
+  },
+  "day5_archive_cycle12_30": {
+    "text": "今天你喝水了吗？你吃了没？"
+  },
+  "day5_archive_cycle12_31": {
+    "text": "我按顺序回答了问题。老师只是看了看时钟，没有写下答案。"
+  },
+  "day5_archive_cycle12_32": {
+    "text": "托盘中的一个安瓿没有其他安瓿那么满。 莉仁将安瓿握在掌心。"
+  },
+  "day5_archive_cycle12_33": {
+    "text": "那次注射会消除我的记忆吗？"
+  },
+  "day5_archive_cycle12_34": {
+    "text": "陆隐的手停了下来。放下安瓿的声音比平时更大。"
+  },
+  "day5_archive_cycle12_35": {
+    "text": "谁说的？"
+  },
+  "day5_archive_cycle12_36": {
+    "text": "这是写在报纸上的。你的签名也在那里。"
+  },
+  "day5_archive_cycle12_37": {
+    "text": "李银掀起门帘，关上门帘，查看外面是谁。"
+  },
+  "day5_archive_cycle12_38": {
+    "text": "如果您稍后步行，请将手放在墙上。别跑。"
+  },
+  "day5_archive_cycle12_39": {
+    "text": "注射针接触到的区域被隐藏在屏幕上。录音里只剩下我的呼吸声。"
+  },
+  "day5_archive_cycle12_40": {
+    "text": "当我离开保健室时，走廊似乎是双层的。我将手掌放在墙上的瓷砖上。"
+  },
+  "day5_archive_cycle12_41": {
+    "text": "贝娜从拐角处走了出来。我的衬衫被我握着包带的手卡住了。"
+  },
+  "day5_archive_cycle12_42": {
+    "text": "十分钟过去了。我们一起去摄影俱乐部吧。"
+  },
+  "day5_archive_cycle12_43": {
+    "text": "站在我靠墙一侧的瑞基没有拉我的手臂，而是缩短了步伐。"
+  },
+  "day5_archive_cycle12_44": {
+    "text": "当我进入黑暗的房间时，一盏红灯亮了。他放下包，把椅子放在门前。"
+  },
+  "day5_archive_cycle12_45": {
+    "text": "你不能一直在这里等。"
+  },
+  "day5_archive_cycle12_46": {
+    "text": "当你现在无法独自行走时，请不要说这样的话。"
+  },
+  "day5_archive_cycle12_47": {
+    "text": "我从包里拿出信封。我的指尖失去了力气，第一张照片掉到了地板上。"
+  },
+  "day5_archive_cycle12_48": {
+    "text": "被娜捡起来并整理好。当我让他握住角时，他用双手按住角。"
+  },
+  "day5_archive_cycle12_49": {
+    "text": "当我拿出胶卷并将其举到窗外的灯光下时，我意识到这是一个黑暗的房间，但为时已晚。 比娜放下了我的手。"
+  },
+  "day5_archive_cycle12_50": {
+    "text": "已经开发出来了。现在你不需要把它举到光线下。"
+  },
+  "day5_archive_cycle12_51": {
+    "text": "还记得储物柜的底部吗？我们把纸放在哪里。"
+  },
+  "day5_archive_cycle12_52": {
+    "text": "他点点头，从我手里接过相机，放在胸前。"
+  },
+  "day5_archive_cycle12_53": {
+    "text": "我将一张照片和一部电影放入空容器中。我不得不换手三次才能盖上盖子。"
+  },
+  "day5_archive_cycle12_54": {
+    "text": "把它放在它下面。如果我明天要它，请不要立即给我。"
+  },
+  "day5_archive_cycle12_55": {
+    "text": "但既然你要，我为什么不给你呢？"
+  },
+  "day5_archive_cycle12_56": {
+    "text": "当我在纸上写下我的名字时，最后一个字母重叠了两次。"
+  },
+  "day5_archive_cycle12_57": {
+    "text": "明天进校门的人可能不知道这个名字。"
+  },
+  "day5_archive_cycle12_58": {
+    "text": "由娜接过纸。日期被改写为“Lee Sang-ha”三个字母。"
+  },
+  "day5_archive_cycle12_59": {
+    "text": "那我就问你了。为了确保你真的是我的学长。"
+  },
+  "day5_archive_cycle12_60": {
+    "text": "如果我答错了，请不要扔掉它。也留到第十三张吧。"
+  },
+  "day5_archive_cycle12_61": {
+    "text": "由希的手握住了胶卷筒。我没有擦眼睛，而是把相机带拉得更短。"
+  },
+  "day5_archive_cycle12_62": {
+    "text": "明天早上，即使我再次走进校门，也不会再是你认识的那个李俊浩了。"
+  },
+  "day5_archive_cycle12_63": {
+    "text": "比娜抿紧了嘴唇。他没有回答，只是摇了摇头。"
+  },
+  "day5_archive_cycle12_64": {
+    "text": "请不要放弃第十三个我。如果我不知道，请再告诉我一次。"
+  },
+  "day5_archive_cycle12_65": {
+    "text": "当我听到外面有鞋声时，我试图将门前的椅子移开，结果失去了靠背。"
+  },
+  "day5_archive_cycle12_66": {
+    "text": "他拿起椅子，默默地把它移到一边，又抓起我的包，然后打开了门。"
+  },
+  "day5_archive_cycle12_67": {
+    "text": "学长。我叫什么名字？你仍然可以告诉我，不是吗？"
+  },
+  "day5_archive_cycle12_68": {
+    "text": "崔由娜.您最讨厌丢失照片。"
+  },
+  "day5_archive_cycle12_69": {
+    "text": "比娜低下了头。我把门打开一点，从他手里解开了包带。"
+  },
+  "day5_archive_cycle12_70": {
+    "text": "许老师站在走廊里。当他看到我的鞋子时，他走过来抓住了我的肘部。"
+  },
+  "day5_archive_cycle12_71": {
+    "text": "一旦你离开护士办公室，你就应该回到课堂。不要自己走路。"
+  },
+  "day5_archive_cycle12_72": {
+    "text": "暗室门关上时，里面传来胶合板被掀起的轻微声音。"
+  },
+  "day5_archive_cycle12_73": {
+    "text": "老师没有回头。我伸出手，放在墙上，放慢速度，直到声音停止。"
+  },
+  "day5_archive_cycle12_74": {
+    "text": "记录的最后一张照片只显示了储物柜的底部。胶片盒隐藏在胶合板下方，不可见。"
+  },
+  "day5_archive_cycle12_75": {
+    "text": "当我回到服务器屏幕时，我的左手感到紧张。我把这三个名字写在不同的行上。"
+  },
+  "day5_archive_cycle12_76": {
+    "text": "李俊浩、崔由娜、第十三个。我没有拿一个名字代替另一个，而是留着空白，关上了记录。"
+  },
+  "day5_history_callback_37": {
+    "text": "袋子里还有一张湿纸。我没有把那些难以辨认的字母扔掉，而是把它们放在处方上。"
+  },
+  "day5_history_callback_38": {
+    "text": "我按照晚上记录的顺序填写了笔记。雪花所说的和文件中留下的内容并没有混在一条线上。"
+  },
+  "day5_history_callback_39": {
+    "text": "前一天的记录集在管理员屏幕上打开。我发现的不一致之处现在似乎是可以编辑的。"
+  },
+  "day5_expansion_action_10_a": {
+    "text": "我直视镜头中自己的脸。由于这不是一张确认名字的照片，所以看哪里就很清楚了。"
+  },
+  "day5_expansion_action_10_b": {
+    "text": "当我拿起相机时，八木站在一堵空白的墙前。我后退了一步，把手伸进了框架里。"
+  }
 }

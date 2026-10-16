@@ -549,11 +549,38 @@ Object.assign(SCENARIO[1], {
     },
     // L244: 박은수 "취미나 좋아하는 거 없어요?"
     "day1_eunsu_10": {
-        characters: { left: "sea_smile", center: "eunsu_normal" },
-        choices: [
-            { next: "day1_eunsu_11", stats: { eunsu: { affinity: 2 }, sea: { affinity: 1 } } },
-            { next: "day1_eunsu_11", stats: { eunsu: { affinity: 1 } } },
-            { next: "day1_eunsu_11", stats: { sea: { affinity: 2 } } }
+        "characters": {
+            "left": "sea_smile",
+            "center": "eunsu_normal"
+        },
+        "choices": [
+            {
+                "next": "day1_eunsu_11_honest",
+                "stats": {
+                    "eunsu": {
+                        "affinity": 2
+                    },
+                    "sea": {
+                        "affinity": 1
+                    }
+                }
+            },
+            {
+                "next": "day1_eunsu_11_brief",
+                "stats": {
+                    "eunsu": {
+                        "affinity": 1
+                    }
+                }
+            },
+            {
+                "next": "day1_eunsu_11_sea",
+                "stats": {
+                    "sea": {
+                        "affinity": 2
+                    }
+                }
+            }
         ]
     },
     // L246: 나 "음... 게임이랑 음악 듣는 거 좋아합니다."
@@ -836,5 +863,30 @@ Object.assign(SCENARIO[1], {
         character: null,
         changeSlot: "lunch",
         next: "day1_lunch_start"
+    }
+});
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[1], {
+    "day1_eunsu_11_honest": {
+        "characters": {
+            "left": "sea_smile",
+            "center": "eunsu_normal"
+        },
+        "next": "day1_eunsu_12"
+    },
+    "day1_eunsu_11_brief": {
+        "characters": {
+            "left": "sea_smile",
+            "center": "eunsu_normal"
+        },
+        "next": "day1_eunsu_11"
+    },
+    "day1_eunsu_11_sea": {
+        "characters": {
+            "left": "sea_smile",
+            "center": "eunsu_normal"
+        },
+        "next": "day1_eunsu_12"
     }
 });

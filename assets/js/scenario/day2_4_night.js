@@ -207,3 +207,240 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_sea_10"
     }
 });
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[2], {
+    "day2_night_drawer_1": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_2"
+    },
+    "day2_night_drawer_2": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_3"
+    },
+    "day2_night_drawer_3": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_4"
+    },
+    "day2_night_drawer_4": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_5"
+    },
+    "day2_night_drawer_5": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_6",
+        "branches": [
+            {
+                "condition": "tested_left_grip",
+                "next": "day2_history_callback_8"
+            }
+        ]
+    },
+    "day2_night_drawer_6": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_7"
+    },
+    "day2_night_drawer_7": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_8"
+    },
+    "day2_night_drawer_8": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_9"
+    },
+    "day2_night_drawer_9": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_choice"
+    },
+    "day2_night_drawer_choice": {
+        "night": true,
+        "choices": [
+            {
+                "next": "day2_night_drawer_light_1",
+                "setFlags": [
+                    "found_washed_note"
+                ],
+                "stats": {
+                    "seolhwa": {
+                        "affinity": 2
+                    },
+                    "yuna": {
+                        "affinity": 1
+                    }
+                }
+            },
+            {
+                "next": "day2_night_drawer_laundry_1",
+                "stats": {
+                    "eunsu": {
+                        "affinity": 2
+                    }
+                }
+            },
+            {
+                "next": "day2_night_drawer_bin_1",
+                "stats": {
+                    "sea": {
+                        "affinity": 1
+                    }
+                }
+            }
+        ]
+    },
+    "day2_night_drawer_light_1": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_light_2"
+    },
+    "day2_night_drawer_light_2": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_light_3"
+    },
+    "day2_night_drawer_light_3": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_light_4"
+    },
+    "day2_night_drawer_light_4": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_light_5"
+    },
+    "day2_night_drawer_light_5": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_light_6"
+    },
+    "day2_night_drawer_light_6": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_light_7"
+    },
+    "day2_night_drawer_light_7": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_light_8"
+    },
+    "day2_night_drawer_light_8": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_light_9"
+    },
+    "day2_night_drawer_light_9": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_join_1"
+    },
+    "day2_night_drawer_laundry_1": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_laundry_2"
+    },
+    "day2_night_drawer_laundry_2": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_laundry_3"
+    },
+    "day2_night_drawer_laundry_3": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_laundry_4"
+    },
+    "day2_night_drawer_laundry_4": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_laundry_5"
+    },
+    "day2_night_drawer_laundry_5": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_laundry_6"
+    },
+    "day2_night_drawer_laundry_6": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_join_1"
+    },
+    "day2_night_drawer_bin_1": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_bin_2"
+    },
+    "day2_night_drawer_bin_2": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_bin_3"
+    },
+    "day2_night_drawer_bin_3": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_bin_4"
+    },
+    "day2_night_drawer_bin_4": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_join_1"
+    },
+    "day2_night_drawer_join_1": {
+        "night": true,
+        "character": null,
+        "choices": [
+            {
+                "next": "day2_expansion_action_3_a"
+            },
+            {
+                "next": "day2_expansion_action_3_b"
+            },
+            {
+                "next": "day2_night_drawer_join_2"
+            }
+        ]
+    },
+    "day2_night_drawer_join_2": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_join_3",
+        "branches": [
+            {
+                "condition": "ignored_sea_msg",
+                "next": "day2_history_callback_9"
+            }
+        ]
+    },
+    "day2_night_drawer_join_3": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_drawer_join_4"
+    },
+    "day2_night_drawer_join_4": {
+        "night": true,
+        "character": null,
+        "next": "day2_night_dream_1"
+    },
+    "day2_history_callback_8": {
+        "character": null,
+        "next": "day2_night_drawer_6"
+    },
+    "day2_history_callback_9": {
+        "character": null,
+        "next": "day2_night_drawer_join_3"
+    },
+    "day2_expansion_action_3_a": {
+        "character": null,
+        "next": "day2_night_drawer_join_2"
+    },
+    "day2_expansion_action_3_b": {
+        "character": null,
+        "next": "day2_night_drawer_join_2"
+    }
+});

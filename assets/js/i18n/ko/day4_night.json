@@ -1,372 +1,526 @@
 {
-    "day4_night_start": {
-        "text": "*방에 돌아왔다. 문을 잠그고 체인까지 걸었다.*"
-    },
-    "day4_night_start_2": {
-        "text": "*체인을 건 뒤 문 앞에 의자를 놓았다. 의자 다리가 문에 닿아 삐걱거린다.*"
-    },
-    "day4_night_start_3": {
-        "text": "*현관 위 도어락 제조사 스티커 아래에 작은 관리 번호가 붙어 있다. 입주할 때는 보지 못했던 숫자다.*"
-    },
-    "day4_night_phone": {
-        "text": "*휴대폰이 울린다. 세아다.*"
-    },
-    "day4_night_phone_2": {
-        "text": "*세아*\n\n{name}, 오늘 갑자기 사라져서 걱정했어"
-    },
-    "day4_night_phone_3": {
-        "text": "*세아*\n\n내일도 같이 가자"
-    },
-    "day4_night_phone_4": {
-        "text": "*세아*\n\n약속이야."
-    },
-    "day4_night_phone_5": {
-        "text": "*30초 후. 세아*\n\n약속이야."
-    },
-    "day4_night_phone_6": {
-        "text": "*15초 후. 세아*\n\n약속이야?"
-    },
-    "day4_night_phone_7": {
-        "text": "*진동이 끝나기 전에 다음 말풍선이 붙는다.*"
-    },
-    "day4_night_phone_8": {
-        "text": "*10초 후. 세아*\n\n자고 있어?"
-    },
-    "day4_night_phone_9": {
-        "text": "*5초 후. 세아*\n\n...자지 마. 조금만 더."
-    },
-    "day4_night_phone_10": {
-        "text": "*3초 후. 세아*\n\n제발"
-    },
-    "day4_night_phone_11": {
-        "text": "*읽음 표시는 붙지 않는다. 화면을 잠갔다.*"
-    },
-    "day4_night_phone_eunsu": {
-        "text": "*은수 선생님*\n\n내일 조금 일찍 와줄 수 있을까? 할 이야기가 있어."
-    },
-    "day4_night_phone_eunsu_2": {
-        "text": "*은수 선생님*\n\n잘 자, {name}."
-    },
-    "day4_night_phone_eunsu_3": {
-        "text": "*'잘 자'. 말풍선 아래 학생 안전 앱 아이콘이 같이 떠 있다.*"
-    },
-    "day4_night_phone_end": {
-        "text": "*휴대폰을 서랍에 넣었다. 진동이 계속 울렸다. 수건으로 감싸서 소리를 죽였다.*"
-    },
-    "day4_night_save_glitch": {
-        "text": "*수건으로 감싼 휴대폰이 서랍 안에서 저절로 다시 진동한다.*"
-    },
-    "day4_night_save_glitch_2": {
-        "text": "*꺼내봤다. 학생 안전 앱 알림이 떠 있다.*"
-    },
-    "day4_night_save_glitch_3": {
-        "text": "*'피험—' 깜빡. 알림이 바뀐다. '좋은 밤이에요, {name}!'*"
-    },
-    "day4_night_save_glitch_4": {
-        "text": "*알림 기록에는 같은 시간의 항목이 없다.*"
-    },
-    "day4_night_save_glitch_5": {
-        "text": "*앱을 열자 평소 학생 메뉴 대신 검은 바탕에 흰 글씨로 된 어드민 패널이 뜬다.*"
-    },
-    "day4_night_save_glitch_6": {
-        "text": "***화면 상단: 'NEVERGRAD — 피험자 관리 시스템 v4.7'***"
-    },
-    "day4_night_save_glitch_7": {
-        "text": "*목록이 뜬다. 13개의 행.\n\n#01 김도진 — 종료\n#03 박서진 — 종료 / 4일차 이탈 시도\n#07 김태호 — ██ 반응 / 외부 접촉: 이설화\n#09 한지호 — 종료 / 3일차 조기 발각\n...\n#13 {name} — 진행 중\n\n나머지 행은 접힌 메뉴 안에 회색으로 가려져 있다.*"
-    },
-    "day4_night_save_glitch_8": {
-        "text": "*13개의 행을 첫 줄부터 마지막 줄까지 손가락으로 짚었다. 13개의 이름 중 '종료'가 12번 반복된다.*"
-    },
-    "day4_night_save_glitch_9": {
-        "text": "*날짜 간격은 3개월, 4개월, 3개월로 일정하지 않다. 하지만 기간은 전부 같다. **5일.***"
-    },
-    "day4_night_save_glitch_10": {
-        "text": "*#07만 다르다. '이상 반응'. 외부 접촉: 이설화. 설화라는 이름에서 화면을 넘기던 손가락이 멈춘다.*"
-    },
-    "day4_night_save_glitch_11": {
-        "text": "*#09. 한지호. 3일차 조기 발각. 3일째에 끝났다. 행 끝의 처리 시간이 다른 줄보다 이틀 빠르다.*"
-    },
-    "day4_night_save_glitch_12": {
-        "text": "*#13. 내 이름. '진행 중'.*"
-    },
-    "day4_night_save_glitch_13": {
-        "text": "*스크롤을 내렸다. 아래에 탭이 더 있다.*"
-    },
-    "day4_night_save_glitch_14": {
-        "text": "*'위치 추적 기록'. 탭을 눌렀다. 학교 평면도 위에서 빨간 점이 움직인다. 지난 나흘의 동선이다.*"
-    },
-    "day4_night_save_glitch_15": {
-        "text": "*지난 나흘의 동선이 같은 속도로 재생된다. 교문과 계단, 오래 멈춘 층까지 숫자로 찍혀 있다.*"
-    },
-    "day4_night_save_glitch_16": {
-        "text": "*2일차에 눌렀던 권한 요청 문구가 눈앞에 남는다. `교내 비상 상황 발생 시 학생 위치 파악에 필요`.*"
-    },
-    "day4_night_save_glitch_17": {
-        "text": "*화면 하단의 권한 목록. 허용은 ON, 막은 항목은 회색 잠금. 위치만은 켜져 있다.*"
-    },
-    "day4_night_save_glitch_18": {
-        "text": "*2일차에 눌렀던 권한 항목이 그대로 남아 있다. 어느 쪽을 눌렀든 위치 로그는 같은 줄에 기록돼 있었다.*"
-    },
-    "day4_night_save_glitch_19": {
-        "text": "*앱이 저절로 닫히고 평소 학생 메뉴가 다시 뜬다. '좋은 밤이에요, {name}!'*"
-    },
-    "day4_night_save_glitch_20": {
-        "text": "*같은 아이콘이다. 낮에는 학생증 큐알(QR)이었는데 밤에는 13개의 행이 뜬다.*"
-    },
-    "day4_night_mirror": {
-        "text": "*교복 셔츠 단추 두 개를 풀자 목단추 자리가 붉게 드러난다. 화장실 세면대에 물을 틀고 얼굴을 씻었다.*"
-    },
-    "day4_night_mirror_2": {
-        "text": "*찬물을 두 번 더 끼얹어도 손이 세면대 가장자리를 놓지 못한다.*"
-    },
-    "day4_night_mirror_3": {
-        "text": "*거울. 김이 서려 있다.*"
-    },
-    "day4_night_mirror_4": {
-        "text": "*지금까지 한 번도 닦지 않았다. 손자국 없는 김이 거울을 덮고 있다.*"
-    },
-    "day4_night_mirror_5": {
-        "text": "*김 위로 물방울이 흘러내리며 눈높이 부분만 먼저 드러난다.*"
-    },
-    "day4_night_mirror_6": {
-        "text": "*이번에는 닦아야 한다.*"
-    },
-    "day4_night_mirror_7": {
-        "text": "*손바닥을 거울 앞에 댄 채 둘을 세는 동안 움직이지 못했다.*"
-    },
-    "day4_night_mirror_8": {
-        "text": "*뒤에서 인기척이 났다. 돌아보니 설화가 욕실 문 앞에 서 있다. 젖은 교복 소매 아래로 물이 떨어진다.*\n\n설화야, 여기 좀 봐줘. 오늘도 거울을 못 닦았어."
-    },
-    "day4_night_mirror_9": {
-        "text": "*설화가 말없이 나를 본다. 눈 아래가 짙게 꺼져 있다.*\n\n거울을 보려던 건데. 말리러 온 거야? 왜 매번 여기서 멈춰야 해?"
-    },
-    "day4_night_mirror_10": {
-        "text": "닦지 마."
-    },
-    "day4_night_mirror_11": {
-        "text": "아직은 보지 마."
-    },
-    "day4_night_mirror_12": {
-        "text": "*다시 거울을 봤다.*"
-    },
-    "day4_night_mirror_swipe": {
-        "text": "*손을 올려 거울 위에 손바닥을 댔다. 차갑다.*"
-    },
-    "day4_night_mirror_swipe_2": {
-        "text": "*위에서 아래로, 한 번 닦았다.*"
-    },
-    "day4_night_mirror_swipe_3": {
-        "text": "*김이 걷힌다. 이마가 드러난다.*"
-    },
-    "day4_night_mirror_swipe_4": {
-        "text": "*두 번째. 눈이 드러난다.*"
-    },
-    "day4_night_mirror_swipe_5": {
-        "text": "*세 번째로 닦자 코와 입, 턱까지 내 얼굴이 드러난다.*"
-    },
-    "day4_night_mirror_hit1": {
-        "text": "*거울 속에 내 등 뒤가 비친다.*"
-    },
-    "day4_night_mirror_hit1_2": {
-        "text": "*아무도 없다.*"
-    },
-    "day4_night_mirror_hit1_3": {
-        "text": "*방금까지 설화가 서 있던 자리만 비어 있다.*"
-    },
-    "day4_night_mirror_hit1_4": {
-        "text": "거울에 안 보여. 너 지금 내 뒤에 있잖아. 그런데 왜—\n\n*입을 열었지만 목소리가 나오지 않았다.*"
-    },
-    "day4_night_mirror_hit1_5": {
-        "text": "*뒤를 돌아보니 설화가 있다. 젖은 머리카락 끝에서 물이 떨어지고 눈가도 젖어 있다.*\n\n여기에는 있네. 분명 거울에는 안 보였는데."
-    },
-    "day4_night_mirror_hit1_6": {
-        "text": "*다시 거울을 보니 내 모습과 빈 욕실만 비친다.*"
-    },
-    "day4_night_mirror_hit1_7": {
-        "text": "*뒤를 보면 설화가 있다. 거울을 보면 없다. 다시 뒤를 보면 있고 거울에는 없다.*\n\n가만히 있어줘. 다시 볼게. 내가 잘못 보는 게 아니잖아."
-    },
-    "day4_night_mirror_hit1_8": {
-        "text": "*거울 속 형광등 아래에는 빈 타일만 이어진다.*"
-    },
-    "day4_night_mirror_hit1_9": {
-        "text": "*설화가 선 자리의 수건걸이만 하얗게 비친다.*"
-    },
-    "day4_night_mirror_hit1_10": {
-        "text": "*지하실 문에서 본 설화와 앱의 #07 기록이 이어진다.*"
-    },
-    "day4_night_mirror_hit1_11": {
-        "text": "*앱에서 본 #07 행을 떠올린다. `외부 접촉: 이설화`. 그 옆은 검게 가려져 있었다.*\n\n설화야. 네 이름 옆에 가린 부분이 있었어. 거기에 뭐가 적혀 있었어?"
-    },
-    "day4_night_mirror_hit1_12": {
-        "text": "*거울에는 빈 욕실만 보이는데 시야 오른쪽에는 설화의 젖은 머리카락이 보인다.*\n\n그만 봐. 거울로 찾지 말고 이쪽을 봐."
-    },
-    "day4_night_mirror_hit1_13": {
-        "text": "*거울과 시야 가장자리가 한 칸 어긋난다.*"
-    },
-    "day4_night_mirror_hit1_14": {
-        "text": "미안해."
-    },
-    "day4_night_mirror_hit1_15": {
-        "text": "설화야. 나한테 하는 말이지?"
-    },
-    "day4_night_mirror_hit2": {
-        "text": "*거울에서 눈을 떼지 않는다.*"
-    },
-    "day4_night_mirror_hit2_2": {
-        "text": "*4일 만에 처음으로 내 얼굴을 제대로 봤다. 턱 끝에서 물방울이 떨어지고 목에는 이름표 끈 자국만 남아 있다.*"
-    },
-    "day4_night_mirror_hit2_3": {
-        "text": "*아까 본 기록 속 이름들을 하나씩 떠올리며 거울 속 얼굴과 겹쳐본다.*"
-    },
-    "day4_night_mirror_hit2_4": {
-        "text": "*1번. 김도진. 짧은 검은 머리. 얼굴이 같다.*"
-    },
-    "day4_night_mirror_hit2_5": {
-        "text": "*3번. 박서진. 갈색 머리. 얼굴이 같다.*"
-    },
-    "day4_night_mirror_hit2_6": {
-        "text": "*7번. 김태호. 긴 머리. 푹 팬 볼. 하지만 눈, 코, 입의 배치는 같다.*"
-    },
-    "day4_night_mirror_hit2_7": {
-        "text": "*머리색과 이름은 달라도 눈·코·입의 위치는 모두 같다.*"
-    },
-    "day4_night_mirror_hit2_8": {
-        "text": "*내 이름표는 마지막 행에 붙어 있다.*"
-    },
-    "day4_night_mirror_hit2_9": {
-        "text": "*커피 취향, 도시락 반찬, 빈 출석부 칸, 설화 기록까지 내 이름 아래에 정리돼 있었다.*"
-    },
-    "day4_night_mirror_overlay": {
-        "text": ""
-    },
-    "day4_night_mirror_collapse": {
-        "text": "*뒷걸음질 치다 벽에 등이 부딪혔다.*"
-    },
-    "day4_night_mirror_collapse_2": {
-        "text": "*왼손의 흑연 자국은 벽에 남은 글씨의 획과 같았다.*"
-    },
-    "day4_night_mirror_collapse_3": {
-        "text": "*벽을 타고 주저앉았다. 무릎에 타일의 냉기가 닿았다.*"
-    },
-    "day4_night_mirror_collapse_4": {
-        "text": "*이를 너무 세게 물어 턱관절이 아팠다.*"
-    },
-    "day4_night_mirror_collapse_5": {
-        "text": "*한동안 입을 열지 못했다.*"
-    },
-    "day4_night_mirror_collapse_6": {
-        "text": "*왼손에 묻은 흑연이 젖어 번졌다.*"
-    },
-    "day4_night_mirror_collapse_7": {
-        "text": "*욕실 밖 벽시계 초침 소리가 문 너머까지 들린다.*"
-    },
-    "day4_night_mirror_collapse_8": {
-        "text": "*설화가 옆에 앉아도 거울엔 나만 있다.*\n\n옆에 앉아 있어줘. 대답 안 해도 돼. 혼자 보기 힘들어."
-    },
-    "day4_night_mirror_collapse_9": {
-        "text": "*설화 쪽 바닥 타일을 만져보니 다른 곳보다 차갑다.*\n\n바닥도 이쪽이 더 차가워. 네가 옆에 있는 건 알겠어. 그런데 잡으려고 하면 못 잡는 거지?"
-    },
-    "day4_night_plan": {
-        "text": "*무릎 감각이 둔해질 때까지 앉아 있다가 일어났다.*"
-    },
-    "day4_night_plan_2": {
-        "text": "*거울 속 얼굴은 눈이 부어 있고 코는 붉어져 있었다. 목에는 이름표 끈 자국이 남아 있다.*"
-    },
-    "day4_night_plan_3": {
-        "text": "*노트를 펼쳐 왼손으로 쓴다. 글씨가 삐뚤고 획마다 흑연이 진하게 묻는다.*"
-    },
-    "day4_night_plan_4": {
-        "text": "*하나. 같은 얼굴, 열세 번째 이름. 앞의 열두 칸은 '종료'.*"
-    },
-    "day4_night_plan_5": {
-        "text": "*둘. 은수는 문을 열고 리인은 컵을 내밀고 세아는 내 시선까지 안다.*"
-    },
-    "day4_night_plan_6": {
-        "text": "*셋. #07 옆에는 설화의 기록. 거울에는 비치지 않았고 왼손에는 전에 쓴 흑연 자국이 남아 있다.*"
-    },
-    "day4_night_plan_7": {
-        "text": "*넷. 구관 아래에서 기계음과 숨소리를 들었다. 빈 자리도 그쪽 기록과 연결돼 있다.*"
-    },
-    "day4_night_plan_8": {
-        "text": "*다섯. 처리 시각은 내일 밤 11시다.*"
-    },
-    "day4_night_plan_9": {
-        "text": "*여섯. 아래에서 나오면 위로. 정문이 아니라 구관 바깥쪽.*"
-    },
-    "day4_night_plan_10": {
-        "text": "*쓰던 펜 끝이 종이 위에서 멎었다. 펜을 내려놓는다.*"
-    },
-    "day4_night_plan_11": {
-        "text": "*일곱. 리인은 상황을 알지만 끝까지 도울지는 알 수 없다.*"
-    },
-    "day4_night_plan_12": {
-        "text": "*여덟. #03은 정문에서 종료됐다. 같은 길로 가면 안 된다.*"
-    },
-    "day4_night_plan_13": {
-        "text": "*아홉. #07은 설화와 함께 22:47에 멈췄다. 경보까지 13분이었다.*"
-    },
-    "day4_night_plan_14": {
-        "text": "*열. #09는 너무 일찍 움직여 3일차에 발각됐다.*"
-    },
-    "day4_night_plan_15": {
-        "text": "*글씨는 삐뚤어졌지만 열 번째 항목까지 적었다.*"
-    },
-    "day4_night_plan_choice": {
-        "text": "*노트 끝에 세 갈래를 적었다.*",
-        "choices": [
-            "학교 밖으로 나간다",
-            "기록을 밖으로 보낸다",
-            "은수를 대면한다"
-        ]
-    },
-    "day4_night_plan_escape": {
-        "text": "*정문은 이미 감시되고 있다. 구관 비상구로 간다.*"
-    },
-    "day4_night_plan_expose": {
-        "text": "*가방에 든 서류는 빼앗길 수 있다. 사본을 밖으로 보낸다.*"
-    },
-    "day4_night_plan_confront": {
-        "text": "*은수 앞에서 13번 기록과 이전 12건을 꺼낸다.*"
-    },
-    "day4_night_plan_final": {
-        "text": "*가방에는 메모, 휴대폰, 확보한 증거만 넣었다.*"
-    },
-    "day4_night_plan_final_2": {
-        "text": "*노트의 마지막 줄에 적었다.*"
-    },
-    "day4_night_plan_final_3": {
-        "text": "***'12번 실패했다. 다음 줄은 없어야 한다. 내일 밤 전에 움직인다.'***"
-    },
-    "day4_night_plan_final_4": {
-        "text": "*알람을 맞췄다. 내일이 5일째다.*"
-    },
-    "day4_night_end": {
-        "text": "*— 4일차 종료 —*"
-    },
-    "day4_night_deduction_hand": {
-        "text": "*왼손 검지의 흑연을 문질렀다. 사물함 글씨의 꺾인 획과 아침 벽에 남은 획을 손가락으로 그려본다.*",
-        "choices": [
-            "왼손으로 획을 그려본다",
-            "이름표의 글꼴을 떠올린다"
-        ]
-    },
-    "day4_night_deduction_hand_match": {
-        "text": "*왼손으로 그리자 획 끝이 같은 방향으로 꺾였다. 이름이 바뀌어도 쓰는 손은 그대로다.*"
-    },
-    "day4_night_deduction_hand_hint": {
-        "text": "*이름표에는 획이 없다. 왼손을 펴자 검지의 흑연이 다시 보였다. 벽에 손을 대고 글씨를 따라갔다.*"
-    },
-    "day4_night_deduction_seolhwa": {
-        "text": "*앱의 #07 행을 다시 열었다. `외부 접촉: 이설화`. 고개를 들면 설화가 있고 거울에는 수건걸이만 비친다.*",
-        "choices": [
-            "#07의 설화 기록과 빈 반사상을 대조한다",
-            "욕실 조명이 꺼졌는지 확인한다"
-        ]
-    },
-    "day4_night_deduction_record_match": {
-        "text": "*#07 옆의 이름을 짚었다. 설화는 그때부터 나와 접촉했다. 지금 내 눈에 보인다고 여기 있다는 증거가 되지는 않는다.*"
-    },
-    "day4_night_deduction_record_hint": {
-        "text": "*형광등도 수건걸이도 거울에 비친다. 빈 곳은 설화 자리뿐이다. #07 옆의 이름과 눈앞의 얼굴을 번갈아 봤다.*"
-    }
+  "day4_night_start": {
+    "text": "*방에 돌아왔다. 문을 잠그고 체인까지 걸었다.*"
+  },
+  "day4_night_start_2": {
+    "text": "*체인을 건 뒤 문 앞에 의자를 놓았다. 의자 다리가 문에 닿아 삐걱거린다.*"
+  },
+  "day4_night_start_3": {
+    "text": "*현관 위 도어락 제조사 스티커 아래에 작은 관리 번호가 붙어 있다. 입주할 때는 보지 못했던 숫자다.*"
+  },
+  "day4_night_phone": {
+    "text": "*휴대폰이 울린다. 세아다.*"
+  },
+  "day4_night_phone_2": {
+    "text": "*세아*\n\n{name}, 오늘 갑자기 사라져서 걱정했어"
+  },
+  "day4_night_phone_3": {
+    "text": "*세아*\n\n내일도 같이 가자"
+  },
+  "day4_night_phone_4": {
+    "text": "*세아*\n\n약속이야."
+  },
+  "day4_night_phone_5": {
+    "text": "*30초 후. 세아*\n\n약속이야."
+  },
+  "day4_night_phone_6": {
+    "text": "*15초 후. 세아*\n\n약속이야?"
+  },
+  "day4_night_phone_7": {
+    "text": "*진동이 끝나기 전에 다음 말풍선이 붙는다.*"
+  },
+  "day4_night_phone_8": {
+    "text": "*10초 후. 세아*\n\n자고 있어?"
+  },
+  "day4_night_phone_9": {
+    "text": "*5초 후. 세아*\n\n...자지 마. 조금만 더."
+  },
+  "day4_night_phone_10": {
+    "text": "*3초 후. 세아*\n\n제발"
+  },
+  "day4_night_phone_11": {
+    "text": "*읽음 표시는 붙지 않는다. 화면을 잠갔다.*"
+  },
+  "day4_night_phone_eunsu": {
+    "text": "*은수 선생님*\n\n내일 조금 일찍 와줄 수 있을까? 할 이야기가 있어."
+  },
+  "day4_night_phone_eunsu_2": {
+    "text": "*은수 선생님*\n\n잘 자, {name}."
+  },
+  "day4_night_phone_eunsu_3": {
+    "text": "*'잘 자'. 말풍선 아래 학생 안전 앱 아이콘이 같이 떠 있다.*"
+  },
+  "day4_night_phone_end": {
+    "text": "*휴대폰을 서랍에 넣었다. 진동이 계속 울렸다. 수건으로 감싸서 소리를 죽였다.*"
+  },
+  "day4_night_save_glitch": {
+    "text": "*수건으로 감싼 휴대폰이 서랍 안에서 저절로 다시 진동한다.*"
+  },
+  "day4_night_save_glitch_2": {
+    "text": "*꺼내봤다. 학생 안전 앱 알림이 떠 있다.*"
+  },
+  "day4_night_save_glitch_3": {
+    "text": "*'피험—' 깜빡. 알림이 바뀐다. '좋은 밤이에요, {name}!'*"
+  },
+  "day4_night_save_glitch_4": {
+    "text": "*알림 기록에는 같은 시간의 항목이 없다.*"
+  },
+  "day4_night_save_glitch_5": {
+    "text": "*앱을 열자 평소 학생 메뉴 대신 검은 바탕에 흰 글씨로 된 어드민 패널이 뜬다.*"
+  },
+  "day4_night_save_glitch_6": {
+    "text": "***화면 상단: 'NEVERGRAD — 피험자 관리 시스템 v4.7'***"
+  },
+  "day4_night_save_glitch_7": {
+    "text": "*목록이 뜬다. 13개의 행.\n\n#01 김도진 — 종료\n#03 박서진 — 종료 / 4일차 이탈 시도\n#07 김태호 — ██ 반응 / 외부 접촉: 이설화\n#09 한지호 — 종료 / 3일차 조기 발각\n...\n#13 {name} — 진행 중\n\n나머지 행은 접힌 메뉴 안에 회색으로 가려져 있다.*"
+  },
+  "day4_night_save_glitch_8": {
+    "text": "*13개의 행을 첫 줄부터 마지막 줄까지 손가락으로 짚었다. 13개의 이름 중 '종료'가 12번 반복된다.*"
+  },
+  "day4_night_save_glitch_9": {
+    "text": "*날짜 간격은 3개월, 4개월, 3개월로 일정하지 않다. 하지만 기간은 전부 같다. **5일.***"
+  },
+  "day4_night_save_glitch_10": {
+    "text": "*#07만 다르다. '이상 반응'. 외부 접촉: 이설화. 설화라는 이름에서 화면을 넘기던 손가락이 멈춘다.*"
+  },
+  "day4_night_save_glitch_11": {
+    "text": "*#09. 한지호. 3일차 조기 발각. 3일째에 끝났다. 행 끝의 처리 시간이 다른 줄보다 이틀 빠르다.*"
+  },
+  "day4_night_save_glitch_12": {
+    "text": "*#13. 내 이름. '진행 중'.*"
+  },
+  "day4_night_save_glitch_13": {
+    "text": "*스크롤을 내렸다. 아래에 탭이 더 있다.*"
+  },
+  "day4_night_save_glitch_14": {
+    "text": "*'위치 추적 기록'. 탭을 눌렀다. 학교 평면도 위에서 빨간 점이 움직인다. 지난 나흘의 동선이다.*"
+  },
+  "day4_night_save_glitch_15": {
+    "text": "*지난 나흘의 동선이 같은 속도로 재생된다. 교문과 계단, 오래 멈춘 층까지 숫자로 찍혀 있다.*"
+  },
+  "day4_night_save_glitch_16": {
+    "text": "*2일차에 눌렀던 권한 요청 문구가 눈앞에 남는다. `교내 비상 상황 발생 시 학생 위치 파악에 필요`.*"
+  },
+  "day4_night_save_glitch_17": {
+    "text": "*화면 하단의 권한 목록. 허용은 ON, 막은 항목은 회색 잠금. 위치만은 켜져 있다.*"
+  },
+  "day4_night_save_glitch_18": {
+    "text": "*2일차에 눌렀던 권한 항목이 그대로 남아 있다. 어느 쪽을 눌렀든 위치 로그는 같은 줄에 기록돼 있었다.*"
+  },
+  "day4_night_save_glitch_19": {
+    "text": "*앱이 저절로 닫히고 평소 학생 메뉴가 다시 뜬다. '좋은 밤이에요, {name}!'*"
+  },
+  "day4_night_save_glitch_20": {
+    "text": "*같은 아이콘이다. 낮에는 학생증 큐알(QR)이었는데 밤에는 13개의 행이 뜬다.*"
+  },
+  "day4_night_mirror": {
+    "text": "*교복 셔츠 단추 두 개를 풀자 목단추 자리가 붉게 드러난다. 화장실 세면대에 물을 틀고 얼굴을 씻었다.*"
+  },
+  "day4_night_mirror_2": {
+    "text": "*찬물을 두 번 더 끼얹어도 손이 세면대 가장자리를 놓지 못한다.*"
+  },
+  "day4_night_mirror_3": {
+    "text": "*거울. 김이 서려 있다.*"
+  },
+  "day4_night_mirror_4": {
+    "text": "*지금까지 한 번도 닦지 않았다. 손자국 없는 김이 거울을 덮고 있다.*"
+  },
+  "day4_night_mirror_5": {
+    "text": "*김 위로 물방울이 흘러내리며 눈높이 부분만 먼저 드러난다.*"
+  },
+  "day4_night_mirror_6": {
+    "text": "*이번에는 닦아야 한다.*"
+  },
+  "day4_night_mirror_7": {
+    "text": "*손바닥을 거울 앞에 댄 채 둘을 세는 동안 움직이지 못했다.*"
+  },
+  "day4_night_mirror_8": {
+    "text": "*뒤에서 인기척이 났다. 돌아보니 설화가 욕실 문 앞에 서 있다. 젖은 교복 소매 아래로 물이 떨어진다.*\n\n설화야, 여기 좀 봐줘. 오늘도 거울을 못 닦았어."
+  },
+  "day4_night_mirror_9": {
+    "text": "*설화가 말없이 나를 본다. 눈 아래가 짙게 꺼져 있다.*\n\n거울을 보려던 건데. 말리러 온 거야? 왜 매번 여기서 멈춰야 해?"
+  },
+  "day4_night_mirror_10": {
+    "text": "닦지 마."
+  },
+  "day4_night_mirror_11": {
+    "text": "아직은 보지 마."
+  },
+  "day4_night_mirror_12": {
+    "text": "*다시 거울을 봤다.*"
+  },
+  "day4_night_mirror_swipe": {
+    "text": "*손을 올려 거울 위에 손바닥을 댔다. 차갑다.*"
+  },
+  "day4_night_mirror_swipe_2": {
+    "text": "*위에서 아래로, 한 번 닦았다.*"
+  },
+  "day4_night_mirror_swipe_3": {
+    "text": "*김이 걷힌다. 이마가 드러난다.*"
+  },
+  "day4_night_mirror_swipe_4": {
+    "text": "*두 번째. 눈이 드러난다.*"
+  },
+  "day4_night_mirror_swipe_5": {
+    "text": "*세 번째로 닦자 코와 입, 턱까지 내 얼굴이 드러난다.*"
+  },
+  "day4_night_mirror_hit1": {
+    "text": "*거울 속에 내 등 뒤가 비친다.*"
+  },
+  "day4_night_mirror_hit1_2": {
+    "text": "*아무도 없다.*"
+  },
+  "day4_night_mirror_hit1_3": {
+    "text": "*방금까지 설화가 서 있던 자리만 비어 있다.*"
+  },
+  "day4_night_mirror_hit1_4": {
+    "text": "거울에 안 보여. 너 지금 내 뒤에 있잖아. 그런데 왜—\n\n*입을 열었지만 목소리가 나오지 않았다.*"
+  },
+  "day4_night_mirror_hit1_5": {
+    "text": "*뒤를 돌아보니 설화가 있다. 젖은 머리카락 끝에서 물이 떨어지고 눈가도 젖어 있다.*\n\n여기에는 있네. 분명 거울에는 안 보였는데."
+  },
+  "day4_night_mirror_hit1_6": {
+    "text": "*다시 거울을 보니 내 모습과 빈 욕실만 비친다.*"
+  },
+  "day4_night_mirror_hit1_7": {
+    "text": "*뒤를 보면 설화가 있다. 거울을 보면 없다. 다시 뒤를 보면 있고 거울에는 없다.*\n\n가만히 있어줘. 다시 볼게. 내가 잘못 보는 게 아니잖아."
+  },
+  "day4_night_mirror_hit1_8": {
+    "text": "*거울 속 형광등 아래에는 빈 타일만 이어진다.*"
+  },
+  "day4_night_mirror_hit1_9": {
+    "text": "*설화가 선 자리의 수건걸이만 하얗게 비친다.*"
+  },
+  "day4_night_mirror_hit1_10": {
+    "text": "*지하실 문에서 본 설화와 앱의 #07 기록이 이어진다.*"
+  },
+  "day4_night_mirror_hit1_11": {
+    "text": "*앱에서 본 #07 행을 떠올린다. `외부 접촉: 이설화`. 그 옆은 검게 가려져 있었다.*\n\n설화야. 네 이름 옆에 가린 부분이 있었어. 거기에 뭐가 적혀 있었어?"
+  },
+  "day4_night_mirror_hit1_12": {
+    "text": "*거울에는 빈 욕실만 보이는데 시야 오른쪽에는 설화의 젖은 머리카락이 보인다.*\n\n그만 봐. 거울로 찾지 말고 이쪽을 봐."
+  },
+  "day4_night_mirror_hit1_13": {
+    "text": "*거울과 시야 가장자리가 한 칸 어긋난다.*"
+  },
+  "day4_night_mirror_hit1_14": {
+    "text": "미안해."
+  },
+  "day4_night_mirror_hit1_15": {
+    "text": "설화야. 나한테 하는 말이지?"
+  },
+  "day4_night_mirror_hit2": {
+    "text": "*거울에서 눈을 떼지 않는다.*"
+  },
+  "day4_night_mirror_hit2_2": {
+    "text": "*4일 만에 처음으로 내 얼굴을 제대로 봤다. 턱 끝에서 물방울이 떨어지고 목에는 이름표 끈 자국만 남아 있다.*"
+  },
+  "day4_night_mirror_hit2_3": {
+    "text": "*아까 본 기록 속 이름들을 하나씩 떠올리며 거울 속 얼굴과 겹쳐본다.*"
+  },
+  "day4_night_mirror_hit2_4": {
+    "text": "*1번. 김도진. 짧은 검은 머리. 얼굴이 같다.*"
+  },
+  "day4_night_mirror_hit2_5": {
+    "text": "*3번. 박서진. 갈색 머리. 얼굴이 같다.*"
+  },
+  "day4_night_mirror_hit2_6": {
+    "text": "*7번. 김태호. 긴 머리. 푹 팬 볼. 하지만 눈, 코, 입의 배치는 같다.*"
+  },
+  "day4_night_mirror_hit2_7": {
+    "text": "*머리색과 이름은 달라도 눈·코·입의 위치는 모두 같다.*"
+  },
+  "day4_night_mirror_hit2_8": {
+    "text": "*내 이름표는 마지막 행에 붙어 있다.*"
+  },
+  "day4_night_mirror_hit2_9": {
+    "text": "*커피 취향, 도시락 반찬, 빈 출석부 칸, 설화 기록까지 내 이름 아래에 정리돼 있었다.*"
+  },
+  "day4_night_mirror_overlay": {
+    "text": ""
+  },
+  "day4_night_mirror_collapse": {
+    "text": "*뒷걸음질 치다 벽에 등이 부딪혔다.*"
+  },
+  "day4_night_mirror_collapse_2": {
+    "text": "*왼손의 흑연 자국은 벽에 남은 글씨의 획과 같았다.*"
+  },
+  "day4_night_mirror_collapse_3": {
+    "text": "*벽을 타고 주저앉았다. 무릎에 타일의 냉기가 닿았다.*"
+  },
+  "day4_night_mirror_collapse_4": {
+    "text": "*이를 너무 세게 물어 턱관절이 아팠다.*"
+  },
+  "day4_night_mirror_collapse_5": {
+    "text": "*한동안 입을 열지 못했다.*"
+  },
+  "day4_night_mirror_collapse_6": {
+    "text": "*왼손에 묻은 흑연이 젖어 번졌다.*"
+  },
+  "day4_night_mirror_collapse_7": {
+    "text": "*욕실 밖 벽시계 초침 소리가 문 너머까지 들린다.*"
+  },
+  "day4_night_mirror_collapse_8": {
+    "text": "*설화가 옆에 앉아도 거울엔 나만 있다.*\n\n옆에 앉아 있어줘. 대답 안 해도 돼. 혼자 보기 힘들어."
+  },
+  "day4_night_mirror_collapse_9": {
+    "text": "*설화 쪽 바닥 타일을 만져보니 다른 곳보다 차갑다.*\n\n바닥도 이쪽이 더 차가워. 네가 옆에 있는 건 알겠어. 그런데 잡으려고 하면 못 잡는 거지?"
+  },
+  "day4_night_plan": {
+    "text": "*무릎 감각이 둔해질 때까지 앉아 있다가 일어났다.*"
+  },
+  "day4_night_plan_2": {
+    "text": "*거울 속 얼굴은 눈이 부어 있고 코는 붉어져 있었다. 목에는 이름표 끈 자국이 남아 있다.*"
+  },
+  "day4_night_plan_3": {
+    "text": "*노트를 펼쳐 왼손으로 쓴다. 글씨가 삐뚤고 획마다 흑연이 진하게 묻는다.*"
+  },
+  "day4_night_plan_4": {
+    "text": "*하나. 같은 얼굴, 열세 번째 이름. 앞의 열두 칸은 '종료'.*"
+  },
+  "day4_night_plan_5": {
+    "text": "*둘. 은수는 문을 열고 리인은 컵을 내밀고 세아는 내 시선까지 안다.*"
+  },
+  "day4_night_plan_6": {
+    "text": "*셋. #07 옆에는 설화의 기록. 거울에는 비치지 않았고 왼손에는 전에 쓴 흑연 자국이 남아 있다.*"
+  },
+  "day4_night_plan_7": {
+    "text": "*넷. 구관 아래에서 기계음과 숨소리를 들었다. 빈 자리도 그쪽 기록과 연결돼 있다.*"
+  },
+  "day4_night_plan_8": {
+    "text": "*다섯. 처리 시각은 내일 밤 11시다.*"
+  },
+  "day4_night_plan_9": {
+    "text": "*여섯. 아래에서 나오면 위로. 정문이 아니라 구관 바깥쪽.*"
+  },
+  "day4_night_plan_10": {
+    "text": "*쓰던 펜 끝이 종이 위에서 멎었다. 펜을 내려놓는다.*"
+  },
+  "day4_night_plan_11": {
+    "text": "*일곱. 리인은 상황을 알지만 끝까지 도울지는 알 수 없다.*"
+  },
+  "day4_night_plan_12": {
+    "text": "*여덟. #03은 정문에서 종료됐다. 같은 길로 가면 안 된다.*"
+  },
+  "day4_night_plan_13": {
+    "text": "*아홉. #07은 설화와 함께 22:47에 멈췄다. 경보까지 13분이었다.*"
+  },
+  "day4_night_plan_14": {
+    "text": "*열. #09는 너무 일찍 움직여 3일차에 발각됐다.*"
+  },
+  "day4_night_plan_15": {
+    "text": "*글씨는 삐뚤어졌지만 열 번째 항목까지 적었다.*"
+  },
+  "day4_night_plan_choice": {
+    "text": "*노트 끝에 세 갈래를 적었다.*",
+    "choices": [
+      "학교 밖으로 나간다",
+      "기록을 밖으로 보낸다",
+      "은수를 대면한다"
+    ]
+  },
+  "day4_night_plan_escape": {
+    "text": "*정문은 이미 감시되고 있다. 구관 비상구로 간다.*"
+  },
+  "day4_night_plan_expose": {
+    "text": "*가방에 든 서류는 빼앗길 수 있다. 사본을 밖으로 보낸다.*"
+  },
+  "day4_night_plan_confront": {
+    "text": "*은수 앞에서 13번 기록과 이전 12건을 꺼낸다.*"
+  },
+  "day4_night_plan_final": {
+    "text": "*가방에는 메모, 휴대폰, 확보한 증거만 넣었다.*"
+  },
+  "day4_night_plan_final_2": {
+    "text": "*노트의 마지막 줄에 적었다.*"
+  },
+  "day4_night_plan_final_3": {
+    "text": "***'12번 실패했다. 다음 줄은 없어야 한다. 내일 밤 전에 움직인다.'***"
+  },
+  "day4_night_plan_final_4": {
+    "text": "*알람을 맞췄다. 내일이 5일째다.*"
+  },
+  "day4_night_end": {
+    "text": "*— 4일차 종료 —*"
+  },
+  "day4_night_deduction_hand": {
+    "text": "*왼손 검지의 흑연을 문질렀다. 사물함 글씨의 꺾인 획과 아침 벽에 남은 획을 손가락으로 그려본다.*",
+    "choices": [
+      "왼손으로 획을 그려본다",
+      "이름표의 글꼴을 떠올린다"
+    ]
+  },
+  "day4_night_deduction_hand_match": {
+    "text": "*왼손으로 그리자 획 끝이 같은 방향으로 꺾였다. 이름이 바뀌어도 쓰는 손은 그대로다.*"
+  },
+  "day4_night_deduction_hand_hint": {
+    "text": "*이름표에는 획이 없다. 왼손을 펴자 검지의 흑연이 다시 보였다. 벽에 손을 대고 글씨를 따라갔다.*"
+  },
+  "day4_night_deduction_seolhwa": {
+    "text": "*앱의 #07 행을 다시 열었다. `외부 접촉: 이설화`. 고개를 들면 설화가 있고 거울에는 수건걸이만 비친다.*",
+    "choices": [
+      "#07의 설화 기록과 빈 반사상을 대조한다",
+      "욕실 조명이 꺼졌는지 확인한다"
+    ]
+  },
+  "day4_night_deduction_record_match": {
+    "text": "*#07 옆의 이름을 짚었다. 설화는 그때부터 나와 접촉했다. 지금 내 눈에 보인다고 여기 있다는 증거가 되지는 않는다.*"
+  },
+  "day4_night_deduction_record_hint": {
+    "text": "*형광등도 수건걸이도 거울에 비친다. 빈 곳은 설화 자리뿐이다. #07 옆의 이름과 눈앞의 얼굴을 번갈아 봤다.*"
+  },
+  "day4_night_truth_sea_1": {
+    "text": "책상 위에 기록을 날짜순으로 놓았다. 세아의 메모에는 같은 음식 이름이 여러 번 지워져 있었다."
+  },
+  "day4_night_truth_sea_2": {
+    "text": "같은 질문이 적힌 메모를 세 장 골랐다.",
+    "choices": [
+      "날짜순으로 정렬한다",
+      "지운 답부터 읽는다",
+      "이번 주 기록과 대조한다"
+    ]
+  },
+  "day4_night_truth_sea_3": {
+    "text": "내가 말하기 전에 맞혔던 취향은 열두 번 고친 답이었다. 그동안 모른다고 쓴 칸도 있었다."
+  },
+  "day4_night_truth_sea_4": {
+    "text": "안전 앱을 켜자 생활 기록 아래에 관리자 패널이 접혀 있었다. 열람만 가능한 항목이었다."
+  },
+  "day4_night_truth_sea_choice": {
+    "text": "세아가 내 취향을 알았던 이유를 기록에서 골랐다.",
+    "choices": [
+      "이전 주기마다 다른 답을 적어 뒀다",
+      "내 휴대폰 검색 기록만 읽었다",
+      "처음부터 우연히 취향이 같았다"
+    ]
+  },
+  "day4_night_truth_sea_right_1": {
+    "text": "같은 질문의 날짜가 서로 다른 해에 놓여 있었다. 첫 장과 마지막 장 사이에 열두 묶음이 있었다."
+  },
+  "day4_night_truth_sea_right_2": {
+    "text": "먹다 남긴 반찬까지 적혀 있었다. 세아가 외운 건 정답만이 아니었다."
+  },
+  "day4_night_truth_sea_right_3": {
+    "text": "메모 옆에 처음 싫다고 한 날을 적어 이번에 내 입으로 말한 날짜와 나란히 놓았다."
+  },
+  "day4_night_truth_sea_wrong_1": {
+    "text": "검색 기록을 받은 날짜보다 음식 메모가 먼저였다. 그 설명으로는 첫 장을 설명할 수 없었다."
+  },
+  "day4_night_truth_sea_wrong_2": {
+    "text": "처음 틀린 답 옆에 열두 번 수정한 흔적이 있었다. 같은 질문을 다시 읽고 메모를 고쳤다."
+  },
+  "day4_night_truth_riin_1": {
+    "text": "투약 기록은 일곱 번째 묶음부터 숫자가 줄었다. 용량을 고친 칸마다 같은 서명이 있었다."
+  },
+  "day4_night_truth_riin_2": {
+    "text": "설화의 이름이 사라진 날짜와 첫 감량 날짜를 나란히 놓으니 둘 사이에는 하루밖에 없었다."
+  },
+  "day4_night_truth_riin_3": {
+    "text": "투약 기록 옆에 읽지 않은 별지가 붙어 있었다.",
+    "choices": [
+      "재고 수량을 확인한다",
+      "투약량 서명을 대조한다",
+      "지금 읽은 원본을 먼저 보관한다"
+    ]
+  },
+  "day4_night_truth_riin_4": {
+    "text": "줄어든 양 옆에는 회수량이 적혀 있었다. 밖으로 빠져나간 약이 따로 계산돼 있었다."
+  },
+  "day4_night_truth_riin_choice": {
+    "text": "왜 일곱 번째 뒤부터 투약량이 줄었을까.",
+    "choices": [
+      "설화를 잃은 뒤 기억 손상을 줄이려 했다",
+      "약 재고가 부족했기 때문이다",
+      "실험이 끝나서 약이 필요 없었다"
+    ]
+  },
+  "day4_night_truth_riin_right_1": {
+    "text": "재고 장부에는 충분한 양이 남아 있었다. 그런데 내 처방 칸에서만 수치가 내려갔다."
+  },
+  "day4_night_truth_riin_right_2": {
+    "text": "메모에는 손상 관찰이라고 적혀 있었다. 그 아래로 지운 이름의 첫 글자가 남아 있었다."
+  },
+  "day4_night_truth_riin_right_3": {
+    "text": "리인의 서명 옆에 설화의 날짜를 적었다. 면죄부를 주는 말은 쓰지 않았다."
+  },
+  "day4_night_truth_riin_wrong_1": {
+    "text": "같은 날 들어온 새 앰플 수량이 적혀 있었다. 약이 모자랐다는 설명은 맞지 않았다."
+  },
+  "day4_night_truth_riin_wrong_2": {
+    "text": "실험 중단 문서도 없었다. 계속되는 실험 안에서 누군가 용량만 바꿨다."
+  },
+  "day4_night_truth_eunsu_1": {
+    "text": "이사회 보고서의 유효 칸에 동그라미가 있었다. 내부 관찰 기록에는 같은 날 폐기 검토가 적혀 있었다."
+  },
+  "day4_night_truth_eunsu_2": {
+    "text": "은수 선생님의 서명이 양쪽에 모두 남아 있었다. 틀린 서류 하나가 아니라 다른 보고 두 개였다."
+  },
+  "day4_night_truth_eunsu_3": {
+    "text": "열세 번째까지 날짜를 넘기는 동안 다음 주기를 승인받은 근거마다 유효라는 말이 반복됐다."
+  },
+  "day4_night_truth_eunsu_4": {
+    "text": "시험이 끝나면 나를 다른 데로 보내야 한다. 보고서는 나를 보내지 않을 이유를 계속 만들고 있었다."
+  },
+  "day4_night_truth_eunsu_choice": {
+    "text": "선생님은 왜 서로 다른 보고를 올렸을까.",
+    "choices": [
+      "실험을 이어 가며 나를 교실에 붙잡으려 했다",
+      "서명만 빌려준 문서라 내용을 몰랐다",
+      "재단에서 졸업 허가를 받으려 했다"
+    ]
+  },
+  "day4_night_truth_eunsu_right_1": {
+    "text": "졸업 승인 칸은 열세 번 모두 비어 있었다. 유효라는 도장은 나를 살리는 말이면서 남기는 말이었다."
+  },
+  "day4_night_truth_eunsu_right_2": {
+    "text": "서류를 덮고 선생님이 했던 말을 적었다. 끝까지 내 반에 있으라는 말이었다."
+  },
+  "day4_night_truth_eunsu_right_3": {
+    "text": "같은 문장 밑에 다른 뜻을 억지로 쓰지 않았다. 선생님에게 직접 물을 자리를 남겨 뒀다."
+  },
+  "day4_night_truth_eunsu_wrong_1": {
+    "text": "내용을 몰랐다면 고쳐 쓴 투입 날짜를 설명할 수 없었다. 서명 아래 필적도 선생님의 것이었다."
+  },
+  "day4_night_truth_eunsu_wrong_2": {
+    "text": "졸업 승인란은 한 번도 채워지지 않았다. 나는 다시 내부 관찰 기록으로 돌아갔다."
+  },
+  "day4_night_truth_result": {
+    "text": ""
+  },
+  "day4_night_truth_complete_1": {
+    "text": "세 기록의 날짜가 한 줄로 이어지자 같은 일을 누가 숨겼고 누가 조금 바꿨는지 구분됐다."
+  },
+  "day4_night_truth_complete_2": {
+    "text": "내일 물어볼 질문은 하나로 줄지 않았다. 인물마다 다른 종이를 접어 따로 넣었다."
+  },
+  "day4_night_truth_complete_3": {
+    "text": "왼손으로 마지막 날짜를 쓰자 설화가 내 손등을 봤다가 조용히 고개를 끄덕였다."
+  },
+  "day4_night_truth_partial_1": {
+    "text": "맞물리지 않는 날짜는 빈칸으로 남겼다. 아는 척 채우면 내일 같은 질문을 할 수 없었다."
+  },
+  "day4_night_truth_partial_2": {
+    "text": "확인한 원본만 접어 넣었다. 나머지는 사진을 남기고 다시 펼칠 순서대로 쌓아 뒀다."
+  },
+  "day4_history_callback_34": {
+    "text": "세아에게 직접 들은 말을 수첩에서 찾았다. 알림을 받은 사람과 권한을 바꾼 사람이 같은지는 구분해 적었다."
+  },
+  "day4_history_callback_35": {
+    "text": "보건실 주머니에 걸렸던 열쇠고리를 그렸다. 약을 줄인 손이 어느 문을 여는지도 확인해야 했다."
+  },
+  "day4_history_callback_36": {
+    "text": "내가 적어 둔 열쇠 이야기를 보고서 옆에 놓았다. 문이 안에서 열린다는 대답도 날짜와 함께 남겼다."
+  },
+  "day4_expansion_action_8_a": {
+    "text": "종이 뒷면의 접힌 자국까지 맞추자 해가 달라도 같은 순서로 질문했다는 것이 보였다."
+  },
+  "day4_expansion_action_8_b": {
+    "text": "처음 지운 답은 달걀을 좋아한다는 문장이었다. 정답을 적은 메모보다 그쪽에 손자국이 더 많이 남았다."
+  },
+  "day4_expansion_action_9_a": {
+    "text": "입고 수량을 더하자 남은 양이 맞았다. 부족한 재고 때문에 내 몫을 줄인 것은 아니었다."
+  },
+  "day4_expansion_action_9_b": {
+    "text": "서명 아래 날짜가 먼저 바뀌어 있었다. 리인은 다른 담당자보다 하루 앞서 수치를 고쳤다."
+  }
 }

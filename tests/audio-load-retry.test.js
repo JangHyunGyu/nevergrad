@@ -55,6 +55,31 @@ function okAudioResponse() {
   };
 }
 
+test('synthesis-only archive tracks render once and reuse the buffer without a file request', async () => {
+  let calls = 0;
+  const { manager } = createAudioManager({
+    fetchImpl: async () => { throw new Error('synthesis-only music must not fetch a file'); },
+  });
+  const buffer = { synthesized: true };
+  manager._proceduralBgmKeys = new Set(['cycle07_elegy']);
+  manager._bgmSynthRegistry = { cycle07_elegy: async () => { calls += 1; return buffer; } };
+  assert.equal(await manager.loadBuffer('assets/audio/bgm/cycle07_elegy.mp3'), buffer);
+  assert.equal(await manager.loadBuffer('assets/audio/bgm/cycle07_elegy.mp3'), buffer);
+  assert.equal(calls, 1);
+});
+
+test('failed synthesis-only music reports the failure once without requesting a missing file', async () => {
+  let reports = 0;
+  const { manager } = createAudioManager({
+    fetchImpl: async () => { throw new Error('no file fallback'); },
+    reporter: () => { reports += 1; },
+  });
+  manager._proceduralBgmKeys = new Set(['complicit_cold_pulse']);
+  manager._bgmSynthRegistry = { complicit_cold_pulse: async () => { throw new Error('render failed'); } };
+  assert.equal(await manager.loadBuffer('assets/audio/bgm/complicit_cold_pulse.mp3'), null);
+  assert.equal(reports, 1);
+});
+
 test('audio loading retries one transient fetch failure before reporting', async () => {
   const calls = [];
   let reports = 0;

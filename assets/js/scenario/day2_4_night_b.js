@@ -159,9 +159,9 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_search_5"
     },
     "day2_night_search_5": {
-        character: null,
-        night: true,
-        next: "day2_night_dream_1"
+        "character": null,
+        "night": true,
+        "next": "day2_night_drawer_1"
     },
 
     // ===== 설화의 꿈 =====

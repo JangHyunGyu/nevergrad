@@ -1,318 +1,492 @@
 {
-    "day3_night_start": {
-        "text": "*回到家了。*"
-    },
-    "day3_night_start_2": {
-        "text": "*洗完澡出来，手机屏幕上亮着通知。*"
-    },
-    "day3_night_sea_msg": {
-        "text": "*世雅 ——晚上10:02*\n\n{name}，今天很开心。明天也一起去吧。"
-    },
-    "day3_night_sea_msg_2": {
-        "text": "*我没有点开。一边刷牙，一边把手机放下了。*"
-    },
-    "day3_night_sea_msg_3": {
-        "text": "*1分钟后。震动。世雅 ——晚上10:03*\n\n睡前回我一下"
-    },
-    "day3_night_sea_msg_4": {
-        "text": "*3分钟后。震动。世雅 ——晚上10:06*\n\n……"
-    },
-    "day3_night_sea_msg_5": {
-        "text": "*对话框最下面挂着一个只有三个点的气泡。*"
-    },
-    "day3_night_sea_msg_6": {
-        "text": "*2分钟后。震动。世雅 ——晚上10:08*\n\n{name}？"
-    },
-    "day3_night_sea_msg_7": {
-        "text": "*震动。世雅 ——晚上10:11*\n\n怎么不看？"
-    },
-    "day3_night_sea_msg_8": {
-        "text": "*震动。世雅 ——晚上10:15*\n\n是睡着了吧……？"
-    },
-    "day3_night_sea_msg_9": {
-        "text": "*13分钟里来了6条消息，未读气泡占满了整整一屏。最后一个气泡的输入时间，一直让我在意。*"
-    },
-    "day3_night_sea_msg_10": {
-        "text": "*我把手机翻过来扣住。可它还是在震。*"
-    },
-    "day3_night_sea_msg_11": {
-        "text": "*震动。又来了。明明不想去看，手却伸向了手机。*"
-    },
-    "day3_night_sea_msg_12": {
-        "text": "*世雅 ——晚上10:19*\n\n窗户开着的吧？通通风再睡"
-    },
-    "day3_night_sea_msg_13": {
-        "text": "*窗户？拇指停在了回复键上。*"
-    },
-    "day3_night_sea_msg_14": {
-        "text": "*拉开的窗帘外面一片漆黑，什么也看不见。*"
-    },
-    "day3_night_sea_msg_15": {
-        "text": "*对面那栋楼的玻璃窗上，映着我房间的一小块方形。*"
-    },
-    "day3_night_sea_msg_16": {
-        "text": "*我拉上窗帘，把手机放进抽屉，一直推到底。*"
-    },
-    "day3_night_sea_msg_17": {
-        "text": "*抽屉里又传来震动。*"
-    },
-    "day3_night_bleed": {
-        "text": "*我躺进被子里。关了灯的房间。路灯的光在天花板上投下一块方形。*"
-    },
-    "day3_night_bleed_2": {
-        "text": "*由娜给我看的照片总在脑子里浮现。脸是同一张，只有名牌不一样。*"
-    },
-    "day3_night_bleed_3": {
-        "text": "*名牌在变，眼睛旁边那颗小痣却始终在同一个位置。*"
-    },
-    "day3_night_bleed_4": {
-        "text": "*闭上眼，13张证件照也浮了上来。发色和名牌各不相同，眼睛却都一样。*"
-    },
-    "day3_night_bleed_no_yuna_1": {
-        "text": "*照片我没有看到。字条、墙上的字、世雅的消息，一下子全都涌上来。*"
-    },
-    "day3_night_bleed_no_yuna_2": {
-        "text": "*比起同学们的名字，我先记住的是学校楼梯的方向。*"
-    },
-    "day3_night_bleed_no_yuna_3": {
-        "text": "*我想把记得的顺序写下来，可中间总是缺了一块。*"
-    },
-    "day3_night_bleed_5": {
-        "text": "*一闭上眼睛，画面就依次连了起来。*"
-    },
-    "day3_night_bleed_6": {
-        "text": "*第一天的走廊。我的脚没看指示牌，就先拐向了自动贩卖机。*"
-    },
-    "day3_night_bleed_7": {
-        "text": "*还没看到教师办公室的门牌，手就已经指向了右边的走廊。*"
-    },
-    "day3_night_bleed_7a": {
-        "text": "*二楼楼梯平台上黄色的防滑胶带。那种颜色，从第一次看见起就觉得熟悉。*"
-    },
-    "day3_night_bleed_8": {
-        "text": "*储物柜内侧向左拐的那一笔。和我笔记本上最后一笔的角度一模一样。*"
-    },
-    "day3_night_bleed_9": {
-        "text": "*雪花的视线总是先落在我的左手，而不是右手。*"
-    },
-    "day3_night_bleed_10": {
-        "text": "*世雅的便当格子里，一次也没有出现过我讨厌的菜。*"
-    },
-    "day3_night_bleed_10a": {
-        "text": "*敏秀发来的消息，错别字一个都没有，工整得过分。他的头像至今还是灰色的默认图片。*"
-    },
-    "day3_night_bleed_11": {
-        "text": "*一想起以前学校的校门，先出来的是白色的墙。再往后，什么都没有。*"
-    },
-    "day3_night_bleed_12": {
-        "text": "*以前学校的教室里，白墙和黑板前站着一位没有脸的老师。邻座只剩下课桌的影子。*"
-    },
-    "day3_night_bleed_13": {
-        "text": "*我深吸了一口气。天花板的花纹一格一格地像在逼近。*"
-    },
-    "day3_night_bleed_14": {
-        "text": "***只有“以前的学校”这个词，却没有那个地方。***"
-    },
-    "day3_night_bleed_15": {
-        "text": "*我坐了起来。额头湿了。攥着名牌的手指用力，塑料的边角压进了肉里。*"
-    },
-    "day3_night_stat_crack": {
-        "text": "*我重新躺下，闭上眼睛。*"
-    },
-    "day3_night_stat_crack_2": {
-        "text": "*世雅的便当格子。恩秀老师手心的温度。莉仁老师递来的茶杯边缘。*"
-    },
-    "day3_night_stat_crack_3": {
-        "text": "*全都摆在我最容易伸手够到的位置上。*"
-    },
-    "day3_night_stat_crack_4": {
-        "text": "*床和书桌之间的空隙，看起来比平时窄。房间明明没有变小。*"
-    },
-    "day3_night_stat_crack_4a": {
-        "text": "*我深深吸了口气，可吸到一半就停住了。*"
-    },
-    "day3_night_stat_crack_5": {
-        "text": "*刚才，视野的一角有什么东西闪过。*"
-    },
-    "day3_night_stat_crack_6": {
-        "text": "*不。什么都没有。只是眼睛累了。*"
-    },
-    "day3_night_ft_nightmare": {
-        "text": "*我闭上眼睛。白天见过的场景混杂着浮现出来。*"
-    },
-    "day3_night_ft_nightmare_2": {
-        "text": "*我走在走廊上。看不到尽头。每迈出一步，走廊就变得更长。*"
-    },
-    "day3_night_ft_nightmare_3": {
-        "text": "*我推开教室的门。同一间教室。再推开一扇。还是同一间教室。同样的座位，同样的人，同样的微笑。所有人都在看着我。*"
-    },
-    "day3_night_ft_nightmare_4": {
-        "text": "*黑板上密密麻麻写着十二行名字，金道镇、朴宰源、李世勋……只有最下面一行是空的，那是我的位置。*"
-    },
-    "day3_night_ft_nightmare_5": {
-        "text": "*我看了看时钟。停住了。不，是秒针在倒转。*"
-    },
-    "day3_night_ft_nightmare_6": {
-        "text": "*声音从走廊两侧交替传来。我去找门把手，摸到的只有墙。*"
-    },
-    "day3_night_ft_nightmare_ghost": {
-        "text": "快逃。"
-    },
-    "day3_night_wall": {
-        "text": "*睡不着。翻来覆去了很久，才总算睡着。*"
-    },
-    "day3_night_wall_2": {
-        "text": "*凌晨三点。我起身去洗手间。头很沉。*"
-    },
-    "day3_night_wall_3": {
-        "text": "*我没开灯，在走廊里走着。赤脚踩在冰冷的地板上，在一面墙前停住了。*"
-    },
-    "day3_night_wall_4": {
-        "text": "*墙上写着字。借着路灯的光隐约能看见。是铅笔写的。是我的笔迹。*"
-    },
-    "day3_night_wall_5": {
-        "text": "***“离开这里”***"
-    },
-    "day3_night_wall_6": {
-        "text": "*按下开关的手停住了。日光灯闪了几下才亮起来，字迹变得清晰。*"
-    },
-    "day3_night_wall_7": {
-        "text": "*走近墙壁，闻到一股石墨味。是刚削过的铅笔的味道。*"
-    },
-    "day3_night_wall_8": {
-        "text": "*我一擦那些字，石墨粉就在指尖上晕开。刻痕边缘还残留着粉末。*"
-    },
-    "day3_night_wall_9": {
-        "text": "*右手食指是干净的。我摊开左手，食指和中指上沾着铅笔的痕迹。食指的第一节黑了。*"
-    },
-    "day3_night_wall_10": {
-        "text": "*这是左撇子的笔画。字从左往右，笔画渐渐压得越来越重。*"
-    },
-    "day3_night_wall_11": {
-        "text": "*我环顾房间。书桌上放着一支铅笔。我刚才没把它放在那儿。我收进抽屉里了。抽屉把手上也沾着一点石墨。*"
-    },
-    "day3_night_wall_12": {
-        "text": "*铅笔在书桌上，石墨留在抽屉把手上。只有这两者之间的动作，我毫无记忆。*"
-    },
-    "day3_night_seolhwa": {
-        "text": "*我盯着墙上的字，房间里的温度降了下来。日光灯闪了一下。*"
-    },
-    "day3_night_seolhwa_2": {
-        "text": "*房间角落里站着一个人。*"
-    },
-    "day3_night_seolhwa_3": {
-        "text": "*寒意从脚尖开始往上爬。房间里的温度变了。*"
-    },
-    "day3_night_seolhwa_4": {
-        "text": "*是在窗边见过的那个黑褐色头发的女生，穿着校服，站在我的房间里。深更半夜，门是锁着的，玄关的感应灯也没有亮。*"
-    },
-    "day3_night_seolhwa_4a": {
-        "text": "没听见大门的动静，也没听见脚步。你怎么进来的？门明明锁着。"
-    },
-    "day3_night_seolhwa_4b": {
-        "text": "*雪花看着我，眼角湿润。*\n\n现在不是问这个的时候。先听我说。"
-    },
-    "day3_night_seolhwa_5": {
-        "text": "五天。"
-    },
-    "day3_night_seolhwa_6": {
-        "text": "什么五天？"
-    },
-    "day3_night_seolhwa_6a": {
-        "text": "*发不出声音。嘴唇发干。*"
-    },
-    "day3_night_seolhwa_7": {
-        "text": "五天之内，你必须离开这里。"
-    },
-    "day3_night_seolhwa_7a": {
-        "text": "*那声音不像是从这个房间里传来的。它慢了一拍才追上来。*\n\n你的声音……听着慢了一拍。"
-    },
-    "day3_night_seolhwa_8": {
-        "text": "趁你还没变得和我一样。"
-    },
-    "day3_night_seolhwa_9": {
-        "text": "像你一样？你到底发生了什么事？"
-    },
-    "day3_night_seolhwa_10": {
-        "text": "*雪花的手伸向我的脸，指尖在碰到脸颊前一刻停住。*\n\n等等，你的手……"
-    },
-    "day3_night_seolhwa_11": {
-        "text": "*指尖在脸颊前变得模糊。窗外路灯的光径直穿过她的手背。*\n\n你的手……越来越看不清了。"
-    },
-    "day3_night_seolhwa_11a": {
-        "text": "*一眨眼，她脸颊上的湿痕就不见了。*\n\n你哭了吗？等等，别消失。"
-    },
-    "day3_night_seolhwa_12": {
-        "text": "记住。左手。"
-    },
-    "day3_night_seolhwa_13": {
-        "text": "*我眨了眨眼。雪花不见了。她站过的地方什么都没有。地板上也没有脚印。*"
-    },
-    "day3_night_seolhwa_14": {
-        "text": "*日光灯还在低低地嗡嗡作响。*"
-    },
-    "day3_night_seolhwa_15": {
-        "text": "*我走到那个位置，摸了摸地板。比周围明显更凉。仅此而已。*"
-    },
-    "day3_night_seolhwa_16": {
-        "text": "*墙上的字还在。“离开这里”。我看向左手。沾着铅笔痕迹的手指慢慢弯起，又伸直。*"
-    },
-    "day3_night_seolhwa_17": {
-        "text": "*墙上时钟的秒针声格外清晰。每跳一格，我的目光就被拉回墙上的字。*"
-    },
-    "day3_night_seolhwa_18": {
-        "text": "*在钟表的滴答声之间，今天一整天的画面毫无顺序地插了进来。*"
-    },
-    "day3_night_choice": {
-        "text": "*我的目光在墙上的字和手机屏幕之间来回移动。*",
-        "choices": [
-            "确认",
-            "先盖着"
-        ]
-    },
-    "day3_night_investigate": {
-        "text": "*一闭上眼，旧馆的门把手和十三张照片便依次浮现出来。书桌上的手机屏幕还亮着。*"
-    },
-    "day3_night_investigate_2": {
-        "text": "*我把墙上的字拍了下来。快门声之后，我的左手小小地入了镜，在屏幕下方。*"
-    },
-    "day3_night_deny": {
-        "text": "*才转学第一周。人累了，连墙上的污渍都会看成字。*"
-    },
-    "day3_night_deny_2": {
-        "text": "*我拉上被子，闭上眼睛。墙上的字还留在眼睛后面。*"
-    },
-    "day3_night_deny_3": {
-        "text": "*只有挂钟的秒针一直在走。*"
-    },
-    "day3_night_deny_4": {
-        "text": "*墙上的字依然留在那里。*"
-    },
-    "day3_night_ghost_ok": {
-        "text": "关了灯，还会看到吗？"
-    },
-    "day3_night_ghost_run": {
-        "text": "逃跑"
-    },
-    "day3_night_end": {
-        "text": "*第三天结束了。*"
-    },
-    "day3_xover_glitch_1": {
-        "text": "*眼前一闪，房间变成了校门。是樱花盛开的四月景象。*"
-    },
-    "day3_xover_glitch_2": {
-        "text": "*走廊尽头站着一个人。脸色苍白。*"
-    },
-    "day3_xover_glitch_3": {
-        "text": "你笑过。你相信过。"
-    },
-    "day3_xover_glitch_4": {
-        "text": "那时候是这样，再之前也是，每一次都是这样。"
-    },
-    "day3_xover_glitch_5": {
-        "text": "你在说什么——"
-    },
-    "day3_xover_glitch_6": {
-        "text": "*我睁开眼睛。是我的房间。……是梦吗。*"
-    }
+  "day3_night_start": {
+    "text": "*回到家了。*"
+  },
+  "day3_night_start_2": {
+    "text": "*洗完澡出来，手机屏幕上亮着通知。*"
+  },
+  "day3_night_sea_msg": {
+    "text": "*世雅 ——晚上10:02*\n\n{name}，今天很开心。明天也一起去吧。"
+  },
+  "day3_night_sea_msg_2": {
+    "text": "*我没有点开。一边刷牙，一边把手机放下了。*"
+  },
+  "day3_night_sea_msg_3": {
+    "text": "*1分钟后。震动。世雅 ——晚上10:03*\n\n睡前回我一下"
+  },
+  "day3_night_sea_msg_4": {
+    "text": "*3分钟后。震动。世雅 ——晚上10:06*\n\n……"
+  },
+  "day3_night_sea_msg_5": {
+    "text": "*对话框最下面挂着一个只有三个点的气泡。*"
+  },
+  "day3_night_sea_msg_6": {
+    "text": "*2分钟后。震动。世雅 ——晚上10:08*\n\n{name}？"
+  },
+  "day3_night_sea_msg_7": {
+    "text": "*震动。世雅 ——晚上10:11*\n\n怎么不看？"
+  },
+  "day3_night_sea_msg_8": {
+    "text": "*震动。世雅 ——晚上10:15*\n\n是睡着了吧……？"
+  },
+  "day3_night_sea_msg_9": {
+    "text": "*13分钟里来了6条消息，未读气泡占满了整整一屏。最后一个气泡的输入时间，一直让我在意。*"
+  },
+  "day3_night_sea_msg_10": {
+    "text": "*我把手机翻过来扣住。可它还是在震。*"
+  },
+  "day3_night_sea_msg_11": {
+    "text": "*震动。又来了。明明不想去看，手却伸向了手机。*"
+  },
+  "day3_night_sea_msg_12": {
+    "text": "*世雅 ——晚上10:19*\n\n窗户开着的吧？通通风再睡"
+  },
+  "day3_night_sea_msg_13": {
+    "text": "*窗户？拇指停在了回复键上。*"
+  },
+  "day3_night_sea_msg_14": {
+    "text": "*拉开的窗帘外面一片漆黑，什么也看不见。*"
+  },
+  "day3_night_sea_msg_15": {
+    "text": "*对面那栋楼的玻璃窗上，映着我房间的一小块方形。*"
+  },
+  "day3_night_sea_msg_16": {
+    "text": "*我拉上窗帘，把手机放进抽屉，一直推到底。*"
+  },
+  "day3_night_sea_msg_17": {
+    "text": "*抽屉里又传来震动。*"
+  },
+  "day3_night_bleed": {
+    "text": "*我躺进被子里。关了灯的房间。路灯的光在天花板上投下一块方形。*"
+  },
+  "day3_night_bleed_2": {
+    "text": "*由娜给我看的照片总在脑子里浮现。脸是同一张，只有名牌不一样。*"
+  },
+  "day3_night_bleed_3": {
+    "text": "*名牌在变，眼睛旁边那颗小痣却始终在同一个位置。*"
+  },
+  "day3_night_bleed_4": {
+    "text": "*闭上眼，13张证件照也浮了上来。发色和名牌各不相同，眼睛却都一样。*"
+  },
+  "day3_night_bleed_no_yuna_1": {
+    "text": "*照片我没有看到。字条、墙上的字、世雅的消息，一下子全都涌上来。*"
+  },
+  "day3_night_bleed_no_yuna_2": {
+    "text": "*比起同学们的名字，我先记住的是学校楼梯的方向。*"
+  },
+  "day3_night_bleed_no_yuna_3": {
+    "text": "*我想把记得的顺序写下来，可中间总是缺了一块。*"
+  },
+  "day3_night_bleed_5": {
+    "text": "*一闭上眼睛，画面就依次连了起来。*"
+  },
+  "day3_night_bleed_6": {
+    "text": "*第一天的走廊。我的脚没看指示牌，就先拐向了自动贩卖机。*"
+  },
+  "day3_night_bleed_7": {
+    "text": "*还没看到教师办公室的门牌，手就已经指向了右边的走廊。*"
+  },
+  "day3_night_bleed_7a": {
+    "text": "*二楼楼梯平台上黄色的防滑胶带。那种颜色，从第一次看见起就觉得熟悉。*"
+  },
+  "day3_night_bleed_8": {
+    "text": "*储物柜内侧向左拐的那一笔。和我笔记本上最后一笔的角度一模一样。*"
+  },
+  "day3_night_bleed_9": {
+    "text": "*雪花的视线总是先落在我的左手，而不是右手。*"
+  },
+  "day3_night_bleed_10": {
+    "text": "*世雅的便当格子里，一次也没有出现过我讨厌的菜。*"
+  },
+  "day3_night_bleed_10a": {
+    "text": "*敏秀发来的消息，错别字一个都没有，工整得过分。他的头像至今还是灰色的默认图片。*"
+  },
+  "day3_night_bleed_11": {
+    "text": "*一想起以前学校的校门，先出来的是白色的墙。再往后，什么都没有。*"
+  },
+  "day3_night_bleed_12": {
+    "text": "*以前学校的教室里，白墙和黑板前站着一位没有脸的老师。邻座只剩下课桌的影子。*"
+  },
+  "day3_night_bleed_13": {
+    "text": "*我深吸了一口气。天花板的花纹一格一格地像在逼近。*"
+  },
+  "day3_night_bleed_14": {
+    "text": "***只有“以前的学校”这个词，却没有那个地方。***"
+  },
+  "day3_night_bleed_15": {
+    "text": "*我坐了起来。额头湿了。攥着名牌的手指用力，塑料的边角压进了肉里。*"
+  },
+  "day3_night_stat_crack": {
+    "text": "*我重新躺下，闭上眼睛。*"
+  },
+  "day3_night_stat_crack_2": {
+    "text": "*世雅的便当格子。恩秀老师手心的温度。莉仁老师递来的茶杯边缘。*"
+  },
+  "day3_night_stat_crack_3": {
+    "text": "*全都摆在我最容易伸手够到的位置上。*"
+  },
+  "day3_night_stat_crack_4": {
+    "text": "*床和书桌之间的空隙，看起来比平时窄。房间明明没有变小。*"
+  },
+  "day3_night_stat_crack_4a": {
+    "text": "*我深深吸了口气，可吸到一半就停住了。*"
+  },
+  "day3_night_stat_crack_5": {
+    "text": "*刚才，视野的一角有什么东西闪过。*"
+  },
+  "day3_night_stat_crack_6": {
+    "text": "*不。什么都没有。只是眼睛累了。*"
+  },
+  "day3_night_ft_nightmare": {
+    "text": "*我闭上眼睛。白天见过的场景混杂着浮现出来。*"
+  },
+  "day3_night_ft_nightmare_2": {
+    "text": "*我走在走廊上。看不到尽头。每迈出一步，走廊就变得更长。*"
+  },
+  "day3_night_ft_nightmare_3": {
+    "text": "*我推开教室的门。同一间教室。再推开一扇。还是同一间教室。同样的座位，同样的人，同样的微笑。所有人都在看着我。*"
+  },
+  "day3_night_ft_nightmare_4": {
+    "text": "*黑板上密密麻麻写着十二行名字，金道镇、朴宰源、李世勋……只有最下面一行是空的，那是我的位置。*"
+  },
+  "day3_night_ft_nightmare_5": {
+    "text": "*我看了看时钟。停住了。不，是秒针在倒转。*"
+  },
+  "day3_night_ft_nightmare_6": {
+    "text": "*声音从走廊两侧交替传来。我去找门把手，摸到的只有墙。*"
+  },
+  "day3_night_ft_nightmare_ghost": {
+    "text": "快逃。"
+  },
+  "day3_night_wall": {
+    "text": "*睡不着。翻来覆去了很久，才总算睡着。*"
+  },
+  "day3_night_wall_2": {
+    "text": "*凌晨三点。我起身去洗手间。头很沉。*"
+  },
+  "day3_night_wall_3": {
+    "text": "*我没开灯，在走廊里走着。赤脚踩在冰冷的地板上，在一面墙前停住了。*"
+  },
+  "day3_night_wall_4": {
+    "text": "*墙上写着字。借着路灯的光隐约能看见。是铅笔写的。是我的笔迹。*"
+  },
+  "day3_night_wall_5": {
+    "text": "***“离开这里”***"
+  },
+  "day3_night_wall_6": {
+    "text": "*按下开关的手停住了。日光灯闪了几下才亮起来，字迹变得清晰。*"
+  },
+  "day3_night_wall_7": {
+    "text": "*走近墙壁，闻到一股石墨味。是刚削过的铅笔的味道。*"
+  },
+  "day3_night_wall_8": {
+    "text": "*我一擦那些字，石墨粉就在指尖上晕开。刻痕边缘还残留着粉末。*"
+  },
+  "day3_night_wall_9": {
+    "text": "*右手食指是干净的。我摊开左手，食指和中指上沾着铅笔的痕迹。食指的第一节黑了。*"
+  },
+  "day3_night_wall_10": {
+    "text": "*这是左撇子的笔画。字从左往右，笔画渐渐压得越来越重。*"
+  },
+  "day3_night_wall_11": {
+    "text": "*我环顾房间。书桌上放着一支铅笔。我刚才没把它放在那儿。我收进抽屉里了。抽屉把手上也沾着一点石墨。*"
+  },
+  "day3_night_wall_12": {
+    "text": "*铅笔在书桌上，石墨留在抽屉把手上。只有这两者之间的动作，我毫无记忆。*"
+  },
+  "day3_night_seolhwa": {
+    "text": "*我盯着墙上的字，房间里的温度降了下来。日光灯闪了一下。*"
+  },
+  "day3_night_seolhwa_2": {
+    "text": "*房间角落里站着一个人。*"
+  },
+  "day3_night_seolhwa_3": {
+    "text": "*寒意从脚尖开始往上爬。房间里的温度变了。*"
+  },
+  "day3_night_seolhwa_4": {
+    "text": "*是在窗边见过的那个黑褐色头发的女生，穿着校服，站在我的房间里。深更半夜，门是锁着的，玄关的感应灯也没有亮。*"
+  },
+  "day3_night_seolhwa_4a": {
+    "text": "没听见大门的动静，也没听见脚步。你怎么进来的？门明明锁着。"
+  },
+  "day3_night_seolhwa_4b": {
+    "text": "*雪花看着我，眼角湿润。*\n\n现在不是问这个的时候。先听我说。"
+  },
+  "day3_night_seolhwa_5": {
+    "text": "五天。"
+  },
+  "day3_night_seolhwa_6": {
+    "text": "什么五天？"
+  },
+  "day3_night_seolhwa_6a": {
+    "text": "*发不出声音。嘴唇发干。*"
+  },
+  "day3_night_seolhwa_7": {
+    "text": "五天之内，你必须离开这里。"
+  },
+  "day3_night_seolhwa_7a": {
+    "text": "*那声音不像是从这个房间里传来的。它慢了一拍才追上来。*\n\n你的声音……听着慢了一拍。"
+  },
+  "day3_night_seolhwa_8": {
+    "text": "趁你还没变得和我一样。"
+  },
+  "day3_night_seolhwa_9": {
+    "text": "像你一样？你到底发生了什么事？"
+  },
+  "day3_night_seolhwa_10": {
+    "text": "*雪花的手伸向我的脸，指尖在碰到脸颊前一刻停住。*\n\n等等，你的手……"
+  },
+  "day3_night_seolhwa_11": {
+    "text": "*指尖在脸颊前变得模糊。窗外路灯的光径直穿过她的手背。*\n\n你的手……越来越看不清了。"
+  },
+  "day3_night_seolhwa_11a": {
+    "text": "*一眨眼，她脸颊上的湿痕就不见了。*\n\n你哭了吗？等等，别消失。"
+  },
+  "day3_night_seolhwa_12": {
+    "text": "记住。左手。"
+  },
+  "day3_night_seolhwa_13": {
+    "text": "*我眨了眨眼。雪花不见了。她站过的地方什么都没有。地板上也没有脚印。*"
+  },
+  "day3_night_seolhwa_14": {
+    "text": "*日光灯还在低低地嗡嗡作响。*"
+  },
+  "day3_night_seolhwa_15": {
+    "text": "*我走到那个位置，摸了摸地板。比周围明显更凉。仅此而已。*"
+  },
+  "day3_night_seolhwa_16": {
+    "text": "*墙上的字还在。“离开这里”。我看向左手。沾着铅笔痕迹的手指慢慢弯起，又伸直。*"
+  },
+  "day3_night_seolhwa_17": {
+    "text": "*墙上时钟的秒针声格外清晰。每跳一格，我的目光就被拉回墙上的字。*"
+  },
+  "day3_night_seolhwa_18": {
+    "text": "*在钟表的滴答声之间，今天一整天的画面毫无顺序地插了进来。*"
+  },
+  "day3_night_choice": {
+    "text": "*我的目光在墙上的字和手机屏幕之间来回移动。*",
+    "choices": [
+      "确认",
+      "先盖着"
+    ]
+  },
+  "day3_night_investigate": {
+    "text": "*一闭上眼，旧馆的门把手和十三张照片便依次浮现出来。书桌上的手机屏幕还亮着。*"
+  },
+  "day3_night_investigate_2": {
+    "text": "*我把墙上的字拍了下来。快门声之后，我的左手小小地入了镜，在屏幕下方。*"
+  },
+  "day3_night_deny": {
+    "text": "*才转学第一周。人累了，连墙上的污渍都会看成字。*"
+  },
+  "day3_night_deny_2": {
+    "text": "*我拉上被子，闭上眼睛。墙上的字还留在眼睛后面。*"
+  },
+  "day3_night_deny_3": {
+    "text": "*只有挂钟的秒针一直在走。*"
+  },
+  "day3_night_deny_4": {
+    "text": "*墙上的字依然留在那里。*"
+  },
+  "day3_night_ghost_ok": {
+    "text": "关了灯，还会看到吗？"
+  },
+  "day3_night_ghost_run": {
+    "text": "逃跑"
+  },
+  "day3_night_end": {
+    "text": "*第三天结束了。*"
+  },
+  "day3_xover_glitch_1": {
+    "text": "*眼前一闪，房间变成了校门。是樱花盛开的四月景象。*"
+  },
+  "day3_xover_glitch_2": {
+    "text": "*走廊尽头站着一个人。脸色苍白。*"
+  },
+  "day3_xover_glitch_3": {
+    "text": "你笑过。你相信过。"
+  },
+  "day3_xover_glitch_4": {
+    "text": "那时候是这样，再之前也是，每一次都是这样。"
+  },
+  "day3_xover_glitch_5": {
+    "text": "你在说什么——"
+  },
+  "day3_xover_glitch_6": {
+    "text": "*我睁开眼睛。是我的房间。……是梦吗。*"
+  },
+  "day3_night_pressure_branch": {
+    "text": ""
+  },
+  "day3_night_pressure_seolhwa_1": {
+    "text": "手机上的通知声音突然中断了。只有屏幕上的时间保持不变。"
+  },
+  "day3_night_pressure_seolhwa_2": {
+    "text": "雪花的声音从我的左耳附近传来。我扭头一看，墙上只有我的影子。"
+  },
+  "day3_night_pressure_seolhwa_3": {
+    "text": "写下你今天听到的内容。如果你早上再听到这个声音，那就是这个。"
+  },
+  "day3_night_pressure_seolhwa_4": {
+    "text": "我打开笔记本，写下了日期。我的左手先抓住了纸张，导致页面皱巴巴的。"
+  },
+  "day3_night_pressure_seolhwa_5": {
+    "text": "以及谁先打电话的。声音相似并不代表是同一个人。"
+  },
+  "day3_night_pressure_seolhwa_6": {
+    "text": "我数了数门外的脚步声，停下来，写下了声音发生的时间，并在下面留了一行空白。"
+  },
+  "day3_night_pressure_sea_1": {
+    "text": "走廊里的脚步声停了下来，我的手机响了。屏幕上出现了世雅的名字。"
+  },
+  "day3_night_pressure_sea_2": {
+    "text": "你还醒着。你的灯亮了。"
+  },
+  "day3_night_pressure_sea_3": {
+    "text": "我没有回答，向窗外望去，看到对面的墙上亮着一盏路灯。"
+  },
+  "day3_night_pressure_sea_4": {
+    "text": "你不必开门。我只想听听你的声音。"
+  },
+  "day3_night_pressure_sea_5": {
+    "text": "门把手没有动。取而代之的是一个白色塑料袋的一角被推到门下。"
+  },
+  "day3_night_pressure_sea_6": {
+    "text": "早餐吃它。鸡蛋已完全煮熟。你不吃未煮熟的食物。"
+  },
+  "day3_night_pressure_sea_7": {
+    "text": "我记得我是否曾经说过这样的话。虽然拨打电话的时间已经到了，但无人接听。"
+  },
+  "day3_night_pressure_sea_8": {
+    "text": "现在关上窗户。风进来了。"
+  },
+  "day3_night_pressure_sea_9": {
+    "text": "当我按下结束通话按钮时，走廊里的振动停止了。门口的人正看着屏幕。"
+  },
+  "day3_night_pressure_sea_10": {
+    "text": "现在就回去吧。"
+  },
+  "day3_night_pressure_sea_11": {
+    "text": "过了一会儿，黑胶唱片划破了门槛。袋子还留在原处，只有脚步声朝楼梯方向走去。"
+  },
+  "day3_night_pressure_sea_12": {
+    "text": "我把手从窗帘的缝隙中伸出，把椅子移到了前门，没有关掉房间里的灯。"
+  },
+  "day3_night_pressure_eunsu_1": {
+    "text": "当我在屏幕上看到班主任的电话号码并按下通话按钮时，一张纸在听筒的另一侧移动。"
+  },
+  "day3_night_pressure_eunsu_2": {
+    "text": "你锁门了吗？今天无论谁来，都不要打开。"
+  },
+  "day3_night_pressure_eunsu_3": {
+    "text": "谁来了？"
+  },
+  "day3_night_pressure_eunsu_4": {
+    "text": "老师没有立即回答，只听见钢笔敲击课桌两声的声音。"
+  },
+  "day3_night_pressure_eunsu_5": {
+    "text": "在我说出我的名字之前不要打开它。识别声音还不够。"
+  },
+  "day3_night_pressure_eunsu_6": {
+    "text": "当入口对讲机打开时，屏幕上显示的是走廊天花板上的灯光，而不是人脸。"
+  },
+  "day3_night_pressure_eunsu_7": {
+    "text": "恩秀女士，你现在在我门外吗？"
+  },
+  "day3_night_pressure_eunsu_8": {
+    "text": "不要看屏幕。也关闭应用程序。"
+  },
+  "day3_night_pressure_eunsu_9": {
+    "text": "当我把手机从耳边拿开时，安全应用程序通知重叠在忙碌标志下方。地点已经确定。"
+  },
+  "day3_night_pressure_eunsu_10": {
+    "text": "老师没有叫我开门，也没有叫我挂电话。"
+  },
+  "day3_night_pressure_eunsu_11": {
+    "text": "早上课堂见。那我再问一下。"
+  },
+  "day3_night_pressure_eunsu_12": {
+    "text": "即使挂断电话后，对讲机还开着，所以我按住电源按钮关闭屏幕。"
+  },
+  "day3_night_pressure_riin_1": {
+    "text": "保健室传来一条信息，要求我写下今天的饮食。"
+  },
+  "day3_night_pressure_riin_2": {
+    "text": "我在试图写下车名时停了下来。我从杯垫下面拿出药袋，翻过来。"
+  },
+  "day3_night_pressure_riin_3": {
+    "text": "现在不要回复。先把我发的删了。"
+  },
+  "day3_night_pressure_riin_4": {
+    "text": "上面那句话消失了，聊天窗口中只剩下“取消”的字样。"
+  },
+  "day3_night_pressure_riin_5": {
+    "text": "莉仁女士，这不是你寄来的吗？"
+  },
+  "day3_night_pressure_riin_6": {
+    "text": "呼叫 莉仁。接通后，我首先询问是否已关闭窗户。"
+  },
+  "day3_night_pressure_riin_7": {
+    "text": "提高你的声音，隔壁的人就会听到你的声音。我会问问题。"
+  },
+  "day3_night_pressure_riin_8": {
+    "text": "老师依次询问每个人杯子在哪里，有没有剩下的茶。没有提到药物的名称。"
+  },
+  "day3_night_pressure_riin_9": {
+    "text": "每当莉仁沉默时，听筒之外就会听到别人的脚步声。"
+  },
+  "day3_night_pressure_riin_10": {
+    "text": "明天，只喝我给你的。即使有人说是一样的，也直接从我这里拿走吧。"
+  },
+  "day3_night_pressure_riin_11": {
+    "text": "挂断电话前，老师叫了我的名字。 I answered, but the next words never came."
+  },
+  "day3_night_pressure_riin_12": {
+    "text": "我把杯子里的水倒进水槽里，但排水网上没有留下任何茶叶。"
+  },
+  "day3_night_pressure_yuna_1": {
+    "text": "相机形状的图标下方出现了一个文件。 由娜告诉我不要打开它，而是先保存它。"
+  },
+  "day3_night_pressure_yuna_2": {
+    "text": "只需拍张照片即可。我今天不打电话。"
+  },
+  "day3_night_pressure_yuna_3": {
+    "text": "当我点击“保存”时，传输指示灯停顿了一下。第十二个数字被添加到文件名的末尾。"
+  },
+  "day3_night_pressure_yuna_4": {
+    "text": "不要重命名该文件。明天我会解释。"
+  },
+  "day3_night_pressure_yuna_5": {
+    "text": "我的手机在门外震动了一下。我手里拿着手机，声音却关了。"
+  },
+  "day3_night_pressure_yuna_6": {
+    "text": "当我走向门口时，又一条消息从由娜传来。我没有打开前门。"
+  },
+  "day3_night_pressure_yuna_7": {
+    "text": "I wrote who it was and then deleted it.门廊下出现了一个影子，然后又消失了。"
+  },
+  "day3_night_pressure_yuna_8": {
+    "text": "即使我把手机倒过来，保存标志仍然可见。我只是确认文件已到达末尾。"
+  },
+  "day3_history_callback_18": {
+    "text": "第一天未回复的消息下方还有一个已读标记。 世雅并没有首先提起那天的故事。"
+  },
+  "day3_history_callback_19": {
+    "text": "我移动手指关闭应用程序。我记得第一天屏幕又亮了，所以这次我没有关掉它。"
+  },
+  "day3_history_callback_20": {
+    "text": "我想起了白天看到的文件夹选项卡，并试图说出我名字前面的号码，但我先记下了通话时间。"
+  },
+  "day3_history_callback_21": {
+    "text": "当我把在笔记本上看到的老楼里的名牌摊开时，老师听到了纸的声音，问我在看什么。"
+  },
+  "day3_history_callback_22": {
+    "text": "当我试图提起在保健室看到的安瓿时，莉仁打断了我，让我不要在电话里提及那个名字。"
+  },
+  "day3_history_callback_23": {
+    "text": "虽然莉仁用杯子量了白天喝的水量，但莉仁问的是上次喝水是什么时候，而不是喝了多少。"
+  },
+  "day3_history_callback_24": {
+    "text": "我摸了摸口袋里放着由娜递给我的那份副本。我先记下了这个文件的名字，这样就可以放在同一个地方了。"
+  }
 }

@@ -1509,6 +1509,38 @@ _배경: `classroom`_
 *오전 수업이 끝났다. 점심시간이다.*
 ```
 
+### `day1_eunsu_11_honest`
+
+_source: `day1_1_morning.js / day1_morning.json`_
+_캐릭터: `left: sea_smile`, `center: eunsu_normal`_
+
+**나**
+```text
+음… 게임이랑 음악 듣는 거요. 둘 다 좀 합니다.
+```
+
+### `day1_eunsu_11_brief`
+
+_source: `day1_1_morning.js / day1_morning.json`_
+_캐릭터: `left: sea_smile`, `center: eunsu_normal`_
+
+**나**
+```text
+음악이요.
+```
+
+### `day1_eunsu_11_sea`
+
+_source: `day1_1_morning.js / day1_morning.json`_
+_캐릭터: `left: sea_smile`, `center: eunsu_normal`_
+
+**나**
+```text
+*먼저 세아 쪽을 봤다. 세아가 턱으로 살짝 가리키자 그제야 입을 열었다.*
+
+…음악요.
+```
+
 ## Day 1 - 점심 (`day1_2_lunch.js`)
 
 ### `day1_lunch_start`
@@ -3301,6 +3333,695 @@ _배경: `black`_
 *— 1일차 종료 —*
 ```
 
+### `day1_night_app_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+홈 화면을 넘기다가 낮에 설치한 앱을 찾았다. 파란 방패 아래에 한울 안전 앱이라고 적혀 있었다.
+```
+
+### `day1_night_app_2`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+교문에서 받은 안내문을 책상 위에 펼쳤다. 학내 연락은 이 앱으로 받는다고 했다.
+```
+
+### `day1_night_app_3`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+설정을 누르자 아직 읽지 않은 항목 세 개가 접힌 채 나왔고 옆에는 작은 체크 표시가 붙어 있었다.
+```
+
+### `day1_night_app_4`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+실시간 위치. 통학길 안전 확인용이라는 설명 밑으로 학교 주소가 보였다.
+```
+
+### `day1_night_app_5`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+두 번째는 수면 패턴 마이크 감지였다. 코골이까지 학교에 알려야 하나 싶어 설명을 더 눌렀다.
+```
+
+### `day1_night_app_6`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+기기 안에서 소음 수치를 계산한다는 문구가 길어 중간부터는 화면 밖으로 넘어갔다.
+```
+
+### `day1_night_app_7`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+심박 동기화 옆에는 연결된 기기 없음이 떠 있었다. 체육 시간에 쓰는 기능일지도 모른다.
+```
+
+### `day1_night_app_8`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+권한 스위치를 밀어 봤다. 손끝은 움직였는데 회색 동그라미는 제자리에 남았다.
+```
+
+### `day1_night_app_9`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+관리자 설정이라는 표시가 뜨자 입학 안내문에 있던 생활지도 항목을 다시 찾아봤다.
+```
+
+### `day1_night_app_10`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+기숙형 대안학교라 앱 관리도 빡빡한 모양이다. 내일 담임 선생님께 물어보면 된다.
+```
+
+### `day1_night_app_11`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+충전선을 꽂자 단자 가까이에 먼지가 한 톨 붙었다. 손톱으로 떼고 화면을 다시 켰다.
+```
+
+### `day1_night_app_12`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+앱 공지 아래에 내일 시간표가 붙어 있었다.
+```
+
+**선택지**
+1. 시간표를 사진으로 남긴다
+2. 공지 읽음 표시를 지운다
+3. 내일 학교에서 확인한다
+
+### `day1_night_app_13`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+아직 답장이 없는 민수의 대화창도 그대로였다. 학교 앱과 나란히 놓으니 폴더가 꽉 찼다.
+```
+
+### `day1_night_app_14`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+내일 시간표를 확인하려다 설정 창을 닫지 못했다. 손가락이 회색 스위치 위에서 멎었다.
+```
+
+### `day1_night_app_choice`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+내일 물어볼 수도 있다. 그래도 한 번쯤 눌러 보고 싶었다.
+```
+
+**선택지**
+1. 강제 종료를 눌러본다
+2. 민수에게 보낸 톡방을 다시 연다
+3. 화면 밝기를 줄이고 덮어둔다
+
+### `day1_night_app_kill_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+종료 버튼을 누르자 화면이 한 번 꺼졌다. 충전 표시가 살아 있는 걸 보니 전원이 나간 건 아니다.
+```
+
+### `day1_night_app_kill_2`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+위탁교육 생활지도 표준 프로토콜 동작 중. 작은 안내가 사라지자 방패 아이콘이 다시 나타났다.
+```
+
+### `day1_night_app_kill_3`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+설치할 때 안내해 준 직원이 관리자 해제는 교무실에서 한다고 했던가. 설명을 듣다가 놓쳤다.
+```
+
+### `day1_night_app_kill_4`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+강제로 끄면 출결 확인까지 안 될지도 모른다. 내일은 설치해 준 사람에게 먼저 물어봐야겠다.
+```
+
+### `day1_night_app_kill_5`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+첫날부터 지각 사유를 만들고 싶지는 않아 시간표를 캡처해 두고 설정을 닫았다.
+```
+
+### `day1_night_app_minsu_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+민수에게 보낸 사진 옆에 아직 숫자 1이 붙어 있었다. 마지막으로 보낸 건 점심 급식 사진이었다.
+```
+
+### `day1_night_app_minsu_2`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+프로필을 눌렀다. 운동장에서 찍은 얼굴 대신 회색 원이 한참 돌았다.
+```
+
+### `day1_night_app_minsu_3`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+사진 자리에 뜬 기본 실루엣은 뒤로 갔다가 다시 눌러도 같았다.
+```
+
+### `day1_night_app_minsu_4`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+산골짜기라 기지국이 약한가 보다. 와이파이 표시도 방금 한 칸 줄었다.
+```
+
+### `day1_night_app_minsu_5`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+답장을 재촉하는 문장은 쓰다 지웠다. 민수는 지금 학원에서 휴대폰을 냈을 시간이었다.
+```
+
+### `day1_night_app_minsu_6`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+잘 자라는 말만 덧붙이고 보내기 표시가 뜬 걸 확인한 뒤 대화창을 닫았다.
+```
+
+### `day1_night_app_dim_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+밝기를 내리니 화면에 내 이마가 비쳤다. 아침에 눌린 머리가 밤까지 같은 방향으로 떠 있었다.
+```
+
+### `day1_night_app_dim_2`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+내일은 조금 일찍 씻어야겠다. 충전 중 표시를 확인하고 휴대폰을 베개 옆에 엎어 뒀다.
+```
+
+### `day1_night_app_dim_3`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+방패 아이콘의 알림 숫자는 아침에 지우기로 했다. 오늘 받아 적은 이름만 해도 다섯 개였다.
+```
+
+### `day1_night_riin_msg_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `riin_smile`_
+
+**나**
+```text
+진동이 울려 휴대폰을 뒤집으니 학교 앱 메신저에 보건실 이름표가 떠 있었다.
+```
+
+### `day1_night_riin_msg_2`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `riin_smile`_
+
+**리인**
+```text
+오늘 차 향은 괜찮았어? 처음 마시는 거면 조금 낯설 수도 있어서.
+```
+
+### `day1_night_riin_msg_3`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `riin_smile`_
+
+**나**
+```text
+낮에 받은 컵은 싱크대 옆에 두었다. 씻으려고 들어 보니 바닥에 잎이 한 장 남아 있었다.
+```
+
+### `day1_night_riin_msg_4`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `riin_smile`_
+
+**리인**
+```text
+첫날에 이름 외우랴 교실 찾으랴 바빴지. 지금은 좀 누워 있어?
+```
+
+### `day1_night_riin_msg_5`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `riin_smile`_
+
+**나**
+```text
+침대에 앉았다는 말을 쓰고 이불이 구겨진 사진은 보내지 않았다. 화면을 조금 더 가까이 들었다.
+```
+
+### `day1_night_riin_msg_6`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `riin_smile`_
+
+**리인**
+```text
+잠 안 오면 내일 점심에 또 들러. 이번엔 네가 마실 것 골라도 돼.
+```
+
+### `day1_night_riin_msg_7`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `riin_smile`_
+
+**나**
+```text
+진료 기록 대신 찻잔 이모티콘이 붙었다. 낮에 선생님이 컵받침을 뒤집던 손이 생각났다.
+```
+
+### `day1_night_riin_msg_8`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `riin_smile`_
+
+**나**
+```text
+창문을 닫고 컵을 씻었다. 물기를 털고 나니 답장 칸의 커서가 다시 보였다.
+```
+
+### `day1_night_riin_msg_choice`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+선생님이 아직 접속 중이었다.
+```
+
+**선택지**
+1. 차 덕분에 좀 쉬었어요. 감사합니다
+2. 내일은 제가 고를게요
+3. 인사만 남기고 휴대폰을 내려놓는다
+
+### `day1_night_riin_msg_thanks_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**리인**
+```text
+그럼 컵은 내일 천천히 가져와. 잘 자.
+```
+
+### `day1_night_riin_msg_pick_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**리인**
+```text
+좋아. 진한 건 네가 골라도 내가 한 번 확인할 거야.
+```
+
+### `day1_night_riin_msg_sleep_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+읽음 표시가 뜨기 전에 화면이 어두워졌다. 충전선 끝의 불빛만 남았다.
+```
+
+### `day1_night_yuna_msg_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+학내 메신저에 새 연락처가 추가되고 사진부 최유나라는 이름 아래로 짧은 문장이 왔다.
+```
+
+### `day1_night_yuna_msg_2`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `yuna_normal`_
+
+**유나**
+```text
+오늘 구관 쪽은 가지 마. 밤에는 순찰 돌아.
+```
+
+### `day1_night_yuna_msg_3`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+시간을 보니 이미 침대에 누울 무렵이었다. 운동장 사진을 찍으러 가는 줄 알았나 보다.
+```
+
+### `day1_night_yuna_msg_4`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `yuna_normal`_
+
+**유나**
+```text
+그리고 사진, 잃어버리지 마. 접어서 주머니에 넣지는 말고.
+```
+
+### `day1_night_yuna_msg_5`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+책상 위 종이를 치우고 사진을 노트 사이에 끼워 모서리가 밖으로 나오지 않게 밀었다.
+```
+
+### `day1_night_yuna_msg_6`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `yuna_normal`_
+
+**유나**
+```text
+거기 가는 길 물어보면 애들이 장난으로 다른 데 알려 줘. 낮에 나한테 물어봐.
+```
+
+### `day1_night_yuna_msg_7`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+대화창의 작은 카메라 표시를 눌러 보니 소개 글에는 사진부 활동 시간만 적혀 있었다.
+```
+
+### `day1_night_yuna_msg_8`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+답장을 쓰려는데 유나가 먼저 점 하나를 보냈다가 지웠다. 나도 쓰던 첫 글자를 지웠다.
+```
+
+### `day1_night_yuna_msg_choice`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+노트에 끼워 둔 종이 모서리를 한 번 더 눌렀다.
+```
+
+**선택지**
+1. 길은 내일 너한테 물어볼게
+2. 순찰 끝나는 시간은 알아?
+3. 알려줘서 고마워. 잘 자
+
+### `day1_night_yuna_msg_ask_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**유나**
+```text
+응. 점심 먹고 사진부에 있으면 돼.
+```
+
+### `day1_night_yuna_msg_time_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**유나**
+```text
+몰라. 오늘은 그냥 자. 나도 이제 끌 거야.
+```
+
+### `day1_night_yuna_msg_bye_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+유나의 답장 대신 작은 달 이모티콘이 왔다. 노트를 덮고 스탠드를 껐다.
+```
+
+### `day1_night_eunsu_msg_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+휴대폰을 놓기 전에 학교 앱 알림이 한 번 더 떴다. 이번에는 담임 선생님의 이름이었다.
+```
+
+### `day1_night_eunsu_msg_2`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+첫날 어땠어요? 교실 찾느라 많이 걸었죠.
+```
+
+### `day1_night_eunsu_msg_3`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+운동화를 벗어 둔 쪽을 봤다. 발뒤꿈치에 접힌 양말 자국이 아직 남아 있었다.
+```
+
+### `day1_night_eunsu_msg_4`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+내일은 벚꽃이 더 많이 필 거예요. 등교할 때 입구 왼쪽도 한번 봐요.
+```
+
+### `day1_night_eunsu_msg_5`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+낮에 나무를 지나며 꽃이 덜 폈다고 말했는데 선생님이 그 말을 기억하고 있었다.
+```
+
+### `day1_night_eunsu_msg_6`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+앱 공지는 내일 읽어도 괜찮아요. 첫날부터 전부 외울 필요 없어요.
+```
+
+### `day1_night_eunsu_msg_7`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+답장을 쓰다가 지우니 입력 중 표시도 함께 꺼졌다. 선생님 쪽에서는 재촉하는 메시지가 오지 않았다.
+```
+
+### `day1_night_eunsu_msg_8`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+교과서를 가방 앞칸에 넣어 뒀으니 내일은 책 찾느라 책상을 전부 뒤지지 않아도 된다.
+```
+
+### `day1_night_eunsu_msg_choice`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+선생님께 인사를 남기고 휴대폰을 끄기로 했다.
+```
+
+**선택지**
+1. 덕분에 덜 헤맸어요. 내일 뵐게요
+2. 안전 앱 권한은 내일 여쭤봐도 돼요?
+3. 네, 선생님도 푹 쉬세요
+
+### `day1_night_eunsu_msg_kind_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**은수**
+```text
+네. 내일은 복도에서 만나도 길부터 묻지 않아도 되겠네요. 잘 자요, {name}.
+```
+
+### `day1_night_eunsu_msg_app_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**은수**
+```text
+그럼요. 안내문 같이 보면서 설명할게요. 지금은 충전만 해 둬요.
+```
+
+### `day1_night_eunsu_msg_rest_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+인사 뒤에 꽃 이모티콘이 붙었다. 알람을 맞추고 휴대폰을 뒤집었다.
+```
+
+### `day1_history_callback_1`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+보건실에서 받은 컵은 아직 책상 위에 있었다. 건강 확인 알림을 보고 컵부터 씻어 두기로 했다.
+```
+
+### `day1_history_callback_2`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+냉장고에 넣은 우유가 생각났다. 마시기 전에 알림부터 지우려다 휴대폰을 다시 내려놨다.
+```
+
+### `day1_history_callback_3`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+낮에 카메라를 들던 유나가 떠올랐다. 학교 앱 사진 권한도 나중에 물어보면 알 것 같았다.
+```
+
+### `day1_history_callback_4`
+
+_source: `day1_4_night.js / day1_night.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+아까 물었던 앱 얘기를 다시 쓰려다 지웠다. 선생님도 같은 질문에 두 번 답할 필요는 없었다.
+```
+
+### `day1_expansion_action_1_a`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+시간표를 저장해 알람 옆에 붙여 두니 아침에 앱을 다시 켜지 않아도 첫 수업을 찾을 수 있었다.
+```
+
+### `day1_expansion_action_1_b`
+
+_source: `day1_4_night.js / day1_night.json`_
+
+**나**
+```text
+공지 창을 닫자 읽음 숫자가 하나 줄었다. 아직 모르는 항목은 접어 두고 가방을 챙겼다.
+```
+
 # DAY 2 — 실제 게임 대사/지문
 
 ## Day 2 - 아침 (`day2_1_morning.js`)
@@ -4068,6 +4789,425 @@ _캐릭터: `seolhwa_quiet`_
 **설화**
 ```text
 *손가락이 책상 모서리를 세 번 두드렸다. 방송이 끊긴 박자와 같았다.*
+```
+
+### `day2_morning_pen_1`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+책상 위에 놓인 필기구 세트는 지퍼 손잡이에 아직 종이 포장이 달려 있었다.
+```
+
+### `day2_morning_pen_2`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**세아**
+```text
+어제 필통 안 가져왔다며. 오늘도 빌리면 내 볼펜이 다 네 자리로 갈 것 같아서.
+```
+
+### `day2_morning_pen_3`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+세아가 필통 뚜껑을 내 쪽으로 돌려 줬다.
+```
+
+**선택지**
+1. 검은 볼펜을 고른다
+2. 샤프를 먼저 꺼낸다
+3. 세아가 건네는 걸 받는다
+
+### `day2_morning_pen_4`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+한 자루를 들어 종이에 선을 그었다. 엄지가 닿는 고무 부분이 안쪽으로 얇게 눌려 있었다.
+```
+
+### `day2_morning_pen_5`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+세아가 쓰던 걸 섞어 넣었나. 종이 포장은 새것이라 접힌 자국도 없었다.
+```
+
+### `day2_morning_pen_6`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**세아**
+```text
+안 나오면 다른 걸 써. 그건 매장에서 시험해 본 거야.
+```
+
+### `day2_morning_pen_7`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+볼펜을 돌리니 눌린 자리가 왼손 엄지 쪽에 맞았다. 나는 평소에 오른손으로 필기한다.
+```
+
+### `day2_morning_pen_8`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+잠을 설쳐서 손이 둔한가 보다. 펜촉을 넣었다가 다시 꺼내 종이에 이름을 적었다.
+```
+
+### `day2_morning_pen_choice`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+
+**나**
+```text
+세아가 책상에 턱을 괴고 내가 쥔 펜을 봤다.
+```
+
+**선택지**
+1. 왼손으로 쥐어본다
+2. 이거 진짜 새것 맞아?
+3. 오른손으로 고쳐 쥔다
+
+### `day2_morning_pen_left_1`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+왼손으로 바꿔 쥐자 눌린 홈이 엄지에 붙었다. 힘을 주지 않아도 펜이 돌아가지 않았다.
+```
+
+### `day2_morning_pen_left_2`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+종이에 그린 짧은 가로선은 오른손으로 그린 선보다 끝이 덜 떨렸다.
+```
+
+### `day2_morning_pen_left_3`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**세아**
+```text
+왼손으로도 써? 몰랐네.
+```
+
+### `day2_morning_pen_left_4`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+대답 대신 반대 손으로 펜을 옮겼다. 어릴 때 양손으로 낙서했던 적은 있었을 것이다.
+```
+
+### `day2_morning_pen_tease_1`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+세아가 손잡이의 종이 태그를 만지다 멈췄다. 책상 밑에서 운동화 앞코가 한 번 부딪쳤다.
+```
+
+### `day2_morning_pen_tease_2`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+응. 어제 문구점에서 제일 좋은 걸로 골랐어. 영수증도 보여 줘?
+```
+
+### `day2_morning_pen_tease_3`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+농담이라고 하자 세아가 볼펜으로 내 교과서 표지를 가리키며 이름부터 쓰라고 했다.
+```
+
+### `day2_morning_pen_tease_4`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+내 이름을 쓰는 동안 세아는 태그를 떼어 휴지통에 넣었다. 종이가 반듯하게 둘로 접혔다.
+```
+
+### `day2_morning_pen_right_1`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+오른손으로 고쳐 쥐고 그립을 반 바퀴 돌리니 이번에는 손가락이 덜 미끄러졌다.
+```
+
+### `day2_morning_pen_right_2`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**세아**
+```text
+그렇게 잡으면 편해? 불편하면 문구점 같이 가서 바꾸자.
+```
+
+### `day2_morning_pen_right_3`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+볼펜은 잘 나와서 바꿀 정도는 아니라고 하고 지퍼를 닫았다.
+```
+
+### `day2_morning_pen_yuna_1`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+종 치기 전에 복도로 나가자 유나가 창가에 서서 안경 닦는 천으로 렌즈 캡을 문지르고 있었다.
+```
+
+### `day2_morning_pen_yuna_2`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+새 필통이네. 세아가 줬어?
+```
+
+### `day2_morning_pen_yuna_3`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+어떻게 알았냐고 묻자 유나가 포장 끝의 노란 스티커를 가리키며 동네 문구점 표시라고 했다.
+```
+
+### `day2_morning_pen_yuna_4`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+카메라 스트랩이 창틀 모서리에 걸렸다. 빼 주려 손을 뻗자 유나가 먼저 카메라를 감쌌다.
+```
+
+### `day2_morning_pen_yuna_5`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+미안. 오래된 거라. 저쪽 고리는 잘 빠져.
+```
+
+### `day2_morning_pen_yuna_6`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+손을 내리고 길을 비켜 주자 유나가 스트랩을 짧게 감아 손목에 걸었다.
+```
+
+### `day2_morning_pen_yuna_7`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+교실 쪽에서 의자가 한꺼번에 밀리는 소리가 났다. 유나도 천을 접어 주머니에 넣었다.
+```
+
+### `day2_morning_pen_yuna_8`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+수업 끝나고 보자. 펜은 잃어버리지 말고.
+```
+
+### `day2_morning_pen_eunsu_1`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+복도 창가에서 선생님과 마주쳤다. 출석부 위에 분필 상자를 올린 채 한 손으로 붙들고 있었다.
+```
+
+### `day2_morning_pen_eunsu_2`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+벌써 책상 정리 끝났어요? 어제는 종 치고도 가방을 붙잡고 있더니.
+```
+
+### `day2_morning_pen_eunsu_3`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+분필 상자가 기울어 손으로 받치자 선생님이 출석부를 옆구리에 끼고 상자를 다시 잡았다.
+```
+
+### `day2_morning_pen_eunsu_4`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+고마워요. 왼손도 잘 쓰네요.
+```
+
+### `day2_morning_pen_eunsu_5`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+상자를 받친 손을 봤다. 어쩌다 가까운 손이 먼저 나간 것뿐이었다.
+```
+
+### `day2_morning_pen_eunsu_6`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+새 펜이면 이름 붙여 둬요. 같은 걸 쓰는 학생이 많아서 헷갈려요.
+```
+
+### `day2_morning_pen_eunsu_7`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+볼펜 끝에 붙일 종이를 얻어 이름을 다 쓰자 선생님이 가위까지 건넸다.
+```
+
+### `day2_morning_pen_eunsu_8`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_배경: `corridor` / 캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+교실로 돌아가 세아에게 가위를 돌려줬다. 방송이 시작돼 둘 다 고개를 들었다.
+```
+
+### `day2_history_callback_5`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+어젯밤 확인했던 민수의 대화창을 다시 열었다. 숫자 1은 아직 그대로여서 화면을 바로 껐다.
+```
+
+### `day2_history_callback_6`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+노트에 끼워 둔 사진은 접히지 않았다고 말했다. 유나는 그 말을 듣고 카메라 끈을 조금 느슨하게 쥐었다.
+```
+
+### `day2_history_callback_7`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+앱이 다시 켜졌다는 말을 꺼내자 선생님이 설치 안내문을 가져오라고 했다. 내일로 미루지는 않았다.
+```
+
+### `day2_expansion_action_2_a`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+검은 볼펜으로 시험 삼아 선을 그었다. 잉크가 끊기지 않자 세아가 빈칸에 자기 이름도 써 봤다.
+```
+
+### `day2_expansion_action_2_b`
+
+_source: `day2_1_morning.js / day2_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+샤프심을 두 번 눌렀다. 세아가 너무 길게 빼면 부러진다며 빈 종이를 책상에 놓아 줬다.
 ```
 
 ## Day 2 - 점심 (`day2_2_lunch.js`)
@@ -6268,6 +7408,349 @@ _캐릭터: `sea_normal`_
 근데 토요일 약속, 아직 그대로지?
 ```
 
+### `day2_night_drawer_1`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+잠옷을 꺼내려다 서랍이 걸렸다. 아래쪽에서 말려 올라온 천이 레일을 막고 있었다.
+```
+
+### `day2_night_drawer_2`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+손을 넣어 빼내니 접힌 와이셔츠였고 단추 색은 오늘 입은 것과 같았다.
+```
+
+### `day2_night_drawer_3`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+목깃을 뒤집었다. 상표가 있어야 할 자리에 잘린 실 두 가닥만 남아 있었다.
+```
+
+### `day2_night_drawer_4`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+세탁소에서 이름표를 떼다가 같이 잘랐나. 셔츠를 맡긴 기억은 아직 흐릿했다.
+```
+
+### `day2_night_drawer_5`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+조금 딱딱한 주머니를 손가락으로 눌렀더니 종이 껍질 같은 것이 바스러졌다.
+```
+
+### `day2_night_drawer_6`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+서랍 위에 셔츠를 펴고 주머니 안감을 뒤집자 세탁된 종이 조각이 실밥에 붙어 있었다.
+```
+
+### `day2_night_drawer_7`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+떼는 동안 모서리 하나가 떨어졌다. 남은 부분에는 잉크가 푸른 얼룩처럼 번져 있었다.
+```
+
+### `day2_night_drawer_8`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+숫자 7처럼 보이는 선과 옥 자의 윗부분이 남았다. 뒤집어도 나머지는 읽히지 않았다.
+```
+
+### `day2_night_drawer_9`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+이사할 때 포장지 조각이 들어갔을 수도 있다. 종이를 책상 위에 놓고 스탠드를 당겼다.
+```
+
+### `day2_night_drawer_choice`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+젖었다 마른 종이가 손톱 끝에 얇게 붙었다.
+```
+
+**선택지**
+1. 스탠드 불빛에 비춰 본다
+2. 다른 사람 세탁물이 섞였다고 생각한다
+3. 종이를 쓰레기통에 버린다
+
+### `day2_night_drawer_light_1`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+종이를 전등 가까이 들었다. 얇아진 곳부터 빛이 새어 검은 선의 굵기가 달라 보였다.
+```
+
+### `day2_night_drawer_light_2`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+7 옆에 점 두 개가 남아 있었다. 누군가 페이지 번호를 적은 걸지도 모른다.
+```
+
+### `day2_night_drawer_light_3`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+옥처럼 보였던 글자는 손가락으로 가리자 다른 모양이 됐다. 읽을수록 확신이 줄었다.
+```
+
+### `day2_night_drawer_light_4`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+휴대폰으로 한 장 찍어 확대하니 종이의 섬유가 글씨보다 선명하게 나왔다.
+```
+
+### `day2_night_drawer_light_5`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+사진에 오늘 날짜를 붙이고 조각은 노트 뒷주머니에 넣었다. 지금은 버리지 않기로 했다.
+```
+
+### `day2_night_drawer_light_6`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+책상 아래로 굴러간 작은 조각도 주워 양쪽을 맞췄지만 획 하나가 비어 있었다.
+```
+
+### `day2_night_drawer_light_7`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+셔츠를 옷걸이에 걸며 왼쪽 소매를 폈다. 손목 안쪽에 연필로 그은 듯한 선이 있었다.
+```
+
+### `day2_night_drawer_light_8`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+세제를 덜 헹궜나 싶어 손끝에 물을 묻혀 문질러도 얼룩은 그대로였다.
+```
+
+### `day2_night_drawer_light_9`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+아침에 밝은 데서 다시 보기로 했다. 책상 모서리에 사진 찍은 휴대폰을 내려놨다.
+```
+
+### `day2_night_drawer_laundry_1`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+셔츠를 펴서 내가 입는 것 위에 포개니 어깨선은 맞는데 소매가 손가락 하나만큼 짧았다.
+```
+
+### `day2_night_drawer_laundry_2`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+이사할 때 짐이 섞였나 보다. 내 옷도 상자를 열 때마다 다른 데서 나왔다.
+```
+
+### `day2_night_drawer_laundry_3`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+종이 조각은 별도 봉투에 넣었다. 세탁소를 찾으면 보여 주면 될 것이다.
+```
+
+### `day2_night_drawer_laundry_4`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+봉투 겉면에 셔츠라고 쓰고 날짜도 쓰려다 오늘이 며칠인지 휴대폰을 켰다.
+```
+
+### `day2_night_drawer_laundry_5`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+시간표 아래 날짜를 확인하고 덧붙였다. 밤이 되니 평범한 일에도 손이 두 번 갔다.
+```
+
+### `day2_night_drawer_laundry_6`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+아침에 선생님께 근처 세탁소 위치부터 물어보자. 셔츠를 접어 옷장 맨 위에 올렸다.
+```
+
+### `day2_night_drawer_bin_1`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+종이를 휴지통에 털었다. 손가락에 붙은 조각은 젖은 수건으로 닦아 냈다.
+```
+
+### `day2_night_drawer_bin_2`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+휴지통 바닥에서 숫자 같은 획이 잠깐 보였다가 새 휴지를 덮자 바로 가려졌다.
+```
+
+### `day2_night_drawer_bin_3`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+옷은 멀쩡해서 버리기 아까웠다. 잘린 상표 부분만 안으로 접어 옷걸이에 걸었다.
+```
+
+### `day2_night_drawer_bin_4`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+세아가 준 여벌 단추도 같은 칸에 넣었다. 내일 아침엔 찾느라 서랍을 뒤지지 않아도 된다.
+```
+
+### `day2_night_drawer_join_1`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+서랍 앞에 쌓인 물건을 치워야 침대를 펼 수 있었다.
+```
+
+**선택지**
+1. 서류부터 노트에 끼운다
+2. 셔츠를 먼저 옷걸이에 건다
+3. 불을 켜 둔 채 정리한다
+
+### `day2_night_drawer_join_2`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+스탠드를 끄니 옷걸이의 흰 셔츠만 창빛을 받았다. 커튼을 조금 더 당겼다.
+```
+
+### `day2_night_drawer_join_3`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+알람은 제대로 맞춰져 있었다. 확인하고도 휴대폰을 한 번 더 켠 뒤 충전선을 꽂았다.
+```
+
+### `day2_night_drawer_join_4`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+내일은 커피를 덜 마셔야겠다. 이불 끝을 발밑에 넣고 옆으로 누웠다.
+```
+
+### `day2_history_callback_8`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+아침에 잡아 본 펜 그립이 생각났다. 셔츠 소매도 왼쪽부터 뒤집었다가 괜히 순서를 바꿨다.
+```
+
+### `day2_history_callback_9`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+읽지 않은 세아의 메시지가 남아 있었다. 지금 답하면 잠들기 늦어질 것 같아 알림만 접었다.
+```
+
+### `day2_expansion_action_3_a`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+노트가 벌어지지 않게 고무줄을 감고 종이 끝이 밖으로 나오지 않았는지 확인한 뒤 서랍을 밀었다.
+```
+
+### `day2_expansion_action_3_b`
+
+_source: `day2_4_night.js / day2_night.json`_
+
+**나**
+```text
+셔츠 어깨선을 맞추고 옷걸이를 돌렸다. 잘린 상표 부분이 보이지 않자 조금 덜 신경이 쓰였다.
+```
+
 # DAY 3 — 실제 게임 대사/지문
 
 ## Day 3 - 아침 (`day3_1_morning.js`)
@@ -6885,6 +8368,655 @@ _source: `day3_1_morning.js / day3_morning.json`_
 **나**
 ```text
 *수업이 시작된다. 교과서 첫 줄을 세 번 읽었는데도 같은 자리로 눈이 돌아온다.*
+```
+
+### `day3_morning_photo_back_detail_1`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+종이를 뒤집자 손가락에 연필 가루가 묻었다. 사진 뒷면에는 짧은 메모가 눌러 쓰여 있었다.
+```
+
+### `day3_morning_photo_back_detail_2`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+#11 — 폐기. 숫자 밑줄이 끝에서 위로 튀었다. 내가 노트에 날짜를 쓸 때도 같은 자리가 튀었다.
+```
+
+### `day3_morning_photo_back_detail_3`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+수첩을 꺼내 어제 적은 시간표 옆에 사진을 댔다. 숫자 1의 머리를 꺾는 각도까지 비슷했다.
+```
+
+### `day3_morning_photo_back_detail_4`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+내가 썼다면 언제였을까. 기억을 찾는 동안 복도 창문이 닫히는 소리가 났다.
+```
+
+### `day3_morning_photo_back_detail_5`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+연필 끝으로 그어진 자리를 손톱으로 훑었다. 종이가 얇아 획이 앞면까지 눌려 있었다.
+```
+
+### `day3_morning_photo_back_detail_6`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+연필 메모를 확인할 방법을 골랐다.
+```
+
+**선택지**
+1. 원본을 그대로 보관한다
+2. 메모를 따로 베껴 쓴다
+3. 사진만 찍고 손을 뗀다
+
+### `day3_morning_photo_back_detail_7`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+메모를 휴대폰으로 찍고 원본을 수첩에 끼웠다. 이번에는 모서리가 접히지 않게 자를 대었다.
+```
+
+### `day3_morning_photo_back_detail_8`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+고개를 들자 복도 끝 카메라의 붉은 불빛이 보였다. 렌즈 아래 작은 점 하나가 옮겨 갔다.
+```
+
+### `day3_morning_photo_back_detail_9`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+사물함 문을 반쯤 닫자 검은 반원 안에 내 문짝이 비쳤다.
+```
+
+### `day3_morning_photo_look_detail_1`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `closeup_cctv_led`_
+
+**나**
+```text
+사진을 창빛에 비추자 잘린 모서리의 흰 섬유 사이로 다른 종이의 풀이 남아 있었다.
+```
+
+### `day3_morning_photo_look_detail_2`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `closeup_cctv_led`_
+
+**나**
+```text
+누군가 앨범에서 떼어 낸 사진이었다. 뒷면 한가운데만 유난히 매끈했다.
+```
+
+### `day3_morning_photo_look_detail_3`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `closeup_cctv_led`_
+
+**나**
+```text
+얼굴이 잘린 자리 옆으로 교실 게시판이 보였다. 지금 교실의 시간표와 칸 수가 같았다.
+```
+
+### `day3_morning_photo_look_detail_4`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `closeup_cctv_led`_
+
+**나**
+```text
+휴대폰 속 어제 교실 사진을 옆에 띄우니 게시판 모서리의 갈색 얼룩까지 겹쳤다.
+```
+
+### `day3_morning_photo_look_detail_5`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `closeup_cctv_led`_
+
+**나**
+```text
+사진을 찍은 날짜는 없었다. 시계도 사람이 서 있는 부분에 가려져 있었다.
+```
+
+### `day3_morning_photo_look_detail_6`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `closeup_cctv_led`_
+
+**나**
+```text
+사진 모서리가 젖기 전에 손을 바꿔 잡았다.
+```
+
+**선택지**
+1. 창가에서 다시 본다
+2. 주머니에 넣고 교실로 간다
+3. 화면 밝기만 낮춘다
+
+### `day3_morning_photo_look_detail_7`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `closeup_cctv_led`_
+
+**나**
+```text
+복도 끝에서 짧은 기계음이 났다. 카메라 렌즈가 아래로 아주 조금 기울었다.
+```
+
+### `day3_morning_photo_look_detail_8`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `closeup_cctv_led`_
+
+**나**
+```text
+내 사물함 바로 위에서 움직임이 멎었다. 렌즈 둘레의 붉은 불은 계속 켜져 있었다.
+```
+
+### `day3_morning_photo_look_detail_9`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `closeup_cctv_led`_
+
+**나**
+```text
+사진을 안주머니에 넣고 문을 닫았다. 열쇠가 걸려 한 번 더 돌려야 했다.
+```
+
+### `day3_morning_class_silence_1`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `classroom` / 캐릭터: `sea_stare`_
+
+**나**
+```text
+문을 밀었을 때 교실 안에서 말소리가 끊기고 책장을 넘기던 손도 잠깐 멎었다.
+```
+
+### `day3_morning_class_silence_2`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `classroom` / 캐릭터: `sea_stare`_
+
+**나**
+```text
+스무 명쯤 되는 애들이 교탁을 보고 있었다. 내가 들어온 문 쪽으로는 아무도 고개를 돌리지 않았다.
+```
+
+### `day3_morning_class_silence_3`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `classroom` / 캐릭터: `sea_stare`_
+
+**나**
+```text
+복도에서는 다른 반 웃음소리가 들렸다. 우리 반 창가의 선풍기만 낮게 돌아갔다.
+```
+
+### `day3_morning_class_silence_4`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `classroom` / 캐릭터: `sea_stare`_
+
+**나**
+```text
+문을 닫자 의자 다리 하나가 바닥을 긁었다. 그제야 세아가 내 쪽으로 웃었다.
+```
+
+### `day3_morning_class_silence_5`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `classroom` / 캐릭터: `sea_stare`_
+
+**세아**
+```text
+왔네. 네 책은 내가 꺼내 놨어.
+```
+
+### `day3_morning_class_silence_6`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `classroom` / 캐릭터: `sea_stare`_
+
+**나**
+```text
+책상 오른쪽 끝에 필통이 놓여 있었다. 아침에 가방 앞칸에 넣은 건 분명 내 손이었다.
+```
+
+### `day3_morning_class_silence_7`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `classroom` / 캐릭터: `sea_stare`_
+
+**나**
+```text
+옆자리 남학생은 교과서 귀퉁이의 같은 자리를 접었다 펴고 다시 접었다.
+```
+
+### `day3_morning_class_silence_8`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_배경: `classroom` / 캐릭터: `sea_stare`_
+
+**나**
+```text
+빈 의자에 가방을 내려놨다. 손잡이를 놓아도 교실 안에서는 말이 이어지지 않았다.
+```
+
+### `day3_morning_class_silence_choice`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+필통과 내 가방 사이에 손을 올렸다.
+```
+
+**선택지**
+1. 옆자리 학생에게 방금 무슨 얘기 했냐고 묻는다
+2. 세아의 눈을 똑바로 마주 본다
+3. 모른 척 교과서를 편다
+
+### `day3_morning_class_ask_1`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+남학생은 내 얼굴 대신 명찰을 봤다. 접힌 교과서 귀퉁이는 손가락 아래로 숨겼다.
+```
+
+### `day3_morning_class_ask_2`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**미상**
+```text
+아무 얘기도 안 했어. 수업 준비 중이었어.
+```
+
+### `day3_morning_class_ask_3`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+누가 먼저 왔냐고 물었다. 남학생은 교과서를 한 장 넘겼다가 도로 돌렸다.
+```
+
+### `day3_morning_class_ask_4`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**미상**
+```text
+아무 얘기도 안 했어. 수업 준비 중이었어.
+```
+
+### `day3_morning_class_ask_5`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+이번에는 이름을 부르자 남학생의 시선이 내 명찰에서 입술로 잠깐 올라왔다.
+```
+
+### `day3_morning_class_ask_6`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**미상**
+```text
+이름은 출석 부를 때 말하면 돼.
+```
+
+### `day3_morning_class_ask_7`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+세아가 책상을 한 번 두드렸다. 남학생은 그 소리에 맞춰 연필을 집었다.
+```
+
+### `day3_morning_class_ask_8`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**세아**
+```text
+쟤 아침에 원래 말 없어. 너부터 책 펴. 오늘 검사한대.
+```
+
+### `day3_morning_class_ask_9`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+책상 밑에서 수첩을 꺼내 사진을 끼운 페이지는 펴지 않고 손바닥으로 눌러 뒀다.
+```
+
+### `day3_morning_class_sea_1`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+세아의 웃음이 잠깐 지워졌다. 내 손과 필통을 번갈아 보고 다시 입꼬리를 올렸다.
+```
+
+### `day3_morning_class_sea_2`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+왜. 얼굴에 뭐 묻었어?
+```
+
+### `day3_morning_class_sea_3`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+필통을 가리켰다. 세아가 대답하기 전에 필통을 오른쪽으로 조금 옮겼다.
+```
+
+### `day3_morning_class_sea_4`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+책상 모서리에서 손가락 두 마디 정도 떨어진 자리였다. 유난히 반듯하게 놓았다.
+```
+
+### `day3_morning_class_sea_5`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+여기 두면 팔 안 걸려. 너 어제도 떨어뜨릴 뻔했잖아.
+```
+
+### `day3_morning_class_sea_6`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+나는 어제 필통을 가져오지 않았다. 말하려는 사이 세아가 가방 지퍼를 닫아 줬다.
+```
+
+### `day3_morning_class_sea_7`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**세아**
+```text
+빌려 준 펜 얘기야. 기억 안 나?
+```
+
+### `day3_morning_class_sea_8`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+그 펜은 분명 책상에 있었을 것이다. 그래도 내 가방 손잡이에서 손이 떨어지지 않았다.
+```
+
+### `day3_morning_class_sea_9`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+세아가 먼저 교탁 쪽으로 고개를 돌렸다. 나는 그 뒤통수를 보고 나서야 자리에 앉았다.
+```
+
+### `day3_morning_class_book_1`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+교과서를 펴자 접힌 페이지가 바로 나왔다. 내가 찾던 단원보다 두 장 앞이었다.
+```
+
+### `day3_morning_class_book_2`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+책 모서리를 눌러 펴는 동안 옆자리에서 연필 소리가 났다. 그 소리를 따라 나도 날짜를 썼다.
+```
+
+### `day3_morning_class_book_3`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_normal`_
+
+**세아**
+```text
+페이지 틀렸어. 다음 단원이야.
+```
+
+### `day3_morning_class_book_4`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+말없이 두 장을 넘기자 세아도 내가 맞는 곳을 편 뒤에야 자기 책을 펼쳤다.
+```
+
+### `day3_morning_class_book_5`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+복도 문 쪽에서 작은 웃음이 들려 돌아보자 뒷자리 학생이 빈 칠판을 보고 있었다.
+```
+
+### `day3_morning_class_book_6`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+노트 맨 위에 적은 날짜를 지우고 다시 썼다. 같은 숫자를 두 번 썼는데 모양이 달랐다.
+```
+
+### `day3_morning_class_book_7`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+분필 받침에 흰 가루가 떨어졌다. 문밖에서 선생님의 구두 소리가 가까워졌다.
+```
+
+### `day3_morning_class_resume_1`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `eunsu_normal`_
+
+**나**
+```text
+문이 열리자 아이들이 인사를 했다. 소리의 첫 음절이 어긋나지 않았다.
+```
+
+### `day3_morning_class_resume_2`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `eunsu_normal`_
+
+**나**
+```text
+선생님이 출석부를 펴고 책상 사이를 훑었다. 내 자리를 지나칠 때 시선이 조금 낮아졌다.
+```
+
+### `day3_morning_class_resume_3`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `eunsu_normal`_
+
+**은수**
+```text
+수업 시작할게요. 오늘은 적어 둔 걸 지우지 말고 그대로 두세요.
+```
+
+### `day3_morning_class_resume_4`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `eunsu_normal`_
+
+**나**
+```text
+지우개를 노트 위에 올려놨다. 방금 고친 날짜는 연필 자국이 겹쳐 다른 숫자처럼 보였다.
+```
+
+### `day3_history_callback_10`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+노트 뒤의 젖었던 종이를 꺼내 번진 획과 사진의 메모를 같은 페이지에 놓고 찍어 뒀다.
+```
+
+### `day3_history_callback_11`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+첫날 받은 사진을 옆에 놓았다. 게시판 높이는 같은데 사진을 찍은 사람의 위치만 달랐다.
+```
+
+### `day3_history_callback_12`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+첫날에도 세아에게 같은 식으로 물은 적이 있었지만 이번에는 웃어서 넘기지 않고 답을 기다렸다.
+```
+
+### `day3_history_callback_13`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_smile`_
+
+**나**
+```text
+왼손으로 잡았던 펜이 필통 안에서 굴렀다. 세아는 그 소리가 멎을 때까지 필통을 손으로 눌렀다.
+```
+
+### `day3_history_callback_14`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+_캐릭터: `sea_normal`_
+
+**나**
+```text
+서랍에 둔 종이 사진을 보려다 멈췄다. 교과서 뒤에 휴대폰을 숨겨도 화면 빛이 손등에 남았다.
+```
+
+### `day3_expansion_action_4_a`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+원본에는 지우개를 대지 않았다. 연필 가루가 묻은 손가락도 사진과 떨어뜨린 뒤 노트를 덮었다.
+```
+
+### `day3_expansion_action_4_b`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+똑같이 따라 쓰려 했는데 밑줄 끝이 다른 쪽으로 튀었다. 억지로 고치지 않고 두 글씨를 나란히 남겼다.
+```
+
+### `day3_expansion_action_5_a`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+창틀의 그림자가 사진 위로 지나갔다. 빛을 바꾸자 인물 뒤 게시판의 압정 하나가 새로 보였다.
+```
+
+### `day3_expansion_action_5_b`
+
+_source: `day3_1_morning.js / day3_morning.json`_
+
+**나**
+```text
+주머니 안감을 펴서 사진을 끼우고 걷는 동안 접히지 않도록 가방끈을 반대 어깨로 옮겼다.
 ```
 
 ## Day 3 - 점심 (`day3_2_lunch.js`)
@@ -9102,6 +11234,636 @@ _배경: `school_gate`_
 *학교를 나선다. 석양 아래 운동장이 빨갛다. 손바닥 안의 SD카드 모서리가 계속 살에 걸린다.*
 ```
 
+### `day3_after_riin_closeness_high_1`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+리인이 컵을 내 쪽으로 밀다가 멈췄다. 쟁반 가장자리에 닿은 손가락이 하얗게 눌렸다.
+```
+
+### `day3_after_riin_closeness_high_2`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+오늘 건 조금만 마셔. 남겨도 돼.
+```
+
+### `day3_after_riin_closeness_high_3`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+평소보다 연한 차였다. 컵 바닥이 비칠 정도로 맑았고 받침에는 물방울만 남았다.
+```
+
+### `day3_after_riin_closeness_high_4`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+남기면 기록에 적는 거 아니에요?
+```
+
+### `day3_after_riin_closeness_high_5`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+적는 건 내 일이야. 네가 거기까지 걱정할 필요 없어.
+```
+
+### `day3_after_riin_closeness_high_6`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+선생님이 기록장을 뒤집어 놓았다. 방금 펼친 면에 잉크가 덜 마른 줄이 있었다.
+```
+
+### `day3_after_riin_closeness_high_7`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+낮에 손 떠는 건 어때. 아침보다 나아졌어?
+```
+
+### `day3_after_riin_closeness_high_8`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+책상 위에 손을 올렸다. 리인이 손끝에 닿기 전에 내 쪽을 봤다.
+```
+
+### `day3_after_riin_closeness_high_9`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+봐도 돼? 싫으면 말로만 해도 되고.
+```
+
+### `day3_after_riin_closeness_high_10`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+손을 내밀자 손등으로 짧게 온도를 쟀다. 그 뒤에는 맥박도 재지 않았다.
+```
+
+### `day3_after_riin_closeness_high_11`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+오늘 점심은 먹었지. 밥 먹은 사람한테 차를 너무 진하게 줘도 안 돼.
+```
+
+### `day3_after_riin_closeness_high_12`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+말이 앞뒤로 조금 어긋났다. 내가 묻기 전에 선생님은 찻잎 통의 뚜껑을 닫았다.
+```
+
+### `day3_after_riin_closeness_high_13`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+문 밖으로 카트가 지나갔다. 리인이 바퀴 소리가 멎을 때까지 아무 말도 하지 않았다.
+```
+
+### `day3_after_riin_closeness_high_14`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+여기 와서 차 마셨다는 말은 해도 돼. 내가 남기라고 했다는 말은 하지 말고.
+```
+
+### `day3_after_riin_closeness_high_15`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+차를 내려놓자 리인이 내 잔을 먼저 치웠다. 아직 반이나 남은 잔이었다.
+```
+
+### `day3_after_riin_closeness_low_1`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+리인이 종이컵을 꺼내 테이블에 놓고 유리컵은 손이 닿지 않는 쪽으로 치웠다.
+```
+
+### `day3_after_riin_closeness_low_2`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+불편한 데 있으면 담임 선생님한테 먼저 말해. 전달받고 볼게.
+```
+
+### `day3_after_riin_closeness_low_3`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+기록장에는 이름을 쓰는 칸이 따로 있었다. 펜을 들자 리인이 날짜부터 적으라고 했다.
+```
+
+### `day3_after_riin_closeness_low_4`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+이름을 다 쓰고 펜을 내려놨다. 선생님은 종이를 반으로 접어 서랍에 넣었다.
+```
+
+### `day3_after_riin_closeness_low_5`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+오늘은 간단히 확인만 할게. 늦게까지 있으면 수업 빠진 걸로 돼.
+```
+
+### `day3_after_sea_closeness_high_1`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+세아가 가방끈을 잡고 있던 손을 놓더니 손바닥에 남은 자국을 치마에 문질렀다.
+```
+
+### `day3_after_sea_closeness_high_2`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+내가 너한테 너무 많이 물어봤어?
+```
+
+### `day3_after_sea_closeness_high_3`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+취미를 묻던 말들을 떠올렸다. 좋아하는 반찬, 자는 시간, 어릴 때 살던 동네였다.
+```
+
+### `day3_after_sea_closeness_high_4`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+안 물어봐도 아는 것처럼 말할 때가 있어.
+```
+
+### `day3_after_sea_closeness_high_5`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+세아는 웃으려다 고개를 숙였다. 손톱으로 가방 지퍼의 칠이 벗겨진 곳을 긁었다.
+```
+
+### `day3_after_sea_closeness_high_6`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+틀리는 건 싫어서. 네가 싫어하는 걸 또 주기는 싫잖아.
+```
+
+### `day3_after_sea_closeness_high_7`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+또?
+```
+
+### `day3_after_sea_closeness_high_8`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+다른 애들한테도 그렇다고. 네가 처음은 아니니까.
+```
+
+### `day3_after_sea_closeness_high_9`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+복도 게시판의 압정이 하나 빠져 있었다. 세아가 종이를 받쳐 들고 다른 압정을 옮겼다.
+```
+
+### `day3_after_sea_closeness_high_10`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+네가 뭘 잊어버려도 내가 적어 두면 되잖아. 그건 잘하니까.
+```
+
+### `day3_after_sea_closeness_high_11`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+내가 적으면 되지.
+```
+
+### `day3_after_sea_closeness_high_12`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+세아가 쥐고 있던 압정을 내려놓자 종이 아래쪽이 다시 말려 올라갔다.
+```
+
+### `day3_after_sea_closeness_high_13`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+그럼 나한테도 보여 줘. 혼자 적고 혼자 없어지지 말고.
+```
+
+### `day3_after_sea_closeness_high_14`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+발소리가 가까워지자 세아가 내 가방을 들었다. 손잡이를 건네는 손이 아까보다 느렸다.
+```
+
+### `day3_after_sea_closeness_high_15`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+오늘은 네가 고르면 돼. 내가 맞히려고 안 할게.
+```
+
+### `day3_after_sea_closeness_low_1`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+세아는 가방을 자기 쪽으로 당겼다. 내 책이 그 옆에 놓여 있었지만 건네주지는 않았다.
+```
+
+### `day3_after_sea_closeness_low_2`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+어디 갈 건지만 말해. 선생님이 물어보면 나도 대답해야 해.
+```
+
+### `day3_after_sea_closeness_low_3`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+내가 직접 말씀드릴게.
+```
+
+### `day3_after_sea_closeness_low_4`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+응. 그러면 내가 모른다고 해도 섭섭해하지 마.
+```
+
+### `day3_after_sea_closeness_low_5`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+책을 집자 세아가 손을 비켰다. 복도 반대쪽을 먼저 보는 동안 나도 한 걸음 떨어졌다.
+```
+
+### `day3_after_eunsu_closeness_high_1`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+선생님이 출석부 모서리를 맞추다가 나를 봤다. 이번에는 서류를 덮지 않았다.
+```
+
+### `day3_after_eunsu_closeness_high_2`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+복도에서 기다렸어요? 문 열려 있으면 그냥 들어와도 되는데.
+```
+
+### `day3_after_eunsu_closeness_high_3`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+계속 쓰고 계셔서요.
+```
+
+### `day3_after_eunsu_closeness_high_4`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+빈 의자를 내 쪽으로 돌려 주고 의자 등받이에 걸린 카디건을 자기 무릎으로 가져왔다.
+```
+
+### `day3_after_eunsu_closeness_high_5`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+잠깐 앉아요. 어디 아픈 데는 없죠?
+```
+
+### `day3_after_eunsu_closeness_high_6`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+없다고 하자 선생님은 펜 뚜껑을 닫았다. 확인 질문은 거기서 끝났다.
+```
+
+### `day3_after_eunsu_closeness_high_7`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+이번에는 학기 끝날 때까지 내 반에 있었으면 좋겠어요.
+```
+
+### `day3_after_eunsu_closeness_high_8`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+전학 온 지 사흘째라고 말하자 선생님이 눈을 감았다 떴다. 카디건 단추를 한 번 돌렸다.
+```
+
+### `day3_after_eunsu_closeness_high_9`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+학교 옮기는 학생들을 많이 봐서 그래요. 보내는 쪽은 늘 준비가 안 돼요.
+```
+
+### `day3_after_eunsu_closeness_high_10`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+아프면 다른 반으로 가요?
+```
+
+### `day3_after_eunsu_closeness_high_11`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+그런 말은 누가 했어요?
+```
+
+### `day3_after_eunsu_closeness_high_12`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+선생님의 손이 내 책상 앞으로 왔다가 멎었다. 내 대답을 기다린 뒤에야 서류를 한 장 넘겼다.
+```
+
+### `day3_after_eunsu_closeness_high_13`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+아니에요. 아프면 보건실에 가고 돌아오면 여기에 앉으면 돼요.
+```
+
+### `day3_after_eunsu_closeness_high_14`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+창가 의자에 빛이 길게 걸렸다. 선생님은 그 빈자리를 보고 의자를 책상 안으로 밀었다.
+```
+
+### `day3_after_eunsu_closeness_high_15`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+끝까지 있어 달라는 말은 부담스럽겠네요. 오늘 하교할 때 인사만 하고 가요.
+```
+
+### `day3_after_eunsu_closeness_low_1`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+선생님은 의자를 내주지 않고 문 옆을 가리켰다. 서류철 하나를 팔꿈치 아래로 넣었다.
+```
+
+### `day3_after_eunsu_closeness_low_2`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+용건부터 말해 줄래요? 다음 상담이 있어서요.
+```
+
+### `day3_after_eunsu_closeness_low_3`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+창가의 빈 의자에는 이름표가 뒤집힌 다른 학생 가방이 놓여 있었다.
+```
+
+### `day3_after_eunsu_closeness_low_4`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+물어보려던 말을 짧게 바꿨다. 선생님은 대답을 적고 종이 아래쪽에 줄을 그었다.
+```
+
+### `day3_after_eunsu_closeness_low_5`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**은수**
+```text
+확인했어요. 교실에 돌아가 있어요. 필요하면 제가 부를게요.
+```
+
+### `day3_history_callback_15`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+처음 받은 차와 향이 다르다고 말했다. 리인은 잎을 바꿨다며 통 바닥의 날짜를 손으로 가렸다.
+```
+
+### `day3_history_callback_16`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+앱을 끄던 날 알림을 봤냐고 묻자 세아의 손이 멎었다. 그때는 먼저 확인하고 싶었다고만 했다.
+```
+
+### `day3_history_callback_17`
+
+_source: `day3_3_afterschool.js / day3_afterschool.json`_
+_캐릭터: `eunsu_gentle`_
+
+**나**
+```text
+첫날 밤에 보낸 질문을 꺼내자 선생님은 메시지를 다시 열지 않고 내가 물은 항목을 순서대로 말했다.
+```
+
 ## Day 3 - 밤 (`day3_4_night.js`)
 
 ### `day3_night_start`
@@ -10076,6 +12838,569 @@ _배경: `black`_
 *3일차가 끝났다.*
 ```
 
+### `day3_night_pressure_seolhwa_1`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+휴대폰의 알림 소리가 끊겼다. 화면 위의 시간만 그대로 남아 있었다.
+```
+
+### `day3_night_pressure_seolhwa_2`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+왼쪽 귀 가까이에서 설화의 목소리가 났다. 고개를 돌렸지만 벽에는 내 그림자만 있었다.
+```
+
+### `day3_night_pressure_seolhwa_3`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night` / 캐릭터: `seolhwa_warning`_
+
+**설화**
+```text
+오늘 들은 건 적어 둬. 아침에 같은 말을 들어도 이번 게 먼저야.
+```
+
+### `day3_night_pressure_seolhwa_4`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+노트를 펴고 날짜를 썼다. 왼손이 먼저 종이를 붙들어 페이지가 구겨졌다.
+```
+
+### `day3_night_pressure_seolhwa_5`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night` / 캐릭터: `seolhwa_warning`_
+
+**설화**
+```text
+누가 먼저 전화했는지도. 목소리 비슷하다고 같은 사람은 아니야.
+```
+
+### `day3_night_pressure_seolhwa_6`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+현관 밖의 발소리를 세다가 멈추고 소리가 난 시간부터 적은 뒤 그 아래 한 줄을 비워 뒀다.
+```
+
+### `day3_night_pressure_sea_1`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+휴대폰이 울리기 전에 복도에서 발소리가 멎었다. 화면에는 세아의 이름이 떠 있었다.
+```
+
+### `day3_night_pressure_sea_2`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**세아**
+```text
+안 자지. 불 켜져 있어.
+```
+
+### `day3_night_pressure_sea_3`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+대답하지 않고 창문을 보니 맞은편 담장 쪽에 가로등이 하나 켜져 있었다.
+```
+
+### `day3_night_pressure_sea_4`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**세아**
+```text
+문은 안 열어도 돼. 그냥 목소리만 들으려고.
+```
+
+### `day3_night_pressure_sea_5`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+현관 손잡이가 움직이지는 않았다. 대신 문 아래로 하얀 비닐봉지 모서리가 밀려 들어왔다.
+```
+
+### `day3_night_pressure_sea_6`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**세아**
+```text
+아침에 먹어. 계란은 완전히 익혔어. 너 덜 익은 거 안 먹잖아.
+```
+
+### `day3_night_pressure_sea_7`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+그 말을 한 적이 있는지 떠올렸다. 통화 시간 숫자가 올라가는 동안 대답은 나오지 않았다.
+```
+
+### `day3_night_pressure_sea_8`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**세아**
+```text
+이제 창문 닫아. 바람 들어가.
+```
+
+### `day3_night_pressure_sea_9`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+통화 종료를 누르자 복도에서도 진동이 멎었다. 문 앞에 있는 사람이 화면을 보고 있었다.
+```
+
+### `day3_night_pressure_sea_10`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+지금은 돌아가.
+```
+
+### `day3_night_pressure_sea_11`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+잠깐 뒤에 비닐이 문턱을 긁었다. 봉지는 남고 발소리만 계단 쪽으로 옮겨 갔다.
+```
+
+### `day3_night_pressure_sea_12`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+나는 커튼 틈에서 손을 떼고 방 안의 불을 끄지 않은 채 의자를 현관 앞에 옮겼다.
+```
+
+### `day3_night_pressure_eunsu_1`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+화면에 뜬 담임 선생님 번호를 보고 통화 버튼을 누르자 수화기 너머에서 종이가 움직였다.
+```
+
+### `day3_night_pressure_eunsu_2`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**은수**
+```text
+문 잠갔어요? 오늘은 누가 와도 열지 마요.
+```
+
+### `day3_night_pressure_eunsu_3`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+누가 오는데요?
+```
+
+### `day3_night_pressure_eunsu_4`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+선생님은 바로 답하지 않았고 펜으로 책상을 두 번 두드리는 소리가 났다.
+```
+
+### `day3_night_pressure_eunsu_5`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**은수**
+```text
+내가 이름을 말하기 전에는 안 열면 돼요. 목소리만 듣고 열지 말고요.
+```
+
+### `day3_night_pressure_eunsu_6`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+현관 인터폰이 켜지자 화면에는 사람 얼굴 대신 복도 천장의 등이 잡혔다.
+```
+
+### `day3_night_pressure_eunsu_7`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+지금 밖에 선생님 계세요?
+```
+
+### `day3_night_pressure_eunsu_8`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**은수**
+```text
+화면 보지 말아요. 앱도 닫고요.
+```
+
+### `day3_night_pressure_eunsu_9`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+휴대폰을 귀에서 떼자 통화 중 표시 아래로 안전 앱 알림이 겹쳤다. 위치 확인 완료였다.
+```
+
+### `day3_night_pressure_eunsu_10`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+선생님은 문을 열라는 말도 통화를 끊으라는 말도 하지 않았다.
+```
+
+### `day3_night_pressure_eunsu_11`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**은수**
+```text
+아침에 교실에서 봐요. 그때 내가 다시 물어볼게요.
+```
+
+### `day3_night_pressure_eunsu_12`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+전화가 끊긴 뒤에도 인터폰이 켜져 있어 전원 버튼을 길게 눌러 화면을 껐다.
+```
+
+### `day3_night_pressure_riin_1`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+보건실 번호로 오늘 먹은 것과 마신 것을 적어 달라는 메시지가 왔다.
+```
+
+### `day3_night_pressure_riin_2`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+차 이름을 쓰려다 멈췄다. 컵받침 밑에 있던 약 봉투를 꺼내 뒤집었다.
+```
+
+### `day3_night_pressure_riin_3`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**리인**
+```text
+지금 답장하지 마. 내가 먼저 보낸 건 지워.
+```
+
+### `day3_night_pressure_riin_4`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+바로 위 문장이 사라지고 대화창에는 취소된 메시지라는 표시만 남았다.
+```
+
+### `day3_night_pressure_riin_5`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+선생님이 보내신 거 아니에요?
+```
+
+### `day3_night_pressure_riin_6`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+리인은 전화를 걸었다. 연결되자 먼저 창문을 닫았는지 물었다.
+```
+
+### `day3_night_pressure_riin_7`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**리인**
+```text
+목소리가 커지면 옆방에도 들려. 질문은 내가 할게.
+```
+
+### `day3_night_pressure_riin_8`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+선생님은 컵이 어디 있는지, 남은 차가 있는지 차례로 물었다. 약 이름은 말하지 않았다.
+```
+
+### `day3_night_pressure_riin_9`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+리인이 침묵할 때마다 수화기 너머에서 다른 사람의 발소리가 들렸다.
+```
+
+### `day3_night_pressure_riin_10`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**리인**
+```text
+내일은 내가 준 것만 마셔. 누가 같은 거라고 해도 나한테 직접 받아.
+```
+
+### `day3_night_pressure_riin_11`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+전화를 끊기 전 선생님이 이름을 불렀다. 대답했지만 다음 말은 끝내 오지 않았다.
+```
+
+### `day3_night_pressure_riin_12`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+컵 안의 물을 싱크대에 비웠는데 배수구 망에는 찻잎이 하나도 남지 않았다.
+```
+
+### `day3_night_pressure_yuna_1`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+카메라 모양 아이콘 아래로 파일 하나가 왔다. 유나는 열지 말고 저장부터 하라고 했다.
+```
+
+### `day3_night_pressure_yuna_2`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**유나**
+```text
+사진만 받아. 오늘은 전화 안 해.
+```
+
+### `day3_night_pressure_yuna_3`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+저장을 누르자 전송 표시가 잠깐 멎었다. 파일 이름 끝에 열두 번째라는 숫자가 붙었다.
+```
+
+### `day3_night_pressure_yuna_4`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**유나**
+```text
+이름 바꾸지 마. 내일 설명할게.
+```
+
+### `day3_night_pressure_yuna_5`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+문밖에서 휴대폰이 한 번 진동했다. 내 휴대폰은 손에 있었고 소리도 꺼져 있었다.
+```
+
+### `day3_night_pressure_yuna_6`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+내가 문 쪽으로 가는 동안 유나의 메시지가 하나 더 왔다. 현관 열지 마였다.
+```
+
+### `day3_night_pressure_yuna_7`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+누구냐고 쓰다가 지웠다. 현관 아래에는 그림자가 드리워졌다가 사라졌다.
+```
+
+### `day3_night_pressure_yuna_8`
+
+_source: `day3_4_night.js / day3_night.json`_
+_배경: `room_night`_
+
+**나**
+```text
+휴대폰을 엎어도 저장 중 표시가 눈에 남았다. 파일이 끝까지 온 것만 확인했다.
+```
+
+### `day3_history_callback_18`
+
+_source: `day3_4_night.js / day3_night.json`_
+
+**나**
+```text
+첫날 답하지 않은 메시지 밑에도 읽음 표시가 생겨 있었다. 세아는 그날 얘기를 먼저 꺼내지 않았다.
+```
+
+### `day3_history_callback_19`
+
+_source: `day3_4_night.js / day3_night.json`_
+
+**나**
+```text
+앱을 종료하려 손가락을 옮겼다. 첫날 다시 켜지던 화면이 떠올라 이번에는 전원을 끄지 않았다.
+```
+
+### `day3_history_callback_20`
+
+_source: `day3_4_night.js / day3_night.json`_
+
+**나**
+```text
+낮에 본 서류철 탭을 떠올리며 내 이름 앞에 붙었던 숫자를 말하려다 통화 시간을 먼저 적었다.
+```
+
+### `day3_history_callback_21`
+
+_source: `day3_4_night.js / day3_night.json`_
+
+**나**
+```text
+구관에서 본 이름표들을 노트 위에 펼치자 선생님은 종이 소리를 듣고 무엇을 보고 있냐고 물었다.
+```
+
+### `day3_history_callback_22`
+
+_source: `day3_4_night.js / day3_night.json`_
+
+**나**
+```text
+보건실에서 본 앰플을 말하려 하자 리인이 말을 끊고 그 이름은 통화에서 꺼내지 말라고 했다.
+```
+
+### `day3_history_callback_23`
+
+_source: `day3_4_night.js / day3_night.json`_
+
+**나**
+```text
+낮에 마신 양을 컵에 물로 재 봤지만 리인은 양보다 마지막으로 마신 시간을 물었다.
+```
+
+### `day3_history_callback_24`
+
+_source: `day3_4_night.js / day3_night.json`_
+
+**나**
+```text
+유나가 건넨 사본을 따로 뒀던 주머니를 만졌다. 이번 파일도 같은 곳에 넣을 수 있도록 이름부터 적었다.
+```
+
 # DAY 4 — 실제 게임 대사/지문
 
 ## Day 4 - 아침 (`day4_1_morning.js`)
@@ -10971,6 +14296,279 @@ _source: `day4_1_morning.js / day4_morning.json`_
 *오전 수업이 끝났다. 셔츠 목단추가 목을 누른다.*
 ```
 
+### `day4_morning_sea_watch_high_1`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+자리에 앉기도 전에 세아가 내 손목을 잡았다. 엄지가 맥박 위에 놓였다.
+```
+
+### `day4_morning_sea_watch_high_2`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**세아**
+```text
+어젯밤에 잠 못 잤지? 그래프가 계속 흔들렸어.
+```
+
+### `day4_morning_sea_watch_high_3`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+손을 빼자 세아가 손가락 끝으로만 다시 잡았다. 이번에는 내 눈을 보지 않았다.
+```
+
+### `day4_morning_sea_watch_high_4`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+무슨 그래프.
+```
+
+### `day4_morning_sea_watch_high_5`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+세아가 휴대폰을 뒤집었다. 잠깐 보인 화면에는 내 이름과 밤 시간대 눈금이 떠 있었다.
+```
+
+### `day4_morning_sea_watch_high_6`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**세아**
+```text
+안전 앱. 내가 보호자 연락처로 등록돼 있잖아.
+```
+
+### `day4_morning_sea_watch_high_7`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+내가 등록했냐고 묻자 세아는 손목을 놓고 의자 등받이를 닦았다.
+```
+
+### `day4_morning_sea_watch_high_8`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**세아**
+```text
+처음 왔을 때 네가 모르는 게 많았으니까. 나중에 바꾸면 돼.
+```
+
+### `day4_morning_sea_watch_high_9`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+휴대폰을 꺼내 보호자 칸을 열어 보니 편집 버튼은 회색이었다.
+```
+
+### `day4_morning_sea_watch_high_10`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+세아는 이미 내 화면을 보고 있었다. 내가 버튼을 누르자 자기 휴대폰을 무릎 아래로 내렸다.
+```
+
+### `day4_morning_sea_watch_high_11`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**세아**
+```text
+여기서 그러지 말고. 애들 다 보잖아.
+```
+
+### `day4_morning_sea_watch_high_12`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+교탁 쪽에서는 분필을 꺼내는 소리가 났다. 다른 학생은 우리 쪽을 보지 않았다.
+```
+
+### `day4_morning_sea_watch_low_1`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+세아가 내 책상 옆을 지나가며 손목을 봤다. 손을 뻗지는 않았다.
+```
+
+### `day4_morning_sea_watch_low_2`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_serious`_
+
+**세아**
+```text
+기기 연결 끊겼대. 쉬는 시간에 선생님이 보자셔.
+```
+
+### `day4_morning_sea_watch_low_3`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+내 휴대폰을 왜 네가 확인해?
+```
+
+### `day4_morning_sea_watch_low_4`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_serious`_
+
+**세아**
+```text
+내가 확인한 거 아니야. 알림이 나한테도 와.
+```
+
+### `day4_morning_sea_watch_low_5`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+세아는 자기 자리에 앉아 내 쪽으로 돌려놓았던 의자를 칠판 방향으로 고쳤다.
+```
+
+### `day4_morning_sea_watch_choice`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+
+**나**
+```text
+보호자 칸에는 내가 입력하지 않은 이름이 남아 있었다.
+```
+
+**선택지**
+1. 지금 지워 달라고 말한다
+2. 언제 등록했는지부터 묻는다
+
+### `day4_morning_sea_watch_remove_1`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+내가 지우면 다른 사람이 들어와. 누구인지 네가 고를 수는 없어.
+```
+
+### `day4_morning_sea_watch_remove_2`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+휴대폰을 내 쪽으로 돌려 달라고 하자 세아는 잠금을 푼 뒤 잠깐 멈췄다.
+```
+
+### `day4_morning_sea_watch_remove_3`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+편집 칸은 세아 화면에서도 회색이었고 아래에 관리 권한 없음이라는 문구가 떴다.
+```
+
+### `day4_morning_sea_watch_when_1`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+입학 전날. 아니, 서류 넘어온 날. 날짜는 나도 다시 봐야 해.
+```
+
+### `day4_morning_sea_watch_when_2`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+세아가 휴대폰을 켰다 껐다. 대답할 때마다 날짜가 하루씩 옮겨 갔다.
+```
+
+### `day4_morning_sea_watch_when_3`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+다시 확인하고 말해. 나한테 맞춰서 대답하지 말고.
+```
+
+### `day4_history_callback_25`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+첫날 강제 종료한 시간까지 그래프에 표시돼 있었다. 세아는 내가 그 줄을 읽는 동안 화면을 돌리지 않았다.
+```
+
+### `day4_history_callback_26`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+위치 권한을 줄였던 항목에는 변경 이력이 남았다. 허용으로 되돌린 사람의 이름은 보이지 않았다.
+```
+
+### `day4_history_callback_27`
+
+_source: `day4_1_morning.js / day4_morning.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+우유 위치를 바꿨던 일을 물으려다 멈췄다. 지금 세아가 보고 있는 건 냉장고가 아니라 내 손목이었다.
+```
+
 ## Day 4 - 점심 (`day4_2_lunch.js`)
 
 ### `day4_lunch_start`
@@ -11482,6 +15080,926 @@ _배경: `classroom` / BGM: `tension.mp3`_
 **나**
 ```text
 *오후 수업이 시작된다.*
+```
+
+### `day4_lunch_nurse_ask_name`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_cold`_
+
+**나**
+```text
+그거… 이름이 뭐예요?
+```
+
+### `day4_lunch_nurse_ask_name_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_strained_smile`_
+
+**리인**
+```text
+영양제. 라벨 읽을 필요 없어. 그냥 누워.
+```
+
+### `day4_lunch_nurse_ask_yuna`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_cold`_
+
+**나**
+```text
+유나한테도 그거 주셨어요?
+```
+
+### `day4_lunch_nurse_ask_yuna_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_strained_smile`_
+
+**리인**
+```text
+…유나 얘기는 내일. 지금은 너 약부터.
+```
+
+### `day4_lunch_nurse_leave_ask`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `corridor`_
+
+**나**
+```text
+*대답을 듣지 않고 나왔다. 등 뒤에서 앰플이 트레이에 닿는 소리가 짧게 났다.*
+```
+
+### `day4_lunch_nurse_leave_yuna`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `corridor`_
+
+**나**
+```text
+*유나 이름을 꺼낸 뒤로는 더 묻지 못했다. 복도로 나오자 문틈으로 낮은 한숨이 새어 나왔다.*
+```
+
+### `day4_lunch_darkroom_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+암실 안쪽에서 물이 한 방울 떨어졌다. 인화 수조 옆에 젖은 집게 두 개가 놓여 있었다.
+```
+
+### `day4_lunch_darkroom_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+밀착 인화지가 망 위에 걸려 있었다. 같은 책상에 앉은 얼굴들이 작은 칸마다 이어졌다.
+```
+
+### `day4_lunch_darkroom_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+손가락으로 칸을 세어 보니 열두 번째 칸만 가장자리의 물기가 아직 마르지 않았다.
+```
+
+### `day4_lunch_darkroom_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+붉은 등을 켜자 필름 속 얼굴이 나타났다. 머리와 교복은 달랐지만 왼손을 쥔 모양은 같았다.
+```
+
+### `day4_lunch_darkroom_5`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+열두 번째 사람은 카메라를 보고 있지 않았다. 사진 밖의 누군가에게 무언가를 건네고 있었다.
+```
+
+### `day4_lunch_darkroom_6`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+그 손목 밑에 유나의 손가락이 조금 찍혔다. 집게 하나가 그 부분을 가리고 있었다.
+```
+
+### `day4_lunch_darkroom_7`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+집게를 옮기자 유리 위로 작은 발자국이 보였다. 유나는 여기서 급히 돌아선 모양이었다.
+```
+
+### `day4_lunch_darkroom_8`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+인화지는 가져가지 않고 휴대폰으로 전체를 찍은 뒤 손이 겹친 부분을 한 장 더 찍었다.
+```
+
+### `day4_lunch_darkroom_9`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+젖은 봉투는 손대면 모양이 바뀔 것 같았다.
+```
+
+**선택지**
+1. 집게 위치까지 사진에 남긴다
+2. 문 쪽 발자국을 먼저 본다
+3. 물건을 건드리지 않고 기다린다
+
+### `day4_lunch_darkroom_10`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+봉투 안의 필름 끝은 잘려 있었다. 남은 길이를 재며 어디에 옮겼을지 생각했다.
+```
+
+### `day4_lunch_darkroom_11`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+복도에서 금속 문이 닫혔다. 붉은 등을 끄고 문 옆까지 몸을 낮췄다.
+```
+
+### `day4_lunch_darkroom_12`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `cg_cycle12_yuna`_
+
+**나**
+```text
+구두 뒤축 소리가 계단 아래로 내려왔다. 보폭은 느렸고 중간에 멈추지 않았다.
+```
+
+### `day4_lunch_yuna_hide_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+지하실 문 앞에서 열쇠 구멍을 살폈다. 문 안쪽에서는 종이를 넘기는 소리가 났다.
+```
+
+### `day4_lunch_yuna_hide_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+계단 위에서 구두가 한 번 미끄러졌다. 손전등 빛이 벽 아래부터 길게 내려왔다.
+```
+
+### `day4_lunch_yuna_hide_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+청소도구함 문을 열고 빗자루 두 개를 안쪽으로 밀자 몸 하나 들어갈 틈이 났다.
+```
+
+### `day4_lunch_yuna_hide_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+문을 닫는 순간 주머니의 휴대폰이 선반에 닿았다. 손으로 감쌌지만 이미 짧은 소리가 났다.
+```
+
+### `day4_lunch_yuna_breath_choice`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+문틈의 빛이 손등에 걸렸다. 계단 아래에서 발소리가 멎었다.
+```
+
+**선택지**
+1. 휴대폰을 옷으로 감싸고 움직이지 않는다
+2. 먼저 나와 길을 잃었다고 말한다
+
+### `day4_lunch_yuna_breath_safe_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+작업복 냄새가 코에 닿았다. 소매를 입에 물고 휴대폰을 배 쪽으로 눌렀다.
+```
+
+### `day4_lunch_yuna_breath_safe_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**은수**
+```text
+문은 닫아 뒀죠? 사람이 있든 없든 확인은 해요.
+```
+
+### `day4_lunch_yuna_breath_safe_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+다른 사람이 짧게 대답했다. 문틈에서 빛이 멀어지자 손등의 선도 사라졌다.
+```
+
+### `day4_lunch_yuna_breath_safe_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+구두 소리가 다시 계단을 올라갔다. 마지막 발소리가 들린 뒤에도 빗자루 손잡이를 놓지 않았다.
+```
+
+### `day4_lunch_yuna_breath_safe_5`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+함 밖으로 나오며 문고리를 천천히 놓았다. 손바닥에 손잡이 모양이 눌려 있었다.
+```
+
+### `day4_lunch_yuna_breath_fail_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+문손잡이가 먼저 움직였다. 은수 선생님의 구두 끝이 열린 틈 앞에서 멎었다.
+```
+
+### `day4_lunch_yuna_breath_fail_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+길을 잃으면 사람을 불러야죠. 이 안은 학생이 들어오는 데가 아니에요.
+```
+
+### `day4_lunch_yuna_breath_fail_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+고개를 숙인 채 휴대폰을 주머니 깊이 밀었다. 선생님은 내 손이 나올 때까지 문을 잡고 있었다.
+```
+
+### `day4_lunch_yuna_breath_fail_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+교실로 가요. 점심시간 끝나고 다시 얘기해요.
+```
+
+### `day4_lunch_yuna_breath_fail_5`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+발을 떼자 선생님이 반대편 복도를 가리켰다. 지하실 문에서 멀어지는 길이었다.
+```
+
+### `day4_lunch_nurse_tray_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_m13_ampoule` / 캐릭터: `riin_strained_smile`_
+
+**나**
+```text
+금속 트레이 위에 유리 앰플 세 개가 놓여 있었다. 라벨을 뜯은 자리만 반투명하게 남았다.
+```
+
+### `day4_lunch_nurse_tray_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_m13_ampoule` / 캐릭터: `riin_strained_smile`_
+
+**나**
+```text
+리인이 서랍을 밀어 닫자 찢긴 종이 끝이 끼었다. 흰 가운으로 가리기 전에 작은 격자가 보였다.
+```
+
+### `day4_lunch_nurse_tray_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_m13_ampoule` / 캐릭터: `riin_strained_smile`_
+
+**리인**
+```text
+손 씻고 와. 밖에서 들어왔잖아.
+```
+
+### `day4_lunch_nurse_tray_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_m13_ampoule` / 캐릭터: `riin_strained_smile`_
+
+**나**
+```text
+세면대 거울에 선생님의 손이 비쳤다. 앰플 한 개를 옆으로 밀더니 다른 두 개만 나란히 놓았다.
+```
+
+### `day4_lunch_nurse_tray_5`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_m13_ampoule` / 캐릭터: `riin_strained_smile`_
+
+**나**
+```text
+캡이 닫힌 주사기는 아직 트레이에 있었다. 리인은 그것을 들지 않고 컵부터 씻었다.
+```
+
+### `day4_lunch_nurse_tray_6`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_m13_ampoule` / 캐릭터: `riin_strained_smile`_
+
+**리인**
+```text
+아침에 먹은 건 있어? 약부터 주지는 않을 거야.
+```
+
+### `day4_lunch_nurse_tray_7`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_m13_ampoule` / 캐릭터: `riin_strained_smile`_
+
+**나**
+```text
+수도꼭지를 잠그자 보건실 시계 소리가 들렸다. 선생님도 같은 쪽을 잠깐 봤다.
+```
+
+### `day4_lunch_nurse_tray_8`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_m13_ampoule` / 캐릭터: `riin_strained_smile`_
+
+**나**
+```text
+종이 조각은 서랍 틈에 그대로 남아 있었다. 돌아서기 전에 눈으로 격자 수만 셌다.
+```
+
+### `day4_lunch_nurse_key_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+선생님도 여기서 못 나가는 거죠?
+```
+
+### `day4_lunch_nurse_key_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+리인은 컵 가장자리에 걸친 손가락을 내려놨다. 유리가 트레이에 닿아 한 번 울렸다.
+```
+
+### `day4_lunch_nurse_key_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+그 말, 복도에서는 하지 마.
+```
+
+### `day4_lunch_nurse_key_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+문 옆 카메라를 보려 하자 리인이 내 앞에 섰다. 가운 주머니에서 금속이 짧게 부딪쳤다.
+```
+
+### `day4_lunch_nurse_key_5`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+주머니 가장자리에 열쇠고리 하나가 걸렸다. 리인은 집어넣지 않고 손만 떼었다.
+```
+
+### `day4_lunch_nurse_key_6`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+잃어버린 물건은 찾은 사람이 바로 돌려줘야 하는 건 아니야.
+```
+
+### `day4_lunch_nurse_key_7`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+눈길이 주머니에서 문으로 옮겨 갔다. 선생님이 몸을 비켜 통로를 만들었다.
+```
+
+### `day4_lunch_nurse_key_8`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+열쇠에는 손대지 않고 어느 주머니에 있는지만 기억한 채 보건실을 나왔다.
+```
+
+### `day4_lunch_nurse_yuna_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+유나가 마지막으로 언제 왔는지 물었다. 리인이 기록장을 덮고 끈을 묶었다.
+```
+
+### `day4_lunch_nurse_yuna_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+나간 시간은 적혀 있지 않아. 내가 안 적었어.
+```
+
+### `day4_lunch_nurse_yuna_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+묶인 끈 끝이 선생님의 손가락에서 빠졌다. 다시 묶으려다 그대로 놓아뒀다.
+```
+
+### `day4_lunch_nurse_yuna_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**리인**
+```text
+들어온 기록만 있으면 아직 안 나간 걸로 돼. 그건 알아 둬.
+```
+
+### `day4_lunch_nurse_yuna_5`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+서랍 쪽을 보자 선생님이 조용히 고개를 저었다. 문이 있는 방향으로 한 걸음 옮겼다.
+```
+
+### `day4_lunch_nurse_yuna_6`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+보건실 밖에서는 점심 방송이 흘렀다. 문을 닫기 전에 리인이 컵 하나를 더 씻는 소리가 났다.
+```
+
+### `day4_lunch_roof_etch_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_rooftop_etching` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+철망 아래 콘크리트가 드러난 곳의 먼지를 털자 깊은 선 몇 개가 나왔다.
+```
+
+### `day4_lunch_roof_etch_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_rooftop_etching` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+세로 획 일곱 개와 왼쪽을 향한 화살표였다. 얕게 긁은 곳에는 녹물이 고여 있었다.
+```
+
+### `day4_lunch_roof_etch_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_rooftop_etching` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+손톱을 선에 넣어 봤다. 글씨를 쓰려다 손가락이 미끄러진 자리가 여러 번 겹쳐 있었다.
+```
+
+### `day4_lunch_roof_etch_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_rooftop_etching` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+긁힌 선 안쪽에 모래가 굳어 있었다.
+```
+
+**선택지**
+1. 빛 방향을 바꿔 찍는다
+2. 철망 고정쇠 아래를 본다
+3. 손을 대지 않고 눈으로 읽는다
+
+### `day4_lunch_roof_etch_5`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_rooftop_etching` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+내 왼손을 펴자 손바닥의 선이 같은 방향으로 접혔다. 손을 거둬도 손끝에 모래가 남았다.
+```
+
+### `day4_lunch_roof_etch_6`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_rooftop_etching` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+뒤에서 철망이 가볍게 울렸다. 돌아보니 설화가 계단 문 옆에 서 있었다.
+```
+
+### `day4_lunch_roof_etch_7`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_rooftop_etching` / 캐릭터: `seolhwa_warning`_
+
+**설화**
+```text
+여기까지 오면 밖이 보이잖아. 그래서 처음엔 다 여기로 와.
+```
+
+### `day4_lunch_roof_etch_8`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_rooftop_etching` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+설화는 난간 가까이 오지 않고 젖지도 않은 소매 끝을 손가락으로 접고 있었다.
+```
+
+### `day4_lunch_roof_etch_9`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_배경: `closeup_rooftop_etching` / 캐릭터: `seolhwa_warning`_
+
+**설화**
+```text
+나도 그랬어. 담장 너머로 버스만 보면 거기까지 갈 수 있을 줄 알았어.
+```
+
+### `day4_lunch_roof_memory_choice`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+설화는 왼쪽 계단을 봤다. 나는 철망에서 손을 뗐다.
+```
+
+**선택지**
+1. 왜 옥상으로 나가지 않았어?
+2. 그때 비상구에서는 무슨 일이 있었어?
+
+### `day4_lunch_roof_fence_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**설화**
+```text
+아래를 봐. 담장 밖에도 길이 하나뿐이야. 버스가 오기 전에 잡혀.
+```
+
+### `day4_lunch_roof_fence_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**나**
+```text
+철망 밖으로 내려다보니 학교 진입로와 버스 정류장 사이에 경비실이 놓여 있었다.
+```
+
+### `day4_lunch_roof_fence_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**설화**
+```text
+낮에 보이는 문이랑 밤에 열리는 문은 달라. 일곱 번째에는 그걸 너무 늦게 알았어.
+```
+
+### `day4_lunch_roof_fence_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**나**
+```text
+바람에 설화의 앞머리가 움직였다. 다른 쪽 소매는 바람 방향과 반대로 접혔다.
+```
+
+### `day4_lunch_roof_fence_5`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**설화**
+```text
+구관 비상구는 손으로 열 수 있어. 밖에서 잠가도 안쪽 손잡이는 남아 있어.
+```
+
+### `day4_lunch_roof_exit_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**설화**
+```text
+처음엔 내가 열었어. 네 손은 서류를 들고 있었고.
+```
+
+### `day4_lunch_roof_exit_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**나**
+```text
+왼손을 내려다보자 설화도 같은 쪽을 봤다. 손가락을 펴려다 주먹을 쥐었다.
+```
+
+### `day4_lunch_roof_exit_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**설화**
+```text
+문 앞에 사람이 왔어. 종이 가져온 걸 알고 있었어.
+```
+
+### `day4_lunch_roof_exit_4`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**나**
+```text
+설화가 문손잡이를 잡는 시늉을 했다. 손이 허공에서 멎었고 손등에 힘줄이 올라왔다.
+```
+
+### `day4_lunch_roof_exit_5`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**설화**
+```text
+자세한 건 거기 기록에 있어. 내 말만 듣고 다 기억난다고 하지 마.
+```
+
+### `day4_lunch_roof_second_choice`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+계단 문이 바람에 조금 열렸다. 설화가 먼저 그쪽으로 물러났다.
+```
+
+**선택지**
+1. 이번에는 기록부터 찾을게
+2. 왼쪽 비상구 위치를 다시 묻는다
+
+### `day4_lunch_roof_record_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**설화**
+```text
+그래. 기억났다고 맞춰 주지 않아도 돼. 종이는 네가 직접 봐.
+```
+
+### `day4_lunch_roof_record_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+휴대폰을 꺼내 긁힌 자리를 찍었다. 화면 속에는 철망과 손만 남고 설화는 보이지 않았다.
+```
+
+### `day4_lunch_roof_record_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+사진을 저장한 뒤 다시 고개를 들자 계단 문이 닫히는 소리가 났다.
+```
+
+### `day4_lunch_roof_left_1`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**설화**
+```text
+지하에서 왼쪽. 계단은 세지 말고 손잡이가 안으로 열리는 쪽을 찾아.
+```
+
+### `day4_lunch_roof_left_2`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+손바닥의 모래를 주머니 안감에 털며 왼쪽이라는 말만 입 안으로 한 번 되풀이했다.
+```
+
+### `day4_lunch_roof_left_3`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+철망에서 돌아서니 옥상 문은 반쯤 열려 있었다. 사람 그림자는 계단 아래로 이어지지 않았다.
+```
+
+### `day4_history_callback_28`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+첫날 받았던 사진도 같은 방향으로 빛을 받았다. 유나가 종이를 접지 말라고 한 이유가 이제 눈에 들어왔다.
+```
+
+### `day4_history_callback_29`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+카메라를 찾았던 자리와 이 봉투 사이의 거리를 쟀다. 둘은 문에서 같은 쪽으로 숨겨져 있었다.
+```
+
+### `day4_history_callback_30`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_strained_smile`_
+
+**나**
+```text
+앞서 본 앰플과 목 부분 모양이 같았다. 라벨을 떼어도 유리의 작은 흠집까지 지워지지는 않았다.
+```
+
+### `day4_history_callback_31`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `riin_pain`_
+
+**나**
+```text
+리인이 휴대폰을 뒤집으라고 손짓했다. 첫날 앱을 껐을 때처럼 화면만 어두워지고 위치 표시는 남았다.
+```
+
+### `day4_history_callback_32`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+볼펜 그립을 잡을 때 접혔던 자리가 다시 눌려 손이 먼저 방향을 잡는다는 설화의 말을 떠올렸다.
+```
+
+### `day4_history_callback_33`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_sad`_
+
+**나**
+```text
+주머니의 종이 조각을 만졌다. 번져 읽지 못했던 옥 자가 옥상이었는지는 아직 확신할 수 없었다.
+```
+
+### `day4_expansion_action_6_a`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+집게 그림자까지 프레임 안에 넣었다. 다시 같은 자리를 찾아야 할 때 기준이 될 만한 것을 남겼다.
+```
+
+### `day4_expansion_action_6_b`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+
+**나**
+```text
+문 앞 젖은 자국은 안으로 들어오는 쪽만 있었다. 나는 그 위를 밟지 않고 벽 쪽으로 걸었다.
+```
+
+### `day4_expansion_action_7_a`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+휴대폰을 낮게 들자 획의 그림자가 길어지면서 글자처럼 보이던 얼룩과 실제 파인 선을 구분할 수 있었다.
+```
+
+### `day4_expansion_action_7_b`
+
+_source: `day4_2_lunch.js / day4_lunch.json`_
+_캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+고정쇠 밑으로 마지막 획이 이어졌다. 새로 세운 철망 아래에 예전 흔적이 남아 있는 모양이었다.
 ```
 
 ## Day 4 - 방과후 (`day4_3_afterschool.js`)
@@ -12654,6 +17172,605 @@ _배경: `school_gate`_
 *해가 지고 교실 창문 불이 차례로 꺼진다. 내일은 5일째다.*
 ```
 
+### `day4_after_eunsu_evidence_menu`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+
+**나**
+```text
+아직 말하지 않은 사실을 골랐다. 손에 없는 증거까지 꺼낼 수는 없다.
+```
+
+**선택지**
+1. 사진을 탁자 위에 놓는다
+2. 열쇠고리를 가리킨다
+3. 이름 없는 앰플 이야기를 꺼낸다
+4. 지금은 더 말하지 않는다
+
+### `day4_after_eunsu_evidence_0_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+카메라에서 꺼낸 사진을 탁자에 놓았다. 앞면이 보이자 선생님의 손이 서류철 위에서 멎었다.
+```
+
+### `day4_after_eunsu_evidence_0_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+그거 어디서 났어요?
+```
+
+### `day4_after_eunsu_evidence_0_3`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+누가 찍혔는지부터 말씀해 주세요.
+```
+
+### `day4_after_eunsu_evidence_0_4`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+선생님은 사진에 손대지 않았다. 대신 모서리가 젖었는지 손끝으로 탁자만 문질렀다.
+```
+
+### `day4_after_eunsu_evidence_0_5`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+원본이면 접지 말아요. 나중에 날짜 확인할 때 필요하니까.
+```
+
+### `day4_after_eunsu_evidence_0_6`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+그 말이 끝나기 전에 사진을 주머니에 넣었다. 선생님은 돌려 달라는 말을 삼켰다.
+```
+
+### `day4_after_eunsu_evidence_1_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+그 열쇠로 지하 문도 열리죠?
+```
+
+### `day4_after_eunsu_evidence_1_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+선생님이 목에 걸린 줄을 블라우스 안으로 넣자 열쇠끼리 부딪치는 소리가 났다.
+```
+
+### `day4_after_eunsu_evidence_1_3`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+어느 문을 말하는 건지 먼저 말해 줘요.
+```
+
+### `day4_after_eunsu_evidence_1_4`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+제가 말하면 잠금을 바꾸실 거잖아요.
+```
+
+### `day4_after_eunsu_evidence_1_5`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+탁자 위의 펜이 선생님 손에서 굴러갔다. 줍는 동안 열쇠 줄이 다시 밖으로 나왔다.
+```
+
+### `day4_after_eunsu_evidence_1_6`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+그 문은 안쪽에서 열려요. 그건 바꿀 수 없어요.
+```
+
+### `day4_after_eunsu_evidence_2_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+보건실 약에는 왜 이름이 없어요?
+```
+
+### `day4_after_eunsu_evidence_2_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+선생님은 내 왼쪽 팔을 봤다. 소매가 걷혀 있지 않은데도 시선이 팔꿈치에서 멎었다.
+```
+
+### `day4_after_eunsu_evidence_2_3`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+약 얘기는 리인 선생님한테 물어봐요.
+```
+
+### `day4_after_eunsu_evidence_2_4`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+보내신 사람이 선생님이면 여기서 물어야죠.
+```
+
+### `day4_after_eunsu_evidence_2_5`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+선생님이 서류철을 덮자 내 이름이 적힌 탭만 밖으로 나왔다.
+```
+
+### `day4_after_eunsu_evidence_2_6`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+네가 먹은 건 내가 확인할게요. 확인하기 전까지 누가 주는 것도 받지 말아요.
+```
+
+### `day4_after_eunsu_followup_0`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+
+**나**
+```text
+상대가 말을 멈추자 이번에는 내가 먼저 입을 열었다.
+```
+
+**선택지**
+1. 들은 내용을 수첩에 적는다
+2. 대답이 달라진 이유를 묻는다
+3. 대화를 끝내고 물러난다
+
+### `day4_after_eunsu_followup_0_write_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+펜을 꺼내 방금 들은 말을 적자 상대는 어느 줄을 적는지 보려고 몸을 기울였다.
+```
+
+### `day4_after_eunsu_followup_0_write_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+수첩을 덮어 주머니에 넣었다. 말을 바꾸려면 이 기록부터 설명해야 할 것이다.
+```
+
+### `day4_after_eunsu_followup_0_press_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+여기서 말하는 것과 보고서에 쓰는 건 달라요. 어느 쪽을 원하는지 먼저 정해요.
+```
+
+### `day4_after_eunsu_followup_0_press_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+선생님이 펜을 내 앞으로 밀었다. 나는 잡지 않고 탁자 가운데로 돌려놨다.
+```
+
+### `day4_after_eunsu_followup_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+
+**나**
+```text
+상대가 말을 멈추자 이번에는 내가 먼저 입을 열었다.
+```
+
+**선택지**
+1. 들은 내용을 수첩에 적는다
+2. 대답이 달라진 이유를 묻는다
+3. 대화를 끝내고 물러난다
+
+### `day4_after_eunsu_followup_1_write_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+펜을 꺼내 방금 들은 말을 적자 상대는 어느 줄을 적는지 보려고 몸을 기울였다.
+```
+
+### `day4_after_eunsu_followup_1_write_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+수첩을 덮어 주머니에 넣었다. 말을 바꾸려면 이 기록부터 설명해야 할 것이다.
+```
+
+### `day4_after_eunsu_followup_1_press_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+여기서 말하는 것과 보고서에 쓰는 건 달라요. 어느 쪽을 원하는지 먼저 정해요.
+```
+
+### `day4_after_eunsu_followup_1_press_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+선생님이 펜을 내 앞으로 밀었다. 나는 잡지 않고 탁자 가운데로 돌려놨다.
+```
+
+### `day4_after_eunsu_followup_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+
+**나**
+```text
+상대가 말을 멈추자 이번에는 내가 먼저 입을 열었다.
+```
+
+**선택지**
+1. 들은 내용을 수첩에 적는다
+2. 대답이 달라진 이유를 묻는다
+3. 대화를 끝내고 물러난다
+
+### `day4_after_eunsu_followup_2_write_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+펜을 꺼내 방금 들은 말을 적는 동안 상대는 어느 줄을 적는지 보려고 몸을 기울였다.
+```
+
+### `day4_after_eunsu_followup_2_write_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+수첩을 덮어 주머니에 넣었다. 말을 바꾸려면 이 기록부터 설명해야 할 것이다.
+```
+
+### `day4_after_eunsu_followup_2_press_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+여기서 말하는 것과 보고서에 쓰는 건 달라요. 어느 쪽을 원하는지 먼저 정해요.
+```
+
+### `day4_after_eunsu_followup_2_press_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `eunsu_cold`_
+
+**나**
+```text
+선생님이 내 앞으로 민 펜을 잡지 않고 탁자 가운데로 돌려놨다.
+```
+
+### `day4_after_sea_evidence_menu`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+
+**나**
+```text
+아직 말하지 않은 사실을 골랐다. 손에 없는 증거까지 꺼낼 수는 없다.
+```
+
+**선택지**
+1. 옥상 각인 사진을 보여준다
+2. 앱을 강제 종료했던 기록을 묻는다
+3. 지금은 더 말하지 않는다
+
+### `day4_after_sea_evidence_0_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+철망 밑 각인 사진을 켜자 세아가 휴대폰을 낚아채려 했다. 먼저 화면을 껐다.
+```
+
+### `day4_after_sea_evidence_0_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**세아**
+```text
+옥상까지 갔어? 거기 난간 손대지 말랬잖아.
+```
+
+### `day4_after_sea_evidence_0_3`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+누가 새긴 건지 알아?
+```
+
+### `day4_after_sea_evidence_0_4`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+세아는 왼손을 뒤로 감추고 손가락에 낀 반지 자국을 엄지로 문질렀다.
+```
+
+### `day4_after_sea_evidence_0_5`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**세아**
+```text
+그 이름을 어디서 봤는데. 사진에는 이름 안 나왔잖아.
+```
+
+### `day4_after_sea_evidence_0_6`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+내가 아직 설화라는 말을 꺼내지 않았다는 걸 세아도 알아챘다. 의자가 뒤로 조금 밀렸다.
+```
+
+### `day4_after_sea_evidence_1_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+첫날 앱 껐던 것도 너한테 알림이 왔어?
+```
+
+### `day4_after_sea_evidence_1_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+세아는 바로 고개를 끄덕였다가 대답이 먼저 나간 걸 알고 입을 다물었다.
+```
+
+### `day4_after_sea_evidence_1_3`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**세아**
+```text
+배터리 꺼진 줄 알았어. 그래서 확인했어.
+```
+
+### `day4_after_sea_evidence_1_4`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+앱만 껐는데 배터리가 왜 나와.
+```
+
+### `day4_after_sea_evidence_1_5`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**나**
+```text
+휴대폰이 세아 손 안에서 한 번 울렸다. 세아는 알림을 보지 않고 진동을 멈췄다.
+```
+
+### `day4_after_sea_evidence_1_6`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_serious`_
+
+**세아**
+```text
+네가 끄면 나한테도 물어봐. 왜 못 막았냐고. 나도 답을 해야 하니까.
+```
+
+### `day4_after_sea_followup_0`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+
+**나**
+```text
+상대가 말을 멈췄고 이번에는 내가 먼저 입을 열었다.
+```
+
+**선택지**
+1. 들은 내용을 수첩에 적는다
+2. 대답이 달라진 이유를 묻는다
+3. 대화를 끝내고 물러난다
+
+### `day4_after_sea_followup_0_write_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+펜을 꺼내 방금 들은 말을 적자 상대는 어느 줄을 적는지 보려고 몸을 기울였다.
+```
+
+### `day4_after_sea_followup_0_write_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+수첩을 덮어 주머니에 넣었다. 말을 바꾸려면 이 기록부터 설명해야 할 것이다.
+```
+
+### `day4_after_sea_followup_0_press_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+그때는 그렇게 말할 수밖에 없었어. 네가 들은 사람이 나 하나는 아니잖아.
+```
+
+### `day4_after_sea_followup_0_press_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+세아는 복도 쪽을 봤다. 문 유리 밖에 사람 그림자가 멈춰 있었다.
+```
+
+### `day4_after_sea_followup_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+
+**나**
+```text
+상대가 말을 멈췄다. 이번에는 내가 먼저 입을 열었다.
+```
+
+**선택지**
+1. 들은 내용을 수첩에 적는다
+2. 대답이 달라진 이유를 묻는다
+3. 대화를 끝내고 물러난다
+
+### `day4_after_sea_followup_1_write_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+펜을 꺼내 방금 들은 말을 적었다. 어느 줄을 적는지 보려고 상대가 몸을 기울였다.
+```
+
+### `day4_after_sea_followup_1_write_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_stare`_
+
+**나**
+```text
+수첩을 덮어 주머니에 넣었다. 말을 바꾸려면 이 기록부터 설명해야 할 것이다.
+```
+
+### `day4_after_sea_followup_1_press_1`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**세아**
+```text
+그때는 그렇게 말할 수밖에 없었어. 네가 들은 사람이 나 하나는 아니잖아.
+```
+
+### `day4_after_sea_followup_1_press_2`
+
+_source: `day4_3_afterschool.js / day4_afterschool.json`_
+_캐릭터: `sea_broken_smile`_
+
+**나**
+```text
+세아는 복도 쪽을 봤다. 문 유리 밖에 사람 그림자가 멈춰 있었다.
+```
+
 ## Day 4 - 밤 (`day4_4_night.js`)
 
 ### `day4_night_start`
@@ -13796,6 +18913,416 @@ _배경: `home`_
 **지문**
 ```text
 *— 4일차 종료 —*
+```
+
+### `day4_night_truth_sea_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+_배경: `closeup_safety_app` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+책상 위에 기록을 날짜순으로 놓았다. 세아의 메모에는 같은 음식 이름이 여러 번 지워져 있었다.
+```
+
+### `day4_night_truth_sea_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+_배경: `closeup_safety_app` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+같은 질문이 적힌 메모를 세 장 골랐다.
+```
+
+**선택지**
+1. 날짜순으로 정렬한다
+2. 지운 답부터 읽는다
+3. 이번 주 기록과 대조한다
+
+### `day4_night_truth_sea_3`
+
+_source: `day4_4_night.js / day4_night.json`_
+_배경: `closeup_safety_app` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+내가 말하기 전에 맞혔던 취향은 열두 번 고친 답이었다. 그동안 모른다고 쓴 칸도 있었다.
+```
+
+### `day4_night_truth_sea_4`
+
+_source: `day4_4_night.js / day4_night.json`_
+_배경: `closeup_safety_app` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+안전 앱을 켜자 생활 기록 아래에 관리자 패널이 접혀 있었다. 열람만 가능한 항목이었다.
+```
+
+### `day4_night_truth_sea_choice`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+세아가 내 취향을 알았던 이유를 기록에서 골랐다.
+```
+
+**선택지**
+1. 이전 주기마다 다른 답을 적어 뒀다
+2. 내 휴대폰 검색 기록만 읽었다
+3. 처음부터 우연히 취향이 같았다
+
+### `day4_night_truth_sea_right_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+같은 질문의 날짜가 서로 다른 해에 놓여 있었다. 첫 장과 마지막 장 사이에 열두 묶음이 있었다.
+```
+
+### `day4_night_truth_sea_right_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+먹다 남긴 반찬까지 적혀 있었다. 세아가 외운 건 정답만이 아니었다.
+```
+
+### `day4_night_truth_sea_right_3`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+메모 옆에 처음 싫다고 한 날을 적어 이번에 내 입으로 말한 날짜와 나란히 놓았다.
+```
+
+### `day4_night_truth_sea_wrong_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+검색 기록을 받은 날짜보다 음식 메모가 먼저였다. 그 설명으로는 첫 장을 설명할 수 없었다.
+```
+
+### `day4_night_truth_sea_wrong_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+처음 틀린 답 옆에 열두 번 수정한 흔적이 있었다. 같은 질문을 다시 읽고 메모를 고쳤다.
+```
+
+### `day4_night_truth_riin_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+투약 기록은 일곱 번째 묶음부터 숫자가 줄었다. 용량을 고친 칸마다 같은 서명이 있었다.
+```
+
+### `day4_night_truth_riin_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+설화의 이름이 사라진 날짜와 첫 감량 날짜를 나란히 놓으니 둘 사이에는 하루밖에 없었다.
+```
+
+### `day4_night_truth_riin_3`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+투약 기록 옆에 읽지 않은 별지가 붙어 있었다.
+```
+
+**선택지**
+1. 재고 수량을 확인한다
+2. 투약량 서명을 대조한다
+3. 지금 읽은 원본을 먼저 보관한다
+
+### `day4_night_truth_riin_4`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+줄어든 양 옆에는 회수량이 적혀 있었다. 밖으로 빠져나간 약이 따로 계산돼 있었다.
+```
+
+### `day4_night_truth_riin_choice`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+왜 일곱 번째 뒤부터 투약량이 줄었을까.
+```
+
+**선택지**
+1. 설화를 잃은 뒤 기억 손상을 줄이려 했다
+2. 약 재고가 부족했기 때문이다
+3. 실험이 끝나서 약이 필요 없었다
+
+### `day4_night_truth_riin_right_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+재고 장부에는 충분한 양이 남아 있었다. 그런데 내 처방 칸에서만 수치가 내려갔다.
+```
+
+### `day4_night_truth_riin_right_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+메모에는 손상 관찰이라고 적혀 있었다. 그 아래로 지운 이름의 첫 글자가 남아 있었다.
+```
+
+### `day4_night_truth_riin_right_3`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+리인의 서명 옆에 설화의 날짜를 적었다. 면죄부를 주는 말은 쓰지 않았다.
+```
+
+### `day4_night_truth_riin_wrong_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+같은 날 들어온 새 앰플 수량이 적혀 있었다. 약이 모자랐다는 설명은 맞지 않았다.
+```
+
+### `day4_night_truth_riin_wrong_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+실험 중단 문서도 없었다. 계속되는 실험 안에서 누군가 용량만 바꿨다.
+```
+
+### `day4_night_truth_eunsu_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+이사회 보고서의 유효 칸에 동그라미가 있었다. 내부 관찰 기록에는 같은 날 폐기 검토가 적혀 있었다.
+```
+
+### `day4_night_truth_eunsu_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+은수 선생님의 서명이 양쪽에 모두 남아 있었다. 틀린 서류 하나가 아니라 다른 보고 두 개였다.
+```
+
+### `day4_night_truth_eunsu_3`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+열세 번째까지 날짜를 넘기는 동안 다음 주기를 승인받은 근거마다 유효라는 말이 반복됐다.
+```
+
+### `day4_night_truth_eunsu_4`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+시험이 끝나면 나를 다른 데로 보내야 한다. 보고서는 나를 보내지 않을 이유를 계속 만들고 있었다.
+```
+
+### `day4_night_truth_eunsu_choice`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+선생님은 왜 서로 다른 보고를 올렸을까.
+```
+
+**선택지**
+1. 실험을 이어 가며 나를 교실에 붙잡으려 했다
+2. 서명만 빌려준 문서라 내용을 몰랐다
+3. 재단에서 졸업 허가를 받으려 했다
+
+### `day4_night_truth_eunsu_right_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+졸업 승인 칸은 열세 번 모두 비어 있었다. 유효라는 도장은 나를 살리는 말이면서 남기는 말이었다.
+```
+
+### `day4_night_truth_eunsu_right_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+서류를 덮고 선생님이 했던 말을 적었다. 끝까지 내 반에 있으라는 말이었다.
+```
+
+### `day4_night_truth_eunsu_right_3`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+같은 문장 밑에 다른 뜻을 억지로 쓰지 않았다. 선생님에게 직접 물을 자리를 남겨 뒀다.
+```
+
+### `day4_night_truth_eunsu_wrong_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+내용을 몰랐다면 고쳐 쓴 투입 날짜를 설명할 수 없었다. 서명 아래 필적도 선생님의 것이었다.
+```
+
+### `day4_night_truth_eunsu_wrong_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+졸업 승인란은 한 번도 채워지지 않았다. 나는 다시 내부 관찰 기록으로 돌아갔다.
+```
+
+### `day4_night_truth_complete_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+_캐릭터: `seolhwa_sad`_
+
+**나**
+```text
+세 기록의 날짜가 한 줄로 이어지자 같은 일을 누가 숨겼고 누가 조금 바꿨는지 구분됐다.
+```
+
+### `day4_night_truth_complete_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+_캐릭터: `seolhwa_sad`_
+
+**나**
+```text
+내일 물어볼 질문은 하나로 줄지 않았다. 인물마다 다른 종이를 접어 따로 넣었다.
+```
+
+### `day4_night_truth_complete_3`
+
+_source: `day4_4_night.js / day4_night.json`_
+_캐릭터: `seolhwa_sad`_
+
+**나**
+```text
+왼손으로 마지막 날짜를 쓰자 설화가 내 손등을 봤다가 조용히 고개를 끄덕였다.
+```
+
+### `day4_night_truth_partial_1`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+맞물리지 않는 날짜는 빈칸으로 남겼다. 아는 척 채우면 내일 같은 질문을 할 수 없었다.
+```
+
+### `day4_night_truth_partial_2`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+확인한 원본만 접어 넣었다. 나머지는 사진을 남기고 다시 펼칠 순서대로 쌓아 뒀다.
+```
+
+### `day4_history_callback_34`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+세아에게 직접 들은 말을 수첩에서 찾았다. 알림을 받은 사람과 권한을 바꾼 사람이 같은지는 구분해 적었다.
+```
+
+### `day4_history_callback_35`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+보건실 주머니에 걸렸던 열쇠고리를 그렸다. 약을 줄인 손이 어느 문을 여는지도 확인해야 했다.
+```
+
+### `day4_history_callback_36`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+내가 적어 둔 열쇠 이야기를 보고서 옆에 놓았다. 문이 안에서 열린다는 대답도 날짜와 함께 남겼다.
+```
+
+### `day4_expansion_action_8_a`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+종이 뒷면의 접힌 자국까지 맞추자 해가 달라도 같은 순서로 질문했다는 것이 보였다.
+```
+
+### `day4_expansion_action_8_b`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+처음 지운 답은 달걀을 좋아한다는 문장이었다. 정답을 적은 메모보다 그쪽에 손자국이 더 많이 남았다.
+```
+
+### `day4_expansion_action_9_a`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+입고 수량을 더하자 남은 양이 맞았다. 부족한 재고 때문에 내 몫을 줄인 것은 아니었다.
+```
+
+### `day4_expansion_action_9_b`
+
+_source: `day4_4_night.js / day4_night.json`_
+
+**나**
+```text
+서명 아래 날짜가 먼저 바뀌어 있었다. 리인은 다른 담당자보다 하루 앞서 수치를 고쳤다.
 ```
 
 # DAY 5 — 실제 게임 대사/지문
@@ -19290,12 +24817,14 @@ _source: `day5_4_night.js / day5_night.json`_
 
 **지문**
 ```text
-*미리보기를 실행할까?*
+서버에는 날짜가 다른 세 묶음의 기록이 남아 있었다.
 ```
 
 **선택지**
-1. PREVIEW 실행
-2. 닫기
+1. cycle_01.zip — 제1차 주기: 이상 환경 설계도 (PROJECT CUPID)
+2. cycle_07.log — 제7차 주기: 이설화 및 비상구 사건 기록
+3. cycle_12.log — 제12차 주기: 사진부 암실 및 #12 폐기 기록
+4. 아카이브 서버 접속 종료
 
 ### `day5_xover_preview_1`
 
@@ -20929,37 +26458,3687 @@ _source: `day5_4_night.js / day5_night.json`_
 *같이 빠져나온 세아는 학교와 떨어진 외부 보호 시설로 옮겨 갔다. 도착했다는 짧은 메시지 아래에 동네 빵집 봉투 사진이 한 장 딸려 왔다.*
 ```
 
+### `day5_ending_cage_sea_epilogue_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+첫 주가 지나자 교실 달력을 뜯어야 했다. 세아는 새 장을 넘기지 않고 모서리만 잘랐다.
+```
+
+### `day5_ending_cage_sea_epilogue_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**세아**
+```text
+달력은 신경 쓰지 마. 밖에 걸린 것도 틀렸어.
+```
+
+### `day5_ending_cage_sea_epilogue_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+창문 너머 나무에서는 잎이 자랐다. 교실 창가에는 철사로 묶은 벚꽃이 계속 걸려 있었다.
+```
+
+### `day5_ending_cage_sea_epilogue_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+종이 꽃잎 끝에 먼지가 쌓였다. 손을 뻗자 세아가 젖은 수건을 먼저 건넸다.
+```
+
+### `day5_ending_cage_sea_epilogue_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**세아**
+```text
+내가 닦을게. 너는 손 다치잖아.
+```
+
+### `day5_ending_cage_sea_epilogue_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+도시락 뚜껑을 열면 익은 정도도 잘린 두께도 어제와 같은 계란말이가 있었다.
+```
+
+### `day5_ending_cage_sea_epilogue_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+젓가락을 들지 않는 날에는 세아도 먹지 않아 두 도시락이 닫힌 채 저녁까지 남았다.
+```
+
+### `day5_ending_cage_sea_epilogue_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**세아**
+```text
+한 조각만 먹어. 그다음에는 안 물어볼게.
+```
+
+### `day5_ending_cage_sea_epilogue_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+한 조각을 먹으면 세아가 젓가락을 들었다. 다음 날에도 같은 부탁이 돌아왔다.
+```
+
+### `day5_ending_cage_sea_epilogue_10`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+교실 뒤편 서랍에는 내 공책이 쌓였다. 첫 장마다 날짜를 쓰다가 어느 날부터 날씨만 적었다.
+```
+
+### `day5_ending_cage_sea_epilogue_11`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+비라고 적은 날에도 창가 꽃은 젖지 않았다. 세아가 뿌린 향만 조금 진해졌다.
+```
+
+### `day5_ending_cage_sea_epilogue_12`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+바깥 운동장에서 졸업식 연습 방송이 들리자 세아가 창문을 닫으러 일어났다.
+```
+
+### `day5_ending_cage_sea_inside_choice`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**나**
+```text
+세아가 창문 손잡이에 손을 얹었다. 내 넥타이는 아직 매지 않은 채였다.
+```
+
+**선택지**
+1. 창밖을 본다
+2. 세아의 손을 잡는다
+
+### `day5_ending_cage_sea_window_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+운동장에 새 학생들이 줄을 섰다. 교문 쪽으로 움직이는 줄 끝에 빈자리가 하나 생겼다.
+```
+
+### `day5_ending_cage_sea_window_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+내 옆에 선 세아는 창에 비친 얼굴을 보면서도 바깥쪽은 보지 않았다.
+```
+
+### `day5_ending_cage_sea_window_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**세아**
+```text
+네 자리는 여기야. 저쪽에는 이름도 안 올렸어.
+```
+
+### `day5_ending_cage_sea_window_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+유리 너머에서 버스 문이 닫혔다. 나는 손바닥을 창에 댄 채 버스가 돌아 나가는 걸 봤다.
+```
+
+### `day5_ending_cage_sea_window_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+세아는 내 넥타이를 가져와 손에 감고 매듭을 만들기 전에 내가 돌아서길 기다렸다.
+```
+
+### `day5_ending_cage_sea_hand_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+세아 손은 창문 손잡이보다 차가웠다. 잡자마자 손가락이 내 손 사이로 들어왔다.
+```
+
+### `day5_ending_cage_sea_hand_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**세아**
+```text
+닫아도 돼?
+```
+
+### `day5_ending_cage_sea_hand_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+창문을 보지 않고 고개를 끄덕였다. 바깥 방송이 유리 한 장 너머로 멀어졌다.
+```
+
+### `day5_ending_cage_sea_hand_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+세아가 내 손을 자기 주머니에 넣었다. 놓으려면 먼저 손가락을 하나씩 펴야 했다.
+```
+
+### `day5_ending_cage_sea_hand_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+넥타이를 꺼내는 동안에도 한 손은 주머니에 남았다. 세아는 다른 손으로 매듭을 만들었다.
+```
+
+### `day5_ending_cage_sea_close_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**세아**
+```text
+내일도 늦잠 자도 돼. 내가 먼저 와 있을게.
+```
+
+### `day5_ending_cage_sea_close_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+달력에서 잘라 낸 숫자들이 휴지통에 쌓였다. 세아는 도시락 뚜껑을 닫고 꽃잎의 먼지를 털었다.
+```
+
+### `day5_ending_cage_sea_close_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_sea`_
+
+**나**
+```text
+교실 불이 꺼졌다. 복도 쪽 손잡이는 움직이지 않았고 안쪽 의자만 바닥을 긁었다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+선생님이 교탁 서랍에서 도장을 꺼내 뚜껑을 열고 출석부의 열세 번째 칸에 눌렀다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+종이가 파이도록 눌린 글씨를 읽었다. 졸업 유예, 그 밑의 작은 괄호에는 영구라고 적혀 있었다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**은수**
+```text
+이건 이사회로 안 보내요. 여기 보관하는 장부예요.
+```
+
+### `day5_ending_cage_eunsu_epilogue_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+선생님이 도장을 닫고 안경도 벗어 도장 옆에 나란히 놓았다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+복도에서 청소 카트가 지나갔다. 선생님은 문 안쪽 잠금장치를 확인한 뒤에야 돌아왔다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**은수**
+```text
+밖에는 폐기했다고 보고했어요. 찾으러 오는 사람은 없을 거예요.
+```
+
+### `day5_ending_cage_eunsu_epilogue_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+제 이름도요?
+```
+
+### `day5_ending_cage_eunsu_epilogue_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**은수**
+```text
+이름은 남겨 뒀어요. 제가 부를 이름까지 지울 필요는 없잖아요.
+```
+
+### `day5_ending_cage_eunsu_epilogue_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+교탁 위에 은색 밴드가 놓였다. 선생님이 손목을 달라고 손바닥을 폈다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_10`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+나는 주머니에서 손을 꺼내지 않았다. 선생님은 내 손 대신 빈 의자를 당겼다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_11`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**은수**
+```text
+앉아요. 서서 기다리면 다리 아파요.
+```
+
+### `day5_ending_cage_eunsu_epilogue_12`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+의자에 앉자 손목 높이가 교탁과 같아졌다. 밴드 안쪽에 얇은 완충재가 붙어 있었다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_13`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+선생님이 천을 대고 손목을 닦았다. 버클이 닫힐 때 작은 금속 소리가 났다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_14`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**은수**
+```text
+너무 조이면 말해요. 그건 내가 풀 수 있어요.
+```
+
+### `day5_ending_cage_eunsu_epilogue_15`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+버클 아래로 손가락 하나가 들어갔다. 그 틈을 확인한 선생님이 내 소매를 내려 줬다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_16`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+창문에 석양이 길게 비쳤다. 출석부의 다른 칸들은 이미 검은 선으로 지워져 있었다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_17`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+내 칸 옆에는 선생님 이름이 있었다. 담당자라는 인쇄 글자 위에 자로 두 번 밑줄을 그었다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_18`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**은수**
+```text
+내일도 여기서 출석 부를 거예요. 대답만 해 줘요.
+```
+
+### `day5_ending_cage_eunsu_epilogue_19`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+다른 학생은요?
+```
+
+### `day5_ending_cage_eunsu_epilogue_20`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**은수**
+```text
+다른 교실에 있어요. 이 교실에는 안 들어와요.
+```
+
+### `day5_ending_cage_eunsu_epilogue_21`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+교탁 위 안경 너머로 빈 책상들이 보였다. 선생님은 그중 두 개를 창가에 붙였다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_22`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+내 책과 선생님 책이 같은 쪽을 향했다. 나는 문이 등 뒤에 오도록 앉았다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_23`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**은수**
+```text
+자리 바꾸고 싶으면 말해요. 창가도 괜찮고, 교탁 바로 앞도 괜찮아요.
+```
+
+### `day5_ending_cage_eunsu_epilogue_24`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+손목 밴드는 책상에 닿을 때마다 소리를 냈다. 선생님은 그쪽에 작은 천을 접어 놓았다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_25`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+밖에서 마지막 종이 울리자 선생님은 출석부를 펴고 열세 번째 줄에 펜을 댔다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_26`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+내 이름이 불렸다. 대답하지 않는 동안 펜 끝이 종이 위에 계속 머물렀다.
+```
+
+### `day5_ending_cage_eunsu_epilogue_27`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_cage_eunsu`_
+
+**나**
+```text
+선생님은 재촉하지 않았다. 교탁 위 도장 뚜껑만 손끝으로 반듯하게 돌려놓았다.
+```
+
+### `day5_ending_escape_epilogue_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+첫 버스는 터미널 뒤편에서 출발했다. 유나는 표를 사는 동안 카메라를 코트 안으로 넣었다.
+```
+
+### `day5_ending_escape_epilogue_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+좌석에 앉자 젖은 신발에서 물이 떨어졌다. 둘 다 발을 바닥에 붙이지 못한 채 한참 있었다.
+```
+
+### `day5_ending_escape_epilogue_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+운전사는 표를 걷어 가며 학교 이름도 우리 이름도 묻지 않았다.
+```
+
+### `day5_ending_escape_epilogue_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+버스가 산길을 내려가자 휴대폰 신호가 돌아왔다. 유나는 켜지는 화면을 손바닥으로 가렸다.
+```
+
+### `day5_ending_escape_epilogue_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+앱은 열지 마. 끄는 것도 지금은 하지 마.
+```
+
+### `day5_ending_escape_epilogue_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+첫 터미널에서 내리지 않았다. 사람들이 바뀌고 빈 좌석이 늘어날 때까지 차 안에 남았다.
+```
+
+### `day5_ending_escape_epilogue_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+두 번째 정류장 옆에는 작은 숙박업소가 있었다. 간판 불이 꺼진 쪽으로 들어갔다.
+```
+
+### `day5_ending_escape_epilogue_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+카운터 직원이 신분증을 달라고 했다. 내 번호를 조회하던 손이 두 번 멈췄다.
+```
+
+### `day5_ending_escape_epilogue_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+등록된 정보가 없다고 했다. 유나의 학생증은 이미 만료된 카드로 나왔다.
+```
+
+### `day5_ending_escape_epilogue_10`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+직원은 다시 입력하라고 종이를 내밀었다. 같은 숫자를 적는 동안 유나가 내 팔을 잡았다.
+```
+
+### `day5_ending_escape_epilogue_11`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+그냥 나가자. 여기 말고 다른 데 가면 돼.
+```
+
+### `day5_ending_escape_epilogue_12`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+문밖에서 종이를 찢고 이름이 적힌 부분은 작게 접어 주머니에 넣었다.
+```
+
+### `day5_ending_escape_epilogue_13`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+우리는 역 뒤편 옥탑방을 빌렸다. 집주인은 방값과 보일러 켜는 법만 말해 줬다.
+```
+
+### `day5_ending_escape_epilogue_14`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+빨랫줄에 교복을 걸자 물방울이 양동이에 떨어졌다. 유나가 내 소매를 자기 옷과 떨어뜨려 걸었다.
+```
+
+### `day5_ending_escape_epilogue_15`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+학교에서 가져온 증거는 부족했다. 사진 속 날짜만으로 사람을 찾으러 올 수는 없었다.
+```
+
+### `day5_ending_escape_epilogue_16`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+전화할 번호를 적다가 지웠다. 누구에게 설명하든 내 이름부터 확인할 것이었다.
+```
+
+### `day5_ending_escape_epilogue_17`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+오늘은 밥부터 먹자. 내일 설명해도 되는 건 내일 하고.
+```
+
+### `day5_ending_escape_epilogue_18`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+편의점 봉투에서 삼각김밥 두 개가 나왔다. 고르느라 오래 서 있었는지 밥이 차가웠다.
+```
+
+### `day5_ending_escape_epilogue_19`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+유나는 내가 먼저 고를 때까지 봉투를 벌리고 있었다. 나는 어느 쪽이든 괜찮다는 말을 하지 않았다.
+```
+
+### `day5_ending_escape_epilogue_20`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+빈 포장지를 접어 버리고 창문을 열었다. 맞은편 집에서는 학교 방송 대신 설거지 소리가 났다.
+```
+
+### `day5_ending_escape_epilogue_21`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+유나가 카메라에서 남은 필름 수를 확인하니 아직 두 장을 찍을 수 있었다.
+```
+
+### `day5_ending_escape_epilogue_22`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+학교 말고 다른 데서 찍은 사진은 한 장도 없더라.
+```
+
+### `day5_ending_escape_epilogue_23`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+나는 창가에 서서 유나가 어디를 보라고 할 때까지 기다리지 않고 렌즈를 봤다.
+```
+
+### `day5_ending_escape_epilogue_24`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+유나가 카메라를 든 채 내 대답을 기다렸다.
+```
+
+**선택지**
+1. 렌즈를 보고 선다
+2. 유나에게 먼저 찍으라고 한다
+3. 창문 옆에 나란히 선다
+
+### `day5_ending_escape_epilogue_25`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+그대로 있어. 다 나온다.
+```
+
+### `day5_ending_escape_epilogue_26`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+두 번째 셔터 소리가 방 안에서 짧게 울렸다. 유나는 카메라를 받으며 처음으로 웃었다.
+```
+
+### `day5_ending_escape_epilogue_27`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+사진 뒷면에 쓸 이름을 정했다. 내 것은 내가 썼고 유나 것은 유나가 골랐다.
+```
+
+### `day5_ending_escape_epilogue_28`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+새 이름이 서툴러 두 번 불러 봤다. 유나는 첫 번째에는 못 듣고 두 번째에 돌아봤다.
+```
+
+### `day5_ending_escape_epilogue_29`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+주민등록 칸도 학적 칸도 없는 종이였다. 두 이름과 오늘 날짜만 나란히 놓였다.
+```
+
+### `day5_ending_escape_epilogue_30`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `new_place` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+필름을 맡길 곳을 찾으러 내려갔다. 유나는 문을 잠그고 열쇠를 내 손에 한 번 쥐여 줬다.
+```
+
+### `day5_ending_escape_riin_after_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+가방 바닥에 현금 봉투가 끼어 있었다. 보건실에서 건넨 수건을 빼자 봉투가 함께 나왔다.
+```
+
+### `day5_ending_escape_riin_after_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+안에는 접힌 지폐와 처방전 사본이 있었다. 약 이름 옆에 복용 중단이라는 글씨가 붙었다.
+```
+
+### `day5_ending_escape_riin_after_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+리인의 서명은 없었다. 대신 근처 응급실 주소가 종이 끝에 적혀 있었다.
+```
+
+### `day5_ending_escape_riin_after_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+투약 날짜를 옮겨 적은 줄이 열세 개였다. 마지막 줄에는 오늘 시간을 분 단위로 써 뒀다.
+```
+
+### `day5_ending_escape_riin_after_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+유나가 종이를 읽고 내 팔을 봤다. 나는 소매를 내려 주사 자국을 가렸다.
+```
+
+### `day5_ending_escape_riin_after_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+봉투 안쪽에는 약 봉투를 버리지 말라는 짧은 메모가 더 있었다.
+```
+
+### `day5_ending_escape_riin_after_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+병원에서 먼저 보여 줄 종이를 맨 앞에 넣었다. 현금은 유나와 반씩 나눠 다른 주머니에 뒀다.
+```
+
+### `day5_ending_escape_riin_after_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+리인에게 연락하지는 않고 종이 모서리에 손자국만 남긴 채 가방을 닫았다.
+```
+
+### `day5_ending_escape_riin_after_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+기다릴 때 쓰라던 수건은 버스 좌석에 깔았다. 젖은 옷에서 물이 더 이상 떨어지지 않았다.
+```
+
+### `day5_ending_escape_sea_after_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_scared`_
+
+**나**
+```text
+무전기에서 세아의 목소리가 나왔다. 우리 발소리가 나는 쪽과 반대 복도 번호를 불렀다.
+```
+
+### `day5_ending_escape_sea_after_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_scared`_
+
+**세아**
+```text
+봤어요. 계단 위로 올라갔어요. 제가 따라갈게요.
+```
+
+### `day5_ending_escape_sea_after_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_scared`_
+
+**나**
+```text
+유나가 내 팔을 당기더니 무전기 소리를 줄이지 않고 자기 가방 안으로 밀었다.
+```
+
+### `day5_ending_escape_sea_after_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_scared`_
+
+**나**
+```text
+달리는 발소리가 멀어졌다. 세아는 따라오라는 말을 계속하며 반대쪽 문을 열었다.
+```
+
+### `day5_ending_escape_sea_after_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_scared`_
+
+**나**
+```text
+나는 걸음을 멈추지 않았다. 뒤돌아보면 문 닫히기 전에 세아와 눈이 마주칠 것 같았다.
+```
+
+### `day5_ending_escape_sea_after_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_scared`_
+
+**나**
+```text
+마지막 무전에는 이름이 없었다. 문 열렸으니까 빨리 가라는 말만 짧게 들렸다.
+```
+
+### `day5_ending_escape_sea_after_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_scared`_
+
+**나**
+```text
+우리 앞의 비상구 손잡이가 내려가 있었다. 문에 끼운 작은 고무 쐐기가 끝까지 버텼다.
+```
+
+### `day5_ending_escape_sea_after_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_scared`_
+
+**나**
+```text
+바깥으로 나온 뒤 쐐기를 뺐다. 세아가 도시락 뚜껑에 쓰던 분홍 고무줄이 감겨 있었다.
+```
+
+### `day5_ending_escape_sea_after_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_scared`_
+
+**나**
+```text
+주머니에 쐐기를 넣고 무전기는 빗물 웅덩이 밖에 내려놓은 뒤 유나를 따라갔다.
+```
+
+### `day5_ending_resist_epilogue_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+국도변에서 첫 트럭을 보냈다. 선생님이 아직 준비가 안 됐다며 서류 가방을 무릎에 놓았다.
+```
+
+### `day5_ending_resist_epilogue_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+종이 모서리가 물에 젖어 서로 붙자 선생님은 손톱으로 한 장씩 떼어 빈 봉투에 넣었다.
+```
+
+### `day5_ending_resist_epilogue_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**은수**
+```text
+어느 게 원본인지 바뀌면 안 돼요. 내 서명 있는 쪽을 앞에 두고요.
+```
+
+### `day5_ending_resist_epilogue_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+버스 정류장 지붕 아래로 자리를 옮겼다. 선생님이 안경을 벗자 눈가에 빗물이 고였다.
+```
+
+### `day5_ending_resist_epilogue_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+울고 계세요?
+```
+
+### `day5_ending_resist_epilogue_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+선생님은 소매로 닦다가 손을 내렸다. 젖은 종이에 물을 떨어뜨리지 않으려고 얼굴을 돌렸다.
+```
+
+### `day5_ending_resist_epilogue_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**은수**
+```text
+세 번째였어요. 그때 네가 나한테 밥 먹었냐고 물었어요.
+```
+
+### `day5_ending_resist_epilogue_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+기억에 없는 말이었다. 선생님이 나를 보자 모른다고 고개를 저었다.
+```
+
+### `day5_ending_resist_epilogue_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**은수**
+```text
+알아요. 너는 기억 안 나죠. 그 말을 나만 갖고 있었어요.
+```
+
+### `day5_ending_resist_epilogue_10`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+가방 위에서 선생님의 손이 떨렸다. 서류를 대신 잡자 손바닥을 바닥에 대고 앉았다.
+```
+
+### `day5_ending_resist_epilogue_11`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**은수**
+```text
+그래서 다음날도 보고 싶었어요. 다음 학기도, 다음에도.
+```
+
+### `day5_ending_resist_epilogue_12`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+그래서 계속하셨어요?
+```
+
+### `day5_ending_resist_epilogue_13`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+선생님은 대답하지 못하고 고개를 숙인 채 안경 다리를 접었다 폈다.
+```
+
+### `day5_ending_resist_epilogue_14`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**은수**
+```text
+그게 이유가 되면 안 됐어요. 내가 쓰는 보고서에는 넣을 수 없는 말이었어요.
+```
+
+### `day5_ending_resist_epilogue_15`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+나는 그 문장을 대신 써 주지 않았다. 선생님 이름 옆에 서명할 칸을 가리켰다.
+```
+
+### `day5_ending_resist_epilogue_16`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**은수**
+```text
+이번에는 내가 한 걸 전부 쓸게요. 네가 나를 위해 덜 말할 필요 없어요.
+```
+
+### `day5_ending_resist_epilogue_17`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+선생님이 차가운 버스 정류장 의자에 종이를 받치고 첫 줄에 자기 이름부터 적었다.
+```
+
+### `day5_ending_resist_epilogue_18`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+지운 자국을 가리지 않고 내가 읽을 수 있도록 종이를 돌려 그대로 내밀었다.
+```
+
+### `day5_ending_resist_epilogue_19`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+멀리서 버스가 왔다. 선생님은 그제야 일어났지만 내가 먼저 타라고 길을 비켰다.
+```
+
+### `day5_ending_resist_epilogue_20`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+나는 서류 가방을 들고 계단을 올랐다. 선생님은 운전사에게 행선지를 확인한 뒤 따라왔다.
+```
+
+### `day5_ending_resist_epilogue_21`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+우리는 나란히 앉지 않았다. 복도를 사이에 두고 같은 정류장 안내를 들었다.
+```
+
+### `day5_ending_resist_epilogue_22`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+선생님이 가방 속 휴대폰을 꺼내 학교로 걸려 온 전화를 끄고 신고 번호를 직접 눌렀다.
+```
+
+### `day5_ending_resist_epilogue_23`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+통화가 연결되자 연구 책임자라고 말했다. 담임교사라는 말은 뒤에 붙었다.
+```
+
+### `day5_ending_resist_epilogue_24`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+나는 창밖을 보며 왼손을 폈다. 종이 가방 손잡이 자국이 손바닥에 남아 있었다.
+```
+
+### `day5_ending_resist_epilogue_25`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+버스가 산을 벗어날 때도 선생님은 통화를 끊지 않은 채 자신의 주소를 말하고 있었다.
+```
+
+### `day5_ending_resist_epilogue_26`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / 캐릭터: `eunsu_crying`_
+
+**나**
+```text
+다음 정류장 이름은 처음 듣는 이름이었다. 나는 안내 방송을 끝까지 들었다.
+```
+
+### `day5_ending_forget_epilogue_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+새 교복 주머니에 들어 있던 버스표는 언제 넣었는지 몰라 날짜부터 확인했다.
+```
+
+### `day5_ending_forget_epilogue_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+오늘 날짜였다. 나는 구겨진 표를 펴고 교문으로 들어갔다.
+```
+
+### `day5_ending_forget_epilogue_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+벚꽃 아래에서 손을 흔든 학생 하나가 내 쪽으로 곧장 걸어왔다. 처음 보는 얼굴이었다.
+```
+
+### `day5_ending_forget_epilogue_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**세아**
+```text
+처음이지? 교실 같이 가자. 나도 그쪽이야.
+```
+
+### `day5_ending_forget_epilogue_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+학생의 손이 왼쪽으로 뻗자 손바닥을 주머니 안에서 쥐었다. 손톱 자국이 금방 지워졌다.
+```
+
+### `day5_ending_forget_epilogue_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+신발 끈이 풀렸다고 둘러대고 멈췄다. 세아는 내 앞에서 기다리며 같은 쪽 끈을 봤다.
+```
+
+### `day5_ending_forget_epilogue_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+복도 창가에는 카메라를 든 학생이 있었다. 내가 지나가자 렌즈 캡을 닫았다.
+```
+
+### `day5_ending_forget_epilogue_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**유나**
+```text
+사진은 나중에 찍어도 돼요. 지금 안 찍어도.
+```
+
+### `day5_ending_forget_epilogue_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+나는 부탁한 적이 없다고 웃었다. 그 학생은 카메라를 내리고 먼저 고개를 돌렸다.
+```
+
+### `day5_ending_forget_epilogue_10`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+보건실 앞에서 선생님이 나왔다. 컵을 들고 있었는데 내 얼굴을 보고 손을 내렸다.
+```
+
+### `day5_ending_forget_epilogue_11`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**리인**
+```text
+아침은 먹었어? 안 먹었으면 차 말고 물부터.
+```
+
+### `day5_ending_forget_epilogue_12`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+괜찮다고 대답하고 걸었다. 입 안에서 아직 마시지 않은 차의 맛이 잠깐 났다.
+```
+
+### `day5_ending_forget_epilogue_13`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+문 앞의 담임 선생님이 출석부를 펴고 내 이름을 묻기 전에 자리를 가리켰다.
+```
+
+### `day5_ending_forget_epilogue_14`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**은수**
+```text
+창가 세 번째예요. 가방은 책상 안에 넣으면 돼요.
+```
+
+### `day5_ending_forget_epilogue_15`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+책상 안쪽을 더듬자 손끝에 파인 선이 걸렸다. 왼손으로 다시 만져 모양을 찾았다.
+```
+
+### `day5_ending_forget_epilogue_16`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+도망쳐. 손가락이 글자 세 개를 따라 움직였다. 나는 손을 꺼내 먼지를 털었다.
+```
+
+### `day5_ending_forget_epilogue_17`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+누가 장난쳐 놨네.
+```
+
+### `day5_ending_forget_epilogue_18`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+뒤편에서 누군가 의자를 끌었다. 돌아보니 빈 책상 하나가 벽 쪽으로 붙어 있었다.
+```
+
+### `day5_ending_forget_epilogue_19`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+세아가 새 볼펜을 건넸다. 포장을 뜯기도 전에 엄지가 고무 그립의 홈에 들어갔다.
+```
+
+### `day5_ending_forget_epilogue_20`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+손을 바꿔 쥐고 노트에 이름을 썼다. 지우개 가루가 남아 있어 손바닥으로 쓸었다.
+```
+
+### `day5_ending_forget_epilogue_21`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+교실 시계가 한 칸 움직였다. 선생님이 출석을 부르는 동안 나는 첫 장에 날짜를 적었다.
+```
+
+### `day5_ending_forget_epilogue_22`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+숫자 끝이 위로 튀었다. 선생님의 펜 끝도 같은 자리에서 잠깐 멎었다.
+```
+
+### `day5_ending_forget_epilogue_23`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+창밖 나무에서 꽃잎이 떨어졌다. 내 책상에는 닿지 않았는데 손으로 책을 덮었다.
+```
+
+### `day5_ending_forget_epilogue_24`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+그 행동이 우스워 혼자 웃자 세아도 같이 웃고 교과서를 펴 줬다.
+```
+
+### `day5_ending_forget_epilogue_25`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `classroom`_
+
+**나**
+```text
+책상 밑의 홈에는 아직 먼지가 남았다. 왼손 손톱 끝에 끼인 것만 쉬는 시간까지 지워지지 않았다.
+```
+
+### `day5_ending_ghost_epilogue_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+비상계단 난간에 손자국이 두 개 남았다. 설화가 잡은 쪽에는 물기가 없었다.
+```
+
+### `day5_ending_ghost_epilogue_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**설화**
+```text
+내려가. 발밑부터 봐. 여기 마지막 칸이 짧아.
+```
+
+### `day5_ending_ghost_epilogue_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+발을 내리며 뒤돌아보니 설화의 신발 끝이 계단 모서리와 조금 겹쳐 보였다.
+```
+
+### `day5_ending_ghost_epilogue_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+같이 내려오면 되잖아.
+```
+
+### `day5_ending_ghost_epilogue_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+설화가 한 계단을 내려오자 난간을 잡은 손끝부터 배경의 페인트 색이 비쳤다.
+```
+
+### `day5_ending_ghost_epilogue_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**설화**
+```text
+나 여기서부터는 못 가. 네가 문 열었을 때 알았어.
+```
+
+### `day5_ending_ghost_epilogue_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+손을 뻗자 설화는 피하지 않았다. 손가락을 맞잡으려 했지만 난간의 찬 금속만 닿았다.
+```
+
+### `day5_ending_ghost_epilogue_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**설화**
+```text
+괜찮다는 말은 하지 마. 네가 괜찮을 일이 아니니까.
+```
+
+### `day5_ending_ghost_epilogue_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+나는 입을 다물고 왼손을 폈고 설화는 손바닥의 선을 끝까지 내려다봤다.
+```
+
+### `day5_ending_ghost_epilogue_10`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**설화**
+```text
+이번에는 내가 밀었어. 밖에 나가서는 네 다리로 걸어.
+```
+
+### `day5_ending_ghost_epilogue_11`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+계단 아래에서 바람이 올라왔다. 설화의 머리카락 끝이 밝아졌다가 난간 뒤로 사라졌다.
+```
+
+### `day5_ending_ghost_epilogue_12`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+이름은 기억할게.
+```
+
+### `day5_ending_ghost_epilogue_13`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**설화**
+```text
+적어. 기억하는 건 네가 너무 많이 해 봤잖아.
+```
+
+### `day5_ending_ghost_epilogue_14`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+설화가 웃었다. 얼굴보다 문 옆의 하얀 벽이 먼저 보이기 시작했다.
+```
+
+### `day5_ending_ghost_epilogue_15`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+눈을 감으면 마지막 표정을 다시 틀리게 기억할 것 같아 고개를 숙이지 않았다.
+```
+
+### `day5_ending_ghost_epilogue_16`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+비상구를 나오자 새벽 바닥이 젖어 있었다. 내 그림자 하나가 계단 밑까지 이어졌다.
+```
+
+### `day5_ending_ghost_epilogue_17`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+첫 가게가 문을 열 때까지 걸었다. 주인이 의자를 내줬지만 나는 노트를 먼저 샀다.
+```
+
+### `day5_ending_ghost_epilogue_18`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+왼손으로 표지를 넘기니 새 종이가 손바닥에 달라붙어 한 장을 다시 떼었다.
+```
+
+### `day5_ending_ghost_epilogue_19`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+이설화. 세 글자를 쓰는 동안 펜촉이 두 번 멎었다.
+```
+
+### `day5_ending_ghost_epilogue_20`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+다음 줄에 일곱 번째라고 적고 그 밑에는 내가 직접 본 것과 들은 것을 나눠 썼다.
+```
+
+### `day5_ending_ghost_epilogue_21`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+펜을 오른손으로 옮기지 않았다. 손목이 굳어 글씨가 기울어도 그대로 뒀다.
+```
+
+### `day5_ending_ghost_epilogue_22`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+가게 밖에서 버스가 멈춰 문 열리는 소리가 나자 노트를 덮었다.
+```
+
+### `day5_ending_ghost_epilogue_23`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+기사에게 목적지를 물었다. 알아듣지 못해 한 번 더 물어본 뒤에야 표를 샀다.
+```
+
+### `day5_ending_ghost_epilogue_24`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+자리에 앉아 창문을 조금 열자 왼쪽 귀로 바람 소리가 들어왔다.
+```
+
+### `day5_ending_ghost_epilogue_25`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `dawn_road` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+이번에는 다른 목소리가 섞이지 않았다. 나는 노트가 든 주머니에 손을 얹었다.
+```
+
+### `day5_ending_complicit_epilogue_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+서명 패드에서 펜을 떼자 새 카드가 나왔다. 사진 아래에는 부책임자와 #13이 적혀 있었다.
+```
+
+### `day5_ending_complicit_epilogue_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**은수**
+```text
+계단에서는 목에 걸어요. 문이 카드 위치를 읽어야 열려요.
+```
+
+### `day5_ending_complicit_epilogue_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+선생님이 줄 길이를 맞춰 줬다. 손목 밴드와 달리 카드는 내가 혼자 벗을 수 있었다.
+```
+
+### `day5_ending_complicit_epilogue_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+관제실 문이 열리자 벽면의 모니터가 한 번에 켜져 교실과 복도와 보건실을 비췄다.
+```
+
+### `day5_ending_complicit_epilogue_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+지하실 화면에서 유나가 고개를 들었다. 카메라를 찾는 시선이 내 쪽으로 왔다.
+```
+
+### `day5_ending_complicit_epilogue_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+세아는 교실에서 도시락 뚜껑을 닫고 있었다. 남은 반찬을 담은 칸은 손으로 가렸다.
+```
+
+### `day5_ending_complicit_epilogue_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+보건실의 빈 트레이 앞에 앉아 있던 리인은 카메라가 돌아가자 가운 주머니에서 손을 뺐다.
+```
+
+### `day5_ending_complicit_epilogue_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**은수**
+```text
+여기서는 소리도 들을 수 있어요. 켜려면 이 버튼이고요.
+```
+
+### `day5_ending_complicit_epilogue_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+버튼을 누르자 의자 다리 소리가 스피커에서 났다. 유나가 화면 밖으로 자리를 옮겼다.
+```
+
+### `day5_ending_complicit_epilogue_10`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+선생님이 내 어깨에 손을 얹었다. 모니터 가장자리의 내 얼굴은 새 카드 사진과 같은 각도였다.
+```
+
+### `day5_ending_complicit_epilogue_11`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**은수**
+```text
+다음 일정은 같이 확인해요. 승인 칸은 네 쪽에도 생겼어요.
+```
+
+### `day5_ending_complicit_epilogue_12`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors` / BGM: `complicit_cold_pulse.mp3`_
+
+**나**
+```text
+투약 계획표가 열렸다. 마지막 승인자의 이름은 아직 빈칸이었다.
+```
+
+### `day5_ending_complicit_control_choice`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**나**
+```text
+농도 조절 막대 아래에 승인 버튼이 있었다. 내 카드가 리더기에 꽂혀 있었다.
+```
+
+**선택지**
+1. 투약 농도를 낮추고 승인한다
+2. 기존 농도를 유지하고 승인한다
+3. 농도를 높이고 승인한다
+
+### `day5_ending_complicit_low_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+막대를 왼쪽으로 옮겼다. 투약량은 줄었지만 투입 예정자 숫자는 바뀌지 않았다.
+```
+
+### `day5_ending_complicit_low_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**은수**
+```text
+줄인 이유도 적어요. 다음 사람이 다시 늘리지 않게.
+```
+
+### `day5_ending_complicit_low_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+사유 칸에 손상을 줄이기 위해서라고 쓰자 선생님이 문장을 읽고 저장을 눌렀다.
+```
+
+### `day5_ending_complicit_low_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+보건실 화면에 새 지시가 떴다. 리인은 종이를 읽은 뒤 카메라 쪽을 한 번 봤다.
+```
+
+### `day5_ending_complicit_low_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+나는 소리를 껐다. 승인 기록의 첫 줄에는 여전히 내 이름이 남았다.
+```
+
+### `day5_ending_complicit_same_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+숫자를 바꾸지 않고 승인했다. 어제 쓰던 양이 오늘도 그대로 넘어갔다.
+```
+
+### `day5_ending_complicit_same_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**은수**
+```text
+유지가 제일 간단하죠. 바꾸면 설명할 항목이 늘어나니까.
+```
+
+### `day5_ending_complicit_same_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+선생님이 내 옆 모니터에 오늘 시간표를 띄웠다. 빈칸에는 다른 학생 이름이 들어갔다.
+```
+
+### `day5_ending_complicit_same_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+보건실의 리인이 앰플을 세 개 골랐다. 나는 숫자가 맞는지만 확인했다.
+```
+
+### `day5_ending_complicit_same_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+종이를 넘기려다 손을 멈췄다. 방금 승인한 페이지는 이미 읽기 전용으로 바뀌었다.
+```
+
+### `day5_ending_complicit_high_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+막대를 오른쪽으로 옮기자 예상 회복 시간이 늘어났고 경고 표시가 하나 붙었다.
+```
+
+### `day5_ending_complicit_high_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+선생님은 내 손을 막지 않았다. 사유 칸을 비워 두면 저장할 수 없다고만 말했다.
+```
+
+### `day5_ending_complicit_high_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+기억 잔존을 줄인다고 썼다. 예전 내 보고서에서 읽었던 표현이었다.
+```
+
+### `day5_ending_complicit_high_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+보건실 화면에서 리인이 고개를 저었다. 소리를 켜자 안 된다는 말이 짧게 나왔다.
+```
+
+### `day5_ending_complicit_high_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+내가 확인 버튼을 누르자 리인의 목소리가 끊기고 다음 일정이 화면을 덮었다.
+```
+
+### `day5_ending_complicit_close_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+승인 문서가 출력됐다. 선생님이 내 서명 칸을 확인하고 빈 의자를 옆으로 당겼다.
+```
+
+### `day5_ending_complicit_close_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**은수**
+```text
+수고했어요. 다음 보고는 네가 먼저 읽어 봐요.
+```
+
+### `day5_ending_complicit_close_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+벽시계의 초침과 화면 속 시계가 한 칸씩 함께 움직였다. 나는 두 시계가 어긋나는지만 봤다.
+```
+
+### `day5_ending_complicit_close_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+새 카드를 목에 걸자 모니터에 비친 줄이 넥타이와 나란히 내려왔다.
+```
+
+### `day5_ending_complicit_close_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `ending_complicit_monitors`_
+
+**나**
+```text
+유나가 화면 아래에서 입을 열었다. 나는 음량을 올리지 않고 다음 카메라를 눌렀다.
+```
+
+### `day5_archive_cycle07_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+기록의 첫 장에는 김태호라는 이름이 있었다. 얼굴 사진의 왼쪽 눈썹이 지금의 나와 같았다.
+```
+
+### `day5_archive_cycle07_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+복원된 녹화 화면 아래로 제7차 주기라는 표시가 떴다. 나는 그 안에서 왼손으로 가방끈을 쥐고 있었다.
+```
+
+### `day5_archive_cycle07_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+설화는 살아 있었다. 복도 등을 지나칠 때마다 머리카락의 은빛이 어깨 위에서 움직였다.
+```
+
+### `day5_archive_cycle07_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**설화**
+```text
+태호야. 문 닫히기 전에 들어와. 여기 경첩 소리 커.
+```
+
+### `day5_archive_cycle07_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+자료실 문을 잡아 주자 설화가 먼저 안으로 들어갔다. 신발을 벗어 발소리를 줄였다.
+```
+
+### `day5_archive_cycle07_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+창문은 높은 곳에 하나 있었다. 빗물이 방충망을 때려 종이에 젖은 냄새가 났다.
+```
+
+### `day5_archive_cycle07_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+나는 문고리에 접은 수건을 끼웠다. 설화가 주머니에서 작은 손전등을 꺼냈다.
+```
+
+### `day5_archive_cycle07_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**설화**
+```text
+기록함은 왼쪽부터. 오른쪽은 이번 학기 출석부야.
+```
+
+### `day5_archive_cycle07_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**김태호**
+```text
+어떻게 알아?
+```
+
+### `day5_archive_cycle07_10`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**설화**
+```text
+어제 청소할 때 봤어. 읽은 건 오늘이 처음이고.
+```
+
+### `day5_archive_cycle07_11`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+책장 아래쪽에서 철제 서랍을 당겼지만 종이 뭉치가 걸려 끝까지 열리지 않았다.
+```
+
+### `day5_archive_cycle07_12`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+설화가 손전등을 입에 물고 종이를 눌렀다. 나는 두 손으로 서랍을 조금 들어 올렸다.
+```
+
+### `day5_archive_cycle07_13`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+맨 위 봉투에는 투입이라는 말이 찍혀 있었다. 학교 서류에서 쓸 말은 아니었다.
+```
+
+### `day5_archive_cycle07_14`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+사진을 꺼내자 내 얼굴이 나왔다. 이름은 김태호가 아니었고 입학 날짜도 달랐다.
+```
+
+### `day5_archive_cycle07_15`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+다음 봉투도 같은 얼굴이었다. 이번에는 머리가 짧았고 어깨에 번호판을 대고 있었다.
+```
+
+### `day5_archive_cycle07_16`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+설화가 손전등을 내려놓자 빛이 천장으로 향하며 둘의 그림자가 벽에 길게 붙었다.
+```
+
+### `day5_archive_cycle07_17`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**설화**
+```text
+장난으로 만든 거면 좋겠다. 그런데 종이가 너무 많아.
+```
+
+### `day5_archive_cycle07_18`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+사진 여섯 장을 나란히 놓았다. 마지막 칸만 비어 있었다. 그 옆에 내 현재 이름이 적혀 있었다.
+```
+
+### `day5_archive_cycle07_19`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**김태호**
+```text
+내가 일곱 번째야?
+```
+
+### `day5_archive_cycle07_20`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+설화는 대답 대신 현재 봉투를 뒤집었다. 뒷면에 이번 주 날짜가 적혀 있었다.
+```
+
+### `day5_archive_cycle07_21`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+기억 확인, 적응 관찰, 재투입. 항목마다 서명이 있고 날짜가 끊기지 않았다.
+```
+
+### `day5_archive_cycle07_22`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+학교를 옮긴 기억을 말하려다 입을 다물었다. 버스를 어디서 탔는지 떠오르지 않았다.
+```
+
+### `day5_archive_cycle07_23`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**나**
+```text
+설화가 내 공책을 꺼내 앞장을 펴고 내가 적은 주소 옆에 작은 물음표를 붙였다.
+```
+
+### `day5_archive_cycle07_24`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_building_corridor` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_normal`_
+
+**설화**
+```text
+지금 답 만들지 마. 기억나는 것만 말해.
+```
+
+### `day5_archive_cycle07_25`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+나는 주소를 끝까지 읽지 못했다. 설화는 물음표를 지우지 않고 공책을 돌려줬다.
+```
+
+### `day5_archive_cycle07_26`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+복도 스피커가 켜졌다. 자료실 문 앞에 있던 수건이 작은 바람에 움직였다.
+```
+
+### `day5_archive_cycle07_27`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**[교내 방송]**
+```text
+구관 정기 점검입니다. 남아 있는 학생은 본관으로 이동하세요.
+```
+
+### `day5_archive_cycle07_28`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+설화가 시계를 봤다. 원래 점검 시간보다 이십 분 일렀다.
+```
+
+### `day5_archive_cycle07_29`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+나는 봉투 두 개를 가방에 넣었다. 나머지는 휴대폰으로 찍으려다 화면 밝기를 낮췄다.
+```
+
+### `day5_archive_cycle07_30`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**설화**
+```text
+밖에 나가서 켜. 지금은 그거 빛나면 보여.
+```
+
+### `day5_archive_cycle07_31`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+설화는 사진 한 장을 자기 교복 안주머니에 넣었다. 내 가방과 다른 쪽이었다.
+```
+
+### `day5_archive_cycle07_32`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+문을 조금 열자 복도 끝의 붉은 등이 보였다. 낮에는 켜지지 않던 등이었다.
+```
+
+### `day5_archive_cycle07_33`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+우리는 신발을 손에 들고 계단을 내려갔다. 벽에는 학교 안내도 대신 배관 번호가 붙어 있었다.
+```
+
+### `day5_archive_cycle07_34`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `underground_lab` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+아래층 문에는 비상구 표시가 있었다. 설화가 손전등을 끄고 손잡이에 손을 댔다.
+```
+
+### `day5_archive_cycle07_35`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+문은 잠겨 있지 않았다. 바깥에서 빗물이 문턱을 넘어 안쪽으로 흘렀다.
+```
+
+### `day5_archive_cycle07_36`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**김태호**
+```text
+여기서 나가면 담장 밖이야?
+```
+
+### `day5_archive_cycle07_37`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**설화**
+```text
+주차장 뒤. 담장 사이에 사람 지나갈 데 있어. 내가 낮에 봤어.
+```
+
+### `day5_archive_cycle07_38`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+나는 가방끈을 다시 쥐고 종이가 젖지 않도록 교복 앞섶을 덮었다.
+```
+
+### `day5_archive_cycle07_39`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+설화가 먼저 발을 내밀었다가 빗물이 양말까지 올라오자 잠깐 발끝을 들었다.
+```
+
+### `day5_archive_cycle07_40`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+우리 뒤에서 문이 부딪치자 손잡이가 벽에 닿기 전에 설화가 잡았다.
+```
+
+### `day5_archive_cycle07_41`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**은수**
+```text
+태호야. 선생님 쪽으로 와요.
+```
+
+### `day5_archive_cycle07_42`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+선생님은 계단 위에 서 있었다. 뒤의 두 사람은 손전등을 얼굴 높이로 들고 있었다.
+```
+
+### `day5_archive_cycle07_43`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+설화가 내 앞을 가렸다. 내 가방을 잡고 있던 손이 천천히 아래로 내려왔다.
+```
+
+### `day5_archive_cycle07_44`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**설화**
+```text
+자료실 문은 제가 열었어요. 얘는 저 따라온 거예요.
+```
+
+### `day5_archive_cycle07_45`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**은수**
+```text
+가방부터 내려놔요. 두 사람 다 다칠 필요 없어요.
+```
+
+### `day5_archive_cycle07_46`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+선생님 뒤의 남자가 한 계단 내려오다 발끝으로 물웅덩이를 밟아 검은 바지가 젖었다.
+```
+
+### `day5_archive_cycle07_47`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+설화가 문을 다시 열고 몸으로 문짝을 밀어 내 뒤의 통로를 넓혔다.
+```
+
+### `day5_archive_cycle07_48`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**김태호**
+```text
+너도 나와. 같이 나가면 돼.
+```
+
+### `day5_archive_cycle07_49`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3` / 캐릭터: `seolhwa_warning`_
+
+**나**
+```text
+설화는 내 왼손을 잡았다. 사진 봉투를 쥔 오른손은 건드리지 않았다.
+```
+
+### `day5_archive_cycle07_50`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle07_seolhwa` / BGM: `cycle07_elegy.mp3`_
+
+**설화**
+```text
+왼손 펴 봐. 빨리.
+```
+
+### `day5_archive_cycle07_51`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle07_seolhwa` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+손바닥을 펴자 설화가 손톱 끝으로 짧은 획을 그었다. 나는 손을 오므렸다가 다시 폈다.
+```
+
+### `day5_archive_cycle07_52`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle07_seolhwa` / BGM: `cycle07_elegy.mp3`_
+
+**설화**
+```text
+오른손은 저 사람들이 시키는 대로 움직여도, 왼손은 기억하게 해.
+```
+
+### `day5_archive_cycle07_53`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle07_seolhwa` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+빗물이 손가락 사이로 흘렀다. 설화의 손톱이 같은 자리를 한 번 더 눌렀다.
+```
+
+### `day5_archive_cycle07_54`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle07_seolhwa` / BGM: `cycle07_elegy.mp3`_
+
+**김태호**
+```text
+아프게 하면 기억이 남아?
+```
+
+### `day5_archive_cycle07_55`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle07_seolhwa` / BGM: `cycle07_elegy.mp3`_
+
+**설화**
+```text
+모르겠어. 그래도 네 손이니까. 저 종이보다 오래 갖고 있잖아.
+```
+
+### `day5_archive_cycle07_56`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle07_seolhwa` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+계단에서 발소리가 빨라졌다. 설화가 내 손을 놓지 않은 채 문 바깥으로 밀었다.
+```
+
+### `day5_archive_cycle07_57`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle07_seolhwa` / BGM: `cycle07_elegy.mp3`_
+
+**설화**
+```text
+다음번에는 꼭 나가. 이름 바뀌어도 이쪽 손부터 봐.
+```
+
+### `day5_archive_cycle07_58`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle07_seolhwa` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+문틈으로 선생님의 손이 들어왔다. 설화는 문손잡이를 두 손으로 잡았다.
+```
+
+### `day5_archive_cycle07_59`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+나는 문 바깥에서 가방을 돌려멨다. 설화의 신발 한 짝이 문턱에 걸렸다.
+```
+
+### `day5_archive_cycle07_60`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+문이 완전히 닫히지 않았다. 남자가 옆쪽으로 돌아와 내 팔을 잡았다.
+```
+
+### `day5_archive_cycle07_61`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+가방끈이 어깨에서 미끄러졌다. 젖은 봉투가 바닥에 떨어져 물을 빨아들였다.
+```
+
+### `day5_archive_cycle07_62`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+설화가 내 이름을 불렀다. 한 번은 태호였고 다음에는 말 끝이 문에 끼였다.
+```
+
+### `day5_archive_cycle07_63`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+선생님이 가방을 주웠다. 나는 그 손에서 서류를 빼려다 왼손을 벽에 짚었다.
+```
+
+### `day5_archive_cycle07_64`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+손바닥의 획이 콘크리트에 닿자 설화가 그린 방향으로 손가락이 접혔다.
+```
+
+### `day5_archive_cycle07_65`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3`_
+
+**김태호**
+```text
+설화는요. 같이 가는 거죠?
+```
+
+### `day5_archive_cycle07_66`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+아무도 대답하지 않았다. 설화의 신발이 문 안쪽으로 사라졌고 내 팔은 반대쪽으로 당겨졌다.
+```
+
+### `day5_archive_cycle07_67`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `emergency_exit` / BGM: `cycle07_elegy.mp3`_
+
+**나**
+```text
+기록 화면의 소리가 끊겼다. 비상등 아래에서 문이 닫히는 모습만 두 번 반복됐다.
+```
+
+### `day5_archive_cycle07_68`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black` / BGM: `seolhwa_theme_broken.mp3`_
+
+**나**
+```text
+다음 페이지에는 부수 인원 이설화라고 적혀 있었다. 처리 결과는 영구 폐기였다.
+```
+
+### `day5_archive_cycle07_69`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black` / BGM: `seolhwa_theme_broken.mp3`_
+
+**나**
+```text
+피험자 칸에는 제8차 재투입이라고 찍혔다. 김태호라는 이름 위로 새 이름표가 붙었다.
+```
+
+### `day5_archive_cycle07_70`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black` / BGM: `seolhwa_theme_broken.mp3`_
+
+**나**
+```text
+나는 복원 화면에서 손을 뗐다. 실제 내 왼손이 서버 책상 모서리를 잡고 있었다.
+```
+
+### `day5_archive_cycle07_71`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black` / BGM: `seolhwa_theme_broken.mp3`_
+
+**나**
+```text
+기록을 닫기 전에 설화의 사진을 따로 저장했다. 폐기라는 도장은 이름과 다른 줄로 옮겨 적었다.
+```
+
+### `day5_archive_cycle07_72`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black` / BGM: `seolhwa_theme_broken.mp3`_
+
+**나**
+```text
+사진 속 설화는 아직 손전등을 들고 있었다. 눈을 감거나 웃으라고 시킨 사진이 아니었다.
+```
+
+### `day5_archive_cycle07_73`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black` / BGM: `seolhwa_theme_broken.mp3`_
+
+**나**
+```text
+문 앞에서 남긴 말은 녹음 끝에 그대로 남았다. 마지막 단어 뒤로 빗소리가 길게 이어졌다.
+```
+
+### `day5_archive_cycle07_74`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black` / BGM: `seolhwa_theme_broken.mp3`_
+
+**나**
+```text
+나는 왼손을 펴고 획이 있던 자리를 손가락으로 눌렀다. 화면을 넘기기 전에 손을 닦았다.
+```
+
+### `day5_archive_cycle07_75`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black`_
+
+**나**
+```text
+서버의 원래 목록으로 돌아가도 일곱 번째 기록 옆의 용량 숫자는 읽기 전과 같았다.
+```
+
+### `day5_archive_cycle12_1`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+다음 묶음에는 이준호라는 이름이 적혀 있었다. 사진부 입부 신청서에는 최유나의 서명이 함께 있었다.
+```
+
+### `day5_archive_cycle12_2`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+복원 화면에서 나는 카메라 스트랩을 고쳐 매고 있었다. 유나는 옆에서 빈 필름 통을 흔들었다.
+```
+
+### `day5_archive_cycle12_3`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+선배. 오늘은 운동장 말고 다른 데 찍어요. 맨날 같은 자리예요.
+```
+
+### `day5_archive_cycle12_4`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**이준호**
+```text
+같은 데서 찍으면 바뀐 게 보이잖아.
+```
+
+### `day5_archive_cycle12_5`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+유나가 내 카메라를 가리키며 날짜를 찍는 기능은 고장 났으니 직접 적어야 한다고 했다.
+```
+
+### `day5_archive_cycle12_6`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+우리는 현상한 사진 뒤에 날짜를 썼다. 같은 날인데 내가 쓴 숫자 하나가 달랐다.
+```
+
+### `day5_archive_cycle12_7`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+이건 어제잖아요. 선배 또 하루 밀렸네.
+```
+
+### `day5_archive_cycle12_8`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+나는 웃고 지웠다. 고무 지우개가 연필 자국 위에서 검게 닳았다.
+```
+
+### `day5_archive_cycle12_9`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+사진부 사물함은 오래돼 아래쪽 합판이 들떴다. 유나가 카메라를 넣을 때마다 덜컥거렸다.
+```
+
+### `day5_archive_cycle12_10`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+나는 합판 밑에 종이를 접어 넣었고 바닥이 고정되자 유나가 고개를 끄덕였다.
+```
+
+### `day5_archive_cycle12_11`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+이제 안 흔들린다. 선배 이런 건 잘하네요.
+```
+
+### `day5_archive_cycle12_12`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+빈 필름 통 하나를 그 안에 넣어 봤다. 바닥을 덮으면 안쪽에서 소리가 나지 않았다.
+```
+
+### `day5_archive_cycle12_13`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+며칠 뒤에 찍은 사진에는 낯선 학생이 있었다. 뒤집으니 오래된 날짜와 내 필적이 나왔다.
+```
+
+### `day5_archive_cycle12_14`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+처음에는 전임 부원이 남긴 사진이라고 생각했다. 두 번째 사진에도 같은 손목이 찍혀 있었다.
+```
+
+### `day5_archive_cycle12_15`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+유나는 손가락으로 내 손목을 가리켰다. 시계 버클 자국이 사진과 같은 곳에 남아 있었다.
+```
+
+### `day5_archive_cycle12_16`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+이 사람 선배예요?
+```
+
+### `day5_archive_cycle12_17`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+나는 사진을 책상에 놓았다. 아니라고 하면 유나가 다음 사진을 꺼낼 것을 알았다.
+```
+
+### `day5_archive_cycle12_18`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+서랍에서 첫 번째부터 열한 번째까지 봉투를 찾았다. 이름은 모두 달랐고 서명은 닮아 있었다.
+```
+
+### `day5_archive_cycle12_19`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+마지막 봉투에는 사진이 없었다. 투약 확인서에 이준호라는 내 이름만 적혀 있었다.
+```
+
+### `day5_archive_cycle12_20`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+유나는 문을 잠그고 암실 등을 켜더니 붉은 빛 아래에서 날짜를 한 장씩 읽었다.
+```
+
+### `day5_archive_cycle12_21`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+우리는 기억나는 일을 별도 종이에 쓰고 서로 말하기 전에 종이를 접어 바꿨다.
+```
+
+### `day5_archive_cycle12_22`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+내가 기억하는 전 학교 이름은 지도에 없었다. 유나는 지도 검색 화면도 사진으로 찍었다.
+```
+
+### `day5_archive_cycle12_23`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**유나**
+```text
+답이 안 나오는 것도 남겨요. 지우지 말고.
+```
+
+### `day5_archive_cycle12_24`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+교실 방송에서 보건실로 오라는 안내가 나왔다. 학생 이름은 끝까지 말하지 않았다.
+```
+
+### `day5_archive_cycle12_25`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `photo_club_room` / BGM: `yuna_theme.mp3` / 캐릭터: `yuna_normal`_
+
+**나**
+```text
+내 휴대폰에 같은 안내가 떴다. 오늘 일정은 변경할 수 없다는 문장이 붙었다.
+```
+
+### `day5_archive_cycle12_26`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**나**
+```text
+보건실 문 앞에서 나는 가방을 유나에게 맡겼다. 유나는 끈을 풀지 않고 그대로 어깨에 걸었다.
+```
+
+### `day5_archive_cycle12_27`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**유나**
+```text
+십 분 지났는데 안 나오면 들어갈게요.
+```
+
+### `day5_archive_cycle12_28`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**이준호**
+```text
+문 앞에서 기다리지는 마. 사진부에서 기다려.
+```
+
+### `day5_archive_cycle12_29`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**나**
+```text
+리인은 내가 들어오자 커튼을 닫았다. 침대 쪽이 아니라 문 쪽이 가려졌다.
+```
+
+### `day5_archive_cycle12_30`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**리인**
+```text
+오늘 물은 마셨어? 밥은 먹었고?
+```
+
+### `day5_archive_cycle12_31`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**나**
+```text
+나는 질문에 순서대로 답했다. 선생님은 대답을 적지 않고 시계만 봤다.
+```
+
+### `day5_archive_cycle12_32`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**나**
+```text
+트레이의 앰플 하나가 다른 것보다 덜 차 있었다. 리인은 그 앰플을 손바닥 안으로 가렸다.
+```
+
+### `day5_archive_cycle12_33`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**이준호**
+```text
+약 맞으면 기억이 없어져요?
+```
+
+### `day5_archive_cycle12_34`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**나**
+```text
+리인의 손이 멎었다. 앰플을 내려놓는 소리가 평소보다 크게 났다.
+```
+
+### `day5_archive_cycle12_35`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**리인**
+```text
+누가 그런 말을 했어.
+```
+
+### `day5_archive_cycle12_36`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**이준호**
+```text
+종이에 적혀 있어요. 선생님 서명도요.
+```
+
+### `day5_archive_cycle12_37`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**나**
+```text
+리인은 문쪽 커튼을 들었다 놓으며 밖에 누가 있는지 먼저 확인했다.
+```
+
+### `day5_archive_cycle12_38`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**리인**
+```text
+이따가 걷게 되면 벽 짚고 가. 뛰지 말고.
+```
+
+### `day5_archive_cycle12_39`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `nurse_office` / BGM: `tension_night.mp3` / 캐릭터: `riin_pain`_
+
+**나**
+```text
+주사 바늘이 닿은 자리는 화면에서 가려졌다. 녹화 음성에 내 숨소리만 짧게 남았다.
+```
+
+### `day5_archive_cycle12_40`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `yuna_scared`_
+
+**나**
+```text
+보건실을 나왔을 때 복도 등이 두 겹으로 보였다. 손바닥으로 벽의 타일을 짚었다.
+```
+
+### `day5_archive_cycle12_41`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `yuna_scared`_
+
+**나**
+```text
+유나가 모퉁이에서 나왔다. 가방끈을 잡은 손에 내 셔츠가 조금 걸렸다.
+```
+
+### `day5_archive_cycle12_42`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `yuna_scared`_
+
+**유나**
+```text
+십 분 지났어요. 사진부까지는 같이 가요.
+```
+
+### `day5_archive_cycle12_43`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `yuna_scared`_
+
+**나**
+```text
+내가 벽을 짚은 쪽에 선 유나는 내 팔을 당기지 않고 보폭을 줄였다.
+```
+
+### `day5_archive_cycle12_44`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `yuna_scared`_
+
+**나**
+```text
+암실에 들어가자 빨간 등이 켜졌다. 유나는 가방을 내려놓고 의자를 문 앞에 댔다.
+```
+
+### `day5_archive_cycle12_45`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**이준호**
+```text
+여기서 계속 기다리면 안 돼.
+```
+
+### `day5_archive_cycle12_46`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**유나**
+```text
+지금 혼자 못 걸으면서 그런 말 하지 마요.
+```
+
+### `day5_archive_cycle12_47`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+가방에서 봉투들을 꺼냈다. 손끝에 힘이 풀려 첫 번째 사진이 바닥에 떨어졌다.
+```
+
+### `day5_archive_cycle12_48`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+유나가 주워 순서를 맞췄다. 모서리를 잡아 달라고 하자 두 손으로 눌러 줬다.
+```
+
+### `day5_archive_cycle12_49`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+필름을 뽑아 창빛에 대려다가 암실이라는 걸 뒤늦게 알아챘다. 유나가 내 손을 내렸다.
+```
+
+### `day5_archive_cycle12_50`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**유나**
+```text
+이건 이미 현상한 거예요. 지금 빛 안 줘도 돼요.
+```
+
+### `day5_archive_cycle12_51`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**이준호**
+```text
+사물함 바닥 기억하지. 우리가 종이 끼운 데.
+```
+
+### `day5_archive_cycle12_52`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+유나는 고개를 끄덕이고 카메라를 내 손에서 받아 자기 가슴에 붙였다.
+```
+
+### `day5_archive_cycle12_53`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+나는 사진 한 장과 필름을 빈 통에 넣었다. 손을 세 번 바꿔 쥐어야 뚜껑이 닫혔다.
+```
+
+### `day5_archive_cycle12_54`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**이준호**
+```text
+그 밑에 넣어. 내가 내일 달라고 해도 바로 주지 말고.
+```
+
+### `day5_archive_cycle12_55`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**유나**
+```text
+선배가 달라고 하는데 왜 안 줘요.
+```
+
+### `day5_archive_cycle12_56`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+내 이름을 종이에 쓰는 동안 끝 글자가 두 번 겹쳤다.
+```
+
+### `day5_archive_cycle12_57`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**이준호**
+```text
+내일 교문으로 들어오는 사람이 이 이름을 모를 수도 있어.
+```
+
+### `day5_archive_cycle12_58`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+유나가 종이를 가져갔다. 이준호 세 글자 밑에 날짜를 다시 적었다.
+```
+
+### `day5_archive_cycle12_59`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**유나**
+```text
+그럼 제가 물어볼게요. 선배가 맞는지.
+```
+
+### `day5_archive_cycle12_60`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**이준호**
+```text
+틀렸다고 버리지는 마. 열세 번째에도 남겨 줘.
+```
+
+### `day5_archive_cycle12_61`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+유나의 손이 필름 통을 감쌌다. 눈가를 닦는 대신 카메라 스트랩을 더 짧게 감았다.
+```
+
+### `day5_archive_cycle12_62`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**이준호**
+```text
+내일 아침에 내가 교문으로 다시 들어와도 네가 아는 이준호가 아닐 거야.
+```
+
+### `day5_archive_cycle12_63`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+유나는 입술을 눌렀다. 대답하지 않고 고개만 한 번 저었다.
+```
+
+### `day5_archive_cycle12_64`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**이준호**
+```text
+그래도 열세 번째의 나를 포기하지 말아 줘. 모르면 다시 알려 줘.
+```
+
+### `day5_archive_cycle12_65`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+밖에서 구두 소리가 나자 문 앞 의자를 옮기려다 등받이를 놓쳤다.
+```
+
+### `day5_archive_cycle12_66`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**나**
+```text
+유나가 의자를 받아 소리 없이 옆으로 옮기고 문을 열기 전에 내 가방을 다시 잡았다.
+```
+
+### `day5_archive_cycle12_67`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**유나**
+```text
+선배. 제 이름은요? 지금 말할 수 있죠?
+```
+
+### `day5_archive_cycle12_68`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `cg_cycle12_yuna` / BGM: `tension_night.mp3`_
+
+**이준호**
+```text
+최유나. 사진 잃어버리는 거 제일 싫어해.
+```
+
+### `day5_archive_cycle12_69`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `eunsu_cold`_
+
+**나**
+```text
+유나가 고개를 숙였다. 나는 문을 조금 열고 가방끈을 유나의 손에서 풀어 줬다.
+```
+
+### `day5_archive_cycle12_70`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `eunsu_cold`_
+
+**나**
+```text
+복도에 은수 선생님이 서 있었다. 내 신발을 보고 다가와 팔꿈치를 잡았다.
+```
+
+### `day5_archive_cycle12_71`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `eunsu_cold`_
+
+**은수**
+```text
+보건실에서 나왔으면 교실로 와야죠. 혼자 걷지 말고요.
+```
+
+### `day5_archive_cycle12_72`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `eunsu_cold`_
+
+**나**
+```text
+암실 문이 닫히자 안쪽에서 합판을 들어 올리는 소리가 작게 들렸다.
+```
+
+### `day5_archive_cycle12_73`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `eunsu_cold`_
+
+**나**
+```text
+선생님은 돌아보지 않았다. 나는 손을 펴서 벽을 짚고 그 소리가 끝날 때까지 걸음을 늦췄다.
+```
+
+### `day5_archive_cycle12_74`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `old_basement_door` / BGM: `tension_night.mp3` / 캐릭터: `eunsu_cold`_
+
+**나**
+```text
+기록의 마지막 사진에는 사물함 바닥만 있었다. 필름 통은 합판 아래에 가려져 보이지 않았다.
+```
+
+### `day5_archive_cycle12_75`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black`_
+
+**나**
+```text
+서버 화면으로 돌아오자 왼손에 힘이 들어가 있었다. 나는 이름 세 개를 다른 줄에 적었다.
+```
+
+### `day5_archive_cycle12_76`
+
+_source: `day5_4_night.js / day5_night.json`_
+_배경: `black`_
+
+**나**
+```text
+이준호, 최유나, 열세 번째. 서로의 이름을 대신 쓰지 않고 빈칸을 남겨 둔 채 기록을 닫았다.
+```
+
+### `day5_history_callback_37`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+젖었던 종이 조각도 가방 안에 있었다. 읽히지 않는 글자까지 버리지 않고 처방전과 떨어뜨려 넣었다.
+```
+
+### `day5_history_callback_38`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**나**
+```text
+밤에 맞춰 둔 기록 순서대로 노트를 채웠다. 설화가 말한 것과 문서에 남은 것을 같은 줄에 섞지 않았다.
+```
+
+### `day5_history_callback_39`
+
+_source: `day5_4_night.js / day5_night.json`_
+
+**나**
+```text
+전날 맞춰 놓은 기록이 관리자 화면에서 열렸다. 내가 알아낸 모순들이 이제 수정 가능한 칸으로 보였다.
+```
+
+### `day5_expansion_action_10_a`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+렌즈 안의 내 얼굴을 똑바로 봤다. 이름을 확인하는 사진이 아니어서 어디를 봐야 할지 오히려 선명했다.
+```
+
+### `day5_expansion_action_10_b`
+
+_source: `day5_4_night.js / day5_night.json`_
+_캐릭터: `yuna_normal`_
+
+**나**
+```text
+카메라를 받아 들자 유나가 빈 벽 앞에 섰다. 나는 뒤로 한 걸음 물러나 프레임 안에 손까지 넣었다.
+```
+
 # 추가 i18n 표시 텍스트
 
 아래 항목은 시나리오 JS 노드는 아니지만 한국어 i18n에 존재하는 보조 표시 텍스트다.
 
-### `day1_eunsu_11_brief`
+### `day1_night_app_flash_aux`
 
-_source: `day1_morning.json`_
-
-**지문**
-```text
-음악이요.
-```
-
-### `day1_eunsu_11_honest`
-
-_source: `day1_morning.json`_
+_source: `day1_night.json`_
 
 **지문**
 ```text
-음… 게임이랑 음악 듣는 거요. 둘 다 좀 합니다.
-```
-
-### `day1_eunsu_11_sea`
-
-_source: `day1_morning.json`_
-
-**지문**
-```text
-*먼저 세아 쪽을 봤다. 세아가 턱으로 살짝 가리킨다. 그제야 입을 연다.*
-
-…음악요.
+위탁교육 생활지도 표준 프로토콜 동작 중
 ```
 
 ### `day2_night_dream_1`
@@ -21361,60 +30540,6 @@ _source: `day3_night.json`_
 도망쳐
 ```
 
-### `day4_lunch_nurse_ask_name`
-
-_source: `day4_lunch.json`_
-
-**지문**
-```text
-그거… 이름이 뭐예요?
-```
-
-### `day4_lunch_nurse_ask_name_2`
-
-_source: `day4_lunch.json`_
-
-**지문**
-```text
-영양제. 라벨 읽을 필요 없어. 그냥 누워.
-```
-
-### `day4_lunch_nurse_ask_yuna`
-
-_source: `day4_lunch.json`_
-
-**지문**
-```text
-유나한테도 그거 주셨어요?
-```
-
-### `day4_lunch_nurse_ask_yuna_2`
-
-_source: `day4_lunch.json`_
-
-**지문**
-```text
-…유나 얘기는 내일. 지금은 너 약부터.
-```
-
-### `day4_lunch_nurse_leave_ask`
-
-_source: `day4_lunch.json`_
-
-**지문**
-```text
-*대답을 듣지 않고 나왔다. 등 뒤에서 앰플이 트레이에 닿는 소리가 짧게 났다.*
-```
-
-### `day4_lunch_nurse_leave_yuna`
-
-_source: `day4_lunch.json`_
-
-**지문**
-```text
-*유나 이름을 꺼낸 뒤로는 더 묻지 못했다. 복도로 나오자 문틈으로 낮은 한숨이 새어 나온다.*
-```
-
 ### `day5_morning_ghost_record`
 
 _source: `day5_morning.json`_
@@ -21488,7 +30613,7 @@ _source: `day5_night.json`_
 ```
 
 <!--
-sync-stats: {"sceneFiles":20,"scenarioScenes":2082,"i18nEntries":2142,"displayedText":2084,"choices":145,"i18nOnly":60}
+sync-stats: {"sceneFiles":20,"scenarioScenes":3011,"i18nEntries":3063,"displayedText":2997,"choices":242,"i18nOnly":52}
 -->
 
 <!-- END NEVERGRAD KO DISPLAY SYNC -->

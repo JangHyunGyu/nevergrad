@@ -19,7 +19,14 @@ function walk(start, stop, initial = [], affinity = 0) {
         (node.setFlags || []).forEach(f => flags.add(f));
         const branch = (node.branches || []).find(b => [].concat(b.condition || []).every(f => flags.has(f)));
         const aff = (node.affinityBranches || []).find(b => affinity >= b.minAffinity);
-        id = branch?.next || aff?.next || node.next;
+        const choice = (node.choices || []).find(c =>
+            [].concat(c.condition || []).every(f => flags.has(f))
+            && (!c.excludeCondition || !flags.has(c.excludeCondition)));
+        if (choice) {
+            (choice.setFlags || []).forEach(f => flags.add(f));
+            (choice.clearFlags || []).forEach(f => flags.delete(f));
+        }
+        id = branch?.next || aff?.next || choice?.next || node.next;
     }
     assert.equal(id, stop, visited.join(' -> '));
     return { visited, flags };

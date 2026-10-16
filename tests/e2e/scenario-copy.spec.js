@@ -45,6 +45,18 @@ for (const lang of ['ko','en','ja','es','fr','de','pt','zh']) {
         await expect(page.locator('#binaural-toast')).toHaveCount(0);
         await page.screenshot({path:info.outputPath(`${key}.png`)});
         await page.locator('#dialogue-box').click();
+        await page.waitForFunction(first=>game.state.currentScene===first&&!game.dialogue.isTyping&&!game._clickLocked,key+'_detail_1');
+        const investigated=[];
+        for(let step=0;step<20;step++){
+          const current=await page.evaluate(()=>game.state.currentScene);
+          if(current==='day3_morning_photo_1')break;
+          investigated.push(current);
+          const choices=page.locator('#choice-panel .choice-btn:visible');
+          if(await choices.count())await choices.first().click();
+          else await page.locator('#dialogue-box').click();
+          await page.waitForFunction(previous=>game.state.currentScene!==previous&&!game.dialogue.isTyping&&!game._clickLocked,current);
+        }
+        expect(investigated.filter(id=>id.startsWith(key+'_detail_'))).toHaveLength(9);
         await page.waitForFunction(()=>game.state.currentScene==='day3_morning_photo_1'&&!game.dialogue.isTyping&&!game._clickLocked);
         await page.locator('#dialogue-box').click();
         await page.waitForFunction(()=>game.state.currentScene==='day3_morning_photo_2'&&!game.dialogue.isTyping&&!game._clickLocked);

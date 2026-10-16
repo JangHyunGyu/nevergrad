@@ -489,10 +489,20 @@ Object.assign(SCENARIO[5], {
         next: "day5_xover_server_preview_choice"
     },
     "day5_xover_server_preview_choice": {
-        character: null,
-        choices: [
-            { next: "day5_xover_preview_1" },
-            { next: "day5_xover_server_end" }
+        "character": null,
+        "choices": [
+            {
+                "next": "day5_xover_preview_1"
+            },
+            {
+                "next": "day5_archive_cycle07_1"
+            },
+            {
+                "next": "day5_archive_cycle12_1"
+            },
+            {
+                "next": "day5_xover_server_end"
+            }
         ]
     },
     // PREVIEW 실행 — Cupid Day 1 오프닝 연출
@@ -753,8 +763,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_escape_15"
     },
     "day5_ending_escape_15": {
-        character: "yuna_normal",
-        next: "day5_ending_escape_title"
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_1"
     },
     "day5_ending_escape_title": {
         character: null,
@@ -893,9 +903,9 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_24"
     },
     "day5_ending_resist_24": {
-        background: "faculty_office",
-        character: null,
-        next: "day5_ending_resist_title"
+        "background": "faculty_office",
+        "character": null,
+        "next": "day5_ending_resist_epilogue_1"
     },
     "day5_ending_resist_title": {
         character: null,
@@ -959,8 +969,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_eunsu_11"
     },
     "day5_ending_cage_eunsu_11": {
-        character: null,
-        next: "day5_ending_cage_title"
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_1"
     },
     // ── CAGE END — "새장" (세아 변형) ──
     "day5_ending_cage_sea_1": {
@@ -1003,8 +1013,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_sea_9"
     },
     "day5_ending_cage_sea_9": {
-        character: null,
-        next: "day5_ending_cage_title"
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_1"
     },
     // ── CAGE END 공통 타이틀 + 루프 ──
     // 게임이 끝나지 않는다. 엔딩 크레딧이 뜨지 않는다.
@@ -1166,11 +1176,11 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_14"
     },
     "day5_ending_forget_14": {
-        character: null,
-        background: "room_morning",
-        bgm: "morning_peaceful.mp3",
-        unskippable: true,
-        next: "day5_ending_forget_15"
+        "character": null,
+        "background": "room_morning",
+        "bgm": "morning_peaceful.mp3",
+        "unskippable": true,
+        "next": "day5_ending_forget_epilogue_1"
     },
     "day5_ending_forget_15": {
         character: null,
@@ -1359,8 +1369,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_22"
     },
     "day5_ending_ghost_22": {
-        character: null,
-        next: "day5_ending_ghost_title"
+        "character": null,
+        "next": "day5_ending_ghost_epilogue_1"
     },
     "day5_ending_ghost_title": {
         character: null,
@@ -1474,8 +1484,8 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_18"
     },
     "day5_ending_complicit_18": {
-        character: null,
-        next: "day5_ending_complicit_title"
+        "character": null,
+        "next": "day5_ending_complicit_epilogue_1"
     },
     "day5_ending_complicit_title": {
         character: null,
@@ -1606,7 +1616,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_escape_riin": {
         "character": null,
-        "next": "day5_ending_escape_sea_check"
+        "next": "day5_ending_escape_riin_after_1"
     },
     "day5_ending_escape_sea_check": {
         "autoAdvance": true,
@@ -1620,6 +1630,2277 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_escape_sea": {
         "character": null,
+        "next": "day5_ending_escape_sea_after_1"
+    }
+});
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[5], {
+    "day5_ending_cage_sea_epilogue_1": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_2"
+    },
+    "day5_ending_cage_sea_epilogue_2": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_3"
+    },
+    "day5_ending_cage_sea_epilogue_3": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_4"
+    },
+    "day5_ending_cage_sea_epilogue_4": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_5"
+    },
+    "day5_ending_cage_sea_epilogue_5": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_6"
+    },
+    "day5_ending_cage_sea_epilogue_6": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_7"
+    },
+    "day5_ending_cage_sea_epilogue_7": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_8"
+    },
+    "day5_ending_cage_sea_epilogue_8": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_9"
+    },
+    "day5_ending_cage_sea_epilogue_9": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_10"
+    },
+    "day5_ending_cage_sea_epilogue_10": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_11"
+    },
+    "day5_ending_cage_sea_epilogue_11": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_epilogue_12"
+    },
+    "day5_ending_cage_sea_epilogue_12": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_inside_choice"
+    },
+    "day5_ending_cage_sea_inside_choice": {
+        "choices": [
+            {
+                "next": "day5_ending_cage_sea_window_1"
+            },
+            {
+                "next": "day5_ending_cage_sea_hand_1"
+            }
+        ]
+    },
+    "day5_ending_cage_sea_window_1": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_window_2"
+    },
+    "day5_ending_cage_sea_window_2": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_window_3"
+    },
+    "day5_ending_cage_sea_window_3": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_window_4"
+    },
+    "day5_ending_cage_sea_window_4": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_window_5"
+    },
+    "day5_ending_cage_sea_window_5": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_close_1"
+    },
+    "day5_ending_cage_sea_hand_1": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_hand_2"
+    },
+    "day5_ending_cage_sea_hand_2": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_hand_3"
+    },
+    "day5_ending_cage_sea_hand_3": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_hand_4"
+    },
+    "day5_ending_cage_sea_hand_4": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_hand_5"
+    },
+    "day5_ending_cage_sea_hand_5": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_close_1"
+    },
+    "day5_ending_cage_sea_close_1": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_close_2"
+    },
+    "day5_ending_cage_sea_close_2": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_sea_close_3"
+    },
+    "day5_ending_cage_sea_close_3": {
+        "background": "ending_cage_sea",
+        "character": null,
+        "next": "day5_ending_cage_title"
+    },
+    "day5_ending_cage_eunsu_epilogue_1": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_2"
+    },
+    "day5_ending_cage_eunsu_epilogue_2": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_3"
+    },
+    "day5_ending_cage_eunsu_epilogue_3": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_4"
+    },
+    "day5_ending_cage_eunsu_epilogue_4": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_5"
+    },
+    "day5_ending_cage_eunsu_epilogue_5": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_6"
+    },
+    "day5_ending_cage_eunsu_epilogue_6": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_7"
+    },
+    "day5_ending_cage_eunsu_epilogue_7": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_8"
+    },
+    "day5_ending_cage_eunsu_epilogue_8": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_9"
+    },
+    "day5_ending_cage_eunsu_epilogue_9": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_10"
+    },
+    "day5_ending_cage_eunsu_epilogue_10": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_11"
+    },
+    "day5_ending_cage_eunsu_epilogue_11": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_12"
+    },
+    "day5_ending_cage_eunsu_epilogue_12": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_13"
+    },
+    "day5_ending_cage_eunsu_epilogue_13": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_14"
+    },
+    "day5_ending_cage_eunsu_epilogue_14": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_15"
+    },
+    "day5_ending_cage_eunsu_epilogue_15": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_16"
+    },
+    "day5_ending_cage_eunsu_epilogue_16": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_17"
+    },
+    "day5_ending_cage_eunsu_epilogue_17": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_18"
+    },
+    "day5_ending_cage_eunsu_epilogue_18": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_19"
+    },
+    "day5_ending_cage_eunsu_epilogue_19": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_20"
+    },
+    "day5_ending_cage_eunsu_epilogue_20": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_21"
+    },
+    "day5_ending_cage_eunsu_epilogue_21": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_22"
+    },
+    "day5_ending_cage_eunsu_epilogue_22": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_23"
+    },
+    "day5_ending_cage_eunsu_epilogue_23": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_24"
+    },
+    "day5_ending_cage_eunsu_epilogue_24": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_25"
+    },
+    "day5_ending_cage_eunsu_epilogue_25": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_26"
+    },
+    "day5_ending_cage_eunsu_epilogue_26": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_eunsu_epilogue_27"
+    },
+    "day5_ending_cage_eunsu_epilogue_27": {
+        "background": "ending_cage_eunsu",
+        "character": null,
+        "next": "day5_ending_cage_title"
+    },
+    "day5_ending_escape_epilogue_1": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_2"
+    },
+    "day5_ending_escape_epilogue_2": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_3"
+    },
+    "day5_ending_escape_epilogue_3": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_4"
+    },
+    "day5_ending_escape_epilogue_4": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_5"
+    },
+    "day5_ending_escape_epilogue_5": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_6"
+    },
+    "day5_ending_escape_epilogue_6": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_7"
+    },
+    "day5_ending_escape_epilogue_7": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_8"
+    },
+    "day5_ending_escape_epilogue_8": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_9"
+    },
+    "day5_ending_escape_epilogue_9": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_10"
+    },
+    "day5_ending_escape_epilogue_10": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_11"
+    },
+    "day5_ending_escape_epilogue_11": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_12"
+    },
+    "day5_ending_escape_epilogue_12": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_13"
+    },
+    "day5_ending_escape_epilogue_13": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_14"
+    },
+    "day5_ending_escape_epilogue_14": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_15"
+    },
+    "day5_ending_escape_epilogue_15": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_16"
+    },
+    "day5_ending_escape_epilogue_16": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_17"
+    },
+    "day5_ending_escape_epilogue_17": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_18",
+        "branches": [
+            {
+                "condition": "found_washed_note",
+                "next": "day5_history_callback_37"
+            }
+        ]
+    },
+    "day5_ending_escape_epilogue_18": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_19"
+    },
+    "day5_ending_escape_epilogue_19": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_20"
+    },
+    "day5_ending_escape_epilogue_20": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_21"
+    },
+    "day5_ending_escape_epilogue_21": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_22"
+    },
+    "day5_ending_escape_epilogue_22": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_23"
+    },
+    "day5_ending_escape_epilogue_23": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_24"
+    },
+    "day5_ending_escape_epilogue_24": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "choices": [
+            {
+                "next": "day5_expansion_action_10_a"
+            },
+            {
+                "next": "day5_expansion_action_10_b"
+            },
+            {
+                "next": "day5_ending_escape_epilogue_25"
+            }
+        ]
+    },
+    "day5_ending_escape_epilogue_25": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_26"
+    },
+    "day5_ending_escape_epilogue_26": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_27"
+    },
+    "day5_ending_escape_epilogue_27": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_28"
+    },
+    "day5_ending_escape_epilogue_28": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_29"
+    },
+    "day5_ending_escape_epilogue_29": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_30"
+    },
+    "day5_ending_escape_epilogue_30": {
+        "background": "new_place",
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_title"
+    },
+    "day5_ending_escape_riin_after_1": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_riin_after_2"
+    },
+    "day5_ending_escape_riin_after_2": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_riin_after_3"
+    },
+    "day5_ending_escape_riin_after_3": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_riin_after_4"
+    },
+    "day5_ending_escape_riin_after_4": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_riin_after_5"
+    },
+    "day5_ending_escape_riin_after_5": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_riin_after_6"
+    },
+    "day5_ending_escape_riin_after_6": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_riin_after_7"
+    },
+    "day5_ending_escape_riin_after_7": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_riin_after_8"
+    },
+    "day5_ending_escape_riin_after_8": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_riin_after_9"
+    },
+    "day5_ending_escape_riin_after_9": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_sea_check"
+    },
+    "day5_ending_escape_sea_after_1": {
+        "character": "yuna_scared",
+        "next": "day5_ending_escape_sea_after_2"
+    },
+    "day5_ending_escape_sea_after_2": {
+        "character": "yuna_scared",
+        "next": "day5_ending_escape_sea_after_3"
+    },
+    "day5_ending_escape_sea_after_3": {
+        "character": "yuna_scared",
+        "next": "day5_ending_escape_sea_after_4"
+    },
+    "day5_ending_escape_sea_after_4": {
+        "character": "yuna_scared",
+        "next": "day5_ending_escape_sea_after_5"
+    },
+    "day5_ending_escape_sea_after_5": {
+        "character": "yuna_scared",
+        "next": "day5_ending_escape_sea_after_6"
+    },
+    "day5_ending_escape_sea_after_6": {
+        "character": "yuna_scared",
+        "next": "day5_ending_escape_sea_after_7"
+    },
+    "day5_ending_escape_sea_after_7": {
+        "character": "yuna_scared",
+        "next": "day5_ending_escape_sea_after_8"
+    },
+    "day5_ending_escape_sea_after_8": {
+        "character": "yuna_scared",
+        "next": "day5_ending_escape_sea_after_9"
+    },
+    "day5_ending_escape_sea_after_9": {
+        "character": "yuna_scared",
         "next": "day5_ending_escape_14"
+    },
+    "day5_ending_resist_epilogue_1": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_2"
+    },
+    "day5_ending_resist_epilogue_2": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_3"
+    },
+    "day5_ending_resist_epilogue_3": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_4"
+    },
+    "day5_ending_resist_epilogue_4": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_5"
+    },
+    "day5_ending_resist_epilogue_5": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_6"
+    },
+    "day5_ending_resist_epilogue_6": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_7"
+    },
+    "day5_ending_resist_epilogue_7": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_8"
+    },
+    "day5_ending_resist_epilogue_8": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_9"
+    },
+    "day5_ending_resist_epilogue_9": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_10"
+    },
+    "day5_ending_resist_epilogue_10": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_11"
+    },
+    "day5_ending_resist_epilogue_11": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_12"
+    },
+    "day5_ending_resist_epilogue_12": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_13"
+    },
+    "day5_ending_resist_epilogue_13": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_14"
+    },
+    "day5_ending_resist_epilogue_14": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_15"
+    },
+    "day5_ending_resist_epilogue_15": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_16"
+    },
+    "day5_ending_resist_epilogue_16": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_17"
+    },
+    "day5_ending_resist_epilogue_17": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_18"
+    },
+    "day5_ending_resist_epilogue_18": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_19"
+    },
+    "day5_ending_resist_epilogue_19": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_20"
+    },
+    "day5_ending_resist_epilogue_20": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_21"
+    },
+    "day5_ending_resist_epilogue_21": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_22"
+    },
+    "day5_ending_resist_epilogue_22": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_23"
+    },
+    "day5_ending_resist_epilogue_23": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_24"
+    },
+    "day5_ending_resist_epilogue_24": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_25"
+    },
+    "day5_ending_resist_epilogue_25": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_epilogue_26"
+    },
+    "day5_ending_resist_epilogue_26": {
+        "background": "dawn_road",
+        "character": "eunsu_crying",
+        "next": "day5_ending_resist_title"
+    },
+    "day5_ending_forget_epilogue_1": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_2"
+    },
+    "day5_ending_forget_epilogue_2": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_3"
+    },
+    "day5_ending_forget_epilogue_3": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_4"
+    },
+    "day5_ending_forget_epilogue_4": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_5"
+    },
+    "day5_ending_forget_epilogue_5": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_6",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle07_seolhwa",
+                "duration": 450
+            }
+        }
+    },
+    "day5_ending_forget_epilogue_6": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_7"
+    },
+    "day5_ending_forget_epilogue_7": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_8"
+    },
+    "day5_ending_forget_epilogue_8": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_9"
+    },
+    "day5_ending_forget_epilogue_9": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_10",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle12_yuna",
+                "duration": 450
+            }
+        }
+    },
+    "day5_ending_forget_epilogue_10": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_11"
+    },
+    "day5_ending_forget_epilogue_11": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_12"
+    },
+    "day5_ending_forget_epilogue_12": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_13",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle07_seolhwa",
+                "duration": 450
+            }
+        }
+    },
+    "day5_ending_forget_epilogue_13": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_14"
+    },
+    "day5_ending_forget_epilogue_14": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_15"
+    },
+    "day5_ending_forget_epilogue_15": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_16",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle12_yuna",
+                "duration": 450
+            }
+        }
+    },
+    "day5_ending_forget_epilogue_16": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_17"
+    },
+    "day5_ending_forget_epilogue_17": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_18"
+    },
+    "day5_ending_forget_epilogue_18": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_19"
+    },
+    "day5_ending_forget_epilogue_19": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_20"
+    },
+    "day5_ending_forget_epilogue_20": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_21"
+    },
+    "day5_ending_forget_epilogue_21": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_22"
+    },
+    "day5_ending_forget_epilogue_22": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_23"
+    },
+    "day5_ending_forget_epilogue_23": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_24"
+    },
+    "day5_ending_forget_epilogue_24": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_epilogue_25"
+    },
+    "day5_ending_forget_epilogue_25": {
+        "background": "classroom",
+        "character": null,
+        "next": "day5_ending_forget_15"
+    },
+    "day5_ending_ghost_epilogue_1": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_2"
+    },
+    "day5_ending_ghost_epilogue_2": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_3"
+    },
+    "day5_ending_ghost_epilogue_3": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_4"
+    },
+    "day5_ending_ghost_epilogue_4": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_5"
+    },
+    "day5_ending_ghost_epilogue_5": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_6"
+    },
+    "day5_ending_ghost_epilogue_6": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_7"
+    },
+    "day5_ending_ghost_epilogue_7": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_8"
+    },
+    "day5_ending_ghost_epilogue_8": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_9",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle07_seolhwa",
+                "duration": 450
+            }
+        }
+    },
+    "day5_ending_ghost_epilogue_9": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_10"
+    },
+    "day5_ending_ghost_epilogue_10": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_11"
+    },
+    "day5_ending_ghost_epilogue_11": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_12",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle12_yuna",
+                "duration": 450
+            }
+        }
+    },
+    "day5_ending_ghost_epilogue_12": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_13"
+    },
+    "day5_ending_ghost_epilogue_13": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_14"
+    },
+    "day5_ending_ghost_epilogue_14": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_15"
+    },
+    "day5_ending_ghost_epilogue_15": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_16"
+    },
+    "day5_ending_ghost_epilogue_16": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_17"
+    },
+    "day5_ending_ghost_epilogue_17": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_18"
+    },
+    "day5_ending_ghost_epilogue_18": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_19"
+    },
+    "day5_ending_ghost_epilogue_19": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_20",
+        "branches": [
+            {
+                "condition": "deduced_full_truth",
+                "next": "day5_history_callback_38"
+            }
+        ]
+    },
+    "day5_ending_ghost_epilogue_20": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_21"
+    },
+    "day5_ending_ghost_epilogue_21": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_22"
+    },
+    "day5_ending_ghost_epilogue_22": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_23"
+    },
+    "day5_ending_ghost_epilogue_23": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_24"
+    },
+    "day5_ending_ghost_epilogue_24": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_epilogue_25"
+    },
+    "day5_ending_ghost_epilogue_25": {
+        "background": "dawn_road",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_ending_ghost_title"
+    },
+    "day5_ending_complicit_epilogue_1": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_2"
+    },
+    "day5_ending_complicit_epilogue_2": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_3"
+    },
+    "day5_ending_complicit_epilogue_3": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_4"
+    },
+    "day5_ending_complicit_epilogue_4": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_5"
+    },
+    "day5_ending_complicit_epilogue_5": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_6",
+        "glitch": {
+            "memoryFlash": {
+                "background": "cg_cycle07_seolhwa",
+                "duration": 450
+            }
+        }
+    },
+    "day5_ending_complicit_epilogue_6": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_7"
+    },
+    "day5_ending_complicit_epilogue_7": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_8"
+    },
+    "day5_ending_complicit_epilogue_8": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_9"
+    },
+    "day5_ending_complicit_epilogue_9": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_10"
+    },
+    "day5_ending_complicit_epilogue_10": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_11"
+    },
+    "day5_ending_complicit_epilogue_11": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_epilogue_12",
+        "branches": [
+            {
+                "condition": "deduced_full_truth",
+                "next": "day5_history_callback_39"
+            }
+        ]
+    },
+    "day5_ending_complicit_epilogue_12": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "bgm": "complicit_cold_pulse.mp3",
+        "next": "day5_ending_complicit_control_choice"
+    },
+    "day5_ending_complicit_control_choice": {
+        "choices": [
+            {
+                "next": "day5_ending_complicit_low_1",
+                "setFlags": [
+                    "complicit_reduced_dose"
+                ]
+            },
+            {
+                "next": "day5_ending_complicit_same_1",
+                "setFlags": [
+                    "complicit_kept_dose"
+                ]
+            },
+            {
+                "next": "day5_ending_complicit_high_1",
+                "setFlags": [
+                    "complicit_increased_dose"
+                ]
+            }
+        ]
+    },
+    "day5_ending_complicit_low_1": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_low_2"
+    },
+    "day5_ending_complicit_low_2": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_low_3"
+    },
+    "day5_ending_complicit_low_3": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_low_4"
+    },
+    "day5_ending_complicit_low_4": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_low_5"
+    },
+    "day5_ending_complicit_low_5": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_close_1"
+    },
+    "day5_ending_complicit_same_1": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_same_2"
+    },
+    "day5_ending_complicit_same_2": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_same_3"
+    },
+    "day5_ending_complicit_same_3": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_same_4"
+    },
+    "day5_ending_complicit_same_4": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_same_5"
+    },
+    "day5_ending_complicit_same_5": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_close_1"
+    },
+    "day5_ending_complicit_high_1": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_high_2"
+    },
+    "day5_ending_complicit_high_2": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_high_3"
+    },
+    "day5_ending_complicit_high_3": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_high_4"
+    },
+    "day5_ending_complicit_high_4": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_high_5"
+    },
+    "day5_ending_complicit_high_5": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_close_1"
+    },
+    "day5_ending_complicit_close_1": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_close_2"
+    },
+    "day5_ending_complicit_close_2": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_close_3"
+    },
+    "day5_ending_complicit_close_3": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_close_4"
+    },
+    "day5_ending_complicit_close_4": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_close_5"
+    },
+    "day5_ending_complicit_close_5": {
+        "background": "ending_complicit_monitors",
+        "character": null,
+        "next": "day5_ending_complicit_title"
+    },
+    "day5_archive_cycle07_1": {
+        "background": "old_building_corridor",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_2",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_2": {
+        "background": "old_building_corridor",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_3",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_3": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_4",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_4": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_5",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_5": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_6",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_6": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_7",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_7": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_8",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_8": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_9",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_9": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_10",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_10": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_11",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_11": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_12",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_12": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_13",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_13": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_14",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_14": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_15",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_15": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_16",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_16": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_17",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_17": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_18",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_18": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_19",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_19": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_20",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_20": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_21",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_21": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_22",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_22": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_23",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_23": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_24",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_24": {
+        "background": "old_building_corridor",
+        "character": "seolhwa_normal",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_25",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_25": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_26",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_26": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_27",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_27": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_28",
+        "charOpacity": 1,
+        "glitch": {
+            "chaseFootsteps": {
+                "fromPan": -0.9,
+                "toPan": 0.9,
+                "steps": 8,
+                "interval": 220
+            }
+        }
+    },
+    "day5_archive_cycle07_28": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_29",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_29": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_30",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_30": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_31",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_31": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_32",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_32": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_33",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_33": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_34",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_34": {
+        "background": "underground_lab",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_35",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_35": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_36",
+        "charOpacity": 1,
+        "rain": true,
+        "sfx": {
+            "file": "sfx_rain_loop.mp3",
+            "loop": true
+        }
+    },
+    "day5_archive_cycle07_36": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_37",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_37": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_38",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_38": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_39",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_39": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_40",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_40": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_41",
+        "charOpacity": 1,
+        "rain": true,
+        "glitch": {
+            "chaseFootsteps": {
+                "fromPan": -0.9,
+                "toPan": 0.9,
+                "steps": 8,
+                "interval": 220
+            }
+        }
+    },
+    "day5_archive_cycle07_41": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_42",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_42": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_43",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_43": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_44",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_44": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_45",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_45": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_46",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_46": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_47",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_47": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_48",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_48": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_49",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_49": {
+        "background": "emergency_exit",
+        "character": "seolhwa_warning",
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_50",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_50": {
+        "background": "cg_cycle07_seolhwa",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_51",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_51": {
+        "background": "cg_cycle07_seolhwa",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_52",
+        "charOpacity": 1,
+        "rain": true,
+        "glitch": {
+            "panSFX": "sfx_whisper_seolhwa",
+            "pan": -0.85
+        }
+    },
+    "day5_archive_cycle07_52": {
+        "background": "cg_cycle07_seolhwa",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_53",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_53": {
+        "background": "cg_cycle07_seolhwa",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_54",
+        "charOpacity": 1,
+        "rain": true,
+        "glitch": {
+            "panSFX": "sfx_whisper_seolhwa",
+            "pan": -0.85
+        }
+    },
+    "day5_archive_cycle07_54": {
+        "background": "cg_cycle07_seolhwa",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_55",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_55": {
+        "background": "cg_cycle07_seolhwa",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_56",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_56": {
+        "background": "cg_cycle07_seolhwa",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_57",
+        "charOpacity": 1,
+        "rain": true,
+        "glitch": {
+            "chaseFootsteps": {
+                "fromPan": -0.9,
+                "toPan": 0.9,
+                "steps": 8,
+                "interval": 220
+            }
+        }
+    },
+    "day5_archive_cycle07_57": {
+        "background": "cg_cycle07_seolhwa",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_58",
+        "charOpacity": 1,
+        "rain": true,
+        "glitch": {
+            "panSFX": "sfx_whisper_seolhwa",
+            "pan": -0.85
+        }
+    },
+    "day5_archive_cycle07_58": {
+        "background": "cg_cycle07_seolhwa",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_59",
+        "charOpacity": 1,
+        "rain": true
+    },
+    "day5_archive_cycle07_59": {
+        "background": "emergency_exit",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_60",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_60": {
+        "background": "emergency_exit",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_61",
+        "charOpacity": 1,
+        "glitch": {
+            "chaseFootsteps": {
+                "fromPan": -0.9,
+                "toPan": 0.9,
+                "steps": 8,
+                "interval": 220
+            }
+        }
+    },
+    "day5_archive_cycle07_61": {
+        "background": "emergency_exit",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_62",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_62": {
+        "background": "emergency_exit",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_63",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_63": {
+        "background": "emergency_exit",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_64",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_64": {
+        "background": "emergency_exit",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_65",
+        "charOpacity": 1,
+        "glitch": {
+            "panSFX": "sfx_whisper_seolhwa",
+            "pan": -0.85
+        }
+    },
+    "day5_archive_cycle07_65": {
+        "background": "emergency_exit",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_66",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_66": {
+        "background": "emergency_exit",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_67",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_67": {
+        "background": "emergency_exit",
+        "character": null,
+        "bgm": "cycle07_elegy.mp3",
+        "next": "day5_archive_cycle07_68",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_68": {
+        "background": "black",
+        "character": null,
+        "bgm": "seolhwa_theme_broken.mp3",
+        "next": "day5_archive_cycle07_69",
+        "charOpacity": 1,
+        "stopSfx": true
+    },
+    "day5_archive_cycle07_69": {
+        "background": "black",
+        "character": null,
+        "bgm": "seolhwa_theme_broken.mp3",
+        "next": "day5_archive_cycle07_70",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_70": {
+        "background": "black",
+        "character": null,
+        "bgm": "seolhwa_theme_broken.mp3",
+        "next": "day5_archive_cycle07_71",
+        "charOpacity": 1,
+        "glitch": {
+            "panSFX": "sfx_whisper_seolhwa",
+            "pan": -0.85
+        }
+    },
+    "day5_archive_cycle07_71": {
+        "background": "black",
+        "character": null,
+        "bgm": "seolhwa_theme_broken.mp3",
+        "next": "day5_archive_cycle07_72",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_72": {
+        "background": "black",
+        "character": null,
+        "bgm": "seolhwa_theme_broken.mp3",
+        "next": "day5_archive_cycle07_73",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_73": {
+        "background": "black",
+        "character": null,
+        "bgm": "seolhwa_theme_broken.mp3",
+        "next": "day5_archive_cycle07_74",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_74": {
+        "background": "black",
+        "character": null,
+        "bgm": "seolhwa_theme_broken.mp3",
+        "next": "day5_archive_cycle07_75",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle07_75": {
+        "background": "black",
+        "character": null,
+        "bgm": null,
+        "next": "day5_xover_server_4",
+        "charOpacity": 1
+    },
+    "day5_archive_cycle12_1": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_2"
+    },
+    "day5_archive_cycle12_2": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_3"
+    },
+    "day5_archive_cycle12_3": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_4"
+    },
+    "day5_archive_cycle12_4": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_5"
+    },
+    "day5_archive_cycle12_5": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_6"
+    },
+    "day5_archive_cycle12_6": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_7"
+    },
+    "day5_archive_cycle12_7": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_8"
+    },
+    "day5_archive_cycle12_8": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_9"
+    },
+    "day5_archive_cycle12_9": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_10"
+    },
+    "day5_archive_cycle12_10": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_11"
+    },
+    "day5_archive_cycle12_11": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_12"
+    },
+    "day5_archive_cycle12_12": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_13"
+    },
+    "day5_archive_cycle12_13": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_14"
+    },
+    "day5_archive_cycle12_14": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_15"
+    },
+    "day5_archive_cycle12_15": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_16"
+    },
+    "day5_archive_cycle12_16": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_17"
+    },
+    "day5_archive_cycle12_17": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_18"
+    },
+    "day5_archive_cycle12_18": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_19"
+    },
+    "day5_archive_cycle12_19": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_20"
+    },
+    "day5_archive_cycle12_20": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_21"
+    },
+    "day5_archive_cycle12_21": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_22"
+    },
+    "day5_archive_cycle12_22": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_23"
+    },
+    "day5_archive_cycle12_23": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_24"
+    },
+    "day5_archive_cycle12_24": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_25"
+    },
+    "day5_archive_cycle12_25": {
+        "background": "photo_club_room",
+        "character": "yuna_normal",
+        "bgm": "yuna_theme.mp3",
+        "next": "day5_archive_cycle12_26"
+    },
+    "day5_archive_cycle12_26": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_27"
+    },
+    "day5_archive_cycle12_27": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_28"
+    },
+    "day5_archive_cycle12_28": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_29"
+    },
+    "day5_archive_cycle12_29": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_30"
+    },
+    "day5_archive_cycle12_30": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_31"
+    },
+    "day5_archive_cycle12_31": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_32"
+    },
+    "day5_archive_cycle12_32": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_33"
+    },
+    "day5_archive_cycle12_33": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_34"
+    },
+    "day5_archive_cycle12_34": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_35"
+    },
+    "day5_archive_cycle12_35": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_36"
+    },
+    "day5_archive_cycle12_36": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_37"
+    },
+    "day5_archive_cycle12_37": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_38"
+    },
+    "day5_archive_cycle12_38": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_39"
+    },
+    "day5_archive_cycle12_39": {
+        "background": "nurse_office",
+        "character": "riin_pain",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_40",
+        "glitch": {
+            "drugBlur": true,
+            "drugBlurDuration": 800
+        }
+    },
+    "day5_archive_cycle12_40": {
+        "background": "old_basement_door",
+        "character": "yuna_scared",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_41",
+        "glitch": {
+            "drugBlur": true,
+            "drugBlurDuration": 800
+        }
+    },
+    "day5_archive_cycle12_41": {
+        "background": "old_basement_door",
+        "character": "yuna_scared",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_42"
+    },
+    "day5_archive_cycle12_42": {
+        "background": "old_basement_door",
+        "character": "yuna_scared",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_43"
+    },
+    "day5_archive_cycle12_43": {
+        "background": "old_basement_door",
+        "character": "yuna_scared",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_44"
+    },
+    "day5_archive_cycle12_44": {
+        "background": "old_basement_door",
+        "character": "yuna_scared",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_45"
+    },
+    "day5_archive_cycle12_45": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_46"
+    },
+    "day5_archive_cycle12_46": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_47"
+    },
+    "day5_archive_cycle12_47": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_48"
+    },
+    "day5_archive_cycle12_48": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_49",
+        "glitch": {
+            "drugBlur": true,
+            "drugBlurDuration": 800
+        }
+    },
+    "day5_archive_cycle12_49": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_50"
+    },
+    "day5_archive_cycle12_50": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_51"
+    },
+    "day5_archive_cycle12_51": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_52"
+    },
+    "day5_archive_cycle12_52": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_53"
+    },
+    "day5_archive_cycle12_53": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_54"
+    },
+    "day5_archive_cycle12_54": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_55"
+    },
+    "day5_archive_cycle12_55": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_56",
+        "glitch": {
+            "drugBlur": true,
+            "drugBlurDuration": 800
+        }
+    },
+    "day5_archive_cycle12_56": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_57"
+    },
+    "day5_archive_cycle12_57": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_58"
+    },
+    "day5_archive_cycle12_58": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_59"
+    },
+    "day5_archive_cycle12_59": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_60"
+    },
+    "day5_archive_cycle12_60": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_61"
+    },
+    "day5_archive_cycle12_61": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_62",
+        "glitch": {
+            "drugBlur": true,
+            "drugBlurDuration": 800
+        }
+    },
+    "day5_archive_cycle12_62": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_63"
+    },
+    "day5_archive_cycle12_63": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_64"
+    },
+    "day5_archive_cycle12_64": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_65"
+    },
+    "day5_archive_cycle12_65": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_66",
+        "glitch": {
+            "drugBlur": true,
+            "drugBlurDuration": 800
+        }
+    },
+    "day5_archive_cycle12_66": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_67"
+    },
+    "day5_archive_cycle12_67": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_68"
+    },
+    "day5_archive_cycle12_68": {
+        "background": "cg_cycle12_yuna",
+        "character": null,
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_69"
+    },
+    "day5_archive_cycle12_69": {
+        "background": "old_basement_door",
+        "character": "eunsu_cold",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_70"
+    },
+    "day5_archive_cycle12_70": {
+        "background": "old_basement_door",
+        "character": "eunsu_cold",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_71"
+    },
+    "day5_archive_cycle12_71": {
+        "background": "old_basement_door",
+        "character": "eunsu_cold",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_72"
+    },
+    "day5_archive_cycle12_72": {
+        "background": "old_basement_door",
+        "character": "eunsu_cold",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_73"
+    },
+    "day5_archive_cycle12_73": {
+        "background": "old_basement_door",
+        "character": "eunsu_cold",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_74"
+    },
+    "day5_archive_cycle12_74": {
+        "background": "old_basement_door",
+        "character": "eunsu_cold",
+        "bgm": "tension_night.mp3",
+        "next": "day5_archive_cycle12_75"
+    },
+    "day5_archive_cycle12_75": {
+        "background": "black",
+        "character": null,
+        "bgm": null,
+        "next": "day5_archive_cycle12_76"
+    },
+    "day5_archive_cycle12_76": {
+        "background": "black",
+        "character": null,
+        "bgm": null,
+        "next": "day5_xover_server_4"
+    },
+    "day5_history_callback_37": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_18"
+    },
+    "day5_history_callback_38": {
+        "character": null,
+        "next": "day5_ending_ghost_epilogue_20"
+    },
+    "day5_history_callback_39": {
+        "character": null,
+        "next": "day5_ending_complicit_epilogue_12"
+    },
+    "day5_expansion_action_10_a": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_25"
+    },
+    "day5_expansion_action_10_b": {
+        "character": "yuna_normal",
+        "next": "day5_ending_escape_epilogue_25"
     }
 });

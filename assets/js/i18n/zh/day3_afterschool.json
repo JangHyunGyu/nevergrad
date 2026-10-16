@@ -1,335 +1,533 @@
 {
-    "day3_after_start": {
-        "text": "*放学的班会结束了。教室很快空了下来。窗外，操场上三三两两聚着一些学生。*"
-    },
-    "day3_after_start_2": {
-        "text": "*书包里，照片碎片刮过纸张。早上在小巷里听到的话，和教室骤然安静下来的那一刻，交替浮现。*"
-    },
-    "day3_after_start_3": {
-        "text": "*朝鞋柜走了几步，又停住了。脚尖重新朝向走廊深处。*"
-    },
-    "day3_after_choice": {
-        "text": "*去哪儿呢。*",
-        "choices": [
-            "去保健室看看",
-            "和世雅一起走",
-            "去教师办公室看看",
-            "一个人留下"
-        ]
-    },
-    "day3_after_riin": {
-        "text": "*我站在保健室门前。里面传来细小的声响。玻璃瓶相碰的声音。*"
-    },
-    "day3_after_riin_first": {
-        "text": "*第一次来保健室，手却先找到了门框，连门牌都还没看。*"
-    },
-    "day3_after_riin_first_2": {
-        "text": "进来。"
-    },
-    "day3_after_riin_2": {
-        "text": "*我敲了敲门。里面的声音断了。两秒钟，只剩寂静。*"
-    },
-    "day3_after_riin_3": {
-        "text": "进来。"
-    },
-    "day3_after_riin_4": {
-        "text": "*我打开门，莉仁老师站在水槽前。台面上还留着水渍，敞开的柜门在极轻地晃动。*\n\n您刚才在收拾吗？我敲门后声音就停了。"
-    },
-    "day3_after_riin_5": {
-        "text": "放学后怎么来了？哪儿不舒服吗？"
-    },
-    "day3_after_riin_6": {
-        "text": "不是。脑子里有点乱。\n\n*莉仁老师看了我很久，直到墙上的秒针走了三下，她仍未回答。*"
-    },
-    "day3_after_riin_6a": {
-        "text": "我这儿有电解质饮料。加了维生素，还有一点草本成分。"
-    },
-    "day3_after_riin_7": {
-        "text": "*她从柜子里拿出一个小瓶。浅紫色液体沿着杯子内壁流下。递杯子的那只手，只有无名指和小指在微微颤抖。水槽的水龙头已经开了一半。*\n\n老师，您手在抖。杯子我来拿吧。"
-    },
-    "day3_after_riin_flicker": {
-        "text": "快逃"
-    },
-    "day3_after_riin_choice": {
-        "text": "*要喝吗？*",
-        "choices": [
-            "喝下去",
-            "礼貌地拒绝"
-        ]
-    },
-    "day3_after_riin_drink": {
-        "text": "*我咽下一口。舌尖留下苦味和一丝金属味。作为维生素来说，太冲了。*"
-    },
-    "day3_after_riin_drink_2": {
-        "text": "*视野向一侧错开，又很快恢复。0.5秒？1秒？眩晕转眼就过去了。*\n\n刚才有点晕。已经好了，但跟这个有关吗？我不继续喝了。"
-    },
-    "day3_after_riin_drink_3": {
-        "text": "*老师转过身时狠狠咬住嘴唇内侧，放下杯子的声音有点大。再转回来时，脸上只剩下笑容。*\n\n您也不喜欢这个味道吗？刚才您的表情——"
-    },
-    "day3_after_riin_drink_4": {
-        "text": "味道有点怪吧？草本的东西，是有点苦。"
-    },
-    "day3_after_riin_drink_5": {
-        "text": "*老师把剩下的饮料倒进水槽，背对着我，肩膀僵着。*\n\n剩下的直接倒掉了。我的头晕也要记下来吗？"
-    },
-    "day3_after_riin_refuse": {
-        "text": "是吗？没关系。"
-    },
-    "day3_after_riin_refuse_2": {
-        "text": "*拿杯子的手停下来，手指松了力。她拿走杯子，把里面的饮料倒进水槽，水开了很久。*\n\n倒掉没关系吗？让您白准备了，真不好意思。"
-    },
-    "day3_after_riin_refuse_3": {
-        "text": "*她转过身，眼睛通红，飞快地眨着。*\n\n老师，您没事吧？看着比我还累。"
-    },
-    "day3_after_riin_refuse_4": {
-        "text": "早点回家休息吧。你今天看起来有点累。"
-    },
-    "day3_after_liin_sugar_1": {
-        "text": "*走出保健室时，我留意到门边的垃圾桶。盖子半开着。*"
-    },
-    "day3_after_liin_sugar_2": {
-        "text": "*里面有好几支破碎的安瓿。标签上写着“M-13”，旁边另一个瓶子的成分表上写着“葡萄糖水溶液”。*"
-    },
-    "day3_after_liin_sugar_3": {
-        "text": "*葡萄糖？不是维生素？*"
-    },
-    "day3_after_liin_sugar_4": {
-        "text": "*身后，门关上了。*"
-    },
-    "day3_after_sea": {
-        "text": "*我走出教室，世雅正等在那里。靠着墙。不知道她来了多久。*\n\n*日光灯下，世雅的影子长长地躺在走廊地面上。手里挂着学生会办公室的钥匙。*\n\n在等我？怎么靠着墙，过来叫我就行了。还拿着钥匙……要去学生会室？"
-    },
-    "day3_after_sea_2": {
-        "text": "{name}，午休的时候你在哪儿？"
-    },
-    "day3_after_sea_3": {
-        "text": "*语气轻快，缠在手指上的钥匙圈却一动不动。*\n\n为什么？连我午饭去哪儿也要查？"
-    },
-    "day3_after_sea_noyuna_0": {
-        "text": "*世雅保持着微笑，看向我的鞋尖。沾着泥土的那一侧，对着通往天台的楼梯方向。*"
-    },
-    "day3_after_sea_noyuna_0a": {
-        "text": "一个人吗？"
-    },
-    "day3_after_sea_noyuna_0b": {
-        "text": "嗯，休息了一会儿。"
-    },
-    "day3_after_sea_noyuna_0c": {
-        "text": "*世雅歪着头看我的眼睛。2秒、3秒过去，视线仍一动不动。*\n\n都说了在休息。一直这么看我，我更说不出来。"
-    },
-    "day3_after_sea_noyuna": {
-        "text": "你最近有点不一样了，{name}。"
-    },
-    "day3_after_sea_noyuna_2": {
-        "text": "哪里不一样？"
-    },
-    "day3_after_sea_noyuna_3": {
-        "text": "说不上来。你回答变慢了。"
-    },
-    "day3_after_sea_noyuna_4": {
-        "text": "有事先告诉我。在别人告诉我之前。"
-    },
-    "day3_after_sea_noyuna_5": {
-        "text": "*世雅笑了。钥匙圈的响声慢了一拍，响了一下。*\n\n这又不是非得听别人说的事。想知道我在哪儿，就问我。为什么说得跟汇报一样？"
-    },
-    "day3_after_sea_noyuna_6": {
-        "text": "*走廊的窗户明明关着，我的小臂却有点发凉。*"
-    },
-    "day3_after_sea_4": {
-        "text": "听说你和由娜在一起。"
-    },
-    "day3_after_sea_4a": {
-        "text": "*世雅的视线依次移向我的眼睛、口袋、左手。话尾没有上扬。*\n\n你不是在问。都听说了还确认什么？谁告诉你的？"
-    },
-    "day3_after_sea_choice": {
-        "text": "*该怎么回答？*",
-        "choices": [
-            "老实说",
-            "含糊过去"
-        ]
-    },
-    "day3_after_sea_truth": {
-        "text": "嗯，由娜说有东西要给我看。"
-    },
-    "day3_after_sea_truth_2": {
-        "text": "*世雅的眼皮抖了一下，手心里的钥匙圈不响了。*\n\n你是因为我们两个人在一起才生气？她说有东西要给我看。"
-    },
-    "day3_after_sea_truth_3": {
-        "text": "这样啊。那下一个问题，你也马上回答。"
-    },
-    "day3_after_sea_truth_4": {
-        "text": "*世雅望着窗外看了许久。走廊里只有我们两人，阳光只照着她半边脸。*\n\n别看外面，看着我。你说要马上回答。那你也回答吗？"
-    },
-    "day3_after_sea_truth_5": {
-        "text": "她给你看了什么？"
-    },
-    "day3_after_sea_truth_6": {
-        "text": "照片。学校的照片。"
-    },
-    "day3_after_sea_truth_7": {
-        "text": "学校的照片。\n\n*她重复了一遍。尾音低了下去。*"
-    },
-    "day3_after_sea_truth_8": {
-        "text": "我有时也会看看门外。\n\n*钥匙扣深深地卷进她的掌心里。*"
-    },
-    "day3_after_sea_truth_9": {
-        "text": "没什么。忘了吧。\n\n*她转过身。钥匙扣在掌心里被按了一下。*"
-    },
-    "day3_after_sea_lie": {
-        "text": "我在食堂啊？怎么了？"
-    },
-    "day3_after_sea_lie_2": {
-        "text": "*世雅还保持着笑容，只有钥匙圈的响声停了。*\n\n为什么光笑？有话就说。别说得像你知道我去哪儿了一样。"
-    },
-    "day3_after_sea_lie_3": {
-        "text": "你刚才眼睛又往左边转了。每次撒谎，你都会这样。"
-    },
-    "day3_after_sea_lie_3a": {
-        "text": "*她的声音很低。走廊尽头明明有学生的笑声经过，唯独这句话听得清清楚楚。*"
-    },
-    "day3_after_sea_lie_4": {
-        "text": "别对我这样说话。"
-    },
-    "day3_after_sea_lie_4a": {
-        "text": "*我把视线停在左边的走廊墙上，只是眨了眨眼。世雅早已看向了那边。*"
-    },
-    "day3_after_sea_lie_5": {
-        "text": "下次直接告诉我。你晚了，我会先知道。"
-    },
-    "day3_after_sea_lie_5a": {
-        "text": "*她笑了。钥匙扣又晃起来了。*\n\n我什么时候开口，也不该由你决定。现在不想再聊了。就算笑着说，也很吓人。"
-    },
-    "day3_after_eunsu": {
-        "text": "*我在教师办公室门前停住了脚步。已经放学，大部分老师都下班了。里面的灯却亮着。*"
-    },
-    "day3_after_eunsu_2": {
-        "text": "*门虚掩着。恩秀老师坐在桌前，在文件上写着什么。她没有发现我。*"
-    },
-    "day3_after_eunsu_3": {
-        "text": "*隔着半开的门缝，也能读出黄色文件上端的粗体字。表格上方的标题是**“受试者管理台账”**。*"
-    },
-    "day3_after_eunsu_4": {
-        "text": "*她从座位上站起来。好像来了电话。她朝走廊另一头走去。*"
-    },
-    "day3_after_eunsu_5": {
-        "text": "*文件就那样摊开着。*"
-    },
-    "day3_after_eunsu_choice": {
-        "text": "*要看看那份文件吗？*",
-        "choices": [
-            "悄悄看一眼",
-            "移开视线"
-        ]
-    },
-    "day3_after_eunsu_peek": {
-        "text": "*我放轻脚步，走近桌子。指尖冰凉。拿起文件时，纸面微微晃了一下。*\n\n*边角折着，咖啡渍已经干透。纸的边缘被手摸得有些发黄。*"
-    },
-    "day3_after_eunsu_peek_2": {
-        "text": "*编号和日期一行行排下去。姓名栏大多是空的。只有编号。*"
-    },
-    "day3_after_eunsu_peek_3": {
-        "text": "*#1——日期：2023.03.02。姓名栏：空白。状态：“终止”*\n\n*#3——日期：2023.09.15。姓名栏：空白。状态：“终止”*\n\n*#7——日期：2024.08.20。姓名栏：空白。状态：“终止”*"
-    },
-    "day3_after_eunsu_peek_4": {
-        "text": "*#7旁边用红色圆珠笔写着备注：**“失败——残留反应。出现预期外变量。暂缓处理。”***\n\n*我握住纸的手用力加紧。*"
-    },
-    "day3_after_eunsu_peek_5": {
-        "text": "*页角在手指下皱了起来。我还是翻了过去。*\n\n*#13——写着我的名字。日期：本周一。状态栏是空的。还没有被记录。*"
-    },
-    "day3_after_eunsu_peek_6": {
-        "text": "*十二行。十二个空白的姓名栏。在它们下面，是我的名字。*\n\n*每个空格里都晕着一层薄薄的修正液痕迹。把纸斜过来，几道压出的笔画又浮现了。*\n\n*只有“终止”，用黑色墨水写得清清楚楚。*"
-    },
-    "day3_after_eunsu_peek_7": {
-        "text": "*传来脚步声。我抬起头。*"
-    },
-    "day3_after_eunsu_peek_8": {
-        "text": "啊，那个？是转学生的谈话记录。你好奇吗？"
-    },
-    "day3_after_eunsu_peek_8a": {
-        "text": "*她站在门前，笑着。手里手机的屏幕是黑的。*"
-    },
-    "day3_after_eunsu_peek_9": {
-        "text": "*恩秀老师走来盖住文件，脚步声以固定的节奏靠近。*\n\n谈话记录为什么没有名字？“终止”又是什么意思？"
-    },
-    "day3_after_eunsu_peek_10": {
-        "text": "看到你这么用功学习，真好。看来适应得也不错？"
-    },
-    "day3_after_eunsu_peek_11": {
-        "text": "*她还是最初那副笑容，对齐文件边角的手也丝毫不乱。*\n\n我知道你好奇，可不能让你看其他学生的记录。先回去吧。"
-    },
-    "day3_after_eunsu_ignore": {
-        "text": "*这不是该在这里看的东西。我移开视线，放轻脚步退了回去。*"
-    },
-    "day3_after_alone": {
-        "text": "*我想回家，脚步却朝旧馆走去。鞋尖沿着走廊内侧的线移动。*"
-    },
-    "day3_after_alone_2": {
-        "text": "*旧馆的走廊上，一间间废弃的教室连成一排。只有一盏日光灯忽亮忽灭，把地砖切成一块一块。*"
-    },
-    "day3_after_alone_3": {
-        "text": "*每迈一步，间隔相同的声音就一直回荡到走廊尽头。*"
-    },
-    "day3_after_alone_4": {
-        "text": "*在第三间教室前，我停住了脚步。*\n\n*门的另一边，持续传来“嗡——”的低沉机器声。*\n\n*门牌下的灰尘在细微地颤动。*"
-    },
-    "day3_after_alone_5": {
-        "text": "*我把手贴在门上。一阵细微的震动拍在掌心。门锁着。*\n\n*门旁的玻璃窗被涂成了不透明。看不到里面。*"
-    },
-    "day3_after_alone_6": {
-        "text": "*我跪下来，从门缝往里看。里面漏出微弱的绿光。不是日光灯的颜色。*\n\n*我把耳朵贴上去。机器声之间，混着低沉而悠长的“嘀”声。*"
-    },
-    "day3_after_alone_7": {
-        "text": "*想站起来，膝盖却在发抖。教室的门牌是空的，门牌下只剩四个螺丝孔。*"
-    },
-    "day3_after_alone_8": {
-        "text": "*我站起身。走廊尽头有一块公告板，贴着陈旧的通知。在它下面，墙上有刮痕。*"
-    },
-    "day3_after_alone_9": {
-        "text": "*墙上刮着几个名牌大小的方框，每个都有两个同高的钉痕。用手指挨个点着数，共十二个。重新数了三遍，还是十二个。*"
-    },
-    "day3_after_alone_10": {
-        "text": "*腿在发抖。明明想转身回去，脚尖却又一次朝向那间锁着的教室。*"
-    },
-    "day3_after_alone_11": {
-        "text": "*回去吧。不能再待在这里了。*"
-    },
-    "day3_after_yuna_check": {
-        "text": ""
-    },
-    "day3_after_yuna": {
-        "text": "*放学后的课结束，我走出来，由娜站在花坛后面。校服外披着开衫，脖子上挂着相机。*\n\n*四下看了看，一个人也没有。*\n\n由娜，躲在这里不好找啊。下课了吗？相机也带来了。出什么事了？"
-    },
-    "day3_after_yuna_2": {
-        "text": "学长。"
-    },
-    "day3_after_yuna_3": {
-        "text": "*由娜走近，从口袋拿出一张微型SD卡。*\n\n你等着就是为了给我这个？是什么？"
-    },
-    "day3_after_yuna_4": {
-        "text": "这是刚才给你看的照片的副本。你拿着吧。"
-    },
-    "day3_after_yuna_5": {
-        "text": "这个，我可以保管？既然是你的照片副本，放在你那里不是更好吗？"
-    },
-    "day3_after_yuna_6": {
-        "text": "放在我这里，今天之内就会不见的。要是被老师们察觉的话。"
-    },
-    "day3_after_yuna_6a": {
-        "text": "*递卡片时，她冰凉的指尖碰到我。*\n\n手真凉。你也小心些。"
-    },
-    "day3_after_yuna_7": {
-        "text": "小心点，学长。越是旧的记录，越先消失。"
-    },
-    "day3_after_yuna_8": {
-        "text": "到底什么危险？\n\n*由娜张开嘴。舌尖抵到上齿后面，又落了下去。她什么也没说，再次闭上了嘴。*"
-    },
-    "day3_after_yuna_9": {
-        "text": "晚上不要一个人到处走。"
-    },
-    "day3_after_yuna_9a": {
-        "text": "*由娜加快脚步绕过花坛的拐角，消失了。*\n\n*留在我手里的SD卡又小又轻。里面存着13张照片。*\n\n*我把卡片塞进口袋深处。*"
-    },
-    "day3_after_end": {
-        "text": "*走出学校。夕阳下，操场一片红。攥在手心里的SD卡的边角，一直硌着皮肤。*"
-    }
+  "day3_after_start": {
+    "text": "*放学的班会结束了。教室很快空了下来。窗外，操场上三三两两聚着一些学生。*"
+  },
+  "day3_after_start_2": {
+    "text": "*书包里，照片碎片刮过纸张。早上在小巷里听到的话，和教室骤然安静下来的那一刻，交替浮现。*"
+  },
+  "day3_after_start_3": {
+    "text": "*朝鞋柜走了几步，又停住了。脚尖重新朝向走廊深处。*"
+  },
+  "day3_after_choice": {
+    "text": "*去哪儿呢。*",
+    "choices": [
+      "去保健室看看",
+      "和世雅一起走",
+      "去教师办公室看看",
+      "一个人留下"
+    ]
+  },
+  "day3_after_riin": {
+    "text": "*我站在保健室门前。里面传来细小的声响。玻璃瓶相碰的声音。*"
+  },
+  "day3_after_riin_first": {
+    "text": "*第一次来保健室，手却先找到了门框，连门牌都还没看。*"
+  },
+  "day3_after_riin_first_2": {
+    "text": "进来。"
+  },
+  "day3_after_riin_2": {
+    "text": "*我敲了敲门。里面的声音断了。两秒钟，只剩寂静。*"
+  },
+  "day3_after_riin_3": {
+    "text": "进来。"
+  },
+  "day3_after_riin_4": {
+    "text": "*我打开门，莉仁老师站在水槽前。台面上还留着水渍，敞开的柜门在极轻地晃动。*\n\n您刚才在收拾吗？我敲门后声音就停了。"
+  },
+  "day3_after_riin_5": {
+    "text": "放学后怎么来了？哪儿不舒服吗？"
+  },
+  "day3_after_riin_6": {
+    "text": "不是。脑子里有点乱。\n\n*莉仁老师看了我很久，直到墙上的秒针走了三下，她仍未回答。*"
+  },
+  "day3_after_riin_6a": {
+    "text": "我这儿有电解质饮料。加了维生素，还有一点草本成分。"
+  },
+  "day3_after_riin_7": {
+    "text": "*她从柜子里拿出一个小瓶。浅紫色液体沿着杯子内壁流下。递杯子的那只手，只有无名指和小指在微微颤抖。水槽的水龙头已经开了一半。*\n\n老师，您手在抖。杯子我来拿吧。"
+  },
+  "day3_after_riin_flicker": {
+    "text": "快逃"
+  },
+  "day3_after_riin_choice": {
+    "text": "*要喝吗？*",
+    "choices": [
+      "喝下去",
+      "礼貌地拒绝"
+    ]
+  },
+  "day3_after_riin_drink": {
+    "text": "*我咽下一口。舌尖留下苦味和一丝金属味。作为维生素来说，太冲了。*"
+  },
+  "day3_after_riin_drink_2": {
+    "text": "*视野向一侧错开，又很快恢复。0.5秒？1秒？眩晕转眼就过去了。*\n\n刚才有点晕。已经好了，但跟这个有关吗？我不继续喝了。"
+  },
+  "day3_after_riin_drink_3": {
+    "text": "*老师转过身时狠狠咬住嘴唇内侧，放下杯子的声音有点大。再转回来时，脸上只剩下笑容。*\n\n您也不喜欢这个味道吗？刚才您的表情——"
+  },
+  "day3_after_riin_drink_4": {
+    "text": "味道有点怪吧？草本的东西，是有点苦。"
+  },
+  "day3_after_riin_drink_5": {
+    "text": "*老师把剩下的饮料倒进水槽，背对着我，肩膀僵着。*\n\n剩下的直接倒掉了。我的头晕也要记下来吗？"
+  },
+  "day3_after_riin_refuse": {
+    "text": "是吗？没关系。"
+  },
+  "day3_after_riin_refuse_2": {
+    "text": "*拿杯子的手停下来，手指松了力。她拿走杯子，把里面的饮料倒进水槽，水开了很久。*\n\n倒掉没关系吗？让您白准备了，真不好意思。"
+  },
+  "day3_after_riin_refuse_3": {
+    "text": "*她转过身，眼睛通红，飞快地眨着。*\n\n老师，您没事吧？看着比我还累。"
+  },
+  "day3_after_riin_refuse_4": {
+    "text": "早点回家休息吧。你今天看起来有点累。"
+  },
+  "day3_after_liin_sugar_1": {
+    "text": "*走出保健室时，我留意到门边的垃圾桶。盖子半开着。*"
+  },
+  "day3_after_liin_sugar_2": {
+    "text": "*里面有好几支破碎的安瓿。标签上写着“M-13”，旁边另一个瓶子的成分表上写着“葡萄糖水溶液”。*"
+  },
+  "day3_after_liin_sugar_3": {
+    "text": "*葡萄糖？不是维生素？*"
+  },
+  "day3_after_liin_sugar_4": {
+    "text": "*身后，门关上了。*"
+  },
+  "day3_after_sea": {
+    "text": "*我走出教室，世雅正等在那里。靠着墙。不知道她来了多久。*\n\n*日光灯下，世雅的影子长长地躺在走廊地面上。手里挂着学生会办公室的钥匙。*\n\n在等我？怎么靠着墙，过来叫我就行了。还拿着钥匙……要去学生会室？"
+  },
+  "day3_after_sea_2": {
+    "text": "{name}，午休的时候你在哪儿？"
+  },
+  "day3_after_sea_3": {
+    "text": "*语气轻快，缠在手指上的钥匙圈却一动不动。*\n\n为什么？连我午饭去哪儿也要查？"
+  },
+  "day3_after_sea_noyuna_0": {
+    "text": "*世雅保持着微笑，看向我的鞋尖。沾着泥土的那一侧，对着通往天台的楼梯方向。*"
+  },
+  "day3_after_sea_noyuna_0a": {
+    "text": "一个人吗？"
+  },
+  "day3_after_sea_noyuna_0b": {
+    "text": "嗯，休息了一会儿。"
+  },
+  "day3_after_sea_noyuna_0c": {
+    "text": "*世雅歪着头看我的眼睛。2秒、3秒过去，视线仍一动不动。*\n\n都说了在休息。一直这么看我，我更说不出来。"
+  },
+  "day3_after_sea_noyuna": {
+    "text": "你最近有点不一样了，{name}。"
+  },
+  "day3_after_sea_noyuna_2": {
+    "text": "哪里不一样？"
+  },
+  "day3_after_sea_noyuna_3": {
+    "text": "说不上来。你回答变慢了。"
+  },
+  "day3_after_sea_noyuna_4": {
+    "text": "有事先告诉我。在别人告诉我之前。"
+  },
+  "day3_after_sea_noyuna_5": {
+    "text": "*世雅笑了。钥匙圈的响声慢了一拍，响了一下。*\n\n这又不是非得听别人说的事。想知道我在哪儿，就问我。为什么说得跟汇报一样？"
+  },
+  "day3_after_sea_noyuna_6": {
+    "text": "*走廊的窗户明明关着，我的小臂却有点发凉。*"
+  },
+  "day3_after_sea_4": {
+    "text": "听说你和由娜在一起。"
+  },
+  "day3_after_sea_4a": {
+    "text": "*世雅的视线依次移向我的眼睛、口袋、左手。话尾没有上扬。*\n\n你不是在问。都听说了还确认什么？谁告诉你的？"
+  },
+  "day3_after_sea_choice": {
+    "text": "*该怎么回答？*",
+    "choices": [
+      "老实说",
+      "含糊过去"
+    ]
+  },
+  "day3_after_sea_truth": {
+    "text": "嗯，由娜说有东西要给我看。"
+  },
+  "day3_after_sea_truth_2": {
+    "text": "*世雅的眼皮抖了一下，手心里的钥匙圈不响了。*\n\n你是因为我们两个人在一起才生气？她说有东西要给我看。"
+  },
+  "day3_after_sea_truth_3": {
+    "text": "这样啊。那下一个问题，你也马上回答。"
+  },
+  "day3_after_sea_truth_4": {
+    "text": "*世雅望着窗外看了许久。走廊里只有我们两人，阳光只照着她半边脸。*\n\n别看外面，看着我。你说要马上回答。那你也回答吗？"
+  },
+  "day3_after_sea_truth_5": {
+    "text": "她给你看了什么？"
+  },
+  "day3_after_sea_truth_6": {
+    "text": "照片。学校的照片。"
+  },
+  "day3_after_sea_truth_7": {
+    "text": "学校的照片。\n\n*她重复了一遍。尾音低了下去。*"
+  },
+  "day3_after_sea_truth_8": {
+    "text": "我有时也会看看门外。\n\n*钥匙扣深深地卷进她的掌心里。*"
+  },
+  "day3_after_sea_truth_9": {
+    "text": "没什么。忘了吧。\n\n*她转过身。钥匙扣在掌心里被按了一下。*"
+  },
+  "day3_after_sea_lie": {
+    "text": "我在食堂啊？怎么了？"
+  },
+  "day3_after_sea_lie_2": {
+    "text": "*世雅还保持着笑容，只有钥匙圈的响声停了。*\n\n为什么光笑？有话就说。别说得像你知道我去哪儿了一样。"
+  },
+  "day3_after_sea_lie_3": {
+    "text": "你刚才眼睛又往左边转了。每次撒谎，你都会这样。"
+  },
+  "day3_after_sea_lie_3a": {
+    "text": "*她的声音很低。走廊尽头明明有学生的笑声经过，唯独这句话听得清清楚楚。*"
+  },
+  "day3_after_sea_lie_4": {
+    "text": "别对我这样说话。"
+  },
+  "day3_after_sea_lie_4a": {
+    "text": "*我把视线停在左边的走廊墙上，只是眨了眨眼。世雅早已看向了那边。*"
+  },
+  "day3_after_sea_lie_5": {
+    "text": "下次直接告诉我。你晚了，我会先知道。"
+  },
+  "day3_after_sea_lie_5a": {
+    "text": "*她笑了。钥匙扣又晃起来了。*\n\n我什么时候开口，也不该由你决定。现在不想再聊了。就算笑着说，也很吓人。"
+  },
+  "day3_after_eunsu": {
+    "text": "*我在教师办公室门前停住了脚步。已经放学，大部分老师都下班了。里面的灯却亮着。*"
+  },
+  "day3_after_eunsu_2": {
+    "text": "*门虚掩着。恩秀老师坐在桌前，在文件上写着什么。她没有发现我。*"
+  },
+  "day3_after_eunsu_3": {
+    "text": "*隔着半开的门缝，也能读出黄色文件上端的粗体字。表格上方的标题是**“受试者管理台账”**。*"
+  },
+  "day3_after_eunsu_4": {
+    "text": "*她从座位上站起来。好像来了电话。她朝走廊另一头走去。*"
+  },
+  "day3_after_eunsu_5": {
+    "text": "*文件就那样摊开着。*"
+  },
+  "day3_after_eunsu_choice": {
+    "text": "*要看看那份文件吗？*",
+    "choices": [
+      "悄悄看一眼",
+      "移开视线"
+    ]
+  },
+  "day3_after_eunsu_peek": {
+    "text": "*我放轻脚步，走近桌子。指尖冰凉。拿起文件时，纸面微微晃了一下。*\n\n*边角折着，咖啡渍已经干透。纸的边缘被手摸得有些发黄。*"
+  },
+  "day3_after_eunsu_peek_2": {
+    "text": "*编号和日期一行行排下去。姓名栏大多是空的。只有编号。*"
+  },
+  "day3_after_eunsu_peek_3": {
+    "text": "*#1——日期：2023.03.02。姓名栏：空白。状态：“终止”*\n\n*#3——日期：2023.09.15。姓名栏：空白。状态：“终止”*\n\n*#7——日期：2024.08.20。姓名栏：空白。状态：“终止”*"
+  },
+  "day3_after_eunsu_peek_4": {
+    "text": "*#7旁边用红色圆珠笔写着备注：**“失败——残留反应。出现预期外变量。暂缓处理。”***\n\n*我握住纸的手用力加紧。*"
+  },
+  "day3_after_eunsu_peek_5": {
+    "text": "*页角在手指下皱了起来。我还是翻了过去。*\n\n*#13——写着我的名字。日期：本周一。状态栏是空的。还没有被记录。*"
+  },
+  "day3_after_eunsu_peek_6": {
+    "text": "*十二行。十二个空白的姓名栏。在它们下面，是我的名字。*\n\n*每个空格里都晕着一层薄薄的修正液痕迹。把纸斜过来，几道压出的笔画又浮现了。*\n\n*只有“终止”，用黑色墨水写得清清楚楚。*"
+  },
+  "day3_after_eunsu_peek_7": {
+    "text": "*传来脚步声。我抬起头。*"
+  },
+  "day3_after_eunsu_peek_8": {
+    "text": "啊，那个？是转学生的谈话记录。你好奇吗？"
+  },
+  "day3_after_eunsu_peek_8a": {
+    "text": "*她站在门前，笑着。手里手机的屏幕是黑的。*"
+  },
+  "day3_after_eunsu_peek_9": {
+    "text": "*恩秀老师走来盖住文件，脚步声以固定的节奏靠近。*\n\n谈话记录为什么没有名字？“终止”又是什么意思？"
+  },
+  "day3_after_eunsu_peek_10": {
+    "text": "看到你这么用功学习，真好。看来适应得也不错？"
+  },
+  "day3_after_eunsu_peek_11": {
+    "text": "*她还是最初那副笑容，对齐文件边角的手也丝毫不乱。*\n\n我知道你好奇，可不能让你看其他学生的记录。先回去吧。"
+  },
+  "day3_after_eunsu_ignore": {
+    "text": "*这不是该在这里看的东西。我移开视线，放轻脚步退了回去。*"
+  },
+  "day3_after_alone": {
+    "text": "*我想回家，脚步却朝旧馆走去。鞋尖沿着走廊内侧的线移动。*"
+  },
+  "day3_after_alone_2": {
+    "text": "*旧馆的走廊上，一间间废弃的教室连成一排。只有一盏日光灯忽亮忽灭，把地砖切成一块一块。*"
+  },
+  "day3_after_alone_3": {
+    "text": "*每迈一步，间隔相同的声音就一直回荡到走廊尽头。*"
+  },
+  "day3_after_alone_4": {
+    "text": "*在第三间教室前，我停住了脚步。*\n\n*门的另一边，持续传来“嗡——”的低沉机器声。*\n\n*门牌下的灰尘在细微地颤动。*"
+  },
+  "day3_after_alone_5": {
+    "text": "*我把手贴在门上。一阵细微的震动拍在掌心。门锁着。*\n\n*门旁的玻璃窗被涂成了不透明。看不到里面。*"
+  },
+  "day3_after_alone_6": {
+    "text": "*我跪下来，从门缝往里看。里面漏出微弱的绿光。不是日光灯的颜色。*\n\n*我把耳朵贴上去。机器声之间，混着低沉而悠长的“嘀”声。*"
+  },
+  "day3_after_alone_7": {
+    "text": "*想站起来，膝盖却在发抖。教室的门牌是空的，门牌下只剩四个螺丝孔。*"
+  },
+  "day3_after_alone_8": {
+    "text": "*我站起身。走廊尽头有一块公告板，贴着陈旧的通知。在它下面，墙上有刮痕。*"
+  },
+  "day3_after_alone_9": {
+    "text": "*墙上刮着几个名牌大小的方框，每个都有两个同高的钉痕。用手指挨个点着数，共十二个。重新数了三遍，还是十二个。*"
+  },
+  "day3_after_alone_10": {
+    "text": "*腿在发抖。明明想转身回去，脚尖却又一次朝向那间锁着的教室。*"
+  },
+  "day3_after_alone_11": {
+    "text": "*回去吧。不能再待在这里了。*"
+  },
+  "day3_after_yuna_check": {
+    "text": ""
+  },
+  "day3_after_yuna": {
+    "text": "*放学后的课结束，我走出来，由娜站在花坛后面。校服外披着开衫，脖子上挂着相机。*\n\n*四下看了看，一个人也没有。*\n\n由娜，躲在这里不好找啊。下课了吗？相机也带来了。出什么事了？"
+  },
+  "day3_after_yuna_2": {
+    "text": "学长。"
+  },
+  "day3_after_yuna_3": {
+    "text": "*由娜走近，从口袋拿出一张微型SD卡。*\n\n你等着就是为了给我这个？是什么？"
+  },
+  "day3_after_yuna_4": {
+    "text": "这是刚才给你看的照片的副本。你拿着吧。"
+  },
+  "day3_after_yuna_5": {
+    "text": "这个，我可以保管？既然是你的照片副本，放在你那里不是更好吗？"
+  },
+  "day3_after_yuna_6": {
+    "text": "放在我这里，今天之内就会不见的。要是被老师们察觉的话。"
+  },
+  "day3_after_yuna_6a": {
+    "text": "*递卡片时，她冰凉的指尖碰到我。*\n\n手真凉。你也小心些。"
+  },
+  "day3_after_yuna_7": {
+    "text": "小心点，学长。越是旧的记录，越先消失。"
+  },
+  "day3_after_yuna_8": {
+    "text": "到底什么危险？\n\n*由娜张开嘴。舌尖抵到上齿后面，又落了下去。她什么也没说，再次闭上了嘴。*"
+  },
+  "day3_after_yuna_9": {
+    "text": "晚上不要一个人到处走。"
+  },
+  "day3_after_yuna_9a": {
+    "text": "*由娜加快脚步绕过花坛的拐角，消失了。*\n\n*留在我手里的SD卡又小又轻。里面存着13张照片。*\n\n*我把卡片塞进口袋深处。*"
+  },
+  "day3_after_end": {
+    "text": "*走出学校。夕阳下，操场一片红。攥在手心里的SD卡的边角，一直硌着皮肤。*"
+  },
+  "day3_after_riin_closeness": {
+    "text": ""
+  },
+  "day3_after_riin_closeness_high_1": {
+    "text": "莉仁 将杯子推向我，然后停了下来。我的手指碰到了托盘的边缘，被压得发白。"
+  },
+  "day3_after_riin_closeness_high_2": {
+    "text": "今天的茶只喝一点。剩下的你可以留下。"
+  },
+  "day3_after_riin_closeness_high_3": {
+    "text": "这辆车比平常轻。清晰可见杯底，碟子上只剩下水滴。"
+  },
+  "day3_after_riin_closeness_high_4": {
+    "text": "如果我留下一些，你不会把它记入我的记录吗？"
+  },
+  "day3_after_riin_closeness_high_5": {
+    "text": "写下来是我的工作。你不必担心这一点。"
+  },
+  "day3_after_riin_closeness_high_6": {
+    "text": "老师把记录本翻了过来。刚刚打开的表面有一条墨水未干的线条。"
+  },
+  "day3_after_riin_closeness_high_7": {
+    "text": "你的手怎么抖？比今天早上更好吗？"
+  },
+  "day3_after_riin_closeness_high_8": {
+    "text": "我把手放在桌子上。 莉仁 朝我的方向看去，然后才到达我的指尖。"
+  },
+  "day3_after_riin_closeness_high_9": {
+    "text": "我可以看一下吗？如果你不愿意，就告诉我吧。"
+  },
+  "day3_after_riin_closeness_high_10": {
+    "text": "我伸出手，简单地用手背测量了一下温度。之后，我什至没有检查过他的脉搏。"
+  },
+  "day3_after_riin_closeness_high_11": {
+    "text": "你今天吃午饭了，不是吗？你吃完饭后我不应该把茶泡得太浓。"
+  },
+  "day3_after_riin_closeness_high_12": {
+    "text": "言语有些不同步。还没等我问，老师就合上了茶叶容器的盖子。"
+  },
+  "day3_after_riin_closeness_high_13": {
+    "text": "一辆马车从门外驶过。直到车轮的声音停止，莉仁才说话。"
+  },
+  "day3_after_riin_closeness_high_14": {
+    "text": "你可以说你是来喝茶的。只是别说我叫你留下一些。"
+  },
+  "day3_after_riin_closeness_high_15": {
+    "text": "当我放下茶时，莉仁先把我的杯子拿走了。杯子还剩半满。"
+  },
+  "day3_after_riin_closeness_low_1": {
+    "text": "张寅拿出一个纸杯放在桌子上，把玻璃杯放在够不着的地方。"
+  },
+  "day3_after_riin_closeness_low_2": {
+    "text": "如果有任何事情困扰您，请先告诉您的班主任。一旦它被传递，我会见到你。"
+  },
+  "day3_after_riin_closeness_low_3": {
+    "text": "记录本上有一个单独的空间来写名字。当我拿起笔时，莉仁告诉我写下日期。"
+  },
+  "day3_after_riin_closeness_low_4": {
+    "text": "我写完名字，放下了笔。老师把纸对折，放进抽屉里。"
+  },
+  "day3_after_riin_closeness_low_5": {
+    "text": "今天只是快速检查一下。呆得太久，他们会算你缺课。"
+  },
+  "day3_after_sea_closeness": {
+    "text": ""
+  },
+  "day3_after_sea_closeness_high_1": {
+    "text": "世正放开握着包带的手，将手掌上留下的痕迹擦在裙子上。"
+  },
+  "day3_after_sea_closeness_high_2": {
+    "text": "我是不是问你太多了？"
+  },
+  "day3_after_sea_closeness_high_3": {
+    "text": "我记得有人问我的爱好。我最喜欢的配菜，我的睡眠时间，以及我年轻时居住的社区。"
+  },
+  "day3_after_sea_closeness_high_4": {
+    "text": "有时你说得好像你已经知道一样，而不问我。"
+  },
+  "day3_after_sea_closeness_high_5": {
+    "text": "世雅想笑，但低下了头。我用指甲刮掉了包拉链上剥落的油漆。"
+  },
+  "day3_after_sea_closeness_high_6": {
+    "text": "我讨厌弄错。我不想再给你一些你不喜欢的东西。"
+  },
+  "day3_after_sea_closeness_high_7": {
+    "text": "再次？"
+  },
+  "day3_after_sea_closeness_high_8": {
+    "text": "我也为其他人这样做。你不是第一个。"
+  },
+  "day3_after_sea_closeness_high_9": {
+    "text": "走廊布告栏上的一个图钉不见了。 世雅举起纸并移动了另一个图钉。"
+  },
+  "day3_after_sea_closeness_high_10": {
+    "text": "如果你忘记了什么，我可以帮你写下来。我很擅长这个。"
+  },
+  "day3_after_sea_closeness_high_11": {
+    "text": "我可以自己写下来。"
+  },
+  "day3_after_sea_closeness_high_12": {
+    "text": "当世妍放下手中的图钉时，纸的底部又卷了起来。"
+  },
+  "day3_after_sea_closeness_high_13": {
+    "text": "那你也给我看看吧。不要独自写下一切，然后自己消失。"
+  },
+  "day3_after_sea_closeness_high_14": {
+    "text": "随着脚步声越来越近，世雅拿起了我的包。递把手的手比之前慢了一些。"
+  },
+  "day3_after_sea_closeness_high_15": {
+    "text": "今天你可以选择。我不会尝试去猜测。"
+  },
+  "day3_after_sea_closeness_low_1": {
+    "text": "世雅 将袋子拉向他。我的书就放在他旁边，但我没有递给他。"
+  },
+  "day3_after_sea_closeness_low_2": {
+    "text": "只要告诉我你要去哪里。老师问我，我也得回答。"
+  },
+  "day3_after_sea_closeness_low_3": {
+    "text": "我亲自告诉老师。"
+  },
+  "day3_after_sea_closeness_low_4": {
+    "text": "好的。如果我说我不知道​​，请不要生气。"
+  },
+  "day3_after_sea_closeness_low_5": {
+    "text": "当我拿起书时，世雅把手移开。当我先看向走廊的另一边时，我也摔倒了一步。"
+  },
+  "day3_after_eunsu_closeness": {
+    "text": ""
+  },
+  "day3_after_eunsu_closeness_high_1": {
+    "text": "老师一边调整着考勤表的角一边看着我。这次我没有遮盖文件。"
+  },
+  "day3_after_eunsu_closeness_high_2": {
+    "text": "你在走廊等吗？如果门开着，你就可以进来。"
+  },
+  "day3_after_eunsu_closeness_high_3": {
+    "text": "你还在写。"
+  },
+  "day3_after_eunsu_closeness_high_4": {
+    "text": "他把空椅子转向我，把挂在椅背上的羊毛衫放到腿上。"
+  },
+  "day3_after_eunsu_closeness_high_5": {
+    "text": "请坐一会儿。你没感觉不舒服吧？"
+  },
+  "day3_after_eunsu_closeness_high_6": {
+    "text": "当他说没有的时候，老师就合上了笔帽。确认问题到此结束。"
+  },
+  "day3_after_eunsu_closeness_high_7": {
+    "text": "这次，我希望你留在我的班级直到学期结束。"
+  },
+  "day3_after_eunsu_closeness_high_8": {
+    "text": "当我告诉他现在是转学第三天时，老师闭上了眼睛，又睁开了。我曾经扣过羊毛衫的扣子。"
+  },
+  "day3_after_eunsu_closeness_high_9": {
+    "text": "我见过很多学生转学。说再见的人永远都没有准备好。"
+  },
+  "day3_after_eunsu_closeness_high_10": {
+    "text": "如果我生病了，我可以去其他班级吗？"
+  },
+  "day3_after_eunsu_closeness_high_11": {
+    "text": "谁说的？"
+  },
+  "day3_after_eunsu_closeness_high_12": {
+    "text": "老师的手来了，停在了我的课桌前。等我回答后，他翻了一页文件。"
+  },
+  "day3_after_eunsu_closeness_high_13": {
+    "text": "不。如果你生病了，你就去护士办公室。当你回来的时候，你就坐在这里。"
+  },
+  "day3_after_eunsu_closeness_high_14": {
+    "text": "窗边的椅子上挂着一条长长的灯线。老师看到空座位，就把椅子推到了课桌上。"
+  },
+  "day3_after_eunsu_closeness_high_15": {
+    "text": "要求你留下来直到最后听起来一定是很多。今天离开之前就来道别吧。"
+  },
+  "day3_after_eunsu_closeness_low_1": {
+    "text": "老师没有放弃椅子，指着门边。我把一个文件夹放在肘下。"
+  },
+  "day3_after_eunsu_closeness_low_2": {
+    "text": "你能先告诉我你需要什么吗？我还有另一个约会。"
+  },
+  "day3_after_eunsu_closeness_low_3": {
+    "text": "窗边的一张空椅子上放着另一个学生的书包，名牌翻了过来。"
+  },
+  "day3_after_eunsu_closeness_low_4": {
+    "text": "我简单地改变了我想问的问题。老师写下了答案，并在纸的底部画了一条线。"
+  },
+  "day3_after_eunsu_closeness_low_5": {
+    "text": "好的。回去上课吧。如果需要的话我会打电话给你。"
+  },
+  "day3_history_callback_15": {
+    "text": "他说这种气味与他收到的第一辆车不同。 莉仁用手遮住了容器底部的日期，说他已经换了叶子。"
+  },
+  "day3_history_callback_16": {
+    "text": "当被问及关闭应用程序当天是否看到通知时，世雅 的手停了下来。当时我只是说我想先检查一下。"
+  },
+  "day3_history_callback_17": {
+    "text": "当我提出第一天晚上发的问题时，老师并没有重开消息，而是按顺序说了我问的项目。"
+  }
 }

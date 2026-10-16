@@ -83,8 +83,8 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_7"
     },
     "day3_after_riin_7": {
-        character: "riin_pain",
-        next: "day3_after_riin_choice"
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness"
     },
 
     // ★ FLICKER GLITCH: 첫 번째 선택지가 0.1초간 "도망쳐"로 깜빡임 (붉은색)
@@ -194,8 +194,8 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_sea_4a"
     },
     "day3_after_sea_4a": {
-        character: "sea_serious",
-        next: "day3_after_sea_choice"
+        "character": "sea_serious",
+        "next": "day3_after_sea_closeness"
     },
 
     // 솔직히 말한다 / 얼버무린다
@@ -354,8 +354,8 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_eunsu_4"
     },
     "day3_after_eunsu_4": {
-        character: "eunsu_writing",
-        next: "day3_after_eunsu_5"
+        "character": "eunsu_writing",
+        "next": "day3_after_eunsu_closeness"
     },
     "day3_after_eunsu_5": {
         background: "closeup_subject_ledger",
@@ -573,5 +573,318 @@ Object.assign(SCENARIO[3], {
         character: null,
         changeSlot: "night",
         next: "day3_night_start"
+    }
+});
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[3], {
+    "day3_after_riin_closeness": {
+        "affinityChar": "riin",
+        "affinityBranches": [
+            {
+                "minAffinity": 25,
+                "next": "day3_after_riin_closeness_high_1"
+            },
+            {
+                "minAffinity": -100,
+                "next": "day3_after_riin_closeness_low_1"
+            }
+        ]
+    },
+    "day3_after_riin_closeness_high_1": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_2"
+    },
+    "day3_after_riin_closeness_high_2": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_3"
+    },
+    "day3_after_riin_closeness_high_3": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_4"
+    },
+    "day3_after_riin_closeness_high_4": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_5"
+    },
+    "day3_after_riin_closeness_high_5": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_6"
+    },
+    "day3_after_riin_closeness_high_6": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_7"
+    },
+    "day3_after_riin_closeness_high_7": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_8"
+    },
+    "day3_after_riin_closeness_high_8": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_9"
+    },
+    "day3_after_riin_closeness_high_9": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_10"
+    },
+    "day3_after_riin_closeness_high_10": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_11"
+    },
+    "day3_after_riin_closeness_high_11": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_12"
+    },
+    "day3_after_riin_closeness_high_12": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_13",
+        "branches": [
+            {
+                "condition": "received_riin_tea",
+                "next": "day3_history_callback_15"
+            }
+        ]
+    },
+    "day3_after_riin_closeness_high_13": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_14"
+    },
+    "day3_after_riin_closeness_high_14": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_15"
+    },
+    "day3_after_riin_closeness_high_15": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_choice"
+    },
+    "day3_after_riin_closeness_low_1": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_low_2"
+    },
+    "day3_after_riin_closeness_low_2": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_low_3"
+    },
+    "day3_after_riin_closeness_low_3": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_low_4"
+    },
+    "day3_after_riin_closeness_low_4": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_low_5"
+    },
+    "day3_after_riin_closeness_low_5": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_choice"
+    },
+    "day3_after_sea_closeness": {
+        "affinityChar": "sea",
+        "affinityBranches": [
+            {
+                "minAffinity": 25,
+                "next": "day3_after_sea_closeness_high_1"
+            },
+            {
+                "minAffinity": -100,
+                "next": "day3_after_sea_closeness_low_1"
+            }
+        ]
+    },
+    "day3_after_sea_closeness_high_1": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_2"
+    },
+    "day3_after_sea_closeness_high_2": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_3"
+    },
+    "day3_after_sea_closeness_high_3": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_4"
+    },
+    "day3_after_sea_closeness_high_4": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_5"
+    },
+    "day3_after_sea_closeness_high_5": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_6"
+    },
+    "day3_after_sea_closeness_high_6": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_7"
+    },
+    "day3_after_sea_closeness_high_7": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_8"
+    },
+    "day3_after_sea_closeness_high_8": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_9"
+    },
+    "day3_after_sea_closeness_high_9": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_10",
+        "branches": [
+            {
+                "condition": "tried_kill_safety_app",
+                "next": "day3_history_callback_16"
+            }
+        ]
+    },
+    "day3_after_sea_closeness_high_10": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_11"
+    },
+    "day3_after_sea_closeness_high_11": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_12"
+    },
+    "day3_after_sea_closeness_high_12": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_13"
+    },
+    "day3_after_sea_closeness_high_13": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_14"
+    },
+    "day3_after_sea_closeness_high_14": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_15"
+    },
+    "day3_after_sea_closeness_high_15": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_choice"
+    },
+    "day3_after_sea_closeness_low_1": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_low_2"
+    },
+    "day3_after_sea_closeness_low_2": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_low_3"
+    },
+    "day3_after_sea_closeness_low_3": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_low_4"
+    },
+    "day3_after_sea_closeness_low_4": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_low_5"
+    },
+    "day3_after_sea_closeness_low_5": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_choice"
+    },
+    "day3_after_eunsu_closeness": {
+        "affinityChar": "eunsu",
+        "affinityBranches": [
+            {
+                "minAffinity": 25,
+                "next": "day3_after_eunsu_closeness_high_1"
+            },
+            {
+                "minAffinity": -100,
+                "next": "day3_after_eunsu_closeness_low_1"
+            }
+        ]
+    },
+    "day3_after_eunsu_closeness_high_1": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_2"
+    },
+    "day3_after_eunsu_closeness_high_2": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_3"
+    },
+    "day3_after_eunsu_closeness_high_3": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_4"
+    },
+    "day3_after_eunsu_closeness_high_4": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_5"
+    },
+    "day3_after_eunsu_closeness_high_5": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_6"
+    },
+    "day3_after_eunsu_closeness_high_6": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_7"
+    },
+    "day3_after_eunsu_closeness_high_7": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_8"
+    },
+    "day3_after_eunsu_closeness_high_8": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_9",
+        "branches": [
+            {
+                "condition": "asked_safety_app_day1",
+                "next": "day3_history_callback_17"
+            }
+        ]
+    },
+    "day3_after_eunsu_closeness_high_9": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_10"
+    },
+    "day3_after_eunsu_closeness_high_10": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_11"
+    },
+    "day3_after_eunsu_closeness_high_11": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_12"
+    },
+    "day3_after_eunsu_closeness_high_12": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_13"
+    },
+    "day3_after_eunsu_closeness_high_13": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_14"
+    },
+    "day3_after_eunsu_closeness_high_14": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_15"
+    },
+    "day3_after_eunsu_closeness_high_15": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_5"
+    },
+    "day3_after_eunsu_closeness_low_1": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_low_2"
+    },
+    "day3_after_eunsu_closeness_low_2": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_low_3"
+    },
+    "day3_after_eunsu_closeness_low_3": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_low_4"
+    },
+    "day3_after_eunsu_closeness_low_4": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_low_5"
+    },
+    "day3_after_eunsu_closeness_low_5": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_5"
+    },
+    "day3_history_callback_15": {
+        "character": "riin_pain",
+        "next": "day3_after_riin_closeness_high_13"
+    },
+    "day3_history_callback_16": {
+        "character": "sea_broken_smile",
+        "next": "day3_after_sea_closeness_high_10"
+    },
+    "day3_history_callback_17": {
+        "character": "eunsu_gentle",
+        "next": "day3_after_eunsu_closeness_high_9"
     }
 });

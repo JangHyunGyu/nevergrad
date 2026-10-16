@@ -1,225 +1,346 @@
 {
-    "day2_night_start": {
-        "text": "*Ligo o celular.*"
-    },
-    "day2_night_phone_1": {
-        "text": "*O bate-papo em grupo da velha escola. 'Lido por 3'. Ninguém respondeu. Já faz dois dias.*"
-    },
-    "day2_night_phone_2": {
-        "text": "*Mandei uma mensagem para Minsu.*\n\nEi, Minsu. Eu me transferi e você nem entrou em contato."
-    },
-    "day2_night_phone_3": {
-        "text": "*10 minutos depois. O indicador '...' apareceu. Minsu está digitando.*",
-        "messengerDelay": 5000,
-        "messengerTypingName": "Minsu"
-    },
-    "day2_night_phone_4": {
-        "text": "*5 segundos. O indicador de digitação continua piscando. Ele está escrevendo uma mensagem longa?*"
-    },
-    "day2_night_phone_5": {
-        "text": "*A resposta veio.*"
-    },
-    "day2_night_phone_6": {
-        "text": "*Minsu*\n\nSim, indo bem. Como está aí?"
-    },
-    "day2_night_phone_7": {
-        "text": "*Normalmente ele colocaria um emoticon depois do ponto de interrogação. Desta vez, não há nada.*"
-    },
-    "day2_night_phone_8": {
-        "text": "*O indicador de digitação pisca por 5 segundos. A resposta não chega a duas linhas.*"
-    },
-    "day2_night_phone_9": {
-        "text": "*Respondi.*\n\nPor que você está tão formal? Aconteceu alguma coisa?"
-    },
-    "day2_night_phone_10": {
-        "text": "*1 minuto. 2 minutos. O indicador de digitação aparece novamente.*"
-    },
-    "day2_night_phone_11": {
-        "text": "*Minsu*\n\nNão. Não aconteceu nada. Eu estava ocupado."
-    },
-    "day2_night_phone_12": {
-        "text": "*Novamente, não há palavrões nem emojis de costume. As três frases terminam todas com ponto.*"
-    },
-    "day2_night_phone_13": {
-        "text": "*A ponta do meu polegar ficou parada por um bom tempo sobre a caixa de texto.*",
-        "choices": [
-            "Mandar mais uma mensagem para Minsu",
-            "Verificar o antigo grupo de novo",
-            "Deixar o celular de lado e pensar"
-        ]
-    },
-    "day2_night_ft_messenger": {
-        "text": "*Enviei uma resposta.*\n\nEi, Minsu, é você mesmo? Isso não parece você. Aconteceu alguma coisa?"
-    },
-    "day2_night_ft_messenger_2": {
-        "text": "*Indicador de digitação. Piscando para sempre. Cinco segundos, dez, vinte.*"
-    },
-    "day2_night_ft_messenger_3": {
-        "text": "*Minsu*\n\nSou eu. Só estou com um pouco de sono."
-    },
-    "day2_night_ft_messenger_4": {
-        "text": "*O indicador de digitação que piscava por 20 segundos desaparece. Só fica um balão com uma mensagem curta.*"
-    },
-    "day2_night_ft_messenger_5": {
-        "text": "*Apaguei as letras que tinha deixado pela metade na caixa de texto. Quando desliguei a tela, só meu rosto restou no vidro preto.*"
-    },
-    "day2_night_sea_1": {
-        "text": "*Sea*\n\nHoje terminei de arrumar a sala do conselho."
-    },
-    "day2_night_sea_2": {
-        "text": "*Sea*\n\nVamos comer juntos de novo amanhã!"
-    },
-    "day2_night_sea_3": {
-        "text": "*Sea*\n\n...Venha amanhã também."
-    },
-    "day2_night_sea_4": {
-        "text": "*Respondo*\n\nAté amanhã. Boa sorte com os preparativos."
-    },
-    "day2_night_sea_5": {
-        "text": "*Sea*\n\nPreparar? Você é que tem que me ajudar."
-    },
-    "day2_night_sea_6": {
-        "text": "*Sea*\n\nEstarei esperando novamente amanhã de manhã"
-    },
-    "day2_night_sea_7": {
-        "text": "Não precisa chegar cedo. Está frio."
-    },
-    "day2_night_sea_8": {
-        "text": "*Sea*\n\nNão estou com frio. Perto do portão não venta muito."
-    },
-    "day2_night_sea_promise_branch": {
-        "text": ""
-    },
-    "day2_night_sea_9_alt": {
-        "text": "*Sea*\n\nEntão vejo você na escola amanhã. Não fique acordado até tarde."
-    },
-    "day2_night_sea_9": {
-        "text": "*Sea*\n\nMas o lance de sábado ainda tá de pé, né?"
-    },
-    "day2_night_sea_10": {
-        "text": "Sábado? Claro."
-    },
-    "day2_night_sea_11": {
-        "text": "*Sea*\n\nSim. Então está decidido."
-    },
-    "day2_night_sea_12": {
-        "text": "*Sea*\n\nBoa noite então"
-    },
-    "day2_night_sea_13": {
-        "text": "Boa noite."
-    },
-    "day2_night_sea_14": {
-        "text": "*Desliguei o telefone. A lua está fora da janela. Outra notificação do KakaoTalk vibra.*"
-    },
-    "day2_night_sea_14a": {
-        "text": "*Uma mensagem chegou através do aplicativo Student Safety.*"
-    },
-    "day2_night_eunsu_1": {
-        "text": "*Eunsu*\n\n{name}, você se saiu bem na sua apresentação de hoje. Você está se adaptando rapidamente."
-    },
-    "day2_night_eunsu_2": {
-        "text": "*Eunsu*\n\nVocê pode passar na sala dos professores amanhã? Há um documento que preciso verificar."
-    },
-    "day2_night_eunsu_3": {
-        "text": "Sim, entendido."
-    },
-    "day2_night_eunsu_4": {
-        "text": "*Eunsu*\n\n👍 Descanse um pouco."
-    },
-    "day2_night_eunsu_5": {
-        "text": "*A foto de perfil do app de segurança estudantil estava vazia. Sob o nome do remetente, em vez de um número de telefone, havia apenas uma etiqueta cinza dizendo `Professor responsável`.*"
-    },
-    "day2_night_flash_1": {
-        "text": "*Deito debaixo das cobertas e fecho os olhos.*"
-    },
-    "day2_night_flash_2": {
-        "text": "*Uma imagem passa pela minha cabeça. Um corredor desta escola debaixo da chuva. Corro ao lado de alguém com o uniforme encharcado —*"
-    },
-    "day2_night_flash_3": {
-        "text": "*De mãos dadas. A mão de uma menina. Uma mão fria.*"
-    },
-    "day2_night_flash_4": {
-        "text": "*\"Por aqui\" -- a voz de alguém. Uma voz familiar.*"
-    },
-    "day2_night_flash_5": {
-        "text": "*Eu abro meus olhos. Há suor na minha testa.*"
-    },
-    "day2_night_flash_6": {
-        "text": "*O quarto está quieto. Mas a sola dos meus pés ainda guardava o frio do chão molhado do corredor.*"
-    },
-    "day2_night_flash_7": {
-        "text": "*Toco meu ombro. No mesmo lugar onde Eunsu deu um tapinha à tarde, sinto o frio da mão que eu estava segurando, como se as duas sensações se misturassem.*"
-    },
-    "day2_night_flash_8": {
-        "text": "*Vejo os documentos de transferência sob a luminária. A ponta do papel está dobrada no mesmo ângulo da manhã.*"
-    },
-    "day2_night_search_1": {
-        "text": "*...Tirei meu cobertor e me levantei. Não consegui dormir. Peguei meu telefone. Digitei 'Haedoji High School' na barra de pesquisa.*"
-    },
-    "day2_night_search_2": {
-        "text": "*O site oficial da escola tem uma mensagem da direção e o histórico da escola. O link do álbum de formatura diz 'Em preparação'. Eunsu e Riin aparecem na lista de funcionários, mas não têm foto.*"
-    },
-    "day2_night_search_3": {
-        "text": "*Pesquisa de notícias. 'Escola Haedoji.' Sem resultados. A aba de notícias locais também está vazia. No centro da tela, só resta `Nenhum documento corresponde aos termos da busca`.*"
-    },
-    "day2_night_search_4": {
-        "text": "*'Festival da Escola Haedoji', 'Formatura da Escola Haedoji'. O preenchimento automático aparece, mas não há resultados. No lugar das miniaturas, apenas retângulos cinza se repetem.*"
-    },
-    "day2_night_search_5": {
-        "text": "*O brilho da tela diminuiu automaticamente. O nome da escola ainda está na barra de pesquisa. Deixei o celular de lado sem apagar.*"
-    },
-    "day2_night_dream_1": {
-        "text": "*Fecho os olhos novamente. Desta vez, adormeço.*"
-    },
-    "day2_night_dream_2": {
-        "text": "*Estou sonhando.*"
-    },
-    "day2_night_dream_3": {
-        "text": "*Uma sala de aula. Mas não o atual. A disposição da mesa é diferente. Há uma data escrita no quadro-negro, mas não consigo lê-la.*"
-    },
-    "day2_night_dream_4": {
-        "text": "*Alguém está sentado no banco da frente. Cabelo comprido. Só consigo ver as costas deles.*"
-    },
-    "day2_night_dream_5": {
-        "text": "*\"Ei, você está bem?\"*"
-    },
-    "day2_night_dream_6": {
-        "text": "*Aquela pessoa se vira. É Seolhwa. No sonho, os olhos de Seolhwa estão secos. Os cantos da boca estão levantados.*"
-    },
-    "day2_night_dream_7": {
-        "text": "*Seolhwa abre a boca. O som se espalha como pó de apagador de quadro. Só resta o formato dos lábios. 'Aju—'*"
-    },
-    "day2_night_dream_7a": {
-        "text": "*Antes que a próxima sílaba saia, a data no quadro começa a borrar.*"
-    },
-    "day2_night_dream_8": {
-        "text": "*A sala de aula escurece. O rosto de Seolhwa fica embaçado.*"
-    },
-    "day2_night_dream_9": {
-        "text": "*—*"
-    },
-    "day2_night_wake_1": {
-        "text": "*É de manhã. O alarme está tocando.*"
-    },
-    "day2_night_wake_2": {
-        "text": "*Só resta o rosto sorridente de Seolhwa. A voz dela fica abafada pelo alarme, deixando apenas o formato dos lábios.*"
-    },
-    "day2_night_wake_3": {
-        "text": "*A tela do celular ao lado do travesseiro está acesa. Na barra de busca, ainda aparece 'Colégio Haedoji'.*"
-    },
-    "day2_night_end": {
-        "text": "*— Fim do dia 2 —*"
-    },
-    "day2_night_ft_groupchat": {
-        "text": "*Abri o antigo chat de grupo. O número de leituras junto à última mensagem não tinha mudado.*"
-    },
-    "day2_night_ft_groupchat_2": {
-        "text": "*Voltei à lista de conversas e toquei no nome de Minsu.*"
-    },
-    "day2_night_ft_putdown": {
-        "text": "*Pousei o telefone com a tela para baixo e voltei a pensar nas três frases de Minsu.*"
-    },
-    "day2_night_ft_putdown_2": {
-        "text": "*O telemóvel vibrou em cima da secretária. Voltei a virá-lo com o ecrã para cima.*"
-    }
+  "day2_night_start": {
+    "text": "*Ligo o celular.*"
+  },
+  "day2_night_phone_1": {
+    "text": "*O bate-papo em grupo da velha escola. 'Lido por 3'. Ninguém respondeu. Já faz dois dias.*"
+  },
+  "day2_night_phone_2": {
+    "text": "*Mandei uma mensagem para Minsu.*\n\nEi, Minsu. Eu me transferi e você nem entrou em contato."
+  },
+  "day2_night_phone_3": {
+    "text": "*10 minutos depois. O indicador '...' apareceu. Minsu está digitando.*",
+    "messengerDelay": 5000,
+    "messengerTypingName": "Minsu"
+  },
+  "day2_night_phone_4": {
+    "text": "*5 segundos. O indicador de digitação continua piscando. Ele está escrevendo uma mensagem longa?*"
+  },
+  "day2_night_phone_5": {
+    "text": "*A resposta veio.*"
+  },
+  "day2_night_phone_6": {
+    "text": "*Minsu*\n\nSim, indo bem. Como está aí?"
+  },
+  "day2_night_phone_7": {
+    "text": "*Normalmente ele colocaria um emoticon depois do ponto de interrogação. Desta vez, não há nada.*"
+  },
+  "day2_night_phone_8": {
+    "text": "*O indicador de digitação pisca por 5 segundos. A resposta não chega a duas linhas.*"
+  },
+  "day2_night_phone_9": {
+    "text": "*Respondi.*\n\nPor que você está tão formal? Aconteceu alguma coisa?"
+  },
+  "day2_night_phone_10": {
+    "text": "*1 minuto. 2 minutos. O indicador de digitação aparece novamente.*"
+  },
+  "day2_night_phone_11": {
+    "text": "*Minsu*\n\nNão. Não aconteceu nada. Eu estava ocupado."
+  },
+  "day2_night_phone_12": {
+    "text": "*Novamente, não há palavrões nem emojis de costume. As três frases terminam todas com ponto.*"
+  },
+  "day2_night_phone_13": {
+    "text": "*A ponta do meu polegar ficou parada por um bom tempo sobre a caixa de texto.*",
+    "choices": [
+      "Mandar mais uma mensagem para Minsu",
+      "Verificar o antigo grupo de novo",
+      "Deixar o celular de lado e pensar"
+    ]
+  },
+  "day2_night_ft_messenger": {
+    "text": "*Enviei uma resposta.*\n\nEi, Minsu, é você mesmo? Isso não parece você. Aconteceu alguma coisa?"
+  },
+  "day2_night_ft_messenger_2": {
+    "text": "*Indicador de digitação. Piscando para sempre. Cinco segundos, dez, vinte.*"
+  },
+  "day2_night_ft_messenger_3": {
+    "text": "*Minsu*\n\nSou eu. Só estou com um pouco de sono."
+  },
+  "day2_night_ft_messenger_4": {
+    "text": "*O indicador de digitação que piscava por 20 segundos desaparece. Só fica um balão com uma mensagem curta.*"
+  },
+  "day2_night_ft_messenger_5": {
+    "text": "*Apaguei as letras que tinha deixado pela metade na caixa de texto. Quando desliguei a tela, só meu rosto restou no vidro preto.*"
+  },
+  "day2_night_sea_1": {
+    "text": "*Sea*\n\nHoje terminei de arrumar a sala do conselho."
+  },
+  "day2_night_sea_2": {
+    "text": "*Sea*\n\nVamos comer juntos de novo amanhã!"
+  },
+  "day2_night_sea_3": {
+    "text": "*Sea*\n\n...Venha amanhã também."
+  },
+  "day2_night_sea_4": {
+    "text": "*Respondo*\n\nAté amanhã. Boa sorte com os preparativos."
+  },
+  "day2_night_sea_5": {
+    "text": "*Sea*\n\nPreparar? Você é que tem que me ajudar."
+  },
+  "day2_night_sea_6": {
+    "text": "*Sea*\n\nEstarei esperando novamente amanhã de manhã"
+  },
+  "day2_night_sea_7": {
+    "text": "Não precisa chegar cedo. Está frio."
+  },
+  "day2_night_sea_8": {
+    "text": "*Sea*\n\nNão estou com frio. Perto do portão não venta muito."
+  },
+  "day2_night_sea_promise_branch": {
+    "text": ""
+  },
+  "day2_night_sea_9_alt": {
+    "text": "*Sea*\n\nEntão vejo você na escola amanhã. Não fique acordado até tarde."
+  },
+  "day2_night_sea_9": {
+    "text": "*Sea*\n\nMas o lance de sábado ainda tá de pé, né?"
+  },
+  "day2_night_sea_10": {
+    "text": "Sábado? Claro."
+  },
+  "day2_night_sea_11": {
+    "text": "*Sea*\n\nSim. Então está decidido."
+  },
+  "day2_night_sea_12": {
+    "text": "*Sea*\n\nBoa noite então"
+  },
+  "day2_night_sea_13": {
+    "text": "Boa noite."
+  },
+  "day2_night_sea_14": {
+    "text": "*Desliguei o telefone. A lua está fora da janela. Outra notificação do KakaoTalk vibra.*"
+  },
+  "day2_night_sea_14a": {
+    "text": "*Uma mensagem chegou através do aplicativo Student Safety.*"
+  },
+  "day2_night_eunsu_1": {
+    "text": "*Eunsu*\n\n{name}, você se saiu bem na sua apresentação de hoje. Você está se adaptando rapidamente."
+  },
+  "day2_night_eunsu_2": {
+    "text": "*Eunsu*\n\nVocê pode passar na sala dos professores amanhã? Há um documento que preciso verificar."
+  },
+  "day2_night_eunsu_3": {
+    "text": "Sim, entendido."
+  },
+  "day2_night_eunsu_4": {
+    "text": "*Eunsu*\n\n👍 Descanse um pouco."
+  },
+  "day2_night_eunsu_5": {
+    "text": "*A foto de perfil do app de segurança estudantil estava vazia. Sob o nome do remetente, em vez de um número de telefone, havia apenas uma etiqueta cinza dizendo `Professor responsável`.*"
+  },
+  "day2_night_flash_1": {
+    "text": "*Deito debaixo das cobertas e fecho os olhos.*"
+  },
+  "day2_night_flash_2": {
+    "text": "*Uma imagem passa pela minha cabeça. Um corredor desta escola debaixo da chuva. Corro ao lado de alguém com o uniforme encharcado —*"
+  },
+  "day2_night_flash_3": {
+    "text": "*De mãos dadas. A mão de uma menina. Uma mão fria.*"
+  },
+  "day2_night_flash_4": {
+    "text": "*\"Por aqui\" -- a voz de alguém. Uma voz familiar.*"
+  },
+  "day2_night_flash_5": {
+    "text": "*Eu abro meus olhos. Há suor na minha testa.*"
+  },
+  "day2_night_flash_6": {
+    "text": "*O quarto está quieto. Mas a sola dos meus pés ainda guardava o frio do chão molhado do corredor.*"
+  },
+  "day2_night_flash_7": {
+    "text": "*Toco meu ombro. No mesmo lugar onde Eunsu deu um tapinha à tarde, sinto o frio da mão que eu estava segurando, como se as duas sensações se misturassem.*"
+  },
+  "day2_night_flash_8": {
+    "text": "*Vejo os documentos de transferência sob a luminária. A ponta do papel está dobrada no mesmo ângulo da manhã.*"
+  },
+  "day2_night_search_1": {
+    "text": "*...Tirei meu cobertor e me levantei. Não consegui dormir. Peguei meu telefone. Digitei 'Haedoji High School' na barra de pesquisa.*"
+  },
+  "day2_night_search_2": {
+    "text": "*O site oficial da escola tem uma mensagem da direção e o histórico da escola. O link do álbum de formatura diz 'Em preparação'. Eunsu e Riin aparecem na lista de funcionários, mas não têm foto.*"
+  },
+  "day2_night_search_3": {
+    "text": "*Pesquisa de notícias. 'Escola Haedoji.' Sem resultados. A aba de notícias locais também está vazia. No centro da tela, só resta `Nenhum documento corresponde aos termos da busca`.*"
+  },
+  "day2_night_search_4": {
+    "text": "*'Festival da Escola Haedoji', 'Formatura da Escola Haedoji'. O preenchimento automático aparece, mas não há resultados. No lugar das miniaturas, apenas retângulos cinza se repetem.*"
+  },
+  "day2_night_search_5": {
+    "text": "*O brilho da tela diminuiu automaticamente. O nome da escola ainda está na barra de pesquisa. Deixei o celular de lado sem apagar.*"
+  },
+  "day2_night_dream_1": {
+    "text": "*Fecho os olhos novamente. Desta vez, adormeço.*"
+  },
+  "day2_night_dream_2": {
+    "text": "*Estou sonhando.*"
+  },
+  "day2_night_dream_3": {
+    "text": "*Uma sala de aula. Mas não o atual. A disposição da mesa é diferente. Há uma data escrita no quadro-negro, mas não consigo lê-la.*"
+  },
+  "day2_night_dream_4": {
+    "text": "*Alguém está sentado no banco da frente. Cabelo comprido. Só consigo ver as costas deles.*"
+  },
+  "day2_night_dream_5": {
+    "text": "*\"Ei, você está bem?\"*"
+  },
+  "day2_night_dream_6": {
+    "text": "*Aquela pessoa se vira. É Seolhwa. No sonho, os olhos de Seolhwa estão secos. Os cantos da boca estão levantados.*"
+  },
+  "day2_night_dream_7": {
+    "text": "*Seolhwa abre a boca. O som se espalha como pó de apagador de quadro. Só resta o formato dos lábios. 'Aju—'*"
+  },
+  "day2_night_dream_7a": {
+    "text": "*Antes que a próxima sílaba saia, a data no quadro começa a borrar.*"
+  },
+  "day2_night_dream_8": {
+    "text": "*A sala de aula escurece. O rosto de Seolhwa fica embaçado.*"
+  },
+  "day2_night_dream_9": {
+    "text": "*—*"
+  },
+  "day2_night_wake_1": {
+    "text": "*É de manhã. O alarme está tocando.*"
+  },
+  "day2_night_wake_2": {
+    "text": "*Só resta o rosto sorridente de Seolhwa. A voz dela fica abafada pelo alarme, deixando apenas o formato dos lábios.*"
+  },
+  "day2_night_wake_3": {
+    "text": "*A tela do celular ao lado do travesseiro está acesa. Na barra de busca, ainda aparece 'Colégio Haedoji'.*"
+  },
+  "day2_night_end": {
+    "text": "*— Fim do dia 2 —*"
+  },
+  "day2_night_ft_groupchat": {
+    "text": "*Abri o antigo chat de grupo. O número de leituras junto à última mensagem não tinha mudado.*"
+  },
+  "day2_night_ft_groupchat_2": {
+    "text": "*Voltei à lista de conversas e toquei no nome de Minsu.*"
+  },
+  "day2_night_ft_putdown": {
+    "text": "*Pousei o telefone com a tela para baixo e voltei a pensar nas três frases de Minsu.*"
+  },
+  "day2_night_ft_putdown_2": {
+    "text": "*O telemóvel vibrou em cima da secretária. Voltei a virá-lo com o ecrã para cima.*"
+  },
+  "day2_night_drawer_1": {
+    "text": "A gaveta emperrou quando tentei tirar meu pijama. O pano enrolado por baixo bloqueava a grade."
+  },
+  "day2_night_drawer_2": {
+    "text": "Quando estendi a mão e puxei para fora, era uma camisa dobrada e os botões eram da mesma cor que os que usei hoje."
+  },
+  "day2_night_drawer_3": {
+    "text": "Virei meu colarinho. Apenas dois fios de linha cortada permaneceram onde deveria estar a marca registrada."
+  },
+  "day2_night_drawer_4": {
+    "text": "Eles cortaram os crachás na lavanderia? A lembrança de deixar a camisa ainda estava nebulosa."
+  },
+  "day2_night_drawer_5": {
+    "text": "Quando pressionei o bolso levemente duro com o dedo, algo que parecia um pedaço de papel se desintegrou."
+  },
+  "day2_night_drawer_6": {
+    "text": "Quando coloquei a camisa na gaveta e virei o forro do bolso do avesso, encontrei pedaços de papel lavado grudados nas costuras."
+  },
+  "day2_night_drawer_7": {
+    "text": "Um canto caiu enquanto eu o tirava. A parte restante tinha tinta espalhada como uma mancha azul."
+  },
+  "day2_night_drawer_8": {
+    "text": "Uma linha que se parece com o número 7 e a parte superior do caractere de jade permanecem. Mesmo que eu o virasse, não conseguiria ler o resto."
+  },
+  "day2_night_drawer_9": {
+    "text": "Pedaços de papel de embrulho podem ter entrado quando você se mudou. Coloquei o papel sobre a mesa e puxei o suporte."
+  },
+  "day2_night_drawer_choice": {
+    "text": "O papel úmido e seco estava preso na ponta da minha unha.",
+    "choices": [
+      "Eu olho para isso à luz do estande",
+      "Acho que confundi a roupa de outra pessoa.",
+      "Jogue o papel na lata de lixo"
+    ]
+  },
+  "day2_night_drawer_light_1": {
+    "text": "Segurei o papel perto da lâmpada. A luz vazou da área mais fina, fazendo com que a linha preta parecesse com espessura diferente."
+  },
+  "day2_night_drawer_light_2": {
+    "text": "Dois pontos permaneceram próximos ao 7. Alguém pode ter anotado o número da página."
+  },
+  "day2_night_drawer_light_3": {
+    "text": "As letras que pareciam jade assumiram um formato diferente quando as cobri com o dedo. Quanto mais eu lia, menos confiante ficava."
+  },
+  "day2_night_drawer_light_4": {
+    "text": "Quando tirei uma foto com o celular e ampliei, as fibras do papel ficaram mais nítidas que o texto."
+  },
+  "day2_night_drawer_light_5": {
+    "text": "Anexei a data de hoje à foto e coloquei a peça no bolso de trás do meu caderno. Decidi não jogar fora agora."
+  },
+  "day2_night_drawer_light_6": {
+    "text": "Peguei um pequeno pedaço que havia rolado para baixo da mesa e juntei os dois lados, mas um traço estava vazio."
+  },
+  "day2_night_drawer_light_7": {
+    "text": "Pendurei minha camisa em um cabide e abri a manga esquerda. Havia uma linha na parte interna do meu pulso que parecia ter sido desenhada a lápis."
+  },
+  "day2_night_drawer_light_8": {
+    "text": "Achei que poderia ter enxaguado menos detergente, então molhei as pontas dos dedos e esfreguei, mas a mancha ainda estava lá."
+  },
+  "day2_night_drawer_light_9": {
+    "text": "Decidi assisti-lo novamente pela manhã sob luz forte. Larguei meu celular onde tirei a foto no canto da mesa."
+  },
+  "day2_night_drawer_laundry_1": {
+    "text": "Quando desdobrei a camisa e coloquei por cima do que vestia, a linha dos ombros estava correta, mas as mangas eram curtas como um dedo."
+  },
+  "day2_night_drawer_laundry_2": {
+    "text": "Acho que minha bagagem se confundiu quando me mudei. Cada vez que abria a caixa, minhas roupas saíam para outro lugar."
+  },
+  "day2_night_drawer_laundry_3": {
+    "text": "Os pedaços de papel foram colocados em um saco separado. Se você encontrar uma lavanderia, basta mostrá-la a eles."
+  },
+  "day2_night_drawer_laundry_4": {
+    "text": "Escrevi “camisa” na parte externa do envelope e estava prestes a escrever a data quando liguei o celular para ver que dia era."
+  },
+  "day2_night_drawer_laundry_5": {
+    "text": "Verifique e adicione as datas abaixo do horário. Ao cair da noite, até mesmo as tarefas comuns tiveram que ser realizadas duas vezes."
+  },
+  "day2_night_drawer_laundry_6": {
+    "text": "Vamos começar perguntando ao professor pela manhã sobre a localização de uma lavanderia próxima. Dobrei a camisa e coloquei em cima do armário."
+  },
+  "day2_night_drawer_bin_1": {
+    "text": "Joguei o papel na lata de lixo. Os flocos em meus dedos foram enxugados com uma toalha molhada."
+  },
+  "day2_night_drawer_bin_2": {
+    "text": "Um traço semelhante a um número ficou brevemente visível no fundo da lata de lixo, mas foi imediatamente escondido quando um novo lenço de papel foi colocado sobre ele."
+  },
+  "day2_night_drawer_bin_3": {
+    "text": "As roupas estavam em boas condições, então era um desperdício jogá-las fora. Dobrei apenas a parte cortada da etiqueta para dentro e pendurei em um cabide."
+  },
+  "day2_night_drawer_bin_4": {
+    "text": "Também coloquei os botões extras que Sea me deu na mesma caixa. Amanhã de manhã, você não precisa procurar nas gavetas para encontrá-lo."
+  },
+  "day2_night_drawer_join_1": {
+    "text": "Tive que retirar os itens empilhados na frente da gaveta antes de poder arrumar a cama.",
+    "choices": [
+      "Inserir documentos no notebook",
+      "Pendure sua camisa primeiro em um cabide.",
+      "Arrume-se com a luz acesa"
+    ]
+  },
+  "day2_night_drawer_join_2": {
+    "text": "Quando desliguei o suporte, apenas a camisa branca no cabide estava iluminada pela janela. Puxei a cortina um pouco mais."
+  },
+  "day2_night_drawer_join_3": {
+    "text": "O alarme foi definido corretamente. Após verificar, liguei o telefone mais uma vez e conectei o cabo de carregamento."
+  },
+  "day2_night_drawer_join_4": {
+    "text": "Preciso beber menos café amanhã. Coloquei a ponta do cobertor sob os pés e deitei de lado."
+  },
+  "day2_history_callback_8": {
+    "text": "Lembrei-me do aperto da caneta que segurei pela manhã. Também virei as mangas da camisa pela esquerda, mas sem querer mudei a ordem."
+  },
+  "day2_history_callback_9": {
+    "text": "Uma mensagem não lida de Sea permaneceu. Achei que seria tarde para adormecer se atendesse agora, então desliguei as notificações."
+  },
+  "day2_expansion_action_3_a": {
+    "text": "Enrolei um elástico em volta do bilhete para evitar que ele abrisse, verifiquei se a ponta do papel não estava para fora e empurrei a gaveta."
+  },
+  "day2_expansion_action_3_b": {
+    "text": "Ajustei a linha dos ombros da camisa e virei o cabide. Fiquei um pouco menos preocupado quando não consegui ver a parte cortada da marca."
+  }
 }

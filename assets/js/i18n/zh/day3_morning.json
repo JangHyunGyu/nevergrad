@@ -1,201 +1,411 @@
 {
-    "day3_morning_start": {
-        "text": "*第三天。闹钟响了。*"
-    },
-    "day3_morning_wake_2": {
-        "text": "*身体很沉。按掉闹钟的手，晚了一拍才落到被子上。*"
-    },
-    "day3_morning_wake_3": {
-        "text": "*我站到洗手台前。镜子上蒙着一层雾气。想抹掉雾气的手，停在了镜子前。*"
-    },
-    "day3_morning_mirror_1": {
-        "text": "*水汽顺着镜面流下，眼睛那个高度的位置先变清晰了。在看到那里之前，我拧开了水龙头。*"
-    },
-    "day3_morning_mirror_2": {
-        "text": "*只泼了点水就出来了。*"
-    },
-    "day3_morning_mirror_3": {
-        "text": "*打开冰箱，昨天买的牛奶被放在了另一层。*"
-    },
-    "day3_morning_milk_1": {
-        "text": "*原来的位置上，只剩一圈圆圆的水渍。*"
-    },
-    "day3_morning_milk_2": {
-        "text": "*笔袋在右边。牛奶在上层。两样东西都被挪到了伸手就能够到的地方。*"
-    },
-    "day3_morning_commute_1": {
-        "text": "*出了门，朝学校走去。清晨的风很凉。*"
-    },
-    "day3_morning_commute_2": {
-        "text": "*走在小巷里，看见前面有两个学生。其中一个开口说：*"
-    },
-    "day3_morning_commute_3": {
-        "text": "喂，你数学作业写了吗？第2题有点难。"
-    },
-    "day3_morning_commute_4": {
-        "text": "我是看答案写的。"
-    },
-    "day3_morning_commute_5": {
-        "text": "*接下来会听到的话，先一步浮现在脑海里。*"
-    },
-    "day3_morning_commute_6": {
-        "text": "*同一条巷子，同一个时间。脑子里先响起的笑声，前面那个人晚了半拍才笑出来。*"
-    },
-    "day3_morning_commute_7": {
-        "text": "*两名学生包上挂着的数学练习纸，都折着和昨天一样的角。*"
-    },
-    "day3_morning_commute_8": {
-        "text": "*脚步越来越快，快到书包带从肩上弹了起来。*"
-    },
-    "day3_morning_gate_1": {
-        "text": "*我到学校了。今天没有看到世雅。*"
-    },
-    "day3_morning_gate_2": {
-        "text": "*砖砌门柱旁，世雅平时靠着的位置空着。地上的樱花瓣被压出了鞋印的形状。*"
-    },
-    "day3_morning_gate_3": {
-        "text": "*我穿过其他学生，走进校门。身后传来一声很短的话音，我回过头。*"
-    },
-    "day3_morning_gate_4": {
-        "text": "*没有人在看。所有人都只看着前方往前走。*"
-    },
-    "day3_morning_gate_5": {
-        "text": "*刚刚擦肩而过的男生，和我对上了视线。他的嘴唇极轻地动了动。没有声音。口型近似“又”。*"
-    },
-    "day3_morning_gate_6": {
-        "text": "*我再回头看时，他已经进了教学楼。*"
-    },
-    "day3_morning_locker_1": {
-        "text": "*走在走廊上，我停了下来。*"
-    },
-    "day3_morning_locker_2": {
-        "text": "*储物柜。名字被刮掉了。是用钥匙或小刀反复刮出来的痕迹。*"
-    },
-    "day3_morning_locker_3": {
-        "text": "*我好奇地打开了储物柜。没有上锁。里面空空如也，只积满了灰。*"
-    },
-    "day3_morning_locker_4": {
-        "text": "*角落里有一张被撕破的照片。护照尺寸的照片被剪成两半，只剩下半张脸。*"
-    },
-    "day3_morning_locker_5": {
-        "text": "*这张脸。有点眼熟。是谁？*",
-        "choices": [
-            "把照片碎片收起来",
-            "查看背面",
-            "四下看看有没有人看见"
-        ]
-    },
-    "day3_morning_photo_1": {
-        "text": "*我把照片放进了口袋。*"
-    },
-    "day3_morning_photo_2": {
-        "text": "*储物柜内侧的墙上，还刻着一行更小的字。*"
-    },
-    "day3_morning_inscription_1": {
-        "text": "*向左弯折的一笔。末尾力气散掉的句点。和昨天在桌子底下看到的一样。*"
-    },
-    "day3_morning_inscription_2": {
-        "text": "*我看了看指甲缝。昨天沾上的石墨痕迹，已经洗掉了。*"
-    },
-    "day3_morning_inscription_3": {
-        "text": "*我关上储物柜，拐过转角。雪花站在那里。这次离得很近。*"
-    },
-    "day3_morning_seolhwa_1": {
-        "text": "*雪花先开了口。*"
-    },
-    "day3_morning_seolhwa_3": {
-        "text": "你是左撇子吧？"
-    },
-    "day3_morning_seolhwa_4": {
-        "text": "嗯？对，是的。你怎么知道？"
-    },
-    "day3_morning_seolhwa_5": {
-        "text": "*雪花没有回答，视线在我的左手和脸上各停了一下。过了一会儿，她小声说：*",
-        "choices": [
-            "再回答一次：是左撇子",
-            "问她为什么想知道",
-            "假装没听见"
-        ]
-    },
-    "day3_morning_seolhwa_6": {
-        "text": "小心。"
-    },
-    "day3_morning_seolhwa_7": {
-        "text": "什么？等一下。"
-    },
-    "day3_morning_seolhwa_8": {
-        "text": "*雪花就这么转身走开了。*\n\n等等，要小心什么？总不能丢下一句话就走吧。"
-    },
-    "day3_morning_seolhwa_9": {
-        "text": "*左手的手指自己蜷起又伸开。昨天打招呼时伸出去的，是右手。*"
-    },
-    "day3_morning_classroom_1": {
-        "text": "*我沿着走廊走到教室门前。隔着门，能听到嗡嗡的说话声。*"
-    },
-    "day3_morning_classroom_2": {
-        "text": "*我推开了门。*"
-    },
-    "day3_morning_classroom_3": {
-        "text": "*谈话声停了。全部同时停了。*"
-    },
-    "day3_morning_classroom_4": {
-        "text": "*粉笔灰从黑板下缓缓落下。笑声没有再回来。*"
-    },
-    "day3_morning_classroom_5": {
-        "text": "*前排两个男生互相瞥了一眼。后排的女生把视线转向窗外。桌子下，有人用脚尖抵住了椅子腿，让它停下来。*"
-    },
-    "day3_morning_goosebumps": {
-        "text": "*我揉了揉小臂，汗毛竖了起来。教室里只剩钟表秒针的声音，一下一下钻进耳朵。*"
-    },
-    "day3_morning_sea_1a": {
-        "text": "*世雅坐在自己的座位上笑着，眼角却一动不动。*"
-    },
-    "day3_morning_sea_2": {
-        "text": "早啊，{name}。今天有点晚呢？"
-    },
-    "day3_morning_sea_3": {
-        "text": "有一点。"
-    },
-    "day3_morning_sea_4": {
-        "text": "你脸色不太好。昨晚没睡好吗？"
-    },
-    "day3_morning_sea_5": {
-        "text": "*世雅的声音很明快。手指在桌上敲着固定的节拍，中间停了两次。*\n\n刚才大家聊什么？我一进来就都不说话了。"
-    },
-    "day3_morning_sea_6": {
-        "text": "*世雅的视线依次从我的脸移到后颈、左手，再抬了上来。*\n\n没注意你进来嘛。昨晚没睡好？"
-    },
-    "day3_morning_sea_6b": {
-        "text": "*世雅笔记本的页边空白处，今天日期旁边画着三个小小的空方框。*"
-    },
-    "day3_morning_sea_7": {
-        "text": "嗯，翻来覆去了一阵。"
-    },
-    "day3_morning_sea_6a": {
-        "text": "*世雅微微歪着头，看着我。2秒，3秒，4秒。*\n\n为什么一直看我？我脸上沾了什么吗？"
-    },
-    "day3_morning_sea_8": {
-        "text": "这样啊。别太勉强自己。"
-    },
-    "day3_morning_sea_9": {
-        "text": "*世雅转过身，后颈的肌肉绷得很紧。刚画的空格里，有一个被打上了勾。*\n\n你在记什么？连我没睡好也要记？"
-    },
-    "day3_morning_pencil_1": {
-        "text": "*我拉开课桌抽屉，昨天留下的笔袋换了位置。*"
-    },
-    "day3_morning_pencil_2": {
-        "text": "*我明明放在左边的，现在却在右边。*"
-    },
-    "day3_morning_pencil_3": {
-        "text": "*又来了。牛奶，笔袋。*"
-    },
-    "day3_morning_end": {
-        "text": "*课开始了。课本第一行我读了三遍，目光还是回到同一个地方。*"
-    },
-    "day3_morning_photo_back": {
-        "text": "*我把照片碎片翻过来，看了看背面。上面隐约写着一个日期。*"
-    },
-    "day3_morning_photo_look": {
-        "text": "*我用手遮住照片碎片，转过头望向走廊。*"
-    }
+  "day3_morning_start": {
+    "text": "*第三天。闹钟响了。*"
+  },
+  "day3_morning_wake_2": {
+    "text": "*身体很沉。按掉闹钟的手，晚了一拍才落到被子上。*"
+  },
+  "day3_morning_wake_3": {
+    "text": "*我站到洗手台前。镜子上蒙着一层雾气。想抹掉雾气的手，停在了镜子前。*"
+  },
+  "day3_morning_mirror_1": {
+    "text": "*水汽顺着镜面流下，眼睛那个高度的位置先变清晰了。在看到那里之前，我拧开了水龙头。*"
+  },
+  "day3_morning_mirror_2": {
+    "text": "*只泼了点水就出来了。*"
+  },
+  "day3_morning_mirror_3": {
+    "text": "*打开冰箱，昨天买的牛奶被放在了另一层。*"
+  },
+  "day3_morning_milk_1": {
+    "text": "*原来的位置上，只剩一圈圆圆的水渍。*"
+  },
+  "day3_morning_milk_2": {
+    "text": "*笔袋在右边。牛奶在上层。两样东西都被挪到了伸手就能够到的地方。*"
+  },
+  "day3_morning_commute_1": {
+    "text": "*出了门，朝学校走去。清晨的风很凉。*"
+  },
+  "day3_morning_commute_2": {
+    "text": "*走在小巷里，看见前面有两个学生。其中一个开口说：*"
+  },
+  "day3_morning_commute_3": {
+    "text": "喂，你数学作业写了吗？第2题有点难。"
+  },
+  "day3_morning_commute_4": {
+    "text": "我是看答案写的。"
+  },
+  "day3_morning_commute_5": {
+    "text": "*接下来会听到的话，先一步浮现在脑海里。*"
+  },
+  "day3_morning_commute_6": {
+    "text": "*同一条巷子，同一个时间。脑子里先响起的笑声，前面那个人晚了半拍才笑出来。*"
+  },
+  "day3_morning_commute_7": {
+    "text": "*两名学生包上挂着的数学练习纸，都折着和昨天一样的角。*"
+  },
+  "day3_morning_commute_8": {
+    "text": "*脚步越来越快，快到书包带从肩上弹了起来。*"
+  },
+  "day3_morning_gate_1": {
+    "text": "*我到学校了。今天没有看到世雅。*"
+  },
+  "day3_morning_gate_2": {
+    "text": "*砖砌门柱旁，世雅平时靠着的位置空着。地上的樱花瓣被压出了鞋印的形状。*"
+  },
+  "day3_morning_gate_3": {
+    "text": "*我穿过其他学生，走进校门。身后传来一声很短的话音，我回过头。*"
+  },
+  "day3_morning_gate_4": {
+    "text": "*没有人在看。所有人都只看着前方往前走。*"
+  },
+  "day3_morning_gate_5": {
+    "text": "*刚刚擦肩而过的男生，和我对上了视线。他的嘴唇极轻地动了动。没有声音。口型近似“又”。*"
+  },
+  "day3_morning_gate_6": {
+    "text": "*我再回头看时，他已经进了教学楼。*"
+  },
+  "day3_morning_locker_1": {
+    "text": "*走在走廊上，我停了下来。*"
+  },
+  "day3_morning_locker_2": {
+    "text": "*储物柜。名字被刮掉了。是用钥匙或小刀反复刮出来的痕迹。*"
+  },
+  "day3_morning_locker_3": {
+    "text": "*我好奇地打开了储物柜。没有上锁。里面空空如也，只积满了灰。*"
+  },
+  "day3_morning_locker_4": {
+    "text": "*角落里有一张被撕破的照片。护照尺寸的照片被剪成两半，只剩下半张脸。*"
+  },
+  "day3_morning_locker_5": {
+    "text": "*这张脸。有点眼熟。是谁？*",
+    "choices": [
+      "把照片碎片收起来",
+      "查看背面",
+      "四下看看有没有人看见"
+    ]
+  },
+  "day3_morning_photo_1": {
+    "text": "*我把照片放进了口袋。*"
+  },
+  "day3_morning_photo_2": {
+    "text": "*储物柜内侧的墙上，还刻着一行更小的字。*"
+  },
+  "day3_morning_inscription_1": {
+    "text": "*向左弯折的一笔。末尾力气散掉的句点。和昨天在桌子底下看到的一样。*"
+  },
+  "day3_morning_inscription_2": {
+    "text": "*我看了看指甲缝。昨天沾上的石墨痕迹，已经洗掉了。*"
+  },
+  "day3_morning_inscription_3": {
+    "text": "*我关上储物柜，拐过转角。雪花站在那里。这次离得很近。*"
+  },
+  "day3_morning_seolhwa_1": {
+    "text": "*雪花先开了口。*"
+  },
+  "day3_morning_seolhwa_3": {
+    "text": "你是左撇子吧？"
+  },
+  "day3_morning_seolhwa_4": {
+    "text": "嗯？对，是的。你怎么知道？"
+  },
+  "day3_morning_seolhwa_5": {
+    "text": "*雪花没有回答，视线在我的左手和脸上各停了一下。过了一会儿，她小声说：*",
+    "choices": [
+      "再回答一次：是左撇子",
+      "问她为什么想知道",
+      "假装没听见"
+    ]
+  },
+  "day3_morning_seolhwa_6": {
+    "text": "小心。"
+  },
+  "day3_morning_seolhwa_7": {
+    "text": "什么？等一下。"
+  },
+  "day3_morning_seolhwa_8": {
+    "text": "*雪花就这么转身走开了。*\n\n等等，要小心什么？总不能丢下一句话就走吧。"
+  },
+  "day3_morning_seolhwa_9": {
+    "text": "*左手的手指自己蜷起又伸开。昨天打招呼时伸出去的，是右手。*"
+  },
+  "day3_morning_classroom_1": {
+    "text": "*我沿着走廊走到教室门前。隔着门，能听到嗡嗡的说话声。*"
+  },
+  "day3_morning_classroom_2": {
+    "text": "*我推开了门。*"
+  },
+  "day3_morning_classroom_3": {
+    "text": "*谈话声停了。全部同时停了。*"
+  },
+  "day3_morning_classroom_4": {
+    "text": "*粉笔灰从黑板下缓缓落下。笑声没有再回来。*"
+  },
+  "day3_morning_classroom_5": {
+    "text": "*前排两个男生互相瞥了一眼。后排的女生把视线转向窗外。桌子下，有人用脚尖抵住了椅子腿，让它停下来。*"
+  },
+  "day3_morning_goosebumps": {
+    "text": "*我揉了揉小臂，汗毛竖了起来。教室里只剩钟表秒针的声音，一下一下钻进耳朵。*"
+  },
+  "day3_morning_sea_1a": {
+    "text": "*世雅坐在自己的座位上笑着，眼角却一动不动。*"
+  },
+  "day3_morning_sea_2": {
+    "text": "早啊，{name}。今天有点晚呢？"
+  },
+  "day3_morning_sea_3": {
+    "text": "有一点。"
+  },
+  "day3_morning_sea_4": {
+    "text": "你脸色不太好。昨晚没睡好吗？"
+  },
+  "day3_morning_sea_5": {
+    "text": "*世雅的声音很明快。手指在桌上敲着固定的节拍，中间停了两次。*\n\n刚才大家聊什么？我一进来就都不说话了。"
+  },
+  "day3_morning_sea_6": {
+    "text": "*世雅的视线依次从我的脸移到后颈、左手，再抬了上来。*\n\n没注意你进来嘛。昨晚没睡好？"
+  },
+  "day3_morning_sea_6b": {
+    "text": "*世雅笔记本的页边空白处，今天日期旁边画着三个小小的空方框。*"
+  },
+  "day3_morning_sea_7": {
+    "text": "嗯，翻来覆去了一阵。"
+  },
+  "day3_morning_sea_6a": {
+    "text": "*世雅微微歪着头，看着我。2秒，3秒，4秒。*\n\n为什么一直看我？我脸上沾了什么吗？"
+  },
+  "day3_morning_sea_8": {
+    "text": "这样啊。别太勉强自己。"
+  },
+  "day3_morning_sea_9": {
+    "text": "*世雅转过身，后颈的肌肉绷得很紧。刚画的空格里，有一个被打上了勾。*\n\n你在记什么？连我没睡好也要记？"
+  },
+  "day3_morning_pencil_1": {
+    "text": "*我拉开课桌抽屉，昨天留下的笔袋换了位置。*"
+  },
+  "day3_morning_pencil_2": {
+    "text": "*我明明放在左边的，现在却在右边。*"
+  },
+  "day3_morning_pencil_3": {
+    "text": "*又来了。牛奶，笔袋。*"
+  },
+  "day3_morning_end": {
+    "text": "*课开始了。课本第一行我读了三遍，目光还是回到同一个地方。*"
+  },
+  "day3_morning_photo_back": {
+    "text": "*我把照片碎片翻过来，看了看背面。上面隐约写着一个日期。*"
+  },
+  "day3_morning_photo_look": {
+    "text": "*我用手遮住照片碎片，转过头望向走廊。*"
+  },
+  "day3_morning_photo_back_detail_1": {
+    "text": "当我把纸翻过来时，手指上沾满了铅笔的灰尘。照片背面写着一张简短的便条。"
+  },
+  "day3_morning_photo_back_detail_2": {
+    "text": "#11 — 丢弃。数字的下划线从末尾跳起。当我在笔记本上写下日期时，同样的地方出现了。"
+  },
+  "day3_morning_photo_back_detail_3": {
+    "text": "我拿出笔记本，在昨天写下的时间表旁边放了一张照片。就连1号头的弯曲角度都相似。"
+  },
+  "day3_morning_photo_back_detail_4": {
+    "text": "如果我写的话，会是什么时候？当我寻找记忆时，我听到走廊窗户关上的声音。"
+  },
+  "day3_morning_photo_back_detail_5": {
+    "text": "我用指甲描绘出铅笔尖画出的地方。纸张很薄，所以笔画都压在前面。"
+  },
+  "day3_morning_photo_back_detail_6": {
+    "text": "我选择了一种检查铅笔笔记的方法。",
+    "choices": [
+      "保持原样",
+      "分别复印笔记",
+      "只需拍张照片然后放开即可。"
+    ]
+  },
+  "day3_morning_photo_back_detail_7": {
+    "text": "我用手机拍下了备忘录的照片，并将原件插入笔记本中。这次，我用了一把尺子来防止边缘折叠。"
+  },
+  "day3_morning_photo_back_detail_8": {
+    "text": "当我抬头时，我看到走廊尽头有一个摄像机发出红光。一个小点在镜头下方移动。"
+  },
+  "day3_morning_photo_back_detail_9": {
+    "text": "当我半关上储物柜门时，我的门映出一个黑色的半圆形。"
+  },
+  "day3_morning_photo_look_detail_1": {
+    "text": "当我将照片举到窗户灯光下时，另一张纸上的胶水残留在切割边缘的白色纤维之间。"
+  },
+  "day3_morning_photo_look_detail_2": {
+    "text": "这是有人从相册中删除的照片。只有背部中间特别光滑。"
+  },
+  "day3_morning_photo_look_detail_3": {
+    "text": "脸被砍掉的地方旁边，教室的布告栏清晰可见。当前的课堂时间表和栏数是相同的。"
+  },
+  "day3_morning_photo_look_detail_4": {
+    "text": "当我用手机展示昨天教室的照片时，连布告栏四角的棕色污渍都重叠了。"
+  },
+  "day3_morning_photo_look_detail_5": {
+    "text": "没有照片的拍摄日期。时钟也被人站立的区域遮挡。"
+  },
+  "day3_morning_photo_look_detail_6": {
+    "text": "在照片的四角沾湿之前我就换手了。",
+    "choices": [
+      "我再次从窗户看到它",
+      "把它放在口袋里然后去上课。",
+      "调低屏幕亮度就可以了"
+    ]
+  },
+  "day3_morning_photo_look_detail_7": {
+    "text": "走廊尽头传来一阵短暂的机械声。相机镜头稍微向下倾斜。"
+  },
+  "day3_morning_photo_look_detail_8": {
+    "text": "运动就在我的储物柜上方停止了。镜头周围的红光一直亮着。"
+  },
+  "day3_morning_photo_look_detail_9": {
+    "text": "我把照片放进内袋，关上门。钥匙被卡住了，我不得不再转动一次。"
+  },
+  "day3_morning_class_silence_1": {
+    "text": "当我推门的时候，教室里的谈话声停止了，翻书的手也停了下来。"
+  },
+  "day3_morning_class_silence_2": {
+    "text": "大约有二十个孩子正在看着老师的桌子。没有人把头转向我进来的那扇门。"
+  },
+  "day3_morning_class_silence_3": {
+    "text": "我能听到走廊里另一个班级的笑声。只有我们班靠窗的风扇没电了。"
+  },
+  "day3_morning_class_silence_4": {
+    "text": "当我关上门时，椅子的一条腿刮擦了地板。 世雅这才对我微笑。"
+  },
+  "day3_morning_class_silence_5": {
+    "text": "你就在那里。我把你的书给你拿出来了。"
+  },
+  "day3_morning_class_silence_6": {
+    "text": "桌子的右端有一个铅笔盒。早上我放在包前隔层的肯定是我的手。"
+  },
+  "day3_morning_class_silence_7": {
+    "text": "坐在我旁边的男孩把课本的同一个角折叠起来，展开，然后又折叠起来。"
+  },
+  "day3_morning_class_silence_8": {
+    "text": "我把包放在空椅子上。即使我松开了把手，教室里也没有继续说话。"
+  },
+  "day3_morning_class_silence_choice": {
+    "text": "我把手放在铅笔盒和书包之间。",
+    "choices": [
+      "问你旁边的学生他刚才说了什么",
+      "直视 世雅 的眼睛",
+      "我假装不知道打开课本"
+    ]
+  },
+  "day3_morning_class_ask_1": {
+    "text": "男学生看的是我的名牌而不是我的脸。我把课本的折角藏在手指下。"
+  },
+  "day3_morning_class_ask_2": {
+    "text": "我什么也没说。我正在准备上课。"
+  },
+  "day3_morning_class_ask_3": {
+    "text": "我问谁先来。男学生翻了一页教科书，又翻了回去。"
+  },
+  "day3_morning_class_ask_4": {
+    "text": "我什么也没说。我正在准备上课。"
+  },
+  "day3_morning_class_ask_5": {
+    "text": "这次，当我叫他的名字时，男孩的目光短暂地从我的名牌上移到了我的嘴唇上。"
+  },
+  "day3_morning_class_ask_6": {
+    "text": "他们点名时您可以说出您的名字。"
+  },
+  "day3_morning_class_ask_7": {
+    "text": "世雅敲了一下桌子。男孩根据声音拿起了铅笔。"
+  },
+  "day3_morning_class_ask_8": {
+    "text": "早上他总是很安静。打开你的书。他们今天正在检查。"
+  },
+  "day3_morning_class_ask_9": {
+    "text": "我从桌子底下拿出一个笔记本，没有展开，而是用手掌压住了有照片的那一页。"
+  },
+  "day3_morning_class_sea_1": {
+    "text": "世雅的笑容瞬间消失。我依次看了看自己的手和笔盒，再次扬起了眉毛。"
+  },
+  "day3_morning_class_sea_2": {
+    "text": "什么？我脸上有东西吗？"
+  },
+  "day3_morning_class_sea_3": {
+    "text": "他指着铅笔盒。世雅还没回答，就把铅笔盒往右边挪了一点。"
+  },
+  "day3_morning_class_sea_4": {
+    "text": "距离桌子边缘大约有两根手指的距离。它被放置得异常笔直。"
+  },
+  "day3_morning_class_sea_5": {
+    "text": "你的手臂不会在这里抓住它。昨天你也差点把它搞砸了。"
+  },
+  "day3_morning_class_sea_6": {
+    "text": "昨天我没有带铅笔盒。正当我说话的时候，世雅拉上了包的拉链。"
+  },
+  "day3_morning_class_sea_7": {
+    "text": "我指的是我借给你的笔。你不记得了吗？"
+  },
+  "day3_morning_class_sea_8": {
+    "text": "笔肯定在桌子上。尽管如此，我的手还是没有离开包的把手。"
+  },
+  "day3_morning_class_sea_9": {
+    "text": "世雅首先把头转向教学桌。我看了他的后脑勺才坐下。"
+  },
+  "day3_morning_class_book_1": {
+    "text": "当我打开课本时，立即出现了折叠的一页。它比我要查找的部分提前了两章。"
+  },
+  "day3_morning_class_book_2": {
+    "text": "当我按下书角打开它时，我听到旁边的座位上传来铅笔的声音。我还根据那个声音写了日期。"
+  },
+  "day3_morning_class_book_3": {
+    "text": "错误页面。我们即将进入下一章。"
+  },
+  "day3_morning_class_book_4": {
+    "text": "当我一言不发地翻过两页时，瑞妍在我翻到正确的页面后才打开了他的书。"
+  },
+  "day3_morning_class_book_5": {
+    "text": "我听到走廊门口传来一阵小笑声，当我转身时，我看到身后有一个学生正在看着空黑板。"
+  },
+  "day3_morning_class_book_6": {
+    "text": "我擦掉了纸条顶部写的日期并重写了它。我把同一个数字写了两次，但看起来不一样。"
+  },
+  "day3_morning_class_book_7": {
+    "text": "白色粉末落在粉笔底座上。门外老师的鞋声越来越近了。"
+  },
+  "day3_morning_class_resume_1": {
+    "text": "门一打开，孩子们就向我们打招呼。第一个音节的声音并没有不同步。"
+  },
+  "day3_morning_class_resume_2": {
+    "text": "老师打开考勤表，在课桌之间查看。当他经过我的座位时，目光微微低垂。"
+  },
+  "day3_morning_class_resume_3": {
+    "text": "我们开始上课吧。今天，不要删除你写下的内容，保持原样即可。"
+  },
+  "day3_morning_class_resume_4": {
+    "text": "我把橡皮放在便条上。我刚刚更正的日期看起来像是不同的数字，因为铅笔标记重叠了。"
+  },
+  "day3_history_callback_10": {
+    "text": "我从笔记本背面拿出湿纸，拍下了同一页上污迹斑斑的笔画和照片笔记。"
+  },
+  "day3_history_callback_11": {
+    "text": "我把第一天收到的照片放在旁边。布告栏的高度是一样的，唯一的区别就是拍照者的位置。"
+  },
+  "day3_history_callback_12": {
+    "text": "第一天我也问过世正同样的问题，但这一次我没有一笑置之，而是等待答案。"
+  },
+  "day3_history_callback_13": {
+    "text": "我左手握着的钢笔在铅笔盒里滚来滚去。 世雅把手按在铅笔盒上，直到声音停止。"
+  },
+  "day3_history_callback_14": {
+    "text": "我停下来看着我放在抽屉里的纸质照片。即使你把手机藏在课本后面，屏幕发出的光仍然会照在你的手背上。"
+  },
+  "day3_expansion_action_4_a": {
+    "text": "原件上没有橡皮擦。我把沾满铅笔灰尘的手指从照片上放下，盖上笔记本。"
+  },
+  "day3_expansion_action_4_b": {
+    "text": "我尝试用同样的方式描画，但下划线的末端跳到了另一边。我把这两封信并排留下，没有强迫它们更正。"
+  },
+  "day3_expansion_action_5_a": {
+    "text": "窗框的影子掠过照片。当光线变化时，人影后面布告栏上的一个图钉变得可见。"
+  },
+  "day3_expansion_action_5_b": {
+    "text": "我展开口袋衬里，插入照片，然后将包带移到对面的肩膀上，以防止走路时折叠。"
+  }
 }

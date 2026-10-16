@@ -22,10 +22,13 @@ class BGMSynth {
      */
     init(audioManager) {
         audioManager._bgmSynthRegistry = this._registry;
+        audioManager._proceduralBgmKeys = new Set(['cycle07_elegy', 'complicit_cold_pulse']);
         this._registerAll();
     }
 
     _registerAll() {
+        this._registry['cycle07_elegy'] = () => this._cycle07_elegy();
+        this._registry['complicit_cold_pulse'] = () => this._complicit_cold_pulse();
         // ── 로맨스 페이즈 (Day 1-2) ──
         this._registry['spring_bright']    = () => this._spring_bright();
         this._registry['morning_bright']   = () => this._morning_bright();
@@ -3683,6 +3686,166 @@ class BGMSynth {
         });
 
         return ctx.startRendering();
+    }
+
+    /** Render the D-minor archive score as a stereo AudioBuffer. */
+    async _cycle07_elegy() {
+        const beat = 60 / 68;
+        const duration = beat * 32;
+        const ctx = this._offline(duration, 48000);
+        const master = ctx.createGain();
+        master.gain.value = 0.52;
+        const limiter = ctx.createDynamicsCompressor();
+        limiter.threshold.value = -16;
+        limiter.ratio.value = 5;
+        master.connect(limiter);
+        limiter.connect(ctx.destination);
+        const lowpass = ctx.createBiquadFilter();
+        lowpass.type = 'lowpass';
+        lowpass.frequency.value = 1750;
+        lowpass.Q.value = 0.45;
+        lowpass.connect(master);
+        const reverb = this._reverb(ctx, 3.2, 2.2);
+        const wet = ctx.createGain();
+        wet.gain.value = 0.18;
+        lowpass.connect(reverb);
+        reverb.connect(wet);
+        wet.connect(master);
+        const chords = [
+            ['D3', 'F3', 'A3', 'D4'], ['Bb2', 'D3', 'F3', 'A3'],
+            ['F3', 'A3', 'C4', 'F4'], ['A2', 'E3', 'G3', 'C#4']
+        ];
+        for (let bar = 0; bar < 8; bar++) {
+            const chord = chords[bar % chords.length];
+            for (let step = 0; step < 8; step++) {
+                const start = (bar * 4 + step / 2) * beat;
+                const pan = this._pan(ctx, step % 2 ? 0.18 : -0.18);
+                pan.connect(lowpass);
+                this._piano(ctx, pan, chord[step % chord.length], start,
+                    Math.min(beat * 2.4, duration - start), step % 4 ? 0.12 : 0.17);
+            }
+        }
+        const drone = ctx.createOscillator();
+        drone.type = 'sine';
+        drone.frequency.value = this._f('D1');
+        const droneGain = ctx.createGain();
+        droneGain.gain.value = 0.09;
+        drone.connect(droneGain);
+        droneGain.connect(master);
+        const wow = ctx.createOscillator();
+        wow.frequency.value = 0.32;
+        const wowDepth = ctx.createGain();
+        wowDepth.gain.value = 3;
+        wow.connect(wowDepth);
+        wowDepth.connect(drone.detune);
+        const flutter = ctx.createOscillator();
+        flutter.frequency.value = 6.8;
+        const flutterDepth = ctx.createGain();
+        flutterDepth.gain.value = 0.45;
+        flutter.connect(flutterDepth);
+        flutterDepth.connect(drone.detune);
+        const tape = ctx.createBufferSource();
+        tape.buffer = this._noise(ctx, duration);
+        const hiss = ctx.createBiquadFilter();
+        hiss.type = 'bandpass';
+        hiss.frequency.value = 2200;
+        hiss.Q.value = 0.6;
+        const hissGain = ctx.createGain();
+        hissGain.gain.value = 0.007;
+        tape.connect(hiss);
+        hiss.connect(hissGain);
+        hissGain.connect(master);
+        for (const source of [drone, wow, flutter, tape]) {
+            source.start(0);
+            source.stop(duration);
+        }
+        const buffer = await ctx.startRendering();
+        return this._archiveLoopEdges(buffer);
+    }
+
+    async _complicit_cold_pulse() {
+        const beat = 60 / 90;
+        const duration = beat * 32;
+        const ctx = this._offline(duration, 48000);
+        const master = ctx.createGain();
+        master.gain.value = 0.5;
+        const limiter = ctx.createDynamicsCompressor();
+        limiter.threshold.value = -16;
+        limiter.ratio.value = 6;
+        master.connect(limiter);
+        limiter.connect(ctx.destination);
+        const roots = ['D2', 'D2', 'Bb1', 'A1'];
+        for (let step = 0; step < 64; step++) {
+            const start = step * beat / 2;
+            const osc = ctx.createOscillator();
+            osc.type = 'square';
+            osc.frequency.value = this._f(roots[Math.floor(step / 16)]);
+            const filter = ctx.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(1100, start);
+            filter.frequency.exponentialRampToValueAtTime(160, start + beat * 0.34);
+            const gain = ctx.createGain();
+            gain.gain.setValueAtTime(0.0001, start);
+            gain.gain.exponentialRampToValueAtTime(step % 2 ? 0.075 : 0.115, start + 0.006);
+            gain.gain.exponentialRampToValueAtTime(0.0001, start + beat * 0.42);
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(master);
+            osc.start(start);
+            osc.stop(start + beat * 0.45);
+        }
+        const tickBuffer = this._noise(ctx, 0.04);
+        for (let tick = 0; tick < 32; tick++) {
+            const start = tick * beat;
+            const source = ctx.createBufferSource();
+            source.buffer = tickBuffer;
+            const filter = ctx.createBiquadFilter();
+            filter.type = 'bandpass';
+            filter.frequency.value = tick % 2 ? 3200 : 2400;
+            filter.Q.value = 4;
+            const gain = ctx.createGain();
+            gain.gain.setValueAtTime(0.11, start);
+            gain.gain.exponentialRampToValueAtTime(0.0001, start + 0.025);
+            const pan = this._pan(ctx, tick % 2 ? 0.24 : -0.24);
+            source.connect(filter);
+            filter.connect(gain);
+            gain.connect(pan);
+            pan.connect(master);
+            source.start(start);
+            source.stop(start + 0.035);
+        }
+        for (const [index, note] of ['D5', 'Eb5', 'A5'].entries()) {
+            const osc = ctx.createOscillator();
+            osc.type = 'triangle';
+            osc.frequency.value = this._f(note);
+            osc.detune.value = (index - 1) * 5;
+            const gain = ctx.createGain();
+            gain.gain.value = 0.017;
+            const filter = ctx.createBiquadFilter();
+            filter.type = 'highpass';
+            filter.frequency.value = 650;
+            const pan = this._pan(ctx, (index - 1) * 0.4);
+            osc.connect(gain);
+            gain.connect(filter);
+            filter.connect(pan);
+            pan.connect(master);
+            osc.start(0);
+            osc.stop(duration);
+        }
+        return this._archiveLoopEdges(await ctx.startRendering());
+    }
+
+    _archiveLoopEdges(buffer) {
+        const edge = Math.min(Math.round(buffer.sampleRate * 0.015), buffer.length / 2);
+        for (let channel = 0; channel < buffer.numberOfChannels; channel++) {
+            const samples = buffer.getChannelData(channel);
+            for (let index = 0; index < edge; index++) {
+                const scale = Math.sin(index / edge * Math.PI / 2);
+                samples[index] *= scale;
+                samples[samples.length - 1 - index] *= scale;
+            }
+        }
+        return buffer;
     }
 
     /**

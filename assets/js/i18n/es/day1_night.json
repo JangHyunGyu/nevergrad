@@ -1,100 +1,344 @@
 {
-    "day1_night_start": {
-        "text": "*Pongo agua para fideos y saco los papeles del traslado.*"
-    },
-    "day1_night_home_2": {
-        "text": "*En el reverso de los papeles de traslado, anoto los nombres que oí hoy.*"
-    },
-    "day1_night_home_3": {
-        "text": "*Me vienen a la mente el aula, la biblioteca, la enfermería y la sala del consejo, una tras otra. El olor del ramen llena la habitación.*"
-    },
-    "day1_night_phone_1": {
-        "text": "*Reviso mi celular.*"
-    },
-    "day1_night_phone_2": {
-        "text": "*El chat grupal de mi escuela anterior. Debajo del mensaje que envié esta mañana -- 'Me transferí. ¿Todos están bien?' -- hay una sola marca gris.*"
-    },
-    "day1_night_phone_3": {
-        "text": "*...Nadie lo ha leído. Leído por 0.*"
-    },
-    "day1_night_phone_4": {
-        "text": "*También le mandé un mensaje privado a mi amigo cercano Minsu. 'Oye, Minsu. Me transferí. La escuela es bastante grande' -- todavía no responde.*"
-    },
-    "day1_night_phone_5": {
-        "text": "*Abrí el cuadro para escribir un mensaje y luego lo cerré. No tenía nada que enviar.*"
-    },
-    "day1_night_phone_6": {
-        "text": "*En cambio, tengo mensajes de Sea.*"
-    },
-    "day1_night_sea_1": {
-        "text": "¡Hoy fue divertido!"
-    },
-    "day1_night_sea_2": {
-        "text": "¿Qué quieres en tu lonchera mañana?"
-    },
-    "day1_night_sea_3": {
-        "text": "Acepto candidatos para la lonchera de mañana."
-    },
-    "day1_night_sea_4": {
-        "text": ""
-    },
-    "day1_night_sea_reply": {
-        "text": "*¿Qué debería responder?*",
-        "choices": [
-            "'¿Qué tal pollo katsu?'",
-            "'Cualquier cosa está bien'",
-            "No responder"
-        ]
-    },
-    "day1_night_sea_reply_1": {
-        "text": "Bien. Espéralo con ganas mañana."
-    },
-    "day1_night_sea_reply_2": {
-        "text": "Entendido. No te sorprendas mañana."
-    },
-    "day1_night_sea_reply_3": {
-        "text": ""
-    },
-    "day1_night_sleep_1": {
-        "text": "*Me acuesto en la cama y miro el techo.*"
-    },
-    "day1_night_sleep_2": {
-        "text": ""
-    },
-    "day1_night_sleep_3": {
-        "text": "*Cierro los ojos. La cabeza se me hunde enseguida en la almohada.*"
-    },
-    "day1_night_sleep_4": {
-        "text": "*Justo antes de quedarme dormido, vi una mancha en el techo. Tres líneas cortas y una marca que se curva hacia la izquierda.*"
-    },
-    "day1_night_sleep_5": {
-        "text": "*Parpadeé una vez, y volvió a ser una mancha corrida. Cerré los ojos.*"
-    },
-    "day1_night_key_1": {
-        "text": "*A medio dormir, oí un breve sonido metálico del lado de la entrada. Clic. Una vez.*"
-    },
-    "day1_night_key_2": {
-        "text": "*...¿Fue un sueño? Abrí los ojos a medias. El cuarto está oscuro y la puerta sigue cerrada.*"
-    },
-    "day1_night_key_3": {
-        "text": "*Revisé el reloj. 2:14 AM. La luz con sensor de la entrada se enciende por un instante muy breve y se apaga.*"
-    },
-    "day1_night_key_4": {
-        "text": "*Me acerco la manta y cierro los ojos de nuevo.*"
-    },
-    "day1_night_end": {
-        "text": "*-- Fin del día 1 --*"
-    },
-    "day1_night_sleep_photo": {
-        "text": "*La foto que me dio Yuna está sobre el escritorio.*"
-    },
-    "day1_night_sleep_tea": {
-        "text": "*La bolsa de té que me dio la enfermera Riin está sobre el escritorio.*"
-    },
-    "day1_night_sleep_milk": {
-        "text": "*El cartón de leche que me dio Sea está sobre el escritorio.*"
-    },
-    "day1_night_sleep_gift": {
-        "text": ""
-    }
+  "day1_night_start": {
+    "text": "*Pongo agua para fideos y saco los papeles del traslado.*"
+  },
+  "day1_night_home_2": {
+    "text": "*En el reverso de los papeles de traslado, anoto los nombres que oí hoy.*"
+  },
+  "day1_night_home_3": {
+    "text": "*Me vienen a la mente el aula, la biblioteca, la enfermería y la sala del consejo, una tras otra. El olor del ramen llena la habitación.*"
+  },
+  "day1_night_phone_1": {
+    "text": "*Reviso mi celular.*"
+  },
+  "day1_night_phone_2": {
+    "text": "*El chat grupal de mi escuela anterior. Debajo del mensaje que envié esta mañana -- 'Me transferí. ¿Todos están bien?' -- hay una sola marca gris.*"
+  },
+  "day1_night_phone_3": {
+    "text": "*...Nadie lo ha leído. Leído por 0.*"
+  },
+  "day1_night_phone_4": {
+    "text": "*También le mandé un mensaje privado a mi amigo cercano Minsu. 'Oye, Minsu. Me transferí. La escuela es bastante grande' -- todavía no responde.*"
+  },
+  "day1_night_phone_5": {
+    "text": "*Abrí el cuadro para escribir un mensaje y luego lo cerré. No tenía nada que enviar.*"
+  },
+  "day1_night_phone_6": {
+    "text": "*En cambio, tengo mensajes de Sea.*"
+  },
+  "day1_night_sea_1": {
+    "text": "¡Hoy fue divertido!"
+  },
+  "day1_night_sea_2": {
+    "text": "¿Qué quieres en tu lonchera mañana?"
+  },
+  "day1_night_sea_3": {
+    "text": "Acepto candidatos para la lonchera de mañana."
+  },
+  "day1_night_sea_4": {
+    "text": ""
+  },
+  "day1_night_sea_reply": {
+    "text": "*¿Qué debería responder?*",
+    "choices": [
+      "'¿Qué tal pollo katsu?'",
+      "'Cualquier cosa está bien'",
+      "No responder"
+    ]
+  },
+  "day1_night_sea_reply_1": {
+    "text": "Bien. Espéralo con ganas mañana."
+  },
+  "day1_night_sea_reply_2": {
+    "text": "Entendido. No te sorprendas mañana."
+  },
+  "day1_night_sea_reply_3": {
+    "text": ""
+  },
+  "day1_night_sleep_1": {
+    "text": "*Me acuesto en la cama y miro el techo.*"
+  },
+  "day1_night_sleep_2": {
+    "text": ""
+  },
+  "day1_night_sleep_3": {
+    "text": "*Cierro los ojos. La cabeza se me hunde enseguida en la almohada.*"
+  },
+  "day1_night_sleep_4": {
+    "text": "*Justo antes de quedarme dormido, vi una mancha en el techo. Tres líneas cortas y una marca que se curva hacia la izquierda.*"
+  },
+  "day1_night_sleep_5": {
+    "text": "*Parpadeé una vez, y volvió a ser una mancha corrida. Cerré los ojos.*"
+  },
+  "day1_night_key_1": {
+    "text": "*A medio dormir, oí un breve sonido metálico del lado de la entrada. Clic. Una vez.*"
+  },
+  "day1_night_key_2": {
+    "text": "*...¿Fue un sueño? Abrí los ojos a medias. El cuarto está oscuro y la puerta sigue cerrada.*"
+  },
+  "day1_night_key_3": {
+    "text": "*Revisé el reloj. 2:14 AM. La luz con sensor de la entrada se enciende por un instante muy breve y se apaga.*"
+  },
+  "day1_night_key_4": {
+    "text": "*Me acerco la manta y cierro los ojos de nuevo.*"
+  },
+  "day1_night_end": {
+    "text": "*-- Fin del día 1 --*"
+  },
+  "day1_night_sleep_photo": {
+    "text": "*La foto que me dio Yuna está sobre el escritorio.*"
+  },
+  "day1_night_sleep_tea": {
+    "text": "*La bolsa de té que me dio la enfermera Riin está sobre el escritorio.*"
+  },
+  "day1_night_sleep_milk": {
+    "text": "*El cartón de leche que me dio Sea está sobre el escritorio.*"
+  },
+  "day1_night_sleep_gift": {
+    "text": ""
+  },
+  "day1_night_app_1": {
+    "text": "Mientras me desplazaba por la pantalla de inicio, encontré la aplicación que había instalado durante el día. Debajo del escudo azul, decía Aplicación de seguridad Hanul."
+  },
+  "day1_night_app_2": {
+    "text": "Extendí sobre mi escritorio el aviso que recibí en la puerta de la escuela. Dijeron que recibirían contacto dentro de la escuela a través de esta aplicación."
+  },
+  "day1_night_app_3": {
+    "text": "Cuando hice clic en Configuración, aparecieron tres elementos no leídos colapsados, con una pequeña marca de verificación junto a ellos."
+  },
+  "day1_night_app_4": {
+    "text": "Ubicación en tiempo real. La dirección de la escuela era visible bajo la explicación de que era por razones de seguridad en el camino a la escuela."
+  },
+  "day1_night_app_5": {
+    "text": "El segundo fue la detección del micrófono del patrón de sueño. Presioné el botón de explicación, preguntándome si debería informar mis ronquidos a la escuela."
+  },
+  "day1_night_app_6": {
+    "text": "El texto sobre el cálculo del nivel de ruido dentro del dispositivo era largo y se salía de la pantalla en el medio."
+  },
+  "day1_night_app_7": {
+    "text": "Al lado de Heart Rate Sync, no había ningún dispositivo conectado. Puede ser una función utilizada durante la clase de educación física."
+  },
+  "day1_night_app_8": {
+    "text": "Intenté presionar el interruptor de permiso. Las yemas de los dedos se movieron, pero el círculo gris permaneció en su lugar."
+  },
+  "day1_night_app_9": {
+    "text": "Cuando apareció el cartel de \"Configuración del administrador\", volví a mirar la sección de orientación de vida en el aviso de admisión."
+  },
+  "day1_night_app_10": {
+    "text": "Dado que se trata de un internado alternativo, la gestión de aplicaciones parece ser estricta. Puedes preguntarle a tu profesor titular mañana."
+  },
+  "day1_night_app_11": {
+    "text": "Cuando conecté el cable de carga, una mota de polvo se pegó al terminal. Lo quité con la uña y volví a encender la pantalla."
+  },
+  "day1_night_app_12": {
+    "text": "El horario de mañana se publicó debajo del aviso de la aplicación.",
+    "choices": [
+      "Toma una foto de tu horario",
+      "Borrar marca de lectura de aviso",
+      "Lo comprobaré mañana en la escuela"
+    ]
+  },
+  "day1_night_app_13": {
+    "text": "La ventana de chat de Minsu, sin respuesta aún, también era la misma. Cuando lo coloqué al lado de la aplicación de la escuela, la carpeta estaba llena."
+  },
+  "day1_night_app_14": {
+    "text": "Al intentar consultar el horario de mañana, no pude cerrar la ventana de configuración. Mi dedo se detuvo en el interruptor gris."
+  },
+  "day1_night_app_choice": {
+    "text": "Podría preguntar mañana. Aún así, quería presionarlo al menos una vez.",
+    "choices": [
+      "Intente presionar forzar salida",
+      "Vuelva a abrir la sala de chat enviada a Minsu",
+      "Reducir el brillo de la pantalla y taparla"
+    ]
+  },
+  "day1_night_app_kill_1": {
+    "text": "Cuando presioné el botón finalizar, la pantalla se apagó una vez. Ver que el indicador de carga está vivo, no significa que se haya cortado la energía."
+  },
+  "day1_night_app_kill_2": {
+    "text": "Protocolo estándar de educación y orientación de vida encomendado en funcionamiento. Cuando el pequeño aviso desapareció, reapareció el ícono del escudo."
+  },
+  "day1_night_app_kill_3": {
+    "text": "¿El empleado que me guió durante la instalación dijo que la desactivación del administrador se hace en la oficina del profesor? Me lo perdí mientras escuchaba la explicación."
+  },
+  "day1_night_app_kill_4": {
+    "text": "Si fuerza su desactivación, es posible que no pueda verificar la asistencia. Mañana le preguntaré primero a la persona que lo instaló."
+  },
+  "day1_night_app_kill_5": {
+    "text": "No quería crear una razón para llegar tarde el primer día, así que capturé el horario y cerré la configuración."
+  },
+  "day1_night_app_flash_aux": {
+    "text": "Protocolo estándar de educación y orientación de vida de Confianza en funcionamiento"
+  },
+  "day1_night_app_minsu_1": {
+    "text": "El número 1 todavía estaba adjunto a la foto enviada a Minsu. Lo último que envié fue una foto del almuerzo."
+  },
+  "day1_night_app_minsu_2": {
+    "text": "Hice clic en el perfil. En lugar de una cara tomada en el patio de recreo, apareció durante mucho tiempo un círculo gris."
+  },
+  "day1_night_app_minsu_3": {
+    "text": "La silueta básica que aparecía en lugar de la foto era la misma incluso si retrocedías y la presionabas nuevamente."
+  },
+  "day1_night_app_minsu_4": {
+    "text": "Debido a que es un valle montañoso, la estación base parece débil. El cartel de Wi-Fi también acaba de reducirse en un espacio."
+  },
+  "day1_night_app_minsu_5": {
+    "text": "Escribí y eliminé la frase instando a una respuesta. Llegó el momento de que Minsu usara su celular en la academia."
+  },
+  "day1_night_app_minsu_6": {
+    "text": "Simplemente agregué buenas noches y cerré la ventana de chat después de confirmar que se mostraba el botón de enviar."
+  },
+  "day1_night_app_dim_1": {
+    "text": "Cuando bajé el brillo, mi frente se reflejó en la pantalla. La cabeza que estaba deprimida por la mañana permaneció flotando en la misma dirección hasta la noche."
+  },
+  "day1_night_app_dim_2": {
+    "text": "Mañana tendré que lavarme un poco más temprano. Revisé el indicador de carga y coloqué mi teléfono boca abajo junto a la almohada."
+  },
+  "day1_night_app_dim_3": {
+    "text": "Decidí borrar el número de notificación en el ícono del escudo por la mañana. Hubo cinco nombres que escribí hoy."
+  },
+  "day1_night_extra_msg_branch": {
+    "text": ""
+  },
+  "day1_night_riin_msg_1": {
+    "text": "Vibró y giré mi teléfono para ver la etiqueta con el nombre del centro de salud en la aplicación de mensajería de la escuela."
+  },
+  "day1_night_riin_msg_2": {
+    "text": "¿Estaba bien el aroma del té hoy? Puede parecer un poco extraño la primera vez."
+  },
+  "day1_night_riin_msg_3": {
+    "text": "Dejé la taza que recibí durante el día al lado del fregadero. Cuando lo levanté para lavarlo, había una hoja en el suelo."
+  },
+  "day1_night_riin_msg_4": {
+    "text": "Tuviste un primer día muy ocupado, aprendiendo nombres y encontrando aulas. ¿Has tenido oportunidad de acostarte?"
+  },
+  "day1_night_riin_msg_5": {
+    "text": "Dijo que estaba sentado en la cama y no envió ninguna foto de la manta arrugada. Levanté la pantalla un poco más cerca."
+  },
+  "day1_night_riin_msg_6": {
+    "text": "Si tienes problemas para dormir, vuelve a visitarnos mañana a la hora del almuerzo. Puedes elegir tu bebida esta vez."
+  },
+  "day1_night_riin_msg_7": {
+    "text": "En lugar de un historial médico, se añadió un emoticón de taza de té. Recordé las manos de la maestra revolviendo los posavasos durante el día."
+  },
+  "day1_night_riin_msg_8": {
+    "text": "Cerré la ventana y lavé la taza. Después de sacudirme la humedad, pude ver nuevamente el cursor en el cuadro de respuesta."
+  },
+  "day1_night_riin_msg_choice": {
+    "text": "El profesor todavía estaba en línea.",
+    "choices": [
+      "Gracias al té pude descansar un poco. gracias",
+      "elegiré mañana",
+      "Saludo y dejo mi teléfono."
+    ]
+  },
+  "day1_night_riin_msg_thanks_1": {
+    "text": "Puedes traer la copa mañana. No hay prisa. Buenas noches."
+  },
+  "day1_night_riin_msg_pick_1": {
+    "text": "Está bien. Seguiré comprobando cualquier cosa fuerte, incluso si la eliges tú mismo."
+  },
+  "day1_night_riin_msg_sleep_1": {
+    "text": "La pantalla se oscureció antes de que apareciera el recibo de lectura. Sólo queda la luz al final del cable de carga."
+  },
+  "day1_night_yuna_msg_1": {
+    "text": "Apareció un contacto nuevo en el chat de la escuela. Bajo el nombre de Choi Yuna, del club de fotografía, llegó un mensaje breve."
+  },
+  "day1_night_yuna_msg_2": {
+    "text": "No te acerques al viejo edificio esta noche. Hay patrullas después del anochecer."
+  },
+  "day1_night_yuna_msg_3": {
+    "text": "Miré la hora y ya era hora de irme a la cama. Supongo que pensé que iba a tomar fotografías del patio de recreo."
+  },
+  "day1_night_yuna_msg_4": {
+    "text": "Y no te pierdas esa foto. Tampoco lo dobles ni lo guardes en tu bolsillo."
+  },
+  "day1_night_yuna_msg_5": {
+    "text": "Saqué el papel del escritorio y coloqué la foto entre las notas, empujando las esquinas para que no sobresalieran."
+  },
+  "day1_night_yuna_msg_6": {
+    "text": "Pídeles direcciones a los demás y te enviarán por el camino equivocado para reírte. Pregúntame durante el día."
+  },
+  "day1_night_yuna_msg_7": {
+    "text": "Cuando hice clic en el pequeño ícono de la cámara en la ventana de chat, la introducción solo enumeraba los horarios de actividad del club de fotografía."
+  },
+  "day1_night_yuna_msg_8": {
+    "text": "Estaba a punto de escribir una respuesta, pero Yuna primero me envió un punto y luego lo borró. También borré la primera carta que escribí."
+  },
+  "day1_night_yuna_msg_choice": {
+    "text": "Presioné una vez más la esquina del papel insertado en el cuaderno.",
+    "choices": [
+      "Mañana te preguntaré por el camino.",
+      "¿Sabes cuando termina la patrulla?",
+      "Gracias por hacérmelo saber. buenas noches"
+    ]
+  },
+  "day1_night_yuna_msg_ask_1": {
+    "text": "Sí. Simplemente ven al club de fotografía después del almuerzo."
+  },
+  "day1_night_yuna_msg_time_1": {
+    "text": "Ni idea. Sólo duerme un poco esta noche. Yo también apago el mío."
+  },
+  "day1_night_yuna_msg_bye_1": {
+    "text": "En lugar de la respuesta de Yuna, apareció un pequeño emoticón de luna. Cerré el cuaderno y apagué el soporte."
+  },
+  "day1_night_eunsu_msg_1": {
+    "text": "Antes de que pudiera dejar mi teléfono, la notificación de la aplicación escolar apareció una vez más. Esta vez era el nombre de mi profesora titular."
+  },
+  "day1_night_eunsu_msg_2": {
+    "text": "¿Cómo estuvo tu primer día? Caminaste mucho hasta encontrar tu salón de clases."
+  },
+  "day1_night_eunsu_msg_3": {
+    "text": "Miré donde había dejado mis zapatillas. En el talón aún quedaban restos de un calcetín doblado."
+  },
+  "day1_night_eunsu_msg_4": {
+    "text": "Mañana florecerán más cerezos. Cuando vayas a la escuela, mira a la izquierda de la entrada."
+  },
+  "day1_night_eunsu_msg_5": {
+    "text": "Al pasar junto al árbol durante el día, dije que había menos flores en flor y la maestra recordó lo que dije."
+  },
+  "day1_night_eunsu_msg_6": {
+    "text": "Está bien leer los avisos de la aplicación mañana. No es necesario memorizarlo todo desde el primer día."
+  },
+  "day1_night_eunsu_msg_7": {
+    "text": "Cuando eliminé la respuesta mientras la escribía, el indicador de escritura también se apagó. No hubo ningún mensaje urgente por parte del maestro."
+  },
+  "day1_night_eunsu_msg_8": {
+    "text": "Como coloco mis libros de texto en el compartimento delantero de mi bolso, mañana no tengo que buscar libros en todo mi escritorio."
+  },
+  "day1_night_eunsu_msg_choice": {
+    "text": "Decidí saludar a la maestra y apagar mi teléfono.",
+    "choices": [
+      "Gracias a ti estaba menos perdido. Nos vemos mañana",
+      "¿Puedo preguntar mañana sobre los permisos de la aplicación de seguridad?",
+      "Sí, maestro, por favor descanse bien también."
+    ]
+  },
+  "day1_night_eunsu_msg_kind_1": {
+    "text": "Sí. Si nos encontramos mañana en el pasillo, no tendrás que empezar preguntando el camino. Buenas noches, {name}."
+  },
+  "day1_night_eunsu_msg_app_1": {
+    "text": "Por supuesto. Repasaremos las instrucciones juntos. Simplemente mantén tu teléfono cargado por ahora."
+  },
+  "day1_night_eunsu_msg_rest_1": {
+    "text": "Se agregó un emoticón de flor después del saludo. Puse la alarma y le di la vuelta a mi teléfono."
+  },
+  "day1_history_callback_1": {
+    "text": "La taza que recibí de la sala de salud todavía estaba sobre el escritorio. Después de ver la notificación del control de salud, decidí lavar la taza primero."
+  },
+  "day1_history_callback_2": {
+    "text": "Me recordó a la leche que puse en el frigorífico. Intenté borrar la notificación antes de beber y luego colgué el teléfono nuevamente."
+  },
+  "day1_history_callback_3": {
+    "text": "Recordé a Yuna sosteniendo una cámara durante el día. Pensé que podría averiguar más sobre los permisos de fotografías de la aplicación escolar preguntando más tarde."
+  },
+  "day1_history_callback_4": {
+    "text": "Intenté escribir sobre la aplicación sobre la que pregunté antes, pero la eliminé. El profesor no tuvo que responder la misma pregunta dos veces."
+  },
+  "day1_expansion_action_1_a": {
+    "text": "Guardé el horario y lo puse junto a la alarma para poder encontrar mi primera clase por la mañana sin tener que abrir la aplicación nuevamente."
+  },
+  "day1_expansion_action_1_b": {
+    "text": "Cuando cerré la ventana de aviso, el número de lecturas disminuyó en uno. Dejé a un lado las cosas que aún no sabía y empaqué mi bolso."
+  }
 }

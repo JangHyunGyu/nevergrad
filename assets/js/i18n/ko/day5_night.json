@@ -1,763 +1,1877 @@
 {
-    "day5_night_start": {
-        "text": "*밤.*"
-    },
-    "day5_night_affinity_check": {
-        "text": ""
-    },
-    "day5_night_set_high_affinity": {
-        "text": ""
-    },
-    "day5_night_sea_affinity_check": {
-        "text": ""
-    },
-    "day5_night_set_high_sea_affinity": {
-        "text": ""
-    },
-    "day5_night_complicit_eval": {
-        "text": ""
-    },
-    "day5_night_set_complicit_ready": {
-        "text": ""
-    },
-    "day5_night_routing": {
-        "text": ""
-    },
-    "day5_ending_forget_forced_1": {
-        "text": "*이미 늦었다. 바늘이 빠져나간 자리만 싸늘하게 남아 있다.*"
-    },
-    "day5_ending_forget_forced_2": {
-        "text": "미안해. 이번에도 늦었어."
-    },
-    "day5_ending_forget_forced_3": {
-        "text": "*리인 선생님이 눈을 감은 채 뭐라고 말한다. 입 모양만 보이고 목소리는 알아듣지 못했다.*"
-    },
-    "day5_ending_forget_forced_4": {
-        "text": "*시야가 흐려졌다. 입을 열어도 소리가 나오지 않는다.*"
-    },
-    "day5_ending_ghost_guided_1": {
-        "text": "*정전 속에서 비상벨이 한 번 울렸다. 누군가 등을 거칠게 떠민다.*"
-    },
-    "day5_ending_ghost_guided_2": {
-        "text": "멈추지 마. 네 몸이 길을 기억해."
-    },
-    "day5_ending_ghost_guided_3": {
-        "text": "*계단을 두 칸씩 뛰어올랐다. 발은 이미 비상구를 향하고 있다.*"
-    },
-    "day5_ending_ghost_guided_4": {
-        "text": "그대로. 이제 문만 밀어."
-    },
-    "day5_ending_ghost_guided_5": {
-        "text": "*문이 열리자 밖의 찬 공기를 한 번에 들이마셨다.*"
-    },
-    "day5_ending_true_1": {
-        "text": "*은수 선생님은 주사기를 세게 쥐고 있다. 손가락 관절이 하얗다.*"
-    },
-    "day5_ending_true_2": {
-        "text": "*대답이 없다.*"
-    },
-    "day5_ending_true_3": {
-        "text": "그래. 이번에도 문 쪽이구나."
-    },
-    "day5_ending_true_4": {
-        "text": "*은수 선생님이 주사기를 내려놓고 비상구 앞에서 비켜섰다.*"
-    },
-    "day5_ending_true_5": {
-        "text": "*유나와 비상구를 지나 구관 뒤 비상 계단으로 나왔다. 늦은 밤 공기가 차갑다. 학교 울타리 밖 도로를 따라 가로등이 이어진다.*"
-    },
-    "day5_ending_true_6": {
-        "text": "*뒤를 돌아봤다.*"
-    },
-    "day5_ending_true_7": {
-        "text": "*설화가 비상구 안쪽에 서 있다. 문 밖으로 나오지 못한다.*\n\n같이 와. 잡아주면 나올 수 있어?"
-    },
-    "day5_ending_true_8": {
-        "text": "가."
-    },
-    "day5_ending_true_9": {
-        "text": "설화—"
-    },
-    "day5_ending_true_10": {
-        "text": "가. 지금."
-    },
-    "day5_ending_true_11": {
-        "text": "*설화가 웃는다. 비상등 빛이 얼굴을 통과해 뒤쪽 타일까지 비춘다.*"
-    },
-    "day5_ending_true_12": {
-        "text": "여섯 번 시도했지만 전부 여기서 멈췄어. 오늘은 그대로 나가."
-    },
-    "day5_ending_true_13": {
-        "text": "내 기록은 여기까지야. 너는 문을 넘어가."
-    },
-    "day5_ending_true_14": {
-        "text": "이설화. 그 이름은 기억할게."
-    },
-    "day5_ending_true_14a": {
-        "text": "*문 안쪽에서 은수 선생님의 발소리가 멀어진다.*"
-    },
-    "day5_ending_true_14b": {
-        "text": "*유나가 내 소매를 잡았다. 설화는 문 안쪽에 그대로 서 있다.*"
-    },
-    "day5_ending_true_15": {
-        "text": "*설화가 한 번 돌아본다. 계단 불빛이 얼굴을 가린다.*"
-    },
-    "day5_ending_true_16": {
-        "text": "그렇게 불러준 건 처음이야."
-    },
-    "day5_ending_true_17": {
-        "text": "*설화가 보이지 않는다. 비상등만 켜져 있다.*"
-    },
-    "day5_ending_true_18": {
-        "text": "*비 오는 계단에서 젖은 교복 소매와 내 왼손을 잡던 차가운 손이 떠오른다.*"
-    },
-    "day5_ending_true_19": {
-        "text": "*기억의 앞뒤가 맞지 않는다.*"
-    },
-    "day5_ending_true_20": {
-        "text": "*도서관에 내리던 비와 잠긴 지하실 문, 울타리를 넘을 때 붙잡았던 손이 이어서 떠오른다.*"
-    },
-    "day5_ending_true_21": {
-        "text": "*기억 속 이름표 열두 장이 모두 뒷면으로 돌아가 있다.*"
-    },
-    "day5_ending_true_21a": {
-        "text": "*민수의 프로필 사진이 회색으로 비었다. 전 학교 교실과 부모님의 이사 이유는 떠오르지 않고 이 학교 장면만 남았다.*"
-    },
-    "day5_ending_true_22": {
-        "text": "*무릎을 꿇자 유나가 옆에 앉아 등을 받쳐준다.*\n\n잠깐만. 나 좀 잡아줘. 도로가 보이는데 일어나질 못하겠어."
-    },
-    "day5_ending_true_23": {
-        "text": "괜찮아요, 선배."
-    },
-    "day5_ending_true_24": {
-        "text": "나가자. 여기서 하던 얘기는 밖에서 계속해. 더 머물고 싶지 않아.\n\n*유나가 어두운 운동장 너머, 학교 울타리 밖 도로를 보며 말했다.*"
-    },
-    "day5_ending_true_25": {
-        "text": "학교 안에서 할 일은 끝났어요."
-    },
-    "day5_ending_true_26": {
-        "text": "*뉴스 기사. '○○학교 비인가 연구시설 적발 — 불법 약물 투여 및 인체 임상시험 의혹'*"
-    },
-    "day5_ending_true_27": {
-        "text": "*'피해자 다수 기억장애 호소' '연구 책임자 B씨 구속' '3년간 재학하며 증거를 수집한 학생 C양의 제보가 결정적 역할'*"
-    },
-    "day5_ending_true_28": {
-        "text": "*휴대폰을 내려놓았다. 새로운 학교, 새로운 교실. 아는 얼굴은 없다.*"
-    },
-    "day5_ending_true_29": {
-        "text": "*이름표에는 열세 번째 이름이 아니라 처음의 이름이 적혀 있다.*"
-    },
-    "day5_ending_true_30": {
-        "text": "*이름들을 종이에 옮겨 적는다. 설화의 이름도, 남은 얼굴들도 같은 줄에 적었다.*"
-    },
-    "day5_ending_true_31": {
-        "text": "*왼손으로 연필을 잡았다. 검지 옆에 연필 자국이 남았다.*"
-    },
-    "day5_ending_true_32": {
-        "text": ""
-    },
-    "day5_ending_true_subtitle": {
-        "text": "졸업 ─ 교실 밖으로."
-    },
-    "day5_ending_true_title": {
-        "text": ""
-    },
-    "day5_postcredit_1": {
-        "text": "*어딘가에서 전화벨이 울린다.*"
-    },
-    "day5_postcredit_2": {
-        "text": "*넓은 사무실의 책상에는 서류와 모니터 여러 대가 놓여 있다. 화면에는 학교 평면도가 떠 있다.*"
-    },
-    "day5_postcredit_3": {
-        "text": "네. 확인했습니다. 거점은 폐쇄합니다. 자산 회수 완료, 인력은 재배치합니다."
-    },
-    "day5_postcredit_4": {
-        "text": "13번 건은 현장 책임자 선에서 끝냅니다. 재단 이름은 남기지 마세요."
-    },
-    "day5_postcredit_5": {
-        "text": "네. 차기 시범 학교 선정은 끝났습니다."
-    },
-    "day5_postcredit_6": {
-        "text": "교직원 재배치 기안은 올렸고요?"
-    },
-    "day5_postcredit_7": {
-        "text": "*모니터 화면에 새 학교와 교복, 이름들이 뜬다. 파일 제목은 '에디나 재단 — 부적응 학생 교정 프로그램 제2거점 시행 계획안'이고 문서 상단의 로고는 그대로다.*"
-    },
-    "day5_postcredit_8": {
-        "text": "*새로운 전학생 프로필이 화면에 뜬다. 사진 속 학생은 카메라를 향해 웃고 있다.*"
-    },
-    "day5_postcredit_end": {
-        "text": ""
-    },
-    "day5_ending_escape_1": {
-        "text": "*유나와 함께 달려 학교를 빠져나왔다.*"
-    },
-    "day5_ending_escape_2": {
-        "text": "*뒤를 돌아봤다. 쫓아오는 사람은 없다.*"
-    },
-    "day5_ending_escape_3": {
-        "text": "*교문 밖으로 나온 뒤에도 한동안 달리기를 멈출 수 없었다.*"
-    },
-    "day5_ending_escape_4": {
-        "text": "선배, 문서는 없고 카메라에 찍힌 사진뿐이에요."
-    },
-    "day5_ending_escape_5": {
-        "text": "그래도 나왔잖아."
-    },
-    "day5_ending_escape_6": {
-        "text": "*새벽 도로를 가로등 따라 걸었다.*"
-    },
-    "day5_ending_escape_7": {
-        "text": "*설화가 서 있던 자리만 기억나지 않는다.*"
-    },
-    "day5_ending_escape_8": {
-        "text": "*학교 쪽을 돌아보자 구관 3층 창문 하나만 어둡게 비어 있다.*"
-    },
-    "day5_ending_escape_9": {
-        "text": "선배. 왼손잡이였어요?"
-    },
-    "day5_ending_escape_10": {
-        "text": "아니? 오른손잡이인데."
-    },
-    "day5_ending_escape_11": {
-        "text": "*유나가 입을 열었다가 아무 말 없이 가방 끈을 고쳐 쥔다.*\n\n왜? 대답 이상했어? 그냥 물어본 거 아니야?"
-    },
-    "day5_ending_escape_12": {
-        "text": "*왼손으로 가방 끈을 쥐고 있었다. 나도 모르게.*"
-    },
-    "day5_ending_escape_13": {
-        "text": "*3개월 뒤.*"
-    },
-    "day5_ending_escape_14": {
-        "text": "*뉴스 검색창에 ○○학교를 입력했다. 새 기사는 없었다.*"
-    },
-    "day5_ending_escape_15": {
-        "text": "선배. 오늘 그 학교에 새로운 전학생이 왔대요."
-    },
-    "day5_ending_escape_subtitle": {
-        "text": "도주 ─ 기억 없는 탈출."
-    },
-    "day5_ending_escape_title": {
-        "text": ""
-    },
-    "day5_ending_resist_1": {
-        "text": "같이?"
-    },
-    "day5_ending_resist_2": {
-        "text": "이게 선생님의 첫 서명은 아니겠죠. 그래도 더는 서명하면 안 돼요."
-    },
-    "day5_ending_resist_3": {
-        "text": "*잠시 아무 말도 하지 않는다.*"
-    },
-    "day5_ending_resist_4": {
-        "text": "아니야. 세 번째부터는 내 선택이었어."
-    },
-    "day5_ending_resist_5": {
-        "text": "그 뒤의 서명은 다 내 글씨야, {name}."
-    },
-    "day5_ending_resist_6": {
-        "text": "선생님이 남으면 또 다른 학생이 그 자리에 앉게 돼요."
-    },
-    "day5_ending_resist_7": {
-        "text": "*설화가 은수 선생님의 어깨 너머와 비상구 표지 아래에 번갈아 보인다.*"
-    },
-    "day5_ending_resist_8": {
-        "text": "은수."
-    },
-    "day5_ending_resist_9": {
-        "text": "*나도 모르게 그 이름을 말하자 은수 선생님이 주사기를 쥔 손을 내린다.*"
-    },
-    "day5_ending_resist_10": {
-        "text": "이설화."
-    },
-    "day5_ending_resist_11": {
-        "text": "*설화의 말을 따라 입을 열었다.*\n\n새 이름표가 붙을 때마다 웃으셨죠."
-    },
-    "day5_ending_resist_12": {
-        "text": "횟수가 늘수록 짧아졌고요."
-    },
-    "day5_ending_resist_13": {
-        "text": "선생님도 나가셔야 해요."
-    },
-    "day5_ending_resist_14": {
-        "text": "*은수 선생님이 주사기를 바닥에 놓았다. 한참을 서 있었다.*\n\n다시 집지 마세요. 저 문 열려 있잖아요. 같이 나가요."
-    },
-    "day5_ending_resist_15": {
-        "text": "밖에 나가면 서류마다 내 이름이 있을 거야."
-    },
-    "day5_ending_resist_16": {
-        "text": "알아요."
-    },
-    "day5_ending_resist_17": {
-        "text": "감옥에 갈 수도 있어."
-    },
-    "day5_ending_resist_18": {
-        "text": "알아요."
-    },
-    "day5_ending_resist_18a": {
-        "text": "열한 번째 오태현은 나를 믿는다고 했어. 선생님이니까 괜찮다고."
-    },
-    "day5_ending_resist_18b": {
-        "text": "*은수 선생님은 문장을 끝내지 못하고 입을 다문다.*\n\n그 아이는 선생님을 믿었는데 선생님은 뭘 하셨어요?"
-    },
-    "day5_ending_resist_18c": {
-        "text": "그날 밤, 내가 지웠어. 다음 아침에 걔가 '선생님 누구세요?' 했고."
-    },
-    "day5_ending_resist_18d": {
-        "text": "그래도 서명했어. 다음 줄에도, 그다음 줄에도."
-    },
-    "day5_ending_resist_19": {
-        "text": "*은수 선생님이 입을 가린 채 한동안 고개를 들지 못했다.*\n\n저를 보세요. 알아요. 밖으로 나가도 저 서류가 없어지진 않아요."
-    },
-    "day5_ending_resist_20": {
-        "text": "내 손으로 너를 지웠어. 그런데도?"
-    },
-    "day5_ending_resist_21": {
-        "text": "이 서류가 밖으로 나가면 책임을 묻게 될 거예요. 그래도 여기서 다음 줄을 쓰는 것보다는 나아요."
-    },
-    "day5_ending_resist_22": {
-        "text": "*은수 선생님과 함께 비상구를 지났다.*\n\n*설화는 문 안에서 웃고 있었다. 계단을 내려갈 때쯤 보이지 않았다.*"
-    },
-    "day5_ending_resist_23": {
-        "text": "*은수 선생님은 나왔다. 하지만 서류 상단의 도장은 아직 남아 있다.*"
-    },
-    "day5_ending_resist_24": {
-        "text": "*빈 교무실에는 새 담임의 이름표가 놓였고 빈 책상에는 다른 전학생이 앉았다.*"
-    },
-    "day5_ending_resist_subtitle": {
-        "text": "반항 ─ 외부로 넘긴 기록."
-    },
-    "day5_ending_resist_title": {
-        "text": ""
-    },
-    "day5_ending_cage_eunsu_1": {
-        "text": "*저녁이 지나고도 교실 불은 꺼지지 않았다. 은수 선생님은 평소처럼 출석부를 정리했다.*\n\n아직 출석부 보세요? 수업은 끝났잖아요. 이제 불 끄면 안 돼요? 이 밝은 데서 계속 앉아 있기는 좀…"
-    },
-    "day5_ending_cage_eunsu_2": {
-        "text": "오늘 기록은 여기까지야. 쉬어."
-    },
-    "day5_ending_cage_eunsu_3": {
-        "text": "*입을 열었다가 고개만 끄덕였다.*"
-    },
-    "day5_ending_cage_eunsu_4": {
-        "text": "내일부터는 다시 평소처럼 하면 돼. 출석부에 있는 자리 그대로."
-    },
-    "day5_ending_cage_eunsu_5": {
-        "text": "*교실 문이 부드럽게 닫혔다. 잠그지 않았다는 걸 알면서도 나는 자리에서 일어나지 않았다.*"
-    },
-    "day5_ending_cage_eunsu_6": {
-        "text": "*다음 날 오후. 같은 교실, 같은 창가 자리. 은수 선생님의 목소리가 교실 뒤쪽에서 웅웅거린다.*"
-    },
-    "day5_ending_cage_eunsu_7": {
-        "text": "*수업과 교실은 매일 같고 웃는 얼굴도 바뀌지 않는다.*"
-    },
-    "day5_ending_cage_eunsu_8": {
-        "text": "*창밖으로 차 한 대가 지나가는 동안에도 자리에 그대로 앉아 있었다.*"
-    },
-    "day5_ending_cage_eunsu_9": {
-        "text": "*차가 울타리 너머로 사라질 때까지 창밖을 봤다.*"
-    },
-    "day5_ending_cage_eunsu_10": {
-        "text": "*교실 문은 잠기지 않았다.*"
-    },
-    "day5_ending_cage_eunsu_11": {
-        "text": "*나갈 수 있는데도 의자에서 일어나지 않는다.*"
-    },
-    "day5_ending_cage_sea_1": {
-        "text": "*세아가 나를 안았다. 복도에서.*"
-    },
-    "day5_ending_cage_sea_2": {
-        "text": "응."
-    },
-    "day5_ending_cage_sea_3": {
-        "text": "오늘은 여기 있어도 되는 거지?"
-    },
-    "day5_ending_cage_sea_4": {
-        "text": "*고개만 끄덕였다. 세아가 내 어깨에 이마를 묻고 길게 숨을 내쉬었다.*\n\n응. 오늘은 여기 있을게. 손은 조금만 풀어줘."
-    },
-    "day5_ending_cage_sea_5": {
-        "text": ""
-    },
-    "day5_ending_cage_sea_6": {
-        "text": "*학생회실에서 세아가 도시락을 열고 나를 보며 웃는다.*"
-    },
-    "day5_ending_cage_sea_7": {
-        "text": "*열세 번째. 세아는 도시락 뚜껑을 닫지 않는다. 맞은편 자리는 그대로 남아 있다.*"
-    },
-    "day5_ending_cage_sea_8": {
-        "text": "*도서관 창가에는 유나의 카메라가 없다. 밤마다 왼쪽 벽을 짚는 버릇만 남아 있다.*"
-    },
-    "day5_ending_cage_sea_9": {
-        "text": "*책상 서랍 안쪽에는 아직 비어 있는 이름표가 하나 남아 있다.*"
-    },
-    "day5_ending_cage_subtitle": {
-        "text": "새장 ─ 남기로 한 자리."
-    },
-    "day5_ending_cage_title": {
-        "text": ""
-    },
-    "day5_ending_forget_1": {
-        "text": "지워주세요."
-    },
-    "day5_ending_forget_2": {
-        "text": "*은수 선생님이 주사기를 든 채 나를 본다.*"
-    },
-    "day5_ending_forget_3": {
-        "text": "확실해?"
-    },
-    "day5_ending_forget_4": {
-        "text": "저 빈칸이 전부 제 기록인 거죠."
-    },
-    "day5_ending_forget_5": {
-        "text": "그 사실을 감당할 자신이 없어요."
-    },
-    "day5_ending_forget_6": {
-        "text": "지워주세요. 이름들이 계속 보여요."
-    },
-    "day5_ending_forget_7": {
-        "text": "*은수 선생님이 주사기를 들어 팔 가까이 가져왔다.*\n\n눈 감아도 되죠?"
-    },
-    "day5_ending_forget_8": {
-        "text": "미안해."
-    },
-    "day5_ending_forget_9": {
-        "text": "*바늘이 들어간 자리부터 팔이 저려 왔다.*"
-    },
-    "day5_ending_forget_10": {
-        "text": "*마지막으로 보이는 설화가 입을 움직이지만 소리는 들리지 않는다.*"
-    },
-    "day5_ending_forget_11": {
-        "text": "*입술의 움직임이 읽힌다.*"
-    },
-    "day5_ending_forget_12": {
-        "text": "*\"잊지 마\"*"
-    },
-    "day5_ending_forget_13": {
-        "text": "*잊었다.*"
-    },
-    "day5_ending_forget_14": {
-        "text": "*눈꺼풀 너머가 밝아지고 알람이 울린다. 휴대폰을 확인했다.*"
-    },
-    "day5_ending_forget_15": {
-        "text": "*'좋은 아침이에요, {new_name}!'*"
-    },
-    "day5_ending_forget_16": {
-        "text": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데 부를 말이 떠오르지 않는다.*"
-    },
-    "day5_ending_forget_17": {
-        "text": "*턱 끝이 젖었다. 닦을 생각이 한 박자 늦게 왔다.*"
-    },
-    "day5_ending_forget_18": {
-        "text": "*오늘부터 새 학교에 가야 한다.*"
-    },
-    "day5_ending_forget_19": {
-        "text": "*교문에 선생님이 서 있다.*"
-    },
-    "day5_ending_forget_20": {
-        "text": "어서 와. 네가 {new_name}이지? 전학 온 학생?"
-    },
-    "day5_ending_forget_21": {
-        "text": "학교생활은 선생님이 관리해줄게."
-    },
-    "day5_ending_forget_22": {
-        "text": "*선생님은 입가와 눈가를 동시에 움직여 웃었다.*"
-    },
-    "day5_ending_forget_sea_branch": {
-        "text": ""
-    },
-    "day5_ending_forget_sea_1": {
-        "text": "*밝게 웃는 여학생이 반장 완장을 차고 교문 앞에 서 있다.*"
-    },
-    "day5_ending_forget_sea_2": {
-        "text": "안녕! 오늘 전학 온 학생이지? 내가 안내해줄게."
-    },
-    "day5_ending_forget_sea_3": {
-        "text": "*낯이 익다. 떠올리려는 순간 종소리가 먼저 울렸다.*"
-    },
-    "day5_ending_forget_subtitle": {
-        "text": "망각 ─ 열네 번째 이름표."
-    },
-    "day5_ending_forget_title": {
-        "text": ""
-    },
-    "day5_ending_ghost_1": {
-        "text": "*몸을 돌리려 해도 발이 움직이지 않는다.*"
-    },
-    "day5_ending_ghost_2": {
-        "text": "*은수 선생님이 주사기를 들고 다가온다.*"
-    },
-    "day5_ending_ghost_3": {
-        "text": "*나와 은수 선생님 사이에 설화가 서 있다.*"
-    },
-    "day5_ending_ghost_4": {
-        "text": "내가 할게."
-    },
-    "day5_ending_ghost_5": {
-        "text": "설화—?"
-    },
-    "day5_ending_ghost_6": {
-        "text": "여섯 번 동안 아무도 이 문을 넘지 못했어."
-    },
-    "day5_ending_ghost_7": {
-        "text": "이번에도 멈췄지. 그래서 내가 은수 앞을 막았어."
-    },
-    "day5_ending_ghost_8": {
-        "text": "문이 열리면 바로 밀어줄게."
-    },
-    "day5_ending_ghost_9": {
-        "text": "*설화가 나를 똑바로 본다. 지금까지 본 사진 어디에도 없는 얼굴이다.*\n\n나를 보지 말고 문 밖을 봐. 나만 보내려고 그렇게 보는 거야?"
-    },
-    "day5_ending_ghost_10": {
-        "text": "달려. 지금."
-    },
-    "day5_ending_ghost_11": {
-        "text": "*몸이 움직였다. 발끝이 비상구 쪽으로 꺾였다.*"
-    },
-    "day5_ending_ghost_12": {
-        "text": "*유나의 손을 잡고 비상구로 뛰었다. 은수 선생님이 뒤에서 외쳤지만 멈추지 않았다.*"
-    },
-    "day5_ending_ghost_13": {
-        "text": "*비상구를 나서 돌아보니 문 안쪽에서 웃는 설화 너머로 벽이 비쳐 보인다.*"
-    },
-    "day5_ending_ghost_14": {
-        "text": "선생님. 다음 이름표는 없어요."
-    },
-    "day5_ending_ghost_15": {
-        "text": "*설화가 비상등 아래에서 사라지자 경보가 울렸다. 사이렌과 발소리, 고함이 뒤섞였다.*"
-    },
-    "day5_ending_ghost_16": {
-        "text": "*설화의 목소리는 더 들리지 않았다. 뒤에서 울리는 사이렌을 두고 학교를 빠져나왔다.*"
-    },
-    "day5_ending_ghost_17": {
-        "text": "*전학한 뒤에도 빈 자리를 피하고 왼손으로 벽을 짚는 버릇이 남았다.*"
-    },
-    "day5_ending_ghost_18": {
-        "text": "*가끔 밤에 거울을 보면 흑갈색 머리카락이 한 박자 늦게 지나간다.*"
-    },
-    "day5_ending_ghost_19": {
-        "text": "*연필을 집거나 복도에서 왼쪽으로 돌 때면 누군가의 이름이 떠오르다 사라졌다.*"
-    },
-    "day5_ending_ghost_20": {
-        "text": "*왼쪽으로 꺾인 글씨와 두 번째 계단의 흠집만 또렷했다.*"
-    },
-    "day5_ending_ghost_21": {
-        "text": "*왼손이 먼저 난간을 찾고 복도에선 왼쪽 벽을 따라 걷는다.*"
-    },
-    "day5_ending_ghost_22": {
-        "text": "*그 학교는 아직 거기 있다. 비상구에는 새 자물쇠가 걸렸고 열쇠는 다른 손에 있다.*"
-    },
-    "day5_ending_ghost_subtitle": {
-        "text": "잔상 ─ 남아 있는 습관."
-    },
-    "day5_ending_ghost_title": {
-        "text": ""
-    },
-    "day5_ending_complicit_1": {
-        "text": "*은수 선생님이 종이를 내밀었다.*"
-    },
-    "day5_ending_complicit_2": {
-        "text": "다음 아이는 네가 맡아. 그러면 너는 남을 수 있어."
-    },
-    "day5_ending_complicit_3": {
-        "text": "여기 남아. 이름은 위쪽으로 옮겨줄게."
-    },
-    "day5_ending_complicit_4": {
-        "text": "*한동안 대답하지 않았다.*"
-    },
-    "day5_ending_complicit_5": {
-        "text": "*종이를 봤다. '프로젝트 네버그라드 — 보조 연구원 계약서'.*"
-    },
-    "day5_ending_complicit_6": {
-        "text": "다음 애가 오면 저도 정문에서 웃으면 돼요?"
-    },
-    "day5_ending_complicit_7": {
-        "text": "그래."
-    },
-    "day5_ending_complicit_8": {
-        "text": "*계약서에 손을 올렸다.*"
-    },
-    "day5_ending_complicit_8a": {
-        "text": "*종이 모서리가 손바닥에 걸린다.*"
-    },
-    "day5_ending_complicit_8b": {
-        "text": "*문손잡이가 보인다. 그런데 시선은 서명란에 붙어 있다.*"
-    },
-    "day5_ending_complicit_sign": {
-        "text": "*펜촉이 서명란 위에 닿았다.*"
-    },
-    "day5_ending_complicit_9": {
-        "text": "*서명했다.*"
-    },
-    "day5_ending_complicit_10": {
-        "text": "*은수 선생님이 웃었다. 세아도 웃었다.*"
-    },
-    "day5_ending_complicit_11": {
-        "text": "*나도 따라 웃었다.*"
-    },
-    "day5_ending_complicit_12": {
-        "text": "*아침 교문으로 이름표가 비어 있는 새 학생이 걸어온다.*"
-    },
-    "day5_ending_complicit_13": {
-        "text": "*머리색만 다르다. 가방끈을 쥐는 버릇은 같다.*"
-    },
-    "day5_ending_complicit_14": {
-        "text": "어서 와. 네가 {14th_name}이지?"
-    },
-    "day5_ending_complicit_15": {
-        "text": "*새 학생은 말없이 고개를 끄덕인다. 가방끈을 쥔 손가락이 세 번 오므라들었다.*"
-    },
-    "day5_ending_complicit_16": {
-        "text": "걱정 마. 다들 잘 챙겨줄 거야."
-    },
-    "day5_ending_complicit_17": {
-        "text": "*은수 선생님이 뒤에서 지켜보고 있다. 복도 끝의 설화는 말없이 서 있다.*"
-    },
-    "day5_ending_complicit_18": {
-        "text": "*내가 먼저 웃었다.*"
-    },
-    "day5_ending_complicit_subtitle": {
-        "text": "공범 ─ 다음 출석부."
-    },
-    "day5_ending_complicit_title": {
-        "text": ""
-    },
-    "day5_cage_loop": {
-        "text": ""
-    },
-    "day5_xover_server_1": {
-        "text": "*연구소 서버에 접속했다. 낡은 모니터에 파일 목록이 뜬다.*"
-    },
-    "day5_xover_server_2": {
-        "text": "*프로젝트 큐피드(PROJECT CUPID) — 이전 주기 기록:*"
-    },
-    "day5_xover_server_3": {
-        "text": "*> cycle_01.zip  [정상]*"
-    },
-    "day5_xover_server_3_damaged": {
-        "text": "*> cycle_01.zip  [손상됨]*"
-    },
-    "day5_xover_server_4": {
-        "text": "*첨부 파일: CUPID_ENV_PREVIEW*"
-    },
-    "day5_xover_server_preview_choice": {
-        "text": "*미리보기를 실행할까?*",
-        "choices": [
-            "PREVIEW 실행",
-            "닫기"
-        ]
-    },
-    "day5_xover_preview_1": {
-        "text": "*벚꽃.*"
-    },
-    "day5_xover_preview_2": {
-        "text": "*봄바람이 부는 전학 첫날, 새 교복을 입고 교문 앞에 섰다.*"
-    },
-    "day5_xover_preview_3": {
-        "text": "*벚꽃잎이 같은 위치에서 반복 재생된다. 바람 방향만 다르다.*"
-    },
-    "day5_xover_preview_4": {
-        "text": "*화면 오른쪽 아래에 작게: cycle_01*"
-    },
-    "day5_xover_preview_heroine": {
-        "text": "*[CUPID_ENV_PREVIEW]*\n*정서 각인 모델: {cupid_heroine}*\n*순응 반응률: {cupid_compliance}*\n*투여 전 환경 반응성 검사와 M-13 안정화 지표가 일치함.*"
-    },
-    "day5_xover_preview_5": {
-        "text": "*모니터가 꺼졌다.*"
-    },
-    "day5_xover_server_end": {
-        "text": "*파일을 닫았다.*"
-    },
-    "day5_observer_1": {
-        "text": "*크레딧이 끝나고 화면이 완전히 어두워진다.*"
-    },
-    "day5_observer_2": {
-        "text": "*3초.*"
-    },
-    "day5_observer_3": {
-        "text": "*화면 중앙에 텍스트가 한 글자씩 떠오른다.*"
-    },
-    "day5_observer_4": {
-        "text": "에디나 재단 / 네버그라드 연구소(NEVERGRAD RESEARCH INSTITUTE)\n보안 감사: 외부 열람 세션\n대조 대상: #13 관찰 기록"
-    },
-    "day5_observer_5": {
-        "text": "접속 권한: 감사·모니터링\n세션 상태: 접속 유지\n피험자 접촉 권한: 없음"
-    },
-    "day5_observer_6": {
-        "text": "피험자: #13 ({name})\n세션 접속 시간: {play_time}\n\n접촉·개입 집계\n세아 접촉: {route_data}\n유나 접촉 여부: {met_yuna}\n리인 방문: {riin_visits}\n설화 접촉 시도: {seolhwa_attempts}\n증거 확보: {evidence_data}\n최종 응답 기록: {timer_data}"
-    },
-    "day5_observer_7": {
-        "text": "접촉 기록 대조 완료\n행동 패턴 대조 중"
-    },
-    "day5_observer_8": {
-        "text": "대조 기준: 연구 책임자 박은수 / 13회 관찰\n외부 열람 세션: #13 ({name}) / {play_time}\n\n공통 항목: 경고 후 열람 지속, 개입 기록 누적\n유사도: 관찰 지속 패턴 일치\n\n자동 판정: 보류\n세션 종료 요청: 미수신"
-    },
-    "day5_observer_cupid_check": {
-        "text": ""
-    },
-    "day5_observer_cupid_extra": {
-        "text": "교차 참조:\n\nCUPID_ENV_PREVIEW 감지.\n정서 각인: {cupid_heroine}\n순응률: {cupid_compliance}\nM-13 안정화 지표와 일부 일치.\n\n비고:\n관찰자 데이터는 아직 #13 파일에 묶여 있음."
-    },
-    "day5_observer_9": {
-        "text": "*화면이 멈춘다. 5초간.*"
-    },
-    "day5_observer_10": {
-        "text": "*하단에 아주 작게:*"
-    },
-    "day5_observer_11": {
-        "text": "[졸업하시겠습니까?]",
-        "choices": [
-            "예",
-            "아니오"
-        ]
-    },
-    "day5_night_seolhwa_affinity_check": {
-        "text": ""
-    },
-    "day5_night_set_high_seolhwa_affinity": {
-        "text": ""
-    },
-    "day5_ending_true_voice_check": {
-        "text": ""
-    },
-    "day5_ending_true_16_clear_intro": {
-        "text": "*설화가 입을 열자 먹먹하게 깔리던 잡음이 걷혔다. 일곱 번째 계단 뒤편에서 불렀던 목소리가 또렷하게 닿았다.*"
-    },
-    "day5_ending_true_16_clear": {
-        "text": "그렇게 불러준 건 처음이야."
-    },
-    "day5_ending_true_riin_check": {
-        "text": ""
-    },
-    "day5_ending_true_27_riin": {
-        "text": "*기사 아래에는 추가 자료가 실렸다. 함께 빠져나온 리인 선생님이 여섯 주기 분량의 실제 투약 대조표와 원본 차트를 제출했다.*"
-    },
-    "day5_ending_true_27_riin_2": {
-        "text": "*투약 날짜 옆마다 본부 승인 번호가 남아 있었다. 현장 책임자 개인의 일탈로 덮으려던 초기 해명 기사는 반나절 만에 내려갔다.*"
-    },
-    "day5_ending_true_sea_check": {
-        "text": ""
-    },
-    "day5_ending_true_27_sea": {
-        "text": "*시설에서 함께 나온 세아는 외부 보호 조치를 받았다. 며칠 뒤 학교와 떨어진 낮 시간의 상가 거리를 나란히 걸었다. 세아의 손에는 출석부도 학생회실 열쇠도 없었다.*"
-    },
-    "day5_ending_true_27_sea_2": {
-        "text": "완장도 안 차고 누구 뒤를 안 따라가도 되네. 저쪽 길도 가볼까?"
-    },
-    "day5_ending_true_memory_check": {
-        "text": ""
-    },
-    "day5_ending_true_30_memory": {
-        "text": "*구관 계단 뒤편에서 나눴던 말도 끝까지 떠올랐다. 이름 옆에 한 줄을 더 보탰다. ‘다음에는 여기 말고 밖에서 만나.’*"
-    },
-    "day5_ending_escape_riin_check": {
-        "text": ""
-    },
-    "day5_ending_escape_riin": {
-        "text": "*함께 나온 리인 선생님은 재단 측 추적을 피해 거처를 옮겼다. 떠나기 전 짧은 연락을 남겼다. 보건실 바닥 아래 숨겨 둔 원본 차트는 이미 회수당했다고 했다.*"
-    },
-    "day5_ending_escape_sea_check": {
-        "text": ""
-    },
-    "day5_ending_escape_sea": {
-        "text": "*같이 빠져나온 세아는 학교와 떨어진 외부 보호 시설로 옮겨 갔다. 도착했다는 짧은 메시지 아래에 동네 빵집 봉투 사진이 한 장 딸려 왔다.*"
-    }
+  "day5_night_start": {
+    "text": "*밤.*"
+  },
+  "day5_night_affinity_check": {
+    "text": ""
+  },
+  "day5_night_set_high_affinity": {
+    "text": ""
+  },
+  "day5_night_sea_affinity_check": {
+    "text": ""
+  },
+  "day5_night_set_high_sea_affinity": {
+    "text": ""
+  },
+  "day5_night_complicit_eval": {
+    "text": ""
+  },
+  "day5_night_set_complicit_ready": {
+    "text": ""
+  },
+  "day5_night_routing": {
+    "text": ""
+  },
+  "day5_ending_forget_forced_1": {
+    "text": "*이미 늦었다. 바늘이 빠져나간 자리만 싸늘하게 남아 있다.*"
+  },
+  "day5_ending_forget_forced_2": {
+    "text": "미안해. 이번에도 늦었어."
+  },
+  "day5_ending_forget_forced_3": {
+    "text": "*리인 선생님이 눈을 감은 채 뭐라고 말한다. 입 모양만 보이고 목소리는 알아듣지 못했다.*"
+  },
+  "day5_ending_forget_forced_4": {
+    "text": "*시야가 흐려졌다. 입을 열어도 소리가 나오지 않는다.*"
+  },
+  "day5_ending_ghost_guided_1": {
+    "text": "*정전 속에서 비상벨이 한 번 울렸다. 누군가 등을 거칠게 떠민다.*"
+  },
+  "day5_ending_ghost_guided_2": {
+    "text": "멈추지 마. 네 몸이 길을 기억해."
+  },
+  "day5_ending_ghost_guided_3": {
+    "text": "*계단을 두 칸씩 뛰어올랐다. 발은 이미 비상구를 향하고 있다.*"
+  },
+  "day5_ending_ghost_guided_4": {
+    "text": "그대로. 이제 문만 밀어."
+  },
+  "day5_ending_ghost_guided_5": {
+    "text": "*문이 열리자 밖의 찬 공기를 한 번에 들이마셨다.*"
+  },
+  "day5_ending_true_1": {
+    "text": "*은수 선생님은 주사기를 세게 쥐고 있다. 손가락 관절이 하얗다.*"
+  },
+  "day5_ending_true_2": {
+    "text": "*대답이 없다.*"
+  },
+  "day5_ending_true_3": {
+    "text": "그래. 이번에도 문 쪽이구나."
+  },
+  "day5_ending_true_4": {
+    "text": "*은수 선생님이 주사기를 내려놓고 비상구 앞에서 비켜섰다.*"
+  },
+  "day5_ending_true_5": {
+    "text": "*유나와 비상구를 지나 구관 뒤 비상 계단으로 나왔다. 늦은 밤 공기가 차갑다. 학교 울타리 밖 도로를 따라 가로등이 이어진다.*"
+  },
+  "day5_ending_true_6": {
+    "text": "*뒤를 돌아봤다.*"
+  },
+  "day5_ending_true_7": {
+    "text": "*설화가 비상구 안쪽에 서 있다. 문 밖으로 나오지 못한다.*\n\n같이 와. 잡아주면 나올 수 있어?"
+  },
+  "day5_ending_true_8": {
+    "text": "가."
+  },
+  "day5_ending_true_9": {
+    "text": "설화—"
+  },
+  "day5_ending_true_10": {
+    "text": "가. 지금."
+  },
+  "day5_ending_true_11": {
+    "text": "*설화가 웃는다. 비상등 빛이 얼굴을 통과해 뒤쪽 타일까지 비춘다.*"
+  },
+  "day5_ending_true_12": {
+    "text": "여섯 번 시도했지만 전부 여기서 멈췄어. 오늘은 그대로 나가."
+  },
+  "day5_ending_true_13": {
+    "text": "내 기록은 여기까지야. 너는 문을 넘어가."
+  },
+  "day5_ending_true_14": {
+    "text": "이설화. 그 이름은 기억할게."
+  },
+  "day5_ending_true_14a": {
+    "text": "*문 안쪽에서 은수 선생님의 발소리가 멀어진다.*"
+  },
+  "day5_ending_true_14b": {
+    "text": "*유나가 내 소매를 잡았다. 설화는 문 안쪽에 그대로 서 있다.*"
+  },
+  "day5_ending_true_15": {
+    "text": "*설화가 한 번 돌아본다. 계단 불빛이 얼굴을 가린다.*"
+  },
+  "day5_ending_true_16": {
+    "text": "그렇게 불러준 건 처음이야."
+  },
+  "day5_ending_true_17": {
+    "text": "*설화가 보이지 않는다. 비상등만 켜져 있다.*"
+  },
+  "day5_ending_true_18": {
+    "text": "*비 오는 계단에서 젖은 교복 소매와 내 왼손을 잡던 차가운 손이 떠오른다.*"
+  },
+  "day5_ending_true_19": {
+    "text": "*기억의 앞뒤가 맞지 않는다.*"
+  },
+  "day5_ending_true_20": {
+    "text": "*도서관에 내리던 비와 잠긴 지하실 문, 울타리를 넘을 때 붙잡았던 손이 이어서 떠오른다.*"
+  },
+  "day5_ending_true_21": {
+    "text": "*기억 속 이름표 열두 장이 모두 뒷면으로 돌아가 있다.*"
+  },
+  "day5_ending_true_21a": {
+    "text": "*민수의 프로필 사진이 회색으로 비었다. 전 학교 교실과 부모님의 이사 이유는 떠오르지 않고 이 학교 장면만 남았다.*"
+  },
+  "day5_ending_true_22": {
+    "text": "*무릎을 꿇자 유나가 옆에 앉아 등을 받쳐준다.*\n\n잠깐만. 나 좀 잡아줘. 도로가 보이는데 일어나질 못하겠어."
+  },
+  "day5_ending_true_23": {
+    "text": "괜찮아요, 선배."
+  },
+  "day5_ending_true_24": {
+    "text": "나가자. 여기서 하던 얘기는 밖에서 계속해. 더 머물고 싶지 않아.\n\n*유나가 어두운 운동장 너머, 학교 울타리 밖 도로를 보며 말했다.*"
+  },
+  "day5_ending_true_25": {
+    "text": "학교 안에서 할 일은 끝났어요."
+  },
+  "day5_ending_true_26": {
+    "text": "*뉴스 기사. '○○학교 비인가 연구시설 적발 — 불법 약물 투여 및 인체 임상시험 의혹'*"
+  },
+  "day5_ending_true_27": {
+    "text": "*'피해자 다수 기억장애 호소' '연구 책임자 B씨 구속' '3년간 재학하며 증거를 수집한 학생 C양의 제보가 결정적 역할'*"
+  },
+  "day5_ending_true_28": {
+    "text": "*휴대폰을 내려놓았다. 새로운 학교, 새로운 교실. 아는 얼굴은 없다.*"
+  },
+  "day5_ending_true_29": {
+    "text": "*이름표에는 열세 번째 이름이 아니라 처음의 이름이 적혀 있다.*"
+  },
+  "day5_ending_true_30": {
+    "text": "*이름들을 종이에 옮겨 적는다. 설화의 이름도, 남은 얼굴들도 같은 줄에 적었다.*"
+  },
+  "day5_ending_true_31": {
+    "text": "*왼손으로 연필을 잡았다. 검지 옆에 연필 자국이 남았다.*"
+  },
+  "day5_ending_true_32": {
+    "text": ""
+  },
+  "day5_ending_true_subtitle": {
+    "text": "졸업 ─ 교실 밖으로."
+  },
+  "day5_ending_true_title": {
+    "text": ""
+  },
+  "day5_postcredit_1": {
+    "text": "*어딘가에서 전화벨이 울린다.*"
+  },
+  "day5_postcredit_2": {
+    "text": "*넓은 사무실의 책상에는 서류와 모니터 여러 대가 놓여 있다. 화면에는 학교 평면도가 떠 있다.*"
+  },
+  "day5_postcredit_3": {
+    "text": "네. 확인했습니다. 거점은 폐쇄합니다. 자산 회수 완료, 인력은 재배치합니다."
+  },
+  "day5_postcredit_4": {
+    "text": "13번 건은 현장 책임자 선에서 끝냅니다. 재단 이름은 남기지 마세요."
+  },
+  "day5_postcredit_5": {
+    "text": "네. 차기 시범 학교 선정은 끝났습니다."
+  },
+  "day5_postcredit_6": {
+    "text": "교직원 재배치 기안은 올렸고요?"
+  },
+  "day5_postcredit_7": {
+    "text": "*모니터 화면에 새 학교와 교복, 이름들이 뜬다. 파일 제목은 '에디나 재단 — 부적응 학생 교정 프로그램 제2거점 시행 계획안'이고 문서 상단의 로고는 그대로다.*"
+  },
+  "day5_postcredit_8": {
+    "text": "*새로운 전학생 프로필이 화면에 뜬다. 사진 속 학생은 카메라를 향해 웃고 있다.*"
+  },
+  "day5_postcredit_end": {
+    "text": ""
+  },
+  "day5_ending_escape_1": {
+    "text": "*유나와 함께 달려 학교를 빠져나왔다.*"
+  },
+  "day5_ending_escape_2": {
+    "text": "*뒤를 돌아봤다. 쫓아오는 사람은 없다.*"
+  },
+  "day5_ending_escape_3": {
+    "text": "*교문 밖으로 나온 뒤에도 한동안 달리기를 멈출 수 없었다.*"
+  },
+  "day5_ending_escape_4": {
+    "text": "선배, 문서는 없고 카메라에 찍힌 사진뿐이에요."
+  },
+  "day5_ending_escape_5": {
+    "text": "그래도 나왔잖아."
+  },
+  "day5_ending_escape_6": {
+    "text": "*새벽 도로를 가로등 따라 걸었다.*"
+  },
+  "day5_ending_escape_7": {
+    "text": "*설화가 서 있던 자리만 기억나지 않는다.*"
+  },
+  "day5_ending_escape_8": {
+    "text": "*학교 쪽을 돌아보자 구관 3층 창문 하나만 어둡게 비어 있다.*"
+  },
+  "day5_ending_escape_9": {
+    "text": "선배. 왼손잡이였어요?"
+  },
+  "day5_ending_escape_10": {
+    "text": "아니? 오른손잡이인데."
+  },
+  "day5_ending_escape_11": {
+    "text": "*유나가 입을 열었다가 아무 말 없이 가방 끈을 고쳐 쥔다.*\n\n왜? 대답 이상했어? 그냥 물어본 거 아니야?"
+  },
+  "day5_ending_escape_12": {
+    "text": "*왼손으로 가방 끈을 쥐고 있었다. 나도 모르게.*"
+  },
+  "day5_ending_escape_13": {
+    "text": "*3개월 뒤.*"
+  },
+  "day5_ending_escape_14": {
+    "text": "*뉴스 검색창에 ○○학교를 입력했다. 새 기사는 없었다.*"
+  },
+  "day5_ending_escape_15": {
+    "text": "선배. 오늘 그 학교에 새로운 전학생이 왔대요."
+  },
+  "day5_ending_escape_subtitle": {
+    "text": "도주 ─ 기억 없는 탈출."
+  },
+  "day5_ending_escape_title": {
+    "text": ""
+  },
+  "day5_ending_resist_1": {
+    "text": "같이?"
+  },
+  "day5_ending_resist_2": {
+    "text": "이게 선생님의 첫 서명은 아니겠죠. 그래도 더는 서명하면 안 돼요."
+  },
+  "day5_ending_resist_3": {
+    "text": "*잠시 아무 말도 하지 않는다.*"
+  },
+  "day5_ending_resist_4": {
+    "text": "아니야. 세 번째부터는 내 선택이었어."
+  },
+  "day5_ending_resist_5": {
+    "text": "그 뒤의 서명은 다 내 글씨야, {name}."
+  },
+  "day5_ending_resist_6": {
+    "text": "선생님이 남으면 또 다른 학생이 그 자리에 앉게 돼요."
+  },
+  "day5_ending_resist_7": {
+    "text": "*설화가 은수 선생님의 어깨 너머와 비상구 표지 아래에 번갈아 보인다.*"
+  },
+  "day5_ending_resist_8": {
+    "text": "은수."
+  },
+  "day5_ending_resist_9": {
+    "text": "*나도 모르게 그 이름을 말하자 은수 선생님이 주사기를 쥔 손을 내린다.*"
+  },
+  "day5_ending_resist_10": {
+    "text": "이설화."
+  },
+  "day5_ending_resist_11": {
+    "text": "*설화의 말을 따라 입을 열었다.*\n\n새 이름표가 붙을 때마다 웃으셨죠."
+  },
+  "day5_ending_resist_12": {
+    "text": "횟수가 늘수록 짧아졌고요."
+  },
+  "day5_ending_resist_13": {
+    "text": "선생님도 나가셔야 해요."
+  },
+  "day5_ending_resist_14": {
+    "text": "*은수 선생님이 주사기를 바닥에 놓았다. 한참을 서 있었다.*\n\n다시 집지 마세요. 저 문 열려 있잖아요. 같이 나가요."
+  },
+  "day5_ending_resist_15": {
+    "text": "밖에 나가면 서류마다 내 이름이 있을 거야."
+  },
+  "day5_ending_resist_16": {
+    "text": "알아요."
+  },
+  "day5_ending_resist_17": {
+    "text": "감옥에 갈 수도 있어."
+  },
+  "day5_ending_resist_18": {
+    "text": "알아요."
+  },
+  "day5_ending_resist_18a": {
+    "text": "열한 번째 오태현은 나를 믿는다고 했어. 선생님이니까 괜찮다고."
+  },
+  "day5_ending_resist_18b": {
+    "text": "*은수 선생님은 문장을 끝내지 못하고 입을 다문다.*\n\n그 아이는 선생님을 믿었는데 선생님은 뭘 하셨어요?"
+  },
+  "day5_ending_resist_18c": {
+    "text": "그날 밤, 내가 지웠어. 다음 아침에 걔가 '선생님 누구세요?' 했고."
+  },
+  "day5_ending_resist_18d": {
+    "text": "그래도 서명했어. 다음 줄에도, 그다음 줄에도."
+  },
+  "day5_ending_resist_19": {
+    "text": "*은수 선생님이 입을 가린 채 한동안 고개를 들지 못했다.*\n\n저를 보세요. 알아요. 밖으로 나가도 저 서류가 없어지진 않아요."
+  },
+  "day5_ending_resist_20": {
+    "text": "내 손으로 너를 지웠어. 그런데도?"
+  },
+  "day5_ending_resist_21": {
+    "text": "이 서류가 밖으로 나가면 책임을 묻게 될 거예요. 그래도 여기서 다음 줄을 쓰는 것보다는 나아요."
+  },
+  "day5_ending_resist_22": {
+    "text": "*은수 선생님과 함께 비상구를 지났다.*\n\n*설화는 문 안에서 웃고 있었다. 계단을 내려갈 때쯤 보이지 않았다.*"
+  },
+  "day5_ending_resist_23": {
+    "text": "*은수 선생님은 나왔다. 하지만 서류 상단의 도장은 아직 남아 있다.*"
+  },
+  "day5_ending_resist_24": {
+    "text": "*빈 교무실에는 새 담임의 이름표가 놓였고 빈 책상에는 다른 전학생이 앉았다.*"
+  },
+  "day5_ending_resist_subtitle": {
+    "text": "반항 ─ 외부로 넘긴 기록."
+  },
+  "day5_ending_resist_title": {
+    "text": ""
+  },
+  "day5_ending_cage_eunsu_1": {
+    "text": "*저녁이 지나고도 교실 불은 꺼지지 않았다. 은수 선생님은 평소처럼 출석부를 정리했다.*\n\n아직 출석부 보세요? 수업은 끝났잖아요. 이제 불 끄면 안 돼요? 이 밝은 데서 계속 앉아 있기는 좀…"
+  },
+  "day5_ending_cage_eunsu_2": {
+    "text": "오늘 기록은 여기까지야. 쉬어."
+  },
+  "day5_ending_cage_eunsu_3": {
+    "text": "*입을 열었다가 고개만 끄덕였다.*"
+  },
+  "day5_ending_cage_eunsu_4": {
+    "text": "내일부터는 다시 평소처럼 하면 돼. 출석부에 있는 자리 그대로."
+  },
+  "day5_ending_cage_eunsu_5": {
+    "text": "*교실 문이 부드럽게 닫혔다. 잠그지 않았다는 걸 알면서도 나는 자리에서 일어나지 않았다.*"
+  },
+  "day5_ending_cage_eunsu_6": {
+    "text": "*다음 날 오후. 같은 교실, 같은 창가 자리. 은수 선생님의 목소리가 교실 뒤쪽에서 웅웅거린다.*"
+  },
+  "day5_ending_cage_eunsu_7": {
+    "text": "*수업과 교실은 매일 같고 웃는 얼굴도 바뀌지 않는다.*"
+  },
+  "day5_ending_cage_eunsu_8": {
+    "text": "*창밖으로 차 한 대가 지나가는 동안에도 자리에 그대로 앉아 있었다.*"
+  },
+  "day5_ending_cage_eunsu_9": {
+    "text": "*차가 울타리 너머로 사라질 때까지 창밖을 봤다.*"
+  },
+  "day5_ending_cage_eunsu_10": {
+    "text": "*교실 문은 잠기지 않았다.*"
+  },
+  "day5_ending_cage_eunsu_11": {
+    "text": "*나갈 수 있는데도 의자에서 일어나지 않는다.*"
+  },
+  "day5_ending_cage_sea_1": {
+    "text": "*세아가 나를 안았다. 복도에서.*"
+  },
+  "day5_ending_cage_sea_2": {
+    "text": "응."
+  },
+  "day5_ending_cage_sea_3": {
+    "text": "오늘은 여기 있어도 되는 거지?"
+  },
+  "day5_ending_cage_sea_4": {
+    "text": "*고개만 끄덕였다. 세아가 내 어깨에 이마를 묻고 길게 숨을 내쉬었다.*\n\n응. 오늘은 여기 있을게. 손은 조금만 풀어줘."
+  },
+  "day5_ending_cage_sea_5": {
+    "text": ""
+  },
+  "day5_ending_cage_sea_6": {
+    "text": "*학생회실에서 세아가 도시락을 열고 나를 보며 웃는다.*"
+  },
+  "day5_ending_cage_sea_7": {
+    "text": "*열세 번째. 세아는 도시락 뚜껑을 닫지 않는다. 맞은편 자리는 그대로 남아 있다.*"
+  },
+  "day5_ending_cage_sea_8": {
+    "text": "*도서관 창가에는 유나의 카메라가 없다. 밤마다 왼쪽 벽을 짚는 버릇만 남아 있다.*"
+  },
+  "day5_ending_cage_sea_9": {
+    "text": "*책상 서랍 안쪽에는 아직 비어 있는 이름표가 하나 남아 있다.*"
+  },
+  "day5_ending_cage_subtitle": {
+    "text": "새장 ─ 남기로 한 자리."
+  },
+  "day5_ending_cage_title": {
+    "text": ""
+  },
+  "day5_ending_forget_1": {
+    "text": "지워주세요."
+  },
+  "day5_ending_forget_2": {
+    "text": "*은수 선생님이 주사기를 든 채 나를 본다.*"
+  },
+  "day5_ending_forget_3": {
+    "text": "확실해?"
+  },
+  "day5_ending_forget_4": {
+    "text": "저 빈칸이 전부 제 기록인 거죠."
+  },
+  "day5_ending_forget_5": {
+    "text": "그 사실을 감당할 자신이 없어요."
+  },
+  "day5_ending_forget_6": {
+    "text": "지워주세요. 이름들이 계속 보여요."
+  },
+  "day5_ending_forget_7": {
+    "text": "*은수 선생님이 주사기를 들어 팔 가까이 가져왔다.*\n\n눈 감아도 되죠?"
+  },
+  "day5_ending_forget_8": {
+    "text": "미안해."
+  },
+  "day5_ending_forget_9": {
+    "text": "*바늘이 들어간 자리부터 팔이 저려 왔다.*"
+  },
+  "day5_ending_forget_10": {
+    "text": "*마지막으로 보이는 설화가 입을 움직이지만 소리는 들리지 않는다.*"
+  },
+  "day5_ending_forget_11": {
+    "text": "*입술의 움직임이 읽힌다.*"
+  },
+  "day5_ending_forget_12": {
+    "text": "*\"잊지 마\"*"
+  },
+  "day5_ending_forget_13": {
+    "text": "*잊었다.*"
+  },
+  "day5_ending_forget_14": {
+    "text": "*눈꺼풀 너머가 밝아지고 알람이 울린다. 휴대폰을 확인했다.*"
+  },
+  "day5_ending_forget_15": {
+    "text": "*'좋은 아침이에요, {new_name}!'*"
+  },
+  "day5_ending_forget_16": {
+    "text": "*이름이 다르다. 거울 속 얼굴은 낯설지 않은데 부를 말이 떠오르지 않는다.*"
+  },
+  "day5_ending_forget_17": {
+    "text": "*턱 끝이 젖었다. 닦을 생각이 한 박자 늦게 왔다.*"
+  },
+  "day5_ending_forget_18": {
+    "text": "*오늘부터 새 학교에 가야 한다.*"
+  },
+  "day5_ending_forget_19": {
+    "text": "*교문에 선생님이 서 있다.*"
+  },
+  "day5_ending_forget_20": {
+    "text": "어서 와. 네가 {new_name}이지? 전학 온 학생?"
+  },
+  "day5_ending_forget_21": {
+    "text": "학교생활은 선생님이 관리해줄게."
+  },
+  "day5_ending_forget_22": {
+    "text": "*선생님은 입가와 눈가를 동시에 움직여 웃었다.*"
+  },
+  "day5_ending_forget_sea_branch": {
+    "text": ""
+  },
+  "day5_ending_forget_sea_1": {
+    "text": "*밝게 웃는 여학생이 반장 완장을 차고 교문 앞에 서 있다.*"
+  },
+  "day5_ending_forget_sea_2": {
+    "text": "안녕! 오늘 전학 온 학생이지? 내가 안내해줄게."
+  },
+  "day5_ending_forget_sea_3": {
+    "text": "*낯이 익다. 떠올리려는 순간 종소리가 먼저 울렸다.*"
+  },
+  "day5_ending_forget_subtitle": {
+    "text": "망각 ─ 열네 번째 이름표."
+  },
+  "day5_ending_forget_title": {
+    "text": ""
+  },
+  "day5_ending_ghost_1": {
+    "text": "*몸을 돌리려 해도 발이 움직이지 않는다.*"
+  },
+  "day5_ending_ghost_2": {
+    "text": "*은수 선생님이 주사기를 들고 다가온다.*"
+  },
+  "day5_ending_ghost_3": {
+    "text": "*나와 은수 선생님 사이에 설화가 서 있다.*"
+  },
+  "day5_ending_ghost_4": {
+    "text": "내가 할게."
+  },
+  "day5_ending_ghost_5": {
+    "text": "설화—?"
+  },
+  "day5_ending_ghost_6": {
+    "text": "여섯 번 동안 아무도 이 문을 넘지 못했어."
+  },
+  "day5_ending_ghost_7": {
+    "text": "이번에도 멈췄지. 그래서 내가 은수 앞을 막았어."
+  },
+  "day5_ending_ghost_8": {
+    "text": "문이 열리면 바로 밀어줄게."
+  },
+  "day5_ending_ghost_9": {
+    "text": "*설화가 나를 똑바로 본다. 지금까지 본 사진 어디에도 없는 얼굴이다.*\n\n나를 보지 말고 문 밖을 봐. 나만 보내려고 그렇게 보는 거야?"
+  },
+  "day5_ending_ghost_10": {
+    "text": "달려. 지금."
+  },
+  "day5_ending_ghost_11": {
+    "text": "*몸이 움직였다. 발끝이 비상구 쪽으로 꺾였다.*"
+  },
+  "day5_ending_ghost_12": {
+    "text": "*유나의 손을 잡고 비상구로 뛰었다. 은수 선생님이 뒤에서 외쳤지만 멈추지 않았다.*"
+  },
+  "day5_ending_ghost_13": {
+    "text": "*비상구를 나서 돌아보니 문 안쪽에서 웃는 설화 너머로 벽이 비쳐 보인다.*"
+  },
+  "day5_ending_ghost_14": {
+    "text": "선생님. 다음 이름표는 없어요."
+  },
+  "day5_ending_ghost_15": {
+    "text": "*설화가 비상등 아래에서 사라지자 경보가 울렸다. 사이렌과 발소리, 고함이 뒤섞였다.*"
+  },
+  "day5_ending_ghost_16": {
+    "text": "*설화의 목소리는 더 들리지 않았다. 뒤에서 울리는 사이렌을 두고 학교를 빠져나왔다.*"
+  },
+  "day5_ending_ghost_17": {
+    "text": "*전학한 뒤에도 빈 자리를 피하고 왼손으로 벽을 짚는 버릇이 남았다.*"
+  },
+  "day5_ending_ghost_18": {
+    "text": "*가끔 밤에 거울을 보면 흑갈색 머리카락이 한 박자 늦게 지나간다.*"
+  },
+  "day5_ending_ghost_19": {
+    "text": "*연필을 집거나 복도에서 왼쪽으로 돌 때면 누군가의 이름이 떠오르다 사라졌다.*"
+  },
+  "day5_ending_ghost_20": {
+    "text": "*왼쪽으로 꺾인 글씨와 두 번째 계단의 흠집만 또렷했다.*"
+  },
+  "day5_ending_ghost_21": {
+    "text": "*왼손이 먼저 난간을 찾고 복도에선 왼쪽 벽을 따라 걷는다.*"
+  },
+  "day5_ending_ghost_22": {
+    "text": "*그 학교는 아직 거기 있다. 비상구에는 새 자물쇠가 걸렸고 열쇠는 다른 손에 있다.*"
+  },
+  "day5_ending_ghost_subtitle": {
+    "text": "잔상 ─ 남아 있는 습관."
+  },
+  "day5_ending_ghost_title": {
+    "text": ""
+  },
+  "day5_ending_complicit_1": {
+    "text": "*은수 선생님이 종이를 내밀었다.*"
+  },
+  "day5_ending_complicit_2": {
+    "text": "다음 아이는 네가 맡아. 그러면 너는 남을 수 있어."
+  },
+  "day5_ending_complicit_3": {
+    "text": "여기 남아. 이름은 위쪽으로 옮겨줄게."
+  },
+  "day5_ending_complicit_4": {
+    "text": "*한동안 대답하지 않았다.*"
+  },
+  "day5_ending_complicit_5": {
+    "text": "*종이를 봤다. '프로젝트 네버그라드 — 보조 연구원 계약서'.*"
+  },
+  "day5_ending_complicit_6": {
+    "text": "다음 애가 오면 저도 정문에서 웃으면 돼요?"
+  },
+  "day5_ending_complicit_7": {
+    "text": "그래."
+  },
+  "day5_ending_complicit_8": {
+    "text": "*계약서에 손을 올렸다.*"
+  },
+  "day5_ending_complicit_8a": {
+    "text": "*종이 모서리가 손바닥에 걸린다.*"
+  },
+  "day5_ending_complicit_8b": {
+    "text": "*문손잡이가 보인다. 그런데 시선은 서명란에 붙어 있다.*"
+  },
+  "day5_ending_complicit_sign": {
+    "text": "*펜촉이 서명란 위에 닿았다.*"
+  },
+  "day5_ending_complicit_9": {
+    "text": "*서명했다.*"
+  },
+  "day5_ending_complicit_10": {
+    "text": "*은수 선생님이 웃었다. 세아도 웃었다.*"
+  },
+  "day5_ending_complicit_11": {
+    "text": "*나도 따라 웃었다.*"
+  },
+  "day5_ending_complicit_12": {
+    "text": "*아침 교문으로 이름표가 비어 있는 새 학생이 걸어온다.*"
+  },
+  "day5_ending_complicit_13": {
+    "text": "*머리색만 다르다. 가방끈을 쥐는 버릇은 같다.*"
+  },
+  "day5_ending_complicit_14": {
+    "text": "어서 와. 네가 {14th_name}이지?"
+  },
+  "day5_ending_complicit_15": {
+    "text": "*새 학생은 말없이 고개를 끄덕인다. 가방끈을 쥔 손가락이 세 번 오므라들었다.*"
+  },
+  "day5_ending_complicit_16": {
+    "text": "걱정 마. 다들 잘 챙겨줄 거야."
+  },
+  "day5_ending_complicit_17": {
+    "text": "*은수 선생님이 뒤에서 지켜보고 있다. 복도 끝의 설화는 말없이 서 있다.*"
+  },
+  "day5_ending_complicit_18": {
+    "text": "*내가 먼저 웃었다.*"
+  },
+  "day5_ending_complicit_subtitle": {
+    "text": "공범 ─ 다음 출석부."
+  },
+  "day5_ending_complicit_title": {
+    "text": ""
+  },
+  "day5_cage_loop": {
+    "text": ""
+  },
+  "day5_xover_server_1": {
+    "text": "*연구소 서버에 접속했다. 낡은 모니터에 파일 목록이 뜬다.*"
+  },
+  "day5_xover_server_2": {
+    "text": "*프로젝트 큐피드(PROJECT CUPID) — 이전 주기 기록:*"
+  },
+  "day5_xover_server_3": {
+    "text": "*> cycle_01.zip  [정상]*"
+  },
+  "day5_xover_server_3_damaged": {
+    "text": "*> cycle_01.zip  [손상됨]*"
+  },
+  "day5_xover_server_4": {
+    "text": "*첨부 파일: CUPID_ENV_PREVIEW*"
+  },
+  "day5_xover_server_preview_choice": {
+    "text": "서버에는 날짜가 다른 세 묶음의 기록이 남아 있었다.",
+    "choices": [
+      "cycle_01.zip — 제1차 주기: 이상 환경 설계도 (PROJECT CUPID)",
+      "cycle_07.log — 제7차 주기: 이설화 및 비상구 사건 기록",
+      "cycle_12.log — 제12차 주기: 사진부 암실 및 #12 폐기 기록",
+      "아카이브 서버 접속 종료"
+    ]
+  },
+  "day5_xover_preview_1": {
+    "text": "*벚꽃.*"
+  },
+  "day5_xover_preview_2": {
+    "text": "*봄바람이 부는 전학 첫날, 새 교복을 입고 교문 앞에 섰다.*"
+  },
+  "day5_xover_preview_3": {
+    "text": "*벚꽃잎이 같은 위치에서 반복 재생된다. 바람 방향만 다르다.*"
+  },
+  "day5_xover_preview_4": {
+    "text": "*화면 오른쪽 아래에 작게: cycle_01*"
+  },
+  "day5_xover_preview_heroine": {
+    "text": "*[CUPID_ENV_PREVIEW]*\n*정서 각인 모델: {cupid_heroine}*\n*순응 반응률: {cupid_compliance}*\n*투여 전 환경 반응성 검사와 M-13 안정화 지표가 일치함.*"
+  },
+  "day5_xover_preview_5": {
+    "text": "*모니터가 꺼졌다.*"
+  },
+  "day5_xover_server_end": {
+    "text": "*파일을 닫았다.*"
+  },
+  "day5_observer_1": {
+    "text": "*크레딧이 끝나고 화면이 완전히 어두워진다.*"
+  },
+  "day5_observer_2": {
+    "text": "*3초.*"
+  },
+  "day5_observer_3": {
+    "text": "*화면 중앙에 텍스트가 한 글자씩 떠오른다.*"
+  },
+  "day5_observer_4": {
+    "text": "에디나 재단 / 네버그라드 연구소(NEVERGRAD RESEARCH INSTITUTE)\n보안 감사: 외부 열람 세션\n대조 대상: #13 관찰 기록"
+  },
+  "day5_observer_5": {
+    "text": "접속 권한: 감사·모니터링\n세션 상태: 접속 유지\n피험자 접촉 권한: 없음"
+  },
+  "day5_observer_6": {
+    "text": "피험자: #13 ({name})\n세션 접속 시간: {play_time}\n\n접촉·개입 집계\n세아 접촉: {route_data}\n유나 접촉 여부: {met_yuna}\n리인 방문: {riin_visits}\n설화 접촉 시도: {seolhwa_attempts}\n증거 확보: {evidence_data}\n최종 응답 기록: {timer_data}"
+  },
+  "day5_observer_7": {
+    "text": "접촉 기록 대조 완료\n행동 패턴 대조 중"
+  },
+  "day5_observer_8": {
+    "text": "대조 기준: 연구 책임자 박은수 / 13회 관찰\n외부 열람 세션: #13 ({name}) / {play_time}\n\n공통 항목: 경고 후 열람 지속, 개입 기록 누적\n유사도: 관찰 지속 패턴 일치\n\n자동 판정: 보류\n세션 종료 요청: 미수신"
+  },
+  "day5_observer_cupid_check": {
+    "text": ""
+  },
+  "day5_observer_cupid_extra": {
+    "text": "교차 참조:\n\nCUPID_ENV_PREVIEW 감지.\n정서 각인: {cupid_heroine}\n순응률: {cupid_compliance}\nM-13 안정화 지표와 일부 일치.\n\n비고:\n관찰자 데이터는 아직 #13 파일에 묶여 있음."
+  },
+  "day5_observer_9": {
+    "text": "*화면이 멈춘다. 5초간.*"
+  },
+  "day5_observer_10": {
+    "text": "*하단에 아주 작게:*"
+  },
+  "day5_observer_11": {
+    "text": "[졸업하시겠습니까?]",
+    "choices": [
+      "예",
+      "아니오"
+    ]
+  },
+  "day5_night_seolhwa_affinity_check": {
+    "text": ""
+  },
+  "day5_night_set_high_seolhwa_affinity": {
+    "text": ""
+  },
+  "day5_ending_true_voice_check": {
+    "text": ""
+  },
+  "day5_ending_true_16_clear_intro": {
+    "text": "*설화가 입을 열자 먹먹하게 깔리던 잡음이 걷혔다. 일곱 번째 계단 뒤편에서 불렀던 목소리가 또렷하게 닿았다.*"
+  },
+  "day5_ending_true_16_clear": {
+    "text": "그렇게 불러준 건 처음이야."
+  },
+  "day5_ending_true_riin_check": {
+    "text": ""
+  },
+  "day5_ending_true_27_riin": {
+    "text": "*기사 아래에는 추가 자료가 실렸다. 함께 빠져나온 리인 선생님이 여섯 주기 분량의 실제 투약 대조표와 원본 차트를 제출했다.*"
+  },
+  "day5_ending_true_27_riin_2": {
+    "text": "*투약 날짜 옆마다 본부 승인 번호가 남아 있었다. 현장 책임자 개인의 일탈로 덮으려던 초기 해명 기사는 반나절 만에 내려갔다.*"
+  },
+  "day5_ending_true_sea_check": {
+    "text": ""
+  },
+  "day5_ending_true_27_sea": {
+    "text": "*시설에서 함께 나온 세아는 외부 보호 조치를 받았다. 며칠 뒤 학교와 떨어진 낮 시간의 상가 거리를 나란히 걸었다. 세아의 손에는 출석부도 학생회실 열쇠도 없었다.*"
+  },
+  "day5_ending_true_27_sea_2": {
+    "text": "완장도 안 차고 누구 뒤를 안 따라가도 되네. 저쪽 길도 가볼까?"
+  },
+  "day5_ending_true_memory_check": {
+    "text": ""
+  },
+  "day5_ending_true_30_memory": {
+    "text": "*구관 계단 뒤편에서 나눴던 말도 끝까지 떠올랐다. 이름 옆에 한 줄을 더 보탰다. ‘다음에는 여기 말고 밖에서 만나.’*"
+  },
+  "day5_ending_escape_riin_check": {
+    "text": ""
+  },
+  "day5_ending_escape_riin": {
+    "text": "*함께 나온 리인 선생님은 재단 측 추적을 피해 거처를 옮겼다. 떠나기 전 짧은 연락을 남겼다. 보건실 바닥 아래 숨겨 둔 원본 차트는 이미 회수당했다고 했다.*"
+  },
+  "day5_ending_escape_sea_check": {
+    "text": ""
+  },
+  "day5_ending_escape_sea": {
+    "text": "*같이 빠져나온 세아는 학교와 떨어진 외부 보호 시설로 옮겨 갔다. 도착했다는 짧은 메시지 아래에 동네 빵집 봉투 사진이 한 장 딸려 왔다.*"
+  },
+  "day5_ending_cage_sea_epilogue_1": {
+    "text": "첫 주가 지나자 교실 달력을 뜯어야 했다. 세아는 새 장을 넘기지 않고 모서리만 잘랐다."
+  },
+  "day5_ending_cage_sea_epilogue_2": {
+    "text": "달력은 신경 쓰지 마. 밖에 걸린 것도 틀렸어."
+  },
+  "day5_ending_cage_sea_epilogue_3": {
+    "text": "창문 너머 나무에서는 잎이 자랐다. 교실 창가에는 철사로 묶은 벚꽃이 계속 걸려 있었다."
+  },
+  "day5_ending_cage_sea_epilogue_4": {
+    "text": "종이 꽃잎 끝에 먼지가 쌓였다. 손을 뻗자 세아가 젖은 수건을 먼저 건넸다."
+  },
+  "day5_ending_cage_sea_epilogue_5": {
+    "text": "내가 닦을게. 너는 손 다치잖아."
+  },
+  "day5_ending_cage_sea_epilogue_6": {
+    "text": "도시락 뚜껑을 열면 익은 정도도 잘린 두께도 어제와 같은 계란말이가 있었다."
+  },
+  "day5_ending_cage_sea_epilogue_7": {
+    "text": "젓가락을 들지 않는 날에는 세아도 먹지 않아 두 도시락이 닫힌 채 저녁까지 남았다."
+  },
+  "day5_ending_cage_sea_epilogue_8": {
+    "text": "한 조각만 먹어. 그다음에는 안 물어볼게."
+  },
+  "day5_ending_cage_sea_epilogue_9": {
+    "text": "한 조각을 먹으면 세아가 젓가락을 들었다. 다음 날에도 같은 부탁이 돌아왔다."
+  },
+  "day5_ending_cage_sea_epilogue_10": {
+    "text": "교실 뒤편 서랍에는 내 공책이 쌓였다. 첫 장마다 날짜를 쓰다가 어느 날부터 날씨만 적었다."
+  },
+  "day5_ending_cage_sea_epilogue_11": {
+    "text": "비라고 적은 날에도 창가 꽃은 젖지 않았다. 세아가 뿌린 향만 조금 진해졌다."
+  },
+  "day5_ending_cage_sea_epilogue_12": {
+    "text": "바깥 운동장에서 졸업식 연습 방송이 들리자 세아가 창문을 닫으러 일어났다."
+  },
+  "day5_ending_cage_sea_inside_choice": {
+    "text": "세아가 창문 손잡이에 손을 얹었다. 내 넥타이는 아직 매지 않은 채였다.",
+    "choices": [
+      "창밖을 본다",
+      "세아의 손을 잡는다"
+    ]
+  },
+  "day5_ending_cage_sea_window_1": {
+    "text": "운동장에 새 학생들이 줄을 섰다. 교문 쪽으로 움직이는 줄 끝에 빈자리가 하나 생겼다."
+  },
+  "day5_ending_cage_sea_window_2": {
+    "text": "내 옆에 선 세아는 창에 비친 얼굴을 보면서도 바깥쪽은 보지 않았다."
+  },
+  "day5_ending_cage_sea_window_3": {
+    "text": "네 자리는 여기야. 저쪽에는 이름도 안 올렸어."
+  },
+  "day5_ending_cage_sea_window_4": {
+    "text": "유리 너머에서 버스 문이 닫혔다. 나는 손바닥을 창에 댄 채 버스가 돌아 나가는 걸 봤다."
+  },
+  "day5_ending_cage_sea_window_5": {
+    "text": "세아는 내 넥타이를 가져와 손에 감고 매듭을 만들기 전에 내가 돌아서길 기다렸다."
+  },
+  "day5_ending_cage_sea_hand_1": {
+    "text": "세아 손은 창문 손잡이보다 차가웠다. 잡자마자 손가락이 내 손 사이로 들어왔다."
+  },
+  "day5_ending_cage_sea_hand_2": {
+    "text": "닫아도 돼?"
+  },
+  "day5_ending_cage_sea_hand_3": {
+    "text": "창문을 보지 않고 고개를 끄덕였다. 바깥 방송이 유리 한 장 너머로 멀어졌다."
+  },
+  "day5_ending_cage_sea_hand_4": {
+    "text": "세아가 내 손을 자기 주머니에 넣었다. 놓으려면 먼저 손가락을 하나씩 펴야 했다."
+  },
+  "day5_ending_cage_sea_hand_5": {
+    "text": "넥타이를 꺼내는 동안에도 한 손은 주머니에 남았다. 세아는 다른 손으로 매듭을 만들었다."
+  },
+  "day5_ending_cage_sea_close_1": {
+    "text": "내일도 늦잠 자도 돼. 내가 먼저 와 있을게."
+  },
+  "day5_ending_cage_sea_close_2": {
+    "text": "달력에서 잘라 낸 숫자들이 휴지통에 쌓였다. 세아는 도시락 뚜껑을 닫고 꽃잎의 먼지를 털었다."
+  },
+  "day5_ending_cage_sea_close_3": {
+    "text": "교실 불이 꺼졌다. 복도 쪽 손잡이는 움직이지 않았고 안쪽 의자만 바닥을 긁었다."
+  },
+  "day5_ending_cage_eunsu_epilogue_1": {
+    "text": "선생님이 교탁 서랍에서 도장을 꺼내 뚜껑을 열고 출석부의 열세 번째 칸에 눌렀다."
+  },
+  "day5_ending_cage_eunsu_epilogue_2": {
+    "text": "종이가 파이도록 눌린 글씨를 읽었다. 졸업 유예, 그 밑의 작은 괄호에는 영구라고 적혀 있었다."
+  },
+  "day5_ending_cage_eunsu_epilogue_3": {
+    "text": "이건 이사회로 안 보내요. 여기 보관하는 장부예요."
+  },
+  "day5_ending_cage_eunsu_epilogue_4": {
+    "text": "선생님이 도장을 닫고 안경도 벗어 도장 옆에 나란히 놓았다."
+  },
+  "day5_ending_cage_eunsu_epilogue_5": {
+    "text": "복도에서 청소 카트가 지나갔다. 선생님은 문 안쪽 잠금장치를 확인한 뒤에야 돌아왔다."
+  },
+  "day5_ending_cage_eunsu_epilogue_6": {
+    "text": "밖에는 폐기했다고 보고했어요. 찾으러 오는 사람은 없을 거예요."
+  },
+  "day5_ending_cage_eunsu_epilogue_7": {
+    "text": "제 이름도요?"
+  },
+  "day5_ending_cage_eunsu_epilogue_8": {
+    "text": "이름은 남겨 뒀어요. 제가 부를 이름까지 지울 필요는 없잖아요."
+  },
+  "day5_ending_cage_eunsu_epilogue_9": {
+    "text": "교탁 위에 은색 밴드가 놓였다. 선생님이 손목을 달라고 손바닥을 폈다."
+  },
+  "day5_ending_cage_eunsu_epilogue_10": {
+    "text": "나는 주머니에서 손을 꺼내지 않았다. 선생님은 내 손 대신 빈 의자를 당겼다."
+  },
+  "day5_ending_cage_eunsu_epilogue_11": {
+    "text": "앉아요. 서서 기다리면 다리 아파요."
+  },
+  "day5_ending_cage_eunsu_epilogue_12": {
+    "text": "의자에 앉자 손목 높이가 교탁과 같아졌다. 밴드 안쪽에 얇은 완충재가 붙어 있었다."
+  },
+  "day5_ending_cage_eunsu_epilogue_13": {
+    "text": "선생님이 천을 대고 손목을 닦았다. 버클이 닫힐 때 작은 금속 소리가 났다."
+  },
+  "day5_ending_cage_eunsu_epilogue_14": {
+    "text": "너무 조이면 말해요. 그건 내가 풀 수 있어요."
+  },
+  "day5_ending_cage_eunsu_epilogue_15": {
+    "text": "버클 아래로 손가락 하나가 들어갔다. 그 틈을 확인한 선생님이 내 소매를 내려 줬다."
+  },
+  "day5_ending_cage_eunsu_epilogue_16": {
+    "text": "창문에 석양이 길게 비쳤다. 출석부의 다른 칸들은 이미 검은 선으로 지워져 있었다."
+  },
+  "day5_ending_cage_eunsu_epilogue_17": {
+    "text": "내 칸 옆에는 선생님 이름이 있었다. 담당자라는 인쇄 글자 위에 자로 두 번 밑줄을 그었다."
+  },
+  "day5_ending_cage_eunsu_epilogue_18": {
+    "text": "내일도 여기서 출석 부를 거예요. 대답만 해 줘요."
+  },
+  "day5_ending_cage_eunsu_epilogue_19": {
+    "text": "다른 학생은요?"
+  },
+  "day5_ending_cage_eunsu_epilogue_20": {
+    "text": "다른 교실에 있어요. 이 교실에는 안 들어와요."
+  },
+  "day5_ending_cage_eunsu_epilogue_21": {
+    "text": "교탁 위 안경 너머로 빈 책상들이 보였다. 선생님은 그중 두 개를 창가에 붙였다."
+  },
+  "day5_ending_cage_eunsu_epilogue_22": {
+    "text": "내 책과 선생님 책이 같은 쪽을 향했다. 나는 문이 등 뒤에 오도록 앉았다."
+  },
+  "day5_ending_cage_eunsu_epilogue_23": {
+    "text": "자리 바꾸고 싶으면 말해요. 창가도 괜찮고, 교탁 바로 앞도 괜찮아요."
+  },
+  "day5_ending_cage_eunsu_epilogue_24": {
+    "text": "손목 밴드는 책상에 닿을 때마다 소리를 냈다. 선생님은 그쪽에 작은 천을 접어 놓았다."
+  },
+  "day5_ending_cage_eunsu_epilogue_25": {
+    "text": "밖에서 마지막 종이 울리자 선생님은 출석부를 펴고 열세 번째 줄에 펜을 댔다."
+  },
+  "day5_ending_cage_eunsu_epilogue_26": {
+    "text": "내 이름이 불렸다. 대답하지 않는 동안 펜 끝이 종이 위에 계속 머물렀다."
+  },
+  "day5_ending_cage_eunsu_epilogue_27": {
+    "text": "선생님은 재촉하지 않았다. 교탁 위 도장 뚜껑만 손끝으로 반듯하게 돌려놓았다."
+  },
+  "day5_ending_escape_epilogue_1": {
+    "text": "첫 버스는 터미널 뒤편에서 출발했다. 유나는 표를 사는 동안 카메라를 코트 안으로 넣었다."
+  },
+  "day5_ending_escape_epilogue_2": {
+    "text": "좌석에 앉자 젖은 신발에서 물이 떨어졌다. 둘 다 발을 바닥에 붙이지 못한 채 한참 있었다."
+  },
+  "day5_ending_escape_epilogue_3": {
+    "text": "운전사는 표를 걷어 가며 학교 이름도 우리 이름도 묻지 않았다."
+  },
+  "day5_ending_escape_epilogue_4": {
+    "text": "버스가 산길을 내려가자 휴대폰 신호가 돌아왔다. 유나는 켜지는 화면을 손바닥으로 가렸다."
+  },
+  "day5_ending_escape_epilogue_5": {
+    "text": "앱은 열지 마. 끄는 것도 지금은 하지 마."
+  },
+  "day5_ending_escape_epilogue_6": {
+    "text": "첫 터미널에서 내리지 않았다. 사람들이 바뀌고 빈 좌석이 늘어날 때까지 차 안에 남았다."
+  },
+  "day5_ending_escape_epilogue_7": {
+    "text": "두 번째 정류장 옆에는 작은 숙박업소가 있었다. 간판 불이 꺼진 쪽으로 들어갔다."
+  },
+  "day5_ending_escape_epilogue_8": {
+    "text": "카운터 직원이 신분증을 달라고 했다. 내 번호를 조회하던 손이 두 번 멈췄다."
+  },
+  "day5_ending_escape_epilogue_9": {
+    "text": "등록된 정보가 없다고 했다. 유나의 학생증은 이미 만료된 카드로 나왔다."
+  },
+  "day5_ending_escape_epilogue_10": {
+    "text": "직원은 다시 입력하라고 종이를 내밀었다. 같은 숫자를 적는 동안 유나가 내 팔을 잡았다."
+  },
+  "day5_ending_escape_epilogue_11": {
+    "text": "그냥 나가자. 여기 말고 다른 데 가면 돼."
+  },
+  "day5_ending_escape_epilogue_12": {
+    "text": "문밖에서 종이를 찢고 이름이 적힌 부분은 작게 접어 주머니에 넣었다."
+  },
+  "day5_ending_escape_epilogue_13": {
+    "text": "우리는 역 뒤편 옥탑방을 빌렸다. 집주인은 방값과 보일러 켜는 법만 말해 줬다."
+  },
+  "day5_ending_escape_epilogue_14": {
+    "text": "빨랫줄에 교복을 걸자 물방울이 양동이에 떨어졌다. 유나가 내 소매를 자기 옷과 떨어뜨려 걸었다."
+  },
+  "day5_ending_escape_epilogue_15": {
+    "text": "학교에서 가져온 증거는 부족했다. 사진 속 날짜만으로 사람을 찾으러 올 수는 없었다."
+  },
+  "day5_ending_escape_epilogue_16": {
+    "text": "전화할 번호를 적다가 지웠다. 누구에게 설명하든 내 이름부터 확인할 것이었다."
+  },
+  "day5_ending_escape_epilogue_17": {
+    "text": "오늘은 밥부터 먹자. 내일 설명해도 되는 건 내일 하고."
+  },
+  "day5_ending_escape_epilogue_18": {
+    "text": "편의점 봉투에서 삼각김밥 두 개가 나왔다. 고르느라 오래 서 있었는지 밥이 차가웠다."
+  },
+  "day5_ending_escape_epilogue_19": {
+    "text": "유나는 내가 먼저 고를 때까지 봉투를 벌리고 있었다. 나는 어느 쪽이든 괜찮다는 말을 하지 않았다."
+  },
+  "day5_ending_escape_epilogue_20": {
+    "text": "빈 포장지를 접어 버리고 창문을 열었다. 맞은편 집에서는 학교 방송 대신 설거지 소리가 났다."
+  },
+  "day5_ending_escape_epilogue_21": {
+    "text": "유나가 카메라에서 남은 필름 수를 확인하니 아직 두 장을 찍을 수 있었다."
+  },
+  "day5_ending_escape_epilogue_22": {
+    "text": "학교 말고 다른 데서 찍은 사진은 한 장도 없더라."
+  },
+  "day5_ending_escape_epilogue_23": {
+    "text": "나는 창가에 서서 유나가 어디를 보라고 할 때까지 기다리지 않고 렌즈를 봤다."
+  },
+  "day5_ending_escape_epilogue_24": {
+    "text": "유나가 카메라를 든 채 내 대답을 기다렸다.",
+    "choices": [
+      "렌즈를 보고 선다",
+      "유나에게 먼저 찍으라고 한다",
+      "창문 옆에 나란히 선다"
+    ]
+  },
+  "day5_ending_escape_epilogue_25": {
+    "text": "그대로 있어. 다 나온다."
+  },
+  "day5_ending_escape_epilogue_26": {
+    "text": "두 번째 셔터 소리가 방 안에서 짧게 울렸다. 유나는 카메라를 받으며 처음으로 웃었다."
+  },
+  "day5_ending_escape_epilogue_27": {
+    "text": "사진 뒷면에 쓸 이름을 정했다. 내 것은 내가 썼고 유나 것은 유나가 골랐다."
+  },
+  "day5_ending_escape_epilogue_28": {
+    "text": "새 이름이 서툴러 두 번 불러 봤다. 유나는 첫 번째에는 못 듣고 두 번째에 돌아봤다."
+  },
+  "day5_ending_escape_epilogue_29": {
+    "text": "주민등록 칸도 학적 칸도 없는 종이였다. 두 이름과 오늘 날짜만 나란히 놓였다."
+  },
+  "day5_ending_escape_epilogue_30": {
+    "text": "필름을 맡길 곳을 찾으러 내려갔다. 유나는 문을 잠그고 열쇠를 내 손에 한 번 쥐여 줬다."
+  },
+  "day5_ending_escape_riin_after_1": {
+    "text": "가방 바닥에 현금 봉투가 끼어 있었다. 보건실에서 건넨 수건을 빼자 봉투가 함께 나왔다."
+  },
+  "day5_ending_escape_riin_after_2": {
+    "text": "안에는 접힌 지폐와 처방전 사본이 있었다. 약 이름 옆에 복용 중단이라는 글씨가 붙었다."
+  },
+  "day5_ending_escape_riin_after_3": {
+    "text": "리인의 서명은 없었다. 대신 근처 응급실 주소가 종이 끝에 적혀 있었다."
+  },
+  "day5_ending_escape_riin_after_4": {
+    "text": "투약 날짜를 옮겨 적은 줄이 열세 개였다. 마지막 줄에는 오늘 시간을 분 단위로 써 뒀다."
+  },
+  "day5_ending_escape_riin_after_5": {
+    "text": "유나가 종이를 읽고 내 팔을 봤다. 나는 소매를 내려 주사 자국을 가렸다."
+  },
+  "day5_ending_escape_riin_after_6": {
+    "text": "봉투 안쪽에는 약 봉투를 버리지 말라는 짧은 메모가 더 있었다."
+  },
+  "day5_ending_escape_riin_after_7": {
+    "text": "병원에서 먼저 보여 줄 종이를 맨 앞에 넣었다. 현금은 유나와 반씩 나눠 다른 주머니에 뒀다."
+  },
+  "day5_ending_escape_riin_after_8": {
+    "text": "리인에게 연락하지는 않고 종이 모서리에 손자국만 남긴 채 가방을 닫았다."
+  },
+  "day5_ending_escape_riin_after_9": {
+    "text": "기다릴 때 쓰라던 수건은 버스 좌석에 깔았다. 젖은 옷에서 물이 더 이상 떨어지지 않았다."
+  },
+  "day5_ending_escape_sea_after_1": {
+    "text": "무전기에서 세아의 목소리가 나왔다. 우리 발소리가 나는 쪽과 반대 복도 번호를 불렀다."
+  },
+  "day5_ending_escape_sea_after_2": {
+    "text": "봤어요. 계단 위로 올라갔어요. 제가 따라갈게요."
+  },
+  "day5_ending_escape_sea_after_3": {
+    "text": "유나가 내 팔을 당기더니 무전기 소리를 줄이지 않고 자기 가방 안으로 밀었다."
+  },
+  "day5_ending_escape_sea_after_4": {
+    "text": "달리는 발소리가 멀어졌다. 세아는 따라오라는 말을 계속하며 반대쪽 문을 열었다."
+  },
+  "day5_ending_escape_sea_after_5": {
+    "text": "나는 걸음을 멈추지 않았다. 뒤돌아보면 문 닫히기 전에 세아와 눈이 마주칠 것 같았다."
+  },
+  "day5_ending_escape_sea_after_6": {
+    "text": "마지막 무전에는 이름이 없었다. 문 열렸으니까 빨리 가라는 말만 짧게 들렸다."
+  },
+  "day5_ending_escape_sea_after_7": {
+    "text": "우리 앞의 비상구 손잡이가 내려가 있었다. 문에 끼운 작은 고무 쐐기가 끝까지 버텼다."
+  },
+  "day5_ending_escape_sea_after_8": {
+    "text": "바깥으로 나온 뒤 쐐기를 뺐다. 세아가 도시락 뚜껑에 쓰던 분홍 고무줄이 감겨 있었다."
+  },
+  "day5_ending_escape_sea_after_9": {
+    "text": "주머니에 쐐기를 넣고 무전기는 빗물 웅덩이 밖에 내려놓은 뒤 유나를 따라갔다."
+  },
+  "day5_ending_resist_epilogue_1": {
+    "text": "국도변에서 첫 트럭을 보냈다. 선생님이 아직 준비가 안 됐다며 서류 가방을 무릎에 놓았다."
+  },
+  "day5_ending_resist_epilogue_2": {
+    "text": "종이 모서리가 물에 젖어 서로 붙자 선생님은 손톱으로 한 장씩 떼어 빈 봉투에 넣었다."
+  },
+  "day5_ending_resist_epilogue_3": {
+    "text": "어느 게 원본인지 바뀌면 안 돼요. 내 서명 있는 쪽을 앞에 두고요."
+  },
+  "day5_ending_resist_epilogue_4": {
+    "text": "버스 정류장 지붕 아래로 자리를 옮겼다. 선생님이 안경을 벗자 눈가에 빗물이 고였다."
+  },
+  "day5_ending_resist_epilogue_5": {
+    "text": "울고 계세요?"
+  },
+  "day5_ending_resist_epilogue_6": {
+    "text": "선생님은 소매로 닦다가 손을 내렸다. 젖은 종이에 물을 떨어뜨리지 않으려고 얼굴을 돌렸다."
+  },
+  "day5_ending_resist_epilogue_7": {
+    "text": "세 번째였어요. 그때 네가 나한테 밥 먹었냐고 물었어요."
+  },
+  "day5_ending_resist_epilogue_8": {
+    "text": "기억에 없는 말이었다. 선생님이 나를 보자 모른다고 고개를 저었다."
+  },
+  "day5_ending_resist_epilogue_9": {
+    "text": "알아요. 너는 기억 안 나죠. 그 말을 나만 갖고 있었어요."
+  },
+  "day5_ending_resist_epilogue_10": {
+    "text": "가방 위에서 선생님의 손이 떨렸다. 서류를 대신 잡자 손바닥을 바닥에 대고 앉았다."
+  },
+  "day5_ending_resist_epilogue_11": {
+    "text": "그래서 다음날도 보고 싶었어요. 다음 학기도, 다음에도."
+  },
+  "day5_ending_resist_epilogue_12": {
+    "text": "그래서 계속하셨어요?"
+  },
+  "day5_ending_resist_epilogue_13": {
+    "text": "선생님은 대답하지 못하고 고개를 숙인 채 안경 다리를 접었다 폈다."
+  },
+  "day5_ending_resist_epilogue_14": {
+    "text": "그게 이유가 되면 안 됐어요. 내가 쓰는 보고서에는 넣을 수 없는 말이었어요."
+  },
+  "day5_ending_resist_epilogue_15": {
+    "text": "나는 그 문장을 대신 써 주지 않았다. 선생님 이름 옆에 서명할 칸을 가리켰다."
+  },
+  "day5_ending_resist_epilogue_16": {
+    "text": "이번에는 내가 한 걸 전부 쓸게요. 네가 나를 위해 덜 말할 필요 없어요."
+  },
+  "day5_ending_resist_epilogue_17": {
+    "text": "선생님이 차가운 버스 정류장 의자에 종이를 받치고 첫 줄에 자기 이름부터 적었다."
+  },
+  "day5_ending_resist_epilogue_18": {
+    "text": "지운 자국을 가리지 않고 내가 읽을 수 있도록 종이를 돌려 그대로 내밀었다."
+  },
+  "day5_ending_resist_epilogue_19": {
+    "text": "멀리서 버스가 왔다. 선생님은 그제야 일어났지만 내가 먼저 타라고 길을 비켰다."
+  },
+  "day5_ending_resist_epilogue_20": {
+    "text": "나는 서류 가방을 들고 계단을 올랐다. 선생님은 운전사에게 행선지를 확인한 뒤 따라왔다."
+  },
+  "day5_ending_resist_epilogue_21": {
+    "text": "우리는 나란히 앉지 않았다. 복도를 사이에 두고 같은 정류장 안내를 들었다."
+  },
+  "day5_ending_resist_epilogue_22": {
+    "text": "선생님이 가방 속 휴대폰을 꺼내 학교로 걸려 온 전화를 끄고 신고 번호를 직접 눌렀다."
+  },
+  "day5_ending_resist_epilogue_23": {
+    "text": "통화가 연결되자 연구 책임자라고 말했다. 담임교사라는 말은 뒤에 붙었다."
+  },
+  "day5_ending_resist_epilogue_24": {
+    "text": "나는 창밖을 보며 왼손을 폈다. 종이 가방 손잡이 자국이 손바닥에 남아 있었다."
+  },
+  "day5_ending_resist_epilogue_25": {
+    "text": "버스가 산을 벗어날 때도 선생님은 통화를 끊지 않은 채 자신의 주소를 말하고 있었다."
+  },
+  "day5_ending_resist_epilogue_26": {
+    "text": "다음 정류장 이름은 처음 듣는 이름이었다. 나는 안내 방송을 끝까지 들었다."
+  },
+  "day5_ending_forget_epilogue_1": {
+    "text": "새 교복 주머니에 들어 있던 버스표는 언제 넣었는지 몰라 날짜부터 확인했다."
+  },
+  "day5_ending_forget_epilogue_2": {
+    "text": "오늘 날짜였다. 나는 구겨진 표를 펴고 교문으로 들어갔다."
+  },
+  "day5_ending_forget_epilogue_3": {
+    "text": "벚꽃 아래에서 손을 흔든 학생 하나가 내 쪽으로 곧장 걸어왔다. 처음 보는 얼굴이었다."
+  },
+  "day5_ending_forget_epilogue_4": {
+    "text": "처음이지? 교실 같이 가자. 나도 그쪽이야."
+  },
+  "day5_ending_forget_epilogue_5": {
+    "text": "학생의 손이 왼쪽으로 뻗자 손바닥을 주머니 안에서 쥐었다. 손톱 자국이 금방 지워졌다."
+  },
+  "day5_ending_forget_epilogue_6": {
+    "text": "신발 끈이 풀렸다고 둘러대고 멈췄다. 세아는 내 앞에서 기다리며 같은 쪽 끈을 봤다."
+  },
+  "day5_ending_forget_epilogue_7": {
+    "text": "복도 창가에는 카메라를 든 학생이 있었다. 내가 지나가자 렌즈 캡을 닫았다."
+  },
+  "day5_ending_forget_epilogue_8": {
+    "text": "사진은 나중에 찍어도 돼요. 지금 안 찍어도."
+  },
+  "day5_ending_forget_epilogue_9": {
+    "text": "나는 부탁한 적이 없다고 웃었다. 그 학생은 카메라를 내리고 먼저 고개를 돌렸다."
+  },
+  "day5_ending_forget_epilogue_10": {
+    "text": "보건실 앞에서 선생님이 나왔다. 컵을 들고 있었는데 내 얼굴을 보고 손을 내렸다."
+  },
+  "day5_ending_forget_epilogue_11": {
+    "text": "아침은 먹었어? 안 먹었으면 차 말고 물부터."
+  },
+  "day5_ending_forget_epilogue_12": {
+    "text": "괜찮다고 대답하고 걸었다. 입 안에서 아직 마시지 않은 차의 맛이 잠깐 났다."
+  },
+  "day5_ending_forget_epilogue_13": {
+    "text": "문 앞의 담임 선생님이 출석부를 펴고 내 이름을 묻기 전에 자리를 가리켰다."
+  },
+  "day5_ending_forget_epilogue_14": {
+    "text": "창가 세 번째예요. 가방은 책상 안에 넣으면 돼요."
+  },
+  "day5_ending_forget_epilogue_15": {
+    "text": "책상 안쪽을 더듬자 손끝에 파인 선이 걸렸다. 왼손으로 다시 만져 모양을 찾았다."
+  },
+  "day5_ending_forget_epilogue_16": {
+    "text": "도망쳐. 손가락이 글자 세 개를 따라 움직였다. 나는 손을 꺼내 먼지를 털었다."
+  },
+  "day5_ending_forget_epilogue_17": {
+    "text": "누가 장난쳐 놨네."
+  },
+  "day5_ending_forget_epilogue_18": {
+    "text": "뒤편에서 누군가 의자를 끌었다. 돌아보니 빈 책상 하나가 벽 쪽으로 붙어 있었다."
+  },
+  "day5_ending_forget_epilogue_19": {
+    "text": "세아가 새 볼펜을 건넸다. 포장을 뜯기도 전에 엄지가 고무 그립의 홈에 들어갔다."
+  },
+  "day5_ending_forget_epilogue_20": {
+    "text": "손을 바꿔 쥐고 노트에 이름을 썼다. 지우개 가루가 남아 있어 손바닥으로 쓸었다."
+  },
+  "day5_ending_forget_epilogue_21": {
+    "text": "교실 시계가 한 칸 움직였다. 선생님이 출석을 부르는 동안 나는 첫 장에 날짜를 적었다."
+  },
+  "day5_ending_forget_epilogue_22": {
+    "text": "숫자 끝이 위로 튀었다. 선생님의 펜 끝도 같은 자리에서 잠깐 멎었다."
+  },
+  "day5_ending_forget_epilogue_23": {
+    "text": "창밖 나무에서 꽃잎이 떨어졌다. 내 책상에는 닿지 않았는데 손으로 책을 덮었다."
+  },
+  "day5_ending_forget_epilogue_24": {
+    "text": "그 행동이 우스워 혼자 웃자 세아도 같이 웃고 교과서를 펴 줬다."
+  },
+  "day5_ending_forget_epilogue_25": {
+    "text": "책상 밑의 홈에는 아직 먼지가 남았다. 왼손 손톱 끝에 끼인 것만 쉬는 시간까지 지워지지 않았다."
+  },
+  "day5_ending_ghost_epilogue_1": {
+    "text": "비상계단 난간에 손자국이 두 개 남았다. 설화가 잡은 쪽에는 물기가 없었다."
+  },
+  "day5_ending_ghost_epilogue_2": {
+    "text": "내려가. 발밑부터 봐. 여기 마지막 칸이 짧아."
+  },
+  "day5_ending_ghost_epilogue_3": {
+    "text": "발을 내리며 뒤돌아보니 설화의 신발 끝이 계단 모서리와 조금 겹쳐 보였다."
+  },
+  "day5_ending_ghost_epilogue_4": {
+    "text": "같이 내려오면 되잖아."
+  },
+  "day5_ending_ghost_epilogue_5": {
+    "text": "설화가 한 계단을 내려오자 난간을 잡은 손끝부터 배경의 페인트 색이 비쳤다."
+  },
+  "day5_ending_ghost_epilogue_6": {
+    "text": "나 여기서부터는 못 가. 네가 문 열었을 때 알았어."
+  },
+  "day5_ending_ghost_epilogue_7": {
+    "text": "손을 뻗자 설화는 피하지 않았다. 손가락을 맞잡으려 했지만 난간의 찬 금속만 닿았다."
+  },
+  "day5_ending_ghost_epilogue_8": {
+    "text": "괜찮다는 말은 하지 마. 네가 괜찮을 일이 아니니까."
+  },
+  "day5_ending_ghost_epilogue_9": {
+    "text": "나는 입을 다물고 왼손을 폈고 설화는 손바닥의 선을 끝까지 내려다봤다."
+  },
+  "day5_ending_ghost_epilogue_10": {
+    "text": "이번에는 내가 밀었어. 밖에 나가서는 네 다리로 걸어."
+  },
+  "day5_ending_ghost_epilogue_11": {
+    "text": "계단 아래에서 바람이 올라왔다. 설화의 머리카락 끝이 밝아졌다가 난간 뒤로 사라졌다."
+  },
+  "day5_ending_ghost_epilogue_12": {
+    "text": "이름은 기억할게."
+  },
+  "day5_ending_ghost_epilogue_13": {
+    "text": "적어. 기억하는 건 네가 너무 많이 해 봤잖아."
+  },
+  "day5_ending_ghost_epilogue_14": {
+    "text": "설화가 웃었다. 얼굴보다 문 옆의 하얀 벽이 먼저 보이기 시작했다."
+  },
+  "day5_ending_ghost_epilogue_15": {
+    "text": "눈을 감으면 마지막 표정을 다시 틀리게 기억할 것 같아 고개를 숙이지 않았다."
+  },
+  "day5_ending_ghost_epilogue_16": {
+    "text": "비상구를 나오자 새벽 바닥이 젖어 있었다. 내 그림자 하나가 계단 밑까지 이어졌다."
+  },
+  "day5_ending_ghost_epilogue_17": {
+    "text": "첫 가게가 문을 열 때까지 걸었다. 주인이 의자를 내줬지만 나는 노트를 먼저 샀다."
+  },
+  "day5_ending_ghost_epilogue_18": {
+    "text": "왼손으로 표지를 넘기니 새 종이가 손바닥에 달라붙어 한 장을 다시 떼었다."
+  },
+  "day5_ending_ghost_epilogue_19": {
+    "text": "이설화. 세 글자를 쓰는 동안 펜촉이 두 번 멎었다."
+  },
+  "day5_ending_ghost_epilogue_20": {
+    "text": "다음 줄에 일곱 번째라고 적고 그 밑에는 내가 직접 본 것과 들은 것을 나눠 썼다."
+  },
+  "day5_ending_ghost_epilogue_21": {
+    "text": "펜을 오른손으로 옮기지 않았다. 손목이 굳어 글씨가 기울어도 그대로 뒀다."
+  },
+  "day5_ending_ghost_epilogue_22": {
+    "text": "가게 밖에서 버스가 멈춰 문 열리는 소리가 나자 노트를 덮었다."
+  },
+  "day5_ending_ghost_epilogue_23": {
+    "text": "기사에게 목적지를 물었다. 알아듣지 못해 한 번 더 물어본 뒤에야 표를 샀다."
+  },
+  "day5_ending_ghost_epilogue_24": {
+    "text": "자리에 앉아 창문을 조금 열자 왼쪽 귀로 바람 소리가 들어왔다."
+  },
+  "day5_ending_ghost_epilogue_25": {
+    "text": "이번에는 다른 목소리가 섞이지 않았다. 나는 노트가 든 주머니에 손을 얹었다."
+  },
+  "day5_ending_complicit_epilogue_1": {
+    "text": "서명 패드에서 펜을 떼자 새 카드가 나왔다. 사진 아래에는 부책임자와 #13이 적혀 있었다."
+  },
+  "day5_ending_complicit_epilogue_2": {
+    "text": "계단에서는 목에 걸어요. 문이 카드 위치를 읽어야 열려요."
+  },
+  "day5_ending_complicit_epilogue_3": {
+    "text": "선생님이 줄 길이를 맞춰 줬다. 손목 밴드와 달리 카드는 내가 혼자 벗을 수 있었다."
+  },
+  "day5_ending_complicit_epilogue_4": {
+    "text": "관제실 문이 열리자 벽면의 모니터가 한 번에 켜져 교실과 복도와 보건실을 비췄다."
+  },
+  "day5_ending_complicit_epilogue_5": {
+    "text": "지하실 화면에서 유나가 고개를 들었다. 카메라를 찾는 시선이 내 쪽으로 왔다."
+  },
+  "day5_ending_complicit_epilogue_6": {
+    "text": "세아는 교실에서 도시락 뚜껑을 닫고 있었다. 남은 반찬을 담은 칸은 손으로 가렸다."
+  },
+  "day5_ending_complicit_epilogue_7": {
+    "text": "보건실의 빈 트레이 앞에 앉아 있던 리인은 카메라가 돌아가자 가운 주머니에서 손을 뺐다."
+  },
+  "day5_ending_complicit_epilogue_8": {
+    "text": "여기서는 소리도 들을 수 있어요. 켜려면 이 버튼이고요."
+  },
+  "day5_ending_complicit_epilogue_9": {
+    "text": "버튼을 누르자 의자 다리 소리가 스피커에서 났다. 유나가 화면 밖으로 자리를 옮겼다."
+  },
+  "day5_ending_complicit_epilogue_10": {
+    "text": "선생님이 내 어깨에 손을 얹었다. 모니터 가장자리의 내 얼굴은 새 카드 사진과 같은 각도였다."
+  },
+  "day5_ending_complicit_epilogue_11": {
+    "text": "다음 일정은 같이 확인해요. 승인 칸은 네 쪽에도 생겼어요."
+  },
+  "day5_ending_complicit_epilogue_12": {
+    "text": "투약 계획표가 열렸다. 마지막 승인자의 이름은 아직 빈칸이었다."
+  },
+  "day5_ending_complicit_control_choice": {
+    "text": "농도 조절 막대 아래에 승인 버튼이 있었다. 내 카드가 리더기에 꽂혀 있었다.",
+    "choices": [
+      "투약 농도를 낮추고 승인한다",
+      "기존 농도를 유지하고 승인한다",
+      "농도를 높이고 승인한다"
+    ]
+  },
+  "day5_ending_complicit_low_1": {
+    "text": "막대를 왼쪽으로 옮겼다. 투약량은 줄었지만 투입 예정자 숫자는 바뀌지 않았다."
+  },
+  "day5_ending_complicit_low_2": {
+    "text": "줄인 이유도 적어요. 다음 사람이 다시 늘리지 않게."
+  },
+  "day5_ending_complicit_low_3": {
+    "text": "사유 칸에 손상을 줄이기 위해서라고 쓰자 선생님이 문장을 읽고 저장을 눌렀다."
+  },
+  "day5_ending_complicit_low_4": {
+    "text": "보건실 화면에 새 지시가 떴다. 리인은 종이를 읽은 뒤 카메라 쪽을 한 번 봤다."
+  },
+  "day5_ending_complicit_low_5": {
+    "text": "나는 소리를 껐다. 승인 기록의 첫 줄에는 여전히 내 이름이 남았다."
+  },
+  "day5_ending_complicit_same_1": {
+    "text": "숫자를 바꾸지 않고 승인했다. 어제 쓰던 양이 오늘도 그대로 넘어갔다."
+  },
+  "day5_ending_complicit_same_2": {
+    "text": "유지가 제일 간단하죠. 바꾸면 설명할 항목이 늘어나니까."
+  },
+  "day5_ending_complicit_same_3": {
+    "text": "선생님이 내 옆 모니터에 오늘 시간표를 띄웠다. 빈칸에는 다른 학생 이름이 들어갔다."
+  },
+  "day5_ending_complicit_same_4": {
+    "text": "보건실의 리인이 앰플을 세 개 골랐다. 나는 숫자가 맞는지만 확인했다."
+  },
+  "day5_ending_complicit_same_5": {
+    "text": "종이를 넘기려다 손을 멈췄다. 방금 승인한 페이지는 이미 읽기 전용으로 바뀌었다."
+  },
+  "day5_ending_complicit_high_1": {
+    "text": "막대를 오른쪽으로 옮기자 예상 회복 시간이 늘어났고 경고 표시가 하나 붙었다."
+  },
+  "day5_ending_complicit_high_2": {
+    "text": "선생님은 내 손을 막지 않았다. 사유 칸을 비워 두면 저장할 수 없다고만 말했다."
+  },
+  "day5_ending_complicit_high_3": {
+    "text": "기억 잔존을 줄인다고 썼다. 예전 내 보고서에서 읽었던 표현이었다."
+  },
+  "day5_ending_complicit_high_4": {
+    "text": "보건실 화면에서 리인이 고개를 저었다. 소리를 켜자 안 된다는 말이 짧게 나왔다."
+  },
+  "day5_ending_complicit_high_5": {
+    "text": "내가 확인 버튼을 누르자 리인의 목소리가 끊기고 다음 일정이 화면을 덮었다."
+  },
+  "day5_ending_complicit_close_1": {
+    "text": "승인 문서가 출력됐다. 선생님이 내 서명 칸을 확인하고 빈 의자를 옆으로 당겼다."
+  },
+  "day5_ending_complicit_close_2": {
+    "text": "수고했어요. 다음 보고는 네가 먼저 읽어 봐요."
+  },
+  "day5_ending_complicit_close_3": {
+    "text": "벽시계의 초침과 화면 속 시계가 한 칸씩 함께 움직였다. 나는 두 시계가 어긋나는지만 봤다."
+  },
+  "day5_ending_complicit_close_4": {
+    "text": "새 카드를 목에 걸자 모니터에 비친 줄이 넥타이와 나란히 내려왔다."
+  },
+  "day5_ending_complicit_close_5": {
+    "text": "유나가 화면 아래에서 입을 열었다. 나는 음량을 올리지 않고 다음 카메라를 눌렀다."
+  },
+  "day5_archive_cycle07_1": {
+    "text": "기록의 첫 장에는 김태호라는 이름이 있었다. 얼굴 사진의 왼쪽 눈썹이 지금의 나와 같았다."
+  },
+  "day5_archive_cycle07_2": {
+    "text": "복원된 녹화 화면 아래로 제7차 주기라는 표시가 떴다. 나는 그 안에서 왼손으로 가방끈을 쥐고 있었다."
+  },
+  "day5_archive_cycle07_3": {
+    "text": "설화는 살아 있었다. 복도 등을 지나칠 때마다 머리카락의 은빛이 어깨 위에서 움직였다."
+  },
+  "day5_archive_cycle07_4": {
+    "text": "태호야. 문 닫히기 전에 들어와. 여기 경첩 소리 커."
+  },
+  "day5_archive_cycle07_5": {
+    "text": "자료실 문을 잡아 주자 설화가 먼저 안으로 들어갔다. 신발을 벗어 발소리를 줄였다."
+  },
+  "day5_archive_cycle07_6": {
+    "text": "창문은 높은 곳에 하나 있었다. 빗물이 방충망을 때려 종이에 젖은 냄새가 났다."
+  },
+  "day5_archive_cycle07_7": {
+    "text": "나는 문고리에 접은 수건을 끼웠다. 설화가 주머니에서 작은 손전등을 꺼냈다."
+  },
+  "day5_archive_cycle07_8": {
+    "text": "기록함은 왼쪽부터. 오른쪽은 이번 학기 출석부야."
+  },
+  "day5_archive_cycle07_9": {
+    "text": "어떻게 알아?"
+  },
+  "day5_archive_cycle07_10": {
+    "text": "어제 청소할 때 봤어. 읽은 건 오늘이 처음이고."
+  },
+  "day5_archive_cycle07_11": {
+    "text": "책장 아래쪽에서 철제 서랍을 당겼지만 종이 뭉치가 걸려 끝까지 열리지 않았다."
+  },
+  "day5_archive_cycle07_12": {
+    "text": "설화가 손전등을 입에 물고 종이를 눌렀다. 나는 두 손으로 서랍을 조금 들어 올렸다."
+  },
+  "day5_archive_cycle07_13": {
+    "text": "맨 위 봉투에는 투입이라는 말이 찍혀 있었다. 학교 서류에서 쓸 말은 아니었다."
+  },
+  "day5_archive_cycle07_14": {
+    "text": "사진을 꺼내자 내 얼굴이 나왔다. 이름은 김태호가 아니었고 입학 날짜도 달랐다."
+  },
+  "day5_archive_cycle07_15": {
+    "text": "다음 봉투도 같은 얼굴이었다. 이번에는 머리가 짧았고 어깨에 번호판을 대고 있었다."
+  },
+  "day5_archive_cycle07_16": {
+    "text": "설화가 손전등을 내려놓자 빛이 천장으로 향하며 둘의 그림자가 벽에 길게 붙었다."
+  },
+  "day5_archive_cycle07_17": {
+    "text": "장난으로 만든 거면 좋겠다. 그런데 종이가 너무 많아."
+  },
+  "day5_archive_cycle07_18": {
+    "text": "사진 여섯 장을 나란히 놓았다. 마지막 칸만 비어 있었다. 그 옆에 내 현재 이름이 적혀 있었다."
+  },
+  "day5_archive_cycle07_19": {
+    "text": "내가 일곱 번째야?"
+  },
+  "day5_archive_cycle07_20": {
+    "text": "설화는 대답 대신 현재 봉투를 뒤집었다. 뒷면에 이번 주 날짜가 적혀 있었다."
+  },
+  "day5_archive_cycle07_21": {
+    "text": "기억 확인, 적응 관찰, 재투입. 항목마다 서명이 있고 날짜가 끊기지 않았다."
+  },
+  "day5_archive_cycle07_22": {
+    "text": "학교를 옮긴 기억을 말하려다 입을 다물었다. 버스를 어디서 탔는지 떠오르지 않았다."
+  },
+  "day5_archive_cycle07_23": {
+    "text": "설화가 내 공책을 꺼내 앞장을 펴고 내가 적은 주소 옆에 작은 물음표를 붙였다."
+  },
+  "day5_archive_cycle07_24": {
+    "text": "지금 답 만들지 마. 기억나는 것만 말해."
+  },
+  "day5_archive_cycle07_25": {
+    "text": "나는 주소를 끝까지 읽지 못했다. 설화는 물음표를 지우지 않고 공책을 돌려줬다."
+  },
+  "day5_archive_cycle07_26": {
+    "text": "복도 스피커가 켜졌다. 자료실 문 앞에 있던 수건이 작은 바람에 움직였다."
+  },
+  "day5_archive_cycle07_27": {
+    "text": "구관 정기 점검입니다. 남아 있는 학생은 본관으로 이동하세요."
+  },
+  "day5_archive_cycle07_28": {
+    "text": "설화가 시계를 봤다. 원래 점검 시간보다 이십 분 일렀다."
+  },
+  "day5_archive_cycle07_29": {
+    "text": "나는 봉투 두 개를 가방에 넣었다. 나머지는 휴대폰으로 찍으려다 화면 밝기를 낮췄다."
+  },
+  "day5_archive_cycle07_30": {
+    "text": "밖에 나가서 켜. 지금은 그거 빛나면 보여."
+  },
+  "day5_archive_cycle07_31": {
+    "text": "설화는 사진 한 장을 자기 교복 안주머니에 넣었다. 내 가방과 다른 쪽이었다."
+  },
+  "day5_archive_cycle07_32": {
+    "text": "문을 조금 열자 복도 끝의 붉은 등이 보였다. 낮에는 켜지지 않던 등이었다."
+  },
+  "day5_archive_cycle07_33": {
+    "text": "우리는 신발을 손에 들고 계단을 내려갔다. 벽에는 학교 안내도 대신 배관 번호가 붙어 있었다."
+  },
+  "day5_archive_cycle07_34": {
+    "text": "아래층 문에는 비상구 표시가 있었다. 설화가 손전등을 끄고 손잡이에 손을 댔다."
+  },
+  "day5_archive_cycle07_35": {
+    "text": "문은 잠겨 있지 않았다. 바깥에서 빗물이 문턱을 넘어 안쪽으로 흘렀다."
+  },
+  "day5_archive_cycle07_36": {
+    "text": "여기서 나가면 담장 밖이야?"
+  },
+  "day5_archive_cycle07_37": {
+    "text": "주차장 뒤. 담장 사이에 사람 지나갈 데 있어. 내가 낮에 봤어."
+  },
+  "day5_archive_cycle07_38": {
+    "text": "나는 가방끈을 다시 쥐고 종이가 젖지 않도록 교복 앞섶을 덮었다."
+  },
+  "day5_archive_cycle07_39": {
+    "text": "설화가 먼저 발을 내밀었다가 빗물이 양말까지 올라오자 잠깐 발끝을 들었다."
+  },
+  "day5_archive_cycle07_40": {
+    "text": "우리 뒤에서 문이 부딪치자 손잡이가 벽에 닿기 전에 설화가 잡았다."
+  },
+  "day5_archive_cycle07_41": {
+    "text": "태호야. 선생님 쪽으로 와요."
+  },
+  "day5_archive_cycle07_42": {
+    "text": "선생님은 계단 위에 서 있었다. 뒤의 두 사람은 손전등을 얼굴 높이로 들고 있었다."
+  },
+  "day5_archive_cycle07_43": {
+    "text": "설화가 내 앞을 가렸다. 내 가방을 잡고 있던 손이 천천히 아래로 내려왔다."
+  },
+  "day5_archive_cycle07_44": {
+    "text": "자료실 문은 제가 열었어요. 얘는 저 따라온 거예요."
+  },
+  "day5_archive_cycle07_45": {
+    "text": "가방부터 내려놔요. 두 사람 다 다칠 필요 없어요."
+  },
+  "day5_archive_cycle07_46": {
+    "text": "선생님 뒤의 남자가 한 계단 내려오다 발끝으로 물웅덩이를 밟아 검은 바지가 젖었다."
+  },
+  "day5_archive_cycle07_47": {
+    "text": "설화가 문을 다시 열고 몸으로 문짝을 밀어 내 뒤의 통로를 넓혔다."
+  },
+  "day5_archive_cycle07_48": {
+    "text": "너도 나와. 같이 나가면 돼."
+  },
+  "day5_archive_cycle07_49": {
+    "text": "설화는 내 왼손을 잡았다. 사진 봉투를 쥔 오른손은 건드리지 않았다."
+  },
+  "day5_archive_cycle07_50": {
+    "text": "왼손 펴 봐. 빨리."
+  },
+  "day5_archive_cycle07_51": {
+    "text": "손바닥을 펴자 설화가 손톱 끝으로 짧은 획을 그었다. 나는 손을 오므렸다가 다시 폈다."
+  },
+  "day5_archive_cycle07_52": {
+    "text": "오른손은 저 사람들이 시키는 대로 움직여도, 왼손은 기억하게 해."
+  },
+  "day5_archive_cycle07_53": {
+    "text": "빗물이 손가락 사이로 흘렀다. 설화의 손톱이 같은 자리를 한 번 더 눌렀다."
+  },
+  "day5_archive_cycle07_54": {
+    "text": "아프게 하면 기억이 남아?"
+  },
+  "day5_archive_cycle07_55": {
+    "text": "모르겠어. 그래도 네 손이니까. 저 종이보다 오래 갖고 있잖아."
+  },
+  "day5_archive_cycle07_56": {
+    "text": "계단에서 발소리가 빨라졌다. 설화가 내 손을 놓지 않은 채 문 바깥으로 밀었다."
+  },
+  "day5_archive_cycle07_57": {
+    "text": "다음번에는 꼭 나가. 이름 바뀌어도 이쪽 손부터 봐."
+  },
+  "day5_archive_cycle07_58": {
+    "text": "문틈으로 선생님의 손이 들어왔다. 설화는 문손잡이를 두 손으로 잡았다."
+  },
+  "day5_archive_cycle07_59": {
+    "text": "나는 문 바깥에서 가방을 돌려멨다. 설화의 신발 한 짝이 문턱에 걸렸다."
+  },
+  "day5_archive_cycle07_60": {
+    "text": "문이 완전히 닫히지 않았다. 남자가 옆쪽으로 돌아와 내 팔을 잡았다."
+  },
+  "day5_archive_cycle07_61": {
+    "text": "가방끈이 어깨에서 미끄러졌다. 젖은 봉투가 바닥에 떨어져 물을 빨아들였다."
+  },
+  "day5_archive_cycle07_62": {
+    "text": "설화가 내 이름을 불렀다. 한 번은 태호였고 다음에는 말 끝이 문에 끼였다."
+  },
+  "day5_archive_cycle07_63": {
+    "text": "선생님이 가방을 주웠다. 나는 그 손에서 서류를 빼려다 왼손을 벽에 짚었다."
+  },
+  "day5_archive_cycle07_64": {
+    "text": "손바닥의 획이 콘크리트에 닿자 설화가 그린 방향으로 손가락이 접혔다."
+  },
+  "day5_archive_cycle07_65": {
+    "text": "설화는요. 같이 가는 거죠?"
+  },
+  "day5_archive_cycle07_66": {
+    "text": "아무도 대답하지 않았다. 설화의 신발이 문 안쪽으로 사라졌고 내 팔은 반대쪽으로 당겨졌다."
+  },
+  "day5_archive_cycle07_67": {
+    "text": "기록 화면의 소리가 끊겼다. 비상등 아래에서 문이 닫히는 모습만 두 번 반복됐다."
+  },
+  "day5_archive_cycle07_68": {
+    "text": "다음 페이지에는 부수 인원 이설화라고 적혀 있었다. 처리 결과는 영구 폐기였다."
+  },
+  "day5_archive_cycle07_69": {
+    "text": "피험자 칸에는 제8차 재투입이라고 찍혔다. 김태호라는 이름 위로 새 이름표가 붙었다."
+  },
+  "day5_archive_cycle07_70": {
+    "text": "나는 복원 화면에서 손을 뗐다. 실제 내 왼손이 서버 책상 모서리를 잡고 있었다."
+  },
+  "day5_archive_cycle07_71": {
+    "text": "기록을 닫기 전에 설화의 사진을 따로 저장했다. 폐기라는 도장은 이름과 다른 줄로 옮겨 적었다."
+  },
+  "day5_archive_cycle07_72": {
+    "text": "사진 속 설화는 아직 손전등을 들고 있었다. 눈을 감거나 웃으라고 시킨 사진이 아니었다."
+  },
+  "day5_archive_cycle07_73": {
+    "text": "문 앞에서 남긴 말은 녹음 끝에 그대로 남았다. 마지막 단어 뒤로 빗소리가 길게 이어졌다."
+  },
+  "day5_archive_cycle07_74": {
+    "text": "나는 왼손을 펴고 획이 있던 자리를 손가락으로 눌렀다. 화면을 넘기기 전에 손을 닦았다."
+  },
+  "day5_archive_cycle07_75": {
+    "text": "서버의 원래 목록으로 돌아가도 일곱 번째 기록 옆의 용량 숫자는 읽기 전과 같았다."
+  },
+  "day5_archive_cycle12_1": {
+    "text": "다음 묶음에는 이준호라는 이름이 적혀 있었다. 사진부 입부 신청서에는 최유나의 서명이 함께 있었다."
+  },
+  "day5_archive_cycle12_2": {
+    "text": "복원 화면에서 나는 카메라 스트랩을 고쳐 매고 있었다. 유나는 옆에서 빈 필름 통을 흔들었다."
+  },
+  "day5_archive_cycle12_3": {
+    "text": "선배. 오늘은 운동장 말고 다른 데 찍어요. 맨날 같은 자리예요."
+  },
+  "day5_archive_cycle12_4": {
+    "text": "같은 데서 찍으면 바뀐 게 보이잖아."
+  },
+  "day5_archive_cycle12_5": {
+    "text": "유나가 내 카메라를 가리키며 날짜를 찍는 기능은 고장 났으니 직접 적어야 한다고 했다."
+  },
+  "day5_archive_cycle12_6": {
+    "text": "우리는 현상한 사진 뒤에 날짜를 썼다. 같은 날인데 내가 쓴 숫자 하나가 달랐다."
+  },
+  "day5_archive_cycle12_7": {
+    "text": "이건 어제잖아요. 선배 또 하루 밀렸네."
+  },
+  "day5_archive_cycle12_8": {
+    "text": "나는 웃고 지웠다. 고무 지우개가 연필 자국 위에서 검게 닳았다."
+  },
+  "day5_archive_cycle12_9": {
+    "text": "사진부 사물함은 오래돼 아래쪽 합판이 들떴다. 유나가 카메라를 넣을 때마다 덜컥거렸다."
+  },
+  "day5_archive_cycle12_10": {
+    "text": "나는 합판 밑에 종이를 접어 넣었고 바닥이 고정되자 유나가 고개를 끄덕였다."
+  },
+  "day5_archive_cycle12_11": {
+    "text": "이제 안 흔들린다. 선배 이런 건 잘하네요."
+  },
+  "day5_archive_cycle12_12": {
+    "text": "빈 필름 통 하나를 그 안에 넣어 봤다. 바닥을 덮으면 안쪽에서 소리가 나지 않았다."
+  },
+  "day5_archive_cycle12_13": {
+    "text": "며칠 뒤에 찍은 사진에는 낯선 학생이 있었다. 뒤집으니 오래된 날짜와 내 필적이 나왔다."
+  },
+  "day5_archive_cycle12_14": {
+    "text": "처음에는 전임 부원이 남긴 사진이라고 생각했다. 두 번째 사진에도 같은 손목이 찍혀 있었다."
+  },
+  "day5_archive_cycle12_15": {
+    "text": "유나는 손가락으로 내 손목을 가리켰다. 시계 버클 자국이 사진과 같은 곳에 남아 있었다."
+  },
+  "day5_archive_cycle12_16": {
+    "text": "이 사람 선배예요?"
+  },
+  "day5_archive_cycle12_17": {
+    "text": "나는 사진을 책상에 놓았다. 아니라고 하면 유나가 다음 사진을 꺼낼 것을 알았다."
+  },
+  "day5_archive_cycle12_18": {
+    "text": "서랍에서 첫 번째부터 열한 번째까지 봉투를 찾았다. 이름은 모두 달랐고 서명은 닮아 있었다."
+  },
+  "day5_archive_cycle12_19": {
+    "text": "마지막 봉투에는 사진이 없었다. 투약 확인서에 이준호라는 내 이름만 적혀 있었다."
+  },
+  "day5_archive_cycle12_20": {
+    "text": "유나는 문을 잠그고 암실 등을 켜더니 붉은 빛 아래에서 날짜를 한 장씩 읽었다."
+  },
+  "day5_archive_cycle12_21": {
+    "text": "우리는 기억나는 일을 별도 종이에 쓰고 서로 말하기 전에 종이를 접어 바꿨다."
+  },
+  "day5_archive_cycle12_22": {
+    "text": "내가 기억하는 전 학교 이름은 지도에 없었다. 유나는 지도 검색 화면도 사진으로 찍었다."
+  },
+  "day5_archive_cycle12_23": {
+    "text": "답이 안 나오는 것도 남겨요. 지우지 말고."
+  },
+  "day5_archive_cycle12_24": {
+    "text": "교실 방송에서 보건실로 오라는 안내가 나왔다. 학생 이름은 끝까지 말하지 않았다."
+  },
+  "day5_archive_cycle12_25": {
+    "text": "내 휴대폰에 같은 안내가 떴다. 오늘 일정은 변경할 수 없다는 문장이 붙었다."
+  },
+  "day5_archive_cycle12_26": {
+    "text": "보건실 문 앞에서 나는 가방을 유나에게 맡겼다. 유나는 끈을 풀지 않고 그대로 어깨에 걸었다."
+  },
+  "day5_archive_cycle12_27": {
+    "text": "십 분 지났는데 안 나오면 들어갈게요."
+  },
+  "day5_archive_cycle12_28": {
+    "text": "문 앞에서 기다리지는 마. 사진부에서 기다려."
+  },
+  "day5_archive_cycle12_29": {
+    "text": "리인은 내가 들어오자 커튼을 닫았다. 침대 쪽이 아니라 문 쪽이 가려졌다."
+  },
+  "day5_archive_cycle12_30": {
+    "text": "오늘 물은 마셨어? 밥은 먹었고?"
+  },
+  "day5_archive_cycle12_31": {
+    "text": "나는 질문에 순서대로 답했다. 선생님은 대답을 적지 않고 시계만 봤다."
+  },
+  "day5_archive_cycle12_32": {
+    "text": "트레이의 앰플 하나가 다른 것보다 덜 차 있었다. 리인은 그 앰플을 손바닥 안으로 가렸다."
+  },
+  "day5_archive_cycle12_33": {
+    "text": "약 맞으면 기억이 없어져요?"
+  },
+  "day5_archive_cycle12_34": {
+    "text": "리인의 손이 멎었다. 앰플을 내려놓는 소리가 평소보다 크게 났다."
+  },
+  "day5_archive_cycle12_35": {
+    "text": "누가 그런 말을 했어."
+  },
+  "day5_archive_cycle12_36": {
+    "text": "종이에 적혀 있어요. 선생님 서명도요."
+  },
+  "day5_archive_cycle12_37": {
+    "text": "리인은 문쪽 커튼을 들었다 놓으며 밖에 누가 있는지 먼저 확인했다."
+  },
+  "day5_archive_cycle12_38": {
+    "text": "이따가 걷게 되면 벽 짚고 가. 뛰지 말고."
+  },
+  "day5_archive_cycle12_39": {
+    "text": "주사 바늘이 닿은 자리는 화면에서 가려졌다. 녹화 음성에 내 숨소리만 짧게 남았다."
+  },
+  "day5_archive_cycle12_40": {
+    "text": "보건실을 나왔을 때 복도 등이 두 겹으로 보였다. 손바닥으로 벽의 타일을 짚었다."
+  },
+  "day5_archive_cycle12_41": {
+    "text": "유나가 모퉁이에서 나왔다. 가방끈을 잡은 손에 내 셔츠가 조금 걸렸다."
+  },
+  "day5_archive_cycle12_42": {
+    "text": "십 분 지났어요. 사진부까지는 같이 가요."
+  },
+  "day5_archive_cycle12_43": {
+    "text": "내가 벽을 짚은 쪽에 선 유나는 내 팔을 당기지 않고 보폭을 줄였다."
+  },
+  "day5_archive_cycle12_44": {
+    "text": "암실에 들어가자 빨간 등이 켜졌다. 유나는 가방을 내려놓고 의자를 문 앞에 댔다."
+  },
+  "day5_archive_cycle12_45": {
+    "text": "여기서 계속 기다리면 안 돼."
+  },
+  "day5_archive_cycle12_46": {
+    "text": "지금 혼자 못 걸으면서 그런 말 하지 마요."
+  },
+  "day5_archive_cycle12_47": {
+    "text": "가방에서 봉투들을 꺼냈다. 손끝에 힘이 풀려 첫 번째 사진이 바닥에 떨어졌다."
+  },
+  "day5_archive_cycle12_48": {
+    "text": "유나가 주워 순서를 맞췄다. 모서리를 잡아 달라고 하자 두 손으로 눌러 줬다."
+  },
+  "day5_archive_cycle12_49": {
+    "text": "필름을 뽑아 창빛에 대려다가 암실이라는 걸 뒤늦게 알아챘다. 유나가 내 손을 내렸다."
+  },
+  "day5_archive_cycle12_50": {
+    "text": "이건 이미 현상한 거예요. 지금 빛 안 줘도 돼요."
+  },
+  "day5_archive_cycle12_51": {
+    "text": "사물함 바닥 기억하지. 우리가 종이 끼운 데."
+  },
+  "day5_archive_cycle12_52": {
+    "text": "유나는 고개를 끄덕이고 카메라를 내 손에서 받아 자기 가슴에 붙였다."
+  },
+  "day5_archive_cycle12_53": {
+    "text": "나는 사진 한 장과 필름을 빈 통에 넣었다. 손을 세 번 바꿔 쥐어야 뚜껑이 닫혔다."
+  },
+  "day5_archive_cycle12_54": {
+    "text": "그 밑에 넣어. 내가 내일 달라고 해도 바로 주지 말고."
+  },
+  "day5_archive_cycle12_55": {
+    "text": "선배가 달라고 하는데 왜 안 줘요."
+  },
+  "day5_archive_cycle12_56": {
+    "text": "내 이름을 종이에 쓰는 동안 끝 글자가 두 번 겹쳤다."
+  },
+  "day5_archive_cycle12_57": {
+    "text": "내일 교문으로 들어오는 사람이 이 이름을 모를 수도 있어."
+  },
+  "day5_archive_cycle12_58": {
+    "text": "유나가 종이를 가져갔다. 이준호 세 글자 밑에 날짜를 다시 적었다."
+  },
+  "day5_archive_cycle12_59": {
+    "text": "그럼 제가 물어볼게요. 선배가 맞는지."
+  },
+  "day5_archive_cycle12_60": {
+    "text": "틀렸다고 버리지는 마. 열세 번째에도 남겨 줘."
+  },
+  "day5_archive_cycle12_61": {
+    "text": "유나의 손이 필름 통을 감쌌다. 눈가를 닦는 대신 카메라 스트랩을 더 짧게 감았다."
+  },
+  "day5_archive_cycle12_62": {
+    "text": "내일 아침에 내가 교문으로 다시 들어와도 네가 아는 이준호가 아닐 거야."
+  },
+  "day5_archive_cycle12_63": {
+    "text": "유나는 입술을 눌렀다. 대답하지 않고 고개만 한 번 저었다."
+  },
+  "day5_archive_cycle12_64": {
+    "text": "그래도 열세 번째의 나를 포기하지 말아 줘. 모르면 다시 알려 줘."
+  },
+  "day5_archive_cycle12_65": {
+    "text": "밖에서 구두 소리가 나자 문 앞 의자를 옮기려다 등받이를 놓쳤다."
+  },
+  "day5_archive_cycle12_66": {
+    "text": "유나가 의자를 받아 소리 없이 옆으로 옮기고 문을 열기 전에 내 가방을 다시 잡았다."
+  },
+  "day5_archive_cycle12_67": {
+    "text": "선배. 제 이름은요? 지금 말할 수 있죠?"
+  },
+  "day5_archive_cycle12_68": {
+    "text": "최유나. 사진 잃어버리는 거 제일 싫어해."
+  },
+  "day5_archive_cycle12_69": {
+    "text": "유나가 고개를 숙였다. 나는 문을 조금 열고 가방끈을 유나의 손에서 풀어 줬다."
+  },
+  "day5_archive_cycle12_70": {
+    "text": "복도에 은수 선생님이 서 있었다. 내 신발을 보고 다가와 팔꿈치를 잡았다."
+  },
+  "day5_archive_cycle12_71": {
+    "text": "보건실에서 나왔으면 교실로 와야죠. 혼자 걷지 말고요."
+  },
+  "day5_archive_cycle12_72": {
+    "text": "암실 문이 닫히자 안쪽에서 합판을 들어 올리는 소리가 작게 들렸다."
+  },
+  "day5_archive_cycle12_73": {
+    "text": "선생님은 돌아보지 않았다. 나는 손을 펴서 벽을 짚고 그 소리가 끝날 때까지 걸음을 늦췄다."
+  },
+  "day5_archive_cycle12_74": {
+    "text": "기록의 마지막 사진에는 사물함 바닥만 있었다. 필름 통은 합판 아래에 가려져 보이지 않았다."
+  },
+  "day5_archive_cycle12_75": {
+    "text": "서버 화면으로 돌아오자 왼손에 힘이 들어가 있었다. 나는 이름 세 개를 다른 줄에 적었다."
+  },
+  "day5_archive_cycle12_76": {
+    "text": "이준호, 최유나, 열세 번째. 서로의 이름을 대신 쓰지 않고 빈칸을 남겨 둔 채 기록을 닫았다."
+  },
+  "day5_history_callback_37": {
+    "text": "젖었던 종이 조각도 가방 안에 있었다. 읽히지 않는 글자까지 버리지 않고 처방전과 떨어뜨려 넣었다."
+  },
+  "day5_history_callback_38": {
+    "text": "밤에 맞춰 둔 기록 순서대로 노트를 채웠다. 설화가 말한 것과 문서에 남은 것을 같은 줄에 섞지 않았다."
+  },
+  "day5_history_callback_39": {
+    "text": "전날 맞춰 놓은 기록이 관리자 화면에서 열렸다. 내가 알아낸 모순들이 이제 수정 가능한 칸으로 보였다."
+  },
+  "day5_expansion_action_10_a": {
+    "text": "렌즈 안의 내 얼굴을 똑바로 봤다. 이름을 확인하는 사진이 아니어서 어디를 봐야 할지 오히려 선명했다."
+  },
+  "day5_expansion_action_10_b": {
+    "text": "카메라를 받아 들자 유나가 빈 벽 앞에 섰다. 나는 뒤로 한 걸음 물러나 프레임 안에 손까지 넣었다."
+  }
 }

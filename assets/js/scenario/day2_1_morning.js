@@ -176,9 +176,12 @@ Object.assign(SCENARIO[2], {
         ]
     },
     "day2_morning_deja4_5": {
-        character: "sea_normal",
-        next: "day2_morning_deja4_6",
-        glitch: { type: "flicker", duration: 300 }
+        "character": "sea_normal",
+        "next": "day2_morning_pen_1",
+        "glitch": {
+            "type": "flicker",
+            "duration": 300
+        }
     },
     "day2_morning_deja4_6": {
         character: "sea_normal",
@@ -369,5 +372,254 @@ Object.assign(SCENARIO[2], {
     "day2_broadcast_7": {
         character: "seolhwa_quiet",
         next: "day2_lunch_start"
+    }
+});
+
+// Expansion work order 2026-10-16
+Object.assign(SCENARIO[2], {
+    "day2_morning_pen_1": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_2"
+    },
+    "day2_morning_pen_2": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_3"
+    },
+    "day2_morning_pen_3": {
+        "character": "sea_normal",
+        "choices": [
+            {
+                "next": "day2_expansion_action_2_a"
+            },
+            {
+                "next": "day2_expansion_action_2_b"
+            },
+            {
+                "next": "day2_morning_pen_4"
+            }
+        ]
+    },
+    "day2_morning_pen_4": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_5",
+        "branches": [
+            {
+                "condition": "checked_minsu_chat_day1",
+                "next": "day2_history_callback_5"
+            }
+        ]
+    },
+    "day2_morning_pen_5": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_6"
+    },
+    "day2_morning_pen_6": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_7"
+    },
+    "day2_morning_pen_7": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_8"
+    },
+    "day2_morning_pen_8": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_choice"
+    },
+    "day2_morning_pen_choice": {
+        "choices": [
+            {
+                "next": "day2_morning_pen_left_1",
+                "setFlags": [
+                    "tested_left_grip"
+                ],
+                "stats": {
+                    "seolhwa": {
+                        "affinity": 2
+                    }
+                }
+            },
+            {
+                "next": "day2_morning_pen_tease_1",
+                "stats": {
+                    "sea": {
+                        "affinity": 2
+                    }
+                }
+            },
+            {
+                "next": "day2_morning_pen_right_1",
+                "stats": {
+                    "eunsu": {
+                        "affinity": 1
+                    }
+                }
+            }
+        ]
+    },
+    "day2_morning_pen_left_1": {
+        "character": "sea_normal",
+        "dejavu": true,
+        "next": "day2_morning_pen_left_2"
+    },
+    "day2_morning_pen_left_2": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_left_3"
+    },
+    "day2_morning_pen_left_3": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_left_4"
+    },
+    "day2_morning_pen_left_4": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_corridor_branch"
+    },
+    "day2_morning_pen_tease_1": {
+        "character": "sea_smile",
+        "next": "day2_morning_pen_tease_2"
+    },
+    "day2_morning_pen_tease_2": {
+        "character": "sea_smile",
+        "next": "day2_morning_pen_tease_3"
+    },
+    "day2_morning_pen_tease_3": {
+        "character": "sea_smile",
+        "next": "day2_morning_pen_tease_4"
+    },
+    "day2_morning_pen_tease_4": {
+        "character": "sea_smile",
+        "next": "day2_morning_pen_corridor_branch"
+    },
+    "day2_morning_pen_right_1": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_right_2"
+    },
+    "day2_morning_pen_right_2": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_right_3"
+    },
+    "day2_morning_pen_right_3": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_corridor_branch"
+    },
+    "day2_morning_pen_corridor_branch": {
+        "branches": [
+            {
+                "condition": "met_yuna",
+                "next": "day2_morning_pen_yuna_1"
+            }
+        ],
+        "next": "day2_morning_pen_eunsu_1"
+    },
+    "day2_morning_pen_yuna_1": {
+        "background": "corridor",
+        "character": "yuna_normal",
+        "next": "day2_morning_pen_yuna_2"
+    },
+    "day2_morning_pen_yuna_2": {
+        "background": "corridor",
+        "character": "yuna_normal",
+        "next": "day2_morning_pen_yuna_3"
+    },
+    "day2_morning_pen_yuna_3": {
+        "background": "corridor",
+        "character": "yuna_normal",
+        "next": "day2_morning_pen_yuna_4"
+    },
+    "day2_morning_pen_yuna_4": {
+        "background": "corridor",
+        "character": "yuna_normal",
+        "next": "day2_morning_pen_yuna_5"
+    },
+    "day2_morning_pen_yuna_5": {
+        "background": "corridor",
+        "character": "yuna_normal",
+        "next": "day2_morning_pen_yuna_6",
+        "branches": [
+            {
+                "condition": "received_yuna_photo",
+                "next": "day2_history_callback_6"
+            }
+        ]
+    },
+    "day2_morning_pen_yuna_6": {
+        "background": "corridor",
+        "character": "yuna_normal",
+        "next": "day2_morning_pen_yuna_7"
+    },
+    "day2_morning_pen_yuna_7": {
+        "background": "corridor",
+        "character": "yuna_normal",
+        "next": "day2_morning_pen_yuna_8"
+    },
+    "day2_morning_pen_yuna_8": {
+        "background": "corridor",
+        "character": "yuna_normal",
+        "next": "day2_morning_deja4_6"
+    },
+    "day2_morning_pen_eunsu_1": {
+        "background": "corridor",
+        "character": "eunsu_gentle",
+        "next": "day2_morning_pen_eunsu_2"
+    },
+    "day2_morning_pen_eunsu_2": {
+        "background": "corridor",
+        "character": "eunsu_gentle",
+        "next": "day2_morning_pen_eunsu_3"
+    },
+    "day2_morning_pen_eunsu_3": {
+        "background": "corridor",
+        "character": "eunsu_gentle",
+        "next": "day2_morning_pen_eunsu_4"
+    },
+    "day2_morning_pen_eunsu_4": {
+        "background": "corridor",
+        "character": "eunsu_gentle",
+        "next": "day2_morning_pen_eunsu_5"
+    },
+    "day2_morning_pen_eunsu_5": {
+        "background": "corridor",
+        "character": "eunsu_gentle",
+        "next": "day2_morning_pen_eunsu_6"
+    },
+    "day2_morning_pen_eunsu_6": {
+        "background": "corridor",
+        "character": "eunsu_gentle",
+        "next": "day2_morning_pen_eunsu_7",
+        "branches": [
+            {
+                "condition": "tried_kill_safety_app",
+                "next": "day2_history_callback_7"
+            }
+        ]
+    },
+    "day2_morning_pen_eunsu_7": {
+        "background": "corridor",
+        "character": "eunsu_gentle",
+        "next": "day2_morning_pen_eunsu_8"
+    },
+    "day2_morning_pen_eunsu_8": {
+        "background": "corridor",
+        "character": "eunsu_gentle",
+        "next": "day2_morning_deja4_6"
+    },
+    "day2_history_callback_5": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_5"
+    },
+    "day2_history_callback_6": {
+        "character": "yuna_normal",
+        "next": "day2_morning_pen_yuna_6"
+    },
+    "day2_history_callback_7": {
+        "character": "eunsu_gentle",
+        "next": "day2_morning_pen_eunsu_7"
+    },
+    "day2_expansion_action_2_a": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_4"
+    },
+    "day2_expansion_action_2_b": {
+        "character": "sea_normal",
+        "next": "day2_morning_pen_4"
     }
 });

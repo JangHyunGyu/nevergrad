@@ -1,428 +1,428 @@
 {
-    "day1_opening_1": {
-        "text": "*Abril.*"
-    },
-    "day1_opening_2": {
-        "text": "*Pétalas de cerejeira flutuam no ar. O vento entra pelas mangas do uniforme novo.*"
-    },
-    "day1_opening_3": {
-        "text": "*O uniforme está duro e cheira a goma. As dobras passadas ontem se erguem toda vez que flexiono os joelhos.*"
-    },
-    "day1_opening_4": {
-        "text": "*A partir de hoje, sou aluno desta escola.*"
-    },
-    "day1_opening_5": {
-        "text": "*Estudante transferido. Por causa do trabalho dos meus pais, não teve jeito. Dentro do bolso do uniforme, os documentos de transferência encostam na ponta dos meus dedos ainda no formato em que foram dobrados.*"
-    },
-    "day1_opening_6": {
-        "text": "*De manhã, mandei para Minsu: 'Hoje é meu primeiro dia'. Ainda só tem uma marca cinza. O grupo da escola antiga também está quieto.*"
-    },
-    "day1_opening_7": {
-        "text": "*Uma pétala de cerejeira roça a ponta do meu nariz. Quase espirro, então viro a cabeça.*"
-    },
-    "day1_opening_8": {
-        "text": "*De dentro da escola, o sinal toca por um instante. Ainda nem começou, mas meus passos ficam um pouco mais rápidos.*"
-    },
-    "day1_gate_1": {
-        "text": "*Fiquei na frente de um portão de escola desconhecido.*"
-    },
-    "day1_gate_2": {
-        "text": "*A escola é grande e limpa. O campo é amplo, e a luz da manhã se estende certinha sobre os vidros dos prédios.*"
-    },
-    "day1_gate_3": {
-        "text": "*Entre risos e conversas, chaves tilintam no bolso de um agasalho. Uma manga gasta roça a minha nova ao passar.*"
-    },
-    "day1_gate_4": {
-        "text": "*Ninguém me vê. Apenas as mangas do meu novo uniforme roçam meus pulsos de maneira estranha.*"
-    },
-    "day1_gate_5": {
-        "text": "*Respire fundo. Enfiei o documento de transferência no bolso e cruzei a porta da frente.*"
-    },
-    "day1_gate_cctv_1": {
-        "text": "*Passo pelo portão principal. Há uma câmera de CCTV ao lado do pilar. Outra no canto onde o muro dobra. Mais uma na entrada. A luz vermelha de funcionamento pisca em intervalos regulares.*"
-    },
-    "day1_hallway_1": {
-        "text": "*Enquanto caminho pelo corredor, meus pés param na primeira bifurcação.*"
-    },
-    "day1_hallway_2": {
-        "text": "*Mesmo depois de verificar o diretório, a localização das salas de aula é confusa. Prédio do primeiro ano... Prédio do segundo ano... Prédio principal? Anexo?*"
-    },
-    "day1_hallway_3": {
-        "text": "*Andando pelo corredor. Olhei para o diretório e virei à direita.*"
-    },
-    "day1_sea_meet_1": {
-        "text": "Você é o aluno transferido? Ouvi dizer que alguém estava vindo hoje."
-    },
-    "day1_sea_meet_2": {
-        "text": "Ah, eu estava procurando a sala. É pra que lado?"
-    },
-    "day1_sea_meet_3": {
-        "text": "*Maria-chiquinhas castanhas. O laço do uniforme e o crachá estão perfeitamente alinhados.*"
-    },
-    "day1_sea_meet_4": {
-        "text": "*Assim que nossos olhos se encontram, ela sorri.*\n\nÉ fácil se perder, né? No começo acontece com todo mundo."
-    },
-    "day1_sea_meet_5": {
-        "text": "Meu nome é Sea. Representante de classe. Você é {name}, certo?"
-    },
-    "day1_sea_meet_6": {
-        "text": "Ah, sim. Sou eu... mas como você sabe meu nome?"
-    },
-    "day1_sea_meet_7": {
-        "text": "A professora responsável me contou. Ela avisou que chegaria um aluno transferido."
-    },
-    "day1_sea_meet_8": {
-        "text": "Ah, entendi. Me chamou pelo nome antes de eu me apresentar, me surpreendeu. Se a professora avisou, está mais preparada que eu."
-    },
-    "day1_sea_meet_9": {
-        "text": "*Como é a representante da turma, deve ter ficado sabendo antes.*"
-    },
-    "day1_sea_meet_10": {
-        "text": "Procurando a sala de aula? Siga-me, eu lhe mostrarei o lugar."
-    },
-    "day1_sea_meet_11": {
-        "text": "*Sea vai na frente e, sempre que diminuo o passo, acompanha meu ritmo sem olhar para trás.*\n\nTem muitos prédios. Se mostrar um por um, fica mais fácil."
-    },
-    "day1_sea_meet_12": {
-        "text": "Este é o laboratório de ciências. A sala de música fica lá embaixo. O segundo andar é principalmente para alunos do terceiro ano, então você não precisará muito dele."
-    },
-    "day1_sea_meet_13": {
-        "text": "A cantina fica no fim do térreo. Na hora do almoço, a fila é grande."
-    },
-    "day1_sea_meet_14": {
-        "text": "Uau, parece que você decorou o caminho. É porque é representante de turma?"
-    },
-    "day1_sea_meet_15": {
-        "text": "Em parte porque sou representante de classe, eu acho..."
-    },
-    "day1_sea_meet_16": {
-        "text": "*Sea sorri levemente.*"
-    },
-    "day1_sea_meet_17": {
-        "text": "Se alguém novo se perde, a representante da turma tem que mostrar o caminho."
-    },
-    "day1_sea_meet_18": {
-        "text": "*Os alunos abrem caminho naturalmente quando Sea passa. Vou atrás dela.*\n\nVem atrás de mim. Se se perder, me chama. É mais rápido do que espiar sozinho cada esquina."
-    },
-    "day1_choco_entry": {
-        "text": ""
-    },
-    "day1_gate_ngp_choice": {
-        "text": "",
-        "choices": [
-            "Entre na escola",
-            "Volte"
-        ]
-    },
-    "day1_gate_ngp_turn_back": {
-        "text": "*Meus pés pararam. Tentei me virar. A tela lentamente fica branca. O som desaparece.*"
-    },
-    "day1_gate_ngp_warp": {
-        "text": ""
-    },
-    "day1_gate_ngp_classroom": {
-        "text": "*Eu abri meus olhos. Sala de aula. Sentado na minha mesa. Fila de trás perto da janela. A data no quadro negro. Data de hoje.*"
-    },
-    "day1_gate_ngp_teacher": {
-        "text": "Tudo bem, vamos começar a aula."
-    },
-    "day1_gate_ngp_teacher_2": {
-        "text": "*Minha cabeça ficou vazia. Eu estava prestes a fazer alguma coisa. ...O que era mesmo?*"
-    },
-    "day1_choco_ngp_1": {
-        "text": "Ah, certo, aqui. Peguei na loja. Você veio vazio, certo?"
-    },
-    "day1_choco_ngp_2": {
-        "text": "*Sea me entrega uma caixinha de leite com morango. A umidade da embalagem molha minha palma na hora.*\n\nObrigado. A caixinha está bem molhada. Sua mão deve ter molhado também. Eu seguro, não põe na bolsa."
-    },
-    "day1_choco_ngp_3": {
-        "text": "*Meus dedos encontraram primeiro a ponta do canudo. Este é meu primeiro pacote e até as bordas dobradas parecem familiares.*"
-    },
-    "day1_choco_1": {
-        "text": "*No caminho para a sala de aula, Sea tira algo de sua bolsa.*"
-    },
-    "day1_choco_2": {
-        "text": "Ah, certo. Quer um leite com chocolate? Era compre um, ganhe outro de graça, então ainda tenho um."
-    },
-    "day1_choco_3": {
-        "text": "*Ela me oferece a caixinha gelada.*\n\nToma. Também não quero ficar carregando a que sobrou o dia todo."
-    },
-    "day1_choco_4": {
-        "text": "*Pego a caixinha.*\n\nTá bem gelada."
-    },
-    "day1_choco_5": {
-        "text": "Ah? Obrigado, mas o que houve? Fico meio sem jeito de você cuidar assim de mim logo no primeiro dia."
-    },
-    "day1_choco_6": {
-        "text": "Sua mão está gelada. No primeiro dia, ficar de estômago vazio faz a gente tremer ainda mais. Bebe isso pelo menos."
-    },
-    "day1_choco_choice": {
-        "text": "",
-        "choices": [
-            "Valeu. Vou tomar.",
-            "Como você sabia que eu gostava disso?",
-            "Na verdade, leite com morango é mais minha praia."
-        ]
-    },
-    "day1_choco_accept_1": {
-        "text": "*Eu cutuco o canudo e tomo um gole. Doce. Saboroso.*"
-    },
-    "day1_choco_accept_2": {
-        "text": "Valeu. Vou tomar."
-    },
-    "day1_choco_accept_3": {
-        "text": "Certo? O chocolate é uma escolha segura."
-    },
-    "day1_choco_accept_4": {
-        "text": "*A caixinha ainda está gelada. Sea dobra o plástico do canudo bem pequeno e coloca no bolso.*\n\nEu podia jogar fora a embalagem do canudo. Você me deu o leite e ficou até com o lixo. Foi mal."
-    },
-    "day1_choco_question_1": {
-        "text": "...Espere, como você sabia que eu gosto de leite com chocolate?"
-    },
-    "day1_choco_question_2": {
-        "text": "*O sorriso de Sea endurece por um instante. Ela pisca uma vez e volta a sorrir.*"
-    },
-    "day1_choco_question_3": {
-        "text": "...Eu falei, estava leve dois por um. Tinha de morango também, mas chocolate parecia mais seguro."
-    },
-    "day1_choco_question_4": {
-        "text": "Está bem, entendi. Achei que tinha escolhido sabendo do que gosto. Mas acabamos de nos conhecer, não tem como. Fiquei pensando demais."
-    },
-    "day1_choco_question_5": {
-        "text": "Que bom."
-    },
-    "day1_choco_question_6": {
-        "text": "*Sea sorri. Os dedos dela param por um instante mínimo enquanto dobram o plástico do canudo, depois voltam a se mover.*\n\nDesculpa se pareceu interrogatório. Foi só curiosidade. Ainda acho meio estranho ganhar uma bebida assim."
-    },
-    "day1_choco_joke_1": {
-        "text": "Na verdade, sou do time do leite com morango."
-    },
-    "day1_choco_joke_2": {
-        "text": "*A mão dela para por um instante na embalagem do canudo.*\n\nNão disse que não vou tomar. Chocolate também é bom. O que foi?"
-    },
-    "day1_choco_joke_3": {
-        "text": "Ah, é? Da próxima vez eu trago de morango. Ficava na prateleira da esquerda, na cantina."
-    },
-    "day1_classroom_1": {
-        "text": "*Com a orientação de Sea, cheguei à sala de aula.*"
-    },
-    "day1_classroom_2": {
-        "text": "*Quando abro a porta e entro, a conversa na sala diminui de repente.*"
-    },
-    "day1_classroom_3": {
-        "text": "*Uma cadeira faz um barulho alto.*\n\nAquele é o aluno novo. De onde ele veio?"
-    },
-    "day1_classroom_4": {
-        "text": "*Deixei minha bolsa no chão e me sentei. Assento na janela. Flores de cerejeira visíveis do lado de fora. Nada mal.*"
-    },
-    "day1_classroom_5": {
-        "text": "*Depois de uma conversa leve, a porta se abre e a professora responsável entra.*"
-    },
-    "day1_eunsu_1": {
-        "text": "*Uma jovem professora de óculos. Ela tem uma aparência gentil.*"
-    },
-    "day1_eunsu_2": {
-        "text": "Tudo bem, pessoal. Eu gostaria de apresentar um novo aluno transferido hoje."
-    },
-    "day1_eunsu_3": {
-        "text": "*A sala de aula fica em silêncio.*"
-    },
-    "day1_eunsu_4": {
-        "text": "{name}, gostaria de vir e se apresentar?"
-    },
-    "day1_eunsu_5": {
-        "text": "*Ao ficar diante do quadro, o cheiro de pó de giz chega mais perto. Lá atrás, ouço alguém se ajeitando na cadeira.*"
-    },
-    "day1_eunsu_6": {
-        "text": "Bem-vindo. Estamos felizes em ter você."
-    },
-    "day1_eunsu_7": {
-        "text": "*Abro a mão que estava fechada.*\n\nSim, professora. Obrigado por me receber."
-    },
-    "day1_eunsu_8": {
-        "text": "Vá em frente, apresente-se."
-    },
-    "day1_eunsu_9": {
-        "text": "Olá. Eu sou {name}. Eu me transferi para cá. Estou ansioso para estar em sua aula."
-    },
-    "day1_eunsu_10": {
-        "text": "Algum hobby ou coisa que você gosta?",
-        "choices": [
-            "Responda honestamente",
-            "Seja breve",
-            "Olhe primeiro para Sea"
-        ]
-    },
-    "day1_eunsu_11": {
-        "text": "Hum... eu gosto de ouvir música."
-    },
-    "day1_eunsu_12": {
-        "text": "*Uma risadinha vem do fundo.*\n\nEu também gosto de música."
-    },
-    "day1_eunsu_13": {
-        "text": "Ótimo. Todos, por favor, façam com que {name} se sinta bem-vindo. Seu assento fica ali, perto da janela, na última fila."
-    },
-    "day1_eunsu_14": {
-        "text": "*Sea levanta o polegar quando volto. Eunsu também assente.*\n\nPronto. Senta aí."
-    },
-    "day1_seolhwa_1": {
-        "text": "*Antes do início da segunda aula. Do meu assento, olhei para trás.*"
-    },
-    "day1_seolhwa_2": {
-        "text": "*Alguém está sentado atrás de mim.*"
-    },
-    "day1_seolhwa_3": {
-        "text": "*O cabelo castanho-escuro dela está bagunçado. Ela encara a janela como se nem tivesse penteado direito de manhã.*"
-    },
-    "day1_seolhwa_4": {
-        "text": "*Só nos lugares ao redor dela a conversa morreu. Ela apoia o queixo na mão e fica olhando apenas pela janela. As pálpebras estão um pouco caídas.*"
-    },
-    "day1_seolhwa_5": {
-        "text": "*No canto mais afastado da última fileira, também tem um garoto de óculos sentado sozinho, lendo um mangá. Só naquela fileira o som das cadeiras arrastando é baixo.*"
-    },
-    "day1_seolhwa_choice": {
-        "text": "",
-        "choices": [
-            "Oi, eu sou {name}. Parece que vou sentar na sua frente.",
-            "Prestar atenção na aula"
-        ]
-    },
-    "day1_seolhwa_greet_1": {
-        "text": "*Eu me virei.*"
-    },
-    "day1_seolhwa_greet_2": {
-        "text": "Olá, meu nome é {name}. Prazer em conhecê-lo."
-    },
-    "day1_seolhwa_greet_3": {
-        "text": "*Seolhwa olha para mim. Nossos olhos se encontram.*"
-    },
-    "day1_seolhwa_greet_4": {
-        "text": "*Ela sorri brevemente, depois abaixa o olhar. As orelhas estão vermelhas.*"
-    },
-    "day1_seolhwa_greet_5": {
-        "text": "*Depois de uma breve pausa, ela fala quase num sussurro.*"
-    },
-    "day1_seolhwa_greet_6": {
-        "text": "...Oi."
-    },
-    "day1_seolhwa_greet_7": {
-        "text": "*Uma palavra. Só isso. Ela volta o olhar para a janela. Em cima da carteira, não há nenhum livro aberto, nem estojo.*"
-    },
-    "day1_seolhwa_greet_8": {
-        "text": "Ei, garoto da transferência. Com quem você estava conversando lá atrás?"
-    },
-    "day1_seolhwa_greet_9": {
-        "text": "Eu estava dizendo oi para a pessoa sentada atrás de mim, mas não obtive resposta."
-    },
-    "day1_seolhwa_greet_10": {
-        "text": "Ah, ela? Quase nunca vi ela conversar com alguém. É assim desde o primeiro ano."
-    },
-    "day1_seolhwa_greet_11": {
-        "text": "*Olho para trás. A garota está encarando a janela. O garoto de óculos no canto também não levantou a cabeça do mangá.*"
-    },
-    "day1_seolhwa_greet_12": {
-        "text": "Eu vejo. Do tipo quieto, hein."
-    },
-    "day1_seolhwa_greet_13": {
-        "text": "Ela responde às vezes se você falar com ela. Nunca a vi falar primeiro. Eu também não sei o nome dela."
-    },
-    "day1_seolhwa_greet_14": {
-        "text": "*Por um instante, sobre o meu rosto refletido na janela de trás, o perfil dela se sobrepôs.*"
-    },
-    "day1_seolhwa_skip": {
-        "text": "*Vamos nos concentrar na aula. Não há tempo para se preocupar com a última fila.*"
-    },
-    "day1_dejavu2_1": {
-        "text": "*Durante a aula, deixei cair meu lápis e olhei embaixo da mesa.*"
-    },
-    "day1_dejavu2_2": {
-        "text": "*Há riscos antigos sob a mesa, marcas fracas feitas com a ponta de um lápis ou compasso.*"
-    },
-    "day1_dejavu2_3": {
-        "text": "*Dá para ver alguns traços de letras. Uma linha curvada para a esquerda, uma marca que parece um número. Quando raspo com a unha, sai poeira.*"
-    },
-    "day1_dejavu2_4": {
-        "text": "*Pego o lápis e volto a olhar para a lousa.*"
-    },
-    "day1_break_1": {
-        "text": "*Hora do intervalo. Alguns meninos aparecem.*"
-    },
-    "day1_break_2": {
-        "text": "Ei, garoto da transferência. De onde você veio?"
-    },
-    "day1_break_3": {
-        "text": "XX Cidade."
-    },
-    "day1_break_4": {
-        "text": "O que você tem feito ultimamente?"
-    },
-    "day1_break_5": {
-        "text": "*O assunto passa dos arredores da escola para a música que estamos ouvindo. Alguém erra meu nome duas vezes, e Sea corrige na hora, ao meu lado.*\n\nSe não lembrar, pode perguntar de novo. Só não chama pelo nome errado."
-    },
-    "day1_break_6": {
-        "text": "Ei, a Sea está cuidando bastante de você."
-    },
-    "day1_break_7": {
-        "text": "Ela fica assim quando ativa o modo representante de turma."
-    },
-    "day1_break_8": {
-        "text": "Ela nunca trouxe uma lancheira antes?"
-    },
-    "day1_break_9": {
-        "text": "É tão raro assim a Sea trazer almoço?"
-    },
-    "day1_pe_1": {
-        "text": "*P.E. aula. Futebol. A bola subiu alto. Eu o prendi com meu pé esquerdo.*"
-    },
-    "day1_pe_3": {
-        "text": "Ah, belos movimentos!"
-    },
-    "day1_pe_3b": {
-        "text": "Foi só sorte. Só corri pra onde a bola foi. É a primeira vez que jogamos juntos; elogiando demais, vou ficar nervoso na próxima."
-    },
-    "day1_pe_4": {
-        "text": "*O obturador da câmera clica em um canto do campo. Uma garotinha segurando uma câmera se encolhe.*"
-    },
-    "day1_pe_yuna_1": {
-        "text": "Ah, desculpe. Estou tirando fotos para o clube de fotografia, para os registros da escola."
-    },
-    "day1_pe_yuna_2": {
-        "text": "Sou Choi Yuna, primeiro ano. Ajudo com fotos oficiais do evento."
-    },
-    "day1_pe_yuna_3": {
-        "text": "Depois das aulas, organizo as fotos na biblioteca. Se a foto que acabei de tirar te incomoda, avise-me então."
-    },
-    "day1_pe_wall_1": {
-        "text": "*Bebo água num banco depois do futebol. Um quadrado da tela de arame verde sobre o muro de tijolos vermelhos está levemente dobrado para dentro. Há montanhas do outro lado.*"
-    },
-    "day1_pe_wall_3": {
-        "text": "*O sinal tocou, então voltei para a sala de aula.*"
-    },
-    "day1_morning_end": {
-        "text": "*A manhã acabou. É hora do almoço.*"
-    },
-    "day1_xover_seolhwa_1": {
-        "text": "*Andando pelo corredor – alguém está parado ali. No final do corredor. Onde a luz não chega.*"
-    },
-    "day1_xover_seolhwa_2": {
-        "text": "...Você já fez isso antes. Lembrar?"
-    },
-    "day1_xover_seolhwa_3": {
-        "text": "*\"...O que?\"*"
-    },
-    "day1_xover_seolhwa_4": {
-        "text": "*Eu pisquei. Ninguém lá. Corredor vazio. Por um segundo, o anti-séptico substituiu o aroma das flores de cerejeira.*"
-    },
-    "day1_xover_seolhwa_5": {
-        "text": "*O que foi isso? O cheiro de desinfetante ainda está aqui.*"
-    },
-    "day1_eunsu_11_honest": {
-        "text": "Hum… jogos e música. Faço um pouco dos dois."
-    },
-    "day1_eunsu_11_brief": {
-        "text": "Música."
-    },
-    "day1_eunsu_11_sea": {
-        "text": "*Olho primeiro para Sea. Ela aponta de leve com o queixo para a professora. Só então eu falo.*\n\n…Música."
-    }
+  "day1_opening_1": {
+    "text": "*Abril.*"
+  },
+  "day1_opening_2": {
+    "text": "*Pétalas de cerejeira flutuam no ar. O vento entra pelas mangas do uniforme novo.*"
+  },
+  "day1_opening_3": {
+    "text": "*O uniforme está duro e cheira a goma. As dobras passadas ontem se erguem toda vez que flexiono os joelhos.*"
+  },
+  "day1_opening_4": {
+    "text": "*A partir de hoje, sou aluno desta escola.*"
+  },
+  "day1_opening_5": {
+    "text": "*Estudante transferido. Por causa do trabalho dos meus pais, não teve jeito. Dentro do bolso do uniforme, os documentos de transferência encostam na ponta dos meus dedos ainda no formato em que foram dobrados.*"
+  },
+  "day1_opening_6": {
+    "text": "*De manhã, mandei para Minsu: 'Hoje é meu primeiro dia'. Ainda só tem uma marca cinza. O grupo da escola antiga também está quieto.*"
+  },
+  "day1_opening_7": {
+    "text": "*Uma pétala de cerejeira roça a ponta do meu nariz. Quase espirro, então viro a cabeça.*"
+  },
+  "day1_opening_8": {
+    "text": "*De dentro da escola, o sinal toca por um instante. Ainda nem começou, mas meus passos ficam um pouco mais rápidos.*"
+  },
+  "day1_gate_1": {
+    "text": "*Fiquei na frente de um portão de escola desconhecido.*"
+  },
+  "day1_gate_2": {
+    "text": "*A escola é grande e limpa. O campo é amplo, e a luz da manhã se estende certinha sobre os vidros dos prédios.*"
+  },
+  "day1_gate_3": {
+    "text": "*Entre risos e conversas, chaves tilintam no bolso de um agasalho. Uma manga gasta roça a minha nova ao passar.*"
+  },
+  "day1_gate_4": {
+    "text": "*Ninguém me vê. Apenas as mangas do meu novo uniforme roçam meus pulsos de maneira estranha.*"
+  },
+  "day1_gate_5": {
+    "text": "*Respire fundo. Enfiei o documento de transferência no bolso e cruzei a porta da frente.*"
+  },
+  "day1_gate_cctv_1": {
+    "text": "*Passo pelo portão principal. Há uma câmera de CCTV ao lado do pilar. Outra no canto onde o muro dobra. Mais uma na entrada. A luz vermelha de funcionamento pisca em intervalos regulares.*"
+  },
+  "day1_hallway_1": {
+    "text": "*Enquanto caminho pelo corredor, meus pés param na primeira bifurcação.*"
+  },
+  "day1_hallway_2": {
+    "text": "*Mesmo depois de verificar o diretório, a localização das salas de aula é confusa. Prédio do primeiro ano... Prédio do segundo ano... Prédio principal? Anexo?*"
+  },
+  "day1_hallway_3": {
+    "text": "*Andando pelo corredor. Olhei para o diretório e virei à direita.*"
+  },
+  "day1_sea_meet_1": {
+    "text": "Você é o aluno transferido? Ouvi dizer que alguém estava vindo hoje."
+  },
+  "day1_sea_meet_2": {
+    "text": "Ah, eu estava procurando a sala. É pra que lado?"
+  },
+  "day1_sea_meet_3": {
+    "text": "*Maria-chiquinhas castanhas. O laço do uniforme e o crachá estão perfeitamente alinhados.*"
+  },
+  "day1_sea_meet_4": {
+    "text": "*Assim que nossos olhos se encontram, ela sorri.*\n\nÉ fácil se perder, né? No começo acontece com todo mundo."
+  },
+  "day1_sea_meet_5": {
+    "text": "Meu nome é Sea. Representante de classe. Você é {name}, certo?"
+  },
+  "day1_sea_meet_6": {
+    "text": "Ah, sim. Sou eu... mas como você sabe meu nome?"
+  },
+  "day1_sea_meet_7": {
+    "text": "A professora responsável me contou. Ela avisou que chegaria um aluno transferido."
+  },
+  "day1_sea_meet_8": {
+    "text": "Ah, entendi. Me chamou pelo nome antes de eu me apresentar, me surpreendeu. Se a professora avisou, está mais preparada que eu."
+  },
+  "day1_sea_meet_9": {
+    "text": "*Como é a representante da turma, deve ter ficado sabendo antes.*"
+  },
+  "day1_sea_meet_10": {
+    "text": "Procurando a sala de aula? Siga-me, eu lhe mostrarei o lugar."
+  },
+  "day1_sea_meet_11": {
+    "text": "*Sea vai na frente e, sempre que diminuo o passo, acompanha meu ritmo sem olhar para trás.*\n\nTem muitos prédios. Se mostrar um por um, fica mais fácil."
+  },
+  "day1_sea_meet_12": {
+    "text": "Este é o laboratório de ciências. A sala de música fica lá embaixo. O segundo andar é principalmente para alunos do terceiro ano, então você não precisará muito dele."
+  },
+  "day1_sea_meet_13": {
+    "text": "A cantina fica no fim do térreo. Na hora do almoço, a fila é grande."
+  },
+  "day1_sea_meet_14": {
+    "text": "Uau, parece que você decorou o caminho. É porque é representante de turma?"
+  },
+  "day1_sea_meet_15": {
+    "text": "Em parte porque sou representante de classe, eu acho..."
+  },
+  "day1_sea_meet_16": {
+    "text": "*Sea sorri levemente.*"
+  },
+  "day1_sea_meet_17": {
+    "text": "Se alguém novo se perde, a representante da turma tem que mostrar o caminho."
+  },
+  "day1_sea_meet_18": {
+    "text": "*Os alunos abrem caminho naturalmente quando Sea passa. Vou atrás dela.*\n\nVem atrás de mim. Se se perder, me chama. É mais rápido do que espiar sozinho cada esquina."
+  },
+  "day1_choco_entry": {
+    "text": ""
+  },
+  "day1_gate_ngp_choice": {
+    "text": "",
+    "choices": [
+      "Entre na escola",
+      "Volte"
+    ]
+  },
+  "day1_gate_ngp_turn_back": {
+    "text": "*Meus pés pararam. Tentei me virar. A tela lentamente fica branca. O som desaparece.*"
+  },
+  "day1_gate_ngp_warp": {
+    "text": ""
+  },
+  "day1_gate_ngp_classroom": {
+    "text": "*Eu abri meus olhos. Sala de aula. Sentado na minha mesa. Fila de trás perto da janela. A data no quadro negro. Data de hoje.*"
+  },
+  "day1_gate_ngp_teacher": {
+    "text": "Tudo bem, vamos começar a aula."
+  },
+  "day1_gate_ngp_teacher_2": {
+    "text": "*Minha cabeça ficou vazia. Eu estava prestes a fazer alguma coisa. ...O que era mesmo?*"
+  },
+  "day1_choco_ngp_1": {
+    "text": "Ah, certo, aqui. Peguei na loja. Você veio vazio, certo?"
+  },
+  "day1_choco_ngp_2": {
+    "text": "*Sea me entrega uma caixinha de leite com morango. A umidade da embalagem molha minha palma na hora.*\n\nObrigado. A caixinha está bem molhada. Sua mão deve ter molhado também. Eu seguro, não põe na bolsa."
+  },
+  "day1_choco_ngp_3": {
+    "text": "*Meus dedos encontraram primeiro a ponta do canudo. Este é meu primeiro pacote e até as bordas dobradas parecem familiares.*"
+  },
+  "day1_choco_1": {
+    "text": "*No caminho para a sala de aula, Sea tira algo de sua bolsa.*"
+  },
+  "day1_choco_2": {
+    "text": "Ah, certo. Quer um leite com chocolate? Era compre um, ganhe outro de graça, então ainda tenho um."
+  },
+  "day1_choco_3": {
+    "text": "*Ela me oferece a caixinha gelada.*\n\nToma. Também não quero ficar carregando a que sobrou o dia todo."
+  },
+  "day1_choco_4": {
+    "text": "*Pego a caixinha.*\n\nTá bem gelada."
+  },
+  "day1_choco_5": {
+    "text": "Ah? Obrigado, mas o que houve? Fico meio sem jeito de você cuidar assim de mim logo no primeiro dia."
+  },
+  "day1_choco_6": {
+    "text": "Sua mão está gelada. No primeiro dia, ficar de estômago vazio faz a gente tremer ainda mais. Bebe isso pelo menos."
+  },
+  "day1_choco_choice": {
+    "text": "",
+    "choices": [
+      "Valeu. Vou tomar.",
+      "Como você sabia que eu gostava disso?",
+      "Na verdade, leite com morango é mais minha praia."
+    ]
+  },
+  "day1_choco_accept_1": {
+    "text": "*Eu cutuco o canudo e tomo um gole. Doce. Saboroso.*"
+  },
+  "day1_choco_accept_2": {
+    "text": "Valeu. Vou tomar."
+  },
+  "day1_choco_accept_3": {
+    "text": "Certo? O chocolate é uma escolha segura."
+  },
+  "day1_choco_accept_4": {
+    "text": "*A caixinha ainda está gelada. Sea dobra o plástico do canudo bem pequeno e coloca no bolso.*\n\nEu podia jogar fora a embalagem do canudo. Você me deu o leite e ficou até com o lixo. Foi mal."
+  },
+  "day1_choco_question_1": {
+    "text": "...Espere, como você sabia que eu gosto de leite com chocolate?"
+  },
+  "day1_choco_question_2": {
+    "text": "*O sorriso de Sea endurece por um instante. Ela pisca uma vez e volta a sorrir.*"
+  },
+  "day1_choco_question_3": {
+    "text": "...Eu falei, estava leve dois por um. Tinha de morango também, mas chocolate parecia mais seguro."
+  },
+  "day1_choco_question_4": {
+    "text": "Está bem, entendi. Achei que tinha escolhido sabendo do que gosto. Mas acabamos de nos conhecer, não tem como. Fiquei pensando demais."
+  },
+  "day1_choco_question_5": {
+    "text": "Que bom."
+  },
+  "day1_choco_question_6": {
+    "text": "*Sea sorri. Os dedos dela param por um instante mínimo enquanto dobram o plástico do canudo, depois voltam a se mover.*\n\nDesculpa se pareceu interrogatório. Foi só curiosidade. Ainda acho meio estranho ganhar uma bebida assim."
+  },
+  "day1_choco_joke_1": {
+    "text": "Na verdade, sou do time do leite com morango."
+  },
+  "day1_choco_joke_2": {
+    "text": "*A mão dela para por um instante na embalagem do canudo.*\n\nNão disse que não vou tomar. Chocolate também é bom. O que foi?"
+  },
+  "day1_choco_joke_3": {
+    "text": "Ah, é? Da próxima vez eu trago de morango. Ficava na prateleira da esquerda, na cantina."
+  },
+  "day1_classroom_1": {
+    "text": "*Com a orientação de Sea, cheguei à sala de aula.*"
+  },
+  "day1_classroom_2": {
+    "text": "*Quando abro a porta e entro, a conversa na sala diminui de repente.*"
+  },
+  "day1_classroom_3": {
+    "text": "*Uma cadeira faz um barulho alto.*\n\nAquele é o aluno novo. De onde ele veio?"
+  },
+  "day1_classroom_4": {
+    "text": "*Deixei minha bolsa no chão e me sentei. Assento na janela. Flores de cerejeira visíveis do lado de fora. Nada mal.*"
+  },
+  "day1_classroom_5": {
+    "text": "*Depois de uma conversa leve, a porta se abre e a professora responsável entra.*"
+  },
+  "day1_eunsu_1": {
+    "text": "*Uma jovem professora de óculos. Ela tem uma aparência gentil.*"
+  },
+  "day1_eunsu_2": {
+    "text": "Tudo bem, pessoal. Eu gostaria de apresentar um novo aluno transferido hoje."
+  },
+  "day1_eunsu_3": {
+    "text": "*A sala de aula fica em silêncio.*"
+  },
+  "day1_eunsu_4": {
+    "text": "{name}, gostaria de vir e se apresentar?"
+  },
+  "day1_eunsu_5": {
+    "text": "*Ao ficar diante do quadro, o cheiro de pó de giz chega mais perto. Lá atrás, ouço alguém se ajeitando na cadeira.*"
+  },
+  "day1_eunsu_6": {
+    "text": "Bem-vindo. Estamos felizes em ter você."
+  },
+  "day1_eunsu_7": {
+    "text": "*Abro a mão que estava fechada.*\n\nSim, professora. Obrigado por me receber."
+  },
+  "day1_eunsu_8": {
+    "text": "Vá em frente, apresente-se."
+  },
+  "day1_eunsu_9": {
+    "text": "Olá. Eu sou {name}. Eu me transferi para cá. Estou ansioso para estar em sua aula."
+  },
+  "day1_eunsu_10": {
+    "text": "Algum hobby ou coisa que você gosta?",
+    "choices": [
+      "Responda honestamente",
+      "Seja breve",
+      "Olhe primeiro para Sea"
+    ]
+  },
+  "day1_eunsu_11": {
+    "text": "Hum... eu gosto de ouvir música."
+  },
+  "day1_eunsu_12": {
+    "text": "*Uma risadinha vem do fundo.*\n\nEu também gosto de música."
+  },
+  "day1_eunsu_13": {
+    "text": "Ótimo. Todos, por favor, façam com que {name} se sinta bem-vindo. Seu assento fica ali, perto da janela, na última fila."
+  },
+  "day1_eunsu_14": {
+    "text": "*Sea levanta o polegar quando volto. Eunsu também assente.*\n\nPronto. Senta aí."
+  },
+  "day1_seolhwa_1": {
+    "text": "*Antes do início da segunda aula. Do meu assento, olhei para trás.*"
+  },
+  "day1_seolhwa_2": {
+    "text": "*Alguém está sentado atrás de mim.*"
+  },
+  "day1_seolhwa_3": {
+    "text": "*O cabelo castanho-escuro dela está bagunçado. Ela encara a janela como se nem tivesse penteado direito de manhã.*"
+  },
+  "day1_seolhwa_4": {
+    "text": "*Só nos lugares ao redor dela a conversa morreu. Ela apoia o queixo na mão e fica olhando apenas pela janela. As pálpebras estão um pouco caídas.*"
+  },
+  "day1_seolhwa_5": {
+    "text": "*No canto mais afastado da última fileira, também tem um garoto de óculos sentado sozinho, lendo um mangá. Só naquela fileira o som das cadeiras arrastando é baixo.*"
+  },
+  "day1_seolhwa_choice": {
+    "text": "",
+    "choices": [
+      "Oi, eu sou {name}. Parece que vou sentar na sua frente.",
+      "Prestar atenção na aula"
+    ]
+  },
+  "day1_seolhwa_greet_1": {
+    "text": "*Eu me virei.*"
+  },
+  "day1_seolhwa_greet_2": {
+    "text": "Olá, meu nome é {name}. Prazer em conhecê-lo."
+  },
+  "day1_seolhwa_greet_3": {
+    "text": "*Seolhwa olha para mim. Nossos olhos se encontram.*"
+  },
+  "day1_seolhwa_greet_4": {
+    "text": "*Ela sorri brevemente, depois abaixa o olhar. As orelhas estão vermelhas.*"
+  },
+  "day1_seolhwa_greet_5": {
+    "text": "*Depois de uma breve pausa, ela fala quase num sussurro.*"
+  },
+  "day1_seolhwa_greet_6": {
+    "text": "...Oi."
+  },
+  "day1_seolhwa_greet_7": {
+    "text": "*Uma palavra. Só isso. Ela volta o olhar para a janela. Em cima da carteira, não há nenhum livro aberto, nem estojo.*"
+  },
+  "day1_seolhwa_greet_8": {
+    "text": "Ei, garoto da transferência. Com quem você estava conversando lá atrás?"
+  },
+  "day1_seolhwa_greet_9": {
+    "text": "Eu estava dizendo oi para a pessoa sentada atrás de mim, mas não obtive resposta."
+  },
+  "day1_seolhwa_greet_10": {
+    "text": "Ah, ela? Quase nunca vi ela conversar com alguém. É assim desde o primeiro ano."
+  },
+  "day1_seolhwa_greet_11": {
+    "text": "*Olho para trás. A garota está encarando a janela. O garoto de óculos no canto também não levantou a cabeça do mangá.*"
+  },
+  "day1_seolhwa_greet_12": {
+    "text": "Eu vejo. Do tipo quieto, hein."
+  },
+  "day1_seolhwa_greet_13": {
+    "text": "Ela responde às vezes se você falar com ela. Nunca a vi falar primeiro. Eu também não sei o nome dela."
+  },
+  "day1_seolhwa_greet_14": {
+    "text": "*Por um instante, sobre o meu rosto refletido na janela de trás, o perfil dela se sobrepôs.*"
+  },
+  "day1_seolhwa_skip": {
+    "text": "*Vamos nos concentrar na aula. Não há tempo para se preocupar com a última fila.*"
+  },
+  "day1_dejavu2_1": {
+    "text": "*Durante a aula, deixei cair meu lápis e olhei embaixo da mesa.*"
+  },
+  "day1_dejavu2_2": {
+    "text": "*Há riscos antigos sob a mesa, marcas fracas feitas com a ponta de um lápis ou compasso.*"
+  },
+  "day1_dejavu2_3": {
+    "text": "*Dá para ver alguns traços de letras. Uma linha curvada para a esquerda, uma marca que parece um número. Quando raspo com a unha, sai poeira.*"
+  },
+  "day1_dejavu2_4": {
+    "text": "*Pego o lápis e volto a olhar para a lousa.*"
+  },
+  "day1_break_1": {
+    "text": "*Hora do intervalo. Alguns meninos aparecem.*"
+  },
+  "day1_break_2": {
+    "text": "Ei, garoto da transferência. De onde você veio?"
+  },
+  "day1_break_3": {
+    "text": "XX Cidade."
+  },
+  "day1_break_4": {
+    "text": "O que você tem feito ultimamente?"
+  },
+  "day1_break_5": {
+    "text": "*O assunto passa dos arredores da escola para a música que estamos ouvindo. Alguém erra meu nome duas vezes, e Sea corrige na hora, ao meu lado.*\n\nSe não lembrar, pode perguntar de novo. Só não chama pelo nome errado."
+  },
+  "day1_break_6": {
+    "text": "Ei, a Sea está cuidando bastante de você."
+  },
+  "day1_break_7": {
+    "text": "Ela fica assim quando ativa o modo representante de turma."
+  },
+  "day1_break_8": {
+    "text": "Ela nunca trouxe uma lancheira antes?"
+  },
+  "day1_break_9": {
+    "text": "É tão raro assim a Sea trazer almoço?"
+  },
+  "day1_pe_1": {
+    "text": "*P.E. aula. Futebol. A bola subiu alto. Eu o prendi com meu pé esquerdo.*"
+  },
+  "day1_pe_3": {
+    "text": "Ah, belos movimentos!"
+  },
+  "day1_pe_3b": {
+    "text": "Foi só sorte. Só corri pra onde a bola foi. É a primeira vez que jogamos juntos; elogiando demais, vou ficar nervoso na próxima."
+  },
+  "day1_pe_4": {
+    "text": "*O obturador da câmera clica em um canto do campo. Uma garotinha segurando uma câmera se encolhe.*"
+  },
+  "day1_pe_yuna_1": {
+    "text": "Ah, desculpe. Estou tirando fotos para o clube de fotografia, para os registros da escola."
+  },
+  "day1_pe_yuna_2": {
+    "text": "Sou Choi Yuna, primeiro ano. Ajudo com fotos oficiais do evento."
+  },
+  "day1_pe_yuna_3": {
+    "text": "Depois das aulas, organizo as fotos na biblioteca. Se a foto que acabei de tirar te incomoda, avise-me então."
+  },
+  "day1_pe_wall_1": {
+    "text": "*Bebo água num banco depois do futebol. Um quadrado da tela de arame verde sobre o muro de tijolos vermelhos está levemente dobrado para dentro. Há montanhas do outro lado.*"
+  },
+  "day1_pe_wall_3": {
+    "text": "*O sinal tocou, então voltei para a sala de aula.*"
+  },
+  "day1_morning_end": {
+    "text": "*A manhã acabou. É hora do almoço.*"
+  },
+  "day1_xover_seolhwa_1": {
+    "text": "*Andando pelo corredor – alguém está parado ali. No final do corredor. Onde a luz não chega.*"
+  },
+  "day1_xover_seolhwa_2": {
+    "text": "...Você já fez isso antes. Lembrar?"
+  },
+  "day1_xover_seolhwa_3": {
+    "text": "*\"...O que?\"*"
+  },
+  "day1_xover_seolhwa_4": {
+    "text": "*Eu pisquei. Ninguém lá. Corredor vazio. Por um segundo, o anti-séptico substituiu o aroma das flores de cerejeira.*"
+  },
+  "day1_xover_seolhwa_5": {
+    "text": "*O que foi isso? O cheiro de desinfetante ainda está aqui.*"
+  },
+  "day1_eunsu_11_honest": {
+    "text": "Hum… jogos e música. Faço um pouco dos dois."
+  },
+  "day1_eunsu_11_brief": {
+    "text": "Música."
+  },
+  "day1_eunsu_11_sea": {
+    "text": "*Primeiro, olhei para Sea. Sea apontou levemente com o queixo e só então abriu a boca.*\n\n… Música."
+  }
 }

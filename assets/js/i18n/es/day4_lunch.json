@@ -1,189 +1,469 @@
 {
-    "day4_lunch_start": {
-        "text": "*Suena la campana del almuerzo. Al abrirse la puerta del salón, se oye de golpe el ruido de pasos en el pasillo.*"
-    },
-    "day4_lunch_choice": {
-        "text": "*Solo tengo el almuerzo. Debo moverme rápido.*",
-        "choices": [
-            "Buscar a Yuna",
-            "Investigar la enfermería",
-            "Ir a la azotea"
-        ]
-    },
-    "day4_lunch_yuna_1": {
-        "text": "*El aula del club de fotografía. La puerta está cerrada con llave. Hasta ayer estaba abierta.*"
-    },
-    "day4_lunch_yuna_2": {
-        "text": "*Miré alrededor. Nadie en el pasillo. Una ventana no está bien cerrada. Me colé por ella.*"
-    },
-    "day4_lunch_yuna_3": {
-        "text": "*El casillero de Yuna. Vacío. Hasta el polvo del suelo fue limpiado en un cuadrado perfecto.*"
-    },
-    "day4_lunch_yuna_4": {
-        "text": "*Los otros casilleros tienen polvo. Solo el de Yuna está limpio, con marcas de un trapo húmedo en la esquina interior.*"
-    },
-    "day4_lunch_yuna_5": {
-        "text": "*La tabla del fondo del casillero está ligeramente levantada. Un doble fondo. La cámara de Yuna está escondida dentro.*"
-    },
-    "day4_lunch_yuna_6": {
-        "text": "*Saqué la cámara. Casi sin batería. La encendí.*"
-    },
-    "day4_lunch_yuna_7": {
-        "text": "*La lista contiene más de 200 fotos, en su mayoría del colegio. En las esquinas se repiten figuras con traje. Las caras cambian, pero están en los mismos lugares.*"
-    },
-    "day4_lunch_yuna_8": {
-        "text": "*La última foto: escaleras que bajan al subterráneo. En la esquina, texto escrito a mano: **'Aquí abajo — Yu'***"
-    },
-    "day4_lunch_yuna_9": {
-        "text": "*La información del archivo marca la hora de captura: anoche, 22:41. Debajo, batería restante: 7%.*"
-    },
-    "day4_lunch_yuna_10": {
-        "text": "*Al final del pasillo del edificio viejo. 'Solo personal autorizado.' Una puerta oxidada.*"
-    },
-    "day4_lunch_yuna_11": {
-        "text": "*Tiré de la manija. No se abre. Un candado nuevo en una puerta oxidada. El polvo de pintura alrededor del cierre todavía está caído sobre el umbral.*"
-    },
-    "day4_lunch_yuna_12": {
-        "text": "*Pegué la oreja a la rendija de la puerta. Abajo se oye algo. Un ruido mecánico bajo. Y — un sonido breve, como si alguien contuviera el aliento. Una vez. Otra vez.*"
-    },
-    "day4_lunch_yuna_13": {
-        "text": "*...Yuna.*"
-    },
-    "day4_lunch_yuna_14": {
-        "text": "*Sacudí el candado. No se mueve. Me revisé los bolsillos. No tengo nada para abrirlo.*"
-    },
-    "day4_lunch_yuna_15": {
-        "text": "*Oigo pasos. Desde el final del pasillo. Alguien viene.*"
-    },
-    "day4_lunch_yuna_16": {
-        "text": "*Retrocedí. Mi talón pisó el polvo del umbral. Me di vuelta y me escondí en una esquina.*"
-    },
-    "day4_lunch_yuna_17": {
-        "text": "*La profesora Eunsu pasa y abre la puerta con una llave. Entra y cierra la puerta detrás de ella. Se oye el clic de la cerradura.*"
-    },
-    "day4_lunch_yuna_18": {
-        "text": "*El sonido de la llave al entrar en la cerradura todavía me resuena en los oídos. Al otro lado de la puerta continúa un zumbido mecánico grave.*",
-        "choices": [
-            "Ir a buscar la llave esta noche",
-            "Recordar la ruta de Riin",
-            "Confiar en la pista de Seolhwa"
-        ]
-    },
-    "day4_lunch_yuna_19": {
-        "text": "*Apreté los puños. Las uñas se me clavan en las palmas.*"
-    },
-    "day4_lunch_yuna_20": {
-        "text": "*Mañana tendré que abrir esta puerta.*"
-    },
-    "day4_lunch_nurse_1": {
-        "text": "*La enfermera Riin está frente al gabinete de medicinas, pasando un líquido transparente a una jeringa.*"
-    },
-    "day4_lunch_nurse_first": {
-        "text": "*Lo primero que veo es la placa sobre el escritorio: 'Kang Riin, enfermera escolar'. En cuanto leo el nombre, alguien con bata blanca levanta la vista desde el interior.*\n\nProfesora, ¿podemos hablar un momento? Si está preparando una inyección, espero. No quiero irme sin hablar."
-    },
-    "day4_lunch_nurse_2": {
-        "text": "*Se ve la etiqueta de la ampolla. 'M-13'. La tipografía es distinta a la de la etiqueta del medicamento para el resfriado del compartimento de al lado.*"
-    },
-    "day4_lunch_nurse_3": {
-        "text": "*Nuestros ojos se encuentran y su mano que sostiene la jeringa se detiene.*\n\n¿Ha parado al verme? He entrado por la puerta, ¿por qué se asusta tanto? Solo he mirado lo que lleva en la mano."
-    },
-    "day4_lunch_nurse_4": {
-        "text": "...Me asustaste."
-    },
-    "day4_lunch_nurse_5": {
-        "text": "*Esconde la jeringa detrás de la espalda. El gesto parece natural, pero ya la he visto.*\n\nYa lo vi. Esconderlo ahora no hace que no lo haya visto."
-    },
-    "day4_lunch_nurse_noyuna": {
-        "text": "...¿Qué estaba haciendo?"
-    },
-    "day4_lunch_nurse_noyuna_2": {
-        "text": "...Una inyección de vitaminas. Te perdiste el chequeo grupal de hoy."
-    },
-    "day4_lunch_nurse_noyuna_3": {
-        "text": "*Los dedos de Riin siguen tapando las líneas de medición, incluso mientras ocultan la jeringa. La etiqueta `M-13` de la ampolla se ve a medias detrás del dorso de su mano.*\n\nSi son vitaminas, ¿por qué tapa las marcas? Da más miedo no ver siquiera cuánto me va a poner. Aparte la mano, por favor."
-    },
-    "day4_lunch_nurse_6": {
-        "text": "He oído que Yuna se trasladó de repente. Todavía no lo entiendo. ¿También usted puede hablar de eso como si nada?"
-    },
-    "day4_lunch_nurse_7": {
-        "text": "Si se ha cambiado, habrá ido a algún sitio. ¿Sabe dónde está Yuna?\n\n*La enfermera Riin vuelve a presionar el capuchón de la jeringa. Clic. Solo entonces contesta.*"
-    },
-    "day4_lunch_nurse_8": {
-        "text": "...¿Por qué me miras así? {name}, ¿adónde fuiste durante el almuerzo de hoy?"
-    },
-    "day4_lunch_nurse_9": {
-        "text": "*Su voz se enfrió un instante, luego volvió a ser suave.*\n\nNo le pregunto por mi comida. Estamos hablando de Yuna."
-    },
-    "day4_lunch_nurse_10": {
-        "text": "Yuna estará bien."
-    },
-    "day4_lunch_nurse_11": {
-        "text": "*Cuando termina de responder, Riin toma el vaso y lo lleva al grifo.*\n\n¿Que estará bien significa que ahora no lo está?"
-    },
-    "day4_lunch_nurse_12": {
-        "text": "*Riin abre el grifo al máximo y lava el vaso. El ruido del agua llena los silencios entre sus respuestas.*\n\nPrimero veamos cómo estás tú. Hablamos en un momento."
-    },
-    "day4_lunch_nurse_13": {
-        "text": "...Pareces cansado. Como si no hubieras dormido."
-    },
-    "day4_lunch_nurse_14": {
-        "text": "¿Quieres algo que te ayude?"
-    },
-    "day4_lunch_nurse_15": {
-        "text": "*Sonríe al hablar, pero sigue con la jeringa en la mano.*\n\nUn momento. Deje primero la jeringa y hablemos.",
-        "choices": [
-            "Negarse de inmediato",
-            "Preguntar el nombre del fármaco",
-            "Mencionar a Yuna"
-        ]
-    },
-    "day4_lunch_nurse_16": {
-        "text": "*...Me negué y salí. A mis espaldas, oí a la enfermera Riin murmurar en voz baja. Fingí no haberla escuchado.*"
-    },
-    "day4_lunch_roof_1": {
-        "text": "*Palabras grabadas bajo el pasamanos. Surcos profundos hechos con un cuchillo.*"
-    },
-    "day4_lunch_roof_2": {
-        "text": "*Letras grabadas bajo la barandilla. Profundamente talladas con un cuchillo.*"
-    },
-    "day4_lunch_roof_3": {
-        "text": "***'Solo hay una forma de salir. — Lee Seolhwa'***"
-    },
-    "day4_lunch_roof_4": {
-        "text": "*Pequeño texto a continuación:***'Hay una respuesta en el sótano'****",
-        "choices": [
-            "Memorizar las palabras",
-            "Fotografiar el mensaje"
-        ]
-    },
-    "day4_lunch_roof_5": {
-        "text": "*Toqué las letras con los dedos. Frío. Escritura grabada en una barandilla de metal. Marcas antiguas.*"
-    },
-    "day4_lunch_roof_6": {
-        "text": "*Se me pegó polvo de óxido a la punta de los dedos. El interior de los surcos de las letras tiene el color de algo lavado por la lluvia durante mucho tiempo.*"
-    },
-    "day4_lunch_roof_7": {
-        "text": "*Lee Seolhwa. El último trazo del nombre está tallado profundo hacia el interior de la baranda.*"
-    },
-    "day4_lunch_end": {
-        "text": "*Las clases de la tarde están por empezar.*"
-    },
-    "day4_lunch_nurse_ask_name": {
-        "text": "Eso… ¿cómo se llama?"
-    },
-    "day4_lunch_nurse_ask_name_2": {
-        "text": "Un suplemento. No hace falta leer la etiqueta. Túmbate."
-    },
-    "day4_lunch_nurse_ask_yuna": {
-        "text": "¿A Yuna también se lo dio?"
-    },
-    "day4_lunch_nurse_ask_yuna_2": {
-        "text": "…Hablaremos de Yuna mañana. Primero tu medicina."
-    },
-    "day4_lunch_nurse_leave_ask": {
-        "text": "*Salí sin esperar respuesta. A mi espalda, una ampolla tintineó contra la bandeja.*"
-    },
-    "day4_lunch_nurse_leave_yuna": {
-        "text": "*Tras mencionar a Yuna, no pude preguntar nada más. Ya en el pasillo, oí un suspiro bajo tras la puerta.*"
-    }
+  "day4_lunch_start": {
+    "text": "*Suena la campana del almuerzo. Al abrirse la puerta del salón, se oye de golpe el ruido de pasos en el pasillo.*"
+  },
+  "day4_lunch_choice": {
+    "text": "*Solo tengo el almuerzo. Debo moverme rápido.*",
+    "choices": [
+      "Buscar a Yuna",
+      "Investigar la enfermería",
+      "Ir a la azotea"
+    ]
+  },
+  "day4_lunch_yuna_1": {
+    "text": "*El aula del club de fotografía. La puerta está cerrada con llave. Hasta ayer estaba abierta.*"
+  },
+  "day4_lunch_yuna_2": {
+    "text": "*Miré alrededor. Nadie en el pasillo. Una ventana no está bien cerrada. Me colé por ella.*"
+  },
+  "day4_lunch_yuna_3": {
+    "text": "*El casillero de Yuna. Vacío. Hasta el polvo del suelo fue limpiado en un cuadrado perfecto.*"
+  },
+  "day4_lunch_yuna_4": {
+    "text": "*Los otros casilleros tienen polvo. Solo el de Yuna está limpio, con marcas de un trapo húmedo en la esquina interior.*"
+  },
+  "day4_lunch_yuna_5": {
+    "text": "*La tabla del fondo del casillero está ligeramente levantada. Un doble fondo. La cámara de Yuna está escondida dentro.*"
+  },
+  "day4_lunch_yuna_6": {
+    "text": "*Saqué la cámara. Casi sin batería. La encendí.*"
+  },
+  "day4_lunch_yuna_7": {
+    "text": "*La lista contiene más de 200 fotos, en su mayoría del colegio. En las esquinas se repiten figuras con traje. Las caras cambian, pero están en los mismos lugares.*"
+  },
+  "day4_lunch_yuna_8": {
+    "text": "*La última foto: escaleras que bajan al subterráneo. En la esquina, texto escrito a mano: **'Aquí abajo — Yu'***"
+  },
+  "day4_lunch_yuna_9": {
+    "text": "*La información del archivo marca la hora de captura: anoche, 22:41. Debajo, batería restante: 7%.*"
+  },
+  "day4_lunch_yuna_10": {
+    "text": "*Al final del pasillo del edificio viejo. 'Solo personal autorizado.' Una puerta oxidada.*"
+  },
+  "day4_lunch_yuna_11": {
+    "text": "*Tiré de la manija. No se abre. Un candado nuevo en una puerta oxidada. El polvo de pintura alrededor del cierre todavía está caído sobre el umbral.*"
+  },
+  "day4_lunch_yuna_12": {
+    "text": "*Pegué la oreja a la rendija de la puerta. Abajo se oye algo. Un ruido mecánico bajo. Y — un sonido breve, como si alguien contuviera el aliento. Una vez. Otra vez.*"
+  },
+  "day4_lunch_yuna_13": {
+    "text": "*...Yuna.*"
+  },
+  "day4_lunch_yuna_14": {
+    "text": "*Sacudí el candado. No se mueve. Me revisé los bolsillos. No tengo nada para abrirlo.*"
+  },
+  "day4_lunch_yuna_15": {
+    "text": "*Oigo pasos. Desde el final del pasillo. Alguien viene.*"
+  },
+  "day4_lunch_yuna_16": {
+    "text": "*Retrocedí. Mi talón pisó el polvo del umbral. Me di vuelta y me escondí en una esquina.*"
+  },
+  "day4_lunch_yuna_17": {
+    "text": "*La profesora Eunsu pasa y abre la puerta con una llave. Entra y cierra la puerta detrás de ella. Se oye el clic de la cerradura.*"
+  },
+  "day4_lunch_yuna_18": {
+    "text": "*El sonido de la llave al entrar en la cerradura todavía me resuena en los oídos. Al otro lado de la puerta continúa un zumbido mecánico grave.*",
+    "choices": [
+      "Ir a buscar la llave esta noche",
+      "Recordar la ruta de Riin",
+      "Confiar en la pista de Seolhwa"
+    ]
+  },
+  "day4_lunch_yuna_19": {
+    "text": "*Apreté los puños. Las uñas se me clavan en las palmas.*"
+  },
+  "day4_lunch_yuna_20": {
+    "text": "*Mañana tendré que abrir esta puerta.*"
+  },
+  "day4_lunch_nurse_1": {
+    "text": "*La enfermera Riin está frente al gabinete de medicinas, pasando un líquido transparente a una jeringa.*"
+  },
+  "day4_lunch_nurse_first": {
+    "text": "*Lo primero que veo es la placa sobre el escritorio: 'Kang Riin, enfermera escolar'. En cuanto leo el nombre, alguien con bata blanca levanta la vista desde el interior.*\n\nProfesora, ¿podemos hablar un momento? Si está preparando una inyección, espero. No quiero irme sin hablar."
+  },
+  "day4_lunch_nurse_2": {
+    "text": "*Se ve la etiqueta de la ampolla. 'M-13'. La tipografía es distinta a la de la etiqueta del medicamento para el resfriado del compartimento de al lado.*"
+  },
+  "day4_lunch_nurse_3": {
+    "text": "*Nuestros ojos se encuentran y su mano que sostiene la jeringa se detiene.*\n\n¿Ha parado al verme? He entrado por la puerta, ¿por qué se asusta tanto? Solo he mirado lo que lleva en la mano."
+  },
+  "day4_lunch_nurse_4": {
+    "text": "...Me asustaste."
+  },
+  "day4_lunch_nurse_5": {
+    "text": "*Esconde la jeringa detrás de la espalda. El gesto parece natural, pero ya la he visto.*\n\nYa lo vi. Esconderlo ahora no hace que no lo haya visto."
+  },
+  "day4_lunch_nurse_noyuna": {
+    "text": "...¿Qué estaba haciendo?"
+  },
+  "day4_lunch_nurse_noyuna_2": {
+    "text": "...Una inyección de vitaminas. Te perdiste el chequeo grupal de hoy."
+  },
+  "day4_lunch_nurse_noyuna_3": {
+    "text": "*Los dedos de Riin siguen tapando las líneas de medición, incluso mientras ocultan la jeringa. La etiqueta `M-13` de la ampolla se ve a medias detrás del dorso de su mano.*\n\nSi son vitaminas, ¿por qué tapa las marcas? Da más miedo no ver siquiera cuánto me va a poner. Aparte la mano, por favor."
+  },
+  "day4_lunch_nurse_6": {
+    "text": "He oído que Yuna se trasladó de repente. Todavía no lo entiendo. ¿También usted puede hablar de eso como si nada?"
+  },
+  "day4_lunch_nurse_7": {
+    "text": "Si se ha cambiado, habrá ido a algún sitio. ¿Sabe dónde está Yuna?\n\n*La enfermera Riin vuelve a presionar el capuchón de la jeringa. Clic. Solo entonces contesta.*"
+  },
+  "day4_lunch_nurse_8": {
+    "text": "...¿Por qué me miras así? {name}, ¿adónde fuiste durante el almuerzo de hoy?"
+  },
+  "day4_lunch_nurse_9": {
+    "text": "*Su voz se enfrió un instante, luego volvió a ser suave.*\n\nNo le pregunto por mi comida. Estamos hablando de Yuna."
+  },
+  "day4_lunch_nurse_10": {
+    "text": "Yuna estará bien."
+  },
+  "day4_lunch_nurse_11": {
+    "text": "*Cuando termina de responder, Riin toma el vaso y lo lleva al grifo.*\n\n¿Que estará bien significa que ahora no lo está?"
+  },
+  "day4_lunch_nurse_12": {
+    "text": "*Riin abre el grifo al máximo y lava el vaso. El ruido del agua llena los silencios entre sus respuestas.*\n\nPrimero veamos cómo estás tú. Hablamos en un momento."
+  },
+  "day4_lunch_nurse_13": {
+    "text": "...Pareces cansado. Como si no hubieras dormido."
+  },
+  "day4_lunch_nurse_14": {
+    "text": "¿Quieres algo que te ayude?"
+  },
+  "day4_lunch_nurse_15": {
+    "text": "*Sonríe al hablar, pero sigue con la jeringa en la mano.*\n\nUn momento. Deje primero la jeringa y hablemos.",
+    "choices": [
+      "Negarse de inmediato",
+      "Preguntar el nombre del fármaco",
+      "Mencionar a Yuna"
+    ]
+  },
+  "day4_lunch_nurse_16": {
+    "text": "*...Me negué y salí. A mis espaldas, oí a la enfermera Riin murmurar en voz baja. Fingí no haberla escuchado.*"
+  },
+  "day4_lunch_roof_1": {
+    "text": "*Palabras grabadas bajo el pasamanos. Surcos profundos hechos con un cuchillo.*"
+  },
+  "day4_lunch_roof_2": {
+    "text": "*Letras grabadas bajo la barandilla. Profundamente talladas con un cuchillo.*"
+  },
+  "day4_lunch_roof_3": {
+    "text": "***'Solo hay una forma de salir. — Lee Seolhwa'***"
+  },
+  "day4_lunch_roof_4": {
+    "text": "*Pequeño texto a continuación:***'Hay una respuesta en el sótano'****",
+    "choices": [
+      "Memorizar las palabras",
+      "Fotografiar el mensaje"
+    ]
+  },
+  "day4_lunch_roof_5": {
+    "text": "*Toqué las letras con los dedos. Frío. Escritura grabada en una barandilla de metal. Marcas antiguas.*"
+  },
+  "day4_lunch_roof_6": {
+    "text": "*Se me pegó polvo de óxido a la punta de los dedos. El interior de los surcos de las letras tiene el color de algo lavado por la lluvia durante mucho tiempo.*"
+  },
+  "day4_lunch_roof_7": {
+    "text": "*Lee Seolhwa. El último trazo del nombre está tallado profundo hacia el interior de la baranda.*"
+  },
+  "day4_lunch_end": {
+    "text": "*Las clases de la tarde están por empezar.*"
+  },
+  "day4_lunch_nurse_ask_name": {
+    "text": "Eso…¿cómo se llama?"
+  },
+  "day4_lunch_nurse_ask_name_2": {
+    "text": "Un suplemento. No necesitas la etiqueta. Sólo acuéstate."
+  },
+  "day4_lunch_nurse_ask_yuna": {
+    "text": "¿Le diste eso a Yuna también?"
+  },
+  "day4_lunch_nurse_ask_yuna_2": {
+    "text": "…Yuna puede esperar hasta mañana. Tu dosis primero."
+  },
+  "day4_lunch_nurse_leave_ask": {
+    "text": "*Salí sin esperar respuesta. A mi espalda, una ampolla tintineó contra la bandeja.*"
+  },
+  "day4_lunch_nurse_leave_yuna": {
+    "text": "*Yuna Después de mencionar el nombre, no pude hacer más preguntas. Cuando salí al pasillo, un suspiro se escapó por la rendija de la puerta.*"
+  },
+  "day4_lunch_darkroom_1": {
+    "text": "Una gota de agua cayó desde el interior del cuarto oscuro. Se colocaron dos pinzas mojadas al lado del tanque de impresión."
+  },
+  "day4_lunch_darkroom_2": {
+    "text": "Las hojas de contacto colgaban sobre la red. Rostros sentados en el mismo escritorio alineados en cada pequeño cubículo."
+  },
+  "day4_lunch_darkroom_3": {
+    "text": "Conté los cuadrados con los dedos y descubrí que sólo el duodécimo cuadrado tenía el borde del agua aún sin secar."
+  },
+  "day4_lunch_darkroom_4": {
+    "text": "Cuando se encendió la luz roja, apareció un rostro en la película. El cabello y el uniforme eran diferentes, pero la forma de la mano izquierda que sostenía era la misma."
+  },
+  "day4_lunch_darkroom_5": {
+    "text": "La duodécima persona no miraba a la cámara. Le estaba entregando algo a alguien fuera de la foto."
+  },
+  "day4_lunch_darkroom_6": {
+    "text": "Los dedos de Yuna quedaron ligeramente impresos debajo de la muñeca. Una pinza cubría esa parte."
+  },
+  "day4_lunch_darkroom_7": {
+    "text": "Mientras movía las tenazas, vi pequeñas huellas en el cristal. Yuna parecía haber dado un giro apresurado aquí."
+  },
+  "day4_lunch_darkroom_8": {
+    "text": "En lugar de llevar papel fotográfico, tomé una foto de todo con mi teléfono y luego tomé otra foto de la parte donde mis manos se superponían."
+  },
+  "day4_lunch_darkroom_9": {
+    "text": "La bolsa mojada parecía cambiar de forma cuando la tocaba.",
+    "choices": [
+      "Incluso la posición de las pinzas está tomada en una foto.",
+      "Primero mira las huellas en la puerta.",
+      "Esperar sin tocar el objeto."
+    ]
+  },
+  "day4_lunch_darkroom_10": {
+    "text": "Se cortó el extremo de la película dentro del sobre. Medí el largo restante y pensé dónde lo habría movido."
+  },
+  "day4_lunch_darkroom_11": {
+    "text": "La puerta metálica se cerró en el pasillo. Apagué la luz roja y me bajé al costado de la puerta."
+  },
+  "day4_lunch_darkroom_12": {
+    "text": "El sonido de tacones de zapatos llegó por las escaleras. Los pasos fueron lentos y no se detuvieron en el medio."
+  },
+  "day4_lunch_yuna_hide_1": {
+    "text": "Miré el ojo de la cerradura frente a la puerta del sótano. Se escuchó el sonido de páginas pasando desde el interior de la puerta."
+  },
+  "day4_lunch_yuna_hide_2": {
+    "text": "Mi zapato resbaló una vez en las escaleras. El haz de la linterna descendió desde debajo de la pared."
+  },
+  "day4_lunch_yuna_hide_3": {
+    "text": "Abrí la puerta de la caja de herramientas de limpieza y empujé las dos escobas hacia adentro, dejando un espacio para que cupiera un cuerpo."
+  },
+  "day4_lunch_yuna_hide_4": {
+    "text": "En el momento en que cerré la puerta, el teléfono celular que llevaba en el bolsillo cayó al estante. Lo rodeé con la mano, pero ya salía un sonido breve."
+  },
+  "day4_lunch_yuna_breath_choice": {
+    "text": "La luz que entraba por la rendija de la puerta me alcanzó en el dorso de la mano. El sonido de pasos se detuvo al pie de las escaleras.",
+    "choices": [
+      "Cubre tu teléfono con ropa y no lo muevas",
+      "Sal primero y di que estás perdido."
+    ]
+  },
+  "day4_lunch_yuna_breath_safe_1": {
+    "text": "El olor a ropa de trabajo llegó a mi nariz. Me metí la manga en la boca y presioné el teléfono contra mi estómago."
+  },
+  "day4_lunch_yuna_breath_safe_2": {
+    "text": "Cerraste la puerta, ¿no? Compruébalo si hay alguien dentro o no."
+  },
+  "day4_lunch_yuna_breath_safe_3": {
+    "text": "Otra persona respondió brevemente. Cuando la luz del hueco de la puerta desapareció, las líneas en el dorso de mi mano también desaparecieron."
+  },
+  "day4_lunch_yuna_breath_safe_4": {
+    "text": "El sonido de zapatos volvió a subir las escaleras. Incluso después de escuchar los últimos pasos, no solté el palo de la escoba."
+  },
+  "day4_lunch_yuna_breath_safe_5": {
+    "text": "Salí de la caja y solté lentamente el pomo de la puerta. La forma del mango fue presionada en la palma de mi mano."
+  },
+  "day4_lunch_yuna_breath_fail_1": {
+    "text": "La manija de la puerta se movió primero. Eunsu La punta del zapato del profesor se detuvo frente al espacio abierto."
+  },
+  "day4_lunch_yuna_breath_fail_2": {
+    "text": "Si estás perdido, llama a alguien. A los estudiantes no se les permite entrar aquí."
+  },
+  "day4_lunch_yuna_breath_fail_3": {
+    "text": "Bajé la cabeza y metí mi teléfono en el fondo de mi bolsillo. La maestra sostuvo la puerta hasta que mi mano salió."
+  },
+  "day4_lunch_yuna_breath_fail_4": {
+    "text": "Vuelve a clase. Hablaremos de nuevo después del almuerzo."
+  },
+  "day4_lunch_yuna_breath_fail_5": {
+    "text": "Mientras daba mi paso, la maestra señaló el pasillo opuesto. Era un camino que se alejaba de la puerta del sótano."
+  },
+  "day4_lunch_nurse_tray_1": {
+    "text": "Se colocaron tres ampollas de vidrio sobre una bandeja metálica. Sólo la zona donde se arrancó la etiqueta permaneció traslúcida."
+  },
+  "day4_lunch_nurse_tray_2": {
+    "text": "Cuando Riin cerró el cajón, el extremo rasgado del papel se atascó. Se veía una pequeña rejilla antes de ser cubierta con una bata blanca."
+  },
+  "day4_lunch_nurse_tray_3": {
+    "text": "Lávate las manos y regresa. Entraste desde fuera."
+  },
+  "day4_lunch_nurse_tray_4": {
+    "text": "La mano de la profesora se reflejó en el espejo del baño. Empujó una ampolla hacia un lado y colocó las otras dos una al lado de la otra."
+  },
+  "day4_lunch_nurse_tray_5": {
+    "text": "La jeringa tapada todavía estaba en la bandeja. Riin lavó la taza primero sin levantarla."
+  },
+  "day4_lunch_nurse_tray_6": {
+    "text": "¿Has desayunado algo? No te daré medicina antes de la comida."
+  },
+  "day4_lunch_nurse_tray_7": {
+    "text": "Al cerrar el grifo, escuché el sonido del reloj de la sala de salud. La profesora también miró en la misma dirección por un momento."
+  },
+  "day4_lunch_nurse_tray_8": {
+    "text": "El trozo de papel quedó en la rendija del cajón. Antes de darme la vuelta, conté el número de rejillas con los ojos."
+  },
+  "day4_lunch_nurse_key_1": {
+    "text": "Tampoco puedes salir de este lugar, ¿verdad?"
+  },
+  "day4_lunch_nurse_key_2": {
+    "text": "Riin bajó el dedo por el borde de la taza. El vaso tocó la bandeja y sonó una vez."
+  },
+  "day4_lunch_nurse_key_3": {
+    "text": "No digas eso en el pasillo."
+  },
+  "day4_lunch_nurse_key_4": {
+    "text": "Cuando intenté mirar la cámara al lado de la puerta, Riin se paró frente a mí. Se escuchó un breve ruido metálico en el bolsillo de la bata."
+  },
+  "day4_lunch_nurse_key_5": {
+    "text": "Un llavero colgaba del borde del bolsillo. Riin no lo metió, simplemente retiró la mano."
+  },
+  "day4_lunch_nurse_key_6": {
+    "text": "Encontrar algo perdido no significa que tengas que devolverlo inmediatamente."
+  },
+  "day4_lunch_nurse_key_7": {
+    "text": "Mis ojos se movieron de mi bolsillo a la puerta. El maestro se hizo a un lado para crear un pasaje."
+  },
+  "day4_lunch_nurse_key_8": {
+    "text": "Salí de la sala de salud sin tocar la llave y solo recordando en qué bolsillo estaba."
+  },
+  "day4_lunch_nurse_yuna_1": {
+    "text": "Yuna preguntó cuándo vino por última vez. Riin cerró el libro de registro y ató la cuerda."
+  },
+  "day4_lunch_nurse_yuna_2": {
+    "text": "No hay hora de salida en su registro. No escribí ninguno."
+  },
+  "day4_lunch_nurse_yuna_3": {
+    "text": "El extremo del hilo atado se cayó del dedo del maestro. Intenté atarlo nuevamente, pero lo dejé como estaba."
+  },
+  "day4_lunch_nurse_yuna_4": {
+    "text": "Si sólo hay constancia de su entrada, oficialmente no se ha ido. Recuerda eso."
+  },
+  "day4_lunch_nurse_yuna_5": {
+    "text": "Cuando miré el cajón, el profesor sacudió la cabeza en silencio. Di un paso hacia la puerta."
+  },
+  "day4_lunch_nurse_yuna_6": {
+    "text": "Se hizo un anuncio sobre el almuerzo fuera de la sala de salud. Antes de cerrar la puerta, se escuchó el sonido de Riin lavando otra taza."
+  },
+  "day4_lunch_roof_etch_1": {
+    "text": "Cuando quité el polvo del hormigón expuesto debajo de la malla de alambre, surgieron varias líneas profundas."
+  },
+  "day4_lunch_roof_etch_2": {
+    "text": "Fueron siete trazos verticales y una flecha apuntando hacia la izquierda. El óxido se había acumulado en los rasguños poco profundos."
+  },
+  "day4_lunch_roof_etch_3": {
+    "text": "Intenté meter la uña en la línea. Hubo varios casos en los que mis dedos se resbalaron al intentar escribir."
+  },
+  "day4_lunch_roof_etch_4": {
+    "text": "La arena se había endurecido dentro de la línea rayada.",
+    "choices": [
+      "Tome fotografías cambiando la dirección de la luz.",
+      "Mire debajo del accesorio de malla de alambre",
+      "Lee con los ojos, sin usar las manos."
+    ]
+  },
+  "day4_lunch_roof_etch_5": {
+    "text": "Cuando abrí mi mano izquierda, las líneas de mi palma se doblaron en la misma dirección. Incluso si retiras la mano, la arena permanece al alcance de tu mano."
+  },
+  "day4_lunch_roof_etch_6": {
+    "text": "La malla metálica detrás de mí sonó ligeramente. Cuando me di la vuelta, Seolhwa estaba parado junto a la puerta de la escalera."
+  },
+  "day4_lunch_roof_etch_7": {
+    "text": "Si llegas hasta aquí, podrás ver el exterior. Entonces todos vienen aquí primero."
+  },
+  "day4_lunch_roof_etch_8": {
+    "text": "Seolhwa no se acercó a la barandilla y estaba doblando los extremos de sus mangas que no estaban mojadas con los dedos."
+  },
+  "day4_lunch_roof_etch_9": {
+    "text": "Yo hice lo mismo. Ver los autobuses más allá de la valla me hizo pensar que podría alcanzarlos."
+  },
+  "day4_lunch_roof_memory_choice": {
+    "text": "Seolhwa miró hacia las escaleras de la izquierda. Quité la mano de la malla de alambre.",
+    "choices": [
+      "¿Por qué no saliste a la azotea?",
+      "¿Qué pasó entonces en la salida de emergencia?"
+    ]
+  },
+  "day4_lunch_roof_fence_1": {
+    "text": "Mirar hacia abajo. Sólo hay un camino más allá de la valla. Te atraparían antes de que llegara el autobús."
+  },
+  "day4_lunch_roof_fence_2": {
+    "text": "Mirando hacia abajo a través de la malla de alambre, vi una oficina de seguridad ubicada entre la entrada de la escuela y la parada de autobús."
+  },
+  "day4_lunch_roof_fence_3": {
+    "text": "Las puertas que ves de día no son las que se abren de noche. Lo aprendí demasiado tarde en el séptimo ciclo."
+  },
+  "day4_lunch_roof_fence_4": {
+    "text": "El flequillo de Seolhwa se movía con el viento. La otra manga estaba doblada en contra de la dirección del viento."
+  },
+  "day4_lunch_roof_fence_5": {
+    "text": "Puedes abrir la salida de emergencia del antiguo edificio con la mano. Bloquearlo por fuera no elimina la manija interior."
+  },
+  "day4_lunch_roof_exit_1": {
+    "text": "Lo abrí primero. Tenías las manos llenas de documentos."
+  },
+  "day4_lunch_roof_exit_2": {
+    "text": "Cuando miré mi mano izquierda, Seolhwa también miró hacia el mismo lado. Intenté estirar los dedos pero apreté el puño."
+  },
+  "day4_lunch_roof_exit_3": {
+    "text": "Alguien vino a la puerta. Sabían que habíamos traído los papeles."
+  },
+  "day4_lunch_roof_exit_4": {
+    "text": "Seolhwa fingió sostener la manija de la puerta. La mano se detuvo en el aire y los tendones se elevaron en el dorso de la mano."
+  },
+  "day4_lunch_roof_exit_5": {
+    "text": "Los detalles están en los registros allí. No me digas que recuerdas todo con solo escucharme."
+  },
+  "day4_lunch_roof_second_choice": {
+    "text": "La puerta de la escalera fue ligeramente abierta por el viento. Seolhwa se retiró allí primero.",
+    "choices": [
+      "Esta vez empezaré buscando registros.",
+      "Pregunte nuevamente por la ubicación de la salida de emergencia izquierda."
+    ]
+  },
+  "day4_lunch_roof_record_1": {
+    "text": "Bien. No tienes que fingir que lo recuerdas sólo para estar de acuerdo conmigo. Lea los periódicos usted mismo."
+  },
+  "day4_lunch_roof_record_2": {
+    "text": "Saqué mi teléfono y tomé una foto del rasguño. Sólo la malla de alambre y las manos permanecían en la pantalla, y Seolhwa no era visible."
+  },
+  "day4_lunch_roof_record_3": {
+    "text": "Después de guardar la foto, volví a mirar hacia arriba y escuché el sonido de la puerta de la escalera cerrándose."
+  },
+  "day4_lunch_roof_left_1": {
+    "text": "A la izquierda, en el sótano. No cuentes las escaleras. Encuentra la puerta con la manija que se abre hacia adentro."
+  },
+  "day4_lunch_roof_left_2": {
+    "text": "Saqué la arena de mis palmas sobre el forro de mis bolsillos y repetí la palabra que quedó en mi boca una vez."
+  },
+  "day4_lunch_roof_left_3": {
+    "text": "Cuando me aparté de la valla de alambre, la puerta de la azotea estaba entreabierta. La sombra humana no siguió bajando las escaleras."
+  },
+  "day4_history_callback_28": {
+    "text": "La foto que recibí el primer día también estaba iluminada en la misma dirección. Ahora puedo ver por qué Yuna me dijo que no doblara el papel."
+  },
+  "day4_history_callback_29": {
+    "text": "Medí la distancia entre el lugar donde encontré la cámara y este sobre. Ambos estaban escondidos del mismo lado de la puerta."
+  },
+  "day4_history_callback_30": {
+    "text": "La forma del cuello era la misma que la de la ampolla vista antes. Incluso si se quitó la etiqueta, no se eliminaron ni siquiera los pequeños rayones en el vidrio."
+  },
+  "day4_history_callback_31": {
+    "text": "Riin hizo un gesto para que le entregaran el teléfono. Al igual que cuando apagué la aplicación el primer día, solo la pantalla se oscureció y permaneció el indicador de ubicación."
+  },
+  "day4_history_callback_32": {
+    "text": "Recordé el comentario de Seolhwa de que cuando sostienes la empuñadura de un bolígrafo, la zona doblada se presiona nuevamente y tu mano se orienta primero."
+  },
+  "day4_history_callback_33": {
+    "text": "Toqué el papel en mi bolsillo. Todavía no estaba seguro de si el jade, que estaba manchado y era ilegible, era el tejado."
+  },
+  "day4_expansion_action_6_a": {
+    "text": "Incluso la sombra de la garra estaba incluida en el marco. Dejé algo que podría servirme como estándar cuando tuviera que encontrar el mismo lugar nuevamente."
+  },
+  "day4_expansion_action_6_b": {
+    "text": "La mancha húmeda en la puerta principal estaba sólo en el lado interior. Caminé hacia la pared sin pisarla."
+  },
+  "day4_expansion_action_7_a": {
+    "text": "Cuando sostuve mi teléfono en posición baja, la sombra del trazo se hizo más larga y pude distinguir entre las manchas que parecían letras y las líneas finas reales."
+  },
+  "day4_expansion_action_7_b": {
+    "text": "El trazo final continuó debajo del sujetador. Parecía como si quedaran rastros de los viejos tiempos debajo de la malla de alambre recién construida."
+  }
 }

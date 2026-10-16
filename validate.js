@@ -356,9 +356,12 @@ for (const sid of sceneIds) {
 
 // ko에만 있는 키 (보조 텍스트는 정상)
 const auxiliaryPrefixes = ['ending_', 'ghost_', 'flicker'];
+const referencedAuxiliaryKeys = new Set(Object.values(allScenes)
+    .map(({ scene }) => scene.glitch?.phoneFlashText)
+    .filter(value => typeof value === 'string'));
 for (const key of koKeys) {
     if (!sceneIds.has(key)) {
-        const isAux = auxiliaryPrefixes.some(p => key.includes(p)) ||
+        const isAux = referencedAuxiliaryKeys.has(key) || auxiliaryPrefixes.some(p => key.includes(p)) ||
                        key.includes('subtitle') || key.includes('ghost') || key.includes('flicker');
         if (!isAux) {
             warnings.push(`[I18N_EXTRA] ko key "${key}" has no matching scene ID`);
@@ -918,6 +921,7 @@ class StateSim extends RuntimeStateManager {
         if (scene.setFlag) this.setFlag(scene.setFlag);
         if (scene.setFlags) this.setFlags(scene.setFlags);
         if (scene.clearFlags) scene.clearFlags.forEach(f => this.clearFlag(f));
+        if (scene.reward) this.applySceneReward(scene.reward);
         if (scene.setMode) this.mode = CONFIG.STAT_MODES[scene.setMode] || String(scene.setMode).toLowerCase();
         if (scene.changeDay) this.currentDay = scene.changeDay;
         if (scene.changeSlot) this.currentSlot = scene.changeSlot;
@@ -927,6 +931,7 @@ class StateSim extends RuntimeStateManager {
 
 function resolveBranch(branches, state) {
     for (const b of branches) {
+        if (b.affinityLeader && state.getAffinityLeader() !== b.affinityLeader) continue;
         if (b.condition && !state.checkCondition(b.condition)) continue;
         if (b.excludeCondition && state.hasFlag(b.excludeCondition)) continue;
         return b.next;
@@ -1032,6 +1037,18 @@ for (const p of PRESETS) {
             let nx = null;
             if (sc.branches) nx = resolveBranch(sc.branches, st);
             if (!nx && sc.affinityBranches) nx = resolveAffinityBranch(sc, st);
+            if (!nx && sc.choices) {
+                const selected = sc.choices.find(choice =>
+                    (!choice.condition || st.checkCondition(choice.condition))
+                    && (!choice.excludeCondition || !st.hasFlag(choice.excludeCondition)));
+                if (selected) {
+                    if (selected.stats) for (const [id, values] of Object.entries(selected.stats))
+                        for (const [stat, delta] of Object.entries(values)) st.changeStat(id, stat, delta);
+                    if (selected.setFlags) st.setFlags(selected.setFlags);
+                    if (selected.clearFlags) selected.clearFlags.forEach(flag => st.clearFlag(flag));
+                    nx = selected.next;
+                }
+            }
             if (!nx && sc.next) nx = sc.next;
             if (!nx && sc.freeTalkNext) nx = sc.freeTalkNext;
             cur = nx; steps++;

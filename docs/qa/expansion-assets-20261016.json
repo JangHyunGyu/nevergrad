@@ -1,0 +1,93 @@
+{
+  "scope": "All non-null CONFIG image registry paths; aliases share files.",
+  "groups": {
+    "backgrounds": {
+      "references": 91,
+      "uniqueFiles": 87
+    },
+    "expressions": {
+      "references": 65,
+      "uniqueFiles": 58
+    },
+    "evidence": {
+      "references": 6,
+      "uniqueFiles": 6
+    },
+    "subjects": {
+      "references": 13,
+      "uniqueFiles": 13
+    }
+  },
+  "failures": [],
+  "uniqueFiles": 163,
+  "decodedFiles": 163,
+  "generatedAssets": [
+    {
+      "png": "assets/images/cg/cg_seolhwa_cycle07_rain.png",
+      "webp": "assets/images/cg/cg_seolhwa_cycle07_rain.webp",
+      "width": 1672,
+      "height": 941,
+      "losslessPixelMatch": true,
+      "tool": "built-in image_gen",
+      "quality": "maximum supported quality and native resolution explicitly requested; controls not exposed",
+      "replacementApproved": true,
+      "pngSha256": "e059ee5c826ab8e947a318c9fddff65c06d3aebc949a664f2bd70a7eeb1ec413",
+      "gesture": "left palm visible, thumb at image right, index fingernail pressing palm"
+    },
+    {
+      "png": "assets/images/cg/cg_yuna_darkroom_film.png",
+      "webp": "assets/images/cg/cg_yuna_darkroom_film.webp",
+      "width": 1672,
+      "height": 941,
+      "losslessPixelMatch": true,
+      "tool": "built-in image_gen",
+      "quality": "maximum supported quality and native resolution explicitly requested; controls not exposed",
+      "replacementApproved": true,
+      "pngSha256": "8eefb55a16827475725eec70f51ac24b26d2a6dd6f79759ea45cc2e3c0e2d268"
+    },
+    {
+      "png": "assets/images/cg/ending_cage_eunsu_desk.png",
+      "webp": "assets/images/cg/ending_cage_eunsu_desk.webp",
+      "width": 1672,
+      "height": 941,
+      "losslessPixelMatch": true,
+      "tool": "built-in image_gen",
+      "quality": "maximum supported quality and native resolution explicitly requested; controls not exposed",
+      "replacementApproved": true,
+      "pngSha256": "2ecbf620a6aecc82deb02459d5d1271ca7c5ed297a4c42b80d687922dadd14e2"
+    },
+    {
+      "png": "assets/images/cg/ending_complicit_monitors.png",
+      "webp": "assets/images/cg/ending_complicit_monitors.webp",
+      "width": 1672,
+      "height": 941,
+      "losslessPixelMatch": true,
+      "tool": "built-in image_gen",
+      "quality": "maximum supported quality and native resolution explicitly requested; controls not exposed",
+      "replacementApproved": true,
+      "pngSha256": "0f41b15907aa87fcd36487a42761dafdd8b893d43e673a3c05380d1dd86515c6"
+    },
+    {
+      "png": "assets/images/background/closeup_m13_ampoule_tray.png",
+      "webp": "assets/images/background/closeup_m13_ampoule_tray.webp",
+      "width": 1672,
+      "height": 941,
+      "losslessPixelMatch": true,
+      "tool": "built-in image_gen",
+      "quality": "maximum supported quality and native resolution explicitly requested; controls not exposed",
+      "replacementApproved": true,
+      "pngSha256": "b8dc9055142cbbb46f31be6d912ceec72761234ef8668dc4429287687e20b77d"
+    },
+    {
+      "png": "assets/images/background/closeup_rooftop_etching.png",
+      "webp": "assets/images/background/closeup_rooftop_etching.webp",
+      "width": 1672,
+      "height": 941,
+      "losslessPixelMatch": true,
+      "tool": "built-in image_gen",
+      "quality": "maximum supported quality and native resolution explicitly requested; controls not exposed",
+      "replacementApproved": true,
+      "pngSha256": "cb01524521e9a003c8ec6f2b95c2c60e41d4ea4b82b0eaf8d636019c81ddbf7d"
+    }
+  ]
+}

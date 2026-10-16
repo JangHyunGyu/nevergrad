@@ -1,763 +1,1877 @@
 {
-    "day5_night_start": {
-        "text": "*Night.*"
-    },
-    "day5_night_affinity_check": {
-        "text": ""
-    },
-    "day5_night_set_high_affinity": {
-        "text": ""
-    },
-    "day5_night_sea_affinity_check": {
-        "text": ""
-    },
-    "day5_night_set_high_sea_affinity": {
-        "text": ""
-    },
-    "day5_night_complicit_eval": {
-        "text": ""
-    },
-    "day5_night_set_complicit_ready": {
-        "text": ""
-    },
-    "day5_night_routing": {
-        "text": ""
-    },
-    "day5_ending_forget_forced_1": {
-        "text": "*It's already too late. Only the cold mark where the needle was remains.*"
-    },
-    "day5_ending_forget_forced_2": {
-        "text": "...Sorry. It's late again this time."
-    },
-    "day5_ending_forget_forced_3": {
-        "text": "*Nurse Riin closed her eyes. She said something, but the sound was distant, like underwater.*"
-    },
-    "day5_ending_forget_forced_4": {
-        "text": "*My consciousness sinks. Neither anger nor words will come.*"
-    },
-    "day5_ending_ghost_guided_1": {
-        "text": "*Amidst the blackout, the emergency bell rang once. Someone roughly shoves my back.*"
-    },
-    "day5_ending_ghost_guided_2": {
-        "text": "...Don't stop. Your body remembers the way."
-    },
-    "day5_ending_ghost_guided_3": {
-        "text": "*I ran up the stairs two at a time. Seolhwa seems to be leading. My feet are already headed for the emergency exit.*"
-    },
-    "day5_ending_ghost_guided_4": {
-        "text": "Good. Keep going. Now, just push the door."
-    },
-    "day5_ending_ghost_guided_5": {
-        "text": "*The door opened, and cold air rushed in. That's when I finally caught my breath.*"
-    },
-    "day5_ending_true_1": {
-        "text": "*Ms. Eunsu's hand trembles. The fingers gripping the syringe are white.*"
-    },
-    "day5_ending_true_2": {
-        "text": "*......*"
-    },
-    "day5_ending_true_3": {
-        "text": "...okay. It's the door again this time."
-    },
-    "day5_ending_true_4": {
-        "text": "*Ms. Eunsu sets the syringe down and steps away from the emergency exit.*"
-    },
-    "day5_ending_true_5": {
-        "text": "*Yuna and I pass through the emergency exit onto the fire escape behind the old wing. The late-night air is cold. Streetlights line the road beyond the school fence.*"
-    },
-    "day5_ending_true_6": {
-        "text": "*I looked back.*"
-    },
-    "day5_ending_true_7": {
-        "text": "*Seolhwa is standing inside the emergency exit. She can't step outside the door.*\n\nCome with us. Could you get out if I held your hand?"
-    },
-    "day5_ending_true_8": {
-        "text": "...Go."
-    },
-    "day5_ending_true_9": {
-        "text": "Seolhwa--"
-    },
-    "day5_ending_true_10": {
-        "text": "go. now."
-    },
-    "day5_ending_true_11": {
-        "text": "*Seolhwa smiles. The emergency light passes through her face and lights the tiles behind her.*"
-    },
-    "day5_ending_true_12": {
-        "text": "Six times, I stopped here. Don't look back today."
-    },
-    "day5_ending_true_13": {
-        "text": "My record ends here. You go through the door."
-    },
-    "day5_ending_true_14": {
-        "text": "Lee Seolhwa. I’ll remember that name."
-    },
-    "day5_ending_true_14a": {
-        "text": "*Inside the building, Ms. Eunsu’s footsteps recede.*"
-    },
-    "day5_ending_true_14b": {
-        "text": "*Yuna takes hold of my sleeve. Seolhwa is still standing just inside the doorway.*"
-    },
-    "day5_ending_true_15": {
-        "text": "*Seolhwa stopped. She looked back. Light glistened at the corners of her eyes, but the corners of her mouth were turned up.*"
-    },
-    "day5_ending_true_16": {
-        "text": "That’s the first time you’ve called me that."
-    },
-    "day5_ending_true_17": {
-        "text": "*The outline of Seolhwa becomes blurred. Only the light remains on the stairs.*"
-    },
-    "day5_ending_true_18": {
-        "text": "*The smell of rainy stairs, a wet uniform sleeve, the cold hand that held my left -- all of it rushes in at once.*"
-    },
-    "day5_ending_true_19": {
-        "text": "*For an instant, scenes rush in with no order at all.*"
-    },
-    "day5_ending_true_20": {
-        "text": "*The rain at the library, the locked basement door, the hand I held while climbing over the fence. They come back one after another.*"
-    },
-    "day5_ending_true_21": {
-        "text": "*All twelve name tags in my memory are turned face down.*"
-    },
-    "day5_ending_true_21a": {
-        "text": "*Minsu’s profile picture is a blank gray image. I cannot recall my old classroom or why my parents moved. Only scenes of this school remain.*"
-    },
-    "day5_ending_true_22": {
-        "text": "*As I drop to my knees, Yuna sits beside me and supports my back.*\n\nWait. Hold me. I can see the road, but I can't stand."
-    },
-    "day5_ending_true_23": {
-        "text": "...It's okay, sunbae."
-    },
-    "day5_ending_true_24": {
-        "text": "Let's go. We'll keep talking outside. I don't want to stay here.\n\n*Yuna looks across the dark sports field, toward the road outside the school fence, and speaks.*"
-    },
-    "day5_ending_true_25": {
-        "text": "It's over. Here, at least."
-    },
-    "day5_ending_true_26": {
-        "text": "*A news article. 'Unlicensed Research Facility Discovered at XX High School -- Allegations of Illegal Drug Administration and Human Clinical Trials'*"
-    },
-    "day5_ending_true_27": {
-        "text": "*'Multiple victims report memory disorders... Lead researcher B arrested' '3-year student C, who collected evidence while enrolled, played a decisive role in the expose'*"
-    },
-    "day5_ending_true_28": {
-        "text": "*I put down my phone. A new school, a new classroom. No familiar faces.*"
-    },
-    "day5_ending_true_29": {
-        "text": "*I looked at the name tag. My name. ...Not the 13th name, but the first one.*"
-    },
-    "day5_ending_true_30": {
-        "text": "*I copy the names onto paper. Seolhwa's name and every face that remains go on the same line.*"
-    },
-    "day5_ending_true_31": {
-        "text": "*I take the pencil in my left hand. A graphite mark forms beside my index finger.*"
-    },
-    "day5_ending_true_32": {
-        "text": ""
-    },
-    "day5_ending_true_subtitle": {
-        "text": "Graduation — Outside the Classroom."
-    },
-    "day5_ending_true_title": {
-        "text": ""
-    },
-    "day5_postcredit_1": {
-        "text": "*...Somewhere, a phone rings.*"
-    },
-    "day5_postcredit_2": {
-        "text": "*A spacious office. Stacks of documents on a desk. Multiple monitors. A school blueprint on the screen.*"
-    },
-    "day5_postcredit_3": {
-        "text": "Yes. Confirmed. The site will be closed. Asset recovery is complete, personnel will be reassigned."
-    },
-    "day5_postcredit_4": {
-        "text": "Close Case 13 at the site manager level. Do not leave the foundation's name behind."
-    },
-    "day5_postcredit_5": {
-        "text": "...Yes. The selection of the next pilot school is complete."
-    },
-    "day5_postcredit_6": {
-        "text": "Has the staff reassignment proposal been submitted?"
-    },
-    "day5_postcredit_7": {
-        "text": "*The monitor screen changes. New school. New school uniform. New names. File title: 'Edina Foundation - Maladjusted Student Correction Program 2nd Base Implementation Plan'. The logo at the top of the document remains the same.*"
-    },
-    "day5_postcredit_8": {
-        "text": "*...A new transfer student's profile appears on screen. The student in the photo is smiling. With a face that knows nothing.*"
-    },
-    "day5_postcredit_end": {
-        "text": ""
-    },
-    "day5_ending_escape_1": {
-        "text": "*I ran. With Yuna. Escaped the school.*"
-    },
-    "day5_ending_escape_2": {
-        "text": "*I looked back. No one is following.*"
-    },
-    "day5_ending_escape_3": {
-        "text": "*Even after I got outside the school gate, I could not stop running for a while.*"
-    },
-    "day5_ending_escape_4": {
-        "text": "Sunbae, we don’t have the documents. Just the photos on the camera."
-    },
-    "day5_ending_escape_5": {
-        "text": "...At least we're out."
-    },
-    "day5_ending_escape_6": {
-        "text": "*I walked. The predawn road. Under a streetlight.*"
-    },
-    "day5_ending_escape_7": {
-        "text": "*...My head is quiet. Only the spot where Seolhwa had been standing stays blank.*"
-    },
-    "day5_ending_escape_8": {
-        "text": "*When I look back toward the school, only one third-floor window in the old building is dark and empty.*"
-    },
-    "day5_ending_escape_9": {
-        "text": "...Sunbae. Were you left-handed?"
-    },
-    "day5_ending_escape_10": {
-        "text": "...No? I'm right-handed."
-    },
-    "day5_ending_escape_11": {
-        "text": "*Yuna opens her mouth, then readjusts her grip on her bag strap without saying anything.*\n\nWhy? Was that a strange answer? Weren't you just asking?"
-    },
-    "day5_ending_escape_12": {
-        "text": "*...I was gripping the bag strap with my left hand. Unconsciously.*"
-    },
-    "day5_ending_escape_13": {
-        "text": "*3 months later.*"
-    },
-    "day5_ending_escape_14": {
-        "text": "*I typed ○○ High School into the news search bar. No new articles appeared.*"
-    },
-    "day5_ending_escape_15": {
-        "text": "Sunbae. They say a new transfer student arrived at that school today."
-    },
-    "day5_ending_escape_subtitle": {
-        "text": "Flight -- An escape without memory."
-    },
-    "day5_ending_escape_title": {
-        "text": ""
-    },
-    "day5_ending_resist_1": {
-        "text": "...Together?"
-    },
-    "day5_ending_resist_2": {
-        "text": "This probably isn’t your first signature. But you shouldn’t sign any more."
-    },
-    "day5_ending_resist_3": {
-        "text": "*......*"
-    },
-    "day5_ending_resist_4": {
-        "text": "No. From the 3rd time on, it was my choice."
-    },
-    "day5_ending_resist_5": {
-        "text": "Every signature after that is in my handwriting, {name}."
-    },
-    "day5_ending_resist_6": {
-        "text": "If you stay here, another student will end up in that seat."
-    },
-    "day5_ending_resist_7": {
-        "text": "*Ms. Eunsu stops. Seolhwa appears—not behind her, but superimposed over my field of vision.*"
-    },
-    "day5_ending_resist_8": {
-        "text": "...Eunsu."
-    },
-    "day5_ending_resist_9": {
-        "text": "*The name leaves my mouth without thinking. Ms. Eunsu lowers the hand holding the syringe.*"
-    },
-    "day5_ending_resist_10": {
-        "text": "...Lee Seolhwa."
-    },
-    "day5_ending_resist_11": {
-        "text": "*I speak Seolhwa’s words aloud.*\n\nYou smiled every time a new name tag went up."
-    },
-    "day5_ending_resist_12": {
-        "text": "And each time, the smile lasted less and less."
-    },
-    "day5_ending_resist_13": {
-        "text": "You need to leave too, ma’am."
-    },
-    "day5_ending_resist_14": {
-        "text": "*Ms. Eunsu sets the syringe on the floor and stands there for a long time.*\n\nDon't pick it up again. The door is open. Let's go together."
-    },
-    "day5_ending_resist_15": {
-        "text": "...Once I go outside, every document will have my name on it."
-    },
-    "day5_ending_resist_16": {
-        "text": "I know."
-    },
-    "day5_ending_resist_17": {
-        "text": "I could go to prison."
-    },
-    "day5_ending_resist_18": {
-        "text": "I know."
-    },
-    "day5_ending_resist_18a": {
-        "text": "The 11th Oh Taehyun... said he trusted me. That it was all right because I was his teacher."
-    },
-    "day5_ending_resist_18b": {
-        "text": "*Ms. Eunsu can’t finish the sentence. She closes her mouth.*\n\nHe trusted you. What did you do?"
-    },
-    "day5_ending_resist_18c": {
-        "text": "...I erased it that night. The next morning, that student asked, 'Who are you, teacher?'"
-    },
-    "day5_ending_resist_18d": {
-        "text": "Even so, I signed. On the next line, and the one after that."
-    },
-    "day5_ending_resist_19": {
-        "text": "*Ms. Eunsu covers her mouth and cannot raise her head for a while.*\n\nLook at me. I know. Going outside won't make the papers disappear."
-    },
-    "day5_ending_resist_20": {
-        "text": "...I erased you with my own hands. And yet?"
-    },
-    "day5_ending_resist_21": {
-        "text": "Once we get these records outside, you'll be held responsible. But that's better than writing the next line here."
-    },
-    "day5_ending_resist_22": {
-        "text": "*I pass through the emergency exit with Ms. Eunsu.*\n\n*Seolhwa smiles from behind the door, her outline dissolving into the light on the stairs.*"
-    },
-    "day5_ending_resist_23": {
-        "text": "*Ms. Eunsu got out. But the stamp at the top of the documents remains.*"
-    },
-    "day5_ending_resist_24": {
-        "text": "*In the empty faculty room, a new homeroom teacher nameplate is set down. And at the empty desk -- a new transfer student.*"
-    },
-    "day5_ending_resist_subtitle": {
-        "text": "Defiance — Records Handed Over to the Outside."
-    },
-    "day5_ending_resist_title": {
-        "text": ""
-    },
-    "day5_ending_cage_eunsu_1": {
-        "text": "*Night has fallen, but the classroom lights are still on. Ms. Eunsu sorts the attendance register as usual.*\n\nStill looking at the register? Class is over. Can't we turn the lights off? Sitting here under all this light is a bit…"
-    },
-    "day5_ending_cage_eunsu_2": {
-        "text": "...Today's record ends here. Rest."
-    },
-    "day5_ending_cage_eunsu_3": {
-        "text": "*I nodded. The words that had risen all the way up my throat sank back down.*"
-    },
-    "day5_ending_cage_eunsu_4": {
-        "text": "Starting tomorrow, just go back to normal. Same seat as in the attendance book."
-    },
-    "day5_ending_cage_eunsu_5": {
-        "text": "*The classroom door closed softly. Even knowing it wasn't locked, I didn't get up from my seat.*"
-    },
-    "day5_ending_cage_eunsu_6": {
-        "text": "*...The next afternoon. The same classroom, the same window seat. Ms. Eunsu's voice rings faintly, like a bell.*"
-    },
-    "day5_ending_cage_eunsu_7": {
-        "text": "*The same class every day. The same classroom every day. The same smile every day.*"
-    },
-    "day5_ending_cage_eunsu_8": {
-        "text": "*A car passes outside the window. I don't get up from my seat.*"
-    },
-    "day5_ending_cage_eunsu_9": {
-        "text": "*I looked out the window. The road beyond the fence. A car passes.*"
-    },
-    "day5_ending_cage_eunsu_10": {
-        "text": "*The classroom door isn’t locked.*"
-    },
-    "day5_ending_cage_eunsu_11": {
-        "text": "*I could leave, but I don’t get up from the chair.*"
-    },
-    "day5_ending_cage_sea_1": {
-        "text": "*Sea embraced me. In the hallway.*"
-    },
-    "day5_ending_cage_sea_2": {
-        "text": "...Yeah."
-    },
-    "day5_ending_cage_sea_3": {
-        "text": "I can stay here today, right?"
-    },
-    "day5_ending_cage_sea_4": {
-        "text": "*I only nod. Sea rests her forehead on my shoulder and lets out a long breath.*\n\nYeah. I'll stay today. Just loosen your grip a little."
-    },
-    "day5_ending_cage_sea_5": {
-        "text": ""
-    },
-    "day5_ending_cage_sea_6": {
-        "text": "*...The student council room. Sea opened a lunchbox. She looks at me and smiles.*"
-    },
-    "day5_ending_cage_sea_7": {
-        "text": "*The thirteenth. Sea doesn't close the lunchbox. The seat across from her remains occupied.*"
-    },
-    "day5_ending_cage_sea_8": {
-        "text": "*Yuna's camera is not by the library window. Only the habit of touching the left wall every night remains.*"
-    },
-    "day5_ending_cage_sea_9": {
-        "text": "*Inside the desk drawer, one name tag still remains empty.*"
-    },
-    "day5_ending_cage_subtitle": {
-        "text": "Cage — The Seat I Chose to Stay In."
-    },
-    "day5_ending_cage_title": {
-        "text": ""
-    },
-    "day5_ending_forget_1": {
-        "text": "...Erase me."
-    },
-    "day5_ending_forget_2": {
-        "text": "*Ms. Eunsu stopped.*"
-    },
-    "day5_ending_forget_3": {
-        "text": "...Are you sure?"
-    },
-    "day5_ending_forget_4": {
-        "text": "All those blanks are my records, aren’t they?"
-    },
-    "day5_ending_forget_5": {
-        "text": "I can't. I don't think I can walk out carrying all those names."
-    },
-    "day5_ending_forget_6": {
-        "text": "Please erase it. I keep seeing the names."
-    },
-    "day5_ending_forget_7": {
-        "text": "*Ms. Eunsu raises the syringe and brings it toward my arm.*\n\nCan I close my eyes?"
-    },
-    "day5_ending_forget_8": {
-        "text": "...I'm sorry."
-    },
-    "day5_ending_forget_9": {
-        "text": "*Numbness spreads through my arm from where the needle went in.*"
-    },
-    "day5_ending_forget_10": {
-        "text": "*Last seen — Seolhwa. The mouth moves. There is no sound.*"
-    },
-    "day5_ending_forget_11": {
-        "text": "*...I can read it. The movement of her lips.*"
-    },
-    "day5_ending_forget_12": {
-        "text": "*\"Don't forget\"*"
-    },
-    "day5_ending_forget_13": {
-        "text": "*I forgot.*"
-    },
-    "day5_ending_forget_14": {
-        "text": "*...It's bright. An alarm is ringing. I looked at my phone.*"
-    },
-    "day5_ending_forget_15": {
-        "text": "*'Good morning, {new_name}!'*"
-    },
-    "day5_ending_forget_16": {
-        "text": "*The name is different. The face in the mirror looks familiar, but I can’t remember what to call it.*"
-    },
-    "day5_ending_forget_17": {
-        "text": "*My chin is wet. The thought of wiping it comes a beat late.*"
-    },
-    "day5_ending_forget_18": {
-        "text": "*I need to go to school. A new school.*"
-    },
-    "day5_ending_forget_19": {
-        "text": "*A teacher is standing at the school gate.*"
-    },
-    "day5_ending_forget_20": {
-        "text": "Welcome. You're {new_name}, right? The transfer student?"
-    },
-    "day5_ending_forget_21": {
-        "text": "I'll look after your school life from now on."
-    },
-    "day5_ending_forget_22": {
-        "text": "*Ms. Eunsu smiles warmly. The corners of her mouth and eyes rise in perfect unison.*"
-    },
-    "day5_ending_forget_sea_branch": {
-        "text": ""
-    },
-    "day5_ending_forget_sea_1": {
-        "text": "*A girl is standing at the school gate. A bright smile. Class representative armband.*"
-    },
-    "day5_ending_forget_sea_2": {
-        "text": "Hi! You're the new transfer student, right? I'll show you around."
-    },
-    "day5_ending_forget_sea_3": {
-        "text": "*...This person looks familiar. Where was it? ...I cannot remember.*"
-    },
-    "day5_ending_forget_subtitle": {
-        "text": "Oblivion — The Fourteenth Name Tag."
-    },
-    "day5_ending_forget_title": {
-        "text": ""
-    },
-    "day5_ending_ghost_1": {
-        "text": "*My feet won't lift, as if they're stuck to the floor.*"
-    },
-    "day5_ending_ghost_2": {
-        "text": "*Ms. Eunsu approaches. Syringe in hand.*"
-    },
-    "day5_ending_ghost_3": {
-        "text": "*...Seolhwa appeared. Between me and Ms. Eunsu.*"
-    },
-    "day5_ending_ghost_4": {
-        "text": "...I'll do it."
-    },
-    "day5_ending_ghost_5": {
-        "text": "Seolhwa--?"
-    },
-    "day5_ending_ghost_6": {
-        "text": "Six times, I stopped here."
-    },
-    "day5_ending_ghost_7": {
-        "text": "Your feet stopped again. So this time, I stepped in front."
-    },
-    "day5_ending_ghost_8": {
-        "text": "This time, I'll push you forward."
-    },
-    "day5_ending_ghost_9": {
-        "text": "*Seolhwa looks straight at me. I’ve never seen that look in any of the photos so far.*\n\nLook outside, not at me. Are you looking at me like that because you mean to send only me out?"
-    },
-    "day5_ending_ghost_10": {
-        "text": "Run. now."
-    },
-    "day5_ending_ghost_11": {
-        "text": "*My body moved. My toes turned toward the emergency exit.*"
-    },
-    "day5_ending_ghost_12": {
-        "text": "*I grabbed Yuna's hand and ran for the emergency exit. Ms. Eunsu shouted from behind but I didn't stop.*"
-    },
-    "day5_ending_ghost_13": {
-        "text": "*Outside the emergency exit, I look back. Seolhwa is smiling inside the door. I can see the wall through her.*"
-    },
-    "day5_ending_ghost_14": {
-        "text": "...teacher. Next, there is no name tag."
-    },
-    "day5_ending_ghost_15": {
-        "text": "*Seolhwa vanished. Soundlessly. At the same time, an alarm rang inside the building. Sirens, footsteps, and shouts tangled together.*"
-    },
-    "day5_ending_ghost_16": {
-        "text": "*Seolhwa's voice could no longer be heard. I escaped the school. Behind me, sirens wailed.*"
-    },
-    "day5_ending_ghost_17": {
-        "text": "*Even after transferring schools, I still avoid empty seats and touch the wall with my left hand.*"
-    },
-    "day5_ending_ghost_18": {
-        "text": "*Sometimes at night, when I look in the mirror, dark brown hair passes by one beat late.*"
-    },
-    "day5_ending_ghost_19": {
-        "text": "*When I pick up a pencil or turn left in a hallway, someone’s name comes to mind, then disappears.*"
-    },
-    "day5_ending_ghost_20": {
-        "text": "*Only the stroke bending left and the scratch on the second stair remain clear.*"
-    },
-    "day5_ending_ghost_21": {
-        "text": "*My left hand finds the rail first; I follow the left wall in corridors.*"
-    },
-    "day5_ending_ghost_22": {
-        "text": "*That school is still there. A new lock hangs on the emergency exit, and the key is in another hand.*"
-    },
-    "day5_ending_ghost_subtitle": {
-        "text": "Afterimage — The Habit That Remains."
-    },
-    "day5_ending_ghost_title": {
-        "text": ""
-    },
-    "day5_ending_complicit_1": {
-        "text": "*Ms. Eunsu held out a piece of paper.*"
-    },
-    "day5_ending_complicit_2": {
-        "text": "You take charge of the next child. Then you can stay."
-    },
-    "day5_ending_complicit_3": {
-        "text": "stay here I'll move the name to the top."
-    },
-    "day5_ending_complicit_4": {
-        "text": "*...*"
-    },
-    "day5_ending_complicit_5": {
-        "text": "*I looked at the paper. 'Project Nevergrad -- Assistant Researcher Contract.'*"
-    },
-    "day5_ending_complicit_6": {
-        "text": "...When the next child comes, can I smile at the front door too?"
-    },
-    "day5_ending_complicit_7": {
-        "text": "...Yes."
-    },
-    "day5_ending_complicit_8": {
-        "text": "*I placed my hand on the contract.*"
-    },
-    "day5_ending_complicit_8a": {
-        "text": "*The edge of the paper catches against my palm.*"
-    },
-    "day5_ending_complicit_8b": {
-        "text": "*I can see the door handle. But my gaze stays on the signature line.*"
-    },
-    "day5_ending_complicit_sign": {
-        "text": "*The tip of the pen touches the signature line.*"
-    },
-    "day5_ending_complicit_9": {
-        "text": "*...I signed it.*"
-    },
-    "day5_ending_complicit_10": {
-        "text": "*Ms. Eunsu smiled. Sea smiled too.*"
-    },
-    "day5_ending_complicit_11": {
-        "text": "*The corner of the mouth rose.*"
-    },
-    "day5_ending_complicit_12": {
-        "text": "*In the morning, a new student with a blank name tag walks toward the school gate.*"
-    },
-    "day5_ending_complicit_13": {
-        "text": "*Only the hair color is different. The hand habit of holding the bag strap is the same.*"
-    },
-    "day5_ending_complicit_14": {
-        "text": "Welcome. You're {14th_name}, right?"
-    },
-    "day5_ending_complicit_15": {
-        "text": "*The new student nods without a word. The fingers around the bag strap curl three times.*"
-    },
-    "day5_ending_complicit_16": {
-        "text": "Don't worry. Everyone will take good care of you."
-    },
-    "day5_ending_complicit_17": {
-        "text": "*Ms. Eunsu watches from behind. At the end of the hallway, Seolhwa stands without a word.*"
-    },
-    "day5_ending_complicit_18": {
-        "text": "*I laughed first*"
-    },
-    "day5_ending_complicit_subtitle": {
-        "text": "Accomplice — The Next Attendance Register."
-    },
-    "day5_ending_complicit_title": {
-        "text": ""
-    },
-    "day5_cage_loop": {
-        "text": ""
-    },
-    "day5_xover_server_1": {
-        "text": "*Connected to the institute's server. A file directory appears on the old monitor.*"
-    },
-    "day5_xover_server_2": {
-        "text": "*PROJECT CUPID -- Previous Cycle Records:*"
-    },
-    "day5_xover_server_3": {
-        "text": "*> cycle_01.zip  [INTACT]*"
-    },
-    "day5_xover_server_3_damaged": {
-        "text": "*> cycle_01.zip  [CORRUPTED]*"
-    },
-    "day5_xover_server_4": {
-        "text": "*Attachment: CUPID_ENV_PREVIEW*"
-    },
-    "day5_xover_server_preview_choice": {
-        "text": "*Run preview?*",
-        "choices": [
-            "RUN PREVIEW",
-            "Close"
-        ]
-    },
-    "day5_xover_preview_1": {
-        "text": "*...Cherry blossoms.*"
-    },
-    "day5_xover_preview_2": {
-        "text": "*Spring breeze. New uniform. First day of transfer.*"
-    },
-    "day5_xover_preview_3": {
-        "text": "*Cherry petals repeat from the same position. Only the wind direction changes.*"
-    },
-    "day5_xover_preview_4": {
-        "text": "*Bottom right of the screen, in small text: cycle_01*"
-    },
-    "day5_xover_preview_heroine": {
-        "text": "*[CUPID_ENV_PREVIEW]*\n*Emotional imprint model: {cupid_heroine}*\n*Compliance response rate: {cupid_compliance}*\n*Pre-dose environment response test matches M-13 stabilization index.*"
-    },
-    "day5_xover_preview_5": {
-        "text": "*The monitor went dark.*"
-    },
-    "day5_xover_server_end": {
-        "text": "*...Closed the files.*"
-    },
-    "day5_observer_1": {
-        "text": "*The credits ended. The screen goes dark. Blackout.*"
-    },
-    "day5_observer_2": {
-        "text": "*3 seconds.*"
-    },
-    "day5_observer_3": {
-        "text": "*Text appears one character at a time in the center of the screen.*"
-    },
-    "day5_observer_4": {
-        "text": "EDINA FOUNDATION / NEVERGRAD RESEARCH INSTITUTE\nSecurity audit: external review session\nReference file: #13 observation record"
-    },
-    "day5_observer_5": {
-        "text": "Access scope: audit / monitoring\nSession status: connected\nSubject contact authorization: none"
-    },
-    "day5_observer_6": {
-        "text": "Subject: #13 ({name})\nSession connection time: {play_time}\n\nContact / intervention summary\nSea contacts: {route_data}\nYuna contact confirmed: {met_yuna}\nRiin visits: {riin_visits}\nSeolhwa contact attempts: {seolhwa_attempts}\nEvidence secured: {evidence_data}\nFinal response record: {timer_data}"
-    },
-    "day5_observer_7": {
-        "text": "Contact record comparison complete\nComparing behavioral patterns"
-    },
-    "day5_observer_8": {
-        "text": "Reference: research director Park Eunsu / 13 observations\nExternal review session: #13 ({name}) / {play_time}\n\nShared fields: continued access after warning; accumulated interventions\nSimilarity: persistent observation pattern matches\n\nAutomated decision: pending\nSession termination request: not received"
-    },
-    "day5_observer_cupid_check": {
-        "text": ""
-    },
-    "day5_observer_cupid_extra": {
-        "text": "Cross-reference:\n\nCUPID_ENV_PREVIEW detected.\nEmotional imprint: {cupid_heroine}\nCompliance rate: {cupid_compliance}\nPartially matches M-13 stabilization indicators.\n\nNotes:\nObserver data is still bound to the #13 file."
-    },
-    "day5_observer_9": {
-        "text": "*The screen holds. 5 seconds.*"
-    },
-    "day5_observer_10": {
-        "text": "*And at the bottom, in very small text:*"
-    },
-    "day5_observer_11": {
-        "text": "[Will you graduate?]",
-        "choices": [
-            "Yes",
-            "No"
-        ]
-    },
-    "day5_night_seolhwa_affinity_check": {
-        "text": ""
-    },
-    "day5_night_set_high_seolhwa_affinity": {
-        "text": ""
-    },
-    "day5_ending_true_voice_check": {
-        "text": ""
-    },
-    "day5_ending_true_16_clear_intro": {
-        "text": "*As Seolhwa opened her mouth, the muffled static faded away. The voice that had called out from behind the seventh stairwell reached me clearly.*"
-    },
-    "day5_ending_true_16_clear": {
-        "text": "That’s the first time you’ve called me that."
-    },
-    "day5_ending_true_riin_check": {
-        "text": ""
-    },
-    "day5_ending_true_27_riin": {
-        "text": "*Additional materials appeared below the article. Ms. Riin, who had escaped with us, submitted six cycles of actual medication comparison logs and original charts.*"
-    },
-    "day5_ending_true_27_riin_2": {
-        "text": "*Headquarters approval numbers remained beside every dosing date. An early statement trying to frame the case as the lead researcher’s personal misconduct was taken down after half a day.*"
-    },
-    "day5_ending_true_sea_check": {
-        "text": ""
-    },
-    "day5_ending_true_27_sea": {
-        "text": "*Sea received outside protective custody after leaving the facility with us. A few days later, we walked side by side down a daytime shopping street far from school. In her hands, there was neither an attendance book nor the student council room key.*"
-    },
-    "day5_ending_true_27_sea_2": {
-        "text": "I don’t have to wear an armband or follow anyone anymore. Shall we try that street over there too?"
-    },
-    "day5_ending_true_memory_check": {
-        "text": ""
-    },
-    "day5_ending_true_30_memory": {
-        "text": "*Every last word we had exchanged behind the old building’s stairs came back to me as well. Beside her name, I added one more line: “Next time, let’s meet outside instead of here.”*"
-    },
-    "day5_ending_escape_riin_check": {
-        "text": ""
-    },
-    "day5_ending_escape_riin": {
-        "text": "*Ms. Riin, who had come out with us, relocated to evade the foundation’s pursuit. Before leaving, she sent a brief message saying the original charts hidden beneath the infirmary floor had already been seized.*"
-    },
-    "day5_ending_escape_sea_check": {
-        "text": ""
-    },
-    "day5_ending_escape_sea": {
-        "text": "*Sea, who had escaped with us, moved to an external protective shelter far from school. Attached below her brief message saying she had arrived was a single photo of a paper bag from a neighborhood bakery.*"
-    }
+  "day5_night_start": {
+    "text": "*Night.*"
+  },
+  "day5_night_affinity_check": {
+    "text": ""
+  },
+  "day5_night_set_high_affinity": {
+    "text": ""
+  },
+  "day5_night_sea_affinity_check": {
+    "text": ""
+  },
+  "day5_night_set_high_sea_affinity": {
+    "text": ""
+  },
+  "day5_night_complicit_eval": {
+    "text": ""
+  },
+  "day5_night_set_complicit_ready": {
+    "text": ""
+  },
+  "day5_night_routing": {
+    "text": ""
+  },
+  "day5_ending_forget_forced_1": {
+    "text": "*It's already too late. Only the cold mark where the needle was remains.*"
+  },
+  "day5_ending_forget_forced_2": {
+    "text": "...Sorry. It's late again this time."
+  },
+  "day5_ending_forget_forced_3": {
+    "text": "*Nurse Riin closed her eyes. She said something, but the sound was distant, like underwater.*"
+  },
+  "day5_ending_forget_forced_4": {
+    "text": "*My consciousness sinks. Neither anger nor words will come.*"
+  },
+  "day5_ending_ghost_guided_1": {
+    "text": "*Amidst the blackout, the emergency bell rang once. Someone roughly shoves my back.*"
+  },
+  "day5_ending_ghost_guided_2": {
+    "text": "...Don't stop. Your body remembers the way."
+  },
+  "day5_ending_ghost_guided_3": {
+    "text": "*I ran up the stairs two at a time. Seolhwa seems to be leading. My feet are already headed for the emergency exit.*"
+  },
+  "day5_ending_ghost_guided_4": {
+    "text": "Good. Keep going. Now, just push the door."
+  },
+  "day5_ending_ghost_guided_5": {
+    "text": "*The door opened, and cold air rushed in. That's when I finally caught my breath.*"
+  },
+  "day5_ending_true_1": {
+    "text": "*Ms. Eunsu's hand trembles. The fingers gripping the syringe are white.*"
+  },
+  "day5_ending_true_2": {
+    "text": "*......*"
+  },
+  "day5_ending_true_3": {
+    "text": "...okay. It's the door again this time."
+  },
+  "day5_ending_true_4": {
+    "text": "*Ms. Eunsu sets the syringe down and steps away from the emergency exit.*"
+  },
+  "day5_ending_true_5": {
+    "text": "*Yuna and I pass through the emergency exit onto the fire escape behind the old wing. The late-night air is cold. Streetlights line the road beyond the school fence.*"
+  },
+  "day5_ending_true_6": {
+    "text": "*I looked back.*"
+  },
+  "day5_ending_true_7": {
+    "text": "*Seolhwa is standing inside the emergency exit. She can't step outside the door.*\n\nCome with us. Could you get out if I held your hand?"
+  },
+  "day5_ending_true_8": {
+    "text": "...Go."
+  },
+  "day5_ending_true_9": {
+    "text": "Seolhwa--"
+  },
+  "day5_ending_true_10": {
+    "text": "go. now."
+  },
+  "day5_ending_true_11": {
+    "text": "*Seolhwa smiles. The emergency light passes through her face and lights the tiles behind her.*"
+  },
+  "day5_ending_true_12": {
+    "text": "Six times, I stopped here. Don't look back today."
+  },
+  "day5_ending_true_13": {
+    "text": "My record ends here. You go through the door."
+  },
+  "day5_ending_true_14": {
+    "text": "Lee Seolhwa. I’ll remember that name."
+  },
+  "day5_ending_true_14a": {
+    "text": "*Inside the building, Ms. Eunsu’s footsteps recede.*"
+  },
+  "day5_ending_true_14b": {
+    "text": "*Yuna takes hold of my sleeve. Seolhwa is still standing just inside the doorway.*"
+  },
+  "day5_ending_true_15": {
+    "text": "*Seolhwa stopped. She looked back. Light glistened at the corners of her eyes, but the corners of her mouth were turned up.*"
+  },
+  "day5_ending_true_16": {
+    "text": "That’s the first time you’ve called me that."
+  },
+  "day5_ending_true_17": {
+    "text": "*The outline of Seolhwa becomes blurred. Only the light remains on the stairs.*"
+  },
+  "day5_ending_true_18": {
+    "text": "*The smell of rainy stairs, a wet uniform sleeve, the cold hand that held my left -- all of it rushes in at once.*"
+  },
+  "day5_ending_true_19": {
+    "text": "*For an instant, scenes rush in with no order at all.*"
+  },
+  "day5_ending_true_20": {
+    "text": "*The rain at the library, the locked basement door, the hand I held while climbing over the fence. They come back one after another.*"
+  },
+  "day5_ending_true_21": {
+    "text": "*All twelve name tags in my memory are turned face down.*"
+  },
+  "day5_ending_true_21a": {
+    "text": "*Minsu’s profile picture is a blank gray image. I cannot recall my old classroom or why my parents moved. Only scenes of this school remain.*"
+  },
+  "day5_ending_true_22": {
+    "text": "*As I drop to my knees, Yuna sits beside me and supports my back.*\n\nWait. Hold me. I can see the road, but I can't stand."
+  },
+  "day5_ending_true_23": {
+    "text": "...It's okay, sunbae."
+  },
+  "day5_ending_true_24": {
+    "text": "Let's go. We'll keep talking outside. I don't want to stay here.\n\n*Yuna looks across the dark sports field, toward the road outside the school fence, and speaks.*"
+  },
+  "day5_ending_true_25": {
+    "text": "It's over. Here, at least."
+  },
+  "day5_ending_true_26": {
+    "text": "*A news article. 'Unlicensed Research Facility Discovered at XX High School -- Allegations of Illegal Drug Administration and Human Clinical Trials'*"
+  },
+  "day5_ending_true_27": {
+    "text": "*'Multiple victims report memory disorders... Lead researcher B arrested' '3-year student C, who collected evidence while enrolled, played a decisive role in the expose'*"
+  },
+  "day5_ending_true_28": {
+    "text": "*I put down my phone. A new school, a new classroom. No familiar faces.*"
+  },
+  "day5_ending_true_29": {
+    "text": "*I looked at the name tag. My name. ...Not the 13th name, but the first one.*"
+  },
+  "day5_ending_true_30": {
+    "text": "*I copy the names onto paper. Seolhwa's name and every face that remains go on the same line.*"
+  },
+  "day5_ending_true_31": {
+    "text": "*I take the pencil in my left hand. A graphite mark forms beside my index finger.*"
+  },
+  "day5_ending_true_32": {
+    "text": ""
+  },
+  "day5_ending_true_subtitle": {
+    "text": "Graduation — Outside the Classroom."
+  },
+  "day5_ending_true_title": {
+    "text": ""
+  },
+  "day5_postcredit_1": {
+    "text": "*...Somewhere, a phone rings.*"
+  },
+  "day5_postcredit_2": {
+    "text": "*A spacious office. Stacks of documents on a desk. Multiple monitors. A school blueprint on the screen.*"
+  },
+  "day5_postcredit_3": {
+    "text": "Yes. Confirmed. The site will be closed. Asset recovery is complete, personnel will be reassigned."
+  },
+  "day5_postcredit_4": {
+    "text": "Close Case 13 at the site manager level. Do not leave the foundation's name behind."
+  },
+  "day5_postcredit_5": {
+    "text": "...Yes. The selection of the next pilot school is complete."
+  },
+  "day5_postcredit_6": {
+    "text": "Has the staff reassignment proposal been submitted?"
+  },
+  "day5_postcredit_7": {
+    "text": "*The monitor screen changes. New school. New school uniform. New names. File title: 'Edina Foundation - Maladjusted Student Correction Program 2nd Base Implementation Plan'. The logo at the top of the document remains the same.*"
+  },
+  "day5_postcredit_8": {
+    "text": "*...A new transfer student's profile appears on screen. The student in the photo is smiling. With a face that knows nothing.*"
+  },
+  "day5_postcredit_end": {
+    "text": ""
+  },
+  "day5_ending_escape_1": {
+    "text": "*I ran. With Yuna. Escaped the school.*"
+  },
+  "day5_ending_escape_2": {
+    "text": "*I looked back. No one is following.*"
+  },
+  "day5_ending_escape_3": {
+    "text": "*Even after I got outside the school gate, I could not stop running for a while.*"
+  },
+  "day5_ending_escape_4": {
+    "text": "Sunbae, we don’t have the documents. Just the photos on the camera."
+  },
+  "day5_ending_escape_5": {
+    "text": "...At least we're out."
+  },
+  "day5_ending_escape_6": {
+    "text": "*I walked. The predawn road. Under a streetlight.*"
+  },
+  "day5_ending_escape_7": {
+    "text": "*...My head is quiet. Only the spot where Seolhwa had been standing stays blank.*"
+  },
+  "day5_ending_escape_8": {
+    "text": "*When I look back toward the school, only one third-floor window in the old building is dark and empty.*"
+  },
+  "day5_ending_escape_9": {
+    "text": "...Sunbae. Were you left-handed?"
+  },
+  "day5_ending_escape_10": {
+    "text": "...No? I'm right-handed."
+  },
+  "day5_ending_escape_11": {
+    "text": "*Yuna opens her mouth, then readjusts her grip on her bag strap without saying anything.*\n\nWhy? Was that a strange answer? Weren't you just asking?"
+  },
+  "day5_ending_escape_12": {
+    "text": "*...I was gripping the bag strap with my left hand. Unconsciously.*"
+  },
+  "day5_ending_escape_13": {
+    "text": "*3 months later.*"
+  },
+  "day5_ending_escape_14": {
+    "text": "*I typed ○○ High School into the news search bar. No new articles appeared.*"
+  },
+  "day5_ending_escape_15": {
+    "text": "Sunbae. They say a new transfer student arrived at that school today."
+  },
+  "day5_ending_escape_subtitle": {
+    "text": "Flight -- An escape without memory."
+  },
+  "day5_ending_escape_title": {
+    "text": ""
+  },
+  "day5_ending_resist_1": {
+    "text": "...Together?"
+  },
+  "day5_ending_resist_2": {
+    "text": "This probably isn’t your first signature. But you shouldn’t sign any more."
+  },
+  "day5_ending_resist_3": {
+    "text": "*......*"
+  },
+  "day5_ending_resist_4": {
+    "text": "No. From the 3rd time on, it was my choice."
+  },
+  "day5_ending_resist_5": {
+    "text": "Every signature after that is in my handwriting, {name}."
+  },
+  "day5_ending_resist_6": {
+    "text": "If you stay here, another student will end up in that seat."
+  },
+  "day5_ending_resist_7": {
+    "text": "*Ms. Eunsu stops. Seolhwa appears—not behind her, but superimposed over my field of vision.*"
+  },
+  "day5_ending_resist_8": {
+    "text": "...Eunsu."
+  },
+  "day5_ending_resist_9": {
+    "text": "*The name leaves my mouth without thinking. Ms. Eunsu lowers the hand holding the syringe.*"
+  },
+  "day5_ending_resist_10": {
+    "text": "...Lee Seolhwa."
+  },
+  "day5_ending_resist_11": {
+    "text": "*I speak Seolhwa’s words aloud.*\n\nYou smiled every time a new name tag went up."
+  },
+  "day5_ending_resist_12": {
+    "text": "And each time, the smile lasted less and less."
+  },
+  "day5_ending_resist_13": {
+    "text": "You need to leave too, ma’am."
+  },
+  "day5_ending_resist_14": {
+    "text": "*Ms. Eunsu sets the syringe on the floor and stands there for a long time.*\n\nDon't pick it up again. The door is open. Let's go together."
+  },
+  "day5_ending_resist_15": {
+    "text": "...Once I go outside, every document will have my name on it."
+  },
+  "day5_ending_resist_16": {
+    "text": "I know."
+  },
+  "day5_ending_resist_17": {
+    "text": "I could go to prison."
+  },
+  "day5_ending_resist_18": {
+    "text": "I know."
+  },
+  "day5_ending_resist_18a": {
+    "text": "The 11th Oh Taehyun... said he trusted me. That it was all right because I was his teacher."
+  },
+  "day5_ending_resist_18b": {
+    "text": "*Ms. Eunsu can’t finish the sentence. She closes her mouth.*\n\nHe trusted you. What did you do?"
+  },
+  "day5_ending_resist_18c": {
+    "text": "...I erased it that night. The next morning, that student asked, 'Who are you, teacher?'"
+  },
+  "day5_ending_resist_18d": {
+    "text": "Even so, I signed. On the next line, and the one after that."
+  },
+  "day5_ending_resist_19": {
+    "text": "*Ms. Eunsu covers her mouth and cannot raise her head for a while.*\n\nLook at me. I know. Going outside won't make the papers disappear."
+  },
+  "day5_ending_resist_20": {
+    "text": "...I erased you with my own hands. And yet?"
+  },
+  "day5_ending_resist_21": {
+    "text": "Once we get these records outside, you'll be held responsible. But that's better than writing the next line here."
+  },
+  "day5_ending_resist_22": {
+    "text": "*I pass through the emergency exit with Ms. Eunsu.*\n\n*Seolhwa smiles from behind the door, her outline dissolving into the light on the stairs.*"
+  },
+  "day5_ending_resist_23": {
+    "text": "*Ms. Eunsu got out. But the stamp at the top of the documents remains.*"
+  },
+  "day5_ending_resist_24": {
+    "text": "*In the empty faculty room, a new homeroom teacher nameplate is set down. And at the empty desk -- a new transfer student.*"
+  },
+  "day5_ending_resist_subtitle": {
+    "text": "Defiance — Records Handed Over to the Outside."
+  },
+  "day5_ending_resist_title": {
+    "text": ""
+  },
+  "day5_ending_cage_eunsu_1": {
+    "text": "*Night has fallen, but the classroom lights are still on. Ms. Eunsu sorts the attendance register as usual.*\n\nStill looking at the register? Class is over. Can't we turn the lights off? Sitting here under all this light is a bit…"
+  },
+  "day5_ending_cage_eunsu_2": {
+    "text": "...Today's record ends here. Rest."
+  },
+  "day5_ending_cage_eunsu_3": {
+    "text": "*I nodded. The words that had risen all the way up my throat sank back down.*"
+  },
+  "day5_ending_cage_eunsu_4": {
+    "text": "Starting tomorrow, just go back to normal. Same seat as in the attendance book."
+  },
+  "day5_ending_cage_eunsu_5": {
+    "text": "*The classroom door closed softly. Even knowing it wasn't locked, I didn't get up from my seat.*"
+  },
+  "day5_ending_cage_eunsu_6": {
+    "text": "*...The next afternoon. The same classroom, the same window seat. Ms. Eunsu's voice rings faintly, like a bell.*"
+  },
+  "day5_ending_cage_eunsu_7": {
+    "text": "*The same class every day. The same classroom every day. The same smile every day.*"
+  },
+  "day5_ending_cage_eunsu_8": {
+    "text": "*A car passes outside the window. I don't get up from my seat.*"
+  },
+  "day5_ending_cage_eunsu_9": {
+    "text": "*I looked out the window. The road beyond the fence. A car passes.*"
+  },
+  "day5_ending_cage_eunsu_10": {
+    "text": "*The classroom door isn’t locked.*"
+  },
+  "day5_ending_cage_eunsu_11": {
+    "text": "*I could leave, but I don’t get up from the chair.*"
+  },
+  "day5_ending_cage_sea_1": {
+    "text": "*Sea embraced me. In the hallway.*"
+  },
+  "day5_ending_cage_sea_2": {
+    "text": "...Yeah."
+  },
+  "day5_ending_cage_sea_3": {
+    "text": "I can stay here today, right?"
+  },
+  "day5_ending_cage_sea_4": {
+    "text": "*I only nod. Sea rests her forehead on my shoulder and lets out a long breath.*\n\nYeah. I'll stay today. Just loosen your grip a little."
+  },
+  "day5_ending_cage_sea_5": {
+    "text": ""
+  },
+  "day5_ending_cage_sea_6": {
+    "text": "*...The student council room. Sea opened a lunchbox. She looks at me and smiles.*"
+  },
+  "day5_ending_cage_sea_7": {
+    "text": "*The thirteenth. Sea doesn't close the lunchbox. The seat across from her remains occupied.*"
+  },
+  "day5_ending_cage_sea_8": {
+    "text": "*Yuna's camera is not by the library window. Only the habit of touching the left wall every night remains.*"
+  },
+  "day5_ending_cage_sea_9": {
+    "text": "*Inside the desk drawer, one name tag still remains empty.*"
+  },
+  "day5_ending_cage_subtitle": {
+    "text": "Cage — The Seat I Chose to Stay In."
+  },
+  "day5_ending_cage_title": {
+    "text": ""
+  },
+  "day5_ending_forget_1": {
+    "text": "...Erase me."
+  },
+  "day5_ending_forget_2": {
+    "text": "*Ms. Eunsu stopped.*"
+  },
+  "day5_ending_forget_3": {
+    "text": "...Are you sure?"
+  },
+  "day5_ending_forget_4": {
+    "text": "All those blanks are my records, aren’t they?"
+  },
+  "day5_ending_forget_5": {
+    "text": "I can't. I don't think I can walk out carrying all those names."
+  },
+  "day5_ending_forget_6": {
+    "text": "Please erase it. I keep seeing the names."
+  },
+  "day5_ending_forget_7": {
+    "text": "*Ms. Eunsu raises the syringe and brings it toward my arm.*\n\nCan I close my eyes?"
+  },
+  "day5_ending_forget_8": {
+    "text": "...I'm sorry."
+  },
+  "day5_ending_forget_9": {
+    "text": "*Numbness spreads through my arm from where the needle went in.*"
+  },
+  "day5_ending_forget_10": {
+    "text": "*Last seen — Seolhwa. The mouth moves. There is no sound.*"
+  },
+  "day5_ending_forget_11": {
+    "text": "*...I can read it. The movement of her lips.*"
+  },
+  "day5_ending_forget_12": {
+    "text": "*\"Don't forget\"*"
+  },
+  "day5_ending_forget_13": {
+    "text": "*I forgot.*"
+  },
+  "day5_ending_forget_14": {
+    "text": "*...It's bright. An alarm is ringing. I looked at my phone.*"
+  },
+  "day5_ending_forget_15": {
+    "text": "*'Good morning, {new_name}!'*"
+  },
+  "day5_ending_forget_16": {
+    "text": "*The name is different. The face in the mirror looks familiar, but I can’t remember what to call it.*"
+  },
+  "day5_ending_forget_17": {
+    "text": "*My chin is wet. The thought of wiping it comes a beat late.*"
+  },
+  "day5_ending_forget_18": {
+    "text": "*I need to go to school. A new school.*"
+  },
+  "day5_ending_forget_19": {
+    "text": "*A teacher is standing at the school gate.*"
+  },
+  "day5_ending_forget_20": {
+    "text": "Welcome. You're {new_name}, right? The transfer student?"
+  },
+  "day5_ending_forget_21": {
+    "text": "I'll look after your school life from now on."
+  },
+  "day5_ending_forget_22": {
+    "text": "*Ms. Eunsu smiles warmly. The corners of her mouth and eyes rise in perfect unison.*"
+  },
+  "day5_ending_forget_sea_branch": {
+    "text": ""
+  },
+  "day5_ending_forget_sea_1": {
+    "text": "*A girl is standing at the school gate. A bright smile. Class representative armband.*"
+  },
+  "day5_ending_forget_sea_2": {
+    "text": "Hi! You're the new transfer student, right? I'll show you around."
+  },
+  "day5_ending_forget_sea_3": {
+    "text": "*...This person looks familiar. Where was it? ...I cannot remember.*"
+  },
+  "day5_ending_forget_subtitle": {
+    "text": "Oblivion — The Fourteenth Name Tag."
+  },
+  "day5_ending_forget_title": {
+    "text": ""
+  },
+  "day5_ending_ghost_1": {
+    "text": "*My feet won't lift, as if they're stuck to the floor.*"
+  },
+  "day5_ending_ghost_2": {
+    "text": "*Ms. Eunsu approaches. Syringe in hand.*"
+  },
+  "day5_ending_ghost_3": {
+    "text": "*...Seolhwa appeared. Between me and Ms. Eunsu.*"
+  },
+  "day5_ending_ghost_4": {
+    "text": "...I'll do it."
+  },
+  "day5_ending_ghost_5": {
+    "text": "Seolhwa--?"
+  },
+  "day5_ending_ghost_6": {
+    "text": "Six times, I stopped here."
+  },
+  "day5_ending_ghost_7": {
+    "text": "Your feet stopped again. So this time, I stepped in front."
+  },
+  "day5_ending_ghost_8": {
+    "text": "This time, I'll push you forward."
+  },
+  "day5_ending_ghost_9": {
+    "text": "*Seolhwa looks straight at me. I’ve never seen that look in any of the photos so far.*\n\nLook outside, not at me. Are you looking at me like that because you mean to send only me out?"
+  },
+  "day5_ending_ghost_10": {
+    "text": "Run. now."
+  },
+  "day5_ending_ghost_11": {
+    "text": "*My body moved. My toes turned toward the emergency exit.*"
+  },
+  "day5_ending_ghost_12": {
+    "text": "*I grabbed Yuna's hand and ran for the emergency exit. Ms. Eunsu shouted from behind but I didn't stop.*"
+  },
+  "day5_ending_ghost_13": {
+    "text": "*Outside the emergency exit, I look back. Seolhwa is smiling inside the door. I can see the wall through her.*"
+  },
+  "day5_ending_ghost_14": {
+    "text": "...teacher. Next, there is no name tag."
+  },
+  "day5_ending_ghost_15": {
+    "text": "*Seolhwa vanished. Soundlessly. At the same time, an alarm rang inside the building. Sirens, footsteps, and shouts tangled together.*"
+  },
+  "day5_ending_ghost_16": {
+    "text": "*Seolhwa's voice could no longer be heard. I escaped the school. Behind me, sirens wailed.*"
+  },
+  "day5_ending_ghost_17": {
+    "text": "*Even after transferring schools, I still avoid empty seats and touch the wall with my left hand.*"
+  },
+  "day5_ending_ghost_18": {
+    "text": "*Sometimes at night, when I look in the mirror, dark brown hair passes by one beat late.*"
+  },
+  "day5_ending_ghost_19": {
+    "text": "*When I pick up a pencil or turn left in a hallway, someone’s name comes to mind, then disappears.*"
+  },
+  "day5_ending_ghost_20": {
+    "text": "*Only the stroke bending left and the scratch on the second stair remain clear.*"
+  },
+  "day5_ending_ghost_21": {
+    "text": "*My left hand finds the rail first; I follow the left wall in corridors.*"
+  },
+  "day5_ending_ghost_22": {
+    "text": "*That school is still there. A new lock hangs on the emergency exit, and the key is in another hand.*"
+  },
+  "day5_ending_ghost_subtitle": {
+    "text": "Afterimage — The Habit That Remains."
+  },
+  "day5_ending_ghost_title": {
+    "text": ""
+  },
+  "day5_ending_complicit_1": {
+    "text": "*Ms. Eunsu held out a piece of paper.*"
+  },
+  "day5_ending_complicit_2": {
+    "text": "You take charge of the next child. Then you can stay."
+  },
+  "day5_ending_complicit_3": {
+    "text": "stay here I'll move the name to the top."
+  },
+  "day5_ending_complicit_4": {
+    "text": "*...*"
+  },
+  "day5_ending_complicit_5": {
+    "text": "*I looked at the paper. 'Project Nevergrad -- Assistant Researcher Contract.'*"
+  },
+  "day5_ending_complicit_6": {
+    "text": "...When the next child comes, can I smile at the front door too?"
+  },
+  "day5_ending_complicit_7": {
+    "text": "...Yes."
+  },
+  "day5_ending_complicit_8": {
+    "text": "*I placed my hand on the contract.*"
+  },
+  "day5_ending_complicit_8a": {
+    "text": "*The edge of the paper catches against my palm.*"
+  },
+  "day5_ending_complicit_8b": {
+    "text": "*I can see the door handle. But my gaze stays on the signature line.*"
+  },
+  "day5_ending_complicit_sign": {
+    "text": "*The tip of the pen touches the signature line.*"
+  },
+  "day5_ending_complicit_9": {
+    "text": "*...I signed it.*"
+  },
+  "day5_ending_complicit_10": {
+    "text": "*Ms. Eunsu smiled. Sea smiled too.*"
+  },
+  "day5_ending_complicit_11": {
+    "text": "*The corner of the mouth rose.*"
+  },
+  "day5_ending_complicit_12": {
+    "text": "*In the morning, a new student with a blank name tag walks toward the school gate.*"
+  },
+  "day5_ending_complicit_13": {
+    "text": "*Only the hair color is different. The hand habit of holding the bag strap is the same.*"
+  },
+  "day5_ending_complicit_14": {
+    "text": "Welcome. You're {14th_name}, right?"
+  },
+  "day5_ending_complicit_15": {
+    "text": "*The new student nods without a word. The fingers around the bag strap curl three times.*"
+  },
+  "day5_ending_complicit_16": {
+    "text": "Don't worry. Everyone will take good care of you."
+  },
+  "day5_ending_complicit_17": {
+    "text": "*Ms. Eunsu watches from behind. At the end of the hallway, Seolhwa stands without a word.*"
+  },
+  "day5_ending_complicit_18": {
+    "text": "*I laughed first*"
+  },
+  "day5_ending_complicit_subtitle": {
+    "text": "Accomplice — The Next Attendance Register."
+  },
+  "day5_ending_complicit_title": {
+    "text": ""
+  },
+  "day5_cage_loop": {
+    "text": ""
+  },
+  "day5_xover_server_1": {
+    "text": "*Connected to the institute's server. A file directory appears on the old monitor.*"
+  },
+  "day5_xover_server_2": {
+    "text": "*PROJECT CUPID -- Previous Cycle Records:*"
+  },
+  "day5_xover_server_3": {
+    "text": "*> cycle_01.zip  [INTACT]*"
+  },
+  "day5_xover_server_3_damaged": {
+    "text": "*> cycle_01.zip  [CORRUPTED]*"
+  },
+  "day5_xover_server_4": {
+    "text": "*Attachment: CUPID_ENV_PREVIEW*"
+  },
+  "day5_xover_server_preview_choice": {
+    "text": "There were three sets of records with different dates left on the server.",
+    "choices": [
+      "cycle_01.zip — Cycle 1: Ideal Environment Plans (PROJECT CUPID)",
+      "cycle_07.log — Cycle 7: Lee Seolhwa and the Emergency Exit",
+      "cycle_12.log — Cycle 12: Darkroom and Subject #12 Disposal Log",
+      "Disconnect from the archive server"
+    ]
+  },
+  "day5_xover_preview_1": {
+    "text": "*...Cherry blossoms.*"
+  },
+  "day5_xover_preview_2": {
+    "text": "*Spring breeze. New uniform. First day of transfer.*"
+  },
+  "day5_xover_preview_3": {
+    "text": "*Cherry petals repeat from the same position. Only the wind direction changes.*"
+  },
+  "day5_xover_preview_4": {
+    "text": "*Bottom right of the screen, in small text: cycle_01*"
+  },
+  "day5_xover_preview_heroine": {
+    "text": "*[CUPID_ENV_PREVIEW]*\n*Emotional imprint model: {cupid_heroine}*\n*Compliance response rate: {cupid_compliance}*\n*Pre-dose environment response test matches M-13 stabilization index.*"
+  },
+  "day5_xover_preview_5": {
+    "text": "*The monitor went dark.*"
+  },
+  "day5_xover_server_end": {
+    "text": "*...Closed the files.*"
+  },
+  "day5_observer_1": {
+    "text": "*The credits ended. The screen goes dark. Blackout.*"
+  },
+  "day5_observer_2": {
+    "text": "*3 seconds.*"
+  },
+  "day5_observer_3": {
+    "text": "*Text appears one character at a time in the center of the screen.*"
+  },
+  "day5_observer_4": {
+    "text": "EDINA FOUNDATION / NEVERGRAD RESEARCH INSTITUTE\nSecurity audit: external review session\nReference file: #13 observation record"
+  },
+  "day5_observer_5": {
+    "text": "Access scope: audit / monitoring\nSession status: connected\nSubject contact authorization: none"
+  },
+  "day5_observer_6": {
+    "text": "Subject: #13 ({name})\nSession connection time: {play_time}\n\nContact / intervention summary\nSea contacts: {route_data}\nYuna contact confirmed: {met_yuna}\nRiin visits: {riin_visits}\nSeolhwa contact attempts: {seolhwa_attempts}\nEvidence secured: {evidence_data}\nFinal response record: {timer_data}"
+  },
+  "day5_observer_7": {
+    "text": "Contact record comparison complete\nComparing behavioral patterns"
+  },
+  "day5_observer_8": {
+    "text": "Reference: research director Park Eunsu / 13 observations\nExternal review session: #13 ({name}) / {play_time}\n\nShared fields: continued access after warning; accumulated interventions\nSimilarity: persistent observation pattern matches\n\nAutomated decision: pending\nSession termination request: not received"
+  },
+  "day5_observer_cupid_check": {
+    "text": ""
+  },
+  "day5_observer_cupid_extra": {
+    "text": "Cross-reference:\n\nCUPID_ENV_PREVIEW detected.\nEmotional imprint: {cupid_heroine}\nCompliance rate: {cupid_compliance}\nPartially matches M-13 stabilization indicators.\n\nNotes:\nObserver data is still bound to the #13 file."
+  },
+  "day5_observer_9": {
+    "text": "*The screen holds. 5 seconds.*"
+  },
+  "day5_observer_10": {
+    "text": "*And at the bottom, in very small text:*"
+  },
+  "day5_observer_11": {
+    "text": "[Will you graduate?]",
+    "choices": [
+      "Yes",
+      "No"
+    ]
+  },
+  "day5_night_seolhwa_affinity_check": {
+    "text": ""
+  },
+  "day5_night_set_high_seolhwa_affinity": {
+    "text": ""
+  },
+  "day5_ending_true_voice_check": {
+    "text": ""
+  },
+  "day5_ending_true_16_clear_intro": {
+    "text": "*As Seolhwa opened her mouth, the muffled static faded away. The voice that had called out from behind the seventh stairwell reached me clearly.*"
+  },
+  "day5_ending_true_16_clear": {
+    "text": "That’s the first time you’ve called me that."
+  },
+  "day5_ending_true_riin_check": {
+    "text": ""
+  },
+  "day5_ending_true_27_riin": {
+    "text": "*Additional materials appeared below the article. Ms. Riin, who had escaped with us, submitted six cycles of actual medication comparison logs and original charts.*"
+  },
+  "day5_ending_true_27_riin_2": {
+    "text": "*Headquarters approval numbers remained beside every dosing date. An early statement trying to frame the case as the lead researcher’s personal misconduct was taken down after half a day.*"
+  },
+  "day5_ending_true_sea_check": {
+    "text": ""
+  },
+  "day5_ending_true_27_sea": {
+    "text": "*Sea received outside protective custody after leaving the facility with us. A few days later, we walked side by side down a daytime shopping street far from school. In her hands, there was neither an attendance book nor the student council room key.*"
+  },
+  "day5_ending_true_27_sea_2": {
+    "text": "I don’t have to wear an armband or follow anyone anymore. Shall we try that street over there too?"
+  },
+  "day5_ending_true_memory_check": {
+    "text": ""
+  },
+  "day5_ending_true_30_memory": {
+    "text": "*Every last word we had exchanged behind the old building’s stairs came back to me as well. Beside her name, I added one more line: “Next time, let’s meet outside instead of here.”*"
+  },
+  "day5_ending_escape_riin_check": {
+    "text": ""
+  },
+  "day5_ending_escape_riin": {
+    "text": "*Ms. Riin, who had come out with us, relocated to evade the foundation’s pursuit. Before leaving, she sent a brief message saying the original charts hidden beneath the infirmary floor had already been seized.*"
+  },
+  "day5_ending_escape_sea_check": {
+    "text": ""
+  },
+  "day5_ending_escape_sea": {
+    "text": "*Sea, who had escaped with us, moved to an external protective shelter far from school. Attached below her brief message saying she had arrived was a single photo of a paper bag from a neighborhood bakery.*"
+  },
+  "day5_ending_cage_sea_epilogue_1": {
+    "text": "After the first week, I had to tear up the classroom calendar. Sea only cut off the corner without turning over a new page."
+  },
+  "day5_ending_cage_sea_epilogue_2": {
+    "text": "Don't worry about the calendar. The one outside is wrong too."
+  },
+  "day5_ending_cage_sea_epilogue_3": {
+    "text": "Leaves grew on the tree beyond the window. Cherry blossoms tied with wire continued to hang on the classroom window."
+  },
+  "day5_ending_cage_sea_epilogue_4": {
+    "text": "Dust accumulated on the tips of the paper petals. When I stretched out my hand, Sea handed me a wet towel first."
+  },
+  "day5_ending_cage_sea_epilogue_5": {
+    "text": "I'll clean it. You might hurt your hand."
+  },
+  "day5_ending_cage_sea_epilogue_6": {
+    "text": "When I opened the lunch box lid, there was an egg roll that was the same cooked and cut thickness as yesterday."
+  },
+  "day5_ending_cage_sea_epilogue_7": {
+    "text": "On days when I didn't pick up chopsticks, Sea didn't eat either, so the two lunch boxes remained closed until evening."
+  },
+  "day5_ending_cage_sea_epilogue_8": {
+    "text": "Just eat one piece. I won't ask after that."
+  },
+  "day5_ending_cage_sea_epilogue_9": {
+    "text": "After eating one piece, Sea raised his chopsticks. The same request came back the next day."
+  },
+  "day5_ending_cage_sea_epilogue_10": {
+    "text": "My notebooks were piled up in a drawer at the back of the classroom. I wrote the date on each first page, but from one day I started writing only the weather."
+  },
+  "day5_ending_cage_sea_epilogue_11": {
+    "text": "Even on a rainy day, the flowers by the window did not get wet. Only the scent sprayed by Sea became a little stronger."
+  },
+  "day5_ending_cage_sea_epilogue_12": {
+    "text": "When the graduation ceremony practice broadcast was heard from the playground outside, Sea got up to close the window."
+  },
+  "day5_ending_cage_sea_inside_choice": {
+    "text": "Sea put his hand on the window handle. My tie wasn't on yet.",
+    "choices": [
+      "look out the window",
+      "Hold Sea's hand"
+    ]
+  },
+  "day5_ending_cage_sea_window_1": {
+    "text": "New students lined up on the playground. There was an empty seat at the end of the line moving towards the school gate."
+  },
+  "day5_ending_cage_sea_window_2": {
+    "text": "Sea standing next to me looked at the face reflected in the window but did not look outside."
+  },
+  "day5_ending_cage_sea_window_3": {
+    "text": "Your place is here. I didn't even put your name on their list."
+  },
+  "day5_ending_cage_sea_window_4": {
+    "text": "The bus door closed behind the glass. I put my palm on the window and watched the bus turn around."
+  },
+  "day5_ending_cage_sea_window_5": {
+    "text": "Sea took my tie and waited for me to turn around before wrapping it around his hand and tying the knot."
+  },
+  "day5_ending_cage_sea_hand_1": {
+    "text": "Sea My hands were colder than the window handle. As soon as I caught it, the fingers came between my hands."
+  },
+  "day5_ending_cage_sea_hand_2": {
+    "text": "Can I close it?"
+  },
+  "day5_ending_cage_sea_hand_3": {
+    "text": "I nodded without looking at the window. The outside broadcast faded away behind a sheet of glass."
+  },
+  "day5_ending_cage_sea_hand_4": {
+    "text": "Sea put my hand in his pocket. To let go, you first had to straighten your fingers one by one."
+  },
+  "day5_ending_cage_sea_hand_5": {
+    "text": "One hand remained in his pocket while he took out his tie. Sea made a knot with his other hand."
+  },
+  "day5_ending_cage_sea_close_1": {
+    "text": "You can sleep in late tomorrow too. I'll be there first."
+  },
+  "day5_ending_cage_sea_close_2": {
+    "text": "The numbers cut out from the calendar were piled up in the trash can. Sea closed the lunch box lid and shook off the dust from the flower petals."
+  },
+  "day5_ending_cage_sea_close_3": {
+    "text": "The classroom lights went off. The doorknob in the hallway didn't move and only the chair inside scratched the floor."
+  },
+  "day5_ending_cage_eunsu_epilogue_1": {
+    "text": "The teacher took out a stamp from the drawer of the teacher's desk, opened the lid, and pressed it into the thirteenth slot of the attendance register."
+  },
+  "day5_ending_cage_eunsu_epilogue_2": {
+    "text": "I read the text that was pressed so hard that the paper burned. It said deferred graduation, and in the small bracket below it said permanent."
+  },
+  "day5_ending_cage_eunsu_epilogue_3": {
+    "text": "This is not sent to the board of directors. This is the ledger I keep here."
+  },
+  "day5_ending_cage_eunsu_epilogue_4": {
+    "text": "The teacher closed the dojo and took off his glasses and placed them next to the dojo."
+  },
+  "day5_ending_cage_eunsu_epilogue_5": {
+    "text": "A cleaning cart passed by in the hallway. The teacher returned only after checking the lock on the inside of the door."
+  },
+  "day5_ending_cage_eunsu_epilogue_6": {
+    "text": "I reported you as disposed of. No one will come looking for you."
+  },
+  "day5_ending_cage_eunsu_epilogue_7": {
+    "text": "My name too?"
+  },
+  "day5_ending_cage_eunsu_epilogue_8": {
+    "text": "I kept your name. I don't need to erase the name I'll call you by."
+  },
+  "day5_ending_cage_eunsu_epilogue_9": {
+    "text": "A silver band was placed on the table. The teacher opened his palm to ask for his wrist."
+  },
+  "day5_ending_cage_eunsu_epilogue_10": {
+    "text": "I didn't take my hands out of my pockets. The teacher pulled an empty chair instead of my hand."
+  },
+  "day5_ending_cage_eunsu_epilogue_11": {
+    "text": "Sit down. Your legs will ache if you stand there waiting."
+  },
+  "day5_ending_cage_eunsu_epilogue_12": {
+    "text": "When I sat down on the chair, my wrists were at the same height as the lectern. There was a thin cushioning material attached to the inside of the band."
+  },
+  "day5_ending_cage_eunsu_epilogue_13": {
+    "text": "The teacher wiped my wrist with a cloth. There was a small metallic sound as the buckle closed."
+  },
+  "day5_ending_cage_eunsu_epilogue_14": {
+    "text": "Tell me if it's too tight. I can loosen that."
+  },
+  "day5_ending_cage_eunsu_epilogue_15": {
+    "text": "A finger slipped under the buckle. The teacher noticed the gap and lowered my sleeve."
+  },
+  "day5_ending_cage_eunsu_epilogue_16": {
+    "text": "The setting sun shone long through the window. Other spaces in the attendance register had already been erased with black lines."
+  },
+  "day5_ending_cage_eunsu_epilogue_17": {
+    "text": "Next to my compartment was my teacher's name. The printed word “person in charge” was underlined twice with a ruler."
+  },
+  "day5_ending_cage_eunsu_epilogue_18": {
+    "text": "We'll be calling roll here tomorrow too. Just answer me."
+  },
+  "day5_ending_cage_eunsu_epilogue_19": {
+    "text": "What about other students?"
+  },
+  "day5_ending_cage_eunsu_epilogue_20": {
+    "text": "They're in other classrooms. They won't be coming into this one."
+  },
+  "day5_ending_cage_eunsu_epilogue_21": {
+    "text": "I could see empty desks through the glasses on the teacher's table. The teacher put two of them on the window."
+  },
+  "day5_ending_cage_eunsu_epilogue_22": {
+    "text": "My book and your book faced the same side. I sat down with the door behind me."
+  },
+  "day5_ending_cage_eunsu_epilogue_23": {
+    "text": "If you want to change seats, let me know. The window is okay, and the one right in front of the lectern is also okay."
+  },
+  "day5_ending_cage_eunsu_epilogue_24": {
+    "text": "The wristband made a sound every time it touched the desk. The teacher folded a small piece of cloth there."
+  },
+  "day5_ending_cage_eunsu_epilogue_25": {
+    "text": "As the final bell rang outside, the teacher opened the attendance sheet and put pen to the thirteenth row."
+  },
+  "day5_ending_cage_eunsu_epilogue_26": {
+    "text": "My name was called. While he didn't answer, the tip of his pen stayed on the paper."
+  },
+  "day5_ending_cage_eunsu_epilogue_27": {
+    "text": "The teacher did not urge. I turned the seal lid on the table straight with my fingertips."
+  },
+  "day5_ending_escape_epilogue_1": {
+    "text": "The first bus departed from the back of the terminal. Yuna put the camera inside the court while buying tickets."
+  },
+  "day5_ending_escape_epilogue_2": {
+    "text": "As I sat down, water dripped from my wet shoes. Both of them stayed for a while without their feet on the floor."
+  },
+  "day5_ending_escape_epilogue_3": {
+    "text": "The driver didn't ask the name of the school or our names as he took the tickets."
+  },
+  "day5_ending_escape_epilogue_4": {
+    "text": "As the bus went down the mountain road, the cell phone signal returned. Yuna covered the turning screen with his palm."
+  },
+  "day5_ending_escape_epilogue_5": {
+    "text": "Don't open the app. Don't even turn it off now."
+  },
+  "day5_ending_escape_epilogue_6": {
+    "text": "I didn't get off at the first terminal. We remained in the car until people changed and more empty seats became available."
+  },
+  "day5_ending_escape_epilogue_7": {
+    "text": "Next to the second stop was a small lodging establishment. I went in the direction where the sign light was off."
+  },
+  "day5_ending_escape_epilogue_8": {
+    "text": "The counter staff asked for my ID. The hand that looked up my number stopped twice."
+  },
+  "day5_ending_escape_epilogue_9": {
+    "text": "They said there was no registered information. Yuna's student ID card came out as already expired."
+  },
+  "day5_ending_escape_epilogue_10": {
+    "text": "The employee held out a piece of paper for me to re-enter. Yuna grabbed my arm while I was writing down the same number."
+  },
+  "day5_ending_escape_epilogue_11": {
+    "text": "Let's just leave. We'll find somewhere else."
+  },
+  "day5_ending_escape_epilogue_12": {
+    "text": "I tore the paper outside the door, folded the part with my name on it small, and put it in my pocket."
+  },
+  "day5_ending_escape_epilogue_13": {
+    "text": "We rented a rooftop room behind the station. The landlord only told me the price of the room and how to turn on the boiler."
+  },
+  "day5_ending_escape_epilogue_14": {
+    "text": "As I hung my school uniform on the clothesline, water droplets fell into the bucket. Yuna hung my sleeve away from his clothes."
+  },
+  "day5_ending_escape_epilogue_15": {
+    "text": "Evidence from the school was insufficient. You couldn't come looking for someone just by looking at the date in the photo."
+  },
+  "day5_ending_escape_epilogue_16": {
+    "text": "I wrote down the number I wanted to call and erased it. No matter who I explained to, they would check my name first."
+  },
+  "day5_ending_escape_epilogue_17": {
+    "text": "Let's eat first. Anything that can wait until tomorrow can wait."
+  },
+  "day5_ending_escape_epilogue_18": {
+    "text": "Two triangle kimbap came out of a convenience store bag. The rice was cold because I had been standing there for a long time picking it."
+  },
+  "day5_ending_escape_epilogue_19": {
+    "text": "Yuna opened the envelope until I chose first. I didn't say it was okay either way."
+  },
+  "day5_ending_escape_epilogue_20": {
+    "text": "I folded up the empty wrapping paper, threw it away, and opened the window. Instead of the school announcement, the sound of dishes was heard from the house across the street."
+  },
+  "day5_ending_escape_epilogue_21": {
+    "text": "Yuna checked the number of films remaining in the camera and found that he could still take two pictures."
+  },
+  "day5_ending_escape_epilogue_22": {
+    "text": "There wasn't a single photo taken anywhere other than school."
+  },
+  "day5_ending_escape_epilogue_23": {
+    "text": "I stood by the window and looked into the lens without waiting for Yuna to tell me where to look."
+  },
+  "day5_ending_escape_epilogue_24": {
+    "text": "Yuna held the camera and waited for my answer.",
+    "choices": [
+      "stand looking at the lens",
+      "Tell Yuna to take the picture first",
+      "stand next to the window"
+    ]
+  },
+  "day5_ending_escape_epilogue_25": {
+    "text": "Stay just like that. You're all in the frame."
+  },
+  "day5_ending_escape_epilogue_26": {
+    "text": "A second shutter sound briefly rang out in the room. Yuna smiled for the first time while looking at the camera."
+  },
+  "day5_ending_escape_epilogue_27": {
+    "text": "I decided on a name to write on the back of the photo. I wrote mine, and Yuna chose Yuna."
+  },
+  "day5_ending_escape_epilogue_28": {
+    "text": "I was awkward with the new name, so I called it twice. Yuna couldn't hear it the first time and looked back the second time."
+  },
+  "day5_ending_escape_epilogue_29": {
+    "text": "It was a piece of paper without a space for resident registration or school records. Only the two names and today's date were placed side by side."
+  },
+  "day5_ending_escape_epilogue_30": {
+    "text": "I went down to find a place to leave the film. Yuna locked the door and handed the key into my hand."
+  },
+  "day5_ending_escape_riin_after_1": {
+    "text": "There was an envelope of cash stuck in the bottom of the bag. When I took out the towel given to me in the health room, an envelope came out with it."
+  },
+  "day5_ending_escape_riin_after_2": {
+    "text": "Inside were folded bills and a copy of a prescription. Next to the name of the drug, there was a sign saying “stop taking it.”"
+  },
+  "day5_ending_escape_riin_after_3": {
+    "text": "There was no signature of Riin. Instead, the address of a nearby emergency room was written on the end of the paper."
+  },
+  "day5_ending_escape_riin_after_4": {
+    "text": "There were thirteen lines containing the medication administration date. In the last line, today's time is written in minutes."
+  },
+  "day5_ending_escape_riin_after_5": {
+    "text": "Yuna read the paper and looked at my arm. I lowered my sleeves to cover the injection marks."
+  },
+  "day5_ending_escape_riin_after_6": {
+    "text": "Inside the envelope, there was another short note telling people not to throw away the medicine envelope."
+  },
+  "day5_ending_escape_riin_after_7": {
+    "text": "I put the paper to show first at the hospital first. I divided the cash in half with Yuna and put it in different pockets."
+  },
+  "day5_ending_escape_riin_after_8": {
+    "text": "Instead of contacting Riin, he closed the bag, leaving only a handprint on the corner of the paper."
+  },
+  "day5_ending_escape_riin_after_9": {
+    "text": "The towels we were told to use while waiting were laid out on the bus seats. Water no longer dripped from wet clothes."
+  },
+  "day5_ending_escape_sea_after_1": {
+    "text": "Sea's voice came from the radio. I called the number of the hallway opposite to where our footsteps were coming from."
+  },
+  "day5_ending_escape_sea_after_2": {
+    "text": "I saw them. They went upstairs. I'll follow them."
+  },
+  "day5_ending_escape_sea_after_3": {
+    "text": "Yuna pulled my arm and pushed it into his bag without turning down the sound of the radio."
+  },
+  "day5_ending_escape_sea_after_4": {
+    "text": "The sound of running footsteps became distant. Sea opened the door on the other side, continuing to tell me to follow him."
+  },
+  "day5_ending_escape_sea_after_5": {
+    "text": "I didn't stop walking. When I turned around, I felt like I would make eye contact with Sea before the door closed."
+  },
+  "day5_ending_escape_sea_after_6": {
+    "text": "There was no name on the last radio. The only thing I heard was a brief message telling me to hurry up because the door was open."
+  },
+  "day5_ending_escape_sea_after_7": {
+    "text": "The emergency exit handle in front of us was down. The little rubber wedge on the door held on until the end."
+  },
+  "day5_ending_escape_sea_after_8": {
+    "text": "After going outside, I removed the wedge. The pink rubber band that Sea used on the lunch box lid was wrapped around it."
+  },
+  "day5_ending_escape_sea_after_9": {
+    "text": "I put the wedge in my pocket, put the radio down outside the rain puddle, and followed Yuna."
+  },
+  "day5_ending_resist_epilogue_1": {
+    "text": "The first truck was dispatched along the national highway. The teacher said he wasn't ready yet and put the briefcase on his lap."
+  },
+  "day5_ending_resist_epilogue_2": {
+    "text": "As the corners of the paper got wet and stuck together, the teacher used his fingernail to tear off each sheet and put them in an empty bag."
+  },
+  "day5_ending_resist_epilogue_3": {
+    "text": "Don't mix up the originals and the copies. Keep the pages with my signature at the front."
+  },
+  "day5_ending_resist_epilogue_4": {
+    "text": "I moved to my seat under the roof of the bus stop. When the teacher took off his glasses, rainwater pooled around his eyes."
+  },
+  "day5_ending_resist_epilogue_5": {
+    "text": "Are you crying?"
+  },
+  "day5_ending_resist_epilogue_6": {
+    "text": "The teacher wiped his hand with his sleeve and then lowered his hand. I turned my face away to avoid dripping water on the wet paper."
+  },
+  "day5_ending_resist_epilogue_7": {
+    "text": "It was the third cycle. You asked me if I'd eaten."
+  },
+  "day5_ending_resist_epilogue_8": {
+    "text": "It was something I couldn't remember. When the teacher saw me, he shook his head saying he didn't know."
+  },
+  "day5_ending_resist_epilogue_9": {
+    "text": "I know. You don't remember. I was the only one who kept those words."
+  },
+  "day5_ending_resist_epilogue_10": {
+    "text": "The teacher's hands were shaking on the bag. I grabbed the documents instead and sat down with my palms on the floor."
+  },
+  "day5_ending_resist_epilogue_11": {
+    "text": "So I wanted to see you the next day too. Next semester and the next too."
+  },
+  "day5_ending_resist_epilogue_12": {
+    "text": "Is that why you kept it going?"
+  },
+  "day5_ending_resist_epilogue_13": {
+    "text": "The teacher could not answer, but lowered his head and folded and unfolded the temples of his glasses."
+  },
+  "day5_ending_resist_epilogue_14": {
+    "text": "That shouldn't have been the reason. Those were words I couldn't include in the report I was writing."
+  },
+  "day5_ending_resist_epilogue_15": {
+    "text": "I didn't write that sentence for you. He pointed to the space to sign next to the teacher's name."
+  },
+  "day5_ending_resist_epilogue_16": {
+    "text": "This time I'll write down everything I did. You don't have to leave anything out for my sake."
+  },
+  "day5_ending_resist_epilogue_17": {
+    "text": "The teacher placed the paper on a cold bus stop chair and wrote his name on the first line."
+  },
+  "day5_ending_resist_epilogue_18": {
+    "text": "He turned the paper and held it out so that I could read it without covering the erase marks."
+  },
+  "day5_ending_resist_epilogue_19": {
+    "text": "A bus came from afar. The teacher woke up only then, but made way for me to get on first."
+  },
+  "day5_ending_resist_epilogue_20": {
+    "text": "I carried my briefcase and climbed the stairs. The teacher followed after confirming the destination with the driver."
+  },
+  "day5_ending_resist_epilogue_21": {
+    "text": "We didn't sit next to each other. I heard the same stop announcement across the hallway."
+  },
+  "day5_ending_resist_epilogue_22": {
+    "text": "The teacher took out his cell phone from his bag, turned off the phone call coming into the school, and dialed the report number directly."
+  },
+  "day5_ending_resist_epilogue_23": {
+    "text": "When the call was connected, he said he was the head of research. The word homeroom teacher was added at the end."
+  },
+  "day5_ending_resist_epilogue_24": {
+    "text": "I looked out the window and opened my left hand. The imprint of the paper bag handle remained on my palm."
+  },
+  "day5_ending_resist_epilogue_25": {
+    "text": "Even as the bus left the mountain, the teacher did not hang up the phone and was still giving his address."
+  },
+  "day5_ending_resist_epilogue_26": {
+    "text": "The name of the next stop was a name I had never heard before. I listened to the announcement until the end."
+  },
+  "day5_ending_forget_epilogue_1": {
+    "text": "I didn't know when I put the bus ticket in my new school uniform pocket, so I checked the date."
+  },
+  "day5_ending_forget_epilogue_2": {
+    "text": "It was today's date. I opened the crumpled ticket and entered the school gate."
+  },
+  "day5_ending_forget_epilogue_3": {
+    "text": "A student waved under the cherry blossoms and walked straight toward me. It was my first time seeing this face."
+  },
+  "day5_ending_forget_epilogue_4": {
+    "text": "Your first day? Let's walk to class together. I'm going that way too."
+  },
+  "day5_ending_forget_epilogue_5": {
+    "text": "The student's hand stretched out to the left and his palm was held in his pocket. The fingernail marks were quickly erased."
+  },
+  "day5_ending_forget_epilogue_6": {
+    "text": "He complained that his shoelaces were untied and stopped. Sea waited in front of me and looked at the string on the same side."
+  },
+  "day5_ending_forget_epilogue_7": {
+    "text": "There was a student with a camera at the hallway window. As I passed, he closed the lens cap."
+  },
+  "day5_ending_forget_epilogue_8": {
+    "text": "You can take pictures later. Even if you don’t take a picture now."
+  },
+  "day5_ending_forget_epilogue_9": {
+    "text": "I laughed and said I never asked for it. The student lowered the camera and turned his head first."
+  },
+  "day5_ending_forget_epilogue_10": {
+    "text": "A teacher came out in front of the health room. He was holding a cup, but when he saw my face, he lowered his hand."
+  },
+  "day5_ending_forget_epilogue_11": {
+    "text": "Have you eaten breakfast? If you haven't eaten, start with water, not tea."
+  },
+  "day5_ending_forget_epilogue_12": {
+    "text": "I answered okay and walked. For a moment, I had the taste of tea that I had not yet drunk in my mouth."
+  },
+  "day5_ending_forget_epilogue_13": {
+    "text": "The homeroom teacher at the door opened the attendance sheet and pointed to my seat before asking my name."
+  },
+  "day5_ending_forget_epilogue_14": {
+    "text": "Third desk by the window. You can put your bag inside it."
+  },
+  "day5_ending_forget_epilogue_15": {
+    "text": "As I fumbled around the inside of the desk, a fine line caught on my fingertips. I touched it again with my left hand and found the shape."
+  },
+  "day5_ending_forget_epilogue_16": {
+    "text": "Run away. My finger moved along the three letters. I took out my hand and dusted it off."
+  },
+  "day5_ending_forget_epilogue_17": {
+    "text": "Someone was playing a joke."
+  },
+  "day5_ending_forget_epilogue_18": {
+    "text": "Someone behind me pulled a chair. When I turned around, there was an empty desk against the wall."
+  },
+  "day5_ending_forget_epilogue_19": {
+    "text": "Sea handed over a new ballpoint pen. Before I even opened the package, my thumb went into the groove of the rubber grip."
+  },
+  "day5_ending_forget_epilogue_20": {
+    "text": "I changed hands and wrote my name in the notebook. There was some eraser powder left, so I swept it away with my palm."
+  },
+  "day5_ending_forget_epilogue_21": {
+    "text": "The classroom clock moved one step. While the teacher took attendance, I wrote the date on the first page."
+  },
+  "day5_ending_forget_epilogue_22": {
+    "text": "The end of the number bounced upwards. The tip of the teacher's pen also stopped for a moment in the same spot."
+  },
+  "day5_ending_forget_epilogue_23": {
+    "text": "Petals fell from the tree outside the window. It didn't reach my desk, but I closed the book with my hand."
+  },
+  "day5_ending_forget_epilogue_24": {
+    "text": "That behavior was so funny that I laughed alone, and Sea laughed along with me and opened the textbook."
+  },
+  "day5_ending_forget_epilogue_25": {
+    "text": "There was still dust in the groove under the desk. Only the tip of the fingernail on my left hand was not removed until the break."
+  },
+  "day5_ending_ghost_epilogue_1": {
+    "text": "Two handprints were left on the emergency staircase railing. There was no moisture on the side Seolhwa grabbed."
+  },
+  "day5_ending_ghost_epilogue_2": {
+    "text": "Go down. Watch your feet. That last step is narrow."
+  },
+  "day5_ending_ghost_epilogue_3": {
+    "text": "As I put my foot down and looked back, I saw that the tips of Seolhwa's shoes slightly overlapped the edge of the stairs."
+  },
+  "day5_ending_ghost_epilogue_4": {
+    "text": "Just come down with me."
+  },
+  "day5_ending_ghost_epilogue_5": {
+    "text": "As Seolhwa came down a flight of stairs, the paint color in the background was reflected from the fingertips holding the railing."
+  },
+  "day5_ending_ghost_epilogue_6": {
+    "text": "I can't go any farther. I knew when you opened the door."
+  },
+  "day5_ending_ghost_epilogue_7": {
+    "text": "When I stretched out my hand, Seolhwa did not avoid it. I tried to put my fingers together, but all I could do was the cold metal of the railing."
+  },
+  "day5_ending_ghost_epilogue_8": {
+    "text": "Don't tell me it's all right. It's not something you should have to be all right with."
+  },
+  "day5_ending_ghost_epilogue_9": {
+    "text": "I closed my mouth and opened my left hand, and Seolhwa looked down at the lines on my palm all the way."
+  },
+  "day5_ending_ghost_epilogue_10": {
+    "text": "This time I gave you the push. Out there, walk on your own feet."
+  },
+  "day5_ending_ghost_epilogue_11": {
+    "text": "A wind came up from under the stairs. The tips of Seolhwa's hair brightened and then disappeared behind the railing."
+  },
+  "day5_ending_ghost_epilogue_12": {
+    "text": "I'll remember your name."
+  },
+  "day5_ending_ghost_epilogue_13": {
+    "text": "Write it down. You've tried remembering enough times already."
+  },
+  "day5_ending_ghost_epilogue_14": {
+    "text": "Seolhwa laughed. I began to see the white wall next to the door before my face."
+  },
+  "day5_ending_ghost_epilogue_15": {
+    "text": "I didn't lower my head because I thought that if I closed my eyes, I would remember my last expression incorrectly again."
+  },
+  "day5_ending_ghost_epilogue_16": {
+    "text": "When I came out of the emergency exit, the floor was wet in the early morning. My shadow continued all the way to the bottom of the stairs."
+  },
+  "day5_ending_ghost_epilogue_17": {
+    "text": "I walked until the first store opened. The owner gave me a chair, but I bought a notebook first."
+  },
+  "day5_ending_ghost_epilogue_18": {
+    "text": "As I flipped through the cover with my left hand, the new paper stuck to my palm, so I took another page off."
+  },
+  "day5_ending_ghost_epilogue_19": {
+    "text": "Lee Seolhwa. The pen stopped twice as I wrote the three Korean characters."
+  },
+  "day5_ending_ghost_epilogue_20": {
+    "text": "On the next line, I wrote the number seven, and below that I shared what I saw and heard."
+  },
+  "day5_ending_ghost_epilogue_21": {
+    "text": "I did not move the pen to my right hand. Even though my wrist was stiff and the writing was slanted, I kept it as is."
+  },
+  "day5_ending_ghost_epilogue_22": {
+    "text": "When the bus stopped outside the store and I heard the door open, I closed my notebook."
+  },
+  "day5_ending_ghost_epilogue_23": {
+    "text": "I asked the driver the destination. I didn't understand so I asked one more time before buying the ticket."
+  },
+  "day5_ending_ghost_epilogue_24": {
+    "text": "As I sat down and opened the window a little, the sound of the wind entered my left ear."
+  },
+  "day5_ending_ghost_epilogue_25": {
+    "text": "This time there were no other voices mixed in. I put my hand in the pocket containing the note."
+  },
+  "day5_ending_complicit_epilogue_1": {
+    "text": "When I lifted the pen from the signature pad, a new card appeared. Under the photo, the words Deputy Director and #13 were written."
+  },
+  "day5_ending_complicit_epilogue_2": {
+    "text": "Wear it around your neck on the stairs. The doors need to read where the card is before they'll open."
+  },
+  "day5_ending_complicit_epilogue_3": {
+    "text": "The teacher adjusted the length of the line. Unlike the wrist band, I could take the card off on my own."
+  },
+  "day5_ending_complicit_epilogue_4": {
+    "text": "When the control room door opened, the monitors on the wall turned on at once, illuminating the classroom, hallway, and health room."
+  },
+  "day5_ending_complicit_epilogue_5": {
+    "text": "Yuna looked up from the basement screen. Eyes turned to me, searching for the camera."
+  },
+  "day5_ending_complicit_epilogue_6": {
+    "text": "Sea was closing the lid of his lunch box in the classroom. I covered the compartment containing the remaining side dishes with my hand."
+  },
+  "day5_ending_complicit_epilogue_7": {
+    "text": "Riin, who was sitting in front of an empty tray in the health room, took his hand out of his gown pocket when the camera started rolling."
+  },
+  "day5_ending_complicit_epilogue_8": {
+    "text": "You can also hear sounds here. Use this button to turn it on."
+  },
+  "day5_ending_complicit_epilogue_9": {
+    "text": "When I pressed the button, the sound of chair legs came out of the speaker. Yuna moved off the screen."
+  },
+  "day5_ending_complicit_epilogue_10": {
+    "text": "The teacher put his hand on my shoulder. My face at the edge of the monitor was at the same angle as the new card photo."
+  },
+  "day5_ending_complicit_epilogue_11": {
+    "text": "We'll check the next schedule together. You have an approval field on your side now too."
+  },
+  "day5_ending_complicit_epilogue_12": {
+    "text": "The medication schedule was opened. The name of the last approver was still blank."
+  },
+  "day5_ending_complicit_control_choice": {
+    "text": "There was an OK button below the density adjustment bar. My card was inserted into the reader.",
+    "choices": [
+      "Reduce dosage concentration and approve",
+      "Maintain and approve existing concentrations",
+      "Increase concentration and approve"
+    ]
+  },
+  "day5_ending_complicit_low_1": {
+    "text": "Move the bar to the left. Although the dosage was reduced, the number of people scheduled to be administered did not change."
+  },
+  "day5_ending_complicit_low_2": {
+    "text": "Write down why you reduced it too. So the next person doesn't increase it again."
+  },
+  "day5_ending_complicit_low_3": {
+    "text": "When I wrote in the reason box that it was to reduce damage, the teacher read the sentence and pressed save."
+  },
+  "day5_ending_complicit_low_4": {
+    "text": "New instructions appeared on the health room screen. Riin read the paper and then looked at the camera."
+  },
+  "day5_ending_complicit_low_5": {
+    "text": "I turned off the sound. My name was still on the first line of the approval record."
+  },
+  "day5_ending_complicit_same_1": {
+    "text": "It was approved without changing the numbers. The amount used yesterday went over today as well."
+  },
+  "day5_ending_complicit_same_2": {
+    "text": "Keeping it the same is simplest. Change it and there's more to explain."
+  },
+  "day5_ending_complicit_same_3": {
+    "text": "The teacher displayed today's schedule on the monitor next to me. Another student's name was entered in the blank space."
+  },
+  "day5_ending_complicit_same_4": {
+    "text": "Riin from the health room selected three ampoules. I just checked that the numbers were correct."
+  },
+  "day5_ending_complicit_same_5": {
+    "text": "My hand stopped while I was trying to turn the paper. The page you just approved has already been changed to read-only."
+  },
+  "day5_ending_complicit_high_1": {
+    "text": "Moving the bar to the right increased the estimated recovery time and added a warning sign."
+  },
+  "day5_ending_complicit_high_2": {
+    "text": "The teacher didn't stop my hand. It just said that if the reason box is left blank, it cannot be saved."
+  },
+  "day5_ending_complicit_high_3": {
+    "text": "It was written that it reduces memory retention. This was an expression I read in my previous report."
+  },
+  "day5_ending_complicit_high_4": {
+    "text": "On the health room screen, Riin shook his head. When I turned on the sound, the words “no” came out briefly."
+  },
+  "day5_ending_complicit_high_5": {
+    "text": "When I pressed the OK button, Riin's voice cut off and the next schedule covered the screen."
+  },
+  "day5_ending_complicit_close_1": {
+    "text": "The approval document was printed. The teacher checked my signature space and pulled an empty chair aside."
+  },
+  "day5_ending_complicit_close_2": {
+    "text": "Good work. You can read the next report first."
+  },
+  "day5_ending_complicit_close_3": {
+    "text": "The second hand of the wall clock and the clock on the screen moved together one step at a time. I only saw that the two clocks were out of sync."
+  },
+  "day5_ending_complicit_close_4": {
+    "text": "As I hung the new card around my neck, the line shown on the monitor came down parallel to my tie."
+  },
+  "day5_ending_complicit_close_5": {
+    "text": "Yuna spoke at the bottom of the screen. I pressed the next camera without turning up the volume."
+  },
+  "day5_archive_cycle07_1": {
+    "text": "The first page of the record had the name Kim Taeho. The left eyebrow in the face photo was the same as mine now."
+  },
+  "day5_archive_cycle07_2": {
+    "text": "The 7th cycle sign appeared at the bottom of the restored recording screen. Inside, I was holding the bag strap with my left hand."
+  },
+  "day5_archive_cycle07_3": {
+    "text": "Seolhwa was alive. Every time I passed through the hallway, the silver of my hair moved on my shoulders."
+  },
+  "day5_archive_cycle07_4": {
+    "text": "Taeho. Come in before the door closes. The hinges here are loud."
+  },
+  "day5_archive_cycle07_5": {
+    "text": "When I held the data room door, Seolhwa went inside first. I took off my shoes and silenced the sound of my footsteps."
+  },
+  "day5_archive_cycle07_6": {
+    "text": "There was one window high up. Rainwater hit the screen and the paper smelled wet."
+  },
+  "day5_archive_cycle07_7": {
+    "text": "I put a folded towel on the doorknob. Seolhwa took out a small flashlight from his pocket."
+  },
+  "day5_archive_cycle07_8": {
+    "text": "Start with the record drawers on the left. The right side has this semester's attendance books."
+  },
+  "day5_archive_cycle07_9": {
+    "text": "How do you know?"
+  },
+  "day5_archive_cycle07_10": {
+    "text": "I saw them while cleaning yesterday. Today's the first time I've read them."
+  },
+  "day5_archive_cycle07_11": {
+    "text": "I pulled the metal drawer from the bottom of the bookshelf, but a wad of paper got caught and it wouldn't open all the way."
+  },
+  "day5_archive_cycle07_12": {
+    "text": "Seolhwa put the flashlight in his mouth and pressed down on the paper. I lifted the drawer slightly with both hands."
+  },
+  "day5_archive_cycle07_13": {
+    "text": "The top envelope had the word input stamped on it. It wasn't something to use in school documents."
+  },
+  "day5_archive_cycle07_14": {
+    "text": "When I took out the photo, my face appeared. The name was not Kim Taeho and the date of admission was different."
+  },
+  "day5_archive_cycle07_15": {
+    "text": "The next envelope also had the same face. This time his hair was short and his license plate was resting on his shoulder."
+  },
+  "day5_archive_cycle07_16": {
+    "text": "When Seolhwa put down the flashlight, the light headed towards the ceiling and the two's long shadows clung to the wall."
+  },
+  "day5_archive_cycle07_17": {
+    "text": "I hope it was made as a joke. But there is too much paper."
+  },
+  "day5_archive_cycle07_18": {
+    "text": "Six photos were placed side by side. Only the last space was empty. My current name was written next to it."
+  },
+  "day5_archive_cycle07_19": {
+    "text": "Am I the seventh?"
+  },
+  "day5_archive_cycle07_20": {
+    "text": "Instead of answering, Seolhwa flipped the current envelope over. This week's date was written on the back."
+  },
+  "day5_archive_cycle07_21": {
+    "text": "Memory check, adaptation observation, reinsertion. Each item was signed and dated without interruption."
+  },
+  "day5_archive_cycle07_22": {
+    "text": "I closed my mouth while trying to talk about my memories of changing schools. I couldn't remember where I got on the bus."
+  },
+  "day5_archive_cycle07_23": {
+    "text": "Seolhwa took out my notebook, opened the front page, and put a small question mark next to the address I wrote down."
+  },
+  "day5_archive_cycle07_24": {
+    "text": "Don't make up answers now. Only tell me what you remember."
+  },
+  "day5_archive_cycle07_25": {
+    "text": "I didn't finish reading the address. Seolhwa returned the notebook without deleting the question mark."
+  },
+  "day5_archive_cycle07_26": {
+    "text": "The hallway speakers turned on. The towel in front of the data room door moved in a small breeze."
+  },
+  "day5_archive_cycle07_27": {
+    "text": "This is a regular inspection of the old building. Remaining students should go to the main building."
+  },
+  "day5_archive_cycle07_28": {
+    "text": "Seolhwa looked at his watch. It was twenty minutes earlier than the original inspection time."
+  },
+  "day5_archive_cycle07_29": {
+    "text": "I put two envelopes in my bag. I tried to take the rest with my cell phone, but turned down the screen brightness."
+  },
+  "day5_archive_cycle07_30": {
+    "text": "Turn it on once we're outside. They'll see the light if you use it here."
+  },
+  "day5_archive_cycle07_31": {
+    "text": "Seolhwa put a photo in the inside pocket of his school uniform. It was on the other side from my bag."
+  },
+  "day5_archive_cycle07_32": {
+    "text": "When I opened the door a little, I saw a red light at the end of the hallway. It was a light that did not turn on during the day."
+  },
+  "day5_archive_cycle07_33": {
+    "text": "We went down the stairs with our shoes in our hands. Instead of a school guide, there were plumbing numbers on the wall."
+  },
+  "day5_archive_cycle07_34": {
+    "text": "There was an emergency exit sign on the downstairs door. Seolhwa turned off the flashlight and placed his hand on the handle."
+  },
+  "day5_archive_cycle07_35": {
+    "text": "The door wasn't locked. Rainwater from outside spilled over the threshold and flowed inside."
+  },
+  "day5_archive_cycle07_36": {
+    "text": "If I leave here, am I outside the fence?"
+  },
+  "day5_archive_cycle07_37": {
+    "text": "Behind the parking lot. People can pass between the fences. I saw it during the day."
+  },
+  "day5_archive_cycle07_38": {
+    "text": "I grabbed the bag strap again and covered the front of my uniform to keep the paper from getting wet."
+  },
+  "day5_archive_cycle07_39": {
+    "text": "Seolhwa put his foot out first, then lifted his toe for a moment as the rainwater reached his socks."
+  },
+  "day5_archive_cycle07_40": {
+    "text": "The door crashed behind us and Seolhwa caught the handle before it hit the wall."
+  },
+  "day5_archive_cycle07_41": {
+    "text": "Taeho. Come over to me."
+  },
+  "day5_archive_cycle07_42": {
+    "text": "The teacher was standing on the stairs. The two men in the back were holding flashlights at face level."
+  },
+  "day5_archive_cycle07_43": {
+    "text": "Seolhwa blocked my path. The hand holding my bag slowly came down."
+  },
+  "day5_archive_cycle07_44": {
+    "text": "I'm the one who opened the records room. He only followed me."
+  },
+  "day5_archive_cycle07_45": {
+    "text": "Put down your bag first. There is no need for either of you to get hurt."
+  },
+  "day5_archive_cycle07_46": {
+    "text": "The man behind the teacher stepped on a puddle while going down one step, and his black pants got wet."
+  },
+  "day5_archive_cycle07_47": {
+    "text": "Seolhwa opened the door again and pushed the door panel with his body, widening the passage behind me."
+  },
+  "day5_archive_cycle07_48": {
+    "text": "You too, come out. We can go out together."
+  },
+  "day5_archive_cycle07_49": {
+    "text": "Seolhwa grabbed my left hand. The right hand holding the photo envelope was not touched."
+  },
+  "day5_archive_cycle07_50": {
+    "text": "Open your left hand. Hurry."
+  },
+  "day5_archive_cycle07_51": {
+    "text": "When he opened his palm, Seolhwa drew a short stroke with the tip of his fingernail. I closed my hands and opened them again."
+  },
+  "day5_archive_cycle07_52": {
+    "text": "Even if you move your right hand as they tell you, make sure your left hand remembers."
+  },
+  "day5_archive_cycle07_53": {
+    "text": "Rainwater flowed between my fingers. Seolhwa's fingernail pressed the same spot once more."
+  },
+  "day5_archive_cycle07_54": {
+    "text": "Will it stay in my memory if it hurts?"
+  },
+  "day5_archive_cycle07_55": {
+    "text": "I don't know. But it's your hand. You'll have it longer than that paper."
+  },
+  "day5_archive_cycle07_56": {
+    "text": "The sound of footsteps on the stairs became faster. Seolhwa pushed me out the door without letting go of my hand."
+  },
+  "day5_archive_cycle07_57": {
+    "text": "Get out next time. Even if your name changes, look at this hand first."
+  },
+  "day5_archive_cycle07_58": {
+    "text": "The teacher’s hand came through the crack in the door. Seolhwa held the door handle with both hands."
+  },
+  "day5_archive_cycle07_59": {
+    "text": "I left my bag outside the door. One of Seolhwa's shoes was caught on the threshold."
+  },
+  "day5_archive_cycle07_60": {
+    "text": "The door did not close completely. The man came around to the side and grabbed my arm."
+  },
+  "day5_archive_cycle07_61": {
+    "text": "The bag strap slipped off my shoulder. The wet bag fell to the floor and absorbed the water."
+  },
+  "day5_archive_cycle07_62": {
+    "text": "Seolhwa called my name. One time it was Taeho and the next time the end of the horse got caught in the door."
+  },
+  "day5_archive_cycle07_63": {
+    "text": "The teacher picked up the bag. I tried to take the document out of his hand and put my left hand on the wall."
+  },
+  "day5_archive_cycle07_64": {
+    "text": "When the stroke of the palm touched the concrete, the fingers folded in the direction drawn by Seolhwa."
+  },
+  "day5_archive_cycle07_65": {
+    "text": "What about Seolhwa? She's coming with us, isn't she?"
+  },
+  "day5_archive_cycle07_66": {
+    "text": "No one answered. Seolhwa's shoes disappeared inside the door and my arm was pulled to the other side."
+  },
+  "day5_archive_cycle07_67": {
+    "text": "The sound on the recording screen was cut off. The door closing under the emergency lights was repeated twice."
+  },
+  "day5_archive_cycle07_68": {
+    "text": "The next page listed Lee Seolhwa as an additional person. The outcome was permanent disposal."
+  },
+  "day5_archive_cycle07_69": {
+    "text": "The subject's compartment was marked as 8th re-entry. A new name tag was attached above the name Kim Taeho."
+  },
+  "day5_archive_cycle07_70": {
+    "text": "I let go of the restore screen. My left hand was actually holding the edge of the server desk."
+  },
+  "day5_archive_cycle07_71": {
+    "text": "Before closing the record, I saved Seolhwa's photo separately. The stamp indicating disposal was moved to a different line from the name."
+  },
+  "day5_archive_cycle07_72": {
+    "text": "In the photo, Seolhwa was still holding the flashlight. It wasn't a photo that asked people to close their eyes or smile."
+  },
+  "day5_archive_cycle07_73": {
+    "text": "The words left at the door remained at the end of the recording. The sound of rain continued for a long time after the last word."
+  },
+  "day5_archive_cycle07_74": {
+    "text": "I stretched out my left hand and pressed my finger where the stroke had been. I wiped my hands before turning the screen."
+  },
+  "day5_archive_cycle07_75": {
+    "text": "Even when I went back to the original list on the server, the capacity number next to the seventh record was the same as before I read it."
+  },
+  "day5_archive_cycle12_1": {
+    "text": "The next folder bore the name Lee Junho. Choi Yuna had also signed the photography club application."
+  },
+  "day5_archive_cycle12_2": {
+    "text": "On the restoration screen, I was adjusting my camera strap. Yuna waved an empty film canister next to him."
+  },
+  "day5_archive_cycle12_3": {
+    "text": "Sunbae. Let's photograph somewhere besides the schoolyard today. We always go to the same spot."
+  },
+  "day5_archive_cycle12_4": {
+    "text": "If you take a picture from the same place, you can see the changes."
+  },
+  "day5_archive_cycle12_5": {
+    "text": "Yuna pointed to my camera and said that the date function was broken and I had to write it down myself."
+  },
+  "day5_archive_cycle12_6": {
+    "text": "We wrote the date on the back of the developed photo. It was the same day, but one number I wrote was different."
+  },
+  "day5_archive_cycle12_7": {
+    "text": "That's yesterday's date. You're a day behind again, sunbae."
+  },
+  "day5_archive_cycle12_8": {
+    "text": "I laughed and erased it. The rubber eraser has worn black over the pencil marks."
+  },
+  "day5_archive_cycle12_9": {
+    "text": "The lockers in the photography department were old and the plywood underneath was cracked. Every time Yuna put the camera in, it rattled."
+  },
+  "day5_archive_cycle12_10": {
+    "text": "I folded the paper under the plywood and Yuna nodded as the floor was secured."
+  },
+  "day5_archive_cycle12_11": {
+    "text": "It's steady now. You're good at this sort of thing, sunbae."
+  },
+  "day5_archive_cycle12_12": {
+    "text": "I tried putting an empty film canister inside it. When the floor was covered, there was no sound from inside."
+  },
+  "day5_archive_cycle12_13": {
+    "text": "A photo taken a few days later showed an unfamiliar student. I turned it over and found an old date and my handwriting."
+  },
+  "day5_archive_cycle12_14": {
+    "text": "At first, I thought it was a photo left by a former member of the department. The same wrist was shown in the second photo."
+  },
+  "day5_archive_cycle12_15": {
+    "text": "Yuna pointed his finger at my wrist. The watch buckle mark remained in the same place as in the photo."
+  },
+  "day5_archive_cycle12_16": {
+    "text": "Is that you in the photo, sunbae?"
+  },
+  "day5_archive_cycle12_17": {
+    "text": "I put the photo on the desk. I knew that if I said no, Yuna would take out the next photo."
+  },
+  "day5_archive_cycle12_18": {
+    "text": "I found envelopes numbered from first to eleven in the drawer. The names were all different, but the signatures were similar."
+  },
+  "day5_archive_cycle12_19": {
+    "text": "There was no photo in the last envelope. Only my name, Lee Junho, was written on the medication confirmation form."
+  },
+  "day5_archive_cycle12_20": {
+    "text": "Yuna locked the door, turned on the dark room light, and read the dates one by one under the red light."
+  },
+  "day5_archive_cycle12_21": {
+    "text": "We wrote down what we remembered on separate pieces of paper and then folded and changed the pieces of paper before speaking to each other."
+  },
+  "day5_archive_cycle12_22": {
+    "text": "The name of my former school that I remember wasn't on the map. Yuna also took a photo of the map search screen."
+  },
+  "day5_archive_cycle12_23": {
+    "text": "Keep the questions we can't answer too. Don't erase them."
+  },
+  "day5_archive_cycle12_24": {
+    "text": "An announcement was made in the classroom telling students to come to the health room. The student's name was not mentioned until the end."
+  },
+  "day5_archive_cycle12_25": {
+    "text": "The same notice popped up on my phone. A sentence was attached saying that today's schedule cannot be changed."
+  },
+  "day5_archive_cycle12_26": {
+    "text": "At the door of the health room, I left my bag with Yuna. Yuna hung it on her shoulder without loosening the strap."
+  },
+  "day5_archive_cycle12_27": {
+    "text": "If ten minutes pass and you don't come out, I'll go in."
+  },
+  "day5_archive_cycle12_28": {
+    "text": "Don't wait at the door. Wait in the photography club room."
+  },
+  "day5_archive_cycle12_29": {
+    "text": "Riin closed the curtain when I came in. The door side was covered, not the bed side."
+  },
+  "day5_archive_cycle12_30": {
+    "text": "Did you drink water today? Did you eat?"
+  },
+  "day5_archive_cycle12_31": {
+    "text": "I answered the questions in order. The teacher just looked at the clock without writing down the answer."
+  },
+  "day5_archive_cycle12_32": {
+    "text": "One ampoule in the tray was less full than the others. Riin held the ampoule in his palm."
+  },
+  "day5_archive_cycle12_33": {
+    "text": "Will that injection erase my memory?"
+  },
+  "day5_archive_cycle12_34": {
+    "text": "Riin's hand stopped. The sound of putting down the ampoule was louder than usual."
+  },
+  "day5_archive_cycle12_35": {
+    "text": "Who said that?"
+  },
+  "day5_archive_cycle12_36": {
+    "text": "It's written in the papers. Your signature's there too."
+  },
+  "day5_archive_cycle12_37": {
+    "text": "Riin first checked to see who was outside by lifting and closing the curtain at the door."
+  },
+  "day5_archive_cycle12_38": {
+    "text": "If you walk later, keep a hand on the wall. Don't run."
+  },
+  "day5_archive_cycle12_39": {
+    "text": "The area where the injection needle touched was hidden on the screen. Only the sound of my breathing was left in the recorded audio."
+  },
+  "day5_archive_cycle12_40": {
+    "text": "When I left the health room, the hallways seemed double-layered. I placed my palm on the tiles on the wall."
+  },
+  "day5_archive_cycle12_41": {
+    "text": "Yuna came out from around the corner. My shirt got caught in my hand holding the bag strap."
+  },
+  "day5_archive_cycle12_42": {
+    "text": "Ten minutes have passed. Let’s go to the photography club together."
+  },
+  "day5_archive_cycle12_43": {
+    "text": "Yuna, who was standing on the side where I was leaning against the wall, shortened his stride without pulling my arm."
+  },
+  "day5_archive_cycle12_44": {
+    "text": "When I entered the dark room, a red light came on. Yuna put down his bag and put a chair in front of the door."
+  },
+  "day5_archive_cycle12_45": {
+    "text": "You can't keep waiting here."
+  },
+  "day5_archive_cycle12_46": {
+    "text": "Don’t say things like that when you can’t walk alone right now."
+  },
+  "day5_archive_cycle12_47": {
+    "text": "I took out the envelopes from my bag. My fingertips lost their strength and the first photo fell to the floor."
+  },
+  "day5_archive_cycle12_48": {
+    "text": "Yuna picked it up and put it in order. When I asked him to hold the corner, he pressed it with both hands."
+  },
+  "day5_archive_cycle12_49": {
+    "text": "As I pulled out the film and held it up to the window light, I realized too late that it was a dark room. Yuna put my hand down."
+  },
+  "day5_archive_cycle12_50": {
+    "text": "It's already developed. You don't need to hold it up to the light now."
+  },
+  "day5_archive_cycle12_51": {
+    "text": "Remember the bottom of the locker? Where we put the paper."
+  },
+  "day5_archive_cycle12_52": {
+    "text": "Yuna nodded and took the camera from my hand and placed it on his chest."
+  },
+  "day5_archive_cycle12_53": {
+    "text": "I put a photo and a film into the empty container. I had to change hands three times to close the lid."
+  },
+  "day5_archive_cycle12_54": {
+    "text": "Put it under it. If I ask for it tomorrow, don’t give it to me right away."
+  },
+  "day5_archive_cycle12_55": {
+    "text": "But if you ask for it, why shouldn't I give it to you?"
+  },
+  "day5_archive_cycle12_56": {
+    "text": "While writing my name on paper, the last letter overlapped twice."
+  },
+  "day5_archive_cycle12_57": {
+    "text": "The person who comes through the school gates tomorrow may not know this name."
+  },
+  "day5_archive_cycle12_58": {
+    "text": "Yuna took the paper. The date was rewritten under three letters Lee Junho."
+  },
+  "day5_archive_cycle12_59": {
+    "text": "Then I'll ask you. To make sure you're really my sunbae."
+  },
+  "day5_archive_cycle12_60": {
+    "text": "Don't throw it away if I get the answer wrong. Keep it for the thirteenth one too."
+  },
+  "day5_archive_cycle12_61": {
+    "text": "Yuna's hand wrapped around the film canister. Instead of wiping my eyes, I closed the camera strap shorter."
+  },
+  "day5_archive_cycle12_62": {
+    "text": "Even if I come through the school gates again tomorrow morning, I won't be the Lee Junho you know."
+  },
+  "day5_archive_cycle12_63": {
+    "text": "Yuna pressed his lips. He didn't answer and just shook his head once."
+  },
+  "day5_archive_cycle12_64": {
+    "text": "Please don't give up on the thirteenth me. If I don't know, tell me again."
+  },
+  "day5_archive_cycle12_65": {
+    "text": "When I heard the sound of shoes outside, I tried to move the chair in front of the door and lost the backrest."
+  },
+  "day5_archive_cycle12_66": {
+    "text": "Yuna took the chair, silently moved it to the side, and grabbed my bag again before opening the door."
+  },
+  "day5_archive_cycle12_67": {
+    "text": "Sunbae. What's my name? You can still tell me, can't you?"
+  },
+  "day5_archive_cycle12_68": {
+    "text": "Choi Yuna. You hate losing photos more than anything."
+  },
+  "day5_archive_cycle12_69": {
+    "text": "Yuna lowered his head. I opened the door a little and untied the bag strap from Yuna's hand."
+  },
+  "day5_archive_cycle12_70": {
+    "text": "Teacher Eunsu was standing in the hallway. When he saw my shoes, he came over and grabbed my elbow."
+  },
+  "day5_archive_cycle12_71": {
+    "text": "Once you leave the nurse's office, you should come back to class. Don't walk on your own."
+  },
+  "day5_archive_cycle12_72": {
+    "text": "As the darkroom door closed, a small sound of plywood being lifted could be heard from inside."
+  },
+  "day5_archive_cycle12_73": {
+    "text": "The teacher didn't look back. I stretched out my hand, placed it on the wall, and slowed down until the sound stopped."
+  },
+  "day5_archive_cycle12_74": {
+    "text": "The last photo on record only showed the bottom of the locker. The film canister was hidden beneath the plywood and not visible."
+  },
+  "day5_archive_cycle12_75": {
+    "text": "When I returned to the server screen, my left hand felt tense. I wrote the three names on separate lines."
+  },
+  "day5_archive_cycle12_76": {
+    "text": "Lee Junho, Choi Yuna, the thirteenth. I kept the names separate and closed the record with the blanks still there."
+  },
+  "day5_history_callback_37": {
+    "text": "There was also a wet piece of paper in the bag. Instead of throwing away even the unreadable letters, I put them away from the prescription."
+  },
+  "day5_history_callback_38": {
+    "text": "I filled out my notes in the order I recorded them at night. You did not mix what Seolhwa said and what was left in the document on the same line."
+  },
+  "day5_history_callback_39": {
+    "text": "The record set the previous day was opened on the administrator screen. The inconsistencies I had identified now appeared to be editable."
+  },
+  "day5_expansion_action_10_a": {
+    "text": "I looked straight at my face in the lens. Since it wasn't a photo that confirmed names, it was rather clear where to look."
+  },
+  "day5_expansion_action_10_b": {
+    "text": "When I picked up the camera, Yuna stood in front of a blank wall. I took a step back and put my hand inside the frame."
+  }
 }

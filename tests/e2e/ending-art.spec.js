@@ -4,7 +4,11 @@ const scenes = [
     ['day5_ending_true_28', 'ending_true', 'ending_true_new_classroom.webp'],
     ['day5_ending_resist_22', 'ending_resist', 'ending_resist_records.webp'],
     ['day5_ending_complicit_9', 'ending_complicit', 'ending_complicit_signature.webp'],
-    ['day5_ending_cage_sea_6', 'ending_cage_sea', 'ending_cage_sea_lunch.webp']
+    ['day5_ending_cage_sea_6', 'ending_cage_sea', 'ending_cage_sea_lunch.webp'],
+    ['day5_archive_cycle07_51', 'cg_cycle07_seolhwa', 'cg_seolhwa_cycle07_rain.webp'],
+    ['day5_archive_cycle12_52', 'cg_cycle12_yuna', 'cg_yuna_darkroom_film.webp'],
+    ['day5_ending_cage_eunsu_epilogue_13', 'ending_cage_eunsu', 'ending_cage_eunsu_desk.webp'],
+    ['day5_ending_complicit_epilogue_4', 'ending_complicit_monitors', 'ending_complicit_monitors.webp']
 ];
 
 for (const viewport of [{ width:1280,height:800 },{ width:844,height:390 }]) {
@@ -35,7 +39,7 @@ for (const viewport of [{ width:1280,height:800 },{ width:844,height:390 }]) {
             await page.screenshot({path:info.outputPath(`${galleryId}-story.png`),animations:'disabled'});
         }
         await page.evaluate(() => { game.gallery.activeTab = 'cg'; game.gallery.open(); });
-        await expect(page.locator('.gallery-card[data-kind="cg"]')).toHaveCount(8);
+        await expect(page.locator('.gallery-card[data-kind="cg"]')).toHaveCount(12);
         for (const [,galleryId] of scenes) {
             await page.locator(`.gallery-card[data-id="${galleryId}"]`).click();
             await expect(page.locator('.gallery-image-modal img')).toBeVisible();

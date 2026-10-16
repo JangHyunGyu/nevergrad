@@ -1,201 +1,411 @@
 {
-    "day3_morning_start": {
-        "text": "*Día 3. Suena la alarma.*"
-    },
-    "day3_morning_wake_2": {
-        "text": "*...Siento el cuerpo pesado. La mano que apagó la alarma cae sobre la cobija con un compás de retraso.*"
-    },
-    "day3_morning_wake_3": {
-        "text": "*Me paré frente al lavabo para lavarme la cara. El espejo estaba empañado. Extendí la mano para limpiarlo... y me detuve.*"
-    },
-    "day3_morning_mirror_1": {
-        "text": "*El vapor se escurre, y solo la parte a la altura de mis ojos se aclara primero. Antes de mirarla, abro la llave.*"
-    },
-    "day3_morning_mirror_2": {
-        "text": "*Solo me eché agua en la cara y salí.*"
-    },
-    "day3_morning_mirror_3": {
-        "text": "*Abrí el refrigerador y... la leche que compré ayer se había movido.*"
-    },
-    "day3_morning_milk_1": {
-        "text": "*En el lugar donde estaba antes, solo queda una marca redonda de agua.*"
-    },
-    "day3_morning_milk_2": {
-        "text": "*El estuche está a la derecha. La leche, en el estante de arriba. Ambos están en lugares fáciles de alcanzar con la mano.*"
-    },
-    "day3_morning_commute_1": {
-        "text": "*Salgo de casa y me dirijo a la escuela. El aire de la mañana es frío.*"
-    },
-    "day3_morning_commute_2": {
-        "text": "*Caminando por el callejón, dos estudiantes van delante de mí. Uno de ellos dice:*"
-    },
-    "day3_morning_commute_3": {
-        "text": "Oye, ¿hiciste la tarea de matemáticas? El 2 estaba algo difícil."
-    },
-    "day3_morning_commute_4": {
-        "text": "Yo miré las respuestas."
-    },
-    "day3_morning_commute_5": {
-        "text": "*Las siguientes palabras se me ocurren primero.*"
-    },
-    "day3_morning_commute_6": {
-        "text": "*El mismo callejón. La misma hora. La risa de la persona de adelante llega medio compás después del sonido que primero sonó en mi cabeza.*"
-    },
-    "day3_morning_commute_7": {
-        "text": "*Las hojas de matemáticas que cuelgan de las mochilas de los dos alumnos tienen la misma esquina doblada que ayer.*"
-    },
-    "day3_morning_commute_8": {
-        "text": "*Mis pasos se aceleran tanto que la correa de la mochila me rebota en el hombro.*"
-    },
-    "day3_morning_gate_1": {
-        "text": "*Llego a la escuela. Hoy no veo a Sea.*"
-    },
-    "day3_morning_gate_2": {
-        "text": "*Junto al pilar de ladrillo, el lugar donde Sea estaba recargada está vacío. Solo los pétalos de cerezo en el suelo están aplastados con forma de zapatos.*"
-    },
-    "day3_morning_gate_3": {
-        "text": "*Paso por la entrada entre los demás estudiantes. Oigo una voz breve detrás de mí y me vuelvo.*"
-    },
-    "day3_morning_gate_4": {
-        "text": "*Nadie estaba mirando. Todos caminaban hacia adelante.*"
-    },
-    "day3_morning_gate_5": {
-        "text": "*El chico que acaba de pasar roza mi mirada con la suya. Sus labios se mueven apenas. No hay sonido. Se parece a 'otra vez'.*"
-    },
-    "day3_morning_gate_6": {
-        "text": "*Me di la vuelta para mirar de nuevo. Él ya había entrado al edificio.*"
-    },
-    "day3_morning_locker_1": {
-        "text": "*Caminando por el pasillo, me detuve.*"
-    },
-    "day3_morning_locker_2": {
-        "text": "*Un casillero. El nombre había sido borrado. Marcas de haber sido raspado repetidamente con una llave o un cuchillo.*"
-    },
-    "day3_morning_locker_3": {
-        "text": "*Curioso/a, abrí el casillero. No estaba cerrado. Completamente vacío. Solo polvo.*"
-    },
-    "day3_morning_locker_4": {
-        "text": "*En la esquina, una foto rota. Una foto tamaño pasaporte cortada por la mitad. Solo queda la mitad de una cara.*"
-    },
-    "day3_morning_locker_5": {
-        "text": "*...Esta cara. Se me hace conocida. ¿Quién es?*",
-        "choices": [
-            "Guardar el trozo de foto",
-            "Mirar el reverso",
-            "Buscar si alguien vio"
-        ]
-    },
-    "day3_morning_photo_1": {
-        "text": "*Guardé la foto en mi bolsillo.*"
-    },
-    "day3_morning_photo_2": {
-        "text": "*...Y hay una inscripción más, rayada en la pared interior del casillero. Muy pequeña.*"
-    },
-    "day3_morning_inscription_1": {
-        "text": "*El trazo que se quiebra hacia la izquierda. El punto final que pierde fuerza al terminar. Es igual a lo que vi ayer debajo del pupitre.*"
-    },
-    "day3_morning_inscription_2": {
-        "text": "*Miro debajo de mis uñas. Las manchas de grafito de ayer ya se fueron con el agua.*"
-    },
-    "day3_morning_inscription_3": {
-        "text": "*Cierro el casillero y doblo la esquina. Seolhwa está allí. Esta vez, cerca.*"
-    },
-    "day3_morning_seolhwa_1": {
-        "text": "*Seolhwa habla primero.*"
-    },
-    "day3_morning_seolhwa_3": {
-        "text": "¿...Eres zurdo/a, verdad?"
-    },
-    "day3_morning_seolhwa_4": {
-        "text": "¿...Eh? Sí, lo soy. ¿Cómo lo supiste?"
-    },
-    "day3_morning_seolhwa_5": {
-        "text": "*Seolhwa no responde. Mira una vez mi mano izquierda y otra mi cara. Después de un momento, habla en voz baja.*",
-        "choices": [
-            "Responder la pregunta sobre la mano izquierda",
-            "Preguntar por qué quiere saberlo",
-            "Fingir que no oí"
-        ]
-    },
-    "day3_morning_seolhwa_6": {
-        "text": "Ten cuidado."
-    },
-    "day3_morning_seolhwa_7": {
-        "text": "¿Qué? Espera."
-    },
-    "day3_morning_seolhwa_8": {
-        "text": "*Seolhwa se da la vuelta y se aleja.*\n\nEspera. ¿Con qué tengo que tener cuidado? No puedes irte sin explicarlo."
-    },
-    "day3_morning_seolhwa_9": {
-        "text": "*Los dedos de mi mano izquierda se doblan y se estiran solos. La mano que extendí ayer al saludar fue la derecha.*"
-    },
-    "day3_morning_classroom_1": {
-        "text": "*Caminé por el pasillo y me paré frente al salón de clases. Puedo escuchar murmullos más allá de la puerta.*"
-    },
-    "day3_morning_classroom_2": {
-        "text": "*Abrí la puerta.*"
-    },
-    "day3_morning_classroom_3": {
-        "text": "*Las conversaciones se detienen. Todas a la vez.*"
-    },
-    "day3_morning_classroom_4": {
-        "text": "*El polvo de gis cae despacio bajo el pizarrón. La risa no vuelve.*"
-    },
-    "day3_morning_classroom_5": {
-        "text": "*Dos chicos de la primera fila se miran de reojo. Una chica de la última fila vuelve la vista hacia la ventana. Debajo de una mesa, alguien frena la pata de una silla con la punta del pie.*"
-    },
-    "day3_morning_goosebumps": {
-        "text": "*Me froto el antebrazo. En las yemas de los dedos solo queda la sensación de los vellos erizados. El segundero del reloj del salón suena demasiado fuerte.*"
-    },
-    "day3_morning_sea_1a": {
-        "text": "*Sea está sentada en su asiento. Está sonriendo, pero... solo su boca sonríe.*"
-    },
-    "day3_morning_sea_2": {
-        "text": "Buenos días, {name}. ¿Llegas un poco tarde hoy?"
-    },
-    "day3_morning_sea_3": {
-        "text": "Un poco."
-    },
-    "day3_morning_sea_4": {
-        "text": "No te ves bien. ¿No pudiste dormir anoche?"
-    },
-    "day3_morning_sea_5": {
-        "text": "*La voz de Sea es alegre. Sus dedos marcan un ritmo constante sobre la mesa y se detienen dos veces.*\n\n¿De qué hablabais? Os callasteis cuando entré."
-    },
-    "day3_morning_sea_6": {
-        "text": "*Sea baja la mirada de mi cara a la nuca y luego a mi mano izquierda, antes de volver a subirla.*\n\nNo me di cuenta de que entrabas. ¿Dormiste mal anoche?"
-    },
-    "day3_morning_sea_6b": {
-        "text": "*En el margen del cuaderno de Sea, junto a la fecha de hoy, hay tres pequeños cuadrados vacíos dibujados.*"
-    },
-    "day3_morning_sea_7": {
-        "text": "Sí, di vueltas un poco."
-    },
-    "day3_morning_sea_6a": {
-        "text": "*Sea ladea un poco la cabeza y me observa. 2 segundos. 3. 4.*\n\n¿Por qué me miras así? ¿Tengo algo en la cara?"
-    },
-    "day3_morning_sea_8": {
-        "text": "Ya veo. No te esfuerces demasiado."
-    },
-    "day3_morning_sea_9": {
-        "text": "*Sea se gira. Tiene tensos los músculos de la nuca. Marca una de las casillas vacías que acaba de dibujar.*\n\n¿Qué apuntas? ¿También anotas que he dormido mal?"
-    },
-    "day3_morning_pencil_1": {
-        "text": "*Me siento y abro el cajón del pupitre... el estuche que dejé ayer se ha movido.*"
-    },
-    "day3_morning_pencil_2": {
-        "text": "*Definitivamente lo puse a la izquierda, pero está a la derecha.*"
-    },
-    "day3_morning_pencil_3": {
-        "text": "*...Otra vez. La leche, el estuche.*"
-    },
-    "day3_morning_end": {
-        "text": "*La clase comienza. Leo tres veces la primera línea del libro de texto, pero mis ojos vuelven al mismo lugar.*"
-    },
-    "day3_morning_photo_back": {
-        "text": "*Le di la vuelta al fragmento de foto y examiné el reverso. Había una fecha escrita, apenas visible.*"
-    },
-    "day3_morning_photo_look": {
-        "text": "*Sin dejar de tapar el fragmento de foto con la mano, giré la cabeza para mirar el pasillo.*"
-    }
+  "day3_morning_start": {
+    "text": "*Día 3. Suena la alarma.*"
+  },
+  "day3_morning_wake_2": {
+    "text": "*...Siento el cuerpo pesado. La mano que apagó la alarma cae sobre la cobija con un compás de retraso.*"
+  },
+  "day3_morning_wake_3": {
+    "text": "*Me paré frente al lavabo para lavarme la cara. El espejo estaba empañado. Extendí la mano para limpiarlo... y me detuve.*"
+  },
+  "day3_morning_mirror_1": {
+    "text": "*El vapor se escurre, y solo la parte a la altura de mis ojos se aclara primero. Antes de mirarla, abro la llave.*"
+  },
+  "day3_morning_mirror_2": {
+    "text": "*Solo me eché agua en la cara y salí.*"
+  },
+  "day3_morning_mirror_3": {
+    "text": "*Abrí el refrigerador y... la leche que compré ayer se había movido.*"
+  },
+  "day3_morning_milk_1": {
+    "text": "*En el lugar donde estaba antes, solo queda una marca redonda de agua.*"
+  },
+  "day3_morning_milk_2": {
+    "text": "*El estuche está a la derecha. La leche, en el estante de arriba. Ambos están en lugares fáciles de alcanzar con la mano.*"
+  },
+  "day3_morning_commute_1": {
+    "text": "*Salgo de casa y me dirijo a la escuela. El aire de la mañana es frío.*"
+  },
+  "day3_morning_commute_2": {
+    "text": "*Caminando por el callejón, dos estudiantes van delante de mí. Uno de ellos dice:*"
+  },
+  "day3_morning_commute_3": {
+    "text": "Oye, ¿hiciste la tarea de matemáticas? El 2 estaba algo difícil."
+  },
+  "day3_morning_commute_4": {
+    "text": "Yo miré las respuestas."
+  },
+  "day3_morning_commute_5": {
+    "text": "*Las siguientes palabras se me ocurren primero.*"
+  },
+  "day3_morning_commute_6": {
+    "text": "*El mismo callejón. La misma hora. La risa de la persona de adelante llega medio compás después del sonido que primero sonó en mi cabeza.*"
+  },
+  "day3_morning_commute_7": {
+    "text": "*Las hojas de matemáticas que cuelgan de las mochilas de los dos alumnos tienen la misma esquina doblada que ayer.*"
+  },
+  "day3_morning_commute_8": {
+    "text": "*Mis pasos se aceleran tanto que la correa de la mochila me rebota en el hombro.*"
+  },
+  "day3_morning_gate_1": {
+    "text": "*Llego a la escuela. Hoy no veo a Sea.*"
+  },
+  "day3_morning_gate_2": {
+    "text": "*Junto al pilar de ladrillo, el lugar donde Sea estaba recargada está vacío. Solo los pétalos de cerezo en el suelo están aplastados con forma de zapatos.*"
+  },
+  "day3_morning_gate_3": {
+    "text": "*Paso por la entrada entre los demás estudiantes. Oigo una voz breve detrás de mí y me vuelvo.*"
+  },
+  "day3_morning_gate_4": {
+    "text": "*Nadie estaba mirando. Todos caminaban hacia adelante.*"
+  },
+  "day3_morning_gate_5": {
+    "text": "*El chico que acaba de pasar roza mi mirada con la suya. Sus labios se mueven apenas. No hay sonido. Se parece a 'otra vez'.*"
+  },
+  "day3_morning_gate_6": {
+    "text": "*Me di la vuelta para mirar de nuevo. Él ya había entrado al edificio.*"
+  },
+  "day3_morning_locker_1": {
+    "text": "*Caminando por el pasillo, me detuve.*"
+  },
+  "day3_morning_locker_2": {
+    "text": "*Un casillero. El nombre había sido borrado. Marcas de haber sido raspado repetidamente con una llave o un cuchillo.*"
+  },
+  "day3_morning_locker_3": {
+    "text": "*Curioso/a, abrí el casillero. No estaba cerrado. Completamente vacío. Solo polvo.*"
+  },
+  "day3_morning_locker_4": {
+    "text": "*En la esquina, una foto rota. Una foto tamaño pasaporte cortada por la mitad. Solo queda la mitad de una cara.*"
+  },
+  "day3_morning_locker_5": {
+    "text": "*...Esta cara. Se me hace conocida. ¿Quién es?*",
+    "choices": [
+      "Guardar el trozo de foto",
+      "Mirar el reverso",
+      "Buscar si alguien vio"
+    ]
+  },
+  "day3_morning_photo_1": {
+    "text": "*Guardé la foto en mi bolsillo.*"
+  },
+  "day3_morning_photo_2": {
+    "text": "*...Y hay una inscripción más, rayada en la pared interior del casillero. Muy pequeña.*"
+  },
+  "day3_morning_inscription_1": {
+    "text": "*El trazo que se quiebra hacia la izquierda. El punto final que pierde fuerza al terminar. Es igual a lo que vi ayer debajo del pupitre.*"
+  },
+  "day3_morning_inscription_2": {
+    "text": "*Miro debajo de mis uñas. Las manchas de grafito de ayer ya se fueron con el agua.*"
+  },
+  "day3_morning_inscription_3": {
+    "text": "*Cierro el casillero y doblo la esquina. Seolhwa está allí. Esta vez, cerca.*"
+  },
+  "day3_morning_seolhwa_1": {
+    "text": "*Seolhwa habla primero.*"
+  },
+  "day3_morning_seolhwa_3": {
+    "text": "¿...Eres zurdo/a, verdad?"
+  },
+  "day3_morning_seolhwa_4": {
+    "text": "¿...Eh? Sí, lo soy. ¿Cómo lo supiste?"
+  },
+  "day3_morning_seolhwa_5": {
+    "text": "*Seolhwa no responde. Mira una vez mi mano izquierda y otra mi cara. Después de un momento, habla en voz baja.*",
+    "choices": [
+      "Responder la pregunta sobre la mano izquierda",
+      "Preguntar por qué quiere saberlo",
+      "Fingir que no oí"
+    ]
+  },
+  "day3_morning_seolhwa_6": {
+    "text": "Ten cuidado."
+  },
+  "day3_morning_seolhwa_7": {
+    "text": "¿Qué? Espera."
+  },
+  "day3_morning_seolhwa_8": {
+    "text": "*Seolhwa se da la vuelta y se aleja.*\n\nEspera. ¿Con qué tengo que tener cuidado? No puedes irte sin explicarlo."
+  },
+  "day3_morning_seolhwa_9": {
+    "text": "*Los dedos de mi mano izquierda se doblan y se estiran solos. La mano que extendí ayer al saludar fue la derecha.*"
+  },
+  "day3_morning_classroom_1": {
+    "text": "*Caminé por el pasillo y me paré frente al salón de clases. Puedo escuchar murmullos más allá de la puerta.*"
+  },
+  "day3_morning_classroom_2": {
+    "text": "*Abrí la puerta.*"
+  },
+  "day3_morning_classroom_3": {
+    "text": "*Las conversaciones se detienen. Todas a la vez.*"
+  },
+  "day3_morning_classroom_4": {
+    "text": "*El polvo de gis cae despacio bajo el pizarrón. La risa no vuelve.*"
+  },
+  "day3_morning_classroom_5": {
+    "text": "*Dos chicos de la primera fila se miran de reojo. Una chica de la última fila vuelve la vista hacia la ventana. Debajo de una mesa, alguien frena la pata de una silla con la punta del pie.*"
+  },
+  "day3_morning_goosebumps": {
+    "text": "*Me froto el antebrazo. En las yemas de los dedos solo queda la sensación de los vellos erizados. El segundero del reloj del salón suena demasiado fuerte.*"
+  },
+  "day3_morning_sea_1a": {
+    "text": "*Sea está sentada en su asiento. Está sonriendo, pero... solo su boca sonríe.*"
+  },
+  "day3_morning_sea_2": {
+    "text": "Buenos días, {name}. ¿Llegas un poco tarde hoy?"
+  },
+  "day3_morning_sea_3": {
+    "text": "Un poco."
+  },
+  "day3_morning_sea_4": {
+    "text": "No te ves bien. ¿No pudiste dormir anoche?"
+  },
+  "day3_morning_sea_5": {
+    "text": "*La voz de Sea es alegre. Sus dedos marcan un ritmo constante sobre la mesa y se detienen dos veces.*\n\n¿De qué hablabais? Os callasteis cuando entré."
+  },
+  "day3_morning_sea_6": {
+    "text": "*Sea baja la mirada de mi cara a la nuca y luego a mi mano izquierda, antes de volver a subirla.*\n\nNo me di cuenta de que entrabas. ¿Dormiste mal anoche?"
+  },
+  "day3_morning_sea_6b": {
+    "text": "*En el margen del cuaderno de Sea, junto a la fecha de hoy, hay tres pequeños cuadrados vacíos dibujados.*"
+  },
+  "day3_morning_sea_7": {
+    "text": "Sí, di vueltas un poco."
+  },
+  "day3_morning_sea_6a": {
+    "text": "*Sea ladea un poco la cabeza y me observa. 2 segundos. 3. 4.*\n\n¿Por qué me miras así? ¿Tengo algo en la cara?"
+  },
+  "day3_morning_sea_8": {
+    "text": "Ya veo. No te esfuerces demasiado."
+  },
+  "day3_morning_sea_9": {
+    "text": "*Sea se gira. Tiene tensos los músculos de la nuca. Marca una de las casillas vacías que acaba de dibujar.*\n\n¿Qué apuntas? ¿También anotas que he dormido mal?"
+  },
+  "day3_morning_pencil_1": {
+    "text": "*Me siento y abro el cajón del pupitre... el estuche que dejé ayer se ha movido.*"
+  },
+  "day3_morning_pencil_2": {
+    "text": "*Definitivamente lo puse a la izquierda, pero está a la derecha.*"
+  },
+  "day3_morning_pencil_3": {
+    "text": "*...Otra vez. La leche, el estuche.*"
+  },
+  "day3_morning_end": {
+    "text": "*La clase comienza. Leo tres veces la primera línea del libro de texto, pero mis ojos vuelven al mismo lugar.*"
+  },
+  "day3_morning_photo_back": {
+    "text": "*Le di la vuelta al fragmento de foto y examiné el reverso. Había una fecha escrita, apenas visible.*"
+  },
+  "day3_morning_photo_look": {
+    "text": "*Sin dejar de tapar el fragmento de foto con la mano, giré la cabeza para mirar el pasillo.*"
+  },
+  "day3_morning_photo_back_detail_1": {
+    "text": "Cuando le di la vuelta al papel, me manché los dedos con polvo de lápiz. En el reverso de la foto había una breve nota."
+  },
+  "day3_morning_photo_back_detail_2": {
+    "text": "# 11 - Descartar. El subrayado del número salta desde el final. El mismo punto apareció cuando escribí la fecha en mi cuaderno."
+  },
+  "day3_morning_photo_back_detail_3": {
+    "text": "Saqué mi cuaderno y coloqué una foto al lado del horario que anoté ayer. Incluso el ángulo en el que se inclinó la cabeza del número 1 era similar."
+  },
+  "day3_morning_photo_back_detail_4": {
+    "text": "Si lo hubiera escrito yo, ¿cuándo lo habría hecho? Mientras buscaba recuerdos, escuché cerrarse la ventana del pasillo."
+  },
+  "day3_morning_photo_back_detail_5": {
+    "text": "Tracé con la uña el punto dibujado con la punta del lápiz. El papel era fino, por lo que los trazos se presionaron hasta el frente."
+  },
+  "day3_morning_photo_back_detail_6": {
+    "text": "Elegí una forma de revisar mis notas a lápiz.",
+    "choices": [
+      "Mantenga el original como está.",
+      "Copia las notas por separado.",
+      "Sólo toma una foto y déjate llevar."
+    ]
+  },
+  "day3_morning_photo_back_detail_7": {
+    "text": "Tomé una fotografía del memo con mi celular e inserté el original en mi libreta. Esta vez utilicé una regla para evitar que los bordes se doblaran."
+  },
+  "day3_morning_photo_back_detail_8": {
+    "text": "Cuando miré hacia arriba, vi la luz roja de una cámara al final del pasillo. Un pequeño punto se movió debajo de la lente."
+  },
+  "day3_morning_photo_back_detail_9": {
+    "text": "Cuando entrecerré la puerta del casillero, mi puerta se reflejó en un semicírculo negro."
+  },
+  "day3_morning_photo_look_detail_1": {
+    "text": "Cuando acerqué la foto a la luz de la ventana, quedó pegamento de otro papel entre las fibras blancas en el borde cortado."
+  },
+  "day3_morning_photo_look_detail_2": {
+    "text": "Era una foto que alguien había eliminado de un álbum. Sólo la mitad de la espalda era particularmente lisa."
+  },
+  "day3_morning_photo_look_detail_3": {
+    "text": "El tablero de anuncios del aula era visible junto al lugar donde se cortó la cara. El horario actual del aula y el número de columnas eran los mismos."
+  },
+  "day3_morning_photo_look_detail_4": {
+    "text": "Cuando mostré la foto del salón de clases de ayer en mi teléfono, incluso las manchas marrones en las esquinas del tablón de anuncios se superpusieron."
+  },
+  "day3_morning_photo_look_detail_5": {
+    "text": "No había fecha en la que se tomó la foto. El reloj también quedó oscurecido por el área donde se encontraba la persona."
+  },
+  "day3_morning_photo_look_detail_6": {
+    "text": "Cambié de manos antes de que se mojaran las esquinas de la foto.",
+    "choices": [
+      "Lo veo de nuevo desde la ventana",
+      "Mételo en tu bolsillo y ve a clase.",
+      "Simplemente baje el brillo de la pantalla"
+    ]
+  },
+  "day3_morning_photo_look_detail_7": {
+    "text": "Un breve sonido mecánico llegó desde el final del pasillo. La lente de la cámara está ligeramente inclinada hacia abajo."
+  },
+  "day3_morning_photo_look_detail_8": {
+    "text": "El movimiento se detuvo justo encima de mi casillero. La luz roja alrededor de la lente permaneció encendida."
+  },
+  "day3_morning_photo_look_detail_9": {
+    "text": "Guardé la foto en mi bolsillo interior y cerré la puerta. La llave se atascó y tuve que girarla una vez más."
+  },
+  "day3_morning_class_silence_1": {
+    "text": "Cuando empujé la puerta, los sonidos de las conversaciones en el salón de clases se detuvieron y las manos que pasaban las páginas se detuvieron por un momento."
+  },
+  "day3_morning_class_silence_2": {
+    "text": "Una veintena de niños miraban la mesa del profesor. Nadie volvió la cabeza hacia la puerta por la que entré."
+  },
+  "day3_morning_class_silence_3": {
+    "text": "Podía escuchar a otra clase reírse en el pasillo. Sólo el ventilador cerca de la ventana de nuestra clase se estaba agotando."
+  },
+  "day3_morning_class_silence_4": {
+    "text": "Cuando cerré la puerta, una de las patas de la silla raspó el suelo. Sólo entonces Sea me sonrió."
+  },
+  "day3_morning_class_silence_5": {
+    "text": "Ahí estás. Te saqué tus libros."
+  },
+  "day3_morning_class_silence_6": {
+    "text": "Había un estuche para lápices en el extremo derecho del escritorio. Definitivamente fue mi mano la que puse en el compartimento delantero de mi bolso por la mañana."
+  },
+  "day3_morning_class_silence_7": {
+    "text": "El niño sentado a mi lado dobló y desdobló la misma esquina del libro de texto y luego la volvió a doblar."
+  },
+  "day3_morning_class_silence_8": {
+    "text": "Dejé mi bolso en la silla vacía. Incluso si solté el mango, no continuó ninguna conversación en el salón de clases."
+  },
+  "day3_morning_class_silence_choice": {
+    "text": "Puse mi mano entre el estuche y mi bolso.",
+    "choices": [
+      "Pregúntale al estudiante que está a tu lado qué acaba de decir.",
+      "Mira directamente a los ojos de Sea.",
+      "Hago como que no lo sé y abro mi libro de texto."
+    ]
+  },
+  "day3_morning_class_ask_1": {
+    "text": "El estudiante miró mi etiqueta con mi nombre en lugar de mi cara. Escondí la esquina doblada del libro de texto debajo de mis dedos."
+  },
+  "day3_morning_class_ask_2": {
+    "text": "No dije nada. Me estaba preparando para la clase."
+  },
+  "day3_morning_class_ask_3": {
+    "text": "Pregunté quién llegó primero. El estudiante pasó una página de su libro de texto y luego la volvió atrás."
+  },
+  "day3_morning_class_ask_4": {
+    "text": "No dije nada. Me estaba preparando para la clase."
+  },
+  "day3_morning_class_ask_5": {
+    "text": "Esta vez, cuando pronuncié su nombre, la mirada del chico se elevó brevemente desde mi etiqueta con mi nombre hasta mis labios."
+  },
+  "day3_morning_class_ask_6": {
+    "text": "Puedes decir tu nombre cuando pasen lista."
+  },
+  "day3_morning_class_ask_7": {
+    "text": "Sea golpeó el escritorio una vez. El niño cogió su lápiz según el sonido."
+  },
+  "day3_morning_class_ask_8": {
+    "text": "Siempre está tranquilo por la mañana. Abre tu libro. Los están revisando hoy."
+  },
+  "day3_morning_class_ask_9": {
+    "text": "Saqué una libreta de debajo del escritorio y presioné la página con la foto con la palma de la mano en lugar de desplegarla."
+  },
+  "day3_morning_class_sea_1": {
+    "text": "La sonrisa de Sea desapareció por un momento. Miré mi mano y mi estuche y volví a levantar las cejas."
+  },
+  "day3_morning_class_sea_2": {
+    "text": "¿Qué? ¿Hay algo en mi cara?"
+  },
+  "day3_morning_class_sea_3": {
+    "text": "Señaló el estuche de lápices. Antes de que Sea respondiera, movió su estuche un poco hacia la derecha."
+  },
+  "day3_morning_class_sea_4": {
+    "text": "Estaba a unos dos dedos del borde del escritorio. Estaba colocado inusualmente recto."
+  },
+  "day3_morning_class_sea_5": {
+    "text": "Tu brazo no lo atrapará aquí. Ayer también estuviste a punto de derribarlo."
+  },
+  "day3_morning_class_sea_6": {
+    "text": "Ayer no traje mi estuche. Mientras hablaba, Sea cerró la cremallera del bolso."
+  },
+  "day3_morning_class_sea_7": {
+    "text": "Me refiero al bolígrafo que te presté. ¿No te acuerdas?"
+  },
+  "day3_morning_class_sea_8": {
+    "text": "El bolígrafo debía estar sobre el escritorio. Aun así, mi mano no se soltó del asa de mi bolso."
+  },
+  "day3_morning_class_sea_9": {
+    "text": "Sea primero giró la cabeza hacia la mesa de enseñanza. Me senté sólo después de mirar la parte de atrás de su cabeza."
+  },
+  "day3_morning_class_book_1": {
+    "text": "Cuando abrí el libro de texto, apareció inmediatamente una página doblada. Estaba dos capítulos por delante de la sección que estaba buscando."
+  },
+  "day3_morning_class_book_2": {
+    "text": "Mientras presionaba la esquina del libro para abrirlo, escuché el sonido de un lápiz proveniente del asiento a mi lado. También escribí la fecha según ese sonido."
+  },
+  "day3_morning_class_book_3": {
+    "text": "Página equivocada. Estamos en el siguiente capítulo."
+  },
+  "day3_morning_class_book_4": {
+    "text": "Mientras pasaba las dos páginas sin decir una palabra, Sea abrió su libro solo después de haber pasado a la página correcta."
+  },
+  "day3_morning_class_book_5": {
+    "text": "Escuché una pequeña risa proveniente de la puerta del pasillo, y cuando me di vuelta, vi a un estudiante detrás de mí mirando el pizarrón vacío."
+  },
+  "day3_morning_class_book_6": {
+    "text": "Borré la fecha escrita en la parte superior de la nota y la reescribí. Escribí el mismo número dos veces, pero parecía diferente."
+  },
+  "day3_morning_class_book_7": {
+    "text": "Un polvo blanco cayó sobre la base de tiza. El sonido de los zapatos de la maestra afuera de la puerta se acercaba."
+  },
+  "day3_morning_class_resume_1": {
+    "text": "Cuando se abrió la puerta, los niños nos saludaron. La primera sílaba del sonido no estaba desincronizada."
+  },
+  "day3_morning_class_resume_2": {
+    "text": "La profesora abrió la hoja de asistencia y miró entre los pupitres. Cuando pasó por mi asiento, su mirada bajó ligeramente."
+  },
+  "day3_morning_class_resume_3": {
+    "text": "Empecemos la clase. Hoy, no borres lo que escribiste, simplemente déjalo como está."
+  },
+  "day3_morning_class_resume_4": {
+    "text": "Puse el borrador en la nota. La fecha que acababa de corregir parecía un número diferente porque las marcas de lápiz se superponían."
+  },
+  "day3_history_callback_10": {
+    "text": "Saqué el papel mojado del reverso del cuaderno y tomé una fotografía de los trazos borrosos y la nota fotográfica en la misma página."
+  },
+  "day3_history_callback_11": {
+    "text": "Coloqué la foto que recibí el primer día al lado. La altura del tablón de anuncios era la misma, pero la única diferencia era la posición de la persona que tomó la foto."
+  },
+  "day3_history_callback_12": {
+    "text": "Le había hecho a Sea la misma pregunta el primer día, pero esta vez no me reí y esperé la respuesta."
+  },
+  "day3_history_callback_13": {
+    "text": "El bolígrafo que sostenía con la mano izquierda rodó dentro del estuche. Sea presionó su mano contra el estuche hasta que el sonido se detuvo."
+  },
+  "day3_history_callback_14": {
+    "text": "Me detuve a mirar la foto en papel que había dejado en el cajón. Incluso si esconde su teléfono detrás de un libro de texto, la luz de la pantalla permanece en el dorso de su mano."
+  },
+  "day3_expansion_action_4_a": {
+    "text": "No había borrador en el original. Aparté el dedo lleno de polvo de lápiz de la foto y cubrí el cuaderno."
+  },
+  "day3_expansion_action_4_b": {
+    "text": "Intenté trazarlo de la misma manera, pero el final del subrayado saltó al otro lado. Dejé las dos letras una al lado de la otra sin obligarlas a corregirlas."
+  },
+  "day3_expansion_action_5_a": {
+    "text": "La sombra del marco de la ventana pasó sobre la foto. Cuando cambió la luz, se hizo visible una chincheta en el tablón de anuncios detrás de la figura."
+  },
+  "day3_expansion_action_5_b": {
+    "text": "Desdoblé el forro del bolsillo, inserté la foto y moví la correa del bolso al hombro opuesto para evitar que se doblara mientras caminaba."
+  }
 }

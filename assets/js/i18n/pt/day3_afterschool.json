@@ -1,335 +1,533 @@
 {
-    "day3_after_start": {
-        "text": "*A aula acabou. A sala de aula esvazia rapidamente. Pela janela posso ver os alunos reunidos em pequenos grupos no pátio da escola.*"
-    },
-    "day3_after_start_2": {
-        "text": "*Dentro da minha mochila, o pedaço da foto raspa no papel. A conversa no beco de manhã e o silêncio da sala de aula voltam no mesmo ritmo.*"
-    },
-    "day3_after_start_3": {
-        "text": "*Dou alguns passos na direção dos armários de sapatos e paro. A ponta dos meus pés volta a apontar para o fundo do corredor.*"
-    },
-    "day3_after_choice": {
-        "text": "*Para onde devo ir?*",
-        "choices": [
-            "Passe na enfermaria",
-            "Vá com Sea",
-            "Passe pela secretaria da faculdade",
-            "Fique sozinho"
-        ]
-    },
-    "day3_after_riin": {
-        "text": "*Fiquei na frente da porta da enfermaria. Posso ouvir pequenos sons vindos de dentro. Garrafas de vidro tilintando.*"
-    },
-    "day3_after_riin_first": {
-        "text": "*É a primeira vez que entro na enfermaria, mas minha mão procura o batente da porta antes mesmo de olhar a placa.*"
-    },
-    "day3_after_riin_first_2": {
-        "text": "...Entre."
-    },
-    "day3_after_riin_2": {
-        "text": "*Eu bati. Os sons param. 2 segundos de silêncio.*"
-    },
-    "day3_after_riin_3": {
-        "text": "...Entre."
-    },
-    "day3_after_riin_4": {
-        "text": "*Abro a porta. A professora Riin está de pé diante da pia. Ainda há umidade na bancada, e a porta aberta do armário balança muito de leve.*\n\nEstava arrumando? O som parou quando bati."
-    },
-    "day3_after_riin_5": {
-        "text": "O que traz você aqui depois da escola? Você está se sentindo mal?"
-    },
-    "day3_after_riin_6": {
-        "text": "Não. Só tenho muita coisa na cabeça.\n\n*A enfermeira Riin me observa por um longo tempo. O ponteiro dos segundos do relógio na parede se move três vezes. Ela não responde.*"
-    },
-    "day3_after_riin_6a": {
-        "text": "Eu tomo uma bebida eletrolítica. Vitaminas e um pouco de mistura de ervas."
-    },
-    "day3_after_riin_7": {
-        "text": "*Ela tira um frasquinho do armário. O líquido lilás-claro escorre pela parte de dentro do copo. Na mão que me entrega o copo, só o anelar e o mindinho tremem muito de leve. A torneira da pia já está meio aberta.*\n\nSua mão está tremendo. Eu pego o copo."
-    },
-    "day3_after_riin_flicker": {
-        "text": "Fugir"
-    },
-    "day3_after_riin_choice": {
-        "text": "*Devo beber?*",
-        "choices": [
-            "Beba",
-            "Recusar educadamente"
-        ]
-    },
-    "day3_after_riin_drink": {
-        "text": "*Tomei um gole. ...Um gosto amargo permanece na ponta da minha língua. Ligeiramente metálico. Não é o que você esperaria de vitaminas...*"
-    },
-    "day3_after_riin_drink_2": {
-        "text": "*Minha visão se desloca para o lado e logo volta. 0,5 segundo? 1 segundo? A tontura passa rápido.*\n\nFiquei tonto agora. Passou, mas foi por isso? Não vou beber mais."
-    },
-    "day3_after_riin_drink_3": {
-        "text": "*Ao se virar, ela morde com força a parte de dentro do lábio. Pousa o copo com um barulho um pouco alto. Quando se volta para mim, só resta o sorriso.*\n\nA senhora também não gosta do sabor? Sua expressão agora…"
-    },
-    "day3_after_riin_drink_4": {
-        "text": "O gosto é meio estranho, né? As ervas são um pouco amargas."
-    },
-    "day3_after_riin_drink_5": {
-        "text": "*A professora despeja o resto da bebida na pia. Está de costas para mim, com os ombros tensos.*\n\nEntão joga fora o resto. Vai anotar a tontura também?"
-    },
-    "day3_after_riin_refuse": {
-        "text": "...É assim mesmo? Isso é bom."
-    },
-    "day3_after_riin_refuse_2": {
-        "text": "*A mão que segura o copo para, e os dedos relaxam. Ela leva o copo e despeja o conteúdo na pia. Deixa a água correr por muito tempo.*\n\nPode jogar fora? Desculpe se preparou à toa."
-    },
-    "day3_after_riin_refuse_3": {
-        "text": "*Ela se vira com os olhos vermelhos, piscando rápido.*\n\nA senhora está bem? Parece mais cansada que eu."
-    },
-    "day3_after_riin_refuse_4": {
-        "text": "...Vá para casa mais cedo e descanse. Você parece cansado hoje."
-    },
-    "day3_after_liin_sugar_1": {
-        "text": "*Saindo da enfermaria, a lixeira ao lado da porta chamou minha atenção. A tampa está entreaberta.*"
-    },
-    "day3_after_liin_sugar_2": {
-        "text": "*Dentro há várias ampolas quebradas. A etiqueta diz 'M-13'. Ao lado, a garrafa indica 'solução de glicose'.*"
-    },
-    "day3_after_liin_sugar_3": {
-        "text": "*...Glicose? Não são vitaminas?*"
-    },
-    "day3_after_liin_sugar_4": {
-        "text": "*A porta se fecha atrás de mim.*"
-    },
-    "day3_after_sea": {
-        "text": "*Saio da sala de aula, e Sea está esperando. Encostada na parede. Não sei desde quando ela está ali.*\n\n*Sob a luz fluorescente, a sombra de Sea se estende pelo chão do corredor. A chave da sala do conselho estudantil pende da mão dela.*\n\nEstava esperando? Podia ter vindo falar comigo, em vez de ficar na parede. Está com a chave… Vai pra sala do conselho?"
-    },
-    "day3_after_sea_2": {
-        "text": "...{name}, onde você estava durante o almoço?"
-    },
-    "day3_after_sea_3": {
-        "text": "*A voz dela é leve, mas o chaveiro enrolado no dedo não se move.*\n\nPor quê? Precisa conferir até meu horário de almoço?"
-    },
-    "day3_after_sea_noyuna_0": {
-        "text": "*Sea mantém o sorriso enquanto olha para a ponta dos meus sapatos. O lado sujo de terra aponta para a escada do terraço.*"
-    },
-    "day3_after_sea_noyuna_0a": {
-        "text": "Você estava sozinho?"
-    },
-    "day3_after_sea_noyuna_0b": {
-        "text": "Sim, apenas descansando."
-    },
-    "day3_after_sea_noyuna_0c": {
-        "text": "*Sea inclina a cabeça e me olha nos olhos. Passam 2 segundos, 3 segundos, sem que ela desvie o olhar.*\n\nEu estava descansando. Com você olhando assim fica mais difícil falar."
-    },
-    "day3_after_sea_noyuna": {
-        "text": "...Você anda um pouco diferente, {name}."
-    },
-    "day3_after_sea_noyuna_2": {
-        "text": "Como assim?"
-    },
-    "day3_after_sea_noyuna_3": {
-        "text": "Não sei. Suas respostas ficaram mais lentas."
-    },
-    "day3_after_sea_noyuna_4": {
-        "text": "...Me conta primeiro. Antes de eu ouvir de outra pessoa."
-    },
-    "day3_after_sea_noyuna_5": {
-        "text": "*Sea sorri. Só depois, o chaveiro tilinta uma vez.*\n\nNão é coisa pra ouvir dos outros. Se quer saber onde eu estava, pergunta pra mim. Por que tenho que prestar contas?"
-    },
-    "day3_after_sea_noyuna_6": {
-        "text": "*As janelas do corredor estão fechadas, mas meu antebraço está frio.*"
-    },
-    "day3_after_sea_4": {
-        "text": "Ouvi dizer que você estava com Yuna."
-    },
-    "day3_after_sea_4a": {
-        "text": "*O olhar de Sea passa dos meus olhos para o bolso, depois para minha mão esquerda. A voz não sobe no final.*\n\nNão está perguntando. Por que confirmar se já sabe? Quem contou?"
-    },
-    "day3_after_sea_choice": {
-        "text": "*Como posso responder?*",
-        "choices": [
-            "Seja honesto",
-            "Desviar"
-        ]
-    },
-    "day3_after_sea_truth": {
-        "text": "Sim, Yuna disse que tinha algo para me mostrar."
-    },
-    "day3_after_sea_truth_2": {
-        "text": "*A pálpebra de Sea treme uma vez. O chaveiro para de fazer barulho na palma da mão dela.*\n\nFicou brava porque estávamos a sós? Fui porque ela queria mostrar uma coisa."
-    },
-    "day3_after_sea_truth_3": {
-        "text": "Certo. Então responda à próxima pergunta com a mesma rapidez."
-    },
-    "day3_after_sea_truth_4": {
-        "text": "*Sea olha pela janela por um bom tempo. Não há mais ninguém no corredor. O sol ilumina só metade do rosto dela.*\n\nOlha pra mim. Queria resposta rápida. Também vai responder?"
-    },
-    "day3_after_sea_truth_5": {
-        "text": "...O que ela te mostrou?"
-    },
-    "day3_after_sea_truth_6": {
-        "text": "...Fotos. Fotos da escola."
-    },
-    "day3_after_sea_truth_7": {
-        "text": "Fotos da escola.\n\n*Ela repete as palavras, baixando a voz no final.*"
-    },
-    "day3_after_sea_truth_8": {
-        "text": "...Eu também faço isso às vezes. Pense no que está do lado de fora da porta.\n\n*Sea sorri. O chaveiro se enrola profundamente em sua palma.*"
-    },
-    "day3_after_sea_truth_9": {
-        "text": "...Não é nada. Esqueça.\n\n*Sea se vira. Suas costas parecem pequenas.*"
-    },
-    "day3_after_sea_lie": {
-        "text": "Eu estava no refeitório? Por que?"
-    },
-    "day3_after_sea_lie_2": {
-        "text": "*Sea continua sorrindo. Só o barulho do chaveiro para.*\n\nPor que só sorri? Fala. Não aja como se soubesse onde eu estava."
-    },
-    "day3_after_sea_lie_3": {
-        "text": "...Seus olhos simplesmente se deslocaram para a esquerda novamente. Você sempre faz isso quando mente."
-    },
-    "day3_after_sea_lie_3a": {
-        "text": "*A voz dela é baixa. Mesmo com as risadas dos estudantes passando no fim do corredor, só essas palavras ficam nítidas.*"
-    },
-    "day3_after_sea_lie_4": {
-        "text": "...Nem pense em esconder coisas de mim."
-    },
-    "day3_after_sea_lie_4a": {
-        "text": "*Mantive os olhos na parede esquerda do corredor e só pisquei. Sea já estava olhando naquela direção.*"
-    },
-    "day3_after_sea_lie_5": {
-        "text": "Da próxima vez, me conte na hora. Se demorar, eu vou descobrir primeiro."
-    },
-    "day3_after_sea_lie_5a": {
-        "text": "*Sea sorri. O chaveiro volta a balançar.*\n\nVocê não decide quando eu falo. Não quero continuar agora. Mesmo sorrindo, isso dá medo."
-    },
-    "day3_after_eunsu": {
-        "text": "*Hesitei em frente à porta do escritório da faculdade. A maioria dos professores já saiu porque já é tarde da escola. A luz está acesa lá dentro.*"
-    },
-    "day3_after_eunsu_2": {
-        "text": "*A porta está meio aberta. A professora Eunsu está sentada à mesa, passando a caneta por alguns documentos. Ela não me viu.*"
-    },
-    "day3_after_eunsu_3": {
-        "text": "*Há documentos espalhados sobre a mesa. Dá para ver daqui. Papel amarelo. Formato de tabela. Letras grossas no topo. **'Registro de gerenciamento de sujeitos'**.*"
-    },
-    "day3_after_eunsu_4": {
-        "text": "*A professora Eunsu se levanta da cadeira. Parece que ela recebeu um telefonema. Ela caminha até o outro lado do corredor.*"
-    },
-    "day3_after_eunsu_5": {
-        "text": "*Os documentos ficam abertos.*"
-    },
-    "day3_after_eunsu_choice": {
-        "text": "*Devo olhar os documentos?*",
-        "choices": [
-            "Dê uma olhada",
-            "Desvie o olhar"
-        ]
-    },
-    "day3_after_eunsu_peek": {
-        "text": "*Aproximei-me da mesa sem fazer barulho. As pontas dos meus dedos estão frias. Quando peguei os documentos, o papel tremeu de leve.*\n\n*Um canto está dobrado, e uma mancha de café secou ali. As bordas do papel estão um pouco amareladas pelo manuseio.*"
-    },
-    "day3_after_eunsu_peek_2": {
-        "text": "*Números e datas estão listados. A coluna do nome está... quase vazia. Apenas números.*"
-    },
-    "day3_after_eunsu_peek_3": {
-        "text": "*#1... Data: 2023.03.02. Coluna de nome: em branco. Status: 'Encerrado'*\n\n*#3... Data: 15/09/2023. Coluna de nome: em branco. Status: 'Encerrado'*\n\n*#7... Data: 20.08.2024. Coluna de nome: em branco. Status: 'Encerrado'*"
-    },
-    "day3_after_eunsu_peek_4": {
-        "text": "*Ao lado do #7, há uma anotação em caneta vermelha: **'Falha — reação residual. Variável inesperada ocorreu. Processamento em espera.'***\n\n*Minha mão aperta o papel.*"
-    },
-    "day3_after_eunsu_peek_5": {
-        "text": "*O canto da página amassa sob o meu dedo, mas eu a viro mesmo assim.*\n\n*#13 — meu nome. Data: esta segunda-feira. O campo de status está vazio. Ainda não foi registrado.*"
-    },
-    "day3_after_eunsu_peek_6": {
-        "text": "*...12 linhas. 12 números. 12 campos de nome em branco. E o 13º, com o meu nome escrito.*\n\n*Em cada espaço vazio, há rastros finos de corretivo espalhados. Ao inclinar o papel, alguns traços pressionados voltam a aparecer, bem fracos.*\n\n*Só a palavra 'Encerrado' está nítida em tinta preta.*"
-    },
-    "day3_after_eunsu_peek_7": {
-        "text": "*Ouço passos. Eu olhei para cima.*"
-    },
-    "day3_after_eunsu_peek_8": {
-        "text": "Ah, isso? São as fichas de orientação dos alunos transferidos. Ficou curioso?"
-    },
-    "day3_after_eunsu_peek_8a": {
-        "text": "*A professora Eunsu está parada diante da porta. Sorrindo. A tela do celular na mão dela está apagada.*"
-    },
-    "day3_after_eunsu_peek_9": {
-        "text": "*A professora Eunsu se aproxima e cobre os documentos. Os passos se aproximam num ritmo constante.*\n\nPor que os nomes estão vazios num registro de orientação? E o que é 'Encerrado'?"
-    },
-    "day3_after_eunsu_peek_10": {
-        "text": "É bom ver você estudando tanto. Parece que também está se adaptando bem, não é?"
-    },
-    "day3_after_eunsu_peek_11": {
-        "text": "*Ela sorri com a mesma expressão de antes. Os movimentos das mãos não vacilam ao alinhar os cantos dos papéis.*\n\nEntendo sua curiosidade, mas não posso deixar você ler a ficha dos outros. Pode ir."
-    },
-    "day3_after_eunsu_ignore": {
-        "text": "*...Eu não deveria estar olhando para isso aqui. Desviei meu olhar. Recuou silenciosamente.*"
-    },
-    "day3_after_alone": {
-        "text": "*Tento ir para casa, mas meus pés seguem para o prédio antigo. A ponta dos meus sapatos acompanha a linha interna do corredor.*"
-    },
-    "day3_after_alone_2": {
-        "text": "*O edifício antigo é antigo. Salas de aula não utilizadas alinham-se no corredor. Uma luz fluorescente pisca no corredor.*"
-    },
-    "day3_after_alone_3": {
-        "text": "*Meus passos batem nas paredes e voltam. Toc. Toc. Toc. No mesmo intervalo, seguem até o fim do corredor.*"
-    },
-    "day3_after_alone_4": {
-        "text": "*Ao passar pela terceira sala, eu parei.*\n\n*Ouço um som. Do outro lado da porta. Um ruído baixo de máquina. Uma vibração constante, fazendo 'vrrrrrr'.*\n\n*A poeira embaixo da placa da porta está tremendo, quase imperceptível.*"
-    },
-    "day3_after_alone_5": {
-        "text": "*Coloquei minha mão na porta. Posso sentir uma leve vibração. Está trancado.*\n\n*A janela ao lado da porta foi pintada de opaca. Não consigo ver o interior.*"
-    },
-    "day3_after_alone_6": {
-        "text": "*Ajoelhei e olhei pela fresta da porta. Uma luz verde fraca vazava lá de dentro. Não era cor de lâmpada fluorescente.*\n\n*Encostei o ouvido. Entre os sons mecânicos, havia um bipe baixo e prolongado.*"
-    },
-    "day3_after_alone_7": {
-        "text": "*Tentei me levantar, mas meus joelhos tremeram. A placa da sala está vazia, e embaixo dela restam apenas quatro marcas de parafuso.*"
-    },
-    "day3_after_alone_8": {
-        "text": "*Eu me levantei. No final do corredor há um quadro de avisos. Avisos antigos fixados nele. Abaixo disso, arranhões na parede.*"
-    },
-    "day3_after_alone_9": {
-        "text": "*Há vários retângulos do tamanho de uma plaquinha de nome riscados na parede, cada um com duas marcas de prego na mesma altura. Toco um por um com o dedo e conto doze. Conto de novo três vezes. Continuam sendo doze.*"
-    },
-    "day3_after_alone_10": {
-        "text": "*Minhas pernas tremem. Tento voltar, mas as pontas dos meus pés se viram mais uma vez para a sala trancada.*"
-    },
-    "day3_after_alone_11": {
-        "text": "*...Vamos voltar. Eu não deveria mais ficar aqui.*"
-    },
-    "day3_after_yuna_check": {
-        "text": ""
-    },
-    "day3_after_yuna": {
-        "text": "*Quando saio da aula extra da tarde, vejo Yuna atrás do canteiro, de cardigã sobre o uniforme e câmera no pescoço.*\n\n*Um olhar em volta. Não há mais ninguém.*\n\nYuna, é difícil te achar aqui atrás. Já acabou a aula? Trouxe a câmera também. O que houve?"
-    },
-    "day3_after_yuna_2": {
-        "text": "Sunbae."
-    },
-    "day3_after_yuna_3": {
-        "text": "*Yuna se aproxima e tira um cartão microSD do bolso.*\n\nEsperou pra me dar isso? O que é?"
-    },
-    "day3_after_yuna_4": {
-        "text": "As fotos que mostrei antes... esta é uma cópia. Por favor, guarde-o."
-    },
-    "day3_after_yuna_5": {
-        "text": "Tudo bem eu guardar? Se são cópias das suas fotos, não seria melhor você ficar com elas?"
-    },
-    "day3_after_yuna_6": {
-        "text": "Se ficar comigo, vai desaparecer até o fim do dia. Se os professores perceberem."
-    },
-    "day3_after_yuna_6a": {
-        "text": "*Seus dedos frios tocam os meus ao passar o cartão.*\n\nSua mão está fria. Também tome cuidado."
-    },
-    "day3_after_yuna_7": {
-        "text": "Tome cuidado, sunbae. Os registros que ficaram por mais tempo desaparecem primeiro."
-    },
-    "day3_after_yuna_8": {
-        "text": "O que é perigoso?\n\n*Yuna abre a boca. A ponta da língua toca atrás dos dentes superiores e depois cai. Ela fecha a boca novamente.*"
-    },
-    "day3_after_yuna_9": {
-        "text": "...Não ande sozinho à noite."
-    },
-    "day3_after_yuna_9a": {
-        "text": "*Yuna contorna o canteiro a passos rápidos e desaparece.*\n\n*O cartão SD que ficou na minha mão é pequeno e leve. Guarda treze fotos.*\n\n*Coloco o cartão no fundo do bolso.*"
-    },
-    "day3_after_end": {
-        "text": "*Saio da escola. Sob o pôr do sol, o campo está vermelho. A quina do cartão SD na palma da minha mão continua pegando na pele.*"
-    }
+  "day3_after_start": {
+    "text": "*A aula acabou. A sala de aula esvazia rapidamente. Pela janela posso ver os alunos reunidos em pequenos grupos no pátio da escola.*"
+  },
+  "day3_after_start_2": {
+    "text": "*Dentro da minha mochila, o pedaço da foto raspa no papel. A conversa no beco de manhã e o silêncio da sala de aula voltam no mesmo ritmo.*"
+  },
+  "day3_after_start_3": {
+    "text": "*Dou alguns passos na direção dos armários de sapatos e paro. A ponta dos meus pés volta a apontar para o fundo do corredor.*"
+  },
+  "day3_after_choice": {
+    "text": "*Para onde devo ir?*",
+    "choices": [
+      "Passe na enfermaria",
+      "Vá com Sea",
+      "Passe pela secretaria da faculdade",
+      "Fique sozinho"
+    ]
+  },
+  "day3_after_riin": {
+    "text": "*Fiquei na frente da porta da enfermaria. Posso ouvir pequenos sons vindos de dentro. Garrafas de vidro tilintando.*"
+  },
+  "day3_after_riin_first": {
+    "text": "*É a primeira vez que entro na enfermaria, mas minha mão procura o batente da porta antes mesmo de olhar a placa.*"
+  },
+  "day3_after_riin_first_2": {
+    "text": "...Entre."
+  },
+  "day3_after_riin_2": {
+    "text": "*Eu bati. Os sons param. 2 segundos de silêncio.*"
+  },
+  "day3_after_riin_3": {
+    "text": "...Entre."
+  },
+  "day3_after_riin_4": {
+    "text": "*Abro a porta. A professora Riin está de pé diante da pia. Ainda há umidade na bancada, e a porta aberta do armário balança muito de leve.*\n\nEstava arrumando? O som parou quando bati."
+  },
+  "day3_after_riin_5": {
+    "text": "O que traz você aqui depois da escola? Você está se sentindo mal?"
+  },
+  "day3_after_riin_6": {
+    "text": "Não. Só tenho muita coisa na cabeça.\n\n*A enfermeira Riin me observa por um longo tempo. O ponteiro dos segundos do relógio na parede se move três vezes. Ela não responde.*"
+  },
+  "day3_after_riin_6a": {
+    "text": "Eu tomo uma bebida eletrolítica. Vitaminas e um pouco de mistura de ervas."
+  },
+  "day3_after_riin_7": {
+    "text": "*Ela tira um frasquinho do armário. O líquido lilás-claro escorre pela parte de dentro do copo. Na mão que me entrega o copo, só o anelar e o mindinho tremem muito de leve. A torneira da pia já está meio aberta.*\n\nSua mão está tremendo. Eu pego o copo."
+  },
+  "day3_after_riin_flicker": {
+    "text": "Fugir"
+  },
+  "day3_after_riin_choice": {
+    "text": "*Devo beber?*",
+    "choices": [
+      "Beba",
+      "Recusar educadamente"
+    ]
+  },
+  "day3_after_riin_drink": {
+    "text": "*Tomei um gole. ...Um gosto amargo permanece na ponta da minha língua. Ligeiramente metálico. Não é o que você esperaria de vitaminas...*"
+  },
+  "day3_after_riin_drink_2": {
+    "text": "*Minha visão se desloca para o lado e logo volta. 0,5 segundo? 1 segundo? A tontura passa rápido.*\n\nFiquei tonto agora. Passou, mas foi por isso? Não vou beber mais."
+  },
+  "day3_after_riin_drink_3": {
+    "text": "*Ao se virar, ela morde com força a parte de dentro do lábio. Pousa o copo com um barulho um pouco alto. Quando se volta para mim, só resta o sorriso.*\n\nA senhora também não gosta do sabor? Sua expressão agora…"
+  },
+  "day3_after_riin_drink_4": {
+    "text": "O gosto é meio estranho, né? As ervas são um pouco amargas."
+  },
+  "day3_after_riin_drink_5": {
+    "text": "*A professora despeja o resto da bebida na pia. Está de costas para mim, com os ombros tensos.*\n\nEntão joga fora o resto. Vai anotar a tontura também?"
+  },
+  "day3_after_riin_refuse": {
+    "text": "...É assim mesmo? Isso é bom."
+  },
+  "day3_after_riin_refuse_2": {
+    "text": "*A mão que segura o copo para, e os dedos relaxam. Ela leva o copo e despeja o conteúdo na pia. Deixa a água correr por muito tempo.*\n\nPode jogar fora? Desculpe se preparou à toa."
+  },
+  "day3_after_riin_refuse_3": {
+    "text": "*Ela se vira com os olhos vermelhos, piscando rápido.*\n\nA senhora está bem? Parece mais cansada que eu."
+  },
+  "day3_after_riin_refuse_4": {
+    "text": "...Vá para casa mais cedo e descanse. Você parece cansado hoje."
+  },
+  "day3_after_liin_sugar_1": {
+    "text": "*Saindo da enfermaria, a lixeira ao lado da porta chamou minha atenção. A tampa está entreaberta.*"
+  },
+  "day3_after_liin_sugar_2": {
+    "text": "*Dentro há várias ampolas quebradas. A etiqueta diz 'M-13'. Ao lado, a garrafa indica 'solução de glicose'.*"
+  },
+  "day3_after_liin_sugar_3": {
+    "text": "*...Glicose? Não são vitaminas?*"
+  },
+  "day3_after_liin_sugar_4": {
+    "text": "*A porta se fecha atrás de mim.*"
+  },
+  "day3_after_sea": {
+    "text": "*Saio da sala de aula, e Sea está esperando. Encostada na parede. Não sei desde quando ela está ali.*\n\n*Sob a luz fluorescente, a sombra de Sea se estende pelo chão do corredor. A chave da sala do conselho estudantil pende da mão dela.*\n\nEstava esperando? Podia ter vindo falar comigo, em vez de ficar na parede. Está com a chave… Vai pra sala do conselho?"
+  },
+  "day3_after_sea_2": {
+    "text": "...{name}, onde você estava durante o almoço?"
+  },
+  "day3_after_sea_3": {
+    "text": "*A voz dela é leve, mas o chaveiro enrolado no dedo não se move.*\n\nPor quê? Precisa conferir até meu horário de almoço?"
+  },
+  "day3_after_sea_noyuna_0": {
+    "text": "*Sea mantém o sorriso enquanto olha para a ponta dos meus sapatos. O lado sujo de terra aponta para a escada do terraço.*"
+  },
+  "day3_after_sea_noyuna_0a": {
+    "text": "Você estava sozinho?"
+  },
+  "day3_after_sea_noyuna_0b": {
+    "text": "Sim, apenas descansando."
+  },
+  "day3_after_sea_noyuna_0c": {
+    "text": "*Sea inclina a cabeça e me olha nos olhos. Passam 2 segundos, 3 segundos, sem que ela desvie o olhar.*\n\nEu estava descansando. Com você olhando assim fica mais difícil falar."
+  },
+  "day3_after_sea_noyuna": {
+    "text": "...Você anda um pouco diferente, {name}."
+  },
+  "day3_after_sea_noyuna_2": {
+    "text": "Como assim?"
+  },
+  "day3_after_sea_noyuna_3": {
+    "text": "Não sei. Suas respostas ficaram mais lentas."
+  },
+  "day3_after_sea_noyuna_4": {
+    "text": "...Me conta primeiro. Antes de eu ouvir de outra pessoa."
+  },
+  "day3_after_sea_noyuna_5": {
+    "text": "*Sea sorri. Só depois, o chaveiro tilinta uma vez.*\n\nNão é coisa pra ouvir dos outros. Se quer saber onde eu estava, pergunta pra mim. Por que tenho que prestar contas?"
+  },
+  "day3_after_sea_noyuna_6": {
+    "text": "*As janelas do corredor estão fechadas, mas meu antebraço está frio.*"
+  },
+  "day3_after_sea_4": {
+    "text": "Ouvi dizer que você estava com Yuna."
+  },
+  "day3_after_sea_4a": {
+    "text": "*O olhar de Sea passa dos meus olhos para o bolso, depois para minha mão esquerda. A voz não sobe no final.*\n\nNão está perguntando. Por que confirmar se já sabe? Quem contou?"
+  },
+  "day3_after_sea_choice": {
+    "text": "*Como posso responder?*",
+    "choices": [
+      "Seja honesto",
+      "Desviar"
+    ]
+  },
+  "day3_after_sea_truth": {
+    "text": "Sim, Yuna disse que tinha algo para me mostrar."
+  },
+  "day3_after_sea_truth_2": {
+    "text": "*A pálpebra de Sea treme uma vez. O chaveiro para de fazer barulho na palma da mão dela.*\n\nFicou brava porque estávamos a sós? Fui porque ela queria mostrar uma coisa."
+  },
+  "day3_after_sea_truth_3": {
+    "text": "Certo. Então responda à próxima pergunta com a mesma rapidez."
+  },
+  "day3_after_sea_truth_4": {
+    "text": "*Sea olha pela janela por um bom tempo. Não há mais ninguém no corredor. O sol ilumina só metade do rosto dela.*\n\nOlha pra mim. Queria resposta rápida. Também vai responder?"
+  },
+  "day3_after_sea_truth_5": {
+    "text": "...O que ela te mostrou?"
+  },
+  "day3_after_sea_truth_6": {
+    "text": "...Fotos. Fotos da escola."
+  },
+  "day3_after_sea_truth_7": {
+    "text": "Fotos da escola.\n\n*Ela repete as palavras, baixando a voz no final.*"
+  },
+  "day3_after_sea_truth_8": {
+    "text": "...Eu também faço isso às vezes. Pense no que está do lado de fora da porta.\n\n*Sea sorri. O chaveiro se enrola profundamente em sua palma.*"
+  },
+  "day3_after_sea_truth_9": {
+    "text": "...Não é nada. Esqueça.\n\n*Sea se vira. Suas costas parecem pequenas.*"
+  },
+  "day3_after_sea_lie": {
+    "text": "Eu estava no refeitório? Por que?"
+  },
+  "day3_after_sea_lie_2": {
+    "text": "*Sea continua sorrindo. Só o barulho do chaveiro para.*\n\nPor que só sorri? Fala. Não aja como se soubesse onde eu estava."
+  },
+  "day3_after_sea_lie_3": {
+    "text": "...Seus olhos simplesmente se deslocaram para a esquerda novamente. Você sempre faz isso quando mente."
+  },
+  "day3_after_sea_lie_3a": {
+    "text": "*A voz dela é baixa. Mesmo com as risadas dos estudantes passando no fim do corredor, só essas palavras ficam nítidas.*"
+  },
+  "day3_after_sea_lie_4": {
+    "text": "...Nem pense em esconder coisas de mim."
+  },
+  "day3_after_sea_lie_4a": {
+    "text": "*Mantive os olhos na parede esquerda do corredor e só pisquei. Sea já estava olhando naquela direção.*"
+  },
+  "day3_after_sea_lie_5": {
+    "text": "Da próxima vez, me conte na hora. Se demorar, eu vou descobrir primeiro."
+  },
+  "day3_after_sea_lie_5a": {
+    "text": "*Sea sorri. O chaveiro volta a balançar.*\n\nVocê não decide quando eu falo. Não quero continuar agora. Mesmo sorrindo, isso dá medo."
+  },
+  "day3_after_eunsu": {
+    "text": "*Hesitei em frente à porta do escritório da faculdade. A maioria dos professores já saiu porque já é tarde da escola. A luz está acesa lá dentro.*"
+  },
+  "day3_after_eunsu_2": {
+    "text": "*A porta está meio aberta. A professora Eunsu está sentada à mesa, passando a caneta por alguns documentos. Ela não me viu.*"
+  },
+  "day3_after_eunsu_3": {
+    "text": "*Há documentos espalhados sobre a mesa. Dá para ver daqui. Papel amarelo. Formato de tabela. Letras grossas no topo. **'Registro de gerenciamento de sujeitos'**.*"
+  },
+  "day3_after_eunsu_4": {
+    "text": "*A professora Eunsu se levanta da cadeira. Parece que ela recebeu um telefonema. Ela caminha até o outro lado do corredor.*"
+  },
+  "day3_after_eunsu_5": {
+    "text": "*Os documentos ficam abertos.*"
+  },
+  "day3_after_eunsu_choice": {
+    "text": "*Devo olhar os documentos?*",
+    "choices": [
+      "Dê uma olhada",
+      "Desvie o olhar"
+    ]
+  },
+  "day3_after_eunsu_peek": {
+    "text": "*Aproximei-me da mesa sem fazer barulho. As pontas dos meus dedos estão frias. Quando peguei os documentos, o papel tremeu de leve.*\n\n*Um canto está dobrado, e uma mancha de café secou ali. As bordas do papel estão um pouco amareladas pelo manuseio.*"
+  },
+  "day3_after_eunsu_peek_2": {
+    "text": "*Números e datas estão listados. A coluna do nome está... quase vazia. Apenas números.*"
+  },
+  "day3_after_eunsu_peek_3": {
+    "text": "*#1... Data: 2023.03.02. Coluna de nome: em branco. Status: 'Encerrado'*\n\n*#3... Data: 15/09/2023. Coluna de nome: em branco. Status: 'Encerrado'*\n\n*#7... Data: 20.08.2024. Coluna de nome: em branco. Status: 'Encerrado'*"
+  },
+  "day3_after_eunsu_peek_4": {
+    "text": "*Ao lado do #7, há uma anotação em caneta vermelha: **'Falha — reação residual. Variável inesperada ocorreu. Processamento em espera.'***\n\n*Minha mão aperta o papel.*"
+  },
+  "day3_after_eunsu_peek_5": {
+    "text": "*O canto da página amassa sob o meu dedo, mas eu a viro mesmo assim.*\n\n*#13 — meu nome. Data: esta segunda-feira. O campo de status está vazio. Ainda não foi registrado.*"
+  },
+  "day3_after_eunsu_peek_6": {
+    "text": "*...12 linhas. 12 números. 12 campos de nome em branco. E o 13º, com o meu nome escrito.*\n\n*Em cada espaço vazio, há rastros finos de corretivo espalhados. Ao inclinar o papel, alguns traços pressionados voltam a aparecer, bem fracos.*\n\n*Só a palavra 'Encerrado' está nítida em tinta preta.*"
+  },
+  "day3_after_eunsu_peek_7": {
+    "text": "*Ouço passos. Eu olhei para cima.*"
+  },
+  "day3_after_eunsu_peek_8": {
+    "text": "Ah, isso? São as fichas de orientação dos alunos transferidos. Ficou curioso?"
+  },
+  "day3_after_eunsu_peek_8a": {
+    "text": "*A professora Eunsu está parada diante da porta. Sorrindo. A tela do celular na mão dela está apagada.*"
+  },
+  "day3_after_eunsu_peek_9": {
+    "text": "*A professora Eunsu se aproxima e cobre os documentos. Os passos se aproximam num ritmo constante.*\n\nPor que os nomes estão vazios num registro de orientação? E o que é 'Encerrado'?"
+  },
+  "day3_after_eunsu_peek_10": {
+    "text": "É bom ver você estudando tanto. Parece que também está se adaptando bem, não é?"
+  },
+  "day3_after_eunsu_peek_11": {
+    "text": "*Ela sorri com a mesma expressão de antes. Os movimentos das mãos não vacilam ao alinhar os cantos dos papéis.*\n\nEntendo sua curiosidade, mas não posso deixar você ler a ficha dos outros. Pode ir."
+  },
+  "day3_after_eunsu_ignore": {
+    "text": "*...Eu não deveria estar olhando para isso aqui. Desviei meu olhar. Recuou silenciosamente.*"
+  },
+  "day3_after_alone": {
+    "text": "*Tento ir para casa, mas meus pés seguem para o prédio antigo. A ponta dos meus sapatos acompanha a linha interna do corredor.*"
+  },
+  "day3_after_alone_2": {
+    "text": "*O edifício antigo é antigo. Salas de aula não utilizadas alinham-se no corredor. Uma luz fluorescente pisca no corredor.*"
+  },
+  "day3_after_alone_3": {
+    "text": "*Meus passos batem nas paredes e voltam. Toc. Toc. Toc. No mesmo intervalo, seguem até o fim do corredor.*"
+  },
+  "day3_after_alone_4": {
+    "text": "*Ao passar pela terceira sala, eu parei.*\n\n*Ouço um som. Do outro lado da porta. Um ruído baixo de máquina. Uma vibração constante, fazendo 'vrrrrrr'.*\n\n*A poeira embaixo da placa da porta está tremendo, quase imperceptível.*"
+  },
+  "day3_after_alone_5": {
+    "text": "*Coloquei minha mão na porta. Posso sentir uma leve vibração. Está trancado.*\n\n*A janela ao lado da porta foi pintada de opaca. Não consigo ver o interior.*"
+  },
+  "day3_after_alone_6": {
+    "text": "*Ajoelhei e olhei pela fresta da porta. Uma luz verde fraca vazava lá de dentro. Não era cor de lâmpada fluorescente.*\n\n*Encostei o ouvido. Entre os sons mecânicos, havia um bipe baixo e prolongado.*"
+  },
+  "day3_after_alone_7": {
+    "text": "*Tentei me levantar, mas meus joelhos tremeram. A placa da sala está vazia, e embaixo dela restam apenas quatro marcas de parafuso.*"
+  },
+  "day3_after_alone_8": {
+    "text": "*Eu me levantei. No final do corredor há um quadro de avisos. Avisos antigos fixados nele. Abaixo disso, arranhões na parede.*"
+  },
+  "day3_after_alone_9": {
+    "text": "*Há vários retângulos do tamanho de uma plaquinha de nome riscados na parede, cada um com duas marcas de prego na mesma altura. Toco um por um com o dedo e conto doze. Conto de novo três vezes. Continuam sendo doze.*"
+  },
+  "day3_after_alone_10": {
+    "text": "*Minhas pernas tremem. Tento voltar, mas as pontas dos meus pés se viram mais uma vez para a sala trancada.*"
+  },
+  "day3_after_alone_11": {
+    "text": "*...Vamos voltar. Eu não deveria mais ficar aqui.*"
+  },
+  "day3_after_yuna_check": {
+    "text": ""
+  },
+  "day3_after_yuna": {
+    "text": "*Quando saio da aula extra da tarde, vejo Yuna atrás do canteiro, de cardigã sobre o uniforme e câmera no pescoço.*\n\n*Um olhar em volta. Não há mais ninguém.*\n\nYuna, é difícil te achar aqui atrás. Já acabou a aula? Trouxe a câmera também. O que houve?"
+  },
+  "day3_after_yuna_2": {
+    "text": "Sunbae."
+  },
+  "day3_after_yuna_3": {
+    "text": "*Yuna se aproxima e tira um cartão microSD do bolso.*\n\nEsperou pra me dar isso? O que é?"
+  },
+  "day3_after_yuna_4": {
+    "text": "As fotos que mostrei antes... esta é uma cópia. Por favor, guarde-o."
+  },
+  "day3_after_yuna_5": {
+    "text": "Tudo bem eu guardar? Se são cópias das suas fotos, não seria melhor você ficar com elas?"
+  },
+  "day3_after_yuna_6": {
+    "text": "Se ficar comigo, vai desaparecer até o fim do dia. Se os professores perceberem."
+  },
+  "day3_after_yuna_6a": {
+    "text": "*Seus dedos frios tocam os meus ao passar o cartão.*\n\nSua mão está fria. Também tome cuidado."
+  },
+  "day3_after_yuna_7": {
+    "text": "Tome cuidado, sunbae. Os registros que ficaram por mais tempo desaparecem primeiro."
+  },
+  "day3_after_yuna_8": {
+    "text": "O que é perigoso?\n\n*Yuna abre a boca. A ponta da língua toca atrás dos dentes superiores e depois cai. Ela fecha a boca novamente.*"
+  },
+  "day3_after_yuna_9": {
+    "text": "...Não ande sozinho à noite."
+  },
+  "day3_after_yuna_9a": {
+    "text": "*Yuna contorna o canteiro a passos rápidos e desaparece.*\n\n*O cartão SD que ficou na minha mão é pequeno e leve. Guarda treze fotos.*\n\n*Coloco o cartão no fundo do bolso.*"
+  },
+  "day3_after_end": {
+    "text": "*Saio da escola. Sob o pôr do sol, o campo está vermelho. A quina do cartão SD na palma da minha mão continua pegando na pele.*"
+  },
+  "day3_after_riin_closeness": {
+    "text": ""
+  },
+  "day3_after_riin_closeness_high_1": {
+    "text": "Riin empurrou o copo em minha direção e parou. Meus dedos tocaram a borda da bandeja e ficaram brancos."
+  },
+  "day3_after_riin_closeness_high_2": {
+    "text": "Beba apenas um pouco do chá de hoje. Você pode deixar o resto."
+  },
+  "day3_after_riin_closeness_high_3": {
+    "text": "O carro estava mais leve que o normal. Estava tão claro que o fundo da xícara ficava visível e apenas gotas de água permaneciam no pires."
+  },
+  "day3_after_riin_closeness_high_4": {
+    "text": "Você não vai colocar no meu registro se eu deixar alguns?"
+  },
+  "day3_after_riin_closeness_high_5": {
+    "text": "Escrever é meu trabalho. Você não precisa se preocupar com isso."
+  },
+  "day3_after_riin_closeness_high_6": {
+    "text": "A professora virou o livro de registros. Havia uma linha onde a tinta não havia secado na superfície que acabara de ser aberta."
+  },
+  "day3_after_riin_closeness_high_7": {
+    "text": "Como está isso tremendo em suas mãos? Melhor do que esta manhã?"
+  },
+  "day3_after_riin_closeness_high_8": {
+    "text": "Coloquei minha mão na mesa. Riin olhou em minha direção antes de alcançar a ponta dos dedos."
+  },
+  "day3_after_riin_closeness_high_9": {
+    "text": "Posso dar uma olhada? Se preferir não, conte-me."
+  },
+  "day3_after_riin_closeness_high_10": {
+    "text": "Estendi minha mão e medi brevemente a temperatura com as costas da mão. Depois disso, nem verifiquei o pulso dele."
+  },
+  "day3_after_riin_closeness_high_11": {
+    "text": "Você almoçou hoje, não foi? Eu não deveria deixar o chá muito forte depois de você ter comido."
+  },
+  "day3_after_riin_closeness_high_12": {
+    "text": "As palavras estavam um pouco fora de sincronia. Antes que eu pudesse perguntar, a professora fechou a tampa do recipiente de folhas de chá."
+  },
+  "day3_after_riin_closeness_high_13": {
+    "text": "Uma carroça passou do lado de fora da porta. Riin não disse nada até que o som das rodas parou."
+  },
+  "day3_after_riin_closeness_high_14": {
+    "text": "Você pode dizer que veio aqui para tomar chá. Só não diga que eu disse para você deixar alguns."
+  },
+  "day3_after_riin_closeness_high_15": {
+    "text": "Quando larguei o chá, Riin tirou minha xícara primeiro. O copo ainda estava meio cheio."
+  },
+  "day3_after_riin_closeness_low_1": {
+    "text": "Riin pegou um copo de papel e colocou-o sobre a mesa, afastando o copo de vidro do alcance."
+  },
+  "day3_after_riin_closeness_low_2": {
+    "text": "Se alguma coisa estiver incomodando você, conte primeiro ao seu professor. Vejo você assim que for repassado."
+  },
+  "day3_after_riin_closeness_low_3": {
+    "text": "Havia um espaço separado no livro de registro para escrever o nome. Quando peguei a caneta, Riin me disse para anotar a data."
+  },
+  "day3_after_riin_closeness_low_4": {
+    "text": "Terminei de escrever meu nome e larguei a caneta. A professora dobrou o papel ao meio e colocou na gaveta."
+  },
+  "day3_after_riin_closeness_low_5": {
+    "text": "Apenas uma verificação rápida hoje. Fique muito tempo e eles vão considerar você ausente da aula."
+  },
+  "day3_after_sea_closeness": {
+    "text": ""
+  },
+  "day3_after_sea_closeness_high_1": {
+    "text": "Sea soltou a mão que segurava a alça da bolsa e esfregou na saia as marcas deixadas na palma da mão."
+  },
+  "day3_after_sea_closeness_high_2": {
+    "text": "Eu te perguntei demais?"
+  },
+  "day3_after_sea_closeness_high_3": {
+    "text": "Lembrei-me de pessoas me perguntando sobre meus hobbies. Meu acompanhamento favorito, minha hora de dormir e o bairro onde morei quando era jovem."
+  },
+  "day3_after_sea_closeness_high_4": {
+    "text": "Às vezes você fala como se já soubesse, sem me perguntar."
+  },
+  "day3_after_sea_closeness_high_5": {
+    "text": "Sea tentou rir, mas abaixou a cabeça. Arranhei a tinta descascada do zíper da minha bolsa com a unha."
+  },
+  "day3_after_sea_closeness_high_6": {
+    "text": "Eu odeio errar. Não quero lhe dar algo que você não gosta novamente."
+  },
+  "day3_after_sea_closeness_high_7": {
+    "text": "De novo?"
+  },
+  "day3_after_sea_closeness_high_8": {
+    "text": "Eu faço isso por outras pessoas também. Você não é o primeiro."
+  },
+  "day3_after_sea_closeness_high_9": {
+    "text": "Uma das tachinhas do quadro de avisos no corredor estava faltando. Sea ergueu o papel e moveu outra tachinha."
+  },
+  "day3_after_sea_closeness_high_10": {
+    "text": "Se você esquecer alguma coisa, posso anotar para você. Eu sou bom nisso."
+  },
+  "day3_after_sea_closeness_high_11": {
+    "text": "Eu mesmo posso escrever."
+  },
+  "day3_after_sea_closeness_high_12": {
+    "text": "Quando Sea largou a tachinha que segurava, a parte inferior do papel enrolou novamente."
+  },
+  "day3_after_sea_closeness_high_13": {
+    "text": "Então me mostre também. Não escreva tudo sozinho e depois desapareça sozinho."
+  },
+  "day3_after_sea_closeness_high_14": {
+    "text": "Conforme o som de passos se aproximava, Sea pegou minha bolsa. A mão que entregou a maçaneta estava mais lenta do que antes."
+  },
+  "day3_after_sea_closeness_high_15": {
+    "text": "Você pode escolher hoje. Não vou tentar adivinhar."
+  },
+  "day3_after_sea_closeness_low_1": {
+    "text": "Sea puxou a sacola em sua direção. Meu livro estava ao lado dele, mas não o entreguei."
+  },
+  "day3_after_sea_closeness_low_2": {
+    "text": "Apenas me diga onde você está indo. Quando o professor pergunta, eu tenho que responder também."
+  },
+  "day3_after_sea_closeness_low_3": {
+    "text": "Eu mesmo direi ao professor."
+  },
+  "day3_after_sea_closeness_low_4": {
+    "text": "OK. Então não fique chateado se eu disser que não sei."
+  },
+  "day3_after_sea_closeness_low_5": {
+    "text": "Quando peguei o livro, Sea afastou a mão. Enquanto olhava primeiro para o outro lado do corredor, também caí um degrau."
+  },
+  "day3_after_eunsu_closeness": {
+    "text": ""
+  },
+  "day3_after_eunsu_closeness_high_1": {
+    "text": "A professora olhou para mim enquanto ajustava os cantos da folha de presença. Desta vez não cobri os documentos."
+  },
+  "day3_after_eunsu_closeness_high_2": {
+    "text": "Você esperou no corredor? Se a porta estiver aberta, você pode simplesmente entrar."
+  },
+  "day3_after_eunsu_closeness_high_3": {
+    "text": "Você ainda estava escrevendo."
+  },
+  "day3_after_eunsu_closeness_high_4": {
+    "text": "Ele virou a cadeira vazia para mim e trouxe o cardigã pendurado no encosto da cadeira para o colo."
+  },
+  "day3_after_eunsu_closeness_high_5": {
+    "text": "Sente-se por um momento. Você não está se sentindo mal, está?"
+  },
+  "day3_after_eunsu_closeness_high_6": {
+    "text": "Quando ele disse que não havia, o professor fechou a tampa da caneta. As perguntas de confirmação terminaram aí."
+  },
+  "day3_after_eunsu_closeness_high_7": {
+    "text": "Desta vez, quero que você fique na minha turma até o final do semestre."
+  },
+  "day3_after_eunsu_closeness_high_8": {
+    "text": "Quando contei a ele que era o terceiro dia desde que fui transferido para a escola, o professor fechou os olhos e os abriu. Abotoei meu cardigã uma vez."
+  },
+  "day3_after_eunsu_closeness_high_9": {
+    "text": "Já vi tantos alunos serem transferidos. A pessoa que se despede nunca está pronta."
+  },
+  "day3_after_eunsu_closeness_high_10": {
+    "text": "Se eu ficar doente, vou para outra aula?"
+  },
+  "day3_after_eunsu_closeness_high_11": {
+    "text": "Quem disse isso?"
+  },
+  "day3_after_eunsu_closeness_high_12": {
+    "text": "A mão da professora veio e parou na frente da minha mesa. Depois de esperar pela minha resposta, ele virou uma página de documentos."
+  },
+  "day3_after_eunsu_closeness_high_13": {
+    "text": "Não. Se você estiver doente, você vai à enfermaria. Quando você voltar, sente-se bem aqui."
+  },
+  "day3_after_eunsu_closeness_high_14": {
+    "text": "Uma longa linha de luz pendia da cadeira perto da janela. A professora viu a cadeira vazia e empurrou a cadeira para dentro da carteira."
+  },
+  "day3_after_eunsu_closeness_high_15": {
+    "text": "Pedir para você ficar até o fim deve parecer muito. Apenas venha e diga adeus antes de partir hoje."
+  },
+  "day3_after_eunsu_closeness_low_1": {
+    "text": "A professora não desistiu da cadeira e apontou para a lateral da porta. Coloquei uma pasta debaixo do cotovelo."
+  },
+  "day3_after_eunsu_closeness_low_2": {
+    "text": "Você poderia me dizer o que você precisa primeiro? Tenho outro compromisso."
+  },
+  "day3_after_eunsu_closeness_low_3": {
+    "text": "Em uma cadeira vazia perto da janela estava a bolsa de outro aluno com o crachá virado."
+  },
+  "day3_after_eunsu_closeness_low_4": {
+    "text": "Mudei brevemente a pergunta que estava tentando fazer. A professora anotou a resposta e traçou uma linha no final do papel."
+  },
+  "day3_after_eunsu_closeness_low_5": {
+    "text": "Tudo bem. Volte para a aula. Eu te ligo se precisar de você."
+  },
+  "day3_history_callback_15": {
+    "text": "Ele disse que o cheiro era diferente do primeiro carro que recebeu. Riin cobriu com a mão a data no fundo do recipiente, dizendo que havia trocado a folha."
+  },
+  "day3_history_callback_16": {
+    "text": "Quando questionado se viu a notificação no dia em que desligou o aplicativo, a mão de Sea parou. Naquela época, eu apenas disse que queria verificar primeiro."
+  },
+  "day3_history_callback_17": {
+    "text": "Quando levantei a pergunta que havia enviado na primeira noite, a professora não reabriu a mensagem e disse os itens que perguntei em ordem."
+  }
 }

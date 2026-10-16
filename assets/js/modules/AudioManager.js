@@ -204,6 +204,16 @@ class AudioManager {
         // Prefer real audio files; synth is used as a fallback below.
         const originalFilename = path.split('/').pop();
         const filename = originalFilename.replace(/\.[^.]+$/, '');
+        if (this._proceduralBgmKeys?.has(filename) && this._bgmSynthRegistry?.[filename]) {
+            try {
+                const buffer = await this._bgmSynthRegistry[filename]();
+                this._bufferCache.set(assetPath, buffer);
+                return buffer;
+            } catch (error) {
+                this._reportLoadFailure(assetPath, error);
+                return null;
+            }
+        }
         let fileLoadError = null;
 
         for (let attempt = 0; attempt < 2; attempt += 1) {

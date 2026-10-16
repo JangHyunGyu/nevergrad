@@ -235,6 +235,12 @@ const CONFIG = {
     // 기본 이미지(낮)만 준비 → morning/sunset/night/dawn/dark/rain 자동 적용
     // 구도/장소 자체가 다른 것만 별도 이미지
     BACKGROUNDS: {
+        cg_cycle07_seolhwa: 'assets/images/cg/cg_seolhwa_cycle07_rain.webp',
+        cg_cycle12_yuna: 'assets/images/cg/cg_yuna_darkroom_film.webp',
+        ending_cage_eunsu: 'assets/images/cg/ending_cage_eunsu_desk.webp',
+        ending_complicit_monitors: 'assets/images/cg/ending_complicit_monitors.webp',
+        closeup_m13_ampoule: 'assets/images/background/closeup_m13_ampoule_tray.webp',
+        closeup_rooftop_etching: 'assets/images/background/closeup_rooftop_etching.webp',
         // 학교 내부
         classroom: "assets/images/background/classroom.webp",
         photo_club_room: "assets/images/background/photo_club_room.webp",

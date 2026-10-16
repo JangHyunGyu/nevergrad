@@ -1,0 +1,424 @@
+{
+  "date": "2026-10-16",
+  "baselineCommit": "f8026230b5156bfb0a1233fdb772ed8a65ed9f67",
+  "branch": "main",
+  "scope": "One explicitly approved generated replacement and 22 conservative fringe repairs; intentional transparent canvas padding retained",
+  "generated": {
+    "asset": "assets/images/characters/eunsu_obsessed.png",
+    "tool": "built-in image_gen",
+    "userApproved": true,
+    "requestedQuality": "highest supported; tool exposes no quality or resolution controls",
+    "actualNativeDimensions": [
+      1049,
+      1499
+    ],
+    "masterMatchesGeneratedFileByteForByte": true,
+    "displayAspectRatio": "864 / 1234",
+    "prompt": "Use case: background-extraction. Edit target: the existing visual novel character sprite eunsu_obsessed.png, 864 x 1234 pixels, RGBA. Remove only residual magenta/purple chroma-key contamination along the outer hair strands and silhouette edges. Preserve character identity, face, expression, broken glasses, hands, pose, body, clothes, colors, texture, drawn linework, lighting, scale, canvas aspect ratio, transparent outer padding and placement. No crop, repositioning or restyling. Request highest supported quality and native resolution preserving the aspect ratio, and genuine transparency."
+  },
+  "pixelRepairs": [
+    {
+      "file": "eunsu_angry.png",
+      "size": [
+        864,
+        1234
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 15403,
+      "changedPercent": 1.4447,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "eunsu_close.png",
+      "size": [
+        864,
+        1234
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 11414,
+      "changedPercent": 1.0706,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "eunsu_cold.png",
+      "size": [
+        864,
+        1234
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 13511,
+      "changedPercent": 1.2672,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "eunsu_dark.png",
+      "size": [
+        864,
+        1234
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 13077,
+      "changedPercent": 1.2265,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "eunsu_gentle.png",
+      "size": [
+        864,
+        1234
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 13764,
+      "changedPercent": 1.291,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "eunsu_normal.png",
+      "size": [
+        896,
+        1280
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 12311,
+      "changedPercent": 1.0734,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "eunsu_serious.png",
+      "size": [
+        864,
+        1234
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 12294,
+      "changedPercent": 1.1531,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "eunsu_shy.png",
+      "size": [
+        864,
+        1234
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 12466,
+      "changedPercent": 1.1692,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "eunsu_smile.png",
+      "size": [
+        864,
+        1234
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 13625,
+      "changedPercent": 1.2779,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "eunsu_warm.png",
+      "size": [
+        864,
+        1234
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 16618,
+      "changedPercent": 1.5587,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_angry.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 7897,
+      "changedPercent": 0.7411,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_broken_smile.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 5460,
+      "changedPercent": 0.5124,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_cry.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 6095,
+      "changedPercent": 0.572,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_dark.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 5375,
+      "changedPercent": 0.5044,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_hurt.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 5109,
+      "changedPercent": 0.4795,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_sad.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 5968,
+      "changedPercent": 0.5601,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_serious.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 5163,
+      "changedPercent": 0.4845,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_shy.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 5926,
+      "changedPercent": 0.5561,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_smile.png",
+      "size": [
+        1536,
+        2752
+      ],
+      "edgeRadius": 11,
+      "changedPixels": 13752,
+      "changedPercent": 0.3253,
+      "removedPixels": 1,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_stare.png",
+      "size": [
+        1536,
+        2752
+      ],
+      "edgeRadius": 11,
+      "changedPixels": 14798,
+      "changedPercent": 0.3501,
+      "removedPixels": 13,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_vulnerable.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 4992,
+      "changedPercent": 0.4685,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    },
+    {
+      "file": "sea_yandere.png",
+      "size": [
+        843,
+        1264
+      ],
+      "edgeRadius": 5,
+      "changedPixels": 8026,
+      "changedPercent": 0.7532,
+      "removedPixels": 0,
+      "alphaPreservedOutsideVerifiedSpecks": true,
+      "outsideMaskUnchanged": true,
+      "protectedMaterialUnchanged": true,
+      "remainingChromaInTreatedPixels": 0
+    }
+  ],
+  "webp": {
+    "encoding": "lossless",
+    "quality": 100,
+    "alphaQuality": 100,
+    "effort": 6,
+    "visibleRgbAndAlphaMatchPng": true,
+    "pairs": 23
+  },
+  "unchangedCharacterAssetFiles": 78,
+  "intentionalPadding": "22 repaired sprites retain their dimensions and alpha shapes, except 14 verified disconnected corner pixels; generated replacement retains its full native canvas without cropping",
+  "protectedAreas": "Sea head, ribbons and star pin; saturated red fabric; all pixels outside selected fringe masks; Seolhwa effects and all unselected sprites",
+  "cacheVersion": {
+    "before": "0.1.1",
+    "after": "0.1.2"
+  },
+  "validation": {
+    "npmRunCheck": "passed",
+    "unitTests": 107,
+    "existingWarnings": 12,
+    "decodedRegisteredImages": 157,
+    "decodeFailures": 0,
+    "idempotentPixelRepairs": 22,
+    "browserUniqueTests": 52,
+    "browserDetails": "27 painted UI checks passed on isolated server; the final corrected-port run passed all 25 release-panel, responsive UI and scene/media checks",
+    "isolatedServer": "http://127.0.0.1:4189",
+    "initialHarnessIssues": "The shared port 4178 served unrelated uncommitted scenario work. Temporary test copies used 4189; both literal URLs and regex port constants were corrected before the final 25/25 run. No production tests or scenario code were changed."
+  },
+  "visual": [
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "loadedChangedExpressions": 23,
+      "galleryNative": [
+        1049,
+        1499
+      ],
+      "story": {
+        "changedPixelsInsideApprovedImages": 160922,
+        "changedPixelsOutsideApprovedImages": 0
+      },
+      "gallery": {
+        "changedPixelsInsideApprovedImages": 129054,
+        "changedPixelsOutsideApprovedImages": 0
+      },
+      "beforeAfterImageBoxesIdentical": true,
+      "normalAndObsessedDisplayHeight": 720
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "loadedChangedExpressions": 23,
+      "galleryNative": [
+        1049,
+        1499
+      ],
+      "story": {
+        "changedPixelsInsideApprovedImages": 178583,
+        "changedPixelsOutsideApprovedImages": 0
+      },
+      "gallery": {
+        "changedPixelsInsideApprovedImages": 55009,
+        "changedPixelsOutsideApprovedImages": 0
+      },
+      "beforeAfterImageBoxesIdentical": true,
+      "normalAndObsessedDisplayHeight": 759.59375
+    }
+  ],
+  "visualCaptureNote": "Mobile gallery rounded-corner antialiasing varied under GPU compositing. A software-compositing recapture eliminated the variation; UI differences outside approved image boxes are zero. Before/after image boxes are identical at both viewports.",
+  "artifacts": "tmp/fringe-browser, tmp/fringe-integration.json, tmp/fringe-e2e-final.json, tmp/fringe-candidates/final-native-review.png"
+}

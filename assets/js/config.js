@@ -60,7 +60,7 @@ const CONFIG = {
     // ===== 게임 기본 설정 =====
     TITLE: "졸업하지 못한 교실",
     SUBTITLE: "5일의 기록",
-    VERSION: "0.1.1",
+    VERSION: "0.1.2",
 
     // Save migration for the retired duplicate Day 5 confrontation.
     SCENE_ALIASES: {

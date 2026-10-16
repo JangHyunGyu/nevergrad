@@ -1321,7 +1321,7 @@ if (koHtmlContent.includes('id="day-display"') && !allJsCombined.includes('day-d
 
 // ── 모든 HTML id에 대해 JS 참조 존재 확인 ──
 const htmlIds = [...koHtmlContent.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
-const presentationalIds = new Set(['cherry-blossoms', 'hud']);
+const presentationalIds = new Set(['cherry-blossoms', 'hud', 'initial-page-background', 'riin-wake-boot']);
 const unreferencedIds = htmlIds.filter(id => !presentationalIds.has(id) && !allJsCombined.includes(id));
 if (unreferencedIds.length > 0) {
     warnings.push(`[UI_ORPHAN_ID] ${unreferencedIds.length} HTML ids with no JS reference: ${unreferencedIds.slice(0,5).join(', ')}${unreferencedIds.length > 5 ? '...' : ''}`);

@@ -39,7 +39,7 @@ for (const viewport of [{ width:1280,height:800 },{ width:844,height:390 }]) {
             await page.screenshot({path:info.outputPath(`${galleryId}-story.png`),animations:'disabled'});
         }
         await page.evaluate(() => { game.gallery.activeTab = 'cg'; game.gallery.open(); });
-        await expect(page.locator('.gallery-card[data-kind="cg"]')).toHaveCount(12);
+        await expect(page.locator('.gallery-card[data-kind="cg"]')).toHaveCount(14);
         for (const [,galleryId] of scenes) {
             await page.locator(`.gallery-card[data-id="${galleryId}"]`).click();
             await expect(page.locator('.gallery-image-modal img')).toBeVisible();

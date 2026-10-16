@@ -131,7 +131,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_sea_25": {
         character: "sea_smile",
-        next: "day2_lunch_end"
+        next: "day2_lunch_sea_ticket_choice"
     },
 
     // ===== Route B: 유나 — 도서관 (yuna_1 ~ yuna_24) =====
@@ -245,7 +245,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_yuna_24": {
         character: "yuna_normal",
-        next: "day2_lunch_end"
+        next: "day2_lunch_yuna_map_choice"
     },
 
     // ===== Route C: 리인 — 건강검진 (riin_1 ~ riin_29) =====
@@ -364,7 +364,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_riin_29": {
         character: "riin_gentle",
-        next: "day2_lunch_end"
+        next: "day2_lunch_riin_pulse_choice"
     },
 
     // ===== Route D: 옥상 — 은수의 통화 목격 (rooftop_1 ~ rooftop_11) =====
@@ -424,7 +424,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_lunch_rooftop_11": {
         character: null,
-        next: "day2_lunch_end"
+        next: "day2_lunch_rooftop_step_choice"
     },
 
     // ===== 점심 종료 =====
@@ -462,4 +462,90 @@ Object.assign(SCENARIO[2], {
         character: "riin_gentle",
         next: "day2_lunch_riin_19"
     }
+});
+
+Object.assign(SCENARIO[2], {
+"day2_lunch_sea_ticket_choice": {
+        character: "sea_smile",
+        choices: [
+            { next: "day2_lunch_sea_tkt_1", stats: { sea: { affinity: 3 } } },
+            { next: "day2_lunch_sea_tkt_8", setFlags: ["saw_sea_playlist_dates"], stats: { sea: { affinity: 1 }, seolhwa: { affinity: 2 } } }
+        ]
+    },
+    "day2_lunch_sea_tkt_1": { character: "sea_normal", next: "day2_lunch_sea_tkt_2" },
+    "day2_lunch_sea_tkt_2": { character: "sea_normal", next: "day2_lunch_sea_tkt_3" },
+    "day2_lunch_sea_tkt_3": { character: "sea_smile", next: "day2_lunch_sea_tkt_4" },
+    "day2_lunch_sea_tkt_4": { character: "sea_smile", next: "day2_lunch_sea_tkt_5" },
+    "day2_lunch_sea_tkt_5": { character: "sea_smile", next: "day2_lunch_sea_tkt_6" },
+    "day2_lunch_sea_tkt_6": { character: "sea_normal", next: "day2_lunch_sea_tkt_7" },
+    "day2_lunch_sea_tkt_7": { character: "sea_smile", next: "day2_lunch_sea_tkt_13" },
+    "day2_lunch_sea_tkt_8": { character: "sea_normal", next: "day2_lunch_sea_tkt_9" },
+    "day2_lunch_sea_tkt_9": { character: "sea_serious", next: "day2_lunch_sea_tkt_10" },
+    "day2_lunch_sea_tkt_10": { character: "sea_normal", next: "day2_lunch_sea_tkt_11" },
+    "day2_lunch_sea_tkt_11": { character: "sea_normal", next: "day2_lunch_sea_tkt_12" },
+    "day2_lunch_sea_tkt_12": { character: "sea_smile", next: "day2_lunch_sea_tkt_13" },
+    "day2_lunch_sea_tkt_13": { character: "sea_smile", next: "day2_lunch_end" },
+
+    "day2_lunch_yuna_map_choice": {
+        character: "yuna_normal",
+        choices: [
+            { next: "day2_lunch_yuna_map_1", setFlags: ["saw_yuna_double_shadow"], stats: { yuna: { affinity: 2 }, seolhwa: { affinity: 2 } } },
+            { next: "day2_lunch_yuna_map_8", setFlags: ["learned_old_building_darkroom"], stats: { yuna: { affinity: 4 } } }
+        ]
+    },
+    "day2_lunch_yuna_map_1": { character: "yuna_scared", next: "day2_lunch_yuna_map_2" },
+    "day2_lunch_yuna_map_2": { character: "yuna_shy", next: "day2_lunch_yuna_map_3" },
+    "day2_lunch_yuna_map_3": { character: "yuna_normal", next: "day2_lunch_yuna_map_4" },
+    "day2_lunch_yuna_map_4": { character: "yuna_scared", next: "day2_lunch_yuna_map_5" },
+    "day2_lunch_yuna_map_5": { character: "yuna_shy", next: "day2_lunch_yuna_map_6" },
+    "day2_lunch_yuna_map_6": { character: "yuna_normal", next: "day2_lunch_yuna_map_7" },
+    "day2_lunch_yuna_map_7": { character: "yuna_shy", next: "day2_lunch_yuna_map_12" },
+    "day2_lunch_yuna_map_8": { character: "yuna_normal", next: "day2_lunch_yuna_map_9" },
+    "day2_lunch_yuna_map_9": { character: "yuna_normal", next: "day2_lunch_yuna_map_10" },
+    "day2_lunch_yuna_map_10": { character: "yuna_shy", next: "day2_lunch_yuna_map_11" },
+    "day2_lunch_yuna_map_11": { character: "yuna_serious", next: "day2_lunch_yuna_map_12" },
+    "day2_lunch_yuna_map_12": { character: "yuna_normal", next: "day2_lunch_yuna_map_13" },
+    "day2_lunch_yuna_map_13": { character: "yuna_smile", next: "day2_lunch_end" },
+
+    "day2_lunch_riin_pulse_choice": {
+        character: "riin_gentle",
+        choices: [
+            { next: "day2_lunch_riin_pls_1", setFlags: ["saw_duplicate_health_chart"], stats: { riin: { affinity: 1 }, seolhwa: { affinity: 2 } } },
+            { next: "day2_lunch_riin_pls_8", stats: { riin: { affinity: 3 } } }
+        ]
+    },
+    "day2_lunch_riin_pls_1": { character: "riin_normal", next: "day2_lunch_riin_pls_2" },
+    "day2_lunch_riin_pls_2": { character: "riin_normal", next: "day2_lunch_riin_pls_3" },
+    "day2_lunch_riin_pls_3": { character: "riin_gentle", next: "day2_lunch_riin_pls_4" },
+    "day2_lunch_riin_pls_4": { character: "riin_gentle", next: "day2_lunch_riin_pls_5" },
+    "day2_lunch_riin_pls_5": { character: "riin_normal", next: "day2_lunch_riin_pls_6" },
+    "day2_lunch_riin_pls_6": { character: "riin_smile", next: "day2_lunch_riin_pls_7" },
+    "day2_lunch_riin_pls_7": { character: "riin_gentle", next: "day2_lunch_riin_pls_13" },
+    "day2_lunch_riin_pls_8": { character: "riin_normal", next: "day2_lunch_riin_pls_9" },
+    "day2_lunch_riin_pls_9": { character: "riin_serious", next: "day2_lunch_riin_pls_10" },
+    "day2_lunch_riin_pls_10": { character: "riin_serious", next: "day2_lunch_riin_pls_11" },
+    "day2_lunch_riin_pls_11": { character: "riin_normal", next: "day2_lunch_riin_pls_12" },
+    "day2_lunch_riin_pls_12": { character: "riin_gentle", next: "day2_lunch_riin_pls_13" },
+    "day2_lunch_riin_pls_13": { character: "riin_gentle", next: "day2_lunch_end" },
+
+    "day2_lunch_rooftop_step_choice": {
+        character: null,
+        choices: [
+            { next: "day2_lunch_rooftop_stp_1", stats: { seolhwa: { affinity: 3 } } },
+            { next: "day2_lunch_rooftop_stp_7", setFlags: ["found_cycle13_sticker"], stats: { eunsu: { affinity: 2 }, seolhwa: { affinity: 2 } } }
+        ]
+    },
+    "day2_lunch_rooftop_stp_1": { character: null, next: "day2_lunch_rooftop_stp_2" },
+    "day2_lunch_rooftop_stp_2": { character: null, next: "day2_lunch_rooftop_stp_3" },
+    "day2_lunch_rooftop_stp_3": { character: null, next: "day2_lunch_rooftop_stp_4" },
+    "day2_lunch_rooftop_stp_4": { character: null, next: "day2_lunch_rooftop_stp_5" },
+    "day2_lunch_rooftop_stp_5": { character: null, next: "day2_lunch_rooftop_stp_6" },
+    "day2_lunch_rooftop_stp_6": { character: null, next: "day2_lunch_rooftop_stp_13" },
+    "day2_lunch_rooftop_stp_7": { background: "stairway", character: null, next: "day2_lunch_rooftop_stp_8" },
+    "day2_lunch_rooftop_stp_8": { character: null, next: "day2_lunch_rooftop_stp_9" },
+    "day2_lunch_rooftop_stp_9": { character: null, next: "day2_lunch_rooftop_stp_10" },
+    "day2_lunch_rooftop_stp_10": { character: null, next: "day2_lunch_rooftop_stp_11" },
+    "day2_lunch_rooftop_stp_11": { character: null, next: "day2_lunch_rooftop_stp_12" },
+    "day2_lunch_rooftop_stp_12": { character: null, next: "day2_lunch_rooftop_stp_13" },
+    "day2_lunch_rooftop_stp_13": { background: "corridor", character: null, next: "day2_lunch_end" }
 });

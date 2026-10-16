@@ -23,6 +23,7 @@ for(const lang of ['ko','en','ja','es','fr','de','pt','zh']){
     game._loadScene(start);
     for(let n=0;n<900;n++){
      await sleep(2);
+     if(game.renderer.cgTransition?.active || game._waitingForCG){await sleep(50);n--;continue;}
      const id=game.state.currentScene,scene=game.currentSceneData;
      if(scene.endingTitle)return {ending:scene.endingTitle,visited:visited.slice(),spoken:spoken.slice(),sweeps:sweeps.slice()};
      if(game.dialogue.isTyping)continue;

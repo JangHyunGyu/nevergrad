@@ -3,6 +3,9 @@ const fs=require('node:fs'),path=require('node:path');
 const report=require('../../docs/qa/scene-media-audit-2026-10-08.json');
 const routing=require('../../docs/qa/day5-routing-2026-10-15.json');
 const expansion=require('../../docs/qa/expansion-20261016.json');
+const phase2=require('../../docs/qa/phase2-fixed-copy-20261016.json');
+const phase2Scenes=Object.assign({},...phase2.chapters.map(c=>c.scenes));
+const phase2Hooks=Object.fromEntries(phase2.chapters.flatMap(c=>c.hooks.map(h=>[h.id,{next:h.after}])));
 
 async function boot(page){
     await page.route(/^https?:\/\/(?!127\.0\.0\.1:4178)/,route=>route.abort());
@@ -15,10 +18,10 @@ async function boot(page){
 test('all reviewed runtime scenes retain their audited media contracts and valid assets',async({page},info)=>{
     await boot(page);
     const actual=await page.evaluate(()=>Object.entries(SCENARIO).flatMap(([day,scenes])=>Object.entries(scenes).map(([id,scene])=>({id,day,scene}))));
-    const expectedIds=report.ledger.map(r=>r.id).filter(id=>!routing.retiredSceneAliases[id]).concat(routing.addedScenes,expansion.addedScenes);
+    const expectedIds=report.ledger.map(r=>r.id).filter(id=>!routing.retiredSceneAliases[id]).concat(routing.addedScenes,expansion.addedScenes,Object.keys(phase2Scenes));
     expect(actual.map(r=>r.id).sort()).toEqual(expectedIds.sort());
     for(const {id,scene}of actual){
-        const fields={...(report.expectedCorrections[id]?.fields||{}),...(routing.sceneContracts[id]||{}),...(expansion.sceneContracts[id]||{})};
+        const fields={...(report.expectedCorrections[id]?.fields||{}),...(routing.sceneContracts[id]||{}),...(expansion.sceneContracts[id]||{}),...(phase2Scenes[id]||{}),...(phase2Hooks[id]||{})};
         for(const[field,value]of Object.entries(fields))expect(scene[field],`${id}.${field}`).toEqual(value);
     }
     const assets=await page.evaluate(()=>Object.values(CONFIG.BACKGROUNDS).concat(Object.values(CONFIG.EXPRESSIONS).flatMap(Object.values),Object.values(CONFIG.SUBJECT_FACE_IMAGES)).filter(Boolean));

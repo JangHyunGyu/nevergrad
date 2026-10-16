@@ -236,7 +236,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_sea_28": {
         character: "sea_smile",
-        next: "day2_after_hallway_1"
+        next: "day2_after_detour_choice"
     },
     "day2_after_sea_invite_1": {
         character: "sea_sad",
@@ -354,7 +354,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_after_seolhwa_8": {
         character: null,
-        next: "day2_after_end"
+        next: "day2_after_seolhwa_trace_choice"
     },
 
     // ===== 방과후 종료 =====
@@ -392,4 +392,80 @@ Object.assign(SCENARIO[2], {
         character: "eunsu_warm",
         next: "day2_after_eunsu_3"
     }
+});
+
+Object.assign(SCENARIO[2], {
+"day2_after_detour_choice": {
+        background: "corridor",
+        character: null,
+        choices: [
+            { next: "day2_after_detour_hall_1", stats: { sea: { affinity: 2 } } },
+            { next: "day2_after_detour_lib_1", setFlags: ["saw_board_window_photo"], stats: { yuna: { affinity: 3 }, seolhwa: { affinity: 2 } } },
+            { next: "day2_after_detour_nur_1", setFlags: ["overheard_riin_day2_call"], stats: { riin: { affinity: 2 }, seolhwa: { affinity: 2 } } }
+        ]
+    },
+    "day2_after_detour_hall_1": { character: null, next: "day2_after_detour_hall_2" },
+    "day2_after_detour_hall_2": { character: null, next: "day2_after_detour_hall_3" },
+    "day2_after_detour_hall_3": { character: null, next: "day2_after_detour_hall_4" },
+    "day2_after_detour_hall_4": { character: null, next: "day2_after_detour_hall_5" },
+    "day2_after_detour_hall_5": { character: null, next: "day2_after_detour_hall_6" },
+    "day2_after_detour_hall_6": { character: null, next: "day2_after_detour_hall_7" },
+    "day2_after_detour_hall_7": { character: null, next: "day2_after_detour_hall_8" },
+    "day2_after_detour_hall_8": { character: null, next: "day2_after_detour_hall_9" },
+    "day2_after_detour_hall_9": { character: null, next: "day2_after_detour_hall_10" },
+    "day2_after_detour_hall_10": { character: null, next: "day2_after_detour_hall_11" },
+    "day2_after_detour_hall_11": { character: null, next: "day2_after_detour_hall_12" },
+    "day2_after_detour_hall_12": { character: null, next: "day2_after_hallway_1" },
+
+    "day2_after_detour_lib_1": { background: "corridor", character: null, next: "day2_after_detour_lib_2" },
+    "day2_after_detour_lib_2": { character: null, next: "day2_after_detour_lib_3" },
+    "day2_after_detour_lib_3": { character: null, next: "day2_after_detour_lib_4" },
+    "day2_after_detour_lib_4": { character: null, next: "day2_after_detour_lib_5" },
+    "day2_after_detour_lib_5": { character: "yuna_shy", next: "day2_after_detour_lib_6" },
+    "day2_after_detour_lib_6": { character: "yuna_normal", next: "day2_after_detour_lib_7" },
+    "day2_after_detour_lib_7": { character: "yuna_normal", next: "day2_after_detour_lib_8" },
+    "day2_after_detour_lib_8": { character: "yuna_scared", next: "day2_after_detour_lib_9" },
+    "day2_after_detour_lib_9": { character: "yuna_shy", next: "day2_after_detour_lib_10" },
+    "day2_after_detour_lib_10": { character: "yuna_normal", next: "day2_after_detour_lib_11" },
+    "day2_after_detour_lib_11": { character: "yuna_shy", next: "day2_after_detour_lib_12" },
+    "day2_after_detour_lib_12": { character: "yuna_serious", next: "day2_after_detour_lib_13" },
+    "day2_after_detour_lib_13": { character: "yuna_serious", next: "day2_after_detour_lib_14" },
+    "day2_after_detour_lib_14": { character: null, next: "day2_after_hallway_1" },
+
+    "day2_after_detour_nur_1": { background: "corridor", character: null, next: "day2_after_detour_nur_2" },
+    "day2_after_detour_nur_2": { character: null, next: "day2_after_detour_nur_3" },
+    "day2_after_detour_nur_3": { character: null, next: "day2_after_detour_nur_4" },
+    "day2_after_detour_nur_4": { character: null, next: "day2_after_detour_nur_5" },
+    "day2_after_detour_nur_5": { character: "riin_normal", next: "day2_after_detour_nur_6" },
+    "day2_after_detour_nur_6": { character: "riin_smile", next: "day2_after_detour_nur_7" },
+    "day2_after_detour_nur_7": { character: "riin_normal", next: "day2_after_detour_nur_8" },
+    "day2_after_detour_nur_8": { character: "riin_gentle", next: "day2_after_detour_nur_9" },
+    "day2_after_detour_nur_9": { character: "riin_gentle", next: "day2_after_detour_nur_10" },
+    "day2_after_detour_nur_10": { character: "riin_smile", next: "day2_after_detour_nur_11" },
+    "day2_after_detour_nur_11": { character: "riin_gentle", next: "day2_after_detour_nur_12" },
+    "day2_after_detour_nur_12": { character: "riin_smile", next: "day2_after_detour_nur_13" },
+    "day2_after_detour_nur_13": { character: null, next: "day2_after_detour_nur_14" },
+    "day2_after_detour_nur_14": { character: null, next: "day2_after_hallway_1" },
+
+    "day2_after_seolhwa_trace_choice": {
+        character: null,
+        choices: [
+            { next: "day2_after_seolhwa_trc_1", setFlags: ["found_seolhwa_gate_chalk"], stats: { seolhwa: { affinity: 4 } } },
+            { next: "day2_after_seolhwa_trc_6", stats: { seolhwa: { affinity: 2 } } }
+        ]
+    },
+    "day2_after_seolhwa_trc_1": { character: null, next: "day2_after_seolhwa_trc_2" },
+    "day2_after_seolhwa_trc_2": { character: null, next: "day2_after_seolhwa_trc_3" },
+    "day2_after_seolhwa_trc_3": { character: null, next: "day2_after_seolhwa_trc_4" },
+    "day2_after_seolhwa_trc_4": { character: null, next: "day2_after_seolhwa_trc_5" },
+    "day2_after_seolhwa_trc_5": { character: null, next: "day2_after_seolhwa_trc_9" },
+    "day2_after_seolhwa_trc_6": { character: null, next: "day2_after_seolhwa_trc_7" },
+    "day2_after_seolhwa_trc_7": { character: null, next: "day2_after_seolhwa_trc_8" },
+    "day2_after_seolhwa_trc_8": { character: null, next: "day2_after_seolhwa_trc_9" },
+    "day2_after_seolhwa_trc_9": { character: null, next: "day2_after_seolhwa_trc_10" },
+    "day2_after_seolhwa_trc_10": { character: null, next: "day2_after_seolhwa_trc_11" },
+    "day2_after_seolhwa_trc_11": { character: null, next: "day2_after_seolhwa_trc_12" },
+    "day2_after_seolhwa_trc_12": { character: null, next: "day2_after_seolhwa_trc_13" },
+    "day2_after_seolhwa_trc_13": { character: null, next: "day2_after_seolhwa_trc_14" },
+    "day2_after_seolhwa_trc_14": { character: null, next: "day2_after_end" }
 });

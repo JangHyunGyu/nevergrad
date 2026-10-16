@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-16",
+  "referenceCommit": "e7754b5d138f927c5d89113d4a7c4e81217a41d5",
+  "validation": {
+    "errors": 0,
+    "warnings": 0,
+    "scenes": 3338,
+    "reachable": 3338,
+    "orphans": 0,
+    "endings": 7,
+    "seededRuns": 100,
+    "choices": 279
+  },
+  "localization": {
+    "languages": 8,
+    "missing": 0,
+    "extra": 0,
+    "typeMismatches": 0,
+    "filesMissing": 0,
+    "overlayScenesMissing": 0,
+    "mojibake": 0,
+    "placeholderWarnings": 0,
+    "codeSpanMismatches": 0,
+    "fixedKoreanMismatches": 0
+  },
+  "syntax": {
+    "checkedFiles": 191,
+    "passed": true
+  },
+  "unitTests": {
+    "passed": 115,
+    "failed": 0
+  },
+  "assets": {
+    "uniqueDecoded": 163,
+    "failures": 0
+  },
+  "browser": {
+    "uniquePassingTests": 230,
+    "initialFullRun": {
+      "passed": 210,
+      "failed": 20
+    },
+    "subsequentDay5": {
+      "passed": 16,
+      "failed": 0
+    },
+    "subsequentArt": {
+      "passed": 3,
+      "failed": 0
+    },
+    "subsequentCage": {
+      "passed": 1,
+      "failed": 0
+    },
+    "subsequentMedia": {
+      "passed": 1,
+      "failed": 0
+    },
+    "details": "Initial 20 failures were 16 old fixed-iteration Day 5 tests, 2 old 12-CG expectations, 1 cage click before readiness, and the old media scene list missing the 288 additions. All affected cases passed after test updates. Art rerun includes one expression case already passing in the full run.",
+    "baselineFailures": [
+      {
+        "spec": "day5-ending-payoffs.spec.js",
+        "result": "page.evaluate: Error: Stopped at day5_ending_escape_13; wanted day5_ending_escape_14\n    at walk (eval at evaluate (:302:30), <anonymous>:26:23)\n    at async eval (eval at evaluate (:302:30), <anonymous>:31:31)\n    at async <anonymous>:328:30"
+      },
+      {
+        "spec": "day5-routing.spec.js",
+        "result": "page.evaluate: Error: Route stalled at day5_ending_true_28\n    at walk (eval at evaluate (:302:30), <anonymous>:32:11)\n    at async eval (eval at evaluate (:302:30), <anonymous>:36:44)\n    at async <anonymous>:328:30"
+      }
+    ]
+  },
+  "replay": {
+    "paths": 9,
+    "completeWalks": true,
+    "saveAndMetaUnchanged": true,
+    "automaticAndManualSlots": 10,
+    "restoredPlayerAndFlags": true
+  },
+  "visual": {
+    "screens": 10,
+    "viewports": 5,
+    "visibleChanges": false,
+    "exactScreens": 7,
+    "maxChannelDifference": 2,
+    "comparisons": [
+      {
+        "screen": "title",
+        "width": 1280,
+        "height": 800,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      },
+      {
+        "screen": "dialogue",
+        "width": 1280,
+        "height": 800,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      },
+      {
+        "screen": "title",
+        "width": 1024,
+        "height": 768,
+        "changedChannels": 62,
+        "maxChannelDifference": 2
+      },
+      {
+        "screen": "dialogue",
+        "width": 1024,
+        "height": 768,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      },
+      {
+        "screen": "title",
+        "width": 768,
+        "height": 1024,
+        "changedChannels": 12,
+        "maxChannelDifference": 1
+      },
+      {
+        "screen": "dialogue",
+        "width": 768,
+        "height": 1024,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      },
+      {
+        "screen": "title",
+        "width": 375,
+        "height": 812,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      },
+      {
+        "screen": "dialogue",
+        "width": 375,
+        "height": 812,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      },
+      {
+        "screen": "title",
+        "width": 667,
+        "height": 375,
+        "changedChannels": 163,
+        "maxChannelDifference": 1
+      },
+      {
+        "screen": "dialogue",
+        "width": 667,
+        "height": 375,
+        "changedChannels": 0,
+        "maxChannelDifference": 0
+      }
+    ],
+    "method": "Same browser and viewport, same cleared storage, reduced motion and settled fonts/images; pre-change scripts/CSS loaded from e7754b5. Residual nonzero pixels are edge rasterization, maximum 2/255 per channel. Desktop 1280x800 and mobile 375x812 are exact."
+  },
+  "whitespace": {
+    "passed": true
+  }
+}

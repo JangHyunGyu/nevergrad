@@ -98,7 +98,8 @@ test('ending controls reach postcredits and cage loop, with one completion recor
             await expect(page.locator('#title-screen')).toHaveClass(/active/);
         } else {
             expect(await page.evaluate(() => game._cageMode)).toBe(true);
-            await page.waitForFunction(() => !game.dialogue.isTyping && !game._clickLocked);
+            await page.waitForFunction(() => !game.dialogue.isTyping && !game._clickLocked
+                && !game.dialogue.isAdvanceCoolingDown?.() && !game.renderer.cgTransition?.active);
             await page.locator('#dialogue-box').click();
             expect(await page.evaluate(() => game._cageClickCount)).toBeGreaterThan(1);
             await page.evaluate(() => game._exitCageMode());

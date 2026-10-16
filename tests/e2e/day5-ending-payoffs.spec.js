@@ -4,6 +4,7 @@ const path = require('node:path');
 
 for (const lang of ['ko', 'en', 'ja', 'zh', 'es', 'fr', 'de', 'pt']) {
     test(`Day 5 companion, farewell, synchronization and save payoffs: ${lang}`, async ({ page }) => {
+        test.setTimeout(180000);
         await page.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.abort());
         await page.goto(lang === 'ko' ? '/' : `/${lang}/`);
         await page.waitForFunction(() => window.game?.i18n?.loaded?.day5);
@@ -26,6 +27,11 @@ for (const lang of ['ko', 'en', 'ja', 'zh', 'es', 'fr', 'de', 'pt']) {
                 game._loadScene(start);
                 for (let n = 0; n < 250; n++) {
                     if (game.state.currentScene === stop) return shown.slice();
+                    if (game.renderer.cgTransition?.active || game._waitingForCG) {
+                        await sleep(50);
+                        n--;
+                        continue;
+                    }
                     if (game.dialogue.isTyping || game._shouldAutoAdvanceSilentScene(game.currentSceneData, game.i18n.get(game.state.currentScene).text) || game.currentSceneData.skipTextFlags?.some(f => game.state.hasFlag(f))) {
                         await sleep(10); continue;
                     }

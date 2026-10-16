@@ -95,12 +95,6 @@ class SceneRenderer {
             return;
         }
         if (fadeMs > 0 && currentBg && currentBg !== 'none' && currentBg !== newBg) {
-            if (!document.getElementById('ng-long-fade')) {
-                const style = document.createElement('style');
-                style.id = 'ng-long-fade';
-                style.textContent = '.bg-layer.bg-crossfade-long::after{transition:opacity 1.8s ease-in-out;opacity:1}';
-                document.head.appendChild(style);
-            }
             this.bgLayer.style.setProperty('--bg-next', newBg);
             this.bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-long');
             void this.bgLayer.offsetWidth;

@@ -2826,6 +2826,16 @@ body.cursor-slowed * {
     .admin-panel-footer { display: none; }
 }
 
+#bg-layer.cross-glitch {
+    animation: ng-cross-glitch 0.55s steps(2) 1;
+}
+@keyframes ng-cross-glitch {
+    0% { filter: none; }
+    25% { filter: brightness(0.3) saturate(0.3); }
+    55% { filter: brightness(0.8) saturate(0.6); }
+    100% { filter: none; }
+}
+
 /* Reserve room for the compact dialogue box on short landscape screens. */
 @media (orientation: landscape) and (max-height: 500px) {
     .admin-panel-overlay {

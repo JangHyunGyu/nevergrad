@@ -68,6 +68,7 @@ class SaveManager {
 
     /** @private 영속 저장이 실패하면 메모리에 보관한다. 던지지 않는다. */
     _setItem(key, value) {
+        if (this.readOnly) return false;
         try {
             const store = this._persistentStorage();
             if (store) {
@@ -82,6 +83,7 @@ class SaveManager {
 
     /** @private */
     _removeItem(key) {
+        if (this.readOnly) return;
         this._memoryStore().set(key, null);
         try {
             const store = this._persistentStorage();
@@ -135,6 +137,7 @@ class SaveManager {
      * @returns {boolean}
      */
     saveToSlot(slotIndex) {
+        if (this.readOnly) return false;
         try {
             const gameData = this.state.serialize();
             const slotData = {
@@ -162,6 +165,7 @@ class SaveManager {
      * @returns {boolean}
      */
     loadFromSlot(slotIndex) {
+        if (this.readOnly) return false;
         try {
             const parsed = this._readSlot(slotIndex);
             if (!parsed) return false;

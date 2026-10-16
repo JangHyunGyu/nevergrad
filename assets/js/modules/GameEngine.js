@@ -346,12 +346,6 @@ class GameEngine {
     _pulseCrossGlitch(sceneId) {
         const screen = document.getElementById('bg-layer');
         if (!screen) return;
-        if (!document.getElementById('ng-cross-glitch-style')) {
-            const style = document.createElement('style');
-            style.id = 'ng-cross-glitch-style';
-            style.textContent = '#bg-layer.cross-glitch{animation:ng-cross-glitch .55s steps(2) 1}@keyframes ng-cross-glitch{0%{filter:none}25%{filter:brightness(.3) saturate(.3)}55%{filter:brightness(.8) saturate(.6)}100%{filter:none}}';
-            document.head.appendChild(style);
-        }
         const hit = sceneId === 'day5_lunch_pills_pink_2';
         screen.classList.remove('cross-glitch');
         if (!hit || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
@@ -485,6 +479,64 @@ class GameEngine {
         document.body?.classList.remove('ending-credit-mode');
         const statEl = document.getElementById('stat-display');
         statEl?.classList.remove('stat-revealed', 'stat-peeling');
+    }
+
+    async startGalleryReplay(sceneId) {
+        if (this.isGalleryReplay || !SCENARIO[5]?.[sceneId]) return false;
+        const snapshot = {
+            state: this.state.serialize(),
+            backlog: this.backlog.slice(),
+            archiveMode: this._archiveMode,
+            disabled: ['btn-save', 'btn-load'].map(id => [id, document.getElementById(id)?.disabled])
+        };
+        this.gallery?._closeModal();
+        this.gallery?._stopBgmPreview();
+        this._prepareNewRun();
+        this._galleryReplaySnapshot = snapshot;
+        this.isGalleryReplay = true;
+        this.save.readOnly = true;
+        this._archiveMode = true;
+        this.state.currentDay = 5;
+        this.state.currentSlot = 'night';
+        this.state.mode = CONFIG.STAT_MODES.THRILLER;
+        this.glitch?.shiftTheme?.('thriller');
+        for (const [id] of snapshot.disabled) {
+            const button = document.getElementById(id);
+            if (button) button.disabled = true;
+        }
+        try {
+            await this.i18n.loadDay(5);
+            if (!this.isGalleryReplay) return false;
+            if (this._preloadImages) await this._preloadImages('game-screen', sceneId);
+            else this._showScreen('game-screen');
+            if (!this.isGalleryReplay) return false;
+            this._loadScene(sceneId);
+            return true;
+        } catch (error) {
+            this._finishGalleryReplay();
+            console.error('[Gallery replay] Unable to start scene:', sceneId, error);
+            return false;
+        }
+    }
+
+    _finishGalleryReplay() {
+        if (!this.isGalleryReplay) return;
+        const snapshot = this._galleryReplaySnapshot;
+        this._prepareNewRun();
+        this.state.deserialize(snapshot.state);
+        this.state.pauseRun();
+        this.backlog = snapshot.backlog;
+        this._archiveMode = snapshot.archiveMode;
+        this.isGalleryReplay = false;
+        this.save.readOnly = false;
+        this._galleryReplaySnapshot = null;
+        for (const [id, disabled] of snapshot.disabled) {
+            const button = document.getElementById(id);
+            if (button) button.disabled = !!disabled;
+        }
+        this.glitch?.shiftTheme?.(snapshot.state.currentTheme || snapshot.state.mode);
+        this.glitchAdvanced?.disableDay5NoiseFilter?.();
+        this.gallery.open();
     }
 
     // ===== Game Screen =====
@@ -886,7 +938,7 @@ class GameEngine {
         }
 
         // 엔딩 타이틀
-        if (!this._archiveMode) this._saveProgress();
+        if (!this._archiveMode && !this.isGalleryReplay) this._saveProgress();
         if (scene.endingTitle) {
             this._showEndingTitle(scene.endingTitle, scene.endingSubtitle);
             // 갤러리: 엔딩 달성 기록
@@ -895,7 +947,7 @@ class GameEngine {
             //   "TRUE END" → "TRUE" 로 정규화 (SaveManager.recordEnding 규약)
             //   엔딩 씬 자동저장 → 이어하기로 같은 씬에 재진입해도 playCount가 반복 증가하지 않도록
             //   런당 1회만 기록한다 (플래그는 세이브에 함께 저장됨).
-            if (this.save && !this.state.hasFlag('ending_recorded')) {
+            if (this.save && !this.isGalleryReplay && !this.state.hasFlag('ending_recorded')) {
                 const endingKey = scene.endingTitle.replace(/\s*END\s*$/i, '').trim().toUpperCase();
                 this.save.recordEnding(endingKey);
                 this.state.setFlag('ending_recorded');
@@ -912,6 +964,10 @@ class GameEngine {
 
         // CAGE END 무한 루프 진입
         if (scene.cageLoop) {
+            if (this.isGalleryReplay) {
+                this._showEndingTitle('', null);
+                return;
+            }
             this._enterCageMode();
             return;
         }
@@ -1400,6 +1456,11 @@ class GameEngine {
         if (!this.currentSceneData) return;
         if (this._endingReached) return;
         const scene = this.currentSceneData;
+
+        if (this.isGalleryReplay && /^day5_archive_cycle(?:07_75|12_76)$/.test(this.state.currentScene)) {
+            this._finishGalleryReplay();
+            return;
+        }
 
         if (scene.redirect === 'cupid-gate') {
             this._redirectToCupidGate();
@@ -2266,7 +2327,8 @@ class GameEngine {
             if (next) {
                 this._endingReached = false;
                 this._loadScene(next);
-            } else this._showScreen('title-screen');
+            } else if (this.isGalleryReplay) this._finishGalleryReplay();
+            else this._showScreen('title-screen');
         });
         overlay.appendChild(returnBtn);
 
@@ -2871,6 +2933,7 @@ class GameEngine {
      * @param {'save'|'load'} mode
      */
     _openSlotSelector(mode) {
+        if (this.isGalleryReplay) return;
         this._slotMode = mode;
         const overlay = document.getElementById('sl-overlay');
         const title = document.getElementById('sl-title');
@@ -3073,6 +3136,7 @@ class GameEngine {
     }
 
     _saveProgress() {
+        if (this.isGalleryReplay) return;
         const persisted = this.save.save();
         if (persisted) this._storageWarningShown = false;
         else if (!this._storageWarningShown) {
@@ -3120,6 +3184,10 @@ class GameEngine {
     // ===== Screen =====
 
     _showScreen(id, onShown) {
+        if (id === 'title-screen' && this.isGalleryReplay) {
+            this._finishGalleryReplay();
+            return;
+        }
         if (id === 'title-screen') this._prepareNewRun();
         document.querySelectorAll('.screen').forEach(s => {
             s.classList.remove('active');

@@ -43,7 +43,7 @@ test('request deadline covers stalled headers and stalled response bodies', asyn
     }
 });
 
-test('Nevergrad tools use Gemma 4 31B through Venice without fallback', async () => {
+test('Nevergrad tools prefer DeepInfra fp4 Turbo with Venice fp4 fallback', async () => {
   const calls = [];
   const text = await callDeepSeek('translate', {
     openRouterApiKey: 'or-test',
@@ -58,20 +58,22 @@ test('Nevergrad tools use Gemma 4 31B through Venice without fallback', async ()
   assert.equal(calls[0].url, OPENROUTER_ENDPOINT);
   assert.equal(calls[0].body.model, OPENROUTER_MODEL);
   assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
+  assert.equal(OPENROUTER_GEMMA_PROVIDER, 'deepinfra/turbo');
   assert.deepEqual(calls[0].body.response_format, { type: 'json_object' });
   assert.equal('tools' in calls[0].body, false);
   assert.deepEqual(calls[0].body.reasoning, { effort: 'none', exclude: true });
   assert.equal('thinking' in calls[0].body, false);
   assert.deepEqual(calls[0].body.provider, {
-    order: [OPENROUTER_GEMMA_PROVIDER],
-    only: [OPENROUTER_GEMMA_PROVIDER],
+    order: ['deepinfra/turbo', 'venice/fp4'],
+    only: ['deepinfra/turbo', 'venice/fp4'],
+    quantizations: ['fp4'],
     allow_fallbacks: false,
     require_parameters: true,
   });
   assert.equal(calls[0].body.max_tokens, OPENROUTER_GEMMA_MAX_TOKENS);
 });
 
-test('Nevergrad default route does not fall back to another model or provider', async () => {
+test('Nevergrad default route fails after the allowed providers are exhausted without changing models', async () => {
   const calls = [];
   await assert.rejects(callDeepSeek('review', {
     openRouterApiKey: 'or-test',
@@ -83,6 +85,9 @@ test('Nevergrad default route does not fall back to another model or provider', 
   }), /Text model routes exhausted/);
   assert.equal(calls.length, 1);
   assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
+  assert.deepEqual(calls[0].body.provider.order, ['deepinfra/turbo', 'venice/fp4']);
+  assert.deepEqual(calls[0].body.provider.only, ['deepinfra/turbo', 'venice/fp4']);
+  assert.equal(calls[0].body.provider.allow_fallbacks, false);
 });
 
 test('Nevergrad route configuration supports official DeepSeek and other OpenRouter models', async () => {
@@ -126,7 +131,9 @@ test('Nevergrad direct tools keep model-native protocols behind isolated adapter
 
   const gemmaPayload = { model: OPENROUTER_GEMMA_MODEL };
   gemma.applyPayload(gemmaPayload, { wantsJson: true });
-  assert.deepEqual(gemmaPayload.provider.only, [OPENROUTER_GEMMA_PROVIDER]);
+  assert.deepEqual(gemmaPayload.provider.order, ['deepinfra/turbo', 'venice/fp4']);
+  assert.deepEqual(gemmaPayload.provider.only, ['deepinfra/turbo', 'venice/fp4']);
+  assert.deepEqual(gemmaPayload.provider.quantizations, ['fp4']);
   assert.equal(gemmaPayload.provider.allow_fallbacks, false);
   assert.deepEqual(gemmaPayload.response_format, { type: 'json_object' });
   assert.deepEqual(gemmaPayload.reasoning, { effort: 'none', exclude: true });

@@ -5,7 +5,7 @@ const OPENROUTER_NEMOTRON_MODEL = 'nvidia/nemotron-3-ultra-550b-a55b:free';
 const OPENROUTER_DEEPSEEK_MODEL = 'deepseek/deepseek-v4-flash-0731';
 const OPENROUTER_GEMMA_MODEL = 'google/gemma-4-31b-it';
 const OPENROUTER_GEMMA_MAX_TOKENS = 8192;
-const OPENROUTER_GEMMA_PROVIDER = 'venice';
+const OPENROUTER_GEMMA_PROVIDER = 'deepinfra/turbo';
 const OPENROUTER_MODEL = OPENROUTER_GEMMA_MODEL;
 const JSON_TOOL_NAME = 'submit_json';
 

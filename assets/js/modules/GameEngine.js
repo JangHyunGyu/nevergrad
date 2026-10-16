@@ -431,6 +431,8 @@ class GameEngine {
     }
 
     _prepareNewRun() {
+        this.renderer?.cgTransition?.cancel();
+        this._waitingForCG = false;
         this._archiveMode = false;
         this._waitingForText = false;
         this._pendingDuplicateChoice = false;
@@ -490,6 +492,7 @@ class GameEngine {
     _bindGameScreen() {
         const dialogueBox = document.getElementById('dialogue-box');
         const advanceDialogue = () => {
+            if (this.renderer?.cgTransition?.active || this._waitingForCG) return;
             if (this._clickLocked) return;
             if (this.dialogue.isAdvanceCoolingDown?.()) return;
             this.audio?.playUIDialogueAdvance();
@@ -658,6 +661,8 @@ class GameEngine {
     // ===== Scene Management =====
 
     _loadScene(sceneId) {
+        this.renderer?.cgTransition?.cancel();
+        this._waitingForCG = false;
         // Retired duplicate scenes remain valid save locations, but resume the canonical scene.
         sceneId = CONFIG.SCENE_ALIASES?.[sceneId] || sceneId;
         this.dialogue.cancel?.();
@@ -730,16 +735,17 @@ class GameEngine {
         // 배경
         const handoffFade = sceneId === 'day5_lunch_pills_1' || sceneId === 'day5_lunch_pills_pink_2';
         this.renderer._crossfadeMs = handoffFade ? 1800 : 0;
+        let backgroundReady;
         if (scene.background) {
             const bgPath = CONFIG.BACKGROUNDS[scene.background] || scene.background;
-            this.renderer.setBackground(bgPath);
+            backgroundReady = this.renderer.setBackground(bgPath, { instant: scene.cgTransition === false });
             if (scene.background !== 'cg_riin_two_pills' && scene.background !== 'cg_gate_bloom') {
                 this.gallery?.unlockCGByPath?.(bgPath);
             }
         } else if (/^day5_ending_true_2[6-7]$/.test(sceneId)) {
-            this.renderer.setBackground(CONFIG.BACKGROUNDS.news_article);
+            backgroundReady = this.renderer.setBackground(CONFIG.BACKGROUNDS.news_article);
         } else if (/^day5_morning_true_([2-9]|1[0-9]|2[0-7])$/.test(sceneId)) {
-            this.renderer.setBackground(CONFIG.BACKGROUNDS.lab_documents);
+            backgroundReady = this.renderer.setBackground(CONFIG.BACKGROUNDS.lab_documents);
         }
 
         // 오버레이
@@ -976,6 +982,7 @@ class GameEngine {
             this._stopSkip();
         };
 
+        const presentDialogue = () => {
         // 선택지
         if (this._shouldAutoAdvanceSilentScene(scene, text)) {
             this._queueAutoAdvance(scene, skipSlotText ? 0 : undefined);
@@ -1006,6 +1013,17 @@ class GameEngine {
         // 일반 대사
         else {
             typeFn(name, text, scene.autoAdvance ? () => this._queueAutoAdvance(scene) : null, typeOpts);
+        }
+        };
+        if (this.renderer.cgTransition?.active) {
+            this._waitingForCG = true;
+            const scope = this.sceneLifecycle;
+            Promise.resolve(backgroundReady).then(scope.guard(() => {
+                this._waitingForCG = false;
+                presentDialogue();
+            }));
+        } else {
+            presentDialogue();
         }
     }
 
@@ -1371,6 +1389,7 @@ class GameEngine {
     }
 
     _advanceScene() {
+        if (this.renderer?.cgTransition?.active || this._waitingForCG) return;
         if (this._waitingForText || this._isGameplayPaused()) return;
         // CAGE END 모드에서는 무한 루프 텍스트 출력
         if (this._cageMode) {

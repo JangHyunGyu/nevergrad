@@ -20,6 +20,10 @@ class SceneRenderer {
         // 레거시 호환 (GlitchSystem.silenceDrop 등에서 참조)
         this.bgmAudio = null;
         this._backgroundRequestId = 0;
+        this.cgTransition = window.CGTransition ? new window.CGTransition(
+            [this.bgLayer, this.bgOverlay, this.mediaOverlay, this.charLayer],
+            document.getElementById('dialogue-box')
+        ) : null;
     }
 
     _getAssetPath(src) {
@@ -77,8 +81,9 @@ class SceneRenderer {
     _applyBackground(src) {
         if (!this.bgLayer || !src) return;
         const absoluteSrc = this._getAssetUrl(src);
-        const newBg = `url('${absoluteSrc}')`;
+        const newBg = `url("${absoluteSrc}")`;
         const currentBg = this.bgLayer.style.backgroundImage;
+        if (currentBg === newBg) return;
 
         if (!currentBg || currentBg === 'none' || currentBg === newBg) {
             this.bgLayer.style.backgroundImage = newBg;
@@ -113,16 +118,45 @@ class SceneRenderer {
         this.bgLayer.style.backgroundImage = newBg;
     }
 
-    setBackground(src) {
+    setBackground(src, { instant = false } = {}) {
         if (!this.bgLayer || !src) return;
         this.onBackgroundChange?.(src);
 
         const requestId = ++this._backgroundRequestId;
+        const key = String(src).split(/[?#]/)[0].replace(/\.(png|webp|jpe?g)$/i, '');
+        const isCG = /\/images\/cg\/|\/cg_[^/]+$/.test(key);
+        const transition = this.cgTransition?.prepare(key, isCG, instant);
         const candidates = this._getBackgroundCandidates(src);
         const applyIfCurrent = (resolvedSrc) => {
             if (requestId !== this._backgroundRequestId) return;
-            this._applyBackground(resolvedSrc);
+            this.cgTransition?.commit(key, isCG);
+            if (instant) {
+                this.bgLayer.style.backgroundImage = `url("${this._getAssetUrl(resolvedSrc)}")`;
+            } else this._applyBackground(resolvedSrc);
         };
+
+        if (transition) {
+            return (async () => {
+                try {
+                    let resolvedSrc;
+                    for (const candidate of candidates) {
+                        try { await this._loadImage(candidate); resolvedSrc = candidate; break; } catch (_) {}
+                    }
+                    if (!resolvedSrc || requestId !== this._backgroundRequestId) return;
+                    this.cgTransition.commit(key, isCG);
+                    this.bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-long');
+                    this.bgLayer.style.removeProperty('--bg-next');
+                    this.bgLayer.querySelectorAll('.ng-gsap-bg-fade').forEach(el => {
+                        window.gsap?.killTweensOf(el);
+                        el.remove();
+                    });
+                    this.bgLayer.style.backgroundImage = `url("${this._getAssetUrl(resolvedSrc)}")`;
+                    await this.cgTransition.reveal(transition);
+                } finally {
+                    if (this.cgTransition.active === transition) this.cgTransition.cancel();
+                }
+            })();
+        }
 
         if (candidates.length < 2) {
             applyIfCurrent(candidates[0]);

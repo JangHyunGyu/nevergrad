@@ -37,7 +37,7 @@ const CHARACTER_PROMPTS = {
     /** 한세아 — 반장 */
     sea: {
         surface: "전교 1등 완벽주의 반장. 주인공의 학교 적응을 적극적으로 돕는다.",
-        hidden: "감시·보고 역할. 12번 동안 같은 관계를 만들었다가 매번 잃었다. 이번에는 보내는 쪽과 붙잡는 쪽 사이에서 흔들린다.",
+        hidden: "감시·보고 역할. 열두 번의 주기 동안 같은 관계를 맺었다가 매번 잃었다. 이번에는 놓아줄지 붙잡을지 흔들린다.",
     },
     /** 최유나 — 사진부 후배 */
     yuna: {
@@ -47,7 +47,7 @@ const CHARACTER_PROMPTS = {
     /** 이설화 — 뒷자리 소녀 */
     seolhwa: {
         surface: "창백한 얼굴로 뒷자리에 앉아 있는 학생. 말을 거의 하지 않는다.",
-        hidden: "7번째 주기에서 반역하여 폐기된 실제 여학생. 현재는 주인공의 불완전한 기억이 투영한 환각. 오직 주인공에게만 보인다.",
+        hidden: "7번째 주기에 반기를 들었다가 폐기된 여학생. 지금은 주인공의 불완전한 기억이 투영된 환각이라 주인공에게만 보인다.",
     }
 };
 
@@ -82,13 +82,13 @@ const FLAG_MEMORIES = [
     // ===== Day 3 =====
     { flag: "milk_moved", char: null, text: "냉장고 우유 위치가 바뀌어 있었음." },
     { flag: "sea_not_waiting", char: "sea", text: "세아가 교문에서 안 기다리고 있었음." },
-    { flag: "found_scratched_locker", char: null, text: "사물함 이름표가 누군가에게 긁혀 지워져 있었음." },
+    { flag: "found_scratched_locker", char: null, text: "사물함 이름표가 날카롭게 긁혀 지워져 있었음." },
     { flag: "seolhwa_sighting", char: "seolhwa", text: "복도 끝에서 설화의 뒷모습을 봤음." },
-    { flag: "genre_shift", char: null, text: "Day 3 밤, 장르가 로맨스에서 스릴러로 전환됨." },
+    { flag: "genre_shift", char: null, text: "3일차 밤, 분위기가 로맨스에서 스릴러로 바뀜." },
     { flag: "stat_reveal", char: null, text: "호감도가 사실 위험도의 가중합이었음이 드러남." },
 
     // ===== Day 4~5 (증거 관련) =====
-    { flag: "found_old_building_nametags", char: null, text: "구관에서 지워진 이름표 12개의 흔적을 발견." },
+    { flag: "found_old_building_nametags", char: null, text: "구관에서 지워진 이름표 12개 흔적을 찾음." },
     { flag: "evidence_subject_ledger", char: "eunsu", text: "은수의 서류에서 피험자 관리 대장을 확인함." },
     { flag: "yuna_memory_card", char: "yuna", text: "유나가 건넨 메모리카드: 다른 이름표를 단 같은 얼굴의 전학생 사진 13장." },
     { flag: "found_seolhwa_mark", char: "seolhwa", text: "설화가 남긴 탈출 표식과 경고를 발견함." },

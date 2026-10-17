@@ -58,9 +58,10 @@ https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex, nofollow
 
 # Basic hardening for every response. frame-ancestors keeps the game embeddable
-# only by itself and Archerlab hosts (X-Frame-Options cannot express that).
+# only by itself, Archerlab hosts, and NoAdsGames (noadsgames.org)
+# (X-Frame-Options cannot express that).
 /*
-  Content-Security-Policy: frame-ancestors 'self' https://*.archerlab.dev https://archerlab.dev
+  Content-Security-Policy: frame-ancestors 'self' https://*.archerlab.dev https://archerlab.dev https://noadsgames.org
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
 
 # Art and audio are large and rarely change. Give returning players a one-day

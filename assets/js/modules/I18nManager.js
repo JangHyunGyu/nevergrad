@@ -249,6 +249,7 @@ class I18nManager {
      */
     static UI = {
         ko: {
+            invalidPlayerName: "이름에는 특수문자나 한글 낱자 자음·모음을 사용할 수 없어요.",
             saveTemporary: '이 탭에만 저장했어요. 새로고침하거나 탭을 닫으면 사라져요.',
             saveFailed: '저장하지 못했어요. 다시 시도해 주세요.',
             title: "졸업하지 못한 교실", subtitle: "5일의 기록",
@@ -283,6 +284,7 @@ class I18nManager {
             }
         },
         en: {
+            invalidPlayerName: "Symbols and standalone Korean consonants or vowels are not allowed in names.",
             saveTemporary: 'Saved only in this tab. Reloading or closing it will lose this progress.',
             saveFailed: 'Could not save. Please try again.',
             title: "The Classroom That Never Graduates", subtitle: "Five-Day Record",
@@ -317,6 +319,7 @@ class I18nManager {
             }
         },
         ja: {
+            invalidPlayerName: "名前に記号やハングルの子音・母音だけの文字は使えません。",
             saveTemporary: 'このタブ内にのみ保存しました。再読み込みやタブを閉じると進行状況が失われます。',
             saveFailed: '保存できませんでした。もう一度お試しください。',
             title: "卒業できない教室", subtitle: "5日間の記録",
@@ -351,6 +354,7 @@ class I18nManager {
             }
         },
         es: {
+            invalidPlayerName: "No se permiten símbolos ni consonantes o vocales coreanas sueltas en el nombre.",
             saveTemporary: 'Guardado solo en esta pestaña. Al recargarla o cerrarla se perderá el progreso.',
             saveFailed: 'No se pudo guardar. Inténtalo de nuevo.',
             title: "El Aula Sin Graduación", subtitle: "Registro de 5 Días",
@@ -385,6 +389,7 @@ class I18nManager {
             }
         },
         fr: {
+            invalidPlayerName: "Les symboles et les consonnes ou voyelles coréennes isolées ne sont pas autorisés dans le nom.",
             saveTemporary: 'Sauvegarde limitée à cet onglet. Le recharger ou le fermer effacera cette progression.',
             saveFailed: 'Échec de la sauvegarde. Réessayez.',
             title: "La classe sans diplôme", subtitle: "Journal de cinq jours",
@@ -419,6 +424,7 @@ class I18nManager {
             }
         },
         de: {
+            invalidPlayerName: "Symbole und einzelne koreanische Konsonanten oder Vokale sind im Namen nicht erlaubt.",
             saveTemporary: 'Nur in diesem Tab gespeichert. Beim Neuladen oder Schließen geht dieser Fortschritt verloren.',
             saveFailed: 'Speichern fehlgeschlagen. Bitte erneut versuchen.',
             title: "Das Klassenzimmer ohne Abschluss", subtitle: "Fünf-Tage-Protokoll",
@@ -453,6 +459,7 @@ class I18nManager {
             }
         },
         pt: {
+            invalidPlayerName: "Não são permitidos símbolos nem consoantes ou vogais coreanas isoladas no nome.",
             saveTemporary: 'Salvo apenas nesta aba. Recarregar ou fechar a aba apaga este progresso.',
             saveFailed: 'Não foi possível salvar. Tente novamente.',
             title: "A Sala de Aula Sem Formatura", subtitle: "Registro de 5 Dias",
@@ -487,6 +494,7 @@ class I18nManager {
             }
         },
         zh: {
+            invalidPlayerName: "名字不能包含特殊符号或单独的韩语辅音、元音。",
             saveTemporary: '仅保存在当前标签页中。刷新或关闭标签页会丢失此次进度。',
             saveFailed: '无法保存，请重试。',
             title: "无法毕业的教室", subtitle: "五天的记录",

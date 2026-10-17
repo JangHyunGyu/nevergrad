@@ -16,6 +16,6 @@ test('every supported locale uses the published search title and description', (
         assert.equal(Manager.UI[lang].metaTitle, html.match(/<title>([^<]+)<\/title>/)[1], lang);
         assert.equal(Manager.UI[lang].metaDesc, html.match(/<meta\s+name="description"\s+content="([^"]+)"/)[1], lang);
         assert.ok(Manager.UI[lang].metaTitle.includes('Nevergrad'), lang);
-        assert.match(html, /I18nManager\.js\?v=20261016-phase2/);
+        assert.match(html, /I18nManager\.js\?v=20261017-name-rules/);
     }
 });

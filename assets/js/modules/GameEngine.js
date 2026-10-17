@@ -282,11 +282,11 @@ class GameEngine {
 
         startButton?.addEventListener('click', async () => {
             this.audio?.playUIClick();
-            const name = nameInput?.value.trim();
-            if (!name) {
+            const name = nameInput?.value.normalize('NFC').trim();
+            if (!this._validPlayerName(name)) {
                 nameInput?.setAttribute('aria-invalid', 'true');
+                window.alert(this.i18n.getUI('invalidPlayerName'));
                 nameInput?.focus();
-                nameInput?.reportValidity();
                 return;
             }
             this._detachNameScreenKBAvoidance();
@@ -2916,6 +2916,12 @@ class GameEngine {
     /**
      * 플레이어 이름 입력값 살균 (XSS 방지)
      */
+    _validPlayerName(value) {
+        const name = String(value || '').normalize('NFC').trim();
+        return !/[\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\uffa0-\uffdc]/u.test(name)
+            && /^[\p{L}\p{Nd}][\p{L}\p{M}\p{Nd} ]*$/u.test(name);
+    }
+
     _sanitizeName(name) {
         // 원문 그대로 저장한다 (제어문자·연속 공백만 정리).
         // HTML 이스케이프는 innerHTML 싱크(DialogueSystem._formatText, 세이브 슬롯 글리치 UI 등)에서만 수행하고,

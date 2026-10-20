@@ -61,7 +61,7 @@ https://:version.:project.pages.dev/*
 # only by itself, Archerlab hosts, and NoAdsGames (noadsgames.org)
 # (X-Frame-Options cannot express that).
 /*
-  Content-Security-Policy: frame-ancestors 'self' https://*.archerlab.dev https://archerlab.dev https://noadsgames.org
+  Content-Security-Policy: frame-ancestors 'self' https://*.archerlab.dev https://archerlab.dev https://noadsgames.org https://*.noadsgames.org
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
 
 # Art and audio are large and rarely change. Give returning players a one-day

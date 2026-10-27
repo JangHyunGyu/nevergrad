@@ -135,10 +135,10 @@
     "text": "*Con la palma apoyada frente al espejo, intento contar hasta dos pero no puedo moverme.*"
   },
   "day4_night_mirror_8": {
-    "text": "*Oigo a alguien detrás de mí y me vuelvo. Seolhwa está ante la puerta del baño. El agua gotea de las mangas mojadas de su uniforme.*\n\nSeolhwa, mira. Otra vez no pude limpiarlo."
+    "text": "*Oigo a alguien detrás de mí y me vuelvo. Seolhwa está ante la puerta del baño. El agua gotea de las mangas mojadas de su uniforme.*\n\nSeolhwa, hoy tampoco pude limpiar el espejo."
   },
   "day4_night_mirror_9": {
-    "text": "*Seolhwa me mira sin decir nada. Tiene los ojos muy hundidos.*\n\nIba a mirar. ¿Vienes a detenerme? ¿Por qué siempre tengo que parar aquí?"
+    "text": "*Seolhwa me mira sin decir nada. Tiene los ojos muy hundidos.*\n\n¿Por qué siempre me detengo frente al espejo?"
   },
   "day4_night_mirror_10": {
     "text": "...No lo limpies."
@@ -177,13 +177,13 @@
     "text": "No estás en el espejo. Estás detrás de mí. ¿Por qué…?\n\n*Abro la boca, pero no me sale la voz.*"
   },
   "day4_night_mirror_hit1_5": {
-    "text": "*Me vuelvo y ahí está Seolhwa. De las puntas de su pelo mojado caen gotas de agua; el contorno de sus ojos también está húmedo.*\n\nAquí estás. Pero no te veía en el espejo."
+    "text": "*Me vuelvo y ahí está Seolhwa. De las puntas de su pelo mojado caen gotas de agua; el contorno de sus ojos también está húmedo.*\n\nEstás aquí, ¿por qué no te reflejas en el espejo?"
   },
   "day4_night_mirror_hit1_6": {
     "text": "*Miré el espejo de nuevo. En el espejo — solo yo. Yo y un baño vacío.*"
   },
   "day4_night_mirror_hit1_7": {
-    "text": "*Miro detrás de mí: Seolhwa está ahí. Miro en el espejo: ella no aparece. Vuelvo a mirar atrás: sigue ahí. En el espejo, sigue sin estar.*\n\nNo te muevas. Voy a mirar otra vez. No me lo estoy imaginando."
+    "text": "*Miro detrás de mí: Seolhwa está ahí. Miro en el espejo: ella no aparece. Vuelvo a mirar atrás: sigue ahí. En el espejo, sigue sin estar.*\n\nQuédate quieta un momento. No me lo estoy imaginando."
   },
   "day4_night_mirror_hit1_8": {
     "text": "*Bajo la luz fluorescente dentro del espejo, solo se extienden azulejos vacíos.*"
@@ -261,10 +261,10 @@
     "text": "*El piso del baño está frío. El sonido del segundero del reloj se superpone una y otra vez.*"
   },
   "day4_night_mirror_collapse_8": {
-    "text": "*Se sienta a mi lado, pero solo aparezco yo.*\n\nQuédate aquí. No tienes que responder. No puedo mirar esto solo."
+    "text": "*Se sienta a mi lado, pero solo aparezco yo.*\n\nNo tienes que hablar. Solo quédate a mi lado."
   },
   "day4_night_mirror_collapse_9": {
-    "text": "*Toco las baldosas del suelo del lado de Seolhwa. Están más frías que las demás.*\n\nEl suelo está más frío de este lado. Sé que estás. Pero no puedo agarrarte, ¿verdad?"
+    "text": "*Toco las baldosas del suelo del lado de Seolhwa. Están más frías que las demás.*\n\nEl piso está tan frío, pero no puedo sujetarte con las manos, ¿verdad?"
   },
   "day4_night_plan": {
     "text": "*...Solo me levanté cuando el frío de las baldosas me subió hasta la parte interna de las rodillas.*"
@@ -404,10 +404,10 @@
     "text": "Al lado de la nota, anoté el día en que dije que no por primera vez y la coloqué al lado de la fecha en que lo dije en voz alta esta vez."
   },
   "day4_night_truth_sea_wrong_1": {
-    "text": "La nota de comida llegó antes de la fecha en que recibí el historial de búsqueda. Esa explicación no podría explicar el primer capítulo."
+    "text": "La fecha de la nota sobre comida era anterior al historial de búsqueda."
   },
   "day4_night_truth_sea_wrong_2": {
-    "text": "Junto a la primera respuesta incorrecta, había rastros de 12 correcciones. Releí la misma pregunta y corregí mis notas."
+    "text": "Junto a la respuesta equivocada quedaban rastros de doce correcciones."
   },
   "day4_night_truth_riin_1": {
     "text": "El número de registros de medicación disminuyó a partir del séptimo lote. Hubo la misma firma en cada espacio donde se cambió el aforo."
@@ -441,7 +441,7 @@
     "text": "La nota decía: Daño observado. La primera letra del nombre borrado permaneció debajo."
   },
   "day4_night_truth_riin_right_3": {
-    "text": "Junto a la firma de Riin, se escribió la fecha Seolhwa. No utilicé ninguna palabra de indulgencia."
+    "text": "Junto a la firma de Riin, anoté solo la fecha de Seolhwa."
   },
   "day4_night_truth_riin_wrong_1": {
     "text": "Se anotó el número de ampollas nuevas que llegaron el mismo día. La explicación de que había escasez de medicamentos no era correcta."
@@ -476,7 +476,7 @@
     "text": "Cerré el documento y anoté lo que dijo el profesor. Significaba quedarme en mi clase hasta el final."
   },
   "day4_night_truth_eunsu_right_3": {
-    "text": "No me obligué a escribir diferentes significados en la misma frase. Se dejó un espacio para realizar preguntas directamente al docente."
+    "text": "Solo dejé un espacio para lo que le preguntaría directamente a la profesora."
   },
   "day4_night_truth_eunsu_wrong_1": {
     "text": "Si no conociera el contenido, no podría explicar la fecha de entrada revisada. La letra debajo de la firma también era la del profesor."
@@ -491,7 +491,7 @@
     "text": "Cuando las fechas de los tres registros se unieron en una sola línea, quedó claro quién había ocultado lo mismo y quién lo había modificado ligeramente."
   },
   "day4_night_truth_complete_2": {
-    "text": "Las preguntas a formular mañana no se redujeron a una sola. Para cada persona, se dobló una hoja de papel diferente y se colocó por separado."
+    "text": "Separé por persona las preguntas de mañana, doblé cada hoja y las guardé."
   },
   "day4_night_truth_complete_3": {
     "text": "Mientras escribía la última fecha con mi mano izquierda, Seolhwa miró el dorso de mi mano y asintió en silencio."

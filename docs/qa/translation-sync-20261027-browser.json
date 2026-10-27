@@ -1,0 +1,54 @@
+{
+  "sourceCommit": "4a5ca6b5e3b333085beb035489fadbd1cdecd501",
+  "viewports": [
+    [
+      1440,
+      900
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "languages": 8,
+  "views": 16,
+  "loadedAndReloadedNodesPerView": 201,
+  "renderedScenesPerView": 5,
+  "exactTitleComparisons": 12,
+  "roundingOnly": [
+    {
+      "lang": "ja",
+      "width": 390,
+      "errors": [],
+      "titleChangedChannels": 32,
+      "maxChannelDelta": 2,
+      "nodes": 201
+    },
+    {
+      "lang": "fr",
+      "width": 390,
+      "errors": [],
+      "titleChangedChannels": 32,
+      "maxChannelDelta": 2,
+      "nodes": 201
+    },
+    {
+      "lang": "de",
+      "width": 390,
+      "errors": [],
+      "titleChangedChannels": 32,
+      "maxChannelDelta": 2,
+      "nodes": 201
+    },
+    {
+      "lang": "pt",
+      "width": 390,
+      "errors": [],
+      "titleChangedChannels": 32,
+      "maxChannelDelta": 2,
+      "nodes": 201
+    }
+  ],
+  "pageErrors": [],
+  "visualConclusion": "No visible design change. Four mobile title captures differ only in 32 color channels by at most 2/255 at the existing top-button shadow edges; 12 captures are byte-identical at the pixel level."
+}

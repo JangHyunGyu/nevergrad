@@ -1069,19 +1069,19 @@ Object.assign(SCENARIO[5], {
 
     // ── 선택 1: "같이 나가자." ──
     "day5_lunch_seolhwa_c1_1": {
-        characters: { left: "yuna_weak", center: "seolhwa_normal" },
+        characters: { left: "yuna_weak", center: "seolhwa_sad" },
         charOpacities: { center: 0.9 },
         unskippable: true,
         next: "day5_lunch_seolhwa_c1_2"
     },
     "day5_lunch_seolhwa_c1_2": {
-        characters: { left: "yuna_weak", center: "seolhwa_normal" },
+        characters: { left: "yuna_weak", center: "seolhwa_sad" },
         charOpacities: { center: 0.9 },
         unskippable: true,
         next: "day5_lunch_seolhwa_c1_3"
     },
     "day5_lunch_seolhwa_c1_3": {
-        characters: { left: "yuna_weak", center: "seolhwa_normal" },
+        characters: { left: "yuna_weak", center: "seolhwa_sad" },
         charOpacities: { center: 0.9 },
         unskippable: true,
         next: "day5_lunch_seolhwa_guide_1"

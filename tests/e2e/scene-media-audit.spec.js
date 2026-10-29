@@ -4,6 +4,8 @@ const report=require('../../docs/qa/scene-media-audit-2026-10-08.json');
 const routing=require('../../docs/qa/day5-routing-2026-10-15.json');
 const expansion=require('../../docs/qa/expansion-20261016.json');
 const phase2=require('../../docs/qa/phase2-fixed-copy-20261016.json');
+const expressionReview=require('../../docs/qa/expression-matching-20261029.json');
+const expressionFields=Object.fromEntries(expressionReview.groups.flatMap(group=>group.changes.map(change=>[change.id,change.after])));
 const phase2Scenes=Object.assign({},...phase2.chapters.map(c=>c.scenes));
 const phase2Hooks=Object.fromEntries(phase2.chapters.flatMap(c=>c.hooks.map(h=>[h.id,{next:h.after}])));
 
@@ -21,7 +23,7 @@ test('all reviewed runtime scenes retain their audited media contracts and valid
     const expectedIds=report.ledger.map(r=>r.id).filter(id=>!routing.retiredSceneAliases[id]).concat(routing.addedScenes,expansion.addedScenes,Object.keys(phase2Scenes));
     expect(actual.map(r=>r.id).sort()).toEqual(expectedIds.sort());
     for(const {id,scene}of actual){
-        const fields={...(report.expectedCorrections[id]?.fields||{}),...(routing.sceneContracts[id]||{}),...(expansion.sceneContracts[id]||{}),...(phase2Scenes[id]||{}),...(phase2Hooks[id]||{})};
+        const fields={...(report.expectedCorrections[id]?.fields||{}),...(routing.sceneContracts[id]||{}),...(expansion.sceneContracts[id]||{}),...(phase2Scenes[id]||{}),...(phase2Hooks[id]||{}),...(expressionFields[id]||{})};
         for(const[field,value]of Object.entries(fields))expect(scene[field],`${id}.${field}`).toEqual(value);
     }
     const assets=await page.evaluate(()=>Object.values(CONFIG.BACKGROUNDS).concat(Object.values(CONFIG.EXPRESSIONS).flatMap(Object.values),Object.values(CONFIG.SUBJECT_FACE_IMAGES)).filter(Boolean));

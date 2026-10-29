@@ -327,42 +327,42 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_8"
     },
     "day5_after_confront_8": {
-        character: "eunsu_gentle",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day5_after_confront_9"
     },
     "day5_after_confront_9": {
-        character: "eunsu_gentle",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day5_after_confront_10"
     },
     "day5_after_confront_10": {
-        character: "eunsu_gentle",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day5_after_confront_11"
     },
     "day5_after_confront_11": {
-        character: "eunsu_gentle",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day5_after_confront_12"
     },
     "day5_after_confront_12": {
-        character: "eunsu_gentle",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day5_after_confront_13"
     },
     "day5_after_confront_13": {
-        character: "eunsu_gentle",
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_after_confront_14"
     },
     "day5_after_confront_14": {
-        character: "eunsu_gentle",
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_after_confront_observe"
     },
     "day5_after_confront_15": {
-        character: "eunsu_gentle",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day5_after_confront_16"
     },
@@ -629,22 +629,22 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_resist_3"
     },
     "day5_after_resist_3": {
-        character: "eunsu_warm",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day5_after_resist_4"
     },
     "day5_after_resist_4": {
-        character: "eunsu_warm",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day5_after_resist_5"
     },
     "day5_after_resist_5": {
-        character: "eunsu_warm",
+        character: "eunsu_serious",
         unskippable: true,
         next: "day5_after_resist_6"
     },
     "day5_after_resist_6": {
-        characters: { center: "eunsu_warm", right: "seolhwa_fading" },
+        characters: { center: "eunsu_serious", right: "seolhwa_fading" },
         character: null,
         unskippable: true,
         next: "day5_after_resist_7"
@@ -836,7 +836,7 @@ Object.assign(SCENARIO[5], {
     "day5_after_confront_observe": {
         "characters": {
             "left": "yuna_weak",
-            "center": "eunsu_gentle"
+            "center": "eunsu_serious"
         },
         "unskippable": true,
         "choices": [
@@ -868,6 +868,6 @@ Object.assign(SCENARIO[5], {
                 }
             }
         ],
-        "character": "eunsu_gentle"
+        "character": "eunsu_serious"
     }
 });

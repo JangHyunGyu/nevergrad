@@ -106,11 +106,11 @@ Object.assign(SCENARIO[3], {
 
     // 마셨을 경우
     "day3_after_riin_drink": {
-        character: "riin_smile",
+        character: "riin_strained_smile",
         next: "day3_after_riin_drink_2"
     },
     "day3_after_riin_drink_2": {
-        character: "riin_smile",
+        character: "riin_strained_smile",
         glitch: { screenShake: true, shakeDuration: 500 },
         vibrate: "needle_touch",
         next: "day3_after_riin_drink_3"
@@ -120,7 +120,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_riin_drink_4"
     },
     "day3_after_riin_drink_4": {
-        character: "riin_smile",
+        character: "riin_strained_smile",
         next: "day3_after_riin_drink_5"
     },
     "day3_after_riin_drink_5": {
@@ -531,32 +531,32 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_yuna_4"
     },
     "day3_after_yuna_4": {
-        character: "yuna_normal",
+        character: "yuna_serious",
         next: "day3_after_yuna_5",
         setFlags: ["yuna_sd_card_copy"]
     },
     "day3_after_yuna_5": {
-        character: "yuna_normal",
+        character: "yuna_serious",
         next: "day3_after_yuna_6"
     },
     "day3_after_yuna_6": {
-        character: "yuna_normal",
+        character: "yuna_serious",
         next: "day3_after_yuna_6a"
     },
     "day3_after_yuna_6a": {
-        character: "yuna_normal",
+        character: "yuna_serious",
         next: "day3_after_yuna_7"
     },
     "day3_after_yuna_7": {
-        character: "yuna_normal",
+        character: "yuna_serious",
         next: "day3_after_yuna_8"
     },
     "day3_after_yuna_8": {
-        character: "yuna_normal",
+        character: "yuna_serious",
         next: "day3_after_yuna_9"
     },
     "day3_after_yuna_9": {
-        character: "yuna_normal",
+        character: "yuna_serious",
         next: "day3_after_yuna_9a"
     },
     "day3_after_yuna_9a": {
@@ -658,23 +658,23 @@ Object.assign(SCENARIO[3], {
         "next": "day3_after_riin_choice"
     },
     "day3_after_riin_closeness_low_1": {
-        "character": "riin_pain",
+        "character": "riin_neutral",
         "next": "day3_after_riin_closeness_low_2"
     },
     "day3_after_riin_closeness_low_2": {
-        "character": "riin_pain",
+        "character": "riin_neutral",
         "next": "day3_after_riin_closeness_low_3"
     },
     "day3_after_riin_closeness_low_3": {
-        "character": "riin_pain",
+        "character": "riin_neutral",
         "next": "day3_after_riin_closeness_low_4"
     },
     "day3_after_riin_closeness_low_4": {
-        "character": "riin_pain",
+        "character": "riin_neutral",
         "next": "day3_after_riin_closeness_low_5"
     },
     "day3_after_riin_closeness_low_5": {
-        "character": "riin_pain",
+        "character": "riin_neutral",
         "next": "day3_after_riin_choice"
     },
     "day3_after_sea_closeness": {
@@ -757,23 +757,23 @@ Object.assign(SCENARIO[3], {
         "next": "day3_after_sea_choice"
     },
     "day3_after_sea_closeness_low_1": {
-        "character": "sea_broken_smile",
+        "character": "sea_serious",
         "next": "day3_after_sea_closeness_low_2"
     },
     "day3_after_sea_closeness_low_2": {
-        "character": "sea_broken_smile",
+        "character": "sea_serious",
         "next": "day3_after_sea_closeness_low_3"
     },
     "day3_after_sea_closeness_low_3": {
-        "character": "sea_broken_smile",
+        "character": "sea_serious",
         "next": "day3_after_sea_closeness_low_4"
     },
     "day3_after_sea_closeness_low_4": {
-        "character": "sea_broken_smile",
+        "character": "sea_serious",
         "next": "day3_after_sea_closeness_low_5"
     },
     "day3_after_sea_closeness_low_5": {
-        "character": "sea_broken_smile",
+        "character": "sea_serious",
         "next": "day3_after_sea_choice"
     },
     "day3_after_eunsu_closeness": {
@@ -832,15 +832,15 @@ Object.assign(SCENARIO[3], {
         "next": "day3_after_eunsu_closeness_high_10"
     },
     "day3_after_eunsu_closeness_high_10": {
-        "character": "eunsu_gentle",
+        "character": "eunsu_serious",
         "next": "day3_after_eunsu_closeness_high_11"
     },
     "day3_after_eunsu_closeness_high_11": {
-        "character": "eunsu_gentle",
+        "character": "eunsu_serious",
         "next": "day3_after_eunsu_closeness_high_12"
     },
     "day3_after_eunsu_closeness_high_12": {
-        "character": "eunsu_gentle",
+        "character": "eunsu_serious",
         "next": "day3_after_eunsu_closeness_high_13"
     },
     "day3_after_eunsu_closeness_high_13": {
@@ -856,23 +856,23 @@ Object.assign(SCENARIO[3], {
         "next": "day3_after_eunsu_5"
     },
     "day3_after_eunsu_closeness_low_1": {
-        "character": "eunsu_gentle",
+        "character": "eunsu_normal",
         "next": "day3_after_eunsu_closeness_low_2"
     },
     "day3_after_eunsu_closeness_low_2": {
-        "character": "eunsu_gentle",
+        "character": "eunsu_normal",
         "next": "day3_after_eunsu_closeness_low_3"
     },
     "day3_after_eunsu_closeness_low_3": {
-        "character": "eunsu_gentle",
+        "character": "eunsu_normal",
         "next": "day3_after_eunsu_closeness_low_4"
     },
     "day3_after_eunsu_closeness_low_4": {
-        "character": "eunsu_gentle",
+        "character": "eunsu_normal",
         "next": "day3_after_eunsu_closeness_low_5"
     },
     "day3_after_eunsu_closeness_low_5": {
-        "character": "eunsu_gentle",
+        "character": "eunsu_normal",
         "next": "day3_after_eunsu_5"
     },
     "day3_history_callback_15": {

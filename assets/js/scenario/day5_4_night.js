@@ -791,15 +791,15 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_3"
     },
     "day5_ending_resist_3": {
-        character: "eunsu_normal",
+        character: "eunsu_serious",
         next: "day5_ending_resist_4"
     },
     "day5_ending_resist_4": {
-        character: "eunsu_normal",
+        character: "eunsu_serious",
         next: "day5_ending_resist_5"
     },
     "day5_ending_resist_5": {
-        character: "eunsu_normal",
+        character: "eunsu_serious",
         next: "day5_ending_resist_6"
     },
     "day5_ending_resist_6": {
@@ -823,7 +823,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_10"
     },
     "day5_ending_resist_10": {
-        character: "eunsu_gentle",
+        character: "eunsu_shaking",
         unskippable: true,
         next: "day5_ending_resist_11"
     },
@@ -1908,17 +1908,17 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_escape_epilogue_1": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_weak",
         "next": "day5_ending_escape_epilogue_2"
     },
     "day5_ending_escape_epilogue_2": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_weak",
         "next": "day5_ending_escape_epilogue_3"
     },
     "day5_ending_escape_epilogue_3": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_weak",
         "next": "day5_ending_escape_epilogue_4"
     },
     "day5_ending_escape_epilogue_4": {
@@ -1948,22 +1948,22 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_escape_epilogue_9": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_scared",
         "next": "day5_ending_escape_epilogue_10"
     },
     "day5_ending_escape_epilogue_10": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_scared",
         "next": "day5_ending_escape_epilogue_11"
     },
     "day5_ending_escape_epilogue_11": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_scared",
         "next": "day5_ending_escape_epilogue_12"
     },
     "day5_ending_escape_epilogue_12": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_scared",
         "next": "day5_ending_escape_epilogue_13"
     },
     "day5_ending_escape_epilogue_13": {
@@ -2049,27 +2049,27 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_escape_epilogue_26": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_smile",
         "next": "day5_ending_escape_epilogue_27"
     },
     "day5_ending_escape_epilogue_27": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_smile",
         "next": "day5_ending_escape_epilogue_28"
     },
     "day5_ending_escape_epilogue_28": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_smile",
         "next": "day5_ending_escape_epilogue_29"
     },
     "day5_ending_escape_epilogue_29": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_smile",
         "next": "day5_ending_escape_epilogue_30"
     },
     "day5_ending_escape_epilogue_30": {
         "background": "new_place",
-        "character": "yuna_normal",
+        "character": "yuna_smile",
         "next": "day5_ending_escape_title"
     },
     "day5_ending_escape_riin_after_1": {
@@ -3489,67 +3489,67 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle12_15": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_16"
     },
     "day5_archive_cycle12_16": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_17"
     },
     "day5_archive_cycle12_17": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_18"
     },
     "day5_archive_cycle12_18": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_19"
     },
     "day5_archive_cycle12_19": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_20"
     },
     "day5_archive_cycle12_20": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_21"
     },
     "day5_archive_cycle12_21": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_22"
     },
     "day5_archive_cycle12_22": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_23"
     },
     "day5_archive_cycle12_23": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_24"
     },
     "day5_archive_cycle12_24": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_25"
     },
     "day5_archive_cycle12_25": {
         "background": "photo_club_room",
-        "character": "yuna_normal",
+        "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_26"
     },
@@ -3603,19 +3603,19 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle12_34": {
         "background": "nurse_office",
-        "character": "riin_pain",
+        "character": "riin_startled",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_35"
     },
     "day5_archive_cycle12_35": {
         "background": "nurse_office",
-        "character": "riin_pain",
+        "character": "riin_startled",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_36"
     },
     "day5_archive_cycle12_36": {
         "background": "nurse_office",
-        "character": "riin_pain",
+        "character": "riin_startled",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_37"
     },

@@ -1,0 +1,1487 @@
+{
+  "date": "2026-10-29",
+  "scope": "Existing expression assignments only; dialogue, branching, assets, costumes, opacity and UI layout preserved.",
+  "reviewedSceneCount": 3338,
+  "groups": [
+    {
+      "reason": "Yuna explains photographic evidence deliberately before her voice breaks; panic is reserved for the interruption.",
+      "changes": [
+        {
+          "id": "day3_lunch_rooftop_4",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_5",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_6",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_7",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_8",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_9",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_10",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_11",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_12",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_13",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_14",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_15",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_16",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_17",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_18",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Yuna pleads to be believed, with red eyes and a bitten lip, before she finally cries.",
+      "changes": [
+        {
+          "id": "day3_lunch_rooftop_19",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_desperate"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_20",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_desperate"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_21",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_desperate"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_22",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_desperate"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_23",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_desperate"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_24",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_desperate"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_25",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_desperate"
+          }
+        },
+        {
+          "id": "day3_lunch_rooftop_26",
+          "file": "day3_2_lunch.js",
+          "before": {
+            "character": "yuna_scared"
+          },
+          "after": {
+            "character": "yuna_desperate"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Riin conceals her guilt after the drink causes dizziness; retain the strained smile through the excuse.",
+      "changes": [
+        {
+          "id": "day3_after_riin_drink",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "riin_smile"
+          },
+          "after": {
+            "character": "riin_strained_smile"
+          }
+        },
+        {
+          "id": "day3_after_riin_drink_2",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "riin_smile"
+          },
+          "after": {
+            "character": "riin_strained_smile"
+          }
+        },
+        {
+          "id": "day3_after_riin_drink_4",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "riin_smile"
+          },
+          "after": {
+            "character": "riin_strained_smile"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "The low-affinity consultation is formally distant, unlike the visibly guilty high-affinity visit.",
+      "changes": [
+        {
+          "id": "day3_after_riin_closeness_low_1",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "riin_pain"
+          },
+          "after": {
+            "character": "riin_neutral"
+          }
+        },
+        {
+          "id": "day3_after_riin_closeness_low_2",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "riin_pain"
+          },
+          "after": {
+            "character": "riin_neutral"
+          }
+        },
+        {
+          "id": "day3_after_riin_closeness_low_3",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "riin_pain"
+          },
+          "after": {
+            "character": "riin_neutral"
+          }
+        },
+        {
+          "id": "day3_after_riin_closeness_low_4",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "riin_pain"
+          },
+          "after": {
+            "character": "riin_neutral"
+          }
+        },
+        {
+          "id": "day3_after_riin_closeness_low_5",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "riin_pain"
+          },
+          "after": {
+            "character": "riin_neutral"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "The low-affinity Sea branch is curt and watchful; no smile is described.",
+      "changes": [
+        {
+          "id": "day3_after_sea_closeness_low_1",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "sea_broken_smile"
+          },
+          "after": {
+            "character": "sea_serious"
+          }
+        },
+        {
+          "id": "day3_after_sea_closeness_low_2",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "sea_broken_smile"
+          },
+          "after": {
+            "character": "sea_serious"
+          }
+        },
+        {
+          "id": "day3_after_sea_closeness_low_3",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "sea_broken_smile"
+          },
+          "after": {
+            "character": "sea_serious"
+          }
+        },
+        {
+          "id": "day3_after_sea_closeness_low_4",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "sea_broken_smile"
+          },
+          "after": {
+            "character": "sea_serious"
+          }
+        },
+        {
+          "id": "day3_after_sea_closeness_low_5",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "sea_broken_smile"
+          },
+          "after": {
+            "character": "sea_serious"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Eunsu declines a seat and conducts a brief formal interview in the low-affinity branch.",
+      "changes": [
+        {
+          "id": "day3_after_eunsu_closeness_low_1",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_normal"
+          }
+        },
+        {
+          "id": "day3_after_eunsu_closeness_low_2",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_normal"
+          }
+        },
+        {
+          "id": "day3_after_eunsu_closeness_low_3",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_normal"
+          }
+        },
+        {
+          "id": "day3_after_eunsu_closeness_low_4",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_normal"
+          }
+        },
+        {
+          "id": "day3_after_eunsu_closeness_low_5",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_normal"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Eunsu pauses at a question about moving sick students, then resumes her reassuring facade.",
+      "changes": [
+        {
+          "id": "day3_after_eunsu_closeness_high_10",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day3_after_eunsu_closeness_high_11",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day3_after_eunsu_closeness_high_12",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Yuna entrusts the evidence and warns about destroyed records; use the dedicated serious expression.",
+      "changes": [
+        {
+          "id": "day3_after_yuna_4",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_after_yuna_5",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_after_yuna_6",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_after_yuna_7",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_after_yuna_8",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_after_yuna_9",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day3_after_yuna_6a",
+          "file": "day3_3_afterschool.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Riin turns from withholding information to promising protection and admitting she cannot continue.",
+      "changes": [
+        {
+          "id": "day4_after_riin_22",
+          "file": "day4_3_afterschool.js",
+          "before": {
+            "character": "riin_cold"
+          },
+          "after": {
+            "character": "riin_serious"
+          }
+        },
+        {
+          "id": "day4_after_riin_23",
+          "file": "day4_3_afterschool.js",
+          "before": {
+            "character": "riin_cold"
+          },
+          "after": {
+            "character": "riin_serious"
+          }
+        },
+        {
+          "id": "day4_after_riin_24",
+          "file": "day4_3_afterschool.js",
+          "before": {
+            "character": "riin_cold"
+          },
+          "after": {
+            "character": "riin_serious"
+          }
+        },
+        {
+          "id": "day4_after_riin_25",
+          "file": "day4_3_afterschool.js",
+          "before": {
+            "character": "riin_cold"
+          },
+          "after": {
+            "character": "riin_serious"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Riin ends the confession exhausted and guilty rather than cold.",
+      "changes": [
+        {
+          "id": "day4_after_riin_26",
+          "file": "day4_3_afterschool.js",
+          "before": {
+            "character": "riin_cold"
+          },
+          "after": {
+            "character": "riin_pain"
+          }
+        },
+        {
+          "id": "day4_after_riin_27",
+          "file": "day4_3_afterschool.js",
+          "before": {
+            "character": "riin_cold"
+          },
+          "after": {
+            "character": "riin_pain"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Eunsu recounts confinement and repeated resets during a confrontation, without returning to her friendly mask.",
+      "changes": [
+        {
+          "id": "day5_after_confront_8",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_after_confront_9",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_after_confront_10",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_after_confront_11",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_after_confront_12",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Eunsu falters when describing failed reports, then approaches with the syringe.",
+      "changes": [
+        {
+          "id": "day5_after_confront_13",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_shaking"
+          }
+        },
+        {
+          "id": "day5_after_confront_14",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_shaking"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "The armed approach and observation beat remain tense.",
+      "changes": [
+        {
+          "id": "day5_after_confront_15",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_after_confront_observe",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_gentle",
+            "characters": {
+              "left": "yuna_weak",
+              "center": "eunsu_gentle"
+            }
+          },
+          "after": {
+            "character": "eunsu_serious",
+            "characters": {
+              "left": "yuna_weak",
+              "center": "eunsu_serious"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Eunsu accepts responsibility before breaking down; align the scene and ending replay.",
+      "changes": [
+        {
+          "id": "day5_after_resist_3",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_warm"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_after_resist_4",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_warm"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_after_resist_5",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "character": "eunsu_warm"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_ending_resist_3",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "eunsu_normal"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_ending_resist_4",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "eunsu_normal"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        },
+        {
+          "id": "day5_ending_resist_5",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "eunsu_normal"
+          },
+          "after": {
+            "character": "eunsu_serious"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Keep Eunsu serious in the two-character response, matching the preceding admission.",
+      "changes": [
+        {
+          "id": "day5_after_resist_6",
+          "file": "day5_3_afterschool.js",
+          "before": {
+            "characters": {
+              "center": "eunsu_warm",
+              "right": "seolhwa_fading"
+            }
+          },
+          "after": {
+            "characters": {
+              "center": "eunsu_serious",
+              "right": "seolhwa_fading"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Recognizing Seolhwa should retain the shaken reaction from the previous beat.",
+      "changes": [
+        {
+          "id": "day5_ending_resist_10",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "eunsu_gentle"
+          },
+          "after": {
+            "character": "eunsu_shaking"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Yuna recognizes the same wrist in old photographs and asks about the identity.",
+      "changes": [
+        {
+          "id": "day5_archive_cycle12_15",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_scared"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_16",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_scared"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_17",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_scared"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "After the initial shock, Yuna locks the room and methodically preserves evidence.",
+      "changes": [
+        {
+          "id": "day5_archive_cycle12_18",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_19",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_20",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_21",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_22",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_23",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_serious"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "The compulsory infirmary summons interrupts the investigation.",
+      "changes": [
+        {
+          "id": "day5_archive_cycle12_24",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_scared"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_25",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_scared"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Riin visibly freezes when asked about memory loss.",
+      "changes": [
+        {
+          "id": "day5_archive_cycle12_34",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "riin_pain"
+          },
+          "after": {
+            "character": "riin_startled"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_35",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "riin_pain"
+          },
+          "after": {
+            "character": "riin_startled"
+          }
+        },
+        {
+          "id": "day5_archive_cycle12_36",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "riin_pain"
+          },
+          "after": {
+            "character": "riin_startled"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Yuna remains exhausted on the first bus after escaping.",
+      "changes": [
+        {
+          "id": "day5_ending_escape_epilogue_1",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_weak"
+          }
+        },
+        {
+          "id": "day5_ending_escape_epilogue_2",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_weak"
+          }
+        },
+        {
+          "id": "day5_ending_escape_epilogue_3",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_weak"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Invalid identity documents and the hurried departure make Yuna wary again.",
+      "changes": [
+        {
+          "id": "day5_ending_escape_epilogue_9",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_scared"
+          }
+        },
+        {
+          "id": "day5_ending_escape_epilogue_10",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_scared"
+          }
+        },
+        {
+          "id": "day5_ending_escape_epilogue_11",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_scared"
+          }
+        },
+        {
+          "id": "day5_ending_escape_epilogue_12",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_scared"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "The text explicitly says Yuna smiles for the first time; carry that relief into choosing names.",
+      "changes": [
+        {
+          "id": "day5_ending_escape_epilogue_26",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_smile"
+          }
+        },
+        {
+          "id": "day5_ending_escape_epilogue_27",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_smile"
+          }
+        },
+        {
+          "id": "day5_ending_escape_epilogue_28",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_smile"
+          }
+        },
+        {
+          "id": "day5_ending_escape_epilogue_29",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_smile"
+          }
+        },
+        {
+          "id": "day5_ending_escape_epilogue_30",
+          "file": "day5_4_night.js",
+          "before": {
+            "character": "yuna_normal"
+          },
+          "after": {
+            "character": "yuna_smile"
+          }
+        }
+      ]
+    },
+    {
+      "reason": "Seolhwa admits she cannot leave; maintain her sadness across the reply.",
+      "changes": [
+        {
+          "id": "day5_lunch_seolhwa_c1_1",
+          "file": "day5_2_lunch.js",
+          "before": {
+            "characters": {
+              "left": "yuna_weak",
+              "center": "seolhwa_normal"
+            }
+          },
+          "after": {
+            "characters": {
+              "left": "yuna_weak",
+              "center": "seolhwa_sad"
+            }
+          }
+        },
+        {
+          "id": "day5_lunch_seolhwa_c1_2",
+          "file": "day5_2_lunch.js",
+          "before": {
+            "characters": {
+              "left": "yuna_weak",
+              "center": "seolhwa_normal"
+            }
+          },
+          "after": {
+            "characters": {
+              "left": "yuna_weak",
+              "center": "seolhwa_sad"
+            }
+          }
+        },
+        {
+          "id": "day5_lunch_seolhwa_c1_3",
+          "file": "day5_2_lunch.js",
+          "before": {
+            "characters": {
+              "left": "yuna_weak",
+              "center": "seolhwa_normal"
+            }
+          },
+          "after": {
+            "characters": {
+              "left": "yuna_weak",
+              "center": "seolhwa_sad"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "baselineCommit": "5d48151c5b1359d29d72a0eff287bb9a79c7c6df",
+    "scenarioComparison": {
+      "scenes": 3338,
+      "changedScenes": 103,
+      "unchangedOutsideReviewedExpressionFields": true
+    },
+    "content": "No dialogue, narration, translations, choices, flags, stats, assets or opacity changes; SCENARIO.md regenerated from source.",
+    "staticBuild": "Static site; npm run check passed, including 123 unit tests and scenario/content/syntax/metadata validation.",
+    "visual": {
+      "viewports": [
+        [
+          1280,
+          800
+        ],
+        [
+          375,
+          812
+        ]
+      ],
+      "comparisons": 50,
+      "changedPixelsOutsideCharacterLayer": 0,
+      "homeChangedPixels": 0,
+      "representativeScreenshots": 12,
+      "method": "Compare prior committed scenario scripts with the updated scripts after image loading; mask the character layer only for story UI comparisons. Home comparisons are unmasked.",
+      "results": [
+        {
+          "width": 1280,
+          "name": "home",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-0",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-1",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-2",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-3",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-4",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-5",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-6",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-7",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-8",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-9",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-10",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-11",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-12",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-13",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-14",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-15",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-16",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-17",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-18",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-19",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-20",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-21",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-22",
+          "changedPixels": 0
+        },
+        {
+          "width": 1280,
+          "name": "ui-23",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "home",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-0",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-1",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-2",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-3",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-4",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-5",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-6",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-7",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-8",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-9",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-10",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-11",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-12",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-13",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-14",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-15",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-16",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-17",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-18",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-19",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-20",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-21",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-22",
+          "changedPixels": 0
+        },
+        {
+          "width": 375,
+          "name": "ui-23",
+          "changedPixels": 0
+        }
+      ]
+    },
+    "evidenceDirectory": "tmp/expression-review (local, gitignored)",
+    "browser": {
+      "passedTestCases": 19,
+      "failedTestCases": 0,
+      "languageViewportCombinations": 16,
+      "languages": [
+        "ko",
+        "en",
+        "ja",
+        "es",
+        "fr",
+        "de",
+        "pt",
+        "zh"
+      ],
+      "allSceneMediaAudit": 3338,
+      "runnerNote": "All 19 cases reported ok with the list reporter. On this Windows host the parent Playwright process stayed open after all workers exited; only that parent runner was stopped. No clean aggregate runner exit is claimed.",
+      "command": "npx playwright test tests/e2e/expression-matching.spec.js tests/e2e/scene-media-audit.spec.js --workers=4 --fully-parallel --reporter=list"
+    }
+  }
+}

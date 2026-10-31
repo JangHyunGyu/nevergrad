@@ -658,8 +658,6 @@ Object.assign(SCENARIO[3], {
             "appKillDuration": 1200
         },
         "unskippable": true,
-        "changeDay": 4,
-        "changeSlot": "morning",
         "next": "day3_night_pressure_branch"
     }
 });
@@ -719,6 +717,8 @@ Object.assign(SCENARIO[3], {
     "day3_night_pressure_seolhwa_6": {
         "background": "room_night",
         "character": "seolhwa_warning",
+        "changeDay": 4,
+        "changeSlot": "morning",
         "next": "day4_morning_start"
     },
     "day3_night_pressure_sea_1": {
@@ -795,6 +795,8 @@ Object.assign(SCENARIO[3], {
     "day3_night_pressure_sea_12": {
         "background": "room_night",
         "character": null,
+        "changeDay": 4,
+        "changeSlot": "morning",
         "next": "day4_morning_start"
     },
     "day3_night_pressure_eunsu_1": {
@@ -868,6 +870,8 @@ Object.assign(SCENARIO[3], {
     "day3_night_pressure_eunsu_12": {
         "background": "room_night",
         "character": null,
+        "changeDay": 4,
+        "changeSlot": "morning",
         "next": "day4_morning_start"
     },
     "day3_night_pressure_riin_1": {
@@ -944,6 +948,8 @@ Object.assign(SCENARIO[3], {
     "day3_night_pressure_riin_12": {
         "background": "room_night",
         "character": null,
+        "changeDay": 4,
+        "changeSlot": "morning",
         "next": "day4_morning_start"
     },
     "day3_night_pressure_yuna_1": {
@@ -990,6 +996,8 @@ Object.assign(SCENARIO[3], {
     "day3_night_pressure_yuna_8": {
         "background": "room_night",
         "character": null,
+        "changeDay": 4,
+        "changeSlot": "morning",
         "next": "day4_morning_start"
     },
     "day3_history_callback_18": {

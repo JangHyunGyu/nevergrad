@@ -18,7 +18,7 @@ function runtime() {
     const state = new context.State();
     const engine = Object.create(context.Engine.prototype);
     engine.state = state;
-    return { state, engine, scenes: Object.assign({}, ...Object.values(context.SCENARIO)) };
+    return { state, engine, scenario: context.SCENARIO, scenes: Object.assign({}, ...Object.values(context.SCENARIO)) };
 }
 
 test('night pressure follows the actual affinity leader with stable ties', () => {
@@ -40,6 +40,52 @@ test('night pressure follows the actual affinity leader with stable ties', () =>
         assert.equal(engine._resolveAffinityBranch(gate), `day3_after_${id}_closeness_low_1`);
         state.stats[id].affinity = 25;
         assert.equal(engine._resolveAffinityBranch(gate), `day3_after_${id}_closeness_high_1`);
+    }
+});
+
+test('Day 3 night completes every pressure route before advancing the day and slot', () => {
+    for (const leader of ['sea', 'eunsu', 'riin', 'yuna', 'seolhwa']) {
+        for (const callbacks of [false, true]) {
+            const { state, engine, scenario, scenes } = runtime();
+            state.currentDay = 3;
+            state.currentSlot = 'night';
+            for (const stats of Object.values(state.stats)) stats.affinity = -20;
+            state.stats[leader].affinity = 35;
+            if (callbacks) {
+                for (const scene of Object.values(scenes)) {
+                    for (const branch of scene.branches || []) {
+                        if (branch.next?.startsWith('day3_history_callback_')) {
+                            for (const flag of [].concat(branch.condition || [])) state.setFlag(flag);
+                        }
+                    }
+                }
+            }
+            const days = [], shifts = [], visited = [];
+            engine._isGameplayPaused = () => false;
+            engine.glitch = {
+                initTabGimmick: () => shifts.push(state.currentDay),
+                initConsoleEasterEgg: day => days.push(day)
+            };
+            // Match _loadScene's day-scoped lookup; a flattened table hides this regression.
+            engine._loadScene = id => {
+                const scene = scenario[state.currentDay]?.[id];
+                assert.ok(scene, `Missing scene: day${state.currentDay}.${id}`);
+                assert.equal(state.currentSlot, state.currentDay === 3 ? 'night' : 'morning', id);
+                state.currentScene = id;
+                engine.currentSceneData = scene;
+                visited.push(id);
+            };
+            engine._loadScene('day3_night_end');
+            for (let step = 0; state.currentDay === 3 && step < 40; step++) engine._advanceScene();
+            assert.equal(state.currentScene, 'day4_morning_start');
+            assert.deepEqual(days, [4]);
+            assert.deepEqual(shifts, [3]);
+            assert.ok(visited.includes(`day3_night_pressure_${leader}_1`));
+            assert.equal(visited.filter(id => /pressure_\w+_1$/.test(id)).length, 1);
+            if (callbacks && leader !== 'seolhwa') {
+                assert.ok(visited.some(id => id.startsWith('day3_history_callback_')));
+            }
+        }
     }
 });
 

@@ -61,7 +61,7 @@ test('Nevergrad tools prefer DeepInfra fp4 Turbo with Venice fp4 fallback', asyn
   assert.equal(OPENROUTER_GEMMA_PROVIDER, 'deepinfra/turbo');
   assert.deepEqual(calls[0].body.response_format, { type: 'json_object' });
   assert.equal('tools' in calls[0].body, false);
-  assert.deepEqual(calls[0].body.reasoning, { effort: 'none', exclude: true });
+  assert.deepEqual(calls[0].body.reasoning, { effort: 'none', enabled: false });
   assert.equal('thinking' in calls[0].body, false);
   assert.deepEqual(calls[0].body.provider, {
     order: ['deepinfra/turbo', 'venice/fp4'],
@@ -125,7 +125,7 @@ test('Nevergrad direct tools keep model-native protocols behind isolated adapter
   const qwenPayload = {};
   qwen.applyPayload(qwenPayload, { wantsJson: true });
   assert.deepEqual(qwenPayload.response_format, { type: 'json_object' });
-  assert.deepEqual(qwenPayload.reasoning, { effort: 'none', exclude: true });
+  assert.deepEqual(qwenPayload.reasoning, { effort: 'none', enabled: false });
   assert.deepEqual(qwenPayload.provider.only, ['alibaba']);
   assert(!('tools' in qwenPayload));
 
@@ -136,7 +136,7 @@ test('Nevergrad direct tools keep model-native protocols behind isolated adapter
   assert.deepEqual(gemmaPayload.provider.quantizations, ['fp4']);
   assert.equal(gemmaPayload.provider.allow_fallbacks, false);
   assert.deepEqual(gemmaPayload.response_format, { type: 'json_object' });
-  assert.deepEqual(gemmaPayload.reasoning, { effort: 'none', exclude: true });
+  assert.deepEqual(gemmaPayload.reasoning, { effort: 'none', enabled: false });
 
   const nemotronPayload = {};
   nemotron.applyPayload(nemotronPayload, { wantsJson: true });

@@ -3,8 +3,8 @@
 module.exports = Object.freeze({
   id: 'openrouter-deepseek',
   applyPayload(payload, { wantsJson }) {
-    payload.reasoning = { effort: 'none', exclude: true };
-    payload.include_reasoning = false;
+    payload.reasoning = { effort: 'none', enabled: false };
+    delete payload.include_reasoning;
     payload.thinking = { type: 'disabled' };
     payload.provider = {
       order: ['deepinfra'],

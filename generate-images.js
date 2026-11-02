@@ -186,6 +186,7 @@ async function generateImage(prompt, negative, aspectRatio, imageSize, refImageP
         contents: [{ parts: parts }],
         generationConfig: {
             responseModalities: ['IMAGE'],
+            thinkingConfig: { thinkingLevel: 'minimal' },
             imageConfig: {
                 aspectRatio: aspectRatio,
                 imageSize: imageSize

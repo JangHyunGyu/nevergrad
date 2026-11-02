@@ -5,8 +5,8 @@ const { JSON_TOOL_NAME, buildJsonTool } = require('./constants.cjs');
 module.exports = Object.freeze({
   id: 'openrouter-nemotron',
   applyPayload(payload, { wantsJson }) {
-    payload.reasoning = { effort: 'none', exclude: true };
-    payload.include_reasoning = false;
+    payload.reasoning = { effort: 'none', enabled: false };
+    delete payload.include_reasoning;
     payload.provider = { allow_fallbacks: true };
     if (wantsJson) {
       payload.tools = [buildJsonTool()];

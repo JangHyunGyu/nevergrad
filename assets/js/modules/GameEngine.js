@@ -51,7 +51,13 @@ class SettingsManager {
 
 class GameEngine {
     constructor(lifecycle = null) {
-        this.lifecycle = lifecycle || new LifecycleManager('game');
+        const LifecycleCtor = globalThis.LifecycleManager;
+        if (!lifecycle && typeof LifecycleCtor !== 'function') {
+            throw new ReferenceError(
+                'LifecycleManager is not defined on globalThis; ensure LifecycleManager.js loaded before GameEngine boot'
+            );
+        }
+        this.lifecycle = lifecycle || new LifecycleCtor('game');
         this.runLifecycle = this.lifecycle.createScope('run');
         this.sceneLifecycle = this.runLifecycle.createScope('scene');
         this.state = new StateManager();

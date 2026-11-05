@@ -414,6 +414,41 @@ function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
     });
 }
 
+
+/**
+ * Ensure LifecycleManager is available before GameEngine boot.
+ * Transient script-load failures (network blips) otherwise throw
+ * "LifecycleManager is not defined" from the constructor.
+ */
+function ensureLifecycleManager() {
+    if (typeof globalThis.LifecycleManager === 'function') {
+        return Promise.resolve();
+    }
+
+    const loadOnce = () => new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        const ts = Date.now();
+        script.src = getNevergradAssetPath(
+            `assets/js/modules/LifecycleManager.js?v=20261105-lifecycle-ensure&_ts=${ts}`
+        );
+        script.setAttribute('data-nevergrad-recoverable-dependency', 'LifecycleManager');
+        script.onload = () => {
+            if (typeof globalThis.LifecycleManager === 'function') resolve();
+            else reject(new Error('LifecycleManager script loaded but globalThis.LifecycleManager is not a function'));
+        };
+        script.onerror = () => reject(new Error('Failed to load LifecycleManager.js'));
+        (document.head || document.documentElement).appendChild(script);
+    });
+
+    return loadOnce()
+        .catch(() => loadOnce())
+        .then(() => {
+            if (typeof globalThis.LifecycleManager !== 'function') {
+                throw new Error('LifecycleManager is not available after ensureLifecycleManager retries');
+            }
+        });
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     // 타이틀 배경 이미지 로드 체크 — 이미지 없으면 CSS 그라디언트 폴백
     const titleBgLayer = document.querySelector('.title-bg-layer');
@@ -438,6 +473,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             .catch(() => { el.style.display = 'none'; });
     });
 
+    await ensureLifecycleManager();
     const game = new GameEngine();
 
     // 크로스오버 감지 시스템 초기화 (Cupid 플레이 기록 감지)

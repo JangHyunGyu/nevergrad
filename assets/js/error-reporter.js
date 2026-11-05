@@ -365,6 +365,35 @@
         }
     }
 
+
+    function tryRecoverLifecycleManagerScript(resource, target) {
+        if (!target || typeof target.getAttribute !== 'function'
+            || target.getAttribute('data-nevergrad-recoverable-dependency') !== 'LifecycleManager'
+            || typeof target.setAttribute !== 'function') return false;
+        if (navigator.onLine === false || document.visibilityState === 'hidden') return false;
+
+        var attempt = Number(target.getAttribute('data-nevergrad-lifecycle-retry')) || 0;
+        if (attempt >= 2) return false;
+        target.setAttribute('data-nevergrad-lifecycle-retry', String(attempt + 1));
+
+        try {
+            var base = resource || 'assets/js/modules/LifecycleManager.js';
+            var retryUrl = new URL(base, window.location.href);
+            retryUrl.searchParams.set('_resource_retry', String(Date.now()));
+            window.setTimeout(function () {
+                if (typeof globalThis.LifecycleManager === 'function') return;
+                var script = document.createElement('script');
+                script.src = retryUrl.href;
+                script.setAttribute('data-nevergrad-recoverable-dependency', 'LifecycleManager');
+                script.setAttribute('data-nevergrad-lifecycle-retry', String(attempt + 1));
+                (document.head || document.documentElement).appendChild(script);
+            }, attempt === 0 ? 500 : 1000);
+            return true;
+        } catch (_) {
+            return false;
+        }
+    }
+
     function enqueue(payload) {
         var id = randomId();
         payload.extra = payload.extra || {};
@@ -468,6 +497,7 @@
             var tagName = String(target.tagName || '').toUpperCase();
             if (tagName !== 'SCRIPT' && tagName !== 'LINK') return;
             var resource = target.src || target.href || '';
+            if (tagName === 'SCRIPT' && tryRecoverLifecycleManagerScript(resource, target)) return;
             if (isIgnorableResourceFailure(tagName, resource, target)) return;
             if (tagName === 'LINK' && tryRecoverStylesheetResource(resource, target)) return;
             report(

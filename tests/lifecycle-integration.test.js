@@ -35,8 +35,20 @@ test('all seven localized shells load LifecycleManager before GameEngine', () =>
         const stateIndex = source.indexOf('StateManager.js');
         const engineIndex = source.indexOf('GameEngine.js');
         assert.match(source, /data-nevergrad-recoverable-dependency="LifecycleManager"/);
-        assert.match(source, /LifecycleManager\.js\?v=20260912-lifecycle-retry/);
+        assert.match(source, /LifecycleManager\.js\?v=20261105-lifecycle-ensure/);
         assert.ok(lifecycleIndex >= 0 && recoveryIndex > lifecycleIndex, html);
         assert.ok(stateIndex > recoveryIndex && engineIndex > stateIndex, html);
     }
+});
+
+test('GameEngine resolves LifecycleManager via globalThis and app awaits ensureLifecycleManager', () => {
+    const engine = read('assets/js/modules/GameEngine.js');
+    const app = read('assets/js/app.js');
+    assert.match(engine, /const LifecycleCtor = globalThis\.LifecycleManager/);
+    assert.match(engine, /typeof LifecycleCtor !== 'function'/);
+    assert.match(engine, /new LifecycleCtor\('game'\)/);
+    assert.doesNotMatch(engine, /new LifecycleManager\('game'\)/);
+    assert.match(app, /function ensureLifecycleManager\(/);
+    assert.match(app, /await ensureLifecycleManager\(\)/);
+    assert.match(app, /LifecycleManager\.js\?v=20261105-lifecycle-ensure/);
 });

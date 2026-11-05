@@ -60,3 +60,87 @@ test('same-origin stylesheets ignore teardown noise and retry visible failures t
     assert.equal(sandbox.tryRecoverStylesheetResource(target.href, target), false);
     assert.equal(sandbox.tryRecoverStylesheetResource('https://cdn.example.com/dialogue.css', target), false);
 });
+
+test('LifecycleManager SCRIPT ResourceErrors retry-inject twice then stay ignorable', () => {
+    const start = reporter.indexOf('function isSameOriginGameStylesheet(');
+    const end = reporter.indexOf('function enqueue(', start);
+    assert.ok(start >= 0 && end > start);
+
+    const timers = [];
+    const appended = [];
+    const sandbox = {
+        URL,
+        Date: { now: () => 1234567890 },
+        navigator: { onLine: true },
+        document: {
+            visibilityState: 'visible',
+            createElement(tag) {
+                const el = {
+                    tagName: String(tag).toUpperCase(),
+                    attrs: new Map(),
+                    setAttribute(name, value) { this.attrs.set(name, value); },
+                    getAttribute(name) { return this.attrs.get(name) || null; }
+                };
+                Object.defineProperty(el, 'src', {
+                    get() { return this._src || ''; },
+                    set(v) { this._src = v; }
+                });
+                return el;
+            },
+            head: {
+                appendChild(node) { appended.push(node); }
+            },
+            documentElement: {
+                appendChild(node) { appended.push(node); }
+            }
+        },
+        window: {
+            location: {
+                href: 'https://nevergrad.archerlab.dev/',
+                origin: 'https://nevergrad.archerlab.dev'
+            },
+            setTimeout(callback, delay) { timers.push({ callback, delay }); }
+        },
+        globalThis: {}
+    };
+    sandbox.globalThis = sandbox;
+    vm.runInNewContext(`
+        ${reporter.slice(start, end)}
+        this.isIgnorableResourceFailure = isIgnorableResourceFailure;
+        this.tryRecoverLifecycleManagerScript = tryRecoverLifecycleManagerScript;
+    `, sandbox);
+
+    const attributes = new Map([['data-nevergrad-recoverable-dependency', 'LifecycleManager']]);
+    const target = {
+        tagName: 'SCRIPT',
+        src: 'https://nevergrad.archerlab.dev/assets/js/modules/LifecycleManager.js?v=20261105-lifecycle-ensure',
+        isConnected: true,
+        getAttribute(name) { return attributes.get(name) || null; },
+        setAttribute(name, value) { attributes.set(name, value); }
+    };
+
+    assert.equal(
+        sandbox.isIgnorableResourceFailure('SCRIPT', target.src, target),
+        true
+    );
+
+    assert.equal(sandbox.tryRecoverLifecycleManagerScript(target.src, target), true);
+    assert.equal(attributes.get('data-nevergrad-lifecycle-retry'), '1');
+    assert.equal(timers[0].delay, 500);
+    timers.shift().callback();
+    assert.equal(appended.length, 1);
+    assert.match(appended[0].src, /_resource_retry=1234567890/);
+    assert.equal(appended[0].getAttribute('data-nevergrad-recoverable-dependency'), 'LifecycleManager');
+
+    assert.equal(sandbox.tryRecoverLifecycleManagerScript(target.src, target), true);
+    assert.equal(attributes.get('data-nevergrad-lifecycle-retry'), '2');
+    assert.equal(timers[0].delay, 1000);
+    timers.shift().callback();
+    assert.equal(appended.length, 2);
+
+    assert.equal(sandbox.tryRecoverLifecycleManagerScript(target.src, target), false);
+    assert.equal(
+        sandbox.isIgnorableResourceFailure('SCRIPT', target.src, target),
+        true
+    );
+});

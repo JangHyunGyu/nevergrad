@@ -715,8 +715,8 @@ class DeviceGimmickSystem {
      */
     isTimeQuery(text) {
         if (!text) return false;
-        // 6개 언어 공통 패턴: 한국어/일본어 문자열 직접, 나머지는 영/유럽어 키워드
-        const rx = /시간|몇\s*시|지금\s*몇|何時|いま何|\btime\b|\bclock\b|\bhour\b|\bhora\b|\bheure\b|\bquelle heure\b|\buhrzeit\b|\bwie spät\b|\buhr\b/i;
+        // 8개 언어 시각 질문 감지용 정규식: 한·일·중 문자열 직접 매칭 및 영·유럽어 시각 키워드 매칭
+        const rx = /시간|몇\s*시|지금\s*몇|何時|いま何|几点|时间|時間|\btime\b|\bclock\b|\bhour\b|\bhora\b|\bhoras\b|\bque horas\b|\bheure\b|\bquelle heure\b|\buhrzeit\b|\bwie spät\b|\buhr\b/i;
         return rx.test(text);
     }
 

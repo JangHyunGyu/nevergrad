@@ -104,6 +104,18 @@
             let isDrawing = false;
             const stopDrawing = () => { isDrawing = false; };
 
+            const progressTexts = {
+                ko: { wiping: (p) => `닦는 중… ${p}%`, almost: (p) => `거의 다 닦였다… ${p}%`, more: '조금만 더…' },
+                en: { wiping: (p) => `Wiping… ${p}%`, almost: (p) => `Almost clear… ${p}%`, more: 'Just a bit more…' },
+                ja: { wiping: (p) => `拭いています… ${p}%`, almost: (p) => `もう少しでクリア… ${p}%`, more: 'あと少し…' },
+                es: { wiping: (p) => `Limpiando… ${p}%`, almost: (p) => `Casi despejado… ${p}%`, more: 'Un poco más…' },
+                fr: { wiping: (p) => `Essuyage… ${p}%`, almost: (p) => `Presque net… ${p}%`, more: 'Encore un peu…' },
+                de: { wiping: (p) => `Wischen… ${p}%`, almost: (p) => `Fast frei… ${p}%`, more: 'Noch ein bisschen…' },
+                pt: { wiping: (p) => `Limpando… ${p}%`, almost: (p) => `Quase limpo… ${p}%`, more: 'Só mais um pouco…' },
+                zh: { wiping: (p) => `擦拭中… ${p}%`, almost: (p) => `快擦干净了… ${p}%`, more: '再擦一下…' }
+            };
+            const pText = progressTexts[lang] || progressTexts.en;
+
             const updateHintProgress = (clearRatio, spanRatio) => {
                 const score = Math.min(1, Math.max(clearRatio / completeThreshold, spanRatio / requiredSpan));
                 const bucket = Math.floor(score * 10);
@@ -113,17 +125,11 @@
                 if (pct < 8) {
                     hint.textContent = baseHint;
                 } else if (pct < 55) {
-                    hint.textContent = lang === 'ko'
-                        ? `닦는 중… ${pct}%`
-                        : `Wiping… ${pct}%`;
+                    hint.textContent = pText.wiping(pct);
                 } else if (pct < 90) {
-                    hint.textContent = lang === 'ko'
-                        ? `거의 다 닦였다… ${pct}%`
-                        : `Almost clear… ${pct}%`;
+                    hint.textContent = pText.almost(pct);
                 } else {
-                    hint.textContent = lang === 'ko'
-                        ? '조금만 더…'
-                        : 'Just a bit more…';
+                    hint.textContent = pText.more;
                 }
             };
 

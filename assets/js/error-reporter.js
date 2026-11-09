@@ -203,7 +203,7 @@
 
     if (window.__nevergradErrorReporterInstalled) return;
 
-    var VERSION = '20261005-env-guard';
+    var VERSION = '20261105-lifecycle-ensure';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'nevergrad-error-queue-v2';
     var SESSION_KEY = 'nevergrad-error-session-v2';

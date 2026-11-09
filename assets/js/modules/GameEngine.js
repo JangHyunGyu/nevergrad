@@ -2405,13 +2405,25 @@ class GameEngine {
             'Kang Hajun', 'Kim Sion', 'Park Doyun', 'Seo Ian',
             'Yoon Taeo', 'Lee Hyunwoo', 'Jung Minjae', 'Choi Dohyun'
         ];
+        const jaPool = [
+            'カン・ハジュン', 'キム・シオン', 'パク・ドユン', 'ソ・イアン',
+            'ユン・テオ', 'イ・ヒョヌ', 'チョン・ミンジェ', 'チェ・ドヒョン'
+        ];
+        const zhPool = [
+            '姜河俊', '金时温', '朴道允', '徐伊安',
+            '尹泰晤', '李贤宇', '郑敏宰', '崔道贤'
+        ];
         const seedSource = this.state.playerName || 'NEVERGRAD';
         const seed = [...seedSource].reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
         const picked = this.state.getGeneratedName('14th_name', () => koPool[seed % koPool.length]);
         this.state.getGeneratedName('new_name', () => picked);
-        if (this.i18n?.currentLang === 'ko') return picked;
+        const lang = this.i18n?.currentLang || 'ko';
+        if (lang === 'ko') return picked;
         const idx = koPool.indexOf(picked);
-        return idx >= 0 ? enPool[idx] : picked;
+        if (idx < 0) return picked;
+        if (lang === 'ja') return jaPool[idx];
+        if (lang === 'zh') return zhPool[idx];
+        return enPool[idx];
     }
 
     _buildObserverVars() {

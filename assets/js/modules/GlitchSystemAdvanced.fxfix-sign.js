@@ -105,6 +105,18 @@
             return { x: clientX - rect.left, y: clientY - rect.top };
         };
 
+        const progressTexts = {
+            ko: { signing: (p) => `서명 중… ${p}%`, almost: '거의 끝…', ok: '확인' },
+            en: { signing: (p) => `Signing… ${p}%`, almost: 'Almost done…', ok: 'OK' },
+            ja: { signing: (p) => `署名中… ${p}%`, almost: 'もう少し…', ok: '確認' },
+            es: { signing: (p) => `Firmando… ${p}%`, almost: 'Casi listo…', ok: 'Listo' },
+            fr: { signing: (p) => `Signature… ${p}%`, almost: 'Presque fini…', ok: 'OK' },
+            de: { signing: (p) => `Unterschreiben… ${p}%`, almost: 'Fast fertig…', ok: 'OK' },
+            pt: { signing: (p) => `Assinando… ${p}%`, almost: 'Quase pronto…', ok: 'OK' },
+            zh: { signing: (p) => `签名中… ${p}%`, almost: '快完成了…', ok: '确认' }
+        };
+        const pText = progressTexts[lang] || progressTexts.en;
+
         const updateProgress = () => {
             const ratio = Math.min(1, drawnPixels / Math.max(1, threshold));
             progress.style.setProperty('--sig-progress', String(ratio));
@@ -114,11 +126,9 @@
             if (ratio < 0.12) {
                 hint.textContent = baseHint;
             } else if (ratio < 0.85) {
-                hint.textContent = lang === 'ko'
-                    ? `서명 중… ${Math.round(ratio * 100)}%`
-                    : `Signing… ${Math.round(ratio * 100)}%`;
+                hint.textContent = pText.signing(Math.round(ratio * 100));
             } else {
-                hint.textContent = lang === 'ko' ? '거의 끝…' : 'Almost done…';
+                hint.textContent = pText.almost;
             }
         };
 
@@ -138,7 +148,7 @@
             updateProgress();
             if (drawnPixels > threshold && !completed) {
                 completed = true;
-                hint.textContent = lang === 'ko' ? '확인' : 'OK';
+                hint.textContent = pText.ok;
                 setTimeout(() => {
                     container.classList.add('signature-pad-done');
                     setTimeout(() => {

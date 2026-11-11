@@ -5,20 +5,20 @@
     "day1_lunch_choice": {
         "text": "*Hora del almuerzo. ¿Adónde debería ir?*",
         "choices": [
-            "Sea dijo que comiéramos juntos, así que me quedo en el salón",
-            "Ir a ver la biblioteca, que parece tranquila",
-            "Me duele la cabeza. Ir a la enfermería",
-            "Comer a solas en la azotea"
+            "Quedarme en el aula y hablar con Sea",
+            "Dar una vuelta por la biblioteca",
+            "Siento la cabeza algo pesada. ¿Voy a la enfermería?",
+            "Subir solo a la azotea"
         ]
     },
     "day1_lunch_sea_1": {
         "text": "*Sea junta dos escritorios y saca una lonchera de su bolso.*"
     },
     "day1_lunch_sea_2": {
-        "text": "¿Dos pisos? Eso no te lo comes sola."
+        "text": "Vaya, una fiambrera de dos pisos."
     },
     "day1_lunch_sea_3": {
-        "text": "¿Todo esto es tuyo? Parece bastante comida."
+        "text": "¿Trajiste todo esto para comértelo tú sola? Parece bastante cantidad."
     },
     "day1_lunch_sea_4": {
         "text": "¿Y bien? Suficientemente bueno para vender, ¿verdad?"
@@ -30,16 +30,16 @@
         "text": "Espera, ¿tú preparaste todo esto? ¿Puedo probar?"
     },
     "day1_lunch_sea_7": {
-        "text": "Prueba. Si solo comes pan, en la tarde te va a dar hambre enseguida."
+        "text": "Preparé de sobra para comer juntos. Si solo comes pan de la cafetería, a media tarde ya tendrás hambre otra vez."
     },
     "day1_lunch_sea_8": {
-        "text": "*Sea toma un trozo de tortilla enrollada con sus palillos y me lo ofrece.*\n\nAh, puedo cogerlo yo."
+        "text": "*Sea separa con cuidado unos palillos de madera nuevos y me los tiende.*\n\nGracias. Entonces probaré solo un poco."
     },
     "day1_lunch_sea_9": {
-        "text": "Aquí, prueba la tortilla primero. La hice un poco dulce."
+        "text": "Vamos, prueba primero el rollito de huevo. Me quedó dulcecito y muy rico."
     },
     "day1_lunch_sea_10": {
-        "text": "*El omelet enrollado todavía está tibio. El dulzor se siente primero.*\n\nSí que la has hecho dulce. Y sigue calentita."
+        "text": "*Al darle un bocado, un calor esponjoso se extiende entre sus capas suaves.*\n\nOye, está buenísimo. Y en su punto justo de sabor."
     },
     "day1_lunch_sea_11": {
         "text": "¿Esto es mejor que lo comprado en la tienda?"
@@ -48,10 +48,10 @@
         "text": "¿Sí?"
     },
     "day1_lunch_sea_13": {
-        "text": "*Sea se quedó quieta con los palillos en la mano y, un momento después, sonrió.*\n\n¿Por qué te ríes? Lo digo de verdad. Está muy rico. Come tú también."
+        "text": "*Sea se queda quieta un instante con los palillos en alto y sonríe un segundo después.*\n\n¿De qué te ríes? No lo digo por quedar bien, de verdad está muy rico."
     },
     "day1_lunch_sea_14": {
-        "text": "*Durante una breve pausa en la conversación, Sea coloca los separadores de la fiambrera con la punta de los palillos.*\n\nCome más. Todavía queda."
+        "text": "*Con la punta de los palillos, Sea acerca un poco más la fiambrera hacia mi lado.*\n\nCome más, sin prisa. Todavía quedan salchichas y bolas de arroz."
     },
     "day1_lunch_sea_15": {
         "text": "¿Siempre traes una lonchera así, Sea?"
@@ -60,7 +60,7 @@
         "text": "Sí. La cafetería de la escuela está bien y todo, pero lo casero sabe mejor."
     },
     "day1_lunch_sea_17": {
-        "text": "Es un poco mucho para comer sola."
+        "text": "Hay que ser muy constante para preparar algo así cada mañana."
     },
     "day1_lunch_sea_18": {
         "text": "*Los palillos de Sea se detienen sobre un compartimento vacío de la fiambrera.*\n\nYa casi no queda nada. Creo que comí demasiado."
@@ -72,10 +72,10 @@
         "text": "Hoy preparé bastante. Me alegra que lo estés comiendo."
     },
     "day1_lunch_sea_21": {
-        "text": "*La lonchera está casi vacía. Queda algo de tiempo.*\n\nEstuvo muy rico el almuerzo. Gracias."
+        "text": "*Cuando recogemos la fiambrera y la apartamos a un lado, aún queda un rato de descanso.*\n\nGracias a ti hoy he comido de maravilla. Te lo agradezco."
     },
     "day1_lunch_sea_22": {
-        "text": "Ah, claro, escucha esto."
+        "text": "Ah, mira, escucha esto un momento mientras bajamos la comida."
     },
     "day1_lunch_sea_23": {
         "text": "*Sea me da uno de sus auriculares. Una melodía de guitarra suave.*"
@@ -90,13 +90,13 @@
         "text": "*Compartimos los auriculares.*\n\nMe gusta la guitarra. Podría escucharla un buen rato."
     },
     "day1_lunch_sea_27": {
-        "text": "No está mal. Entiendo por qué la escuchas tanto."
+        "text": "Por mucho ruido que haya en el aula, toda mi atención se va a este oído."
     },
     "day1_lunch_sea_28": {
         "text": "Normalmente no hablo de estas cosas."
     },
     "day1_lunch_sea_29": {
-        "text": "*Hablamos de música y de YouTube. El cable de los auriculares queda suelto sobre el centro del escritorio y el almuerzo está a punto de terminar.*\n\nYa casi termina el almuerzo. Gracias por prestarme el audífono."
+        "text": "*Entre charlas sobre música y los vídeos que solemos ver, ya casi es la hora de que suene el timbre preventivo.*\n\nYa casi se acaba el almuerzo. Gracias por prestarme el auricular."
     },
     "day1_lunch_yuna_1": {
         "text": "*Entré a la biblioteca. Está casi vacía ya que es la hora del almuerzo.*"
@@ -108,31 +108,31 @@
         "text": "*Una chica con una cámara se queda inmóvil con una expresión de sobresalto. Pequeña de complexión, cámara grande.*"
     },
     "day1_lunch_yuna_4": {
-        "text": "¿Me acabas de tomar una foto? Oí el disparador en cuanto abrí la puerta."
+        "text": "Anda, ¿eres la chica de primero del club de fotografía que estaba antes en el patio? Oí el disparador nada más abrir la puerta."
     },
     "day1_lunch_yuna_5": {
-        "text": "Oh, no. Estoy en el club de fotografía. Estaba tomando fotografías de la luz junto a la ventana cuando entraste..."
+        "text": "¡Ah, sí! Estaba fotografiando la luz que entraba por la ventana y justo en ese instante entraste."
     },
     "day1_lunch_yuna_6": {
         "text": "Lo siento. La borro ahora mismo."
     },
     "day1_lunch_yuna_7": {
-        "text": "No, está bien. Así que eres del club de fotografía."
+        "text": "Perdona si te asusté. Como antes estábamos lejos, ni siquiera pude saludarte bien."
     },
     "day1_lunch_yuna_8": {
-        "text": "Sí. Soy Choi Yuna, de primer año. Usted es el estudiante transferido, ¿verdad?"
+        "text": "Para nada. Soy Choi Yuna, de primero. Eres el alumno de segundo que se trasladó hoy, ¿verdad?"
     },
     "day1_lunch_yuna_9": {
-        "text": "Sí. Soy {name}. Mucho gusto."
+        "text": "Sí, soy {name}. Encantado de conocerte."
     },
     "day1_lunch_yuna_10": {
-        "text": "*Yuna rodea la cámara con ambas manos y baja la cabeza.*\n\nSe nota que cuidas mucho esa cámara. No la voy a tocar sin permiso."
+        "text": "*Yuna reacomoda la correa de la cámara entre sus manos y hace una leve inclinación de cabeza.*\n\nSe ve bastante pesada esa cámara. La cuidas mucho, ¿no?"
     },
     "day1_lunch_yuna_11": {
-        "text": "¿Vienes a la biblioteca a menudo? Yo estoy aquí todos los días."
+        "text": "Sí, la llevo conmigo todos los días. ¿A ti también te gustan los sitios tranquilos? ¿Quieres ver la foto que acaba de salir?"
     },
     "day1_lunch_yuna_12": {
-        "text": "*Veo fotos del colegio, de los cerezos en flor y de un gato junto al gimnasio.*\n\nAquí hay bastante que fotografiar, ¿eh?"
+        "text": "*Miramos juntos la pantalla que Yuna me acerca. Tras la foto de la ventana siguen imágenes de cerezos y de un gato junto al gimnasio.*\n\nDentro de la escuela hay bastantes rincones que merece la pena fotografiar."
     },
     "day1_lunch_yuna_13": {
         "text": "*Desplazándome, encontré una serie del mismo cerezo fotografiado en diferentes momentos del día. Mañana, mediodía, atardecer, noche.*"
@@ -153,7 +153,7 @@
         "text": "*Corte bob corto morado oscuro, bata blanca, gafas de montura fina. Está recostada en su silla, leyendo algo.*"
     },
     "day1_lunch_riin_3": {
-        "text": "Oh, ¿la enfermería en tu primer día? ¿Te sientes mal?"
+        "text": "Vaya, ¿en la enfermería desde el primer día? ¿Te duele algo?"
     },
     "day1_lunch_riin_4": {
         "text": "Me duele un poco la cabeza. ¿Puedo descansar aquí un rato?"
@@ -162,7 +162,7 @@
         "text": "¿Sí? Toma asiento."
     },
     "day1_lunch_riin_6": {
-        "text": "*La señorita Riin me toca la frente. Su mano está fresca.*\n\nTiene la mano fresquita."
+        "text": "*En el pecho de su bata blanca lleva una placa con el nombre «Kang Riin». La enfermera se acerca y apoya suavemente la mano en mi frente.*\n\nTiene la mano muy fresca."
     },
     "day1_lunch_riin_7": {
         "text": "No tienes fiebre. Hay muchos así el primer día."
@@ -171,10 +171,10 @@
         "text": "*Abre un cajón y saca unas medicinas, sonriendo.*"
     },
     "day1_lunch_riin_9": {
-        "text": "¿Has comido? No deberías tomar medicinas con el estómago vacío."
+        "text": "Todavía no has almorzado, ¿verdad? No debes tomar medicinas con el estómago vacío."
     },
     "day1_lunch_riin_10": {
-        "text": "*Me da una barrita energética.*\n\nCome esto primero. La medicina después."
+        "text": "*Saca una barrita energética del cajón y me la entrega.*\n\nCómete esto primero. Luego te doy la medicina."
     },
     "day1_lunch_riin_11": {
         "text": "Si tienes sueño, siéntete libre de descansar aquí un rato."
@@ -198,7 +198,7 @@
         "text": "Esta sala es para descansar. ¿Te sientes un poco mejor de la cabeza?"
     },
     "day1_lunch_riin_18": {
-        "text": "Sí, un poco mejor. Creo que me quedé dormido un rato."
+        "text": "Sí, me siento mucho más despejado. Menos mal que cerré los ojos un rato."
     },
     "day1_lunch_alone_1": {
         "text": "*Subí las escaleras y abrí la puerta de la azotea. El viento me golpea de lleno.*"
@@ -231,10 +231,10 @@
         "text": "*Intercambiamos las salchichas. Sea deslizó una servilleta bajo mi tapa. Solo al limpiarme la salsa noté que no tenía ninguna.*"
     },
     "day1_lunch_riin_rest_1": {
-        "text": "Sí. Pero no veo el reloj. ¿Y si me vuelvo a dormir?"
+        "text": "Tumbado en la cama no alcanzo a ver el reloj. ¿Y si me quedo dormido de verdad?"
     },
     "day1_lunch_riin_rest_2": {
-        "text": "Yo te despierto. Si tienes que vigilar el reloj dormido, no descansas."
+        "text": "Yo te despierto antes de que suene el timbre. Si haces que alguien pendiente del sueño vigile el reloj, eso no es descansar."
     },
     "day1_lunch_riin_rest_3": {
         "text": "*Acercó el agua a la cabecera y corrió un poco más la cortina de la ventana. El sol dejó de darme en los párpados.*"

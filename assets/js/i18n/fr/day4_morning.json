@@ -9,7 +9,7 @@
     "text": "*J'ai suivi les lettres du bout des doigts. Des marques d'ongles. Profondes. Trop profondes pour avoir été faites en une seule fois.*"
   },
   "day4_morning_start_4": {
-    "text": "*...La peau sous mes ongles est arrachée. Ce n'était pas comme ça avant que je m'endorme hier soir.*"
+    "text": "*La peau sous mes ongles est à vif. Cette blessure n'y était pas hier soir.*"
   },
   "day4_morning_start_5": {
     "text": "*Du graphite et du sang ont séché ensemble sur la première phalange de mon index gauche.*"
@@ -102,7 +102,7 @@
     "text": "*À mi-chemin. Je me suis arrêté à un passage piéton. Des élèves marchent vers moi depuis l'autre côté. Cinq. Côte à côte.*"
   },
   "day4_morning_commute_9": {
-    "text": "*Les élèves passent le portail. Des voix, des rires, des baskets qui raclent le sol. Les coins des lèvres se lèvent d'abord, puis le rire suit avec un demi-temps de retard.*"
+    "text": "*Les pas et les bavardages des élèves qui me frôlent s'enchaînent. Leur bouche s'ouvre d'abord, et le rire suit avec un demi-temps de retard.*"
   },
   "day4_morning_gate": {
     "text": "*Portail principal de l'école. Les élèves passent en petits groupes.*"
@@ -111,7 +111,7 @@
     "text": "*En franchissant le pilier du portail, le garçon devant moi se met à sourire. Il était encore impassible un instant plus tôt.*"
   },
   "day4_morning_gate_3": {
-    "text": "*La lycéenne à côté d’elle sourit aussi. Elle parlait d’autre chose, mais les commissures de ses lèvres se soulèvent les premières. Ses yeux restent fixés sur son interlocutrice.*"
+    "text": "*La fille à côté d'elle s'interrompt aussi au milieu d'une phrase et relève soudain les coins des lèvres. Ses yeux ne se plissent pas du tout, figés sur le visage de sa voisine.*"
   },
   "day4_morning_gate_4": {
     "text": "*De l’autre côté du mur, un élève regarde son téléphone en fronçant les sourcils. À peine a-t-il fait un pas à l’intérieur du portail que son visage s’éclaire d’un sourire.*"
@@ -129,10 +129,10 @@
     "text": "*Dès que mes yeux se posent sur le voyant du haut-parleur, un regard glisse vers moi, puis disparaît.*"
   },
   "day4_morning_gate_9": {
-    "text": "*Madame Eunsu se tient devant le portail principal. Appuyée contre la grille. Elle sourit. Juste sous le voyant du haut-parleur.*\n\nMadame, vous m'attendiez au portail ?"
+    "text": "*Mme Eunsu se tient appuyée contre le pilier du portail, souriant juste sous le voyant du haut-parleur.*\n\nMadame, vous m'attendiez devant le portail principal ?"
   },
   "day4_morning_gate_10": {
-    "text": "*La trotteuse de la montre d'Eunsu avance au même rythme que les parasites du haut-parleur du portail.*"
+    "text": "*La trotteuse de la montre de Mme Eunsu avance exactement au même rythme que les parasites du haut-parleur du portail.*"
   },
   "day4_morning_eunsu": {
     "text": "{name}, bonjour."
@@ -144,14 +144,14 @@
     "text": "*Mme Eunsu se tient à côté de moi, les bras croisés.*\n\nPourquoi aujourd'hui ? Je sais aller en classe maintenant."
   },
   "day4_morning_eunsu_choice": {
-    "text": "*Eunsu attend.*",
+    "text": "*Mme Eunsu attend ma réponse.*",
     "choices": [
       "Marcher ensemble",
-      "Dire que j'y vais en premier"
+      "Dire que je prends de l'avance"
     ]
   },
   "day4_morning_eunsu_comply": {
-    "text": "*J’ai marché aux côtés de Mme Eunsu jusqu’à la salle de classe. La pointe de sa chaussure empiétait sur le bord de mon ombre.*\n\nVous m'avez accompagné jusqu'ici, ça suffit, non ? Je vais à ma place."
+    "text": "*J'ai marché aux côtés de Mme Eunsu jusqu'à la salle de classe. À chaque pas, la pointe de sa chaussure mordait le bord de mon ombre.*\n\nVous m'avez accompagné assez loin, non ? Je vais à ma place."
   },
   "day4_morning_eunsu_refuse": {
     "text": "Ça va, je peux y aller sans vous. Je connais le chemin de la classe."
@@ -163,7 +163,7 @@
     "text": "**C’est dangereux.**"
   },
   "day4_morning_eunsu_refuse_4": {
-    "text": "*Dangereux. À la fin du mot, le sourire de Mme Eunsu se fige un très bref instant.*\n\nOn est dans l'école. Quel danger ? Je dois me méfier de qui ?"
+    "text": "*À l'instant où elle a fini sa phrase, le coin des lèvres de Mme Eunsu s'est brièvement figé.*\n\nOn est dans l'enceinte du lycée, qu'est-ce qui est dangereux ? De qui je dois me méfier ?"
   },
   "day4_morning_eunsu_refuse_5": {
     "text": "*Mme Eunsu me suit à un demi-pas. Le bout de ses chaussures reste sur le bord de mon ombre.*\n\nSi vous me suivez d'aussi près, ce n'est pas vraiment y aller sans vous."
@@ -208,7 +208,7 @@
     "text": "Ça a été publié hier soir dans la discussion de groupe. Tu ne l’as pas vu ?"
   },
   "day4_morning_sea_3a_react": {
-    "text": "*J’ouvre le groupe de discussion. Aucune annonce datant d’hier soir. Le dernier message est une photo du menu de la cantine.*\n\nIl n'y a aucune annonce dans le groupe. Je regarde le mauvais ?"
+    "text": "*J'ai ouvert la discussion de groupe de la classe et fait défiler vers le haut. Le dernier message n'est qu'une photo du menu de la cantine postée hier midi.*\n\nRien n'a été publié hier soir. Est-ce que je regarde un autre salon ?"
   },
   "day4_morning_sea_4": {
     "text": "*Dans mon sac, le boîtier de la carte SD effleure mes doigts. Exactement comme Yuna me l'a remis hier.*"
@@ -229,16 +229,16 @@
     "text": "*Le coin du bureau où se trouvait l'autocollant du club photo est un peu moins décoloré.*"
   },
   "day4_morning_sea_10": {
-    "text": "*Seul l'autocollant a été retiré, mais même la trace de poussière a disparu avec lui.*"
+    "text": "*Même la colle résiduelle et le contour de poussière autour de l'autocollant décollé ont été nettoyés impeccablement avec un produit chimique.*"
   },
   "day4_morning_class_start": {
     "text": "Aujourd'hui, nous allons parler de 'l'appartenance'."
   },
   "day4_morning_class_2": {
-    "text": "*Eunsu se tient à l'estrade. Prend la raie. Écrit 'Appartenance' au tableau.*"
+    "text": "*Mme Eunsu prend une craie et écrit « Appartenance » au tableau.*"
   },
   "day4_morning_class_3": {
-    "text": "*...Le registre de présence est ouvert sur l'estrade. Il y a un champ vide au milieu. Des traces de correcteur blanc.*"
+    "text": "*Au milieu du registre d'appel ouvert sur le pupitre, une case vide attire mon regard : un emplacement recouvert et effacé au ruban correcteur.*"
   },
   "day4_morning_class_3_met": {
     "text": "*...Le registre de présence est ouvert sur l'estrade. La ase où devrait être le nom de Yuna est vide. Des traces de correcteur blanc.*"
@@ -253,7 +253,7 @@
     "text": "Quitter la liste... serait un problème."
   },
   "day4_morning_class_7": {
-    "text": "*Mme Eunsu me fixe et fait un pas vers moi depuis le bureau.*\n\nVous cherchez pas ceux qui sont pas sur la liste ? Ce sont aussi des élèves."
+    "text": "*Mme Eunsu me regarde droit dans les yeux et descend d'un pas devant l'estrade.*\n\nDès qu'un nom est effacé de la liste, vous ne le cherchez plus ? C'était un élève présent jusqu'à hier."
   },
   "day4_morning_class_8": {
     "text": "Cela ne se terminait généralement pas bien."
@@ -318,7 +318,7 @@
     "text": "Pas ici. Tout le monde regarde."
   },
   "day4_morning_sea_watch_high_12": {
-    "text": "Il y eut un bruit de craie qu'on retirait du côté de la table. Les autres étudiants ne regardaient pas dans notre direction."
+    "text": "La fenêtre côté couloir a tremblé sous le vent. Aucun élève de la classe n'a regardé dans notre direction."
   },
   "day4_morning_sea_watch_low_1": {
     "text": "Sea est passé devant mon bureau et a regardé mon poignet. Je n'ai pas tendu la main."
@@ -333,7 +333,7 @@
     "text": "Je ne l'ai pas vérifié. Une notification me parvient également."
   },
   "day4_morning_sea_watch_low_5": {
-    "text": "Sea s'est assise à sa place et a remis face au tableau la chaise qui était tournée vers moi."
+    "text": "Sea s'est assise à sa place et a retourné sa chaise vers le tableau. En ouvrant les paramètres de l'application de sécurité sur mon téléphone, j'ai vu le nom de Sea inscrit dans le champ du contact responsable."
   },
   "day4_morning_sea_watch_choice": {
     "text": "Il y avait un nom laissé dans la boîte du gardien que je n'ai pas entré.",
@@ -367,6 +367,6 @@
     "text": "Un historique des modifications reste pour les éléments dont les autorisations de localisation ont été réduites. Le nom de la personne qui a rendu l’autorisation n’était pas visible."
   },
   "day4_history_callback_27": {
-    "text": "Je me suis arrêté alors que j'étais sur le point de demander si je pouvais changer l'emplacement du lait. Ce que Sea regardait en ce moment, ce n'était pas le réfrigérateur, mais mon poignet."
+    "text": "J'allais poser une question sur le changement de compartiment du lait dans le frigo de l'infirmerie, puis je me suis tu. Le regard de Sea restait rivé à mon poignet."
   }
 }

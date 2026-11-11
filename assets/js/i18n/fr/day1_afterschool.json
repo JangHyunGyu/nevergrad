@@ -3,20 +3,20 @@
         "text": ""
     },
     "day1_after_choice": {
-        "text": "*Après l'école. Où dois-je aller ?*",
+        "text": "*Les cours sont finis. Où aller ?*",
         "choices": [
-            "Sea m'a dit de venir dans la salle du conseil étudiant",
-            "Allez à la bibliothèque pour voir Yuna",
-            "Allez au cabinet de l'infirmière",
-            "Passez dire bonjour à Mme Eunsu",
-            "Rentre chez toi"
+            "Passer au bureau des élèves pour chercher Sea",
+            "Retourner à la bibliothèque (Yuna y est peut-être)",
+            "Faire un saut à l'infirmerie pour dire bonjour",
+            "Aller en salle des professeurs vérifier mon dossier",
+            "Rentrer directement à la maison"
         ]
     },
     "day1_after_sea_1": {
-        "text": "*Une petite pièce. Deux bureaux, un casier, une plante près de la fenêtre. Tout est bien rangé.*"
+        "text": "*C'est une petite pièce avec une plaque sur la porte. Les deux bureaux, le casier et même la plante en pot près de la fenêtre sont parfaitement rangés.*"
     },
     "day1_after_sea_2": {
-        "text": "Tu es là. C'est là salle du conseil des élèves."
+        "text": "Oh, tu es venu ! Entre, c'est ici le bureau des élèves."
     },
     "day1_after_sea_3": {
         "text": "*Sea me tend une canette. Un côté de la languette est déjà soulevé, si bien qu'elle s'ouvre aussitôt.*\n\nMerci. Tu avais déjà soulevé la languette."
@@ -49,22 +49,22 @@
         "text": "Il y en a, mais... je suis là seule à venir ici après les cours."
     },
     "day1_after_sea_13": {
-        "text": "Tu pourras repasser demain ?"
+        "text": "Dis, tu pourrais repasser demain après les cours ? Il me reste encore quelques formulaires à trier."
     },
     "day1_after_sea_14": {
-        "text": "Oui, si j'ai le temps. Montre-moi juste comment les classer, et j'essaierai."
+        "text": "Oui, j'ai le temps. Explique-moi juste comment les classer et je le ferai avec toi."
     },
     "day1_after_sea_15": {
-        "text": "Alors je te garderai quelques formulaires."
+        "text": "Merci. Dans ce cas, je te mettrai de côté quelques formulaires faciles."
     },
     "day1_after_sea_16": {
-        "text": "*Sea faisait rouler la canette vide entre ses mains en attendant ma réponse.*\n\nLaisse-les ici. Je regarderai demain."
+        "text": "*Sea sourit en faisant rouler doucement sa canette vide entre ses mains.*\n\nJe passerai demain dès la fin des cours."
     },
     "day1_after_yuna_1": {
         "text": "*Yuna est en train d'organiser des photos près de la fenêtre.*\n\nTu triais tes photos ? Je peux m'asseoir un moment ?"
     },
     "day1_after_yuna_2": {
-        "text": "Tu es de retour !"
+        "text": "Vous êtes venu ! Vous êtes vraiment passé me voir à la bibliothèque !"
     },
     "day1_after_yuna_3": {
         "text": "*Yuna me tend l'appareil photo. Des photos du lycée, de cerisiers en fleurs et de chats défilent.*\n\nCe chat habite ici aussi ?"
@@ -73,7 +73,7 @@
         "text": "Ce chat, c'est Cheese. C'est moi qui l'ai nommé."
     },
     "day1_after_yuna_5": {
-        "text": "*Yuna me donne le nom de chaque chat en faisant défiler les photos. La sangle de l'appareil photo se balance légèrement à son poignet.*\n\nTu leur as tous donné un nom ?"
+        "text": "*Yuna fait défiler d'autres photos de chats une par une pour me les montrer. La dragonne enroulée autour de son poignet oscille doucement.*\n\nOn dirait qu'il n'y a pas un recoin du lycée que tu n'aies pas exploré."
     },
     "day1_after_yuna_6": {
         "text": "…Tu viendras encore à la bibliothèque demain ?"
@@ -94,7 +94,7 @@
         "text": "Sunbae, attends !"
     },
     "day1_after_yuna_12": {
-        "text": "*Yuna me tend une photo Polaroid. C'est la vue depuis la fenêtre de la bibliothèque, tout à l'heure.*\n\nJe peux garder celle-là ?"
+        "text": "*Yuna sort un cliché Polaroid développé et me le tend. On y voit le paysage baigné de soleil derrière la fenêtre de la bibliothèque.*\n\nJe peux vraiment la garder ?"
     },
     "day1_after_yuna_13": {
         "text": "C'est... le siège sur lequel vous êtes assis, sunbae. La lumière y est agréable. Prends-le."
@@ -103,28 +103,28 @@
         "text": "*Je prends la photo. La lumière tombe en biais sur un livre. L'heure de la prise de vue est imprimée en petit sur le bord.*"
     },
     "day1_after_riin_1": {
-        "text": "*J’ai bu une tisane avec Mme Riin. Une légère vapeur montait du bord du gobelet en papier.*\n\nLe thé est bien chaud. Je peux rester un peu ?"
+        "text": "*Quand je passe à l'infirmerie, Mme Riin me verse une tisane chaude dans un gobelet en papier. Une fine vapeur s'élève du bord.*\n\nÇa sent très bon. Je peux rester le temps de la boire ?"
     },
     "day1_after_riin_2": {
-        "text": "Le sommeil peut être superficiel le premier jour après le transfert. Votre corps remarque d'abord un endroit inconnu."
+        "text": "Bien sûr. Dans un endroit inconnu, il arrive qu'on dorme mal le premier soir : le corps se crispe avant le reste."
     },
     "day1_after_riin_3": {
         "text": "Pour l'instant, ça va. Le thé me détend un peu."
     },
     "day1_after_riin_4": {
-        "text": "Oui ? C'est une bonne nouvelle."
+        "text": "Ah oui ? Tant mieux."
     },
     "day1_after_riin_5": {
-        "text": "*Elle s'arrête puis ouvre le placard.*\n\nVous cherchez quoi ? Je vous ai dit que ça allait."
+        "text": "*Elle marque une courte pause avant d'ouvrir l'armoire vitrée.*\n\nVous comptez me donner des médicaments aussi ? Ça va très bien là, pourtant."
     },
     "day1_after_riin_6": {
-        "text": "Attends. Prends ça avec toi."
+        "text": "Ce n'est pas un médicament. Emporte ça."
     },
     "day1_after_riin_7": {
-        "text": "*Elle me tend un petit sachet. Quelques sachets de tisane.*\n\nC'est pour que j'en boive aussi chez moi ?"
+        "text": "*Elle me tend une petite pochette translucide contenant deux sachets de tisane.*\n\nVous me les donnez pour que j'en boive aussi à la maison ?"
     },
     "day1_after_riin_8": {
-        "text": "Si tu as du mal à dormir, prépare-toi une tasse avant de te coucher. C'est de la camomille."
+        "text": "Oui, c'est de la camomille. Si tu as du mal à t'endormir, fais-toi une tasse bien chaude avant de te coucher."
     },
     "day1_after_riin_9": {
         "text": "Merci."
@@ -133,25 +133,25 @@
         "text": "*Mme Riin lance un morceau de piano calme sur l’enceinte. Le volume est si bas que le rythme me parvient avant la mélodie.*\n\nÀ ce volume, c'est encore plus reposant. Merci pour le thé."
     },
     "day1_after_riin_11": {
-        "text": "Revenez cette fois encore. Je vais faire du thé."
+        "text": "Repasse quand tu veux vers cette heure-ci. Je préparerai du thé."
     },
     "day1_after_riin_12": {
-        "text": "Je vais y aller, alors. Merci.\n\n*Mme Riin me tient la porte. En marchant dans le couloir, je tripote le sachet de thé. Les feuilles sèches craquent à l'intérieur.*"
+        "text": "Je vais y aller, alors. Merci beaucoup.\n\n*Mme Riin me tient la porte. Tandis que je marche dans le couloir en manipulant le petit sachet, les pétales séchés bruissent doucement à l'intérieur.*"
     },
     "day1_after_eunsu_1": {
         "text": "{name} ? Tu es venu me voir après l'école ? Quelque chose ne va pas ?"
     },
     "day1_after_eunsu_2": {
-        "text": "*Elle prépare du café en m'interrogeant.*\n\nComment était ton ancienne école ? Tu mets combien de temps à venir ? Tu as mangé quoi ce matin ?"
+        "text": "*Mme Eunsu se retourne tout en faisant couler du café.*\n\nTu tombes bien. Comment ça s'est passé pour suivre les cours, pour ce premier jour ?"
     },
     "day1_after_eunsu_3": {
-        "text": "...Les documents de votre école précédente sont arrivés en retard. Est-ce qu'il s'est passé quelque chose ?"
+        "text": "Les copies de ton dossier ont mis un peu de temps à arriver de ton ancien établissement. Tu as dû être bien occupé avec les préparatifs du déménagement, non ?"
     },
     "day1_after_eunsu_4": {
-        "text": "Vous voulez dire quoi ? Je suis venu parce que mes parents ont déménagé. Si le dossier dit autre chose, je devrais le savoir aussi."
+        "text": "Oui, on a dû déménager assez vite à cause du travail de mes parents. Est-ce qu'il manque d'autres papiers que je devrais apporter ?"
     },
     "day1_after_eunsu_5": {
-        "text": "Non. Pas maintenant."
+        "text": "Non, ce que tu m'as remis tout à l'heure suffit largement."
     },
     "day1_after_eunsu_6": {
         "text": "*La professeure pose sa tasse de café et referme le dossier.*\n\nVous avez du travail. Je ne vous dérange pas, j'espère ?"
@@ -178,10 +178,10 @@
         "text": "*…Quelqu'un me regarde depuis la fenêtre du troisième étage.*"
     },
     "day1_after_home_4": {
-        "text": "*À contre-jour, le visage est invisible. Seulement une silhouette. Près de la place côté fenêtre, tout au fond de la classe.*"
+        "text": "*À contre-jour dans le soleil couchant, on ne distingue qu'une silhouette sombre, près de la place côté fenêtre au tout dernier rang.*"
     },
     "day1_after_home_5": {
-        "text": "*J'ai fait un signe de la main. Aucune réponse.*"
+        "text": "*J'esquisse un petit signe de la main, mais l'ombre derrière la vitre reste immobile.*"
     },
     "day1_after_home_6": {
         "text": "*Sans attendre davantage, je me retourne et prends le chemin de la maison.*"
@@ -202,13 +202,13 @@
         "text": "*Devant l’escalier, Sea s’est écartée. Elle a attendu contre la rampe pendant que je rajustais mon sac.*"
     },
     "day1_after_eunsu_counsel_1": {
-        "text": "Tu peux laisser la case du métier vide. Pour aujourd’hui, choisir le bus du retour suffit."
+        "text": "Au fait, sur la fiche de renseignements, tu peux laisser vide la case d'orientation. Le premier jour, retrouver les bonnes ruelles jusqu'à chez soi sans se tromper, c'est déjà bien suffisant."
     },
     "day1_after_eunsu_counsel_2": {
-        "text": "Ça, je l’ai retenu en me trompant de bus ce matin."
+        "text": "J'habite tout près, alors j'ai retenu le chemin en venant à pied ce matin."
     },
     "day1_after_eunsu_counsel_3": {
-        "text": "Voilà déjà une chose de réglée. Marque ce qui te bloque en cours, on le regardera ensemble."
+        "text": "Voilà déjà une chose de réglée. Si un point te bloque en cours, fais juste une marque et apporte-le-moi, on regardera ensemble."
     },
     "day1_after_yuna_cat_1": {
         "text": "Cheese vient quand tu l’appelles ?"

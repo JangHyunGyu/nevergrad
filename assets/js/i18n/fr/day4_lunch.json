@@ -56,17 +56,17 @@
     "text": "*Des pas. Au bout du couloir. Quelqu'un approche.*"
   },
   "day4_lunch_yuna_16": {
-    "text": "*J'ai reculé. Mon talon a écrasé la poudre sur le seuil. Je me suis retourné et caché dans un coin.*"
+    "text": "*J'ai reculé les talons tout au fond de l'ombre. Le bruit des chaussures s'est arrêté sur les écailles de peinture du seuil du sous-sol.*"
   },
   "day4_lunch_yuna_17": {
-    "text": "*Mme Eunsu passe et ouvre la porte avec une clé. Elle entre et referme derrière elle. La serrure s’enclenche.*"
+    "text": "*Mme Eunsu a marché jusqu'au bout du couloir et a ouvert le cadenas avec une clé. Une fois entrée et la porte refermée, j'ai entendu le verrou s'enclencher de l'intérieur.*"
   },
   "day4_lunch_yuna_18": {
-    "text": "*Le bruit de la clé entrant dans la serrure résonne encore dans mes oreilles. Derrière la porte, un ronronnement mécanique grave se poursuit.*",
+    "text": "*Le cliquetis métallique de la clé qui tourne résonne encore à mes oreilles. Derrière la porte close, le bourdonnement mécanique grave se poursuit.*",
     "choices": [
-      "Aller chercher la clé cette nuit",
-      "Repenser aux déplacements de Riin",
-      "Faire confiance à l'indice de Seolhwa"
+      "Chercher la clé cette nuit",
+      "Retracer les déplacements de Mme Riin",
+      "Suivre l'indice laissé par Seolhwa"
     ]
   },
   "day4_lunch_yuna_19": {
@@ -76,7 +76,7 @@
     "text": "*Je devrai ouvrir cette porte demain.*"
   },
   "day4_lunch_nurse_1": {
-    "text": "*L’infirmière Riin, devant l’armoire à médicaments, transfère un liquide transparent dans une seringue.*"
+    "text": "*Mme Riin se tient devant l'armoire à pharmacie et aspire un liquide transparent dans une seringue.*"
   },
   "day4_lunch_nurse_first": {
     "text": "*La plaque sur le bureau attire d'abord mon regard : 'Kang Riin, infirmière scolaire'. Au moment où je lis ce nom, quelqu'un en blouse blanche relève la tête au fond de la pièce.*\n\nMadame, parlons un instant."
@@ -85,13 +85,13 @@
     "text": "*On voit l'étiquette de l'ampoule. 'M-13'. La police est différente de celle de l'étiquette du médicament contre le rhume dans le compartiment d'à côté.*"
   },
   "day4_lunch_nurse_3": {
-    "text": "*Nos regards se croisent, et la main qui tient la seringue s’immobilise.*\n\nPourquoi vous avez arrêté votre geste ?"
+    "text": "*Le bout de ses doigts s'immobilise sur la seringue du plateau à l'instant où son regard croise le mien.*\n\nC'était quoi, à l'instant ?"
   },
   "day4_lunch_nurse_4": {
     "text": "...Tu m'as fait peur."
   },
   "day4_lunch_nurse_5": {
-    "text": "*Elle cache la seringue derrière son dos. Le geste paraît naturel, mais je l’ai déjà vue.*\n\nJe l'ai déjà vu. Le cacher maintenant, ça le rend pas invisible."
+    "text": "*Elle glisse discrètement la seringue dans son dos. Avant que le pan de sa blouse ne la masque, j'ai eu le temps de voir les graduations transparentes.*\n\nJ'ai tout vu. Même si vous la cachez maintenant, je ne ferai pas semblant de rien."
   },
   "day4_lunch_nurse_noyuna": {
     "text": "...Qu'est-ce que vous faisiez à l'instant ?"
@@ -118,10 +118,10 @@
     "text": "Yuna ira bien."
   },
   "day4_lunch_nurse_11": {
-    "text": "*Après avoir fini de répondre, Riin prend le verre et le porte sous le robinet.*\n\nElle ira bien… Ça veut dire qu'en ce moment, ça va pas ?"
+    "text": "*Après avoir répondu, Mme Riin prend le gobelet et le porte sous le robinet du lavabo.*\n\nDire qu'elle ira bien, ça veut dire que ce n'est pas le cas en ce moment ?"
   },
   "day4_lunch_nurse_12": {
-    "text": "*Riin ouvre le robinet à fond et lave le verre. Le bruit de l’eau comble les silences entre ses réponses.*\n\nVoyons déjà comment tu vas. On parlera après."
+    "text": "*Le bruit de l'eau du robinet ouvert à fond pour rincer le gobelet comble les silences entre ses réponses.*\n\nLaisse-moi d'abord voir ton visage. On parlera dans un instant."
   },
   "day4_lunch_nurse_13": {
     "text": "...Tu as l'air fatigué. Comme si tu n'avais pas dormi."
@@ -130,10 +130,10 @@
     "text": "Voulez-vous quelque chose qui puisse vous aider ?"
   },
   "day4_lunch_nurse_15": {
-    "text": "*Elle sourit en parlant, mais la seringue est toujours dans sa main.*\n\nAttendez. Posez d’abord la seringue, qu’on puisse parler.",
+    "text": "*Elle sourit en parlant, mais tient toujours la seringue d'une main.*\n\nAttendez. Posez d'abord cette seringue avant de parler.",
     "choices": [
       "Refuser tout de suite",
-      "Demander le nom du médicament",
+      "Demander le nom du produit",
       "Parler de Yuna"
     ]
   },
@@ -169,7 +169,7 @@
     "text": "*Les cours de l'après-midi vont commencer.*"
   },
   "day4_lunch_nurse_ask_name": {
-    "text": "C'est… comment ça s'appelle ?"
+    "text": "Ce médicament, comment il s'appelle ?"
   },
   "day4_lunch_nurse_ask_name_2": {
     "text": "Un supplément. Vous n'avez pas besoin de l'étiquette. Allongez-vous simplement."
@@ -178,7 +178,7 @@
     "text": "Tu as donné ça à Yuna aussi ?"
   },
   "day4_lunch_nurse_ask_yuna_2": {
-    "text": "… Yuna peut attendre jusqu'à demain. Votre dose d’abord."
+    "text": "On parlera de Yuna demain. Pour l'instant, occupons-nous d'abord de ton traitement."
   },
   "day4_lunch_nurse_leave_ask": {
     "text": "*Je suis sorti sans attendre de réponse. Derrière moi, une ampoule a tinté contre le plateau.*"
@@ -222,13 +222,13 @@
     "text": "Le bout du film à l'intérieur de l'enveloppe a été coupé. J'ai mesuré la longueur restante et j'ai réfléchi à l'endroit où je l'aurais déplacé."
   },
   "day4_lunch_darkroom_11": {
-    "text": "La porte métallique se ferma dans le couloir. J'ai éteint la lumière rouge et me suis abaissé sur le côté de la porte."
+    "text": "J'ai éteint la lampe inactinique rouge et guetté la salle du club photo par la fente du rideau de la chambre noire."
   },
   "day4_lunch_darkroom_12": {
-    "text": "Le bruit des talons de chaussures descendit les escaliers. Les progrès étaient lents et ne s’arrêtaient pas entre les deux."
+    "text": "Le couloir était encore silencieux. L'écran de l'appareil photo de Yuna, que j'avais allumé plus tôt, luisait faiblement devant les casiers."
   },
   "day4_lunch_yuna_hide_1": {
-    "text": "J'ai regardé le trou de la serrure devant la porte du sous-sol. Il y eut un bruit de pages tournées depuis l'intérieur de la porte."
+    "text": "J'ai examiné la serrure devant la porte du sous-sol. Par l'interstice ne filtraient qu'un bourdonnement mécanique sourd et un souffle haletant."
   },
   "day4_lunch_yuna_hide_2": {
     "text": "Ma chaussure a glissé une fois dans les escaliers. Le faisceau de la lampe de poche descendait de dessous le mur."
@@ -250,37 +250,37 @@
     "text": "L’odeur des vêtements de travail arrivait jusqu’à mon nez. J'ai mis ma manche dans ma bouche et j'ai pressé le téléphone contre mon ventre."
   },
   "day4_lunch_yuna_breath_safe_2": {
-    "text": "Tu as fermé la porte, n'est-ce pas ? Vérifiez s'il y a quelqu'un à l'intérieur ou non."
+    "text": "Tu as bien laissé la porte fermée à clé ? Je descends à l'instant, je vais vérifier moi-même."
   },
   "day4_lunch_yuna_breath_safe_3": {
-    "text": "Une autre personne a répondu brièvement. Alors que la lumière provenant de la fente de la porte disparaissait, les lignes sur le dos de ma main disparaissaient également."
+    "text": "Un bref bip électronique a marqué la fin de l'appel. Le faisceau de la lampe torche qui effleurait la fente s'est déplacé vers la porte du sous-sol."
   },
   "day4_lunch_yuna_breath_safe_4": {
-    "text": "Le bruit des chaussures monta à nouveau les escaliers. Même après avoir entendu les derniers pas, je n'ai pas lâché le manche à balai."
+    "text": "Le bruit des talons a dépassé le placard à balais pour se diriger vers le fond du couloir. Retenant mon souffle, j'ai serré fort le manche du balai."
   },
   "day4_lunch_yuna_breath_safe_5": {
-    "text": "Je suis sorti de la boîte et j'ai lentement relâché la poignée de porte. La forme du manche était pressée dans la paume de ma main."
+    "text": "Par l'étroit interstice des charnières, j'apercevais à peine le devant de la porte rouillée au bout du couloir."
   },
   "day4_lunch_yuna_breath_fail_1": {
     "text": "La poignée de la porte a bougé en premier. Le bout de la chaussure de Mme Eunsu s'est arrêté devant l'entrebâillement."
   },
   "day4_lunch_yuna_breath_fail_2": {
-    "text": "Si vous êtes perdu, appelez quelqu'un. Les étudiants ne sont pas autorisés ici."
+    "text": "Si tu t'es perdu, tu aurais dû appeler un professeur. Les élèves n'ont rien à faire en bas."
   },
   "day4_lunch_yuna_breath_fail_3": {
     "text": "J'ai baissé la tête et j'ai enfoncé mon téléphone au fond de ma poche. Le professeur a tenu la porte jusqu'à ce que ma main sorte."
   },
   "day4_lunch_yuna_breath_fail_4": {
-    "text": "Retourne en classe. Nous nous reparlerons après le déjeuner."
+    "text": "Remonte attendre dans ta classe. On en reparlera après la pause déjeuner."
   },
   "day4_lunch_yuna_breath_fail_5": {
-    "text": "Alors que je faisais un pas, le professeur m'a montré le couloir opposé. C'était un chemin qui partait de la porte du sous-sol."
+    "text": "J'ai fait semblant de me diriger vers l'escalier qu'elle m'indiquait, avant de me plaquer dans l'ombre du coin pour épier derrière moi."
   },
   "day4_lunch_nurse_tray_1": {
     "text": "Trois ampoules de verre ont été placées sur un plateau métallique. Seule la zone où l'étiquette était arrachée restait translucide."
   },
   "day4_lunch_nurse_tray_2": {
-    "text": "Lorsque Riin a fermé le tiroir, l'extrémité déchirée du papier est restée coincée. Une petite grille était visible avant d'être recouverte d'une robe blanche."
+    "text": "Quand Mme Riin a repoussé le tiroir, le coin déchiré d'une feuille s'y est coincé. Avant que sa blouse blanche ne le cache, j'ai aperçu un petit quadrillage."
   },
   "day4_lunch_nurse_tray_3": {
     "text": "Lavez-vous les mains et revenez. Vous êtes venu de l'extérieur."
@@ -289,7 +289,7 @@
     "text": "La main de la professeure se reflétait dans le miroir du lavabo. Elle a poussé une ampoule sur le côté et n'a aligné que les deux autres."
   },
   "day4_lunch_nurse_tray_5": {
-    "text": "La seringue bouchée était toujours dans le plateau. Riin a d'abord lavé la tasse sans la soulever."
+    "text": "La seringue munie de son capuchon reposait toujours sur le plateau. Au lieu de la prendre, elle a d'abord lavé le gobelet."
   },
   "day4_lunch_nurse_tray_6": {
     "text": "Tu as pris quelque chose ce matin ? Je ne te donnerai pas de médicament avant que tu aies mangé."
@@ -304,16 +304,16 @@
     "text": "Vous ne pouvez pas non plus quitter cet endroit, n'est-ce pas ?"
   },
   "day4_lunch_nurse_key_2": {
-    "text": "Riin a baissé son doigt sur le bord de la tasse. Le verre toucha le plateau et sonna une fois."
+    "text": "Mme Riin a abaissé les doigts posés sur le bord du verre. Le verre a heurté le plateau en tintant une fois."
   },
   "day4_lunch_nurse_key_3": {
     "text": "Ne dis pas ça dans le couloir."
   },
   "day4_lunch_nurse_key_4": {
-    "text": "Lorsque j'ai essayé de regarder la caméra à côté de la porte, Riin se tenait devant moi. Il y eut un bref bruit de métal dans la poche de la robe."
+    "text": "Quand j'ai voulu regarder la caméra près de la porte, elle s'est placée devant moi. Un bref tintement métallique a résonné dans la poche de sa blouse."
   },
   "day4_lunch_nurse_key_5": {
-    "text": "Un porte-clés pendait au bord de la poche. Riin ne l'a pas mis, mais a simplement retiré sa main."
+    "text": "Un anneau de clés s'est accroché au rebord de sa poche. Sans le rentrer à l'intérieur, elle a simplement retiré la main."
   },
   "day4_lunch_nurse_key_6": {
     "text": "Retrouver un objet perdu ne signifie pas que vous devez le restituer immédiatement."
@@ -325,7 +325,7 @@
     "text": "J'ai quitté le cabinet de santé sans toucher à la clé et en me rappelant seulement dans quelle poche elle se trouvait."
   },
   "day4_lunch_nurse_yuna_1": {
-    "text": "J'ai demandé quand Yuna était venue pour la dernière fois. Riin a refermé le carnet de suivi et a noué la ficelle."
+    "text": "J'ai demandé quand Yuna était passée pour la dernière fois. Mme Riin a refermé le cahier de suivi et noué la ficelle."
   },
   "day4_lunch_nurse_yuna_2": {
     "text": "Il n'y a aucune heure de départ dans son dossier. Je n'en ai pas écrit."
@@ -340,7 +340,7 @@
     "text": "Quand j'ai regardé vers le tiroir, la professeure a doucement secoué la tête et a fait un pas vers la porte."
   },
   "day4_lunch_nurse_yuna_6": {
-    "text": "Une annonce pour le déjeuner a été faite à l'extérieur de la salle de santé. Avant de fermer la porte, il y eut le bruit de Riin lavant une autre tasse."
+    "text": "À l'extérieur de l'infirmerie passait la diffusion de midi. Avant que je referme la porte, j'ai entendu qu'elle lavait une tasse de plus."
   },
   "day4_lunch_roof_etch_1": {
     "text": "Lorsque j’ai dépoussiéré le béton exposé sous le treillis métallique, plusieurs lignes profondes sont apparues."
@@ -375,10 +375,10 @@
     "text": "J'ai fait la même chose. Voir les bus au-delà de la clôture m'a fait penser que je pouvais les atteindre."
   },
   "day4_lunch_roof_memory_choice": {
-    "text": "Seolhwa a regardé les escaliers de gauche. J'ai retiré ma main du treillis métallique.",
+    "text": "Seolhwa a regardé l'escalier de gauche. J'ai retiré ma main du grillage.",
     "choices": [
-      "Pourquoi n'es-tu pas allé sur le toit ?",
-      "Que s’est-il alors passé à la sortie de secours ?"
+      "Pourquoi tu n'es pas sortie vers le portail principal ?",
+      "Que s'est-il passé à la sortie de secours cette fois-là ?"
     ]
   },
   "day4_lunch_roof_fence_1": {
@@ -434,7 +434,7 @@
     "text": "J'ai épousseté le sable de mes paumes sur la doublure de mes poches et j'ai répété une fois le mot laissé dans ma bouche."
   },
   "day4_lunch_roof_left_3": {
-    "text": "Lorsque je me suis détourné du grillage, la porte du toit était entrouverte. L'ombre humaine n'a pas continué à descendre les escaliers."
+    "text": "En tournant la tête vers l'escalier, j'ai vu la porte du toit entrouverte. Aucune silhouette ne projetait d'ombre au-delà de l'entrebâillement."
   },
   "day4_history_callback_28": {
     "text": "La photo que j'ai reçue le premier jour était également éclairée dans le même sens. Je comprends maintenant pourquoi Yuna m'a dit de ne pas plier le papier."
@@ -446,7 +446,7 @@
     "text": "La forme du col était la même que celle de l’ampoule vue plus tôt. Même si l'étiquette était retirée, même les petites rayures sur le verre ne seraient pas supprimées."
   },
   "day4_history_callback_31": {
-    "text": "Riin a fait signe que le téléphone soit retourné. Tout comme lorsque j'ai désactivé l'application le premier jour, seul l'écran s'est assombri et l'indicateur de localisation est resté."
+    "text": "Mme Riin m'a fait signe de retourner mon téléphone face contre table. Comme le premier jour où j'avais coupé l'application, seul l'écran s'est assombri tandis que l'indicateur de position restait affiché."
   },
   "day4_history_callback_32": {
     "text": "Je me suis souvenu du commentaire de Seolhwa selon lequel lorsque vous tenez la poignée d'un stylo à bille, la zone pliée est à nouveau enfoncée et votre main s'oriente en premier."
@@ -455,7 +455,7 @@
     "text": "J'ai touché le morceau de papier dans ma poche. Je ne savais toujours pas si le jade, taché et illisible, appartenait au toit."
   },
   "day4_expansion_action_6_a": {
-    "text": "Même l’ombre de la griffe était incluse dans le cadre. J'ai laissé derrière moi quelque chose qui pourrait servir de standard lorsque je devais retrouver le même endroit."
+    "text": "J'ai inclus l'ombre de la pince dans le cadre : un repère pour retrouver l'emplacement exact plus tard."
   },
   "day4_expansion_action_6_b": {
     "text": "La tache humide sur la porte d’entrée se trouvait uniquement du côté intérieur. J'ai marché vers le mur sans marcher dessus."

@@ -74,7 +74,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_sea_12": {
         character: "sea_smile",
-        next: "day1_lunch_sea_share_1"
+        next: "day1_lunch_sea_13"
     },
     "day1_lunch_sea_13": {
         character: "sea_smile",
@@ -84,7 +84,7 @@ Object.assign(SCENARIO[1], {
     // 수다 이어짐
     "day1_lunch_sea_14": {
         character: "sea_smile",
-        next: "day1_lunch_sea_15"
+        next: "day1_lunch_sea_share_1"
     },
     "day1_lunch_sea_15": {
         character: "sea_smile",
@@ -268,7 +268,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_riin_12": {
         character: "riin_gentle",
-        next: "day1_lunch_riin_13"
+        next: "day1_lunch_riin_rest_1"
     },
     // 보건실에서 잠깐 잠들기
     "day1_lunch_riin_13": {
@@ -289,7 +289,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_riin_17": {
         character: "riin_gentle",
-        next: "day1_lunch_riin_rest_1"
+        next: "day1_lunch_riin_18"
     },
     "day1_lunch_riin_18": {
         character: "riin_gentle",
@@ -344,7 +344,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_sea_share_4": {
         character: "sea_smile",
-        next: "day1_lunch_sea_13"
+        next: "day1_lunch_sea_15"
     },
     "day1_lunch_riin_rest_1": {
         character: "riin_gentle",
@@ -356,7 +356,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_lunch_riin_rest_3": {
         character: "riin_gentle",
-        next: "day1_lunch_riin_18"
+        next: "day1_lunch_riin_13"
     }
 });
 

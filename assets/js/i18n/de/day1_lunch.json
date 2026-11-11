@@ -5,20 +5,20 @@
     "day1_lunch_choice": {
         "text": "*Mittagspause. Wohin soll ich gehen?*",
         "choices": [
-            "Sea wollte zusammen essen, also bleibe ich im Klassenzimmer",
-            "In die ruhige Bibliothek gehen",
-            "Mein Kopf tut weh. Ins Krankenzimmer gehen",
-            "Allein auf dem Dach essen"
+            "Im Klassenzimmer bleiben und Sea ansprechen",
+            "Mich in der Bibliothek umsehen",
+            "Mein Kopf fühlt sich etwas schwer an. Ins Krankenzimmer gehen?",
+            "Allein aufs Schuldach steigen"
         ]
     },
     "day1_lunch_sea_1": {
         "text": "*Sea schiebt zwei Tische zusammen und holt eine Brotdose aus ihrer Tasche.*"
     },
     "day1_lunch_sea_2": {
-        "text": "Zwei Etagen? Das schaffst du doch nicht allein."
+        "text": "Oha, eine Lunchbox mit zwei Etagen."
     },
     "day1_lunch_sea_3": {
-        "text": "Ist das alles für dich? Das sieht nach ziemlich viel aus."
+        "text": "Hast du das alles für dich allein eingepackt? Sieht nach einer ganz schön großen Portion aus."
     },
     "day1_lunch_sea_4": {
         "text": "Na? Gut genug, um es zu verkaufen, oder?"
@@ -30,16 +30,16 @@
         "text": "Moment, hast du das alles selbst gemacht? Darf ich davon essen?"
     },
     "day1_lunch_sea_7": {
-        "text": "Probier mal. Wenn du nur Brot isst, hast du nachmittags doch sofort wieder Hunger."
+        "text": "Ich hab reichlich eingepackt, damit wir zusammen essen können. Mit nur einem Brötchen vom Kiosk hast du nachmittags doch sofort wieder Hunger."
     },
     "day1_lunch_sea_8": {
-        "text": "*Sea nimmt ein Stück gerolltes Omelett mit ihren Essstäbchen auf und hält es mir hin.*\n\nOh, ich kann es selbst nehmen."
+        "text": "*Sea bricht ein neues Paar Holzstäbchen sauber auseinander und reicht es mir herüber.*\n\nDanke. Dann probiere ich gern ein bisschen mit."
     },
     "day1_lunch_sea_9": {
-        "text": "Hier, probier erst mal das Omelett. Ich habe es eher süß gemacht."
+        "text": "Hier, probier zuerst das gerollte Omelett. Es ist schön süß und richtig gut gelungen."
     },
     "day1_lunch_sea_10": {
-        "text": "*Das gerollte Omelett ist noch warm. Zuerst schmecke ich die Süße.*\n\nWirklich süß. Und noch warm."
+        "text": "*Beim ersten Bissen breitet sich zwischen den weichen Schichten lockere Wärme aus.*\n\nDas schmeckt ja richtig gut. Und perfekt abgeschmeckt ist es auch."
     },
     "day1_lunch_sea_11": {
         "text": "Das ist besser als gekauft?"
@@ -48,10 +48,10 @@
         "text": "Ach ja?"
     },
     "day1_lunch_sea_13": {
-        "text": "*Sea hielt mit den Stäbchen in der Hand inne und lächelte dann verspätet.*\n\nWarum lächelst du? Das meine ich ernst. Es schmeckt wirklich. Iss du auch."
+        "text": "*Sea hält mit den Stäbchen in der Hand kurz inne und lächelt erst einen Moment später.*\n\nWarum lächelst du? Das ist keine bloße Höflichkeit, es schmeckt wirklich toll."
     },
     "day1_lunch_sea_14": {
-        "text": "*Während einer kurzen Gesprächspause schiebt Sea mit den Spitzen ihrer Stäbchen die Trennwände der Brotdose ordentlich zurecht.*\n\nIss noch was. Es ist noch genug da."
+        "text": "*Mit den Spitzen ihrer Stäbchen schiebt Sea die Lunchbox noch ein Stück weiter zu mir herüber.*\n\nIss ruhig in Ruhe weiter. Würstchen und Reisbällchen sind auch noch da."
     },
     "day1_lunch_sea_15": {
         "text": "Bringst du immer so eine Brotdose mit, Sea?"
@@ -60,7 +60,7 @@
         "text": "Ja. Die Schulkantine ist ja ganz nett, aber selbstgemacht schmeckt besser."
     },
     "day1_lunch_sea_17": {
-        "text": "Für eine Person ist das ein bisschen viel."
+        "text": "Man muss schon ziemlich fleißig sein, um sich das jeden Morgen selbst zu machen."
     },
     "day1_lunch_sea_18": {
         "text": "*Seas Stäbchen halten über einem leeren Fach der Brotdose inne.*\n\nSchon fast leer. Ich glaube, ich habe zu viel davon gegessen."
@@ -72,10 +72,10 @@
         "text": "Heute habe ich viel gemacht. Gut, dass du es isst."
     },
     "day1_lunch_sea_21": {
-        "text": "*Die Brotdose ist fast leer. Es bleibt noch etwas Zeit.*\n\nDas Essen war lecker. Danke."
+        "text": "*Als wir die zusammengepackte Lunchbox beiseiteschieben, ist von der Mittagspause noch etwas übrig.*\n\nDank dir hab ich heute richtig gut gegessen. Danke."
     },
     "day1_lunch_sea_22": {
-        "text": "Ach ja, hör mal hier."
+        "text": "Ach, stimmt — hör dir das mal kurz zum Verdauen an."
     },
     "day1_lunch_sea_23": {
         "text": "*Sea reicht mir einen ihrer Ohrhörer. Ein sanfter Gitarrensong.*"
@@ -90,13 +90,13 @@
         "text": "*Wir teilen uns die Kopfhörer.*\n\nDie Gitarre klingt gut. Das könnte ich länger hören."
     },
     "day1_lunch_sea_27": {
-        "text": "Nicht schlecht. Ich verstehe, warum du das so oft hörst."
+        "text": "Selbst bei dem Lärm im Klassenzimmer hört man unwillkürlich nur noch auf diese Seite."
     },
     "day1_lunch_sea_28": {
         "text": "Normalerweise rede ich nicht über solche Sachen."
     },
     "day1_lunch_sea_29": {
-        "text": "*Wir reden über Musik, über YouTube. Das Kabel der Ohrhörer liegt locker über der Mitte des Tischs, und die Mittagspause ist fast vorbei.*\n\nDie Mittagspause ist schon fast vorbei. Danke für den Ohrhörer."
+        "text": "*Während wir über Musik und Videos reden, die wir sonst gern schauen, ist es schon fast Zeit für das Vorklingeln.*\n\nDie Mittagspause ist ja schon fast vorbei. Danke fürs Ausleihen vom Ohrhörer."
     },
     "day1_lunch_yuna_1": {
         "text": "*Ich betrat die Bibliothek. Sie ist fast leer, da Mittagspause ist.*"
@@ -108,31 +108,31 @@
         "text": "*Ein Mädchen mit einer Kamera ist mit erschrockenem Ausdruck erstarrt. Klein gebaut, große Kamera.*"
     },
     "day1_lunch_yuna_4": {
-        "text": "Hast du gerade ein Foto von mir gemacht? Ich habe den Auslöser gehört, sobald ich die Tür aufgemacht habe."
+        "text": "Ach, du bist doch die Erstklässlerin vom Fotoclub vorhin auf dem Sportplatz, oder? Kaum hab ich die Tür geöffnet, hat der Auslöser geklickt."
     },
     "day1_lunch_yuna_5": {
-        "text": "Oh nein. Ich bin im Fotoclub. Ich habe das Licht am Fenster fotografiert, als du reinkamst ..."
+        "text": "Oh, ja, genau! Ich wollte gerade das Licht am Fenster einfangen, als du im selben Moment hereingekommen bist."
     },
     "day1_lunch_yuna_6": {
         "text": "Entschuldigung. Ich lösche es sofort."
     },
     "day1_lunch_yuna_7": {
-        "text": "Nein, schon gut. Du bist also im Fotoclub."
+        "text": "Tut mir leid, falls ich dich erschreckt habe. Vorhin warst du so weit weg, dass ich nicht mal richtig Hallo sagen konnte."
     },
     "day1_lunch_yuna_8": {
-        "text": "Ja. Ich bin Choi Yuna aus dem ersten Jahr. Sie sind der neue Transferschüler, oder?"
+        "text": "Ach was, gar nicht. Ich bin Choi Yuna aus der ersten Stufe. Du bist der neue Mitschüler aus dem höheren Jahrgang, der heute gewechselt ist, oder?"
     },
     "day1_lunch_yuna_9": {
-        "text": "Ja. Ich bin {name}. Freut mich, dich kennenzulernen."
+        "text": "Ja, ich bin {name}. Freut mich, dich kennenzulernen."
     },
     "day1_lunch_yuna_10": {
-        "text": "*Yuna umschließt die Kamera mit beiden Händen und senkt den Kopf.*\n\nDie Kamera bedeutet dir wohl viel. Ich fasse sie nicht einfach so an."
+        "text": "*Yuna greift den Kameragurt fester und nickt leicht.*\n\nDie Kamera sieht ganz schön schwer aus. Du hütest sie bestimmt gut, oder?"
     },
     "day1_lunch_yuna_11": {
-        "text": "Kommst du oft in die Bibliothek? Ich bin jeden Tag hier."
+        "text": "Ja, ich trage sie jeden Tag bei mir. Magst du ruhige Orte auch gern? Möchtest du das Bild von eben mal sehen?"
     },
     "day1_lunch_yuna_12": {
-        "text": "*Ich sehe Schulgebäude, Kirschblüten und eine Katze neben der Turnhalle.*\n\nHier gibt es einiges zu fotografieren."
+        "text": "*Gemeinsam schauen wir auf das Display, das Yuna mir hinhält. Neben der Fensteraufnahme folgen Kirschblüten und eine Katze an der Turnhalle.*\n\nAllein auf dem Schulgelände gibt es ja jede Menge schöne Motive."
     },
     "day1_lunch_yuna_13": {
         "text": "*Beim Durchscrollen fand ich eine Serie desselben Kirschbaums, zu verschiedenen Tageszeiten aufgenommen. Morgen, Mittag, Sonnenuntergang, Nacht.*"
@@ -153,7 +153,7 @@
         "text": "*Kurzer, dunkelvioletter Bob, weißer Kittel, dünnrandige Brille. Sie lehnt sich in ihrem Stuhl zurück und liest etwas.*"
     },
     "day1_lunch_riin_3": {
-        "text": "Oh, am ersten Tag gleich ins Krankenzimmer? Geht es dir nicht gut?"
+        "text": "Oje, gleich am ersten Tag im Krankenzimmer? Tut dir etwas weh?"
     },
     "day1_lunch_riin_4": {
         "text": "Ich habe etwas Kopfschmerzen. Darf ich mich hier kurz ausruhen?"
@@ -162,7 +162,7 @@
         "text": "Ach so? Setz dich."
     },
     "day1_lunch_riin_6": {
-        "text": "*Frau Riin berührt meine Stirn. Ihre Hand ist kühl.*\n\nIhre Hand ist schön kühl."
+        "text": "*An der Brust ihres weißen Kittels steckt ein Namensschild mit der Aufschrift „Kang Riin“. Sie tritt näher und legt mir leicht die Hand auf die Stirn.*\n\nIhre Hand ist angenehm kühl."
     },
     "day1_lunch_riin_7": {
         "text": "Kein Fieber. Am ersten Tag gibt es viele in deinem Zustand."
@@ -171,10 +171,10 @@
         "text": "*Sie öffnet eine Schublade und nimmt lächelnd etwas Medizin heraus.*"
     },
     "day1_lunch_riin_9": {
-        "text": "Hast du schon gegessen? Du solltest keine Medizin auf nüchternen Magen nehmen."
+        "text": "Du hast noch nicht zu Mittag gegessen, stimmt's? Auf nüchternen Magen darfst du keine Tabletten nehmen."
     },
     "day1_lunch_riin_10": {
-        "text": "*Sie gibt mir einen Energieriegel.*\n\nIss erst das. Danach die Tablette."
+        "text": "*Sie holt einen Energieriegel aus der Schublade und reicht ihn mir.*\n\nIss erst mal den hier. Das Medikament gebe ich dir danach."
     },
     "day1_lunch_riin_11": {
         "text": "Wenn du müde bist, kannst du dich hier ruhig etwas ausruhen."
@@ -198,7 +198,7 @@
         "text": "Dieser Raum ist zum Ausruhen da. Geht es deinem Kopf etwas besser?"
     },
     "day1_lunch_riin_18": {
-        "text": "Ja, etwas besser. Ich muss kurz eingeschlafen sein."
+        "text": "Ja, mein Kopf fühlt sich schon viel freier an. Gut, dass ich kurz die Augen zugemacht habe."
     },
     "day1_lunch_alone_1": {
         "text": "*Ich stieg die Treppe hinauf und öffnete die Dachtür. Der Wind schlägt mir voll entgegen.*"
@@ -231,10 +231,10 @@
         "text": "*Wir tauschten die Würstchen. Sea schob eine Serviette unter meinen Deckel. Erst beim Abwischen der Soße merkte ich, dass mir eine gefehlt hatte.*"
     },
     "day1_lunch_riin_rest_1": {
-        "text": "Ja. Aber ich sehe die Uhr nicht. Was, wenn ich wieder einschlafe?"
+        "text": "Vom Bett aus kann ich die Uhr gar nicht sehen. Was ist, wenn ich wirklich einschlafe?"
     },
     "day1_lunch_riin_rest_2": {
-        "text": "Ich wecke Sie. Im Schlaf noch die Uhr zu überwachen ist keine Erholung."
+        "text": "Ich wecke dich, bevor es klingelt. Wenn man beim Schlafen auch noch auf die Uhr achten soll, ist das schließlich keine Erholung."
     },
     "day1_lunch_riin_rest_3": {
         "text": "*Sie stellte das Wasser ans Kopfende und zog den Vorhang am Fenster etwas weiter zu. Die Sonne schien mir nicht mehr auf die Lider.*"

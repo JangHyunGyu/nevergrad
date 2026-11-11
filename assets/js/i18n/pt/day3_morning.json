@@ -21,7 +21,7 @@
     "text": "*No lugar onde estava antes, só resta uma marca redonda de água.*"
   },
   "day3_morning_milk_2": {
-    "text": "*O estojo está à direita. O leite, na prateleira de cima. Os dois foram colocados em lugares fáceis de alcançar com a mão.*"
+    "text": "*O leite está na prateleira de cima, e a caneca de água foi deixada com a alça virada para a esquerda. Os dois estão bem ao alcance da minha mão esquerda.*"
   },
   "day3_morning_commute_1": {
     "text": "*Saio de casa e vou para a escola. O ar da manhã está frio.*"
@@ -66,23 +66,23 @@
     "text": "*Quando me virei para olhar novamente, ela já havia entrado no prédio.*"
   },
   "day3_morning_locker_1": {
-    "text": "*Andando pelo corredor, parei.*"
+    "text": "*Ao passar pelos armários no fundo do saguão de entrada, parei no meio do passo.*"
   },
   "day3_morning_locker_2": {
-    "text": "*Um armário. O nome foi riscado. Marcas de arranhões repetidos com chave ou faca.*"
+    "text": "*O espaço da etiqueta com o nome foi raspado várias vezes com uma chave ou lâmina até apagar tudo.*"
   },
   "day3_morning_locker_3": {
-    "text": "*Curioso, abri o armário. Não estava trancado. Completamente vazio. Apenas poeira.*"
+    "text": "*Puxei a maçaneta. Por trás da porta destrancada, a poeira havia se acumulado.*"
   },
   "day3_morning_locker_4": {
-    "text": "*No canto, uma foto rasgada. Uma foto tamanho passaporte cortada ao meio. Resta apenas metade de um rosto.*"
+    "text": "*Preso no canto do fundo, há um pedaço de foto 3x4 rasgada ao meio. Só dá para ver metade do rosto que sobrou.*"
   },
   "day3_morning_locker_5": {
-    "text": "*...Esse rosto. Parece familiar. Quem é?*",
+    "text": "*Esse olhar me é familiar. Encostei o polegar na borda rasgada.*",
     "choices": [
-      "Pegue o fragmento da foto",
-      "Verifique a parte de trás",
-      "Procure testemunhas"
+      "Guardar o pedaço da foto",
+      "Verificar o verso",
+      "Olhar em volta para ver se há testemunhas"
     ]
   },
   "day3_morning_photo_1": {
@@ -92,10 +92,10 @@
     "text": "*...E há mais uma inscrição riscada na parede interna do armário. Muito pequeno.*"
   },
   "day3_morning_inscription_1": {
-    "text": "*O traço que vira para a esquerda. O ponto final que perde a força no fim. É igual ao que vi ontem debaixo da carteira.*"
+    "text": "*O traço que dobra para a esquerda. O ponto final perdendo a força no fim. É igual à marca que vi debaixo da carteira no primeiro dia.*"
   },
   "day3_morning_inscription_2": {
-    "text": "*Olho debaixo das minhas unhas. As marcas de grafite de ontem já foram lavadas.*"
+    "text": "*Olhei debaixo das unhas. O pó que tinha ficado preso ali quando arranhei embaixo da carteira no primeiro dia já havia saído na água.*"
   },
   "day3_morning_inscription_3": {
     "text": "*Fecho o armário e viro a esquina. Seolhwa está ali. Perto, desta vez.*"
@@ -110,9 +110,9 @@
     "text": "...Huh? Sim, estou. Como você sabia?"
   },
   "day3_morning_seolhwa_5": {
-    "text": "*Seolhwa não responde. Olha uma vez para minha mão esquerda e outra para meu rosto. Depois de um instante, fala baixo.*",
+    "text": "*Seolhwa não responde; apenas alterna o olhar uma vez entre minha mão esquerda e meu rosto.*",
     "choices": [
-      "Responder à pergunta sobre a mão esquerda",
+      "Responder de novo que sou canhoto",
       "Perguntar por que ela quer saber",
       "Fingir que não ouvi"
     ]
@@ -139,7 +139,7 @@
     "text": "*As conversas param. Todas ao mesmo tempo.*"
   },
   "day3_morning_classroom_4": {
-    "text": "*O pó de giz cai devagar abaixo do quadro. A risada não volta.*"
+    "text": "*A primeira aula terminou e o pó de giz assentou devagar sob o quadro-negro. Mesmo no intervalo, as risadas não voltam.*"
   },
   "day3_morning_classroom_5": {
     "text": "*Dois garotos da primeira fila se olham de relance. Uma garota da última fila vira o olhar para a janela. Debaixo de uma mesa, alguém para a perna de uma cadeira com a ponta do pé.*"
@@ -148,7 +148,7 @@
     "text": "*Esfrego o antebraço. Nas pontas dos dedos, só fica a sensação dos pelos arrepiados. O som do ponteiro dos segundos do relógio da sala parece alto demais.*"
   },
   "day3_morning_sea_1a": {
-    "text": "*Sea está sentada em sua cadeira. Ela está sorrindo, mas... apenas sua boca está sorrindo.*"
+    "text": "*Sea está sentada no lugar dela sorrindo, mas o canto dos olhos não se mexe.*"
   },
   "day3_morning_sea_2": {
     "text": "Bom dia, {name}. Você está um pouco atrasado hoje?"
@@ -163,13 +163,13 @@
     "text": "*A voz de Sea é animada. Seus dedos batucam num ritmo constante sobre a mesa e param duas vezes.*\n\nDo que vocês estavam falando? Ficou tudo quieto quando entrei."
   },
   "day3_morning_sea_6": {
-    "text": "*O olhar de Sea desce do meu rosto para a nuca, depois para a mão esquerda, e volta a subir.*\n\nNão vi você entrar. Dormiu mal ontem à noite?"
+    "text": "*O olhar de Sea desce do meu rosto para a nuca e para a mão esquerda antes de subir de novo.*\n\nNem vi que você tinha entrado. Aliás, você está com olheiras... está tudo bem?"
   },
   "day3_morning_sea_6b": {
     "text": "*Na margem do caderno de Sea, ao lado da data de hoje, há três pequenos quadrados vazios desenhados.*"
   },
   "day3_morning_sea_7": {
-    "text": "Sim, eu me virei um pouco."
+    "text": "É, rolei um pouco na cama ontem à noite."
   },
   "day3_morning_sea_6a": {
     "text": "*Sea inclina a cabeça de leve e me observa. 2 segundos. 3. 4.*\n\nPor que fica olhando? Tem alguma coisa no meu rosto?"
@@ -190,19 +190,19 @@
     "text": "*...De novo. O leite, o estojo.*"
   },
   "day3_morning_end": {
-    "text": "*A aula começa. Leio a primeira linha do livro didático três vezes, mas meus olhos voltam para o mesmo lugar.*"
+    "text": "*O som do giz no quadro continua. Mantive os olhos na primeira linha do livro, mas a ponta dos dedos não parava de tatear o fundo da gaveta da carteira.*"
   },
   "day3_morning_photo_back": {
-    "text": "*Virei o pedaço da foto e examinei o verso. Havia uma data escrita, quase apagada.*"
+    "text": "*Virei devagar o pedaço de foto na palma da mão e examinei o verso.*"
   },
   "day3_morning_photo_look": {
-    "text": "*Mantive o pedaço de fotografia tapado com a mão e virei a cabeça para olhar o corredor.*"
+    "text": "*Escondendo o pedaço da foto na palma da mão, virei a cabeça para observar as duas pontas do corredor.*"
   },
   "day3_morning_photo_back_detail_1": {
     "text": "Quando virei o papel, fiquei com pó de lápis nos dedos. Uma breve nota foi escrita no verso da foto."
   },
   "day3_morning_photo_back_detail_2": {
-    "text": "# 11 – Descarte. O sublinhado do número salta do final. O mesmo lugar apareceu quando escrevi a data em meu caderno."
+    "text": "#11 — Descarte. A ponta do sublinhado embaixo do número subia espetada para cima. Quando eu anotava a data no caderno, o traço quebrava exatamente no mesmo ponto."
   },
   "day3_morning_photo_back_detail_3": {
     "text": "Peguei meu caderno e coloquei uma foto ao lado do horário que anotei ontem. Até o ângulo em que a cabeça do número 1 estava dobrada era semelhante."
@@ -214,15 +214,15 @@
     "text": "Tracei com a unha o ponto desenhado com a ponta do lápis. O papel era fino, então os traços foram pressionados totalmente para a frente."
   },
   "day3_morning_photo_back_detail_6": {
-    "text": "Escolhi uma forma de verificar minhas anotações a lápis.",
+    "text": "Parei antes que o pó de grafite na borda do papel espalhasse ainda mais na ponta dos meus dedos.",
     "choices": [
-      "Mantenha o original como está",
-      "Copie as notas separadamente",
-      "Basta tirar uma foto e deixar ir."
+      "Guardar o original como está",
+      "Copiar a anotação separadamente",
+      "Tirar uma foto com o celular primeiro"
     ]
   },
   "day3_morning_photo_back_detail_7": {
-    "text": "Tirei uma foto do memorando com meu celular e coloquei o original em meu caderno. Desta vez, usei uma régua para evitar que as bordas dobrassem."
+    "text": "Fotografei a anotação com a câmera do celular e desamassei a ponta dobrada do pedaço de foto com a ponta dos dedos."
   },
   "day3_morning_photo_back_detail_8": {
     "text": "Quando olhei para cima, vi a luz vermelha de uma câmera no final do corredor. Um pequeno ponto moveu-se sob a lente."
@@ -240,7 +240,7 @@
     "text": "O quadro de avisos da sala de aula estava visível próximo ao local onde o rosto foi cortado. O horário atual da sala de aula e o número de colunas eram os mesmos."
   },
   "day3_morning_photo_look_detail_4": {
-    "text": "Quando mostrei a foto da sala de aula de ontem no meu celular, até as manchas marrons nos cantos do quadro de avisos se sobrepuseram."
+    "text": "Quando lembrei do mural da nossa sala que vi ontem, até a posição da mancha marrom no canto coincidia."
   },
   "day3_morning_photo_look_detail_5": {
     "text": "Não houve data em que a foto foi tirada. O relógio também foi obscurecido pela área onde a pessoa estava."
@@ -260,10 +260,10 @@
     "text": "O movimento parou logo acima do meu armário. A luz vermelha ao redor da lente permaneceu acesa."
   },
   "day3_morning_photo_look_detail_9": {
-    "text": "Coloquei a foto no bolso interno e fechei a porta. A chave ficou presa e tive que girá-la mais uma vez."
+    "text": "Desviei o olhar da lente e abaixei um pouco mais a cabeça para dentro do armário."
   },
   "day3_morning_class_silence_1": {
-    "text": "Quando empurrei a porta, os sons das conversas na sala de aula pararam e as mãos que viravam as páginas pararam por um momento."
+    "text": "O silêncio na sala não se desfez facilmente; só o gesto esparso de mãos virando páginas continuava aqui e ali."
   },
   "day3_morning_class_silence_2": {
     "text": "Cerca de vinte crianças olhavam para a mesa da professora. Ninguém virou a cabeça em direção à porta por onde passei."
@@ -278,7 +278,7 @@
     "text": "Aí está você. Separei seus livros para você."
   },
   "day3_morning_class_silence_6": {
-    "text": "Havia um estojo na extremidade direita da mesa. Foi definitivamente a minha mão que coloquei no compartimento da frente da minha bolsa pela manhã."
+    "text": "O estojo que eu tinha conferido antes estava alinhado direitinho na borda direita da carteira."
   },
   "day3_morning_class_silence_7": {
     "text": "O menino sentado ao meu lado dobrou e desdobrou a mesma ponta do livro e depois dobrou-o novamente."
@@ -337,7 +337,7 @@
     "text": "Seu braço não vai pegá-lo aqui. Você quase arrasou ontem também."
   },
   "day3_morning_class_sea_6": {
-    "text": "Não trouxe meu estojo ontem. Enquanto eu falava, Sea fechou o zíper da bolsa."
+    "text": "Era o conjunto que Sea tinha separado para mim no primeiro dia, quando vim sem estojo. Antes que eu dissesse qualquer coisa, Sea fechou o zíper da minha mochila."
   },
   "day3_morning_class_sea_7": {
     "text": "Quero dizer, a caneta que te emprestei. Você não se lembra?"
@@ -406,6 +406,6 @@
     "text": "A sombra da moldura da janela passou por cima da foto. Quando a luz mudou, um alfinete no quadro de avisos atrás da figura ficou visível."
   },
   "day3_expansion_action_5_b": {
-    "text": "Desdobrei o forro do bolso, inseri a foto e movi a alça da bolsa para o ombro oposto para evitar que dobrasse ao caminhar."
+    "text": "Escondi a foto na concha da mão para não amassar e passei a alça da mochila para o outro ombro."
   }
 }

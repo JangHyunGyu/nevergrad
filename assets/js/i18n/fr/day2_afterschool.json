@@ -1,12 +1,12 @@
 {
     "day2_after_start": {
-        "text": "*Le dernier cours se termine et Eunsu s'approche.*\n\nMadame, je dois aussi entrer mon numéro d'élève dans l'application téléchargée avec le dépliant d'hier ? Je pensais qu'il suffisait d'utiliser ma carte."
+        "text": "*Une fois le dernier cours terminé, Mme Eunsu s'est approchée de ma place.*\n\nMadame, il faut aussi entrer mon numéro d'élève dans l'application téléchargée avec la fiche d'hier ? Je pensais que la carte d'élève suffisait."
     },
     "day2_after_eunsu_1": {
         "text": "Le Wi-Fi, la bibliothèque et même le code de la cafétéria QR passent tous par l'application."
     },
     "day2_after_eunsu_2": {
-        "text": "C'est la dernière étape de ton inscription officielle comme nouvel élève. Il faut aussi installer le module Smart Campus pour que ton code QR puisse être lu à partir de demain."
+        "text": "C'est la dernière étape de ton inscription officielle comme nouvel élève. Il faut aussi installer le module Smart Campus pour que ton QR soit reconnu dès demain."
     },
     "day2_after_eunsu_3": {
         "text": "*« Hanul Smart Campus », noté 4,8, apparaît dans la boutique.*\n\nDonc ça s'intègre à l'application de sécurité installée provisoirement hier. C'est bien celle-ci ?"
@@ -21,7 +21,7 @@
         "text": "*Sur le Post-it de la prof, une petite coche figure déjà sous le numéro à six chiffres. Je le saisis dans l'appli.*\n\nÇa y est. Je touche quoi, maintenant ?"
     },
     "day2_after_eunsu_7": {
-        "text": "*Après avoir saisi mon numéro d’élève, les demandes d’autorisation se sont enchaînées.\n\n[Position] Vérification de localisation d’urgence dans l’établissement\n[Caméra] QR de carte élève\n[Micro] Appel d’urgence*\n\nJe comprends la caméra pour la carte. Le micro peut pas s'activer juste pendant les appels ? Et la position, il la faut tout le temps ?"
+        "text": "*Dès que j'ai saisi mon numéro d'élève, les demandes d'autorisation se sont enchaînées.*\n\n*[Position] Localisation d'urgence sur le campus*\n*[Caméra] QR de la carte d'élève*\n*[Micro] Appel d'urgence*\n\nJe comprends la caméra pour vérifier la carte d'élève. Mais le micro ne peut pas s'activer uniquement pendant un appel ? Et la position aussi, il faut la laisser activée en permanence ?"
     },
     "day2_after_eunsu_8": {
         "text": "*Une barre de défilement grise reste sous les autorisations.*\n\nIl y en a encore. Je dois tout activer ?"
@@ -46,7 +46,7 @@
         "text": "Définissez l'emplacement sur « Toujours autoriser ». Cela pose moins de problèmes sur le campus."
     },
     "day2_after_limit_3": {
-        "text": "…Est-ce vraiment nécessaire ?"
+        "text": "Je dois vraiment le laisser sur « Toujours autoriser » ?"
     },
     "day2_after_limit_4": {
         "text": "Cela a changé après l’année dernière. Le libellé de la notification a également été ajouté."
@@ -100,7 +100,7 @@
         "text": "Je devais en avoir au moins la moitié aujourd’hui."
     },
     "day2_after_sea_15": {
-        "text": "*Sea pose le formulaire sur le bureau.*\n\n*Après avoir travaillé un moment, elle met de la musique. C’est le groupe entendu à midi.*\n\nC'est la chanson que tu m'as fait écouter à midi."
+        "text": "*Sea pose le formulaire d'inscription sur le bureau.*\n\n*Tout en triant les feuilles, Sea lance doucement de la musique sur son téléphone. La voix grave du chanteur m'est familière.*\n\nC'est une chanson du groupe que tu m'as montré ce matin."
     },
     "day2_after_sea_16": {
         "text": "Quand c'est calme, on n'entend plus que le papier."
@@ -112,7 +112,7 @@
         "text": "{name}. Je peux mettre une chaise supplémentaire de côté pour toi ?"
     },
     "day2_after_sea_19": {
-        "text": "Il n'y avait pas une chaise en réserve ici ?"
+        "text": "Il n'y avait pas une chaise en plus ici, d'habitude ?"
     },
     "day2_after_sea_20": {
         "text": "*Sea regarde par la fenêtre. Le couchant éclaire la moitié de son visage. Une seule trace de tasse reste au bord du bureau.*\n\nY a qu'une trace de tasse. Les autres du conseil s'assoient ici, parfois ?"
@@ -121,7 +121,7 @@
         "text": "Il y en avait une, mais personne ne restait assis longtemps."
     },
     "day2_after_sea_22": {
-        "text": "*Sea essaie de sourire, puis froisse le coin de la feuille.*\n\nLe papier est froissé. Ce n'est rien, il suffit de le lisser."
+        "text": "*Sea essaie de sourire et corne le coin du formulaire.*\n\nLe coin de la feuille s'est plié. Il suffit de le lisser, ce n'est rien."
     },
     "day2_after_sea_choice": {
         "text": "*Que dire ?*",
@@ -144,7 +144,7 @@
         "text": "*Sea commence à écrire mon nom sur l'étiquette, puis le réécrit en lettres un peu plus petites.*\n\nPourquoi tu le réécris plus petit ? Ça va se perdre entre les formulaires."
     },
     "day2_after_sea_27": {
-        "text": "Je vais mettre l'étiquette ici."
+        "text": "Plutôt que sur le formulaire, je vais la coller ici, sur ta chaise."
     },
     "day2_after_sea_28": {
         "text": "On entend le papier maintenant. Ça ira comme ça.\n\n*Après ça, nous avons travaillé sans un mot. Le volume de la musique était un cran plus bas qu'avant.*"
@@ -159,7 +159,7 @@
         "text": "...Aujourd'hui, on peut le faire à deux. Je mettrai tes formulaires à part."
     },
     "day2_after_sea_invite_4": {
-        "text": "*Sans poser d’autre question, je tire une chaise.*"
+        "text": "*Quand je tire la chaise sans poser d'autres questions, Sea prend une petite planche d'étiquettes à côté de la boîte d'archives.*"
     },
     "day2_after_sea_silent_1": {
         "text": "*Au lieu de répondre, j'ai tiré une chaise du mur. Ses pieds ont raclé doucement le sol.*"
@@ -168,10 +168,10 @@
         "text": "Merci. Pose-le ici."
     },
     "day2_after_sea_silent_3": {
-        "text": "*Sea sort une feuille d'étiquettes.*"
+        "text": "*Sea sort une planche d'étiquettes de tri posée près du classeur.*"
     },
     "day2_after_hallway_1": {
-        "text": "*En quittant la salle du conseil des élèves, je descends le couloir et trouve des camarades de classe rassemblés près du distributeur automatique.*"
+        "text": "*Réunis sous la lumière du distributeur, quelques élèves de ma classe se sont tournés en me voyant approcher.*"
     },
     "day2_after_hallway_2": {
         "text": "Oh, {name} ! Qu'est-ce que tu fais ici ?"
@@ -201,7 +201,7 @@
         "text": "Merci. On mange bien où, par ici ? Racontez-moi aussi la fête sportive.\n\n*Je prends la canette de café au lait. Elle est froide.*\n\n*On bavarde un moment : les bonnes adresses près du lycée, les noms de classes pour la fête du sport, la vitesse à laquelle la prof principale corrige. Ce genre de choses.*"
     },
     "day2_after_hallway_11": {
-        "text": "*Je fais rouler la canette dans ma main. Du lait au café froid. Le même goût que celui d'hier.*"
+        "text": "*J'ai ouvert la canette et bu une gorgée. Du lait au café, doux et bien frais. C'est la première fois que j'en prends une ici, et pourtant l'arrière-goût m'est étrangement familier.*"
     },
     "day2_after_seolhwa_start": {
         "text": ""
@@ -228,7 +228,7 @@
         "text": "*Sa silhouette qui s'éloigne disparaît dans la cour de l'école. Elle se faufile entre les élèves, mais personne ne lui dit bonjour.*"
     },
     "day2_after_seolhwa_8": {
-        "text": "*Entre les épaules des élèves, je revois l’emplacement du bureau vide de Seolhwa.*\n\n*Demain, je regarderai derrière moi avant la sonnerie.*"
+        "text": "*Par-dessus les épaules des élèves qui rentraient chez eux, la place du fond près de la fenêtre m'a traversé l'esprit.*\n\n*Incapable de repartir tout de suite, je me suis retourné encore une fois vers l'intérieur du portail où Seolhwa avait disparu.*"
     },
     "day2_after_end": {
         "text": ""
@@ -246,13 +246,13 @@
         "text": "*Sea a posé la pince suivante dans ma paume. J’ai rapproché ma chaise. Cette fois, aucune feuille n’est tombée entre nous.*"
     },
     "day2_after_eunsu_checkin_1": {
-        "text": "Tu as pris le bon bus hier ? Je voulais te le demander avant les papiers."
+        "text": "Au fait, tu es bien rentré hier sans te perdre ? Je voulais te demander ça avant de regarder les réglages de l'application."
     },
     "day2_after_eunsu_checkin_2": {
-        "text": "Oui. Je sais rentrer maintenant."
+        "text": "Oui. J'ai à peu près repéré les ruelles autour du lycée maintenant."
     },
     "day2_after_eunsu_checkin_3": {
-        "text": "Bien. On va installer l’application ensemble. Demande-moi si une case te pose problème."
+        "text": "Tant mieux. Allez, finissons de l'installer ensemble ici. Si une case ne te dit rien, ne la saute pas et demande-moi."
     },
     "day2_after_detour_choice": {
         "text": "*À l'extérieur de la salle du conseil étudiant, le couloir éclairé par le coucher du soleil se divise en trois directions.*",

@@ -72,7 +72,7 @@
     "text": "***Top of screen: 'NEVERGRAD -- Subject Management System v4.7'***"
   },
   "day4_night_save_glitch_7": {
-    "text": "*A list appears. Thirteen rows.\n\n#01 Kim Dojin — Terminated\n#03 Park Seojin — Terminated / Day 4 escape attempt\n#07 Kim Taeho — ██ response / External contact: Lee Seolhwa\n#09 Han Jiho — Terminated / Day 3 early detection\n...\n#13 {name} — In Progress\n\nThe remaining rows are grayed out inside a collapsed menu.*"
+    "text": "*A list appears. Thirteen rows.\n\n#01 Kim Dojin — Terminated\n#03 Park Seojin — Terminated / Day 4 main gate escape attempt\n#07 Kim Taeho — ██ response / External contact: Lee Seolhwa\n#09 Han Jiho — Terminated / Day 3 early detection\n...\n#13 {name} — In Progress\n\nThe remaining rows are grayed out inside a collapsed menu.*"
   },
   "day4_night_save_glitch_8": {
     "text": "*I trace all thirteen rows with my finger, from the first to the last. Of the thirteen names, twelve are marked 'Terminated.'*"
@@ -105,13 +105,13 @@
     "text": "*Permission list at the bottom of the screen. Allowed is ON, blocked items are gray locks. Only location is still on.*"
   },
   "day4_night_save_glitch_18": {
-    "text": "*The permission items I tapped on Day 2 are still there. Regardless of my choices, the location logs were grouped into the same line.*"
+    "text": "*Whether I tapped Allow or Deny that day didn't matter at all. Every single location log had been recorded on the exact same line without exception.*"
   },
   "day4_night_save_glitch_19": {
     "text": "*The app closed. By itself. Back to the normal student menu. 'Have a good night, {name}!'*"
   },
   "day4_night_save_glitch_20": {
-    "text": "*It's the same icon. By day it showed my student QR code; at night it displays 13 rows.*"
+    "text": "*It's unmistakably the same icon. By day it was an ordinary student ID QR code, yet by night thirteen rows appear.*"
   },
   "day4_night_mirror": {
     "text": "*I unbuttoned two buttons on my uniform shirt. The spot where the collar button sat is red against my skin. I went to the bathroom. Turned on the sink. Washed my face.*"
@@ -192,13 +192,13 @@
     "text": "*Only the towel rack where Seolhwa stood is reflected in white.*"
   },
   "day4_night_mirror_hit1_10": {
-    "text": "*The basement door, Seolhwa, and the record for #07 fall into the same line.*"
+    "text": "*The image of Seolhwa standing in my room last night and the #07 record in the app line up together.*"
   },
   "day4_night_mirror_hit1_11": {
     "text": "*I remember row #07 in the app: `External contact: Lee Seolhwa`. The section beside it was blacked out.*\n\nSeolhwa. There was something hidden next to your name. What did it say?"
   },
   "day4_night_mirror_hit1_12": {
-    "text": "*The mirror shows only the empty bathroom, yet Seolhwa’s wet hair is visible on the right side of my vision.*\n\nStop. Don't look for me in the mirror. Look here."
+    "text": "*The bathroom in the mirror is empty, yet wet strands of hair flicker at the right edge of my vision.*\n\nStop looking. Don't search for me in the mirror—look over here."
   },
   "day4_night_mirror_hit1_13": {
     "text": "*The mirror and the edge of my vision are a notch out of alignment.*"
@@ -279,25 +279,25 @@
     "text": "*One. The same face, the thirteenth name. The twelve fields before it say “Terminated.”*"
   },
   "day4_night_plan_5": {
-    "text": "*Two. Eunsu opens the door, Riin offers the cup, and Sea even knows where I will look.*"
+    "text": "*Two. Ms. Eunsu opens the door, Ms. Riin handles the drugs, and Sea even knows where my eyes linger.*"
   },
   "day4_night_plan_6": {
     "text": "*Three. Seolhwa's trace appears beside #07. The mirror is empty, and only my left hand remembers first.*"
   },
   "day4_night_plan_7": {
-    "text": "*Four. I heard machinery and breathing beneath the old building. The empty seats are connected to the records from there, too.*"
+    "text": "*Four. The erased empty desks in the classroom and the restricted zone beneath the old building are tied together by the same records.*"
   },
   "day4_night_plan_8": {
     "text": "*five. Tomorrow night at 11pm. The last blank space in the attendance sheet is closed.*"
   },
   "day4_night_plan_9": {
-    "text": "*six. If it comes from the bottom, it goes up. Not the main gate, but outside the old building.*"
+    "text": "*Six. Once out from below, climb upward. Since the main gate is blocked, the emergency exit on the outer side of the old building is the only way.*"
   },
   "day4_night_plan_10": {
     "text": "*...I stopped writing. Put the pen down.*"
   },
   "day4_night_plan_11": {
-    "text": "*seven. Riin knows. You just don't know which door you will place your hand on.*"
+    "text": "*Seven. Ms. Riin knows the inside story, though there's no telling whether she'll help all the way to the end.*"
   },
   "day4_night_plan_12": {
     "text": "*eight. #03 ended up at the main gate. It cannot be the same way.*"
@@ -312,21 +312,21 @@
     "text": "*My hands tremble. The letters come out crooked. But I didn't stop.*"
   },
   "day4_night_plan_choice": {
-    "text": "*I wrote three points at the end of the note.*",
+    "text": "*At the bottom of the notebook page, I wrote down three paths.*",
     "choices": [
-      "go out of school",
-      "send the records out",
-      "Face Eunsu"
+      "Get out of the school",
+      "Send the records outside",
+      "Confront Ms. Eunsu"
     ]
   },
   "day4_night_plan_escape": {
     "text": "*The front gate is a dead end. I’ll take the old wing’s emergency exit.*"
   },
   "day4_night_plan_expose": {
-    "text": "*I need to get the documents outside. If they stay in my bag, this ends here.*"
+    "text": "*Any evidence I carry on me could be seized. I'll send copies outside first.*"
   },
   "day4_night_plan_confront": {
-    "text": "*Confront Eunsu with the record for #13 and the twelve cases before it.*"
+    "text": "*In front of Ms. Eunsu, I'll lay out the record for #13 and the twelve cases before it myself.*"
   },
   "day4_night_plan_final": {
     "text": "*I packed my bag. Evidence. Phone. Yuna's camera. The bare minimum.*"
@@ -364,20 +364,20 @@
     ]
   },
   "day4_night_deduction_record_match": {
-    "text": "*I touched the name beside #07. She had known me then. Seeing her now wasn’t proof that she was physically here.*"
+    "text": "*I traced the name beside #07. Seolhwa had been tangled up with me ever since back then. Just because my eyes see her right now doesn't mean she's physically standing inside this bathroom.*"
   },
   "day4_night_deduction_record_hint": {
     "text": "*The light and towel rail both had reflections. Only her place was empty. I looked from the name beside #07 to her face.*"
   },
   "day4_night_truth_sea_1": {
-    "text": "I placed the records on the desk in date order. In Sea's memo, the same food name was erased several times."
+    "text": "I pulled up the attached files in the safety app's admin panel in chronological order. On Sea's scanned notes, the name of the same dish had been erased again and again."
   },
   "day4_night_truth_sea_2": {
-    "text": "I chose three notes with the same question on them.",
+    "text": "On the screen, I selected and opened three scanned notes bearing the exact same question.",
     "choices": [
-      "Sort by date",
-      "Read the erased answer first",
-      "Compare with this week's records"
+      "Sort them by date",
+      "Read the erased answers first",
+      "Cross-check against this week's log"
     ]
   },
   "day4_night_truth_sea_3": {
@@ -398,10 +398,10 @@
     "text": "The same questions were dated in different years. There were twelve bundles between the first and last sheets."
   },
   "day4_night_truth_sea_right_2": {
-    "text": "Even the leftover side dishes were written down. What Sea memorized wasn't just the correct answer."
+    "text": "Even the side dishes I'd left half-eaten were noted down. Sea hadn't just memorized the right answers—she'd memorized every trace of what I disliked."
   },
   "day4_night_truth_sea_right_3": {
-    "text": "Next to the note, I wrote down the day I first said no and placed it next to the date I said it out loud this time."
+    "text": "I copied into my notebook the old date when my dislike was first written down, right beside the date I said it out loud myself this time."
   },
   "day4_night_truth_sea_wrong_1": {
     "text": "The date on the food note came before the search history."
@@ -416,11 +416,11 @@
     "text": "When I placed the date Seolhwa's name disappeared next to the date of her first dose reduction, there was only a single day between them."
   },
   "day4_night_truth_riin_3": {
-    "text": "There was an unread separate sheet attached to the medication record.",
+    "text": "Beside the scanned medication log sat an unopened attachment file.",
     "choices": [
-      "Check inventory quantity",
-      "Compare dosage signatures",
-      "Save the original you just read first."
+      "Check the stock count",
+      "Compare the dosage signatures",
+      "Take a screenshot of the current screen first"
     ]
   },
   "day4_night_truth_riin_4": {
@@ -441,7 +441,7 @@
     "text": "The note said: Damage observed. The first letter of the erased name remained below it."
   },
   "day4_night_truth_riin_right_3": {
-    "text": "I wrote only Seolhwa's date beside Riin's signature."
+    "text": "In my notebook, I wrote down the date of Ms. Riin's signature side by side with Seolhwa's date."
   },
   "day4_night_truth_riin_wrong_1": {
     "text": "The number of new ampoules that arrived on the same day was written down. The explanation that there was a shortage of medicine was not correct."
@@ -453,7 +453,7 @@
     "text": "There was a circle in the valid column of the board report. Internal observation records noted a disposal review on the same day."
   },
   "day4_night_truth_eunsu_2": {
-    "text": "Ms. Eunsu's signature was on both pages. It wasn't one mistaken form, but two separate reports."
+    "text": "Both documents bore Ms. Eunsu's signature. It wasn't a rough draft with a typo—it was a dual set of reports filed separately depending on the recipient."
   },
   "day4_night_truth_eunsu_3": {
     "text": "As the date passed until the thirteenth, the word \"valid\" was repeated for each basis approved for the next cycle."
@@ -473,13 +473,13 @@
     "text": "The graduation approval box was empty all 13 times. The seal of validity was the words that saved me and the words that I left behind."
   },
   "day4_night_truth_eunsu_right_2": {
-    "text": "I closed the document and wrote down what the teacher said. It meant staying in my class until the end."
+    "text": "I lowered the screen and copied into my notebook what she had told me: to stay in her homeroom class until the very end."
   },
   "day4_night_truth_eunsu_right_3": {
     "text": "I left only a blank space for the questions I'd put to her directly."
   },
   "day4_night_truth_eunsu_wrong_1": {
-    "text": "If I didn't know the contents, I couldn't explain the revised input date. The handwriting under the signature was also the teacher's."
+    "text": "Had she not known the contents, there would be no explaining the entry date she revised by hand. The handwriting in the margin below the signature was Ms. Eunsu's as well."
   },
   "day4_night_truth_eunsu_wrong_2": {
     "text": "The graduation approval section was never filled out. I went back to recording my internal observations."
@@ -491,7 +491,7 @@
     "text": "When the dates of the three records were connected in one line, it was clear who had hidden the same thing and who had changed it slightly."
   },
   "day4_night_truth_complete_2": {
-    "text": "I folded the questions for tomorrow into separate slips for each person and tucked them away."
+    "text": "I tore the pages of questions for tomorrow out of my notebook, folded them separately by person, and tucked them away."
   },
   "day4_night_truth_complete_3": {
     "text": "As I wrote the last date with my left hand, Seolhwa looked at the back of my hand and nodded quietly."
@@ -500,7 +500,7 @@
     "text": "Dates that do not match are left blank. If I pretended to know, I couldn't ask the same question tomorrow."
   },
   "day4_night_truth_partial_2": {
-    "text": "Only the confirmed originals were folded. I left the rest of the photos and stacked them in the order in which they would be unfolded again."
+    "text": "I folded away only the notebook entries I'd verified so far. For the rest, I took screenshots and arranged them in the order I'd cross-check tomorrow."
   },
   "day4_history_callback_34": {
     "text": "I found what I heard directly from Sea in my notebook. I wrote it down separately to see if the person who received the notification and the person whose permissions were changed were the same."
@@ -509,18 +509,18 @@
     "text": "I drew a keychain that hung in the pocket of the health room. I also had to check which door the hand that had been drugged would open."
   },
   "day4_history_callback_36": {
-    "text": "I placed the key story I wrote down next to the report. The answer that the door opens from the inside was also left along with the date."
+    "text": "I held my note about the key up beside the report screen. I also recorded in my notebook, along with the date, the answer that the door opens from the inside."
   },
   "day4_expansion_action_8_a": {
-    "text": "When I matched the folds on the back of the paper, I could see that even though the years were different, the questions were asked in the same order."
+    "text": "Zooming in to match even the paper creases in the scans revealed that the questions had always been asked in the exact same order, even across different years."
   },
   "day4_expansion_action_8_b": {
-    "text": "The first answer I deleted was the sentence about liking eggs. There were more handprints left there than on the note where the correct answer was written."
+    "text": "The first answer erased was a line saying I liked eggs. Far more pencil smudges lingered around the erased spot than in the space with the right answer."
   },
   "day4_expansion_action_9_a": {
-    "text": "When I added the received quantity, the remaining amount was correct. I didn't reduce my share because of insufficient inventory."
+    "text": "When I added up the incoming stock, the remaining amount matched to the drop. My dosage hadn't been lowered because supplies were running short."
   },
   "day4_expansion_action_9_b": {
-    "text": "The date under the signature had been changed first. Riin corrected the figures one day before the other personnel."
+    "text": "The date beneath the signature had been altered first. Ms. Riin had lowered the dosage figure a day ahead of the other staff."
   }
 }

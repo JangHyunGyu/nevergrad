@@ -1,12 +1,12 @@
 {
     "day2_after_start": {
-        "text": "*The last class ends and Eunsu approaches.*\n\nMa'am, do I have to enter my student ID number in the app I downloaded from yesterday's leaflet? I thought I only needed my student card."
+        "text": "*After the last class ends, Ms. Eunsu walks over to my desk.*\n\nMs. Eunsu, do I have to enter my student number in the app from yesterday's handout too? I thought just using my student ID card was enough."
     },
     "day2_after_eunsu_1": {
         "text": "Wi-Fi, the library, even the cafeteria QR code all go through the app."
     },
     "day2_after_eunsu_2": {
-        "text": "It's the final step of your official transfer registration. You need the Smart Campus module installed too for your QR code to scan from tomorrow."
+        "text": "It's the final step of your official transfer registration. You need the Smart Campus module installed too for your QR code to scan starting tomorrow."
     },
     "day2_after_eunsu_3": {
         "text": "*The store lists 'Hanul Smart Campus', rated 4.8.*\n\nSo it links up with the safety app I provisionally installed yesterday. This is the one, right?"
@@ -21,7 +21,7 @@
         "text": "*The Post-it from my teacher already has a small check below the six-digit number. I enter it in the app.*\n\nI'm in. What do I tap now?"
     },
     "day2_after_eunsu_7": {
-        "text": "*When I entered my student number, permission requests appeared one after another.\n\n[Location] Campus emergency location check\n[Camera] Student ID QR\n[Microphone] Emergency call*\n\nI understand the camera for my ID. Can't the microphone switch on only during calls? Does it need my location all the time too?"
+        "text": "*As soon as I entered my student number, permission prompts popped up one after another.*\n\n*[Location] Campus emergency location check*\n*[Camera] Student ID QR*\n*[Microphone] Emergency call*\n\nI get needing the camera to check my student ID. Can't the microphone turn on only during a call? And do I have to leave location on all the time too?"
     },
     "day2_after_eunsu_8": {
         "text": "*A gray scrollbar remains below the permission window.*\n\nThere's more down there. Do I need all of them on?"
@@ -46,7 +46,7 @@
         "text": "Set location to 'Always Allow.' It causes fewer problems on campus."
     },
     "day2_after_limit_3": {
-        "text": "...Is that really necessary?"
+        "text": "Do I really have to leave it set to 'Always Allow'?"
     },
     "day2_after_limit_4": {
         "text": "It changed after last year. The notification wording was added then too."
@@ -100,7 +100,7 @@
         "text": "I was supposed to collect at least half by the end of today."
     },
     "day2_after_sea_15": {
-        "text": "*Sea sets the application form on the desk.*\n\n*After we have worked for a while, she puts on some music. It's the band from lunch.*\n\nThat's the song you played at lunch."
+        "text": "*Sea sets the application form on the desk.*\n\n*While sorting through the papers, Sea puts on music at a low volume from her phone. The low, steady vocals sound familiar.*\n\nThat's a song by the band you showed me this morning."
     },
     "day2_after_sea_16": {
         "text": "When it's quiet, all you can hear is the paper."
@@ -112,7 +112,7 @@
         "text": "{name}. Can I leave another chair out for you?"
     },
     "day2_after_sea_19": {
-        "text": "Wasn't there a spare chair here?"
+        "text": "Wasn't there a spare chair in here?"
     },
     "day2_after_sea_20": {
         "text": "*Sea looks out the window. Sunset falls across half her face. A single cup ring remains at the edge of the desk.*\n\nThere's only one cup mark. Do the other council members ever sit here?"
@@ -121,7 +121,7 @@
         "text": "There was, but no one ever sat there for long."
     },
     "day2_after_sea_22": {
-        "text": "*Sea tries to smile, but crumples the corner of the paper.*\n\nThe paper's crumpled. It's okay, you can smooth it out."
+        "text": "*Sea tries to smile, crumpling the corner of the application form.*\n\nThe corner folded. Just smooth it back out, it's fine."
     },
     "day2_after_sea_choice": {
         "text": "*What should I say?*",
@@ -144,7 +144,7 @@
         "text": "*Sea starts writing my name on the label, then rewrites the letters a little smaller.*\n\nWhy write it smaller? It'll get lost between the forms."
     },
     "day2_after_sea_27": {
-        "text": "I'll put the label here."
+        "text": "Instead of the form, I'll stick it right here on your chair."
     },
     "day2_after_sea_28": {
         "text": "I can hear the paper now. This should do.\n\n*After that, we worked without a word. The music was one notch lower than before.*"
@@ -159,7 +159,7 @@
         "text": "It's fine if it's just the two of us today. I'll keep your application separate."
     },
     "day2_after_sea_invite_4": {
-        "text": "*I don't ask again. I pull out the chair.*"
+        "text": "*When I pull out the chair without asking anything else, Sea takes a small sheet of labels from beside the file box.*"
     },
     "day2_after_sea_silent_1": {
         "text": "*Instead of answering, I pulled a chair from the wall. Its legs scraped quietly across the floor.*"
@@ -168,10 +168,10 @@
         "text": "Thanks. You can put it here."
     },
     "day2_after_sea_silent_3": {
-        "text": "*Sea takes out a label sheet.*"
+        "text": "*Sea takes out a sheet of sorting labels from beside the binder.*"
     },
     "day2_after_hallway_1": {
-        "text": "*Leaving the student council room, I walk down the hallway and find some classmates gathered by the vending machine.*"
+        "text": "*Standing together under the glow of the vending machine, a few kids from my class turned as they saw me walk up.*"
     },
     "day2_after_hallway_2": {
         "text": "Oh, {name}! What are you doing here?"
@@ -201,7 +201,7 @@
         "text": "Thanks. Where's good to eat nearby? Tell me about sports day too.\n\n*I took the can of coffee milk. It was cold.*\n\n*We chatted for a while—places to eat near school, class names for sports day, how fast our homeroom teacher graded. Things like that.*"
     },
     "day2_after_hallway_11": {
-        "text": "*I rolled the can in my hand. Cold coffee milk. The same flavor as the one I got yesterday.*"
+        "text": "*I popped the tab and took a sip. Sweet, cold coffee milk. Even though it's the first can I've bought from this machine, the aftertaste feels strangely familiar.*"
     },
     "day2_after_seolhwa_start": {
         "text": ""
@@ -228,7 +228,7 @@
         "text": "*Her retreating figure disappears across the schoolyard. She slips between the other students, but no one greets her.*"
     },
     "day2_after_seolhwa_8": {
-        "text": "*Between the students' shoulders, I pictured where Seolhwa's empty desk had been.*\n\n*Tomorrow, I'll look back before the bell rings.*"
+        "text": "*Past the shoulders of students heading home, the window seat in the very back row flashed across my mind.*\n\n*Unable to pull myself away right away, I looked back once more inside the school gate where Seolhwa had vanished.*"
     },
     "day2_after_end": {
         "text": ""
@@ -246,13 +246,13 @@
         "text": "*Sea placed the next clip in my palm. I pulled my chair closer. This time, no papers slipped between us.*"
     },
     "day2_after_eunsu_checkin_1": {
-        "text": "Did you catch the right bus yesterday? I meant to ask before getting into paperwork."
+        "text": "Oh, right—did you make it home yesterday without getting lost? I meant to ask you that first before looking at the app settings."
     },
     "day2_after_eunsu_checkin_2": {
-        "text": "Yes. I know my way home now."
+        "text": "Yes. I've mostly got the hang of the side streets near school now."
     },
     "day2_after_eunsu_checkin_3": {
-        "text": "Good. Let’s install the app together. Ask me about any field you don’t understand."
+        "text": "That's a relief. All right, let's finish setting it up together right here. Don't just skip over any field you're unsure about—ask me."
     },
     "day2_after_detour_choice": {
         "text": "*Outside the student council room, the sunset-lit hallway split in three directions.*",

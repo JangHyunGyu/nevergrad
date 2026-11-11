@@ -249,11 +249,11 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_eunsu_8": {
         character: "eunsu_warm",
-        next: "day1_after_eunsu_counsel_1"
+        next: "day1_after_eunsu_9"
     },
     "day1_after_eunsu_9": {
         character: "eunsu_warm",
-        next: "day1_after_eunsu_10"
+        next: "day1_after_eunsu_counsel_1"
     },
     "day1_after_eunsu_10": {
         character: "eunsu_warm",
@@ -321,7 +321,7 @@ Object.assign(SCENARIO[1], {
     },
     "day1_after_eunsu_counsel_3": {
         character: "eunsu_warm",
-        next: "day1_after_eunsu_9"
+        next: "day1_after_eunsu_10"
     },
     "day1_after_yuna_cat_1": {
         character: "yuna_shy",

@@ -443,7 +443,7 @@ Object.assign(SCENARIO[1], {
                 "next": "day1_night_riin_msg_1"
             },
             {
-                "condition": "met_yuna",
+                "condition": "received_yuna_photo",
                 "next": "day1_night_yuna_msg_1"
             }
         ],
@@ -453,7 +453,6 @@ Object.assign(SCENARIO[1], {
         "character": "riin_smile",
         "charOpacity": 0.7,
         "night": true,
-        "messengerDelay": 1000,
         "next": "day1_night_riin_msg_2"
     },
     "day1_night_riin_msg_2": {
@@ -467,7 +466,6 @@ Object.assign(SCENARIO[1], {
         "character": "riin_smile",
         "charOpacity": 0.7,
         "night": true,
-        "messengerDelay": 1000,
         "next": "day1_night_riin_msg_4"
     },
     "day1_night_riin_msg_4": {
@@ -481,7 +479,6 @@ Object.assign(SCENARIO[1], {
         "character": "riin_smile",
         "charOpacity": 0.7,
         "night": true,
-        "messengerDelay": 1000,
         "next": "day1_night_riin_msg_6"
     },
     "day1_night_riin_msg_6": {
@@ -495,14 +492,12 @@ Object.assign(SCENARIO[1], {
         "character": "riin_smile",
         "charOpacity": 0.7,
         "night": true,
-        "messengerDelay": 1000,
         "next": "day1_night_riin_msg_8"
     },
     "day1_night_riin_msg_8": {
         "character": "riin_smile",
         "charOpacity": 0.7,
         "night": true,
-        "messengerDelay": 1000,
         "next": "day1_night_riin_msg_choice"
     },
     "day1_night_riin_msg_choice": {
@@ -547,7 +542,6 @@ Object.assign(SCENARIO[1], {
         "night": true,
         "character": "yuna_normal",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_yuna_msg_2"
     },
     "day1_night_yuna_msg_2": {
@@ -561,7 +555,6 @@ Object.assign(SCENARIO[1], {
         "night": true,
         "character": "yuna_normal",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_yuna_msg_4"
     },
     "day1_night_yuna_msg_4": {
@@ -575,7 +568,6 @@ Object.assign(SCENARIO[1], {
         "night": true,
         "character": "yuna_normal",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_yuna_msg_6"
     },
     "day1_night_yuna_msg_6": {
@@ -589,14 +581,12 @@ Object.assign(SCENARIO[1], {
         "night": true,
         "character": "yuna_normal",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_yuna_msg_8"
     },
     "day1_night_yuna_msg_8": {
         "night": true,
         "character": "yuna_normal",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_yuna_msg_choice"
     },
     "day1_night_yuna_msg_choice": {
@@ -640,14 +630,12 @@ Object.assign(SCENARIO[1], {
     },
     "day1_night_yuna_msg_bye_1": {
         "night": true,
-        "messengerDelay": 1100,
         "next": "day1_night_sleep_1"
     },
     "day1_night_eunsu_msg_1": {
         "night": true,
         "character": "eunsu_gentle",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_eunsu_msg_2"
     },
     "day1_night_eunsu_msg_2": {
@@ -661,7 +649,6 @@ Object.assign(SCENARIO[1], {
         "night": true,
         "character": "eunsu_gentle",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_eunsu_msg_4"
     },
     "day1_night_eunsu_msg_4": {
@@ -675,7 +662,6 @@ Object.assign(SCENARIO[1], {
         "night": true,
         "character": "eunsu_gentle",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_eunsu_msg_6"
     },
     "day1_night_eunsu_msg_6": {
@@ -683,26 +669,18 @@ Object.assign(SCENARIO[1], {
         "character": "eunsu_gentle",
         "charOpacity": 0.7,
         "messengerDelay": 1100,
-        "next": "day1_night_eunsu_msg_7",
-        "branches": [
-            {
-                "condition": "asked_safety_app_day1",
-                "next": "day1_history_callback_4"
-            }
-        ]
+        "next": "day1_night_eunsu_msg_7"
     },
     "day1_night_eunsu_msg_7": {
         "night": true,
         "character": "eunsu_gentle",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_eunsu_msg_8"
     },
     "day1_night_eunsu_msg_8": {
         "night": true,
         "character": "eunsu_gentle",
         "charOpacity": 0.7,
-        "messengerDelay": 1100,
         "next": "day1_night_eunsu_msg_choice"
     },
     "day1_night_eunsu_msg_choice": {
@@ -740,11 +718,10 @@ Object.assign(SCENARIO[1], {
     "day1_night_eunsu_msg_app_1": {
         "night": true,
         "messengerDelay": 1100,
-        "next": "day1_night_sleep_1"
+        "next": "day1_history_callback_4"
     },
     "day1_night_eunsu_msg_rest_1": {
         "night": true,
-        "messengerDelay": 1100,
         "next": "day1_night_sleep_1"
     },
     "day1_history_callback_1": {
@@ -760,8 +737,9 @@ Object.assign(SCENARIO[1], {
         "next": "day1_night_app_12"
     },
     "day1_history_callback_4": {
-        "character": "eunsu_gentle",
-        "next": "day1_night_eunsu_msg_7"
+        "night": true,
+        "character": null,
+        "next": "day1_night_sleep_1"
     },
     "day1_expansion_action_1_a": {
         "character": null,

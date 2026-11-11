@@ -72,7 +72,7 @@
     "text": "***Parte superior da tela: 'NEVERGRAD -- Sujeito Management System v4.7'***"
   },
   "day4_night_save_glitch_7": {
-    "text": "*Uma lista aparece. 13 linhas.\n\n#01 Kim Dojin — Encerrado\n#03 Park Seojin — Encerrado / Tentativa de saída Dia 4\n#07 Kim Taeho — ██ reação / Contato externo: Lee Seolhwa\n#09 Han Jiho — Encerrado / Detecção precoce Dia 3\n...\n#13 {name} — Em andamento\n\nAs outras linhas estão fechadas em cinza dentro de um menu recolhido.*"
+    "text": "*Uma lista aparece. 13 linhas.\n\n#01 Kim Dojin — Encerrado\n#03 Park Seojin — Encerrado / Tentativa de saída pelo portão principal Dia 4\n#07 Kim Taeho — ██ reação / Contato externo: Lee Seolhwa\n#09 Han Jiho — Encerrado / Detecção precoce Dia 3\n...\n#13 {name} — Em andamento\n\nAs linhas restantes estão ocultas em cinza dentro de um menu recolhido.*"
   },
   "day4_night_save_glitch_8": {
     "text": "*Passo o dedo por todas as treze linhas, da primeira à última. Dos treze nomes, doze estão marcados como 'Encerrado'.*"
@@ -105,13 +105,13 @@
     "text": "*Lista de permissões na parte inferior da tela. Permitido é ON, os itens bloqueados são cadeados cinza. Apenas a localização ainda está ativada.*"
   },
   "day4_night_save_glitch_18": {
-    "text": "*As permissões que eu tinha tocado no Day 2 continuam lá. Independentemente das escolhas, os logs de localização estavam agrupados na mesma linha.*"
+    "text": "*Não fazia diferença se naquele dia eu tinha tocado em Permitir ou Recusar. Todos os registros de localização estavam gravados na mesma linha, sem faltar nenhum.*"
   },
   "day4_night_save_glitch_19": {
     "text": "*O aplicativo foi fechado. Por si só. Voltar ao menu normal do aluno. 'Tenha uma boa noite, {name}!'*"
   },
   "day4_night_save_glitch_20": {
-    "text": "*É o mesmo ícone. De dia mostrava o QR do cartão de aluno; à noite exibe 13 linhas.*"
+    "text": "*É claramente o mesmo ícone. De dia era um QR code comum da carteirinha de estudante, mas à noite aparecem 13 linhas.*"
   },
   "day4_night_mirror": {
     "text": "*Desabotoei dois botões da camisa do uniforme. A marca do botão da gola ficou vermelha na pele. Fui ao banheiro. Abri a torneira da pia. Lavei o rosto.*"
@@ -192,13 +192,13 @@
     "text": "*Só o toalheiro no lugar onde Seolhwa estava se reflete em branco.*"
   },
   "day4_night_mirror_hit1_10": {
-    "text": "*A porta do porão, Seolhwa e o registro do número 07 ficam na mesma linha.*"
+    "text": "*A imagem de Seolhwa parada ontem à noite no meu quarto e o registro #07 no aplicativo se conectam numa única linha.*"
   },
   "day4_night_mirror_hit1_11": {
     "text": "*Lembro da linha #07 no aplicativo: `Contato externo: Lee Seolhwa`. A parte ao lado estava coberta de preto.*\n\nSeolhwa. Tinha uma parte escondida ao lado do seu nome. O que estava escrito?"
   },
   "day4_night_mirror_hit1_12": {
-    "text": "*O espelho só mostra o banheiro vazio, mas vejo o cabelo molhado de Seolhwa no lado direito do meu campo de visão.*\n\nPara. Não me procura no espelho. Olha aqui."
+    "text": "*O banheiro no espelho está vazio, mas no canto direito da minha visão fios de cabelo molhado tremulam.*\n\nPare de olhar aí. Não me procure no espelho, olhe para cá."
   },
   "day4_night_mirror_hit1_13": {
     "text": "*O espelho e a borda da minha visão ficam desalinhados em um pequeno descompasso.*"
@@ -279,25 +279,25 @@
     "text": "*Um. O mesmo rosto, o décimo terceiro nome. Nos doze campos anteriores está escrito “Encerrado”.*"
   },
   "day4_night_plan_5": {
-    "text": "*Dois. Eunsu abre a porta, Riin oferece o copo, e Sea até sabe onde vou olhar.*"
+    "text": "*Dois. A professora Eunsu abre a porta, a professora Riin cuida dos remédios, e Sea conhece até para onde eu olho.*"
   },
   "day4_night_plan_6": {
     "text": "*Três. Seolhwa = contato externo de #07. Não aparece refletida nos espelhos. Ligada à pista da mão esquerda.*"
   },
   "day4_night_plan_7": {
-    "text": "*Quatro. Ouvi máquinas e respiração sob o prédio antigo. As carteiras vazias também estão ligadas aos registros de lá.*"
+    "text": "*Quatro. As carteiras vazias apagadas da sala e a área restrita sob o prédio antigo estão ligadas pelos mesmos registros.*"
   },
   "day4_night_plan_8": {
     "text": "*cinco. Amanhã à noite às 23h. O último espaço em branco da folha de presença é fechado.*"
   },
   "day4_night_plan_9": {
-    "text": "*seis. Se vem de baixo, sobe. Não no portão principal, mas fora do prédio antigo.*"
+    "text": "*Seis. Ao sair lá de baixo, subir. Como o portão principal está bloqueado, só resta a saída de emergência externa do prédio antigo.*"
   },
   "day4_night_plan_10": {
     "text": "*...parei de escrever. Abaixe a caneta.*"
   },
   "day4_night_plan_11": {
-    "text": "*Sete. Riin sabe. Você simplesmente não sabe em qual porta colocará a mão.*"
+    "text": "*Sete. A professora Riin conhece os bastidores, mas não dá para saber se vai ajudar até o fim.*"
   },
   "day4_night_plan_12": {
     "text": "*oito. #03 acabou no portão principal. Não pode ser da mesma forma.*"
@@ -312,21 +312,21 @@
     "text": "*Minhas mãos tremem. As letras saem tortas. Mas eu não parei.*"
   },
   "day4_night_plan_choice": {
-    "text": "*Escrevi três pontos no final da nota.*",
+    "text": "*No fim da página do caderno, anotei três caminhos.*",
     "choices": [
-      "sair da escola",
-      "enviar os registros",
-      "Cara Eunsu"
+      "Sair da escola",
+      "Enviar os registros para fora",
+      "Confrontar a professora Eunsu"
     ]
   },
   "day4_night_plan_escape": {
     "text": "*O portão é um beco sem saída. Vou pela saída de emergência da ala antiga.*"
   },
   "day4_night_plan_expose": {
-    "text": "*Preciso levar os documentos para fora. Se ficarem na mochila, tudo termina aqui.*"
+    "text": "*As provas que eu carregar comigo podem ser tomadas. Vou mandar cópias para fora primeiro.*"
   },
   "day4_night_plan_confront": {
-    "text": "*Confrontar Eunsu com o registro do número 13 e os doze casos anteriores.*"
+    "text": "*Diante da professora Eunsu, vou expor pessoalmente o registro número 13 e os doze casos anteriores.*"
   },
   "day4_night_plan_final": {
     "text": "*Arrumei minha mala. Evidência. Telefone. Câmera do Yuna. O mínimo.*"
@@ -364,20 +364,20 @@
     ]
   },
   "day4_night_deduction_record_match": {
-    "text": "*Toquei o nome ao lado de #07. Ela já me conhecia naquela época. Enxergá-la agora não provava que estivesse fisicamente aqui.*"
+    "text": "*Apontei o nome ao lado de #07. Seolhwa estava envolvida comigo desde aquela época. Só porque meus olhos a enxergam agora não quer dizer que ela esteja de fato parada dentro deste banheiro.*"
   },
   "day4_night_deduction_record_hint": {
     "text": "*A luz e o toalheiro apareciam no espelho. Só o lugar dela estava vazio. Olhei do nome ao lado de #07 para o rosto dela.*"
   },
   "day4_night_truth_sea_1": {
-    "text": "Coloquei os registros na mesa em ordem de data. No memorando de Sea, o mesmo nome do alimento foi apagado várias vezes."
+    "text": "Abri em ordem de data os registros anexados no painel de administração do aplicativo de segurança. Nas anotações escaneadas de Sea, o nome da mesma comida tinha sido apagado várias vezes."
   },
   "day4_night_truth_sea_2": {
-    "text": "Escolhi três notas com a mesma pergunta.",
+    "text": "Na tela, selecionei e abri três escaneamentos de notas que traziam a mesma pergunta.",
     "choices": [
-      "Classificar por data",
-      "Leia a resposta apagada primeiro",
-      "Compare com os registros desta semana"
+      "Ordenar por data",
+      "Ler primeiro as respostas apagadas",
+      "Comparar com o registro desta semana"
     ]
   },
   "day4_night_truth_sea_3": {
@@ -398,10 +398,10 @@
     "text": "As mesmas perguntas foram datadas em anos diferentes. Havia doze pacotes entre a primeira e a última folha."
   },
   "day4_night_truth_sea_right_2": {
-    "text": "Até os acompanhamentos que sobraram foram anotados. O que Sea memorizou não foi apenas a resposta correta."
+    "text": "Até os acompanhamentos deixados no prato estavam anotados. Sea não tinha decorado só as respostas certas, mas cada vestígio do que eu detestava."
   },
   "day4_night_truth_sea_right_3": {
-    "text": "Ao lado do bilhete, anotei o dia em que disse não pela primeira vez e coloquei ao lado da data em que disse em voz alta desta vez."
+    "text": "Copiei no caderno a data antiga em que anotaram pela primeira vez que eu não gostava daquilo, lado a lado com o dia em que eu mesmo falei isso desta vez."
   },
   "day4_night_truth_sea_wrong_1": {
     "text": "A data da anotação sobre comida era anterior ao histórico de pesquisa."
@@ -416,11 +416,11 @@
     "text": "Ao colocar lado a lado a data em que o nome de Seolhwa desapareceu e a data da primeira redução de dose, havia apenas um dia entre elas."
   },
   "day4_night_truth_riin_3": {
-    "text": "Havia uma folha separada não lida anexada ao registro de medicação.",
+    "text": "Ao lado do escaneamento do registro de medicação havia um arquivo anexo ainda não aberto.",
     "choices": [
-      "Verifique a quantidade em estoque",
-      "Compare assinaturas de dosagem",
-      "Salve o original que você acabou de ler primeiro."
+      "Conferir a quantidade em estoque",
+      "Comparar as assinaturas da dosagem",
+      "Capturar primeiro a tela aberta agora"
     ]
   },
   "day4_night_truth_riin_4": {
@@ -441,7 +441,7 @@
     "text": "A nota dizia: Danos observados. A primeira letra do nome apagado permaneceu abaixo dela."
   },
   "day4_night_truth_riin_right_3": {
-    "text": "Ao lado da assinatura de Riin, anotei apenas a data de Seolhwa."
+    "text": "No caderno, anotei lado a lado a data da assinatura da professora Riin e a data de Seolhwa."
   },
   "day4_night_truth_riin_wrong_1": {
     "text": "Foi anotado o número de novas ampolas que chegaram no mesmo dia. A explicação de que havia escassez de medicamentos não estava correta."
@@ -453,7 +453,7 @@
     "text": "Havia um círculo na coluna válida do relatório do conselho. Os registros de observação interna registraram uma revisão do descarte no mesmo dia."
   },
   "day4_night_truth_eunsu_2": {
-    "text": "A assinatura da professora Eunsu estava em ambos os lados. Não era um único documento incorreto, mas dois relatórios diferentes."
+    "text": "Os dois documentos traziam a assinatura da professora Eunsu. Não era um rascunho com erro de grafia, mas um relatório duplo enviado separadamente conforme o destinatário."
   },
   "day4_night_truth_eunsu_3": {
     "text": "À medida que a data avançava até o dia 13, a palavra “válida” se repetia para cada base aprovada para o ciclo seguinte."
@@ -473,13 +473,13 @@
     "text": "A caixa de aprovação da formatura ficou vazia todas as 13 vezes. O selo de validade foram as palavras que me salvaram e as palavras que deixei para trás."
   },
   "day4_night_truth_eunsu_right_2": {
-    "text": "Fechei o documento e anotei o que a professora disse. Significava ficar na minha aula até o fim."
+    "text": "Abaixei a tela e anotei no caderno o que a professora tinha dito: para eu continuar na turma dela até o fim."
   },
   "day4_night_truth_eunsu_right_3": {
     "text": "Deixei apenas um espaço para questionar a professora diretamente."
   },
   "day4_night_truth_eunsu_wrong_1": {
-    "text": "Se eu não conhecesse o conteúdo, não poderia explicar a data de entrada revisada. A caligrafia abaixo da assinatura também era da professora."
+    "text": "Se ela não soubesse do conteúdo, não haveria como explicar a data de entrada corrigida à mão. A caligrafia da anotação abaixo da assinatura também era da professora Eunsu."
   },
   "day4_night_truth_eunsu_wrong_2": {
     "text": "A seção de aprovação de formatura nunca foi preenchida. Voltei a registrar minhas observações internas."
@@ -491,7 +491,7 @@
     "text": "Quando as datas dos três registros foram conectadas em uma linha, ficou claro quem havia escondido a mesma coisa e quem a havia mudado ligeiramente."
   },
   "day4_night_truth_complete_2": {
-    "text": "Separei as perguntas de amanhã por pessoa, dobrei cada folha e guardei."
+    "text": "Destaquei do caderno as perguntas que faria amanhã, dobrei cada uma separada por pessoa e guardei."
   },
   "day4_night_truth_complete_3": {
     "text": "Enquanto escrevia a última data com a mão esquerda, Seolhwa olhou para as costas da minha mão e acenou com a cabeça baixinho."
@@ -500,7 +500,7 @@
     "text": "As datas que não coincidem são deixadas em branco. Se eu fingisse saber, não poderia fazer a mesma pergunta amanhã."
   },
   "day4_night_truth_partial_2": {
-    "text": "Apenas os originais confirmados foram dobrados. Deixei o resto das fotos e empilhei-as na ordem em que seriam desdobradas novamente."
+    "text": "Dobrei e guardei primeiro apenas as anotações já confirmadas do caderno. Do restante, fiz capturas de tela e organizei na ordem em que vou conferir amanhã."
   },
   "day4_history_callback_34": {
     "text": "Encontrei o que ouvi diretamente de Sea em meu notebook. Anotei separadamente para ver se a pessoa que recebeu a notificação e a pessoa cujas permissões foram alteradas eram as mesmas."
@@ -509,18 +509,18 @@
     "text": "Desenhei um chaveiro que estava pendurado no bolso da sala de saúde. Também tive que verificar qual porta a mão drogada abriria."
   },
   "day4_history_callback_36": {
-    "text": "Coloquei a história principal que anotei ao lado do relatório. A resposta que a porta abre por dentro também foi deixada junto com a data."
+    "text": "Coloquei minha anotação sobre a chave ao lado da tela do relatório. Também deixei registrado no caderno, junto com a data, que a porta abre por dentro."
   },
   "day4_expansion_action_8_a": {
-    "text": "Ao combinar as dobras do verso do papel, pude perceber que, embora os anos fossem diferentes, as perguntas eram feitas na mesma ordem."
+    "text": "Ao ampliar até alinhar as dobras do papel nos escaneamentos, ficou claro que as perguntas sempre tinham sido feitas na mesma ordem, mesmo em anos diferentes."
   },
   "day4_expansion_action_8_b": {
-    "text": "A primeira resposta que apaguei foi a frase sobre gostar de ovos. Havia mais impressões de mãos ali do que na nota onde a resposta correta estava escrita."
+    "text": "A primeira resposta apagada era uma frase dizendo que eu gostava de ovo. Havia muito mais manchas de grafite ao redor do lugar apagado do que no espaço da resposta certa."
   },
   "day4_expansion_action_9_a": {
-    "text": "Quando adicionei a quantidade recebida, o valor restante estava correto. Não reduzi minha participação por causa de estoque insuficiente."
+    "text": "Quando somei a quantidade recebida, o saldo restante bateu certinho. Não tinham reduzido a minha dose por falta de estoque."
   },
   "day4_expansion_action_9_b": {
-    "text": "A data sob a assinatura foi alterada primeiro. Riin corrigiu os números um dia antes do restante do pessoal."
+    "text": "A data embaixo da assinatura tinha sido alterada primeiro. A professora Riin havia reduzido o número da dosagem um dia antes dos outros responsáveis."
   }
 }

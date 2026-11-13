@@ -1099,9 +1099,32 @@
         "appKillDuration": 1200
       },
       "unskippable": true,
+      "next": "day3_night_pressure_branch"
+    },
+    "day3_night_pressure_seolhwa_6": {
       "changeDay": 4,
       "changeSlot": "morning",
-      "next": "day3_night_pressure_branch"
+      "next": "day4_morning_start"
+    },
+    "day3_night_pressure_sea_12": {
+      "changeDay": 4,
+      "changeSlot": "morning",
+      "next": "day4_morning_start"
+    },
+    "day3_night_pressure_eunsu_12": {
+      "changeDay": 4,
+      "changeSlot": "morning",
+      "next": "day4_morning_start"
+    },
+    "day3_night_pressure_riin_12": {
+      "changeDay": 4,
+      "changeSlot": "morning",
+      "next": "day4_morning_start"
+    },
+    "day3_night_pressure_yuna_8": {
+      "changeDay": 4,
+      "changeSlot": "morning",
+      "next": "day4_morning_start"
     },
     "day4_morning_classroom": {
       "background": "classroom",

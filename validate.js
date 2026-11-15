@@ -131,9 +131,10 @@ function collectHtmlPaths(dir) {
 
 {
     const reporter = fs.readFileSync(path.join(ROOT, 'assets/js/error-reporter.js'), 'utf8');
-    const reporterVersion = '20261105-lifecycle-ensure';
+    const reporterVersion = '20261115-script-teardown-guard';
     if (!reporter.includes(`var VERSION = '${reporterVersion}'`)
         || !reporter.includes('isIgnorableResourceFailure')
+        || !reporter.includes('isSameOriginGameScript')
         || !reporter.includes('tryRecoverStylesheetResource')
         || !reporter.includes('data-nevergrad-stylesheet-retry')
         || !reporter.includes('www\\.googletagmanager\\.com\\/gtag\\/js')

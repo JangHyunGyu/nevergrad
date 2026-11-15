@@ -144,3 +144,76 @@ test('LifecycleManager SCRIPT ResourceErrors retry-inject twice then stay ignora
         true
     );
 });
+
+test('same-origin scripts ignore teardown/offline noise and cap visible script reports at 3 per page load', async () => {
+    const start = reporter.indexOf('function isSameOriginGameStylesheet(');
+    const end = reporter.indexOf('function enqueue(', start);
+    assert.ok(start >= 0 && end > start);
+
+    const sandbox = {
+        URL,
+        navigator: { onLine: true },
+        document: { visibilityState: 'visible' },
+        window: {
+            location: {
+                href: 'https://nevergrad.archerlab.dev/en/',
+                origin: 'https://nevergrad.archerlab.dev'
+            }
+        }
+    };
+    vm.runInNewContext(`
+        ${reporter.slice(start, end)}
+        this.isIgnorableResourceFailure = isIgnorableResourceFailure;
+    `, sandbox);
+
+    const target = {
+        src: 'https://nevergrad.archerlab.dev/assets/js/engine.js',
+        getAttribute: () => null
+    };
+    sandbox.document.visibilityState = 'hidden';
+    assert.equal(sandbox.isIgnorableResourceFailure('SCRIPT', target.src, target), true);
+    sandbox.document.visibilityState = 'visible';
+    sandbox.navigator.onLine = false;
+    assert.equal(sandbox.isIgnorableResourceFailure('SCRIPT', target.src, target), true);
+    sandbox.navigator.onLine = true;
+    assert.equal(sandbox.isIgnorableResourceFailure('SCRIPT', target.src, target), false);
+    sandbox.document.visibilityState = 'hidden';
+    assert.equal(sandbox.isIgnorableResourceFailure('SCRIPT', 'https://cdn.example.com/engine.js', target), false);
+
+    // Burst cap test via full error-reporter IIFE
+    const sent = [];
+    const listeners = {};
+    const fullContext = {
+        URL,
+        navigator: { onLine: true, userAgent: 'Mozilla/5.0 Chrome/154.0.0.0', sendBeacon: (_u, body) => { sent.push(JSON.parse(body)); return true; } },
+        document: {
+            visibilityState: 'visible',
+            documentElement: { lang: 'en' },
+            addEventListener() {}
+        },
+        screen: { width: 390, height: 844 },
+        addEventListener(type, fn) { (listeners[type] ||= []).push(fn); },
+        setTimeout,
+        clearTimeout,
+        fetch: async (_u, init) => { sent.push(JSON.parse(init.body)); return { ok: true }; },
+        console: { error() {}, warn() {}, log() {} },
+        localStorage: { getItem: () => null, setItem() {}, removeItem() {} },
+        sessionStorage: { getItem: () => null, setItem() {}, removeItem() {} }
+    };
+    fullContext.window = Object.assign(fullContext, {
+        location: { href: 'https://nevergrad.archerlab.dev/en/', origin: 'https://nevergrad.archerlab.dev', pathname: '/en/', search: '' },
+        innerWidth: 390,
+        innerHeight: 844
+    });
+    vm.runInNewContext(reporter, fullContext);
+    for (let i = 0; i < 6; i += 1) {
+        const scriptEl = {
+            tagName: 'SCRIPT',
+            src: `https://nevergrad.archerlab.dev/assets/js/mod_${i}.js`,
+            getAttribute: () => null
+        };
+        for (const fn of listeners.error || []) fn({ target: scriptEl });
+    }
+    await new Promise((resolve) => setTimeout(resolve, 30));
+    assert.equal(sent.length, 3);
+});

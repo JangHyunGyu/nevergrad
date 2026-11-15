@@ -203,7 +203,7 @@
 
     if (window.__nevergradErrorReporterInstalled) return;
 
-    var VERSION = '20261105-lifecycle-ensure';
+    var VERSION = '20261115-script-teardown-guard';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'nevergrad-error-queue-v2';
     var SESSION_KEY = 'nevergrad-error-session-v2';
@@ -213,6 +213,7 @@
     var queue = readQueue();
     var flushing = false;
     var retryTimer = null;
+    var scriptResourceReportCount = 0;
 
     function randomId() {
         try {
@@ -322,13 +323,21 @@
     function isSameOriginGameStylesheet(resource, target) {
         if (!target || typeof target.getAttribute !== 'function'
             || !/\bstylesheet\b/i.test(String(target.rel || target.getAttribute('rel') || ''))) return false;
+        return isSameOriginGameAsset(resource, /^\/assets\/css\/.+\.css$/i);
+    }
+
+    function isSameOriginGameAsset(resource, pathPattern) {
         try {
             var parsed = new URL(resource, window.location.href);
             return parsed.origin === window.location.origin
-                && /^\/assets\/css\/.+\.css$/i.test(parsed.pathname);
+                && pathPattern.test(parsed.pathname);
         } catch (_) {
             return false;
         }
+    }
+
+    function isSameOriginGameScript(resource) {
+        return isSameOriginGameAsset(resource, /^\/assets\/js\/.+\.js$/i);
     }
 
     function isIgnorableResourceFailure(tagName, resource, target) {
@@ -337,6 +346,10 @@
             return true;
         }
         if (tagName !== 'SCRIPT') return false;
+        if (isSameOriginGameScript(resource)
+            && (navigator.onLine === false || document.visibilityState === 'hidden')) {
+            return true;
+        }
         if (/^https:\/\/www\.googletagmanager\.com\/gtag\/js(?:[?#]|$)/i.test(String(resource || ''))) {
             return true;
         }
@@ -500,6 +513,10 @@
             if (tagName === 'SCRIPT' && tryRecoverLifecycleManagerScript(resource, target)) return;
             if (isIgnorableResourceFailure(tagName, resource, target)) return;
             if (tagName === 'LINK' && tryRecoverStylesheetResource(resource, target)) return;
+            if (tagName === 'SCRIPT') {
+                scriptResourceReportCount += 1;
+                if (scriptResourceReportCount > 3) return;
+            }
             report(
                 'ResourceError',
                 'Failed to load resource: ' + (tagName || 'UNKNOWN'),

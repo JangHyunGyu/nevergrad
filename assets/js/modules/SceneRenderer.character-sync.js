@@ -28,7 +28,7 @@
     el.classList.remove('char-fade-out', 'char-fade-in');
   };
 
-  proto.clearCharacterSlot = function (position, options = {}) {
+  proto.clearCharacterSlot = function (position, options = {}) { var __oc0, __oc1;
     const el = this._charEl(position);
     if (!el || el.getAttribute('src') === '') return;
     const immediate = options.immediate === true;
@@ -41,7 +41,7 @@
       clearTimeout(el._charTimer);
       el._charTimer = null;
     }
-    if (window.NevergradMotion?.enabled?.()) {
+    if ((((__oc1 = (__oc0 = window.NevergradMotion) === null || __oc0 === void 0 ? void 0 : __oc0.enabled) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0)))) {
       window.NevergradMotion.characterOut(el, () => this._wipeCharacterEl(el));
       return;
     }

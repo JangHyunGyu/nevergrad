@@ -75,13 +75,13 @@ class DialogueSystem {
      * @param {number} [options.typingSpeed] - 글자당 ms (기본: CONFIG.TYPING_SPEED)
      * @param {boolean} [options.unskippable] - true면 클릭으로 스킵 불가
      */
-    type(name, text, onComplete = null, options = {}) {
+    type(name, text, onComplete = null, options = {}) { var __oc0, __oc1, __oc2, __oc3, __oc4;
         this.resetAdvanceCooldown();
         // 이전 타이머 정리 (재진입 방지)
         clearInterval(this._typeTimer);
         clearTimeout(this._typeTimer);
         clearTimeout(this._messengerTimer);
-        this.audio?.stopTypingTicks?.();
+        (((__oc1 = (__oc0 = this.audio) === null || __oc0 === void 0 ? void 0 : __oc0.stopTypingTicks) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0)));
         const generation = ++this._typeGeneration;
 
         if (this.nameEl) this.nameEl.textContent = name;
@@ -113,16 +113,16 @@ class DialogueSystem {
         const formattedFull = this._formatText(displayText);
 
         let idx = 0;
-        const speed = options.typingSpeed ?? CONFIG.TYPING_SPEED;
-        const texture = this.audio?.getVoiceTexture?.(options.voicePreset || options.charId, options.genreShift, options.day);
+        const speed = (((__oc2 = options.typingSpeed) !== null && __oc2 !== void 0 ? __oc2 : CONFIG.TYPING_SPEED));
+        const texture = (((__oc4 = (__oc3 = this.audio) === null || __oc3 === void 0 ? void 0 : __oc3.getVoiceTexture) === null || __oc4 === void 0 ? void 0 : __oc4.call(__oc3, options.voicePreset || options.charId, options.genreShift, options.day)));
         const paced = !!(texture || options.textPace || options.typingPause);
         this._voiceTexture = texture;
         this._typeOptions = options;
         this._typeSpeed = speed;
         this._pauseRemaining = Math.max(0, options.typingPause || 0);
-        const tick = () => {
+        const tick = () => { var __oc5, __oc6, __oc7;
             if (generation !== this._typeGeneration || !this.isTyping) return;
-            if (this.isPaused?.()) {
+            if ((((__oc5 = this.isPaused) === null || __oc5 === void 0 ? void 0 : __oc5.call(this)))) {
                 if (paced) this._typeTimer = setTimeout(tick, 30);
                 return;
             }
@@ -141,7 +141,7 @@ class DialogueSystem {
                     this.textEl.innerHTML = this._formatText(partialSource);
                 }
                 if ((!isNarration || options.charId === 'system') && !options.silentTyping && /\S/u.test(plainText[idx])) {
-                    this.audio?.playTypingTick?.(texture);
+                    (((__oc7 = (__oc6 = this.audio) === null || __oc6 === void 0 ? void 0 : __oc6.playTypingTick) === null || __oc7 === void 0 ? void 0 : __oc7.call(__oc6, texture)));
                 }
                 idx++;
             } else {
@@ -156,14 +156,14 @@ class DialogueSystem {
             }
         };
         if (paced) {
-            const initial = this._pauseRemaining + (texture?.rhythm === 'echo' ? 90 : 0);
+            const initial = this._pauseRemaining + (((texture === null || texture === void 0 ? void 0 : texture.rhythm)) === 'echo' ? 90 : 0);
             this._typeTimer = setTimeout(tick, initial || Math.max(0, speed));
         } else this._typeTimer = setInterval(tick, Math.max(0, speed));
     }
 
-    _typingDelay(index, previousCharacter) {
+    _typingDelay(index, previousCharacter) { var __oc8, __oc9;
         const speed = this._typeSpeed;
-        const pace = this._typeOptions?.textPace || this._voiceTexture?.rhythm;
+        const pace = (((__oc8 = this._typeOptions) === null || __oc8 === void 0 ? void 0 : __oc8.textPace)) || (((__oc9 = this._voiceTexture) === null || __oc9 === void 0 ? void 0 : __oc9.rhythm));
         if (pace === 'document') {
             return Math.max(20, Math.min(120, [20, 80, 35, 120, 50, 25, 95, 40][index % 8] * speed / 40));
         }
@@ -252,10 +252,10 @@ class DialogueSystem {
         this._advanceBlockedUntil = 0;
     }
 
-    _finishTyping() {
+    _finishTyping() { var __oc10, __oc11;
         clearInterval(this._typeTimer);
         clearTimeout(this._typeTimer);
-        this.audio?.stopTypingTicks?.();
+        (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? void 0 : __oc10.stopTypingTicks) === null || __oc11 === void 0 ? void 0 : __oc11.call(__oc10)));
         this._pauseRemaining = 0;
         this.isTyping = false;
 
@@ -265,7 +265,7 @@ class DialogueSystem {
 
         const onComplete = this._onComplete;
         this._onComplete = null;
-        onComplete?.();
+        ((onComplete === null || onComplete === void 0 ? void 0 : onComplete()));
     }
 
     /**
@@ -303,30 +303,30 @@ class DialogueSystem {
         this._onComplete = onComplete;
 
         // 2단계: 딜레이 후 실제 메시지 타이핑
-        this._messengerTimer = setTimeout(() => {
+        this._messengerTimer = setTimeout(() => { var __oc12;
             if (this.textEl) {
                 this.textEl.classList.remove('messenger-typing');
             }
             this.type(name, text, onComplete, {
                 ...options,
-                typingSpeed: options.typingSpeed ?? CONFIG.TYPING_SPEED,
+                typingSpeed: (((__oc12 = options.typingSpeed) !== null && __oc12 !== void 0 ? __oc12 : CONFIG.TYPING_SPEED)),
                 unskippable: !!options.unskippable
             });
         }, delay);
     }
 
-    cancel() {
+    cancel() { var __oc13, __oc14, __oc15;
         this._typeGeneration++;
         this.resetAdvanceCooldown();
         clearInterval(this._typeTimer);
         clearTimeout(this._typeTimer);
         clearTimeout(this._messengerTimer);
-        this.audio?.stopTypingTicks?.();
+        (((__oc14 = (__oc13 = this.audio) === null || __oc13 === void 0 ? void 0 : __oc13.stopTypingTicks) === null || __oc14 === void 0 ? void 0 : __oc14.call(__oc13)));
         this._pauseRemaining = 0;
         this._typeTimer = null;
         this._messengerTimer = null;
         this._onComplete = null;
         this.isTyping = false;
-        this.textEl?.classList.remove('messenger-typing');
+        (((__oc15 = this.textEl) === null || __oc15 === void 0 ? void 0 : __oc15.classList.remove('messenger-typing')));
     }
 }

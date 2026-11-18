@@ -100,14 +100,14 @@ class GlitchSystemAdvanced {
         compare.setAttribute('aria-pressed', 'false');
         face.appendChild(comparison);
         face.appendChild(compare);
-        compare.addEventListener('click', event => {
+        compare.addEventListener('click', event => { var __oc0, __oc1, __oc2;
             event.stopPropagation();
             const open = compare.getAttribute('aria-pressed') !== 'true';
             compare.setAttribute('aria-pressed', String(open));
             comparison.classList.toggle('hidden', !open);
             face.classList.toggle('photo-deck-comparing', open);
             note.textContent = open ? comparisonCopy.observation : photos[index].note;
-            if (open) this.engine?.state?.setFlag?.('compared_subject_photos');
+            if (open) (((__oc2 = (__oc1 = (__oc0 = this.engine) === null || __oc0 === void 0 ? void 0 : __oc0.state) === null || __oc1 === void 0 ? void 0 : __oc1.setFlag) === null || __oc2 === void 0 ? void 0 : __oc2.call(__oc1, 'compared_subject_photos')));
         });
         comparison.addEventListener('click', event => event.stopPropagation());
 
@@ -147,7 +147,7 @@ class GlitchSystemAdvanced {
         overlay.appendChild(shell);
         document.body.appendChild(overlay);
 
-        const render = (direction = 0) => {
+        const render = (direction = 0) => { var __oc3, __oc4, __oc5, __oc6, __oc7, __oc8, __oc9, __oc10, __oc11, __oc12, __oc13;
             const photo = photos[index];
             viewed.add(index);
 
@@ -156,7 +156,7 @@ class GlitchSystemAdvanced {
             card.classList.add('photo-deck-card-in', direction < 0 ? 'photo-deck-card-prev' : 'photo-deck-card-next');
             if (photo.current) card.classList.add('photo-deck-current');
 
-            const playerName = this.engine?.state?.playerName || copy.player;
+            const playerName = (((__oc4 = (__oc3 = this.engine) === null || __oc3 === void 0 ? void 0 : __oc3.state) === null || __oc4 === void 0 ? void 0 : __oc4.playerName)) || copy.player;
             slot.textContent = `#${String(photo.slot).padStart(2, '0')}`;
             name.textContent = String(photo.name).replace('{name}', playerName);
             tag.textContent = photo.tag;
@@ -209,10 +209,10 @@ class GlitchSystemAdvanced {
             complete.classList.toggle('hidden', viewed.size < photos.length);
             if (viewed.size >= photos.length) hint.textContent = copy.photoDoneHint;
 
-            this.engine?.audio?.playUIClick?.();
+            (((__oc7 = (__oc6 = (__oc5 = this.engine) === null || __oc5 === void 0 ? void 0 : __oc5.audio) === null || __oc6 === void 0 ? void 0 : __oc6.playUIClick) === null || __oc7 === void 0 ? void 0 : __oc7.call(__oc6)));
             if (photo.current) {
-                this.engine?.glitch?.screenNoise?.(260);
-                this.engine?.deviceGimmick?.vibrate?.('stat_crack');
+                (((__oc10 = (__oc9 = (__oc8 = this.engine) === null || __oc8 === void 0 ? void 0 : __oc8.glitch) === null || __oc9 === void 0 ? void 0 : __oc9.screenNoise) === null || __oc10 === void 0 ? void 0 : __oc10.call(__oc9, 260)));
+                (((__oc13 = (__oc12 = (__oc11 = this.engine) === null || __oc11 === void 0 ? void 0 : __oc11.deviceGimmick) === null || __oc12 === void 0 ? void 0 : __oc12.vibrate) === null || __oc13 === void 0 ? void 0 : __oc13.call(__oc12, 'stat_crack')));
             }
         };
 
@@ -245,9 +245,9 @@ class GlitchSystemAdvanced {
             if (touch) endDrag(touch.clientX);
         }, { passive: true });
 
-        complete.addEventListener('click', () => {
+        complete.addEventListener('click', () => { var __oc14;
             this.hidePhotoDeck();
-            opts.onComplete?.();
+            (((__oc14 = opts.onComplete) === null || __oc14 === void 0 ? void 0 : __oc14.call(opts)));
         });
 
         requestAnimationFrame(() => overlay.classList.add('visible'));
@@ -269,11 +269,11 @@ class GlitchSystemAdvanced {
         return { compare, observation };
     }
 
-    hidePhotoDeck() {
-        document.querySelector('#photo-deck-overlay')?.remove();
+    hidePhotoDeck() { var __oc15;
+        (((__oc15 = document.querySelector('#photo-deck-overlay')) === null || __oc15 === void 0 ? void 0 : __oc15.remove()));
     }
 
-    showLockerSearch(opts = {}) {
+    showLockerSearch(opts = {}) { var __oc16;
         this.hideLockerSearch();
 
         const copy = this._getInteractionCopy(this._getLang());
@@ -305,7 +305,7 @@ class GlitchSystemAdvanced {
 
         const proof = document.createElement('div');
         proof.className = 'locker-search-proof';
-        proof.style.backgroundImage = `url('${this._assetUrl(CONFIG.EVIDENCE_IMAGES?.locker_camera || 'assets/images/evidence/locker_hidden_camera.png')}')`;
+        proof.style.backgroundImage = `url('${this._assetUrl((((__oc16 = CONFIG.EVIDENCE_IMAGES) === null || __oc16 === void 0 ? void 0 : __oc16.locker_camera)) || 'assets/images/evidence/locker_hidden_camera.png')}')`;
         stage.appendChild(proof);
 
         const status = document.createElement('div');
@@ -322,11 +322,11 @@ class GlitchSystemAdvanced {
             btn.type = 'button';
             btn.className = `locker-hotspot ${cls}`;
             btn.setAttribute('aria-label', label);
-            btn.addEventListener('click', () => {
+            btn.addEventListener('click', () => { var __oc17, __oc18, __oc19, __oc20, __oc21, __oc22;
                 status.textContent = text;
                 btn.classList.add('locker-hotspot-found');
-                this.engine?.audio?.playUIClick?.();
-                this.engine?.deviceGimmick?.vibrate?.('timer_tick');
+                (((__oc19 = (__oc18 = (__oc17 = this.engine) === null || __oc17 === void 0 ? void 0 : __oc17.audio) === null || __oc18 === void 0 ? void 0 : __oc18.playUIClick) === null || __oc19 === void 0 ? void 0 : __oc19.call(__oc18)));
+                (((__oc22 = (__oc21 = (__oc20 = this.engine) === null || __oc20 === void 0 ? void 0 : __oc20.deviceGimmick) === null || __oc21 === void 0 ? void 0 : __oc21.vibrate) === null || __oc22 === void 0 ? void 0 : __oc22.call(__oc21, 'timer_tick')));
             });
             return btn;
         };
@@ -347,18 +347,18 @@ class GlitchSystemAdvanced {
             camera.classList.remove('hidden');
         });
 
-        camera.addEventListener('click', () => {
+        camera.addEventListener('click', () => { var __oc23, __oc24, __oc25;
             if (cameraFound) return;
             cameraFound = true;
             stage.classList.add('locker-camera-found');
             proof.classList.add('visible');
             complete.classList.remove('hidden');
-            this.engine?.glitch?.screenNoise?.(180);
+            (((__oc25 = (__oc24 = (__oc23 = this.engine) === null || __oc23 === void 0 ? void 0 : __oc23.glitch) === null || __oc24 === void 0 ? void 0 : __oc24.screenNoise) === null || __oc25 === void 0 ? void 0 : __oc25.call(__oc24, 180)));
         });
 
-        complete.addEventListener('click', () => {
+        complete.addEventListener('click', () => { var __oc26;
             this.hideLockerSearch();
-            opts.onComplete?.();
+            (((__oc26 = opts.onComplete) === null || __oc26 === void 0 ? void 0 : __oc26.call(opts)));
         });
 
         shell.appendChild(title);
@@ -371,8 +371,8 @@ class GlitchSystemAdvanced {
         requestAnimationFrame(() => overlay.classList.add('visible'));
     }
 
-    hideLockerSearch() {
-        document.querySelector('#locker-search-overlay')?.remove();
+    hideLockerSearch() { var __oc27;
+        (((__oc27 = document.querySelector('#locker-search-overlay')) === null || __oc27 === void 0 ? void 0 : __oc27.remove()));
     }
 
     _getLang() {
@@ -558,7 +558,7 @@ class GlitchSystemAdvanced {
         return map[lang] || map.en;
     }
 
-    _getPhotoDeckData(deck) {
+    _getPhotoDeckData(deck) { var __oc29, __oc30, __oc31;
         const lang = this._getLang();
         const romanizedNames = {
             1: 'Kim Dojin',
@@ -796,20 +796,22 @@ class GlitchSystemAdvanced {
         const names = namesByLang[lang] || namesByLang.en;
         const copy = copyByLang[lang] || copyByLang.en;
         const dates = ['04.03', '04.08', '04.13', '04.18', '04.23', '04.28', '05.03', '05.08', '05.13', '05.18', '05.23', '05.28'];
-        const photos = dates.map((date, index) => ({
+        const photos = dates.map((date, index) => { var __oc28; return (
+({
             slot: index + 1,
             name: names[index + 1],
             tag: `${date} / ${copy.gate}`,
             note: copy.notes[index],
-            image: CONFIG.SUBJECT_FACE_IMAGES?.[index + 1] || null
-        }));
+            image: (((__oc28 = CONFIG.SUBJECT_FACE_IMAGES) === null || __oc28 === void 0 ? void 0 : __oc28[index + 1])) || null
+        })
+); });
         photos.push({
             slot: 13,
             name: '{name}',
             tag: copy.currentTag,
             note: copy.currentNote,
             current: true,
-            image: CONFIG.EVIDENCE_IMAGES?.player_photo || CONFIG.SUBJECT_FACE_IMAGES?.[13] || CONFIG.EVIDENCE_IMAGES?.yuna_photo || 'assets/images/evidence/yuna_photo_evidence.png'
+            image: (((__oc29 = CONFIG.EVIDENCE_IMAGES) === null || __oc29 === void 0 ? void 0 : __oc29.player_photo)) || (((__oc30 = CONFIG.SUBJECT_FACE_IMAGES) === null || __oc30 === void 0 ? void 0 : __oc30[13])) || (((__oc31 = CONFIG.EVIDENCE_IMAGES) === null || __oc31 === void 0 ? void 0 : __oc31.yuna_photo)) || 'assets/images/evidence/yuna_photo_evidence.png'
         });
         return {
             title: deck === 'yuna_13' ? copy.titleYuna : copy.titleDefault,
@@ -843,7 +845,7 @@ class GlitchSystemAdvanced {
         this._dangerStatsRevealed = false;
     }
 
-    showMirrorPlayerReveal(stage = 0) {
+    showMirrorPlayerReveal(stage = 0) { var __oc32;
         const gameScreen = document.getElementById('game-screen') || document.body;
         let mirror = document.getElementById('mirror-player-reflection');
         if (!mirror) {
@@ -864,7 +866,7 @@ class GlitchSystemAdvanced {
         }
 
         const face = mirror.querySelector('.mirror-player-face');
-        const playerMirror = CONFIG.EVIDENCE_IMAGES?.player_mirror;
+        const playerMirror = (((__oc32 = CONFIG.EVIDENCE_IMAGES) === null || __oc32 === void 0 ? void 0 : __oc32.player_mirror));
         if (face && playerMirror) {
             face.classList.add('mirror-player-face-image');
             face.style.backgroundImage = `url('${this._assetUrl(playerMirror)}')`;
@@ -891,18 +893,18 @@ class GlitchSystemAdvanced {
      *
      * @param {'NONE'|'SUBTLE'|'UNSETTLING'|'BREAKING'|'NIGHTMARE'} level
      */
-    setLevel(level) {
+    setLevel(level) { var __oc33, __oc34;
         const validLevels = ['NONE', 'SUBTLE', 'UNSETTLING', 'BREAKING', 'NIGHTMARE'];
         if (!validLevels.includes(level)) return;
 
         this.level = level;
 
         // 엔진 상태와 동기화
-        if (this.engine?.state) {
+        if ((((__oc33 = this.engine) === null || __oc33 === void 0 ? void 0 : __oc33.state))) {
             const levelMap = {
                 NONE: 0, SUBTLE: 1, UNSETTLING: 2, BREAKING: 3, NIGHTMARE: 4
             };
-            this.engine.state.setGlitchLevel(levelMap[level] ?? 0);
+            this.engine.state.setGlitchLevel((((__oc34 = levelMap[level]) !== null && __oc34 !== void 0 ? __oc34 : 0)));
         }
     }
 
@@ -911,9 +913,9 @@ class GlitchSystemAdvanced {
      * @returns {number} 0~4
      * @private
      */
-    _getLevelValue() {
+    _getLevelValue() { var __oc35;
         const map = { NONE: 0, SUBTLE: 1, UNSETTLING: 2, BREAKING: 3, NIGHTMARE: 4 };
-        return map[this.level] ?? 0;
+        return (((__oc35 = map[this.level]) !== null && __oc35 !== void 0 ? __oc35 : 0));
     }
 
     // =========================================================================
@@ -1189,9 +1191,9 @@ class GlitchSystemAdvanced {
 
         // 스탯 값도 업데이트 (danger 수치 표시)
         const statValues = document.querySelectorAll('[data-stat-danger]');
-        statValues.forEach(el => {
+        statValues.forEach(el => { var __oc36;
             const charId = el.dataset.charId;
-            if (charId && this.engine?.state) {
+            if (charId && (((__oc36 = this.engine) === null || __oc36 === void 0 ? void 0 : __oc36.state))) {
                 const stats = this.engine.state.getRealStats(charId);
                 el.textContent = stats.danger;
                 el.classList.add('stat-revealed');
@@ -1316,7 +1318,7 @@ class GlitchSystemAdvanced {
      * glitchAdv.triggerGlitch('day2_night_stat_flicker');
      * glitchAdv.triggerGlitch('day3_night_genre_shift');
      */
-    async triggerGlitch(key) {
+    async triggerGlitch(key) { var __oc37, __oc38, __oc39, __oc40, __oc41, __oc42, __oc43, __oc44, __oc45, __oc46, __oc47, __oc48, __oc49, __oc50, __oc51;
         switch (key) {
 
             // ===== Day 2 밤: 스탯 미세 깜빡임 =====
@@ -1331,7 +1333,7 @@ class GlitchSystemAdvanced {
                 }
 
                 // BGM 미세 변조
-                const bgm = this.engine?.renderer?.bgmAudio;
+                const bgm = (((__oc38 = (__oc37 = this.engine) === null || __oc37 === void 0 ? void 0 : __oc37.renderer) === null || __oc38 === void 0 ? void 0 : __oc38.bgmAudio));
                 if (bgm) {
                     const origRate = bgm.playbackRate;
                     bgm.playbackRate = 0.97;
@@ -1413,7 +1415,7 @@ class GlitchSystemAdvanced {
                 this.setLevel('BREAKING');
 
                 // 1) BGM 감속
-                const bgmEl = this.engine?.renderer?.bgmAudio;
+                const bgmEl = (((__oc40 = (__oc39 = this.engine) === null || __oc39 === void 0 ? void 0 : __oc39.renderer) === null || __oc40 === void 0 ? void 0 : __oc40.bgmAudio));
                 if (bgmEl) {
                     this.slowdownBGM(bgmEl, 0.5, 2000);
                 }
@@ -1436,7 +1438,7 @@ class GlitchSystemAdvanced {
                 await this.revealDangerStats();
 
                 // 7) 테마 색상 전환
-                if (this.engine?.glitch) {
+                if ((((__oc41 = this.engine) === null || __oc41 === void 0 ? void 0 : __oc41.glitch))) {
                     this.engine.glitch.shiftTheme('thriller');
                 }
 
@@ -1444,12 +1446,12 @@ class GlitchSystemAdvanced {
                 this.showRedVignette();
 
                 // 9) 상태 매니저 동기화
-                if (this.engine?.state) {
+                if ((((__oc42 = this.engine) === null || __oc42 === void 0 ? void 0 : __oc42.state))) {
                     this.engine.state.triggerGenreShift();
                 }
 
                 // 10) 콘솔 메시지 업데이트
-                if (this.engine?.metaHorror) {
+                if ((((__oc43 = this.engine) === null || __oc43 === void 0 ? void 0 : __oc43.metaHorror))) {
                     this.engine.metaHorror.printConsoleMessage(3);
                     this.engine.metaHorror.activate(3);
                 }
@@ -1462,7 +1464,7 @@ class GlitchSystemAdvanced {
                 this.setLevel('NIGHTMARE');
 
                 // 진동 (모바일)
-                if (this.engine?.deviceGimmick) {
+                if ((((__oc44 = this.engine) === null || __oc44 === void 0 ? void 0 : __oc44.deviceGimmick))) {
                     this.engine.deviceGimmick.vibrate('paralysis');
                 }
 
@@ -1510,7 +1512,7 @@ class GlitchSystemAdvanced {
                 }
 
                 // BGM 왜곡
-                const audio = this.engine?.renderer?.bgmAudio;
+                const audio = (((__oc46 = (__oc45 = this.engine) === null || __oc45 === void 0 ? void 0 : __oc45.renderer) === null || __oc46 === void 0 ? void 0 : __oc46.bgmAudio));
                 if (audio) {
                     this.slowdownBGM(audio, 0.3, 4000);
                 }
@@ -1520,12 +1522,12 @@ class GlitchSystemAdvanced {
                 await this.showBlackout(2000);
 
                 // 커서 감속 (PC)
-                if (this.engine?.deviceGimmick) {
+                if ((((__oc47 = this.engine) === null || __oc47 === void 0 ? void 0 : __oc47.deviceGimmick))) {
                     this.engine.deviceGimmick.enableCursorSlowdown();
                 }
 
                 // 콘솔 메시지
-                if (this.engine?.metaHorror) {
+                if ((((__oc48 = this.engine) === null || __oc48 === void 0 ? void 0 : __oc48.metaHorror))) {
                     this.engine.metaHorror.printConsoleMessage(5);
                 }
                 break;
@@ -1541,8 +1543,8 @@ class GlitchSystemAdvanced {
                 await this.showNoise(300);
 
                 // 세이브 슬롯 UI 표시
-                const playerName = this.engine?.state?.playerName || '{name}';
-                if (this.engine?.save) {
+                const playerName = (((__oc50 = (__oc49 = this.engine) === null || __oc49 === void 0 ? void 0 : __oc49.state) === null || __oc50 === void 0 ? void 0 : __oc50.playerName)) || '{name}';
+                if ((((__oc51 = this.engine) === null || __oc51 === void 0 ? void 0 : __oc51.save))) {
                     await this.showSaveSlotGlitch(this.engine.save, playerName);
                 }
 
@@ -1561,8 +1563,8 @@ class GlitchSystemAdvanced {
     // 세이브 슬롯 글리치 UI (Day 4 밤 연출)
     // =========================================================================
 
-    _lang() {
-        const lang = this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko';
+    _lang() { var __oc52, __oc53;
+        const lang = (((__oc53 = (__oc52 = this.engine) === null || __oc52 === void 0 ? void 0 : __oc52.i18n) === null || __oc53 === void 0 ? void 0 : __oc53.currentLang)) || document.documentElement.lang || 'ko';
         const normalized = String(lang).toLowerCase();
         return normalized.startsWith('pt') ? 'pt' : normalized.slice(0, 2);
     }
@@ -1573,8 +1575,8 @@ class GlitchSystemAdvanced {
         return map[lang] || map.en || map.ko || '';
     }
 
-    _localizedRomanceLabel() {
-        return this.engine?.i18n?.getStatLabel?.(CONFIG.STAT_MODES.ROMANCE, 'sea')?.primary
+    _localizedRomanceLabel() { var __oc54, __oc55, __oc56, __oc57;
+        return (((__oc57 = (__oc56 = (__oc55 = (__oc54 = this.engine) === null || __oc54 === void 0 ? void 0 : __oc54.i18n) === null || __oc55 === void 0 ? void 0 : __oc55.getStatLabel) === null || __oc56 === void 0 ? void 0 : __oc56.call(__oc55, CONFIG.STAT_MODES.ROMANCE, 'sea')) === null || __oc57 === void 0 ? void 0 : __oc57.primary))
             || this._pickLocalized({
                 ko: '호감도',
                 en: 'Affinity',
@@ -1587,8 +1589,8 @@ class GlitchSystemAdvanced {
             });
     }
 
-    _localizedDangerLabel() {
-        return this.engine?.i18n?.getStatLabel?.(CONFIG.STAT_MODES.THRILLER, 'eunsu')?.label
+    _localizedDangerLabel() { var __oc58, __oc59, __oc60, __oc61;
+        return (((__oc61 = (__oc60 = (__oc59 = (__oc58 = this.engine) === null || __oc58 === void 0 ? void 0 : __oc58.i18n) === null || __oc59 === void 0 ? void 0 : __oc59.getStatLabel) === null || __oc60 === void 0 ? void 0 : __oc60.call(__oc59, CONFIG.STAT_MODES.THRILLER, 'eunsu')) === null || __oc61 === void 0 ? void 0 : __oc61.label))
             || this._pickLocalized({
                 ko: '위험도',
                 en: 'Danger',
@@ -1785,8 +1787,8 @@ class GlitchSystemAdvanced {
         return note;
     }
 
-    _localizedSubjectRow(subject) {
-        const slotId = subject.number ?? subject.id ?? subject.slot;
+    _localizedSubjectRow(subject) { var __oc62, __oc63;
+        const slotId = (((__oc63 = (__oc62 = subject.number) !== null && __oc62 !== void 0 ? __oc62 : subject.id) !== null && __oc63 !== void 0 ? __oc63 : subject.slot));
         return {
             ...subject,
             name: this._localizedSubjectName(slotId, subject.name),
@@ -1862,14 +1864,14 @@ class GlitchSystemAdvanced {
      * @param {string} playerName - 현재 플레이어 이름
      * @returns {Promise<void>} 유저가 닫을 때까지 대기
      */
-    async showSaveSlotGlitch(saveManager, playerName) {
+    async showSaveSlotGlitch(saveManager, playerName) { var __oc64, __oc65;
         const overlay = document.getElementById('save-slot-overlay');
         const list = document.getElementById('save-slot-list');
         if (!overlay || !list) return;
 
         // 슬롯 데이터 생성
         const slots = saveManager.getSubjectSlots(playerName).map(slot => this._localizedSubjectRow(slot));
-        if (slots[12]?.ngPlusFlash && this._lang() !== 'ko') {
+        if ((((__oc64 = slots[12]) === null || __oc64 === void 0 ? void 0 : __oc64.ngPlusFlash)) && this._lang() !== 'ko') {
             slots[12].ngPlusFlash = {
                 ...slots[12].ngPlusFlash,
                 status: this._localizedSubjectStatus(slots[12].ngPlusFlash)
@@ -1880,7 +1882,7 @@ class GlitchSystemAdvanced {
         list.innerHTML = '';
 
         // 화면 진동 (모바일)
-        if (this.engine?.deviceGimmick) {
+        if ((((__oc65 = this.engine) === null || __oc65 === void 0 ? void 0 : __oc65.deviceGimmick))) {
             this.engine.deviceGimmick.vibrate('pulse');
         }
 
@@ -2139,8 +2141,8 @@ class GlitchSystemAdvanced {
      * @param {string} lastEnding
      * @private
      */
-    _setupNewGameFlicker(btn, lastEnding) {
-        const playerName = this.engine?.state?.playerName || '{name}';
+    _setupNewGameFlicker(btn, lastEnding) { var __oc66, __oc67;
+        const playerName = (((__oc67 = (__oc66 = this.engine) === null || __oc66 === void 0 ? void 0 : __oc66.state) === null || __oc67 === void 0 ? void 0 : __oc67.playerName)) || '{name}';
 
         const flickerTexts = {
             FORGET: this._pickLocalized({
@@ -2264,7 +2266,7 @@ class GlitchSystemAdvanced {
      * @param {AudioManager} audio
      */
     applyNGPlusTitleBGM(audio) {
-        if (!audio?.ctx) return;
+        if (!((audio === null || audio === void 0 ? void 0 : audio.ctx))) return;
 
         // BGM 피치 다운은 playbackRate로 구현
         // AudioManager의 BGM이 시작된 후 호출해야 함
@@ -2291,7 +2293,7 @@ class GlitchSystemAdvanced {
      * @private
      */
     _startNGPlusDissonantChord(audio) {
-        if (!audio?.ctx) return;
+        if (!((audio === null || audio === void 0 ? void 0 : audio.ctx))) return;
         if (this._ngPlusDissonanceInterval) return;
 
         const playChord = () => {
@@ -2505,7 +2507,7 @@ class GlitchSystemAdvanced {
      * 조기 탈출 히든 이벤트 연출 — 화면 하얘짐 + 교실 복귀
      * @returns {Promise<void>}
      */
-    async playEarlyEscapeSequence() {
+    async playEarlyEscapeSequence() { var __oc68;
         // 1. 화면 서서히 하얘짐
         const white = document.createElement('div');
         white.className = 'early-escape-white';
@@ -2518,8 +2520,8 @@ class GlitchSystemAdvanced {
         });
 
         // BGM 페이드아웃
-        const audio = this.engine?.audio;
-        if (audio?.ctx) {
+        const audio = (((__oc68 = this.engine) === null || __oc68 === void 0 ? void 0 : __oc68.audio));
+        if (((audio === null || audio === void 0 ? void 0 : audio.ctx))) {
             audio.fadeOutAll(2000);
         }
 
@@ -2745,7 +2747,7 @@ class GlitchSystemAdvanced {
      * @param {string} finalText - 최종 표시 텍스트
      * @returns {Promise<void>}
      */
-    async showMirror13Faces(faceNames, playerName, finalText, options = {}) {
+    async showMirror13Faces(faceNames, playerName, finalText, options = {}) { var __oc69;
         const photoInterval = Math.max(60, Number(options.photoInterval) || 400);
         const finalHold = Math.max(0, Number(options.overlayFadeDuration) || 3000);
         const exitFade = Math.max(0, Number(options.overlayExitFadeDuration) || 1000);
@@ -2760,7 +2762,7 @@ class GlitchSystemAdvanced {
         });
 
         // 진동 동기화 (모바일)
-        const deviceGimmick = this.engine?.deviceGimmick;
+        const deviceGimmick = (((__oc69 = this.engine) === null || __oc69 === void 0 ? void 0 : __oc69.deviceGimmick));
 
         for (let i = 0; i < entries.length; i++) {
             const entry = entries[i];
@@ -2942,8 +2944,8 @@ class GlitchSystemAdvanced {
             this._activeTimers.push(t);
 
             // 진동 (서명 순간)
-            signArea.addEventListener('click', () => {
-                if (this.engine?.deviceGimmick) {
+            signArea.addEventListener('click', () => { var __oc70;
+                if ((((__oc70 = this.engine) === null || __oc70 === void 0 ? void 0 : __oc70.deviceGimmick))) {
                     this.engine.deviceGimmick.vibrate([100]);
                 }
                 choicePanel.classList.add('hidden');
@@ -2989,7 +2991,7 @@ class GlitchSystemAdvanced {
     // 완료 시 짧고 날카로운 진동 0.1초 + 스크린샷 컨텍스트 활성화(반응 없음).
     // =========================================================================
 
-    startSignaturePad(opts = {}) {
+    startSignaturePad(opts = {}) { var __oc71, __oc72;
         if (document.querySelector('.signature-pad-container')) return;
         const engine = this.engine;
         if (opts.requireSignature && engine) {
@@ -3000,12 +3002,12 @@ class GlitchSystemAdvanced {
             engine._clickLocked = true;
         }
         // 스크린샷 감지: '반응 없음'이지만 컨텍스트는 활성화 (SCENARIO.md 5640 — 기록 허용)
-        engine?.metaHorror?.setScreenshotContext?.('complicit_sign');
-        this._showSignaturePad(() => {
+        (((__oc72 = (__oc71 = engine === null || engine === void 0 ? void 0 : engine.metaHorror) === null || __oc71 === void 0 ? void 0 : __oc71.setScreenshotContext) === null || __oc72 === void 0 ? void 0 : __oc72.call(__oc71, 'complicit_sign')));
+        this._showSignaturePad(() => { var __oc73, __oc74, __oc75;
             if (engine) engine._clickLocked = false;
             // 짧고 날카로운 단일 진동 0.1초 (돌이킬 수 없음의 촉감)
-            engine?.deviceGimmick?.vibrate?.('complicit_sign');
-            engine?._vibrateVisual?.('complicit_sign');
+            (((__oc74 = (__oc73 = engine === null || engine === void 0 ? void 0 : engine.deviceGimmick) === null || __oc73 === void 0 ? void 0 : __oc73.vibrate) === null || __oc74 === void 0 ? void 0 : __oc74.call(__oc73, 'complicit_sign')));
+            (((__oc75 = engine === null || engine === void 0 ? void 0 : engine._vibrateVisual) === null || __oc75 === void 0 ? void 0 : __oc75.call(engine, 'complicit_sign')));
         });
     }
 
@@ -3125,8 +3127,8 @@ class GlitchSystemAdvanced {
         canvas.addEventListener('touchend', endStroke);
     }
 
-    hideSignaturePad() {
-        document.querySelector('.signature-pad-container')?.remove();
+    hideSignaturePad() { var __oc76;
+        (((__oc76 = document.querySelector('.signature-pad-container')) === null || __oc76 === void 0 ? void 0 : __oc76.remove()));
     }
 
     /**
@@ -3166,16 +3168,16 @@ class GlitchSystemAdvanced {
     }
 
     /** scenario의 photoOverlay 키를 기존 showMirror13Faces로 연결 */
-    async showPhotoOverlay(opts = {}) {
+    async showPhotoOverlay(opts = {}) { var __oc77, __oc78;
         const sequence = opts.photoSequence || [];
-        const playerName = this.engine?.state?.playerName || '';
-        const entries = sequence.map(p => {
+        const playerName = (((__oc78 = (__oc77 = this.engine) === null || __oc77 === void 0 ? void 0 : __oc77.state) === null || __oc78 === void 0 ? void 0 : __oc78.playerName)) || '';
+        const entries = sequence.map(p => { var __oc79;
             const display = (p.name === '{name}')
                 ? playerName
                 : this._localizedSubjectName(p.slot, p.name);
             return {
                 label: `#${String(p.slot).padStart(2, '0')}  ${display}`,
-                image: CONFIG.SUBJECT_FACE_IMAGES?.[p.slot] || null
+                image: (((__oc79 = CONFIG.SUBJECT_FACE_IMAGES) === null || __oc79 === void 0 ? void 0 : __oc79[p.slot])) || null
             };
         });
         const overlayTextRaw = this._pickLocalized(
@@ -3200,13 +3202,13 @@ class GlitchSystemAdvanced {
         });
     }
 
-    hidePhotoOverlay() {
-        document.querySelector('.mirror-face-overlay')?.remove();
+    hidePhotoOverlay() { var __oc80;
+        (((__oc80 = document.querySelector('.mirror-face-overlay')) === null || __oc80 === void 0 ? void 0 : __oc80.remove()));
     }
 
-    _teardownMirrorWipe() {
-        document.querySelector('.mirror-swipe-container')?.remove();
-        document.getElementById('mirror-player-reflection')?.remove();
+    _teardownMirrorWipe() { var __oc81, __oc82;
+        (((__oc81 = document.querySelector('.mirror-swipe-container')) === null || __oc81 === void 0 ? void 0 : __oc81.remove()));
+        (((__oc82 = document.getElementById('mirror-player-reflection')) === null || __oc82 === void 0 ? void 0 : __oc82.remove()));
     }
 
     // =========================================================================
@@ -3215,7 +3217,7 @@ class GlitchSystemAdvanced {
     // 반사상에서 제외해 '설화는 거울에 비치지 않는다' 연출
     // =========================================================================
 
-    showMirrorReflection(absentCharId) {
+    showMirrorReflection(absentCharId) { var __oc83;
         const gameScreen = document.getElementById('game-screen');
         if (!gameScreen) return;
         this.hideMirrorReflection();
@@ -3236,7 +3238,7 @@ class GlitchSystemAdvanced {
             <span class="mirror-reflection-self-nose"></span>
             <span class="mirror-reflection-self-mouth"></span>
         `;
-        const playerMirror = CONFIG.EVIDENCE_IMAGES?.player_mirror;
+        const playerMirror = (((__oc83 = CONFIG.EVIDENCE_IMAGES) === null || __oc83 === void 0 ? void 0 : __oc83.player_mirror));
         if (playerMirror) {
             self.classList.add('mirror-reflection-self-image');
             self.style.backgroundImage = `url('${this._assetUrl(playerMirror)}')`;
@@ -3246,7 +3248,7 @@ class GlitchSystemAdvanced {
         // 현재 캐릭터 레이어 복제 (transform scaleX(-1)로 거울상)
         ['char-left', 'char-center', 'char-right'].forEach(id => {
             const src = document.getElementById(id);
-            if (!src?.src || src.src.endsWith('/') || src.style.display === 'none') return;
+            if (!((src === null || src === void 0 ? void 0 : src.src)) || src.src.endsWith('/') || src.style.display === 'none') return;
             if (src.classList.contains('char-fade-out')) return;
             // 스프라이트 URL에서 charId 추출: 파일명 첫 언더스코어 앞 토큰
             // 예) assets/images/characters/seolhwa_sad.png → 'seolhwa'
@@ -3267,8 +3269,8 @@ class GlitchSystemAdvanced {
         requestAnimationFrame(() => mirror.classList.add('visible'));
     }
 
-    hideMirrorReflection() {
-        document.getElementById('mirror-reflection')?.remove();
+    hideMirrorReflection() { var __oc84;
+        (((__oc84 = document.getElementById('mirror-reflection')) === null || __oc84 === void 0 ? void 0 : __oc84.remove()));
     }
 
 
@@ -3278,14 +3280,14 @@ class GlitchSystemAdvanced {
     // save_glitch_7에서 생성, mirror 씬 진입 시 자동 정리
     // =========================================================================
 
-    showAdminPanel(subjects = []) {
+    showAdminPanel(subjects = []) { var __oc85, __oc86;
         this.hideAdminPanel();
 
         const panel = document.createElement('div');
         panel.className = 'admin-panel-overlay';
         panel.id = 'admin-panel-overlay';
 
-        const playerName = this.engine?.state?.playerName || '';
+        const playerName = (((__oc86 = (__oc85 = this.engine) === null || __oc85 === void 0 ? void 0 : __oc85.state) === null || __oc86 === void 0 ? void 0 : __oc86.playerName)) || '';
         const copy = this._pickLocalized({
             ko: {
                 title: "NEVERGRAD - \ud53c\ud5d8\uc790 \uad00\ub9ac \uc2dc\uc2a4\ud15c",
@@ -3420,8 +3422,8 @@ class GlitchSystemAdvanced {
         requestAnimationFrame(() => panel.classList.add('visible'));
     }
 
-    hideAdminPanel() {
-        document.getElementById('admin-panel-overlay')?.remove();
+    hideAdminPanel() { var __oc87;
+        (((__oc87 = document.getElementById('admin-panel-overlay')) === null || __oc87 === void 0 ? void 0 : __oc87.remove()));
     }
 
     _escape(s) {
@@ -3435,7 +3437,7 @@ class GlitchSystemAdvanced {
     // '호감도' 라벨이 얇은 막처럼 벗겨지며 '위험도'가 드러난다
     // =========================================================================
 
-    async peelStatLabel(revealDuration = 300) {
+    async peelStatLabel(revealDuration = 300) { var __oc88, __oc89, __oc90, __oc91, __oc92, __oc93;
         const statEl = document.getElementById('stat-display');
         if (!statEl) return;
 
@@ -3443,14 +3445,14 @@ class GlitchSystemAdvanced {
         statEl.classList.remove('hidden', 'stat-hidden');
         if (!statEl.textContent.trim()) {
             // 호감도 UI가 아직 한 번도 표시된 적 없으면 기본값으로 표시
-            const last = this.engine?.state?._lastCharLabel;
-            const aff = this.engine?.state ? this.engine.state.getDisplayAffinity?.('sea') : 0;
-            statEl.textContent = last?.text || `♡ ${this._localizedRomanceLabel()} ${aff ?? ''}`.trim();
+            const last = (((__oc89 = (__oc88 = this.engine) === null || __oc88 === void 0 ? void 0 : __oc88.state) === null || __oc89 === void 0 ? void 0 : __oc89._lastCharLabel));
+            const aff = (((__oc90 = this.engine) === null || __oc90 === void 0 ? void 0 : __oc90.state)) ? (((__oc92 = (__oc91 = this.engine.state).getDisplayAffinity) === null || __oc92 === void 0 ? void 0 : __oc92.call(__oc91, 'sea'))) : 0;
+            statEl.textContent = ((last === null || last === void 0 ? void 0 : last.text)) || `♡ ${this._localizedRomanceLabel()} ${((aff !== null && aff !== void 0 ? aff : ''))}`.trim();
         }
 
         const original = statEl.textContent;
         // 뒤에 있을 '진짜' 라벨 — 위험도 계열
-        const revealed = statEl.dataset.thrillerlabel || `⚠ ${this._localizedDangerLabel()} ${original.match(/\d+/)?.[0] || ''}`.trim();
+        const revealed = statEl.dataset.thrillerlabel || `⚠ ${this._localizedDangerLabel()} ${(((__oc93 = original.match(/\d+/)) === null || __oc93 === void 0 ? void 0 : __oc93[0])) || ''}`.trim();
 
         // 벗겨지는 라벨을 감싸기
         statEl.classList.add('stat-peeling');
@@ -3502,7 +3504,7 @@ class GlitchSystemAdvanced {
     /**
      * 모든 활성 효과 제거 및 초기 상태로 복구
      */
-    clearAll() {
+    clearAll() { var __oc94;
         // 모든 타이머 정리
         this._activeTimers.forEach(id => clearTimeout(id));
         this._activeTimers = [];
@@ -3554,7 +3556,7 @@ class GlitchSystemAdvanced {
         this.hidePhotoDeck();
         this.hideLockerSearch();
         this.hideAdminPanel();
-        document.getElementById('game-screen')?.classList.remove('temperature-drop');
+        (((__oc94 = document.getElementById('game-screen')) === null || __oc94 === void 0 ? void 0 : __oc94.classList.remove('temperature-drop')));
 
         // stat-revealed 클래스는 제거하지 않음 (영구 전환)
 

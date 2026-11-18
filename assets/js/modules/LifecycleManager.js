@@ -40,7 +40,7 @@
         }
 
         listen(target, type, listener, options) {
-            if (this.disposed || !target?.addEventListener) return () => {};
+            if (this.disposed || !((target === null || target === void 0 ? void 0 : target.addEventListener))) return () => {};
             target.addEventListener(type, listener, options);
             const entry = { target, type, listener, options };
             this.listeners.add(entry);
@@ -104,9 +104,9 @@
             };
         }
 
-        dispose() {
+        dispose() { var __oc0;
             if (this.disposed) return;
-            this._detachParent?.();
+            (((__oc0 = this._detachParent) === null || __oc0 === void 0 ? void 0 : __oc0.call(this)));
             this._detachParent = null;
             this.clear();
             this.disposed = true;

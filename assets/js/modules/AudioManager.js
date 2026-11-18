@@ -192,7 +192,7 @@ class AudioManager {
      * @param {string} path - 오디오 파일 경로
      * @returns {Promise<AudioBuffer|null>}
      */
-    async loadBuffer(path) {
+    async loadBuffer(path) { var __oc0, __oc1;
         if (!this.ctx) return null;
         const assetPath = this._getAssetPath(path);
 
@@ -204,7 +204,7 @@ class AudioManager {
         // Prefer real audio files; synth is used as a fallback below.
         const originalFilename = path.split('/').pop();
         const filename = originalFilename.replace(/\.[^.]+$/, '');
-        if (this._proceduralBgmKeys?.has(filename) && this._bgmSynthRegistry?.[filename]) {
+        if ((((__oc0 = this._proceduralBgmKeys) === null || __oc0 === void 0 ? void 0 : __oc0.has(filename))) && (((__oc1 = this._bgmSynthRegistry) === null || __oc1 === void 0 ? void 0 : __oc1[filename]))) {
             try {
                 const buffer = await this._bgmSynthRegistry[filename]();
                 this._bufferCache.set(assetPath, buffer);
@@ -271,7 +271,7 @@ class AudioManager {
         const reporter = (typeof window !== 'undefined') ? window.__nevergradReportError : null;
         if (typeof reporter !== 'function') return;
         this._reportedAudioFailures.add(path);
-        const fileMsg = fileLoadError?.message || String(fileLoadError || 'unknown');
+        const fileMsg = ((fileLoadError === null || fileLoadError === void 0 ? void 0 : fileLoadError.message)) || String(fileLoadError || 'unknown');
         try {
             reporter(
                 'AudioLoadFailed',
@@ -312,13 +312,13 @@ class AudioManager {
      * @param {number} [options.fadeOut=1.5] - 페이드아웃 시간 (초)
      * @param {boolean} [options.immediate=false] - 즉시 전환 (크로스페이드 없이)
      */
-    async playBGM(filename, options = {}) {
+    async playBGM(filename, options = {}) { var __oc2, __oc3;
         if (!this.ctx) return;
         if (this._currentBGM === filename) return; // 같은 곡이면 무시
 
         if (this._pendingBGM === filename) return;
-        const fadeIn = options.fadeIn ?? this.CROSSFADE_DURATION;
-        const fadeOut = options.fadeOut ?? this.CROSSFADE_DURATION;
+        const fadeIn = (((__oc2 = options.fadeIn) !== null && __oc2 !== void 0 ? __oc2 : this.CROSSFADE_DURATION));
+        const fadeOut = (((__oc3 = options.fadeOut) !== null && __oc3 !== void 0 ? __oc3 : this.CROSSFADE_DURATION));
         const immediate = options.immediate || false;
         const path = `assets/audio/bgm/${filename}`;
         const requestId = ++this._bgmRequestId;
@@ -423,7 +423,7 @@ class AudioManager {
         this._currentBGM = null;
     }
 
-    playStaticCrackle() {
+    playStaticCrackle() { var __oc4, __oc5;
         if (!this.ctx) return;
         if (this.ctx.state === 'suspended') this.ctx.resume().catch(() => {});
         const duration = 0.72;
@@ -444,7 +444,7 @@ class AudioManager {
         filter.type = 'highpass';
         filter.frequency.value = 1200;
         const gain = this.ctx.createGain();
-        gain.gain.value = (this.volumes?.sfx ?? 0.5) * 0.45;
+        gain.gain.value = (((__oc5 = (__oc4 = this.volumes) === null || __oc4 === void 0 ? void 0 : __oc4.sfx) !== null && __oc5 !== void 0 ? __oc5 : 0.5)) * 0.45;
         source.connect(filter);
         filter.connect(gain);
         gain.connect(this.sfxGain || this.ctx.destination);
@@ -465,7 +465,7 @@ class AudioManager {
      * @param {number} [options.trimStart=0] - 앞부분 트림 시간(초)
      * @param {number} [options.trimEnd=0] - 끝부분 트림 시간(초)
      */
-    async playSFX(filename, options = {}) {
+    async playSFX(filename, options = {}) { var __oc6;
         if (!this.ctx) return;
 
         const generation = this._sfxGeneration, stop = this._sfxStops.get(filename);
@@ -490,7 +490,7 @@ class AudioManager {
 
         // 모든 SFX에 개별 gain 부여 (stopSFX의 페이드아웃 컨트롤용)
         const tempGain = this.ctx.createGain();
-        tempGain.gain.value = options.volume ?? 1.0;
+        tempGain.gain.value = (((__oc6 = options.volume) !== null && __oc6 !== void 0 ? __oc6 : 1.0));
         source.connect(tempGain);
         tempGain.connect(this.sfxGain);
 
@@ -498,8 +498,8 @@ class AudioManager {
         this._activeSFX.add(entry);
         source.onended = () => {
             this._activeSFX.delete(entry);
-            try { source.disconnect(); } catch {}
-            try { tempGain.disconnect(); } catch {}
+            try { source.disconnect(); } catch (_err) {}
+            try { tempGain.disconnect(); } catch (_err) {}
         };
 
         if (source.loop) {
@@ -528,7 +528,7 @@ class AudioManager {
         }
         targets.forEach(entry => {
             // 진행 중인 자동 램프 취소 후 즉시 현재 값 고정 → 0으로 램프
-            try { entry.gain.gain.cancelScheduledValues(now); } catch {}
+            try { entry.gain.gain.cancelScheduledValues(now); } catch (_err) {}
             entry.gain.gain.setValueAtTime(entry.gain.gain.value, now);
             entry.gain.gain.linearRampToValueAtTime(0, now + fadeOut);
             this._activeSFX.delete(entry);
@@ -794,14 +794,14 @@ class AudioManager {
      *
      * @returns {Promise<boolean>} true: 스테레오(이어폰 가능), false: 모노
      */
-    async detectStereoOutput() {
+    async detectStereoOutput() { var __oc7;
         if (!this.ctx) return false;
 
         try {
             // AudioContext destination의 채널 수로 판별
             const channelCount = this.ctx.destination.channelCount;
             // mediaDevices로 출력 장치 확인 (가능한 경우)
-            if (navigator.mediaDevices?.enumerateDevices) {
+            if ((((__oc7 = navigator.mediaDevices) === null || __oc7 === void 0 ? void 0 : __oc7.enumerateDevices))) {
                 const devices = await navigator.mediaDevices.enumerateDevices();
                 const audioOutputs = devices.filter(d => d.kind === 'audiooutput');
                 // 이어폰/헤드셋이 있으면 스테레오로 간주
@@ -815,7 +815,7 @@ class AudioManager {
                 if (hasHeadphones) return true;
             }
             return channelCount >= 2;
-        } catch {
+        } catch (_err) {
             return false;
         }
     }
@@ -866,9 +866,9 @@ class AudioManager {
         this._activeSFX.add(entry);
         source.onended = () => {
             this._activeSFX.delete(entry);
-            try { source.disconnect(); } catch {}
-            try { gain.disconnect(); } catch {}
-            try { panner.disconnect(); } catch {}
+            try { source.disconnect(); } catch (_err) {}
+            try { gain.disconnect(); } catch (_err) {}
+            try { panner.disconnect(); } catch (_err) {}
         };
 
         source.start(0);
@@ -932,7 +932,7 @@ class AudioManager {
      */
     disableBinauralMode() {
         if (this._binauralPanner) {
-            try { this._binauralPanner.disconnect(); } catch { /* ok */ }
+            try { this._binauralPanner.disconnect(); } catch (_err) { /* ok */ }
             this._binauralPanner = null;
         }
         this._binauralActive = false;
@@ -997,7 +997,7 @@ class AudioManager {
         try {
             source.stop();
             source.disconnect();
-        } catch {
+        } catch (_err) {
             // 이미 정지된 소스
         }
     }
@@ -1041,12 +1041,12 @@ class AudioManager {
         return textures[charId] || null;
     }
 
-    playTypingTick(texture) {
+    playTypingTick(texture) { var __oc8, __oc9, __oc10;
         if (!texture || !this.ctx || this.ctx.state !== 'running' || !this.sfxGain) return false;
         if (this._muted || this.volumes.sfx <= 0 || this.volumes.master <= 0) return false;
         const now = this.ctx.currentTime;
         if (now - this._lastTypingTick < 0.07) return false;
-        if (this.sfxGain.gain.value <= 0 || this.masterGain?.gain.value <= 0) return false;
+        if (this.sfxGain.gain.value <= 0 || (((__oc8 = this.masterGain) === null || __oc8 === void 0 ? void 0 : __oc8.gain.value)) <= 0) return false;
         this._lastTypingTick = now;
         const filter = this.ctx.createBiquadFilter();
         filter.type = 'lowpass';
@@ -1055,7 +1055,7 @@ class AudioManager {
         envelope.gain.setValueAtTime(0, now);
         envelope.gain.linearRampToValueAtTime(0.018, now + 0.003);
         envelope.gain.exponentialRampToValueAtTime(0.0001, now + texture.duration);
-        const panner = this.ctx.createStereoPanner?.();
+        const panner = (((__oc10 = (__oc9 = this.ctx).createStereoPanner) === null || __oc10 === void 0 ? void 0 : __oc10.call(__oc9)));
         if (panner) {
             panner.pan.value = texture.pan;
             filter.connect(panner);
@@ -1131,24 +1131,24 @@ class AudioManager {
      * UI 클릭 — 부드러운 버블 팝 + 미세한 글라스 공명
      * 메뉴 버튼, 일반 UI 인터랙션용
      */
-    _playSoftUITap(options = {}) {
+    _playSoftUITap(options = {}) { var __oc11, __oc12, __oc13, __oc14, __oc15, __oc16, __oc17, __oc18, __oc19, __oc20, __oc21, __oc22, __oc23, __oc24, __oc25, __oc26;
         if (!this.ctx) return;
         const now = this.ctx.currentTime + (options.delay || 0);
-        const volume = options.volume ?? 0.055;
-        const frequency = options.frequency ?? 360;
-        const endFrequency = options.endFrequency ?? 230;
-        const duration = options.duration ?? 0.075;
+        const volume = (((__oc11 = options.volume) !== null && __oc11 !== void 0 ? __oc11 : 0.055));
+        const frequency = (((__oc12 = options.frequency) !== null && __oc12 !== void 0 ? __oc12 : 360));
+        const endFrequency = (((__oc13 = options.endFrequency) !== null && __oc13 !== void 0 ? __oc13 : 230));
+        const duration = (((__oc14 = options.duration) !== null && __oc14 !== void 0 ? __oc14 : 0.075));
 
         const out = this._createSFXGain(1);
         const bodyFilter = this.ctx.createBiquadFilter();
         bodyFilter.type = 'lowpass';
-        bodyFilter.frequency.value = options.lowpass ?? 900;
+        bodyFilter.frequency.value = (((__oc15 = options.lowpass) !== null && __oc15 !== void 0 ? __oc15 : 900));
         bodyFilter.Q.value = 0.55;
         bodyFilter.connect(out);
 
         const tailDelay = this.ctx.createDelay(0.2);
-        tailDelay.delayTime.value = options.tailDelay ?? 0.045;
-        const tailGain = this._createSFXGain(options.tailVolume ?? volume * 0.18);
+        tailDelay.delayTime.value = (((__oc16 = options.tailDelay) !== null && __oc16 !== void 0 ? __oc16 : 0.045));
+        const tailGain = this._createSFXGain((((__oc17 = options.tailVolume) !== null && __oc17 !== void 0 ? __oc17 : volume * 0.18)));
         tailDelay.connect(tailGain);
 
         const body = this.ctx.createOscillator();
@@ -1180,14 +1180,14 @@ class AudioManager {
 
         const accent = this.ctx.createOscillator();
         accent.type = 'sine';
-        accent.frequency.setValueAtTime(options.accentFrequency ?? Math.min(1500, frequency * 2.25), now + 0.002);
+        accent.frequency.setValueAtTime((((__oc18 = options.accentFrequency) !== null && __oc18 !== void 0 ? __oc18 : Math.min(1500, frequency * 2.25))), now + 0.002);
         const accentFilter = this.ctx.createBiquadFilter();
         accentFilter.type = 'lowpass';
-        accentFilter.frequency.value = options.accentLowpass ?? 1450;
+        accentFilter.frequency.value = (((__oc19 = options.accentLowpass) !== null && __oc19 !== void 0 ? __oc19 : 1450));
         accentFilter.Q.value = 0.5;
         const accentGain = this.ctx.createGain();
         accentGain.gain.setValueAtTime(0.001, now + 0.002);
-        accentGain.gain.linearRampToValueAtTime(volume * (options.accentVolume ?? 0.16), now + 0.008);
+        accentGain.gain.linearRampToValueAtTime(volume * (((__oc20 = options.accentVolume) !== null && __oc20 !== void 0 ? __oc20 : 0.16)), now + 0.008);
         accentGain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
         accent.connect(accentFilter);
         accentFilter.connect(accentGain);
@@ -1197,42 +1197,42 @@ class AudioManager {
 
         if (options.texture !== false) {
             const texture = this.ctx.createBufferSource();
-            texture.buffer = this._createNoiseBuffer(options.textureDuration ?? 0.055);
+            texture.buffer = this._createNoiseBuffer((((__oc21 = options.textureDuration) !== null && __oc21 !== void 0 ? __oc21 : 0.055)));
             const texFilter = this.ctx.createBiquadFilter();
             texFilter.type = 'bandpass';
-            texFilter.frequency.value = options.textureFrequency ?? 1050;
-            texFilter.Q.value = options.textureQ ?? 0.6;
+            texFilter.frequency.value = (((__oc22 = options.textureFrequency) !== null && __oc22 !== void 0 ? __oc22 : 1050));
+            texFilter.Q.value = (((__oc23 = options.textureQ) !== null && __oc23 !== void 0 ? __oc23 : 0.6));
             const texGain = this.ctx.createGain();
             texGain.gain.setValueAtTime(0.001, now);
-            texGain.gain.linearRampToValueAtTime(volume * (options.textureVolume ?? 0.08), now + 0.012);
-            texGain.gain.exponentialRampToValueAtTime(0.001, now + (options.textureDuration ?? 0.055));
+            texGain.gain.linearRampToValueAtTime(volume * (((__oc24 = options.textureVolume) !== null && __oc24 !== void 0 ? __oc24 : 0.08)), now + 0.012);
+            texGain.gain.exponentialRampToValueAtTime(0.001, now + (((__oc25 = options.textureDuration) !== null && __oc25 !== void 0 ? __oc25 : 0.055)));
             texture.connect(texFilter);
             texFilter.connect(texGain);
             texGain.connect(out);
             texture.start(now);
-            texture.stop(now + (options.textureDuration ?? 0.055));
+            texture.stop(now + (((__oc26 = options.textureDuration) !== null && __oc26 !== void 0 ? __oc26 : 0.055)));
         }
     }
 
-    _playSoftUIChord(notes, options = {}) {
+    _playSoftUIChord(notes, options = {}) { var __oc27, __oc28, __oc29, __oc33, __oc34, __oc35, __oc36, __oc37;
         if (!this.ctx) return;
         const now = this.ctx.currentTime;
         const master = this._createSFXGain(1);
         const filter = this.ctx.createBiquadFilter();
         filter.type = 'lowpass';
-        filter.frequency.value = options.lowpass ?? 1350;
+        filter.frequency.value = (((__oc27 = options.lowpass) !== null && __oc27 !== void 0 ? __oc27 : 1350));
         filter.Q.value = 0.55;
         filter.connect(master);
 
         const tailDelay = this.ctx.createDelay(0.3);
-        tailDelay.delayTime.value = options.tailDelay ?? 0.075;
-        const tailGain = this._createSFXGain(options.tailVolume ?? 0.012);
+        tailDelay.delayTime.value = (((__oc28 = options.tailDelay) !== null && __oc28 !== void 0 ? __oc28 : 0.075));
+        const tailGain = this._createSFXGain((((__oc29 = options.tailVolume) !== null && __oc29 !== void 0 ? __oc29 : 0.012)));
         tailDelay.connect(tailGain);
 
-        notes.forEach(note => {
+        notes.forEach(note => { var __oc30, __oc31, __oc32;
             const start = now + (note.delay || 0);
-            const duration = note.duration ?? 0.14;
-            const volume = note.volume ?? 0.05;
+            const duration = (((__oc30 = note.duration) !== null && __oc30 !== void 0 ? __oc30 : 0.14));
+            const volume = (((__oc31 = note.volume) !== null && __oc31 !== void 0 ? __oc31 : 0.05));
             const osc = this.ctx.createOscillator();
             osc.type = note.wave || 'sine';
             osc.frequency.setValueAtTime(note.frequency, start);
@@ -1257,7 +1257,7 @@ class AudioManager {
                 harmonic.frequency.setValueAtTime(note.frequency * (note.harmonicRatio || 1.5), start + 0.004);
                 const hGain = this.ctx.createGain();
                 hGain.gain.setValueAtTime(0.001, start + 0.004);
-                hGain.gain.linearRampToValueAtTime(volume * (note.harmonicVolume ?? 0.18), start + 0.016);
+                hGain.gain.linearRampToValueAtTime(volume * (((__oc32 = note.harmonicVolume) !== null && __oc32 !== void 0 ? __oc32 : 0.18)), start + 0.016);
                 hGain.gain.exponentialRampToValueAtTime(0.001, start + duration * 0.72);
                 harmonic.connect(hGain);
                 hGain.connect(filter);
@@ -1268,20 +1268,20 @@ class AudioManager {
 
         if (options.texture !== false) {
             const texture = this.ctx.createBufferSource();
-            texture.buffer = this._createNoiseBuffer(options.textureDuration ?? 0.09);
+            texture.buffer = this._createNoiseBuffer((((__oc33 = options.textureDuration) !== null && __oc33 !== void 0 ? __oc33 : 0.09)));
             const texFilter = this.ctx.createBiquadFilter();
             texFilter.type = 'bandpass';
-            texFilter.frequency.value = options.textureFrequency ?? 850;
+            texFilter.frequency.value = (((__oc34 = options.textureFrequency) !== null && __oc34 !== void 0 ? __oc34 : 850));
             texFilter.Q.value = 0.55;
             const texGain = this.ctx.createGain();
             texGain.gain.setValueAtTime(0.001, now);
-            texGain.gain.linearRampToValueAtTime(options.textureVolume ?? 0.006, now + 0.018);
-            texGain.gain.exponentialRampToValueAtTime(0.001, now + (options.textureDuration ?? 0.09));
+            texGain.gain.linearRampToValueAtTime((((__oc35 = options.textureVolume) !== null && __oc35 !== void 0 ? __oc35 : 0.006)), now + 0.018);
+            texGain.gain.exponentialRampToValueAtTime(0.001, now + (((__oc36 = options.textureDuration) !== null && __oc36 !== void 0 ? __oc36 : 0.09)));
             texture.connect(texFilter);
             texFilter.connect(texGain);
             texGain.connect(master);
             texture.start(now);
-            texture.stop(now + (options.textureDuration ?? 0.09));
+            texture.stop(now + (((__oc37 = options.textureDuration) !== null && __oc37 !== void 0 ? __oc37 : 0.09)));
         }
     }
 
@@ -1755,8 +1755,8 @@ class AudioManager {
     /**
      * 전체 오디오 정리 (페이지 이탈 시)
      */
-    resetSession() {
-        this.effectLifecycle?.dispose?.();
+    resetSession() { var __oc38, __oc39;
+        (((__oc39 = (__oc38 = this.effectLifecycle) === null || __oc38 === void 0 ? void 0 : __oc38.dispose) === null || __oc39 === void 0 ? void 0 : __oc39.call(__oc38)));
         this.effectLifecycle = this.lifecycle.createScope('effects');
         this._bgmRequestId += 1;
         this._pendingBGM = null;
@@ -1765,13 +1765,13 @@ class AudioManager {
         this.stopAmbient(0);
     }
 
-    dispose() {
+    dispose() { var __oc40, __oc41;
         this.resetSession();
         this._bufferCache.clear();
         if (this.ctx) {
             this.ctx.close().catch(() => {});
             this.ctx = null;
         }
-        this.lifecycle?.dispose?.();
+        (((__oc41 = (__oc40 = this.lifecycle) === null || __oc40 === void 0 ? void 0 : __oc40.dispose) === null || __oc41 === void 0 ? void 0 : __oc41.call(__oc40)));
     }
 }

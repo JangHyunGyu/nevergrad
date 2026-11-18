@@ -95,11 +95,11 @@ class ChoiceSystemAdvanced {
      * @param {boolean} [options.skipDrugPenalty=false] - 호출자가 이미 약물 패널티를 반영했는지 여부
      * @returns {Promise<number>} 선택된 인덱스 (-1은 타임아웃)
      */
-    async showTimedChoice(choices, timeMs, timeoutIndex = -1, options = {}) {
+    async showTimedChoice(choices, timeMs, timeoutIndex = -1, options = {}) { var __oc0;
         this._cleanup();
 
         // 약물 패널티: 리인 음료를 마셨으면 타이머 감산
-        const state = this.engine?.state;
+        const state = (((__oc0 = this.engine) === null || __oc0 === void 0 ? void 0 : __oc0.state));
         if (!options.skipDrugPenalty && state && state.hasFlag('drank_riin_drink') && state.currentDay >= 4) {
             timeMs = Math.max(2000, timeMs - 2000);
         }
@@ -137,7 +137,7 @@ class ChoiceSystemAdvanced {
             this.elapsedMs = 0;
             const barFill = this.timerBar.querySelector('.timer-bar-fill');
 
-            this._timerInterval = this._setInterval(() => {
+            this._timerInterval = this._setInterval(() => { var __oc1, __oc2, __oc3;
                 if (this._selected) {
                     this._clearInterval(this._timerInterval);
                     this._timerInterval = null;
@@ -147,7 +147,7 @@ class ChoiceSystemAdvanced {
                 const now = Date.now();
                 const delta = now - lastTick;
                 lastTick = now;
-                if (this.engine?._isGameplayPaused?.()) return;
+                if ((((__oc2 = (__oc1 = this.engine) === null || __oc1 === void 0 ? void 0 : __oc1._isGameplayPaused) === null || __oc2 === void 0 ? void 0 : __oc2.call(__oc1)))) return;
                 const elapsed = this.elapsedMs += delta;
                 const remaining = Math.max(0, timeMs - elapsed);
                 const progress = remaining / timeMs;
@@ -165,7 +165,7 @@ class ChoiceSystemAdvanced {
                 }
 
                 // 모바일 타이머 틱 진동 (1초 간격)
-                if (this.engine?.deviceGimmick && elapsed > 0 && elapsed % 1000 < 100) {
+                if ((((__oc3 = this.engine) === null || __oc3 === void 0 ? void 0 : __oc3.deviceGimmick)) && elapsed > 0 && elapsed % 1000 < 100) {
                     this.engine.deviceGimmick.vibrate('timer_tick');
                 }
 
@@ -309,7 +309,7 @@ class ChoiceSystemAdvanced {
 
         const { dodgeIndex = 0, maxAttempts = 5 } = dodgeConfig;
 
-        return new Promise((resolve) => {
+        return new Promise((resolve) => { var __oc4;
             this.currentResolve = resolve;
             this._selected = false;
 
@@ -332,7 +332,7 @@ class ChoiceSystemAdvanced {
 
             // 도지 버튼 설정
             const dodgeBtn = buttons[dodgeIndex];
-            if (dodgeBtn && this.engine?.deviceGimmick) {
+            if (dodgeBtn && (((__oc4 = this.engine) === null || __oc4 === void 0 ? void 0 : __oc4.deviceGimmick))) {
                 this.engine.deviceGimmick.setupDodgeButton(
                     dodgeBtn,
                     maxAttempts,
@@ -415,8 +415,8 @@ class ChoiceSystemAdvanced {
      * @param {string} callbackConfig.default - 조건 미충족 시 기본 씬 ID
      * @returns {{ scene: string, dialogue: string|null }}
      */
-    getPastChoiceCallback(callbackConfig) {
-        const state = this.engine?.state;
+    getPastChoiceCallback(callbackConfig) { var __oc5;
+        const state = (((__oc5 = this.engine) === null || __oc5 === void 0 ? void 0 : __oc5.state));
         if (!state) return { scene: callbackConfig.default, dialogue: null };
 
         for (const cond of callbackConfig.conditions) {
@@ -446,10 +446,10 @@ class ChoiceSystemAdvanced {
      * @param {HTMLElement[]} choiceEls - 선택지 버튼 요소 배열
      * @private
      */
-    _applyDrugEffects(choiceEls) {
+    _applyDrugEffects(choiceEls) { var __oc6;
         if (!choiceEls || choiceEls.length === 0) return;
 
-        const state = this.engine?.state;
+        const state = (((__oc6 = this.engine) === null || __oc6 === void 0 ? void 0 : __oc6.state));
         if (!state) return;
 
         // 물결 효과 (기본 약물 디버프)

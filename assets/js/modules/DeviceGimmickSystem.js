@@ -63,8 +63,8 @@ class DeviceGimmickSystem {
         this._longPressTimer = null;
     }
 
-    _lang() {
-        return this.engine?.i18n?.currentLang || 'ko';
+    _lang() { var __oc0, __oc1;
+        return (((__oc1 = (__oc0 = this.engine) === null || __oc0 === void 0 ? void 0 : __oc0.i18n) === null || __oc1 === void 0 ? void 0 : __oc1.currentLang)) || 'ko';
     }
 
     _pickLocalized(map) {
@@ -677,11 +677,11 @@ class DeviceGimmickSystem {
      *
      * @returns {string}
      */
-    getTimeDialogue() {
+    getTimeDialogue() { var __oc2, __oc3, __oc4, __oc5, __oc6;
         const now = new Date();
         const hour = now.getHours();
         const minute = now.getMinutes();
-        const lang = this.engine?.i18n?.currentLang || 'ko';
+        const lang = (((__oc3 = (__oc2 = this.engine) === null || __oc2 === void 0 ? void 0 : __oc2.i18n) === null || __oc3 === void 0 ? void 0 : __oc3.currentLang)) || 'ko';
         const pad2 = (n) => String(n).padStart(2, '0');
         const timeStr = (lang === 'ko')
             ? `${hour}시 ${minute}분`
@@ -702,7 +702,7 @@ class DeviceGimmickSystem {
             (hour >= 19 && hour < 22) ? 'evening' :
             'night';
 
-        const templates = this.engine?.i18n?.getUI?.('timeDialogue') || {};
+        const templates = (((__oc6 = (__oc5 = (__oc4 = this.engine) === null || __oc4 === void 0 ? void 0 : __oc4.i18n) === null || __oc5 === void 0 ? void 0 : __oc5.getUI) === null || __oc6 === void 0 ? void 0 : __oc6.call(__oc5, 'timeDialogue'))) || {};
         const template = templates[bucket] || templates.night || `${timeStr}...`;
         return template.replace('{time}', timeStr);
     }
@@ -1067,10 +1067,12 @@ class DeviceGimmickSystem {
         const prompt = document.getElementById('rotate-prompt');
         if (!prompt) return;
 
-        const isPortrait = () => (
-            screen.orientation?.type?.includes('portrait') ||
+        const isPortrait = () => { var __oc7, __oc8; return (
+(
+            (((__oc8 = (__oc7 = screen.orientation) === null || __oc7 === void 0 ? void 0 : __oc7.type) === null || __oc8 === void 0 ? void 0 : __oc8.includes('portrait'))) ||
             window.innerHeight > window.innerWidth
-        );
+        )
+); };
 
         const getNormalText = () => this._pickLocalized({
             ko: "\ud654\uba74\uc744 \uac00\ub85c\ub85c \ub3cc\ub824 \uc8fc\uc138\uc694",
@@ -1083,9 +1085,9 @@ class DeviceGimmickSystem {
             zh: "请将屏幕横过来"
         });
 
-        const renderPrompt = () => {
+        const renderPrompt = () => { var __oc9;
             const portrait = isPortrait();
-            const gameActive = !!document.getElementById('game-screen')?.classList.contains('active');
+            const gameActive = !!(((__oc9 = document.getElementById('game-screen')) === null || __oc9 === void 0 ? void 0 : __oc9.classList.contains('active')));
             const shouldShow = portrait;
             const normalText = getNormalText();
             const eunsuText = this._pickLocalized({

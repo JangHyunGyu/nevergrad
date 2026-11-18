@@ -26,7 +26,7 @@
             return clone;
         }
 
-        prepare(key, isCG, instant = false) {
+        prepare(key, isCG, instant = false) { var __oc0, __oc1;
             this.cancel();
             if (key === this.key || instant || (!isCG && !this.isCG)) return null;
             const overlay = document.createElement('div');
@@ -43,7 +43,7 @@
             this.layers[0].parentNode.appendChild(overlay);
             const state = {
                 overlay, picture, incoming: isCG, outgoing: this.isCG, animations: [], timers: [],
-                visibility: this.dialogue?.style.visibility ?? ''
+                visibility: (((__oc1 = (__oc0 = this.dialogue) === null || __oc0 === void 0 ? void 0 : __oc0.style.visibility) !== null && __oc1 !== void 0 ? __oc1 : ''))
             };
             state.cancelled = new Promise(resolve => { state.resolveCancel = resolve; });
             this.active = state;

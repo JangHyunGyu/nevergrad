@@ -21,14 +21,14 @@
         return Number.isFinite(n) ? Math.max(0, Math.min(1, n)) : 1;
     }
 
-    function characterAnchor(el) {
-        return el?.classList?.contains('pos-center')
+    function characterAnchor(el) { var __oc0;
+        return (((__oc0 = el === null || el === void 0 ? void 0 : el.classList) === null || __oc0 === void 0 ? void 0 : __oc0.contains('pos-center')))
             ? { xPercent: -50, x: 0 }
             : { xPercent: 0, x: 0 };
     }
 
-    function titleCharacterScale(el, multiplier = 1) {
-        const value = Number.parseFloat(el?.style?.getPropertyValue('--title-scale') || '');
+    function titleCharacterScale(el, multiplier = 1) { var __oc1;
+        const value = Number.parseFloat((((__oc1 = el === null || el === void 0 ? void 0 : el.style) === null || __oc1 === void 0 ? void 0 : __oc1.getPropertyValue('--title-scale'))) || '');
         const scale = Number.isFinite(value) ? value : 0.8;
         return scale * multiplier;
     }
@@ -107,7 +107,7 @@
             if (!gsap || !stage) return false;
 
             window.clearTimeout(window.__nevergradTitleMenuTimer);
-            titleScreen?.classList.remove('title-intro-complete');
+            ((titleScreen === null || titleScreen === void 0 ? void 0 : titleScreen.classList.remove('title-intro-complete')));
             stage.classList.remove('title-intro-reset', 'title-intro-active');
 
             const bg = stage.querySelector('.title-stage-bg');
@@ -131,7 +131,7 @@
                 { autoAlpha: 1, y: 0, duration: 0.34, stagger: 0.08, delay: 1.6, ease: 'power2.out' }
             );
             window.__nevergradTitleMenuTimer = window.setTimeout(() => {
-                titleScreen?.classList.add('title-intro-complete');
+                ((titleScreen === null || titleScreen === void 0 ? void 0 : titleScreen.classList.add('title-intro-complete')));
             }, 1800);
             return true;
         },
@@ -231,7 +231,7 @@
             return true;
         },
 
-        choicesIn(panel, buttons, options = {}) {
+        choicesIn(panel, buttons, options = {}) { var __oc2;
             const gsap = gsapInstance();
             if (!gsap || !panel || !buttons.length) return false;
             setPlayable(buttons, false);
@@ -247,7 +247,7 @@
                     y: 0,
                     scale: 1,
                     duration: 0.34,
-                    stagger: options.stagger ?? 0.075,
+                    stagger: (((__oc2 = options.stagger) !== null && __oc2 !== void 0 ? __oc2 : 0.075)),
                     ease: 'power3.out',
                     onComplete() {
                         setPlayable(buttons, true);

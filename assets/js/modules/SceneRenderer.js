@@ -50,7 +50,7 @@ class SceneRenderer {
         const raw = String(src);
         const match = raw.match(/^([^?#]+)([?#].*)?$/);
         const pathPart = match ? match[1] : raw;
-        const suffix = match?.[2] || '';
+        const suffix = ((match === null || match === void 0 ? void 0 : match[2])) || '';
 
         if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters)\/.+\.(?:png|webp)$/i.test(pathPart)) {
             return [raw];
@@ -78,7 +78,7 @@ class SceneRenderer {
         });
     }
 
-    _applyBackground(src) {
+    _applyBackground(src) { var __oc0, __oc1;
         if (!this.bgLayer || !src) return;
         const absoluteSrc = this._getAssetUrl(src);
         const newBg = `url("${absoluteSrc}")`;
@@ -91,7 +91,7 @@ class SceneRenderer {
         }
 
         const fadeMs = this._crossfadeMs || 0;
-        if (!(fadeMs > 0) && window.NevergradMotion?.background?.(this.bgLayer, absoluteSrc)) {
+        if (!(fadeMs > 0) && (((__oc1 = (__oc0 = window.NevergradMotion) === null || __oc0 === void 0 ? void 0 : __oc0.background) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0, this.bgLayer, absoluteSrc)))) {
             return;
         }
         if (fadeMs > 0 && currentBg && currentBg !== 'none' && currentBg !== newBg) {
@@ -112,18 +112,18 @@ class SceneRenderer {
         this.bgLayer.style.backgroundImage = newBg;
     }
 
-    setBackground(src, { instant = false } = {}) {
+    setBackground(src, { instant = false } = {}) { var __oc2, __oc3;
         if (!this.bgLayer || !src) return;
-        this.onBackgroundChange?.(src);
+        (((__oc2 = this.onBackgroundChange) === null || __oc2 === void 0 ? void 0 : __oc2.call(this, src)));
 
         const requestId = ++this._backgroundRequestId;
         const key = String(src).split(/[?#]/)[0].replace(/\.(png|webp|jpe?g)$/i, '');
         const isCG = /\/images\/cg\/|\/cg_[^/]+$/.test(key);
-        const transition = this.cgTransition?.prepare(key, isCG, instant);
+        const transition = (((__oc3 = this.cgTransition) === null || __oc3 === void 0 ? void 0 : __oc3.prepare(key, isCG, instant)));
         const candidates = this._getBackgroundCandidates(src);
-        const applyIfCurrent = (resolvedSrc) => {
+        const applyIfCurrent = (resolvedSrc) => { var __oc4;
             if (requestId !== this._backgroundRequestId) return;
-            this.cgTransition?.commit(key, isCG);
+            (((__oc4 = this.cgTransition) === null || __oc4 === void 0 ? void 0 : __oc4.commit(key, isCG)));
             if (instant) {
                 this.bgLayer.style.backgroundImage = `url("${this._getAssetUrl(resolvedSrc)}")`;
             } else this._applyBackground(resolvedSrc);
@@ -140,8 +140,8 @@ class SceneRenderer {
                     this.cgTransition.commit(key, isCG);
                     this.bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-long');
                     this.bgLayer.style.removeProperty('--bg-next');
-                    this.bgLayer.querySelectorAll('.ng-gsap-bg-fade').forEach(el => {
-                        window.gsap?.killTweensOf(el);
+                    this.bgLayer.querySelectorAll('.ng-gsap-bg-fade').forEach(el => { var __oc5;
+                        (((__oc5 = window.gsap) === null || __oc5 === void 0 ? void 0 : __oc5.killTweensOf(el)));
                         el.remove();
                     });
                     this.bgLayer.style.backgroundImage = `url("${this._getAssetUrl(resolvedSrc)}")`;
@@ -174,7 +174,7 @@ class SceneRenderer {
         }
     }
 
-    _ensureMediaOverlay() {
+    _ensureMediaOverlay() { var __oc6, __oc7, __oc8;
         if (this.mediaOverlay) return this.mediaOverlay;
 
         const el = document.createElement('div');
@@ -182,9 +182,9 @@ class SceneRenderer {
         el.className = 'scene-media-layer hidden';
         el.setAttribute('aria-hidden', 'true');
 
-        const parent = this.bgOverlay?.parentNode || this.bgLayer?.parentNode || document.getElementById('game-screen');
+        const parent = (((__oc6 = this.bgOverlay) === null || __oc6 === void 0 ? void 0 : __oc6.parentNode)) || (((__oc7 = this.bgLayer) === null || __oc7 === void 0 ? void 0 : __oc7.parentNode)) || document.getElementById('game-screen');
         if (parent) {
-            if (this.bgOverlay?.nextSibling) {
+            if ((((__oc8 = this.bgOverlay) === null || __oc8 === void 0 ? void 0 : __oc8.nextSibling))) {
                 parent.insertBefore(el, this.bgOverlay.nextSibling);
             } else {
                 parent.appendChild(el);
@@ -203,7 +203,7 @@ class SceneRenderer {
         el.removeAttribute('data-media-type');
     }
 
-    setMediaOverlay(data) {
+    setMediaOverlay(data) { var __oc9, __oc10;
         if (!data) {
             this.clearMediaOverlay();
             return;
@@ -224,7 +224,7 @@ class SceneRenderer {
             : this._renderLabDossier(data);
         el.appendChild(node);
 
-        if (window.NevergradMotion?.mediaEnter?.(el)) {
+        if ((((__oc10 = (__oc9 = window.NevergradMotion) === null || __oc9 === void 0 ? void 0 : __oc9.mediaEnter) === null || __oc10 === void 0 ? void 0 : __oc10.call(__oc9, el)))) {
             return;
         }
 
@@ -395,7 +395,7 @@ class SceneRenderer {
      * @param {string} src       이미지 경로
      * @param {number} [opacity] 0~1 사이 값. 생략하면 1(기본 불투명)
      */
-    setCharacter(position, src, opacity) {
+    setCharacter(position, src, opacity) { var __oc11, __oc12;
         const el = position === 'left' ? this.charLeft
                   : position === 'right' ? this.charRight
                   : this.charCenter;
@@ -432,7 +432,7 @@ class SceneRenderer {
         // 이전 전환 타이머가 남아있으면 정리
         if (el._charTimer) { clearTimeout(el._charTimer); el._charTimer = null; }
 
-        if (window.NevergradMotion?.enabled?.()) {
+        if ((((__oc12 = (__oc11 = window.NevergradMotion) === null || __oc11 === void 0 ? void 0 : __oc11.enabled) === null || __oc12 === void 0 ? void 0 : __oc12.call(__oc11)))) {
             if (prevSrc && prevSrc !== '') {
                 const prevPrefix = this._getCharPrefix(prevSrc);
                 const newPrefix = this._getCharPrefix(webpSrc);
@@ -514,14 +514,14 @@ class SceneRenderer {
     }
 
     clearCharacters() {
-        [this.charLeft, this.charCenter, this.charRight].forEach(el => {
+        [this.charLeft, this.charCenter, this.charRight].forEach(el => { var __oc13, __oc14;
             if (!el || el.getAttribute('src') === '') return;
             this._removePrevClone(el);
             if (el._charTimer) {
                 clearTimeout(el._charTimer);
                 el._charTimer = null;
             }
-            if (window.NevergradMotion?.enabled?.()) {
+            if ((((__oc14 = (__oc13 = window.NevergradMotion) === null || __oc13 === void 0 ? void 0 : __oc13.enabled) === null || __oc14 === void 0 ? void 0 : __oc14.call(__oc13)))) {
                 window.NevergradMotion.characterOut(el, () => {
                     el.onerror = null;
                     el.src = '';

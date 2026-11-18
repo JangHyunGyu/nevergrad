@@ -8,9 +8,13 @@ test('all name-screen start buttons show a popup and preserve the run when a nam
  const sandbox={window:{},document:{},console};
  vm.runInNewContext('globalThis.valid=({'+method('_validPlayerName')+'})._validPlayerName;',sandbox);
  for(const name of ['이지원','Alex Kim 2','みなと','Élodie','이지원'])assert.equal(sandbox.valid(name),true,name);
- const start=source.indexOf("        startButton?.addEventListener('click', async () => {");
- const end=source.indexOf('\n        });',start)+12;
- const callback=source.slice(start,end).replace("        startButton?.addEventListener('click', async () => {",'globalThis.start = async function() {').replace(/\}\);\s*$/,'};');
+ const openMarker = source.includes("        startButton?.addEventListener('click', async () => {")
+  ? "        startButton?.addEventListener('click', async () => {"
+  : "        ((startButton === null || startButton === void 0 ? void 0 : startButton.addEventListener('click', async () => {";
+ const closeMarker = openMarker.startsWith('        ((') ? '\n    })));' : '\n        });';
+ const start=source.indexOf(openMarker);
+ const end=source.indexOf(closeMarker,start)+closeMarker.length;
+ const callback=source.slice(start,end).replace(openMarker,'globalThis.start = async function() {').replace(/\}\)\)*;\s*$/,'};');
  for(const name of ['Alex!','ㅋㅋ','ㅏㅏ','ᄏᄏ','ᄆᄆ','지원ㅋ','\uffa1']){
   let warnings=0,resets=0;const field={value:name,setAttribute(){},focus(){}};
   const context={nameInput:field,window:{alert(){warnings++;}}};vm.runInNewContext(callback,context);

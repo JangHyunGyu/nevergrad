@@ -24,7 +24,7 @@
 
 class I18nManager {
     // 언어 하위 디렉토리(/en/, /ja/ 등)에서 로드 시 상위 경로 보정
-    static BASE = window.__NEVERGRAD_LANG__ ? '../' : '';
+    
 
     constructor() {
         this.currentLang = 'ko';
@@ -114,11 +114,11 @@ class I18nManager {
      * 일부 파일이 끝내 실패하면 "다시 시도" 배너를 띄우고 false를 반환한다.
      * @returns {Promise<boolean>} 전부 성공했는지 여부
      */
-    async loadAll() {
+    async loadAll() { var __oc0;
         this.failedFiles = [];
         const results = await Promise.all([1, 2, 3, 4, 5].map(d => this.loadDay(d)));
         const ok = results.every(Boolean);
-        if (ok) { this._hideRetryBanner(); this.onRecovered?.(); }
+        if (ok) { this._hideRetryBanner(); (((__oc0 = this.onRecovered) === null || __oc0 === void 0 ? void 0 : __oc0.call(this))); }
         else this._showRetryBanner();
         return ok;
     }
@@ -160,9 +160,9 @@ class I18nManager {
         document.body.appendChild(banner);
     }
 
-    _hideRetryBanner() {
+    _hideRetryBanner() { var __oc1;
         if (typeof document === 'undefined') return;
-        document.getElementById('i18n-retry-banner')?.remove();
+        (((__oc1 = document.getElementById('i18n-retry-banner')) === null || __oc1 === void 0 ? void 0 : __oc1.remove()));
     }
 
     /**
@@ -170,13 +170,13 @@ class I18nManager {
      * @param {string} sceneId - 예: "day1_opening"
      * @returns {{ text: string, choices?: string[] }}
      */
-    get(sceneId) {
+    get(sceneId) { var __oc2;
         // scene ID에서 day 번호 추출: "day1_opening" → "day1"
         const dayMatch = sceneId.match(/^day(\d)/);
         if (!dayMatch) return { text: "" };
 
         const dayKey = `day${dayMatch[1]}`;
-        const entry = this.texts[dayKey]?.[sceneId];
+        const entry = (((__oc2 = this.texts[dayKey]) === null || __oc2 === void 0 ? void 0 : __oc2[sceneId]));
 
         if (!entry) {
             console.warn(`[I18n] Missing text: ${this.currentLang}/${dayKey}.json → "${sceneId}"`);
@@ -205,21 +205,16 @@ class I18nManager {
         return result;
     }
 
-    static DEFAULT_PLAYER_NAME = {
-        ko: "전학생", en: "Transfer Student", ja: "転校生",
-        es: "Estudiante", fr: "Nouvel Élève", de: "Schüler",
-        pt: "Estudante transferido",
-        zh: "转学生"
-    };
+    
 
     /**
      * 특정 키가 존재하는지 확인 (디버깅용)
      */
-    has(sceneId) {
+    has(sceneId) { var __oc3;
         const dayMatch = sceneId.match(/^day(\d)/);
         if (!dayMatch) return false;
         const dayKey = `day${dayMatch[1]}`;
-        return !!this.texts[dayKey]?.[sceneId];
+        return !!(((__oc3 = this.texts[dayKey]) === null || __oc3 === void 0 ? void 0 : __oc3[sceneId]));
     }
 
     /**
@@ -233,7 +228,76 @@ class I18nManager {
     /**
      * 지원 언어 목록
      */
-    static LANGUAGES = {
+    
+
+    /**
+     * UI 텍스트 (버튼, 제목, 메타 등) — 언어별 정적 번역
+     */
+    
+
+    getSpeakerName(speakerId, playerName) {
+        if (!speakerId) return '';
+        const names = globalThis.NEVERGRAD_SPEAKER_NAMES || {};
+        const labels = names[this.currentLang] || names.en || {};
+        const fallbackLabels = names.en || {};
+        const label = labels[speakerId]
+            || fallbackLabels[speakerId]
+            || this.getCharacterName(speakerId);
+
+        if (speakerId === 'me' || speakerId === 'me_watashi') return playerName || label;
+        return label;
+    }
+
+    /**
+     * Character display names used by language-neutral UI effects.
+     */
+    
+
+    getCharacterName(charId) { var __oc4, __oc5, __oc6;
+        if (!charId) return '';
+        return (((__oc4 = I18nManager.CHARACTER_NAMES[this.currentLang]) === null || __oc4 === void 0 ? void 0 : __oc4[charId]))
+            || (((__oc5 = I18nManager.CHARACTER_NAMES.en) === null || __oc5 === void 0 ? void 0 : __oc5[charId]))
+            || (((__oc6 = CONFIG.CHAR_NAMES) === null || __oc6 === void 0 ? void 0 : __oc6[charId]))
+            || charId;
+    }
+
+    
+
+    getStatLabel(mode, charId) { var __oc7;
+        const fallback = mode === CONFIG.STAT_MODES.THRILLER
+            ? CONFIG.STAT_LABELS.thriller[charId]
+            : CONFIG.STAT_LABELS.romance;
+        const langTexts = I18nManager.STAT_LABEL_TEXTS[this.currentLang]
+            || I18nManager.STAT_LABEL_TEXTS.en;
+
+        if (mode === CONFIG.STAT_MODES.THRILLER && fallback) {
+            const label = (((__oc7 = langTexts.thriller) === null || __oc7 === void 0 ? void 0 : __oc7[charId]))
+                || I18nManager.STAT_LABEL_TEXTS.en.thriller[charId]
+                || fallback.label;
+            return { ...fallback, label };
+        }
+
+        return {
+            ...fallback,
+            primary: langTexts.romance || I18nManager.STAT_LABEL_TEXTS.en.romance
+        };
+    }
+
+    /**
+     * 현재 언어의 UI 텍스트 반환
+     */
+    getUI(key) { var __oc8, __oc9, __oc10;
+        return (((__oc8 = I18nManager.UI[this.currentLang]) === null || __oc8 === void 0 ? void 0 : __oc8[key])) || (((__oc9 = I18nManager.UI.en) === null || __oc9 === void 0 ? void 0 : __oc9[key])) || (((__oc10 = I18nManager.UI.ko) === null || __oc10 === void 0 ? void 0 : __oc10[key])) || '';
+    }
+}
+I18nManager.BASE = window.__NEVERGRAD_LANG__ ? '../' : '';
+I18nManager.DEFAULT_PLAYER_NAME = {
+        ko: "전학생", en: "Transfer Student", ja: "転校生",
+        es: "Estudiante", fr: "Nouvel Élève", de: "Schüler",
+        pt: "Estudante transferido",
+        zh: "转学生"
+    };
+I18nManager.LANGUAGES = {
         ko: { label: "한국어", flag: "🇰🇷" },
         en: { label: "English", flag: "🇺🇸" },
         ja: { label: "日本語", flag: "🇯🇵" },
@@ -243,11 +307,7 @@ class I18nManager {
         pt: { label: "Português (Brasil)", flag: "🇧🇷" },
         zh: { label: "简体中文", flag: "🇨🇳" }
     };
-
-    /**
-     * UI 텍스트 (버튼, 제목, 메타 등) — 언어별 정적 번역
-     */
-    static UI = {
+I18nManager.UI = {
         ko: {
             invalidPlayerName: "이름에는 특수문자나 한글 낱자 자음·모음을 사용할 수 없어요.",
             saveTemporary: '이 탭에만 저장했어요. 새로고침하거나 탭을 닫으면 사라져요.',
@@ -529,24 +589,7 @@ class I18nManager {
             }
         }
     };
-
-    getSpeakerName(speakerId, playerName) {
-        if (!speakerId) return '';
-        const names = globalThis.NEVERGRAD_SPEAKER_NAMES || {};
-        const labels = names[this.currentLang] || names.en || {};
-        const fallbackLabels = names.en || {};
-        const label = labels[speakerId]
-            || fallbackLabels[speakerId]
-            || this.getCharacterName(speakerId);
-
-        if (speakerId === 'me' || speakerId === 'me_watashi') return playerName || label;
-        return label;
-    }
-
-    /**
-     * Character display names used by language-neutral UI effects.
-     */
-    static CHARACTER_NAMES = {
+I18nManager.CHARACTER_NAMES = {
         ko: {
             eunsu: "\ub2f4\uc784\uad50\uc0ac",
             riin: "\ubcf4\uac74\uad50\uc0ac",
@@ -620,16 +663,7 @@ class I18nManager {
             unknown: NEVERGRAD_TEXT_MARKERS.unknownName("zh")
         }
     };
-
-    getCharacterName(charId) {
-        if (!charId) return '';
-        return I18nManager.CHARACTER_NAMES[this.currentLang]?.[charId]
-            || I18nManager.CHARACTER_NAMES.en?.[charId]
-            || CONFIG.CHAR_NAMES?.[charId]
-            || charId;
-    }
-
-    static STAT_LABEL_TEXTS = {
+I18nManager.STAT_LABEL_TEXTS = {
         ko: {
             romance: "\ud638\uac10\ub3c4",
             thriller: {
@@ -711,31 +745,3 @@ class I18nManager {
             }
         }
     };
-
-    getStatLabel(mode, charId) {
-        const fallback = mode === CONFIG.STAT_MODES.THRILLER
-            ? CONFIG.STAT_LABELS.thriller[charId]
-            : CONFIG.STAT_LABELS.romance;
-        const langTexts = I18nManager.STAT_LABEL_TEXTS[this.currentLang]
-            || I18nManager.STAT_LABEL_TEXTS.en;
-
-        if (mode === CONFIG.STAT_MODES.THRILLER && fallback) {
-            const label = langTexts.thriller?.[charId]
-                || I18nManager.STAT_LABEL_TEXTS.en.thriller[charId]
-                || fallback.label;
-            return { ...fallback, label };
-        }
-
-        return {
-            ...fallback,
-            primary: langTexts.romance || I18nManager.STAT_LABEL_TEXTS.en.romance
-        };
-    }
-
-    /**
-     * 현재 언어의 UI 텍스트 반환
-     */
-    getUI(key) {
-        return I18nManager.UI[this.currentLang]?.[key] || I18nManager.UI.en?.[key] || I18nManager.UI.ko?.[key] || '';
-    }
-}

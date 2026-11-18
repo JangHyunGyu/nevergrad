@@ -40,8 +40,8 @@ function showBinauralToast(message) {
  * - Fullscreen API 지원 시 풀스크린 진입
  * - iOS Safari는 Fullscreen API 미지원이므로 standalone 모드(PWA)로 대체
  */
-function requestMobileFullscreen() {
-    return window.ArcherImmersive?.autoEnter();
+function requestMobileFullscreen() { var __oc0;
+    return (((__oc0 = window.ArcherImmersive) === null || __oc0 === void 0 ? void 0 : __oc0.autoEnter()));
 }
 
 /**
@@ -69,7 +69,7 @@ function getPreferredImageCandidates(path) {
     const raw = String(path);
     const match = raw.match(/^([^?#]+)([?#].*)?$/);
     const pathPart = match ? match[1] : raw;
-    const suffix = match?.[2] || '';
+    const suffix = ((match === null || match === void 0 ? void 0 : match[2])) || '';
 
     if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters)\/.+\.(?:png|webp)$/i.test(pathPart)) {
         return [raw];
@@ -112,14 +112,14 @@ function clampNumber(value, min, max) {
     return Math.min(Math.max(value, min), max);
 }
 
-function playTitleIntro() {
+function playTitleIntro() { var __oc1, __oc2, __oc3;
     const stage = document.getElementById('title-stage');
     const titleScreen = document.getElementById('title-screen');
     if (!stage) return;
-    if (window.NevergradMotion?.titleIntro?.(stage, titleScreen)) return;
+    if ((((__oc2 = (__oc1 = window.NevergradMotion) === null || __oc1 === void 0 ? void 0 : __oc1.titleIntro) === null || __oc2 === void 0 ? void 0 : __oc2.call(__oc1, stage, titleScreen)))) return;
 
     window.clearTimeout(window.__nevergradTitleMenuTimer);
-    titleScreen?.classList.remove('title-intro-complete');
+    ((titleScreen === null || titleScreen === void 0 ? void 0 : titleScreen.classList.remove('title-intro-complete')));
 
     stage.classList.add('title-intro-reset');
     stage.classList.remove('title-intro-active');
@@ -130,9 +130,9 @@ function playTitleIntro() {
         stage.classList.add('title-intro-active');
     });
 
-    const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    const reducedMotion = (((__oc3 = window.matchMedia) === null || __oc3 === void 0 ? void 0 : __oc3.call(window, '(prefers-reduced-motion: reduce)').matches));
     window.__nevergradTitleMenuTimer = window.setTimeout(() => {
-        titleScreen?.classList.add('title-intro-complete');
+        ((titleScreen === null || titleScreen === void 0 ? void 0 : titleScreen.classList.add('title-intro-complete')));
     }, reducedMotion ? 0 : 2500);
 }
 
@@ -194,14 +194,18 @@ function playRiinArrival(game) {
         world: 'nevergrad', lang: game.i18n.currentLang,
         image: resolveNevergradAssetUrl('assets/images/background/riin_lab_wake.jpg'),
         hasSave: game.save.hasSaveData(),
-        onContinue: () => document.getElementById('btn-continue')?.click(),
-        onNew: () => {
-            document.getElementById('btn-new-game')?.click();
+        onContinue: () => { var __oc4; return (
+((__oc4 = document.getElementById('btn-continue')) === null || __oc4 === void 0 ? void 0 : __oc4.click())
+); },
+        onNew: () => { var __oc5;
+            (((__oc5 = document.getElementById('btn-new-game')) === null || __oc5 === void 0 ? void 0 : __oc5.click()));
             const input = document.getElementById('player-name-input');
             if (input && arrival.name) input.value = arrival.name;
-            input?.focus();
+            ((input === null || input === void 0 ? void 0 : input.focus()));
         },
-        onTitle: () => document.getElementById('btn-new-game')?.focus()
+        onTitle: () => { var __oc6; return (
+((__oc6 = document.getElementById('btn-new-game')) === null || __oc6 === void 0 ? void 0 : __oc6.focus())
+); }
     });
 }
 
@@ -227,7 +231,7 @@ function initializeTitleLineup() {
         stage.appendChild(lineup);
     }
 
-    characters.forEach((char, index) => {
+    characters.forEach((char, index) => { var __oc7;
         const img = document.getElementById(char.id) || document.createElement('img');
         img.id = char.id;
         img.className = `title-char title-char-lineup title-char-${char.name}`;
@@ -238,7 +242,7 @@ function initializeTitleLineup() {
         img.dataset.src = getNevergradAssetPath(char.src);
         img.dataset.default = getNevergradAssetPath(char.src);
         if (char.ngp) img.dataset.ngp = getNevergradAssetPath(char.ngp);
-        const order = introOrder[char.name] ?? index;
+        const order = (((__oc7 = introOrder[char.name]) !== null && __oc7 !== void 0 ? __oc7 : index));
         img.dataset.titleIntroOrder = String(order + 1);
         img.style.setProperty('--title-intro-delay', `${introBaseDelay + order * introStepDelay}ms`);
         lineup.appendChild(img);
@@ -284,7 +288,7 @@ function layoutTitleLineup() {
         const slotScale = [0.86, 1, 0.86];
         const slotBottom = [viewportH * 0.04, 0, viewportH * 0.04];
         height = clampNumber(viewportH * 0.58, 300, 640);
-        sprites.forEach((sprite) => {
+        sprites.forEach((sprite) => { var __oc8;
             const slot = order.indexOf(sprite.dataset.titleCharacter);
             if (slot < 0) {
                 sprite.style.display = 'none';
@@ -297,7 +301,7 @@ function layoutTitleLineup() {
             sprite.style.setProperty('--title-scale', String(slotScale[slot]));
             sprite.style.setProperty('--title-bottom', `${slotBottom[slot]}px`);
             sprite.style.setProperty('--title-height', `${height}px`);
-            sprite.style.setProperty('--title-z', String(character === order[1] ? 20 : (depth[character] ?? 12)));
+            sprite.style.setProperty('--title-z', String(character === order[1] ? 20 : (((__oc8 = depth[character]) !== null && __oc8 !== void 0 ? __oc8 : 12))));
         });
         return;
     }
@@ -324,15 +328,15 @@ function layoutTitleLineup() {
         height = clampNumber(viewportH * 0.66, 390, 610);
     }
 
-    sprites.forEach((sprite, index) => {
+    sprites.forEach((sprite, index) => { var __oc9, __oc10, __oc11, __oc12;
         sprite.style.display = '';
         const character = sprite.dataset.titleCharacter;
         const depth = { seolhwa: 11, riin: 12, yuna: 14, sea: 15, eunsu: 16 };
-        sprite.style.setProperty('--title-x', `${xs[index] ?? 50}%`);
-        sprite.style.setProperty('--title-scale', String(scales[index] ?? 0.75));
-        sprite.style.setProperty('--title-bottom', `${bottoms[index] ?? 0}px`);
+        sprite.style.setProperty('--title-x', `${(((__oc9 = xs[index]) !== null && __oc9 !== void 0 ? __oc9 : 50))}%`);
+        sprite.style.setProperty('--title-scale', String((((__oc10 = scales[index]) !== null && __oc10 !== void 0 ? __oc10 : 0.75))));
+        sprite.style.setProperty('--title-bottom', `${(((__oc11 = bottoms[index]) !== null && __oc11 !== void 0 ? __oc11 : 0))}px`);
         sprite.style.setProperty('--title-height', `${height}px`);
-        sprite.style.setProperty('--title-z', String(depth[character] ?? 10 + index));
+        sprite.style.setProperty('--title-z', String((((__oc12 = depth[character]) !== null && __oc12 !== void 0 ? __oc12 : 10 + index))));
     });
 }
 
@@ -342,11 +346,11 @@ function layoutTitleLineup() {
  * @param {Set<string>} alreadyLoaded - cache of attempted asset paths
  * @returns {Promise<void>}
  */
-function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
+function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) { var __oc15, __oc16, __oc17;
     // 고유 이미지 경로 수집
     const pathSet = new Set();
 
-    const addCharacter = (key) => {
+    const addCharacter = (key) => { var __oc13, __oc14;
         if (!key || typeof key !== 'string') return;
         if (key.includes('/')) {
             pathSet.add(key);
@@ -356,7 +360,7 @@ function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
         if (splitAt < 0) return;
         const charId = key.slice(0, splitAt);
         const expression = key.slice(splitAt + 1);
-        const path = CONFIG.EXPRESSIONS?.[charId]?.[expression];
+        const path = (((__oc14 = (__oc13 = CONFIG.EXPRESSIONS) === null || __oc13 === void 0 ? void 0 : __oc13[charId]) === null || __oc14 === void 0 ? void 0 : __oc14[expression]));
         if (path) pathSet.add(path);
     };
 
@@ -367,10 +371,10 @@ function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
         if (!id || visited.has(id)) continue;
         visited.add(id);
         const day = Number((String(id).match(/^day(\d)/) || [])[1]);
-        const scene = SCENARIO?.[day]?.[id];
+        const scene = (((__oc15 = SCENARIO === null || SCENARIO === void 0 ? void 0 : SCENARIO[day]) === null || __oc15 === void 0 ? void 0 : __oc15[id]));
         if (!scene) continue;
 
-        if (scene.background) pathSet.add(CONFIG.BACKGROUNDS?.[scene.background] || scene.background);
+        if (scene.background) pathSet.add((((__oc16 = CONFIG.BACKGROUNDS) === null || __oc16 === void 0 ? void 0 : __oc16[scene.background])) || scene.background);
         addCharacter(scene.character);
         Object.values(scene.characters || {}).forEach(addCharacter);
 
@@ -379,13 +383,13 @@ function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
         });
         for (const group of [scene.choices, scene.branches, scene.affinityBranches]) {
             for (const item of group || []) {
-                if (item?.next && !visited.has(item.next)) queue.push(item.next);
+                if (((item === null || item === void 0 ? void 0 : item.next)) && !visited.has(item.next)) queue.push(item.next);
             }
         }
     }
 
     // Keep a deterministic fallback for silent scenes without image directives.
-    if (pathSet.size === 0 && CONFIG.BACKGROUNDS?.classroom) {
+    if (pathSet.size === 0 && (((__oc17 = CONFIG.BACKGROUNDS) === null || __oc17 === void 0 ? void 0 : __oc17.classroom))) {
         pathSet.add(CONFIG.BACKGROUNDS.classroom);
     }
 
@@ -395,7 +399,7 @@ function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
     let loaded = 0;
 
     if (total === 0) {
-        onProgress?.(0, 0);
+        ((onProgress === null || onProgress === void 0 ? void 0 : onProgress(0, 0)));
         return Promise.resolve();
     }
 
@@ -407,7 +411,7 @@ function preloadGameImages(onProgress, sceneId, alreadyLoaded = new Set()) {
                 try { await loadNevergradImage(src); } catch (_) { /* renderer retries on demand */ }
                 alreadyLoaded.add(src);
                 loaded++;
-                onProgress?.(loaded, total);
+                ((onProgress === null || onProgress === void 0 ? void 0 : onProgress(loaded, total)));
             }
         };
         Promise.all(Array.from({ length: Math.min(6, total) }, worker)).then(resolve);
@@ -449,7 +453,7 @@ function ensureLifecycleManager() {
         });
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', async () => { var __oc20, __oc21, __oc22;
     // 타이틀 배경 이미지 로드 체크 — 이미지 없으면 CSS 그라디언트 폴백
     const titleBgLayer = document.querySelector('.title-bg-layer');
     if (titleBgLayer) {
@@ -501,9 +505,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     // - 초기 연결 상태 + devicechange 이벤트로 동적 대응
     // - 최초 활성화 시 "🎧 바이노럴 모드" 토스트 한 번 노출 (i18n 로드 후)
     let __binauralToastShown = false;
-    const syncBinaural = async () => {
+    const syncBinaural = async () => { var __oc18, __oc19;
         const isStereo = await game.audio.detectStereoOutput();
-        const wasActive = game.audio.isBinauralActive?.();
+        const wasActive = (((__oc19 = (__oc18 = game.audio).isBinauralActive) === null || __oc19 === void 0 ? void 0 : __oc19.call(__oc18)));
         if (isStereo && !wasActive) {
             game.audio.enableBinauralMode();
             if (!__binauralToastShown && game.i18n) {
@@ -515,7 +519,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             game.audio.disableBinauralMode();
         }
     };
-    if (navigator.mediaDevices?.addEventListener) {
+    if ((((__oc20 = navigator.mediaDevices) === null || __oc20 === void 0 ? void 0 : __oc20.addEventListener))) {
         game.lifecycle.listen(navigator.mediaDevices, 'devicechange', syncBinaural);
     }
     // 최초 동기화는 game.init() 이후(아래)에서 수행
@@ -543,13 +547,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 세이브 메타 + 현재 상태를 읽어 현재 상황에 맞는 favicon 적용
     game.favicon = new FaviconManager();
     game.favicon.sync({
-        saveMeta: game.save?.getMeta?.(),
+        saveMeta: (((__oc22 = (__oc21 = game.save) === null || __oc21 === void 0 ? void 0 : __oc21.getMeta) === null || __oc22 === void 0 ? void 0 : __oc22.call(__oc21))),
         state: game.state
     });
 
     // 이미지 프리로드 기능을 엔진에 등록
     game._preloadImages = async function(afterScreen, sceneId) {
-        game._preloadedImagePaths ||= new Set();
+        ((game._preloadedImagePaths || (game._preloadedImagePaths = new Set())));
         // Reuse per-session asset attempts across new game and continue flows.
         const loadingScreen = document.getElementById('loading-screen');
         const bar = document.getElementById('loading-bar-inner');
@@ -606,9 +610,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (g) {
                 var state = g.state || g.stateManager;
                 var dialogue = g.dialogue || g.dialogueSystem;
-                if (state?.currentDay) parts.push('day:' + state.currentDay);
-                if (state?.currentScene) parts.push('scene:' + state.currentScene);
-                if (dialogue?.isActive) parts.push('dialogue:active');
+                if (((state === null || state === void 0 ? void 0 : state.currentDay))) parts.push('day:' + state.currentDay);
+                if (((state === null || state === void 0 ? void 0 : state.currentScene))) parts.push('scene:' + state.currentScene);
+                if (((dialogue === null || dialogue === void 0 ? void 0 : dialogue.isActive))) parts.push('dialogue:active');
             }
             parts.push('vw:' + window.innerWidth + 'x' + window.innerHeight);
             return parts.join(' | ');
@@ -656,15 +660,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         try { navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify(payload)); } catch (_) {}
     }
 
-    window.addEventListener('error', function(e) {
+    window.addEventListener('error', function(e) { var __oc23, __oc24;
         var src = (e.filename || '') + ':' + e.lineno + ':' + e.colno;
-        _sendError(e.error?.name || 'Error', e.message, e.error?.stack || '', src);
+        _sendError((((__oc23 = e.error) === null || __oc23 === void 0 ? void 0 : __oc23.name)) || 'Error', e.message, (((__oc24 = e.error) === null || __oc24 === void 0 ? void 0 : __oc24.stack)) || '', src);
     });
 
     window.addEventListener('unhandledrejection', function(e) {
         var reason = e.reason;
-        var msg = reason?.message || String(reason || 'Unhandled rejection');
-        _sendError('UnhandledRejection', msg, reason?.stack || '', window.location.href);
+        var msg = ((reason === null || reason === void 0 ? void 0 : reason.message)) || String(reason || 'Unhandled rejection');
+        _sendError('UnhandledRejection', msg, ((reason === null || reason === void 0 ? void 0 : reason.stack)) || '', window.location.href);
     });
 
     // 외부 모듈에서 silently 실패한 케이스(예: 오디오 파일 로드 실패)를 D1으로 보고

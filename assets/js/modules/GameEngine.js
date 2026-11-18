@@ -26,8 +26,8 @@ class SettingsManager {
             if (raw) Object.assign(this.values, JSON.parse(raw));
         } catch (_) { /* 손상된 데이터는 기본값 사용 */ }
     }
-    apply() {
-        if (this.audio?.setVolume) {
+    apply() { var __oc0;
+        if ((((__oc0 = this.audio) === null || __oc0 === void 0 ? void 0 : __oc0.setVolume))) {
             this.audio.setVolume('bgm', this.values.volBgm);
             this.audio.setVolume('sfx', this.values.volSfx);
         }
@@ -125,9 +125,9 @@ class GameEngine {
 
         // 텍스트 로드
         await this.i18n.loadAll();
-        this.i18n.onRecovered = () => {
+        this.i18n.onRecovered = () => { var __oc1;
             if (!this._waitingForText || !this.currentSceneData) return;
-            if (!document.getElementById('game-screen')?.classList.contains('active')) return;
+            if (!(((__oc1 = document.getElementById('game-screen')) === null || __oc1 === void 0 ? void 0 : __oc1.classList.contains('active')))) return;
             this._loadScene(this.state.currentScene);
         };
 
@@ -149,7 +149,7 @@ class GameEngine {
     /**
      * UI 텍스트를 현재 언어로 적용 (HTML lang, title, meta, 버튼 등)
      */
-    _applyUILocale() {
+    _applyUILocale() { var __oc2;
         const ui = (key) => this.i18n.getUI(key);
 
         // <html lang>
@@ -193,7 +193,7 @@ class GameEngine {
         const pauseMenu = document.getElementById('pause-menu');
         if (pauseMenu) pauseMenu.setAttribute('aria-label', ui('menu'));
         for (const id of ['settings-close', 'backlog-close', 'sl-close']) {
-            document.getElementById(id)?.setAttribute('aria-label', ui('close'));
+            (((__oc2 = document.getElementById(id)) === null || __oc2 === void 0 ? void 0 : __oc2.setAttribute('aria-label', ui('close'))));
         }
         // 풀스크린 토글 ON/OFF 라벨은 현재 상태에 따라
         if (typeof this._refreshFullscreenLabel === 'function') this._refreshFullscreenLabel();
@@ -215,7 +215,7 @@ class GameEngine {
 
     // ===== Title Screen =====
 
-    _bindTitleScreen() {
+    _bindTitleScreen() { var __oc3, __oc4;
         this._rememberNevergradIfPlayed();
         // NG+ 타이틀 화면 변조 (SCENARIO.md 5002-5012)
         if (this.glitchAdvanced && this.save.isNewGamePlus()) {
@@ -223,50 +223,60 @@ class GameEngine {
             this.glitchAdvanced.applyNGPlusTitleBGM(this.audio);
         }
 
-        document.getElementById('btn-new-game')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
-            // 모바일 풀스크린 진입 (유저 제스처 필요)
-            const fullscreen = typeof requestMobileFullscreen === 'function' ? requestMobileFullscreen() : null;
-            const input = document.getElementById('player-name-input');
-            const focusName = () => {
-                if (!document.getElementById('name-screen')?.classList.contains('active')) return;
-                const active = document.activeElement;
-                if (active === document.body || active === input || active?.id === 'btn-new-game') input?.focus({ preventScroll: true });
-            };
-            this._showScreen('name-screen', focusName);
-            if (input && !input.value && this._crossingName) input.value = this._crossingName;
-            focusName();
-            Promise.resolve(fullscreen).then(focusName, () => {});
-            this._attachNameScreenKBAvoidance();
-        });
-
-        document.getElementById('btn-continue')?.addEventListener('click', async () => {
-            this.audio?.playUIClick();
-            // 모바일 풀스크린 진입 (유저 제스처 필요)
-            if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
-            this._prepareNewRun();
-            if (!this.save.load()) {
-                const continueBtn = document.getElementById('btn-continue');
-                if (continueBtn) continueBtn.disabled = true;
-                this.showSaveToast(this.i18n.getUI('loadFailed') || 'Unable to load save data');
+        (((__oc3 = document.getElementById('btn-new-game')) === null || __oc3 === void 0 ? void 0 : __oc3.addEventListener('click', () => {
+        var __oc203;
+        (((__oc203 = this.audio) === null || __oc203 === void 0 ? void 0 : __oc203.playUIClick()));
+        // 모바일 풀스크린 진입 (유저 제스처 필요)
+        const fullscreen = typeof requestMobileFullscreen === 'function' ? requestMobileFullscreen() : null;
+        const input = document.getElementById('player-name-input');
+        const focusName = () => {
+            var __oc204;
+            if (!(((__oc204 = document.getElementById('name-screen')) === null || __oc204 === void 0 ? void 0 : __oc204.classList.contains('active'))))
                 return;
-            }
-            this.state.resumeRun();
-            this._restorePresentation();
-            this._endingReached = false;
-            this._applyCrossoverFlags();
-            if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
-            this.glitch.initConsoleEasterEgg(this.state.currentDay);
-            if (this.state.currentDay >= 4) this.glitch.initTabGimmick(this.state);
+            const active = document.activeElement;
+            if (active === document.body || active === input || ((active === null || active === void 0 ? void 0 : active.id)) === 'btn-new-game')
+                ((input === null || input === void 0 ? void 0 : input.focus({ preventScroll: true })));
+        };
+        this._showScreen('name-screen', focusName);
+        if (input && !input.value && this._crossingName)
+            input.value = this._crossingName;
+        focusName();
+        Promise.resolve(fullscreen).then(focusName, () => { });
+        this._attachNameScreenKBAvoidance();
+    })));
 
-            // 이미지 프리로드 후 게임 화면 표시
-            if (this._preloadImages) {
-                await this._preloadImages('game-screen', this.state.currentScene);
-            } else {
-                this._showScreen('game-screen');
-            }
-            this._loadScene(this.state.currentScene);
-        });
+        (((__oc4 = document.getElementById('btn-continue')) === null || __oc4 === void 0 ? void 0 : __oc4.addEventListener('click', async () => {
+        var __oc204;
+        (((__oc204 = this.audio) === null || __oc204 === void 0 ? void 0 : __oc204.playUIClick()));
+        // 모바일 풀스크린 진입 (유저 제스처 필요)
+        if (typeof requestMobileFullscreen === 'function')
+            requestMobileFullscreen();
+        this._prepareNewRun();
+        if (!this.save.load()) {
+            const continueBtn = document.getElementById('btn-continue');
+            if (continueBtn)
+                continueBtn.disabled = true;
+            this.showSaveToast(this.i18n.getUI('loadFailed') || 'Unable to load save data');
+            return;
+        }
+        this.state.resumeRun();
+        this._restorePresentation();
+        this._endingReached = false;
+        this._applyCrossoverFlags();
+        if (this.save.isNewGamePlus())
+            this.state.setFlag('new_game_plus');
+        this.glitch.initConsoleEasterEgg(this.state.currentDay);
+        if (this.state.currentDay >= 4)
+            this.glitch.initTabGimmick(this.state);
+        // 이미지 프리로드 후 게임 화면 표시
+        if (this._preloadImages) {
+            await this._preloadImages('game-screen', this.state.currentScene);
+        }
+        else {
+            this._showScreen('game-screen');
+        }
+        this._loadScene(this.state.currentScene);
+    })));
 
         const nameInput = document.getElementById('player-name-input');
         const startButton = document.getElementById('btn-start');
@@ -282,48 +292,47 @@ class GameEngine {
             nameInput.addEventListener('keydown', event => {
                 if (event.key !== 'Enter' || event.repeat || event.isComposing) return;
                 event.preventDefault();
-                startButton?.click();
+                ((startButton === null || startButton === void 0 ? void 0 : startButton.click()));
             });
         }
 
-        startButton?.addEventListener('click', async () => {
-            this.audio?.playUIClick();
-            const name = nameInput?.value.normalize('NFC').trim();
-            if (!this._validPlayerName(name)) {
-                nameInput?.setAttribute('aria-invalid', 'true');
-                window.alert(this.i18n.getUI('invalidPlayerName'));
-                nameInput?.focus();
-                return;
-            }
-            this._detachNameScreenKBAvoidance();
-
-            this._prepareNewRun();
-            this.state.startNewRun();
-            this.state.playerName = this._sanitizeName(name);
-            this.state.currentDay = 1;
-            this.state.currentSlot = "morning";
-            this.state.currentScene = "day1_opening_1";
-            this._endingReached = false;
-
-            this._applyCrossoverFlags();
-            if (this.save.isNewGamePlus()) this.state.setFlag('new_game_plus');
-
-            this.glitch.initConsoleEasterEgg(1);
-
-            // 이미지 프리로드 후 게임 화면 표시
-            if (this._preloadImages) {
-                await this._preloadImages('game-screen', 'day1_opening_1');
-            } else {
-                this._showScreen('game-screen');
-            }
-            this._loadScene("day1_opening_1");
-        });
+        ((startButton === null || startButton === void 0 ? void 0 : startButton.addEventListener('click', async () => {
+        var __oc205;
+        (((__oc205 = this.audio) === null || __oc205 === void 0 ? void 0 : __oc205.playUIClick()));
+        const name = ((nameInput === null || nameInput === void 0 ? void 0 : nameInput.value.normalize('NFC').trim()));
+        if (!this._validPlayerName(name)) {
+            ((nameInput === null || nameInput === void 0 ? void 0 : nameInput.setAttribute('aria-invalid', 'true')));
+            window.alert(this.i18n.getUI('invalidPlayerName'));
+            ((nameInput === null || nameInput === void 0 ? void 0 : nameInput.focus()));
+            return;
+        }
+        this._detachNameScreenKBAvoidance();
+        this._prepareNewRun();
+        this.state.startNewRun();
+        this.state.playerName = this._sanitizeName(name);
+        this.state.currentDay = 1;
+        this.state.currentSlot = "morning";
+        this.state.currentScene = "day1_opening_1";
+        this._endingReached = false;
+        this._applyCrossoverFlags();
+        if (this.save.isNewGamePlus())
+            this.state.setFlag('new_game_plus');
+        this.glitch.initConsoleEasterEgg(1);
+        // 이미지 프리로드 후 게임 화면 표시
+        if (this._preloadImages) {
+            await this._preloadImages('game-screen', 'day1_opening_1');
+        }
+        else {
+            this._showScreen('game-screen');
+        }
+        this._loadScene("day1_opening_1");
+    })));
 
         this._bindArchiveButton();
     }
 
-    _redirectToCupidGate() {
-        const lang = this.i18n?.currentLang || 'ko';
+    _redirectToCupidGate() { var __oc5, __oc6, __oc7;
+        const lang = (((__oc5 = this.i18n) === null || __oc5 === void 0 ? void 0 : __oc5.currentLang)) || 'ko';
         const page = {
             ko: '/',
             en: '/index-en',
@@ -336,34 +345,40 @@ class GameEngine {
         }[lang] || '/';
         this._stopAuto();
         this._stopSkip();
-        const crossingBGM = this.audio?.getCurrentBGM?.();
+        const crossingBGM = (((__oc7 = (__oc6 = this.audio) === null || __oc6 === void 0 ? void 0 : __oc6.getCurrentBGM) === null || __oc7 === void 0 ? void 0 : __oc7.call(__oc6)));
         window.CrossWorld.show({
             departure: true, world: 'cupid', lang,
             image: resolveNevergradAssetUrl('assets/images/background/cg_gate_bloom.jpg'),
             name: this.state.playerName,
             url: `https://cupid.archerlab.dev${page}?gate=1`,
             save: () => { this._markNevergradPlayed(); return this.save.save(); },
-            onLeave: () => this.audio?.stopBGM?.(),
-            onReturn: () => crossingBGM ? this.audio?.playBGM?.(crossingBGM) : undefined,
-            onBack: () => document.getElementById('dialogue-box')?.focus()
+            onLeave: () => { var __oc8, __oc9; return (
+((__oc9 = (__oc8 = this.audio) === null || __oc8 === void 0 ? void 0 : __oc8.stopBGM) === null || __oc9 === void 0 ? void 0 : __oc9.call(__oc8))
+); },
+            onReturn: () => { var __oc10, __oc11; return (
+crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? void 0 : __oc10.playBGM) === null || __oc11 === void 0 ? void 0 : __oc11.call(__oc10, crossingBGM))) : undefined
+); },
+            onBack: () => { var __oc12; return (
+((__oc12 = document.getElementById('dialogue-box')) === null || __oc12 === void 0 ? void 0 : __oc12.focus())
+); }
         });
     }
 
-    _pulseCrossGlitch(sceneId) {
+    _pulseCrossGlitch(sceneId) { var __oc13;
         const screen = document.getElementById('bg-layer');
         if (!screen) return;
         const hit = sceneId === 'day5_lunch_pills_pink_2';
         screen.classList.remove('cross-glitch');
-        if (!hit || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+        if (!hit || (((__oc13 = window.matchMedia) === null || __oc13 === void 0 ? void 0 : __oc13.call(window, '(prefers-reduced-motion: reduce)').matches))) return;
         void screen.offsetWidth;
         screen.classList.add('cross-glitch');
         this._crackleAndBuzz();
     }
 
-    _crackleAndBuzz() {
-        if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
-        try { this.audio?.playStaticCrackle?.(); } catch (_) {}
-        this.deviceGimmick?.vibrate?.([35, 40, 65]);
+    _crackleAndBuzz() { var __oc14, __oc15, __oc16, __oc17, __oc18;
+        if ((((__oc14 = window.matchMedia) === null || __oc14 === void 0 ? void 0 : __oc14.call(window, '(prefers-reduced-motion: reduce)').matches))) return;
+        try { (((__oc16 = (__oc15 = this.audio) === null || __oc15 === void 0 ? void 0 : __oc15.playStaticCrackle) === null || __oc16 === void 0 ? void 0 : __oc16.call(__oc15))); } catch (_) {}
+        (((__oc18 = (__oc17 = this.deviceGimmick) === null || __oc17 === void 0 ? void 0 : __oc17.vibrate) === null || __oc18 === void 0 ? void 0 : __oc18.call(__oc17, [35, 40, 65])));
     }
 
     _markNevergradPlayed() {
@@ -375,26 +390,26 @@ class GameEngine {
         } catch (_) {}
     }
 
-    _rememberNevergradIfPlayed() {
-        const meta = this.save?.getMeta?.();
-        if (this.save?.hasSaveData?.() || (meta && meta.playCount > 0)) {
+    _rememberNevergradIfPlayed() { var __oc19, __oc20, __oc21, __oc22;
+        const meta = (((__oc20 = (__oc19 = this.save) === null || __oc19 === void 0 ? void 0 : __oc19.getMeta) === null || __oc20 === void 0 ? void 0 : __oc20.call(__oc19)));
+        if ((((__oc22 = (__oc21 = this.save) === null || __oc21 === void 0 ? void 0 : __oc21.hasSaveData) === null || __oc22 === void 0 ? void 0 : __oc22.call(__oc21))) || (meta && meta.playCount > 0)) {
             this._markNevergradPlayed();
         }
     }
 
-    _applyCrossoverFlags() {
-        if (!this.crossover?.hasPlayedCupid?.()) return;
+    _applyCrossoverFlags() { var __oc23, __oc24, __oc25, __oc26, __oc27;
+        if (!(((__oc24 = (__oc23 = this.crossover) === null || __oc23 === void 0 ? void 0 : __oc23.hasPlayedCupid) === null || __oc24 === void 0 ? void 0 : __oc24.call(__oc23)))) return;
         this.state.setFlag('cupid_played');
-        const heroine = this.crossover.getData?.()?.heroine;
+        const heroine = (((__oc27 = (__oc26 = (__oc25 = this.crossover).getData) === null || __oc26 === void 0 ? void 0 : __oc26.call(__oc25)) === null || __oc27 === void 0 ? void 0 : __oc27.heroine));
         if (heroine) this.state.setFlag(`cupid_heroine_${heroine}`);
     }
 
-    _bindArchiveButton() {
-        if (!this.save?.hasSeenEnding?.('TRUE')) return;
+    _bindArchiveButton() { var __oc28, __oc29, __oc30, __oc31;
+        if (!(((__oc29 = (__oc28 = this.save) === null || __oc28 === void 0 ? void 0 : __oc28.hasSeenEnding) === null || __oc29 === void 0 ? void 0 : __oc29.call(__oc28, 'TRUE')))) return;
         const menu = document.querySelector('#title-screen .title-menu');
         if (!menu) return;
         let btn = document.getElementById('btn-archive');
-        const label = this.i18n?.getUI?.('archiveServer') || 'Institute Server';
+        const label = (((__oc31 = (__oc30 = this.i18n) === null || __oc30 === void 0 ? void 0 : __oc30.getUI) === null || __oc31 === void 0 ? void 0 : __oc31.call(__oc30, 'archiveServer'))) || 'Institute Server';
         if (!btn) {
             btn = document.createElement('button');
             btn.id = 'btn-archive';
@@ -410,8 +425,8 @@ class GameEngine {
         btn.textContent = label;
     }
 
-    async _startArchive() {
-        this.audio?.playUIClick();
+    async _startArchive() { var __oc32, __oc33, __oc34;
+        (((__oc32 = this.audio) === null || __oc32 === void 0 ? void 0 : __oc32.playUIClick()));
         if (typeof requestMobileFullscreen === 'function') requestMobileFullscreen();
         this._prepareNewRun();
         this._archiveMode = true;
@@ -421,7 +436,7 @@ class GameEngine {
         this._endingReached = false;
         this._applyCrossoverFlags();
         this.state.setFlag('new_game_plus');
-        this.glitch?.initConsoleEasterEgg?.(5);
+        (((__oc34 = (__oc33 = this.glitch) === null || __oc33 === void 0 ? void 0 : __oc33.initConsoleEasterEgg) === null || __oc34 === void 0 ? void 0 : __oc34.call(__oc33, 5)));
         if (this._preloadImages) {
             await this._preloadImages('game-screen', 'day5_xover_server_1');
         } else {
@@ -430,25 +445,25 @@ class GameEngine {
         this._loadScene('day5_xover_server_1');
     }
 
-    _prepareNewRun() {
-        this.renderer?.cgTransition?.cancel();
+    _prepareNewRun() { var __oc35, __oc36, __oc37, __oc38, __oc39, __oc40, __oc41, __oc42, __oc43, __oc44, __oc45, __oc46, __oc47, __oc48, __oc49, __oc50, __oc51, __oc52, __oc53, __oc54, __oc55, __oc56, __oc57, __oc58, __oc59, __oc60, __oc61, __oc62, __oc63, __oc64, __oc65, __oc66, __oc67, __oc68, __oc69, __oc70, __oc71, __oc72, __oc73, __oc74;
+        (((__oc36 = (__oc35 = this.renderer) === null || __oc35 === void 0 ? void 0 : __oc35.cgTransition) === null || __oc36 === void 0 ? void 0 : __oc36.cancel()));
         this._waitingForCG = false;
         this._archiveMode = false;
         this._waitingForText = false;
         this._pendingDuplicateChoice = false;
         this._pendingForceChoice = null;
         this._pendingFlickerChoice = null;
-        this.dialogue?.cancel?.();
-        this.glitch?.shiftTheme?.('romance');
+        (((__oc38 = (__oc37 = this.dialogue) === null || __oc37 === void 0 ? void 0 : __oc37.cancel) === null || __oc38 === void 0 ? void 0 : __oc38.call(__oc37)));
+        (((__oc40 = (__oc39 = this.glitch) === null || __oc39 === void 0 ? void 0 : __oc39.shiftTheme) === null || __oc40 === void 0 ? void 0 : __oc40.call(__oc39, 'romance')));
         this._currentBackgroundKey = null;
         document.querySelectorAll('.ending-title-overlay').forEach(el => el.remove());
-        document.getElementById('quick-menu')?.classList.remove('cage-hidden');
-        this.sceneLifecycle?.dispose?.();
-        this.runLifecycle?.dispose?.();
+        (((__oc41 = document.getElementById('quick-menu')) === null || __oc41 === void 0 ? void 0 : __oc41.classList.remove('cage-hidden')));
+        (((__oc43 = (__oc42 = this.sceneLifecycle) === null || __oc42 === void 0 ? void 0 : __oc42.dispose) === null || __oc43 === void 0 ? void 0 : __oc43.call(__oc42)));
+        (((__oc45 = (__oc44 = this.runLifecycle) === null || __oc44 === void 0 ? void 0 : __oc44.dispose) === null || __oc45 === void 0 ? void 0 : __oc45.call(__oc44)));
         this.runLifecycle = this.lifecycle.createScope('run');
         this.sceneLifecycle = this.runLifecycle.createScope('scene');
-        this.audio?.resetSession?.();
-        this.glitch?.resetSession?.();
+        (((__oc47 = (__oc46 = this.audio) === null || __oc46 === void 0 ? void 0 : __oc46.resetSession) === null || __oc47 === void 0 ? void 0 : __oc47.call(__oc46)));
+        (((__oc49 = (__oc48 = this.glitch) === null || __oc48 === void 0 ? void 0 : __oc48.resetSession) === null || __oc49 === void 0 ? void 0 : __oc49.call(__oc48)));
         this._stopAuto();
         this._stopSkip();
         clearTimeout(this._autoAdvanceTimer);
@@ -458,17 +473,17 @@ class GameEngine {
         this._clickLocked = false;
         this._effectClickLockToken = null;
 
-        this.choices?.hide?.();
-        this.choiceAdvanced?.reset?.();
-        this.glitch?.stopTabGimmick?.();
-        this.glitchAdvanced?.clearAll?.();
-        this.renderer?.clearOverlays?.();
-        this.renderer?.clearMediaOverlay?.();
-        this.renderer?.clearCharacters?.();
-        this.renderer?.setSilhouette?.(false);
-        this.audio?.stopBGM?.(0);
-        this.audio?.stopSFX?.(null, 0);
-        this.audio?.stopAmbient?.(0);
+        (((__oc51 = (__oc50 = this.choices) === null || __oc50 === void 0 ? void 0 : __oc50.hide) === null || __oc51 === void 0 ? void 0 : __oc51.call(__oc50)));
+        (((__oc53 = (__oc52 = this.choiceAdvanced) === null || __oc52 === void 0 ? void 0 : __oc52.reset) === null || __oc53 === void 0 ? void 0 : __oc53.call(__oc52)));
+        (((__oc55 = (__oc54 = this.glitch) === null || __oc54 === void 0 ? void 0 : __oc54.stopTabGimmick) === null || __oc55 === void 0 ? void 0 : __oc55.call(__oc54)));
+        (((__oc57 = (__oc56 = this.glitchAdvanced) === null || __oc56 === void 0 ? void 0 : __oc56.clearAll) === null || __oc57 === void 0 ? void 0 : __oc57.call(__oc56)));
+        (((__oc59 = (__oc58 = this.renderer) === null || __oc58 === void 0 ? void 0 : __oc58.clearOverlays) === null || __oc59 === void 0 ? void 0 : __oc59.call(__oc58)));
+        (((__oc61 = (__oc60 = this.renderer) === null || __oc60 === void 0 ? void 0 : __oc60.clearMediaOverlay) === null || __oc61 === void 0 ? void 0 : __oc61.call(__oc60)));
+        (((__oc63 = (__oc62 = this.renderer) === null || __oc62 === void 0 ? void 0 : __oc62.clearCharacters) === null || __oc63 === void 0 ? void 0 : __oc63.call(__oc62)));
+        (((__oc65 = (__oc64 = this.renderer) === null || __oc64 === void 0 ? void 0 : __oc64.setSilhouette) === null || __oc65 === void 0 ? void 0 : __oc65.call(__oc64, false)));
+        (((__oc67 = (__oc66 = this.audio) === null || __oc66 === void 0 ? void 0 : __oc66.stopBGM) === null || __oc67 === void 0 ? void 0 : __oc67.call(__oc66, 0)));
+        (((__oc69 = (__oc68 = this.audio) === null || __oc68 === void 0 ? void 0 : __oc68.stopSFX) === null || __oc69 === void 0 ? void 0 : __oc69.call(__oc68, null, 0)));
+        (((__oc71 = (__oc70 = this.audio) === null || __oc70 === void 0 ? void 0 : __oc70.stopAmbient) === null || __oc71 === void 0 ? void 0 : __oc71.call(__oc70, 0)));
 
         this.currentSceneData = null;
         this.backlog = [];
@@ -479,24 +494,26 @@ class GameEngine {
         this._cageRepeatEffects = {};
         this._cageSeaVariants = {};
         this._cagePoolIndex = 0;
-        this._cageExitBtn?.remove?.();
+        (((__oc73 = (__oc72 = this._cageExitBtn) === null || __oc72 === void 0 ? void 0 : __oc72.remove) === null || __oc73 === void 0 ? void 0 : __oc73.call(__oc72)));
         this._cageExitBtn = null;
 
-        document.body?.classList.remove('ending-credit-mode');
+        (((__oc74 = document.body) === null || __oc74 === void 0 ? void 0 : __oc74.classList.remove('ending-credit-mode')));
         const statEl = document.getElementById('stat-display');
-        statEl?.classList.remove('stat-revealed', 'stat-peeling');
+        ((statEl === null || statEl === void 0 ? void 0 : statEl.classList.remove('stat-revealed', 'stat-peeling')));
     }
 
-    async startGalleryReplay(sceneId) {
-        if (this.isGalleryReplay || !SCENARIO[5]?.[sceneId]) return false;
+    async startGalleryReplay(sceneId) { var __oc75, __oc77, __oc78, __oc79, __oc80;
+        if (this.isGalleryReplay || !(((__oc75 = SCENARIO[5]) === null || __oc75 === void 0 ? void 0 : __oc75[sceneId]))) return false;
         const snapshot = {
             state: this.state.serialize(),
             backlog: this.backlog.slice(),
             archiveMode: this._archiveMode,
-            disabled: ['btn-save', 'btn-load'].map(id => [id, document.getElementById(id)?.disabled])
+            disabled: ['btn-save', 'btn-load'].map(id => { var __oc76; return (
+[id, (((__oc76 = document.getElementById(id)) === null || __oc76 === void 0 ? void 0 : __oc76.disabled))]
+); })
         };
-        this.gallery?._closeModal();
-        this.gallery?._stopBgmPreview();
+        (((__oc77 = this.gallery) === null || __oc77 === void 0 ? void 0 : __oc77._closeModal()));
+        (((__oc78 = this.gallery) === null || __oc78 === void 0 ? void 0 : __oc78._stopBgmPreview()));
         this._prepareNewRun();
         this._galleryReplaySnapshot = snapshot;
         this.isGalleryReplay = true;
@@ -505,7 +522,7 @@ class GameEngine {
         this.state.currentDay = 5;
         this.state.currentSlot = 'night';
         this.state.mode = CONFIG.STAT_MODES.THRILLER;
-        this.glitch?.shiftTheme?.('thriller');
+        (((__oc80 = (__oc79 = this.glitch) === null || __oc79 === void 0 ? void 0 : __oc79.shiftTheme) === null || __oc80 === void 0 ? void 0 : __oc80.call(__oc79, 'thriller')));
         for (const [id] of snapshot.disabled) {
             const button = document.getElementById(id);
             if (button) button.disabled = true;
@@ -525,7 +542,7 @@ class GameEngine {
         }
     }
 
-    _finishGalleryReplay() {
+    _finishGalleryReplay() { var __oc81, __oc82, __oc83, __oc84;
         if (!this.isGalleryReplay) return;
         const snapshot = this._galleryReplaySnapshot;
         this._prepareNewRun();
@@ -540,20 +557,20 @@ class GameEngine {
             const button = document.getElementById(id);
             if (button) button.disabled = !!disabled;
         }
-        this.glitch?.shiftTheme?.(snapshot.state.currentTheme || snapshot.state.mode);
-        this.glitchAdvanced?.disableDay5NoiseFilter?.();
+        (((__oc82 = (__oc81 = this.glitch) === null || __oc81 === void 0 ? void 0 : __oc81.shiftTheme) === null || __oc82 === void 0 ? void 0 : __oc82.call(__oc81, snapshot.state.currentTheme || snapshot.state.mode)));
+        (((__oc84 = (__oc83 = this.glitchAdvanced) === null || __oc83 === void 0 ? void 0 : __oc83.disableDay5NoiseFilter) === null || __oc84 === void 0 ? void 0 : __oc84.call(__oc83)));
         this.gallery.open();
     }
 
     // ===== Game Screen =====
 
-    _bindGameScreen() {
+    _bindGameScreen() { var __oc90;
         const dialogueBox = document.getElementById('dialogue-box');
-        const advanceDialogue = () => {
-            if (this.renderer?.cgTransition?.active || this._waitingForCG) return;
+        const advanceDialogue = () => { var __oc85, __oc86, __oc87, __oc88, __oc89;
+            if ((((__oc86 = (__oc85 = this.renderer) === null || __oc85 === void 0 ? void 0 : __oc85.cgTransition) === null || __oc86 === void 0 ? void 0 : __oc86.active)) || this._waitingForCG) return;
             if (this._clickLocked) return;
-            if (this.dialogue.isAdvanceCoolingDown?.()) return;
-            this.audio?.playUIDialogueAdvance();
+            if ((((__oc88 = (__oc87 = this.dialogue).isAdvanceCoolingDown) === null || __oc88 === void 0 ? void 0 : __oc88.call(__oc87)))) return;
+            (((__oc89 = this.audio) === null || __oc89 === void 0 ? void 0 : __oc89.playUIDialogueAdvance()));
 
             if (this.dialogue.isTyping) {
                 if (this._isEndingScene(this.state.currentScene)) return;
@@ -564,60 +581,69 @@ class GameEngine {
             this._advanceScene();
         };
 
-        dialogueBox?.addEventListener('click', advanceDialogue);
+        ((dialogueBox === null || dialogueBox === void 0 ? void 0 : dialogueBox.addEventListener('click', advanceDialogue)));
         // 대사창 밖(배경·캐릭터 영역)을 눌러도 대사가 넘어가게 한다. 버튼·선택지·기믹 오버레이는 제외.
         const tapLayers = '#bg-layer, #bg-overlay, #media-overlay, #char-layer, #glitch-overlay';
-        document.getElementById('game-screen')?.addEventListener('click', (event) => {
-            const target = event.target;
-            if (!(target instanceof Element)) return;
-            if (target.id !== 'game-screen' && !target.closest(tapLayers)) return;
-            advanceDialogue();
-        });
-        dialogueBox?.addEventListener('keydown', (event) => {
-            if (event.repeat || (event.key !== 'Enter' && event.key !== ' ')) return;
-            event.preventDefault();
-            advanceDialogue();
-        });
+        (((__oc90 = document.getElementById('game-screen')) === null || __oc90 === void 0 ? void 0 : __oc90.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!(target instanceof Element))
+            return;
+        if (target.id !== 'game-screen' && !target.closest(tapLayers))
+            return;
+        advanceDialogue();
+    })));
+        ((dialogueBox === null || dialogueBox === void 0 ? void 0 : dialogueBox.addEventListener('keydown', (event) => {
+        if (event.repeat || (event.key !== 'Enter' && event.key !== ' '))
+            return;
+        event.preventDefault();
+        advanceDialogue();
+    })));
 
         // btn-menu removed — replaced by quick menu
     }
 
-    _bindPauseMenu() {
-        document.getElementById('btn-resume')?.addEventListener('click', () => {
-            this.audio?.playUIMenuClose();
-            this._hideOverlay('pause-menu');
-        });
+    _bindPauseMenu() { var __oc91, __oc92, __oc93, __oc94, __oc95, __oc96;
+        (((__oc91 = document.getElementById('btn-resume')) === null || __oc91 === void 0 ? void 0 : __oc91.addEventListener('click', () => {
+        var __oc291;
+        (((__oc291 = this.audio) === null || __oc291 === void 0 ? void 0 : __oc291.playUIMenuClose()));
+        this._hideOverlay('pause-menu');
+    })));
 
-        document.getElementById('btn-save')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
-            this._hideOverlay('pause-menu', false);
-            this._openSlotSelector('save');
-        });
+        (((__oc92 = document.getElementById('btn-save')) === null || __oc92 === void 0 ? void 0 : __oc92.addEventListener('click', () => {
+        var __oc292;
+        (((__oc292 = this.audio) === null || __oc292 === void 0 ? void 0 : __oc292.playUIClick()));
+        this._hideOverlay('pause-menu', false);
+        this._openSlotSelector('save');
+    })));
 
-        document.getElementById('btn-load')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
-            this._hideOverlay('pause-menu', false);
-            this._openSlotSelector('load');
-        });
+        (((__oc93 = document.getElementById('btn-load')) === null || __oc93 === void 0 ? void 0 : __oc93.addEventListener('click', () => {
+        var __oc293;
+        (((__oc293 = this.audio) === null || __oc293 === void 0 ? void 0 : __oc293.playUIClick()));
+        this._hideOverlay('pause-menu', false);
+        this._openSlotSelector('load');
+    })));
 
-        document.getElementById('btn-backlog')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
-            this._hideOverlay('pause-menu', false);
-            this._renderBacklog();
-            this._showOverlay('backlog-panel', 'qm-menu');
-        });
+        (((__oc94 = document.getElementById('btn-backlog')) === null || __oc94 === void 0 ? void 0 : __oc94.addEventListener('click', () => {
+        var __oc294;
+        (((__oc294 = this.audio) === null || __oc294 === void 0 ? void 0 : __oc294.playUIClick()));
+        this._hideOverlay('pause-menu', false);
+        this._renderBacklog();
+        this._showOverlay('backlog-panel', 'qm-menu');
+    })));
 
-        document.getElementById('btn-settings')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
-            this._hideOverlay('pause-menu', false);
-            this._openSettings();
-        });
+        (((__oc95 = document.getElementById('btn-settings')) === null || __oc95 === void 0 ? void 0 : __oc95.addEventListener('click', () => {
+        var __oc295;
+        (((__oc295 = this.audio) === null || __oc295 === void 0 ? void 0 : __oc295.playUIClick()));
+        this._hideOverlay('pause-menu', false);
+        this._openSettings();
+    })));
 
-        document.getElementById('btn-title')?.addEventListener('click', () => {
-            this.audio?.playUIClick();
-            this._hideOverlay('pause-menu', false);
-            this._showScreen('title-screen');
-        });
+        (((__oc96 = document.getElementById('btn-title')) === null || __oc96 === void 0 ? void 0 : __oc96.addEventListener('click', () => {
+        var __oc296;
+        (((__oc296 = this.audio) === null || __oc296 === void 0 ? void 0 : __oc296.playUIClick()));
+        this._hideOverlay('pause-menu', false);
+        this._showScreen('title-screen');
+    })));
     }
 
     // ===== Settings Overlay =====
@@ -635,46 +661,52 @@ class GameEngine {
         return 100 - v;
     }
 
-    _bindSettings() {
-        document.getElementById('settings-close')?.addEventListener('click', () => {
-            this.audio?.playUIMenuClose?.();
-            this._hideOverlay('settings-overlay');
-        });
+    _bindSettings() { var __oc97, __oc98, __oc99;
+        (((__oc97 = document.getElementById('settings-close')) === null || __oc97 === void 0 ? void 0 : __oc97.addEventListener('click', () => {
+        var __oc297, __oc298;
+        (((__oc298 = (__oc297 = this.audio) === null || __oc297 === void 0 ? void 0 : __oc297.playUIMenuClose) === null || __oc298 === void 0 ? void 0 : __oc298.call(__oc297)));
+        this._hideOverlay('settings-overlay');
+    })));
 
         const bgm = document.getElementById('settings-bgm');
         const bgmVal = document.getElementById('settings-bgm-value');
-        bgm?.addEventListener('input', (e) => {
-            const v = parseInt(e.target.value, 10);
-            this.settings.set('volBgm', v / 100);
-            if (bgmVal) bgmVal.textContent = v + '%';
-        });
+        ((bgm === null || bgm === void 0 ? void 0 : bgm.addEventListener('input', (e) => {
+        const v = parseInt(e.target.value, 10);
+        this.settings.set('volBgm', v / 100);
+        if (bgmVal)
+            bgmVal.textContent = v + '%';
+    })));
 
         const sfx = document.getElementById('settings-sfx');
         const sfxVal = document.getElementById('settings-sfx-value');
-        sfx?.addEventListener('input', (e) => {
-            const v = parseInt(e.target.value, 10);
-            this.settings.set('volSfx', v / 100);
-            if (sfxVal) sfxVal.textContent = v + '%';
-        });
+        ((sfx === null || sfx === void 0 ? void 0 : sfx.addEventListener('input', (e) => {
+        const v = parseInt(e.target.value, 10);
+        this.settings.set('volSfx', v / 100);
+        if (sfxVal)
+            sfxVal.textContent = v + '%';
+    })));
 
         const ts = document.getElementById('settings-text-speed');
         const tsVal = document.getElementById('settings-text-speed-value');
-        ts?.addEventListener('input', (e) => {
-            const v = parseInt(e.target.value, 10);
-            this.settings.set('textSpeed', this._sliderToTypingSpeed(v));
-            if (tsVal) tsVal.textContent = v + '%';
-        });
+        ((ts === null || ts === void 0 ? void 0 : ts.addEventListener('input', (e) => {
+        const v = parseInt(e.target.value, 10);
+        this.settings.set('textSpeed', this._sliderToTypingSpeed(v));
+        if (tsVal)
+            tsVal.textContent = v + '%';
+    })));
 
-        document.getElementById('settings-fullscreen-toggle')?.addEventListener('click', () => {
-            this.audio?.playUIClick?.();
-            window.ArcherImmersive?.toggle().then(() => this._refreshFullscreenLabel());
-        });
+        (((__oc98 = document.getElementById('settings-fullscreen-toggle')) === null || __oc98 === void 0 ? void 0 : __oc98.addEventListener('click', () => {
+        var __oc298, __oc299, __oc300;
+        (((__oc299 = (__oc298 = this.audio) === null || __oc298 === void 0 ? void 0 : __oc298.playUIClick) === null || __oc299 === void 0 ? void 0 : __oc299.call(__oc298)));
+        (((__oc300 = window.ArcherImmersive) === null || __oc300 === void 0 ? void 0 : __oc300.toggle().then(() => this._refreshFullscreenLabel())));
+    })));
 
-        document.getElementById('settings-reset')?.addEventListener('click', () => {
-            this.audio?.playUIClick?.();
-            this.settings.reset();
-            this._populateSettingsOverlay();
-        });
+        (((__oc99 = document.getElementById('settings-reset')) === null || __oc99 === void 0 ? void 0 : __oc99.addEventListener('click', () => {
+        var __oc299, __oc300;
+        (((__oc300 = (__oc299 = this.audio) === null || __oc299 === void 0 ? void 0 : __oc299.playUIClick) === null || __oc300 === void 0 ? void 0 : __oc300.call(__oc299)));
+        this.settings.reset();
+        this._populateSettingsOverlay();
+    })));
 
         // 풀스크린 상태가 외부 변경(ESC 등)으로 바뀔 때 라벨 동기화
         this.lifecycle.listen(document, 'fullscreenchange', () => this._refreshFullscreenLabel());
@@ -686,12 +718,12 @@ class GameEngine {
         this._showOverlay('settings-overlay', 'qm-menu');
     }
 
-    _populateSettingsOverlay() {
-        const v = this.settings?.values;
+    _populateSettingsOverlay() { var __oc100, __oc101, __oc102, __oc103;
+        const v = (((__oc100 = this.settings) === null || __oc100 === void 0 ? void 0 : __oc100.values));
         if (!v) return;
-        const bgmPct = Math.round((v.volBgm ?? 0.5) * 100);
-        const sfxPct = Math.round((v.volSfx ?? 0.8) * 100);
-        const tsSlider = this._typingSpeedToSlider(v.textSpeed ?? 30);
+        const bgmPct = Math.round((((__oc101 = v.volBgm) !== null && __oc101 !== void 0 ? __oc101 : 0.5)) * 100);
+        const sfxPct = Math.round((((__oc102 = v.volSfx) !== null && __oc102 !== void 0 ? __oc102 : 0.8)) * 100);
+        const tsSlider = this._typingSpeedToSlider((((__oc103 = v.textSpeed) !== null && __oc103 !== void 0 ? __oc103 : 30)));
 
         const set = (id, prop, val) => { const el = document.getElementById(id); if (el) el[prop] = val; };
         set('settings-bgm', 'value', String(bgmPct));
@@ -708,25 +740,27 @@ class GameEngine {
         const btn = document.getElementById('settings-fullscreen-toggle');
         if (!btn) return;
         const immersive = window.ArcherImmersive;
-        const inFs = Boolean(immersive?.isFullscreen() || immersive?.isStandalone());
-        btn.disabled = Boolean(immersive?.isStandalone() && !immersive?.isFullscreen()) || !immersive?.supported();
+        const inFs = Boolean(((immersive === null || immersive === void 0 ? void 0 : immersive.isFullscreen())) || ((immersive === null || immersive === void 0 ? void 0 : immersive.isStandalone())));
+        btn.disabled = Boolean(((immersive === null || immersive === void 0 ? void 0 : immersive.isStandalone())) && !((immersive === null || immersive === void 0 ? void 0 : immersive.isFullscreen()))) || !((immersive === null || immersive === void 0 ? void 0 : immersive.supported()));
         btn.setAttribute('aria-pressed', String(inFs));
-        const ui = (k) => this.i18n?.getUI?.(k) || k;
+        const ui = (k) => { var __oc104, __oc105; return (
+(((__oc105 = (__oc104 = this.i18n) === null || __oc104 === void 0 ? void 0 : __oc104.getUI) === null || __oc105 === void 0 ? void 0 : __oc105.call(__oc104, k))) || k
+); };
         btn.textContent = inFs ? ui('settingsOn') : ui('settingsOff');
         btn.classList.toggle('is-on', inFs);
     }
 
     // ===== Scene Management =====
 
-    _loadScene(sceneId) {
-        this.renderer?.cgTransition?.cancel();
+    _loadScene(sceneId) { var __oc106, __oc107, __oc108, __oc109, __oc110, __oc111, __oc112, __oc113, __oc114, __oc115, __oc116, __oc117, __oc118, __oc119, __oc120, __oc121, __oc122, __oc123, __oc124, __oc125, __oc126, __oc127, __oc128, __oc129, __oc135, __oc136, __oc137, __oc138, __oc139, __oc140, __oc141, __oc142, __oc143, __oc144;
+        (((__oc107 = (__oc106 = this.renderer) === null || __oc106 === void 0 ? void 0 : __oc106.cgTransition) === null || __oc107 === void 0 ? void 0 : __oc107.cancel()));
         this._waitingForCG = false;
         // Retired duplicate scenes remain valid save locations, but resume the canonical scene.
-        sceneId = CONFIG.SCENE_ALIASES?.[sceneId] || sceneId;
-        this.dialogue.cancel?.();
+        sceneId = (((__oc108 = CONFIG.SCENE_ALIASES) === null || __oc108 === void 0 ? void 0 : __oc108[sceneId])) || sceneId;
+        (((__oc110 = (__oc109 = this.dialogue).cancel) === null || __oc110 === void 0 ? void 0 : __oc110.call(__oc109)));
         this._waitingForText = false;
         this._markNevergradPlayed();
-        this.sceneLifecycle?.dispose?.();
+        (((__oc112 = (__oc111 = this.sceneLifecycle) === null || __oc111 === void 0 ? void 0 : __oc111.dispose) === null || __oc112 === void 0 ? void 0 : __oc112.call(__oc111)));
         this.sceneLifecycle = this.runLifecycle.createScope(`scene:${sceneId}`);
         clearTimeout(this._autoAdvanceTimer);
 
@@ -738,7 +772,7 @@ class GameEngine {
 
         // NG+ 기시감 텍스트: SKIP 버튼 제거됨 → 씬 진입 시 자동 표시
         // (SCENARIO.md 5467-5477 "스킵 시스템 변조" 기믹을 일반 플레이에서도 체험)
-        if (this.glitchAdvanced && this.save?.isNewGamePlus()) {
+        if (this.glitchAdvanced && (((__oc113 = this.save) === null || __oc113 === void 0 ? void 0 : __oc113.isNewGamePlus()))) {
             this.glitchAdvanced.checkSkipDejaVu(sceneId, this.save);
         }
 
@@ -746,15 +780,15 @@ class GameEngine {
         this.state.currentScene = sceneId;
 
         // 거울 fog 상시 연출: 다음 씬이 mirrorFog 포함 안 하면 제거
-        const nextScene = SCENARIO[this.state.currentDay]?.[sceneId];
+        const nextScene = (((__oc114 = SCENARIO[this.state.currentDay]) === null || __oc114 === void 0 ? void 0 : __oc114[sceneId]));
         this._pulseCrossGlitch(sceneId);
-        if (this.glitch?._mirrorFogEl && !nextScene?.glitch?.mirrorFog) {
+        if ((((__oc115 = this.glitch) === null || __oc115 === void 0 ? void 0 : __oc115._mirrorFogEl)) && !(((__oc116 = nextScene === null || nextScene === void 0 ? void 0 : nextScene.glitch) === null || __oc116 === void 0 ? void 0 : __oc116.mirrorFog))) {
             this.glitch.hideMirrorFog();
         }
 
         const day = this.state.currentDay;
         const dayScenario = SCENARIO[day];
-        let scene = dayScenario?.[sceneId];
+        let scene = ((dayScenario === null || dayScenario === void 0 ? void 0 : dayScenario[sceneId]));
 
         if (!scene) {
             console.error(`[GameEngine] Scene not found: day${day}.${sceneId}`);
@@ -786,7 +820,7 @@ class GameEngine {
         this.currentSceneData = scene;
         this._applySceneDirectives(sceneId, scene);
 
-        if (this.deviceGimmick?.setupOrientationHijack) {
+        if ((((__oc117 = this.deviceGimmick) === null || __oc117 === void 0 ? void 0 : __oc117.setupOrientationHijack))) {
             this.deviceGimmick.setupOrientationHijack(this.state.currentDay);
         }
 
@@ -798,7 +832,7 @@ class GameEngine {
             const bgPath = CONFIG.BACKGROUNDS[scene.background] || scene.background;
             backgroundReady = this.renderer.setBackground(bgPath, { instant: scene.cgTransition === false });
             if (scene.background !== 'cg_riin_two_pills' && scene.background !== 'cg_gate_bloom') {
-                this.gallery?.unlockCGByPath?.(bgPath);
+                (((__oc119 = (__oc118 = this.gallery) === null || __oc118 === void 0 ? void 0 : __oc118.unlockCGByPath) === null || __oc119 === void 0 ? void 0 : __oc119.call(__oc118, bgPath)));
             }
         } else if (/^day5_ending_true_2[6-7]$/.test(sceneId)) {
             backgroundReady = this.renderer.setBackground(CONFIG.BACKGROUNDS.news_article);
@@ -832,13 +866,13 @@ class GameEngine {
                 this.renderer.clearCharacters();
             } else {
                 if (scene.character) {
-                    this.gallery?.unlockCharacterExpression?.(scene.character);
+                    (((__oc121 = (__oc120 = this.gallery) === null || __oc120 === void 0 ? void 0 : __oc120.unlockCharacterExpression) === null || __oc121 === void 0 ? void 0 : __oc121.call(__oc120, scene.character)));
                     this.renderer.setCharacter('center', this._resolveCharImage(scene.character), opacityFor('center', scene.character));
                 }
                 if (scene.characters) {
                     for (const [pos, key] of Object.entries(scene.characters)) {
                         if (key) {
-                            this.gallery?.unlockCharacterExpression?.(key);
+                            (((__oc123 = (__oc122 = this.gallery) === null || __oc122 === void 0 ? void 0 : __oc122.unlockCharacterExpression) === null || __oc123 === void 0 ? void 0 : __oc123.call(__oc122, key)));
                             this.renderer.setCharacter(pos, this._resolveCharImage(key), opacityFor(pos, key));
                         }
                     }
@@ -856,18 +890,18 @@ class GameEngine {
 
         // BGM
         if (typeof scene.bgm === 'string') {
-            this.gallery?.unlockBGM?.(scene.bgm);
+            (((__oc125 = (__oc124 = this.gallery) === null || __oc124 === void 0 ? void 0 : __oc124.unlockBGM) === null || __oc125 === void 0 ? void 0 : __oc125.call(__oc124, scene.bgm)));
             this.renderer.playBGM(scene.bgm);
             this.state.currentBGM = scene.bgm;
         } else if (scene.bgm && typeof scene.bgm === 'object') {
             // { fadeOut: ms } → BGM 정지 with fade
             const fadeOut = (scene.bgm.fadeOut || 1000) / 1000;
-            this.audio?.stopBGM(fadeOut);
+            (((__oc126 = this.audio) === null || __oc126 === void 0 ? void 0 : __oc126.stopBGM(fadeOut)));
             this.state.currentBGM = null;
         } else if (scene.bgm === null) {
-            this.audio?.stopBGM(1.0);
+            (((__oc127 = this.audio) === null || __oc127 === void 0 ? void 0 : __oc127.stopBGM(1.0)));
             this.state.currentBGM = null;
-        } else if (this.state.currentBGM && this.audio?.getCurrentBGM?.() !== this.state.currentBGM) {
+        } else if (this.state.currentBGM && (((__oc129 = (__oc128 = this.audio) === null || __oc128 === void 0 ? void 0 : __oc128.getCurrentBGM) === null || __oc129 === void 0 ? void 0 : __oc129.call(__oc128))) !== this.state.currentBGM) {
             // 세이브에서 mid-scene 로드 시 BGM 복원
             // (씬에 bgm 필드가 없고, AudioManager에 재생 중인 BGM이 state와 다르면 = 페이지 새로고침/이어하기)
             this.renderer.playBGM(this.state.currentBGM);
@@ -877,13 +911,13 @@ class GameEngine {
         // true: 전체 정지 / 문자열: 해당 파일만 정지 / 객체: { file, fadeOut } / 배열: 여러 정지 지시
         if (scene.stopSfx) {
             const stopList = Array.isArray(scene.stopSfx) ? scene.stopSfx : [scene.stopSfx];
-            stopList.forEach(stop => {
+            stopList.forEach(stop => { var __oc130, __oc131, __oc132, __oc133, __oc134;
                 if (stop === true) {
-                    this.audio?.stopSFX(null, 0.5);
+                    (((__oc130 = this.audio) === null || __oc130 === void 0 ? void 0 : __oc130.stopSFX(null, 0.5)));
                 } else if (typeof stop === 'string') {
-                    this.audio?.stopSFX(stop, 0.5);
+                    (((__oc131 = this.audio) === null || __oc131 === void 0 ? void 0 : __oc131.stopSFX(stop, 0.5)));
                 } else if (typeof stop === 'object') {
-                    this.audio?.stopSFX(stop.file ?? null, stop.fadeOut ?? 0.5);
+                    (((__oc132 = this.audio) === null || __oc132 === void 0 ? void 0 : __oc132.stopSFX((__oc133 = stop.file) !== null && __oc133 !== void 0 ? __oc133 : null, (__oc134 = stop.fadeOut) !== null && __oc134 !== void 0 ? __oc134 : 0.5)));
                 }
             });
         }
@@ -962,7 +996,7 @@ class GameEngine {
             // 앱 아이콘 변이 재평가 (COMPLICIT → thirteen, 1회차 후 → red 등)
             if (this.favicon) {
                 this.favicon.sync({
-                    saveMeta: this.save?.getMeta?.(),
+                    saveMeta: (((__oc136 = (__oc135 = this.save) === null || __oc135 === void 0 ? void 0 : __oc135.getMeta) === null || __oc136 === void 0 ? void 0 : __oc136.call(__oc135))),
                     state: this.state
                 });
             }
@@ -987,7 +1021,7 @@ class GameEngine {
         if (this.metaHorror) {
             if (sceneId.includes('save_slot') || sceneId.includes('day4_night_save')) {
                 this.metaHorror.setScreenshotContext('save_slot');
-            } else if (sceneId.includes('mirror_13') || sceneId.includes('mirror_2nd') || sceneId.includes('mirror_overlay') || scene?.glitch?.photoOverlay) {
+            } else if (sceneId.includes('mirror_13') || sceneId.includes('mirror_2nd') || sceneId.includes('mirror_overlay') || (((__oc137 = scene === null || scene === void 0 ? void 0 : scene.glitch) === null || __oc137 === void 0 ? void 0 : __oc137.photoOverlay))) {
                 this.metaHorror.setScreenshotContext('mirror_13faces');
             } else if (sceneId.includes('day5_docs') || sceneId.includes('day5_basement')) {
                 this.metaHorror.setScreenshotContext('day5_docs');
@@ -1003,9 +1037,9 @@ class GameEngine {
         this._waitingForText = !this.i18n.has(sceneId) || !!(scene.choices && !Array.isArray(t.choices));
         const name = this._resolveSpeakerName(sceneId);
         const extraVars = this._buildSceneVars(sceneId, scene);
-        const skipSlotText = scene.skipTextFlags?.some(flag => this.state.hasFlag(flag));
+        const skipSlotText = (((__oc138 = scene.skipTextFlags) === null || __oc138 === void 0 ? void 0 : __oc138.some(flag => this.state.hasFlag(flag))));
         const text = skipSlotText ? '' : this.i18n.resolve(t.text, this.state.playerName, extraVars);
-        this.renderer.setMediaOverlay?.(this._buildSceneMediaOverlay(sceneId, scene, t, text, extraVars));
+        (((__oc140 = (__oc139 = this.renderer).setMediaOverlay) === null || __oc140 === void 0 ? void 0 : __oc140.call(__oc139, this._buildSceneMediaOverlay(sceneId, scene, t, text, extraVars))));
 
         this._updateHUD();
 
@@ -1017,12 +1051,12 @@ class GameEngine {
 
         // 타이핑 옵션 (공포 연출: 느린 텍스트, 스킵 불가)
         const typeOpts = {};
-        const speakerId = globalThis.SCENARIO_SPEAKERS?.[sceneId] || '';
+        const speakerId = (((__oc141 = globalThis.SCENARIO_SPEAKERS) === null || __oc141 === void 0 ? void 0 : __oc141[sceneId])) || '';
         typeOpts.charId = scene.textPace === 'document' || scene.monospace
             ? 'system' : speakerId.replace(/_full$/, '');
         typeOpts.genreShift = this.state.hasFlag('genre_shift');
         typeOpts.day = this.state.currentDay;
-        typeOpts.silentTyping = !!(scene.glitch?.silence || scene.glitch?.silenceAll);
+        typeOpts.silentTyping = !!((((__oc142 = scene.glitch) === null || __oc142 === void 0 ? void 0 : __oc142.silence)) || (((__oc143 = scene.glitch) === null || __oc143 === void 0 ? void 0 : __oc143.silenceAll)));
         if (scene.typingSpeed !== undefined) typeOpts.typingSpeed = scene.typingSpeed;
         if (scene.voicePreset) typeOpts.voicePreset = scene.voicePreset;
         if (scene.textPace) typeOpts.textPace = scene.textPace;
@@ -1077,7 +1111,7 @@ class GameEngine {
             typeFn(name, text, scene.autoAdvance ? () => this._queueAutoAdvance(scene) : null, typeOpts);
         }
         };
-        if (this.renderer.cgTransition?.active) {
+        if ((((__oc144 = this.renderer.cgTransition) === null || __oc144 === void 0 ? void 0 : __oc144.active))) {
             this._waitingForCG = true;
             const scope = this.sceneLifecycle;
             Promise.resolve(backgroundReady).then(scope.guard(() => {
@@ -1089,31 +1123,31 @@ class GameEngine {
         }
     }
 
-    _applySceneDirectives(sceneId, scene) {
+    _applySceneDirectives(sceneId, scene) { var __oc145, __oc146, __oc147, __oc148, __oc149, __oc150, __oc151, __oc152, __oc153, __oc154, __oc155, __oc156, __oc157, __oc158;
         if (!scene) return;
 
         if (scene.setMode) {
-            const mode = CONFIG.STAT_MODES?.[scene.setMode] || String(scene.setMode).toLowerCase();
+            const mode = (((__oc145 = CONFIG.STAT_MODES) === null || __oc145 === void 0 ? void 0 : __oc145[scene.setMode])) || String(scene.setMode).toLowerCase();
             this.state.mode = mode;
             this.state.setTheme(mode);
-            this.glitch.shiftTheme?.(mode);
+            (((__oc147 = (__oc146 = this.glitch).shiftTheme) === null || __oc147 === void 0 ? void 0 : __oc147.call(__oc146, mode)));
         }
 
         if (scene.glitchLevel !== undefined) {
             const rawLevel = scene.glitchLevel;
             const level = typeof rawLevel === 'string'
-                ? CONFIG.GLITCH_LEVELS?.[rawLevel]
+                ? (((__oc148 = CONFIG.GLITCH_LEVELS) === null || __oc148 === void 0 ? void 0 : __oc148[rawLevel]))
                 : rawLevel;
-            if (level !== undefined) this.state.setGlitchLevel?.(level);
+            if (level !== undefined) (((__oc150 = (__oc149 = this.state).setGlitchLevel) === null || __oc150 === void 0 ? void 0 : __oc150.call(__oc149, level)));
         }
 
         if (scene.dejavu) {
-            this.state.setFlag?.(`dejavu_${sceneId}`);
-            this.glitch.screenNoise?.(120);
+            (((__oc152 = (__oc151 = this.state).setFlag) === null || __oc152 === void 0 ? void 0 : __oc152.call(__oc151, `dejavu_${sceneId}`)));
+            (((__oc154 = (__oc153 = this.glitch).screenNoise) === null || __oc154 === void 0 ? void 0 : __oc154.call(__oc153, 120)));
         }
 
-        if (scene.bgm_fade?.to) {
-            this.gallery?.unlockBGM?.(scene.bgm_fade.to);
+        if ((((__oc155 = scene.bgm_fade) === null || __oc155 === void 0 ? void 0 : __oc155.to))) {
+            (((__oc157 = (__oc156 = this.gallery) === null || __oc156 === void 0 ? void 0 : __oc156.unlockBGM) === null || __oc157 === void 0 ? void 0 : __oc157.call(__oc156, scene.bgm_fade.to)));
             this.renderer.playBGM(scene.bgm_fade.to);
             this.state.currentBGM = scene.bgm_fade.to;
         }
@@ -1121,12 +1155,12 @@ class GameEngine {
         if (scene.fadeIn) this._playSceneFade('in', scene.fadeDuration || 700);
         if (scene.fadeOut) this._playSceneFade('out', scene.fadeDuration || 700);
 
-        if (scene.metaEffect && !scene.glitch?.endingCreditSaveUI) {
+        if (scene.metaEffect && !(((__oc158 = scene.glitch) === null || __oc158 === void 0 ? void 0 : __oc158.endingCreditSaveUI))) {
             this._handleMetaEffect(scene.metaEffect);
         }
     }
 
-    _resolveSceneTimeOfDay(sceneId, scene) {
+    _resolveSceneTimeOfDay(sceneId, scene) { var __oc159;
         if (!scene || scene.noTimeFilter || scene.timeOfDay === false || scene.timeOfDay === null) {
             return null;
         }
@@ -1144,7 +1178,7 @@ class GameEngine {
 
         const backgroundKey = scene.background ? String(scene.background) : '';
         const backgroundPath = backgroundKey
-            ? (CONFIG.BACKGROUNDS?.[backgroundKey] || backgroundKey)
+            ? ((((__oc159 = CONFIG.BACKGROUNDS) === null || __oc159 === void 0 ? void 0 : __oc159[backgroundKey])) || backgroundKey)
             : '';
 
         if (this._isTimeFilterExemptBackground(backgroundPath)) {
@@ -1158,8 +1192,8 @@ class GameEngine {
         return this._timeOfDayFromSlot(slot);
     }
 
-    _slotFromSceneId(sceneId) {
-        return /^day\d_(morning|lunch|afterschool|night)_/.exec(sceneId || '')?.[1] || null;
+    _slotFromSceneId(sceneId) { var __oc160;
+        return (((__oc160 = /^day\d_(morning|lunch|afterschool|night)_/.exec(sceneId || '')) === null || __oc160 === void 0 ? void 0 : __oc160[1])) || null;
     }
 
     _timeOfDayFromSlot(slot) {
@@ -1191,8 +1225,8 @@ class GameEngine {
             || path.endsWith('/background/black.png');
     }
 
-    _buildSceneMediaOverlay(sceneId, scene, t, resolvedText, extraVars) {
-        if (!sceneId || !this.renderer?.setMediaOverlay) return null;
+    _buildSceneMediaOverlay(sceneId, scene, t, resolvedText, extraVars) { var __oc161;
+        if (!sceneId || !(((__oc161 = this.renderer) === null || __oc161 === void 0 ? void 0 : __oc161.setMediaOverlay))) return null;
 
         if (scene.background === 'news_article' || /^day5_ending_true_2[6-7]$/.test(sceneId)) {
             return this._buildNewsArticleMedia(extraVars);
@@ -1207,8 +1241,8 @@ class GameEngine {
         return null;
     }
 
-    _mediaLocale() {
-        const lang = this.i18n?.currentLang || 'ko';
+    _mediaLocale() { var __oc162;
+        const lang = (((__oc162 = this.i18n) === null || __oc162 === void 0 ? void 0 : __oc162.currentLang)) || 'ko';
         const copy = {
             ko: {
                 newsSource: 'NEVERGRAD TIMES', newsMeta: '3개월 후 · 사회', live: '속보',
@@ -1349,9 +1383,9 @@ class GameEngine {
         };
     }
 
-    _buildLabDocumentMedia(sceneId, resolvedText) {
+    _buildLabDocumentMedia(sceneId, resolvedText) { var __oc163;
         const copy = this._mediaLocale();
-        const playerName = this.state?.playerName || '{name}';
+        const playerName = (((__oc163 = this.state) === null || __oc163 === void 0 ? void 0 : __oc163.playerName)) || '{name}';
         const sceneNo = Number((sceneId.match(/_(\d+)$/) || [])[1] || 1);
 
         const raw = String(resolvedText || '').trim();
@@ -1379,7 +1413,7 @@ class GameEngine {
         };
     }
 
-    _handleMetaEffect(effect) {
+    _handleMetaEffect(effect) { var __oc164;
         const endingMap = {
             graduationSlots: 'TRUE',
             escapeSlot: 'ESCAPE',
@@ -1391,7 +1425,7 @@ class GameEngine {
         const endingKey = endingMap[effect];
         if (!endingKey || !this.glitchAdvanced) return;
 
-        document.body?.classList.add('ending-credit-mode');
+        (((__oc164 = document.body) === null || __oc164 === void 0 ? void 0 : __oc164.classList.add('ending-credit-mode')));
         this.glitchAdvanced.showEndingCreditSaveUI(
             this.save,
             this.state.playerName || 'Player',
@@ -1450,8 +1484,8 @@ class GameEngine {
         }, Math.max(0, delay));
     }
 
-    _advanceScene() {
-        if (this.renderer?.cgTransition?.active || this._waitingForCG) return;
+    _advanceScene() { var __oc165, __oc166, __oc167, __oc168;
+        if ((((__oc166 = (__oc165 = this.renderer) === null || __oc165 === void 0 ? void 0 : __oc165.cgTransition) === null || __oc166 === void 0 ? void 0 : __oc166.active)) || this._waitingForCG) return;
         if (this._waitingForText || this._isGameplayPaused()) return;
         // CAGE END 모드에서는 무한 루프 텍스트 출력
         if (this._cageMode) {
@@ -1488,7 +1522,7 @@ class GameEngine {
             this.glitch.initTabGimmick(this.state);
             if (this.favicon) {
                 this.favicon.sync({
-                    saveMeta: this.save?.getMeta?.(),
+                    saveMeta: (((__oc168 = (__oc167 = this.save) === null || __oc167 === void 0 ? void 0 : __oc167.getMeta) === null || __oc168 === void 0 ? void 0 : __oc168.call(__oc167))),
                     state: this.state
                 });
             }
@@ -1526,7 +1560,7 @@ class GameEngine {
 
     // ===== Choices =====
 
-    _showChoices(choices, labels) {
+    _showChoices(choices, labels) { var __oc173, __oc174, __oc175;
         const scope = this.sceneLifecycle;
         const panel = document.getElementById('choice-panel');
         if (!panel) return;
@@ -1536,13 +1570,13 @@ class GameEngine {
         let choiceSelected = false;
         let visibleChoiceIdx = 0;
 
-        choices.forEach((choice, choiceIdx) => {
+        choices.forEach((choice, choiceIdx) => { var __oc169;
             if (choice.condition && !this._checkCondition(choice.condition)) return;
             if (choice.excludeCondition && this.state.hasFlag(choice.excludeCondition)) return;
 
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
-            const label = labels?.[choiceIdx] || (this.i18n?.currentLang === 'ko' ? `선택 ${choiceIdx + 1}` : `Choice ${choiceIdx + 1}`);
+            const label = ((labels === null || labels === void 0 ? void 0 : labels[choiceIdx])) || ((((__oc169 = this.i18n) === null || __oc169 === void 0 ? void 0 : __oc169.currentLang)) === 'ko' ? `선택 ${choiceIdx + 1}` : `Choice ${choiceIdx + 1}`);
             const displayedIndex = visibleChoiceIdx++;
             btn.textContent = label;
 
@@ -1559,10 +1593,10 @@ class GameEngine {
                 }, choice.glitchDelay || 1500);
             }
 
-            btn.addEventListener('click', () => {
+            btn.addEventListener('click', () => { var __oc170, __oc171, __oc172;
                 if (choiceSelected) return;
                 choiceSelected = true;
-                this.audio?.playUIChoiceSelect();
+                (((__oc170 = this.audio) === null || __oc170 === void 0 ? void 0 : __oc170.playUIChoiceSelect()));
                 this._recordChoiceTelemetry(
                     this.state.currentScene,
                     choice,
@@ -1585,7 +1619,7 @@ class GameEngine {
                     if (choice.next) this._loadScene(choice.next);
                     else if (choice.returnToTitle) this._showEndingTitle('', null);
                 });
-                if (window.NevergradMotion?.choiceSelect?.(btn, panel, completeChoice)) {
+                if ((((__oc172 = (__oc171 = window.NevergradMotion) === null || __oc171 === void 0 ? void 0 : __oc171.choiceSelect) === null || __oc172 === void 0 ? void 0 : __oc172.call(__oc171, btn, panel, completeChoice)))) {
                     return;
                 }
                 completeChoice();
@@ -1641,8 +1675,8 @@ class GameEngine {
 
         // 📌 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
         const allBtns = panel.querySelectorAll('.choice-btn');
-        const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-        if (!reducedMotion && window.NevergradMotion?.choicesIn?.(panel, Array.from(allBtns))) {
+        const reducedMotion = (((__oc173 = window.matchMedia) === null || __oc173 === void 0 ? void 0 : __oc173.call(window, '(prefers-reduced-motion: reduce)').matches));
+        if (!reducedMotion && (((__oc175 = (__oc174 = window.NevergradMotion) === null || __oc174 === void 0 ? void 0 : __oc174.choicesIn) === null || __oc175 === void 0 ? void 0 : __oc175.call(__oc174, panel, Array.from(allBtns))))) {
             return;
         }
         const totalDelay = reducedMotion ? 0 : (allBtns.length - 1) * 80 + 1500;
@@ -1669,18 +1703,20 @@ class GameEngine {
         }
 
         // 약물 시야 흐림: 타이머 시작 직전 블랙아웃
-        const startChoices = () => {
+        const startChoices = () => { var __oc176;
             if (scope.disposed || this.currentSceneData !== scene) return;
             const startedAt = Date.now();
-            if (this.choiceAdvanced?.showTimedChoice) {
+            if ((((__oc176 = this.choiceAdvanced) === null || __oc176 === void 0 ? void 0 : __oc176.showTimedChoice))) {
                 this.choiceAdvanced.showTimedChoice(labels, timeMs, -1, { skipDrugPenalty: true })
-                    .then(scope.guard((idx) => this._handleTimedResult(
+                    .then(scope.guard((idx) => { var __oc177; return (
+this._handleTimedResult(
                         scene,
                         idx,
                         labels,
                         timeMs,
-                        this.choiceAdvanced.elapsedMs ?? (Date.now() - startedAt)
-                    )));
+                        (((__oc177 = this.choiceAdvanced.elapsedMs) !== null && __oc177 !== void 0 ? __oc177 : (Date.now() - startedAt)))
+                    )
+); }));
                 return;
             }
 
@@ -1709,7 +1745,7 @@ class GameEngine {
     /**
      * 타이머 선택지 결과 처리
      */
-    _handleTimedResult(scene, idx, labels = [], timeMs = scene.timedChoice, elapsedMs = 0) {
+    _handleTimedResult(scene, idx, labels = [], timeMs = scene.timedChoice, elapsedMs = 0) { var __oc178;
         // 타임아웃 (idx < 0 또는 범위 초과)
         if (idx < 0 || idx >= scene.choices.length) {
             this.state.recordTimedChoice(this.state.currentScene, timeMs, elapsedMs, true);
@@ -1727,7 +1763,7 @@ class GameEngine {
         this._recordChoiceTelemetry(
             this.state.currentScene,
             choice,
-            labels?.[idx] || (this.i18n?.currentLang === 'ko' ? `선택 ${idx + 1}` : `Choice ${idx + 1}`),
+            ((labels === null || labels === void 0 ? void 0 : labels[idx])) || ((((__oc178 = this.i18n) === null || __oc178 === void 0 ? void 0 : __oc178.currentLang)) === 'ko' ? `선택 ${idx + 1}` : `Choice ${idx + 1}`),
             idx,
             { timed: true, timeMs, elapsedMs, timedOut: false }
         );
@@ -1746,7 +1782,7 @@ class GameEngine {
         if (choice.next) this._loadScene(choice.next);
     }
 
-    _startSceneInteraction(interaction) {
+    _startSceneInteraction(interaction) { var __oc179, __oc180;
         if (!interaction) return;
 
         this._stopAuto();
@@ -1759,7 +1795,7 @@ class GameEngine {
 
         const finish = this.sceneLifecycle.guard(() => this._finishSceneInteraction(interaction));
 
-        if (interaction.type === 'photo_deck' && this.glitchAdvanced?.showPhotoDeck) {
+        if (interaction.type === 'photo_deck' && (((__oc179 = this.glitchAdvanced) === null || __oc179 === void 0 ? void 0 : __oc179.showPhotoDeck))) {
             this.glitchAdvanced.showPhotoDeck({
                 deck: interaction.deck,
                 onComplete: finish
@@ -1767,7 +1803,7 @@ class GameEngine {
             return;
         }
 
-        if (interaction.type === 'locker_search' && this.glitchAdvanced?.showLockerSearch) {
+        if (interaction.type === 'locker_search' && (((__oc180 = this.glitchAdvanced) === null || __oc180 === void 0 ? void 0 : __oc180.showLockerSearch))) {
             this.glitchAdvanced.showLockerSearch({
                 search: interaction.search,
                 onComplete: finish
@@ -1781,22 +1817,22 @@ class GameEngine {
     _finishSceneInteraction(interaction) {
         this._clickLocked = false;
 
-        if (interaction?.setFlags) this.state.setFlags(interaction.setFlags);
-        if (interaction?.evidence) {
+        if (((interaction === null || interaction === void 0 ? void 0 : interaction.setFlags))) this.state.setFlags(interaction.setFlags);
+        if (((interaction === null || interaction === void 0 ? void 0 : interaction.evidence))) {
             const added = this.state.addEvidence(interaction.evidence);
             if (added) this._showEvidenceToast(interaction.evidence);
         }
-        if (interaction?.next) this._loadScene(interaction.next);
+        if (((interaction === null || interaction === void 0 ? void 0 : interaction.next))) this._loadScene(interaction.next);
     }
 
-    _showEvidenceToast(evidence) {
+    _showEvidenceToast(evidence) { var __oc181, __oc182, __oc183;
         const existing = document.querySelector('#evidence-toast');
         if (existing) existing.remove();
 
         const toast = document.createElement('div');
         toast.id = 'evidence-toast';
         toast.className = 'save-toast evidence-toast';
-        const lang = this.i18n?.currentLang || 'ko';
+        const lang = (((__oc181 = this.i18n) === null || __oc181 === void 0 ? void 0 : __oc181.currentLang)) || 'ko';
         const labels = {
             ko: '증거 확보',
             en: 'Evidence secured',
@@ -1807,11 +1843,11 @@ class GameEngine {
             pt: 'Prova assegurada',
             zh: '获得证据'
         };
-        const name = evidence?.name ? `: ${evidence.name}` : '';
+        const name = ((evidence === null || evidence === void 0 ? void 0 : evidence.name)) ? `: ${evidence.name}` : '';
         toast.textContent = `${labels[lang] || labels.en}${name}`;
         document.body.appendChild(toast);
 
-        if (window.NevergradMotion?.toast?.(toast, 2200, () => toast.remove())) {
+        if ((((__oc183 = (__oc182 = window.NevergradMotion) === null || __oc182 === void 0 ? void 0 : __oc182.toast) === null || __oc183 === void 0 ? void 0 : __oc183.call(__oc182, toast, 2200, () => toast.remove())))) {
             return;
         }
 
@@ -1826,12 +1862,12 @@ class GameEngine {
     _recordChoiceTelemetry(sceneId, choice, label, displayedIndex, options = {}) {
         this.save.recordChoice(sceneId, displayedIndex, label);
 
-        const routeKey = this._detectRouteSelection(choice?.next);
+        const routeKey = this._detectRouteSelection(((choice === null || choice === void 0 ? void 0 : choice.next)));
         if (routeKey) {
             this.state.recordRouteSelection(routeKey);
         }
 
-        if (choice?.next && /(?:^|_)seolhwa(?:_|$)/.test(choice.next)) {
+        if (((choice === null || choice === void 0 ? void 0 : choice.next)) && /(?:^|_)seolhwa(?:_|$)/.test(choice.next)) {
             this.state.recordSeolhwaAttempt();
         }
 
@@ -1891,13 +1927,13 @@ class GameEngine {
     /**
      * "sea_smile" → CONFIG.EXPRESSIONS.sea.smile 경로로 변환
      */
-    _resolveCharImage(key) {
+    _resolveCharImage(key) { var __oc184;
         if (!key || key.includes('/')) return key; // 이미 경로면 그대로
         const idx = key.indexOf('_');
         if (idx === -1) return key;
         const charId = key.substring(0, idx);
         const expression = key.substring(idx + 1);
-        return CONFIG.EXPRESSIONS[charId]?.[expression] || key;
+        return (((__oc184 = CONFIG.EXPRESSIONS[charId]) === null || __oc184 === void 0 ? void 0 : __oc184[expression])) || key;
     }
 
     // ===== Glitch =====
@@ -1914,7 +1950,7 @@ class GameEngine {
      * 1회만 팬텀 지문을 띄운다. 세션당 1회, 재진입 재표시 없음.
      * @private
      */
-    _checkLatenightGimmick(sceneId) {
+    _checkLatenightGimmick(sceneId) { var __oc185;
         if (!this.glitchAdvanced) return;
         // 이미 표시됨 → 스킵
         if (this.state.hasFlag('latenight_shown')) return;
@@ -1927,7 +1963,7 @@ class GameEngine {
         if (hour < 0 || hour >= 3) return;
 
         this.state.setFlag('latenight_shown');
-        const text = this.i18n?.getUI('latenightAlone') ||
+        const text = (((__oc185 = this.i18n) === null || __oc185 === void 0 ? void 0 : __oc185.getUI('latenightAlone'))) ||
             '\uC774 \uC2DC\uAC04\uC5D0 \uAE68\uC5B4 \uC788\uB294 \uAC74 \uB098\ubfd0\uC77C\uAE4C.';
         // 화면 중앙 위쪽에 2.8초간 팬텀 텍스트
         this.glitchAdvanced.showGhostText(text, 50, 22, 2800);
@@ -1939,22 +1975,22 @@ class GameEngine {
      * day4_night_save_glitch_20 (거울 진입 직전 씬)에서 단 1회.
      * @private
      */
-    _checkHeadphoneHint(sceneId) {
+    _checkHeadphoneHint(sceneId) { var __oc186, __oc187, __oc188;
         if (!this.glitchAdvanced) return;
         if (sceneId !== 'day4_night_save_glitch_20') return;
         if (this.state.hasFlag('headphone_hint_shown')) return;
         // 바이노럴 활성 상태면 이어폰 착용 중 → 힌트 불필요
-        if (this.audio?.isBinauralActive?.()) return;
+        if ((((__oc187 = (__oc186 = this.audio) === null || __oc186 === void 0 ? void 0 : __oc186.isBinauralActive) === null || __oc187 === void 0 ? void 0 : __oc187.call(__oc186)))) return;
 
         this.state.setFlag('headphone_hint_shown');
-        const text = this.i18n?.getUI('headphoneHint') ||
+        const text = (((__oc188 = this.i18n) === null || __oc188 === void 0 ? void 0 : __oc188.getUI('headphoneHint'))) ||
             '\uC774\uC5B4\uD3F0\uC744 \uB07C\uBA74 \uB354 \uC798 \uB4E4\uB9B4 \uD150\uB370.';
         this.glitchAdvanced.showGhostText(text, 50, 78, 500);
     }
 
-    _cleanupPersistentOverlays(sceneId, scene) {
+    _cleanupPersistentOverlays(sceneId, scene) { var __oc189, __oc190, __oc191, __oc192;
         if (!this.glitchAdvanced) return;
-        const g = scene?.glitch || {};
+        const g = ((scene === null || scene === void 0 ? void 0 : scene.glitch)) || {};
         const inSaveGlitch = /day4_night_save_glitch/.test(sceneId);
         if (!inSaveGlitch && !g.adminPanel) {
             this.glitchAdvanced.hideAdminPanel();
@@ -1965,18 +2001,18 @@ class GameEngine {
         }
         const inMirrorSwipe = /day4_night_mirror_swipe/.test(sceneId);
         if (!inMirrorSwipe && !g.mirrorWipe) {
-            this.glitchAdvanced._teardownMirrorWipe?.();
+            (((__oc190 = (__oc189 = this.glitchAdvanced)._teardownMirrorWipe) === null || __oc190 === void 0 ? void 0 : __oc190.call(__oc189)));
         }
         if (!g.photoOverlay && !/mirror_hit2|mirror_overlay/.test(sceneId)) {
             this.glitchAdvanced.hidePhotoOverlay();
         }
         // 서명 패드: 전용 씬 밖에서는 즉시 제거
         if (sceneId !== 'day5_ending_complicit_sign' && !g.requireSignature) {
-            this.glitchAdvanced.hideSignaturePad?.();
+            (((__oc192 = (__oc191 = this.glitchAdvanced).hideSignaturePad) === null || __oc192 === void 0 ? void 0 : __oc192.call(__oc191)));
         }
     }
 
-    _handleGlitch(g) {
+    _handleGlitch(g) { var __oc193, __oc194, __oc195, __oc196, __oc197, __oc198, __oc199, __oc200, __oc201, __oc202, __oc203, __oc204, __oc205, __oc206, __oc207;
         if (!g) return;
         if (typeof g === 'string') {
             this._handleNamedGlitch(g);
@@ -1995,12 +2031,12 @@ class GameEngine {
         }
         if (g.corruptText) this._corruptDialogueText(g);
         if (g.mirrorReveal) this._showMirrorReveal(g.mirrorReveal);
-        if (g.drugBlur) this.glitch.drugBlur?.(g.drugBlurDuration || 700);
+        if (g.drugBlur) (((__oc194 = (__oc193 = this.glitch).drugBlur) === null || __oc194 === void 0 ? void 0 : __oc194.call(__oc193, g.drugBlurDuration || 700)));
         if (g.borderPulse) this._pulseDialogueBorder(g.borderPulseDuration || 1200);
         if (g.textReplace) this._applyTitleTextReplace(g.textReplace);
         if (g.silence) {
             // AudioManager 우선, 폴백: 레거시 HTML5 Audio
-            if (this.audio?.ctx) {
+            if ((((__oc195 = this.audio) === null || __oc195 === void 0 ? void 0 : __oc195.ctx))) {
                 this.audio.silenceDrop(g.silenceDuration);
             } else {
                 this.glitch.silenceDrop(this.renderer.bgmAudio, g.silenceDuration);
@@ -2009,7 +2045,7 @@ class GameEngine {
         if (g.themeShift) { this.state.setTheme(g.themeShift); this.glitch.shiftTheme(g.themeShift); }
         if (g.heavy || g.heavyGlitch) this.glitch.heavyGlitch(g.heavyDuration);
         if (g.ghostText) {
-            if (this.state?.currentScene === 'day1_xover_seolhwa_1') this._crackleAndBuzz();
+            if ((((__oc196 = this.state) === null || __oc196 === void 0 ? void 0 : __oc196.currentScene)) === 'day1_xover_seolhwa_1') this._crackleAndBuzz();
             const showGhostText = () => this.glitch.ghostText(
                 this._resolveEffectText(g.ghostText),
                 g.ghostX || 50,
@@ -2022,7 +2058,7 @@ class GameEngine {
                 showGhostText();
             }
         }
-        if (g.ngPlusGhostText && this.save?.isNewGamePlus()) {
+        if (g.ngPlusGhostText && (((__oc197 = this.save) === null || __oc197 === void 0 ? void 0 : __oc197.isNewGamePlus()))) {
             this.glitch.ghostText(
                 this._resolveEffectText(g.ngPlusGhostText),
                 g.ghostX || 50,
@@ -2036,7 +2072,7 @@ class GameEngine {
         if (g.endingCreditSaveUI && this.glitchAdvanced) {
             this.glitchAdvanced.showEndingCreditSaveUI(
                 this.save,
-                this.state.playerName || this.i18n?.getCharacterName?.('me') || 'Player',
+                this.state.playerName || (((__oc199 = (__oc198 = this.i18n) === null || __oc198 === void 0 ? void 0 : __oc198.getCharacterName) === null || __oc199 === void 0 ? void 0 : __oc199.call(__oc198, 'me'))) || 'Player',
                 g.endingCreditSaveUI
             );
         }
@@ -2072,7 +2108,7 @@ class GameEngine {
         if (g.appKill && this.deviceGimmick) {
             this.deviceGimmick.simulateAppKill(g.appKillDuration || 1000);
         }
-        if (g.ngPlusEmptyFrame && this.glitchAdvanced && this.save?.isNewGamePlus()) {
+        if (g.ngPlusEmptyFrame && this.glitchAdvanced && (((__oc200 = this.save) === null || __oc200 === void 0 ? void 0 : __oc200.isNewGamePlus()))) {
             this.glitchAdvanced.show14thEmptyFrame(g.ngPlusEmptyFrameDuration || 800);
         }
         if (g.earlyEscape && this.glitchAdvanced) {
@@ -2104,8 +2140,8 @@ class GameEngine {
 
         // ── Day 4 밤: BGM까지 완전 음소거 (거울 스와이프 직전)
         if (g.silenceAll) {
-            if (this.audio?.ctx) this.audio.silenceDrop(g.silenceDuration || 0);
-            if (this.renderer?.bgmAudio) {
+            if ((((__oc201 = this.audio) === null || __oc201 === void 0 ? void 0 : __oc201.ctx))) this.audio.silenceDrop(g.silenceDuration || 0);
+            if ((((__oc202 = this.renderer) === null || __oc202 === void 0 ? void 0 : __oc202.bgmAudio))) {
                 try { this.renderer.bgmAudio.pause(); } catch (_) {}
             }
         }
@@ -2134,7 +2170,7 @@ class GameEngine {
                 clearTimeout(this._clickLockTimer);
                 this._clickLockTimer = null;
             }
-            this.metaHorror?.setScreenshotContext?.('mirror_13faces');
+            (((__oc204 = (__oc203 = this.metaHorror) === null || __oc203 === void 0 ? void 0 : __oc203.setScreenshotContext) === null || __oc204 === void 0 ? void 0 : __oc204.call(__oc203, 'mirror_13faces')));
             Promise.resolve(this.glitchAdvanced.showPhotoOverlay({
                 photoSequence: g.photoSequence || [],
                 photoInterval: g.photoInterval,
@@ -2157,7 +2193,7 @@ class GameEngine {
 
         // ── Day 5 추격전 발소리 좌→우 스윕 (SCENARIO.md 5622)
         // g.chaseFootsteps: { fromPan, toPan, steps, interval } 또는 true
-        if (g.chaseFootsteps && this.audio?.playFootstepsPanSweep) {
+        if (g.chaseFootsteps && (((__oc205 = this.audio) === null || __oc205 === void 0 ? void 0 : __oc205.playFootstepsPanSweep))) {
             const opts = (typeof g.chaseFootsteps === 'object') ? g.chaseFootsteps : {};
             this.audio.playFootstepsPanSweep(opts);
         }
@@ -2168,7 +2204,7 @@ class GameEngine {
         // g.pan: -1(왼쪽) ~ 1(오른쪽), 기본 -1 (설화 속삭임 규약)
         if (g.panSFX && this.audio) {
             const pan = (typeof g.pan === 'number') ? g.pan : -1;
-            const effectivePan = this.audio.isBinauralActive?.() ? pan : 0;
+            const effectivePan = (((__oc207 = (__oc206 = this.audio).isBinauralActive) === null || __oc207 === void 0 ? void 0 : __oc207.call(__oc206))) ? pan : 0;
             try {
                 this.audio.playSFXPanned(g.panSFX, effectivePan);
             } catch (_) {
@@ -2177,9 +2213,11 @@ class GameEngine {
         }
     }
 
-    _normalizeMemoryFlash(flash) {
+    _normalizeMemoryFlash(flash) { var __oc209, __oc210, __oc211, __oc212;
         const config = typeof flash === 'string' ? { image: flash } : { ...(flash || {}) };
-        const resolveImage = (value) => CONFIG.BACKGROUNDS?.[value] || value;
+        const resolveImage = (value) => { var __oc208; return (
+(((__oc208 = CONFIG.BACKGROUNDS) === null || __oc208 === void 0 ? void 0 : __oc208[value])) || value
+); };
 
         if (config.background && !config.image) {
             config.image = resolveImage(config.background);
@@ -2187,26 +2225,26 @@ class GameEngine {
             config.image = resolveImage(config.image);
         }
 
-        if (this.state?.currentScene === 'day4_xover_yuna_10' && this.crossover?.getData?.()?.heroine === 'seoyeon') {
+        if ((((__oc209 = this.state) === null || __oc209 === void 0 ? void 0 : __oc209.currentScene)) === 'day4_xover_yuna_10' && (((__oc212 = (__oc211 = (__oc210 = this.crossover) === null || __oc210 === void 0 ? void 0 : __oc210.getData) === null || __oc211 === void 0 ? void 0 : __oc211.call(__oc210)) === null || __oc212 === void 0 ? void 0 : __oc212.heroine)) === 'seoyeon') {
             config.image = 'assets/images/crossover/cupid_heroine_memory.png';
         }
         if (!config.duration) config.duration = 1000;
         return config;
     }
 
-    _handleNamedGlitch(name) {
-        this.state.setFlag?.(`glitch_${name}`);
+    _handleNamedGlitch(name) { var __oc213, __oc214, __oc215, __oc216, __oc217, __oc218, __oc219, __oc220, __oc221, __oc222, __oc223, __oc224;
+        (((__oc214 = (__oc213 = this.state).setFlag) === null || __oc214 === void 0 ? void 0 : __oc214.call(__oc213, `glitch_${name}`)));
 
         if (name === 'deja_vu_direction' || name === 'deja_vu_desk') {
-            this.glitch.screenNoise?.(160);
-            this.glitch.ghostText?.('...', 50, 28, 450);
+            (((__oc216 = (__oc215 = this.glitch).screenNoise) === null || __oc216 === void 0 ? void 0 : __oc216.call(__oc215, 160)));
+            (((__oc218 = (__oc217 = this.glitch).ghostText) === null || __oc218 === void 0 ? void 0 : __oc218.call(__oc217, '...', 50, 28, 450)));
             return;
         }
 
         if (name === 'loop_truth') {
-            this.glitch.screenNoise?.(80);
-            if (this.save?.isNewGamePlus?.()) {
-                this.glitch.ghostText?.('...', 50, 72, 350);
+            (((__oc220 = (__oc219 = this.glitch).screenNoise) === null || __oc220 === void 0 ? void 0 : __oc220.call(__oc219, 80)));
+            if ((((__oc222 = (__oc221 = this.save) === null || __oc221 === void 0 ? void 0 : __oc221.isNewGamePlus) === null || __oc222 === void 0 ? void 0 : __oc222.call(__oc221)))) {
+                (((__oc224 = (__oc223 = this.glitch).ghostText) === null || __oc224 === void 0 ? void 0 : __oc224.call(__oc223, '...', 50, 72, 350)));
             }
         }
     }
@@ -2251,7 +2289,7 @@ class GameEngine {
         const indices = Array.isArray(g.corruptIndices) ? new Set(g.corruptIndices) : null;
         const corruptOnce = () => {
             const textEl = document.getElementById('dialogue-text');
-            const original = textEl?.textContent || '';
+            const original = ((textEl === null || textEl === void 0 ? void 0 : textEl.textContent)) || '';
             if (!textEl || !original) return false;
 
             const chars = original.split('');
@@ -2274,9 +2312,9 @@ class GameEngine {
         }, 120);
     }
 
-    _showMirrorReveal(stage) {
-        this.glitchAdvanced?.showMirrorPlayerReveal?.(stage);
-        this.glitch.screenNoise?.(120);
+    _showMirrorReveal(stage) { var __oc225, __oc226, __oc227, __oc228;
+        (((__oc226 = (__oc225 = this.glitchAdvanced) === null || __oc225 === void 0 ? void 0 : __oc225.showMirrorPlayerReveal) === null || __oc226 === void 0 ? void 0 : __oc226.call(__oc225, stage)));
+        (((__oc228 = (__oc227 = this.glitch).screenNoise) === null || __oc228 === void 0 ? void 0 : __oc228.call(__oc227, 120)));
     }
 
     _pulseDialogueBorder(duration = 1200) {
@@ -2288,7 +2326,7 @@ class GameEngine {
 
     _applyTitleTextReplace(replace) {
         replace = this._pickLocalizedValue(replace);
-        if (!replace?.to) return;
+        if (!((replace === null || replace === void 0 ? void 0 : replace.to))) return;
         const titleEl = document.querySelector('.title-text');
         if (titleEl && (!replace.from || titleEl.textContent.includes(replace.from))) {
             titleEl.textContent = replace.to;
@@ -2299,8 +2337,8 @@ class GameEngine {
 
     // ===== Ending Title =====
 
-    _showEndingTitle(title, subtitleKey) {
-        this.sceneLifecycle?.clear?.();
+    _showEndingTitle(title, subtitleKey) { var __oc229, __oc230, __oc231, __oc232, __oc233, __oc234, __oc236;
+        (((__oc230 = (__oc229 = this.sceneLifecycle) === null || __oc229 === void 0 ? void 0 : __oc229.clear) === null || __oc230 === void 0 ? void 0 : __oc230.call(__oc229)));
         this._autoAdvanceTimer = null;
         const overlay = document.createElement('div');
         overlay.className = 'ending-title-overlay';
@@ -2313,7 +2351,7 @@ class GameEngine {
         }
 
         if (subtitleKey) {
-            const subtitleText = this.i18n.get(subtitleKey)?.text || '';
+            const subtitleText = (((__oc231 = this.i18n.get(subtitleKey)) === null || __oc231 === void 0 ? void 0 : __oc231.text)) || '';
             if (subtitleText) {
                 const subEl = document.createElement('div');
                 subEl.className = 'ending-subtitle';
@@ -2325,11 +2363,11 @@ class GameEngine {
         // 타이틀 복귀 버튼
         const returnBtn = document.createElement('button');
         returnBtn.className = 'ending-return-btn';
-        const next = title ? this.currentSceneData?.next : null;
-        returnBtn.textContent = this.i18n?.getUI?.(next ? 'continue' : 'toTitle') || (next ? 'Continue' : 'Title');
-        returnBtn.addEventListener('click', () => {
+        const next = title ? (((__oc232 = this.currentSceneData) === null || __oc232 === void 0 ? void 0 : __oc232.next)) : null;
+        returnBtn.textContent = (((__oc234 = (__oc233 = this.i18n) === null || __oc233 === void 0 ? void 0 : __oc233.getUI) === null || __oc234 === void 0 ? void 0 : __oc234.call(__oc233, next ? 'continue' : 'toTitle'))) || (next ? 'Continue' : 'Title');
+        returnBtn.addEventListener('click', () => { var __oc235;
             overlay.remove();
-            this.glitchAdvanced?.disableDay5NoiseFilter();
+            (((__oc235 = this.glitchAdvanced) === null || __oc235 === void 0 ? void 0 : __oc235.disableDay5NoiseFilter()));
             if (next) {
                 this._endingReached = false;
                 this._loadScene(next);
@@ -2338,7 +2376,7 @@ class GameEngine {
         });
         overlay.appendChild(returnBtn);
 
-        document.getElementById('game-screen')?.appendChild(overlay);
+        (((__oc236 = document.getElementById('game-screen')) === null || __oc236 === void 0 ? void 0 : __oc236.appendChild(overlay)));
 
         // 탭 기믹 해제
         this.glitch.stopTabGimmick();
@@ -2347,37 +2385,37 @@ class GameEngine {
         this._endingReached = true;
     }
 
-    dispose() {
+    dispose() { var __oc237, __oc238, __oc239, __oc240, __oc241, __oc242, __oc243, __oc244, __oc245, __oc246, __oc247, __oc248;
         this._stopAuto();
         this._stopSkip();
-        this.audio?.dispose?.();
-        this.glitch?.dispose?.();
-        this.glitchAdvanced?.clearAll?.();
-        this.deviceGimmick?.dispose?.();
-        this.metaHorror?.dispose?.();
-        this.lifecycle?.dispose?.();
+        (((__oc238 = (__oc237 = this.audio) === null || __oc237 === void 0 ? void 0 : __oc237.dispose) === null || __oc238 === void 0 ? void 0 : __oc238.call(__oc237)));
+        (((__oc240 = (__oc239 = this.glitch) === null || __oc239 === void 0 ? void 0 : __oc239.dispose) === null || __oc240 === void 0 ? void 0 : __oc240.call(__oc239)));
+        (((__oc242 = (__oc241 = this.glitchAdvanced) === null || __oc241 === void 0 ? void 0 : __oc241.clearAll) === null || __oc242 === void 0 ? void 0 : __oc242.call(__oc241)));
+        (((__oc244 = (__oc243 = this.deviceGimmick) === null || __oc243 === void 0 ? void 0 : __oc243.dispose) === null || __oc244 === void 0 ? void 0 : __oc244.call(__oc243)));
+        (((__oc246 = (__oc245 = this.metaHorror) === null || __oc245 === void 0 ? void 0 : __oc245.dispose) === null || __oc246 === void 0 ? void 0 : __oc246.call(__oc245)));
+        (((__oc248 = (__oc247 = this.lifecycle) === null || __oc247 === void 0 ? void 0 : __oc247.dispose) === null || __oc248 === void 0 ? void 0 : __oc248.call(__oc247)));
     }
 
     // ===== Text =====
 
-    _resolveSpeakerName(sceneId) {
-        const speakerId = globalThis.SCENARIO_SPEAKERS?.[sceneId];
+    _resolveSpeakerName(sceneId) { var __oc249, __oc250, __oc251;
+        const speakerId = (((__oc249 = globalThis.SCENARIO_SPEAKERS) === null || __oc249 === void 0 ? void 0 : __oc249[sceneId]));
         if (!speakerId) return '';
-        return this.i18n?.getSpeakerName?.(speakerId, this.state.playerName) || speakerId;
+        return (((__oc251 = (__oc250 = this.i18n) === null || __oc250 === void 0 ? void 0 : __oc250.getSpeakerName) === null || __oc251 === void 0 ? void 0 : __oc251.call(__oc250, speakerId, this.state.playerName))) || speakerId;
     }
 
-    _pickLocalizedValue(value) {
+    _pickLocalizedValue(value) { var __oc252;
         if (!value || typeof value !== 'object' || Array.isArray(value)) return value;
-        const lang = this.i18n?.currentLang || 'ko';
+        const lang = (((__oc252 = this.i18n) === null || __oc252 === void 0 ? void 0 : __oc252.currentLang)) || 'ko';
         return value[lang] || value.en || value.ko || '';
     }
 
-    _resolveEffectText(value, extraVars) {
+    _resolveEffectText(value, extraVars) { var __oc253, __oc254, __oc255, __oc256;
         const picked = this._pickLocalizedValue(value);
         if (picked === true || picked == null) return '';
         const raw = String(picked);
-        const localized = this.i18n?.get?.(raw)?.text || raw;
-        return this.i18n?.resolve
+        const localized = (((__oc255 = (__oc254 = (__oc253 = this.i18n) === null || __oc253 === void 0 ? void 0 : __oc253.get) === null || __oc254 === void 0 ? void 0 : __oc254.call(__oc253, raw)) === null || __oc255 === void 0 ? void 0 : __oc255.text)) || raw;
+        return (((__oc256 = this.i18n) === null || __oc256 === void 0 ? void 0 : __oc256.resolve))
             ? this.i18n.resolve(localized, this.state.playerName, extraVars)
             : localized.replace(/\{name\}/g, this.state.playerName || '');
     }
@@ -2389,14 +2427,14 @@ class GameEngine {
             '14th_name': futureName
         };
 
-        if (scene?.dynamicData || sceneId.startsWith('day5_observer_')) {
+        if (((scene === null || scene === void 0 ? void 0 : scene.dynamicData)) || sceneId.startsWith('day5_observer_')) {
             Object.assign(vars, this._buildObserverVars());
         }
 
         return vars;
     }
 
-    _getFutureSubjectName() {
+    _getFutureSubjectName() { var __oc257;
         const koPool = [
             '강하준', '김시온', '박도윤', '서이안',
             '윤태오', '이현우', '정민재', '최도현'
@@ -2417,7 +2455,7 @@ class GameEngine {
         const seed = [...seedSource].reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
         const picked = this.state.getGeneratedName('14th_name', () => koPool[seed % koPool.length]);
         this.state.getGeneratedName('new_name', () => picked);
-        const lang = this.i18n?.currentLang || 'ko';
+        const lang = (((__oc257 = this.i18n) === null || __oc257 === void 0 ? void 0 : __oc257.currentLang)) || 'ko';
         if (lang === 'ko') return picked;
         const idx = koPool.indexOf(picked);
         if (idx < 0) return picked;
@@ -2426,7 +2464,7 @@ class GameEngine {
         return enPool[idx];
     }
 
-    _buildObserverVars() {
+    _buildObserverVars() { var __oc258, __oc259, __oc260, __oc261;
         const analytics = this.state.analytics || {};
         const hasEvidence =
             this.state.hasFlag('has_evidence') ||
@@ -2437,12 +2475,12 @@ class GameEngine {
             this.state.hasFlag('found_yuna_camera') ||
             (Array.isArray(this.state.evidence) && this.state.evidence.length > 0);
 
-        const xover = this.crossover?.getData?.() || {};
+        const xover = (((__oc259 = (__oc258 = this.crossover) === null || __oc258 === void 0 ? void 0 : __oc258.getData) === null || __oc259 === void 0 ? void 0 : __oc259.call(__oc258))) || {};
         return {
             play_time: this._formatPlayTime(this.state.getTotalPlayMs()),
-            route_data: String(analytics.routeSelections?.sea || 0),
+            route_data: String((((__oc260 = analytics.routeSelections) === null || __oc260 === void 0 ? void 0 : __oc260.sea)) || 0),
             met_yuna: this._formatBinaryStatus(this.state.hasFlag('met_yuna')),
-            riin_visits: String(analytics.riinVisits || analytics.routeSelections?.riin || 0),
+            riin_visits: String(analytics.riinVisits || (((__oc261 = analytics.routeSelections) === null || __oc261 === void 0 ? void 0 : __oc261.riin)) || 0),
             seolhwa_attempts: String(analytics.seolhwaAttempts || 0),
             evidence_data: this._formatEvidenceStatus(hasEvidence),
             timer_data: this._formatTimedChoice(analytics.lastTimedChoice),
@@ -2572,7 +2610,7 @@ class GameEngine {
      * - romance 모드: 현재 대화 캐릭터의 호감도 (♥)
      * - thriller 모드: 신뢰도(◈) / 위험도(⚠)
      */
-    _updateStatDisplay() {
+    _updateStatDisplay() { var __oc262, __oc263, __oc264;
         const statEl = document.getElementById('stat-display');
         if (!statEl) return;
 
@@ -2589,7 +2627,7 @@ class GameEngine {
         const isRevealed = statEl.classList.contains('stat-revealed');
 
         // 현재 씬에서 대화 중인 캐릭터 파악
-        const charKey = this.currentSceneData?.character;
+        const charKey = (((__oc262 = this.currentSceneData) === null || __oc262 === void 0 ? void 0 : __oc262.character));
         let charId = null;
         if (charKey && typeof charKey === 'string') {
             const idx = charKey.indexOf('_');
@@ -2607,7 +2645,7 @@ class GameEngine {
         statEl.classList.remove('stat-hidden');
 
         const aff = this.state.getDisplayAffinity(charId);
-        const charLabel = this.i18n?.getStatLabel?.(this.state.mode, charId)
+        const charLabel = (((__oc264 = (__oc263 = this.i18n) === null || __oc263 === void 0 ? void 0 : __oc263.getStatLabel) === null || __oc264 === void 0 ? void 0 : __oc264.call(__oc263, this.state.mode, charId)))
             || this.state.getCharLabel(charId);
 
         let newText;
@@ -2657,7 +2695,7 @@ class GameEngine {
         const sprites = Array.from(document.querySelectorAll('#char-layer .character-sprite'));
         const visibleMatches = sprites
             .filter((el) => {
-                if (!el?.getAttribute('src')) return false;
+                if (!((el === null || el === void 0 ? void 0 : el.getAttribute('src')))) return false;
                 if (el.dataset.characterId !== targetId) return false;
                 const style = window.getComputedStyle(el);
                 if (style.display === 'none' || style.visibility === 'hidden') return false;
@@ -2684,11 +2722,11 @@ class GameEngine {
         return document.getElementById(`char-${fallbackPosition}`);
     }
 
-    _getStatFXScale() {
+    _getStatFXScale() { var __oc265, __oc266, __oc267;
         const gameScreen = document.getElementById('game-screen');
-        const rect = gameScreen?.getBoundingClientRect?.();
-        const width = rect?.width || window.innerWidth || document.documentElement?.clientWidth || 1280;
-        const height = rect?.height || window.innerHeight || document.documentElement?.clientHeight || 720;
+        const rect = (((__oc265 = gameScreen === null || gameScreen === void 0 ? void 0 : gameScreen.getBoundingClientRect) === null || __oc265 === void 0 ? void 0 : __oc265.call(gameScreen)));
+        const width = ((rect === null || rect === void 0 ? void 0 : rect.width)) || window.innerWidth || (((__oc266 = document.documentElement) === null || __oc266 === void 0 ? void 0 : __oc266.clientWidth)) || 1280;
+        const height = ((rect === null || rect === void 0 ? void 0 : rect.height)) || window.innerHeight || (((__oc267 = document.documentElement) === null || __oc267 === void 0 ? void 0 : __oc267.clientHeight)) || 720;
         const longEdge = Math.max(width, height);
         return Math.min(Math.max(longEdge / 900, 0.95), 1.85);
     }
@@ -2729,12 +2767,12 @@ class GameEngine {
         if (this._statFXQueue.length === 1) this._processStatFXQueue();
     }
 
-    _processStatFXQueue() {
-        if (!this._statFXQueue?.length) return;
+    _processStatFXQueue() { var __oc268, __oc269;
+        if (!(((__oc268 = this._statFXQueue) === null || __oc268 === void 0 ? void 0 : __oc268.length))) return;
         const { val, charId, anchor } = this._statFXQueue[0];
 
         // 효과음
-        if (this.audio?.ctx) {
+        if ((((__oc269 = this.audio) === null || __oc269 === void 0 ? void 0 : __oc269.ctx))) {
             this.audio.playSFX(val > 0 ? 'affinity_up.mp3' : 'affinity_down.mp3', { forceFile: true });
         }
 
@@ -2753,16 +2791,16 @@ class GameEngine {
      * stat-display 옆에 짧게 표시되었다 사라짐
      * @param {number} val - 변화량
      */
-    _showStatChangePopup(val, charId, anchor) {
+    _showStatChangePopup(val, charId, anchor) { var __oc270, __oc271, __oc272, __oc273;
         const gameScreen = document.getElementById('game-screen');
         if (!gameScreen) return;
 
         // 캐릭터 이름 가져오기
-        const charName = this.i18n?.getSpeakerName?.(charId, this.state.playerName)
-            || this.i18n?.getCharacterName?.(charId)
+        const charName = (((__oc271 = (__oc270 = this.i18n) === null || __oc270 === void 0 ? void 0 : __oc270.getSpeakerName) === null || __oc271 === void 0 ? void 0 : __oc271.call(__oc270, charId, this.state.playerName)))
+            || (((__oc273 = (__oc272 = this.i18n) === null || __oc272 === void 0 ? void 0 : __oc272.getCharacterName) === null || __oc273 === void 0 ? void 0 : __oc273.call(__oc272, charId)))
             || (charId ? (CONFIG.CHAR_NAMES[charId] || charId) : '');
         const label = this.state.getCharLabel(charId);
-        const icon = label?.icon || '♡';
+        const icon = ((label === null || label === void 0 ? void 0 : label.icon)) || '♡';
 
         const popup = document.createElement('div');
         popup.className = 'stat-change-popup';
@@ -2902,7 +2940,7 @@ class GameEngine {
     /**
      * 저장 완료 토스트 메시지 표시 (1.5초 후 사라짐)
      */
-    showSaveToast(message = null) {
+    showSaveToast(message = null) { var __oc274, __oc275;
         // 기존 토스트 제거
         const existing = document.getElementById('save-toast');
         if (existing) existing.remove();
@@ -2914,7 +2952,7 @@ class GameEngine {
 
         document.body.appendChild(toast);
 
-        if (window.NevergradMotion?.toast?.(toast, 1500, () => toast.remove())) {
+        if ((((__oc275 = (__oc274 = window.NevergradMotion) === null || __oc274 === void 0 ? void 0 : __oc274.toast) === null || __oc275 === void 0 ? void 0 : __oc275.call(__oc274, toast, 1500, () => toast.remove())))) {
             return;
         }
 
@@ -2981,8 +3019,8 @@ class GameEngine {
         // 닫기 버튼
         const closeBtn = document.getElementById('sl-close');
         if (closeBtn) {
-            const handler = () => {
-                this.audio?.playUIMenuClose();
+            const handler = () => { var __oc276;
+                (((__oc276 = this.audio) === null || __oc276 === void 0 ? void 0 : __oc276.playUIMenuClose()));
                 this._hideOverlay('sl-overlay');
                 closeBtn.removeEventListener('click', handler);
             };
@@ -3050,9 +3088,9 @@ class GameEngine {
                 const delBtn = document.createElement('button');
                 delBtn.className = 'sl-delete';
                 delBtn.textContent = '✕';
-                delBtn.addEventListener('click', (e) => {
+                delBtn.addEventListener('click', (e) => { var __oc277;
                     e.stopPropagation();
-                    this.audio?.playUIClick();
+                    (((__oc277 = this.audio) === null || __oc277 === void 0 ? void 0 : __oc277.playUIClick()));
                     this.save.deleteSlot(i);
                     this._renderSlots(container, mode);
                 });
@@ -3076,8 +3114,8 @@ class GameEngine {
     /**
      * 슬롯 클릭 처리
      */
-    _onSlotClick(slotIndex, info, mode, container) {
-        this.audio?.playUIClick();
+    _onSlotClick(slotIndex, info, mode, container) { var __oc278, __oc279, __oc280;
+        (((__oc278 = this.audio) === null || __oc278 === void 0 ? void 0 : __oc278.playUIClick()));
 
         if (mode === 'save') {
             // 자동저장 슬롯(0)에도 수동 저장 가능
@@ -3086,14 +3124,14 @@ class GameEngine {
                 this._showSlotConfirm(slotIndex, container);
             } else {
                 this._saveToSlotAndClose(slotIndex);
-                this.audio?.playUISaveConfirm();
+                (((__oc279 = this.audio) === null || __oc279 === void 0 ? void 0 : __oc279.playUISaveConfirm()));
             }
         } else {
             // load 모드
             if (!info) return; // 빈 슬롯은 무시
             this._prepareNewRun();
             if (this.save.loadFromSlot(slotIndex)) {
-                this.audio?.playUILoadConfirm();
+                (((__oc280 = this.audio) === null || __oc280 === void 0 ? void 0 : __oc280.playUILoadConfirm()));
                 this.state.resumeRun();
                 this._restorePresentation();
                 this._endingReached = false;
@@ -3127,18 +3165,18 @@ class GameEngine {
         const yesBtn = document.createElement('button');
         yesBtn.className = 'sl-confirm-btn';
         yesBtn.textContent = this.i18n.getUI('slotYes') || 'Yes';
-        yesBtn.addEventListener('click', (e) => {
+        yesBtn.addEventListener('click', (e) => { var __oc281;
             e.stopPropagation();
-            this.audio?.playUISaveConfirm();
+            (((__oc281 = this.audio) === null || __oc281 === void 0 ? void 0 : __oc281.playUISaveConfirm()));
             this._saveToSlotAndClose(slotIndex);
         });
 
         const noBtn = document.createElement('button');
         noBtn.className = 'sl-confirm-btn sl-cancel';
         noBtn.textContent = this.i18n.getUI('slotNo') || 'No';
-        noBtn.addEventListener('click', (e) => {
+        noBtn.addEventListener('click', (e) => { var __oc282;
             e.stopPropagation();
-            this.audio?.playUIClick();
+            (((__oc282 = this.audio) === null || __oc282 === void 0 ? void 0 : __oc282.playUIClick()));
             confirm.remove();
         });
 
@@ -3170,7 +3208,7 @@ class GameEngine {
         return persisted;
     }
 
-    _restorePresentation() {
+    _restorePresentation() { var __oc283;
         this.glitch.shiftTheme(this.state.currentTheme);
         let background = this.state.currentBackground;
         // Legacy slots did not store inherited backgrounds. Walk incoming scene edges.
@@ -3184,10 +3222,10 @@ class GameEngine {
                     if (visited.has(id)) continue;
                     visited.add(id);
                     const scene = byId.get(id);
-                    if (scene?.background) { background = CONFIG.BACKGROUNDS[scene.background] || scene.background; break; }
+                    if (((scene === null || scene === void 0 ? void 0 : scene.background))) { background = CONFIG.BACKGROUNDS[scene.background] || scene.background; break; }
                     for (const [parentId, parent] of scenes) {
                         if (parent.condition && !this._checkCondition(parent.condition)) continue;
-                        const edges = [parent.next, parent.timeoutNext, parent.fallback, parent.interaction?.next,
+                        const edges = [parent.next, parent.timeoutNext, parent.fallback, (((__oc283 = parent.interaction) === null || __oc283 === void 0 ? void 0 : __oc283.next)),
                             ...(parent.choices || []).map(c => c.next), ...(parent.branches || []).map(c => c.next),
                             ...(parent.affinityBranches || []).map(c => c.next)];
                         if (edges.includes(id) && !visited.has(parentId)) next.push(parentId);
@@ -3199,15 +3237,17 @@ class GameEngine {
         if (background) this.renderer.setBackground(background);
     }
 
-    _isGameplayPaused() {
-        return !document.getElementById('game-screen')?.classList.contains('active')
+    _isGameplayPaused() { var __oc284;
+        return !(((__oc284 = document.getElementById('game-screen')) === null || __oc284 === void 0 ? void 0 : __oc284.classList.contains('active')))
             || ['pause-menu', 'sl-overlay', 'settings-overlay', 'backlog-panel']
-                .some(id => document.getElementById(id)?.classList.contains('active'));
+                .some(id => { var __oc285; return (
+((__oc285 = document.getElementById(id)) === null || __oc285 === void 0 ? void 0 : __oc285.classList.contains('active'))
+); });
     }
 
     // ===== Screen =====
 
-    _showScreen(id, onShown) {
+    _showScreen(id, onShown) { var __oc286, __oc287, __oc288, __oc289, __oc290;
         if (id === 'title-screen' && this.isGalleryReplay) {
             this._finishGalleryReplay();
             return;
@@ -3219,8 +3259,8 @@ class GameEngine {
         });
         const el = document.getElementById(id);
         if (el) { el.classList.remove('hidden'); el.classList.add('active'); }
-        const shown = () => { if (el?.classList.contains('active')) onShown?.(); };
-        if (!window.NevergradMotion?.screenEnter?.(el, shown)) shown();
+        const shown = () => { if (((el === null || el === void 0 ? void 0 : el.classList.contains('active')))) ((onShown === null || onShown === void 0 ? void 0 : onShown())); };
+        if (!(((__oc287 = (__oc286 = window.NevergradMotion) === null || __oc286 === void 0 ? void 0 : __oc286.screenEnter) === null || __oc287 === void 0 ? void 0 : __oc287.call(__oc286, el, shown)))) shown();
 
         if (id === 'game-screen') {
             this.state.resumeRun();
@@ -3228,7 +3268,7 @@ class GameEngine {
             this.state.pauseRun();
         }
 
-        if (this.deviceGimmick?.setupOrientationHijack) {
+        if ((((__oc288 = this.deviceGimmick) === null || __oc288 === void 0 ? void 0 : __oc288.setupOrientationHijack))) {
             this.deviceGimmick.setupOrientationHijack(this.state.currentDay);
         }
 
@@ -3242,8 +3282,8 @@ class GameEngine {
             this._archiveMode = false;
             const btn = document.getElementById('btn-continue');
             if (btn) btn.disabled = !this.save.hasSaveData();
-            this._bindArchiveButton?.();
-            window.playNevergradTitleIntro?.();
+            (((__oc289 = this._bindArchiveButton) === null || __oc289 === void 0 ? void 0 : __oc289.call(this)));
+            (((__oc290 = window.playNevergradTitleIntro) === null || __oc290 === void 0 ? void 0 : __oc290.call(window)));
         }
     }
 
@@ -3269,7 +3309,7 @@ class GameEngine {
         if (ns) { ns.style.height = ''; ns.style.top = ''; }
     }
 
-    _showOverlay(id, returnFocusId = null) {
+    _showOverlay(id, returnFocusId = null) { var __oc291, __oc292, __oc293;
         const el = document.getElementById(id);
         if (el) {
             const activeElement = returnFocusId
@@ -3280,16 +3320,15 @@ class GameEngine {
             }
             el.classList.remove('hidden');
             el.classList.add('active');
-            if (document.getElementById('game-screen')?.classList.contains('active')) this.state.pauseRun();
-            window.NevergradMotion?.overlayEnter?.(el);
-            requestAnimationFrame(() => {
-                el.querySelector('button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), [tabindex="0"]')
-                    ?.focus({ preventScroll: true });
+            if ((((__oc291 = document.getElementById('game-screen')) === null || __oc291 === void 0 ? void 0 : __oc291.classList.contains('active')))) this.state.pauseRun();
+            (((__oc293 = (__oc292 = window.NevergradMotion) === null || __oc292 === void 0 ? void 0 : __oc292.overlayEnter) === null || __oc293 === void 0 ? void 0 : __oc293.call(__oc292, el)));
+            requestAnimationFrame(() => { var __oc294;
+                (((__oc294 = el.querySelector('button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), [tabindex="0"]')) === null || __oc294 === void 0 ? void 0 : __oc294.focus({ preventScroll: true })));
             });
         }
     }
 
-    _hideOverlay(id, restoreFocus = true) {
+    _hideOverlay(id, restoreFocus = true) { var __oc295, __oc296;
         const el = document.getElementById(id);
         if (el) {
             const finish = () => {
@@ -3298,9 +3337,9 @@ class GameEngine {
                 if (!this._isGameplayPaused()) this.state.resumeRun();
                 const returnFocus = this._overlayReturnFocus.get(id);
                 this._overlayReturnFocus.delete(id);
-                if (restoreFocus && returnFocus?.isConnected) returnFocus.focus({ preventScroll: true });
+                if (restoreFocus && ((returnFocus === null || returnFocus === void 0 ? void 0 : returnFocus.isConnected))) returnFocus.focus({ preventScroll: true });
             };
-            if (window.NevergradMotion?.overlayExit?.(el, finish)) {
+            if ((((__oc296 = (__oc295 = window.NevergradMotion) === null || __oc295 === void 0 ? void 0 : __oc295.overlayExit) === null || __oc296 === void 0 ? void 0 : __oc296.call(__oc295, el, finish)))) {
                 return;
             }
             finish();
@@ -3308,29 +3347,32 @@ class GameEngine {
     }
 
     _bindOverlayKeyboard() {
-        this.lifecycle.listen(document, 'keydown', (event) => {
+        this.lifecycle.listen(document, 'keydown', (event) => { var __oc298;
             if (event.key !== 'Escape') return;
             const activeOverlay = [
                 ['settings-overlay', 'settings-close'],
                 ['sl-overlay', 'sl-close'],
                 ['backlog-panel', 'backlog-close'],
                 ['pause-menu', 'btn-resume']
-            ].find(([overlayId]) => document.getElementById(overlayId)?.classList.contains('active'));
+            ].find(([overlayId]) => { var __oc297; return (
+((__oc297 = document.getElementById(overlayId)) === null || __oc297 === void 0 ? void 0 : __oc297.classList.contains('active'))
+); });
             if (!activeOverlay) return;
             event.preventDefault();
-            document.getElementById(activeOverlay[1])?.click();
+            (((__oc298 = document.getElementById(activeOverlay[1])) === null || __oc298 === void 0 ? void 0 : __oc298.click()));
         });
     }
 
     // ===== Quick Menu =====
 
-    _bindQuickMenu() {
+    _bindQuickMenu() { var __oc299;
         // AUTO / SKIP은 제거됨. 대사 기록과 저장·불러오기는 MENU에서 접근.
         // NG+ 기시감 텍스트는 _loadScene 진입 시 자동 표시.
-        document.getElementById('qm-menu')?.addEventListener('click', () => {
-            this.audio?.playUIMenuOpen();
-            this._showOverlay('pause-menu');
-        });
+        (((__oc299 = document.getElementById('qm-menu')) === null || __oc299 === void 0 ? void 0 : __oc299.addEventListener('click', () => {
+        var __oc499;
+        (((__oc499 = this.audio) === null || __oc499 === void 0 ? void 0 : __oc499.playUIMenuOpen()));
+        this._showOverlay('pause-menu');
+    })));
     }
     // AUTO / SKIP 모드는 UI에서 제거됨. 관련 stub들은 호환성 위해 유지.
     _stopAuto() { this.isAutoMode = false; clearTimeout(this._autoTimer); this._autoTimer = null; }
@@ -3338,18 +3380,19 @@ class GameEngine {
 
     // ===== Backlog =====
 
-    _bindBacklog() {
-        document.getElementById('backlog-close')?.addEventListener('click', () => {
-            this.audio?.playUIMenuClose();
-            this._hideOverlay('backlog-panel');
-        });
+    _bindBacklog() { var __oc300, __oc301;
+        (((__oc300 = document.getElementById('backlog-close')) === null || __oc300 === void 0 ? void 0 : __oc300.addEventListener('click', () => {
+        var __oc500;
+        (((__oc500 = this.audio) === null || __oc500 === void 0 ? void 0 : __oc500.playUIMenuClose()));
+        this._hideOverlay('backlog-panel');
+    })));
 
         // Click outside to close
-        document.getElementById('backlog-panel')?.addEventListener('click', (e) => {
-            if (e.target.id === 'backlog-panel') {
-                this._hideOverlay('backlog-panel');
-            }
-        });
+        (((__oc301 = document.getElementById('backlog-panel')) === null || __oc301 === void 0 ? void 0 : __oc301.addEventListener('click', (e) => {
+        if (e.target.id === 'backlog-panel') {
+            this._hideOverlay('backlog-panel');
+        }
+    })));
     }
 
     _addToBacklog(name, text) {
@@ -3400,11 +3443,11 @@ class GameEngine {
      * - 50~58: 설화의 목소리 등장
      * - 60: 화면 구석에 탈출 버튼 서서히 등장
      */
-    _enterCageMode() {
+    _enterCageMode() { var __oc302, __oc303, __oc304, __oc305;
         this._cageMode = true;
         this._cageClickCount = 0;
-        this._cageRepeatEffects = this.currentSceneData?.cageRepeatEffects || {};
-        this._cageSeaVariants = this.currentSceneData?.seaCageVariants || {};
+        this._cageRepeatEffects = (((__oc302 = this.currentSceneData) === null || __oc302 === void 0 ? void 0 : __oc302.cageRepeatEffects)) || {};
+        this._cageSeaVariants = (((__oc303 = this.currentSceneData) === null || __oc303 === void 0 ? void 0 : __oc303.seaCageVariants)) || {};
 
         // 문장 풀 셔플
         const lang = this.i18n.currentLang || 'ko';
@@ -3421,7 +3464,7 @@ class GameEngine {
         this.renderer.playBGM('spring_bright.mp3');
 
         // 글리치 테마를 로맨스로 복원
-        this.glitch.shiftTheme?.('romance');
+        (((__oc305 = (__oc304 = this.glitch).shiftTheme) === null || __oc305 === void 0 ? void 0 : __oc305.call(__oc304, 'romance')));
 
         // 퀵 메뉴 숨기기
         const qm = document.getElementById('quick-menu');
@@ -3458,7 +3501,7 @@ class GameEngine {
             || sceneId.startsWith('day5_lunch_pills_');
     }
 
-    _cageAdvance() {
+    _cageAdvance() { var __oc306, __oc307;
         if (this.dialogue.isTyping) return;
 
         this._cageClickCount++;
@@ -3467,7 +3510,7 @@ class GameEngine {
 
         // 30~50: 가끔 글리치
         if (count > 30 && count <= 50 && Math.random() < 0.25) {
-            this.glitch.screenNoise?.(200);
+            (((__oc307 = (__oc306 = this.glitch).screenNoise) === null || __oc307 === void 0 ? void 0 : __oc307.call(__oc306, 200)));
         }
 
         // 50~58: 설화 목소리 (5번 중 랜덤)
@@ -3497,42 +3540,42 @@ class GameEngine {
         });
     }
 
-    _showMetaFlash(text, duration = 700, x = 50, y = 42) {
+    _showMetaFlash(text, duration = 700, x = 50, y = 42) { var __oc308, __oc309, __oc310;
         if (!text) return;
-        if (this.glitchAdvanced?.showGhostText) {
+        if ((((__oc308 = this.glitchAdvanced) === null || __oc308 === void 0 ? void 0 : __oc308.showGhostText))) {
             this.glitchAdvanced.showGhostText(text, x, y, duration);
         } else {
-            this.glitch.ghostText?.(text, x, y, duration);
+            (((__oc310 = (__oc309 = this.glitch).ghostText) === null || __oc310 === void 0 ? void 0 : __oc310.call(__oc309, text, x, y, duration)));
         }
     }
 
-    _applyCageRepeatEffects(count) {
-        const effect = this._cageRepeatEffects?.[count];
-        const seaVariant = this._cageSeaVariants?.[count];
-        const degradeSeaLunchbox = this._cageSeaVariants?.lunchboxDegrade && count > 1 && count % 10 === 0;
+    _applyCageRepeatEffects(count) { var __oc311, __oc312, __oc313, __oc314, __oc315, __oc316, __oc317;
+        const effect = (((__oc311 = this._cageRepeatEffects) === null || __oc311 === void 0 ? void 0 : __oc311[count]));
+        const seaVariant = (((__oc312 = this._cageSeaVariants) === null || __oc312 === void 0 ? void 0 : __oc312[count]));
+        const degradeSeaLunchbox = (((__oc313 = this._cageSeaVariants) === null || __oc313 === void 0 ? void 0 : __oc313.lunchboxDegrade)) && count > 1 && count % 10 === 0;
 
         if (!effect && !seaVariant && !degradeSeaLunchbox) return false;
 
         if (degradeSeaLunchbox) {
-            this.glitch.screenNoise?.(120);
+            (((__oc315 = (__oc314 = this.glitch).screenNoise) === null || __oc315 === void 0 ? void 0 : __oc315.call(__oc314, 120)));
         }
 
-        if (effect?.flashText) {
+        if (((effect === null || effect === void 0 ? void 0 : effect.flashText))) {
             this._showMetaFlash(this._pickLocalizedValue(effect.flashText), effect.flashDuration || 700);
         }
 
-        if (effect?.screenBlackout || seaVariant?.emptyLunchbox) {
-            this._blackoutScreen(effect?.screenBlackout ? 520 : 260);
+        if (((effect === null || effect === void 0 ? void 0 : effect.screenBlackout)) || ((seaVariant === null || seaVariant === void 0 ? void 0 : seaVariant.emptyLunchbox))) {
+            this._blackoutScreen(((effect === null || effect === void 0 ? void 0 : effect.screenBlackout)) ? 520 : 260);
         }
 
-        if (Array.isArray(seaVariant?.seaLines)) {
+        if (Array.isArray(((seaVariant === null || seaVariant === void 0 ? void 0 : seaVariant.seaLines)))) {
             seaVariant.seaLines.slice(0, 2).forEach((line, idx) => {
                 setTimeout(() => this._showMetaFlash(this._pickLocalizedValue(line), 1200, 50, 58 + idx * 8), idx * 450);
             });
         }
 
-        if (effect?.eunsuBreaksFourthWall) {
-            const img = CONFIG.EXPRESSIONS.eunsu?.obsessed || CONFIG.EXPRESSIONS.eunsu?.normal;
+        if (((effect === null || effect === void 0 ? void 0 : effect.eunsuBreaksFourthWall))) {
+            const img = (((__oc316 = CONFIG.EXPRESSIONS.eunsu) === null || __oc316 === void 0 ? void 0 : __oc316.obsessed)) || (((__oc317 = CONFIG.EXPRESSIONS.eunsu) === null || __oc317 === void 0 ? void 0 : __oc317.normal));
             if (img) this.renderer.setCharacter('center', img);
 
             const eunsuLine = this._pickLocalizedValue(effect.eunsuLine) || '...';
@@ -3548,15 +3591,15 @@ class GameEngine {
     /**
      * CAGE END 설화 속삭임 (50~58 클릭)
      */
-    _cageSeolhwaWhisper() {
+    _cageSeolhwaWhisper() { var __oc318, __oc319, __oc320;
         const whispers = this._getCageSeolhwaTexts();
         const idx = Math.floor(Math.random() * whispers.length);
 
         // 글리치 효과
-        this.glitch.screenNoise?.(300);
+        (((__oc319 = (__oc318 = this.glitch).screenNoise) === null || __oc319 === void 0 ? void 0 : __oc319.call(__oc318, 300)));
 
         // 캐릭터 잠깐 표시
-        this.renderer.setCharacter('center', CONFIG.EXPRESSIONS.seolhwa?.fade);
+        this.renderer.setCharacter('center', (((__oc320 = CONFIG.EXPRESSIONS.seolhwa) === null || __oc320 === void 0 ? void 0 : __oc320.fade)));
 
         this.dialogue.type('', `*${whispers[idx]}*`, () => {
             // 1.5초 후 캐릭터 사라짐
@@ -3569,9 +3612,9 @@ class GameEngine {
     /**
      * CAGE END 설화 마지막 메시지 (59 클릭)
      */
-    _cageSeolhwaFinal() {
-        this.glitch.heavyGlitch?.(500);
-        this.renderer.setCharacter('center', CONFIG.EXPRESSIONS.seolhwa?.fade);
+    _cageSeolhwaFinal() { var __oc321, __oc322, __oc323;
+        (((__oc322 = (__oc321 = this.glitch).heavyGlitch) === null || __oc322 === void 0 ? void 0 : __oc322.call(__oc321, 500)));
+        this.renderer.setCharacter('center', (((__oc323 = CONFIG.EXPRESSIONS.seolhwa) === null || __oc323 === void 0 ? void 0 : __oc323.fade)));
 
         const finalText = this._getCageSeolhwaFinal();
 
@@ -3586,7 +3629,7 @@ class GameEngine {
      * CAGE END 탈출 버튼 표시 (60 클릭)
      * 작고 희미하게 시작하여 서서히 밝아지는 [X] 버튼
      */
-    _cageShowExitButton() {
+    _cageShowExitButton() { var __oc324, __oc325;
         if (this._cageExitBtn) return;
 
         const gameScreen = document.getElementById('game-screen');
@@ -3605,7 +3648,7 @@ class GameEngine {
         gameScreen.appendChild(btn);
         this._cageExitBtn = btn;
 
-        if (window.NevergradMotion?.cageExit?.(btn)) {
+        if ((((__oc325 = (__oc324 = window.NevergradMotion) === null || __oc324 === void 0 ? void 0 : __oc324.cageExit) === null || __oc325 === void 0 ? void 0 : __oc325.call(__oc324, btn)))) {
             return;
         }
 
@@ -3620,7 +3663,7 @@ class GameEngine {
     /**
      * CAGE END 모드에서 탈출. 타이틀 화면으로 복귀.
      */
-    _exitCageMode() {
+    _exitCageMode() { var __oc326, __oc327, __oc328, __oc329;
         this._cageMode = false;
         this._cageClickCount = 0;
         this._cageRepeatEffects = {};
@@ -3629,7 +3672,7 @@ class GameEngine {
 
         // 탈출 버튼 제거
         if (this._cageExitBtn) {
-            window.NevergradMotion?.kill?.(this._cageExitBtn);
+            (((__oc327 = (__oc326 = window.NevergradMotion) === null || __oc326 === void 0 ? void 0 : __oc326.kill) === null || __oc327 === void 0 ? void 0 : __oc327.call(__oc326, this._cageExitBtn)));
             this._cageExitBtn.remove();
             this._cageExitBtn = null;
         }
@@ -3644,7 +3687,7 @@ class GameEngine {
         }
 
         // 글리치 연출 후 타이틀로
-        this.glitch.heavyGlitch?.(800);
+        (((__oc329 = (__oc328 = this.glitch).heavyGlitch) === null || __oc329 === void 0 ? void 0 : __oc329.call(__oc328, 800)));
         setTimeout(() => {
             this._showScreen('title-screen');
         }, 1000);

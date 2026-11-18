@@ -23,8 +23,8 @@ test('new, continue, manual load and ending paths isolate session state', () => 
     assert.match(engine, /this\.runLifecycle = this\.lifecycle\.createScope\('run'\)/);
     assert.match(engine, /this\.sceneLifecycle = this\.runLifecycle\.createScope\(`scene:\$\{sceneId\}`\)/);
     assert.ok((engine.match(/this\._prepareNewRun\(\)/g) || []).length >= 3);
-    assert.match(engine, /_showEndingTitle\(title, subtitleKey\) \{[\s\S]*?this\.sceneLifecycle\?\.clear/);
-    assert.match(engine, /dispose\(\) \{[\s\S]*?this\.lifecycle\?\.dispose/);
+    assert.match(engine, /_showEndingTitle\(title, subtitleKey\) \{[\s\S]*?(?:this\.sceneLifecycle\?\.clear|\(__oc\d+ = this\.sceneLifecycle\) === null \|\| __oc\d+ === void 0 \? void 0 : __oc\d+\.clear)/);
+    assert.match(engine, /dispose\(\) \{[\s\S]*?(?:this\.lifecycle\?\.dispose|\(__oc\d+ = this\.lifecycle\) === null \|\| __oc\d+ === void 0 \? void 0 : __oc\d+\.dispose)/);
 });
 
 test('all seven localized shells load LifecycleManager before GameEngine', () => {

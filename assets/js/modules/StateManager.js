@@ -220,7 +220,7 @@ class StateManager {
     }
 
     applySceneReward(reward) {
-        if (!reward?.flag || this.hasFlag(reward.flag)) return false;
+        if (!((reward === null || reward === void 0 ? void 0 : reward.flag)) || this.hasFlag(reward.flag)) return false;
         for (const [id, values] of Object.entries(reward.stats || {})) {
             if (Number.isFinite(values.affinity)) this.changeStat(id, 'affinity', values.affinity);
         }

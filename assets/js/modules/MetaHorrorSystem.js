@@ -178,8 +178,8 @@ class MetaHorrorSystem {
         this._lastCaptureReactionAt = 0;
     }
 
-    _lang() {
-        const lang = this.engine?.i18n?.currentLang || document.documentElement.lang || 'ko';
+    _lang() { var __oc0, __oc1;
+        const lang = (((__oc1 = (__oc0 = this.engine) === null || __oc0 === void 0 ? void 0 : __oc0.i18n) === null || __oc1 === void 0 ? void 0 : __oc1.currentLang)) || document.documentElement.lang || 'ko';
         return String(lang).toLowerCase().startsWith('pt') ? 'pt' : String(lang).slice(0, 2);
     }
 
@@ -667,10 +667,10 @@ class MetaHorrorSystem {
      * 탭을 벗어나면 캐릭터 메시지로 제목 변경, 돌아오면 잠시 후 복구
      * @private
      */
-    _onVisibilityChange() {
+    _onVisibilityChange() { var __oc2, __oc3;
         if (!this.active) return;
 
-        const playerName = this.engine?.state?.playerName || '';
+        const playerName = (((__oc3 = (__oc2 = this.engine) === null || __oc2 === void 0 ? void 0 : __oc2.state) === null || __oc3 === void 0 ? void 0 : __oc3.playerName)) || '';
 
         if (document.hidden) {
             // 탭 이탈 — 메시지 순환 표시
@@ -809,12 +809,12 @@ class MetaHorrorSystem {
      * @param {string} title - 알림 제목 (캐릭터 이름)
      * @param {string} body - 알림 본문
      */
-    sendPushNotification(title, body) {
+    sendPushNotification(title, body) { var __oc4, __oc5;
         if (!this.pushPermission) return;
         if (!('Notification' in window)) return;
         if (Notification.permission !== 'granted') return;
 
-        const playerName = this.engine?.state?.playerName || '';
+        const playerName = (((__oc5 = (__oc4 = this.engine) === null || __oc4 === void 0 ? void 0 : __oc4.state) === null || __oc5 === void 0 ? void 0 : __oc5.playerName)) || '';
         const resolvedBody = body.replace('{name}', playerName);
 
         try {
@@ -928,9 +928,9 @@ class MetaHorrorSystem {
         this._screenshotScene = sceneContext;
     }
 
-    _shouldReactToFocusExit() {
-        const state = this.engine?.state;
-        if (!state?.hasFlag) return false;
+    _shouldReactToFocusExit() { var __oc6;
+        const state = (((__oc6 = this.engine) === null || __oc6 === void 0 ? void 0 : __oc6.state));
+        if (!((state === null || state === void 0 ? void 0 : state.hasFlag))) return false;
         return state.hasFlag('new_game_plus')
             || state.hasFlag('postgame_bonus')
             || state.hasFlag('observer_graduated')
@@ -1068,8 +1068,8 @@ class MetaHorrorSystem {
             if (!document.hidden) return;
 
             // 탭이 숨겨지면 타이머 시작
-            this._exitNotifTimer = setTimeout(() => {
-                const playerName = this.engine?.state?.playerName || '';
+            this._exitNotifTimer = setTimeout(() => { var __oc7, __oc8;
+                const playerName = (((__oc8 = (__oc7 = this.engine) === null || __oc7 === void 0 ? void 0 : __oc7.state) === null || __oc8 === void 0 ? void 0 : __oc8.playerName)) || '';
                 this.sendPushNotification(title, body.replace('{name}', playerName));
 
                 // 기록 저장

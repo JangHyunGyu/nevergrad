@@ -98,24 +98,24 @@ class SaveManager {
         return slotIndex === 0 ? this.SAVE_KEY : `${this.SLOT_PREFIX}${slotIndex}`;
     }
 
-    _isValidGameState(gameState) {
+    _isValidGameState(gameState) { var __oc0, __oc1;
         if (!gameState || typeof gameState !== 'object' || Array.isArray(gameState)) return false;
         if (!Number.isInteger(gameState.currentDay) || gameState.currentDay < 1 || gameState.currentDay > 5) return false;
         if (typeof gameState.currentScene !== 'string' || !gameState.currentScene.trim()) return false;
         if (!gameState.currentScene.startsWith(`day${gameState.currentDay}_`)) return false;
-        const sceneId = (typeof CONFIG !== 'undefined' && CONFIG.SCENE_ALIASES?.[gameState.currentScene]) || gameState.currentScene;
-        if (typeof SCENARIO !== 'undefined' && !SCENARIO[gameState.currentDay]?.[sceneId]) return false;
+        const sceneId = (typeof CONFIG !== 'undefined' && (((__oc0 = CONFIG.SCENE_ALIASES) === null || __oc0 === void 0 ? void 0 : __oc0[gameState.currentScene]))) || gameState.currentScene;
+        if (typeof SCENARIO !== 'undefined' && !(((__oc1 = SCENARIO[gameState.currentDay]) === null || __oc1 === void 0 ? void 0 : __oc1[sceneId]))) return false;
         return true;
     }
 
-    _readSlot(slotIndex) {
+    _readSlot(slotIndex) { var __oc2;
         try {
             const raw = this._getItem(this._slotKey(slotIndex));
             if (!raw) return null;
             const slotData = JSON.parse(raw);
-            const gameState = slotData?.gameState || slotData;
+            const gameState = ((slotData === null || slotData === void 0 ? void 0 : slotData.gameState)) || slotData;
             if (!this._isValidGameState(gameState)) return null;
-            const migratedScene = typeof CONFIG !== 'undefined' && CONFIG.SCENE_ALIASES?.[gameState.currentScene];
+            const migratedScene = typeof CONFIG !== 'undefined' && (((__oc2 = CONFIG.SCENE_ALIASES) === null || __oc2 === void 0 ? void 0 : __oc2[gameState.currentScene]));
             if (migratedScene) {
                 gameState.currentScene = migratedScene;
                 gameState.currentSlot = 'afterschool';
@@ -206,7 +206,7 @@ class SaveManager {
                 currentSlot: data.currentSlot,
                 timestamp: null
             };
-        } catch {
+        } catch (_err) {
             return null;
         }
     }
@@ -287,7 +287,7 @@ class SaveManager {
                 lastEnding: endings.includes(data.lastEnding) ? data.lastEnding : null,
                 lastClearTime: Number.isFinite(data.lastClearTime) ? data.lastClearTime : 0
             };
-        } catch {
+        } catch (_err) {
             return this._defaultMeta();
         }
     }
@@ -370,7 +370,7 @@ class SaveManager {
             const raw = this._getItem(this.CHOICES_KEY);
             const parsed = raw ? JSON.parse(raw) : {};
             return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
-        } catch {
+        } catch (_err) {
             return {};
         }
     }

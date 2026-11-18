@@ -75,14 +75,14 @@
         try {
             const entry = document.cookie.split(';').map(v => v.trim()).find(v => v.startsWith('archer_crossing_v1='));
             const data = entry ? JSON.parse(decodeURIComponent(entry.slice('archer_crossing_v1='.length))) : null;
-            if (data?.target === world && Number.isFinite(data.at) && Date.now() - data.at >= 0 && Date.now() - data.at < 600000) name = cleanName(data.name);
+            if (((data === null || data === void 0 ? void 0 : data.target)) === world && Number.isFinite(data.at) && Date.now() - data.at >= 0 && Date.now() - data.at < 600000) name = cleanName(data.name);
             document.cookie = `archer_crossing_v1=${cookieSuffix(0)}`;
         } catch (_) {}
         url.searchParams.delete(world === 'cupid' ? 'gate' : 'from');
         try { history.replaceState(history.state, '', url.pathname + url.search + url.hash); } catch (_) {}
         return { name };
     }
-    function show(options) {
+    function show(options) { var __oc5;
         if (active) return active;
         const copy = COPY[options.lang] || COPY.en;
         const spring = options.world === 'cupid';
@@ -115,11 +115,11 @@
             closed = true; clearTimeout(retryTimer);
             root.remove(); inert.forEach(([el, value]) => { el.inert = value; }); document.body.style.overflow = originalOverflow;
             window.removeEventListener('keydown', keys, true); window.removeEventListener('pageshow', restore);
-            active = null; if (previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
+            active = null; if (((previousFocus === null || previousFocus === void 0 ? void 0 : previousFocus.isConnected))) previousFocus.focus({ preventScroll: true });
         };
-        const close = async action => {
+        const close = async action => { var __oc0;
             cleanup();
-            try { await action?.(); } catch (error) { console.error('[CrossWorld] entry failed', error); options.onTitle?.(); }
+            try { await ((action === null || action === void 0 ? void 0 : action())); } catch (error) { console.error('[CrossWorld] entry failed', error); (((__oc0 = options.onTitle) === null || __oc0 === void 0 ? void 0 : __oc0.call(options))); }
         };
         const addButton = (label, action, primary = false) => {
             const button = document.createElement('button'); button.type = 'button'; button.textContent = label;
@@ -136,22 +136,22 @@
             root.querySelectorAll('button').forEach(el => { el.disabled = busy; });
             if (busy) root.focus({ preventScroll: true });
         };
-        const restore = () => {
+        const restore = () => { var __oc1, __oc2;
             if (closed) return;
             clearTimeout(retryTimer); root.classList.remove('cw-out'); setBusy(false);
-            if (audioStopped) { audioStopped = false; try { Promise.resolve(options.onReturn?.()).catch(() => {}); } catch (_) {} }
-            root.querySelector('button')?.focus({ preventScroll: true });
+            if (audioStopped) { audioStopped = false; try { Promise.resolve((((__oc1 = options.onReturn) === null || __oc1 === void 0 ? void 0 : __oc1.call(options)))).catch(() => {}); } catch (_) {} }
+            (((__oc2 = root.querySelector('button')) === null || __oc2 === void 0 ? void 0 : __oc2.focus({ preventScroll: true })));
         };
-        const depart = async button => {
+        const depart = async button => { var __oc3, __oc4;
             if (leaving) return;
             setBusy(true);
             if (!button.dataset.unsaved) {
-                let saved = false; try { saved = (await options.save?.()) !== false; } catch (_) {}
+                let saved = false; try { saved = (await (((__oc3 = options.save) === null || __oc3 === void 0 ? void 0 : __oc3.call(options)))) !== false; } catch (_) {}
                 if (closed) return;
                 if (!saved) { restore(); text('.cw-note', copy[13]); button.textContent = copy[14]; button.dataset.unsaved = '1'; return; }
             }
             remember(options.world, options.name);
-            try { audioStopped = true; options.onLeave?.(); } catch (error) { console.warn('[CrossWorld] audio fade failed', error); }
+            try { audioStopped = true; (((__oc4 = options.onLeave) === null || __oc4 === void 0 ? void 0 : __oc4.call(options))); } catch (error) { console.warn('[CrossWorld] audio fade failed', error); }
             root.classList.add('cw-out');
             await new Promise(resolve => setTimeout(resolve, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 650));
             if (closed) return;
@@ -179,7 +179,7 @@
         };
         window.addEventListener('keydown', keys, true); window.addEventListener('pageshow', restore);
         active = { close: () => close(), element: root };
-        root.querySelector('button')?.focus({ preventScroll: true });
+        (((__oc5 = root.querySelector('button')) === null || __oc5 === void 0 ? void 0 : __oc5.focus({ preventScroll: true })));
         return active;
     }
     window.CrossWorld = { show, takeArrival, cleanName };

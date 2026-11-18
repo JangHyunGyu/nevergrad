@@ -6,11 +6,874 @@
  */
 
 class GallerySystem {
-    static STORAGE_KEY = 'nevergrad_gallery';
-    static LEGACY_ENDING_STORAGE_KEY = 'nevergrad_endings';
-    static VERSION = 2;
+    
+    
+    
 
-    static ENDINGS = [
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    constructor(game) {
+        this.game = game;
+        this.activeTab = 'endings';
+        this.playingBgmId = null;
+        this.data = this._load();
+        this.isAdmin = new URLSearchParams(window.location.search).has('admin');
+        this._bound = false;
+        this._tabsBound = false;
+    }
+
+    getUnlockedEndings() {
+        this.data = this._load();
+        return [...new Set(this.data.endings || [])];
+    }
+
+    unlockEnding(endingTitle) {
+        if (!GallerySystem.ENDINGS.includes(endingTitle)) return false;
+        const changed = this._unlockListItem('endings', endingTitle);
+        if (changed) this._saveLegacyEndings();
+        return changed;
+    }
+
+    unlockCGByPath(pathOrKey) { var __oc0;
+        const normalized = this._normalizeAsset((((__oc0 = CONFIG.BACKGROUNDS) === null || __oc0 === void 0 ? void 0 : __oc0[pathOrKey])) || pathOrKey);
+        const item = this._getCGItems().find(cg => {
+            return this._normalizeAsset(cg.file) === normalized
+                || this._normalizeAsset(cg.backgroundKey) === normalized
+                || cg.id === pathOrKey;
+        });
+        if (!item) return false;
+        return this._unlockObjectItem('cg', item.id);
+    }
+
+    unlockBGM(filename) {
+        if (!filename || typeof filename !== 'string') return false;
+        const item = this._getMusicItems().find(track => {
+            return track.file === filename
+                || track.id === this._bgmId(filename)
+                || track.id === filename;
+        });
+        if (!item) return false;
+        return this._unlockObjectItem('bgm', item.id);
+    }
+
+    unlockCharacterExpression(keyOrPath) { var __oc1, __oc2, __oc3, __oc4;
+        const parsed = this._parseCharacterExpression(keyOrPath);
+        if (!parsed) return false;
+
+        const items = this._getCharacterItems();
+        const char = items.find(item => item.id === parsed.charId);
+        if (!char) return false;
+
+        const sourcePath = (((__oc2 = (__oc1 = CONFIG.EXPRESSIONS) === null || __oc1 === void 0 ? void 0 : __oc1[parsed.charId]) === null || __oc2 === void 0 ? void 0 : __oc2[parsed.expression]));
+        const expression = char.expressions.find(expr => {
+            return expr.id === parsed.expression
+                || (sourcePath && this._normalizeAsset(expr.file) === this._normalizeAsset(sourcePath));
+        });
+        if (!expression) return false;
+
+        if (!this.data.characters[char.id]) {
+            this.data.characters[char.id] = { met: false, expressions: {} };
+        }
+
+        const entry = this.data.characters[char.id];
+        const wasUnlocked = entry.met && (((__oc4 = (__oc3 = entry.expressions) === null || __oc3 === void 0 ? void 0 : __oc3[expression.id]) === null || __oc4 === void 0 ? void 0 : __oc4.unlocked));
+        entry.met = true;
+        entry.expressions = entry.expressions || {};
+        entry.expressions[expression.id] = entry.expressions[expression.id] || {};
+        entry.expressions[expression.id].unlocked = true;
+        entry.expressions[expression.id].unlockedAt = entry.expressions[expression.id].unlockedAt || Date.now();
+
+        this._save();
+        return !wasUnlocked;
+    }
+
+    open() {
+        const screen = document.getElementById('gallery-screen');
+        if (!screen) return;
+
+        this.data = this._load();
+        this._ensureLayout();
+        this._render();
+
+        document.querySelectorAll('.screen').forEach(s => {
+            s.classList.remove('active');
+            s.classList.add('hidden');
+        });
+        screen.classList.remove('hidden');
+        screen.classList.add('active');
+    }
+
+    close() {
+        this._stopBgmPreview();
+        this._closeModal();
+
+        const screen = document.getElementById('gallery-screen');
+        if (screen) {
+            screen.classList.remove('active');
+            screen.classList.add('hidden');
+        }
+        const title = document.getElementById('title-screen');
+        if (title) {
+            title.classList.remove('hidden');
+            title.classList.add('active');
+        }
+    }
+
+    bind() { var __oc5, __oc6;
+        if (this._bound) return;
+        this._bound = true;
+
+        (((__oc5 = document.getElementById('btn-gallery')) === null || __oc5 === void 0 ? void 0 : __oc5.addEventListener('click', () => {
+        var __oc205;
+        (((__oc205 = this.game.audio) === null || __oc205 === void 0 ? void 0 : __oc205.playUIClick()));
+        this.open();
+    })));
+        (((__oc6 = document.getElementById('gallery-back')) === null || __oc6 === void 0 ? void 0 : __oc6.addEventListener('click', () => {
+        var __oc206;
+        (((__oc206 = this.game.audio) === null || __oc206 === void 0 ? void 0 : __oc206.playUIClick()));
+        this.close();
+    })));
+    }
+
+    _render() {
+        this._renderHeader();
+        this._renderTabs();
+
+        if (this.activeTab === 'endings') this._renderEndings();
+        if (this.activeTab === 'cg') this._renderCG();
+        if (this.activeTab === 'music') this._renderMusic();
+        if (this.activeTab === 'characters') this._renderCharacters();
+    }
+
+    _renderHeader() {
+        const labels = this._labels();
+        const title = document.querySelector('.gallery-title');
+        const back = document.getElementById('gallery-back');
+        const progressLabel = document.querySelector('.gallery-progress-label');
+        if (title) title.textContent = labels.title;
+        if (back) back.textContent = labels.back;
+        if (progressLabel) progressLabel.textContent = labels.progress;
+    }
+
+    _renderTabs() {
+        const tabs = document.querySelector('#gallery-tabs');
+        if (!tabs) return;
+        const labels = this._labels();
+
+        tabs.querySelectorAll('.gallery-tab').forEach(btn => {
+            const tab = btn.dataset.tab;
+            btn.textContent = labels.tabs[tab] || tab;
+            btn.classList.toggle('active', tab === this.activeTab);
+        });
+    }
+
+    _renderEndings() {
+        const grid = this._grid();
+        if (!grid) return;
+        const lang = this._lang();
+        const labels = this._labels();
+        const unlockedCount = GallerySystem.ENDINGS.filter(ending => this.isEndingUnlocked(ending)).length;
+
+        grid.className = 'gallery-grid gallery-grid-endings';
+        grid.innerHTML = GallerySystem.ENDINGS.map(ending => { var __oc7, __oc8;
+            const isUnlocked = this.isEndingUnlocked(ending);
+            const desc = isUnlocked
+                ? ((((__oc7 = GallerySystem.ENDING_DESCRIPTIONS[ending]) === null || __oc7 === void 0 ? void 0 : __oc7[lang])) || (((__oc8 = GallerySystem.ENDING_DESCRIPTIONS[ending]) === null || __oc8 === void 0 ? void 0 : __oc8.en)) || '')
+                : labels.lockedEnding;
+            return `
+                <button class="gallery-card ${isUnlocked ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="ending" data-ending="${this._escape(ending)}">
+                    <span class="gallery-card-icon">${isUnlocked ? this._getEndingIcon(ending) : ''}</span>
+                    <span class="gallery-card-title">${isUnlocked ? this._escape(ending) : this._escape(labels.locked)}</span>
+                    <span class="gallery-card-desc">${this._escape(desc)}</span>
+                </button>
+            `;
+        }).join('');
+
+        this._updateProgress(unlockedCount, GallerySystem.ENDINGS.length);
+    }
+
+    _renderCG() {
+        const grid = this._grid();
+        if (!grid) return;
+        const labels = this._labels();
+        const items = this._getCGItems();
+        const unlockedCount = items.filter(item => this.isUnlocked('cg', item.id)).length;
+
+        grid.className = 'gallery-grid gallery-grid-cg';
+        grid.innerHTML = items.map(item => {
+            const unlocked = this.isUnlocked('cg', item.id);
+            const image = `
+                ${this._imageTag(item.file, unlocked ? item.name : labels.locked)}
+                ${unlocked ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
+            `;
+            return `
+                <button class="gallery-card gallery-media-card ${unlocked ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="cg" data-id="${this._escape(item.id)}">
+                    <span class="gallery-thumb">${image}</span>
+                    <span class="gallery-card-title">${unlocked ? this._escape(item.name) : this._escape(labels.locked)}</span>
+                    <span class="gallery-card-desc">${unlocked ? this._escape(item.description) : this._escape(labels.lockedCg)}</span>
+                </button>
+            `;
+        }).join('');
+
+        this._updateProgress(unlockedCount, items.length);
+    }
+
+    _renderMusic() {
+        const grid = this._grid();
+        if (!grid) return;
+        const labels = this._labels();
+        const items = this._getMusicItems();
+        const unlockedCount = items.filter(item => this.isUnlocked('bgm', item.id)).length;
+
+        grid.className = 'gallery-grid gallery-grid-music';
+        grid.innerHTML = items.map(item => {
+            const unlocked = this.isUnlocked('bgm', item.id);
+            const isPlaying = this.playingBgmId === item.id;
+            return `
+                <button class="gallery-music-row ${unlocked ? 'gallery-unlocked' : 'gallery-locked'} ${isPlaying ? 'playing' : ''}"
+                        data-kind="music" data-id="${this._escape(item.id)}">
+                    <span class="gallery-music-icon">${isPlaying ? 'II' : 'PLAY'}</span>
+                    <span class="gallery-music-main">
+                        <span class="gallery-card-title">${unlocked ? this._escape(item.name) : this._escape(labels.locked)}</span>
+                        <span class="gallery-card-desc">${unlocked ? this._escape(labels.artist) : this._escape(labels.lockedMusic)}</span>
+                    </span>
+                    <span class="gallery-music-action">${unlocked ? this._escape(isPlaying ? labels.stop : labels.play) : '--'}</span>
+                </button>
+            `;
+        }).join('');
+
+        this._updateProgress(unlockedCount, items.length);
+    }
+
+    _renderCharacters() {
+        const grid = this._grid();
+        if (!grid) return;
+        const labels = this._labels();
+        const items = this._getCharacterItems();
+        const total = items.reduce((sum, item) => sum + item.expressions.length, 0);
+        const unlockedTotal = items.reduce((sum, item) => {
+            return sum + item.expressions.filter(expr => this.isExpressionUnlocked(item.id, expr.id)).length;
+        }, 0);
+
+        grid.className = 'gallery-grid gallery-grid-characters';
+        grid.innerHTML = items.map(item => {
+            const met = this.isCharacterMet(item.id);
+            const charName = this._characterName(item.id);
+            const unlocked = item.expressions.filter(expr => this.isExpressionUnlocked(item.id, expr.id)).length;
+            const image = `
+                ${this._imageTag(item.cover, met ? charName : labels.locked)}
+                ${met ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
+            `;
+            return `
+                <button class="gallery-card gallery-character-card ${met ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="character" data-id="${this._escape(item.id)}">
+                    <span class="gallery-thumb gallery-character-thumb">${image}</span>
+                    <span class="gallery-card-title">${met ? this._escape(charName) : this._escape(labels.locked)}</span>
+                    <span class="gallery-card-desc">${met ? `${this._escape(labels.expressions)} ${unlocked} / ${item.expressions.length}` : this._escape(labels.lockedCharacter)}</span>
+                </button>
+            `;
+        }).join('');
+
+        this._updateProgress(unlockedTotal, total);
+    }
+
+    _ensureLayout() {
+        const container = document.querySelector('#gallery-screen .gallery-container');
+        const grid = this._grid();
+        if (!container || !grid) return;
+
+        let tabs = document.querySelector('#gallery-tabs');
+        if (!tabs) {
+            tabs = document.createElement('div');
+            tabs.id = 'gallery-tabs';
+            tabs.className = 'gallery-tabs';
+            tabs.innerHTML = ['endings', 'cg', 'music', 'characters'].map(tab => (
+                `<button class="gallery-tab" type="button" data-tab="${tab}"></button>`
+            )).join('');
+            container.insertBefore(tabs, grid);
+        }
+
+        if (!this._tabsBound) {
+            this._tabsBound = true;
+            tabs.addEventListener('click', event => { var __oc9, __oc10, __oc11;
+                const tab = (((__oc9 = event.target.closest('.gallery-tab')) === null || __oc9 === void 0 ? void 0 : __oc9.dataset.tab));
+                if (!tab || tab === this.activeTab) return;
+                (((__oc11 = (__oc10 = this.game.audio) === null || __oc10 === void 0 ? void 0 : __oc10.playUIClick) === null || __oc11 === void 0 ? void 0 : __oc11.call(__oc10)));
+                this._stopBgmPreview();
+                this.activeTab = tab;
+                this._render();
+            });
+        }
+
+        grid.onclick = event => this._handleGridClick(event);
+    }
+
+    _handleGridClick(event) { var __oc12, __oc13;
+        const target = event.target.closest('[data-kind]');
+        if (!target) return;
+
+        const kind = target.dataset.kind;
+        const id = target.dataset.id;
+
+        if (kind === 'ending') {
+            const ending = target.dataset.ending;
+            if (!GallerySystem.ENDINGS.includes(ending)) return;
+            if (!this.isEndingUnlocked(ending)) return this._showMessage(this._labels().lockedEnding);
+            const description = (((__oc12 = GallerySystem.ENDING_DESCRIPTIONS[ending]) === null || __oc12 === void 0 ? void 0 : __oc12[this._lang()]))
+                || (((__oc13 = GallerySystem.ENDING_DESCRIPTIONS[ending]) === null || __oc13 === void 0 ? void 0 : __oc13.en)) || '';
+            this._showModal(ending, `<p class="gallery-modal-message">${this._escape(description)}</p>`
+                + this._replayButton(ending));
+            return;
+        }
+
+        if (kind === 'cg') {
+            const item = this._getCGItems().find(cg => cg.id === id);
+            if (!item) return;
+            if (!this.isUnlocked('cg', id)) return this._showMessage(this._labels().lockedCg);
+            this._showImageModal(item.name, item.description, item.file, item.backgroundKey);
+            return;
+        }
+
+        if (kind === 'music') {
+            const item = this._getMusicItems().find(track => track.id === id);
+            if (!item) return;
+            if (!this.isUnlocked('bgm', id)) return this._showMessage(this._labels().lockedMusic);
+            this._toggleBgmPreview(item);
+            return;
+        }
+
+        if (kind === 'character') {
+            const item = this._getCharacterItems().find(character => character.id === id);
+            if (!item) return;
+            if (!this.isCharacterMet(id)) return this._showMessage(this._labels().lockedCharacter);
+            this._showCharacterModal(item);
+        }
+    }
+
+    _showCharacterModal(character) {
+        const labels = this._labels();
+        const charName = this._characterName(character.id);
+        const body = `
+            <div class="gallery-character-modal-body">
+                <div class="gallery-character-modal-cover">
+                    ${this._imageTag(character.cover, charName)}
+                </div>
+                <div class="gallery-expression-grid">
+                    ${character.expressions.map(expr => {
+                        const unlocked = this.isExpressionUnlocked(character.id, expr.id);
+                        const image = `
+                            ${this._imageTag(expr.file, unlocked ? expr.name : labels.locked)}
+                            ${unlocked ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
+                        `;
+                        return `
+                            <div class="gallery-expression-card ${unlocked ? 'gallery-unlocked' : 'gallery-locked'}">
+                                <div class="gallery-expression-thumb">${image}</div>
+                                <div class="gallery-expression-name">${unlocked ? this._escape(expr.name) : this._escape(labels.locked)}</div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        `;
+        this._showModal(charName, body);
+    }
+
+    _replayButton(key) {
+        if (!GallerySystem.REPLAY_SCENES[key]) return '';
+        return `<button class="menu-btn" type="button" data-replay="${this._escape(key)}">${this._escape(this._labels().replay)}</button>`;
+    }
+
+    _showImageModal(title, description, imagePath, replayKey) {
+        this._showModal(title, `
+            <div class="gallery-image-modal">
+                ${this._imageTag(imagePath, title)}
+                <p>${this._escape(description || '')}</p>
+                ${this._replayButton(replayKey)}
+            </div>
+        `);
+    }
+
+    _showMessage(message) {
+        this._showModal(this._labels().locked, `<p class="gallery-modal-message">${this._escape(message)}</p>`);
+    }
+
+    _showModal(title, bodyHtml) {
+        this._closeModal();
+
+        const modal = document.createElement('div');
+        modal.id = 'gallery-modal';
+        modal.className = 'gallery-modal-overlay';
+        modal.innerHTML = `
+            <div class="gallery-modal-content">
+                <button class="gallery-modal-close" type="button" aria-label="${this._escape(this._labels().close)}">x</button>
+                <h3>${this._escape(title)}</h3>
+                ${bodyHtml}
+            </div>
+        `;
+
+        modal.addEventListener('click', event => { var __oc14;
+            const replay = (((__oc14 = event.target.closest('[data-replay]')) === null || __oc14 === void 0 ? void 0 : __oc14.dataset.replay));
+            if (replay) {
+                let scene = GallerySystem.REPLAY_SCENES[replay];
+                if (replay === 'CAGE END'
+                    && this.game.state.stats.eunsu.affinity > this.game.state.stats.sea.affinity) {
+                    scene = 'day5_ending_cage_eunsu_1';
+                }
+                const unlocked = GallerySystem.ENDINGS.includes(replay)
+                    ? this.isEndingUnlocked(replay) : this.isUnlocked('cg', replay);
+                if (scene && unlocked) this.game.startGalleryReplay(scene);
+                return;
+            }
+            if (event.target === modal || event.target.closest('.gallery-modal-close')) {
+                this._closeModal();
+            }
+        });
+
+        document.body.appendChild(modal);
+        requestAnimationFrame(() => modal.classList.add('active'));
+    }
+
+    _closeModal() {
+        const modal = document.querySelector('.gallery-modal-overlay');
+        if (modal) modal.remove();
+    }
+
+    _toggleBgmPreview(item) { var __oc15, __oc16;
+        if (this.playingBgmId === item.id) {
+            this._stopBgmPreview();
+            this._renderMusic();
+            return;
+        }
+
+        this._stopBgmPreview();
+        this.playingBgmId = item.id;
+        (((__oc16 = (__oc15 = this.game.audio) === null || __oc15 === void 0 ? void 0 : __oc15.playBGM) === null || __oc16 === void 0 ? void 0 : __oc16.call(__oc15, item.file, { fadeIn: 0.15, fadeOut: 0.15 })));
+        this._renderMusic();
+    }
+
+    _stopBgmPreview() { var __oc17, __oc18;
+        if (!this.playingBgmId) return;
+        (((__oc18 = (__oc17 = this.game.audio) === null || __oc17 === void 0 ? void 0 : __oc17.stopBGM) === null || __oc18 === void 0 ? void 0 : __oc18.call(__oc17, 0.2)));
+        this.playingBgmId = null;
+    }
+
+    isEndingUnlocked(ending) {
+        return this.isAdmin || this.getUnlockedEndings().includes(ending);
+    }
+
+    isUnlocked(type, id) { var __oc19, __oc20;
+        if (this.isAdmin) return true;
+        this.data = this._load();
+        return !!(((__oc20 = (__oc19 = this.data[type]) === null || __oc19 === void 0 ? void 0 : __oc19[id]) === null || __oc20 === void 0 ? void 0 : __oc20.unlocked));
+    }
+
+    isCharacterMet(charId) { var __oc21, __oc22;
+        if (this.isAdmin) return true;
+        this.data = this._load();
+        return !!(((__oc22 = (__oc21 = this.data.characters) === null || __oc21 === void 0 ? void 0 : __oc21[charId]) === null || __oc22 === void 0 ? void 0 : __oc22.met));
+    }
+
+    isExpressionUnlocked(charId, exprId) { var __oc23, __oc24, __oc25, __oc26;
+        if (this.isAdmin) return true;
+        this.data = this._load();
+        return !!(((__oc26 = (__oc25 = (__oc24 = (__oc23 = this.data.characters) === null || __oc23 === void 0 ? void 0 : __oc23[charId]) === null || __oc24 === void 0 ? void 0 : __oc24.expressions) === null || __oc25 === void 0 ? void 0 : __oc25[exprId]) === null || __oc26 === void 0 ? void 0 : __oc26.unlocked));
+    }
+
+    _load() {
+        const defaults = this._defaultData();
+        let parsed = null;
+
+        try {
+            const raw = this.game.save._getItem(GallerySystem.STORAGE_KEY);
+            if (raw) parsed = JSON.parse(raw);
+        } catch (e) {
+            console.warn('[Gallery] Failed to load gallery data:', e);
+        }
+
+        const data = (!parsed || parsed.version !== GallerySystem.VERSION)
+            ? defaults
+            : this._mergeDefaults(defaults, parsed);
+
+        const legacy = this._loadLegacyEndings();
+        legacy.forEach(ending => {
+            if (GallerySystem.ENDINGS.includes(ending) && !data.endings.includes(ending)) {
+                data.endings.push(ending);
+            }
+        });
+
+        return data;
+    }
+
+    _save() {
+        try {
+            this.game.save._setItem(GallerySystem.STORAGE_KEY, JSON.stringify(this.data));
+        } catch (e) {
+            console.warn('[Gallery] Failed to save gallery data:', e);
+        }
+    }
+
+    _saveLegacyEndings() {
+        try {
+            this.game.save._setItem(GallerySystem.LEGACY_ENDING_STORAGE_KEY, JSON.stringify(this.data.endings || []));
+        } catch (_) {}
+    }
+
+    _loadLegacyEndings() {
+        try {
+            const raw = this.game.save._getItem(GallerySystem.LEGACY_ENDING_STORAGE_KEY);
+            const parsed = raw ? JSON.parse(raw) : [];
+            return Array.isArray(parsed) ? parsed : [];
+        } catch (_err) {
+            return [];
+        }
+    }
+
+    _defaultData() {
+        const characters = {};
+        this._getCharacterItems().forEach(item => {
+            characters[item.id] = { met: false, expressions: {} };
+        });
+        return {
+            version: GallerySystem.VERSION,
+            endings: [],
+            cg: {},
+            bgm: {},
+            characters
+        };
+    }
+
+    _mergeDefaults(defaults, parsed) { var __oc27, __oc28, __oc29;
+        const merged = {
+            ...defaults,
+            ...parsed,
+            cg: { ...defaults.cg, ...(parsed.cg || {}) },
+            bgm: { ...defaults.bgm, ...(parsed.bgm || {}) },
+            characters: { ...defaults.characters }
+        };
+
+        for (const [charId, defaultChar] of Object.entries(defaults.characters)) {
+            merged.characters[charId] = {
+                ...defaultChar,
+                ...((((__oc27 = parsed.characters) === null || __oc27 === void 0 ? void 0 : __oc27[charId])) || {}),
+                expressions: {
+                    ...defaultChar.expressions,
+                    ...((((__oc29 = (__oc28 = parsed.characters) === null || __oc28 === void 0 ? void 0 : __oc28[charId]) === null || __oc29 === void 0 ? void 0 : __oc29.expressions)) || {})
+                }
+            };
+        }
+
+        merged.endings = Array.isArray(parsed.endings) ? [...parsed.endings] : [];
+        return merged;
+    }
+
+    _unlockListItem(key, value) {
+        this.data = this._load();
+        if (!this.data[key]) this.data[key] = [];
+        if (this.data[key].includes(value)) return false;
+        this.data[key].push(value);
+        this._save();
+        return true;
+    }
+
+    _unlockObjectItem(type, id) { var __oc30;
+        this.data = this._load();
+        this.data[type] = this.data[type] || {};
+        if ((((__oc30 = this.data[type][id]) === null || __oc30 === void 0 ? void 0 : __oc30.unlocked))) return false;
+        this.data[type][id] = { unlocked: true, unlockedAt: Date.now() };
+        this._save();
+        return true;
+    }
+
+    _getCGItems() {
+        if (this._cgItems && this._cgLang === this._lang()) return this._cgItems;
+        this._cgLang = this._lang();
+        const localized = GallerySystem.EXPANSION_CG_LABELS[this._cgLang]
+            || GallerySystem.EXPANSION_CG_LABELS.en;
+
+        const map = {
+            cg_cycle07_seolhwa: {
+                id: 'cg_cycle07_seolhwa', name: 'Cycle 07: The Left Hand',
+                description: 'Seolhwa holds the emergency door in the rain.'
+            },
+            cg_cycle12_yuna: {
+                id: 'cg_cycle12_yuna', name: 'Cycle 12: The Darkroom',
+                description: 'Yuna keeps the film for the next arrival.'
+            },
+            ending_cage_eunsu: {
+                id: 'ending_cage_eunsu', name: 'Cage Ending: Eunsu',
+                description: 'A silver band and a permanently deferred graduation.'
+            },
+            ending_complicit_monitors: {
+                id: 'ending_complicit_monitors', name: 'Complicit: Control Room',
+                description: 'The next approval carries your signature.'
+            },
+            ending_true: {
+                id: 'ending_true',
+                name: 'True Ending CG',
+                description: 'A new classroom and a pencil held in the left hand.'
+            },
+            ending_escape: {
+                id: 'ending_escape',
+                name: 'Escape Ending CG',
+                description: 'The rain-soaked escape route.'
+            },
+            ending_cage: {
+                id: 'ending_cage',
+                name: 'Cage Ending CG',
+                description: 'The classroom that never releases you.'
+            },
+            ending_ghost: {
+                id: 'ending_ghost',
+                name: 'Ghost Ending CG',
+                description: 'A trace left behind in the empty room.'
+            },
+            ending_forget: {
+                id: 'ending_forget',
+                name: 'Forget Ending CG',
+                description: 'An empty seat in ordinary days.'
+            },
+            ending_resist: {
+                id: 'ending_resist',
+                name: 'Resist Ending CG',
+                description: 'Leaving through the emergency exit with Eunsu and the records.'
+            },
+            ending_complicit: {
+                id: 'ending_complicit',
+                name: 'Complicit Ending CG',
+                description: 'The signed page that makes you part of the system.'
+            },
+            ending_cage_sea: {
+                id: 'ending_cage_sea',
+                name: 'Cage Ending: Sea',
+                description: 'The same lunchbox, the same student council room.'
+            }
+        };
+
+        this._cgItems = Object.entries(CONFIG.BACKGROUNDS || {})
+            .map(([key, file]) => [key === 'closeup_m13_ampoule' ? 'closeup_m13_ampoule_tray' : key, file])
+            .filter(([backgroundKey, file]) => String(file).includes('/images/cg/')
+                || ['closeup_m13_ampoule_tray', 'closeup_rooftop_etching'].includes(backgroundKey))
+            .map(([backgroundKey, file]) => { var __oc31, __oc32, __oc33, __oc34, __oc35; return (
+({
+                id: (((__oc31 = map[backgroundKey]) === null || __oc31 === void 0 ? void 0 : __oc31.id)) || backgroundKey,
+                backgroundKey,
+                file,
+                name: (((__oc32 = localized[backgroundKey]) === null || __oc32 === void 0 ? void 0 : __oc32[0])) || (((__oc33 = map[backgroundKey]) === null || __oc33 === void 0 ? void 0 : __oc33.name)) || this._titleFromId(backgroundKey),
+                description: (((__oc34 = localized[backgroundKey]) === null || __oc34 === void 0 ? void 0 : __oc34[1])) || (((__oc35 = map[backgroundKey]) === null || __oc35 === void 0 ? void 0 : __oc35.description)) || ''
+            })
+); });
+
+        return this._cgItems;
+    }
+
+    _getMusicItems() { var __oc36;
+        if (this._musicItems && this._musicLang === this._lang()) return this._musicItems;
+        this._musicLang = this._lang();
+        const titles = GallerySystem.BGM_TITLES_LOCALIZED[this._musicLang] || GallerySystem.BGM_TITLES_LOCALIZED.en;
+
+        const seen = new Map();
+        const add = (file) => {
+            if (!file || typeof file !== 'string') return;
+            const id = this._bgmId(file);
+            if (seen.has(id)) return;
+            seen.set(id, {
+                id,
+                file,
+                name: titles[id] || GallerySystem.BGM_TITLES[id] || this._titleFromId(id)
+            });
+        };
+
+        for (const day of Object.values(window.SCENARIO || {})) {
+            for (const scene of Object.values(day || {})) {
+                if (typeof scene.bgm === 'string') add(scene.bgm);
+                if ((((__oc36 = scene.bgm_fade) === null || __oc36 === void 0 ? void 0 : __oc36.to))) add(scene.bgm_fade.to);
+            }
+        }
+
+        this._musicItems = [...seen.values()];
+        return this._musicItems;
+    }
+
+    _getCharacterItems() {
+        if (this._characterItems && this._characterLang === this._lang()) return this._characterItems;
+        this._characterLang = this._lang();
+        const titles = GallerySystem.EXPRESSION_TITLES_LOCALIZED[this._characterLang] || GallerySystem.EXPRESSION_TITLES_LOCALIZED.en;
+        const aliases = { startled: 'shaking', strained_smile: 'broken_smile', casual: 'normal',
+            casual_pain: 'pain', casual_relief: 'relief', injured_determined: 'determined' };
+
+        this._characterItems = Object.entries(CONFIG.EXPRESSIONS || {})
+            .filter(([charId, expressions]) => charId !== 'classmate' && expressions && Object.values(expressions).some(Boolean))
+            .map(([charId, expressions]) => { var __oc37;
+                const seenPaths = new Set();
+                const items = [];
+                for (const [exprId, file] of Object.entries(expressions)) {
+                    if (!file) continue;
+                    const normalized = this._normalizeAsset(file);
+                    if (seenPaths.has(normalized)) continue;
+                    seenPaths.add(normalized);
+                    items.push({
+                        id: exprId,
+                        name: titles[exprId] || titles[aliases[exprId]] || GallerySystem.EXPRESSION_TITLES[exprId] || this._titleFromId(exprId),
+                        file
+                    });
+                }
+
+                return {
+                    id: charId,
+                    name: charId,
+                    cover: expressions.normal || (((__oc37 = items[0]) === null || __oc37 === void 0 ? void 0 : __oc37.file)),
+                    expressions: items
+                };
+            });
+
+        return this._characterItems;
+    }
+
+    _parseCharacterExpression(keyOrPath) {
+        if (!keyOrPath || typeof keyOrPath !== 'string') return null;
+        let name = keyOrPath;
+
+        if (keyOrPath.includes('/')) {
+            name = keyOrPath.split(/[?#]/)[0].split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
+        }
+
+        const idx = name.indexOf('_');
+        if (idx <= 0) return null;
+
+        return {
+            charId: name.substring(0, idx),
+            expression: name.substring(idx + 1)
+        };
+    }
+
+    _bgmId(filename) {
+        return String(filename).split('/').pop().replace(/\.[^.]+$/, '');
+    }
+
+    _grid() {
+        return document.getElementById('gallery-grid');
+    }
+
+    _updateProgress(unlocked, total) {
+        const progress = document.getElementById('gallery-progress');
+        if (progress) progress.textContent = `${unlocked} / ${total}`;
+    }
+
+    _getEndingIcon(ending) {
+        const icons = {
+            'TRUE END': '\u2605',
+            'RESIST END': '\u2694',
+            'FORGET END': '\u29BE',
+            'CAGE END': '\u25A3',
+            'GHOST END': '\u2620',
+            'ESCAPE END': '\u2708',
+            'COMPLICIT END': '\u2622'
+        };
+        return icons[ending] || '\u2726';
+    }
+
+    _labels() {
+        const lang = this._lang();
+        return GallerySystem.LABELS[lang] || GallerySystem.LABELS.en;
+    }
+
+    _lang() { var __oc38, __oc39;
+        return (((__oc39 = (__oc38 = this.game) === null || __oc38 === void 0 ? void 0 : __oc38.i18n) === null || __oc39 === void 0 ? void 0 : __oc39.currentLang)) || 'ko';
+    }
+
+    _titleFromId(id) {
+        return String(id || '')
+            .replace(/\.[^.]+$/, '')
+            .replace(/_/g, ' ')
+            .replace(/\b\w/g, ch => ch.toUpperCase());
+    }
+
+    _characterName(charId) { var __oc40, __oc41, __oc42;
+        return (((__oc42 = (__oc41 = (__oc40 = this.game) === null || __oc40 === void 0 ? void 0 : __oc40.i18n) === null || __oc41 === void 0 ? void 0 : __oc41.getCharacterName) === null || __oc42 === void 0 ? void 0 : __oc42.call(__oc41, charId))) || this._titleFromId(charId);
+    }
+
+    _normalizeAsset(value) {
+        return String(value || '')
+            .replace(/\\/g, '/')
+            .replace(/^\.\//, '')
+            .replace(/^\.\.\//, '')
+            .split(/[?#]/)[0]
+            .toLowerCase();
+    }
+
+    _asset(src) {
+        if (!src) return '';
+        const normalized = String(src).replace(/^\.\//, '');
+        if (/^(?:https?:|data:|blob:|\/)/.test(normalized) || normalized.startsWith('../')) {
+            return normalized;
+        }
+        return (window.__NEVERGRAD_LANG__ ? '../' : '') + normalized;
+    }
+
+    _versioned(src) {
+        const asset = this._asset(src);
+        if (!asset || /[?#]/.test(asset) || /^(?:data:|blob:)/.test(asset)) return asset;
+        const version = CONFIG.VERSION || '1';
+        return `${asset}?v=${encodeURIComponent(version)}`;
+    }
+
+    _fallbackImage(src) {
+        if (!src || typeof src !== 'string') return '';
+        const normalized = src.replace(/\\/g, '/');
+        const match = normalized.match(/^([^?#]+)([?#].*)?$/);
+        const pathPart = match ? match[1] : normalized;
+        const suffix = ((match === null || match === void 0 ? void 0 : match[2])) || '';
+
+        if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters|cg|evidence)\/.+\.webp$/i.test(pathPart)) {
+            return '';
+        }
+
+        return `${pathPart.replace(/\.webp$/i, '.png')}${suffix}`;
+    }
+
+    _imageTag(src, alt) {
+        const primary = this._versioned(src);
+        const fallback = this._versioned(this._fallbackImage(src));
+        const fallbackAttr = fallback && fallback !== primary
+            ? ` onerror="this.onerror=null;this.src='${this._escape(fallback)}'"`
+            : '';
+        return `<img src="${this._escape(primary)}"${fallbackAttr} alt="${this._escape(alt)}">`;
+    }
+
+    _escape(value) {
+        return String(((value !== null && value !== void 0 ? value : '')))
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+}
+GallerySystem.STORAGE_KEY = 'nevergrad_gallery';
+GallerySystem.LEGACY_ENDING_STORAGE_KEY = 'nevergrad_endings';
+GallerySystem.VERSION = 2;
+GallerySystem.ENDINGS = [
         'TRUE END',
         'RESIST END',
         'FORGET END',
@@ -19,8 +882,7 @@ class GallerySystem {
         'ESCAPE END',
         'COMPLICIT END'
     ];
-
-    static REPLAY_SCENES = {
+GallerySystem.REPLAY_SCENES = {
         cg_cycle07_seolhwa: 'day5_archive_cycle07_1',
         cg_cycle12_yuna: 'day5_archive_cycle12_1',
         'TRUE END': 'day5_ending_true_1',
@@ -31,8 +893,7 @@ class GallerySystem {
         'ESCAPE END': 'day5_ending_escape_1',
         'COMPLICIT END': 'day5_ending_complicit_1'
     };
-
-    static ENDING_DESCRIPTIONS = {
+GallerySystem.ENDING_DESCRIPTIONS = {
         'TRUE END': {
             ko: '진실을 마주한 끝에 졸업했다.',
             en: 'Faced the truth, and chose to graduate.',
@@ -104,8 +965,7 @@ class GallerySystem {
             zh: '你成了共犯。'
         }
     };
-
-    static LABELS = {
+GallerySystem.LABELS = {
         ko: {
             "title": "갤러리",
             "progress": "해금률",
@@ -249,8 +1109,7 @@ class GallerySystem {
             close: '关闭'
         }
     };
-
-    static BGM_TITLES = {
+GallerySystem.BGM_TITLES = {
         cycle07_elegy: 'Cycle 07: Elegy',
         complicit_cold_pulse: 'Complicit: Cold Pulse',
         yuna_theme: 'Yuna Theme',
@@ -282,8 +1141,7 @@ class GallerySystem {
         morning_peaceful: 'Morning Peaceful',
         chase: 'Chase'
     };
-
-    static EXPANSION_CG_LABELS = {
+GallerySystem.EXPANSION_CG_LABELS = {
         "ko": {
             "cg_cycle07_seolhwa": [
                 "제7차 주기: 왼손",
@@ -749,8 +1607,7 @@ class GallerySystem {
             ]
         }
     };
-
-    static EXPRESSION_TITLES = {
+GallerySystem.EXPRESSION_TITLES = {
         normal: 'Normal',
         smile: 'Smile',
         gentle: 'Gentle',
@@ -783,8 +1640,7 @@ class GallerySystem {
         ghost: 'Ghost',
         quiet: 'Quiet'
     };
-
-    static BGM_TITLES_KO = {
+GallerySystem.BGM_TITLES_KO = {
         "cycle07_elegy": "제7차 주기: 빗속의 엘레지",
         "complicit_cold_pulse": "공범: 차가운 맥박",
         "yuna_theme": "유나의 테마: 뷰파인더 너머",
@@ -816,8 +1672,7 @@ class GallerySystem {
         "morning_peaceful": "아무 일 없던 아침",
         "chase": "비상계단 추격"
     };
-
-    static EXPRESSION_TITLES_KO = {
+GallerySystem.EXPRESSION_TITLES_KO = {
         "normal": "평소",
         "smile": "미소",
         "gentle": "다정함",
@@ -850,8 +1705,7 @@ class GallerySystem {
         "ghost": "잔상",
         "quiet": "침묵"
     };
-
-    static BGM_TITLES_LOCALIZED = {
+GallerySystem.BGM_TITLES_LOCALIZED = {
         "ko": {
             "cycle07_elegy": "제7차 주기: 빗속의 엘레지",
             "complicit_cold_pulse": "공범: 차가운 맥박",
@@ -1109,8 +1963,7 @@ class GallerySystem {
             "chase": "逃生楼梯追逐"
         }
     };
-
-    static EXPRESSION_TITLES_LOCALIZED = {
+GallerySystem.EXPRESSION_TITLES_LOCALIZED = {
         "ko": {
             "normal": "평소",
             "smile": "미소",
@@ -1376,841 +2229,7 @@ class GallerySystem {
             "quiet": "沉默"
         }
     };
-
-    static {
+(function () {
         const replays = {"ko":"장면 회상","en":"Replay Scene","ja":"シーン回想","es":"Reproducir escena","fr":"Rejouer la scène","de":"Szene wiederholen","pt":"Cena de repetição","zh":"场景回顾"};
-        for (const [lang, label] of Object.entries(replays)) this.LABELS[lang].replay = label;
-    }
-
-    constructor(game) {
-        this.game = game;
-        this.activeTab = 'endings';
-        this.playingBgmId = null;
-        this.data = this._load();
-        this.isAdmin = new URLSearchParams(window.location.search).has('admin');
-        this._bound = false;
-        this._tabsBound = false;
-    }
-
-    getUnlockedEndings() {
-        this.data = this._load();
-        return [...new Set(this.data.endings || [])];
-    }
-
-    unlockEnding(endingTitle) {
-        if (!GallerySystem.ENDINGS.includes(endingTitle)) return false;
-        const changed = this._unlockListItem('endings', endingTitle);
-        if (changed) this._saveLegacyEndings();
-        return changed;
-    }
-
-    unlockCGByPath(pathOrKey) {
-        const normalized = this._normalizeAsset(CONFIG.BACKGROUNDS?.[pathOrKey] || pathOrKey);
-        const item = this._getCGItems().find(cg => {
-            return this._normalizeAsset(cg.file) === normalized
-                || this._normalizeAsset(cg.backgroundKey) === normalized
-                || cg.id === pathOrKey;
-        });
-        if (!item) return false;
-        return this._unlockObjectItem('cg', item.id);
-    }
-
-    unlockBGM(filename) {
-        if (!filename || typeof filename !== 'string') return false;
-        const item = this._getMusicItems().find(track => {
-            return track.file === filename
-                || track.id === this._bgmId(filename)
-                || track.id === filename;
-        });
-        if (!item) return false;
-        return this._unlockObjectItem('bgm', item.id);
-    }
-
-    unlockCharacterExpression(keyOrPath) {
-        const parsed = this._parseCharacterExpression(keyOrPath);
-        if (!parsed) return false;
-
-        const items = this._getCharacterItems();
-        const char = items.find(item => item.id === parsed.charId);
-        if (!char) return false;
-
-        const sourcePath = CONFIG.EXPRESSIONS?.[parsed.charId]?.[parsed.expression];
-        const expression = char.expressions.find(expr => {
-            return expr.id === parsed.expression
-                || (sourcePath && this._normalizeAsset(expr.file) === this._normalizeAsset(sourcePath));
-        });
-        if (!expression) return false;
-
-        if (!this.data.characters[char.id]) {
-            this.data.characters[char.id] = { met: false, expressions: {} };
-        }
-
-        const entry = this.data.characters[char.id];
-        const wasUnlocked = entry.met && entry.expressions?.[expression.id]?.unlocked;
-        entry.met = true;
-        entry.expressions = entry.expressions || {};
-        entry.expressions[expression.id] = entry.expressions[expression.id] || {};
-        entry.expressions[expression.id].unlocked = true;
-        entry.expressions[expression.id].unlockedAt = entry.expressions[expression.id].unlockedAt || Date.now();
-
-        this._save();
-        return !wasUnlocked;
-    }
-
-    open() {
-        const screen = document.getElementById('gallery-screen');
-        if (!screen) return;
-
-        this.data = this._load();
-        this._ensureLayout();
-        this._render();
-
-        document.querySelectorAll('.screen').forEach(s => {
-            s.classList.remove('active');
-            s.classList.add('hidden');
-        });
-        screen.classList.remove('hidden');
-        screen.classList.add('active');
-    }
-
-    close() {
-        this._stopBgmPreview();
-        this._closeModal();
-
-        const screen = document.getElementById('gallery-screen');
-        if (screen) {
-            screen.classList.remove('active');
-            screen.classList.add('hidden');
-        }
-        const title = document.getElementById('title-screen');
-        if (title) {
-            title.classList.remove('hidden');
-            title.classList.add('active');
-        }
-    }
-
-    bind() {
-        if (this._bound) return;
-        this._bound = true;
-
-        document.getElementById('btn-gallery')?.addEventListener('click', () => {
-            this.game.audio?.playUIClick();
-            this.open();
-        });
-        document.getElementById('gallery-back')?.addEventListener('click', () => {
-            this.game.audio?.playUIClick();
-            this.close();
-        });
-    }
-
-    _render() {
-        this._renderHeader();
-        this._renderTabs();
-
-        if (this.activeTab === 'endings') this._renderEndings();
-        if (this.activeTab === 'cg') this._renderCG();
-        if (this.activeTab === 'music') this._renderMusic();
-        if (this.activeTab === 'characters') this._renderCharacters();
-    }
-
-    _renderHeader() {
-        const labels = this._labels();
-        const title = document.querySelector('.gallery-title');
-        const back = document.getElementById('gallery-back');
-        const progressLabel = document.querySelector('.gallery-progress-label');
-        if (title) title.textContent = labels.title;
-        if (back) back.textContent = labels.back;
-        if (progressLabel) progressLabel.textContent = labels.progress;
-    }
-
-    _renderTabs() {
-        const tabs = document.querySelector('#gallery-tabs');
-        if (!tabs) return;
-        const labels = this._labels();
-
-        tabs.querySelectorAll('.gallery-tab').forEach(btn => {
-            const tab = btn.dataset.tab;
-            btn.textContent = labels.tabs[tab] || tab;
-            btn.classList.toggle('active', tab === this.activeTab);
-        });
-    }
-
-    _renderEndings() {
-        const grid = this._grid();
-        if (!grid) return;
-        const lang = this._lang();
-        const labels = this._labels();
-        const unlockedCount = GallerySystem.ENDINGS.filter(ending => this.isEndingUnlocked(ending)).length;
-
-        grid.className = 'gallery-grid gallery-grid-endings';
-        grid.innerHTML = GallerySystem.ENDINGS.map(ending => {
-            const isUnlocked = this.isEndingUnlocked(ending);
-            const desc = isUnlocked
-                ? (GallerySystem.ENDING_DESCRIPTIONS[ending]?.[lang] || GallerySystem.ENDING_DESCRIPTIONS[ending]?.en || '')
-                : labels.lockedEnding;
-            return `
-                <button class="gallery-card ${isUnlocked ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="ending" data-ending="${this._escape(ending)}">
-                    <span class="gallery-card-icon">${isUnlocked ? this._getEndingIcon(ending) : ''}</span>
-                    <span class="gallery-card-title">${isUnlocked ? this._escape(ending) : this._escape(labels.locked)}</span>
-                    <span class="gallery-card-desc">${this._escape(desc)}</span>
-                </button>
-            `;
-        }).join('');
-
-        this._updateProgress(unlockedCount, GallerySystem.ENDINGS.length);
-    }
-
-    _renderCG() {
-        const grid = this._grid();
-        if (!grid) return;
-        const labels = this._labels();
-        const items = this._getCGItems();
-        const unlockedCount = items.filter(item => this.isUnlocked('cg', item.id)).length;
-
-        grid.className = 'gallery-grid gallery-grid-cg';
-        grid.innerHTML = items.map(item => {
-            const unlocked = this.isUnlocked('cg', item.id);
-            const image = `
-                ${this._imageTag(item.file, unlocked ? item.name : labels.locked)}
-                ${unlocked ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
-            `;
-            return `
-                <button class="gallery-card gallery-media-card ${unlocked ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="cg" data-id="${this._escape(item.id)}">
-                    <span class="gallery-thumb">${image}</span>
-                    <span class="gallery-card-title">${unlocked ? this._escape(item.name) : this._escape(labels.locked)}</span>
-                    <span class="gallery-card-desc">${unlocked ? this._escape(item.description) : this._escape(labels.lockedCg)}</span>
-                </button>
-            `;
-        }).join('');
-
-        this._updateProgress(unlockedCount, items.length);
-    }
-
-    _renderMusic() {
-        const grid = this._grid();
-        if (!grid) return;
-        const labels = this._labels();
-        const items = this._getMusicItems();
-        const unlockedCount = items.filter(item => this.isUnlocked('bgm', item.id)).length;
-
-        grid.className = 'gallery-grid gallery-grid-music';
-        grid.innerHTML = items.map(item => {
-            const unlocked = this.isUnlocked('bgm', item.id);
-            const isPlaying = this.playingBgmId === item.id;
-            return `
-                <button class="gallery-music-row ${unlocked ? 'gallery-unlocked' : 'gallery-locked'} ${isPlaying ? 'playing' : ''}"
-                        data-kind="music" data-id="${this._escape(item.id)}">
-                    <span class="gallery-music-icon">${isPlaying ? 'II' : 'PLAY'}</span>
-                    <span class="gallery-music-main">
-                        <span class="gallery-card-title">${unlocked ? this._escape(item.name) : this._escape(labels.locked)}</span>
-                        <span class="gallery-card-desc">${unlocked ? this._escape(labels.artist) : this._escape(labels.lockedMusic)}</span>
-                    </span>
-                    <span class="gallery-music-action">${unlocked ? this._escape(isPlaying ? labels.stop : labels.play) : '--'}</span>
-                </button>
-            `;
-        }).join('');
-
-        this._updateProgress(unlockedCount, items.length);
-    }
-
-    _renderCharacters() {
-        const grid = this._grid();
-        if (!grid) return;
-        const labels = this._labels();
-        const items = this._getCharacterItems();
-        const total = items.reduce((sum, item) => sum + item.expressions.length, 0);
-        const unlockedTotal = items.reduce((sum, item) => {
-            return sum + item.expressions.filter(expr => this.isExpressionUnlocked(item.id, expr.id)).length;
-        }, 0);
-
-        grid.className = 'gallery-grid gallery-grid-characters';
-        grid.innerHTML = items.map(item => {
-            const met = this.isCharacterMet(item.id);
-            const charName = this._characterName(item.id);
-            const unlocked = item.expressions.filter(expr => this.isExpressionUnlocked(item.id, expr.id)).length;
-            const image = `
-                ${this._imageTag(item.cover, met ? charName : labels.locked)}
-                ${met ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
-            `;
-            return `
-                <button class="gallery-card gallery-character-card ${met ? 'gallery-unlocked' : 'gallery-locked'}" data-kind="character" data-id="${this._escape(item.id)}">
-                    <span class="gallery-thumb gallery-character-thumb">${image}</span>
-                    <span class="gallery-card-title">${met ? this._escape(charName) : this._escape(labels.locked)}</span>
-                    <span class="gallery-card-desc">${met ? `${this._escape(labels.expressions)} ${unlocked} / ${item.expressions.length}` : this._escape(labels.lockedCharacter)}</span>
-                </button>
-            `;
-        }).join('');
-
-        this._updateProgress(unlockedTotal, total);
-    }
-
-    _ensureLayout() {
-        const container = document.querySelector('#gallery-screen .gallery-container');
-        const grid = this._grid();
-        if (!container || !grid) return;
-
-        let tabs = document.querySelector('#gallery-tabs');
-        if (!tabs) {
-            tabs = document.createElement('div');
-            tabs.id = 'gallery-tabs';
-            tabs.className = 'gallery-tabs';
-            tabs.innerHTML = ['endings', 'cg', 'music', 'characters'].map(tab => (
-                `<button class="gallery-tab" type="button" data-tab="${tab}"></button>`
-            )).join('');
-            container.insertBefore(tabs, grid);
-        }
-
-        if (!this._tabsBound) {
-            this._tabsBound = true;
-            tabs.addEventListener('click', event => {
-                const tab = event.target.closest('.gallery-tab')?.dataset.tab;
-                if (!tab || tab === this.activeTab) return;
-                this.game.audio?.playUIClick?.();
-                this._stopBgmPreview();
-                this.activeTab = tab;
-                this._render();
-            });
-        }
-
-        grid.onclick = event => this._handleGridClick(event);
-    }
-
-    _handleGridClick(event) {
-        const target = event.target.closest('[data-kind]');
-        if (!target) return;
-
-        const kind = target.dataset.kind;
-        const id = target.dataset.id;
-
-        if (kind === 'ending') {
-            const ending = target.dataset.ending;
-            if (!GallerySystem.ENDINGS.includes(ending)) return;
-            if (!this.isEndingUnlocked(ending)) return this._showMessage(this._labels().lockedEnding);
-            const description = GallerySystem.ENDING_DESCRIPTIONS[ending]?.[this._lang()]
-                || GallerySystem.ENDING_DESCRIPTIONS[ending]?.en || '';
-            this._showModal(ending, `<p class="gallery-modal-message">${this._escape(description)}</p>`
-                + this._replayButton(ending));
-            return;
-        }
-
-        if (kind === 'cg') {
-            const item = this._getCGItems().find(cg => cg.id === id);
-            if (!item) return;
-            if (!this.isUnlocked('cg', id)) return this._showMessage(this._labels().lockedCg);
-            this._showImageModal(item.name, item.description, item.file, item.backgroundKey);
-            return;
-        }
-
-        if (kind === 'music') {
-            const item = this._getMusicItems().find(track => track.id === id);
-            if (!item) return;
-            if (!this.isUnlocked('bgm', id)) return this._showMessage(this._labels().lockedMusic);
-            this._toggleBgmPreview(item);
-            return;
-        }
-
-        if (kind === 'character') {
-            const item = this._getCharacterItems().find(character => character.id === id);
-            if (!item) return;
-            if (!this.isCharacterMet(id)) return this._showMessage(this._labels().lockedCharacter);
-            this._showCharacterModal(item);
-        }
-    }
-
-    _showCharacterModal(character) {
-        const labels = this._labels();
-        const charName = this._characterName(character.id);
-        const body = `
-            <div class="gallery-character-modal-body">
-                <div class="gallery-character-modal-cover">
-                    ${this._imageTag(character.cover, charName)}
-                </div>
-                <div class="gallery-expression-grid">
-                    ${character.expressions.map(expr => {
-                        const unlocked = this.isExpressionUnlocked(character.id, expr.id);
-                        const image = `
-                            ${this._imageTag(expr.file, unlocked ? expr.name : labels.locked)}
-                            ${unlocked ? '' : '<div class="gallery-lock-mark">LOCK</div>'}
-                        `;
-                        return `
-                            <div class="gallery-expression-card ${unlocked ? 'gallery-unlocked' : 'gallery-locked'}">
-                                <div class="gallery-expression-thumb">${image}</div>
-                                <div class="gallery-expression-name">${unlocked ? this._escape(expr.name) : this._escape(labels.locked)}</div>
-                            </div>
-                        `;
-                    }).join('')}
-                </div>
-            </div>
-        `;
-        this._showModal(charName, body);
-    }
-
-    _replayButton(key) {
-        if (!GallerySystem.REPLAY_SCENES[key]) return '';
-        return `<button class="menu-btn" type="button" data-replay="${this._escape(key)}">${this._escape(this._labels().replay)}</button>`;
-    }
-
-    _showImageModal(title, description, imagePath, replayKey) {
-        this._showModal(title, `
-            <div class="gallery-image-modal">
-                ${this._imageTag(imagePath, title)}
-                <p>${this._escape(description || '')}</p>
-                ${this._replayButton(replayKey)}
-            </div>
-        `);
-    }
-
-    _showMessage(message) {
-        this._showModal(this._labels().locked, `<p class="gallery-modal-message">${this._escape(message)}</p>`);
-    }
-
-    _showModal(title, bodyHtml) {
-        this._closeModal();
-
-        const modal = document.createElement('div');
-        modal.id = 'gallery-modal';
-        modal.className = 'gallery-modal-overlay';
-        modal.innerHTML = `
-            <div class="gallery-modal-content">
-                <button class="gallery-modal-close" type="button" aria-label="${this._escape(this._labels().close)}">x</button>
-                <h3>${this._escape(title)}</h3>
-                ${bodyHtml}
-            </div>
-        `;
-
-        modal.addEventListener('click', event => {
-            const replay = event.target.closest('[data-replay]')?.dataset.replay;
-            if (replay) {
-                let scene = GallerySystem.REPLAY_SCENES[replay];
-                if (replay === 'CAGE END'
-                    && this.game.state.stats.eunsu.affinity > this.game.state.stats.sea.affinity) {
-                    scene = 'day5_ending_cage_eunsu_1';
-                }
-                const unlocked = GallerySystem.ENDINGS.includes(replay)
-                    ? this.isEndingUnlocked(replay) : this.isUnlocked('cg', replay);
-                if (scene && unlocked) this.game.startGalleryReplay(scene);
-                return;
-            }
-            if (event.target === modal || event.target.closest('.gallery-modal-close')) {
-                this._closeModal();
-            }
-        });
-
-        document.body.appendChild(modal);
-        requestAnimationFrame(() => modal.classList.add('active'));
-    }
-
-    _closeModal() {
-        const modal = document.querySelector('.gallery-modal-overlay');
-        if (modal) modal.remove();
-    }
-
-    _toggleBgmPreview(item) {
-        if (this.playingBgmId === item.id) {
-            this._stopBgmPreview();
-            this._renderMusic();
-            return;
-        }
-
-        this._stopBgmPreview();
-        this.playingBgmId = item.id;
-        this.game.audio?.playBGM?.(item.file, { fadeIn: 0.15, fadeOut: 0.15 });
-        this._renderMusic();
-    }
-
-    _stopBgmPreview() {
-        if (!this.playingBgmId) return;
-        this.game.audio?.stopBGM?.(0.2);
-        this.playingBgmId = null;
-    }
-
-    isEndingUnlocked(ending) {
-        return this.isAdmin || this.getUnlockedEndings().includes(ending);
-    }
-
-    isUnlocked(type, id) {
-        if (this.isAdmin) return true;
-        this.data = this._load();
-        return !!this.data[type]?.[id]?.unlocked;
-    }
-
-    isCharacterMet(charId) {
-        if (this.isAdmin) return true;
-        this.data = this._load();
-        return !!this.data.characters?.[charId]?.met;
-    }
-
-    isExpressionUnlocked(charId, exprId) {
-        if (this.isAdmin) return true;
-        this.data = this._load();
-        return !!this.data.characters?.[charId]?.expressions?.[exprId]?.unlocked;
-    }
-
-    _load() {
-        const defaults = this._defaultData();
-        let parsed = null;
-
-        try {
-            const raw = this.game.save._getItem(GallerySystem.STORAGE_KEY);
-            if (raw) parsed = JSON.parse(raw);
-        } catch (e) {
-            console.warn('[Gallery] Failed to load gallery data:', e);
-        }
-
-        const data = (!parsed || parsed.version !== GallerySystem.VERSION)
-            ? defaults
-            : this._mergeDefaults(defaults, parsed);
-
-        const legacy = this._loadLegacyEndings();
-        legacy.forEach(ending => {
-            if (GallerySystem.ENDINGS.includes(ending) && !data.endings.includes(ending)) {
-                data.endings.push(ending);
-            }
-        });
-
-        return data;
-    }
-
-    _save() {
-        try {
-            this.game.save._setItem(GallerySystem.STORAGE_KEY, JSON.stringify(this.data));
-        } catch (e) {
-            console.warn('[Gallery] Failed to save gallery data:', e);
-        }
-    }
-
-    _saveLegacyEndings() {
-        try {
-            this.game.save._setItem(GallerySystem.LEGACY_ENDING_STORAGE_KEY, JSON.stringify(this.data.endings || []));
-        } catch (_) {}
-    }
-
-    _loadLegacyEndings() {
-        try {
-            const raw = this.game.save._getItem(GallerySystem.LEGACY_ENDING_STORAGE_KEY);
-            const parsed = raw ? JSON.parse(raw) : [];
-            return Array.isArray(parsed) ? parsed : [];
-        } catch {
-            return [];
-        }
-    }
-
-    _defaultData() {
-        const characters = {};
-        this._getCharacterItems().forEach(item => {
-            characters[item.id] = { met: false, expressions: {} };
-        });
-        return {
-            version: GallerySystem.VERSION,
-            endings: [],
-            cg: {},
-            bgm: {},
-            characters
-        };
-    }
-
-    _mergeDefaults(defaults, parsed) {
-        const merged = {
-            ...defaults,
-            ...parsed,
-            cg: { ...defaults.cg, ...(parsed.cg || {}) },
-            bgm: { ...defaults.bgm, ...(parsed.bgm || {}) },
-            characters: { ...defaults.characters }
-        };
-
-        for (const [charId, defaultChar] of Object.entries(defaults.characters)) {
-            merged.characters[charId] = {
-                ...defaultChar,
-                ...(parsed.characters?.[charId] || {}),
-                expressions: {
-                    ...defaultChar.expressions,
-                    ...(parsed.characters?.[charId]?.expressions || {})
-                }
-            };
-        }
-
-        merged.endings = Array.isArray(parsed.endings) ? [...parsed.endings] : [];
-        return merged;
-    }
-
-    _unlockListItem(key, value) {
-        this.data = this._load();
-        if (!this.data[key]) this.data[key] = [];
-        if (this.data[key].includes(value)) return false;
-        this.data[key].push(value);
-        this._save();
-        return true;
-    }
-
-    _unlockObjectItem(type, id) {
-        this.data = this._load();
-        this.data[type] = this.data[type] || {};
-        if (this.data[type][id]?.unlocked) return false;
-        this.data[type][id] = { unlocked: true, unlockedAt: Date.now() };
-        this._save();
-        return true;
-    }
-
-    _getCGItems() {
-        if (this._cgItems && this._cgLang === this._lang()) return this._cgItems;
-        this._cgLang = this._lang();
-        const localized = GallerySystem.EXPANSION_CG_LABELS[this._cgLang]
-            || GallerySystem.EXPANSION_CG_LABELS.en;
-
-        const map = {
-            cg_cycle07_seolhwa: {
-                id: 'cg_cycle07_seolhwa', name: 'Cycle 07: The Left Hand',
-                description: 'Seolhwa holds the emergency door in the rain.'
-            },
-            cg_cycle12_yuna: {
-                id: 'cg_cycle12_yuna', name: 'Cycle 12: The Darkroom',
-                description: 'Yuna keeps the film for the next arrival.'
-            },
-            ending_cage_eunsu: {
-                id: 'ending_cage_eunsu', name: 'Cage Ending: Eunsu',
-                description: 'A silver band and a permanently deferred graduation.'
-            },
-            ending_complicit_monitors: {
-                id: 'ending_complicit_monitors', name: 'Complicit: Control Room',
-                description: 'The next approval carries your signature.'
-            },
-            ending_true: {
-                id: 'ending_true',
-                name: 'True Ending CG',
-                description: 'A new classroom and a pencil held in the left hand.'
-            },
-            ending_escape: {
-                id: 'ending_escape',
-                name: 'Escape Ending CG',
-                description: 'The rain-soaked escape route.'
-            },
-            ending_cage: {
-                id: 'ending_cage',
-                name: 'Cage Ending CG',
-                description: 'The classroom that never releases you.'
-            },
-            ending_ghost: {
-                id: 'ending_ghost',
-                name: 'Ghost Ending CG',
-                description: 'A trace left behind in the empty room.'
-            },
-            ending_forget: {
-                id: 'ending_forget',
-                name: 'Forget Ending CG',
-                description: 'An empty seat in ordinary days.'
-            },
-            ending_resist: {
-                id: 'ending_resist',
-                name: 'Resist Ending CG',
-                description: 'Leaving through the emergency exit with Eunsu and the records.'
-            },
-            ending_complicit: {
-                id: 'ending_complicit',
-                name: 'Complicit Ending CG',
-                description: 'The signed page that makes you part of the system.'
-            },
-            ending_cage_sea: {
-                id: 'ending_cage_sea',
-                name: 'Cage Ending: Sea',
-                description: 'The same lunchbox, the same student council room.'
-            }
-        };
-
-        this._cgItems = Object.entries(CONFIG.BACKGROUNDS || {})
-            .map(([key, file]) => [key === 'closeup_m13_ampoule' ? 'closeup_m13_ampoule_tray' : key, file])
-            .filter(([backgroundKey, file]) => String(file).includes('/images/cg/')
-                || ['closeup_m13_ampoule_tray', 'closeup_rooftop_etching'].includes(backgroundKey))
-            .map(([backgroundKey, file]) => ({
-                id: map[backgroundKey]?.id || backgroundKey,
-                backgroundKey,
-                file,
-                name: localized[backgroundKey]?.[0] || map[backgroundKey]?.name || this._titleFromId(backgroundKey),
-                description: localized[backgroundKey]?.[1] || map[backgroundKey]?.description || ''
-            }));
-
-        return this._cgItems;
-    }
-
-    _getMusicItems() {
-        if (this._musicItems && this._musicLang === this._lang()) return this._musicItems;
-        this._musicLang = this._lang();
-        const titles = GallerySystem.BGM_TITLES_LOCALIZED[this._musicLang] || GallerySystem.BGM_TITLES_LOCALIZED.en;
-
-        const seen = new Map();
-        const add = (file) => {
-            if (!file || typeof file !== 'string') return;
-            const id = this._bgmId(file);
-            if (seen.has(id)) return;
-            seen.set(id, {
-                id,
-                file,
-                name: titles[id] || GallerySystem.BGM_TITLES[id] || this._titleFromId(id)
-            });
-        };
-
-        for (const day of Object.values(window.SCENARIO || {})) {
-            for (const scene of Object.values(day || {})) {
-                if (typeof scene.bgm === 'string') add(scene.bgm);
-                if (scene.bgm_fade?.to) add(scene.bgm_fade.to);
-            }
-        }
-
-        this._musicItems = [...seen.values()];
-        return this._musicItems;
-    }
-
-    _getCharacterItems() {
-        if (this._characterItems && this._characterLang === this._lang()) return this._characterItems;
-        this._characterLang = this._lang();
-        const titles = GallerySystem.EXPRESSION_TITLES_LOCALIZED[this._characterLang] || GallerySystem.EXPRESSION_TITLES_LOCALIZED.en;
-        const aliases = { startled: 'shaking', strained_smile: 'broken_smile', casual: 'normal',
-            casual_pain: 'pain', casual_relief: 'relief', injured_determined: 'determined' };
-
-        this._characterItems = Object.entries(CONFIG.EXPRESSIONS || {})
-            .filter(([charId, expressions]) => charId !== 'classmate' && expressions && Object.values(expressions).some(Boolean))
-            .map(([charId, expressions]) => {
-                const seenPaths = new Set();
-                const items = [];
-                for (const [exprId, file] of Object.entries(expressions)) {
-                    if (!file) continue;
-                    const normalized = this._normalizeAsset(file);
-                    if (seenPaths.has(normalized)) continue;
-                    seenPaths.add(normalized);
-                    items.push({
-                        id: exprId,
-                        name: titles[exprId] || titles[aliases[exprId]] || GallerySystem.EXPRESSION_TITLES[exprId] || this._titleFromId(exprId),
-                        file
-                    });
-                }
-
-                return {
-                    id: charId,
-                    name: charId,
-                    cover: expressions.normal || items[0]?.file,
-                    expressions: items
-                };
-            });
-
-        return this._characterItems;
-    }
-
-    _parseCharacterExpression(keyOrPath) {
-        if (!keyOrPath || typeof keyOrPath !== 'string') return null;
-        let name = keyOrPath;
-
-        if (keyOrPath.includes('/')) {
-            name = keyOrPath.split(/[?#]/)[0].split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
-        }
-
-        const idx = name.indexOf('_');
-        if (idx <= 0) return null;
-
-        return {
-            charId: name.substring(0, idx),
-            expression: name.substring(idx + 1)
-        };
-    }
-
-    _bgmId(filename) {
-        return String(filename).split('/').pop().replace(/\.[^.]+$/, '');
-    }
-
-    _grid() {
-        return document.getElementById('gallery-grid');
-    }
-
-    _updateProgress(unlocked, total) {
-        const progress = document.getElementById('gallery-progress');
-        if (progress) progress.textContent = `${unlocked} / ${total}`;
-    }
-
-    _getEndingIcon(ending) {
-        const icons = {
-            'TRUE END': '\u2605',
-            'RESIST END': '\u2694',
-            'FORGET END': '\u29BE',
-            'CAGE END': '\u25A3',
-            'GHOST END': '\u2620',
-            'ESCAPE END': '\u2708',
-            'COMPLICIT END': '\u2622'
-        };
-        return icons[ending] || '\u2726';
-    }
-
-    _labels() {
-        const lang = this._lang();
-        return GallerySystem.LABELS[lang] || GallerySystem.LABELS.en;
-    }
-
-    _lang() {
-        return this.game?.i18n?.currentLang || 'ko';
-    }
-
-    _titleFromId(id) {
-        return String(id || '')
-            .replace(/\.[^.]+$/, '')
-            .replace(/_/g, ' ')
-            .replace(/\b\w/g, ch => ch.toUpperCase());
-    }
-
-    _characterName(charId) {
-        return this.game?.i18n?.getCharacterName?.(charId) || this._titleFromId(charId);
-    }
-
-    _normalizeAsset(value) {
-        return String(value || '')
-            .replace(/\\/g, '/')
-            .replace(/^\.\//, '')
-            .replace(/^\.\.\//, '')
-            .split(/[?#]/)[0]
-            .toLowerCase();
-    }
-
-    _asset(src) {
-        if (!src) return '';
-        const normalized = String(src).replace(/^\.\//, '');
-        if (/^(?:https?:|data:|blob:|\/)/.test(normalized) || normalized.startsWith('../')) {
-            return normalized;
-        }
-        return (window.__NEVERGRAD_LANG__ ? '../' : '') + normalized;
-    }
-
-    _versioned(src) {
-        const asset = this._asset(src);
-        if (!asset || /[?#]/.test(asset) || /^(?:data:|blob:)/.test(asset)) return asset;
-        const version = CONFIG.VERSION || '1';
-        return `${asset}?v=${encodeURIComponent(version)}`;
-    }
-
-    _fallbackImage(src) {
-        if (!src || typeof src !== 'string') return '';
-        const normalized = src.replace(/\\/g, '/');
-        const match = normalized.match(/^([^?#]+)([?#].*)?$/);
-        const pathPart = match ? match[1] : normalized;
-        const suffix = match?.[2] || '';
-
-        if (!/^(?:\.\.\/)?assets\/images\/(?:background|characters|cg|evidence)\/.+\.webp$/i.test(pathPart)) {
-            return '';
-        }
-
-        return `${pathPart.replace(/\.webp$/i, '.png')}${suffix}`;
-    }
-
-    _imageTag(src, alt) {
-        const primary = this._versioned(src);
-        const fallback = this._versioned(this._fallbackImage(src));
-        const fallbackAttr = fallback && fallback !== primary
-            ? ` onerror="this.onerror=null;this.src='${this._escape(fallback)}'"`
-            : '';
-        return `<img src="${this._escape(primary)}"${fallbackAttr} alt="${this._escape(alt)}">`;
-    }
-
-    _escape(value) {
-        return String(value ?? '')
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#39;');
-    }
-}
+        for (const [lang, label] of Object.entries(replays)) GallerySystem.LABELS[lang].replay = label;
+    })();

@@ -41,8 +41,8 @@ class GlitchSystem {
      * 선택지가 0.1초간 다른 텍스트로 깜빡이는 연출
      * 예: [고백한다] → 0.1초 → [도망쳐] → [고맙다고 한다]
      */
-    flickerChoice(buttonEl, hiddenText, finalText, options = {}) {
-        const duration = Math.max(0, options.duration ?? 100);
+    flickerChoice(buttonEl, hiddenText, finalText, options = {}) { var __oc0;
+        const duration = Math.max(0, (((__oc0 = options.duration) !== null && __oc0 !== void 0 ? __oc0 : 100)));
         const original = buttonEl.textContent;
         const originalColor = buttonEl.style.color;
         buttonEl.textContent = hiddenText;
@@ -106,9 +106,9 @@ class GlitchSystem {
     /**
      * 화면에 짧은 노이즈/스캔라인 효과
      */
-    screenNoise(duration = 300) {
+    screenNoise(duration = 300) { var __oc1, __oc2;
         if (!this.overlay) return;
-        const animated = window.NevergradMotion?.screenNoise?.(this.overlay, duration, false);
+        const animated = (((__oc2 = (__oc1 = window.NevergradMotion) === null || __oc1 === void 0 ? void 0 : __oc1.screenNoise) === null || __oc2 === void 0 ? void 0 : __oc2.call(__oc1, this.overlay, duration, false)));
         if (animated) return animated;
 
         this.overlay.classList.remove('hidden');
@@ -185,7 +185,7 @@ class GlitchSystem {
         }, duration);
     }
 
-    memoryFlash(flash) {
+    memoryFlash(flash) { var __oc3, __oc4;
         const config = typeof flash === 'string' ? { image: flash } : (flash || {});
         const image = config.image || config.background;
         if (!image) return;
@@ -207,7 +207,7 @@ class GlitchSystem {
         }
 
         gameScreen.appendChild(overlay);
-        if (window.NevergradMotion?.memoryFlash?.(overlay, duration)) {
+        if ((((__oc4 = (__oc3 = window.NevergradMotion) === null || __oc3 === void 0 ? void 0 : __oc3.memoryFlash) === null || __oc4 === void 0 ? void 0 : __oc4.call(__oc3, overlay, duration)))) {
             return;
         }
         requestAnimationFrame(() => overlay.classList.add('visible'));
@@ -237,21 +237,21 @@ class GlitchSystem {
     /**
      * 전체 화면 강한 글리치 (흔들림 + 색수차 + 노이즈)
      */
-    async heavyGlitch(duration = 1000) {
+    async heavyGlitch(duration = 1000) { var __oc5, __oc6, __oc7;
         if (!this.overlay) return;
         const gameScreen = document.getElementById('game-screen');
-        const animated = window.NevergradMotion?.screenNoise?.(this.overlay, duration, true, gameScreen);
+        const animated = (((__oc6 = (__oc5 = window.NevergradMotion) === null || __oc5 === void 0 ? void 0 : __oc5.screenNoise) === null || __oc6 === void 0 ? void 0 : __oc6.call(__oc5, this.overlay, duration, true, gameScreen)));
         if (animated) return animated;
         this.overlay.classList.remove('hidden');
         this.overlay.classList.add('heavy-glitch');
 
-        document.getElementById('game-screen')?.classList.add('screen-shake');
+        (((__oc7 = document.getElementById('game-screen')) === null || __oc7 === void 0 ? void 0 : __oc7.classList.add('screen-shake')));
 
         return new Promise(resolve => {
-            this._later(() => {
+            this._later(() => { var __oc8;
                 this.overlay.classList.add('hidden');
                 this.overlay.classList.remove('heavy-glitch');
-                document.getElementById('game-screen')?.classList.remove('screen-shake');
+                (((__oc8 = document.getElementById('game-screen')) === null || __oc8 === void 0 ? void 0 : __oc8.classList.remove('screen-shake')));
                 resolve();
             }, duration);
         });
@@ -260,14 +260,14 @@ class GlitchSystem {
     /**
      * 대화창 밖에서 유령 텍스트가 떠오르는 연출
      */
-    ghostText(text, x, y, duration = 2000) {
+    ghostText(text, x, y, duration = 2000) { var __oc9;
         const ghost = document.createElement('div');
         ghost.className = 'ghost-text';
         ghost.textContent = text;
         ghost.style.left = `${x}%`;
         ghost.style.top = `${y}%`;
 
-        document.getElementById('game-screen')?.appendChild(ghost);
+        (((__oc9 = document.getElementById('game-screen')) === null || __oc9 === void 0 ? void 0 : __oc9.appendChild(ghost)));
 
         this._later(() => ghost.remove(), duration);
     }
@@ -276,12 +276,12 @@ class GlitchSystem {
      * Day 1~3 거울 상시 김 서림 (SCENARIO.md 5432)
      * 거울 씬 진입 시 호출, 씬 변경 시 자동 제거
      */
-    showMirrorFog() {
+    showMirrorFog() { var __oc10;
         if (this._mirrorFogEl) return;
         const el = document.createElement('div');
         el.id = 'mirror-fog-overlay';
         el.className = 'mirror-fog-overlay';
-        document.getElementById('game-screen')?.appendChild(el);
+        (((__oc10 = document.getElementById('game-screen')) === null || __oc10 === void 0 ? void 0 : __oc10.appendChild(el)));
         // next tick에 active 추가 (transition 트리거)
         requestAnimationFrame(() => el.classList.add('active'));
         this._mirrorFogEl = el;
@@ -299,8 +299,8 @@ class GlitchSystem {
      * 선택지가 강제로 하나만 남는 연출
      * 다른 선택지들이 하나씩 사라지거나 같은 텍스트로 바뀜
      */
-    async forceChoice(buttons, forcedIndex) {
-        const forcedText = buttons[forcedIndex]?.textContent;
+    async forceChoice(buttons, forcedIndex) { var __oc11;
+        const forcedText = (((__oc11 = buttons[forcedIndex]) === null || __oc11 === void 0 ? void 0 : __oc11.textContent));
         if (!forcedText) return;
 
         for (let i = 0; i < buttons.length; i++) {
@@ -527,7 +527,7 @@ class GlitchSystem {
             if (document.hidden) {
                 // 탭을 떠날 때 — 메시지 순환
                 const msg = this._tabMessages[this._tabMsgIndex % this._tabMessages.length];
-                const name = state?.playerName || '';
+                const name = ((state === null || state === void 0 ? void 0 : state.playerName)) || '';
                 document.title = msg.replace('{name}', name);
                 this._tabMsgIndex++;
             } else {
@@ -543,7 +543,7 @@ class GlitchSystem {
     /**
      * 탭 기믹 해제 (엔딩 도달 시)
      */
-    stopTabGimmick() {
+    stopTabGimmick() { var __oc12, __oc13;
         this._tabGimmickActive = false;
         document.title = this._originalTitle || this._pickLocalized({
             ko: '졸업하지 못한 교실',
@@ -555,25 +555,25 @@ class GlitchSystem {
             pt: 'A Sala de Aula Sem Formatura',
             zh: '无法毕业的教室'
         });
-        this.tabLifecycle?.dispose?.();
+        (((__oc13 = (__oc12 = this.tabLifecycle) === null || __oc12 === void 0 ? void 0 : __oc12.dispose) === null || __oc13 === void 0 ? void 0 : __oc13.call(__oc12)));
         this.tabLifecycle = this.lifecycle.createScope('tab');
         this._onVisibilityChange = null;
     }
 
-    resetSession() {
-        this.effectLifecycle?.dispose?.();
+    resetSession() { var __oc14, __oc15, __oc16, __oc17;
+        (((__oc15 = (__oc14 = this.effectLifecycle) === null || __oc14 === void 0 ? void 0 : __oc14.dispose) === null || __oc15 === void 0 ? void 0 : __oc15.call(__oc14)));
         this.effectLifecycle = this.lifecycle.createScope('effects');
         this.stopTabGimmick();
-        this.overlay?.classList.add('hidden');
-        this.overlay?.classList.remove('noise');
+        (((__oc16 = this.overlay) === null || __oc16 === void 0 ? void 0 : __oc16.classList.add('hidden')));
+        (((__oc17 = this.overlay) === null || __oc17 === void 0 ? void 0 : __oc17.classList.remove('noise')));
         document.querySelectorAll('.glitch-ghost, .fake-permission-modal, .screen-noise-overlay')
             .forEach(element => element.remove());
         this.active = false;
     }
 
-    dispose() {
+    dispose() { var __oc18, __oc19;
         this.resetSession();
-        this.lifecycle?.dispose?.();
+        (((__oc19 = (__oc18 = this.lifecycle) === null || __oc18 === void 0 ? void 0 : __oc18.dispose) === null || __oc19 === void 0 ? void 0 : __oc19.call(__oc18)));
     }
 
     /**

@@ -9,7 +9,7 @@
         if (proto.peelStatLabel && proto.peelStatLabel.__nevergradPeelDramaV2) return true;
         if (typeof proto.peelStatLabel !== 'function') return false;
 
-        proto.peelStatLabel = async function peelStatLabelDrama(revealDuration = 1600) {
+        proto.peelStatLabel = async function peelStatLabelDrama(revealDuration = 1600) { var __oc0, __oc1, __oc2, __oc3, __oc4, __oc5, __oc6, __oc7, __oc8, __oc9, __oc10, __oc11, __oc12, __oc13, __oc14, __oc15;
             const statEl = document.getElementById('stat-display');
             if (!statEl) return;
 
@@ -19,16 +19,16 @@
 
             statEl.classList.remove('hidden', 'stat-hidden');
             if (!statEl.textContent.trim()) {
-                const last = this.engine?.state?._lastCharLabel;
-                const aff = this.engine?.state ? this.engine.state.getDisplayAffinity?.('sea') : 0;
-                const romance = this._localizedRomanceLabel?.() || '호감도';
-                statEl.textContent = last?.text || `♡ ${romance} ${aff ?? ''}`.trim();
+                const last = (((__oc1 = (__oc0 = this.engine) === null || __oc0 === void 0 ? void 0 : __oc0.state) === null || __oc1 === void 0 ? void 0 : __oc1._lastCharLabel));
+                const aff = (((__oc2 = this.engine) === null || __oc2 === void 0 ? void 0 : __oc2.state)) ? (((__oc4 = (__oc3 = this.engine.state).getDisplayAffinity) === null || __oc4 === void 0 ? void 0 : __oc4.call(__oc3, 'sea'))) : 0;
+                const romance = (((__oc5 = this._localizedRomanceLabel) === null || __oc5 === void 0 ? void 0 : __oc5.call(this))) || '호감도';
+                statEl.textContent = ((last === null || last === void 0 ? void 0 : last.text)) || `♡ ${romance} ${((aff !== null && aff !== void 0 ? aff : ''))}`.trim();
             }
 
             const original = (statEl.textContent || '').trim();
-            const danger = this._localizedDangerLabel?.() || '위험도';
+            const danger = (((__oc6 = this._localizedDangerLabel) === null || __oc6 === void 0 ? void 0 : __oc6.call(this))) || '위험도';
             const revealed = statEl.dataset.thrillerlabel
-                || `⚠ ${danger} ${original.match(/\d+/)?.[0] || ''}`.trim();
+                || `⚠ ${danger} ${(((__oc7 = original.match(/\d+/)) === null || __oc7 === void 0 ? void 0 : __oc7[0])) || ''}`.trim();
 
             // 1) Screen shake (existing hooks) + heavy VFX + noise burst + darken
             if (gameScreen) {
@@ -39,7 +39,7 @@
                     'stat-genre-flip',
                     'stat-genre-noise-burst'
                 );
-                this.overlay?.classList?.add('noise', 'rgb-split', 'scanlines');
+                (((__oc9 = (__oc8 = this.overlay) === null || __oc8 === void 0 ? void 0 : __oc8.classList) === null || __oc9 === void 0 ? void 0 : __oc9.add('noise', 'rgb-split', 'scanlines')));
             }
 
             try {
@@ -49,7 +49,7 @@
             } catch (_) { /* optional */ }
 
             try {
-                this.engine?.audio?.playSFX?.('sfx_static.mp3', { volume: 0.72 });
+                (((__oc12 = (__oc11 = (__oc10 = this.engine) === null || __oc10 === void 0 ? void 0 : __oc10.audio) === null || __oc11 === void 0 ? void 0 : __oc11.playSFX) === null || __oc12 === void 0 ? void 0 : __oc12.call(__oc11, 'sfx_static.mp3', { volume: 0.72 })));
             } catch (_) { /* optional */ }
 
             // 2) Label peel with RGB tear / glitch flicker on name-adjacent affinity
@@ -96,7 +96,7 @@
                     'stat-genre-noise-burst',
                     'stat-genre-tear'
                 );
-                this.overlay?.classList?.remove('noise', 'rgb-split', 'scanlines');
+                (((__oc14 = (__oc13 = this.overlay) === null || __oc13 === void 0 ? void 0 : __oc13.classList) === null || __oc14 === void 0 ? void 0 : __oc14.remove('noise', 'rgb-split', 'scanlines')));
                 await sleep(220);
                 gameScreen.classList.remove('stat-genre-flip');
                 gameScreen.classList.add('stat-genre-settled');
@@ -105,7 +105,7 @@
             statEl.textContent = revealed;
             statEl.classList.remove('stat-peeling');
             statEl.classList.add('stat-revealed');
-            if (this.engine?.state) {
+            if ((((__oc15 = this.engine) === null || __oc15 === void 0 ? void 0 : __oc15.state))) {
                 this.engine.state._lastCharLabel = { text: revealed };
             }
         };

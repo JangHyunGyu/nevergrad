@@ -15,11 +15,11 @@ class FaviconManager {
         this.apply(variant);
     }
 
-    _pickVariant({ saveMeta, state }) {
-        if (saveMeta?.endingsSeen?.includes('COMPLICIT')) return 'thirteen';
-        if ((saveMeta?.playCount || 0) > 0) return 'red';
-        const THRILLER = (typeof CONFIG !== 'undefined' && CONFIG?.STAT_MODES?.THRILLER) || 'thriller';
-        if (state?.mode === THRILLER) return 'cracked';
+    _pickVariant({ saveMeta, state }) { var __oc0, __oc1;
+        if ((((__oc0 = saveMeta === null || saveMeta === void 0 ? void 0 : saveMeta.endingsSeen) === null || __oc0 === void 0 ? void 0 : __oc0.includes('COMPLICIT')))) return 'thirteen';
+        if ((((saveMeta === null || saveMeta === void 0 ? void 0 : saveMeta.playCount)) || 0) > 0) return 'red';
+        const THRILLER = (typeof CONFIG !== 'undefined' && (((__oc1 = CONFIG === null || CONFIG === void 0 ? void 0 : CONFIG.STAT_MODES) === null || __oc1 === void 0 ? void 0 : __oc1.THRILLER))) || 'thriller';
+        if (((state === null || state === void 0 ? void 0 : state.mode)) === THRILLER) return 'cracked';
         return 'default';
     }
 

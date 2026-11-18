@@ -10,10 +10,10 @@
             GameEngine.prototype._loadScene.__nevergradChoiceClearV1) return true;
 
         const orig = GameEngine.prototype._loadScene;
-        GameEngine.prototype._loadScene = function (sceneId) {
+        GameEngine.prototype._loadScene = function (sceneId) { var __oc0, __oc1, __oc2, __oc3;
             try {
-                this.choices?.hide?.();
-                this.choiceAdvanced?.reset?.();
+                (((__oc1 = (__oc0 = this.choices) === null || __oc0 === void 0 ? void 0 : __oc0.hide) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0)));
+                (((__oc3 = (__oc2 = this.choiceAdvanced) === null || __oc2 === void 0 ? void 0 : __oc2.reset) === null || __oc3 === void 0 ? void 0 : __oc3.call(__oc2)));
                 const panel = document.getElementById('choice-panel');
                 if (panel) {
                     panel.classList.add('hidden');

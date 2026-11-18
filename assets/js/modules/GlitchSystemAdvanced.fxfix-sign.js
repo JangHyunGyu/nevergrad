@@ -197,7 +197,7 @@
     // Low B: completing the pad must proceed into the intended next beat.
     // Keep requireSignature click-lock until done; then advance once and briefly
     // re-lock so a trailing pointer-up/ghost click cannot double-advance.
-    GlitchSystemAdvanced.prototype.startSignaturePad = function (opts = {}) {
+    GlitchSystemAdvanced.prototype.startSignaturePad = function (opts = {}) { var __oc0, __oc1;
         if (document.querySelector('.signature-pad-container')) return;
         const engine = this.engine;
         if (opts.requireSignature && engine) {
@@ -207,10 +207,10 @@
             }
             engine._clickLocked = true;
         }
-        engine?.metaHorror?.setScreenshotContext?.('complicit_sign');
-        this._showSignaturePad(() => {
-            engine?.deviceGimmick?.vibrate?.('complicit_sign');
-            engine?._vibrateVisual?.('complicit_sign');
+        (((__oc1 = (__oc0 = engine === null || engine === void 0 ? void 0 : engine.metaHorror) === null || __oc0 === void 0 ? void 0 : __oc0.setScreenshotContext) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0, 'complicit_sign')));
+        this._showSignaturePad(() => { var __oc2, __oc3, __oc4, __oc5;
+            (((__oc3 = (__oc2 = engine === null || engine === void 0 ? void 0 : engine.deviceGimmick) === null || __oc2 === void 0 ? void 0 : __oc2.vibrate) === null || __oc3 === void 0 ? void 0 : __oc3.call(__oc2, 'complicit_sign')));
+            (((__oc4 = engine === null || engine === void 0 ? void 0 : engine._vibrateVisual) === null || __oc4 === void 0 ? void 0 : __oc4.call(engine, 'complicit_sign')));
             if (!engine) return;
             if (engine._clickLockTimer) {
                 clearTimeout(engine._clickLockTimer);
@@ -218,7 +218,7 @@
             }
             engine._clickLocked = true;
             try {
-                engine._advanceScene?.();
+                (((__oc5 = engine._advanceScene) === null || __oc5 === void 0 ? void 0 : __oc5.call(engine)));
             } catch (_) { /* non-fatal */ }
             engine._clickLockTimer = setTimeout(() => {
                 engine._clickLocked = false;

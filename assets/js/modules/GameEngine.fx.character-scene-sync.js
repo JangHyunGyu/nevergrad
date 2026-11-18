@@ -9,7 +9,7 @@
             GameEngine.prototype._loadScene.__nevergradCharSceneSyncV1) return true;
 
         const orig = GameEngine.prototype._loadScene;
-        GameEngine.prototype._loadScene = function (sceneId) {
+        GameEngine.prototype._loadScene = function (sceneId) { var __oc0, __oc1, __oc2, __oc3, __oc4, __oc5;
             const prevBg = this._currentBackgroundKey || null;
             const result = orig.call(this, sceneId);
             try {
@@ -24,22 +24,22 @@
                     || Object.prototype.hasOwnProperty.call(scene, 'characters');
 
                 if (bgChanged && !hasChar) {
-                    this.renderer.clearCharacters?.({ immediate: true });
+                    (((__oc1 = (__oc0 = this.renderer).clearCharacters) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0, { immediate: true })));
                 }
 
                 // Singular character: wipe leftover left/right slots
                 if (scene.character && !scene.characters) {
-                    this.renderer.clearCharacterSlot?.('left', { immediate: bgChanged });
-                    this.renderer.clearCharacterSlot?.('right', { immediate: bgChanged });
+                    (((__oc3 = (__oc2 = this.renderer).clearCharacterSlot) === null || __oc3 === void 0 ? void 0 : __oc3.call(__oc2, 'left', { immediate: bgChanged })));
+                    (((__oc5 = (__oc4 = this.renderer).clearCharacterSlot) === null || __oc5 === void 0 ? void 0 : __oc5.call(__oc4, 'right', { immediate: bgChanged })));
                 }
 
                 // Multi cast: wipe positions not listed
                 if (scene.characters && typeof scene.characters === 'object') {
                     const desired = new Set(Object.keys(scene.characters).filter((k) => scene.characters[k]));
                     if (scene.character) desired.add('center');
-                    ['left', 'center', 'right'].forEach((pos) => {
+                    ['left', 'center', 'right'].forEach((pos) => { var __oc6, __oc7;
                         if (!desired.has(pos)) {
-                            this.renderer.clearCharacterSlot?.(pos, { immediate: bgChanged });
+                            (((__oc7 = (__oc6 = this.renderer).clearCharacterSlot) === null || __oc7 === void 0 ? void 0 : __oc7.call(__oc6, pos, { immediate: bgChanged })));
                         }
                     });
                 }

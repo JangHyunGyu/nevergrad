@@ -277,7 +277,7 @@ const CONFIG = {
     // ===== 게임 기본 설정 =====
     TITLE: "졸업하지 못한 교실",
     SUBTITLE: "5일의 기록",
-    VERSION: "0.1.2",
+    VERSION: "0.1.3",
 
     // Save migration for the retired duplicate Day 5 confrontation.
     SCENE_ALIASES: {
@@ -379,11 +379,12 @@ const CONFIG = {
             angry: "assets/images/characters/eunsu_angry.webp",
             shy: "assets/images/characters/eunsu_shy.webp",
             close: "assets/images/characters/eunsu_close.webp",
-            writing: "assets/images/characters/eunsu_normal.webp",    // alias: 서류 작성 중
+            writing: "assets/images/characters/eunsu_writing.webp",
             pa: "assets/images/characters/eunsu_normal.webp",         // alias: PA 방송 (음성만)
             shaking: "assets/images/characters/eunsu_shaking_v2.webp",   // 떨리는 상태
             shocked: "assets/images/characters/eunsu_cold.webp",      // alias: 충격받은 상태
-            crying: "assets/images/characters/eunsu_crying_v2.webp"      // 울먹이는 상태
+            crying: "assets/images/characters/eunsu_crying_v2.webp",      // 울먹이는 상태
+            syringe: "assets/images/characters/eunsu_syringe.webp"
         },
         riin: {
             normal: "assets/images/characters/riin_normal.webp",
@@ -402,7 +403,9 @@ const CONFIG = {
             casual_pain: "assets/images/characters/riin_casual_pain.webp",
             casual_relief: "assets/images/characters/riin_casual_relief.webp",
             pain: "assets/images/characters/riin_pain_v2.webp",          // 고통/죄책감
-            relief: "assets/images/characters/riin_relief_v2.webp"       // 안도
+            relief: "assets/images/characters/riin_relief_v2.webp",       // 안도
+            syringe: "assets/images/characters/riin_syringe.webp",
+            casual_syringe: "assets/images/characters/riin_casual_syringe.webp"
         },
         sea: {
             normal: "assets/images/characters/sea_normal.webp",
@@ -432,7 +435,8 @@ const CONFIG = {
             desperate: "assets/images/characters/yuna_desperate.webp",
             injured_determined: "assets/images/characters/yuna_injured_determined.webp",
             cautious: "assets/images/characters/yuna_scared.webp",    // alias: 경계하는 상태
-            worried: "assets/images/characters/yuna_scared.webp"      // alias: 걱정하는 상태
+            worried: "assets/images/characters/yuna_scared.webp",      // alias: 걱정하는 상태
+            bound: "assets/images/characters/yuna_bound.webp"
         },
         seolhwa: {
             normal: "assets/images/characters/seolhwa_normal.webp",
@@ -442,7 +446,8 @@ const CONFIG = {
             fading: "assets/images/characters/seolhwa_fade.webp",     // alias: 사라지는 중
             ghost: "assets/images/characters/seolhwa_ghost.webp",
             quiet: "assets/images/characters/seolhwa_quiet.webp",
-            warning: "assets/images/characters/seolhwa_warning.webp"
+            warning: "assets/images/characters/seolhwa_warning.webp",
+            wet: "assets/images/characters/seolhwa_wet.webp"
         },
         classmate: {
             default: null  // 급우: 전용 이미지 없음, 엔진에서 null 처리
@@ -545,12 +550,12 @@ const CONFIG = {
         news_article: "assets/images/background/news_article.webp",
         dawn_road: "assets/images/background/dawn_road.webp",
         new_place: "assets/images/background/new_place.webp",
-        lab_documents: "assets/images/evidence/day5_lab_documents.png",
+        lab_documents: "assets/images/evidence/day5_lab_documents.webp",
         ending_true: "assets/images/cg/ending_true_new_classroom.webp",
-        ending_escape: "assets/images/cg/ending_escape_rain.png",
-        ending_cage: "assets/images/cg/ending_cage_classroom.png",
-        ending_ghost: "assets/images/cg/ending_ghost_classroom.png",
-        ending_forget: "assets/images/cg/ending_forget_empty_seat.png",
+        ending_escape: "assets/images/cg/ending_escape_rain.webp",
+        ending_cage: "assets/images/cg/ending_cage_classroom.webp",
+        ending_ghost: "assets/images/cg/ending_ghost_classroom.webp",
+        ending_forget: "assets/images/cg/ending_forget_empty_seat.webp",
         ending_resist: "assets/images/cg/ending_resist_records.webp",
         ending_complicit: "assets/images/cg/ending_complicit_signature.webp",
         ending_cage_sea: "assets/images/cg/ending_cage_sea_lunch.webp",

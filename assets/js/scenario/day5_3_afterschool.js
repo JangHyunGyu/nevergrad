@@ -118,7 +118,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_cage_5"
     },
     "day5_after_cage_5": {
-        character: "eunsu_gentle",
+        character: "eunsu_obsessed",
         unskippable: true,
         next: "day5_after_cage_6"
     },
@@ -317,7 +317,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_6"
     },
     "day5_after_confront_6": {
-        character: null,
+        character: "eunsu_syringe",
         unskippable: true,
         next: "day5_after_confront_7"
     },
@@ -372,17 +372,17 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_confront_17"
     },
     "day5_after_confront_17": {
-        character: "eunsu_obsessed",
+        character: "eunsu_syringe",
         unskippable: true,
         next: "day5_after_confront_18"
     },
     "day5_after_confront_18": {
-        character: "eunsu_obsessed",
+        character: "eunsu_syringe",
         unskippable: true,
         next: "day5_after_confront_19"
     },
     "day5_after_confront_19": {
-        character: "eunsu_crying",
+        character: "eunsu_syringe",
         unskippable: true,
         next: "day5_after_confront_20"
     },
@@ -576,7 +576,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_forget_6"
     },
     "day5_after_forget_6": {
-        character: "eunsu_shaking",
+        character: "eunsu_syringe",
         unskippable: true,
         next: "day5_after_forget_7"
     },
@@ -750,7 +750,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_2"
     },
     "day5_after_ghost_2": {
-        character: "eunsu_obsessed",
+        character: "eunsu_syringe",
         unskippable: true,
         setFlags: ["route_ghost", "timer_expired"],
         next: "day5_after_ghost_3"

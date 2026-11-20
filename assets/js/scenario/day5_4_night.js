@@ -257,17 +257,17 @@ Object.assign(SCENARIO[5], {
     "day5_ending_true_1": {
         background: "corridor_emergency",
         bgm: "ending_hope.mp3",
-        character: "eunsu_shaking",
+        character: "eunsu_syringe",
         unskippable: true,
         next: "day5_ending_true_2"
     },
     "day5_ending_true_2": {
-        character: "eunsu_shaking",
+        character: "eunsu_syringe",
         unskippable: true,
         next: "day5_ending_true_3"
     },
     "day5_ending_true_3": {
-        character: "eunsu_shaking",
+        character: "eunsu_syringe",
         unskippable: true,
         next: "day5_ending_true_4"
     },

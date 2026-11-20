@@ -1238,6 +1238,12 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
             return this._buildLabDocumentMedia(sceneId, resolvedText);
         }
 
+        const safetyAppScene = scene.background === 'closeup_safety_app'
+            || /^day4_(morning_commute_[2-6]|night_save_glitch_[2-5]|night_truth_sea_[1-4])$/.test(sceneId);
+        if (safetyAppScene && !scene.character) {
+            return this._buildSafetyAppMedia(sceneId, resolvedText, extraVars);
+        }
+
         return null;
     }
 
@@ -1253,7 +1259,13 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                 reportTitle: '프로젝트 네버그라드 최종 보고서', sideLabel: '피험자 신원 자료',
                 note: '관찰 기록과 투약 기록을 대조 중', footer: '스캔 판독 신뢰도',
                 cycle: '주기', subject1: '김도진', subject7: '김태호', done: '처리 완료',
-                anomaly: '이설화 접촉 / 탈출 공모', active: '진행 중'
+                anomaly: '이설화 접촉 / 탈출 공모', active: '진행 중',
+                saAppTitle: '한울 스마트 캠퍼스 · 안전 앱', saLogTitle: '알림 기록',
+                saAttendanceCheck: '등교 상태 확인', saNoRecord: '해당 시각 기록 없음',
+                saHiddenProfile: '숨김 관리자 프로필', saDeletePrompt: '앱을 삭제하시겠습니까?',
+                saPermissionDenied: '권한이 없습니다.', saAdminPanel: '관리자 패널 · 열람 전용',
+                saSeaAttachment: '스캔 첨부 · 한세아 메모', saEditHistory: '취향 항목 · 수정 12회',
+                saUnknownMark: '[모름 / 공란]', saStatusActive: '프로필 활성'
             },
             en: {
                 newsSource: 'NEVERGRAD TIMES', newsMeta: '3 months later · Society', live: 'LIVE',
@@ -1264,7 +1276,13 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                 reportTitle: 'Project Nevergrad Final Report', sideLabel: 'Subject identity package',
                 note: 'Cross-checking observation logs and dosage records', footer: 'Scan confidence',
                 cycle: 'Cycle', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Processed',
-                anomaly: 'Seolhwa contact / escape conspiracy', active: 'Active'
+                anomaly: 'Seolhwa contact / escape conspiracy', active: 'Active',
+                saAppTitle: 'Hanul Smart Campus · Safety App', saLogTitle: 'Notification Log',
+                saAttendanceCheck: 'School attendance status check', saNoRecord: 'No entry at this timestamp',
+                saHiddenProfile: 'Hidden Admin Profile', saDeletePrompt: 'Uninstall this app?',
+                saPermissionDenied: 'Permission denied.', saAdminPanel: 'ADMIN PANEL · READ ONLY',
+                saSeaAttachment: 'Attached Scan · Sea\'s Note', saEditHistory: 'Preference field · 12 edits',
+                saUnknownMark: '[Unknown / Blank]', saStatusActive: 'Profile Active'
             },
             ja: {
                 newsSource: 'NEVERGRAD TIMES', newsMeta: '3か月後 · 社会', live: '速報',
@@ -1275,7 +1293,13 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                 reportTitle: 'プロジェクト・ネバーグラード 最終報告書', sideLabel: '被験者IDパッケージ',
                 note: '観察記録と投薬記録を照合中', footer: 'スキャン信頼度',
                 cycle: '周回', subject1: 'キム・ドジン', subject7: 'キム・テホ', done: '処理完了',
-                anomaly: 'イ・ソルファ接触 / 脱出共謀', active: '進行中'
+                anomaly: 'イ・ソルファ接触 / 脱出共謀', active: '進行中',
+                saAppTitle: 'ハヌル・スマートキャンパス · 安全アプリ', saLogTitle: '通知履歴',
+                saAttendanceCheck: '登校状況確認', saNoRecord: '該当時刻の記録なし',
+                saHiddenProfile: '非表示管理者プロファイル', saDeletePrompt: 'アプリを削除しますか？',
+                saPermissionDenied: '権限がありません。', saAdminPanel: '管理パネル · 閲覧専用',
+                saSeaAttachment: '添付スキャン · セアのメモ', saEditHistory: '好み欄 · 修正12回',
+                saUnknownMark: '[不明 / 空欄]', saStatusActive: 'プロファイル有効'
             },
             es: {
                 newsSource: 'NEVERGRAD TIMES', newsMeta: '3 meses después · Sociedad', live: 'DIRECTO',
@@ -1286,7 +1310,13 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                 reportTitle: 'Proyecto Nevergrad — Informe Final', sideLabel: 'Paquete de identidad del sujeto',
                 note: 'Cotejando registros de observación y dosificación', footer: 'Confianza del escaneo',
                 cycle: 'Ciclo', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Procesado',
-                anomaly: 'Contacto con Seolhwa / plan de fuga', active: 'Activo'
+                anomaly: 'Contacto con Seolhwa / plan de fuga', active: 'Activo',
+                saAppTitle: 'Campus Inteligente Hanul · Seguridad', saLogTitle: 'Historial de notificaciones',
+                saAttendanceCheck: 'Control de asistencia escolar', saNoRecord: 'Sin registro en esa hora',
+                saHiddenProfile: 'Perfil de administrador oculto', saDeletePrompt: '¿Desinstalar esta aplicación?',
+                saPermissionDenied: 'Permiso denegado.', saAdminPanel: 'PANEL ADMIN · SOLO LECTURA',
+                saSeaAttachment: 'Escaneo adjunto · Nota de Sea', saEditHistory: 'Preferencia · 12 ediciones',
+                saUnknownMark: '[No sé / Vacío]', saStatusActive: 'Perfil activo'
             },
             fr: {
                 newsSource: 'NEVERGRAD TIMES', newsMeta: '3 mois plus tard · Société', live: 'DIRECT',
@@ -1297,7 +1327,13 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                 reportTitle: 'Projet Nevergrad — Rapport Final', sideLabel: "Paquet d'identité du sujet",
                 note: "Vérification croisée des observations et des dosages", footer: 'Fiabilité du scan',
                 cycle: 'Cycle', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Traité',
-                anomaly: 'Contact avec Seolhwa / complot de fuite', active: 'Actif'
+                anomaly: 'Contact avec Seolhwa / complot de fuite', active: 'Actif',
+                saAppTitle: 'Campus Intelligent Hanul · Sécurité', saLogTitle: 'Historique des notifications',
+                saAttendanceCheck: 'Contrôle de présence scolaire', saNoRecord: 'Aucune entrée à cette heure',
+                saHiddenProfile: 'Profil administrateur masqué', saDeletePrompt: 'Désinstaller cette application ?',
+                saPermissionDenied: 'Autorisation refusée.', saAdminPanel: 'PANNEAU ADMIN · LECTURE SEULE',
+                saSeaAttachment: 'Scan joint · Note de Sea', saEditHistory: 'Préférence · 12 révisions',
+                saUnknownMark: '[Inconnu / Vide]', saStatusActive: 'Profil actif'
             },
             de: {
                 newsSource: 'NEVERGRAD TIMES', newsMeta: '3 Monate später · Gesellschaft', live: 'LIVE',
@@ -1308,7 +1344,13 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                 reportTitle: 'Projekt Nevergrad — Abschlussbericht', sideLabel: 'Identitätspaket des Subjekts',
                 note: 'Abgleich von Beobachtungs- und Dosierungsprotokollen', footer: 'Scan-Verlässlichkeit',
                 cycle: 'Zyklus', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Abgeschlossen',
-                anomaly: 'Kontakt mit Seolhwa / Fluchtplan', active: 'Aktiv'
+                anomaly: 'Kontakt mit Seolhwa / Fluchtplan', active: 'Aktiv',
+                saAppTitle: 'Hanul Smart Campus · Sicherheits-App', saLogTitle: 'Benachrichtigungsverlauf',
+                saAttendanceCheck: 'Schulanwesenheitsprüfung', saNoRecord: 'Kein Eintrag zu dieser Uhrzeit',
+                saHiddenProfile: 'Verstecktes Admin-Profil', saDeletePrompt: 'App deinstallieren?',
+                saPermissionDenied: 'Berechtigung verweigert.', saAdminPanel: 'ADMIN-PANEL · NUR LESEN',
+                saSeaAttachment: 'Angehängter Scan · Seas Notiz', saEditHistory: 'Präferenzfeld · 12 Änderungen',
+                saUnknownMark: '[Unbekannt / Leer]', saStatusActive: 'Profil aktiv'
             },
             pt: {
                 newsSource: 'NEVERGRAD TIMES', newsMeta: '3 meses depois · Sociedade', live: 'AO VIVO',
@@ -1319,7 +1361,13 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                 reportTitle: 'Projeto Nevergrad — Relatório Final', sideLabel: 'Pacote de identidade do sujeito',
                 note: 'Cruzando registros de observação e dosagem', footer: 'Confiança da varredura',
                 cycle: 'Ciclo', subject1: 'Kim Dojin', subject7: 'Kim Taeho', done: 'Processado',
-                anomaly: 'Contato com Seolhwa / plano de fuga', active: 'Ativo'
+                anomaly: 'Contato com Seolhwa / plano de fuga', active: 'Ativo',
+                saAppTitle: 'Campus Inteligente Hanul · Segurança', saLogTitle: 'Histórico de notificações',
+                saAttendanceCheck: 'Verificação de presença escolar', saNoRecord: 'Sem registro nesse horário',
+                saHiddenProfile: 'Perfil de administrador oculto', saDeletePrompt: 'Desinstalar este aplicativo?',
+                saPermissionDenied: 'Permissão negada.', saAdminPanel: 'PAINEL ADMIN · SOMENTE LEITURA',
+                saSeaAttachment: 'Digitalização anexa · Nota de Sea', saEditHistory: 'Preferência · 12 edições',
+                saUnknownMark: '[Não sei / Vazio]', saStatusActive: 'Perfil ativo'
             },
             zh: {
                 newsSource: 'NEVERGRAD TIMES', newsMeta: '三个月后 · 社会', live: '快讯',
@@ -1330,7 +1378,13 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                 reportTitle: 'Nevergrad 项目最终报告', sideLabel: '受试者身份资料',
                 note: '正在比对观察记录与用药记录', footer: '扫描识别可信度',
                 cycle: '周期', subject1: '金道镇', subject7: '金泰浩', done: '处理完毕',
-                anomaly: '李雪花接触 / 共谋逃脱', active: '进行中'
+                anomaly: '李雪花接触 / 共谋逃脱', active: '进行中',
+                saAppTitle: '韩蔚智慧校园 · 安全应用', saLogTitle: '通知记录',
+                saAttendanceCheck: '到校状态确认', saNoRecord: '该时段无记录',
+                saHiddenProfile: '隐藏管理员配置文件', saDeletePrompt: '确定要卸载此应用吗？',
+                saPermissionDenied: '没有权限。', saAdminPanel: '管理面板 · 仅限查看',
+                saSeaAttachment: '扫描附件 · 世雅的笔记', saEditHistory: '偏好栏位 · 修改 12 次',
+                saUnknownMark: '[未知 / 留空]', saStatusActive: '配置文件已启用'
             }
         };
         return copy[lang] || copy.en;
@@ -1410,6 +1464,85 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                 { cycle: `${copy.cycle} #7`, name: copy.subject7, status: copy.anomaly, tone: 'warning' },
                 { cycle: `${copy.cycle} #13`, name: playerName, status: copy.active, tone: 'active' }
             ]
+        };
+    }
+
+    _buildSafetyAppMedia(sceneId, resolvedText, extraVars) { var __oc163b;
+        const copy = this._mediaLocale();
+        const playerName = (((__oc163b = this.state) === null || __oc163b === void 0 ? void 0 : __oc163b.playerName)) || (extraVars && extraVars.name) || 'Player';
+        const getSceneQuote = (id) => { var __sg;
+            const raw = (((__sg = this.i18n) === null || __sg === void 0 ? void 0 : __sg.get(id)) && __sg.get(id).text) || '';
+            return this._extractOuterQuote(this.i18n.resolve(raw, playerName, extraVars));
+        };
+
+        let variant = 'normal';
+        let alertTitle = copy.saAppTitle;
+        let alertBody = '';
+        let badge = copy.saStatusActive;
+        let statusTone = 'normal';
+        let items = [];
+
+        if (sceneId === 'day4_morning_commute_2') {
+            variant = 'glitch';
+            statusTone = 'danger';
+            badge = 'SUBJECT #01';
+            alertBody = getSceneQuote('day4_morning_commute_2');
+        } else if (sceneId === 'day4_morning_commute_3') {
+            variant = 'normal';
+            alertBody = getSceneQuote('day4_morning_commute_3');
+        } else if (sceneId === 'day4_morning_commute_4') {
+            variant = 'log';
+            alertTitle = copy.saLogTitle;
+            items = [
+                { time: '08:13', label: '---', muted: true },
+                { time: '08:14', label: copy.saAttendanceCheck, muted: false }
+            ];
+        } else if (sceneId === 'day4_morning_commute_5') {
+            variant = 'admin-badge';
+            statusTone = 'warning';
+            badge = copy.saHiddenProfile;
+            alertBody = copy.saStatusActive;
+        } else if (sceneId === 'day4_morning_commute_6') {
+            variant = 'delete-denied';
+            statusTone = 'danger';
+            badge = copy.saHiddenProfile;
+            alertTitle = copy.saDeletePrompt;
+            alertBody = copy.saPermissionDenied;
+        } else if (sceneId === 'day4_night_save_glitch_2') {
+            variant = 'night-alert';
+            alertBody = getSceneQuote('day4_night_save_glitch_3');
+        } else if (sceneId === 'day4_night_save_glitch_3') {
+            variant = 'night-glitch';
+            statusTone = 'danger';
+            badge = 'SYNC #13';
+            alertBody = getSceneQuote('day4_night_save_glitch_3');
+        } else if (sceneId === 'day4_night_save_glitch_4') {
+            variant = 'night-log';
+            alertTitle = copy.saLogTitle;
+            items = [
+                { time: '23:41', label: copy.saNoRecord, muted: true }
+            ];
+        } else {
+            variant = 'admin-panel';
+            statusTone = 'danger';
+            badge = copy.saAdminPanel;
+            alertTitle = copy.saSeaAttachment;
+            alertBody = this._stripVNMarkup(resolvedText);
+            items = [
+                { time: '#01–#12', label: copy.saEditHistory, muted: false },
+                { time: 'NOTE', label: copy.saUnknownMark, muted: true }
+            ];
+        }
+
+        return {
+            type: 'safetyApp',
+            variant,
+            appTitle: copy.saAppTitle,
+            alertTitle,
+            alertBody,
+            badge,
+            statusTone,
+            items
         };
     }
 

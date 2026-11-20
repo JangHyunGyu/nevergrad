@@ -720,7 +720,8 @@ class GallerySystem {
         this._characterLang = this._lang();
         const titles = GallerySystem.EXPRESSION_TITLES_LOCALIZED[this._characterLang] || GallerySystem.EXPRESSION_TITLES_LOCALIZED.en;
         const aliases = { startled: 'shaking', strained_smile: 'broken_smile', casual: 'normal',
-            casual_pain: 'pain', casual_relief: 'relief', injured_determined: 'determined' };
+            casual_pain: 'pain', casual_relief: 'relief', injured_determined: 'determined',
+            writing: 'serious', bound: 'weak', wet: 'sad', syringe: 'cold', casual_syringe: 'pain' };
 
         this._characterItems = Object.entries(CONFIG.EXPRESSIONS || {})
             .filter(([charId, expressions]) => charId !== 'classmate' && expressions && Object.values(expressions).some(Boolean))

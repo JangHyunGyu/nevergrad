@@ -296,7 +296,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_sea_6a"
     },
     "day3_morning_sea_6a": {
-        character: "sea_serious",
+        character: "sea_stare",
         next: "day3_morning_sea_8"
     },
     "day3_morning_sea_8": {

@@ -221,7 +221,9 @@ class SceneRenderer {
 
         const node = data.type === 'newsArticle'
             ? this._renderNewsArticle(data)
-            : this._renderLabDossier(data);
+            : (data.type === 'safetyApp'
+                ? this._renderSafetyApp(data)
+                : this._renderLabDossier(data));
         el.appendChild(node);
 
         if ((((__oc10 = (__oc9 = window.NevergradMotion) === null || __oc9 === void 0 ? void 0 : __oc9.mediaEnter) === null || __oc10 === void 0 ? void 0 : __oc10.call(__oc9, el)))) {
@@ -325,6 +327,38 @@ class SceneRenderer {
 
         const footer = this._append(side, 'div', 'media-dossier-footer', data.footer || '');
         footer.style.setProperty('--scan', `${Math.max(12, Math.min(88, Number(data.scan) || 54))}%`);
+
+        return frame;
+    }
+
+    _renderSafetyApp(data) {
+        const frame = this._el('div', 'media-safety-frame');
+        const shell = this._append(frame, 'div', `media-safety-shell is-${data.statusTone || 'normal'}`);
+
+        const statusBar = this._append(shell, 'div', 'media-safety-statusbar');
+        this._append(statusBar, 'span', 'media-safety-time', data.variant && data.variant.startsWith('night') ? '23:41' : '08:14');
+        this._append(statusBar, 'span', 'media-safety-appname', data.appTitle || 'Safety App');
+
+        const header = this._append(shell, 'div', 'media-safety-header');
+        this._append(header, 'span', 'media-safety-shield', '🛡️');
+        this._append(header, 'span', 'media-safety-badge', data.badge || '');
+
+        const card = this._append(shell, 'div', 'media-safety-card');
+        if (data.alertTitle) {
+            this._append(card, 'div', 'media-safety-title', data.alertTitle);
+        }
+        if (data.alertBody) {
+            this._append(card, 'p', 'media-safety-body', data.alertBody);
+        }
+
+        if (Array.isArray(data.items) && data.items.length) {
+            const list = this._append(shell, 'div', 'media-safety-list');
+            data.items.forEach(item => {
+                const row = this._append(list, 'div', `media-safety-row${item.muted ? ' is-muted' : ''}`);
+                this._append(row, 'span', 'media-safety-row-time', item.time || '');
+                this._append(row, 'span', 'media-safety-row-label', item.label || '');
+            });
+        }
 
         return frame;
     }

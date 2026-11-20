@@ -184,7 +184,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_2"
     },
     "day5_morning_rescue_2": {
-        character: "yuna_weak",
+        character: "yuna_bound",
         unskippable: true,
         branches: [
             { condition: "met_yuna", next: "day5_morning_rescue_3" }
@@ -193,32 +193,32 @@ Object.assign(SCENARIO[5], {
     },
     // ── met_yuna 미충족: 모르는 여학생 — 한 씬 후 합류 ──
     "day5_morning_rescue_2_unknown": {
-        character: "yuna_weak",
+        character: "yuna_bound",
         unskippable: true,
         next: "day5_morning_rescue_3_unknown"
     },
     "day5_morning_rescue_3_unknown": {
-        character: "yuna_weak",
+        character: "yuna_bound",
         unskippable: true,
         next: "day5_morning_rescue_4_unknown"
     },
     "day5_morning_rescue_4_unknown": {
-        character: "yuna_weak",
+        character: "yuna_bound",
         unskippable: true,
         next: "day5_morning_rescue_5_unknown"
     },
     "day5_morning_rescue_5_unknown": {
-        character: "yuna_weak",
+        character: "yuna_bound",
         unskippable: true,
         next: "day5_morning_rescue_5"
     },
     "day5_morning_rescue_3": {
-        character: "yuna_weak",
+        character: "yuna_bound",
         unskippable: true,
         next: "day5_morning_rescue_4"
     },
     "day5_morning_rescue_4": {
-        character: "yuna_weak",
+        character: "yuna_bound",
         unskippable: true,
         next: "day5_morning_rescue_5"
     },
@@ -233,12 +233,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_rescue_6"
     },
     "day5_morning_rescue_6": {
-        character: "yuna_weak",
+        character: "yuna_bound",
         unskippable: true,
         next: "day5_morning_rescue_7"
     },
     "day5_morning_rescue_7": {
-        character: "yuna_weak",
+        character: "yuna_bound",
         unskippable: true,
         next: "day5_morning_rescue_8"
     },
@@ -497,7 +497,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_morning_true_28": {
         background: "underground_lab",
-        character: "yuna_desperate",
+        character: "yuna_weak",
         unskippable: true,
         next: "day5_morning_true_29"
     },
@@ -872,12 +872,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_morning_grad_20"
     },
     "day5_morning_grad_20": {
-        character: "eunsu_gentle",
+        character: "eunsu_cold",
         unskippable: true,
         next: "day5_morning_grad_21"
     },
     "day5_morning_grad_21": {
-        character: "eunsu_gentle",
+        character: "eunsu_dark",
         unskippable: true,
         next: "day5_morning_grad_21a"
     },

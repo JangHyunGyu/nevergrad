@@ -515,7 +515,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_right_10"
     },
     "day5_lunch_right_10": {
-        character: null,
+        character: "riin_casual_syringe",
         glitch: { noise: true },
         unskippable: true,
         next: "day5_lunch_right_11"

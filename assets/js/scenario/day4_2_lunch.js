@@ -190,7 +190,7 @@ Object.assign(SCENARIO[4], {
     "day4_lunch_nurse_1": {
         background: "nurse_office",
         bgm: "tension_low.mp3",
-        character: "riin_neutral",
+        character: "riin_syringe",
         unskippable: true,
         branches: [
             { condition: "met_riin", next: "day4_lunch_nurse_2" }
@@ -207,7 +207,7 @@ Object.assign(SCENARIO[4], {
         "next": "day4_lunch_nurse_tray_1"
     },
     "day4_lunch_nurse_3": {
-        character: "riin_startled",
+        character: "riin_syringe",
         // 나를 보고 멈춘다
         next: "day4_lunch_nurse_4"
     },
@@ -218,7 +218,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_nurse_5": {
         // 주사기를 뒤로 숨긴다 — met_yuna에 따라 유나 질문 or 주사기 질문
-        character: "riin_strained_smile",
+        character: "riin_syringe",
         branches: [
             { condition: "met_yuna", next: "day4_lunch_nurse_6" }
         ],
@@ -234,7 +234,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_noyuna_3"
     },
     "day4_lunch_nurse_noyuna_3": {
-        character: "riin_cold",
+        character: "riin_syringe",
         next: "day4_lunch_nurse_13"
     },
     // ── met_yuna = true: 유나 전학 언급 ──
@@ -244,7 +244,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_lunch_nurse_7"
     },
     "day4_lunch_nurse_7": {
-        character: "riin_cold",
+        character: "riin_syringe",
         // 리인 표정 변화 0.5초
         next: "day4_lunch_nurse_8"
     },
@@ -256,7 +256,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_nurse_9": {
         // 목소리 차가웠다가 부드러워짐
-        character: "riin_gentle",
+        character: "riin_cold",
         unskippable: true,
         next: "day4_lunch_nurse_10"
     },

@@ -722,7 +722,14 @@
     }
 
     function handleWindowError(event) {
-        var target = event.target || event.srcElement;
+        var target = null;
+        try {
+            target = event.target || event.srcElement;
+        } catch (_) {
+            // Firefox denies access to the target of an error event from a foreign
+            // (extension/cross-origin) compartment; it is not this page's error (D1 7005, 7006).
+            return;
+        }
         if (target && target !== window && target !== document) {
             var tagName = String(target.tagName || '').toUpperCase();
             if (tagName !== 'SCRIPT' && tagName !== 'LINK') return;

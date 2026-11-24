@@ -55,7 +55,7 @@
         "text": "*Seas Stimme ist rau und brüchig. Ihre Ärmelenden sind schon ganz nass.*"
     },
     "day5_lunch_left_5a": {
-        "text": "Sea, geh weg."
+        "text": "Sea, geh aus dem Weg."
     },
     "day5_lunch_left_5b": {
         "text": "*Sea schüttelt den Kopf und weicht keinen Schritt von der Tür.*"
@@ -67,7 +67,7 @@
         "text": "*Sea ballt beide Hände zu Fäusten. Ihre Knöchel sind weiß.*\n\nWas willst du diesmal? Glaubst du, wenn du mich blockierst, bleibe ich?"
     },
     "day5_lunch_left_8": {
-        "text": "Ich weiß, was ich hier tue."
+        "text": "Ich weiß genau, was ich hier tue."
     },
     "day5_lunch_left_9": {
         "text": "Aber wenn du durch diese Tür gehst, steht am nächsten Tag ein fremder Mensch vor mir."
@@ -121,7 +121,7 @@
         "text": "...Muss ich dieses Mal auch aus dem Weg gehen?"
     },
     "day5_lunch_left_choice": {
-        "text": "*Bumm, bumm, bumm. Die Schritte auf der Treppe kommen näher. Sea sieht in Richtung des Geräuschs, weicht aber nicht zur Seite.*\n\n*Ein fremder Satz taucht mitten in meinen Gedanken auf.*\n\n***`[VERBLEIB GENEHMIGT]`***",
+        "text": "*Bumm, bumm, bumm. Die Schritte auf der Treppe kommen näher. Sea sieht in Richtung des Geräuschs, weicht aber nicht zur Seite.*\n\n*Ein fremder Satz taucht mitten in meinen Gedanken auf.*\n\n***'[VERBLEIB GENEHMIGT]'***",
         "choices": [
             "„Tut mir leid. Aber ich muss gehen.“",
             "„Komm mit mir.“",
@@ -147,7 +147,7 @@
         "text": "*Ich ging an Sea vorbei.*"
     },
     "day5_lunch_left_c1_7": {
-        "text": "*Hinter mir — das Geräusch, wie jemand zu Boden sinkt. Eine Schuluniform streift über den Boden. Und — ein kurzer, erstickter Atemzug.*"
+        "text": "*Hinter mir sinkt Sea auf die Knie; ihr Rock streift den Boden, gefolgt von einem kurzen Keuchen.*"
     },
     "day5_lunch_left_c1_8": {
         "text": "...Leb wohl."
@@ -159,10 +159,10 @@
         "text": "*Seas Augen weiten sich. Der Schlüsselring in ihrer Handfläche hält abrupt inne.*\n\nIch lasse dich nicht hier zurück. Lass uns zusammen rausgehen."
     },
     "day5_lunch_left_c2_3": {
-        "text": "Kennst du meinen Namen noch, wenn wir draußen sind?"
+        "text": "Wirst du meinen Namen draußen auch nicht vergessen?"
     },
     "day5_lunch_left_c2_4": {
-        "text": "Ich werde mich an dich erinnern."
+        "text": "Ich vergesse ihn nicht."
     },
     "day5_lunch_left_c2_5": {
         "text": "...Ich weiß nicht mal, wie es draußen ist."
@@ -265,7 +265,7 @@
         "text": "*Riin öffnet den Schrank. Medikamentenflaschen stehen darin in Reihen.*\n\nZeigen Sie mir erst, was in der Flasche ist."
     },
     "day5_lunch_right_15": {
-        "text": "*Sie öffnet die Medikamentenflasche und hält sie an ihre Nasenspitze. Nach einer kurzen Geruchsprobe trinkt sie einen Schluck.*\n\nDass Sie es vor mir trinken, sagt mir nicht, was es ist. Sagen Sie es."
+        "text": "*Frau Riin dreht das Fläschchen auf, riecht kurz daran und schluckt einen Zug hinunter.*\n\n...Frau Riin, was haben Sie da gerade getrunken?"
     },
     "day5_lunch_right_16": {
         "text": "Nicht aufs Etikett. Sieh dir die Rückseite an."
@@ -292,7 +292,7 @@
         "text": "Normale Dosis laut Protokoll. IV-Code auf der Flasche. Ich habe die Zahlen auf dem Blutabnahmeblatt angepasst."
     },
     "day5_lunch_right_24": {
-        "text": "Im Datensatz S-13 sind fast keine aktiven Felder ausgefüllt. Leere Felder werden bei der Überprüfung übersprungen."
+        "text": "Bei S-13 sind fast alle Wirkstofffelder leer; leere Spalten prüft oben niemand nach."
     },
     "day5_lunch_right_25": {
         "text": "...Warum?"
@@ -328,7 +328,7 @@
         "text": "...Eunsu kennt diesen Schlüssel nicht. Nach dem 7. Mal habe ich die Schlösser gewechselt."
     },
     "day5_lunch_right_36": {
-        "text": "*Auf dem Display des Rollladen-Steuerkastens blinkt `LOCAL OVERRIDE - R.IN`. Auf der Karte der Schülersicherheits-App ist nur der rechte Flur des alten Gebäudes grau und leer.*"
+        "text": "*Auf dem Display des Rollladen-Steuerkastens blinkt 'LOCAL OVERRIDE - R.IN'. Auf der Karte der Schülersicherheits-App ist nur der rechte Flur des alten Gebäudes grau und leer.*"
     },
     "day5_lunch_right_37": {
         "text": "*Wumm! Der Brandschutzrollladen wurde heftig erschüttert. Jemand hämmert von außen. Eunsu oder die 'Verwaltung' hat aufgeholt.*"
@@ -357,7 +357,7 @@
         "text": "...ist das auch ein Verfahren?"
     },
     "day5_lunch_right_c3_2": {
-        "text": "*Sie nimmt eine Spritze und injiziert sich das inaktive Verdünnungsmittel in den Arm.*\n\nNur weil Sie sich selbst spritzen, vertraue ich Ihnen nicht sofort."
+        "text": "*Frau Riin greift zur Spritze und setzt sie ohne Zögern an ihrem eigenen Arm an.*\n\n...Was tun Sie da?!"
     },
     "day5_lunch_right_c3_3": {
         "text": "...Du hast hinter das Etikett gesehen. Hast du es überprüft?"
@@ -550,6 +550,6 @@
         "text": "Die Schülerliste steht unten. Du trägst dich hier ein."
     },
     "day5_lunch_complicit_2": {
-        "text": "*Neben Yunas Namen steht noch immer „Isolation“. Ich schließe das Register.*"
+        "text": "*Vor Yunas Namen steht noch immer 'Quarantäne'. Ich schlage das Klassenbuch zu.*"
     }
 }

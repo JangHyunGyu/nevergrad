@@ -10,7 +10,7 @@ Object.assign(SCENARIO[2], {
         charOpacity: 0.7,
         night: true,
         messengerDelay: 1200,
-        next: "day2_night_sea_10"
+        next: "day2_night_sea_12"
     },
     "day2_night_sea_10": {
         character: "sea_normal",
@@ -80,8 +80,7 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_eunsu_5"
     },
     "day2_night_eunsu_5": {
-        character: "eunsu_warm",
-        charOpacity: 0.7,
+        character: null,
         night: true,
         next: "day2_night_flash_1"
     },
@@ -95,19 +94,19 @@ Object.assign(SCENARIO[2], {
     "day2_night_flash_2": {
         background: "corridor_dark",
         character: null,
-        night: true,
+        rain: true,
         sfx: "sfx_rain_loop.mp3",
         glitch: { noise: true, noiseDuration: 300 },
         next: "day2_night_flash_3"
     },
     "day2_night_flash_3": {
         character: null,
-        night: true,
+        rain: true,
         next: "day2_night_flash_4"
     },
     "day2_night_flash_4": {
         character: null,
-        night: true,
+        rain: true,
         next: "day2_night_flash_5"
     },
     "day2_night_flash_5": {
@@ -176,7 +175,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_night_dream_2": {
         character: null,
-        background: "classroom",
+        background: "classroom_empty",
         night: true,
         next: "day2_night_dream_3"
     },
@@ -203,14 +202,14 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_dream_7"
     },
     "day2_night_dream_7": {
-        character: "seolhwa_smile",
+        character: "seolhwa_sad",
         charOpacity: 0.78,
         night: true,
         next: "day2_night_dream_7a"
     },
     "day2_night_dream_7a": {
-        character: "seolhwa_smile",
-        charOpacity: 0.78,
+        character: "seolhwa_fade",
+        charOpacity: 0.55,
         night: true,
         glitch: { noise: true, noiseDuration: 500 },
         next: "day2_night_dream_8"
@@ -232,17 +231,18 @@ Object.assign(SCENARIO[2], {
     "day2_night_wake_1": {
         background: "room_morning",
         character: null,
-        night: true,
+        dawn: true,
         next: "day2_night_wake_2"
     },
     "day2_night_wake_2": {
-        character: "seolhwa_smile",
-        night: true,
+        character: "seolhwa_fade",
+        charOpacity: 0.35,
+        dawn: true,
         next: "day2_night_wake_3"
     },
     "day2_night_wake_3": {
         character: null,
-        night: true,
+        dawn: true,
         // SCENARIO.md 5424: Day 2 밤 핸드폰 알림 글리치 (0.3초 — 내부 시스템 노출)
         glitch: {
             phoneFlash: true,

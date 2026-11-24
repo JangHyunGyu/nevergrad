@@ -23,7 +23,7 @@ Object.assign(SCENARIO[5], {
     // 진입점
     // ══════════════════════════════════════
     "day5_after_start": {
-        skipTextFlags: ["final_confrontation_pending","route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
+        skipTextFlags: ["final_confrontation_pending","route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell","caught_by_sea","forced_forget","ghost_guided"],
         character: null,
         next: "day5_after_branch"
     },
@@ -156,6 +156,7 @@ Object.assign(SCENARIO[5], {
     //    약물 투여 or 저항 → 최종 대면으로 합류
     // ══════════════════════════════════════
     "day5_after_caught_1": {
+        timeOfDay: null,
         background: "basement",
         bgm: "confrontation.mp3",
         character: null,
@@ -164,26 +165,31 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_2"
     },
     "day5_after_caught_2": {
+        timeOfDay: null,
         character: null,
         unskippable: true,
         next: "day5_after_caught_3"
     },
     "day5_after_caught_3": {
+        timeOfDay: null,
         character: null,
         unskippable: true,
         next: "day5_after_caught_4"
     },
     "day5_after_caught_4": {
+        timeOfDay: null,
         character: "eunsu_obsessed",
         unskippable: true,
         next: "day5_after_caught_5"
     },
     "day5_after_caught_5": {
+        timeOfDay: null,
         character: "eunsu_obsessed",
         unskippable: true,
         next: "day5_after_caught_6"
     },
     "day5_after_caught_6": {
+        timeOfDay: null,
         character: "riin_dark",
         unskippable: true,
         next: "day5_after_caught_7"
@@ -194,6 +200,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_choice"
     },
     "day5_after_caught_choice": {
+        timeOfDay: null,
         character: null,
         timedChoice: 5000,
         unskippable: true,
@@ -214,6 +221,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 붙잡힘 → 저항 → 설화 개입 ──
     "day5_after_caught_resist_1": {
+        timeOfDay: null,
         character: null,
         glitch: { heavyGlitch: true },
         vibrate: "danger",
@@ -221,33 +229,39 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_caught_resist_2"
     },
     "day5_after_caught_resist_2": {
+        timeOfDay: null,
         character: null,
         unskippable: true,
         next: "day5_after_caught_resist_3"
     },
     "day5_after_caught_resist_3": {
+        timeOfDay: null,
         character: "riin_pain",
         unskippable: true,
         next: "day5_after_caught_resist_4"
     },
     "day5_after_caught_resist_4": {
+        timeOfDay: null,
         character: null,
         glitch: { heavy: true },
         unskippable: true,
         next: "day5_after_caught_resist_5"
     },
     "day5_after_caught_resist_5": {
+        timeOfDay: null,
         character: "seolhwa_fading",
         glitch: { silence: true, silenceDuration: 3000 },
         unskippable: true,
         next: "day5_after_caught_resist_6"
     },
     "day5_after_caught_resist_6": {
+        timeOfDay: null,
         character: null,
         unskippable: true,
         next: "day5_after_caught_resist_7"
     },
     "day5_after_caught_resist_7": {
+        timeOfDay: null,
         character: null,
         unskippable: true,
         next: "day5_after_end",
@@ -256,22 +270,26 @@ Object.assign(SCENARIO[5], {
 
     // ── 붙잡힘 → 굴복 → 약물 투여 ──
     "day5_after_caught_submit_1": {
+        timeOfDay: null,
         character: "riin_pain",
         unskippable: true,
         next: "day5_after_caught_submit_2"
     },
     "day5_after_caught_submit_2": {
+        timeOfDay: null,
         character: null,
         unskippable: true,
         next: "day5_after_caught_submit_3"
     },
     "day5_after_caught_submit_3": {
+        timeOfDay: null,
         character: null,
         unskippable: true,
         vibrate: "paralysis",
         next: "day5_after_caught_submit_4"
     },
     "day5_after_caught_submit_4": {
+        timeOfDay: null,
         character: null,
         glitch: { heavyGlitch: true, drugBlur: true },
         unskippable: true,
@@ -484,6 +502,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_5"
     },
     "day5_after_true_5": {
+        timeOfDay: "night",
         character: null,
         vibrate: "door_resistance",
         // 비상구 앞 — 발소리가 오른쪽 뒤에서 몰아쳐옴
@@ -492,11 +511,13 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_6"
     },
     "day5_after_true_6": {
+        timeOfDay: "night",
         character: "seolhwa_fading",
         unskippable: true,
         next: "day5_after_true_7"
     },
     "day5_after_true_7": {
+        timeOfDay: "night",
         character: "seolhwa_fading",
         unskippable: true,
         next: "day5_after_true_seolhwa_branch"
@@ -509,23 +530,27 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_true_8"
     },
     "day5_after_true_8": {
+        timeOfDay: "night",
         character: "seolhwa_fading",
         unskippable: true,
         next: "day5_after_true_9"
     },
     "day5_after_true_9": {
+        timeOfDay: "night",
         charOpacity: 0.45,
         character: "seolhwa_smile",
         unskippable: true,
         next: "day5_after_true_10"
     },
     "day5_after_true_10": {
+        timeOfDay: "night",
         character: "seolhwa_normal",
         charOpacity: 0.9,
         unskippable: true,
         next: "day5_after_true_11"
     },
     "day5_after_true_11": {
+        timeOfDay: "night",
         character: "seolhwa_normal",
         charOpacity: 0.9,
         unskippable: true,
@@ -533,12 +558,14 @@ Object.assign(SCENARIO[5], {
     },
     // "기억할게. 이설화."
     "day5_after_true_11a": {
+        timeOfDay: "night",
         character: "seolhwa_fading",
         unskippable: true,
         setFlags: ["ending_bridge_true_farewell"],
         next: "day5_ending_true_15"
     },
     "day5_after_true_12": {
+        timeOfDay: "night",
         character: null,
         unskippable: true,
         setFlags: ["broke_through_eunsu", "escape_with_yuna", "has_evidence", "ending_bridge_true_done"],
@@ -802,18 +829,21 @@ Object.assign(SCENARIO[5], {
         next: "day5_after_ghost_11"
     },
     "day5_after_ghost_11": {
+        timeOfDay: "night",
         character: "seolhwa_normal",
         charOpacity: 0.9,
         unskippable: true,
         next: "day5_after_ghost_12"
     },
     "day5_after_ghost_12": {
+        timeOfDay: "night",
         character: null,
         glitch: { noise: true },
         unskippable: true,
         next: "day5_after_ghost_13"
     },
     "day5_after_ghost_13": {
+        timeOfDay: "night",
         character: null,
         unskippable: true,
         setFlags: ["ending_bridge_ghost_done"],
@@ -824,7 +854,7 @@ Object.assign(SCENARIO[5], {
     // 공통 종단: Night 파일로 전환
     // ══════════════════════════════════════
     "day5_after_end": {
-        skipTextFlags: ["final_confrontation_pending","route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
+        skipTextFlags: ["final_confrontation_pending","route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell","caught_by_sea","caught_by_riin","forced_forget","ghost_guided"],
         character: null,
         stopSfx: true,
         autoAdvance: true,
@@ -867,7 +897,6 @@ Object.assign(SCENARIO[5], {
                     }
                 }
             }
-        ],
-        "character": "eunsu_serious"
+        ]
     }
 });

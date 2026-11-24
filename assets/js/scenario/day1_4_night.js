@@ -35,10 +35,9 @@ Object.assign(SCENARIO[1], {
 
     // ===== 폰 확인 =====
     "day1_night_phone_1": {
+        background: "room_night",
         character: null,
         night: true,
-        sfx: "sfx_phone_vibrate.mp3",
-        vibrate: "notification",
         next: "day1_night_phone_2"
     },
     "day1_night_phone_2": {
@@ -66,30 +65,32 @@ Object.assign(SCENARIO[1], {
     "day1_night_phone_6": {
         character: null,
         night: true,
+        sfx: "sfx_phone_vibrate.mp3",
+        vibrate: "notification",
         next: "day1_night_sea_1"
     },
     "day1_night_sea_1": {
         character: "sea_smile",
-        charOpacity: 0.7,
-        night: true,
+        charOpacity: 0.85,
+        noTimeFilter: true,
         next: "day1_night_sea_2"
     },
     "day1_night_sea_2": {
         character: "sea_normal",
-        charOpacity: 0.7,
-        night: true,
+        charOpacity: 0.85,
+        noTimeFilter: true,
         next: "day1_night_sea_3"
     },
     "day1_night_sea_3": {
         character: "sea_normal",
-        charOpacity: 0.7,
-        night: true,
+        charOpacity: 0.85,
+        noTimeFilter: true,
         next: "day1_night_sea_4"
     },
     "day1_night_sea_4": {
         character: "sea_normal",
-        charOpacity: 0.7,
-        night: true,
+        charOpacity: 0.85,
+        noTimeFilter: true,
         next: "day1_night_sea_reply"
     },
 
@@ -105,15 +106,15 @@ Object.assign(SCENARIO[1], {
     },
     "day1_night_sea_reply_1": {
         "character": "sea_smile",
-        "charOpacity": 0.7,
-        "night": true,
+        "charOpacity": 0.85,
+        "noTimeFilter": true,
         "messengerDelay": 1200,
         "next": "day1_night_extra_msg_branch"
     },
     "day1_night_sea_reply_2": {
         "character": "sea_smile",
-        "charOpacity": 0.7,
-        "night": true,
+        "charOpacity": 0.85,
+        "noTimeFilter": true,
         "messengerDelay": 1200,
         "next": "day1_night_extra_msg_branch"
     },
@@ -128,6 +129,7 @@ Object.assign(SCENARIO[1], {
 
     // ===== 잠들기 전 =====
     "day1_night_sleep_1": {
+        background: "room_dark",
         character: null,
         night: true,
         next: "day1_night_sleep_2"
@@ -450,58 +452,59 @@ Object.assign(SCENARIO[1], {
         "next": "day1_night_eunsu_msg_1"
     },
     "day1_night_riin_msg_1": {
-        "character": "riin_smile",
-        "charOpacity": 0.7,
+        "character": null,
         "night": true,
+        "sfx": "sfx_phone_vibrate.mp3",
+        "vibrate": "notification",
         "next": "day1_night_riin_msg_2"
     },
     "day1_night_riin_msg_2": {
         "character": "riin_smile",
-        "charOpacity": 0.7,
-        "night": true,
+        "charOpacity": 0.85,
+        "noTimeFilter": true,
         "messengerDelay": 1000,
         "next": "day1_night_riin_msg_3"
     },
     "day1_night_riin_msg_3": {
         "character": "riin_smile",
-        "charOpacity": 0.7,
-        "night": true,
+        "charOpacity": 0.85,
+        "noTimeFilter": true,
         "next": "day1_night_riin_msg_4"
     },
     "day1_night_riin_msg_4": {
         "character": "riin_smile",
-        "charOpacity": 0.7,
-        "night": true,
+        "charOpacity": 0.85,
+        "noTimeFilter": true,
         "messengerDelay": 1000,
         "next": "day1_night_riin_msg_5"
     },
     "day1_night_riin_msg_5": {
         "character": "riin_smile",
-        "charOpacity": 0.7,
-        "night": true,
+        "charOpacity": 0.85,
+        "noTimeFilter": true,
         "next": "day1_night_riin_msg_6"
     },
     "day1_night_riin_msg_6": {
         "character": "riin_smile",
-        "charOpacity": 0.7,
-        "night": true,
+        "charOpacity": 0.85,
+        "noTimeFilter": true,
         "messengerDelay": 1000,
         "next": "day1_night_riin_msg_7"
     },
     "day1_night_riin_msg_7": {
         "character": "riin_smile",
-        "charOpacity": 0.7,
-        "night": true,
+        "charOpacity": 0.85,
+        "noTimeFilter": true,
         "next": "day1_night_riin_msg_8"
     },
     "day1_night_riin_msg_8": {
         "character": "riin_smile",
-        "charOpacity": 0.7,
-        "night": true,
+        "charOpacity": 0.85,
+        "noTimeFilter": true,
         "next": "day1_night_riin_msg_choice"
     },
     "day1_night_riin_msg_choice": {
-        "night": true,
+        "noTimeFilter": true,
         "choices": [
             {
                 "next": "day1_night_riin_msg_thanks_1",
@@ -525,72 +528,74 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "day1_night_riin_msg_thanks_1": {
-        "night": true,
+        "noTimeFilter": true,
         "messengerDelay": 1100,
         "next": "day1_night_sleep_1"
     },
     "day1_night_riin_msg_pick_1": {
-        "night": true,
+        "noTimeFilter": true,
         "messengerDelay": 1100,
         "next": "day1_night_sleep_1"
     },
     "day1_night_riin_msg_sleep_1": {
+        "character": null,
         "night": true,
         "next": "day1_night_sleep_1"
     },
     "day1_night_yuna_msg_1": {
+        "character": null,
         "night": true,
-        "character": "yuna_normal",
-        "charOpacity": 0.7,
+        "sfx": "sfx_phone_vibrate.mp3",
+        "vibrate": "notification",
         "next": "day1_night_yuna_msg_2"
     },
     "day1_night_yuna_msg_2": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "yuna_normal",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "messengerDelay": 1100,
         "next": "day1_night_yuna_msg_3"
     },
     "day1_night_yuna_msg_3": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "yuna_normal",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "next": "day1_night_yuna_msg_4"
     },
     "day1_night_yuna_msg_4": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "yuna_normal",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "messengerDelay": 1100,
         "next": "day1_night_yuna_msg_5"
     },
     "day1_night_yuna_msg_5": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "yuna_normal",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "next": "day1_night_yuna_msg_6"
     },
     "day1_night_yuna_msg_6": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "yuna_normal",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "messengerDelay": 1100,
         "next": "day1_night_yuna_msg_7"
     },
     "day1_night_yuna_msg_7": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "yuna_normal",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "next": "day1_night_yuna_msg_8"
     },
     "day1_night_yuna_msg_8": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "yuna_normal",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "next": "day1_night_yuna_msg_choice"
     },
     "day1_night_yuna_msg_choice": {
-        "night": true,
+        "noTimeFilter": true,
         "choices": [
             {
                 "next": "day1_night_yuna_msg_ask_1",
@@ -619,72 +624,74 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "day1_night_yuna_msg_ask_1": {
-        "night": true,
+        "noTimeFilter": true,
         "messengerDelay": 1100,
         "next": "day1_night_sleep_1"
     },
     "day1_night_yuna_msg_time_1": {
-        "night": true,
+        "noTimeFilter": true,
         "messengerDelay": 1100,
         "next": "day1_night_sleep_1"
     },
     "day1_night_yuna_msg_bye_1": {
+        "character": null,
         "night": true,
         "next": "day1_night_sleep_1"
     },
     "day1_night_eunsu_msg_1": {
         "night": true,
-        "character": "eunsu_gentle",
-        "charOpacity": 0.7,
+        "character": null,
+        "sfx": "sfx_phone_vibrate.mp3",
+        "vibrate": "notification",
         "next": "day1_night_eunsu_msg_2"
     },
     "day1_night_eunsu_msg_2": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "eunsu_gentle",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "messengerDelay": 1100,
         "next": "day1_night_eunsu_msg_3"
     },
     "day1_night_eunsu_msg_3": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "eunsu_gentle",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "next": "day1_night_eunsu_msg_4"
     },
     "day1_night_eunsu_msg_4": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "eunsu_gentle",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "messengerDelay": 1100,
         "next": "day1_night_eunsu_msg_5"
     },
     "day1_night_eunsu_msg_5": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "eunsu_gentle",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "next": "day1_night_eunsu_msg_6"
     },
     "day1_night_eunsu_msg_6": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "eunsu_gentle",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "messengerDelay": 1100,
         "next": "day1_night_eunsu_msg_7"
     },
     "day1_night_eunsu_msg_7": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "eunsu_gentle",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "next": "day1_night_eunsu_msg_8"
     },
     "day1_night_eunsu_msg_8": {
-        "night": true,
+        "noTimeFilter": true,
         "character": "eunsu_gentle",
-        "charOpacity": 0.7,
+        "charOpacity": 0.85,
         "next": "day1_night_eunsu_msg_choice"
     },
     "day1_night_eunsu_msg_choice": {
-        "night": true,
+        "noTimeFilter": true,
         "choices": [
             {
                 "next": "day1_night_eunsu_msg_kind_1",
@@ -711,16 +718,17 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "day1_night_eunsu_msg_kind_1": {
-        "night": true,
+        "noTimeFilter": true,
         "messengerDelay": 1100,
         "next": "day1_night_sleep_1"
     },
     "day1_night_eunsu_msg_app_1": {
-        "night": true,
+        "noTimeFilter": true,
         "messengerDelay": 1100,
         "next": "day1_history_callback_4"
     },
     "day1_night_eunsu_msg_rest_1": {
+        "character": null,
         "night": true,
         "next": "day1_night_sleep_1"
     },

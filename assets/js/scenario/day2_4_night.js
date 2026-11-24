@@ -80,7 +80,7 @@ Object.assign(SCENARIO[2], {
         character: null,
         night: true,
         choices: [
-            { next: "day2_night_ft_messenger", stats: { sea: { affinity: 1 } } },
+            { next: "day2_night_ft_messenger" },
             { next: "day2_night_ft_groupchat", stats: { eunsu: { affinity: -1 } } },
             { next: "day2_night_ft_putdown", stats: { seolhwa: { affinity: 1 } } }
         ]
@@ -192,7 +192,6 @@ Object.assign(SCENARIO[2], {
         next: "day2_night_sea_promise_branch"
     },
     "day2_night_sea_promise_branch": {
-        character: null,
         night: true,
         branches: [
             { condition: "day2_lunch_with_sea", next: "day2_night_sea_9" }
@@ -428,18 +427,22 @@ Object.assign(SCENARIO[2], {
         "next": "day2_night_dream_1"
     },
     "day2_history_callback_8": {
+        "night": true,
         "character": null,
         "next": "day2_night_drawer_6"
     },
     "day2_history_callback_9": {
+        "night": true,
         "character": null,
         "next": "day2_night_drawer_join_3"
     },
     "day2_expansion_action_3_a": {
+        "night": true,
         "character": null,
         "next": "day2_night_drawer_join_2"
     },
     "day2_expansion_action_3_b": {
+        "night": true,
         "character": null,
         "next": "day2_night_drawer_join_2"
     }

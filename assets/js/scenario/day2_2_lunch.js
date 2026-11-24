@@ -204,11 +204,11 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_yuna_14"
     },
     "day2_lunch_yuna_14": {
-        character: "yuna_smile",
+        character: "yuna_normal",
         next: "day2_lunch_yuna_15"
     },
     "day2_lunch_yuna_15": {
-        character: "yuna_shy",
+        character: "yuna_serious",
         next: "day2_lunch_yuna_16"
     },
     "day2_lunch_yuna_16": {
@@ -279,35 +279,35 @@ Object.assign(SCENARIO[2], {
         next: "day2_lunch_riin_8"
     },
     "day2_lunch_riin_8": {
-        character: "riin_smile",
+        character: "riin_normal",
         next: "day2_lunch_riin_9"
     },
     "day2_lunch_riin_9": {
-        character: "riin_smile",
+        character: "riin_normal",
         next: "day2_lunch_riin_10"
     },
     "day2_lunch_riin_10": {
-        character: "riin_smile",
+        character: "riin_normal",
         next: "day2_lunch_riin_11"
     },
     "day2_lunch_riin_11": {
-        character: "riin_smile",
+        character: "riin_normal",
         next: "day2_lunch_riin_12"
     },
     "day2_lunch_riin_12": {
-        character: "riin_smile",
+        character: "riin_normal",
         next: "day2_lunch_riin_13"
     },
     "day2_lunch_riin_13": {
-        character: "riin_smile",
+        character: "riin_normal",
         next: "day2_lunch_riin_14"
     },
     "day2_lunch_riin_14": {
-        character: "riin_smile",
+        character: "riin_normal",
         next: "day2_lunch_riin_15"
     },
     "day2_lunch_riin_15": {
-        character: "riin_smile",
+        character: "riin_normal",
         next: "day2_lunch_riin_16"
     },
     "day2_lunch_riin_16": {
@@ -493,8 +493,8 @@ Object.assign(SCENARIO[2], {
             { next: "day2_lunch_yuna_map_8", setFlags: ["learned_old_building_darkroom"], stats: { yuna: { affinity: 4 } } }
         ]
     },
-    "day2_lunch_yuna_map_1": { character: "yuna_scared", next: "day2_lunch_yuna_map_2" },
-    "day2_lunch_yuna_map_2": { character: "yuna_shy", next: "day2_lunch_yuna_map_3" },
+    "day2_lunch_yuna_map_1": { character: "yuna_normal", next: "day2_lunch_yuna_map_2" },
+    "day2_lunch_yuna_map_2": { character: "yuna_scared", next: "day2_lunch_yuna_map_3" },
     "day2_lunch_yuna_map_3": { character: "yuna_normal", next: "day2_lunch_yuna_map_4" },
     "day2_lunch_yuna_map_4": { character: "yuna_scared", next: "day2_lunch_yuna_map_5" },
     "day2_lunch_yuna_map_5": { character: "yuna_shy", next: "day2_lunch_yuna_map_6" },

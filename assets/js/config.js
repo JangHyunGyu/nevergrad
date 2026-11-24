@@ -277,7 +277,7 @@ const CONFIG = {
     // ===== 게임 기본 설정 =====
     TITLE: "졸업하지 못한 교실",
     SUBTITLE: "5일의 기록",
-    VERSION: "0.1.3",
+    VERSION: "0.1.4",
 
     // Save migration for the retired duplicate Day 5 confrontation.
     SCENE_ALIASES: {
@@ -552,6 +552,7 @@ const CONFIG = {
         new_place: "assets/images/background/new_place.webp",
         lab_documents: "assets/images/evidence/day5_lab_documents.webp",
         ending_true: "assets/images/cg/ending_true_new_classroom.webp",
+        ending_true_dawn: "assets/images/cg/ending_true_dawn_gate.webp",
         ending_escape: "assets/images/cg/ending_escape_rain.webp",
         ending_cage: "assets/images/cg/ending_cage_classroom.webp",
         ending_ghost: "assets/images/cg/ending_ghost_classroom.webp",
@@ -616,7 +617,7 @@ const CONFIG = {
 
     // ===== 장르 전환 트리거 =====
     // Day 3 밤 시나리오 도달 시 전환
-    GENRE_SHIFT_SCENE: "day3_night_reveal",
+    GENRE_SHIFT_SCENE: "day3_night_stat_crack_4",
 
     // ===== 글리치 연출 강도 레벨 =====
     GLITCH_LEVELS: {

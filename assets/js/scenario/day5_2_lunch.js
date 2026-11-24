@@ -41,7 +41,7 @@ Object.assign(SCENARIO[5], {
         next: "day5_lunch_chase_3a"
     },
     "day5_lunch_chase_3a": {
-        character: null,
+        character: "yuna_weak",
         unskippable: true,
         next: "day5_lunch_chase_4"
     },
@@ -777,7 +777,7 @@ Object.assign(SCENARIO[5], {
         typingSpeed: 0,
         typingPause: 400,
         character: "riin_casual_pain",
-        sfx: "sfx_scream.mp3",
+        sfx: "sfx_door_slam.mp3",
         vibrate: "danger",
         timedChoice: 6000,
         unskippable: true,
@@ -1245,7 +1245,7 @@ Object.assign(SCENARIO[5], {
     // 최종 대면은 방과후 파일에서 한 번만 진행한다.
     // ══════════════════════════════════════
     "day5_lunch_end": {
-        skipTextFlags: ["final_confrontation_pending","route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
+        skipTextFlags: ["final_confrontation_pending","route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell","caught_by_sea","forced_forget","ghost_guided"],
         character: null,
         changeSlot: "afterschool",
         next: "day5_after_start"

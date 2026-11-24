@@ -39,7 +39,7 @@
         "text": "Vamos, prueba primero el rollito de huevo. Me quedó dulcecito y muy rico."
     },
     "day1_lunch_sea_10": {
-        "text": "*Al darle un bocado, un calor esponjoso se extiende entre sus capas suaves.*\n\nOye, está buenísimo. Y en su punto justo de sabor."
+        "text": "*Al morderlo, todavía está tibio y esponjoso.*\n\nOye, está buenísimo. Y en su punto de sal."
     },
     "day1_lunch_sea_11": {
         "text": "¿Esto es mejor que lo comprado en la tienda?"
@@ -90,13 +90,13 @@
         "text": "*Compartimos los auriculares.*\n\nMe gusta la guitarra. Podría escucharla un buen rato."
     },
     "day1_lunch_sea_27": {
-        "text": "Por mucho ruido que haya en el aula, toda mi atención se va a este oído."
+        "text": "Con el ruido que hay en clase y solo oigo esto."
     },
     "day1_lunch_sea_28": {
-        "text": "Normalmente no hablo de estas cosas."
+        "text": "Me alegra. Normalmente no le presto mis auriculares a cualquiera."
     },
     "day1_lunch_sea_29": {
-        "text": "*Entre charlas sobre música y los vídeos que solemos ver, ya casi es la hora de que suene el timbre preventivo.*\n\nYa casi se acaba el almuerzo. Gracias por prestarme el auricular."
+        "text": "*Entre canciones y vídeos que solemos ver, ya casi es la hora del primer timbre.*\n\nYa casi se acaba el almuerzo. Gracias por dejarme el auricular."
     },
     "day1_lunch_yuna_1": {
         "text": "*Entré a la biblioteca. Está casi vacía ya que es la hora del almuerzo.*"
@@ -120,13 +120,13 @@
         "text": "Perdona si te asusté. Como antes estábamos lejos, ni siquiera pude saludarte bien."
     },
     "day1_lunch_yuna_8": {
-        "text": "Para nada. Soy Choi Yuna, de primero. Eres el alumno de segundo que se trasladó hoy, ¿verdad?"
+        "text": "No, me sorprendí yo. Eres el alumno nuevo que vi en el patio hace un rato, ¿verdad?"
     },
     "day1_lunch_yuna_9": {
         "text": "Sí, soy {name}. Encantado de conocerte."
     },
     "day1_lunch_yuna_10": {
-        "text": "*Yuna reacomoda la correa de la cámara entre sus manos y hace una leve inclinación de cabeza.*\n\nSe ve bastante pesada esa cámara. La cuidas mucho, ¿no?"
+        "text": "*Yuna acomoda la correa de su cámara y asiente con una leve inclinación.*\n\nSe ve bastante pesada. ¿La aprecias mucho?"
     },
     "day1_lunch_yuna_11": {
         "text": "Sí, la llevo conmigo todos los días. ¿A ti también te gustan los sitios tranquilos? ¿Quieres ver la foto que acaba de salir?"
@@ -144,7 +144,7 @@
         "text": "Los colores cambian según la hora. Las tomé durante un mes."
     },
     "day1_lunch_yuna_16": {
-        "text": "*Cada foto tiene la hora escrita en pequeño. Yuna empezó a pasar a la siguiente, pero se detuvo y volvió rápidamente a la foto anterior.*\n\nNo tienes que mostrarme esa última."
+        "text": "*Cada foto tiene la hora anotada en pequeño. Yuna está por pasar a la siguiente cuando retrocede deprisa a la anterior.*"
     },
     "day1_lunch_riin_1": {
         "text": "*Abrí la puerta de la enfermería. Un leve olor a desinfectante.*"
@@ -162,7 +162,7 @@
         "text": "¿Sí? Toma asiento."
     },
     "day1_lunch_riin_6": {
-        "text": "*En el pecho de su bata blanca lleva una placa con el nombre «Kang Riin». La enfermera se acerca y apoya suavemente la mano en mi frente.*\n\nTiene la mano muy fresca."
+        "text": "*En el bolsillo de su bata blanca se lee 'Kang Riin'. Se acerca y me posa la mano en la frente.*\n\nAh, tiene la mano bastante fría."
     },
     "day1_lunch_riin_7": {
         "text": "No tienes fiebre. Hay muchos así el primer día."
@@ -183,10 +183,10 @@
         "text": "*La cortina está bajada a medias, y las sábanas de la cama huelen a jabón de lavandería.*\n\nEstá más tranquilo que el salón. Creo que me dormiría enseguida. Solo voy a descansar un rato."
     },
     "day1_lunch_riin_13": {
-        "text": "*...Cerré los ojos un momento. Los sonidos del otro lado de la ventana se afinan, hasta que solo queda el olor a desinfectante.*"
+        "text": "*Cierro los ojos un momento. Los ruidos de fuera se alejan hasta quedar solo el olor a desinfectante.*"
     },
     "day1_lunch_riin_14": {
-        "text": "*Despierto bajo una manta. A la luz del sol veo una marca tenue en el interior de la muñeca, como si un termómetro la hubiera presionado.*"
+        "text": "*Despierto tapado con una manta. Al sol se distingue una marca tenue en la cara interna de la muñeca, como si algo hubiera presionado ahí.*"
     },
     "day1_lunch_riin_15": {
         "text": "Ya despertaste. Dormiste unos 15 minutos."
@@ -240,7 +240,7 @@
         "text": "*Acercó el agua a la cabecera y corrió un poco más la cortina de la ventana. El sol dejó de darme en los párpados.*"
     },
     "day1_lunch_sea_menu_choice": {
-        "text": "*Sea golpeó el compartimento vacío de la guarnición con las puntas de sus palillos.*",
+        "text": "*Al recoger la fiambrera, algo me llama de pronto la atención.*",
         "choices": [
             "Pregúntele cuánta azúcar puso en la tortilla enrollada.",
             "Señale las iniciales en inglés rayadas en el fondo de la lonchera."
@@ -256,7 +256,7 @@
         "text": "¿Cómo sabes que bostezo en la tarde? Es mi primer día."
     },
     "day1_lunch_sea_menu_4": {
-        "text": "*Sea apretó los dedos al girar la tapa de la botella.*\n\nLo hiciste dos veces en la reunión de la mañana, mirando por la ventana. La representante ve esas cosas."
+        "text": "*Sea gira el tapón de su botella apretando un poco los dedos.*\n\n¿Mmm? Nada, te vi hacerlo dos veces en primera hora mirando por la ventana."
     },
     "day1_lunch_sea_menu_5": {
         "text": "No sé si eres muy observadora o si solo me miras a mí."
@@ -268,7 +268,7 @@
         "text": "No, igual que hoy. Estaba rico."
     },
     "day1_lunch_sea_menu_8": {
-        "text": "Hay dos letras rayadas en la esquina de la lonchera. No son tus iniciales."
+        "text": "Tiene algo grabado en la base, parece bastante viejo."
     },
     "day1_lunch_sea_menu_9": {
         "text": "*Sea instintivamente tomó su palma debajo de la lonchera para cubrirlos.*"
@@ -323,7 +323,7 @@
         "text": "*Yuna pasó el pulgar por la pantalla de la cámara.*"
     },
     "day1_lunch_yuna_lens_10": {
-        "text": "La tomé justo después de que esa persona se levantara. Había pétalos por todas partes, pero ese sitio quedó vacío."
+        "text": "La saqué justo cuando alguien acababa de levantarse. El banco estaba cubierto de pétalos, salvo el hueco vacío donde había estado sentado."
     },
     "day1_lunch_yuna_lens_11": {
         "text": "¿Quién estaba sentado allí?"
@@ -335,7 +335,7 @@
         "text": "*Yuna colocó la tapa de la lente con un clic de plástico seco.*"
     },
     "day1_lunch_yuna_lens_14": {
-        "text": "sunbae, debes ir antes de que comiencen las clases de la tarde. El pasillo del primer piso se llena justo antes de que suene el timbre."
+        "text": "El pasillo se llena bastante justo antes del timbre. Como el cerezo del patio está precioso, la gente se amontona cerca de las taquillas."
     },
     "day1_lunch_yuna_lens_15": {
         "text": "Gracias. Cuando termines de ordenarlas, enséñame más."
@@ -344,14 +344,14 @@
         "text": "Bueno. No los borraré. Los mantendré tal como están."
     },
     "day1_lunch_riin_chart_choice": {
-        "text": "*Cuando me bajé de la cama, mis pantuflas se adhirieron fríamente a las baldosas de linóleo.*",
+        "text": "*Al bajar de la cama, siento el frío del suelo a través de las zapatillas escolares.*",
         "choices": [
             "Preguntar por la marca del termómetro en el interior de mi muñeca.",
             "Mira el horario en el portapapeles de su escritorio."
         ]
     },
     "day1_lunch_riin_chart_1": {
-        "text": "Sra. Riin, ¿volvió a comprobar mi temperatura mientras dormía? Dejó una marca en mi muñeca."
+        "text": "Profesora, ¿me tomó algo mientras dormía? Tengo una marca en la muñeca."
     },
     "day1_lunch_riin_chart_2": {
         "text": "Sí. Tu pulso parecía un poco más rápido que cuando sentí tu frente."
@@ -390,20 +390,20 @@
         "text": "*Barrió las migas de borrador del papel con la palma de la mano y las arrojó a la papelera.*"
     },
     "day1_lunch_riin_chart_14": {
-        "text": "No tomes medicina con el estómago vacío. Al menos consigue leche antes de que cierre la cafetería."
+        "text": "Cómete la barrita energética que te di y bébete al menos una leche antes de que cierre el comedor."
     },
     "day1_lunch_riin_chart_15": {
         "text": "Sí, lo haré. Gracias por dejarme descansar."
     },
     "day1_lunch_alone_rail_choice": {
-        "text": "*Se hicieron tres líneas cortas, una al lado de la otra, en un parche de pintura descascarada debajo de la barandilla del techo.*",
+        "text": "*Son marcas antiguas. ¿Las miro de cerca o reviso de dónde vino el destello de antes?*",
         "choices": [
             "Comprobar la profundidad de los arañazos con la uña.",
             "Busca de nuevo la lente que brillaba en la esquina del campo."
         ]
     },
     "day1_lunch_alone_rail_1": {
-        "text": "*Presioné la uña del pulgar en una ranura y la moví lentamente. Sólo la capa de pintura gris sobre el metal oxidado había sido cortada profundamente.*"
+        "text": "*Apoyo la uña del pulgar en la hendidura y la deslizo despacio. Solo la capa de pintura gris sobre el hierro oxidado está profundamente rayada.*"
     },
     "day1_lunch_alone_rail_2": {
         "text": "*Junto a las tres líneas, un cuarto trazo débil se detuvo a mitad de camino.*"
@@ -439,7 +439,7 @@
         "text": "*Los vítores distantes del campo llegaron a través del espacio en la ventana del aterrizaje.*"
     },
     "day1_lunch_alone_rail_13": {
-        "text": "*Me froté los dedos mientras bajaba las escaleras. El polvo de la pintura todavía se sentía arenoso contra mi piel.*"
+        "text": "*Mientras bajo las escaleras meto las manos en los bolsillos. Aún tengo las yemas frías del viento de la azotea.*"
     },
     "day1_lunch_alone_rail_14": {
         "text": "*La campana de advertencia comenzó a sonar cuando entré al pasillo del tercer piso.*"

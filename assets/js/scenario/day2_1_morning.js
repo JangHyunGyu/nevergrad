@@ -39,8 +39,6 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_wakeup_3": {
         character: null,
-        sfx: "sfx_phone_vibrate.mp3",
-        vibrate: "notification",
         next: "day2_morning_wakeup_4"
     },
     "day2_morning_wakeup_4": {
@@ -152,19 +150,19 @@ Object.assign(SCENARIO[2], {
     // ===== 데자뷔 핀 #4 — 자판기 =====
     "day2_morning_walk_17": {
         background: "hallway",
-        character: "sea_smile",
+        character: "sea_normal",
         next: "day2_morning_deja4_1"
     },
     "day2_morning_deja4_1": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_deja4_2"
     },
     "day2_morning_deja4_2": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_deja4_3"
     },
     "day2_morning_deja4_3": {
-        character: null,
+        character: "sea_normal",
         next: "day2_morning_deja4_4"
     },
     "day2_morning_deja4_4": {
@@ -177,7 +175,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_deja4_5": {
         "character": "sea_normal",
-        "next": "day2_morning_pen_1",
+        "next": "day2_morning_deja4_6",
         "glitch": {
             "type": "flicker",
             "duration": 300
@@ -195,7 +193,7 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_class_2": {
         character: "sea_smile",
-        next: "day2_morning_class_3"
+        next: "day2_morning_pen_1"
     },
 
     // ===== 교실 — 출석 & 설화 =====
@@ -320,12 +318,12 @@ Object.assign(SCENARIO[2], {
     },
     "day2_morning_seolhwa_4": {
         character: "seolhwa_quiet",
-        next: "day2_morning_seolhwa_5"
+        next: "day2_morning_seolhwa_5",
+        glitch: { silence: true, silenceDuration: 2000 }
     },
     "day2_morning_seolhwa_5": {
         character: "seolhwa_quiet",
-        next: "day2_morning_end",
-        glitch: { silence: true, silenceDuration: 2000 }
+        next: "day2_morning_end"
     },
 
     // ===== 아침 종료 → 방송 사고 이벤트 → 점심 =====
@@ -357,7 +355,6 @@ Object.assign(SCENARIO[2], {
     },
     "day2_broadcast_4": {
         character: null,
-        charOpacity: 0.35,
         stopSfx: "sfx_static.mp3",
         next: "day2_broadcast_5"
     },
@@ -378,6 +375,7 @@ Object.assign(SCENARIO[2], {
 // Expansion work order 2026-10-16
 Object.assign(SCENARIO[2], {
     "day2_morning_pen_1": {
+        "background": "classroom",
         "character": "sea_normal",
         "next": "day2_morning_pen_2"
     },
@@ -504,7 +502,7 @@ Object.assign(SCENARIO[2], {
     "day2_morning_pen_corridor_branch": {
         "branches": [
             {
-                "condition": "met_yuna",
+                "condition": "yuna_route_started",
                 "next": "day2_morning_pen_yuna_1"
             }
         ],
@@ -554,7 +552,7 @@ Object.assign(SCENARIO[2], {
     "day2_morning_pen_yuna_8": {
         "background": "corridor",
         "character": "yuna_normal",
-        "next": "day2_morning_deja4_6"
+        "next": "day2_morning_class_3"
     },
     "day2_morning_pen_eunsu_1": {
         "background": "corridor",
@@ -598,9 +596,9 @@ Object.assign(SCENARIO[2], {
         "next": "day2_morning_pen_eunsu_8"
     },
     "day2_morning_pen_eunsu_8": {
-        "background": "corridor",
+        "background": "classroom",
         "character": "eunsu_gentle",
-        "next": "day2_morning_deja4_6"
+        "next": "day2_morning_class_3"
     },
     "day2_history_callback_5": {
         "character": "sea_normal",

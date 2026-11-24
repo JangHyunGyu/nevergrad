@@ -209,7 +209,7 @@ Object.assign(SCENARIO[4], {
     "day4_morning_commute_4": {
         character: null,
         branches: [
-            { condition: "met_yuna", next: "day4_morning_commute_4_yuna" }
+            { condition: "yuna_memory_card", next: "day4_morning_commute_4_yuna" }
         ],
         next: "day4_morning_commute_5"
     },
@@ -356,7 +356,7 @@ Object.assign(SCENARIO[4], {
 
     // 선택2: 먼저 가겠다고 한다
     "day4_morning_eunsu_refuse": {
-        character: null,
+        character: "eunsu_gentle",
         next: "day4_morning_eunsu_refuse_2"
     },
     "day4_morning_eunsu_refuse_2": {
@@ -373,7 +373,7 @@ Object.assign(SCENARIO[4], {
     },
     // '위험'의 무게가 달라졌다 — 경고다
     "day4_morning_eunsu_refuse_4": {
-        character: null,
+        character: "eunsu_cold",
         next: "day4_morning_eunsu_refuse_5"
     },
     // 은수가 반 걸음 뒤에서 따라온다
@@ -392,7 +392,7 @@ Object.assign(SCENARIO[4], {
         "character": null,
         "branches": [
             {
-                "condition": "met_yuna",
+                "condition": "yuna_route_started",
                 "next": "day4_morning_classroom_met"
             }
         ],
@@ -449,7 +449,6 @@ Object.assign(SCENARIO[4], {
     },
     // 앞자리 남학생에게 질문 (sea_3 → sea_4는 yuna_memory_card=true 전용)
     "day4_morning_sea_4": {
-        background: "closeup_sd_card",
         character: null,
         glitch: { noise: true, noiseDuration: 160 },
         next: "day4_morning_sea_5"
@@ -684,13 +683,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_morning_sea_watch_high_10": {
         "character": "sea_stare",
-        "next": "day4_morning_sea_watch_high_11",
-        "glitch": {
-            "memoryFlash": {
-                "background": "cg_cycle07_seolhwa",
-                "duration": 450
-            }
-        }
+        "next": "day4_morning_sea_watch_high_11"
     },
     "day4_morning_sea_watch_high_11": {
         "character": "sea_stare",

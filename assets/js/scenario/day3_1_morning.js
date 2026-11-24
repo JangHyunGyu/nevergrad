@@ -46,7 +46,6 @@ Object.assign(SCENARIO[3], {
     "day3_morning_mirror_3": {
         background: "room_morning",
         character: null,
-        glitch: { mirrorFog: true },
         next: "day3_morning_milk_1"
     },
 
@@ -159,6 +158,7 @@ Object.assign(SCENARIO[3], {
 
     // ===== 사진 조각 발견 =====
     "day3_morning_photo_1": {
+        background: "hallway",
         character: null,
         next: "day3_morning_photo_2"
     },
@@ -186,6 +186,7 @@ Object.assign(SCENARIO[3], {
         setFlags: ["found_locker_inscription"]
     },
     "day3_morning_inscription_3": {
+        background: "corridor",
         character: "seolhwa_quiet",
         next: "day3_morning_seolhwa_1"
     },
@@ -226,8 +227,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_morning_seolhwa_8"
     },
     "day3_morning_seolhwa_8": {
-        character: "seolhwa_sad",
-        charOpacity: 0.78,
+        character: null,
         next: "day3_morning_seolhwa_9"
     },
     "day3_morning_seolhwa_9": {
@@ -391,23 +391,22 @@ Object.assign(SCENARIO[3], {
         }
     },
     "day3_morning_photo_look_detail_1": {
-        "background": "closeup_cctv_led",
+        "background": "hallway",
         "character": null,
-        "sfx": "sfx_camera_shutter.mp3",
         "next": "day3_morning_photo_look_detail_2"
     },
     "day3_morning_photo_look_detail_2": {
-        "background": "closeup_cctv_led",
+        "background": "hallway",
         "character": null,
         "next": "day3_morning_photo_look_detail_3"
     },
     "day3_morning_photo_look_detail_3": {
-        "background": "closeup_cctv_led",
+        "background": "hallway",
         "character": null,
         "next": "day3_morning_photo_look_detail_4"
     },
     "day3_morning_photo_look_detail_4": {
-        "background": "closeup_cctv_led",
+        "background": "hallway",
         "character": null,
         "next": "day3_morning_photo_look_detail_5",
         "branches": [
@@ -418,12 +417,12 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "day3_morning_photo_look_detail_5": {
-        "background": "closeup_cctv_led",
+        "background": "hallway",
         "character": null,
         "next": "day3_morning_photo_look_detail_6"
     },
     "day3_morning_photo_look_detail_6": {
-        "background": "closeup_cctv_led",
+        "background": "hallway",
         "character": null,
         "choices": [
             {
@@ -438,12 +437,12 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "day3_morning_photo_look_detail_7": {
-        "background": "closeup_cctv_led",
+        "background": "hallway",
         "character": null,
         "next": "day3_morning_photo_look_detail_8"
     },
     "day3_morning_photo_look_detail_8": {
-        "background": "closeup_cctv_led",
+        "background": "hallway",
         "character": null,
         "next": "day3_morning_photo_look_detail_9",
         "glitch": {
@@ -454,7 +453,7 @@ Object.assign(SCENARIO[3], {
         }
     },
     "day3_morning_photo_look_detail_9": {
-        "background": "closeup_cctv_led",
+        "background": "hallway",
         "character": null,
         "next": "day3_morning_photo_1"
     },
@@ -479,12 +478,12 @@ Object.assign(SCENARIO[3], {
     },
     "day3_morning_class_silence_4": {
         "background": "classroom",
-        "character": "sea_stare",
+        "character": "sea_smile",
         "next": "day3_morning_class_silence_5"
     },
     "day3_morning_class_silence_5": {
         "background": "classroom",
-        "character": "sea_stare",
+        "character": "sea_smile",
         "next": "day3_morning_class_silence_6"
     },
     "day3_morning_class_silence_6": {
@@ -534,27 +533,27 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "day3_morning_class_ask_1": {
-        "character": "sea_stare",
+        "character": null,
         "next": "day3_morning_class_ask_2"
     },
     "day3_morning_class_ask_2": {
-        "character": "sea_stare",
+        "character": null,
         "next": "day3_morning_class_ask_3"
     },
     "day3_morning_class_ask_3": {
-        "character": "sea_stare",
+        "character": null,
         "next": "day3_morning_class_ask_4"
     },
     "day3_morning_class_ask_4": {
-        "character": "sea_stare",
+        "character": null,
         "next": "day3_morning_class_ask_5"
     },
     "day3_morning_class_ask_5": {
-        "character": "sea_stare",
+        "character": null,
         "next": "day3_morning_class_ask_6"
     },
     "day3_morning_class_ask_6": {
-        "character": "sea_stare",
+        "character": null,
         "next": "day3_morning_class_ask_7",
         "glitch": {
             "memoryFlash": {

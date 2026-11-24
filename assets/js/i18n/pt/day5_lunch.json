@@ -55,7 +55,7 @@
         "text": "*A voz de Sea está rouca e embargada. As pontas das mangas dela já estão molhadas.*"
     },
     "day5_lunch_left_5a": {
-        "text": "Sea, mova-se."
+        "text": "Sea, sai da frente."
     },
     "day5_lunch_left_5b": {
         "text": "*Sea balança a cabeça e não sai da frente da porta.*"
@@ -67,7 +67,7 @@
         "text": "*Sea fecha as duas mãos em punhos. Os nós dos dedos ficam brancos.*\n\nO que vai fazer desta vez? Acha que bloquear o caminho me faz ficar?"
     },
     "day5_lunch_left_8": {
-        "text": "Eu sei o que estou fazendo."
+        "text": "Eu sei bem o que tô fazendo agora."
     },
     "day5_lunch_left_9": {
         "text": "Mas se você passar por aquela porta, no dia seguinte vai ter uma pessoa desconhecida parada na minha frente."
@@ -121,7 +121,7 @@
         "text": "...Eu tenho que sair do caminho desta vez também?"
     },
     "day5_lunch_left_choice": {
-        "text": "*Bum, bum, bum. Os passos na escada se aproximam. Sea olha na direção do som, mas não sai da frente.*\n\n*Uma frase desconhecida surge primeiro no meio dos meus pensamentos.*\n\n***`[PERMANÊNCIA APROVADA]`***",
+        "text": "*Bum, bum, bum. Os passos na escada se aproximam. Sea olha na direção do som, mas não sai da frente.*\n\n*Uma frase desconhecida surge primeiro no meio dos meus pensamentos.*\n\n***'[PERMANÊNCIA APROVADA]'***",
         "choices": [
             "\"Desculpa. Mas eu preciso ir.\"",
             "\"Vem comigo.\"",
@@ -147,7 +147,7 @@
         "text": "*Passei no Sea.*"
     },
     "day5_lunch_left_c1_7": {
-        "text": "*Atrás de mim — o som de alguém caindo sentado. Um uniforme escolar raspando no chão. E — uma respiração curta, presa.*"
+        "text": "*Atrás de mim, Sea desaba no chão; o uniforme varre o piso seguido de um suspiro curto.*"
     },
     "day5_lunch_left_c1_8": {
         "text": "...Adeus."
@@ -159,10 +159,10 @@
         "text": "*Os olhos de Sea se arregalam. O chaveiro na palma da mão dela para na hora.*\n\nNão vou te deixar aqui. Vamos sair juntos."
     },
     "day5_lunch_left_c2_3": {
-        "text": "...Se sairmos, você vai se lembrar de mim?"
+        "text": "Mesmo lá fora você vai lembrar do meu nome?"
     },
     "day5_lunch_left_c2_4": {
-        "text": "Eu vou lembrar de você."
+        "text": "Não vou esquecer."
     },
     "day5_lunch_left_c2_5": {
         "text": "...Eu nem sei como é lá fora."
@@ -265,7 +265,7 @@
         "text": "*Riin abre o armário. Há frascos de medicamento enfileirados.*\n\nPrimeiro me mostra o que tem nesse frasco."
     },
     "day5_lunch_right_15": {
-        "text": "*Ela abre o frasco de medicamento e o aproxima do nariz. Confere o cheiro por um instante e engole um gole.*\n\nA senhora beber na minha frente não me diz o que é. Fale."
+        "text": "*A professora Riin abre o vidro, cheira rápido e engole um gole direto.*\n\n...Professora, o que a senhora acabou de beber?"
     },
     "day5_lunch_right_16": {
         "text": "Não olhe o rótulo. Olhe atrás."
@@ -292,7 +292,7 @@
         "text": "Dose normal registrada. Código IV no frasco. Ajustei os números na folha de coleta de sangue."
     },
     "day5_lunch_right_24": {
-        "text": "O registro S-13 quase não tem campos ativos preenchidos. Os campos em branco são ignorados na revisão."
+        "text": "Na ficha S-13 quase todas as doses ativas ficam em branco; ninguém lá em cima confere campo vazio."
     },
     "day5_lunch_right_25": {
         "text": "Por quê?"
@@ -328,7 +328,7 @@
         "text": "...Eunsu não conhece essa chave. Após a 7ª vez troquei as fechaduras."
     },
     "day5_lunch_right_36": {
-        "text": "*No visor do painel de controle da persiana, `LOCAL OVERRIDE - R.IN` pisca. No mapa do app de segurança estudantil, só o corredor direito do prédio antigo aparece vazio em cinza.*"
+        "text": "*No visor do painel de controle da persiana, 'LOCAL OVERRIDE - R.IN' pisca. No mapa do app de segurança estudantil, só o corredor direito do prédio antigo aparece vazio em cinza.*"
     },
     "day5_lunch_right_37": {
         "text": "*Bang! A persiana corta-fogo tremeu violentamente. Alguém está batendo lá fora. Eunsu, ou a 'administração', alcançou.*"
@@ -357,7 +357,7 @@
         "text": "...isso também é um procedimento?"
     },
     "day5_lunch_right_c3_2": {
-        "text": "*Ela pega uma seringa e injeta o diluente inativo no próprio braço.*\n\nSó porque aplicou em si mesma, não vou acreditar de uma hora para outra."
+        "text": "*A professora Riin pega a seringa e aplica no próprio braço sem hesitar.*\n\n...O que a senhora tá fazendo?!"
     },
     "day5_lunch_right_c3_3": {
         "text": "...Você viu atrás do rótulo. Conferiu?"
@@ -550,6 +550,6 @@
         "text": "A lista de alunos fica embaixo. Você escreve neste campo."
     },
     "day5_lunch_complicit_2": {
-        "text": "*Ao lado do nome de Yuna ainda está escrito “isolamento”. Fecho o registro.*"
+        "text": "*Na frente do nome da Yuna ainda consta 'Isolamento'. Fecho o livro de chamada.*"
     }
 }

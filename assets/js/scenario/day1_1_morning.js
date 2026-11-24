@@ -128,8 +128,8 @@ Object.assign(SCENARIO[1], {
     },
     "day1_gate_ngp_teacher_2": {
         character: null,
-        // 주인공은 즉시 자기부정 (SCENARIO.md 5532-5534)
-        next: "day1_classroom_1"
+        // 주인공은 즉시 자기부정 (SCENARIO.md 5532-5534) 후 복도에서 세아와 조우
+        next: "day1_sea_meet_1"
     },
 
     // ── 미세 공포 핀: CCTV (위화감 0%, 주인공은 전혀 의식하지 않음) ──
@@ -217,6 +217,7 @@ Object.assign(SCENARIO[1], {
     // =====================================================================
     // L119: 한세아 "혹시 전학생?"
     "day1_sea_meet_1": {
+        background: "hallway",
         character: "sea_smile",
         stopSfx: true,
         next: "day1_sea_meet_2",
@@ -269,6 +270,7 @@ Object.assign(SCENARIO[1], {
     },
     // L139: *세아가 앞서 걷는다...*
     "day1_sea_meet_11": {
+        background: "corridor",
         character: "sea_normal",
         next: "day1_sea_meet_12"
     },
@@ -430,7 +432,7 @@ Object.assign(SCENARIO[1], {
     },
     // L190: *세아의 표정이 아주 미세하게 경직됐다...*
     "day1_choco_question_2": {
-        character: "sea_smile",
+        character: "sea_serious",
         next: "day1_choco_question_3"
     },
     // L192: 한세아 "...1+1이었다니까?..."
@@ -702,7 +704,7 @@ Object.assign(SCENARIO[1], {
     },
     // L294: *뒤를 봤다. 설화가 창밖을 보고 있다. 구석의 안경 남학생도...*
     "day1_seolhwa_greet_11": {
-        character: null,
+        character: "seolhwa_quiet",
         next: "day1_seolhwa_greet_12"
     },
     // L296: 나 "그런가. 조용한 타입이구나."

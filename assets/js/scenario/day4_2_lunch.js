@@ -81,6 +81,7 @@ Object.assign(SCENARIO[4], {
 
     // ── 카메라 사진 확인 ──
     "day4_lunch_yuna_7": {
+        background: "photo_club_room",
         character: null,
         // 200장, 양복 차림 사람들, 3년 증거
         next: "day4_lunch_yuna_8"
@@ -167,7 +168,7 @@ Object.assign(SCENARIO[4], {
         unskippable: true,
         choices: [
             { next: "day4_lunch_yuna_19", stats: { yuna: { affinity: 4 }, eunsu: { affinity: -3 } } },
-            { next: "day4_lunch_yuna_19", stats: { riin: { affinity: 2 } } },
+            { next: "day4_lunch_yuna_19", condition: "met_riin", stats: { riin: { affinity: 2 } } },
             { next: "day4_lunch_yuna_19", stats: { seolhwa: { affinity: 2 } } }
         ]
     },
@@ -207,6 +208,7 @@ Object.assign(SCENARIO[4], {
         "next": "day4_lunch_nurse_tray_1"
     },
     "day4_lunch_nurse_3": {
+        background: "nurse_office",
         character: "riin_syringe",
         // 나를 보고 멈춘다
         next: "day4_lunch_nurse_4"
@@ -226,7 +228,7 @@ Object.assign(SCENARIO[4], {
     },
     // ── met_yuna = false: 유나 대신 주사기에 대해 질문 ──
     "day4_lunch_nurse_noyuna": {
-        character: null,
+        character: "riin_syringe",
         next: "day4_lunch_nurse_noyuna_2"
     },
     "day4_lunch_nurse_noyuna_2": {
@@ -239,7 +241,7 @@ Object.assign(SCENARIO[4], {
     },
     // ── met_yuna = true: 유나 전학 언급 ──
     "day4_lunch_nurse_6": {
-        character: null,
+        character: "riin_syringe",
         // 유나 전학 언급
         next: "day4_lunch_nurse_7"
     },
@@ -350,7 +352,7 @@ Object.assign(SCENARIO[4], {
         character: null,
         // 작은 글씨: "지하에 답이 있어"
         choices: [
-            { next: "day4_lunch_roof_5", stats: { seolhwa: { affinity: 3 } } },
+            { next: "day4_lunch_roof_5", setFlags: ["photographed_rooftop_mark"], stats: { seolhwa: { affinity: 3 } } },
             { next: "day4_lunch_roof_5", stats: { yuna: { affinity: 1 }, eunsu: { affinity: -1 } } }
         ]
     },
@@ -417,27 +419,27 @@ Object.assign(SCENARIO[4], {
         "next": "day4_lunch_end"
     },
     "day4_lunch_darkroom_1": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_2"
     },
     "day4_lunch_darkroom_2": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_3"
     },
     "day4_lunch_darkroom_3": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_4"
     },
     "day4_lunch_darkroom_4": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_5"
     },
     "day4_lunch_darkroom_5": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_6",
         "branches": [
@@ -448,7 +450,7 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "day4_lunch_darkroom_6": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_7",
         "glitch": {
@@ -459,17 +461,17 @@ Object.assign(SCENARIO[4], {
         }
     },
     "day4_lunch_darkroom_7": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_8"
     },
     "day4_lunch_darkroom_8": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_9"
     },
     "day4_lunch_darkroom_9": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "choices": [
             {
@@ -484,7 +486,7 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "day4_lunch_darkroom_10": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_11",
         "branches": [
@@ -495,12 +497,12 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "day4_lunch_darkroom_11": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_darkroom_12"
     },
     "day4_lunch_darkroom_12": {
-        "background": "cg_cycle12_yuna",
+        "background": "photo_club_room",
         "character": null,
         "next": "day4_lunch_yuna_7"
     },
@@ -585,36 +587,37 @@ Object.assign(SCENARIO[4], {
         "next": "day4_lunch_yuna_breath_fail_5"
     },
     "day4_lunch_yuna_breath_fail_5": {
-        "character": "eunsu_cold",
+        "stopSfx": { file: "sfx_machine_hum_loop.mp3", fadeOut: 0.8 },
+        "character": null,
         "next": "day4_lunch_end"
     },
     "day4_lunch_nurse_tray_1": {
         "background": "closeup_m13_ampoule",
-        "character": "riin_strained_smile",
+        "character": null,
         "next": "day4_lunch_nurse_tray_2"
     },
     "day4_lunch_nurse_tray_2": {
         "background": "closeup_m13_ampoule",
-        "character": "riin_strained_smile",
+        "character": null,
         "next": "day4_lunch_nurse_tray_3"
     },
     "day4_lunch_nurse_tray_3": {
-        "background": "closeup_m13_ampoule",
+        "background": "nurse_office",
         "character": "riin_strained_smile",
         "next": "day4_lunch_nurse_tray_4"
     },
     "day4_lunch_nurse_tray_4": {
-        "background": "closeup_m13_ampoule",
+        "background": "nurse_office",
         "character": "riin_strained_smile",
         "next": "day4_lunch_nurse_tray_5"
     },
     "day4_lunch_nurse_tray_5": {
         "background": "closeup_m13_ampoule",
-        "character": "riin_strained_smile",
+        "character": null,
         "next": "day4_lunch_nurse_tray_6"
     },
     "day4_lunch_nurse_tray_6": {
-        "background": "closeup_m13_ampoule",
+        "background": "nurse_office",
         "character": "riin_strained_smile",
         "next": "day4_lunch_nurse_tray_7",
         "branches": [
@@ -625,19 +628,13 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "day4_lunch_nurse_tray_7": {
-        "background": "closeup_m13_ampoule",
+        "background": "nurse_office",
         "character": "riin_strained_smile",
-        "next": "day4_lunch_nurse_tray_8",
-        "glitch": {
-            "memoryFlash": {
-                "background": "cg_cycle07_seolhwa",
-                "duration": 450
-            }
-        }
+        "next": "day4_lunch_nurse_tray_8"
     },
     "day4_lunch_nurse_tray_8": {
         "background": "closeup_m13_ampoule",
-        "character": "riin_strained_smile",
+        "character": null,
         "next": "day4_lunch_nurse_3"
     },
     "day4_lunch_nurse_key_1": {
@@ -661,13 +658,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_nurse_key_5": {
         "character": "riin_pain",
-        "next": "day4_lunch_nurse_key_6",
-        "glitch": {
-            "memoryFlash": {
-                "background": "cg_cycle12_yuna",
-                "duration": 450
-            }
-        }
+        "next": "day4_lunch_nurse_key_6"
     },
     "day4_lunch_nurse_key_6": {
         "character": "riin_pain",
@@ -713,22 +704,22 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_roof_etch_1": {
         "background": "closeup_rooftop_etching",
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day4_lunch_roof_etch_2"
     },
     "day4_lunch_roof_etch_2": {
         "background": "closeup_rooftop_etching",
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day4_lunch_roof_etch_3"
     },
     "day4_lunch_roof_etch_3": {
         "background": "closeup_rooftop_etching",
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day4_lunch_roof_etch_4"
     },
     "day4_lunch_roof_etch_4": {
         "background": "closeup_rooftop_etching",
-        "character": "seolhwa_warning",
+        "character": null,
         "choices": [
             {
                 "next": "day4_expansion_action_7_a"
@@ -743,7 +734,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_lunch_roof_etch_5": {
         "background": "closeup_rooftop_etching",
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day4_lunch_roof_etch_6",
         "branches": [
             {
@@ -753,12 +744,12 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "day4_lunch_roof_etch_6": {
-        "background": "closeup_rooftop_etching",
-        "character": "seolhwa_warning",
+        "background": "rooftop",
+        "character": "seolhwa_quiet",
         "next": "day4_lunch_roof_etch_7"
     },
     "day4_lunch_roof_etch_7": {
-        "background": "closeup_rooftop_etching",
+        "background": "rooftop",
         "character": "seolhwa_warning",
         "next": "day4_lunch_roof_etch_8",
         "glitch": {
@@ -769,12 +760,12 @@ Object.assign(SCENARIO[4], {
         }
     },
     "day4_lunch_roof_etch_8": {
-        "background": "closeup_rooftop_etching",
+        "background": "rooftop",
         "character": "seolhwa_warning",
         "next": "day4_lunch_roof_etch_9"
     },
     "day4_lunch_roof_etch_9": {
-        "background": "closeup_rooftop_etching",
+        "background": "rooftop",
         "character": "seolhwa_warning",
         "next": "day4_lunch_roof_memory_choice"
     },
@@ -879,7 +870,7 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "day4_lunch_roof_record_1": {
-        "character": null,
+        "character": "seolhwa_sad",
         "next": "day4_lunch_roof_record_2"
     },
     "day4_lunch_roof_record_2": {
@@ -891,7 +882,7 @@ Object.assign(SCENARIO[4], {
         "next": "day4_lunch_roof_3"
     },
     "day4_lunch_roof_left_1": {
-        "character": null,
+        "character": "seolhwa_sad",
         "next": "day4_lunch_roof_left_2"
     },
     "day4_lunch_roof_left_2": {
@@ -911,7 +902,7 @@ Object.assign(SCENARIO[4], {
         "next": "day4_lunch_darkroom_11"
     },
     "day4_history_callback_30": {
-        "character": "riin_strained_smile",
+        "character": null,
         "next": "day4_lunch_nurse_tray_7"
     },
     "day4_history_callback_31": {
@@ -919,7 +910,7 @@ Object.assign(SCENARIO[4], {
         "next": "day4_lunch_nurse_key_8"
     },
     "day4_history_callback_32": {
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day4_lunch_roof_etch_6"
     },
     "day4_history_callback_33": {
@@ -935,11 +926,11 @@ Object.assign(SCENARIO[4], {
         "next": "day4_lunch_darkroom_10"
     },
     "day4_expansion_action_7_a": {
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day4_lunch_roof_etch_5"
     },
     "day4_expansion_action_7_b": {
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day4_lunch_roof_etch_5"
     }
 });

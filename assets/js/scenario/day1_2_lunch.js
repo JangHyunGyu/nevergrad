@@ -272,11 +272,11 @@ Object.assign(SCENARIO[1], {
     },
     // 보건실에서 잠깐 잠들기
     "day1_lunch_riin_13": {
-        character: "riin_gentle",
+        character: null,
         next: "day1_lunch_riin_14"
     },
     "day1_lunch_riin_14": {
-        character: "riin_gentle",
+        character: null,
         next: "day1_lunch_riin_15"
     },
     "day1_lunch_riin_15": {
@@ -371,7 +371,7 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_sea_menu_1": { character: "sea_smile", next: "day1_lunch_sea_menu_2" },
     "day1_lunch_sea_menu_2": { character: "sea_smile", next: "day1_lunch_sea_menu_3" },
     "day1_lunch_sea_menu_3": { character: "sea_normal", next: "day1_lunch_sea_menu_4" },
-    "day1_lunch_sea_menu_4": { character: "sea_smile", next: "day1_lunch_sea_menu_5" },
+    "day1_lunch_sea_menu_4": { character: "sea_normal", next: "day1_lunch_sea_menu_5" },
     "day1_lunch_sea_menu_5": { character: "sea_smile", next: "day1_lunch_sea_menu_6" },
     "day1_lunch_sea_menu_6": { character: "sea_smile", next: "day1_lunch_sea_menu_7" },
     "day1_lunch_sea_menu_7": { character: "sea_smile", next: "day1_lunch_sea_menu_13" },
@@ -447,7 +447,7 @@ Object.assign(SCENARIO[1], {
     "day1_lunch_alone_rail_8": { character: null, next: "day1_lunch_alone_rail_9" },
     "day1_lunch_alone_rail_9": { character: null, next: "day1_lunch_alone_rail_10" },
     "day1_lunch_alone_rail_10": { character: null, next: "day1_lunch_alone_rail_11" },
-    "day1_lunch_alone_rail_11": { background: "stairway", character: null, next: "day1_lunch_alone_rail_12" },
+    "day1_lunch_alone_rail_11": { background: "stairway", stopSfx: "sfx_wind.mp3", character: null, next: "day1_lunch_alone_rail_12" },
     "day1_lunch_alone_rail_12": { character: null, next: "day1_lunch_alone_rail_13" },
     "day1_lunch_alone_rail_13": { character: null, next: "day1_lunch_alone_rail_14" },
     "day1_lunch_alone_rail_14": { background: "corridor", character: null, next: "day1_lunch_alone_rail_15" },

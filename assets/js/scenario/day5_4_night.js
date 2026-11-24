@@ -16,7 +16,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
 Object.assign(SCENARIO[5], {
 
     "day5_night_start": {
-        skipTextFlags: ["route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell"],
+        skipTextFlags: ["route_true","route_escape","route_resist","route_forget","route_ghost","ending_bridge_true_done","ending_bridge_resist_done","ending_bridge_forget_done","ending_bridge_ghost_done","ending_bridge_true_farewell","caught_by_sea","caught_by_riin","forced_forget","ghost_guided"],
         background: "black",
         bgm: null,
         character: null,
@@ -200,7 +200,7 @@ Object.assign(SCENARIO[5], {
 
     // ── 붙잡힘 후 강제 망각 진입 ──
     "day5_ending_forget_forced_1": {
-        background: "emergency_exit",
+        background: "basement",
         bgm: null,
         character: null,
         unskippable: true,
@@ -344,25 +344,30 @@ Object.assign(SCENARIO[5], {
         "next": "day5_ending_true_15"
     },
     "day5_ending_true_15": {
+        timeOfDay: "night",
         character: "seolhwa_sad",
         charOpacity: 0.9,
         next: "day5_ending_true_voice_check"
     },
     "day5_ending_true_16": {
+        timeOfDay: "night",
         character: "seolhwa_normal",
         charOpacity: 0.9,
         next: "day5_ending_true_17"
     },
     "day5_ending_true_17": {
+        timeOfDay: "night",
         character: null,
         branches: [{ condition: "ending_bridge_true_farewell", next: "day5_after_true_12" }],
         next: "day5_ending_true_18"
     },
     "day5_ending_true_18": {
+        timeOfDay: "night",
         character: null,
         next: "day5_ending_true_19"
     },
     "day5_ending_true_19": {
+        timeOfDay: "night",
         background: "emergency_stair_night",
         bgm: "ending_hope.mp3",
         character: null,
@@ -370,29 +375,35 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_20"
     },
     "day5_ending_true_20": {
+        timeOfDay: "night",
         character: null,
         next: "day5_ending_true_21"
     },
     "day5_ending_true_21": {
+        timeOfDay: "night",
         character: null,
         next: "day5_ending_true_21a"
     },
     "day5_ending_true_21a": {
+        timeOfDay: "night",
         character: null,
         glitch: { noise: true, noiseDuration: 300 },
         unskippable: true,
         next: "day5_ending_true_22"
     },
     "day5_ending_true_22": {
+        timeOfDay: "night",
         character: "yuna_normal",
         next: "day5_ending_true_23"
     },
     "day5_ending_true_23": {
+        timeOfDay: "night",
         character: "yuna_normal",
         next: "day5_ending_true_24"
     },
     // ── 에필로그 / 3개월 후 ──
     "day5_ending_true_24": {
+        timeOfDay: "night",
         background: "emergency_stair_night",
         character: null,
         fadeOut: false,
@@ -400,18 +411,21 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_25"
     },
     "day5_ending_true_25": {
+        timeOfDay: "night",
         character: "yuna_normal",
         background: "emergency_stair_night",
         unskippable: true,
         next: "day5_ending_true_26"
     },
     "day5_ending_true_26": {
+        timeOfDay: null,
         background: "news_article",
         character: null,
         unskippable: true,
         next: "day5_ending_true_27"
     },
     "day5_ending_true_27": {
+        timeOfDay: null,
         character: null,
         unskippable: true,
         next: "day5_ending_true_riin_check"
@@ -423,22 +437,28 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_true_29"
     },
     "day5_ending_true_29": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_true_30"
     },
     "day5_ending_true_30": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_true_memory_check"
     },
     "day5_ending_true_31": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_true_32"
     },
     "day5_ending_true_32": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_true_title"
     },
     "day5_ending_true_title": {
+        timeOfDay: null,
+        background: "ending_true_dawn",
         character: null,
         endingTitle: "TRUE END",
         endingSubtitle: "day5_ending_true_subtitle",
@@ -480,7 +500,7 @@ Object.assign(SCENARIO[5], {
     "day5_xover_server_3_damaged": {
         character: null,
         typingSpeed: 40,
-        next: "day5_xover_server_end"
+        next: "day5_xover_server_preview_choice"
     },
     // Cupid 플레이어: cycle_01 [정상] → PREVIEW 선택지
     "day5_xover_server_4": {
@@ -507,6 +527,7 @@ Object.assign(SCENARIO[5], {
     },
     // PREVIEW 실행 — Cupid Day 1 오프닝 연출
     "day5_xover_preview_1": {
+        timeOfDay: "morning",
         background: "cherry_blossom",
         bgm: "spring_bright.mp3",
         character: null,
@@ -514,14 +535,17 @@ Object.assign(SCENARIO[5], {
         next: "day5_xover_preview_2"
     },
     "day5_xover_preview_2": {
+        timeOfDay: "morning",
         character: null,
         next: "day5_xover_preview_3"
     },
     "day5_xover_preview_3": {
+        timeOfDay: "morning",
         character: null,
         next: "day5_xover_preview_4"
     },
     "day5_xover_preview_4": {
+        timeOfDay: "morning",
         character: null,
         next: "day5_xover_preview_heroine"
     },
@@ -534,6 +558,7 @@ Object.assign(SCENARIO[5], {
     },
     // cycle_01 표시 + 페이드아웃
     "day5_xover_preview_5": {
+        timeOfDay: "morning",
         character: null,
         glitch: { noise: true, noiseDuration: 500 },
         unskippable: true,
@@ -704,18 +729,22 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_escape_2"
     },
     "day5_ending_escape_2": {
+        timeOfDay: "dawn",
         character: null,
         next: "day5_ending_escape_3"
     },
     "day5_ending_escape_3": {
+        timeOfDay: "dawn",
         character: null,
         next: "day5_ending_escape_4"
     },
     "day5_ending_escape_4": {
+        timeOfDay: "dawn",
         character: "yuna_normal",
         next: "day5_ending_escape_5"
     },
     "day5_ending_escape_5": {
+        timeOfDay: "dawn",
         character: null,
         next: "day5_ending_escape_6"
     },
@@ -725,26 +754,32 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_escape_7"
     },
     "day5_ending_escape_7": {
+        timeOfDay: "dawn",
         character: null,
         next: "day5_ending_escape_8"
     },
     "day5_ending_escape_8": {
+        timeOfDay: "dawn",
         character: null,
         next: "day5_ending_escape_9"
     },
     "day5_ending_escape_9": {
+        timeOfDay: "dawn",
         character: "yuna_normal",
         next: "day5_ending_escape_10"
     },
     "day5_ending_escape_10": {
+        timeOfDay: "dawn",
         character: null,
         next: "day5_ending_escape_11"
     },
     "day5_ending_escape_11": {
+        timeOfDay: "dawn",
         character: null,
         next: "day5_ending_escape_12"
     },
     "day5_ending_escape_12": {
+        timeOfDay: "dawn",
         character: null,
         glitch: { noise: true },
         unskippable: true,
@@ -759,14 +794,18 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_escape_riin_check"
     },
     "day5_ending_escape_14": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_escape_15"
     },
     "day5_ending_escape_15": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_epilogue_1"
     },
     "day5_ending_escape_title": {
+        timeOfDay: null,
+        background: "ending_escape",
         character: null,
         endingTitle: "ESCAPE END",
         endingSubtitle: "day5_ending_escape_subtitle",
@@ -829,17 +868,14 @@ Object.assign(SCENARIO[5], {
     },
     "day5_ending_resist_11": {
         "character": "eunsu_shaking",
-        "charOpacity": 0.9,
         "next": "day5_ending_resist_12"
     },
     "day5_ending_resist_12": {
         "character": "eunsu_shaking",
-        "charOpacity": 0.9,
         "next": "day5_ending_resist_13"
     },
     "day5_ending_resist_13": {
         "character": "eunsu_shaking",
-        "charOpacity": 0.9,
         "next": "day5_ending_resist_14"
     },
     "day5_ending_resist_14": {
@@ -899,15 +935,19 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_resist_23"
     },
     "day5_ending_resist_23": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_resist_24"
     },
     "day5_ending_resist_24": {
+        "timeOfDay": null,
         "background": "faculty_office",
         "character": null,
         "next": "day5_ending_resist_epilogue_1"
     },
     "day5_ending_resist_title": {
+        timeOfDay: null,
+        background: "ending_resist",
         character: null,
         endingTitle: "RESIST END",
         endingSubtitle: "day5_ending_resist_subtitle",
@@ -953,22 +993,27 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_eunsu_7"
     },
     "day5_ending_cage_eunsu_7": {
+        timeOfDay: "sunset",
         character: null,
         next: "day5_ending_cage_eunsu_8"
     },
     "day5_ending_cage_eunsu_8": {
+        timeOfDay: "sunset",
         character: null,
         next: "day5_ending_cage_eunsu_9"
     },
     "day5_ending_cage_eunsu_9": {
+        timeOfDay: "sunset",
         character: null,
         next: "day5_ending_cage_eunsu_10"
     },
     "day5_ending_cage_eunsu_10": {
+        timeOfDay: "sunset",
         character: null,
         next: "day5_ending_cage_eunsu_11"
     },
     "day5_ending_cage_eunsu_11": {
+        "timeOfDay": "sunset",
         "character": null,
         "next": "day5_ending_cage_eunsu_epilogue_1"
     },
@@ -1005,14 +1050,20 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_cage_sea_7"
     },
     "day5_ending_cage_sea_7": {
+        timeOfDay: null,
+        background: "ending_cage_sea",
         character: null,
         next: "day5_ending_cage_sea_8"
     },
     "day5_ending_cage_sea_8": {
+        timeOfDay: null,
+        background: "ending_cage_sea",
         character: null,
         next: "day5_ending_cage_sea_9"
     },
     "day5_ending_cage_sea_9": {
+        "timeOfDay": null,
+        "background": "ending_cage_sea",
         "character": null,
         "next": "day5_ending_cage_sea_epilogue_1"
     },
@@ -1020,6 +1071,7 @@ Object.assign(SCENARIO[5], {
     // 게임이 끝나지 않는다. 엔딩 크레딧이 뜨지 않는다.
     // 화면이 어두워졌다 밝아지며 "Day 1"이 반복된다.
     "day5_ending_cage_title": {
+        timeOfDay: null,
         background: "ending_cage",
         character: null,
         endingTitle: "CAGE END",
@@ -1169,6 +1221,7 @@ Object.assign(SCENARIO[5], {
     },
     // ── 화이트아웃 후 새 아침 ──
     "day5_ending_forget_13": {
+        timeOfDay: null,
         character: null,
         background: "white",
         fadeOut: true,
@@ -1180,9 +1233,11 @@ Object.assign(SCENARIO[5], {
         "background": "room_morning",
         "bgm": "morning_peaceful.mp3",
         "unskippable": true,
-        "next": "day5_ending_forget_epilogue_1"
+        "next": "day5_ending_forget_15"
     },
     "day5_ending_forget_15": {
+        timeOfDay: "morning",
+        background: "room_morning",
         character: null,
         next: "day5_ending_forget_16"
     },
@@ -1199,20 +1254,24 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_forget_19"
     },
     "day5_ending_forget_19": {
+        timeOfDay: "morning",
         background: "school_gate",
         character: "eunsu_smile",
         unskippable: true,
         next: "day5_ending_forget_20"
     },
     "day5_ending_forget_20": {
+        timeOfDay: "morning",
         character: "eunsu_smile",
         next: "day5_ending_forget_21"
     },
     "day5_ending_forget_21": {
+        timeOfDay: "morning",
         character: "eunsu_smile",
         next: "day5_ending_forget_22"
     },
     "day5_ending_forget_22": {
+        timeOfDay: "morning",
         character: "eunsu_smile",
         background: "school_gate",
         unskippable: true,
@@ -1224,24 +1283,28 @@ Object.assign(SCENARIO[5], {
         affinityChar: "sea",
         affinityBranches: [
             { minAffinity: 50, next: "day5_ending_forget_sea_1" },
-            { minAffinity: -100, next: "day5_ending_forget_title" }
+            { minAffinity: -100, next: "day5_ending_forget_epilogue_1" }
         ]
     },
     "day5_ending_forget_sea_1": {
+        timeOfDay: "morning",
         background: "school_gate",
         character: "sea_smile",
         unskippable: true,
         next: "day5_ending_forget_sea_2"
     },
     "day5_ending_forget_sea_2": {
+        timeOfDay: "morning",
         character: "sea_smile",
         next: "day5_ending_forget_sea_3"
     },
     "day5_ending_forget_sea_3": {
+        timeOfDay: "morning",
         character: null,
         next: "day5_ending_forget_title"
     },
     "day5_ending_forget_title": {
+        timeOfDay: null,
         background: "ending_forget",
         character: null,
         endingTitle: "FORGET END",
@@ -1353,26 +1416,33 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_ghost_18"
     },
     "day5_ending_ghost_18": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_ghost_19"
     },
     "day5_ending_ghost_19": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_ghost_20"
     },
     "day5_ending_ghost_20": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_ghost_21"
     },
     "day5_ending_ghost_21": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_ghost_22"
     },
     "day5_ending_ghost_22": {
+        "timeOfDay": null,
         "character": null,
         "next": "day5_ending_ghost_epilogue_1"
     },
     "day5_ending_ghost_title": {
+        timeOfDay: null,
+        background: "ending_ghost",
         character: null,
         endingTitle: "GHOST END",
         endingSubtitle: "day5_ending_ghost_subtitle",
@@ -1444,10 +1514,12 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_10"
     },
     "day5_ending_complicit_10": {
+        timeOfDay: null,
         character: null,
         next: "day5_ending_complicit_11"
     },
     "day5_ending_complicit_11": {
+        timeOfDay: null,
         character: null,
         fadeOut: true,
         unskippable: true,
@@ -1455,6 +1527,7 @@ Object.assign(SCENARIO[5], {
     },
     // ── 에필로그 ──
     "day5_ending_complicit_12": {
+        timeOfDay: "morning",
         background: "school_gate_morning",
         bgm: null,
         character: null,
@@ -1462,32 +1535,40 @@ Object.assign(SCENARIO[5], {
         next: "day5_ending_complicit_13"
     },
     "day5_ending_complicit_13": {
+        timeOfDay: "morning",
         character: null,
         next: "day5_ending_complicit_14"
     },
     "day5_ending_complicit_14": {
+        timeOfDay: "morning",
         character: null,
         next: "day5_ending_complicit_15"
     },
     "day5_ending_complicit_15": {
+        timeOfDay: "morning",
         character: null,
         next: "day5_ending_complicit_16"
     },
     "day5_ending_complicit_16": {
+        timeOfDay: "morning",
         character: null,
         next: "day5_ending_complicit_17"
     },
     "day5_ending_complicit_17": {
+        timeOfDay: "morning",
         characters: { left: "eunsu_normal", right: "seolhwa_quiet" },
         background: "corridor",
         character: null,
         next: "day5_ending_complicit_18"
     },
     "day5_ending_complicit_18": {
+        "timeOfDay": "morning",
         "character": null,
         "next": "day5_ending_complicit_epilogue_1"
     },
     "day5_ending_complicit_title": {
+        timeOfDay: null,
+        background: "ending_complicit",
         character: null,
         endingTitle: "COMPLICIT END",
         endingSubtitle: "day5_ending_complicit_subtitle",
@@ -1565,10 +1646,12 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "day5_ending_true_27_riin": {
+        "timeOfDay": null,
         "character": null,
         "next": "day5_ending_true_27_riin_2"
     },
     "day5_ending_true_27_riin_2": {
+        "timeOfDay": null,
         "character": null,
         "next": "day5_ending_true_sea_check"
     },
@@ -1583,11 +1666,15 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "day5_ending_true_27_sea": {
+        "timeOfDay": null,
+        "background": "street",
         "character": null,
         "next": "day5_ending_true_27_sea_2"
     },
     "day5_ending_true_27_sea_2": {
-        "character": null,
+        "timeOfDay": null,
+        "background": "street",
+        "character": "sea_smile",
         "next": "day5_ending_true_28"
     },
     "day5_ending_true_memory_check": {
@@ -1601,6 +1688,7 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "day5_ending_true_30_memory": {
+        "timeOfDay": null,
         "character": null,
         "next": "day5_ending_true_31"
     },
@@ -1697,6 +1785,8 @@ Object.assign(SCENARIO[5], {
         "next": "day5_ending_cage_sea_inside_choice"
     },
     "day5_ending_cage_sea_inside_choice": {
+        timeOfDay: null,
+        background: "ending_cage_sea",
         "choices": [
             {
                 "next": "day5_ending_cage_sea_window_1"
@@ -1772,43 +1862,51 @@ Object.assign(SCENARIO[5], {
         "next": "day5_ending_cage_title"
     },
     "day5_ending_cage_eunsu_epilogue_1": {
-        "background": "ending_cage_eunsu",
-        "character": null,
+        "timeOfDay": "sunset",
+        "background": "classroom_afternoon",
+        "character": "eunsu_gentle",
         "next": "day5_ending_cage_eunsu_epilogue_2"
     },
     "day5_ending_cage_eunsu_epilogue_2": {
-        "background": "ending_cage_eunsu",
-        "character": null,
+        "timeOfDay": "sunset",
+        "background": "classroom_afternoon",
+        "character": "eunsu_gentle",
         "next": "day5_ending_cage_eunsu_epilogue_3"
     },
     "day5_ending_cage_eunsu_epilogue_3": {
-        "background": "ending_cage_eunsu",
-        "character": null,
+        "timeOfDay": "sunset",
+        "background": "classroom_afternoon",
+        "character": "eunsu_gentle",
         "next": "day5_ending_cage_eunsu_epilogue_4"
     },
     "day5_ending_cage_eunsu_epilogue_4": {
-        "background": "ending_cage_eunsu",
-        "character": null,
+        "timeOfDay": "sunset",
+        "background": "classroom_afternoon",
+        "character": "eunsu_gentle",
         "next": "day5_ending_cage_eunsu_epilogue_5"
     },
     "day5_ending_cage_eunsu_epilogue_5": {
-        "background": "ending_cage_eunsu",
-        "character": null,
+        "timeOfDay": "sunset",
+        "background": "classroom_afternoon",
+        "character": "eunsu_normal",
         "next": "day5_ending_cage_eunsu_epilogue_6"
     },
     "day5_ending_cage_eunsu_epilogue_6": {
-        "background": "ending_cage_eunsu",
-        "character": null,
+        "timeOfDay": "sunset",
+        "background": "classroom_afternoon",
+        "character": "eunsu_normal",
         "next": "day5_ending_cage_eunsu_epilogue_7"
     },
     "day5_ending_cage_eunsu_epilogue_7": {
-        "background": "ending_cage_eunsu",
-        "character": null,
+        "timeOfDay": "sunset",
+        "background": "classroom_afternoon",
+        "character": "eunsu_normal",
         "next": "day5_ending_cage_eunsu_epilogue_8"
     },
     "day5_ending_cage_eunsu_epilogue_8": {
-        "background": "ending_cage_eunsu",
-        "character": null,
+        "timeOfDay": "sunset",
+        "background": "classroom_afternoon",
+        "character": "eunsu_normal",
         "next": "day5_ending_cage_eunsu_epilogue_9"
     },
     "day5_ending_cage_eunsu_epilogue_9": {
@@ -1907,87 +2005,104 @@ Object.assign(SCENARIO[5], {
         "next": "day5_ending_cage_title"
     },
     "day5_ending_escape_epilogue_1": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "street",
         "character": "yuna_weak",
         "next": "day5_ending_escape_epilogue_2"
     },
     "day5_ending_escape_epilogue_2": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "street",
         "character": "yuna_weak",
         "next": "day5_ending_escape_epilogue_3"
     },
     "day5_ending_escape_epilogue_3": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "street",
         "character": "yuna_weak",
         "next": "day5_ending_escape_epilogue_4"
     },
     "day5_ending_escape_epilogue_4": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "street",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_5"
     },
     "day5_ending_escape_epilogue_5": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "street",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_6"
     },
     "day5_ending_escape_epilogue_6": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "street",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_7"
     },
     "day5_ending_escape_epilogue_7": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "apartment_entry_morning",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_8"
     },
     "day5_ending_escape_epilogue_8": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "apartment_entry_morning",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_9"
     },
     "day5_ending_escape_epilogue_9": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "apartment_entry_morning",
         "character": "yuna_scared",
         "next": "day5_ending_escape_epilogue_10"
     },
     "day5_ending_escape_epilogue_10": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "apartment_entry_morning",
         "character": "yuna_scared",
         "next": "day5_ending_escape_epilogue_11"
     },
     "day5_ending_escape_epilogue_11": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "apartment_entry_morning",
         "character": "yuna_scared",
         "next": "day5_ending_escape_epilogue_12"
     },
     "day5_ending_escape_epilogue_12": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "apartment_entry_morning",
         "character": "yuna_scared",
         "next": "day5_ending_escape_epilogue_13"
     },
     "day5_ending_escape_epilogue_13": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_14"
     },
     "day5_ending_escape_epilogue_14": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_15"
     },
     "day5_ending_escape_epilogue_15": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_16"
     },
     "day5_ending_escape_epilogue_16": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_17"
     },
     "day5_ending_escape_epilogue_17": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_18",
         "branches": [
@@ -1998,37 +2113,44 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "day5_ending_escape_epilogue_18": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_19"
     },
     "day5_ending_escape_epilogue_19": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_20"
     },
     "day5_ending_escape_epilogue_20": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_21"
     },
     "day5_ending_escape_epilogue_21": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_22"
     },
     "day5_ending_escape_epilogue_22": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_23"
     },
     "day5_ending_escape_epilogue_23": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_24"
     },
     "day5_ending_escape_epilogue_24": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "choices": [
             {
@@ -2043,260 +2165,315 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "day5_ending_escape_epilogue_25": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_26"
     },
     "day5_ending_escape_epilogue_26": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_smile",
         "next": "day5_ending_escape_epilogue_27"
     },
     "day5_ending_escape_epilogue_27": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_smile",
         "next": "day5_ending_escape_epilogue_28"
     },
     "day5_ending_escape_epilogue_28": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_smile",
         "next": "day5_ending_escape_epilogue_29"
     },
     "day5_ending_escape_epilogue_29": {
-        "background": "new_place",
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_smile",
         "next": "day5_ending_escape_epilogue_30"
     },
     "day5_ending_escape_epilogue_30": {
+        "timeOfDay": null,
         "background": "new_place",
         "character": "yuna_smile",
         "next": "day5_ending_escape_title"
     },
     "day5_ending_escape_riin_after_1": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_riin_after_2"
     },
     "day5_ending_escape_riin_after_2": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_riin_after_3"
     },
     "day5_ending_escape_riin_after_3": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_riin_after_4"
     },
     "day5_ending_escape_riin_after_4": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_riin_after_5"
     },
     "day5_ending_escape_riin_after_5": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_riin_after_6"
     },
     "day5_ending_escape_riin_after_6": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_riin_after_7"
     },
     "day5_ending_escape_riin_after_7": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_riin_after_8"
     },
     "day5_ending_escape_riin_after_8": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_riin_after_9"
     },
     "day5_ending_escape_riin_after_9": {
-        "character": "yuna_normal",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_sea_check"
     },
     "day5_ending_escape_sea_after_1": {
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_sea_after_2"
     },
     "day5_ending_escape_sea_after_2": {
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_sea_after_3"
     },
     "day5_ending_escape_sea_after_3": {
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_sea_after_4"
     },
     "day5_ending_escape_sea_after_4": {
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_sea_after_5"
     },
     "day5_ending_escape_sea_after_5": {
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_sea_after_6"
     },
     "day5_ending_escape_sea_after_6": {
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_sea_after_7"
     },
     "day5_ending_escape_sea_after_7": {
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_sea_after_8"
     },
     "day5_ending_escape_sea_after_8": {
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_sea_after_9"
     },
     "day5_ending_escape_sea_after_9": {
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "character": null,
         "next": "day5_ending_escape_14"
     },
     "day5_ending_resist_epilogue_1": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_2"
     },
     "day5_ending_resist_epilogue_2": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_3"
     },
     "day5_ending_resist_epilogue_3": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_4"
     },
     "day5_ending_resist_epilogue_4": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_5"
     },
     "day5_ending_resist_epilogue_5": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_6"
     },
     "day5_ending_resist_epilogue_6": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_7"
     },
     "day5_ending_resist_epilogue_7": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_8"
     },
     "day5_ending_resist_epilogue_8": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_9"
     },
     "day5_ending_resist_epilogue_9": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_10"
     },
     "day5_ending_resist_epilogue_10": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_11"
     },
     "day5_ending_resist_epilogue_11": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_12"
     },
     "day5_ending_resist_epilogue_12": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_13"
     },
     "day5_ending_resist_epilogue_13": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_14"
     },
     "day5_ending_resist_epilogue_14": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": "eunsu_crying",
         "next": "day5_ending_resist_epilogue_15"
     },
     "day5_ending_resist_epilogue_15": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_shaking",
         "next": "day5_ending_resist_epilogue_16"
     },
     "day5_ending_resist_epilogue_16": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_shaking",
         "next": "day5_ending_resist_epilogue_17"
     },
     "day5_ending_resist_epilogue_17": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_shaking",
         "next": "day5_ending_resist_epilogue_18"
     },
     "day5_ending_resist_epilogue_18": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_shaking",
         "next": "day5_ending_resist_epilogue_19"
     },
     "day5_ending_resist_epilogue_19": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_20"
     },
     "day5_ending_resist_epilogue_20": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_21"
     },
     "day5_ending_resist_epilogue_21": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_22"
     },
     "day5_ending_resist_epilogue_22": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_23"
     },
     "day5_ending_resist_epilogue_23": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_24"
     },
     "day5_ending_resist_epilogue_24": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_25"
     },
     "day5_ending_resist_epilogue_25": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_epilogue_26"
     },
     "day5_ending_resist_epilogue_26": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
-        "character": "eunsu_crying",
+        "character": "eunsu_serious",
         "next": "day5_ending_resist_title"
     },
     "day5_ending_forget_epilogue_1": {
-        "background": "classroom",
+        "timeOfDay": null,
+        "background": "school_gate_morning",
         "character": null,
         "next": "day5_ending_forget_epilogue_2"
     },
     "day5_ending_forget_epilogue_2": {
-        "background": "classroom",
+        "timeOfDay": null,
+        "background": "school_gate_morning",
         "character": null,
         "next": "day5_ending_forget_epilogue_3"
     },
     "day5_ending_forget_epilogue_3": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "hallway",
+        "character": "sea_smile",
         "next": "day5_ending_forget_epilogue_4"
     },
     "day5_ending_forget_epilogue_4": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "hallway",
+        "character": "sea_smile",
         "next": "day5_ending_forget_epilogue_5"
     },
     "day5_ending_forget_epilogue_5": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "hallway",
+        "character": "sea_smile",
         "next": "day5_ending_forget_epilogue_6",
         "glitch": {
             "memoryFlash": {
@@ -2306,23 +2483,27 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_ending_forget_epilogue_6": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "hallway",
+        "character": "sea_smile",
         "next": "day5_ending_forget_epilogue_7"
     },
     "day5_ending_forget_epilogue_7": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "corridor",
+        "character": "yuna_normal",
         "next": "day5_ending_forget_epilogue_8"
     },
     "day5_ending_forget_epilogue_8": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "corridor",
+        "character": "yuna_normal",
         "next": "day5_ending_forget_epilogue_9"
     },
     "day5_ending_forget_epilogue_9": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "corridor",
+        "character": "yuna_normal",
         "next": "day5_ending_forget_epilogue_10",
         "glitch": {
             "memoryFlash": {
@@ -2332,18 +2513,21 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_ending_forget_epilogue_10": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "corridor",
+        "character": "riin_normal",
         "next": "day5_ending_forget_epilogue_11"
     },
     "day5_ending_forget_epilogue_11": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "corridor",
+        "character": "riin_normal",
         "next": "day5_ending_forget_epilogue_12"
     },
     "day5_ending_forget_epilogue_12": {
-        "background": "classroom",
-        "character": null,
+        "timeOfDay": "morning",
+        "background": "corridor",
+        "character": "riin_normal",
         "next": "day5_ending_forget_epilogue_13",
         "glitch": {
             "memoryFlash": {
@@ -2353,16 +2537,19 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_ending_forget_epilogue_13": {
+        "timeOfDay": "morning",
         "background": "classroom",
-        "character": null,
+        "character": "eunsu_smile",
         "next": "day5_ending_forget_epilogue_14"
     },
     "day5_ending_forget_epilogue_14": {
+        "timeOfDay": "morning",
         "background": "classroom",
-        "character": null,
+        "character": "eunsu_smile",
         "next": "day5_ending_forget_epilogue_15"
     },
     "day5_ending_forget_epilogue_15": {
+        "timeOfDay": "morning",
         "background": "classroom",
         "character": null,
         "next": "day5_ending_forget_epilogue_16",
@@ -2374,100 +2561,122 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_ending_forget_epilogue_16": {
+        "timeOfDay": "morning",
         "background": "classroom",
         "character": null,
         "next": "day5_ending_forget_epilogue_17"
     },
     "day5_ending_forget_epilogue_17": {
+        "timeOfDay": "morning",
         "background": "classroom",
         "character": null,
         "next": "day5_ending_forget_epilogue_18"
     },
     "day5_ending_forget_epilogue_18": {
+        "timeOfDay": "morning",
         "background": "classroom",
         "character": null,
         "next": "day5_ending_forget_epilogue_19"
     },
     "day5_ending_forget_epilogue_19": {
+        "timeOfDay": "morning",
         "background": "classroom",
-        "character": null,
+        "character": "sea_smile",
         "next": "day5_ending_forget_epilogue_20"
     },
     "day5_ending_forget_epilogue_20": {
+        "timeOfDay": "morning",
         "background": "classroom",
         "character": null,
         "next": "day5_ending_forget_epilogue_21"
     },
     "day5_ending_forget_epilogue_21": {
+        "timeOfDay": "morning",
         "background": "classroom",
-        "character": null,
+        "character": "eunsu_smile",
         "next": "day5_ending_forget_epilogue_22"
     },
     "day5_ending_forget_epilogue_22": {
+        "timeOfDay": "morning",
         "background": "classroom",
-        "character": null,
+        "character": "eunsu_smile",
         "next": "day5_ending_forget_epilogue_23"
     },
     "day5_ending_forget_epilogue_23": {
+        "timeOfDay": "morning",
         "background": "classroom",
         "character": null,
         "next": "day5_ending_forget_epilogue_24"
     },
     "day5_ending_forget_epilogue_24": {
+        "timeOfDay": "morning",
         "background": "classroom",
-        "character": null,
+        "character": "sea_smile",
         "next": "day5_ending_forget_epilogue_25"
     },
     "day5_ending_forget_epilogue_25": {
+        "timeOfDay": "morning",
         "background": "classroom",
         "character": null,
-        "next": "day5_ending_forget_15"
+        "next": "day5_ending_forget_title"
     },
     "day5_ending_ghost_epilogue_1": {
-        "background": "dawn_road",
-        "character": null,
+        "charOpacity": 0.9,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_2"
     },
     "day5_ending_ghost_epilogue_2": {
-        "background": "dawn_road",
-        "character": null,
+        "charOpacity": 0.9,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_3"
     },
     "day5_ending_ghost_epilogue_3": {
-        "background": "dawn_road",
-        "character": null,
+        "charOpacity": 0.9,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_4"
     },
     "day5_ending_ghost_epilogue_4": {
-        "background": "dawn_road",
-        "character": null,
+        "charOpacity": 0.9,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_5"
     },
     "day5_ending_ghost_epilogue_5": {
-        "background": "dawn_road",
-        "character": null,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_fading",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_6"
     },
     "day5_ending_ghost_epilogue_6": {
-        "background": "dawn_road",
-        "character": null,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_fading",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_7"
     },
     "day5_ending_ghost_epilogue_7": {
-        "background": "dawn_road",
-        "character": null,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_fading",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_8"
     },
     "day5_ending_ghost_epilogue_8": {
-        "background": "dawn_road",
-        "character": null,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_fading",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_9",
         "glitch": {
@@ -2478,20 +2687,24 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_ending_ghost_epilogue_9": {
-        "background": "dawn_road",
-        "character": null,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_fading",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_10"
     },
     "day5_ending_ghost_epilogue_10": {
-        "background": "dawn_road",
-        "character": null,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_fading",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_11"
     },
     "day5_ending_ghost_epilogue_11": {
-        "background": "dawn_road",
-        "character": null,
+        "charOpacity": 0.45,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_smile",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_12",
         "glitch": {
@@ -2502,49 +2715,60 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_ending_ghost_epilogue_12": {
-        "background": "dawn_road",
-        "character": null,
+        "charOpacity": 0.45,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_smile",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_13"
     },
     "day5_ending_ghost_epilogue_13": {
-        "background": "dawn_road",
-        "character": null,
+        "charOpacity": 0.45,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_smile",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_14"
     },
     "day5_ending_ghost_epilogue_14": {
-        "background": "dawn_road",
-        "character": null,
+        "charOpacity": 0.45,
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
+        "character": "seolhwa_smile",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_15"
     },
     "day5_ending_ghost_epilogue_15": {
-        "background": "dawn_road",
+        "timeOfDay": "dawn",
+        "background": "emergency_stair_night",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_16"
     },
     "day5_ending_ghost_epilogue_16": {
+        "timeOfDay": "dawn",
         "background": "dawn_road",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_17"
     },
     "day5_ending_ghost_epilogue_17": {
-        "background": "dawn_road",
+        "timeOfDay": null,
+        "background": "street_morning",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_18"
     },
     "day5_ending_ghost_epilogue_18": {
-        "background": "dawn_road",
+        "timeOfDay": null,
+        "background": "street_morning",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_19"
     },
     "day5_ending_ghost_epilogue_19": {
-        "background": "dawn_road",
+        "timeOfDay": null,
+        "background": "street_morning",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_20",
@@ -2556,37 +2780,43 @@ Object.assign(SCENARIO[5], {
         ]
     },
     "day5_ending_ghost_epilogue_20": {
-        "background": "dawn_road",
+        "timeOfDay": null,
+        "background": "street_morning",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_21"
     },
     "day5_ending_ghost_epilogue_21": {
-        "background": "dawn_road",
+        "timeOfDay": null,
+        "background": "street_morning",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_22"
     },
     "day5_ending_ghost_epilogue_22": {
-        "background": "dawn_road",
+        "timeOfDay": null,
+        "background": "street_morning",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_23"
     },
     "day5_ending_ghost_epilogue_23": {
-        "background": "dawn_road",
+        "timeOfDay": null,
+        "background": "street_morning",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_24"
     },
     "day5_ending_ghost_epilogue_24": {
-        "background": "dawn_road",
+        "timeOfDay": null,
+        "background": "street_morning",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_epilogue_25"
     },
     "day5_ending_ghost_epilogue_25": {
-        "background": "dawn_road",
+        "timeOfDay": null,
+        "background": "street_morning",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_ending_ghost_title"
@@ -2676,6 +2906,8 @@ Object.assign(SCENARIO[5], {
         "next": "day5_ending_complicit_control_choice"
     },
     "day5_ending_complicit_control_choice": {
+        timeOfDay: null,
+        background: "ending_complicit_monitors",
         "choices": [
             {
                 "next": "day5_ending_complicit_low_1",
@@ -2826,161 +3058,184 @@ Object.assign(SCENARIO[5], {
         "charOpacity": 1
     },
     "day5_archive_cycle07_5": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_6",
         "charOpacity": 1
     },
     "day5_archive_cycle07_6": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_7",
         "charOpacity": 1
     },
     "day5_archive_cycle07_7": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_8",
         "charOpacity": 1
     },
     "day5_archive_cycle07_8": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_9",
         "charOpacity": 1
     },
     "day5_archive_cycle07_9": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_10",
         "charOpacity": 1
     },
     "day5_archive_cycle07_10": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_11",
         "charOpacity": 1
     },
     "day5_archive_cycle07_11": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_12",
         "charOpacity": 1
     },
     "day5_archive_cycle07_12": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_13",
         "charOpacity": 1
     },
     "day5_archive_cycle07_13": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_14",
         "charOpacity": 1
     },
     "day5_archive_cycle07_14": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_15",
         "charOpacity": 1
     },
     "day5_archive_cycle07_15": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_16",
         "charOpacity": 1
     },
     "day5_archive_cycle07_16": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_17",
         "charOpacity": 1
     },
     "day5_archive_cycle07_17": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_18",
         "charOpacity": 1
     },
     "day5_archive_cycle07_18": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_19",
         "charOpacity": 1
     },
     "day5_archive_cycle07_19": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_20",
         "charOpacity": 1
     },
     "day5_archive_cycle07_20": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_21",
         "charOpacity": 1
     },
     "day5_archive_cycle07_21": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_22",
         "charOpacity": 1
     },
     "day5_archive_cycle07_22": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_23",
         "charOpacity": 1
     },
     "day5_archive_cycle07_23": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_24",
         "charOpacity": 1
     },
     "day5_archive_cycle07_24": {
-        "background": "old_building_corridor",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_normal",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_25",
         "charOpacity": 1
     },
     "day5_archive_cycle07_25": {
-        "background": "underground_lab",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_26",
         "charOpacity": 1
     },
     "day5_archive_cycle07_26": {
-        "background": "underground_lab",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_27",
         "charOpacity": 1
     },
     "day5_archive_cycle07_27": {
-        "background": "underground_lab",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_28",
@@ -2995,49 +3250,53 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_archive_cycle07_28": {
-        "background": "underground_lab",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_29",
         "charOpacity": 1
     },
     "day5_archive_cycle07_29": {
-        "background": "underground_lab",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_30",
         "charOpacity": 1
     },
     "day5_archive_cycle07_30": {
-        "background": "underground_lab",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_31",
         "charOpacity": 1
     },
     "day5_archive_cycle07_31": {
-        "background": "underground_lab",
+        "timeOfDay": "dark",
+        "background": "basement_records_room",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_32",
         "charOpacity": 1
     },
     "day5_archive_cycle07_32": {
-        "background": "underground_lab",
+        "background": "old_stairway",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_33",
         "charOpacity": 1
     },
     "day5_archive_cycle07_33": {
-        "background": "underground_lab",
+        "background": "old_stairway",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_34",
         "charOpacity": 1
     },
     "day5_archive_cycle07_34": {
-        "background": "underground_lab",
+        "background": "old_stairway",
         "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_35",
@@ -3045,7 +3304,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle07_35": {
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
+        "character": "seolhwa_wet",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_36",
         "charOpacity": 1,
@@ -3057,7 +3316,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle07_36": {
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
+        "character": "seolhwa_wet",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_37",
         "charOpacity": 1,
@@ -3065,7 +3324,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle07_37": {
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
+        "character": "seolhwa_wet",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_38",
         "charOpacity": 1,
@@ -3073,7 +3332,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle07_38": {
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
+        "character": "seolhwa_wet",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_39",
         "charOpacity": 1,
@@ -3081,7 +3340,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle07_39": {
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
+        "character": "seolhwa_wet",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_40",
         "charOpacity": 1,
@@ -3089,7 +3348,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle07_40": {
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
+        "character": "seolhwa_wet",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_41",
         "charOpacity": 1,
@@ -3104,64 +3363,64 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_archive_cycle07_41": {
+        characters: { left: "seolhwa_wet", right: "eunsu_cold" },
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_42",
         "charOpacity": 1,
         "rain": true
     },
     "day5_archive_cycle07_42": {
+        characters: { left: "seolhwa_wet", right: "eunsu_cold" },
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_43",
         "charOpacity": 1,
         "rain": true
     },
     "day5_archive_cycle07_43": {
+        characters: { left: "seolhwa_wet", right: "eunsu_cold" },
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_44",
         "charOpacity": 1,
         "rain": true
     },
     "day5_archive_cycle07_44": {
+        characters: { left: "seolhwa_wet", right: "eunsu_cold" },
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_45",
         "charOpacity": 1,
         "rain": true
     },
     "day5_archive_cycle07_45": {
+        characters: { left: "seolhwa_wet", right: "eunsu_cold" },
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_46",
         "charOpacity": 1,
         "rain": true
     },
     "day5_archive_cycle07_46": {
+        characters: { left: "seolhwa_wet", right: "eunsu_cold" },
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_47",
         "charOpacity": 1,
         "rain": true
     },
     "day5_archive_cycle07_47": {
+        characters: { left: "seolhwa_wet", right: "eunsu_cold" },
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_48",
         "charOpacity": 1,
         "rain": true
     },
     "day5_archive_cycle07_48": {
+        characters: { left: "seolhwa_wet", right: "eunsu_cold" },
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_49",
         "charOpacity": 1,
@@ -3169,75 +3428,75 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle07_49": {
         "background": "emergency_exit",
-        "character": "seolhwa_warning",
+        "character": "seolhwa_wet",
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_50",
         "charOpacity": 1,
         "rain": true
     },
     "day5_archive_cycle07_50": {
+        "timeOfDay": null,
         "background": "cg_cycle07_seolhwa",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_51",
-        "charOpacity": 1,
-        "rain": true
+        "charOpacity": 1
     },
     "day5_archive_cycle07_51": {
+        "timeOfDay": null,
         "background": "cg_cycle07_seolhwa",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_52",
         "charOpacity": 1,
-        "rain": true,
         "glitch": {
             "panSFX": "sfx_whisper_seolhwa",
             "pan": -0.85
         }
     },
     "day5_archive_cycle07_52": {
+        "timeOfDay": null,
         "background": "cg_cycle07_seolhwa",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_53",
-        "charOpacity": 1,
-        "rain": true
+        "charOpacity": 1
     },
     "day5_archive_cycle07_53": {
+        "timeOfDay": null,
         "background": "cg_cycle07_seolhwa",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_54",
         "charOpacity": 1,
-        "rain": true,
         "glitch": {
             "panSFX": "sfx_whisper_seolhwa",
             "pan": -0.85
         }
     },
     "day5_archive_cycle07_54": {
+        "timeOfDay": null,
         "background": "cg_cycle07_seolhwa",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_55",
-        "charOpacity": 1,
-        "rain": true
+        "charOpacity": 1
     },
     "day5_archive_cycle07_55": {
+        "timeOfDay": null,
         "background": "cg_cycle07_seolhwa",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_56",
-        "charOpacity": 1,
-        "rain": true
+        "charOpacity": 1
     },
     "day5_archive_cycle07_56": {
+        "timeOfDay": null,
         "background": "cg_cycle07_seolhwa",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_57",
         "charOpacity": 1,
-        "rain": true,
         "glitch": {
             "chaseFootsteps": {
                 "fromPan": -0.9,
@@ -3248,26 +3507,27 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_archive_cycle07_57": {
+        "timeOfDay": null,
         "background": "cg_cycle07_seolhwa",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_58",
         "charOpacity": 1,
-        "rain": true,
         "glitch": {
             "panSFX": "sfx_whisper_seolhwa",
             "pan": -0.85
         }
     },
     "day5_archive_cycle07_58": {
+        "timeOfDay": null,
         "background": "cg_cycle07_seolhwa",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
         "next": "day5_archive_cycle07_59",
-        "charOpacity": 1,
-        "rain": true
+        "charOpacity": 1
     },
     "day5_archive_cycle07_59": {
+        "rain": true,
         "background": "emergency_exit",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
@@ -3275,6 +3535,7 @@ Object.assign(SCENARIO[5], {
         "charOpacity": 1
     },
     "day5_archive_cycle07_60": {
+        "rain": true,
         "background": "emergency_exit",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
@@ -3290,6 +3551,7 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_archive_cycle07_61": {
+        "rain": true,
         "background": "emergency_exit",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
@@ -3297,6 +3559,7 @@ Object.assign(SCENARIO[5], {
         "charOpacity": 1
     },
     "day5_archive_cycle07_62": {
+        "rain": true,
         "background": "emergency_exit",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
@@ -3304,6 +3567,7 @@ Object.assign(SCENARIO[5], {
         "charOpacity": 1
     },
     "day5_archive_cycle07_63": {
+        "rain": true,
         "background": "emergency_exit",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
@@ -3311,6 +3575,7 @@ Object.assign(SCENARIO[5], {
         "charOpacity": 1
     },
     "day5_archive_cycle07_64": {
+        "rain": true,
         "background": "emergency_exit",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
@@ -3322,6 +3587,7 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_archive_cycle07_65": {
+        "rain": true,
         "background": "emergency_exit",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
@@ -3329,6 +3595,7 @@ Object.assign(SCENARIO[5], {
         "charOpacity": 1
     },
     "day5_archive_cycle07_66": {
+        "rain": true,
         "background": "emergency_exit",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
@@ -3336,6 +3603,7 @@ Object.assign(SCENARIO[5], {
         "charOpacity": 1
     },
     "day5_archive_cycle07_67": {
+        "rain": true,
         "background": "emergency_exit",
         "character": null,
         "bgm": "cycle07_elegy.mp3",
@@ -3404,234 +3672,273 @@ Object.assign(SCENARIO[5], {
         "charOpacity": 1
     },
     "day5_archive_cycle12_1": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_2"
     },
     "day5_archive_cycle12_2": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_3"
     },
     "day5_archive_cycle12_3": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_4"
     },
     "day5_archive_cycle12_4": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_5"
     },
     "day5_archive_cycle12_5": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_6"
     },
     "day5_archive_cycle12_6": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_7"
     },
     "day5_archive_cycle12_7": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_8"
     },
     "day5_archive_cycle12_8": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_9"
     },
     "day5_archive_cycle12_9": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_10"
     },
     "day5_archive_cycle12_10": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_11"
     },
     "day5_archive_cycle12_11": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_12"
     },
     "day5_archive_cycle12_12": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_13"
     },
     "day5_archive_cycle12_13": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_14"
     },
     "day5_archive_cycle12_14": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_normal",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_15"
     },
     "day5_archive_cycle12_15": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_16"
     },
     "day5_archive_cycle12_16": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_17"
     },
     "day5_archive_cycle12_17": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_18"
     },
     "day5_archive_cycle12_18": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_19"
     },
     "day5_archive_cycle12_19": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_20"
     },
     "day5_archive_cycle12_20": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_21"
     },
     "day5_archive_cycle12_21": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_22"
     },
     "day5_archive_cycle12_22": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_23"
     },
     "day5_archive_cycle12_23": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_serious",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_24"
     },
     "day5_archive_cycle12_24": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_25"
     },
     "day5_archive_cycle12_25": {
+        "timeOfDay": null,
         "background": "photo_club_room",
         "character": "yuna_scared",
         "bgm": "yuna_theme.mp3",
         "next": "day5_archive_cycle12_26"
     },
     "day5_archive_cycle12_26": {
-        "background": "nurse_office",
-        "character": "riin_pain",
+        "timeOfDay": null,
+        "background": "corridor",
+        "character": "yuna_scared",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_27"
     },
     "day5_archive_cycle12_27": {
-        "background": "nurse_office",
-        "character": "riin_pain",
+        "timeOfDay": null,
+        "background": "corridor",
+        "character": "yuna_scared",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_28"
     },
     "day5_archive_cycle12_28": {
-        "background": "nurse_office",
-        "character": "riin_pain",
+        "timeOfDay": null,
+        "background": "corridor",
+        "character": "yuna_scared",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_29"
     },
     "day5_archive_cycle12_29": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_pain",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_30"
     },
     "day5_archive_cycle12_30": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_pain",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_31"
     },
     "day5_archive_cycle12_31": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_pain",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_32"
     },
     "day5_archive_cycle12_32": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_pain",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_33"
     },
     "day5_archive_cycle12_33": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_pain",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_34"
     },
     "day5_archive_cycle12_34": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_startled",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_35"
     },
     "day5_archive_cycle12_35": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_startled",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_36"
     },
     "day5_archive_cycle12_36": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_startled",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_37"
     },
     "day5_archive_cycle12_37": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_pain",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_38"
     },
     "day5_archive_cycle12_38": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_pain",
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_39"
     },
     "day5_archive_cycle12_39": {
+        "timeOfDay": null,
         "background": "nurse_office",
         "character": "riin_pain",
         "bgm": "tension_night.mp3",
@@ -3642,8 +3949,9 @@ Object.assign(SCENARIO[5], {
         }
     },
     "day5_archive_cycle12_40": {
-        "background": "old_basement_door",
-        "character": "yuna_scared",
+        "timeOfDay": null,
+        "background": "corridor_old",
+        "character": null,
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_41",
         "glitch": {
@@ -3836,8 +4144,8 @@ Object.assign(SCENARIO[5], {
         "next": "day5_archive_cycle12_69"
     },
     "day5_archive_cycle12_69": {
-        "background": "old_basement_door",
-        "character": "eunsu_cold",
+        "background": "cg_cycle12_yuna",
+        "character": null,
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_70"
     },
@@ -3867,7 +4175,7 @@ Object.assign(SCENARIO[5], {
     },
     "day5_archive_cycle12_74": {
         "background": "old_basement_door",
-        "character": "eunsu_cold",
+        "character": null,
         "bgm": "tension_night.mp3",
         "next": "day5_archive_cycle12_75"
     },
@@ -3884,22 +4192,31 @@ Object.assign(SCENARIO[5], {
         "next": "day5_xover_server_4"
     },
     "day5_history_callback_37": {
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_18"
     },
     "day5_history_callback_38": {
+        "timeOfDay": "dawn",
         "character": null,
         "next": "day5_ending_ghost_epilogue_20"
     },
     "day5_history_callback_39": {
+        "timeOfDay": null,
+        "background": "ending_complicit_monitors",
         "character": null,
         "next": "day5_ending_complicit_epilogue_12"
     },
     "day5_expansion_action_10_a": {
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_25"
     },
     "day5_expansion_action_10_b": {
+        "timeOfDay": null,
+        "background": "home",
         "character": "yuna_normal",
         "next": "day5_ending_escape_epilogue_25"
     }

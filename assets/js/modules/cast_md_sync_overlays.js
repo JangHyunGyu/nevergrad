@@ -6,10 +6,6 @@
   try {
     if (typeof SCENARIO === 'undefined' || !SCENARIO[5]) return;
     var S = SCENARIO[5];
-    // day5 morning true: "유나가 가리킨 곳에서" — Yuna present
-    if (S.day5_morning_true_1 && S.day5_morning_true_1.character == null) {
-      S.day5_morning_true_1.character = 'yuna_injured_determined';
-    }
     // endings: prose shows cast on beat 1
     if (S.day5_ending_true_24 && S.day5_ending_true_24.character == null) {
       S.day5_ending_true_24.character = 'yuna_normal';

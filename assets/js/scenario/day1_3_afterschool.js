@@ -18,6 +18,7 @@ Object.assign(SCENARIO[1], {
 
     // ===== 방과후 시작 =====
     "day1_after_start": {
+        background: "classroom_afternoon",
         bgm: "sunset_warm.mp3",
         character: null,
         next: "day1_after_choice"
@@ -142,22 +143,27 @@ Object.assign(SCENARIO[1], {
     "day1_after_yuna_10": {
         background: "corridor",
         character: "yuna_shy",
+        noTimeFilter: true,
         next: "day1_after_yuna_11"
     },
     "day1_after_yuna_11": {
         character: "yuna_shy",
+        noTimeFilter: true,
         next: "day1_after_yuna_12"
     },
     "day1_after_yuna_12": {
         character: "yuna_shy",
+        noTimeFilter: true,
         next: "day1_after_yuna_13"
     },
     "day1_after_yuna_13": {
         character: "yuna_normal",
+        noTimeFilter: true,
         next: "day1_after_yuna_14"
     },
     "day1_after_yuna_14": {
         character: "yuna_normal",
+        noTimeFilter: true,
         setFlags: ["received_yuna_photo"],
         next: "day1_after_yuna_back_choice"
     },
@@ -166,53 +172,65 @@ Object.assign(SCENARIO[1], {
     "day1_after_riin_1": {
         background: "nurse_office",
         character: "riin_gentle",
+        noTimeFilter: true,
         next: "day1_after_riin_2"
     },
     "day1_after_riin_2": {
         character: "riin_gentle",
+        noTimeFilter: true,
         next: "day1_after_riin_3"
     },
     "day1_after_riin_3": {
         character: "riin_gentle",
+        noTimeFilter: true,
         next: "day1_after_riin_4"
     },
     "day1_after_riin_4": {
         character: "riin_smile",
+        noTimeFilter: true,
         next: "day1_after_riin_5"
     },
     "day1_after_riin_5": {
         character: "riin_smile",
+        noTimeFilter: true,
         next: "day1_after_riin_6"
     },
     // 허브티 선물 + 음악
     "day1_after_riin_6": {
         character: "riin_gentle",
+        noTimeFilter: true,
         next: "day1_after_riin_7"
     },
     "day1_after_riin_7": {
         character: "riin_gentle",
+        noTimeFilter: true,
         setFlags: ["received_riin_tea"],
         next: "day1_after_riin_8"
     },
     "day1_after_riin_8": {
         character: "riin_gentle",
+        noTimeFilter: true,
         next: "day1_after_riin_9"
     },
     "day1_after_riin_9": {
         character: "riin_gentle",
+        noTimeFilter: true,
         next: "day1_after_riin_10"
     },
     "day1_after_riin_10": {
         character: "riin_gentle",
+        noTimeFilter: true,
         next: "day1_after_riin_11"
     },
     "day1_after_riin_11": {
         character: "riin_gentle",
+        noTimeFilter: true,
         next: "day1_after_riin_tea_choice"
     },
     "day1_after_riin_12": {
         character: "riin_gentle",
         background: "corridor",
+        noTimeFilter: true,
         next: "day1_after_home_1"
     },
 
@@ -297,18 +315,22 @@ Object.assign(SCENARIO[1], {
     "day1_after_sea_walk_1": {
         background: "corridor",
         character: "sea_smile",
+        noTimeFilter: true,
         next: "day1_after_sea_walk_2"
     },
     "day1_after_sea_walk_2": {
         character: "sea_smile",
+        noTimeFilter: true,
         next: "day1_after_sea_walk_3"
     },
     "day1_after_sea_walk_3": {
         character: "sea_smile",
+        noTimeFilter: true,
         next: "day1_after_sea_walk_4"
     },
     "day1_after_sea_walk_4": {
         character: "sea_smile",
+        noTimeFilter: true,
         next: "day1_after_home_1"
     },
     "day1_after_eunsu_counsel_1": {
@@ -350,8 +372,8 @@ Object.assign(SCENARIO[1], {
     "day1_after_sea_cab_3": { character: "sea_normal", next: "day1_after_sea_cab_4" },
     "day1_after_sea_cab_4": { character: "sea_normal", next: "day1_after_sea_cab_5" },
     "day1_after_sea_cab_5": { character: "sea_normal", next: "day1_after_sea_cab_6" },
-    "day1_after_sea_cab_6": { character: "sea_sad", next: "day1_after_sea_cab_7" },
-    "day1_after_sea_cab_7": { character: "sea_normal", next: "day1_after_sea_cab_13" },
+    "day1_after_sea_cab_6": { character: "sea_normal", next: "day1_after_sea_cab_7" },
+    "day1_after_sea_cab_7": { character: "sea_sad", next: "day1_after_sea_cab_13" },
     "day1_after_sea_cab_8": { character: "sea_normal", next: "day1_after_sea_cab_9" },
     "day1_after_sea_cab_9": { character: "sea_normal", next: "day1_after_sea_cab_10" },
     "day1_after_sea_cab_10": { character: "sea_smile", next: "day1_after_sea_cab_11" },
@@ -363,49 +385,51 @@ Object.assign(SCENARIO[1], {
 
     "day1_after_yuna_back_choice": {
         character: "yuna_normal",
+        noTimeFilter: true,
         choices: [
             { next: "day1_after_yuna_back_1", setFlags: ["noticed_polaroid_13"], stats: { yuna: { affinity: 3 }, seolhwa: { affinity: 2 } } },
             { next: "day1_after_yuna_back_8", setFlags: ["heard_yuna_darkroom_keys"], stats: { yuna: { affinity: 3 } } }
         ]
     },
-    "day1_after_yuna_back_1": { character: "yuna_scared", next: "day1_after_yuna_back_2" },
-    "day1_after_yuna_back_2": { character: "yuna_shy", next: "day1_after_yuna_back_3" },
-    "day1_after_yuna_back_3": { character: "yuna_shy", next: "day1_after_yuna_back_4" },
-    "day1_after_yuna_back_4": { character: "yuna_normal", next: "day1_after_yuna_back_5" },
-    "day1_after_yuna_back_5": { character: "yuna_normal", next: "day1_after_yuna_back_6" },
-    "day1_after_yuna_back_6": { character: "yuna_smile", next: "day1_after_yuna_back_7" },
-    "day1_after_yuna_back_7": { character: "yuna_smile", next: "day1_after_yuna_back_13" },
-    "day1_after_yuna_back_8": { character: "yuna_shy", next: "day1_after_yuna_back_9" },
-    "day1_after_yuna_back_9": { character: "yuna_shy", next: "day1_after_yuna_back_10" },
-    "day1_after_yuna_back_10": { character: "yuna_normal", next: "day1_after_yuna_back_11" },
-    "day1_after_yuna_back_11": { character: "yuna_normal", next: "day1_after_yuna_back_12" },
-    "day1_after_yuna_back_12": { character: "yuna_serious", next: "day1_after_yuna_back_13" },
-    "day1_after_yuna_back_13": { character: "yuna_normal", next: "day1_after_yuna_back_14" },
-    "day1_after_yuna_back_14": { character: "yuna_shy", next: "day1_after_yuna_back_15" },
-    "day1_after_yuna_back_15": { character: "yuna_smile", next: "day1_after_home_1" },
+    "day1_after_yuna_back_1": { character: "yuna_scared", noTimeFilter: true, next: "day1_after_yuna_back_2" },
+    "day1_after_yuna_back_2": { character: "yuna_shy", noTimeFilter: true, next: "day1_after_yuna_back_3" },
+    "day1_after_yuna_back_3": { character: "yuna_shy", noTimeFilter: true, next: "day1_after_yuna_back_4" },
+    "day1_after_yuna_back_4": { character: "yuna_normal", noTimeFilter: true, next: "day1_after_yuna_back_5" },
+    "day1_after_yuna_back_5": { character: "yuna_normal", noTimeFilter: true, next: "day1_after_yuna_back_6" },
+    "day1_after_yuna_back_6": { character: "yuna_smile", noTimeFilter: true, next: "day1_after_yuna_back_7" },
+    "day1_after_yuna_back_7": { character: "yuna_smile", noTimeFilter: true, next: "day1_after_yuna_back_13" },
+    "day1_after_yuna_back_8": { character: "yuna_shy", noTimeFilter: true, next: "day1_after_yuna_back_9" },
+    "day1_after_yuna_back_9": { character: "yuna_shy", noTimeFilter: true, next: "day1_after_yuna_back_10" },
+    "day1_after_yuna_back_10": { character: "yuna_normal", noTimeFilter: true, next: "day1_after_yuna_back_11" },
+    "day1_after_yuna_back_11": { character: "yuna_normal", noTimeFilter: true, next: "day1_after_yuna_back_12" },
+    "day1_after_yuna_back_12": { character: "yuna_serious", noTimeFilter: true, next: "day1_after_yuna_back_13" },
+    "day1_after_yuna_back_13": { background: "hallway", character: "yuna_normal", noTimeFilter: true, next: "day1_after_yuna_back_14" },
+    "day1_after_yuna_back_14": { character: "yuna_shy", noTimeFilter: true, next: "day1_after_yuna_back_15" },
+    "day1_after_yuna_back_15": { character: "yuna_smile", noTimeFilter: true, next: "day1_after_home_1" },
 
     "day1_after_riin_tea_choice": {
         character: "riin_gentle",
+        noTimeFilter: true,
         choices: [
             { next: "day1_after_riin_tea_1", stats: { riin: { affinity: 2 } } },
             { next: "day1_after_riin_tea_8", stats: { riin: { affinity: 3 } } }
         ]
     },
-    "day1_after_riin_tea_1": { character: "riin_normal", next: "day1_after_riin_tea_2" },
-    "day1_after_riin_tea_2": { character: "riin_gentle", next: "day1_after_riin_tea_3" },
-    "day1_after_riin_tea_3": { character: "riin_gentle", next: "day1_after_riin_tea_4" },
-    "day1_after_riin_tea_4": { character: "riin_normal", next: "day1_after_riin_tea_5" },
-    "day1_after_riin_tea_5": { character: "riin_normal", next: "day1_after_riin_tea_6" },
-    "day1_after_riin_tea_6": { character: "riin_smile", next: "day1_after_riin_tea_7" },
-    "day1_after_riin_tea_7": { character: "riin_gentle", next: "day1_after_riin_tea_13" },
-    "day1_after_riin_tea_8": { character: "riin_normal", next: "day1_after_riin_tea_9" },
-    "day1_after_riin_tea_9": { character: "riin_gentle", next: "day1_after_riin_tea_10" },
-    "day1_after_riin_tea_10": { character: "riin_gentle", next: "day1_after_riin_tea_11" },
-    "day1_after_riin_tea_11": { character: "riin_smile", next: "day1_after_riin_tea_12" },
-    "day1_after_riin_tea_12": { character: "riin_smile", next: "day1_after_riin_tea_13" },
-    "day1_after_riin_tea_13": { character: "riin_gentle", next: "day1_after_riin_tea_14" },
-    "day1_after_riin_tea_14": { character: "riin_smile", next: "day1_after_riin_tea_15" },
-    "day1_after_riin_tea_15": { character: "riin_gentle", next: "day1_after_riin_12" },
+    "day1_after_riin_tea_1": { character: "riin_normal", noTimeFilter: true, next: "day1_after_riin_tea_2" },
+    "day1_after_riin_tea_2": { character: "riin_gentle", noTimeFilter: true, next: "day1_after_riin_tea_3" },
+    "day1_after_riin_tea_3": { character: "riin_gentle", noTimeFilter: true, next: "day1_after_riin_tea_4" },
+    "day1_after_riin_tea_4": { character: "riin_normal", noTimeFilter: true, next: "day1_after_riin_tea_5" },
+    "day1_after_riin_tea_5": { character: "riin_normal", noTimeFilter: true, next: "day1_after_riin_tea_6" },
+    "day1_after_riin_tea_6": { character: "riin_smile", noTimeFilter: true, next: "day1_after_riin_tea_7" },
+    "day1_after_riin_tea_7": { character: "riin_gentle", noTimeFilter: true, next: "day1_after_riin_tea_13" },
+    "day1_after_riin_tea_8": { character: "riin_normal", noTimeFilter: true, next: "day1_after_riin_tea_9" },
+    "day1_after_riin_tea_9": { character: "riin_gentle", noTimeFilter: true, next: "day1_after_riin_tea_10" },
+    "day1_after_riin_tea_10": { character: "riin_gentle", noTimeFilter: true, next: "day1_after_riin_tea_11" },
+    "day1_after_riin_tea_11": { character: "riin_smile", noTimeFilter: true, next: "day1_after_riin_tea_12" },
+    "day1_after_riin_tea_12": { character: "riin_smile", noTimeFilter: true, next: "day1_after_riin_tea_13" },
+    "day1_after_riin_tea_13": { character: "riin_gentle", noTimeFilter: true, next: "day1_after_riin_tea_14" },
+    "day1_after_riin_tea_14": { character: "riin_smile", noTimeFilter: true, next: "day1_after_riin_tea_15" },
+    "day1_after_riin_tea_15": { character: "riin_gentle", noTimeFilter: true, next: "day1_after_riin_12" },
 
     "day1_after_eunsu_file_choice": {
         character: "eunsu_warm",

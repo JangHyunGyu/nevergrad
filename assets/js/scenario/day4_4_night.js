@@ -143,7 +143,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_save_glitch_2": {
         // 안전 앱 알림 '피험—'
-        background: "closeup_safety_app",
+        background: "room_night",
         character: null,
         sfx: "sfx_phone_vibrate.mp3",
         vibrate: "notification",
@@ -330,6 +330,7 @@ Object.assign(SCENARIO[4], {
     },
     // 등 뒤에 기척 — 설화
     "day4_night_mirror_8": {
+        noTimeFilter: true,
         background: "bathroom_night",
         unskippable: true,
         character: "seolhwa_wet",
@@ -337,6 +338,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_mirror_9"
     },
     "day4_night_mirror_9": {
+        noTimeFilter: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
         unskippable: true,
@@ -344,6 +346,7 @@ Object.assign(SCENARIO[4], {
     },
     // 설화: "...닦지 마."
     "day4_night_mirror_10": {
+        noTimeFilter: true,
         unskippable: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
@@ -351,12 +354,14 @@ Object.assign(SCENARIO[4], {
     },
     // 설화: "아직... 보지 마."
     "day4_night_mirror_11": {
+        noTimeFilter: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
         unskippable: true,
         next: "day4_night_mirror_12"
     },
     "day4_night_mirror_12": {
+        noTimeFilter: true,
         unskippable: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
@@ -409,6 +414,7 @@ Object.assign(SCENARIO[4], {
     // ── 1타: 초자연적 공포 ──
     // 거울에 설화가 비치지 않는다
     "day4_night_mirror_hit1": {
+        noTimeFilter: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
         unskippable: true,
@@ -436,12 +442,14 @@ Object.assign(SCENARIO[4], {
     },
     // 뒤를 봤다 — 있다 / 거울 — 없다 교차
     "day4_night_mirror_hit1_5": {
+        noTimeFilter: true,
         unskippable: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
         next: "day4_night_mirror_hit1_6"
     },
     "day4_night_mirror_hit1_6": {
+        noTimeFilter: true,
         unskippable: true,
         // 설화는 물리적으로 등 뒤에 서 있다 — 스프라이트 유지.
         // mirrorReflection 연출이 거울 반사상에서만 설화를 제외하면서
@@ -513,8 +521,9 @@ Object.assign(SCENARIO[4], {
     },
     // 1년 전에 죽었다
     "day4_night_mirror_hit1_12": {
+        noTimeFilter: true,
         charOpacity: 0.86,
-        characters: { right: "seolhwa_sad" },
+        characters: { right: "seolhwa_wet" },
         character: null,
         unskippable: true,
         glitch: { heavyGlitch: true },
@@ -529,6 +538,7 @@ Object.assign(SCENARIO[4], {
     },
     // 설화: "...미안해."
     "day4_night_mirror_hit1_14": {
+        noTimeFilter: true,
         unskippable: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
@@ -537,6 +547,7 @@ Object.assign(SCENARIO[4], {
         next: "day4_night_mirror_hit1_15"
     },
     "day4_night_mirror_hit1_15": {
+        noTimeFilter: true,
         unskippable: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
@@ -670,12 +681,14 @@ Object.assign(SCENARIO[4], {
     },
     // 설화가 옆에 앉아있다 — 환각이. 죽은 사람이. 하지만 옆에 누가 있다.
     "day4_night_mirror_collapse_8": {
+        noTimeFilter: true,
         unskippable: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
         next: "day4_night_mirror_collapse_9"
     },
     "day4_night_mirror_collapse_9": {
+        noTimeFilter: true,
         unskippable: true,
         character: "seolhwa_wet",
         charOpacity: 0.86,
@@ -763,6 +776,7 @@ Object.assign(SCENARIO[4], {
 
     // ── 최종 계획 선택지 ──
     "day4_night_plan_choice": {
+        background: "room_night",
         character: null,
         choices: [
             {
@@ -835,13 +849,13 @@ Object.assign(SCENARIO[4], {
 // Expansion work order 2026-10-16
 Object.assign(SCENARIO[4], {
     "day4_night_truth_sea_1": {
-        "background": "closeup_safety_app",
+        "background": "room_night",
         "character": null,
         "bgm": "complicit_cold_pulse.mp3",
         "next": "day4_night_truth_sea_2"
     },
     "day4_night_truth_sea_2": {
-        "background": "closeup_safety_app",
+        "background": "room_night",
         "character": null,
         "bgm": "complicit_cold_pulse.mp3",
         "choices": [
@@ -857,7 +871,7 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "day4_night_truth_sea_3": {
-        "background": "closeup_safety_app",
+        "background": "room_night",
         "character": null,
         "bgm": "complicit_cold_pulse.mp3",
         "next": "day4_night_truth_sea_4",
@@ -869,25 +883,16 @@ Object.assign(SCENARIO[4], {
         ]
     },
     "day4_night_truth_sea_4": {
-        "background": "closeup_safety_app",
+        "background": "room_night",
         "character": null,
         "bgm": "complicit_cold_pulse.mp3",
         "next": "day4_night_truth_sea_choice"
     },
     "day4_night_truth_sea_choice": {
         "choices": [
-            {
-                "next": "day4_night_truth_sea_right_1",
-                "setFlags": [
-                    "deduced_sea_notebook"
-                ]
-            },
-            {
-                "next": "day4_night_truth_sea_wrong_1"
-            },
-            {
-                "next": "day4_night_truth_sea_wrong_1"
-            }
+            { "next": "day4_night_truth_sea_wrong_1" },
+            { "next": "day4_night_truth_sea_wrong_2" },
+            { "next": "day4_night_truth_sea_right_1", "setFlags": ["deduced_sea_notebook"] }
         ]
     },
     "day4_night_truth_sea_right_1": {
@@ -939,7 +944,7 @@ Object.assign(SCENARIO[4], {
         ],
         "glitch": {
             "memoryFlash": {
-                "background": "cg_cycle12_yuna",
+                "background": "cg_cycle07_seolhwa",
                 "duration": 450
             }
         }
@@ -950,18 +955,9 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_truth_riin_choice": {
         "choices": [
-            {
-                "next": "day4_night_truth_riin_right_1",
-                "setFlags": [
-                    "deduced_riin_reduction"
-                ]
-            },
-            {
-                "next": "day4_night_truth_riin_wrong_1"
-            },
-            {
-                "next": "day4_night_truth_riin_wrong_1"
-            }
+            { "next": "day4_night_truth_riin_wrong_1" },
+            { "next": "day4_night_truth_riin_right_1", "setFlags": ["deduced_riin_reduction"] },
+            { "next": "day4_night_truth_riin_wrong_2" }
         ]
     },
     "day4_night_truth_riin_right_1": {
@@ -1008,18 +1004,9 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_truth_eunsu_choice": {
         "choices": [
-            {
-                "next": "day4_night_truth_eunsu_right_1",
-                "setFlags": [
-                    "deduced_eunsu_reports"
-                ]
-            },
-            {
-                "next": "day4_night_truth_eunsu_wrong_1"
-            },
-            {
-                "next": "day4_night_truth_eunsu_wrong_1"
-            }
+            { "next": "day4_night_truth_eunsu_right_1", "setFlags": ["deduced_eunsu_reports"] },
+            { "next": "day4_night_truth_eunsu_wrong_1" },
+            { "next": "day4_night_truth_eunsu_wrong_2" }
         ]
     },
     "day4_night_truth_eunsu_right_1": {
@@ -1056,7 +1043,9 @@ Object.assign(SCENARIO[4], {
         "next": "day4_night_truth_partial_1"
     },
     "day4_night_truth_complete_1": {
-        "character": "seolhwa_sad",
+        "noTimeFilter": true,
+        "background": "room_night",
+        "character": null,
         "setFlags": [
             "deduced_full_truth"
         ],
@@ -1071,14 +1060,18 @@ Object.assign(SCENARIO[4], {
         "next": "day4_night_truth_complete_2"
     },
     "day4_night_truth_complete_2": {
-        "character": "seolhwa_sad",
+        "noTimeFilter": true,
+        "character": null,
         "next": "day4_night_truth_complete_3"
     },
     "day4_night_truth_complete_3": {
+        "noTimeFilter": true,
+        "charOpacity": 0.86,
         "character": "seolhwa_sad",
         "next": "day4_night_plan_choice"
     },
     "day4_night_truth_partial_1": {
+        "background": "room_night",
         "character": null,
         "next": "day4_night_truth_partial_2"
     },

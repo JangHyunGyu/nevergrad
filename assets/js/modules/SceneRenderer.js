@@ -378,6 +378,14 @@ class SceneRenderer {
         if (this.bgLayer) {
             this.bgLayer.classList.add('bg-layer');
             this.bgLayer.classList.remove(...timeClasses);
+            const bgImg = String(this.bgLayer.style.backgroundImage || '').toLowerCase();
+            const bgExempt = bgImg.indexOf('/images/cg/') !== -1
+                || bgImg.indexOf('/images/evidence/') !== -1
+                || bgImg.indexOf('sunset_outside') !== -1
+                || /\/background\/(?:black|white|news_article|school_gate_dark|school_night|school_dark|room_night|room_dark|night_rain|bathroom_night|emergency_stair_night)/.test(bgImg);
+            if ((type === 'sunset' || type === 'morning') && !bgExempt) {
+                this.bgLayer.classList.add(`time-${type}`);
+            }
         }
 
         if (this.charLayer) {

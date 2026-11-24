@@ -628,7 +628,7 @@ class GlitchSystemAdvanced {
                 titleYuna: 'YUNA_CAM / 전학생',
                 titleDefault: '카메라 롤',
                 gate: '교문',
-                currentTag: '어제 아침 / 교문',
+                currentTag: '첫날 아침 / 교문',
                 currentNote: '현재 관찰 중.',
                 notes: [
                     '짧은 검은 머리. 새 교복.',
@@ -649,7 +649,7 @@ class GlitchSystemAdvanced {
                 titleYuna: 'YUNA_CAM / TRANSFER_STUDENTS',
                 titleDefault: 'CAMERA_ROLL',
                 gate: 'School gate',
-                currentTag: 'Yesterday morning / School gate',
+                currentTag: 'First morning / School gate',
                 currentNote: 'Currently under observation.',
                 notes: [
                     'Short black hair. New uniform.',
@@ -670,7 +670,7 @@ class GlitchSystemAdvanced {
                 titleYuna: 'YUNA_CAM / 転入生',
                 titleDefault: 'カメラロール',
                 gate: '校門',
-                currentTag: '昨日の朝 / 校門',
+                currentTag: '初日の朝 / 校門',
                 currentNote: '現在観察中。',
                 notes: [
                     '短い黒髪。新しい制服。',
@@ -691,7 +691,7 @@ class GlitchSystemAdvanced {
                 titleYuna: 'YUNA_CAM / ESTUDIANTES_TRASLADADOS',
                 titleDefault: 'Carrete de cámara',
                 gate: 'Puerta escolar',
-                currentTag: 'Ayer por la mañana / Puerta escolar',
+                currentTag: 'Primera mañana / Puerta escolar',
                 currentNote: 'Actualmente bajo observación.',
                 notes: [
                     'Pelo negro corto. Uniforme nuevo.',
@@ -712,7 +712,7 @@ class GlitchSystemAdvanced {
                 titleYuna: 'YUNA_CAM / ELEVES_TRANSFERES',
                 titleDefault: 'Pellicule',
                 gate: "Portail de l'ecole",
-                currentTag: "Hier matin / Portail de l'ecole",
+                currentTag: "Premier matin / Portail de l'ecole",
                 currentNote: 'Actuellement sous observation.',
                 notes: [
                     'Cheveux noirs courts. Nouvel uniforme.',
@@ -733,7 +733,7 @@ class GlitchSystemAdvanced {
                 titleYuna: 'YUNA_CAM / TRANSFERSCHUELER',
                 titleDefault: 'Kamerarolle',
                 gate: 'Schultor',
-                currentTag: 'Gestern Morgen / Schultor',
+                currentTag: 'Erster Morgen / Schultor',
                 currentNote: 'Derzeit unter Beobachtung.',
                 notes: [
                     'Kurzes schwarzes Haar. Neue Uniform.',
@@ -754,7 +754,7 @@ class GlitchSystemAdvanced {
                 titleYuna: 'YUNA_CAM / ALUNOS_TRANSFERIDOS',
                 titleDefault: 'Rolo da câmera',
                 gate: 'Portão da escola',
-                currentTag: 'Ontem de manhã / Portão da escola',
+                currentTag: 'Primeira manhã / Portão da escola',
                 currentNote: 'Atualmente em observação.',
                 notes: [
                     'Cabelo preto curto. Uniforme novo.',
@@ -775,7 +775,7 @@ class GlitchSystemAdvanced {
                 titleYuna: 'YUNA_CAM / 转学生',
                 titleDefault: '相机胶卷',
                 gate: '校门',
-                currentTag: '昨天早上 / 校门',
+                currentTag: '第一天早上 / 校门',
                 currentNote: '正在观察中。',
                 notes: [
                     '黑色短发。新校服。',

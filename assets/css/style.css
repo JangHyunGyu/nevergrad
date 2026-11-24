@@ -3,7 +3,7 @@
  */
 @import url("./style-part1.css?v=20261120-art-refresh");
 @import url("./style-part2.css?v=20261015-dialogue-read");
-@import url("./style-part3.css");
+@import url("./style-part3.css?v=20261124-audit-polish");
 @import url("./style-part4.css");
 
 .choice-panel { z-index: 60 !important; }

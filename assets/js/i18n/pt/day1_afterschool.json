@@ -6,7 +6,7 @@
         "text": "*Fim das aulas. Para onde devo ir?*",
         "choices": [
             "Passar na sala do grêmio estudantil para procurar a Sea",
-            "Ir à biblioteca de novo (talvez a Yuna esteja lá)",
+            "Dar uma passada na biblioteca (a Yuna pode estar lá)",
             "Dar um pulo na enfermaria para cumprimentar",
             "Ir à sala dos professores conferir a documentação",
             "Ir direto para casa"
@@ -19,7 +19,7 @@
         "text": "Ah, você veio! Pode entrar, aqui é a sala do grêmio estudantil."
     },
     "day1_after_sea_3": {
-        "text": "*Sea me entrega uma lata. Um lado do lacre já está levantado, então ela abre na hora.*\n\nValeu. Você já tinha levantado o lacre."
+        "text": "*Sea me entrega uma lata. O lacre já está um pouco levantado pra abrir fácil.*\n\nAh, você levantou um pouco pra facilitar. Valeu."
     },
     "day1_after_sea_4": {
         "text": "Então, como você está se adaptando?"
@@ -43,7 +43,7 @@
         "text": "A esta hora, só dá para ouvir o zumbido das lâmpadas."
     },
     "day1_after_sea_11": {
-        "text": "E os outros do conselho? Todo mundo vai embora assim que acaba a aula?"
+        "text": "E o resto do grêmio? Depois da aula todo mundo vai embora antes?"
     },
     "day1_after_sea_12": {
         "text": "Tem alguns, mas... sou o único que vem aqui depois da escola."
@@ -94,7 +94,7 @@
         "text": "Sunbae, espere!"
     },
     "day1_after_yuna_12": {
-        "text": "*Yuna pega uma foto Polaroid já revelada e estende para mim. É a paisagem iluminada pelo sol lá fora da janela da biblioteca.*\n\nTem certeza de que posso ficar com ela?"
+        "text": "*Yuna tira uma Polaroid e me entrega: uma carteira perto da janela da biblioteca, tomada pela luz inclinada.*\n\nTem certeza de que posso ficar com isso?"
     },
     "day1_after_yuna_13": {
         "text": "Este é... o assento em que você se sentou, sunbae. A luz é boa lá. Pegue."
@@ -130,7 +130,7 @@
         "text": "Obrigado."
     },
     "day1_after_riin_10": {
-        "text": "*A professora Riin coloca uma música calma de piano no alto-falante. O volume está tão baixo que eu sinto o ritmo antes da melodia.*\n\nO volume baixo deixa tudo mais tranquilo. Obrigado pelo chá."
+        "text": "*A professora Riin coloca um piano bem baixinho; o ritmo aparece antes da melodia.*\n\nCom o som baixinho assim dá até uma calma."
     },
     "day1_after_riin_11": {
         "text": "Pode aparecer sem cerimônia nesse horário outra vez. Vou deixar o chá pronto."
@@ -139,16 +139,16 @@
         "text": "Então já vou indo. Muito obrigado.\n\n*A enfermeira Riin segura a porta para mim. Enquanto caminho pelo corredor mexendo no saquinho de chá, as pétalas secas fazem um barulhinho suave lá dentro.*"
     },
     "day1_after_eunsu_1": {
-        "text": "{name}? Você veio me ver depois da escola? Há algo errado?"
+        "text": "{name}? O que te traz aqui depois da aula?"
     },
     "day1_after_eunsu_2": {
-        "text": "*A professora Eunsu olha para trás enquanto passa um café.*\n\nQue bom que você veio. Como foi acompanhar as aulas logo no primeiro dia?"
+        "text": "*A professora Eunsu olha para trás enquanto passa café.*\n\nNada demais, só passei aqui depois do meu primeiro dia de aula."
     },
     "day1_after_eunsu_3": {
         "text": "As cópias dos documentos da sua outra escola chegaram um pouquinho atrasadas. A correria da mudança deve ter sido grande, né?"
     },
     "day1_after_eunsu_4": {
-        "text": "Sim, acabamos nos mudando meio de repente por causa do trabalho dos meus pais. Será que falta mais algum documento para eu trazer?"
+        "text": "Sim, foi bem de repente por causa do trabalho dos meus pais. Falta eu entregar mais algum documento?"
     },
     "day1_after_eunsu_5": {
         "text": "Não, o que você entregou mais cedo já basta."
@@ -157,7 +157,7 @@
         "text": "*A professora pousou a xícara de café e fechou a pasta de documentos.*\n\nA senhora está ocupada. Não estou atrapalhando, né?"
     },
     "day1_after_eunsu_7": {
-        "text": "Ah, certo, {name}, você pegou todos os seus livros?"
+        "text": "Ah é, já pegou todos os seus livros?"
     },
     "day1_after_eunsu_8": {
         "text": "Sim, Sea cuidou de tudo."
@@ -166,7 +166,7 @@
         "text": "Sea está cuidando de você. Se tiver alguma dificuldade, venha falar comigo. Sou sua professora responsável."
     },
     "day1_after_eunsu_10": {
-        "text": "*A professora Eunsu sorri e dá tapinhas nas minhas costas. No ponto em que o tecido do uniforme afundou, só o calor da palma dela fica por um instante.*\n\nSim, professora. Amanhã acho que já vou estar mais à vontade."
+        "text": "*A professora Eunsu sorri e dá um tapinha leve nas minhas costas.*\n\nSim, professora. Amanhã já devo estar mais acostumado."
     },
     "day1_after_home_1": {
         "text": "*Saindo pelo portão da escola, olho para trás.*"
@@ -199,7 +199,7 @@
         "text": "Eu também vou pra casa. Deixa a representante encerrar o expediente?"
     },
     "day1_after_sea_walk_4": {
-        "text": "*Na escada, Sea deu passagem. Ficou junto ao corrimão enquanto eu ajeitava a mochila.*"
+        "text": "*Na escada, Sea deu passagem e esperou encostada no corrimão eu ajeitar a mochila. No portão da escola, ela acenou e seguiu pela rua oposta.*"
     },
     "day1_after_eunsu_counsel_1": {
         "text": "Ah, na ficha cadastral pode deixar em branco o campo de planos para o futuro. No primeiro dia, só de não errar as ruas na volta para casa já está ótimo."
@@ -220,7 +220,7 @@
         "text": "*Cheese estava de costas pra lente. Yuna mostrou a próxima foto: o focinho estava tão perto que a imagem era toda rosa.*"
     },
     "day1_after_sea_cabinet_choice": {
-        "text": "*Sea colocou a pilha de formulários de inscrição no gabinete de metal e girou a chave.*",
+        "text": "*Sea arruma a pilha de fichas na prateleira de cima do armário de aço.*",
         "choices": [
             "Olhe para a caixa de crachás antigos na prateleira de baixo",
             "Olhe para a etiqueta de plástico no vaso perto da janela"
@@ -282,10 +282,10 @@
         "text": "Yuna, esse 13 a lápis atrás da foto é o número do filme?"
     },
     "day1_after_yuna_back_2": {
-        "text": "*Yuna desacelerou seus passos por meio segundo.*"
+        "text": "*Yuna para de andar por um instante.*"
     },
     "day1_after_yuna_back_3": {
-        "text": "Sim. São dez doses em um pacote. Perco a noção de qual pacote é, então anoto."
+        "text": "Também não entrei lá se ninguém entra. Mas… se tiver tempo depois, quer dar uma olhada por lá?"
     },
     "day1_after_yuna_back_4": {
         "text": "O décimo terceiro pacote? Você tirou muita foto."
@@ -294,7 +294,7 @@
         "text": "As fotos são tudo o que fica. As memórias desaparecem mais rápido do que você pensa."
     },
     "day1_after_yuna_back_6": {
-        "text": "Aquela foto na janela da biblioteca ficou bonita e nítida."
+        "text": "*Aquela foto na janela da biblioteca ficou bonita e nítida.*"
     },
     "day1_after_yuna_back_7": {
         "text": "Use-o como marcador. Vai durar muito tempo entre as páginas de um livro grosso, onde não vai dobrar."
@@ -337,7 +337,7 @@
         "text": "*EM. Riin olhou para a bolsa enquanto colocava a tampa no bule.*"
     },
     "day1_after_riin_tea_3": {
-        "text": "Quando chegou ao almoxarifado. Temos que carimbar a data de abertura em todos os materiais da enfermaria."
+        "text": "A data em que foi aberto. Tudo aqui na enfermaria recebe o carimbo do dia em que é aberto."
     },
     "day1_after_riin_tea_4": {
         "text": "Até saquinhos de chá?"
@@ -349,7 +349,7 @@
         "text": "A senhora deve ter bastante trabalho."
     },
     "day1_after_riin_tea_7": {
-        "text": "Depois que acostuma, a mão faz sozinha. Você carimba antes de pensar."
+        "text": "Depois que acostuma, a mão vai sozinha. A gente carimba antes mesmo de pensar."
     },
     "day1_after_riin_tea_8": {
         "text": "Como é chamada esta peça para piano? Parece que a mesma seção continua se repetindo."
@@ -358,7 +358,7 @@
         "text": "*EM. Riin apoiou as pontas dos dedos no botão de volume do alto-falante.*"
     },
     "day1_after_riin_tea_10": {
-        "text": "É uma música para induzir o sono. Os compassos vão se emendando, não tem um final separado."
+        "text": "É uma faixa instrumental pra dormir, então os compassos ficam repetindo sem fim definido."
     },
     "day1_after_riin_tea_11": {
         "text": "Ouvir isso me deixa sonolento."
@@ -370,10 +370,10 @@
         "text": "*Ela empilhou os copos de papel vazios ao lado da pia.*"
     },
     "day1_after_riin_tea_14": {
-        "text": "Mesmo que você não durma bem esta noite, você acordará na hora certa amanhã. Não se preocupe. Durma um pouco."
+        "text": "Mesmo que durma mal hoje, amanhã de manhã você acorda no horário. Não se preocupe e descanse."
     },
     "day1_after_riin_tea_15": {
-        "text": "OK. Vejo você amanhã."
+        "text": "*Enxáguo o copo vazio, deixo perto da pia e ajeito a mochila no ombro.*"
     },
     "day1_after_eunsu_file_choice": {
         "text": "*Migalhas de borracha branca estavam em uma pequena pilha ao lado de uma pasta na mesa da Sra. Eunsu.*",

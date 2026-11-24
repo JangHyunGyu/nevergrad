@@ -976,17 +976,17 @@
     },
     "day1_night_sea_reply_1": {
       "character": "sea_smile",
-      "charOpacity": 0.7,
-      "night": true,
+      "charOpacity": 0.85,
       "messengerDelay": 1200,
-      "next": "day1_night_extra_msg_branch"
+      "next": "day1_night_extra_msg_branch",
+      "noTimeFilter": true
     },
     "day1_night_sea_reply_2": {
       "character": "sea_smile",
-      "charOpacity": 0.7,
-      "night": true,
+      "charOpacity": 0.85,
       "messengerDelay": 1200,
-      "next": "day1_night_extra_msg_branch"
+      "next": "day1_night_extra_msg_branch",
+      "noTimeFilter": true
     },
     "day1_night_sea_reply_3": {
       "character": null,
@@ -998,7 +998,7 @@
     },
     "day2_morning_deja4_5": {
       "character": "sea_normal",
-      "next": "day2_morning_pen_1",
+      "next": "day2_morning_deja4_6",
       "glitch": {
         "type": "flicker",
         "duration": 300
@@ -1131,7 +1131,7 @@
       "character": null,
       "branches": [
         {
-          "condition": "met_yuna",
+          "condition": "yuna_route_started",
           "next": "day4_morning_classroom_met"
         }
       ],
@@ -1139,11 +1139,11 @@
     },
     "day4_after_eunsu_2": {
       "character": "eunsu_serious",
-      "next": "day4_after_eunsu_evidence_menu"
+      "next": "day4_after_eunsu_3"
     },
     "day4_after_sea_2": {
       "character": "sea_smile",
-      "next": "day4_after_sea_evidence_menu"
+      "next": "day4_after_sea_3"
     },
     "day4_night_plan_15": {
       "character": null,
@@ -1158,7 +1158,7 @@
       "next": "day5_ending_cage_eunsu_epilogue_1"
     },
     "day5_ending_escape_15": {
-      "character": "yuna_normal",
+      "character": null,
       "next": "day5_ending_escape_epilogue_1"
     },
     "day5_ending_escape_riin": {
@@ -1179,7 +1179,7 @@
       "background": "room_morning",
       "bgm": "morning_peaceful.mp3",
       "unskippable": true,
-      "next": "day5_ending_forget_epilogue_1"
+      "next": "day5_ending_forget_15"
     },
     "day5_ending_ghost_22": {
       "character": null,

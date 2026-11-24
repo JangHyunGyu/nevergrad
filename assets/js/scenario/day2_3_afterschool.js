@@ -55,7 +55,7 @@ Object.assign(SCENARIO[2], {
 
     // --- 권한 선택 ---
     "day2_after_eunsu_choice": {
-        character: null,
+        character: "eunsu_gentle",
         choices: [
             {
                 next: "day2_after_allow_1",
@@ -401,7 +401,7 @@ Object.assign(SCENARIO[2], {
         choices: [
             { next: "day2_after_detour_hall_1", stats: { sea: { affinity: 2 } } },
             { next: "day2_after_detour_lib_1", setFlags: ["saw_board_window_photo"], stats: { yuna: { affinity: 3 }, seolhwa: { affinity: 2 } } },
-            { next: "day2_after_detour_nur_1", setFlags: ["overheard_riin_day2_call"], stats: { riin: { affinity: 2 }, seolhwa: { affinity: 2 } } }
+            { next: "day2_after_detour_nur_1", condition: "met_riin", setFlags: ["overheard_riin_day2_call"], stats: { riin: { affinity: 2 }, seolhwa: { affinity: 2 } } }
         ]
     },
     "day2_after_detour_hall_1": { character: null, next: "day2_after_detour_hall_2" },
@@ -465,7 +465,7 @@ Object.assign(SCENARIO[2], {
     "day2_after_seolhwa_trc_9": { character: null, next: "day2_after_seolhwa_trc_10" },
     "day2_after_seolhwa_trc_10": { character: null, next: "day2_after_seolhwa_trc_11" },
     "day2_after_seolhwa_trc_11": { character: null, next: "day2_after_seolhwa_trc_12" },
-    "day2_after_seolhwa_trc_12": { character: null, next: "day2_after_seolhwa_trc_13" },
+    "day2_after_seolhwa_trc_12": { background: "street", character: null, next: "day2_after_seolhwa_trc_13" },
     "day2_after_seolhwa_trc_13": { character: null, next: "day2_after_seolhwa_trc_14" },
     "day2_after_seolhwa_trc_14": { character: null, next: "day2_after_end" }
 });

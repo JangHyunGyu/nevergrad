@@ -829,14 +829,17 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
         this.renderer._crossfadeMs = handoffFade ? 1800 : 0;
         let backgroundReady;
         if (scene.background) {
+            this._currentBackgroundKey = scene.background;
             const bgPath = CONFIG.BACKGROUNDS[scene.background] || scene.background;
             backgroundReady = this.renderer.setBackground(bgPath, { instant: scene.cgTransition === false });
             if (scene.background !== 'cg_riin_two_pills' && scene.background !== 'cg_gate_bloom') {
                 (((__oc119 = (__oc118 = this.gallery) === null || __oc118 === void 0 ? void 0 : __oc118.unlockCGByPath) === null || __oc119 === void 0 ? void 0 : __oc119.call(__oc118, bgPath)));
             }
         } else if (/^day5_ending_true_2[6-7]$/.test(sceneId)) {
+            this._currentBackgroundKey = 'news_article';
             backgroundReady = this.renderer.setBackground(CONFIG.BACKGROUNDS.news_article);
         } else if (/^day5_morning_true_([2-9]|1[0-9]|2[0-7])$/.test(sceneId)) {
+            this._currentBackgroundKey = 'lab_documents';
             backgroundReady = this.renderer.setBackground(CONFIG.BACKGROUNDS.lab_documents);
         }
 
@@ -1169,6 +1172,18 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
             return scene.timeOfDay || null;
         }
 
+        const backgroundKey = scene.background
+            ? String(scene.background)
+            : (this._currentBackgroundKey || '');
+        const stateBg = this.state && this.state.currentBackground ? String(this.state.currentBackground) : '';
+        const backgroundPath = backgroundKey
+            ? ((((__oc159 = CONFIG.BACKGROUNDS) === null || __oc159 === void 0 ? void 0 : __oc159[backgroundKey])) || backgroundKey)
+            : stateBg;
+
+        if (this._isTimeFilterExemptBackground(backgroundPath)) {
+            return null;
+        }
+
         if (scene.dark) return 'dark';
         if (scene.dawn) return 'dawn';
         if (scene.rain) return 'rain';
@@ -1176,16 +1191,8 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
         if (scene.sunset) return 'sunset';
         if (scene.morning) return 'morning';
 
-        const backgroundKey = scene.background ? String(scene.background) : '';
-        const backgroundPath = backgroundKey
-            ? ((((__oc159 = CONFIG.BACKGROUNDS) === null || __oc159 === void 0 ? void 0 : __oc159[backgroundKey])) || backgroundKey)
-            : '';
-
-        if (this._isTimeFilterExemptBackground(backgroundPath)) {
-            return null;
-        }
-
-        const backgroundTime = this._timeOfDayFromBackground(backgroundKey);
+        const effectiveKey = backgroundKey || (stateBg ? stateBg.split('/').pop().replace(/\.[a-z0-9]+(?:[?#].*)?$/i, '') : '');
+        const backgroundTime = this._timeOfDayFromBackground(effectiveKey);
         if (backgroundTime) return backgroundTime;
 
         const slot = this._slotFromSceneId(sceneId) || this.state.currentSlot;
@@ -1222,7 +1229,7 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
         const path = String(backgroundPath || '').replace(/\\/g, '/').toLowerCase();
         return path.includes('/images/cg/')
             || path.includes('/images/evidence/')
-            || path.endsWith('/background/black.png');
+            || /\/background\/(?:black|white|news_article|cg_riin_two_pills_casual|cg_gate_bloom)\.(?:png|webp|jpe?g)(?:[?#]|$)/.test(path);
     }
 
     _buildSceneMediaOverlay(sceneId, scene, t, resolvedText, extraVars) { var __oc161;
@@ -1485,7 +1492,7 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
         if (sceneId === 'day4_morning_commute_2') {
             variant = 'glitch';
             statusTone = 'danger';
-            badge = 'SUBJECT #01';
+            badge = 'SUBJECT #1—';
             alertBody = getSceneQuote('day4_morning_commute_2');
         } else if (sceneId === 'day4_morning_commute_3') {
             variant = 'normal';
@@ -1742,7 +1749,8 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                         for (const [charId, changes] of Object.entries(choice.stats)) {
                             for (const [stat, val] of Object.entries(changes)) {
                                 this.state.changeStat(charId, stat, val);
-                                if (stat === 'affinity' && val !== 0) {
+                                var __oc_ss;
+                                if (stat === 'affinity' && val !== 0 && !((__oc_ss = this.currentSceneData) === null || __oc_ss === void 0 ? void 0 : __oc_ss.silentStats)) {
                                     this._playStatChangeFX(stat, val, charId);
                                 }
                             }
@@ -2124,7 +2132,7 @@ this._handleTimedResult(
     _cleanupPersistentOverlays(sceneId, scene) { var __oc189, __oc190, __oc191, __oc192;
         if (!this.glitchAdvanced) return;
         const g = ((scene === null || scene === void 0 ? void 0 : scene.glitch)) || {};
-        const inSaveGlitch = /day4_night_save_glitch/.test(sceneId);
+        const inSaveGlitch = /^day4_night_save_glitch_(?:[7-9]|1[0-8])$/.test(sceneId);
         if (!inSaveGlitch && !g.adminPanel) {
             this.glitchAdvanced.hideAdminPanel();
         }
@@ -2473,30 +2481,23 @@ this._handleTimedResult(
     _showEndingTitle(title, subtitleKey) { var __oc229, __oc230, __oc231, __oc232, __oc233, __oc234, __oc236;
         (((__oc230 = (__oc229 = this.sceneLifecycle) === null || __oc229 === void 0 ? void 0 : __oc229.clear) === null || __oc230 === void 0 ? void 0 : __oc230.call(__oc229)));
         this._autoAdvanceTimer = null;
+        document.querySelectorAll('.ending-title-overlay').forEach(el => el.remove());
+
         const overlay = document.createElement('div');
         overlay.className = 'ending-title-overlay';
 
-        if (title) {
-            const titleEl = document.createElement('div');
-            titleEl.className = 'ending-title';
-            titleEl.textContent = title;
-            overlay.appendChild(titleEl);
+        const endingKey = title
+            ? String(title).replace(/\s*END\s*$/i, '').trim().toLowerCase()
+            : '';
+        if (endingKey) {
+            overlay.dataset.ending = endingKey;
         }
 
-        if (subtitleKey) {
-            const subtitleText = (((__oc231 = this.i18n.get(subtitleKey)) === null || __oc231 === void 0 ? void 0 : __oc231.text)) || '';
-            if (subtitleText) {
-                const subEl = document.createElement('div');
-                subEl.className = 'ending-subtitle';
-                subEl.textContent = subtitleText;
-                overlay.appendChild(subEl);
-            }
-        }
+        const next = title ? (((__oc232 = this.currentSceneData) === null || __oc232 === void 0 ? void 0 : __oc232.next)) : null;
 
         // 타이틀 복귀 버튼
         const returnBtn = document.createElement('button');
         returnBtn.className = 'ending-return-btn';
-        const next = title ? (((__oc232 = this.currentSceneData) === null || __oc232 === void 0 ? void 0 : __oc232.next)) : null;
         returnBtn.textContent = (((__oc234 = (__oc233 = this.i18n) === null || __oc233 === void 0 ? void 0 : __oc233.getUI) === null || __oc234 === void 0 ? void 0 : __oc234.call(__oc233, next ? 'continue' : 'toTitle'))) || (next ? 'Continue' : 'Title');
         returnBtn.addEventListener('click', () => { var __oc235;
             overlay.remove();
@@ -2507,7 +2508,51 @@ this._handleTimedResult(
             } else if (this.isGalleryReplay) this._finishGalleryReplay();
             else this._showScreen('title-screen');
         });
-        overlay.appendChild(returnBtn);
+
+        if (title) {
+            const card = document.createElement('div');
+            card.className = 'ending-card';
+            const meta = this._getEndingCardMeta(endingKey);
+
+            if (meta && meta.eyebrow) {
+                const eyebrowEl = document.createElement('div');
+                eyebrowEl.className = 'ending-eyebrow';
+                eyebrowEl.textContent = meta.eyebrow;
+                card.appendChild(eyebrowEl);
+            }
+
+            const titleEl = document.createElement('div');
+            titleEl.className = 'ending-title';
+            titleEl.textContent = title;
+            card.appendChild(titleEl);
+
+            const dividerEl = document.createElement('div');
+            dividerEl.className = 'ending-divider';
+            dividerEl.setAttribute('aria-hidden', 'true');
+            card.appendChild(dividerEl);
+
+            if (subtitleKey) {
+                const subtitleText = (((__oc231 = this.i18n.get(subtitleKey)) === null || __oc231 === void 0 ? void 0 : __oc231.text)) || '';
+                if (subtitleText) {
+                    const subEl = document.createElement('div');
+                    subEl.className = 'ending-subtitle';
+                    subEl.textContent = subtitleText;
+                    card.appendChild(subEl);
+                }
+            }
+
+            if (meta && meta.epigraph) {
+                const epigraphEl = document.createElement('p');
+                epigraphEl.className = 'ending-epigraph';
+                epigraphEl.textContent = meta.epigraph;
+                card.appendChild(epigraphEl);
+            }
+
+            card.appendChild(returnBtn);
+            overlay.appendChild(card);
+        } else {
+            overlay.appendChild(returnBtn);
+        }
 
         (((__oc236 = document.getElementById('game-screen')) === null || __oc236 === void 0 ? void 0 : __oc236.appendChild(overlay)));
 
@@ -2516,6 +2561,98 @@ this._handleTimedResult(
 
         // 엔딩 도달 — 대화창 클릭 무효화
         this._endingReached = true;
+    }
+
+    _getEndingCardMeta(endingKey) {
+        const lang = (this.i18n && this.i18n.currentLang) || 'ko';
+        const indexMap = {
+            'true': '01 / 07',
+            'escape': '02 / 07',
+            'resist': '03 / 07',
+            'cage': '04 / 07',
+            'forget': '05 / 07',
+            'ghost': '06 / 07',
+            'complicit': '07 / 07'
+        };
+        const epigraphs = {
+            'true': {
+                ko: '열세 번의 봄 끝에, 다 함께 교문을 걸어 나왔다.',
+                en: 'After thirteen springs suspended in glass, we walked out of the gate together.',
+                ja: '十三度目の春の果てに、みんなで校門の外へ踏み出した。',
+                es: 'Tras trece primaveras detenidas, cruzamos juntos el portón hacia la mañana.',
+                fr: 'Après treize printemps figés, nous avons franchi le portail ensemble.',
+                de: 'Nach dreizehn angehaltenen Frühlingen traten wir gemeinsam durch das Schultor.',
+                pt: 'Após treze primaveras suspensas, atravessamos o portão juntos sob o amanhecer.',
+                zh: '经历十三个停滞的春天后，大家一起走出了那扇校门。'
+            },
+            'escape': {
+                ko: '빗줄기 너머 낯선 새벽 공기가 폐부 깊숙이 스며든다.',
+                en: 'Beyond the rain, unfamiliar dawn air fills our lungs for the first time.',
+                ja: '雨の向こうで、見知らぬ夜明けの空気が肺の奥まで満ちていく。',
+                es: 'Más allá de la lluvia, un aire nuevo de madrugada nos llena el pecho.',
+                fr: 'Au-delà de la pluie, un air d\'aube inconnu nous emplit la poitrine.',
+                de: 'Hinter dem Regen strömt zum ersten Mal fremde Morgenluft in die Lungen.',
+                pt: 'Além da chuva, o ar desconhecido da madrugada entra fundo nos pulmões.',
+                zh: '穿过雨幕后，陌生而清冽的黎明空气第一次涌入胸腔。'
+            },
+            'resist': {
+                ko: '타다 남은 기록 속에서도 끝내 지워지지 않은 이름들이 숨 쉰다.',
+                en: 'Even among the scorched files, the names they tried to erase refuse to fade.',
+                ja: '焼け残った記録の奥で、消されたはずの名前がいまも息をしている。',
+                es: 'Incluso entre los archivos calcinados, los nombres borrados siguen respirando.',
+                fr: 'Même parmi les dossiers calcinés, les noms effacés continuent de vivre.',
+                de: 'Selbst in den versengten Akten atmen die getilgten Namen weiter.',
+                pt: 'Mesmo entre os registros chamuscados, os nomes apagados continuam vivos.',
+                zh: '在烧残的档案之间，那些曾被抹去的名字依然没有消失。'
+            },
+            'cage': {
+                ko: '완벽한 봄날은 창문을 닫아 둔 교실 안에서 영원히 멈춰 있다.',
+                en: 'A flawless spring afternoon stays locked forever behind the closed classroom windows.',
+                ja: '完璧な春の午後は、窓を閉ざした教室の中で永遠に止まっている。',
+                es: 'Una primavera perfecta permanece detenida para siempre tras las ventanas cerradas del aula.',
+                fr: 'Un printemps parfait reste figé pour toujours derrière les fenêtres closes de la classe.',
+                de: 'Ein makelloser Frühling bleibt für immer hinter den verschlossenen Klassenfenstern gefangen.',
+                pt: 'Uma primavera perfeita permanece imóvel para sempre atrás das janelas fechadas da sala.',
+                zh: '完美的春日午后，被永远定格在紧闭窗户的教室里。'
+            },
+            'forget': {
+                ko: '빈자리의 온기만 희미하게 남은 채, 아무 일도 없었다는 듯 종이 울렸다.',
+                en: 'Only the faint warmth of an empty desk lingers as the bell rings like nothing happened.',
+                ja: '空席のぬくもりだけをかすかに残し、何もなかったかのようにチャイムが鳴った。',
+                es: 'Solo queda la tibia huella de un pupitre vacío mientras el timbre suena como si nada.',
+                fr: 'Seule demeure la tiédeur d\'un bureau vide tandis que la cloche sonne comme si de rien n\'était.',
+                de: 'Nur die schwache Wärme eines leeren Platzes bleibt zurück, als die Glocke wieder läutet.',
+                pt: 'Resta apenas o calor tênue de uma carteira vazia enquanto o sinal toca como se nada tivesse acontecido.',
+                zh: '只剩空座上一丝微弱的余温，下课铃却像什么都没发生过一样响了起来。'
+            },
+            'ghost': {
+                ko: '거울 너머에 남겨진 그림자가 아직도 빈 복도를 서성인다.',
+                en: 'The shadow left behind the glass still wanders the empty corridor long after curfew.',
+                ja: '鏡の向こうに取り残された影が、いまも人気のない廊下をさまよっている。',
+                es: 'La sombra atrapada detrás del espejo sigue rondando el pasillo vacío.',
+                fr: 'L\'ombre abandonnée derrière le miroir erre encore dans le couloir désert.',
+                de: 'Der Schatten hinter dem Spiegel streift noch immer durch den leeren Flur.',
+                pt: 'A sombra deixada atrás do espelho ainda vaga pelo corredor vazio.',
+                zh: '留在镜面彼端的影子，至今仍在空无一人的走廊尽头徘徊。'
+            },
+            'complicit': {
+                ko: '모니터 불빛 아래, 다음 전학생의 이름이 명단 맨 아랫줄에 적혔다.',
+                en: 'Beneath the monitor glow, the next transfer student’s name takes the bottom line.',
+                ja: 'モニターの明かりの下、次の転校生の名前が名簿の一番下に書き加えられた。',
+                es: 'Bajo la luz del monitor, el nombre del próximo estudiante queda inscrito en la última fila.',
+                fr: 'Sous la lueur des écrans, le nom du prochain élève s\'inscrit déjà au bas de la liste.',
+                de: 'Im Schein der Monitore steht schon der Name des nächsten Neuzugangs in der letzten Zeile.',
+                pt: 'Sob a luz dos monitores, o nome do próximo aluno transferido ocupa a última linha da lista.',
+                zh: '在显示器冷光下，下一名转学生的名字被填进了名单最末一行。'
+            }
+        };
+        const num = indexMap[endingKey] || '';
+        const epiMap = epigraphs[endingKey];
+        if (!num && !epiMap) return null;
+        return {
+            eyebrow: num ? `ENDING ${num}` : '',
+            epigraph: epiMap ? (epiMap[lang] || epiMap.en || epiMap.ko || '') : ''
+        };
     }
 
     dispose() { var __oc237, __oc238, __oc239, __oc240, __oc241, __oc242, __oc243, __oc244, __oc245, __oc246, __oc247, __oc248;
@@ -3367,7 +3504,12 @@ this._handleTimedResult(
                 frontier = next;
             }
         }
-        if (background) this.renderer.setBackground(background);
+        if (background) {
+            const entries = (typeof CONFIG !== 'undefined' && CONFIG.BACKGROUNDS) ? Object.entries(CONFIG.BACKGROUNDS) : [];
+            const matched = entries.find((pair) => pair[1] === background);
+            this._currentBackgroundKey = matched ? matched[0] : '';
+            this.renderer.setBackground(background);
+        }
     }
 
     _isGameplayPaused() { var __oc284;

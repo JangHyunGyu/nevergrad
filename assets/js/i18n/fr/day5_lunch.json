@@ -55,7 +55,7 @@
         "text": "*La voix de Sea est rauque, brisée. Le bout de ses manches est déjà trempé.*"
     },
     "day5_lunch_left_5a": {
-        "text": "Sea, écarte-toi."
+        "text": "Sea, pousse-toi."
     },
     "day5_lunch_left_5b": {
         "text": "*Sea secoue la tête et refuse de s’écarter de la porte.*"
@@ -67,7 +67,7 @@
         "text": "*Sea serre les deux poings. Les jointures de ses doigts sont blanches.*\n\nTu vas faire quoi, cette fois ? Me bloquer me fera rester ?"
     },
     "day5_lunch_left_8": {
-        "text": "Je sais ce que je suis en train de faire."
+        "text": "Je sais très bien ce que je suis en train de faire."
     },
     "day5_lunch_left_9": {
         "text": "Mais si tu passes cette porte, le lendemain, c'est une personne inconnue qui se tient devant moi."
@@ -121,7 +121,7 @@
         "text": "... Dois-je aussi m'écarter cette fois-ci?"
     },
     "day5_lunch_left_choice": {
-        "text": "*Boum, boum, boum. Les pas dans l’escalier se rapprochent. Sea regarde vers le bruit mais ne s’écarte pas.*\n\n*Une phrase inconnue apparaît au centre de mes pensées.*\n\n***`[RETENTION APPROVED]`***",
+        "text": "*Boum, boum, boum. Les pas dans l’escalier se rapprochent. Sea regarde vers le bruit mais ne s’écarte pas.*\n\n*Une phrase inconnue apparaît au centre de mes pensées.*\n\n***'[RETENTION APPROVED]'***",
         "choices": [
             "« Désolé. Mais je dois y aller. »",
             "« Viens avec moi. »",
@@ -147,7 +147,7 @@
         "text": "*J'ai dépassé Sea.*"
     },
     "day5_lunch_left_c1_7": {
-        "text": "*Derrière moi — le bruit d'un corps qui s'affaisse. Un uniforme qui racle le sol. Puis — un souffle bref, étouffé.*"
+        "text": "*Derrière moi, j'entends Sea s'affaisser au sol, son uniforme balayant le carrelage dans un court soupir.*"
     },
     "day5_lunch_left_c1_8": {
         "text": "...Au revoir."
@@ -159,10 +159,10 @@
         "text": "*Les yeux de Sea s’écarquillent. Le porte-clés s’immobilise net au creux de sa paume.*\n\nJe ne te laisserai pas ici. Sortons ensemble."
     },
     "day5_lunch_left_c2_3": {
-        "text": "Une fois dehors, tu connaîtras encore mon nom ?"
+        "text": "Même dehors, tu te souviendras toujours de mon prénom ?"
     },
     "day5_lunch_left_c2_4": {
-        "text": "Oui, je le connaîtrai."
+        "text": "Je ne l'oublierai pas."
     },
     "day5_lunch_left_c2_5": {
         "text": "...Je ne sais même pas à quoi ça ressemble dehors."
@@ -265,7 +265,7 @@
         "text": "*Riin ouvre le placard. Les flacons de médicament sont alignés.*\n\nMontrez-moi d'abord ce qu'il y a dans ce flacon."
     },
     "day5_lunch_right_15": {
-        "text": "*Elle ouvre le flacon de médicament et l’approche de son nez. Après avoir brièvement vérifié l’odeur, elle avale une gorgée.*\n\nVous le buvez devant moi, mais je sais toujours pas ce que c'est. Dites-le."
+        "text": "*Mme Riin dévisse le flacon, en vérifie l'odeur et avale directement une gorgée.*\n\n…Madame, qu'est-ce que vous venez de boire ?"
     },
     "day5_lunch_right_16": {
         "text": "Ne regarde pas l'étiquette. Regarde derrière."
@@ -292,7 +292,7 @@
         "text": "Dose normale inscrite au dossier. Code IV sur la bouteille. J'ai ajusté les chiffres sur la feuille de prise de sang."
     },
     "day5_lunch_right_24": {
-        "text": "L'enregistrement S-13 ne contient presque aucun champ actif renseigné. Les champs vides sont ignorés lors de la révision."
+        "text": "Sur la fiche S-13, les cases de principe actif sont presque toutes vides; personne là-haut ne vérifie une ligne vide."
     },
     "day5_lunch_right_25": {
         "text": "Pourquoi ?"
@@ -328,7 +328,7 @@
         "text": "...Eunsu ne connaît pas cette clé. Après la 7ème fois, j'ai changé les serrures."
     },
     "day5_lunch_right_36": {
-        "text": "*Sur l'écran du boîtier de commande du volet, `LOCAL OVERRIDE - R.IN` clignote. Sur la carte de l'application de sécurité des élèves, seul le couloir droit de l'ancien bâtiment apparaît vide et grisé.*"
+        "text": "*Sur l'écran du boîtier de commande du volet, 'LOCAL OVERRIDE - R.IN' clignote. Sur la carte de l'application de sécurité des élèves, seul le couloir droit de l'ancien bâtiment apparaît vide et grisé.*"
     },
     "day5_lunch_right_37": {
         "text": "*Boum ! Le rideau coupe-feu tremble violemment. Quelqu’un frappe de l’autre côté. Eunsu, ou l’administration, nous a rattrapés.*"
@@ -357,7 +357,7 @@
         "text": "...est-ce aussi une procédure?"
     },
     "day5_lunch_right_c3_2": {
-        "text": "*Elle prend une seringue et s’injecte le diluant inactif dans le bras.*\n\nCe n'est pas parce que vous vous l'injectez que je vais vous croire aussitôt."
+        "text": "*Mme Riin saisit la seringue et se l'enfonce sans hésiter dans le bras.*\n\n…Mais qu'est-ce que vous faites ?!"
     },
     "day5_lunch_right_c3_3": {
         "text": "...Tu as vu derrière l'étiquette. Tu as vérifié ?"
@@ -550,6 +550,6 @@
         "text": "La liste des élèves est en dessous. Toi, écris dans cette case."
     },
     "day5_lunch_complicit_2": {
-        "text": "*À côté du nom de Yuna figure toujours « isolement ». Je referme le registre.*"
+        "text": "*Devant le nom de Yuna figure encore 'Isolement'. Je referme le registre.*"
     }
 }

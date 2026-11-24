@@ -39,7 +39,7 @@ Object.assign(SCENARIO[3], {
     //  리인 루트: 수상한 약 [글리치: 선택지 플리커 "도망쳐"]
     // ══════════════════════════════════════
     "day3_after_riin": {
-        background: "nurse_office",
+        background: "corridor",
         bgm: "riin_theme.mp3",
         character: null,
         branches: [
@@ -49,25 +49,31 @@ Object.assign(SCENARIO[3], {
     },
     // 리인을 처음 만나는 경우 (Day 1/Day 3 점심 모두 안 감)
     "day3_after_riin_first": {
+        sfx: "sfx_knock.mp3",
+        background: "corridor",
         character: null,
         setFlags: ["met_riin"],
         next: "day3_after_riin_first_2"
     },
     "day3_after_riin_first_2": {
-        character: "riin_smile",
-        next: "day3_after_riin_3"
+        background: "corridor",
+        character: null,
+        next: "day3_after_riin_4"
     },
     "day3_after_riin_2": {
+        background: "corridor",
         character: null,
         sfx: "sfx_knock.mp3",
         next: "day3_after_riin_3"
     },
     "day3_after_riin_3": {
-        character: "riin_smile",
+        background: "corridor",
+        character: null,
         next: "day3_after_riin_4"
     },
     "day3_after_riin_4": {
-        character: "riin_smile",
+        background: "nurse_office",
+        character: "riin_neutral",
         next: "day3_after_riin_5"
     },
     "day3_after_riin_5": {
@@ -89,7 +95,7 @@ Object.assign(SCENARIO[3], {
 
     // ★ FLICKER GLITCH: 첫 번째 선택지가 0.1초간 "도망쳐"로 깜빡임 (붉은색)
     "day3_after_riin_choice": {
-        character: null,
+        character: "riin_pain",
         glitch: { flickerChoice: 0, flickerText: "day3_after_riin_flicker", flickerDuration: 100, flickerColor: "#ff0000" },
         choices: [
             {
@@ -200,7 +206,7 @@ Object.assign(SCENARIO[3], {
 
     // 솔직히 말한다 / 얼버무린다
     "day3_after_sea_choice": {
-        character: null,
+        character: "sea_serious",
         choices: [
             {
                 next: "day3_after_sea_truth",
@@ -258,7 +264,7 @@ Object.assign(SCENARIO[3], {
 
     // 솔직히 말하면
     "day3_after_sea_truth": {
-        character: null,
+        character: "sea_serious",
         next: "day3_after_sea_truth_2"
     },
     "day3_after_sea_truth_2": {
@@ -292,18 +298,18 @@ Object.assign(SCENARIO[3], {
         next: "day3_after_sea_truth_9"
     },
     "day3_after_sea_truth_9": {
-        character: "sea_broken_smile",
+        character: null,
         unskippable: true,
         next: "day3_after_yuna_check"
     },
 
     // 얼버무리면
     "day3_after_sea_lie": {
-        character: null,
+        character: "sea_serious",
         next: "day3_after_sea_lie_2"
     },
     "day3_after_sea_lie_2": {
-        character: "sea_stare",
+        character: "sea_smile",
         unskippable: true,
         next: "day3_after_sea_lie_3"
     },
@@ -608,31 +614,31 @@ Object.assign(SCENARIO[3], {
         "next": "day3_after_riin_closeness_high_5"
     },
     "day3_after_riin_closeness_high_5": {
-        "character": "riin_pain",
+        "character": "riin_gentle",
         "next": "day3_after_riin_closeness_high_6"
     },
     "day3_after_riin_closeness_high_6": {
-        "character": "riin_pain",
+        "character": "riin_gentle",
         "next": "day3_after_riin_closeness_high_7"
     },
     "day3_after_riin_closeness_high_7": {
-        "character": "riin_pain",
+        "character": "riin_gentle",
         "next": "day3_after_riin_closeness_high_8"
     },
     "day3_after_riin_closeness_high_8": {
-        "character": "riin_pain",
+        "character": "riin_normal",
         "next": "day3_after_riin_closeness_high_9"
     },
     "day3_after_riin_closeness_high_9": {
-        "character": "riin_pain",
+        "character": "riin_normal",
         "next": "day3_after_riin_closeness_high_10"
     },
     "day3_after_riin_closeness_high_10": {
-        "character": "riin_pain",
+        "character": "riin_normal",
         "next": "day3_after_riin_closeness_high_11"
     },
     "day3_after_riin_closeness_high_11": {
-        "character": "riin_pain",
+        "character": "riin_normal",
         "next": "day3_after_riin_closeness_high_12"
     },
     "day3_after_riin_closeness_high_12": {
@@ -711,19 +717,19 @@ Object.assign(SCENARIO[3], {
         "next": "day3_after_sea_closeness_high_6"
     },
     "day3_after_sea_closeness_high_6": {
-        "character": "sea_broken_smile",
+        "character": "sea_normal",
         "next": "day3_after_sea_closeness_high_7"
     },
     "day3_after_sea_closeness_high_7": {
-        "character": "sea_broken_smile",
+        "character": "sea_normal",
         "next": "day3_after_sea_closeness_high_8"
     },
     "day3_after_sea_closeness_high_8": {
-        "character": "sea_broken_smile",
+        "character": "sea_normal",
         "next": "day3_after_sea_closeness_high_9"
     },
     "day3_after_sea_closeness_high_9": {
-        "character": "sea_broken_smile",
+        "character": "sea_smile",
         "next": "day3_after_sea_closeness_high_10",
         "branches": [
             {
@@ -733,11 +739,11 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "day3_after_sea_closeness_high_10": {
-        "character": "sea_broken_smile",
+        "character": "sea_smile",
         "next": "day3_after_sea_closeness_high_11"
     },
     "day3_after_sea_closeness_high_11": {
-        "character": "sea_broken_smile",
+        "character": "sea_sad",
         "next": "day3_after_sea_closeness_high_12"
     },
     "day3_after_sea_closeness_high_12": {

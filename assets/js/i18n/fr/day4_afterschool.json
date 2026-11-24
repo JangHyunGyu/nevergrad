@@ -1,550 +1,550 @@
 {
-  "day4_after_start": {
-    "text": "*Après les cours. La sonnerie a retenti. La salle de classe se vide. Dans mon cartable, l'enveloppe et l'étui de la carte SD s'entrechoquent.*"
-  },
-  "day4_after_start_2": {
-    "text": "*Je note dans mon cahier les indices que j’ai vus pendant la pause déjeuner.*"
-  },
-  "day4_after_start_3": {
-    "text": "*Sea se dirige vers la salle du conseil des élèves. Mme Eunsu devrait être dans le bureau des professeurs, et Mme Riin à l’infirmerie.*"
-  },
-  "day4_after_choice": {
-    "text": "*Qui aller voir ?*",
-    "choices": [
-      "Suivre Sea",
-      "Aller voir Mme Eunsu",
-      "Faire face à Mme Riin"
-    ]
-  },
-  "day4_after_sea_route": {
-    "text": "*J'ai suivi Sea jusqu'à la salle du conseil.*"
-  },
-  "day4_after_sea_2": {
-    "text": "*Sea referme la porte derrière moi et la verrouille. Le déclic résonne jusque dans le couloir vide.*\n\nSi je t'ai demandé qu'on se voie seuls après les cours, c'est parce que j'ai quelque chose à vérifier."
-  },
-  "day4_after_sea_3": {
-    "text": "D'accord. La porte est fermée à clé, alors finissons d'en parler ici."
-  },
-  "day4_after_sea_4": {
-    "text": "*Le contour des yeux de Sea est rouge. Un mouchoir en papier froissé est posé sur le bureau.*\n\nTu as pleuré ? Si c'est à propos de moi, dis-le."
-  },
-  "day4_after_sea_5": {
-    "text": "*Dehors, les élèves quittent le terrain de sport. À travers la vitre, les mouvements de leurs lèvres et leurs rires sont décalés.*\n\nTu vois les élèves dehors ? Leurs lèvres et leurs rires sont pas synchronisés. Tu le remarques aussi ?"
-  },
-  "day4_after_sea_6": {
-    "text": "...{name}."
-  },
-  "day4_after_sea_7": {
-    "text": "*Sea ne me quitte pas des yeux.*\n\nJe suis là. Parle au lieu de me fixer."
-  },
-  "day4_after_sea_8": {
-    "text": "...Combien de fois ça fait, au juste ?"
-  },
-  "day4_after_sea_9": {
-    "text": "...De quoi tu parles ?"
-  },
-  "day4_after_sea_10": {
-    "text": "Combien de fois quoi ? Ne t'arrête pas au milieu de ta phrase.\n\n*Les lèvres de Sea frémissent deux fois avant qu'elle ne parvienne enfin à parler.*"
-  },
-  "day4_after_sea_11": {
-    "text": "Ce n’est rien. Oublie."
-  },
-  "day4_after_sea_force": {
-    "text": "*« Oublie. » Même après avoir lâché ce mot, Sea n'arrive pas à refermer les lèvres. Du bout des doigts, elle tripote sans cesse le nœud du bracelet à son poignet.*\n\nArrête de me répéter d'oublier. Je vois bien que tu me caches quelque chose.",
-    "choices": [
-      "Je ne poserai plus de questions",
-      "Dis-moi tout maintenant"
-    ]
-  },
-  "day4_after_sea_accept": {
-    "text": "*Même en entendant cela, Sea ne s'écarte pas de la porte verrouillée.*"
-  },
-  "day4_after_sea_accept_2": {
-    "text": "Ne bouge pas d'ici aujourd'hui."
-  },
-  "day4_after_sea_accept_3": {
-    "text": "*Sea regarde par la fenêtre. Le couchant teinte la salle du conseil en rouge.*\n\nQuand le soleil sera couché, je pourrai partir ?"
-  },
-  "day4_after_sea_confess_1": {
-    "text": "...Douze fois."
-  },
-  "day4_after_sea_confess_2": {
-    "text": "Comment ça, douze fois ? Ne parle pas de choses dont je ne me souviens pas comme si c'était évident."
-  },
-  "day4_after_sea_confess_3": {
-    "text": "J'ai mis ton badge sur ce bureau douze fois. Je t'ai entendu dire douze fois \"Je viendrai demain aussi\"."
-  },
-  "day4_after_sea_confess_4": {
-    "text": "Chaque matin du cinquième jour, ton regard passait au-delà de mon épaule."
-  },
-  "day4_after_sea_confess_5": {
-    "text": "*Sea a voulu s'essuyer le coin de l'œil du bout de sa manche, puis a retenu sa main.*\n\nCe n'était donc pas la première fois que tu me voyais. Moi qui ne savais rien, je croyais vraiment que c'était mon premier jour."
-  },
-  "day4_after_sea_confess_6": {
-    "text": "Pour la 9ème fois, tu m'as confectionné un bracelet. Avec « Mer » gravé à l’intérieur."
-  },
-  "day4_after_sea_confess_7": {
-    "text": "*Sea remonte la manche de son uniforme. Le vieux bracelet de fil noué à son poignet est effiloché par endroits.*\n\nJe peux regarder de plus près ? Je l'ai fait de mes propres mains et je ne le reconnais même pas."
-  },
-  "day4_after_sea_confess_8": {
-    "text": "La dixième fois, tu as vu ça et tu as demandé : 'C'est joli, qui te l'a donné ?'"
-  },
-  "day4_after_sea_confess_9": {
-    "text": "C’est toi qui l’as noué pour moi, et il n’y avait même aucune marque sur ton poignet."
-  },
-  "day4_after_sea_confess_10": {
-    "text": "*Elle sourit, les yeux mouillés.*\n\nIl n'y a pas de quoi sourire. Comment tu peux, alors que j'ai tout oublié ?"
-  },
-  "day4_after_sea_12loop": {
-    "text": "*Sea serre mon bras.*\n\nJe ne vais nulle part. Parle-moi, ne m'attrape pas comme ça."
-  },
-  "day4_after_sea_12loop_2": {
-    "text": "*Elle murmure si bas qu'on l'entend à peine.*"
-  },
-  "day4_after_sea_12loop_3": {
-    "text": "...Seojin."
-  },
-  "day4_after_sea_12loop_4": {
-    "text": "Seojin ? Tu viens de m'appeler comment ? Tu connais mon nom."
-  },
-  "day4_after_sea_12loop_5": {
-    "text": "C'est le nom de qui, ça ?"
-  },
-  "day4_after_sea_12loop_6": {
-    "text": "*La main de Sea se crispe et froisse la manche de mon uniforme.*\n\nLâche-moi et réponds. Je t'ai demandé qui c'était."
-  },
-  "day4_after_sea_12loop_7": {
-    "text": "*Seojin. Ce n'est pas mon nom, pourtant la fin de sa prononciation accroche étrangement mon oreille. Le troisième nom glissé dans les dossiers précédents.*"
-  },
-  "day4_after_sea_12loop_8": {
-    "text": "Ce n’est pas quelque chose à dire."
-  },
-  "day4_after_sea_12loop_9": {
-    "text": "*Elle ne lâche pas mon bras. Ses doigts froissent encore ma manche.*\n\nAlors lâche-moi."
-  },
-  "day4_after_sea_12loop_10": {
-    "text": "*Au poignet de Sea qui agrippe ma manche, le vieux bracelet de fil aperçu plus tôt se retourne, dévoilant la languette sous le nœud.*"
-  },
-  "day4_after_sea_12loop_11": {
-    "text": "*« Sea » inscrit en tout petit à l'intérieur. Jusqu'à cette habitude de casser le dernier trait vers la gauche, c'est exactement mon écriture.*\n\nL'écriture à l'intérieur, c'est vraiment la mienne trait pour trait. Jusqu'à la pointe qui bifurque."
-  },
-  "day4_after_sea_12loop_12": {
-    "text": "*Sea remarque elle aussi que mon regard s'est figé sur l'intérieur du bracelet.*\n\nC'est clairement mon coup de main, mais le souvenir de l'avoir tressé a complètement disparu."
-  },
-  "day4_after_sea_12loop_13": {
-    "text": "...Il est joli, non ?"
-  },
-  "day4_after_sea_12loop_14": {
-    "text": "*Elle sourit. L'humidité sous ses cils n'a pas encore séché.*\n\nNe souris pas en pleurant."
-  },
-  "day4_after_ft_sea_pre": {
-    "text": "*Elle ne me lâche pas le bras quand j’essaie de me lever.*\n\nJe ne vais pas m'enfuir, lâche mon bras."
-  },
-  "day4_after_ft_sea": {
-    "text": "... Si vous avez quelque chose à dire, dites-le. Cela ne changera rien."
-  },
-  "day4_after_ft_sea_choice": {
-    "text": "*Qu'est-ce que je dois répondre ? La main de Sea serre toujours mon bras.*",
-    "choices": [
-      "Pardon d'avoir tout oublié.",
-      "Qu'est-ce que tu as gardé en mémoire pendant ces douze fois ?",
-      "Cette fois, je n'oublierai jamais. Sortons ensemble."
-    ]
-  },
-  "day4_after_ft_sea_apologize": {
-    "text": "...Je l'ai entendu treize fois. Je sais que t'étais sincère à chaque fois."
-  },
-  "day4_after_ft_sea_ask": {
-    "text": "Je ne m'en souvenais pas. Je l'écrivais de nouveau à chaque fois."
-  },
-  "day4_after_ft_sea_promise": {
-    "text": "Ça aussi, je l'ai entendu. Tu l'as dit, puis tu l'as oublié le lendemain."
-  },
-  "day4_after_ft_sea_quiet": {
-    "text": "...Laisse tomber. Va-t'en."
-  },
-  "day4_after_ft_sea_post": {
-    "text": "*Sea a fini par lâcher prise. La trace de ses doigts est restée sur mon avant-bras. Elle a tiré le bas de sa manche sur le nœud effiloché du bracelet.*\n\nTu as beau le cacher sous ta manche, j'ai déjà tout vu."
-  },
-  "day4_after_eunsu_route": {
-    "text": "*Je me suis dirigé vers la salle des professeurs. Dans mon sac, l'enveloppe me cogne le flanc à chaque pas.*"
-  },
-  "day4_after_eunsu_2": {
-    "text": "*Mme Eunsu me voit et soupire. Son visage est encore marqué par la fatigue. Elle est seule dans la salle des professeurs. Toutes les autres chaises sont bien rangées sous les bureaux.*\n\nVous êtes seule. Ne m'évitez pas, parlons."
-  },
-  "day4_after_eunsu_3": {
-    "text": "...Tu es alle dans l'ancien bâtiment."
-  },
-  "day4_after_eunsu_4": {
-    "text": "...Avez-vous vu quel numéro vous figurez sur la liste de présence?"
-  },
-  "day4_after_eunsu_4a": {
-    "text": "*Tout en parlant, Mme Eunsu continue de verser l'eau dans le filtre. Le filet qui s'écoule du bec de la bouilloire ne tremble pas d'un millimètre.*\n\nJe ne suis pas venu pour un numéro de case, mais pour voir mon dossier."
-  },
-  "day4_after_eunsu_5": {
-    "text": "*Une fois les deux tasses remplies, elle en a posé une devant moi.*\n\nVous savez très bien ce que j'ai remarqué. Laissons le café et parlons d'abord de ça."
-  },
-  "day4_after_eunsu_6": {
-    "text": "*Deux cuillères de sucre, une demi-dose de crème. Exactement le dosage que je me préparais toujours à la maison.*\n\nComment connaissez-vous mes goûts pour le café ? Je n'en ai pas parlé une seule fois depuis mon arrivée dans ce lycée."
-  },
-  "day4_after_eunsu_7": {
-    "text": "*Ce n'est pas une rubrique du dossier d'admission, et je n'ai jamais bu de café en salle des professeurs.*"
-  },
-  "day4_after_eunsu_8": {
-    "text": "C'est ça, non ? Tes gouts."
-  },
-  "day4_after_eunsu_9": {
-    "text": "*Mme Eunsu sourit. L’anse de la tasse de café est tournée vers ma main gauche.*\n\nMême l'anse. Vous avez adapté que le café à mes habitudes ?"
-  },
-  "day4_after_eunsu_10": {
-    "text": "*Le tiroir du bureau est à moitié ouvert. Des post-it à l'intérieur. Des dizaines. Couverts d'écriture serree. — Ce sont tous des noms. Differents noms. Certains barres.*"
-  },
-  "day4_after_eunsu_11": {
-    "text": "*Mon nom est écrit sur le post-it tout en bas. Il n'est pas barré.*\n\nLes autres aussi étaient nouveaux ? Pourquoi mon nom est pas barré ?"
-  },
-  "day4_after_eunsu_12": {
-    "text": "*Silence.*"
-  },
-  "day4_after_eunsu_13": {
-    "text": "C'est bon, {name}. Je vais le remettre en ordre."
-  },
-  "day4_after_eunsu_14": {
-    "text": "*La main de Mme Eunsu s’arrête au-dessus de ma tête. Les doigts qui allaient la caresser se replient.*\n\nNe me touchez pas. Dites-moi d'abord ce que vous entendez par me réajuster."
-  },
-  "day4_after_eunsu_15": {
-    "text": "*Le bout de ces doigts est taché d'encre rouge. La même couleur que les coches dans le registre de contrôle.*\n\nVous avez de l'encre rouge au bout des doigts. C'est le stylo qui servait à cocher le registre, non ?"
-  },
-  "day4_after_riin_route": {
-    "text": "*Direction l'infirmerie. Une odeur de désinfectant s'échappe par la fente sous la porte.*"
-  },
-  "day4_after_riin_2": {
-    "text": "*Mme Riin trie des documents. En me voyant, elle s’arrête et retourne les feuilles. Le geste paraît naturel, mais j’ai déjà lu le titre : « Registre de médication S-13 ».*\n\nNe retournez pas la feuille. S-13, c'est mon relevé de médication, non ?"
-  },
-  "day4_after_riin_3": {
-    "text": "Qu'est-ce qu'il y a ? Ne me surprends pas comme ça sans faire de bruit."
-  },
-  "day4_after_riin_4": {
-    "text": "*Sa main reste posée sur les feuilles retournées. Une partie du titre est encore visible sous sa paume : `S-13`.*\n\nMême sous votre main, je le vois. Si c'est mon dossier, laissez-moi le lire."
-  },
-  "day4_after_riin_5": {
-    "text": "Mme Riin."
-  },
-  "day4_after_riin_5a": {
-    "text": "Hmm ?"
-  },
-  "day4_after_riin_5b": {
-    "text": "Dites-le-moi maintenant, s’il vous plaît."
-  },
-  "day4_after_riin_6": {
-    "text": "*Trois secondes de silence s'écoulent. Mme Riin ne quitte pas mon visage des yeux.*\n\nNe restez pas juste à me fixer, dites-moi quelque chose."
-  },
-  "day4_after_riin_7": {
-    "text": "...Alors tu y es alle."
-  },
-  "day4_after_riin_8": {
-    "text": "*Mme Riin parle calmement, puis se lève, vérifie la porte de l'infirmerie et la verrouille.*\n\nPourquoi fermer à clé ? Si je dis ce que j'ai vu, vous me laisserez partir ?"
-  },
-  "day4_after_riin_9": {
-    "text": "Qu'est-ce que tu as vu là-bas ?"
-  },
-  "day4_after_riin_10": {
-    "text": "Le registre que vous venez de refermer et le M-13 au fond de l'armoire. Sans parler des noms disparus du cahier d'appel."
-  },
-  "day4_after_riin_11": {
-    "text": "*Mme Riin ne desserre pas les lèvres tant que le voyant du thermomètre ne s'éteint pas.*\n\nJe ne peux pas repartir en faisant semblant d'ignorer tout ça. Dites-moi ce que vous savez."
-  },
-  "day4_after_riin_12": {
-    "text": "...Rapide. Plus rapide que le douzième."
-  },
-  "day4_after_riin_15": {
-    "text": "*Elle sort une petite clé métallique de la poche de sa blouse.*\n\nCette clé, vous comptez me la donner, non ? Dites-moi tout de suite quelle porte elle ouvre."
-  },
-  "day4_after_riin_16": {
-    "text": "*La main que Mme Riin tendait vers moi hésite à mi-chemin.*\n\nN'hésitez pas, donnez-la-moi."
-  },
-  "day4_after_riin_17": {
-    "text": "...Pas encore."
-  },
-  "day4_after_riin_18": {
-    "text": "*La clé regagne la poche de sa blouse. En se mordant le coin de la lèvre, elle murmure à voix basse les mots « calendrier de clôture ».*\n\nNe vous contentez pas de dire que ce n'est pas le moment. Qu'est-ce qui changera si j'attends ?"
-  },
-  "day4_after_riin_19": {
-    "text": "C'est quoi ce calendrier de clôture dont vous venez de parler ? Vous devez me dire ce qui va m'arriver."
-  },
-  "day4_after_riin_20": {
-    "text": "Demain."
-  },
-  "day4_after_riin_21": {
-    "text": "*Mme Riin me regarde. Le cordon de son badge, de travers, ne bouge pas.*\n\nDemain, c'est le dernier jour. Je viens dès le matin ?"
-  },
-  "day4_after_riin_22": {
-    "text": "Ne bouge pas ce soir. Et n’en parle à personne."
-  },
-  "day4_after_riin_23": {
-    "text": "Surtout pas Eunsu."
-  },
-  "day4_after_riin_24": {
-    "text": "*La voix de Mme Riin baisse d'un ton.*"
-  },
-  "day4_after_riin_25": {
-    "text": "Je les retiendrai jusqu'à demain matin."
-  },
-  "day4_after_riin_26": {
-    "text": "*Elle détourne la tête et fuit mon regard vers la cour baignée par le couchant. Le sol de l'infirmerie se teinte de rouge.*\n\nNe fuyez pas mon regard, parlez-moi en me regardant."
-  },
-  "day4_after_riin_27": {
-    "text": "Je ne peux plus continuer."
-  },
-  "day4_after_end": {
-    "text": "*Le soleil se couche, et les lumières des fenêtres de la classe s’éteignent les unes après les autres. Demain sera le cinquième jour.*"
-  },
-  "day4_xover_yuna_1": {
-    "text": "*Je me suis figé en franchissant la porte de la classe. Au coin du couloir désert passe la rémanence de Yuna debout là hier.*\n\nYuna ? On peut parler dans le couloir ? Comme c'est toi qui m'arrêtes en premier, on dirait qu'il s'est passé quelque chose."
-  },
-  "day4_xover_yuna_2": {
-    "text": "Dis, le nom de Lee Junho te dit quelque chose ?"
-  },
-  "day4_xover_yuna_3": {
-    "text": "...Qui ça ?"
-  },
-  "day4_xover_yuna_4": {
-    "text": "Je m'en doutais."
-  },
-  "day4_xover_yuna_5": {
-    "text": "C'était pareil à chaque fois dans les archives. Tu arrivais avec le même visage en disant ne rien savoir."
-  },
-  "day4_xover_yuna_6": {
-    "text": "*Dans mon souvenir, Yuna ouvre un fin cahier de tirages et me le tend.*"
-  },
-  "day4_xover_yuna_7": {
-    "text": "Tout est là. Du numéro un jusqu'à maintenant."
-  },
-  "day4_xover_yuna_8": {
-    "text": "Chacun d'entre eux, c'est toi."
-  },
-  "day4_xover_yuna_9": {
-    "text": "*Les douze tirages du cahier montraient le même uniforme, le même couloir et le même visage. Seule l'expression changeait d'une photo à l'autre.*\n\nJe ne m'en souviens pas. Il n'y a que le visage qui est le mien. Et tu m'as quand même adressé la parole après avoir vu ça ?"
-  },
-  "day4_xover_yuna_10": {
-    "text": "*En clignant des yeux, l'image rémanente de Yuna refermant l'album s'est dissipée au bout du couloir baigné par le couchant.*"
-  },
-  "day4_xover_yuna_skip": {
-    "text": "*En sortant de la classe, j'ai jeté un regard vers le bout du couloir. Le couloir menant au club photo est désert.*"
-  },
-  "day4_xover_yuna_skip_met": {
-    "text": "*En sortant de la classe, j'ai regardé vers le bout du couloir. Seule la place près de la fenêtre où se tenait Yuna hier est vide.*"
-  },
-  "day4_xover_yuna_skip_2": {
-    "text": "Non. Allons voir ailleurs d'abord."
-  },
-  "day4_xover_yuna_skip_3": {
-    "text": "*J'ai tourné les talons. Dans le couloir vide, seule la lumière du soir s'allonge sur le sol.*"
-  },
-  "day4_after_eunsu_evidence_menu": {
-    "text": "J'ai choisi un fait qui n'a pas encore été dit. Vous ne pouvez même pas retirer des preuves qui ne sont pas entre vos mains.",
-    "choices": [
-      "Mettez la photo sur la table",
-      "Montrez le porte-clés",
-      "J'évoque l'histoire de l'ampoule sans nom.",
-      "n'en dis pas plus maintenant"
-    ]
-  },
-  "day4_after_eunsu_evidence_0_1": {
-    "text": "J'ai sorti le tirage photo que Yuna m'avait remis et l'ai posé sur la table. Dès que le recto est apparu, la main de la professeure s'est figée sur le dossier."
-  },
-  "day4_after_eunsu_evidence_0_2": {
-    "text": "Où as-tu trouvé ça ?"
-  },
-  "day4_after_eunsu_evidence_0_3": {
-    "text": "Dis-moi qui est sur la photo en premier."
-  },
-  "day4_after_eunsu_evidence_0_4": {
-    "text": "La professeure n'a pas touché la photo. À la place, elle a simplement frotté la table du bout des doigts pour voir si le coin était humide."
-  },
-  "day4_after_eunsu_evidence_0_5": {
-    "text": "Si c'est l'original, ne la plie pas. On en aura besoin plus tard pour vérifier la date."
-  },
-  "day4_after_eunsu_evidence_0_6": {
-    "text": "Avant qu'elle ait fini de parler, j'ai glissé la photo dans ma poche. La professeure a ravalé les mots qui allaient me demander de la rendre."
-  },
-  "day4_after_eunsu_evidence_1_1": {
-    "text": "La porte du sous-sol s'ouvre avec cette clé, n'est-ce pas ?"
-  },
-  "day4_after_eunsu_evidence_1_2": {
-    "text": "Alors que l'enseignante passait la ficelle autour de son cou dans son chemisier, il y eut un bruit de touches qui se heurtèrent."
-  },
-  "day4_after_eunsu_evidence_1_3": {
-    "text": "Dis-moi d'abord de quelle porte tu parles."
-  },
-  "day4_after_eunsu_evidence_1_4": {
-    "text": "Si je vous le dis, vous allez changer la serrure."
-  },
-  "day4_after_eunsu_evidence_1_5": {
-    "text": "Le stylo sur la table tomba des mains du professeur. Pendant que je le récupérais, la chaîne de clé est ressortie."
-  },
-  "day4_after_eunsu_evidence_1_6": {
-    "text": "Cette porte s'ouvre de l'intérieur. Ça, je n'y peux rien changer."
-  },
-  "day4_after_eunsu_evidence_2_1": {
-    "text": "Pourquoi les médicaments dans le cabinet de l'infirmière ne sont-ils pas étiquetés ?"
-  },
-  "day4_after_eunsu_evidence_2_2": {
-    "text": "Le professeur a regardé mon bras gauche. Même si les manches n'étaient pas retroussées, le regard s'arrêtait au coude."
-  },
-  "day4_after_eunsu_evidence_2_3": {
-    "text": "Pour les médicaments, demande à Mme Riin."
-  },
-  "day4_after_eunsu_evidence_2_4": {
-    "text": "Si c'est vous qui l'avez envoyé, je devrais vous le demander."
-  },
-  "day4_after_eunsu_evidence_2_5": {
-    "text": "Lorsque le professeur a fermé le dossier, seul l’onglet avec mon nom est sorti."
-  },
-  "day4_after_eunsu_evidence_2_6": {
-    "text": "Je vérifierai ce que tu as pris. D'ici là, n'accepte rien de personne."
-  },
-  "day4_after_eunsu_followup_0": {
-    "text": "Dès qu'elle a refermé les lèvres, j'ai repris la parole en premier.",
-    "choices": [
-      "Noter ce que je viens d'entendre dans mon carnet",
-      "Demander pourquoi la réponse a changé",
-      "Mettre fin à la conversation et reculer"
-    ]
-  },
-  "day4_after_eunsu_followup_0_write_1": {
-    "text": "Quand j'ai sorti mon stylo pour noter sa réponse sur la date de la photo, elle a baissé les yeux pour voir quelle ligne je remplissais."
-  },
-  "day4_after_eunsu_followup_0_write_2": {
-    "text": "J'ai refermé le carnet et l'ai glissé dans ma poche. Si elle veut changer de version plus tard, il lui faudra d'abord expliquer la ligne que je viens d'écrire."
-  },
-  "day4_after_eunsu_followup_0_press_1": {
-    "text": "Ce qu'on dit en salle des professeurs et les phrases qu'on couche dans un rapport, ce n'est pas pareil. Décide d'abord quelle réponse tu veux."
-  },
-  "day4_after_eunsu_followup_0_press_2": {
-    "text": "La professeure a poussé le stylo posé sur son bureau vers moi. Sans le saisir, je l'ai replacé au milieu de la table."
-  },
-  "day4_after_eunsu_followup_1": {
-    "text": "Une fois la chaînette de la clé disparue sous son col, j'ai repris la parole.",
-    "choices": [
-      "Noter ce que je viens d'entendre dans mon carnet",
-      "Demander pourquoi la réponse a changé",
-      "Mettre fin à la conversation et reculer"
-    ]
-  },
-  "day4_after_eunsu_followup_1_write_1": {
-    "text": "Quand j'ai retranscrit dans mon carnet qu'elle s'ouvrait de l'intérieur, la professeure a posé un regard silencieux sur ma ligne."
-  },
-  "day4_after_eunsu_followup_1_write_2": {
-    "text": "J'ai rentré la mine du stylo-bille et rangé mon carnet. Maintenant que je connais le mécanisme de la porte du sous-sol, il faudra d'abord expliquer cette note si le discours change."
-  },
-  "day4_after_eunsu_followup_1_press_1": {
-    "text": "Répondre selon le règlement de sécurité et te prévenir à part, ce sont deux choses distinctes. Si tu veux tout demander, choisis mieux ton moment."
-  },
-  "day4_after_eunsu_followup_1_press_2": {
-    "text": "Le bout de son doigt a tapoté une fois le coin du dossier. J'ai soutenu son regard sans détourner les yeux."
-  },
-  "day4_after_eunsu_followup_2": {
-    "text": "Profitant de l'instant où sa main s'est arrêtée sur l'onglet du dossier, j'ai reposé une question.",
-    "choices": [
-      "Noter ce que je viens d'entendre dans mon carnet",
-      "Demander pourquoi la réponse a changé",
-      "Mettre fin à la conversation et reculer"
-    ]
-  },
-  "day4_after_eunsu_followup_2_write_1": {
-    "text": "Pendant que je notais qu'elle vérifierait les médicaments de l'infirmerie, la professeure s'est penchée pour observer mon écriture."
-  },
-  "day4_after_eunsu_followup_2_write_2": {
-    "text": "J'ai replié mon carnet dans ma poche. Ce relevé me sera indispensable pour recouper qui, de l'infirmerie ou de la salle des profs, aura changé de version."
-  },
-  "day4_after_eunsu_followup_2_press_1": {
-    "text": "Ce que je peux te dire comme professeure principale et ce que je consigne comme responsable des dossiers diffèrent. Contentons-nous de ça pour aujourd'hui."
-  },
-  "day4_after_eunsu_followup_2_press_2": {
-    "text": "Elle a repoussé sur le côté la tasse de café qui refroidissait. Moi non plus, je n'ai pas touché à la mienne."
-  },
-  "day4_after_sea_evidence_menu": {
-    "text": "J'ai choisi un fait qui n'a pas encore été dit. Vous ne pouvez même pas retirer des preuves qui ne sont pas entre vos mains.",
-    "choices": [
-      "Montrer une photo de la gravure sur le toit",
-      "Renseignez-vous sur l'historique de la fermeture forcée de l'application.",
-      "n'en dis pas plus maintenant"
-    ]
-  },
-  "day4_after_sea_evidence_0_1": {
-    "text": "Lorsque j'ai allumé la photo gravée sous le grillage, Sea a tenté de m'arracher mon téléphone. Tout d'abord, j'ai éteint l'écran."
-  },
-  "day4_after_sea_evidence_0_2": {
-    "text": "Tu es allé sur le toit ? Je t'avais dit de ne pas toucher à la rambarde."
-  },
-  "day4_after_sea_evidence_0_3": {
-    "text": "Savez-vous qui l'a gravé ?"
-  },
-  "day4_after_sea_evidence_0_4": {
-    "text": "Sea a caché sa main gauche derrière son dos et a frotté de son pouce la marque de bague sur son doigt."
-  },
-  "day4_after_sea_evidence_0_5": {
-    "text": "Où as-tu vu ce nom ? Il n'y avait pas de nom sur la photo."
-  },
-  "day4_after_sea_evidence_0_6": {
-    "text": "Sea a également remarqué que je n'avais pas encore dit Seolhwa. La chaise fut un peu repoussée."
-  },
-  "day4_after_sea_evidence_1_1": {
-    "text": "Avez-vous également reçu une alerte lorsque j'ai fermé l'application le premier jour ?"
-  },
-  "day4_after_sea_evidence_1_2": {
-    "text": "Sea a hoché la tête aussitôt, mais a refermé la bouche en réalisant que sa réponse était sortie trop vite."
-  },
-  "day4_after_sea_evidence_1_3": {
-    "text": "Je pensais que la batterie était morte. Alors j'ai vérifié."
-  },
-  "day4_after_sea_evidence_1_4": {
-    "text": "J'ai seulement fermé l'application. Qu'est-ce que ça a à voir avec la batterie ?"
-  },
-  "day4_after_sea_evidence_1_5": {
-    "text": "Le téléphone portable a sonné une fois dans la main de Sea. Sea a arrêté de vibrer sans voir la notification."
-  },
-  "day4_after_sea_evidence_1_6": {
-    "text": "Quand tu coupes l'application, ils m'interrogent aussi. Ils demandent pourquoi je ne t'ai pas arrêté. Je dois leur répondre."
-  },
-  "day4_after_sea_followup_0": {
-    "text": "Quand Sea s'est mordue la lèvre en s'interrompant, c'est moi qui l'ai pressée de questions.",
-    "choices": [
-      "Noter ce que je viens d'entendre dans mon carnet",
-      "Demander pourquoi la réponse a changé",
-      "Mettre fin à la conversation et reculer"
-    ]
-  },
-  "day4_after_sea_followup_0_write_1": {
-    "text": "Quand j'ai noté dans mon carnet ce qu'elle avait dit sur la rambarde du toit, Sea a penché la tête pour voir quelle ligne j'écrivais."
-  },
-  "day4_after_sea_followup_0_write_2": {
-    "text": "J'ai refermé le carnet et l'ai rangé dans ma poche. Pour revenir sur ces paroles plus tard, il faudra d'abord expliquer la ligne que je viens d'écrire."
-  },
-  "day4_after_sea_followup_0_press_1": {
-    "text": "Sur le moment, je n'avais pas d'autre choix que d'esquiver comme ça. Je ne suis pas la seule autour de toi à accorder son discours."
-  },
-  "day4_after_sea_followup_0_press_2": {
-    "text": "Sea a tourné les yeux vers la porte du bureau des élèves. Derrière la vitre dépolie, l'ombre de quelqu'un s'était immobilisée."
-  },
-  "day4_after_sea_followup_1": {
-    "text": "J'ai repris la parole face à Sea qui fixait son téléphone dont la vibration venait de cesser.",
-    "choices": [
-      "Noter ce que je viens d'entendre dans mon carnet",
-      "Demander pourquoi la réponse a changé",
-      "Mettre fin à la conversation et reculer"
-    ]
-  },
-  "day4_after_sea_followup_1_write_1": {
-    "text": "J'ai noté que les alertes de fermeture de l'application arrivaient aussi à Sea. Ses yeux suivaient nerveusement la pointe de mon stylo."
-  },
-  "day4_after_sea_followup_1_write_2": {
-    "text": "J'ai replié mon carnet dans ma poche. Pour feindre d'ignorer jusqu'aux alertes du contact responsable, il faudra d'abord expliquer cette note."
-  },
-  "day4_after_sea_followup_1_press_1": {
-    "text": "Je ne pouvais pas te dire la vérité dès le départ. Moi aussi, j'étais obligée de faire mes rapports comme on me l'ordonnait."
-  },
-  "day4_after_sea_followup_1_press_2": {
-    "text": "L'ombre projetée sur la vitre du couloir s'est éloignée lentement. Sea n'a pas desserré les lèvres avant que les pas ne s'évanouissent."
-  }
+    "day4_after_start": {
+        "text": "*La cloche retentit et la salle se vide, tandis qu'au fond de mon sac l'enveloppe glissée ce matin froisse doucement.*"
+    },
+    "day4_after_start_2": {
+        "text": "*Je note dans mon cahier les indices que j’ai vus pendant la pause déjeuner.*"
+    },
+    "day4_after_start_3": {
+        "text": "*Sea se dirige vers la salle du conseil des élèves. Mme Eunsu devrait être dans le bureau des professeurs, et Mme Riin à l’infirmerie.*"
+    },
+    "day4_after_choice": {
+        "text": "*Qui aller voir ?*",
+        "choices": [
+            "Suivre Sea",
+            "Aller voir Mme Eunsu",
+            "Faire face à Mme Riin"
+        ]
+    },
+    "day4_after_sea_route": {
+        "text": "*J'ai suivi Sea jusqu'à la salle du conseil.*"
+    },
+    "day4_after_sea_2": {
+        "text": "Pourquoi tu fermes à clé ? Je t'ai suivie parce que j'ai moi aussi quelque chose à vérifier avec toi."
+    },
+    "day4_after_sea_3": {
+        "text": "D'accord. La porte est fermée à clé, alors finissons d'en parler ici."
+    },
+    "day4_after_sea_4": {
+        "text": "*Le contour des yeux de Sea est rouge. Un mouchoir en papier froissé est posé sur le bureau.*\n\nTu as pleuré ? Si c'est à propos de moi, dis-le."
+    },
+    "day4_after_sea_5": {
+        "text": "*Dehors, les élèves quittent le terrain de sport. À travers la vitre, les mouvements de leurs lèvres et leurs rires sont décalés.*\n\nTu vois les élèves dehors ? Leurs lèvres et leurs rires sont pas synchronisés. Tu le remarques aussi ?"
+    },
+    "day4_after_sea_6": {
+        "text": "...{name}."
+    },
+    "day4_after_sea_7": {
+        "text": "*Sea me fixe intensément.*\n\nQu'est-ce qu'il y a ? Ne me regarde pas comme ça, parle."
+    },
+    "day4_after_sea_8": {
+        "text": "...Combien de fois ça fait, au juste ?"
+    },
+    "day4_after_sea_9": {
+        "text": "...De quoi tu parles ?"
+    },
+    "day4_after_sea_10": {
+        "text": "Combien de fois quoi ? Ne t'arrête pas au milieu de ta phrase.\n\n*Les lèvres de Sea frémissent deux fois avant qu'elle ne parvienne enfin à parler.*"
+    },
+    "day4_after_sea_11": {
+        "text": "Ce n’est rien. Oublie."
+    },
+    "day4_after_sea_force": {
+        "text": "*« Oublie. » Même après avoir lâché ce mot, Sea n'arrive pas à refermer les lèvres. Du bout des doigts, elle tripote sans cesse le nœud du bracelet à son poignet.*\n\nArrête de me répéter d'oublier. Je vois bien que tu me caches quelque chose.",
+        "choices": [
+            "Je ne poserai plus de questions",
+            "Dis-moi tout maintenant"
+        ]
+    },
+    "day4_after_sea_accept": {
+        "text": "*Même en entendant cela, Sea ne s'écarte pas de la porte verrouillée.*"
+    },
+    "day4_after_sea_accept_2": {
+        "text": "Ne bouge pas d'ici aujourd'hui."
+    },
+    "day4_after_sea_accept_3": {
+        "text": "*Sea regarde par la fenêtre. Le couchant teinte la salle du conseil en rouge.*\n\nQuand le soleil sera couché, je pourrai partir ?"
+    },
+    "day4_after_sea_confess_1": {
+        "text": "...Douze fois."
+    },
+    "day4_after_sea_confess_2": {
+        "text": "Comment ça, douze fois ? Ne parle pas de choses dont je ne me souviens pas comme si c'était évident."
+    },
+    "day4_after_sea_confess_3": {
+        "text": "J'ai mis ton badge sur ce bureau douze fois. Je t'ai entendu dire douze fois \"Je viendrai demain aussi\"."
+    },
+    "day4_after_sea_confess_4": {
+        "text": "Chaque matin du cinquième jour, ton regard passait au-delà de mon épaule."
+    },
+    "day4_after_sea_confess_5": {
+        "text": "*Sea lève la manche vers ses yeux puis s'immobilise.*\n\n…Donc ce n'était pas la première fois qu'on se voyait ? Je croyais vraiment que c'était mon premier jour."
+    },
+    "day4_after_sea_confess_6": {
+        "text": "Pour la 9ème fois, tu m'as confectionné un bracelet. Avec « Mer » gravé à l’intérieur."
+    },
+    "day4_after_sea_confess_7": {
+        "text": "*Sea retrousse sa manche et laisse apparaître un vieux bracelet tressé effiloché par endroits.*\n\nAttends, je peux voir de plus près ?"
+    },
+    "day4_after_sea_confess_8": {
+        "text": "La dixième fois, tu as vu ça et tu as demandé : 'C'est joli, qui te l'a donné ?'"
+    },
+    "day4_after_sea_confess_9": {
+        "text": "C’est toi qui l’as noué pour moi, et il n’y avait même aucune marque sur ton poignet."
+    },
+    "day4_after_sea_confess_10": {
+        "text": "*Sea sourit avec les yeux brillants de larmes.*\n\nSea… arrête de sourire comme ça."
+    },
+    "day4_after_sea_12loop": {
+        "text": "*Sea me saisit le bras avec force.*\n\nQu'est-ce qui te prend d'un coup ? Qu'est-ce que tu allais dire ?"
+    },
+    "day4_after_sea_12loop_2": {
+        "text": "*Elle murmure si bas qu'on l'entend à peine.*"
+    },
+    "day4_after_sea_12loop_3": {
+        "text": "...Seojin."
+    },
+    "day4_after_sea_12loop_4": {
+        "text": "Seojin ? Tu viens de m'appeler comment ? Tu connais mon nom."
+    },
+    "day4_after_sea_12loop_5": {
+        "text": "C'est le nom de qui, ça ?"
+    },
+    "day4_after_sea_12loop_6": {
+        "text": "*La main de Sea se crispe et froisse la manche de mon uniforme.*\n\nLâche-moi et réponds. Je t'ai demandé qui c'était."
+    },
+    "day4_after_sea_12loop_7": {
+        "text": "*Seojin. Ce n'est pas mon nom, pourtant la fin de sa prononciation accroche étrangement mon oreille. Le troisième nom glissé dans les dossiers précédents.*"
+    },
+    "day4_after_sea_12loop_8": {
+        "text": "Ce n’est pas quelque chose à dire."
+    },
+    "day4_after_sea_12loop_9": {
+        "text": "*Elle ne lâche pas mon bras. Ses doigts froissent encore ma manche.*\n\nAlors lâche-moi."
+    },
+    "day4_after_sea_12loop_10": {
+        "text": "*Au poignet de Sea qui agrippe ma manche, le vieux bracelet de fil aperçu plus tôt se retourne, dévoilant la languette sous le nœud.*"
+    },
+    "day4_after_sea_12loop_11": {
+        "text": "*À l'intérieur sont inscrits deux minuscules caractères pour 'Sea'—jusqu'à la boucle vers la gauche qui trahit mon écriture.*\n\n…C'est vraiment mon écriture."
+    },
+    "day4_after_sea_12loop_12": {
+        "text": "*Sea voit bien que mon regard reste figé à l'intérieur du bracelet.*\n\nC'est bien moi qui ai tracé ça… mais je n'ai aucun souvenir de l'avoir fabriqué."
+    },
+    "day4_after_sea_12loop_13": {
+        "text": "...Il est joli, non ?"
+    },
+    "day4_after_sea_12loop_14": {
+        "text": "*Elle sourit. L'humidité sous ses cils n'a pas encore séché.*\n\nNe souris pas en pleurant."
+    },
+    "day4_after_ft_sea_pre": {
+        "text": "*Elle ne me lâche pas le bras quand j’essaie de me lever.*\n\nJe ne vais pas m'enfuir, lâche mon bras."
+    },
+    "day4_after_ft_sea": {
+        "text": "... Si vous avez quelque chose à dire, dites-le. Cela ne changera rien."
+    },
+    "day4_after_ft_sea_choice": {
+        "text": "*Qu'est-ce que je dois répondre ? La main de Sea serre toujours mon bras.*",
+        "choices": [
+            "Pardon d'avoir tout oublié.",
+            "Qu'est-ce que tu as gardé en mémoire pendant ces douze fois ?",
+            "Cette fois, je n'oublierai jamais. Sortons ensemble."
+        ]
+    },
+    "day4_after_ft_sea_apologize": {
+        "text": "...Je l'ai entendu treize fois. Je sais que t'étais sincère à chaque fois."
+    },
+    "day4_after_ft_sea_ask": {
+        "text": "Je ne m'en souvenais pas. Je l'écrivais de nouveau à chaque fois."
+    },
+    "day4_after_ft_sea_promise": {
+        "text": "Ça aussi, je l'ai entendu. Tu l'as dit, puis tu l'as oublié le lendemain."
+    },
+    "day4_after_ft_sea_quiet": {
+        "text": "...Laisse tomber. Va-t'en."
+    },
+    "day4_after_ft_sea_post": {
+        "text": "*Sea a fini par lâcher prise. La trace de ses doigts est restée sur mon avant-bras. Elle a tiré le bas de sa manche sur le nœud effiloché du bracelet.*\n\nTu as beau le cacher sous ta manche, j'ai déjà tout vu."
+    },
+    "day4_after_eunsu_route": {
+        "text": "*Je me suis dirigé vers la salle des professeurs. Dans mon sac, l'enveloppe me cogne le flanc à chaque pas.*"
+    },
+    "day4_after_eunsu_2": {
+        "text": "*Mme Eunsu me voit et soupire. Son visage est encore marqué par la fatigue. Elle est seule dans la salle des professeurs. Toutes les autres chaises sont bien rangées sous les bureaux.*\n\nVous êtes seule. Ne m'évitez pas, parlons."
+    },
+    "day4_after_eunsu_3": {
+        "text": "...Tu es alle dans l'ancien bâtiment."
+    },
+    "day4_after_eunsu_4": {
+        "text": "...Avez-vous vu quel numéro vous figurez sur la liste de présence?"
+    },
+    "day4_after_eunsu_4a": {
+        "text": "*Tout en parlant, Mme Eunsu continue de verser l'eau dans le filtre. Le filet qui s'écoule du bec de la bouilloire ne tremble pas d'un millimètre.*\n\nJe ne suis pas venu pour un numéro de case, mais pour voir mon dossier."
+    },
+    "day4_after_eunsu_5": {
+        "text": "*Une fois les deux tasses remplies, elle en a posé une devant moi.*\n\nVous savez très bien ce que j'ai remarqué. Laissons le café et parlons d'abord de ça."
+    },
+    "day4_after_eunsu_6": {
+        "text": "*Deux cuillères de sucre, une demi-dose de crème. Exactement le dosage que je me préparais toujours à la maison.*\n\nComment connaissez-vous mes goûts pour le café ? Je n'en ai pas parlé une seule fois depuis mon arrivée dans ce lycée."
+    },
+    "day4_after_eunsu_7": {
+        "text": "*Ce n'est pas une rubrique du dossier d'admission, et je n'ai jamais bu de café en salle des professeurs.*"
+    },
+    "day4_after_eunsu_8": {
+        "text": "C'est ça, non ? Tes gouts."
+    },
+    "day4_after_eunsu_9": {
+        "text": "*Mme Eunsu sourit; même l'anse de la tasse est tournée vers ma main gauche.*\n\nMême l'anse est orientée à gauche. N'avez-vous vraiment adapté que ce café ?"
+    },
+    "day4_after_eunsu_10": {
+        "text": "*Le tiroir du bureau est à moitié ouvert. Des post-it à l'intérieur. Des dizaines. Couverts d'écriture serree. — Ce sont tous des noms. Differents noms. Certains barres.*"
+    },
+    "day4_after_eunsu_11": {
+        "text": "*Mon nom est écrit sur le post-it tout en bas. Il n'est pas barré.*\n\nLes autres aussi étaient nouveaux ? Pourquoi mon nom est pas barré ?"
+    },
+    "day4_after_eunsu_12": {
+        "text": "*Silence.*"
+    },
+    "day4_after_eunsu_13": {
+        "text": "C'est bon, {name}. Je vais le remettre en ordre."
+    },
+    "day4_after_eunsu_14": {
+        "text": "*La main de Mme Eunsu s’arrête au-dessus de ma tête. Les doigts qui allaient la caresser se replient.*\n\nNe me touchez pas. Dites-moi d'abord ce que vous entendez par me réajuster."
+    },
+    "day4_after_eunsu_15": {
+        "text": "*Une tache d'encre rouge colore le bout de son doigt—le même rouge que celui du registre d'appel.*\n\nVous avez de l'encre rouge au doigt. Que cochiez-vous à l'instant ?"
+    },
+    "day4_after_riin_route": {
+        "text": "*Direction l'infirmerie. Une odeur de désinfectant s'échappe par la fente sous la porte.*"
+    },
+    "day4_after_riin_2": {
+        "text": "*Mme Riin trie des documents. En me voyant, elle s’arrête et retourne les feuilles. Le geste paraît naturel, mais j’ai déjà lu le titre : « Registre de médication S-13 ».*\n\nNe retournez pas la feuille. S-13, c'est mon relevé de médication, non ?"
+    },
+    "day4_after_riin_3": {
+        "text": "Qu'est-ce qu'il y a ? Ne me surprends pas comme ça sans faire de bruit."
+    },
+    "day4_after_riin_4": {
+        "text": "*Sa main reste posée sur les feuilles retournées. Une partie du titre est encore visible sous sa paume : 'S-13'.*\n\nMême sous votre main, je le vois. Si c'est mon dossier, laissez-moi le lire."
+    },
+    "day4_after_riin_5": {
+        "text": "Mme Riin."
+    },
+    "day4_after_riin_5a": {
+        "text": "Hmm ?"
+    },
+    "day4_after_riin_5b": {
+        "text": "Dites-le-moi maintenant, s’il vous plaît."
+    },
+    "day4_after_riin_6": {
+        "text": "*Un silence s'installe tandis que Mme Riin examine mon visage sans rien dire.*\n\nDites-moi quelque chose, je vous en prie."
+    },
+    "day4_after_riin_7": {
+        "text": "...Alors tu y es alle."
+    },
+    "day4_after_riin_8": {
+        "text": "*Mme Riin parle calmement, puis se lève, vérifie la porte de l'infirmerie et la verrouille.*\n\nPourquoi fermer à clé ? Si je dis ce que j'ai vu, vous me laisserez partir ?"
+    },
+    "day4_after_riin_9": {
+        "text": "Qu'est-ce que tu as vu là-bas ?"
+    },
+    "day4_after_riin_10": {
+        "text": "Le dossier S-13 que vous venez de fermer… et tous les noms effacés de l'appel."
+    },
+    "day4_after_riin_11": {
+        "text": "*Mme Riin ne desserre pas les lèvres tant que le voyant du thermomètre ne s'éteint pas.*\n\nJe ne peux pas repartir en faisant semblant d'ignorer tout ça. Dites-moi ce que vous savez."
+    },
+    "day4_after_riin_12": {
+        "text": "...Rapide. Plus rapide que le douzième."
+    },
+    "day4_after_riin_15": {
+        "text": "*Elle sort une petite clé métallique de la poche de sa blouse.*\n\nCette clé, vous comptez me la donner, non ? Dites-moi tout de suite quelle porte elle ouvre."
+    },
+    "day4_after_riin_16": {
+        "text": "*La main que Mme Riin tendait vers moi hésite à mi-chemin.*\n\nN'hésitez pas, donnez-la-moi."
+    },
+    "day4_after_riin_17": {
+        "text": "...Pas encore."
+    },
+    "day4_after_riin_18": {
+        "text": "*La clé regagne la poche de sa blouse. En se mordant le coin de la lèvre, elle murmure à voix basse les mots « calendrier de clôture ».*\n\nNe vous contentez pas de dire que ce n'est pas le moment. Qu'est-ce qui changera si j'attends ?"
+    },
+    "day4_after_riin_19": {
+        "text": "Vous venez de parler d'un calendrier de clôture. Qu'est-ce qui va m'arriver ?"
+    },
+    "day4_after_riin_20": {
+        "text": "Demain."
+    },
+    "day4_after_riin_21": {
+        "text": "*Mme Riin me regarde. Le cordon de son badge, de travers, ne bouge pas.*\n\nDemain, c'est le dernier jour. Je viens dès le matin ?"
+    },
+    "day4_after_riin_22": {
+        "text": "Ne bouge pas ce soir. Et n’en parle à personne."
+    },
+    "day4_after_riin_23": {
+        "text": "Surtout pas Eunsu."
+    },
+    "day4_after_riin_24": {
+        "text": "*La voix de Mme Riin baisse d'un ton.*"
+    },
+    "day4_after_riin_25": {
+        "text": "Je les retiendrai jusqu'à demain matin."
+    },
+    "day4_after_riin_26": {
+        "text": "*Elle détourne la tête vers la cour rougie par le couchant; un long reflet rouge s'étire sur le sol de l'infirmerie.*\n\nMadame, pourquoi refusez-vous d'aller jusqu'au bout ?"
+    },
+    "day4_after_riin_27": {
+        "text": "Je ne peux plus continuer."
+    },
+    "day4_after_end": {
+        "text": "*Le soleil se couche, et les lumières des fenêtres de la classe s’éteignent les unes après les autres. Demain sera le cinquième jour.*"
+    },
+    "day4_xover_yuna_1": {
+        "text": "*Dans ce coin de couloir vide, le souvenir exact d'hier me revient d'un coup, quand Yuna m'a arrêté.*\n\nYuna ? On peut parler ici dans le couloir ? C'est toi qui m'as appelé..."
+    },
+    "day4_xover_yuna_2": {
+        "text": "Dis, le nom de Lee Junho te dit quelque chose ?"
+    },
+    "day4_xover_yuna_3": {
+        "text": "...Qui ça ?"
+    },
+    "day4_xover_yuna_4": {
+        "text": "Je m'en doutais."
+    },
+    "day4_xover_yuna_5": {
+        "text": "C'était pareil à chaque fois dans les archives. Tu arrivais avec le même visage en disant ne rien savoir."
+    },
+    "day4_xover_yuna_6": {
+        "text": "*Dans mon souvenir, Yuna ouvre un fin cahier de tirages et me le tend.*"
+    },
+    "day4_xover_yuna_7": {
+        "text": "Tout est là. Du numéro un jusqu'à maintenant."
+    },
+    "day4_xover_yuna_8": {
+        "text": "Chacun d'entre eux, c'est toi."
+    },
+    "day4_xover_yuna_9": {
+        "text": "*Douze tirages dans l'album montrent le même uniforme, le même couloir et le même visage—seule l'expression change de cliché en cliché.*\n\nJe n'ai aucun souvenir, et pourtant c'est bien mon visage. Tu savais tout ça et tu es quand même venue me parler ?"
+    },
+    "day4_xover_yuna_10": {
+        "text": "*En clignant des yeux, l'image rémanente de Yuna refermant l'album s'est dissipée au bout du couloir baigné par le couchant.*"
+    },
+    "day4_xover_yuna_skip": {
+        "text": "*En sortant de la classe, j'ai jeté un regard vers le bout du couloir. Le couloir menant au club photo est désert.*"
+    },
+    "day4_xover_yuna_skip_met": {
+        "text": "*En sortant de classe, le bout du couloir reste mort; même le coin près du distributeur où se tenait Yuna est vide.*"
+    },
+    "day4_xover_yuna_skip_2": {
+        "text": "Non. Allons voir ailleurs d'abord."
+    },
+    "day4_xover_yuna_skip_3": {
+        "text": "*J'ai tourné les talons. Dans le couloir vide, seule la lumière du soir s'allonge sur le sol.*"
+    },
+    "day4_after_eunsu_evidence_menu": {
+        "text": "*Je ne peux m'appuyer que sur du concret. Par quelle preuve commencer ?*",
+        "choices": [
+            "Mettez la photo sur la table",
+            "Montrez le porte-clés",
+            "J'évoque l'histoire de l'ampoule sans nom.",
+            "n'en dis pas plus maintenant"
+        ]
+    },
+    "day4_after_eunsu_evidence_0_1": {
+        "text": "*J'affiche sur mon écran les photos prises depuis l'appareil de Yuna et pose le téléphone sur la table. La main de Mme Eunsu se fige sur le dossier.*"
+    },
+    "day4_after_eunsu_evidence_0_2": {
+        "text": "Où as-tu trouvé ça ?"
+    },
+    "day4_after_eunsu_evidence_0_3": {
+        "text": "Dis-moi qui est sur la photo en premier."
+    },
+    "day4_after_eunsu_evidence_0_4": {
+        "text": "*La professeure n'a pas touché la photo. À la place, elle a simplement frotté la table du bout des doigts pour voir si le coin était humide.*"
+    },
+    "day4_after_eunsu_evidence_0_5": {
+        "text": "Si c'est une copie, zoome un peu pour voir si la date au bord n'a pas été coupée."
+    },
+    "day4_after_eunsu_evidence_0_6": {
+        "text": "*Avant qu'elle ait fini de parler, j'ai glissé la photo dans ma poche. La professeure a ravalé les mots qui allaient me demander de la rendre.*"
+    },
+    "day4_after_eunsu_evidence_1_1": {
+        "text": "La porte du sous-sol s'ouvre avec cette clé, n'est-ce pas ?"
+    },
+    "day4_after_eunsu_evidence_1_2": {
+        "text": "*Alors que l'enseignante passait la ficelle autour de son cou dans son chemisier, il y eut un bruit de touches qui se heurtèrent.*"
+    },
+    "day4_after_eunsu_evidence_1_3": {
+        "text": "Dis-moi d'abord de quelle porte tu parles."
+    },
+    "day4_after_eunsu_evidence_1_4": {
+        "text": "Si je vous le dis, vous allez changer la serrure."
+    },
+    "day4_after_eunsu_evidence_1_5": {
+        "text": "*Le stylo sur la table tomba des mains du professeur. Pendant que je le récupérais, la chaîne de clé est ressortie.*"
+    },
+    "day4_after_eunsu_evidence_1_6": {
+        "text": "La sortie de secours du vieux bâtiment s'ouvre de l'intérieur. La porte du sous-sol ne te regarde pas."
+    },
+    "day4_after_eunsu_evidence_2_1": {
+        "text": "Pourquoi les médicaments dans le cabinet de l'infirmière ne sont-ils pas étiquetés ?"
+    },
+    "day4_after_eunsu_evidence_2_2": {
+        "text": "*Le professeur a regardé mon bras gauche. Même si les manches n'étaient pas retroussées, le regard s'arrêtait au coude.*"
+    },
+    "day4_after_eunsu_evidence_2_3": {
+        "text": "Pour les médicaments, demande à Mme Riin."
+    },
+    "day4_after_eunsu_evidence_2_4": {
+        "text": "Si c'est vous qui l'avez envoyé, je devrais vous le demander."
+    },
+    "day4_after_eunsu_evidence_2_5": {
+        "text": "*Lorsque le professeur a fermé le dossier, seul l’onglet avec mon nom est sorti.*"
+    },
+    "day4_after_eunsu_evidence_2_6": {
+        "text": "Je vérifierai ce que tu as pris. D'ici là, n'accepte rien de personne."
+    },
+    "day4_after_eunsu_followup_0": {
+        "text": "*Dès qu'elle a refermé les lèvres, j'ai repris la parole en premier.*",
+        "choices": [
+            "Noter ce que je viens d'entendre dans mon carnet",
+            "Demander pourquoi la réponse a changé",
+            "Mettre fin à la conversation et reculer"
+        ]
+    },
+    "day4_after_eunsu_followup_0_write_1": {
+        "text": "*Je sors un stylo et note ses mots sur la date des photos tandis qu'elle surveille quelle ligne j'écris.*"
+    },
+    "day4_after_eunsu_followup_0_write_2": {
+        "text": "*Je referme le carnet en poche afin qu'elle ne puisse plus changer de version demain.*"
+    },
+    "day4_after_eunsu_followup_0_press_1": {
+        "text": "Ce qu'on dit en salle des professeurs et les phrases qu'on couche dans un rapport, ce n'est pas pareil. Décide d'abord quelle réponse tu veux."
+    },
+    "day4_after_eunsu_followup_0_press_2": {
+        "text": "*La professeure a poussé le stylo posé sur son bureau vers moi. Sans le saisir, je l'ai replacé au milieu de la table.*"
+    },
+    "day4_after_eunsu_followup_1": {
+        "text": "*Une fois la chaînette de la clé disparue sous son col, j'ai repris la parole.*",
+        "choices": [
+            "Noter ce que je viens d'entendre dans mon carnet",
+            "Demander pourquoi la réponse a changé",
+            "Mettre fin à la conversation et reculer"
+        ]
+    },
+    "day4_after_eunsu_followup_1_write_1": {
+        "text": "*Quand j'ai retranscrit dans mon carnet qu'elle s'ouvrait de l'intérieur, la professeure a posé un regard silencieux sur ma ligne.*"
+    },
+    "day4_after_eunsu_followup_1_write_2": {
+        "text": "*Je clipse mon stylo au carnet; cet aveu sur le sous-sol va compléter les trous du dossier.*"
+    },
+    "day4_after_eunsu_followup_1_press_1": {
+        "text": "Répondre selon le règlement de sécurité et te prévenir à part, ce sont deux choses distinctes. Si tu veux tout demander, choisis mieux ton moment."
+    },
+    "day4_after_eunsu_followup_1_press_2": {
+        "text": "*Le bout de son doigt a tapoté une fois le coin du dossier. J'ai soutenu son regard sans détourner les yeux.*"
+    },
+    "day4_after_eunsu_followup_2": {
+        "text": "*Profitant de l'instant où sa main s'est arrêtée sur l'onglet du dossier, j'ai reposé une question.*",
+        "choices": [
+            "Noter ce que je viens d'entendre dans mon carnet",
+            "Demander pourquoi la réponse a changé",
+            "Mettre fin à la conversation et reculer"
+        ]
+    },
+    "day4_after_eunsu_followup_2_write_1": {
+        "text": "*Pendant que je notais qu'elle vérifierait les médicaments de l'infirmerie, la professeure s'est penchée pour observer mon écriture.*"
+    },
+    "day4_after_eunsu_followup_2_write_2": {
+        "text": "*Je corne la page en poche—on voit maintenant exactement où les versions de l'infirmerie et du bureau s'opposent.*"
+    },
+    "day4_after_eunsu_followup_2_press_1": {
+        "text": "Ce que je peux te dire comme professeure principale et ce que je consigne comme responsable des dossiers diffèrent. Contentons-nous de ça pour aujourd'hui."
+    },
+    "day4_after_eunsu_followup_2_press_2": {
+        "text": "*Elle repousse le classeur dans un coin du bureau. Je ne détourne pas les yeux.*"
+    },
+    "day4_after_sea_evidence_menu": {
+        "text": "*Devant Sea, il y a un autre angle d'attaque. Par quoi commencer ?*",
+        "choices": [
+            "Montrer une photo de la gravure sur le toit",
+            "Renseignez-vous sur l'historique de la fermeture forcée de l'application.",
+            "n'en dis pas plus maintenant"
+        ]
+    },
+    "day4_after_sea_evidence_0_1": {
+        "text": "*Lorsque j'ai allumé la photo gravée sous le grillage, Sea a tenté de m'arracher mon téléphone. Tout d'abord, j'ai éteint l'écran.*"
+    },
+    "day4_after_sea_evidence_0_2": {
+        "text": "Tu es allé sur le toit ? Je t'avais dit de ne pas toucher à la rambarde."
+    },
+    "day4_after_sea_evidence_0_3": {
+        "text": "Savez-vous qui l'a gravé ?"
+    },
+    "day4_after_sea_evidence_0_4": {
+        "text": "*Sea a caché sa main gauche derrière son dos et a frotté de son pouce la marque de bague sur son doigt.*"
+    },
+    "day4_after_sea_evidence_0_5": {
+        "text": "Où as-tu vu ce nom ? Il n'y avait pas de nom sur la photo."
+    },
+    "day4_after_sea_evidence_0_6": {
+        "text": "*Sea a également remarqué que je n'avais pas encore dit Seolhwa. La chaise fut un peu repoussée.*"
+    },
+    "day4_after_sea_evidence_1_1": {
+        "text": "Avez-vous également reçu une alerte lorsque j'ai fermé l'application le premier jour ?"
+    },
+    "day4_after_sea_evidence_1_2": {
+        "text": "*Sea a hoché la tête aussitôt, mais a refermé la bouche en réalisant que sa réponse était sortie trop vite.*"
+    },
+    "day4_after_sea_evidence_1_3": {
+        "text": "Je pensais que la batterie était morte. Alors j'ai vérifié."
+    },
+    "day4_after_sea_evidence_1_4": {
+        "text": "J'ai seulement fermé l'application. Qu'est-ce que ça a à voir avec la batterie ?"
+    },
+    "day4_after_sea_evidence_1_5": {
+        "text": "*Le téléphone portable a sonné une fois dans la main de Sea. Sea a arrêté de vibrer sans voir la notification.*"
+    },
+    "day4_after_sea_evidence_1_6": {
+        "text": "Quand tu coupes l'application, ils m'interrogent aussi. Ils demandent pourquoi je ne t'ai pas arrêté. Je dois leur répondre."
+    },
+    "day4_after_sea_followup_0": {
+        "text": "*Quand Sea s'est mordue la lèvre en s'interrompant, c'est moi qui l'ai pressée de questions.*",
+        "choices": [
+            "Noter ce que je viens d'entendre dans mon carnet",
+            "Demander pourquoi la réponse a changé",
+            "Mettre fin à la conversation et reculer"
+        ]
+    },
+    "day4_after_sea_followup_0_write_1": {
+        "text": "*Quand j'ai noté dans mon carnet ce qu'elle avait dit sur la rambarde du toit, Sea a penché la tête pour voir quelle ligne j'écrivais.*"
+    },
+    "day4_after_sea_followup_0_write_2": {
+        "text": "*Je referme le carnet en observant Sea : son visage reste calme, seuls ses doigts s'immobilisent une fraction de seconde sur la table.*"
+    },
+    "day4_after_sea_followup_0_press_1": {
+        "text": "Sur le moment, je n'avais pas d'autre choix que d'esquiver comme ça. Je ne suis pas la seule autour de toi à accorder son discours."
+    },
+    "day4_after_sea_followup_0_press_2": {
+        "text": "*Sea a tourné les yeux vers la porte du bureau des élèves. Derrière la vitre dépolie, l'ombre de quelqu'un s'était immobilisée.*"
+    },
+    "day4_after_sea_followup_1": {
+        "text": "*J'ai repris la parole face à Sea qui fixait son téléphone dont la vibration venait de cesser.*",
+        "choices": [
+            "Noter ce que je viens d'entendre dans mon carnet",
+            "Demander pourquoi la réponse a changé",
+            "Mettre fin à la conversation et reculer"
+        ]
+    },
+    "day4_after_sea_followup_1_write_1": {
+        "text": "*J'ai noté que les alertes de fermeture de l'application arrivaient aussi à Sea. Ses yeux suivaient nerveusement la pointe de mon stylo.*"
+    },
+    "day4_after_sea_followup_1_write_2": {
+        "text": "*Je range le carnet dans mon sac; après ses excuses sur les alertes tuteur, elle en a déjà trop montré.*"
+    },
+    "day4_after_sea_followup_1_press_1": {
+        "text": "Je ne pouvais pas te dire la vérité dès le départ. Moi aussi, j'étais obligée de faire mes rapports comme on me l'ordonnait."
+    },
+    "day4_after_sea_followup_1_press_2": {
+        "text": "*L'ombre projetée sur la vitre du couloir s'est éloignée lentement. Sea n'a pas desserré les lèvres avant que les pas ne s'évanouissent.*"
+    }
 }

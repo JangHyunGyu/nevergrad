@@ -42,7 +42,6 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_sea_msg_2": {
         character: null,
-        messengerDelay: 1200,
         unskippable: true,
         next: "day3_night_sea_msg_3"
     },
@@ -71,11 +70,17 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_sea_msg_7"
     },
     "day3_night_sea_msg_7": {
+        vibrate: "message_buzz",
+        sfx: "sfx_notification.mp3",
+        messengerDelay: 1200,
         character: null,
         unskippable: true,
         next: "day3_night_sea_msg_8"
     },
     "day3_night_sea_msg_8": {
+        vibrate: "message_buzz",
+        sfx: "sfx_notification.mp3",
+        messengerDelay: 1200,
         character: null,
         unskippable: true,
         next: "day3_night_sea_msg_9"
@@ -86,11 +91,15 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_sea_msg_10"
     },
     "day3_night_sea_msg_10": {
+        vibrate: "message_buzz",
+        sfx: "sfx_notification.mp3",
         character: null,
         unskippable: true,
         next: "day3_night_sea_msg_11"
     },
     "day3_night_sea_msg_11": {
+        vibrate: "message_buzz",
+        sfx: "sfx_notification.mp3",
         character: null,
         unskippable: true,
         next: "day3_night_sea_msg_12"
@@ -124,6 +133,8 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_sea_msg_17"
     },
     "day3_night_sea_msg_17": {
+        vibrate: "message_buzz",
+        sfx: "sfx_notification.mp3",
         character: null,
         unskippable: true,
         next: "day3_night_bleed"
@@ -141,6 +152,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_bleed_no_yuna_1"
     },
     "day3_night_bleed_2": {
+        charOpacity: 0.45,
         character: "yuna_scared",
         next: "day3_night_bleed_3"
     },
@@ -165,6 +177,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_bleed_5"
     },
     "day3_night_bleed_5": {
+        bgm: "tension.mp3",
         character: null,
         glitch: { themeShift: "thriller" },
         vibrate: "danger",
@@ -189,6 +202,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_bleed_9"
     },
     "day3_night_bleed_9": {
+        charOpacity: 0.45,
         character: "seolhwa_quiet",
         next: "day3_night_bleed_10"
     },
@@ -292,35 +306,42 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_wall_6"
     },
     "day3_night_wall_6": {
+        noTimeFilter: true,
         background: "home",
         character: null,
         next: "day3_night_wall_7"
     },
     "day3_night_wall_7": {
+        noTimeFilter: true,
         character: null,
         next: "day3_night_wall_8"
     },
     "day3_night_wall_8": {
+        noTimeFilter: true,
         character: null,
         sfx: { file: "sfx_wall_scratch.mp3", volume: 0.55 },
         unskippable: true,
         next: "day3_night_wall_9"
     },
     "day3_night_wall_9": {
+        noTimeFilter: true,
         character: null,
         next: "day3_night_wall_10"
     },
     "day3_night_wall_10": {
+        noTimeFilter: true,
         character: null,
         sfx: { file: "sfx_wall_scratch.mp3", volume: 0.5 },
         unskippable: true,
         next: "day3_night_wall_11"
     },
     "day3_night_wall_11": {
+        noTimeFilter: true,
         character: null,
         next: "day3_night_wall_12"
     },
     "day3_night_wall_12": {
+        noTimeFilter: true,
         character: null,
         stopSfx: "sfx_static.mp3",
         next: "day3_xover_glitch_1"
@@ -370,6 +391,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_xover_glitch_6"
     },
     "day3_xover_glitch_6": {
+        noTimeFilter: true,
         background: "home",
         character: null,
         setFlags: ["xover_glitch_d3"],
@@ -380,41 +402,48 @@ Object.assign(SCENARIO[3], {
     //  설화의 경고 — 현실 (각성 상태, 환각/잔상)
     // ══════════════════════════════════════
     "day3_night_seolhwa": {
+        noTimeFilter: true,
         background: "home",
         bgm: null,
         sfx: "sfx_whisper.mp3",
-        character: "seolhwa_fading",
+        character: null,
         glitch: { noise: true, noiseDuration: 300, temperatureDrop: true },
         unskippable: true,
         next: "day3_night_seolhwa_2"
     },
     "day3_night_seolhwa_2": {
+        noTimeFilter: true,
         character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_3"
     },
     "day3_night_seolhwa_3": {
+        noTimeFilter: true,
         character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_4"
     },
     "day3_night_seolhwa_4": {
+        noTimeFilter: true,
         character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_4a"
     },
     "day3_night_seolhwa_4a": {
+        noTimeFilter: true,
         character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_4b"
     },
     "day3_night_seolhwa_4b": {
+        noTimeFilter: true,
         character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_5"
     },
     // "...5일이야."
     "day3_night_seolhwa_5": {
+        noTimeFilter: true,
         character: "seolhwa_warning",
         charOpacity: 0.82,
         typingSpeed: 120,
@@ -425,12 +454,14 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_6"
     },
     "day3_night_seolhwa_6": {
+        noTimeFilter: true,
         character: "seolhwa_sad",
         charOpacity: 0.82,
         unskippable: true,
         next: "day3_night_seolhwa_6a"
     },
     "day3_night_seolhwa_6a": {
+        noTimeFilter: true,
         character: "seolhwa_sad",
         charOpacity: 0.82,
         unskippable: true,
@@ -438,6 +469,7 @@ Object.assign(SCENARIO[3], {
     },
     // "5일 안에... 여기서 나가야 해."
     "day3_night_seolhwa_7": {
+        noTimeFilter: true,
         character: "seolhwa_warning",
         charOpacity: 0.82,
         typingSpeed: 150,
@@ -447,6 +479,7 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_7a"
     },
     "day3_night_seolhwa_7a": {
+        noTimeFilter: true,
         character: "seolhwa_warning",
         charOpacity: 0.82,
         unskippable: true,
@@ -454,6 +487,7 @@ Object.assign(SCENARIO[3], {
     },
     // "나처럼 되기 전에."
     "day3_night_seolhwa_8": {
+        noTimeFilter: true,
         character: "seolhwa_warning",
         charOpacity: 0.82,
         typingSpeed: 150,
@@ -463,29 +497,34 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_9"
     },
     "day3_night_seolhwa_9": {
+        noTimeFilter: true,
         character: "seolhwa_normal",
         charOpacity: 0.82,
         unskippable: true,
         next: "day3_night_seolhwa_10"
     },
     "day3_night_seolhwa_10": {
+        noTimeFilter: true,
         character: "seolhwa_normal",
         charOpacity: 0.82,
         unskippable: true,
         next: "day3_night_seolhwa_11"
     },
     "day3_night_seolhwa_11": {
+        noTimeFilter: true,
         character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_11a"
     },
     "day3_night_seolhwa_11a": {
+        noTimeFilter: true,
         character: "seolhwa_fading",
         unskippable: true,
         next: "day3_night_seolhwa_12"
     },
     // "...기억해. 왼손."
     "day3_night_seolhwa_12": {
+        noTimeFilter: true,
         character: "seolhwa_fading",
         typingSpeed: 200,
         unskippable: true,
@@ -510,6 +549,7 @@ Object.assign(SCENARIO[3], {
     },
     // 눈 깜빡 → 사라짐
     "day3_night_seolhwa_13": {
+        noTimeFilter: true,
         character: null,
         stopSfx: "sfx_whisper_seolhwa.mp3",
         glitch: { heavyGlitch: true },
@@ -517,26 +557,31 @@ Object.assign(SCENARIO[3], {
         next: "day3_night_seolhwa_14"
     },
     "day3_night_seolhwa_14": {
+        noTimeFilter: true,
         character: null,
         unskippable: true,
         next: "day3_night_seolhwa_15"
     },
     "day3_night_seolhwa_15": {
+        noTimeFilter: true,
         character: null,
         unskippable: true,
         next: "day3_night_seolhwa_16"
     },
     "day3_night_seolhwa_16": {
+        noTimeFilter: true,
         character: null,
         unskippable: true,
         next: "day3_night_seolhwa_17"
     },
     "day3_night_seolhwa_17": {
+        noTimeFilter: true,
         character: null,
         unskippable: true,
         next: "day3_night_seolhwa_18"
     },
     "day3_night_seolhwa_18": {
+        noTimeFilter: true,
         character: null,
         unskippable: true,
         next: "day3_night_choice"
@@ -546,6 +591,7 @@ Object.assign(SCENARIO[3], {
     //  최종 선택
     // ══════════════════════════════════════
     "day3_night_choice": {
+        silentStats: true,
         character: null,
         vibrate: "danger",
         choices: [
@@ -687,7 +733,7 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_pressure_seolhwa_1": {
         "background": "room_night",
-        "character": "seolhwa_warning",
+        "character": null,
         "glitch": {
             "panSFX": "sfx_whisper_seolhwa",
             "pan": -0.85
@@ -696,27 +742,27 @@ Object.assign(SCENARIO[3], {
     },
     "day3_night_pressure_seolhwa_2": {
         "background": "room_night",
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day3_night_pressure_seolhwa_3"
     },
     "day3_night_pressure_seolhwa_3": {
         "background": "room_night",
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day3_night_pressure_seolhwa_4"
     },
     "day3_night_pressure_seolhwa_4": {
         "background": "room_night",
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day3_night_pressure_seolhwa_5"
     },
     "day3_night_pressure_seolhwa_5": {
         "background": "room_night",
-        "character": "seolhwa_warning",
+        "character": null,
         "next": "day3_night_pressure_seolhwa_6"
     },
     "day3_night_pressure_seolhwa_6": {
         "background": "room_night",
-        "character": "seolhwa_warning",
+        "character": null,
         "changeDay": 4,
         "changeSlot": "morning",
         "next": "day4_morning_start"

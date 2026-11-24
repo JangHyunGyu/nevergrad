@@ -672,7 +672,7 @@ class GallerySystem {
 
         this._cgItems = Object.entries(CONFIG.BACKGROUNDS || {})
             .map(([key, file]) => [key === 'closeup_m13_ampoule' ? 'closeup_m13_ampoule_tray' : key, file])
-            .filter(([backgroundKey, file]) => String(file).includes('/images/cg/')
+            .filter(([backgroundKey, file]) => (String(file).includes('/images/cg/') && backgroundKey !== 'ending_true_dawn')
                 || ['closeup_m13_ampoule_tray', 'closeup_rooftop_etching'].includes(backgroundKey))
             .map(([backgroundKey, file]) => { var __oc31, __oc32, __oc33, __oc34, __oc35; return (
 ({

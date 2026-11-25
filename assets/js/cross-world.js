@@ -27,8 +27,7 @@
             "분홍 알약이 혀끝에서 달게 녹는다.",
             "어두운 보건실이 봄빛 속으로 흩어진다.",
             "교문 너머에서 등교 종이 울린다.",
-            "시야가 좁아졌습니다. 화면을 가로로 돌려 교실 전체를 확인하세요.",
-            "세로로 세워 들면 4월의 교문과 대화를 더 편안하게 볼 수 있어요."
+            "시야가 좁아졌습니다. 화면을 가로로 돌려 교실 전체를 확인하세요."
         ],
         en: [
             "At the school gate",
@@ -53,8 +52,7 @@
             "The pink pill melts sweet on your tongue.",
             "The dark infirmary dissolves into spring light.",
             "Beyond the school gate, the morning bell rings.",
-            "Your view is narrowed. Rotate your screen sideways to see the whole classroom.",
-            "Hold your device upright for a clearer view of the April gate and dialogue."
+            "Your view is narrowed. Rotate your screen sideways to see the whole classroom."
         ],
         ja: [
             "校門の前で",
@@ -79,8 +77,7 @@
             "ピンクの薬が舌の上で甘く溶ける。",
             "暗い保健室が春の光の中へほどけていく。",
             "校門の向こうで始業の鐘が鳴る。",
-            "視界が狭くなっています。画面を横向きにして教室全体を確認してください。",
-            "縦向きに持つと、四月の校門と会話をより見やすく楽しめます。"
+            "視界が狭くなっています。画面を横向きにして教室全体を確認してください。"
         ],
         es: [
             "Ante la puerta",
@@ -105,8 +102,7 @@
             "La pastilla rosa se funde dulce en tu lengua.",
             "La enfermería oscura se disuelve en luz de primavera.",
             "Al otro lado del portón suena el timbre escolar.",
-            "Tu campo de visión se estrecha. Gira la pantalla en horizontal para ver toda el aula.",
-            "Sostén el dispositivo en vertical para ver mejor la puerta de abril y los diálogos."
+            "Tu campo de visión se estrecha. Gira la pantalla en horizontal para ver toda el aula."
         ],
         fr: [
             "Devant le portail",
@@ -131,8 +127,7 @@
             "Le comprimé rose fond doucement sur ta langue.",
             "L’infirmerie sombre se dissout dans la lumière du printemps.",
             "Derrière le portail, la sonnerie retentit.",
-            "Votre champ de vision rétrécit. Tournez l’écran à l’horizontale pour voir toute la classe.",
-            "Tiens ton appareil à la verticale pour mieux profiter du portail d’avril et des dialogues."
+            "Votre champ de vision rétrécit. Tournez l’écran à l’horizontale pour voir toute la classe."
         ],
         de: [
             "Vor dem Schultor",
@@ -157,8 +152,7 @@
             "Die rosa Tablette schmilzt süß auf deiner Zunge.",
             "Das dunkle Krankenzimmer löst sich im Frühlingslicht auf.",
             "Hinter dem Schultor läutet die Schulglocke.",
-            "Dein Sichtfeld ist verengt. Drehe den Bildschirm quer, um das ganze Klassenzimmer zu sehen.",
-            "Im Hochformat wirken das Schultor im April und die Dialoge noch angenehmer."
+            "Dein Sichtfeld ist verengt. Drehe den Bildschirm quer, um das ganze Klassenzimmer zu sehen."
         ],
         pt: [
             "Diante do portão",
@@ -183,8 +177,7 @@
             "O comprimido rosa derrete doce na tua língua.",
             "A enfermaria escura dissolve-se na luz da primavera.",
             "Do outro lado do portão toca o sinal da escola.",
-            "A tua visão está estreita. Gira o ecrã na horizontal para ver toda a sala de aula.",
-            "Segura o dispositivo na vertical para ver melhor o portão de abril e os diálogos."
+            "A tua visão está estreita. Gira o ecrã na horizontal para ver toda a sala de aula."
         ],
         zh: [
             "校门前",
@@ -209,8 +202,7 @@
             "粉色药片在舌尖泛起甜味慢慢融化。",
             "昏暗的保健室在春日阳光中散开。",
             "校门外响起了上学的铃声。",
-            "视野变窄了。请将屏幕横过来，看清整间教室。",
-            "竖屏握持，能更舒适地欣赏四月的校门与对话。"
+            "视野变窄了。请将屏幕横过来，看清整间教室。"
         ]
     };
     const STYLE = `
@@ -248,11 +240,7 @@
     #cross-world.cw-lab .cw-orient-tip{background:linear-gradient(90deg,#a8d6c218,#0b1317c4 72%);border:1px solid #a8d6c23a;border-left:3px solid #a8d6c2;border-radius:2px;box-shadow:inset 0 0 24px #a8d6c20a}
     #cross-world.cw-lab .cw-orient-icon{flex:0 0 auto;width:15px;height:24px;border:1.5px solid #a8d6c2;border-radius:3px;position:relative;box-shadow:0 0 10px #a8d6c238;animation:cw-tilt-land 2.8s ease-in-out infinite}
     #cross-world.cw-lab .cw-orient-icon:after{content:'';position:absolute;left:50%;bottom:2.5px;width:4px;height:1.5px;transform:translateX(-50%);background:#a8d6c2;border-radius:1px}
-    #cross-world.cw-spring .cw-orient-tip{background:linear-gradient(90deg,#f0b9c920,#2e222cc4 76%);border:1px solid #f0b9c947;border-radius:8px;box-shadow:0 4px 18px #0000002e,inset 0 1px 0 #fff2f618}
-    #cross-world.cw-spring .cw-orient-icon{flex:0 0 auto;width:22px;height:14px;border:1.5px solid #f0b9c9;border-radius:3px;position:relative;box-shadow:0 0 10px #f0b9c93d;animation:cw-tilt-port 2.8s ease-in-out infinite}
-    #cross-world.cw-spring .cw-orient-icon:after{content:'';position:absolute;right:2.5px;top:50%;width:1.5px;height:4px;transform:translateY(-50%);background:#f0b9c9;border-radius:1px}
     @keyframes cw-tilt-land{0%,22%{transform:rotate(0deg)}52%,78%{transform:rotate(-90deg)}100%{transform:rotate(0deg)}}
-    @keyframes cw-tilt-port{0%,22%{transform:rotate(0deg)}52%,78%{transform:rotate(90deg)}100%{transform:rotate(0deg)}}
     #cross-world .cw-note{font-size:12px;line-height:1.65;color:#d0c9c5;margin:0 0 16px;overflow-wrap:anywhere}
     #cross-world .cw-actions{display:flex;flex-wrap:wrap;gap:8px 12px;transition:opacity .65s ease,transform .65s ease}
     #cross-world.cw-intro-lock .cw-actions{opacity:0;transform:translateY(8px);pointer-events:none}
@@ -336,7 +324,6 @@
         #cross-world .cw-orient-tip{margin-bottom:9px;padding:7px 11px;gap:10px}
         #cross-world .cw-orient-tag{font-size:8px}
         #cross-world .cw-orient-text{font-size:11px;line-height:1.45}
-        #cross-world.cw-spring .cw-orient-icon{width:19px;height:12px}
         #cross-world .cw-note{font-size:11px;line-height:1.45;margin-bottom:8px}
         #cross-world .cw-foot{margin-top:8px;font-size:9px}
         #cross-world .cw-art img{max-height:calc(100dvh - 20px)}
@@ -442,18 +429,13 @@
         } catch (_) {}
     }
     function computeOrientationNotice(world, copy) {
-        if (typeof window === 'undefined') return '';
+        if (world !== 'nevergrad' || typeof window === 'undefined') return '';
         const w = Number(window.innerWidth) || 0;
         const h = Number(window.innerHeight) || 0;
         if (!w || !h) return '';
-        const portrait = h > w;
-        const landscape = w > h;
         const coarse = typeof window.matchMedia === 'function' && window.matchMedia('(any-pointer: coarse)').matches;
-        if (world === 'nevergrad' && portrait && (coarse || w <= 1024)) {
+        if (h > w && (coarse || w <= 1024)) {
             return copy[22] || '';
-        }
-        if (world === 'cupid' && landscape && h <= 540 && (coarse || w <= 1024)) {
-            return copy[23] || '';
         }
         return '';
     }
@@ -682,7 +664,7 @@
             }
             const msg = computeOrientationNotice(options.world, copy);
             if (msg) {
-                if (orientTagEl) orientTagEl.textContent = options.world === 'nevergrad' ? 'DISPLAY // LANDSCAPE' : 'APRIL VIEW · PORTRAIT';
+                if (orientTagEl) orientTagEl.textContent = 'DISPLAY // LANDSCAPE';
                 if (orientTextEl) orientTextEl.textContent = msg;
                 orientTipEl.hidden = false;
             } else {

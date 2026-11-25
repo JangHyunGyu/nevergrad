@@ -355,13 +355,13 @@ class GameEngine {
             onLeave: () => { var __oc8, __oc9; return (
 ((__oc9 = (__oc8 = this.audio) === null || __oc8 === void 0 ? void 0 : __oc8.stopBGM) === null || __oc9 === void 0 ? void 0 : __oc9.call(__oc8))
 ); },
-            onReturn: () => { var __oc10, __oc11;
-                if (crossingBGM) (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? void 0 : __oc10.playBGM) === null || __oc11 === void 0 ? void 0 : __oc11.call(__oc10, crossingBGM)));
+            onReturn: () => { var __oc10, __oc11; return (
+crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? void 0 : __oc10.playBGM) === null || __oc11 === void 0 ? void 0 : __oc11.call(__oc10, crossingBGM))) : undefined
+); },
+            onBack: () => { var __oc12;
+                (((__oc12 = document.getElementById('dialogue-box')) === null || __oc12 === void 0 ? void 0 : __oc12.focus()));
                 if (nextSceneId) this._loadScene(nextSceneId);
-            },
-            onBack: () => { var __oc12; return (
-((__oc12 = document.getElementById('dialogue-box')) === null || __oc12 === void 0 ? void 0 : __oc12.focus())
-); }
+            }
         });
     }
 

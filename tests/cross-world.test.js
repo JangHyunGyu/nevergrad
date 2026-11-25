@@ -94,9 +94,11 @@ test('cupid-gate redirect resumes BGM and advances to next scene on return, and 
     _loadScene(id){ loaded=id; }
   };
   proto._redirectToCupidGate.call(fakeEngine,'day5_lunch_end');
-  assert.ok(showOpts && typeof showOpts.onReturn==='function');
+  assert.ok(showOpts && typeof showOpts.onReturn==='function' && typeof showOpts.onBack==='function');
   showOpts.onReturn();
   assert.equal(playedBgm,'chase.mp3');
+  assert.equal(loaded,null);
+  showOpts.onBack();
   assert.equal(loaded,'day5_lunch_end');
 
   let clicked=null, appended=null;

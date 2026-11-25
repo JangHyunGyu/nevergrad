@@ -106,7 +106,10 @@ function displaySpeaker(sceneId) {
 function formatMeta(scene) {
     const meta = [];
     if (scene.background) meta.push(`배경: \`${scene.background}\``);
-    if (scene.bgm) meta.push(`BGM: \`${scene.bgm}\``);
+    if (scene.bgm) {
+        const bgmLabel = typeof scene.bgm === 'object' ? (scene.bgm.file || scene.bgm.src || JSON.stringify(scene.bgm)) : scene.bgm;
+        meta.push(`BGM: \`${bgmLabel}\``);
+    }
     if (scene.character !== undefined && scene.character !== null) meta.push(`캐릭터: \`${scene.character}\``);
     if (scene.characters) {
         const cast = Object.entries(scene.characters).filter(([, value]) => value).map(([position, value]) => `\`${position}: ${value}\``);

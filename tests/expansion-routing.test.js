@@ -129,9 +129,9 @@ test('both prequels return to the server without changing current-playthrough ev
 
 test('expansion targets, explicit fallback thresholds, and localized choice lengths stay aligned', () => {
     const { scenes } = runtime();
-    assert.equal(Object.keys(scenes).length, 3338);
+    assert.equal(Object.keys(scenes).length, 3342);
     const choices = Object.values(scenes).reduce((n, s) => n + (s.choices?.length || 0), 0);
-    assert.equal(choices, 279);
+    assert.equal(choices, 282);
     for (const [id, scene] of Object.entries(scenes)) {
         if (scene.affinityBranches) assert.ok(scene.affinityBranches.some(b => b.minAffinity === -100), id);
     }

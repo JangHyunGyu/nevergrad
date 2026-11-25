@@ -63,3 +63,23 @@ test('night entry recomputes stale synchronization flags and pink reaches the ex
     assert.equal(scenes.day5_lunch_end.changeSlot, 'afterschool');
     assert.equal(scenes.day5_after_end.changeSlot, 'night');
 });
+
+test('ESCAPE route can acquire riin_companion, sea_companion, or proceed alone into day5_ending_escape_title', () => {
+    const morningCtx = { SCENARIO: {} };
+    for (const file of ['day5_1_morning.js', 'day5_2_lunch.js', 'day5_3_afterschool.js', 'day5_4_night.js']) {
+        vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/js/scenario', file), 'utf8'), morningCtx);
+    }
+    const escapeScenes = morningCtx.SCENARIO[5];
+    const allyChoices = escapeScenes.day5_morning_escape_ally_choice.choices;
+    assert.equal(allyChoices.length, 3);
+    assert.ok(allyChoices[0].setFlags.includes('riin_companion'));
+    assert.ok(allyChoices[1].setFlags.includes('sea_companion'));
+    assert.equal(escapeScenes.day5_morning_escape_ally_riin.next, 'day5_after_start');
+    assert.equal(escapeScenes.day5_morning_escape_ally_sea.next, 'day5_after_start');
+    assert.equal(escapeScenes.day5_morning_escape_ally_alone.next, 'day5_after_start');
+
+    const riinRun = walk('day5_night_start', 'day5_ending_escape_title', ['route_escape', 'riin_companion']);
+    assert.ok(riinRun.visited.includes('day5_ending_escape_riin'));
+    const seaRun = walk('day5_night_start', 'day5_ending_escape_title', ['route_escape', 'sea_companion']);
+    assert.ok(seaRun.visited.includes('day5_ending_escape_sea'));
+});

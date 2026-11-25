@@ -59,11 +59,64 @@ test('both pill choices select a pill: pink reaches capture, black continues the
   assert.equal(choices[1].next,'day5_lunch_pills_black_1');
   assert.equal(scenes.day5_lunch_pills_pink_3.next,'day5_lunch_end');
   assert.ok(scenes.day5_lunch_pills_pink_3.setFlags.includes('caught_by_riin'));
-  assert.equal(scenes.day5_lunch_pills_pink_3.redirect,undefined);
+  assert.equal(scenes.day5_lunch_pills_pink_3.redirect,'cupid-gate');
   assert.equal(scenes.day5_lunch_pills_black_1.next,'day5_lunch_pills_black_ask');
   assert.equal(scenes.day5_lunch_pills_black_ask.next,'day5_lunch_right_14');
   for(const [lang,black] of Object.entries({ko:'검은 알약',en:'Black pill',ja:'黒い薬',es:'Pastilla negra',fr:'Comprimé noir',de:'Schwarze Tablette',pt:'Comprimido preto',zh:'黑色药片'})) {
     const text=JSON.parse(fs.readFileSync(path.join(__dirname,`../assets/js/i18n/${lang}/day5_lunch.json`),'utf8'));
     assert.equal(text.day5_lunch_pills_2.choices[1],black,lang);
   }
+});
+
+test('cupid-gate redirect resumes BGM and advances to next scene on return, and archive unlocks after any ending',()=>{
+  const engineSrc=fs.readFileSync(path.join(__dirname,'../assets/js/modules/GameEngine.js'),'utf8');
+  let showOpts=null, loaded=null, playedBgm=null;
+  const fakeEnv={
+    window:{
+      CrossWorld:{ show(opts){ showOpts=opts; } },
+      resolveNevergradAssetUrl:u=>u,
+      matchMedia:()=>({ matches:true })
+    },
+    resolveNevergradAssetUrl:u=>u,
+    location:{ hostname:'nevergrad.archerlab.dev', protocol:'https:' },
+    document:{ cookie:'', getElementById:()=>({ focus(){} }), querySelector:()=>({ appendChild(){} }) }
+  };
+  vm.runInNewContext(engineSrc+'\nglobalThis.GE=GameEngine;',fakeEnv);
+  const proto=fakeEnv.GE.prototype;
+  const fakeEngine={
+    i18n:{ currentLang:'ko' },
+    state:{ playerName:'테스트' },
+    audio:{ getCurrentBGM:()=>'chase.mp3', stopBGM(){}, playBGM(b){ playedBgm=b; } },
+    save:{ save(){}, hasSeenEnding:type=>type==='CAGE', getMeta:()=>({ endingsSeen:['CAGE'], playCount:1 }) },
+    _stopAuto(){},
+    _stopSkip(){},
+    _markNevergradPlayed(){},
+    _loadScene(id){ loaded=id; }
+  };
+  proto._redirectToCupidGate.call(fakeEngine,'day5_lunch_end');
+  assert.ok(showOpts && typeof showOpts.onReturn==='function');
+  showOpts.onReturn();
+  assert.equal(playedBgm,'chase.mp3');
+  assert.equal(loaded,'day5_lunch_end');
+
+  let clicked=null, appended=null;
+  const docEnv={
+    ...fakeEnv,
+    document:{
+      ...fakeEnv.document,
+      getElementById:id=>id==='title-screen'?null:null,
+      querySelector:()=>({ appendChild(el){ appended=el; } }),
+      createElement:()=>({ id:'', className:'', textContent:'', style:{}, addEventListener(_e,fn){ clicked=fn; } })
+    }
+  };
+  // Verify _bindArchiveButton proceeds past the guard for a non-TRUE ending ('CAGE') and binds a button.
+  const archFake={
+    save:{ getMeta:()=>({ endingsSeen:['CAGE'] }), hasSeenEnding:type=>type==='CAGE' },
+    i18n:{ currentLang:'ko' },
+    _openArchiveOverlay(){}
+  };
+  const archEnv={ window:{}, document:docEnv.document };
+  vm.runInNewContext(engineSrc+'\nglobalThis.GE=GameEngine;',archEnv);
+  archEnv.GE.prototype._bindArchiveButton.call(archFake);
+  assert.ok(appended && appended.id==='btn-archive');
 });

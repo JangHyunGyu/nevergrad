@@ -331,7 +331,7 @@ class GameEngine {
         this._bindArchiveButton();
     }
 
-    _redirectToCupidGate() { var __oc5, __oc6, __oc7;
+    _redirectToCupidGate(nextSceneId = null) { var __oc5, __oc6, __oc7;
         const lang = (((__oc5 = this.i18n) === null || __oc5 === void 0 ? void 0 : __oc5.currentLang)) || 'ko';
         const page = {
             ko: '/',
@@ -355,9 +355,10 @@ class GameEngine {
             onLeave: () => { var __oc8, __oc9; return (
 ((__oc9 = (__oc8 = this.audio) === null || __oc8 === void 0 ? void 0 : __oc8.stopBGM) === null || __oc9 === void 0 ? void 0 : __oc9.call(__oc8))
 ); },
-            onReturn: () => { var __oc10, __oc11; return (
-crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? void 0 : __oc10.playBGM) === null || __oc11 === void 0 ? void 0 : __oc11.call(__oc10, crossingBGM))) : undefined
-); },
+            onReturn: () => { var __oc10, __oc11;
+                if (crossingBGM) (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? void 0 : __oc10.playBGM) === null || __oc11 === void 0 ? void 0 : __oc11.call(__oc10, crossingBGM)));
+                if (nextSceneId) this._loadScene(nextSceneId);
+            },
             onBack: () => { var __oc12; return (
 ((__oc12 = document.getElementById('dialogue-box')) === null || __oc12 === void 0 ? void 0 : __oc12.focus())
 ); }
@@ -405,7 +406,11 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
     }
 
     _bindArchiveButton() { var __oc28, __oc29, __oc30, __oc31;
-        if (!(((__oc29 = (__oc28 = this.save) === null || __oc28 === void 0 ? void 0 : __oc28.hasSeenEnding) === null || __oc29 === void 0 ? void 0 : __oc29.call(__oc28, 'TRUE')))) return;
+        const meta = (((__oc29 = (__oc28 = this.save) === null || __oc28 === void 0 ? void 0 : __oc28.getMeta) === null || __oc29 === void 0 ? void 0 : __oc29.call(__oc28)));
+        const unlocked = Array.isArray(meta?.endingsSeen)
+            ? meta.endingsSeen.length > 0
+            : Boolean(((__oc30 = this.save) === null || __oc30 === void 0 ? void 0 : __oc30.hasSeenEnding) && ['TRUE', 'ESCAPE', 'CAGE', 'COMPLICIT'].some(type => this.save.hasSeenEnding(type)));
+        if (!unlocked) return;
         const menu = document.querySelector('#title-screen .title-menu');
         if (!menu) return;
         let btn = document.getElementById('btn-archive');
@@ -1643,7 +1648,7 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
         }
 
         if (scene.redirect === 'cupid-gate') {
-            this._redirectToCupidGate();
+            this._redirectToCupidGate(scene.next || null);
             return;
         }
 

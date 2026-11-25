@@ -280,13 +280,13 @@
         "text": "*Le tomo la mano fría.*\n\nNo sueltes la cámara. Yo fotografío los papeles. Tú guarda eso."
     },
     "day5_morning_true_35": {
-        "text": "*Fotografío todo: logo de Edina, informe final Nevergrad, tabla de rentabilidad bajo la portada.*"
+        "text": "*Fotografío todo: el sello de la Fundación Edina, el informe final Nevergrad, la tabla de sujetos bajo la portada.*"
     },
     "day5_morning_true_36": {
         "text": "*Protocolo de cambio del paquete de identidad. Padres, lugar de origen, escuela anterior, nombres de amigos. Cada campo tiene una fecha de aplicación y una marca de verificación.*"
     },
     "day5_morning_true_37": {
-        "text": "*Documento de aprobación del consejo. Propuesta de comercialización. Nota junto al rendimiento previsto: 'Después de asegurar los datos de estabilización de S-13'.*"
+        "text": "*Acta aprobada del consejo. Plan de despliegue masivo del protocolo de borrado. Nota al margen: 'Tras asegurar datos de estabilización de S-13'.*"
     },
     "day5_morning_true_38": {
         "text": "*Última página. 'Prueba #13: La respuesta de asiento en blanco persiste. Repite la designación Lee Seolhwa. Se superó el umbral de memoria residual. Revisar el procesamiento temprano.'*"
@@ -630,5 +630,22 @@
     },
     "day5_morning_complicit_accept": {
         "text": "*Saco de la mochila el sobre con documentos que había guardado y lo dejo sobre el escritorio. Para ir a la sala de profesores, basta con entrar por la puerta principal.*"
+    },
+    "day5_morning_escape_ally_choice": {
+        "text": "*Desde el rellano se distinguen la puerta de la enfermería y las escaleras del consejo. Antes de salir por detrás, toca decidir quién nos acompaña.*",
+        "choices": [
+            "Llamar a la enfermera Riin",
+            "Hacer una seña a Sea en el rellano",
+            "Salir solo con Yuna"
+        ]
+    },
+    "day5_morning_escape_ally_riin": {
+        "text": "Tengo una forma de cruzar el recinto sin sus registros. Llevo conmigo la llave de la escalera de emergencia."
+    },
+    "day5_morning_escape_ally_sea": {
+        "text": "No esperaba aquí para dejarte marchar solo. Traigo la copia de seguridad del consejo; vamos juntos."
+    },
+    "day5_morning_escape_ally_alone": {
+        "text": "*Conteniendo incluso el aliento, tomo a Yuna de la muñeca hacia el muro trasero.*"
     }
 }

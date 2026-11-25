@@ -592,6 +592,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         unskippable: true,
         setFlags: ["caught_by_riin"],
+        redirect: "cupid-gate",
         next: "day5_lunch_end"
     },
     "day5_lunch_pills_black_1": {

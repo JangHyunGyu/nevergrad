@@ -357,13 +357,37 @@ Object.assign(SCENARIO[5], {
         ]
     },
 
-    // ── ESCAPE 루트 종료 → 추격 스킵, 방과후로 직행 ──
+    // ── ESCAPE 루트 종료 → 추격 스킵, 합류 분기 후 방과후로 직행 ──
     "day5_morning_escape_end": {
         background: "old_stairway",
         character: null,
         stopSfx: true,
         setFlags: ["route_escape", "escape_with_yuna"],
         changeSlot: "afterschool",
+        next: "day5_morning_escape_ally_choice"
+    },
+    "day5_morning_escape_ally_choice": {
+        background: "old_stairway",
+        character: null,
+        choices: [
+            { next: "day5_morning_escape_ally_riin", setFlags: ["riin_companion", "emergency_key"], stats: { riin: { affinity: 8 } } },
+            { next: "day5_morning_escape_ally_sea", setFlags: ["sea_companion"], stats: { sea: { affinity: 8 } } },
+            { next: "day5_morning_escape_ally_alone" }
+        ]
+    },
+    "day5_morning_escape_ally_riin": {
+        background: "old_stairway",
+        character: "riin_normal",
+        next: "day5_after_start"
+    },
+    "day5_morning_escape_ally_sea": {
+        background: "old_stairway",
+        character: "sea_normal",
+        next: "day5_after_start"
+    },
+    "day5_morning_escape_ally_alone": {
+        background: "old_stairway",
+        character: null,
         next: "day5_after_start"
     },
 

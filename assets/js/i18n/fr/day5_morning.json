@@ -280,13 +280,13 @@
         "text": "*Je prends sa main froide.*\n\nLâche pas la caméra. Je prends les documents en photo. Garde-la."
     },
     "day5_morning_true_35": {
-        "text": "*Je photographie tout : logo de la fondation Edina, rapport final Nevergrad, rendements sous la couverture.*"
+        "text": "*Je photographie tout : le sceau de la fondation Edina, le rapport final Nevergrad, la grille des sujets sous la couverture.*"
     },
     "day5_morning_true_36": {
         "text": "*Protocole de modification du dossier d’identité. Parents, ville d’origine, ancienne école, noms des amis. Chaque case porte une date d’application et une marque de vérification.*"
     },
     "day5_morning_true_37": {
-        "text": "*Document d'approbation du conseil d'administration. Proposition de commercialisation. Note à côté du rendement prévu : 'Après sécurisation des données de stabilisation S-13'.*"
+        "text": "*Document d'approbation du conseil. Déploiement à grande échelle du protocole d'effacement. Note en marge : 'Après validation S-13'.*"
     },
     "day5_morning_true_38": {
         "text": "*Dernière page. 'Essai #13 : la réponse au siège vide persiste. Répétition de la désignation Lee Seolhwa. Seuil de mémoire résiduelle dépassé. Examen du traitement anticipé.'*"
@@ -630,5 +630,22 @@
     },
     "day5_morning_complicit_accept": {
         "text": "*Je sors de mon sac l’enveloppe de documents que j’avais mise de côté et la pose sur le bureau. Pour me rendre en salle des professeurs, il me suffit d’aller au lycée par le portail principal.*"
+    },
+    "day5_morning_escape_ally_choice": {
+        "text": "*Depuis le palier, on aperçoit la porte de l'infirmerie et l'escalier du conseil. Avant de filer par l'arrière, il faut décider qui part avec nous.*",
+        "choices": [
+            "Appeler Mme Riin à l'infirmerie",
+            "Faire signe à Sea près du palier",
+            "Ne prévenir personne et partir avec Yuna"
+        ]
+    },
+    "day5_morning_escape_ally_riin": {
+        "text": "J'ai un moyen de passer l'enceinte sans laisser de trace. Je prends la clé de l'escalier de secours."
+    },
+    "day5_morning_escape_ally_sea": {
+        "text": "Je ne t'ai pas attendue pour te laisser partir seule. J'ai la copie du conseil avec moi, allons jusqu'à la grille arrière."
+    },
+    "day5_morning_escape_ally_alone": {
+        "text": "*Retenant mon souffle, je serre le poignet de Yuna et coupe vers le muret du fond.*"
     }
 }

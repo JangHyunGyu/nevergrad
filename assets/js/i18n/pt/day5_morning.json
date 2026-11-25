@@ -280,13 +280,13 @@
         "text": "*Pego a mão fria dela.*\n\nNão larga a câmera. Eu fotografo os papéis. Você cuida dela."
     },
     "day5_morning_true_35": {
-        "text": "*Fotografo tudo: logo da Fundação Edina, relatório final Nevergrad, tabela de retorno sob a capa.*"
+        "text": "*Fotografo tudo: o selo da Fundação Edina, o relatório final Nevergrad, a tabela de cobaias sob a capa.*"
     },
     "day5_morning_true_36": {
         "text": "*Protocolo de alteração do pacote de identidade. Pais, cidade natal, escola anterior, nomes de amigos. Cada campo tem uma data de aplicação e uma marca de verificação.*"
     },
     "day5_morning_true_37": {
-        "text": "*Documento de aprovação do conselho. Proposta de comercialização. Nota ao lado do retorno esperado: 'Após garantir os dados de estabilização de S-13'.*"
+        "text": "*Documento aprovado pelo conselho. Plano de implantação em massa do protocolo de apagamento. Nota à margem: 'Após dados de estabilização de S-13'.*"
     },
     "day5_morning_true_38": {
         "text": "*Última página. 'Teste #13: a resposta ao assento vazio persiste. Repetição da designação Lee Seolhwa. Limite de memória residual excedido. Revisar processamento antecipado.'*"
@@ -630,5 +630,22 @@
     },
     "day5_morning_complicit_accept": {
         "text": "*Tiro da mochila o envelope de documentos que eu havia separado e o deixo sobre a escrivaninha. Para ir à sala dos professores, basta entrar na escola pelo portão principal.*"
+    },
+    "day5_morning_escape_ally_choice": {
+        "text": "*Do patamar da escada dá para ver a enfermaria e o acesso do grêmio. Antes de sair pelos fundos, preciso decidir quem vem conosco.*",
+        "choices": [
+            "Chamar a professora Riin na enfermaria",
+            "Fazer sinal para Sea no patamar",
+            "Não chamar ninguém e sair só com Yuna"
+        ]
+    },
+    "day5_morning_escape_ally_riin": {
+        "text": "Tenho um jeito de passar pelo portão sem ficar nos registros. Vou levar a chave da escada de emergência."
+    },
+    "day5_morning_escape_ally_sea": {
+        "text": "Não esperei você para deixar vocês irem sozinhos. Trouxe o backup do grêmio também—vamos até a saída dos fundos."
+    },
+    "day5_morning_escape_ally_alone": {
+        "text": "*Segurando até a respiração, seguro o pulso de Yuna e sigo para o muro estreito dos fundos.*"
     }
 }

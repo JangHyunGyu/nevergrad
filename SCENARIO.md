@@ -3919,7 +3919,7 @@ _캐릭터: `yuna_shy`_
 
 **유나**
 ```text
-아무도 안 들어가는데 제가 들어간 건 아니에요. 선배도… 나중에 시간 되면 거기 한번 가 보실래요?
+아, 네… 열세 번째 팩이라서요. 쓰다 남은 건 보통 버리는데 저는 숫자를 다 적어 두거든요.
 ```
 
 ### `day1_after_yuna_back_4`
@@ -10467,7 +10467,7 @@ _캐릭터: `seolhwa_quiet`_
 
 **나**
 ```text
-어? 응, 맞아. 어떻게 알았어?
+어… 그런가. 잠깐, 어떻게 알았어?
 ```
 
 ### `day3_morning_seolhwa_5`
@@ -10481,7 +10481,7 @@ _캐릭터: `seolhwa_quiet`_
 ```
 
 **선택지**
-1. 왼손잡이라고 다시 답한다
+1. 내 왼손을 내려다본다
 2. 왜 알고 싶은지 묻는다
 3. 못 들은 척한다
 
@@ -13954,9 +13954,9 @@ _캐릭터: `yuna_cautious`_
 
 **나**
 ```text
-*유나가 다가와 주머니에서 마이크로 SD카드를 꺼낸다.*
+*유나가 다가와 주머니에서 여분의 마이크로 SD카드를 꺼낸다.*
 
-이거 나 주려고 기다린 거야? 뭔데?
+아까 옥상에서 준 거랑 또 다른 거야?
 ```
 
 ### `day3_after_yuna_4`
@@ -13966,7 +13966,7 @@ _캐릭터: `yuna_serious`_
 
 **유나**
 ```text
-아까 보여 드린 사진 사본이에요. 선배가 갖고 계세요.
+네, 아까 미처 못 옮긴 원본 백업이에요. 방과 후에 마저 담았으니까 이것도 선배가 갖고 계세요.
 ```
 
 ### `day3_after_yuna_5`
@@ -15127,7 +15127,7 @@ _source: `day3_4_night.js / day3_night.json`_
 ### `day3_night_wall`
 
 _source: `day3_4_night.js / day3_night.json`_
-_배경: `room_dark` / BGM: `[object Object]`_
+_배경: `room_dark` / BGM: `{"fadeOut":3000}`_
 
 **나**
 ```text
@@ -16603,7 +16603,7 @@ _source: `day4_1_morning.js / day4_morning.json`_
 
 **나**
 ```text
-*세 명째다. 교문 안쪽 그림자를 밟는 순간 표정이 바뀐다. 입꼬리가 올라가는 각도까지 똑같다.*
+*벌써 세 명째다. 교문 그림자를 밟기 무섭게 표정이 굳고 입꼬리만 똑같은 각도로 올라간다.*
 ```
 
 ### `day4_morning_gate_6`
@@ -21893,8 +21893,8 @@ _source: `day4_4_night.js / day4_night.json`_
 
 **선택지**
 1. 약 재고가 부족했기 때문이다
-2. 설화를 잃은 뒤 기억 손상을 줄이려 했다
-3. 실험이 끝나서 약이 필요 없었다
+2. 기억 손상 징후를 줄이려 했다
+3. 실험이 마무리 단계라 용량을 줄였다
 
 ### `day4_night_truth_riin_right_1`
 
@@ -22728,6 +22728,51 @@ _배경: `old_stairway`_
 *유나의 팔을 잡고 계단을 올라갔다. 지금은 빠져나가는 게 먼저다.*
 ```
 
+### `day5_morning_escape_ally_choice`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_배경: `old_stairway`_
+
+**나**
+```text
+*계단참 난간 너머로 복도 끝 양호실 문과 학생회실 쪽 계단이 보인다. 뒤문으로 빠져나가기 전에 누가 함께 움직일지 정해야 한다.*
+```
+
+**선택지**
+1. 리인 선생님에게 쪽문을 열어 달라고 부른다
+2. 학생회실 쪽 세아에게 합류 신호를 보낸다
+3. 아무도 부르지 않고 유나와 둘이 나간다
+
+### `day5_morning_escape_ally_riin`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_배경: `old_stairway` / 캐릭터: `riin_normal`_
+
+**리인**
+```text
+서류 말고 정문 밖까지 나갈 방법이 하나 있어요. 이쪽 비상 계단 열쇠, 나도 들고 갈게요.
+```
+
+### `day5_morning_escape_ally_sea`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_배경: `old_stairway` / 캐릭터: `sea_normal`_
+
+**세아**
+```text
+혼자 보내려고 기다린 거 아니에요. 학생회 백업본도 챙겼으니 뒷문까지는 같이 가요.
+```
+
+### `day5_morning_escape_ally_alone`
+
+_source: `day5_1_morning.js / day5_morning.json`_
+_배경: `old_stairway`_
+
+**나**
+```text
+*숨소리마저 낮춘 채 유나의 손목을 잡고 구관 뒤편 좁은 담장으로 향한다.*
+```
+
 ### `day5_morning_true_1`
 
 _source: `day5_1_morning.js / day5_morning.json`_
@@ -23085,7 +23130,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-*닥치는 대로 찍었다. 에디나 재단 로고, 네버그라드 최종 보고서, 표지 밑 수익률 표.*
+*닥치는 대로 찍었다. 에디나 재단 직인, 네버그라드 최종 보고서, 표지 아래 피험자 배정표.*
 ```
 
 ### `day5_morning_true_36`
@@ -23103,7 +23148,7 @@ _source: `day5_1_morning.js / day5_morning.json`_
 
 **나**
 ```text
-*이사회 승인 문서. 상용화 제안. 예상 수익률 옆 주석: 'S-13 안정화 데이터 확보 후'.*
+*이사회 승인 문서. 기억 소거 프로토콜 양산안. 적용 일정 옆 주석: 'S-13 안정화 데이터 확보 후'.*
 ```
 
 ### `day5_morning_true_38`
@@ -24977,7 +25022,7 @@ _배경: `cg_riin_two_pills`_
 
 **리인**
 ```text
-설명 안 해. 그냥 하나만 삼켜.
+긴 말 필요 없어. 분홍색은 오늘을 지워 줄 거고, 검은색은 묻어 둔 바닥까지 긁어낼 거야. 하나만 삼켜.
 ```
 
 **선택지**
@@ -26494,13 +26539,13 @@ _캐릭터: `center: eunsu_crying`, `right: seolhwa_fading`_
 
 **나**
 ```text
-*시야 가장자리가 붉게 번진다. 22:58. 2분.*
+*시야 가장자리가 붉게 번진다. 벽시계는 22:58. 자정 초기화까지 2분 남았다.*
 
-*시야가 흐려져 한 문장만 또렷하다.*
+*글자가 번져 가운데 한 줄만 또렷하다.*
 
 ***'…지워주세요.'***
 
-*나머지 두 문장은 읽을 수 없다.*
+*위아래 두 줄은 끝내 흐릿하다.*
 ```
 
 **선택지**
@@ -29584,7 +29629,7 @@ _배경: `classroom_afternoon` / 캐릭터: `eunsu_normal`_
 
 **나**
 ```text
-*복도에서 청소 카트가 지나갔다. 선생님은 문 안쪽 잠금장치를 확인한 뒤에야 돌아왔다.*
+*복도에서 청소 카트가 멀어지는 소리가 들렸다. 선생님은 교실 문고리를 한 번 당겨 잠긴 걸 확인한 뒤에야 교탁 앞으로 돌아왔다.*
 ```
 
 ### `day5_ending_cage_eunsu_epilogue_6`
@@ -33401,7 +33446,7 @@ _source: `day5_night.json`_
 ```
 
 <!--
-sync-stats: {"sceneFiles":20,"scenarioScenes":3299,"i18nEntries":3351,"displayedText":3286,"choices":279,"i18nOnly":52}
+sync-stats: {"sceneFiles":20,"scenarioScenes":3303,"i18nEntries":3355,"displayedText":3290,"choices":282,"i18nOnly":52}
 -->
 
 <!-- END NEVERGRAD KO DISPLAY SYNC -->

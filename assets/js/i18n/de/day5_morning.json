@@ -280,13 +280,13 @@
         "text": "*Ich nehme ihre kalte Hand.*\n\nHalte die Kamera fest. Die Unterlagen fotografiere ich. Du behältst sie."
     },
     "day5_morning_true_35": {
-        "text": "*Ich fotografiere alles: Edina-Logo, Nevergrad-Abschlussbericht, Renditetabelle unter dem Deckblatt.*"
+        "text": "*Ich fotografiere alles: Siegel der Edina-Stiftung, Nevergrad-Abschlussbericht, Probandenliste unter dem Deckblatt.*"
     },
     "day5_morning_true_36": {
         "text": "*Protokoll zur Änderung des Identitätspakets. Eltern, Heimatort, frühere Schule, Namen von Freunden. Jedes Feld trägt ein Gültigkeitsdatum und einen Prüfvermerk.*"
     },
     "day5_morning_true_37": {
-        "text": "*Genehmigungsdokument des Vorstands. Kommerzialisierungsvorschlag. Hinweis neben der erwarteten Rendite: 'Nach Sicherung der S-13-Stabilisierungsdaten'.*"
+        "text": "*Vorstandsgenehmigung. Ausrollungsplan für das Löschprotokoll. Randnotiz: 'Nach Sicherung der S-13-Stabilisierungsdaten'.*"
     },
     "day5_morning_true_38": {
         "text": "*Letzte Seite. 'Versuch #13: Reaktion auf leeren Sitzplatz hält an. Wiederholung der Bezeichnung Lee Seolhwa. Schwellenwert für Restgedächtnis überschritten. Frühzeitige Bearbeitung prüfen.'*"
@@ -630,5 +630,22 @@
     },
     "day5_morning_complicit_accept": {
         "text": "*Ich nehme den eingesteckten Aktenumschlag aus meiner Tasche und lege ihn auf den Schreibtisch. Um ins Lehrerzimmer zu gehen, muss ich nur durch das Haupttor zur Schule kommen.*"
+    },
+    "day5_morning_escape_ally_choice": {
+        "text": "*Vom Treppenabsatz aus sieht man sowohl die Krankenzimmertür als auch den Flur zum Schülerrat. Vor dem Ausbruch über das Hintertor muss entschieden werden, wer mitkommt.*",
+        "choices": [
+            "Frau Riin am Krankenzimmer rufen",
+            "Sea am Schülerrats-Absatz winken",
+            "Niemanden holen und nur mit Yuna gehen"
+        ]
+    },
+    "day5_morning_escape_ally_riin": {
+        "text": "Ich kenne einen Weg nach draußen ohne ihre Protokolle. Den Schlüssel zur Nottreppe nehme ich mit."
+    },
+    "day5_morning_escape_ally_sea": {
+        "text": "Ich habe nicht gewartet, um dich allein gehen zu lassen. Die Rats-Sicherungen habe ich auch dabei—gehen wir."
+    },
+    "day5_morning_escape_ally_alone": {
+        "text": "*Mit angehaltenem Atem greife ich nach Yunas Handgelenk und husche zur schmalen Rückmauer.*"
     }
 }

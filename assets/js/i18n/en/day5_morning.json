@@ -280,13 +280,13 @@
         "text": "*I take Yuna's cold hand.*\n\nKeep the camera. I'll photograph the papers. You take care of that."
     },
     "day5_morning_true_35": {
-        "text": "*I photograph everything: Edina Foundation logo, Nevergrad final report, returns table beneath the cover.*"
+        "text": "*I shoot everything: the Edina Foundation seal, the Nevergrad final report, the subject roster tucked beneath the cover.*"
     },
     "day5_morning_true_36": {
         "text": "*Identity Package Change Protocol. Parents, hometown, previous school, friends’ names. Each field has an effective date and a verification mark.*"
     },
     "day5_morning_true_37": {
-        "text": "*Board approval document. Commercialization proposal. A note beside the expected return: 'After S-13 stabilization data is secured'.*"
+        "text": "*Board authorization file. Mass rollout plan for the memory-erasure protocol. Handwritten margin note: 'Pending S-13 stabilization data'.*"
     },
     "day5_morning_true_38": {
         "text": "*Last page. 'Trial #13: Blank-seat response persists. Repeats Lee Seolhwa designation. Residual memory threshold exceeded. Review early processing.'*"
@@ -630,5 +630,22 @@
     },
     "day5_morning_complicit_accept": {
         "text": "*I pull the document envelope I had packed out of my bag and set it down on the desk. To reach the faculty office, all I have to do is walk to school through the main gate.*"
+    },
+    "day5_morning_escape_ally_choice": {
+        "text": "*Over the stairwell landing, both the infirmary door and the student-council stairs are in view. Before slipping out the back, I have to decide who comes with us.*",
+        "choices": [
+            "Call Ms. Riin from the infirmary",
+            "Signal Sea by the council landing",
+            "Take nobody else and leave with Yuna"
+        ]
+    },
+    "day5_morning_escape_ally_riin": {
+        "text": "I have one way to get past the perimeter without their logs. I'm bringing the emergency stairwell key."
+    },
+    "day5_morning_escape_ally_sea": {
+        "text": "I wasn't waiting by the stairs just to watch you walk out alone. I grabbed the council backup too—let's go."
+    },
+    "day5_morning_escape_ally_alone": {
+        "text": "*Keeping our breathing quiet, I grip Yuna's wrist and cut toward the narrow rear wall.*"
     }
 }

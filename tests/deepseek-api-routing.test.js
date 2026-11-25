@@ -43,7 +43,7 @@ test('request deadline covers stalled headers and stalled response bodies', asyn
     }
 });
 
-test('Nevergrad tools prefer DeepInfra fp4 Turbo with Venice fp4 fallback', async () => {
+test('Nevergrad tools prefer Venice fp4 with DeepInfra fp4 Turbo fallback', async () => {
   const calls = [];
   const text = await callDeepSeek('translate', {
     openRouterApiKey: 'or-test',
@@ -58,14 +58,14 @@ test('Nevergrad tools prefer DeepInfra fp4 Turbo with Venice fp4 fallback', asyn
   assert.equal(calls[0].url, OPENROUTER_ENDPOINT);
   assert.equal(calls[0].body.model, OPENROUTER_MODEL);
   assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
-  assert.equal(OPENROUTER_GEMMA_PROVIDER, 'deepinfra/turbo');
+  assert.equal(OPENROUTER_GEMMA_PROVIDER, 'venice/fp4');
   assert.deepEqual(calls[0].body.response_format, { type: 'json_object' });
   assert.equal('tools' in calls[0].body, false);
   assert.deepEqual(calls[0].body.reasoning, { effort: 'none', enabled: false });
   assert.equal('thinking' in calls[0].body, false);
   assert.deepEqual(calls[0].body.provider, {
-    order: ['deepinfra/turbo', 'venice/fp4'],
-    only: ['deepinfra/turbo', 'venice/fp4'],
+    order: ['venice/fp4', 'deepinfra/turbo'],
+    only: ['venice/fp4', 'deepinfra/turbo'],
     quantizations: ['fp4'],
     allow_fallbacks: false,
     require_parameters: true,
@@ -85,8 +85,8 @@ test('Nevergrad default route fails after the allowed providers are exhausted wi
   }), /Text model routes exhausted/);
   assert.equal(calls.length, 1);
   assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
-  assert.deepEqual(calls[0].body.provider.order, ['deepinfra/turbo', 'venice/fp4']);
-  assert.deepEqual(calls[0].body.provider.only, ['deepinfra/turbo', 'venice/fp4']);
+  assert.deepEqual(calls[0].body.provider.order, ['venice/fp4', 'deepinfra/turbo']);
+  assert.deepEqual(calls[0].body.provider.only, ['venice/fp4', 'deepinfra/turbo']);
   assert.equal(calls[0].body.provider.allow_fallbacks, false);
 });
 
@@ -131,8 +131,8 @@ test('Nevergrad direct tools keep model-native protocols behind isolated adapter
 
   const gemmaPayload = { model: OPENROUTER_GEMMA_MODEL };
   gemma.applyPayload(gemmaPayload, { wantsJson: true });
-  assert.deepEqual(gemmaPayload.provider.order, ['deepinfra/turbo', 'venice/fp4']);
-  assert.deepEqual(gemmaPayload.provider.only, ['deepinfra/turbo', 'venice/fp4']);
+  assert.deepEqual(gemmaPayload.provider.order, ['venice/fp4', 'deepinfra/turbo']);
+  assert.deepEqual(gemmaPayload.provider.only, ['venice/fp4', 'deepinfra/turbo']);
   assert.deepEqual(gemmaPayload.provider.quantizations, ['fp4']);
   assert.equal(gemmaPayload.provider.allow_fallbacks, false);
   assert.deepEqual(gemmaPayload.response_format, { type: 'json_object' });

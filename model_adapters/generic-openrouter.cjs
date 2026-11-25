@@ -11,8 +11,8 @@ module.exports = Object.freeze({
     delete payload.include_reasoning;
     if (payload.model === 'google/gemma-4-31b-it') {
       payload.provider = {
-        order: [OPENROUTER_GEMMA_PROVIDER, 'venice/fp4'],
-        only: [OPENROUTER_GEMMA_PROVIDER, 'venice/fp4'],
+        order: [OPENROUTER_GEMMA_PROVIDER, 'deepinfra/turbo'],
+        only: [OPENROUTER_GEMMA_PROVIDER, 'deepinfra/turbo'],
         quantizations: ['fp4'],
         allow_fallbacks: false,
         require_parameters: true,

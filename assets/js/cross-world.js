@@ -250,7 +250,8 @@
     #cross-world button{border-image:none!important}
     #cross-world .cw-foot{margin:18px 0 0;font:10px/1.6 ui-monospace,monospace;letter-spacing:.12em;color:#b7b5b0}
     #cross-world.cw-seq{overflow:hidden;background:#05070a}
-    #cross-world.cw-seq:before,#cross-world.cw-seq:after{animation:none;transform:translateY(-100%)}
+    #cross-world.cw-seq:before{animation:none;transform:translateY(-100%)}
+    #cross-world.cw-seq:after{animation:none;transform:translateY(100%)}
     #cross-world.cw-seq.cw-spring:before{transform:translateX(-100%)}
     #cross-world.cw-seq.cw-spring:after{transform:translateX(100%)}
     #cross-world.cw-seq.cw-out:before,#cross-world.cw-seq.cw-out:after{transform:translate(0,0)}

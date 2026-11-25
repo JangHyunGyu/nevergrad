@@ -331,7 +331,12 @@ class GameEngine {
         this._bindArchiveButton();
     }
 
-    _redirectToCupidGate(nextSceneId = null) { var __oc5, __oc6, __oc7;
+    _redirectToCupidGate(nextSceneId = null, options = {}) { var __oc5, __oc6, __oc7;
+        try {
+            if (typeof screen !== 'undefined' && screen.orientation && typeof screen.orientation.unlock === 'function') {
+                screen.orientation.unlock();
+            }
+        } catch (_) {}
         const lang = (((__oc5 = this.i18n) === null || __oc5 === void 0 ? void 0 : __oc5.currentLang)) || 'ko';
         const page = {
             ko: '/',
@@ -343,14 +348,50 @@ class GameEngine {
             pt: '/index-pt',
             zh: '/index-zh'
         }[lang] || '/';
+        const targetUrl = `https://cupid.archerlab.dev${page}?gate=1`;
         this._stopAuto();
         this._stopSkip();
+        if (options && options.immediate && window.CrossWorld && typeof window.CrossWorld.departSequence === 'function') {
+            window.CrossWorld.departSequence({
+                world: 'cupid',
+                lang,
+                name: this.state.playerName,
+                url: targetUrl,
+                frames: [
+                    { image: resolveNevergradAssetUrl('assets/images/background/cg_riin_two_pills.jpg'), captionIndex: 19, fx: 'bloom' },
+                    { image: resolveNevergradAssetUrl('assets/images/background/cross_to_cupid.webp'), captionIndex: 20, fx: 'bloom' },
+                    { image: resolveNevergradAssetUrl('assets/images/background/cg_gate_bloom.jpg'), captionIndex: 21 }
+                ],
+                save: () => {
+                    try {
+                        if (this.state && typeof this.state.setFlags === 'function') {
+                            this.state.setFlags(['caught_by_riin', 'crossed_to_cupid']);
+                        }
+                        if (this.state) {
+                            this.state.currentScene = nextSceneId || 'day5_lunch_end';
+                            this.state.currentSlot = 'lunch';
+                        }
+                        this._markNevergradPlayed();
+                        return this.save.save();
+                    } catch (_) {
+                        return false;
+                    }
+                },
+                onLeave: () => { var __oc8, __oc9; return (
+((__oc9 = (__oc8 = this.audio) === null || __oc8 === void 0 ? void 0 : __oc8.stopBGM) === null || __oc9 === void 0 ? void 0 : __oc9.call(__oc8))
+); },
+                onBeat: index => {
+                    if (index === 1) this._crackleAndBuzz();
+                }
+            });
+            return;
+        }
         const crossingBGM = (((__oc7 = (__oc6 = this.audio) === null || __oc6 === void 0 ? void 0 : __oc6.getCurrentBGM) === null || __oc7 === void 0 ? void 0 : __oc7.call(__oc6)));
         window.CrossWorld.show({
             departure: true, world: 'cupid', lang,
             image: resolveNevergradAssetUrl('assets/images/background/cg_gate_bloom.jpg'),
             name: this.state.playerName,
-            url: `https://cupid.archerlab.dev${page}?gate=1`,
+            url: targetUrl,
             save: () => { this._markNevergradPlayed(); return this.save.save(); },
             onLeave: () => { var __oc8, __oc9; return (
 ((__oc9 = (__oc8 = this.audio) === null || __oc8 === void 0 ? void 0 : __oc8.stopBGM) === null || __oc9 === void 0 ? void 0 : __oc9.call(__oc8))
@@ -762,6 +803,19 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
         this._waitingForCG = false;
         // Retired duplicate scenes remain valid save locations, but resume the canonical scene.
         sceneId = (((__oc108 = CONFIG.SCENE_ALIASES) === null || __oc108 === void 0 ? void 0 : __oc108[sceneId])) || sceneId;
+        if ((sceneId === 'day5_lunch_pills_2' || /^day5_lunch_pills_pink_/.test(sceneId))
+            && ((this.state && typeof this.state.getFlag === 'function' && this.state.getFlag('crossed_to_cupid'))
+                || (window.CrossWorld && typeof window.CrossWorld.hasRecentDeparture === 'function' && window.CrossWorld.hasRecentDeparture('cupid')))) {
+            sceneId = 'day5_lunch_end';
+        }
+        if (/^day5_lunch_pills_(?:0|1|ask)$/.test(sceneId)
+            && window.CrossWorld && typeof window.CrossWorld.preload === 'function') {
+            window.CrossWorld.preload([
+                resolveNevergradAssetUrl('assets/images/background/cg_riin_two_pills.jpg'),
+                resolveNevergradAssetUrl('assets/images/background/cross_to_cupid.webp'),
+                resolveNevergradAssetUrl('assets/images/background/cg_gate_bloom.jpg')
+            ]);
+        }
         (((__oc110 = (__oc109 = this.dialogue).cancel) === null || __oc110 === void 0 ? void 0 : __oc110.call(__oc109)));
         this._waitingForText = false;
         this._markNevergradPlayed();
@@ -1762,6 +1816,10 @@ crossingBGM ? (((__oc11 = (__oc10 = this.audio) === null || __oc10 === void 0 ? 
                         }
                     }
                     if (choice.setFlags) this.state.setFlags(choice.setFlags);
+                    if (choice.redirect === 'cupid-gate' && choice.immediateCross) {
+                        this._redirectToCupidGate('day5_lunch_end', { immediate: true });
+                        return;
+                    }
                     if (choice.next) this._loadScene(choice.next);
                     else if (choice.returnToTitle) this._showEndingTitle('', null);
                 });

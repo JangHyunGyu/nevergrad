@@ -1088,7 +1088,7 @@ class DeviceGimmickSystem {
         const renderPrompt = () => { var __oc9;
             const portrait = isPortrait();
             const gameActive = !!(((__oc9 = document.getElementById('game-screen')) === null || __oc9 === void 0 ? void 0 : __oc9.classList.contains('active')));
-            const shouldShow = portrait;
+            const shouldShow = portrait && !document.querySelector('#cross-world');
             const normalText = getNormalText();
             const eunsuText = this._pickLocalized({
                 ko: "\uc5b4\ub51c \ubcf4\ub294 \uac70\uc57c?<br>\ub2e4\uc2dc \ub611\ubc14\ub85c \ub4e4\uc5b4.",

@@ -133,7 +133,8 @@ body :is(button, input[type='button'], input[type='submit'], input[type='reset']
   /* Navigation and gallery remain usable before entering landscape gameplay. */
   body:has(#title-screen.active) .rotate-prompt,
   body:has(#gallery-screen.active) .rotate-prompt,
-  body:has(#name-screen.active) .rotate-prompt { display: none !important; }
+  body:has(#name-screen.active) .rotate-prompt,
+  body:has(#cross-world) .rotate-prompt { display: none !important; }
 }
 @media (max-height: 500px) and (orientation: landscape) {
   #title-screen .title-char-lineup { height: min(76svh, 440px); }

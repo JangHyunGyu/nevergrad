@@ -565,7 +565,7 @@ Object.assign(SCENARIO[5], {
         character: null,
         unskippable: true,
         choices: [
-            { next: "day5_lunch_pills_pink_1" },
+            { next: "day5_lunch_pills_pink_1", redirect: "cupid-gate", immediateCross: true },
             { next: "day5_lunch_pills_black_1" }
         ]
     },

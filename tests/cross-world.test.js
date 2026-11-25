@@ -122,3 +122,59 @@ test('cupid-gate redirect resumes BGM and advances to next scene on return, and 
   archEnv.GE.prototype._bindArchiveButton.call(archFake);
   assert.ok(appended && appended.id==='btn-archive');
 });
+
+test('pink pill triggers immediate 3-CG crossing, sets Back guard, and stays synced with cupid copy', () => {
+  const scEnv = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/js/scenario/day5_2_lunch.js'), 'utf8'), scEnv);
+  const pinkChoice = scEnv.SCENARIO[5].day5_lunch_pills_2.choices[0];
+  assert.equal(pinkChoice.next, 'day5_lunch_pills_pink_1');
+  assert.equal(pinkChoice.redirect, 'cupid-gate');
+  assert.equal(pinkChoice.immediateCross, true);
+
+  let departOpts = null;
+  let playedMark = 0;
+  let savedCount = 0;
+  let stopped = 0;
+  const setFlagList = [];
+  const engineSrc = fs.readFileSync(path.join(__dirname, '../assets/js/modules/GameEngine.js'), 'utf8');
+  const fakeEnv = {
+    window: {
+      CrossWorld: { departSequence: o => { departOpts = o; }, show: () => {} },
+      resolveNevergradAssetUrl: u => u,
+      matchMedia: () => ({ matches: false })
+    },
+    resolveNevergradAssetUrl: u => u,
+    location: { hostname: 'nevergrad.archerlab.dev', protocol: 'https:' },
+    document: { cookie: '', getElementById: () => ({ focus() {} }), querySelector: () => ({ appendChild() {} }) }
+  };
+  vm.runInNewContext(engineSrc + '\nglobalThis.GE=GameEngine;', fakeEnv);
+  const fakeEngine = {
+    i18n: { currentLang: 'ko' },
+    state: { playerName: 'Tester', setFlags: arr => setFlagList.push(...arr) },
+    audio: { stopBGM: () => { stopped += 1; } },
+    save: { save: () => { savedCount += 1; return true; } },
+    _stopAuto() {},
+    _stopSkip() {},
+    _markNevergradPlayed: () => { playedMark += 1; },
+    _crackleAndBuzz() {}
+  };
+  fakeEnv.GE.prototype._redirectToCupidGate.call(fakeEngine, 'day5_lunch_end', { immediate: true });
+  assert.ok(departOpts);
+  assert.equal(departOpts.url, 'https://cupid.archerlab.dev/?gate=1');
+  assert.equal(departOpts.frames.length, 3);
+  assert.match(departOpts.frames[1].image, /cross_to_cupid\.webp$/);
+  assert.equal(departOpts.save(), true);
+  assert.equal(playedMark, 1);
+  assert.equal(savedCount, 1);
+  assert.deepEqual(setFlagList, ['caught_by_riin', 'crossed_to_cupid']);
+  assert.equal(fakeEngine.state.currentScene, 'day5_lunch_end');
+  departOpts.onLeave();
+  assert.equal(stopped, 1);
+
+  const cwSrc = fs.readFileSync(path.join(__dirname, '../assets/js/cross-world.js'), 'utf8');
+  assert.equal(cwSrc.includes('?.'), false);
+  const siblingCw = path.resolve(__dirname, '../../cupid/assets/js/cross-world.js');
+  if (fs.existsSync(siblingCw)) {
+    assert.equal(cwSrc, fs.readFileSync(siblingCw, 'utf8'));
+  }
+});
